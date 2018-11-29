@@ -1,0 +1,129 @@
+---
+title: 入门 - 新式桌面部署
+ms.author: jogruszc
+author: JGruszczyk
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: ''
+description: 新式桌面部署过程简介。
+ms.openlocfilehash: bb5c1433554e984676884fd2bac4fa5120c76996
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26865811"
+---
+# <a name="getting-started---modern-desktop-deployment"></a><span data-ttu-id="acae1-103">入门 - 新式桌面部署</span><span class="sxs-lookup"><span data-stu-id="acae1-103">Getting Started - Modern Desktop Deployment</span></span>
+
+<span data-ttu-id="acae1-p101">云正在改变电脑的管理方式，Microsoft 智能云提供了动态见解，帮助 IT 专业人员转向新式桌面。本系列旨在帮助你计划并在 Windows 10 和 Office 365 专业增强版的基础上向新式桌面转移。</span><span class="sxs-lookup"><span data-stu-id="acae1-p101">The Cloud is changing how management of PCs is be done, with the Microsoft Intelligent Cloud delivering actional insights to help IT Professionals shift to a modern desktop. This series designed to help you plan for and make the shift to a modern desktop based on Windows 10 and Office 365 ProPlus.</span></span>
+
+<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" style="background-color: #fff;" />
+
+<table>
+<thead>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
+<td><p><span data-ttu-id="acae1-106"><strong>入门：人员、流程和技术指导</strong></span><span class="sxs-lookup"><span data-stu-id="acae1-106"><strong>Getting Started: People, Process and Technology Guidance</strong></span></span></p>
+<p><span data-ttu-id="acae1-107">了解新式桌面的好处、相比之前的部署的主要变化和注意事项以及最佳做法，以确保顺利过渡到 Windows 10 和 Office 365 专业增强版。</span><span class="sxs-lookup"><span data-stu-id="acae1-107">Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</span></span></p></td>
+<td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
+</thead>
+</table>
+
+>[!NOTE]
+><span data-ttu-id="acae1-p102">在本系列中，我们将阐释使用现有工具的最佳方式，并向你介绍由云支持的新技术、服务和方法。要查看完整的桌面部署过程，请访问[新式桌面部署中心](https://aka.ms/HowToShift)。</span><span class="sxs-lookup"><span data-stu-id="acae1-p102">In this series we will explain the best ways to use existing tools, and introduce you to new technologies, services and methods enabled by the Cloud.  To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/HowToShift).</span></span>
+>
+
+<span data-ttu-id="acae1-p103">欢迎来到新式桌面部署中心，这是我们学习如何帮助你计划向新式桌面转移的中心位置。这将允许你利用由最新生产力、团队合作和协作经验提供支持的安全工作区。</span><span class="sxs-lookup"><span data-stu-id="acae1-p103">Welcome to the Modern Desktop Deployment Center, our central place to learn how to help you plan and make the shift to the modern desktop. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork and collaboration experiences.</span></span>
+
+<span data-ttu-id="acae1-p104">如果已经有一段时间没有部署新桌面环境，那么好消息是部署过程已经得到了改进。在过去，我们会遇到诸如应用程序兼容性之类的难题，但现在已经不再是问题，新工具以及云提供的见解，使你能够信心十足地以更快、更高效的方式向前迈进。</span><span class="sxs-lookup"><span data-stu-id="acae1-p104">If you haven’t deployed a new desktop environment for a while, the good news is much about the deployment process has improved. Challenges of the past, such as application compatibility, are much less of an issue today and new tools, and insight delivered from the Cloud, enable you to move forward with confidence, faster and more efficiently than ever before.</span></span>
+
+<span data-ttu-id="acae1-p105">在此简介中，我们将概述更改的内容，并开始体验桌面部署轮。这将指导你完成向 Windows 10 和 Office 365 专业增强版转移的建议步骤，其中详细介绍了在采用新式管理技术和方法的同时，如何利用现有工具和流程。</span><span class="sxs-lookup"><span data-stu-id="acae1-p105">In this introduction we’ll outline what has changed and go on a tour of the Desktop Deployment Wheel. This will guide you through the recommended steps for your shift to Windows 10 and Office 365 ProPlus, detailing how to leverage your existing tools and processes while adopting modern management technology and approaches along the way.</span></span>
+
+## <a name="why-upgrade"></a><span data-ttu-id="acae1-116">为什么要升级？</span><span class="sxs-lookup"><span data-stu-id="acae1-116">Why upgrade?</span></span>
+
+<span data-ttu-id="acae1-117">Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大、丰富和安全工作区的能力，并使你能够简化支持基础结构。</span><span class="sxs-lookup"><span data-stu-id="acae1-117">In combination, Windows 10 and the Microsoft Intelligence Cloud enhance your ability to deliver the most empowering, rich and secure Workspace for your users, and allow you to simplify your supporting infrastructure.</span></span>
+
+<span data-ttu-id="acae1-p106">新式管理实践的关键租户之一是始终保持最新的设备。通过这一系列，将看到正在交付的新功能，它们可以帮助你迁移到 Windows 10 和 Office 365 专业增强版，并了解如何在两者的半年度发布中保持最新状态。</span><span class="sxs-lookup"><span data-stu-id="acae1-p106">One of the key tenants of modern management practices is devices that are always up-to-date. Through this series you are going to see new capabilities that are being delivered to help you move to Windows 10 and Office 365 ProPlus and how to stay current with the semi-annual releases of both.</span></span>
+
+[<span data-ttu-id="acae1-120">面向 IT 专业人员的 Windows 10</span><span class="sxs-lookup"><span data-stu-id="acae1-120">Windows 10 for the IT Pro</span></span>](https://www.microsoft.com/zh-CN/itpro/windows-10)
+
+## <a name="what-has-changed"></a><span data-ttu-id="acae1-121">更改的内容</span><span class="sxs-lookup"><span data-stu-id="acae1-121">What has Changed</span></span>
+
+<span data-ttu-id="acae1-p107">我们首先看看自上次桌面部署以来发生的变更和改进。如果你还没有转变桌面环境，则很可能会使用 Windows 7 和 Office 2010 或 Office 2013。如果已转变，则会注意到自上次主要升级以来，有一些事项已随之演变。下面是一些核心变更：</span><span class="sxs-lookup"><span data-stu-id="acae1-p107">Let’s start by taking a look at what has changed and improved since your last desktop deployment. If you haven’t shifted your desktop environment in a while you’re likely using Windows 7 and Office 2010 or Office 2013. If you are, you'll notice a few things have evolved since your last major upgrade. Here are some of the core changes:</span></span>
+
+<span data-ttu-id="acae1-p108">**标识和访问管理** 新式桌面与云生产力、安全和管理服务相连接，其核心是一项新标识和访问管理服务：Azure Active Directory。这允许跨云服务进行单一登录和安全连接。意味着你将需要配备有 Azure AD。以此可以充分利用 Microsoft 365 服务的优势，比如 Office 365、Intune 或 Windows Autopilot。</span><span class="sxs-lookup"><span data-stu-id="acae1-p108">**Identity and Access Management** The modern desktop, with its connectivity to cloud productivity, security and management services, has, at its core, a new Identity and Access Management service: Azure Active Directory. This enables single sign-on and secure connectivity across your cloud services. That means you are going to need Azure AD in place. This will allow you take advantage of advantage of Microsoft 365 services such as Office 365, Intune, or Windows Autopilot.</span></span>
+
+[<span data-ttu-id="acae1-130">Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="acae1-130">Microsoft 365</span></span>](https://www.microsoft.com/zh-CN/microsoft-365/default.aspx)
+
+<span data-ttu-id="acae1-p109">**Secure 预启动环境** 64 位 UEFI 固件将替换 BIOS。这不仅可加快启动时间，还需要在 Windows 10 中启用许多新式安全功能。Windows 10 将在 BIOS 中运行，但强烈建议 UEFI。如果还没有从 BIOS 切换到 UEFI 和 64 位，那么现在可以开始了。有一些工具可以帮助你在 Windows 10 升级期间或升级完成后进行切换。</span><span class="sxs-lookup"><span data-stu-id="acae1-p109">**Secure Pre-Boot Environment** 64-bit UEFI firmware replaces BIOS. This not only speeds up boot times, it is required to enable many of the modern security capabilities in Windows 10. Windows 10 will run on BIOS but UEFI is strongly recommended. If you have not switched from BIOS to UEFI and 64-bit, now is the time. There are tools to help you make this switch either during a Windows 10 upgrade, or after it.</span></span>
+
+[<span data-ttu-id="acae1-136">使用 MBR2GPT 从 BIOS 转换为 UEFI</span><span class="sxs-lookup"><span data-stu-id="acae1-136">Convert from BIOS to UEFI with MBR2GPT</span></span>](https://technet.microsoft.com/zh-CN/windows/mt782786.aspx)
+
+<span data-ttu-id="acae1-p110">**基于云的设备管理** 像 Microsoft Intune 这样的服务，你可以像管理其他移动设备一样，从一个位置管理 Windows 10 设备。Microsoft Intune 的独特之处是能够与 System Center Configuration Manager 共同管理 Windows 10 设备。可以使用 System Center Configuration Manager 来帮助切换到 Windows 10，然后添加 Microsoft Intune。通过协同工作，System Center Configuration Manager 将成为组织中的智能边缘，与 Microsoft 智能云相连。进而能够安全管理用户设备，无论它们在何处，也不管是连接到组织还是公有云。</span><span class="sxs-lookup"><span data-stu-id="acae1-p110">**Cloud-based device Management** Services like Microsoft Intune you manage your Windows 10 devices as you do other mobile devices, all from one place. What makes Microsoft Intune unique is the ability to co-manage your Windows 10 devices with System Center Configuration Manager. You can use System Center Configuration Manager to help you in your shift to Windows 10, and then add Microsoft Intune. Working together, System Center Configuration Manager becomes the intelligent Edge within your organization, connected to the Microsoft intelligent cloud. This allows you to manage your users’ devices securely wherever they are, whether connected on your organization’s or in the public cloud.</span></span>
+
+[<span data-ttu-id="acae1-142">Windows 10 设备的共同管理</span><span class="sxs-lookup"><span data-stu-id="acae1-142">Co-management for Windows 10 devices</span></span>](https://docs.microsoft.com/zh-CN/sccm/core/clients/manage/co-management-overview)
+
+<span data-ttu-id="acae1-p111">**基于云的部署服务** 当你购买新电脑时，我们已经引入了新的云服务来帮助你部署 Microsoft 365 设备。它被称为 Windows Autopilot 部署服务。AutoPilot 与你的硬件提供程序集成，且新电脑会在 Auto Pilot 中自动注册。这使得新电脑可以直接发送给最终用户。当电脑首次启动时，它会快速配置为组织所需的配置，并根据用户的特定需求进行自定义。</span><span class="sxs-lookup"><span data-stu-id="acae1-p111">**Cloud-based Deployment Service** As you acquire new PCs, we’ve introduced a new cloud service to help you deploy Microsoft 365 devices. It is called the Windows Autopilot deployment service. AutoPilot is integrated with your hardware providers and new PCs are automatically registered in Auto Pilot. This enabling the new PC to be shipped directly to the end-user. When the PC is powered on the first time it is quickly configured to your organizations desired configuration and customized for the specific needs of the user.</span></span>
+
+[<span data-ttu-id="acae1-148">Windows Autopilot</span><span class="sxs-lookup"><span data-stu-id="acae1-148">Windows Autopilot</span></span>](https://www.microsoft.com/zh-CN/windowsforbusiness/windows-autopilot)
+
+<span data-ttu-id="acae1-p112">**即点即用部署** 在预配 Office 桌面应用时，Office 365 专业增强版是首选项。这使你能够在开发过程中访问 Office 中的最新创新，因此你不需要等待数年就能获得新功能。还将使用名为“即点即用”的新安装。</span><span class="sxs-lookup"><span data-stu-id="acae1-p112">**Click-to-Run Deployments** When provisioning Office desktop apps, Office 365 ProPlus is the preferred option. This gives you access to the newest innovations in Office as they are developed, so you won’t need to wait years before getting new capabilities. You’ll also use a new installation called Click-to-Run.</span></span>
+
+<span data-ttu-id="acae1-p113">即点即用与过去基于 MSI 的包有很大的区别。即点即用速度更快、更轻，并且它使用程序流来允许用户在几分钟内启动和运行，并在后台更新。不用担心，它仍然是 Office 的本地副本，你可以继续使用现有部署工具（比如 System Center Configuration Manager）来预配和配置应用程序。</span><span class="sxs-lookup"><span data-stu-id="acae1-p113">Click-to-Run quite different from the MSI-based packages of the past. Click-to-Run is faster, lighter, and it uses program streaming to allow users to be up and running in just minutes, and to be updated in the background. Don’t worry, it is still a local copy of Office, and you can continue to use your existing deployment tools – like System Center Configuration Manager – to provision and configure the apps.</span></span>
+
+[<span data-ttu-id="acae1-155">Office 365 专业增强版部署指南</span><span class="sxs-lookup"><span data-stu-id="acae1-155">Deployment guide for Office 365 ProPlus</span></span>](https://docs.microsoft.com/zh-CN/DeployOffice/deployment-guide-for-office-365-proplus)
+
+<span data-ttu-id="acae1-p114">**半年度更新** 一旦移至 Windows 10 和 Office 365 专业增强版，将每半年更新一次，并提供新功能。但是，由于 Microsoft 能够从云提供见解来帮助你，你可以迅速而自信地将这些更新发布到成百上千台设备。与就地升级一样，该功能更新保留了前一个版本的应用、数据和配置。</span><span class="sxs-lookup"><span data-stu-id="acae1-p114">**Semi-Annual Updates** Once you have moved to Windows 10 and Office 365 ProPlus, updates are delivered semi-annually with new features. But with Microsoft able to deliver insights from the Cloud to help you, you can quickly and confidently roll out these updates to hundreds or thousands of devices. Like an in-place upgrade, the Feature Update preserves apps, data and configurations from the previous release.</span></span>
+
+## <a name="the-deployment-process-wheel"></a><span data-ttu-id="acae1-159">部署过程轮</span><span class="sxs-lookup"><span data-stu-id="acae1-159">The Deployment Process Wheel</span></span>
+
+<span data-ttu-id="acae1-p115">在开始之前，你会想要制定一个高级计划，并与必要的赞助商协作。我们的部署过程轮概述了关键步骤，帮助你确定核心团队成员和资源，以便在以下部署区域进行管理。</span><span class="sxs-lookup"><span data-stu-id="acae1-p115">Before you get started, the you’ll want to create a high-level plan and get the necessary sponsors on board. Our deployment process wheel outlines critical steps to help you to identify core team members and resources to manage in the following deployment areas.</span></span>
+
+<span data-ttu-id="acae1-p116">**[步骤 1：设备和应用就绪情况](https://aka.ms/mdd1)** 为实现成功部署，必须首先知道你所拥有的设备和应用。这意味着要对设备和应用进行盘点，并验证其兼容性。</span><span class="sxs-lookup"><span data-stu-id="acae1-p116">**[Step 1: Device and App readiness](https://aka.ms/mdd1)** For a successful deployment you must first know what you have. That means taking an inventory of your devices and apps and verifying compatibility.</span></span>
+
+<span data-ttu-id="acae1-p117">为帮助完成此操作，可以在我们基于云的服务中找到可用工具，即 Windows Analytics。可通过 Windows Analytics 获得从数亿台电脑中收集的兼容性情报和遥测技术，进而评估设备上运行的应用和驱动程序，这样你就可以确定桌面程序的就绪情况。如果要使用，甚至可以从 Windows Analytics 将“准备部署的电脑”列表导出到 System Center Configuration Manager，这样你就可以在目标电脑准备就绪时为其构建数据驱动集合。</span><span class="sxs-lookup"><span data-stu-id="acae1-p117">To help with this you can tools available in our cloud-based service, Windows Analytics. Windows Analytics allows you tap into compatibility intelligence and telemetry gathered from hundreds of millions of PCs, to assess the apps and drivers running on your device so you can establish the readiness of your desktop estate. You can even export a list of “PCs ready for deployment” from Windows Analytics to System Center Configuration Manager if you use it, allowing you to build data-driven collections of targeted PCs as they become ready.</span></span>
+
+[<span data-ttu-id="acae1-167">开始使用升级就绪情况</span><span class="sxs-lookup"><span data-stu-id="acae1-167">Get started with Upgrade Readiness</span></span>](https://docs.microsoft.com/zh-CN/windows/deployment/upgrade/upgrade-readiness-get-started)
+
+<span data-ttu-id="acae1-p118">**[步骤 2：目录和网络就绪情况](https://aka.ms/mdd2)** 如果尚未执行此操作，接下来你将需要实现 Azure Active Directory，以便进行标识和访问管理。还需要准备好网络以改进系统映像、应用程序包、用户文件和更新。这意味着大量的额外数据；你的网络必须有能力处理此额外负载，而不会影响组织的日常工作。我们有一系列的网络优化，从带宽限制和对等选项到动态带宽清理和差异更新。</span><span class="sxs-lookup"><span data-stu-id="acae1-p118">**[Step 2: Directory and Network Readiness](https://aka.ms/mdd2)** If you haven’t already, you’ll want to implement Azure Active Directory for identity and access management next. You will also want to prepare your network for the movement of system images, application packages, user files and updates across it. That means a large amount of additional data; your network must have the capacity to handle this extra load without impact to the day-to-day work of your organization. We have a range of networking optimizations available from bandwidth throttling and peer-to-peer options to dynamic bandwidth scavenging and differential updating.</span></span>
+
+[<span data-ttu-id="acae1-172">BranchCache 与对等缓存</span><span class="sxs-lookup"><span data-stu-id="acae1-172">BranchCache vs. Peer Cache</span></span>](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
+
+<span data-ttu-id="acae1-p119">**[步骤 3：Office 和业务线应用交付](https://aka.ms/mdd3)** 虽然 Windows 继续支持基于 MSI 的安装，但它现在也支持更新的安装机制，该机制针对自动化部署和持续更新进行了优化。Office 365 专业增强版和 Windows 2019 客户端使用即点即用，你可能想要提供一系列 UWP 应用，并且可能会逐渐发现你自己部署第三方应用和内部开发业务线应用，这些应用使用的是基于 MSIX 的新打包应用。这一步骤确保应用已准备好进行自动部署，并且你已为成功操作做好准备，而无论是使用即点即用、MSIX、基于 MSI 的传统方式部署的应用，还是从你建立业务的 Microsoft Store 部署的 UWP 应用。</span><span class="sxs-lookup"><span data-stu-id="acae1-p119">**[Step 3: Office and Line of Business App Delivery](https://aka.ms/mdd3)** While Windows continues to support MSI-based installations it also now supports newer installations mechanisms, optimized for automated deployment and continuous updates. Office 365 ProPlus and Windows 2019 clients use Click-to-Run, you may want to make a range of UWP apps available, and you may increasingly find yourself deploying third-party apps and in-house developed Line of Business Apps that use the new MSIX-based packaging apps. This step ensures your apps are ready for automated deployments, and that you are set up for success whether your apps deploy using Click-to-Run, MSIX, conventional MSI-based, or are UWP apps deployed from a Microsoft Store from Business you set up.</span></span>
+
+[<span data-ttu-id="acae1-176">MSIX 简介</span><span class="sxs-lookup"><span data-stu-id="acae1-176">MSIX Intro</span></span>](https://blogs.msdn.microsoft.com/sgern/2018/06/15/msix-intro/)
+
+<span data-ttu-id="acae1-p120">**[步骤 4：用户文件和设置迁移](https://aka.ms/mdd4)** 这是任何电脑替换或刷新周期中的关键步骤：必须确保用户文件、数据和设置成功迁移，并在迁移过程中保留。该步骤涵盖了支持手动或自动迁移的选项，其中包括已知选项和新选项。</span><span class="sxs-lookup"><span data-stu-id="acae1-p120">**[Step 4: User Files and Settings Migration](https://aka.ms/mdd4)** This is a critical step in any PC replacement or refresh cycle: you have to ensure users’ files, data and settings move successfully and are preserved over the migration. This step covers the options available for manual or automated migrations, including well-known and new options.</span></span>
+
+<span data-ttu-id="acae1-p121">与之前的升级过程一样，用户状态迁移工具依旧是自动化这一过程别具价值的工具，它仍然是使用 System Center Configuration Manager 或 Microsoft Deployment Toolkit 进行的迁移的组成部分。但在迁移过程中，移动所有这些数据可能会成为电脑替换的计时瓶颈，原因在于每台电脑有时传输数百 GB 两次所涉及到的物理过程 – 首先从现有桌面开始，然后再回到新桌面。OneDrive 支持的一个新选项是“已知文件夹移动”，用于在部署之前，在云中大规模同步用户文档、图片和桌面文件。</span><span class="sxs-lookup"><span data-stu-id="acae1-p121">As in previous upgrades, the User State Migration Tool continues to be a valuable tool to automate this process and it remains an integral part of migrations orchestrated using System Center Configuration Manager or the Microsoft Deployment Toolkit. But moving all this data at migration can be a timing bottleneck for PC replacement, due to the physics involved in transferring sometimes hundreds of gigabytes per PC twice – first from the existing desktop, then back down to the new desktop. A new option enabled by OneDrive is Known Folder Move is to sync user documents, pictures and desktop files, at scale, in the cloud, ahead of deployment.</span></span>
+
+[<span data-ttu-id="acae1-182">将 Windows 已知文件夹重定向和移动到 OneDrive</span><span class="sxs-lookup"><span data-stu-id="acae1-182">Redirect and move Windows known folders to OneDrive</span></span>](https://docs.microsoft.com/zh-CN/onedrive/redirect-known-folders)
+
+<span data-ttu-id="acae1-p122">**[步骤 5：安全性和合规性](https://aka.ms/mdd5)** 在移动到 Windows 10 和 Office 365 专业增强版时，安全性和合规性是一个具备诸多优势的领域。重要的是，你要熟悉新的内置功能，并将其与已有功能进行比较。例如，Windows 10 中使用基于虚拟化的安全性的新功能可以通过将核心流程和机密从操作系统中分离出来，来防止凭证被盗，防御基于浏览器的漏洞和恶意代码执行。此外，像高级威胁防护这样的云服务提供了一个统一平台，用于安全强化、后期漏洞检测、调查和响应。高级威胁防护还可以保护你免受恶意电子邮件附件、不安全超链接等内容的侵害。</span><span class="sxs-lookup"><span data-stu-id="acae1-p122">**[Step 5: Security and Compliance](https://aka.ms/mdd5)** Security and Compliance is an area with a lot upside when moving to Windows 10 and Office 365 ProPlus. It is important you familiarize yourself with the new built-in capabilities and compare that with what you already have. For example, new capabilities in Windows 10 using virtualization-based security can prevent credential theft, protect against browser-based exploits and malicious code execution by isolating core processes and secrets from the operating system. In addition, cloud services like Advanced Threat Protection give you a unified platform for security hardening, post-breach detection, investigation, and response. Advanced Threat Protection can also safeguard you against malicious email attachments, unsafe hyperlinks and more.</span></span>
+
+[<span data-ttu-id="acae1-188">Microsoft 安全</span><span class="sxs-lookup"><span data-stu-id="acae1-188">Microsoft Security</span></span>](https://www.microsoft.com/zh-CN/security/default.aspx)
+
+<span data-ttu-id="acae1-p123">**[步骤 6：OS 部署和功能更新](https://aka.ms/mdd6)** 在一切准备就绪后，下一步是部署 OS 映像。可以使用 System Center Configuration Manage 任务序列和基础结构来完成大量的繁重工作。建议的方法是在组织中实施分阶段部署，使用一组具有代表性的硬件和应用，首先锁定目标并部署到“早期采用者组”。然后，你可以使用来自这些设备和用户的数据来逐步瞄准更多电脑。</span><span class="sxs-lookup"><span data-stu-id="acae1-p123">**[Step 6: OS Deployment and Feature Updates](https://aka.ms/mdd6)** With everything prepared, the next step is to deploy the OS images. A lot of the heavy lifting for can be done using System Center Configuration Manage task sequences and infrastructure. The recommended approach is to deploy in phases, first targeting and deploying to an “early adopter group” in your organization using a representative set of hardware and apps. You can then use the data from those devices and users to gradually target more and more PCs.</span></span>
+
+[<span data-ttu-id="acae1-193">System Center Configuration Manager 中的操作系统部署简介</span><span class="sxs-lookup"><span data-stu-id="acae1-193">Introduction to operating system deployment in System Center Configuration Manager</span></span>](https://docs.microsoft.com/zh-CN/sccm/osd/understand/introduction-to-operating-system-deployment)
+
+<span data-ttu-id="acae1-p124">**[步骤 7：Windows 和 Office 即服务](https://aka.ms/mdd7)** 这标志着维护用户桌面资产的方式发生了重大转变。通过移动到 Windows 10（和 Office 365 专业增强版），可以将 Windows（和 Office）作为服务来管理。每隔几年，技术就会发生巨大的变化，你将不断为用户带来新功能、体验和保护。半年度功能更新在每年的秋季和春季提供新功能，而每月累积质量更新将包含安全性、可靠性和 bug 修复。虽然可以选择部署 Office 2019 客户端，但我们强烈建议你移至 Office 专业增强版。此做法遵循类似于 Windows 的服务计划，因此用户也会定期收到 Office 应用更新。</span><span class="sxs-lookup"><span data-stu-id="acae1-p124">**[Step 7: Windows and Office as a Service](https://aka.ms/mdd7)** This represents a major shift in the way you maintain users’ desktop real-estate. With this move to Windows 10 (and Office 365 ProPlus) you can move to managing Windows (and Office) as a service. In place of a massive shift in technology every few years, you will continually be bringing new capabilities, experiences and protections to your user. Semi-annual feature updates deliver new capabilities in the Fall and Spring of each year, while monthly cumulative Quality Updates will contain security, reliability and bug fixes. While you can opt to deploy Office 2019 clients, we strongly recommend you to move to Office ProPlus. This follows a similar service plan to Windows, so your users get updates to the Office apps on a regular basis too.</span></span>
+
+![](media/getting-started-media/getting-started-media-2.png)
+
+[<span data-ttu-id="acae1-200">Windows 即服务概述</span><span class="sxs-lookup"><span data-stu-id="acae1-200">Overview of Windows as a service</span></span>](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview)
+
+<span data-ttu-id="acae1-p125">**[步骤 8：用户通信和培训](https://aka.ms/mdd8)** 最后一步对于推动使用新功能来增强团队合作、通信、安全等至关重要。在针对早期采用者圈之外的用户进行广泛部署之前，建议推出用户通信和培训。这将有助于推动人们对 Office、Windows 或其他业务线应用和服务的新功能的使用方式的所需更改。为提供帮助，我们通过 Microsoft FastTrack 提供免费在线培训。此外，我们还发布了免费示例通信计划和时间线，以及电子邮件、社交和 Intranet 模板来帮助推出 Windows 10。作为 Microsoft 365 或 Office 365 组织，你的组织也可能符合资格并可直接支持。</span><span class="sxs-lookup"><span data-stu-id="acae1-p125">**[Step 8: User Communications and Training](https://aka.ms/mdd8)** This last step is critical to driving usage of new capabilities for enhancing teamwork, communications, security and more. Before broad deployment is targeted to users outside early adopter rings, we recommend you roll out user communication and training. This will help drive desired changes in how people use new capabilities in Office, Windows or other line of business apps and services. To assist, we provide free online training via Microsoft FastTrack. Plus, we’ve published free sample communication plans and timelines together with email, social and intranet templates to help with your rollout of Windows 10. As a Microsoft 365 or Office 365 organization, your organization may also be eligible for and direct support.</span></span>
+
+## <a name="next-step"></a><span data-ttu-id="acae1-207">后续步骤</span><span class="sxs-lookup"><span data-stu-id="acae1-207">Next Step</span></span>
+
+<span data-ttu-id="acae1-p126">现在你已了解新增功能和不同之处，而且我们已经演示了建议的部署过程轮。既然已初步了解有关切换到新式桌面的端到端指导和可用工具，那就开始行动吧。</span><span class="sxs-lookup"><span data-stu-id="acae1-p126">Now you know what’s new and different, and we have walked through our recommended deployment process wheel. With this taste for the end-to-end guidance and tools available for you to make the shift a modern desktop, let’s get started.</span></span>
+
+## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[<span data-ttu-id="acae1-210">步骤 1：设备和应用就绪情况</span><span class="sxs-lookup"><span data-stu-id="acae1-210">Step 1: Device and App Readiness</span></span>](https://aka.ms/mdd1)
+
