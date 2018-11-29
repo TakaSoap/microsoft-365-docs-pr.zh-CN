@@ -1,0 +1,108 @@
+---
+title: Microsoft 365 测试环境的传递身份验证
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/13/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- TLG
+- Ent_TLGs
+ms.assetid: ''
+description: 摘要：配置 Microsoft 365 测试环境的传递身份验证。
+ms.openlocfilehash: 26222f04617999104a1ad010eb189a0c01370a6d
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26865593"
+---
+# <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的传递身份验证
+
+想要直接使用本地 Windows Server Active Directory (AD) 基础结构对基于云的 Microsoft 服务和应用程序进行身份验证的组织可以使用传递身份验证。本文介绍了如何为 Microsoft 365 测试环境配置传递身份验证，从而实现以下配置：
+  
+![使用传递身份验证测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+  
+此测试环境的设置分为以下两个阶段：
+
+1.  通过密码哈希同步创建 Microsoft 365 模拟企业测试环境。
+2.  在 APP1 上对 Azure AD Connect 进行传递身份验证配置。
+    
+![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+    
+> [!TIP]
+> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+  
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
+
+按照 [Microsoft 365 的密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。下面是生成的配置。
+  
+![使用密码哈希同步测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+  
+此配置包括： 
+  
+- Office 365 E5 和 EMS E5 试用订阅或永久订阅。
+- 连接到 Internet 的简化组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。Azure AD Connect 在 APP1 上运行，以便定期将 TESTLAB Windows Server AD 域同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
+
+## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>阶段 2：在 APP1 上对 Azure AD Connect 进行传递身份验证配置
+
+在该阶段，需在 APP1 上将 Azure AD Connect 配置为使用传递身份验证，然后验证该功能能否正常工作。
+
+### <a name="configure-azure-ad-connect-on-app1"></a>在 APP1 上配置 Azure AD Connect
+
+1.  在 [Azure 门户](https://portal.azure.com)中，使用全局管理员帐户进行登录，然后使用 TESTLAB\User1 帐户连接到 APP1。
+
+2.  在 APP1 的桌面上，运行 Azure AD Connect。
+
+3.  在“**欢迎页**”上，单击“**配置**”。
+
+4.  在“其他任务”页面上，依次单击“**更改用户登录**”和“**下一步**”。
+
+5.  在“**连接到 Azure AD**”页面上，键入全局管理员帐户凭据，然后单击“**下一步**”。
+
+6.  在“**用户登录**”页面上，单击“**传递身份验证**”，然后单击“**下一步**”。
+
+7.  在“**准备配置**”页面上，单击“**配置**”。
+
+8.  在“**配置完成**”页面上，单击“**退出**”。
+
+9.  在 Azure 门户的左窗格中，单击“**Azure Active Directory > Azure AD Connect**”。请验证**传递身份验证**功能的状态为“**已启用**”。
+
+10. 单击“**传递身份验证**”。“**传递身份验证**”窗格中会列出身份验证代理所安装到的服务器。APP1 应该会出现在该列表中。关闭“**传递身份验证**”窗格。
+
+接下来，使用 User1 帐户的用户名“user1@testlab.\<你的公共域>”来测试能否登录 Office 365 订阅。
+
+1. 在 APP1 中，注销 Office 365，再重新登录，这次指定不同的帐户。
+
+2. 当系统提示输入用户名和密码时，指定 user1@testlab.\<公共域> 和 User1 密码。应该能以 User1 身份成功登录。
+
+请注意，尽管 User1 对 TESTLAB Windows Server AD 域拥有域管理员权限，但它不是 Office 365 全局管理员。因此，看不到“**管理员**”图标选项。
+
+下面是生成的配置：
+
+![使用传递身份验证测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+ 
+此配置包括：
+
+- 包含已注册 DNS 域 TESTLAB.\<域名> 的 Office 365 E5 和 EMS E5 试用订阅或永久订阅。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以便处理你的 Office 365 和 EMS E5 订阅的 Azure AD 租户所发起的传递身份验证请求。
+
+## <a name="next-step"></a>后续步骤
+
+在测试环境中探索其他[标识](m365-enterprise-test-lab-guides.md#identity)特性和功能。
+
+## <a name="see-also"></a>另请参阅
+
+[Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
+
+[部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
+
+[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+
+
