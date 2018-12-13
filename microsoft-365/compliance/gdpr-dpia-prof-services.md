@@ -4,18 +4,18 @@ description: 本文档提供相关信息将帮助他们以确定是否需要 DPI
 keywords: DPIA，Microsoft 专业服务，Microsoft 365 文档 GDPR
 robots: NOINDEX,NOFOLLOW
 author: BrendaCarter
-ms.localizationpriority: high
+ms.localizationpriority: Priority
 audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
 ms.collection: GDPR
-ms.openlocfilehash: 9e710c3b8ec0c467c36a675c2d76eabb3af1f0f6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 316f780fc324f95783416c52070b38c12d5078af
+ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 12/12/2018
 ms.locfileid: "26865656"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>使用 Microsoft 专业服务的数据控制器的数据保护影响评估： 指南
