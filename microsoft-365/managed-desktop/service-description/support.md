@@ -5,17 +5,17 @@ keywords: Microsoft 托管桌面，Microsoft 365 服务文档
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 11/1/2018
-ms.openlocfilehash: 7e551e51c3ea972f69c24bcb1994e13f0f7342f0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 11/7/2018
+ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865790"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面支持
 
-Microsoft 托管桌面设备由和将修复或替换为 Microsoft 在需要时。Microsoft 将提供预防和反应的事件管理。Microsoft 跟踪 Microsoft 托管桌面管理门户中的事件。它们分类根据[严重性定义](#severity-definitions)。 
+Microsoft 托管桌面设备由和将修复或替换由 Microsoft 按照担保协议。Microsoft 将提供预防和反应的事件管理。Microsoft 跟踪 Microsoft 托管桌面管理门户中的事件。它们分类根据[严重性定义](../working-with-managed-desktop/admin-support.md#sev)。
 
 客户可以联系 Microsoft 托管桌面操作：
 - 作为服务租户或配置现代工作区信息请求
@@ -39,10 +39,10 @@ Microsoft 托管桌面支持：
 
 支持的详细信息：
 
-- 当前： 北美和英国仅 （全年每 24 小时 7） 
+- 当前： 北美、 United Kingdom 和仅澳大利亚 （全年每 24 小时 7） 
 - 英语是唯一受支持的语言的与客户的电话和聊天对话 
 - 我们合作，不替换您企业的帮助台;通过与技术支持人员仍处理的业务线 (LOB) 应用程序、 网络资源等 
-- 非 Microsoft 托管桌面设备超出范围 
+- 驻留在测试拨打和非 Microsoft 托管桌面设备中的 Microsoft 托管设备超出范围 
 
 ## <a name="hardware-replacement"></a>更换硬件
 

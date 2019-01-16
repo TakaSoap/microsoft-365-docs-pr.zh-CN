@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 配置多重身份验证使用发送到 Microsoft 365 企业版测试环境中智能电话的短信。
-ms.openlocfilehash: aae493e79a197635b2e14fa7f238a3189ed695ae
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 353f09253794670e8107e084acb3a01cd309fd60
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865401"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版的多因素身份验证测试环境
@@ -50,7 +50,7 @@ ms.locfileid: "26865401"
 
 通过以下步骤为 User 2 帐户启用多重身份验证：
   
-1. 打开单独的专用的浏览器实例，请转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com))，然后使用您的全局管理员帐户登录。
+1. 打开单独的专用的浏览器实例，请转到 Office 门户 ([https://office.com](https://office.com))，然后使用您的全局管理员帐户登录。
     
 2. 在主门户页上，单击“管理员”****。
     
@@ -74,7 +74,7 @@ ms.locfileid: "26865401"
   
 1. 打开浏览器的专用的新实例。
     
-2. 转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com)) 和使用用户 2 帐户的登录 (user2 @\<组织名称 >。 onmicrosoft.com) 和密码。
+2. 转到 Office 门户 ([https://office.com](https://office.com)) 和使用用户 2 帐户的登录 (user2 @\<组织名称 >。 onmicrosoft.com) 和密码。
     
 3. 在登录后被提示设置的详细信息的帐户。单击**下一步**。
     
@@ -86,7 +86,7 @@ ms.locfileid: "26865401"
     
    - 在**方法**中，单击**给我发送的短信代码**。
     
-5. 单击“下一步”。
+5. 单击"下一步"。
     
 6. 输入介于智能手机上收到的文本消息验证代码，然后单击**验证**。
     
@@ -94,7 +94,7 @@ ms.locfileid: "26865401"
     
 8. 如果这是首次您使用登录用户 2 帐户后，在系统提示您要更改的密码。两次，键入原始密码和新密码，然后单击**更新密码和登录**。记录在安全位置的新密码。
     
-    您应在浏览器的**Microsoft Office Home**选项卡上看到用户 2 的 Office 365 门户。
+    在浏览器的**Microsoft Office Home**选项卡上，您应用户 2 看到 Office 门户。
 
 
 在标识阶段的信息和链接以部署生产环境中的多因素身份验证，请参阅[设置多因素身份验证](identity-multi-factor-authentication.md)步骤。
@@ -105,7 +105,7 @@ ms.locfileid: "26865401"
 
 ## <a name="see-also"></a>另请参阅
 
-[阶段 2：标识](identity-infrastructure.md)
+[阶段 2：身份](identity-infrastructure.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

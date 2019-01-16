@@ -14,10 +14,10 @@ ms.custom:
 - Ent_TLGs
 description: 配置 Azure AD 身份保护并分析 Microsoft 365 企业版测试环境中的当前帐户。
 ms.openlocfilehash: 165667ad2122839336ef0790ab5661cff53ca32b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865483"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>为 Microsoft 365 企业版的 azure AD 身份保护测试环境
@@ -65,7 +65,7 @@ Azure AD 身份保护可以检测潜在安全漏洞影响组织的标识、 配�
 
 ## <a name="see-also"></a>另请参阅
 
-[阶段 2：标识](identity-infrastructure.md)
+[阶段 2：身份](identity-infrastructure.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

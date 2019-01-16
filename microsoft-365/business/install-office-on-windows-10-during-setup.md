@@ -21,10 +21,10 @@ search.appverid:
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: 了解现在如何自动向 Windows 10 设备安装过程中部署 Office。
 ms.openlocfilehash: c51be45b4b4782de43939e648e77239f42492c4c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865819"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>在设置过程中，在 Windows 10 上安装 Office

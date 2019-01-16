@@ -21,10 +21,10 @@ search.appverid:
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: 了解有关保护策略，可从移动设备对 Office 应用程序帮助的安全访问。
 ms.openlocfilehash: 75dbe79acccabd851c43259a165e79bfe3c509c0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865714"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>管理用户访问移动设备上的 Office 文档的方式

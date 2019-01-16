@@ -12,10 +12,10 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南启用特权的访问管理 Microsoft 365 企业版测试环境。
 ms.openlocfilehash: 5f1a416a12171504af110ec62b9a7882143263e6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865407"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 Privileged Access Management

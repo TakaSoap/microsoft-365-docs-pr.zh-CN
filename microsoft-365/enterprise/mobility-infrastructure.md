@@ -13,11 +13,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 ms.custom: microsoft-intune
-ms.openlocfilehash: 8d048ec6628cb8f7cb9c5e0d4c7960481bc69de1
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 3afc28f0d21918c027a6a1622a40318e333f7ab4
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866056"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>第 5 阶段： Microsoft 365 enterprise 的移动设备管理
@@ -28,7 +28,7 @@ ms.locfileid: "26866056"
 
 Microsoft 365 企业版包括可帮助管理设备和其应用程序，贵组织中的功能。使用 Microsoft Intune，您可以管理 iOS、 Android、 macOS 和 Windows 设备来保护对组织的资源，包括您的数据访问。Intune 与 Azure Active Directory (Azure AD)、 集成和 Microsoft 365 启用以下商业应用场景：
 
-- 存储和共享组织内部和外部的文件，以跨组织边界无缝工作
+- 在组织内外存储和共享文件，以跨组织边界无缝工作
 - 随时随地跨设备安全工作，在保持灵活工作方式的同时实现更多功能
 - 提供尽可安心的控件和可见性，行业认证达标且符合全球标准
 - 保护信息并降低数据丢失的风险
@@ -36,7 +36,7 @@ Microsoft 365 企业版包括可帮助管理设备和其应用程序，贵组织
 - 监视、 报告和分析活动迅速做出反应以提供组织的安全
 - 保护您的用户和其帐户
 
-有关详细信息，请参阅[使用 Microsoft 365 实现数字化化转型](http://transform.microsoft.com)。 
+有关详细信息，请参阅[使用 Microsoft 365 实现数字化转型](http://transform.microsoft.com)。 
 
 在此阶段中，您注册您的设备中 Intune，并创建和强制实施策略，以帮助保护您的数据的安全和受保护。Intune 文档的整个库[可用联机](https://docs.microsoft.com/intune)。它也是最好是在开始之前查看[Intune 部署规划、 设计和实施的指南](https://docs.microsoft.com/intune/planning-guide)。
 
@@ -110,7 +110,7 @@ Intune 可以管理应用程序，包括添加应用程序，将其分配给不�
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南： 移动应用程序管理策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南： 设备合规性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>步骤 6： 启用合规性和条件的访问
@@ -168,7 +168,7 @@ Microsoft 提供的一组的[标识和设备的访问](microsoft-365-policies-co
 - [通过 Microsoft Intune 在 Windows 10 设备上连接到工作内容](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
 - [在 Microsoft 推动 iOS、OS X 和 Android 设备的移动效率](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
 
-## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
+## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何使用 Microsoft 365 企业版
 
 请参阅如何与 Microsoft 365[部署其移动设备管理基础结构](contoso-mdm.md)Contoso Corporation 虚构但代表性跨国企业，云服务。
 

@@ -3,14 +3,14 @@ title: Microsoft 托管桌面如何处理更新
 description: 及时更新 Microsoft 托管桌面是速度和稳定性的平衡。
 keywords: Microsoft 托管桌面，Microsoft 365 服务文档
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 513e03b7d703e0a9f78281ddac764d8a29ed5c8f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 01/09/2019
+ms.openlocfilehash: bee6381b0f2b7b1e2d929329c3cf628ab7657678
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865505"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft 托管桌面如何处理更新
@@ -22,44 +22,42 @@ ms.locfileid: "26865505"
 
 Microsoft 托管桌面连接到基于云的现代基础结构的所有设备。确保业务应用程序更新的 Windows、 Office、 驱动程序、 固件和 Microsoft 存储最新是速度和稳定性的平衡。部署在拨打将用于确保 OS 和策略的推出以安全方式。 
 
-## <a name="update-rings"></a>更新响铃
+## <a name="update-groups"></a>更新组
 
 Microsoft 托管桌面使用四个 Azure AD 组来管理更新：
 
-- 测试： 测试拨打仅用于测试和验证的客户租户中所做的更改。  
-- 第一个： 首先被用于与愿意早期安装软件和采用某些预发布更新的有限的技术知识用户早期测试振铃。
-- 快速： fast 环是我们期望用户一大组。 此拨打的目标是以保持设备更新和安全与软件传递快速速度。  
-- 广泛： 慢环是平衡保守滚超出质量和功能的更新。 高质量的更新仍传送较快的速度，但不是立即。 
+- 测试： 非生产设备用于验证跨租户的其余部分部署所做的更改之前的更改。在此拨打的设备超出记录的最终用户支持的范围。 
+- 首先： 包含前期软件应用，并且设备可能受到预发布更新。
+- Fast： 优先稳定性速度。用于检测质量问题之前它们拨打给广泛的组。 
+- 广泛： 最后一组具有可用的功能和质量更新。此组包含大多数租户中的用户，因此倾向稳定性于优先于部署中的速度。
 
-拨打系统中的更新被分类为质量，或更新的功能：
-- 高质量的更新包括安全，critical、 和驱动程序更新。 这些是通常每月更新。 
-- 功能更新包含不仅安全和质量修订，但也显著功能新增功能和更改;每年分号发布它们。 
+累积和可能归类为质量或功能更新 Microsoft 发布的更新。有关详细信息，请参阅[Windows Update： 常见问题](https://support.microsoft.com/help/12373/windows-update-faq)。 
 
-拨打升级的工作原理：
+如何更新部署的工作方式：
 - Microsoft 托管桌面部署新的功能或质量更新，将根据下面指定的计划。
-- 在部署期间，Microsoft 托管桌面监视的故障或其他中断 （通过遥测信号和我们最终用户支持系统）; 迹象如果检测到任何已立即暂停部署到所有当前和将来响铃。
-    - 示例： 如果质量的更新部署到首次响铃时发现问题时，然后首先，Fast 和广泛将所有暂停解决该问题之前。
+- 在部署期间，Microsoft 托管桌面监视故障或中断 （基于遥测信号和最终用户支持系统） 的迹象。如果检测到任何已立即暂停部署到当前和将来的所有组。
+    - 示例： 如果发现问题时质量的更新部署到的第一个组，然后更新到第一个、 Fast、 和广泛的部署将所有暂停解决该问题之前。
     - 兼容性问题可能会报告归档 Microsoft 托管桌面 IT 管理门户中的票证。
-- 功能和质量更新独立暂停。 暂停实际上是默认情况下 35 天，但可减少或扩展具体取决于是否修正问题。
-- 未暂停响铃后，部署恢复根据以下计划。
-- 此升级过程适用于功能和质量更新，但日程表会有所不同，每个。
+- 功能和质量更新独立暂停。暂停实际上是 35 天，默认情况下，但可减少或扩展具体取决于是否修正问题。
+- 未暂停组后，部署恢复根据以下计划。
+- 此部署过程适用于功能和质量更新，但日程表会有所不同，每个。
 
 <table>
-<tr><th colspan="5">拨打和延迟设置</th></tr>
-<tr><th>更新类型</th><th>测试拨打</th><th>第一个</th><th>快速</th><th>广泛</th></tr>
-<tr><td>高质量的操作系统的更新</td><td>0 天</td><td>0 天</td><td>1 天</td><td>5 天</td></tr>
-<tr><td>操作系统的功能更新</td><td>半年通道 （目标） + 0 天</td><td>半年通道 （目标） + 30 天</td><td>半年通道 （目标） + 60 天</td><td>半年通道 + 30 天</td></tr>
+<tr><th colspan="5">更新部署设置</th></tr>
+<tr><th>更新类型</th><th>测试</th><th>第一个</th><th>快速</th><th>广泛</th></tr>
+<tr><td>高质量的操作系统的更新</td><td>0 天</td><td>0 天</td><td>0 天</td><td>3 天</td></tr>
+<tr><td>操作系统的功能更新</td><td>0 天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
 <tr><td>驱动程序/固件</td><td colspan="4">遵循高质量的更新的计划</td></tr>
 <tr><td>防病毒定义</td><td colspan="4">更新了每个扫描</td></tr>
-<tr><td>Office 支持加号单击可运行</td><td colspan="4">与半年通道对齐</td></tr>
 </table>
 
+这些延期段有意旨在确保高安全性和性能标准的所有用户。Microsoft 托管桌面基于跨所有 Microsoft 托管桌面设备和不同的范围和更新的影响整个收集的数据，此外，保留灵活地修改 ad 上的所有部署组上述延期期的时长临时基础。
 
 ## <a name="windows-insider-program"></a>Windows 内幕计划
 
-Microsoft 托管桌面不支持 Windows 内幕计划的一部分的设备。此程序用于验证预发行 Windows 软件和适用于非任务关键设备。尽管这是一项重要 Microsoft 举措，它不是在生产环境中的广泛部署。 
+Microsoft 托管桌面不支持 Windows 内幕计划的一部分的设备。Windows 内幕计划用于验证预发行 Windows 软件和适用于非任务关键设备。尽管这是一项重要 Microsoft 举措，它不是在生产环境中的广泛部署。 
 
-与 Windows 内幕生成找到任何设备将放入测试振铃，并不会包含更新 Sla。
+与 Windows 内幕生成找到任何设备将置于测试组，且不可包含更新服务级别协议 (Sla。
 
 ## <a name="bandwidth-management"></a>带宽管理
 

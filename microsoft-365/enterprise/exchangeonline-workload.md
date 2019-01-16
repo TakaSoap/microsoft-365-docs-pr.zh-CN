@@ -11,11 +11,11 @@ ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 description: 逐步完成规划、 推出，并在整个组织中 Microsoft 365 企业版驱动的 Exchange Online 值的过程。
-ms.openlocfilehash: 36b24290acd4467400eab86b4c2760ccad65deab
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866021"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版的 Exchange Online
@@ -29,7 +29,7 @@ Exchange Online 还具有高级安全功能包括反恶意软件和反垃圾邮�
 以下阶段和步骤指导您完成构想渐进式推出一系列到 Exchange Online 组织的 Exchange online 组织，入职培训中的角色和驱动的 Exchange Online 的使用情况的过程并将其向最终用户的值。
 
 >[!Note]
->仅 Microsoft 365 enterprise 完成[foundation 基础](deploy-foundation-infrastructure.md)结构后，应遵循以下部署说明。
+>仅在您完成 Microsoft 365 企业版 foundation 基础结构的[阶段 2-Identity](identity-infrastructure.md)后，应遵循以下部署说明。
 >
 
 ## <a name="phase-1-envision"></a>阶段 1：构想
@@ -38,7 +38,7 @@ Exchange Online 还具有高级安全功能包括反恶意软件和反垃圾邮�
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>步骤 1： 收集您的 Exchange Online 部署成员
 
-对于成功部署的 Exchange Online 在 Microsoft 365 [foundation 基础架构](deploy-foundation-infrastructure.md)，您需要获得输入和反馈的适当的人员。关键人员包括业务决策者、 IT 人员，如架构师和实施，以及为最终用户的拥护者。 
+对于成功部署 Microsoft 365 企业版 foundation 基础结构的[阶段 2 标识](identity-infrastructure.md)在 Exchange online，您需要获得输入和反馈的适当的人员。关键人员包括业务决策者、 IT 人员，如架构师和实施，以及为最终用户的拥护者。 
 
 这三个组确保 Exchange Online 部署包括满足业务需求和邮箱迁移和安全性的技术方面，结果将为紧迫的典型用户将使用的注意事项。
 
@@ -55,10 +55,10 @@ Exchange Online 可用于不同的用途。您需要决定哪些目的将映射�
 Exchange Online 为 Microsoft 365 企业版提供这些战略业务方案：
 
 - 实时或按你自己的时间协作文档以简化共创过程
-- 管理项目、任务和截止时间以达到业务目标
+- 管理项目、任务和截止时间，以达到业务目标
 - 了解工作习惯，以提升影响力
 - 与你的团队进行沟通以了解情况，征求意见，建立凝聚力和共识
-- 存储和共享组织内部和外部的文件，以跨组织边界无缝工作
+- 在组织内外存储和共享文件，以跨组织边界无缝工作
 - 随时随地跨设备安全工作，在保持灵活工作方式的同时完成更多任务
 - 保护信息并降低数据丢失风险
 - 检测和防范外部威胁 
@@ -70,11 +70,11 @@ Exchange Online 为 Microsoft 365 企业版提供这些战略业务方案：
 #### <a name="result"></a>结果
 通信、 日程安排和短期协作满足您组织的 Exchange Online 方案的列表。
 
-## <a name="phase-2-onboard"></a>阶段 2：上手使用
+## <a name="phase-2-onboard"></a>阶段 2：载入
 
 此阶段中，在您规划 Exchange Online 部署的技术方面，并开始实施所选用户组。
 
-### <a name="prerequisites-identity-and-device-access-configuration"></a>先决条件： 标识和设备访问配置
+### <a name="prerequisites-identity-and-device-access-configuration"></a>先决条件：标识和设备访问配置
 
 若要保护 Exchange Online 邮箱的访问，请确保您已配置了[标识和设备访问策略](identity-access-policies.md)和[推荐 Exchange Online 的访问策略](secure-email-recommended-policies.md)。
 
@@ -86,7 +86,7 @@ Exchange Online 为 Microsoft 365 企业版提供这些战略业务方案：
 
 使用这些资源准备 Exchange Online 推出的技术方面： 
 
-- [将多个电子邮件帐户迁移到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- [将多个电子邮件帐户迁移到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Office 365 邮件迁移顾问](https://portal.office.com/onboarding/mailsetupadvisor#/)（必须登录到您的 Office 365 订阅）
 - [Exchange Online 中的协作](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Exchange Online 中的收件人](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
@@ -165,7 +165,7 @@ Exchange Online 向推出您的整个组织之后, 必须继续采用对您更�
 建议的活动如下：
 
 - 参阅 [Office 365 采用指南](https://aka.ms/successfactors)，了解与云服务采用有关的常规最佳做法。 
-- 请参阅 [Office 365 活动报告](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263)，了解整个组织的 Office 365 服务使用情况。如果不是组织的 Office 365 全局管理员，请让全局管理员向你的用户帐户授予“报告读取者”权限，以便你能够访问活动报告。
+- 请参阅 [Office 365 活动报告](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)，了解整个组织的 Office 365 服务使用情况。如果不是组织的 Office 365 全局管理员，请让全局管理员向你的用户帐户授予“报告读取者”权限，以便你能够访问活动报告。
 - 监视您的反馈地点 （管理中心的团队团队或 Yammer 中的公共通道） 问题和有关其与 Exchange Online 体验的个人的反馈。快速可以可以防止失望的个人和演示推出支持解决问题和问题。
 - 确定并培养拥护者每个业务组中的突出显示其成绩和使用 Exchange Online 的最佳实践。反映出到组织，以显示项目成功和采用其成功。认可业务组内的技术负责人可以施加通过负责人和对等方强大的影响。
 

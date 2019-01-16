@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 企业版测试环境中配置基于组的许可和动态组成员身份。
-ms.openlocfilehash: 46d2f0ca063b387d1a4a51b4ea97bd5d60c03fe5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 45a78af202f2d9ab029683aae4d95ed9a3370b08
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865787"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自动为您的 Microsoft 365 企业版测试环境的许可和组成员身份
@@ -47,7 +47,7 @@ ms.locfileid: "26865787"
 
 首先，创建一个新的销售组，并添加动态组成员资格规则，以便与设置为销售部门的用户帐户会自动添加到 Sales 组。
 
-1. 使用专用的 Internet 浏览器实例时，登录到 Office 365 门户[https://portal.office.com](https://portal.office.com)与您的 Office 365 E5 试用订阅的全局管理员帐户。
+1. 使用专用的 Internet 浏览器实例时，登录到 Office 门户[https://office.com](https://office.com)与您的 Office 365 E5 试用订阅的全局管理员帐户。
 2. 在浏览器的独立选项卡上，转到在 Azure 门户[https://portal.azure.com](https://portal.azure.com)。
 3. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”****。
 4. 在**所有组**刀片中，单击**新组**。
@@ -99,7 +99,7 @@ ms.locfileid: "26865787"
 
 ## <a name="see-also"></a>另请参阅
 
-[阶段 2：标识](identity-infrastructure.md)
+[阶段 2：身份](identity-infrastructure.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

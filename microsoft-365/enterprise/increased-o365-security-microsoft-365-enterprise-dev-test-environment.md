@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南启用其他 Office 365 安全设置 Microsoft 365 企业版测试环境。
-ms.openlocfilehash: 18e7b682d20c2212ae73783d668250d28b04075f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865666"
 ---
 # <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中实现更高的 Office 365 安全性
@@ -46,7 +46,7 @@ ms.locfileid: "26865666"
 
 不支持现代的身份验证的应用程序不能具有[标识和设备访问配置](microsoft-365-policies-configurations.md)应用于它们，这是保护您的 Microsoft 365 订阅和其数字资产的重要组成部分。 
 
-1. 转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com)) 和 Office 365 试用版订阅与全局管理员帐户登录。
+1. 转到 Office 门户 ([https://office.com](https://office.com)) 和 Office 365 试用版订阅与全局管理员帐户登录。
     
   - 如果您使用的轻型 Microsoft 365 测试环境，登录本地计算机中。
     
@@ -55,12 +55,12 @@ ms.locfileid: "26865666"
 2. 从**Microsoft 365 管理中心**选项卡，单击**管理**。
 3. 在新的**Microsoft 365 管理中心**选项卡上，单击**管理中心 > SharePoint**。
 4. 在新的**SharePoint 管理中心**选项卡上，单击**访问控制**。
-5. 在**应用程序不支持现代身份验证**，下单击**块 > 确定**。
+5. 下**应用程序不支持现代身份验证**，单击**阻止**，然后单击**确定**。
 
 
-### <a name="enable-advanced-threat-protection-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用高级对 SharePoint、 OneDrive 和 Microsoft 团队的威胁保护 (ATP)
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>启用高级威胁保护） SharePoint、 OneDrive for Business 和 Microsoft 团队
 
-Office 365 高级威胁保护 (ATP) 是一项功能的 Exchange Online Protection (EOP)，可帮助保持利用您的电子邮件的恶意软件。与 ATP，Exchange 管理员中心 (EAC) 或安全中创建策略和合规性中心，帮助确保您的用户访问仅链接或在标识为不恶意的电子邮件中的附件。有关详细信息，请参阅[高级的威胁保护安全的附件和安全的链接](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)。
+Office 365 高级威胁保护 (ATP) 是一项功能的 Exchange Online Protection (EOP)，可帮助保持利用您的电子邮件的恶意软件。与 ATP，在 Exchange 管理中心 (EAC) 或安全创建策略和合规性中心，帮助确保您的用户访问仅链接或在标识为不恶意的电子邮件中的附件。有关详细信息，请参阅[高级的威胁保护安全的附件和安全的链接](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)。
 
 1. 在浏览器的**Microsoft 365 管理中心**选项卡上，单击**管理中心 > 安全和合规性**。
 2. 在新的**安全和合规性**选项卡，单击**威胁管理 > 策略**。

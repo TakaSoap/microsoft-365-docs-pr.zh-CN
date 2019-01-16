@@ -11,56 +11,55 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: 2f5658146df3da7cc28c907b33e5035a84628fc5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 72dd50649dba9e290d50c2831557c06db3cb7586
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865684"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>用于保护 SharePoint 网站和文件的策略建议
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>有关保护 SharePoint 网站和文件的策略建议
 本文介绍如何实现建议的标识和设备访问策略以保护 SharePoint Online 和 OneDrive for Business。本指南基于[常见标识和访问策略的设备](identity-access-policies.md)。 
-
 
 这些建议基于三个不同级别的安全和保护可以应用的 SharePoint 文件 （英文） 根据您的需求的粒度：**基线**、**敏感**和**高度管控**。您可以了解有关这些安全层及推荐客户端的操作系统，通过这些建议[概述](microsoft-365-policies-configurations.md)中引用的详细信息。
 
-在所实现本指南，请确保使用适量的保护，其中包括确保敏感和高管控内容为适当的权限配置 SharePoint 网站。创建站点的比较基准，敏感和高管控保护的详细信息，请参阅[安全 SharePoint Online 网站和文件](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)。 
+除了实现本指南，请确保使用适量的保护，包括设置敏感和高度规范化的内容的适当权限配置 SharePoint 网站。创建站点的比较基准，敏感和高度规范化保护的详细信息，请参阅[安全 SharePoint Online 网站和文件](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)。 
 
 ## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>更新常见的策略，以包含 SharePoint 和 OneDrive for Business
-下图演示了用来保护中 SharePoint Online 和 OneDrive for Business 的文件的建议策略的组。表示哪些策略将更新或新创建的以添加对 SharePoint Online 和 OneDrive for Business 的保护。
+下图演示了用来保护中 SharePoint Online 和 OneDrive for Business 的文件的建议策略的组。表示哪些策略应更新或新创建的以添加对 SharePoint Online 和 OneDrive for Business 的保护。
 
 ![SharePoint Online 和 OneDrive 策略的摘要。](../images/identity-access-ruleset-sharepoint.png)
 
-如果您包括 SharePoint Online 中创建的常用策略时，您只需创建新的 polcies。配置条件访问规则，SharePoint Online 中包括的 OneDrive for Business。
+如果您包括 SharePoint Online 中创建的常用策略时，您只需要创建新策略。配置条件访问规则，SharePoint Online 中包括的 OneDrive for Business。
 
-新增的策略通过应用到您指定的 SharePoint 网站的特定访问要求实现设备保护敏感和高管控的内容。 
+新增的策略通过应用到您指定的 SharePoint 网站的特定访问要求实现设备保护敏感和高度规范化的内容。 
 
- 下表列出您也需要查看和更新或创建新的 SharePoint Online 的策略。常见策略链接到[常见 identity 和设备访问策略](identity-access-policies.md)一文 （即将推出的链接） 中的关联的配置说明。
+下表列出您也需要查看和更新或创建新的 SharePoint Online 的策略。常见策略链接到[常见的标识和设备访问策略](identity-access-policies.md)一文中的关联的配置说明。
 
 
 |保护级别|Policies|更多信息|
 |:---------------|:-------|:----------------|
-|**基线**|[*中等*或*高*风险登录时需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包括 SharePoint Online 中的云应用程序的分配。|
-|        |[阻止客户端不支持现代身份验证](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|包括 SharePoint Online 中的云应用程序的分配。|
-|        |[定义应用程序保护策略](identity-access-policies.md#define-app-protection-policies)|确保所有建议的应用程序都包含在应用程序的列表。请务必更新为每个平台 (iOS，Android、 Windows) 策略。|
-|        |[需要符合标准的 Pc](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在列表中的云应用程序包括 SharePoint Online。|
-|        |[在 SharePoint Online 中使用应用程序强制实施限制](#use-app-enforced-restrictions-in-sharepoint-online)|添加此新策略。这会告诉 Azure AD 以使用 SharePoint Online 中指定的设置。此规则应用于所有用户，但只影响对 SharePoint Online 访问策略中包括的网站的访问。
-|**敏感**|[*低*、*中*或*高*风险登录时需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 包括 SharePoint Online 中的云应用程序的分配。|
-|         |[需要符合标准的 Pc*和*移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|包括的云应用程序列表中的 SharePoint Online。|
-||[SharePoint Online 访问控制策略](#sharepoint-online-access-control-policies)： 允许从非托管设备仅浏览器访问特定的 SharePoint 网站|这样可以防止编辑和下载文件。要指定站点的用户 PowerShell。|
-|**高度管控**|[*始终*requrie MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包括 SharePoint Online 中的云应用程序的分配。 |
-||[SharePoint Online 访问控制策略](#use-app-enforced-restrictions-in-sharepoint-online)： 从非托管设备阻止到特定的 SharePoint 网站的访问|使用 PowerShell 指定网站。|
+|**基线**|[*中等*或*高*风险登录时需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 SharePoint Online 中分配的云应用程序|
+|        |[阻止客户端不支持现代身份验证](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|包含 SharePoint Online 中分配的云应用程序|
+|        |[定义应用程序保护策略](identity-access-policies.md#define-app-protection-policies)|确保所有建议的应用程序都包含在应用程序的列表。一定要更新的策略，为每个平台 (iOS，Android、 Windows)|
+|        |[需要符合标准的 Pc](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在列表中的云应用程序包括 SharePoint Online|
+|        |[在 SharePoint Online 中使用应用程序强制实施限制](#use-app-enforced-restrictions-in-sharepoint-online)|添加此新策略。这会告诉 Azure AD 以使用 SharePoint Online 中指定的设置。此规则应用于所有用户，但只影响对 SharePoint Online 访问策略中包括的网站的访问|
+|**敏感**|[*低*、*中*或*高*风险登录时需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 SharePoint Online 中的云应用程序的分配|
+|         |[需要符合标准的 Pc*和*移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|包含列表中的云应用程序的 SharePoint Online|
+||[SharePoint Online 访问控制策略](#sharepoint-online-access-control-policies)： 允许从非托管设备仅浏览器访问特定的 SharePoint 网站|这样可以防止编辑和下载文件。使用 PowerShell，可以指定站点|
+|**高度管控**|[*始终*需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 SharePoint Online 中分配的云应用程序|
+||[SharePoint Online 访问控制策略](#use-app-enforced-restrictions-in-sharepoint-online)： 从非托管设备阻止到特定的 SharePoint 网站的访问|使用 PowerShell，可以指定站点|
 
-## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>在 SharePoint Online 中使用应用程序强制实施限制
+## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>在 SharePoint Online 中使用应用程序强制实施的限制
 如果在 SharePoint Online 中实现访问控制，您必须在 Azure AD 以告知 Azure AD 实施 SharePoint Online 中配置的策略创建该条件访问策略。此规则应用于所有用户，但只影响对使用 PowerShell 在 SharePoint Online 中创建的访问控制时指定网站的访问。
 
 本文中配置此策略，请参阅 《 到特定的 SharePoint 网站集或 OneDrive 帐户的阻止或限制访问":[控件从非托管的设备的访问](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)。
 
 
 ## <a name="sharepoint-online-access-control-policies"></a>SharePoint Online 访问控制策略
-Microsoft 建议您保护敏感和高管控与设备访问控件的内容与 SharePoint 网站中的内容。通过创建指定的保护和网站应用到保护级别的策略来执行此操作。 
-- 敏感网站 — 允许仅浏览器访问权限。这样可以防止用户编辑和下载文件。
-- 高度管控网站 — 阻止访问从非托管设备。
+Microsoft 建议您保护敏感和高度规范化与设备访问控件的内容与 SharePoint 网站中的内容。通过创建指定的保护和网站应用到保护级别的策略来执行此操作。 
+- 敏感网站： 允许仅浏览器访问权限。这样可以防止用户编辑和下载文件。
+- 高度管控网站： 阻止访问从非托管设备。
 
 请参阅本文中的"阻止或限制访问特定的 SharePoint 网站集或 OneDrive 帐户":[控件从非托管的设备的访问](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)。 
 
@@ -72,8 +71,8 @@ Microsoft 建议您保护敏感和高管控与设备访问控件的内容与 Sha
 ![SharePoint 设备访问策略如何保护网站](../images/SharePoint-rules-scenario.png)
 
 在此图中：
-- James 被分配给与比较基准保护关联的条件的访问策略，但他可以授予对访问敏感或高度管控保护与关联的 SharePoint 网站。 
-- 如果 James 访问敏感或高度管控网站他是使用其 PC 的成员，只要其 PC 符合授予其访问。
+- James 被分配给与比较基准保护关联的条件的访问策略，但他可以授予对访问敏感或高度规范化保护与关联的 SharePoint 网站。 
+- 如果 James 访问敏感或高度规范化网站他是使用其 PC 的成员，只要其 PC 符合授予其访问。
 - 如果 James 访问敏感网站他是成员的使用其非托管的电话，允许对基线用户，则他将收到由于为此站点配置的设备访问策略敏感的网站的浏览器只读访问。 
 - 如果 James 访问高度管控的网站他是使用其非托管的电话的成员，则他将被阻止由于为此站点配置的访问策略。他只能访问此网站使用他的管理和合规性 PC。
 

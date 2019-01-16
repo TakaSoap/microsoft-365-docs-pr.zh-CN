@@ -3,14 +3,14 @@ title: 应用程序准备 Microsoft 托管桌面
 description: ''
 keywords: Microsoft 托管桌面，Microsoft 365 服务文档
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: ebeb54bd5d1f50cbb6f78b1c8ad4a624c449b8c2
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: b46e3de4a4cfe2140574ab9fc589e3a738bd2e17
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865602"
 ---
 # <a name="preparing-apps-for-microsoft-managed-desktop"></a>应用程序准备 Microsoft 托管桌面
@@ -21,14 +21,16 @@ ms.locfileid: "26865602"
  
 Microsoft 和 Microsoft 托管桌面客户同样可以围绕用于 Microsoft 托管桌面应用程序的关键、 尚未不同责任。
 
-## <a name="microsoft-responsibilites"></a>Microsoft 职责
+## <a name="microsoft-responsibilities"></a>Microsoft 职责
 **Office 365 应用程序**Microsoft 将提供完整的部署、 更新和支持的特定的 Office 365 应用程序服务。所有用户将都收到运行，以便用户可以迅速提高效率，包括在设备的图像的应用程序的 64 位版本的 Office 365 单击了基本集。项目和 Visio 中的应用程序的 Office 365 套件是单独授权。 Microsoft 托管桌面将提供部署组允许 IT 管理员管理许可证和部署这些适当地为其组织的应用程序。通过 Microsoft 托管桌面支持渠道这些应用程序的最终用户时，Microsoft 将提供支持。
 
-**业务线应用程序**Microsoft 提供的面向 IT 管理员管理和作为 Intune 产品的一部分部署到最终用户其业务线应用程序的工具。Microsoft 将支持[业务线应用程序](#line-of-business-applications)中所述的应用程序部署问题 
+**业务线应用程序**Microsoft 提供的面向 IT 管理员管理和作为 Intune 产品的一部分部署到最终用户其业务线 (LOB) 应用程序的工具。Microsoft 将支持[业务线应用程序](#line-of-business-applications)中所述的应用程序部署问题 
 
 **使用 Intune 部署**Intune 将链接到**Microsoft Store for Business**中，在 Microsoft 托管桌面入职培训允许已采购的应用程序通过 Intune 部署过程中。Microsoft 还会给最终用户部署的公司门户的基于 web 的版本，以便 IT 管理员可以为最终用户提供自助式体验。
 
 **应用程序管理**Microsoft 可能确定受限制的应用程序，由于其系统影响不适合现代工作区。标识此类应用程序时 Microsoft 将通知客户，该应用程序将需要从租户中删除。 
+
+有关受限制的应用程序行为和应用程序要求的详细信息，请参阅[Microsoft 托管桌面应用程序要求](../service-description/mmd-app-requirements.md)
 
 ## <a name="customer-responsibilities"></a>客户责任
 Office 365 套件是 Microsoft 的工作效率产品的核心和包含的所有 Microsoft 托管桌面用户 Microsoft 365 许可证中。Microsoft 部署、 更新和支持 Microsoft 托管桌面设备的 Office 应用程序时仍有某些客户负责的区域。
@@ -41,8 +43,7 @@ Office 365 套件是 Microsoft 的工作效率产品的核心和包含的所有 
 - 将应用程序分配给这些用户
 - 创建和维护用于管理应用程序分配的 Azure Active Directory (AD) 组 
 
-一旦被标识的 LOB 应用程序的核心集客户将采购、 许可、 打包、 和 Microsoft 托管桌面环境中测试这些应用程序。客户必须上载并部署到 Intune 以部署、 更新和停用其 LOB 应用程序的应用程序。客户负责管理 LOB 应用程序支持的用户。
- 
+客户必须将 LOB 应用程序上载到 Intune。这样，负责部署、 更新和通过其各自的生命周期、 停用这些应用程序以及管理这些应用程序的用户的支持。
 
 ## <a name="office-applications"></a>Office 应用程序
 作为 Microsoft 365 E5 许可证的一部分，Microsoft 部署 Office 365 Standard Suite （64 位）。 
@@ -62,7 +63,7 @@ Office 365 套件是 Microsoft 的工作效率产品的核心和包含的所有 
 将应用程序上载到 Intune | ![是](images/checkmark.png)     |
 在 Microsoft 托管桌面环境中测试应用程序 |    ![是](images/checkmark.png) |  
 与最终用户的测试应用程序    | ![是](images/checkmark.png) |    
-**Deployment** | |
+**部署** | |
 管理，并将用户分配给应用程序  | ![是](images/checkmark.png)  |
 Intune 部署工具提供向远程客户端应用程序| |   ![是](images/checkmark.png)
 确定并部署应用程序通过 Intune 的更新 | ![是](images/checkmark.png)    |
@@ -74,21 +75,16 @@ Intune 部署工具提供向远程客户端应用程序| |   ![是](images/check
 
 LOB 应用程序要求的信息，请参阅[Microsoft 托管桌面应用程序要求](../service-description/mmd-app-requirements.md)
 
-## <a name="resources"></a>资源
-超出范围 Microsoft 托管桌面操作的许多服务时有哪些 Microsoft 提供的可帮助客户管理自己的应用程序的服务。
 
-### <a name="windows-upgrade-readiness"></a>Windows 升级准备
-设置新的 Microsoft 托管的设备的关键部分了解设备用户所需的应用程序。Windows 升级准备是一个有助于企业理解其公司，内部应用程序环境并帮助他们如查看有关这些应用程序的关键数据的 Microsoft 工具：
-
-- **应用程序使用率**的遥测数据用于监视应用程序使用率。
-- **应用程序兼容性**的升级准备查看每个应用程序和看到如何广泛已部署在最新版本的 Windows 10 并评估如何确定它是否"准备 Windows"。此数据可帮助焦点测试不已广泛所采用的应用程序上的工作。
-
-### <a name="intune-application-deployment"></a>Intune 应用程序部署
+## <a name="intune-application-deployment"></a>Intune 应用程序部署
 通过 Microsoft 托管桌面管理门户，或通过 Intune 门户，可以处理应用程序管理。Intune 的应用程序管理门户显示为 Windows、 Android 和 iOS 部署的应用程序。Microsoft 托管桌面管理门户限制到 Windows 10 应用程序的视图。二者都有通过 Azure 门户。 
-- [Intune 应用程序管理基础知识](https://docs.microsoft.com/intune/app-management)
-- [添加 Windows 32 应用程序](https://docs.microsoft.com/intune/lob-apps-windows)
-- [添加 web 应用程序](https://docs.microsoft.com/intune/web-app)
-- [分配并将应用程序部署到组](https://docs.microsoft.com/intune/apps-deploy)
-
-### <a name="application-packaging-standards"></a>应用程序打包标准
-部署 Windows 32 应用程序通过 Intune 它们必须打包为以下任意一个。MSI，.appx，或。MSIX。Intune 的最常见包类型是当前。MSI。
+* [Intune 应用程序管理基础知识](https://docs.microsoft.com/intune/app-management)
+* [向 Intune 添加应用程序](https://docs.microsoft.com/intune/app-management)
+   * [添加业务线应用程序](https://docs.microsoft.com/intune/lob-apps-windows)
+   * [向 Intune 添加 Win32 应用程序](https://docs.microsoft.com/intune/apps-win32-app-management)
+   * [添加 web 应用程序](https://docs.microsoft.com/intune/web-app)
+* [部署应用程序](https://docs.microsoft.com/intune/apps-deploy)
+   * [将应用程序部署到 Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
+* 公司门户
+   * [部署的公司门户](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+   * [公司门户应用程序配置](https://docs.microsoft.com/intune/company-portal-app)

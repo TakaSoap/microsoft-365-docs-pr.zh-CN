@@ -3,14 +3,14 @@ title: Microsoft 托管桌面的系统必备
 description: ''
 keywords: Microsoft 托管桌面，Microsoft 365 服务文档
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 11/1/2018
-ms.openlocfilehash: a7e82c0f4301b00e3d9e923dca10d1630744b8c0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 303765d6804071b3a3de18ee412304566cbbe089
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865911"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的系统必备
@@ -28,7 +28,8 @@ Microsoft FastTrack 是可用于帮助客户满足这些要求，并帮助您准
 连接 |  所有 Microsoft 托管桌面设备都需要连接到大量 Microsoft 服务终结点从组织网络内部，包括：<br>Windows 更新<br>-Microsoft Store for Business<br>-Azure Active Directory<br>Windows 错误报告<br>-联机崩溃分析<br>的连接用户体验和遥测<br>-用于 Windows 10 OneDrive 应用程序<br><br>可以在[代理配置](../get-ready/network.md)中找到的 Url 和的完整列表所需的 IP 的。 
 Azure Active Directory |    Azure Active Directory (Azure AD) 必须是为所有用户帐户，认证源或必须从本地 Active Directory 使用 Azure AD 连接，版本 1.1.654.0 同步用户帐户或更高版本。有关详细信息，请参阅[Azure AD 连接](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
 身份验证 |    如果 Azure AD 不是用户帐户的认证源，则必须配置这些在 Azure AD 连接之一：<br>-密码哈希同步 （推荐）<br>-传递身份验证<br>联合身份验证与 ADFS<br><br>当设置 Azure AD 连接密码写回身份验证选项也是必需的。有关详细信息，请参阅[密码写回](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)。<br><br>Azure AD 身份验证选项的详细信息，请参阅[Azure AD 连接用户登录选项](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin)。
-Office 365 |    强烈建议到云迁移以下服务：<br>-电子邮件-将迁移到基于云的邮箱，Exchange online 或 Exchange Online 混合部署与 Exchange 2013 或更高版本，在本地配置。<br>-文件和文件夹 — 将迁移到 SharePoint Online/Office 365。<br>-Skype for Business – 迁移到 Skype 业务联机。<br>设备管理-Microsoft Intune A cloud only MDM 解决方案 （非混合） 是必需的它允许 IT 管理员可以管理 Microsoft 托管桌面设备世界任何地方使用可从 web 控制台。Microsoft Intune 是必需的 MDM 解决方案。<br><br>有关详细信息，请参阅[Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)。 
+Office 365 |    强烈建议到云迁移以下服务：<br>-电子邮件-将迁移到基于云的邮箱，Exchange online 或 Exchange Online 混合部署与 Exchange 2013 或更高版本，在本地配置。<br>-文件和文件夹 — 将迁移到 SharePoint Online/Office 365。<br>-Skype for Business – 迁移到 Skype 业务联机。
+设备管理 | Microsoft Intune-仅限云 MDM 解决方案 （非混合） 是必需的它允许 IT 管理员可以管理 Microsoft 托管桌面设备世界任何地方使用可从 web 控制台。Microsoft Intune 是必需的 MDM 解决方案。<br><br>有关详细信息，请参阅[Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)。 
 数据的备份和恢复 | Microsoft 托管桌面需要要用于保护同步到 OneDrive for Business 的文件。任何未同步到 OneDrive for Business 的文件不能保证由 Microsoft 托管桌面和设备交换或需要重新启动设备的支持呼叫过程中可能会丢失。Microsoft 托管桌面不支持映射的网络驱动器。  
 
 [了解如何满足 Microsoft 托管桌面注册的必备组件。](../get-ready/index.md)

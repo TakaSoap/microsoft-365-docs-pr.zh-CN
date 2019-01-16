@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365 服务文档
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 71952a8b073f002890cc95883e717aeb04c0cd68
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 01/08/2019
+ms.openlocfilehash: 6b6c6f6a2e719496578ac1d15c9b94a92a2ab492
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865383"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用程序要求
@@ -33,14 +33,19 @@ Microsoft 托管桌面使用 Intune、 Microsoft 存储和 Microsoft Store for B
 
 某些应用程序类型不是允许使用 Microsoft 托管桌面设备上：
 - 第三方防病毒、 安全性或审核软件
+- 第三方 web 浏览器
 - Office 365 Pro Plus 之前的 Microsoft Office 版本
 - 安装或捆绑其他第三方软件应用程序
 
 ## <a name="restricted-app-behaviors"></a>受限制的应用程序行为
 
-某些应用程序行为可能也会破坏用户体验或需要演示 Microsoft 托管桌面设备安全风险。应用程序应表现出以下行为或特征： 
+某些应用程序行为可对用户体验造成不利影响或带来安全风险到 Microsoft 托管桌面设备。应用程序应表现出以下行为或特征： 
+
+用户体验：
 - 安装后台服务或生成长时间运行背景进程
 - 自动添加到 Windows 启动路径
+
+安全性：
 - 呼叫未记录 Windows 或 Office Api 或承担内部 Windows 或 Office 数据结构依赖项
 - 用作应用程序商店或内置扩展管理器
 - 将最终用户的权限提升

@@ -3,14 +3,14 @@ title: Microsoft 托管桌面的网络配置
 description: ''
 keywords: Microsoft 托管桌面，Microsoft 365 服务文档
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3eab9237b177ea76faa1296fec2bfda739c78534
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865954"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
@@ -45,7 +45,7 @@ Microsoft 服务 | 文档源-Url 上需要允许列表
 Windows Update for Business (WUfB) | [Windows Update 以业务防火墙和代理要求](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
 传递优化 | [Windows Update 代理要求](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
 适用于企业的 Microsoft Store | [Microsoft 存储允许列表](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Office 365 | [Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)包括\*。 apibasic.diagnostics.office.com
 Azure Active Directory | [混合标识所需的端口和协议](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports)和[Active Directory 和 Active Directory 域服务的端口要求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 网络配置要求](https://docs.microsoft.com/intune/network-bandwidth-use)
 OneDrive for Business <br> | [所需的 Url 和 onedrive 端口](https://docs.microsoft.com/onedrive/required-urls-and-ports)

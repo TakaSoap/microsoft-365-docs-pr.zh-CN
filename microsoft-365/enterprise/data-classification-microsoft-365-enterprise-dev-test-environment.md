@@ -3,7 +3,7 @@ title: Microsoft 365 企业版的数据分类测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 12/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,16 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南创建和使用 Office 365 标签对 Microsoft 365 企业版测试环境中的文档。
-ms.openlocfilehash: 718cf038d88f1431ec6ca6fce1554d4f44dc1cb7
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 33ac1fa8e26c0037882e6c240cc04ec19e6a6a7b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866013"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版的数据分类测试环境
 
-使用本文中的说明，您可以配置 Microsoft 365 企业版在测试环境中使用 Office 365 标签的数据分类。
+使用本文中的说明，您可以配置 Microsoft 365 企业版在测试环境中使用 Office 365 保留标签的数据分类。
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -39,17 +39,17 @@ ms.locfileid: "26866013"
 
 ## <a name="phase-2-create-office-365-labels"></a>第 2 阶段：创建 Office 365 标签
 
-在此阶段中，您将创建为 SharePoint Online 文档文件夹的安全的不同级别的标签。
+在此阶段中，您将创建为 SharePoint Online 文档文件夹的保留的不同级别的标签。
   
-1. 如果需要使用专用的 Internet 浏览器实例，并登录到 Office 365 门户使用全局管理员帐户。为了帮助，请参阅[从何处登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要使用专用的 Internet 浏览器实例，并登录到您的全局管理员帐户的 Office 门户。为了帮助，请参阅[从何处登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 在“Microsoft Office 主页”**** 标签页中，单击“管理员”磁贴****。
+2. 在“**Microsoft Office 主页**”标签页中，单击“**管理**”磁贴。
     
 3. 在浏览器的新“Office 管理中心”**** 标签页中，单击“管理中心”>“安全&amp;合规性”****。
     
-4. 在浏览器的新“主页 -安全&amp;合规性”**** 标签页中，单击“分类”>“标签”****。
+4. 从新**主页-安全&amp;合规性**选项卡上的浏览器中，单击**分类 > 标签**。从**主页 > 标签**窗格中，单击**保留**选项卡。
     
-5. 在“**开始”>“标签**”窗格中，单击“**创建标签**”。
+5. 单击**创建标签**。
     
 6. 在“**命名标签**”窗格中，键入“**内部公用**”，然后单击“**下一步**”。
     
@@ -83,15 +83,15 @@ ms.locfileid: "26866013"
 
 请注意，可能需要几分钟，要发布的标签。
 
-## <a name="phase-3-apply-office-365-labels-to-documents"></a>第 3 阶段： 将 Office 365 标签应用于文档
+## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>第 3 阶段： 将 Office 365 保留标签应用于文档
 
 在此阶段中，可以发现的 SharePoint Online 网站的文档文件夹中的文件的默认标签行为和手动更改文档的标签。
 
 首先，创建敏感级别 SharePoint Online 团队网站：
   
-1. 使用本地计算机上的浏览器，并使用全局管理员帐户登录 Office 365 门户。如需帮助，请参阅[如何登录 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 在本地计算机上使用浏览器中，登录到 Office 门户使用全局管理员帐户。为了帮助，请参阅[从何处登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 在磁贴列表中，单击“**SharePoint**”。
+2. 在磁贴列表中，单击“SharePoint”****。
     
 3. 在新**SharePoint**选项卡在浏览器中，单击**创建网站**。
     
@@ -109,7 +109,7 @@ ms.locfileid: "26866013"
   
 1. 在浏览器的**SensitiveFiles**选项卡上，单击**文档**。
     
-2. 单击设置图标，然后单击“库设置”****。
+2. 单击设置图标，然后单击“**库设置**”。
     
 3. 在“权限和管理”下，单击“向此库中的项应用标签”********。
     
@@ -125,13 +125,13 @@ ms.locfileid: "26866013"
     
 4. 单击**Document.docx**文件名旁边的 Word 图标。
     
-5. 在右侧窗格中，在**属性**部分下**应用标签**，请注意文档已自动应用**敏感**标签。
+5. 在右侧窗格中，在**属性**部分下**应用保留标签**，请注意文档已自动应用**敏感**标签。
     
 6. 单击**编辑所有**。
     
 7. 在**Document.docx**窗格中的**应用标签**、 下，选择的**高度机密**标签，然后单击**保存**。
 
-有关信息和生产环境中的 Office 365 标签的链接的**信息保护**阶段，请参阅[针对您的环境配置分类](data-classification-microsoft-365-enterprise-dev-test-environment.md)步骤。
+有关信息和生产环境中的 Office 365 保留标签的链接的**信息保护**阶段，请参阅[针对您的环境配置分类](infoprotect-configure-classification.md)步骤。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用以下步骤来保护 Microsoft 365 企业版测试环境中的全局管理员帐户。
-ms.openlocfilehash: 233e2178b060df4950c340e034d5f51216fac8fb
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4d444e217c5a232811701f6519c2eb3ebe86df70
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865422"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>保护 Microsoft 365 企业版测试环境中的全局管理员帐户
@@ -48,7 +48,7 @@ ms.locfileid: "26865422"
 
 首先，创建 Office 365 云应用程序安全性策略监视全局管理员帐户活动并将通知发送给您的全局管理员帐户的电子邮件地址。 
 
-1. 登录到 Office 365 门户[http://portal.office.com](http://portal.office.com)使用全局管理员帐户。
+1. 登录到 Office 门户[http://portal.office.com](http://portal.office.com)使用全局管理员帐户。
 2. 单击**管理员**图块。在**Office Admin center**选项卡上单击**管理中心 > 安全和合规性**。
 3. 在左侧的导航窗格中，单击**通知 > 管理高级通知**。
 4. 在**高级通知的管理**页上，单击**打开 Office 365 云应用程序安全性**，然后单击**转到 Office 365 云应用程序安全性**。
@@ -70,7 +70,7 @@ ms.locfileid: "26865422"
 4. 清除**进行此更改其密码它们首次登录时的用户**。
 5. 单击**角色**，然后单击**全局管理员**。
 6. 单击**产品许可证**，，然后打开的**企业移动 + 安全 E5**和**Office 365 企业 E5 许可证**。
-7. 单击" **添加**"。
+7. 单击“添加”****。
 8. 在**用户已添加页上**，清除**发送电子邮件中的密码**，，然后单击**关闭**。
 
 接下来，创建一个名为 GlobalAdmins 的新组并向其添加 DedicatedAdmin 帐户。
@@ -116,7 +116,7 @@ ms.locfileid: "26865422"
 
 ## <a name="see-also"></a>另请参阅
 
-[阶段 2：标识](identity-infrastructure.md)
+[阶段 2：身份](identity-infrastructure.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

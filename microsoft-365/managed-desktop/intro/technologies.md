@@ -3,14 +3,14 @@ title: Microsoft 托管桌面技术
 description: 本主题列出的技术和 Microsoft 托管桌面中使用的应用程序。
 keywords: Microsoft 托管桌面，Microsoft 365 服务文档
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: da0268c6b0eddbd44cf62de2a95b963a443c3278
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865604"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 托管桌面技术
@@ -38,7 +38,7 @@ Web 应用程序 |  Yammer，Office Online，Delve，流 StaffHub、 PowerApps �
  |
  --- | ---
 凭据 Guard |  Microsoft 托管桌面将所提供的指导和管理此功能的云方面
-设备 Guard （Windows Defender 应用程序控制）   | Microsoft 托管桌面将创建策略。客户将管理签名
+设备 Guard （Windows Defender 应用程序控制） | Microsoft 托管桌面将创建策略。客户将管理签名
 AppLocker 管理 |  Microsoft 托管桌面将创建策略。客户将管理签名
 Application Virtualization (APP-V) |    Microsoft 托管桌面不支持这种部署，如 Intune 上不支持。
 用户体验虚拟化 (UE-V) | 未使用此属性与托管的 Microsoft 托管桌面设备

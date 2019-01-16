@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将您的业务移动到 Microsoft 365 企业版。
 ms.openlocfilehash: fd6f18c02453e6751d6163ab79e726eae9c951a9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865876"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>从 Office 365 企业高级版迁移到 Microsoft 365 业务

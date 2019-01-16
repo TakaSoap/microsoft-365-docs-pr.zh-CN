@@ -10,11 +10,11 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: dd1504ac11f0e2eefa56572af24de14b5f87830e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f3d3d72ddf9129997dd4232a578e1f101f113a53
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865409"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
@@ -34,20 +34,20 @@ ms.locfileid: "26865409"
 
 |保护级别|Policies|更多信息|
 |:---------------|:-------|:----------------|
-|**基线**|[*中等*或*高*风险登录时需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包括 Exchange Online 中的云应用程序的分配。|
-|        |[阻止客户端不支持现代身份验证](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|包括 Exchange Online 中的云应用程序的分配。|
-|        |[定义应用程序保护策略](identity-access-policies.md#high-risk-users-must-change-password)|确保 Outlook 包含在列表中的应用程序。请务必更新为每个平台 (iOS，Android、 Windows) 策略。|
-|        |[需要已批准应用程序](identity-access-policies.md#require-approved-apps)|包括的云应用程序列表中的 Exchange Online。|
-|        |[需要符合标准的 Pc](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|包括 Exchange Online 中的云应用程序的列表。|
-|        |[阻止 ActiveSync 客户端](#block-activesync)|添加此新策略。 
-|**敏感**|[*低*、*中*或*高*风险登录时需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 包括 Exchange Online 中的云应用程序的分配。|
-|         |[需要符合标准的 Pc*和*移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|包括的云应用程序列表中的 Exchange Online。|
-|**高度管控**|[*始终*需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包括 Exchange Online 中的云应用程序的分配 |
+|**基线**|[*中等*或*高*风险登录时需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包括 Exchange Online 中分配的云应用程序|
+|        |[阻止客户端不支持现代身份验证](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|包括 Exchange Online 中分配的云应用程序|
+|        |[定义应用程序保护策略](identity-access-policies.md#high-risk-users-must-change-password)|确保 Outlook 包含在列表中的应用程序。一定要更新的策略，为每个平台 (iOS，Android、 Windows)|
+|        |[需要已批准应用程序](identity-access-policies.md#require-approved-apps)|包括 Exchange Online 中的云应用程序列表|
+|        |[需要符合标准的 Pc](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|包括 Exchange Online 中的云应用程序列表|
+|        |[阻止 ActiveSync 客户端](#block-activesync-clients)|添加此新策略| 
+|**敏感**|[*低*、*中*或*高*风险登录时需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 包括 Exchange Online 中分配的云应用程序|
+|         |[需要符合标准的 Pc*和*移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|包括 Exchange Online 中的云应用程序列表|
+|**高度管控**|[*始终*需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包括 Exchange Online 中分配的云应用程序|
 
 ## <a name="block-activesync-clients"></a>阻止 ActiveSync 客户端
 此策略阻止 ActiveSync 客户端绕过其他条件访问规则。规则配置仅适用于 ActiveSync 客户端。通过选择**需要批准客户端应用程序**，此策略阻止 ActiveSync 客户端。配置此策略：
 
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，会看到 Azure 仪表板。
+1. 转到[Azure 门户](https://portal.azure.com)，并使用您的凭据登录。您已成功登录后，您将看到 Azure 仪表板。
 
 2. 从左侧菜单中选择“Azure Active Directory”。
 
@@ -59,15 +59,17 @@ ms.locfileid: "26865409"
 
 6. 选择“云应用”。
 
-7. 选择**应用程序**中，选择 Office 365 Exchange Online。单击**选择**并**完成**。
+7. 选择**应用程序**中，选择**Office 365 Exchange Online**。选择**选择**并**完成**。
+
 8. 选择**条件**，然后选择**客户端应用程序**。
-9. 有关**配置**，请选择**是**。检查只有以下：**移动应用程序和桌面客户端**和**Exchange ActiveSync 客户端**。单击**完成**。
+
+9. 有关**配置**，请选择**是**。检查只有以下：**移动应用程序和桌面客户端**和**Exchange ActiveSync 客户端**。选择**完成**。
 
 10. 从“访问控制”部分选择“授予”。
 
 11. 选择**授予访问**，选择**需要批准客户端应用程序**。 为多个控件中，选择**需要选定的控件**，然后选择**选择**。 
 
-12. 单击“创建”****。
+12. 选择" **创建**"。
 
 ## <a name="setup-office-365-message-encryption"></a>安装 Office 365 邮件加密
 使用新的 Office 365 邮件加密 (OME) 功能，利用 Azure Information Protection 中的保护功能，您的组织可以轻松地共享受保护的电子邮件与任何设备上的任何人。用户可以发送和接收与其他 Office 365 组织以及非 Office 365 客户使用 Outlook.com、 Gmail 和其他电子邮件服务的受保护的邮件。

@@ -10,28 +10,28 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: 72a957222ed3bba449e1576873bfc87a614c075b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ab8454c27cd57b6bd5cc8df6e1526ee2950ac998
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866034"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍推荐用于保护权云服务的策略的共同包括本地应用程序发布与 Azure AD 应用程序代理。 
 
-本指南讨论如何在新预配的环境中部署推荐的策略。 通过在单独的实验室环境中设置这些策略，可以先了解和评估推荐的策略，然后再分阶段推出到预生产和生产环境。 新预配的环境可能仅限云，也可能是混合环境。  
+本指南讨论了如何部署新设置环境中的建议的策略。在单独的实验室环境中的这些策略设置允许您了解和暂存向您的预生产和生产环境推出之前进行评估的建议的策略。新设置的环境可能仅限于云或混合。  
 
 ## <a name="policy-set"></a>策略设置 
 
-下图说明了推荐的策略集。它显示哪一层保护措施适用于每个策略和策略是否适用于 Pc、 电话和平板电脑或设备这两个类别。它还指示配置了这些策略。
+下图说明了推荐的策略集。它显示哪一层保护措施适用于每个策略和策略是否适用于 Pc 或电话和平板电脑或设备这两个类别。它还指示配置了这些策略。
 
 ![常见配置标识和设备访问的策略](../images/Identity_device_access_policies_byplan.png)
 
 
 本文的其余部分介绍如何配置这些策略。 
 
-注册到 Intune 的设备的设备包含在预期的用户所拥有的保证之前，建议使用多因素身份验证。您必须注册设备到 Intune 强制实施设备合规性策略之前。
+注册到 Intune 的设备的设备包含在预期的用户所拥有的保证之前，建议使用多因素身份验证。此外必须注册到 Intune 强制实施设备合规性策略之前设备。
 
 要授予时间来完成这些任务，我们建议此表中列出的顺序实现基准策略。但是，在任何时候都可以实现敏感和高管控保护的 MFA 策略。
 
@@ -39,14 +39,14 @@ ms.locfileid: "26866034"
 |保护级别|Policies|更多信息|
 |:---------------|:-------|:----------------|
 |**基线**|[*中等*或*高*风险登录时需要 MFA](#require-mfa-based-on-sign-in-risk)| |
-|        |[阻止客户端不支持现代身份验证](#block-clients-that-dont-support-modern-authentication)|不使用现代的身份验证的客户端可以跳过条件访问规则，因此很重要阻止这些。|
-|        |[高风险用户必须更改密码](#high-risk-users-must-change-password)|强制用户如果高风险活动检测到其帐户在登录后更改其密码。|
+|        |[阻止客户端不支持现代身份验证](#block-clients-that-dont-support-modern-authentication)|因此，很重要阻止这些，不使用现代的身份验证的客户端可以跳过条件访问规则，|
+|        |[高风险用户必须更改密码](#high-risk-users-must-change-password)|强制用户如果高风险活动检测到其帐户在登录后更改其密码|
 |        |[定义应用程序保护策略](#define-app-protection-policies)|每个平台 (iOS，Android、 Windows) 的一个策略。|
 |        |[需要已批准应用程序](#require-approved-apps)|强制移动应用程序保护手机和平板电脑|
-|        |[定义设备合规性策略](#define-device-compliance-policies)|每个平台的的一个策略。|
+|        |[定义设备合规性策略](#define-device-compliance-policies)|每个平台的的一个策略|
 |        |[需要符合标准的 Pc](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|强制实施 Pc Intune 的管理|
 |**敏感**|[*低*、*中*或*高*风险登录时需要 MFA](#require-mfa-based-on-sign-in-risk)| |
-|         |[需要符合标准的 Pc*和*移动设备](#require-compliant-pcs-and-mobile-devices)|强制执行 Pc 和平板电脑电话/Intune 的管理。|
+|         |[需要符合标准的 Pc*和*移动设备](#require-compliant-pcs-and-mobile-devices)|强制实施 Pc 和平板电脑电话/Intune 的管理|
 |**高度管控**|[*始终*需要 MFA](#require-mfa-based-on-sign-in-risk)|
 | | |
 
@@ -59,13 +59,11 @@ ms.locfileid: "26866034"
 
 ![示例用户分配和排除 MFA 规则条件](../images/identity-access-policies-assignment.png)
 
-在图 MFA*始终*需要一个条件的访问策略分配"顶部机密项目 X 团队"。应用于用户的更高级别的保护时应谨慎。此项目工作组成员需要提供两种形式的身份验证，每次登录，即使它们不查看高度管控的内容。  
+在图 MFA*始终*需要一个条件的访问策略分配"顶部机密项目 X 团队"。应用于用户的更高级别的保护时应谨慎。此项目工作组成员需要提供两种形式的身份验证，每次登录，即使它们不查看高度规范化的内容。  
 
- 创建这些建议的一部分的所有 Azure AD 组必须创建为 Office 365 组。保护 SharePoint Online 中的文档时，这是特别重要部署 Azure 信息保护 (AIP)。
+创建这些建议的一部分的所有 Azure AD 组必须创建为 Office 365 组。保护 SharePoint Online 中的文档时，这是特别重要部署 Azure 信息保护 (AIP)。
 
 ![创建 Office 365 组的屏幕截图](../images/identity-device-AAD-groups.png)
-
-
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>需要 MFA 根据登录风险
@@ -73,13 +71,13 @@ ms.locfileid: "26866034"
 
 创建新的条件访问策略： 
 
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，会看到 Azure 仪表板。
+1. 转到[Azure 门户](https://portal.azure.com)，并使用您的凭据登录。您已成功登录后，您将看到 Azure 仪表板。
 
 2. 从左侧菜单中选择“Azure Active Directory”。
 
 3. 在“安全”部分之下，选择“条件访问”。
 
-4. 选择**新策略**，如下面的屏幕截图中所示：
+4. 选择“新策略”。
 
 ![基线 CA 策略](./media/secure-email/CA-EXO-policy-1.png)
 
@@ -89,8 +87,8 @@ ms.locfileid: "26866034"
 
 |类型|属性|值|注释|
 |:---|:---------|:-----|:----|
-|用户和组|包括|选择用户和组 - 选择包含目标用户的特定安全组|从包含试点用户的安全组开始。|
-||排除|例外安全组；服务帐户(应用标识)|按需临时修改的成员身份|
+|用户和组|包括|选择用户和组 - 选择包含目标用户的特定安全组|从包含试点用户的安全组开始|
+||排除|例外安全组；服务帐户(应用标识)|根据需要临时每个修改的成员身份|
 |云应用|包括|选择您希望此规则应用于的应用程序。例如，选择 Office 365 Exchange Online||
 |条件|已配置|是|根据自身环境和需求进行配置|
 |登录风险|风险级别||请参阅下表中的指南|
@@ -112,17 +110,17 @@ ms.locfileid: "26866034"
 |授予|授予访问权限|True|已选择|
 ||需要进行 MFA|True|Check|
 ||需要标记为兼容的设备|False||
-||需要混合 Azure AD 联接的设备|False||
+||需要混合 Azure AD 加入设备|False||
 ||需要批准的客户端应用程序|False||
 ||需要所有已选控件|True|已选择|
 
 > [!NOTE]
-> 一定要启用此策略，通过**单击**。此外考虑[如果](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)工具用于测试策略
+> 请务必通过选择**在**启用此策略。此外考虑[如果](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)工具用于测试策略。
 
 
 
 ## <a name="block-clients-that-dont-support-modern-authentication"></a>阻止客户端不支持现代身份验证
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，会看到 Azure 仪表板。
+1. 转到[Azure 门户](https://portal.azure.com)，并使用您的凭据登录。您已成功登录后，您将看到 Azure 仪表板。
 
 2. 从左侧菜单中选择“Azure Active Directory”。
 
@@ -136,7 +134,7 @@ ms.locfileid: "26866034"
 
 |类型|属性|值|注释|
 |:---|:---------|:-----|:----|
-|用户和组|包括|选择用户和组 - 选择包含目标用户的特定安全组|从包含试点用户的安全组开始。|
+|用户和组|包括|选择用户和组 - 选择包含目标用户的特定安全组|从包含试点用户的安全组开始|
 ||排除|例外安全组；服务帐户(应用标识)|按需临时修改的成员身份|
 |云应用|包括|选择您希望此规则应用于的应用程序。例如，选择 Office 365 Exchange Online||
 |条件|已配置|是|配置客户端应用程序|
@@ -149,17 +147,17 @@ ms.locfileid: "26866034"
 |授予|阻止访问|True|已选择|
 ||需要进行 MFA|False||
 ||需要标记为兼容的设备|False||
-||需要混合 Azure AD 联接的设备|False||
+||需要混合 Azure AD 加入设备|False||
 ||需要批准的客户端应用程序|False||
 ||需要所有已选控件|True|已选择|
 
 > [!NOTE]
-> 一定要启用此策略，通过**单击**。此外考虑[如果](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)工具用于测试策略
+> 请务必通过选择**在**启用此策略。此外考虑[如果](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)工具用于测试策略。
 
 
 
 ## <a name="high-risk-users-must-change-password"></a>高风险用户必须更改密码
-为了确保在登录时对受侵害的所有高风险用户帐户强制执行密码更改，必须应用下列策略。
+若要确保所有高风险用户受到攻击的帐户强制执行密码更改时签名中，您必须应用以下策略。
 
 登录到[Microsoft Azure 门户 (http://portal.azure.com)](http://portal.azure.com/)使用管理员凭据，然后导航到**Azure AD 身份防护 > 用户风险策略**。
 
@@ -181,7 +179,7 @@ ms.locfileid: "26866034"
 **审阅：** 不适用
 
 > [!NOTE]
-> 一定要启用此策略，通过**单击**。此外考虑[如果](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)工具用于测试策略
+> 请务必通过选择**在**启用此策略。此外考虑[如果](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)工具用于测试策略
 
 ## <a name="define-app-protection-policies"></a>定义应用程序保护策略
 应用程序保护策略定义允许的应用程序并他们与您组织的数据可以执行的操作。创建 Intune 应用程序中的 Azure 门户从保护策略。 
@@ -191,7 +189,7 @@ ms.locfileid: "26866034"
 - Android
 - Windows 10
 
-若要创建新的应用程序保护策略，登录到您的管理凭据的 Microsoft Azure 门户，然后导航到**移动应用程序 > 应用程序保护策略**。单击**添加策略**。
+若要创建新的应用程序保护策略，登录到您的管理凭据的 Microsoft Azure 门户，然后导航到**移动应用程序 > 应用程序保护策略**。选择**添加策略**。
 
 有微小的差异的应用程序保护 iOS 和 Android 之间的策略选项。以下策略是专用于 Android。使用此指南作为在其他策略。
 
@@ -224,25 +222,25 @@ ms.locfileid: "26866034"
 |访问|访问需要 PIN|是||
 ||选择类型|数字||
 ||允许使用简单 PIN|否||
-||PIN 长度|6 ||
+||PIN 长度|6||
 ||允许使用指纹而不是 PIN|是||
 ||管理设备 PIN 时禁用应用程序 PIN|是||
 ||需要访问企业凭据|否||
 ||在一定时间后重新检查访问要求(分钟)|30||
 ||阻止屏幕捕获和 Android 助手|否|在 iOS 上，此选项不可用|
-|登录安全要求|最大 PIN 尝试|5 |重置 Pin|
+|登录安全要求|最大 PIN 尝试|5|重置 Pin|
 ||离线宽限期|720|阻止访问|
 ||擦除应用数据之前的脱机间隔时间（天）|90|擦除数据|
 ||根 Jailbroken/设备| |擦除数据|
 
-完成后，请记住单击“创建”。 重复上述步骤，并将所选平台（下拉列表）替换为 iOS。 这可创建两个应用策略，因此请在创建策略后将组分配到策略，并进行部署。
+完成后，请务必选中"创建"。重复上述步骤，并将替换为 iOS 的选定的平台 （下拉）。这将创建两个应用程序策略，因此后创建策略，然后将组分配给策略并将其部署。
 
 若要编辑策略并将这些策略分配给用户，请参阅[如何创建和分配应用程序保护策略](https://docs.microsoft.com/intune/app-protection-policies)。 
 
 ## <a name="require-approved-apps"></a>需要已批准应用程序
 若要要求已批准应用程序：
 
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，会看到 Azure 仪表板。
+1. 转到[Azure 门户](https://portal.azure.com)，并使用您的凭据登录。您已成功登录后，您将看到 Azure 仪表板。
 
 2. 从左侧菜单中选择“Azure Active Directory”。
 
@@ -254,13 +252,13 @@ ms.locfileid: "26866034"
 
 6. 选择“云应用”。
 
-7. 选择**选择应用程序**，从**云应用程序**列表中选择所需的应用程序。例如，选择 Office 365 Exchange Online。单击**选择**并**完成**。
+7. 选择**选择应用程序**，从**云应用程序**列表中选择所需的应用程序。例如，选择 Office 365 Exchange Online。选择**选择**并**完成**。
 
 8. 从“访问控制”部分选择“授予”。
 
-9. 选择**授予访问**，选择**需要批准客户端应用程序**。 为多个控件中，选择**需要选定的控件**，然后选择**选择**。 
+9. 选择**授予访问**，选择**需要批准客户端应用程序**。为多个控件中，选择**需要选定的控件**，然后选择**选择**。 
 
-10. 单击“创建”****。
+10. 选择" **创建**"。
 
 ## <a name="define-device-compliance-policies"></a>定义设备合规性策略
 
@@ -275,7 +273,7 @@ ms.locfileid: "26866034"
 - Windows 8.1 及更高版本
 - Windows 10 及更高版本
 
-若要创建设备合规性策略，登录到您的管理凭据的 Microsoft Azure 门户，然后导航到**Intune > 设备合规性**。单击**创建策略**。
+若要创建设备合规性策略，登录到您的管理凭据的 Microsoft Azure 门户，然后导航到**Intune > 设备合规性**。选择**创建策略**。
 
 为 Windows 10 建议使用下列设置。
 
@@ -294,7 +292,7 @@ ms.locfileid: "26866034"
 |:---|:---------|:-----|:----|
 |操作系统版本|全部|未配置||
 
-要将上述所有策略视为已部署，这些策略必须面向用户组。 要完成此操作，可以创建策略（在“保存”上），或稍后在“策略”部分（与“添加”在同一级别）中选择“管理部署”。
+对于所有上述策略视为部署，它们必须针对用户组。您可以执行此操作通过创建策略 （保存） 或更高版本，通过选择在**策略**部分 （相同级别添加） 的**管理部署**。
 
 系统安全
 
@@ -303,19 +301,19 @@ ms.locfileid: "26866034"
 |密码|需要密码以解锁移动设备|需要||
 ||简单密码|阻止||
 ||密码类型|默认设备||
-||最短密码长度|6 ||
-||最大分钟无活动需要密码之前|15 |此设置支持 Android 版本 4.0 和上方或 KNOX 4.0 及以上。对于 iOS 设备，支持适用于 iOS 8.0 和上方。|
+||最短密码长度|6||
+||最大分钟无活动需要密码之前|15 |此设置支持 Android 版本 4.0 和上方或 KNOX 4.0 及以上。对于 iOS 设备，它支持针对 iOS 8.0 和上方|
 ||密码过期(天)|41||
-||以前的密码，以防止重复使用的数量|5 ||
-||从空闲状态 （Mobile 和全息） 返回设备时需要密码|需要|适用于 Windows 10 及更高版本。|
+||以前的密码，以防止重复使用的数量|5||
+||从空闲状态 （Mobile 和全息） 返回设备时需要密码|需要|适用于 Windows 10 及更高版本|
 |加密|在设备上的数据存储的加密|需要||
 |设备安全|防火墙|需要||
 ||防病毒|需要||
-||反间谍软件|需要|此设置要求注册 Windows 安全中心反间谍软件解决方案。|
+||反间谍软件|需要|此设置，需要使用 Windows 安全中心注册反间谍软件解决方案|
 |Defender|Windows Defender 反恶意软件|需要||
-||Windows Defender 反恶意软件的最低版本||仅支持 Windows 10 桌面。Microsoft 建议版本不超过 5 后面从最新版本。|
+||Windows Defender 反恶意软件的最低版本||仅支持 Windows 10 桌面。Microsoft 建议版本不超过 5 后面从最新版本|
 ||最新的 Windows Defender 反恶意软件签名|需要||
-||“实时保护”|需要|仅支持 Windows 10 桌面。|
+||“实时保护”|需要|仅支持 Windows 10 桌面支持|
 
 **Windows Defender ATP**
 
@@ -323,16 +321,12 @@ ms.locfileid: "26866034"
 |:---|:---------|:-----|:----|
 |Windows Defender 高级威胁保护规则|需要为在或下的计算机风险分数的设备|中等||
 
-
-
-
-
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>需要符合 Pc （但不是符合标准的电话和平板电脑）
 添加之前需要符合 Pc 的策略，请务必注册到 Intune 的管理设备。注册到 Intune 的设备的设备包含在预期的用户所拥有的保证之前，建议使用多因素身份验证。 
 
 需要符合 Pc:
 
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，会看到 Azure 仪表板。
+1. 转到[Azure 门户](https://portal.azure.com)，并使用您的凭据登录。您已成功登录后，您将看到 Azure 仪表板。
 
 2. 从左侧菜单中选择“Azure Active Directory”。
 
@@ -344,26 +338,23 @@ ms.locfileid: "26866034"
 
 6. 选择“云应用”。
 
-7. 选择**选择应用程序**，从**云应用程序**列表中选择所需的应用程序。例如，选择 Office 365 Exchange Online。单击**选择**并**完成**。
+7. 选择**选择应用程序**，从**云应用程序**列表中选择所需的应用程序。例如，选择 Office 365 Exchange Online。选择**选择**并**完成**。
 
-8. 如果需要符合 Pc，但不是符合手机和平板电脑，请选择**条件**和**设备平台**。选择"选择设备平台"并选择**Windows**和**macOS**。
+8. 如果需要符合 Pc，但不是符合手机和平板电脑，请选择**条件**和**设备平台**。选择**选择设备平台**，并选择**Windows**和**macOS**。
 
 9. 从“访问控制”部分选择“授予”。
 
-10. 选择**授予访问**，选择**需要标记为兼容的设备**。 为多个控件中，选择**需要所有选定的控件**，然后选择**选择**。 
+10. 选择**授予访问**，选择**需要标记为兼容的设备**。为多个控件中，选择**需要所有选定的控件**，然后选择**选择**。 
 
-11. 单击“创建”****。
+11. 选择" **创建**"。
 
-如果您的目标是需要兼容的 Pc*和*移动设备，则不要选择平台。强制执行兼容的所有设备。 
-
-
-
+如果您的目标是需要兼容的 Pc*和*移动设备，则不要选择平台。这将强制所有设备法规遵从性。 
 
 ## <a name="require-compliant-pcs-and-mobile-devices"></a>需要符合标准的 Pc*和*移动设备
 
 若要为所有设备要求合规性：
 
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，会看到 Azure 仪表板。
+1. 转到[Azure 门户](https://portal.azure.com)，并使用您的凭据登录。您已成功登录后，您将看到 Azure 仪表板。
 
 2. 从左侧菜单中选择“Azure Active Directory”。
 
@@ -375,26 +366,15 @@ ms.locfileid: "26866034"
 
 6. 选择“云应用”。
 
-7. 选择**选择应用程序**，从**云应用程序**列表中选择所需的应用程序。例如，选择 Office 365 Exchange Online。单击**选择**并**完成**。
+7. 选择**选择应用程序**，从**云应用程序**列表中选择所需的应用程序。例如，选择 Office 365 Exchange Online。选择**选择**并**完成**。
 
 8. 从“访问控制”部分选择“授予”。
 
 9. 选择**授予访问**，选择**需要标记为兼容的设备**。为多个控件中，选择**需要所有选定的控件**，然后选择**选择**。 
 
-10. 单击“创建”****。
+10. 选择" **创建**"。
 
 在创建此策略时，不要选中平台。这将强制兼容的设备。
-
-
-
-
-
-
-
-
-
-
-
 
 
 

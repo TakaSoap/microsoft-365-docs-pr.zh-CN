@@ -1,9 +1,9 @@
 ---
-title: 用于 Microsoft 365 企业版测试环境的 MAM 策略
+title: 设备的 Microsoft 365 企业版的合规性策略测试环境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 11/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,17 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: 使用此测试实验室指南添加到 Microsoft 365 企业版 Intune 移动应用程序管理 (MAM) 策略测试环境。
-ms.openlocfilehash: f00379a5e70dce5e07c031a7647b27041d3fa9d1
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: 使用此测试实验室指南添加到 Microsoft 365 企业版 Intune 设备合规性策略测试环境。
+ms.openlocfilehash: 1d957c5cdc888251224bbca43fe82ab0a15e7a93
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866028"
 ---
-# <a name="mam-policies-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 MAM 策略
+# <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>设备的 Microsoft 365 企业版的合规性策略测试环境
 
-使用本文中的说明，您添加到 Microsoft 365 企业版 Intune 移动应用程序管理 (MAM) 策略测试环境。
+使用本文中的说明，Intune 设备合规性策略添加到 Microsoft 365 企业版测试环境。
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -38,15 +38,15 @@ ms.locfileid: "26866028"
 > 测试自动许可和组成员身份不需要模拟的企业测试环境，其中包括连接到 Internet 模拟的 intranet 和 Windows Server AD 林目录同步。它提供此处作为一个选项，以便可以测试自动许可和组成员身份并与之试验环境值，该值代表典型组织中。 
 >  
 
-## <a name="phase-2-create-and-deploy-mam-policies-for-ios-and-android-devices"></a>第 2 阶段：为 iOS 和 Android 设备创建和部署 MAM 策略
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>阶段 2： 创建 Windows 10 设备的设备合规性策略
 
-在此阶段中，创建和部署两个不同的 MAM 策略：一个适用于 iOS 设备的策略和一个适用于 Android 设备的策略。
+在此阶段中，您将创建 Windows 10 设备的设备合规性策略。
   
-1. 转到 Office 365 门户: ([https://portal.office.com](https://portal.office.com)) 和 Office 365 试用版订阅与全局管理员帐户登录。
+1. 转到 Office 门户: ([https://office.com](https://office.com)) 和 Office 365 试用版订阅与全局管理员帐户登录。
     
 2. 在浏览器的新建选项卡上，打开 Azure 门户： [https://portal.azure.com](https://portal.azure.com)。
 
-3. Azure 门户选项卡在 Internet Explorer 中，在导航窗格中，单击**所有服务**，键入**Intune**，，然后都单击**Intune**。
+3. 在浏览器中，在导航窗格中，Azure 门户选项卡上单击**所有服务**，键入**Intune**，，然后都单击**Intune**。
     
 4. 如果您看到**尚未启用尚未设备管理**消息**Microsoft Intune**刀片上，单击该选项。在**移动设备管理证书颁发机构**刀片中，单击**Intune MDM 证书颁发机构**，，然后单击**选择**。刷新您浏览器的选项卡。
     
@@ -54,97 +54,43 @@ ms.locfileid: "26866028"
     
 6. 在**组所有组**刀片中，单击 **+ 新建组**。
     
-7. 在**组**刀片中，选择**Office 365** **组类型？**，请在**名称**框中，键入**托管 iOS 设备用户**在**成员资格类型**，选择**已分配**，然后单击**创建**。 
+7. 在**组**刀片中，选择**Office 365** **组类型？**，请在**名称**框中，键入**托管 Windows 10 设备用户**在**成员资格类型**，选择**已分配**，然后单击**创建**。 
     
 8. 关闭**组**刀片。
     
-9. 在**组所有组**刀片中，单击**添加**。
-    
-10. 在**组**刀片中，选择**Office 365** **组类型？**，请在**名称**框中，键入**托管 Android 设备用户**在**成员资格类型**，选择**已分配**，然后单击**创建**。
-    
 11. 关闭**组所有组**刀片。
     
-12. 在**Intune**刀片，在**快速的任务**列表中，单击**创建合规性策略**。
+12. 在**Microsoft Intune**刀片，在**快速的任务**列表中，单击**创建合规性策略**。
     
 13. 在**合规性策略配置文件**刀片中，单击**创建策略**。
     
-14. 在**创建策略**刀片，在**名称**框中，键入**iOS**。在**平台**中，选择**iOS**、 **iOS 合规性策略**刀片上, 单击**确定**，然后单击**创建**。
+14. 在**创建策略**刀片，在**名称**框中，键入**Windows 10**。**平台**中, 选择**10 及更高版本的 Windows**，在**Windows 10 合规性策略**刀片中，单击**确定**，然后单击**创建**。关闭**Windows 10**刀片。
     
-15. 在**合规性策略配置文件**刀片中，单击**创建策略**。
+15. 在**合规性策略配置文件**刀片中，单击**Windows 10**策略名称。
     
-16. 在**创建策略**刀片，在**名称**框中，键入**Android**。**平台**中, 选择**Android**， **Android 合规性策略**刀片上, 单击**确定**，然后单击**创建**。
+16. 在**Windows 10**刀片中，单击**分配**，，然后单击**选择要包括的组**。
     
-17. 在**合规性策略配置文件**刀片中，单击**Android**的策略名称。
+17. **选择要包括的组**刀片上, 单击**托管 Windows 10 设备用户**组中，，然后单击**选择**。
     
-18. **Android-属性**刀片的左侧导航中，单击**分配**，，然后单击**选择组**。
+18. 单击**保存**，然后关闭**Windows 10-分配**刀片。
     
-19. **选择组**刀片上,**托管 Android 设备用户**的组中，单击，然后单击**选择**。
+19. 关闭**合规性策略配置文件**刀片。
     
-20. 单击**保存**，然后关闭**Android-分配**刀片。
+20. 在**Microsoft Intune**刀片中，单击左侧导航窗格中**客户端应用程序**。
     
-21. 在**合规性策略配置文件**刀片中，单击**iOS**策略名称。
-    
-22. 在**iOS-属性**刀片左侧导航窗格中，单击**工作分配**，然后单击**选择组**。
-    
-23. 在**选择组**刀片中，单击**托管 iOS 设备用户**组中，，然后单击**选择**。
-    
-24. 单击**保存**，然后关闭**iOS-分配**刀片。
-    
-25. 关闭**合规性策略配置文件**刀片。
-    
-26. 在**Intune**刀片，单击左侧导航窗格中的**管理应用程序**。
-    
-27. 在**移动应用程序**刀片中，单击**应用程序**。
-    
-28. 在应用程序列表中，单击**PowerPoint** 
-    
-29. 在**PowerPoint 概述**刀片中，单击**分配 > 选择组 > 托管 iOS 设备 > 选择**。在**类型**中，选择**有空**，，然后单击**保存**。
-    
-30. 对于以下应用程序重复步骤 29:
-    
-    - Outlook for Android
-    
-    - Word for iOS
-    
-    - Excel for iOS
-    
-    - Outlook iOS
-    
-    - 适用于 iOS iPad 的 Microsoft Dynamics CRM
-    
-    - 适用于 iOS iPhone 的 Microsoft Dynamics CRM
-    
-    - 适用于 Android 手机的 Dynamics CRM
-    
-    - 适用于 Android 平板电脑的 Dynamics CRM
-    
-    - Excel for Android
-    
-    - Word for Android
-    
-    - OneNote for iOS
-    
-31. 关闭**移动应用程序的应用程序**刀片。
-    
-32. 在**移动应用程序**刀片中，单击**应用程序保护策略**。
-    
-33. 在**应用程序保护策略**刀片中，单击**添加策略**。
-    
-34. 在**添加策略**刀片中，键入**iOS**，，然后单击**选择所需的应用程序**。
-    
-35. 在**应用程序**刀片， **PowerPoint**、 **iPhone 上的 Microsoft Dynamics CRM**、 **Excel**、 **iPhone 上的 Microsoft Dynamics CRM**、 **Word**、 **OneNote**和**Outlook**中，单击，然后单击**选择**。
-    
-36. 在**添加策略**刀片中，单击**创建**。
-    
-37. 在**应用程序保护策略**刀片中，单击**添加策略**。
-    
-38. **添加策略**刀片上, 键入**Android**，在**平台**选择**Android** ，然后单击**选择所需的应用程序**。
-    
-39. 在**应用程序**刀片中，单击**PowerPoint**、**平板电脑的 Dynamics CRM**、 **Excel**、 **Word**、 **Outlook**和**电话的 Dynamics CRM**、，然后单击**选择**。
-    
-40. 在**添加策略**刀片中，单击**创建**。
-    
-现在你有两个 MAM 策略，一个适用于 iOS 设备的策略和一个适用于 Android 设备的策略，并已准备好对所选应用的测试设置进行测试。 
+21. 在**客户端应用程序**刀片中，单击**应用程序**，，然后单击**添加**。 
+
+22. 在**添加应用程序**刀片中，选择**应用程序类型**，，然后选择**Office 365 套件**下**Windows 10** 。
+
+23. **配置应用程序套件**，请单击，然后单击**确定**。
+
+24. 单击**应用程序套件信息**、 键入**套件名称**，在**套件说明**框中， **Office 应用程序的 Windows 10** **Office 应用程序的 Windows 10** ，然后单击**确定**。
+
+25. 单击**应用程序套件设置**，在**更新通道**中，选择**半年**，然后单击**确定**。
+
+26. 在**添加应用程序**刀片中，单击**添加**。
+
+现在，您具有设备合规性策略测试**Windows 10**设备合规性策略中选定的应用程序和**托管 Windows 10 设备用户**组的成员。 
   
 ## <a name="next-step"></a>后续步骤
 

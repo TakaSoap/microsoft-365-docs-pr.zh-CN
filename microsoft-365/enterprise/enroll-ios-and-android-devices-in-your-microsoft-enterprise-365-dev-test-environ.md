@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南注册 Microsoft 365 测试环境中的设备和远程管理它们。
-ms.openlocfilehash: 98696104ee8453adb7449980cf439eeb152aeea9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: a78db19099ccacd1b2f62e8438d1749f28d22f52
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865536"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中注册 iOS 和 Android 设备
@@ -76,7 +76,7 @@ Microsoft Intune 提供远程锁定和密码重置功能。如果某人丢失其
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
   
-[用于 Microsoft 365 企业版测试环境的 MAM 策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[设备的 Microsoft 365 企业版的合规性策略测试环境](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
 

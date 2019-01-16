@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 iPhone 或 android 移动电话和 Office 相关应用程序中的工作文件上安装 Office 将受 Microsoft 365 企业版。
 ms.openlocfilehash: 15dc9742cb9712bcbf21e7e3668adc572ee9eb2b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865531"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 Business 用户设置移动设备

@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 09/18/2018
 ms.author: greglin
 ms.openlocfilehash: 80d7c1b56434647387b9c428ca07effdff929abf
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865403"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
@@ -94,7 +94,7 @@ Windows 10 提供了功能来帮助保护抵御威胁，帮助您保护您的设
 - [Windows Defender ATP 有助于检测到复杂的威胁](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
 - [使用 Windows Defender 和 Windows Defender ATP 保护现代企业的安全](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP)（视频）
 
-## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
+## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何使用 Microsoft 365 企业版
 
 请参阅如何 Contoso Corporation、 虚构但代表性跨国企业、[部署 Windows 10 Enterprise](contoso-win10.md)。
 
