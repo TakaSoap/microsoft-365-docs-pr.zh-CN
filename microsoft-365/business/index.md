@@ -11,10 +11,10 @@ ms.prod: microsoft-365-business
 title: Microsoft 365 业务资源
 description: 了解如何规划、 部署和 Microsoft Office 365，Windows 10 和企业移动 + 安全结合使用您的业务集成的安全基础结构，可启用团队协作和解除锁定创作。
 ms.openlocfilehash: 386c829a6b635b1b23301e838f05b0b84bbfb3b4
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26865511"
 ---
 <div id="main" class="v2">
