@@ -16,16 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
-ms.openlocfilehash: 748ccaf8601d9e9564d176f2368e3cc71f926208
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
+ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241975"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29993223"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
-密码写回将允许用户通过 Azure Active Directory (AD) 更新其密码，然后复制到本地 Windows Server Active Directory (AD)。通过密码写回，用户不需要通过本地 Windows Server AD（原始用户帐户的存储位置）更新其密码。这非常适用于对本地网络没有远程访问连接的漫游或远程用户。
+密码写回将允许用户通过 Azure Active Directory (Azure AD) 更新其密码，然后复制到本地 Active Directory 域服务 (AD DS)。通过密码写回，用户不需要通过本地 Windows Server AD（原始用户帐户的存储位置）更新其密码。这非常适用于对本地网络没有远程访问连接的漫游或远程用户。
 
 本文介绍了如何为 Microsoft 365 测试环境配置密码写回。
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解部署 Microsoft 365 企业版底层基础结构阶段的一些方法。
-ms.openlocfilehash: 5ffe00c9eb975a0f8c2d193a71d8b613e827cc70
-ms.sourcegitcommit: f2eae6ec367f7b69043105d117a2a7e3da4153aa
+ms.openlocfilehash: 909526fb4938c8da142b4f667140f10dda660877
+ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29538923"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29993233"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企业版底层基础结构部署策略
 
@@ -53,7 +53,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 ![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
-在用户推出图形中，阴影表示使用结构化或有条理的方法（如组、部门或区域）在整个组织内从 0% 到 100% 的推出进度。
+在用户推出图形中，阴影表示在整个组织内使用结构化或有条理的方法（如组、部门或区域）从 0% 到 100% 的百分比。
 
 ## <a name="deployment-strategies"></a>部署策略
 
