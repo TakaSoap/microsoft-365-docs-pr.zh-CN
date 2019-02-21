@@ -6,12 +6,12 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 54d986f37b3981200bdead30a2c232143b9dd49d
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.openlocfilehash: 64560a1eb597072dd99c1538b0131e3cd807899c
+ms.sourcegitcommit: 1942a860d1b65e1f8062564ec4703b953e0c2fd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051083"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30122242"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>可配置的设置-Microsoft 托管桌面
 
@@ -64,7 +64,7 @@ Microsoft 托管桌面中的可配置设置为 IT 管理员提供了一种自定
 - **跟踪进度**–在部署更改后跟踪状态。状态将更改为 "**正在进行中**", 然后**完成**或**失败**。如果部署失败, 将自动为 Microsoft 托管桌面操作打开支持请求, 以调查问题。  
 - **请参阅已部署版本**–每个部署的更改都有版本号。
 - **还原**更改–还原更改将停止当前部署, 并将所有响铃还原为所有已部署到所有环的最后更改。您正在回滚到上一个已知良好的设置值。
-- **Validatie cahnges** -部署完成后, 验证更改是否按预期应用。  
+- **验证更改**-部署完成后, 验证更改是否按预期应用。  
 
 如果部署失败, 或者您无法还原更改, 请使用 Microsoft 托管桌面操作[打开支持请求](admin-support.md)。 
 
