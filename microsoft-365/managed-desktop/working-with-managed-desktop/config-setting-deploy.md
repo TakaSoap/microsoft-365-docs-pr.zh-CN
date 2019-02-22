@@ -5,13 +5,13 @@ keywords: microsoft 托管桌面, microsoft 365, 服务, 文档, 部署, 暂存�
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 2/12/2019
-ms.openlocfilehash: fd0e0750332fa8f650cfc4756f8eb108be2a71df
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.date: 2/17/2019
+ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
+ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051123"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175774"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署和跟踪可配置的设置-Microsoft 托管桌面
 
@@ -24,9 +24,9 @@ ms.locfileid: "30051123"
 状态  | 说明 
 --- | --- 
 部署 | 您所做的更改正在等待部署到此环。
-正在进行 | 正在将更改应用到此环中的设备。 
-完全 | 正在将更改应用到此环中的设备。 
-Failed | 更改在环中的 10% 设备上失败, 因此部署已停止。<br><br> 将使用 Microsoft 托管桌面操作自动打开支持请求, 以排除部署故障。 
+正在进行 | 正在将更改应用到此环中的活动设备。 
+完全 | 此环中所有活动设备上的更改已完成。 
+Failed | 更改在环中的 10% 活动设备上失败, 因此部署已停止。<br><br> 将使用 Microsoft 托管桌面操作自动打开支持请求, 以排除部署故障。 
 回复 | 更改已恢复为已成功部署到所有部署环的最后一次更改。
 
 ## <a name="deploy-changes"></a>部署更改
