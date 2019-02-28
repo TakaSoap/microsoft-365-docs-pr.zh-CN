@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
-ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
-ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
+ms.openlocfilehash: 7593da41d51d85c0f73d01450bb67306f82c7a1e
+ms.sourcegitcommit: 15c60addeaa51e0601c580665e8316ece75d3abc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29993223"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303637"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
@@ -106,11 +106,11 @@ ms.locfileid: "29993223"
 
 4. 在“**其他任务**”页上，选择“**自定义同步选项**”，然后单击“**下一步**”。
 
-5. 在“**连接到 Azure AD**”页上，键入“用户 1”帐户凭据，然后单击“**下一步**”。
+5. 在“**连接到 Azure AD**”页面上，键入全局管理员帐户凭据，然后单击“**下一步**”。
 
 6. 在“**连接目录**”和“**域/OU 筛选**”页上，单击“**下一步**”。
 
-7. 在“**可选功能**”页上，选择“**密码写回**”，然后单击“下一步”。 
+7. 在“**可选功能**”页上，选择“**密码写回**”，然后单击“**下一步**”。 
 
 8. 在“**准备配置**”页上，单击“**配置**”并等待该过程完成。
 
@@ -129,7 +129,7 @@ ms.locfileid: "29993223"
 - 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Office 365 和 EMS E5 订阅同步到 TESTLAB Windows Server AD 域。 
 - 已启用密码写回，因此用户可以通过 Azure AD 更改其密码，而无需连接到简化的 Intranet。
 
-有关在生产中配置密码写回的信息和相关链接，请参阅“标识”阶段中的[简化密码更新](identity-password-writeback.md)步骤。
+有关在生产中配置密码写回的信息和相关链接，请参阅“标识”阶段中的[简化密码更新](identity-password-reset.md#identity-pw-writeback)步骤。
 
 ## <a name="next-step"></a>后续步骤
 
