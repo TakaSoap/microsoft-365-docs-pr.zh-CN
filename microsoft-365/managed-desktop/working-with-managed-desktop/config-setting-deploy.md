@@ -6,32 +6,33 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
-ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
-ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 62a17c95f5dc6b11f446a27684c507d7aaa95b7b
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175774"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414162"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署和跟踪可配置的设置-Microsoft 托管桌面
 
-在更改设置类别并暂存部署后, 您可以部署和跟踪部署状态的部署进度。此页面显示每个可配置设置的摘要。打开设置类别以查看每个部署及其详细信息, 以部署更改。 
+在更改设置类别并暂存部署后, 您可以部署和跟踪部署状态的部署进度。 此页面显示每个可配置设置的摘要。 打开设置类别以查看每个部署及其详细信息, 以部署更改。 
 
 ## <a name="deployment-statuses"></a>部署状态 
 
 这些是你将看到的每个部署的 statues。
 
-状态  | 说明 
+Status  | 说明 
 --- | --- 
 部署 | 您所做的更改正在等待部署到此环。
-正在进行 | 正在将更改应用到此环中的活动设备。 
+进行中 | 正在将更改应用到此环中的活动设备。 
 完全 | 此环中所有活动设备上的更改已完成。 
 Failed | 更改在环中的 10% 活动设备上失败, 因此部署已停止。<br><br> 将使用 Microsoft 托管桌面操作自动打开支持请求, 以排除部署故障。 
 回复 | 更改已恢复为已成功部署到所有部署环的最后一次更改。
 
 ## <a name="deploy-changes"></a>部署更改
 
-我们将在这些说明中显示桌面背景图片。暂存部署后, 从部署状态部署更改。 
+我们将在这些说明中显示桌面背景图片。 暂存部署后, 从部署状态部署更改。 
 
 **部署更改**
 
@@ -52,7 +53,7 @@ Microsoft 托管桌面建议按此顺序部署到部署环: Test、First、Fast 
 
 我们将在这些说明中显示桌面背景图片。 
 
-部署更改后, 可以从**部署状态**恢复。还原正在**进行**或已**完成**的更改时, 当前部署将停止。设置将还原为所有环部署的最后一个版本。 
+部署更改后, 可以从**部署状态**恢复。 还原正在**进行**或已**完成**的更改时, 当前部署将停止。 设置将还原为所有环部署的最后一个版本。 
 
 **还原更改**
 1. 登录到[Microsoft 托管桌面管理门户](http://aka.ms/mwaasportal)
