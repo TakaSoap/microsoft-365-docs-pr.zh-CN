@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 004b6399bb7039c1e30fbc6a7b775b8c7f19d497
-ms.sourcegitcommit: 41b3dd9e38f56d0d4683ae6dc8e0e053ff57a3e7
+ms.openlocfilehash: 5c820e36b7b397fe770216ee229e38a1da5b034d
+ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30516327"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573416"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>在 microsoft 托管桌面设备上安装 microsoft Project 或 microsoft Visio
 
@@ -51,4 +51,4 @@ it 管理员必须让用户知道如何安装 Project 和 Visio, 这一点非常
 - 有关如何从公司门户安装这些应用程序的说明。
 
 >[!NOTE]
->用户必须先关闭所有 Office 应用程序, 然后才能从公司门户安装 Mircosoft 项目或 Microsoft Visio。 
+>用户必须先关闭所有 Office 应用程序, 然后才能从公司门户安装 microsoft Project 或 microsoft Visio。 
