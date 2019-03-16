@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
-ms.openlocfilehash: 51ac9caf1cbc2edd979d9529301388a30981ee44
-ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
+ms.openlocfilehash: 6dada4734798d0e30b50e271520742f3b170ebaf
+ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340102"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573426"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
@@ -47,7 +47,7 @@ ms.locfileid: "30340102"
   
 此配置包括： 
   
-- Office 365 E5 和 EMS E5 试用订阅或永久订阅。
+- Office 365 E5 和 EMS E5 试用订阅或付费订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Windows Server AD 域同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
 
@@ -124,7 +124,7 @@ ms.locfileid: "30340102"
 
 此配置包括：
 
-- 包含已注册 DNS 域 TESTLAB.\<域名> 的 Office 365 E5 和 EMS E5 试用订阅或永久订阅。
+- 包含已注册 DNS 域 TESTLAB.\<域名> 的 Office 365 E5 和 EMS E5 试用订阅或付费订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Office 365 和 EMS E5 订阅同步到 TESTLAB Windows Server AD 域。 
 - 已启用密码写回，因此用户可以通过 Azure AD 更改其密码，而无需连接到简化的 Intranet。
