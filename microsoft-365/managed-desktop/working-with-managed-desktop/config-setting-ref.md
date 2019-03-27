@@ -7,21 +7,21 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8839be023844ae4de17972790ec9d02b82c75244
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414190"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900271"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>可配置的设置参考-Microsoft 托管桌面
 
 本主题列出了客户可以使用 Microsoft 托管桌面配置的设置类别。 每个设置类别都包含有关要求、最佳实践以及如何自定义设置类别的信息。 
 
 ## <a name="desktop-background-picture"></a>桌面背景图片
-您可以为组织中的 Microsoft 托管桌面设备自定义桌面背景图片。 您可以使用它来应用公司品牌或市场营销 
+您可以为组织中的 Microsoft 托管桌面设备自定义桌面背景图片。 您可以使用它来应用公司品牌或营销材料。 
 
-### <a name="requirements"></a>要求
+### <a name="requirements"></a>Requirements
 
 必须满足桌面背景图片的以下要求:
 - 图片文件格式-.jpg、jpeg 或 .png
@@ -35,12 +35,12 @@ ms.locfileid: "30414190"
 2. 在 "**设置**" 下, 选择 "**可配置**"。
 3. 在**可配置**的工作区中, 选择 "**桌面背景图片**"。 
 4. 输入要使用的图片的位置。 
-5. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试环。 
+5. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试组。 
 
 ## <a name="browser-start-pages"></a>浏览器起始页
 当用户启动 Microsoft Edge 时, 浏览器起始页在各个选项卡中打开。 如果您想让用户轻松打开一组经常使用的网站, 请为每个网站添加一个浏览器起始页。 
 
-### <a name="requirements"></a>要求
+### <a name="requirements"></a>Requirements
 
 您必须为您的浏览器起始页提供 intranet 或 Internet 站点的完全限定域名 (FQDN)。 如果配置了内部网站, 请让用户知道, 仅当在 office 中连接到内部网络或使用 VPN 连接进行连接时, 才允许访问这些网站。 
 
@@ -53,7 +53,7 @@ ms.locfileid: "30414190"
 4. 选择 "**添加起始页**"。
 5. 在 "**添加浏览器起始页**" 中, 输入要使用的网站的 URL, 然后选择 "**添加起始页**"。 
 6. 对其他浏览器启动页重复步骤1-5。 
-7. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试环。
+7. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试组。
 
 ## <a name="enterprise-mode-site-list-location"></a>企业模式网站列表位置
 
@@ -61,7 +61,7 @@ ms.locfileid: "30414190"
 
 您可以指定 https://位置, 也可以指定在其中承载企业模式网站列表的内部共享的位置。 
 
-### <a name="requirements"></a>要求
+### <a name="requirements"></a>Requirements
 
 企业模式网站列表文件必须满足以下要求:
 - 文件格式-符合[文件要求](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)的 XML 文件
@@ -82,7 +82,7 @@ ms.locfileid: "30414190"
 2.  在 "**设置**" 下, 选择 "**可配置**"。
 3.  在**可配置**的工作区中, 选择 "**企业模式站点列表位置**"。 
 4.  为您的网站列表输入 https 位置。 
-5.  选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试环。
+5.  选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试组。
 
 ## <a name="trusted-sites"></a>受信任网站
 
@@ -92,7 +92,7 @@ ms.locfileid: "30414190"
 - 区域3– Internet 区域
 - 区域4–受限制的站点区域
 
-### <a name="requirements"></a>要求
+### <a name="requirements"></a>Requirements
 
 为每个受信任的站点提供 intranet 或 Internet 站点的完全限定域名 (FQDN)。 
 
@@ -105,7 +105,7 @@ ms.locfileid: "30414190"
 3. 在**可配置**的工作区中, 选择 "**受信任的站点**", 然后选择 "**添加可信站点**" 
 4. 在 "**添加受信任站点**" 中, 输入 URL, 选择安全区域, 然后选择 "**添加受信任的站点**"。 
 5. 对要添加的每个受信任站点重复步骤1-4。 
-6. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试环。
+6. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试组。
 
 **删除受信任的网站**
 
@@ -114,7 +114,7 @@ ms.locfileid: "30414190"
 3. 在**可配置**的工作区中, 选择 "**受信任站点**"。 
 4. 选择要删除的网站, 然后选择 "**删除**"。 
 5. 对要删除的每个受信任站点重复步骤1-4。 
-6. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试环。
+6. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试组。
 
 ## <a name="proxy"></a>代理
 您可以管理您的组织的网络代理设置。 添加代理服务器和端口号, 然后添加代理站点例外。 Microsoft 托管桌面包括一组用于运行服务所需的默认代理异常。 默认的排除列表仅可由 Microsoft 托管桌面服务进行修改。  有关详细信息, 请参阅[Microsoft 托管桌面的网络配置](../get-ready/network.md)。 
@@ -124,7 +124,7 @@ ms.locfileid: "30414190"
 > [!NOTE]
 > 更新默认代理例外列表始终优先于客户部署。 这意味着, 如果为默认代理例外列表部署, 则将暂停暂存部署。  
 
-### <a name="requirements"></a>要求
+### <a name="requirements"></a>Requirements
 
 对于代理服务器和代理站点例外, 必须满足以下要求:
 - 必须是有效的服务器地址和端口号
@@ -140,7 +140,7 @@ ms.locfileid: "30414190"
 4. 输入代理服务器的**地址**和**端口号**, 然后选择 "**添加代理例外**"。 
 5. 输入有效的 http 站点的 URL, 然后选择 "**添加代理例外**"。 
 6. 对要添加的每个受信任站点重复步骤1-5。 
-7. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试环。
+7. 选择 "**暂存部署**" 以保存所做的更改, 并将其部署到测试组。
 
 ## <a name="additional-resources"></a>其他资源
 - [可配置的设置概述](config-setting-overview.md) 
