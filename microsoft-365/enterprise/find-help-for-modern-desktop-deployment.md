@@ -1,5 +1,5 @@
 ---
-title: 查找有关新式桌面部署的帮助
+title: 查找有关 Windows 10 和 Office 365 专业增强版部署的帮助
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 在哪里查找有关新式桌面部署的帮助和支持。
-ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+description: 在何处查找有关 Windows 10 和 Office 365 专业增强版部署的帮助和支持。
+ms.openlocfilehash: 78d231dbcb5f965e2b4233bc7980da31fbfcbc2e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241965"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900251"
 ---
-# <a name="find-help-for-your-modern-desktop-deployment"></a>查找有关新式桌面部署的帮助 
+# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>查找有关 Windows 10 和 Office 365 专业增强版部署的帮助 
 
 如果你正在规划采用 Office 365 专业增强版的 Windows 10 部署，可以通过多种方式从经过认证的 Microsoft 合作伙伴处和 [Microsoft FastTrack](https://www.microsoft.com/fasttrack) 中获得额外帮助。
 
-以下是部署 Windows 10、Office 365 专业增强版和“企业移动性 + 安全性”的[新式桌面部署](http://www.aka.ms/howtoshift)流程所对应的可用服务的映射以及现有的合作伙伴和 FastTrack 服务。在许多情况下，这些服务都包含在 Microsoft 365、Office 365 或 Windows 10 企业版的合格订阅内。对于合作伙伴主导的服务（例如新式桌面评估），作为符合条件的组织，Microsoft 会为合作伙伴执行的服务提供凭证。以下链接提供了有关各个服务的详细信息。
+下图展示了与 Windows 10、Office 365 专业增强版和企业移动性 + 安全性的[桌面部署](http://www.aka.ms/howtoshift)流程相契合的可用服务（包括现有合作伙伴和 FastTrack 产品/服务）。 在很多情况下，符合资格的 Microsoft 365、Office 365 或 Windows 10 企业版订阅中随附有这些服务。 对于 Windows 10 和 Office 365 专业增强版桌面评估等合作伙伴主导的服务，Microsoft 身为一家合格的组织，为合作伙伴执行的服务提供凭证。 以下链接中提供了每项产品/服务的详细信息。
 
 <br>
 
@@ -104,8 +104,8 @@ ms.locfileid: "27241965"
 
 ## <a name="related-resources"></a>**相关资源**
 
-  - [新式桌面部署中心](http://www.aka.ms/howtoshift)
+  - [桌面部署中心](http://www.aka.ms/howtoshift)
 
-  - [Microsoft Mechanics 的新式桌面部署系列视频](http://www.aka.ms/watchhowtoshift)
+  - [Microsoft Mechanics 的桌面部署系列视频](http://www.aka.ms/watchhowtoshift)
 
-  - [新式桌面部署和管理实验室工具包](https://aka.ms/howtoshiftlabs)
+  - [桌面部署和管理实验室工具包](https://aka.ms/howtoshiftlabs)
