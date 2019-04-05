@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何购买和注册 Microsoft 365 商业版。
-ms.openlocfilehash: 136ccc0d769a24b767101e1e8eb50261d4816f15
-ms.sourcegitcommit: 07f9eeb20b80573361e4d93b45acb68151a9e881
+ms.openlocfilehash: ce12c872e8cc30ece9e59aaf8c5b5d7c86694df2
+ms.sourcegitcommit: bbb32d1601f87dc72bebd00fad36d760ca233cd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30933247"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31477703"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>注册 Microsoft 365 商业版
 
@@ -31,23 +31,26 @@ ms.locfileid: "30933247"
 
 转到 "[发现 microsoft 365 业务优势](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop)", 并选择 "**立即购买**" microsoft 365 商业版。
 
-1. 在 "**欢迎" 中, 让我们知道你**的页面输入所需的信息。 请注意, 
+1. 在 "**欢迎" 中, 让我们知道你**的页面输入所需的信息。 请注意:
  
-    -  您选择的**国家/地区**决定了您要获取的服务, 稍后不能更改。
-    - **业务电子邮件地址**是你拥有的任何电子邮件, Microsoft 将使用它向你发送有关你的订阅的信件。
-    - **公司名称**将显示在管理中心中, 并用于任何 SharePoint 网站 url。
+    -  **国家或地区:** 这将确定您接收的服务和以后无法更改的服务。
+    - **业务电子邮件地址:** 输入您当前的电子邮件地址。 microsoft 使用此地址与您的 microsoft 365 订阅相对应。
+    - **公司名称**我们将在管理中心显示你的公司名称;你可以在此处管理 Microsoft 365 用户、许可证等。 我们还会将其包含在任何 SharePoint 网站 url 中。
 
-2. 在 "**创建您的用户 ID** " 页面上, 输入要用于登录的别名、@ 符号后面的域名, 然后从下拉的域中选择一个域。 您可以使用此功能购买域并从下拉列表中选择分机, 例如, 可以输入*Teresa@ContosoSkis.net* , 向导将确定该域是否可用, 并将成本添加到 Microsoft 365 业务成本中。 此外, 还将为你设置新域, 并在此处购买时随时使用。
+2. 在 "**创建您的用户 ID** " 页上:
 
-    如果您有要使用的现有域, 请从下拉*onmicrosoft.com*中选择 "", 您可以稍后在管理中心中进行设置。
+    - **Username**: 输入您自己的商业电子邮件所使用的名称 (称为别名)。 例如, Robert 年轻人可能将 RobY 或 RobYoung 用作工作别名。
+    - **您的公司**: 输入您的独特业务名称。 这是你的企业网站使用的名称 (如果有), 也是您在收到业务电子邮件时要在 @ 符号后包含的名称。 此名称称为 "域"。 例如, 如果您的公司称为 Contoso Skis, 请在 @ 符号后输入 ContosoSkis。
+    - **选择一个域**: 如果你已拥有您的域名, 请从下拉 onmicrosoft.com 中选择 ".", 我们将要求你在稍后对其进行设置。 否则, 可以轻松购买代表你的业务的域名。 若要执行此操作, 请从下拉菜单中选择您更喜欢的域。 例如, 您的完整电子邮件地址可能*Teresa@ContosoSkis.net*是。 如果域名可用, 我们将立即通知你。 如果是, 我们将把你的域的成本增加到 Microsoft 365 业务订阅的成本。 如果在此处购买新域, 还会将其设置并准备好在 Microsoft 365 中使用。
     
     !["创建您的用户 ID" 页的屏幕截图。](media/signinuserid.png)
 
 3. 填写其余字段, 并选择 "**创建我的帐户**"。
 4. 在**证明。你是。Not'A。机器人。** 页面: 输入电话号码以通过文本或呼叫接收代码, 然后选择 "**文本**" 或 "**呼叫我**", 然后输入验证代码\> **下一步**。
-5. 在 "**您要使用此**页面的位置" 中, 填写您的公司地址。 此信息用于确定税和订阅可用性。 选择 "**下一步**", 查看订单并再次选择 "**下一步**"。
-6. 在 "**您希望如何支付**" 页面上, 输入您的付款详细信息, 然后**按顺序**。
-    然后, 您可以转到[管理中心](https://go.microsoft.com/fwlink/p/?linkid=837890)完成[设置](set-up.md)。
+5. 在 "**要将此**n 用于你的公司地址的位置"。 此信息确定要支付的税以及哪些订阅可用。 有关税的详细信息, 请参阅[我将收取什么税？](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
+1. 选择 "**下一步**", 查看订单并再次选择 "**下一步**"。
+1. 在 "**您希望如何支付**" 页面上, 输入您的付款详细信息, 然后**按顺序**。
+    然后, 您可以转到[管理中心](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide)完成[设置](set-up.md)。
 
     > [!NOTE]
-    > 如果在安装程序结束时选择链接转到管理中心, 则将直接转到[设置](set-up.md)体验。
+    > 如果在安装程序结束时选择链接**转到管理中心**, 则将直接转到[设置](set-up.md)体验。
