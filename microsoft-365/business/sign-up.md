@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何购买和注册 Microsoft 365 商业版。
-ms.openlocfilehash: ce12c872e8cc30ece9e59aaf8c5b5d7c86694df2
-ms.sourcegitcommit: bbb32d1601f87dc72bebd00fad36d760ca233cd7
+ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
+ms.sourcegitcommit: 913564997dbba42a448865a8913e07e6f203c736
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31477703"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31504078"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>注册 Microsoft 365 商业版
 
@@ -41,13 +41,13 @@ ms.locfileid: "31477703"
 
     - **Username**: 输入您自己的商业电子邮件所使用的名称 (称为别名)。 例如, Robert 年轻人可能将 RobY 或 RobYoung 用作工作别名。
     - **您的公司**: 输入您的独特业务名称。 这是你的企业网站使用的名称 (如果有), 也是您在收到业务电子邮件时要在 @ 符号后包含的名称。 此名称称为 "域"。 例如, 如果您的公司称为 Contoso Skis, 请在 @ 符号后输入 ContosoSkis。
-    - **选择一个域**: 如果你已拥有您的域名, 请从下拉 onmicrosoft.com 中选择 ".", 我们将要求你在稍后对其进行设置。 否则, 可以轻松购买代表你的业务的域名。 若要执行此操作, 请从下拉菜单中选择您更喜欢的域。 例如, 您的完整电子邮件地址可能*Teresa@ContosoSkis.net*是。 如果域名可用, 我们将立即通知你。 如果是, 我们将把你的域的成本增加到 Microsoft 365 业务订阅的成本。 如果在此处购买新域, 还会将其设置并准备好在 Microsoft 365 中使用。
+    - **选择一个域**: 如果你已拥有您的域名, 请从下拉 onmicrosoft.com 中选择 ".", 我们将要求你在稍后对其进行设置。 否则, 可以轻松购买代表你的业务的域名。 若要执行此操作, 请从下拉菜单中选择您更喜欢的域。 例如, 您的完整电子邮件地址可能*Teresa@ContosoSkis.net*是。 如果域名可用, 我们将立即通知你。 如果是, 我们将把你的域的成本增加到 Microsoft 365 业务订阅的成本。 如果在此处购买新域, 还会将其设置并准备好在 Microsoft 365 中使用。 有关域的信息, 请参阅[域 FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq)。
     
     !["创建您的用户 ID" 页的屏幕截图。](media/signinuserid.png)
 
 3. 填写其余字段, 并选择 "**创建我的帐户**"。
 4. 在**证明。你是。Not'A。机器人。** 页面: 输入电话号码以通过文本或呼叫接收代码, 然后选择 "**文本**" 或 "**呼叫我**", 然后输入验证代码\> **下一步**。
-5. 在 "**要将此**n 用于你的公司地址的位置"。 此信息确定要支付的税以及哪些订阅可用。 有关税的详细信息, 请参阅[我将收取什么税？](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
+5. 在 "**您要使用此**页面的位置" 中, 输入您的公司地址。 此信息确定要支付的税以及哪些订阅可用。 有关税的详细信息, 请参阅[我将收取什么税？](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
 1. 选择 "**下一步**", 查看订单并再次选择 "**下一步**"。
 1. 在 "**您希望如何支付**" 页面上, 输入您的付款详细信息, 然后**按顺序**。
     然后, 您可以转到[管理中心](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide)完成[设置](set-up.md)。
