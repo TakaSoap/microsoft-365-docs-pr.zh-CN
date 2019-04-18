@@ -6,16 +6,16 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2317a0581b356dadbde2042920ed2542f0e2203c
-ms.sourcegitcommit: 392b906e64d27366b47931e8285b625e5e2f884e
+ms.openlocfilehash: c4ebe0c7ad3d1e197cf90cc975366df61d3b0cb5
+ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31838163"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901206"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备本地资源访问
 
-在 Microsoft 托管桌面中, 设备会自动加入 Azure Active Directory。 这意味着, 如果您使用的是本地 active directory, 则必须检查一些事项, 以确保加入到 Azure AD 的设备可以与您的本地 active directory 进行通信。 
+在 Microsoft 托管桌面中, 设备会自动加入 azure Active Directory (azure AD)。 这意味着, 如果您使用的是本地 active directory, 则必须检查一些事项, 以确保加入到 Azure AD 的设备可以与您的本地 active directory 进行通信。 
 
 > [!NOTE]  
 > *混合*Microsoft 托管桌面不支持 Azure AD 加入。
@@ -32,20 +32,20 @@ ms.locfileid: "31838163"
 
 默认情况下, 使用 UPN 和密码的单一登录 (SSO) 在 Microsoft 托管桌面设备上启用。 但您的用户也可以使用 Windows Hello 企业版, 这需要执行一些额外的设置步骤。 
 
-### <a name="single-sign-on-by-using-upn-and-passwords"></a>使用 UPN 和密码的单一登录
+### <a name="single-sign-on-by-using-upn-and-password"></a>使用 UPN 和密码的单一登录
 
 在大多数组织中, 用户将能够使用 SSO 在 Microsoft 托管桌面设备上通过 UPN 和密码进行身份验证。 但是, 为了确保这能够正常运行, 应仔细检查以下各项:
 
-- 确认已设置 Azure Active directory (AAD) Connect 并使用运行 Windows server 2008 R2 或更高版本的本地 Active directory 服务器。
-- 确认 AAD 连接运行的是受支持的版本, 并将其设置为将这三个属性与 Azure AD 同步: 
+- 确认已设置 Azure AD Connect 并使用运行 Windows server 2008 R2 或更高版本的本地 Active Directory 服务器。
+- 确认 azure ad Connect 运行的是受支持的版本, 并将其设置为将这三个属性与 Azure ad 同步: 
     - 内部部署 Active Directory (最终用户所在的位置) 的 DNS 域名称
-    - yor 本地 Active Directory (其中的第一个最终用户位于其中) 的 NetBIOS
+    - 本地 Active Directory (最终用户所在的位置) 的 NetBIOS
     - SAM 帐户的用户名称
 
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>使用 Windows Hello 企业版的单一登录
 
-Microsoft 托管桌面设备还通过采用 Windows Hello 企业版为你的用户提供了快速、passwordless 的体验。 若要确保 Windows hello 企业版能够正常工作, 而用户无需提供 UPN 和密码, 请访问[使用 Windows Hello 企业版的本地单一登录配置 Azure AD 加入设备](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)以检查要求, 然后按照此处提供的步骤。
+Microsoft 托管桌面设备还通过采用 Windows Hello 企业版为你的用户提供了快速、passwordless 的体验。 若要确保 Windows hello 企业版能够正常工作, 而您的用户无需提供各自的 UPN 和密码, 请访问[使用 Windows Hello 企业版的本地单一登录配置 Azure AD 加入设备](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)以检查要求, 然后按照此处提供的步骤操作。
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>使用身份验证的应用程序和资源
