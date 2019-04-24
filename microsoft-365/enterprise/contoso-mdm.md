@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的 EMS 来管理其设备以及上面运行的应用。
-ms.openlocfilehash: e6b6f822a8c0ea26b3d899e3531653b19e225d65
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278038"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
 
@@ -46,7 +46,10 @@ Contoso 并未使用 Intune 来达到以下目的：
 以下是 Contoso 设置其移动设备管理基础结构的方式：
 
 - 将 Intune 设置为移动设备管理 (MDM) 主管应用，并将在 Azure 上使用 Intune 来管理内容和设备
-- 创建了用于进行设备组注册的 Azure AD 组以及 Intune 设置和条件访问策略
+- 创建了用于进行设备注册的 Azure AD 组以及 Intune 设置和基于设备的条件访问策略
+
+  有关详细信息，请参阅 [Contoso 的配置条件访问策略](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)。
+
 - 启用了 Apple 设备平台以支持员工使用 ipad、iMac、iPhone 和基于 iPhone 的企业所拥有的手机
 - 创建了特定于 Contoso 的条款和条件策略，在移动设备上安装 Contoso 的公司门户时会看到这些策略
 - 对于未注册的设备，在用户访问 Office 365 服务时，会有一组移动应用程序管理 (MAM) 策略要求进行身份验证

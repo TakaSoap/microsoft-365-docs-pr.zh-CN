@@ -2,21 +2,21 @@
 title: 适用于 GDPR 的 Dynamics 365 责任就绪清单
 description: 提供在使用 Dynamics 365 时，访问支持 GDPR 可能需要的信息的便捷方式。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 05/24/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: b358776da0d2cdd676ac79736efea1908cd2a961
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c175e10e15bb35993b5234a76b6f7ca61e03dd3a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283565"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Dynamics 365 责任就绪清单
 

@@ -4,21 +4,21 @@ description: 针对 GDPR 的 Visual Studio 系列数据主体请求
 keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studio 文档, 隐私, GDPR
 localization_priority: Priority
 audience: itpro
-ms.prod: visual-studio
+ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: PoulChapman
-ms.author: pchapman
-manager: scalla
+ms.author: olholder
+manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bba28648cbee6dd32c2005bcb584e97a4c534e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286920"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>针对 GDPR 的 Visual Studio 系列数据主体请求
 
@@ -101,7 +101,7 @@ Microsoft 收集数据，帮助我们重现和排查你报告的 Visual Studio �
 
 若要查看与你的反馈相关的数据，请执行以下步骤：
 
-1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。在右上角，单击个人资料并选择“个人资料和首选项”****。
+1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。 在右上角，单击个人资料并选择“个人资料和首选项”****。
 2. 单击任何“个人资料”****、“通知”****、“活动”**** 和“附件”**** 选项卡，查看提交到反馈系统的数据。
    1. “个人资料”**** 指的是你的[开发人员社区](https://developercommunity.visualstudio.com)个人资料，包括用户名、电子邮件地址、个人相关信息等。
    2. “通知”**** 是你控制接收电子邮件通知的方式。
@@ -121,7 +121,7 @@ Microsoft 收集数据，帮助我们重现和排查你报告的 Visual Studio �
 
 若要开始导出，请执行以下步骤：
 
-1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。在右上角，单击个人资料并选择“个人资料和首选项”****。
+1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。 在右上角，单击个人资料并选择“个人资料和首选项”****。
 2. 单击“隐私”**** 选项卡，然后单击“创建存档”****，请求导出数据。
 3. “存档状态”**** 将更新，显示我们正在准备数据。准备数据的时间取决于我们需要导出的数据量。
 4. 数据准备就绪后，我们会向你发送一封电子邮件。

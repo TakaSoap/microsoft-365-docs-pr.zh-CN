@@ -2,20 +2,20 @@
 title: 适用于 GDPR 的 Microsoft 支持和专业服务责任就绪清单
 description: 方便你在使用 Microsoft 专业服务和支持服务时访问支持 GDPR 可能所需的信息。
 keywords: ARC, 责任准备情况清单, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 95af57f0029fe22803179076bc05feaafa277fa5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bbdb806648c1f5a438e07b9092a7b432ab0ed81d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286493"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Microsoft 支持和专业服务责任就绪清单
 
@@ -25,8 +25,6 @@ ms.locfileid: "26866072"
 本责任准备情况清单可方便你在使用 Microsoft 专业服务和支持服务时，访问支持 GDPR 可能所需的信息。本清单按个人数据处理者适用的一组隐私和安全控件的标题和参考编号（位于每个清单主题的括号中）进行组织，这些控件取自 *ISO/IEC CD 27552 信息技术 &#x2014；安全技术 &#x2014；ISO/IEC 27001 隐私管理增强 &#x2013；要求*。
 
 此控件结构还用于组织 Microsoft 专业服务为支持 GDPR 而实现的内部控件的演示文稿（可单击 https://servicetrust.microsoft.com/ViewPage/TrustDocuments 下载）。
-
-若要购买完整 ISO 标准草案的副本，请访问 *https://shop.bsigroup.com/ProductDetail?pid=000000000030372571*。
 
 <br>
 
@@ -152,24 +150,20 @@ ms.locfileid: "26866072"
 | **ID**                | **说明**                                                                                            | **URL**                                                                                                                                                                                                               |
 | 1 <a name="1"> </a>   | ***Microsoft 专业服务数据保护附录***                                             | (<http://aka.ms/professionalservicesdpa>)                                                                                                                                                                             |
 | 2 <a name="2"> </a>   | ***Microsoft 信任中心上的 Microsoft 专业服务安全文档***                     | <https://www.microsoft.com/TrustCenter/professional-services-security>                                                                                                                                                |
-| 3 <a name="3"> </a>   | ***培训和意识计划说明***                                                           | 可向客户的帐户管理团队请求获取。<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                       |
-| 4 <a name="4"> </a>   | ***Microsoft Azure 数据安全***（数据清理和泄露）                                           | <https://blogs.msdn.microsoft.com/walterm/2014/09/04/microsoft-azure-data-security-data-cleansing-and-leakage/>                                                                                                       |
-| 5 <a name="5"> </a>   | ***5. Microsoft 专业服务 GDPR 控件集***                                                 | 可通过 Microsoft 服务信任门户合规性管理器 (<https://aka.ms/GDPRControls>) 或合规性管理器 (https://servicetrust.microsoft.com/ComplianceManager)下载                                |
-| 6 <a name="6"> </a>   | ***Microsoft 企业版业务连续性管理文档***                                    | 可向客户的帐户管理团队请求获取。<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                       |
-| 7 <a name="7"> </a>   | ***谁可以访问你的数据和所依据的条款***                                                           | <https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>                                                                                                                            |
-| 8 <a name="8"> </a>   | ***符合 GDPR 的 Microsoft 专业服务数据主体请求***                                   | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services>                                                                                                                                          |
-| 9 <a name="9"> </a>   | ***Microsoft 专业服务和 GDPR 规定的泄露通知***                               | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services>                                                                                                             |
-| 10 <a name="10"> </a> | ***Microsoft 专业服务适用的客户数据保护影响评估关键信息*** | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services>                                                                                                                                         |
-| 11 <a name="11"> </a> | ***ISO 27001 审核报告***<br>                                                                           |                                                                                                                                                                                                                       |
-|                       | 认证报告                                                                                       | <https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002> |
-|                       | 审核报告                                                                                               | 可向客户的技术帐户管理团队请求获取。<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                             |
-| 12 <a name="12"> </a> | ***Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明***                   | 可向客户的帐户管理团队请求获取的 SOA。<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>                                                                              |
-| 13 <a name="13"> </a> | ***Microsoft 信任中心合规性产品/服务***                                                          | <https://www.microsoft.com/trustcenter/compliance/complianceofferings>                                                                                                                                                |
-| 14 <a name="14"> </a> | ***Microsoft DPO 信息***                                                                            | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer>                                                                                                                                    |
+| 3 <a name="3"> </a>   | ***培训和意识计划说明***                                                           | 可向客户的帐户管理团队请求获取。|                                                                                                    |
+| 4 <a name="4"> </a>   | ***Microsoft 专业服务 GDPR 控件集***                                                 | 可通过 Microsoft 服务信任门户合规性管理器 (<https://aka.ms/GDPRControls>) 或合规性管理器 (https://servicetrust.microsoft.com/ComplianceManager)下载                                |
+| 5 <a name="5"> </a>   | ***Microsoft 企业版业务连续性管理文档***                                    | 可向客户的帐户管理团队请求获取。                                                                     |
+| 6 <a name="6"> </a>   | ***谁可以访问你的数据和所依据的条款***                                                           | <https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>                                                                                                                            |
+| 7 <a name="7"> </a>   | ***符合 GDPR 的 Microsoft 专业服务数据主体请求***                                   | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services>                                                                                                                                          |
+| 8 <a name="8"> </a>   | ***Microsoft 专业服务和 GDPR 规定的泄露通知***                               | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services>                                                                                                             |
+|  9 <a name="9"> </a> | ***Microsoft 专业服务适用的客户数据保护影响评估关键信息*** | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services>                                                                                                                                         |
+| 10 <a name="10"> </a> | ***ISO 27001 审核报告***                                                                              |   <https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>                                                                                                                                            |
+| 11 <a name="11"> </a> | ***Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明***                   | 可向客户的帐户管理团队请求获取的 SOA。|
+| 12 <a name="12"> </a> | ***Microsoft 信任中心合规性产品/服务***                                                          | <https://www.microsoft.com/trustcenter/compliance/complianceofferings>                                                                                                                                                |
+| 13 <a name="13"> </a> | ***Microsoft DPO 信息***                                                                            | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer>                                                                                                                                    |
 |                       |                                                                                                            |                                                                                                                                                                                                                       |
 
 ## <a name="learn-more"></a>了解更多
 
 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 
-[安全信任门户](https://aka.ms/gdprgetstarted)

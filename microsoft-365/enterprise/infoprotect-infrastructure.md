@@ -3,22 +3,22 @@ title: 第 6 阶段：信息保护
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版信息保护基础结构。
-ms.openlocfilehash: 6df05479ae1ab7612c4b91d8c5e81f1207bbf0a6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 821c32eea09cde87155d0ee1ccdd81077d051d38
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287627"
 ---
 # <a name="phase-6-information-protection"></a>第 6 阶段：信息保护
 
@@ -40,7 +40,7 @@ ms.locfileid: "26865970"
 |:-------|:-----|
 |![](./media/stepnumbers/Step1.png)|[定义安全和信息保护级别](infoprotect-define-sec-infoprotect-levels.md)|
 |![](./media/stepnumbers/Step2.png)|[配置环境分类](infoprotect-configure-classification.md)|
-|![](./media/stepnumbers/Step3.png)|[为 Office 365 配置提升的安全性](infoprotect-configure-increased-security-office-365.md)|
+|![](./media/stepnumbers/Step3.png)|[为 Microsoft 365 配置提升的安全性](infoprotect-configure-increased-security-office-365.md)|
 |![](./media/stepnumbers/Step4.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
 
 

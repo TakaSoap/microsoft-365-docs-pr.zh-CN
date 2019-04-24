@@ -4,18 +4,19 @@ description: 努力符合国际标准化组织 (ISO) 的要求时，可遵循的
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, ISO, ISO 27001
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 1e0232759bd33fb2bcaf66f7afd5334eed43fbbf
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- M365-security-compliance
+ms.openlocfilehash: 3f81ad10d4549f9f28b5df4a0e090fb38a54bf6f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283454"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -47,7 +48,7 @@ ISO/IEC 27001 是实现信息安全管理系统 (ISMS) 的国际标准。ISMS �
 |**区域**|**任务**|
 |了解 ISO 27001 管理和合规性要求。|• 使用 [Microsoft 服务信任门户 (STP)](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) 中的 [Microsoft 合规性管理器](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000)来评估和管理合规性风险，以对组织执行 ISO 27001:2013 评估。为全部 14 个 ISO 27001 组制定标准操作程序 (SOP)。
 |开始计划逐步向组织推出信息分类和保留策略及工具，以帮助用户标识、分类和保护敏感数据和资产。|• 通过逐步推出分类策略和 [Azure 信息保护](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)应用程序，帮助用户根据信息保护策略和标准操作程序 (SOP) 轻松标识和分类敏感数据。制定组织的信息分类架构（策略），以及教育和推广计划。<br>•   通过逐步向组织推出 [Office 365 标签](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)，帮助用户将记录保留和保护策略轻松应用于内容。根据信息记录保留的相关法律要求以及教育和推广计划，计划组织标签。
-|通过创建作为标准操作程序 (SOP) 一部分的审核和当责策略，确保与信息安全相关的记录免遭丢失、删除、修改或未经授权访问。|•（为所有 Exchange 邮箱）启用 [Office 365 审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)和[邮箱审核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)，以监视 Office 365 是否有潜在恶意活动，并启用数据泄露取证分析。<br>• 定期搜索 Office 365 租户的审核日志，以检查租户配置设置的更改。<br>• 在 Office 365 安全与合规中心内对敏感活动（如用户帐户发生特权提升）启用 [Office 365 警报策略](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264)。<br>•   对于长期存储的 Office 365 审核日志数据，使用 [Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)，与安全信息和事件管理 (SIEM) 工具集成。
+|通过创建作为标准操作程序 (SOP) 一部分的审核和当责策略，确保与信息安全相关的记录免遭丢失、删除、修改或未经授权访问。|•（为所有 Exchange 邮箱）启用 [Office 365 审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)和[邮箱审核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)，以监视 Office 365 是否有潜在恶意活动，并启用数据泄露取证分析。<br>• 定期搜索 Office 365 租户的审核日志，以检查租户配置设置的更改。<br>• 在 Microsoft 365 安全或合规中心内对敏感活动（如用户帐户发生特权提升）启用 [Office 365 警报策略](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264)。<br>• 对于长期存储的 Office 365 审核日志数据，使用 [Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)，与安全信息和事件管理 (SIEM) 工具集成。
 |定义组织的管理角色和安全角色，以及与职责划分相关的相应策略。|• 利用 [Office 365 管理角色](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a)来划分管理职责。注意：Office 365 中的许多管理员角色在 Exchange Online、SharePoint Online 和 Skype for Business Online 中都有相应角色。<br>•  划分权限，以确保各个管理员只拥有必要的访问权限。|
 
 

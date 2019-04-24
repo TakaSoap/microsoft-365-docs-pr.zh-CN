@@ -3,22 +3,22 @@ title: 阶段 2：身份
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 部署 Microsoft 365 企业版的身份基础结构的步骤。
-ms.openlocfilehash: 7b5d62f5c09a1ea6d46449b113bff59dbf07ebad
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 932b6fb2cfeb86edcf708bdfdea55cdd8b580838
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288730"
 ---
 # <a name="phase-2-identity"></a>阶段 2：身份
 
@@ -32,25 +32,20 @@ ms.locfileid: "26865804"
 
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>计划和部署 Microsoft 365 企业版身份基础结构 
 
+开始之前，请观看此视频，以获取 Microsoft 365 身份模型和身份验证的概述。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+
 使用以下步骤在云中计划和部署新身份基础结构。此外，还可用这些步骤调整现有本地或混合身份基础结构，以与 Microsoft 365 企业版一起使用。 
 
 |||
 |:-------|:-----|
 |![](./media/stepnumbers/Step1.png)| [计划用户和组](identity-plan-users-groups.md) |
-|![](./media/stepnumbers/Step2.png)| [保护全局管理员帐户](identity-designate-protect-admin-accounts.md) |
-|![](./media/stepnumbers/Step3.png)| [设置按需全局管理员](identity-privileged-identity-management.md) |
-|![](./media/stepnumbers/Step4.png)| [简化密码重置](identity-password-reset.md) |
-|![](./media/stepnumbers/Step5.png)| [设置多重身份验证](identity-multi-factor-authentication.md) |
-|![](./media/stepnumbers/Step6.png)| [防止凭据泄露](identity-azure-ad-identity-protection.md) |
-|![](./media/stepnumbers/Step7.png)| [同步目录](identity-azure-ad-connect.md) |
-|![](./media/stepnumbers/Step8.png)| [监控同步运行状况](identity-azure-ad-connect-health.md) |
-|![](./media/stepnumbers/Step9.png)| [简化密码更新](identity-password-writeback.md) |
-|![](./media/stepnumbers/Step10.png)| [简化用户登录](identity-single-sign-on.md) |
-|![](./media/stepnumbers/Step11.png)| [自定义 Office 365 登录页](identity-customize-office-365-sign-in.md) |
-|![](./media/stepnumbers/Step12.png)| [设置自动许可](identity-group-based-licensing.md) |
-|![](./media/stepnumbers/Step13.png)| [监控租户和登录活动](identity-azure-ad-access-usage-reporting.md) |
-|![](./media/stepnumbers/Step14.png)| [允许用户创建和管理自己的组](identity-self-service-group-management.md) |
-|![](./media/stepnumbers/Step15.png)| [设置动态组成员身份](identity-automatic-group-membership.md) |
+|![](./media/stepnumbers/Step2.png)| [保护你的特权标识](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step3.png)| [配置混合标识](identity-azure-ad-connect.md) |
+|![](./media/stepnumbers/Step4.png)| [配置安全的用户身份验证](identity-multi-factor-authentication.md) |
+|![](./media/stepnumbers/Step5.png)| [简化用户访问权限](identity-password-reset.md) |
+|![](./media/stepnumbers/Step6.png)| [使用组实现更轻松地管理](identity-self-service-group-management.md) |
 
 在完成这些步骤后，请转到这一阶段的[退出条件](identity-exit-criteria.md)，以确保满足 Microsoft 365 企业版的必备条件和可选条件。
 

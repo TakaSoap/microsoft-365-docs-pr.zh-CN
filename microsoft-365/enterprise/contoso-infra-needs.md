@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 本地 IT 基础设施的基本结构，以及 Microsoft 365 企业版如何满足其业务需求。
-ms.openlocfilehash: b507d1a44edc0b31b2ac5a3f949ecd8a72913311
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bd259f367cdf3417e32671457f248029c853b6f8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283671"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基础结构和业务需求
 
@@ -126,8 +126,8 @@ Contoso 的 IT 部门会在部署之前，确定以下映射到 Microsoft 365 �
 |  | 提高创造力和革新能力 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
 |  | 标识和访问管理 | 专用全局管理员帐户使用多重身份验证 (MFA) 和 Azure AD Privileged Identity Management (PIM) <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> 高级威胁防护 <BR> Office 365 高级威胁防护 <BR> Office 365 威胁智能 <BR> |
-|  | 信息保护 | Azure 信息保护 (AIP) <BR> Office 365 数据丢失防护 (DLP) <BR> Windows 信息保护 <BR> Microsoft Cloud App Security <BR> Office 365 云应用安全 (CAS) <BR> Microsoft Intune |
+|  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> 高级威胁防护 <BR> Office 365 高级威胁防护 <BR> Office 365 威胁调查和响应 <BR> |
+|  | 信息保护 | Azure 信息保护 <BR> Office 365 数据丢失防护 (DLP) <BR> Windows 信息保护 <BR> Microsoft Cloud App Security <BR> Office 365 云应用安全 (CAS) <BR> Microsoft Intune |
 |  | 安全管理 | Azure 安全中心  <BR> Windows Defender 安全中心 |
 | 远程和移动访问及业务合作伙伴 |  |  |
 |  | 提高远程和移动工作者的安全性 | Microsoft Intune |

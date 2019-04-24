@@ -2,20 +2,20 @@
 title: Microsoft 支持和专业服务与 GDPR 泄露通知
 description: 介绍了 Microsoft 支持和专业服务如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时响应和通知用户。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 18fa8e4b1b503bfadb6550dc31b17994166f3eb5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: a17752773304272938c305649ff6e511ab0d1b0b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285739"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft 支持和专业服务与 GDPR 泄露通知
 
@@ -101,5 +101,5 @@ Microsoft 还会完成数据保护事件的内部事后分析。作为此练习�
 
 -   分处理者/提供者详细信息（如果在泄露中有所涉及）
 
-#### <a name="learn-more"></a>了解详细信息
-转到 Microsoft 信任中心上的“Microsoft 专业服务”部分 (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>)，查找有关 [Microsoft 专业服务](<https://www.microsoft.com/microsoftservices/professional_services.aspx>)的更多信息。 
+#### <a name="learn-more"></a>了解更多信息
+详细了解 Microsoft 信任中心上的 Microsoft 专业服务 (<https://www.microsoft.com/trustcenter/professional-services>)。 
