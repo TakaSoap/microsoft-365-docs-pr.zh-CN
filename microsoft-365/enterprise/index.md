@@ -10,17 +10,17 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Microsoft 365 企业版文档和资源
-ms.openlocfilehash: 0e758884c063aaa82b5c7fc55051925376f8688b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 38d349fb17303ac9e9979ae9a58682e01578b70a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283474"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft 365 企业版文档和资源</h1>
-        <P>了解如何规划、 部署和在您的组织中同时使用 Microsoft Office 365，Windows 10 和企业移动 + 安全。这些服务提供一个集成和安全的基础结构，可启用团队协作和解除锁定创作。</p>
+        <P>了解如何在组织中共同规划、部署和使用 Microsoft Office 365、Windows 10 和企业移动性 + 安全性。 这些服务提供了一个集成且安全的基础结构, 可实现团队合作并解锁创造性。</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -39,10 +39,10 @@ ms.locfileid: "26865404"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>探索</h3>
+                                                <h3>浏览</h3>
                                                 <P><a href="microsoft-365-overview.md" target="_blank">概述</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">体系结构模型</a></p>
-                                                <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365 的 IT</a></p>
+                                                <P><a href="http://Microsoft365.com/it" target="_blank">适用于 IT 的 Microsoft 365</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@ ms.locfileid: "26865404"
                                                 <h3>部署</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">部署指南</a></p>
-                                                <P><a href="https://aka.ms/howtoshift" target="_blank">现代桌面部署</a></p>
+                                                <P><a href="https://aka.ms/howtoshift" target="_blank">新式桌面部署</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -77,10 +77,10 @@ ms.locfileid: "26865404"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>管理安全性&amp;合规性</h3>
+                                                <h3>管理安全&amp;合规性</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">合规性解决方案</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 安全性&amp;合规性</a></p>
-                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity&amp;设备访问</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 安全&amp;合规性</a></p>
+                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">标识&amp;设备访问</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
                                         </div>
@@ -97,10 +97,11 @@ ms.locfileid: "26865404"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>培训用户</h3>
+                                                <h3>培训管理员 & 用户</h3>
+                                                <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune&amp;的公司门户应用程序</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp;公司门户应用程序</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -135,11 +136,11 @@ ms.locfileid: "26865404"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>管理企业移动 + 安全</h3>
+                                                <h3>管理企业移动性 + 安全性</h3>
                                                 <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a>（Azure 信息保护）</p>
-                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure 高级的威胁保护</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure 高级威胁防护</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -159,8 +160,8 @@ ms.locfileid: "26865404"
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>开发适用于 Microsoft 365</h3>
-                                                        <P><a href="https://developer.microsoft.com/office" target="_blank">Office 365 开发中心</a></p>
+                                                        <h3>面向 Microsoft 365 的开发</h3>
+                                                        <P><a href="https://developer.microsoft.com/office" target="_blank">Office 365 开发人员中心</a></p>
                                                         <P><a href="https://developer.microsoft.com/windows/enterprise" target="_blank">Windows 开发人员中心</a></p>
                                                         <P><a href="https://developer.microsoft.com/graph" target="_blank">Microsoft Graph</a></p>
                                                     </div>

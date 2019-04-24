@@ -4,11 +4,12 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4OfficeInstall
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -19,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: 了解现在如何自动向 Windows 10 设备安装过程中部署 Office。
-ms.openlocfilehash: c51be45b4b4782de43939e648e77239f42492c4c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 立即了解如何在安装过程中自动将 Office 部署到 Windows 10 设备。
+ms.openlocfilehash: 3b702f2a57fcd0ebffc51e17ed6af00e8f1c485b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278295"
 ---
-# <a name="install-office-on-windows-10-during-setup"></a><span data-ttu-id="176ed-103">在设置过程中，在 Windows 10 上安装 Office</span><span class="sxs-lookup"><span data-stu-id="176ed-103">Install Office on Windows 10 during setup</span></span>
+# <a name="install-office-on-windows-10-during-setup"></a><span data-ttu-id="46d12-103">在设置过程中，在 Windows 10 上安装 Office</span><span class="sxs-lookup"><span data-stu-id="46d12-103">Install Office on Windows 10 during setup</span></span>
 
-<span data-ttu-id="176ed-p101">默认情况下，此设置处于关闭状态。可将该设置打开，以确保用户的所有 Windows 10 设备上运行的 Office 均为最新版本，但在此之前应首先验证确认满足所有先决条件。为了允许此设置向设备推送该软件，除了需满足[准备通过 Microsoft 365 Business 部署 Office 客户端](prepare-for-office-client-deployment.md)中所述的要求，用户还必须获得 Microsoft 365 商业版 授权。</span><span class="sxs-lookup"><span data-stu-id="176ed-p101">This setting is off by default. You can turn it on to ensure that users have the latest version of Office running on all their Windows 10 devices, but should first verify that all prerequisites are met. Users have to be licensed for Microsoft 365 Business for this setting to push the software to the device in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).</span></span> 
+<span data-ttu-id="46d12-p101">默认情况下，此设置处于关闭状态。可将该设置打开，以确保用户的所有 Windows 10 设备上运行的 Office 均为最新版本，但在此之前应首先验证确认满足所有先决条件。为了允许此设置向设备推送该软件，除了需满足[准备通过 Microsoft 365 Business 部署 Office 客户端](prepare-for-office-client-deployment.md)中所述的要求，用户还必须获得 Microsoft 365 商业版 授权。</span><span class="sxs-lookup"><span data-stu-id="46d12-p101">This setting is off by default. You can turn it on to ensure that users have the latest version of Office running on all their Windows 10 devices, but should first verify that all prerequisites are met. Users have to be licensed for Microsoft 365 Business for this setting to push the software to the device in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).</span></span> 
   
-<span data-ttu-id="176ed-p102">建议在设置过程中接受默认设置。若要对不同的用户组采用不同的设置，可以在完成设置后按组管理 Office 部署。从管理中心主页转到" **设备**"\>" **管理 Office 部署**"。有关分步说明，请参阅[在 Windows 10 设备上自动安装或卸载 Office](auto-install-or-uninstall-office.md)。</span><span class="sxs-lookup"><span data-stu-id="176ed-p102">We recommend you accept the default setting during setup. If you want to have different settings for different groups of users, you can manage Office deployment on a group-by-group basis after setup. Go to **Devices** \> **Manage Office deployment** from the Admin center home. For step-by-step directions, see [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md).</span></span>
+<span data-ttu-id="46d12-p102">建议在设置过程中接受默认设置。若要对不同的用户组采用不同的设置，可以在完成设置后按组管理 Office 部署。从管理中心主页转到" **设备**"\>" **管理 Office 部署**"。有关分步说明，请参阅[在 Windows 10 设备上自动安装或卸载 Office](auto-install-or-uninstall-office.md)。</span><span class="sxs-lookup"><span data-stu-id="46d12-p102">We recommend you accept the default setting during setup. If you want to have different settings for different groups of users, you can manage Office deployment on a group-by-group basis after setup. Go to **Devices** \> **Manage Office deployment** from the Admin center home. For step-by-step directions, see [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md).</span></span>
   
 

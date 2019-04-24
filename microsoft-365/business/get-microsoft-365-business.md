@@ -1,5 +1,5 @@
 ---
-title: 获取 Microsoft 365 商业版
+title: 从合作伙伴中心获取 Microsoft 365 商业版
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,35 +19,35 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 了解如何购买 Microsoft 365 企业版从 Microsoft 合作伙伴中心。
-ms.openlocfilehash: 77c8e3af930db540c0fab665aceef850f82e219c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解如何从 microsoft 合作伙伴中心购买 microsoft 365 商业版。
+ms.openlocfilehash: 1dcd9c21a598020447308970024a896b157bdae4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278346"
 ---
-# <a name="get-microsoft-365-business"></a><span data-ttu-id="408f4-103">获取 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="408f4-103">Get Microsoft 365 Business</span></span>
+# <a name="get-microsoft-365-business"></a><span data-ttu-id="86269-103">获取 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="86269-103">Get Microsoft 365 Business</span></span>
 
-## <a name="get-microsoft-365-business-from-microsoft"></a><span data-ttu-id="408f4-104">从 Microsoft 获取 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="408f4-104">Get Microsoft 365 Business from Microsoft</span></span>
+## <a name="get-microsoft-365-business-from-microsoft"></a><span data-ttu-id="86269-104">从 Microsoft 获取 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="86269-104">Get Microsoft 365 Business from Microsoft</span></span>
 
-<span data-ttu-id="408f4-105">如果您不具有合作伙伴并希望获取 Microsoft 365 企业版，则可以[购买此处](https://www.microsoft.com/en-US/microsoft-365/business)。</span><span class="sxs-lookup"><span data-stu-id="408f4-105">If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).</span></span>
+<span data-ttu-id="86269-105">如果你没有合作伙伴并且想要获取 Microsoft 365 商业版, 你可以在[此处购买它](https://www.microsoft.com/en-US/microsoft-365/business)。</span><span class="sxs-lookup"><span data-stu-id="86269-105">If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).</span></span>
   
-## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a><span data-ttu-id="408f4-106">从 Microsoft 合作伙伴中心获取 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="408f4-106">Get Microsoft 365 Business from Microsoft Partner Center</span></span>
+## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a><span data-ttu-id="86269-106">从 Microsoft 合作伙伴中心获取 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="86269-106">Get Microsoft 365 Business from Microsoft Partner Center</span></span>
 
-1. <span data-ttu-id="408f4-107">通过使用注册参加云服务提供商 (CSP) 计划时创建的凭据，登录 [Microsoft 合作伙伴中心](https://go.microsoft.com/fwlink/p/?linkid=849910)。</span><span class="sxs-lookup"><span data-stu-id="408f4-107">Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.</span></span> 
+1. <span data-ttu-id="86269-107">通过使用注册参加云服务提供商 (CSP) 计划时创建的凭据，登录 [Microsoft 合作伙伴中心](https://go.microsoft.com/fwlink/p/?linkid=849910)。</span><span class="sxs-lookup"><span data-stu-id="86269-107">Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.</span></span> 
     
-2. <span data-ttu-id="408f4-108">获取 Microsoft 365 商业版 之前，请在"合作伙伴仪表板"上选择"客户"，然后选择客户或添加新客户。</span><span class="sxs-lookup"><span data-stu-id="408f4-108">On the Partner Dashboard, choose Customers, then select your customer or add a new customer before you get Microsoft 365 Business.</span></span>
+2. <span data-ttu-id="86269-108">获取 Microsoft 365 商业版 之前，请在"合作伙伴仪表板"上选择"客户"，然后选择客户或添加新客户。</span><span class="sxs-lookup"><span data-stu-id="86269-108">On the Partner Dashboard, choose Customers, then select your customer or add a new customer before you get Microsoft 365 Business.</span></span>
     
     ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. <span data-ttu-id="408f4-110">在客户的" **订阅**"页面上，选择"添加订阅"，在"目录"下选择"小型企业版"选项，然后选择" **Microsoft 365 商业版**"。</span><span class="sxs-lookup"><span data-stu-id="408f4-110">On the customer's **Subscription** page, select Add subscription, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.</span></span>
+3. <span data-ttu-id="86269-110">在客户的" **订阅**"页面上，选择"添加订阅"，在"目录"下选择"小型企业版"选项，然后选择" **Microsoft 365 商业版**"。</span><span class="sxs-lookup"><span data-stu-id="86269-110">On the customer's **Subscription** page, select Add subscription, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.</span></span>
     
-    <span data-ttu-id="408f4-p101">选择的号码需要许可证的 (最多 300)。如果您有多个 300 个用户，请参阅[Microsoft 365 企业版](https://go.microsoft.com/fwlink/p/?linkid=862316)。</span><span class="sxs-lookup"><span data-stu-id="408f4-p101">Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead.</span></span> 
+    <span data-ttu-id="86269-111">选择所需的许可证数（不超过 300 个）。</span><span class="sxs-lookup"><span data-stu-id="86269-111">Select the number of licenses you need (up to 300).</span></span> <span data-ttu-id="86269-112">如果用户数超过 300, 请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 。</span><span class="sxs-lookup"><span data-stu-id="86269-112">If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead.</span></span> 
     
     ![On the New subscription page choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
-    <span data-ttu-id="408f4-114">完成添加新客户（包括企业名称）的其余步骤。</span><span class="sxs-lookup"><span data-stu-id="408f4-114">Complete the rest of the steps for adding a new customer including the business name.</span></span>
+    <span data-ttu-id="86269-114">完成添加新客户（包括企业名称）的其余步骤。</span><span class="sxs-lookup"><span data-stu-id="86269-114">Complete the rest of the steps for adding a new customer including the business name.</span></span>
     
 
 
