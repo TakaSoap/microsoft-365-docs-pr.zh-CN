@@ -3,20 +3,20 @@ title: 根据 GDPR 对 Dynamics 进行 DPIA
 description: 提供有关 Dynamics 365 信息的数据控制者，以帮助确定是否需要 DPIA，以及要包含的详细信息。
 keywords: DPIA, Microsoft 365, Dynbamics 365, Microsoft 365 文档, GDPR
 robots: NOINDEX,NOFOLLOW
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 467c14bbad32225d2ddfc7a4159aebd782106ebc
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5331577675571d07225b7f934ed92bcc8d0123be
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286503"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>数据保护影响评估：使用 Dynamics 365 的数据控制者指南
 

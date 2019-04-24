@@ -2,20 +2,20 @@
 title: 数据保护影响评估
 description: 这些文档为数据控制者相关信息，帮助他们确定是否需要 DPIA 以及要包含的详细信息。
 keywords: 数据保护影响评估, DPIA, Dynamics 365, Microsoft 专业服务, Microsoft 365, Microsoft 365 文档, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4e711c089d307c5a6b79d6d22d52f75470537955
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: d05c99daaaeadd42714b7df752b5d560e95538bb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285585"
 ---
 # <a name="data-protection-impact-assessments"></a>数据保护影响评估
 

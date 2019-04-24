@@ -3,7 +3,7 @@ title: Microsoft 365 测试环境的密码写回
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
-ms.openlocfilehash: 11a0efbae09c36098a19725187cd43b53850f4fc
-ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
+ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291447"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
@@ -39,7 +39,7 @@ ms.locfileid: "31901216"
 > [!TIP]
 > 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
-## <a name="phase-1-configure-password-hash-synchronization-and-password-reset-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步和密码重置
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
 首先，按照[密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。下面是生成的配置。
   
@@ -50,10 +50,6 @@ ms.locfileid: "31901216"
 - Office 365 E5 和 EMS E5 试用订阅或付费订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
-
-接下来，按照[密码重置阶段 2](password-reset-m365-ent-test-environment.md#phase-2-configure-and-test-password-reset) 测试实验室指南中的说明进行操作。
-
-必须启用密码重置才能使用密码写回。
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>阶段 2：为 TESTLAB AD DS 域启用密码写回
 

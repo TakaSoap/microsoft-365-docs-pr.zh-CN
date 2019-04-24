@@ -2,21 +2,21 @@
 title: GDPR - 导出系统生成日志数据所需的其他步骤
 description: Microsoft 技术指南 - 导出系统生成日志数据的其他步骤
 keywords: 导出日志数据, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 6cf1f6ae7c6b977c173f8e1e6c62bd0f53b63078
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: de4708bf7f9c7733762356d119cd4983206bb45f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286830"
 ---
 # <a name="additional-steps-to-export-system-generated-log-data"></a>导出系统生成日志数据所需的其他步骤
 

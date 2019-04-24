@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 理解并配置 DNS 解析，以获得更好的性能。
-ms.openlocfilehash: 9ccd5c477b4aeda8e7dcf482cc09c8a357f19f40
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 6f276bd1fd90b8dee76a0b0d350f256956ded412
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291127"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>第 2 步：配置每个办公室的本地 Internet 连接
 
