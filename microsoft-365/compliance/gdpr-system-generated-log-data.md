@@ -2,33 +2,33 @@
 title: GDPR - 导出系统生成日志数据所需的其他步骤
 description: Microsoft 技术指南 - 导出系统生成日志数据的其他步骤
 keywords: 导出日志数据, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 6cf1f6ae7c6b977c173f8e1e6c62bd0f53b63078
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: de4708bf7f9c7733762356d119cd4983206bb45f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286830"
 ---
-# <a name="additional-steps-to-export-system-generated-log-data"></a><span data-ttu-id="59703-104">导出系统生成日志数据所需的其他步骤</span><span class="sxs-lookup"><span data-stu-id="59703-104">Additional steps to export system-generated log data</span></span>
+# <a name="additional-steps-to-export-system-generated-log-data"></a><span data-ttu-id="985f9-104">导出系统生成日志数据所需的其他步骤</span><span class="sxs-lookup"><span data-stu-id="985f9-104">Additional steps to export system-generated log data</span></span>
 
-<span data-ttu-id="59703-p101">**Kaizala**&nbsp;&nbsp;&nbsp; 借助 Kaizala 管理门户，可以导出组织的产品和服务使用数据，然后使用 Excel 功能针对特定用户筛选该数据。有关详细说明，请参阅[在 Kaizala 中导出组织数据](https://support.office.com/article/export-user-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)。</span><span class="sxs-lookup"><span data-stu-id="59703-p101">**Kaizala**&nbsp;&nbsp;&nbsp;The Kaizala management portal lets you export an organization’s product and service usage data and then use Excel functionality to filter that data for a specific user. For detailed instructions, see [Exporting organizational data in Kaizala](https://support.office.com/article/export-user-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6).</span></span>
+<span data-ttu-id="985f9-p101">**Kaizala**&nbsp;&nbsp;&nbsp; 借助 Kaizala 管理门户，可以导出组织的产品和服务使用数据，然后使用 Excel 功能针对特定用户筛选该数据。有关详细说明，请参阅[在 Kaizala 中导出组织数据](https://support.office.com/article/export-user-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)。</span><span class="sxs-lookup"><span data-stu-id="985f9-p101">**Kaizala**&nbsp;&nbsp;&nbsp;The Kaizala management portal lets you export an organization’s product and service usage data and then use Excel functionality to filter that data for a specific user. For detailed instructions, see [Exporting organizational data in Kaizala](https://support.office.com/article/export-user-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6).</span></span>
 
-<span data-ttu-id="59703-p102">**Office 漫游服务**&nbsp;&nbsp;&nbsp; Office 漫游服务可以存储 Office 相关的设置（例如，Office 主题、自定义词典、语言设置、开发人员模式和自动更正）。有关如何导出此数据的说明，请参阅[从 Office 漫游服务导出数据](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-preview-ce9eb942-3589-42cb-88fd-1576ecb09c5c?storagetype=stage#o365datamoreinfo)。</span><span class="sxs-lookup"><span data-stu-id="59703-p102">**Office Roaming Service**&nbsp;&nbsp;&nbsp;Office Roaming is a service that stores Office-related settings, such as Office theme, custom dictionary, language settings, developer mode, and auto correct. For instructions on how to export this data, see [Exporting Data from Office Roaming Service](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-preview-ce9eb942-3589-42cb-88fd-1576ecb09c5c?storagetype=stage#o365datamoreinfo).</span></span> 
+<span data-ttu-id="985f9-p102">**Office 漫游服务**&nbsp;&nbsp;&nbsp; Office 漫游服务可以存储 Office 相关的设置（例如，Office 主题、自定义词典、语言设置、开发人员模式和自动更正）。有关如何导出此数据的说明，请参阅[从 Office 漫游服务导出数据](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-preview-ce9eb942-3589-42cb-88fd-1576ecb09c5c?storagetype=stage#o365datamoreinfo)。</span><span class="sxs-lookup"><span data-stu-id="985f9-p102">**Office Roaming Service**&nbsp;&nbsp;&nbsp;Office Roaming is a service that stores Office-related settings, such as Office theme, custom dictionary, language settings, developer mode, and auto correct. For instructions on how to export this data, see [Exporting Data from Office Roaming Service](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-preview-ce9eb942-3589-42cb-88fd-1576ecb09c5c?storagetype=stage#o365datamoreinfo).</span></span> 
  
-<span data-ttu-id="59703-p103">**工作区分析**&nbsp;&nbsp;&nbsp;数据日志导出工具为组织中有权生成工作区分析报告的用户提供使用情况数据。为提升性能，工作区分析还计算和存储派生自 Office 365 数据的匿名数据。若要向用户公开此匿名数据并需要帮助，请联系 [Microsoft 支持部门](https://support.microsoft.com/contactus/)。</span><span class="sxs-lookup"><span data-stu-id="59703-p103">**Workplace Analytics**&nbsp;&nbsp;&nbsp;The data log export tool provides usage data for those users in your organization who have permission to run Workplace Analytics reports. Workplace Analytics also computes and stores pseudonymized data derived from Office 365 data to improve performance. If you would like to make this pseudonymized data available to a user and need assistance, contact [Microsoft Support](https://support.microsoft.com/contactus/).</span></span>
+<span data-ttu-id="985f9-p103">**工作区分析**&nbsp;&nbsp;&nbsp;数据日志导出工具为组织中有权生成工作区分析报告的用户提供使用情况数据。为提升性能，工作区分析还计算和存储派生自 Office 365 数据的匿名数据。若要向用户公开此匿名数据并需要帮助，请联系 [Microsoft 支持部门](https://support.microsoft.com/contactus/)。</span><span class="sxs-lookup"><span data-stu-id="985f9-p103">**Workplace Analytics**&nbsp;&nbsp;&nbsp;The data log export tool provides usage data for those users in your organization who have permission to run Workplace Analytics reports. Workplace Analytics also computes and stores pseudonymized data derived from Office 365 data to improve performance. If you would like to make this pseudonymized data available to a user and need assistance, contact [Microsoft Support](https://support.microsoft.com/contactus/).</span></span>
 
-<span data-ttu-id="59703-p104">**Yammer**&nbsp;&nbsp;&nbsp; 借助 Yammer 管理中心，可以导出用户的帐户活动数据。在导出用户数据时，你将收到一封电子邮件，其中包含用户的帐户活动数据。可以选择将此信息提供给用户。有关详细说明，请参阅 [Yammer Enterprise：隐私](https://support.office.com/article/eae49f12-4661-4ba5-aa72-01248f0709bf)。</span><span class="sxs-lookup"><span data-stu-id="59703-p104">**Yammer**&nbsp;&nbsp;&nbsp;The Yammer admin center lets you export a user’s account activity data. When you export the user’s data, you will receive an email message containing the user’s account activity data. You can provide this information to the user if you choose. For detailed instructions, see [Yammer Enterprise: Privacy](https://support.office.com/article/eae49f12-4661-4ba5-aa72-01248f0709bf).</span></span>
+<span data-ttu-id="985f9-p104">**Yammer**&nbsp;&nbsp;&nbsp; 借助 Yammer 管理中心，可以导出用户的帐户活动数据。在导出用户数据时，你将收到一封电子邮件，其中包含用户的帐户活动数据。可以选择将此信息提供给用户。有关详细说明，请参阅 [Yammer Enterprise：隐私](https://support.office.com/article/eae49f12-4661-4ba5-aa72-01248f0709bf)。</span><span class="sxs-lookup"><span data-stu-id="985f9-p104">**Yammer**&nbsp;&nbsp;&nbsp;The Yammer admin center lets you export a user’s account activity data. When you export the user’s data, you will receive an email message containing the user’s account activity data. You can provide this information to the user if you choose. For detailed instructions, see [Yammer Enterprise: Privacy](https://support.office.com/article/eae49f12-4661-4ba5-aa72-01248f0709bf).</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="59703-116">了解更多</span><span class="sxs-lookup"><span data-stu-id="59703-116">Learn more</span></span>
-[<span data-ttu-id="59703-117">Microsoft 信任中心</span><span class="sxs-lookup"><span data-stu-id="59703-117">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+## <a name="learn-more"></a><span data-ttu-id="985f9-116">了解更多</span><span class="sxs-lookup"><span data-stu-id="985f9-116">Learn more</span></span>
+[<span data-ttu-id="985f9-117">Microsoft 信任中心</span><span class="sxs-lookup"><span data-stu-id="985f9-117">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 
 

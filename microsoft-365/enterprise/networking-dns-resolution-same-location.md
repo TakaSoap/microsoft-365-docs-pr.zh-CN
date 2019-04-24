@@ -9,40 +9,40 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 理解并配置 DNS 解析，以获得更好的性能。
-ms.openlocfilehash: 9ccd5c477b4aeda8e7dcf482cc09c8a357f19f40
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 6f276bd1fd90b8dee76a0b0d350f256956ded412
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291127"
 ---
-# <a name="step-2-configure-local-internet-connections-for-each-office"></a><span data-ttu-id="1fcf8-103">第 2 步：配置每个办公室的本地 Internet 连接</span><span class="sxs-lookup"><span data-stu-id="1fcf8-103">Step 2: Configure local Internet connections for each office</span></span>
+# <a name="step-2-configure-local-internet-connections-for-each-office"></a><span data-ttu-id="77178-103">第 2 步：配置每个办公室的本地 Internet 连接</span><span class="sxs-lookup"><span data-stu-id="77178-103">Step 2: Configure local Internet connections for each office</span></span>
 
-<span data-ttu-id="1fcf8-104">\*\* 此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本</span><span class="sxs-lookup"><span data-stu-id="1fcf8-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+<span data-ttu-id="77178-104">\*\* 此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本</span><span class="sxs-lookup"><span data-stu-id="77178-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-<span data-ttu-id="1fcf8-p101">在第 2 步中，确保每个办公室都具有本地 Internet 连接并使用本地 DNS 服务器。要求这两个元素均降低连接延迟，并确保本地客户端计算机与 Microsoft 365 基于云的服务的最近入口点建立连接。</span><span class="sxs-lookup"><span data-stu-id="1fcf8-p101">In Step 2, you ensure that each of your offices have local Internet connections and use local DNS servers. Both of these elements are required to reduce connection latency and ensure that on-premises client computers make connections to the nearest point of entry to Microsoft 365 cloud-based services.</span></span>
+<span data-ttu-id="77178-p101">在第 2 步中，确保每个办公室都具有本地 Internet 连接并使用本地 DNS 服务器。要求这两个元素均降低连接延迟，并确保本地客户端计算机与 Microsoft 365 基于云的服务的最近入口点建立连接。</span><span class="sxs-lookup"><span data-stu-id="77178-p101">In Step 2, you ensure that each of your offices have local Internet connections and use local DNS servers. Both of these elements are required to reduce connection latency and ensure that on-premises client computers make connections to the nearest point of entry to Microsoft 365 cloud-based services.</span></span>
 
-<span data-ttu-id="1fcf8-p102">在大型组织的传统网络中，Internet 流量通过网络主干网传输到中央 Internet 连接。这不适用于优化全局分布式软件即服务 (SaaS) 基础结构的性能，该基础结构包含 Microsoft 365 中的 Office 365 和企业移动性 + 安全性 (EMS) 产品。</span><span class="sxs-lookup"><span data-stu-id="1fcf8-p102">In traditional networks for large organizations, Internet traffic travels across the network backbone to a central Internet connection. This does not work well for optimizing performance to a globally distributed Software-as-a-Service (SaaS) infrastructure, which includes the Office 365 and Enterprise Mobility + Security (EMS) products in Microsoft 365.</span></span>
+<span data-ttu-id="77178-p102">在大型组织的传统网络中，Internet 流量通过网络主干网传输到中央 Internet 连接。这不适用于优化全局分布式软件即服务 (SaaS) 基础结构的性能，该基础结构包含 Microsoft 365 中的 Office 365 和企业移动性 + 安全性 (EMS) 产品。</span><span class="sxs-lookup"><span data-stu-id="77178-p102">In traditional networks for large organizations, Internet traffic travels across the network backbone to a central Internet connection. This does not work well for optimizing performance to a globally distributed Software-as-a-Service (SaaS) infrastructure, which includes the Office 365 and Enterprise Mobility + Security (EMS) products in Microsoft 365.</span></span>
 
-<span data-ttu-id="1fcf8-p103">Microsoft 全球网络包括适用于全球 Microsoft 365 的云服务集的前端服务器。为了获得最佳性能，本地客户端应访问地理位置最靠近它们的前端服务器，而不是通过网络主干网发送流量并将流量发送到最靠近组织中央 Internet 连接的前端服务器。</span><span class="sxs-lookup"><span data-stu-id="1fcf8-p103">The Microsoft Global Network includes front end servers to the set of cloud services for Microsoft 365 all over the world. For the best performance, on-premises clients should access a front-end server that is geographically closest to them, rather than sending the traffic over a network backbone and to the front-end server that is closest to the organization’s central Internet connection.</span></span>
+<span data-ttu-id="77178-p103">Microsoft 全球网络包括适用于全球 Microsoft 365 的云服务集的前端服务器。为了获得最佳性能，本地客户端应访问地理位置最靠近它们的前端服务器，而不是通过网络主干网发送流量并将流量发送到最靠近组织中央 Internet 连接的前端服务器。</span><span class="sxs-lookup"><span data-stu-id="77178-p103">The Microsoft Global Network includes front end servers to the set of cloud services for Microsoft 365 all over the world. For the best performance, on-premises clients should access a front-end server that is geographically closest to them, rather than sending the traffic over a network backbone and to the front-end server that is closest to the organization’s central Internet connection.</span></span>
 
-<span data-ttu-id="1fcf8-p104">为了将客户端请求定向到地理位置最近的前端服务器，Microsoft DNS 服务器使用与客户端初始连接请求相对应的 DNS 查询。因此，为了实现最低网络延迟：</span><span class="sxs-lookup"><span data-stu-id="1fcf8-p104">To direct a client request to the geographically nearest front-end server, Microsoft’s DNS servers use the DNS queries corresponding the client’s initial connection request. Therefore, for the lowest network latency:</span></span>
+<span data-ttu-id="77178-p104">为了将客户端请求定向到地理位置最近的前端服务器，Microsoft DNS 服务器使用与客户端初始连接请求相对应的 DNS 查询。因此，为了实现最低网络延迟：</span><span class="sxs-lookup"><span data-stu-id="77178-p104">To direct a client request to the geographically nearest front-end server, Microsoft’s DNS servers use the DNS queries corresponding the client’s initial connection request. Therefore, for the lowest network latency:</span></span>
 
-- <span data-ttu-id="1fcf8-113">组织的所有办公室都应具有本地 Internet 连接，以便[优化](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories)类别网络流量。</span><span class="sxs-lookup"><span data-stu-id="1fcf8-113">All offices of your organization should have local Internet connections for [Optimize](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories) category network traffic.</span></span>
-- <span data-ttu-id="1fcf8-114">每个本地 Internet 连接应使用地区本地 DNS 服务器来处理来自该位置的出站 Internet 流量。</span><span class="sxs-lookup"><span data-stu-id="1fcf8-114">Each local Internet connection should be using a regionally local DNS server for outbound Internet traffic from that location.</span></span>
+- <span data-ttu-id="77178-113">组织的所有办公室都应具有本地 Internet 连接，以便[优化](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories)类别网络流量。</span><span class="sxs-lookup"><span data-stu-id="77178-113">All offices of your organization should have local Internet connections for [Optimize](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories) category network traffic.</span></span>
+- <span data-ttu-id="77178-114">每个本地 Internet 连接应使用地区本地 DNS 服务器来处理来自该位置的出站 Internet 流量。</span><span class="sxs-lookup"><span data-stu-id="77178-114">Each local Internet connection should be using a regionally local DNS server for outbound Internet traffic from that location.</span></span>
 
-<span data-ttu-id="1fcf8-115">有关详细信息，请参阅[本地出口网络连接](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally)。</span><span class="sxs-lookup"><span data-stu-id="1fcf8-115">For more information, see [Egress network connections locally](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally).</span></span> 
+<span data-ttu-id="77178-115">有关详细信息，请参阅[本地出口网络连接](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally)。</span><span class="sxs-lookup"><span data-stu-id="77178-115">For more information, see [Egress network connections locally](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally).</span></span> 
 
-<span data-ttu-id="1fcf8-116">作为临时检查点，可查看这一步的[退出条件](networking-exit-criteria.md#crit-networking-step2)。</span><span class="sxs-lookup"><span data-stu-id="1fcf8-116">As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step2) for this step.</span></span>
+<span data-ttu-id="77178-116">作为临时检查点，可查看这一步的[退出条件](networking-exit-criteria.md#crit-networking-step2)。</span><span class="sxs-lookup"><span data-stu-id="77178-116">As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step2) for this step.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="1fcf8-117">后续步骤</span><span class="sxs-lookup"><span data-stu-id="1fcf8-117">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="77178-117">后续步骤</span><span class="sxs-lookup"><span data-stu-id="77178-117">Next step</span></span>
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[<span data-ttu-id="1fcf8-118">避免网络回流</span><span class="sxs-lookup"><span data-stu-id="1fcf8-118">Avoid network hairpins</span></span>](networking-avoid-network-hairpins.md)|
+|![](./media/stepnumbers/Step3.png)|[<span data-ttu-id="77178-118">避免网络回流</span><span class="sxs-lookup"><span data-stu-id="77178-118">Avoid network hairpins</span></span>](networking-avoid-network-hairpins.md)|

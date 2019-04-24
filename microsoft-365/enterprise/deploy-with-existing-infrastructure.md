@@ -9,59 +9,59 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 如果你具有现有基础结构，请逐步完成 Microsoft 365 企业版部署的退出条件。
-ms.openlocfilehash: 6ade8282e72d18dac78f08ce386dbdf102184ebe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 7087094bc52196b2002e3b9c657335cc92af51cb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289621"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a><span data-ttu-id="28f37-103">使用现有基础结构部署 Microsoft 365 企业版</span><span class="sxs-lookup"><span data-stu-id="28f37-103">Deployment of Microsoft 365 Enterprise with existing infrastructure</span></span>
+# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a><span data-ttu-id="75595-103">使用现有基础结构部署 Microsoft 365 企业版</span><span class="sxs-lookup"><span data-stu-id="75595-103">Deployment of Microsoft 365 Enterprise with existing infrastructure</span></span>
 
-<span data-ttu-id="28f37-p101">许多组织都有现有网络、身份和其他组件或 Microsoft 本地产品和基于云的服务。本文将逐步介绍部署 Microsoft 365 企业版的各个阶段，可让你快速确定如何调整或更改现有基础结构。</span><span class="sxs-lookup"><span data-stu-id="28f37-p101">Many organizations have exisiting networking, identity, and other components or Microsoft on-premises products and cloud-based services. This article steps through each phase of the deployment of Microsoft 365 Enterprise so you can quickly determine how to adapt or change your existing infrastructure.</span></span>
+<span data-ttu-id="75595-p101">许多组织都有现有网络、身份和其他组件或 Microsoft 本地产品和基于云的服务。本文将逐步介绍部署 Microsoft 365 企业版的各个阶段，可让你快速确定如何调整或更改现有基础结构。</span><span class="sxs-lookup"><span data-stu-id="75595-p101">Many organizations have exisiting networking, identity, and other components or Microsoft on-premises products and cloud-based services. This article steps through each phase of the deployment of Microsoft 365 Enterprise so you can quickly determine how to adapt or change your existing infrastructure.</span></span>
 
-<span data-ttu-id="28f37-p102">在退出每个阶段之前，必须检查其退出条件，这是一组必须满足的必需条件和要考虑的可选条件。每个阶段的退出条件可确保本地和云基础结构以及生成的端到端配置满足对 Microsoft 365 企业版部署的要求。</span><span class="sxs-lookup"><span data-stu-id="28f37-p102">Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meets the requirements for a Microsoft 365 Enterprise deployment.</span></span>
+<span data-ttu-id="75595-p102">在退出每个阶段之前，必须检查其退出条件，这是一组必须满足的必需条件和要考虑的可选条件。每个阶段的退出条件可确保本地和云基础结构以及生成的端到端配置满足对 Microsoft 365 企业版部署的要求。</span><span class="sxs-lookup"><span data-stu-id="75595-p102">Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meets the requirements for a Microsoft 365 Enterprise deployment.</span></span>
 
 > [!Note] 
-> <span data-ttu-id="28f37-p103">FastTrack 的优势在于持续且可重复（可用作订阅的一部分），由 Microsoft 工程师提供以帮助你按自己的节奏移动到云。此外，FastTrack 还可使你根据需要访问合格的合作伙伴以获取其他服务。目前为止，40,000 多个客户已启用此功能，FastTrack 可帮助最大化 ROI、加快部署，提高整个组织的采用率。请参阅[适用于 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。</span><span class="sxs-lookup"><span data-stu-id="28f37-p103">FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).</span></span>
+> <span data-ttu-id="75595-p103">FastTrack 的优势在于持续且可重复（可用作订阅的一部分），由 Microsoft 工程师提供以帮助你按自己的节奏移动到云。此外，FastTrack 还可使你根据需要访问合格的合作伙伴以获取其他服务。目前为止，40,000 多个客户已启用此功能，FastTrack 可帮助最大化 ROI、加快部署，提高整个组织的采用率。请参阅[适用于 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。</span><span class="sxs-lookup"><span data-stu-id="75595-p103">FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).</span></span>
 
-## <a name="exit-criteria-for-networking-phase-1"></a><span data-ttu-id="28f37-112">网络退出条件（阶段 1）</span><span class="sxs-lookup"><span data-stu-id="28f37-112">Exit criteria for networking (phase 1)</span></span>
+## <a name="exit-criteria-for-networking-phase-1"></a><span data-ttu-id="75595-112">网络退出条件（阶段 1）</span><span class="sxs-lookup"><span data-stu-id="75595-112">Exit criteria for networking (phase 1)</span></span>
 
-<span data-ttu-id="28f37-113">逐个符合网络基础结构的以下必需条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="28f37-113">Step through the following required and optional conditions for the networking infrastructure.</span></span>
+<span data-ttu-id="75595-113">逐个符合网络基础结构的以下必需条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="75595-113">Step through the following required and optional conditions for the networking infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for networking](./includes/deployment-exit-criteria-networking.md)]
 
-## <a name="exit-criteria-for-identity-phase-2"></a><span data-ttu-id="28f37-114">身份退出条件（阶段 2）</span><span class="sxs-lookup"><span data-stu-id="28f37-114">Exit criteria for identity (phase 2)</span></span>
+## <a name="exit-criteria-for-identity-phase-2"></a><span data-ttu-id="75595-114">身份退出条件（阶段 2）</span><span class="sxs-lookup"><span data-stu-id="75595-114">Exit criteria for identity (phase 2)</span></span>
 
-<span data-ttu-id="28f37-115">逐个符合标识基础结构的以下必需条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="28f37-115">Step through the following required and optional conditions for the identity infrastructure.</span></span>
+<span data-ttu-id="75595-115">逐个符合标识基础结构的以下必需条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="75595-115">Step through the following required and optional conditions for the identity infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-identity.md)]
 
-## <a name="exit-criteria-for-windows-10-enterprise-phase-3"></a><span data-ttu-id="28f37-116">Windows 10 企业版退出条件（阶段 3）</span><span class="sxs-lookup"><span data-stu-id="28f37-116">Exit criteria for Windows 10 Enterprise (phase 3)</span></span>
+## <a name="exit-criteria-for-windows-10-enterprise-phase-3"></a><span data-ttu-id="75595-116">Windows 10 企业版退出条件（阶段 3）</span><span class="sxs-lookup"><span data-stu-id="75595-116">Exit criteria for Windows 10 Enterprise (phase 3)</span></span>
 
-<span data-ttu-id="28f37-117">逐个符合 Windows 10 企业版基础结构的以下必需条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="28f37-117">Step through the following required and optional conditions for the Windows 10 Enterprise infrastructure.</span></span>
+<span data-ttu-id="75595-117">逐个符合 Windows 10 企业版基础结构的以下必需条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="75595-117">Step through the following required and optional conditions for the Windows 10 Enterprise infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## <a name="exit-criteria-for-office-365-proplus-phase-4"></a><span data-ttu-id="28f37-118">Office 365 专业增强版退出条件（阶段 4）</span><span class="sxs-lookup"><span data-stu-id="28f37-118">Exit criteria for Office 365 ProPlus (phase 4)</span></span>
+## <a name="exit-criteria-for-office-365-proplus-phase-4"></a><span data-ttu-id="75595-118">Office 365 专业增强版退出条件（阶段 4）</span><span class="sxs-lookup"><span data-stu-id="75595-118">Exit criteria for Office 365 ProPlus (phase 4)</span></span>
 
-<span data-ttu-id="28f37-119">符合为 Microsoft 365 企业版评估、计划部署和部署 Office 365 专业增强版基础结构的要求。</span><span class="sxs-lookup"><span data-stu-id="28f37-119">Meet the requirements for assessment, deployment planning, and deployment of the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.</span></span>
+<span data-ttu-id="75595-119">符合为 Microsoft 365 企业版评估、计划部署和部署 Office 365 专业增强版基础结构的要求。</span><span class="sxs-lookup"><span data-stu-id="75595-119">Meet the requirements for assessment, deployment planning, and deployment of the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.</span></span>
 
 [!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
 
-## <a name="exit-criteria-for-mobile-device-management-phase-5"></a><span data-ttu-id="28f37-120">移动设备管理的退出条件（阶段 5）</span><span class="sxs-lookup"><span data-stu-id="28f37-120">Exit criteria for mobile device management (phase 5)</span></span>
+## <a name="exit-criteria-for-mobile-device-management-phase-5"></a><span data-ttu-id="75595-120">移动设备管理的退出条件（阶段 5）</span><span class="sxs-lookup"><span data-stu-id="75595-120">Exit criteria for mobile device management (phase 5)</span></span>
 
-<span data-ttu-id="28f37-121">符合以下对移动设备管理基础结构的要求。</span><span class="sxs-lookup"><span data-stu-id="28f37-121">Meet the following requirements for the mobile device management infrastructure.</span></span>
+<span data-ttu-id="75595-121">符合以下对移动设备管理基础结构的要求。</span><span class="sxs-lookup"><span data-stu-id="75595-121">Meet the following requirements for the mobile device management infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for mobile device management](./includes/deployment-exit-criteria-mobility.md)]
 
-## <a name="exit-criteria-for-information-protection-phase-6"></a><span data-ttu-id="28f37-122">信息保护的退出条件（阶段 6）</span><span class="sxs-lookup"><span data-stu-id="28f37-122">Exit criteria for information protection (phase 6)</span></span>
+## <a name="exit-criteria-for-information-protection-phase-6"></a><span data-ttu-id="75595-122">信息保护的退出条件（阶段 6）</span><span class="sxs-lookup"><span data-stu-id="75595-122">Exit criteria for information protection (phase 6)</span></span>
 
-<span data-ttu-id="28f37-123">逐个符合信息保护基础结构的以下必需条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="28f37-123">Step through the following required and optional conditions for the information protection infrastructure.</span></span>
+<span data-ttu-id="75595-123">逐个符合信息保护基础结构的以下必需条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="75595-123">Step through the following required and optional conditions for the information protection infrastructure.</span></span>
 
 [!INCLUDE [Deployment exit criteria for information protection](./includes/deployment-exit-criteria-infoprotect.md)]
 

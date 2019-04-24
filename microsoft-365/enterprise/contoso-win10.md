@@ -9,96 +9,96 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 System Center Configuration Manager 来部署 Windows 10 企业版的就地升级。
-ms.openlocfilehash: a4b24d55951c83875b9aa08db05fa4f8591472d6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5f8335b8769daf28b55769fc64fed6607b69eb3
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289163"
 ---
-# <a name="windows-10-enterprise-deployment-for-contoso"></a><span data-ttu-id="fcfd6-103">Contoso Windows 10 企业版部署</span><span class="sxs-lookup"><span data-stu-id="fcfd6-103">Windows 10 Enterprise deployment for Contoso</span></span>
+# <a name="windows-10-enterprise-deployment-for-contoso"></a><span data-ttu-id="90549-103">Contoso Windows 10 企业版部署</span><span class="sxs-lookup"><span data-stu-id="90549-103">Windows 10 Enterprise deployment for Contoso</span></span>
 
-<span data-ttu-id="fcfd6-104">**摘要：** 了解 Contoso 如何使用 System Center Configuration Manager 来部署 Windows 10 企业版的就地升级。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-104">**Summary:** Understand how Contoso used System Center Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.</span></span>
+<span data-ttu-id="90549-104">**摘要：** 了解 Contoso 如何使用 System Center Configuration Manager 来部署 Windows 10 企业版的就地升级。</span><span class="sxs-lookup"><span data-stu-id="90549-104">**Summary:** Understand how Contoso used System Center Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.</span></span>
 
-<span data-ttu-id="fcfd6-p101">在广泛推出 Microsoft 365 企业版之前，Contoso 的 Windows 兼容电脑和设备混合运行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要将其电脑升级为 Windows 10 企业版，以利用自动部署更新中改进的安全性并减少 IT 开销。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-p101">Prior to the wide rollout of Microsoft 365 Enterprise, Contoso had Windows-compatible PCs and devices running a mixture of Windows 7 (10%), Windows 8.1 (65%), and Windows 10 (25%). Contoso wanted to upgrade their PCs for Windows 10 Enterprise take advantage of improved security and lowered IT overhead from automated deployments of updates.</span></span> 
+<span data-ttu-id="90549-p101">在广泛推出 Microsoft 365 企业版之前，Contoso 的 Windows 兼容电脑和设备混合运行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要将其电脑升级为 Windows 10 企业版，以利用自动部署更新中改进的安全性并减少 IT 开销。</span><span class="sxs-lookup"><span data-stu-id="90549-p101">Prior to the wide rollout of Microsoft 365 Enterprise, Contoso had Windows-compatible PCs and devices running a mixture of Windows 7 (10%), Windows 8.1 (65%), and Windows 10 (25%). Contoso wanted to upgrade their PCs for Windows 10 Enterprise take advantage of improved security and lowered IT overhead from automated deployments of updates.</span></span> 
 
-<span data-ttu-id="fcfd6-107">在评估其基础结构和业务需求之后，Contoso 确定了这些部署的关键要求：</span><span class="sxs-lookup"><span data-stu-id="fcfd6-107">After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:</span></span>
+<span data-ttu-id="90549-107">在评估其基础结构和业务需求之后，Contoso 确定了这些部署的关键要求：</span><span class="sxs-lookup"><span data-stu-id="90549-107">After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:</span></span>
 
-- <span data-ttu-id="fcfd6-108">应有尽可能多的电脑和设备运行 Windows 10 企业版</span><span class="sxs-lookup"><span data-stu-id="fcfd6-108">As many PCs and devices as possible should run Windows 10 Enterprise</span></span>
-- <span data-ttu-id="fcfd6-109">就地升级的推广利用现有 System Center Configuration Manager 基础结构</span><span class="sxs-lookup"><span data-stu-id="fcfd6-109">Rollout of the in-place upgrades leverages existing System Center Configuration Manager infrastructure</span></span>
-- <span data-ttu-id="fcfd6-110">控制哪些版本的 Windows 10 企业版的部署和更新是通过环来完成的</span><span class="sxs-lookup"><span data-stu-id="fcfd6-110">Control over which versions of Windows 10 Enterprise to deploy and updates are done through rings</span></span>
-- <span data-ttu-id="fcfd6-111">电脑和设备应保持最新的更新、使用最低的 IT 管理成本，并尽量减少对最终用户带来的影响</span><span class="sxs-lookup"><span data-stu-id="fcfd6-111">PCs and devices should stay up to date with minimal IT administrative costs and with minimal impact to end-users</span></span>
+- <span data-ttu-id="90549-108">应有尽可能多的电脑和设备运行 Windows 10 企业版</span><span class="sxs-lookup"><span data-stu-id="90549-108">As many PCs and devices as possible should run Windows 10 Enterprise</span></span>
+- <span data-ttu-id="90549-109">就地升级的推广利用现有 System Center Configuration Manager 基础结构</span><span class="sxs-lookup"><span data-stu-id="90549-109">Rollout of the in-place upgrades leverages existing System Center Configuration Manager infrastructure</span></span>
+- <span data-ttu-id="90549-110">控制哪些版本的 Windows 10 企业版的部署和更新是通过环来完成的</span><span class="sxs-lookup"><span data-stu-id="90549-110">Control over which versions of Windows 10 Enterprise to deploy and updates are done through rings</span></span>
+- <span data-ttu-id="90549-111">电脑和设备应保持最新的更新、使用最低的 IT 管理成本，并尽量减少对最终用户带来的影响</span><span class="sxs-lookup"><span data-stu-id="90549-111">PCs and devices should stay up to date with minimal IT administrative costs and with minimal impact to end-users</span></span>
 
-<span data-ttu-id="fcfd6-112">最新更新定义为满足 Contoso 业务需求的受支持的 Windows 10 企业版，这可能不同于使所有 Windows 兼容的电脑运行最新版本的 Windows 10 企业版。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-112">Up to date is defined as the supported version of Windows 10 Enterprise that meets Contoso’s business needs, which can be different from having all Windows-compatible PCs running the latest version of Windows 10 Enterprise.</span></span>
+<span data-ttu-id="90549-112">最新更新定义为满足 Contoso 业务需求的受支持的 Windows 10 企业版，这可能不同于使所有 Windows 兼容的电脑运行最新版本的 Windows 10 企业版。</span><span class="sxs-lookup"><span data-stu-id="90549-112">Up to date is defined as the supported version of Windows 10 Enterprise that meets Contoso’s business needs, which can be different from having all Windows-compatible PCs running the latest version of Windows 10 Enterprise.</span></span>
 
-## <a name="deployment-tools"></a><span data-ttu-id="fcfd6-113">部署工具</span><span class="sxs-lookup"><span data-stu-id="fcfd6-113">Deployment tools</span></span>
+## <a name="deployment-tools"></a><span data-ttu-id="90549-113">部署工具</span><span class="sxs-lookup"><span data-stu-id="90549-113">Deployment tools</span></span>
 
-<span data-ttu-id="fcfd6-114">在 Windows 10 企业版就地升级之前和升级期间，Contoso 使用下列 Windows Analytics 解决方案：</span><span class="sxs-lookup"><span data-stu-id="fcfd6-114">Prior to and during in-place upgrades of Windows 10 Enterprise, Contoso used the following solutions of Windows Analytics:</span></span>
+<span data-ttu-id="90549-114">在 Windows 10 企业版就地升级之前和升级期间，Contoso 使用下列 Windows Analytics 解决方案：</span><span class="sxs-lookup"><span data-stu-id="90549-114">Prior to and during in-place upgrades of Windows 10 Enterprise, Contoso used the following solutions of Windows Analytics:</span></span>
 
-- <span data-ttu-id="fcfd6-115">升级就绪情况</span><span class="sxs-lookup"><span data-stu-id="fcfd6-115">Upgrade Readiness</span></span>  
+- <span data-ttu-id="90549-115">升级就绪情况</span><span class="sxs-lookup"><span data-stu-id="90549-115">Upgrade Readiness</span></span>  
 
-  <span data-ttu-id="fcfd6-116">收集系统、应用程序和驱动程序数据进行分析，然后识别可能阻止升级的兼容性问题，并建议修复 Microsoft 已知问题。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-116">Collects system, application, and driver data for analysis, and then identifies compatibility issues that can block an upgrade and suggested fixes the issues are known to Microsoft.</span></span>
+  <span data-ttu-id="90549-116">收集系统、应用程序和驱动程序数据进行分析，然后识别可能阻止升级的兼容性问题，并建议修复 Microsoft 已知问题。</span><span class="sxs-lookup"><span data-stu-id="90549-116">Collects system, application, and driver data for analysis, and then identifies compatibility issues that can block an upgrade and suggested fixes the issues are known to Microsoft.</span></span>
 
-- <span data-ttu-id="fcfd6-117">更新合规性</span><span class="sxs-lookup"><span data-stu-id="fcfd6-117">Update Compliance</span></span>  
+- <span data-ttu-id="90549-117">更新合规性</span><span class="sxs-lookup"><span data-stu-id="90549-117">Update Compliance</span></span>  
 
-  <span data-ttu-id="fcfd6-118">收集系统和诊断数据，包括更新安装进度、适用于企业的 Windows 更新 (WUfB) 配置数据、Windows Defender 防病毒数据和其他特定于更新的信息，然后将此数据存储在云分析和使用情况中。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-118">Collects system and diagnostics data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then stores this data in the cloud analysis and usage.</span></span>
+  <span data-ttu-id="90549-118">收集系统和诊断数据，包括更新安装进度、适用于企业的 Windows 更新 (WUfB) 配置数据、Windows Defender 防病毒数据和其他特定于更新的信息，然后将此数据存储在云分析和使用情况中。</span><span class="sxs-lookup"><span data-stu-id="90549-118">Collects system and diagnostics data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then stores this data in the cloud analysis and usage.</span></span>
 
-- <span data-ttu-id="fcfd6-119">设备运行状况</span><span class="sxs-lookup"><span data-stu-id="fcfd6-119">Device Health</span></span>  
+- <span data-ttu-id="90549-119">设备运行状况</span><span class="sxs-lookup"><span data-stu-id="90549-119">Device Health</span></span>  
 
-  <span data-ttu-id="fcfd6-120">收集 Windows 10 系统和诊断数据，包括更新安装进度、适用于企业的 Windows 更新 (WUfB) 配置数据、Windows Defender 防病毒数据和其他特定于更新的信息，然后将此数据存储在云分析和使用情况中。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-120">Collects Windows 10 system and diagnostic data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then stores this data in the cloud analysis and usage.</span></span>
+  <span data-ttu-id="90549-120">收集 Windows 10 系统和诊断数据，包括更新安装进度、适用于企业的 Windows 更新 (WUfB) 配置数据、Windows Defender 防病毒数据和其他特定于更新的信息，然后将此数据存储在云分析和使用情况中。</span><span class="sxs-lookup"><span data-stu-id="90549-120">Collects Windows 10 system and diagnostic data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then stores this data in the cloud analysis and usage.</span></span>
  
-<span data-ttu-id="fcfd6-p102">Contoso 具有一个现有的 System Center Configuration Manager (Current Branch) 基础结构。Configuration Manager 针对大型环境进行缩放，并在安装、更新和设置过程中提供广泛的控制。它还具有内置功能，能够更为轻松和高效地部署和管理 Windows 10 企业版。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-p102">Contoso has an existing System Center Configuration Manager (Current Branch) infrastructure. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Windows 10 Enterprise.</span></span>
+<span data-ttu-id="90549-p102">Contoso 具有一个现有的 System Center Configuration Manager (Current Branch) 基础结构。Configuration Manager 针对大型环境进行缩放，并在安装、更新和设置过程中提供广泛的控制。它还具有内置功能，能够更为轻松和高效地部署和管理 Windows 10 企业版。</span><span class="sxs-lookup"><span data-stu-id="90549-p102">Contoso has an existing System Center Configuration Manager (Current Branch) infrastructure. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Windows 10 Enterprise.</span></span>
 
-## <a name="planning-process"></a><span data-ttu-id="fcfd6-124">规划过程</span><span class="sxs-lookup"><span data-stu-id="fcfd6-124">Planning process</span></span>
+## <a name="planning-process"></a><span data-ttu-id="90549-124">规划过程</span><span class="sxs-lookup"><span data-stu-id="90549-124">Planning process</span></span>
 
-<span data-ttu-id="fcfd6-125">在部署之前，Contoso 定义以下环：</span><span class="sxs-lookup"><span data-stu-id="fcfd6-125">Prior to deployment, Contoso defined the following rings:</span></span>
+<span data-ttu-id="90549-125">在部署之前，Contoso 定义以下环：</span><span class="sxs-lookup"><span data-stu-id="90549-125">Prior to deployment, Contoso defined the following rings:</span></span>
 
-- <span data-ttu-id="fcfd6-126">进行验证和部署暂存的三个环</span><span class="sxs-lookup"><span data-stu-id="fcfd6-126">Three rings for validation and deployment staging</span></span> 
-  - <span data-ttu-id="fcfd6-127">一个用于预览版本</span><span class="sxs-lookup"><span data-stu-id="fcfd6-127">One for preview builds</span></span> 
-  - <span data-ttu-id="fcfd6-128">一个用于新发布版本</span><span class="sxs-lookup"><span data-stu-id="fcfd6-128">One for new release builds</span></span>
-  - <span data-ttu-id="fcfd6-129">一个用于以前的版本</span><span class="sxs-lookup"><span data-stu-id="fcfd6-129">One for a previous build</span></span> 
-- <span data-ttu-id="fcfd6-130">一个环基于验证环中的数据，用于广泛部署 Windows 10 企业版</span><span class="sxs-lookup"><span data-stu-id="fcfd6-130">One ring for broad deployment of Windows 10 Enterprise based on data from the validation rings</span></span>
+- <span data-ttu-id="90549-126">进行验证和部署暂存的三个环</span><span class="sxs-lookup"><span data-stu-id="90549-126">Three rings for validation and deployment staging</span></span> 
+  - <span data-ttu-id="90549-127">一个用于预览版本</span><span class="sxs-lookup"><span data-stu-id="90549-127">One for preview builds</span></span> 
+  - <span data-ttu-id="90549-128">一个用于新发布版本</span><span class="sxs-lookup"><span data-stu-id="90549-128">One for new release builds</span></span>
+  - <span data-ttu-id="90549-129">一个用于以前的版本</span><span class="sxs-lookup"><span data-stu-id="90549-129">One for a previous build</span></span> 
+- <span data-ttu-id="90549-130">一个环基于验证环中的数据，用于广泛部署 Windows 10 企业版</span><span class="sxs-lookup"><span data-stu-id="90549-130">One ring for broad deployment of Windows 10 Enterprise based on data from the validation rings</span></span>
 
-<span data-ttu-id="fcfd6-131">此外，Contoso 还使用 Windows Analytics 的升级就绪情况解决方案来确定安装的应用集及其与 Windows 10 企业版的兼容性。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-131">Contoso also used the Upgrade Readiness solution of Windows Analytics to determine the set of installed apps and their compatibility with Windows 10 Enterprise.</span></span>
+<span data-ttu-id="90549-131">此外，Contoso 还使用 Windows Analytics 的升级就绪情况解决方案来确定安装的应用集及其与 Windows 10 企业版的兼容性。</span><span class="sxs-lookup"><span data-stu-id="90549-131">Contoso also used the Upgrade Readiness solution of Windows Analytics to determine the set of installed apps and their compatibility with Windows 10 Enterprise.</span></span>
 
-## <a name="deployment-process"></a><span data-ttu-id="fcfd6-132">部署过程</span><span class="sxs-lookup"><span data-stu-id="fcfd6-132">Deployment process</span></span>
+## <a name="deployment-process"></a><span data-ttu-id="90549-132">部署过程</span><span class="sxs-lookup"><span data-stu-id="90549-132">Deployment process</span></span>
 
-<span data-ttu-id="fcfd6-133">若要完成 Windows 10 企业版的就地升级部署，Contoso 实施了以下过程，其中包括来自 Microsoft 的最佳做法建议：</span><span class="sxs-lookup"><span data-stu-id="fcfd6-133">To complete the in-place upgrade deployment of Windows 10 Enterprise, Contoso implemented the following process, which includes best practice recommendations from Microsoft:</span></span>
+<span data-ttu-id="90549-133">若要完成 Windows 10 企业版的就地升级部署，Contoso 实施了以下过程，其中包括来自 Microsoft 的最佳做法建议：</span><span class="sxs-lookup"><span data-stu-id="90549-133">To complete the in-place upgrade deployment of Windows 10 Enterprise, Contoso implemented the following process, which includes best practice recommendations from Microsoft:</span></span>
 
-1. <span data-ttu-id="fcfd6-134">为 Configuration Manager 启用对等缓存。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-134">Enabled peer cache for Configuration Manager.</span></span>
-2. <span data-ttu-id="fcfd6-135">基于来自批量许可服务中心的图像创建自定义 Windows 程序包。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-135">Created customized Windows packages based on images from the Volume Licensing Service Center.</span></span>
-3. <span data-ttu-id="fcfd6-136">Configuration Manager 用于跨网络向分发点部署 Windows 包，并向三个验证和部署暂存环部署内部版本。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-136">Used Configuration Manager to deploy the Windows packages to distribution points across their network and deployed builds to the three validation and deployment staging rings.</span></span>
-4. <span data-ttu-id="fcfd6-137">使用 Windows Analytics 的设备运行状况和更新合规性解决方案，为三个验证和部署暂存环中的电脑和设备执行成功评估。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-137">Performed assessment of success for PCs and devices in the three validation and deployment staging rings using the Device Health and Update Compliance solutions of Windows Analytics.</span></span>
-5. <span data-ttu-id="fcfd6-138">基于 Windows Analytics 信息，Contoso 已确定 Windows 10 企业版将部署到广泛部署环的版本。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-138">Based on the Windows Analytics information, Contoso determined the version of Windows 10 Enterprise to deploy to the broad deployment ring.</span></span>
-6. <span data-ttu-id="fcfd6-139">运行 Configuration Manager 部署任务序列，将选定的 Windows 包部署到广泛部署环中。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-139">Ran the Configuration Manager deployment task sequences to deploy the selected Windows package to the broad deployment ring.</span></span>
-7. <span data-ttu-id="fcfd6-140">使用由 Windows Analytics 提供的用于解决问题的设备运行状况和更新合规性解决方案监视广泛部署环中的电脑和设备。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-140">Monitored PCs and devices in the broad deployment ring using the Device Health and Update Compliance solutions provided by Windows Analytics to address issues.</span></span>
+1. <span data-ttu-id="90549-134">为 Configuration Manager 启用对等缓存。</span><span class="sxs-lookup"><span data-stu-id="90549-134">Enabled peer cache for Configuration Manager.</span></span>
+2. <span data-ttu-id="90549-135">基于来自批量许可服务中心的图像创建自定义 Windows 程序包。</span><span class="sxs-lookup"><span data-stu-id="90549-135">Created customized Windows packages based on images from the Volume Licensing Service Center.</span></span>
+3. <span data-ttu-id="90549-136">Configuration Manager 用于跨网络向分发点部署 Windows 包，并向三个验证和部署暂存环部署内部版本。</span><span class="sxs-lookup"><span data-stu-id="90549-136">Used Configuration Manager to deploy the Windows packages to distribution points across their network and deployed builds to the three validation and deployment staging rings.</span></span>
+4. <span data-ttu-id="90549-137">使用 Windows Analytics 的设备运行状况和更新合规性解决方案，为三个验证和部署暂存环中的电脑和设备执行成功评估。</span><span class="sxs-lookup"><span data-stu-id="90549-137">Performed assessment of success for PCs and devices in the three validation and deployment staging rings using the Device Health and Update Compliance solutions of Windows Analytics.</span></span>
+5. <span data-ttu-id="90549-138">基于 Windows Analytics 信息，Contoso 已确定 Windows 10 企业版将部署到广泛部署环的版本。</span><span class="sxs-lookup"><span data-stu-id="90549-138">Based on the Windows Analytics information, Contoso determined the version of Windows 10 Enterprise to deploy to the broad deployment ring.</span></span>
+6. <span data-ttu-id="90549-139">运行 Configuration Manager 部署任务序列，将选定的 Windows 包部署到广泛部署环中。</span><span class="sxs-lookup"><span data-stu-id="90549-139">Ran the Configuration Manager deployment task sequences to deploy the selected Windows package to the broad deployment ring.</span></span>
+7. <span data-ttu-id="90549-140">使用由 Windows Analytics 提供的用于解决问题的设备运行状况和更新合规性解决方案监视广泛部署环中的电脑和设备。</span><span class="sxs-lookup"><span data-stu-id="90549-140">Monitored PCs and devices in the broad deployment ring using the Device Health and Update Compliance solutions provided by Windows Analytics to address issues.</span></span>
 
-<span data-ttu-id="fcfd6-141">图 1 显示就地升级和持续更新部署体系结构。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-141">Figure 1 shows the in-place upgrade and ongoing updates deployment architecture.</span></span>
+<span data-ttu-id="90549-141">图 1 显示就地升级和持续更新部署体系结构。</span><span class="sxs-lookup"><span data-stu-id="90549-141">Figure 1 shows the in-place upgrade and ongoing updates deployment architecture.</span></span>
 
 ![](./media/contoso-win10/contoso-win10-fig1.png)
  
-<span data-ttu-id="fcfd6-142">**图 1：Contoso 的 Windows 10 企业版部署基础结构**</span><span class="sxs-lookup"><span data-stu-id="fcfd6-142">**Figure 1: Contoso’s Windows 10 Enterprise deployment infrastructure**</span></span>
+<span data-ttu-id="90549-142">**图 1：Contoso 的 Windows 10 企业版部署基础结构**</span><span class="sxs-lookup"><span data-stu-id="90549-142">**Figure 1: Contoso’s Windows 10 Enterprise deployment infrastructure**</span></span>
 
-<span data-ttu-id="fcfd6-143">此基础结构的组成部分：</span><span class="sxs-lookup"><span data-stu-id="fcfd6-143">This infrastructure consists of:</span></span>
+<span data-ttu-id="90549-143">此基础结构的组成部分：</span><span class="sxs-lookup"><span data-stu-id="90549-143">This infrastructure consists of:</span></span>
 
-- <span data-ttu-id="fcfd6-144">System Center Configuration Manager：</span><span class="sxs-lookup"><span data-stu-id="fcfd6-144">System Center Configuration Manager, which:</span></span>
-  - <span data-ttu-id="fcfd6-145">从 Microsoft 网络的 Microsoft 批量许可中心获取 Windows 10 企业版包的图像。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-145">Obtains images for Windows 10 Enterprise packages from the Microsoft Volume Licensing Center in the Microsoft Network.</span></span>
-  - <span data-ttu-id="fcfd6-146">是用于部署包的集中管理点。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-146">Is the central administration point for deployment packages.</span></span>
-- <span data-ttu-id="fcfd6-147">通常位于 Contoso 分支办事处的区域分发点。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-147">Regional distribution points that are typically located in Contoso’s satellite offices.</span></span>
-- <span data-ttu-id="fcfd6-148">不同位置的 Windows 电脑和设备接收和安装部署包，用于就地升级或基于环成员的持续更新。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-148">Windows PCs and devices in various locations that receive and install the deployment packages for the in-place upgrade or ongoing updates based on ring membership.</span></span>
+- <span data-ttu-id="90549-144">System Center Configuration Manager：</span><span class="sxs-lookup"><span data-stu-id="90549-144">System Center Configuration Manager, which:</span></span>
+  - <span data-ttu-id="90549-145">从 Microsoft 网络的 Microsoft 批量许可中心获取 Windows 10 企业版包的图像。</span><span class="sxs-lookup"><span data-stu-id="90549-145">Obtains images for Windows 10 Enterprise packages from the Microsoft Volume Licensing Center in the Microsoft Network.</span></span>
+  - <span data-ttu-id="90549-146">是用于部署包的集中管理点。</span><span class="sxs-lookup"><span data-stu-id="90549-146">Is the central administration point for deployment packages.</span></span>
+- <span data-ttu-id="90549-147">通常位于 Contoso 分支办事处的区域分发点。</span><span class="sxs-lookup"><span data-stu-id="90549-147">Regional distribution points that are typically located in Contoso’s satellite offices.</span></span>
+- <span data-ttu-id="90549-148">不同位置的 Windows 电脑和设备接收和安装部署包，用于就地升级或基于环成员的持续更新。</span><span class="sxs-lookup"><span data-stu-id="90549-148">Windows PCs and devices in various locations that receive and install the deployment packages for the in-place upgrade or ongoing updates based on ring membership.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="fcfd6-149">后续步骤</span><span class="sxs-lookup"><span data-stu-id="fcfd6-149">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="90549-149">后续步骤</span><span class="sxs-lookup"><span data-stu-id="90549-149">Next step</span></span>
 
-<span data-ttu-id="fcfd6-150">[了解](contoso-o365pp.md) Contoso 如何利用其 System Center Configuration Manager 基础结构在组织中部署 Office 365 专业增强版并使之保持最新。</span><span class="sxs-lookup"><span data-stu-id="fcfd6-150">[Learn](contoso-o365pp.md) how Contoso is leveraging its System Center Configuration Manager infrastructure to deploy and keep current Office 365 ProPlus across its organization.</span></span> 
+<span data-ttu-id="90549-150">[了解](contoso-o365pp.md) Contoso 如何利用其 System Center Configuration Manager 基础结构在组织中部署 Office 365 专业增强版并使之保持最新。</span><span class="sxs-lookup"><span data-stu-id="90549-150">[Learn](contoso-o365pp.md) how Contoso is leveraging its System Center Configuration Manager infrastructure to deploy and keep current Office 365 ProPlus across its organization.</span></span> 
 
-## <a name="see-also"></a><span data-ttu-id="fcfd6-151">另请参阅</span><span class="sxs-lookup"><span data-stu-id="fcfd6-151">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="90549-151">另请参阅</span><span class="sxs-lookup"><span data-stu-id="90549-151">See also</span></span>
 
-[<span data-ttu-id="fcfd6-152">Microsoft 365 企业版的 Windows 10 企业版</span><span class="sxs-lookup"><span data-stu-id="fcfd6-152">Windows 10 Enterprise for Microsoft 365 Enterprise</span></span>](windows10-infrastructure.md)
+[<span data-ttu-id="90549-152">Microsoft 365 企业版的 Windows 10 企业版</span><span class="sxs-lookup"><span data-stu-id="90549-152">Windows 10 Enterprise for Microsoft 365 Enterprise</span></span>](windows10-infrastructure.md)
 
-[<span data-ttu-id="fcfd6-153">部署指南</span><span class="sxs-lookup"><span data-stu-id="fcfd6-153">Deployment guide</span></span>](deploy-microsoft-365-enterprise.md)
+[<span data-ttu-id="90549-153">部署指南</span><span class="sxs-lookup"><span data-stu-id="90549-153">Deployment guide</span></span>](deploy-microsoft-365-enterprise.md)
 
-[<span data-ttu-id="fcfd6-154">测试实验室指南</span><span class="sxs-lookup"><span data-stu-id="fcfd6-154">Test lab guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="90549-154">测试实验室指南</span><span class="sxs-lookup"><span data-stu-id="90549-154">Test lab guides</span></span>](m365-enterprise-test-lab-guides.md)
