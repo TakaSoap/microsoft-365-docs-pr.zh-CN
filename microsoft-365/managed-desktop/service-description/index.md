@@ -1,22 +1,26 @@
 ---
 title: Microsoft 托管桌面服务说明
-description: Microsoft 托管桌面服务描述包括作为服务的设备和 IT 作为服务
-keywords: Microsoft 托管桌面，Microsoft 365 服务文档
+description: Microsoft 托管桌面服务说明包括作为服务的设备, 并将其作为服务
+keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: f17b07acb1ff6beaa0125f6faa4894fe6565214c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.date: 02/06/2019
+ms.openlocfilehash: abce237a7e9608d50c79f8676033a1362fd9931e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283434"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 托管桌面服务说明
-Microsoft 托管桌面服务包括*作为服务的设备*和*IT 作为服务*。 
+Microsoft 托管桌面包括以下服务: 
 
-## <a name="in-this-section"></a>In this section
-
-- [设备即服务](daas.md)
-- [IT 即服务](itaas.md)
+- [程序设备](device-list.md)
+- [设备服务](device-services.md)
+- [设备配置](device-policies.md)
+- [安全](security.md)
+- [更新](updates.md)
+- [支持](support.md)
+- [操作和监视](operations-and-monitoring.md)
+- [应用程序要求](mmd-app-requirements.md)

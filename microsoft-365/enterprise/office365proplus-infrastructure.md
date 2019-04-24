@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: 3f6630d4c120609cbb1737ad96644d43eb2fda3c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290933"
 ---
 # <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 
@@ -62,7 +62,7 @@ Office 365 专业增强版为 Microsoft 365 企业版提供这些战略业务方
 
 评估环境后，按照[规划 Office 365 专业增强版部署](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus)中的指导来创建部署计划。此计划可包括以下决策： 
 
-- 如何部署 Office，包括要使用哪种工具（如 System Center Configuration Manger 或 Office 部署工具 [ODT]），以及从何处安装 Office
+- 如何部署 Office，包括要使用哪种工具（如 System Center Configuration Manager 或 Office 部署工具 [ODT]），以及从何处安装 Office
 - 如何管理 Office 更新
 - 使用哪个更新通道（Office 更新通道将控制用户接收其 Office 应用程序功能更新的频率）
 - 要使用的 Office 安装程序包和部署组，包括应对什么样的用户安装哪些 Office 应用程序和语言
@@ -89,7 +89,6 @@ Office 365 专业增强版为 Microsoft 365 企业版提供这些战略业务方
 
 通过下面这些资源，了解 Microsoft 专家如何计划并在 Microsoft 365 企业版中部署了 Office 365 专业增强版：
 
-- [为组织准备 Office 365 专业增强版 2016 无缝部署](https://www.microsoft.com/itshowcase/Office365adoption)
 - [部署和更新 Microsoft Office 365 专业增强版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [自动化和更新通道有助于部署 Microsoft Office 365 专业增强版](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus)（视频）
 

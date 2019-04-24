@@ -6,6 +6,9 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 localization_priority: Normal
 ms.custom:
 - Core_O365Admin_Migration
@@ -16,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: 了解如何使用 Windows 自动执行某些操作设置为您的业务的新 Windows 10 设备。
-ms.openlocfilehash: 56225424125e9eed9f46867837c564aa5d1c4adc
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解如何使用 Windows AutoPilot 为你的企业设置新的 Windows 10 设备。
+ms.openlocfilehash: e0802ddcc0964d0b8d102f7dbdb9116b33cdcf58
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277062"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 

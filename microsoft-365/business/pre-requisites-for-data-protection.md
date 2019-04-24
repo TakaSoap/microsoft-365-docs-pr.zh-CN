@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +16,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: '了解用于设置您的组织与 Microsoft 365 企业版先决条件。 '
-ms.openlocfilehash: caca6564d6706acd48538a2d33143ed27ed3bd25
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: '了解使用 Microsoft 365 业务设置组织的先决条件。 '
+ms.openlocfilehash: 4789e72c3e6d1c7877b236279947f1a1b64d046f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278128"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>通过 Microsoft 365 Business 保护设备上的数据的先决条件
 
@@ -29,7 +30,7 @@ ms.locfileid: "26865394"
   
 ## <a name="pre-requisites"></a>先决条件
 
-- Windows 7 Professional、 Windows 8 专业人员，或 Windows 8.1 专业人员，必须运行 Windows 设备。
+- windows 设备必须运行 windows 7 专业版、windows 8 专业版或 windows 8.1 pro。
     
     [将 Windows 设备升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)
     

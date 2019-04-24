@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: '了解如何使用 Microsoft 365 企业版对执行出厂重置 Windows 10 设备。 '
-ms.openlocfilehash: ed745ea792f755ada17b3b327032246dab16d94b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: '了解如何使用 Microsoft 365 商业版恢复 Windows 10 设备的出厂设置。 '
+ms.openlocfilehash: 8340bd6a24f3b4d875f6482c03a69275a9a48f33
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283715"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>将 Windows 10 设备重置为其出厂设置
 
@@ -29,11 +32,9 @@ ms.locfileid: "26865932"
   
 1. 使用全局管理员凭据登录[管理中心](https://aka.ms/bcsportal)。 
     
-2. 在管理中心内的" **设备操作**"卡中，选择" **恢复出厂设置**"。
-    
-    ![On the Device actions card, choose Factory reset](media/7caddd12-207e-4c99-b61c-0495fc5f55e3.png)
-  
-3. 在" **恢复出厂设置** "窗格中，勾选要从中删除数据的设备旁边的复选框，然后点击" **选择**"。
+2. 在管理中心的左侧导航中, 选择 "**设备** \> **管理**"。
+
+3. 在 "**管理**" 页上, 选中要从中删除数据的设备旁边的复选框, 然后在 "**管理**" 下拉框中选择 "**恢复**"。
     
 4. 在" **确定将以下设备恢复为出厂设置**"窗格中，选择" **确认**"\>" **关闭**"。
     

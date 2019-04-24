@@ -7,11 +7,11 @@ author: trudyha
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 5ccb240460958d5978f4fd19e08652123790784e
-ms.sourcegitcommit: 2211f57c268754d242d6331c188143f818f5a9f4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282518"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>将应用程序部署到 Microsoft 托管桌面设备
 Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并将其部署到用户设备。 在使用 Microsoft 托管桌面门户后, 可以添加和部署应用。 

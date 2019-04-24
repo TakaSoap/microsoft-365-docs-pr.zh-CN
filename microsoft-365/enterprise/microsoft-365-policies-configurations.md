@@ -1,6 +1,6 @@
 ---
 title: 标识和设备访问配置-Microsoft 365 企业版
-description: 介绍 Microsoft 建议和部署安全电子邮件、 文档、 和应用程序策略和配置的核心概念。
+description: 介绍了用于部署安全电子邮件、文档和应用策略和配置的 Microsoft 建议和核心概念。
 author: brendacarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
@@ -11,135 +11,138 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: ea03143c7c42952ab6963d38ae44e79822d0b90a
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection:
+- M365-identity-device-management
+- M365-security-compliance
+ms.openlocfilehash: 9751d1e224d2fb4b879a5dbc37cb368af2152987
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291346"
 ---
 # <a name="identity-and-device-access-configurations"></a>身份识别与设备访问配置
 
-本系列文章介绍如何通过实施建议的环境和配置，包括一规定的条件的访问策略配置安全地访问通过企业移动 + 安全产品的云服务和相关的功能。本指南可用于保护访问集成在一起 Azure Active Directory，包括 Office 365 服务，其他 SaaS 服务和内部部署应用程序与 Azure AD 应用程序代理发布的所有服务。 
+本系列文章介绍了如何配置通过企业移动性 + 安全产品对云服务的安全访问, 具体方法是实施建议的环境和配置, 包括一组规定的条件访问策略和相关功能。 您可以使用本指南来保护与 azure Active Directory 集成的所有服务 (包括 Office 365 服务、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序) 的访问权限。 
 
-这些建议符合 Microsoft 安全分数以及[标识得分 Azure AD 中](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score)，并将提高您的组织这些分数。这些建议还将帮助您实现这些[保护标识基础结构的五个步骤](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps)。 
+这些建议与 Microsoft 安全分数以及[Azure AD 中的标识分数](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score)相一致, 并将增加组织的这些分数。 这些建议还将帮助您实施以下[五个步骤来保护您的身份基础结构](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps)。 
 
-Microsoft 知道一些组织具有唯一的环境的要求的复杂性。如果您是这些组织之一，使用这些建议作为起点。但是，大多数组织可以实现这些建议的规定。 
+Microsoft 知道, 某些组织有独特的环境要求或复杂性。 如果你是这些组织之一, 请使用这些建议作为起点。 但是, 大多数组织都可以按规定实现这些建议。 
 
 ## <a name="intended-audience"></a>目标受众
 
-这些建议适用于企业架构师和熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)和[Microsoft 企业移动 + 安全](http://microsoft.com/ems)、 及其他，包括 Azure Active Directory （标识） Microsoft 的 IT 专业人员Intune （设备管理）、 和 Azure 信息保护 （数据保护）。
+这些建议适用于熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)和[microsoft 企业移动性 + 安全性](http://microsoft.com/ems)的企业架构师和 IT 专业人员, 其中包括其他、Azure Active Directory (identity)、microsoftIntune (设备管理) 和 Azure 信息保护 (数据保护)。
 
 ### <a name="customer-environment"></a>客户环境
 
-建议的策略所适用于企业组织操作系统完全内部 Microsoft 云和客户与混合基础结构 （部署在本地和 Microsoft 云）。
+建议的策略适用于完全在 Microsoft 云中运行的企业组织, 以及适用于具有混合基础结构的客户 (部署在本地和 Microsoft 云上)。
 
-提供建议的许多依赖于服务可仅通过企业移动多个安全 (EMS) E5 许可证。建议假定完整 EMS E5 许可证功能。
+提供的许多建议依赖于仅适用于企业移动性 + 安全性 (EMS) E5 许可证的服务。 提供的建议采用完整 EMS E5 许可证功能。
 
-对于这些组织没有企业移动多个安全 E5 许可证，Microsoft 建议您至少实现附带的所有计划的 Azure AD 基线保护功能。Azure AD 库中，可以在文章中，[什么是比较基准保护](/azure/active-directory/active-directory-conditional-access-baseline-protection)，找到详细信息。
+对于没有企业移动性 + 安全 E5 许可证的组织, Microsoft 建议您至少实现所有计划附带的 Azure AD 基准保护功能。 有关详细信息, 请参阅 Azure AD 库中的 "[比较基准保护](/azure/active-directory/active-directory-conditional-access-baseline-protection)" 一文。
 
-### <a name="caveats"></a>注意事项
+### <a name="caveats"></a>几点
 
-您的组织可能受法规或其他合规性要求，包括可能需要应用偏离以下建议的配置的策略的特定建议。这些配置建议过去尚未提供的使用率控件。我们建议这些控件，因为我们认为它们表示安全性和工作效率之间的平衡。  
+您的组织可能需要遵守管理法规或其他合规性要求, 包括可能要求您应用从这些建议配置中分离的策略的特定建议。 这些配置推荐以前没有提供的使用情况控件。 推荐这些控件的原因是我们认为这些控件可实现安全性与生产力之间的平衡。  
 
-我们已完成我们最佳以体现多种组织保护要求，但我们不能向所有可能要求或组织的所有唯一方面的帐户。
+我们已尽最大努力满足各种组织保护要求, 但我们无法满足所有可能的要求, 也无法考虑组织的所有独特方面。
 
 ## <a name="three-tiers-of-protection"></a>三层保护
 
 大多数组织都具有安全性和数据保护方面的特定要求。 这些要求因行业部门和组织内的工作职能而异。 例如，法律部门和 Office 365 管理员可能要求对其电子邮件通信进行额外的安全和信息保护控制，而其他业务部门用户不要求这样做。 
 
-每个行业还具有自己的专用法规集。而不是提供所有可能的安全选项或建议的列表每个行业段或作业函数已提供三个不同级别的安全性的建议以及可以应用的保护根据您的需求的粒度.
+每个行业也有自己独特的一组规定。 我们提供了三种不同的安全性和保护层的建议, 而不是提供所有可能的安全选项的列表, 也可以根据您需求的粒度来应用这些功能。.
 
-- **比较基准保护**： 我们建议您建立用于保护数据，以及标识和访问您的数据的设备的最小标准。您可以按照这些基线建议，以便为强默认保护符合许多组织的需求。
-- **敏感保护**： 某些客户有必须受保护的数据的子集较高的级别，或者他们可能需要在高级别保护的所有数据。您可以将增加的保护应用于所有或特定的数据设置 Office 365 环境中。我们建议保护标识和访问具有相当级别的安全性的敏感数据的设备。  
-- **高度管控**： 某些组织可能具有少量的数据的高度分类、 consititutes 交易机密，或者是监管的数据。Microsoft 提供的功能，帮助组织满足这些要求，包括用于标识和设备的新增了的保护。
+- **基准保护**: 我们建议您建立用于保护数据的最低标准, 以及访问您的数据的标识和设备。 您可以遵循这些基准建议, 以提供满足许多组织需求的强默认保护。
+- **敏感保护**: 某些客户具有必须在更高级别进行保护的数据子集, 或者可能需要在更高级别保护所有数据。 可对 Office 365 环境中的所有或特定数据集应用增强的保护。 建议以与安全性相当的级别保护访问敏感数据的标识和设备。  
+- **高度管控**: 某些组织可能具有少量的数据, 这些数据高度保密、consititutes 商业秘密或受管制数据。 Microsoft 提供多种功能，帮助组织满足相关要求，包括为标识和设备添加保护。
 
-![安全圆锥图-所有客户 > 某些客户 > 特定客户。对特定应用程序广泛的应用程序](../images/M365-idquality-threetiers.png)
+![安全圆锥-所有客户 > 一些客户 > 特定客户。 适用于特定应用程序的广泛应用程序](../images/M365-idquality-threetiers.png)
 
-本指南演示如何实现保护标识和设备的每一层的保护。使用本指南作为起点为您的组织，然后调整的策略，以满足您组织的特定要求。
+本指南向您介绍如何针对每种级别的保护对标识和设备实施保护。 使用此指南作为组织的起点, 并调整策略以满足组织的特定要求。
 
-请务必在您的数据、 身份和设备使用一致的保护级别。例如，如果实现了本指南，请务必保护您的数据在相当级别中的一种。这些体系结构模型显示哪些功能是相当。
+请务必在数据、标识和设备间使用一致的保护级别。 例如, 如果您实施了本指南, 请务必保护您的数据处于可比较的级别。 这些体系结构模型显示了可比较的功能。
 
 **Office 365 的标识和设备保护**<br/>
-![海报"标识和设备 protection for Office 365"的缩略图](../images/O365_Identity_device_protection_thumb.png)<br/>
+![海报 "适用于 Office 365 的标识和设备保护" 的缩略图](../images/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **Office 365 中的文件保护解决方案**<br/>
-!["Office 365 中的文件保护解决方案"海报的缩略图](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
+![海报 "Office 365 中的文件保护解决方案" 的缩略图](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>安全性和生产力权衡
 
-实现任何安全策略需要权衡之间安全性和工作效率。非常有用评估每个决定将如何影响的安全、 功能和易于使用的平衡。
+实现任何安全策略都需要权衡安全性和生产率。 评估每个决策对安全性、功能和易用性的影响情况进行评估是有帮助的。
 
-![安全三平衡安全、 功能和易用性。](media/policies-configurations/security-triad.png)
+![安全 triad 平衡安全性、功能和易用性。](media/policies-configurations/security-triad.png)
 
-提供的建议基于以下原则：
+提供的建议基于以下原则:
 
-- 了解您的访问群体，并且是灵活其安全性和功能要求。
-- 只需在时间内应用的安全策略，并确保才有意义。
+- 了解你的受众并灵活满足其安全性和功能要求。
+- 及时应用安全策略并确保它有意义。
 
-## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>服务和标识和设备访问保护的概念
+## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>标识和设备访问保护的服务和概念
 
-Microsoft 365 企业版专为大型组织和安全地集成了 Office 365 企业版，Windows 10 企业和企业移动 + 安全 (EMS)，以使所有人都是创意和结合使用。
+Microsoft 365 企业版专为大型组织而设计, 并集成了 Office 365 企业版、Windows 10 企业版和企业移动性 + 安全性 (EMS), 使每个人都能进行创造性和安全地协同工作。
 
-本节提供 Microsoft 365 服务和标识和设备访问的重要的功能的概述。
+本节概述了对标识和设备访问非常重要的 Microsoft 365 服务和功能。
 
 ### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
 
-Azure AD 提供了一整套标识管理功能。有关保护访问我们建议使用以下功能：
+Azure AD 提供一套完整的标识管理功能。 为了确保访问安全, 我们建议使用以下功能:
 
-- **[自助服务密码重置 (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: 允许用户重置其密码安全地和帮助台干预，没有通过验证的管理员可以控制的多种身份验证方法。
+- **[自助密码重置 (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: 允许您的用户通过验证管理员可以控制的多种身份验证方法, 安全地重置其密码, 而不需要提供帮助程序干预。
 
-- **[多重身份验证 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)**: MFA 要求用户提供两种形式的验证，例如用户密码以及来自 Microsoft Authenticator 应用程序或电话呼叫的通知。MFA 大大降低风险窃取的标识可用于访问 Office 365 环境。
+- **[多重身份验证 (mfa)](/azure/active-directory/authentication/concept-mfa-howitworks)**: mfa 要求用户提供两种形式的验证, 如用户密码以及来自 Microsoft 验证器应用或电话呼叫的通知。 MFA 极大地降低了可用于访问 Office 365 环境的被盗标识的风险。
 
-- **[条件的访问](/azure/active-directory/conditional-access/overview)**： Azure AD 用户登录的条件的计算结果，并使用创建允许访问的条件的访问策略。例如，在本指南介绍您如何创建一个条件访问策略来设备合规性要求对敏感数据的访问。这大大降低风险与已被盗标识黑客可以访问您的敏感数据。它还可以保护敏感数据在设备上，，因为设备满足特定的运行状况和安全要求。
+- **[条件访问](/azure/active-directory/conditional-access/overview)**: Azure AD 评估用户登录的条件, 并使用您创建的条件访问策略来允许访问。 例如, 在本指南中, 我们将向您介绍如何创建条件访问策略, 以要求访问敏感数据的设备合规性。 这极大地降低了具有盗窃标识的黑客可以访问您的敏感数据的风险。 它还保护了设备上的敏感数据, 因为这些设备会满足运行状况和安全性的特定要求。
 
-- **[Azure AD 组](/azure/active-directory/fundamentals/active-directory-manage-groups)**： 条件访问规则，使用 Intune，设备管理对文件和组织中的网站的偶数权限依赖分配给用户和/或 Azure AD 组。我们建议您创建 Azure AD 组对应的要实现的保护级别。例如，您的主管人员是黑客更高的可能值目标。因此，它有意义这些员工分配给 Azure AD 的组并将此组分配给条件访问策略和强制实施更高级别的保护用于访问其他策略。
+- **[Azure ad 组](/azure/active-directory/fundamentals/active-directory-manage-groups)**: 条件访问规则、具有 Intune 的设备管理, 甚至对组织中的文件和网站的权限, 依赖于用户和/或 Azure AD 组的分配。 我们建议您创建与您实施的保护级别相对应的 Azure AD 组。 例如, 您的执行人员可能更高的黑客的价值目标。 因此, 将这些员工分配到 Azure AD 组并将该组分配给条件访问策略和其他强制实施更高级别的保护的策略是有意义的。
 
-- **[设备注册](/azure/active-directory/devices/overview)**： 到 Azure AD 以提供与设备的标识注册设备。此标识用于一个用户登录时，设备进行身份验证以及应用需要加入域的或法规要求 Pc 的条件访问规则。对于本指南中，我们可以使用设备注册自动注册加入域的 Windows 计算机。设备注册是用于管理设备 Intune 的先决条件。 
+- **[设备注册](/azure/active-directory/devices/overview)**: 将设备注册到 Azure AD 以向设备提供标识。 此标识用于在用户登录时对设备进行身份验证, 并应用需要加入域或合规的电脑的条件访问规则。 在本指南中, 我们使用设备注册自动注册加入域的 Windows 计算机。 设备注册是使用 Intune 管理设备的先决条件。 
 
-- **[Azure AD 身份防护](/azure/active-directory/identity-protection/overview)**： Azure AD 身份保护可用于检测潜在安全漏洞影响组织的标识和配置自动的修正策略低、 中型和高登录助手风险和用户风险。本指南依赖于此风险评估应用的多因素身份验证的条件的访问策略。本指南还包括一个条件访问策略要求用户在其帐户检测到高风险活动时更改其密码。
+- **[azure ad identity protection](/azure/active-directory/identity-protection/overview)**: azure ad 标识保护使您能够检测到影响组织的身份的潜在漏洞, 并将自动修正策略配置为低、中和高的登录风险和用户风险。 本指南依赖此风险评估来应用多因素身份验证的条件访问策略。 本指南还包括一个条件访问策略, 该策略要求用户在为其帐户检测到高风险活动时更改其密码。
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Intune](https://docs.microsoft.com/intune/introduction-intune)是 Microsoft 的基于云的移动设备管理服务。本指南建议的 Windows Intune Pc 设备管理和建议设备合规性策略配置。Intune 确定设备是否符合并将该数据发送到 Azure AD 应用条件访问策略时使用。
+[Intune](https://docs.microsoft.com/intune/introduction-intune)是 Microsoft 基于云的移动设备管理服务。 本指南推荐使用 Intune 的 Windows 电脑的设备管理, 并建议设备合规性策略配置。 Intune 确定设备是否合规, 并将此数据发送到 Azure AD, 以便在应用条件访问策略时使用。
 
-#### <a name="intune-app-protection"></a>Intune 应用程序保护
+#### <a name="intune-app-protection"></a>Intune 应用保护
 
-[Intune 应用程序保护](https://docs.microsoft.com/intune/app-protection-policy)策略可用于保护组织的移动应用程序，使用或不注册到管理的设备中的数据。Intune 有助于保护 Office 365 的信息，并确保您的员工仍可提高生产效率，并防止数据丢失。通过实施应用程序级别的策略，您可以限制访问公司资源，并保持您的 IT 部门的控件内的数据。
+[Intune 应用保护](https://docs.microsoft.com/intune/app-protection-policy)策略可用于保护你的组织在移动应用中的数据, 包括或不将设备注册到管理中。 Intune 可帮助保护 Office 365 信息, 确保您的员工仍能提高工作效率, 并防止数据丢失。 通过实施应用程序级别的策略, 可以限制对公司资源的访问并将数据保留在 IT 部门的控制范围内。
 
-本指南演示如何创建以强制使用已批准应用程序并确定如何这些应用程序可用于您的业务数据的建议的策略。
+本指南向您介绍如何创建建议的策略来强制使用已批准的应用程序, 并确定这些应用程序如何与您的业务数据结合使用。
 
 ### <a name="office-365"></a>Office 365
 
-本指南演示如何实现一组策略来保护到 Office 365，包括 Exchange Online、 SharePoint Online 和 OneDrive for Business 的访问。除了实施这些策略，我们建议您也会引发的 Office 365 租户使用这些资源的保护级别：
+本指南介绍如何实现一组用于保护对 Office 365 (包括 Exchange online、SharePoint online 和 OneDrive for business) 的访问权限的策略。 除了实施这些策略之外, 我们还建议您使用以下资源提高 Office 365 租户的保护级别:
 
-- [配置 Office 365 租户为了提高安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)： 这些建议适用于基准安全，而其 for Office 365 租户。
-- [Office 365 安全路线图： Top 优先级的前 30 天，90 天及其他认证实战](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)： 这些建议包括日志记录、 数据管理、 管理员访问权限和威胁保护。
-- [保护 SharePoint Online 网站和文件](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)： 这组文章介绍如何保护文件和比较基准，敏感和高度机密 protection 适当级别的网站。
+- [配置 office 365 租户以提高安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): 这些建议适用于 Office 365 租户的基准安全性。
+- [Office 365 安全路线图: 前30天、90天及以上的主要优先级](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): 这些建议包括日志记录、数据管理、管理员访问和威胁防护。
+- [保护 SharePoint Online 网站和文件](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files): 此系列文章介绍了如何在适当的级别保护文件和网站, 以实现基准、敏感和高度机密保护。
 
 ### <a name="windows-10-and-office-365-proplus"></a>Windows 10 和 Office 365 专业增强版
 
-Windows 10 和 Office 365 ProPlus 是 Pc 的推荐客户端环境。我们建议 Windows 10，如 Azure 旨在为内部部署和 Azure AD 提供可能使体验。Windows 10 还包括可以通过 Intune 的高级的安全功能。Office 365 ProPlus 包含的最新版本的 Office 应用程序。这些条件访问使用都更安全的现代身份验证和要求。这些应用程序还包括增强的安全性和遵从性工具。
+Windows 10 和 Office 365 专业增强版是电脑的推荐客户端环境。 建议 Windows 10, 因为 Azure 旨在提供内部部署和 Azure AD 的最平滑体验。 Windows 10 还包含可通过 Intune 管理的高级安全功能。 office 365 专业增强版包括 office 应用程序的最新版本。 这些身份验证使用新式验证, 这是更安全和有条件访问的要求。 这些应用程序还包括增强的安全性和合规性工具。
 
-## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>跨三个层的保护应用这些功能
+## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>在三层保护中应用这些功能
 
-下表总结了我们的保护三个层之间使用这些功能的建议。
+下表总结了在三层保护中使用这些功能的建议。
 
 |保护机制|Baseline|敏感|高度管控|
 |:-------------------|:-------|:--------|:---------------|
 |强制执行 MFA|针对中级或以上登录风险|针对低级或以上登录风险|针对所有新会话|
-|**强制实施密码更改**|高风险的用户|高风险的用户|高风险的用户|
+|**强制更改密码**|对于高风险用户|对于高风险用户|对于高风险用户|
 |**强制实施 Intune 应用程序保护**|是|是|是|
-|**强制实施 Intune 注册 (COD)**|需要符合或加入域的 PC，但允许 BYOD 电话平板电脑|需要符合或加入域的设备|需要符合或加入域的设备|
+|**强制 Intune 注册 (货至付款)**|需要兼容或加入域的电脑, 但允许 BYOD 电话/平板电脑|需要兼容或加入域的设备|需要兼容或加入域的设备|
 
 ## <a name="device-ownership"></a>设备所有权
 
-上表反映许多组织支持的企业拥有设备，以及个人或使-您拥有设备 (BYODs)，以实现移动生产力跨人力资源混合的趋势。Intune 应用程序保护策略确保电子邮件抵御 Outlook 移动应用程序和移动其他 Office 的应用程序中使用，企业拥有设备和 BYODs 超出 exfiltrating。  
+上面的表反映了许多组织支持公司拥有的设备的混合以及个人或附带的设备 (BYODs), 以便在整个工作中实现移动工作效率的趋势。 Intune 应用保护策略可确保电子邮件在企业拥有的设备和 BYODs 上的 exfiltrating 不会受到 Outlook 移动应用和其他 Office 移动应用的保护。  
 
-我们建议企业拥有设备由 Intune 或加入域的应用其他保护和控制。数据敏感度，根据您的组织可以选择不允许 BYODs 特定用户或特定应用程序。
+我们建议由 Intune 或加入域来管理企业拥有的设备, 以应用更多的保护和控制。 根据数据敏感度的不同, 您的组织可能会选择不允许对特定用户群体或特定应用的 BYODs。
 
 ## <a name="next-steps"></a>后续步骤
 
-[必备工时实现标识和设备访问策略](identity-access-prerequisites.md)
+[实现标识和设备访问策略的先决条件工作](identity-access-prerequisites.md)

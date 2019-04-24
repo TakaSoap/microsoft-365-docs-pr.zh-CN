@@ -4,11 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4StolenDevice
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: 了解可用于保护工作文件，如果用户的设备丢失或被盗的设置。
-ms.openlocfilehash: 4fafae2dfd25e44dce7083307b3432bcaa25c22b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解在用户设备丢失或被盗时可用于保护工作文件的设置。
+ms.openlocfilehash: 1256f54b2ff626ea7b85d91020e355c8b611a8c0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285342"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>在移动设备丢失或被盗时保护工作文件
 
@@ -36,7 +39,7 @@ ms.locfileid: "26865906"
   
 |||
 |:-----|:-----|
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备的未使用天数达到指定天数，则自动删除该设备上存储的任何工作文件。  <br/> |
 |强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为" **打开**"，则工作文件的唯一可用保存位置是 OneDrive for Business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。即使设备丢失或被盗，也没有人能够读取公司的数据。  <br/> |

@@ -3,106 +3,108 @@ title: 用于 Microsoft 365 企业版测试环境的 Privileged Access Managemen
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 09/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+- M365-security-compliance
 ms.custom: Ent_TLGs
-description: 使用此测试实验室指南启用特权的访问管理 Microsoft 365 企业版测试环境。
-ms.openlocfilehash: 5f1a416a12171504af110ec62b9a7882143263e6
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的特权访问管理。
+ms.openlocfilehash: 9cac4f941ba3eb45bfc2bf79075ba22515a589b9
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290767"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 Privileged Access Management
 
-本文中的说明，您配置访问权限的管理，以提高 Microsoft 365 企业版测试环境中的安全性。
+使用本文中的说明, 可以配置特权访问管理以提高 Microsoft 365 企业版测试环境中的安全性。
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第 1 阶段： 构建 Microsoft 365 企业版测试环境
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
-如果您只想要配置的最低硬件要求与轻型方式访问权限的管理，按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明。
+如果只想使用最低要求以轻型方式配置特权访问管理, 请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
   
-如果您想要配置模拟企业中的访问权限的管理，请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明。
+如果要在模拟的企业中配置特权访问管理, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试访问权限的管理不需要模拟的企业测试环境，其中包括连接到 Internet 模拟的 intranet 和 Windows Server AD 林目录同步。此处提供了作为一个选项，以便可以测试特权访问管理和代表典型组织的环境中试验它。 
+> 测试特权访问管理不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供它作为选项, 以便您可以测试特权访问管理并在代表典型组织的环境中进行试验。 
 
-## <a name="phase-2-configure-privileged-access-management"></a>第 2 阶段： 配置访问权限的管理
+## <a name="phase-2-configure-privileged-access-management"></a>阶段 2: 配置特权访问管理
 
-在此阶段中，可以配置审批者组和 Microsoft 365 企业版测试环境中启用访问权限的管理。有关其他详细信息和概述特权访问管理，请参阅[Office 365 中的访问权限的管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)。
+在此阶段中, 您将为 Microsoft 365 企业版测试环境配置 "审批者" 组并启用 "特权访问管理"。 有关其他详细信息和权限访问管理的概述, 请参阅[Office 365 中的 "特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)"。
 
-请按照下列步骤设置和使用 Office 365 组织中的访问权限：
+按照以下步骤设置和使用 Office 365 组织中的特权访问:
 
-- [步骤 1： 创建审批者组](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
+- [步骤 1: 创建审批者的组](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
 
-    在开始使用最小特权 access 之前，决定谁将具有审批授权的传入请求访问提升特权的任务。审批者的组的一部分的任何用户都将能够批准访问请求。这被启用的 Office 365 中创建启用邮件的安全组。创建新的安全组测试环境中名为"特权访问审批者"，并添加"User 3" 以前在早期测试实验室指南步骤中创建。
+    在开始使用权限访问之前, 请确定谁将拥有对已提升和特权任务的传入请求的审批权限。 作为审批者组的一部分的任何用户都将能够批准访问请求。 这是通过在 Office 365 中创建启用邮件的安全组来启用的。 在测试环境中创建一个名为 "特权访问审批者" 的新安全组, 并添加先前在之前的测试实验室指南步骤中创建的 "用户 3"。
 
-- [步骤 2： 启用访问权限](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
+- [步骤 2: 启用特权访问](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
 
-    需要显式打开 Office 365 中使用的默认审批者组和包括要排除的访问权限的管理访问控制从系统帐户的一组访问权限。请务必启用您在开始本指南的第 3 阶段之前的 Office 365 组织中的授权访问权限。
+    需要在 Office 365 中显式打开具有默认审批者组的特权访问权限, 并包含要从特权访问管理访问控制中排除的一组系统帐户。 在开始本指南的第3阶段之前, 请务必在 Office 365 组织中启用特权访问。
 
-## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>第 3 阶段： 验证进行审批的提升特权的任务
-在此阶段中，您将验证使用特权的访问策略和用户需要审批执行定义的提升和特权任务。
+## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>第3阶段: 验证提升权限和特权任务是否都需要审批
+在此阶段中, 您将验证特权访问策略是否正常工作, 以及用户是否需要批准以执行定义的提升和特权任务。
 
-### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>测试能够执行未授权访问权限策略中定义的任务
+### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>测试执行未在特权访问策略中定义的任务的能力
 
-首先，使用配置为您的测试环境中的全局管理员的用户的凭据连接到 Exchange Management PowerShell 并尝试创建新的日记规则。[New-journalrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps)任务当前不在您的组织的访问权限的策略中定义。
+首先, 使用在测试环境中配置为全局管理员的用户的凭据连接到 Exchange 管理 PowerShell, 并尝试创建新的日记规则。 尚未在组织的特权访问策略中定义[新的-new-journalrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps)任务。
 
-1. 在本地计算机上打开并登录到 Exchange Online 远程 PowerShell 模块， **Microsoft Corporation** > **Microsoft Exchange Online 远程 PowerShell 模块**使用全局管理员帐户的测试环境。
+1. 在本地计算机上, 使用您的测试环境的全局管理员帐户在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 Exchange online 远程 powershell 模块。
 
-2. 在 Exchange Management Powershell 中，创建您的组织的新日记规则：
+2. 在 Exchange 管理 Powershell 中, 为您的组织创建新的日记规则:
 
 ```
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
-4. 在 Exchange Management PowerShell 创建的视图的新的日记规则已成功。
+4. 查看在 Exchange 管理 PowerShell 中已成功创建新日记规则。
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>创建新的访问权限的策略 New-journalrule 任务
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>为新的-new-journalrule 任务创建新的特权访问策略
 
 > [!NOTE]
-> 如果您没有已完成步骤 1 和 2，自本指南的第 2 阶段，为确保遵循的步骤创建名为"最小特权访问审批者"审批者组以及启用测试环境中的授权访问权限。
+> 如果您尚未从本指南的第2阶段完成步骤1和步骤 2, 请确保按照步骤创建名为 "权限访问审批者" 的审批者组, 并在您的测试环境中启用特权访问。
 
-1. 测试环境的全局管理员帐户登录到[Microsoft 365 Admin Center](https://portal.office.com)使用凭据。
+1. 使用凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)您的测试环境的全局管理员帐户。
 
-2. 在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。
+2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 
-3. 选择**管理访问策略和请求**。
+3. 选择 "**管理访问策略和请求**"。
 
-4. 选择**配置策略**，然后选择**添加策略**。
+4. 选择 "**配置策略**", 然后选择 "**添加策略**"。
 
-5. 从下拉列表的字段中，选择或输入以下值：
+5. 从下拉字段中, 选择或输入以下值:
     
-    **策略类型**： 任务
+    **策略类型**: 任务
 
-    **策略作用域**： Exchange
+    **策略作用域**: Exchange
 
-    **策略名称**： 新日记规则
+    **策略名称**: 新日记规则
 
-    **审批类型**： 手动
+    **审批类型**: 手动
 
-    **审核组**： 特权访问审批者
+    **审批组**: 特权访问审批者
 
-6. 选择**创建**，然后**关闭**。可能需要几分钟，要完全配置并启用的策略。请务必允许将策略应用之前在下一步中测试审批要求完全启用的时间。
+6. 选择 "**创建**", 然后单击 "**关闭**"。 为策略完全配置和启用可能需要几分钟时间。 在测试下一步中的审批要求之前, 请务必为策略完全启用时间。
 
-### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>测试 New-journalrule 任务的访问权限的策略中定义的审批要求
+### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>在特权访问策略中定义的 new-journalrule 任务的测试批准要求
 
-1. 在本地计算机上打开并登录到 Exchange Online 远程 PowerShell 模块， **Microsoft Corporation** > **Microsoft Exchange Online 远程 PowerShell 模块**使用使用全局管理员帐户为测试环境。
+1. 在本地计算机上, 在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 exchange online 远程 powershell 模块。对你的测试使用全局管理员帐户环境.
 
-2. 在 Exchange Management Powershell 中，创建您的组织的新日记规则：
+2. 在 Exchange 管理 Powershell 中, 为您的组织创建新的日记规则:
 
 ```
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
-3. 在 Exchange Management PowerShell 中查看"Insuffient 权限"错误：
+3. 在 Exchange 管理 PowerShell 中查看 "Insuffient 权限" 错误:
 
 ```
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -112,52 +114,52 @@ Insufficient permissions. Please raise an elevated access request for this task.
     + PSComputerName        : outlook.office365.com
 ```
 
-### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>请求创建一个新的日记规则使用 New-journalrule 任务的访问
+### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>请求访问权限以使用 new-journalrule 任务创建新的日记规则
 
-1. 登录到[Microsoft 365 Admin Center](https://portal.office.com)的测试环境中使用的全局管理员帐户。
+1. 使用您的测试环境的全局管理员帐户登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。
+2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 
-3. 选择**管理访问策略和请求**。
+3. 选择 "**管理访问策略和请求**"。
 
-4. 选择**新的请求**。从下拉列表字段中，选择您的组织的相应值：
+4. 选择 "**新建请求**"。 从下拉字段中, 为您的组织选择适当的值:
 
-    **请求类型**： 任务
+    **请求类型**: 任务
 
-    **请求作用域**： Exchange
+    **请求范围**: Exchange
 
-    **请求**： 新日记规则
+    **请求**: 新日记规则
 
-    **持续时间 （小时）**: 2
+    **持续时间 (小时)**: 2
 
-    **注释**： 请求权限以创建新的日记规则
+    **注释**: 请求创建新日记规则的权限
 
-5. 选择**保存**和**关闭**。您的请求将发送到通过电子邮件的审批者的组。
+5. 依次选择 "**保存**" 和 "**关闭**"。 您的请求将通过电子邮件发送给审批者的组。
 
-### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>批准创建新的日记规则的访问权限的请求
+### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>批准创建新日记规则的特权访问请求
 
-1. 登录到[Microsoft 365 Admin Center](https://portal.office.com)用户 3 的测试环境 （在测试环境中的"特权访问审批者"安全组的成员） 中使用的凭据。
+1. 使用测试环境中用户3的凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)(测试环境中的 "特权访问审批者" 安全组的成员)。
 
-2. 在管理中心，转到**设置** > **安全性和隐私** > **访问权限**。
+2. 在管理中心中, 转到 "**设置** > **安全 & 隐私** > 权限**访问**"。
 
-3. 选择**管理访问策略和请求**。
+3. 选择 "**管理访问策略和请求**"。
 
-4. 选择待处理的请求并选择**批准**向要创建新的日记规则的全局管理员帐户授予访问权限。确认已授予审批通知电子邮件将发送到的全局管理员帐户 （发出请求的用户）。  
+4. 选择 "挂起的请求", 然后选择 "**批准**" 以授予对全局管理员帐户的访问权限, 以创建新的日记规则。 将向全局管理员帐户 (发出请求的用户) 发送确认已授予审批的通知电子邮件。  
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>测试与批准 New-journalrule 任务的访问权限创建一个新的日记规则
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>测试创建新的日记规则, 该规则具有针对 new-journalrule 任务审批的特权访问权限
 
-1. 在本地计算机上打开并登录到 Exchange Online 远程 PowerShell 模块， **Microsoft Corporation** > **Microsoft Exchange Online 远程 PowerShell 模块**使用全局管理员帐户的测试环境。
+1. 在本地计算机上, 使用您的测试环境的全局管理员帐户在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 Exchange online 远程 powershell 模块。
 
-2. 在 Exchange Management Powershell 中，创建您的组织的新日记规则：
+2. 在 Exchange 管理 Powershell 中, 为您的组织创建新的日记规则:
 
 ```
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
-3. 在 Exchange Management PowerShell 创建的视图的新的日记规则已成功。
+3. 查看在 Exchange 管理 PowerShell 中已成功创建新日记规则。
 
 ## <a name="next-step"></a>后续步骤
 
-浏览您的测试环境中其他[信息保护](m365-enterprise-test-lab-guides.md#information-protection)特性和功能。
+在您的测试环境中浏览其他[信息保护](m365-enterprise-test-lab-guides.md#information-protection)特性和功能。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -8,7 +8,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
-description: 了解如何在 Microsoft 365 业务保护功能映射到 Intune 设置。订阅为您提供修改 Intune 设置的许可证。
-ms.openlocfilehash: 5ee5a457fe3f265dd37f6806ca8c11fe096718b6
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解 Microsoft 365 企业版中的保护功能如何映射到 Intune 设置。 订阅提供了修改 Intune 设置的许可证。
+ms.openlocfilehash: ddd520cd059c84e5d64e967fe5631fe2f6bce0d4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278547"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Microsoft 365 商业版中的保护功能如何映射到 Intune 设置
 
@@ -32,9 +35,9 @@ ms.locfileid: "26865669"
 
 下表详细介绍了 Android 和 iOS 应用程序策略设置如何映射到 Intune 设置。
   
-要使用 Microsoft 365 企业版管理员凭据登录时查找 Intune 设置，请转到**管理中心**，然后**Intune**。
+若要查找 Intune 设置, 同时使用 Microsoft 365 商业版管理员凭据登录, 请转到 "管理中心", 然后转到 "**管理员中心**", 然后转到**intune**。
   
- **重要：** Microsoft 365 企业版订阅为您提供修改 Intune 的所有设置的许可证。请参阅[简介 Intune 开始。](https://docs.microsoft.com/intune/introduction-intune)
+ **重要说明:** Microsoft 365 商业版订阅为您提供了修改所有 Intune 设置的许可证。 请参阅[Intune 简介开始入门。](https://docs.microsoft.com/intune/introduction-intune)
   
 单击要选择的策略名称，如 Android 的应用程序策略，然后选择" **策略设置**"。
   
@@ -65,7 +68,7 @@ ms.locfileid: "26865669"
 
 下表详细介绍了 Windows 10 应用程序策略设置如何映射到 Intune 设置。
   
-查找 Intune 设置，使用 Microsoft 365 企业版管理员凭据，登录时转到[Azure 门户](https://portal.azure.com)，然后选择**多个服务**，然后键入 Intune 到**筛选器**中，选择**Intune 应用程序保护** \> **应用程序策略**。
+若要查找 Intune 设置, 同时使用 Microsoft 365 商业版管理员凭据登录, 请转到[Azure 门户](https://portal.azure.com), 再选择 "**更多服务**", 并在 "intune" 中键入到**筛选器**中, 选择 " **intune 应用保护** \> **"应用程序策略**。
   
  **重要提示** ：Microsoft 365 商业版订阅向你提供许可证，仅用于修改映射到 Microsoft 365 商业版中设置的 Intune 设置。 
   
@@ -74,7 +77,7 @@ ms.locfileid: "26865669"
 |**Windows 10 应用程序策略设置**|**Intune 设置**|
 |:-----|:-----|
 |对工作文件进行加密  <br/> |" **高级设置**"\>" **数据保护**"：" **取消注册时撤销加密密钥**"和" **撤销对注册到 MDM 的受保护数据设备的访问**"均设置为" **开**"。  <br/> |
-|防止用户将公司数据复制到个人文件。  <br/> |" **必需设置**"\>" **Windows 信息保护模式**"。Microsoft 365 商业版中的" **开**"映射到：" **隐藏覆盖**"，Microsoft 365 商业版中的" **关**"映射到：" **关**"。  <br/> |
+|阻止用户将公司数据复制到个人文件。  <br/> |" **必需设置**"\>" **Windows 信息保护模式**"。Microsoft 365 商业版中的" **开**"映射到：" **隐藏覆盖**"，Microsoft 365 商业版中的" **关**"映射到：" **关**"。  <br/> |
 |Office 文档访问控制  <br/> | 如果此项在 Microsoft 365 商业版中设置为" **开**"，则  <br/> " **高级设置**"\>" **访问**"、" **使用 Windows Hello 企业版作为登录 Windows 的方法**"设置为" **开**"，并进行以下设置：  <br/> 将" **设置 PIN 所需的最少字符数**"设置为" **4**"。  <br/> 将" **在 Windows Hello 企业版 PIN 中配置大写字母的使用**"设置为" **不允许对 PIN 使用大写字母**"。  <br/> 将" **在 Windows Hello 企业版 PIN 中配置小写字母的使用**"设置为" **不允许对 PIN 使用小写字母**"。  <br/> 将" **在 Windows Hello 企业版 PIN 中配置特殊字符的使用**"设置为" **不允许对 PIN 使用特殊字符**"。  <br/> 将" **指定在系统要求用户更改 PIN 之前可以使用 PIN 的时间段(以天为单位)**"设置为" **0**"。  <br/> 将" **指定可以与无法重复使用的用户帐户相关联的之前的 PIN 数**"设置为" **0**"。  <br/> 将" **擦除设备前允许身份验证失败的次数**"设置为与 Microsoft 365 商业版中相同的次数（默认为 5）。  <br/> 将" **设备空闲后，导致设备锁定 PIN 或密码前允许的最长时间(以分钟为单位)**"设置为与 Microsoft 365 商业版中相同的时间。  <br/> |
 |启用受保护数据的恢复  <br/> |" **高级设置**"\>" **数据保护**"：" **显示企业数据保护图标**"和" **使用 Azure RMS for WIP**"均设置为" **开**"。  <br/> |
 |保护其他公司云位置  <br/> |" **高级设置**"\>" **受保护的域**"和" **云资源**"显示域和 SharePoint 网站。  <br/> |
@@ -85,7 +88,7 @@ ms.locfileid: "26865669"
 
 下表详细介绍了 Windows 10 设备配置设置如何映射到 Intune 设置。
   
-查找 Intune 设置，使用 Microsoft 365 企业版管理员凭据，登录时转到[Azure 门户](https://portal.azure.com)，然后选择**多个服务**，然后键入 Intune 到**筛选器**中，选择**Intune** \> **设备配置** \> **配置文件**。然后选择**Windows 10 的设备策略** \> **属性** \> **设置**。
+若要查找 Intune 设置, 同时使用 Microsoft 365 商业版管理员凭据登录, 请转到[Azure 门户](https://portal.azure.com), 再选择 "**更多服务**", 然后在 Intune 中键入到**筛选器**中, 选择 " **intune** \> **设备"配置** \> **文件**。 Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Windows 10 设备策略设置**|**Intune 设置**|
 |:-----|:-----|

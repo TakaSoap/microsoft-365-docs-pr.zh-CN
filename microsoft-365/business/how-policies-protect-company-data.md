@@ -4,13 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_ESPoliciesLM
 - ESPoliciesLM
 - BCS365_ESPoliciesLM
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: 了解如何针对特定设备和保护公司数据在用户的个人设备上的安全组的策略。
-ms.openlocfilehash: e52026ccc96e032bbccb7334992a447e14b2cc05
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解针对特定设备和安全组的策略, 以保护用户个人设备上的公司数据。
+ms.openlocfilehash: 11f0432b9e738841e6523dce436c534af41b827a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276779"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Microsoft 365 Business 中的策略如何保护公司数据
 
@@ -39,6 +40,6 @@ ms.locfileid: "26865427"
   
 [设置 Windows 10 电脑的设备配置](protection-settings-for-windows-10-pcs.md)
   
-[为 Windows 10 设备设置应用保护设置](protection-settings-for-windows-10-devices.md)
+[设置 Windows 10 设备的应用保护设置](protection-settings-for-windows-10-devices.md)
   
 

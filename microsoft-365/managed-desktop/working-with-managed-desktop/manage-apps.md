@@ -1,28 +1,69 @@
 ---
 title: 在 Microsoft 托管桌面中管理应用
-description: ''
-keywords: Microsoft 托管桌面，Microsoft 365 服务文档
+description: 有关如何更新部署到 Microsoft 托管桌面设备的业务线应用程序的信息
+keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 6bd9d943384dce059ebc5a2d0a04e531ef652015
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.date: 01/18/2019
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: ce2765ef2ab176dc5d9a1d41db7e26549b007d79
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285942"
 ---
-# <a name="manage-apps-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中管理应用
+# <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中管理业务线应用程序
 
 <!--Application management -->
 
-Onboarded 应用程序后，管理这些客户、 Microsoft 托管桌面操作和 Microsoft 托管桌面支持之间共享。客户：
+有几种方法可以管理已载入到 microsoft 托管桌面的应用程序的应用程序更新, 并将其部署到 microsoft 托管桌面设备。 你可以在 Microsoft 托管桌面门户或 Intune 中进行应用更新。 
 
-- 确保相应的许可证已通过 Intune 部署的所有软件的位置 
-- 监视其应用程序部署状态
-- 管理部署的应用程序设置配置文件
+<span id="update-app-mmd" />
 
-Microsoft 托管桌面操作团队检查以确保没有违反 Microsoft 托管桌面术语的应用程序正在部署的应用程序部署通知。 
+## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中更新业务线应用程序
 
-Microsoft 托管桌面支持提供的 Microsoft 创作应用程序 (例如，Office) 的支持。 
+**在 Microsoft 托管桌面门户中更新业务线应用程序**
+1. 登录到[Microsoft 托管桌面管理门户](http://aka.ms/mmdportal)。
+2. 在 "**清单**" 下, 选择 "**应用**"。  
+3. 选择要更新的应用程序, 然后选择 "**编辑**"。
+4. 在 "**管理**" 下, 选择 "**属性**"。 
+5. 单击 "**应用程序包文件**", 然后浏览以上载新的应用程序包文件。
+6. 选择 "**应用程序包文件**"。
+7. 选择文件夹图标并浏览到更新后的应用程序文件所在的位置。 选择“打开”****。 应用程序信息使用包信息进行更新。
+8. 验证**应用程序版本**是否反映了更新后的应用程序包。 
+
+更新后的应用程序将部署到您的用户的设备上。
+
+<span id="update-app-intune" />
+
+## <a name="update-line-of-business-apps-in-intune"></a>更新 Intune 中的业务线应用程序
+
+**在 Intune 中更新业务线应用程序**
+1. 登录到[Azure 门户](https://azure.portal.com)。
+2. 选择 "**所有服务** > "**Intune**。 Intune 位于 "**监控 + 管理**" 部分。
+3. 选择 "**客户端应用 > 应用**"。
+4. 在应用列表中查找并选择您的应用程序。
+5. 在**概述**边栏中, 选择 "**属性**"。
+6. 选择 "**应用程序包文件**"。
+7. 选择文件夹图标并浏览到更新后的应用程序文件所在的位置。 选择“打开”****。 应用程序信息使用包信息进行更新。
+8. 验证**应用程序版本**是否反映了更新后的应用程序包。
+
+<span id="roll-back-app-mmd" />
+
+## <a name="roll-back-an-app-to-a-previous-version"></a>将应用程序回退到以前的版本
+
+如果在部署新版本的应用程序时发现错误, 则可以回滚到以前的版本。 此处所述的过程适用于类型列为**Windows MSI 应用程序**或 windows 应用程序的应用程序 **(Win 32)-preview**
+
+**将业务线应用程序回滚到以前的版本**
+
+1. 登录到[Microsoft 托管桌面管理门户](http://aka.ms/mmdportal)。
+2. 在 "**清单**" 下, 选择 "**应用**"。  
+3. 选择需要回滚的应用程序, 然后选择 "**编辑**"。
+4. 在 "**管理**" 下, 选择 "**属性**"。 
+    - 对于**Windows MSI 应用**程序应用程序, 请选择 "**应用程序信息**", 然后在 "**忽略应用程序版本**" 下, 选择 **"是"**。
+    - 对于**Windows 应用 (Win 32)-预览**应用程序, 选择 "**应用程序信息**", 选择 "**检测规则**", 然后选择 "**添加**"。 
+    如果存在 msi 规则, 请验证**msi 产品版本检查**是否设置为 "**否**"。
+5. 将[以前版本的应用程序源文件上传](../get-started/deploy-apps.md)到 Microsoft 托管桌面管理门户。  
+

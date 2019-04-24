@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,13 +17,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: 了解如何管理 Microsoft 365 业务相关的管理任务、 移动设备、 Windows 10PCs 和许多等任务。
-ms.openlocfilehash: 280bff9f12a884e6a19e26feea5d8a339297a434
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解如何管理 Microsoft 365 业务相关的管理任务、移动设备、Windows 10PCs 和许多这样的任务。
+ms.openlocfilehash: 993db51ec487237395ca57290e37a6c5edbce8b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278567"
 ---
 # <a name="manage-microsoft-365-business"></a>管理 Microsoft 365 Business
 
@@ -32,7 +33,7 @@ ms.locfileid: "26865502"
     
 - [查看策略和设备](view-policies-and-devices.md)
     
-- [Microsoft 365 业务安全功能](security-features.md)
+- [Microsoft 365 商业安全功能](security-features.md)
     
 - [Microsoft 365 商业版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)
     
@@ -44,7 +45,7 @@ ms.locfileid: "26865502"
     
 - [设置 Android 或 iOS 设备的应用保护设置](app-protection-settings-for-android-and-ios.md)
     
-    请参阅[Android 或 iOS 设备上的验证应用程序保护设置](validate-settings-on-android-or-ios.md)，以确保操作成功。 
+    请参阅[验证 Android 或 iOS 设备上的应用保护设置](validate-settings-on-android-or-ios.md)以确保其有效。 
     
 - [从设备中删除公司数据](remove-company-data.md)
     
@@ -90,9 +91,9 @@ ms.locfileid: "26865502"
     
 - [使用设置向导设置 Microsoft 365 商业版](set-up.md)
     
-- [迁移到 Microsoft 365 商业版](migrate-to-microsoft-365-business.md)
+- [迁移到 Microsoft 365 业务](migrate-to-microsoft-365-business.md)
     
-- [启用加入域的 Windows 10 设备，由 Microsoft 365 企业版](manage-windows-devices.md)
+- [启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备](manage-windows-devices.md)
     
 [其他安全功能](security-features.md#additional-security-features)
     

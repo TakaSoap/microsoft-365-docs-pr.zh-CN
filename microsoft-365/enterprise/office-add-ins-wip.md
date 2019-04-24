@@ -1,6 +1,6 @@
 ---
-title: 保护企业文档运行 Microsoft Office 加载项-Microsoft 365 企业版 |Microsoft 文档
-description: 介绍如何使用 WIP 和 Intune 来保护文档运行 Office 加载项中的企业数据。
+title: 保护运行 microsoft Office 外接程序的企业文档-microsoft 365 企业版 |Microsoft 文档
+description: 介绍如何使用 WIP 和 Intune 保护运行 Office 外接程序的文档中的企业数据。
 author: barlanmsft
 manager: angrobe
 ms.prod: microsoft-365-enterprise
@@ -10,11 +10,11 @@ ms.author: barlan
 ms.reviewer: jsnow
 ms.custom: it-pro
 ms.openlocfilehash: 6871f288a7e5849b147cbf0aedb056f84575f376
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290757"
 ---
 # <a name="use-wip-and-intune-to-protect-enterprise-data-in-documents-running-office-add-ins"></a>使用 WIP 和 Intune 保护运行 Office 加载项的文档中的企业数据。
 组织中的用户使用 Office 加载项与组织数据进行交互时可能产生潜在风险，泄露某些数据。 用户正在运行 Office 加载项时，可使用 Windows 信息保护 (WIP) 和 Microsoft Intune 保护企业数据。
@@ -78,7 +78,7 @@ Office 加载项可与文档中的企业内容和潜在敏感内容集成。 作
 |**文档或邮箱类型**|**个人上下文中的加载项**|**企业上下文中的加载项**|
 |:----------------|:-------------------------------------------------|:---------------------------------------------------|
 |个人     |加载项在个人上下文中加载。<br><br>不允许导航到企业 URL（即使是在自己的应用域中）。<br><br>允许导航到个人 URL|加载项无法加载或激活。<br><br>如果升级了文档的上下文（例如：通过将其保存到企业位置）：<br><br>- 允许导航到企业 URL。<br><br>- 允许导航到个人 URL。|
-|企业   |加载项在企业上下文中加载。<br><br>允许导航到企业 URL。<br><br>允许导航到个人 URL。|加载项在企业上下文中加载。<br><br>允许导航到企业 URL。<br><br>允许导航到个人 URL。|
+|企业****   |加载项在企业上下文中加载。<br><br>允许导航到企业 URL。<br><br>允许导航到个人 URL。|加载项在企业上下文中加载。<br><br>允许导航到企业 URL。<br><br>允许导航到个人 URL。|
 |未保存      |加载项在个人上下文中加载。<br><br>不允许导航到企业 URL（即使是在自己的应用域中）。<br><br>允许导航到个人 URL。|加载项在企业上下文中加载，文档默认转换到企业上下文。 这意味着文档必须保存到企业位置。<br><br>允许导航到企业 URL。允许导航到个人 URL。            |
 
 
@@ -96,13 +96,13 @@ Office 加载项可与文档中的企业内容和潜在敏感内容集成。 作
 
 >**<sup>*</sup>** 管理员可以使用 [Office 365 集中部署](https://support.office.com/article/Deploy-Office-add-ins-in-the-Office-365-admin-center-737e8c86-be63-44d7-bf02-492fa7cd9c3f)将 Word、Excel 和 PowerPoint 加载项直接从 Office 365 管理中心或使用 PowerShell 脚本部署到个人用户、组或组织。 用户在 Windows、Mac 或 Office Online 上打开 Office 应用程序时，加载项自动安装到其功能区。
 
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>Summary
 
 考虑到关于 Office 加载项的原则，管理员可以通过 WIP 和 Intune 管理企业数据，并提供最终用户完成其工作所需的工具。 这就有可能导致企业数据在组织边界外部泄露。 Office JavaScript API 当前并未提供相关方法，因此开发人员无法识别在 Office 文档和加载项之间传输的数据类型。 他们需要向用户提供多个提示，在某些情况下，有可能将个人文件错误地标记为企业文件，这可能对用户体验造成负面影响，并且与数据保护原则不一致。
 
 Microsoft 致力于保护客户数据并继续投资于 Intune 和 WIP 技术创新，增强客户体验。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多信息
 
 -   [Windows 信息保护 (WIP) 的一般指南和最佳做法](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/guidance-and-best-practices-wip)
 

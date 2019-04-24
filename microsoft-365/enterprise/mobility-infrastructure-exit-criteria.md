@@ -1,32 +1,32 @@
 ---
 title: 移动设备管理基础结构退出条件
-description: Microsoft 365 企业版包括使用 Microsoft Intune 的移动设备管理。查看要求和先决条件，设置 Intune 使用 Azure Active Directory 资源，注册 iOS、 macOS、 Android 和 Windows 设备，部署应用程序、 创建配置配置文件、 使用合规性策略，并启用条件移动访问与 Microsoft 365 Enterprise 的设备管理。
-keywords: Microsoft 365 Microsoft 365 企业版，Microsoft 365 文档，移动设备管理 Intune
+description: microsoft 365 企业版包括使用 Microsoft Intune 的移动设备管理。 查看要求和先决条件、使用 Azure Active Directory 资源设置 Intune、注册 iOS、macOS、Android 和 Windows 设备、部署应用、创建配置配置文件、使用合规性策略, 以及为移动启用条件访问Microsoft 365 企业版的设备管理。
+keywords: microsoft 365, microsoft 365 企业版, microsoft 365 文档, 移动设备管理, Intune
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/10/2018
+ms.date: 03/05/2019
 ms.topic: article
-audience: ITPro
 ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
+audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: b511052698f42a07df5fc25aeaad7fc7f00c2a6e
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 14f216fe352d9108fe69028731f4c94dfb9d19f7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291229"
 ---
 # <a name="mobile-device-management-infrastructure-exit-criteria"></a>移动设备管理基础结构退出条件
 
 ![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
-*这适用于 Microsoft 365 企业版 E3 和 E5 版本*
+*这适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-您将移动到的部署过程的下一个阶段之前，请确保您的配置满足以下移动设备管理基础结构要求。
+确保您的配置满足以下针对移动设备管理基础结构的要求。
 
 - 已设置 Intune，包括通过创建 Azure AD 用户和组为设备应用组织的规则。
 - 在 Intune 中有已注册设备，这样设备便能收到你创建的策略。
@@ -34,8 +34,12 @@ ms.locfileid: "26865570"
 - 已使用你创建的 Azure AD 用户和组来配置功能和设置，并将它们应用于设备，这可能包括启用防病毒功能和限制特定应用。
 - 已制定合规性策略，对设备上的防火墙或密码长度有所要求。如果设备不合规，条件访问就会阻止访问组织的数据。
 
-## <a name="next-phase"></a>下一阶段
+
+
+## <a name="results-and-next-steps"></a>结果和后续步骤
+
+你的设备已在 Intune 中注册并配置了适当的策略。
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| Microsoft 365 企业版的端到端部署过程中您下一阶段是[信息保护](infoprotect-infrastructure.md)。 |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| 如果你按照 Microsoft 365 企业版端到端部署的阶段执行, 下一阶段是[信息保护](infoprotect-infrastructure.md)。 |

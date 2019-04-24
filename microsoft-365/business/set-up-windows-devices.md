@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: '了解如何设置为 Microsoft 365 业务用户运行 Windows 10 专业人员的 Windows 设备。 '
-ms.openlocfilehash: 482199b175c568bfae420619aa02024303894789
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: '了解如何设置运行 windows 10 Pro for Microsoft 365 商业用户的 windows 设备。 '
+ms.openlocfilehash: f93257bd9a68385fca4f178a2e09c5c11506ee2c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284271"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 商业版用户设置 Windows 设备
 
@@ -33,7 +36,7 @@ ms.locfileid: "26865612"
   
 有关如何将 Windows 设备升级到 Windows 10 专业版创意者更新的详细信息，请按照本主题中的步骤操作：[将 Windows 设备升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)。
   
-请参阅[验证设备是否升级到 Windows 10 商业版](set-up-windows-devices.md#bkmk_verifywin10)验证是否进行了升级或确保升级有效。 
+请参阅[验证设备是否已连接到 Azure AD](#verify-the-device-is-connected-to-azure-ad) , 以验证您是否可以升级, 或确保升级有效。 
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>将 Windows 10 设备加入到组织的 Azure AD
 
@@ -51,7 +54,7 @@ ms.locfileid: "26865612"
     
 3. 完成 Windows 10 设备设置。
     
-   完成后，用户将连接到组织的 Azure AD。请参阅[验证设备是否连接到 Azure AD](set-up-windows-devices.md#bkmk_verifyaad)确保完成操作。 
+   完成后，用户将连接到组织的 Azure AD。请参阅[验证设备是否连接到 Azure AD](#verify-the-device-is-connected-to-azure-ad)确保完成操作。 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>已经设置并运行 Windows 10 专业版的设备
 
@@ -73,13 +76,13 @@ ms.locfileid: "26865612"
   
    ![Click Join this device to Azure Active Directory](media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. 在**让我们开始您登录**页上，输入您的工作或学校帐户\>**下一步**。
+5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
   
-   在**输入密码**页上，输入密码\>**登录**。
+   On the **Enter password** page, enter your password \> **Sign in**.
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. 在 * * 确保这是您的组织 * * 页上，确认信息正确无误，然后单击**加入**。
+6. 在 "**请确保这是你的组织**" 页上, 验证信息是否正确, 然后单击 "**加入**"。
   
    在" **设置完毕!**"页面上，单击" **完成**"。
   

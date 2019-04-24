@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: 了解如何购买和注册 Microsoft 365 商业版。
 ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
-ms.sourcegitcommit: 913564997dbba42a448865a8913e07e6f203c736
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31504078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283584"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>注册 Microsoft 365 商业版
 
@@ -41,7 +41,7 @@ ms.locfileid: "31504078"
 
     - **Username**: 输入您自己的商业电子邮件所使用的名称 (称为别名)。 例如, Robert 年轻人可能将 RobY 或 RobYoung 用作工作别名。
     - **您的公司**: 输入您的独特业务名称。 这是你的企业网站使用的名称 (如果有), 也是您在收到业务电子邮件时要在 @ 符号后包含的名称。 此名称称为 "域"。 例如, 如果您的公司称为 Contoso Skis, 请在 @ 符号后输入 ContosoSkis。
-    - **选择一个域**: 如果你已拥有您的域名, 请从下拉 onmicrosoft.com 中选择 ".", 我们将要求你在稍后对其进行设置。 否则, 可以轻松购买代表你的业务的域名。 若要执行此操作, 请从下拉菜单中选择您更喜欢的域。 例如, 您的完整电子邮件地址可能*Teresa@ContosoSkis.net*是。 如果域名可用, 我们将立即通知你。 如果是, 我们将把你的域的成本增加到 Microsoft 365 业务订阅的成本。 如果在此处购买新域, 还会将其设置并准备好在 Microsoft 365 中使用。 有关域的信息, 请参阅[域 FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq)。
+    - **选择一个域**: 如果你已拥有您的域名, 请从下拉 onmicrosoft.com 中选择 ".", 我们将要求你在稍后对其进行设置。 否则, 可以轻松购买代表你的业务的域名。 若要执行此操作, 请从下拉菜单中选择您更喜欢的域。 例如, 完整的电子邮件地址可能是*Teresa@ContosoSkis.net*。 如果域名可用, 我们将立即通知你。 如果是, 我们将把你的域的成本增加到 Microsoft 365 业务订阅的成本。 如果在此处购买新域, 还会将其设置并准备好在 Microsoft 365 中使用。 有关域的信息, 请参阅[域 FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq)。
     
     !["创建您的用户 ID" 页的屏幕截图。](media/signinuserid.png)
 

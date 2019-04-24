@@ -1,17 +1,18 @@
 ---
 title: Microsoft 托管桌面的网络配置
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365 服务文档
+keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: f4cfaffe25638de80d23c3e681e50cbb544ca961
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289097"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
@@ -20,38 +21,43 @@ ms.locfileid: "26865954"
 
 ## <a name="proxy-configuration"></a>代理配置
 
-Microsoft 托管桌面是云托管的服务。没有一需要能够访问 Microsoft 托管桌面服务的终结点。在客户设置代理服务器或防火墙，它们只允许来自出于安全原因的特定域的网络流量。本节列出了需要允许的终结点。 
+Microsoft 托管桌面是云托管服务。 Microsoft 托管桌面服务需要能够达到的一组终结点。 此部分列出了 Microsoft 托管桌面服务的各个方面需要允许的终结点。 
+
+客户可以通过防火墙/代理直接发送所有受信任的 Microsoft 365 网络请求, 从而绕过身份验证和所有其他数据包级别检查或处理, 从而优化其网络。 这可降低延迟和外围容量要求。 
+
+此外, 为了优化基于 Microsoft 托管桌面云服务的性能, 这些终结点需要客户客户端浏览器和其边缘网络中的设备进行特殊处理。 这些设备包括防火墙、SSL 中断和检查、数据包检查设备和数据丢失防护系统。
 
 ### <a name="proxy-requirement"></a>代理要求
 
-代理服务器或防火墙必须支持 TLS 1.2。否则，您可能需要禁用协议检测。
+代理或防火墙必须支持 TLS 1.2。 否则, 客户可能必须禁用协议检测。
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>终结点允许-Microsoft 托管桌面的特定于
+### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>允许的终结点-特定于 Microsoft 托管桌面
 
-这些 Url 必须是允许列表中，以便 Microsoft 托管桌面设备可以与 Microsoft 服务通信。
+Microsoft 托管桌面使用 Azure 门户承载其 web 控制台。 下表中的以下 url 需要位于代理和防火墙的允许列表中, 以便 microsoft 托管桌面设备可以与 microsoft 服务进行通信。  
 
-Microsoft 服务  | Url 上需要允许列表 
+请注意, 以下 Microsoft 托管桌面 URL 将用于在客户 API 上运行的任何服务。 客户必须确保此 URL 在其企业网络中始终可访问。
+
+Microsoft 服务  | 允许列表上所需的 url 
 --- | --- | ---
-获取帮助 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod 移 mwaas 服务 customerapi.azurewebsites.net
-“快速助手” | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
+Microsoft 托管桌面 | prod-mwaas-services-customerapi.azurewebsites.net
+获取帮助 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+快速助手 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
+适用于 Office 365 的 Microsoft 支持和恢复助手 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>终结点允许-其他 Microsoft 产品
+### <a name="endpoints-allowed---other-microsoft-products"></a>允许的终结点-其他 Microsoft 产品
 
-从多个 Microsoft 产品需要在允许列表中，以便 Microsoft 托管桌面设备可以与这些 Microsoft 服务通信有 Url。使用链接到每个产品的完整列表，请参阅。 
+有几个 microsoft 产品中的 url 需要位于允许的列表中, 以便 microsoft 托管桌面设备可以与这些 microsoft 服务进行通信。 使用链接查看每个产品的完整列表。 
 
-Microsoft 服务 | 文档源-Url 上需要允许列表
+Microsoft 服务 | 文档源-允许列表上需要 url
 --- | ---
-Windows Update for Business (WUfB) | [Windows Update 以业务防火墙和代理要求](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
-传递优化 | [Windows Update 代理要求](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
-适用于企业的 Microsoft Store | [Microsoft 存储允许列表](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)包括\*。 apibasic.diagnostics.office.com
-Azure Active Directory | [混合标识所需的端口和协议](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports)和[Active Directory 和 Active Directory 域服务的端口要求](https://aka.ms/AA26ygm) 
+windows 10 企业版, 包括 windows Update for Business | [管理 Windows 10 版本1803的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
+传递优化 | [配置 Windows 10 更新的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Office 365 | [Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Azure Active Directory | [混合标识所需的端口和协议](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)以及[active directory 和 active directory 域服务端口要求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 网络配置要求](https://docs.microsoft.com/intune/network-bandwidth-use)
-OneDrive for Business <br> | [所需的 Url 和 onedrive 端口](https://docs.microsoft.com/onedrive/required-urls-and-ports)
-Windows Defender 高级威胁保护 (ATP) | [Windows Defender ATP 终结点](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
-SharePoint Online  | [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#bkmk_teams)
-Power BI | [OneNote](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Windows Defender 高级威胁防护 (ATP) | [Windows Defender ATP 终结点](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
+)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

@@ -1,101 +1,102 @@
 ---
-title: 部署新设备的 Windows 自动执行某些操作 Windows 10 Enterprise
-description: 在配置和部署 Windows 自动执行某些操作 Windows 10 Enterprise 提供指导。
-keywords: Microsoft 365 Microsoft 365 企业版，Microsoft 365 文档，Windows 10 Enterprise 部署中，Windows 自动执行某些操作
+title: 使用 windows Autopilot 为新设备部署 Windows 10 企业版
+description: 提供有关使用 windows Autopilot 配置和部署 windows 10 企业版的指南。
+keywords: microsoft 365, microsoft 365 enterprise, microsoft 365 文档, Windows 10 企业版, 部署, Windows Autopilot
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: ed3d21091acd5b54dfdc2917fca85ed0535c3332
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: f173bd2357d445b502a4b28b60399d5cdb087cd0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289252"
 ---
-# <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>步骤 3： 部署新设备的 Windows 自动执行某些操作 Windows 10 Enterprise
+# <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>步骤 3: 使用 windows Autopilot 为新设备部署 Windows 10 企业版
 
-*本文适用于 Microsoft 365 企业版 E3 和 E5 版本*
+*本文适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-如果您有新的 Windows 10 Pc，您可以使用 Windows 自动执行某些操作为您的组织自定义扩展的-体验 (OOBE) 和部署应用程序和已配置的设置的新系统。有任何图像部署、 注入，没有驱动程序和任何基础结构来管理。用户可以通过部署过程独立，无需向他们 IT 管理员咨询。
+如果你有新的 Windows 10 电脑, 则可以使用 Windows Autopilot 为你的组织自定义现成体验 (OOBE), 并部署具有已配置的应用程序和设置的新系统。 没有要部署的映像, 没有要注入的驱动程序, 没有要管理的基础结构。 用户可以独立完成部署过程, 无需咨询其 IT 管理员。
 
-您可以设置和预配置新的 Windows 10 设备并使其可供使用 Windows 自动执行某些操作的使用效率。若要了解有关 Windows 自动执行某些操作，包括优点和 Windows 自动执行某些操作方案，请参阅[概述的 Windows 自动执行某些操作](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)。准备好后，请按照这些部件以开始新的设备的设置。
+您可以设置和预配置新的 Windows 10 设备, 让它们准备好使用 Windows Autopilot 进行高效使用。 若要了解有关 Windows Autopilot 的详细信息 (包括福利和 Windows Autopilot 方案), 请参阅[windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)。 准备就绪后, 请按照以下部件开始设置新设备。
 
-## <a name="part-1-start-windows-autopilot-deployment"></a>第 1 部分： 开始 Windows 自动执行某些操作部署
-请参阅[Overview of Windows 自动执行某些操作](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)到：
+## <a name="part-1-start-windows-autopilot-deployment"></a>第1部分: 启动 Windows Autopilot 部署
+请参阅[Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)to:
 
-1. 了解并完成 Windows 自动执行某些操作部署的先决条件。必备组件包括：
+1. 了解并完成 Windows Autopilot 部署的先决条件。 先决条件包括:
     - **设备注册和 OOBE 自定义**
 
-        若要注册设备，您需要获取其硬件 ID，并将其注册。我们主动正在与各种硬件供应商，使其能够向您提供所需的信息，或将其上载替您。您还可以选择捕获此信息由您自己使用的 PowerShell 脚本，将生成.csv 文件与设备的硬件 id。
+        若要注册设备, 您需要获取其硬件 ID 并进行注册。 我们正在与各种硬件供应商合作, 让他们为你提供所需的信息, 或代表你上传。 您还可以选择使用生成包含设备的硬件 ID 的 .csv 文件的 PowerShell 脚本来捕获此信息。
 
-        注册设备，一旦有 OOBE，您可以配置包括跳过隐私设置和最终用户许可协议的自定义选项。
+        注册设备后, 可以配置 OOBE 自定义选项, 包括跳过隐私设置和 EULA。
 
     - **针对 OOBE 的公司品牌塑造**
 
-        这样，您可以添加品牌期间设备 OOBE 显示。
+        这使您可以在设备 OOBE 期间添加品牌显示。
 
     - **Microsoft Intune 中的 MDM 自动注册**
         
-        自动注册允许用户注册设备管理 Intune 在其 Windows 10 设备时将自己设备连接到 Azure AD。若要注册，用户将其工作帐户添加到其个人拥有设备或企业拥有设备加入 Azure AD。在后台，用于管理与 Intune 还注册设备。
+        在将设备连接到 Azure AD 时, 自动注册允许用户在 Intune 中为设备管理注册其 Windows 10 设备。 若要注册, 用户需要将其工作帐户添加到其个人拥有的设备, 或将公司拥有的设备加入 Azure AD。 在后台, 还会为该设备注册使用 Intune 进行管理。
 
     - **Windows Autopilot 所使用的云服务的网络连接**
 
-        Windows 自动执行某些操作部署计划使用大量的云服务来获取您的设备为提高生产效率的状态，并且这些服务必须可从注册为 Windows 自动执行某些操作设备的设备访问。 
+        Windows Autopilot 部署程序使用大量云服务将设备恢复到生产状态, 并且必须可从注册为 Windows Autopilot 设备的设备访问这些服务。 
 
     - **设备必须已预安装 Windows 10 版本 1703 或更高版本**
 
-2. 了解并选择您的组织的 Windows 自动执行某些操作部署程序。您可以从这些部署程序中进行选择：
+2. 了解并为您的组织选择 Windows Autopilot 部署计划。 您可以从以下部署程序中进行选择:
     - **适用于企业的 Microsoft Store**
     - **Microsoft Intune**
     - **合作伙伴中心**
 
-## <a name="part-2-set-up-a-windows-10-device-for-microsoft-365"></a>设置 Microsoft 365 Windows 10 设备第 2 部分：
-您可以设置为 Microsoft 365 用户的 Windows 设备之前，请确保所有 Windows 设备正在都运行 Windows 10，版本 1703 （创建者更新） 或更高版本。
+## <a name="part-2-set-up-a-windows-10-device-for-microsoft-365"></a>第2部分: 为 Microsoft 365 设置 Windows 10 设备
+在为 Microsoft 365 用户设置 windows 设备之前, 请确保所有 Windows 设备运行的是 windows 10、版本 1703 (创意者更新) 或更高版本。
 
-您的组织中的所有 Windows 设备也已升级到 Windows 10 创建者 Update 或已经在运行 Windows 10 创建者更新后，可以将这些设备加入您的组织的 Azure Active Directory。
+在组织中的所有 Windows 设备都已升级到 windows 10 创意者更新或已在运行 windows 10 创意者更新之后, 您可以将这些设备加入到组织的 Azure Active Directory 中。
 
-### <a name="set-up-a-brand-new-or-newly-upgraded-windows-10-device"></a>设置新的或新升级 Windows 10 设备
-请按照下列步骤设置在运行 Windows 10 创建者更新的全新设备上使用 Windows 10 OOBE 的设备 （或更高版本） 或已升级到 Windows 10 创建者 Update （或更高版本），但不是经历现成的安装程序的设备上。
+### <a name="set-up-a-brand-new-or-newly-upgraded-windows-10-device"></a>设置全新的或新升级的 Windows 10 设备
+按照以下步骤操作, 在运行 windows 10 创意者更新 (或更高版本) 的全新设备上或在升级到 windows 10 创意者更新 (或更高版本) 但尚未通过全新安装程序更新的设备上使用 Windows 10 OOBE 设置设备。
 
-1. 如果您没有无线网络配置，请确保将设备连接到有线通过 internet 或以太网连接。
-2. 转到 Windows 设备安装体验。在新的或重置设备上，安装程序体验开头**让我们开始与区域。是此权限？** 屏幕。
-3. 转到 Windows 10 设备安装程序直到**您要如何设置？** 页。在这里，选择**为组织设置**。
-4. 使用 Microsoft 365 用户帐户和密码登录。根据用户的密码设置，您可能会提示更新的密码。 
+1. 如果没有配置无线网络, 请确保通过有线或以太网连接将设备连接到 internet。
+2. 请浏览 Windows 设备设置体验。 在新的或重置设备上, 安装程序体验将以 "开始" 的 "地区" 开头 **。此权限正确吗？** 闪屏.
+3. 完成 Windows 10 设备设置，直到显示" **设置方式**"页面。 在此处, 为组织选择 "**设置**"。
+4. 使用 Microsoft 365 用户的帐户和密码登录。 根据用户密码设置的不同, 可能会提示您更新密码。 
 5. 完成 Windows 10 设备设置。
 
-完成后，设备将连接到组织的 Azure AD。
+完成后, 设备将连接到您的组织的 Azure AD。
 
-### <a name="set-up-a-device-that-has-already-completed-out-of-box-setup"></a>设置已完成的全新安装程序的设备
-如果您的设备具有 Windows 10 创建者 Update （或更高版本） 具有已经历的全新安装，请按照下列步骤。
+### <a name="set-up-a-device-that-has-already-completed-out-of-box-setup"></a>设置已完成的设备的开箱即用安装程序
+如果你的设备具有 Windows 10 创意者更新 (或更高版本), 并且已通过 "开箱即用" 安装程序, 请执行以下步骤。
 
-1. 运行 Windows 10，版本 1703 （创建者更新） 的用户的 Windows PC 上选择**Windows**徽标，，然后选择**设置**图标。
+1. 在运行 windows 10 版本 1703 (创意者更新) 的用户的 windows 电脑上, 选择**Windows**徽标, 然后选择 "**设置**" 图标。
 2. 2.在" **设置**"中，转到" **帐户**"。
-3. 在**您的信息**页上，选择**访问工作或学校** > **连接**。
-4. 在**工作或学校帐户设置**对话框中，**其他操作**下选择**加入到 Azure Active Directory 此设备**。
-5. 在**让我们开始您登录**页上，输入您的工作或学校帐户，并选择**下一步**。
-6. 在**输入密码**页上，输入密码，然后选择**登录**。
-7. 在**确保这是您的组织**页上，确认的信息正确，然后选择**加入**。
-8. 在**您设置了所有 ！** 页上，选择**完成**。
+3. 在 "**你的信息**" 页上, 选择 "**访问工作或学校** > **连接**"。
+4. 在 "**设置工作或学校帐户**" 对话框中的 "**替代操作**" 下, 选择 "将**此设备加入 Azure Active Directory**"。
+5. 在 "**让你登录**" 页面上, 输入你的工作或学校帐户, 然后选择 "**下一步**"。
+6. 在 "**输入密码**" 页面上, 输入您的密码, 然后选择 "**登录**"。
+7. 在 "**确保这是你的组织**" 页上, 验证信息是否正确, 然后选择 "**加入**"。
+8. 在 "**全是" 设置!** 页面上, 选择 "**完成**"。
 
-完成后，用户将连接到组织的 Azure AD。
+完成后, 用户将连接到您的组织的 Azure AD。
 
 ### <a name="verify-the-device-is-connected-to-azure-ad"></a>验证设备是否连接到 Azure AD
-请按照下列步骤，以验证与 Azure AD 的设备的同步状态，然后再开始在设备上使用您的 Microsoft 365 帐户。 
+按照以下步骤操作, 以使用 Azure AD 验证设备的同步状态, 然后开始在设备上使用 Microsoft 365 帐户。 
 
-1. 打开**设置**。
-2. 在**访问工作或学校**页上，选择**连接到<organization name>** 区域以公开**信息**和**断开连接**按钮。
-3. 选择**信息**可获取同步状态。
-4. 在**同步状态**页中，选择获取到 PC 的管理策略的最新的移动设备**同步**。
-5. 要开始使用 Microsoft 365 帐户，请转到 Windows**开始**按钮，右键单击您的当前帐户图片，然后选择**开关**帐户。
+1. 打开 "**设置**"。
+2. 在 "**访问工作或学校**" 页面上, 选择 "**已连接到<organization name> ** " 区域以显示按钮**信息**并**断开连接**。
+3. 选择 "**信息**" 以获取你的同步状态。
+4. 在 "**同步状态**" 页上, 选择 "**同步**" 以获取电脑上的最新移动设备管理策略。
+5. 若要开始使用 Microsoft 365 帐户, 请转到 Windows "**开始**" 按钮, 右键单击您当前的帐户图片, 然后选择 "**切换**帐户"。
 6. 使用组织电子邮件和密码进行登录。
 
-如果您遇到问题，在企业环境中使用 Windows 10 时，您可以参考[的最常见的问题的首要 Microsoft 支持解决方案](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。KB 文章、 更新和库文章，这些资源包括。
+如果在企业环境中使用 Windows 10 时遇到问题, 可以参阅[主要 Microsoft 支持解决方案, 了解最常见的问题](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。 这些资源包括知识库文章、更新和库文章。
 
 作为临时检查点，请查看对应于此步骤的[退出条件](windows10-exit-criteria.md#crit-windows10-step3)。
 
@@ -103,7 +104,7 @@ ms.locfileid: "26865649"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [监控设备运行状况和法规遵从性](windows10-enable-windows-analytics.md) |
+|![](./media/stepnumbers/Step4.png)| [监视设备运行状况和合规性](windows10-enable-windows-analytics.md) |
 
 
 

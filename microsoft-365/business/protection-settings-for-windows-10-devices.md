@@ -11,6 +11,9 @@ f1_keywords:
 - BCS365_Win10AppPolicy
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -20,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: 了解如何创建应用程序管理策略和保护 Windows 10 设备上的工作文件。
-ms.openlocfilehash: acf19a72d994185a35b2e425f8334a73a121ee10
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解如何在 Windows 10 设备上创建应用管理策略并保护工作文件。
+ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278152"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>设置 Windows 10 设备的应用程序保护设置
 
@@ -34,23 +37,21 @@ ms.locfileid: "26865601"
 
 如果用户在个人 Windows 10 设备上执行工作任务，也可以在该类设备上保护你的数据。
   
-1. 使用全局管理员凭据登录 [Microsoft 365 商业版](https://portal.office.com)。选择" **管理** "图块，进入管理中心。 
+1. 使用全局管理员凭据登录到[admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) 。 选择" **管理**"图块，进入管理中心。 
     
-2. 在管理门户的" **设备策略**"卡上，选择" **添加策略**"。
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
-  
+2. 在左侧导航中, 选择 "**设备** \> **策略** \> " "**添加**"。
+
 3. 在" **添加策略**"窗格中，输入此策略的唯一名称。 
     
 4. 在" **策略类型**"下，选择" **适用于 Windows 10 的应用程序管理**"。
     
-5. 下 * * 设备类型 * *，选择**个人**或**公司拥有**。
+5. Under ** Device type **, choose either **Personal** or **Company Owned**.
     
 6. 将自动打开" **加密工作文件**"。 
     
 7. 如果不希望用户在其电脑上保存工作文件，请将" **阻止用户将公司数据复制到个人文件，并强制其将工作文件保存到 OneDrive for Business**"设置为" **开**"。 
     
-8. 展开**管理用户如何访问设备上的 Office 文件**\>配置方式的设置。默认情况下**管理用户如何访问移动设备上的 Office 设备**处于**关闭状态**，但建议您**将其打开**，并接受默认值。有关详细信息，请参阅[可用的设置](protection-settings-for-windows-10-devices.md#bkmk_settings)。 
+8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. 有关详细信息, 请参阅[可用设置](#available-settings)。 
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
@@ -66,7 +67,7 @@ ms.locfileid: "26865601"
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
-11. 接下来决定**用户会收到这些设置？** 如果您不希望使用默认的**所有用户**安全组，选择**更改**、 选择用户会收到这些设置的安全组\>**选择**。
+11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
     
 12. 最后，选择" **添加**"以保存该策略，并将其分配到设备。 
     

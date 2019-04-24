@@ -1,41 +1,41 @@
 ---
-title: 最适合您是 Microsoft 托管桌面
+title: 是适合你的 Microsoft 托管桌面
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365 服务文档
+keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: 5b99c860fe7075f2a9f4f76938bebabf28833bf0
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 6b78586f4ce1f81795e01873161a9cbf7768c2ac
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283444"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
 <!--from Overview-->
 
-我们始终查找帮助确保我们客户工作场所，更加高效和安全的方式。使用 Microsoft 365 服务首先助员工创作、 安全的设备和应用程序环境中协同工作。
+我们一直在寻找方法, 以帮助客户的工作场所提高工作效率和安全性。 使用 Microsoft 365 服务的入门方式是使员工能够在创意、安全、设备和应用环境中共同工作。
 
-Microsoft 托管桌面与终结点管理、 保护和安全提供和运行 microsoft 组合的 Microsoft 365 E5 的现代的设备上的电源采用这进一步。
+microsoft 托管桌面通过将 microsoft 365 企业版的强大功能与 microsoft 提供并运行的终结点管理、保护和安全性结合在一起, 进一步进一步利用了这一功能。
 
 
 <table>
-<tr><th>为获得最佳体验</th><th>最新技术</th><th>由 Microsoft 备份</th></tr>
-<tr><td><p>Windows 10</p><p>Office 365 专业增强版</p><p></p><p>Windows Autopilot</p><p>现代设备</p></td><td><p>始终保持最新</p><p>半年功能更新 </p><p>2 或 3 年设备刷新</p></td><td><p>设备配置</p><p>安全监控和修正</p><p>应用程序部署</p><p>更新管理</p><p>桌面分析</p><p>全天候最终用户支持</p></td></tr>
+<tr><th>最佳体验</th><th>最新技术</th><th>由 Microsoft 支持</th></tr>
+<tr><td><p>Windows 10</p><p>Office 365 专业增强版</p><p></p><p>Windows Autopilot</p><p>新式设备</p></td><td><p>始终保持最新</p><p>半年功能更新 </p><p>2年或3年的设备刷新</p></td><td><p>设备配置</p><p>安全监视和修正</p><p>应用程序部署</p><p>更新管理</p><p>桌面 analytics</p><p>24x7 最终用户支持</p></td></tr>
 </table>
 
-Microsoft 托管桌面向客户提供富食品公司用户并释放更重要的任务的 IT 资源的全面 IT 解决方案。我们开发根据的反馈我们通常听到该服务：
-- 我的用户希望最新的技术。
-- 我希望使用更多可预测的成本。
-- 我希望重点关注我核心业务。 
-- 我正在淹没的复杂性。 
-- 我想要更具战略性。 
-- 很难查找足够 IT 人才。  
+Microsoft 托管桌面为客户提供了一个全面的 it 解决方案, 康用户并腾出了 it 资源来实现更重要的任务。 我们已经根据我们通常听到的反馈开发了此服务:
+- 我的用户希望获得最新的技术。
+- 我希望更具可预测成本。
+- 我想要重点关注我的核心业务。 
+- 我在复杂性方面淹没。 
+- 我希望更具战略意义。 
+- 很难找到足够的 IT 人才。  
 
-Microsoft 托管桌面提供最佳用户体验具有最新技术，均由 Microsoft。 
+microsoft 托管桌面提供了最新技术的最佳用户体验, 由 Microsoft 所有支持。 
 
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面服务说明](../service-description/index.md)
@@ -45,6 +45,6 @@ Microsoft 托管桌面提供最佳用户体验具有最新技术，均由 Micros
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-## <a name="in-this-section"></a>In this section
-- [角色和责任](roles-and-responsibilities.md)
+## <a name="in-this-section"></a>本节内容
+- [角色和职责](roles-and-responsibilities.md)
 - [技术](technologies.md)

@@ -1,55 +1,52 @@
 ---
 title: Microsoft 托管桌面支持
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365 服务文档
+keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
-ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 2e88f629764fa1c19a4a2d53337ebaebc7c173b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278517"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面支持
 
-Microsoft 托管桌面设备由和将修复或替换由 Microsoft 按照担保协议。Microsoft 将提供预防和反应的事件管理。Microsoft 跟踪 Microsoft 托管桌面管理门户中的事件。它们分类根据[严重性定义](../working-with-managed-desktop/admin-support.md#sev)。
+microsoft 托管桌面设备由进行管理, 并将由 microsoft 根据保修协议进行修复或替换。 Microsoft 将提供主动和反应性事件管理。 microsoft 托管桌面管理门户中的事件跟踪。 根据[严重性定义](../working-with-managed-desktop/admin-support.md#sev)对它们进行分类。
 
-客户可以联系 Microsoft 托管桌面操作：
-- 作为服务租户或配置现代工作区信息请求
-- 作为服务设备现代工作区的配置更改请求
+客户可以联系 Microsoft 托管桌面操作:
+- Microsoft 托管桌面租户或配置的信息请求
+- 将请求更改为 Microsoft 托管桌面设备的配置
 - 报告事件或中断
 
-## <a name="whats-included"></a>包含了什么？
+## <a name="whats-included"></a>包括哪些内容？
 
-Microsoft 托管桌面支持：
+Microsoft 托管桌面支持:
 
-- 提供工作组的专用于 Microsoft 托管桌面设备的支持工程师
-- 支持 Microsoft 托管桌面设备和分配给这些设备的最终用户
-- 授予管理 Microsoft 托管桌面设备的支持工程师限制对 Microsoft 托管桌面设备管理访问权限 
+- 提供专用于 Microsoft 托管桌面设备的支持工程师团队
+- 支持为 Microsoft 托管桌面设备和分配到这些设备的最终用户
+- 授予对 microsoft 托管桌面设备的有限管理访问权限, 以便支持工程师管理 microsoft 托管桌面设备 
 
-支持的产品：
+支持的产品:
 
-- 高级威胁保护 (WDATP) 与 Windows Defender 的 Windows 10 
-- Microsoft 365 E5 套件的子集： Outlook、 Word、 PowerPoint、 Excel、 业务客户端，Microsoft 团队的 Skype 
+- windows 10 with windows Defender 高级威胁防护 (WDATP) 
+- microsoft 365 E3 套件的子集: Outlook、Word、PowerPoint、Excel、Skype for business 客户端、Microsoft 团队 
 - 适用于企业的 Microsoft Store 
-- OneDrive for Business 客户端 
+- OneDrive for business 客户端 
 
-支持的详细信息：
+支持详细信息:
 
-- 当前： 北美、 United Kingdom 和仅澳大利亚 （全年每 24 小时 7） 
-- 英语是唯一受支持的语言的与客户的电话和聊天对话 
-- 我们合作，不替换您企业的帮助台;通过与技术支持人员仍处理的业务线 (LOB) 应用程序、 网络资源等 
-- 驻留在测试拨打和非 Microsoft 托管桌面设备中的 Microsoft 托管设备超出范围 
-
-## <a name="hardware-replacement"></a>更换硬件
-
-硬件设备将替换的条款的担保您选择的项目。设备刷新末尾的设备作为服务术语，其附加的担保。设备所需的担保范围之外的原因将替换评估替换费用，例如丢失或被盗的设备。担保下包含的内容的完整列表，请参阅[曲面担保选项](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty)。
+- 当前: 北美、加拿大 (不包括魁北克)、英国和澳大利亚 (24x7x365) 
+- 英语是与客户进行电话和聊天对话的唯一受支持的语言 
+- 我们与你的公司支持人员合作, 而不是更换。业务线 (LOB) 应用程序、网络资源等仍由你的技术支持人员处理 
+- 驻留在测试组和非 Microsoft 托管桌面设备中的 Microsoft 托管设备不在范围内 
 
 
 ## <a name="related-topics"></a>相关主题
 
-- [了解如何 IT 管理员可以获取支持](../working-with-managed-desktop/admin-support.md)
-- [了解最终用户如何获取支持](../working-with-managed-desktop/end-user-support.md)
+- [了解 IT 管理员如何才能获得支持](../working-with-managed-desktop/admin-support.md)
+- [了解最终用户可以获得支持的方式](../working-with-managed-desktop/end-user-support.md)

@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: 了解默认和其他 Microsoft 365 业务保护 Windows 10 设备中可用的设置。
-ms.openlocfilehash: ebfe5f59e544b67e5a4f2ecd990031e9221ff8e5
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解 Microsoft 365 商业版中提供的默认设置和其他设置, 以保护 Windows 10 设备。
+ms.openlocfilehash: f9e890cde7a8290a9a8e81720d32a6a2889c312f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285904"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>设置 Windows 10 电脑的设备保护设置
 
@@ -31,23 +34,21 @@ ms.locfileid: "26865395"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. 使用全局管理员凭据登录 [Microsoft 365 商业版](https://portal.office.com)。 
+1. 使用全局管理员凭据登录到[admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) 。 
     
-2. 在管理中心内的" **设备策略**"卡上，选择" **添加策略**"。
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
+2. 在左侧导航中, 选择 "**设备** \> **策略** \> " "**添加**"。
   
 3. 在" **添加策略**"窗格中，输入此策略的唯一名称。 
     
 4. 在" **策略类型**"下，选择" **Windows 10 设备配置**"。
     
-5. 展开**Secure Windows 10 设备**\>配置方式的设置。有关详细信息，请参阅[可用的设置](protection-settings-for-windows-10-pcs.md#bkmk_availablesettings)。 
+5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. See [Available settings](#available-settings) for more information. 
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
     ![Add policy pane with Windows 10 Device configuration selected](media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
-6. 接下来决定**用户会收到这些设置？** 如果您不想要使用的默认**所有用户**安全组中，选择**更改**，搜索的安全组，用户会收到这些设置\>**选择**。
+6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
     
 7. 最后，选择" **完成**"以保存该策略，并将其分配到设备。 
     
@@ -59,7 +60,7 @@ ms.locfileid: "26865395"
   
 |||
 |:-----|:-----|
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁  <br/> |需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。  <br/> |
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |
 |使用减少设备攻击面的规则  <br/> |启用此规则后，攻击面减少有助于阻止通常被恶意软件用来感染设备的操作和应用。仅当 Windows Defender 防病毒设置为"开启"时，此设置才可用。请参阅[减少攻击面](https://go.microsoft.com/fwlink/?linkid=870417)以了解详细信息。  <br/> |
@@ -70,7 +71,7 @@ ms.locfileid: "26865395"
 |允许用户访问 Cortana  <br/> |Cortana 非常有用！该功能可为你打开/关闭设置、发出指令并确保你按时赴约，因此此设置默认保留为" **开**"。  <br/> |
 |允许用户接收来自 Microsoft 的 Windows 提示和广告  <br/> |Windows 提示非常方便，可在新功能发布时为用户提供指导。  <br/> |
 |让 Windows 10 设备自动保持最新状态  <br/> |确保 Windows 10 设备会自动接收最新的更新。  <br/> |
-|在空闲此时长后关闭设备屏幕  <br/> |确保用户空闲时，公司数据受到保护。用户可能会在咖啡店等公共场所工作，短暂离开或心不在焉，此时其设备可能被人随机看到。借助此设置，可控制用户空闲状态多长时间后关闭屏幕。  <br/> |
+|在空闲此时长后关闭设备屏幕  <br/> |确保用户处于空闲时，公司数据受到保护。用户可能会在咖啡店等公共场所工作，短暂离开或心不在焉，其设备有被随意瞥视的风险。借助此设置，可以控制用户处于空闲状态多长时间后关闭屏幕。  <br/> |
    
   
 

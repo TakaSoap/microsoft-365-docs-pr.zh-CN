@@ -10,11 +10,11 @@ audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 转换云解决方案提供商订阅
 ms.date: 11/01/2017
 ms.openlocfilehash: 8109c0b00f06a15c12bbccf89e7f49dc3fa4b34a
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286196"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>转换 Microsoft 365 商业版云解决方案提供商订阅
 
@@ -35,7 +35,7 @@ ms.locfileid: "26865500"
 
     ![审查 Microsoft 365 商业版的新订阅](images/pc_customer_reviewnewsubscription.png)
 
-    **基于许可证的订阅**将显示**Microsoft 365 业务预览**和**Microsoft 365 企业版**。您需要下一步挂起的预览订阅。
+    The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. You'll need to suspend the Preview subscription next.
 
 6. 选择 **Microsoft 365 商业版预览**。
 7. 在 **Microsoft 365 商业版预览**页面上，选择**已暂停**来暂停预览订阅。

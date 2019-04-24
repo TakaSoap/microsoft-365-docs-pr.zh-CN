@@ -1,86 +1,86 @@
 ---
-title: Microsoft 托管桌面的安全性
+title: Microsoft 托管桌面中的安全性
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365 服务文档
+keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 928d01e7386bedc500e984b9c2a3240c6229bb43
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: b91b646b00869827dfb2131e9df9db38a770d9df
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278631"
 ---
-# <a name="security-in-microsoft-managed-desktop"></a>Microsoft 托管桌面的安全性
+# <a name="security-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的安全性
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft 托管桌面应用一组标准的策略，并使用许多 Microsoft 技术，可帮助 Microsoft 托管桌面的安全设备、 存储的公司数据和详细信息。下面列出的区域的详细进一步：  
+Microsoft 托管桌面应用一组标准策略并利用多种 microsoft 技术来帮助保护 Microsoft 托管桌面设备、存储的公司数据等。 下面详细介绍了下面列出的区域:  
 
-- [数据安全性](#data-security)-由 Microsoft 托管桌面和安全地存储位置收集的数据类型
-- [设备安全](#device-security)– 安全和保护 Microsoft 托管桌面设备上
-- [标识和访问管理](#identity-and-access-management)– 管理安全使用 Azure Active Directory 标识服务通过设备
-- [网络安全](#network-security)– VPN 信息和 Microsoft 托管桌面推荐的解决方案和设置
-- [信息安全](#information-security)– 可选可用的服务，以进一步保护敏感信息 
+- [数据安全性](#data-security)-Microsoft 托管桌面收集的数据类型以及安全存储的数据类型
+- [设备安全性](#device-security)– Microsoft 托管桌面设备上的安全性和保护
+- [标识和访问管理](#identity-and-access-management)-通过 Azure Active Directory 标识服务管理设备的安全使用
+- [网络安全](#network-security)-VPN 信息和 Microsoft 托管桌面建议的解决方案和设置
+- [信息安全性](#information-security)–可选的可用服务以进一步保护敏感信息 
 
 ## <a name="data-security"></a>数据安全性
 
-从客户租户收集的数据 （以使 Microsoft 托管桌面 IT 服务和操作） 存储在 Microsoft 租户位于美国的 Azure SQL 数据库中。
+从客户租户收集的数据 (支持 Microsoft 托管的桌面 IT 服务和操作) 存储在美国的 microsoft 租户中的 Azure SQL 数据库中。
 
-有关详细信息，请参阅[Microsoft Azure security](https://docs.microsoft.com/azure/security/azure-database-security-overview)。
+有关详细信息, 请参阅[Microsoft Azure 安全性](https://docs.microsoft.com/azure/security/azure-database-security-overview)。
 
-下面列出了从您的租户传输的数据类型：
+下面列出了从租户传输的数据类型:
 
-- 设备更新、 使用情况和可靠性数据
+- 设备更新、使用率和可靠性数据
 - 应用程序部署和可靠性数据
 - 更新和安全策略部署数据
-- 分配给设备的用户
+- 分配到设备的用户
 
 
 
-## <a name="device-security"></a>设备安全
+## <a name="device-security"></a>设备安全性
 
-Microsoft 托管桌面可确保托管的所有设备安全和保护，并尽可能使用以下服务检测早地威胁：
+Microsoft 托管桌面可确保所有托管设备都受到保护和保护, 并使用以下服务尽早检测到威胁:
 
 服务 | 说明
 --- | ---
-防病毒 | 安装和配置 Windows Defender AV<br>Windows Defender AV 定义是最新
-完整批量加密 |    Windows BitLocker 是 Microsoft 托管桌面设备批量加密解决方案。<br><br>到服务 onboarded 组织后，将使用 Windows BitLocker 与内置信任平台模块 (TPM) 设备休眠模式中或关闭时，防止未授权的访问本地数据加密设备。 
-监视 |    Windows Defender 高级威胁保护 (Windows Defender ATP) 用于跨所有 Microsoft 托管桌面设备的安全威胁监视。Windows Defender ATP 允许企业客户检测、 调查和响应公司网络中的高级威胁。有关详细信息，请参阅[Windows Defender 高级威胁保护。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
-软件更新 |  Microsoft 托管桌面设备始终安全使用最新的安全更新。
-安全的设备配置 |   Microsoft 托管桌面实现 Microsoft 安全基准。有关详细信息，请参阅[Windows 安全基准。](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
+防病毒 | 安装和配置 Windows Defender AV<br>Windows Defender AV 定义是最新的
+全卷加密 |    Windows BitLocker 是 Microsoft 托管桌面设备的卷加密解决方案。<br><br>在将组织载入到服务中后, 将使用带有内置信任平台模块 (TPM) 的 Windows BitLocker 对设备进行加密, 以防止在设备处于睡眠模式或关闭时对本地数据进行未经授权的访问。 
+监控 |    windows defender 高级威胁防护 (Windows defender ATP) 用于跨所有 Microsoft 托管桌面设备进行安全威胁监控。 Windows Defender ATP 允许企业客户检测、调查和响应公司网络中的高级威胁。 有关详细信息, 请参阅[Windows Defender 高级威胁防护。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+操作系统更新 |  Microsoft 托管桌面设备始终使用最新的安全更新进行保护。
+安全设备配置 |   microsoft 托管桌面实现 microsoft 安全基准。 有关详细信息, 请参阅[Windows 安全基准。](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
 
 
 ## <a name="identity-and-access-management"></a>标识和访问管理
 
-标识和访问管理保护公司资产和关键业务数据。Microsoft 托管桌面配置设备，以确保安全使用 Azure Active Directory (Azure AD) 托管标识。它是客户的责任维护其 Azure AD 租户中的准确信息。 
+标识和访问管理保护公司资产和业务关键型数据。 Microsoft 托管桌面配置设备, 以确保使用 Azure Active Directory (Azure AD) 托管标识进行安全的使用。 客户应负责在 Azure AD 租户中维护准确的信息。 
 
 服务 | 说明
 --- | ---
-生物身份验证 |  Windows Hello 允许用户使用其表面或 PIN，进行更加复杂忘记或窃取密码登录。有关详细信息，请参阅[Windows Hello。](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-多重身份验证 | Azure 多因素身份验证更紧密通过提供良好，自助服务密码重置为使用移动电话，身份验证的其他级别控制对敏感函数 Microsoft 托管桌面服务的访问。 
-标准用户权限 |  保护系统，并使其更安全，用户将分配标准用户权限。这被分配的 Windows 自动执行某些操作的全新体验的一部分。
+生物识别身份验证 |  Windows Hello 允许用户使用其面孔或 PIN 进行登录, 使密码更难遗忘或盗取。 有关详细信息, 请参阅[Windows Hello。](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
+多重身份验证 | Azure 多重身份验证通过使用移动电话提供其他级别的身份验证以及自助密码重置, 来更紧密地控制对 Microsoft 托管桌面服务敏感功能的访问。 
+标准用户权限 |  为了保护系统并使其更安全, 将为用户分配标准用户权限。 这是作为 Windows Autopilot 的现成体验的一部分分配的。
 
 
 
 ## <a name="network-security"></a>网络安全
 
-客户负责网络安全。 
+客户负责网络安全性。 
 
 服务 | 说明
 --- | ---
-VPN | 客户拥有其 VPN 基础结构，以确保可以 intranet 外部公开有限的企业资源。<br><br>最低要求： Microsoft 托管桌面需要 Windows 10 兼容和支持 VPN 解决方案。如果您的组织需要 VPN 解决方案，它需要支持 Windows 10 并且已打包和可通过 Intune 部署。有关详细信息，请联系您软件发行者。<br><br>建议：<br>-Microsoft 建议无法轻松地部署通过 Intune 到推送 VPN 配置文件的现代 VPN 解决方案。这样，始终可用的、 无缝、 可靠，安全地访问企业网络。有关详细信息，请参阅[[VPN 设置 Intune]](https://docs.microsoft.com/intune/vpn-settings-configure)。<br>-粗 VPN 客户端或旧 VPN 客户端，不建议使用由 Microsoft 同时使用 Microsoft 托管桌面，因为它会影响最终用户环境。<br>-Microsoft 建议的传出的 web 流量转直接到 Internet，而不经由 VPN 以避免任何性能问题。<br>-理想情况下，Microsoft 建议使用 Azure Active Directory 应用程序代理，而不是 VPN。
+VPN | 客户拥有自己的 VPN 基础结构, 以确保有限的公司资源可以在 intranet 外部公开。<br><br>最低要求: Microsoft 托管桌面需要 Windows 10 兼容且受支持的 VPN 解决方案。 如果你的组织需要 VPN 解决方案, 则需要支持 Windows 10 并通过 Intune 打包和部署。 有关详细信息, 请与软件发布者联系。<br><br>提出<br>-Microsoft 推荐了一个新式 vpn 解决方案, 可以通过 Intune 轻松部署到推送 vpn 配置文件。 这提供了访问企业网络的永不间断、无缝、可靠且安全的方式。 有关详细信息, 请参阅[[Intune 中的 VPN 设置]](https://docs.microsoft.com/intune/vpn-settings-configure)。<br>-使用 microsoft 托管桌面时, microsoft 不建议使用较厚的 vpn 客户端或旧版 vpn 客户端, 因为这会影响最终用户环境。<br>-Microsoft 建议传出的 web 流量直接转到 Internet, 而无需通过 VPN 即可避免任何性能问题。<br>-理想情况下, Microsoft 建议使用 Azure Active Directory 应用程序代理, 而不是 VPN。
 
 
 ## <a name="information-security"></a>信息安全
 
-客户可以配置这些可选的服务，以帮助保护企业高价值资产。 
+客户可以配置这些可选的服务, 以帮助保护公司的高价值资产。 
 
 服务 | 说明
 --- | ---
-数据恢复  | 到 OneDrive for Business 备份存储在设备上的密钥文件夹中的信息。Microsoft 托管桌面不负责使用 OneDrive for Business 同步的数据。 
-Windows 信息保护 |    对于需要高级别的信息安全性的公司，我们建议[Windows 信息保护](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)和[Azure Information Protection。](https://www.microsoft.com/cloud-platform/azure-information-protection)。 
+数据恢复  | 将设备上的关键文件夹中存储的信息备份到 OneDrive for business。 Microsoft 托管桌面不负责未与 OneDrive for business 同步的数据。 
+Windows 信息保护 |    对于需要高级别信息安全的公司, 我们建议[Windows 信息保护](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)和[Azure 信息保护。](https://www.microsoft.com/cloud-platform/azure-information-protection)。 
 

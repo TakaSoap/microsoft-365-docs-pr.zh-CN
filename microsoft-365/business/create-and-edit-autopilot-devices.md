@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: 了解如何上载设备使用自动执行某些操作在 Microsoft 365 企业版。您可以分配给设备或一组设备的配置文件。
-ms.openlocfilehash: cc1f81e9efd9b16e27b8abfbb0927d241535077e
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解如何使用 Microsoft 365 商业版中的 AutoPilot 上传设备。 您可以将配置文件分配给一个或一组设备。
+ms.openlocfilehash: fff2dbc6af45ef9d4189f23849d638172c19dfb2
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26865648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277015"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>创建和编辑 AutoPilot 设备
 
@@ -37,16 +40,14 @@ ms.locfileid: "26865648"
 - Windows 10 版本 1703 或更高版本。
     
 - 未获得过 Windows 现成体验的新设备。
-    
-1. 在 Microsoft 365 商业版 管理中心的" **设备操作**"卡上，选择" **使用 Autopilot 部署 Windows**"。 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+
+1. 在 Microsoft 365 Business 管理中心中, 选择 "**设备** \> " **AutoPilot** \> "**添加**"。
   
 2. 在" **准备 Windows**"页面上，选择" **设备**"选项卡 \>" **添加设备**"。
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. 在**添加设备**面板中，浏览到[设备列表 CSV 文件](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)已经准备好\>**保存** \> **关闭**。
+3. 在 "**添加设备**" 面板上, 浏览到已准备好**** \> **** \>保存的[设备列表 CSV 文件](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)。
     
     可从硬件供应商获取此信息，也可以使用将生成 csv 文件的 [G-et-WindowsAutoPilotInfo PowerShell 脚本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)获取。 
     
