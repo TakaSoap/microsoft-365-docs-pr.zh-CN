@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 OS 部署和功能更新的选项。
-ms.openlocfilehash: 6aae2fb39937bec1eebfdc11e403f3835cb895cd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: b860a56ba2ed163311a8a92d8dd408dcb8983821
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290070"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步骤 6：OS 部署和功能更新
-
-了解选项并在 System Center Configuration Manager 或 Microsoft Deployment Toolkit 中使用升级和映像方法为操作系统部署做好准备。
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
@@ -36,7 +34,7 @@ ms.locfileid: "26865694"
 </table>
 
 >[!NOTE]
->“OS 部署和功能更新”是推荐的部署流程轮的第六步，涉及 Windows 10 OS 部署、升级和功能更新。若要了解完整的桌面部署流程，请访问[新式桌面部署中心](https://aka.ms/HowToShift)。
+>“OS 部署和功能更新”是推荐的部署流程轮的第六步，涉及 Windows 10 OS 部署、升级和功能更新。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
 如果一直按照部署流程轮执行至此，那么至少已部分完成了设备和应用准备步骤、准备了基础结构、配置和收集了应用包、制定了迁移用户文件和配置默认设置的计划，以及制定了保留现有安全控件和部署可能的新控件的计划。
@@ -109,7 +107,7 @@ ms.locfileid: "26865694"
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows 10 中提供的一个新选项是使用 Windows Autopilot 将新电脑配置为你的硬件刷新循环的一部分。此处，可以与提供支持的硬件供应商协作，以自定义默认 Windows 安装体验 – 例如，消除呈现给用户的许可协议或遥测设置等选项。
+Windows 10 中提供的一个新选项是使用 Windows Autopilot 将新电脑配置为你的硬件刷新循环的一部分。 此处，可以与提供支持的硬件供应商协作，以自定义默认 Windows 安装体验 – 例如，消除呈现给用户的许可协议或诊断数据设置等选项。
 
 然后，当用户使用其 Azure AD 凭据在安装期间登录到电脑时，设备将注册到 Microsoft Intune，这将接管部署过程并应用应用程序、软件更新配置和合规性策略。Windows Autopilot 也可选择阻止用户访问第一个会话，直到设置完成。
 
@@ -117,9 +115,21 @@ Windows 10 中提供的一个新选项是使用 Windows Autopilot 将新电脑�
 
 [Windows Autopilot 先决条件](https://docs.microsoft.com/zh-CN/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
+## <a name="windows-update-for-business-for-feature-updates"></a>适用于企业的 Windows 更新的功能更新
+
+适用于企业的 Windows 更新是一项免费服务，支持 IT 专业人员通过将设备直接连接到 Windows 更新服务，使 Windows 10 设备始终保持最新状态。 适用于企业的 Windows 更新可以通过组策略或通过 MDM 解决方案（如 Microsoft Intune）进行配置，并允许 IT 专业人员创建[部署环](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-deployment-rings-windows-10-updates)以验证新的内部版本。 它集成到现有管理工具中，如 Windows Server Update Services (WSUS)、System Center Configuration Manager（当前分支）和 Microsoft Intune。 此外，适用于企业的 Windows 更新支持对等传送，以帮助优化带宽效率并减少网络拥塞。
+
+有关适用于企业的 Windows 更新的详细信息，请查看以下文档：
+
+- [使用适用于企业的 Windows 更新部署更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-manage-updates-wufb)
+- [配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-configure-wufb)
+- [将适用于企业的 Windows 更新与现有管理工具集成](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-integrate-wufb)
+- [使用组策略配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-wufb-group-policy)
+- [使用 Microsoft Intune 配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/intune/windows-update-for-business-configure)
+
 ## <a name="next-step"></a>后续步骤 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[步骤 7：Windows 和 Office 即服务](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[步骤 7：Windows 和 Office 服务](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>上一步
 

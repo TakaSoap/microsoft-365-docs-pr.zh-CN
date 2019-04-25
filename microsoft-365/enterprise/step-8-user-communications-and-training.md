@@ -12,17 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解如何使用通信和培训让最终用户为新式桌面做好准备。
-ms.openlocfilehash: 7737828600a9708b0b422a1fada6e0296de67f0f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: 了解如何使用通信和培训让最终用户为 Windows 10 和 Office 365 专业增强版做好准备。
+ms.openlocfilehash: fb0dc2dfc571d61c9d480204d0e3e12c58cf3aca
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289898"
 ---
 # <a name="step-8-user-communications-and-training"></a>步骤 8：用户通信和培训
-
-通知你的用户并让他们为跨 Office 365、Windows 10 和含有 Azure Active Directory 等新安全和和合规性控件的新式工作区体验做好准备。
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
@@ -31,15 +29,15 @@ ms.locfileid: "26865976"
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>步骤 8：用户通信和培训</strong></p>
 <p>在将你的电脑切换至 Windows 10 和 Office 365 专业增强版后，确保你的用户了解新体验和新的工作方式。请了解如何利用用户采用帮助（通过 Microsoft FastTrack）、培训材料和通信模板，以及如何通过新方法来监控用户的接受和使用情况。</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->用户通信和培训是我们建议的部署过程轮的第八步，它涵盖了通知用户并让其做好准备的提示和建议。若要查看完整的桌面部署过程，请访问[新式桌面部署中心](https://aka.ms/HowToShift)。
+>用户通信和培训是我们建议的部署过程轮的第八步，它涵盖了通知用户并让其做好准备的提示和建议。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-此处的诀窍在于，当某些用户可能担心更新会影响其工作效率或造成工作流的更改，或当他们必须学习新知识时，如何向他们介绍更新。
+通知你的用户并让他们为跨 Office 365、Windows 10 和含有 Azure Active Directory 的新安全和和合规性控件的新式工作区体验做好准备，对于推动采用非常重要。 此处的诀窍在于，当某些用户可能担心更新会影响其工作效率或造成工作流的更改，或当他们必须学习新知识时，如何向他们介绍更新。
 
 好消息是，如果你是从 Windows 7 和 Office 2010 或 Office 2013 更新，则会有许多人熟悉 Windows 10 和在其个人设备上运行的更高版本的 Office，所有这些都有助于减少更改所造成的影响。
 
@@ -91,7 +89,7 @@ ms.locfileid: "26865976"
 
 一旦你对第一阶段的结果感到满意，就可以面向更大的一组用户，作为你的第二个试点阶段。这一阶段应包含用户角色、设备类型、Windows 应用和 Office 加载项这些具有代表性的混合。从这些组返回的数据将通过 Analytics 使用，以面向第 3 阶段（更广泛的部署）的初始波动。
 
-请记住，此阶段和未来阶段所使用的所有电脑都应登录到 Analytics 服务，以便你能够收集有关设备的应用运行状况的遥测，以及通过传递优化节省的带宽和 Windows Hello 登录的使用。
+请记住，此阶段和未来阶段所使用的所有电脑都应登录到 Analytics 服务，以便你能够收集有关设备的应用运行状况的诊断数据，以及通过传递优化节省的带宽和 Windows Hello 登录的使用。
 
 在这一阶段，通信更改并帮助用户利用新功能尤为重要。用户经常将来自 IT 团队的电子邮件或其他通信视为非优先级或忽略它们。因此，这有助于与管理层沟通，以获取其在通信更改方面的帮助，并推动新工具和技术的使用。
 
@@ -123,14 +121,14 @@ Microsoft 的 IT 展示系列是与 Windows 10 部署相关的内容的另一个
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>第 3 阶段和之后：广泛的产品部署 
 
-在进入广泛部署阶段时，你已优化你的流程、通信、培训和自助服务工具。现在，可以使用通过遥测收集的数据来面向越来越多的电脑。
+在进入广泛部署阶段时，你已优化你的流程、通信、培训和自助服务工具。 现在，可以使用通过收集的诊断数据来面向越来越多的电脑。
 
 以可以管理的速率部署到你的 IT 部门、支持人员、用户和网络容量。你可以随时返回到部署过程轮中的步骤 2，以优化你的网络，甚至进一步使用对等缓存、LEDBAT 和其他技术来推动更快传输部署相关的数据。
 
-除了通过分析工具监视的遥测以外，还可以通过细化的方式监视 Office 365 和 Microsoft 365 服务，包括在管理中心的工作负载中的详细使用情况报告和通过 Power BI 使用管理员仪表板。这些是出色的工具，可帮助你在推出新工具以共同工作（例如 Microsoft Teams）时设置和跟踪目标，或提供共享文件的新方法（例如 OneDrive）。
+除了通过分析工具监控的诊断数据外，你还可以精确监控 Office 365 和 Microsoft 365 服务使用情况，按管理中心的工作负载并通过 Power BI 使用管理仪表板提供详细使用报告。 这些都是很出色的工具，帮助你在推出新的团队协作工具（如 Microsoft 团队）或共享文件的新方法（如 OneDrive）时设置和跟踪目标。
 
 在组织中的每台电脑安装了 Windows 10 和 Office 365 专业增强版后的很长一段时间内，新技术的接受和采用都将持续。如果未投入时间来通知和培训用户有关新功能的使用，他们将不会更改他们的工作方式。最后，新的服务模型为 Windows 的半年日程安排提供新功能，（可选）并为 Office 提供月度日程安排，通信将持续进行。
 
 ## <a name="previous-step"></a>上一步 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[步骤 7：Windows 和 Office 即服务](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[步骤 7：Windows 和 Office 服务](https://aka.ms/mdd7)
