@@ -1,10 +1,9 @@
 <a name="crit-networking-step1"></a>
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必需：网络已准备就绪可供 Microsoft 365 企业版使用
 
-- 办公室具有足够的 Internet 带宽，可用于 Microsoft 365 流量，其中包括 Office 365、Microsoft Intune、Windows 10 企业版安装和更新
-- 适用所有常规 Internet 流量的中心办公室
-- 适用“优化”类别终结点流量的分公司
+- 办公室具有足够的 Internet 带宽，可用于 Microsoft 365 流量，其中包括 Office 365、Microsoft Intune 与 Windows 10 企业版安装和更新
 - Office 365 参考体系结构的整个网络地图
+- 网络更改已经过试用和测试，符合流量延迟要求
 
 如果需要，可在[步骤 1](../networking-provide-bandwidth-cloud-services.md) 中进行设置以满足此要求。
 

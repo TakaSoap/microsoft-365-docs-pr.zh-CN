@@ -2,22 +2,22 @@
 title: 迁移到 Microsoft 365 企业版
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成将 Microsoft Office、Office 服务器和 Windows 的版本迁移到组织中的 Microsoft 365 企业版的过程。
-ms.openlocfilehash: 8fc0e0b117ef55597efeb139e68b6dbdd03de2db
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f165e09b58b5208fa4d9aae24f7d5cdda385c639
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291260"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>迁移到 Microsoft 365 企业版
 
@@ -31,6 +31,12 @@ ms.locfileid: "26865708"
 
 随着时间的推移，完成所有这些迁移使你的组织更接近[新式工作区](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，这是一种安全且集成的环境，可释放组织中的团队合作精神和创造力，所有这些都由 Microsoft 365 企业版启用和授权。 
 
+有关迁移特定 Office 365 工作负载的用户和数据的信息：
+
+- 从 Exchange Server 到 Exchange Online 的用户邮箱，请参阅 [Exchange Online 工作负载](exchangeonline-workload.md)。
+- 从 SharePoint Server 到 SharePoint Online 的 SharePoint 数据，请参阅 [SharePoint Online 工作负载](sharepoint-online-onedrive-workload.md)。
+- Microsoft Teams 的 Skype for Business，请参阅 [Microsoft Teams 工作负载](teams-workload.md)。
+
 ## <a name="migration-for-microsoft-office-client-products"></a>Microsoft Office 客户端产品迁移
 
 在许多大小组织中，你可能都会使用旧版 Office 客户端产品（如 Word、Excel 和 PowerPoint）的组合。这些旧版本：
@@ -42,7 +48,7 @@ Microsoft 365 企业版包含 Office 365 专业增强版，这是 Office 365 客
 
 ### <a name="office-2007"></a>Office 2007
 
-对于 Office 2007 版本中的 Office 版本，停止提供支持时间已过。有关详细信息，请参阅 [Office 2007 停止提供支持路线图](https://support.office.com/article/office-2007-end-of-support-roadmap-416c54d8-823c-4def-bb7a-6a9b14ef2745)。
+对于 Office 2007 版本中的 Office 版本，停止提供支持时间已过。有关详细信息，请参阅 [Office 2007 停止提供支持路线图](https://docs.microsoft.com/deployoffice/office-2007-end-support-roadmap)。
 
 与其通过 Office 2010、Office 2013 或 Office 2016 升级运行 Office 2007 的计算机，不如考虑：
 
@@ -54,7 +60,7 @@ Office 365 专业增强版会自动安装更新，并可利用 Office 365 中基
 
 ### <a name="office-2010"></a>Office 2010
 
-对于 Office 2010 版本中的 Office 版本，停止提供支持时间为 2020 年 10 月 13 日。有关详细信息，请参阅 [Office 2010 停止提供支持路线图](https://support.office.com/article/office-2010-end-of-support-roadmap-2a58999c-4d83-4e67-9fde-bc96d487105e)。
+对于 Office 2010 版本中的 Office 版本，停止提供支持时间为 2020 年 10 月 13 日。有关详细信息，请参阅 [Office 2010 停止提供支持路线图](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)。
 
 与其通过 Office 2013 或 Office 2016 升级运行 Office 2010 的计算机（两种方式均必须手动更新），不如考虑： 
 
@@ -89,11 +95,11 @@ Microsoft 365 企业版包括 Office 365，其中包括基于云的 Office 服�
 
 对于 Office 2007 版本中的服务器产品，停止提供支持时间已过。有关详细信息，请参阅以下文章：
 
-- [Exchange 2007 停止提供支持路线图](https://support.office.com/article/exchange-2007-end-of-support-roadmap-c3024358-326b-404e-9fe6-b618e54d977d)
-- [SharePoint Server 2007 停止提供支持路线图](https://support.office.com/article/sharepoint-server-2007-end-of-support-roadmap-ba124775-d5c0-4d68-b88d-8458ad4c3717)
-- [Project Server 2007 停止提供支持路线图](https://support.office.com/article/project-server-2007-end-of-support-roadmap-d379018f-72b7-4284-b40a-6c23c8ae38fe)
-- [Office Communications Server 停止提供支持路线图](https://support.office.com/article/office-communications-server-end-of-support-roadmap-54f3d5ba-bdf9-4b37-a9e8-f1ab452d4f78)
-- [PerformancePoint Server 2007 停止提供支持路线图](https://support.office.com/article/performancepoint-server-2007-end-of-support-roadmap-89d9feee-2285-419c-8c14-0f7f583536e0)
+- [Exchange 2007 停止提供支持路线图](https://docs.microsoft.com/office365/enterprise/exchange-2007-end-of-support)
+- [SharePoint Server 2007 停止提供支持路线图](https://docs.microsoft.com/office365/enterprise/sharepoint-2007-end-of-support)
+- [Project Server 2007 停止提供支持路线图](https://docs.microsoft.com/office365/enterprise/project-server-2007-end-of-support)
+- [Office Communications Server 停止提供支持路线图](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+- [PerformancePoint Server 2007 停止提供支持路线图](https://docs.microsoft.com/office365/enterprise/pps-2007-end-of-support)
 
 与其通过 Office 2010、Office 2013 或 Office 2016 版本中的服务器产品升级 Office 2007 版本中的服务器产品，不如考虑：
 
@@ -105,8 +111,8 @@ Microsoft 365 企业版包括 Office 365，其中包括基于云的 Office 服�
 
 对于 Office 2010 版本中的服务器产品，已针对以下内容确定了停止提供支持的时间：
 
-- [Exchange Server 2010](https://support.office.com/article/exchange-2010-end-of-support-roadmap-e150e7b9-c432-4c8d-a0ae-c11847129a7d)
-- [SharePoint Server 2010](https://support.office.com/article/upgrading-from-sharepoint-2010-985a357f-6db7-401f-bf7a-1bafdf1f312c)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
 与其通过 Office 2013 或 Office 2016 版本中的服务器产品升级 Office 2010 版本中的服务器产品，不如考虑：
 

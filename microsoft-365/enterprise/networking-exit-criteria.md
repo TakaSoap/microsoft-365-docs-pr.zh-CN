@@ -3,36 +3,35 @@ title: 第 1 阶段：网络基础结构退出条件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对网络基础结构的条件。
-ms.openlocfilehash: 8161fa2b92ffb4c7c4713e9356c0bc1bfec39d07
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291364"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第 1 阶段：网络基础结构退出条件
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-如果网络基础结构符合以下条件，则可继续第 2 阶段。
+确保你的网络基础结构符合以下必需条件，以及你认为可选的那些条件。
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必需：网络已准备就绪可供 Microsoft 365 企业版使用
 
-- 办公室具有足够的 Internet 带宽，可用于 Microsoft 365 流量，其中包括 Office 365、Microsoft Intune、Windows 10 企业版安装和更新
-- 适用所有常规 Internet 流量的中心办公室
-- 适用“优化”类别终结点流量的分公司
+- 办公室具有足够的 Internet 带宽，可用于 Microsoft 365 流量，其中包括 Office 365、Microsoft Intune 与 Windows 10 企业版安装和更新
 - Office 365 参考体系结构的整个网络地图
+- 网络更改已经过试用和测试，符合流量延迟要求 
 
 如果需要，可在[步骤 1](networking-provide-bandwidth-cloud-services.md) 中进行设置以满足此要求。
 
@@ -78,8 +77,10 @@ ms.locfileid: "26865388"
 
 如果需要，可在[步骤 5](networking-optimize-tcp-performance.md) 中设置此选项。
 
-## <a name="next-phase"></a>下一阶段
+## <a name="results-and-next-steps"></a>结果和后续步骤
+
+你的 Intranet 用户已准备好通过有效的网络路径或在 Internet 上使用 Microsoft 365 云服务。
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Microsoft 365 企业版端到端部署过程中的下一个阶段是[标识](identity-infrastructure.md)。 |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是[标识](identity-infrastructure.md)。 |

@@ -9,7 +9,7 @@ Office 365 和 Intune 订阅的 Azure AD 租户是使用 Internet 域名（例�
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>可选：已添加用户并已对其许可
 
-已添加对应于用户的帐户（直接添加到 Office 365 和 Intune 订阅的 Azure AD 租户，或从本地 Windows Server AD 中的目录同步）。
+The accounts corresponding to your users are 已添加对应于用户的帐户（直接添加到 Office 365 和 Intune 订阅的 Azure AD 租户，或从本地 Active Directory 域服务 (AD DS) 中的目录同步）。
 
 添加用户后，即可向其分配 Microsoft 365 企业版许可证（可直接分配为全局或用户管理员，或通过组成员身份自动分配）。
 
@@ -27,8 +27,8 @@ Office 365 和 Intune 订阅的 Azure AD 租户是使用 Internet 域名（例�
 若要对运行 Windows 7 或 Windows 8.1 的设备启动 Configuration Manager 任务序列以执行就地升级，必须完成以下设置：
 
 - 设置合适的 Windows 诊断数据级别
-- 验证 Windows 升级准备就绪情况
-- 创建一个 Configuration Manager 任务序列，其中包括使用 Windows 10 OS 映像的设备集合和操作系统部署
+- 已验证 Windows 升级准备就绪情况
+- 已创建一个 Configuration Manager 任务序列，其中包括使用 Windows 10 OS 映像的设备集合和操作系统部署
 
 完成以上设置后，即可对已准备好升级 Windows 的设备执行就地升级。为了发挥 Microsoft 365 企业版的最佳功能，请尽量将运行 Windows 7 和 Windows 8.1 的设备进行升级。 
 
@@ -41,13 +41,13 @@ Office 365 和 Intune 订阅的 Azure AD 租户是使用 Internet 域名（例�
 
 若要使用 Windows Autopilot 对新设备部署和自定义 Windows 10 企业版，必须完成以下设置：
 
-- 设置合适的 Windows 诊断数据级别
-- 已完成 Windows Autopilot 的先决条件，其中包括：
-- 设备注册和 OOBE 自定义
-- 针对 OOBE 的公司品牌塑造
-- Microsoft Intune 中的 MDM 自动注册
-- Windows Autopilot 所使用的云服务的网络连接
-- 设备必须已预安装 Windows 10 版本 1703 或更高版本
+- 已配置合适的 Windows 诊断数据级别
+- 已配置 Windows Autopilot 的先决条件，其中包括：
+   - 设备注册和 OOBE 自定义
+   - 针对 OOBE 的公司品牌塑造
+   - Microsoft Intune 中的 MDM 自动注册
+   - Windows Autopilot 所使用的云服务的网络连接
+- 已预安装 Windows 10 版本 1703 或更高版本的设备
 - 已为组织选择了 Windows Autopilot 部署计划
 
 一旦 Windows Autopilot 配置准备就绪，即可使用它来为以下设备配置和自定义开箱即用 (OOBE) 的 Windows 10 企业版体验：

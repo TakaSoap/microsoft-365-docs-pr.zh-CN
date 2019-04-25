@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Windows 和 Office 重要的安全性和合规性注意事项。
-ms.openlocfilehash: 3b0e9ae38f988b8c148fe67eeeb629a9fce23037
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ff3adb5ef517c3b3115b867b585c090329ed6ac6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290022"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步骤 5：安全性和合规性注意事项
-
-在从以前版本的 Windows 和 Office 迁移时，请检查作为新式桌面部署的一部分的面向新的安全性和合规性功能的选项，并查看注意事项和常见障碍。
 
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
@@ -36,10 +34,10 @@ ms.locfileid: "26865866"
 </table>
 
 >[!NOTE]
->安全性和合规性是我们涉及 Windows 10 和 Office 365 专业增强版安全性和合规性注意事项的建议部署过程的第五个步骤。若要查看完整的桌面部署过程，请访问[新式桌面部署中心](https://aka.ms/HowToShift)。
+>安全性和合规性是我们涉及 Windows 10 和 Office 365 专业增强版安全性和合规性注意事项的建议部署过程的第五个步骤。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-仅 Windows 10 中的许多安全相关功能就在推动向更新平台迁移。另外，与 Office 365 云服务和 Azure Active Directory 标识选项集成，可以为数据、设备和用户提供持续更新的新保护。
+在从以前版本的 Windows 和 Office 迁移时，是时候查看作为 Windows 10 和 Office 365 专业增强版部署的一部分的面向新的安全性和合规性功能的选项，并查看注意事项和常见障碍。 仅 Windows 10 中的许多安全相关功能就在推动向更新平台迁移。 另外，与 Office 365 云服务和 Azure Active Directory 标识选项集成，可以为数据、设备和用户提供持续更新的新保护。
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>克服潜在的安全性相关的部署障碍
 

@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 217418cfce66baa02b30ae7d8a01b938a1f2366e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
+ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289126"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33296162"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中注册设备
 
@@ -59,7 +59,7 @@ Microsoft 托管桌面可以与全新设备配合使用, 也可以重新使用�
 >在完成对目标设备的注册之前, 请勿再次打开目标设备。 
 
 >[!NOTE]
->为方便起见, 可以下载此 CSV 文件的[模板](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx)。
+>为方便起见, 可以下载此 CSV 文件的[模板](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx)。
 
 您的文件需要包含与示例 1 (制造商、模型等)**完全相同的列标题**, 但您自己的数据用于其他行。 如果使用模板, 请在文本编辑工具 (如记事本) 中打开它, 并考虑仅保留第1行中的所有数据, 仅在第2行和更低的行中输入数据。 
     
@@ -100,7 +100,7 @@ Microsoft 托管桌面可以与全新设备配合使用, 也可以重新使用�
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息, 请参阅[故障排除](register-devices-self.md#troubleshooting)。 |
 | 为用户准备就绪 | 注册成功, 现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们, 因此无需执行任何进一步的准备。 |
-| Active | 设备已传递给最终用户, 并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
+| 可用 | 设备已传递给最终用户, 并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
 | 不再 | 设备已传递给最终用户, 并且已向其注册了你的租户。 但是, 他们最近未使用设备 (最近7天)。  | 
 
 
@@ -110,7 +110,7 @@ REST API 可用于实现更大的灵活性和重复频繁单独的设备注册�
 
 
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 | 错误消息 | 详细信息 |
 |---------------|-------------|

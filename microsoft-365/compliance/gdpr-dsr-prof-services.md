@@ -2,20 +2,20 @@
 title: 符合 GDPR 的 Microsoft 支持和专业服务数据主体请求
 description: 介绍了 Microsoft 支持和专业服务如何处理数据主体请求。
 keywords: 专业服务，Microsoft 365，Microsoft 365 教育版，Microsoft 365 文档，GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: dd86914c0b3931f0cddc762db3f5916a34853eff
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278240"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Microsoft 支持和专业服务与 GDPR 数据主体请求
 
@@ -23,7 +23,7 @@ ms.locfileid: "26865680"
 
 Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支持专业人员组成的多元化团队，专门负责履行 Microsoft 让客户实现更多收获更多的使命。我们的专业服务团队总共包括 21000 多名顾问、数字顾问、顶级支持、工程师和销售专业人员，他们在 191 个国家/地区工作，支持 46 种不同语言，每个月管理数百万个服务活动，并通过本地、电话、网络、社区和自动化工具与客户和合作伙伴交互。此组织利用将我们与企业客户连接在一起的由合作伙伴、技术社区、工具、诊断以及渠道所构成的广泛网络，汇聚了整个 Microsoft 产品组合的广泛专业知识。
 
-在此处了解有关 Microsoft 专业服务的详细信息 (<https://www.microsoft.com/microsoftservices/professional_services.aspx>)，也可以访问 Microsoft 信任中心上的“Microsoft 专业服务”部分 (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>)。Microsoft 专业服务非常重视一般数据保护条例 (GDPR) 规定的义务。本文档中的信息旨在回答客户有关 Microsoft 的支持和咨询服务如何响应和协助客户响应 GDPR 规定的数据主体请求 (DSR) 义务的问题。<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+有关 Microsoft 专业服务的详细信息，请查看此处并访问 Microsoft 信任中心上的“Microsoft 专业服务”部分 (<https://www.microsoft.com/trustcenter/professional-services>)。 Microsoft 专业服务非常重视《一般数据保护条例》(GDPR) 规定的义务。 本文档中的信息旨在回答客户有关 Microsoft 的支持和咨询服务如何响应和协助客户响应 GDPR 规定的数据主体请求 (DSR) 义务的问题。<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
 ### <a name="introduction-to-dsrs"></a>DSR 简介 
 
@@ -76,20 +76,21 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 本指南介绍了客户在使用 Microsoft 专业服务时可能遇到的 4 种应用场景。
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>针对与 Microsoft 打交道的客户联系人的 DSR
+- **针对与 Microsoft 打交道的客户联系人的 DSR**
+
 解释 Microsoft 如何响应来自客户联系人或 IT 管理员的行使其数据主体权利的请求。
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>针对与 Microsoft 打交道的最终用户的 DSR
+- **针对与 Microsoft 打交道的最终用户的 DSR**
 
 解释 Microsoft 如何响应来自客户的员工或其他数据主体的行使其权利的请求。
 
-## <a name="dsr-for-customer-provided-data-commercial-support"></a>针对客户提供数据的 DSR：商业支持
+- **针对客户提供数据的 DSR：商业支持**
 
 解释当客户收到来自其员工或其他数据主体的行使其权利的请求时如何从 Microsoft 获得帮助，并且数据主体的个人数据是在支持服务期间由 Microsoft 支持收集的。
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-## <a name="dsr-for-customer-provided-data-consulting-services-including-fasttrack-migration-services"></a>针对客户提供数据的 DSR：包括 FastTrack 迁移服务在内的咨询服务 
+- **针对客户提供数据的 DSR：包括 FastTrack 迁移服务在内的咨询服务** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 

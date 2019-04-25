@@ -3,24 +3,24 @@ title: Microsoft 365 企业版测试实验室指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: df723647748532936e40bbdb4e34ff698b9fa650
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 027386f9b44d09d2927c2473d1ef27381f82f969
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283642"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -41,7 +41,7 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 - 当你想要在仅限云环境（其中不包含任何本地组件）中配置并演示 Microsoft 365 企业版特性和功能时，请使用[轻型基础配置](lightweight-base-configuration-microsoft-365-enterprise.md)。
 
-- 当你想要在混合云环境（其中会使用 Windows Server Active Directory (AD) 域等本地组件）中配置并演示 Microsoft 365 企业版特性和功能时，请使用[模拟企业基础配置](simulated-ent-base-configuration-microsoft-365-enterprise.md)。
+- 当你想要在混合云环境（其中会使用 Active Directory 域服务 (AD DS) 域等本地组件）中配置并演示 Microsoft 365 企业版特性和功能时，请使用[模拟企业基础配置](simulated-ent-base-configuration-microsoft-365-enterprise.md)。
     
 ## <a name="identity"></a>标识
 
@@ -49,15 +49,15 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 - [密码哈希同步](password-hash-sync-m365-ent-test-environment.md)
   
-   启用和测试来自 Windows Server AD 域控制器的基于密码哈希的目录同步。
+   启用和测试来自 Active Directory 域服务 (AD DS) 域控制器的基于密码哈希的目录同步。
 
 - [传递身份验证](pass-through-auth-m365-ent-test-environment.md)
   
-   启用和测试到 Windows Server AD 域控制器的传递身份验证。
+   启用和测试到 AD DS 域控制器的传递身份验证。
 
 - [Azure AD 无缝单一登录](single-sign-on-m365-ent-test-environment.md)
   
-   使用 Windows Server AD 域控制器启用和测试 Azure AD 无缝单一登录 (SSO)。
+   使用 AD DS 域控制器启用和测试 Azure AD 无缝单一登录 (SSO)。
 
 - [多重身份验证](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -66,6 +66,10 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 - [保护全局管理员帐户](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
    使用 Office 365 云应用安全和条件访问策略锁定全局管理员帐户。
+
+- [密码写回](password-writeback-m365-ent-test-environment.md)
+
+   使用密码写回来从 Azure AD 更改 AD DS 用户帐户上的密码。
 
 - [密码重置](password-reset-m365-ent-test-environment.md)
 
@@ -83,9 +87,9 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 若要演示与移动设备管理相关的特性和功能，请参阅：
 
-- [MAM 策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [设备符合性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-   创建适用于 iOS 和 Android 设备的用户组和移动应用程序管理 (MAM) 策略。
+   为 Windows 10 设备创建用户组和设备合规性策略。
     
 - [注册 iOS 和 Android 设备](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
@@ -104,12 +108,10 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
     
    配置 Office 365 标签，并将标签应用于 SharePoint Online 团队网站中的文档。
     
-- [用于 Microsoft 365 企业版测试环境的 Privileged Access Management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
+- [Privileged Access Management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    配置 Privileged Access Management，以便实时访问 Office 365 组织中的提升和特权任务。
 
 ## <a name="see-also"></a>另请参阅
 
-[使用云应用测试实验室指南体验 Microsoft 云](https://mva.microsoft.com/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
-    
-[One Microsoft 云测试实验室指南堆栈](http://aka.ms/catlgstack)
+[使用云应用测试实验室指南 (TLG) 测试 Office 365](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)

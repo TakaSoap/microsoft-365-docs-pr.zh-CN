@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何迁移用户文件和设置。
-ms.openlocfilehash: 51811cf972328cc26687b45fb65e2bdd6d58af1f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cb5d670d06b284bb9191447ce461835728223f27
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291727"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步骤 4：用户文件和设置迁移
 
-将用户文件和设置移至新机或刷新后的电脑的流程最为关键；只能成功，不能失败。你可以对每台电脑进行手动迁移，也可以选择几种方法之一来自动执行该流程。无论选择哪种迁移方法，都需要解决以下三个问题：用户文件传输、文件设置，以及管理 Windows 10 的“开始”和任务栏布局。
+将用户文件和设置移至新机或刷新后的电脑的流程最为关键；只能成功，不能失败。 你可以对每台电脑进行手动迁移，也可以选择几种方法之一来自动执行该流程。 无论选择哪种迁移方法，都需要解决以下三个问题：用户文件传输、文件设置，以及管理 Windows 10 的“开始”和任务栏布局。
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
@@ -30,13 +30,13 @@ ms.locfileid: "26865853"
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>步骤 4：用户文件和设置</strong></p>
-<p>刷新或更换电脑时，可以通过自动执行用户状态备份和还原来节省时间。借助新的云文件同步选项，可以将每个用户的“桌面”、“文档”和“图片”文件夹强制同步到 OneDrive，以便在新 Windows 安装上无缝访问文件。</p></td>
+<p>刷新或更换电脑时，可以通过自动执行用户状态备份和还原来节省时间。针对云文件同步的新选项使你能够将每个用户的桌面、文档和图片文件夹强制同步到 OneDrive，以便从新 Windows 安装上无缝访问文件。</p></td>
 <td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->虽然在移至 Office 365 专业增强版后可以继续使用过去使用的迁移过程，但我们建议使用 OneDrive 的“已知文件夹移动”（见下方）。若要查看完整的桌面部署过程，请访问[新式桌面部署中心](https://aka.ms/HowToShift)。
+>虽然在移至 Office 365 专业增强版后可以继续使用过去使用的迁移过程，但我们建议使用 OneDrive 的“已知文件夹移动”（见下方）。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
 大规模部署最棘手且通常大多数手动执行的任务之一是，转移用户文件和设置。本文将介绍把用户迁移到新电脑、已刷新电脑和重置映像电脑时可用的选项。

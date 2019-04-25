@@ -4,19 +4,21 @@ description: 努力符合一般数据保护条例 (GDPR) 的要求时，可遵�
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/15/2018
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: e153edc2d3a2b4b1476ec62085328a031624be88
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 8bc038e067424d27f1032d99cfb169ac9b204385
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285061"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -30,7 +32,7 @@ GDPR 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或
 |||
 |:-----|:-----|
 |**阶段**|**结果**|
-|30 天|**了解 GDPR 要求，并考虑与 Microsoft GDPR 咨询合作伙伴合作。**<br>• 衡量准备情况基准，并获取后续步骤的相关建议。<br>• 与 Microsoft GDPR 咨询合作伙伴合作，以共同制定数据主体请求 (DSR) 响应内部指南，对组织执行 GDPR 合规性差距分析，并绘制合规性路线图。<br><br>**为了符合 DSR 要求，开始发现要存储的个人数据的类型及其驻留位置。**<br>• 使用 Office 365 安全与合规中心内的内容搜索和电子数据展示来发现整个组织中的个人数据。<br>• 处理海量内容时，使用由机器学习技术提供支持的 Office 365 高级电子数据展示，执行更高效、更准确的内容搜索。<br>|
+|30 天|**了解 GDPR 要求，并考虑与 Microsoft GDPR 咨询合作伙伴合作。**<br>• 衡量准备情况基准，并获取后续步骤的相关建议。<br>• 与 Microsoft GDPR 咨询合作伙伴合作，以共同制定数据主体请求 (DSR) 响应内部指南，对组织执行 GDPR 合规性差距分析，并绘制合规性路线图。<br><br>**为了符合 DSR 要求，开始发现要存储的个人数据的类型及其驻留位置。**<br>• 使用安全与合规中心内的内容搜索和电子数据展示来发现整个组织中的个人数据。<br>• 处理海量内容时，使用由机器学习技术提供支持的 Office 365 高级电子数据展示，执行更高效、更准确的内容搜索。<br>|
 |90 天|**使用 Microsoft 365 数据管理和合规性功能开始推行合规性要求。**<br>• 使用 Microsoft 合规性管理器来评估和管理合规性风险。<br>• 帮助用户根据 GDPR 规定来标识和分类个人数据。<br><br>**使用 Microsoft 365 安全功能来防范数据泄露并保护个人数据。**<br>• 保护管理员和最终用户帐户。<br>• 防范恶意代码，并实施数据泄露防护和响应措施。<br>• 使用审核日志来监视潜在恶意活动，并启用数据泄露取证分析。<br>• 使用数据丢失防护 (DLP) 策略来标识和保护敏感数据。<br>• 防范最常见的攻击途径，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
 |90 天后|**使用 Microsoft 365 高级数据管理工具和信息保护来实现个人数据持续管理计划。**<br>• 自动标识文档和电子邮件中的个人信息。<br>• 保护整个组织中设备上存储的个人数据，并确保使用合规的公司设备访问敏感数据。<br>• 确保敏感个人信息的存储和访问符合公司策略。<br>• 实现数据保留策略，以帮助确保仅在必要长的时间段内保留个人数据。<br><br>**监视 Microsoft 365 和其他云应用程序的持续合规性。考虑符合欧盟个人数据的数据驻留要求。**<br>• 监视组织的云应用程序使用情况，并实现高级警报策略。<br>• 符合数据驻留要求，同时仍作为一个全局组织运营。<br>|
 
@@ -40,8 +42,8 @@ GDPR 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或
 |||
 |:-----|:-----|
 |**区域**|**任务**|
-|了解 GDPR 要求，并考虑与 Microsoft GDPR 咨询合作伙伴合作。|• 使用 [Microsoft GDPR 评估工具](https://assessment.microsoft.com/gdpr-compliance)，私下衡量准备情况基准，并获取后续步骤的相关建议。<br>• 使用 [Microsoft 服务信任门户](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 中的 [Microsoft 合规性管理器](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000)来评估和管理合规性风险，以对组织执行 GDPR 评估。<br>• 与 [Microsoft GDPR 咨询合作伙伴](https://blogs.partner.microsoft.com/mpn/gdpr-leaders-needed-help-customers-navigate-gdpr-journey/)合作，以共同制定数据主体请求 (DSR) 响应内部指南和 DSR 排除项。<br>• 与 Microsoft GDPR 咨询合作伙伴合作，共同对组织执行 GDPR 合规性差距分析，并绘制 GDPR 合规性路线图。<br>• 了解如何使用 Office 365 安全与合规中心内的 [GDPR 仪表板和数据主体请求功能](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c)。 |
-|为了符合 DSR 要求，开始发现要存储的个人数据的类型及其驻留位置。|• 使用 Office 365 安全与合规中心内的[内容搜索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)和[电子数据展示案件集](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c)，跨邮箱、公用文件夹、Office 365 组、Microsoft Teams、SharePoint Online 网站、OneDrive for Business 网站和 Skype for Business 对话轻松执行搜索。了解如何使用[敏感信息类型](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)查找欧盟公民的个人数据<br>•  处理海量内容时，使用由机器学习技术提供支持的 [Office 365 高级电子数据展示](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4)，更快、更精准地（与传统关键字搜索相比）标识与特定主题（例如，合规性调查）相关的文档。<br>•  使用 Office 365 安全与合规中心来预览搜索结果、获取一个或多个搜索的关键字统计信息、批量编辑内容搜索和[导出结果](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278)。|
+|了解 GDPR 要求，并考虑与 Microsoft GDPR 咨询合作伙伴合作。|• 使用 [Microsoft GDPR 评估工具](https://assessment.microsoft.com/gdpr-compliance)，私下衡量准备情况基准，并获取后续步骤的相关建议。<br>• 使用 [Microsoft 服务信任门户](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 中的 [Microsoft 合规性管理器](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000)来评估和管理合规性风险，以对组织执行 GDPR 评估。<br>• 与 [Microsoft GDPR 咨询合作伙伴](https://blogs.partner.microsoft.com/mpn/gdpr-leaders-needed-help-customers-navigate-gdpr-journey/)合作，以共同制定数据主体请求 (DSR) 响应内部指南和 DSR 排除项。<br>• 与 Microsoft GDPR 咨询合作伙伴合作，共同对组织执行 GDPR 合规性差距分析，并绘制 GDPR 合规性路线图。<br>• 了解如何使用 Microsoft 365 合规中心内的 [GDPR 仪表板和数据主体请求功能](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c)。 |
+|为了符合 DSR 要求，开始发现要存储的个人数据的类型及其驻留位置。|• 使用[内容搜索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)和[电子数据展示案件集](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c)，跨邮箱、公用文件夹、Office 365 组、Microsoft Teams、SharePoint Online 网站、OneDrive for Business 网站和 Skype for Business 对话轻松执行搜索。 了解如何使用敏感信息类型查找欧盟公民的个人数据<br>• 处理海量内容时，使用由机器学习技术提供支持的 [Office 365 高级电子数据展示](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4)，更快、更精准地（与传统关键字搜索相比）标识与特定主题（例如，合规性调查）相关的文档。<br>•  使用 Office 365 安全与合规中心来预览搜索结果、获取一个或多个搜索的关键字统计信息、批量编辑内容搜索和[导出结果](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278)。|
 
 ## <a name="90-days--enhanced-protections"></a>90 天 - 增强保护 
 虽然这些任务需要多花一点时间来计划和实现，但会显著改善安全态势。 

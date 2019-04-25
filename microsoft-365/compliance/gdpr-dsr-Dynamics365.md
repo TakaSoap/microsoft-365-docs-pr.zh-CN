@@ -2,21 +2,21 @@
 title: 符合 GDPR 的 Dynamics 365 数据主体请求
 description: 指南介绍了如何使用 Microsoft 的产品、服务和管理工具来帮助我们的控制者客户查找和处理个人数据以响应 DSR 请求：
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: bcarter
+ms.date: 04/10/2019
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e1c79ae466264e302b282244f477dafcc6b49afe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5a7f347dc9b26b54cf6bc1fd3a6bdb55d46fe63
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285211"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 数据主体请求
 
@@ -78,7 +78,7 @@ ms.locfileid: "26866073"
 
 Dynamics 365 是一个提供多项数据处理功能的联机服务，采用软件即服务 (SaaS) 形式。因此，Dynamics 365 提供了一组广泛的功能来处理各种数据，这些按性质、用途或其他特定属性（如销售数据、交易、财报、HR 信息等）而不同。鉴于这种多样性，Dynamics 365 提供了多个表单、字段、架构、端点和客户数据处理逻辑，这也反映在每个应用程序中处理 DSR 请求的多种方式上。当 Dynamics 365 应用程序提供多种方式来处理特定 DSR 请求时，我们将通过指向每个应用程序所提供的技术说明，在本指南中指出这些方式。
 
-### <a name="microsoft-dynamics-365"></a>Microsoft Dynamics 365
+### <a name="dynamics-365"></a>Dynamics 365
 #### <a name="finding-customer-data"></a>查找客户数据
 
 响应数据主体权利请求的第一步是搜索并标识作为请求主体的客户数据。
@@ -101,6 +101,8 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 2.  对市场营销执行的联系人和对象使用 Insight Views，以识别可能包含客户数据的其他数据点。
 
+Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请求、删除个人数据以及查找作为数据主题发现请求 (DSR) 主题的个人数据的功能。 有关详细信息，请参阅 [Dynamics 365 Customer Service Insights 的 GDPR 合规性概述](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary)。
+
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 for Finance and Operations*** 提供了几种搜索客户数据的方法。你作为租户管理员，可以执行以下操作来搜索客户数据：
 
 -   按照用于快速发现个人数据的方式整理客户数据，请参阅[如何分类数据库存](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory)完成此操作。
@@ -114,6 +116,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 -   创建用于定位和导出个人数据的自定义表单。
 
 -   创建允许经过身份验证的客户查看其个人数据的外部门户或网站。
+
 
 ***Dynamics for Business Central*** 提供了多种方式来搜索客户数据。有关详细信息，请参阅[搜索、筛选数据以及为数据排序](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters)。
 

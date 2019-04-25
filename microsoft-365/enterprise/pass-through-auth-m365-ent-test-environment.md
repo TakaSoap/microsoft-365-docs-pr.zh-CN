@@ -9,23 +9,23 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的传递身份验证。
-ms.openlocfilehash: 26222f04617999104a1ad010eb189a0c01370a6d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: e925f0b48194c94993e7bf3e08f1f18650b19a23
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290922"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的传递身份验证
 
-想要直接使用本地 Windows Server Active Directory (AD) 基础结构对基于云的 Microsoft 服务和应用程序进行身份验证的组织可以使用传递身份验证。本文介绍了如何为 Microsoft 365 测试环境配置传递身份验证，从而实现以下配置：
+想要直接使用本地 Active Directory 域服务 (AD DS) 基础结构来进行对 Microsoft 云服务的身份验证的组织可以使用直通身份验证。 本文介绍了如何为直通身份验证配置 Microsoft 365 测试环境，生成的配置如下：
   
 ![使用传递身份验证测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
   
@@ -47,8 +47,8 @@ ms.locfileid: "26865593"
   
 此配置包括： 
   
-- Office 365 E5 和 EMS E5 试用订阅或永久订阅。
-- 连接到 Internet 的简化组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。Azure AD Connect 在 APP1 上运行，以便定期将 TESTLAB Windows Server AD 域同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
+- Office 365 E5 和 EMS E5 试用订阅或付费订阅。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 定期同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>阶段 2：在 APP1 上对 Azure AD Connect 进行传递身份验证配置
 
@@ -76,13 +76,13 @@ ms.locfileid: "26865593"
 
 10. 单击“**传递身份验证**”。“**传递身份验证**”窗格中会列出身份验证代理所安装到的服务器。APP1 应该会出现在该列表中。关闭“**传递身份验证**”窗格。
 
-接下来，使用 User1 帐户的用户名“user1@testlab.\<你的公共域>”来测试能否登录 Office 365 订阅。
+接下来，测试能否使用 User1 帐户的用户名 <strong>user1@testlab.</strong>\<公共域名> 登录 Office 365 订阅。
 
 1. 在 APP1 中，注销 Office 365，再重新登录，这次指定不同的帐户。
 
-2. 当系统提示输入用户名和密码时，指定 user1@testlab.\<公共域> 和 User1 密码。应该能以 User1 身份成功登录。
+2. 当系统提示输入用户名和密码时，指定 <strong>user1@testlab.</strong>\<公共域> 和 User1 密码。 你应该能以 User1 身份成功登录。
 
-请注意，尽管 User1 对 TESTLAB Windows Server AD 域拥有域管理员权限，但它不是 Office 365 全局管理员。因此，看不到“**管理员**”图标选项。
+请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是 Office 365 全局管理员。 因此，不会看到作为一个选项的**管理员**图标。
 
 下面是生成的配置：
 
@@ -90,7 +90,7 @@ ms.locfileid: "26865593"
  
 此配置包括：
 
-- 包含已注册 DNS 域 TESTLAB.\<域名> 的 Office 365 E5 和 EMS E5 试用订阅或永久订阅。
+- 包含已注册 DNS 域 testlab.\<你的域名> 的 Office 365 E5 和 EMS E5 试用订阅或付费订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以便处理你的 Office 365 和 EMS E5 订阅的 Azure AD 租户所发起的传递身份验证请求。
 
 ## <a name="next-step"></a>后续步骤

@@ -3,26 +3,26 @@ title: 针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 04/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全的 SharePoint Online 团队网站或 Microsoft Teams 团队以存储最有价值和最敏感的数字资产。
-ms.openlocfilehash: fa1a57d898e4822d0c96d6eb807d0a14a815e29a
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4342ba5e5d1c83ed0c9d26100afd86afa1e62723
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289803"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站
 
-**摘要：** 创建安全的 SharePoint Online 团队网站或 Microsoft Teams 团队以存储最有价值和最敏感的数字资产。
+*此方案适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
 Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建、存储和保护高度管控的数据。这包括符合以下条件的数据：
 
@@ -33,10 +33,10 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 - 在 SharePoint Online 团队网站或 Microsoft Teams 团队的“文件”**** 选项卡中存储数字资产（文档、幻灯片组、电子表格等）。
 - 锁定网站或团队以防止：
-   - 通过组成员身份访问除特定用户帐户组之外的所有用户帐户，其中包括可以访问 SharePoint Online 团队网站以及拥有权限级别的用户帐户以及可以管理它的用户帐户。
+   - 通过组成员身份仅访问特定用户帐户组之外的所有用户帐户，其中包括可以访问 SharePoint Online 团队网站以及拥有权限级别的用户帐户以及可以管理它的用户帐户。
    - 网站成员向其他用户授予访问权限。
    - 非网站成员请求访问网站。
-- 为 SharePoint Online 网站或团队配置 Office 365标签，将此作为对网站上的数字资产进行分类的默认方式。
+- 为 SharePoint Online 网站或团队配置 Office 365 保留标签，将此作为在站点或团队中的文档上定义保留策略的默认方式。
 - 阻止用户向组织外发送文件。
 - 加密网站或团队中最敏感的数字资产。
 - 添加对最敏感的数字资产的权限，这样，即使它们在网站外共享，打开资产仍需要具有权限的用户帐户的有效凭据。
@@ -48,7 +48,7 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 | **要求** | **Microsoft 365 企业版 功能** |
 | 存储数字资产 | SharePoint Online 团队网站和 Office 365 团队 |
 | 锁定网站 | Azure AD 组和 SharePoint Online 团队网站权限 |
-| 标记网站的数字资产 | Office 365 标签 |
+| 标记网站的数字资产 | Office 365 保留标签 |
 | 阻止向组织外发送文件的用户 | Office 365 中的数据丢失防护 (DLP) 策略 |
 | 加密网站的所有数字资产 | 企业移动性 + 安全性 (EMS) 中的 Azure 信息保护子标签 |
 | 向网站的数字资产添加权限 | EMS 中的 Azure 信息保护子标签 |
@@ -56,7 +56,7 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 此解决方案要求已经部署：
 
-- [基础架构](deploy-foundation-infrastructure.md). 
+- [标识](identity-infrastructure.md)以及基础架构的[信息保护](infoprotect-infrastructure.md)阶段的步骤 1 和 2。 
 - 对于 SharePoint Online 团队网站中的高度管控数据：[SharePoint Online](sharepoint-online-onedrive-workload.md)。
 - 对于 Microsoft Teams 团队中的高度管控数据：[Microsoft Teams](teams-workload.md)。
 
@@ -80,7 +80,7 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 - SharePoint Online 权限集和 SharePoint 组的集合
 - 访问组、Azure AD 安全组及其要添加到 SharePoint 组的成员的集合
-- 要分配到网站的 Office 365 标签以及标签的 DLP 策略集合
+- 要分配到网站的 Office 365 保留标签以及标签的 DLP 策略集合
 - 用户应用到网站中存储的高度敏感数据资产的 Azure 信息保护子标签的设置
 
 确定后，使用这些设置在第 2 阶段中配置网站。 
@@ -98,17 +98,17 @@ SharePoint Online 团队网站的锁定版本称为独立网站。与私有团�
 
 请参阅[设计独立的 SharePoint Online 团队网站](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site)，详细了解如何确定权限级别、SharePoint 组、访问组和组成员的集合。
 
-### <a name="step-2-office-365-labels-and-dlp-policies"></a>步骤 2：Office 365 标签和 DLP 策略
+### <a name="step-2-office-365-retention-labels-and-dlp-policies"></a>步骤 2：Office 365 保留标签和 DLP 策略
 
-应用于 SharePoint Online 团队网站时，Office 365 标签提供对存储在网站上的所有数字资产进行分类的默认方法。
+应用于 SharePoint Online 团队网站时，Office 365 保留标签提供对存储在网站上的所有数字资产进行分类的默认方法。
  
-对于针对高度管控数据的 SharePoint Online，需要确定要使用的 Office 365 标签。
+对于针对高度管控数据的 SharePoint Online，需要确定要使用的 Office 365 保留标签。
 
-有关 Office 365 标签的设计注意事项，请参阅 [Office 365 分类和标签](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#office-365-classification-and-labels)。
+有关 Office 365 标签的设计注意事项，请参阅 [Office 365 分类和标签](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)。
 
 为保护敏感信息并防止意外或故意泄露，可以使用 DLP 策略。有关详细信息，请参阅此[概述](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)。
 
-对于针对高度管控数据的 SharePoint Online 网站，必须为分配给网站的 Office 365 标签配置 DLP 策略，在用户尝试与外部用户共享数字资产时进行阻止。 
+对于针对高度管控数据的 SharePoint Online 网站，必须为分配给网站的 Office 365 保留标签配置 DLP 策略，在用户尝试与外部用户共享数字资产时进行阻止。 
 
 ### <a name="step-3-your-azure-information-protection-sub-label"></a>步骤 3：Azure 信息保护子标签
 
@@ -118,15 +118,13 @@ SharePoint Online 团队网站的锁定版本称为独立网站。与私有团�
 
 应用的子标签的设置随资产一起移动。即使在网站外部下载和共享，也只有具有权限的经过身份验证的用户帐户才能打开它。
 
-有关 Azure 信息保护标签的设计注意事项，请参阅 [Azure 信息保护](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#azure-information-protection)。
-
 ### <a name="design-results"></a>设计结果
 
 已确定以下内容：
 
 - SharePoint 组集及权限级别
 - 每个权限级别的访问组及其成员集
-- 与标签关联的相应的 Office 365 标签和 DLP 策略
+- 与标签关联的相应的 Office 365 保留标签和 DLP 策略
 - 包含加密和权限的 Azure 信息保护子标签设置
 
 ## <a name="phase-2-configure"></a>第 2 阶段：配置
@@ -140,11 +138,11 @@ SharePoint Online 团队网站的锁定版本称为独立网站。与私有团�
 - 为网站中使用的每个 SharePoint 权限级别创建并填充访问组。
 - 创建并配置独立的团队网站。
 
-### <a name="step-2-configure-the-site-for-an-office-365-label-dlp-policy"></a>步骤 2：针对 Office 365 标签 DLP 策略配置网站
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>步骤 2：针对 Office 365 保留标签 DLP 策略配置网站
 
 按照[使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的说明执行以下操作：
 
-- 识别或创建 Office 365 标签，然后将其应用到独立的 SharePoint Online 网站。
+- 识别或创建 Office 365 保留标签，然后将其应用到独立的 SharePoint Online 网站。
 - 创建并配置 DLP 策略，用于在用户尝试于组织外部的 SharePoint Online 网站上共享数字资产时阻止用户。
 
 ### <a name="step-3-create-an-azure-information-protection-sub-label-for-the-site"></a>步骤 3：创建网站的 Azure 信息保护子标签
@@ -173,8 +171,8 @@ SharePoint Online 团队网站的锁定版本称为独立网站。与私有团�
 已配置了以下内容：
 
 - SharePoint Online 独立网站
-- 分配给 SharePoint Online 独立网站的 Office 365 标签
-- Office 365 标签的 DLP 策略
+- 分配给 SharePoint Online 独立网站的 Office 365 保留标签
+- Office 365 保留标签的 DLP 策略
 - 用户可以应用到加密资产和强制执行权限的网站中存储的最敏感数字资产的范围策略的 Azure 信息保护子标签
 - 基于 SharePoint Online 网站的针对高度管控数据的团队（如果需要）
 
