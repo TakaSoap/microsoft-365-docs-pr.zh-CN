@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用 Microsoft 365 企业版的安全功能。
-ms.openlocfilehash: 2cbabb04c79816684f4c566b92003bb64471d22b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 55ee8ff88490a82a9438b076bcebfab976f8baf6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289030"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 企业版安全性摘要
 
@@ -40,7 +40,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 1. 限制云的管理员帐户
 
-    Contoso 对现有的 Windows Sever AD 管理员帐户进行了广泛审阅，并设置了一系列的云管理员帐户和组。
+   Contoso 对现有的 Active Directory 域服务 (AD DS) 管理员帐户进行了广泛审阅，并设置了一系列的云管理员帐户和组。
 
 2. 按三个级别执行数据分类分析
 
@@ -62,7 +62,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
   对于适合该 IT 人员的作业功能和职责的帐户，Contoso 的安全管理员向其分配了更低的管理员角色。
 
-  有关详细信息，请参阅[关于 Office 365 管理员角色](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)。
+  有关详细信息，请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 
 - 用于所有用户帐户的 MFA
 
@@ -81,7 +81,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 - Windows Defender Credential Guard
 
-  为了使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 Windows Server AD 组策略启用了 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)。
+  为了使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 AD DS 组策略启用了 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)。
 
 ## <a name="threat-protection"></a>威胁防护
 
@@ -95,9 +95,9 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
   Contoso 还启用了邮箱审核日志记录，以确定登录用户邮箱、发送邮件的用户，以及由邮箱所有者、受委派用户或管理员执行的其他活动。
 
-- 使用 Office 365 威胁智能进行威胁监控和防护
+- 使用 Office 365 威胁调查和响应进行威胁监控和防护
 
-  Contoso 使用 [Office 365 威胁智能](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)保护其 Office 365 用户，使其能够轻松地标识和解决攻击，并防止进一步攻击。
+  Contoso 使用 [Office 365 威胁调查和响应](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)保护其 Office 365 用户，使其能够轻松地标识和解决攻击，并防止进一步攻击。
 
 - 使用 Advanced Threat Analytics 防止复杂攻击
 

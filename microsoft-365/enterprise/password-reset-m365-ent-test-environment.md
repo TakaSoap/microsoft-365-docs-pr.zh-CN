@@ -3,25 +3,25 @@ title: Microsoft 365 测试环境的密码重置
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/30/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLGS
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: a90cb362a2831bf0bcf3fe05932e3a4345d52b2e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5fc8d68493464d6b4a6ffdcda64ed9a0d8c7cdd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289456"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -29,26 +29,30 @@ ms.locfileid: "26865981"
 
 本文介绍如何分两个阶段在 Microsoft 365 测试环境中配置和测试密码重置：
 
-1.  创建采用密码哈希同步的 Microsoft 365 模拟企业测试环境。
+1.  创建 Microsoft 365 企业版测试环境。
 2.  为用户 2 帐户配置和测试密码重置。
     
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
-  
-## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
-按照 [Microsoft 365 的密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。下面是生成的配置。
+## <a name="phase-1-configure-password-hash-synchronization-and-password-writebback-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步和密码写回
+
+首先，按照[密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。下面是生成的配置。
   
-![采用直通身份验证的模拟企业测试环境](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![使用密码哈希同步测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 此配置包括： 
   
-- Office 365 E5 和 EMS E5 试用订阅或永久订阅。
+- Office 365 E5 和 EMS E5 试用订阅或付费订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
-- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Windows Server AD 域同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
+- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
 
+接下来，按照[密码写回阶段 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) 测试实验室指南中的说明进行操作。
+
+必须启用密码写回才能使用密码重置。
+  
 ## <a name="phase-2-configure-and-test-password-reset"></a>第 2 阶段：配置和测试密码重置
 
 在这一阶段，通过组成员身份在 Azure AD 租户中配置密码重置，然后验证它是否能够正常工作。
@@ -75,9 +79,9 @@ ms.locfileid: "26865981"
 6. 使用用户 2 帐户凭据登录，键入 CAPTCHA 中的字符，然后单击“下一步”****。
 8. 对于“验证步骤 1”****，单击“以电子邮件形式发送备用电子邮件”****，然后单击“电子邮件”****。在收到电子邮件时，键入验证码，然后单击“下一步”****。
 9. 在“返回到帐户”**** 中，键入用户 2 帐户的新密码，然后单击“完成”****。记录用户 2 帐户更改后的密码，然后将其存储在一个安全的位置。
-10. 在同一浏览器的独立选项卡中，转到 [https://portal.office.com](https://portal.office.com)，然后使用用户 2 帐户名及其新密码登录。应看到 Office 主**** 页面。
+10. 在同一浏览器的独立选项卡中，转到 [https://office.com](https://office.com)，然后使用用户 2 帐户名及其新密码登录。应看到 Office 主**** 页面。
 
-有关在生产中配置密码重置的信息和相关链接，请参阅“标识”阶段中的[简化密码重置](identity-password-reset.md)步骤。
+有关在生产中配置密码重置的信息和相关链接，请参阅“标识”阶段中的[简化密码重置](identity-password-reset.md#identity-pw-reset)步骤。
 
 ## <a name="next-step"></a>后续步骤
 

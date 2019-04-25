@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: 了解部署 Microsoft 365 企业版底层基础结构阶段的一些方法。
 ms.openlocfilehash: fb4cf301f1e450cd5db9b392c0ca2d8e3767242a
-ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289534"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企业版底层基础结构部署策略
 
@@ -87,7 +87,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 简化的试点用户体验示例：
 
 - 12 月，需要使用智能手机进行 MFA。（身份识别）
-- 3 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
+- 3 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。 （Windows 10 企业版）
 - 6 月，安装 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
 - 9 月，执行设备注册并实施应用和条件访问策略。（移动设备管理）
 - 12 月，安装 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
@@ -119,7 +119,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 简化的试点用户体验示例： 
 
 - 12 月，需要使用智能手机进行 MFA。（身份识别）
-- 2 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
+- 2 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。 （Windows 10 企业版）
 - 4 月，安装 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
 - 6 月，执行设备注册并实施应用和条件访问策略。（移动设备管理）
 - 8 月，安装 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）

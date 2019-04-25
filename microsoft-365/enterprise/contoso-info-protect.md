@@ -3,22 +3,22 @@ title: Contoso Corporation 的信息保护
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的信息保护功能来保护其在云中的数字资产。
-ms.openlocfilehash: 2f6619aa3c6051696644b055e6c766525ad3a26d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f0869dfd661ae4dbaed74fdfd660c863deb20175
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276108"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -45,9 +45,9 @@ Contoso 执行数据分析，并确定以下级别。
 |||||
 |:-------|:-----|:-----|:-----|
 |  | **访问** | **数据保留** | **信息保护** |
-| 1 级：业务价值较低（基准） | 允许所有人员访问  | 6 个月 | 使用加密 |
-| 2 级：业务价值中等（敏感） | 允许 Contoso 员工、分包商和合作伙伴访问 <BR> <BR> 使用多重身份验证 (MFA)、传输层安全性 (TLS) 和移动应用管理 (MAM) | 2 年  | 使用哈希值实现数据完整性  |
-| 3 级：高业务价值（高度管控） | 允许工程设计和制造中的执行人员和潜在客户访问 <BR> <BR> 仅限托管网络设备的权限管理系统 (RMS)  | 7 年  | 使用数字签名实现不可否认性  |
+| 业务价值较低（1 级：基准） | 允许所有人员访问  | 6 个月 | 使用加密 |
+| 业务价值中等（2 级：敏感） | 允许 Contoso 员工、分包商和合作伙伴访问 <BR> <BR> 使用多重身份验证 (MFA)、传输层安全性 (TLS) 和移动应用管理 (MAM) | 2 年  | 使用哈希值实现数据完整性  |
+| 高业务价值（3 级：高度管控） | 允许工程设计和制造中的执行人员和潜在客户访问 <BR> <BR> 仅限托管网络设备的权限管理系统 (RMS)  | 7 年  | 使用数字签名实现不可否认性  |
 |||||
 
 ## <a name="contosos-path-to-information-protection-with-microsoft-365-enterprise"></a>使用 Microsoft 365 企业版的 Contoso 信息保护路径
@@ -62,21 +62,21 @@ Contoso 使用以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
    Contoso 基于数据级别确定了详细的策略要求，这些要求被用于保护现有数字资产，因为它们被转移到了云中。
 
-3. 创建了 Azure 信息保护标签以及它们对不同级别信息的设置
+3. 创建了敏感度标签以及它们对不同级别信息的设置
 
-   Contoso 修改了默认的 Azure 信息保护标签，其中的标题与它们的数据级别相匹配，并配置了“敏感”和“高度管控”标签，以通过 Azure 云密钥进行加密。他们为特定类型的商业机密数据创建了“高度管控”标签的子标签，并限制了他们对特定研发小组的访问。Contoso 还将 Azure 信息保护客户端部署到了所有 Windows 电脑和设备。
+   Contoso 为其数据级别创建了敏感度标签：敏感和高度管控标签，包括加密、权限和水印。
 
 4. 为敏感和高度管控数据创建了受保护的 SharePoint Online 网站，同时包含锁定访问权限的权限
 
-   敏感和高度管控网站均配置为[独立网站](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)，其中默认的 SharePoint Online 团队网站权限自定义到 Azure AD 组。敏感和高度管控的 SharePoint Online 网站也配置了默认 Office 365标签。高度管控的 SharePoint Online 网站中存储的文件受作用域内策略的 Azure 信息保护 (AIP) 子标签的保护。有关详细信息，请参阅[针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站](teams-sharepoint-online-sites-highly-regulated-data.md)方案。
+   敏感和高度管控网站均配置为[独立网站](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)，其中默认的 SharePoint Online 团队网站权限自定义到 Azure Active Directory (Azure AD) 组。 敏感和高度管控的 SharePoint Online 网站也配置了相应的保留标签。 高度管控 SharePoint Online 网站中存储的文件受高度管控敏感度标签的保护。 有关详细信息，请参阅[针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站](teams-sharepoint-online-sites-highly-regulated-data.md)应用场景。
 
 5.  将数据从本地 SharePoint 网站和文件共享转移到新的 SharePoint Online 网站
 
-    迁移到新的 SharePoint Online 网站的文件继承了分配给该网站的默认 Office 365 标签。
+    迁移到新的 SharePoint Online 网站的文件继承了分配给该网站的默认保留标签。
 
-6.  培训员工如何在新文档中使用 Azure 信息保护标签，如何在创建新的 SharePoint Online 网站时与 Contoso IT 进行交互，以及如何始终在 SharePoint Online 网站上存储数字资产。
+6.  培训员工如何在新文档中使用敏感度标签，如何在创建新的 SharePoint Online 网站时与 Contoso IT 进行交互，以及如何始终在 SharePoint Online 网站上存储数字资产。
 
-    Contoso IT 和管理被视为云信息保护过渡中最困难的部分，需要改变组织员工的不良信息存储习惯，以始终标记其数字资产，绝不使用本地文件共享。
+    Contoso IT 和管理被视为云信息保护过渡中最困难的部分，需要改变组织员工的不良信息存储习惯，以始终在云中存储和标记其数字资产，避免使用本地文件共享，并且绝不使用第三方云存储设备或 U 盘。
 
 ## <a name="conditional-access-policies-for-information-protection"></a>用于信息保护的条件访问策略
 
@@ -111,9 +111,9 @@ Contoso 使用以下步骤为 Microsoft 365 企业版准备其信息保护要求
 |||||
 |:-------|:-----|:-----|:-----|
 | | **Office 365** | **Windows 10 和 Office 365 专业增强版** | **EMS** |
-| 1 级：基准  | SharePoint Online 和 Exchange Online 条件访问策略 <BR> SharePoint Online 网站的权限 | Azure 信息保护客户端 <BR> BitLocker <BR> Windows 信息保护 | 设备条件访问策略和移动应用管理策略 |
-| 2 级：高度敏感 | 1 级：基准再加上： <BR> <BR> Azure 信息保护标签 <BR> SharePoint Online 网站上的 Office 365 标签 <BR> 用于 SharePoint Online 和 Exchange Online 的 Office 365 数据丢失防护 <BR> 独立 SharePoint Online 网站  | 1 级：基准再加上： <BR> <BR> 数字资产上的 Azure 信息保护标签 <BR> Office 365 高级数据管理 | 1 级：基准 |
-| 3 级：高度管控 | 2 级：高度敏感再加上： <BR><BR> 针对商业机密信息的自带密钥 (BYOK) 加密和保护 <BR> 将 Azure Key Vault 用于与 Office 365 服务交互的业务线应用程序 | 2 级：高度敏感 | 1 级：基准 |
+| 1 级：基准  | SharePoint Online 和 Exchange Online 条件访问策略 <BR> SharePoint Online 网站的权限 | 敏感度标签 <BR> BitLocker <BR> Windows 信息保护 | 设备条件访问策略和移动应用管理策略 |
+| 2 级：敏感 | 1 级再加上： <BR> <BR> 敏感度标签 <BR> SharePoint Online 网站上的 Office 365 标签 <BR> 用于 SharePoint Online 和 Exchange Online 的 Office 365 数据丢失防护 <BR> 独立 SharePoint Online 网站  | 1 级再加上： <BR> <BR> 数字资产上的敏感度标签 <BR> Office 365 高级数据管理 | 1 级 |
+| 3 级：高度管控 | 2 级再加上： <BR><BR> 针对商业机密信息的自带密钥 (BYOK) 加密和保护 <BR> 将 Azure Key Vault 用于与 Office 365 服务交互的业务线应用程序 | 2 级 | 1 级 |
 |||||
 
 

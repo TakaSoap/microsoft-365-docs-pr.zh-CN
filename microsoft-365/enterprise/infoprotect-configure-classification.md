@@ -3,22 +3,22 @@ title: 第 2 步：配置环境分类
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置对组织中的数据进行分类的各种方法。
-ms.openlocfilehash: bee0885eb3f8899560532895d1558723b281ab02
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ca64b98bceb6f969adc964e93a6a1cc872763199
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286971"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>第 2 步：配置环境分类
 
@@ -28,30 +28,64 @@ ms.locfileid: "26865597"
 
 在步骤此中，配合法律和合规性团队来定义组织数据的分类方案。
 
-## <a name="microsoft-classifications"></a>Microsoft 分类
+## <a name="microsoft-365-classification-types"></a>Microsoft 365 分类类型
 
-Microsoft 365 包括三种类型的分类：
+Microsoft 365 包括四种类型的分类：
 
-- Office 365 敏感信息类型
-- Office 365 标签
+- 敏感信息类型
+- 保留标签
+- 敏感度标签
 - Azure 信息保护标签和保护
 
-### <a name="sensitive-information-types-for-office-365"></a>Office 365 敏感信息类型
+### <a name="sensitive-information-types"></a>敏感信息类型
 
-Office 365 敏感信息类型定义了自动化过程（如搜索）如何识别运行状况服务号和信用卡号等的特定信息类型。使用敏感信息类型可以查找敏感数据，并应用数据丢失防护规则和策略来保护此数据。有关详细信息，请参阅[数据丢失防护策略概述](https://support.office.com/article/overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。例如，敏感信息类型对于满足合规性和法规要求（如一般数据保护条例 (GDPR)）特别有帮助。
+Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）如何识别特定信息类型。 这些信息包括员工或客户的敏感数据，例如医疗服务号码和信用卡号。 你可以使用敏感信息类型查找敏感数据并应用数据丢失保护 (DLP) 规则策略，以保护这些数据。 有关详细信息，请参阅 [DLP 策略包含的内容](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies#what-a-dlp-policy-contains)。 
 
-### <a name="office-365-labels"></a>Office 365 标签
-可将 Office 365 标签用于存储在 SharePoint Online 和 OneDrive for Business 中的个人数据和高度管控文件以及商业机密文件。有关详细信息（包括如何创建它们），请参阅[标签概述](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)。
+敏感信息类型对于满足合规性和法规要求（例如通用数据保护条例 (GDPR)）尤其有用。
 
-如果决定使用 Office 365 标签，应为每个级别的保护配置至少一个标签。例如，为以下安全级别创建三个标签：
+### <a name="retention-labels"></a>保留标签
+
+定义数据管理策略的一部分就是确定特定类型的文档或含有特定内容的文档应保留多长时间，以符合组织政策和区域法规要求。 例如，某些类型的文档应在保留一段时间之后删除，有些文档则必须永久保留。
+
+对于 Microsoft 365 中存储的文档，你可以对 Exchange 电子邮件、SharePoint Online、OneDrive for Business 和 Teams 聊天和渠道消息中存储的文档和数据定义并应用保留标签。 有关详细信息，包括如何创建保留标签，请参阅[保留标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)。
+
+如果使用保留标签，则应为需要应用保留标签的每个类别的文件创建标签。 在保留标签中，你可以指定：
+
+- 一组文件描述符（例如，按业务部门、文件类别或法规）。
+
+- 已附加保留标签的文件的保留设置，例如保留时间以及达到保留时间之后的行为。
+
+也可以通过配置 SharePoint Online 网站将默认保留标签应用到网站中的所有新文档，以此为文件自动应用保留标签。 
+
+有关详细信息，请参阅此[保留标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)。
+
+### <a name="sensitivity-labels"></a>敏感度标签
+
+为特定类型的文档或含有特定内容的文档提供保护和实施安全措施的一部分就是将其贴上标签，以便应用其他安全性。 借助 Microsoft 365 中的敏感度标签，你可以：
+
+- 执行保护设置，例如加密、权限或添加水印。
+
+- 使用 Microsoft Intune 中的终结点保护功能，防止运行 Windows 的设备上的敏感内容流出你的组织。 
+
+- 使用 Windows 信息保护 (WIP) 终结点保护阻止此类内容被复制到第三方应用（如 Twitter 或 Gmail），或者被复制到可移除存储设备（如 U 盘）。
+
+- 使用 Microsoft Cloud App Security 保护第三方应用和服务中的内容。 
+
+- 对内容进行分类，无需使用任何保护设置。
+
+如果使用敏感度标签，则应为每个安全和信息保护级别配置标签。 例如，为以下对象创建三个敏感度标签：
 
 - 基线
+
 - 敏感
+
 - 高度管控
+
+有关详细信息，请参阅此[敏感度标签概述](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels)。
 
 ### <a name="azure-information-protection-labels-and-protection"></a>Azure 信息保护标签和保护
 
-可使用 Azure 信息保护标签进行分类，并选择性地保护组织文档和电子邮件。这些标签可应用到存储在 Office 365 外部的文档。这些标签即可以由定义规则和条件的管理员自动应用，也可以由用户手动应用，或者可以在建议的情况下用户通过组合这两种方式来应用标签。
+可以使用 Azure 信息保护标签来分类并选择性地保护组织的文档和电子邮件。 这些标签可以应用于存储在 Microsoft 365 之外的文档。 这些标签可以由定义规则和条件的管理员自动应用、由用户手动应用或是组合应用（在这种情况下会向用户提供建议）。
 
 若要规划和部署 Azure 信息保护标签和保护，请执行下列操作：
 
@@ -60,7 +94,11 @@ Office 365 敏感信息类型定义了自动化过程（如搜索）如何识别
 
 有关详细信息，请参阅 [Azure 信息保护文档库](https://docs.microsoft.com/information-protection/)。
 
-## <a name="classification-for-gdpr"></a>GDPR 分类
+现有 Azure 信息保护标签与敏感度标签无缝工作。 例如，你可以保留现有 Azure 信息保护标签以及应用于文档和电子邮件的标签。
+
+如果使用了敏感度和 Azure 信息保护标签，则应[将 Azure 信息保护标签迁移到敏感度标签](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels)。
+
+## <a name="example-classification-for-gdpr"></a>示例：GDPR 分类
 
 有关包括个人数据的 GDPR 分类方案示例，请参阅[为个人数据构建分类方案](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data)。
 

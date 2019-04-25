@@ -3,22 +3,22 @@ title: 步骤 1：计划用户和组
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 02/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 计划为组织工作的一组用户和组。
-ms.openlocfilehash: 8062cc2b681f0ae45a8114a6d827f5d1ece2fe3e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26865391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283783"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>步骤 1：计划用户和组
 
@@ -39,10 +39,10 @@ ms.locfileid: "26865391"
 
 当组织采用 Microsoft 365 企业版时，主标识提供者将为以下之一：
 
-- **Windows Server Active Directory (AD)**，托管在运行 Windows Server 计算机上的 Intranet 标识提供者。它通常由具有现有本地标识提供者的组织使用。
-- **Azure Active Directory (Azure AD**)，基于云的标识即服务 (IDaaS)，提供管理和保护环境的广泛功能。它通常由不具备现有本地基础结构的组织使用。
+- **Active Directory 域服务 (AD DS)**，托管在运行 Windows Server 的计算机上的 Intranet 标识提供程序。 它通常由具有现有本地标识提供程序的组织使用。
+- **Azure Active Directory (Azure AD**)，基于云的标识即服务 (IDaaS)，提供管理和保护环境的广泛功能。 它通常由不具备现有本地基础结构的组织使用。
 
-如果组织具有现有本地标识提供者，则需要将用户帐户和组从 Windows Server AD 同步到 Azure AD，以提供对 Microsoft 365 企业版基于云的服务无缝访问体验。此外，还可以使用 Azure AD 来创建和管理仅存在于 Microsoft 云中的组。
+如果组织具有现有本地标识提供者，则需要将用户帐户和组从 Active Directory 域服务 (AD DS) 同步到 Azure AD，以提供对 Microsoft 365 企业版基于云的服务无缝访问体验。 此外，还可以使用 Azure AD 来创建和管理仅存在于 Microsoft 云中的组。
 
 在 Azure AD 中计划好用户和组后，可以：
 
@@ -63,11 +63,11 @@ ms.locfileid: "26865391"
 
 此外，可以将某些云服务与组织外部没有任何用户帐户的用户共享，而且你还需要标识这些用户组。
 
-## <a name="plan-for-windows-server-ad-and-azure-ad-groups"></a>计划 Windows Server AD 和 Azure AD 组
+## <a name="plan-for-ad-ds-and-azure-ad-groups"></a>计划 AD DS 和 Azure AD 组
 
 可将 Azure AD 中的组用于多个目的，以简化云环境的管理。例如，对于 Azure AD 组，可以：
 
-- 只要在 Azure AD 中添加组或从 Windows Server AD 中同步组，就可以使用基于组的许可将 Office 365 和企业移动性 + 安全性 (EMS) 的许可证自动分配到用户帐户。 
+- 只要在 Azure AD 中添加组或从 AD DS 中同步组，就可以使用基于组的许可将 Office 365 和企业移动性 + 安全性 (EMS) 的许可证自动分配到用户帐户。 
 - 根据用户帐户属性（如部门）将用户帐户动态添加到特定组。  
 - 自动预配软件即服务 (SaaS) 应用程序的用户，并通过多重身份验证和其他条件访问规则来保护对这些应用程序的访问。
 - 预配 SharePoint Online 团队网站的权限和访问权限级别。此外，Azure AD 组还可与范围内的 Azure 信息保护策略一起使用，以保护具有加密和权限的文件。 
@@ -81,10 +81,11 @@ ms.locfileid: "26865391"
 
 作为临时检查点，请查看对应于此步骤的[退出条件](identity-exit-criteria.md#crit-identity-user-groups)。
 
+在创建 Azure AD 用户和组后，便可以开始分配许可证和使用 Exchange Online。 若要向用户推广 Exchange Online，请参阅[部署 Microsoft 365 企业版的 Exchange Online](exchangeonline-workload.md)。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步骤
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [保护全局管理员帐户](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step2.png)| [保护你的特权标识](identity-designate-protect-admin-accounts.md) |
 
