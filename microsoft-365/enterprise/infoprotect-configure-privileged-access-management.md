@@ -1,5 +1,5 @@
 ---
-title: 第 4 步：配置 Office 365 的特权访问管理
+title: '步骤 6: 配置 Office 365 的特权访问管理'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解并配置 Office 365 的特权访问管理。
-ms.openlocfilehash: 297d8e042c2a22c93b4ea566081d258e7ca0a5ab
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 60b52825ead068cd0f068f78c1bbce263e8d7720
+ms.sourcegitcommit: 9d4319a015e493fb88c7e1855bca0121654eb39d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286945"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33304152"
 ---
-# <a name="step-4-configure-privileged-access-management-for-office-365"></a>第 4 步：配置 Office 365 的特权访问管理
+# <a name="step-6-configure-privileged-access-management-for-office-365"></a>步骤 6: 配置 Office 365 的特权访问管理
 
 *此步骤是可选的，仅适用于 Microsoft 365 企业版的 E5 版和高级合规版*
 
@@ -43,7 +43,7 @@ Office 365 租户中的特权访问管理可通过配置相应策略来实现，
 
 此步骤的结果是，你通过启用对组织关键数据和配置设置的实时访问控制提高了 Office 365 的安全性。
 
-作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step5)。
+作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step6)。
 
 ## <a name="next-step"></a>后续步骤
 
