@@ -13,102 +13,100 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用发送到 Microsoft 365 企业版测试环境中的智能手机的短信配置多重身份验证。
-ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291137"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353174"
 ---
-# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="c0491-103">Microsoft 365 企业版测试环境的多重身份验证</span><span class="sxs-lookup"><span data-stu-id="c0491-103">Multi-factor authentication for your Microsoft 365 Enterprise test environment</span></span>
+# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="87808-103">Microsoft 365 企业版测试环境的多重身份验证</span><span class="sxs-lookup"><span data-stu-id="87808-103">Multi-factor authentication for your Microsoft 365 Enterprise test environment</span></span>
 
-<span data-ttu-id="c0491-104">若要使用其他级别的安全来登录到 Office 365 或使用组织的 Azure AD 租户的任何服务或应用程序, 您可以启用 Azure 多重身份验证, 它需要的用户名和密码不只需要用户名和密码才能验证上级.</span><span class="sxs-lookup"><span data-stu-id="c0491-104">For an additional level of security for signing in to Office 365 or any service or application that uses the Azure AD tenant for your organization, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account.</span></span> <span data-ttu-id="c0491-105">使用多重身份验证时, 用户需要确认电话呼叫、在短信中键入验证代码, 或者在正确输入密码后在智能手机上指定应用密码。</span><span class="sxs-lookup"><span data-stu-id="c0491-105">With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or specify an app password on their smart phones after correctly entering their passwords.</span></span> <span data-ttu-id="c0491-106">仅在满足第二个身份验证因素时才能登录。</span><span class="sxs-lookup"><span data-stu-id="c0491-106">They can sign in only after this second authentication factor has been satisfied.</span></span> 
+<span data-ttu-id="87808-104">若要使用其他级别的安全来登录到 Office 365 或使用组织的 Azure AD 租户的任何服务或应用程序, 您可以启用 Azure 多重身份验证, 它需要的用户名和密码不只需要用户名和密码才能验证上级.</span><span class="sxs-lookup"><span data-stu-id="87808-104">For an additional level of security for signing in to Office 365 or any service or application that uses the Azure AD tenant for your organization, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account.</span></span> <span data-ttu-id="87808-105">使用多重身份验证时, 用户需要确认电话呼叫、在短信中键入验证代码, 或者在正确输入密码后在智能手机上指定应用密码。</span><span class="sxs-lookup"><span data-stu-id="87808-105">With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or specify an app password on their smart phones after correctly entering their passwords.</span></span> <span data-ttu-id="87808-106">仅在满足第二个身份验证因素时才能登录。</span><span class="sxs-lookup"><span data-stu-id="87808-106">They can sign in only after this second authentication factor has been satisfied.</span></span> 
   
-<span data-ttu-id="c0491-107">本文介绍如何为特定帐户启用和测试基于短信的身份验证。</span><span class="sxs-lookup"><span data-stu-id="c0491-107">This article describes how to enable and test text message-based authentication for a specific account.</span></span>
+<span data-ttu-id="87808-107">本文介绍如何为特定帐户启用和测试基于短信的身份验证。</span><span class="sxs-lookup"><span data-stu-id="87808-107">This article describes how to enable and test text message-based authentication for a specific account.</span></span>
   
-<span data-ttu-id="c0491-108">为 Microsoft 365 企业版测试环境中的帐户设置多重身份验证有两个阶段:</span><span class="sxs-lookup"><span data-stu-id="c0491-108">There are two phases to setting up multi-factor authentication for an account in your Microsoft 365 Enterprise test environment:</span></span>
+<span data-ttu-id="87808-108">为 Microsoft 365 企业版测试环境中的帐户设置多重身份验证有两个阶段:</span><span class="sxs-lookup"><span data-stu-id="87808-108">There are two phases to setting up multi-factor authentication for an account in your Microsoft 365 Enterprise test environment:</span></span>
   
-1. <span data-ttu-id="c0491-109">创建 Microsoft 365 企业版测试环境。</span><span class="sxs-lookup"><span data-stu-id="c0491-109">Create the Microsoft 365 Enterprise test environment.</span></span>
+1. <span data-ttu-id="87808-109">创建 Microsoft 365 企业版测试环境。</span><span class="sxs-lookup"><span data-stu-id="87808-109">Create the Microsoft 365 Enterprise test environment.</span></span>
     
-2. <span data-ttu-id="c0491-110">为 User 2 帐户启用并测试多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="c0491-110">Enable and test multi-factor authentication for the User 2 account.</span></span>
+2. <span data-ttu-id="87808-110">为 User 2 帐户启用并测试多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="87808-110">Enable and test multi-factor authentication for the User 2 account.</span></span>
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> <span data-ttu-id="c0491-112">单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。</span><span class="sxs-lookup"><span data-stu-id="c0491-112">Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
+> <span data-ttu-id="87808-112">单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。</span><span class="sxs-lookup"><span data-stu-id="87808-112">Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="c0491-113">第1阶段: 构建 Microsoft 365 企业版测试环境</span><span class="sxs-lookup"><span data-stu-id="c0491-113">Phase 1: Build out your Microsoft 365 Enterprise test environment</span></span>
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="87808-113">第1阶段: 构建 Microsoft 365 企业版测试环境</span><span class="sxs-lookup"><span data-stu-id="87808-113">Phase 1: Build out your Microsoft 365 Enterprise test environment</span></span>
 
-<span data-ttu-id="c0491-114">如果只想使用最低要求以轻型方式测试多重身份验证, 请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="c0491-114">If you just want to test multi-factor authentication in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).</span></span>
+<span data-ttu-id="87808-114">如果只想使用最低要求以轻型方式测试多重身份验证, 请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="87808-114">If you just want to test multi-factor authentication in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).</span></span>
   
-<span data-ttu-id="c0491-115">如果要在模拟的企业中测试多重身份验证, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="c0491-115">If you want to test multi-factor authentication in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).</span></span>
+<span data-ttu-id="87808-115">如果要在模拟的企业中测试多重身份验证, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="87808-115">If you want to test multi-factor authentication in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="c0491-116">测试多重身份验证不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。</span><span class="sxs-lookup"><span data-stu-id="c0491-116">Testing multi-factor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="c0491-117">它在此处作为一个选项提供，以便你可以测试多重身份验证，并在代表典型组织的环境中对其进行试验。</span><span class="sxs-lookup"><span data-stu-id="c0491-117">It is provided here as an option so that you can test multi-factor authentication and experiment with it in an environment that represents a typical organization.</span></span> 
+> <span data-ttu-id="87808-116">测试多重身份验证不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。</span><span class="sxs-lookup"><span data-stu-id="87808-116">Testing multi-factor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="87808-117">它在此处作为一个选项提供，以便你可以测试多重身份验证，并在代表典型组织的环境中对其进行试验。</span><span class="sxs-lookup"><span data-stu-id="87808-117">It is provided here as an option so that you can test multi-factor authentication and experiment with it in an environment that represents a typical organization.</span></span> 
   
-## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a><span data-ttu-id="c0491-118">阶段 2：启用和测试 User 2 帐户的多重身份验证</span><span class="sxs-lookup"><span data-stu-id="c0491-118">Phase 2: Enable and test multi-factor authentication for the User 2 account</span></span>
+## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a><span data-ttu-id="87808-118">阶段 2：启用和测试 User 2 帐户的多重身份验证</span><span class="sxs-lookup"><span data-stu-id="87808-118">Phase 2: Enable and test multi-factor authentication for the User 2 account</span></span>
 
-<span data-ttu-id="c0491-119">通过以下步骤为 User 2 帐户启用多重身份验证：</span><span class="sxs-lookup"><span data-stu-id="c0491-119">Enable multi-factor authentication for the User 2 account with these steps:</span></span>
+<span data-ttu-id="87808-119">通过以下步骤为 User 2 帐户启用多重身份验证：</span><span class="sxs-lookup"><span data-stu-id="87808-119">Enable multi-factor authentication for the User 2 account with these steps:</span></span>
   
-1. <span data-ttu-id="c0491-120">打开浏览器的单独私有实例, 转到 Office 门户 ([https://office.com](https://office.com)), 然后使用全局管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="c0491-120">Open a separate, private instance of your browser, go to the Office portal ([https://office.com](https://office.com)), and then sign in with your global administrator account.</span></span>
+1. <span data-ttu-id="87808-120">打开浏览器的单独私有实例, 转到 Microsoft 365 管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com)), 然后使用全局管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="87808-120">Open a separate, private instance of your browser, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)), and then sign in with your global administrator account.</span></span>
     
-2. <span data-ttu-id="c0491-121">在主门户页上，单击“管理员”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c0491-121">From the main portal page, click **Admin**.</span></span>
+2. <span data-ttu-id="87808-121">在左侧导航窗格中，单击“**用户 > 活动用户**”。</span><span class="sxs-lookup"><span data-stu-id="87808-121">In the left navigation, click **Users > Active users**.</span></span>
     
-3. <span data-ttu-id="c0491-122">在左侧导航栏中，单击“用户”>“活动用户”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c0491-122">In the left navigation, click **Users > Active users**.</span></span>
+3. <span data-ttu-id="87808-122">在 "活动用户" 窗格中, 单击 "**更多 > 多重身份验证设置**"。</span><span class="sxs-lookup"><span data-stu-id="87808-122">In the Active users pane, click **More > Multi-factor authentication setup**.</span></span>
     
-4. <span data-ttu-id="c0491-123">在 "活动用户" 窗格中, 单击 "**更多 > 多重身份验证设置**"。</span><span class="sxs-lookup"><span data-stu-id="c0491-123">In the Active users pane, click **More > Multi-factor authentication setup**.</span></span>
+4. <span data-ttu-id="87808-123">在列表中, 选择 "**用户 2** " 帐户。</span><span class="sxs-lookup"><span data-stu-id="87808-123">In the list, select the **User 2** account.</span></span>
     
-5. <span data-ttu-id="c0491-124">在列表中, 选择 "**用户 2** " 帐户。</span><span class="sxs-lookup"><span data-stu-id="c0491-124">In the list, select the **User 2** account.</span></span>
+5. <span data-ttu-id="87808-124">在“User 2”\*\*\*\* 部分的“快速步骤”\*\*\*\* 下，单击“启用”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="87808-124">In the **User 2** section, under **Quick steps**, click **Enable**.</span></span>
     
-6. <span data-ttu-id="c0491-125">在“User 2”\*\*\*\* 部分的“快速步骤”\*\*\*\* 下，单击“启用”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c0491-125">In the **User 2** section, under **Quick steps**, click **Enable**.</span></span>
+6. <span data-ttu-id="87808-125">在“关于启用多重身份验证”\*\*\*\* 对话框中，单击“启用多重身份验证”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="87808-125">In the **About enabling multi-factor auth** dialog box, click **Enable multi-factor auth**.</span></span>
     
-7. <span data-ttu-id="c0491-126">在“关于启用多重身份验证”\*\*\*\* 对话框中，单击“启用多重身份验证”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c0491-126">In the **About enabling multi-factor auth** dialog box, click **Enable multi-factor auth**.</span></span>
+7. <span data-ttu-id="87808-126">在 "**更新成功**" 对话框中, 单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="87808-126">In the **Updates successful** dialog box, click **Close**.</span></span>
     
-8. <span data-ttu-id="c0491-127">在 "**更新成功**" 对话框中, 单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="c0491-127">In the **Updates successful** dialog box, click **Close**.</span></span>
+8. <span data-ttu-id="87808-127">在 " **Microsoft 365 管理中心**" 选项卡上, 单击右上角的 "用户帐户" 图标, 然后\*\*\*\* 单击 "注销"。</span><span class="sxs-lookup"><span data-stu-id="87808-127">On the **Microsoft 365 admin center** tab, click the user account icon in the upper right, and then click **Sign out**.</span></span>
     
-9. <span data-ttu-id="c0491-128">在“Microsoft Office 主页”\*\*\*\* 选项卡上，单击右上方的用户帐户图标，然后单击“注销”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c0491-128">On the **Microsoft Office Home** tab, click the user account icon in the upper right, and then click **Sign out**.</span></span>
-    
-10. <span data-ttu-id="c0491-129">关闭浏览器实例。</span><span class="sxs-lookup"><span data-stu-id="c0491-129">Close your browser instance.</span></span>
+9. <span data-ttu-id="87808-128">关闭浏览器实例。</span><span class="sxs-lookup"><span data-stu-id="87808-128">Close your browser instance.</span></span>
    
-<span data-ttu-id="c0491-130">完成 User 2 帐户的配置，通过以下步骤，使用短信对其进行验证和测试：</span><span class="sxs-lookup"><span data-stu-id="c0491-130">Complete the configuration for the User 2 account to use a text message for validation and test it with these steps:</span></span>
+<span data-ttu-id="87808-129">完成 User 2 帐户的配置，通过以下步骤，使用短信对其进行验证和测试：</span><span class="sxs-lookup"><span data-stu-id="87808-129">Complete the configuration for the User 2 account to use a text message for validation and test it with these steps:</span></span>
   
-1. <span data-ttu-id="c0491-131">打开浏览器的新的私有实例。</span><span class="sxs-lookup"><span data-stu-id="c0491-131">Open a new, private instance of your browser.</span></span>
+1. <span data-ttu-id="87808-130">打开浏览器的新的私有实例。</span><span class="sxs-lookup"><span data-stu-id="87808-130">Open a new, private instance of your browser.</span></span>
     
-2. <span data-ttu-id="c0491-132">转到 Office 门户 ([https://office.com](https://office.com)), 并使用 User 2 帐户 (用户2、\<组织 name>) 和密码登录。</span><span class="sxs-lookup"><span data-stu-id="c0491-132">Go to the Office portal ([https://office.com](https://office.com)) and sign in with the User 2 account (user2@\<organization name>.onmicrosoft.com) and password.</span></span>
+2. <span data-ttu-id="87808-131">转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com)), 并使用用户2帐户名称和密码登录。</span><span class="sxs-lookup"><span data-stu-id="87808-131">Go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in with the User 2 account name and password.</span></span>
     
-3. <span data-ttu-id="c0491-133">登录后, 系统会提示您设置帐户以获取详细信息。</span><span class="sxs-lookup"><span data-stu-id="c0491-133">After signing in, you are prompted to set up the account for more information.</span></span> <span data-ttu-id="c0491-134">单击“下一步”。\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="c0491-134">Click **Next**.</span></span>
+3. <span data-ttu-id="87808-132">登录后, 系统会提示您设置帐户以获取详细信息。</span><span class="sxs-lookup"><span data-stu-id="87808-132">After signing in, you are prompted to set up the account for more information.</span></span> <span data-ttu-id="87808-133">单击“下一步”。</span><span class="sxs-lookup"><span data-stu-id="87808-133">Click **Next**.</span></span>
     
-4. <span data-ttu-id="c0491-135">在“其他安全性验证”\*\*\*\* 页上： </span><span class="sxs-lookup"><span data-stu-id="c0491-135">On the **Additional security verification** page:</span></span>
+4. <span data-ttu-id="87808-134">在“其他安全性验证”\*\*\*\* 页上： </span><span class="sxs-lookup"><span data-stu-id="87808-134">On the **Additional security verification** page:</span></span>
     
-   - <span data-ttu-id="c0491-136">选择你所在的国家或地区。</span><span class="sxs-lookup"><span data-stu-id="c0491-136">Select your country or region.</span></span>
+   - <span data-ttu-id="87808-135">选择你所在的国家或地区。</span><span class="sxs-lookup"><span data-stu-id="87808-135">Select your country or region.</span></span>
     
-   - <span data-ttu-id="c0491-137">键入接收短信的智能手机的电话号码。</span><span class="sxs-lookup"><span data-stu-id="c0491-137">Type phone number of the smart phone that will receive text messages.</span></span>
+   - <span data-ttu-id="87808-136">键入接收短信的智能手机的电话号码。</span><span class="sxs-lookup"><span data-stu-id="87808-136">Type phone number of the smart phone that will receive text messages.</span></span>
     
-   - <span data-ttu-id="c0491-138">在**方法**中, 单击 "**通过短信向我发送代码**"。</span><span class="sxs-lookup"><span data-stu-id="c0491-138">In **Method**, click **Send me a code by text message**.</span></span>
+   - <span data-ttu-id="87808-137">在**方法**中, 单击 "**通过短信向我发送代码**"。</span><span class="sxs-lookup"><span data-stu-id="87808-137">In **Method**, click **Send me a code by text message**.</span></span>
     
-5. <span data-ttu-id="c0491-139">单击“下一步”。\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="c0491-139">Click **Next**.</span></span>
+5. <span data-ttu-id="87808-138">单击“下一步”。</span><span class="sxs-lookup"><span data-stu-id="87808-138">Click **Next**.</span></span>
     
-6. <span data-ttu-id="c0491-140">输入智能手机收到的短信中的验证码，然后单击“验证”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c0491-140">Enter the verification code from the text message received on your smart phone, and then click **Verify**.</span></span>
+6. <span data-ttu-id="87808-139">输入智能手机收到的短信中的验证码，然后单击“验证”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="87808-139">Enter the verification code from the text message received on your smart phone, and then click **Verify**.</span></span>
     
-7. <span data-ttu-id="c0491-141">在“第 3 步: 保留现有应用程序”\*\*\*\* 页上，将显示的 User 2 帐户的应用密码记录在安全位置，然后单击“完成”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c0491-141">On the **Step 3: Keep your existing applications** page, record the displayed app password for the User 2 account in a secure location, and then click **Done**.</span></span>
+7. <span data-ttu-id="87808-140">在“第 3 步: 保留现有应用程序”\*\*\*\* 页上，将显示的 User 2 帐户的应用密码记录在安全位置，然后单击“完成”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="87808-140">On the **Step 3: Keep your existing applications** page, record the displayed app password for the User 2 account in a secure location, and then click **Done**.</span></span>
     
-8. <span data-ttu-id="c0491-p104">如果这是你第一次使用 User 2 帐户登录，那么系统将提示你更改密码。键入原始密码和新密码两次，然后单击“更新密码并登录”\*\*\*\*。将新密码记录在安全位置。</span><span class="sxs-lookup"><span data-stu-id="c0491-p104">If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.</span></span>
+8. <span data-ttu-id="87808-p104">如果这是你第一次使用 User 2 帐户登录，那么系统将提示你更改密码。键入原始密码和新密码两次，然后单击“更新密码并登录”\*\*\*\*。将新密码记录在安全位置。</span><span class="sxs-lookup"><span data-stu-id="87808-p104">If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.</span></span>
     
-    <span data-ttu-id="c0491-145">您应在浏览器的 " **Microsoft Office 主页**" 选项卡上看到 "用户 2" 的 Office 门户。</span><span class="sxs-lookup"><span data-stu-id="c0491-145">You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.</span></span>
+    <span data-ttu-id="87808-144">您应在浏览器的 " **Microsoft Office 主页**" 选项卡上看到 "用户 2" 的 Office 门户。</span><span class="sxs-lookup"><span data-stu-id="87808-144">You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.</span></span>
 
 
-<span data-ttu-id="c0491-146">若要了解如何在生产环境中部署多重身份验证的信息和链接, 请参阅 Identity 阶段中的[设置多重身份验证](identity-multi-factor-authentication.md#identity-mfa)步骤。</span><span class="sxs-lookup"><span data-stu-id="c0491-146">See the [Set up multi-factor authentication](identity-multi-factor-authentication.md#identity-mfa) step in the Identity phase for information and links to deploy multi-factor authentication in production.</span></span>
+<span data-ttu-id="87808-145">若要了解如何在生产环境中部署多重身份验证的信息和链接, 请参阅 Identity 阶段中的[设置多重身份验证](identity-multi-factor-authentication.md#identity-mfa)步骤。</span><span class="sxs-lookup"><span data-stu-id="87808-145">See the [Set up multi-factor authentication](identity-multi-factor-authentication.md#identity-mfa) step in the Identity phase for information and links to deploy multi-factor authentication in production.</span></span>
     
-## <a name="next-step"></a><span data-ttu-id="c0491-147">后续步骤</span><span class="sxs-lookup"><span data-stu-id="c0491-147">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="87808-146">后续步骤</span><span class="sxs-lookup"><span data-stu-id="87808-146">Next step</span></span>
 
-<span data-ttu-id="c0491-148">在测试环境中探索其他[标识](m365-enterprise-test-lab-guides.md#identity)特性和功能。</span><span class="sxs-lookup"><span data-stu-id="c0491-148">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
+<span data-ttu-id="87808-147">在测试环境中探索其他[标识](m365-enterprise-test-lab-guides.md#identity)特性和功能。</span><span class="sxs-lookup"><span data-stu-id="87808-147">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c0491-149">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c0491-149">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="87808-148">另请参阅</span><span class="sxs-lookup"><span data-stu-id="87808-148">See also</span></span>
 
-[<span data-ttu-id="c0491-150">阶段 2：身份</span><span class="sxs-lookup"><span data-stu-id="c0491-150">Phase 2: Identity</span></span>](identity-infrastructure.md)
+[<span data-ttu-id="87808-149">阶段 2：标识</span><span class="sxs-lookup"><span data-stu-id="87808-149">Phase 2: Identity</span></span>](identity-infrastructure.md)
 
-[<span data-ttu-id="c0491-151">Microsoft 365 企业版测试实验室指南</span><span class="sxs-lookup"><span data-stu-id="c0491-151">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="87808-150">Microsoft 365 企业版测试实验室指南</span><span class="sxs-lookup"><span data-stu-id="87808-150">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
 
-[<span data-ttu-id="c0491-152">Microsoft 365 企业版部署</span><span class="sxs-lookup"><span data-stu-id="c0491-152">Microsoft 365 Enterprise deployment</span></span>](deploy-microsoft-365-enterprise.md)
+[<span data-ttu-id="87808-151">Microsoft 365 企业版部署</span><span class="sxs-lookup"><span data-stu-id="87808-151">Microsoft 365 Enterprise deployment</span></span>](deploy-microsoft-365-enterprise.md)
 
-[<span data-ttu-id="c0491-153">Microsoft 365 企业版文档</span><span class="sxs-lookup"><span data-stu-id="c0491-153">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
+[<span data-ttu-id="87808-152">Microsoft 365 企业版文档</span><span class="sxs-lookup"><span data-stu-id="87808-152">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
