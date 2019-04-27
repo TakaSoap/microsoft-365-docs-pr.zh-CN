@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用发送到 Microsoft 365 企业版测试环境中的智能手机的短信配置多重身份验证。
-ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291137"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353174"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的多重身份验证
 
@@ -35,7 +35,7 @@ ms.locfileid: "32291137"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
@@ -50,33 +50,31 @@ ms.locfileid: "32291137"
 
 通过以下步骤为 User 2 帐户启用多重身份验证：
   
-1. 打开浏览器的单独私有实例, 转到 Office 门户 ([https://office.com](https://office.com)), 然后使用全局管理员帐户登录。
+1. 打开浏览器的单独私有实例, 转到 Microsoft 365 管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com)), 然后使用全局管理员帐户登录。
     
-2. 在主门户页上，单击“管理员”****。
+2. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
     
-3. 在左侧导航栏中，单击“用户”>“活动用户”****。
+3. 在 "活动用户" 窗格中, 单击 "**更多 > 多重身份验证设置**"。
     
-4. 在 "活动用户" 窗格中, 单击 "**更多 > 多重身份验证设置**"。
+4. 在列表中, 选择 "**用户 2** " 帐户。
     
-5. 在列表中, 选择 "**用户 2** " 帐户。
+5. 在“User 2”**** 部分的“快速步骤”**** 下，单击“启用”****。
     
-6. 在“User 2”**** 部分的“快速步骤”**** 下，单击“启用”****。
+6. 在“关于启用多重身份验证”**** 对话框中，单击“启用多重身份验证”****。
     
-7. 在“关于启用多重身份验证”**** 对话框中，单击“启用多重身份验证”****。
+7. 在 "**更新成功**" 对话框中, 单击 "**关闭**"。
     
-8. 在 "**更新成功**" 对话框中, 单击 "**关闭**"。
+8. 在 " **Microsoft 365 管理中心**" 选项卡上, 单击右上角的 "用户帐户" 图标, 然后**** 单击 "注销"。
     
-9. 在“Microsoft Office 主页”**** 选项卡上，单击右上方的用户帐户图标，然后单击“注销”****。
-    
-10. 关闭浏览器实例。
+9. 关闭浏览器实例。
    
 完成 User 2 帐户的配置，通过以下步骤，使用短信对其进行验证和测试：
   
 1. 打开浏览器的新的私有实例。
     
-2. 转到 Office 门户 ([https://office.com](https://office.com)), 并使用 User 2 帐户 (用户2、\<组织 name>) 和密码登录。
+2. 转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com)), 并使用用户2帐户名称和密码登录。
     
-3. 登录后, 系统会提示您设置帐户以获取详细信息。 单击“下一步”。****
+3. 登录后, 系统会提示您设置帐户以获取详细信息。 单击“下一步”。
     
 4. 在“其他安全性验证”**** 页上： 
     
@@ -86,7 +84,7 @@ ms.locfileid: "32291137"
     
    - 在**方法**中, 单击 "**通过短信向我发送代码**"。
     
-5. 单击“下一步”。****
+5. 单击“下一步”。
     
 6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     
@@ -105,7 +103,7 @@ ms.locfileid: "32291137"
 
 ## <a name="see-also"></a>另请参阅
 
-[阶段 2：身份](identity-infrastructure.md)
+[阶段 2：标识](identity-infrastructure.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

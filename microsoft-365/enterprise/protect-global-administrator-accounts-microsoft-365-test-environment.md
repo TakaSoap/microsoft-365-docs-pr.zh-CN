@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用这些步骤来保护 Microsoft 365 企业版测试环境中的全局管理员帐户。
-ms.openlocfilehash: cded424188447f96e5614f31d3e207bb541d438e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290855"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353054"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中保护全局管理员帐户
 
-您可以通过确保您的管理员帐户尽可能安全, 来阻止组织的数字攻击。 本文介绍如何使用 Office 365 云应用安全和 Azure AD 条件访问策略来保护全局管理员帐户。
+您可以通过确保您的管理员帐户尽可能安全, 来阻止组织的数字攻击。 本文介绍如何使用 azure Active Directory (Azure AD) 条件访问策略来保护全局管理员帐户。
 
 在 Microsoft 365 企业版测试环境中保护全局管理员帐户有两个阶段:
 
@@ -32,10 +32,7 @@ ms.locfileid: "32290855"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
-
-> [!NOTE]
-> Microsoft 365 企业版测试环境使用 Office 365 的 E5 版本和企业版管理 + 安全性 (EMS)。 office 365 云应用安全功能仅在 E5 版本 Office 365 中可用。 
+> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
@@ -47,24 +44,9 @@ ms.locfileid: "32290855"
 > [!NOTE]
 > 测试全局管理员帐户保护不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 的目录同步。 此处提供它作为选项, 以便您可以测试全局管理员帐户保护并在代表典型组织的环境中进行实验。 
   
-## <a name="phase-2-configure-cloud-app-security-and-conditional-access-policies"></a>第2阶段: 配置云应用安全和条件访问策略
+## <a name="phase-2-configure-conditional-access-policies"></a>阶段 2: 配置条件访问策略
 
-首先, 创建 Office 365 云应用安全策略以监视全局管理员帐户活动并将警报发送到全局管理员帐户的电子邮件地址。 
-
-1. 使用全局管理员帐户登录到[Office 365 Security & 合规性门户](https://protection.office.com/)。
-2. 在左侧导航窗格中, 单击 "**通知 > 管理高级警报**"。
-3. 在 "**管理高级通知**" 页面上, 单击 "**启用 office 365 云应用安全性**", 然后单击 "**转到 office 365 云应用安全性**"。
-4. 在 "新建**仪表板**" 选项卡上, 单击 "**控制 > 策略**"。
-5. 在 "**策略**" 页上, 单击 "**创建策略**", 然后单击 "**活动策略**"。
-6. 在 "**策略名称**" 中, 键入 "**管理活动**"。
-7. 在“**策略严重性**”中，单击“**高**”。
-8. 在 "**类别**" 中, 单击 "**特权帐户**"。
-9. 在 **"为策略创建筛选器**" 中, 在**匹配以下所有**项的活动中, 单击 "**管理活动**"。
-10. 在“**警报**”中，单击“**作为电子邮件发送警报**”。在“**收件人**”中，键入你的全局管理员帐户的电子邮件地址。
-11. 在页面底部，单击“**创建**”。
-12. 关闭 "**仪表板**" 选项卡。
-    
-接下来, 创建一个新的用户帐户作为专用全局管理员。
+首先, 创建一个新的用户帐户作为专用全局管理员。
 
 1. 在单独的选项卡上, 打开[Microsoft 365 管理中心](https://admin.microsoft.com/)。
 2. 在 "**活动用户**" 下, 单击 "**添加用户**"。
@@ -119,7 +101,7 @@ ms.locfileid: "32290855"
 
 ## <a name="see-also"></a>另请参阅
 
-[阶段 2：身份](identity-infrastructure.md)
+[阶段 2：标识](identity-infrastructure.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
