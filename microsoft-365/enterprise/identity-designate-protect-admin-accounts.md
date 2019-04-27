@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解管理员帐户并为其配置最大保护。
-ms.openlocfilehash: 4b4a8d01cdf71e30139fa448813a3ff7c43855c7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0be82fc6f431001c69e79a0a26007c54a87424c3
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285152"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353084"
 ---
 # <a name="step-2-secure-your-privileged-identities"></a>步骤 2：保护你的特权标识
 
@@ -39,7 +39,6 @@ ms.locfileid: "32285152"
 1. 在测试用户帐户上测试每个用户帐户或基于条件访问的多重身份验证 (MFA) 设置，以确保 MFA 能够正确并以可预见的方式工作。MFA 需要辅助形式的身份验证，如发送到智能手机的验证码。
 2. 为每个专用的 Office 365 全局管理员帐户配置 MFA，并使用组织中可用的最强形式的辅助身份验证。有关详细信息，请参阅[多重身份验证](identity-multi-factor-authentication.md#identity-mfa)。
 2. 使用条件访问策略要求对全局管理员帐户进行 MFA。有关详细信息，请参阅[保护管理员帐户](identity-access-prerequisites.md#protecting-administrator-accounts)。
-4. 使用 Office 365 云应用安全策略来监控全局管理员帐户活动。有关详细信息，请参阅[配置增强的 Office 365 安全性](infoprotect-configure-increased-security-office-365.md)。
 
 有关配置的详细信息，请参阅[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)。
 
