@@ -41,7 +41,7 @@
 
 如果忽略此选项，全局管理员帐户可能会受到持续在线攻击，并且如果泄露，将使得攻击者能够获取、销毁或持有敏感信息进行勒索。
 
-如果需要，请执行[第 2 步](../identity-designate-protect-admin-accounts.md#identity-pim)，这有助于你满足此条件。
+如果需要，请执行[步骤 2](../identity-designate-protect-admin-accounts.md#identity-pim)，这有助于你满足此条件。
 
 
 <a name="crit-identity-sync"></a>
@@ -51,7 +51,7 @@
 
 通过目录同步，你的用户可以使用与登录到其计算机相同的凭据登录到 Office 365 和其他 Microsoft 云服务，并访问本地资源。
 
-如果需要，请执行[第 3 步](../identity-azure-ad-connect.md#identity-sync)，这样做有助于满足此要求。
+如果需要，请执行[步骤 3](../identity-azure-ad-connect.md#identity-sync)，这样做有助于满足此要求。
 
 如果忽略此要求，将具有两组用户帐户和组：
 
@@ -79,7 +79,7 @@
 
 如果忽略此选项，则可以更准确地评估基于云的身份基础结构状态。
 
-如果需要，可在[步骤 3](../identity-azure-ad-connect.md#identity-sync-health) 中设置此选项。
+如果需要，可在[步骤 3 ](../identity-azure-ad-connect.md#identity-sync-health)中设置此选项。
 
 #### <a name="how-to-test"></a>测试操作
 Azure AD Connect Health 门户显示本地标识服务器和持续同步的当前和正确状态。

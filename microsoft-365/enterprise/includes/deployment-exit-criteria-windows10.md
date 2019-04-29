@@ -9,7 +9,7 @@ Office 365 和 Intune 订阅的 Azure AD 租户是使用 Internet 域名（例�
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>可选：已添加用户并已对其许可
 
-The accounts corresponding to your users are 已添加对应于用户的帐户（直接添加到 Office 365 和 Intune 订阅的 Azure AD 租户，或从本地 Active Directory 域服务 (AD DS) 中的目录同步）。
+已添加对应于用户的帐户（直接添加到 Office 365 和 Intune 订阅的 Azure AD 租户，或从本地 Active Directory 域服务 (AD DS) 中的目录同步）。
 
 添加用户后，即可向其分配 Microsoft 365 企业版许可证（可直接分配为全局或用户管理员，或通过组成员身份自动分配）。
 

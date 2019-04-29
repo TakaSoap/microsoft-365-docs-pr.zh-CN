@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录。
 ms.openlocfilehash: 210d59b0e578b807b9f9ee73e9bff11e7f2502a0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290126"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400156"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录
 
@@ -93,7 +93,7 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
 
 6. 注销 Office 365，再重新登录，这次指定不同的帐户。
 
-7. 当出现登录提示时，指定用户名 <strong>user1@testlab.</strong>\<公共域> 名称，再单击“下一步”。 应能够以 User1 身份成功登录，且不会看到密码输入提示。 这就证明无缝 SSO 能正常运行。
+7. 当出现登录提示时，指定用户名 <strong>user1@testlab.</strong>\<公共域> 名称，再单击“下一步”****。 应能够以 User1 身份成功登录，且不会看到密码输入提示。 这就证明无缝 SSO 能正常运行。
 
 请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是  Azure AD 和 Office 365 全局管理员。 因此，不会看到作为一个选项的**管理员**图标。
 

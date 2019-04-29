@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: '了解如何将 windows 设备升级到 windows 10 专业版创意者更新。 '
-ms.openlocfilehash: ec1ef0462cc1ba1cd1ae01ee28795096097e01a9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 13a964b19b1fbd43e9c255a90161ca6b48099305
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279857"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399966"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>将 Windows 设备升级到 Windows 专业版创意者更新
 
@@ -37,6 +37,9 @@ ms.locfileid: "32279857"
      - 使用[媒体创建工具](https://go.microsoft.com/fwlink/?LinkID=836960)创建安装媒体-选择此选项可创建 windows 10 Pro 创意者更新安装媒体 (USB 闪存驱动器或 ISO 文件), 以便在与你使用的计算机不同的电脑上安装 windows 10。
     
         a. 阅读有关如何使用此工具和创建安装媒体的说明。 
+
+> [!Note]
+> 如果你有运行 windows 7 pro、windows 8 专业版或 windows 8.1 pro 的 windows 设备, Microsoft 365 业务订阅将获得 windows 10 升级的要求-你不需要产品密钥。
     
 请参阅[为 Microsoft 365 商业版用户设置 windows 设备](set-up-windows-devices.md), 以完成 Windows 10 设备的设置。 
   

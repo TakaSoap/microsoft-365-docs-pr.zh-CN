@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对网络基础结构的条件。
 ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291364"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400216"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第 1 阶段：网络基础结构退出条件
 

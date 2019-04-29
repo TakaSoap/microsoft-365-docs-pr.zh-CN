@@ -6,11 +6,11 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
-ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33296162"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400066"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中注册设备
 
@@ -100,7 +100,7 @@ Microsoft 托管桌面可以与全新设备配合使用, 也可以重新使用�
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息, 请参阅[故障排除](register-devices-self.md#troubleshooting)。 |
 | 为用户准备就绪 | 注册成功, 现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们, 因此无需执行任何进一步的准备。 |
-| 可用 | 设备已传递给最终用户, 并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
+| 活动 | 设备已传递给最终用户, 并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
 | 不再 | 设备已传递给最终用户, 并且已向其注册了你的租户。 但是, 他们最近未使用设备 (最近7天)。  | 
 
 
@@ -110,7 +110,7 @@ REST API 可用于实现更大的灵活性和重复频繁单独的设备注册�
 
 
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 | 错误消息 | 详细信息 |
 |---------------|-------------|

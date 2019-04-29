@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在你的组织中，对 Microsoft 365 企业版中 Microsoft Teams 的价值逐步完成规划、推广和推动过程。
-ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfc9e76211779aa960ff7633dd7d59b2b01e9f98
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291656"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400206"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版的 Microsoft Teams
 
@@ -45,7 +45,7 @@ Microsoft Teams 集聊天、会议、文档共享和按线索组织对话等多�
 代表组织业务、技术和最终用户方面的人员列表。
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>步骤 2：确定并设置 Teams 业务应用场景的优先级
-Teams 可用于很多不同的目的。你需要将组织、业务组、部门和各个工作和项目小组的业务需求与相关目的进行对应。有关帮助你定义 Teams 应用场景的示例，请查阅 [Microsoft 365 生产力库](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1)。 
+Teams 可用于很多不同的目的。你需要将组织、业务组、部门和各个工作和项目小组的业务需求与相关目的进行对应。有关帮助你定义 Teams 应用场景的示例，请查阅 [Microsoft 365 生产力库](https://www.microsoft.com/microsoft-365/success/?rtc=1)。 
 
 你应将 Teams 用于定向解决快速发展且需要密切高度协作的团队的需求，他们需要使用的设施远不是 Exchange Online 电子邮件所能够提供的。例如，带有记录历史信息的实时群聊，以及用于存储文件和备注的常见且易于查找的位置。 
 

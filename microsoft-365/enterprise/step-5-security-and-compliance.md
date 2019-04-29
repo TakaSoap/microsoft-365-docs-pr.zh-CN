@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Windows 和 Office 重要的安全性和合规性注意事项。
-ms.openlocfilehash: ff3adb5ef517c3b3115b867b585c090329ed6ac6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: cefab9cfd1b61f37559d88c5625c512d33595395
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290022"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400236"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步骤 5：安全性和合规性注意事项
 
