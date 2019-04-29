@@ -12,17 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解组织中部署 Microsoft 365 企业版底层基础结构的主要阶段。
-ms.openlocfilehash: 668775097eeffff569b99cc9fe4cd259f5d25c22
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 了解组织中部署 Microsoft 365 企业版底层基础结构（也称为核心部署）的主要阶段。
+ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287095"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400046"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
 
-如果你是自行端到端部署 Microsoft 365 企业版，则应首先奠定坚实的基础，在此基础上，应用程序和服务可以在安全的环境中激发创造力和提高团队协作。 
+如果你是自行端到端部署 Microsoft 365 企业版，则应首先奠定坚实的基础，在此基础上，应用程序和服务可以在安全的环境中激发创造力和提高团队协作。 该底层有时称为核心部署。
 
 对于为部署定义的端到端路径，你可以使用这些阶段来规划和部署 Microsoft 365 企业版的底层基础结构：
 

@@ -3,7 +3,7 @@ title: 第 2 步：配置环境分类
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置对组织中的数据进行分类的各种方法。
-ms.openlocfilehash: ca64b98bceb6f969adc964e93a6a1cc872763199
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5323e4f682e8a530601308877423502f64878a4c
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286971"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400086"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>第 2 步：配置环境分类
 
@@ -47,38 +47,31 @@ Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）
 
 定义数据管理策略的一部分就是确定特定类型的文档或含有特定内容的文档应保留多长时间，以符合组织政策和区域法规要求。 例如，某些类型的文档应在保留一段时间之后删除，有些文档则必须永久保留。
 
-对于 Microsoft 365 中存储的文档，你可以对 Exchange 电子邮件、SharePoint Online、OneDrive for Business 和 Teams 聊天和渠道消息中存储的文档和数据定义并应用保留标签。 有关详细信息，包括如何创建保留标签，请参阅[保留标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)。
+对于 Microsoft 365 中存储的文档，你可以对 Exchange 电子邮件、SharePoint Online、OneDrive for Business 和 Teams 聊天和渠道消息中存储的文档和数据定义并应用保留标签。 
 
 如果使用保留标签，则应为需要应用保留标签的每个类别的文件创建标签。 在保留标签中，你可以指定：
 
 - 一组文件描述符（例如，按业务部门、文件类别或法规）。
-
 - 已附加保留标签的文件的保留设置，例如保留时间以及达到保留时间之后的行为。
 
 也可以通过配置 SharePoint Online 网站将默认保留标签应用到网站中的所有新文档，以此为文件自动应用保留标签。 
 
-有关详细信息，请参阅此[保留标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)。
+有关详细信息，请参阅[保留标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
 为特定类型的文档或含有特定内容的文档提供保护和实施安全措施的一部分就是将其贴上标签，以便应用其他安全性。 借助 Microsoft 365 中的敏感度标签，你可以：
 
 - 执行保护设置，例如加密、权限或添加水印。
-
 - 使用 Microsoft Intune 中的终结点保护功能，防止运行 Windows 的设备上的敏感内容流出你的组织。 
-
 - 使用 Windows 信息保护 (WIP) 终结点保护阻止此类内容被复制到第三方应用（如 Twitter 或 Gmail），或者被复制到可移除存储设备（如 U 盘）。
-
 - 使用 Microsoft Cloud App Security 保护第三方应用和服务中的内容。 
-
 - 对内容进行分类，无需使用任何保护设置。
 
 如果使用敏感度标签，则应为每个安全和信息保护级别配置标签。 例如，为以下对象创建三个敏感度标签：
 
 - 基线
-
 - 敏感
-
 - 高度管控
 
 有关详细信息，请参阅此[敏感度标签概述](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels)。
@@ -102,12 +95,14 @@ Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）
 
 有关包括个人数据的 GDPR 分类方案示例，请参阅[为个人数据构建分类方案](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data)。
 
+## <a name="take-it-for-a-test-drive"></a>体验一下
+
 |||
 |:-------|:-----|
 |![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：数据分类](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step3)。
+作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step2)。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: 3112589a023a563ff599535e1e9045a3d3db3bce
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289183"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400056"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -41,13 +41,13 @@ Microsoft 365 企业版是 Office 365、企业移动性 + 安全性 (EMS) 和 Wi
 
 FastTrack 的优势在于持续且可重复（可用作订阅的一部分），由 Microsoft 工程师提供以帮助你按自己的节奏移动到云。 此外，FastTrack 还可使你根据需要访问合格的合作伙伴以获取其他服务。 目前为止，40,000 多个客户已启用此功能，FastTrack 可帮助最大化投资回报率、加快部署，提高整个组织的采用率。 请参阅 [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)。
 
-如果想要充分利用 FastTrack 来部署 Microsoft 365 企业版，可以使用 FastTrack [Microsoft 365 部署顾问](https://aka.ms/microsoft365setupguide)了解如何部署和设置底层基础结构。 请注意，必须以 Office 365 或 Microsoft 365 租户中的全局管理员身份登录才能访问此页面。
+如果想要充分利用 FastTrack 来部署 Microsoft 365 企业版，可以使用 FastTrack [Microsoft 365 部署顾问](https://aka.ms/microsoft365setupguide)了解如何部署和设置底层基础结构。 必须以 Office 365 或 Microsoft 365 租户中的全局管理员身份登录才能访问此页面。
 
 利用[此处](https://fasttrack.microsoft.com/microsoft365)的 FastTrack 开启你的端对端部署旅程吧。
 
 ## <a name="microsoft-365-enterprise-deployment-guide"></a>Microsoft 365 企业版部署指南
 
-Microsoft 365 企业版部署指南可以指导你完成 Microsoft 365 企业版产品和功能的正确和必需配置。
+Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产品和功能的适当和必需配置。
 
 若要自行部署 Microsoft 365 企业版，请：
 

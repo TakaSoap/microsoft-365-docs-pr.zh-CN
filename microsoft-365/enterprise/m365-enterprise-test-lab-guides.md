@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 027386f9b44d09d2927c2473d1ef27381f82f969
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283642"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353128"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -65,7 +65,7 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 - [保护全局管理员帐户](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   使用 Office 365 云应用安全和条件访问策略锁定全局管理员帐户。
+   通过条件访问策略锁定全局管理员帐户。
 
 - [密码写回](password-writeback-m365-ent-test-environment.md)
 
@@ -82,6 +82,11 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 - [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 
    扫描当前用户帐户以发现漏洞。
+
+- [标识和设备访问](identity-device-access-m365-test-environment.md)
+
+   创建用于测试推荐的标识和设备访问配置以及条件访问策略的环境。
+
 
 ## <a name="mobile-device-management"></a>移动设备管理
 

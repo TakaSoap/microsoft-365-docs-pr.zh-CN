@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7905bcf37f2cda0e81208a9666c257e2c871110e
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290933"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400226"
 ---
 # <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 
@@ -51,7 +51,7 @@ Office 365 专业增强版为 Microsoft 365 企业版提供这些战略业务方
 如果已部署 Office 365 专业增强版，请查看这一阶段的[退出条件](office365proplus-exit-criteria.md)，以确保其满足 Microsoft 365 企业版的必备条件。
 
 >[!Note]
->若要同时部署 Windows 10 企业版和 Office 365 专业增强版，并迁移到[新式桌面](https://www.microsoft.com/microsoft-365/modern-desktop)，请参阅[新式桌面部署中心](http://aka.ms/howtoshift)。
+>要同时部署 Windows 10 企业版和 Office 365 专业增强版，请参阅[桌面部署中心](desktop-deployment-center-home.md)。
 >
 
 ## <a name="step-1-assess-your-environment"></a>第 1 步：评估环境

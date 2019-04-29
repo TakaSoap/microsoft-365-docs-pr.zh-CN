@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 为 Microsoft 365 了解和配置提升的安全性。
-ms.openlocfilehash: a1976a9305c40d721bd56a4b21b8a52552c1a9dc
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: fcf023960679cf624f3ea7421ab92b1a450d2524
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285072"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400026"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>步骤 3：为 Microsoft 365 配置提升的安全性:
 
@@ -50,13 +50,13 @@ Office 365 ATP 仅在 Microsoft 365 企业版 E5 中提供。
 |![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：配置更高的 Microsoft 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step4)。
+作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step3)。
 
 ## <a name="next-step"></a>后续步骤
 
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[配置特权访问管理](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
 
 

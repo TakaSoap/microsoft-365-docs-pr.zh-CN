@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
-ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e80c169a8aefa60c9e7b3be874a1fb26c86078b6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291447"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353164"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
@@ -55,9 +55,9 @@ ms.locfileid: "32291447"
 
 首先，使用全局管理员角色配置用户 1 帐户。
 
-1. 在 [Office 门户](https://office.com)中，使用全局管理员帐户登录。
+1. 通过 [Microsoft 365 管理中心](https://portal.microsoft.com)使用全局管理员帐户进行登录。
 
-2. 单击“**管理**”磁贴。从浏览器的新“**Microsoft 365 管理中心**”选项卡中，单击“**活跃用户**”。
+2. 单击“**活动用户**”。
  
 3. 在“**活跃用户**”页面上，单击 **user1** 帐户，
 

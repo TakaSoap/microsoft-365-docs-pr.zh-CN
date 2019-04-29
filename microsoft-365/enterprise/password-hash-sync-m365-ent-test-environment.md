@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和展示 Microsoft 365 测试环境的密码哈希同步和登录。
-ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290966"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353134"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
@@ -103,19 +103,17 @@ ms.locfileid: "32290966"
     
 10. 在“配置完成”**** 页上，单击“退出”****。
     
-11. 在 Internet Explorer 中，转到“Office 门户”([https://office.com](https://office.com))。
+11. 在 Internet Explorer 中，转到 Microsoft 365 管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com))。
     
-12. 在主门户页上，单击“管理员”****。
-    
-13. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
+12. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
     
     请注意，该帐户名为**用户 1**。 此帐户来自 TESTLAB AD DS 域，证明目录同步已正常工作。
     
-14. 单击 **User1** 帐户。对于产品许可证，请单击“编辑”****。
+13. 单击 **User1** 帐户。对于产品许可证，请单击“编辑”****。
     
-15. 在“产品许可证”**** 中，选择所在的国家/地区，再单击“Office 365 企业版 E5”**** 的“关”**** 控件（将它切换为“开”****）。对“企业移动性 + 安全性 E5”**** 许可证执行相同的操作。 
+14. 在“产品许可证”**** 中，选择所在的国家/地区，再单击“Office 365 企业版 E5”**** 的“关”**** 控件（将它切换为“开”****）。对“企业移动性 + 安全性 E5”**** 许可证执行相同的操作。 
 
-16. 依次单击页面底部的“**保存**”和“**关闭**”。
+15. 依次单击页面底部的“**保存**”和“**关闭**”。
     
 接下来，使用 User1 帐户的用户名“<strong>user1@testlab.</strong>\<域名>”，测试能否登录 Office 365 订阅。
 

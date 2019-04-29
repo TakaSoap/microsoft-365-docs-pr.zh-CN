@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版信息保护基础结构。
-ms.openlocfilehash: 821c32eea09cde87155d0ee1ccdd81077d051d38
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a0d2c485b05e0969fe45cfd79c86e4e7dcb1d5ff
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287627"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399996"
 ---
 # <a name="phase-6-information-protection"></a>第 6 阶段：信息保护
 
@@ -41,7 +41,9 @@ ms.locfileid: "32287627"
 |![](./media/stepnumbers/Step1.png)|[定义安全和信息保护级别](infoprotect-define-sec-infoprotect-levels.md)|
 |![](./media/stepnumbers/Step2.png)|[配置环境分类](infoprotect-configure-classification.md)|
 |![](./media/stepnumbers/Step3.png)|[为 Microsoft 365 配置提升的安全性](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
+|![](./media/stepnumbers/Step5.png)|[配置 Office 365 数据丢失防护](infoprotect-data-loss-prevention.md)|
+|![](./media/stepnumbers/Step6.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
 
 
 在完成这些步骤后，请转到这一阶段的[退出条件](infoprotect-exit-criteria.md)，以确保满足 Microsoft 365 企业版的必备条件和可选条件。
