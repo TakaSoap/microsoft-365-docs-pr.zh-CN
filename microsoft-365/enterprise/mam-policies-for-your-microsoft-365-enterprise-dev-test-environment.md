@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南将 Intune 设备合规性策略添加到 Microsoft 365 企业版测试环境中。
-ms.openlocfilehash: d20b050bfc56776656bf1d485b2e107a9debe2f7
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
+ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353184"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33467730"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>适用于 Microsoft 365 企业版测试环境的设备合规性策略
 
@@ -26,7 +26,7 @@ ms.locfileid: "33353184"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
@@ -54,7 +54,7 @@ ms.locfileid: "33353184"
     
 6. 在 "**组-所有组**" 边栏选项卡上, 单击 " **+ 新建组**"。
     
-7. 在**组**边栏上, 选择 **"组类型**的**Office 365** ？", 在 "**名称**" 中键入**托管 Windows 10 设备用户**, 在 "**成员身份类型**" 中选择 "**已分配**", 然后单击 "**创建**"。 
+7. 在**组**边栏上, 选择 **"组类型**的**Office 365**或**安全性**？", 在 "**名称**" 中键入**托管 Windows 10 设备用户**, 在 "**成员身份类型**" 中选择 "**已分配**", 然后单击 "**创建**"。 
     
 8. 关闭“组”**** 边栏选项卡。
     
@@ -90,9 +90,9 @@ ms.locfileid: "33353184"
 
 26. 在 "**添加应用程序**" 边栏选项卡上, 单击 "**添加**"。
 
-现在, 你已拥有设备合规性策略, 用于测试**Windows 10**设备合规性策略中的所选应用和**托管 windows 10 设备用户**组的成员。 
+现在, 你已拥有设备合规性策略, 用于测试**Windows 10**设备合规性策略中的所选应用和**托管 windows 10 设备用户**组的成员。 请注意, 选择 "Office 365" 作为组类型将会创建其他资源。 
   
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步骤
 
 在您的测试环境中探索其他[移动设备管理](m365-enterprise-test-lab-guides.md#mobile-device-management)特性和功能。
 
