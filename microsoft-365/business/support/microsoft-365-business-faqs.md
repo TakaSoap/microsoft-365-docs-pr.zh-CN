@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: 1e277aed366d82e524ef99c43ab0401b5d35e5b0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bdcfd6a78278aff83b3fc21ae0fbb43bce140a16
+ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286116"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497744"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商业版常见问题
 
@@ -110,13 +110,13 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 ### <a name="what-should-customers-and-partners-know-before-running-microsoft-365-business-within-their-organization"></a>在组织内运行 Microsoft 365 商业版之前，客户和合作伙伴应该了解哪些内容？ 
 如果客户想要体验 Microsoft 365 商业版的完整功能，必须在其现有台式机上运行 Windows 7、8.1 或 10 专业版<sup>[2](#footnote2)</sup>。 现有的 Windows 10 专业版电脑应该运行创意者更新（如果还没有运行）。 
 
-## <a name="deployment"></a>部署
+## <a name="deployment"></a>Deployment
 
 ### <a name="what-should-customers-consider-when-planning-a-microsoft-365-business-deployment"></a>客户在规划 Microsoft 365 商业版部署时应该考虑什么？ 
 成功部署 Microsoft 365 商业版的最直接途径是与 Microsoft 合作伙伴交流。 他们参加过与各种客户方案相关的大量培训并有丰富的相关经验，最能够了解你的环境和需求。 具有经验丰富的 IT 在职人员的客户可以使用 <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 商业版入门</a>，以帮助他们部署 Microsoft 365 商业版。 
 
 ### <a name="does-microsoft-365-business-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 商业版是否包括 Microsoft Intune 的全部功能？ 
-是的, 已授权 Microsoft 365 商业订阅者使用适用于 iOS、Android、MacOS 和其他跨平台设备管理的完整 Intune 功能。 在 Microsoft 365 商业版的简化管理控制台中不可用的功能, 如第三方应用程序管理和诸如 WiFi 配置文件、VPN 证书等内容等配置, 可以在完整 Intune 控制台中进行管理。   
+是的, 已授权 Microsoft 365 商业订阅者使用适用于 iOS、Android、MacOS 和其他跨平台设备管理的完整 Intune 功能。 在 Microsoft 365 商业版的简化管理控制台中不可用的功能 (如第三方应用程序管理和 WiFi 配置文件的配置、VPN 证书等) 可以在完整 Intune 控制台中进行管理。 您有权使用 Configuration Manager 管理 EMS 许可证覆盖的客户端。 对于与 sccm 相关的查询, 请参阅<a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">sccm faq</a>
   
 
 ### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory 高级 P1 是否带有 Microsoft 365 商业版？ 
