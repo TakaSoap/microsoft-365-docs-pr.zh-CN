@@ -1,22 +1,22 @@
 ---
 title: 符合 GDPR 的 Dynamics 365 数据主体请求
-description: 指南介绍了如何使用 Microsoft 的产品、服务和管理工具来帮助我们的控制者客户查找和处理个人数据以响应 DSR 请求：
+description: 指南介绍了如何使用 Microsoft 的产品、服务和管理工具来帮助我们的控制者客户查找和处理个人数据以响应 DSR 请求。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/10/2019
+ms.date: 04/30/2019
 ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: f5a7f347dc9b26b54cf6bc1fd3a6bdb55d46fe63
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 4e1597e658b0ac6de0c4805b77660e6c47424aa2
+ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285211"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497734"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 数据主体请求
 
@@ -48,9 +48,9 @@ ms.locfileid: "32285211"
 
 - <em>处理者 - </em>代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
 
-- *客户数据* - 客户或代表客户通过使用企业服务提供给 Microsoft 的所有文本、声音、视频或图像文件和软件，如 Microsoft Online Services 条款所定义。
+- *客户数据* – 客户或代表客户通过使用企业服务提供给 Microsoft 的所有文本、声音、视频或图像文件和软件，如 Microsoft Online Services 条款所定义。
 
-- *系统生成日志 *-** Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。系统生成日志主要包括化名数据，例如唯一标识符，这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。系统生成日志还可能包含有关最终用户的身份信息，例如用户名。  
+- *系统*-*生成日志 –* Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。系统生成日志主要包括化名数据，例如唯一标识符，这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。系统生成日志还可能包含有关最终用户的身份信息，例如用户名。  
 
 ### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>本指南将如何帮助你履行控制者职责
 
@@ -72,7 +72,7 @@ ms.locfileid: "32285211"
 
 - 确认你有与该请求相关的信息。
 
-## <a name="part-1-responding-to-data-subject-rights-requests-for-personal-data-includced-in-customer-data"></a>第 1 部分：响应针对客户数据中包含的个人数据的数据主体权限请求
+## <a name="part-1-responding-to-data-subject-rights-requests-for-personal-data-included-in-customer-data"></a>第 1 部分：响应针对客户数据中包含的个人数据的数据主体权限请求
 
 在下面的文章中，你将找到可帮助你准备和响应对 Dynamics 365 中处理的客户数据中所包括的个人数据的 DSR 请求。请务必注意，个人数据可能存在于 Microsoft 在联机服务订阅的服务过程中处理的其他数据类别，例如 Microsoft 隐私声明中定义的管理员数据或支持数据。本文档仅限于在发现和管理影响你提供给 Dynamics 365 的客户数据中存在的个人数据的 DSR 请求。
 
@@ -83,7 +83,7 @@ Dynamics 365 是一个提供多项数据处理功能的联机服务，采用软�
 
 响应数据主体权利请求的第一步是搜索并标识作为请求主体的客户数据。
 
-对客户数据进行适当分类是处理 Microsoft Dynamics 365 for Customer Engagement 中的个人数据的基础。Dynamics 365 for Customer Engagement 可以围绕数据分类灵活构建应用程序扩展。适当的分类可帮助你将信息识别为个人数据，从而能够在响应数据主体的请求时找到并进行检索。这还可帮助遵守有关收集和管理个人数据的法律和法规要求。
+对客户数据进行适当分类是处理 Dynamics 365 Customer Engagement 商业版应用程序中的个人数据的基础。Dynamics 365 for Customer Engagement 可以围绕数据分类灵活构建应用程序扩展。适当的分类可帮助你将信息识别为个人数据，从而能够在响应数据主体的请求时找到并进行检索。这还可帮助遵守有关收集和管理个人数据的法律和法规要求。
 
 Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，从而访问客户数据。但是，你需要负责确保找到个人数据并适当分类。
 
@@ -101,9 +101,9 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 2.  对市场营销执行的联系人和对象使用 Insight Views，以识别可能包含客户数据的其他数据点。
 
-Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请求、删除个人数据以及查找作为数据主题发现请求 (DSR) 主题的个人数据的功能。 有关详细信息，请参阅 [Dynamics 365 Customer Service Insights 的 GDPR 合规性概述](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary)。
+***Dynamics 365 Customer Service Insights*** 提供了一系列资源，可帮助你[查找客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery)，以响应客户的 GDPR 请求。 
 
-<span id="_Toc511225658" class="anchor"></span>***Dynamics 365 for Finance and Operations*** 提供了几种搜索客户数据的方法。你作为租户管理员，可以执行以下操作来搜索客户数据：
+<span id="_Toc511225658" class="anchor"></span>***Dynamics 365 for Finance and Operations*** 提供了几种搜索客户数据的方法。 你作为租户管理员，可以执行以下操作来搜索客户数据：
 
 -   按照用于快速发现个人数据的方式整理客户数据，请参阅[如何分类数据库存](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory)完成此操作。
 
@@ -118,7 +118,7 @@ Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请�
 -   创建允许经过身份验证的客户查看其个人数据的外部门户或网站。
 
 
-***Dynamics for Business Central*** 提供了多种方式来搜索客户数据。有关详细信息，请参阅[搜索、筛选数据以及为数据排序](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters)。
+***Dynamics for Business Central*** 提供了几种搜索客户数据的方法。 有关详细信息，请参阅[对数据进行搜索、筛选和排序](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters)。
 
 <span id="_Toc511225660" class="anchor"></span>***Dynamics 365 for Talent*** 提供了高级搜索和筛选功能来查找特定个人数据，并提供了 Microsoft Office 导出功能导出该信息或使用浏览器扩展将该信息打印到 .pdf。
 
@@ -128,15 +128,17 @@ Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请�
 
 ### <a name="providing-a-copy-of-customer-data"></a>提供客户数据副本
 
-可使用全面的实体导出功能导出 ***Dynamics 365 for Customer Engagement*** 中的客户数据。客户数据可以导出到静态的 Excel 文件以促进数据移植请求。然后，使用 Excel，可以编辑要包含在移植请求中的个人数据，然后另存为常用的机器可读格式，例如 .csv 或 .xml。
+可使用全面的实体导出功能导出 ***Dynamics 365 for Customer Engagement*** 中的客户数据。 客户数据可以导出到静态的 Excel 文件以促进数据移植请求。 然后，使用 Excel，可以编辑要包含在移植请求中的个人数据，然后另存为常用的机器可读格式，例如 .csv 或 .xml。
 
 此外，在 Dynamics 365 for Marketing 中，提供了一个[专用 API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact)，让客户能够建立扩展以检索所捕获的可能包含个人数据的客户交互的其他记录。该 API 从后端系统加载所有相关信息并将其汇总到单个可移植文档中。
 
-可使用全面的实体导出功能导出 ***Dynamics 365 for Finance and Operations*** 中的客户数据。通过使用[*数据管理和集成实体*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity)，租户管理员可利用提供的实体、创建新实体或扩展现有实体，以使用[*数据导入和导出作业*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job)将个人数据重复导出到 Excel 或各种其他常用格式。或者，可以将许多列表导出到静态 Excel 文件以促进数据移植请求。将客户数据导出到 Excel 后，可以编辑要包含在移植请求中的个人数据，然后将该文件另存为常用的机器可读格式，例如 .csv 或 .xml。你还可以考虑使用*人员搜索报告 *为数据主体提供已分类为个人数据的数据。 
+***Dynamics 365 Customer Service Insights*** 允许你使用数据导出功能[提供客户数据的副本](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export)。
+
+可使用全面的实体导出功能导出 ***Dynamics 365 for Finance and Operations*** 中的客户数据。 通过使用[*数据管理和集成实体*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity)，租户管理员可利用提供的实体、创建新实体或扩展现有实体，以使用[*数据导入和导出作业*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job)将个人数据重复导出到 Excel 或各种其他常用格式。  或者，可以将许多列表导出到静态 Excel 文件以促进数据移植请求。 将客户数据导出到 Excel 后，可以编辑要包含在移植请求中的个人数据，然后将该文件另存为常用的机器可读格式，例如 .csv 或 .xml。 你还可以考虑使用*人员搜索报告*为数据主体提供已分类为个人数据的数据。 
 
 在 ***Dynamics 365 Business Central*** 中，可使用两种功能向数据主体提供客户数据副本：
 
-可以将客户数据导出到 Excel 文件。然后在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/zh-CN/dynamics365/business-central/about-export-data)。
+你可以将客户数据导出到 Excel 文件。 然后，在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。 有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/zh-CN/dynamics365/business-central/about-export-data)。
 
 在 ***Dynamics 365 for Talent*** 中，可以使用[扩展人员搜索报告](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-extend-person-search-report)收集信息以支持对数据主体个人数据副本的请求。
 
@@ -144,7 +146,7 @@ Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请�
 
 <span id="_Toc511225663" class="anchor"></span>***Dynamics 365 for Customer Engagement*** 提供以下方法来更正不准确或不完整的客户数据或擦除客户数据：
 
--   使用“查找客户数据”中提及的功能搜索客户数据，以及直接在客户参与表单中编辑数据。可直接修改在单行或多行中完成的编辑。
+-   使用“查找客户数据”中提及的功能搜索客户数据，以及直接在客户参与表单中编辑数据。 可直接修改在单行或多行中完成的编辑。
 
 -   批量编辑多个客户参与记录，你可以利用 Microsoft Office 加载项将数据导出到 Microsoft Excel，进行更改，然后将修改过的数据从 Excel 导入 Dynamics 365 for Customer Engagement。
 
@@ -154,13 +156,16 @@ Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请�
 
 -   准备一个具有许多可编辑的联系人字段的[订阅中心](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center)页面。这可以让最终用户尽可能多地更新自己的信息。
 
+***Dynamics 365 Customer Service Insights*** 还提供了一些功能，使组织能够[纠正或更改客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary#a=note-about-requests-to-rectify-personal-data)。
+
+
 在 ***Dynamics 365 for Finance and Operation*** 中，还可能使用[*自定义工具*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)，但你需要负责决策和实施。
 
 <span id="_Toc511225664" class="anchor"></span>***Dynamics 365 Business Central*** 提供了两种方法来更正不准确或不完整的客户数据。
 
 若要快速地批量编辑多个 Business Central 记录，可使用 [Business Central Excel 加载项](https://docs.microsoft.com/zh-CN/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)将列表导出为 Excel 以更正多个记录，然后在 Business Central 中从 Excel 发布修改过的数据。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/zh-CN/dynamics365/business-central/about-export-data)。
 
-- 可以更改存储在任何字段中的客户数据（例如客户卡片中有关客户的信息）通过手动编辑包含目标个人数据的数据元素。有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
+- 可以更改存储在任何字段中的客户数据（例如客户卡片中有关客户的信息）— 通过手动编辑包含目标个人数据的数据元素。 有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
 
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>有关修改业务交易条目的简短说明
 交易记录（如常规、客户和纳税分类账条目）对于企业资源规划系统的完整性至关重要。作为财务或其他事务一部分的个人数据将“按原样”保存，以符合财务法律（例如税法）、防范诈骗（例如安全审计跟踪）或遵从行业认证。因此，Dynamics 365 for Finance and Operations 和 Dynamics 365 Business Central 限制修改此类记录中的数据。
@@ -171,7 +176,7 @@ Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请�
 
 当你收到来自数据主体的限制处理客户数据的请求时，可轻松从联机服务提取受影响的客户数据并将其存储在单独的容器中（例如具有数据隔离功能的内部存储或单独的网络服务），独立于任意云应用程序提供的处理功能。
 
-***Dynamics 365 Business Central*** 提供了替代机制，例如数据处理阻止，让用户能够阻止特定数据主体的记录。有关详细信息，请参阅[限制数据主体的数据处理](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject)。当记录被标记为已阻止时，Dynamics 365 Business Central 将停止处理该数据主体的客户数据。你不能创建使用被阻止记录的新交易；例如，如果客户或销售人员被阻止，则不能为客户创建新发票。
+***Dynamics 365 Business Central*** 提供了替代机制，例如数据处理阻止，让用户能够阻止特定数据主体的记录。 有关详细信息，请参阅[限制数据主体的数据处理](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject)。 当记录被标记为已阻止时，Dynamics 365 Business Central 将停止处理该数据主体的客户数据。 你不能创建使用被阻止记录的新交易；例如，如果客户或销售人员被阻止，则不能为客户创建新发票。
 
 ### <a name="deleting-customer-data"></a>删除客户数据
 
@@ -181,7 +186,9 @@ Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请�
 
 -   你可以通过查找想要删除的数据然后手动删除包含目标客户数据的数据元素，删除存储在任何字段中的客户数据，例如对表示数据主体的联系人记录和包含个人数据的其他记录使用硬性删除。
 
-此外，在 Dynamics 365 for Marketing 中，删除联系人将确保也移除包含个人信息的交互数据。对于任何自定义字段或实体，必须自定义你的系统，以确保将所有客户数据从相关记录删除和/或取消与联系人数据的链接，以便移除所有个人信息。详细信息：[《开发人员指南（市场营销）》](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/marketing-developer-guide)。
+此外，在 Dynamics 365 for Marketing 中，删除联系人将确保也移除包含个人信息的交互数据。 对于任何自定义字段或实体，必须自定义你的系统，以确保将所有客户数据从相关记录删除和/或取消与联系人数据的链接，以便移除所有个人信息。 详细信息：[《开发人员指南（市场营销）》](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/marketing-developer-guide)。
+
+***Dynamics 365 Customer Service Insights*** 还为组织提供了用于[删除客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-delete)的功能。
 
 或者，在 ***Dynamics 365 for Finance and Operations*** 中，可能使用[*自定义工具*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)擦除/修改客户数据。
 
@@ -189,7 +196,7 @@ Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请�
 
 -   若要快速批量编辑多个 Business Central 记录，可使用 [Business Central Excel 加载项](https://docs.microsoft.com/zh-CN/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)将数据导出到 Excel 以删除多条记录，然后将这些更改从 Excel 发布回 Business Central。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/zh-CN/dynamics365/business-central/about-export-data)。
 
--   可以通过手动删除包含目标客户数据的数据元素来删除存储在任何字段中的客户数据。有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
+-   可以通过手动删除包含目标客户数据的数据元素来删除存储在任何字段中的客户数据。 有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
 
 -   你可以直接删除客户数据，例如通过删除联系人然后运行“删除已取消交互日志条目”批处理作业来删除该联系人的交互。
 
@@ -199,23 +206,25 @@ Dynamics 365 Customer Service Insights 为你提供响应个人数据副本请�
 
 ### <a name="exporting-customer-data"></a>导出客户数据
 
-若要响应数据移植请求，可使用全面的实体导出功能导出 ***Dynamics 365 for Customer Engagement*** 中的客户数据。客户数据可以导出到静态 Excel 文件以促进数据移植请求。使用 Excel，可编辑要包含在移植请求中的个人数据，然后将其另存为常用的机器可读格式，例如 .csv 或 .xml。
+若要响应数据移植请求，可使用全面的实体导出功能导出 ***Dynamics 365 for Customer Engagement*** 中的客户数据。 客户数据可以导出到静态的 Excel 文件以促进数据移植请求。 然后，使用 Excel，可以编辑要包含在移植请求中的个人数据，然后另存为常用的机器可读格式，例如 .csv 或 .xml。
 
 此外，在 Dynamics 365 for Marketing 中，提供了一个[专用 API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact)，让客户能够建立扩展以检索所捕获的可能包含个人数据的客户交互的其他记录。该 API 从后端系统加载所有相关信息并将其汇总到单个可移植文档中。
 
-<span id="_Toc511225669" class="anchor"></span>***Dynamics 365 for Finance and Operations*** 提供了[数据管理和集成实体](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity)，可用于启用提供的实体、新创建的实体或扩展的实体，以使用[数据导入和导出作业](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job)将个人数据重复导出到 Excel 或各种其他常用格式。或者，可将许多列表导出到静态 Excel 文件以促进数据移植请求。将客户数据以这种方式导出到 Excel 后，你可以编辑要包括在移植请求中的个人数据，然后将该文件另存为常用的机器可读格式，例如 .csv 或 .xml。
+对于 ***Dynamics 365 Customer Service Insights***，你可以通过 Azure 管理门户来[导出客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export)。
 
-Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提供了人员搜索报告，可为数据主体提供已分类为个人数据的数据。 
+<span id="_Toc511225669" class="anchor"></span>***Dynamics 365 for Finance and Operations*** 提供了[数据管理和集成实体](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity)，可用于启用提供的实体、新创建的实体或扩展的实体，以使用[数据导入和导出作业](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job)将个人数据重复导出到 Excel 或各种其他常用格式。  或者，可以将许多列表导出到静态 Excel 文件以促进数据移植请求。 将客户数据以这种方式导出到 Excel 后，你可以编辑要包括在移植请求中的个人数据，然后将该文件另存为常用的机器可读格式，例如 .csv 或 .xml。
+
+Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提供了人员搜索报告，可为数据主体提供已分类为个人数据的数据。 
 
 - <span id="_Toc511225670" class="anchor"></span>***Dynamics 365 Business Central*** 提供以下功能，
 
-- 你可以将客户数据导出到 Excel 文件。然后，在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data)。
+- 你可以将客户数据导出到 Excel 文件。 然后，在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。 有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data)。
 
-你可以将客户数据导出到 Excel 文件。然后，在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/zh-CN/dynamics365/business-central/about-export-data)。
+你可以将客户数据导出到 Excel 文件。 然后，在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。 有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/zh-CN/dynamics365/business-central/about-export-data)。
 
 ### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
 
-<span id="_Toc511166412" class="anchor"></span>由于 Microsoft Social Engagement 处理可能在客户数据和社交内容中找到的个人数据，因此该应用程序提供了一个独特的方式来处理 DSR 请求，因为它与从社交网络中检索到的个人数据相关。社交内容是从社交媒体网络（如 Twitter、Facebook 和 YouTube）和数据索引或数据聚合服务收集的公开可用内容，用于响应客户在 Microsoft Social Engagement 中执行的搜索查询。社交内容不是客户数据。Microsoft Online Service 条款中介绍了有关处理、使用和存储社交内容的进一步限制。
+<span id="_Toc511166412" class="anchor"></span>由于 Microsoft Social Engagement 处理可能在客户数据和社交内容中找到的个人数据，因此该应用程序提供了一个独特的方式来处理 DSR 请求，因为它与从社交网络中检索到的个人数据相关。 社交内容是从社交媒体网络（如 Twitter、Facebook 和 YouTube）和数据索引或数据聚合服务收集的公开可用内容，用于响应客户在 Microsoft Social Engagement 中执行的搜索查询。 社交内容不是客户数据。 Microsoft Online Service 条款中介绍了有关处理、使用和存储社交内容的进一步限制。
 
 ### <a name="finding-personal-data"></a>查找个人数据
 
@@ -225,7 +234,7 @@ Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提
 
 - Social Engagement 从社交平台获取的社交媒体用户数据（在 Social Engagement 中称为 *“作者”*）。可能包括姓名、用户名、个人资料图片、位置、网站和个人简历（如果作者提供）。
 
-- Social Engagement 员工用来对作者进行分组和分类的作者标签，例如，影响者、竞争对手或粉丝。
+- 用于对作者进行分组和分类的作者标签，例如，影响者、竞争对手或粉丝。
 
 #### <a name="for-employees"></a>对于员工
 
@@ -273,9 +282,9 @@ GDPR 为数据主体提供了根据请求获取个人数据副本的权利。找
 ##### <a name="your-employees"></a>你的员工
 若要导出：
 
-- 用户个人资料中的客户数据，转到[](https://portal.office.com/adminportal/home)“Office 365 管理中心”。在“管理中心”**** 中，选择“用户”****。在“活动用户”**** 页面上，搜索你要导出其数据的用户。删除目标用户之外的所有用户，然后选择“导出”**** 将数据导出到 .csv 文件，你可以在这里使用 Excel 查看信息。
+- 用户个人资料中的客户数据，转到“[Office 365 管理中心](https://portal.office.com/adminportal/home)”。 在“**管理中心**”中，选择“**用户**”。 在“**活动用户**”页面上，搜索你要导出其数据的用户。 删除目标用户之外的所有用户，然后选择“**导出**”将数据导出到 .csv 文件，你可以在这里使用 Excel 查看信息。
 
-- 提醒收件人（提醒中仅有的客户数据）的电子邮件地址。遵循[以管理员身份管理提醒收件人](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步骤。然后选择“导出”****，下载包括此收件人的提醒的 Excel 列表。
+- 提醒收件人（提醒中仅有的客户数据）的电子邮件地址。 遵循[以管理员身份管理提醒收件人](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步骤。 然后选择“**导出**”，下载包括此收件人的提醒的 Excel 列表。
 
 - Power BI 的用户名：“参与报告”[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)在社交媒体上的团队绩效报告中显示用户名。若要导出此数据，请在 PowerBI 仪表板或[报告](https://docs.microsoft.com/power-bi/power-bi-report-add-filter)中按用户进行筛选，并[导出数据](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data)。
 
@@ -305,7 +314,7 @@ GDPR 为数据主体提供了根据请求获取个人数据副本的权利。找
 
 ##### <a name="your-employees"></a>你的员工
 
-- 若要停止处理员工的客户数据，你可以在 Office 365 中[移除其许可证](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1)。这将删除所有与 Social Engagement 相关的项目，如用户角色和个人资料、所有相关的用户定义的自定义设置、提醒、活动地图和数据流。搜索主题和社区个人资料将不会删除；但是，管理员会继承已删除用户的社区个人资料的所有权，可以根据请求将其删除。
+- 若要停止处理员工的客户数据，你可以在 Office 365 中[移除其许可证](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1)。 这将删除所有与 Social Engagement 相关的项目，如用户角色和个人资料、所有相关的用户定义的自定义设置、提醒、活动地图和数据流。 搜索主题和社区个人资料将不会删除；但是，管理员会继承已删除用户的社区个人资料的所有权，可以根据请求将其删除。
 
 - 若要限制发送提醒电子邮件，可以按照[以管理员身份管理提醒收件人](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步骤将电子邮件地址从已添加到的所有提醒中删除。
 
@@ -350,7 +359,7 @@ Social Engagement 已从多个社交平台（如 Twitter、WordPress、Tumblr）
 ##### <a name="your-employees"></a>你的员工
 若要导出：
 
-- 用户个人资料中的客户数据，转到[](https://portal.office.com/adminportal/home)“Office 365 管理中心”。在“管理中心”**** 中，选择“用户”****。在“活动用户”**** 页面上，搜索你要导出其数据的用户。删除目标用户之外的所有用户，然后选择“导出”**** 将数据导出到 .csv 文件，你可以在这里使用 Excel 查看信息。
+- 用户个人资料中的客户数据，转到“[Office 365 管理中心](https://portal.office.com/adminportal/home)”。 在“**管理中心**”中，选择“**用户**”。 在“**活动用户**”页面上，搜索你要导出其数据的用户。 删除目标用户之外的所有用户，然后选择“**导出**”将数据导出到 .csv 文件，你可以在这里使用 Excel 查看信息。
 
 - 提醒收件人（提醒中仅有的个人数据）的电子邮件地址。请遵循[以管理员身份管理提醒收件人](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步骤。然后选择“导出”****，下载包括此收件人的提醒的 Excel 列表。
 
@@ -416,11 +425,11 @@ Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储�
 <td align="left"><strong>系统生成日志中的数据看上去是怎样的？</strong></td>
 <td align="left"><p>JSON 格式的系统生成日志记录示例：</p>
 <p>[{</p>
-<p>  &quot;DateTime&quot;: &quot;2017-04-28T12:09:29-07:00&quot;,</p>
-<p>  &quot;AppName&quot;: &quot;SharePoint&quot;,</p>
-<p>  &quot;Action&quot;: &quot;OpenFile&quot;,</p>
-<p>  &quot;IP&quot;: &quot;154.192.13.131&quot;,</p>
-<p>  &quot;DevicePlatform&quot;: &quot;Windows 1.0.1607&quot;</p>
+<p>  &quot;DateTime&quot;: &quot;2017-04-28T12:09:29-07:00&quot;,</p>
+<p>  &quot;AppName&quot;: &quot;SharePoint&quot;,</p>
+<p>  &quot;Action&quot;: &quot;OpenFile&quot;,</p>
+<p>  &quot;IP&quot;: &quot;154.192.13.131&quot;,</p>
+<p>  &quot;DevicePlatform&quot;: &quot;Windows 1.0.1607&quot;</p>
 <p>}]</p></td>
 </tr>
 </tbody>
