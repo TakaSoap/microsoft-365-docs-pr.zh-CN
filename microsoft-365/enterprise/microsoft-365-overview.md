@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍了 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353196"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553331"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -30,7 +30,7 @@ Microsoft 365 企业版包括:
 
 |||
 |:-------|:-----|
-| Office 365 企业版 | 包括 office 365 专业增强版、电脑和 Mac 的最新 Office 应用程序 (如 Word、Excel、PowerPoint、Outlook 和其他用户), 以及用于电子邮件、文件存储和协作、会议等的一套完整的在线服务。 |
+| Office 365 Enterprise | 包括 Office 365 专业增强版、电脑和 Mac 的最新 Office 应用程序 (如 Word、Excel、PowerPoint、Outlook 和其他用户), 以及用于电子邮件、文件存储和协作、会议等的一套完整的在线服务。 |
 | Windows 10 企业版 | 满足了大型和中型组织的需求, 为用户提供了具有全面部署、设备和应用程序管理的最高效、安全的 Windows 和 IT 专业人员版本。 |
 | 企业移动性 + 安全性 (EMS) | 包括 Microsoft Intune, 这是一种基于云的企业移动管理 (EMM) 服务, 可帮助您的员工在保持公司数据受保护的情况下提高工作效率。 |
 |||
@@ -62,7 +62,7 @@ Microsoft 365 企业版提供了三个计划。
 
 若要下载海报的副本, 请单击[此处](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf)。
 
-## <a name="deploying"></a>stl
+## <a name="deploying"></a>Stl
 
 可通过以下三种方法来部署 Microsoft 365 企业版的产品、功能和组件:
 
@@ -70,7 +70,7 @@ Microsoft 365 企业版提供了三个计划。
   
    通过 FastTrack, Microsoft 工程师可按自己的步调帮助你移动到云。 请参阅 [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)。
   
-2. 提供 microsoft 咨询服务或[microsoft 合作伙伴](https://partner.microsoft.com/)的帮助。
+2. 提供 Microsoft 咨询服务或[microsoft 合作伙伴](https://partner.microsoft.com/)的帮助。
 
    顾问可以分析您的当前基础结构, 并帮助您制定合并 Microsoft 365 企业的所有软件和服务的计划。
 
@@ -81,7 +81,7 @@ Microsoft 365 企业版提供了三个计划。
 有关更多部署信息, 请参阅操作方法:
 
 - [客户](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)使用 Microsoft 365 企业版。
-- [microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise)使用 microsoft 365 企业版。
+- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise)使用 Microsoft 365 企业版。
 - [Contoso Corporation](contoso-overview.md)(一个虚构但具有代表性的跨国组织) 部署了 Microsoft 365 企业版。
 
 ## <a name="additional-microsoft-365-solutions"></a>其他 Microsoft 365 解决方案
@@ -98,16 +98,11 @@ Microsoft 365 企业版提供了三个计划。
  
   使美国公共事业部门员工能够安全地协同工作。
 
-
-
 ## <a name="microsoft-365-training"></a>Microsoft 365 培训
 
 |||
 |:-------|:-----|
 ![](./media/m365-poster/m365-fundamentals.svg)| 向自己培训并努力处理 Microsoft 365 认证。 <BR> 从[Microsoft 365 基础](https://docs.microsoft.com/learn/paths/m365-fundamentals/)开始。
-
-
-
 
 
 ## <a name="next-step"></a>后续步骤
