@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对基于身份的服务和基础结构的条件。
-ms.openlocfilehash: e36f6e88c41454a951f6c6da4253c4bac07f2fb8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0f2d1cbeef87301729b23a6290277b28466c9770
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285543"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553301"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>阶段 2：身份基础结构退出条件
 
@@ -93,7 +93,7 @@ ms.locfileid: "32285543"
 
 要验证目录同步正常运行，请执行以下操作：
 
-1.  在 Active Directory 域服务 (AD DS) 中创建新的测试组。
+1.  在 AD DS 中创建新的测试组。
 2.  等待同步时间。
 3.  检查 Azure AD 租户以验证新测试组的名称是否出现。
 

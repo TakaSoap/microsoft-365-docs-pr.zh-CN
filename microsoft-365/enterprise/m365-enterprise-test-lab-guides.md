@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: e45a4c903932116a54f0660f08b394d8d2f91307
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353128"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553281"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -49,7 +49,7 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 - [密码哈希同步](password-hash-sync-m365-ent-test-environment.md)
   
-   启用和测试来自 Active Directory 域服务 (AD DS) 域控制器的基于密码哈希的目录同步。
+   启用和测试来自 AD DS 域控制器的基于密码哈希的目录同步。
 
 - [传递身份验证](pass-through-auth-m365-ent-test-environment.md)
   
