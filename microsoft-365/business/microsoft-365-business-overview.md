@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business 入门
+title: 概述 Microsoft 365 业务
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,73 +21,42 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: 80c6590a682af5fadeceac7a75e409adac897f6f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: eb3d611d2be0480fdd0ff897ec5ba69b17695041
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276711"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660437"
 ---
-# <a name="get-started-with-microsoft-365-business"></a><span data-ttu-id="d4313-103">Microsoft 365 Business 入门</span><span class="sxs-lookup"><span data-stu-id="d4313-103">Get started with Microsoft 365 Business</span></span>
+# <a name="overview-of-microsoft-365-business"></a><span data-ttu-id="b5447-103">Microsoft 365 业务概述</span><span class="sxs-lookup"><span data-stu-id="b5447-103">Overview of Microsoft 365 Business</span></span>
 
-## <a name="what-is-microsoft-365-business"></a><span data-ttu-id="d4313-104">什么是 Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="d4313-104">What is Microsoft 365 Business</span></span>
+## <a name="what-is-microsoft-365-business"></a><span data-ttu-id="b5447-104">什么是 Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="b5447-104">What is Microsoft 365 Business</span></span>
 
-<span data-ttu-id="d4313-p101">Microsoft 365 Business 是一套功能全面的业务生产和协作工具，如 Outlook、Word、Excel 和始终不断优化的其他 Office 产品。可通过易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。</span><span class="sxs-lookup"><span data-stu-id="d4313-p101">Microsoft 365 Business is a comprehensive set of business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products that are always up to date. You can protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.</span></span>
+<span data-ttu-id="b5447-p101">Microsoft 365 Business 是一套功能全面的业务生产和协作工具，如 Outlook、Word、Excel 和始终不断优化的其他 Office 产品。可通过易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。</span><span class="sxs-lookup"><span data-stu-id="b5447-p101">Microsoft 365 Business is a comprehensive set of business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products that are always up to date. You can protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.</span></span>
   
-<span data-ttu-id="d4313-107">Microsoft 365 商业版适用于最多300个许可证, 如果你需要更多许可证, 请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)文档以了解详细信息。</span><span class="sxs-lookup"><span data-stu-id="d4313-107">Microsoft 365 Business is meant for up to 300 licenses, if you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.</span></span> 
-  
-## <a name="get-microsoft-365-business"></a><span data-ttu-id="d4313-108">获取 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="d4313-108">Get Microsoft 365 Business</span></span>
+<span data-ttu-id="b5447-107">Microsoft 365 商业版适用于最多300个许可证, 如果你需要更多许可证, 请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)文档以了解详细信息。</span><span class="sxs-lookup"><span data-stu-id="b5447-107">Microsoft 365 Business is meant for up to 300 licenses, if you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.</span></span>
 
-- <span data-ttu-id="d4313-109">如果有合作伙伴，他们将获取 Microsoft 365 商业版：[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业版](get-microsoft-365-business.md)。</span><span class="sxs-lookup"><span data-stu-id="d4313-109">If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md).</span></span>
-    
-- <span data-ttu-id="d4313-110">如果你没有合作伙伴并且想要获取 Microsoft 365 商业版, 你可以在[此处购买它](https://www.microsoft.com/en-us/microsoft-365/business)。</span><span class="sxs-lookup"><span data-stu-id="d4313-110">If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-us/microsoft-365/business).</span></span>
-    
-## <a name="set-up-microsoft-365-business"></a><span data-ttu-id="d4313-111">设置 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="d4313-111">Set up Microsoft 365 Business</span></span>
+<span data-ttu-id="b5447-108">有关完整的功能列表, 请参阅[Microsoft 365 业务服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description)。</span><span class="sxs-lookup"><span data-stu-id="b5447-108">See [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description) for the entire list of features.</span></span>
+  
+## <a name="small-business-security-needs"></a><span data-ttu-id="b5447-109">小型企业安全性需求</span><span class="sxs-lookup"><span data-stu-id="b5447-109">Small business security needs</span></span>
 
- <span data-ttu-id="d4313-112">**Microsoft 365 业务套件设置概述**</span><span class="sxs-lookup"><span data-stu-id="d4313-112">**Overview of Microsoft 365 Business Suite set up**</span></span>
-  
-<span data-ttu-id="d4313-113">下图介绍了管理员如何设置 Microsoft 365 商业版。</span><span class="sxs-lookup"><span data-stu-id="d4313-113">The following diagram describes how admins set up Microsoft 365 Business.</span></span> <span data-ttu-id="d4313-114">还介绍为 Microsoft 365 商业版 准备 Windows 电脑的步骤。</span><span class="sxs-lookup"><span data-stu-id="d4313-114">It also describes the steps to prepare Windows PCs for Microsoft 365 Business.</span></span> <span data-ttu-id="d4313-115">还可以在 Microsoft 365 商业版 管理中心使用 [Windows AutoPilot](add-autopilot-devices-and-profile.md) 添加新设备。</span><span class="sxs-lookup"><span data-stu-id="d4313-115">You can also add new devices to in the Microsoft 365 Business admin center with the [Windows AutoPilot](add-autopilot-devices-and-profile.md).</span></span> <span data-ttu-id="d4313-116">可使用 AutoPilot 设置和预配置新设备，以便在用户使用其 Microsoft 365 商业版 凭据登录后，这些设备可以立即投入使用。</span><span class="sxs-lookup"><span data-stu-id="d4313-116">You can use AutoPilot to set up and pre-configure new devices, getting them ready for productive use as soon as a user signs in with their Microsoft 365 Business credentials.</span></span>
-  
-![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
-  
-### <a name="1-set-up-microsoft-365-business-admin"></a><span data-ttu-id="d4313-118">1: 设置 Microsoft 365 商业版 (管理员)</span><span class="sxs-lookup"><span data-stu-id="d4313-118">1: Set up Microsoft 365 Business (Admin)</span></span>
+<span data-ttu-id="b5447-110">您的业务数据可以通过多种方式泄露。</span><span class="sxs-lookup"><span data-stu-id="b5447-110">Your business data can be compromised in many ways.</span></span> <span data-ttu-id="b5447-111">当您使用已损坏的凭据登录或查看不同设备和应用程序上的组织数据时, 您和您的用户可能会损害组织的安全性。</span><span class="sxs-lookup"><span data-stu-id="b5447-111">You and your users can compromise your organization's security when you sign in with compromised credentials or view organization data on different devices and applications.</span></span> <span data-ttu-id="b5447-112">更具体地说, 你的组织面临的风险来自:</span><span class="sxs-lookup"><span data-stu-id="b5447-112">More specifically, your organization is at risk from:</span></span>
 
-<span data-ttu-id="d4313-119">使用全局管理员凭据登录 [Microsoft 365 商业版管理中心](https://portal.office.com/adminportal/home)，并完成以下步骤设置 Microsoft 365 商业版。</span><span class="sxs-lookup"><span data-stu-id="d4313-119">Sign in to [Microsoft 365 Business admin center](https://portal.office.com/adminportal/home) with your global admin credentials, and complete the steps below to set up Microsoft 365 Business.</span></span> 
-  
-1. [<span data-ttu-id="d4313-120">通过 Microsoft 365 商业版保护设备上的数据的先决条件</span><span class="sxs-lookup"><span data-stu-id="d4313-120">Pre-requisites for protecting data on devices with Microsoft 365 Business</span></span>](pre-requisites-for-data-protection.md)
-    
-    <span data-ttu-id="d4313-121">请先阅读先决条件以确保设备已为 Microsoft 365 商业版 做好准备。</span><span class="sxs-lookup"><span data-stu-id="d4313-121">Read the pre-requisites first to make sure your devices are ready for Microsoft 365 Business.</span></span>
-    
-2. [<span data-ttu-id="d4313-122">使用安装向导安装 Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="d4313-122">Set up Microsoft 365 Business by using the setup wizard</span></span>](set-up.md)
-    
-    <span data-ttu-id="d4313-123">如果要将**本地 Active Directory 永久移动到云**, 可以使用安装向导在 Microsoft 365 Business 管理中心中手动添加用户, 也可以执行与 Azure AD Connect 的一次性同步。</span><span class="sxs-lookup"><span data-stu-id="d4313-123">If you are **permanently moving from a local Active Directory to the cloud**, you can either add your users manually in the Microsoft 365 Business admin center by using the setup wizard, or you can do a one-time sync with Azure AD Connect.</span></span> <span data-ttu-id="d4313-124">可通过 2 种方法执行此操作：</span><span class="sxs-lookup"><span data-stu-id="d4313-124">There are two ways to do this:</span></span> 
-    
-  - <span data-ttu-id="d4313-125">如果你还具有 exchange 2010、exchange 2013 或 exchange 2016 服务器, 则可以[使用最少混合将 Exchange 邮箱快速迁移到 Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef)。</span><span class="sxs-lookup"><span data-stu-id="d4313-125">If you also have an Exchange 2010, Exchange 2013, or Exchange 2016 server, you can [Use Minimal Hybrid to quickly migrate Exchange mailboxes to Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef).</span></span> <span data-ttu-id="d4313-126">最少混合步骤包括将用户一次性同步到 Azure AD 以及将电子邮件从本地迁移到云。</span><span class="sxs-lookup"><span data-stu-id="d4313-126">The minimal hybrid steps include a one-time sync of users to Azure AD as well as email migration from on-premises to the cloud.</span></span> <span data-ttu-id="d4313-127">如果使用此方法，电子邮件迁移完成后，将自动关闭目录同步。</span><span class="sxs-lookup"><span data-stu-id="d4313-127">After the email migration is complete, the directory synchronization is automatically turned off when using this method.</span></span>
-    
-  - <span data-ttu-id="d4313-p105">使用 Office 365 目录同步向导将用户同步到云。请按照[设置 Office 365 目录同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)中的步骤来完成此过程。将用户同步到云后，需要[关闭目录同步](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)。</span><span class="sxs-lookup"><span data-stu-id="d4313-p105">Use The Office 365 directory sync wizard to synchronize your users to the cloud. Follow the steps in [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) to complete this process. After you synchronize your users to the cloud, you will have to [Turn off directory synchronization for Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).</span></span>
-    
-    <span data-ttu-id="d4313-131">还需要为以这种方式添加的每个用户提供 Microsoft 365 商业版许可证。</span><span class="sxs-lookup"><span data-stu-id="d4313-131">You will also have to give each user that was added this way a license to Microsoft 365 Business.</span></span> <span data-ttu-id="d4313-132">可以在[安装向导](set-up.md)中, 或在[Office 365 for business 中的用户分配许可证](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)中执行此操作。</span><span class="sxs-lookup"><span data-stu-id="d4313-132">You can do this in the [setup wizard](set-up.md), or in the [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).</span></span>
-    
-### <a name="2-prepare-mobile-devices"></a><span data-ttu-id="d4313-133">2: 准备移动设备</span><span class="sxs-lookup"><span data-stu-id="d4313-133">2: Prepare mobile devices</span></span>
+1. <span data-ttu-id="b5447-113">已泄露或弱登录凭据。</span><span class="sxs-lookup"><span data-stu-id="b5447-113">Compromised or weak sign-in credentials.</span></span>
+2. <span data-ttu-id="b5447-114">具有弱 pin 的受损设备, 或用户拥有的设备。</span><span class="sxs-lookup"><span data-stu-id="b5447-114">Compromised device with a weak pin, or a user owned device.</span></span>
+3. <span data-ttu-id="b5447-115">可将组织的数据复制/粘贴或保存到个人应用的用户。</span><span class="sxs-lookup"><span data-stu-id="b5447-115">Users who can copy/paste/save your organization's data to personal apps.</span></span>
+4. <span data-ttu-id="b5447-116">安装和使用具有弱安全性的3个<sup>rd</sup>方应用的用户。</span><span class="sxs-lookup"><span data-stu-id="b5447-116">Users who install and use 3<sup>rd</sup> party apps with weak security.</span></span>
+5. <span data-ttu-id="b5447-117">电子邮件漏洞, 包括共享敏感数据、网络钓鱼企图、恶意软件等。</span><span class="sxs-lookup"><span data-stu-id="b5447-117">Email vulnerabilities including sharing sensitive data, phishing attempts, malware, etc.</span></span>
+6. <span data-ttu-id="b5447-118">如果不应的人, 则可以使用敏感信息访问文档。</span><span class="sxs-lookup"><span data-stu-id="b5447-118">When people who should not, can access documents with sensitive information.</span></span>
 
-<span data-ttu-id="d4313-134">按照[为 microsoft 365 商业用户设置移动设备](set-up-mobile-devices.md)中的步骤操作, 在设备上安装 Office 应用, 并确保它们受 Microsoft 365 商业版的保护。</span><span class="sxs-lookup"><span data-stu-id="d4313-134">Follow the steps in[Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) to install Office apps on devices and making sure they are protected by Microsoft 365 Business.</span></span> 
-  
-### <a name="3-prepare-pcs"></a><span data-ttu-id="d4313-135">3: 准备电脑</span><span class="sxs-lookup"><span data-stu-id="d4313-135">3: Prepare PCs</span></span>
+<span data-ttu-id="b5447-119">Microsoft 365 商业版可帮助保护其中每个实例中的数据。</span><span class="sxs-lookup"><span data-stu-id="b5447-119">Microsoft 365 Business helps safeguard your data in each of these instances.</span></span> <span data-ttu-id="b5447-120">下图详细介绍了保护业务数据的安全功能。</span><span class="sxs-lookup"><span data-stu-id="b5447-120">The security features that protect your business data are detailed in the following figure.</span></span>
 
-<span data-ttu-id="d4313-136">管理员可以使用[windows AutoPilot](add-autopilot-devices-and-profile.md)为新设备预选择设置 windows 10 电脑。</span><span class="sxs-lookup"><span data-stu-id="d4313-136">Admins can pre-select settings for new devices Windows 10 PCs by using [Windows AutoPilot](add-autopilot-devices-and-profile.md).</span></span> <span data-ttu-id="d4313-137">用户可以按照本主题中的步骤设置其现有的或新的 Windows 10 设备:[为 Microsoft 365 商业版用户设置 Windows 电脑](set-up-windows-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="d4313-137">Users can set up their existing or new Windows 10 devices by following the steps in this topic: [Set up Windows PCs for Microsoft 365 Business users](set-up-windows-devices.md).</span></span> <span data-ttu-id="d4313-138">对于现有设备, 用户还可以**选择**[将文件移动到 OneDrive for business](move-files-to-onedrive.md)。</span><span class="sxs-lookup"><span data-stu-id="d4313-138">For existing devices users can also **Optionally**[move files to OneDrive for Business](move-files-to-onedrive.md).</span></span> <span data-ttu-id="d4313-139">他们还可以使用第三方工具将与 Windows 配置文件关联的文件移动到 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="d4313-139">They can also use third-party tools to move files associated with Windows profile to OneDrive.</span></span>
-  
-<span data-ttu-id="d4313-140">如果您的组织使用的是本地 windows Server Active Directory, 则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备, 同时仍保持对需要本地身份验证的本地资源的访问权限。</span><span class="sxs-lookup"><span data-stu-id="d4313-140">If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.</span></span> <span data-ttu-id="d4313-141">按照 Microsoft 365 商业版中的 "[启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作, 以便对此进行设置。</span><span class="sxs-lookup"><span data-stu-id="d4313-141">Follow the steps in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md) to set this up.</span></span> <span data-ttu-id="d4313-142">这是此状态的首选方法, 称为**混合 Azure AD 加入的设备**。</span><span class="sxs-lookup"><span data-stu-id="d4313-142">This is the preferred method and devices in this state are called **Hybrid Azure AD joined devices**.</span></span> 
-  
-<span data-ttu-id="d4313-143">如果保留包含某些本地资源 (如文件共享和打印机) 的本地 Active Directory, 则可以通过以下步骤为**Azure AD 联接的设备**授予对这些资源的访问权限:[从访问本地资源Microsoft 365 商业版中的 Azure AD 加入设备](access-resources.md)。</span><span class="sxs-lookup"><span data-stu-id="d4313-143">If you retain a local Active Directory that contains some on-premises resources (such as file shares and printers) , you can give your **Azure AD-joined devices** access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md).</span></span>
-  
-<span data-ttu-id="d4313-144">设置 Windows 10 电脑后, 可以将[Office 自动安装](auto-install-or-uninstall-office.md)到设备上。</span><span class="sxs-lookup"><span data-stu-id="d4313-144">After you have set up Windows 10 PCs, you can [automatically install Office](auto-install-or-uninstall-office.md) to the devices.</span></span> 
-  
-## <a name="contact-support"></a><span data-ttu-id="d4313-145">联系支持人员</span><span class="sxs-lookup"><span data-stu-id="d4313-145">Contact support</span></span>
+![显示 M365B 如何保护您的企业的图。](media/m365businessvalueadd.png)
 
- <span data-ttu-id="d4313-146">**如需联系支持人员：**</span><span class="sxs-lookup"><span data-stu-id="d4313-146">**If you need to contact support:**</span></span>
-  
-- <span data-ttu-id="d4313-147">请与合作伙伴联系。</span><span class="sxs-lookup"><span data-stu-id="d4313-147">Contact your partner.</span></span>
-    
-- <span data-ttu-id="d4313-148">作为 Microsoft 365 商业版管理员, 你可以访问我们的客户支持团队, **[请联系支持人员以获取商业产品-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**</span><span class="sxs-lookup"><span data-stu-id="d4313-148">As a Microsoft 365 Business admin, you have access to our customer support team, **[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**</span></span>
-    
+<span data-ttu-id="b5447-122">若要查看安全功能的完整列表, 请参阅[Microsoft 365 商业安全功能](security-features.md)。</span><span class="sxs-lookup"><span data-stu-id="b5447-122">To see the full list of security features, see [Microsoft 365 Business security features](security-features.md).</span></span> <span data-ttu-id="b5447-123">[设置 Microsoft 365 商业](set-up.md)版后, 请参阅[设置高级安全策略](set-up-advanced-security.md)以开始使用不作为安装程序的一部分的安全功能。</span><span class="sxs-lookup"><span data-stu-id="b5447-123">After you [Set up Microsoft 365 Business](set-up.md), see [Set up advanced security policies](set-up-advanced-security.md) to get started with the security features that are not included as a part of the setup.</span></span> <span data-ttu-id="b5447-124">阅读有关如何针对网络罪犯和黑客设置保护的最佳概述, 请参阅[保护 Office 365 和 Microsoft 365 商业版计划](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的十大方法。</span><span class="sxs-lookup"><span data-stu-id="b5447-124">Read also [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a good overview on how to set up protections against cyber criminals and hackers.</span></span>
 
+## <a name="get-microsoft-365-business"></a><span data-ttu-id="b5447-125">获取 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="b5447-125">Get Microsoft 365 Business</span></span>
+
+- <span data-ttu-id="b5447-126">如果有合作伙伴，他们将获取 Microsoft 365 商业版：[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业版](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)。</span><span class="sxs-lookup"><span data-stu-id="b5447-126">If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).</span></span>
+
+- <span data-ttu-id="b5447-127">如果你没有合作伙伴并且想要获取 Microsoft 365 商业版, 你可以在[此处购买它](https://www.microsoft.com/microsoft-365/business)并按照[注册](sign-up.md)说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="b5447-127">If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.</span></span>
