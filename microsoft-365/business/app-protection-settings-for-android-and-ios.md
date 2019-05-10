@@ -21,20 +21,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略, 以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 04479360bf13a8ff685a91ed95440c08f8cf80b4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660496"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
+![指向的标题https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
+
 ## <a name="create-an-app-management-policy"></a>创建应用管理策略
 
-1. 使用全局管理员凭据登录到[Microsoft 365 商业版管理员中心](https://go.microsoft.com/fwlink/p/?linkid=837890)。 
+1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
     
-2. 在管理中心中, 选择 "**设备** \> **策略** \> " "**添加策略**"。
+2. 在左侧导航中, 选择 "**设备** \> **策略** \> " "**添加**"。
   
 3. 在" **添加策略**"窗格中，输入此策略的唯一名称。 
     
@@ -62,9 +64,9 @@ ms.locfileid: "32277435"
     
 ## <a name="delete-an-app-management-policy"></a>删除应用管理策略
 
-1. 在" **策略**"卡中，选择" **删除策略**"。
+1. 在 "**策略**" 页上, 选择策略, 然后单击 "**删除**"。
     
-2. On the **Delete policy** pane, choose the policies you want to delete \> **Select**, then **Confirm** to delete the policy or policies you chose. 
+2. 在 "**删除策略**" 窗格中, 选择 "**确认**" 以删除所选的策略或策略。 
     
 ## <a name="available-settings"></a>可用设置
 
@@ -78,7 +80,7 @@ ms.locfileid: "32277435"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |说明  <br/> |
+|设置  <br/> |说明  <br/> |
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备的未使用天数达到指定天数，则自动删除该设备上存储的任何工作文件。  <br/> |
 |强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为" **打开**"，则工作文件的唯一可用保存位置是 OneDrive for Business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。即使设备丢失或被盗，也没有人能够读取公司的数据。  <br/> |
@@ -89,7 +91,7 @@ ms.locfileid: "32277435"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |说明  <br/> |
+|设置  <br/> |说明  <br/> |
 |需要 PIN 或指纹才能访问 Office 应用  <br/> |如果此设置在" **开**"位置，则用户必须在提供用户名和密码后再提供一种形式的身份验证，才能在其移动设备上使用 Office 应用。  <br/> |
 |登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |
 |要求用户在 Office 应用空闲以下时间后重新登录  <br/> |此设置确定用户保持空闲状态多久后系统会提示再次登录。  <br/> |

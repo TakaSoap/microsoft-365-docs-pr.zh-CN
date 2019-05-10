@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为你的企业设置新的 Windows 10 设备。
-ms.openlocfilehash: e0802ddcc0964d0b8d102f7dbdb9116b33cdcf58
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8c4a14b4b9dcbf7a30c1e6e0bdd53418a1ab8a03
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660645"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
-可使用 Windows AutoPilot 为公司设置新的 Windows 10 设备，以便将设备提供给员工后，可立即用于工作。
+您可以使用 Windows AutoPilot 为你的企业设置**新**的 Windows 10 设备, 以便在你将其提供给员工时随时准备就绪以供生产使用。
   
 ## <a name="device-requirements"></a>设备要求
 
@@ -41,13 +41,17 @@ ms.locfileid: "32277062"
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用设置指南创建设备和配置文件
 
+![指向的标题https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
+
 如果尚未创建设备组或配置文件，最好首先使用分步指南，但也可在不使用指南的情况下，[添加设备](create-and-edit-autopilot-devices.md)和[分配配置文件](create-and-edit-autopilot-profiles.md)。 
   
-1. 在 Microsoft 365 商业版 管理中心，定位" **设备操作**"卡，选择" **使用 Autopilot 部署 Windows**"。
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。
+
+2. 在左侧导航中, 选择 "**设备** \> **AutoPilot**"。
+
+    ![在管理中心选择 "设备", 然后选择 "AutoPilot"。](media/AutoPilot.png)
   
-2. 在" **准备 Windows**"页面，单击或点击" **启动指南**"。
+2. 在 " **AutoPilot** " 页上, 单击或点击 "**启动指南**"。
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: 了解如何在 Windows 10 设备上创建应用管理策略并保护工作文件。
-ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: f649454417dceae05255df6b37760af99c0b8d4f
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660326"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>设置 Windows 10 设备的应用程序保护设置
 
@@ -37,7 +37,7 @@ ms.locfileid: "32278152"
 
 如果用户在个人 Windows 10 设备上执行工作任务，也可以在该类设备上保护你的数据。
   
-1. 使用全局管理员凭据登录到[admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) 。 选择" **管理**"图块，进入管理中心。 
+1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
     
 2. 在左侧导航中, 选择 "**设备** \> **策略** \> " "**添加**"。
 
@@ -45,15 +45,11 @@ ms.locfileid: "32278152"
     
 4. 在" **策略类型**"下，选择" **适用于 Windows 10 的应用程序管理**"。
     
-5. Under ** Device type **, choose either **Personal** or **Company Owned**.
+5. 在 "**设备类型**" 下, 选择 "**个人**或**公司所有者**"。
     
 6. 将自动打开" **加密工作文件**"。 
     
 7. 如果不希望用户在其电脑上保存工作文件，请将" **阻止用户将公司数据复制到个人文件，并强制其将工作文件保存到 OneDrive for Business**"设置为" **开**"。 
-    
-8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. 有关详细信息, 请参阅[可用设置](#available-settings)。 
-    
-    始终可使用" **重置默认设置**"链接返回到默认设置。 
     
 9. 展开" **恢复 Windows 设备上的数据**"，建议将其设置为" **开**"。
     
@@ -63,24 +59,10 @@ ms.locfileid: "32278152"
     
     ![Browse to Data Recovery Agent certificate.](media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-10. 若要添加其他域或 SharePoint Online 位置，确保所有列出应用中的文件均受到保护，请展开" **保护其他网络和云位置**"。如需为某字段输入多个项，请使用分号 (;) 进行分隔。 
+10. 若要添加其他域或 SharePoint Online 位置，确保所有列出应用中的文件均受到保护，请展开" **保护其他网络和云位置**"。如需为某字段输入多个项，请使用分号 (;) 进行分隔。
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
     
 12. 最后，选择" **添加**"以保存该策略，并将其分配到设备。 
-    
-## <a name="available-settings"></a>可用设置
-
-以下设置可用于管理用户访问 Office 工作文件的方式：
-  
-有关详细信息，请参阅 [Microsoft 365 商业版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)。
-  
-|**设置**|**说明**|
-|:-----|:-----|
-|需要 PIN 或指纹才能访问 Office 应用  <br/> |如果此设置在" **开**"位置，则用户必须在提供用户名和密码后再提供一种形式的身份验证，才能在其移动设备上使用 Office 应用。  <br/> |
-|登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |
-|要求用户在 Office 应用空闲以下时间后重新登录  <br/> |此设置确定用户保持空闲状态多久后系统会提示再次登录。  <br/> |
-   
-

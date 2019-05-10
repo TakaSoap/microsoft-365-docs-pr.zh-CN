@@ -21,14 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: 立即了解如何在安装过程中自动将 Office 部署到 Windows 10 设备。
-ms.openlocfilehash: 3b702f2a57fcd0ebffc51e17ed6af00e8f1c485b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b4359a18d93800def558121cdfd7c97ead058180
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278295"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660643"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>在设置过程中，在 Windows 10 上安装 Office
+
+![指向的标题https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
 
 默认情况下，此设置处于关闭状态。可将该设置打开，以确保用户的所有 Windows 10 设备上运行的 Office 均为最新版本，但在此之前应首先验证确认满足所有先决条件。为了允许此设置向设备推送该软件，除了需满足[准备通过 Microsoft 365 Business 部署 Office 客户端](prepare-for-office-client-deployment.md)中所述的要求，用户还必须获得 Microsoft 365 商业版 授权。 
   
