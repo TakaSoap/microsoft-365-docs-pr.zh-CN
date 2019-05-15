@@ -1,8 +1,11 @@
-# [Microsoft 365 商业版](index.md)
-## [概述](microsoft-365-business-overview.md)
+# Microsoft 365 商业版
+## [Microsoft 365](index.md)
+## [什么是 Microsoft 365 商业版？](microsoft-365-business-overview.md)
 ## [获取 Microsoft 365 业务](sign-up.md)
 ## [数据保护前的先决条件](pre-requisites-for-data-protection.md)
-## [设置](set-up.md)
+## 设置
+### [安装程序概述](set-up-overview.md)
+### [设置 Microsoft 365 业务](set-up.md)
 ### [升级到 Windows Pro 创意者更新](upgrade-to-windows-pro-creators-update.md)
 ### [设置移动设备](set-up-mobile-devices.md)
 ### [设置 Windows 设备](set-up-windows-devices.md)
@@ -14,8 +17,10 @@
 ## [安全](security-features.md)
 ### [保护业务](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [设置高级安全功能](set-up-advanced-security.md)
-## [管理](manage.md)
+## 用户
 ### [添加用户](add-users-m365b.md)
+### [删除员工](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## 管理设备
 ### [查看和编辑策略和设备](view-policies-and-devices.md)
 ### [删除公司数据](remove-company-data.md)
 ### [将设备重置为出厂设置](reset-devices-to-factory-settings.md)
@@ -26,7 +31,12 @@
 #### [验证 Windows 10 电脑上的设置](validate-settings-on-windows-10-pcs.md)
 ### [Windows 10 设备的保护设置](protection-settings-for-windows-10-devices.md)
 ## [迁移到 Microsoft 365 业务](migrate-to-microsoft-365-business.md)
-## [添加 Autopilot 设备和配置文件](add-autopilot-devices-and-profile.md)
+## 计费
+### [你的账单](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [支付](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [取消](/Office365/Admin/subscriptions-and-billing/cancel-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## Autopilot
+### [添加 Autopilot 设备和配置文件](add-autopilot-devices-and-profile.md)
 ### [创建和编辑 Autopilot 配置文件](create-and-edit-autopilot-profiles.md)
 ### [创建和编辑 Autopilot 设备](create-and-edit-autopilot-devices.md)
 ### [AutoPilot 配置文件设置](autopilot-profile-settings.md)
