@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 OS 部署和功能更新的选项。
-ms.openlocfilehash: d5053219750b056c9f72e94524f334a42e2aaa06
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 5b5d7f7174c4effe3db831ed6fb669cc9bdc7578
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400196"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073072"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步骤 6：OS 部署和功能更新
 
@@ -53,9 +53,11 @@ ms.locfileid: "33400196"
 
 捕获的映像将具有 Windows 映像（或 WIM），格式类似于标准 Windows 安装介质。具有自定义 WIM 文件后，可以使用其他任务序列作为 System Center Configuration Manager 或 Microsoft Deployment Toolkit 中的 OS 部署的一部分，以便在应用 Windows 映像前后执行部署相关的任务、应用映像和运行任务。
 
-[创建 Windows 10 引用映像](https://docs.microsoft.com/zh-CN/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[创建安装操作系统的任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+  [创建 Windows 10 引用映像](https://docs.microsoft.com/zh-CN/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
+
+
+  [创建安装操作系统的任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>部署类型
 
@@ -69,7 +71,8 @@ ms.locfileid: "33400196"
 
 以上这三种方案都有一个共同点，即它们都使用任务序列来运行，且可在每次运行时应用自定义映像。
 
-[有关 Windows 10 部署方案的详细信息](https://docs.microsoft.com/zh-CN/windows/deployment/windows-10-deployment-scenarios)
+
+  [有关 Windows 10 部署方案的详细信息](https://docs.microsoft.com/zh-CN/windows/deployment/windows-10-deployment-scenarios)
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>使用任务序列自动化的就地升级
 
@@ -85,9 +88,11 @@ ms.locfileid: "33400196"
 
 就地升级方案可用于从旧版 Windows 迁移到 Windows 10 和从旧版 Windows 10 升级。在 Windows 安装程序完成升级后，你的任务序列可以继续运行和升级 Office 等应用程序、替换驱动程序，以及应用个性化设置。同样，在执行升级前，可以使用升级任务序列来执行预安装任务或检查。
 
-[使用 Configuration Manager 执行 Windows 10 的就地升级](https://docs.microsoft.com/zh-CN/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+  [使用 Configuration Manager 执行 Windows 10 的就地升级](https://docs.microsoft.com/zh-CN/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
+
+
+  [在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>分阶段部署
 
@@ -99,7 +104,9 @@ ms.locfileid: "33400196"
 
 无论选择哪种部署类型，你都想要确保对可预见部分和可重复部分执行自动化操作。Microsoft 提供使用自动化任务序列自动化 OS 部署的两种解决方案：
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/zh-CN/sccm/core/understand/introduction)** (ConfigMgr) 提供内置操作系统部署功能，以实施软件分发和软件更新管理的功能。ConfigMgr 被所有规模的组织广泛使用，并支持所有四种 Windows 部署类型。（可选）可将 ConfigMgr 与 Microsoft Intune 集成，以便为部署和设备管理添加其他功能。
+  - 
+  **
+  [System Center Configuration Manager](https://docs.microsoft.com/zh-CN/sccm/core/understand/introduction)** (ConfigMgr) 提供内置操作系统部署功能，以实施软件分发和软件更新管理的功能。ConfigMgr 被所有规模的组织广泛使用，并支持所有四种 Windows 部署类型。（可选）可将 ConfigMgr 与 Microsoft Intune 集成，以便为部署和设备管理添加其他功能。
 
   - 另一个受欢迎的部署选项是免费的 **[Microsoft Deployment Toolkit](https://docs.microsoft.com/zh-CN/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT)，它通常供小型和中型组织使用，以进行 OS 部署。这几乎对基础结构没有要求。MDT 与 Windows 部署服务 (WDS) 集成，以用于网络启动。它支持所有四种部署类型，并支持安装应用程序、驱动程序和设置。当然，MDT 甚至可以与 Configuration Manager 集成。
 
@@ -111,9 +118,11 @@ Windows 10 中提供的一个新选项是使用 Windows Autopilot 将新电脑�
 
 然后，当用户使用其 Azure AD 凭据在安装期间登录到电脑时，设备将注册到 Microsoft Intune，这将接管部署过程并应用应用程序、软件更新配置和合规性策略。Windows Autopilot 也可选择阻止用户访问第一个会话，直到设置完成。
 
-[Windows Autopilot 概述](https://docs.microsoft.com/zh-CN/windows/deployment/windows-autopilot/windows-10-autopilot)
 
-[Windows Autopilot 先决条件](https://docs.microsoft.com/zh-CN/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
+  [Windows Autopilot 概述](https://docs.microsoft.com/zh-CN/windows/deployment/windows-autopilot/windows-10-autopilot)
+
+
+  [Windows Autopilot 先决条件](https://docs.microsoft.com/zh-CN/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>适用于企业的 Windows 更新的功能更新
 
@@ -121,11 +130,16 @@ Windows 10 中提供的一个新选项是使用 Windows Autopilot 将新电脑�
 
 有关适用于企业的 Windows 更新的详细信息，请查看以下文档：
 
-- [使用适用于企业的 Windows 更新部署更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-manage-updates-wufb)
-- [配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-configure-wufb)
-- [将适用于企业的 Windows 更新与现有管理工具集成](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-integrate-wufb)
-- [使用组策略配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-wufb-group-policy)
-- [使用 Microsoft Intune 配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/intune/windows-update-for-business-configure)
+- 
+  [使用适用于企业的 Windows 更新部署更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-manage-updates-wufb)
+- 
+  [配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-configure-wufb)
+- 
+  [将适用于企业的 Windows 更新与现有管理工具集成](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-integrate-wufb)
+- 
+  [使用组策略配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-wufb-group-policy)
+- 
+  [使用 Microsoft Intune 配置适用于企业的 Windows 更新](https://docs.microsoft.com/zh-CN/intune/windows-update-for-business-configure)
 
 ## <a name="next-step"></a>后续步骤 
 

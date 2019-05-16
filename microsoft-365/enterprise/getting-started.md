@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署过程简介。
-ms.openlocfilehash: 984175c781f9fee87fb615b7906bda5d88fe874e
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 41f35eb31adb4e388d21fd1264b13a345c7d22b6
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400276"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072382"
 ---
 # <a name="getting-started---desktop-deployment"></a>入门 - 桌面部署
 
@@ -49,9 +49,10 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 新式管理实践的关键租户之一是始终保持最新的设备。 通过这一系列，将看到正在交付的新功能，它们可以帮助你迁移到 Windows 10 和 Office 365 专业增强版，并了解如何在两者的半年度发布中保持最新状态。
 
-[面向 IT 专业人员的 Windows 10](https://www.microsoft.com/zh-CN/itpro/windows-10)
+[面向 IT 专业人员的 Windows 10](https://www.microsoft.com/en-us/itpro/windows-10)
 
-[关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/zh-CN/deployoffice/about-office-365-proplus-in-the-enterprise)
+
+  [关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/zh-CN/deployoffice/about-office-365-proplus-in-the-enterprise)
 
 ## <a name="what-has-changed"></a>更改的内容
 
@@ -59,23 +60,25 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 **标识和访问：** Windows 10 和 Office 365 专业增强版与云生产力、安全和管理服务相连接，其核心是一项新标识和访问管理服务：Azure Active Directory (Azure AD)。 这允许跨云服务进行单一登录和安全连接。意味着你将需要配备有 Azure AD，以便充分利用 Microsoft 365 服务的优势，例如 Office 365、Intune 或 Windows Autopilot。
 
-[Microsoft 365](https://www.microsoft.com/zh-CN/microsoft-365/default.aspx)
+[Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/default.aspx)
 
 **安全预启动环境：** 64 位 UEFI 固件将取代 BIOS。 这不仅可加快启动时间，还需要在 Windows 10 中启用许多新式安全功能。 Windows 10 将在 BIOS 中运行，但强烈建议使用 UEFI。 如果还没有从 BIOS 切换到 UEFI 和 64 位，那么现在可以开始了。 有一些工具可以帮助你在 Windows 10 升级期间或升级完成后进行切换。
 
 **基于云的设备管理：** 借助诸如 Microsoft Intune 之类的服务，你可以像管理其他移动设备一样，从一个位置管理 Windows 10 设备。 Microsoft Intune 的独特之处是能够与 System Center Configuration Manager 共同管理 Windows 10 设备。 可以使用 System Center Configuration Manager 来帮助切换到 Windows 10，然后添加 Microsoft Intune。 通过协同工作，System Center Configuration Manager 将成为组织中的智能边缘，与 Microsoft 智能云相连。 这使你能够安全管理用户设备，无论它们在何处，也不管是连接到组织的基础结构还是公有云。
 
-[Windows 10 设备的共同管理](https://docs.microsoft.com/zh-CN/sccm/core/clients/manage/co-management-overview)
+
+  [Windows 10 设备的共同管理](https://docs.microsoft.com/zh-CN/sccm/core/clients/manage/co-management-overview)
 
 **基于云的部署服务：** 当你购买新电脑时，我们已经引入了新的云服务来帮助你部署 Microsoft 365 设备。它被称为 Windows Autopilot 部署服务。 AutoPilot 与你的硬件提供程序集成，且新电脑会在 Auto Pilot 中自动注册。这使得新电脑可以直接发送给最终用户。 当电脑首次启动时，它会快速配置为组织所需的配置，并根据用户的特定需求进行自定义。
 
-[Windows Autopilot](https://www.microsoft.com/zh-CN/windowsforbusiness/windows-autopilot)
+[Windows Autopilot](https://www.microsoft.com/en-us/windowsforbusiness/windows-autopilot)
 
 **即点即用部署：** 在预配 Office 桌面应用时，Office 365 专业增强版是首选项。 这使你能够在开发过程中访问 Office 中的最新创新，因此你不需要等待数年就能获得新功能。 你还可以使用名为“即点即用”的新安装。
 
 即点即用与过去基于 MSI 的包有很大的区别。 即点即用速度更快、更轻，并支持后台更新，可确保用户的正常启动和运行。 它仍然是 Office 的本地副本，你可以继续使用现有部署工具（如 System Center Configuration Manager）来预配和配置应用。
 
-[Office 365 专业增强版部署指南](https://docs.microsoft.com/zh-CN/DeployOffice/deployment-guide-for-office-365-proplus)
+
+  [Office 365 专业增强版部署指南](https://docs.microsoft.com/zh-CN/DeployOffice/deployment-guide-for-office-365-proplus)
 
 **半年度更新：** 一旦移至 Windows 10 和 Office 365 专业增强版，将每半年更新一次，并提供新功能。 但是，由于 Microsoft 能够从云提供见解来帮助你，你可以迅速而自信地将这些更新发布到成百上千台设备。 与就地升级一样，该功能更新保留了前一个版本的应用、数据和配置。
 
@@ -85,7 +88,8 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 **[步骤 1：设备和应用就绪情况](https://aka.ms/mdd1)** 为实现成功部署，必须首先知道你所拥有的设备和应用。 这意味着要对设备和应用进行盘点，并验证其兼容性。 为帮助完成此操作，可以在我们基于云的服务中找到可用工具，即 Windows Analytics。 可通过 Windows Analytics 获得从数亿台电脑中收集的兼容性情报和诊断数据，进而评估设备上运行的应用和驱动程序，这样你就可以确定桌面程序的就绪情况。 如果要使用，甚至可以从 Windows Analytics 将“准备部署的电脑”列表导出到 System Center Configuration Manager，这样你就可以在目标电脑准备就绪时为其构建数据驱动集合。
 
-[开始使用升级就绪情况](https://docs.microsoft.com/zh-CN/windows/deployment/upgrade/upgrade-readiness-get-started)
+
+  [开始使用升级就绪情况](https://docs.microsoft.com/zh-CN/windows/deployment/upgrade/upgrade-readiness-get-started)
 
 **[步骤 2：目录和网络就绪情况](https://aka.ms/mdd2)** 如果尚未执行此操作，接下来你将需要实现 Azure Active Directory，以便进行标识和访问管理。 你还需要准备好网络以改进系统映像、应用程序包、用户文件和更新。 这意味着大量的额外数据；你的网络必须有能力处理此额外负载，而不会影响组织的日常工作。 我们有一系列的网络优化，从带宽限制和对等选项到动态带宽清理和差异更新。
 
@@ -99,21 +103,24 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 与之前的升级过程一样，用户状态迁移工具依旧是自动化这一过程别具价值的工具，它仍然是使用 System Center Configuration Manager 或 Microsoft Deployment Toolkit 进行的迁移的组成部分。 但在迁移过程中，移动所有这些数据可能会成为电脑更换的时间瓶颈，原因在于每台电脑两次传输数百 GB 数据所涉及的物理过程 – 首先从现有桌面开始，然后再回到新桌面。 OneDrive 支持的一个新选项是“已知文件夹移动”，用于在部署之前，在云中大规模同步用户文档、图片和桌面文件。
 
-[将 Windows 已知文件夹重定向和移动到 OneDrive](https://docs.microsoft.com/zh-CN/onedrive/redirect-known-folders)
+
+  [将 Windows 已知文件夹重定向和移动到 OneDrive](https://docs.microsoft.com/zh-CN/onedrive/redirect-known-folders)
 
 **[步骤 5：安全性和合规性](https://aka.ms/mdd5)** 在移动到 Windows 10 和 Office 365 专业增强版时，安全性和合规性是一个具备诸多优势的领域。重要的是，你要熟悉新的内置功能，并将其与已有功能进行比较。例如，Windows 10 中使用基于虚拟化的安全性的新功能可以通过将核心流程和机密从操作系统中分离出来，来防止凭证被盗，防御基于浏览器的漏洞和恶意代码执行。此外，像高级威胁防护这样的云服务提供了一个统一平台，用于安全强化、后期漏洞检测、调查和响应。高级威胁防护还可以保护你免受恶意电子邮件附件、不安全超链接等内容的侵害。
 
-[Microsoft 安全](https://www.microsoft.com/zh-CN/security/default.aspx)
+[Microsoft 安全](https://www.microsoft.com/en-us/security/default.aspx)
 
 **[步骤 6：OS 部署和功能更新](https://aka.ms/mdd6)** 在一切准备就绪后，下一步是部署 OS 映像。可以使用 System Center Configuration Manage 任务序列和基础结构来完成大量的繁重工作。建议的方法是在组织中实施分阶段部署，使用一组具有代表性的硬件和应用，首先锁定目标并部署到“早期采用者组”。然后，你可以使用来自这些设备和用户的数据来逐步瞄准更多电脑。
 
-[System Center Configuration Manager 中的操作系统部署简介](https://docs.microsoft.com/zh-CN/sccm/osd/understand/introduction-to-operating-system-deployment)
+
+  [System Center Configuration Manager 中的操作系统部署简介](https://docs.microsoft.com/zh-CN/sccm/osd/understand/introduction-to-operating-system-deployment)
 
 **[步骤 7：Windows 和 Office 即服务](https://aka.ms/mdd7)** 这标志着维护用户桌面资产的方式发生了重大转变。 通过迁移到 Windows 10 和 Office 365 专业增强版，可以将 Windows 和 Office 作为服务来管理。 每隔几年，技术就会发生巨大的变化，你将不断为用户带来新功能、体验和保护。 半年度功能更新在每年的秋季和春季提供新功能，而每月累积质量更新将包含安全性、可靠性和 bug 修复。 虽然可以选择部署 Office 2019 客户端，但我们强烈建议你移至 Office 365 专业增强版。 此做法遵循类似于 Windows 的服务计划，因此用户也会定期收到 Office 应用更新。
 
 ![](media/getting-started-media/getting-started-media-2.png)
 
-[Windows 即服务概述](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview)
+
+  [Windows 即服务概述](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview)
 [Office 即服务概述](https://docs.microsoft.com/zh-CN/DeployOffice/overview-of-update-channels-for-office-365-proplus)
 
 **[步骤 8：用户通信和培训](https://aka.ms/mdd8)** 最后一步对于推动使用新功能来增强团队合作、通信、安全等至关重要。 在针对早期采用者圈之外的用户进行广泛部署之前，建议推出用户通信和培训。 这将有助于推动人们对 Office、Windows 或其他业务线应用和服务的新功能的使用方式的所需更改。 为提供帮助，我们通过 Microsoft FastTrack 提供免费在线培训。 此外，我们还发布了免费示例通信计划和日程表，以及电子邮件、社交和 Intranet 模板来帮助推出 Windows 10。 作为 Microsoft 365 或 Office 365 组织，你的组织也可能符合资格并可直接支持。
