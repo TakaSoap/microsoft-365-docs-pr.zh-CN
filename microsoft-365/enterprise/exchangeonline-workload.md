@@ -3,7 +3,7 @@ title: 部署适用于 Microsoft 365 企业版的 Exchange Online
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -11,24 +11,24 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 逐步完成在组织内的 Microsoft 365 企业中规划、推出和驱动 Exchange Online 价值的过程。
-ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281202"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072282"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>部署适用于 Microsoft 365 企业版的 Exchange Online
 
-*此工作负载包含在 Microsoft 365 企业版的 E3 和 E5 版本中*
+*此工作负载包含在适用于 Microsoft 365 企业版的 E3 和 E5 版本中*
 
 Exchange Online 是用于电子邮件和日历的主要云服务, 可帮助您的用户以不需要实时聊天或集中式文档存储的方式进行协作。 Exchange Online 是您实现个人和小型组短期通信和计划的方式, 并且是 Microsoft 365 企业的团队合作价值的关键要素。 借助 Exchange Online, 无论您在使用什么设备, 都可以使用已知的 Outlook 应用程序更有效地完成更多和工作。
 
 Exchange Online 还具有高级安全功能, 包括反恶意软件和反垃圾邮件筛选, 以保护邮箱和数据丢失防护功能, 以防止用户错误地将敏感信息发送给未经授权的人员。 Exchange Online security 是 Microsoft 365 企业版的智能安全价值的关键要素。
 
-如果你对 Exchange online 全新品牌, 请参阅[Microsoft Exchange online](https://products.office.com/exchange/exchange-online)。
+如果你对 Exchange Online 全新品牌, 请参阅[Microsoft Exchange online](https://products.office.com/exchange/exchange-online)。
 
-下面的阶段和步骤将指导您完成在组织中对 exchange online 角色进行构想的过程, 通过一系列渐进式部署将组织加入 exchange online, 并推动 exchange online 和它的使用对最终用户的价值。
+下面的阶段和步骤将指导您完成在组织中对 Exchange Online 角色进行构想的过程, 通过一系列渐进式部署将组织加入 Exchange Online, 并推动 Exchange Online 和它的使用对最终用户的价值。
 
 >[!Note]
 >仅在完成了[第2阶段](identity-infrastructure.md)后, 才应遵循以下部署说明: Microsoft 365 企业版基础结构的标识。
@@ -36,7 +36,7 @@ Exchange Online 还具有高级安全功能, 包括反恶意软件和反垃圾�
 
 ## <a name="phase-1-envision"></a>阶段 1：构想
 
-在此阶段中, 您将为您的 exchange online 部署收集人员, 并确定组织如何使用 Exchange online 来满足其业务需求。
+在此阶段中, 您将为您的 Exchange Online 部署收集人员, 并确定组织如何使用 Exchange Online 来满足其业务需求。
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>步骤 1: 收集 Exchange Online 部署成员
 
@@ -57,10 +57,10 @@ Exchange Online 可用于不同的用途。 您需要根据您的组织、业务
 Exchange Online 为 Microsoft 365 企业版启用这些战略业务方案:
 
 - 实时或按自己的时间协作处理文档，以简化合著过程
-- 管理项目、任务和截止时间，以达到业务目标
+- 管理项目、任务和截止时间以达到业务目标
 - 了解工作习惯，以提升影响力
 - 与你的团队进行沟通以了解情况，征求意见，建立凝聚力和共识
-- 在组织内外存储和共享文件，以跨组织边界无缝工作
+- 存储和共享组织内部和外部的文件，以跨组织边界无缝工作
 - 随时随地跨设备安全工作，在保持灵活工作方式的同时完成更多任务
 - 保护信息并降低数据丢失风险
 - 检测和保护以防出现外部威胁 
@@ -78,7 +78,7 @@ Exchange Online 为 Microsoft 365 企业版启用这些战略业务方案:
 
 ### <a name="prerequisites-identity-and-device-access-configuration"></a>先决条件：标识和设备访问配置
 
-若要保护对 Exchange online 邮箱的访问, 请确保已配置[标识和设备访问策略](identity-access-policies.md)以及[建议的 Exchange online 访问策略](secure-email-recommended-policies.md)。
+若要保护对 Exchange Online 邮箱的访问, 请确保已配置[标识和设备访问策略](identity-access-policies.md)以及[建议的 Exchange online 访问策略](secure-email-recommended-policies.md)。
 
 ### <a name="step-1-complete-your-technical-planning"></a>第 1 步：完成技术计划
 
@@ -129,7 +129,7 @@ Exchange Online 为 Microsoft 365 企业版启用这些战略业务方案:
 - 在业务组中确定 Exchange Online 的关键业务方案。
 - 通知用户为部门、工作或项目团队的 Exchange Online 使用提供预期和日程表的通知活动。
 - 将您的业务组成员的本地邮箱迁移到 Exchange Online。
-- 在 exchange online 上提供用户培训, 或链接到介绍 exchange online 和如何使用 exchange online 的资源。
+- 在 Exchange Online 上提供用户培训, 或链接到介绍 Exchange Online 和如何使用 Exchange Online 的资源。
 - 设立反馈机制（如包含业务组中所有成员的中心 Microsoft Teams 团队），以收集业务组中用户的评论，并采取措施来解决他们报告的问题。
 
 发布期间，可以优化变更管理材料，为在整个组织范围内发布做好准备。
@@ -149,7 +149,7 @@ Exchange Online 为 Microsoft 365 企业版启用这些战略业务方案:
 - 在单独的业务组中标识 Exchange Online 的关键业务方案。
 - 将精选的更改管理材料用于发布活动, 以向组织提供 Exchange Online 使用的预期和日程表。
 - 将组织其余部分的邮箱迁移到 Exchange Online。
-- 在 exchange online 上提供用户培训, 或提供指向介绍 exchange online 和如何使用 exchange online 的资源的链接。
+- 在 Exchange Online 上提供用户培训, 或提供指向介绍 Exchange Online 和如何使用 Exchange Online 的资源的链接。
 - 设立反馈机制（如包含所有用户的中心团队），以收集组织用户反馈的评论和问题。如果组织中的人数少于 2500 人，请使用 Teams 中的公用频道；否则，请使用 Yammer 中的公用组。
 
 #### <a name="result"></a>结果
@@ -176,7 +176,7 @@ Exchange Online 为 Microsoft 365 企业版启用这些战略业务方案:
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-若要查看并了解公司如何迁移到 Exchange online 并了解如何使用 exchange online Protection 来防范网络攻击, 请参阅:
+若要查看并了解公司如何迁移到 Exchange Online 并了解如何使用 Exchange Online Protection 来防范网络攻击, 请参阅:
 
 - [Microsoft 将 150,000 个邮箱迁移到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft 使用威胁智能来保护、检测和响应威胁](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
@@ -186,6 +186,6 @@ Exchange Online 为 Microsoft 365 企业版启用这些战略业务方案:
 
 有关日常维护 Exchange Online, 请参阅以下资源:
 
-- [exchange Online 中的 exchange 管理中心](https://technet.microsoft.com/library/jj200743(v=exchg.150).aspx) 
+- [Exchange Online 中的 Exchange 管理中心](https://technet.microsoft.com/library/jj200743(v=exchg.150).aspx) 
 - [Exchange Online 中的监视、报告和邮件跟踪](https://technet.microsoft.com/library/jj200725(v=exchg.150).aspx)
 - [在 Exchange Online 中备份电子邮件](https://technet.microsoft.com/library/dn440734(v=exchg.150).aspx) 

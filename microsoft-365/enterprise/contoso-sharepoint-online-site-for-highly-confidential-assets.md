@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: '摘要: Contoso 如何为高度管控的数据实施 SharePoint Online 网站, 以便在研究团队之间更轻松地进行协作。'
-ms.openlocfilehash: c20e3a1c4ad0b862e81b897acc1462e3a1d1f776
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289212"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072774"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 高度机密数字资产的 SharePoint Online 网站
 
@@ -54,7 +54,7 @@ Contoso SharePoint 管理员首先创建一个名为 "**信息检索**" 的新�
 - "编辑" 权限级别, 以使用 "研究成员" SharePoint 组, 其中的 "**调查成员**" 安全组作为成员
 - 使用 "搜索访问者" 的 "读取" 权限级别 (将 "**调查查看**器" 安全组作为成员) 的 SharePoint 组
 
-下面是生成的 sharepoint 权限级别、sharepoint 组及其成员。
+下面是生成的 SharePoint 权限级别、SharePoint 组及其成员。
 
 ![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
 
@@ -66,13 +66,13 @@ Contoso SharePoint 管理员首先创建一个名为 "**信息检索**" 的新�
 
 首先, Contoso 管理员将**高度机密**的 Office 365 保留标签应用于**信息检索**网站。
 
-接下来, 他们创建了一个名为 "**调查**" 的新 Office 365 DLP 策略:
+接下来, 他们创建了一个名为 "**调查**" 的新 OFFICE 365 DLP 策略:
 
 - 使用 "**高度机密**" Office 365 保留标签。 
 - 将应用于**信息检索**网站。
-- 阻止用户共享文档。
+- 当用户尝试在 Contoso 之外的**搜索**网站上共享数字资产时阻止他们。
 
-有关配置的详细信息, 请参阅[使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)。
+有关配置的详细信息, 请参阅[使用保留标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)。
 
 ## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>步骤 4: 为网站创建了 Azure 信息保护子标签
 
@@ -93,7 +93,7 @@ Contoso admins 在作用域策略中创建了一个新的 Azure 信息保护子�
 **搜索**网站的文件夹中的文件受以下保护:
 
 - **研究**Azure 信息保护选项, 它将加密和 permssions 应用于从**搜索**网站移动或复制文件时携带文件的每个文件。
-- **研究**DLP 策略, 使用可阻止文件离开网站的**高度敏感**保留标签和设置。
+- **研究**DLP 策略, 它使用**高度敏感**的保留标签和设置, 阻止文件与外部用户共享。
 - 一组网站权限, 仅允许对**搜索成员**的成员和研究**者**安全组的成员以及**研究管理员**安全组的成员进行管理。
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>步骤 5: 迁移了本地 SharePoint 研究数据

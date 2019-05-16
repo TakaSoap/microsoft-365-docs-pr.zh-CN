@@ -3,7 +3,7 @@ title: 用于 Microsoft 365 企业版测试环境的 Privileged Access Managemen
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的特权访问管理。
-ms.openlocfilehash: 9cac4f941ba3eb45bfc2bf79075ba22515a589b9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 306cd8d3cb574fd18a3d184898ead765936bf431
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073012"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 Privileged Access Management
 
@@ -27,7 +27,7 @@ ms.locfileid: "32290767"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
@@ -36,7 +36,7 @@ ms.locfileid: "32290767"
 如果要在模拟的企业中配置特权访问管理, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试特权访问管理不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供它作为选项, 以便您可以测试特权访问管理并在代表典型组织的环境中进行试验。 
+> 测试特权访问管理不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 AD DS 林的目录同步。 此处提供它作为选项, 以便您可以测试特权访问管理并在代表典型组织的环境中进行试验。 
 
 ## <a name="phase-2-configure-privileged-access-management"></a>阶段 2: 配置特权访问管理
 
@@ -68,7 +68,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 ```
 4. 查看在 Exchange 管理 PowerShell 中已成功创建新日记规则。
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>为新的-new-journalrule 任务创建新的特权访问策略
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>为新的-New-journalrule 任务创建新的特权访问策略
 
 > [!NOTE]
 > 如果您尚未从本指南的第2阶段完成步骤1和步骤 2, 请确保按照步骤创建名为 "权限访问审批者" 的审批者组, 并在您的测试环境中启用特权访问。
@@ -95,7 +95,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 6. 选择 "**创建**", 然后单击 "**关闭**"。 为策略完全配置和启用可能需要几分钟时间。 在测试下一步中的审批要求之前, 请务必为策略完全启用时间。
 
-### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>在特权访问策略中定义的 new-journalrule 任务的测试批准要求
+### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>在特权访问策略中定义的 New-journalrule 任务的测试批准要求
 
 1. 在本地计算机上, 在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 exchange online 远程 powershell 模块。对你的测试使用全局管理员帐户环境.
 
@@ -114,7 +114,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
     + PSComputerName        : outlook.office365.com
 ```
 
-### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>请求访问权限以使用 new-journalrule 任务创建新的日记规则
+### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>请求访问权限以使用 New-journalrule 任务创建新的日记规则
 
 1. 使用您的测试环境的全局管理员帐户登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
@@ -146,7 +146,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 4. 选择 "挂起的请求", 然后选择 "**批准**" 以授予对全局管理员帐户的访问权限, 以创建新的日记规则。 将向全局管理员帐户 (发出请求的用户) 发送确认已授予审批的通知电子邮件。  
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>测试创建新的日记规则, 该规则具有针对 new-journalrule 任务审批的特权访问权限
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>测试创建新的日记规则, 该规则具有针对 New-journalrule 任务审批的特权访问权限
 
 1. 在本地计算机上, 使用您的测试环境的全局管理员帐户在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 Exchange online 远程 powershell 模块。
 

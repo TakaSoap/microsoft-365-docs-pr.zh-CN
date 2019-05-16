@@ -3,7 +3,7 @@ title: 验证 Windows 10 电脑上的应用保护设置
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何在 Windows 10 设备中验证 Microsoft 365 商业应用保护设置。
-ms.openlocfilehash: 5ab91d65fa7bd40ebc118df217c9711b7bbfe7a4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 15c2d54c6281369875d15985c9d4ed16f0114176
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072222"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的设备保护设置
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>验证是否已设置 Windows 10 设备策略
 
-[设置设备策略](protection-settings-for-windows-10-pcs.md)后, 可能需要几个小时才能使策略在用户的设备上生效。 您可以通过查看用户设备上的各种 Windows 设置屏幕来确认这些策略是否生效。 由于用户无法修改其 windows 10 设备上的 windows Update 和 windows Defender 防病毒设置, 因此许多选项都将灰显。
+[设置设备策略](protection-settings-for-windows-10-pcs.md)后, 可能需要几个小时才能使策略在用户的设备上生效。 您可以通过查看用户设备上的各种 Windows 设置屏幕来确认这些策略是否生效。 由于用户无法修改其 Windows 10 设备上的 Windows Update 和 Windows Defender 防病毒设置, 因此许多选项都将灰显。
   
 1. 转到 "**设置** \> " " ** &amp;更新安全** **** \> \> Windows 更新**重新启动选项**", 并确认所有设置都将灰显。 
     

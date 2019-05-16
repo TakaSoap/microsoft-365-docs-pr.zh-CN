@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在 Microsoft 365 企业版测试环境中配置基于组的许可和动态组成员身份。
-ms.openlocfilehash: 4ee929b345469d9cab05968a4a4c7f7399635b32
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 179284dce271c69939a560703561a32648af93b1
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072622"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自动化 Microsoft 365 企业版测试环境的许可和组成员身份
 
@@ -41,13 +41,13 @@ ms.locfileid: "33353074"
 如果要在模拟的企业中测试自动授权和组成员身份, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
+> 测试自动许可和组成员身份不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>第2阶段: 配置和测试动态组成员身份和自动许可
 
 首先, 创建一个新的 Sales 组并添加一个动态组成员身份规则, 以便将部门设置为 "销售" 的用户帐户自动添加到 "销售" 组中。
 
-1. 使用 Internet 浏览器的专用实例, [https://portal.office.com](https://portal.office.com)使用 office 365 E5 测试实验室订阅的全局管理员帐户登录到 office 365 门户。
+1. 使用 Internet 浏览器的专用实例, [https://portal.office.com](https://portal.office.com)使用 Office 365 E5 测试实验室订阅的全局管理员帐户登录到 office 365 门户。
 2. 在浏览器的一个单独的选项卡上, 转到 Azure [https://portal.azure.com](https://portal.azure.com)门户处。
 3. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”****。
 4. 在 "**所有组**" 边栏选项卡上, 单击 "**新建组**"。

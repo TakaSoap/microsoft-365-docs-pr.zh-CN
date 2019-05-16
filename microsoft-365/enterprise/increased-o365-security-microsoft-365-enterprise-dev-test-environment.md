@@ -1,27 +1,27 @@
 ---
-title: 为 microsoft 365 企业版测试环境增加了 microsoft 365 安全性
+title: 为 Microsoft 365 企业版测试环境增加了 Microsoft 365 安全性
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: 使用此测试实验室指南可启用 microsoft 365 企业版测试环境中的其他 microsoft 365 安全设置。
-ms.openlocfilehash: 583d815d9f413df8aeb5ec7abaf68cf79a6cc8b9
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境中的其他 Microsoft 365 安全设置。
+ms.openlocfilehash: d51f9ada68969823eadbb4fad55392358a6ddee8
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072132"
 ---
-# <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>为 microsoft 365 企业版测试环境增加了 microsoft 365 安全性
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>为 Microsoft 365 企业版测试环境增加了 Microsoft 365 安全性
 
-使用本文中的说明, 您可以配置其他 Microsoft 365 设置以提高 microsoft 365 企业版测试环境的安全性。
+使用本文中的说明, 您可以配置其他 Microsoft 365 设置以提高 Microsoft 365 企业版测试环境的安全性。
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -35,12 +35,12 @@ ms.locfileid: "33353114"
 如果要在模拟的企业中配置增加的 Microsoft 365 安全, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试增强的 Microsoft 365 安全不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
+> 测试增强的 Microsoft 365 安全不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
 
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>第2阶段: 配置增强的 Microsoft 365 安全性
 
-在这一阶段, 您为 microsoft 365 企业版测试环境启用了增强的 microsoft 365 安全性。 有关其他详细信息和设置, 请参阅[Configure a Office 365 租户以提高安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
+在这一阶段, 您为 Microsoft 365 企业版测试环境启用了增强的 Microsoft 365 安全性。 有关其他详细信息和设置, 请参阅[Configure a Office 365 租户以提高安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>配置 SharePoint Online 以阻止不支持新式身份验证的应用程序
 
@@ -57,24 +57,24 @@ ms.locfileid: "33353114"
 4. 在**不支持新式身份验证的应用**下, 单击 "**阻止**", 然后单击 **"确定"**。
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>为 SharePoint、OneDrive for business 和 Microsoft 团队启用高级威胁防护
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>为 SharePoint、OneDrive for Business 和 Microsoft 团队启用高级威胁防护
 
 适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 高级威胁防护 (ATP) 可防止您的组织无意中共享恶意文件。
 
-1. 转到 " [Office 365 安全 & 合规中心](https://protection.office.com)", 并使用全局管理员帐户登录。
+1. 转到 " [Office 365 安全 _AMP_ 合规中心](https://protection.office.com)", 并使用全局管理员帐户登录。
 
 2. 在左侧导航窗格中的 "**威胁管理**" 下, 选择 "**策略 > 安全附件**"。 
 
 3. 选择 "**为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP**"。
 
-4. 单击“**保存**”。
+4. 单击“保存”****。
 
 
 ### <a name="enable-anti-malware"></a>启用反恶意软件
 
 "恶意软件"包括病毒和间谍软件。 "病毒"会感染其他程序与数据，且会在整个计算机中寻找程序进行感染。 “间谍软件”指收集您的个人信息（如登录信息和个人数据），并将其发送给恶意软件作者的恶意软件。 
 
-Office 365 具有内置的恶意软件和垃圾邮件筛选功能, 可帮助保护入站和出站邮件免受恶意软件的攻击, 并帮助保护您免受垃圾邮件的攻击。 有关详细信息, 请参阅[反垃圾邮件 & Office 365 中的反恶意软件保护](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
+Office 365 具有内置的恶意软件和垃圾邮件筛选功能, 可帮助保护入站和出站邮件免受恶意软件的攻击, 并帮助保护您免受垃圾邮件的攻击。 有关详细信息, 请参阅[反垃圾邮件 _AMP_ Office 365 中的反恶意软件保护](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
 
 若要确保正在对具有常见附件文件类型的文件执行反恶意软件处理, 请执行以下操作:
 

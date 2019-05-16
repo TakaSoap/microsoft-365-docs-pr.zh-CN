@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南可在 Microsoft 365 企业版测试环境中的文档上创建和使用 Office 365 保留标签。
-ms.openlocfilehash: 3d64cd245e117813cb4c81a6e9099cd1a0120317
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283535"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072412"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的数据分类
 
@@ -26,7 +26,7 @@ ms.locfileid: "32283535"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
@@ -35,7 +35,7 @@ ms.locfileid: "32283535"
 如果要在模拟的企业中配置 Office 365 保留标签, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试 Office 365 保留标签不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
+> 测试 Office 365 保留标签不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
 
 ## <a name="phase-2-create-office-365-retention-labels"></a>第2阶段: 创建 Office 365 保留标签
 
@@ -55,7 +55,7 @@ ms.locfileid: "32283535"
     
 7. 在“**查看设置**”窗格中，单击“**创建标签**”。
     
-8. 对具有以下名称的其他标签重复步骤 3-7:
+8. 对具有以下名称的其他标签重复步骤 3-7：
     
   - Private
     
@@ -99,15 +99,15 @@ ms.locfileid: "32283535"
     
 6. 在 "**工作组网站说明**" 中, 键入 " **SharePoint 网站" 以查找敏感文件**。
     
-7.  在“**隐私设置**”中，选择“**专用 - 仅成员可以访问此网站**”，然后单击“**下一步**”。
+7.  在“隐私设置”中，选择“专用 - 仅成员可以访问此网站”，然后单击“下一步”************。
     
-8. 在“**希望添加哪些人员?**”窗格中，单击“**完成**”。
+8. 在“希望添加哪些人员?”窗格中，单击“完成”********。
     
 接下来, 为敏感保留标签配置 SensitiveFiles 团队网站的 Documents 文件夹。
   
 1. 在浏览器的 " **SensitiveFiles** " 选项卡中, 单击 "**文档**"。
     
-2. 单击设置图标，然后单击“**库设置**”。
+2. 单击设置图标，然后单击“库设置”****。
     
 3. 在“权限和管理”下，单击“向此库中的项应用标签”********。
     
@@ -115,7 +115,7 @@ ms.locfileid: "32283535"
 
 接下来, 在 SensitiveFiles 网站中创建一个新文档并更改其保留标签。
     
-1. 在 "文档" 文件夹中, 单击 "**新建 > Word document**"。
+1. 在 "文档" 文件夹中, 单击 "**新建 _GT_ Word document**"。
     
 2. 在空白文档中键入一些文本。 等待文本保存。
     

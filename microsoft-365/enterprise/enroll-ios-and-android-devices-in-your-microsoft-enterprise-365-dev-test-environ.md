@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/11/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在 Microsoft 365 测试环境中注册设备, 并远程管理这些设备。
-ms.openlocfilehash: e653b3e6cafb6ee2eb492709a2d060c7b92a6904
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b72298df3dbc470358f8cd87e5ca249999812516
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281243"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073712"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中注册 iOS 和 Android 设备
 
@@ -26,7 +26,7 @@ ms.locfileid: "32281243"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
@@ -35,7 +35,7 @@ ms.locfileid: "32281243"
 如果要在模拟企业版中注册 iOS 和 Android 设备, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
+> 测试自动许可和组成员身份不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
 >  
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>第2阶段: 注册 iOS 和 Android 设备
@@ -54,7 +54,7 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。 如果有人�
 
 1. [https://portal.azure.com](https://portal.azure.com)使用全局管理员帐户的凭据登录到 Azure 门户。
 2. 单击 "**所有服务**", 键入**Intune**, 然后单击 " **intune**"。
-3. 单击 "**设备 > 所有设备**"。
+3. 单击 "**设备 _GT_ 所有设备**"。
 4. 在设备列表中, 单击一个 iOS 或 Android 设备, 然后单击**远程锁定**操作。
 
     
@@ -62,7 +62,7 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。 如果有人�
 
 1. 如果需要, 请[https://portal.azure.com](https://portal.azure.com)使用全局管理员帐户的凭据登录到 Azure 门户。
 2. 单击 "**所有服务**", 键入**Intune**, 然后单击 " **intune**"。
-3. 单击 "**设备 > 所有设备**"。
+3. 单击 "**设备 _GT_ 所有设备**"。
 4. 从管理的设备列表中, 单击 iOS 或 Android 设备, 然后选择 **.。。更多**。 然后选择 "**删除密码**设备远程操作"。
 
 有关其他实验, 请参阅[可用设备操作](https://docs.microsoft.com/intune/device-management#available-device-actions)。

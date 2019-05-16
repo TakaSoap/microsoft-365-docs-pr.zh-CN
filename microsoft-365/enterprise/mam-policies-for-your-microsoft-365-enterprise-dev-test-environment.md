@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南将 Intune 设备合规性策略添加到 Microsoft 365 企业版测试环境中。
-ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
-ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
+ms.openlocfilehash: eb140844eba4bc5cf5eba7fe452345f251ced0ff
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33467730"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072112"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>适用于 Microsoft 365 企业版测试环境的设备合规性策略
 
@@ -26,7 +26,7 @@ ms.locfileid: "33467730"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
@@ -35,14 +35,14 @@ ms.locfileid: "33467730"
 如果要在模拟的企业中配置 MAM 策略, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
+> 测试自动许可和组成员身份不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
 >  
 
 ## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>第2阶段: 为 Windows 10 设备创建设备合规性策略
 
 在此阶段中, 将为 Windows 10 设备创建设备合规性策略。
   
-1. 转到 office 365 门户 ([https://portal.office.com](https://portal.office.com)), 并使用全局管理员帐户登录到你的 office 365 测试实验室订阅。
+1. 转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com)), 并使用全局管理员帐户登录到你的 office 365 测试实验室订阅。
     
 2. 在浏览器的新选项卡上, 在上打开 Azure [https://portal.azure.com](https://portal.azure.com)门户。
 
@@ -84,7 +84,7 @@ ms.locfileid: "33467730"
 
 23. 单击 "**配置应用程序套件**", 然后单击 **"确定"**。
 
-24. 单击 "**应用套件信息**", 在 "**套件名称**" 中键入**office apps for** windows 10, 在**套件**中键入适用于**windows 10 的 office 应用程序**, 然后单击 **"确定"**。
+24. 单击 "**应用套件信息**", 在 "**套件名称**" 中键入**office apps For** windows 10, 在**套件**中键入适用于**Windows 10 的 office 应用程序**, 然后单击 **"确定"**。
 
 25. 单击 "**应用套件设置**", 选择 "**半年****更新频道**", 然后单击 **"确定"**。
 
@@ -92,7 +92,7 @@ ms.locfileid: "33467730"
 
 现在, 你已拥有设备合规性策略, 用于测试**Windows 10**设备合规性策略中的所选应用和**托管 windows 10 设备用户**组的成员。 请注意, 选择 "Office 365" 作为组类型将会创建其他资源。 
   
-## <a name="next-step"></a>下一步骤
+## <a name="next-step"></a>后续步骤
 
 在您的测试环境中探索其他[移动设备管理](m365-enterprise-test-lab-guides.md#mobile-device-management)特性和功能。
 
