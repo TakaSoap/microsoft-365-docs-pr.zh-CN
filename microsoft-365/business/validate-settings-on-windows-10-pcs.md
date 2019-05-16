@@ -3,7 +3,7 @@ title: 验证 Windows 10 电脑上的应用保护设置
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,47 +21,47 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何在 Windows 10 设备中验证 Microsoft 365 商业应用保护设置。
-ms.openlocfilehash: 5ab91d65fa7bd40ebc118df217c9711b7bbfe7a4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 15c2d54c6281369875d15985c9d4ed16f0114176
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072222"
 ---
-# <a name="validate-device-protection-settings-on-windows-10-pcs"></a><span data-ttu-id="1f73b-103">验证 Windows 10 电脑上的设备保护设置</span><span class="sxs-lookup"><span data-stu-id="1f73b-103">Validate device protection settings on Windows 10 PCs</span></span>
+# <a name="validate-device-protection-settings-on-windows-10-pcs"></a><span data-ttu-id="e4c49-103">验证 Windows 10 电脑上的设备保护设置</span><span class="sxs-lookup"><span data-stu-id="e4c49-103">Validate device protection settings on Windows 10 PCs</span></span>
 
-## <a name="verify-that-windows-10-device-policies-are-set"></a><span data-ttu-id="1f73b-104">验证是否已设置 Windows 10 设备策略</span><span class="sxs-lookup"><span data-stu-id="1f73b-104">Verify that Windows 10 device policies are set</span></span>
+## <a name="verify-that-windows-10-device-policies-are-set"></a><span data-ttu-id="e4c49-104">验证是否已设置 Windows 10 设备策略</span><span class="sxs-lookup"><span data-stu-id="e4c49-104">Verify that Windows 10 device policies are set</span></span>
 
-<span data-ttu-id="1f73b-105">[设置设备策略](protection-settings-for-windows-10-pcs.md)后, 可能需要几个小时才能使策略在用户的设备上生效。</span><span class="sxs-lookup"><span data-stu-id="1f73b-105">After you [set up devices policies](protection-settings-for-windows-10-pcs.md), it may take up to a few hours for the policy to take effect on users' devices.</span></span> <span data-ttu-id="1f73b-106">您可以通过查看用户设备上的各种 Windows 设置屏幕来确认这些策略是否生效。</span><span class="sxs-lookup"><span data-stu-id="1f73b-106">You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices.</span></span> <span data-ttu-id="1f73b-107">由于用户无法修改其 windows 10 设备上的 windows Update 和 windows Defender 防病毒设置, 因此许多选项都将灰显。</span><span class="sxs-lookup"><span data-stu-id="1f73b-107">Because the users won't be able to modify the Windows Update and Windows Defender Antivirus settings on their Windows 10 devices, a lot of those options will be greyed out.</span></span>
+<span data-ttu-id="e4c49-105">[设置设备策略](protection-settings-for-windows-10-pcs.md)后, 可能需要几个小时才能使策略在用户的设备上生效。</span><span class="sxs-lookup"><span data-stu-id="e4c49-105">After you [set up devices policies](protection-settings-for-windows-10-pcs.md), it may take up to a few hours for the policy to take effect on users' devices.</span></span> <span data-ttu-id="e4c49-106">您可以通过查看用户设备上的各种 Windows 设置屏幕来确认这些策略是否生效。</span><span class="sxs-lookup"><span data-stu-id="e4c49-106">You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices.</span></span> <span data-ttu-id="e4c49-107">由于用户无法修改其 Windows 10 设备上的 Windows Update 和 Windows Defender 防病毒设置, 因此许多选项都将灰显。</span><span class="sxs-lookup"><span data-stu-id="e4c49-107">Because the users won't be able to modify the Windows Update and Windows Defender Antivirus settings on their Windows 10 devices, a lot of those options will be greyed out.</span></span>
   
-1. <span data-ttu-id="1f73b-108">转到 "**设置** \> " " \*\* &amp;更新安全\*\* \*\*\*\* \> \> Windows 更新**重新启动选项**", 并确认所有设置都将灰显。</span><span class="sxs-lookup"><span data-stu-id="1f73b-108">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are greyed out.</span></span> 
+1. <span data-ttu-id="e4c49-108">转到 "**设置** \> " " \*\* &amp;更新安全\*\* \*\*\*\* \> \> Windows 更新**重新启动选项**", 并确认所有设置都将灰显。</span><span class="sxs-lookup"><span data-stu-id="e4c49-108">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are greyed out.</span></span> 
     
     ![所有重新启动选项都将灰显。](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. <span data-ttu-id="1f73b-110">转到 "**设置** \> " "**更新&amp;安全** \*\*\*\* \> \> Windows 更新**高级选项**", 并确认所有设置都将灰显。</span><span class="sxs-lookup"><span data-stu-id="1f73b-110">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** and confirm that all settings are greyed out.</span></span> 
+2. <span data-ttu-id="e4c49-110">转到 "**设置** \> " "**更新&amp;安全** \*\*\*\* \> \> Windows 更新**高级选项**", 并确认所有设置都将灰显。</span><span class="sxs-lookup"><span data-stu-id="e4c49-110">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** and confirm that all settings are greyed out.</span></span> 
     
     ![Windows 高级更新选项都将灰显。](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. <span data-ttu-id="1f73b-112">转到**设置** \> **更新&amp;安全** \> **Windows 更新** \> **高级选项** \> **选择如何传递更新**。</span><span class="sxs-lookup"><span data-stu-id="1f73b-112">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.</span></span>
+3. <span data-ttu-id="e4c49-112">转到**设置** \> **更新&amp;安全** \> **Windows 更新** \> **高级选项** \> **选择如何传递更新**。</span><span class="sxs-lookup"><span data-stu-id="e4c49-112">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.</span></span>
     
-    <span data-ttu-id="1f73b-113">确认您可以看到某些设置已被组织隐藏或管理的邮件 (红色), 所有选项都将灰显。</span><span class="sxs-lookup"><span data-stu-id="1f73b-113">Confirm that you can see the message (in red) that some settings are hidden or managed by your organization, and all the options are greyed out.</span></span>
+    <span data-ttu-id="e4c49-113">确认您可以看到某些设置已被组织隐藏或管理的邮件 (红色), 所有选项都将灰显。</span><span class="sxs-lookup"><span data-stu-id="e4c49-113">Confirm that you can see the message (in red) that some settings are hidden or managed by your organization, and all the options are greyed out.</span></span>
     
     ![选择如何传递更新页面指示你的组织隐藏或管理的设置。](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. <span data-ttu-id="1f73b-115">若要打开 windows defender 安全中心, 请转**到设置** \> \*\* &amp;更新安全\*\* \> \> **Windows defender**单击**打开 windows defender 安全中心** \> **病毒&amp;线程保护** \> **病毒&amp;威胁防护设置**。</span><span class="sxs-lookup"><span data-stu-id="1f73b-115">To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**.</span></span> 
+4. <span data-ttu-id="e4c49-115">若要打开 windows defender 安全中心, 请转**到设置** \> \*\* &amp;更新安全\*\* \> \> **Windows defender**单击**打开 windows defender 安全中心** \> **病毒&amp;线程保护** \> **病毒&amp;威胁防护设置**。</span><span class="sxs-lookup"><span data-stu-id="e4c49-115">To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**.</span></span> 
     
-5. <span data-ttu-id="1f73b-116">验证所有选项是否都已灰显。</span><span class="sxs-lookup"><span data-stu-id="1f73b-116">Verify that all options are greyed out.</span></span> 
+5. <span data-ttu-id="e4c49-116">验证所有选项是否都已灰显。</span><span class="sxs-lookup"><span data-stu-id="e4c49-116">Verify that all options are greyed out.</span></span> 
     
     !["病毒和威胁防护" 设置将灰显。](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-topics"></a><span data-ttu-id="1f73b-118">相关主题</span><span class="sxs-lookup"><span data-stu-id="1f73b-118">Related Topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="e4c49-118">相关主题</span><span class="sxs-lookup"><span data-stu-id="e4c49-118">Related Topics</span></span>
 
-<span data-ttu-id="1f73b-119">[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)（Microsoft 365 Business 文档和资源）</span><span class="sxs-lookup"><span data-stu-id="1f73b-119">[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)</span></span>
+<span data-ttu-id="e4c49-119">[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)（Microsoft 365 Business 文档和资源）</span><span class="sxs-lookup"><span data-stu-id="e4c49-119">[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)</span></span>
   
-[<span data-ttu-id="1f73b-120">Microsoft 365 Business 入门</span><span class="sxs-lookup"><span data-stu-id="1f73b-120">Get started with Microsoft 365 Business</span></span>](microsoft-365-business-overview.md)
+[<span data-ttu-id="e4c49-120">Microsoft 365 Business 入门</span><span class="sxs-lookup"><span data-stu-id="e4c49-120">Get started with Microsoft 365 Business</span></span>](microsoft-365-business-overview.md)
   
-[<span data-ttu-id="1f73b-121">管理 Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="1f73b-121">Manage Microsoft 365 Business</span></span>](manage.md)
+[<span data-ttu-id="e4c49-121">管理 Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="e4c49-121">Manage Microsoft 365 Business</span></span>](manage.md)
   
-[<span data-ttu-id="1f73b-122">设置 Windows 10 电脑的设备配置</span><span class="sxs-lookup"><span data-stu-id="1f73b-122">Set device configurations for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
+[<span data-ttu-id="e4c49-122">设置 Windows 10 电脑的设备配置</span><span class="sxs-lookup"><span data-stu-id="e4c49-122">Set device configurations for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
   
 
