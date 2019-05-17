@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 04/23/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: ac3e023f6a9364f6b9de23cd5b91d0d6fb6dbf1b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400056"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072492"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -136,60 +136,23 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
   
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企业版
 
-一窥 Microsoft IT 内部的情况并了解他们如何部署 Microsoft 365 企业版以及 Microsoft 员工每天如何使用该产品。
+对于每一个致力于培养现代工作场所的领导者来说，打造数字文化是他们的首要任务。 Microsoft 365 旨在支持实现这种文化转变，帮助领导者赋予公司的每个人权力，以释放创造力和促进协作。 在 Microsoft，正是这一基础架构的建立才引发了数字文化的转变。 实施 Microsoft 365 企业版使我们能够部署协作技术，如 Microsoft Teams 和 Exchange Online，并在安全的 SharePoint Intranet 站点之间在线共享敏感数据。
 
-#### <a name="networking"></a>网络
+同时，智能安全功能和产品集成有助于简化管理需求，并最大限度地降低整个 IT 生命周期的总体拥有成本。 
 
-- [优化 Microsoft Office 365 的网络性能](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)
+了解核心服务工程和运营（以前称为 Microsoft IT）如何[规划和部署基础](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365)，以支持在安全环境中释放创造力和促进团队合作的应用程序和服务。
 
-#### <a name="identity"></a>标识
-
-- [管理 Microsoft 用户标识和安全访问](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [使用 Azure AD Privileged Identity Management 进行提升的访问](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
-
-#### <a name="windows-10-enterprise"></a>Windows 10 企业版
-
-- [为组织准备 Windows 10 无缝部署](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [在 Microsoft 中采用 Windows 作为服务](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [在 Microsoft 中将 Windows 10 部署为就地升级](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [使用 Windows Hello 企业版实现功能强大的用户身份验证](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Windows 10 部署：来自 Microsoft IT 部门的提示和技巧](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT)（视频）
-- [Windows Defender ATP 有助于检测到复杂的威胁](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [使用 Windows Defender 和 Windows Defender ATP 保护现代企业的安全](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP)（视频）
-
-#### <a name="office-365-proplus"></a>Office 365 专业增强版
-
-- [部署和更新 Microsoft Office 365 专业增强版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [自动化和更新通道有助于部署 Microsoft Office 365 专业增强版](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus)（视频）
-
-#### <a name="mobility-and-device-management"></a>移动性和设备管理
-
-- [通过企业移动性 + 安全性管理新式移动效率](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
-- [通过 Microsoft Intune 在 Windows 10 设备上连接到工作内容](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
-- [在 Microsoft 推动 iOS、OS X 和 Android 设备的移动效率](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
-
-#### <a name="security-and-information-protection"></a>安全和信息保护
-
-- [使用 Azure 信息保护来保护云中的文件](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
-- [Microsoft 使用威胁智能来保护、检测和响应威胁](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-- [Microsoft 使用 Office 365 阻止网络钓鱼的尝试](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
-
-#### <a name="microsoft-teams"></a>Microsoft Teams
-
-- [部署 Microsoft Teams 可简化协作流程并增强团队合作](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
-- [Microsoft Teams 可增强 Microsoft 现代工作场所中的协作](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
-
-#### <a name="data-migration"></a>数据迁移
-
-- [Microsoft 将 150,000 个邮箱迁移到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
-- [SharePoint 到云：了解 Microsoft 如何运行自己的迁移](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
+> [!Note]
+> 此网页仅提供英文版本。
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企业版
 
 Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 [Contoso 如何部署 Microsoft 365 企业版](contoso-case-study.md)并且完成了主要设计决策和针对以下方面的实施细节：网络、标识、Windows 10 企业版、Office 365 专业增强版、移动设备管理、信息保护和安全性。 
 
-## <a name="next-step"></a>下一步骤
+## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>下一步来部署 Microsoft 365 企业版
 
 若要通过直接的 Microsoft 协助完成部署，请使用 [FastTrack](https://fasttrack.microsoft.com/microsoft365)。
+
+若要通过顾问完成部署，请与 Microsoft 咨询服务或 [Microsoft 合作伙伴](https://partner.microsoft.com/)联系。
 
 若要自行开始部署，请参阅[底层基础架构](deploy-foundation-infrastructure.md)。
