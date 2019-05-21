@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 商业版常见问题 
 description: 查找关于 Microsoft 365 商业版（为中小型企业 (SMB) 设计的新解决方案）的最常见问题的解答。 
-author: jasongroce
-ms.author: jasgro
+author: Sirkkuw
+ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
@@ -10,16 +10,16 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: bdcfd6a78278aff83b3fc21ae0fbb43bce140a16
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 6ef500c9b0c9e83e77e46c1eaf7057e3e46cfe0d
+ms.sourcegitcommit: 5c6bbf6dd7020b462b56b644b5a0fcc0217d6a53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497744"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34276215"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商业版常见问题
 
-## <a name="general"></a>概要
+## <a name="general"></a>常规
 
 ### <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 商业版？ 
 Microsoft 365 是一个集成的解决方案, 可为中小型企业提供同类最佳的生产率工具、安全性和设备管理功能。 
@@ -80,14 +80,14 @@ Windows 10 商业版是一组云服务和设备管理功能，能够对 Windows 
 Microsoft 365 业务为客户提供了一个简单但功能强大的方法, 使员工能够使用其个人设备进行工作, 同时让这些设备能够阻止这些设备访问、保留和/或共享业务信息. 更具体地说： 
 * **适用于 Office 移动应用的应用保护**可通过强力执行策略（如在未连接到服务的规定时长过后自动删除业务数据、要求将信息仅存储到 OneDrive for Business、要求进行 PIN/指纹验证来访问 Office 应用，以及防止将公司数据从 Office 应用复制到个人应用）来帮助应用保护 Office 数据，包括 iOS 和 Android 移动设备上的电子邮件、日历、联系人和文档。 Microsoft 365 业务订阅者也提供了通过 Intune 进行的其他移动应用的移动应用程序管理。 
   
-* **适用于 windows 10 电脑的设备管理**aallows 企业选择设置和强制实施诸如 Windows Defender 保护的功能, 如在指定时间长度后的恶意软件、自动更新和关闭屏幕。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
+* 利用**适用于 Windows 10 电脑的设备管理**，企业可以选择设置和实施一些功能，如 Windows Defender 恶意软件防护、自动更新以及在规定时长过后关闭屏幕。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
 
-* **适用于 ios 的设备管理, Android & MacOS**功能可帮助企业安全管理包括 iOS、Android、Windows 和 MacOS 设备的多样化设备生态系统。 
+* **适用于 ios 的设备管理, Android _AMP_ MacOS**功能可帮助企业安全管理包括 IOS、Android、Windows 和 MacOS 设备的多样化设备生态系统。 
 
 ### <a name="how-does-microsoft-365-business-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 商业版如何帮助保护组织中的电脑免受恶意攻击？ 
-使用 Microsoft 365 商业管理的电脑受到 Windows Defender 的保护, 这是不是的。 1在 Windows 10 上的防病毒功能, 保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁, 而不是任何其他解决方案。  使用 Microsoft 365 商业版, 企业可以确保 windows Defender 保护在其所有 windows 10 设备上运行且始终保持最新。  
+使用 Microsoft 365 商业管理的电脑受到 Windows Defender 的保护, 这是不是的。 1在 Windows 10 上的防病毒功能, 保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁, 而不是任何其他解决方案。  使用 Microsoft 365 商业版, 企业可以确保 Windows Defender 保护在其所有 Windows 10 设备上运行且始终保持最新。  
  
-windows 10 商业版还包括 windows Defender 攻击防护, 这是一组新的入侵防护功能。 它的功能之一是受控制的文件夹访问, 它会锁定文件夹并防止未授权的应用访问用户的重要文件, 从而在其踪迹中停止勒索软件。 
+Windows 10 商业版还包括 Windows Defender 攻击防护, 这是一组新的入侵防护功能。 它的功能之一是受控制的文件夹访问, 它会锁定文件夹并防止未授权的应用访问用户的重要文件, 从而在其踪迹中停止勒索软件。 
 
 ### <a name="whats-the-difference-between-office-365-business-premium-microsoft-365-business-and-microsoft-365-enterprise"></a>Office 365 商业高级版、Microsoft 365 商业版和 Microsoft 365 企业版之间的区别是什么？ 
 Microsoft 具有中小型客户在升级台式机和设备基础结构时可能会考虑的各种生产力和安全管理产品/服务，每种都具有越来越强大的特性和功能。 
@@ -96,7 +96,7 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 
 **Microsoft 365 商业版**将 Office 365 应用和服务与移动应用程序管理和 Windows 10 专业版相结合，以便能够进行远程管理并帮助设备抵御病毒和恶意软件。 它包括一个简化的管理控制台，通过该控制台可以管理设备和数据策略。 许多中小型企业可以最好地满足 Microsoft 365 业务的需要。 
  
-**microsoft 365 企业版**是一组授权计划, 这些计划通过 Microsoft 365 商业版提供更高级别的合规性和安全性管理, 它们是为企业客户和拥有超过300用户的客户设计的。 此外, Microsoft 365 企业版计划还提供了其他功能, 包括商业智能和分析工具。
+**Microsoft 365 企业版**是一组授权计划, 这些计划通过 Microsoft 365 商业版提供更高级别的合规性和安全性管理, 它们是为企业客户和拥有超过300用户的客户设计的。 此外, Microsoft 365 企业版计划还提供了其他功能, 包括商业智能和分析工具。
 
 ### <a name="can-i-switch-my-office-365-plan-to-microsoft-365-business"></a>我能否将 Office 365 计划转变为 Microsoft 365 商业版？ 
 能，客户可以将其计划从符合条件的 Office 365 计划转变为 Microsoft 365 商业版。 每月费用可能会减少或增加，根据客户当前的计划而定。
@@ -105,7 +105,7 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 我们将在提供 Office 365 的地区向所有合作伙伴和客户提供 Microsoft 365 商业版。 请参阅 <a href="https://products.office.com/business/international-availability" target="_blank">Office 365 国际可用性</a>列表，了解有哪些语言版本以及在哪些国家和地区可用。 
 
 ### <a name="is-there-a-microsoft-365-business-trial-i-may-use-to-evaluate-the-offer"></a>是否提供可用于评估该产品的 Microsoft 365 商业试用版？ 
-适用于 csp 的 Microsoft 365 业务试用版。 将在以后提供适用于直销客户的试用版。 
+适用于 Csp 的 Microsoft 365 业务试用版。 将在以后提供适用于直销客户的试用版。 
  
 ### <a name="what-should-customers-and-partners-know-before-running-microsoft-365-business-within-their-organization"></a>在组织内运行 Microsoft 365 商业版之前，客户和合作伙伴应该了解哪些内容？ 
 如果客户想要体验 Microsoft 365 商业版的完整功能，必须在其现有台式机上运行 Windows 7、8.1 或 10 专业版<sup>[2](#footnote2)</sup>。 现有的 Windows 10 专业版电脑应该运行创意者更新（如果还没有运行）。 
@@ -116,7 +116,7 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 成功部署 Microsoft 365 商业版的最直接途径是与 Microsoft 合作伙伴交流。 他们参加过与各种客户方案相关的大量培训并有丰富的相关经验，最能够了解你的环境和需求。 具有经验丰富的 IT 在职人员的客户可以使用 <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 商业版入门</a>，以帮助他们部署 Microsoft 365 商业版。 
 
 ### <a name="does-microsoft-365-business-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 商业版是否包括 Microsoft Intune 的全部功能？ 
-是的, 已授权 Microsoft 365 商业订阅者使用适用于 iOS、Android、MacOS 和其他跨平台设备管理的完整 Intune 功能。 在 Microsoft 365 商业版的简化管理控制台中不可用的功能 (如第三方应用程序管理和 WiFi 配置文件的配置、VPN 证书等) 可以在完整 Intune 控制台中进行管理。 您有权使用 Configuration Manager 管理 EMS 许可证覆盖的客户端。 对于与 sccm 相关的查询, 请参阅<a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">sccm faq</a>
+是的, 已授权 Microsoft 365 商业订阅者使用适用于 iOS、Android、MacOS 和其他跨平台设备管理的完整 Intune 功能。 在 Microsoft 365 商业版的简化管理控制台中不可用的功能 (如第三方应用程序管理和 WiFi 配置文件的配置、VPN 证书等) 可以在完整 Intune 控制台中进行管理。 您有权使用 Configuration Manager 管理 EMS 许可证覆盖的客户端。 对于与 SCCM 相关的查询, 请参阅<a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">sccm faq</a>
   
 
 ### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory 高级 P1 是否带有 Microsoft 365 商业版？ 
@@ -185,7 +185,7 @@ Microsoft 365 商业版不会使其他非正版 Windows 成为正版。 Microsof
 
 
 
-## <a name="footnotes"></a>Footnotes
+## <a name="footnotes"></a>脚注
 <sup><a name="footnote1">**1**</a></sup> <small>在美国、英国和加拿大提供。</small> </br>
 <sup><a name="footnote2">**2**</a></sup> <small>运行 Windows 7 或 8.1 专业版的设备适合在 Microsoft 365 商业预览版中升级到 Windows 10 专业版。</small>
  
