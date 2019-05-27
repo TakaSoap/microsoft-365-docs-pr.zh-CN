@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b8d41e3747ad1e844e8d8f51412366d1c58efbe4
-ms.sourcegitcommit: 82a5c9a1f0f9627264f6f488dedb03f9092451fd
+ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
+ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34163439"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34391263"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备证书和网络配置文件  
  
@@ -71,7 +71,7 @@ ms.locfileid: "34163439"
     - OMA URI (区分大小写): Enter *。/Device/Vendor/MSFT/WiredNetwork/LanXML*
     - 数据类型: select **String (XML 文件)**。 
     - 自定义 XML: 上传导出的 XML 文件。
-2. 使用 Microsoft 托管桌面管理门户向 Microsoft 托管桌面操作提交服务请求, 以查看配置配置文件并将其部署到 "新式 Workplace 设备–测试"。 Microsoft 托管桌面操作将告知你使用管理门户完成请求的时间。
+2. 使用 Microsoft 托管桌面管理门户向 Microsoft 托管桌面 IT 操作提交支持请求, 以查看配置配置文件并将其部署到 "新式 Workplace 设备–测试"。 Microsoft 托管桌面 IT 操作让你知道通过管理门户中的支持请求完成请求的时间。
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>部署证书和 Wi-fi/VPN 配置文件 
  
@@ -82,6 +82,6 @@ ms.locfileid: "34163439"
 2. 为每个 SCEP 或 PKCS 证书创建一个配置文件 (请参阅[create a SCEP certificate profile](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile)或[create a PKCS certificate profile](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)) 每个配置文件都必须有一个说明, 其中包含一个以 DD/MM/YYYY 格式显示的到期日期。 **不会部署不具有过期日期的证书配置文件。**
 3. 为每个企业 WiFi 网络创建配置文件 (请参阅[适用于 Windows 10 及更高版本设备的 wi-fi 设置](https://docs.microsoft.com/intune/wi-fi-settings-windows))。
 4. 为每个公司 VPN 创建配置文件 (请参阅[使用 Intune 添加 VPN 连接的 windows 10 和 Windows 全息设备设置](https://docs.microsoft.com/intune/vpn-settings-windows-10))。
-5. 使用 Microsoft 托管桌面管理门户将名为 "证书部署" 或 "Wi-fi 配置文件部署" 的服务请求提交到 Microsoft 托管桌面操作。若要查看并将配置文件部署到 "新式 Workplace 设备–测试" 中。 Microsoft 托管桌面操作将告知你使用管理门户完成请求的时间。 
+5. 将名为 "证书部署" 或 "Wi-fi 配置文件部署" 的支持请求提交到 Microsoft 托管桌面管理门户使用 Microsoft 托管桌面管理门户查看配置文件并将其部署到 "新式工作区设备–测试"". Microsoft 托管桌面 IT 操作可让你知道在通过管理门户中的支持请求完成请求时。 
  
  

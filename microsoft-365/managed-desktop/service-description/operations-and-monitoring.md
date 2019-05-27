@@ -1,18 +1,17 @@
 ---
 title: Microsoft 托管桌面操作和监视
 description: ''
-keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 12/18/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 391c5cca9f1d440a806fa094633b50c3256c2a26
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c618c5bf2acf50d84aca354975670ed84b581601
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291457"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431913"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 托管桌面操作和监视
 
@@ -73,7 +72,7 @@ Responsibility | Microsoft 托管桌面服务 | Microsoft 365 客户端软件 | 
 
 ## <a name="standard-operating-procedures"></a>标准操作过程
 
-microsoft 托管桌面服务由 microsoft 在你可以执行其他管理活动的 microsoft 云实例中实施和运行。 microsoft 独自负责 microsoft 托管的特定于桌面的安装、配置和操作。 
+Microsoft 托管桌面服务由 Microsoft 在你可以执行其他管理活动的 Microsoft 云实例中实施和运行。 Microsoft 独自负责 Microsoft 托管的特定于桌面的安装、配置和操作。 
 
 对于本地产品, 贵组织承担管理设置、配置和操作活动的所有责任。
 
@@ -81,11 +80,11 @@ microsoft 托管桌面服务由 microsoft 在你可以执行其他管理活动�
 --- | --- | ---
 网络 (代理、数据包检查、VPN)  | 建议并与客户进行规划, 以最大限度地降低企业用户的风险。 | -创建针对计划配置更改请求信息的支持请求, 包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。
 服务帐户 |-实施、安全地存储和管理凭据。<br> -对安全操作团队进行未经授权的访问或使用这些凭据。 | -创建针对计划配置更改请求信息的支持请求, 包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不向 Microsoft 托管桌面服务帐户分配策略、多重身份验证、条件访问或应用程序部署。<br>-不重置密码或使用凭据。<br>-如果在 Intune 或 Azure 审核日志中观察到与这些服务帐户相关的可疑活动, 请打开严重级别 C 支持对 Microsoft 托管桌面操作的请求。
-设备组 | -在 Microsoft 托管桌面组中实施和管理设备的成员身份。<br>-使用 Microsoft 托管桌面组来管理对设备的配置和更新的分配和发布。 | -创建针对计划配置更改请求信息的支持请求, 包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不修改任何 Microsoft 托管桌面组的成员身份。<br>-仅使用组为服务 (如 VPN、Windows Hello 企业版或电子邮件加密) 或公司 wi-fi 配置文件配置分配企业证书。<br>-存在共同管理, 请在部署 Configuration Manager 客户端时显式排除所有 Microsoft 托管桌面组。
-策略 |  -实施和管理 Microsoft 托管桌面策略, 以控制服务中设备的配置状态。<br>-将更新部署到策略或 Windows, 以增量方式使用设备组。<br> -显式排除针对非 Microsoft 托管桌面组的目标。 | -创建针对计划配置更改请求信息的支持请求, 包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不编辑 microsoft 托管桌面服务不管理的设备或用户的 microsoft 托管桌面策略或将其分配给这些策略。
+设备组 | -在 Microsoft 托管桌面组中实施和管理设备的成员身份。<br>-使用 Microsoft 托管桌面组来管理对设备的配置和更新的分配和发布。 | -创建针对计划配置更改请求信息的支持请求, 包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不修改任何 Microsoft 托管桌面组的成员身份。<br>-仅使用组为服务 (如 VPN、Windows Hello 企业版或电子邮件加密) 或公司 Wi-fi 配置文件配置分配企业证书。<br>-存在共同管理, 请在部署 Configuration Manager 客户端时显式排除所有 Microsoft 托管桌面组。
+策略 |  -实施和管理 Microsoft 托管桌面策略, 以控制服务中设备的配置状态。<br>-将更新部署到策略或 Windows, 以增量方式使用设备组。<br> -显式排除针对非 Microsoft 托管桌面组的目标。 | -创建针对计划配置更改请求信息的支持请求, 包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不编辑 microsoft 托管桌面服务不管理的设备或用户的 Microsoft 托管桌面策略或将其分配给这些策略。
 Windows Defender 高级威胁防护 | 监视和调查 Microsoft 托管桌面服务范围内的设备。 | -创建针对计划配置更改请求信息的支持请求, 包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改
 适用于企业的 Microsoft Store |  为 Microsoft 托管桌面服务配置和维护 Windows Autopilot 配置文件。 | -创建针对计划配置更改请求信息的支持请求, 包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不修改 Microsoft 托管桌面 Windows Autopilot 配置文件或添加/删除分配的设备的配置。
-证书 | | -在证书即将过期之前的60天内创建支持请求, 并请求有关计划配置更改的信息, 包括有关 Microsoft 审查的配置详细信息、范围、时间线和其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-更新配置证书配置文件、VPN 配置文件和 wlan 配置文件所需的所有证书。
+证书 | | -在证书即将过期之前的60天内创建支持请求, 并请求有关计划配置更改的信息, 包括有关 Microsoft 审查的配置详细信息、范围、时间线和其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-更新配置证书配置文件、VPN 配置文件和 Wlan 配置文件所需的所有证书。
 
 
 
