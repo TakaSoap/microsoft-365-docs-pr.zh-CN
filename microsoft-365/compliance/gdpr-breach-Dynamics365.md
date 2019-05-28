@@ -2,27 +2,25 @@
 title: Dynamics 365 与 GDPR 泄露通知
 description: 介绍了 Dynamics 365 如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时响应和通知用户。
 keywords: Dynamics 365, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 3ee90c2fbe2684cebbd19376f44fc97d743515db
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 957fbe5713c248ebcac1a986248455c7d98b4935
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286382"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431873"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 与 GDPR 泄露通知
 
-Dynamics 365 认真遵守《一般数据保护条例》(GDPR) 规定的义务。Microsoft Dynamics 365 数据泄露
-
-Microsoft 努力持续为 Dynamics 365 客户提供高度安全的企业级服务。本节中的信息概述了 Microsoft Dynamics 365 如何防范安全事件/数据泄露，以及我们响应并通知我们的客户时所遵循的流程。
+Dynamics 365 认真遵守《一般数据保护条例》(GDPR) 规定的义务并采取全面的安全措施来防止数据泄露。 Microsoft 努力持续为 Dynamics 365 客户提供高度安全的企业级服务。 本节中的信息概述了 Microsoft Dynamics 365 如何防范安全事件/数据泄露，以及我们响应并通知我们的客户时所遵循的流程。
 
 #### <a name="microsoft-dynamics-365-built-in-security-features"></a>Microsoft Dynamics 365 内置安全功能
 
@@ -46,7 +44,7 @@ Microsoft Dynamics 365 利用云服务基础结构和内置安全功能，使用
 
 #### <a name="how-does-microsoft-dynamics-365-define-security-incident-potential-breaches"></a>Microsoft Dynamics 365 如何定义安全事件/潜在泄露
 
-安全事件/数据泄露是指非法访问存储在 Microsoft 设备或 Microsoft 设施中的客户数据或未经授权访问此类设备或设施从而可能导致客户数据丢失、泄露或改动等事件。Microsoft 在安全事件/数据泄露响应方面的目标是保护客户数据和 Dynamics 365 服务。Microsoft 管理安全事件的方法符合[国家标准和技术](https://www.nist.gov/) (NIST) 特殊出版物 (SP) [800 61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf)。
+安全事件/数据泄露是指非法访问存储在 Microsoft 设备或 Microsoft 设施中的客户数据或未经授权访问此类设备或设施从而可能导致客户数据丢失、泄露或改动等事件。Microsoft 在安全事件/数据泄露响应方面的目标是保护客户数据和 Dynamics 365 服务。Microsoft 管理安全事件的方法符合[国家标准和技术](https://www.nist.gov/) (NIST) 特殊出版物 (SP) [800-61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf)。
 
 Microsoft 不会监控或响应属于客户责任范围的安全事件。仅限客户的漏洞不会作为 Dynamics 365 安全事件进行处理，将需要客户租户来管理响应工作。如果指定了适当的服务联系人，客户事件响应部门也可能会与 Microsoft Dynamics 365 客户支持部门进行协作。
 
@@ -128,7 +126,7 @@ Microsoft 将通过确定功能影响、可恢复性和事件的信息影响来�
 
 Microsoft 验证是否成功遏制了客户和业务风险并实施了纠正措施。如有必要，会采取紧急缓解步骤来解决与事件直接关联的安全风险。
 
-Microsoft 还会完成数据泄露的内部事后分析。作为此练习的一部分，会评估响应和操作过程的充分性，并识别和实施 Microsoft 的内部安全策略或相关流程所必需的任何更新。数据泄露的内部事后分析是高度机密的记录，不会提供给客户。但是，会汇总事后分析并将其包括在其他客户事件通知中。作为 Dynamics 365 例行审核周期的一部分，会将这些报告提供给外部审计机构进行审阅。
+Microsoft 还会完成数据泄露的内部事后分析。 作为此练习的一部分，会评估响应和操作过程的充分性，并识别和实施 Microsoft 内部安全策略或相关流程所必需的任何更新。 数据泄露的内部事后分析是高度机密的记录，不会提供给客户。 但是，会汇总事后分析并将其包括在其他客户事件通知中。 作为 Dynamics 365 例行审核周期的一部分，会将这些报告提供给外部审计机构进行审阅。
 
 #### <a name="customer-notification"></a>客户通知
 

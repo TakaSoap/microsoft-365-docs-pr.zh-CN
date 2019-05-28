@@ -2,21 +2,21 @@
 title: 适用于 GDPR 的责任就绪清单
 description: 介绍了 Microsoft 服务如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时响应和通知用户。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 05/24/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 9ae75e55a64d0e94fefd34668b9be9d6e76aadcf
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 557dbb9efcc2ded1716f85aab2ba505fa6f97d2b
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286554"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431883"
 ---
 # <a name="accountability-readiness-checklists-for-the-gdpr"></a>适用于 GDPR 的责任就绪清单
 
@@ -27,11 +27,6 @@ ms.locfileid: "32286554"
 - [Dynamics 365](gdpr-arc-Dynamics365.md)
 - [Microsoft 支持和专业服务](gdpr-arc-prof-services.md)
 
-
-
-
 ## <a name="learn-more"></a>了解更多
 
 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
