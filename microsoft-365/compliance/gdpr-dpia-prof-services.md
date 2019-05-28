@@ -3,20 +3,20 @@ title: 使用 Microsoft 专业服务的数据控制者指南
 description: 此文档为数据控制者提供有关专业服务的信息，帮助他们确定是否需要 DPIA 以及要包含的详细信息。
 keywords: DPIA, Microsoft 专业服务, Microsoft 365 文档, GDPR
 robots: NOINDEX,NOFOLLOW
-author: herviicban
 ms.localizationpriority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d9dd822e7e9ef7a93a41c056fc7bc014274ad190
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 01d42a7b8354575ac9b2316064aa9a33affbc441
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285531"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431793"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>数据保护影响评估：使用 Microsoft 专业服务的数据控制者指南
 
@@ -32,18 +32,18 @@ Microsoft 专业服务严格遵守一般数据保护条例 (GDPR) 的要求。�
 
 此文档的目的是为数据控制者提供专业服务的相关信息，帮助他们确定是否需要 DPIA 以及要包含的详细信息（如果需要）。
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>第 1 部分 - 确定是否需要 DPIA
+## <a name="part-1--determining-whether-a-dpia-is-needed"></a>第 1 部分 — 确定是否需要 DPIA
 
 GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估，用于在考虑某种处理类型的本质、范围、环境和目的的情况下评估该处理类型（尤其是使用新技术的处理类型）是否会自然人的权力和自由产生高风险。它进一步规定了指示此类高风险的特定因素（将在下表中讨论）。根据数据控制者具体实施和使用专业服务的情况，确定是否需要 DPIA 时，数据控制者应考虑以下因素，以及任何其他相关因素。
 
-***表 1 - 风险因素和相关信息***
+***表 1 — 风险因素和相关信息***
 
 <!--start table here NO HEADER -->
 
 |||
 |:-----|:-----|
 |**风险因素**|**专业服务的相关信息**|
-|基于自动化处理对自然人的私人方面进行系统全面的评估（包括剖析以及会对自然人产生法律效应或显著影响自然人的决策）；|专业服务可执行某些例行或自动数据处理，如中断/修复支持（例如，在计算机中断时协助客户）、帐户迁移和系统漏洞分析。专业服务解决方案（以下说明中涵盖的客户开发除外）并不适合执行对个人产生法律或类似显著影响的决策所依据的处理。|
+|基于自动化处理对自然人的私人方面进行系统全面的评估（包括剖析以及会对自然人产生法律效应或显著影响自然人的决策）；|专业服务可执行某些例行或自动数据处理，如中断/修复支持（例如，在计算机中断时协助客户）、帐户迁移和系统漏洞分析。 专业服务解决方案（以下说明中涵盖的客户开发除外）并不适合执行对个人产生法律或类似显著影响的决策所依据的处理。|
 |处理大量[^1]特殊类别的数据，如种族或族裔、政治观点、宗教或哲学信仰、工会成员身份、基因数据、用于唯一标识自然人的生物识别数据、关于自然人性生活健康或性取向数据的数据，或与刑事犯罪和违法行为相关的个人数据；|专业服务不适用于需要处理特殊类别的个人数据的工作，但以下说明中涵盖的客户开发除外。<p>但是，数据控制者可以使用专业服务咨询解决方案来处理枚举的特殊数据类别。例如，专业服务提供医疗保健行业数据库开发，数据控制者可以使用该数据库开发来处理与健康状况相关的个人数据。控制者有责任根据具体情况评估并限制或记录该数据的使用情况。</p>|
 | 大规模系统化监视公开可访问区域|专业服务不适用于要求或促使进行此类监视的工作，但以下说明中涵盖的客户开发除外。<p>如果数据控制者使用专业服务开发此类系统，或者使用 IT 系统来处理通过此类监视收集的数据，则数据控制者的责任将如下所述。</p>|
 |||
@@ -52,11 +52,11 @@ GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估�
   
 [自定义开发说明]专业服务提供各种咨询解决方案。数据控制者可能会请求一种解决方案，而根据上述标准，它可能是一种高风险解决方案。例如，数据控制者可能会请求专业服务来创建解决方案，以便为招聘决策或信用应用程序或解决方案开发商业智能引擎，其中涉及用户跟踪、专业使用人工智能 (AI)/分析或处理特殊类别的个人数据。
 
-在开始参与时，专业服务会通过相关流程来评估和解决可能需要处理的高风险解决方案。作为流程的一部分，专业服务可能要求数据控制者针对 GDPR 合规性（例如合同条款）、DPIA 开发计划或 GDPR 要求数据处理者遵循的其他标准（例如达成的操作指南）提供保证。但是，无论 Microsoft 采取何种操作，数据控制者都有责任根据客户数据处理者的适用意见来制定 DPIA 计划。
+在开始参与时，专业服务会通过相关流程来评估和解决可能需要处理的高风险解决方案。 作为流程的一部分，专业服务可能要求数据控制者针对 GDPR 合规性（例如合同条款）、DPIA 开发计划或 GDPR 要求数据处理者遵循的其他标准（例如达成的操作指南）提供保证。 但是，无论 Microsoft 采取何种操作，数据控制者都有责任根据客户数据处理者的适用意见来制定 DPIA 计划。
 
-## <a name="part-2--contents-of-a-dpia"></a>第 2 部分 - DPIA 的内容
+## <a name="part-2--contents-of-a-dpia"></a>第 2 部分 — DPIA 的内容
 
-第 35(7) 条规定，数据保护影响评估应指定处理的目的和预期处理的系统化说明。综合 DPIA 的系统化说明可能包括所处理数据的类型、数据保留时间、数据存储位置和传输位置以及有权访问数据的第三方等因素。此外，DPIA 还必须包括：
+第 35(7) 条规定，数据保护影响评估应指定处理的目的和预期处理的系统化说明。 综合 DPIA 的系统化说明可能包括所处理数据的类型、数据保留时间、数据存储位置和传输位置以及有权访问数据的第三方等因素。 此外，DPIA 还必须包括：
 
 -   对与处理操作的目的相关的必要性和合理性的评估；
 
@@ -66,7 +66,7 @@ GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估�
 
 下表包含与上述每个元素相关的专业服务信息。如第 1 部分中所述，根据控制者具体实施和使用专业服务的情况，数据控制者必须考虑下面提供的详细信息，以及任何其他相关因素。
 
-***表 2 - 相关专业服务的 DPIA 元素***
+***表 2 — 相关专业服务的 DPIA 元素***
 
 <!--start table here -->
 
@@ -76,18 +76,18 @@ GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估�
 |处理目的|使用专业服务处理数据的目的由实施、配置和使用它的控制者确定。<p>正如 [Microsoft 专业服务数据保护附录](http://aka.ms/professionalservicesdpa) (MPSDPA) 中所规定，作为数据处理者，Microsoft 处理支持和咨询数据只是为了向客户（即数据控制者）提供请求的服务。Microsoft 不会将支持和咨询数据或从中派生的信息用于任何广告或商业目的。</p>|
 |使用专业服务处理数据的目的由实施、配置和使用它的控制者确定。|正如 [Microsoft 专业服务数据保护附录](http://aka.ms/professionalservicesdpa) (MPSDPA) 中所规定，作为数据处理者，Microsoft 处理支持和咨询数据只是为了向客户（即数据控制者）提供请求的服务。Microsoft 不会将支持和咨询数据或从中派生的信息用于任何广告或类似商业目的。|
 |处理的个人数据类别|支持和咨询数据是指由客户或代表客户按照与 Microsoft 达成的有关获取专业服务和支持的协议，提供给 Microsoft 的所有数据（或客户授权 Microsoft 通过联机服务获取的数据），包括所有文本、音频、视频、图像文件或软件。这可能包括通过电话、聊天、电子邮件或 Web 表单收集的信息。它可能包括问题描述、为解决支持问题而传输给 Microsoft 的文件、自动故障排除程序或经客户许可通过远程访问客户系统收集的信息。<p>客户数据和支持数据不包括客户合同和帐单数据，例如订阅信息和付款信息，Microsoft 在其作为数据控制者的角色中收集和处理这些数据，这不在本文档的讨论范围内。</p>|
-|数据保留|Microsoft 将在客户参与期间保留支持和咨询数据，并在参与结束后保留一段时间，以确保服务的质量和连续性。例如，在关闭支持案例之后，数据通常会保留一段时间，以确保在问题重新出现和重新打开案例时能够引用该数据。<p>当专业服务提供支持时，将在支持案例关闭时定义参与期限。当专业服务提供咨询服务时，参与期限通常由工作单定义。在其他情况下，参与期限由业务关系的维持状况来定义。在所有情况下，都可根据请求或按照客户的指示，使用专业服务*数据主体权限指南*中所述的功能来删除或返回支持和咨询数据，而不会无故拖延。</p>|
+|数据保留|Microsoft 将在客户参与期间保留支持和咨询数据，并在参与结束后保留一段时间，以确保服务的质量和连续性。 例如，在关闭支持案例之后，数据通常会保留一段时间，以确保在问题重新出现和重新打开案例时能够引用该数据。<p>当专业服务提供支持时，将在支持案例关闭时定义参与期限。当专业服务提供咨询服务时，参与期限通常由工作单定义。在其他情况下，参与期限由业务关系的维持状况来定义。在所有情况下，都可根据请求或按照客户的指示，使用专业服务*数据主体权限指南*中所述的功能来删除或返回支持和咨询数据，而不会无故拖延。</p>|
 |个人数据的位置和传输|由于专业服务的性质，包括需要提供全天候支持，可能会在全球范围内传输数据。可根据要求提供 Microsoft 开展运营的位置列表。对于咨询服务，如果在工作单中同意，则数据可以留在国内。<p>对于来自欧洲经济区和瑞士的个人数据，Microsoft 将确保在向第三方国家/地区或国际组织传输的个人数据时实施 GDPR 第 46 条中规定的相应安全措施。除 Microsoft 根据处理者标准合同条款和其他模板合同所做的承诺（如 [MPSDPA](http://aka.ms/professionalservicesdpa) 中所述）外，Microsoft 还获得了欧盟-美国和瑞士-美国隐私防护框架认证并践行其承诺。|
 |与第三方分享的数据|Microsoft 会与充当下级处理者角色的第三方分享数据，以实现客户和技术支持、服务维护和其他操作。Microsoft 将向其传输支持和咨询数据的任何分包商都会与 Microsoft 签订书面协议，该协议的效力不低于 [MPSDPA](http://aka.ms/professionalservicesdpa) 中的数据保护条款。根据 [MPSDPA](http://aka.ms/professionalservicesdpa) 的要求与其分享支持和咨询数据的所有第三方下级处理者都包含在 [Microsoft 商业支持承包商列表](http://aka.ms/servicesapprovedsuppliers)中。<p>除非法律要求，否则 Microsoft 不会向执法部门公开支持和咨询数据。如果执法部门联系 Microsoft 要求提供支持和咨询数据，Microsoft 将尝试重定向执法部门，直接从客户处请求该数据。如果强迫向执法部门公开支持和咨询数据，Microsoft 将立即通知客户并提供所需副本（除非法律禁止这样做）。<p>收到其他任何第三方对支持和咨询数据的请求后，Microsoft 将立即通知客户（除非法律严禁这样做）。除非法律要求配合，否则 Microsoft 将拒绝请求。如果请求有效，Microsoft 将尝试重定向第三方，直接从客户处请求该数据。</p>|
 |数据使用者权力|当以处理者的身份操作时，Microsoft 向客户（即数据控制者）提供其数据使用者的个人数据以及依据 GDPR 行使权力时满足数据使用者请求的能力。我们以与产品功能和我们作为处理者的角色一致的方式完成此操作。如果我们收到来自客户数据使用者的请求，请求依据 GDPR 行使其一项或多项权力，我们将重定向数据使用者，使其直接向数据控制者提出请求。<p>*专业服务数据主体请求 GDPR 文档*介绍了客户如何在专业服务中履行其数据主体权利和义务。</p>|
 对与处理操作的目的相关的必要性和合理性的评估|这种评估将取决于控制者的处理需求和目的。<p>为了向数据控制者提供服务，Microsoft 需要进行某些处理，此类是必要且合理的。Microsoft 在 [MPSDPA](http://aka.ms/professionalservicesdpa) 中作此承诺。</p>|
 |对数据使用者的权力和自由带来的风险的评估|使用专业服务对数据使用者的权力和自由带来的关键风险取决于数据控制者实施、配置和使用专业服务以及由专业服务提供的任何解决方案的方式和背景。<p>然而，与其他所有服务一样，该服务中保存的个人数据可能存在未经授权的访问或意外泄漏的风险。下面介绍 Microsoft 所采取的用来应对此类风险的措施。</p>|
-| 应对风险的措施（包括保护措施、安全措施和机制），以确保对个人数据的保护并证明符合此 GDPR 的规定（将数据使用者和其他相关人员的合法权益考虑在内）。<!--is this the correct ending? -->|Microsoft 致力于帮助保护客户的信息安全。按照 GDPR 第 32 条的规定，Microsoft 已采取并且将维持和遵循适当的技术和组织措施，这些措施旨在防止支持和咨询数据意外泄露、未经授权或非法访问、公开、篡改、丢失或损坏。<p>此外，Microsoft 履行 GDPR 规定的适用于数据处理者的所有其他义务，包括但不限于数据保护影响评估和记录保存。</p>|
+| 应对风险的措施（包括保护措施、安全措施和机制），以确保对个人数据的保护并证明符合此 GDPR 的规定（将数据使用者和其他相关人员的合法权益考虑在内）。<!--is this the correct ending? -->|Microsoft 致力于帮助保护客户的信息安全。 按照 GDPR 第 32 条的规定，Microsoft 已采取并且将维持和遵循适当的技术和组织措施，这些措施旨在防止支持和咨询数据意外泄露、未经授权或非法访问、公开、篡改、丢失或损坏。<p>此外，Microsoft 履行 GDPR 规定的适用于数据处理者的所有其他义务，包括但不限于数据保护影响评估和记录保存。</p>|
 |||
 
 <!-- end of table -->
 
-[^1]: With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
+[^1]: With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
 
 
 #### <a name="learn-more"></a>了解详细信息

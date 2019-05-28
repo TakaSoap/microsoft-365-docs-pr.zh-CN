@@ -2,21 +2,20 @@
 title: Microsoft 数据保护官员
 description: 有关 Microsoft 针对 GDPR 的欧盟数据保护官员 (DPO) 的信息
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: ''
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2401613de3c57bc02af67ed527eb37c314528930
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 3e7950872a1af8abaa34725756f157f8645da637
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286592"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431816"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft 数据保护官员
 
@@ -44,9 +43,9 @@ D18 P521<br>
 爱尔兰<br>
 电话：+353 (0) 1 295-3826<br>
 
-数据保护官员的详细联系信息已发送至 Microsoft 监督机构。   
+数据保护官员的详细联系信息已发送至 Microsoft 监督机构。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 

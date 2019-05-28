@@ -11,18 +11,18 @@ ms.author: mohitku
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: ae4c088ce16b2b415ffa79a6fadd3f1c2a0426c7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0ef1a23d69ae91b9d94c4587f1912c4171fe84d3
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286796"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431413"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>用于提交删除请求的 FastTrack 迁移工具集
 
 ## <a name="toolset-purpose"></a>工具集用途
 
-如果你是目前正在使用 FastTrack 迁移的客户，那么删除 Office 365 用户帐户将不会删除由 Microsoft FastTrack 团队保留的数据副本（该副本仅保留用于完成迁移）。在迁移过程中，如果你希望 Microsoft FastTrack 团队同时删除数据副本，请通过此工具集提交请求。在正常业务过程中，Microsoft FastTrack 将在迁移完成后立即删除所有数据副本。 
+如果你是目前正在使用 FastTrack 迁移的客户，那么删除 Office 365 用户帐户将不会删除由 Microsoft FastTrack 团队保留的数据副本（该副本仅保留用于完成迁移）。在迁移过程中，如果你希望 Microsoft FastTrack 团队同时删除数据副本，请通过此工具集提交请求。在正常业务过程中，Microsoft FastTrack 将在迁移完成后立即删除所有数据副本。
 
 ### <a name="supported-platforms"></a>支持的平台
 Microsoft 支持 Windows 平台和 PowerShell 控制台中此工具集的初始版本。此工具集支持以下已知平台：
@@ -48,7 +48,7 @@ PowerShell 控制台应用程序上的 PowerShell 库中提供此工具集。若
 
 ![PowerShell - 允许应用进行更改](media/fasttrack-run-powershell_image.png)
 
-打开控制台后，需要设置用于脚本执行的权限。键入以下命令以允许脚本运行：“Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope:Process”
+打开控制台后，需要设置用于脚本执行的权限。键入以下命令以允许脚本运行：“Set-ExecutionPolicy - ExecutionPolicy: Bypass - Scope:Process”
 
 系统将提示你确认此操作，因为管理员可以自行决定更改范围。
 

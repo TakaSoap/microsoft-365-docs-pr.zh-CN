@@ -2,20 +2,20 @@
 title: Microsoft 支持和专业服务与 GDPR 泄露通知
 description: 介绍了 Microsoft 支持和专业服务如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时响应和通知用户。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: a17752773304272938c305649ff6e511ab0d1b0b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8a0f0c5c173fbee6a865d2c9a7afb0f61b388507
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285739"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431593"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft 支持和专业服务与 GDPR 泄露通知
 
@@ -49,7 +49,7 @@ Microsoft 专业服务致力于保护其客户并采取大量措施来防止发�
 
 #### <a name="detection"></a>检测 
 
-Microsoft 专业服务会持续监控所有包含个人数据的数据存储中是否有新出现的数据保护事件（包括联机和脱机）。我们使用不同的方法来检测数据保护事件，包括自动化警报、客户报告、来自外部各方的报告、异常观测，以及恶意或黑客活动的迹象。
+Microsoft 专业服务会持续监控所有包含个人数据的数据存储中是否有新出现的数据保护事件 — 包括联机和脱机。我们使用不同的方法来检测数据保护事件，包括自动化警报、客户报告、来自外部各方的报告、异常观测，以及恶意或黑客活动的迹象。
 
 Microsoft 专业服务使用的检测流程旨在发现数据保护事件和触发调查。例如：
 
@@ -63,7 +63,7 @@ Microsoft 专业服务使用的检测流程旨在发现数据保护事件和触�
 
 #### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>数据保护事件响应练习，测试数据保护事件响应计划
 
-除了持续培训之外，专业服务每年还会练习与相应内部部门之间的合作关系，以将数据保护事件上报过程、角色和职责传达给所有稳定团队成员。这可让关键利益干系人做好应对实际数据保护事件的准备，无论是属于安全、物理还是隐私性质。这包括与数据保护事件响应团队、安全团队、法律团队和通信团队的代表进行的练习。
+除了持续培训之外，专业服务每年还会练习与相应内部部门之间的合作关系，以将数据保护事件上报过程、角色和职责传达给所有稳定团队成员。这可让关键利益干系人做好应对实际数据保护事件的准备 — 无论是属于安全、物理还是隐私性质。这包括与数据保护事件响应团队、安全团队、法律团队和通信团队的代表进行的练习。
 
 在练习完成后，我们会记录成果以及我们决定使用的修正方法。
 
@@ -81,7 +81,7 @@ Microsoft 还会完成数据保护事件的内部事后分析。作为此练习�
 
 #### <a name="notification"></a>通知
 
-当 Microsoft 专业服务根据 GDPR 声明数据保护事件时，我们会在 72 小时内将通知发送给客户。这 72 小时的通知义务是专业服务的策略承诺，而不是 GDPR 的法定要求。
+当 Microsoft 专业服务根据 GDPR 声明数据保护事件时，我们会在 72 小时内将通知发送给客户。这 72 小时的通知义务是专业服务的策略承诺 — 而不是 GDPR 的法定要求。
 
 在声明数据保护事件之后，会尽快启动通知流程，同时考虑快速行动的安全风险。为了确保通知成功送达，客户有责任确保每个适用帐户、订阅和联机服务门户上的管理员联系信息正确无误。虽然目的是为受影响的客户提供准确、可操作且及时的通知，以实现 72 小时的通知承诺，但初始通知可能并不包括完整的详细信息，因为在数据保护事件的早期阶段还没有取得所有详细信息。此外，根据数据保护事件的具体情况，Microsoft 可能需要扣留部分详细信息。例如，如果提供通知会增加其他客户面临的风险或者妨碍 Microsoft 或执法部门抓住恶意行动者，则可能有必要扣留详细信息。
 

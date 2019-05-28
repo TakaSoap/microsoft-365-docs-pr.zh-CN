@@ -1,6 +1,6 @@
 ---
 title: 符合 GDPR 的 Microsoft 支持和专业服务数据主体请求
-description: 介绍了 Microsoft 支持和专业服务如何处理数据主体请求。
+description: Microsoft 支持和专业服务如何处理数据主体请求。
 keywords: 专业服务，Microsoft 365，Microsoft 365 教育版，Microsoft 365 文档，GDPR
 author: herviicban
 localization_priority: Priority
@@ -10,12 +10,12 @@ ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 4fb7c3140a73e4f72673807bb99214ff6fc0f2bc
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278240"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431743"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Microsoft 支持和专业服务与 GDPR 数据主体请求
 
@@ -57,11 +57,11 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 
 -   **控制者。** 单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或具体提名条件。
 
--   **个人数据和数据主体。** 已确定身份或可识别的自然人（称为“数据主体”）的任何相关信息；可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、网络标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
+-   **个人数据和数据主体。** 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
 
 -   **处理者。** 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
 
-#### <a name="additional-terms-and-definitions-that-may-helpful-in-understanding-this-guide"></a>可能有助于了解本指南的其他术语和定义
+#### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>可能有助于了解本指南的其他术语和定义
 
 -   **支持和咨询数据**是客户或代表客户在与 Microsoft 打交道期间向 Microsoft 提供的（或客户授权 Microsoft 从 Online Service 获取的）所有数据，包括所有文本、声音、视频、图像文件或软件，以获取支持或专业服务。说明一下，这不包括 Microsoft 是数据控制者时收集的数据，包括客户联系人数据。
 
@@ -140,7 +140,7 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 <span id="_Discover" class="anchor"><span id="_Toc508792508" class="anchor"><span id="_Toc510704617" class="anchor"><span id="_Toc511403167" class="anchor"></span></span></span></span>
 ## <a name="step-1-discover"></a>步骤 1：发现
 
-要在响应 DSR 时获得 Microsoft 的协助，第一步是查找作为 DSR 主体的个人数据。这第一步（查找和检查所涉及的个人数据）将帮助客户确定 DSR 是否符合组织有关接受数据主体请求的策略。
+要在响应 DSR 时获得 Microsoft 的协助，第一步是查找作为 DSR 主体的个人数据。这第一步 — 查找和检查所涉及的个人数据 — 将帮助客户确定 DSR 是否符合组织有关接受数据主体请求的策略。
 
 客户找到数据后，客户可以执行特定操作以满足数据主体的请求。根据客户尝试执行的操作，将决定客户需要参与的发现级别。
 
@@ -150,7 +150,7 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 *选项 A – 跨 Microsoft 支持的客户 DSR*。在整个 Microsoft 的支持环境中将 DSR 应用于客户的所有支持数据。为此，客户只需要求 Microsoft 将 DSR 应用于收集的所有支持数据。
 
-*选项 B – 特定客户服务活动。* 使用联机系统查看票证，然后识别包含相关个人数据的特定服务活动并报告给 Microsoft。如果客户无法在所有服务活动（票证）之间进行搜索，Microsoft 会尝试提供协助以执行搜索。
+*选项 B — 特定客户服务活动。* 使用联机系统查看票证，然后识别包含相关个人数据的特定服务活动并报告给 Microsoft。如果客户无法在所有服务活动（票证）之间进行搜索，Microsoft 会尝试提供协助以执行搜索。
 
 **一旦识别到服务活动，可请求将 DSR 应用到记录的特定部分或 Microsoft 中与该服务活动相关的任何内容。 **
 
@@ -198,9 +198,9 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 如果客户请求在所有支持系统中普遍删除数据主体的个人数据，可通过你的 TAM 或通过在 SMC 或同等系统中填写支持申请 (SR) 来完成。你*必须*指出该请求是根据 GDPR 来协助处理 DSR。
 
-*选项 A - 跨 Microsoft 支持的客户 DSR*。对于跨系统的 DSR，客户必须提供 Microsoft 识别所需数据需要的个人数据（例如电子邮件地址、电话号码）。Microsoft 不会关联或研究记录，而是仅根据客户提供的标识符直接进行搜索。找到数据后，Microsoft 将删除所有服务活动和所有关联数据。**重要注意事项：** 这可能会导致对客户组织非常重要的历史记录发生丢失。
+*选项 A — 跨 Microsoft 支持的客户 DSR*。对于跨系统的 DSR，客户必须提供 Microsoft 识别所需数据需要的个人数据（例如电子邮件地址、电话号码）。Microsoft 不会关联或研究记录，而是仅根据客户提供的标识符直接进行搜索。找到数据后，Microsoft 将删除所有服务活动和所有关联数据。**重要注意事项：** 这可能会导致对客户组织非常重要的历史记录发生丢失。
 
-*选项 B – 特定客户服务活动*。对于客户已识别并且想要删除的特定服务活动，不要从 SMC 删除票证。这会导致个人数据遗留在日志和下游系统中，从而可能无法在所需时间范围内删除。转为识别票证或必须删除的票证中的个人资料，并联系 Microsoft 支持协助你删除该数据。
+*选项 B — 特定客户服务活动*。对于客户已识别并且想要删除的特定服务活动，不要从 SMC 删除票证。这会导致个人数据遗留在日志和下游系统中，从而可能无法在所需时间范围内删除。转为识别票证或必须删除的票证中的个人资料，并联系 Microsoft 支持协助你删除该数据。
 
 ### <a name="microsoft-support-data-transfer-and-management-tool-dtm-instructions"></a>Microsoft 支持数据传输和管理工具 (DTM) 说明
 

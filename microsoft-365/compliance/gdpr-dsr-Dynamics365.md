@@ -2,21 +2,21 @@
 title: 符合 GDPR 的 Dynamics 365 数据主体请求
 description: 指南介绍了如何使用 Microsoft 的产品、服务和管理工具来帮助我们的控制者客户查找和处理个人数据以响应 DSR 请求。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/30/2019
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4e1597e658b0ac6de0c4805b77660e6c47424aa2
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 3c394df956801beed63b5e31c4a1579bf5324eba
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497734"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431753"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 数据主体请求
 
@@ -24,17 +24,17 @@ ms.locfileid: "33497734"
 
 本指南讨论了如何使用 Microsoft 的产品、服务和管理工具帮助我们的控制者客户查找和操作个人数据以响应 DSR 请求。具体而言，这包括如何查找、访问和操作驻留在 Microsoft 云中的个人数据。下面是本指南中所列流程的快速概述：
 
-1. ***发现*** - 使用搜索和发现工具更轻松地查找可能是 DSR 请求主体的客户数据。一旦收集了潜在响应文档，则可以执行一个或多个下列步骤中所述的 DSR 操作。或者，你可能会确定请求不符合组织有关响应 DSR 请求的指导原则。
+1. ***发现 — 使用搜索和发现工具更轻松地查找可能是 DSR 请求主体的客户数据。一旦收集了潜在响应文档，则可以执行一个或多个下列步骤中所述的 DSR 操作。或者，你可能会确定请求不符合组织有关响应 DSR 请求的指导原则。
 
-2. ***访问*** - 检索驻留在 Microsoft 云中的个人数据，根据请求，还会制作可供数据主体使用的个人数据副本。
+2. ***访问 — 检索驻留在 Microsoft 云中的个人数据，根据请求，还会制作可供数据主体使用的个人数据副本。
 
-3. ***纠正*** - 进行更改或者对个人数据实施其他请求的操作（如果适用）。
+3. ***纠正 — 进行更改或者对个人数据实施其他请求的操作（如果适用）。
 
-4.  ***限制*** - 通过移除各种联机服务的许可证或者在可能的情况下关闭所需服务，限制个人数据的处理。你也可以从 Microsoft 云中移除数据并将其保留在內部或其他位置。
+4.  ***限制 — 通过移除各种联机服务的许可证或者在可能的情况下关闭所需服务，限制个人数据的处理。你也可以从 Microsoft 云中移除数据并将其保留在內部或其他位置。
 
-5. ***删除*** - 永久移除驻留在 Microsoft 云中的个人数据。
+5. ***删除 — 永久移除驻留在 Microsoft 云中的个人数据。
 
-6. ***导出*** - 向数据主体提供个人数据的电子副本（采用机器可读格式）。
+6. ***导出 — 向数据主体提供个人数据的电子副本（采用机器可读格式）。
 
 本指南中的每个部分概述了数据控制者组织为响应对 Microsoft 云中个人数据的 DSR 请求而采取的技术过程。
 
@@ -42,15 +42,15 @@ ms.locfileid: "33497734"
 
 下面提供了与本指南相关的术语定义：
 
-- <em>控制者 - </em>单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或具体提名条件。
+- <em>控制者 — 单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或具体提名条件。
 
-- *个人数据*和<em>数据主体 - </em>已确定身份或可识别的自然人（“数据主体”）的任何相关信息；可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、网络标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
+- *个人数据*和<em>数据主体 — 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
 
-- <em>处理者 - </em>代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
+- <em>处理者 — 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
 
 - *客户数据* – 客户或代表客户通过使用企业服务提供给 Microsoft 的所有文本、声音、视频或图像文件和软件，如 Microsoft Online Services 条款所定义。
 
-- *系统*-*生成日志 –* Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。系统生成日志主要包括化名数据，例如唯一标识符，这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。系统生成日志还可能包含有关最终用户的身份信息，例如用户名。  
+- *系统**生成日志 — Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。系统生成日志主要包括化名数据，例如唯一标识符，这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。系统生成日志还可能包含有关最终用户的身份信息，例如用户名。  
 
 ### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>本指南将如何帮助你履行控制者职责
 
@@ -64,7 +64,7 @@ ms.locfileid: "33497734"
 
 当数据主体行使其权利并提出请求时，请考虑以下几点：
 
-- 通过使用数据主体在请求中提供给你的信息，正确识别人员和角色（例如员工、客户、供应商）。此信息可能是姓名、员工 ID 或客户编码或其他标识符。
+- 通过使用数据主体在请求中提供给你的信息，正确识别人员和角色 — 例如员工、客户、供应商。此信息可能是姓名、员工 ID 或客户编码或其他标识符。
 
 - 记录请求的日期和时间（必须在 30 天内完成请求）。
 
@@ -165,7 +165,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 若要快速地批量编辑多个 Business Central 记录，可使用 [Business Central Excel 加载项](https://docs.microsoft.com/zh-CN/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)将列表导出为 Excel 以更正多个记录，然后在 Business Central 中从 Excel 发布修改过的数据。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/zh-CN/dynamics365/business-central/about-export-data)。
 
-- 可以更改存储在任何字段中的客户数据（例如客户卡片中有关客户的信息）— 通过手动编辑包含目标个人数据的数据元素。 有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
+- 可以更改存储在任何字段中的客户数据 — 例如客户卡片中有关客户的信息 — 通过手动编辑包含目标个人数据的数据元素。 有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
 
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>有关修改业务交易条目的简短说明
 交易记录（如常规、客户和纳税分类账条目）对于企业资源规划系统的完整性至关重要。作为财务或其他事务一部分的个人数据将“按原样”保存，以符合财务法律（例如税法）、防范诈骗（例如安全审计跟踪）或遵从行业认证。因此，Dynamics 365 for Finance and Operations 和 Dynamics 365 Business Central 限制修改此类记录中的数据。
@@ -174,7 +174,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 ### <a name="restricting-the-processing-of-customer-data"></a>限制客户数据的处理
 
-当你收到来自数据主体的限制处理客户数据的请求时，可轻松从联机服务提取受影响的客户数据并将其存储在单独的容器中（例如具有数据隔离功能的内部存储或单独的网络服务），独立于任意云应用程序提供的处理功能。
+当你收到来自数据主体的限制处理客户数据的请求时，可轻松从联机服务提取受影响的客户数据并将其存储在单独的容器中（即具有数据隔离功能的内部存储或单独的网络服务），独立于任意云应用程序提供的处理功能。
 
 ***Dynamics 365 Business Central*** 提供了替代机制，例如数据处理阻止，让用户能够阻止特定数据主体的记录。 有关详细信息，请参阅[限制数据主体的数据处理](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject)。 当记录被标记为已阻止时，Dynamics 365 Business Central 将停止处理该数据主体的客户数据。 你不能创建使用被阻止记录的新交易；例如，如果客户或销售人员被阻止，则不能为客户创建新发票。
 
@@ -234,7 +234,7 @@ Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提
 
 - Social Engagement 从社交平台获取的社交媒体用户数据（在 Social Engagement 中称为 *“作者”*）。可能包括姓名、用户名、个人资料图片、位置、网站和个人简历（如果作者提供）。
 
-- 用于对作者进行分组和分类的作者标签，例如，影响者、竞争对手或粉丝。
+- 用于对作者进行分组和分类的作者标签 — 例如，影响者、竞争对手或粉丝。
 
 #### <a name="for-employees"></a>对于员工
 
@@ -246,7 +246,7 @@ Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提
 
 - Power BI 中的用户名，如果你的组织为 Power BI 使用 [Social Engagement 内容包](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)来分析社交媒体上的团队绩效。
 
-此第一步（查找和查看所涉及的个人数据）将帮助你确定数据主体的请求是否符合组织有关接受或拒绝请求的要求。例如，查找并查看个人数据之后，你可能会确定该请求不符合组织的要求，因为这样做可能会对他人的权利和自由产生不利影响。
+此第一步 — 查找和查看所涉及的个人数据 — 将帮助你确定数据主体的请求是否符合组织有关接受或拒绝请求的要求。例如，查找并查看个人数据之后，你可能会确定该请求不符合组织的要求，因为这样做可能会对他人的权利和自由产生不利影响。
 
 #### <a name="social-media-users-authors"></a>社交媒体用户（作者）
 
@@ -383,7 +383,7 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 
 1.  转到 [Microsoft 服务信任门户](https://servicetrust.microsoft.com/)并使用 Dynamics 365 全局管理员的凭据登录。
 
-2.  在页面顶部的“隐私”**** 下拉列表中，单击“数据主体请求”****。
+2.  在页面顶部的“**隐私**”下拉列表中，单击“**数据主体请求**”。
 
 3.  在“**数据主体请求**”页面的“**系统生成日志**”下，单击“**数据日志导出**”。
 
@@ -393,7 +393,7 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 
 在创建新的请求后，它将列在“数据日志导出”**** 页面上，在这里你可以跟踪其状态。完成请求后，可以单击链接以访问系统生成日志，这些日志将在请求创建 30 内导出到你组织的 Azure 存储位置。数据将保存为常用的机器可读文件格式，如 JSON 和 XML。如果你还没有 Azure 帐户和 Azure 存储位置，将需要为你的组织创建 Azure 帐户和/或 Azure 存储位置，以便数据日志导出工具可以导出系统生成日志。
 
-Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此操作。[Microsoft Azure 存储 - Blob 存储简介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)文章。
+Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此操作。[Microsoft Azure 存储 — Blob 存储简介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)文章。
 
 **重要提示**：你必须是租户管理员才能从租户导出用户数据。
 
@@ -435,7 +435,8 @@ Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储�
 </tbody>
 </table>
 
-[注意] 出于安全和审核目的，部分功能将禁止导出或删除包含个人信息的系统生成日志，以维护此类信息的完整性。
+> [!Note]
+> 出于安全和审核目的，部分功能将禁止导出或删除包含个人信息的系统生成日志，以维护此类信息的完整性。
 
 ### <a name="deleting-system-generated-logs"></a>删除系统生成日志
 若要删除通过访问请求检索到的系统生成日志，必须从服务移除用户并永久删除其 Azure Active Directory 帐户。有关永久删除用户的说明，请参阅本指南的[“删除用户”](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user)部分。请务必注意，永久删除用户帐户操作一旦启动便无法恢复。
@@ -444,4 +445,4 @@ Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储�
 
 #### <a name="learn-more"></a>了解详细信息
 
-[Microsoft 信任中心](https://www.microsoft.com/zh-CN/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft 信任中心](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

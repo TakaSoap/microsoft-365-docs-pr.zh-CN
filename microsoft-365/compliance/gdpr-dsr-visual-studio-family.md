@@ -13,12 +13,12 @@ manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286920"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431543"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>针对 GDPR 的 Visual Studio 系列数据主体请求
 
@@ -72,8 +72,8 @@ Visual Studio 2015 及更高版本、Visual Studio for Mac 和 Visual Studio Cod
 
 控制者可以使用两种方法中的任意一种来管理客户数据以及从其数据主体收集的系统生成的日志，具体取决于其 Visual Studio 系列产品或 Microsoft 扩展注册的方式。在某些情况下，必须同时使用这两种方法。两者都允许控制者下载由该方法管理的活动历史记录的副本。关闭 AAD 或 MSA 帐户将删除相关联的 Visual Studio 客户数据，并对系统生成的日志中与这些产品相关的个人可识别数据匿名处理。匿名处理的系统生成的日志的保留期限不超过 18 个月。
 
-- 使用由 Azure 租户支持的帐户（例如，AAD 帐户或与 Azure 订阅关联的 MSA 帐户）注册 Visual Studio 系列产品的用户可以按照[针对 GDPR 的 Azure 数据主体请求](gdpr-dsr-azure.md)中的说明执行操作。
-- 未使用由 Azure 租户支持的帐户（例如，使用 Microsoft 帐户 (MSA) 的许多帐户）注册 Visual Studio 系列产品的用户可以使用其 Microsoft 帐户提供的[基于 Web 的 Microsoft 隐私响应中心](https://aka.ms/userprivacysite)跨多个 Microsoft 服务来查看、控制和删除绑定到他们的 Microsoft 帐户的活动数据。在此应用场景中，用户是自己个人数据的控制者。
+- 使用由 Azure 租户支持的帐户— 例如 AAD 帐户或与 Azure 订阅关联的 MSA 帐户 — 注册 Visual Studio 系列产品的用户可以按照[针对 GDPR 的 Azure 数据主体请求](gdpr-dsr-azure.md)中的说明执行操作。
+- 未使用由 Azure 租户支持的帐户 — 例如使用 Microsoft 帐户 (MSA) 的许多帐户 — 注册 Visual Studio 系列产品的用户可以使用其 Microsoft 帐户提供的[基于 Web 的 Microsoft 隐私响应中心](https://aka.ms/userprivacysite)跨多个 Microsoft 服务来查看、控制和删除绑定到他们的 Microsoft 帐户的活动数据。在此应用场景中，用户是自己个人数据的控制者。
 
 > [!NOTE]
 > 当 MSA 帐户持有者删除其帐户时，所有与这些产品相关的个人可识别数据都将被删除（无论该帐户是否受 Azure 租户支持），并且将对系统生成的日志匿名处理。
@@ -101,10 +101,10 @@ Microsoft 收集数据，帮助我们重现和排查你报告的 Visual Studio �
 
 若要查看与你的反馈相关的数据，请执行以下步骤：
 
-1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。 在右上角，单击个人资料并选择“个人资料和首选项”****。
+1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。 在右上角，单击个人资料并选择“**个人资料和首选项**”。
 2. 单击任何“个人资料”****、“通知”****、“活动”**** 和“附件”**** 选项卡，查看提交到反馈系统的数据。
    1. “个人资料”**** 指的是你的[开发人员社区](https://developercommunity.visualstudio.com)个人资料，包括用户名、电子邮件地址、个人相关信息等。
-   2. “通知”**** 是你控制接收电子邮件通知的方式。
+   2. **“通知”是你控制接收电子邮件通知的方式。
    3. “活动”**** 将为你提供你曾活跃的反馈项（发表的帖子、评论等）和执行的活动。
    4. “附件”**** 是你的附件历史记录的列表，格式如下：`FileName was attached to the problem "ProblemName" Tue, Apr 10, 18 2:27 PM`
 
@@ -121,7 +121,7 @@ Microsoft 收集数据，帮助我们重现和排查你报告的 Visual Studio �
 
 若要开始导出，请执行以下步骤：
 
-1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。 在右上角，单击个人资料并选择“个人资料和首选项”****。
+1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。 在右上角，单击个人资料并选择“**个人资料和首选项**”。
 2. 单击“隐私”**** 选项卡，然后单击“创建存档”****，请求导出数据。
 3. “存档状态”**** 将更新，显示我们正在准备数据。准备数据的时间取决于我们需要导出的数据量。
 4. 数据准备就绪后，我们会向你发送一封电子邮件。
@@ -148,7 +148,7 @@ Microsoft 收集数据，帮助我们重现和排查你报告的 Visual Studio �
 
 若要启动删除操作，请执行以下步骤：
 
-1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。在右上角，单击个人资料并选择“个人资料和首选项”****。
+1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。在右上角，单击个人资料并选择“**个人资料和首选项**”。
 2. 单击“隐私”**** 选项卡，然后单击“删除数据和帐户”**** 开始删除你的数据。
 3. 将显示确认屏幕。
 4. 在框中键入“delete”，然后单击“删除我的帐户”****。

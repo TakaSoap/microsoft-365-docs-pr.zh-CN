@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: b3711e0a68600152750d85e6287be735e204a92d
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285090"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431773"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Azure DevOps Services 数据主体请求
 
@@ -33,7 +33,7 @@ ms.locfileid: "32285090"
 
 ## <a name="personal-data-we-collect"></a>我们收集的个人数据
 
-Microsoft 收集来自用户的数据，以运行和改进 Azure DevOps Services。Azure DevOps Services 收集两类数据&mdash;客户数据和系统生成的日志。客户数据包括 Azure DevOps Services 运行服务所需的用户身份事务和交互式数据。系统生成的日志包括针对每个产品区域和功能所聚合的服务使用数据。
+Microsoft 收集来自用户的数据，以运行和改进 Azure DevOps Services。Azure DevOps Services 收集两类数据 — 客户数据和系统生成的日志。客户数据包括 Azure DevOps Services 运行服务所需的用户身份事务和交互式数据。系统生成的日志包括针对每个产品区域和功能所聚合的服务使用数据。
 
 ## <a name="delete-azure-devops-data"></a>删除 Azure DevOps 数据
 

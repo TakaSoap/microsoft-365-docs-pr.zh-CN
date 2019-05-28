@@ -2,21 +2,21 @@
 title: Azure 与 GDPR 泄露通知
 description: 介绍了 Azure 如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时响应和通知用户。
 keywords: Azure, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 287175d6f78efa1052e446b230f39c33fc4d5fc6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5e8c04bcd20f56580e939bc4a2685eb232d5e589
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286427"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431493"
 ---
 # <a name="azure-and-breach-notification-under-the-gdpr"></a>Azure 与 GDPR 泄露通知
 
@@ -131,13 +131,13 @@ Microsoft 将通过确定功能影响、可恢复性和事件的信息影响来�
 
 -   **隐私泄露：** 涉及个人数据的安全事件子类型。处理过程与安全事件相同。
 
-针对要声明的 CRSI，Microsoft 必须确定是否很有可能发生了未经授权的客户数据访问，并且/或者具有必须发送通知的法定或合同义务。最好是知道具体客户影响、资源访问及修复步骤，但不是必须这么做。事件通常是安全事件的诊断阶段结束后的声明 CRSI，但是，声明也可能发生在取得所有相关信息的任何时间点。安全事件经理必须建立超出合理怀疑的证据，证明发生了可报告的事件，以便开始执行客户事件通知流程。
+要声明 CRSI，Microsoft 必须确定是否很有可能发生了未经授权的客户数据访问，并且/或者具有必须发送通知的法定或合同义务。最好是知道具体客户影响、资源访问及修复步骤，但不是必须这么做。事件通常是安全事件的诊断阶段结束后的声明 CRSI，但是，声明也可能发生在取得所有相关信息的任何时间点。安全事件经理必须建立超出合理怀疑的证据，证明发生了可报告的事件，以便开始执行客户事件通知流程。
 
 在整个调查过程中，安全响应团队与全球法律顾问密切合作，帮助确保取证是根据法律义务和对客户的承诺来执行的。对于各种操作环境中系统和客户数据的查看和处理，还存在重大限制。敏感或机密数据以及客户数据不会转移出生产环境，除非有事件经理的明确书面批准，且记录在对应的事件票证中。
 
 Microsoft 验证是否成功遏制了客户和业务风险并实施了纠正措施。如有必要，会采取紧急缓解步骤来解决与事件直接关联的安全风险。
 
-Microsoft 还会完成数据泄露的内部事后分析。作为此练习的一部分，会评估响应和操作过程的充分性，并识别和实施安全事件响应 SOP 或相关流程所必需的任何更新。数据泄露的内部事后分析是高度机密的记录，不会提供给客户。但是，会汇总事后分析并将其包括在其他客户事件通知中。作为 Azure 例行审核周期的一部分，会将这些报告提供给外部审计机构进行审阅。
+Microsoft 还会完成数据泄露的内部事后分析。 作为此练习的一部分，会评估响应和操作过程的充分性，并识别和实施安全事件响应 SOP 或相关流程所必需的任何更新。 数据泄露的内部事后分析是高度机密的记录，不会提供给客户。 但是，会汇总事后分析并将其包括在其他客户事件通知中。 作为 Azure 例行审核周期的一部分，会将这些报告提供给外部审计机构进行审阅。
 
 #### <a name="customer-notification"></a>客户通知
 ---------------------
@@ -146,13 +146,13 @@ Microsoft Azure 会根据需要将数据泄露通知客户和监管机构。Micr
 
 在声明 CRSI 后，通知流程会在仍考虑快速行动的安全风险时尽可能快地发生。通常，通知起草流程会在事件调查进行中发生。我们会自声明泄露起 72 小时内送达客户通知，以下情况*除外*：
 
--   Microsoft 认为通知操作将增加其他客户面临的风险。例如，发送通知可能向对手预警，导致无法进行补救。
+-   Microsoft 认为通知操作将增加其他客户面临的风险。 例如，发送通知可能向对手预警，导致无法进行补救。
 
 -   经 Microsoft 的法律部门公司外部和法律事务部 (CELA) 和行政事件经理审查的其他异常或极端情况。
 
 Microsoft Azure 向客户提供详细信息，使他们能够执行内部调查，并协助其履行最终用户承诺，而不是过度地延迟通知流程。
 
-个人数据泄露通知将通过 Microsoft 选择的任何途径送达客户，包括通过电子邮件。数据泄露通知会送达 Azure 安全中心提供的安全联系人列表，该列表可根据[实施指导原则](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)进行配置。如果 Azure 安全中心未提供联系人信息，通知将发送给 Azure 订阅中的一个或多个管理员。为确保通知成功送达，客户有责任确保每个适用订阅和在线服务门户上管理员联系信息的正确性。
+个人数据泄露通知将通过 Microsoft 选择的任何途径送达客户，包括通过电子邮件。 数据泄露通知会送达 Azure 安全中心提供的安全联系人列表，该列表可根据[实施指导原则](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)进行配置。 如果 Azure 安全中心未提供联系人信息，通知将发送给 Azure 订阅中的一个或多个管理员。 为确保通知成功送达，客户有责任确保每个适用订阅和在线服务门户上管理员联系信息的正确性。
 
 Microsoft Azure 或 Azure 政府版团队还可能选择通知其他 Microsoft 人员，例如客户服务 (CSS) 和客户的客户经理 (AM) 或技术客户经理 (TAM)。这些人员通常与客户关系密切，因此可加速补救过程。<span id="_Appendix_A" class="anchor"></span>
 
@@ -161,7 +161,7 @@ Microsoft Azure 或 Azure 政府版团队还可能选择通知其他 Microsoft �
 
 Microsoft Intune 是 Microsoft 企业移动性和安全性套件云服务的关键部分。为了支持数据治理战略，所有 Microsoft 云服务都是根据“通过设计保护隐私”和“默认保护隐私和安全性”方法，采用 Microsoft 隐私和安全性开发的。
 
-因此，Microsoft Intune 云服务遵循 Microsoft Azure 针对防御数据泄露流程采取的相同技术和组织措施。所以，“Microsoft Azure 数据泄露”通知文档中记录的任何信息也与 Microsoft Intune 服务类似。例如，Microsoft Intune 具有相同的安全事件响应流程和生命周期（阶段 1： 检测一直到阶段 5<strong>：</strong>关闭和事后分析）以及相同的客户安全事件通知流程。此外，Microsoft Intune 还通过直接与 Microsoft O365 团队合作，对使用 Intune 的任何 Microsoft O365 客户履行泄露通知义务。
+因此，Microsoft Intune 云服务遵循 Microsoft Azure 针对防御数据泄露流程采取的相同技术和组织措施。 所以，“Microsoft Azure 数据泄露”通知文档中记录的任何信息也与 Microsoft Intune 服务类似。 例如，Microsoft Intune 具有相同的安全事件响应流程和生命周期（阶段 1：检测一直到阶段 5<strong>：</strong>关闭和事后分析）以及相同的客户安全事件通知流程。 此外，Microsoft Intune 还通过直接与 Microsoft O365 团队合作，对使用 Intune 的任何 Microsoft O365 客户履行泄露通知义务。
 
 若要详细了解 Microsoft 如何检测和响应个人数据泄露，请参阅服务信任门户中的 [GDPR 数据泄露通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach)。
 
