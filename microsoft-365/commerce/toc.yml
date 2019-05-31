@@ -1,0 +1,37 @@
+- name: 管理商业购买和帐单
+  href: index.md
+  expanded: true
+  items:
+    - name: 产品和服务
+      expanded: true
+      items:
+        - name: 管理第三方应用程序
+          href: manage-saas-apps.md
+        - name: 购买许可证
+          href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: 分配许可证
+          href: /office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: 从订阅中删除许可证
+          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: 删除用户许可证
+          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: 升级订阅
+          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+    - name: 帐单和付款
+      items:
+        - name: 了解我的发票
+          href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
+        - name: 管理付款方式
+          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+        - name: 管理计费配置文件
+          href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
+        - name: 订单历史记录
+          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+    - name: 帐单帐户
+      items:
+        - name: 管理帐单帐户信息
+          href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
+        - name: 将租户与我的计费帐户关联
+          href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+    - name: 管理与我的合作伙伴的关系
+      href: /microsoft-store/work-with-partner-microsoft-store-business?context=/microsoft-365/commerce/context/context-commerce
