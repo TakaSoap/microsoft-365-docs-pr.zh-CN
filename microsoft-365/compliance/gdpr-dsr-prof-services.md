@@ -10,12 +10,12 @@ ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4fb7c3140a73e4f72673807bb99214ff6fc0f2bc
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 9328bba6a0ca616b98b4da32cab372b9b546c848
+ms.sourcegitcommit: dc5c297ee7bca212b8a902daebe4907254c4315f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431743"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34589738"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Microsoft 支持和专业服务与 GDPR 数据主体请求
 
@@ -37,74 +37,45 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 
 #### <a name="overview-of-the-processes-outlined-in-this-guide"></a>本指南中所述流程的概览
 
-  ***发现。*** 查找可能是 DSR 主体的个人数据。一旦收集了潜在响应文档，则执行一个或多个下列步骤中所述的 DSR 操作来响应 DSR 请求。或者，可确定请求不符合组织有关响应 DSR 的指导原则。
-
-  ***访问。*** 检索驻留在 Microsoft 云中的个人数据，根据请求，还会制作可供数据主体使用的副本。
-
-  ***纠正。*** 进行更改或者对个人数据实施其他请求的操作。
-
-  ***限制。*** 通过停止服务活动来限制个人数据的处理。
-
-  ***删除。*** 永久移除驻留在 Microsoft IT 系统中的个人数据。
-
-  ***导出。*** 向客户或数据主体提供个人数据副本。
- 
-<span id="_Toc508792503" class="anchor"><span id="_Toc510704609" class="anchor"><span id="_Toc511403159" class="anchor"></span></span></span>
+- **发现：** 使用搜索和发现工具更轻松地查找可能是 DSR 主体的客户数据。一旦收集了潜在响应文档，则可以执行一个或多个下列步骤中所述的 DSR 操作来响应请求。或者，你可能会确定请求不符合组织有关响应 DSR 的指导原则。
+- **访问：** 检索驻留在 Microsoft 云中的个人数据，如果提出请求，还制作可供数据主体使用的个人数据副本。
+- **纠正：** 进行更改或者对个人数据实施其他请求的操作（如果适用）。
+- **限制：** 通过移除各种 Azure 服务的许可证，或者在可能的情况下关闭所需的服务，限制对个人数据的处理。 此外还可以从 Microsoft 云中删除数据，并将其保留在本地或其他位置。
+- **删除：** 永久删除驻留在 Microsoft 云中的个人数据。
+- **导出：** 向数据主体提供个人数据的电子副本（采用机器可读格式）。
 
 ### <a name="terminology"></a>术语
 
 下面是本指南中 GDPR 术语的相关定义：
 
--   **控制者。** 单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或具体提名条件。
-
--   **个人数据和数据主体。** 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
-
--   **处理者。** 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
+- **控制者：** 单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或具体提名条件。
+- **个人数据和数据主体：** 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
+- **处理者：** 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
 
 #### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>可能有助于了解本指南的其他术语和定义
 
--   **支持和咨询数据**是客户或代表客户在与 Microsoft 打交道期间向 Microsoft 提供的（或客户授权 Microsoft 从 Online Service 获取的）所有数据，包括所有文本、声音、视频、图像文件或软件，以获取支持或专业服务。说明一下，这不包括 Microsoft 是数据控制者时收集的数据，包括客户联系人数据。
-
--   **客户联系人**是可能属于你与 Microsoft 业务关系一部分的个人数据，例如你的客户联系人信息内的个人数据。这可能包括顶级合同服务经理 (CSM)、Online Service 的全局或 IT 管理员或类似角色的姓名、电子邮件或电话号码。
-
--   **化名 数据**当你为 Microsoft 的企业产品和服务使用 Microsoft 支持时，Microsoft 会生成一些链接到 Microsoft 数字标识符的信息，以提供支持。这通常称为“化名数据”。虽然在不使用其他信息的情况下，此数据无法归于特定数据主体，但根据 GDPR 有关个人数据的广泛定义，其中一些数据可视为个人数据。在专业服务内，履行或协助履行 DSR 的请求将始终自动包括处理化名数据。
-
-<span id="_Toc508792504" class="anchor"><span id="_Toc510704610" class="anchor"><span id="_Toc511403160" class="anchor"></span></span></span>
+- **支持和咨询数据：** 客户或代表客户在与 Microsoft 打交道期间向 Microsoft 提供的（或客户授权 Microsoft 从 Online Service 获取的）所有数据，包括所有文本、声音、视频、图像文件或软件，以获取支持或专业服务。 说明一下，这不包括 Microsoft 是数据控制者时收集的数据，包括客户联系人数据。
+- **客户联系人：** 可能属于你与 Microsoft 业务关系一部分的个人数据，例如你的客户联系人信息内的个人数据。 这可能包括顶级合同服务经理 (CSM)、Online Service 的全局或 IT 管理员或类似角色的姓名、电子邮件或电话号码。
+- **化名数据：** 当你为 Microsoft 的企业产品和服务使用 Microsoft 支持时，Microsoft 会生成一些链接到 Microsoft 数字标识符的信息，以提供支持。 这通常称为“化名数据”。虽然在不使用其他信息的情况下，此数据无法归于特定数据主体，但根据 GDPR 有关个人数据的广泛定义，其中一些数据可视为个人数据。 在专业服务内，履行或协助履行 DSR 的请求将始终自动包括处理化名数据。
 
 ### <a name="how-to-use-this-guide"></a>如何使用本指南
 
 本指南介绍了客户在使用 Microsoft 专业服务时可能遇到的 4 种应用场景。
 
-<span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-- **针对与 Microsoft 打交道的客户联系人的 DSR**
-
-解释 Microsoft 如何响应来自客户联系人或 IT 管理员的行使其数据主体权利的请求。
-
-<span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-- **针对与 Microsoft 打交道的最终用户的 DSR**
-
-解释 Microsoft 如何响应来自客户的员工或其他数据主体的行使其权利的请求。
-
-- **针对客户提供数据的 DSR：商业支持**
-
-解释当客户收到来自其员工或其他数据主体的行使其权利的请求时如何从 Microsoft 获得帮助，并且数据主体的个人数据是在支持服务期间由 Microsoft 支持收集的。
-
-<span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-- **针对客户提供数据的 DSR：包括 FastTrack 迁移服务在内的咨询服务** 
-
-<span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
-
-解释当客户收到来自其员工或其他数据主体的行使其权利的请求时如何从 Microsoft 获得帮助，并且数据主体的个人数据是在咨询服务期间由 Microsoft 收集的。
+- **针对与 Microsoft 打交道的客户联系人的 DSR：** 解释 Microsoft 如何响应来自客户联系人或 IT 管理员的行使其数据主体权利的请求。
+- **针对与 Microsoft 打交道的最终用户的 DSR：** 解释 Microsoft 如何响应来自客户的员工或其他数据主体的行使其权利的请求。
+- **针对客户提供数据的 DSR：商业支持：** 解释当客户收到来自其员工或其他数据主体的行使其权利的请求时如何从 Microsoft 获得帮助，并且数据主体的个人数据是在支持服务期间由 Microsoft 支持收集的。
+- **针对客户提供数据的 DSR：包括 FastTrack 迁移服务在内的咨询服务：** 解释当客户收到来自其员工或其他数据主体的行使其权利的请求时如何从 Microsoft 获得帮助，并且数据主体的个人数据是在咨询服务期间由 Microsoft 收集的。
 
 ## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>针对与 Microsoft 打交道的客户联系人的 DSR
 
 *Microsoft 如何响应来自客户联系人或 IT 管理员的行使其数据主体权利的请求。*
 
-当客户与 Microsoft 合作以获得支持或咨询服务时，Microsoft 支持会自动收集或从帐户记录中检索客户联系人（例如顶级 CSM、全局管理员、IT 管理员）的个人数据。这可能包括寻求支持或咨询服务的个人的姓名、电子邮件、电话和其他个人数据。
+当客户与 Microsoft 合作以获得支持或咨询服务时，Microsoft 支持会自动收集或从帐户记录中检索客户联系人（例如顶级 CSM、全局管理员、IT 管理员）的个人数据。 这可能包括寻求支持或咨询服务的个人的姓名、电子邮件、电话和其他个人数据。
 
 客户联系人的个人数据是 Microsoft 与客户的业务关系的一部分，且 Microsoft 是数据控制者。Microsoft 将响应来自客户联系人的有关其个人数据的 DSR，无论他们是否仍在组织内。
 
-客户应了解 DSR 仅涵盖客户联系人的个人数据，而不会对服务过程中提交的任何客户数据（例如文字稿、案例描述、文件、工作成果）进行更改或删除，因为 Microsoft 是数据处理者。此外，为了维护服务活动的历史记录，不会对已关闭的服务活动进行任何更改，包括是谁打开的服务活动的记录。
+客户应了解 DSR 仅涵盖客户联系人的个人数据，而不会对服务过程中提交的任何客户数据（例如文字稿、案例描述、文件、工作成果）进行更改或删除，因为 Microsoft 是数据处理者。 此外，为了维护服务活动的历史记录，不会对已关闭的服务活动进行任何更改，包括是谁打开的服务活动的记录。
 
 从客户联系人收到有关 DSR 的查询后，Microsoft 工作人员会将客户联系人转到 [Microsoft 隐私支持](http://go.microsoft.com/fwlink/?LinkId=321116)。这是 Microsoft 处理隐私查询和投诉的主要输入机制。在收到查询后，Microsoft 隐私团队将确定这是商业客户还是组织帐户的一部分，并相应地做出响应。
 
@@ -116,7 +87,6 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 
 John 是一家 O365 企业客户的 IT 管理员，有一个打开的支持服务活动和两个已关闭的服务活动。现在，John 从公司离职，想要删除其个人数据。John 联系了 PRC，确定他是 IT 管理员。John 得到通知，无法将他的姓名从以前（已关闭）的服务活动或从打开的服务活动内的任何数据中删除。但是，如果他确定了替换联系人，PRC 将替换当前打开的票证上作为联系人的 John。John 告知 Microsoft，Jane 将替换他成为联系人，Microsoft 将在所有支持系统中做出更改。
 
-<span id="_Toc510704616" class="anchor"><span id="_Toc511403166" class="anchor"></span></span>
 ## <a name="dsr-for-an-end-user-engaging-microsoft"></a>针对与 Microsoft 打交道的最终用户的 DSR
 
 *Microsoft 如何响应来自客户的员工或其他数据主体的行使其权利的请求。*
@@ -127,20 +97,19 @@ John 是一家 O365 企业客户的 IT 管理员，有一个打开的支持服�
 
 ***仅用于说明目的的示例***
 
-Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 365 帐户。她联系 Microsoft 要求删除她的所有数据，并被转到了隐私响应中心。Jane 填写了请求表单。隐私响应中心将她识别为企业最终用户，告诉她需要通过 Contoso 删除其企业数据。他们还将她标识为 Microsoft X-Box 用户，并将其数据从其 Microsoft 消费者帐户删除。
+Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 365 帐户。 她联系 Microsoft 要求删除她的所有数据，并被转到了隐私响应中心。 Jane 填写了请求表单。 隐私响应中心将她识别为企业最终用户，告诉她需要通过 Contoso 删除其企业数据。 他们还将她标识为 Microsoft X-Box 用户，并将其数据从其 Microsoft 消费者帐户删除。
 
 ## <a name="dsr-for-customer-provided-data-commercial-support"></a>针对客户提供数据的 DSR：商业支持
 
 *当客户收到来自其员工或其他数据主体的行使其权限的请求时如何从 Microsoft 获得帮助，并且数据主体的个人数据是在支持服务期间由 Microsoft 支持收集的。*
 
-当客户与 Microsoft 支持打交道时，Microsoft 从客户那里收集支持数据，用于解决任何需要支持服务活动的问题。此支持数据包括 Microsoft 与客户的互动（例如聊天、电话、电子邮件、网络提交），以及客户发送给 Microsoft 或 Microsoft 经客户许可后从客户的 IT 环境或 Online Services 租户提取的用于解决支持问题的任何内容文件。如果是顶级支持，还包括我们为了主动防止将来的问题而从你那里收集的任何数据。但是，不包括客户联系人信息或 Microsoft 与客户之间业务关系的其他信息（例如帐单记录）。
+当客户与 Microsoft 支持打交道时，Microsoft 从客户那里收集支持数据，用于解决任何需要支持服务活动的问题。 此支持数据包括 Microsoft 与客户的互动（例如聊天、电话、电子邮件、网络提交），以及客户发送给 Microsoft 或 Microsoft 经客户许可后从客户的 IT 环境或 Online Services 租户提取的用于解决支持问题的任何内容文件。 如果是顶级支持，还包括我们为了主动防止将来的问题而从你那里收集的任何数据。 但是，不包括客户联系人信息或 Microsoft 与客户之间业务关系的其他信息（例如帐单记录）。
 
 对于所有支持数据，Microsoft 是数据处理者。因此，Microsoft 不会响应来自数据主体的针对他们与 Microsoft 商业客户联系时所提供的支持数据的直接请求。Microsoft 将与客户一起，通过正常支持渠道协助客户响应 DSR。
 
-<span id="_Discover" class="anchor"><span id="_Toc508792508" class="anchor"><span id="_Toc510704617" class="anchor"><span id="_Toc511403167" class="anchor"></span></span></span></span>
 ## <a name="step-1-discover"></a>步骤 1：发现
 
-要在响应 DSR 时获得 Microsoft 的协助，第一步是查找作为 DSR 主体的个人数据。这第一步 — 查找和检查所涉及的个人数据 — 将帮助客户确定 DSR 是否符合组织有关接受数据主体请求的策略。
+要在响应 DSR 时获得 Microsoft 的协助，第一步是查找作为 DSR 主体的个人数据。 这第一步 — 查找和检查所涉及的个人数据 — 将帮助客户确定 DSR 是否符合组织有关接受数据主体请求的策略。
 
 客户找到数据后，客户可以执行特定操作以满足数据主体的请求。根据客户尝试执行的操作，将决定客户需要参与的发现级别。
 
@@ -150,69 +119,66 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 *选项 A – 跨 Microsoft 支持的客户 DSR*。在整个 Microsoft 的支持环境中将 DSR 应用于客户的所有支持数据。为此，客户只需要求 Microsoft 将 DSR 应用于收集的所有支持数据。
 
-*选项 B — 特定客户服务活动。* 使用联机系统查看票证，然后识别包含相关个人数据的特定服务活动并报告给 Microsoft。如果客户无法在所有服务活动（票证）之间进行搜索，Microsoft 会尝试提供协助以执行搜索。
+*选项 B — 特定客户服务活动。* 使用联机系统查看票证，然后识别包含相关个人数据的特定服务活动并报告给 Microsoft。 如果客户无法在所有服务活动（票证）之间进行搜索，Microsoft 会尝试提供协助以执行搜索。
 
-**一旦识别到服务活动，可请求将 DSR 应用到记录的特定部分或 Microsoft 中与该服务活动相关的任何内容。 **
+***一旦识别到服务活动，可请求将 DSR 应用到记录的特定部分或 Microsoft 中与该服务活动相关的任何内容。***
 
 若要识别特定服务活动，客户需在其所有服务活动中进行搜索。对于顶级客户，客户的合同服务经理（简称“CSM”）能够查看在合同日程安排下创建的所有支持请求 (SR)。对于非顶级客户，也有同等的支持服务活动门户，如通过 Online Services 支持区域。
 
 ![](media/Prof-Serv-DSR-Doc-Final_image3.png)CSM 可以转到在 Support.Microsoft.Com（[ https://support.microsoft.com/\<local语言代码\>/prmier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier))（简称“SMC”）上的门户，选择并查看“支持请求”（请注意：在 URL 中，请替换为你的本地语言代码）。
 
->[**有关 DTM 的重要注意事项**] 除了 SMC 中的案例历史记录之外，客户还在 Microsoft 在支持服务活动期间收集的文件中包含最终用户的个人数据（或者，在客户的许可下从 Online Service 中移除）。相关示例包括，客户的 Exchange 邮箱、Azure 虚拟机或数据库的副本。此个人数据可能有也可能没有在特定服务活动（即票证）的案例历史记录中提及。若要查看该数据，客户联系人必须是特定的经过身份验证（通过 AAD 或 MSA）的支持请求联系人，并且已收到 Microsoft 支持数据传输和管理工具 (DTM) 中工作区的 URL。客户联系人将有权访问这些文件，但不能进行全局查看，且 SMC 不会指出文件是否存在。
+>[!IMPORTANT]
+>除了 SMC 中的案例历史记录之外，客户还在 Microsoft 在支持服务活动期间收集的文件中包含最终用户的个人数据（或者，在客户的许可下从 Online Service 中移除）。 相关示例包括，客户的 Exchange 邮箱、Azure 虚拟机或数据库的副本。 此个人数据可能有也可能没有在特定服务活动（即票证）的案例历史记录中提及。 若要查看该数据，客户联系人必须是特定的经过身份验证（通过 AAD 或 MSA）的支持请求联系人，并且已收到 Microsoft 支持数据传输和管理工具 (DTM) 中工作区的 URL。 客户联系人将有权访问这些文件，但不能进行全局查看，且 SMC 不会指出文件是否存在。
 
 一旦客户在所选支持票证中识别出所有相关数据，客户可以决定是要请求删除与票证相关的所有内容，还是选择性地将 DSR 应用到个别个人数据实例。
 
-<span id="_Access" class="anchor"><span id="_Toc508792512" class="anchor"><span id="_Toc510704618" class="anchor"><span id="_Toc511403168" class="anchor"><span id="_Hlk503968195" class="anchor"></span></span></span></span></span>
 ## <a name="step-2-access"></a>步骤 2：访问
 
 客户找到包含潜在响应 DSR 的个人数据的支持数据后，由客户决定在响应中包含哪些个人数据。例如，客户可以选择移除有关其他数据主体的个人数据和任何机密信息。
 
 对 DSR 的响应可能包括实际文档、经过适当修订的版本或者客户认为适合共享的部分的屏幕截图的副本。对于这些对访问请求的每个响应，客户都需要检索包含响应数据的文档或其他项目的副本。
 
-<span id="_Using_Content_Search_1" class="anchor"><span id="_Rectify" class="anchor"><span id="_Forms_1" class="anchor"></span></span></span>对最终用户的个人数据的访问可能在各种类型的内容文档中有提及和标记。由于客户可能会访问服务活动票证和内容，因此他们无需 Microsoft 的进一步帮助即可提供个人数据摘要。
+对最终用户的个人数据的访问可能在各种类型的内容文档中有提及和标记。 由于客户可能会访问服务活动票证和内容，因此他们无需 Microsoft 的进一步帮助即可提供个人数据摘要。
 
-在极少数情况下，客户可能需要获得 Microsoft 代表与客户代表之间的支持互动数据（例如电子邮件、电话录音文字稿；聊天文字稿）的副本。在要求的范围内，Microsoft 可能会根据需要、敏感度和难度，提供这些文字稿的副本。
+在极少数情况下，客户可能需要获得 Microsoft 代表与客户代表之间的支持互动数据（例如电子邮件、电话录音文字稿；聊天文字稿）的副本。 在要求的范围内，Microsoft 可能会根据需要、敏感度和难度，提供这些文字稿的副本。
 
-<span id="_Sway" class="anchor"><span id="_Toc508792516" class="anchor"><span id="_Toc510704619" class="anchor"><span id="_Toc511403169" class="anchor"></span></span></span></span>
 ## <a name="step-3-rectify"></a>步骤 3：纠正
 
 如果数据主体要求客户纠正驻留在其组织的支持数据中的个人数据，客户需要确定是否可以接受请求。如果客户选择接受请求，则客户会请求 Microsoft 进行更改。Microsoft 可能会纠正数据，或者将客户数据从支持系统中删除并请求客户以更正后的格式重新提交到 Microsoft。
 
-<span id="_Toc510704620" class="anchor"><span id="_Toc511403170" class="anchor"></span></span>
 ## <a name="step-4-restrict"></a>步骤 4：限制
 
-<span id="_Delete" class="anchor"></span>客户可随时关闭服务活动，或联系 Microsoft 并请求关闭服务活动。服务活动关闭后，将无法再执行任何操作。
+客户可随时关闭服务活动，或联系 Microsoft 并请求关闭服务活动。 服务活动关闭后，将无法再执行任何操作。
 
 为了提供额外的保证，客户可以联系 Microsoft 并请求在服务活动票证系统放置备注，指出未经客户许可，不得因任何原因重新打开该案例。
 
-注意：还会基于数据、服务和系统的敏感度，根据保留和删除日程表删除服务活动（票证）。如果客户请求数据副本，他们应确保在删除之前已先提取数据。
+注意：还会基于数据、服务和系统的敏感度，根据保留和删除日程表删除服务活动（票证）。 如果客户请求数据副本，他们应确保在删除之前已先提取数据。
 
-<span id="_Toc508792528" class="anchor"><span id="_Toc510704621" class="anchor"><span id="_Toc511403171" class="anchor"></span></span></span>
 ## <a name="step-5-delete"></a>步骤 5：删除
 
-从组织的支持数据移除个人数据的“擦除权限”是 GDPR 中的一项关键保护措施。移除个人数据包括删除整个服务活动、文档或文件，或删除服务活动、文档或文件中的特定数据。
+从组织的支持数据移除个人数据的“擦除权限”是 GDPR 中的一项关键保护措施。 移除个人数据包括删除整个服务活动、文档或文件，或删除服务活动、文档或文件中的特定数据。
 
-在客户调查或准备删除个人数据以响应 DSR 时，需要了解以下有关 Microsoft 支持如何进行删除的一些重要事项。<span id="_Export" class="anchor"><span id="_Step_6:_Export" class="anchor"></span></span>
+在客户调查或准备删除个人数据以响应 DSR 时，需要了解以下有关 Microsoft 支持如何进行删除的一些重要事项。
 
 在 Microsoft 的所有数据都必须应用保留和删除策略，因风险和其他因素不同而有所不同。
 
 如果客户请求在所有支持系统中普遍删除数据主体的个人数据，可通过你的 TAM 或通过在 SMC 或同等系统中填写支持申请 (SR) 来完成。你*必须*指出该请求是根据 GDPR 来协助处理 DSR。
 
-*选项 A — 跨 Microsoft 支持的客户 DSR*。对于跨系统的 DSR，客户必须提供 Microsoft 识别所需数据需要的个人数据（例如电子邮件地址、电话号码）。Microsoft 不会关联或研究记录，而是仅根据客户提供的标识符直接进行搜索。找到数据后，Microsoft 将删除所有服务活动和所有关联数据。**重要注意事项：** 这可能会导致对客户组织非常重要的历史记录发生丢失。
+*选项 A - 跨 Microsoft 支持的客户 DSR*。 对于跨系统的 DSR，客户必须提供 Microsoft 识别所需数据需要的个人数据（例如电子邮件地址、电话号码）。 Microsoft 不会关联或研究记录，而是仅根据客户提供的标识符直接进行搜索。 找到数据后，Microsoft 将删除所有服务活动和所有关联数据。
 
-*选项 B — 特定客户服务活动*。对于客户已识别并且想要删除的特定服务活动，不要从 SMC 删除票证。这会导致个人数据遗留在日志和下游系统中，从而可能无法在所需时间范围内删除。转为识别票证或必须删除的票证中的个人资料，并联系 Microsoft 支持协助你删除该数据。
+> [!IMPORTANT]
+> 重要注意事项：**这可能会导致对客户组织非常重要的历史记录发生丢失。
+
+*选项 B — 特定客户服务活动*。 对于客户已识别并且想要删除的特定服务活动，不要从 SMC 删除票证。 这会导致个人数据遗留在日志和下游系统中，从而可能无法在所需时间范围内删除。 转为识别票证或必须删除的票证中的个人资料，并联系 Microsoft 支持协助你删除该数据。
 
 ### <a name="microsoft-support-data-transfer-and-management-tool-dtm-instructions"></a>Microsoft 支持数据传输和管理工具 (DTM) 说明
 
 对于所有这些搜索，由于文件内容的潜在敏感性，Microsoft 不会在整个 DTM 中进行搜索。但是，如果客户希望这么做，Microsoft 将删除包含在 DTM 中的与客户帐户相关联的所有文件。由于可能会对客户产生严重影响，因此 Microsoft 要求客户单独提出申请，指定删除 DTM 文件。
 
--   对于打开的案例，客户联系人可以转到 DTM，然后删除文件。
-
--   对于关闭少于 90 天的案例，必须向 TAM 或者在 SR 中提出请求，要求删除文件。
-
--   对于关闭超过 90 天的案例，文件已被自动删除。
-
--   即使个人数据仅位于已删除的文件内，客户仍然必须让 Microsoft 在所有系统中检查是否存在该个人数据，因为有些数据可能已在提供支持期间从 DTM 中移除。<span id="_Toc508792534" class="anchor"><span id="_Toc508799441" class="anchor"> <span id="_Toc510704622" class="anchor"> <span id="_Toc511403173" class="anchor"> </span> </span> </span></span>
+- 对于打开的案例，客户联系人可以转到 DTM，然后删除文件。
+- 对于关闭少于 90 天的案例，必须向 TAM 或者在 SR 中提出请求，要求删除文件。
+- 对于关闭超过 90 天的案例，文件已被自动删除。
+- 即使个人数据仅位于已删除的文件内，客户仍然必须让 Microsoft 在所有系统中检查是否存在该个人数据，因为有些数据可能已在提供支持期间从 DTM 中移除。
 
 ## <a name="step-6-export"></a>步骤 6：导出
 
@@ -238,7 +204,6 @@ Microsoft 支持将执行所有这些删除操作，基于客户请求，TAM 还
 
 *当客户收到来自其员工或其他数据主体的行使其权利的请求时如何从 Microsoft 获得帮助，并且数据主体的个人数据是在咨询服务期间由 Microsoft 收集的。*
 
-<span id="_Toc510704624" class="anchor"><span id="_Toc511045468" class="anchor"><span id="_Toc511403176" class="anchor"></span></span></span>
 ## <a name="microsoft-consulting-services"></a>Microsoft 咨询服务
 
 针对适用 Microsoft 专业版服务数据保护附录 (<http://aka.ms/professionalservicesdpa>) 的、已订立合同的 Microsoft 咨询服务的服务活动。
@@ -247,7 +212,6 @@ Microsoft 是与服务活动团队合作的客户联系人的数据控制者。�
 
 Microsoft 是位于咨询服务活动期间提供的数据内的 DSR 的数据处理者。客户应联系服务活动经理制定计划，以基于收集的数据和所提供的具体咨询服务类型协助响应 DSR。根据你的请求在 Microsoft 咨询服务活动中所构成的典型努力程度，可能还会需要额外的工作订单。此外，根据咨询服务活动的类型，将在每个咨询服务活动之后，在规定的时间范围内删除个人数据。客户可以请求尽快删除数据，并请求提供删除鉴证。
 
-<span id="_Toc510704625" class="anchor"><span id="_Toc511403177" class="anchor"></span></span>
 ## <a name="microsoft-fasttrack-services"></a>Microsoft FastTrack 服务
 
 [Microsoft FastTrack](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffasttrack.microsoft.com%2Fabout&data=02%7C01%7C%7Cd0521d8739c841df674508d596834585%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636580412901207944&sdata=PO5eh56pm9IYk5Y%2Ff%2F31e%2BRVPmrC2Qi%2FCsw1NphR8gY%3D&reserved=0) 为组织提供 IT 咨询服务，以帮助他们载入并使用 Microsoft 365、Azure 和 Dynamics 365 等 Microsoft 云服务。
@@ -256,12 +220,10 @@ Microsoft 是与 FastTrack 团队合作的客户联系人的数据控制者。�
 
 对于 FastTrack 迁移服务，Microsoft 是数据处理者。根据我们的 FastTrack 附加隐私披露声明，迁移过程中的所有数据都被视为“迁移数据”。如果需要在组织参与 FastTrack 迁移项目时执行 DSR，则需要特别注意。
   
-如果需要在用户数据正通过 FastTrack 迁移系统进行处理时处理任何访问、纠正或导出 DSR 请求，客户需自行通过存储用户数据的现有源系统来完成此 DSR。用户迁移完成且数据已迁移到目标 Microsoft 云服务后，即可应用由 Microsoft 提供的有关客户如何使用 Microsoft 产品、服务和管理工具来查找个人数据并对其执行操作以响应数据主体请求的指南。若要查看此指南，请参阅[针对 GDPR 的数据主体请求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)。 
+如果需要在用户数据正通过 FastTrack 迁移系统进行处理时处理任何访问、纠正或导出 DSR 请求，客户需自行通过存储用户数据的现有源系统来完成此 DSR。 用户迁移完成且数据已迁移到目标 Microsoft 云服务后，即可应用由 Microsoft 提供的有关客户如何使用 Microsoft 产品、服务和管理工具来查找个人数据并对其执行操作以响应数据主体请求的指南。 若要查看此指南，请参阅[针对 GDPR 的数据主体请求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)。 
 
 如果需要在组织参与正在进行的 FastTrack 迁移项目时响应 DSR 删除请求删除 Office 365 用户帐户，则应注意，迁移系统可能会在用户迁移完成后的一段时间内保留用户迁移数据的副本，且删除 Office 365 用户帐户的操作将不会自动删除存储在 FastTrack 迁移系统中的此类用户迁移数据。如果希望 Microsoft FastTrack 团队删除用户迁移数据，可以[提交请求](https://go.microsoft.com/fwlink/?linkid=874544)。在正常的业务过程中，Microsoft FastTrack 在组织迁移完成后即会删除所有数据副本。
 
-
-<span id="_Toc510704626" class="anchor"><span id="_Toc511403178" class="anchor"></span></span>
 ## <a name="other-consulting-services"></a>其他咨询服务
 
 通过 Microsoft 收到其他专业服务的客户应通过服务活动团队来履行所有 GDPR 要求。如果服务活动团队无法提供有关 GDPR DSR 履行的明确指导，客户可联系 [Microsoft 隐私支持](http://go.microsoft.com/fwlink/?LinkId=321116)寻求帮助。
