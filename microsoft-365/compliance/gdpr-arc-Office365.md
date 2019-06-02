@@ -2,19 +2,19 @@
 title: 适用于 GDPR 的 Office 365 责任就绪清单
 description: 此责任准备情况清单 (ARC) 为你提供了使用 Office 365 时支持 GDPR 所需的信息。
 keywords: GDPR 责任准备情况, 责任准备情况清单, Microsoft 365, Microsoft 365 教育版, GDPR文件, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+author: herviicban
 ms.author: heicba
 manager: laurawi
 ms.collection: GDPR
-ms.openlocfilehash: c2f55d93b14c0fb80283b1fab434f97e3007eae0
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 0b044fbf14c248c7d1801a5e3a219a73c4eb20f7
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431903"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544909"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>适用于 Microsoft Office 365 的责任准备情况清单
 
@@ -31,16 +31,11 @@ ms.locfileid: "34431903"
 
 *ISO/IEC CD 27552* 是当前开发中的一项标准，可提升 *ISO/IEC 27001* 要求。它涵盖了保护数据的捕获、责任、可用性、完整性和机密性的过程。要购买完整的 ISO 标准草案副本，请访问 *https://shop.bsigroup.com/ProductDetail?pid=000000000030372571*。
 
-<br>
-
---------------------------------------
-## <a name="2-conditions-for-collection-and-processing"></a>**2. 收集和处理的条件**
-
-<!--start table here Conditions for collection and processing -->
+## <a name="2-conditions-for-collection-and-processing"></a>2. 收集和处理的条件
 
 |||||
 |:-----|:-----|:-----|:-----|
-|**类别**&nbsp;&nbsp;&nbsp;&nbsp;|**客户<br>注意事项**|**支持&nbsp;&nbsp;Microsoft&nbsp;&nbsp; 文档**|**引用 GDPR 文章**|
+|**类别**|**客户注意事项**|**支持 Microsoft 文档**|**引用 GDPR 文章**|
 |***确定何时征得同意 (7.2.3)***|在处理个人数据（有需要的情况、处理类型超出要求范围等）之前，客户应了解征得个人同意的法律或法规要求，包括如何收集同意。|Office 365 不提供征得用户同意的直接支持。|(6)(1)(a)、(8)(1)、(8)(2)|
 |***识别并记录目的 (7.2.1)***|客户应记录个人数据的处理目的。|你的责任文档可以纳入 Microsoft 为你执行的数据处理和处理目的说明。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“处理个人数据”；GDPR* [[1](gdpr-arc-Office365.md#1)]|(5)(1)(b)、(32)(4)|
 |***确定法律依据 (7.2.2)***|客户应了解与处理过程的法律依据相关的任何要求，例如是否必须首先给予同意。|Microsoft 服务如何处理个人数据的说明（将纳入你的责任文档）。<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(5)(1)(a)、(6)(1)(a)、(6)(1)(b)、(6)(1)(c)、(6)(1)(d)、(6)(1)(e)、(6)(1)(f)、(6)(3)、(6)4)(a)、(6)(4)(b)、(6)(4)(c)、(6)(4)(d)、(6)(4)(e)、(8)(3)、(9)(1)、(9)(2)(b)、(9)(2)(c)、(9)(2)(d)、(9)(2)(e)、(9)(2)(f)、(9)(2)(g)、(9)(2)(h)、(9)(2)(i)、(9)(2)(j)、(9)(3)、(9)(4)、(10)、(17)(3)(a)、(17)(3)(b)、(17)(3)(c)、(17)(3)(d)、(17)(3)(e)、(18)(2)、(22)(2)(a)、(22)(2)(b)、(22)(2)(c)、(22)(4)|
@@ -49,19 +44,12 @@ ms.locfileid: "34431903"
 |***隐私影响评估 (7.2.5)***|客户应了解完成隐私影响评估的要求（何时执行、需要哪些类别的数据以及完成评估的时间）。|服务信任门户[数据保护影响评估 (DPIA) 页面](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA)中介绍了 Microsoft 服务如何确定何时执行 DPIA，以及 Microsoft 的 DPIA 计划概述（包括涉及的 DPO）。若要获取 DPIA 方面的支持，请访问：<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(35)|
 |***与 PII 处理者签订合同 (7.2.6)***|客户应确保其与处理者的合同包括帮助处理与处理和保护个人数据相关的任何相关法律或法规义务的要求。|Microsoft 合同要求我们协助你履行 GDPR 规定的义务，包括支持数据主体权利。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“处理个人数据”；GDPR* [[1](gdpr-arc-Office365.md#1)]|(5)(2)、(28)(3)(e)、(28)(9)|
 |***与处理 PII 有关的记录 (7.2.7)***|客户应保存与处理个人数据相关的所有必要和必需的记录（即用途、安全措施等）。如果某些记录必须由次级处理者提供，则客户应确保他们可以获取这些记录。|Microsoft 服务提供的相关工具，有助于你维护必要记录来证明合规性以及支持履行 GDPR 规定的责任。<br>- *在 Office 365 安全合规中心内搜索审核日志* [[16](gdpr-arc-Office365.md#16)] |(5)(2)、(24)(1)、(30)(1)(a)、(30)(1)(b)、(30)(1)(c)、(30)(1)(d)、(30)(1)(g)、(30)(1)(f)、(30)(3)、(30)(4)、(30)(5)|
-||||
 
-<!-- end of table -->
-<br>
-
---------------------------------------
-## <a name="3-rights-of-data-subjects"></a>**3. 数据主体的权限**
-
-<!--start table here  collection and processing-->
+## <a name="3-rights-of-data-subjects"></a>3. 数据主体的权限
 
 |||||
 |:-----|:-----|:-----|:-----|
-|**类别**|**客户注意事项**|**支持&nbsp;&nbsp;Microsoft&nbsp;&nbsp; 文档**|**引用 &nbsp;GDPR 文章**|
+|**类别**|**客户注意事项**|**支持 Microsoft 文档**|**引用 GDPR 文章**|
 |***确定 PII 主体的权限并启用练习 (7.3.1)***|客户应了解与处理其个人数据相关的个人权限的要求。这些权限包括访问、更正和清除等。如果客户使用第三方系统，他们应该确定系统中的哪些部分（如果存在）提供与使个人能够行使其权限（例如访问其数据）相关的工具。系统提供这些功能时，客户应根据需要进行使用。|Microsoft 提供的功能，有助于你支持数据主体权利。<br>- *符合 GDPR 的 Office 365 数据主体请求 [8]<br>- Microsoft Office 365 ISO/IEC 27001:2013 ISMS 适用性声明* [12]，请参阅 ISO、IEC 27018、2014 管制 A.1.1|(12)(2)|
 |***确定 PII 主体（数据主体）的信息 (7.3.2)***|客户应了解有关可提供给个人的个人数据的处理的信息类型的要求。这可能包括如下类似信息：<br>- 有关控制者及其代表的联系人详细信息；<br>- 有关处理的信息（目的、国际传输和相关安全措施、保留时间等。）；<br>- 主体如何访问和/或修改其个人数据的信息；请求清除或限制处理；接收其个人数据的副本，及其个人数据的可移植性<br>- 获取个人数据的来源和方法（如果不是从主体直接获取）<br>- 有关提起诉讼的权限和向谁提起诉讼的信息；<br>- 有关更正个人数据的信息；<br>- 组织不再如往常一样识别数据主体（PII 主体）的通知（如果处理不再需要识别数据主体）；<br>- 个人数据的传输和/或泄露；<br>- 仅基于个人数据自动化处理的自动化决策的存在；<br>- 有关数据主体信息更新和提供的频率的信息（即“及时”通知、组织定义的频率等。）<p>在客户使用第三方系统或处理器时，他们应确定其中的哪些信息（如果有）需要由他们提供，以确保他们可以从第三方获取所需的信息。</p>|可以在向数据主体提供的数据中添加的 Microsoft 服务相关信息。<br>- *符合 GDPR 的 Office 365 数据主体请求* [[8](gdpr-arc-Office365.md#8)]<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(11)(2)、(13)(1)(a)、(13)(1)(b)、(13)(1)(c)、(13)(1)(d)、(13)(1)(e)、(13)(1)(f)、(13)(2)(c)、(13)(2)(d)、(13)(2)(e)、(13)(3)、(13)(4)、(14)(1)(a)、(14)(1)(b)、(14)(1)(c)、(14)(1)(d)、(14)(1)(e)、(14)(1)(f)、(14)(2)(b)、(14)(2)(e)、(14)(2)(f)、(14)(3)(a)、(14)(3)(b)、(14)(3)(c)、(14)(4)、(14)(5)(a)、(14)(5)(b)、(14)(5)(c)、(14)(5)(d)、(15)(1)(a)、(15)(1)(b)、(15)(1)(c)、(15)(1)(d)、(15)(1)(e)、(15)(1)(f)、(15)(1)(g)、(15)(1)(h)、(15)(2)、(18)(3)、(21)(4)|
 |***向 PII 主体提供信息 (7.3.3)***|客户应遵守有关所需信息如何/何时/以何种形式向与处理其个人数据相关的个人提供的所有要求。如果第三方提供所需信息，则客户应确保该信息符合 GDPR 要求的参数。|可以在向数据主体提供的数据中添加的 Microsoft 服务的模板化信息。<br>- *符合 GDPR 的 Office 365 数据主体请求* [[8](gdpr-arc-Office365.md#8)]<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(11)(2)、(12)(1)、(12)(7)、(13)(3)、(21)(4)|
@@ -71,23 +59,14 @@ ms.locfileid: "34431903"
 |***更正或清除 (7.3.7)***|客户应了解通知用户有权访问、更正和/或清除其个人数据以及提供使他们可以执行上述操作的机制的要求。如果使用第三方系统并将此机制作为其功能的一部分提供，则客户应根据需要使用该功能。|可以在向数据主体提供的数据中添加的、与其能否访问、更正或清除个人数据相关的 Microsoft 服务的模板化信息。<br>- *符合 GDPR 的 Office 365 数据主体请求* [[8](gdpr-arc-Office365.md#8)]，请参阅*第 5 步：删除*|(5)(1)(d)、(13)(2)(b)、(14)(2)(c)、(16)、(17)(1)(a)、(17)(1)(b)、(17)(1)(c)、(17)(1)(d)、(17)(1)(e)、(17)(1)(f)、(17)(2)|
 |***提供经过处理的 PII 的副本 (7.3.8)***|客户应该了解关于向个人提供正在处理个人数据副本的要求。这些包括副本格式（即计算机可读）、传输副本等要求。如果客户使用提供此功能的第三方系统来提供副本，则应根据需要使用此功能。|有关 Microsoft 服务中的功能，可允许你获取向数据主体所提供的数据中可以包含的其个人数据的副本。<br>- *符合 GDPR 的 Office 365 数据主体请求* [[8](gdpr-arc-Office365.md#8)]，请参阅*第 6 步：导出*|(15)(3)、(15)(4)、(20)(1)、(20)(2)、(20)(3)、(20)(4)|
 |***请求管理 (7.3.9)***|客户应了解接受和响应的要求，以使来自与处理个人数据相关的个人请求合法。如果客户使用第三方系统，则他们应了解该系统是否提供了此类处理请求的功能。如果提供此功能，则客户应该利用这些机制根据需要处理请求。|管理数据主体请求过程中定义提供给数据主体的信息时可以使用的 Microsoft 服务功能的信息。<br>- *适用于 GDPR 的 Office 365 数据主体请求* [[8](gdpr-arc-Office365.md#8)] 客户应了解自动处理个人数据的要求，以及做出此类自动决策的情况。这些可能包括向个人提供数据处理相关信息、反对此类处理或获得人为干预。如果此类功能由第三方系统提供，客户应确保第三方提供所需的任何信息或支持。<p>你的责任文档可以纳入 Microsoft 服务中任何可能支持自动决策制定的功能的相关信息，以及这些功能的数据主体的模板化信息。<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]</p>|(13)(2)(f)、(14)(2)(g)、(22)(1)、(22)(3)|
-||||
 
-
-<!-- end of table here --->
-
-<br>
-
---------------------------------------
-## <a name="4-privacy-by-design-and-default"></a>**4. 经设计默认的隐私**
-
-<!-- start table here "privacy by design and default" -->
+## <a name="4-privacy-by-design-and-default"></a>4. 经设计默认的隐私
 
 |||||
 |:-----|:-----|:-----|:-----|
-|**类别**|**客户注意事项**|**支持&nbsp;&nbsp;Microsoft&nbsp;&nbsp; 文档**|**引用 &nbsp;GDPR 文章**|
+|**类别**|**客户注意事项**|**支持 Microsoft 文档**|**引用 GDPR 文章**|
 |***限制收集 (7.4.1)***|客户应了解针对个人数据的限制要求（例如，应限制为收集指定用途所需的内容）。|由 Microsoft 服务收集的数据的说明。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“处理个人数据”；GDPR* [[1](gdpr-arc-Office365.md#1)]<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(5)(1)(b)、(5)(1)(c)|
-|***限制处理 (7.4.2)****|客户负责限制处理个人数据，以便将其限制在满足所确定目的的适当范围内。|由 Microsoft 服务收集的数据的说明。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“处理个人数据”；GDPR* [[1](gdpr-arc-Office365.md#1)]<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(25)(2)|
+|***限制处理 (7.4.2)***|客户负责限制处理个人数据，以便将其限制在满足所确定目的的适当范围内。|由 Microsoft 服务收集的数据的说明。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“处理个人数据”；GDPR* [[1](gdpr-arc-Office365.md#1)]<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(25)(2)|
 |***定义和记录 PII 最小化和去标识化目标 (7.4.3)***|客户应了解有关去标识化个人资料的要求，这包括应何时使用、去标识化的程度以及无法使用的情况。|在适当的情况下，Microsoft 会在内部应用去标识化和假名化，从而提供个人数据的额外隐私保护措施。|(5)(1)(c)|
 |***遵守标识级别 (7.4.4)***|客户应使用并遵守其组织设定的去标识化目标和方法。|在适当的情况下，Microsoft 会在内部应用去标识化和假名化，从而提供个人数据的额外隐私保护措施。|(5)(1)(c)|
 |***PII 去标识化和删除 (7.4.5)***|客户应了解有关过去用于确定目的的个人资料的保留要求。在由系统提供工具的情况下，客户应根据需要利用这些工具清除或删除。|Microsoft 云服务提供的支持数据保留策略的功能。<br>- 符合 GDPR 的 Office 365 数据主体请求 [8] 请参阅*步骤 5：删除*|(5)(1)(c)、(5)(1)(e)、(6)(4)(e)、(11)(1)、(32)(1)(a)|
@@ -100,21 +79,13 @@ ms.locfileid: "34431903"
 |***可向其传输 PII 的国家/地区和组织 (7.5.2)***|客户应了解并能够向个人提供个人数据已经或可能被传输到的国家/地区。如果第三方/处理者可以执行此传输操作，则客户应从处理者获取此信息。|由 Microsoft 服务传输的个人数据类型、在两点之间传输的位置以及传输法律安全措施的描述。<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(30)(1)(e)|
 |***传输 PII（个人数据）的记录 (7.5.3)***|客户应维护与个人数据传输相关的所有必要和所需记录。在第三方/处理者执行传输时，客户应确保其维护相应的记录并在必要时获取这些记录。|由 Microsoft 服务传输的个人数据类型、在两点之间传输的位置以及传输法律安全措施的描述。<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]|(30)(1)(e)|
 |***对第三方的 PII 披露记录 (7.5.4)***|客户应了解关于向哪些人披露了个人数据的记录的要求。这包括向执法机构披露的记录等。如果第三方/数据处理者披露了这些数据，则客户应确保其保留了相应的记录并在必要时获得这些记录。|列出个人数据披露接收者类别的文档，其中包括可用披露记录。<br>- *谁可以访问你的数据和所依据的条款* [[6](gdpr-arc-Office365.md#6)]|(30)(1)(d)|
-|***联合控制者 (7.5.5)***|客户应确定他们是否与任何其他组织同为联合控制者，并适当地记录和分配责任。|记录作为个人信息控制者的 Microsoft 服务的文档，包括可以在文档中向数据主体添加的模板化信息。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“处理个人数据”；GDPR* [[1](gdpr-arc-Office365.md#1)]
-|||
+|***联合控制者 (7.5.5)***|客户应确定他们是否与任何其他组织同为联合控制者，并适当地记录和分配责任。|记录作为个人信息控制者的 Microsoft 服务的文档，包括可以在文档中向数据主体添加的模板化信息。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“处理个人数据”；GDPR* [[1](gdpr-arc-Office365.md#1)]|
 
-<!-- end of table here --->
-
-<br>
-
---------------------------------------
-## <a name="5-data-protection--security"></a>**5. 数据保护与安全**
-
-<!-- start table here "Data Protection & Security" -->
+## <a name="5-data-protection--security"></a>5. 数据保护与安全
 
 |||||
 |:-----|:-----|:-----|:-----|
-|**类别**|**客户注意事项**|**支持&nbsp;&nbsp;Microsoft&nbsp;&nbsp; 文档**|**引用 &nbsp;GDPR 文章**|
+|**类别**|**客户注意事项**|**支持 Microsoft 文档**|**引用 GDPR 文章**|
 |***了解组织及其上下文 (5.2.1)***|客户应确定他们在处理个人数据方面的角色，（如控制者、处理者、协同控制者）以确定处理个人数据的相应要求（法规等）。|Microsoft 如何在处理个人数据时将每个服务确定为处理者或控制者。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“处理个人数据”；GDPR“处理者和控制者角色和责任”*[[1](gdpr-arc-Office365.md#1)]|(24)(3)、(28)(10)、(28)(5)、(28)(6)、(32)(3)、(40)(1)、(40)(2)(a)、(40)(2)(b)、(40)(2)(c)、(40)(2)(d)、(40)(2)(e)、(40)(2)(f)、(40)(2)(g)、(40)(2)(h)、(40)(2)(i)、(40)(2)(j)、(40)(2)(k)、(40)(3)、(40)(4)、(40)(5)、(40)(6)、(40)(7)、(40)(8)、(40)(9)、(40)(10)、(40)(11)、(41)(1)、(41)(2)(a)、(41)(2)(b)、(41)(2)(c)、(41)(2)(d)、(41)(3)、(41)(4)、(41)(5)、(41)(6)、(42)(1)、(42)(2)、(42)(3)、(42)(4)、(42)(5)、(42)(6)、(42)(7)、(42)(8)|
 |***了解相关方的需求和期望 (5.2.2)***|客户应确定可能在处理个人数据方面发挥作用或感兴趣的各方（例如监管机构、审计机构、数据主体、合同规定的个人数据处理者），并了解在需要时与各方合作的要求。|Microsoft 如何在考虑到个人数据处理风险的情况下纳入所有利益干系人的意见。<br>- *Office 365 适用的客户数据保护影响评估关键信息* [[10](gdpr-arc-Office365.md#10)]<br>- *Office 365 ISMS 手册* [[14](gdpr-arc-Office365.md#14)]，请参阅“4.2 了解相关方的需求和期望”<br>- 在[合规性管理器](https://servicetrust.microsoft.com/ComplianceManager) 5.2.2 中了解相关方的需求和期望|(35)(9)、(36)(1)、(36)(3)(a)、(36)(3)(b)、(36)(3)(c)、(36)(3)(d)、(36)(3)(e)、(36)(3)(f)、(36)(5)|
 |***确定信息安全管理系统的范围（5.2.3、5.2.4）***|作为客户拥有的任何整体安全或隐私程序的一部分，它们应包括与之相关的个人数据处理和要求。|Microsoft 服务如何在信息安全管理和隐私计划中纳入个人数据处理。<br>- *Microsoft Office 365 ISO/IEC 27001:2013 ISMS 适用性声明* [[12](gdpr-arc-Office365.md#12)]，请参阅 A.19<br>- *SOC 2 类型 2 审核报告* [[11](gdpr-arc-Office365.md#11)]<br>- Office 365 ISMS 手册 [[14](gdpr-arc-Office365.md#14)]，请参阅 *4. 组织背景*<br>- 5.2.3 确定合规性管理器中的信息安全管理系统的范围<br>- 5.2.4 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的信息安全管理系统|(32)(2)|
@@ -148,47 +119,32 @@ ms.locfileid: "34431903"
 |***记录保护 (6.15.1)***|客户应了解与个人数据处理相关的需要维护的记录的要求。|Microsoft 服务如何存储与处理个人数据相关的记录<br>- 在 Office 365 安全合规中心搜索审核日志 [[16](gdpr-arc-Office365.md#16)]<br>- Microsoft Office 365 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-Office365.md#12)] 请参阅 A.18.1.3<br>- Office 365 ISM 手册 [14] 请参阅 *9 性能评估*|(5)(2)、(24)(2)|
 |***独立审查信息安全 (6.15.2)***|客户应了解对个人数据处理安全性评估的要求。这包括内部或外部审核或其他评估处理安全性的措施。如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。|Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br>- Microsoft 联机服务条款、数据保护条款，请参阅数据安全、审核合规性 [[1](gdpr-arc-Office365.md#1)]<br>- Office 365 ISM 手册 [[14](gdpr-arc-Office365.md#14)] 请参阅 *9 性能评估*<br>- 6.15.2 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的独立审查信息安全|(32)(1)(d)、(32)(2)|
 |***技术符合性审查 (6.15.3)***|客户应了解测试和评估处理个人数据安全性的要求。这包括技术测试，如渗透测试。如果客户使用第三方系统或处理者，则他们应了解他们在保护和测试安全方面承担的责任（例如管理配置以保护数据，然后测试这些配置设置）。如果第三方负责安全性处理的全部或部分，则客户应该了解第三方为确保处理的安全性而进行的测试或评估。|如何基于标识的风险（包括由第三方发起的测试，以及技术测试类型和测试中任何可用的报表）对 Microsoft 服务测试安全性。<br>- Microsoft Online Services 条款、数据保护条款，请参阅“数据安全之审核合规性”[[1](gdpr-arc-Office365.md#1)]<br>- 有关外部认证的列表，请参阅 *Microsoft 信任中心合规性产品 [[13](gdpr-arc-Office365.md#13)]*<br>- 有关渗透测试应用程序的详细信息，请参阅 FedRAMP 中等 FedRAMP 系统安全计划 (SSP) [[3](gdpr-arc-Office365.md#3)]，CA-8 渗透测试 (M) (H) pp204<br>- 6.15.3 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的技术合规性审阅|(32)(1)(d)、(32)(2)|
-|||
-
-<!-- end of last section table -->
-<br>
-
---------------------------------
 
 ## <a name="6-bibliography-of-resources-and-links"></a>6. 资源和链接参考文献
 
-<!--start table with HEADER here -->
+|||
+|:-----|:-----|
+|**ID**|**说明/链接**|
+| 1 <a name="1"> </a> | [联机服务条款](http://www.microsoftvolumelicensing.com/Downloader.aspx?DocumentId=13754) |
+| 2 <a name="2"> </a> | [Office 365 安全文档](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e) |
+| 3 <a name="3"> </a> | [FedRAMP 中等 FedRAMP 系统安全计划 (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
+| 4 <a name="4"> </a> | [Microsoft 云安全策略](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
+| 5 <a name="5"> </a> | [针对 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
+| 6 <a name="6"> </a> | [谁以及根据哪些条款可以访问你的数据？](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
+| 7 <a name="7"> </a> | [次级处理者合同：与 Microsoft 签订合同](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
+| 8 <a name="8"> </a> | [适用于 GDPR 的 365 数据主体请求](https://aka.ms/DSROffice365) |
+| 9 <a name="9"> </a> | [Office 365 和 GDPR 泄露通知](https://aka.ms/BreachOffice365) |
+| 10  <a name="10"> </a> | [Office 365 适用的客户数据保护影响评估关键信息](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) |
+| 11 <a name="11"> </a> | [SOC 2 类型 2 审核报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=0cf2cce9-972d-4a64-865f-b8e6eba4ed5e&docTab=4ce99610-c9c0-11e7-8c2c-) |
+| 12 <a name="12"> </a> | [Microsoft Office 365 ISO/IEC 27001:2013 ISMS 适用性声明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d7255c90-03e3-48a6-938d-e69d8f723c7a&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
+| 13 <a name="13"> </a> | [Microsoft 信任中心合规性产品/服务](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
+| 14 <a name="14"> </a> | [Office 365 ISM 手册](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
+| 15 <a name="15"> </a> | [使用租户限制管理对 SaaS 云应用程序的访问权限](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
+| 16 <a name="16"> </a> | [在 Office 365 安全合规中心搜索审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) |
+| 17 <a name="17"> </a> | [Microsoft 云中的加密](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=ec66d938-6eb4-4d7d-b8c3-2168573bb534&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
+| 18 <a name="18"> </a> | [Microsoft 数据保护管理人员](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |
 
+## <a name="learn-more"></a>了解更多
 
-|                        |                                                                                 |                                                                                                                                                                                                                       |
-|:-----------------------|:--------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **ID**                 | **文档**                                                                   | **链接**                                                                                                                                                                                                              |
-| 1 <a name="1"> </a>    | 联机服务条款                                                            | <http://www.microsoftvolumelicensing.com/Downloader.aspx?DocumentId=13754>                                                                                                                                            |
-| 2 <a name="2"> </a>    | Office 365 安全文档                                               | <https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e>                                                                                           |
-| 3 <a name="3"> </a>    | FedRAMP 中等 FedRAMP 系统安全计划 (SSP)                             | <https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports>    |
-| 4 <a name="4"> </a>    | Microsoft 云安全策略                                                 | <https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers>] |
-| 5 <a name="5"> </a>    | 针对 GDPR 的 Office 365 信息保护                                      | <https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr>                                                                                                                          |
-| 6 <a name="6"> </a>    | 谁以及根据哪些条款可以访问你的数据？                                     | <https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>                                                                                                                            |
-| 7 <a name="7"> </a>    | </span>次级处理者合同：与 Microsoft 签订合同                 | <https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA>                                                                                                                                                     |
-| 8 <a name="8"> </a>    | 适用于 GDPR 的 365 数据主体请求                                              | [*https://aka.ms/DSROffice365*](https://aka.ms/DSROffice365)                                                                                                                                                          |
-| 9 <a name="9"> </a>    | Office 365 和 GDPR 泄露通知                               | [*https://aka.ms/BreachOffice365*](https://aka.ms/BreachOffice365)                                                                                                                                                    |
-| 10 <a name="10"></a> | Office 365 适用的客户数据保护影响评估关键信息 | <https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365>                                                                                                                                             |
-| 11 <a name="11"> </a>  | SOC 2 类型 2 审核报告                                                       | <https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=0cf2cce9-972d-4a64-865f-b8e6eba4ed5e&docTab=4ce99610-c9c0-11e7-8c2c->                                |
-| 12 <a name="12"> </a>  | Microsoft Office 365 ISO/IEC 27001:2013 ISMS 适用性声明         | <https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d7255c90-03e3-48a6-938d-e69d8f723c7a&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>        |
-| 13 <a name="13"> </a>  | Microsoft 信任中心合规性产品                                     | <https://www.microsoft.com/trustcenter/compliance/complianceofferings>                                                                                                                                                |
-| 14 <a name="14"> </a>  | Office 365 ISM 手册                                                          | <https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>        |
-| 15 <a name="15"> </a>  | 使用租户限制管理对 SaaS 云应用程序的访问权限             | <https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions>                                                                                                                              |
-| 16 <a name="16"> </a>  | 在 Office 365 安全合规中心搜索审核日志               | <https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c>                                                                           |
-| 17 <a name="17"> </a>  | Microsoft 云中的加密                                               | <https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=ec66d938-6eb4-4d7d-b8c3-2168573bb534&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers>  |
-| 18 <a name="18"> </a>  | Microsoft 数据保护管理人员                                             | https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer                                                                                                                                      |
-|                        |                                                                                 |                                                                                                                                                                                                                       |
-
-<br>
-
-### <a name="learn-more"></a>了解详细信息
-[Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-[服务信任门户](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) 
-
-
-
+- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [服务信任门户](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)

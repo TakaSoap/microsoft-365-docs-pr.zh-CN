@@ -10,12 +10,12 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 8a0f0c5c173fbee6a865d2c9a7afb0f61b388507
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 0aa149a9a57fab310ffe1e5a631b37f66a833d9f
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431593"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544879"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft 支持和专业服务与 GDPR 泄露通知
 
@@ -25,11 +25,11 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 
 Microsoft 专业版服务的全球数据保护事件响应小组的驱动力是 (a) 使用严格的运营和流程防止数据保护事件的发生，(b) 当发生数据保护事件时，以专业且高效的方式进行管理，以及 (c) 通过定期事后分析和程序改进措施，从这些数据保护事件中总结经验教训。Microsoft 的专业服务数据保护事件响应团队的流程和结果都由多项安全和合规性审核（例如 ISO/IEC 27001）进行了审查和验证。
 
-### <a name="data-protection-incident-response-overview"></a>数据保护事件响应概述 
+## <a name="data-protection-incident-response-overview"></a>数据保护事件响应概述 
 
 Microsoft 专业服务致力于保护其客户并采取大量措施来防止发生数据保护事件，以维护客户信任。专业服务组织中发生数据保护事件会危及安全性，导致个人数据或者支持或咨询数据在由 Microsoft 处理时发生意外或非法的销毁、丢失、改动、未经授权的泄露或访问。对于购买了顶级支持、统一支持或 Microsoft 咨询服务的商业客户，请参考在专业服务数据保护附录（位于 <http://aka.ms/professionalservicesdpa/>）中的数据保护事件响应语言。
 
-### <a name="scope--limits-of-data-protection-incident-response-process"></a>数据保护事件响应流程的范围和限制
+## <a name="scope--limits-of-data-protection-incident-response-process"></a>数据保护事件响应流程的范围和限制
 
 当我们声明发生 [个人数据泄露] 时，我们的个人数据泄露通知流程将开始。
 
@@ -39,47 +39,44 @@ Microsoft 专业服务致力于保护其客户并采取大量措施来防止发�
 
 某些操作完全在此流程的范围之外，包括有关我们的数据保护策略或标准的常规问题、数据主体权利请求、选择退出请求、与数据保护无关的产品意愿列表或 Bug 报告、不涉及客户数据的数据保护事件以及针对 Microsoft 的欺诈行为。
 
-### <a name="types-of-data-protection-incidents"></a>数据保护事件类型
+## <a name="types-of-data-protection-incidents"></a>数据保护事件类型
 
 数据保护事件响应团队确定了一组专业服务中可能会发生的应用场景。在遵守基本数据保护事件响应框架的同时，开发并自定义了可加快响应流程的过程。例如，发错收件人的电子邮件可能不需要进行调查。而另一方面，由于冒犯者活动的私密性，可能需要进行完整的取证调查才能识别恶意人员。这组应用场景可让你深入了解专业服务的数据保护事件响应流程。
 
-### <a name="data-protection-incident-response-process"></a>数据保护事件响应流程
+## <a name="data-protection-incident-response-process"></a>数据保护事件响应流程
 
 当 Microsoft 专业服务识别到数据保护事件时，会发生会审流程，该流程会 (a) 评估事件，(b) 决定它是否在此流程的范围内，(c) 确定是否是恶意的，(d) 执行初步调查并分配严重性级别，以及 (e) 发出警报并与 Microsoft 内的相应利益干系人协调。团队还会开始记录详细信息以进行跟踪和事后分析练习。
 
-#### <a name="detection"></a>检测 
+### <a name="detection"></a>检测
 
 Microsoft 专业服务会持续监控所有包含个人数据的数据存储中是否有新出现的数据保护事件 — 包括联机和脱机。我们使用不同的方法来检测数据保护事件，包括自动化警报、客户报告、来自外部各方的报告、异常观测，以及恶意或黑客活动的迹象。
 
 Microsoft 专业服务使用的检测流程旨在发现数据保护事件和触发调查。例如：
 
--   安全漏洞将报告到整个 Microsoft 范围的报告系统进行转交，或者直接报告给专业服务数据保护事件响应团队。
+- 安全漏洞将报告到整个 Microsoft 范围的报告系统进行转交，或者直接报告给专业服务数据保护事件响应团队。
+- 客户通过[客户支持门户](http://support.microsoft.com)提交描述可疑活动的报告。
+- 专业服务工作人员提交上报。Microsoft 员工经过培训，可识别和上报潜在安全问题。
+- 对于提供专业服务的流程中所使用的工具和系统，运营团队通过内部监控和警报框架来使用自动化系统警报。这些警报采用反恶意软件和入侵检测等基于签名的形式提供，或者通过专为分析发生异常时的预期活动和警报而设计的算法来提供。
 
--   客户通过[客户支持门户](http://support.microsoft.com)提交描述可疑活动的报告。
-
--   专业服务工作人员提交上报。Microsoft 员工经过培训，可识别和上报潜在安全问题。
-
--   对于提供专业服务的流程中所使用的工具和系统，运营团队通过内部监控和警报框架来使用自动化系统警报。这些警报采用反恶意软件和入侵检测等基于签名的形式提供，或者通过专为分析发生异常时的预期活动和警报而设计的算法来提供。
-
-#### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>数据保护事件响应练习，测试数据保护事件响应计划
+### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>数据保护事件响应练习，测试数据保护事件响应计划
 
 除了持续培训之外，专业服务每年还会练习与相应内部部门之间的合作关系，以将数据保护事件上报过程、角色和职责传达给所有稳定团队成员。这可让关键利益干系人做好应对实际数据保护事件的准备 — 无论是属于安全、物理还是隐私性质。这包括与数据保护事件响应团队、安全团队、法律团队和通信团队的代表进行的练习。
 
 在练习完成后，我们会记录成果以及我们决定使用的修正方法。
 
-#### <a name="data-protection-incident-response-training"></a>数据保护事件响应培训
+### <a name="data-protection-incident-response-training"></a>数据保护事件响应培训
 
 数据保护事件响应的关键组成部分是对人员进行培训，以识别和报告数据保护事件。专业服务组织中的工作人员需要参加涵盖隐私基础知识、GDPR 条例和有关如何识别和报告数据保护事件的最佳做法的培训。
 
 还有定期在线培训，所有工作人员必须完成。培训计划使用测试、持续调查、认知和旨在确保已了解和记住培训内容的后续跟进。
 
-#### <a name="process"></a>流程
+### <a name="process"></a>流程
 
 当 Microsoft 专业服务组织识别到数据保护事件时，会遵循已编档的符合行业标准的响应计划，首先要确定符合数据保护事件条件。如果发生数据保护事件，通常会在会审后立即声明，但是，根据具体的复杂程度，会在取得必要级别的信息后随时声明，包括调查阶段之后。另一方面，团队可仅仅基于合理怀疑，自行决定声明数据保护事件。团队还可能会在调查进展过程中在各阶段之间交替。
 
 Microsoft 还会完成数据保护事件的内部事后分析。作为此练习的一部分，会评估响应和操作过程的充分性，并识别和实施*数据保护事件响应标准操作过程*或相关流程所必需的任何更新。数据泄露的内部事后分析是高度机密的记录，不会提供给客户。但是，会汇总事后分析并将其包括在客户事件通知中。作为例行审核周期的一部分，外部审计机构会对事后分析流程进行审查以确保执行了跟进操作。
 
-#### <a name="notification"></a>通知
+### <a name="notification"></a>通知
 
 当 Microsoft 专业服务根据 GDPR 声明数据保护事件时，我们会在 72 小时内将通知发送给客户。这 72 小时的通知义务是专业服务的策略承诺 — 而不是 GDPR 的法定要求。
 
@@ -89,17 +86,13 @@ Microsoft 还会完成数据保护事件的内部事后分析。作为此练习�
 
 在向客户提供有关个人数据泄露的通知时，Microsoft 将包括以下信息（如果适用且已知）：
 
--   泄露的性质
+- 泄露的性质
+- Microsoft 采取或建议的缓解措施
+- 涉及的产品、服务、应用程序
+- 个人数据的泄露时间长度（如果已知）
+- 受影响/泄露的个人数据记录数量（如果已知）
+- 分处理者/提供者详细信息（如果在泄露中有所涉及）
 
--   Microsoft 采取或建议的缓解措施
+## <a name="learn-more"></a>了解更多信息
 
--   涉及的产品、服务、应用程序
-
--   个人数据的泄露时间长度（如果已知）
-
--   受影响/泄露的个人数据记录数量（如果已知）
-
--   分处理者/提供者详细信息（如果在泄露中有所涉及）
-
-#### <a name="learn-more"></a>了解更多信息
 详细了解 Microsoft 信任中心上的 Microsoft 专业服务 (<https://www.microsoft.com/trustcenter/professional-services>)。 
