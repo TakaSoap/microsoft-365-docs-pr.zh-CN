@@ -11,22 +11,20 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 0bacc6341ac143a8f2b3dcb066709c951d2f1cbb
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: f30bdc4aec20a69c18405b6f69a14fc919f57554
+ms.sourcegitcommit: 651a1c583021a7122a9487be2f32330aff161467
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544949"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34675627"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>符合 GDPR 的 Office 365 泄露通知
 
 作为数据处理者，Office 365 可确保我们的客户作为数据控制者能够符合 GDPR 的泄露通知要求。为此，我们致力于下列方面：
 
--   让客户能够指定专门的隐私联系人，该联系人可在发生泄露时收到通知。客户可在 Azure Active Directory (AAD) 中指定此联系人
-
--   在泄露声明后的 72 小时内通知客户发生个人数据泄露。通知将通过电子邮件发送给客户指定的联系人
-
--   初始通知至少包括泄露性质的说明、用户影响估计和缓解步骤（如果适用）。如果我们的调查在初始通知发出时尚未完成，我们将在初始通知中注明后续步骤和后续通信日程表。
+- 让客户能够指定专门的隐私联系人，该联系人可在发生泄露时收到通知。客户可在 Azure Active Directory (AAD) 中指定此联系人
+- 在泄露声明后的 72 小时内通知客户发生个人数据泄露。通知将通过电子邮件发送给客户指定的联系人
+- 初始通知至少包括泄露性质的说明、用户影响估计和缓解步骤（如果适用）。如果我们的调查在初始通知发出时尚未完成，我们将在初始通知中注明后续步骤和后续通信日程表。
 
 Microsoft 认为，数据控制者应负责进行风险评估并确定泄露是否需要通知客户的 DPA，我们发送给客户的通知将提供进行此类评估所需的信息。因此，Microsoft 会将任何个人数据泄露通知客户，除非确认个人数据无法理解（例如已确认密钥完整性情况下的高度加密数据）。
 
@@ -62,11 +60,8 @@ Microsoft 认为，数据控制者应负责进行风险评估并确定泄露是�
 客户还应注意，Office 365 作为数据处理者，不会确定数据泄露的风险。只要检测到个人数据泄露，我们都将通知客户并向其提供他们准确确定受影响用户所面临的风险以及决定是否需要进一步向监管机构报告所需的详细信息。为此，数据控制者需要确定以下方面：
 
 - 泄露严重性（即，确定风险）
-
 - 是否需要通知最终用户
-
 - 是否需要通知监管机构 (DPA)
-
 - 控制者为减轻泄露的后果将会采取的具体步骤
 
 ## <a name="contacting-microsoft"></a>联系 Microsoft
