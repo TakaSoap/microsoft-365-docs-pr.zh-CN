@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对基于身份的服务和基础结构的条件。
-ms.openlocfilehash: aabd9f5db223b4b1aba0173dcfb739fe27553555
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 19eefe3cd153668239d9cf15f71c90e8ac9571e1
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072122"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681039"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>阶段 2：身份基础结构退出条件
 
@@ -51,7 +51,7 @@ ms.locfileid: "34072122"
 
 使用这些步骤验证是否已保护全局管理员帐户：
 
-1. 在 PowerShell 命令提示符处运行以下 Azure AD V2 命令。应仅看到专用全局管理员帐户列表。
+1. 在 PowerShell 命令提示符处运行以下 Azure Active Directory PowerShell Graph 命令。应仅看到专用全局管理员帐户列表。
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```

@@ -3,8 +3,8 @@ title: 针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/03/2019
-ms.audience: ITPro
+ms.date: 06/03/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全的 SharePoint Online 团队网站或 Microsoft Teams 团队以存储最有价值和最敏感的数字资产。
-ms.openlocfilehash: d80be334f692f905ec70ae43f851d2b73801f4a0
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553321"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681053"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站
 
@@ -29,7 +29,7 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 - 受地区法规约束。
 - 组织最有价值的数据，例如商业机密、财务或人力资源信息以及组织策略。
 
-满足此业务需求的 Microsoft 365 企业版基于云的解决方案要求用户执行以下操作：
+满足此业务需求的 Microsoft 365 企业版基于云的方案要求用户执行以下操作：
 
 - 在 SharePoint Online 团队网站或 Microsoft Teams 团队的“文件”**** 选项卡中存储数字资产（文档、幻灯片组、电子表格等）。
 - 锁定网站或团队以防止：
@@ -41,7 +41,7 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 - 加密网站或团队中最敏感的数字资产。
 - 添加对最敏感的数字资产的权限，这样，即使它们在网站外共享，打开资产仍需要具有权限的用户帐户的有效凭据。
 
-下表将此解决方案的要求映射到 Microsoft 365 企业版的功能。
+下表将此方案的要求映射到 Microsoft 365 企业版的功能。
 
 |||
 |:-------|:-----|
@@ -54,7 +54,11 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 | 向网站的数字资产添加权限 | EMS 中的 Azure 信息保护子标签 |
 |||
 
-此解决方案要求已经部署：
+以下是针对 SharePoint Online 网站的配置。
+
+![针对高度管控数据方案的 Microsoft Teams 和 SharePoint Online 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+此方案要求已经部署：
 
 - [标识](identity-infrastructure.md)以及基础架构的[信息保护](infoprotect-infrastructure.md)阶段的步骤 1 和 2。 
 - 对于 SharePoint Online 团队网站中的高度管控数据：[SharePoint Online](sharepoint-online-onedrive-workload.md)。
@@ -64,9 +68,13 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 若要了解 Contoso Corporation（虚构但具代表性的跨国组织）如何为其研究团队设计 SharePoint Online 网站，请参阅此[示例配置](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。
 
->[!Note]
->高度管控数据的团队要求首先为高度管控数据创建一个 SharePoint Online 团队网站。然后，创建一个使用 SharePoint Online 团队网站的 Office 365 组的新团队。有关详细信息，请参阅第 2 阶段的步骤 4。
->
+
+高度管控数据的团队要求首先为高度管控数据创建一个 SharePoint Online 团队网站。然后，创建一个使用 SharePoint Online 团队网站的 Office 365 组的新团队。有关详细信息，请参阅第 2 阶段的步骤 4。
+
+以下是针对团队的配置。
+
+![针对高度管控数据方案的 Microsoft Teams 和 SharePoint Online 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## <a name="identity-and-device-access-prerequisites"></a>身份识别和设备访问先决条件
 
@@ -207,6 +215,10 @@ SharePoint Online 团队网站的锁定版本称为独立网站。与私有团�
 ### <a name="user-adoption-results"></a>用户采用结果
 
 敏感数字资产专门存储在针对高度管控数据的 SharePoint Online 网站或团队中，并且已对最敏感的资产应用了已配置的 Azure 信息保护子标签。
+
+## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企业版
+
+Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 Contoso 是如何设计、配置并推动其在巴黎、莫斯科、纽约、北京和班加罗尔的研究团队采用[安全的 SharePoint Online 网站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)的。 
 
 ## <a name="see-also"></a>另请参阅
 
