@@ -5,31 +5,31 @@ keywords: 数据保护影响评估, DPIA, Dynamics 365, Microsoft 专业服务, 
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 5d61c98290387563762c75d10c32476c35b9e9a4
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: 52436050d95935833dbfbeb1655c57ed9cfdad68
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544899"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698204"
 ---
-# <a name="data-protection-impact-assessments"></a><span data-ttu-id="53b92-104">数据保护影响评估</span><span class="sxs-lookup"><span data-stu-id="53b92-104">Data Protection Impact Assessments</span></span>
+# <a name="data-protection-impact-assessments"></a><span data-ttu-id="21869-104">数据保护影响评估</span><span class="sxs-lookup"><span data-stu-id="21869-104">Data Protection Impact Assessments</span></span>
 
-<span data-ttu-id="53b92-p101">根据一般数据保护条例 (GDPR)，需要由数据控制者准备数据保护影响评估 (DPIA)，用于处理“可能对自然人的权力和自由产生高风险”的操作。Microsoft Azure 或 Dynamics 365 本身并不一定要求由使用它的数据控制者创建 DPIA。更准确地说，是否需要 DPIA 取决于数据控制者部署、配置每个产品的*方式*和背景。</span><span class="sxs-lookup"><span data-stu-id="53b92-p101">Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Azure or Dynamics 365 that would necessarily require the creation of a DPIA by a Data Controller using it. Rather, whether a DPIA is required will be dependent on the details and context of *how* the data controller deploys, configures each product.</span></span>
+<span data-ttu-id="21869-p101">根据一般数据保护条例 (GDPR)，需要由数据控制者准备数据保护影响评估 (DPIA)，用于处理“可能对自然人的权力和自由产生高风险”的操作。Microsoft Azure 或 Dynamics 365 本身并不一定要求由使用它的数据控制者创建 DPIA。更准确地说，是否需要 DPIA 取决于数据控制者部署、配置每个产品的*方式*和背景。</span><span class="sxs-lookup"><span data-stu-id="21869-p101">Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Azure or Dynamics 365 that would necessarily require the creation of a DPIA by a Data Controller using it. Rather, whether a DPIA is required will be dependent on the details and context of *how* the data controller deploys, configures each product.</span></span>
 
-<span data-ttu-id="53b92-108">此文档的目的是为数据控制者提供相关信息，帮助他们确定是否需要 DPIA 以及要包含的详细信息。</span><span class="sxs-lookup"><span data-stu-id="53b92-108">The purpose of this document is to provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.</span></span>
+<span data-ttu-id="21869-108">此文档的目的是为数据控制者提供相关信息，帮助他们确定是否需要 DPIA 以及要包含的详细信息。</span><span class="sxs-lookup"><span data-stu-id="21869-108">The purpose of this document is to provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.</span></span>
 
-- [<span data-ttu-id="53b92-109">Office 365</span><span class="sxs-lookup"><span data-stu-id="53b92-109">Office 365</span></span>](gdpr-dpia-office365.md)
-- [<span data-ttu-id="53b92-110">Azure</span><span class="sxs-lookup"><span data-stu-id="53b92-110">Azure</span></span>](gdpr-dpia-azure.md)
-- [<span data-ttu-id="53b92-111">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="53b92-111">Dynamics 365</span></span>](gdpr-dpia-dynamics.md)
-- [<span data-ttu-id="53b92-112">Microsoft 支持和专业服务</span><span class="sxs-lookup"><span data-stu-id="53b92-112">Microsoft Support and Professional Services</span></span>](gdpr-dpia-prof-services.md)
+- [<span data-ttu-id="21869-109">Office 365</span><span class="sxs-lookup"><span data-stu-id="21869-109">Office 365</span></span>](gdpr-dpia-office365.md)
+- [<span data-ttu-id="21869-110">Azure</span><span class="sxs-lookup"><span data-stu-id="21869-110">Azure</span></span>](gdpr-dpia-azure.md)
+- [<span data-ttu-id="21869-111">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="21869-111">Dynamics 365</span></span>](gdpr-dpia-dynamics.md)
+- [<span data-ttu-id="21869-112">Microsoft 支持和专业服务</span><span class="sxs-lookup"><span data-stu-id="21869-112">Microsoft Support and Professional Services</span></span>](gdpr-dpia-prof-services.md)
 
-<span data-ttu-id="53b92-113">有关 GDPR 合规性 Microsoft 数据保护的详细信息，请参阅***服务信任门户***中的[合规性](https://servicetrust.microsoft.com/ComplianceManager)。</span><span class="sxs-lookup"><span data-stu-id="53b92-113">For more information about GDPR compliance Microsoft data protection, see [Compliance](https://servicetrust.microsoft.com/ComplianceManager) in the ***Service Trust Portal***.</span></span>
+<span data-ttu-id="21869-113">有关 GDPR 合规性 Microsoft 数据保护的详细信息，请参阅***服务信任门户***中的[合规性](https://servicetrust.microsoft.com/ComplianceManager)。</span><span class="sxs-lookup"><span data-stu-id="21869-113">For more information about GDPR compliance Microsoft data protection, see [Compliance](https://servicetrust.microsoft.com/ComplianceManager) in the ***Service Trust Portal***.</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="53b92-114">了解详细信息</span><span class="sxs-lookup"><span data-stu-id="53b92-114">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="21869-114">了解详细信息</span><span class="sxs-lookup"><span data-stu-id="21869-114">Learn more</span></span>
 
-- [<span data-ttu-id="53b92-115">Microsoft 信任中心</span><span class="sxs-lookup"><span data-stu-id="53b92-115">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [<span data-ttu-id="21869-115">Microsoft 信任中心</span><span class="sxs-lookup"><span data-stu-id="21869-115">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
