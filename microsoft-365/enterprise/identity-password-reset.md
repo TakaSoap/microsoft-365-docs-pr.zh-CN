@@ -69,7 +69,7 @@ ms.locfileid: "32287046"
 
 *这对于混合环境来说是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-在此部分中，将设置 Azure Active Directory 无缝单一登录（Azure AD 无缝 SSO），以允许用户登录到使用 Azure AD 用户帐户的服务，而无需键入其密码（在许多情况下，还无需键入用户名）。 这可使用户更便于访问基于云的应用程序（如 Office 365）而无需任何额外的本地组件（如联合身份验证服务器）。
+在此部分中，将设置 Azure Active Directory 无缝单一登录（Azure AD 无缝 SSO），以允许用户登录到使用 Azure AD 用户帐户的服务，而无需键入其密码（在许多情况下，还无需键入用户名）。 这可使用户更方便地访问基于云的应用程序（如 Office 365）而无需任何额外的本地组件（如联合身份验证服务器）。
 
 将使用 Azure AD Connect 工具配置 Azure AD 无缝 SSO。
 
