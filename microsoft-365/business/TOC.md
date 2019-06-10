@@ -7,17 +7,19 @@
 ### [安装程序概述](set-up-overview.md)
 ### [设置 Microsoft 365 业务](set-up.md)
 ### [升级到 Windows Pro 创意者更新](upgrade-to-windows-pro-creators-update.md)
-### [设置移动设备](set-up-mobile-devices.md)
-### [设置 Windows 设备](set-up-windows-devices.md)
 ### [准备 Office 客户端部署](prepare-for-office-client-deployment.md)
 ### [自动安装或卸载 Office](auto-install-or-uninstall-office.md)
 ### [访问本地资源]()
 #### [启用要管理的加入域的 Windows 10 设备](manage-windows-devices.md)
 #### [从 Azure 加入 Azure 的设备访问资源](access-resources.md)
-## [安全](security-features.md)
-### [保护业务](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
-### [设置高级安全功能](set-up-advanced-security.md)
-## 用户
+## 用户设备设置
+### [设置移动设备](set-up-mobile-devices.md)
+### [设置 Windows 设备](set-up-windows-devices.md)
+## [保护业务](security-features.md)
+### [增加威胁防护](increase-threat-protection.md)
+### [条件访问入门](set-up-conditional-access-policies.md)
+### [设置合规性功能](set-up-compliance.md)
+## 管理用户
 ### [添加用户](add-users-m365b.md)
 ### [删除员工](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ## 管理设备
