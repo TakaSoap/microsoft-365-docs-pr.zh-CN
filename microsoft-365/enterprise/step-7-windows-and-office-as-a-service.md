@@ -3,7 +3,7 @@ title: 步骤 7 - Windows 和 Office 服务
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
+ms.date: 05/20/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在环境中为实现 Windows 和 Office 服务做好准备。
-ms.openlocfilehash: 68598f92b5b29f1c0bc20ecb402b60b45128ca6a
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 9cc550ca87c1c71ef4a01030ce93b6300fcc019d
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400246"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814593"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>步骤 7：Windows 和 Office 服务
 
@@ -39,7 +39,7 @@ ms.locfileid: "33400246"
 
 Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持模型和更新时间线。 这些更改简化了保持最新功能的过程。 除了这些更新之外，还提供了新的配置选项，以支持满足你需求的服务计划。 了解如何准备半年频道更新，在 Windows 10 和 Office 365 专业增强版中提供新特性和功能，并利用 System Center Configuration Manager Current Branch 中的新功能。
 
-[帮助客户转向 Windows 10 和 Office 365 专业增强版](https://www.microsoft.com/zh-CN/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[帮助客户转向 Windows 10 和 Office 365 专业增强版](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>更新类型
 
@@ -59,9 +59,11 @@ Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持
 
 首先，我们已经弃用了过去的模式，该模式每三年会引发一波巨大的变革浪潮，而现在每年进行两次功能更新，每次更新的增量变化较小。为什么？除了快速演进的安全威胁之外，技术趋势也在快速发展，此做法将保持最新的体验和防护状态。例如，一些与安全相关的更新无法仅通过每月安全更新或反病毒签名文件来提供；它们可能是低级别的变更平台，比如基于虚拟化的安全性。
 
-[Windows 即服务的快速指南](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-quick-start)
 
-[通过使用 Windows 10 安全功能来缓解威胁](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
+  [Windows 即服务的快速指南](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-quick-start)
+
+
+  [通过使用 Windows 10 安全功能来缓解威胁](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
 
 ### <a name="cumulative-update-model-benefits"></a>累积更新模型优势
 
@@ -71,7 +73,7 @@ Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持
 
 ### <a name="expanded-validation-of-updates"></a>扩展更新验证
 
-另一个优点是，在我们推出更新以实现广泛部署之前，我们会首先通过 [Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/zh-CN/) 的预览体验计划发布内部版本，这让我们可以在广泛发布更新之前收集诊断数据和反馈。 目前，预览体验计划对所有人开放，这样可以预先了解更新。 当发布更新时，我们将从上百万个配置中接收诊断数据，因此当我们推出更新时，质量更易于预测
+另一个优点是，在我们推出更新以实现广泛部署之前，我们会首先通过 [Office](https://products.office.com/zh-CN/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/en-us/) 的预览体验计划发布内部版本，这让我们可以在广泛发布更新之前收集诊断数据和反馈。 目前，预览体验计划对所有人开放，这样可以预先了解更新。 当发布更新时，我们将从上百万个配置中接收诊断数据，因此当我们推出更新时，质量更易于预测
 
 还有一点，由于 Office 365 专业增强版预览体验版本反映了每月频道更新，因此如果针对 Office 使用半年频道来提供每年两次的功能更新（Windows 同样如此），则可以提前验证这些版本，并使用半年频道定向发布。
 
@@ -79,29 +81,37 @@ Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持
 
 我们还考虑了如何无缝部署更新。System Center Configuration Manager Current Branch 会经常更新，以支持推出这些 Windows 和 Office 更新，以及任何新功能。
 
-[使用 System Center Configuration Manager 部署 Windows 10 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/zh-CN/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+  [使用 System Center Configuration Manager 部署 Windows 10 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-manage-updates-configuration-manager)
+
+
+  [使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/zh-CN/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Windows 和 Office 频道概述
 
 Windows 10 提供三个服务频道：
 
-- [**Windows 预览体验计划**](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview#windows-insider)适合于组织用于对下一次功能更新中所含的功能进行测试和提供反馈
+- 
+  [
+  **Windows 预览体验计划**](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview#windows-insider)适合于组织用于对下一次功能更新中所含的功能进行测试和提供反馈
 - **半年度频道**每年提供两次的功能更新发布提供新功能
 - **长期服务频道**专用于需要更长服务选项的特殊设备
 
 Office 365 提供四个服务频道：
 
-- [**Office 预览体验计划**](https://support.office.com/zh-CN/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)适合于组织用于对仍在开发中的最新 Office 特性和功能进行测试并提供反馈
+- 
+  [
+  **Office 预览体验计划**](https://support.office.com/zh-CN/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)适合于组织用于对仍在开发中的最新 Office 特性和功能进行测试并提供反馈
 - **每月频道**用于为在最新 Office 功能推出后将其立即提供给用户
 - **半年频道**只每年提供两次新功能和新特性
 - **半年频道（定向）** 是 Office 的完全支持内部版本，支持试点用户和应用程序兼容性测试人员测试和验证下一个半年频道
 
 有关 Windows 和 Office 服务频道的详细信息，请查阅以下文档：
 
-- [Windows 即服务概述](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview#servicing-channels)
-- [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/zh-CN/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- 
+  [Windows 即服务概述](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview#servicing-channels)
+- 
+  [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/zh-CN/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>分阶段部署更新
 
@@ -137,9 +147,11 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
-[Windows 半年频道](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Office 365 专业增强版的半年频道](https://docs.microsoft.com/zh-CN/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+  [Windows 半年频道](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview#semi-annual-channel)
+
+
+  [Office 365 专业增强版的半年频道](https://docs.microsoft.com/zh-CN/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>升级任务序列
 
@@ -151,11 +163,12 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 如果已经在使用任务序列将 Windows 7 计算机迁移到 Windows 10，并且非常精通这些工具，那么这是启动和提供最终控制的理想位置。虽然可以为整个升级使用单个任务序列，但是组织使用两个任务序列是很常见的。一个任务序列用于确保计算机已经准备好进行升级，它在目标计算机上以静默方式预先暂存所有所需的安装文件，另一个任务序列则用于实际升级。这种方法可确保用户生产力受到较小影响。
 
-[在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+
+  [在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>对功能更新的半年频道支持
 
-[如 2018 年 9 月所宣布](https://www.microsoft.com/zh-CN/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)，半年频道更新的支持时间线将使用以下模型。
+[如 2018 年 9 月所宣布](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)，半年频道更新的支持时间线将使用以下模型。
 
   - 从版本 1607 开始，所有目前支持的 Windows 10 企业版和教育版功能更新将自初始发布之日起提供 30 个月的支持。
 
@@ -169,7 +182,8 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 如果不使用升级任务序列，现在可以在预安装阶段（在安装程序运行其兼容性检查之前）或者在预提交阶段（在应用升级之前），在功能更新期间运行自定义操作或应用驱动程序文件。
 
-[Windows 10 安装版本 1803 中的新增功能](https://docs.microsoft.com/zh-CN/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
+
+  [Windows 10 安装版本 1803 中的新增功能](https://docs.microsoft.com/zh-CN/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
 
 ## <a name="next-step"></a>后续步骤 
 

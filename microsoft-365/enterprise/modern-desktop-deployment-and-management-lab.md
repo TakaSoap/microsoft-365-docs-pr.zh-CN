@@ -3,7 +3,7 @@ title: Windows 和 Office 部署实验室工具包
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 10/31/2018
+ms.date: 06/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 213d53b323cd5a5ca6f803320cf09e168beb1114
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400064"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814543"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -127,7 +127,8 @@ ms.locfileid: "33400064"
 
   - [Microsoft Mechanics 的桌面部署系列视频](http://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager OS 部署](https://docs.microsoft.com/zh-CN/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - 
+  [System Center Configuration Manager OS 部署](https://docs.microsoft.com/zh-CN/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 部署计划</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
