@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400066"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857295"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中注册设备
 
@@ -39,20 +39,20 @@ Microsoft 托管桌面可以与全新设备配合使用, 也可以重新使用�
 若要获取硬件哈希, 可以从 OEM 或合作伙伴寻求帮助, 也可以对每个设备执行以下步骤:
 
 1.  打开具有管理权限的 PowerShell 提示。
-2.  以`Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  以`powershell -ExecutionPolicy Unrestricted Get-WindowsAutopilotInfo -OutputFile <path>\hardwarehash.csv`
+2.  以`Install-Script -Name Get-MMDRegistrationInfo`
+3.  以`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 
 
 或者, 您可以在全新设备上执行以下步骤 (在第一次进入 OOBE 之前):
 
 1. 在其他设备上, 插入 u 盘。
 2. 打开具有管理权限的 PowerShell 提示。
-3. 以`Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
+3. 以`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. 打开目标设备, 但不要启动安装程序体验。 如果您意外启动了设置体验, 则必须重置或重新映像设备。
 5. 插入 u 盘, 然后按 SHIFT + F10。
 6. 打开具有管理权限的 PowerShell 提示符, 然后运行`cd <pathToUsb>`。
 7. 以`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. 以`.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+8. 以`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 3. 删除 USB 驱动器, 然后通过运行来关闭设备`shutdown -s -t 0`
 
 >[!IMPORTANT]
@@ -110,7 +110,7 @@ REST API 可用于实现更大的灵活性和重复频繁单独的设备注册�
 
 
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 | 错误消息 | 详细信息 |
 |---------------|-------------|

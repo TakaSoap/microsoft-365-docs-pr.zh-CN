@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: d743092fdd309c1afd748afa7523f0cc0c6a2fd0
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400006"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857316"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>在 Microsoft 托管桌面中为合作伙伴注册设备
 
@@ -30,8 +30,8 @@ ms.locfileid: "33400006"
 您的文件需要包含与示例 1 (制造商、模型等)**完全相同的列标题**, 但您自己的数据用于其他行。 如果使用模板, 请在文本编辑工具 (如记事本) 中打开它, 并考虑仅保留第1行中的所有数据, 仅在第2行和更低的行中输入数据。 
     
   ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,
+ Manufacturer,Model,Serial Number
+  SpiralOrbit,ContosoABC,000000000000
   
   
   ```
@@ -77,7 +77,7 @@ ms.locfileid: "33400006"
 
 通过 API 注册与自助服务相同, 不同之处在于, 设备集合的硬件哈希属性是可选的, 如 CSV 部分中所述。 
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 | 错误消息 | 详细信息 |
 |---------------|-------------|

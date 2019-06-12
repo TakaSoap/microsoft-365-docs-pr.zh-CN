@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0eabd3c90e0aae2812b2ee9fd6fb4d1768e90c1e
-ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
+ms.openlocfilehash: c3674df0bfd797b9076bbf52379444665b1ce4d8
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34104209"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857305"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
 
@@ -40,7 +40,7 @@ ms.locfileid: "34104209"
 
 - 拥有由 Microsoft 托管桌面批准的图像。 对设备进行排序时, 请确保指定它们与 Microsoft 托管桌面配合使用。
 - 尚未完成 Windows 首次运行体验。
-- 使用[Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad)注册, 并分配 Microsoft 托管桌面 Autopilot 配置文件。
+- 使用[设备注册](https://aka.ms/mmddrhelp)功能向 Microsoft 托管 Destkop 注册
 
 #### <a name="additional-help"></a>其他帮助
 

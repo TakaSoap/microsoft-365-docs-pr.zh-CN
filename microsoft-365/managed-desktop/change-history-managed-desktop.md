@@ -4,27 +4,48 @@ description: 本主题列出了 Microsoft 托管桌面的新增和更新主题�
 keywords: 修订记录
 ms.prod: m365-md
 ms.sitesec: library
-author: trudyha
-ms.author: jdecker
+author: jaimeo
+ms.author: jaimeo
 ms.topic: article
-ms.date: 03/11/2019
 ms.localizationpriority: normal
-ms.openlocfilehash: 9bbcbe99e3dc08d4201d4a80323b17647309f433
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 3cf7e948e5bf963ae9239656881c181d90f23a6e
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277967"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857318"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档的更改历史记录
 
 本主题列出了[Microsoft 托管桌面文档](index.yml)中新增和更新的主题。
 
+
+## <a name="may-2019"></a>2019 年 5 月
+新建或更改的主题 | 说明
+--- | ---
+[Microsoft 托管桌面支持的区域和语言](service-description/regions-languages.md) | 更新的主题
+[Microsoft 托管桌面设备](service-description/device-list.md) | 更新的主题
+[Microsoft 托管桌面存档设备](service-description/archived-device-list.md) | 新主题
+[为 Microsoft 托管桌面准备映射驱动器](get-ready/mapped-drives.md) | 新主题
+[为 Microsoft 托管桌面准备证书和网络配置文件](get-ready/certs-wifi-lan.md) | 新主题
+[订购 Microsoft 托管桌面设备](get-started/devices.md) | 更新的主题
+
+
+## <a name="april-2019"></a>2019 年 4 月
+新建或更改的主题 | 说明
+--- | ---
+[在 Microsoft 托管桌面设备上安装 Intune 公司门户](get-started/company-portal.md) | 新主题
+[在 Microsoft 托管桌面设备上安装 Microsoft Project 和 Microsoft Visio](get-started/project-visio.md) | 新主题 
+[为 Microsoft 托管桌面准备本地资源访问](get-ready/authentication.md) | 新主题
+[在 Microsoft 托管桌面中注册设备](get-started/register-devices-self.md) | 新主题
+[在 Microsoft 托管桌面中为合作伙伴注册设备](get-started/register-devices-partner.md) | 新主题
+[将应用程序部署到 Microsoft 托管桌面设备](get-started/deploy-apps.md) | 更新的主题
+
 ## <a name="march-2019"></a>2019 年 3 月
 新建或更改的主题 | 说明
 --- | ---
 [在 Microsoft 托管桌面设备上安装 Intune 公司门户](get-started/company-portal.md) | 新主题
-[在 microsoft 托管桌面设备上安装 microsoft Project 和 microsoft Visio](get-started/project-visio.md) | 新主题
+[在 Microsoft 托管桌面设备上安装 Microsoft Project 和 Microsoft Visio](get-started/project-visio.md) | 新主题
 
 ## <a name="february-2019"></a>2019 年 2 月
 新建或更改的主题 | 说明
