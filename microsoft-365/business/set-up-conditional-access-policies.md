@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为 Microsoft 365 商业版设置条件访问策略。
-ms.openlocfilehash: 6ca3995113f090ccf2b119abde059a68ce562970
-ms.sourcegitcommit: ab04fea2765a63489d70b506f0e14303a5be16a0
+ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34806811"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913003"
 ---
 # <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>为 Microsoft 365 商业版设置条件访问策略
 
@@ -52,9 +52,9 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后, 系�
     ![列出用于条件访问的基准策略的页面。](media/baslinepolicies.png)
 1. 请参阅以下针对每个策略的特定说明:
 
-    - [要求对管理员进行 MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-
-    -   [要求对用户进行 MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [阻止旧版身份验证](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [要求对管理员进行 MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [用户的 Reequire MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [阻止旧版身份验证](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [需要进行服务管理的 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 您可以设置许多其他策略, 如要求批准的客户端应用程序。 有关详细信息, 请参阅[条件访问文档](https://docs.microsoft.com/azure/active-directory/conditional-access/)。

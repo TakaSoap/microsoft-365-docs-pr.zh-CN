@@ -8,16 +8,23 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 3cf7e948e5bf963ae9239656881c181d90f23a6e
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 4cd61e333773ddeddc866481be7e1cfa283e4386
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857318"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913023"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档的更改历史记录
 
 本主题列出了[Microsoft 托管桌面文档](index.yml)中新增和更新的主题。
+
+## <a name="june-2019"></a>6月2019
+新建或更改的主题 | 说明
+--- | ---
+[Microsoft 托管桌面中的应用程序](get-ready/apps.md) | 更新的主题
+[使用 Microsoft 咨询服务](get-ready/apps-mcs.md) | 新主题
+[Microsoft 托管桌面角色和职责](intro/roles-and-responsibilities.md) | 更新的主题
 
 
 ## <a name="may-2019"></a>2019 年 5 月
