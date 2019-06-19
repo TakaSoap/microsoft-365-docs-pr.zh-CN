@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 4b69047c2c595b899fd29593c9c02a3531ffbd53
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814543"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017494"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
-这些可下载的实操实验室着重于 Windows 10 部署和 Office 365 部署，以及相关的配置和管理注意事项后期部署。强烈建议为准备 Windows 7 生命周期的组织进行此培训，但该培训同样适用于当前使用 Windows 10 和 Office 365 增强版或 Office 2019 的用户。其中包含有关 Windows 10、Office 365 专业增强版、企业移动性 + 安全性和相关产品和服务的指南。
+这些可下载的实操实验室着重于 Windows 10 部署和 Office 365 部署，以及相关的配置和管理注意事项后期部署。强烈建议正在为 Windows 7 生命周期的结束做准备的组织进行此培训，但该培训同样适用于当前使用 Windows 10 和 Office 365 增强版或 Office 2019 的用户。其中包含有关 Windows 10、Office 365 专业增强版、企业移动性 + 安全性和相关产品和服务的指南。
 
 这些实验室旨在帮助您规划、 测试和验证运行 Windows 10 企业版和 Office 365 专业增强版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 System Center Configuration Manager、Windows Analytics、Office Customization Tool、OneDrive、Windows Autopilot 等。
 
@@ -36,18 +36,17 @@ ms.locfileid: "34814543"
 
 实验室为你提供了自动预配的虚拟实验室环境，其中包括域加入桌面客户端、域控制器、Internet 网关和完全配置的 ConfigMgr 实例。实验室包含以下产品的评估版本：
 
-  - Windows 10 企业版，版本 1809
-  - Windows 7
-  - Office 365 专业增强版，版本 1901
-  - System Center Configuration Manager，版本 1802
-  - 适用于 Windows 10 的 Windows 评估和部署工具包，版本 1809
+  - Windows 10 企业版，版本 1903
+  - Windows 7 企业版
+  - System Center Configuration Manager，版本 1902
+  - 适用于 Windows 10 的 Windows 评估和部署工具包，版本 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker 管理和监视 2.5 SP1
-  - Windows Server 2016
-  - Microsoft SQL Server 2014
+  - Windows Server 2019
+  - Microsoft SQL Server 2017
 
-此外，该实验室旨在与以下试用版连接：
+此外，该实验室旨在与以下试用版连接： 
 
   - Microsoft 365 企业版 E5
 
@@ -119,7 +118,7 @@ ms.locfileid: "34814543"
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**下载 Windows 和 Office 部署实验室工具包**](https://aka.ms/mddlabs_evalcenter)
 
-*请使用高宽带下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2019 年 5 月 13 日过期。新版本将于旧版本到期前发布。*
+*请使用高带宽下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2019 年 8 月 27 日过期。新版本将于该过期日期前发布。*
 
 ## <a name="additional-guidance"></a>**其他指南**
 
