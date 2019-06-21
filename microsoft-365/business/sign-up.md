@@ -18,18 +18,24 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何购买和注册 Microsoft 365 商业版。
-ms.openlocfilehash: ecbf316f63e11ed07dc775f6659f650112cc8cb4
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: 0f92bf35d2a7898d530fd509d8d13c91f32ccab3
+ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017504"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35114914"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>注册 Microsoft 365 商业版
 
 如果你是合作伙伴, 请参阅[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)版。
 
-转到 "[发现 microsoft 365 业务优势](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop)", 并选择 "**立即购买**" microsoft 365 商业版。
+若要购买 Microsoft 365 商业版, 请转到 "[发现 microsoft 365 业务优势](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop)", 并选择 "**立即购买**" microsoft 365 Business。
+
+你还可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)以购买 Microsoft 365 商业版并获取设置帮助。
+
+## <a name="complete-the-sign-up-steps"></a>完成注册步骤
+
+购买 Microsoft 365 商业版后, 请完成以下步骤。
 
 1. 在 "**欢迎" 中, 让我们知道你**的页面输入所需的信息。 请注意:
  
@@ -43,7 +49,7 @@ ms.locfileid: "35017504"
     - **您的公司**: 输入您的独特业务名称。 这是你的企业网站使用的名称 (如果有), 也是您在收到业务电子邮件时要在 @ 符号后包含的名称。 此名称称为 "域"。 例如, 如果您的公司称为 Contoso Skis, 请在 @ 符号后输入 ContosoSkis。
     - **选择一个域**: 如果你已拥有您的域名, 请从下拉菜单中选择 "onmicrosoft.com", 我们将要求你稍后对其进行设置。 否则, 可以轻松购买代表你的业务的域名。 若要执行此操作, 请从下拉菜单中选择您更喜欢的域。 例如, 完整的电子邮件地址可能是*Teresa@ContosoSkis.net*。 如果域名可用, 我们将立即通知你。 如果是, 我们将把你的域的成本增加到 Microsoft 365 业务订阅的成本。 如果在此处购买新域, 还会将其设置并准备好在 Microsoft 365 中使用。 有关域的信息, 请参阅[域 FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq)。
     
-    !["创建您的用户 ID" 页的屏幕截图。](media/signinuserid.png)
+        !["创建您的用户 ID" 页的屏幕截图。](media/signinuserid.png)
 
 3. 填写其余字段, 并选择 "**创建我的帐户**"。
 4. 在**证明。你是。而不是. 机器人。** 页面: 输入电话号码以通过文本或呼叫接收代码, 然后选择 "**文本**" 或 "**呼叫我**", 然后输入验证代码\> **下一步**。

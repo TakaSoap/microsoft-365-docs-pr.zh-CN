@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 9/20/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: eb3d611d2be0480fdd0ff897ec5ba69b17695041
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 6fd328ebd4a8d3fbcde836c4aa87b56b9775c3cd
+ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660437"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35114954"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
@@ -60,3 +60,5 @@ Microsoft 365 商业版可帮助保护其中每个实例中的数据。 下图�
 - 如果有合作伙伴，他们将获取 Microsoft 365 商业版：[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业版](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)。
 
 - 如果你没有合作伙伴并且想要获取 Microsoft 365 商业版, 你可以在[此处购买它](https://www.microsoft.com/microsoft-365/business)并按照[注册](sign-up.md)说明进行操作。
+
+- 你还可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)以购买 Microsoft 365 商业版并获取设置帮助。
