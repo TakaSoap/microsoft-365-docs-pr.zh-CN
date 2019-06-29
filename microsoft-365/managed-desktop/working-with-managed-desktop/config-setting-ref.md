@@ -1,18 +1,18 @@
 ---
 title: Microsoft 托管桌面的可配置设置参考
 description: 在 Microsoft 托管桌面中设置可配置设置的类别
-keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278315"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390409"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>可配置的设置参考-Microsoft 托管桌面
 
@@ -21,7 +21,7 @@ ms.locfileid: "32278315"
 ## <a name="desktop-background-picture"></a>桌面背景图片
 您可以为组织中的 Microsoft 托管桌面设备自定义桌面背景图片。 您可以使用它来应用公司品牌或营销材料。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 必须满足桌面背景图片的以下要求:
 - 图片文件格式-.jpg、jpeg 或 .png
@@ -40,7 +40,7 @@ ms.locfileid: "32278315"
 ## <a name="browser-start-pages"></a>浏览器起始页
 当用户启动 Microsoft Edge 时, 浏览器起始页在各个选项卡中打开。 如果您想让用户轻松打开一组经常使用的网站, 请为每个网站添加一个浏览器起始页。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 您必须为您的浏览器起始页提供 intranet 或 Internet 站点的完全限定域名 (FQDN)。 如果配置了内部网站, 请让用户知道, 仅当在 office 中连接到内部网络或使用 VPN 连接进行连接时, 才允许访问这些网站。 
 
@@ -61,7 +61,7 @@ ms.locfileid: "32278315"
 
 您可以指定 https://位置, 也可以指定在其中承载企业模式网站列表的内部共享的位置。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 企业模式网站列表文件必须满足以下要求:
 - 文件格式-符合[文件要求](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)的 XML 文件
@@ -71,7 +71,7 @@ ms.locfileid: "32278315"
 ### <a name="best-practices"></a>最佳做法
 
 提供了这些最佳实践, 以帮助客户确定其 IT 基础结构的现代化:
-- **选择有限数量的网站**– microsoft 托管桌面使用 microsoft Edge 作为首选浏览器, 以提高组织的整体安全性和用户的可用性。 此列表中的大多数网站都适用于需要较旧版本的浏览器的旧版 web 应用程序, 这些应用程序不会包含任意多个安全功能。 
+- **选择有限数量的网站**– Microsoft 托管桌面使用 microsoft Edge 作为首选浏览器, 以提高组织的整体安全性和用户的可用性。 此列表中的大多数网站都适用于需要较旧版本的浏览器的旧版 web 应用程序, 这些应用程序不会包含任意多个安全功能。 
 - **请考虑使用替代**–考虑使用不同的网站或 web 应用程序, 而无需使用较早的浏览器。 或者, 考虑更新网站, 以便它可以使用较新的浏览器。 较新的浏览器使用最新技术并帮助提高安全性。
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>自定义和部署企业网站模式列表位置
@@ -92,7 +92,7 @@ ms.locfileid: "32278315"
 - 区域3– Internet 区域
 - 区域4–受限制的站点区域
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 为每个受信任的站点提供 intranet 或 Internet 站点的完全限定域名 (FQDN)。 
 
@@ -119,16 +119,16 @@ ms.locfileid: "32278315"
 ## <a name="proxy"></a>代理
 您可以管理您的组织的网络代理设置。 添加代理服务器和端口号, 然后添加代理站点例外。 Microsoft 托管桌面包括一组用于运行服务所需的默认代理异常。 默认的排除列表仅可由 Microsoft 托管桌面服务进行修改。  有关详细信息, 请参阅[Microsoft 托管桌面的网络配置](../get-ready/network.md)。 
 
-在 microsoft 托管桌面门户中添加的代理站点例外将添加到 microsoft managed desktop service 中包含的默认代理例外。 
+在 Microsoft 托管桌面门户中添加的代理站点例外将添加到 Microsoft Managed Desktop service 中包含的默认代理例外。 
 
 > [!NOTE]
 > 更新默认代理例外列表始终优先于客户部署。 这意味着, 如果为默认代理例外列表部署, 则将暂停暂存部署。  
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 对于代理服务器和代理站点例外, 必须满足以下要求:
 - 必须是有效的服务器地址和端口号
-- url 必须是有效的 http 站点 
+- Url 必须是有效的 http 站点 
 
 ### <a name="customize-and-deploy-proxies"></a>自定义和部署代理
 

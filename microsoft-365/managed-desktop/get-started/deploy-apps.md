@@ -1,42 +1,42 @@
 ---
 title: 部署 Microsoft 托管桌面设备的应用程序
 description: 将应用添加到 Microsoft 托管桌面设备并将其部署到的信息。
-keywords: microsoft 托管桌面、microsoft 365、服务、文档、应用程序、业务线应用程序、LOB 应用
+keywords: Microsoft 托管桌面、Microsoft 365、服务、文档、应用程序、业务线应用程序、LOB 应用
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5ccb240460958d5978f4fd19e08652123790784e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5eac2e8c3023015bd034c51ad7e16a669a484772
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282518"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390419"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>将应用程序部署到 Microsoft 托管桌面设备
 Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并将其部署到用户设备。 在使用 Microsoft 托管桌面门户后, 可以添加和部署应用。 
 
 整个过程如下所示:
-1. [向 microsoft 托管桌面门户添加应用](#1)程序-它可以是现有业务线 (LOB) 应用程序, 也可以是 microsoft Store for business 中已与 Intune 同步的应用。 
+1. [向 Microsoft 托管桌面门户添加应用](#1)程序-它可以是现有业务线 (LOB) 应用程序, 也可以是 microsoft Store for business 中已与 Intune 同步的应用。 
 2. [为应用分配创建 Azure Active Directory (AD) 组](#2)-你将使用这些组来管理应用分配。
 3. [将应用程序分配给用户](#3)
 
 <span id="1" />
 
 ## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>步骤 1: 向 Microsoft 托管桌面门户添加应用程序
-你可以将[Win32 (或基于 Windows MSI 的应用](#lob-apps)) 或[microsoft Store for Business 应用](#msfb-apps)添加到 microsoft 托管桌面, 然后将其部署到 microsoft 托管桌面设备。
+你可以将[Win32 (或基于 WINDOWS MSI 的应用](#lob-apps)) 或[Microsoft Store for Business 应用](#msfb-apps)添加到 microsoft 托管桌面, 然后将其部署到 microsoft 托管桌面设备。
 
 <span id="lob-apps">
 
 ###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Microsoft 托管桌面的基于 Win32 或 Windows MSI 的应用程序
 
-你可以将业务线 (LOB) 应用添加到 Microsoft 托管桌面门户。 有关安装在 Microsoft 托管桌面设备上的应用程序的要求的信息, 请参阅[microsoft 托管桌面应用程序要求](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)。
+你可以将业务线 (LOB) 应用添加到 Microsoft 托管桌面门户。 有关安装在 Microsoft 托管桌面设备上的应用程序的要求的信息, 请参阅[Microsoft 托管桌面应用程序要求](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)。
 
 在此过程中, 您将选择要添加的应用程序类型, 然后配置和上载应用程序源。 
 
 **将 LOB 应用程序或 Windows 应用添加到 Microsoft 托管桌面门户**
 
-你可以登录到 microsoft 托管桌面门户, 或登录到 Intune, 然后搜索 Microsoft 托管桌面。 我们将显示登录到 Microsoft 托管桌面门户。 
+你可以登录到 Microsoft 托管桌面门户, 或登录到 Intune, 然后搜索 Microsoft 托管桌面。 我们将显示登录到 Microsoft 托管桌面门户。 
 
 1.  登录到[Microsoft 托管桌面管理门户](http://aka.ms/mmdportal)。 
 2.  在 "**清单**" 下, 选择 "**应用**"。
@@ -52,7 +52,7 @@ Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并�
 
 **从适用于企业的 Microsoft Store 购买应用程序**
 
-1. 使用 microsoft store for business administration account 登录[microsoft store for business](https://businessstore.microsoft.com) 。
+1. 使用 Microsoft Store for Business Administration account 登录[Microsoft store For business](https://businessstore.microsoft.com) 。
 2. 选择 **"为我的组购买"**。
 3. 使用 "搜索" 查找所需的应用程序, 并选择该应用程序。
 4. 在 "产品详细信息" 中, 选择 **"获取应用程序**"。 Microsoft Store 将应用程序添加到组织的**产品 & 服务**。
@@ -68,7 +68,7 @@ Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并�
     - 验证 Microsoft Store for Business 和 Intune 之间的同步是否处于活动状态 (下一步)。 
 
 **验证 Intune 与 Microsoft Store for Business 之间的同步是否处于活动状态**
-1. 使用 microsoft store for business administration account 登录[microsoft store for business](https://businessstore.microsoft.com) 。
+1. 使用 Microsoft Store for Business Administration account 登录[Microsoft store For business](https://businessstore.microsoft.com) 。
 2. 选择 "**管理**"。
 3. 选择 "**设置**", 然后选择 "**分发**"。
 4. 在 "**管理工具**" 下, 验证是否列出了 Intune 以及状态是否为 "**活动**"。  
