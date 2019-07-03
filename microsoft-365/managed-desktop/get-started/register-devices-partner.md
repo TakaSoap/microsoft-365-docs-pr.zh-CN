@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 06ec98ebc7ea44a1bf3d8039e3a3ab7102521d3e
+ms.sourcegitcommit: ef749c44d72b5258706be86a4af1aeca4154ead2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857316"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35447524"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>在 Microsoft 托管桌面中为合作伙伴注册设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "34857316"
 
 
 ## <a name="prepare-for-registration"></a>准备注册 
-在完成客户注册之前, 必须首先在[合作伙伴中心](https://partner.microsoft.com/dashboard)建立与它们的关系。 有关详细信息, 请参阅[合作伙伴中心帮助](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)。
+在完成客户注册之前, 必须首先在[合作伙伴中心](https://partner.microsoft.com/dashboard)建立与它们的关系。 请务必选择 "**包括 Azure Active Directory 和 Office 365 的委派管理权限**"。 有关详细信息, 请参阅[合作伙伴中心帮助](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)。
 
 若要完成对客户的注册, 请首先创建 CSV 文件。
 
