@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的目录和网络就绪情况。
-ms.openlocfilehash: d9ab05c9ff7d0b926f147ee4f924d95f01ccffd1
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814613"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584568"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步骤 2：目录和网络就绪情况
 
@@ -80,7 +80,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
   [关于 BITS](https://docs.microsoft.com/zh-CN/windows/desktop/bits/about-bits)
 
-如果使用 System Center Configuration Manager，还可以配置启用 BITS 的分发点或使用 WDS 启用多播。
+如果使用 System Center Configuration Manager (Current Branch)，还可以配置启用 BITS 的分发点或使用 WDS 启用多播。
 
 限制特定流量意味着正常的网络流量受下载更新和应用程序的电脑的影响较小。但为这些任务划出一定比例的带宽有助于确保工作效率不受 Windows 或 Office 部署的影响，并且进程会根据需要继续运行，这可能会增加与部署相关的停机时间，导致用户在部署运行期间被锁定在电脑外。
 
@@ -90,7 +90,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
 ## <a name="scavenging-bandwidth"></a>**清理带宽**
 
-Windows Server 2019 和 System Center Configuration Manager 版本 1806 中支持的低额外时延背景传输 (LEDBAT) 旨在优化传送到 Windows 客户端的网络流量。
+Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中支持的低额外时延背景传输 (LEDBAT) 旨在优化传送到 Windows 客户端的网络流量。
 
 [Windows Server 2019 中的十大网络功能：\#9 LEDBAT - 延迟优化背景传输](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -110,7 +110,7 @@ Windows Server 2019 和 System Center Configuration Manager 版本 1806 中支�
 
 [BranchCache 与对等缓存](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**传递优化**传递优化是另一种对等缓存技术，为 Windows 部署提供基于网络的控制。 Windows 10 传递优化用于更新内置 UWP 应用，还用于从 Microsoft Store 安装应用程序，以及使用 Express Update 进行软件更新。 它在自早期版本的 Windows 10 发布以来已经可用，但最近才与 System Center Configuration Manager 集成。 自 Windows 10 版本 1803 开始，新配置选项意味着现在可以独立设置后台更新和前台作业（例如来自应用商店的应用安装）的带宽限制。 Windows 传递优化现在还在客户端更新期间支持 Office 365 专业增强版，并通过所有受支持的 Office 365 客户端更新频道提供。 即将提供在 Office 365 客户端初始安装期间对 Windows 传递优化的支持。  
+**传递优化**传递优化是另一种对等缓存技术，为 Windows 部署提供基于网络的控制。 Windows 10 传递优化用于更新内置 UWP 应用，还用于从 Microsoft Store 安装应用程序，以及使用 Express Update 进行软件更新。 它在自早期版本的 Windows 10 发布以来已经可用，但最近才与 System Center Configuration Manager (Current Branch) 集成。 自 Windows 10 版本 1803 开始，新配置选项意味着现在可以独立设置后台更新和前台作业（例如来自应用商店的应用安装）的带宽限制。 Windows 传递优化现在还在客户端更新期间支持 Office 365 专业增强版，并通过所有受支持的 Office 365 客户端更新频道提供。 即将提供在 Office 365 客户端初始安装期间对 Windows 传递优化的支持。  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

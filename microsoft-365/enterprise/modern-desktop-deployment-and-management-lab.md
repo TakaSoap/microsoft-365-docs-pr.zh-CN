@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: c056aba81edc079f0577dea8d4ef535d7e6cc32a
-ms.sourcegitcommit: a84cf473bc61a7bb1cfca221cf435e0a418305b2
+ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576502"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584528"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
 这些可下载的实操实验室着重于 Windows 10 部署和 Office 365 部署，以及相关的配置和管理注意事项后期部署。强烈建议正在为 Windows 7 生命周期的结束做准备的组织进行此培训，但该培训同样适用于当前使用 Windows 10 和 Office 365 增强版或 Office 2019 的用户。其中包含有关 Windows 10、Office 365 专业增强版、企业移动性 + 安全性和相关产品和服务的指南。
 
-这些实验室旨在帮助您规划、 测试和验证运行 Windows 10 企业版和 Office 365 专业增强版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 System Center Configuration Manager、Windows Analytics、Office Customization Tool、OneDrive、Windows Autopilot 等。
+这些实验室旨在帮助您规划、 测试和验证运行 Windows 10 企业版和 Office 365 专业增强版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 System Center Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
 作为 Windows 10 和 Office 365 专业增强版的[桌面部署](http://www.aka.ms/howtoshift)过程的一部分，在开始探索部署工具更新和测试与部署相关的自动化时，建议首先生成沙盒或隔离的实验室环境。
 
@@ -60,7 +60,7 @@ ms.locfileid: "35576502"
 
 ### <a name="device-and-app-readiness"></a>**设备和应用就绪情况**
 
-  - Windows Analytics
+  - 桌面分析
   - Internet Explorer 的企业模式和企业模式网站列表
 
 ### <a name="directory-and-network-readiness"></a>**目录和网络就绪情况**

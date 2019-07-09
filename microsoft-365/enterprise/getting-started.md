@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署过程简介。
-ms.openlocfilehash: b9264f8d9232bf1b88372694d43e2d2c70c8cb70
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 60389149e286bca8e27f50dabee8aaf03f52c90c
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814653"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584518"
 ---
 # <a name="getting-started---desktop-deployment"></a>入门 - 桌面部署
 
@@ -86,7 +86,7 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 在开始之前，你会想要制定一个高级计划，并与必要的赞助商协作。 我们的部署过程轮概述了关键步骤，帮助你确定核心团队成员和资源，以便在以下部署区域进行管理。
 
-**[步骤 1：设备和应用就绪情况](https://aka.ms/mdd1)** 为实现成功部署，必须首先知道你所拥有的设备和应用。 这意味着要对设备和应用进行盘点，并验证其兼容性。 为帮助完成此操作，可以在我们基于云的服务中找到可用工具，即 Windows Analytics。 可通过 Windows Analytics 获得从数亿台电脑中收集的兼容性情报和诊断数据，进而评估设备上运行的应用和驱动程序，这样你就可以确定桌面程序的就绪情况。 如果要使用，甚至可以从 Windows Analytics 将“准备部署的电脑”列表导出到 System Center Configuration Manager，这样你就可以在目标电脑准备就绪时为其构建数据驱动集合。
+**[步骤 1：设备和应用就绪情况](https://aka.ms/mdd1)** 为实现成功部署，必须首先知道你所拥有的设备和应用。 这意味着要对设备和应用进行盘点，并验证其兼容性。 为帮助完成此操作，可以在我们基于云的服务中找到可用工具，即桌面分析。 可通过桌面分析获得从数亿台电脑中收集的兼容性情报和诊断数据，进而评估设备上运行的应用和驱动程序，这样你就可以确定桌面程序的就绪情况。 如果要使用，甚至可以从桌面分析将“准备部署的电脑”列表导出到 System Center Configuration Manager，这样你就可以在目标电脑准备就绪时为其构建数据驱动集合。
 
 
   [开始使用升级就绪情况](https://docs.microsoft.com/zh-CN/windows/deployment/upgrade/upgrade-readiness-get-started)
