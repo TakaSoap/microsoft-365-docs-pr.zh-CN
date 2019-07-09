@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 适用于大型组织的 windows 7 到 Windows 10 自动升级
-ms.openlocfilehash: 4e07ae23f063bdc714d5dddd8cdb8d8c41e25eac
-ms.sourcegitcommit: 12c4d5444d6e0e8825fc85e3e8453fa376746495
+ms.openlocfilehash: 6fc22ad7ae8b0a34384818bc77813c6802609b89
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35395242"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584508"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>适用于大型组织的 windows 7 到 Windows 10 自动就地升级
 
 从2020年1月14日开始, 将不再为运行 Windows 7 的电脑提供安全更新或支持。 从 Windows 7 升级至 Windows 10 仅一个月之遥, 部署升级有多种方法，IT 社区中的一个常见问题是, "从 Windows 7 升级到 Windows 10 最快的方法是什么？" 简单的回答是, 对现有电脑进行就地升级, 因为这样的话，你在桌面部署过程中就不必面面俱到。
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png)
+<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 使用就地升级, 许多桌面部署过程因此而简化, 尤其是:
 
