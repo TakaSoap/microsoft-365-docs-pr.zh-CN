@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: 6ef500c9b0c9e83e77e46c1eaf7057e3e46cfe0d
-ms.sourcegitcommit: 5c6bbf6dd7020b462b56b644b5a0fcc0217d6a53
+ms.openlocfilehash: 9f3f82169dcd4454ffb46b1269422688a107f2b0
+ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34276215"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630581"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商业版常见问题
 
@@ -27,14 +27,14 @@ Microsoft 365 是一个集成的解决方案, 可为中小型企业提供同类�
 **一组全面的企业高效工作和协作工具** 
 * Word、Excel、PowerPoint、Outlook、OneNote、Publisher 和 Access 
 * Exchange、OneDrive、Skype for Business、Microsoft Teams、SharePoint 
-* Office 中的企业应用（预定、Outlook 客户管理器、MileIQ<sup>[1](#footnote1)</sup>、Microsoft 企业一览表<sup>[1](#footnote1)</sup>、Microsoft Connections<sup>[1](#footnote1)</sup>、Microsoft 发票<sup>[1](#footnote1)</sup>） 
+* Office 中的业务应用程序 (预订、Outlook 客户经理、MileIQ<sup>[1](#footnote1)</sup>、Microsoft 开票<sup>[1](#footnote1)</sup>) 
  
 **企业级设备管理和安全功能** 
-- 帮助提供来自外部威胁 (如仿冒 & 复杂恶意软件和 Office 365 高级威胁防护和 Windows Defender 攻击防护) 的保护 
--  帮助控制 & 管理敏感信息的访问和传输方式与 Office 365 数据丢失防护策略 (在夏天、2018) 和 Azure 信息保护计划1中可用 
+- 帮助提供来自外部威胁 (如仿冒 & 复杂恶意软件和 Office 365 高级威胁防护和 Windows Defender 漏洞防护的防护 
+-  帮助控制 & 管理如何使用 Office 365 数据丢失防护策略访问和传输敏感信息 (在夏季、2018) 和 Azure 信息保护计划1中可用 
 -  通过 Exchange Online 存档帮助保护、保留和备份你的数据  
 -   Office 相关应用程序保护 & 其他具有 Intune 应用保护的移动应用程序 
--  适用于 Windows 10 电脑的设备管理、MacOS & Mobiles 设备 (Intune 设备管理) 
+-  适用于 Windows 10 电脑的设备管理, MacOS & Mobiles 设备与 Intune 设备管理 
 -  跨设备的一致性安全配置-跨设备保护公司数据-Windows Defender、始终打开和最新 
  
  
@@ -82,7 +82,7 @@ Microsoft 365 业务为客户提供了一个简单但功能强大的方法, 使�
   
 * 利用**适用于 Windows 10 电脑的设备管理**，企业可以选择设置和实施一些功能，如 Windows Defender 恶意软件防护、自动更新以及在规定时长过后关闭屏幕。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
 
-* **适用于 ios 的设备管理, Android _AMP_ MacOS**功能可帮助企业安全管理包括 IOS、Android、Windows 和 MacOS 设备的多样化设备生态系统。 
+* **适用于 ios 的设备管理、Android & MacOS**功能可帮助企业安全管理包括 IOS、Android、Windows 和 MacOS 设备的各种设备生态系统。 
 
 ### <a name="how-does-microsoft-365-business-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 商业版如何帮助保护组织中的电脑免受恶意攻击？ 
 使用 Microsoft 365 商业管理的电脑受到 Windows Defender 的保护, 这是不是的。 1在 Windows 10 上的防病毒功能, 保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁, 而不是任何其他解决方案。  使用 Microsoft 365 商业版, 企业可以确保 Windows Defender 保护在其所有 Windows 10 设备上运行且始终保持最新。  
