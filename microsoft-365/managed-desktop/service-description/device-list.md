@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c991dd20dcab50c824784c233e03ecc8cdc25f94
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: f16989960d999e65ad904fd11894d5fe8bca98f0
+ms.sourcegitcommit: 1bd18fb00aad37bad8d1411a916f444e1d1a38cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857285"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756894"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
@@ -47,7 +47,6 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 | [Surface Book 2](https://www.microsoft.com/en-us/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 512 GB/Intel i7/16 GB RAM | 15英寸显示器 | 2019年11月16日 | 2022年11月16日 |
 | [表面转](https://www.microsoft.com/en-us/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8GB RAM | 无 | 8月2日, 2020 | 8月2日, 2023 |
 | [Surface 膝上型电脑2](https://www.microsoft.com/en-us/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | 无 | 2020年10月16日 | 2023年10月16日 |
-|[Surface Pro (第5代)](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | 无 | **2019年6月15日** | 2022年6月15日 |
 | [Surface Pro 6](https://www.microsoft.com/en-us/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | 无 | 2020年10月16日 | 2023年10月16日 |
 
 此外, 设备还必须:     
