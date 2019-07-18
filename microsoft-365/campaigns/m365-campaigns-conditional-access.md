@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何要求进行 MFA 并为 Microsoft 365 商业版设置条件访问策略。
-ms.openlocfilehash: 08e9365e8aad37e2412a6d739b41f2328c1aa277
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 570edce03a68dad56c895e2484a5162496d7a3eb
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183232"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772539"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重身份验证并设置条件访问策略
 

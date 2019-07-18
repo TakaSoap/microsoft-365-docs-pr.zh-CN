@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何设置和保护管理员帐户。
-ms.openlocfilehash: 857c24ac0ec134e119b3de083afe8dc3269bdbe2
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183234"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772469"
 ---
 # <a name="protect-your-administrator-accounts"></a>保护您的管理员帐户
 
@@ -38,7 +38,7 @@ ms.locfileid: "35183234"
 
 ## <a name="create-additional-admin-accounts"></a>创建其他管理员帐户
 
-仅使用管理员帐户进行管理。 管理员应具有单独的用户帐户, 以便定期使用 Office 应用, 并且仅在必要时使用其管理帐户来管理帐户、设备以及在其他管理功能上工作。  最好将 Microsoft 365 商业版许可证从管理员帐户中删除, 这样您就不必为他们付费。
+仅使用管理员帐户进行管理。 管理员应具有单独的用户帐户, 以便定期使用 Office 应用, 并且仅在必要时使用其管理帐户来管理帐户、设备以及在其他管理功能上工作。 最好将 Microsoft 365 商业版许可证从管理员帐户中删除, 这样您就不必为他们付费。
 
 你将需要至少设置一个额外的全局管理员帐户, 以向其他受信任的员工授予管理员访问权限。 您还可以为用户管理创建单独的管理员帐户 (此角色称为 "**用户管理管理员**")。 有关详细信息, 请参阅[关于管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 
@@ -78,6 +78,6 @@ ms.locfileid: "35183234"
 
 ## <a name="additional-recommendations"></a>其他建议
 
-- 确保同时为多因素身份验证设置了管理员帐户。 我们将在[配置条件访问策略](m365-campaigns-conditional-access.md)中介绍如何执行此操作。
+- 请确保同时为多因素身份验证设置了管理员帐户。 我们将在[配置条件访问策略](m365-campaigns-conditional-access.md)中介绍如何执行此操作。
 - 使用管理员帐户之前, 请关闭所有不相关的浏览器会话和应用, 包括个人电子邮件帐户。 您还可以在私有或 incognito 浏览器窗口中使用。
 - 完成管理任务后, 请务必注销浏览器会话。

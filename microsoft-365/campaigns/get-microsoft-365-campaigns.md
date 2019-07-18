@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取适用于市场活动的 Microsoft 365, 以便您可以保护您的市场活动, 从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: 21131707d88168f8886472f3ef0b42603229d8c5
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 0e038f3b33db957d3503ee091b075b767c30eeda
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183233"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772509"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>获取适用于市场活动的 Microsoft 365
 
@@ -53,7 +53,7 @@ Microsoft 365 商业版的这一配置包括简单的控件, 可帮助您和您�
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>如何有资格享受特殊定价？
 
-1. 转到https://m365forcampaigns.microsoft.com/ , 并提供有关您的组织的一些详细信息。 你提供的详细信息将帮助我们验证你是否表示美国的国家级政治市场活动或当事方。 填写此表单时, 没有任何承诺。 
+1. 转到https://m365forcampaigns.microsoft.com/ , 并提供有关您的组织的一些详细信息。 你提供的详细信息可帮助我们验证你是否表示美国的国家级政治市场活动或当事方。 填写此表单时, 没有任何承诺。 
 2. 填写完表单后, 我们需要花费几天时间查看你的信息。 
 3. 在我们确认你表示国家级政治活动或参与方之后, 你将收到 Microsoft 发送的电子邮件邀请。 您的邀请包括特定于您的组织的注册链接。 
 

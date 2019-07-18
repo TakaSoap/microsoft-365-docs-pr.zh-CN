@@ -22,26 +22,26 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置与 Microsoft 团队的联机会议。
-ms.openlocfilehash: 2b17ee8abb2758f7042147fda6ac7b9da68acc78
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080633"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772299"
 ---
 # <a name="set-up-meetings"></a>设置会议
 
 Microsoft 团队中的会议包括音频、视频和共享。 由于这些用户处于联机状态, 你将始终拥有会议空间, 并且你的市场活动永远不需要会议室或投影仪。Microsoft 团队会议是与组织内部和外部的员工和志愿者共同提供的一种非常好的方法。 您不需要是组织的成员, 甚至可以拥有加入会议的帐户。 对于您的政治活动, 您可以使用 Microsoft 团队安排和运行在线会议。 你可以在组织外部加入员工、志愿者和来宾。 在会议期间, 您可以共享屏幕、共享文件、分配任务等。
 
-[![通过桌面计算机和移动电话进行会议的两个用户的说明](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![会议中的两个用户的说明](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 下载[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)中的信息图, 以快速了解如何通过 Microsoft 团队加入或主持联机会议。
 
 ## <a name="best-practices"></a>最佳做法
 
 请遵循以下针对您的联机会议的最佳实践:
-1. 在 Microsoft 团队中立即安排你的联机会议。 您可以选择团队和频道, 它会自动邀请该团队或频道中的参与者。
-2. 需要即席会议？ 如果您正在使用一对一聊天, 只需选择 "**立即开会**" 即可开始与正在聊天的用户进行视频或音频呼叫。 
+1. 在 Microsoft 团队中立即安排你的联机会议。 您可以选择团队和频道, 团队将自动邀请该团队或频道中的参与者。
+2. 需要即席会议？ 如果你正在使用一对一聊天, 请选择 "**立即开会**" 开始与你正在聊天的用户进行视频或音频呼叫。 
 
 
 ## <a name="schedule-a-meeting"></a>安排会议

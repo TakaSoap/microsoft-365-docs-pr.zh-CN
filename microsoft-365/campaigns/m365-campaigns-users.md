@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 的市场活动对用户有何影响。
-ms.openlocfilehash: 9d70adab86eb7c8b7f1608de58c0652f84ec03a0
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 3715e0a458f2af5f2fecb8e2e6939254b3141411
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183229"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772419"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 的市场活动对用户有何影响
 
-Microsoft 365 的市场活动使黑客更难获取对环境的访问权限。 需要权衡的是, 用户需要了解如何在此更安全的环境中工作。 我们还需要进行一些额外的耐心等待, 但值得将组织保持在受保护的状态。
+Microsoft 365 的市场活动使黑客更难获取对环境的访问权限。 要权衡的是, 您的用户需要了解如何在此更安全的环境中工作。 我们还需要进行一些额外的耐心等待, 但值得将组织保持在受保护的状态。
 
 ![对 Iphone、Android 设备、Mac、Windows 10、共享和关键员工的以下要点进行汇总的插图](media/M365-democracy-Users_700px.png)
 
@@ -69,7 +69,7 @@ Microsoft 365 的市场活动使黑客更难获取对环境的访问权限。 �
 若要了解有关这些建议的详细信息, 请参阅[保护你的帐户和设备免受黑客和恶意软件的攻击](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)。
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>使用 Microsoft 团队、OneDrive、SharePoint Online 和其他 Office 365 工具进行协作
-您的用户可能会试图在 Microsoft 365 之外的位置共享和存储您的组织文件。 Microsoft 365 使其尽可能轻松地进行协作和共享。 您可以直接从 Microsoft 团队、OneDrive、Stream 甚至文件中[共享文件和视频](share-files-and-videos.md)。 通过这些工具中的共享, 可以防止数据泄露。 您还可以向敏感数据添加其他保护, 以防止在您的组织外部进行共享。 
+您的用户可能会试图在 Microsoft 365 之外的位置共享和存储您的组织文件。 Microsoft 365 使其尽可能轻松地进行协作和共享。 您可以直接从 Microsoft 团队、OneDrive、Stream 甚至文件中[共享文件和视频](share-files-and-videos.md)。 通过这些工具中的共享, 可以防止数据泄露。 您可以向敏感数据添加其他保护, 以防止在您的组织外部进行共享。 
 
 
 ## <a name="set-up-managed-windows-10-devices"></a>设置托管 Windows 10 设备

@@ -20,18 +20,18 @@ search.appverid:
 - BCS160
 - MET150
 description: 登录到 Microsoft 365 以获取市场活动。 保护您的活动从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: 2bf147f1d062ecbccabade355e50cff16bf30089
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: be24db2a7614e312bff96e5689f58a439de224a6
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183228"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772439"
 ---
 # <a name="sign-in-to-microsoft-365-for-campaigns"></a>登录到 Microsoft 365 以获取市场活动
 
 ## <a name="for-campaign-admins"></a>对于市场活动管理员
 如果你注册了 Microsoft 365 以获取市场活动, 则你是 Microsoft 365 管理员。下面介绍了如何登录: 
-1. 在第2步[注册步骤](m365-campaigns-sign-up.md#steps-to-sign-up)中查找我们发送给我们的电子邮件地址的用户名和密码。
+1. 查找我们发送到的电子邮件地址的用户名和密码, 这些用户名和密码是在步骤2中[进行注册的步骤](m365-campaigns-sign-up.md#steps-to-sign-up)2 中给出的。
 2. 在浏览器中, 转到 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
 3. 键入您的用户名和密码。 选择 **"登录"**。
 4. 在页面的右上部, 查找 "在控件**上预览**"。 选择 **"在打开时预览**", 可以使用[为市场活动启用凹凸保护](m365-campaigns-security-overview.md)时所述的所有控件。

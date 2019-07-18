@@ -21,21 +21,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 在 Microsoft 团队和 SharePoint 中共享市场活动中的文件和视频。。
-ms.openlocfilehash: bcc81b65661e113083705c6536f6de4d030a3de7
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+description: 在 Microsoft 团队和 SharePoint 中共享市场活动中的文件和视频。
+ms.openlocfilehash: c554ba2b4e7945cefa9a1e7114b3726efa58561e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080644"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772339"
 ---
 # <a name="share-files-and-videos"></a>共享文件和视频
 
-当您需要控制哪些用户可以查看以及谁可以编辑您的文件时, 您需要将文件存储在一个安全的位置, 以确保正确应用权限。 您可以使用 Microsoft 团队存储文件, 然后使用 Microsoft 团队或通过发送 SharePoint 链接在市场活动内部或外部共享文件。 发送链接 (而不是电子邮件附件) 意味着您知道谁正在查看和修改文件, 并且在没有您的许可的情况下无法查看或修改这些文件。 
+当您需要控制哪些用户可以查看以及谁可以编辑您的文件时, 您需要将文件存储在安全的位置, 从而确保正确应用权限。 您可以使用 Microsoft 团队存储文件, 然后使用 Microsoft 团队或通过发送 SharePoint 链接在市场活动内部或外部共享文件。 发送链接 (而不是电子邮件附件) 意味着您知道谁正在查看和修改文件, 并且在没有您的许可的情况下无法查看或修改这些文件。 
 
-!["文件" 选项卡在菜单上打开和获取链接的 Microsoft 团队窗口的关系图](media/m365-democracy-teams-sharefiles.png)
+![Microsoft 团队窗口的关系图, 显示 "文件" 选项卡并获取菜单上的链接](media/m365-democracy-teams-sharefiles.png)
 
-使用 Microsoft 团队和 SharePoint 中的文件, 您还可以同时处理这些文件, 并相互审阅各自的更改。 使用 Microsoft 团队共享政治活动中的文件, 可以使用 Microsoft 团队执行此操作。 如果需要与市场活动外部的人员进行外部共享, 可以将其作为来宾添加到团队或向其发送安全 SharePoint 链接。
+使用 Microsoft 团队和 SharePoint 中的文件, 您还可以同时处理这些文件, 并相互审阅各自的更改。 使用 Microsoft 团队共享政治活动中的文件。 如果需要与市场活动外部的人员进行外部共享, 可以将其作为来宾添加到团队或向其发送安全 SharePoint 链接。
 
 您还可以使用 Microsoft Stream 存储和共享市场活动的视频。 这些视频对公众是不可查看的, 因此它们是内部市场活动邮件的理想之选。
 

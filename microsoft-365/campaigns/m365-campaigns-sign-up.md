@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 针对市场活动的 Microsoft 365 的分步注册。 保护您的活动从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: b1af4138da6f935fc2745444eea4ad82f9f128d6
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183231"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772459"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>注册 Microsoft 365 以获取市场活动 
 
@@ -47,7 +47,7 @@ ms.locfileid: "35183231"
     > 如果已有 Office 365 for business 订阅, 并且想要添加 Microsoft 365 以供市场活动提供, 请转到现有订阅中的 "[将 microsoft 365 用于市场活动](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)"。
 1. **在 "Microsoft 365 商业版" 页面上**, 输入您的业务详细信息。 对于**商业电子邮件地址**, 请使用当前电子邮件地址。 在设置过程中, 我们仅需要此地址与你保持联系。 选择“下一步”****。
 1. **在 "创建您的用户 ID" 页上**:
-    1. 在 "**用户名**" 中, 输入您的电子邮件地址所需的名称或别名。 例如, 您可能只想知道小红或抢版。 在更大的市场活动中, AliceC 或 AliceChavez 可能更有意义。
+    1. 在 "**用户名**" 中, 输入您的电子邮件地址所需的名称或别名。 例如, 您可能希望将其称为 "小红" 或 "抢版"。 在更大的市场活动中, AliceC 或 AliceChavez 可能更有意义。
     2. 在**您的公司**中, 输入您工作的市场活动的名称。 例如, ContosoCampaign。 如果你已拥有域, 请在此处使用该名称。 
     3. 在 "**选择域**" 中, 选择 "现在**onmicrosoft.com** "。 我们可以稍后为你设置域, 或帮助你将 Microsoft 365 连接到你已拥有的域。
     4. 创建一个密码, 然后选择 **"创建我的帐户"**。 

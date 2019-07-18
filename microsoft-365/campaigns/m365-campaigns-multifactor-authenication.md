@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置多重身份验证。
-ms.openlocfilehash: 0538709f6052a82e04652f0c7676afe8c429b44b
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: cd14bb0d0f24215c64579851fe6982c5bf1ddc3e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080662"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772489"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
-多重身份验证为你的企业提供更高的安全性。  管理员要求您使用 MFA 后, 您可以设置 Microsoft 身份验证器应用程序, 让您可以使用电话安全地登录关键应用程序。 
+多重身份验证为你的企业提供更高的安全性。 管理员要求您使用 MFA 后, 您可以设置 Microsoft 身份验证器应用程序, 让您可以使用电话安全地登录关键应用程序。 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
 
@@ -38,4 +38,4 @@ ms.locfileid: "35080662"
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>在设备中使用 Outlook 应用程序
 
-管理员要求您使用 MFA 并将身份验证器应用程序设置为身份验证的第二种形式后, 我们建议您安装并仅使用 Outlook 应用来访问 Microsoft 365 市场活动电子邮件。 请参阅[设置移动设备](../business/set-up-mobile-devices.md), 了解如何在手机上安装 Office 应用 (包括 Outlook)。
+管理员要求您使用 MFA 并将身份验证应用程序设置为身份验证的第二种形式后, 我们建议您安装并仅使用 Outlook 应用来访问 Microsoft 365 市场活动电子邮件。 请参阅[设置移动设备](../business/set-up-mobile-devices.md), 了解如何在手机上安装 Office 应用 (包括 Outlook)。

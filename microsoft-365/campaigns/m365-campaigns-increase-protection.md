@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取有关在 Microsoft 365 商业版中提高保护级别的帮助
-ms.openlocfilehash: 2ebf6994cc7ba4026c5985e6b7accfc832ab003c
-ms.sourcegitcommit: c7ea55e36484d64db3f3af8e111a83cfc634143e
+ms.openlocfilehash: 5a3a9aada60875a7ee1f43a870e4d2731f84d4c1
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35192643"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772549"
 ---
 # <a name="increase-threat-protection"></a>增加威胁防护
 
@@ -266,7 +266,7 @@ ms.locfileid: "35192643"
 3. 在 "安全性和合规性" 页上, 依次选择 "**搜索**" 和 "**审核日志搜索**"。
 1. 在 "**审核日志搜索**" 页的顶部, 选择 "**启用审核**"。
 
-打开该功能后, 可以搜索文件、文件夹和多个活动。 有关详细信息, 请参阅[搜索审核日志](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)。
+打开该功能后, 您可以搜索文件、文件夹和多个活动。 有关详细信息, 请参阅[搜索审核日志](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)。
 
 ## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>优化 SharePoint 和 OneDrive 文件和文件夹的匿名共享设置
 
@@ -289,8 +289,8 @@ ms.locfileid: "35192643"
 您可以阻止组织中的人员共享其日历, 也可以管理他们可以共享的内容。 例如, 您可以将共享限制为仅限共享忙/闲时间。
 
 1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , 然后选择 "**设置** \> **服务" & 外接程序**
-2. 在 "**服务 & 外接程序**" 页上, 选择 "**日历**", 并选择组织中的人员是否可以与拥有 Office 365 或 Exchange 的人员或任何人共享其日历。 
-    如果你选择与任何人共享, 你可以决定同时也共享忙/闲信息。
+2. 在 "**服务" & "外接程序**" 页上, 选择 "**日历**", 并选择组织中的人员是否可以与拥有 Office 365 或 Exchange 或任何人的用户共享其日历。 
+    如果选择 "与任何人共享", 则可以决定只共享忙/闲信息。
 
 3. 在页面底部选择 "**保存更改**"。
 

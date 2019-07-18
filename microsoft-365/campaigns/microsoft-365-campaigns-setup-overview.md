@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 针对市场活动的 Microsoft 365 的安装程序概述
-ms.openlocfilehash: 40894a15efd486ec1e5052725acc46f63cd811b1
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 882ca516d0e06658e24f675d5a1fe2b21a3c98b3
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183235"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772329"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>为市场活动设置 Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "35183235"
 
 ![为市场活动设置 Microsoft 365 的步骤](media/M365-democracy-SetUpProcess.png)
 
-对于符合特殊定价的市场活动, 请[从 microsoft 请求邀请](https://m365forcampaigns.microsoft.com/)开始, 然后[注册 microsoft 365 以获得市场活动](m365-campaigns-sign-up.md)。 若要完成安装程序, 请[运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)来配置核心设置。
+对于符合特殊定价的市场活动, 请[从 microsoft 请求邀请](https://m365forcampaigns.microsoft.com/)开始, 然后[注册 microsoft 365 以获得市场活动](m365-campaigns-sign-up.md)。 若要完成安装程序, 请[运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)配置核心设置。
 
 对于所有其他组织, 在[注册 Microsoft 365 商业](../business/sign-up.md)版之后, 请[运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)来配置核心设置, 以完成安装。
 
