@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何使用 Outlook 发送加密电子邮件。
-ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772319"
+ms.locfileid: "35778137"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或标记敏感电子邮件
 
@@ -60,7 +60,7 @@ ms.locfileid: "35772319"
 
 1. 在 web 浏览器中, 使用已被授予全局管理员权限的工作或学校帐户, 登录到 Office 365。 
 2. 选择 "管理" 磁贴。 
-3. 在 "Office 365 管理中心" 中, 选择 "**管理中心" > Exchange**。 
+3. 在 "管理中心" 中, 选择 "**管理中心" > Exchange**。 
 
 有关详细信息, 请参阅[在 Office 365 中定义用于加密电子邮件的邮件流规则](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)。
 
