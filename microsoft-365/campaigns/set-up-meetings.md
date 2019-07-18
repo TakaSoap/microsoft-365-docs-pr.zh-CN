@@ -22,36 +22,36 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置与 Microsoft 团队的联机会议。
-ms.openlocfilehash: 2b17ee8abb2758f7042147fda6ac7b9da68acc78
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080633"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772299"
 ---
-# <a name="set-up-meetings"></a><span data-ttu-id="c5b6e-103">设置会议</span><span class="sxs-lookup"><span data-stu-id="c5b6e-103">Set up meetings</span></span>
+# <a name="set-up-meetings"></a><span data-ttu-id="8b595-103">设置会议</span><span class="sxs-lookup"><span data-stu-id="8b595-103">Set up meetings</span></span>
 
-<span data-ttu-id="c5b6e-104">Microsoft 团队中的会议包括音频、视频和共享。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-104">Meetings in Microsoft Teams include audio, video, and sharing.</span></span> <span data-ttu-id="c5b6e-105">由于这些用户处于联机状态, 你将始终拥有会议空间, 并且你的市场活动永远不需要会议室或投影仪。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-105">And because they're online, you'll always have a meeting space and never need a room or projector for your campaign.</span></span><span data-ttu-id="c5b6e-106">Microsoft 团队会议是与组织内部和外部的员工和志愿者共同提供的一种非常好的方法。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-106"> Microsoft Teams meetings are a great way to come together with your staff and volunteers both inside and outside of your organization.</span></span> <span data-ttu-id="c5b6e-107">您不需要是组织的成员, 甚至可以拥有加入会议的帐户。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-107">You don’t need to be a member of your organization or even have an account to join a meeting.</span></span> <span data-ttu-id="c5b6e-108">对于您的政治活动, 您可以使用 Microsoft 团队安排和运行在线会议。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-108">For your political campaign, you can schedule and run online meetings using Microsoft Teams.</span></span> <span data-ttu-id="c5b6e-109">你可以在组织外部加入员工、志愿者和来宾。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-109">You can include staff, volunteers, and guests outside your organization.</span></span> <span data-ttu-id="c5b6e-110">在会议期间, 您可以共享屏幕、共享文件、分配任务等。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-110">During a meeting, you can share your screen, share files, assign tasks, and more.</span></span>
+<span data-ttu-id="8b595-104">Microsoft 团队中的会议包括音频、视频和共享。</span><span class="sxs-lookup"><span data-stu-id="8b595-104">Meetings in Microsoft Teams include audio, video, and sharing.</span></span> <span data-ttu-id="8b595-105">由于这些用户处于联机状态, 你将始终拥有会议空间, 并且你的市场活动永远不需要会议室或投影仪。</span><span class="sxs-lookup"><span data-stu-id="8b595-105">And because they're online, you'll always have a meeting space and never need a room or projector for your campaign.</span></span><span data-ttu-id="8b595-106">Microsoft 团队会议是与组织内部和外部的员工和志愿者共同提供的一种非常好的方法。</span><span class="sxs-lookup"><span data-stu-id="8b595-106"> Microsoft Teams meetings are a great way to come together with your staff and volunteers both inside and outside of your organization.</span></span> <span data-ttu-id="8b595-107">您不需要是组织的成员, 甚至可以拥有加入会议的帐户。</span><span class="sxs-lookup"><span data-stu-id="8b595-107">You don’t need to be a member of your organization or even have an account to join a meeting.</span></span> <span data-ttu-id="8b595-108">对于您的政治活动, 您可以使用 Microsoft 团队安排和运行在线会议。</span><span class="sxs-lookup"><span data-stu-id="8b595-108">For your political campaign, you can schedule and run online meetings using Microsoft Teams.</span></span> <span data-ttu-id="8b595-109">你可以在组织外部加入员工、志愿者和来宾。</span><span class="sxs-lookup"><span data-stu-id="8b595-109">You can include staff, volunteers, and guests outside your organization.</span></span> <span data-ttu-id="8b595-110">在会议期间, 您可以共享屏幕、共享文件、分配任务等。</span><span class="sxs-lookup"><span data-stu-id="8b595-110">During a meeting, you can share your screen, share files, assign tasks, and more.</span></span>
 
-<span data-ttu-id="c5b6e-111">[![通过桌面计算机和移动电话进行会议的两个用户的说明](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)</span><span class="sxs-lookup"><span data-stu-id="c5b6e-111">[![An illustration of two users having a meeting - from a desktop computer and from a mobile phone](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)</span></span>
+<span data-ttu-id="8b595-111">[![会议中的两个用户的说明](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)</span><span class="sxs-lookup"><span data-stu-id="8b595-111">[![An illustration of two users in a meeting](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)</span></span>
 
-<span data-ttu-id="c5b6e-112">下载[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)中的信息图, 以快速了解如何通过 Microsoft 团队加入或主持联机会议。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-112">Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) to get a quick overview of how to join or host an online meeting with Microsoft Teams.</span></span>
+<span data-ttu-id="8b595-112">下载[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)中的信息图, 以快速了解如何通过 Microsoft 团队加入或主持联机会议。</span><span class="sxs-lookup"><span data-stu-id="8b595-112">Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) to get a quick overview of how to join or host an online meeting with Microsoft Teams.</span></span>
 
-## <a name="best-practices"></a><span data-ttu-id="c5b6e-113">最佳做法</span><span class="sxs-lookup"><span data-stu-id="c5b6e-113">Best practices</span></span>
+## <a name="best-practices"></a><span data-ttu-id="8b595-113">最佳做法</span><span class="sxs-lookup"><span data-stu-id="8b595-113">Best practices</span></span>
 
-<span data-ttu-id="c5b6e-114">请遵循以下针对您的联机会议的最佳实践:</span><span class="sxs-lookup"><span data-stu-id="c5b6e-114">Follow these best practices for your online meetings:</span></span>
-1. <span data-ttu-id="c5b6e-115">在 Microsoft 团队中立即安排你的联机会议。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-115">Schedule your online meetings right in Microsoft Teams.</span></span> <span data-ttu-id="c5b6e-116">您可以选择团队和频道, 它会自动邀请该团队或频道中的参与者。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-116">You can choose a team and channel and it'll invite the participants in that team or channel automatically.</span></span>
-2. <span data-ttu-id="c5b6e-117">需要即席会议？</span><span class="sxs-lookup"><span data-stu-id="c5b6e-117">Need an impromptu meeting?</span></span> <span data-ttu-id="c5b6e-118">如果您正在使用一对一聊天, 只需选择 "**立即开会**" 即可开始与正在聊天的用户进行视频或音频呼叫。</span><span class="sxs-lookup"><span data-stu-id="c5b6e-118">If you're in a one-on-one chat, just choose **Meet now** to start a video or audio call with the person you're chatting with.</span></span> 
+<span data-ttu-id="8b595-114">请遵循以下针对您的联机会议的最佳实践:</span><span class="sxs-lookup"><span data-stu-id="8b595-114">Follow these best practices for your online meetings:</span></span>
+1. <span data-ttu-id="8b595-115">在 Microsoft 团队中立即安排你的联机会议。</span><span class="sxs-lookup"><span data-stu-id="8b595-115">Schedule your online meetings right in Microsoft Teams.</span></span> <span data-ttu-id="8b595-116">您可以选择团队和频道, 团队将自动邀请该团队或频道中的参与者。</span><span class="sxs-lookup"><span data-stu-id="8b595-116">You can choose a team and channel, and Teams will invite the participants in that team or channel automatically.</span></span>
+2. <span data-ttu-id="8b595-117">需要即席会议？</span><span class="sxs-lookup"><span data-stu-id="8b595-117">Need an impromptu meeting?</span></span> <span data-ttu-id="8b595-118">如果你正在使用一对一聊天, 请选择 "**立即开会**" 开始与你正在聊天的用户进行视频或音频呼叫。</span><span class="sxs-lookup"><span data-stu-id="8b595-118">If you're in a one-on-one chat, choose **Meet now** to start a video or audio call with the person you're chatting with.</span></span> 
 
 
-## <a name="schedule-a-meeting"></a><span data-ttu-id="c5b6e-119">安排会议</span><span class="sxs-lookup"><span data-stu-id="c5b6e-119">Schedule a meeting</span></span>
+## <a name="schedule-a-meeting"></a><span data-ttu-id="8b595-119">安排会议</span><span class="sxs-lookup"><span data-stu-id="8b595-119">Schedule a meeting</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP]
 
-## <a name="join-a-meeting"></a><span data-ttu-id="c5b6e-120">加入会议</span><span class="sxs-lookup"><span data-stu-id="c5b6e-120">Join a meeting</span></span>
+## <a name="join-a-meeting"></a><span data-ttu-id="8b595-120">加入会议</span><span class="sxs-lookup"><span data-stu-id="8b595-120">Join a meeting</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 
-<span data-ttu-id="c5b6e-121">在 Microsoft 团队中了解有关会议的详细信息:</span><span class="sxs-lookup"><span data-stu-id="c5b6e-121">Learn more about meeting in Microsoft Teams:</span></span>
+<span data-ttu-id="8b595-121">在 Microsoft 团队中了解有关会议的详细信息:</span><span class="sxs-lookup"><span data-stu-id="8b595-121">Learn more about meeting in Microsoft Teams:</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]

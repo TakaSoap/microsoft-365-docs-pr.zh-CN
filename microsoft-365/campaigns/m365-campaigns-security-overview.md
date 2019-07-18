@@ -21,24 +21,27 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何通过为市场活动提高 Microsoft 365 的安全性来保护你的活动。
-ms.openlocfilehash: f5a021e8c13f261ea0faf5dec5e463bfa8454277
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 74c7d5f5836fd77b591389dd467114c93b8ab14e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080655"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772409"
 ---
-## <a name="overview"></a><span data-ttu-id="e8d03-103">概述</span><span class="sxs-lookup"><span data-stu-id="e8d03-103">Overview</span></span> 
-<span data-ttu-id="e8d03-104">观看此视频以了解如何保护你的市场活动:</span><span class="sxs-lookup"><span data-stu-id="e8d03-104">Watch this video to see how you can protect your campaign:</span></span>
+# <a name="bump-up-security-protection-for-your-campaign"></a><span data-ttu-id="cec4a-103">为你的市场活动增大安全保护</span><span class="sxs-lookup"><span data-stu-id="cec4a-103">Bump up security protection for your campaign</span></span>
+
+
+## <a name="overview"></a><span data-ttu-id="cec4a-104">概述</span><span class="sxs-lookup"><span data-stu-id="cec4a-104">Overview</span></span> 
+<span data-ttu-id="cec4a-105">观看此视频以了解如何保护你的市场活动:</span><span class="sxs-lookup"><span data-stu-id="cec4a-105">Watch this video to see how you can protect your campaign:</span></span>
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
 
-<span data-ttu-id="e8d03-105">然后按照以下步骤操作:</span><span class="sxs-lookup"><span data-stu-id="e8d03-105">Then follow the steps to:</span></span>
-- [<span data-ttu-id="e8d03-106">抵御恶意软件和其他威胁</span><span class="sxs-lookup"><span data-stu-id="e8d03-106">Protect against malware and other threats</span></span>](m365-campaigns-increase-protection.md)
-- <span data-ttu-id="e8d03-107">通过保护你的帐户和应用[来保护对你的市场活动数据的访问](m365-campaigns-conditional-access.md)</span><span class="sxs-lookup"><span data-stu-id="e8d03-107">[Protect access to your campaign data](m365-campaigns-conditional-access.md) by protecting your accounts and apps</span></span>
-- [<span data-ttu-id="e8d03-108">保护管理员帐户</span><span class="sxs-lookup"><span data-stu-id="e8d03-108">Protect admin accounts</span></span>](m365-campaigns-protect-admin-accounts.md)
-- [<span data-ttu-id="e8d03-109">设置移动设备</span><span class="sxs-lookup"><span data-stu-id="e8d03-109">Set up mobile devices</span></span>](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
-- [<span data-ttu-id="e8d03-110">培训用户</span><span class="sxs-lookup"><span data-stu-id="e8d03-110">Train your users</span></span>](m365-campaigns-users.md) 
+<span data-ttu-id="cec4a-106">然后按照以下步骤操作:</span><span class="sxs-lookup"><span data-stu-id="cec4a-106">Then follow the steps to:</span></span>
+- [<span data-ttu-id="cec4a-107">抵御恶意软件和其他威胁</span><span class="sxs-lookup"><span data-stu-id="cec4a-107">Protect against malware and other threats</span></span>](m365-campaigns-increase-protection.md)
+- <span data-ttu-id="cec4a-108">通过保护你的帐户和应用[来保护对你的市场活动数据的访问](m365-campaigns-conditional-access.md)</span><span class="sxs-lookup"><span data-stu-id="cec4a-108">[Protect access to your campaign data](m365-campaigns-conditional-access.md) by protecting your accounts and apps</span></span>
+- [<span data-ttu-id="cec4a-109">保护管理员帐户</span><span class="sxs-lookup"><span data-stu-id="cec4a-109">Protect admin accounts</span></span>](m365-campaigns-protect-admin-accounts.md)
+- [<span data-ttu-id="cec4a-110">设置移动设备</span><span class="sxs-lookup"><span data-stu-id="cec4a-110">Set up mobile devices</span></span>](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
+- [<span data-ttu-id="cec4a-111">培训用户</span><span class="sxs-lookup"><span data-stu-id="cec4a-111">Train your users</span></span>](m365-campaigns-users.md) 
 
