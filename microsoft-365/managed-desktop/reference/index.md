@@ -1,4 +1,0 @@
-<span data-ttu-id="91a8f-101">--标题: Microsoft 托管桌面参考说明: 有关某些 Microsoft 托管桌面功能关键字的详细信息, 请参阅 Microsoft 托管桌面, Microsoft 365, 服务, 文档 (ms)。服务: m365-md 作者: jaimeolocalizationpriority: normal</span><span class="sxs-lookup"><span data-stu-id="91a8f-101">-- title: Microsoft Managed Desktop reference description: Detailed information on certain Microsoft Managed Desktop features keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation ms.service: m365-md author: jaimeo ms.localizationpriority: normal</span></span>
----
-
-# <a name="microsoft-managed-desktop-reference"></a><span data-ttu-id="91a8f-102">Microsoft 托管桌面参考</span><span class="sxs-lookup"><span data-stu-id="91a8f-102">Microsoft Managed Desktop reference</span></span>
