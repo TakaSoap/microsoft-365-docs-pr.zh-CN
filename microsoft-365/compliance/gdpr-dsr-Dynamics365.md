@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 468a8c7f1151443d001efb89639c5cdad204b1c2
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: fc2d978b50a433249e016c25b4c234de6c7f46b8
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698234"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778127"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 数据主体请求
 
@@ -224,7 +224,7 @@ Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提
 
 若要查找：
 
-- 用户个人资料，请转到“[Office 365 管理中心](https://portal.office.com/adminportal/home)”。 在“**管理中心**”中，选择“**用户**”。 在“**活动用户**”页面上，在列表中搜索用户。 在 Social Engagement 中，转到“设置”**\>**“用户管理”以查看自动与 Office 365 同步的信息。
+- 用户个人资料，请转到“[管理中心](https://portal.office.com/adminportal/home)”。 在“**管理中心**”中，选择“**用户**”。 在“**活动用户**”页面上，在列表中搜索用户。 在 Social Engagement 中，转到“设置”**\>**“用户管理”以查看自动与 Office 365 同步的信息。
 - 提醒的收件人，遵循[以管理员身份管理提醒收件人](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的前两个步骤。
 - 按员工输入的社区个人资料数据，转到“设置”**\>**“社区个人资料”。（有关详细信息，请参阅[管理社区个人资料](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles)。）
 - Power BI 中的用户名，打开 Social Engagement Power BI 仪表板并按员工姓名进行筛选。
@@ -242,7 +242,7 @@ GDPR 为数据主体提供了根据请求获取个人数据副本的权利。找
 
 若要导出：
 
-- 用户个人资料中的客户数据，转到“[Office 365 管理中心](https://portal.office.com/adminportal/home)”。 在“**管理中心**”中，选择“**用户**”。 在“**活动用户**”页面上，搜索你要导出其数据的用户。 删除目标用户之外的所有用户，然后选择“**导出**”将数据导出到 .csv 文件，你可以在这里使用 Excel 查看信息。
+- 用户个人资料中的客户数据，请转到“[管理中心](https://portal.office.com/adminportal/home)”。 在“**管理中心**”中，选择“**用户**”。 在“**活动用户**”页面上，搜索你要导出其数据的用户。 删除目标用户之外的所有用户，然后选择“**导出**”将数据导出到 .csv 文件，你可以在这里使用 Excel 查看信息。
 - 提醒收件人（提醒中仅有的客户数据）的电子邮件地址。 遵循[以管理员身份管理提醒收件人](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步骤。 然后选择“**导出**”，下载包括此收件人的提醒的 Excel 列表。
 - Power BI 的用户名：“参与报告”[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)在社交媒体上的团队绩效报告中显示用户名。若要导出此数据，请在 PowerBI 仪表板或[报告](https://docs.microsoft.com/power-bi/power-bi-report-add-filter)中按用户进行筛选，并[导出数据](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data)。
 
@@ -317,7 +317,7 @@ Social Engagement 已从多个社交平台（如 Twitter、WordPress、Tumblr）
 
 若要导出：
 
-- 用户个人资料中的客户数据，转到“[Office 365 管理中心](https://portal.office.com/adminportal/home)”。 在“**管理中心**”中，选择“**用户**”。 在“**活动用户**”页面上，搜索你要导出其数据的用户。 删除目标用户之外的所有用户，然后选择“**导出**”将数据导出到 .csv 文件，你可以在这里使用 Excel 查看信息。
+- 用户个人资料中的客户数据，请转到“[管理中心](https://portal.office.com/adminportal/home)”。 在“**管理中心**”中，选择“**用户**”。 在“**活动用户**”页面上，搜索你要导出其数据的用户。 删除目标用户之外的所有用户，然后选择“**导出**”将数据导出到 .csv 文件，你可以在这里使用 Excel 查看信息。
 - 提醒收件人（提醒中仅有的个人数据）的电子邮件地址。请遵循[以管理员身份管理提醒收件人](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步骤。然后选择“导出”****，下载包括此收件人的提醒的 Excel 列表。
 - Power BI 的用户名：“参与报告”[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)在社交媒体上的团队绩效报告中显示用户名。若要导出此数据，请在 PowerBI 仪表板或[报告](https://docs.microsoft.com/power-bi/power-bi-report-add-filter)中按用户进行筛选，并[导出数据](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data)。
 
