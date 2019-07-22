@@ -37,7 +37,7 @@ ms.locfileid: "35584558"
 >Windows 和 Office 服务是我们建议部署过程轮的第七步，其中涉及正在计划的准备半年功能更新的各个方面。。 若要查看完整的桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持模型和更新时间线。 这些更改简化了保持最新功能的过程。 除了这些更新之外，还提供了新的配置选项，以支持满足你需求的服务计划。 了解如何准备半年频道更新，在 Windows 10 和 Office 365 专业增强版中提供新特性和功能，并利用 System Center Configuration Manager (Current Branch) 中的新功能。
+Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持模型和更新时间线。 这些更改简化了保持最新功能的过程。 除了这些更新之外，还提供了新的配置选项，以支持满足你需求的服务计划。 了解如何准备半年频道更新，在 Windows 10 和 Office 365 专业增强版中提供新特性和功能，并利用 System Center Configuration Manager (当前分支版本) 中的新功能。
 
 [帮助客户转向 Windows 10 和 Office 365 专业增强版](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
@@ -79,7 +79,7 @@ Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持
 
 ### <a name="supporting-management-tools"></a>支持管理工具
 
-我们还考虑了如何无缝部署更新。System Center Configuration Manager (Current Branch) 会经常更新，以支持推出这些 Windows 和 Office 更新，以及任何新功能。
+我们还考虑了如何无缝部署更新。System Center Configuration Manager (当前分支版本) 会经常更新，以支持推出这些 Windows 和 Office 更新，以及任何新功能。
 
 
   [使用 System Center Configuration Manager 部署 Windows 10 更新](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-manage-updates-configuration-manager)
@@ -127,7 +127,7 @@ Office 365 提供四个服务频道：
 
 [Windows 10 质量更新说明和增量更新结语](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
-适用于企业的 Windows 更新和 Windows Server Update Services 长期以来支持快速更新，但我们现在已将该支持扩展到 System Center Configuration Manager (Current Branch)，这样它也可以使用快速更新。
+适用于企业的 Windows 更新和 Windows Server Update Services 长期以来支持快速更新，但我们现在已将该支持扩展到 System Center Configuration Manager (当前分支版本)，这样它也可以使用快速更新。
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
@@ -143,7 +143,7 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 正如我们在“设备和应用就绪情况”中所介绍的，你将希望使用我们在“部署过程轮”步骤 1 中设置的相同准备工具开始准备这些更大的更新。
 
-至于工具，你可以使用适用于企业的 Windows 更新中的策略设置、通过 System Center Configuration Manager (Current Branch) 的软件更新管理、Windows Server Update Services (WSUS) 或者由 Microsoft Intune 设置的更新策略。如果你对网络带宽有顾虑，请参见“步骤 2：目录和网络就绪情况”，了解通过交付优化和其他对等缓存技术来减少网络流量的选项。
+至于工具，你可以使用适用于企业的 Windows 更新中的策略设置、通过 System Center Configuration Manager (当前分支版本) 、Windows Server Update Services (WSUS) 进行软件更新管理或者通过 Microsoft Intune 更新策略设置。如果你担心网络带宽，请参见“步骤 2：目录和网络就绪情况”，了解通过交付优化和其他对等缓存技术来减少网络流量的选项。
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -155,7 +155,7 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 #### <a name="upgrade-task-sequences"></a>升级任务序列
 
-通过标准软件更新管理例程来安装更大的功能更新是受支持的选项，但是许多组织将选择使用 System Center Configuration Manager (Current Branch) 中的升级任务序列或 Microsoft Deployment Toolkit。
+通过标准软件更新管理例程来安装更大的功能更新是受支持的选项，但是许多组织将会选择使用 System Center Configuration Manager (当前分支版本) 中的升级任务序列或 Microsoft Deployment Toolkit。
 
 可通过任务序列在安装功能更新之前创建自定义检查或任务，并且可以在更新安装本身完成之后执行自定义任务 – 更新后任务可能包括更新期间暂停服务（如果需要）、驱动程序安装和更换、应用程序升级或任务栏和 Windows 10“开始”菜单的个性化设置。
 
