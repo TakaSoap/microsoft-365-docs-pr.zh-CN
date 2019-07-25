@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: 6fd328ebd4a8d3fbcde836c4aa87b56b9775c3cd
-ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
+ms.openlocfilehash: 64cfa460311af6cdafb637ceb3415511e003e394
+ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35114954"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35853141"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
@@ -36,7 +36,7 @@ Microsoft 365 Business 是一套功能全面的业务生产和协作工具，如
   
 Microsoft 365 商业版适用于最多300个许可证, 如果你需要更多许可证, 请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)文档以了解详细信息。
 
-有关完整的功能列表, 请参阅[Microsoft 365 业务服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description)。
+有关完整的功能列表, 请参阅[Microsoft 365 业务服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
   
 ## <a name="small-business-security-needs"></a>小型企业安全性需求
 

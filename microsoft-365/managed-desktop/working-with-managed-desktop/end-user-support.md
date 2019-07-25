@@ -3,16 +3,16 @@ title: 获取对 Microsoft 托管桌面的支持
 description: ''
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a073a5dfe61b036cbdc3bf9b0be08bc559acb548
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 1e98ef5a7c800ed3fb7fe1b7355e535ed3576c1e
+ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970469"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35853161"
 ---
 # <a name="getting-help-for-end-users"></a>获取最终用户的帮助
 
@@ -41,7 +41,7 @@ ms.locfileid: "33970469"
 - 澳大利亚: + 61 180 037 0619
 
 >[!NOTE]
->调用时, 请准备好设备序列号。 
+>调用以验证你的身份时, 请准备好你的组织电子邮件地址。 
 
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面的管理员支持](admin-support.md)。 
