@@ -3,16 +3,16 @@ title: Microsoft 托管桌面支持
 description: ''
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 83f4d8b6fb9f2938151db8dfea37b3c9f18124c9
+ms.sourcegitcommit: 8f57be80955cd374d418c7e1a78849ff3e1d630f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970459"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907543"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面支持
 
@@ -25,15 +25,15 @@ Microsoft 将提供主动和反应性事件管理。 Microsoft 托管桌面管�
 
 ## <a name="whats-included"></a>包括哪些内容？
 
-Microsoft 托管桌面支持:
+Microsoft 托管桌面支持包括:
 
-- 提供专用于 Microsoft 托管桌面设备的支持工程师团队
-- 支持为 Microsoft 托管桌面设备和分配到这些设备的最终用户
-- 授予对 Microsoft 托管桌面设备的有限管理访问权限, 以便支持工程师管理 Microsoft 托管桌面设备 
+- 专用于 Microsoft 托管桌面设备的工程师团队
+- 适用于使用 Microsoft 托管桌面设备的最终用户的支持选项
+- 为管理 Microsoft 托管桌面设备的工程师授予对 Microsoft 托管桌面设备的有限管理访问权限 
 
 支持的产品:
 
-- Windows 10 with Windows Defender 高级威胁防护 (WDATP) 
+- 使用 Microsoft Defender 高级威胁防护的 Windows 10 
 - Office 365 套件的子集: Outlook、Word、PowerPoint、Excel、Skype for Business 客户端、Microsoft 团队 
 - 适用于企业的 Microsoft Store 
 - OneDrive for Business 客户端 
