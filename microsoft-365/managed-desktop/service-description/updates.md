@@ -1,18 +1,18 @@
 ---
 title: 如何在 Microsoft 托管桌面中处理更新
 description: 将 Microsoft 托管桌面保持最新状态是速度和稳定性的平衡。
-keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/09/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0dad909ce9e17f993de64ba39b08f388c71abb89
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7709779c73293a4523bf3cc381d0b59f7fbca325
+ms.sourcegitcommit: d137cb1bd67a79d8af84357dc156824830d35aa7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278641"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "35924865"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 托管桌面中处理更新
 
@@ -23,15 +23,15 @@ ms.locfileid: "32278641"
 
 Microsoft 托管桌面将所有设备连接到基于云的新式基础结构。 保持 Windows、Office、驱动程序、固件和 Microsoft Store for Business 应用程序更新最新是速度和稳定性的平衡。 部署组将用于确保以安全的方式推出 OS 和策略。 
 
-由 Microsoft 发布的更新是累积的, 可能会被分类为质量或功能更新。
-有关详细信息, 请参阅[Windows update for Business: 更新类型](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
+由 Microsoft 发布的更新是累积的, 并被分类为质量或功能更新。
+有关详细信息, 请参阅[Windows update For Business: 更新类型](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
 
 ## <a name="update-groups"></a>更新组
 
 Microsoft 托管桌面使用四个 Azure AD 组管理更新:
 
-- **测试**: 用于验证 Microsoft 托管桌面策略更改、OS 更新、功能更新和其他已推送到租户的更改。 测试组中不应放置任何最终用户。 测试组不受任何已建立的 sla 和最终用户支持的支持。 此组可用于验证应用程序与新策略或操作系统更改的兼容性。  
-- **First**: 包含早期的软件采用者和设备, 可能受预发布更新的制约。 如果存在测试环中测试期间未涵盖的方案, 则此组中的设备可能会遇到中断。
+- **测试**: 用于验证 Microsoft 托管桌面策略更改、OS 更新、功能更新和其他已推送到租户的更改。 测试组中不应放置任何最终用户。 测试组不受任何已建立的 Sla 和最终用户支持的支持。 此组可用于验证应用程序与新策略或操作系统更改的兼容性。  
+- **First**: 包含早期的软件采用者和设备, 它们可能受预发布更新的制约。 如果存在测试环中测试期间未涵盖的方案, 则此组中的设备可能会遇到中断。
 - **Fast**: 按稳定性对速度进行优先级划分。 用于在向广泛组提供质量问题之前检测质量问题。 此组可用作验证的下一层, 但通常比测试和第一组更稳定。 
 - **广泛**: 最后一个组具有可用的功能和质量更新。 此组包含租户中的大多数用户, 因此在部署过程中比速度更有利于稳定性。 应在此完成应用程序的测试, 因为环境最稳定。 
 
@@ -55,16 +55,19 @@ Microsoft 托管桌面使用四个 Azure AD 组管理更新:
 <tr><td>反病毒定义</td><td colspan="4">更新每个扫描</td></tr>
 </table>
 
-这些延期时段特意旨在确保所有用户的高安全性和性能标准。 此外, 根据在所有 Microsoft 托管桌面设备上收集的数据以及更新的不同范围和影响, Microsoft 托管桌面保留了灵活性, 以便在 ad 上修改任意和所有部署组的上述延期时段的长度hoc。
+>[!NOTE]
+>这些延期时段特意旨在确保所有用户的高安全性和性能标准。 此外, 根据在所有 Microsoft 托管桌面设备上收集的数据以及更新的不同范围和影响, Microsoft 托管桌面保留了灵活性, 以便在 ad 上修改任意和所有部署组的上述延期时段的长度hoc。
+>
+>Microsoft 托管桌面对每个 Windows 功能版本执行独立评估, 以评估其对托管租户的必要性和有用性。 因此, Microsoft 托管桌面可能会或可能不会部署所有 Windows 功能更新。 
 
 ## <a name="windows-insider-program"></a>Windows 预览体验计划
 
-Microsoft 托管桌面不支持属于 Windows 预览体验计划的设备。 windows 预览体验计划用于验证预发布的 Windows 软件, 适用于非关键设备。 虽然这是一个重要的 Microsoft 计划, 但不适合在生产环境中进行广泛的部署。 
+Microsoft 托管桌面不支持属于 Windows 预览体验计划的设备。 Windows 预览体验计划用于验证预发布的 Windows 软件, 适用于非关键设备。 虽然这是一个重要的 Microsoft 计划, 但不适合在生产环境中进行广泛的部署。 
 
-使用 Windows 有问必答版本找到的任何设备都将放入测试组中, 并且不会包含在更新服务级别协议 (sla) 中。
+在 Windows 有问必答版本中找到的任何设备都可能放入测试组中, 并将从 Microsoft 托管桌面的更新服务级别协议 (Sla) 和最终用户支持中免除。
 
 ## <a name="bandwidth-management"></a>带宽管理
 
-传递优化用于所有操作系统和驱动程序更新。 它通过在企业网络中查找对等方的更新, 最小化 Windows Update (WU) 服务的下载大小。
+传递优化用于所有操作系统和驱动程序更新。 通过从企业网络中的对等方处查找更新, 可最大限度地减少 Windows Update service 中的下载大小。
 
 
