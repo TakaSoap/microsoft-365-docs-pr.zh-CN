@@ -3,20 +3,20 @@ title: Microsoft 365 企业版概述
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2019
-ms.audience: ITPro
+ms.date: 07/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍了 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
+ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553331"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35937415"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -30,9 +30,9 @@ Microsoft 365 企业版包括:
 
 |||
 |:-------|:-----|
-| Office 365 Enterprise | 包括 Office 365 专业增强版、电脑和 Mac 的最新 Office 应用程序 (如 Word、Excel、PowerPoint、Outlook 和其他用户), 以及用于电子邮件、文件存储和协作、会议等的一套完整的在线服务。 |
+| 本地和基于云的应用和生产率服务 | 包括 Office 365 专业增强版、电脑和 Mac 的最新 Office 应用程序 (如 Word、Excel、PowerPoint、Outlook 和其他用户), 以及用于电子邮件、文件存储和协作、会议等的一套完整的在线服务。 |
 | Windows 10 企业版 | 满足了大型和中型组织的需求, 为用户提供了具有全面部署、设备和应用程序管理的最高效、安全的 Windows 和 IT 专业人员版本。 |
-| 企业移动性 + 安全性 (EMS) | 包括 Microsoft Intune, 这是一种基于云的企业移动管理 (EMM) 服务, 可帮助您的员工在保持公司数据受保护的情况下提高工作效率。 |
+| 设备管理和高级安全服务 | 包括 Microsoft Intune, 这是一种基于云的企业移动管理 (EMM) 服务, 可帮助您的员工在保持公司数据受保护的情况下提高工作效率。 |
 |||
 
 ## <a name="plans"></a>计划
@@ -41,10 +41,17 @@ Microsoft 365 企业版提供了三个计划。
 
 |||
 |:-------|:-----|
-| E3 | 包括 Office 365 企业版、Windows 10 企业版和企业移动性 + 安全性 (EMS)。 |
-| E5 | 包括所有 E3's 功能, 以及高级安全性、语音和数据分析工具。 |
-| F1 | 专门为将 firstline 工作者连接到完成其最佳工作所需的工具和资源而构建的。 Firstline 工作人员是与客户接洽的第一行为, 代表贵公司的品牌和价值。 |
+| E3 | 访问 Microsoft 365 中的核心产品和功能, 以提高工作效率和促进创新和安全。 |
+| E5 | 访问 Microsoft 365 中的最新产品和功能, 包括高级威胁防护、安全和协作工具。。 包括所有 E3's 功能, 以及高级安全性、语音和数据分析工具。 |
+| F1 | 通过专门构建的工具和资源与您的 Firstline 工作人员联系, 让他们能够完成其最佳工作。 |
 |||
+
+如果你有 Microsoft 365 企业 E3, 还可以获取以下[产品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
+
+- 身份 & 威胁防护
+- 信息保护 & 合规性
+
+这些产品包含 Microsoft 365 企业版 E5 附带的其他功能。
 
 有关详细信息, 请参阅[每个计划的特性和功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
@@ -52,7 +59,7 @@ Microsoft 365 企业版提供了三个计划。
 
 [Microsoft 365 企业版海报](http://aka.ms/m365eposter)是查看的中心位置:
 
-- Microsoft 365 企业版的产品和功能及其如何映射到其价值支柱
+- Microsoft 365 企业的优势及其如何将其映射到价值支柱
 - Microsoft 365 企业版计划及其包含的组件 
 - Microsoft 365 企业版支持的新式工作场所的关键组件
 - Microsoft 365 企业的关键业务价值方案以及哪些服务和产品使它们成为现实
@@ -103,6 +110,7 @@ Microsoft 365 企业版提供了三个计划。
 |||
 |:-------|:-----|
 ![](./media/m365-poster/m365-fundamentals.svg)| 向自己培训并努力处理 Microsoft 365 认证。 <BR> 从[Microsoft 365 基础](https://docs.microsoft.com/learn/paths/m365-fundamentals/)开始。
+|||
 
 
 ## <a name="next-step"></a>后续步骤
