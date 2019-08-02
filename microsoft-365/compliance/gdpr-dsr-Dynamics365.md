@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fc2d978b50a433249e016c25b4c234de6c7f46b8
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 72277ec2dfe7681aa5f596e655d5e275bbb64dd1
+ms.sourcegitcommit: 5615e790dc53ccc74f3c475ca43d69ca56be348a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778127"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36041176"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 数据主体请求
 
@@ -96,7 +96,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 - 创建用于定位和导出个人数据的自定义表单。
 - 创建允许经过身份验证的客户查看其个人数据的外部门户或网站。
 
-***Dynamics for Business Central*** 提供了几种搜索客户数据的方法。 有关详细信息，请参阅[对数据进行搜索、筛选和排序](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters)。
+***Dynamics 365 Business Central*** 提供了几种搜索客户数据的方法。 有关详细信息，请参阅[对数据进行搜索、筛选和排序](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters)。
 
 ***Dynamics 365 for Talent*** 提供了高级搜索和筛选功能来查找特定个人数据，并提供了 Microsoft Office 导出功能导出该信息或使用浏览器扩展将该信息打印到 .pdf。
 
@@ -189,7 +189,7 @@ Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提
 
 ***Dynamics 365 Business Central*** 提供以下功能：
 
-- 你可以将客户数据导出到 Excel 文件。 然后，在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。 有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data)。
+- 你可以将客户数据导出到 Excel 文件。 然后，在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。 有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data)。
 - 你可以将客户数据导出到 Excel 文件。 然后，在 Excel 中，可以编辑要包括在移植请求中的客户数据，并将其另存为常用的机器可读格式，如 .csv 或 .xml。 有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/zh-CN/dynamics365/business-central/about-export-data)。
 
 ### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
