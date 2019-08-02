@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5eac2e8c3023015bd034c51ad7e16a669a484772
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5e842849afbedd506689caa9ffc0953a58e18fed
+ms.sourcegitcommit: f5c9aff5700f7824bf71f4a7e8c7236f7d91043e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390419"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36059582"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>将应用程序部署到 Microsoft 托管桌面设备
 Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并将其部署到用户设备。 在使用 Microsoft 托管桌面门户后, 可以添加和部署应用。 
@@ -41,9 +41,9 @@ Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并�
 1.  登录到[Microsoft 托管桌面管理门户](http://aka.ms/mmdportal)。 
 2.  在 "**清单**" 下, 选择 "**应用**"。
 3.  在 "应用工作负荷" 中, 选择 "**添加**"。
-4.  在 "**添加应用程序**" 中, 选择 "**业务线应用程序**" 或 " **Windows 应用程序 (Win32) 预览**"。
+4.  在 "**添加应用程序**" 中, 选择 "**业务线应用程序**" 或 " **Windows 应用程序 (Win32)**"。
     - 如果选择了 "**业务线应用程序**", 请参阅[向 Microsoft Intune 添加 Windows 业务线应用程序](https://docs.microsoft.com/intune/lob-apps-windows), 以了解有关添加和配置业务线应用程序的说明。
-    - 如果选择了 " **windows 应用 (Win32) 预览**", 请参阅[Win32 应用管理](https://docs.microsoft.com/intune/apps-win32-app-management)以了解有关添加和配置 Windows 应用的说明。
+    - 如果选择了 " **windows 应用程序 (Win32)**", 请参阅[Win32 应用程序管理](https://docs.microsoft.com/intune/apps-win32-app-management)以了解有关添加和配置 Windows 应用的说明。
 
 <span id="msfb-apps">
 
