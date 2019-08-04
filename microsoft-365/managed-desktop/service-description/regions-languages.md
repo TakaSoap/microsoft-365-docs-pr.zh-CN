@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3b89591943e060eb752f0301258f2114f3a84608
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: bdd11728b6b3b5ebaf0eea507906e4fc31adb7b5
+ms.sourcegitcommit: d9350b6465d1404d32bcba8f5fc5a203085e6b82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34482697"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786727"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Microsoft 托管桌面支持的区域和语言
 
@@ -20,7 +20,7 @@ ms.locfileid: "34482697"
 - **区域:** 美国、加拿大 (不包括魁北克)、英国、澳大利亚和新西兰
 - **语言:** 英语是当前对受管理的设备上的用户可用的唯一受支持的语言。 这适用于[管理员支持](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support)和[最终用户支持](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)选项。 
 
-但是, 客户仍可以在上面列出的区域之外使用托管设备, 而不会中断 Microsoft 托管桌面服务。 例如, 基于英国的员工可以在亚洲、欧洲或南美洲旅行时安全地工作并在其托管设备上接收更新。
+但是, 客户仍可以使用上面列出的区域之外的托管设备, 而不会中断 Microsoft 托管桌面服务。 例如, 基于英国的员工可以在亚洲、欧洲或南美洲旅行时安全地工作并在其托管设备上接收更新。
 
 有关使用 Microsoft 托管桌面的用户支持的详细信息, 请参阅[支持 Microsoft 托管桌面](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support)。
 

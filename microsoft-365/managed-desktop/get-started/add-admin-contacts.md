@@ -1,18 +1,18 @@
 ---
 title: 在 Microsoft 托管桌面管理门户中添加管理员联系人
 description: 告诉我们每个焦点区域的联系人。
-keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 014404ab38ff5871289be186dec150115c3be6ec
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277525"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390529"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>在 Microsoft 托管桌面管理门户中添加管理员联系人
 
@@ -26,18 +26,19 @@ Microsoft 托管桌面管理门户要求访问门户的用户拥有以下 Azure 
 - 记帐管理员
 - 服务支持管理员
 
-全局管理员必须是要在 Microsoft 托管桌面中注册客户的全局管理员。  在管理门户中, 所有五个角色都具有相同的访问权限, 以启动和查看任务。  有关在 azure AD 中分配这些角色的详细信息, 请参阅[azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
+全局管理员必须是要在 Microsoft 托管桌面中注册客户的全局管理员。 在管理门户中, 所有五个角色都具有相同的访问权限, 以启动和查看任务。 有关在 Azure AD 中分配这些角色的详细信息, 请参阅[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
 
 ## <a name="admin-contact-focus-areas"></a>管理员联系人焦点区域
 
-管理员联系人应是可以回答问题并针对不同的重点领域做出决定的最佳人员或组。  Microsoft 托管桌面操作将与这些管理员联系人联系, 以了解涉及客户存档的支持请求的问题。  这些管理员联系人将接收支持请求更新和新邮件的通知。  这些领域包括:
+管理员联系人应是可以回答问题并针对不同的重点领域做出决定的最佳人员或组。 Microsoft 托管桌面操作将与这些管理员联系人联系, 以了解涉及客户存档的支持请求的问题。 这些管理员联系人将接收支持请求更新和新邮件的通知。 这些领域包括:
 
 焦点区域 | 有关的问题
 --- | ---
 应用 | 应用程序打包故障排除
 设备 | 设备运行状况, 使用 Microsoft 托管桌面设备进行故障排除
 安全性 | Microsoft 托管桌面设备的安全问题故障排除
-其他 | 对于未被其他区域覆盖的问题
+IT 技术支持人员 | 在 Microsoft 托管桌面支持 MMD 支持区域之外的最终用户票证的情况下 
+Other | 对于未被其他区域覆盖的问题
 
 你为这些联系人选择的任何人都需要了解有关 Microsoft 托管桌面环境的决策的知识和权威。 在集成 Microsoft 托管桌面环境时, 系统会提示你为本地帮助台和安全添加联系人。 
 

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39a5102d045d9ed79b631a3b477bd1c72dea76de
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34918717"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425735"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 咨询服务
 
@@ -22,7 +22,7 @@ ms.locfileid: "34918717"
 若要使用 MCS 应用程序打包,**您必须提供以下元素**:
 
 - 源安装程序文件 (例如, setup.exe 或 .msi)。
-- 安装说明, 指定有关最终安装的外观的详细信息。 例如, 是否应有应用程序的桌面快捷方式？ 应用程序的可见性是什么？ 应用是否应连接到服务器, 如果是, 是否应使用哪一个？ <!--For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx). -->
+- 安装说明, 指定有关最终安装的外观的详细信息。 例如, 是否应有应用程序的桌面快捷方式？ 应用程序的可见性是什么？ 应用是否应连接到服务器, 如果是, 是否应使用哪一个？ 有关详细信息, 请参阅[应用程序打包请求模板](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)。
 - 您必须执行自己的验收测试, 以验证应用程序在您的环境中是否按需运行。
 
 **MCS 将负责执行以下操作:**

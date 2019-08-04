@@ -2,8 +2,8 @@
 layout: HubPage
 hide_bc: true
 ms.topic: hub-page
-ms.author: robmazz
-author: robmazz
+ms.author: sirkkuw
+author: sirkkuw
 keywords: Microsoft 365 商业版, Microsoft 365, 商业版, SMB, 中小型企业版, Microsoft 365 业务文档, 文档, 文档, 技术信息
 localization_priority: Normal
 audience: microsoft-business
@@ -11,12 +11,12 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 title: Microsoft 365 业务资源
 description: 了解如何在业务中规划、部署和使用 Microsoft Office 365、Windows 10 和企业移动性 + 安全性, 以实现可团队合作和解锁创造性的集成和安全基础结构。
-ms.openlocfilehash: 3c5cc341734896cb9a42565c8647f3f5ac37fc5b
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: a7b6ef6b3c86868ffd9dd2ab912c427911075911
+ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660281"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34653038"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -61,7 +61,7 @@ ms.locfileid: "33660281"
                                             </div>
                                             <div class="cardText">
                                                 <h3>设置</h3>
-                                              <P><a href="get-microsoft-365-business.md" target="_blank">获取 Microsoft 365 业务</a></p>
+                                              <P><a href="sign-up.md" target="_blank">获取 Microsoft 365 业务</a></p>
                                                <P><a href="set-up.md" target="_blank">设置 Microsoft 365 业务</a></p>
                                                 <P><a href="set-up-windows-devices.md" target="_blank">设置 Windows 10 设备</a></p>
                                                 <P><a href="set-up-mobile-devices.md" target="_blank">设置 iPhone 和 Android 设备</a></p>
@@ -99,7 +99,6 @@ ms.locfileid: "33660281"
                                             </div>
                                             <div class="cardText">
                                                 <h3>保护业务数据和设备</h3>
-                                                 <P><a href="https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data"target="_blank">保护 Microsoft 365 业务的十大方法</a></p>
                                                 <P><a href="security-features.md" target="_blank">了解有关安全功能的详细信息</a></p>
                                                 <P><a href="remove-company-data.md" target="_blank">从设备中删除数据</a></p>
                                                 <P><a href="reset-devices-to-factory-settings.md" target="_blank">重置设备</a></p>

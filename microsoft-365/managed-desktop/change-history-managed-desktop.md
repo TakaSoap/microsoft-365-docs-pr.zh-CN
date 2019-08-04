@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
-ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
+ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
+ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605961"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795618"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档的更改历史记录
 
@@ -23,6 +23,9 @@ ms.locfileid: "35605961"
 新建或更改的主题 | 说明
 --- | ---
 [使用 Microsoft 咨询服务](get-ready/apps-mcs.md) | 更新的主题
+[Microsoft 托管桌面和 ITIL](MMD-and-ITSM.md) | 新主题
+[设备配置](service-description/device-policies.md) | 更新的主题
+
 
 ## <a name="june-2019"></a>6月2019
 新建或更改的主题 | 说明

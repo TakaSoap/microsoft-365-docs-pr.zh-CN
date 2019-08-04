@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 配置 Azure AD 标识保护并分析 Microsoft 365 企业版测试环境中的当前帐户。
-ms.openlocfilehash: bdac512f7645bf78c0a9c6bc5f71b35916bc4812
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d267bb9dff94acfec46fa1275887f9cade2a7285
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279091"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074082"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>适用于 Microsoft 365 企业版测试环境的 Azure AD 标识保护
 
@@ -32,7 +32,7 @@ ms.locfileid: "32279091"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
 
@@ -41,17 +41,17 @@ ms.locfileid: "32279091"
 如果要在模拟的企业中测试 Azure AD 标识保护, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试 Azure AD Identity Protection 不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 此处提供它作为选项, 以便您可以在代表典型组织的环境中测试 Azure AD 标识保护并对其进行实验。 
+> 测试 Azure AD Identity Protection 不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供它作为选项, 以便您可以在代表典型组织的环境中测试 Azure AD 标识保护并对其进行实验。 
   
 ## <a name="phase-2-enable-and-use-azure-ad-identity-protection"></a>第2阶段: 启用和使用 Azure AD 标识保护
 
 1. 打开浏览器的私有实例, 并[https://portal.azure.com](https://portal.azure.com)使用 Microsoft 365 企业版测试环境的全局管理员帐户登录到 Azure 门户。
 2. 在 Azure 门户中, 单击 "**所有服务 > Marketplace**"。
-3. 键入**Azure AD Identity Protection** , 然后单击它。
+3. 键入**AZURE AD Identity Protection** , 然后单击它。
 4. 在 " **** 入门" 边栏选项卡**** 上的 "**设置**" 下, 单击 "**固定到仪表板**", 然后单击 "**创建**"。
-5. 在 Azure 门户中, 单击仪表板上的 " **Azure AD 标识保护**"。 
+5. 在 Azure 门户中, 单击仪表板上的 " **AZURE AD 标识保护**"。 
 
-   您应该会看到一个带有仪表板的**Azure AD 标识保护-概述**刀片。 在 "**漏洞**" 下, 请注意, 它确定了没有多重身份验证注册的用户帐户数。 此数字取决于您已完成的以前的 Microsoft 365 企业测试实验室指南。
+   您应该会看到一个带有仪表板的**AZURE AD 标识保护-概述**刀片。 在 "**漏洞**" 下, 请注意, 它确定了没有多重身份验证注册的用户帐户数。 此数字取决于您已完成的以前的 Microsoft 365 企业测试实验室指南。
 
 6. 依次单击要进行**调查**的类别, 以查看是否有任何用户或事件已检测到。
 
@@ -65,7 +65,7 @@ ms.locfileid: "32279091"
 
 ## <a name="see-also"></a>另请参阅
 
-[阶段 2：身份](identity-infrastructure.md)
+[阶段 2：标识](identity-infrastructure.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 

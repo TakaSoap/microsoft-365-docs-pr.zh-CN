@@ -3,7 +3,7 @@ title: Microsoft 365 Business 入门
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: 78f7360c80667b8d34fad9d849cfc2cf83a8577b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d309700761ee48ef66a8cd3886fd416c79463ed5
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278101"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074292"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business 入门
 
@@ -61,7 +61,7 @@ Microsoft 365 商业版适用于最多300个许可证, 如果你需要更多许�
     
     如果要将**本地 Active Directory 永久移动到云**, 可以使用安装向导在 Microsoft 365 Business 管理中心中手动添加用户, 也可以执行与 Azure AD Connect 的一次性同步。 可通过 2 种方法执行此操作： 
     
-  - 如果你还具有 exchange 2010、exchange 2013 或 exchange 2016 服务器, 则可以[使用最少混合将 Exchange 邮箱快速迁移到 Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef)。 最少混合步骤包括将用户一次性同步到 Azure AD 以及将电子邮件从本地迁移到云。 如果使用此方法，电子邮件迁移完成后，将自动关闭目录同步。
+  - 如果你还具有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器, 则可以[使用最少混合将 Exchange 邮箱快速迁移到 Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef)。 最少混合步骤包括将用户一次性同步到 Azure AD 以及将电子邮件从本地迁移到云。 如果使用此方法，电子邮件迁移完成后，将自动关闭目录同步。
     
   - 使用 Office 365 目录同步向导将用户同步到云。请按照[设置 Office 365 目录同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)中的步骤来完成此过程。将用户同步到云后，需要[关闭目录同步](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)。
     
@@ -73,11 +73,11 @@ Microsoft 365 商业版适用于最多300个许可证, 如果你需要更多许�
   
 ### <a name="3-prepare-pcs"></a>3: 准备电脑
 
-管理员可以使用[windows AutoPilot](add-autopilot-devices-and-profile.md)为新设备预选择设置 windows 10 电脑。 用户可以按照本主题中的步骤设置其现有的或新的 Windows 10 设备:[为 Microsoft 365 商业版用户设置 Windows 电脑](set-up-windows-devices.md)。 对于现有设备, 用户还可以**选择**[将文件移动到 OneDrive for business](move-files-to-onedrive.md)。 他们还可以使用第三方工具将与 Windows 配置文件关联的文件移动到 OneDrive。
+管理员可以使用[Windows AutoPilot](add-autopilot-devices-and-profile.md)为新设备预选择设置 Windows 10 电脑。 用户可以按照本主题中的步骤设置其现有的或新的 Windows 10 设备:[为 Microsoft 365 商业版用户设置 Windows 电脑](set-up-windows-devices.md)。 对于现有设备, 用户还可以**选择**[将文件移动到 OneDrive for business](move-files-to-onedrive.md)。 他们还可以使用第三方工具将与 Windows 配置文件关联的文件移动到 OneDrive。
   
-如果您的组织使用的是本地 windows Server Active Directory, 则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备, 同时仍保持对需要本地身份验证的本地资源的访问权限。 按照 Microsoft 365 商业版中的 "[启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作, 以便对此进行设置。 这是此状态的首选方法, 称为**混合 Azure AD 加入的设备**。 
+如果您的组织使用的是本地 Windows Server Active Directory, 则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备, 同时仍保持对需要本地身份验证的本地资源的访问权限。 按照 Microsoft 365 商业版中的 "[启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作, 以便对此进行设置。 这是此状态的首选方法, 称为**混合 AZURE AD 加入的设备**。 
   
-如果保留包含某些本地资源 (如文件共享和打印机) 的本地 Active Directory, 则可以通过以下步骤为**Azure AD 联接的设备**授予对这些资源的访问权限:[从访问本地资源Microsoft 365 商业版中的 Azure AD 加入设备](access-resources.md)。
+如果保留包含某些本地资源 (如文件共享和打印机) 的本地 Active Directory, 则可以通过以下步骤为**AZURE AD 联接的设备**授予对这些资源的访问权限:[从访问本地资源Microsoft 365 商业版中的 Azure AD 加入设备](access-resources.md)。
   
 设置 Windows 10 电脑后, 可以将[Office 自动安装](auto-install-or-uninstall-office.md)到设备上。 
   

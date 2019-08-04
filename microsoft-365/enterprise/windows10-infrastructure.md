@@ -1,7 +1,7 @@
 ---
 title: 适用于 Microsoft 365 企业版的 Windows 10 企业版基础结构
 description: 提供了在 Microsoft 365 企业版中将 Windows 10 企业版部署到电脑上所需步骤的高级别指南。
-keywords: microsoft 365, microsoft 365 企业版, microsoft 365 文档, Windows 10 企业版, 部署
+keywords: Microsoft 365, Microsoft 365 企业版, Microsoft 365 文档, Windows 10 企业版, 部署
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/18/2018
 ms.author: greglin
-ms.openlocfilehash: 88517c6b8de95c54ee9a2e47d4545266eb198249
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 450b14fb82483bd83e0c83dace173540d0281868
+ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289429"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33623126"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
 
@@ -27,7 +27,7 @@ Microsoft 365 企业版包括 Windows 10 企业版, 为您提供用于执行更�
 - **具有智能安全性**-它是最安全的 Windows 发布, 具有旨在协同工作以更好地保护组织的智能安全功能。
 - **实现创造性和团队合作**-解锁创造性和团队合作, 以提供用户最喜爱的工作体验。
 
-您需要了解部署 Windows 10 操作系统的不同方法, 并为您的组织选择正确的方法。 根据你的 Microsoft 365 企业版订阅, 还需要配置 windows 10 服务和安全功能, 以充分利用 windows 10。
+您需要了解部署 Windows 10 操作系统的不同方法, 并为您的组织选择正确的方法。 根据你的 Microsoft 365 企业版订阅, 还需要配置 Windows 10 服务和安全功能, 以充分利用 Windows 10。
 
 Windows 10 为 Microsoft 365 企业版启用了这些战略业务方案:
 
@@ -52,8 +52,8 @@ Windows 10 为 Microsoft 365 企业版启用了这些战略业务方案:
 
 | 部署方案 | 何时使用 |
 |:--- |:--- |
-| [使用 System Center Configuration Manager 作为就地升级](windows10-deploy-inplaceupgrade.md) | 如果需要将 windows 7 或 windows 8.1 计算机升级到<a href="https://aka.ms/windows-10-release-information" target="_blank">当前版本</a>的 windows 10 企业版, 并且您的计算机当前是使用<a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (当前分支)</a>进行管理的, 请选择此选项。 |
-| [使用 Windows Autopilot](windows10-deploy-autopilot.md) | 如果要设置 windows 10 企业版、版本1703或更高版本预安装的新 Windows 计算机, 请选择此选项。 最终用户将使用所需的配置来启动安装程序, 方法是输入其工作或学校帐户凭据。 |
+| [使用 System Center Configuration Manager 作为就地升级](windows10-deploy-inplaceupgrade.md) | 如果需要将 Windows 7 或 Windows 8.1 计算机升级到<a href="https://aka.ms/windows-10-release-information" target="_blank">当前版本</a>的 Windows 10 企业版, 并且您的计算机当前是使用<a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (当前分支)</a>进行管理的, 请选择此选项。 |
+| [使用 Windows Autopilot](windows10-deploy-autopilot.md) | 如果要设置 Windows 10 企业版、版本1703或更高版本预安装的新 Windows 计算机, 请选择此选项。 最终用户将使用所需的配置来启动安装程序, 方法是输入其工作或学校帐户凭据。 |
 
 如果这些部署方案不能满足您组织的需求, 您可以了解其他方案并了解每个方案在[Windows 10 部署方案](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的功能和限制。 您还可以对<a href="https://aka.ms/planforwin10deployment" target="_blank">Windows 10 部署进行规划</a>。
 
@@ -79,21 +79,13 @@ Windows 使用诊断数据提供丰富的可操作信息, 以帮助您深入了�
 
 ### <a name="windows-security"></a>Windows 安全
 
-Windows 10 提供了一些功能, 可帮助保护抵御威胁、帮助保护设备和帮助访问控制。 使用 Windows 10 时, 你可以从一开始就获得保护设备的关键安全功能。 Microsoft 365 E3 添加了诸如 windows Hello 企业版、windows Defender 应用程序控制和 windows 信息保护等安全功能。 使用 microsoft 365 E5, 你可以从 microsoft 365 E3 security 和基于云的安全功能和 Windows Defender 高级威胁防护中获得所有保护。 
+Windows 10 提供了一些功能, 可帮助保护抵御威胁、帮助保护设备和帮助访问控制。 使用 Windows 10 时, 你可以从一开始就获得保护设备的关键安全功能。 Microsoft 365 E3 添加了诸如 Windows Hello 企业版、Windows Defender 应用程序控制和 Windows 信息保护等安全功能。 使用 Microsoft 365 E5, 你可以从 Microsoft 365 E3 security 和基于云的安全功能和 Windows Defender 高级威胁防护中获得所有保护。 
 
 若要了解有关使用 Windows 10 企业版获取的安全功能的详细信息, 并获取有关如何部署、管理、配置三个关键 ecurity 功能并对其进行故障排除的指导, 请参阅[步骤 5: 部署 Windows 10 企业版安全功能](windows10-enable-security-features.md)。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-若要查看并了解公司如何规划、部署和管理 Windows 10 的更新, 请参阅:
-
-- [为组织准备 Windows 10 无缝部署](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [在 Microsoft 中采用 Windows 作为服务](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [在 Microsoft 中将 Windows 10 部署为就地升级](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [使用 Windows Hello 企业版实现功能强大的用户身份验证](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Windows 10 部署：来自 Microsoft IT 部门的提示和技巧](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT)（视频）
-- [Windows Defender ATP 有助于检测到复杂的威胁](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [使用 Windows Defender 和 Windows Defender ATP 保护现代企业的安全](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP)（视频）
+查看并了解公司如何[部署 Windows 10 企业版, 以及如何使用强大的身份验证、Intune 和 Windows DEFENDER ATP](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 

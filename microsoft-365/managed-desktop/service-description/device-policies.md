@@ -5,14 +5,13 @@ keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4e41494e853b79d843c5365beea7f01c5ca41308
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 93c7cca75f513008706b4a52b4bbc1bc033341aa
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390479"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830480"
 ---
 # <a name="device-configuration"></a>设备配置
 
@@ -21,16 +20,16 @@ ms.locfileid: "35390479"
 
 <!-- Device configuration and Security Addendum-->
 
-在预配新的 Microsoft 托管桌面设备时, 请确保正确配置 (针对 Microsoft 托管桌面进行了优化) 已就绪。 这包括设置为加入过程的一部分的一组默认策略。 为避免冲突, 不应更改这些策略。 
+在设置新的 Microsoft 托管桌面设备时, 我们确保其具有针对 Microsoft 托管桌面的正确配置优化。 这包括设置为加入过程的一部分的一组默认策略。 若要避免冲突, 请不要更改这些策略。 
 
-设备将会收到签名映像, 然后在第一个用户登录时加入 Azure Active Directory 域。 设备将自动安装所需的策略和应用程序, 而无需任何 IT 干预。
+设备将会收到签名图像, 然后在第一个用户登录时加入 Azure Active Directory 域。 设备将自动安装所需的策略和应用程序, 而无需任何 IT 干预。
 
 ## <a name="why-mdm-over-group-policy"></a>为什么 MDM over 组策略
 
 使用移动设备管理 (MDM) 而不是组策略的原因有以下几个:
 
-- 安全-MDM 策略在现代环境中更加安全。 组策略设计为最适用于本地标识, 而 MDM 设计为最佳使用云身份管理 (Azure Active Directory)。
-- 可靠性-MDM 策略提供更可靠的策略部署。 另外, MDM 设置将覆盖组策略对象 (GPO) 策略。 从 Windows 10 版本1803开始, MDM 设置将优先于组策略值, 从而支持迁移到新式管理的客户。 
+- 安全-MDM 策略更加安全。 组策略设计为最适用于本地标识, 而 MDM 设计为最佳使用云身份管理 (Azure Active Directory)。
+- 可靠性-MDM 策略提供更可靠的策略部署。 另外, MDM 设置将覆盖组策略对象 (GPO) 策略。 从 Windows 10 版本1803开始, MDM 设置优先于组策略值, 这将支持移动到新式管理的客户。 
 - 与 Microsoft 托管桌面远景保持一致-提供更全面的策略部署监控, 并支持基于组的方法逐步实施策略更改, 并在必要时能够暂停/恢复部署。
 
 有关详细信息, 请参阅[移动设备管理](https://docs.microsoft.com/windows/client-management/mdm/)。 
@@ -41,18 +40,18 @@ ms.locfileid: "35390479"
 
 策略 | 说明
 --- | ---
-安全基准 | 针对所有 Microsoft 托管桌面设备配置了适用于 MDM 的[microsoft 安全基准](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基准是业界标准的配置。 它已公开发布、经过充分测试, 并已由 Microsoft 安全专家进行了检查, 以保持 Microsoft 托管桌面设备和应用在新式工作区中的安全。 <br><br>为了减轻不断演变的安全威胁的威胁, Microsoft 安全基准将更新并部署到 Microsoft 托管桌面设备 (每个 Windows 10 功能更新)。<br><br>有关详细信息, 请参阅[Windows 10 安全基准](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/)。
+安全基准 | 针对所有 Microsoft 托管桌面设备配置了适用于 MDM 的[microsoft 安全基准](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基准是业界标准的配置。 它已公开发布、经过充分测试, 并已由 Microsoft 安全专家进行了检查, 以保持 Microsoft 托管桌面设备和应用在新式工作区中的安全。 <br><br>为了缓解不断发展的安全威胁中的威胁, Microsoft 安全基准将更新并部署到 Microsoft 托管桌面设备 (每个 Windows 10 功能更新)。<br><br>有关详细信息, 请参阅[Windows 10 安全基准](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/)。
 Microsoft 托管桌面建议的安全模板 | 对安全基准的一组建议更改, 以优化用户体验。  这些更改记录在[安全附录](#security-addendum)中。 策略附录更新根据需要进行。  
-更新部署 | 使用 Windows Update for Business (WUfB) 执行软件更新的逐步部署。 IT 管理员无法修改部署组策略的设置。 有关基于组的部署的详细信息, 请参阅[如何处理更新](../working-with-managed-desktop/updates.md)。
+更新部署 | 使用 Windows Update for Business 执行软件更新的逐步部署。 IT 管理员无法修改部署组策略的设置。 有关基于组的部署的详细信息, 请参阅[如何处理更新](../working-with-managed-desktop/updates.md)。
 诊断数据 | 设备将设置为在已知商业版标识符下向 Microsoft 提供增强的诊断数据。 在 Microsoft 托管桌面中, IT 管理员不能更改这些设置。 对于一般数据保护条例 (GDPR) 区域中的客户, 最终用户可以减少提供的诊断数据的级别, 但会降低服务。 例如, Microsoft 托管桌面将无法收集必要的数据, 以对设置和策略进行迭代以最好地满足性能和安全性需求。 有关详细信息, 请参阅[在组织中配置 Windows 诊断数据。](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+按流量计费的连接 | 默认情况下, 将关闭通过按流量计费的连接 (如 LTE 网络) 进行的更新, 尽管每个用户可以在**Settings > updates > 高级选项**中单独打开此功能。 如果您希望允许所有用户通过按流量计费的连接启用更新, 请[提交更改请求](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support), 这将为所有设备启用此设置。
 
  ## <a name="security-addendum"></a>安全附录
 
- 本节概述了将作为其他标准 Microsoft 托管桌面策略部署的策略。 标准策略在[默认策略](#default-policies)中列出。 此配置旨在提供金融服务和高度管控行业: 优化最安全的想法, 同时保持用户工作效率。
+ 本节概述除了[默认策略](#default-policies)中列出的标准 Microsoft 托管桌面策略之外, 将部署的策略。 此配置旨在满足金融服务和高度管控行业的需求, 并在保持用户工作效率的同时优化最高安全性。
 
  ### <a name="additional-security-policies"></a>其他安全策略
 
- 添加这些策略是为了提高高管控行业的安全性。 
- - **应用程序允许列表**: 组织必须信任应用程序才能在 Microsoft 托管桌面设备上运行。 这将提供锁定的环境。 需要载入的任何应用程序必须传递到 Microsoft 托管桌面操作团队。 有关详细信息, 请参阅[Windows Defender Device Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide)。
- - **安全监视**: Microsoft 将使用[Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)监视设备。 如果检测到威胁, Microsoft 将通知客户, 隔离设备, 并远程修正问题。 
- - **Disable Powershell v2**: Microsoft 已弃用2017年8月的 powershell v2。 此功能已在所有 Microsoft 托管桌面设备上禁用。 有关此更改的详细信息, 请参阅[Windows PowerShell 2.0 弃用](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)。
+ 添加这些策略是为了提高高度管控行业的安全性。 
+ - **安全监视**: microsoft 将使用[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)监视设备。 如果检测到威胁, Microsoft 将通知客户, 隔离设备, 并远程纠正问题。 
+ - **Disable Powershell v2**: Microsoft 在8月2017的 powershell 中删除了 powershell v2。 此功能已在所有 Microsoft 托管桌面设备上禁用。 有关此更改的详细信息, 请参阅[Windows PowerShell 2.0 弃用](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)。

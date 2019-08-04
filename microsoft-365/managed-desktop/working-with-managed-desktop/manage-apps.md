@@ -1,24 +1,24 @@
 ---
 title: 在 Microsoft 托管桌面中管理应用
 description: 有关如何更新部署到 Microsoft 托管桌面设备的业务线应用程序的信息
-keywords: microsoft 托管桌面, microsoft 365, 服务, 文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ce2765ef2ab176dc5d9a1d41db7e26549b007d79
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285942"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390729"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中管理业务线应用程序
 
 <!--Application management -->
 
-有几种方法可以管理已载入到 microsoft 托管桌面的应用程序的应用程序更新, 并将其部署到 microsoft 托管桌面设备。 你可以在 Microsoft 托管桌面门户或 Intune 中进行应用更新。 
+有几种方法可以管理已载入到 Microsoft 托管桌面的应用程序的应用程序更新, 并将其部署到 Microsoft 托管桌面设备。 你可以在 Microsoft 托管桌面门户或 Intune 中进行应用更新。 
 
 <span id="update-app-mmd" />
 
@@ -54,7 +54,7 @@ ms.locfileid: "32285942"
 
 ## <a name="roll-back-an-app-to-a-previous-version"></a>将应用程序回退到以前的版本
 
-如果在部署新版本的应用程序时发现错误, 则可以回滚到以前的版本。 此处所述的过程适用于类型列为**Windows MSI 应用程序**或 windows 应用程序的应用程序 **(Win 32)-preview**
+如果在部署新版本的应用程序时发现错误, 则可以回滚到以前的版本。 此处所述的过程适用于类型列为**WINDOWS MSI 应用程序**或 windows 应用程序的应用程序 **(Win 32)-preview**
 
 **将业务线应用程序回滚到以前的版本**
 
@@ -62,8 +62,8 @@ ms.locfileid: "32285942"
 2. 在 "**清单**" 下, 选择 "**应用**"。  
 3. 选择需要回滚的应用程序, 然后选择 "**编辑**"。
 4. 在 "**管理**" 下, 选择 "**属性**"。 
-    - 对于**Windows MSI 应用**程序应用程序, 请选择 "**应用程序信息**", 然后在 "**忽略应用程序版本**" 下, 选择 **"是"**。
+    - 对于**WINDOWS MSI 应用**程序应用程序, 请选择 "**应用程序信息**", 然后在 "**忽略应用程序版本**" 下, 选择 **"是"**。
     - 对于**Windows 应用 (Win 32)-预览**应用程序, 选择 "**应用程序信息**", 选择 "**检测规则**", 然后选择 "**添加**"。 
-    如果存在 msi 规则, 请验证**msi 产品版本检查**是否设置为 "**否**"。
+    如果存在 MSI 规则, 请验证**msi 产品版本检查**是否设置为 "**否**"。
 5. 将[以前版本的应用程序源文件上传](../get-started/deploy-apps.md)到 Microsoft 托管桌面管理门户。  
 

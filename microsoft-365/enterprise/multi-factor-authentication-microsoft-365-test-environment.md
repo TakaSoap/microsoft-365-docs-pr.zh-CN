@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用发送到 Microsoft 365 企业版测试环境中的智能手机的短信配置多重身份验证。
-ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 319f8058aa4504c52cacf5f0d97982d115c41c8a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074212"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的多重身份验证
 
@@ -44,7 +44,7 @@ ms.locfileid: "33353174"
 如果要在模拟的企业中测试多重身份验证, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试多重身份验证不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试多重身份验证，并在代表典型组织的环境中对其进行试验。 
+> 测试多重身份验证不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试多重身份验证，并在代表典型组织的环境中对其进行试验。 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>阶段 2：启用和测试 User 2 帐户的多重身份验证
 
@@ -52,7 +52,7 @@ ms.locfileid: "33353174"
   
 1. 打开浏览器的单独私有实例, 转到 Microsoft 365 管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com)), 然后使用全局管理员帐户登录。
     
-2. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
+2. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
 3. 在 "活动用户" 窗格中, 单击 "**更多 > 多重身份验证设置**"。
     
@@ -74,7 +74,7 @@ ms.locfileid: "33353174"
     
 2. 转到 Office 365 门户 ([https://portal.office.com](https://portal.office.com)), 并使用用户2帐户名称和密码登录。
     
-3. 登录后, 系统会提示您设置帐户以获取详细信息。 单击“下一步”。
+3. 登录后, 系统会提示您设置帐户以获取详细信息。 单击“下一步”。****
     
 4. 在“其他安全性验证”**** 页上： 
     
@@ -84,7 +84,7 @@ ms.locfileid: "33353174"
     
    - 在**方法**中, 单击 "**通过短信向我发送代码**"。
     
-5. 单击“下一步”。
+5. 单击“下一步”。****
     
 6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     

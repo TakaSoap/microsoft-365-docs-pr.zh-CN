@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b3fc4a4ed82c01188f348d2e494a0dbf7effc77a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
+ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34079263"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100708"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备映射驱动器
 
@@ -25,7 +25,7 @@ ms.locfileid: "34079263"
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Microsoft 托管桌面上的映射驱动器
  
-如果无法删除或替换某些用例的映射驱动器, 应在 Microsoft 托管桌面门户中提交支持请求, 以将其部署到 Microsoft 托管桌面用户。
+如果无法删除或替换某些用例的映射驱动器, 应在 Microsoft 托管桌面管理门户中提交支持请求, 以将其部署到 Microsoft 托管桌面用户。
     
 对于此类请求, 必须在支持请求中提供以下详细信息: 
 
@@ -46,7 +46,7 @@ ms.locfileid: "34079263"
 请确保无法避免映射的驱动器, 并且在提交任何服务请求之前仔细查看了要求。 然后, 按照以下步骤操作:
 
 1. 导航到[Microsoft 托管桌面门户](https://aka.ms/mmdportal)。  
-2. 通过 "**支持 _GT_ 支持请求**" 部分提交标题为 "映射驱动器部署" 的支持请求, 并提供所有必需的文件共享详细信息。  
-3. Microsoft 托管桌面操作将在请求完成时使用支持请求更新通知。 最初, 此配置将仅部署到测试部署组中的设备。  
-4. 您必须测试和确认由 Microsoft 托管桌面操作团队部署的配置是否按预期工作。 完成测试后, 请使用支持请求更新 Microsoft 托管桌面操作。  
-5. Microsoft 托管桌面操作团队随后会将配置部署到其他部署组。 
+2. 通过 "**支持 > 支持请求**" 部分提交标题为 "映射驱动器部署" 的支持请求, 并提供所有必需的文件共享详细信息。  
+3. Microsoft 托管桌面 IT 操作将在请求完成时使用支持请求更新通知。 最初, 此配置将仅部署到测试部署组中的设备。  
+4. 您必须测试和确认由 Microsoft 托管桌面 IT 操作部署的配置是否按预期工作。 使用支持请求中的 "讨论" 选项卡进行答复, 以在完成测试后通知 Microsoft 托管的桌面 IT 操作。  
+5. Microsoft 托管桌面 IT 操作团队随后会将配置部署到其他部署组。 

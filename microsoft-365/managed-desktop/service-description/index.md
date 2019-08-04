@@ -5,17 +5,18 @@ keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 59344a338e051b32225574c18609ffde09716c8c
-ms.sourcegitcommit: 83338be246ae104724d7f38af12fe7f6546fec27
+ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34933541"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830490"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 托管桌面服务说明
 
 Microsoft 托管桌面是一项服务, 它为用户提供了安全的新式体验, 并始终使用最新版本的 Windows 10 Enterprise edition、Office 365 专业增强版和 Microsoft 安全服务保持最新的设备, 包括:
 
+- 简化了新设备的注册
 - 设备配置
 - 根据 Microsoft 最佳实践使用户和设备安全的功能, 包括 Windows Hello、BitLocker、SecureBoot 和基于虚拟化的安全性
 - 设备安全监视和修正服务

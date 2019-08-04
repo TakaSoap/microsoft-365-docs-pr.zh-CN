@@ -1,5 +1,5 @@
 ---
-title: 设置条件访问策略
+title: 为 Microsoft 365 活动设置条件访问策略
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,15 +19,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何为 Microsoft 365 商业版设置条件访问策略。
-ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+description: 了解如何为 Microsoft 365 市场活动设置条件访问策略。
+ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
+ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913003"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35076306"
 ---
-# <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>为 Microsoft 365 商业版设置条件访问策略
+# <a name="set-up-conditional-access-policies"></a>设置条件访问策略
 
 [条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)策略添加 substancial 其他安全性。 Microsoft 提供一组针对所有客户推荐的基准条件访问策略。 基准策略是一组预定义策略, 可帮助组织抵御多种常见攻击。 这些常见攻击可能包括密码喷涂、重放和网络钓鱼。
 

@@ -1,22 +1,22 @@
 ---
 title: Microsoft 托管桌面的可配置设置
 description: 关于 Microsoft 托管桌面的可配置设置的信息
-keywords: microsoft 托管桌面、microsoft 365、服务、文档、设置、可配置的设置
+keywords: Microsoft 托管桌面、Microsoft 365、服务、文档、设置、可配置的设置
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0d30e92eb9747079a7edc5a8fd198298508f342e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d8ebe4519d169db5500c55a3337836ca2d0986c0
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278208"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390719"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>可配置的设置-Microsoft 托管桌面
 
-microsoft 托管桌面部署应用于由 Microsoft 托管桌面管理的所有设备的设置和策略。 有关详细信息, 请参阅[设备配置](../service-description/device-policies.md)。
+Microsoft 托管桌面部署应用于由 Microsoft 托管桌面管理的所有设备的设置和策略。 有关详细信息, 请参阅[设备配置](../service-description/device-policies.md)。
 
 Microsoft 托管桌面中的可配置设置为 IT 管理员提供了一种自定义和部署对其组织和业务需求而言独有的设置的方法。 这些设置是对由 Microsoft 托管桌面管理的设备配置设置和策略的补充。  
 
@@ -26,7 +26,7 @@ Microsoft 托管桌面中的可配置设置为 IT 管理员提供了一种自定
 
 有几次使用可配置的设置。 
 
-**载入过程**– microsoft 托管桌面建议您在集成 Microsoft 托管桌面服务时, 或在你板载的设备 (20 或更多) 时自定义可配置的设置。 设置类别是在 Microsoft 托管桌面管理门户中配置的。 在载入并拥有对管理门户的访问权限后, 可以确定要为组织自定义的设置类别, 进行更改, 暂存部署, 然后部署所做的更改。
+**载入过程**– Microsoft 托管桌面建议您在集成 Microsoft 托管桌面服务时, 或在你板载的设备 (20 或更多) 时自定义可配置的设置。 设置类别是在 Microsoft 托管桌面管理门户中配置的。 在载入并拥有对管理门户的访问权限后, 可以确定要为组织自定义的设置类别, 进行更改, 暂存部署, 然后部署所做的更改。
 
 **维护设置**-定期查看您的设置并进行必要的更新。 您可能需要进行更改以支持您的业务更改。   
 

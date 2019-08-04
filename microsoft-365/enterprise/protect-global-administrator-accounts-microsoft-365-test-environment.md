@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/16/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用这些步骤来保护 Microsoft 365 企业版测试环境中的全局管理员帐户。
-ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074142"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中保护全局管理员帐户
 
-您可以通过确保您的管理员帐户尽可能安全, 来阻止组织的数字攻击。 本文介绍如何使用 azure Active Directory (Azure AD) 条件访问策略来保护全局管理员帐户。
+您可以通过确保您的管理员帐户尽可能安全, 来阻止组织的数字攻击。 本文介绍如何使用 Azure Active Directory (Azure AD) 条件访问策略来保护全局管理员帐户。
 
 在 Microsoft 365 企业版测试环境中保护全局管理员帐户有两个阶段:
 
@@ -42,7 +42,7 @@ ms.locfileid: "33353054"
 
   
 > [!NOTE]
-> 测试全局管理员帐户保护不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active directory 域服务 (AD DS) 的目录同步。 此处提供它作为选项, 以便您可以测试全局管理员帐户保护并在代表典型组织的环境中进行实验。 
+> 测试全局管理员帐户保护不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 此处提供它作为选项, 以便您可以测试全局管理员帐户保护并在代表典型组织的环境中进行实验。 
   
 ## <a name="phase-2-configure-conditional-access-policies"></a>阶段 2: 配置条件访问策略
 
@@ -63,10 +63,10 @@ ms.locfileid: "33353054"
 1. 在 " **Microsoft 365 管理中心**" 选项卡上, 单击左侧导航栏中的 "组" 图标, 然后单击 "**组**"。
 2. 单击 "**添加组**"。
 3. 在 "**新建组**" 页上, 键入**GlobalAdmins**。
-4. 单击 "**选择所有者**", 单击全局管理员帐户, 然后单击 "**添加 > 关闭**"。
+4. 单击 "**选择所有者**", 单击全局管理员帐户, 然后单击 "**添加" > "关闭**"。
 5. 在组列表中, 单击 " **GlobalAdmins** " 组。
 6. 在 " **GlobalAdmins** " 页上, 单击 "**成员编辑**", 然后单击 "**添加成员**"。
-7. 在列表中, 单击**DedicatedAdmin**帐户, 然后单击 "**保存 >" 关闭 > "关闭 > 管理中心**"。
+7. 在列表中, 单击 " **DedicatedAdmin** " 帐户, 然后单击 "**保存 > 关闭" > 关闭 > 管理中心**"。
 
 接下来, 创建条件访问策略以要求对全局管理员帐户进行多因素身份验证, 并在登录风险为 "中" 或 "高" 时拒绝身份验证。
 
@@ -75,14 +75,14 @@ ms.locfileid: "33353054"
 1. 在浏览器的新选项卡中, 转[https://portal.azure.com](https://portal.azure.com)到。
 2. 单击 " **Azure Active Directory > 条件访问**"。
 3. 在 "**条件访问–策略**" 边栏选项卡上, 单击 "**基准策略: 要求对管理员进行 MFA (预览)**"。
-4. 在**基准策略上 ...** 边栏, 请单击 "**立即使用策略" > "保存**"。
+4. 在**基准策略上 ...** 边栏, 请**立即单击 "使用策略" > 保存**。
 
 当登录风险为 "中" 或 "高" 时, 第二个策略将阻止对全局管理员帐户进行身份验证。
 
 1. 在 "**条件访问–策略**" 边栏选项卡上, 单击 "**新建策略**"。
 2. 在**新**的边栏中, 在 "**名称**" 中键入**全局管理员**。
 3. 在 "**工作分配**" 部分, 单击 "**用户和组**"。
-4. 在 " **** **用户和组**" 边栏选项卡上的 "用户和组" 选项卡上, 单击 "**选择用户和组" > users and groups > Select**
+4. 在 "**用户和组**" 边栏的 "**包含**" 选项卡上, 单击 "**选择用户和组" > 用户和组 "。 > 选择**。
 5. 在 "**选择**" 边栏选项卡上, 单击 " **GlobalAdmins" > 选择 "> 完成**"。
 6. 在 "**工作分配**" 部分, 单击 "**条件**"。
 7. 在 "**条件**" 边栏选项卡上, 单击 "**登录风险**", 依次单击 **"是" "** **配置**"、"**高**" 和 "**中**", 然后单击 "**选择**并**完成**"。

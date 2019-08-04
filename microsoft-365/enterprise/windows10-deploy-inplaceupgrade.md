@@ -1,7 +1,7 @@
 ---
 title: 将适用于现有设备的 Windows 10 企业版部署为就地升级
 description: 提供有关使用 System Center Configuration Manager 将 Windows 10 企业版映像配置和部署为就地升级的指南。
-keywords: microsoft 365, microsoft 365 enterprise, microsoft 365 文档, Windows 10 企业版, 部署, 就地升级, 配置管理器, System Center Configuration manager
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 文档, Windows 10 企业版, 部署, 就地升级, 配置管理器, System Center Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 31650774a784f1fe784c30b90bc1f9ae579b34fa
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: f7f1b8377769545c4399f54b0f2eab99a656d24f
+ms.sourcegitcommit: 18e03ab333175eccfc89e38b081022746976e513
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291609"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35595298"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步骤 2: 将现有设备的 Windows 10 企业版部署为就地升级
 
@@ -23,9 +23,9 @@ ms.locfileid: "32291609"
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-将当前运行 Windows 7 或 windows 8.1 的电脑升级到 windows 10 的最简单途径是通过就地升级。 您可以使用 System Center Configuration manager (配置管理器) 任务序列来完全自动执行该过程。 
+将当前运行 Windows 7 或 Windows 8.1 的电脑升级到 Windows 10 的最简单途径是通过就地升级。 您可以使用 System Center Configuration Manager (配置管理器) 任务序列来完全自动执行该过程。 
 
-如果你的现有计算机运行的是 windows 7 或 windows 8.1, 我们建议你在你的组织部署 windows 10 时使用此路径。 这利用 Windows 安装程序 (setup.exe) 执行就地升级, 这将自动保留现有操作系统版本中的所有数据、设置、应用程序和驱动程序。 这需要最少的 IT 工作, 因为不需要任何复杂的部署基础结构。
+如果你的现有计算机运行的是 Windows 7 或 Windows 8.1, 我们建议你在你的组织部署 Windows 10 时使用此路径。 这利用 Windows 安装程序 (setup.exe) 执行就地升级, 这将自动保留现有操作系统版本中的所有数据、设置、应用程序和驱动程序。 这需要最少的 IT 工作, 因为不需要任何复杂的部署基础结构。
 
 按照这些步骤操作, 使用 Configuration Manager 将 Windows 10 企业版映像配置和部署为就地升级。
 
@@ -35,9 +35,9 @@ ms.locfileid: "32291609"
 
 请参阅[使用升级准备管理 Windows 升级](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness), 了解详细信息、入门、使用和疑难解答升级准备情况。
 
-接下来, 按照指南操作, 使用 System Center Configuration Manager (Current Branch) 将 windows 7 或更高版本的操作系统升级到 windows 10。 与任何高风险部署一样, 我们建议您先备份用户数据, 然后再继续。 OneDrive 云存储准备就绪, 可用于许可的 Microsoft 365 用户, 并可用于安全地存储文件。 有关详细信息, 请参阅[OneDrive 快速入门指南](https://aka.ms/ODfBquickstartguide)。 若要访问此页面, 必须在 Office 365 或 Microsoft 365 租户中以租户管理员或全局管理员身份登录。
+接下来, 按照指南操作, 使用 System Center Configuration Manager (Current Branch) 将 Windows 7 或更高版本的操作系统升级到 Windows 10。 与任何高风险部署一样, 我们建议您先备份用户数据, 然后再继续。 OneDrive 云存储准备就绪, 可用于许可的 Microsoft 365 用户, 并可用于安全地存储文件。 有关详细信息, 请参阅[OneDrive 快速入门指南](https://aka.ms/ODfBquickstartguide)。 若要访问此页面, 必须在 Office 365 或 Microsoft 365 租户中以租户管理员或全局管理员身份登录。
 
-有关配置管理器版本和受支持的相应 Windows 10 客户端版本的列表, 请参阅[Support for System Center Configuration Manager 的 windows 10](https://aka.ms/supportforwin10sccm)。
+有关配置管理器版本和受支持的相应 Windows 10 客户端版本的列表, 请参阅[Support For System Center Configuration Manager 的 windows 10](https://aka.ms/supportforwin10sccm)。
 
 **验证是否已准备好升级 Windows**
 
@@ -50,7 +50,7 @@ ms.locfileid: "32291609"
     - 用户数据的备份-尽管在升级中将迁移用户数据, 但最佳做法是配置备份方案。 例如, 将所有用户数据导出到 OneDrive 帐户, 将 BitLocker 导出到加密的 USB 闪存驱动器或网络文件服务器。 有关详细信息, 请参阅[在 Windows 中备份或传输数据](https://aka.ms/backuptransferdatawindows)。
 - **环境准备**-您将使用现有的 Configuration Manager 服务器结构来准备操作系统部署。 除了基本设置外, 还应在 Configuration Manager 环境中进行以下配置:
     1. [扩展 Active Directory 架构](https://aka.ms/extendadschema)并[创建系统管理容器](https://aka.ms/createsysmancontainer)。
-    2. 启用 active directory 林发现和 active directory 系统发现。 有关详细信息, 请参阅[Configure discovery 方法 for System Center Configuration Manager](https://aka.ms/configurediscoverymethods)。
+    2. 启用 Active Directory 林发现和 Active Directory 系统发现。 有关详细信息, 请参阅[Configure discovery 方法 For System Center Configuration Manager](https://aka.ms/configurediscoverymethods)。
     3. 为内容和网站分配创建 IP 范围边界和边界组。 有关详细信息, 请参阅[为 System Center Configuration Manager 定义网站边界和边界组](https://aka.ms/definesiteboundaries)。
     4. 添加和配置 Configuration Manager reporting services 点角色。 有关详细信息, 请参阅[配置管理器中的配置报告](https://aka.ms/configurereporting)。
     5. 为程序包创建文件系统文件夹结构。
@@ -66,7 +66,7 @@ ms.locfileid: "32291609"
 2. 在 "**数据源**" 页上, 指定 Windows 10 企业版 x64 媒体的 UNC 路径, 然后选择 "**下一步**"。
 3. 在 "**常规**" 页面上, 指定**Windows 10 企业版 x64 升级**, 然后选择 "**下一步**"。 
 4. 在 "**摘要**" 页上, 选择 "**下一步**", 然后选择 "**关闭**"。 
-5. 右键单击创建的**Windows 10 Enterprise x64 更新**包, 然后选择 "**分发内容**"。 
+5. 右键单击创建的**Windows 10 Enterprise X64 更新**包, 然后选择 "**分发内容**"。 
 6. 选择你的分发点。
 
 ## <a name="part-3-configure-deployment-settings"></a>第3部分: 配置部署设置
@@ -121,7 +121,7 @@ ms.locfileid: "32291609"
 7. 在 "**通知**" 页面上, 接受默认设置, 然后选择 "**下一步**"。
 8. 在 "**摘要**" 页上, 选择 "**下一步**", 然后选择 "**关闭**"。
 
-## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>第5部分: 启动 Windows 10 升级任务序列
+## <a name="part-4-start-the-windows-10-upgrade-task-sequence"></a>第4部分: 启动 Windows 10 升级任务序列
 按照以下步骤在要升级的设备上启动 Windows 10 升级任务序列。
  
 1. 登录到 Windows 计算机并启动**软件中心**。
@@ -131,9 +131,9 @@ ms.locfileid: "32291609"
 
 如果在企业环境中使用 Windows 10 时遇到问题, 可以参阅[主要 Microsoft 支持解决方案, 了解最常见的问题](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。 这些资源包括知识库文章、更新和库文章。
 
-在整个组织中部署更新的过程中, 使用 windows Analytics 的更新合规性功能来提供对 windows 10 设备的操作系统更新合规性、更新部署进度和故障排除的整体视图。 此新服务使用诊断数据 (包括安装进度、Windows Update 配置和其他信息) 来提供此类见解, 无需额外付费, 也无需额外的基础结构要求。 无论它是与 Windows Update for Business 或其他管理工具一起使用, 您都可以确信您的设备已正确更新。
+在整个组织中部署更新的过程中, 使用 Windows Analytics 的更新合规性功能来提供对 Windows 10 设备的操作系统更新合规性、更新部署进度和故障排除的整体视图。 此新服务使用诊断数据 (包括安装进度、Windows Update 配置和其他信息) 来提供此类见解, 无需额外付费, 也无需额外的基础结构要求。 无论它是与 Windows Update for Business 或其他管理工具一起使用, 您都可以确信您的设备已正确更新。
 
-请参阅[监视 windows 更新和具有更新合规性的 windows Defender 防病毒](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), 了解详细信息、入门知识和使用更新合规性。
+请参阅[监视 Windows 更新和具有更新合规性的 Windows Defender 防病毒](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), 了解详细信息、入门知识和使用更新合规性。
 
 作为临时检查点，请查看对应于此步骤的[退出条件](windows10-exit-criteria.md#crit-windows10-step2)。
 
@@ -141,7 +141,7 @@ ms.locfileid: "32291609"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [使用 windows Autopilot 为新设备部署 Windows 10 企业版](windows10-deploy-autopilot.md) |
+|![](./media/stepnumbers/Step3.png)| [使用 Windows Autopilot 为新设备部署 Windows 10 企业版](windows10-deploy-autopilot.md) |
 
 
 

@@ -3,7 +3,7 @@ title: 通过 Microsoft 365 Business 保护设备上的数据的先决条件
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: '了解使用 Microsoft 365 业务设置组织的先决条件。 '
-ms.openlocfilehash: 4789e72c3e6d1c7877b236279947f1a1b64d046f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 6de76eb681037ea74d2ac026879bb0d41094d0e2
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074622"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>通过 Microsoft 365 Business 保护设备上的数据的先决条件
 
@@ -30,7 +30,7 @@ ms.locfileid: "32278128"
   
 ## <a name="pre-requisites"></a>先决条件
 
-- windows 设备必须运行 windows 7 专业版、windows 8 专业版或 windows 8.1 pro。
+- Windows 设备必须运行 Windows 7 专业版、Windows 8 专业版或 Windows 8.1 Pro。
     
     [将 Windows 设备升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)
     

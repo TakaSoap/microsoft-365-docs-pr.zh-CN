@@ -3,7 +3,7 @@ title: 为 Microsoft 365 Business 用户设置移动设备
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: 在 iPhone 或 Android 手机上安装 office, office 应用中的工作文件将受到 Microsoft 365 商业版的保护。
-ms.openlocfilehash: 4ffde6197104cfceb337a9d531032dacfd9efcf0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 在 iPhone 或 Android 手机上安装 Office, Office 应用中的工作文件将受到 Microsoft 365 商业版的保护。
+ms.openlocfilehash: 81ec7eb980cbe35ced37ab3b25d87d77d9e4390a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284561"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074682"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 Business 用户设置移动设备
 
