@@ -3,7 +3,7 @@ title: 适用于非企业组织的 Microsoft 365 企业版基础结构
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成适用于非企业组织的 Microsoft 365 企业版基础结构的简化部署阶段。
-ms.openlocfilehash: 64d911a9d59d5b9b1a450a9a122463699ec8eab8
-ms.sourcegitcommit: 2cf0d57b1771b37db773c3eaabac8456a6fa9195
+ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
+ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34419811"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35624630"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>适用于非企业组织的 Microsoft 365 企业版基础结构
 
@@ -42,16 +42,18 @@ Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://ww
 
 ## <a name="phase-1-networking"></a>阶段 1：网络
 
-非企业组织通常在每个办公室都建立了本地 Internet 连接，并且未使用代理服务器、防火墙或数据包检查设备。 每个办公室的 Internet 服务提供商 (ISP) 都有一个区域性的本地 DNS 服务器，用于将流量定向到离你和本地用户最近的 Microsoft 365 云服务器。
+非企业组织通常在每个办公室都建立了本地 Internet 连接，并且未使用代理服务器、防火墙或数据包检查设备。 为每个办公室服务的 Internet 服务提供商 (ISP) 都有一个区域性的本地 DNS 服务器，用于将流量定向到离你的办公室和本地用户最近的 Microsoft 365 网络位置。
 
 因此，你只需要与 ISP 确认每个办公地点的连接：
 
 - 使用区域性的本地 DNS 服务器。
 - 随着用户开始使用更多的 Microsoft 365 云服务，足以满足当前和未来的需求。
 
+如果你使用的是代理服务器、防火墙或数据包检查设备，请参阅 [Microsoft 365 企业版的网络基础结构](networking-infrastructure.md)以了解详细信息。
+
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
-以下是突出显示第 1 阶段元素的可视摘要。 **你的组织**可能拥有多个办公室，每个办公室都与使用区域性本地 DNS 服务器的 ISP 建立了本地 Internet 连接。 通过 ISP，每个办公室的用户都可以访问最近的 Microsoft 网络位置和 Microsoft 365 订阅的资源。
+以下是突出显示第 1 阶段元素的可视摘要。 **你的组织**可能拥有多个办公室，每个办公室都与使用区域性本地 DNS 服务器的 ISP 建立了本地 Internet 连接。 通过 ISP，每个办公室的用户都可以访问最近的 Microsoft 365 网络位置和 Microsoft 365 订阅的资源。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
@@ -75,11 +77,12 @@ Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://ww
 |:-------|:-----|:-----|
 | 基线 | 这是保护数据以及访问数据的标识和设备的最低和默认标准。 <BR><BR> 这通常是大多数用户管理的大部分组织数据。 | 一线员工组，例如销售、营销、支持、管理和制造。 |
 | 敏感 | 这是对数据子集的额外保护，这种保护必须超出基线级别。 这些组包含使用和创建敏感数据的用户，这些数据特定于相关部门以及不向所有人公开的项目。 | 负责开发未来产品的产品或营销团队 |
-| 高度管控 | 这通常是对少量数据的最高级别的保护，这些数据是高度机密、视为知识产权或商业机密或必须遵守安全法规的数据。 |  研究、法律和财务团队。 <BR><BR> 负责存储或使用客户或合作伙伴数据的团队。 |
+| 高度管控 | 这通常是对少量数据的最高级别的保护，这些数据是高度机密、视为知识产权或商业机密或必须遵守安全法规的数据。 |  研究、法律和财务团队，或者负责存储或使用客户或合作伙伴数据的团队。 |
+||||
 
 ### <a name="hybrid-identity"></a>混合标识
 
-如果你具有本地 AD DS 域，请在具有密码哈希同步 (PHS) 功能的服务器上配置 Azure AD Connect。 有关详细信息，请参阅[同步标识](identity-azure-ad-connect.md)。
+如果你有本地 AD DS 域，则需要将该域的一组用户帐户、组和联系人与 Microsoft 365 企业版订阅的 Azure AD 租户同步。 对于非企业组织，请在具有密码哈希同步 (PHS) 功能的服务器上配置 Azure AD Connect。 有关详细信息，请参阅[同步标识](identity-azure-ad-connect.md)。
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>通过条件访问策略实现更安全的用户访问
 
@@ -149,7 +152,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
-新的和突出显示的标识元素包括：
+新的和突出显示的混合标识元素包括：
  
 |||
 |:------:|:-----|
@@ -160,15 +163,23 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件访问策略。 |
 |||
 
+以下是仅限云标识的标识阶段的可视摘要，其中突出显示了新元素。
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+ 
+新的和突出显示的仅限云标识元素包括：
+ 
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件访问策略。 |
+|||
+
+
+
 ## <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
 
 为确保将 Windows 10 企业版设备集成到 Microsoft 365 的标识和安全基础结构中，可以使用以下选项：
-
-- 仅限云（你没有本地 AD DS 域）
-
-  将每台 Windows 10 企业版设备加入订阅的 Azure AD 租户。
-
-  有关详细信息，请参阅[将工作设备加入组织的网络](https://docs.microsoft.com/zh-CN/azure/active-directory/user-help/user-help-join-device-on-network)。
 
 - 混合（你具有本地 AD DS 域）
 
@@ -178,7 +189,14 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
   对于每台 Windows 10 企业版设备，请注册它们以进行移动设备管理。 有关说明，请参阅[使用组策略注册带有 Intune 的 Windows 10 设备](https://go.microsoft.com/fwlink/p/?linkid=872871)。
 
-安装并加入后，每台 Windows 10 企业版设备都会自动从 Windows Update for Business 云服务安装更新。 在非企业组织中，通常无需设置基础结构即可分发和安装更新。
+- 仅限云（如果你没有本地 AD DS 域）
+
+  将每台 Windows 10 企业版设备加入订阅的 Azure AD 租户。
+
+  有关详细信息，请参阅[将工作设备加入组织的网络](https://docs.microsoft.com/zh-CN/azure/active-directory/user-help/user-help-join-device-on-network)。
+
+
+安装并加入后，每台 Windows 10 企业版设备都会自动从 Windows Update for Business 云服务安装更新。 在非企业组织中，通常无需设置基础结构即可分发和安装 Windows 10 更新。
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
@@ -196,7 +214,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 ## <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 
-Microsoft 365 企业版包括 Office 365 专业增强版，即 Microsoft Office 的订阅版本。 与 Office 2016 或 Office 2019 一样，Office 365 专业增强版也直接安装在客户端设备上。 但是，Office 365 专业增强版会定期接收新功能。 有关详细信息，请参阅[关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企业版包括 Office 365 专业增强版，即 Microsoft Office 的订阅版本。 与 Office 2016 或 Office 2019 一样，Office 365 专业增强版也直接安装在客户端设备上。 但是，Office 365 专业增强版会定期接收包含新功能的更新。 有关详细信息，请参阅[关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
 对于非企业组织，请在设备上手动安装 Office 365 专业增强版。 这可以作为准备使用新设备的一部分来完成，也可以由用户在载入过程中完成。
 
@@ -220,13 +238,13 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Microsoft Office 
 
 ## <a name="phase-5-mobile-device-management"></a>阶段 5：移动设备管理
 
-Microsoft 365 企业版包含用于移动设备管理的 Microsoft Intune。 使用 Intune，你可以管理 iOS、Android、macOS 和 Windows 设备，以保护对组织资源（包括数据）的访问。 Intune 可与 Azure AD 的用户、组和计算机帐户集成。
+Microsoft 365 企业版包含用于移动设备管理的 Microsoft Intune。 使用 Intune，你可以管理 Windows、iOS、Android 和 macOS，以保护对组织资源（包括数据）的访问。 Intune 使用 Azure AD 的用户、组和计算机帐户。
 
 Intune 提供了两种类型的移动设备管理：
 
 - 在 Intune 中注册设备后进行移动设备管理 (MDM)。 注册后，它们将成为受管理设备，可以接收组织使用的策略、规则和设置。 这些类型的设备通常由贵组织拥有并分发给你的员工。
 
-- 拥有个人设备的用户可能不想注册他们的设备，也不希望由 Intune 使用你的策略和设置进行管理。 但是，你仍需要保护组织的资源和数据。 在这种情况下，你可以使用移动应用程序管理 (MAM) 来保护你的应用。 这些类型的设备称为自带设备 (BYOD)，通常由你的员工拥有。 
+- 拥有个人设备的用户可能不想注册他们的设备，也不希望由 Intune 使用你的策略和设置进行管理。 但是，你仍需要保护组织的资源和数据。 在这种情况下，你可以使用移动应用程序管理 (MAM) 来保护你的应用。  
 
 Intune 策略可以强制执行设备合规性和应用保护。 以下是要创建的 Intune 策略的列表。
 
@@ -275,13 +293,13 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 - 高度管控
 
-  示例包括客户和合作伙伴的个人身份信息以及组织的知识产权。
+  示例包括客户和合作伙伴的个人身份信息以及组织的财务信息或知识产权。
 
 基于这些数据安全级别，下一步是确定并实施：
 
 - 自定义敏感信息类型
 
-  Microsoft 365 提供了各种敏感信息类型，例如健康服务和信用卡号。 如果你未在 Microsoft 365 提供的列表中找到所需的类型，则可以创建自己的信息类型。
+  Microsoft 365 提供了各种敏感信息类型，例如健康服务和信用卡号。 如果你未在提供的列表中找到所需的类型，则可以创建自己的信息类型。
 
 - 保留标签
 
@@ -295,7 +313,12 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 如果你使用具有权限的敏感度标签，则可能必须创建其他 Azure AD 安全组，以定义允许谁对电子邮件和文档执行哪些操作。 
 
-例如，你需要创建一个“研究”敏感性标签来保护研究团队的电子邮件和文档。 你确定某些研究人员必须能够更改标有“研究”敏感度标签的文档，而其他非研究员工只能查看标有“研究”敏感度标签的文档。 这意味着你需要创建和管理两个附加组：
+例如，你需要创建一个“研究”敏感性标签来保护研究团队的电子邮件和文档。 你确定：
+
+- 研究人员必须能够更改标有“研究”敏感度标签的文档。
+- 非研究员工只能查看标有“研究”敏感度标签的文档。 
+
+这意味着你需要创建和管理两个附加组：
 
 - 研究-全部
 - 研究-查看
@@ -317,23 +340,23 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | 用户可以应用于文档的三个安全级别的敏感度标签。 |
 |||
 
-未显示保留标签和自定义信息类型。
+未显示客户信息类型和保留标签。
 
 ## <a name="onboarding"></a>载入
 
-使用此基础结构，你可以使用这些流程为 Microsoft 365 企业版载入员工。
+有了 Microsoft 365 企业版基础结构，你可以轻松载入员工。
 
 ### <a name="a-new-windows-10-enterprise-device"></a>新的 Windows 10 企业版设备
 
 在为员工提供新的 Windows 10 企业版设备之前：
 
+- 对于混合标识
+
+  依次将设备加入 AD DS 域和 Azure AD 租户，然后在 Intune 中注册设备。
+
 - 对于仅限云标识
 
   将设备加入 Microsoft 365 企业版订阅的 Azure AD 租户。
-
-- 对于混合标识
-
-  依次将设备加入 AD DS 和 Azure AD 租户，然后在 Intune 中注册设备。
 
 ### <a name="existing-employee-with-an-ad-ds-user-account"></a>具有 AD DS 用户帐户的现有员工
 
@@ -345,7 +368,11 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 现有员工应已添加到相应的工作组、部门和区域 AD DS 组。
 
-### <a name="new-employee-with-cloud-only-user-account"></a>使用仅限云用户帐户的新员工
+可向 Microsoft 365 管理中心内的多个 Azure AD 组添加用户帐户。 从用户帐户的属性中，单击“**管理组 > 添加成员身份**”。
+
+如果要使用 PowerShell，请参阅[可下载的 Excel 工作簿](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)，它基于指定的用户帐户和选定的组名称生成 PowerShell 命令。
+
+### <a name="new-employee-with-a-cloud-only-user-account"></a>使用仅限云用户帐户的新员工
 
 在使用仅限云标识时，作为组织的初始载入的一部分，请将新用户帐户添加到这些组：
 
@@ -356,7 +383,7 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 ### <a name="initial-sign-in-to-microsoft-365"></a>初次登录 Microsoft 365
 
-当具有 AD DS 用户帐户的新员工或现有员工首次登录 Microsoft 365 时，请指示他们：
+当员工首次登录 Microsoft 365 时，请指示他们：
 
 1. 使用其用户帐户凭据登录其设备。
 2. 使用浏览器登录 Office 365 门户：https://portal.office.com。
@@ -410,4 +437,4 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 ## <a name="next-step"></a>后续步骤
 
-利用基础架构的功能和配置来部署[工作负载和方案](deploy-workloads.md)。
+部署[工作负载和方案](deploy-workloads.md)以利用 Microsoft 365 企业版底层基础结构的功能和配置。
