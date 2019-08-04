@@ -2,6 +2,7 @@
 ## [什么是 Microsoft 托管桌面？](intro/index.md)
 ### [角色和职责](intro/roles-and-responsibilities.md)
 ### [Microsoft 托管桌面中的技术](intro/technologies.md)
+### [Microsoft 托管桌面和 ITIL](MMD-and-ITSM.md)
 ## [Microsoft 托管桌面服务说明](service-description/index.md)
 ### [支持的区域和语言](service-description/regions-languages.md)
 ### [产品生命周期](service-description/device-lifecycle.md)
