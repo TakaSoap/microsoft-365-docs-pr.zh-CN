@@ -3,7 +3,7 @@ title: 部署 Microsoft 365 企业版
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: ac3e023f6a9364f6b9de23cd5b91d0d6fb6dbf1b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
+ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072492"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35937404"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -91,49 +91,15 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 ### <a name="how-customers-use-microsoft-365-enterprise"></a>客户如何使用 Microsoft 365 企业版
 
-以下是客户如何使用 Microsoft 365 企业版作为完整、智能的解决方案，使每个人都能够发挥创造力并安全地协同工作：
+在客户案例网站上查看 Microsoft 客户正在如何使用 Microsoft 365 企业版。
 
-- 建造
-  - [常规工程承包公司在搜索数据安全性解决方案时发现 Microsoft 365 的协作功能十分实用](https://aka.ms/Transbluecasestudy)
-  - [将 EMCOR 组转移到云，利用 Microsoft 365 构建智能工作场所](https://aka.ms/EMCOR)
-- 咨询
-  - [ERM 通过 Microsoft 365 参与构建更具可持续性的未来](https://aka.ms/ERM_CS)
-- 能源服务
-  - [斯伦贝谢有限公司通过 Microsoft 365 改进了全球团队合作](https://aka.ms/Schlumberger_)
-- 工程
-   - [Cadence 使用移动协作工具加快业务节奏](https://customers.microsoft.com/story/cadence-partner-professional-services-microsoft-365)
-- 金融服务
-  - [多伦多道明银行在 Office 365 和 Windows 10 中为员工提供辅助技术](https://aka.ms/tdbankgroup)
-  - [提供家庭纳税筹划服务的初创企业选择一体化解决方案来帮助发展业务](https://aka.ms/SOSCaseStudy)
-- 游戏
-  - [游戏公司利用 Microsoft 365 和 Surface 设备提高生产力和通信水平](https://aka.ms/PlaynGO)
-  - [Razer 借助 Microsoft 365 取得胜利，在全球游戏行业中获得优势](https://aka.ms/Razer_)
-- 健康服务
-  - [Lilly 设想了下面这样的工作场所：内部和外部协作共同推动创新，并缩短新药物的上市时间](https://aka.ms/Eli_CLS)
-  - [医疗保健技术创新者在云中加速推进糖尿病预防](https://aka.ms/Soleracasestudy)
-  - [美国基督复临安息日会健康照护系统正在使用 Microsoft 365 增强医疗保健服务水平](https://aka.ms/adventisthealth)
-  - [Abrona 通过 Microsoft 365 促进 GDPR 合规性并提高生产力](https://aka.ms/Abrona)
-  - [Centra 采用 Microsoft 365 智能业务工具实现转型并提升患者护理水平](https://aka.ms/Centra_Health)
-  - [Advocate Aurora Health 使用 Microsoft 护理协作解决方案增强协作，帮助患者变得身强体健](https://aka.ms/Advocate_)
-- 进口
-  - [销售、营销和进口公司利用 Microsoft 365 提高数据安全性并缩减运营成本](https://aka.ms/MvmtGroupNordic)
-- 制造业
-  - [钢铁公司消除了硬件成本、简化了 IT，并提高了云中的移动生产力](https://aka.ms/Steeledalecasestudy)
-  - [刺绣设备供应商通过基于云的服务为其业务提供技术支持，并向其他小型企业传递信息](https://aka.ms/PriorityLLCCaseStudy)
-  - [父子经营的业务向世界证明了残障员工可以取得的成就](https://aka.ms/JCSCaseStudy)
-  - [Coconut 公司通过新式协作工具提升了移动性、指标和效率](https://aka.ms/SilvermillCS)
-  - [新兴日本创新者通过 Microsoft 365 商业版发现不会过时的灵活性和安全性增强解决方案](https://aka.ms/DreamFactoryCaseStudy)
-- 公益
-  - [迁移到云中可节省 $500,000 公益资金，同时提升安全性、移动性和协作](https://aka.ms/MOWCaseStudy)
-- 专业服务
-  - [精品商务和房地产律师事务所通过全面的基于云的平台支持业务扩展](https://aka.ms/Lieserskaffcasestudy)
-  - [体育科技公司通过生物反馈法和分析帮助运动员达到顶峰状态](https://aka.ms/KMOTIONCasestudy)
-  - [数字化转型和云使商业协会能够更好地为其成员服务](https://aka.ms/AIMCS)
-- 交通
-  - [Qantas 为员工提供 Microsoft 365，让员工能够取得最佳业绩，同时增强客户体验](https://aka.ms/Qantas_CS)
-  - [Amtrak 通过 Microsoft 365 让其移动企业能够提前完成工作](https://aka.ms/Amtrak_)
-  - [Amtrak 已全面采用工作区现代化，不仅使用 Microsoft 365 节省了劳动力成本，还提升了项目组合透明度](https://aka.ms/Amtrak_CS)
+1. 转到 [https://customers.microsoft.com/](https://customers.microsoft.com/) 并单击“**搜索**”。
+2. 在左窗格的“**语言**”中选择你的语言。
+3. 在“**行业**”中选择你的组织所在的行业。
+4. 在“**产品**”中选择 **Microsoft 365**。
+5. 单击卡片查看客户的案例研究。
   
+
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企业版
 
 对于每一个致力于培养现代工作场所的领导者来说，打造数字文化是他们的首要任务。 Microsoft 365 旨在支持实现这种文化转变，帮助领导者赋予公司的每个人权力，以释放创造力和促进协作。 在 Microsoft，正是这一基础架构的建立才引发了数字文化的转变。 实施 Microsoft 365 企业版使我们能够部署协作技术，如 Microsoft Teams 和 Exchange Online，并在安全的 SharePoint Intranet 站点之间在线共享敏感数据。
