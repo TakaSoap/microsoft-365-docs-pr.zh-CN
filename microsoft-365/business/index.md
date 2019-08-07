@@ -11,12 +11,12 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 title: Microsoft 365 业务资源
 description: 了解如何在业务中规划、部署和使用 Microsoft Office 365、Windows 10 和企业移动性 + 安全性, 以实现可团队合作和解锁创造性的集成和安全基础结构。
-ms.openlocfilehash: a7b6ef6b3c86868ffd9dd2ab912c427911075911
-ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
+ms.openlocfilehash: 2d937f777ab5aebb0dcdf3eee40c62c109256d82
+ms.sourcegitcommit: 99d3facce4dc02ab9a5a8956bb49de6581b3562d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34653038"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36213331"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -43,7 +43,7 @@ ms.locfileid: "34653038"
                                                 <h3>浏览</h3>
                                                 <P><a href="https://support.office.com/article/what-is-microsoft-365-business-901e2522-c2cf-4b8c-894e-f482cda3347a" target="_blank">视频概述</a></p>
                                                 <P><a href="microsoft-365-business-overview.md" target="_blank">什么是 Microsoft 365 业务</a></p>
-                                                <P><a href="https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description" target="_blank">服务说明</a></p>
+                                                <P><a href="https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description" target="_blank">服务说明</a></p>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">常见问题解答</a></p>
                                             </div>
                                         </div>
