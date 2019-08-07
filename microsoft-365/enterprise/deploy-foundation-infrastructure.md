@@ -3,8 +3,8 @@ title: Microsoft 365 企业版底层基础结构
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 03/05/2019
-ms.audience: ITPro
+ms.date: 05/22/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解组织中部署 Microsoft 365 企业版底层基础结构（也称为核心部署）的主要阶段。
-ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400046"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36055015"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
 
-如果你是自行端到端部署 Microsoft 365 企业版，则应首先奠定坚实的基础，在此基础上，应用程序和服务可以在安全的环境中激发创造力和提高团队协作。 该底层有时称为核心部署。
+如果你是自行端到端部署 Microsoft 365 企业版，则应首先奠定坚实的基础，在此基础上，应用程序和服务可以在安全的环境中激发创造力和提高团队协作。 该底层有时称为*核心部署*。
 
 对于为部署定义的端到端路径，你可以使用这些阶段来规划和部署 Microsoft 365 企业版的底层基础结构：
 
@@ -38,7 +38,7 @@ ms.locfileid: "33400046"
 将从最基本的阶段（网络和标识）开始，然后创建基础结构设置和组层，以：
 
 - 在设备上安装最新、最安全的 Windows 版本。
-- 在设备上安装最新的 Office 版本。
+- 在设备上安装最新的 Microsoft Office 版本。
 - 管理组织的设备。
 - 保护这些设备和云中的信息。
 
@@ -58,6 +58,22 @@ ms.locfileid: "33400046"
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
+## <a name="at-a-glance"></a>概览
+
+[Microsoft 365 企业版底层基础结构海报](http://aka.ms/m365efoundinfraposter)是一个可查看各阶段相关情况的中心位置：
+
+- 所处阶段对管理员和用户的整体目标
+- 服务、功能和工具
+- 针对规划的关键设计决策
+- 配置结果
+- 新用户的载入进度
+- 监视和更新方式
+
+![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+
+要下载海报副本，请单击[此处](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)。
+
+
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>基础结构配置与用户部署
 
 底层基础结构是一组经过配置的软件和服务，如果针对某一用户将它们组合到一起，可以充分利用 Microsoft 365 企业版具有的全部功能和保护。 端到端部署旅程的最终目标是将此基础结构应用于所有用户及其基于 Windows 的设备。 
@@ -74,7 +90,7 @@ ms.locfileid: "33400046"
 | Windows 10 企业版 | 将运行 Windows 7 或 Windows 8.1 的计算机自动升级到相应的 Windows 10 企业版的组。 |
 | Office 365 专业增强版 | 为使用 Office 2010、Office 2013 或 Office 2016 的用户自动部署 Office 365 的组。 |
 | 移动设备管理 | 适合于设备注册和基于设备的条件访问策略的组。 |
-| 信息保护 | Office 365 和 Azure 信息保护标签和组。 |
+| 信息保护 | Office 365 敏感度和 Azure 信息保护标签和组。 |
 
 准备好为用户部署此基础结构的元素时，你可以：
 
@@ -92,10 +108,16 @@ ms.locfileid: "33400046"
 
 若要就如何为组织的试点用户和其他用户进对底层基础结构的不同阶段进行项目管理给出一些看法，请参阅[部署战略](deployment-strategies-microsoft-365-enterprise.md)。
 
+## <a name="deployment-for-non-enterprises"></a>针对非企业的部署
 
-## <a name="next-step"></a>下一步骤
+如果你的组织规模较小，而 Microsoft 365 商业版不适合你，则请查看[针对非企业的部署](deploy-foundation-infrastructure-non-enterprises.md)。
 
-- 我已经有适用于 Office 365、企业移动性 + 安全性 (EMS) 或 Windows 10 企业版的基础结构：
-  - 请参阅[利用现有基础结构部署](deploy-with-existing-infrastructure.md)。 本文将指导你了解每个阶段的退出条件。
-- 我将从头开始： 
-   - 从[阶段 1：网络](networking-infrastructure.md)开始你的端到端部署旅程。
+
+## <a name="next-step"></a>后续步骤
+
+
+| 我当前的境况 | 我需要达成的目标 |
+|:-------|:-----|
+| 我现在有针对 Office 365、企业移动性 + 安全性 (EMS) 或 Windows 10 企业版的基础结构。 | 请首先[用基础结构进行部署](deploy-with-existing-infrastructure.md)按照步骤了解各阶段的退出条件。 |
+| 我要作为企业从头开始 | 通过[阶段 1：网络](networking-infrastructure.md)开启你的端到端部署旅程。 |
+| 我要以非企业的身份从头开始 | 通过[针对非企业的部署](deploy-foundation-infrastructure-non-enterprises.md)开启你的端到端部署旅程。 |

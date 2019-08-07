@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/18/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: 7905bcf37f2cda0e81208a9666c257e2c871110e
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: cf698e4dbee17a811a4d2bc01d08d4d97d1961c1
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074172"
 ---
 # <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 
@@ -85,12 +85,9 @@ Office 365 专业增强版为 Microsoft 365 企业版提供这些战略业务方
 
 如果组织使用配置管理器，建议升级到 Current Branch 并更新到当前版本。有关详细信息，请参阅[应使用配置管理器的哪个分支？](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use)
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企业版
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-通过下面这些资源，了解 Microsoft 专家如何计划并在 Microsoft 365 企业版中部署了 Office 365 专业增强版：
-
-- [部署和更新 Microsoft Office 365 专业增强版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [自动化和更新通道有助于部署 Microsoft Office 365 专业增强版](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus)（视频）
+了解 Microsoft 的专家如何[部署和管理 Office 365 专业增强版更新](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 

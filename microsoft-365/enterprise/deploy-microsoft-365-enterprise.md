@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937404"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054944"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
 
-Microsoft 365 企业版是 Office 365、企业移动性 + 安全性 (EMS) 和 Windows 10 企业版的组合： 
+Microsoft 365 企业版是本地和基于云的生产力应用和服务与 Windows 10 企业版的组合：  
 
 - 具有智能安全性。
 - 集成式，更简单。

@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -12,19 +12,19 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 如何使用 Microsoft 365 企业版中的 EMS 来管理其设备以及上面运行的应用。
-ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 了解 Contoso 如何使用 Microsoft 365 企业版中的 Intune 来管理其设备及其上运行的应用。
+ms.openlocfilehash: 9f3db160b01a54afa3457703b0333be1ff3a02ec
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278038"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054984"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
 
-**摘要**：了解 Contoso 如何使用 Microsoft 365 企业版中的 EMS 来管理其设备以及上面运行的应用。
+**摘要：** 了解 Contoso 如何使用 Microsoft 365 企业版中的 Intune 来管理其设备及其上运行的应用。
 
-Microsoft 365 企业版中的“企业移动性 + 安全性”(EMS) 由 Microsoft Intune 和一组 Azure 服务组成，旨在支持移动设备和应用程序的管理和安全性。
+Microsoft 365 企业版包含 Microsoft Intune 和一组 Azure 服务，可对移动设备和应用程序的管理和安全性进行支持。
 
 Contoso 拥有许多使用移动设备的员工，其中一些人在 Contoso 办公室有办公位，另一些则没有。Contoso 需要通过一种方法来支持员工高效工作，同时确保设备、存储在这些设备上的 Contoso 数据和应用程序行为的安全性。
 

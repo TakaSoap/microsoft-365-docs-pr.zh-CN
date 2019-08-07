@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/16/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 部署 Microsoft 365 企业版的身份基础结构的步骤。
-ms.openlocfilehash: 932b6fb2cfeb86edcf708bdfdea55cdd8b580838
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 6acd462a0fcd4169a42a0b1d0e1738ffcba597f5
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288730"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073892"
 ---
 # <a name="phase-2-identity"></a>阶段 2：身份
 
@@ -56,14 +56,11 @@ Microsoft 提供了一组有关[标识和设备访问](microsoft-365-policies-co
 - [先决条件](identity-access-prerequisites.md)
 - [常见标识和设备访问策略](identity-access-policies.md)
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企业版
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-了解 Microsoft 的 IT 专家如何使用以下这些资源来计划和部署 Microsoft 365 企业版的标识功能：
+了解 Microsoft 的 IT 专家如何[管理标识和安全访问](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR5)。
 
-- [管理 Microsoft 用户标识和安全访问](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [使用 Azure AD Privileged Identity Management 进行提升的访问](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
-
-## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何使用 Microsoft 365 企业版
+## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 
 了解 Contoso Corporation（虚构但具代表性的跨国企业）如何为 Microsoft 365 云服务[部署混合身份基础结构](contoso-identity.md)。
 

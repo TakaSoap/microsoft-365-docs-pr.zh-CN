@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的设备和应用就绪情况。
-ms.openlocfilehash: eb619cf807c2bd4ad3644dbb26e72b62e30320c7
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 9898090171d9e009a4f43f5362c363f71f08072e
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584548"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830515"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步骤 1：设备和应用就绪情况
 
@@ -41,7 +41,7 @@ ms.locfileid: "35584548"
 
 也就是说，根据组织的规模和年龄，验证应用程序和硬件兼容性很有可能仍是我们建议的 8 阶段部署过程中一个必不可少的初始步骤。
 
-我们将在本文中指导你完成第一阶段：设备和应用就绪情况，方法是使用 Microsoft 就绪情况评估工具（包括新的桌面分析升级就绪情况工具），这是一套可通过 Windows 许可证获得的基于云的智能解决方案。
+我们将在本文中指导你完成第一阶段：设备和应用就绪情况，方法是使用 Microsoft 就绪情况评估工具（包括桌面分析），这是一套可通过 Windows 许可证获得的基于云的智能解决方案。
 
 ## <a name="windows-10-compatibility-scan"></a>Windows 10 兼容性扫描
 
@@ -53,11 +53,11 @@ ms.locfileid: "35584548"
 
 有关 ScanOnly 和其他 Windows 安装程序命令开关的更多信息，请查看 [Windows 安装程序命令行选项](https://aka.ms/setupswitches)。
 
-## <a name="recommended-tool-desktop-analytics-upgrade-readiness"></a>推荐的工具：桌面分析升级就绪情况
+## <a name="recommended-tool-desktop-analytics"></a>推荐的工具：桌面分析
 
-桌面分析升级就绪情况提供许多优于传统桌面管理系统的优势，是我们推荐使用的工具。 它没有代理，可以指导你完成利用通过升级数亿台使用者电脑收集的应用程序和驱动程序兼容性信息所需的操作。 此信息为你提供详细的评估，帮助确定可能会阻止升级的兼容性问题，并提供指向 Microsoft 已知建议修补程序的链接。
+桌面分析提供许多优于传统桌面管理系统的优势，是我们推荐使用的工具。 它没有代理，可以指导你完成利用通过升级数亿台使用者电脑收集的应用程序和驱动程序兼容性信息所需的操作。 此信息为你提供详细的评估，帮助确定可能会阻止升级的兼容性问题，并提供指向 Microsoft 已知建议修补程序的链接。
 
-若要设置 Window Analytics 升级就绪情况，首先需要设置 Azure 订阅并为其添加一个 Azure Log Analytics 工作区。 运行桌面分析升级就绪情况服务后，便可以通过组策略设置注册任何连接 Internet 的 Windows 7 SP1 或更新系统的设备，非常简单。 不需要部署代理，桌面分析升级就绪情况的可视化工作流可指导你完成从试生产到生产部署的过程。 如果需要，可以将桌面分析升级就绪情况中的数据导出到软件部署工具（如 System Center Configuration Manager (Current Branch)），这样就可以在准备好部署时，直接定位电脑并生成集合。
+若要设置桌面分析，首先需要设置 Azure 订阅并为其添加一个 Azure Log Analytics 工作区。 运行桌面分析服务后，便可以通过组策略设置注册任何连接 Internet 的 Windows 7 SP1 或更新系统的设备，非常简单。 不需要部署代理，桌面分析的可视化工作流可指导你完成从试生产到生产部署的过程。 如果需要，可以将桌面分析中的数据导出到软件部署工具（如 System Center Configuration Manager (Current Branch)），这样就可以在准备好部署时，直接定位电脑并生成集合。
 
 如果当前环境未设置桌面分析或者想要注册试用版，请转到桌面分析页 http://www.aka.ms/desktopanalytics) 并开始使用。
 
@@ -67,17 +67,15 @@ ms.locfileid: "35584548"
 
 ### <a name="1-inventory"></a>1\. 清查
 
-桌面分析升级就绪情况服务将使用无代理流程跨桌面空间清查计算机和应用程序。
+桌面分析将使用无代理流程跨桌面空间清查计算机和应用程序。 它还提供有关经常性访问的 Internet 站点、应用和 Intranet 位置报表，帮助你稍后进行兼容性测试。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
-
-它还提供有关经常性访问的 Internet 站点、应用和 Intranet 位置报表，帮助你稍后进行兼容性测试。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. 确定优先顺序
 
-借助清查过程，桌面分析升级就绪情况可帮助你确定组织中最常用的应用和硬件并区分优先次序，以及允许对尽可能多的电脑进行部署要注意的事项。
+借助清查过程，桌面分析可帮助你确定组织中最常用的应用和硬件并区分优先次序，以及允许对尽可能多的电脑进行部署要注意的事项。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
@@ -85,9 +83,9 @@ ms.locfileid: "35584548"
 
 ### <a name="3-testing"></a>3\. 测试
 
-你会发现清查的大多数应用程序、驱动程序和加载项将按原样工作。 对于桌面分析升级就绪情况评估出存在问题的项目，它会为你提供已知信息，包括在何处查找版本更新以解决兼容性问题。 可以选择与用户一起停用和替换这些项目，而不是花费时间和资源来解决稀疏部署的非关键型应用程序和较旧设备中的复杂问题。
+你会发现清查的大多数应用程序、驱动程序和加载项将按原样工作。 对于桌面分析评估出存在问题的项目，它会为你提供已知信息，包括在何处查找版本更新以解决兼容性问题。 可以选择与用户一起停用和替换这些项目，而不是花费时间和资源来解决稀疏部署的非关键型应用程序和较旧设备中的复杂问题。
 
-还可以使用桌面分析升级就绪情况来评估基于浏览器的兼容性问题，识别由仍使用 ActiveX 控件、浏览器帮助程序对象、VBScript 或其他不受 Microsoft Edge 浏览器支持的旧版技术的用户访问的网站和 Web 应用。用户仍需要对这些站点使用 Internet Explorer 11，你可以使用 Enterprise Mode Site List Manager 将它们添加到[企业模式网站列表](https://docs.microsoft.com/zh-CN/microsoft-edge/deploy/emie-to-improve-compatibility)。
+还可以使用桌面分析来评估基于浏览器的兼容性问题，识别仍在使用 ActiveX 控件、浏览器帮助程序对象、VBScript 或 Microsoft Edge 浏览器不支持的其他旧技术的用户访问的网站和 Web 应用程序。 用户仍需要为这些站点使用 Internet Explorer 11，你可以使用 Enterprise Mode Site List Manager 将它们添加到 [Enterprise Mode Site List](https://docs.microsoft.com/zh-CN/microsoft-edge/deploy/emie-to-improve-compatibility)。
 
 此外，为了帮助你迁移到 Office 365 专业增强版，你可能希望使用 [Readiness Toolkit for Office](https://docs.microsoft.com/zh-CN/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) 来测试加载项和 Microsoft Visual Basic for Applications (VBA) 宏的兼容性。
 
@@ -114,7 +112,7 @@ Configuration Manager 软件清单是为设备和应用就绪情况使用基于�
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>继续使用诊断数据工具
 
-桌面分析升级就绪情况不只是帮助你转移到 Windows 10 和 Office 365 专业增强版的工具。一旦在 Windows 10 和 Office 365 上运行桌面，就可以使用它来维护部署，并管理半年度功能更新，以便掌握最新动态。
+桌面分析不只是帮助你转移到 Windows 10 和 Office 365 专业增强版的工具。 一旦在 Windows 10 和 Office 365 上运行桌面，就可以使用它来维护部署，并管理半年度功能更新，以便掌握最新动态。
 
 ## <a name="next-step"></a>后续步骤 
 

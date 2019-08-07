@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 部署 Microsoft 365 企业版的网络基础结构的步骤。
-ms.openlocfilehash: 9b8c23d543eca97147801d70e42de7105266c52d
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 4c1ea87e243d72920a3a56df270fab33bd722834
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33399956"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074312"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>第 1 阶段：Microsoft 365 企业版的网络基础结构
 
@@ -48,11 +48,11 @@ Microsoft 365 企业版包括 Office 365 和 Microsoft Intune，作为企业管�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-[针对 Microsoft Office 365 优化网络性能](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)，深入了解 Microsoft，了解公司如何做好准备，针对 Office 365 云服务优化 Microsoft 网络。
+洞察 Microsoft，了解这家公司如何[针对云服务优化 Microsoft 网络](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 
-了解 Contoso Corporation（虚构但具代表性的跨国企业）如何针对 Microsoft 365 云服务[优化其网络](contoso-networking.md)。
+了解 Contoso Corporation（有代表性的虚构跨国企业）如何针对 Microsoft 365 云服务[优化自己的网络设备和 Internet 连接](contoso-networking.md)。
 
 ![](./media/contoso-overview/contoso-icon.png)
 

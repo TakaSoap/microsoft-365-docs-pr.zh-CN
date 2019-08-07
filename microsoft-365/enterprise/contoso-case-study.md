@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,18 +13,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 一个虚构但具有代表性的全球组织如何采用 Microsoft 365 企业版。
-ms.openlocfilehash: 559e1af8a344fea2863c528eeaa99de718d2eeed
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e587a2c6588faf32aa6882ef1659472365611517
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276669"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054914"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 企业版
 
 **摘要：** 一个虚构但具有代表性的全球组织如何采用 Microsoft 365 企业版。
 
-Microsoft 365 企业版是 Microsoft 首屈一指的云产品，它将 Office 365、Windows 10 企业版以及“企业移动性 + 安全性”(EMS) 整合成一个完整的智能解决方案，使每个人都能发挥自己的创造性并安全地协同工作。 
+Microsoft 365 企业版是 Microsoft 首屈一指的云产品，它将 本地和基于云的生产力应用和服务与 Windows 10 企业版和高级安全功能整合成一个完整的智能解决方案，使每个人都能发挥自己的创造性并安全地协同工作。 
 
 Contoso Corporation 是一家虚构但具代表性的全球大型制造集团，总部设在法国巴黎。Contoso 已部署了 Microsoft 365 企业版，并且制定了以下方面的主要设计决策和实现详情：网络、标识、Windows 10 企业版、Office 365 专业增强版、移动设备管理、信息保护和安全性。 
 
