@@ -6,18 +6,18 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 5987dcaf717ecb2907f02db675a77c3e1d2d2220
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425665"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243933"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的安全性
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft 托管桌面应用一组标准策略并利用多种 Microsoft 技术来帮助保护 Microsoft 托管桌面设备、存储的公司数据等。 下面详细介绍了下面列出的区域:  
+Microsoft 托管桌面使用几种 Microsoft 技术来帮助保护受管理的设备和数据。 具体来说： 
 
 - [数据安全性](#data-security)-Microsoft 托管桌面收集的数据类型以及安全存储的数据类型
 - [设备安全性](#device-security)– Microsoft 托管桌面设备上的安全性和保护
@@ -37,6 +37,7 @@ Microsoft 托管桌面应用一组标准策略并利用多种 Microsoft 技术�
 - 应用程序部署和可靠性数据
 - 更新和安全策略部署数据
 - 分配到设备的用户
+- 来自你的租户的安全日志, 这些帐户与 Microsoft 托管桌面使用来管理服务的帐户相关
 
 
 
@@ -60,8 +61,7 @@ Microsoft 托管桌面可确保所有托管设备都受到保护和保护, 并�
 
 服务 | 说明
 --- | ---
-生物识别身份验证 |  Windows Hello 允许用户使用其面孔或 PIN 进行登录, 使密码更难遗忘或盗取。 有关详细信息, 请参阅[Windows Hello。](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-多重身份验证 | Azure 多重身份验证通过使用移动电话提供其他级别的身份验证以及自助密码重置, 来更紧密地控制对 Microsoft 托管桌面服务敏感功能的访问。 
+生物识别身份验证 |  Windows Hello 允许用户使用其面孔或 PIN 进行登录, 使密码更难遗忘或盗取。 客户负责为其本地 Active Directory 实施必要的先决条件, 以在混合配置中使用此服务。 有关详细信息, 请参阅[Windows Hello。](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 标准用户权限 |  为了保护系统并使其更安全, 将为用户分配标准用户权限。 这是作为 Windows Autopilot 的现成体验的一部分分配的。
 
 

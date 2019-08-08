@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2178b871da412d12bf20dae9b72d7562e2bc4654
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390529"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243943"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>在 Microsoft 托管桌面管理门户中添加管理员联系人
 
@@ -28,13 +28,13 @@ Microsoft 托管桌面管理门户要求访问门户的用户拥有以下 Azure 
 
 全局管理员必须是要在 Microsoft 托管桌面中注册客户的全局管理员。 在管理门户中, 所有五个角色都具有相同的访问权限, 以启动和查看任务。 有关在 Azure AD 中分配这些角色的详细信息, 请参阅[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
 
-## <a name="admin-contact-focus-areas"></a>管理员联系人焦点区域
+## <a name="admin-contact-areas-of-focus"></a>管理联系人焦点区域
 
-管理员联系人应是可以回答问题并针对不同的重点领域做出决定的最佳人员或组。 Microsoft 托管桌面操作将与这些管理员联系人联系, 以了解涉及客户存档的支持请求的问题。 这些管理员联系人将接收支持请求更新和新邮件的通知。 这些领域包括:
+管理员联系人应是可以回答问题并针对不同关注领域做出决定的最佳人员或组。 Microsoft 托管桌面操作将与这些管理员联系人联系, 以了解涉及客户存档的支持请求的问题。 这些管理员联系人将接收支持请求更新和新邮件的通知。 这些领域包括:
 
 焦点区域 | 有关的问题
 --- | ---
-应用 | 应用程序打包故障排除
+应用程序打包 | 应用程序打包故障排除
 设备 | 设备运行状况, 使用 Microsoft 托管桌面设备进行故障排除
 安全性 | Microsoft 托管桌面设备的安全问题故障排除
 IT 技术支持人员 | 在 Microsoft 托管桌面支持 MMD 支持区域之外的最终用户票证的情况下 
