@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 将组织用户载入到 Microsoft 365 企业版的工作效率工作负载。
-ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054924"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297862"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
 
@@ -66,7 +66,7 @@ ms.locfileid: "36054924"
   - [Exchange Online](exchangeonline-workload.md)，以便用户可以开始使用基于云的电子邮件。
 - 如果你不需要在云中存储受到严格监管的数字资产，请在部署**信息保护**层之前为用户部署 [Microsoft Teams](teams-workload.md) 和 [SharePoint Online](sharepoint-online-onedrive-workload.md)。
 
-你必须确定采用何种最佳方式来排序和部署基础架构先决条件阶段的配置，以更好地满足你的业务需求。
+你必须确定采用何种最佳方式来排序和部署底层基础结构先决条件阶段的配置，以满足你的业务需求。
 
 ### <a name="best-practice"></a>最佳做法
 
@@ -77,3 +77,4 @@ ms.locfileid: "36054924"
 虽然是基础性的并且对整体性能非常重要，在将用户载入工作负载的过程中，可以在网络上推出**网络**阶段，而你知道 Microsoft 365 应用程序和服务性能将随着时间的推移而提高。
 
 对于具有多个位置、混合边缘设备和 Internet 连接的企业组织尤其如此。
+

@@ -3,7 +3,7 @@ title: Microsoft 365 企业版底层基础结构
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解组织中部署 Microsoft 365 企业版底层基础结构（也称为核心部署）的主要阶段。
-ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36055015"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297912"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
 
@@ -37,14 +37,14 @@ ms.locfileid: "36055015"
 
 将从最基本的阶段（网络和标识）开始，然后创建基础结构设置和组层，以：
 
-- 在设备上安装最新、最安全的 Windows 版本。
-- 在设备上安装最新的 Microsoft Office 版本。
-- 管理组织的设备。
+- 在设备上安装最新、最安全的 Windows 版本，并保证其处于最新状态。
+- 在设备上安装最新的 Microsoft Office 版本，并保证其处于最新状态。
+- 管理组织的设备及其对应用的访问。
 - 保护这些设备和云中的信息。
 
 但是，你可以灵活地配置和部署阶段中的各个阶段和步骤，以满足你的 IT 资源和业务需求。
 
-- **如果你是较小或较新的组织**，请根据需要按照各个阶段操作，以便有条不紊地构建基础结构。
+- **如果你是较小或较新的组织**，请根据需要按照各个阶段操作，以便有条不紊地构建基础结构。 有关针对非企业的简化部署，请单击[此处](deploy-foundation-infrastructure-non-enterprises.md)。
 
 -  **如果你是企业组织**，请将阶段视作 IT 基础架构的层，而不是定义的路径，并确定如何更好地工作，以最终满足组织中每个层的要求。
 
@@ -80,7 +80,7 @@ ms.locfileid: "36055015"
 
 但是，必须注意的是，Microsoft 365 企业版底层基础结构与为用户部署软件和服务是不相关的。 ***你可以配置底层基础结构层，而无需将这些曾部署到所有用户中。***
 
-因此，可以在将元素部署到组织办公室、区域或部门的众多用户之前配置、测试和试用底层基础结构的元素。
+可在将元素部署到组织办公室、区域或部门的众多用户之前配置、测试和试用底层基础结构的元素。
 
 例如，你可以为以下对象创建设置：
 
@@ -102,7 +102,7 @@ ms.locfileid: "36055015"
 | 移动设备管理 | 将帐户添加到适合于设备注册和基于设备的条件访问策略的组。 |
 | 信息保护 | 将用户帐户添加到信息保护标签组。 |
 
-底层基础结构完成、测试和试用之后，你可以为用户部署已安装的软件（例如 Windows 10 企业版和 Office 365 专业增强版）以及基于云的服务和保护（如设备注册和条件访问策略），以最适合你的业务目标和 IT 资源。
+底层基础结构的阶段或元素完成、测试和试用之后，你可以为用户部署已安装的软件（例如 Windows 10 企业版和 Office 365 专业增强版）以及基于云的服务和保护（如设备注册和条件访问策略），以最适合你的业务目标和 IT 资源。
 
 ## <a name="deployment-and-project-management-strategies"></a>部署和项目管理策略
 
@@ -114,7 +114,6 @@ ms.locfileid: "36055015"
 
 
 ## <a name="next-step"></a>后续步骤
-
 
 | 我当前的境况 | 我需要达成的目标 |
 |:-------|:-----|

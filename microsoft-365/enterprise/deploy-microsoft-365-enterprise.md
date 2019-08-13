@@ -3,7 +3,7 @@ title: 部署 Microsoft 365 企业版
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054944"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297902"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -29,13 +29,13 @@ Microsoft 365 企业版是本地和基于云的生产力应用和服务与 Windo
 - 激发创造力。
 - 专用于团队合作。
 
-只获取这三个产品的许可证并不能实现这些优势，而要以包含集成和一流安全性的特定方式部署产品及其功能。
+可通过包含一流安全服务和功能的集成方式部署基础结构和生产力工作负载，将这些优势变成现实。
 
 部署 Microsoft 365 企业版的三种主要方式如下：
 
-- 使用 FastTrack for Microsoft 365 与 Microsoft 工程师一起部署。
+- 使用 [FastTrack for Microsoft 365](#fasttrack-for-microsoft-365) 与 Microsoft 工程师一起部署。
 - 在 Microsoft 咨询服务或 [Microsoft 合作伙伴](https://partner.microsoft.com/)的协助下部署。
-- 自己使用 Microsoft 365 企业版部署指南进行部署。
+- 使用 [Microsoft 365 企业版部署指南](#microsoft-365-enterprise-deployment-guide)自行部署。
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack for Microsoft 365
 
@@ -57,7 +57,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
   **如果你是较小或较新的组织**，请按照各个阶段操作，以便有条不紊地构建基础架构。
 
-  但是，你可以根据需要以任何顺序（[逐个部署或者并行部署](deployment-strategies-microsoft-365-enterprise.md)）部署所有或部分阶段，以便与当前的基础架构集成，适用于你的 IT 计划和资源并满足你的业务需求。 
+  但是，你可以根据需要以任何顺序（[逐个部署或者并行部署](deployment-strategies-microsoft-365-enterprise.md)）部署所有或部分阶段，以便与当前的基础架构集成，适用于你的 IT 计划和资源并满足你的业务需求。 有关针对非企业的简化部署，请单击[此处](deploy-foundation-infrastructure-non-enterprises.md)。
 
   **如果你是企业组织**，请将阶段视作 IT 基础架构的层，而不是定义的路径，并确定如何更好地工作，以最终满足组织中每个层的要求。
 
@@ -85,6 +85,16 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
+## <a name="transition-your-entire-organization"></a>转换整个组织
+
+要更好地了解如何将真个组织转移到 Microsoft 365 企业版中的产品和服务，请下载[转换海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)。
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
+
+可按letter、legal 或 tabloid (11 x 17) 格式打印此海报。
+
 ## <a name="how-did-others-do-it"></a>其他人是怎么做的呢？
 
 使用这些资源了解其他人是如何部署和使用 Microsoft 365 企业版的。
@@ -98,11 +108,10 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 3. 在“**行业**”中选择你的组织所在的行业。
 4. 在“**产品**”中选择 **Microsoft 365**。
 5. 单击卡片查看客户的案例研究。
-  
 
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企业版
 
-对于每一个致力于培养现代工作场所的领导者来说，打造数字文化是他们的首要任务。 Microsoft 365 旨在支持实现这种文化转变，帮助领导者赋予公司的每个人权力，以释放创造力和促进协作。 在 Microsoft，正是这一基础架构的建立才引发了数字文化的转变。 实施 Microsoft 365 企业版使我们能够部署协作技术，如 Microsoft Teams 和 Exchange Online，并在安全的 SharePoint Intranet 站点之间在线共享敏感数据。
+对于每一个致力于培养现代工作场所的领导者来说，打造数字文化是他们的首要任务。 Microsoft 365 旨在支持实现这种文化转变，帮助领导者赋予公司的每个人权力，以释放创造力和促进协作。 正在 Microsoft 基础架构的建立才引发了数字文化的转变。 实施 Microsoft 365 企业版使我们能够部署协作技术，如 Microsoft Teams 和 Exchange Online，并在安全的 SharePoint Intranet 站点之间在线共享敏感数据。
 
 同时，智能安全功能和产品集成有助于简化管理需求，并最大限度地降低整个 IT 生命周期的总体拥有成本。 
 
@@ -115,7 +124,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 [Contoso 如何部署 Microsoft 365 企业版](contoso-case-study.md)并且完成了主要设计决策和针对以下方面的实施细节：网络、标识、Windows 10 企业版、Office 365 专业增强版、移动设备管理、信息保护和安全性。 
 
-## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>下一步来部署 Microsoft 365 企业版
+## <a name="next-step"></a>下一步骤
 
 若要通过直接的 Microsoft 协助完成部署，请使用 [FastTrack](https://fasttrack.microsoft.com/microsoft365)。
 
