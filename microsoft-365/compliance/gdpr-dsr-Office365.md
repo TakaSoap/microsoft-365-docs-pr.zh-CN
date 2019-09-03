@@ -112,7 +112,7 @@ Office 365 组织可能包含由基于云的服务和本地服务器产品组合
 
 如前文所述，Microsoft 估计超过 90% 的组织数据都是使用 Office 应用程序创建的，如 Word 和 Excel。这意味着可以使用安全与合规中心的内容搜索工具搜索与 DSR 相关度最高的数据。
 
-本指南假定你或搜索可响应 DSR 请求的个人数据的用户熟悉安全与合规中心的内容搜索工具或有使用该工具的经验。有关使用内容搜索的常规指导，请参阅 [Office 365 中的内容搜索](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)。请确保已向运行搜索的用户分配针对安全与合规中心的必要权限。应将相关用户添加为安全与合规中心电子数据展示管理者角色组的成员；请参阅[分配 Office 365 安全与合规中心的电子数据展示权限](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7)。考虑将组织中涉及调查 DSR 的其他用户添加到电子数据展示管理者角色组，使其能够使用内容搜索工具执行必要的操作，例如预览和导出搜索结果。但请注意，电子数据展示管理者可以搜索组织中的所有内容位置（包括可能与 DSR 调查无关的位置），除非设置合规性边界（如[此处](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)所述）。
+本指南假定你或搜索可响应 DSR 请求的个人数据的用户熟悉安全与合规中心的内容搜索工具或有使用该工具的经验。有关使用内容搜索的常规指导，请参阅 [Office 365 中的内容搜索](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)。请确保已向运行搜索的用户分配针对安全与合规中心的必要权限。应将相关用户添加为安全与合规中心电子数据展示管理者角色组的成员；请参阅[分配 Office 365 安全与合规中心的电子数据展示权限](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7)。考虑将组织中涉及调查 DSR 的其他用户添加到电子数据展示管理者角色组，使其能够使用内容搜索工具执行必要的操作，例如预览和导出搜索结果。但请注意，电子数据展示管理者可以搜索组织中的所有内容位置（包括可能与 DSR 调查无关的位置），除非设置合规性边界（如[此处](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)所述）。
 
 找到数据后，可执行特定操作以满足数据主体的请求。
 
@@ -215,15 +215,15 @@ pilar@contoso.com AND filetype="xlxs"
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>处理内容搜索中的部分索引项
 
-部分索引项（也称为*未编制索引的项*）是出于某些原因未针对搜索完全编制索引的 Exchange Online 邮箱项目以及 SharePoint Online 和 OneDrive for Business 文档，无法使用内容搜索对其进行搜索。 大多数电子邮件和网站都可成功编制索引，因为它们在 [Office 365 索引限制](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d?)的范围内。 未针对搜索对电子邮件或文件编制索引的原因包括：
+部分索引项（也称为*未编制索引的项*）是出于某些原因未针对搜索完全编制索引的 Exchange Online 邮箱项目以及 SharePoint Online 和 OneDrive for Business 文档，无法使用内容搜索对其进行搜索。 大多数电子邮件和网站都可成功编制索引，因为它们在 [Office 365 索引限制](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??)的范围内。 未针对搜索对电子邮件或文件编制索引的原因包括：
 
-- 文件类型是[索引无法识别或不支持](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)的文件类型。 虽然该文件类型有时支持索引，但是特定文件出现索引错误
+- 文件类型是[索引无法识别或不支持](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)的文件类型。 虽然该文件类型有时支持索引，但是特定文件出现索引错误
 - 电子邮件的附件文件中未包含有效的图柄，如图像文件（这是部分索引电子邮件项最常见的原因）
 - 附加到电子邮件的文件太大，或附加的文件过多
 
 建议详细了解部分索引项，以便在响应 DSR 请求时进行处理。有关详细信息，请参阅：
 
-- [处理 Office 365 内容搜索中的部分索引项](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)
+- [处理 Office 365 内容搜索中的部分索引项](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
 - [使用 Office 365 电子数据展示调查部分索引项](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 - [导出未编制索引的项](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
 
@@ -1023,7 +1023,7 @@ Kaizala 管理员可以在 Kaizala 管理门户中删除 Kaizala 用户的帐户
 
 #### <a name="discover"></a>发现
 
-Planner 计划与 Office 365 组关联，而 Office 365 组的文件存储在组的关联 SharePoint Online 网站中。 这意味可以使用内容搜索，通过搜索网站中的 Office 365 组来查找 Planner 文件。 要执行此操作，需要有 Office 365 组的 URL。 请参阅“Office 365 中的内容搜索”帮助主体中的[搜索 Microsoft Teams 和 Office 365 组](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)，了解有关获取 Office 365 组相关信息的提示，了解如何在对应的 SharePoint Online 网站中搜索 Planner 文件。
+Planner 计划与 Office 365 组关联，而 Office 365 组的文件存储在组的关联 SharePoint Online 网站中。 这意味可以使用内容搜索，通过搜索网站中的 Office 365 组来查找 Planner 文件。 要执行此操作，需要有 Office 365 组的 URL。 请参阅“Office 365 中的内容搜索”帮助主体中的[搜索 Microsoft Teams 和 Office 365 组](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)，了解有关获取 Office 365 组相关信息的提示，了解如何在对应的 SharePoint Online 网站中搜索 Planner 文件。
 
 #### <a name="access"></a>Access
 

@@ -77,8 +77,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
 限制部署相关流量对网络的影响的一种方法是使用客户端上的 BITS（后台智能传输服务）设置来限制它。BITS 使用自适应比特率 (ABR) 来调整可用于部署目的的带宽；可以使用组策略在客户端上配置它。
 
-
-  [关于 BITS](https://docs.microsoft.com/zh-CN/windows/desktop/bits/about-bits)
+[关于 BITS](https://docs.microsoft.com/zh-CN/windows/desktop/bits/about-bits)
 
 如果使用 System Center Configuration Manager (Current Branch)，还可以配置启用 BITS 的分发点或使用 WDS 启用多播。
 
@@ -120,8 +119,7 @@ Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中
 
 **二进制增量压缩**从最新版本的 Office 365 专业增强版更新到下一版本时，Office 365 专业增强版使用二进制增量压缩来减少软件更新所消耗的带宽。通过仅从先前版本中提取二进制级别更改，可以最大限度地减少累积更新的逐月增长所带来的影响。这样一来，每台电脑每月可以节省数百 MB 的数据空间。但是，若要使用此功能，不能跳过版本。如果这样做的话，必须下载完整的累积更新。
 
-
-  [下载适用于 Office 365 的更新](https://docs.microsoft.com/zh-CN/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[下载适用于 Office 365 的更新](https://docs.microsoft.com/zh-CN/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
 **Outlook 数据文件** Outlook 通常配置为在本地缓存用户的整个邮箱以供脱机使用。 在任何 Windows 部署中，只有就地升级需要用户的 Outlook 数据文件在升级后自行重建。 这是一个自动执行过程，但 Outlook 邮箱限制通常设置为最多 100 GB，所有用户在本地重新缓存整个邮箱意味着需要进行大量数据传输。 要减少网络负载，可能需要考虑使用组策略来减少“邮件保持脱机”设置。 在 Office 365 专业增强版的 Outlook 中或 Outlook 2016 中，默认值设置为 12 个月。 考虑将脱机缓存设置为持续 1 到 6 个月。 更改此设置不会影响联机邮箱的大小，并且在联机时仍可以通过 Outlook 搜索整个邮箱。
 
@@ -133,7 +131,7 @@ Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中
 
 [设置已知文件夹移动](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 
-[OneDrive 文件按需下载](https://www.microsoft.com/en-us/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
+[OneDrive 文件按需下载](https://www.microsoft.com/zh-CN/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
 如果你还没有推出 OneDrive，那么从 Windows 7 到 Windows 10 的转换是启用 OneDrive 的绝佳机会，它可以无缝集成 Office 365 专业增强版。 请考虑在完成应用和设备准备工作的同时开始推出。 在开始移动 Windows 映像并通过网络部署应用之前，将先执行文件同步。
 

@@ -78,8 +78,7 @@ ms.locfileid: "35584508"
 
   - 低水平代码解决方案, 如反恶意软件、VPN 或虚拟化
 
-
-  [升级任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)模板内置于“系统中心配置管理器”目前的分支中, 可用于多个版本。 在最新版本中, 系统中心配置管理器的技术得到显著的增强, 使以下过程更高效：确定设备和 Office 兼容性准备情况, 减少网络拥堵及配置 OneDrive 备份之类的新选项。 观看此[Microsoft 技术展](https://youtu.be/CYRnAmCD7ls) , 进一步了解“系统中心配置管理器”操作系统部署的最新更新。
+[升级任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)模板内置于“系统中心配置管理器”目前的分支中, 可用于多个版本。 在最新版本中, 系统中心配置管理器的技术得到显著的增强, 使以下过程更高效：确定设备和 Office 兼容性准备情况, 减少网络拥堵及配置 OneDrive 备份之类的新选项。 观看此[Microsoft 技术展](https://youtu.be/CYRnAmCD7ls) , 进一步了解“系统中心配置管理器”操作系统部署的最新更新。
 
 如果未使用系统中心配置管理器, 则可以使用 Microsoft 部署工具包来构建和执行升级部署任务序列。
 

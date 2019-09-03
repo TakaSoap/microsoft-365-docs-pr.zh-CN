@@ -126,8 +126,7 @@ ms.locfileid: "35830500"
 
   - [Microsoft Mechanics 的桌面部署系列视频](http://www.aka.ms/watchhowtoshift)
 
-  - 
-  [System Center Configuration Manager OS 部署](https://docs.microsoft.com/zh-CN/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager OS 部署](https://docs.microsoft.com/zh-CN/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 部署计划</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
