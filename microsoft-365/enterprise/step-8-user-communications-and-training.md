@@ -55,12 +55,11 @@ ms.locfileid: "34814553"
 
 还提供可能向用户公开的可见的安全性和合规性控件。企业移动性 + 安全性由 Azure AD 和 Microsoft Intune 组成，它将其他功能与 Windows 10 和 Office 365 集成，可用于桌面升级。
 
-[Microsoft 企业移动性 + 安全性](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security)
+[Microsoft 企业移动性 + 安全性](https://www.microsoft.com/zh-CN/cloud-platform/enterprise-mobility-security)
 
 例如，如果你启用了多重身份验证，这会使用 Azure AD，并通过利用手机应用或 PIN 来保护用户登录到资源，以安全地访问服务。Azure 信息保护使用户能够轻松地分类和标记文档。
 
-
-  [为 Office 365 用户设置多重身份验证](https://support.office.com/zh-CN/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[为 Office 365 用户设置多重身份验证](https://support.office.com/zh-CN/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 这些只是你的用户将要体验的几个新功能，其中的某些功能可能会另他们感到吃惊（正面的或不那么正面的），尤其是在他们更改了正常工作流时，这可能会为你或你的支持人员带来更多的工作。
 

@@ -43,8 +43,7 @@ ms.locfileid: "34814603"
 
 在 Windows 上安装应用有很多方法和模型，让我们看看你的交付选项。
 
-
-  [Windows 10 应用程序管理](https://docs.microsoft.com/zh-CN/windows/application-management/)
+[Windows 10 应用程序管理](https://docs.microsoft.com/zh-CN/windows/application-management/)
 
 ## <a name="msi-based-deployments"></a>基于 MSI 的部署
 
@@ -62,11 +61,9 @@ ms.locfileid: "34814603"
 
 如果你想在映像中包含 Office 365 专业增强版，请记住，此操作使用基于用户的激活；系统管理员不能预先将其激活。使用 Office 部署工具在正在成像的设备上预安装 Office，并跳过用户登录。 部署映像后，最终用户可以使用其 Office 365 凭据登录并激活 Office 365 专业增强版。
 
+[创建安装操作系统的任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-  [创建安装操作系统的任务序列](https://docs.microsoft.com/zh-CN/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
-
-
-  [将 Office 365 专业增强版部署为操作系统映像的一部分](https://docs.microsoft.com/zh-CN/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[将 Office 365 专业增强版部署为操作系统映像的一部分](https://docs.microsoft.com/zh-CN/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office 即点即用 
 
@@ -82,17 +79,13 @@ Microsoft 建议使用 [Office 自定义工具](https://config.office.com/)自�
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
+[Office 365 专业增强版部署指南](https://docs.microsoft.com/zh-CN/deployoffice/deployment-guide-for-office-365-proplus)
 
-  [Office 365 专业增强版部署指南](https://docs.microsoft.com/zh-CN/deployoffice/deployment-guide-for-office-365-proplus)
+[在升级到 Office 365 专业增强版时删除 Office 的现有 MSI 版本](https://docs.microsoft.com/zh-CN/deployoffice/upgrade-from-msi-version)
 
+[使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/zh-CN/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-  [在升级到 Office 365 专业增强版时删除 Office 的现有 MSI 版本](https://docs.microsoft.com/zh-CN/deployoffice/upgrade-from-msi-version)
-
-
-  [使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/zh-CN/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-
-
-  [使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备](https://docs.microsoft.com/zh-CN/intune/apps-add-office365)
+[使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备](https://docs.microsoft.com/zh-CN/intune/apps-add-office365)
 
 ## <a name="browser-based-apps"></a>基于浏览器的应用程序
 
@@ -100,8 +93,7 @@ Microsoft 建议使用 [Office 自定义工具](https://config.office.com/)自�
 
 此外，如果你知道内部网站不能正常使用 Microsoft Edge，则可以设置所有内部网站自动使用 Internet Explorer 11 打开。该过程使用 XML 文件来管理 IE11 是否用于每个网站，使用组策略来强制实施设置。
 
-
-  [什么是企业模式](https://docs.microsoft.com/zh-CN/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
+[什么是企业模式](https://docs.microsoft.com/zh-CN/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
 
 到目前为止，我们已经介绍了众所周知的部署方法。 但是，你可能希望考虑两种新的应用程序部署方法。
 

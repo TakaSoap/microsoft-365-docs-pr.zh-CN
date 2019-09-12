@@ -59,15 +59,13 @@ USMT 捕获用户帐户、用户文件、操作系统设置和应用程序设置
 
 当你执行电脑刷新而不重新格式化主 Windows 分区，还可以选择使用 USMT 的硬链接迁移存储。当删除和刷新旧操作系统和应用程序时，该过程将保留电脑上的用户状态。由于还原过程来自同一个本地分区，该选项提供了显著的性能改进，并减少了网络流量。
 
-
-  [用户状态迁移工具 (USMT) 概述](https://docs.microsoft.com/zh-CN/windows/deployment/usmt/usmt-overview)
+[用户状态迁移工具 (USMT) 概述](https://docs.microsoft.com/zh-CN/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>OneDrive 已知文件夹移动
 
 如果用户在 OneDrive 上，或者你将添加 OneDrive 作为此部署的一部分，则可以使用新选项。使用云来同步用户文件，OneDrive“已知文件夹移动”功能提供本地基于网络的文件迁移选项所没有的灵活性。如果在迁移之前启用，它将在新的或刷新的电脑上提供安全访问，并消除在自己的服务器上创建临时迁移存储的需要。此外，它也有可能对用户完全透明。
 
-
-  [将 Windows 已知文件夹重定向和移动到 OneDrive](https://docs.microsoft.com/zh-CN/onedrive/redirect-known-folders)
+[将 Windows 已知文件夹重定向和移动到 OneDrive](https://docs.microsoft.com/zh-CN/onedrive/redirect-known-folders)
 
 如果已经在使用 OneDrive，你将知道用户可以选择要从 OneDrive 或 SharePoint 同步到其设备的文件夹和位置，但这实际上会给最终用户带来设置负担。通过“已知文件夹移动”，可以在用户配置文件中锁定文档、桌面和图片文件夹，并在 OneDrive 中实施全面保护。用户可以自行操作，或者，对于此重要场景而言，你可以[使用组策略设置来执行此操作](https://docs.microsoft.com/zh-CN/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)。
 
