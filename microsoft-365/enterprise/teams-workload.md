@@ -2,7 +2,7 @@
 title: 部署 Microsoft 365 企业版的 Microsoft Teams
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在你的组织中，对 Microsoft 365 企业版中 Microsoft Teams 的价值逐步完成规划、推广和推动过程。
-ms.openlocfilehash: 1e7519817a10eb4aa710dff2d4c74c9390c9f6f6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fd2e72ddb0dfbcc437d30dee16241fbccc81b05b
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072852"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982613"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版的 Microsoft Teams
 
@@ -50,14 +50,6 @@ Teams 可用于很多不同的目的。你需要将组织、业务组、部门�
 你应将 Teams 用于定向解决快速发展且需要密切高度协作的团队的需求，他们需要使用的设施远不是 Exchange Online 电子邮件所能够提供的。例如，带有记录历史信息的实时群聊，以及用于存储文件和备注的常见且易于查找的位置。 
 
 一种了解 Teams 优势的方法就是：检查一个团队或 v-team 目前的交互方式，然后找到一种适当的可替代这种交互的 Teams 应用场景，并在提供更多附加功能的同时提供更简单的进行协作的方法。
-
-Teams 为 Microsoft 365 企业版提供这些战略业务方案：
-
-- 与你的团队进行沟通以了解情况，征求意见，建立凝聚力和共识
-- 让第一线员工推动数字化转型
-- 了解工作习惯，以提升影响力
-
-有关详细信息，请参阅[使用 Microsoft 365 实现数字化转型](http://transform.microsoft.com)。 
 
 #### <a name="microsoft-teams-for-highly-regulated-data"></a>针对高度管控数据的 Microsoft Teams
 
@@ -99,7 +91,7 @@ Teams 为 Microsoft 365 企业版提供这些战略业务方案：
 - [管理 Microsoft Teams 的用户访问](https://docs.microsoft.com/MicrosoftTeams/user-access)
 - [获取 Microsoft Teams 客户端](https://docs.microsoft.com/MicrosoftTeams/get-clients)
 - [打开 Office 365 组织中的 Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [管理 Office 365 组织中的 Microsoft Teams 功能](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
+- [管理 Office 365 组织中的 Microsoft Teams 功能](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 
 #### <a name="result"></a>结果
 

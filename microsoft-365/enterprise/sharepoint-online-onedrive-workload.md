@@ -2,7 +2,7 @@
 title: 为 Microsoft 365 企业版部署 SharePoint Online 和 OneDrive for Business
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在你的组织中，逐步完成对 Microsoft 365 企业版中 SharePoint Online 的价值规划、推广和推动过程。
-ms.openlocfilehash: fab2a368a936fc3ffb4a56a9dc81ba6b3e0b0910
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9ceadbb0268d3a2aa82309d01933a8bd05429188
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074112"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981763"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>为 Microsoft 365 企业版部署 SharePoint Online 和 OneDrive for Business
 
@@ -67,23 +67,6 @@ SharePoint Online 可用于不同用途。需要确定哪些用途能够满足�
 请参阅 [SharePoint Online 管理](https://docs.microsoft.com/sharepoint/sharepoint-online)页面，获取根据需求配置 SharePoint Online 的帮助资源。
 
 了解 SharePoint Online 优势的一种方法是，检查个人、团队、部门或整个组织现在如何交互，然后查找可便于更轻松存储和共享文件及协作的相应应用场景。请注意，对于一些应用场景，[Microsoft Teams](teams-workload.md) 可能是更好的选择。
-
-SharePoint Online 为 Microsoft 365 企业版提供这些战略业务方案：
-
-- 与团队沟通以了解最新情况，征求意见，打造凝聚力和建立共识
-- 利用集体性知识
-- 便于用户变革业务流程
-- 塑造公司文化
-- 管理项目、任务和截止时间，以达到业务目标
-- 让第一线员工推动数字化转型
-- 了解工作习惯，以提升影响力
-- 与合作伙伴、同事和客户沟通
-- 在组织内外存储和共享文件，以跨组织边界无缝工作
-- 随时随地跨设备安全工作，在保持灵活工作方式的同时完成更多任务
-- 保护信息并降低数据丢失风险
-- 帮助组织增强隐私和合规性以符合一般数据保护条例 (GDPR)
-
-有关详细信息，请参阅[使用 Microsoft 365 实现数字化转型](http://transform.microsoft.com)。 
 
 #### <a name="sharepoint-online-site-for-highly-regulated-data"></a>针对高度管控数据的 SharePoint Online 网站
 
