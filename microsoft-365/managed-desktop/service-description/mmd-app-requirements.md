@@ -1,17 +1,17 @@
 ---
 title: Microsoft 托管桌面应用程序要求
 description: ''
-keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
+keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ded8bcfd87a6b430dfc4be055a582b482872b104
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913013"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982453"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用程序要求
 
@@ -19,28 +19,28 @@ ms.locfileid: "34913013"
 
 <!--Application addendum -->
  
-为了保证 Microsoft 托管桌面设备的性能、可靠性和可维护性, 客户的业务线应用程序不一定会严重影响最终用户体验, 也不能修改安全的态度。 因此, 要部署到 Microsoft 托管桌面设备的业务线应用程序必须满足本主题中的要求。
+为了保证 Microsoft 托管桌面设备的性能、可靠性和可维护性，客户的业务线应用程序不一定会严重影响最终用户体验，也不能修改安全的态度。 因此，要部署到 Microsoft 托管桌面设备的业务线应用程序必须满足本主题中的要求。
 
 ## <a name="application-condition"></a>应用程序条件
 
-应用程序不会对 Microsoft 托管桌面环境产生负面影响, 这一点非常重要。 以下是应用程序必须满足部署应用程序的要求。 对于任何给定的应用程序或驱动程序, Microsoft 可能会停征此处提供的任何要求。 Microsoft 可能会决定删除对 Microsoft 托管桌面设备的性能和可靠性产生负面影响的任何应用程序或驱动程序。
+应用程序不会对 Microsoft 托管桌面环境产生负面影响，这一点非常重要。 以下是应用程序必须满足部署应用程序的要求。 对于任何给定的应用程序或驱动程序，Microsoft 可能会停征此处提供的任何要求。 Microsoft 可能会决定删除对 Microsoft 托管桌面设备的性能和可靠性产生负面影响的任何应用程序或驱动程序。
 
 ## <a name="centrally-managed-apps"></a>集中管理的应用程序
 
-所有安装在 Microsoft 托管设备上的应用程序和驱动程序都必须通过 Microsoft Intune、Microsoft Store 或 Microsoft Store for Business 进行部署;如果可用, 还将通过 Windows Update 服务部署驱动程序。 
+所有安装在 Microsoft 托管设备上的应用程序和驱动程序都必须通过 Microsoft Intune、Microsoft Store 或 Microsoft Store for Business 进行部署;如果可用，还将通过 Windows Update 服务部署驱动程序。 
 
 ## <a name="prohibited-app-classes"></a>禁止的应用程序类
 
-Microsoft 托管桌面设备上不允许某些应用程序类型:
+Microsoft 托管桌面设备上不允许某些应用程序类型：
 - 第三方反病毒、安全性或审核软件
-- Office 365 Pro Plus 之前的 Microsoft Office 版本
+- Office 365 专业增强版之前的 Microsoft Office 版本
 - 安装或捆绑其他第三方软件的应用程序
 
 ## <a name="restricted-app-behaviors"></a>受限制的应用程序行为
 
-某些应用程序行为可能会对用户体验产生负面影响, 也可能对 Microsoft 托管桌面设备带来安全风险。 不允许在 Microsoft 托管桌面环境中运行具有以下行为的应用程序, 而无需从 Microsoft 进行特定的例外。
+某些应用程序行为可能会对用户体验产生负面影响，也可能对 Microsoft 托管桌面设备带来安全风险。 不允许在 Microsoft 托管桌面环境中运行具有以下行为的应用程序，而无需从 Microsoft 进行特定的例外。
 
-用户体验:
+用户体验：
 - 安装后台服务
 - 将自身添加到 Windows 启动路径
 - 依赖驱动程序的应用程序
@@ -58,5 +58,5 @@ Microsoft 托管桌面设备上不允许某些应用程序类型:
 
 Microsoft 托管桌面仅支持通过 Microsoft 托管设备在 Windows 更新或已安装的收件箱中提供的设备驱动程序。 
 
-如果应用程序需要特定驱动程序来运行它, 则会将其视为受限制的应用程序, 并要求将豁免部署到 Microsoft 托管桌面。 
+如果应用程序需要特定驱动程序来运行它，则会将其视为受限制的应用程序，并要求将豁免部署到 Microsoft 托管桌面。 
 

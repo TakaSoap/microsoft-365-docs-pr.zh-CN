@@ -10,31 +10,31 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: 9f3f82169dcd4454ffb46b1269422688a107f2b0
-ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
+ms.openlocfilehash: 3ab99b402bf440cd0c113a87dc453ff388a5befb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630581"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982313"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商业版常见问题
 
 ## <a name="general"></a>常规
 
 ### <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 商业版？ 
-Microsoft 365 是一个集成的解决方案, 可为中小型企业提供同类最佳的生产率工具、安全性和设备管理功能。 
+Microsoft 365 是一个集成的解决方案，可为中小型企业提供同类最佳的生产率工具、安全性和设备管理功能。 
 
 **一组全面的企业高效工作和协作工具** 
 * Word、Excel、PowerPoint、Outlook、OneNote、Publisher 和 Access 
 * Exchange、OneDrive、Skype for Business、Microsoft Teams、SharePoint 
-* Office 中的业务应用程序 (预订、Outlook 客户经理、MileIQ<sup>[1](#footnote1)</sup>、Microsoft 开票<sup>[1](#footnote1)</sup>) 
+* Office 中的业务应用程序（预订、Outlook 客户经理、MileIQ<sup>[1](#footnote1)</sup>、Microsoft 开票<sup>[1](#footnote1)</sup>） 
  
 **企业级设备管理和安全功能** 
-- 帮助提供来自外部威胁 (如仿冒 & 复杂恶意软件和 Office 365 高级威胁防护和 Windows Defender 漏洞防护的防护 
--  帮助控制 & 管理如何使用 Office 365 数据丢失防护策略访问和传输敏感信息 (在夏季、2018) 和 Azure 信息保护计划1中可用 
+- 帮助提供来自外部威胁（如仿冒 & 复杂恶意软件和 Office 365 高级威胁防护和 Windows Defender 漏洞防护的防护 
+-  帮助控制 & 管理如何使用 Office 365 数据丢失防护策略访问和传输敏感信息（在夏季、2018）和 Azure 信息保护计划1中可用 
 -  通过 Exchange Online 存档帮助保护、保留和备份你的数据  
 -   Office 相关应用程序保护 & 其他具有 Intune 应用保护的移动应用程序 
--  适用于 Windows 10 电脑的设备管理, MacOS & Mobiles 设备与 Intune 设备管理 
+-  适用于 Windows 10 电脑的设备管理，MacOS & Mobiles 设备与 Intune 设备管理 
 -  跨设备的一致性安全配置-跨设备保护公司数据-Windows Defender、始终打开和最新 
  
  
@@ -67,17 +67,19 @@ Microsoft 365 商业版专为具有低到中等 IT 复杂性要求的中小型�
 实现 IT 环境标准化有助于随着时间的推移减少维护和安全成本，并且是企业应该努力达到的一种状态。 但是，我们认识到，长期以来，一些中小型客户主要在升级硬件时更新其软件。 企业可以向其组织的部分人员部署 Microsoft 365 商业版，但为了最好地保护敏感的业务数据并获得一致的协作体验，建议向所有用户进行部署。
 
 ### <a name="how-can-i-know-if-the-hardware-and-software-i-run-today-is-compatible-with-microsoft-365-business"></a>如何知道现在运行的硬件和软件是否与 Microsoft 365 商业版兼容？ 
-如果现在运行的硬件运行 Windows 7 专业版或更高版本，可能满足 Microsoft 365 商业版的最低要求。 某些 Windows 10 功能 (如 Cortana、Windows Hello 和多点触控) 需要仅在较新的电脑上可用的特定硬件。 有关附加详细信息，请参阅 <a href="https://www.microsoft.com/windows/windows-10-specifications" target="_blank">Windows 10 专业版系统要求</a>。 
+如果现在运行的硬件运行 Windows 7 专业版或更高版本，可能满足 Microsoft 365 商业版的最低要求。 某些 Windows 10 功能（如 Cortana、Windows Hello 和多点触控）需要仅在较新的电脑上可用的特定硬件。 有关附加详细信息，请参阅 <a href="https://www.microsoft.com/windows/windows-10-specifications" target="_blank">Windows 10 专业版系统要求</a>。 
  
 在大多数现有应用程序保持运行而不做任何更改的情况下，现有桌面 (Win32) 应用程序兼容性在 Windows 10 中也应该很强大。 客户及其信任的 IT 顾问应该阅读推荐的 <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">Windows 10 兼容性</a>应用程序测试过程，并查看 <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Office 系统要求</a>，以确保顺利过渡到 Microsoft 365 商业版。 
 
 ### <a name="what-is-windows-10-business"></a>什么是 Windows 10 商业版？ 
-Windows 10 商业版是一组云服务和设备管理功能，能够对 Windows 10 专业版加以补充并实现 Microsoft 365 商业版集中管理和安全控制。 Windows 10 商业版还附带 Windows AutoPilot，这是一项简化新 Windows 10 电脑的部署的服务。 如果你的设备具有 Windows 7、8 和 8.1 专业版的许可证，则 Microsoft 365 商业版会将操作系统升级到 Windows 10 专业版，此专业版是部署 Windows 10 商业版的先决条件。 
+Windows 10 商业版是一组云服务和设备管理功能，能够对 Windows 10 专业版加以补充并实现 Microsoft 365 商业版集中管理和安全控制。 Windows 10 商业版还附带 Windows AutoPilot，这是一项简化新 Windows 10 电脑的部署的服务。 如果你的设备具有 Windows 7、8 和 8.1 专业版的许可证，则 Microsoft 365 商业版会将操作系统升级到 Windows 10 专业版，此专业版是部署 Windows 10 商业版的先决条件。
+> [!IMPORTANT]
+> 您需要在升级时提供原始产品密钥，否则升级将不起作用。 
 
 ### <a name="how-does-microsoft-365-business-help-support-our-bring-your-own-device-byod-policy"></a>Microsoft 365 商业版如何帮助支持“自带设备办公 (BYOD)”策略？ 
 许多员工更喜欢使用其自己的手机或平板电脑来访问个人和工作信息，而不是为每种目的携带多台设备。 使用个人设备工作虽然很常见，但会增加业务信息最终可能落入他人手中的风险。 许多竞争性移动数据保护解决方案要求用户在其设备上切换到特定方式，或使用另一种复杂机制，用户可能会发现这种机制具有干扰性，因此会避免使用。 
  
-Microsoft 365 业务为客户提供了一个简单但功能强大的方法, 使员工能够使用其个人设备进行工作, 同时让这些设备能够阻止这些设备访问、保留和/或共享业务信息. 更具体地说： 
+Microsoft 365 业务为客户提供了一个简单但功能强大的方法，使员工能够使用其个人设备进行工作，同时让这些设备能够阻止这些设备访问、保留和/或共享业务信息. 更具体地说： 
 * **适用于 Office 移动应用的应用保护**可通过强力执行策略（如在未连接到服务的规定时长过后自动删除业务数据、要求将信息仅存储到 OneDrive for Business、要求进行 PIN/指纹验证来访问 Office 应用，以及防止将公司数据从 Office 应用复制到个人应用）来帮助应用保护 Office 数据，包括 iOS 和 Android 移动设备上的电子邮件、日历、联系人和文档。 Microsoft 365 业务订阅者也提供了通过 Intune 进行的其他移动应用的移动应用程序管理。 
   
 * 利用**适用于 Windows 10 电脑的设备管理**，企业可以选择设置和实施一些功能，如 Windows Defender 恶意软件防护、自动更新以及在规定时长过后关闭屏幕。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
@@ -85,9 +87,9 @@ Microsoft 365 业务为客户提供了一个简单但功能强大的方法, 使�
 * **适用于 ios 的设备管理、Android & MacOS**功能可帮助企业安全管理包括 IOS、Android、Windows 和 MacOS 设备的各种设备生态系统。 
 
 ### <a name="how-does-microsoft-365-business-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 商业版如何帮助保护组织中的电脑免受恶意攻击？ 
-使用 Microsoft 365 商业管理的电脑受到 Windows Defender 的保护, 这是不是的。 1在 Windows 10 上的防病毒功能, 保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁, 而不是任何其他解决方案。  使用 Microsoft 365 商业版, 企业可以确保 Windows Defender 保护在其所有 Windows 10 设备上运行且始终保持最新。  
+使用 Microsoft 365 商业管理的电脑受到 Windows Defender 的保护，这是不是的。 1在 Windows 10 上的防病毒功能，保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁，而不是任何其他解决方案。  使用 Microsoft 365 商业版，企业可以确保 Windows Defender 保护在其所有 Windows 10 设备上运行且始终保持最新。  
  
-Windows 10 商业版还包括 Windows Defender 攻击防护, 这是一组新的入侵防护功能。 它的功能之一是受控制的文件夹访问, 它会锁定文件夹并防止未授权的应用访问用户的重要文件, 从而在其踪迹中停止勒索软件。 
+Windows 10 商业版还包括 Windows Defender 攻击防护，这是一组新的入侵防护功能。 它的功能之一是受控制的文件夹访问，它会锁定文件夹并防止未授权的应用访问用户的重要文件，从而在其踪迹中停止勒索软件。 
 
 ### <a name="whats-the-difference-between-office-365-business-premium-microsoft-365-business-and-microsoft-365-enterprise"></a>Office 365 商业高级版、Microsoft 365 商业版和 Microsoft 365 企业版之间的区别是什么？ 
 Microsoft 具有中小型客户在升级台式机和设备基础结构时可能会考虑的各种生产力和安全管理产品/服务，每种都具有越来越强大的特性和功能。 
@@ -96,7 +98,7 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 
 **Microsoft 365 商业版**将 Office 365 应用和服务与移动应用程序管理和 Windows 10 专业版相结合，以便能够进行远程管理并帮助设备抵御病毒和恶意软件。 它包括一个简化的管理控制台，通过该控制台可以管理设备和数据策略。 许多中小型企业可以最好地满足 Microsoft 365 业务的需要。 
  
-**Microsoft 365 企业版**是一组授权计划, 这些计划通过 Microsoft 365 商业版提供更高级别的合规性和安全性管理, 它们是为企业客户和拥有超过300用户的客户设计的。 此外, Microsoft 365 企业版计划还提供了其他功能, 包括商业智能和分析工具。
+**Microsoft 365 企业版**是一组授权计划，这些计划通过 Microsoft 365 商业版提供更高级别的合规性和安全性管理，它们是为企业客户和拥有超过300用户的客户设计的。 此外，Microsoft 365 企业版计划还提供了其他功能，包括商业智能和分析工具。
 
 ### <a name="can-i-switch-my-office-365-plan-to-microsoft-365-business"></a>我能否将 Office 365 计划转变为 Microsoft 365 商业版？ 
 能，客户可以将其计划从符合条件的 Office 365 计划转变为 Microsoft 365 商业版。 每月费用可能会减少或增加，根据客户当前的计划而定。
@@ -116,18 +118,18 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 成功部署 Microsoft 365 商业版的最直接途径是与 Microsoft 合作伙伴交流。 他们参加过与各种客户方案相关的大量培训并有丰富的相关经验，最能够了解你的环境和需求。 具有经验丰富的 IT 在职人员的客户可以使用 <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 商业版入门</a>，以帮助他们部署 Microsoft 365 商业版。 
 
 ### <a name="does-microsoft-365-business-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 商业版是否包括 Microsoft Intune 的全部功能？ 
-是的, 已授权 Microsoft 365 商业订阅者使用适用于 iOS、Android、MacOS 和其他跨平台设备管理的完整 Intune 功能。 在 Microsoft 365 商业版的简化管理控制台中不可用的功能 (如第三方应用程序管理和 WiFi 配置文件的配置、VPN 证书等) 可以在完整 Intune 控制台中进行管理。 您有权使用 Configuration Manager 管理 EMS 许可证覆盖的客户端。 对于与 SCCM 相关的查询, 请参阅<a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">sccm faq</a>
+是的，已授权 Microsoft 365 商业订阅者使用适用于 iOS、Android、MacOS 和其他跨平台设备管理的完整 Intune 功能。 在 Microsoft 365 商业版的简化管理控制台中不可用的功能（如第三方应用程序管理和 WiFi 配置文件的配置、VPN 证书等）可以在完整 Intune 控制台中进行管理。 您有权使用 Configuration Manager 管理 EMS 许可证覆盖的客户端。 对于与 SCCM 相关的查询，请参阅<a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">sccm faq</a>
   
 
 ### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory 高级 P1 是否带有 Microsoft 365 商业版？ 
-Microsoft 365 商业版基于整个 Microsoft 的技术生成，虽然它与 Azure Active Directory 共享一些功能，但它不是完整版。 在 Microsoft 365 商业版中创建的安全和管理策略依赖于一些 Azure 功能, 但不包括所有功能 (如自助式功能、条件访问功能和报告)。 客户可以选择将 Azure Active Directory 高级 P1 或 P2 购买为 Microsoft 365 商业版的加载项。 有关详细信息, 请参阅[Microsoft 365 商业服务说明](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148) 
+Microsoft 365 商业版基于整个 Microsoft 的技术生成，虽然它与 Azure Active Directory 共享一些功能，但它不是完整版。 在 Microsoft 365 商业版中创建的安全和管理策略依赖于一些 Azure 功能，但不包括所有功能（如自助式功能、条件访问功能和报告）。 客户可以选择将 Azure Active Directory 高级 P1 或 P2 购买为 Microsoft 365 商业版的加载项。 有关详细信息，请参阅[Microsoft 365 商业服务说明](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148) 
  
  
 ### <a name="does-microsoft-365-business-allow-customers-to-manage-macs"></a>Microsoft 365 商业版是否允许客户管理 Mac？ 
 Intune 可帮助您安全地管理 iOS、Android、Windows 和 macOS 设备。 
  
 ### <a name="what-is-windows-autopilot"></a>什么是 Windows AutoPilot？ 
-Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最终用户利用 Microsoft 365 商业版的集中管理控制首次登录到 Microsoft 365 商业版（IT 人员从来都不需要触摸设备）时，可以完成此过程。 你也可以对运行 Windows 10 专业版创意者更新（或更高版本）并且已恢复出厂设置的现有电脑使用 Windows AutoPilot。 有关 Windows AutoPilot 的详细信息<a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">, 请参阅在此6月, 2017 博客文章</a>。
+Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最终用户利用 Microsoft 365 商业版的集中管理控制首次登录到 Microsoft 365 商业版（IT 人员从来都不需要触摸设备）时，可以完成此过程。 你也可以对运行 Windows 10 专业版创意者更新（或更高版本）并且已恢复出厂设置的现有电脑使用 Windows AutoPilot。 有关 Windows AutoPilot 的详细信息<a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">，请参阅在此6月，2017博客文章</a>。
 
 ## <a name="compatibility"></a>Compatibility
 
@@ -180,7 +182,7 @@ Microsoft 365 商业版不会使其他非正版 Windows 成为正版。 Microsof
 目前可供云解决方案提供商合作伙伴使用的相同支持渠道（顶级支持和高级支持计划）在 Microsoft 365 商业版中经过了训练，并且可以为合作伙伴提供支持。 
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-help-customers-with-their-compliance-obligations"></a>什么是 GDPR，Microsoft 365 商业版如何帮助客户履行合规义务？
-一般数据保护条例 (GDPR) 是一项全面的新隐私法，使欧盟 (EU) 居民能够更好地控制其“个人资料”，并要求组织保持个人资料的完整性。 对于控制或处理与欧盟居民相关的个人资料的组织，GDPR 要求其只使用符合 GDPR 的个人资料处理要求的第三方数据处理器。 2017 年 3 月，Microsoft 提供了合同规定的担保以提供这些保证。 有关 Microsoft 如何帮助他们满足其额外 GDPR 义务的客户应了解可用作加载项的高级合规性和安全功能 (例如 Azure 信息保护、数据丢失防护、高级威胁防护等)以及其他套件 (例如 Microsoft 365 企业版 E5)。 若要了解详细信息，请访问 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr)。
+一般数据保护条例 (GDPR) 是一项全面的新隐私法，使欧盟 (EU) 居民能够更好地控制其“个人资料”，并要求组织保持个人资料的完整性。 对于控制或处理与欧盟居民相关的个人资料的组织，GDPR 要求其只使用符合 GDPR 的个人资料处理要求的第三方数据处理器。 2017 年 3 月，Microsoft 提供了合同规定的担保以提供这些保证。 有关 Microsoft 如何帮助他们满足其额外 GDPR 义务的客户应了解可用作加载项的高级合规性和安全功能（例如 Azure 信息保护、数据丢失防护、高级威胁防护等）以及其他套件（例如 Microsoft 365 企业版 E5）。 若要了解详细信息，请访问 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr)。
 
 
 

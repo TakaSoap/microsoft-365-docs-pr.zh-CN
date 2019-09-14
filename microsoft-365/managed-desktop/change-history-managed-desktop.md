@@ -8,16 +8,36 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
-ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
+ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35795618"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982603"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档的更改历史记录
 
 本主题列出了[Microsoft 托管桌面文档](index.yml)中新增和更新的主题。
+
+## <a name="september-2019"></a>9月2019
+新建或更改的主题 | 说明
+--- | ---
+[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的主题
+[设置 Microsoft 托管桌面设备](get-started/set-up-devices.md) | 新主题
+[自己注册新设备](get-started/register-devices-self.md) | 更新的主题
+[自行注册现有设备](get-started/register-reused-devices-self.md) | 新主题
+[如何在 Microsoft 托管桌面中处理更新](service-description/updates.md) | 更新的主题
+
+## <a name="august-2019"></a>2019年8月
+新建或更改的主题 | 说明
+--- | ---
+[使用 Microsoft 咨询服务](get-ready/apps-mcs.md) | 更新的主题
+[Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的主题
+[获取最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的主题
+[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的主题
+[Microsoft 托管桌面技术](intro/technologies.md) | 更新的主题
+
+
 
 ## <a name="july-2019"></a>2019月
 新建或更改的主题 | 说明
@@ -46,7 +66,7 @@ ms.locfileid: "35795618"
 [为 Microsoft 托管桌面准备映射驱动器](get-ready/mapped-drives.md) | 新主题
 [为 Microsoft 托管桌面准备证书和网络配置文件](get-ready/certs-wifi-lan.md) | 新主题
 [订购 Microsoft 托管桌面设备](get-started/devices.md) | 更新的主题
-
+[获取最终用户的帮助](working-with-managed-desktop/end-user-support.md)
 
 ## <a name="april-2019"></a>2019 年 4 月
 新建或更改的主题 | 说明
@@ -92,5 +112,5 @@ ms.locfileid: "35795618"
 [Microsoft 托管桌面支持](service-description/support.md)<br />[Microsoft 托管桌面的最终用户支持](working-with-managed-desktop/end-user-support.md) | 进行了更新以包括澳大利亚。
 
 ## <a name="october-30-2018"></a>2018年10月30日
-已重新组织内容: 已添加[Microsoft 托管桌面服务说明](service-description/index.md)部分。 
+已重新组织内容：已添加[Microsoft 托管桌面服务说明](service-description/index.md)部分。 
 

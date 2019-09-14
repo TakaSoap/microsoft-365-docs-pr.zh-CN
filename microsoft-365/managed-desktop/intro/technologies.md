@@ -1,17 +1,17 @@
 ---
 title: Microsoft 托管桌面技术
 description: 本主题列出了 Microsoft 托管桌面中使用的技术和应用。
-keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
+keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9f3094b1a1272b0c200271b8d5703fe7173683a6
-ms.sourcegitcommit: 6b5370cded5d8259c9ed561eed324227f74c410b
+ms.openlocfilehash: 57c0be2e8aff09024f84c58bb895aab98324964d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36171732"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982533"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 托管桌面技术
 
@@ -20,16 +20,17 @@ ms.locfileid: "36171732"
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-所有 Microsoft 托管桌面用户都需要 microsoft 365 企业版许可。 有关服务的许可要求的详细信息, 请参阅[Microsoft 托管桌面的先决条件](../get-ready/prerequisites.md)。
+所有 Microsoft 托管桌面用户都需要 microsoft 365 企业版许可。 有关服务的许可要求的详细信息，请参阅[Microsoft 托管桌面的先决条件](../get-ready/prerequisites.md)。
 
-本主题汇总了所需的企业许可证中包含的组件, 并介绍了服务如何将每个组件与 Microsoft 托管桌面设备一起使用。 Microsoft 托管桌面文档中详细介绍了每个领域的具体角色和职责。 
+本主题汇总了所需的企业许可证中包含的组件，并介绍了服务如何将每个组件与 Microsoft 托管桌面设备一起使用。 Microsoft 托管桌面文档中详细介绍了每个领域的具体角色和职责。 
 
 ## <a name="office-365-e3"></a>Office 365 E3
  |
  --- | ---
-Office 365 标准套件 (64 位) | 标准 Office 套件应用程序将随设备一起附带: Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote。<br><br>64-bit 单击运行 (C2R) 完整版本的 Microsoft Project 和 Microsoft Visio 不包含在 Office 365 中。 但是, 由于安装这些应用程序取决于标准 Office 套件安装, Microsoft 托管桌面创建了默认的 Microsoft Intune 部署和安全组, 然后可以使用这些部署和安全组将这些应用程序部署到许可的最终用户。 有关详细信息, 请参阅[在 Microsoft 托管桌面设备上安装 Microsoft Project 或 Microsoft Visio](../get-started/project-visio.md)  
+Office 365 专业增强版（64-位） | 这些 Office 应用程序将随设备一起提供： Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote。<br><br>Microsoft Project 和 Microsoft Visio 的64位完整版本不包含在内。 但是，由于安装这些应用程序取决于 Office 365 专业增强版安装，因此 Microsoft 托管桌面创建了默认的 Microsoft Intune 部署和安全组，然后可以使用这些部署和安全组将这些应用程序部署到许可最终用户。 有关详细信息，请参阅[在 Microsoft 托管桌面设备上安装 Microsoft Project 或 Microsoft Visio](../get-started/project-visio.md)
+OneDrive for Business | Azure Active Directory 单一登录 <br><br>包含 "桌面"、"文档" 和 "图片" 文件夹的 "已知文件夹重定向"。由 Microsoft 托管桌面启用和配置。 
 应用商店应用 |    Microsoft Sway 和 Power BI 不随设备一起提供。 这些应用程序可从 Microsoft Store 下载。
-Win32 应用程序 |    团队不随设备一起提供, 但会打包并由 Microsoft 为 Microsoft 托管桌面设备提供。 Azure 信息保护客户端不随设备附带, 但可以将其打包以进行部署。 
+Win32 应用程序 |    团队不随设备一起提供，但会打包并由 Microsoft 为 Microsoft 托管桌面设备提供。 Azure 信息保护客户端不随设备附带，但可以将其打包以进行部署。 
 Web 应用程序 |  Yammer、Office 在浏览器、Delve、流、StaffHub、PowerApps 和计划器中不随设备一起附带。 用户可以通过浏览器访问这些应用程序的 web 版本。
 
 
@@ -37,7 +38,7 @@ Web 应用程序 |  Yammer、Office 在浏览器、Delve、流、StaffHub、Powe
 
  |
  --- | ---
-Application Virtualization (app-v) |    Microsoft Intune 不支持的 microsoft 托管桌面不支持此类型的部署。
+Application Virtualization （app-v） |    客户可以使用 Intune Win32 应用管理客户端部署 App-v 程序包。
 Microsoft Defender 高级威胁防护 |  Microsoft 托管桌面使用此来监视设备安全性。 
 
 ## <a name="enterprise-mobility--security-e5"></a>企业移动性 + 安全性 E5
