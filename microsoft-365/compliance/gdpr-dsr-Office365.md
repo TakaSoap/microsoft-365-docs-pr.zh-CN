@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2559734241a8b30ec43b26fb0b096faba18138b9
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 30d6e1566fda4dbc84800bbd4359a689f858f9e4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778147"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982653"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Office 365 数据主体请求
 
@@ -97,7 +97,7 @@ Office 365 组织可能包含由基于云的服务和本地服务器产品组合
 | ![Excel 图标](media/o365-excel-64x64.png) <br> Excel | ![Skype for Business 图标](media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
 | ![Office Lens 图标](media/o365-lens-64x64.png) <br> Office Lens | ![任务图标](media/O365-DSR-Doc-Final_image8.png) <br> 任务 |
 | ![OneDrive 图标](media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams 图标](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote 图标](media/o365-onenote-64x64.png) <br> OneNote| ![微软待办图标](media/o365-todo-64x64.png) <br> 微软待办 |
+| ![OneNote 图标](media/o365-onenote-64x64.png) <br> OneNote| ![待办操作图标](media/o365-todo-64x64.png) <br> 待办事项 |
 | ![Outlook 图标](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![视频图标](media/O365-DSR-Doc-Final_image14.png) <br> 视频 |
 | ![人员图标](media/O365-DSR-Doc-Final_image15.png) <br> 人员 | ![Visio 图标](media/o365-visio-64x64.png) <br> Visio |
 | ![PowerPoint 图标](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word 图标](media/o365-word-64x64.png) <br> Word
@@ -360,11 +360,11 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
     ```
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
-6.  重新运行内容搜索。 搜索结果应包括课堂团队课堂笔记本的所有 OneNote 文件。
+6.  重新运行内容搜索。 搜索结果应包括班级团队中 Class Notebook 的所有 OneNote 文件。
 
 #### <a name="microsoft-to-do"></a>微软待办
 
-微软待办中的任务（称为*待办事项*，保存在*待办事项列表*中）以任务的形式保存在用户的 Exchange Online 邮箱中。这意味着可以使用内容搜索工具搜索、访问、删除和导出待办事项。有关详细信息，请参阅[设置微软待办](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620)。
+微软待办中的任务（称为*待办事项*，保存在*待办事项列表*中）在用户的 Exchange Online 邮箱中保存为“任务”。 这意味着你可以使用“内容搜索”工具来搜索、访问、删除和导出待办事项。 有关详细信息，请参阅[设置微软待办](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620)。
 
 #### <a name="skype-for-business"></a>Skype for Business
 
@@ -456,11 +456,11 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 
 ## <a name="deleting-personal-data"></a>删除个人数据
 
-从组织的客户数据中删除个人数据的“擦除权限”是 GDPR 中的一项关键保护措施。删除个人数据包括删除整个文档或文件，或删除文档或文件中的特定数据（相关操作和过程与本指南“纠正”部分所述的操作和过程相似）。
+“擦除权限”可从组织的客户数据中移除个人数据，这是 GDPR 中的一项关键保护措施。 删除个人数据包括删除整个文档或文件，或删除文档或文件中的特定数据（相关操作和过程与本指南“纠正”部分所述的操作和过程相似）。
 
 在调查或准备删除个人数据以响应 DSR 时，需要了解以下有关 Office 365 如何进行数据删除（和保留）的一些重要事项。
 
-- **软删除与硬删除 — 在诸如 Exchange Online、SharePoint Online 和 OneDrive for Business 等 Office 365 服务中，存在*软删除*和*硬删除*的概念，它们与从 Microsoft 云中永久删除项目，断绝恢复的可能性之前，已删除项目的可恢复性相关（通常是在有限的时间内）。 在此上下文中，在硬删除项目之前一段有限的时间内，用户和/或管理员可恢复已软删除的项目。 硬删除某个项目后，该项目将标记为永久删除，并将在相应的 Office 365 服务进行处理后立即清除。 下面介绍了如何软删除和硬删除邮箱和网站中的项目（而无论是数据所有者还是管理员删除了项目）项目：
+- **软删除与硬删除：** 在诸如 Exchange Online、SharePoint Online 和 OneDrive for Business 等 Office 365 服务中，存在*软删除*和*硬删除*的概念，它们在从 Microsoft 云中永久删除无法恢复之前与已删除项目的可恢复性有关（通常在一段有限时间内）。 在此上下文中，在硬删除项目之前一段有限的时间内，用户和/或管理员可恢复已软删除的项目。 硬删除某个项目后，该项目将标记为永久删除，并将在相应的 Office 365 服务进行处理后立即清除。 下面介绍了如何软删除和硬删除邮箱和网站中的项目（而无论是数据所有者还是管理员删除了项目）项目：
 
     - **邮箱：** 从“已删除邮件”文件夹删除某个项目，或通过按 **Shift + Delete** 删除某个项目时，该项目即被软删除。 软删除项目后，该项目移动到邮箱中的“可恢复邮件”文件夹。 此时，在已删除项目保留期限到期之前（在 Office 365 中，已删除项目保留策略为 14 天，但可由管理员增加到最多 30 天），用户可恢复该项目。 保留期限到期后，项目被硬删除，并移动到一个隐藏文件夹（名为“*清除*”文件夹）。 该项目将在下一次处理邮箱时（每七天处理一次邮箱）从 Office 365 中永久删除（清除）。
 
@@ -469,7 +469,7 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 > [!NOTE]
 > 了解可导致项目软删除或硬删除的操作有助于在响应删除请求时，确定如何以符合 GDPR 要求的方式删除数据。
 
-- **法定保留和保留策略 – 在 Office 365 中，可对邮箱和网站实施“保留”。 简言之，这意味着如果邮箱或网站处于保留状态，则在项目的保留期限到期或删除保留之前，不会永久删除（硬删除）任何内容。 在删除客户内容以响应 DSR 时，这一点非常重要：如果从处于保留状态的内容位置硬删除某个项目，不会从 Office 365 永久删除该项目。 这意味着 IT 管理员有可能恢复该项目。如果组织的要求和策略规定永久删除 Office 365 中的数据并使其无法恢复以响应 DSR，则必须从邮箱或网站删除保留，以便永久删除 Office 365 中的数据。 组织针对响应 DSR 的指导原则很可能已制定了一个流程，用于确定是特定 DSR 删除请求还是法定保留优先。 如果删除了保留以便删除项目，可在删除项目后重新实施保留。
+- **法定保留和保留策略：** 在 Office 365 中，可对邮箱和网站实施“保留”。 简言之，这意味着如果邮箱或网站处于保留状态，则在项目的保留期限到期或删除保留之前，不会永久删除（硬删除）任何内容。 在删除客户内容以响应 DSR 时，这一点非常重要：如果从处于保留状态的内容位置硬删除某个项目，不会从 Office 365 永久删除该项目。 这意味着 IT 管理员有可能恢复该项目。如果组织的要求和策略规定永久删除 Office 365 中的数据并使其无法恢复以响应 DSR，则必须从邮箱或网站删除保留，以便永久删除 Office 365 中的数据。 组织针对响应 DSR 的指导原则很可能已制定了一个流程，用于确定是特定 DSR 删除请求还是法定保留优先。 如果删除了保留以便删除项目，可在删除项目后重新实施保留。
 
 ### <a name="deleting-documents-in-sharepoint-online-and-onedrive-for-business"></a>删除 SharePoint Online 和 OneDrive for Business 中的文档
 
