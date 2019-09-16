@@ -3,7 +3,7 @@ title: 步骤 4：配置安全的用户身份验证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并为用户帐户配置多重身份验证。
-ms.openlocfilehash: 73e884802329765fd6a89cfb7d0e04116c17968c
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 2a4a0926a08ae8279523219a2d7a2386ea0c6742
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072082"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981843"
 ---
 # <a name="step-4-configure-secure-user-authentication"></a>步骤 4：配置安全的用户身份验证
 
@@ -36,7 +36,7 @@ ms.locfileid: "34072082"
 - 不易被欺骗或者复制的个人和受信任设备，如智能手机。
 - 生物识别属性，如指纹。
 
-将基于每个用户帐户启用 MFA 并配置辅助身份验证方法。请确保用户知道已启用 MFA，以便他们理解（如强制使用智能手机进行登录）要求并可以成功登录。
+将启用 MFA 并使用[条件访问策略](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)配置次要身份验证方法，该方法允许使用 Azure Active Directory (Azure AD) 组向指定的用户组（如试点用户、地理区域或部门）推出 MFA。 请确保用户知道已启用 MFA，以便他们理解要求（如强制使用智能手机进行登录）并可以成功登录。 
 
 有关详细信息，请参阅[多重身份验证规划](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)。
 
@@ -51,7 +51,22 @@ ms.locfileid: "34072082"
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-mfa)。
 
+<a name="identity-password-prot"></a>
+## <a name="prevent-bad-passwords"></a>防止密码错误
 
+*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+
+若要防止用户创建易于确定的密码，请使用 Azure AD 密码保护，该功能同时使用全局阻止密码列表和你指定的可选的自定义禁止密码列表。 例如，你可以指定特定于贵公司的术语，例如
+
+- 品牌名称
+- 产品名称
+- 位置（例如公司总部）
+- 特定于公司的内部条款
+- 具有特定公司含义的缩写。
+
+可[在云端](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)和[本地 Active Directory 域服务 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises)中禁止错误密码。
+
+作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-password-prot)。
 
 <a name="identity-ident-prot"></a>
 ## <a name="protect-against-credential-compromise"></a>防止凭据泄露
@@ -64,8 +79,8 @@ ms.locfileid: "34072082"
 
 |||
 |:---------|:---------|
-|确定并解决组织身份中的潜在漏洞|Azure AD 使用机器学习来检测异常和可疑活动（如登录和后登录活动）。使用此数据，Identity Protection 将生成报告和警报，用以帮助你评估问题并采取行动。|
-|检测与组织身份相关的可疑操作并自动对其响应|可以配置基于风险的策略，以在达到指定风险级别时自动响应检测到的问题。这些策略，以及由 Azure Active Directory 和企业移动性 + 安全性 (EMS) 提供的其他条件访问控制，可自动阻止访问或采取纠正措施，包括密码重置以及要求对后续登录进行多重身份验证。|
+|确定并解决组织身份中的潜在漏洞|Azure AD 使用机器学习功能检测不正常和可疑活动，如登录和登录后活动。 通过使用此数据，Azure AD Identity Protection 会生成报告和警报，帮助你评估问题并执行操作。|
+|检测与组织身份相关的可疑操作并自动对其响应|可以配置基于风险的策略，该策略可在达到指定风险级别时自动响应检测到的问题。 除了 Azure AD 与 Microsoft Intune 提供的其他条件性访问控制以外，这些策略也可以自动阻止访问或采取纠正措施，包括密码重置和要求后续登录的多重身份验证。|
 |调查可疑事件并使用管理操作加以解决|可以使用有关安全事件的信息来调查风险事件。提供的基本工作流可用于跟踪调查和启动修正操作（如密码重置）。|
 
 请参阅[有关 Azure AD Identity Protection 的详细信息](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)。
@@ -106,8 +121,6 @@ ms.locfileid: "34072082"
 有关报告以及如何进行访问的详细信息，请参阅 [Azure Active Directory 报告](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal)。
 
 通过此步骤，你将认识这些报告并了解如何使用它们洞察 Azure AD 事件和活动，以用于规划和安全目的。
-
-
 
 ## <a name="next-step"></a>后续步骤
 

@@ -83,10 +83,10 @@ Windows Autopilot 配置设备并将其连接到 Azure AD。
 如果需要，可在[步骤 5](../windows10-enable-security-features.md#windows10-sec-eg) 中进行设置以满足此要求。
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必需：你正在使用 Windows Defender 高级威胁防护（仅限 Microsoft 365 企业版 E5）
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必需：你正在使用 Microsoft Defender 高级威胁防护（仅限 Microsoft 365 企业版 E5）
 
-已部署 Windows Defender 高级威胁防护 (ATP)，以针对运行 Windows 10 企业版的网络和设备检测、调查和响应高级威胁。 
+已部署 Microsoft Defender 高级威胁防护 (ATP)，以针对运行 Windows 10 企业版的网络和设备检测、调查和响应高级威胁。 
 
-（可选）已将 Windows Defender ATP 与其他工具集成，以扩展其功能。
+（可选）已将 Microsoft Defender ATP 与其他工具集成，以扩展其功能。
 
 如果需要，可在[步骤 5](../windows10-enable-security-features.md#windows10-sec-atp) 中进行设置以满足此要求。
