@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的目录和网络就绪情况。
-ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584568"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982723"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步骤 2：目录和网络就绪情况
 
@@ -73,7 +73,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
 要考虑的第三个部分是用户个性化设置。对于这一点，需要规划网络带宽，以便在电脑刷新或更换过程中能够恢复用户文件、用户设置和应用程序。每台电脑上的这些项目的大小加起来通常超过 20 GB；对于某些用户，可能超过 100 GB。
 
-## <a name="limiting-bandwidth"></a>**限制带宽**
+## <a name="limiting-bandwidth"></a>限制带宽
 
 限制部署相关流量对网络的影响的一种方法是使用客户端上的 BITS（后台智能传输服务）设置来限制它。BITS 使用自适应比特率 (ABR) 来调整可用于部署目的的带宽；可以使用组策略在客户端上配置它。
 
@@ -87,7 +87,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
-## <a name="scavenging-bandwidth"></a>**清理带宽**
+## <a name="scavenging-bandwidth"></a>清理带宽
 
 Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中支持的低额外时延背景传输 (LEDBAT) 旨在优化传送到 Windows 客户端的网络流量。
 
@@ -97,7 +97,7 @@ Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
-## <a name="peer-to-peer-options"></a>**对等限制**
+## <a name="peer-to-peer-options"></a>对等选项
 
 对等选项越来越多地用于 Windows 10 迁移、电脑映像、软件更新和用户个性化设置。在初始 Windows 10 部署之后，它们对于推动版本到版本升级也很有价值。我们下面介绍几个示例，帮助将 Windows 10 和 Office 相关流量从网络中心移出，减少对经典限制方法的需求，并允许电脑在本地网络中的对等端上查找所需的更新文件，而不是从分发点或 Internet 下载它们。
 

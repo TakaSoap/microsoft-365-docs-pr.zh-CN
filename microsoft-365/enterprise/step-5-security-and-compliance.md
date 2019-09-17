@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Windows 和 Office 重要的安全性和合规性注意事项。
-ms.openlocfilehash: 791006a6a836f28adb8d71b20e0e887b903752ba
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 472a838c68ed06560f5b81f7854b05b1b2e8eefd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814583"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981753"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步骤 5：安全性和合规性注意事项
 
@@ -111,7 +111,7 @@ ms.locfileid: "34814583"
 
 Windows 10 中的 **[Windows Defender 应用程序控制](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** 执行 Microsoft 已检查过安全性的已批准允许和拒绝应用程序列表，所有这些都使用 Microsoft Intune 通过终结点保护策略进行管理。
 
-**[Windows Defender 高级威胁防护](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/windows-defender-atp/overview)** 是一个用于预防性保护、破坏后检测、自动调查和响应的统一平台。它可以保护终结点免受网络威胁；检测高级攻击和数据泄露，自动执行安全事件并改善安全状况。
+**[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/windows-defender-atp/overview)** 是一个用于预防性保护、破坏后检测、自动调查和响应的统一平台。它可以保护终结点免受网络威胁；检测高级攻击和数据泄露，自动执行安全事件并改善安全状况。
 
 **[攻击防护](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** 通过阻止恶意软件进入 Windows 并阻止不受信任的进程访问受保护的文件夹，帮助减小运行应用程序的攻击面。
 

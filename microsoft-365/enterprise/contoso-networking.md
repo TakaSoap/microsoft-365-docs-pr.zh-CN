@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 网络基础结构，及其如何使用 SD-WAN 技术与 Microsoft 365 企业版基于云的服务建立最佳性能网络连接。
-ms.openlocfilehash: 4a2b9f2172def2c62821536e456b2194795158c4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8eb6f17ffd7974169c0131fa81f05939a54854e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072552"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982103"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 

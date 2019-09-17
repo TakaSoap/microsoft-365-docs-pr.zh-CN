@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 86254d388bc5134b7913ab5e93cde96a7bc4cc66
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: b605bfa3d549b3359f8bb780cfffa7306db44d2d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698404"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982407"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Azure 责任准备情况清单
 
@@ -23,12 +23,12 @@ ms.locfileid: "34698404"
 
 本责任准备情况清单可方便你在使用 Microsoft Azure 时，访问支持一般数据保护条例 (GDPR) 可能所需的信息。本清单按个人数据处理者适用的一组隐私和安全控件的标题和参考编号（位于每个清单主题的括号中）进行组织，这些控件取自：
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) 安全技术要求。
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) 安全技术要求。
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隐私管理要求。
 
 可以使用合规性管理器 [16] 来管理此清单中的项目，方法是引用 GDPR 磁贴中的“客户托管控件”下的控件 ID 和控件标题。 此控件结构还用于组织 Microsoft Azure 为支持 GDPR 而实现的内部控件的演示文稿（可从[服务信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)下载）。
 
-此控件结构还将用于组织[Microsoft Dynamics 365 用于支持 GDPR 所实施的内部控件](https://aka.ms/gdprcontrols)的演示文稿。
+此控件结构还将用于组织[Microsoft Dynamics 365 用于支持 GDPR 所实施的内部控件](https://aka.ms/GDPRControls)的演示文稿。
 
 有关更多 GDPR 相关的文档，请访问 [https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted)。
 

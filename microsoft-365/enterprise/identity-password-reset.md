@@ -3,7 +3,7 @@ title: 步骤 5：简化用户访问权限
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置 Azure AD 自助密码重置 (SSPR)。
-ms.openlocfilehash: b57291aabf1b51e7866dba10ba50eacc27291a2a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ec81b2931fd4ad599ffcf983ea8a7d764c56404a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073722"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981793"
 ---
 # <a name="step-5-simplify-access-for-users"></a>步骤 5：简化用户访问权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "34073722"
 
 在此部分中，将允许用户通过 Azure Active Directory (AD) 重置其密码，然后复制到本地 Active Directory 域服务 (AD DS)。 此过程称为密码写回。 通过密码写回，用户不需要通过本地 AD DS（用户帐户及其属性的存储位置）更新其密码。 这非常适用于对本地网络没有远程访问连接的漫游或远程用户。
 
-需要密码写回才可充分利用 Identity Protection 功能，例如，当检测到高风险的帐户泄露时要求用户更改其本地密码。
+需要密码写回才可充分利用 Azure AD 标识保护功能，例如，当检测到高风险的帐户泄露时要求用户更改其本地密码。
 
 有关其他信息和配置说明，请参阅 [Azure AD SSPR 密码写回](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback)。
 
@@ -92,20 +92,11 @@ ms.locfileid: "34073722"
 
 使用 Microsoft 365 企业版，可以自定义登录页和访问面板页的外观，使其包含公司徽标、配色方案和自定义用户信息。 
 
-当用户试图从设备登录时，在自定义之前**，他们会在 Office 365 登录页上看到类似以下示例的内容。
-
-![自定义之前的 Office 365 登录页示例](./media/identity-customize-office-365-sign-in/id-step01-sign-in-before.png)
-
-下面是在自定义之后** Contoso Corporation 的同一用户会看到的内容。
-
-![自定义后的 Office 365 登录页示例](./media/identity-customize-office-365-sign-in/id-step01-sign-in-after.png)
-
 有关详细信息，请参阅[向 Office 365 登录页添加公司品牌](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)。
 
 有关配置说明，请参阅[向登录页和访问面板页添加公司品牌](http://aka.ms/aadpaddbranding)。
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-custom-sign-in)。
-
 
 ## <a name="next-step"></a>后续步骤
 

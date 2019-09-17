@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全的 SharePoint Online 团队网站或 Microsoft Teams 团队以存储最有价值和最敏感的数字资产。
-ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
-ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
+ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "34681053"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982753"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站
 
@@ -67,7 +67,6 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 以下各阶段将指导你完成针对高度管控数据的 SharePoint Online 网站和团队的设计、配置和驱动采用。
 
 若要了解 Contoso Corporation（虚构但具代表性的跨国组织）如何为其研究团队设计 SharePoint Online 网站，请参阅此[示例配置](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。
-
 
 高度管控数据的团队要求首先为高度管控数据创建一个 SharePoint Online 团队网站。然后，创建一个使用 SharePoint Online 团队网站的 Office 365 组的新团队。有关详细信息，请参阅第 2 阶段的步骤 4。
 

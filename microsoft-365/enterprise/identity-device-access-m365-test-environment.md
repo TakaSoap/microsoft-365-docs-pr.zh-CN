@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况。
-ms.openlocfilehash: 9195f532222511fc9dce474617ed52916d8e382a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: c8d7aed1422f9d0c5891157e6fb7d3d30d976c4a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073592"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981893"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>针对 Microsoft 365 的标识和设备访问测试环境
 
-[标识和设备访问配置](microsoft-365-policies-configurations.md)是一组功能和条件访问策略，用于保护对与 Azure Active Directory (Azure AD) 集成的所有服务的访问，包括 Microsoft 365 企业版中的 Office 365 和企业移动性 + 安全性 (EMS)。
+[标识和设备访问配置](microsoft-365-policies-configurations.md)是一组功能和条件访问策略，用于保护对与 Azure Active Directory (Azure AD) 集成的所有服务的访问，包括 Microsoft 365 企业版中的 Office 365 和 Microsoft Intune。
 
 要创建一个部署有这些策略的测试环境：
 

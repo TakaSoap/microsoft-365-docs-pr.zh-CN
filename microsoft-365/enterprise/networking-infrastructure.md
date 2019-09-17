@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 部署 Microsoft 365 企业版的网络基础结构的步骤。
-ms.openlocfilehash: 4c1ea87e243d72920a3a56df270fab33bd722834
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 35c65515854bb0c47a45e48d8e3c6af6a80d907c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074312"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982793"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>第 1 阶段：Microsoft 365 企业版的网络基础结构
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-Microsoft 365 企业版包括 Office 365 和 Microsoft Intune，作为企业管理 + 安全性 (EMS) 一部分。 这两种基于云的服务都依赖于来自客户端设备通过 Internet 或专用电路的连接的安全性、性能和可靠性。 为了托管这些服务并将其提供给世界各地的客户，Microsoft 设计了一个强调性能和集成的网络基础架构。 
+Microsoft 365 企业版包括 Office 365、Microsoft Intune 以及 Microsoft Azure 的许多标识和安全服务。 所有这些基于云的服务都依赖于来自客户端设备通过 Internet 或专用电路的连接的安全性、性能和可靠性。 为了托管这些服务并将其提供给世界各地的客户，Microsoft 设计了一个强调性能和集成的网络基础架构。 
 
 在这个阶段，将遍历创建与 Microsoft 365 企业版云服务的高性能连接的关键注意事项。有关概述，请参阅 [Office 365 网络原则](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)。
 
@@ -48,7 +48,7 @@ Microsoft 365 企业版包括 Office 365 和 Microsoft Intune，作为企业管�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-洞察 Microsoft，了解这家公司如何[针对云服务优化 Microsoft 网络](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4)。
+洞察 Microsoft，了解这家公司如何[针对云服务优化 Microsoft 网络](https://www.microsoft.com/zh-CN/itshowcase/deploying-and-managing-microsoft-365#primaryR4)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 

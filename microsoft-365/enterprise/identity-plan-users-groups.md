@@ -3,7 +3,7 @@ title: 步骤 1：计划用户和组
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 计划为组织工作的一组用户和组。
-ms.openlocfilehash: 1f879c789e6b531dec7163fa252e0f85459c823d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 05b854c182b6f624cf143ed93920c344391ee416
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072172"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981803"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>步骤 1：计划用户和组
 
@@ -67,10 +67,10 @@ ms.locfileid: "34072172"
 
 可将 Azure AD 中的组用于多个目的，以简化云环境的管理。例如，对于 Azure AD 组，可以：
 
-- 只要在 Azure AD 中添加组或从 AD DS 中同步组，就可以使用基于组的许可将 Office 365 和企业移动性 + 安全性 (EMS) 的许可证自动分配到用户帐户。 
+- 只要在 Azure AD 中添加组或从 AD DS 中同步组，就可以使用基于组的许可将许可证自动分配到用户帐户。 
 - 根据用户帐户属性（如部门）将用户帐户动态添加到特定组。  
 - 自动预配软件即服务 (SaaS) 应用程序的用户，并通过多重身份验证和其他条件访问规则来保护对这些应用程序的访问。
-- 预配 SharePoint Online 团队网站的权限和访问权限级别。此外，Azure AD 组还可与范围内的 Azure 信息保护策略一起使用，以保护具有加密和权限的文件。 
+- 预配 SharePoint Online 团队网站的权限和访问权限级别。此外，Azure AD 组还可与敏感度或 Azure 信息保护标签一起使用，以保护具有加密和权限的文件。 
 
 ## <a name="results"></a>结果
 
@@ -81,9 +81,9 @@ ms.locfileid: "34072172"
 
 作为临时检查点，请查看对应于此步骤的[退出条件](identity-exit-criteria.md#crit-identity-user-groups)。
 
-在创建 Azure AD 用户和组后，便可以开始分配许可证和使用 Exchange Online。 若要向用户推广 Exchange Online，请参阅[部署 Microsoft 365 企业版的 Exchange Online](exchangeonline-workload.md)。
+创建 Azure AD 用户和组后，便可以开始分配许可证和使用 OneDrive for Business 或 Exchange Online 等生产力工作负载。
 
-## <a name="next-step"></a>下一步骤
+## <a name="next-step"></a>后续步骤
 
 |||
 |:-------|:-----|

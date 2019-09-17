@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: a19c9d2de0cb4cb5436a8c3364bab0e24bb866ee
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830500"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981693"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -96,7 +96,7 @@ ms.locfileid: "35830500"
   - Windows Defender 应用程序防护
   - Windows Defender 攻击防护
   - Windows Defender 应用程序控制
-  - Windows Defender 高级威胁防护
+  - Microsoft Defender 高级威胁防护
 
 ### <a name="os-deployment-and-feature-updates"></a>**OS 部署和功能更新**
 
@@ -118,7 +118,7 @@ ms.locfileid: "35830500"
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下载 Windows 和 Office 部署实验室工具包**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*请使用高带宽下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2019 年 8 月 27 日过期。新版本将于该过期日期前发布。*
+*请使用高带宽下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2019 年 11 月 16 日过期。新版本将于该过期日期前发布。*
 
 ## <a name="additional-guidance"></a>**其他指南**
 

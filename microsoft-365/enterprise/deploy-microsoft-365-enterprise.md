@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297902"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982064"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -87,13 +87,13 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-要更好地了解如何将真个组织转移到 Microsoft 365 企业版中的产品和服务，请下载[转换海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)。
+要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[将你的组织转移到 Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![将你的组织转移到 Microsoft 365 海报](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 
-可按letter、legal 或 tabloid (11 x 17) 格式打印此海报。
+可以[下载转换海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 
 ## <a name="how-did-others-do-it"></a>其他人是怎么做的呢？
 
@@ -115,7 +115,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 同时，智能安全功能和产品集成有助于简化管理需求，并最大限度地降低整个 IT 生命周期的总体拥有成本。 
 
-了解核心服务工程和运营（以前称为 Microsoft IT）如何[规划和部署基础](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365)，以支持在安全环境中释放创造力和促进团队合作的应用程序和服务。
+了解核心服务工程和运营（以前称为 Microsoft IT）如何[规划和部署基础](https://www.microsoft.com/zh-CN/itshowcase/deploying-and-managing-microsoft-365)，以支持在安全环境中释放创造力和促进团队合作的应用程序和服务。
 
 > [!Note]
 > 此网页仅提供英文版本。

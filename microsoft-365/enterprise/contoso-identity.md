@@ -3,7 +3,7 @@ title: Contoso Corporation 的标识
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 01/17/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: 3b11546f99831ffe4d31ea3b102d080ddf1f9957
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f40be4ad7d93781ff2ac980228ae5271a8e844c4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072652"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982123"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
@@ -51,9 +51,9 @@ Contoso 允许：
 
 **图 2：Contoso 对客户和合作伙伴的联合身份验证支持**
  
-DMZ 中的 AD FS 服务器会对用以访问公共网站的客户凭据进行身份验证，并对用以访问合作伙伴 Extranet 的合作伙伴凭据进行身份验证。
+DMZ 中的 AD FS 服务器可加快由标识提供程序对客户凭据进行身份验证以访问公共网站，并对合作伙伴凭据进行身份验证以访问合作伙伴 Extranet。
 
-Contoso 决定保留此基础结构，并将其用于客户和合作伙伴身份验证。Contoso 标识工程师正在调查如何将此基础结构转换为 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 解决方案。
+Contoso 决定保留此基础结构，并将其用于客户和合作伙伴身份验证。Contoso 标识架构师正在调查如何将此基础结构转换为 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 解决方案。
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>通过混合标识和密码哈希同步实现基于云的身份验证
 

@@ -3,7 +3,7 @@ title: 步骤 6：使用组实现更轻松地管理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置 Azure AD 自助服务组管理。
-ms.openlocfilehash: 67c3a0e45fa253bdaedead03ac1137422ee0f8de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97077f5e047f55ea6bf6e532d25d25f4682ff179
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073602"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981773"
 ---
 # <a name="step-6-use-groups-for-easier-management"></a>步骤 6：使用组实现更轻松地管理
 
@@ -74,14 +74,11 @@ ms.locfileid: "34073602"
 
 *这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-在此部分中，将在 Azure AD 中配置安全组，以将许可证从一组订阅自动分配到组的所有成员。 这称为*基于组的许可*。 如果将某个用户帐户添加到组或从组中删除，则该组订阅的许可证将被自动分配或从该用户帐户中删除。
+在此部分中，将在 Azure AD 中配置安全组，以将许可证从一组订阅自动分配到组的所有成员。 这称为*基于组的许可*。 如果将某个用户帐户添加到组或从组中删除，则该组订阅的许可证将被自动分配或取消分配给该用户帐户。
 
-对于 Microsoft 365 企业版，将配置 Azure AD 安全组，以分配这两种许可证：
+对于 Microsoft 365 企业版，将配置 Azure AD 安全组，以分配相应的 Microsoft 365 企业版许可证。
 
-- Office 365 企业版 E3 或 E5
-- 企业移动性 + 安全性 (EMS) E3 或 E5
-
-使用在步骤 2 中标识的组，查找包含该组中所有用户必须同时具有 Office 365 和 EMS 许可证的帐户列表的组。请确保对所有组成员具有足够的许可证。一旦许可证用完，将无法向新用户分配许可证，直到有可用的许可证为止。
+确保所有组成员都有足够的许可证。 如果许可证用完，将不会向新用户分配许可证，直到许可证可用。
 
 >[!Note]
 >不应为包含 Azure 企业到企业 (B2B) 帐户的组配置“基于组的许可”**。
@@ -103,6 +100,6 @@ ms.locfileid: "34073602"
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-group-license)。
 
-## <a name="next-step"></a>后续步骤
-
-[身份基础结构退出条件](identity-exit-criteria.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step7.png)| [配置标识治理](identity-governance.md) |

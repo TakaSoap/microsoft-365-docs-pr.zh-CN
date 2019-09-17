@@ -3,7 +3,7 @@ title: 步骤 2：保护你的特权标识
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/01/2018
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解管理员帐户并为其配置最大保护。
-ms.openlocfilehash: 8a1d232ffc0242766d79b2e4884582f3b5524d22
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b9c645d597dfeb2bdc42e2b0b7615252dc1f5ecb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074052"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981903"
 ---
 # <a name="step-2-secure-your-privileged-identities"></a>步骤 2：保护你的特权标识
 
@@ -37,28 +37,27 @@ ms.locfileid: "34074052"
 对于专用全局管理员帐户，还必须：
 
 1. 在测试用户帐户上测试每个用户帐户或基于条件访问的多重身份验证 (MFA) 设置，以确保 MFA 能够正确并以可预见的方式工作。MFA 需要辅助形式的身份验证，如发送到智能手机的验证码。
-2. 为每个专用的 Office 365 全局管理员帐户配置 MFA，并使用组织中可用的最强形式的辅助身份验证。有关详细信息，请参阅[多重身份验证](identity-multi-factor-authentication.md#identity-mfa)。
-2. 使用条件访问策略要求对全局管理员帐户进行 MFA。有关详细信息，请参阅[保护管理员帐户](identity-access-prerequisites.md#protecting-administrator-accounts)。
+2. 为全局管理员帐户启用**基线策略：要求管理员执行 MFA**条件访问策略，并使用组织提供的最强大的辅助身份验证形式。 有关详细信息，请参阅[多重身份验证](identity-access-prerequisites.md#protecting-administrator-accounts)。
 
-有关配置的详细信息，请参阅[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)。
+有关额外的保护，请参阅[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations)。
 
 > [!Note]
 > 组织应使用仅限云标识来创建特权帐户（如全局管理员），以便应对网络攻击等的紧急情况。有关详细信息，请参阅[在 Azure AD 中管理紧急访问管理帐户](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)。
 
 此部分的结果是：
 
-- 订阅中唯一具备全局管理员角色的用户帐户是一组新的专用全局管理员帐户。 使用 Azure Active Directory PowerShell Graph 命令验证这部分： 
+- 订阅中唯一具备全局管理员角色的用户帐户是专用全局管理员帐户。 使用以下 Azure Active Directory PowerShell Graph 命令验证这部分： 
   ```
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
-- 所有管理订阅的其他日常用户帐户分配有与其工作职责相关联的管理员角色。
+- 所有管理订阅服务的其他用户帐户分配有与其工作职责相关联的管理员角色。
 
 > [!Note]
 > 有关安装 Azure Active Directory PowerShell Graph 模块和登录的说明，请参阅[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：保护全局管理员帐户](protect-global-administrator-accounts-microsoft-365-test-environment.md) |
+|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在测试实验室环境中练习此配置，请参阅[保护全局管理员帐户测试实验室指南](protect-global-administrator-accounts-microsoft-365-test-environment.md)。 |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-global-admin)。

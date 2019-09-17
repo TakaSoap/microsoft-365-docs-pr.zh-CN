@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: db0cb3ed472d0f50808339624550f0e98082b737
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: f14016d596f11869fb923106cb174fa5ce255ec3
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698364"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982303"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Microsoft 支持和专业服务责任就绪清单
 
@@ -23,8 +23,8 @@ ms.locfileid: "34698364"
 
 本责任准备情况清单可方便你在使用 Microsoft 专业服务和支持服务时，访问支持 GDPR 可能所需的信息。本清单按个人数据处理者适用的一组隐私和安全控件的标题和参考编号（位于每个清单主题的括号中）进行组织，这些控件取自：
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) 安全技术要求。
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隐私管理要求。
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) 隐私信息管理技术和要求。
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 一般信息安全管理要求。
 
 此控件结构还用于组织 Microsoft 专业服务为支持 GDPR 而实现的内部控件的演示文稿（可从[服务信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)下载）。
 

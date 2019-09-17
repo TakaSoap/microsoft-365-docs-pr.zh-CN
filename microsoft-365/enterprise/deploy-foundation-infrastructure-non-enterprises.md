@@ -53,7 +53,7 @@ Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://ww
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
-以下是突出显示第 1 阶段元素的可视摘要。 **你的组织**可能拥有多个办公室，每个办公室都与使用区域性本地 DNS 服务器的 ISP 建立了本地 Internet 连接。 通过 ISP，每个办公室的用户都可以访问最近的 Microsoft 365 网络位置和 Microsoft 365 订阅的资源。
+以下是突出显示第 1 阶段元素的可视化摘要。 **你的组织**可能拥有多个办公室，每个办公室都与使用区域性本地 DNS 服务器的 ISP 建立了本地 Internet 连接。 通过 ISP，每个办公室的用户都可以访问最近的 Microsoft 365 网络位置和 Microsoft 365 订阅的资源。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
@@ -77,12 +77,12 @@ Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://ww
 |:-------|:-----|:-----|
 | 基线 | 这是保护数据以及访问数据的标识和设备的最低和默认标准。 <BR><BR> 这通常是大多数用户管理的大部分组织数据。 | 一线员工组，例如销售、营销、支持、管理和制造。 |
 | 敏感 | 这是对数据子集的额外保护，这种保护必须超出基线级别。 这些组包含使用和创建敏感数据的用户，这些数据特定于相关部门以及不向所有人公开的项目。 | 负责开发未来产品的产品或营销团队 |
-| 高度管控 | 这通常是对少量数据的最高级别的保护，这些数据是高度机密、视为知识产权或商业机密或必须遵守安全法规的数据。 |  研究、法律和财务团队，或者负责存储或使用客户或合作伙伴数据的团队。 |
+| 高度管控 | 这通常是对少量数据的最高级别的保护，这些数据是高度机密、视为知识产权或商业机密或必须遵守安全法规的数据。 |  研发、法律和财务团队，或者负责存储或使用客户或合作伙伴数据的团队。 |
 ||||
 
 ### <a name="hybrid-identity"></a>混合标识
 
-如果你有本地 AD DS 域，则需要将该域的一组用户帐户、组和联系人与 Microsoft 365 企业版订阅的 Azure AD 租户同步。 对于非企业组织，请在具有密码哈希同步 (PHS) 功能的服务器上配置 Azure AD Connect。 有关详细信息，请参阅[同步标识](identity-azure-ad-connect.md)。
+如果你有本地 AD DS 域，则需要将该域的一组用户帐户、组和联系人与 Microsoft 365 企业版订阅的 Azure AD 租户同步。 对于非企业组织，请在使用密码哈希同步 (PHS) 功能的服务器上配置 Azure AD Connect。 有关详细信息，请参阅[同步标识](identity-azure-ad-connect.md)。
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>通过条件访问策略实现更安全的用户访问
 
@@ -148,7 +148,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
-以下是混合标识的标识阶段的可视摘要，其中突出显示了新元素。
+以下是混合标识的标识阶段的可视化摘要，其中突出显示了新元素。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
@@ -163,7 +163,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件访问策略。 |
 |||
 
-以下是仅限云标识的标识阶段的可视摘要，其中突出显示了新元素。
+以下是仅限云标识的标识阶段的可视化摘要，其中突出显示了新元素。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
  
@@ -200,7 +200,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
-以下是 Windows 10 企业版阶段的可视摘要，其中突出显示了新元素。
+以下是 Windows 10 企业版阶段的可视化摘要，其中突出显示了新元素。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
  
@@ -209,7 +209,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 |||
 |:------:|:-----|
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 设备上安装的 Windows 10 企业版，以本地笔记本电脑为例。 |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 批量许可服务中心（它为 Windows 10 企业版的新安装提供映像）和 Windows Update for Business 服务（它提供最新的更新）。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 批量许可服务中心（它为新安装的 Windows 10 企业版提供映像）和 Windows Update for Business 服务（它提供最新的更新）。 |
 |||
 
 ## <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
@@ -224,7 +224,7 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Microsoft Office 
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
-以下是 Office 365 专业增强版阶段的可视摘要，其中突出显示了新元素。
+以下是 Office 365 专业增强版阶段的可视化摘要，其中突出显示了新元素。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
@@ -263,7 +263,7 @@ Intune 策略可以强制执行设备合规性和应用保护。 以下是要创
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
-以下是移动设备管理阶段的可视摘要，其中突出显示了新元素。
+以下是移动设备管理阶段的可视化摘要，其中突出显示了新元素。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
  
@@ -271,15 +271,15 @@ Intune 策略可以强制执行设备合规性和应用保护。 以下是要创
 
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | 在 Intune 中注册的设备，以运行 Windows 10 企业版的本地笔记本电脑为例。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | 在 Intune 中注册的设备，显示正运行 Windows 10 企业版的本地笔记本电脑为例。 |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Intune 的设备合规性和应用保护策略。 |
 |||
 
 ## <a name="phase-6-information-protection"></a>阶段 6：信息保护
 
-Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不同级别的治理、安全性和保护来区别对待数据分类。 
+Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不同级别的管理、安全性和保护来区别对待数据分类。 
 
-例如，大多数员工与他们所处理的文档之间的正常对应关系都需要特定的基线保护级别。 财务记录、客户数据和你的知识产权需要更高级别的保护。
+例如，通常大多数员工与他们所处理文档之间的对应关系都需要特定的基线保护级别。 财务记录、客户数据和你的知识产权需要更高级别的保护。
 
 信息保护策略的第一步是确定保护级别。 许多组织都会使用已用于条件访问策略的保护级别：
 
@@ -307,29 +307,29 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 - 敏感度标签
 
-  你可以使用指定的敏感度标签来标记电子邮件或文档，以便能够应用其他安全级别。 示例包括水印、加密和权限，它们指定允许谁访问电子邮件或文档以及允许他们执行哪些操作。
+  你可以使用指定的敏感度标签来标记电子邮件或文档，以便能够应用其他安全级别。 示例包括水印、加密和权限，这些将指定允许谁访问电子邮件或文档以及允许他们执行哪些操作。
 
 有关详细信息，请参阅 [Microsoft 365 分类类型](infoprotect-configure-classification.md#microsoft-365-classification-types)。
 
 如果你使用具有权限的敏感度标签，则可能必须创建其他 Azure AD 安全组，以定义允许谁对电子邮件和文档执行哪些操作。 
 
-例如，你需要创建一个“研究”敏感性标签来保护研究团队的电子邮件和文档。 你确定：
+例如，你需要创建一个“研发”敏感度标签来保护研发团队的电子邮件和文档。 你确定：
 
-- 研究人员必须能够更改标有“研究”敏感度标签的文档。
-- 非研究员工只能查看标有“研究”敏感度标签的文档。 
+- 研发人员必须具有更改带“研发”敏感度标签文档的权限。
+- 非研发员工只需具有查看带“研发”敏感度标签文档的权限。 
 
 这意味着你需要创建和管理两个附加组：
 
-- 研究-全部
-- 研究-查看
+- 研发-全部
+- 研发-查看
 
-这些组及其权限将成为“研究”敏感度标签配置的一部分。
+这些组及其权限将成为“研发”敏感度标签配置的一部分。
 
 对于已配置基于组的权限的敏感度标签，你必须管理这些组的成员身份。
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
-以下是信息保护阶段的可视摘要，其中突出显示了新元素。
+以下是信息保护阶段的可视化摘要，其中突出显示了新元素。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
  
@@ -368,7 +368,7 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 现有员工应已添加到相应的工作组、部门和区域 AD DS 组。
 
-可向 Microsoft 365 管理中心内的多个 Azure AD 组添加用户帐户。 从用户帐户的属性中，单击“**管理组 > 添加成员身份**”。
+可向 Microsoft 365 管理中心内的多个 Azure AD 组添加用户帐户。 从用户帐户的属性中，单击“**管理组” > “添加成员身份**”。
 
 如果要使用 PowerShell，请参阅[可下载的 Excel 工作簿](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)，它基于指定的用户帐户和选定的组名称生成 PowerShell 命令。
 
@@ -411,11 +411,11 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 - 保留标签（根据需要）。
 - 敏感度标签（根据需要）。
 
-以下是当组织使用混合标识时基础结构的可视摘要，它包含 AD DS 域、Azure AD Connect 服务器以及同步的 AD DS 用户和组。
+以下是当组织使用混合标识时基础结构的可视化摘要，它包含 AD DS 域、Azure AD Connect 服务器以及同步的 AD DS 用户和组。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
  
-以下是当组织使用仅限云标识时基础结构的可视摘要。
+以下是当组织使用仅限云标识时基础结构的可视化摘要。
  
 ![](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
 
@@ -437,4 +437,4 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 ## <a name="next-step"></a>后续步骤
 
-部署[工作负载和方案](deploy-workloads.md)以利用 Microsoft 365 企业版底层基础结构的功能和配置。
+部署[工作负载和方案](deploy-workloads.md)以利用 Microsoft 365 企业版基础结构的功能和配置。

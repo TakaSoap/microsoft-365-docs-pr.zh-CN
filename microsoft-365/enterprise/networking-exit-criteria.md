@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对网络基础结构的条件。
-ms.openlocfilehash: 533707eec17483c8291b232821035752c9d09e43
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9d818a97e79465d639c52f96901bd1cbaa31144a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074202"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982773"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第 1 阶段：网络基础结构退出条件
 
@@ -30,7 +30,7 @@ ms.locfileid: "34074202"
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必需：网络已准备就绪可供 Microsoft 365 企业版使用
 
 - 办公室具有足够的 Internet 带宽，可用于 Microsoft 365 流量，其中包括 Office 365、Microsoft Intune 与 Windows 10 企业版安装和更新
-- Office 365 参考体系结构的整个网络地图
+- [Office 365 参考体系结构](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)的整个网络地图
 - 网络更改已经过试用和测试，符合流量延迟要求 
 
 如果需要，可在[步骤 1](networking-provide-bandwidth-cloud-services.md) 中进行设置以满足此要求。
