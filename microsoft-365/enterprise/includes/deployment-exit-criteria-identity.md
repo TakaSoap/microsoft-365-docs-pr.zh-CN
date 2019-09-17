@@ -1,7 +1,7 @@
 另请参阅[先决条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)，获得有关标识基础结构的其他建议。
 
 <a name="crit-identity-user-groups"></a>
-### <a name="required-all-users-groups-and-group-memberships-have-been-created"></a>必需：已创建所有用户、组和组成员身份
+### <a name="required-your-users-groups-and-group-memberships-have-been-created"></a>必需：已创建你的用户、组和组成员身份
 
 已创建用户帐户和组，以便：
 
@@ -13,7 +13,7 @@
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必需：全局管理员帐户受到保护 
 
-已[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以避免凭据泄露，进而可能导致 Office 365 订阅漏洞。
+你已[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以避免可能导致违反Microsoft 365订阅的攻击者的凭据泄露。
 
 如果忽略此要求，全局管理员帐户很容易受到攻击和入侵，攻击者可以获取系统范围内的数据访问权限并加以收集、销毁或勒索。
 
@@ -35,7 +35,7 @@
 <a name="crit-identity-pim"></a>
 ### <a name="optional-you-have-set-up-privileged-identity-management-to-support-on-demand-assignment-of-the-global-administrator-role"></a>可选：已经设置了 Privileged Identity Management，以支持按需分配全局管理员角色
 
-已使用[配置 Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) 中的说明，在 Azure AD 租户中启用 PIM 并将全局管理员帐户配置为符合条件的管理员。
+已使用[配置 Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) 中的说明，在 Azure AD 租户中启用 PIM 并将全局管理员帐户配置为符合条件的管理员。
 
 已使用[针对 Azure AD 中混合部署和云部署的特权访问安全](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)中的建议制定路线图，以确保特权访问能够防止网络攻击者。
 
@@ -47,7 +47,7 @@
 <a name="crit-identity-sync"></a>
 ### <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>必需：用户和组与 Azure AD 已同步
 
-如果你有现有的本地标识提供者，如 Active Directory 域服务 (AD DS)，则已使用 Azure AD Connect 将用户帐户和组从本地标识提供者同步到 Azure AD 租户。
+如果你有现有的本地 Active Directory 域服务 (AD DS)，则已使用 Azure AD Connect 将用户帐户和组从本地 AD DS 同步到 Azure AD 租户。
 
 通过目录同步，你的用户可以使用与登录到其计算机相同的凭据登录到 Office 365 和其他 Microsoft 云服务，并访问本地资源。
 
@@ -55,7 +55,7 @@
 
 如果忽略此要求，将具有两组用户帐户和组：
 
-- 位于本地标识提供者的用户帐户和组
+- 位于本地 AD DS 的用户帐户和组
 - 位于 Azure AD 租户组的用户帐户和组
 
 在此状态下，两组用户帐户和组必须由 IT 管理员和用户手动维护。这会不可避免地导致帐户、密码和组不同步。
@@ -82,12 +82,12 @@
 如果需要，可在[步骤 3 ](../identity-azure-ad-connect.md#identity-sync-health)中设置此选项。
 
 #### <a name="how-to-test"></a>测试操作
-Azure AD Connect Health 门户显示本地标识服务器和持续同步的当前和正确状态。
+Azure AD Connect Health 门户显示本地域控制器和持续同步的当前和正确状态。
 
 <a name="crit-identity-mfa"></a>
 ### <a name="optional-multi-factor-authentication-is-enabled-for-your-users"></a>可选：已为你的用户启用多重身份验证
 
-已使用 [Office 365 部署的多重身份验证计划](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)和[为 Office 365 用户设置多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)，以为用户帐户启用多重身份验证 (MFA)。
+你使用 [多重身份验证计划](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) 和[条件访问策略](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)为你的用户帐户启用了多重身份验证 (MFA)。
 
 如果忽略此选项，你的用户帐户会很容易受到网络攻击者的攻击，导致凭据泄露。如果用户帐户的密码遭到破坏，帐户的所有资源和功能（如管理员角色）都可供攻击者使用。这会使得攻击者能够复制、销毁或持有内部文档和其他数据，进而进行勒索。
 
@@ -95,14 +95,21 @@ Azure AD Connect Health 门户显示本地标识服务器和持续同步的当�
 
 #### <a name="how-to-test"></a>测试操作
 
-1.  在 Office 365 管理门户中创建一个测试用户帐户并对其分配许可证。 
+1.  创建一个测试用户帐户并对其分配许可证。 
 2.  通过用于真实用户帐户的其他验证方法为测试用户帐户配置多重身份验证，如向手机发送消息。 
-3.  通过测试用户帐户登录到 Office 365 或 Azure 门户。
+3.  通过测试用户帐户登录到 Office 365 门户。
 4.  确保 MFA 提示你输入其他验证信息且身份验证成功。 
 5.  删除该测试用户帐户。
 
+<a name="crit-password-prot"></a>
+### <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>可选： Azure AD 密码保护禁止使用弱密码
+
+已启用禁用[云中](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)以及[本地 Active Directory 域服务 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) 的错误密码以获取全局禁用密码和自定义条款（可选）。
+
+如果需要，可在[步骤 4](../identity-multi-factor-authentication.md#identity-password-prot) 中设置此选项。
+
 <a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限Microsoft 365 Enterprise E5）
 
 已启用 Azure AD Identity Protection，可以：
 
@@ -147,7 +154,7 @@ Azure AD Connect Health 门户显示本地标识服务器和持续同步的当�
 
 通过更改 Office 365 中的密码可以使测试密码写回。 你应该能够使用你的帐户和新密码访问本地 AD DS 资源。
 
-1. 在本地 AD DS 中创建测试用户帐户，允许进行目录同步，然后在 Microsoft 365 管理中心中授予 Office 365 许可证。
+1. 在本地 AD DS 中创建测试用户帐户，允许进行目录同步，然后在 Microsoft 365 管理中心中授予 Microsoft 365 Enterprise 许可证。
 2. 从加入到本地 AD DS 域的远程计算机，使用测试用户帐户的凭据登录到计算机和 Office 门户。
 3. 选择“**设置”>“Office 365 设置”>“密码”>“更改密码**”。
 4. 键入当前密码、键入新密码，然后确认。
@@ -158,7 +165,7 @@ Azure AD Connect Health 门户显示本地标识服务器和持续同步的当�
 
 已为组织启用 [Azure AD Connect: 无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)，以简化用户登录到基于云的应用程序（如 Office 365）的方式。
 
-如果忽略此选项，当用户访问使用 Azure AD 的其他应用程序时，系统可能会提示你的用户提供凭据。
+如果忽略此选项，当用户访问使用 Azure AD 租户的其他应用程序时，系统可能会提示你的用户提供凭据。
 
 如果需要，可在[步骤 5](../identity-password-reset.md#identity-sso) 中设置此选项。
 
@@ -220,21 +227,31 @@ Azure AD Connect Health 门户显示本地标识服务器和持续同步的当�
 <a name="crit-identity-group-license"></a>
 ### <a name="optional-group-based-licensing-to-automatically-assign-and-remove-licenses-to-user-accounts-based-on-group-membership"></a>可选：基于组的许可能够根据组成员身份自动分配和删除用户帐户的许可证
 
-为相应 Azure AD 安全组[启用基于组的许可](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)，以便自动分配或删除适用于 Office 365 和 EMS 的许可证。
+为相应 Azure AD 安全组[启用基于组的许可](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)，以便自动分配或取消分配适用于 Microsoft 365 Enterprise 的许可证。
 
-如果忽略此选项，则必须手动：
+如果忽略此选项，则必须手动执行以下操作：
 
-- 向希望访问 Office 365 和 EMS 的新用户分配许可证。
-- 删除不再属于你的组织或不再有权访问 Office 365 和 EMS 的用户许可证。
+- 向希望访问的新用户分配许可证。
+- 取消分配给不再隶属于贵公司或不再有权访问的用户许可证。
 
 如果需要，可在[步骤 6](../identity-self-service-group-management.md#identity-group-license) 中设置此选项。
 
 #### <a name="how-to-test"></a>测试操作
 
-1. 在具有 Azure 门户的 Azure AD 中创建测试安全组，并配置基于组的许可来分配 Office 365 和 EMS 许可证。
+1. 在具有 Azure 门户的 Azure AD 中创建测试安全组，并配置基于组的许可来分配 Microsoft 265 Enterprise 许可证。
 2. 在 Azure AD 中创建测试用户帐户并将其添加到测试安全组。
-3. 在 Microsoft 365 管理中心中检查用户帐户的属性，确保其分配了 Office 365 和 EMS 许可证。
+3. 在 Microsoft 365 管理中心中检查用户帐户的属性，确保其分配了 Microsoft 265 Enterprise 许可证。
 4. 从测试安全组删除测试用户帐户。
-5. 检查用户帐户的属性，确保它不再分配有 Office 365 和 EMS 许可证。
+5. 检查用户帐户的属性，确保它不再分配有 Microsoft 265 Enterprise 许可证。
 6. 删除测试安全组和测试用户帐户。
 
+<a name="crit-identity-access-reviews"></a>
+### <a name="optional-access-reviews-configured-and-being-used-to-monitor-access"></a>可选：访问审核已配置并正用于监视访问
+
+你已使用这些文章来配置不同类型的访问权限查看，以监视组成员身份、访问企业应用程序和角色分配：
+
+- [组和应用](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+- [Azure AD 角色](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [Azure 资源角色](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+
+如果需要，可在[步骤 7](../identity-governance.md#identity-access-reviews) 中设置此选项。
