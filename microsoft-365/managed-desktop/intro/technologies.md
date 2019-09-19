@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 57c0be2e8aff09024f84c58bb895aab98324964d
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 9f1631b054a46cac83140e07460807b2ba0edac3
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982533"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040774"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 托管桌面技术
 
@@ -28,7 +28,7 @@ ms.locfileid: "36982533"
  |
  --- | ---
 Office 365 专业增强版（64-位） | 这些 Office 应用程序将随设备一起提供： Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote。<br><br>Microsoft Project 和 Microsoft Visio 的64位完整版本不包含在内。 但是，由于安装这些应用程序取决于 Office 365 专业增强版安装，因此 Microsoft 托管桌面创建了默认的 Microsoft Intune 部署和安全组，然后可以使用这些部署和安全组将这些应用程序部署到许可最终用户。 有关详细信息，请参阅[在 Microsoft 托管桌面设备上安装 Microsoft Project 或 Microsoft Visio](../get-started/project-visio.md)
-OneDrive for Business | Azure Active Directory 单一登录 <br><br>包含 "桌面"、"文档" 和 "图片" 文件夹的 "已知文件夹重定向"。由 Microsoft 托管桌面启用和配置。 
+OneDrive for Business |在首次登录 OneDrive for Business 时为最终用户启用了 Azure Active Directory 单一登录<br><br>包含 "桌面"、"文档" 和 "图片" 文件夹的 "已知文件夹重定向"。由 Microsoft 托管桌面启用和配置。 
 应用商店应用 |    Microsoft Sway 和 Power BI 不随设备一起提供。 这些应用程序可从 Microsoft Store 下载。
 Win32 应用程序 |    团队不随设备一起提供，但会打包并由 Microsoft 为 Microsoft 托管桌面设备提供。 Azure 信息保护客户端不随设备附带，但可以将其打包以进行部署。 
 Web 应用程序 |  Yammer、Office 在浏览器、Delve、流、StaffHub、PowerApps 和计划器中不随设备一起附带。 用户可以通过浏览器访问这些应用程序的 web 版本。
