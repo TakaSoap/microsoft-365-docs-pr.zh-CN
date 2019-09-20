@@ -3,7 +3,7 @@ title: Microsoft 365 企业版底层基础结构
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解组织中部署 Microsoft 365 企业版底层基础结构（也称为核心部署）的主要阶段。
-ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 016764333b7234681aa06e511227b203f9c9eaea
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982093"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050303"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
 
@@ -33,7 +33,7 @@ ms.locfileid: "36982093"
 |![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[阶段 3：Windows 10 企业版](windows10-infrastructure.md)| 现有基于 Windows 的计算机可以升级至 Windows 10 企业版，并且新设备已安装了 Windows 10 企业版。 |
 |![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[阶段 4：Office 365 专业增强版](office365proplus-infrastructure.md)| 现有 Microsoft Office 用户可以升级到 Office 365 专业增强版。 |
 |![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[阶段 5：移动设备管理](mobility-infrastructure.md)| 可以注册和管理你的设备。 |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[阶段 6：信息保护](infoprotect-infrastructure.md)| 标签已准备好保护文档并且 Office 365 安全功能已启用。 |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[阶段 6：信息保护](infoprotect-infrastructure.md)| Office 365 安全功能已启用，你的标签和策略已准备好保护文档和电子邮件。 |
 
 将从最基本的阶段（网络和标识）开始，然后创建基础结构设置和组层，以：
 
@@ -48,7 +48,7 @@ ms.locfileid: "36982093"
 
 -  **如果你是企业组织**，请将阶段视作 IT 基础架构的层，而不是定义的路径，并确定如何更好地工作，以最终满足组织中每个层的要求。
 
-在每个阶段结束时，你可以检查器退出条件，其中包括必须满足的必要条件以及可以考虑的可选条件。 每个阶段的退出条件可确保本地和云基础结构以及相应的端到端配置满足 Microsoft 365 企业版部署的要求。
+在每个阶段结束时，你可以检查其*退出条件*，其中包括必须满足的必要条件以及可以考虑的可选条件。 每个阶段的退出条件可确保本地和云基础结构以及相应的端到端配置满足 Microsoft 365 企业版部署的要求。
 
 如需查看内容的组织方式，请观看此短片。
 
@@ -90,7 +90,7 @@ ms.locfileid: "36982093"
 | Windows 10 企业版 | 将运行 Windows 7 或 Windows 8.1 的计算机自动升级到相应的 Windows 10 企业版的组。 |
 | Office 365 专业增强版 | 为使用 Office 2010、Office 2013 或 Office 2016 的用户自动部署 Office 365 的组。 |
 | 移动设备管理 | 适合于设备注册和基于设备的条件访问策略的组。 |
-| 信息保护 | Office 365 敏感度和 Azure 信息保护标签和组。 |
+| 信息保护 | Office 365 敏感度标签组。 |
 
 准备好为用户部署此基础结构的元素时，你可以：
 
@@ -100,7 +100,7 @@ ms.locfileid: "36982093"
 | Windows 10 企业版 | 将帐户添加到组，以便为使用 Windows 7 或 Windows 8.1 的用户自动部署 Windows 10 企业版。 |
 | Office 365 专业增强版 | 将用户帐户添加到组，以便为使用 Office 2010、Office 2013 或 Office 2016 的用户自动部署 Office 365 的组。 |
 | 移动设备管理 | 将帐户添加到适合于设备注册和基于设备的条件访问策略的组。 |
-| 信息保护 | 将用户帐户添加到信息保护标签组。 |
+| 信息保护 | 将用户帐户添加到敏感度标签组中。 |
 
 底层基础结构的阶段或元素完成、测试和试用之后，你可以为用户部署已安装的软件（例如 Windows 10 企业版和 Office 365 专业增强版）以及基于云的服务和保护（如设备注册和条件访问策略），以最适合你的业务目标和 IT 资源。
 
@@ -110,13 +110,13 @@ ms.locfileid: "36982093"
 
 ## <a name="deployment-for-non-enterprises"></a>针对非企业的部署
 
-如果你的组织规模较小，而 Microsoft 365 商业版不适合你，则请查看[针对非企业的部署](deploy-foundation-infrastructure-non-enterprises.md)。
+如果你的组织规模较小，而 Microsoft 365 商业版不适合你，请参阅[针对非企业的部署](deploy-foundation-infrastructure-non-enterprises.md)以了解简化的部署方法。
 
 
 ## <a name="next-step"></a>后续步骤
 
 | 我当前的境况 | 我需要达成的目标 |
 |:-------|:-----|
-| 我现在有针对 Office 365、企业移动性 + 安全性 (EMS) 或 Windows 10 企业版的基础结构。 | 请首先[用基础结构进行部署](deploy-with-existing-infrastructure.md)按照步骤了解各阶段的退出条件。 |
+| 我现在有针对 Office 365、企业移动性 + 安全性 (EMS) 或 Windows 10 企业版的基础结构。 | 请首先利用现有基础结构部署，了解各阶段的退出条件。 |
 | 我要作为企业从头开始 | 通过[阶段 1：网络](networking-infrastructure.md)开启你的端到端部署旅程。 |
 | 我要以非企业的身份从头开始 | 通过[针对非企业的部署](deploy-foundation-infrastructure-non-enterprises.md)开启你的端到端部署旅程。 |

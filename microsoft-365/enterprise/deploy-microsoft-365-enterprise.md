@@ -3,7 +3,7 @@ title: 部署 Microsoft 365 企业版
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982064"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050273"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -39,7 +39,7 @@ Microsoft 365 企业版是本地和基于云的生产力应用和服务与 Windo
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack for Microsoft 365
 
-FastTrack 的优势在于持续且可重复（可用作订阅的一部分），由 Microsoft 工程师提供以帮助你按自己的节奏移动到云。 此外，FastTrack 还可使你根据需要访问合格的合作伙伴以获取其他服务。 目前为止，40,000 多个客户已启用此功能，FastTrack 可帮助最大化投资回报率、加快部署，提高整个组织的采用率。 请参阅 [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)。
+FastTrack 的优势在于持续且可重复（*可作为订阅的一部分免费提供*），由 Microsoft 工程师提供以帮助你按自己的节奏移动到云。 此外，FastTrack 还可使你根据需要访问合格的合作伙伴以获取其他服务。 目前为止，40,000 多个客户已启用此功能，FastTrack 可帮助最大化投资回报率、加快部署，提高整个组织的采用率。 请参阅 [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)。
 
 如果想要充分利用 FastTrack 来部署 Microsoft 365 企业版，可以使用 FastTrack [Microsoft 365 部署顾问](https://aka.ms/microsoft365setupguide)了解如何部署和设置底层基础结构。 必须以 Office 365 或 Microsoft 365 租户中的全局管理员身份登录才能访问此页面。
 
@@ -77,9 +77,9 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 如果你不熟悉 Microsoft 365 企业版或某个特定产品或功能，了解它们的最好办法就是亲自构建并看看它是如何工作的。
 
-我们已通过测试实验室指南 (TLG) 对此进行了简化，该指南可以指导你使用试用或付费订阅在简化但具有代表性的环境中完成基础架构或功能配置。
+我们已通过测试实验室指南 (TLG) 对此进行了简化，该指南可以指导你使用试用或付费订阅在简化但具有代表性的测试环境中完成基础架构或功能配置。
 
-使用 TLG，可以自学、演示、自定义或论证复杂配置、工作负载或端到端方案的概念。
+使用 TLG，可以自学、演示、自定义或构建复杂配置、工作负载或端到端方案的概念证明 (PoC)。
 
 有关详细信息，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。
 
@@ -87,13 +87,13 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[将你的组织转移到 Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[将你的组织转移到 Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) 海报。
 
 [![将你的组织转移到 Microsoft 365 海报](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 
-可以[下载转换海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
+你还可以[下载转换海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 
 ## <a name="how-did-others-do-it"></a>其他人是怎么做的呢？
 
