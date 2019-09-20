@@ -3,7 +3,7 @@ title: '步骤 3：为 Microsoft 365 配置提升的安全性:'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 为 Microsoft 365 了解和配置提升的安全性。
-ms.openlocfilehash: 81c39eb6a51e7596a72721c72084f1f255f7f451
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b51cb38a386292b79fdfe264c9d8a86973aa6325
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073632"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047275"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>步骤 3：为 Microsoft 365 配置提升的安全性:
 
@@ -28,14 +28,14 @@ ms.locfileid: "34073632"
 
 若要确保 Microsoft 365 订阅及其数据启用，并保持安全免遭恶意威胁的侵害，请配置以下各项：
 
-- [优化威胁管理策略](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#tune-threat-management-policies-in-the-office-365-security--compliance-center)
+- [优化威胁管理策略](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#tune-threat-management-policies-in-the-microsoft-365-security-center)
 - [其他 Exchange Online 租户范围内设置](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-additional-exchange-online-tenant-wide-settings)
 - [SharePoint 管理中心中的租户范围内共享策略](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-tenant-wide-sharing-policies-in-sharepoint-admin-center)
 - [Azure Active Directory 中的设置 (Azure AD)](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-settings-in-azure-active-directory)
 
 完成配置后，可从下面位置获取有关安全状态的信息：
 
-- [Microsoft 安全中心中的仪表板和报告](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security--compliance-center)
+- [Microsoft 安全中心中的仪表板和报告](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security-and-compliance-centers)
 - [Microsoft 安全功能分数](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)
 
 其他安全功能包括 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)，可帮助组织通过以下方式进行更安全地协作：
