@@ -1,5 +1,5 @@
 ---
-title: '步骤 6: 配置 Office 365 的特权访问管理'
+title: 步骤7：配置 Office 365 的特权访问管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解并配置 Office 365 的特权访问管理。
-ms.openlocfilehash: fdfb0bc69d1dc05cffd717951cb493995d2123d4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072092"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047285"
 ---
-# <a name="step-6-configure-privileged-access-management-for-office-365"></a>步骤 6: 配置 Office 365 的特权访问管理
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>步骤7：配置 Office 365 的特权访问管理
 
 *此步骤是可选的，仅适用于 Microsoft 365 企业版的 E5 版和高级合规版*
 
@@ -39,11 +39,13 @@ Office 365 租户中的特权访问管理可通过配置相应策略来实现，
 
 有关详细信息，请参阅 [Office 365 中的特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)主题。
 
-## <a name="results"></a>结果
 
-此步骤的结果是，你通过启用对组织关键数据和配置设置的实时访问控制提高了 Office 365 的安全性。
+|||
+|:-------|:-----|
+|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在测试实验室环境中实践此配置，请参阅[特权访问管理测试实验室指南](privileged-access-microsoft-365-enterprise-dev-test-environment.md)。 |
+|||
 
-作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step6)。
+作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step7)。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -6,18 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0af9134880f018cf814715a8ca3a3b7dc55c5fcd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982393"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047225"
 ---
 # <a name="getting-help-for-end-users"></a>获取最终用户的帮助
 
-您的组织中的用户可以通过两种方式获取 Microsoft 托管桌面设备的帮助：**获取帮助**应用程序或电话支持。 这两个支持选项均可用于每周7天、每天24小时的用户。 
+您的组织中的用户可以通过两种方式获取 Microsoft 托管桌面设备的帮助：**获取帮助**应用程序或电话支持。 这两个支持选项均可用于每周7天、每天24小时的用户。
+ 
 >[!NOTE]
->驻留在测试组中的设备超出了这些最终用户支持选项的范围。 
+>这些支持选项对测试组中的设备不可用。 
 
 ## <a name="get-help-app"></a>获取帮助应用程序
 
@@ -38,9 +39,10 @@ ms.locfileid: "36982393"
 - 加拿大（魁北克除外）： + 1 855 425 0216
 - 英国： + 44 800 026 0698
 - 澳大利亚： + 61 180 037 0619
+- 新西兰： + 64 988 44380
 
 >[!NOTE]
->调用以验证你的身份时，请准备好你的组织电子邮件地址。 
+>调用以验证你的身份时，你需要准备好组织电子邮件地址。 
 
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面的管理员支持](admin-support.md)。 

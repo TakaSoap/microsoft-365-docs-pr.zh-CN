@@ -3,7 +3,7 @@ title: 步骤 4：配置 Windows 信息保护
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 理解并部署 Microsoft 365 中的 Windows 信息保护。
-ms.openlocfilehash: a89d61367d3e07cabff0576f16fa359a06dc1ecc
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b624db45c4fe3bd75b2158f225176b7a78ba30f8
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981813"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047265"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步骤 4：配置 Windows 信息保护
 
