@@ -1,0 +1,93 @@
+### YamlMime:Landing
+title: Microsoft 365 合规性文档
+summary: 如果您的组织需要遵守法律或法规标准，请从这里开始了解 Microsoft 365 中的合规性。
+metadata:
+  title: Microsoft 365 合规性文档
+  description: Microsoft 365 合规性功能的文档
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 09/20/2019
+  ms.openlocfilehash: 0357312feb1821f343809e93b1a53f2c5df536c4
+  ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/20/2019
+  ms.locfileid: "37074050"
+landingContent:
+- title: 管理信息保护
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 保护信息
+      url: protect-information.md
+    - text: 敏感度标签
+      url: sensitivity-labels.md
+    - text: 数据丢失防护 (DLP)
+      url: data-loss-prevention-policies.md
+    - text: 敏感信息类型
+      url: custom-sensitive-info-types.md
+    - text: 电子邮件加密
+      url: email-encryption.md
+- title: 管理信息治理
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 在 Microsoft 365 中管理记录
+      url: records-management.md
+    - text: 文件计划管理器
+      url: file-plan-manager.md
+    - text: 保留标签
+      url: labels.md
+    - text: 基于事件的保留
+      url: event-driven-retention.md
+    - text: 非活动邮箱
+      url: inactive-mailboxes-in-office-365.md
+    - text: 查看数据管理报告
+      url: view-the-data-governance-reports.md
+- title: 管理内幕风险
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 保护用户和设备的访问权限
+      url: protect-access-to-data-and-services.md
+    - text: 特权访问管理
+      url: privileged-access-management-overview.md
+    - text: 客户密码箱
+      url: customer-lockbox-requests.md
+    - text: 监督通信
+      url: supervision-policies.md
+    - text: 信息障碍
+      url: information-barriers.md
+    - text: 客户密钥
+      url: controlling-your-data-using-customer-key.md
+- title: 发现和响应
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 高级电子数据展示
+      url: overview-ediscovery-20.md
+    - text: 管理数据调查
+      url: overview-data-investigations.md
+    - text: 搜索内容
+      url: search-for-content.md
+    - text: 搜索审核日志
+      url: search-the-audit-log-in-security-and-compliance.md
+- title: 合规性入门
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 合规性管理器
+      url: compliance-manager-overview.md
+    - text: GDPR 合规性行动计划
+      url: gdpr-action-plan.md
+    - text: GDPR 的信息保护
+      url: office-365-info-protection-for-gdpr-overview.md
+    - text: ISO 合规性操作计划
+      url: iso-action-plan.md
+    - text: NIST 合规性行动计划
+      url: nist-action-plan.md
