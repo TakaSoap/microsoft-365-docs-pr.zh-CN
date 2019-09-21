@@ -13,18 +13,18 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在 Microsoft 365 企业版测试环境中配置基于组的许可和动态组成员身份。
-ms.openlocfilehash: 179284dce271c69939a560703561a32648af93b1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: cb01e1a405e7cff1f9965e34751b3ce638dd8018
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072622"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071721"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自动化 Microsoft 365 企业版测试环境的许可和组成员身份
 
-基于组的许可根据组成员身份自动分配或删除用户帐户的许可证。 动态组成员身份根据用户帐户属性 (如部门或国家/地区) 添加或删除组中的成员。 本文将指导您完成 Microsoft 365 企业版测试环境中的两个演示。
+基于组的许可根据组成员身份自动分配或删除用户帐户的许可证。 动态组成员身份根据用户帐户属性（如部门或国家/地区）添加或删除组中的成员。 本文将指导您完成 Microsoft 365 企业版测试环境中的两个演示。
 
-在 Microsoft 365 企业版测试环境中设置自动许可和动态组成员身份有两个阶段:
+在 Microsoft 365 企业版测试环境中设置自动许可和动态组成员身份有两个阶段：
 
 1. 创建 Microsoft 365 企业版测试环境。
 2. 配置和测试动态组成员身份和自动许可。
@@ -34,64 +34,64 @@ ms.locfileid: "34072622"
 > [!TIP]
 > 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段: 构建 Microsoft 365 企业版测试环境
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段：构建 Microsoft 365 企业版测试环境
 
-如果只想使用最低要求以轻型方式测试自动许可和组成员身份, 请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
+如果只想使用最低要求以轻型方式测试自动许可和组成员身份，请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
   
-如果要在模拟的企业中测试自动授权和组成员身份, 请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
+如果要在模拟的企业中测试自动授权和组成员身份，请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟企业测试环境, 其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项, 以便您可以测试自动授权和组成员身份, 并在代表典型组织的环境中进行试验。 
+> 测试自动许可和组成员身份不需要模拟企业测试环境，其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务（AD DS）林的目录同步。 此处提供了此选项，以便您可以测试自动授权和组成员身份，并在代表典型组织的环境中进行试验。 
   
-## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>第2阶段: 配置和测试动态组成员身份和自动许可
+## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>第2阶段：配置和测试动态组成员身份和自动许可
 
-首先, 创建一个新的 Sales 组并添加一个动态组成员身份规则, 以便将部门设置为 "销售" 的用户帐户自动添加到 "销售" 组中。
+首先，创建一个新的 Sales 组并添加一个动态组成员身份规则，以便将部门设置为 "销售" 的用户帐户自动添加到 "销售" 组中。
 
-1. 使用 Internet 浏览器的专用实例, [https://portal.office.com](https://portal.office.com)使用 Office 365 E5 测试实验室订阅的全局管理员帐户登录到 office 365 门户。
-2. 在浏览器的一个单独的选项卡上, 转到 Azure [https://portal.azure.com](https://portal.azure.com)门户处。
+1. 使用 Internet 浏览器的专用实例， [https://portal.office.com](https://portal.office.com)使用 Office 365 E5 测试实验室订阅的全局管理员帐户登录到 office 365 门户。
+2. 在浏览器的一个单独的选项卡上，转到 Azure [https://portal.azure.com](https://portal.azure.com)门户处。
 3. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”****。
-4. 在 "**所有组**" 边栏选项卡上, 单击 "**新建组**"。
-5. 在 "**组类型**" 中, 选择 " **Office 365**"。
-6. 在 "**组名称**" 中, 键入**Sales**。
-7. 在 "**成员身份类型**" 中, 选择 "**动态用户**"。
+4. 在 "**所有组**" 边栏选项卡上，单击 "**新建组**"。
+5. 在 "**组类型**" 中，选择 " **Office 365**"。
+6. 在 "**组名称**" 中，键入**Sales**。
+7. 在 "**成员身份类型**" 中，选择 "**动态用户**"。
 8. 单击“添加动态查询”****。
 9. 在“添加以下位置的用户”**** 中，选择“部门”****。
 10. 在下一个字段中，选择“等于”****。
-11. 在下一个字段中, 键入**Sales**。
+11. 在下一个字段中，键入**Sales**。
 12. 单击“添加查询”****，然后单击“创建”****。
 13. 关闭 "**组**" 和 "**组"-"所有组**" 刀片。
 
-接下来, 配置 Sales 组, 以便自动为成员分配 Office 365 E5 和企业移动性 + 安全 E5 许可证。
+接下来，配置 Sales 组，以便自动为成员分配 Office 365 E5 和企业移动性 + 安全 E5 许可证。
 
-1. 在 "Azure Active Directory 的**概述**刀片" 中, 单击 "**许可证 > 所有产品**"。
+1. 在 "适用于 Azure Active Directory 的**概述**刀片" 中，单击 "**许可证 > 所有产品**"。
 2. 在列表中，选择“**企业移动性 + 安全性 E5**”和“**Office 365 企业版 E5**”，然后单击“**分配**”。
-3. 在 "**分配许可证**" 边栏选项卡上, 单击 "**用户和组**"。
-4. 在组列表中, 选择 "**销售**" 组。
+3. 在 "**分配许可证**" 边栏选项卡上，单击 "**用户和组**"。
+4. 在组列表中，选择 "**销售**" 组。
 5. 单击“**选择**”，然后单击“**分配**”。
 6. 关闭浏览器中的 Azure 门户选项卡。
 
-接下来, 在用户4帐户上测试动态组成员身份和自动许可。 
+接下来，在用户4帐户上测试动态组成员身份和自动许可。 
 
-1. 在浏览器中的 " **Microsoft Office 主页**" 选项卡上, 单击 "**管理**"。
-2. 在 " **Microsoft 365 管理中心**" 选项卡上, 单击 "**活动用户**"。
-3. 在 "**活动用户**" 页上, 单击 "**用户 4** " 帐户。
-4. 在 "**用户 4** " 窗格中, 单击 "**产品许可证**" 的 "**编辑**"。
-5. 在 "**产品许可证**" 窗格中, 关闭**企业移动性 + 安全 E5**和**Office 365 企业版 E5**许可证, 然后单击 "**保存 >**" "关闭"。
-6. 在 "User 4" 帐户的 "属性" 中, 确认未分配任何产品许可证, 并且没有组成员身份。
+1. 在浏览器中的 " **Microsoft Office 主页**" 选项卡上，单击 "**管理**"。
+2. 在 " **Microsoft 365 管理中心**" 选项卡上，单击 "**活动用户**"。
+3. 在 "**活动用户**" 页上，单击 "**用户 4** " 帐户。
+4. 在 "**用户 4** " 窗格中，单击 "**产品许可证**" 的 "**编辑**"。
+5. 在 "**产品许可证**" 窗格中，关闭**企业移动性 + 安全 E5**和**Office 365 企业版 E5**许可证，然后单击 "**保存" > "关闭**"。
+6. 在 "User 4" 帐户的 "属性" 中，确认未分配任何产品许可证，并且没有组成员身份。
 7. 单击**** "编辑**联系人信息**"。
-8. 在 "**编辑联系人信息**" 窗格中, 单击 "**联系人信息**"。
-9. 在 "**部门**" 字段中, 键入**Sales**, 然后单击 "**保存 > 关闭**"。
-10. 等待几分钟, 然后定期单击 "用户 4" 帐户窗格右上角的 "刷新" 图标。 
+8. 在 "**编辑联系人信息**" 窗格中，单击 "**联系人信息**"。
+9. 在 "**部门**" 字段中，键入**Sales**，然后单击 "**保存" > "关闭**"。
+10. 等待几分钟，然后定期单击 "用户 4" 帐户窗格右上角的 "刷新" 图标。 
 
-您应该会看到以下内容:
+您应该会看到以下内容：
 
 - 更新了**Sales**组的**组成员身份**属性。
 - 使用**企业移动性 + 安全 E5**和**Office 365 企业版 e5**许可证更新的**产品许可证**属性。
 
-请参阅 Identity 阶段的这些步骤, 了解在生产中部署动态组成员身份和自动许可的信息和链接:
+请参阅 Identity 阶段的这些步骤，了解在生产中部署动态组成员身份和自动许可的信息和链接：
 
-- [设置自动许可](identity-self-service-group-management.md#identity-group-license)
-- [设置动态组成员身份](identity-self-service-group-management.md#identity-dyn-groups)
+- [设置自动许可](identity-use-group-management.md#identity-group-license)
+- [设置动态组成员身份](identity-use-group-management.md#identity-dyn-groups)
 
 ## <a name="next-step"></a>后续步骤
 
