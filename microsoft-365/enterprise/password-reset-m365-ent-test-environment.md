@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: de025d6b54b3cc1b69c8e50fec428f58d7754dcb
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8be1e898d0b995ddbed7b63c2f0ce07c969592c8
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073112"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071591"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -85,7 +85,7 @@ ms.locfileid: "34073112"
 9. 在“返回到帐户”**** 中，键入用户 2 帐户的新密码，然后单击“完成”****。记录用户 2 帐户更改后的密码，然后将其存储在一个安全的位置。
 10. 在同一浏览器的独立选项卡中，转到 [https://portal.office.com](https://portal.office.com)，然后使用用户 2 帐户名及其新密码登录。 此时应会看到“**Microsoft Office 主页**”页面。
 
-有关在生产中配置密码重置的信息和相关链接，请参阅“标识”阶段中的[简化密码重置](identity-password-reset.md#identity-pw-reset)步骤。
+有关在生产中配置密码重置的信息和相关链接，请参阅“标识”阶段中的[简化密码重置](identity-secure-your-passwords.md#identity-pw-reset)步骤。
 
 ## <a name="next-step"></a>后续步骤
 
