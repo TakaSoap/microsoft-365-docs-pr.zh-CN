@@ -3,7 +3,7 @@ title: 信息保护基础结构退出条件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 检查基于信息保护的服务和基础结构的条件，确保你的配置满足 Microsoft 365 企业版的要求。
-ms.openlocfilehash: 267a6efaef5a5bcfb0ec9f8e0e9f33d525f5ce74
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071942"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047235"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>信息保护基础结构退出条件
 
@@ -88,16 +88,30 @@ ms.locfileid: "34071942"
 
 必要时请执行[步骤 5](infoprotect-data-loss-prevention.md)，这样做有助于满足此要求。 
 
-
 <a name="crit-infoprotect-step6"></a>
+## <a name="optional-email-encryption-is-configured"></a>可选：配置电子邮件加密
+
+已根据组织的需要配置以下电子邮件加密：
+
+|||
+|:-------|:-----|
+| **加密方法** | **对于已发送的电子邮件** |
+| [Office 365 邮件加密 (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | 在组织外部加密 |
+| [信息权限管理 (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | 具有加密和权限 |
+| [安全/多用途 Internet 邮件扩展 (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | 具有加密和数字签名（使用公钥加密） |
+|||
+
+必要时请执行[步骤 6](infoprotect-email-encryption.md)，这样做有助于满足此要求。
+
+<a name="crit-infoprotect-step7"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>可选：配置 Office 365 Privileged Access Management
 
 你已使用[在 Office 365 中配置特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主题中的信息来启用特权访问并在组织中创建一个或多个特权访问策略。 你已配置这些策略，且实时访问已启用，可访问敏感数据或关键配置设置。
 
-必要时请执行[步骤 6](infoprotect-configure-privileged-access-management.md)，这样做有助于满足此要求。 
+如果需要，请执行[步骤 7](infoprotect-configure-privileged-access-management.md)，这样做有助于满足此要求。 
 
 ## <a name="results-and-next-steps"></a>结果和后续步骤
 
-Microsoft 365 企业版的信息保护基础结构使用定义的安全级别、Office 365 增强安全性、使用敏感数据和标签的分类、Windows 信息保护、数据丢失防护以及特权访问权限管理。
+Microsoft 365 企业版的信息保护基础结构使用定义的安全级别、Office 365 增强安全性、使用敏感数据和标签的分类、Windows 信息保护、数据丢失防护、电子邮件加密以及特权访问权限管理。
 
 如果你正在执行 Microsoft 365 企业版端到端部署，那么你现在已准备好让你的[工作负载和应用场景](deploy-workloads.md)充分利用底层基础结构的所有功能和配置。
