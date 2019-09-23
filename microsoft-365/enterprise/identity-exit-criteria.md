@@ -3,7 +3,7 @@ title: 阶段 2：身份基础结构退出条件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 09/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,282 +13,284 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对基于身份的服务和基础结构的条件。
-ms.openlocfilehash: 4621c9e12519e39931fe8b883b3a8c446c39dae3
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 880bfa2b71158a2fa5c64fb09af2e8a34428a7a8
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981853"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071681"
 ---
-# <a name="phase-2-identity-infrastructure-exit-criteria"></a><span data-ttu-id="ce862-103">阶段 2：身份基础结构退出条件</span><span class="sxs-lookup"><span data-stu-id="ce862-103">Phase 2: Identity infrastructure exit criteria</span></span>
+# <a name="phase-2-identity-infrastructure-exit-criteria"></a><span data-ttu-id="bcdb1-103">阶段 2：身份基础结构退出条件</span><span class="sxs-lookup"><span data-stu-id="bcdb1-103">Phase 2: Identity infrastructure exit criteria</span></span>
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-<span data-ttu-id="ce862-104">确保你的标识基础结构符合以下必需条件，以及你认为可选的那些条件。</span><span class="sxs-lookup"><span data-stu-id="ce862-104">Make sure your identity infrastructure meets the following required criteria and that you've considered those that are optional.</span></span>
+<span data-ttu-id="bcdb1-104">确保你的标识基础结构符合以下必需条件，以及你认为可选的那些条件。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-104">Make sure your identity infrastructure meets the following required criteria and that you've considered those that are optional.</span></span>
 
-<span data-ttu-id="ce862-105">另请参阅[先决条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)，获得有关标识基础结构的其他建议。</span><span class="sxs-lookup"><span data-stu-id="ce862-105">Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.</span></span>
-
-<a name="crit-identity-user-groups"></a>
-## <a name="required-your-users-groups-and-group-memberships-have-been-created"></a><span data-ttu-id="ce862-106">必需：已创建你的用户、组和组成员身份</span><span class="sxs-lookup"><span data-stu-id="ce862-106">Required: All users, groups, and group memberships have been created</span></span>
-
-<span data-ttu-id="ce862-107">已创建用户帐户和组，以便：</span><span class="sxs-lookup"><span data-stu-id="ce862-107">You've created user accounts and groups so that:</span></span>
-
-- <span data-ttu-id="ce862-108">组织内的员工和供应商、承包商以及与组织协同工作的合作伙伴在 Azure Active Directory (Azure AD) 中具有相应的用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-108">Employees in your organization and the vendors, contractors, and partners that work for or with your organization have a corresponding user account in Azure Active Directory (Azure AD).</span></span>
-- <span data-ttu-id="ce862-109">Azure AD 组及其成员包含用于各种用途的用户帐户和其他组，如 Microsoft 云服务的安全设置预配、自动许可和其他用途。</span><span class="sxs-lookup"><span data-stu-id="ce862-109">Azure AD groups and their members contain user accounts and other groups for various purposes, such as the provisioning of security settings for Microsoft cloud services, automatic licensing, and other uses.</span></span>
-
-<span data-ttu-id="ce862-110">如果需要，可在[步骤 1](identity-plan-users-groups.md) 中进行设置以满足此要求。</span><span class="sxs-lookup"><span data-stu-id="ce862-110">If needed, [Step 1](identity-plan-users-groups.md) can help you meet this requirement.</span></span>
+<span data-ttu-id="bcdb1-105">另请参阅[先决条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)，获得有关标识基础结构的其他建议。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-105">Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.</span></span>
 
 <a name="crit-identity-global-admin"></a>
-## <a name="required-your-global-administrator-accounts-are-protected"></a><span data-ttu-id="ce862-111">必需：全局管理员帐户受到保护</span><span class="sxs-lookup"><span data-stu-id="ce862-111">Required: Your global administrator accounts are protected</span></span> 
+## <a name="required-your-global-administrator-accounts-are-protected"></a><span data-ttu-id="bcdb1-106">必需：全局管理员帐户受到保护</span><span class="sxs-lookup"><span data-stu-id="bcdb1-106">Required: Your global administrator accounts are protected</span></span> 
 
-<span data-ttu-id="ce862-112">你已[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以避免可能导致违反Microsoft 365订阅的攻击者的凭据泄露。</span><span class="sxs-lookup"><span data-stu-id="ce862-112">You've [protected your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) to thwart  credential compromise by attackers that can lead to breaches of your Microsoft 365 subscription.</span></span>
+<span data-ttu-id="bcdb1-107">你已[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以避免可能导致违反Microsoft 365订阅的攻击者的凭据泄露。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-107">You've [protected your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) to thwart  credential compromise by attackers that can lead to breaches of your Microsoft 365 subscription.</span></span>
 
-<span data-ttu-id="ce862-113">如果忽略此要求，全局管理员帐户很容易受到攻击和入侵，攻击者可以获取系统范围内的数据访问权限并加以收集、销毁或勒索。</span><span class="sxs-lookup"><span data-stu-id="ce862-113">If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.</span></span>
+<span data-ttu-id="bcdb1-108">如果忽略此要求，全局管理员帐户很容易受到攻击和入侵，攻击者可以获取系统范围内的数据访问权限并加以收集、销毁或勒索。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-108">If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.</span></span>
 
-<span data-ttu-id="ce862-114">如果需要，请执行[步骤 2](identity-designate-protect-admin-accounts.md#identity-global-admin)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="ce862-114">If needed, [Step 2](identity-designate-protect-admin-accounts.md#identity-global-admin) can help you meet this requirement.</span></span>
+<span data-ttu-id="bcdb1-109">如果需要，可在[步骤 1](identity-create-protect-global-admins.md#identity-global-admin) 中进行设置以满足此要求。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-109">If needed, [Step 1](identity-create-protect-global-admins.md#identity-global-admin) can help you meet this requirement.</span></span>
 
-### <a name="how-to-test"></a><span data-ttu-id="ce862-115">如何测试</span><span class="sxs-lookup"><span data-stu-id="ce862-115">How to test</span></span>
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-110">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-110">How to test</span></span>
 
-<span data-ttu-id="ce862-116">使用这些步骤验证是否已保护全局管理员帐户：</span><span class="sxs-lookup"><span data-stu-id="ce862-116">Use these steps to verify that you've protected your global administrator accounts:</span></span>
+<span data-ttu-id="bcdb1-111">使用这些步骤验证是否已保护全局管理员帐户：</span><span class="sxs-lookup"><span data-stu-id="bcdb1-111">Use these steps to verify that you've protected your global administrator accounts:</span></span>
 
-1. <span data-ttu-id="ce862-p101">在 PowerShell 命令提示符处运行以下 Azure Active Directory PowerShell Graph 命令。应仅看到专用全局管理员帐户列表。</span><span class="sxs-lookup"><span data-stu-id="ce862-p101">Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.</span></span>
+1. <span data-ttu-id="bcdb1-112">在 PowerShell 命令提示符处运行以下 Azure Active Directory PowerShell Graph 命令。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-112">Run the following Azure Active Directory PowerShell for Graph command at the PowerShell command prompt.</span></span> <span data-ttu-id="bcdb1-113">你应该只会看到专用全局管理员帐户列表。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-113">Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.</span></span>
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. <span data-ttu-id="ce862-p102">使用步骤 1 中的每个帐户登录到 Office 365。每个登录必须要求多重身份验证和组织中可用的最强形式的辅助身份验证。</span><span class="sxs-lookup"><span data-stu-id="ce862-p102">Sign in to Office 365 using each of the accounts from step 1. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.</span></span>
+2. <span data-ttu-id="bcdb1-114">使用步骤 1 中的每个帐户登录到 Office 365。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-114">Sign in to Office 365 using each of the accounts from step 1. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.</span></span> <span data-ttu-id="bcdb1-115">每个登录必须要求 Azure 多重身份验证和组织中可用的最强形式的辅助身份验证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-115">Each sign in must require Azure Multi-Factor Authentication and the strongest form of secondary authentication available in your organization.</span></span>
 
 > [!Note]
-> <span data-ttu-id="ce862-121">有关在 Office 365 中安装 Azure Active Directory PowerShell Graph 模块和登录的说明，请参阅[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。</span><span class="sxs-lookup"><span data-stu-id="ce862-121">See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in to Office 365.</span></span>
+> <span data-ttu-id="bcdb1-116">有关在 Office 365 中安装 Azure Active Directory PowerShell Graph 模块和登录的说明，请参阅[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-116">See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in to Office 365.</span></span>
 
 <a name="crit-identity-pim"></a>
-## <a name="optional-you-have-set-up-privileged-identity-management-to-support-on-demand-assignment-of-the-global-administrator-role"></a><span data-ttu-id="ce862-122">可选：已经设置了 Privileged Identity Management，以支持按需分配全局管理员角色</span><span class="sxs-lookup"><span data-stu-id="ce862-122">Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role</span></span>
+## <a name="optional-you-have-set-up-privileged-identity-management-to-support-on-demand-assignment-of-the-global-administrator-role"></a><span data-ttu-id="bcdb1-117">可选：已经设置了 Privileged Identity Management，以支持按需分配全局管理员角色</span><span class="sxs-lookup"><span data-stu-id="bcdb1-117">Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role</span></span>
 
-<span data-ttu-id="ce862-123">已使用[配置 Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) 中的说明，在 Azure AD 租户中启用 PIM 并将全局管理员帐户配置为符合条件的管理员。</span><span class="sxs-lookup"><span data-stu-id="ce862-123">You've used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.</span></span>
+<span data-ttu-id="bcdb1-118">已使用[配置 Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) 中的说明，在 Azure AD 租户中启用 PIM 并将全局管理员帐户配置为符合条件的管理员。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-118">You've used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.</span></span>
 
-<span data-ttu-id="ce862-124">已使用[针对 Azure AD 中混合部署和云部署的特权访问安全](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)中的建议制定路线图，以确保特权访问能够防止网络攻击者。</span><span class="sxs-lookup"><span data-stu-id="ce862-124">You've also used the recommendations in [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) to develop a roadmap that secures privileged access against cyber attackers.</span></span>
+<span data-ttu-id="bcdb1-119">已使用[针对 Azure AD 中混合部署和云部署的特权访问安全](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)中的建议制定路线图，以确保特权访问能够防止网络攻击者。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-119">You've also used the recommendations in [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) to develop a roadmap that secures privileged access against cyber attackers.</span></span>
 
-<span data-ttu-id="ce862-125">如果忽略此选项，全局管理员帐户可能会受到持续在线攻击，并且如果泄露，将使得攻击者能够获取、销毁或持有敏感信息进行勒索。</span><span class="sxs-lookup"><span data-stu-id="ce862-125">If you skip this option, your global administrator accounts are subject to ongoing online attack and, if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.</span></span>
+<span data-ttu-id="bcdb1-120">如果忽略此选项，全局管理员帐户可能会受到持续在线攻击，并且如果泄露，将使得攻击者能够获取、销毁或持有敏感信息进行勒索。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-120">If you skip this option, your global administrator accounts are subject to ongoing online attack and, if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.</span></span>
 
-<span data-ttu-id="ce862-126">如果需要，请执行[步骤 2](identity-designate-protect-admin-accounts.md#identity-pim)，这有助于你满足此条件。</span><span class="sxs-lookup"><span data-stu-id="ce862-126">If needed, [Step 2](identity-designate-protect-admin-accounts.md#identity-pim) can help you with this option.</span></span>
+<span data-ttu-id="bcdb1-121">如果需要，可在[步骤 1](identity-create-protect-global-admins.md#identity-pim) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-121">If needed, [Step 1](identity-create-protect-global-admins.md#identity-pim) can help you with this option.</span></span>
 
+<a name="crit-identity-pam"></a>
+## <a name="optional-you-have-configure-privileged-access-management-in-office-365"></a><span data-ttu-id="bcdb1-122">可选：在 Office 365 中配置特权访问管理</span><span class="sxs-lookup"><span data-stu-id="bcdb1-122">Optional: You have configure privileged access management in Office 365</span></span>
 
-<a name="crit-identity-sync"></a>
-## <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a><span data-ttu-id="ce862-127">必需：用户和组与 Azure AD 已同步</span><span class="sxs-lookup"><span data-stu-id="ce862-127">Required: Users and groups are synchronized with Azure AD</span></span>
+<span data-ttu-id="bcdb1-123">你已使用[在 Office 365 中配置特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主题中的信息来启用特权访问并在组织中创建一个或多个特权访问策略。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-123">You've used the information in the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic to enable privileged access and create one or more privileged access policies in your organization.</span></span> <span data-ttu-id="bcdb1-124">你已配置这些策略，且实时访问已启用，可访问敏感数据或关键配置设置。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-124">You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.</span></span>
 
-<span data-ttu-id="ce862-128">如果你有现有的本地 Active Directory 域服务 (AD DS)，则已使用 Azure AD Connect 将用户帐户和组从本地 AD DS 同步到 Azure AD 租户。</span><span class="sxs-lookup"><span data-stu-id="ce862-128">If you have an existing on-premises identity provider, such as Active Directory Domain Services (AD DS), you have used Azure AD Connect to synchronize user accounts and groups from your on-premises identity provider to your Azure AD tenant.</span></span>
-
-<span data-ttu-id="ce862-129">通过目录同步，你的用户可以使用与登录到其计算机相同的凭据登录到 Office 365 和其他 Microsoft 云服务，并访问本地资源。</span><span class="sxs-lookup"><span data-stu-id="ce862-129">With directory synchronization, your users can sign in to Office 365 and other Microsoft cloud services using the same credentials that they use to sign in to their computers and access on-premises resources.</span></span>
-
-<span data-ttu-id="ce862-130">如果需要，请执行[步骤 3](identity-azure-ad-connect.md#identity-sync)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="ce862-130">If needed, [Step 3](identity-azure-ad-connect.md#identity-sync) can help you meet this requirement.</span></span>
-
-<span data-ttu-id="ce862-131">如果忽略此要求，将具有两组用户帐户和组：</span><span class="sxs-lookup"><span data-stu-id="ce862-131">If you skip this requirement, you’ll have two sets of user accounts and groups:</span></span>
-
-- <span data-ttu-id="ce862-132">位于本地 AD DS 的用户帐户和组</span><span class="sxs-lookup"><span data-stu-id="ce862-132">User accounts and groups that exist in your on-premises identity provider</span></span>
-- <span data-ttu-id="ce862-133">位于 Azure AD 租户组的用户帐户和组</span><span class="sxs-lookup"><span data-stu-id="ce862-133">User accounts and groups that exist in your Azure AD tenant</span></span>
-
-<span data-ttu-id="ce862-p103">在此状态下，两组用户帐户和组必须由 IT 管理员和用户手动维护。这会不可避免地导致帐户、密码和组不同步。</span><span class="sxs-lookup"><span data-stu-id="ce862-p103">In this state, the two sets of user accounts and groups must be manually maintained by both IT administrators and users. This will inevitably lead to unsynchronized accounts, their passwords, and groups.</span></span>
-
-### <a name="how-to-test"></a><span data-ttu-id="ce862-136">如何测试</span><span class="sxs-lookup"><span data-stu-id="ce862-136">How to test</span></span>
-<span data-ttu-id="ce862-137">要验证本地凭据身份验证是否正常运行，请使用本地凭据登录到 Office 门户。</span><span class="sxs-lookup"><span data-stu-id="ce862-137">To verify that authentication with on-premises credentials works correctly, sign in to the Office portal with your on-premises credentials.</span></span>
-
-<span data-ttu-id="ce862-138">要验证目录同步正常运行，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="ce862-138">To verify that directory synchronization is working correctly, do the following:</span></span>
-
-1.  <span data-ttu-id="ce862-139">在 AD DS 中创建新的测试组。</span><span class="sxs-lookup"><span data-stu-id="ce862-139">Create a new test group in AD DS.</span></span>
-2.  <span data-ttu-id="ce862-140">等待同步时间。</span><span class="sxs-lookup"><span data-stu-id="ce862-140">Wait for the synchronization time.</span></span>
-3.  <span data-ttu-id="ce862-141">检查 Azure AD 租户以验证新测试组的名称是否出现。</span><span class="sxs-lookup"><span data-stu-id="ce862-141">Check your Azure AD tenant to verify that the new test group name appears.</span></span>
-
-<a name="crit-identity-sync-health"></a>
-## <a name="optional-directory-synchronization-is-monitored"></a><span data-ttu-id="ce862-142">可选：监控目录同步</span><span class="sxs-lookup"><span data-stu-id="ce862-142">Optional: Directory synchronization is monitored</span></span>
-
-<span data-ttu-id="ce862-143">已使用[使用 Azure AD Connect Health 进行同步](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync)（适用于密码同步）或[在 AD FS 中使用 Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs)（适用于联合身份验证），并部署了 Azure 的 AD Connect Health，其中涉及：</span><span class="sxs-lookup"><span data-stu-id="ce862-143">You've used [Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:</span></span>
-
-- <span data-ttu-id="ce862-144">在每个本地标识服务器上安装 Azure AD Connect Health 代理。</span><span class="sxs-lookup"><span data-stu-id="ce862-144">Installing the Azure AD Connect Health agent on each of your on-premises identity servers.</span></span>
-- <span data-ttu-id="ce862-145">使用 Azure AD Connect Health 门户监控持续同步的状态。</span><span class="sxs-lookup"><span data-stu-id="ce862-145">Using the Azure AD Connect Health portal to monitor the state of the ongoing synchronization.</span></span>
-
-<span data-ttu-id="ce862-146">如果忽略此选项，则可以更准确地评估基于云的身份基础结构状态。</span><span class="sxs-lookup"><span data-stu-id="ce862-146">If you skip this option, you can more accurately assess the state of your cloud-based identity infrastructure.</span></span>
-
-<span data-ttu-id="ce862-147">如果需要，可在[步骤 3 ](identity-azure-ad-connect.md#identity-sync-health)中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-147">If needed, [Step 3](identity-azure-ad-connect.md#identity-sync-health) can help you with this option.</span></span>
-
-### <a name="how-to-test"></a><span data-ttu-id="ce862-148">测试操作</span><span class="sxs-lookup"><span data-stu-id="ce862-148">How to test</span></span>
-<span data-ttu-id="ce862-149">Azure AD Connect Health 门户显示本地域控制器和持续同步的当前和正确状态。</span><span class="sxs-lookup"><span data-stu-id="ce862-149">The Azure AD Connect Health portal shows the current and correct state of your on-premises identity servers and the ongoing synchronization.</span></span>
-
-<a name="crit-identity-mfa"></a>
-## <a name="optional-multi-factor-authentication-is-enabled-for-your-users"></a><span data-ttu-id="ce862-150">可选：已为你的用户启用多重身份验证</span><span class="sxs-lookup"><span data-stu-id="ce862-150">Optional: Multi-factor authentication is enabled for your users</span></span>
-
-<span data-ttu-id="ce862-151">你使用 [多重身份验证计划](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) 和[条件访问策略](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)为你的用户帐户启用了多重身份验证 (MFA)。</span><span class="sxs-lookup"><span data-stu-id="ce862-151">You used [Plan for multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) and [conditional access policies](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access) to enable multi-factor authentication (MFA) for your user accounts.</span></span>
-
-<span data-ttu-id="ce862-p104">如果忽略此选项，你的用户帐户会很容易受到网络攻击者的攻击，导致凭据泄露。如果用户帐户的密码遭到破坏，帐户的所有资源和功能（如管理员角色）都可供攻击者使用。这会使得攻击者能够复制、销毁或持有内部文档和其他数据，进而进行勒索。</span><span class="sxs-lookup"><span data-stu-id="ce862-p104">If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account’s password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.</span></span>
-
-<span data-ttu-id="ce862-155">如果需要，可在[步骤 4](identity-multi-factor-authentication.md#identity-mfa) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-155">If needed, [Step 4](identity-multi-factor-authentication.md#identity-mfa) can help you with this option.</span></span>
-
-### <a name="how-to-test"></a><span data-ttu-id="ce862-156">测试操作</span><span class="sxs-lookup"><span data-stu-id="ce862-156">How to test</span></span>
-
-1.  <span data-ttu-id="ce862-157">创建一个测试用户帐户并对其分配许可证。</span><span class="sxs-lookup"><span data-stu-id="ce862-157">Create a test user account in the Office 365 Admin portal and assign them a license.</span></span> 
-2.  <span data-ttu-id="ce862-158">通过用于真实用户帐户的其他验证方法为测试用户帐户配置多重身份验证，如向手机发送消息。</span><span class="sxs-lookup"><span data-stu-id="ce862-158">Configure multi-factor authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a message to your phone.</span></span> 
-3.  <span data-ttu-id="ce862-159">通过测试用户帐户登录到 Office 365 门户。</span><span class="sxs-lookup"><span data-stu-id="ce862-159">Sign in to the Office 365 or Azure portal with the test user account.</span></span>
-4.  <span data-ttu-id="ce862-160">确保 MFA 提示你输入其他验证信息且身份验证成功。</span><span class="sxs-lookup"><span data-stu-id="ce862-160">Verify that MFA prompts you for the additional verification information and results in a successful authentication.</span></span> 
-5.  <span data-ttu-id="ce862-161">删除该测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-161">Delete the test user account.</span></span>
+<span data-ttu-id="bcdb1-125">如果需要，可在[步骤 1](identity-create-protect-global-admins.md#identity-pam) 中进行设置以满足此要求。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-125">If needed, [Step 1](identity-create-protect-global-admins.md#identity-pam) can help you meet this requirement.</span></span> 
 
 <a name="crit-password-prot"></a>
-## <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a><span data-ttu-id="ce862-162">可选： Azure AD 密码保护禁止使用弱密码</span><span class="sxs-lookup"><span data-stu-id="ce862-162">Optional: Azure AD password protection is banning the use of weak passwords</span></span>
+## <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a><span data-ttu-id="bcdb1-126">可选：Azure AD 密码保护禁止使用弱密码</span><span class="sxs-lookup"><span data-stu-id="bcdb1-126">Optional: Azure AD password protection is banning the use of weak passwords</span></span>
 
-<span data-ttu-id="ce862-163">已启用禁用[云中](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)以及[本地 Active Directory 域服务 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) 的错误密码以获取全局禁用密码和自定义条款（可选）。</span><span class="sxs-lookup"><span data-stu-id="ce862-163">You have enabled the banning of bad passwords [in the cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) and for your [on-premises Active Directory Domain Services (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) for global banned passwords and, optionally, for custom terms.</span></span>
+<span data-ttu-id="bcdb1-127">已启用禁用[云中](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)以及[本地 Active Directory 域服务 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) 的错误密码以获取全局禁用密码和自定义条款（可选）。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-127">You have enabled the banning of bad passwords [in the cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) and for your [on-premises Active Directory Domain Services (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) for global banned passwords and, optionally, for custom terms.</span></span>
 
-<span data-ttu-id="ce862-164">如果需要，可在[步骤 4](identity-multi-factor-authentication.md#identity-password-prot) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-164">If needed, [Step 4](identity-multi-factor-authentication.md#identity-password-prot) can help you with this option.</span></span>
-
-<a name="crit-identity-ident-prot"></a>
-## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a><span data-ttu-id="ce862-165">可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限Microsoft 365 Enterprise E5）</span><span class="sxs-lookup"><span data-stu-id="ce862-165">Optional: Azure AD Identity Protection is enabled to protect against credential compromise</span></span>
-
-<span data-ttu-id="ce862-166">已启用 Azure AD Identity Protection，可以：</span><span class="sxs-lookup"><span data-stu-id="ce862-166">You've enabled Azure AD Identity Protection to:</span></span>
-
-- <span data-ttu-id="ce862-167">解决潜在标识漏洞。</span><span class="sxs-lookup"><span data-stu-id="ce862-167">Address potential identity vulnerabilities.</span></span>
-- <span data-ttu-id="ce862-168">检测可能的凭据泄露尝试。</span><span class="sxs-lookup"><span data-stu-id="ce862-168">Detect possible credential compromise attempts.</span></span>
-- <span data-ttu-id="ce862-169">调查和处理正在进行的可疑标识活动。</span><span class="sxs-lookup"><span data-stu-id="ce862-169">Investigate and address ongoing suspicious identity incidents.</span></span>
-
-<span data-ttu-id="ce862-p105">如果忽略此选项，你将无法检测或自动阻止凭据泄露尝试或调查标识相关的安全事件。这可能会使你的组织很容易受到凭据泄露的攻击，进而对组织的敏感数据造成威胁。</span><span class="sxs-lookup"><span data-stu-id="ce862-p105">If you skip this option, you won’t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization’s sensitive data.</span></span>
-
-<span data-ttu-id="ce862-172">如果需要，可在[步骤 4](identity-multi-factor-authentication.md#identity-ident-prot) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-172">If needed, [Step 4](identity-multi-factor-authentication.md#identity-ident-prot) can help you with this option.</span></span>
+<span data-ttu-id="bcdb1-128">如果需要，请执行[步骤 2](identity-secure-your-passwords.md#identity-password-prot)，这有助于你满足此条件。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-128">If needed, [Step 2](identity-secure-your-passwords.md#identity-password-prot) can help you with this option.</span></span>
 
 <a name="crit-identity-pw-reset"></a>
-## <a name="optional-users-can-reset-their-own-passwords"></a><span data-ttu-id="ce862-173">可选：用户可以重置自己的密码</span><span class="sxs-lookup"><span data-stu-id="ce862-173">Optional: Users can reset their own passwords</span></span>
+## <a name="optional-users-can-reset-their-own-passwords"></a><span data-ttu-id="bcdb1-129">可选：用户可以重置自己的密码</span><span class="sxs-lookup"><span data-stu-id="bcdb1-129">Optional: Users can reset their own passwords</span></span>
 
-<span data-ttu-id="ce862-174">已使用 [Azure AD 自助密码重置快速部署](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)，为你的用户配置密码重置。</span><span class="sxs-lookup"><span data-stu-id="ce862-174">You've used [Azure AD self-service password reset rapid deployment](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to configure password reset for your users.</span></span>
+<span data-ttu-id="bcdb1-130">已使用 [Azure AD 自助密码重置快速部署](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)，为你的用户配置密码重置。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-130">You've used [Azure AD self-service password reset rapid deployment](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to configure password reset for your users.</span></span>
 
-<span data-ttu-id="ce862-175">如果不符合此条件，用户将依赖用户帐户管理员来重置其密码，这会导致额外的 IT 管理开销。</span><span class="sxs-lookup"><span data-stu-id="ce862-175">If you don’t meet this condition, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.</span></span>
+<span data-ttu-id="bcdb1-131">如果不符合此条件，用户将依赖用户帐户管理员来重置其密码，这会导致额外的 IT 管理开销。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-131">If you don’t meet this condition, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.</span></span>
 
-<span data-ttu-id="ce862-176">如果需要，可在[步骤 5](identity-password-reset.md#identity-pw-reset) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-176">If needed, [Step 5](identity-password-reset.md#identity-pw-reset) can help you with this option.</span></span>
-
-### <a name="how-to-test"></a><span data-ttu-id="ce862-177">测试操作</span><span class="sxs-lookup"><span data-stu-id="ce862-177">How to test</span></span>
-
-1. <span data-ttu-id="ce862-178">创建包含初始密码的测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-178">Create a test user account with an initial password.</span></span>
-2. <span data-ttu-id="ce862-179">使用[让用户在 Office 365 中重置自己的密码](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords)中的步骤来重置测试用户帐户的密码。</span><span class="sxs-lookup"><span data-stu-id="ce862-179">Use the steps in [Let users reset their own passwords in Office 365](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords) to reset the password on the test user account.</span></span>
-3. <span data-ttu-id="ce862-180">注销，然后使用重置密码登录到测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-180">Sign out and then sign in to the test user account using the reset password.</span></span>
-4. <span data-ttu-id="ce862-181">删除该测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-181">Delete the test user account.</span></span>
-
-<a name="crit-identity-pw-writeback"></a>
-## <a name="optional-password-writeback-is-enabled-for-your-users"></a><span data-ttu-id="ce862-182">可选：为你的用户启用密码写回功能</span><span class="sxs-lookup"><span data-stu-id="ce862-182">Optional: Password writeback is enabled for your users</span></span>
-
-<span data-ttu-id="ce862-183">已使用 [Azure AD SSPR 密码写回](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)中的说明为 Microsoft 365 企业版订阅的 Azure AD 租户启用密码写回。</span><span class="sxs-lookup"><span data-stu-id="ce862-183">You've used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.</span></span>
-
-<span data-ttu-id="ce862-184">如果忽略此选项，未连接到本地网络的用户必须通过 IT 管理员重置或解除锁定其 AD DS 密码。</span><span class="sxs-lookup"><span data-stu-id="ce862-184">If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their AD DS passwords through an IT administrator.</span></span>
-
-<span data-ttu-id="ce862-185">如果需要，可在[步骤 5](identity-password-reset.md#identity-pw-writeback) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-185">If needed, [Step 5](identity-password-reset.md#identity-pw-writeback) can help you with this option.</span></span>
-
->[!Note]
-><span data-ttu-id="ce862-186">需要密码写回才可充分利用 Azure AD Identity Protection 功能，例如，当 Azure AD 检测到高风险的帐户泄露时要求用户更改其本地密码。</span><span class="sxs-lookup"><span data-stu-id="ce862-186">Password writeback is required to fully utilize Azure AD Identity Protection features, such as requiring users to change their on-premises passwords when Azure AD has detected a high risk of account compromise.</span></span>
->
-
-### <a name="how-to-test"></a><span data-ttu-id="ce862-187">测试操作</span><span class="sxs-lookup"><span data-stu-id="ce862-187">How to test</span></span>
-
-<span data-ttu-id="ce862-188">通过更改 Office 365 中的密码可以使测试密码写回。</span><span class="sxs-lookup"><span data-stu-id="ce862-188">You test password writeback by changing your password in Office 365.</span></span> <span data-ttu-id="ce862-189">你应该能够使用你的帐户和新密码访问本地 AD DS 资源。</span><span class="sxs-lookup"><span data-stu-id="ce862-189">You should be able to use your account and new password to access on-premises AD DS resources.</span></span>
-
-1. <span data-ttu-id="ce862-190">在本地 AD DS 中创建测试用户帐户，允许进行目录同步，然后在 Microsoft 365 管理中心中授予 Microsoft 365 Enterprise 许可证。</span><span class="sxs-lookup"><span data-stu-id="ce862-190">Create a test user account in your on-premises AD DS, allow directory synchronization to occur, and then grant it an Office 365 license in the Microsoft 365 admin center.</span></span>
-2. <span data-ttu-id="ce862-191">从加入到本地 AD DS 域的远程计算机，使用测试用户帐户的凭据登录到计算机和 Office 门户。</span><span class="sxs-lookup"><span data-stu-id="ce862-191">From a remote computer that is joined to your on-premises AD DS domain, sign in to the computer and the Office portal using the credentials of the test user account.</span></span>
-3. <span data-ttu-id="ce862-192">选择“**设置”>“Office 365 设置”>“密码”>“更改密码**”。</span><span class="sxs-lookup"><span data-stu-id="ce862-192">Select **Settings > Office 365 settings > Password > Change password**.</span></span>
-4. <span data-ttu-id="ce862-193">键入当前密码、键入新密码，然后确认。</span><span class="sxs-lookup"><span data-stu-id="ce862-193">Type the current password, type a new password, and then confirm it.</span></span>
-5. <span data-ttu-id="ce862-194">注销 Office 门户和远程计算机，然后使用测试用户帐户及其新密码登录计算机。</span><span class="sxs-lookup"><span data-stu-id="ce862-194">Sign out of the Office portal and the remote computer and then sign in to the computer using the test user account and its new password.</span></span> <span data-ttu-id="ce862-195">这可以证明你可以使用 Azure AD 租户更改本地 AD DS 用户帐户的密码。</span><span class="sxs-lookup"><span data-stu-id="ce862-195">This proves that you were able to change the password of an on-premises AD DS user account using the Azure AD tenant.</span></span>
+<span data-ttu-id="bcdb1-132">如果需要，请执行[步骤 2](identity-secure-your-passwords.md#identity-pw-reset)，这有助于你满足此条件。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-132">If needed, [Step 2](identity-secure-your-passwords.md#identity-pw-reset) can help you with this option.</span></span>
 
 <a name="crit-identity-sso"></a>
-## <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a><span data-ttu-id="ce862-196">可选：用户可以使用 Azure AD 无缝单一登录进行登录</span><span class="sxs-lookup"><span data-stu-id="ce862-196">Optional: Users can sign in using Azure AD Seamless Single Sign-on</span></span>
+## <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a><span data-ttu-id="bcdb1-133">可选：用户可以使用 Azure AD 无缝单一登录进行登录</span><span class="sxs-lookup"><span data-stu-id="bcdb1-133">Optional: Users can sign in using Azure AD Seamless Single Sign-on</span></span>
 
-<span data-ttu-id="ce862-197">已为组织启用 [Azure AD Connect: 无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)，以简化用户登录到基于云的应用程序（如 Office 365）的方式。</span><span class="sxs-lookup"><span data-stu-id="ce862-197">You enabled [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) for your organization to simplify how users sign in to cloud-based applications, such as Office 365.</span></span>
+<span data-ttu-id="bcdb1-134">已为组织启用 [Azure AD Connect: 无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)，以简化用户登录到基于云的应用程序（如 Office 365）的方式。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-134">You enabled [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) for your organization to simplify how users sign in to cloud-based applications, such as Office 365.</span></span>
 
-<span data-ttu-id="ce862-198">如果忽略此选项，当用户访问使用 Azure AD 租户的其他应用程序时，系统可能会提示你的用户提供凭据。</span><span class="sxs-lookup"><span data-stu-id="ce862-198">If you skip this option, your users might be prompted to provide credentials when they access additional applications that use Azure AD.</span></span>
+<span data-ttu-id="bcdb1-135">如果忽略此选项，当用户访问使用 Azure AD 租户的其他应用程序时，系统可能会提示你的用户提供凭据。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-135">If you skip this option, your users might be prompted to provide credentials when they access additional applications that use Azure AD.</span></span>
 
-<span data-ttu-id="ce862-199">如果需要，可在[步骤 5](identity-password-reset.md#identity-sso) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-199">If needed, [Step 5](identity-password-reset.md#identity-sso) can help you with this option.</span></span>
+<span data-ttu-id="bcdb1-136">如果需要，请执行[步骤 2](identity-secure-your-passwords.md#identity-sso)，这有助于你满足此条件。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-136">If needed, [Step 2](identity-secure-your-passwords.md#identity-sso) can help you with this option.</span></span>
 
 <a name="crit-identity-custom-sign-in"></a>
-## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a><span data-ttu-id="ce862-200">可选：个性化组织的 Office 365 登录屏幕</span><span class="sxs-lookup"><span data-stu-id="ce862-200">Optional: The Office 365 sign-in screen is personalized for your organization</span></span>
+## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a><span data-ttu-id="bcdb1-137">可选：个性化组织的 Office 365 登录屏幕</span><span class="sxs-lookup"><span data-stu-id="bcdb1-137">Optional: The Office 365 sign-in screen is personalized for your organization</span></span>
 
-<span data-ttu-id="ce862-201">你已使用[将公司品牌添加到登录和访问面板页面](http://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。</span><span class="sxs-lookup"><span data-stu-id="ce862-201">You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.</span></span>
+<span data-ttu-id="bcdb1-138">你已使用[将公司品牌添加到登录和访问面板页面](http://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-138">You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.</span></span>
 
-<span data-ttu-id="ce862-202">如果忽略此选项，你的用户将看到通用的 Office 365 登录屏幕，可能会让他们疑惑是否登录到了组织的网站。</span><span class="sxs-lookup"><span data-stu-id="ce862-202">If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.</span></span>
+<span data-ttu-id="bcdb1-139">如果忽略此选项，你的用户将看到通用的 Office 365 登录屏幕，可能会让他们疑惑是否登录到了组织的网站。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-139">If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.</span></span>
 
-<span data-ttu-id="ce862-203">如果需要，可在[步骤 5](identity-password-reset.md#identity-custom-sign-in) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-203">If needed, [Step 5](identity-password-reset.md#identity-custom-sign-in) can help you with this option.</span></span>
+<span data-ttu-id="bcdb1-140">如果需要，请执行[步骤 2](identity-secure-your-passwords.md#identity-custom-sign-in)，这有助于你满足此条件。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-140">If needed, [Step 2](identity-secure-your-passwords.md#identity-custom-sign-in) can help you with this option.</span></span>
 
-### <a name="how-to-test"></a><span data-ttu-id="ce862-204">测试操作</span><span class="sxs-lookup"><span data-stu-id="ce862-204">How to test</span></span>
 
-<span data-ttu-id="ce862-p108">使用用户帐户名称及多重身份验证登录到 Office 365 门户。应在登录页面上看到自定义的品牌元素。</span><span class="sxs-lookup"><span data-stu-id="ce862-p108">Sign in to the Office 365 portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.</span></span>
+<a name="crit-identity-mfa"></a>
+## <a name="optional-azure-multi-factor-authentication-is-enabled-for-your-users"></a><span data-ttu-id="bcdb1-141">可选：已为你的用户启用 Azure 多重身份验证</span><span class="sxs-lookup"><span data-stu-id="bcdb1-141">Optional: Azure Multi-Factor Authentication is enabled for your users</span></span>
+
+<span data-ttu-id="bcdb1-142">你使用 [Azure 多重身份验证计划](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)和[条件访问策略](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)为你的用户帐户启用了 Azure 多重身份验证 (MFA)。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-142">You used [Plan for Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) and [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access) to enable Azure Multi-Factor Authentication (MFA) for your user accounts.</span></span>
+
+<span data-ttu-id="bcdb1-p104">如果忽略此选项，你的用户帐户会很容易受到网络攻击者的攻击，导致凭据泄露。如果用户帐户的密码遭到破坏，帐户的所有资源和功能（如管理员角色）都可供攻击者使用。这会使得攻击者能够复制、销毁或持有内部文档和其他数据，进而进行勒索。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-p104">If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account’s password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.</span></span>
+
+<span data-ttu-id="bcdb1-146">如果需要，可在[步骤 3](identity-secure-user-sign-ins.md#identity-mfa) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-146">If needed, [Step 3](identity-secure-user-sign-ins.md#identity-mfa) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-147">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-147">How to test</span></span>
+
+1.  <span data-ttu-id="bcdb1-148">创建一个测试用户帐户并对其分配许可证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-148">Create a test user account in the Office 365 Admin portal and assign them a license.</span></span> 
+2.  <span data-ttu-id="bcdb1-149">通过用于真实用户帐户的其他验证方法为测试用户帐户配置 Azure 多重身份验证，如向手机发送消息。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-149">Configure multi-factor authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a message to your phone.</span></span> 
+3.  <span data-ttu-id="bcdb1-150">通过测试用户帐户登录到 Office 365 门户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-150">Sign in to the Office 365 or Azure portal with the test user account.</span></span>
+4.  <span data-ttu-id="bcdb1-151">确保 MFA 提示你输入其他验证信息且身份验证成功。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-151">Verify that MFA prompts you for the additional verification information and results in a successful authentication.</span></span> 
+5.  <span data-ttu-id="bcdb1-152">删除该测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-152">Delete the test user account.</span></span>
+
+<a name="crit-identity-ident-prot"></a>
+## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a><span data-ttu-id="bcdb1-153">可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限 Microsoft 365 Enterprise E5）</span><span class="sxs-lookup"><span data-stu-id="bcdb1-153">Optional: Azure AD Identity Protection is enabled to protect against credential compromise</span></span>
+
+<span data-ttu-id="bcdb1-154">已启用 Azure AD Identity Protection，可以：</span><span class="sxs-lookup"><span data-stu-id="bcdb1-154">You've enabled Azure AD Identity Protection to:</span></span>
+
+- <span data-ttu-id="bcdb1-155">解决潜在标识漏洞。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-155">Address potential identity vulnerabilities.</span></span>
+- <span data-ttu-id="bcdb1-156">检测可能的凭据泄露尝试。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-156">Detect possible credential compromise attempts.</span></span>
+- <span data-ttu-id="bcdb1-157">调查和处理正在进行的可疑标识活动。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-157">Investigate and address ongoing suspicious identity incidents.</span></span>
+
+<span data-ttu-id="bcdb1-p105">如果忽略此选项，你将无法检测或自动阻止凭据泄露尝试或调查标识相关的安全事件。这可能会使你的组织很容易受到凭据泄露的攻击，进而对组织的敏感数据造成威胁。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-p105">If you skip this option, you won’t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization’s sensitive data.</span></span>
+
+<span data-ttu-id="bcdb1-160">如果需要，可在[步骤 3](identity-secure-user-sign-ins.md#identity-ident-prot) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-160">If needed, [Step 3](identity-secure-user-sign-ins.md#identity-ident-prot) can help you with this option.</span></span>
+
+
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-161">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-161">How to test</span></span>
+
+1. <span data-ttu-id="bcdb1-162">创建包含初始密码的测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-162">Create a test user account with an initial password.</span></span>
+2. <span data-ttu-id="bcdb1-163">使用[让用户在 Office 365 中重置自己的密码](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords)中的步骤来重置测试用户帐户的密码。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-163">Use the steps in [Let users reset their own passwords in Office 365](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords) to reset the password on the test user account.</span></span>
+3. <span data-ttu-id="bcdb1-164">注销，然后使用重置密码登录到测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-164">Sign out and then sign in to the test user account using the reset password.</span></span>
+4. <span data-ttu-id="bcdb1-165">删除该测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-165">Delete the test user account.</span></span>
+
+<a name="crit-identity-sync"></a>
+## <a name="required-for-hybrid-identity-users-and-groups-are-synchronized-with-azure-ad"></a><span data-ttu-id="bcdb1-166">混合标识所必需：用户和组与 Azure AD 已同步</span><span class="sxs-lookup"><span data-stu-id="bcdb1-166">Required: Users and groups are synchronized with Azure AD</span></span>
+
+<span data-ttu-id="bcdb1-167">如果你有现有的本地 Active Directory 域服务 (AD DS)，则已使用 Azure AD Connect 将用户帐户和组从本地 AD DS 同步到 Azure AD 租户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-167">If you have an existing on-premises identity provider, such as Active Directory Domain Services (AD DS), you have used Azure AD Connect to synchronize user accounts and groups from your on-premises identity provider to your Azure AD tenant.</span></span>
+
+<span data-ttu-id="bcdb1-168">通过目录同步，你的用户可以使用与登录到其计算机相同的凭据登录到 Office 365 和其他 Microsoft 云服务，并访问本地资源。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-168">With directory synchronization, your users can sign in to Office 365 and other Microsoft cloud services using the same credentials that they use to sign in to their computers and access on-premises resources.</span></span>
+
+<span data-ttu-id="bcdb1-169">必要时请执行[第 4 步](identity-add-user-accounts.md#identity-sync)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-169">If needed, [Step 4](identity-add-user-accounts.md#identity-sync) can help you meet this requirement.</span></span>
+
+<span data-ttu-id="bcdb1-170">如果忽略此要求，将具有两组用户帐户和组：</span><span class="sxs-lookup"><span data-stu-id="bcdb1-170">If you skip this requirement, you’ll have two sets of user accounts and groups:</span></span>
+
+- <span data-ttu-id="bcdb1-171">位于本地 AD DS 的用户帐户和组</span><span class="sxs-lookup"><span data-stu-id="bcdb1-171">User accounts and groups that exist in your on-premises identity provider</span></span>
+- <span data-ttu-id="bcdb1-172">位于 Azure AD 租户组的用户帐户和组</span><span class="sxs-lookup"><span data-stu-id="bcdb1-172">User accounts and groups that exist in your Azure AD tenant</span></span>
+
+<span data-ttu-id="bcdb1-p106">在此状态下，两组用户帐户和组必须由 IT 管理员和用户手动维护。这会不可避免地导致帐户、密码和组不同步。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-p106">In this state, the two sets of user accounts and groups must be manually maintained by both IT administrators and users. This will inevitably lead to unsynchronized accounts, their passwords, and groups.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-175">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-175">How to test</span></span>
+<span data-ttu-id="bcdb1-176">要验证本地凭据身份验证是否正常运行，请使用本地凭据登录到 Office 门户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-176">To verify that authentication with on-premises credentials works correctly, sign in to the Office portal with your on-premises credentials.</span></span>
+
+<span data-ttu-id="bcdb1-177">要验证目录同步正常运行，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="bcdb1-177">To verify that directory synchronization is working correctly, do the following:</span></span>
+
+1.  <span data-ttu-id="bcdb1-178">在 AD DS 中创建新的测试组。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-178">Create a new test group in AD DS.</span></span>
+2.  <span data-ttu-id="bcdb1-179">等待同步时间。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-179">Wait for the synchronization time.</span></span>
+3.  <span data-ttu-id="bcdb1-180">检查 Azure AD 租户以验证新测试组的名称是否出现。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-180">Check your Azure AD tenant to verify that the new test group name appears.</span></span>
+
+<a name="crit-identity-sync-health"></a>
+## <a name="optional-directory-synchronization-is-monitored"></a><span data-ttu-id="bcdb1-181">可选：监控目录同步</span><span class="sxs-lookup"><span data-stu-id="bcdb1-181">Optional: Directory synchronization is monitored</span></span>
+
+<span data-ttu-id="bcdb1-182">已使用[使用 Azure AD Connect Health 进行同步](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync)（适用于密码同步）或[在 AD FS 中使用 Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs)（适用于联合身份验证），并部署了 Azure 的 AD Connect Health，其中涉及：</span><span class="sxs-lookup"><span data-stu-id="bcdb1-182">You've used [Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:</span></span>
+
+- <span data-ttu-id="bcdb1-183">在每个本地标识服务器上安装 Azure AD Connect Health 代理。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-183">Installing the Azure AD Connect Health agent on each of your on-premises identity servers.</span></span>
+- <span data-ttu-id="bcdb1-184">使用 Azure AD Connect Health 门户监控持续同步的状态。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-184">Using the Azure AD Connect Health portal to monitor the state of the ongoing synchronization.</span></span>
+
+<span data-ttu-id="bcdb1-185">如果忽略此选项，则可以更准确地评估基于云的身份基础结构状态。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-185">If you skip this option, you can more accurately assess the state of your cloud-based identity infrastructure.</span></span>
+
+<span data-ttu-id="bcdb1-186">如果需要，可在[步骤 4](identity-add-user-accounts.md#identity-sync-health) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-186">If needed, [Step 4](identity-add-user-accounts.md#identity-sync-health) can help you with this option.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-187">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-187">How to test</span></span>
+<span data-ttu-id="bcdb1-188">Azure AD Connect Health 门户显示本地域控制器和持续同步的当前和正确状态。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-188">The Azure AD Connect Health portal shows the current and correct state of your on-premises identity servers and the ongoing synchronization.</span></span>
+
+
+<a name="crit-identity-pw-writeback"></a>
+## <a name="optional-password-writeback-is-enabled-for-your-users"></a><span data-ttu-id="bcdb1-189">可选：为你的用户启用密码写回功能</span><span class="sxs-lookup"><span data-stu-id="bcdb1-189">Optional: Password writeback is enabled for your users</span></span>
+
+<span data-ttu-id="bcdb1-190">已使用 [Azure AD SSPR 密码写回](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)中的说明为 Microsoft 365 企业版订阅的 Azure AD 租户启用密码写回。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-190">You've used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.</span></span>
+
+<span data-ttu-id="bcdb1-191">如果忽略此选项，未连接到本地网络的用户必须通过 IT 管理员重置或解除锁定其 AD DS 密码。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-191">If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their AD DS passwords through an IT administrator.</span></span>
+
+<span data-ttu-id="bcdb1-192">如果需要，可在[步骤 4](identity-add-user-accounts.md#identity-pw-writeback) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-192">If needed, [Step 4](identity-add-user-accounts.md#identity-pw-writeback) can help you with this option.</span></span>
+
+>[!Note]
+><span data-ttu-id="bcdb1-193">需要密码写回才可充分利用 Azure AD Identity Protection 功能，例如，当 Azure AD 检测到高风险的帐户泄露时要求用户更改其本地密码。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-193">Password writeback is required to fully utilize Azure AD Identity Protection features, such as requiring users to change their on-premises passwords when Azure AD has detected a high risk of account compromise.</span></span>
+>
+
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-194">测试操作</span><span class="sxs-lookup"><span data-stu-id="bcdb1-194">How to test</span></span>
+
+<span data-ttu-id="bcdb1-195">通过更改 Office 365 中的密码可以使测试密码写回。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-195">You test password writeback by changing your password in Office 365.</span></span> <span data-ttu-id="bcdb1-196">你应该能够使用你的帐户和新密码访问本地 AD DS 资源。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-196">You should be able to use your account and new password to access on-premises AD DS resources.</span></span>
+
+1. <span data-ttu-id="bcdb1-197">在本地 AD DS 中创建测试用户帐户，允许进行目录同步，然后在 Microsoft 365 管理中心中授予 Microsoft 365 Enterprise 许可证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-197">Create a test user account in your on-premises AD DS, allow directory synchronization to occur, and then grant it an Office 365 license in the Microsoft 365 admin center.</span></span>
+2. <span data-ttu-id="bcdb1-198">从加入到本地 AD DS 域的远程计算机，使用测试用户帐户的凭据登录到计算机和 Office 门户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-198">From a remote computer that is joined to your on-premises AD DS domain, sign in to the computer and the Office portal using the credentials of the test user account.</span></span>
+3. <span data-ttu-id="bcdb1-199">选择“**设置”>“Office 365 设置”>“密码”>“更改密码**”。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-199">Select **Settings > Office 365 settings > Password > Change password**.</span></span>
+4. <span data-ttu-id="bcdb1-200">键入当前密码、键入新密码，然后确认。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-200">Type the current password, type a new password, and then confirm it.</span></span>
+5. <span data-ttu-id="bcdb1-201">注销 Office 门户和远程计算机，然后使用测试用户帐户及其新密码登录计算机。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-201">Sign out of the Office portal and the remote computer and then sign in to the computer using the test user account and its new password.</span></span> <span data-ttu-id="bcdb1-202">这可以证明你可以使用 Azure AD 租户更改本地 AD DS 用户帐户的密码。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-202">This proves that you were able to change the password of an on-premises AD DS user account using the Azure AD tenant.</span></span>
+
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-203">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-203">How to test</span></span>
+
+<span data-ttu-id="bcdb1-204">使用用户帐户名称及 Azure 多重身份验证登录到 Office 365 门户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-204">Sign in to the Office 365 portal with your user account name and Azure Multi-Factor Authentication.</span></span> <span data-ttu-id="bcdb1-205">应在登录页面上看到自定义的品牌元素。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-205">Sign in to the Office 365 portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.</span></span>
+
 
 <a name="crit-identity-self-service-groups"></a>
-## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a><span data-ttu-id="ce862-207">可选：为特定 Azure AD 安全和 Office 365 组启用了自助服务组管理</span><span class="sxs-lookup"><span data-stu-id="ce862-207">Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups</span></span>
+## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a><span data-ttu-id="bcdb1-206">可选：为特定 Azure AD 安全和 Office 365 组启用了自助服务组管理</span><span class="sxs-lookup"><span data-stu-id="bcdb1-206">Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups</span></span>
 
-<span data-ttu-id="ce862-208">已确定哪些组适用于自助服务管理，对所有者说明了组管理工作流和职责，并为这些组[在 Azure AD 中设置自助服务管理](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)。</span><span class="sxs-lookup"><span data-stu-id="ce862-208">You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.</span></span>
+<span data-ttu-id="bcdb1-207">已确定哪些组适用于自助服务管理，对所有者说明了组管理工作流和职责，并为这些组[在 Azure AD 中设置自助服务管理](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-207">You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.</span></span>
 
-<span data-ttu-id="ce862-209">如果忽略此选项，则所有 Azure AD 组管理任务必须由 IT 管理员执行。</span><span class="sxs-lookup"><span data-stu-id="ce862-209">If you skip this option, all Azure AD group management tasks must be done by IT administrators.</span></span>
+<span data-ttu-id="bcdb1-208">如果忽略此选项，则所有 Azure AD 组管理任务必须由 IT 管理员执行。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-208">If you skip this option, all Azure AD group management tasks must be done by IT administrators.</span></span>
 
-<span data-ttu-id="ce862-210">如果需要，可在[步骤 6](identity-self-service-group-management.md#identity-self-service-groups) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-210">If needed, [Step 6](identity-self-service-group-management.md#identity-self-service-groups) can help you with this option.</span></span>
+<span data-ttu-id="bcdb1-209">如果需要，可在[步骤 5](identity-use-group-management.md#identity-self-service-groups) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-209">If needed, [Step 5](identity-use-group-management.md#identity-self-service-groups) can help you with this option.</span></span>
 
-### <a name="how-to-test"></a><span data-ttu-id="ce862-211">测试操作</span><span class="sxs-lookup"><span data-stu-id="ce862-211">How to test</span></span>
-1.  <span data-ttu-id="ce862-212">在具有 Azure 门户的 Azure AD 中创建测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-212">Create a test user account in Azure AD with the Azure portal.</span></span>
-2.  <span data-ttu-id="ce862-213">使用测试用户帐户登录并创建测试 Azure AD 安全组。</span><span class="sxs-lookup"><span data-stu-id="ce862-213">Sign-in as with the test user account and create a test Azure AD security group.</span></span>
-3.  <span data-ttu-id="ce862-214">注销，然后使用 IT 管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="ce862-214">Sign out and then sign-in with your IT administrator account.</span></span>
-4.  <span data-ttu-id="ce862-215">针对测试用户帐户，配置测试安全组进行自助服务管理。</span><span class="sxs-lookup"><span data-stu-id="ce862-215">Configure the test security group for self-service management for the test user account.</span></span>
-5.  <span data-ttu-id="ce862-216">注销，然后使用测试用户帐户登录。</span><span class="sxs-lookup"><span data-stu-id="ce862-216">Sign out and then sign-in with your test user account.</span></span>
-6.  <span data-ttu-id="ce862-217">使用 Azure 门户将成员添加到测试安全组。</span><span class="sxs-lookup"><span data-stu-id="ce862-217">Use the Azure portal to add members to the test security group.</span></span>
-7.  <span data-ttu-id="ce862-218">删除测试安全组和测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-218">Delete the test security group and the test user account.</span></span>
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-210">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-210">How to test</span></span>
+1.  <span data-ttu-id="bcdb1-211">在具有 Azure 门户的 Azure AD 中创建测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-211">Create a test user account in Azure AD with the Azure portal.</span></span>
+2.  <span data-ttu-id="bcdb1-212">使用测试用户帐户登录并创建测试 Azure AD 安全组。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-212">Sign-in as with the test user account and create a test Azure AD security group.</span></span>
+3.  <span data-ttu-id="bcdb1-213">注销，然后使用 IT 管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-213">Sign out and then sign-in with your IT administrator account.</span></span>
+4.  <span data-ttu-id="bcdb1-214">针对测试用户帐户，配置测试安全组进行自助服务管理。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-214">Configure the test security group for self-service management for the test user account.</span></span>
+5.  <span data-ttu-id="bcdb1-215">注销，然后使用测试用户帐户登录。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-215">Sign out and then sign-in with your test user account.</span></span>
+6.  <span data-ttu-id="bcdb1-216">使用 Azure 门户将成员添加到测试安全组。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-216">Use the Azure portal to add members to the test security group.</span></span>
+7.  <span data-ttu-id="bcdb1-217">删除测试安全组和测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-217">Delete the test security group and the test user account.</span></span>
 
 <a name="crit-identity-dyn-groups"></a>
-## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a><span data-ttu-id="ce862-219">可选：动态组成员身份设置根据用户帐户属性自动将用户帐户添加到组</span><span class="sxs-lookup"><span data-stu-id="ce862-219">Optional: Dynamic group membership settings automatically add user accounts to groups based on user account attributes</span></span>
+## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a><span data-ttu-id="bcdb1-218">可选：动态组成员身份设置根据用户帐户属性自动将用户帐户添加到组</span><span class="sxs-lookup"><span data-stu-id="bcdb1-218">Optional: Dynamic group membership settings automatically add user accounts to groups based on user account attributes</span></span>
 
-<span data-ttu-id="ce862-220">你已确定 Azure AD 动态组集并使用 [Azure Active Directory 中基于属性的动态组成员身份](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)中的说明来创建组和规则（用于确定用户帐户属性集和组成员身份值）。</span><span class="sxs-lookup"><span data-stu-id="ce862-220">You've determined the set of Azure AD dynamic groups and used the instructions in [Attribute-based dynamic group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) to create the groups and the rules that determine the set of user account attributes and values for group membership.</span></span>
+<span data-ttu-id="bcdb1-219">你已确定 Azure AD 动态组集并使用 [Azure Active Directory 中基于属性的动态组成员身份](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)中的说明来创建组和规则（用于确定用户帐户属性集和组成员身份值）。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-219">You've determined the set of Azure AD dynamic groups and used the instructions in [Attribute-based dynamic group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) to create the groups and the rules that determine the set of user account attributes and values for group membership.</span></span>
 
-<span data-ttu-id="ce862-p109">如果忽略此选项，则随着添加新帐户或更改用户帐户属性，需要手动设置组成员身份。例如，如果某人从销售部门移动到会计部门，则必须：</span><span class="sxs-lookup"><span data-stu-id="ce862-p109">If you skip this option, group membership must be done manually as new accounts are added or as user account attributes change over time. For example, if someone moves from the Sales department to the Accounting department, you must:</span></span>
+<span data-ttu-id="bcdb1-p110">如果忽略此选项，则随着添加新帐户或更改用户帐户属性，需要手动设置组成员身份。例如，如果某人从销售部门移动到会计部门，则必须：</span><span class="sxs-lookup"><span data-stu-id="bcdb1-p110">If you skip this option, group membership must be done manually as new accounts are added or as user account attributes change over time. For example, if someone moves from the Sales department to the Accounting department, you must:</span></span>
 
-- <span data-ttu-id="ce862-223">更新该用户帐户的部门属性值。</span><span class="sxs-lookup"><span data-stu-id="ce862-223">Update the value of the Department attribute for that user account.</span></span>
-- <span data-ttu-id="ce862-224">从销售组中手动删除此人。</span><span class="sxs-lookup"><span data-stu-id="ce862-224">Manually remove them from the Sales group.</span></span>
-- <span data-ttu-id="ce862-225">手动将其添加到会计组。</span><span class="sxs-lookup"><span data-stu-id="ce862-225">Manually add them to the Accounting group.</span></span>
+- <span data-ttu-id="bcdb1-222">更新该用户帐户的部门属性值。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-222">Update the value of the Department attribute for that user account.</span></span>
+- <span data-ttu-id="bcdb1-223">从销售组中手动删除此人。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-223">Manually remove them from the Sales group.</span></span>
+- <span data-ttu-id="bcdb1-224">手动将其添加到会计组。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-224">Manually add them to the Accounting group.</span></span>
 
-<span data-ttu-id="ce862-226">如果销售和会计组是动态的，只需更改该用户帐户的部门值即可。</span><span class="sxs-lookup"><span data-stu-id="ce862-226">If the Sales and Accounting groups were dynamic, you would only have to change the user account’s Department value.</span></span>
+<span data-ttu-id="bcdb1-225">如果销售和会计组是动态的，只需更改该用户帐户的部门值即可。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-225">If the Sales and Accounting groups were dynamic, you would only have to change the user account’s Department value.</span></span>
 
-<span data-ttu-id="ce862-227">如果需要，可在[步骤 6](identity-self-service-group-management.md#identity-dyn-groups) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-227">If needed, [Step 6](identity-self-service-group-management.md#identity-dyn-groups) can help you with this option.</span></span>
+<span data-ttu-id="bcdb1-226">如果需要，可在[步骤 5](identity-use-group-management.md#identity-dyn-groups) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-226">If needed, [Step 5](identity-use-group-management.md#identity-dyn-groups) can help you with this option.</span></span>
 
-### <a name="how-to-test"></a><span data-ttu-id="ce862-228">测试操作</span><span class="sxs-lookup"><span data-stu-id="ce862-228">How to test</span></span>
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-227">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-227">How to test</span></span>
 
-1. <span data-ttu-id="ce862-229">在具有 Azure 门户的 Azure AD 中创建测试动态组，并对名为“test1”的部门配置规则。</span><span class="sxs-lookup"><span data-stu-id="ce862-229">Create a test dynamic group in Azure AD with the Azure portal and configure a rule for the Department equals “test1”.</span></span>
-2. <span data-ttu-id="ce862-230">在 Azure AD 中创建测试用户帐户并将部门属性设为“test1”。</span><span class="sxs-lookup"><span data-stu-id="ce862-230">Create a test user account in Azure AD and set the Department property to “test1”.</span></span>
-3. <span data-ttu-id="ce862-231">检查用户帐户属性，以确保其已成为测试动态组的成员。</span><span class="sxs-lookup"><span data-stu-id="ce862-231">Examine the properties of the user account to ensure that it was made a member of the test dynamic group.</span></span>
-4. <span data-ttu-id="ce862-232">将测试用户帐户的部门属性值更改为“test2”。</span><span class="sxs-lookup"><span data-stu-id="ce862-232">Change the value of the Department property for the test user account to “test2”.</span></span>
-5. <span data-ttu-id="ce862-233">检查用户帐户属性，以确保其不再是测试动态组的成员。</span><span class="sxs-lookup"><span data-stu-id="ce862-233">Examine the properties of the user account to ensure that it is no longer a member of the test dynamic group.</span></span>
-6. <span data-ttu-id="ce862-234">删除测试动态组和测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-234">Delete the test dynamic group and the test user account.</span></span>
+1. <span data-ttu-id="bcdb1-228">在具有 Azure 门户的 Azure AD 中创建测试动态组，并对名为“test1”的部门配置规则。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-228">Create a test dynamic group in Azure AD with the Azure portal and configure a rule for the Department equals “test1”.</span></span>
+2. <span data-ttu-id="bcdb1-229">在 Azure AD 中创建测试用户帐户并将部门属性设为“test1”。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-229">Create a test user account in Azure AD and set the Department property to “test1”.</span></span>
+3. <span data-ttu-id="bcdb1-230">检查用户帐户属性，以确保其已成为测试动态组的成员。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-230">Examine the properties of the user account to ensure that it was made a member of the test dynamic group.</span></span>
+4. <span data-ttu-id="bcdb1-231">将测试用户帐户的部门属性值更改为“test2”。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-231">Change the value of the Department property for the test user account to “test2”.</span></span>
+5. <span data-ttu-id="bcdb1-232">检查用户帐户属性，以确保其不再是测试动态组的成员。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-232">Examine the properties of the user account to ensure that it is no longer a member of the test dynamic group.</span></span>
+6. <span data-ttu-id="bcdb1-233">删除测试动态组和测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-233">Delete the test dynamic group and the test user account.</span></span>
 
 <a name="crit-identity-group-license"></a>
-## <a name="optional-group-based-licensing-to-automatically-assign-and-remove-licenses-to-user-accounts-based-on-group-membership"></a><span data-ttu-id="ce862-235">可选：基于组的许可能够根据组成员身份自动分配和删除用户帐户的许可证</span><span class="sxs-lookup"><span data-stu-id="ce862-235">Optional: Group-based licensing to automatically assign and remove licenses to user accounts based on group membership</span></span>
+## <a name="optional-group-based-licensing-to-automatically-assign-and-remove-licenses-to-user-accounts-based-on-group-membership"></a><span data-ttu-id="bcdb1-234">可选：基于组的许可能够根据组成员身份自动分配和删除用户帐户的许可证</span><span class="sxs-lookup"><span data-stu-id="bcdb1-234">Optional: Group-based licensing to automatically assign and remove licenses to user accounts based on group membership</span></span>
 
-<span data-ttu-id="ce862-236">为相应 Azure AD 安全组[启用基于组的许可](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)，以便自动分配或删除适用于 Microsoft 365 Enterprise 的许可证。</span><span class="sxs-lookup"><span data-stu-id="ce862-236">You [enabled group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) for the appropriate Azure AD security groups so that licenses for both Office 365 and EMS are automatically assigned or removed.</span></span>
+<span data-ttu-id="bcdb1-235">为相应 Azure AD 安全组[启用基于组的许可](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)，以便自动分配或取消分配适用于 Microsoft 365 Enterprise 的许可证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-235">You [enabled group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) for the appropriate Azure AD security groups so that licenses for both Office 365 and EMS are automatically assigned or removed.</span></span>
 
-<span data-ttu-id="ce862-237">如果忽略此选项，则必须手动执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="ce862-237">If you skip this option, you must manually:</span></span>
+<span data-ttu-id="bcdb1-236">如果忽略此选项，则必须手动执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="bcdb1-236">If you skip this option, you must manually:</span></span>
 
-- <span data-ttu-id="ce862-238">向希望访问的新用户分配许可证。</span><span class="sxs-lookup"><span data-stu-id="ce862-238">Assign licenses to new users whom you intend to have access to Office 365 and EMS.</span></span>
-- <span data-ttu-id="ce862-239">取消分配给不再隶属于贵公司或不再有权访问的用户许可证。</span><span class="sxs-lookup"><span data-stu-id="ce862-239">Remove licenses from users who are no longer with your organization or do not have access to Office 365 and EMS.</span></span>
+- <span data-ttu-id="bcdb1-237">向希望访问的新用户分配许可证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-237">Assign licenses to new users whom you intend to have access to Office 365 and EMS.</span></span>
+- <span data-ttu-id="bcdb1-238">取消分配给不再隶属于贵公司或不再有权访问的用户许可证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-238">Remove licenses from users who are no longer with your organization or do not have access to Office 365 and EMS.</span></span>
 
-<span data-ttu-id="ce862-240">如果需要，可在[步骤 6](identity-self-service-group-management.md#identity-group-license) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-240">If needed, [Step 6](identity-self-service-group-management.md#identity-group-license) can help you with this option.</span></span>
+<span data-ttu-id="bcdb1-239">如果需要，可在[步骤 5](identity-use-group-management.md#identity-group-license) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-239">If needed, [Step 5](identity-use-group-management.md#identity-group-license) can help you with this option.</span></span>
 
-### <a name="how-to-test"></a><span data-ttu-id="ce862-241">测试操作</span><span class="sxs-lookup"><span data-stu-id="ce862-241">How to test</span></span>
+### <a name="how-to-test"></a><span data-ttu-id="bcdb1-240">如何测试</span><span class="sxs-lookup"><span data-stu-id="bcdb1-240">How to test</span></span>
 
-1. <span data-ttu-id="ce862-242">在具有 Azure 门户的 Azure AD 中创建测试安全组，并配置基于组的许可来分配 Microsoft 265 Enterprise 许可证。</span><span class="sxs-lookup"><span data-stu-id="ce862-242">Create a test security group in Azure AD with the Azure portal and configure group-based licensing to assign Office 365 and EMS licenses.</span></span>
-2. <span data-ttu-id="ce862-243">在 Azure AD 中创建测试用户帐户并将其添加到测试安全组。</span><span class="sxs-lookup"><span data-stu-id="ce862-243">Create a test user account in Azure AD and add it to the test security group.</span></span>
-3. <span data-ttu-id="ce862-244">在 Microsoft 365 管理中心中检查用户帐户的属性，确保其分配了 Microsoft 265 Enterprise 许可证。</span><span class="sxs-lookup"><span data-stu-id="ce862-244">Examine the properties of the user account in the Microsoft 365 admin center to ensure that it was assigned the Office 365 and EMS licenses.</span></span>
-4. <span data-ttu-id="ce862-245">从测试安全组删除测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-245">Remove the test user account from the test security group.</span></span>
-5. <span data-ttu-id="ce862-246">检查用户帐户的属性，确保它不再分配有 Microsoft 265 Enterprise 许可证。</span><span class="sxs-lookup"><span data-stu-id="ce862-246">Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.</span></span>
-6. <span data-ttu-id="ce862-247">删除测试安全组和测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="ce862-247">Delete the test security group and the test user account.</span></span>
+1. <span data-ttu-id="bcdb1-241">在具有 Azure 门户的 Azure AD 中创建测试安全组，并配置基于组的许可来分配 Microsoft 365 Enterprise 许可证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-241">Create a test security group in Azure AD with the Azure portal and configure group-based licensing to assign Office 365 and EMS licenses.</span></span>
+2. <span data-ttu-id="bcdb1-242">在 Azure AD 中创建测试用户帐户并将其添加到测试安全组。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-242">Create a test user account in Azure AD and add it to the test security group.</span></span>
+3. <span data-ttu-id="bcdb1-243">在 Microsoft 365 管理中心中检查用户帐户的属性，确保其分配了 Microsoft 365 Enterprise 许可证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-243">Examine the properties of the user account in the Microsoft 365 admin center to ensure that it was assigned the Office 365 and EMS licenses.</span></span>
+4. <span data-ttu-id="bcdb1-244">从测试安全组删除测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-244">Remove the test user account from the test security group.</span></span>
+5. <span data-ttu-id="bcdb1-245">检查用户帐户的属性，确保它不再分配有 Microsoft 365 Enterprise 许可证。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-245">Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.</span></span>
+6. <span data-ttu-id="bcdb1-246">删除测试安全组和测试用户帐户。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-246">Delete the test security group and the test user account.</span></span>
+
 
 <a name="crit-identity-access-reviews"></a>
-## <a name="optional-access-reviews-configured-and-being-used-to-monitor-access"></a><span data-ttu-id="ce862-248">可选：访问审核已配置并正用于监视访问</span><span class="sxs-lookup"><span data-stu-id="ce862-248">Optional: Access reviews configured and being used to monitor access</span></span>
+## <a name="optional-access-reviews-configured-and-being-used-to-monitor-access"></a><span data-ttu-id="bcdb1-247">可选：访问审核已配置并正用于监视访问</span><span class="sxs-lookup"><span data-stu-id="bcdb1-247">Optional: Access reviews configured and being used to monitor access</span></span>
 
-<span data-ttu-id="ce862-249">你已使用这些文章来配置不同类型的访问权限查看，以监视组成员身份、访问企业应用程序和角色分配：</span><span class="sxs-lookup"><span data-stu-id="ce862-249">You have used these articles to configure different types of access reviews to monitor group memberships, access to enterprise applications, and role assignments:</span></span>
+<span data-ttu-id="bcdb1-248">你已使用这些文章来配置不同类型的访问权限查看，以监视组成员身份、访问企业应用程序和角色分配：</span><span class="sxs-lookup"><span data-stu-id="bcdb1-248">You have used these articles to configure different types of access reviews to monitor group memberships, access to enterprise applications, and role assignments:</span></span>
 
-- [<span data-ttu-id="ce862-250">组和应用</span><span class="sxs-lookup"><span data-stu-id="ce862-250">Groups and apps</span></span>](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
-- [<span data-ttu-id="ce862-251">Azure AD 角色</span><span class="sxs-lookup"><span data-stu-id="ce862-251">Azure AD roles</span></span>](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
-- [<span data-ttu-id="ce862-252">Azure 资源角色</span><span class="sxs-lookup"><span data-stu-id="ce862-252">Azure resource roles</span></span>](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [<span data-ttu-id="bcdb1-249">组和应用</span><span class="sxs-lookup"><span data-stu-id="bcdb1-249">Groups and apps</span></span>](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+- [<span data-ttu-id="bcdb1-250">Azure AD 角色</span><span class="sxs-lookup"><span data-stu-id="bcdb1-250">Azure AD roles</span></span>](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
+- [<span data-ttu-id="bcdb1-251">Azure 资源角色</span><span class="sxs-lookup"><span data-stu-id="bcdb1-251">Azure resource roles</span></span>](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
-<span data-ttu-id="ce862-253">如果需要，可在[步骤 7](identity-governance.md#identity-access-reviews) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="ce862-253">If needed, [Step 5](identity-governance.md#identity-access-reviews) can help you with this option.</span></span>
+<span data-ttu-id="bcdb1-252">如果需要，可在[步骤 6](identity-configure-identity-governance.md#identity-access-reviews) 中设置此选项。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-252">If needed, [Step 6](identity-configure-identity-governance.md#identity-access-reviews) can help you with this option.</span></span>
 
-## <a name="results-and-next-steps"></a><span data-ttu-id="ce862-254">结果和后续步骤</span><span class="sxs-lookup"><span data-stu-id="ce862-254">Results and next steps</span></span>
 
-<span data-ttu-id="ce862-255">Microsoft 365 中的标识基础结构使用强身份验证、受保护的管理员帐户以及简化的用户访问和管理。</span><span class="sxs-lookup"><span data-stu-id="ce862-255">Your identity infrastructure in the Microsoft 365 cloud uses strong authentication, protected administrator accounts, and simplified user access and management.</span></span>
+## <a name="results-and-next-steps"></a><span data-ttu-id="bcdb1-253">结果和后续步骤</span><span class="sxs-lookup"><span data-stu-id="bcdb1-253">Results and next steps</span></span>
+
+<span data-ttu-id="bcdb1-254">Microsoft 365 中的标识基础结构使用强身份验证、受保护的管理员帐户以及简化的用户访问和管理。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-254">Your identity infrastructure in the Microsoft 365 cloud uses strong authentication, protected administrator accounts, and simplified user access and management.</span></span>
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| <span data-ttu-id="ce862-256">如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是 [Windows 10 企业版](windows10-infrastructure.md)。</span><span class="sxs-lookup"><span data-stu-id="ce862-256">If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Windows 10 Enterprise](windows10-infrastructure.md).</span></span> |
+|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| <span data-ttu-id="bcdb1-255">如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是 [Windows 10 企业版](windows10-infrastructure.md)。</span><span class="sxs-lookup"><span data-stu-id="bcdb1-255">If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Windows 10 Enterprise](windows10-infrastructure.md).</span></span> |
 
