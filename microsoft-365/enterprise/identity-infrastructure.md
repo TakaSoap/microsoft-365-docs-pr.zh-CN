@@ -3,7 +3,7 @@ title: 阶段 2：身份
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 09/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 部署 Microsoft 365 企业版的身份基础结构的步骤。
-ms.openlocfilehash: 07f95a249912826b80e0654cac4063b3d5763267
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 2d9ffcc5122b5a5dfc94fb007167655e879d6799
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981944"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071691"
 ---
 # <a name="phase-2-identity"></a>阶段 2：身份
 
@@ -27,6 +27,8 @@ ms.locfileid: "36981944"
 在 Microsoft 365 企业版中，精心计划和执行的身份基础结构将有助于实现更强的安全性，并仅允许通过身份验证的用户和设备访问生产力工作负载和数据。
 
 观看此视频，以获取 Microsoft 365 企业版身份模型和身份验证的概述。
+
+<p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
@@ -48,13 +50,12 @@ ms.locfileid: "36981944"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [计划用户和组](identity-plan-users-groups.md) |
-|![](./media/stepnumbers/Step2.png)| [保护你的特权标识](identity-designate-protect-admin-accounts.md) |
-|![](./media/stepnumbers/Step3.png)| [配置混合标识](identity-azure-ad-connect.md) |
-|![](./media/stepnumbers/Step4.png)| [配置安全的用户身份验证](identity-multi-factor-authentication.md) |
-|![](./media/stepnumbers/Step5.png)| [简化用户访问权限](identity-password-reset.md) |
-|![](./media/stepnumbers/Step6.png)| [使用组实现更轻松地管理](identity-self-service-group-management.md) |
-|![](./media/stepnumbers/Step7.png)| [配置标识治理](identity-governance.md) |
+|![](./media/stepnumbers/Step1.png)| [创建和保护全局管理员帐户](identity-create-protect-global-admins.md) |
+|![](./media/stepnumbers/Step2.png)| [保护密码安全](identity-secure-your-passwords.md) |
+|![](./media/stepnumbers/Step3.png)| [保护和管理用户登录](identity-secure-user-sign-ins.md) |
+|![](./media/stepnumbers/Step4.png)| [添加用户帐户](identity-add-user-accounts.md) |
+|![](./media/stepnumbers/Step5.png)| [使用组进行管理](identity-use-group-management.md) |
+|![](./media/stepnumbers/Step6.png)| [配置标识治理](identity-configure-identity-governance.md) |
 
 在完成这些步骤后，请转到这一阶段的[退出条件](identity-exit-criteria.md)，以确保满足 Microsoft 365 企业版标识的必备条件和可选条件。
 
@@ -80,4 +81,4 @@ Microsoft 提供了一组有关[标识和设备访问](microsoft-365-policies-co
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [计划用户和组](identity-plan-users-groups.md) |
+|![](./media/stepnumbers/Step1.png)| [创建和保护全局管理员帐户](identity-create-protect-global-admins.md) |

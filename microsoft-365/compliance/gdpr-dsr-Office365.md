@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 30d6e1566fda4dbc84800bbd4359a689f858f9e4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: bacf6b55bc4c92987511bdf1ab4ac5b120f11836
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982653"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071491"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Office 365 数据主体请求
 
@@ -1767,7 +1767,7 @@ IT 管理员可使用安全与合规中心的审核日志搜索工具识别用�
 - 移动文件
 - 上传或下载文件
 
-可以针对特定活动、活动类型、特定用户执行的活动和其他搜索条件搜索审核日志。 除了 SharePoint Online 和 OneDrive for Business 活动外，还可搜索 Flow、Power BI 和 Microsoft Teams 中的活动。 审核记录可保留 90 天。 因此，无法立即搜索超过 90 天前发生的用户活动。 有关审核活动的完整列表以及搜索审核日志的方法，请参阅[在 Office 365 安全与合规中心搜索审核日志](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)。
+可以针对特定活动、活动类型、特定用户执行的活动和其他搜索条件搜索审核日志。 除了 SharePoint Online 和 OneDrive for Business 活动外，还可搜索 Flow、Power BI 和 Microsoft Teams 中的活动。 审核记录可保留 90 天。 因此，无法立即搜索超过 90 天前发生的用户活动。 有关审核活动的完整列表以及搜索审核日志的方法，请参阅[在 Office 365 安全与合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
 
 > [!TIP]
 > 要避开上文讨论的 90 天的限制，并保留组织审核记录的运行历史记录，可以定期（例如每 30 天）导出所有活动，从而获得组织审核记录的连续记录。

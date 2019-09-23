@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成适用于非企业组织的 Microsoft 365 企业版基础结构的简化部署阶段。
-ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
-ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
+ms.openlocfilehash: 37bbf04eafeb3adc63d9dd01d052376f98856df4
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35624630"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071731"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>适用于非企业组织的 Microsoft 365 企业版基础结构
 
@@ -63,9 +63,9 @@ Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://ww
 
 ### <a name="administrator-accounts"></a>管理员帐户
 
-通过要求非常强的密码和多因素身份验证 (MFA) 来保护你的全局管理员用户帐户。 有关详细信息，请参阅[保护全局管理员帐户](identity-designate-protect-admin-accounts.md#protect-global-administrator-accounts)。
+通过要求强密码和多因素身份验证 (MFA) 来保护你的全局管理员用户帐户。 有关详细信息，请参阅[保护全局管理员帐户](identity-create-protect-global-admins.md#protect-global-administrator-accounts)。
 
-如果贵组织需要高安全性并且你拥有 Microsoft 365 企业版 E5，请使用 Azure AD Privileged Identity Management 来启用实时管理员访问。 有关详细信息，请参阅[设置按需全局管理员](identity-designate-protect-admin-accounts.md#set-up-on-demand-global-administrators)。
+如果贵组织需要高安全性并且你拥有 Microsoft 365 企业版 E5，请使用 Azure AD Privileged Identity Management 来启用实时管理员访问。 有关详细信息，请参阅[设置按需全局管理员](identity-create-protect-global-admins.md#identity-pim)。
 
 ### <a name="recommendations-for-groups"></a>有关组的建议
 
@@ -82,7 +82,7 @@ Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://ww
 
 ### <a name="hybrid-identity"></a>混合标识
 
-如果你有本地 AD DS 域，则需要将该域的一组用户帐户、组和联系人与 Microsoft 365 企业版订阅的 Azure AD 租户同步。 对于非企业组织，请在使用密码哈希同步 (PHS) 功能的服务器上配置 Azure AD Connect。 有关详细信息，请参阅[同步标识](identity-azure-ad-connect.md)。
+如果你有本地 AD DS 域，则需要将该域的一组用户帐户、组和联系人与 Microsoft 365 企业版订阅的 Azure AD 租户同步。 对于非企业组织，请在使用密码哈希同步 (PHS) 功能的服务器上配置 Azure AD Connect。 有关详细信息，请参阅[同步标识](identity-add-user-accounts.md)。
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>通过条件访问策略实现更安全的用户访问
 
@@ -135,16 +135,16 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 | 功能 | 用途 |
 |:------|:-----|
-| 自助服务组管理 | 允许组所有者而不是 IT 人员管理 Azure AD 组。 有关详细信息，请参阅[自助服务组管理](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups)。 |
-| 动态组成员身份 | 根据用户帐户属性（如“部门”或“国家/地区”）配置在 Azure AD 组中自动添加或删除用户帐户。 关详细信息，请参阅[动态组成员身份](identity-self-service-group-management.md#set-up-dynamic-group-membership)。 |
-| 基于组的许可 | 使用组成员身份自动为用户帐户分配或取消分配许可证。 有关详细信息，请参阅[基于组的许可](identity-self-service-group-management.md#set-up-automatic-licensing)。 |
+| 自助服务组管理 | 允许组所有者而不是 IT 人员管理 Azure AD 组。 有关详细信息，请参阅[自助服务组管理](identity-use-group-management.md#allow-users-to-create-and-manage-their-own-groups)。 |
+| 动态组成员身份 | 根据用户帐户属性（如“部门”或“国家/地区”）配置在 Azure AD 组中自动添加或删除用户帐户。 关详细信息，请参阅[动态组成员身份](identity-use-group-management.md#set-up-dynamic-group-membership)。 |
+| 基于组的许可 | 使用组成员身份自动为用户帐户分配或取消分配许可证。 有关详细信息，请参阅[基于组的许可](identity-use-group-management.md#set-up-automatic-licensing)。 |
 |  |  |
 
 如果你使用的是基于组的许可，请创建一个名为“已许可”的组，以包含分配了 Microsoft 365 企业版许可证的用户帐户名。
 
 ### <a name="monitor-user-access"></a>监视用户访问
 
-如果你具有 Microsoft 365 企业版 E5，则可以使用 Azure AD Identity Protection 来监视和分析用户登录是否存在凭据泄露。 有关详细信息，请参阅[防范凭据泄露](identity-multi-factor-authentication.md#protect-against-credential-compromise)。
+如果你具有 Microsoft 365 企业版 E5，则可以使用 Azure AD Identity Protection 来监视和分析用户登录是否存在凭据泄露。 有关详细信息，请参阅[防范凭据泄露](identity-secure-user-sign-ins.md#protect-against-credential-compromise)。
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
