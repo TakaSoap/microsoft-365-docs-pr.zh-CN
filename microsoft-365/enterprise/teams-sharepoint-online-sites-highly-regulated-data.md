@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全的 SharePoint Online 团队网站或 Microsoft Teams 团队以存储最有价值和最敏感的数字资产。
-ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 04984be44ddb2cc1aabc2032970f92e71899b268
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982753"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047327"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站
 
@@ -145,7 +145,7 @@ SharePoint Online 团队网站的锁定版本称为独立网站。与私有团�
 - 为网站中使用的每个 SharePoint 权限级别创建并填充访问组。
 - 创建并配置独立的团队网站。
 
-### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>步骤 2：针对 Office 365 保留标签 DLP 策略配置网站
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label"></a>步骤 2：针对 Office 365 保留标签配置网站
 
 按照[使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的说明执行以下操作：
 

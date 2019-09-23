@@ -60,10 +60,24 @@
 
 必要时请执行[步骤 5](../infoprotect-data-loss-prevention.md)，这样做有助于满足此要求。 
 
-
 <a name="crit-infoprotect-step6"></a>
+### <a name="optional-email-encryption-is-configured"></a>必需：为你的组织定义安全和信息保护级别
+
+已根据组织的需要配置以下电子邮件加密：
+
+|||
+|:-------|:-----|
+| **加密方法** | **对于已发送的电子邮件** |
+| [Office 365 邮件加密 (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | 在组织外部加密 |
+| [信息权限管理 (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | 具有加密和权限 |
+| [安全/多用途 Internet 邮件扩展 (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | 具有加密和数字签名（使用公钥加密） |
+|||
+
+必要时请执行[步骤 6](../infoprotect-email-encryption.md)，这样做有助于满足此要求。
+
+<a name="crit-infoprotect-step7"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>可选：配置 Office 365 Privileged Access Management
 
 你已使用[在 Office 365 中配置特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主题中的信息来启用特权访问并在组织中创建一个或多个特权访问策略。 你已配置这些策略，且实时访问已启用，可访问敏感数据或关键配置设置。
 
-必要时请执行[步骤 6](../infoprotect-configure-privileged-access-management.md)，这样做有助于满足此要求。 
+如果需要，请执行[步骤 7](../infoprotect-configure-privileged-access-management.md)，这样做有助于满足此要求。 

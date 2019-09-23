@@ -3,7 +3,7 @@ title: 第 6 阶段：信息保护
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版信息保护基础结构。
-ms.openlocfilehash: a00f61cbf2f8d00929a67dae6d401fd99014ec26
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 3174790d1ee6c9ed05605dd1c3c75405e3eac42b
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073682"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047305"
 ---
 # <a name="phase-6-information-protection"></a>第 6 阶段：信息保护
 
@@ -43,14 +43,15 @@ ms.locfileid: "34073682"
 |![](./media/stepnumbers/Step3.png)|[为 Microsoft 365 配置提升的安全性](infoprotect-configure-increased-security-office-365.md)|
 |![](./media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
 |![](./media/stepnumbers/Step5.png)|[配置 Office 365 数据丢失防护](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
-
+|![](./media/stepnumbers/Step6.png)|[配置电子邮件加密](infoprotect-email-encryption.md)|
+|![](./media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
+|||
 
 在完成这些步骤后，请转到这一阶段的[退出条件](infoprotect-exit-criteria.md)，以确保满足 Microsoft 365 企业版的必备条件和可选条件。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-了解 Microsoft 的 IT 专家如何使用 [Azure 信息保护和保护数据](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9)。
+了解 Microsoft 的 IT 专家如何使用 [Azure 信息保护和保护数据](https://www.microsoft.com/zh-CN/itshowcase/deploying-and-managing-microsoft-365#primaryR9)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 

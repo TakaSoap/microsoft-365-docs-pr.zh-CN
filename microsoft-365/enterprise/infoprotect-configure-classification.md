@@ -3,7 +3,7 @@ title: 第 2 步：配置环境分类
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置对组织中的数据进行分类的各种方法。
-ms.openlocfilehash: 483549e7eaa7f6b77b775cf35bda7b0f42834ad2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072252"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047295"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>第 2 步：配置环境分类
 
@@ -63,9 +63,8 @@ Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）
 为特定类型的文档或含有特定内容的文档提供保护和实施安全措施的一部分就是将其贴上标签，以便应用其他安全性。 借助 Microsoft 365 中的敏感度标签，你可以：
 
 - 执行保护设置，例如加密、权限或添加水印。
-- 使用 Microsoft Intune 中的终结点保护功能，防止运行 Windows 的设备上的敏感内容流出你的组织。 
 - 使用 Windows 信息保护 (WIP) 终结点保护阻止此类内容被复制到第三方应用（如 Twitter 或 Gmail），或者被复制到可移除存储设备（如 U 盘）。
-- 使用 Microsoft Cloud App Security 保护第三方应用和服务中的内容。 
+- 使用 Microsoft Cloud App Security (CAS) 保护第三方应用和服务中的内容。 
 - 对内容进行分类，无需使用任何保护设置。
 
 如果使用敏感度标签，则应为每个安全和信息保护级别配置标签。 例如，为以下对象创建三个敏感度标签：
@@ -73,6 +72,8 @@ Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）
 - 基线
 - 敏感
 - 高度管控
+
+如果你在 SharePoint Online 网站中存储包含高度管控数据的文件，并且希望在文件离开网站时，这些文件具有与网站相同的权限，则需要创建一个额外的敏感标签，其权限与该网站相同。
 
 有关详细信息，请参阅此[敏感度标签概述](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels)。
 
