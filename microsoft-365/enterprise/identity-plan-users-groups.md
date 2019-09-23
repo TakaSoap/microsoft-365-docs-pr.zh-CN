@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 计划为组织工作的一组用户和组。
-ms.openlocfilehash: 05b854c182b6f624cf143ed93920c344391ee416
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ac7f5e56bae882e01c31cacee856f73b0ead772f
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981803"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071631"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>步骤 1：计划用户和组
 
@@ -78,8 +78,6 @@ ms.locfileid: "36981803"
 
 - Azure AD 中的用户帐户列表，对应于组织中的员工，以及为组织工作或与组织协作的供应商、承包商和外部合作伙伴。
 - Azure AD 中的组集合及其成员身份，反映用户帐户和其他组的逻辑集合，用于自动许可预配 Microsoft 云服务的安全设置。
-
-作为临时检查点，请查看对应于此步骤的[退出条件](identity-exit-criteria.md#crit-identity-user-groups)。
 
 创建 Azure AD 用户和组后，便可以开始分配许可证和使用 OneDrive for Business 或 Exchange Online 等生产力工作负载。
 
