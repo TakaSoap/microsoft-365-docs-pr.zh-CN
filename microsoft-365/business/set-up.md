@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: 1efb7379930f639cf10875cf5aa6731001bb41c8
-ms.sourcegitcommit: 2e5ae52bb641ee1f72c077260b5d0f35622935fe
+ms.openlocfilehash: dbd2e740c85f52d3f43e6cd3d6ce45c478a9b1a9
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37005190"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121310"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>在安装向导中设置 Microsoft 365 商业版
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>添加你的域、用户并设置策略
 
-![指向的标题https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
+[!["标签"，告知 "管理中心" 正在更改，您可以在 aka.ms/aboutM365preview 中找到更多详细信息。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 在购买 Microsoft 365 商业版时，您可以选择使用自己的域，也可以在[注册](sign-up.md)过程中购买一个域。
 

@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为你的企业设置新的 Windows 10 设备。
-ms.openlocfilehash: 9a70978156fb26ac3aad08f1758b7ee125067d38
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ee4b4a9b06c08b8f9456822b680542665c27baf3
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072142"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121190"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
-您可以使用 Windows AutoPilot 为你的企业设置**新**的 Windows 10 设备, 以便在你将其提供给员工时随时准备就绪以供生产使用。
+您可以使用 Windows AutoPilot 为你的企业设置**新**的 Windows 10 设备，以便在你将其提供给员工时随时准备就绪以供生产使用。
   
 ## <a name="device-requirements"></a>设备要求
 
@@ -41,17 +41,17 @@ ms.locfileid: "34072142"
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用设置指南创建设备和配置文件
 
-![指向的标题https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
+[!["标签"，告知 "管理中心" 正在更改，您可以在 aka.ms/aboutM365preview 中找到更多详细信息。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 如果尚未创建设备组或配置文件，最好首先使用分步指南，但也可在不使用指南的情况下，[添加设备](create-and-edit-autopilot-devices.md)和[分配配置文件](create-and-edit-autopilot-profiles.md)。 
   
 1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。
 
-2. 在左侧导航中, 选择 "**设备** \> **AutoPilot**"。
+2. 在左侧导航中，选择 "**设备** \> **AutoPilot**"。
 
-    ![在管理中心选择 "设备", 然后选择 "AutoPilot"。](media/AutoPilot.png)
+    ![在管理中心选择 "设备"，然后选择 "AutoPilot"。](media/AutoPilot.png)
   
-2. 在 " **AutoPilot** " 页上, 单击或点击 "**启动指南**"。
+2. 在 " **AutoPilot** " 页上，单击或点击 "**启动指南**"。
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
