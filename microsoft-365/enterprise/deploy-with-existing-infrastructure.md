@@ -3,7 +3,7 @@ title: 使用现有基础结构部署 Microsoft 365 企业版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/04/2018
+ms.date: 09/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,21 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 如果你具有现有基础结构，请逐步完成 Microsoft 365 企业版部署的退出条件。
-ms.openlocfilehash: 8c9c1d1900e9fd1a025d3fd74cc9f358b612a4d1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073912"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148506"
 ---
 # <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>使用现有基础结构部署 Microsoft 365 企业版
 
-许多组织都有现有网络、身份和其他组件或 Microsoft 本地产品和基于云的服务。本文将逐步介绍部署 Microsoft 365 企业版的各个阶段，可让你快速确定如何调整或更改现有基础结构。
+许多组织都有现有网络、标识和其他组件，或者具有 Microsoft 本地产品和基于云的服务。本文将逐步介绍部署 Microsoft 365 企业版的各个阶段，可让你快速确定如何调整或更改现有基础结构。
 
 在退出每个阶段之前，必须检查其退出条件，这是一组必须满足的必需条件和要考虑的可选条件。每个阶段的退出条件可确保本地和云基础结构以及生成的端到端配置满足对 Microsoft 365 企业版部署的要求。
 
 > [!Note] 
-> FastTrack 的优势在于持续且可重复（可用作订阅的一部分），由 Microsoft 工程师提供以帮助你按自己的节奏移动到云。此外，FastTrack 还可使你根据需要访问合格的合作伙伴以获取其他服务。目前为止，40,000 多个客户已启用此功能，FastTrack 可帮助最大化 ROI、加快部署，提高整个组织的采用率。请参阅[适用于 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
+> FastTrack 的优势在于持续且可重复（可用作订阅的一部分免费提供），由 Microsoft 工程师提供以帮助你按自己的节奏移动到云。此外，FastTrack 还可使你根据需要访问合格的合作伙伴以获取其他服务。目前为止，40,000 多个客户已启用此功能，FastTrack 可帮助最大化 ROI、加快部署，提高整个组织的采用率。请参阅[适用于 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
 
 ## <a name="exit-criteria-for-networking-phase-1"></a>网络退出条件（阶段 1）
 
@@ -49,7 +49,7 @@ ms.locfileid: "34073912"
 
 ## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Office 365 专业增强版退出条件（阶段 4）
 
-符合为 Microsoft 365 企业版评估、计划部署和部署 Office 365 专业增强版基础结构的要求。
+满足评估、计划部署和部署 Office 365 专业增强版基础结构的要求。
 
 [!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
 

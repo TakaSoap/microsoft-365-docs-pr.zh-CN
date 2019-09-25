@@ -1,15 +1,5 @@
 另请参阅[先决条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)，获得有关标识基础结构的其他建议。
 
-<a name="crit-identity-user-groups"></a>
-### <a name="required-your-users-groups-and-group-memberships-have-been-created"></a>必需：已创建你的用户、组和组成员身份
-
-已创建用户帐户和组，以便：
-
-- 组织内的员工和供应商、承包商以及与组织协同工作的合作伙伴在 Azure Active Directory (Azure AD) 中具有相应的用户帐户。
-- Azure AD 组及其成员包含用于各种用途的用户帐户和其他组，如 Microsoft 云服务的安全设置预配、自动许可和其他用途。
-
-如果需要，可在[步骤 1](../identity-plan-users-groups.md) 中进行设置以满足此要求。
-
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必需：全局管理员帐户受到保护 
 
@@ -17,17 +7,17 @@
 
 如果忽略此要求，全局管理员帐户很容易受到攻击和入侵，攻击者可以获取系统范围内的数据访问权限并加以收集、销毁或勒索。
 
-如果需要，请执行[步骤 2](../identity-designate-protect-admin-accounts.md#identity-global-admin)，这样做有助于满足此要求。
+如果需要，可在[步骤 1](../identity-create-protect-global-admins.md#identity-global-admin) 中进行设置以满足此要求。
 
 #### <a name="how-to-test"></a>如何测试
 
 使用这些步骤验证是否已保护全局管理员帐户：
 
-1. 在 PowerShell 命令提示符处运行以下 Azure Active Directory PowerShell Graph 命令。应仅看到专用全局管理员帐户列表。
+1. 在 PowerShell 命令提示符处运行以下 Azure Active Directory PowerShell Graph 命令。 你应该只会看到专用全局管理员帐户列表。
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. 使用步骤 1 中的每个帐户登录到 Office 365。每个登录必须要求多重身份验证和组织中可用的最强形式的辅助身份验证。
+2. 使用步骤 1 中的每个帐户登录到 Office 365。 每个登录必须要求 Azure 多重身份验证和组织中可用的最强形式的辅助身份验证。
 
 > [!Note]
 > 有关在 Office 365 中安装 Azure Active Directory PowerShell Graph 模块和登录的说明，请参阅[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。
@@ -41,17 +31,96 @@
 
 如果忽略此选项，全局管理员帐户可能会受到持续在线攻击，并且如果泄露，将使得攻击者能够获取、销毁或持有敏感信息进行勒索。
 
-如果需要，请执行[步骤 2](../identity-designate-protect-admin-accounts.md#identity-pim)，这有助于你满足此条件。
+如果需要，可在[步骤 1](../identity-create-protect-global-admins.md#identity-pim) 中设置此选项。
 
+<a name="crit-identity-pam"></a>
+### <a name="optional-you-have-configure-privileged-access-management-in-office-365"></a>可选：在 Office 365 中配置特权访问管理
+
+你已使用[在 Office 365 中配置特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主题中的信息来启用特权访问并在组织中创建一个或多个特权访问策略。 你已配置这些策略，且实时访问已启用，可访问敏感数据或关键配置设置。
+
+如果需要，可在[步骤 1](../identity-create-protect-global-admins.md#identity-pam) 中进行设置以满足此要求。 
+
+<a name="crit-password-prot"></a>
+### <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>可选：Azure AD 密码保护禁止使用弱密码
+
+已启用禁用[云中](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)以及[本地 Active Directory 域服务 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) 的错误密码以获取全局禁用密码和自定义条款（可选）。
+
+如果需要，请执行[步骤 2](../identity-secure-your-passwords.md#identity-password-prot)，这有助于你满足此条件。
+
+<a name="crit-identity-pw-reset"></a>
+### <a name="optional-users-can-reset-their-own-passwords"></a>可选：用户可以重置自己的密码
+
+已使用 [Azure AD 自助密码重置快速部署](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)，为你的用户配置密码重置。
+
+如果不符合此条件，用户将依赖用户帐户管理员来重置其密码，这会导致额外的 IT 管理开销。
+
+如果需要，请执行[步骤 2](../identity-secure-your-passwords.md#identity-pw-reset)，这有助于你满足此条件。
+
+<a name="crit-identity-sso"></a>
+### <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>可选：用户可以使用 Azure AD 无缝单一登录进行登录
+
+已为组织启用 [Azure AD Connect: 无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)，以简化用户登录到基于云的应用程序（如 Office 365）的方式。
+
+如果忽略此选项，当用户访问使用 Azure AD 租户的其他应用程序时，系统可能会提示你的用户提供凭据。
+
+如果需要，请执行[步骤 2](../identity-secure-your-passwords.md#identity-sso)，这有助于你满足此条件。
+
+<a name="crit-identity-custom-sign-in"></a>
+### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>可选：个性化组织的 Office 365 登录屏幕
+
+你已使用[将公司品牌添加到登录和访问面板页面](http://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。
+
+如果忽略此选项，你的用户将看到通用的 Office 365 登录屏幕，可能会让他们疑惑是否登录到了组织的网站。
+
+如果需要，请执行[步骤 2](../identity-secure-your-passwords.md#identity-custom-sign-in)，这有助于你满足此条件。
+
+
+<a name="crit-identity-mfa"></a>
+### <a name="optional-azure-multi-factor-authentication-is-enabled-for-your-users"></a>可选：已为你的用户启用 Azure 多重身份验证
+
+你使用 [Azure 多重身份验证计划](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)和[条件访问策略](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)为你的用户帐户启用了 Azure 多重身份验证 (MFA)。
+
+如果忽略此选项，你的用户帐户会很容易受到网络攻击者的攻击，导致凭据泄露。如果用户帐户的密码遭到破坏，帐户的所有资源和功能（如管理员角色）都可供攻击者使用。这会使得攻击者能够复制、销毁或持有内部文档和其他数据，进而进行勒索。
+
+如果需要，可在[步骤 3](../identity-secure-user-sign-ins.md#identity-mfa) 中设置此选项。
+
+#### <a name="how-to-test"></a>如何测试
+
+1.  创建一个测试用户帐户并对其分配许可证。 
+2.  通过用于真实用户帐户的其他验证方法为测试用户帐户配置 Azure 多重身份验证，如向手机发送消息。 
+3.  通过测试用户帐户登录到 Office 365 门户。
+4.  确保 MFA 提示你输入其他验证信息且身份验证成功。 
+5.  删除该测试用户帐户。
+
+<a name="crit-identity-ident-prot"></a>
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限 Microsoft 365 Enterprise E5）
+
+已启用 Azure AD Identity Protection，可以：
+
+- 解决潜在标识漏洞。
+- 检测可能的凭据泄露尝试。
+- 调查和处理正在进行的可疑标识活动。
+
+如果忽略此选项，你将无法检测或自动阻止凭据泄露尝试或调查标识相关的安全事件。这可能会使你的组织很容易受到凭据泄露的攻击，进而对组织的敏感数据造成威胁。
+
+如果需要，可在[步骤 3](../identity-secure-user-sign-ins.md#identity-ident-prot) 中设置此选项。
+
+
+#### <a name="how-to-test"></a>如何测试
+
+1. 创建包含初始密码的测试用户帐户。
+2. 使用[让用户在 Office 365 中重置自己的密码](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords)中的步骤来重置测试用户帐户的密码。
+3. 注销，然后使用重置密码登录到测试用户帐户。
+4. 删除该测试用户帐户。
 
 <a name="crit-identity-sync"></a>
-### <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>必需：用户和组与 Azure AD 已同步
+### <a name="required-for-hybrid-identity-users-and-groups-are-synchronized-with-azure-ad"></a>混合标识所必需：用户和组与 Azure AD 已同步
 
 如果你有现有的本地 Active Directory 域服务 (AD DS)，则已使用 Azure AD Connect 将用户帐户和组从本地 AD DS 同步到 Azure AD 租户。
 
 通过目录同步，你的用户可以使用与登录到其计算机相同的凭据登录到 Office 365 和其他 Microsoft 云服务，并访问本地资源。
 
-如果需要，请执行[步骤 3](../identity-azure-ad-connect.md#identity-sync)，这样做有助于满足此要求。
+必要时请执行[第 4 步](../identity-add-user-accounts.md#identity-sync)，这样做有助于满足此要求。
 
 如果忽略此要求，将具有两组用户帐户和组：
 
@@ -79,63 +148,11 @@
 
 如果忽略此选项，则可以更准确地评估基于云的身份基础结构状态。
 
-如果需要，可在[步骤 3 ](../identity-azure-ad-connect.md#identity-sync-health)中设置此选项。
+如果需要，可在[步骤 4](../identity-add-user-accounts.md#identity-sync-health) 中设置此选项。
 
-#### <a name="how-to-test"></a>测试操作
+#### <a name="how-to-test"></a>如何测试
 Azure AD Connect Health 门户显示本地域控制器和持续同步的当前和正确状态。
 
-<a name="crit-identity-mfa"></a>
-### <a name="optional-multi-factor-authentication-is-enabled-for-your-users"></a>可选：已为你的用户启用多重身份验证
-
-你使用 [多重身份验证计划](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) 和[条件访问策略](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)为你的用户帐户启用了多重身份验证 (MFA)。
-
-如果忽略此选项，你的用户帐户会很容易受到网络攻击者的攻击，导致凭据泄露。如果用户帐户的密码遭到破坏，帐户的所有资源和功能（如管理员角色）都可供攻击者使用。这会使得攻击者能够复制、销毁或持有内部文档和其他数据，进而进行勒索。
-
-如果需要，可在[步骤 4](../identity-multi-factor-authentication.md#identity-mfa) 中设置此选项。
-
-#### <a name="how-to-test"></a>测试操作
-
-1.  创建一个测试用户帐户并对其分配许可证。 
-2.  通过用于真实用户帐户的其他验证方法为测试用户帐户配置多重身份验证，如向手机发送消息。 
-3.  通过测试用户帐户登录到 Office 365 门户。
-4.  确保 MFA 提示你输入其他验证信息且身份验证成功。 
-5.  删除该测试用户帐户。
-
-<a name="crit-password-prot"></a>
-### <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>可选： Azure AD 密码保护禁止使用弱密码
-
-已启用禁用[云中](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)以及[本地 Active Directory 域服务 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) 的错误密码以获取全局禁用密码和自定义条款（可选）。
-
-如果需要，可在[步骤 4](../identity-multi-factor-authentication.md#identity-password-prot) 中设置此选项。
-
-<a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限Microsoft 365 Enterprise E5）
-
-已启用 Azure AD Identity Protection，可以：
-
-- 解决潜在标识漏洞。
-- 检测可能的凭据泄露尝试。
-- 调查和处理正在进行的可疑标识活动。
-
-如果忽略此选项，你将无法检测或自动阻止凭据泄露尝试或调查标识相关的安全事件。这可能会使你的组织很容易受到凭据泄露的攻击，进而对组织的敏感数据造成威胁。
-
-如果需要，可在[步骤 4](../identity-multi-factor-authentication.md#identity-ident-prot) 中设置此选项。
-
-<a name="crit-identity-pw-reset"></a>
-### <a name="optional-users-can-reset-their-own-passwords"></a>可选：用户可以重置自己的密码
-
-已使用 [Azure AD 自助密码重置快速部署](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)，为你的用户配置密码重置。
-
-如果不符合此条件，用户将依赖用户帐户管理员来重置其密码，这会导致额外的 IT 管理开销。
-
-如果需要，可在[步骤 5](../identity-password-reset.md#identity-pw-reset) 中设置此选项。
-
-#### <a name="how-to-test"></a>测试操作
-
-1. 创建包含初始密码的测试用户帐户。
-2. 使用[让用户在 Office 365 中重置自己的密码](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords)中的步骤来重置测试用户帐户的密码。
-3. 注销，然后使用重置密码登录到测试用户帐户。
-4. 删除该测试用户帐户。
 
 <a name="crit-identity-pw-writeback"></a>
 ### <a name="optional-password-writeback-is-enabled-for-your-users"></a>可选：为你的用户启用密码写回功能
@@ -144,7 +161,7 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 
 如果忽略此选项，未连接到本地网络的用户必须通过 IT 管理员重置或解除锁定其 AD DS 密码。
 
-如果需要，可在[步骤 5](../identity-password-reset.md#identity-pw-writeback) 中设置此选项。
+如果需要，可在[步骤 4](../identity-add-user-accounts.md#identity-pw-writeback) 中设置此选项。
 
 >[!Note]
 >需要密码写回才可充分利用 Azure AD Identity Protection 功能，例如，当 Azure AD 检测到高风险的帐户泄露时要求用户更改其本地密码。
@@ -160,27 +177,10 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 4. 键入当前密码、键入新密码，然后确认。
 5. 注销 Office 门户和远程计算机，然后使用测试用户帐户及其新密码登录计算机。 这可以证明你可以使用 Azure AD 租户更改本地 AD DS 用户帐户的密码。
 
-<a name="crit-identity-sso"></a>
-### <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>可选：用户可以使用 Azure AD 无缝单一登录进行登录
+#### <a name="how-to-test"></a>如何测试
 
-已为组织启用 [Azure AD Connect: 无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)，以简化用户登录到基于云的应用程序（如 Office 365）的方式。
+使用用户帐户名称及 Azure 多重身份验证登录到 Office 365 门户。 应在登录页面上看到自定义的品牌元素。
 
-如果忽略此选项，当用户访问使用 Azure AD 租户的其他应用程序时，系统可能会提示你的用户提供凭据。
-
-如果需要，可在[步骤 5](../identity-password-reset.md#identity-sso) 中设置此选项。
-
-<a name="crit-identity-custom-sign-in"></a>
-### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>可选：个性化组织的 Office 365 登录屏幕
-
-你已使用[将公司品牌添加到登录和访问面板页面](http://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。
-
-如果忽略此选项，你的用户将看到通用的 Office 365 登录屏幕，可能会让他们疑惑是否登录到了组织的网站。
-
-如果需要，可在[步骤 5](../identity-password-reset.md#identity-custom-sign-in) 中设置此选项。
-
-#### <a name="how-to-test"></a>测试操作
-
-使用用户帐户名称及多重身份验证登录到 Office 365 门户。应在登录页面上看到自定义的品牌元素。
 
 <a name="crit-identity-self-service-groups"></a>
 ### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>可选：为特定 Azure AD 安全和 Office 365 组启用了自助服务组管理
@@ -189,9 +189,9 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 
 如果忽略此选项，则所有 Azure AD 组管理任务必须由 IT 管理员执行。
 
-如果需要，可在[步骤 6](../identity-self-service-group-management.md#identity-self-service-groups) 中设置此选项。
+如果需要，可在[步骤 5](../identity-use-group-management.md#identity-self-service-groups) 中设置此选项。
 
-#### <a name="how-to-test"></a>测试操作
+#### <a name="how-to-test"></a>如何测试
 1.  在具有 Azure 门户的 Azure AD 中创建测试用户帐户。
 2.  使用测试用户帐户登录并创建测试 Azure AD 安全组。
 3.  注销，然后使用 IT 管理员帐户登录。
@@ -213,9 +213,9 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 
 如果销售和会计组是动态的，只需更改该用户帐户的部门值即可。
 
-如果需要，可在[步骤 6](../identity-self-service-group-management.md#identity-dyn-groups) 中设置此选项。
+如果需要，可在[步骤 5](../identity-use-group-management.md#identity-dyn-groups) 中设置此选项。
 
-#### <a name="how-to-test"></a>测试操作
+#### <a name="how-to-test"></a>如何测试
 
 1. 在具有 Azure 门户的 Azure AD 中创建测试动态组，并对名为“test1”的部门配置规则。
 2. 在 Azure AD 中创建测试用户帐户并将部门属性设为“test1”。
@@ -234,16 +234,17 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 - 向希望访问的新用户分配许可证。
 - 取消分配给不再隶属于贵公司或不再有权访问的用户许可证。
 
-如果需要，可在[步骤 6](../identity-self-service-group-management.md#identity-group-license) 中设置此选项。
+如果需要，可在[步骤 5](../identity-use-group-management.md#identity-group-license) 中设置此选项。
 
-#### <a name="how-to-test"></a>测试操作
+#### <a name="how-to-test"></a>如何测试
 
-1. 在具有 Azure 门户的 Azure AD 中创建测试安全组，并配置基于组的许可来分配 Microsoft 265 Enterprise 许可证。
+1. 在具有 Azure 门户的 Azure AD 中创建测试安全组，并配置基于组的许可来分配 Microsoft 365 Enterprise 许可证。
 2. 在 Azure AD 中创建测试用户帐户并将其添加到测试安全组。
-3. 在 Microsoft 365 管理中心中检查用户帐户的属性，确保其分配了 Microsoft 265 Enterprise 许可证。
+3. 在 Microsoft 365 管理中心中检查用户帐户的属性，确保其分配了 Microsoft 365 Enterprise 许可证。
 4. 从测试安全组删除测试用户帐户。
-5. 检查用户帐户的属性，确保它不再分配有 Microsoft 265 Enterprise 许可证。
+5. 检查用户帐户的属性，确保它不再分配有 Microsoft 365 Enterprise 许可证。
 6. 删除测试安全组和测试用户帐户。
+
 
 <a name="crit-identity-access-reviews"></a>
 ### <a name="optional-access-reviews-configured-and-being-used-to-monitor-access"></a>可选：访问审核已配置并正用于监视访问
@@ -254,4 +255,4 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 - [Azure AD 角色](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 - [Azure 资源角色](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
-如果需要，可在[步骤 7](../identity-governance.md#identity-access-reviews) 中设置此选项。
+如果需要，可在[步骤 6](../identity-configure-identity-governance.md#identity-access-reviews) 中设置此选项。

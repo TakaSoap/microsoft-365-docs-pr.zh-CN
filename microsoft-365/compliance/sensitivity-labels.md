@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: f6239c9378b540dd1e3b512711a7184dc4f45774
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d732303db1c2b138349a88fde45bd2aefb745c89
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075765"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148516"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -38,13 +38,13 @@ ms.locfileid: "37075765"
 
 - 利用 Microsoft Cloud App Security **保护第三方应用和服务中的内容**。 借助 Cloud App Security，可检测、分类、标记和保护第三方服务和应用（如 SalesForce、Box 或 Dropbox）中的内容，即使第三方应用或服务无法读取或不支持敏感度标签也不例外。
 
-- **将敏感度标签扩展到第三方应用和服务。** 借助 Microsoft 信息保护 SDK，Windows、Mac 和 Linux 上的第三方应用可以读取敏感度标签，并应用保护设置。我们即将推出对 iOS 和 Android 上应用的支持。
+- **将敏感度标签扩展到第三方应用和服务。** 借助 Microsoft 信息保护 SDK，[这些平台](https://docs.microsoft.com/zh-CN/information-protection/develop/overview#microsoft-information-protection-sdk)上的第三方应用可读取敏感度标签并应用保护设置。
 
 - **对内容进行分类，而不使用任何保护设置。** 也可以只对内容进行分类（如不干胶标签），只要有人使用和共享内容，此分类就会随内容一起暂留和漫游。使用此分类，可生成使用情况报告，并查看敏感内容的活动数据。根据此类信息，稍后随时可以选择应用保护设置。
     
 无论是上述哪种用途，Office 365 中的敏感度标签都可有助于对正确的内容执行适当的操作。借助敏感度标签，可对整个组织中的数据进行分类，并根据此分类强制执行保护设置。
   
-在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的“分类”**** > “敏感度标签”**** 下创建敏感度标签。这些敏感度标签可供 Azure 信息保护、Office 应用和 Office 365 服务使用。
+可在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的“**分类**” > “**敏感度标签**”下创建敏感度标签。 这些敏感度标签可供 Azure 信息保护、Office 应用和 Office 365 服务使用。
 
 对于 Azure 信息保护客户，可以在其他管理中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 **Azure 信息保护标签和 Office 365 敏感度标签彼此完全相互兼容。** 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。
 
@@ -68,7 +68,7 @@ ms.locfileid: "37075765"
 
 当电子邮件或文档应用有敏感度标签后，系统便会对内容强制执行相应标签的保护设置。敏感度标签可用于：
 
-- 仅**加密**电子邮件，或同时加密电子邮件和文档。可选择哪些用户或组在多长时间内有权执行哪些操作。例如，可选择允许组织外特定域中的用户仅在内容应用有标签后的 7 天内有权查看相应内容。或者，可允许用户在应用标签时向内容分配权限，而不是由你来分配权限。有关详细信息，请参阅[使用敏感度标签中的加密限制对内容的访问](encryption-sensitivity-labels.md)。
+- 仅**加密**加密电子邮件，或者同时加密电子邮件和文档。 可选择哪些用户或组有权执行哪些操作多长时间。 例如，可选择允许组织之外特定域中的用户有权查看内容且查看期限为对该内容标上标签后 7 天内。 或者，与其自行分配权限，可允许用户在应用标签时分配对内容的权限。 有关详细信息，请参阅[使用敏感度标签中的加密限制对内容的访问](encryption-sensitivity-labels.md)。
 
 - **标记内容**：具体方法是将自定义水印、页眉或页脚添加到已应用有标签的电子邮件或文档中。请注意，水印只能应用于文档，不能应用于电子邮件。水印的长度上限为 255 个字符。此外，页眉和页脚的长度上限为 1024 个字符（但在 Excel 中除外，其中的长度上限为 255 个字符，具体取决于文档是否包含其他页眉或页脚和其他因素）。
 
@@ -259,7 +259,7 @@ ms.locfileid: "37075765"
 
 由于敏感度标签以明文形式暂留在文档的元数据中，因此第三方应用和服务可选择支持识别和保护包含此类标签的内容。我们会一直扩大对其他应用和服务的支持。
 
-借助 [Microsoft 信息保护 SDK](https://docs.microsoft.com/information-protection/develop/)，第三方应用和服务可读取敏感度标签，并向文档应用敏感度标签和保护设置。此 SDK 支持 Windows、Mac 和 Linux 上的应用。我们即将推出对 iOS 和 Android 上应用的支持。
+借助 [Microsoft 信息保护 SDK](https://docs.microsoft.com/information-protection/develop/)，第三方应用和服务可读取敏感度标签和保护并将其应用到文档。 SDK 支持[这些平台](https://docs.microsoft.com/zh-CN/information-protection/develop/overview#microsoft-information-protection-sdk)上的应用。
 
 借助此 SDK，可以标记和保护内容，且方式与其他 Microsoft 信息保护应用和服务（如 Office 应用、Office 365 服务、Azure 信息保护扫描程序、Microsoft Cloud App Security 及其他多个合作伙伴解决方案）兼容。有关示例，请详细了解 [Adobe Acrobat 中的敏感度标签支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)。
 
