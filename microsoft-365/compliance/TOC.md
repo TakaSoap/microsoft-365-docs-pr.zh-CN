@@ -7,15 +7,17 @@
 ## [使用免费的 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全与合规计划](plan-for-security-and-compliance.md)
 
-# 管理内幕风险
+# 管理内部风险
 ## [保护用户和设备的访问权限](protect-access-to-data-and-services.md)
-## [特权访问管理](privileged-access-management-overview.md)
-## [配置特权访问管理](privileged-access-management-configuration.md)
 ## [客户密码箱](customer-lockbox-requests.md)
+## [特权访问管理]()
+### [了解权限访问管理](privileged-access-management-overview.md)
+### [配置特权访问管理](privileged-access-management-configuration.md)
 ## 客户密钥
 ### [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)
 ### [有关使用 Office 365 客户密钥执行服务加密的 FAQ](service-encryption-with-customer-key-faq.md)
-## [监督通信](supervision-policies.md)
+## [通信监督]()
+### [了解通信监督](supervision-policies.md)
 ### [配置组织的监督策略](configure-supervision-policies.md)
 ## [信息障碍](information-barriers.md)
 ### [定义信息屏障策略](information-barriers-policies.md)
@@ -285,6 +287,7 @@
 ## [分配电子数据展示权限](assign-ediscovery-permissions.md)
 ## [在 Office 365 中为电子数据展示调查设置合规性边界](set-up-compliance-boundaries.md)
 ## [电子数据展示解决方案系列 - 数据泄漏方案 - 搜索和清除](data-spillage-scenariosearch-and-purge.md)
+## [解决常见的电子数据展示问题](ediscovery-troubleshooting-common-issues.md)
 
 ## 管理保留
 ### [创建电子数据展示保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
