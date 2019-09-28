@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Office 365 安全 & 合规性中心中分配权限，然后才能管理其任何安全或合规性功能。
-ms.openlocfilehash: c64991fa4ad847381cb00e38473aefc848015ff0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f9688662714a4a33f2c6e3483cf902e0f61def9
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074662"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305946"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>向用户授予对 Office 365 安全与合规中心的访问权限
 
-用户需要在 Office 365 安全 & 合规性中心中分配权限，然后才能管理其任何安全或合规性功能。 作为 Security & 合规中心中的 OrganizationManagement 角色组的 Office 365 全局管理员或成员，您可以向用户授予这些权限。 用户将只能管理你授权他们访问的安全或合规性功能。 
-  
+用户需要在 Office 365 安全 & 合规性中心中分配权限，然后才能管理其任何安全或合规性功能。 作为 Security & 合规中心中的 OrganizationManagement 角色组的 Office 365 全局管理员或成员，您可以向用户授予这些权限。 用户将只能管理你授权他们访问的安全或合规性功能。
+
 有关您可以向安全 & 合规中心中的用户授予的不同权限的详细信息，请查看[Office 365 安全 & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 您必须是 Office 365 全局管理员，或者是 Security & 合规性中心中的 OrganizationManagement 角色组的成员，才能完成本文中的步骤。
@@ -65,27 +65,27 @@ ms.locfileid: "37074662"
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用 PowerShell 授予另一个用户对安全 & 合规中心的访问权限
 
-1. [连接到 Office 365 安全 & 合规性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. [连接到 Office 365 安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 使用 **Add-rolegroupmember** 命令将用户添加到组织管理角色，如以下示例中所示。
 
-   ```
+   ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
    **参数**：
-  
+
    - _Identity_是要向其添加成员的角色组。
 
    - _Member_是要添加到角色组的邮箱、通用安全组（USG）或计算机。 每次只能指定一个成员。
 
 有关语法和参数的详细信息，请参阅[外接程序 add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)。
-  
+
 ### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 若要验证您是否已授予用户对安全 & 合规中心的访问权限，请使用**add-rolegroupmember** Cmdlet 查看组织管理角色组中的成员，如以下示例所示。
-  
-```
+
+```PowerShell
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 

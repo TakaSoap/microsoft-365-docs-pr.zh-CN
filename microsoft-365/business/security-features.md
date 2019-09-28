@@ -10,21 +10,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-security-compliance
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业版附带的安全功能。
-ms.openlocfilehash: 6b8fc215b95913e1beef3a3715119b947a7af406
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 8e45d5fdb6a78f3966c46542189aa30ddd80998e
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37121150"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288447"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
 
@@ -93,7 +90,7 @@ Microsoft 365 商业版中的高级功能可帮助您保护业务，抵御网络
 
 Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的功能。
 
-- **[数据丢失防护策略概述](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**（DLP）。 
+- **[数据丢失防护策略](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**（DLP）概述。 
     
     您可以设置 DLP 以自动检测敏感信息，如信用卡号、社会保险号码等，以防止无意中与公司以外的用户共享。
     

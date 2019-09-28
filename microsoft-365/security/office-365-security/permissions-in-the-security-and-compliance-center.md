@@ -15,41 +15,41 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以了解 Office 365 安全 & 合规性中心中提供的权限。
-ms.openlocfilehash: c879c2f316844bde0474c693a3c42532a8ae4bc8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b222ea240260518d955f65e4049dfc1e05dc96a2
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075809"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306116"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 安全与合规中心的权限
 
 Office 365 Security & 合规性中心允许您向执行合规性任务（如设备管理、数据丢失防护、电子数据展示、保留等）的人员授予权限。 这些人员只能执行你明确授予其访问权限的任务。 若要访问安全 & 合规性中心，用户必须是 Office 365 全局管理员或一个或多个安全 & 合规中心角色组的成员。
-  
+
 安全 & 合规性中心中的权限基于基于角色的访问控制（RBAC）权限模型。 这与 Exchange 使用相同的权限模型，因此，如果您熟悉 Exchange，则在安全 & 合规中心中授予权限将非常相似。 但请务必记住，Exchange 角色组和安全性 & 合规性中心角色组不会共享成员身份或权限。 尽管二者都有一个组织管理角色组，但这两个角色组并不相同。 角色组授予的权限以及角色组的成员都有区别。 下面列出了安全 & 合规中心角色组。
-  
+
 ![Office 365 安全与合规中心的权限页](../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
-  
+
 ## <a name="relationship-of-members-roles-and-role-groups"></a>成员、角色和角色组之间的关系
 
 **角色**可授予执行一组任务的权限；例如，事例管理角色可以让人员处理电子数据展示事例。
-  
+
 **角色组**是一组角色，使用户能够通过安全 & 合规中心来执行其工作。例如，合规性管理员角色组包括用于案例管理、内容搜索和组织配置的角色（另外还有其他），因为符合管理员要求的人需要这些任务的权限才能完成其工作。
-  
+
 Security & 合规性中心包含为您向其分配人员所需的最常见任务和功能的默认角色组。 我们建议您只是将单个用户添加为默认角色组的**成员**。
-  
+
 ![显示角色组与角色和成员之间关系的图表](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
-  
+
 您可以编辑或删除现有的角色组，但我们不建议这样做。 您可以复制和修改默认角色组，然后使用不同的名称进行保存，而不是对其进行编辑。
-  
+
 ## <a name="permissions-needed-to-use-features-in-the-security--compliance-center"></a>在安全 & 合规中心中使用功能所需的权限
 
 下表列出了安全 & 合规性中心中提供的默认角色组，以及默认情况下分配给角色组的角色。 若要向用户授予执行合规性任务的权限，请将其添加到相应的安全 & 合规中心角色组。
-  
+
 管理安全 & 合规中心中的权限仅使用户能够访问安全 & 合规性中心本身提供的合规性功能。 如果要向其他不在安全 & 合规性中心（如 Exchange 邮件流规则（也称为传输规则）的合规性功能中授予权限，则需要使用 Exchange 管理中心。
-  
+
 若要了解如何授予对安全 & 合规中心的访问权限，请参阅[授予用户对 Office 365 合规性管理中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
-  
+
 |**角色组**|**说明**|**分配的默认角色**|
 |:-----|:-----|:-----|
 |**合规性管理员**<sup>1</sup>|成员可以管理设备管理、数据丢失防护、报告和保留的设置。|案例管理 <br/><br/> 合规性管理员 <br/><br/> 合规性搜索 <br/><br/> DLP 合规性管理 <br/><br/> 设备管理 <br/><br/> 处置管理 <br/><br/> 同时 <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> 组织配置 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看保留管理 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看收件人 <br/><br/> 仅查看记录管理|
@@ -68,7 +68,7 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 
 > [!NOTE]
 > <sup>1</sup>此角色组不会向成员分配搜索 Office 365 审核日志所需的权限，也不能使用可能包含 Exchange 数据的任何报告（如 DLP 或 ATP 报告）。 若要搜索审核日志或查看所有报告，必须在 Exchange Online 中向用户分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。 Office 365 全局管理员可以搜索审核日志并查看所有报告，因为它们会自动添加为 Exchange Online 中的 "组织管理" 角色组的成员。 有关详细信息，请参阅[在 Office 365 安全与合规中心内搜索审核日志](https://go.microsoft.com/fwlink/p/?LinkID=708432)。
-  
+
 ## <a name="roles-in-the-security--compliance-center"></a>安全 & 合规中心中的角色
 
 下表列出了默认情况下可分配给它们的可用角色和角色组。
@@ -91,7 +91,7 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 
 - 监管审核管理员
 
-|**角色**|**说明**|**默认角色组分配**|
+|**角色**|**Description**|**默认角色组分配**|
 |:-----|:-----|:-----|
 |**审核日志**|打开并配置 Office 365 组织的审核，查看组织的审核报告，然后将这些报告导出到文件中。|组织管理 <br/><br/> 记录管理 <br/><br/> Security Administrator|
 |**案例管理**|创建、编辑、删除和控制电子数据展示事例的访问。|合规性管理员 <br/><br/> 电子数据展示管理员 <br/><br/> 组织管理|

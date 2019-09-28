@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: 了解在何处可以查看有关在 SharePoint、OneDrive 或团队中检测到的恶意文件的信息，以及如何对这些文件执行操作。
-ms.openlocfilehash: b16ba88cd4984754f92fac2917f0f2b393600692
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2271ec7822efd442474aa322535da26d42788db
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075925"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306106"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息
 
@@ -43,21 +43,21 @@ ms.locfileid: "37075925"
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>查看隔离区中的文件并对其执行操作
 
-1. 在 "Office 365 安全&amp;合规中心" 中，选择 "**威胁管理** \> **检查** \> **隔离**"。
+1. 在 "Office 365 安全&amp;合规中心" 中，选择 "**威胁管理** \> **检查** \> **隔离**"。 （你也可以直接转到[https://protection.office.com/quarantine](https://protection.office.com/quarantine)。）
     
-2. 在左上角，将筛选器从**电子邮件**更改为**内容**。
+2. 在左上角，将下拉菜单从**电子邮件**更改为**文件**。 如果结果列表中包含过多项目，请使用**筛选**功能缩小选定范围。
     
 3. 选择列表中的某一项，以查看详细信息，包括文件的 URL。
     
 4. 选择可用操作。
     
-  - 选择 **" &amp;发布报告**" 以取消阻止该文件。 
+  - 选择 "**释放文件**" 以取消阻止该文件。 
     
     选择 "**将报告发送给 microsoft** " 以将该文件报告为 "误报到 microsoft"。 
     
   - 选择 "**下载文件**" 以进一步调查文件。 
     
-  - 选择 "**删除**" 以从隔离项目列表中删除该文件。 如果选择此选项，则还必须在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中从其各自的库中删除文件。 此选项不会取消阻止打开或共享文件。 
+  - 选择 "**从隔离区删除**" 以从隔离项目列表中删除该文件。 如果选择此选项，则还必须在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中从其各自的库中删除文件。 此选项不会取消阻止打开或共享文件。 
     
 5. 选择 "**关闭**" 以关闭所选项目的详细信息。 
   

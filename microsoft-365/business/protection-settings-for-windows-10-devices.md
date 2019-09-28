@@ -14,22 +14,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: 了解如何在 Windows 10 设备上创建应用管理策略并保护工作文件。
-ms.openlocfilehash: 670184a2e81721fb5cc063e854822e9b271164d9
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 92cd3facbd3eabbfef674300abe0257c370294ea
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074602"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288407"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>设置 Windows 10 设备的应用程序保护设置
 
@@ -39,13 +36,13 @@ ms.locfileid: "34074602"
   
 1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
     
-2. 在左侧导航中, 选择 "**设备** \> **策略** \> " "**添加**"。
+2. 在左侧导航中，选择 "**设备** \> **策略** \> " "**添加**"。
 
 3. 在" **添加策略**"窗格中，输入此策略的唯一名称。 
     
 4. 在" **策略类型**"下，选择" **适用于 Windows 10 的应用程序管理**"。
     
-5. 在 "**设备类型**" 下, 选择 "**个人**或**公司所有者**"。
+5. 在 "**设备类型**" 下，选择 "**个人**或**公司所有者**"。
     
 6. 将自动打开" **加密工作文件**"。 
     

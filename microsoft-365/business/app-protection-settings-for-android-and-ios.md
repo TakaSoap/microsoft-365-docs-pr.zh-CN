@@ -11,22 +11,18 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
-description: 了解如何创建、编辑或删除应用管理策略, 以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: 21cc1d91c2952c6e9414d3742c26547fc36016a5
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 了解如何创建、编辑或删除应用管理策略，以及如何保护 Android 或 iOS 设备上的工作文件。
+ms.openlocfilehash: 68a338ffb4f9b6cab16c677f80d27481ccec4bd8
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073502"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287687"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
@@ -36,13 +32,13 @@ ms.locfileid: "34073502"
 
 1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
     
-2. 在左侧导航中, 选择 "**设备** \> **策略** \> " "**添加**"。
+2. 在左侧导航中，选择 "**设备** \> **策略** \> " "**添加**"。
   
 3. 在" **添加策略**"窗格中，输入此策略的唯一名称。 
     
 4. 在" **策略类型**"下，根据要创建的策略集，选择" **适用于 Android 的应用程序管理**"或" **适用于 iOS 的应用程序管理**"。 
     
-5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. 有关详细信息, 请参阅[可用设置](#available-settings)。 
+5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. 有关详细信息，请参阅[可用设置](#available-settings)。 
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
@@ -54,7 +50,7 @@ ms.locfileid: "34073502"
     
 ## <a name="edit-an-app-management-policy"></a>编辑应用管理策略
 
-1. 在**策略**卡上, 选择 "**编辑策略**"。
+1. 在**策略**卡上，选择 "**编辑策略**"。
     
 2. 在" **编辑策略**"窗格中，选择要更改的策略 
     
@@ -64,9 +60,9 @@ ms.locfileid: "34073502"
     
 ## <a name="delete-an-app-management-policy"></a>删除应用管理策略
 
-1. 在 "**策略**" 页上, 选择策略, 然后单击 "**删除**"。
+1. 在 "**策略**" 页上，选择策略，然后单击 "**删除**"。
     
-2. 在 "**删除策略**" 窗格中, 选择 "**确认**" 以删除所选的策略或策略。 
+2. 在 "**删除策略**" 窗格中，选择 "**确认**" 以删除所选的策略或策略。 
     
 ## <a name="available-settings"></a>可用设置
 

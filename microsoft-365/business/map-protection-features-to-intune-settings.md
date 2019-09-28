@@ -12,22 +12,18 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: 了解 Microsoft 365 企业版中的保护功能如何映射到 Intune 设置。 订阅提供了修改 Intune 设置的许可证。
-ms.openlocfilehash: a6aaf6cc06c31b870eb85582f5aa47699919d75d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 316dc8efbe69057f049bf8fadd3c3f41c358a33e
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074252"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287948"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Microsoft 365 商业版中的保护功能如何映射到 Intune 设置
 
@@ -35,9 +31,9 @@ ms.locfileid: "34074252"
 
 下表详细介绍了 Android 和 iOS 应用程序策略设置如何映射到 Intune 设置。
   
-若要查找 Intune 设置, 同时使用 Microsoft 365 商业版管理员凭据登录, 请转到 "管理中心", 然后转到 "**管理员中心**", 然后转到**intune**。
+若要查找 Intune 设置，同时使用 Microsoft 365 商业版管理员凭据登录，请转到 "管理中心"，然后转到 "**管理员中心**"，然后转到**intune**。
   
- **重要说明:** Microsoft 365 商业版订阅为您提供了修改所有 Intune 设置的许可证。 请参阅[Intune 简介开始入门。](https://docs.microsoft.com/intune/introduction-intune)
+ **重要说明：** Microsoft 365 商业版订阅为您提供了修改所有 Intune 设置的许可证。 请参阅[Intune 简介开始入门。](https://docs.microsoft.com/intune/introduction-intune)
   
 单击要选择的策略名称，如 Android 的应用程序策略，然后选择" **策略设置**"。
   
@@ -68,7 +64,7 @@ ms.locfileid: "34074252"
 
 下表详细介绍了 Windows 10 应用程序策略设置如何映射到 Intune 设置。
   
-若要查找 Intune 设置, 同时使用 Microsoft 365 商业版管理员凭据登录, 请转到[Azure 门户](https://portal.azure.com), 再选择 "**更多服务**", 并在 "intune" 中键入到**筛选器**中, 选择 " **intune 应用保护** \> **"应用程序策略**。
+若要查找 Intune 设置，同时使用 Microsoft 365 商业版管理员凭据登录，请转到[Azure 门户](https://portal.azure.com)，再选择 "**更多服务**"，并在 "intune" 中键入到**筛选器**中，选择 " **intune 应用保护** \> **"应用程序策略**。
   
  **重要提示** ：Microsoft 365 商业版订阅向你提供许可证，仅用于修改映射到 Microsoft 365 商业版中设置的 Intune 设置。 
   
@@ -88,7 +84,7 @@ ms.locfileid: "34074252"
 
 下表详细介绍了 Windows 10 设备配置设置如何映射到 Intune 设置。
   
-若要查找 Intune 设置, 同时使用 Microsoft 365 商业版管理员凭据登录, 请转到[Azure 门户](https://portal.azure.com), 再选择 "**更多服务**", 然后在 Intune 中键入到**筛选器**中, 选择 " **intune** \> **设备"配置** \> **文件**。 Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+若要查找 Intune 设置，同时使用 Microsoft 365 商业版管理员凭据登录，请转到[Azure 门户](https://portal.azure.com)，再选择 "**更多服务**"，然后在 Intune 中键入到**筛选器**中，选择 " **intune** \> **设备"配置** \> **文件**。 Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Windows 10 设备策略设置**|**Intune 设置**|
 |:-----|:-----|

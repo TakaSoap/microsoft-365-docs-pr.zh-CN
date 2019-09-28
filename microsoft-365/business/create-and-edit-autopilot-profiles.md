@@ -11,23 +11,19 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: '了解如何创建、编辑、删除或删除 AutoPilot 配置文件。 '
-ms.openlocfilehash: 7987cafb3ea234d81be72c79aee8e584a3770875
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8fae8af5e7aa7b866745d0b34a4fe11862de6e9d
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073482"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287767"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>创建和编辑 AutoPilot 配置文件
 
@@ -35,9 +31,9 @@ ms.locfileid: "34073482"
 
 配置文件适用于单个设备或一组设备，
   
-1. 在 Microsoft 365 Business 管理中心中, 选择 "**设备** \> " **AutoPilot**。
+1. 在 Microsoft 365 Business 管理中心中，选择 "**设备** \> " **AutoPilot**。
   
-2. 在 " **AutoPilot** " 页上, 选择 "**配置文件**" 选项卡\> **创建配置文件**。
+2. 在 " **AutoPilot** " 页上，选择 "**配置文件**" 选项卡\> **创建配置文件**。
     
 3. 在" **创建配置文件**"页面上，输入可帮助识别配置文件的文件名称，例如"市场营销"，启用所需设置（请参阅[关于"AutoPilot 配置文件"设置](autopilot-profile-settings.md)获取详细信息），并选择" **保存**"。
     

@@ -8,27 +8,22 @@ ms.topic: article
 ms.service: o365-administration
 ms.collection: M365-subscription-management
 localization_priority: Normal
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从加入 Windows 10 设备的 Azure Active Directory 中获取本地资源（如业务线应用、文件共享和打印机）的访问权限。
-ms.openlocfilehash: ab9049e78617372463b8446dc8f8bc0089d8c117
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 26ba0ffb64ddce32369002120657456e47ac0c7f
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981653"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287347"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>从 Microsoft 365 商业版中的 Azure AD 加入设备访问本地资源
 
-任何已加入 Azure Active Directory 的 Windows 10 设备都将有权访问所有基于云的资源（如 Office 365 应用程序），并可通过 Microsoft 365 商业版进行保护。 若要同时允许访问本地资源（如业务线（LOB）应用程序、文件共享和打印机），您必须使用[AZURE AD Connect 将](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)本地 Active Directory 与 Azure active directory 同步。 下面的视频详细介绍了如何对此进行设置以实现最常见的方案。
- 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
+任何已加入 Azure Active Directory 的 Windows 10 设备都将有权访问所有基于云的资源（如 Office 365 应用程序），并可通过 Microsoft 365 商业版进行保护。 若要同时允许访问本地资源（如业务线（LOB）应用程序、文件共享和打印机），您必须使用[AZURE AD Connect 将](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)本地 Active Directory 与 Azure active directory 同步。 
 
 若要了解详细信息，请参阅[Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)。
 以下各节也汇总了这些步骤。

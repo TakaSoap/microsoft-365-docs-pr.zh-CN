@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 管理员可以了解如何在 Exchange Online Protection 中分配或删除 Exchange 管理中心（EAC）中的权限。
-ms.openlocfilehash: 589d979b9a2ed3f262eb8171fe08622c225548ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b82836b5f9f28c3055e540890771def28382d2b
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075924"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306126"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>在 EOP 中管理管理员角色组权限
-  
+
 在 Microsoft Exchange Online Protection (EOP) 中，您可以使用 Exchange 管理中心 (EAC) 让用户成为一个或多个角色组的成员，以便为他们分配执行特定管理任务所需的权限。您还可以使用 EAC 将用户从一个或多个角色组中删除。
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
 - 估计完成时间：5-10 分钟
@@ -33,7 +33,7 @@ ms.locfileid: "37075924"
 
 > [!TIP]
 > 是否有任何疑问？ 在[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)论坛中寻求帮助。
-  
+
 ## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>使用 EAC 向管理员角色组分配成员
 
 1. 在 EAC 中，转到 "**权限** \> " "**管理员角色**"，单击要向其添加用户的角色组，然后单击 "**编辑** ![编辑图标](../media/ITPro-EAC-EditIcon.gif)"。
@@ -47,8 +47,8 @@ ms.locfileid: "37075924"
 5. 您会看到用户已经添加到“成员”**** 窗格。单击“保存”****。
 
    > [!NOTE]
-   > 在角色组中添加或删除成员后，用户可能必须先注销，然后重新登录才会看到其管理权限的更改。 
-  
+   > 在角色组中添加或删除成员后，用户可能必须先注销，然后重新登录才会看到其管理权限的更改。
+
 ## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>使用 EAC 从管理员角色组中删除成员
 
 1. 在 EAC 中，转到 "**权限** \> " "**管理员角色**"，单击要从中删除一个或一组用户的角色组，然后单击 "**编辑** ![编辑图标](../media/ITPro-EAC-EditIcon.gif)"。
@@ -59,7 +59,7 @@ ms.locfileid: "37075924"
 
    > [!NOTE]
    > 在角色组中添加或删除成员后，用户可能必须先注销，然后重新登录才会看到其管理权限的更改。
-  
+
 ## <a name="for-more-information"></a>详细信息
 
 [EOP 中的功能权限](feature-permissions-in-eop.md)
