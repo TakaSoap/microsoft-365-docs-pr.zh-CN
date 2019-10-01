@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置监管审核策略以捕获员工通信以供审阅。
-ms.openlocfilehash: ccbc5897ef8c6fb6018793ff7e3fe7731ee14710
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dae8969598f5a71814c1b61db83341f30c0cb9d7
+ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074411"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37317614"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>配置组织的监督策略
 
@@ -52,10 +52,6 @@ ms.locfileid: "37074411"
 - **步骤5（可选）**：[测试监督策略](#step-5-test-your-supervision-policy-optional)
 
     测试您的监督策略以确保其按预期工作。 一定要确保符合性策略满足您的标准。
-
-- **步骤6（可选）**：[为不希望使用 Office 365 监督仪表板的审阅者配置 Outlook 以查看受监督的通信](#step-6-configure-outlook-for-reviewers-optional)
-
-    将 Outlook 配置为向审阅者授予对 Outlook 客户端中的监督功能的访问权限，以便他们能够评估和分类每个项目。
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>步骤1：设置组以进行监控（可选）
 
@@ -181,70 +177,10 @@ ms.locfileid: "37074411"
 1. 打开以您要测试的策略中定义的监督用户身份登录的电子邮件客户端或 Microsoft 团队。
 2. 发送符合您在监督策略中定义的条件的电子邮件或 Microsoft 团队聊天。 它可以是关键字、附件大小、域等。确保您确定策略中配置的条件设置过于严格或太 lenient。
 
-    > [!Note]
+    > [!NOTE]
     > 已定义策略的电子邮件将在接近实时的情况中进行处理，并且可以在配置策略后立即进行测试。 Microsoft 团队中的聊天可能需要长达24小时才能在策略中完全处理。 
 
 3. 以监督策略中指定的审阅者的形式登录到 Office 365 租户。 导航到 "**监控** > "*您的自定义策略* > **打开**以查看该策略的报告。
-
-## <a name="step-6-configure-outlook-for-reviewers-optional"></a>步骤6：配置 Outlook for 审阅者（可选）
-
-要使用 Outlook 而不是 Office 365 中的监督仪表板检查通信的审阅者必须配置其 Outlook 客户端。
-
-### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>步骤1：复制监督邮箱的地址
-
-若要配置对 Outlook 桌面的审阅，您需要作为监督策略安装程序的一部分创建的监督邮箱的地址。
-  
-> [!NOTE]
-> 如果其他人创建了该策略，则需要从这些地址获取此地址以安装加载项。
-
-**查找监督邮箱地址**
-  
-1. 使用组织中的管理员帐户的凭据登录[合规性中心](https://compliance.microsoft.com)。
-
-2. 转到 "**监督**"。
-
-3. 为要查看的通信选择监督策略。
-
-4. 在 "策略详细信息" 浮出控件的 "**监督邮箱**" 下，复制地址。<br/>![监督策略的详细信息浮出控件的 "监督邮箱" 部分，显示监督邮箱地址突出显示](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
-  
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>步骤2：为 Outlook access 配置监督邮箱
-
-接下来，审阅者需要运行几个 Exchange Online PowerShell 命令，以便他们可以将 Outlook 连接到监督邮箱。
-  
-1. 连接到 Exchange Online PowerShell。 [我该如何做？](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
-
-2. 运行以下命令，其中*SupervisoryReview {GUID @domain}* 是您在上面的步骤1中复制的地址，*用户*是将在步骤3中连接到监督邮箱的审阅者的姓名。
-
-    ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
-
-    ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
-
-3. 请等待至少一小时，然后再继续执行步骤3。
-
-### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>步骤3：创建 Outlook 配置文件以连接到监督邮箱
-
-在最后一步中，审阅者需要创建 Outlook 配置文件以连接到监督邮箱。
-
-> [!NOTE]
-> 若要创建新的 Outlook 配置文件，请使用 Windows 控制面板中的 "邮件" 设置。 获取这些设置所需的路径可能取决于所使用的 Windows 操作系统（Windows 7、windows 8 或 Windows 10）以及安装了哪个版本的 Outlook。
-  
-1. 打开 "控制面板"。 在窗口顶部的**搜索**框中，键入**Mail**。<br/>（不确定如何访问控制面板？ 请参阅[控制面板在什么位置？](https://support.microsoft.com/help/13764/windows-where-is-control-panel)
-  
-2. 打开**邮件**应用程序。
-
-3. 在**邮件安装程序-Outlook**中，单击 "**显示配置文件**"。<br/>![突出显示 "显示配置文件" 按钮的 "邮件设置-Outlook" 对话框](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)
-  
-4. 在 "**邮件**" 中，单击 "**添加**"。 然后，在 "**新建配置文件**" 中，输入监督邮箱的名称（如**监督**）。<br/>!["新建配置文件" 对话框显示 "配置文件名称" 框中的 "监督" 名称](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
-  
-5. 在 "**将 Outlook 连接到 Office 365**" 中，单击 "**连接到其他帐户**"。<br/>![突出显示了 "连接到不同帐户的 Office 365" 链接的 "将 Outlook 连接到 Office" 的消息](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)
-  
-6. 在 "**自动帐户设置**" 中，选择 "**手动安装或其他服务器类型**"，然后单击 "**下一步**"。
-
-7. 在 "**选择帐户类型**" 中，选择 " **Office 365**"。 然后，在 "**电子邮件地址**" 框中，输入您之前复制的监督邮箱的地址。<br/>![Outlook 中显示 "电子邮件地址" 框的 "选择帐户类型" 页面中的 "添加帐户" 对话框中突出显示了 "电子邮件地址" 框。](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)
-  
-8. 出现提示时，请输入 Office 365 凭据。
-
-9. 如果成功，**监督- \<策略名称\> **文件夹将列在 Outlook 中的文件夹列表视图中。
 
 ## <a name="powershell-reference"></a>PowerShell 参考
 
