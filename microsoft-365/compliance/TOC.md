@@ -340,7 +340,9 @@
 ### [文档元数据字段](document-metadata-fields.md)
 ### [管理作业](manage-jobs.md)
 
-# [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
+# 管理审核和警报策略
+## [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
+## [管理警报策略](alert-policies.md)
 ## [启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)
 ## [管理邮箱审核](enable-mailbox-auditing.md)
 ## [审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)
