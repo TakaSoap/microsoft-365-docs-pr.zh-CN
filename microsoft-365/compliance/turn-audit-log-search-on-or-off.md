@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 您可以在安全 & 合规性中心启用审核日志搜索功能。 如果你更改了想法，你可以随时关闭。 当 "审核日志搜索" 关闭时，管理员无法在组织中搜索用户和管理员活动的 Office 365 审核日志。
-ms.openlocfilehash: c5e1106617aa4828ec2db5afcc44ac55e91f2383
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 83ef355c4acd5e0af4fd7ffbf13157307bcac930
+ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075945"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37334242"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>启用或禁用 Office 365 审核日志搜索
 
@@ -35,7 +35,7 @@ ms.locfileid: "37075945"
     > [!IMPORTANT]
     > 必须在 Exchange Online 中向用户分配权限，才能打开或关闭审核日志搜索。 如果您在安全 & 合规中心中向用户分配 "**权限**" 页上的 "审核日志" 角色，则他们将无法打开或关闭审核日志搜索。 这是因为基础 cmdlet 是 Exchange Online cmdlet。 
   
-- 如果关闭了 Office 365 中的审核日志搜索，将无法使用 Office 365 管理活动 API 来访问您的组织的审核数据。 按照本文中的步骤关闭审核日志搜索意味着在使用 Security & 合规性中心搜索审核日志时，或者在 Exchange Online PowerShell 中运行**UnifiedAuditLog** cmdlet 时，不会返回任何结果。. 这也意味着你的审核日志将无法通过 Office 365 管理活动 API 提供。  
+- 如果关闭了 Office 365 中的审核日志搜索，则不能使用 Office 365 管理活动 API 访问组织的审核数据。 按照本文中的步骤关闭审核日志搜索意味着在使用 Security & 合规性中心搜索审核日志时，或者在 Exchange Online PowerShell 中运行**UnifiedAuditLog** cmdlet 时，不会返回任何结果。. 这也意味着你的审核日志将无法通过 Office 365 管理活动 API 提供。  
     
 - 有关搜索 Office 365 审核日志的分步说明，请参阅[在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
     
@@ -47,15 +47,13 @@ ms.locfileid: "37075945"
 
 1. 在 "安全性 & 合规性中心中，转到"**搜索** \> **审核日志搜索**"。
     
-2. 单击 "**开始记录用户和管理员活动**"。
+   将显示一个横幅，指出审核必须打开以记录用户和管理员活动。
+
+2. 单击 "**启用审核"**。
     
-    ![单击 "开始记录用户和管理员活动" 以启用审核](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+    ![单击 "启用审核"](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
-    将显示一个对话框，指出组织中的用户和管理员活动将记录到 Office 365 审核日志中，并可在报告中查看。 
-    
-3. 单击" **开启** "。
-    
-    将显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。
+    标题已更新，指示审核日志正在准备，并且您可以在几个小时内搜索用户和管理活动。
     
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>使用 PowerShell 打开审核日志搜索
 
@@ -85,14 +83,12 @@ ms.locfileid: "37075945"
     
     - 在 PowerShell 中，运行以下命令：
 
-        ```
-        Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-        ```
+            ```
+            Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+            ```
 
-        UnifiedAuditLogIngestionEnabled 属性的`False`值指示__ 已关闭审核日志搜索。 
+           The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
     
-    - 在安全 & 合规性中心中，转到 "**搜索** \> **审核日志搜索**"，然后单击 "**搜索**"。
+    - 在 "安全性 & 合规性中心中，转到"**搜索** \> **审核日志搜索**"。
     
-      将显示一条消息，指出未启用审核日志搜索。 
-    
-      ![如果禁用了审核功能，则会显示一条消息](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)
+           A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.
