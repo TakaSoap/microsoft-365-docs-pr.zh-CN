@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 将组织用户载入到 Microsoft 365 企业版的工作效率工作负载。
-ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: e8608bd18e493aeb0b0b1200a3b9e9aa6083b641
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981933"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306006"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
 
@@ -29,7 +29,11 @@ ms.locfileid: "36981933"
 
 有关将整个组织迁移到 Microsoft 365 企业版的常规路线图，请参阅[迁移](migration-microsoft-365-enterprise-workload.md)工作负载，其中包括 Microsoft Office 客户端产品、本地 Office Server 产品和基于 Microsoft Windows 的设备。
 
-这些方案以集成的方式使用 Microsoft 365 企业版中的功能和服务来满足业务需求。 其中一项需求是保护存储在 Microsoft 365 中的高度管控数据。 高度管控数据包括的数字资产：
+这些方案以集成的方式使用 Microsoft 365 企业版中的功能和服务来满足业务需求。 
+
+此类需求的其中一项是确保员工在不直接连接到 intranet 时可以高效、安全地工作。 请参阅[为远程工作者提供强大功能](empower-people-to-work-remotely.md)方案，了解部署基础结构元素并推动关键工作负载（例如 Teams 和 Exchange Online）远程用户采用率的路线图。
+
+另一项需求是保护存储在 Microsoft 365 中的高度管控数据。 高度管控数据包括的数字资产：
 
 - 受地区法规约束。
 - 组织最有价值的数据，例如商业机密、财务或人力资源信息以及组织策略。
