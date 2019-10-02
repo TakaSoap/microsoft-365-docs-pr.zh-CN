@@ -3,7 +3,7 @@ title: Contoso 移动设备管理
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,19 +12,19 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 如何使用 Microsoft 365 企业版中的 Intune 来管理其设备及其上运行的应用。
-ms.openlocfilehash: 9f3db160b01a54afa3457703b0333be1ff3a02ec
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+description: 了解 Contoso 如何使用 Microsoft 365 企业版中的 Microsoft Intune 来管理其设备及其上运行的应用。
+ms.openlocfilehash: b083b7fed67eb08b47daf70c3fd22c181f5a8f77
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054984"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370479"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
 
-**摘要：** 了解 Contoso 如何使用 Microsoft 365 企业版中的 Intune 来管理其设备及其上运行的应用。
+**摘要：** 了解 Contoso 如何使用 Microsoft 365 企业版中的 Microsoft Intune 来管理其设备及其上运行的应用。
 
-Microsoft 365 企业版包含 Microsoft Intune 和一组 Azure 服务，可对移动设备和应用程序的管理和安全性进行支持。
+Microsoft 365 企业版包含 Intune 和一组 Azure 服务，可对移动设备和应用程序的管理和安全性进行支持。
 
 Contoso 拥有许多使用移动设备的员工，其中一些人在 Contoso 办公室有办公位，另一些则没有。Contoso 需要通过一种方法来支持员工高效工作，同时确保设备、存储在这些设备上的 Contoso 数据和应用程序行为的安全性。
 
@@ -48,7 +48,7 @@ Contoso 并未使用 Intune 来达到以下目的：
 - 将 Intune 设置为移动设备管理 (MDM) 主管应用，并将在 Azure 上使用 Intune 来管理内容和设备
 - 创建了用于进行设备注册的 Azure AD 组以及 Intune 设置和基于设备的条件访问策略
 
-  有关详细信息，请参阅 [Contoso 的配置条件访问策略](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)。
+  有关详细信息，请参阅 [Contoso 的条件访问策略](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)。
 
 - 启用了 Apple 设备平台以支持员工使用 ipad、iMac、iPhone 和基于 iPhone 的企业所拥有的手机
 - 创建了特定于 Contoso 的条款和条件策略，在移动设备上安装 Contoso 的公司门户时会看到这些策略
@@ -64,6 +64,10 @@ Contoso 并未使用 Intune 来达到以下目的：
   - 商业与个人数据的明确区分。用户或管理员可以选择性地擦除设备中的公司数据，而将图片、个人电子邮件帐户和个人文件等个人数据保持不变。
 
 部署后，Contoso 通过将相应设备添加到适当的 Intune 设备组注册了电脑和公司所拥有的智能手机和平板电脑，然后为员工推出了 BYOD 计划，以注册他们的私人设备。已注册的设备均收到了 Intune 策略，因而可实现对设备及其应用程序的托管和保护。而对于未注册的设备，则会由移动应用程序管理 (MAM) 策略来指定允许的应用程序。
+
+下面是 Contoso 的移动设备管理部署体系结构。
+
+![Contoso 的移动设备管理部署基础结构](./media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>后续步骤
 

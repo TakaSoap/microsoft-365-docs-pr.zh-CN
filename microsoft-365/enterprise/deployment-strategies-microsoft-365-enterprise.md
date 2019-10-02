@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解部署 Microsoft 365 企业版底层基础结构阶段的一些方法。
-ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148496"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369433"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企业版底层基础结构部署策略
 
@@ -51,7 +51,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 本文使用以下图形来描述这些定义： 
 
-![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![描述试点和用户推出定义的图形](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 在用户推出图形中，阴影表示在整个组织内使用结构化或有条理的方法（如组、部门或区域）从 0% 到 100% 的百分比。
 
@@ -76,7 +76,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 以下甘特图显示了 Microsoft 365 企业版基础结构第 2-6 阶段的简化串行部署情况。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![底层基础结构第 2-6 阶段的串行部署](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 为了简化讨论和示意，假设每个阶段以及每个阶段中的部署细分段花费相同的时间量。
 
@@ -86,20 +86,20 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 下面的例子展示了简单的试点用户体验：
 
-- 12 月，需要使用智能手机进行 MFA。（身份识别）
+- 12 月，需要使用智能手机进行 MFA。 （身份识别）
 - 3 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
 - 6 月，安装 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
-- 9 月，执行设备注册并实施应用和设备策略。（移动设备管理）
+- 9 月，执行设备注册并实施应用和设备策略。 （移动设备管理）
 - 12 月，安装 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
 
 结果是在连续的试点推出之间保持 90 天节奏。
 
 下面的例子展示了简单的最终用户体验：
 
-- 1 月，需要使用智能手机进行 MFA。（身份识别）
+- 1 月，需要使用智能手机进行 MFA。 （身份识别）
 - 4 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
 - 7 月，安装 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
-- 10 月，执行设备注册并实施应用和设备策略。（移动设备管理）
+- 10 月，执行设备注册并实施应用和设备策略。 （移动设备管理）
 - 下一年的 1 月，安装 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
 
 结果是在连续的用户推出之间保持 90 天节奏。
@@ -110,7 +110,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 对于此部署策略，你将在当前阶段的用户推出的最后一部分期间开始下一阶段的试点推出。以下是前一阶段的用户推出即将结束期间执行试点推出时的第 2-6 阶段的部署。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![并行部署第 2-6 阶段与非重叠用户推出](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 最终结果是，当前阶段的用户推出将在整个组织中完成，然后启动下一个阶段。不在试点推出中的用户不会同时处理多个阶段的推出，但试点推出与用户推出并行完成。
 
@@ -145,7 +145,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 下面是不同部署策略之间的简化比较。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![并行部署第 2-6 阶段与重叠用户推出](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 最终结果是：
 
@@ -174,11 +174,11 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 此部署策略的优势在于，可以花费更少的时间来完全部署 Microsoft 365 企业版底层基础结构，且仍然无需最终用户同时进行多项推广。 但是，用户在连续阶段之间没有休息。
 
-### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>前端基础结构和端到端配置推出
+### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>前端基础结构和端到端配置推出
 
 对于能够将第 2-6 阶段压缩到单个部署细分段的小型组织，部署结果如下所示：
  
-![](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![前端基础结构和端到端配置推出](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 IT 部门针对第 2-6 阶段配置基础结构，然后推出给试点用户以检查端到端功能。例如，试点用户同时获得所有以下功能：
 

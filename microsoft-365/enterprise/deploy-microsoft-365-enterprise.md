@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050273"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369533"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -65,7 +65,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 以下是底层基础架构与工作负载与应用场景之间的关系。
 
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![底层基础架构与工作负载与应用场景之间的关系](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 工作负载和应用场景在底层基础架构上面运行。 但是，无需构建所有底层基础架构即可开始使用工作负载，以提高生产力和协作。
 

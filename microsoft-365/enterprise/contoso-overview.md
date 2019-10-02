@@ -3,7 +3,7 @@ title: Contoso Corporation 概述
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,26 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso Corporation 的业务及其全球办事处的分层结构。
-ms.openlocfilehash: 2610cad2db4f5621759578b29e6a6e48c07b3654
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072522"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369553"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation 概述
 
 **摘要：** 了解 Contoso Corporation 的业务及其全球办事处的分层结构。
 
-Contoso Corporation 是一家跨国公司，总部设在法国巴黎。这是一家集制造、销售和支持服务为一体的大型组织，提供 100,000 多种产品。
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
-![](./media/contoso-overview/contoso-icon.png)
+Contoso Corporation 是一家跨国公司，总部设在法国巴黎。这是一家集制造、销售和支持服务为一体的大型组织，提供 100,000 多种产品。
 
 ## <a name="contoso-around-the-world"></a>全球的 Contoso
 
 图 1 显示了在巴黎的总部办公室和在各大洲的区域中心和分支办事处。
 
-![](./media/contoso-overview/contoso-overview-fig1.png)
+![全球的 Contoso 办事处](./media/contoso-overview/contoso-overview-fig1.png)
 
 **图 1：全球的 Contoso 办事处**
  
@@ -60,7 +60,7 @@ Contoso Corporation 是一家跨国公司，总部设在法国巴黎。这是一
 
 ## <a name="design-considerations-for-microsoft-365-enterprise"></a>有关 Microsoft 365 企业版的设计注意事项
 
-Contoso 的 IT 架构师在部署 Microsoft 365 企业版时确定了以下设计注意事项： 
+Contoso 的 IT 架构师在部署 Microsoft 365 企业版时确定了以下设计要求和注意事项： 
 
 - 具有本地管理法规和合规性要求的多个地理位置
 - 总部办公室的中央 Intranet 数据中心和托管内部业务线应用程序的区域应用程序服务器
@@ -69,7 +69,7 @@ Contoso 的 IT 架构师在部署 Microsoft 365 企业版时确定了以下设�
 - 同时涉及个人和公司所拥有的移动设备，包括 iOS（iPhone 和 iPad）和 Android 智能手机和平板电脑
 - 许多远程和移动工作人员
 - 许多商业合作伙伴
-- 大量的客户和个人身份数据
+- 大量的客户和个人身份信息
 - 以产品设计规格和制造工艺商业机密形式存在的大量高价值知识产权
 
 ## <a name="next-step"></a>后续步骤

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的信息保护功能来保护其在云中的数字资产。
-ms.openlocfilehash: c11636d6fcdb1de634988e85238ce39a703d520d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 66ae8f4d3ddd71db593daa7b375348e71afeb2f8
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074072"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369593"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -88,7 +88,7 @@ Contoso 使用以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
 图 1 显示 Contoso 信息保护策略的结果集。
 
-![](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![设备、Exchange Online 和 SharePoint Online 的条件访问策略](./media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 **图 1：设备、Exchange Online 和 SharePoint Online 的条件访问策略**
  

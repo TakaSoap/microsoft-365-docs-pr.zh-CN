@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: f40be4ad7d93781ff2ac980228ae5271a8e844c4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c78e8cc9235eb2ca5de091c05d1883ed6cca1b4
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982123"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369603"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
@@ -32,7 +32,7 @@ Contoso 借助七个子域将单个 Active Directory 域服务 (AD DS) 林用于
 
 图 1 显示 Contoso 林和包含区域中心的全球各个区域的区域性域。
 
-![](./media/contoso-identity/contoso-identity-fig1.png)
+![全球的 Contoso 林和域](./media/contoso-identity/contoso-identity-fig1.png)
  
 **图 1：全球的 Contoso 林和域**
 
@@ -47,13 +47,13 @@ Contoso 允许：
 
 图 2 显示包含一个公共网站、一个合作伙伴 Extranet 和一组 Active Directory 联合身份验证服务 (AD FS) 服务器的 Contoso DMZ。DMZ 已连接至包含客户、合作伙伴和 Internet 服务的 Internet。
 
-![](./media/contoso-identity/contoso-identity-fig2.png)
+![Contoso 对客户和合作伙伴的联合身份验证支持](./media/contoso-identity/contoso-identity-fig2.png)
 
 **图 2：Contoso 对客户和合作伙伴的联合身份验证支持**
  
 DMZ 中的 AD FS 服务器可加快由标识提供程序对客户凭据进行身份验证以访问公共网站，并对合作伙伴凭据进行身份验证以访问合作伙伴 Extranet。
 
-Contoso 决定保留此基础结构，并将其用于客户和合作伙伴身份验证。Contoso 标识架构师正在调查如何将此基础结构转换为 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 解决方案。
+Contoso 决定保留此基础结构，并将其专用于客户和合作伙伴的身份验证。 Contoso 标识架构师正在研究如何将此基础结构转换为 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 解决方案。
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>通过混合标识和密码哈希同步实现基于云的身份验证
 
@@ -63,7 +63,7 @@ PHS 将本地 AD DS 林与 Microsoft 365 企业版订阅的 Azure AD 租户同�
 
 为了执行持续目录同步，Contoso 在其巴黎数据中心的服务器上部署了 Azure AD Connect 工具。 图 3 显示运行 Azure AD Connect 的服务器，该服务器会轮询 Contoso AD DS 林来查找更改，然后将这些更改与 Azure AD 租户同步。
 
-![](./media/contoso-identity/contoso-identity-fig4.png)
+![Contoso 的 PHS 目录同步基础结构](./media/contoso-identity/contoso-identity-fig4.png)
  
 **图 3：Contoso 的 PHS 目录同步基础结构**
 
@@ -78,7 +78,7 @@ Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件�
 
 图 4 显示他们最终得到的一组标识和设备条件访问策略。
 
-![](./media/contoso-identity/contoso-identity-fig5.png)
+![Contoso 的标识和设备条件访问策略](./media/contoso-identity/contoso-identity-fig5.png)
  
 **图 4：Contoso 的标识和设备条件访问策略**
 
