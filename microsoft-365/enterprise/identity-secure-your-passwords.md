@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你需要确保你的密码在整个组织中都强大并易于管理。
-ms.openlocfilehash: 06d936a68432b55912b1c10839336dc94e698f51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075406"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370399"
 ---
-# <a name="step-2-secure-your-passwords"></a>步骤2：保护密码安全
+# <a name="step-2-secure-your-passwords"></a>第 2 步：保护密码安全
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>防止密码错误
@@ -98,4 +98,4 @@ ms.locfileid: "37075406"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [保护和管理用户登录](identity-secure-user-sign-ins.md) |
+|![第 3 步](./media/stepnumbers/Step3.png)| [保护和管理用户登录](identity-secure-user-sign-ins.md) |

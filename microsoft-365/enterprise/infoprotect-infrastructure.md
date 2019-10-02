@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版信息保护基础结构。
-ms.openlocfilehash: 3174790d1ee6c9ed05605dd1c3c75405e3eac42b
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 54866ceb1fa72f404a5d255cb130c70fe180c493
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047305"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370449"
 ---
-# <a name="phase-6-information-protection"></a>第 6 阶段：信息保护
+# <a name="phase-6-information-protection"></a>阶段 6：信息保护
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![阶段 6：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
 信息保护是一组策略和技术，定义了如何传输、存储和处理敏感信息。在第 6 阶段逐步介绍了 Microsoft 365 企业版的信息保护设置和功能，有助于用户保护基于云的工作负载和方案的数据安全。
 
@@ -38,13 +38,13 @@ ms.locfileid: "37047305"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[定义安全和信息保护级别](infoprotect-define-sec-infoprotect-levels.md)|
-|![](./media/stepnumbers/Step2.png)|[配置环境分类](infoprotect-configure-classification.md)|
-|![](./media/stepnumbers/Step3.png)|[为 Microsoft 365 配置提升的安全性](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
-|![](./media/stepnumbers/Step5.png)|[配置 Office 365 数据丢失防护](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[配置电子邮件加密](infoprotect-email-encryption.md)|
-|![](./media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
+|![第 1 步](./media/stepnumbers/Step1.png)|[定义安全和信息保护级别](infoprotect-define-sec-infoprotect-levels.md)|
+|![第 2 步](./media/stepnumbers/Step2.png)|[配置环境分类](infoprotect-configure-classification.md)|
+|![第 3 步](./media/stepnumbers/Step3.png)|[为 Microsoft 365 配置提升的安全性](infoprotect-configure-increased-security-office-365.md)|
+|![第 4 步](./media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
+|![第 5 步](./media/stepnumbers/Step5.png)|[配置 Office 365 数据丢失防护](infoprotect-data-loss-prevention.md)|
+|![第 6 步](./media/stepnumbers/Step6.png)|[配置电子邮件加密](infoprotect-email-encryption.md)|
+|![第 7 步](./media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
 |||
 
 在完成这些步骤后，请转到这一阶段的[退出条件](infoprotect-exit-criteria.md)，以确保满足 Microsoft 365 企业版的必备条件和可选条件。
@@ -57,11 +57,11 @@ ms.locfileid: "37047305"
 
 了解 Contoso Corporation（虚构但具代表性的跨国企业）如何使用 Microsoft 365 云服务[实现信息保护](contoso-info-protect.md)。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[定义安全和信息保护级别](infoprotect-define-sec-infoprotect-levels.md)|
+|![第 1 步](./media/stepnumbers/Step1.png)|[定义安全和信息保护级别](infoprotect-define-sec-infoprotect-levels.md)|
 

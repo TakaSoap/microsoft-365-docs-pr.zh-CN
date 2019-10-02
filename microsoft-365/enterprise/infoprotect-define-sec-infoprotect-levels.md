@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并为组织配置安全和信息保护级别。
-ms.openlocfilehash: a216079e38b173a8b35c49317a072975b0c7f36e
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 7f1f8a2099da8d99b1b7267e245a80d2143bb0ca
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047255"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370389"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>步骤 1：定义安全和信息保护级别
 
-** 此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本
+*此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 在此步骤中，将为组织定义安全和保护级别。 例如，销售部门可能仅需要低安全级别， 但是，研究部门及其极为重要的知识产权信息可能需要高的安全级别，以加密文件并将访问权限限制为仅研究人员。
 
@@ -42,4 +42,4 @@ ms.locfileid: "37047255"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[配置环境分类](infoprotect-configure-classification.md)|
+|![第 2 步](./media/stepnumbers/Step2.png)|[配置环境分类](infoprotect-configure-classification.md)|

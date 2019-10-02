@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置对组织中的数据进行分类的各种方法。
-ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047295"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370409"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>第 2 步：配置环境分类
 
-** 此步骤是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本
+*此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 在步骤此中，配合法律和合规性团队来定义组织数据的分类方案。
 
@@ -109,5 +109,5 @@ Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[为 Office 365 配置提高的安全性](infoprotect-configure-increased-security-office-365.md)|
+|![第 3 步](./media/stepnumbers/Step3.png)|[为 Office 365 配置提高的安全性](infoprotect-configure-increased-security-office-365.md)|
 
