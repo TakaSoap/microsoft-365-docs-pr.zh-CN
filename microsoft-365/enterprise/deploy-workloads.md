@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 将组织用户载入到 Microsoft 365 企业版的工作效率工作负载。
-ms.openlocfilehash: 6446e73f79a3dd92d60fa3299e6007e1a5a3fdeb
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329203"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369423"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
 
@@ -42,12 +42,9 @@ ms.locfileid: "37329203"
 
 以下是 Microsoft 365 企业版部署指南中的工作负载和方案：
 
-![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![整体 Microsoft 365 企业版部署指南中的工作负载和方案](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-请参阅 [Microsoft 365 工作效率库](https://www.microsoft.com/microsoft-365/success/)了解更多方案。 
-
-1. 在此网页中，键入搜索字符串或单击**筛选依据**，然后在 Microsoft 365 中指定行业、角色（部门）和产品。
-2. 从结果中，单击卡片以查看可以帮助你入门的步骤。
+请参阅 [Microsoft 365 生产力库](https://www.microsoft.com/microsoft-365/success/)了解更多方案。 
 
 ## <a name="foundation-infrastructure-prerequisites"></a>基础结构先决条件
 
