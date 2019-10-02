@@ -1,5 +1,5 @@
 ---
-title: 步骤6：配置电子邮件加密
+title: 步骤 6：配置电子邮件加密
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +14,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解并配置 Office 365 的特权访问管理。
-ms.openlocfilehash: 7747f5a0905a9477e9d3fd17b00eae740d76f640
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050293"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370429"
 ---
-# <a name="step-6-configure-email-encryption"></a>步骤6：配置电子邮件加密
+# <a name="step-6-configure-email-encryption"></a>步骤 6：配置电子邮件加密
 
 ** 此步骤是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第6阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Microsoft 365 中有三种类型的电子邮件加密。
 
@@ -75,8 +75,8 @@ S/MIME 可用于向 Microsoft 365 订阅中的其他邮箱或向外部用户发�
 
 作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step6)。
 
-## <a name="next-step"></a>下一步骤
+## <a name="next-step"></a>后续步骤
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
+|![步骤7](./media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|

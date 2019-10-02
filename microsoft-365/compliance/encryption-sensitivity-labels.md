@@ -1,7 +1,7 @@
 ---
 title: 使用敏感度标签中的加密限制对内容的访问
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: ea7eda3558313389bfa2bc752a469e00cc7ae577
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148476"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369443"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度标签中的加密限制对内容的访问
 
@@ -135,7 +135,7 @@ Rights Management 颁发者将始终被授予对文档或电子邮件的完全�
 
 可使用下述选项来允许用户在向内容手动应用敏感度标签时分配权限：
 
-- 在 Outlook 中，用户可强制实施与“**请勿转发**”选项等效的限制。 此选项在 Windows 版 Outlook 上本地支持，且不要求你安装 Azure 信息保护统一标签客户端。
+- 在 Outlook 中，用户可强制实施与“[请勿转发](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)”选项等效的限制。 此选项在 Windows 版 Outlook 上本地支持，且不要求你安装 Azure 信息保护统一标签客户端。
 - 在 Word、PowerPoint 和 Excel 中，系统会提示用户为特定用户、组或组织选择一个权限级别。 此选项在这些 Office 应用中本地不受支持，因此你的用户必须安装 Azure 信息保护统一标签客户端。
 
 这些选项可决定哪些应用中将显示敏感度标签：

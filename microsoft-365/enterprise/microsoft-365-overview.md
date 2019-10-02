@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍了 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: f08682709cc47dc8fa6b4fcd48dc4511ff251ba1
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 8ae6462c2d1de32aa44820f4f417b92bad6db7d3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050283"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370459"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -140,7 +140,7 @@ Microsoft 365 企业版提供了三个计划。
 
 |||
 |:-------|:-----|
-![](./media/m365-poster/m365-fundamentals.svg)| 向自己培训并努力处理 Microsoft 365 认证。 <BR> 从[Microsoft 365 基础](https://docs.microsoft.com/learn/paths/m365-fundamentals/)开始。
+![Microsoft 365 基础知识培训](./media/m365-poster/m365-fundamentals.svg)| 向自己培训并努力处理 Microsoft 365 认证。 <BR> 从[Microsoft 365 基础](https://docs.microsoft.com/learn/paths/m365-fundamentals/)开始。
 |||
 
 
