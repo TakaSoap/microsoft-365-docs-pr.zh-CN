@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: 558a35d255171ffa09f5e8610cdfc0d6ba63c9fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075433"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369633"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -29,11 +29,25 @@ ms.locfileid: "37075433"
 > [!TIP]
 > 对其他管理中心中的内容有兴趣？ 查看以下文章：<br>[Microsoft 365 管理中心的新增功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
-## <a name="august-2019"></a>2019年8月
+## <a name="september-2019"></a>2019 年 9 月
 
 不知为什么在本月的版本中静音？ 我们正在开发的新的创新合规性解决方案将在11月的[Microsoft Ignite](https://www.microsoft.com/ignite)中 unveiled。 请随时关注！
 
-## <a name="july-2019"></a>2019月
+### <a name="new-encryption-options-for-sensitivity-labels"></a>用于敏感度标签的新加密选项 
+
+为敏感度标签配置加密时，您现在有两个选项，可让用户在手动将标签应用于电子邮件和文档时分配权限：<br>
+- 将标签应用于**Outlook 电子邮件**时，用户可以强制实施与 "不转发" 选项等效的限制。 收件人将能够读取邮件，但不能转发、打印或复制内容。
+- 将标签应用于**Word、PowerPoint 和 Excel 文件**时，系统将提示用户为特定用户和组分配访问权限。
+
+[了解更多](encryption-sensitivity-labels.md#let-users-assign-permissions)
+
+## <a name="august-2019"></a>2019 年 8 月
+
+### <a name="update-to-data-investigations"></a>对数据调查的更新
+
+在执行数据调查时，您现在可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您可以将这些项目的副本保留在证据集中，以便您可以进一步调查或仅保留为参考。 [了解更多](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+
+## <a name="july-2019"></a>2019 年 7 月
 
 ### <a name="new-admin-roles"></a>新管理员角色
 
@@ -49,34 +63,3 @@ ms.locfileid: "37075433"
 不会再滚动浏览报告的海洋，以查找您需要的报告。 您现在可以搜索报告（基于其标题），并筛选类别（如 "标签" 和 "合规性"）以及 "Office 365" 和 "Microsoft 云应用安全" 等源。
 
 ![包含已应用筛选器的报表的搜索和筛选按钮的屏幕捕获](media/mcc_report_filtering.png)
-
-### <a name="help-content"></a>帮助内容
-
-提起椅子，抓住杯杯，并让我们的最新合规性文档让你摆脱。
-
-**高级电子数据展示**
-- [查看高级电子数据展示中的对话](conversation-review-sets.md)新
-- [解决高级电子数据展示中的 AzCopy](troubleshooting-azcopy.md)
-- [将非 Office 365 数据加载到审阅集](load-non-office365-data.md)
-- [修正处理数据时出现的错误](error-remediation.md)
-
-**存档第三方数据**
-- [设置连接器以存档 Office 365 中的即时 Bloomberg 数据](archive-instant-bloomberg-data.md)
-
-**审核**
-- [审核共享以查找与外部用户共享的资源](use-sharing-auditing.md)
-- [Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
-- [Office 365 管理活动 API 疑难解答](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api)
-- [在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
-
-**加密**
-- [Office 365 邮件加密的旧信息](legacy-information-for-message-encryption.md)
-
-**部门**
-- [使用基于数据的确切分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-
-**数据治理**
-- [保留策略概述](retention-policies.md)
-
-**监控**
-- [Office 365 中的监督策略](supervision-policies.md)

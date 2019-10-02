@@ -1,7 +1,7 @@
 ---
 title: 应用或删除网站的文件删除策略
-ms.author: stephow
-author: stephow-msft
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 组织通常受法规、法律或其他规定的制约，要求其将文件保留特定时间段。但是，将文件保留超过所要求的时间可能使组织面临法律风险。因此，您的组织可能已为您的网站创建文件删除策略。例如，一般的商务文件可能需要在其创建 5 年后删除。
-ms.openlocfilehash: c826d6c9e163e79c4e72510e3362328ae902c80c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3f5228c26cc4e12c129a57e2141e3eea50d029a2
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074538"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342955"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>应用或删除网站的文件删除策略
 

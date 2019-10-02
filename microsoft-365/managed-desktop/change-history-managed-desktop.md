@@ -1,5 +1,5 @@
 ---
-title: Microsoft 托管桌面文档的更改历史记录
+title: Microsoft 托管桌面文档更改历史记录
 description: 本主题列出了 Microsoft 托管桌面的新增和更新主题。
 keywords: 修订记录
 ms.prod: m365-md
@@ -8,38 +8,43 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982603"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369623"
 ---
-# <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档的更改历史记录
+# <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
-本主题列出了[Microsoft 托管桌面文档](index.yml)中新增和更新的主题。
+本主题列出了[Microsoft 托管桌面文档](index.yml)中新增和更新的主题。 "已更新" 主题是指那些具有材料附加或更正措施的主题--不列出更正拼写、样式或格式问题等次要修补程序。 您可以通过访问[GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的存储库，随时查看特定提交的历史记录（包括任何更改的详细信息）。
 
-## <a name="september-2019"></a>9月2019
+## <a name="september-2019"></a>2019 年 9 月
 新建或更改的主题 | 说明
 --- | ---
-[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的主题
+[Microsoft 托管桌面技术](intro/technologies.md) | 更新的主题
+[获取最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的主题
+[Microsoft 托管桌面设备](service-description/device-list.md) | 更新的主题
+[部署和跟踪可配置的设置-Microsoft 托管桌面](working-with-managed-desktop/config-setting-deploy.md) | 更新的主题
+[Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的主题
+[Microsoft 托管桌面的系统必备](get-ready/prerequisites.md) | 更新的主题
 [设置 Microsoft 托管桌面设备](get-started/set-up-devices.md) | 新主题
-[自己注册新设备](get-started/register-devices-self.md) | 更新的主题
+[自行注册新设备](get-started/register-devices-self.md) | 更新的主题
 [自行注册现有设备](get-started/register-reused-devices-self.md) | 新主题
 [如何在 Microsoft 托管桌面中处理更新](service-description/updates.md) | 更新的主题
 
-## <a name="august-2019"></a>2019年8月
+## <a name="august-2019"></a>2019 年 8 月
 新建或更改的主题 | 说明
 --- | ---
 [使用 Microsoft 咨询服务](get-ready/apps-mcs.md) | 更新的主题
 [Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的主题
 [获取最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的主题
-[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的主题
+[Microsoft 托管桌面的系统必备](get-ready/prerequisites.md) | 更新的主题
 [Microsoft 托管桌面技术](intro/technologies.md) | 更新的主题
 
 
 
-## <a name="july-2019"></a>2019月
+## <a name="july-2019"></a>2019 年 7 月
 新建或更改的主题 | 说明
 --- | ---
 [使用 Microsoft 咨询服务](get-ready/apps-mcs.md) | 更新的主题
@@ -47,7 +52,7 @@ ms.locfileid: "36982603"
 [设备配置](service-description/device-policies.md) | 更新的主题
 
 
-## <a name="june-2019"></a>6月2019
+## <a name="june-2019"></a>2019 年 6 月
 新建或更改的主题 | 说明
 --- | ---
 [Microsoft 托管桌面中的应用程序](get-ready/apps.md) | 更新的主题
@@ -63,7 +68,7 @@ ms.locfileid: "36982603"
 [Microsoft 托管桌面支持的区域和语言](service-description/regions-languages.md) | 更新的主题
 [Microsoft 托管桌面设备](service-description/device-list.md) | 更新的主题
 [Microsoft 托管桌面存档设备](service-description/archived-device-list.md) | 新主题
-[为 Microsoft 托管桌面准备映射驱动器](get-ready/mapped-drives.md) | 新主题
+[为 Microsoft 托管桌面准备映射的驱动器](get-ready/mapped-drives.md) | 新主题
 [为 Microsoft 托管桌面准备证书和网络配置文件](get-ready/certs-wifi-lan.md) | 新主题
 [订购 Microsoft 托管桌面设备](get-started/devices.md) | 更新的主题
 [获取最终用户的帮助](working-with-managed-desktop/end-user-support.md)
@@ -73,7 +78,7 @@ ms.locfileid: "36982603"
 --- | ---
 [在 Microsoft 托管桌面设备上安装 Intune 公司门户](get-started/company-portal.md) | 新主题
 [在 Microsoft 托管桌面设备上安装 Microsoft Project 和 Microsoft Visio](get-started/project-visio.md) | 新主题 
-[为 Microsoft 托管桌面准备本地资源访问](get-ready/authentication.md) | 新主题
+[为 Microsoft 托管桌面准备本地资源访问权限](get-ready/authentication.md) | 新主题
 [在 Microsoft 托管桌面中注册设备](get-started/register-devices-self.md) | 新主题
 [在 Microsoft 托管桌面中为合作伙伴注册设备](get-started/register-devices-partner.md) | 新主题
 [将应用程序部署到 Microsoft 托管桌面设备](get-started/deploy-apps.md) | 更新的主题
@@ -89,7 +94,7 @@ ms.locfileid: "36982603"
 --- | ---
 [程序设备](service-description/device-list.md) | 更新了对某些 Dell 和 HP 设备的支持。
 [可配置的设置概述](working-with-managed-desktop/config-setting-overview.md) | 新主题
-[可配置的设置参考](working-with-managed-desktop/config-setting-ref.md) | 新主题
+[可配置设置参考](working-with-managed-desktop/config-setting-ref.md) | 新主题
 [跟踪和部署可配置的设置](working-with-managed-desktop/config-setting-deploy.md) | 新主题
 [设备入门](get-started/get-started-devices.md) | 新主题
 

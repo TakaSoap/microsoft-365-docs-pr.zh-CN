@@ -1,7 +1,7 @@
 ---
 title: 自动执行事件驱动的保留
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主题介绍如何使用 Microsoft 365 REST API 设置业务流程以通过事件自动执行保留。
-ms.openlocfilehash: 3a5dc3efb88eaa4eabe1b01731d17f5ac418f99d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b687ab89e0d29910c9c0781540b6f9113e53ed6
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074472"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342965"
 ---
 # <a name="automate-event-based-retention"></a>自动执行基于事件的保留
 
