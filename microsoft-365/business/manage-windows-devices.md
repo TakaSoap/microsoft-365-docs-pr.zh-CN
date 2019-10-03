@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: 了解如何启用 Microsoft 365 以保护本地 AD 加入 Windows 10 设备。
-ms.openlocfilehash: d1dbfc6a35d54db653ae0f911fad05ac2ce0a993
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 452e884f952a4b2c2e87148bb7203ed48a48d944
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288027"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37376087"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备
 
@@ -39,7 +39,7 @@ ms.locfileid: "37288027"
 
    - 确保目录中不存在以下属性的重复项： **mail**、 **proxyAddresses**和**userPrincipalName**。 这些值应是唯一的，并且应删除任何重复项。
    
-   - 建议将每个本地用户帐户的**userPrincipalName** （UPN）属性配置为与与许可的 Microsoft 365 用户相对应的主电子邮件地址相匹配。 例如， *shelley @<span>contoso。<span>com*而不是*mary @ contoso. 本地*
+   - 建议将每个本地用户帐户的**userPrincipalName** （UPN）属性配置为与与许可的 Microsoft 365 用户相对应的主电子邮件地址相匹配。 例如*mary.shelley@contoso.com* ，而不是*mary @ contoso. 本地*
    
    - 如果 Active Directory 域以不可路由的后缀（如*local*或*lan*）结尾，而不是 internet 路由后缀（如 .com 或 *. org*），则需要先按照中所述调整本地用户帐户的 UPN 后缀，如中所述 *。*[为目录同步准备不可路由的域](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)。 
 

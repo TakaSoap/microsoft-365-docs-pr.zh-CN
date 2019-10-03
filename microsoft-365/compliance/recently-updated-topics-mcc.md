@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 我们将不断创建新文章，更新现有文章，并根据你的反馈进行更改。 了解本月新增和更新的内容。
-ms.openlocfilehash: 744c1822331c71e718007105f58d1bc64b3c70df
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: d610ab37312a1305809d740a9353822293c48df0
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369644"
+ms.locfileid: "37376127"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -34,9 +34,9 @@ ms.locfileid: "37369644"
 
 ### <a name="ediscovery"></a>电子数据展示
 
-[调查、解决和解决常见的电子数据展示问题](ediscovery-troubleshooting-common-issues.md)（新增）<br> 包含可用于确定和解决在电子数据展示搜索中或电子数据展示过程中的其他位置时可能遇到的问题的基本故障排除步骤
+[调查、解决和解决常见的电子数据展示问题](ediscovery-troubleshooting-common-issues.md)（新增）<br> 包含可用于确定和解决在电子数据展示搜索或电子数据展示过程中其他位置可能遇到的问题的基本故障排除步骤。
 
-###<a name="supervision"></a>监控
+### <a name="supervision"></a>监控
 
 [为你的组织配置监督策略](configure-supervision-policies.md)（已更新）<br>删除了有关使用 Outlook 执行审阅的详细信息。 而是使用监督用户界面中提供的 "审阅" 和 "标记" 选项。
 
