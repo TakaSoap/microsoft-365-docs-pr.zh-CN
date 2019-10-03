@@ -3,7 +3,7 @@ title: 第 3 步：避免网络回流
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并删除网络回流以获得更佳性能。
-ms.openlocfilehash: eb233c02d1d4c0198c11d520acca1d680df78a82
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073282"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370329"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>第 3 步：避免网络回流
 
 *此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![阶段 1：网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-首次将发往目标的流量定向到其他中间位置（例如本地安全堆栈、云访问代理或基于云的 Web 网关）时，会发生[网络回流](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3)。由于网络服务提供商的原因，Internet 上的路由不良也可能导致网络回流。回流会增加延迟，并可能将流量重定向到地理位置较远的位置。
+当绑定到目标的流量先定向到另一个中间位置（例如本地安全堆栈、云访问代理或基于云的 Web 网关）时，会出现[网络发夹](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3)。 下面是一个示例。
+
+![网络发夹示例](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+
+网络发夹也可能是由于网络服务提供商在 Internet 上路由不畅所致。 
+
+发夹会增加延迟，并且可能会将流量重定向到地理位置较远的位置。
 
 要优化 Microsoft 365 基于云的服务的流量性能，请检查提供本地 Internet 连接的 ISP 是否与该位置附近的 Microsoft 全球网络具有直接对等关系。这些连接中没有回流。
 
@@ -38,10 +44,12 @@ ms.locfileid: "34073282"
 
 如有可能，配置边缘路由器以直接发送受信任的 Microsoft 365 流量，而不是通过处理 Internet 流量的第三方云或基于云的网络安全供应商进行代理或隧道传输。 
 
+![绕过网络发夹的示例](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+
 作为临时检查点，可查看这一步的[退出条件](networking-exit-criteria.md#crit-networking-step3)。
 
 ## <a name="next-step"></a>后续步骤
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[配置流量旁路](networking-configure-proxies-firewalls.md)|
+|![第 4 步](./media/stepnumbers/Step4.png)|[配置流量旁路](networking-configure-proxies-firewalls.md)|
