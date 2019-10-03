@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解组织中部署 Microsoft 365 企业版底层基础结构（也称为核心部署）的主要阶段。
-ms.openlocfilehash: 016764333b7234681aa06e511227b203f9c9eaea
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050303"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370349"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
 
@@ -28,12 +28,12 @@ ms.locfileid: "37050303"
 
 | | 阶段 | 结果 |
 |:-------|:-----|:-----|
-|![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[阶段 1：网络](networking-infrastructure.md)| 网络已经过优化，以便访问 Microsoft 365 基于云的服务。 |
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[阶段 2：标识](identity-infrastructure.md)| 管理员帐户受到保护，用户和组经过同步，并且采用强用户身份验证。 |
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[阶段 3：Windows 10 企业版](windows10-infrastructure.md)| 现有基于 Windows 的计算机可以升级至 Windows 10 企业版，并且新设备已安装了 Windows 10 企业版。 |
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[阶段 4：Office 365 专业增强版](office365proplus-infrastructure.md)| 现有 Microsoft Office 用户可以升级到 Office 365 专业增强版。 |
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[阶段 5：移动设备管理](mobility-infrastructure.md)| 可以注册和管理你的设备。 |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[阶段 6：信息保护](infoprotect-infrastructure.md)| Office 365 安全功能已启用，你的标签和策略已准备好保护文档和电子邮件。 |
+|![阶段 1：网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[阶段 1：网络](networking-infrastructure.md)| 网络已经过优化，以便访问 Microsoft 365 基于云的服务。 |
+|![阶段 2：标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[阶段 2：标识](identity-infrastructure.md)| 管理员帐户受到保护，用户和组经过同步，并且采用强用户身份验证。 |
+|![阶段 3：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[阶段 3：Windows 10 企业版](windows10-infrastructure.md)| 现有基于 Windows 的计算机可以升级至 Windows 10 企业版，并且新设备已安装了 Windows 10 企业版。 |
+|![阶段 4：Office 365 专业增强版](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[阶段 4：Office 365 专业增强版](office365proplus-infrastructure.md)| 现有 Microsoft Office 用户可以升级到 Office 365 专业增强版。 |
+|![阶段 5：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[阶段 5：移动设备管理](mobility-infrastructure.md)| 可以注册和管理你的设备。 |
+|![阶段 6：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[阶段 6：信息保护](infoprotect-infrastructure.md)| Office 365 安全功能已启用，你的标签和策略已准备好保护文档和电子邮件。 |
 
 将从最基本的阶段（网络和标识）开始，然后创建基础结构设置和组层，以：
 
@@ -56,7 +56,7 @@ ms.locfileid: "37050303"
 
 以下是 Microsoft 365 企业版整体部署指南中的底层基础结构：
 
-![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![Microsoft 365 企业版整体部署指南中的底层基础结构](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>概览
 
@@ -117,6 +117,6 @@ ms.locfileid: "37050303"
 
 | 我当前的境况 | 我需要达成的目标 |
 |:-------|:-----|
-| 我现在有针对 Office 365、企业移动性 + 安全性 (EMS) 或 Windows 10 企业版的基础结构。 | 请首先利用现有基础结构部署，了解各阶段的退出条件。 |
+| 我现在有针对 Office 365、企业移动性 + 安全性 (EMS) 或 Windows 10 企业版的基础结构。 | 请首先[利用现有基础结构部署](deploy-with-existing-infrastructure.md)，了解各阶段的退出条件。 |
 | 我要作为企业从头开始 | 通过[阶段 1：网络](networking-infrastructure.md)开启你的端到端部署旅程。 |
 | 我要以非企业的身份从头开始 | 通过[针对非企业的部署](deploy-foundation-infrastructure-non-enterprises.md)开启你的端到端部署旅程。 |

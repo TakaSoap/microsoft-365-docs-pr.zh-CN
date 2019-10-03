@@ -3,7 +3,7 @@ title: Contoso Corporation 的 Microsoft 365 企业版安全性摘要
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用 Microsoft 365 企业版的安全功能。
-ms.openlocfilehash: 3de3b748659d713d4db8375d4bcc51ce89573d79
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 394120f811057258afe1bd29e60733e42bf5191a
+ms.sourcegitcommit: 4acd6fc368f547eb7a25d04799cb1a77003b143d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054964"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37372713"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 企业版安全性摘要
 
@@ -31,8 +31,8 @@ ms.locfileid: "36054964"
 - 保护电脑和电子邮件免受恶意软件的攻击
 - 对基于云的数字资产的权限定义哪些用户可访问哪些内容及他们可执行哪些操作，并被设计为最小特权访问权限
 - 对敏感和高度管控的数字资产进行标记和加密，并将其存储在安全位置
-- 通过权限对高度管控的数字资产进行保护
-- IT 安全可从中央仪表板监控安全状态，并收到有关安全事件的通知，以做出快速响应和采取缓解措施。
+- 通过其他加密和权限对高度管控的数字资产进行保护
+- IT 安全人员可从中央仪表板监控当前安全状态，并收到有关安全事件的通知，以做出快速响应和采取缓解措施。
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Contoso 实现 Microsoft 365 安全就绪情况的方式
 
@@ -40,7 +40,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 1. 限制云的管理员帐户
 
-   Contoso 对现有的 Active Directory 域服务 (AD DS) 管理员帐户进行了广泛审阅，并设置了一系列的云管理员帐户和组。
+   Contoso 对现有的 Active Directory 域服务 (AD DS) 管理员帐户进行了广泛审阅，并设置了一系列的专用云管理员帐户和组。
 
 2. 按三个级别执行数据分类分析
 
@@ -56,7 +56,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 - 使用 MFA 和 PIM 的专用全局管理员帐户
 
-  Contoso 创建三种专用全局管理员帐户，它们使用极强密码，并使用多重身份验证 (MFA) 和 Azure AD Privileged Identity Management (PIM) 对其进行保护，而非向日常用户帐户分配全局管理员角色。  PIM 仅在 Microsoft 365 企业版 E5 中提供。
+  Contoso 创建三种专用全局管理员帐户，它们使用强密码，并使用 Azure 多重身份验证 (MFA) 和 Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 对其进行保护，而非向日常用户帐户分配全局管理员角色。 PIM 仅在 Microsoft 365 企业版 E5 中提供。
 
   仅针对特定管理任务执行使用全局管理员帐户登录，只有指定人员才知道密码，且只能在使用 Azure AD PIM 配置的时间范围内使用。 
 
@@ -73,7 +73,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 - 使用条件访问策略更安全地访问设备和应用程序
 
-  Contoso 将[条件访问策略](microsoft-365-policies-configurations.md)用于标识、设备、Exchange Online 和 SharePoint Online。标识条件访问策略包括对高风险用户要求进行密码更改以及阻止客户端使用不支持新式身份验证的应用。设备条件策略包括定义批准的应用和要求使用合规的电脑和移动设备。Exchange Online 条件访问策略包括阻止 ActiveSync 客户端和设置 Office 365 邮件加密。SharePoint Online 条件访问策略包括对敏感和高度管控的网站提供额外的保护。
+  Contoso 将[条件访问策略](microsoft-365-policies-configurations.md)用于标识、设备、Exchange Online 和 SharePoint。标识条件访问策略包括对高风险用户要求进行密码更改以及阻止客户端使用不支持新式身份验证的应用。设备条件策略包括定义批准的应用和要求使用合规的电脑和移动设备。Exchange Online 条件访问策略包括阻止 ActiveSync 客户端和设置 Office 365 邮件加密。SharePoint 条件访问策略包括对敏感和高度管控的网站提供额外的保护。
 
 - Windows Hello 企业版
 
@@ -107,11 +107,11 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 - 使用 Azure 信息保护标签来保护敏感和高度管控的数字资产
 
-  Contoso 确定数据保护的三个级别并部署用户应用于数字资产的 [Azure 信息保护](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)标签。对于其商业秘密和其他知识产权，Contoso 在作用域内策略中对加密内容的高度管控数据使用 Azure 信息保护子标签，并限制对特定安全组的访问。
+  Contoso 确定数据保护的三个级别并部署用户应用于数字资产的 [Office 365 敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。对于其商业秘密和其他知识产权，Contoso 对加密内容的高度管控数据使用敏感度子标签，并限制对特定用户帐户和组组的访问。
 
 - 使用 Office 365 数据丢失防护阻止 intranet 数据泄露
 
-  Contoso 为 Exchange Online、SharePoint Online 和 OneDrive for Business 配置了[数据丢失防护](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)，以阻止用户无意或有意共享敏感数据。
+  Contoso 为 Exchange Online、SharePoint 和 OneDrive for Business 配置了[数据丢失防护](https://docs.microsoft.com/zh-CN/microsoft-365/compliance/data-loss-prevention-policies)，以阻止用户无意或有意共享敏感数据。
 
 - 使用 Windows 信息保护防止设备数据泄露
 
@@ -129,14 +129,14 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 - Azure 安全中心适用于 IT 人员的安全中心仪表板
 
-  Contoso 使用 [Azure 安全中心](https://docs.microsoft.com/intune/introduction-intune)来获取统一的安全和威胁防护视图，以跨其工作负载管理安全策略，并响应网络攻击。
+  Contoso 使用 [Azure 安全中心](https://azure.microsoft.com/services/security-center/)来获取统一的安全和威胁防护视图，以跨其工作负载管理安全策略，并响应网络攻击。
 
 - Windows Defender 安全中心适用于用户的安全中心仪表板
 
-  Contoso 已将 [Windows Defender 安全中心应用](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)部署到运行 Windows 10 企业版的电脑和设备，以便用户能够对其安全状态一目了然并采取操作。
+  Contoso 已将 [Windows 安全应用](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)部署到运行 Windows 10 企业版的电脑和设备，以便用户能够对其安全状态一目了然并采取操作。
 
 
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-sharepoint-online-site-for-highly-confidential-assets.md) Contoso 如何对高度受管制数据创建 SharePoint Online 网站，以推动研究团队之间的协作。
+[了解](contoso-sharepoint-online-site-for-highly-confidential-assets.md) Contoso 如何对高度受管制数据创建 SharePoint 网站，以推动研究团队之间的协作。
 

@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 理解并部署 Microsoft 365 中的 Windows 信息保护。
-ms.openlocfilehash: b624db45c4fe3bd75b2158f225176b7a78ba30f8
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 5d327ea97a24d4b1015940688b7702dc761e826d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047265"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370119"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步骤 4：配置 Windows 信息保护
 
-** 此步骤是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本
+*此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 随着越来越多的个人设备被用于工作，应用和设备泄露私人组织数据的风险增加。 例如，员工无意中将未来产品的市场营销计划图片发送到社交媒体网站，或将包含高度机密信息的文件保存到其公有云存储。 
 
@@ -49,6 +49,6 @@ Windows 信息保护 (WIP) 有助于防止 Windows 10 设备上的这些类型�
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)|[配置 Office 365 数据丢失防护](infoprotect-data-loss-prevention.md)|
+|![第 5 步](./media/stepnumbers/Step5.png)|[配置 Office 365 数据丢失防护](infoprotect-data-loss-prevention.md)|
 
 

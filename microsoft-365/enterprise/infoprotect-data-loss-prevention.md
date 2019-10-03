@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并部署 Microsoft 365 中的 Office 365 数据丢失防护。
-ms.openlocfilehash: dbe88885812e51b0daefa89dae123af5907c60a8
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 43ebfb39202e407fe6dc7bb4c8e0fe8f906f7a6d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047245"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370159"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>步骤 5：配置 Office 365 数据丢失防护
 
 *此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 通过 Office 365 安全与合规中心的数据丢失防护 (DLP) 策略，可在 Microsoft 365 内识别、监视和自动保护敏感数据。 DLP 策略可助你实现以下操作：
 
@@ -58,6 +58,6 @@ DLP 策略指定以下内容：
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)|[配置电子邮件加密](infoprotect-email-encryption.md)|
+|![第 6 步](./media/stepnumbers/Step6.png)|[配置电子邮件加密](infoprotect-email-encryption.md)|
 
 

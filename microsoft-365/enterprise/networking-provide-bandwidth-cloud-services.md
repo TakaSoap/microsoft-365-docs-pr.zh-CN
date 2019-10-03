@@ -3,7 +3,7 @@ title: 第 1 步：准备用于 Microsoft 365 的网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 企业版云服务对 Internet 带宽的需求。
-ms.openlocfilehash: a0af61e378618bba4fbda0518543d89ba8da2b4e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ea92bcbd19c0b4cef16292d652cf5f8aa45aee07
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074182"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370289"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>第 1 步：准备用于 Microsoft 365 的网络
 
-** 此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本
+*此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![阶段 1：网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 在第 1 步中，必须：
 
@@ -40,5 +40,5 @@ ms.locfileid: "34074182"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[配置每个办公室的本地 Internet 连接](networking-dns-resolution-same-location.md)|
+|![第 2 步](./media/stepnumbers/Step2.png)|[配置每个办公室的本地 Internet 连接](networking-dns-resolution-same-location.md)|
 

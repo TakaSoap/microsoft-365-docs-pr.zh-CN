@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 直接在云中或通过与本地目录同步来添加用户帐户和组。
-ms.openlocfilehash: ce831a6866f61342f6eb93836d44637742007c03
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075412"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370219"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步骤 4：添加用户帐户
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## <a name="create-your-user-accounts-for-cloud-only-identity"></a>为仅限云的标识创建用户帐户
@@ -126,4 +126,4 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [使用组进行管理](identity-use-group-management.md) |
+|![第 5 步](./media/stepnumbers/Step5.png)| [使用组进行管理](identity-use-group-management.md) |

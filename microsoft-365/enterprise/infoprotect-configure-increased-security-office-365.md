@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 为 Microsoft 365 了解和配置提升的安全性。
-ms.openlocfilehash: b51cb38a386292b79fdfe264c9d8a86973aa6325
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 290b10dd8e0bf9a7180bae72669b22f3d575f914
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047275"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370169"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>步骤 3：为 Microsoft 365 配置提升的安全性:
 
 *此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 若要确保 Microsoft 365 订阅及其数据启用，并保持安全免遭恶意威胁的侵害，请配置以下各项：
 
@@ -57,6 +57,6 @@ Office 365 ATP 仅在 Microsoft 365 企业版 E5 中提供。
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
+|![第 4 步](./media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
 
 
