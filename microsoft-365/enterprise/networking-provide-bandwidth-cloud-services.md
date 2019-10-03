@@ -3,7 +3,7 @@ title: 第 1 步：准备用于 Microsoft 365 的网络
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,32 +13,32 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 企业版云服务对 Internet 带宽的需求。
-ms.openlocfilehash: a0af61e378618bba4fbda0518543d89ba8da2b4e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ea92bcbd19c0b4cef16292d652cf5f8aa45aee07
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074182"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370289"
 ---
-# <a name="step-1-prepare-your-network-for-microsoft-365"></a><span data-ttu-id="df257-103">第 1 步：准备用于 Microsoft 365 的网络</span><span class="sxs-lookup"><span data-stu-id="df257-103">Step 1: Prepare your network for Microsoft 365</span></span>
+# <a name="step-1-prepare-your-network-for-microsoft-365"></a><span data-ttu-id="c21c2-103">第 1 步：准备用于 Microsoft 365 的网络</span><span class="sxs-lookup"><span data-stu-id="c21c2-103">Step 1: Prepare your network for Microsoft 365</span></span>
 
-<span data-ttu-id="df257-104">\*\* 此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本</span><span class="sxs-lookup"><span data-stu-id="df257-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+<span data-ttu-id="c21c2-104">*此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*</span><span class="sxs-lookup"><span data-stu-id="c21c2-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![阶段 1：网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-<span data-ttu-id="df257-105">在第 1 步中，必须：</span><span class="sxs-lookup"><span data-stu-id="df257-105">In Step 1, you must:</span></span>
+<span data-ttu-id="c21c2-106">在第 1 步中，必须：</span><span class="sxs-lookup"><span data-stu-id="c21c2-106">In Step 1, you must:</span></span>
 
-- <span data-ttu-id="df257-106">根据 Microsoft 365 企业版云服务的流量，评估和调整内部链接和 Internet 连接的网络带宽。</span><span class="sxs-lookup"><span data-stu-id="df257-106">Evaluate and adjust network bandwidth for internal links and Internet connections to account for traffic to Microsoft 365 Enterprise cloud services.</span></span>
-- <span data-ttu-id="df257-107">使用 [Office 365 参考体系结构](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)保持网络一致性。</span><span class="sxs-lookup"><span data-stu-id="df257-107">Align your network with an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).</span></span>
-- <span data-ttu-id="df257-108">计划更改、试用更改，然后测试该更改是否适合带宽和通信延迟要求。</span><span class="sxs-lookup"><span data-stu-id="df257-108">Plan the changes, pilot them, and then test whether the changes fit your bandwidth and traffic latency requirements.</span></span>
+- <span data-ttu-id="c21c2-107">根据 Microsoft 365 企业版云服务的流量，评估和调整内部链接和 Internet 连接的网络带宽。</span><span class="sxs-lookup"><span data-stu-id="c21c2-107">Evaluate and adjust network bandwidth for internal links and Internet connections to account for traffic to Microsoft 365 Enterprise cloud services.</span></span>
+- <span data-ttu-id="c21c2-108">使用 [Office 365 参考体系结构](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)保持网络一致性。</span><span class="sxs-lookup"><span data-stu-id="c21c2-108">Align your network with an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).</span></span>
+- <span data-ttu-id="c21c2-109">计划更改、试用更改，然后测试该更改是否适合带宽和通信延迟要求。</span><span class="sxs-lookup"><span data-stu-id="c21c2-109">Plan the changes, pilot them, and then test whether the changes fit your bandwidth and traffic latency requirements.</span></span>
 
-<span data-ttu-id="df257-109">有关使用 Office 365 的 ExpressRoute 和 Microsoft 365 企业版的其他云服务的信息和建议，请参阅[适用于 Office 365 的 Azure ExpressRoute](https://docs.microsoft.com/office365/enterprise/azure-expressroute)。</span><span class="sxs-lookup"><span data-stu-id="df257-109">For information and recommendations about using ExpressRoute with Office 365 and the other cloud services of Microsoft 365 Enterprise, see [Azure ExpressRoute for Office 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute).</span></span>
+<span data-ttu-id="c21c2-110">有关使用 Office 365 的 ExpressRoute 和 Microsoft 365 企业版的其他云服务的信息和建议，请参阅[适用于 Office 365 的 Azure ExpressRoute](https://docs.microsoft.com/office365/enterprise/azure-expressroute)。</span><span class="sxs-lookup"><span data-stu-id="c21c2-110">For information and recommendations about using ExpressRoute with Office 365 and the other cloud services of Microsoft 365 Enterprise, see [Azure ExpressRoute for Office 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute).</span></span>
 
-<span data-ttu-id="df257-110">作为临时检查点，请查看对应于此步骤的[退出条件](networking-exit-criteria.md#crit-networking-step1)。</span><span class="sxs-lookup"><span data-stu-id="df257-110">As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step1) corresponding to this step.</span></span>
+<span data-ttu-id="c21c2-111">作为临时检查点，请查看对应于此步骤的[退出条件](networking-exit-criteria.md#crit-networking-step1)。</span><span class="sxs-lookup"><span data-stu-id="c21c2-111">As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step1) corresponding to this step.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="df257-111">后续步骤</span><span class="sxs-lookup"><span data-stu-id="df257-111">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="c21c2-112">后续步骤</span><span class="sxs-lookup"><span data-stu-id="c21c2-112">Next step</span></span>
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[<span data-ttu-id="df257-112">配置每个办公室的本地 Internet 连接</span><span class="sxs-lookup"><span data-stu-id="df257-112">Configure local Internet connections for each office</span></span>](networking-dns-resolution-same-location.md)|
+|![第 2 步](./media/stepnumbers/Step2.png)|[<span data-ttu-id="c21c2-114">配置每个办公室的本地 Internet 连接</span><span class="sxs-lookup"><span data-stu-id="c21c2-114">Configure local Internet connections for each office</span></span>](networking-dns-resolution-same-location.md)|
 
