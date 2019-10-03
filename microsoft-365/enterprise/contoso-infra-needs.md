@@ -3,7 +3,7 @@ title: Contoso 的 IT 基础结构和业务需求
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,17 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 本地 IT 基础设施的基本结构，以及 Microsoft 365 企业版如何满足其业务需求。
-ms.openlocfilehash: e50a2b17544c1a551d25dffd751d12aec1c15ecd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: d22763cede23d28c76a28c95a6e4772af81a996c
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072612"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369583"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基础结构和业务需求
 
 **摘要：** 了解 Contoso 本地 IT 基础设施的基本结构，以及 Microsoft 365 企业版如何满足其业务需求。
-
 
 Contoso 正在从本地集中式 IT 基础结构转换到一个合并了基于云的个人生产率工作负载和应用程序的包含云的 IT 基础结构。
 
@@ -33,7 +32,7 @@ Contoso 通过将应用程序数据中心置于巴黎总部，来使用最集中
 
 图 1 显示总部办事处及应用程序数据中心、DMZ 和 Internet。
 
-![](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Contoso 的现有 IT 基础结构](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **图 1 Contoso 的现有 IT 基础结构**
  
@@ -43,15 +42,15 @@ Contoso 通过将应用程序数据中心置于巴黎总部，来使用最集中
 - 一组旧版 SharePoint server。
 - 用于文件存储的组织级和工作组级服务器。
 
-此外，每个区域中心办事处都支持一组具有类似应用程序集的服务器。这些服务器处于区域 IT 部门的控制之下。
+此外，每个区域中心办事处都支持一组服务器和一组类似的应用程序。 这些服务器受区域 IT 部门的控制。
 
 这些独立的多地理数据中心的应用程序和数据上的可搜索性仍然是一个挑战。
 
 在 Contoso 总部 DMZ 中，不同的服务器集提供不同的功能：
 
-- 巴黎总部的工作人员对 Contoso Intranet 和 Web 代理基于 VPN 的远程访问。
 - 对 Contoso 公共网站的托管，客户可以在其中订购产品、部件、配件或服务。
 - 对 Contoso 合作伙伴 Extranet 的托管，用于合作伙伴的通信和协作。
+- 巴黎总部的工作人员对 Contoso Intranet 和 Web 代理基于虚拟专用网 (VPN) 的远程访问。
 
 ## <a name="contosos-business-needs"></a>Contoso 的业务需求
 
@@ -81,7 +80,7 @@ Contoso 的业务需求分为五个主要类别。
 
 - 信息保护
 
-  锁定对高价值数字资产（如客户数据、设计规范和员工信息）的访问并加密。
+  锁定对高价值数字资产（如客户数据、设计和制造规范以及员工信息）的访问并加密。
 
 - 安全管理
 
@@ -111,7 +110,7 @@ Contoso 的业务需求分为五个主要类别。
 
 - 减少管理客户端电脑和设备上运行的软件的 IT 开销
 
-  在组织中自动安装 Windows 操作系统和 Microsoft Office 更新。
+  在组织中自动安装 Windows 操作系统和 Microsoft Office 专业增强版更新。
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>将 Contoso 业务需求映射到 Microsoft 365 企业版
 
@@ -121,27 +120,27 @@ Contoso 的 IT 部门会在部署之前，确定以下映射到 Microsoft 365 �
 |:-------|:-----|:-----|
 | **类别** | **业务需要** | **Microsoft 365 企业版的产品或功能** |
 | 工作效率 |  |  |
-|  | 简化协作 | Teams、SharePoint Online、Skype for Business Online |
-|  | 提高远程和移动工作者的工作效率 | Office 365 工作负载和基于云的数据 |
+|  | 简化协作 | Microsoft Teams、SharePoint、OneDrive |
+|  | 提高远程和移动工作者的工作效率 | Microsoft 365 工作负载和基于云的数据 |
 |  | 提高创造力和革新能力 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
-|  | 标识和访问管理 | 专用全局管理员帐户使用多重身份验证 (MFA) 和 Azure AD Privileged Identity Management (PIM) <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> Windows Hello <BR> Windows Credential Guard |
+|  | 标识和访问管理 | 专用全局管理员帐户使用 Azure 多重身份验证 (MFA) 和 Azure AD Privileged Identity Management (PIM) <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> 高级威胁防护 <BR> Office 365 高级威胁防护 <BR> Office 365 威胁调查和响应 <BR> |
-|  | 信息保护 | Azure 信息保护 <BR> Office 365 数据丢失防护 (DLP) <BR> Windows 信息保护 <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | 信息保护 | Azure 信息保护 <BR> Office 365 数据丢失防护 (DLP) <BR> Windows 信息保护 (WIP) <BR> Microsoft 云应用安全 <BR> Microsoft Intune |
 |  | 安全管理 | Azure 安全中心  <BR> Windows Defender 安全中心 |
 | 远程和移动访问及业务合作伙伴 |  |  |
 |  | 提高远程和移动工作者的安全性 | Microsoft Intune |
-|  | 减少员工远程访问基础结构 | Office 365 工作负载和基于云的数据 |
+|  | 减少员工远程访问基础结构 | Microsoft 365 工作负载和基于云的数据 |
 |  | 为 B2B 交易提供更好的连接并减少开销 | 联合身份验证和基于云的资源 |
 | 合规性 |  |  |
 |  | 遵守区域法规要求 | Office 365 中的 GDPR 功能 |
 | 管理 |  |  |
-|  | 减少安装客户端更新的 IT 开销 | 部署圈 <BR> Windows 10 就地升级和 Autopilot <BR> Office 365 专业增强版 |
+|  | 减少安装客户端更新的 IT 开销 | 部署圈 <BR> Windows 10 企业版更新 <BR> Office 365 专业增强版更新 |
 ||||
 
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-networking.md) Contoso Corporation 本地网络，以及它是如何进行优化，以跨整个组织访问或延迟访问 Microsoft 365 基于云的资源。
+[了解](contoso-networking.md) Contoso Corporation 本地网络，以及它是如何进行优化，以访问或延迟访问 Microsoft 365 基于云的资源。
 
 ## <a name="see-also"></a>另请参阅
 
