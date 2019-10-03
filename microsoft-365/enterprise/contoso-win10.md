@@ -3,7 +3,7 @@ title: Contoso Windows 10 企业版部署
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 System Center Configuration Manager 来部署 Windows 10 企业版的就地升级。
-ms.openlocfilehash: 03ee4d9efcedf42eb976e001411299d2080abf83
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073852"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370469"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso Windows 10 企业版部署
 
 **摘要：** 了解 Contoso 如何使用 System Center Configuration Manager 来部署 Windows 10 企业版的就地升级。
 
-在广泛推出 Microsoft 365 企业版之前，Contoso 的 Windows 兼容电脑和设备混合运行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要将其电脑升级为 Windows 10 企业版，以利用自动部署更新中改进的安全性并减少 IT 开销。 
+在广泛推出 Microsoft 365 企业版之前，Contoso 的 Windows 兼容电脑和设备混合运行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要将其电脑升级为 Windows 10 企业版，以利用自动部署更新中的高级安全性并减少 IT 开销。 
 
 在评估其基础结构和业务需求之后，Contoso 确定了这些部署的关键要求：
 
@@ -45,11 +45,11 @@ ms.locfileid: "34073852"
 
 - 更新合规性  
 
-  收集系统和诊断数据，包括更新安装进度、适用于企业的 Windows 更新 (WUfB) 配置数据、Windows Defender 防病毒数据和其他特定于更新的信息，然后将此数据存储在云分析和使用情况中。
+  显示有关 Windows 更新的设备状态，以便你可以根据需要确保它们位于最新的更新中。
 
 - 设备运行状况  
 
-  收集 Windows 10 系统和诊断数据，包括更新安装进度、适用于企业的 Windows 更新 (WUfB) 配置数据、Windows Defender 防病毒数据和其他特定于更新的信息，然后将此数据存储在云分析和使用情况中。
+  识别由于经常崩溃而可能需要重新生成或替换的设备以及导致设备崩溃的设备驱动程序，还包括有关这些驱动程序的可减少崩溃次数的替代版本建议。 提供 Windows 信息保护错误配置的通知，向最终用户发送相关提示。
  
 Contoso 具有一个现有的 System Center Configuration Manager (Current Branch) 基础结构。Configuration Manager 针对大型环境进行缩放，并在安装、更新和设置过程中提供广泛的控制。它还具有内置功能，能够更为轻松和高效地部署和管理 Windows 10 企业版。
 
@@ -75,20 +75,18 @@ Contoso 具有一个现有的 System Center Configuration Manager (Current Branc
 4. 使用 Windows Analytics 的设备运行状况和更新合规性解决方案，为三个验证和部署暂存环中的电脑和设备执行成功评估。
 5. 基于 Windows Analytics 信息，Contoso 已确定 Windows 10 企业版将部署到广泛部署环的版本。
 6. 运行 Configuration Manager 部署任务序列，将选定的 Windows 包部署到广泛部署环中。
-7. 使用由 Windows Analytics 提供的用于解决问题的设备运行状况和更新合规性解决方案监视广泛部署环中的电脑和设备。
+7. 使用可解决问题的设备运行状况和更新合规性解决方案来监视广泛部署环中的电脑和设备。
 
-图 1 显示就地升级和持续更新部署体系结构。
+下面是 Contoso 的就地升级和持续更新部署体系结构。
 
-![](./media/contoso-win10/contoso-win10-fig1.png)
- 
-**图 1：Contoso 的 Windows 10 企业版部署基础结构**
+![Contoso 的 Windows 10 企业版部署基础结构](./media/contoso-win10/contoso-win10-fig1.png)
 
 此基础结构的组成部分：
 
 - System Center Configuration Manager：
   - 从 Microsoft 网络的 Microsoft 批量许可中心获取 Windows 10 企业版包的图像。
   - 是用于部署包的集中管理点。
-- 通常位于 Contoso 分支办事处的区域分发点。
+- 通常位于 Contoso 区域中心办事处的区域分发点。
 - 不同位置的 Windows 电脑和设备接收和安装部署包，用于就地升级或基于环成员的持续更新。
 
 ## <a name="next-step"></a>后续步骤
