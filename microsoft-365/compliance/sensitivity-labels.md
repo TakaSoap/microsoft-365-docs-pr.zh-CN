@@ -1,7 +1,7 @@
 ---
 title: 敏感度标签概述
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: d732303db1c2b138349a88fde45bd2aefb745c89
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: c0f7438d0ee8de873122cdf9bf08878a7edebaf6
+ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148516"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37378614"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -47,6 +47,8 @@ ms.locfileid: "37148516"
 可在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的“**分类**” > “**敏感度标签**”下创建敏感度标签。 这些敏感度标签可供 Azure 信息保护、Office 应用和 Office 365 服务使用。
 
 对于 Azure 信息保护客户，可以在其他管理中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 **Azure 信息保护标签和 Office 365 敏感度标签彼此完全相互兼容。** 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。
+
+>注意：仅全局（公共）云中的租户支持灵敏度标签。 其他云（如[国家云](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)）中的租户不支持敏感度标签。
 
 ## <a name="what-a-sensitivity-label-is"></a>什么是敏感度标签
 
@@ -206,6 +208,7 @@ ms.locfileid: "37148516"
 
 - [将敏感度标签应用于 Office 文档和电子邮件](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 - [将敏感度标签应用于 Office 文件时的已知问题](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [敏感度标签在 Office 应用中的工作方式](sensitivity-labels-office-apps.md)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>如何结合使用敏感度标签与现有 Azure 信息保护标签
 

@@ -3,7 +3,7 @@ title: 第 1 阶段：网络基础结构退出条件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,32 +13,32 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对网络基础结构的条件。
-ms.openlocfilehash: 9d818a97e79465d639c52f96901bd1cbaa31144a
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ad54284fdbd00fef486a13a957af6f06cb6a7450
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982773"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370149"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第 1 阶段：网络基础结构退出条件
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![第 1 阶段 - 网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 确保你的网络基础结构符合以下必需条件，以及你认为可选的那些条件。
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必需：网络已准备就绪可供 Microsoft 365 企业版使用
 
-- 办公室具有足够的 Internet 带宽，可用于 Microsoft 365 流量，其中包括 Office 365、Microsoft Intune 与 Windows 10 企业版安装和更新
-- [Office 365 参考体系结构](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)的整个网络地图
-- 网络更改已经过试用和测试，符合流量延迟要求 
+- 你的办公室有足够的 Internet 带宽来处理 Microsoft 365 流量，包括 Office 365、Microsoft Intune 以及 Windows 10 企业版安装和更新。
+- 你的整个网络都映射到 [Office 365 参考体系结构](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)。
+- 你的网络更改已经过试用和测试，符合流量延迟要求。
 
 如果需要，可在[步骤 1](networking-provide-bandwidth-cloud-services.md) 中进行设置以满足此要求。
 
 <a name="crit-networking-step2"></a>
 ## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>必需：本地办公室具有本地 Internet 连接和名称解析
 
-通过本地 ISP（其 DNS 服务器使用在 Internet 上标识其位置的本地公用 IP 地址）来配置每个本地办公室的 Internet 访问。这可确保访问 Office 365 和 Intune 的用户获得最佳性能。
+通过本地 ISP（其 DNS 服务器使用在 Internet 上标识其位置的本地公用 IP 地址）来配置具有 Internet 访问权限的每个本地办公室。 这可确保访问 Microsoft 365 云服务的用户获得最佳性能。
 
 如果每个分支机构不使用本地 ISP，则性能可能会受到影响，因为网络通信必须遍历组织的主干线或由远程前端服务器提供服务的数据请求。
 
@@ -48,7 +48,7 @@ ms.locfileid: "36982773"
 如果需要，可在[步骤 2](networking-dns-resolution-same-location.md) 中进行设置以满足此要求。
 
 <a name="crit-networking-step3"></a>
-## <a name="optional-unneeded-network-hairpins-are-removed"></a>可选：删除不需要的网络回流
+## <a name="optional-unneccessary-network-hairpins-are-removed"></a>可选：删除不必要的网络回流
 
 检查网络回流并为所有办公室确定这些回流对性能的影响。在可能的情况下删除网络回流，或与第三方网络或安全提供商协作，以实现与其网络对等的最优 Microsoft 365。
 
@@ -83,4 +83,4 @@ ms.locfileid: "36982773"
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是[标识](identity-infrastructure.md)。 |
+|![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是[标识](identity-infrastructure.md)。 |

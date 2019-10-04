@@ -1,10 +1,10 @@
 ---
-title: 自动调查并响应 Office 365 中的威胁
+title: 在 Office 365 中自动调查和响应威胁
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动事件响应功能高级威胁防护计划2。
-ms.openlocfilehash: 5def4ab38c14629f2840e4b833fa9430d234e75c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 293b567cf24e9c6b0e33e28e9dd1ca0453fd0cd1
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075822"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37385729"
 ---
-# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>自动调查并响应 Office 365 中的威胁
+# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>在 Office 365 中自动调查和响应威胁
 
 ## <a name="overview"></a>概述
 
-[Office 365 高级威胁防护](office-365-atp.md)计划2包括自动事件响应（空气）功能，可节省安全操作团队在处理警报和威胁时的时间和工作。 
+根据你的订阅， [Office 365 高级威胁防护](office-365-atp.md)可以包括自动事件响应（空气）功能，可节省安全操作团队时间和处理警报和威胁的工作。
+
 - 若要开始使用 Office 365 中的 AIR 功能，请使用本文。 
 - 若要了解无线的工作原理，请参阅[Office 365 中的自动化事件响应（空中）](automated-investigation-response-office.md)。
 
@@ -37,6 +38,12 @@ ms.locfileid: "37075822"
 
 > [!NOTE]
 > 您必须是全局管理员、安全管理员、安全操作员或安全读者才能执行本文中所述的任务。 若要了解详细信息，请参阅[Microsoft 365 安全中心：角色和权限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+
+以下订阅中包含空中：
+- Microsoft 365 E5
+- Microsoft 365 E5 安全性
+- Office 365 E5
+- Office 365 高级威胁防护计划2
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
 

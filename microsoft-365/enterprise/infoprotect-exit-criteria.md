@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 检查基于信息保护的服务和基础结构的条件，确保你的配置满足 Microsoft 365 企业版的要求。
-ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: f4896baeb4c18fc1eabac10b15f3ad8e150ab260
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047235"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370129"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>信息保护基础结构退出条件
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 确保你的信息保护基础结构符合以下必需条件，以及你认为可选的那些条件。
 
@@ -89,7 +89,7 @@ ms.locfileid: "37047235"
 必要时请执行[步骤 5](infoprotect-data-loss-prevention.md)，这样做有助于满足此要求。 
 
 <a name="crit-infoprotect-step6"></a>
-## <a name="optional-email-encryption-is-configured"></a>可选：配置电子邮件加密
+## <a name="optional-email-encryption-is-configured"></a>必需：为你的组织定义安全和信息保护级别
 
 已根据组织的需要配置以下电子邮件加密：
 

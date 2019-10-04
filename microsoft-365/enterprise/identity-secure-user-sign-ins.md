@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你可以让用户更安全地登录到 Windows 设备和 Microsoft 365。
-ms.openlocfilehash: edf51b344ed8f9c8e13587cc2ccf0ba1ed081da6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075407"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370189"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>步骤 3：保护和管理用户登录
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -92,4 +92,4 @@ Windows 10 企业版中的 Windows Hello 企业版在 Windows 设备上签名时
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [添加用户帐户](identity-add-user-accounts.md) |
+|![第 4 步](./media/stepnumbers/Step4.png)| [添加用户帐户](identity-add-user-accounts.md) |

@@ -6,30 +6,43 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
+ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047225"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391215"
 ---
 # <a name="getting-help-for-end-users"></a>获取最终用户的帮助
 
 您的组织中的用户可以通过两种方式获取 Microsoft 托管桌面设备的帮助：**获取帮助**应用程序或电话支持。 这两个支持选项均可用于每周7天、每天24小时的用户。
  
 >[!NOTE]
->这些支持选项对测试组中的设备不可用。 
+>这些支持选项对测试组中的设备不可用。
 
 ## <a name="get-help-app"></a>获取帮助应用程序
 
-为您的用户提供支持的首选方法是**获取帮助**，这是一个内置于最终用户设备中的易于使用的界面。  
+为您的用户提供支持的首选方法是**获取帮助**，这是最终用户设备中内置的易于使用的界面。  
 
 ![获取帮助](images/get-help.png)
 
 这是安装在所有 Microsoft 托管桌面设备上并固定到任务栏的应用程序。 
 
 - 最终用户可以请求回叫提供的电话号码，或与服务代表在线聊天。
-- 位于 Microsoft 托管桌面支持范围之外的请求将通过电话呼叫重定向到本地 IT 支持人员。  
+- 位于 Microsoft 托管桌面支持范围之外的请求将通过电话呼叫重定向到本地 IT 支持人员。
+
+### <a name="prerequisites"></a>先决条件
+为了让最终用户能够通过应用获取帮助，请确保满足以下先决条件：
+
+- 必须使用[设置 Microsoft 托管桌面设备](../get-started/set-up-devices.md)中的方法之一在 Microsoft 托管桌面注册设备，例如[自己注册新设备](../get-started/register-devices-self.md)。
+- 设备的显示语言必须设置为以下任何英语语言区域设置： en-us、en、en、en、en 或 en-ca。
+- "获取帮助" 应用程序应处于最新状态。 若要确认这一点，请检查 Microsoft Store 中的应用程序更新。
+- 某些[终结点](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop)必须可从设备访问。
+
+> [!NOTE]
+> 在部署设备以完全运行后，获取帮助应用程序最多可能需要一小时时间。
+
+如果你已检查这些先决条件且获取帮助应用仍无法正常工作，你作为 IT 管理员应将[支持请求](admin-support.md)文件。
 
 ## <a name="phone-support"></a>电话支持 
 

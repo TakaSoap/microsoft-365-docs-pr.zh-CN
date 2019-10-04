@@ -3,7 +3,7 @@ title: 步骤 5：优化客户端和 Office 365 服务性能
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 配置 TCP 设置和 Office 365 服务以提高性能。
-ms.openlocfilehash: 9e786b36d7a2afccc3b9112b815cd42a40317c15
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f89ae816780101c31971c8e3e60df803f82f1e55
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073182"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370069"
 ---
 # <a name="step-5-optimize-client-and-office-365-service-performance"></a>步骤 5：优化客户端和 Office 365 服务性能
 
-** 此步骤是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本
+*此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![阶段 1：网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 你可以微调传输控制协议 (TCP) 在客户端设备和 Office 365 服务之间的工作方式，以提高性能。
 
@@ -37,12 +37,12 @@ ms.locfileid: "34073182"
 
 有关 Office 365 服务，请参阅其他资源以优化性能：
 
-- [Exchange Online](https://support.office.com/article/Tune-Exchange-Online-performance-026e83cb-a945-4543-97b0-a8af6e80ac61)
-- [Skype for Business Online](https://support.office.com/article/Tune-Skype-for-Business-Online-performance-beec23c2-c5d6-4e84-a8af-e82aefca7802)
-- [SharePoint Online](https://support.office.com/article/Tune-SharePoint-Online-performance-f0522d4a-fbf4-41f9-854e-c9b59555091d)
-- [Project Online](https://support.office.com/article/Tune-Project-Online-performance-12ba0ebd-c616-42e5-b9b6-cad570e8409c)
+- [Exchange Online](https://docs.microsoft.com/office365/enterprise/tune-exchange-online-performance)
+- [Skype for Business Online](https://docs.microsoft.com/office365/enterprise/tune-skype-for-business-online-performance)
+- [SharePoint Online](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance)
+- [Project Online 中的 Project Web App](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 
-作为临时检查点，请查看对应于此步骤的[退出条件](networking-exit-criteria.md#crit-networking-step5)。
+作为临时检查点，可查看这一步的[退出条件](networking-exit-criteria.md#crit-networking-step5)。
 
 ## <a name="next-step"></a>后续步骤
 

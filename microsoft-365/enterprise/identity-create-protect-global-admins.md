@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 全局管理员帐户需要特殊对待，以确保其免受凭据泄露的影响。
-ms.openlocfilehash: a32781686cd972ca96f6bb08f31c15ede016c4cd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075408"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370209"
 ---
-# <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步骤1：创建和保护全局管理员帐户
+# <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步骤 1：创建和保护全局管理员帐户
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>保护全局管理员帐户
@@ -110,5 +110,5 @@ Office 365 租户中的特权访问管理可通过配置相应策略来实现，
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [保护密码安全](identity-secure-your-passwords.md) |
+|![第 2 步](./media/stepnumbers/Step2.png)| [保护密码安全](identity-secure-your-passwords.md) |
 

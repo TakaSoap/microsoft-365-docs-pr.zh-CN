@@ -3,7 +3,7 @@ title: Office 365 中的自动化调查和响应（空气）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的自动化调查和响应功能。
-ms.openlocfilehash: 1e600a7a392acc34fac2547a3daa17c0058322b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075080"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386199"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
-自动化调查和响应（空中）功能（包括在[Office 365 高级威胁防护](office-365-atp.md)计划2中）使您能够运行自动调查过程，以应对目前存在的已知威胁。 空中可帮助您的安全操作团队更高效地运行。
+自动化调查和响应（空中）功能使您能够运行自动化的调查过程，以应对目前存在的已知威胁。 空中可帮助您的安全操作团队更高效地运行。
 - 若要了解空气的工作原理，请使用本文。
 - 若要开始使用 AIR，请参阅[在 Office 365 中自动调查和响应威胁](office-365-air.md)。
 
 > [!NOTE]
 > 您必须是全局管理员、安全管理员、安全操作员或安全读者才能访问空中功能。 若要了解有关这些权限的详细信息，请参阅[Microsoft 365 安全中心：角色和权限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+
+以下订阅中包含空中：
+- Microsoft 365 E5
+- Microsoft 365 E5 安全性
+- Office 365 E5
+- Office 365 高级威胁防护计划2
 
 ## <a name="the-overall-flow-of-air"></a>空气的整体流动
 
@@ -57,8 +63,12 @@ ms.locfileid: "37075080"
 
 - 包含在传递后删除的网络钓鱼 Url 的电子邮件 *
 
+- 检测到可疑的电子邮件发送模式#
+
+- 限制用户发送电子邮件#
+
 > [!NOTE]
-> 在安全 & 合规性中心（电子邮件通知已关闭）的相应警报策略中，会为标有星号的警报分配一个*信息性*严重性。 可以通过[报警策略配置](../../compliance/alert-policies.md#alert-policy-settings)启用电子邮件通知。
+> 以星号（*）标记的警报在安全 & 合规性中心（电子邮件通知已关闭）的相应警报策略中被分配了一个*信息性*严重性。 可以通过[报警策略配置](../../compliance/alert-policies.md#alert-policy-settings)启用电子邮件通知。 使用哈希（#）标记的警报通常是与公共预览版行动手册相关联的警报。
 
 若要查看警报，请在安全 & 合规性中心中，选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 请注意，默认情况下通知视图中隐藏了信息警报。 若要查看它们，您需要更改警报筛选以包含信息警报。
 
@@ -74,15 +84,18 @@ ms.locfileid: "37075080"
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>安全行动手册在几个阶段推出
 
-作为空气的一部分，安全行动手册将分阶段推出。 在第1阶段（预览在4月2019开始推出），发布了多个行动手册，其中包含安全管理员查看和批准的操作的建议：
+作为空气的一部分，安全行动手册将分阶段推出。 第1阶段现已推出，其中包含多个行动手册，这些操作提供了安全管理员可以查看和批准的操作建议：
 - 用户报告的网络钓鱼邮件
-- URL 单击 "判定更改" 
+- URL 单击 "判定更改"
 - 恶意软件检测到送达后（恶意软件 ZAP）
 - 网络钓鱼检测到传递后的 ZAP （网络钓鱼 ZAP）
 
-第1阶段还包括手动电子邮件调查（使用[威胁资源管理器](threat-explorer.md)）。
+第1阶段还包括对手动电子邮件调查的支持（使用[威胁资源管理器](threat-explorer.md)）。
 
-目前正在进行阶段2。 访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)以查看计划和即将推出的其他内容。
+第2阶段现在与**公共预览版**中的以下行动手册结合在一起，为操作和 aiding 安全管理员提供调查问题的建议：
+- 用户报告为 "已损坏" （公用预览）
+
+在完成后，将立即发布后续行动手册。 访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)以查看计划和即将推出的其他内容。
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>行动手册包括调查和建议
 
@@ -99,7 +112,7 @@ ms.locfileid: "37075080"
 
 ![空气的主要调查页面](../media/air-maininvestigationpage.png) 
   
-可以执行下列操作：
+可执行下列操作：
 - 直接导航到调查（选择**调查 ID**）。
 - 应用筛选器。 从**调查类型**、**时间范围**、**状态**或这些情况的组合中进行选择。
 - 将数据导出到 .csv 文件。
@@ -124,7 +137,7 @@ ms.locfileid: "37075080"
 
 ![空中调查图形页面](../media/air-investigationgraphpage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取当前调查的直观概述。
 - 查看调查持续时间的摘要。
 - 在可视化中选择一个节点以查看该节点的详细信息。
@@ -136,7 +149,7 @@ ms.locfileid: "37075080"
 
 ![空气警报页面](../media/air-investigationalertspage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取当前触发警报和任何关联警报的直观概述。
 - 在列表中选择一个警报，打开显示完整警报详细信息的飞出页面。
 
@@ -169,7 +182,7 @@ ms.locfileid: "37075080"
 
 ![空中电子邮件调查页面](../media/air-investigationemailpage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取当前群集结果和发现的威胁的直观概述。
 - 单击 "群集" 实体或威胁列表打开显示完整警报详细信息的弹出页面。
 - 单击 "电子邮件群集详细信息" 选项卡顶部的 "在资源管理器中打开" 链接进一步调查电子邮件群集
@@ -186,7 +199,7 @@ ms.locfileid: "37075080"
 
 ![空中调查用户页](../media/air-investigationuserspage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取已确定的用户结果和发现的风险的直观概述。
 - 选择用户以打开显示完整警报详细信息的飞出页面。
 
@@ -199,7 +212,7 @@ ms.locfileid: "37075080"
 作为调查的一部分，空中将电子邮件威胁与设备相关联。 例如，调查会将恶意文件哈希传递到[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 )以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。 
 
-可以执行下列操作：
+可执行下列操作：
 - 获取发现的当前计算机和威胁的直观概述。
 - 选择一台计算机以打开在 Microsoft Defender 安全中心的相关[Microsoft DEFENDER ATP 调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中的视图。
 
@@ -211,7 +224,7 @@ ms.locfileid: "37075080"
 
 !["航空调查实体" 页](../media/air-investigationentitiespage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取发现的调查实体和威胁的直观概述。
 - 选择一个实体以打开显示相关实体详细信息的飞出页面。
 
@@ -223,7 +236,7 @@ ms.locfileid: "37075080"
 
 ![航空调查日志页](../media/air-investigationlogpage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取有关执行操作手册步骤的直观概述。
 - 将结果导出到 CSV 文件。
 - 筛选视图。
@@ -236,7 +249,7 @@ ms.locfileid: "37075080"
 
 ![航空调查操作页](../media/air-investigationactionspage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取对操作手册建议的操作的直观概述。
 - 选择一个或多个操作。
 - 使用注释批准或拒绝建议的操作。

@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 可以使用组来自动管理某些管理任务。
-ms.openlocfilehash: 01bbce00457362ed0eb089e126f0d17f31237eb4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 769fc0dd69b13978dbb9cf91d890ad271a7d9bb5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075405"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370179"
 ---
 # <a name="step-5-use-groups-for-management"></a>步骤 5：使用组进行管理
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>允许用户创建和管理自己的组
@@ -104,4 +104,4 @@ ms.locfileid: "37075405"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [配置标识治理](identity-configure-identity-governance.md) |
+|![第 6 步](./media/stepnumbers/Step6.png)| [配置标识治理](identity-configure-identity-governance.md) |
