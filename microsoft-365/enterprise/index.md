@@ -10,17 +10,17 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Microsoft 365 企业版文档和资源
-ms.openlocfilehash: 38d349fb17303ac9e9979ae9a58682e01578b70a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c96656495e9433703b85fb1c5f3610a617100253
+ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283474"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391205"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft 365 企业版文档和资源</h1>
-        <P>了解如何在组织中共同规划、部署和使用 Microsoft Office 365、Windows 10 和企业移动性 + 安全性。 这些服务提供了一个集成且安全的基础结构, 可实现团队合作并解锁创造性。</p>
+        <P>了解如何在组织中共同规划、部署和使用 Microsoft Office 365、Windows 10 和企业移动性 + 安全性。 这些服务提供了一个集成且安全的基础结构，可实现团队合作并解锁创造性。</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -78,8 +78,9 @@ ms.locfileid: "32283474"
                                             </div>
                                             <div class="cardText">
                                                 <h3>管理安全&amp;合规性</h3>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">合规性解决方案</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 安全&amp;合规性</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">合规性操作计划</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/" target="_blank">Microsoft 365 合规中心</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/security/" target="_blank">Microsoft 365 安全</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md" target="_blank">标识&amp;设备访问</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
@@ -97,7 +98,7 @@ ms.locfileid: "32283474"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>培训管理员 & 用户</h3>
+                                                <h3>向管理员 & 用户培训</h3>
                                                 <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
@@ -139,7 +140,7 @@ ms.locfileid: "32283474"
                                                 <h3>管理企业移动性 + 安全性</h3>
                                                 <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
-                                                <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a>（Azure 信息保护）</p>
+                                                <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure 信息保护</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure 高级威胁防护</a></p>
                                             </div>
                                         </div>
