@@ -17,6 +17,8 @@
 #### [设备监视和报告](./mtp/monitor-devices.md)
 #### [应用监视和报告](./mtp/monitor-apps.md)
 
+### [通过 ServiceNow 管理票证](./mtp/tickets.md)
+
 ## [Office 365 安全]()
 ### [入门]()
 #### [Office 365 安全路线图](./office-365-security/security-roadmap.md)
