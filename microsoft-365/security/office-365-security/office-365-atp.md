@@ -3,7 +3,7 @@ title: Office 365 高级威胁防护
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 03/28/2019
+ms.date: 10/03/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 3981d2bb37b1c9b91ed2b0a93f57a33940a25186
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9f2bedaa436aa5f38d8929e6bc8eda2e34896575
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075821"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386149"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -87,9 +87,16 @@ Office 365 ATP 计划 2 包括同类最佳的[威胁调查和响应工具](offic
     
 ## <a name="save-time-with-automated-investigation-and-response"></a>节省自动调查和响应的时间
 
-（**新增！**）调查可能的网络攻击时，时间至关重要。 越快地识别和缓解威胁，组织就越好。 Office 365 ATP 计划 2 现在将包括[自动化调查和响应 (AIR)](automated-investigation-response-office.md) 功能。 （如果尚无这些功能，则可以使用 ATP 计划 2 立即提供这些功能。）
+（**新增！**）调查可能的网络攻击时，时间至关重要。 越快地识别和缓解威胁，贵公司的状况就越好。 现在，下面列出的订阅包括[自动调查和响应 (AIR)](automated-investigation-response-office.md) 功能。 （如果你尚未拥有这些功能，那么你若有下面的一份订阅，就会很快获得这些功能。）
 
-AIR 包括一组可自动启动（例如触发预警时）或手动启动（例如从资源管理器中的视图启动）的安全手册。 AIR 可以有效且高效地节省安全操作团队缓解威胁的时间和精力。 若要了解详细信息，请参阅[使用 Office 365 实现自动化调查和响应 (AIR)](automated-investigation-response-office.md)。
+Office 365 AIR 包含在以下订阅中：
+
+- Microsoft 365 E5
+- Microsoft 365 E5 安全版
+- Office 365 E5
+- Office 365 高级威胁防护（计划 2）
+
+AIR 包括一套可自动启动（例如触发预警时）或手动启动（例如从资源管理器中的视图启动）的安全手册。 AIR 可以有效且高效地节省安全操作团队缓解威胁的时间和精力。 若要了解详细信息，请参阅[使用 Office 365 实现自动化调查和响应 (AIR)](automated-investigation-response-office.md)。
 
 ## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的权限
 
