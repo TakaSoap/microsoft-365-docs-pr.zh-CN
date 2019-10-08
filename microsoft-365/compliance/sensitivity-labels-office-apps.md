@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: 1de7eadfcf95a54917c1d5e2cc0d42cc1ad486a5
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378645"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417561"
 ---
 # <a name="how-sensitivity-labels-work-in-office-apps"></a>敏感度标签在 Office 应用中的工作方式
 
@@ -131,7 +131,8 @@ PowerPoint
 <td><font size="-1">即将推出<sup>3</sup>
 <td><font size="-1">即将推出<sup>3</sup>
 
-<tr><td><font size="-1">分配预定义的权限
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">分配预定义的权限</a>
 <td><font size="-1"><b>是</b><br><font size="-1">1910+</font>
 
 <td><font size="-1"><b>是</b><br><font size="-1">16.21.0+</font>
@@ -167,7 +168,8 @@ PowerPoint
 <td><font size="-1">待定
 <td><font size="-1">待定
 
-<tr><td><font size="-1">要求用户为其电子邮件和文档应用标签
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">要求用户为其电子邮件和文档应用标签</a>
 <td><font size="-1">待定
 
 <td><font size="-1">待定
@@ -202,7 +204,7 @@ PowerPoint
 | --- | --- | --- |
 | 所有平台上的 Word、Excel 和 PowerPoint | 立即 | 立即 |
 | Outlook for PC 和 Outlook for Mac | 通过 Exchange Online 发送电子邮件之后 | 立即 |
-| 所有平台上的 Word、Excel 和 PowerPoint | 通过 Exchange Online 发送电子邮件之后 | 通过 Exchange Online 发送电子邮件之后 |
+| 网页版、iOS 版和 Android 版 Outlook | 通过 Exchange Online 发送电子邮件之后 | 通过 Exchange Online 发送电子邮件之后 |
 
 ## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>敏感度标签能否与 Azure 信息保护客户端一起在 Office for Windows 中运行？
 
@@ -228,11 +230,7 @@ PowerPoint
 
 ## <a name="can-a-file-or-email-have-more-than-one-classification"></a>文件或电子邮件能否具有多个分类？
 
-用户一次只能为每个文档或电子邮件选择一个标签，这通常只会导致一个分类。 但是，如果用户选择一个子标签，则实际上同时应用了两个标签，即主要标签和次要标签。 通过使用子标签，文件可以具有两个分类，分别表示父级/子级关系，以实现更高级别的控制。 
-
-例如，标签 **机密** 可能包含 **法律** 和 **财务**等子标签。 可将不同的分类视觉标记和不同的权限管理模板应用于这些子标签。 用户不能自行选择 **机密** 标签，只能选择其子标签之一，例如 **法律**。 因此，他们看到的标签是 **机密** / **法律**。 该文件的元数据包括 **机密**的一个自定义文本属性、 **法律**的一个自定义文本属性以及另一个包含两个值（**机密和法律**）的属性。 
-
-使用子标签时，请不要在主要标签上配置视觉标记、保护和条件。 使用子级别时，仅在子标签上配置这些设置。 如果在主要标签及其子标签上配置这些设置，则子标签上的设置优先。
+否。 对于每个文档或电子邮件，用户每次可只选一个标签。
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记电子邮件后，任何附件会自动获得相同的标记吗？
 
