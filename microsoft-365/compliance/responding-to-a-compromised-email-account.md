@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何识别并响应 Office 365 中遭到入侵的电子邮件帐户
-ms.openlocfilehash: 98a254ad6e356cecd44dac57bbe9f83171ddad73
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 239e880bbdd1b2ef7cbbde7e42fb8392777563a5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075977"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417571"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>响应 Office 365 中遭到入侵的电子邮件帐户
 
@@ -94,7 +94,7 @@ ms.locfileid: "37075977"
 ### <a name="step-4-unblock-the-user-from-sending-mail"></a>步骤 4 取消阻止用户发送邮件
 
 如果疑似遭到入侵的邮箱被非法用于发送垃圾电子邮件，则可能是该邮箱已被阻止发送邮件。
-1. 若要取消阻止邮箱发送邮件，请按照[在发送垃圾电子邮件后从阻止列表中删除用户、域或 IP 地址](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email )中的步骤执行操作。
+1. 若要取消阻止邮箱发送邮件，请按照[在发送垃圾电子邮件后从阻止列表中删除用户、域或 IP 地址](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam)中的步骤执行操作。
 
 ### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>步骤 5（可选）阻止用户帐户登录
 
