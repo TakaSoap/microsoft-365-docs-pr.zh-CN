@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 815862616e1bdbf4b3be1d77de2a541ad703149f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074425"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417501"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>合规性管理器的发行说明（预览）
 
@@ -26,6 +26,8 @@ ms.locfileid: "37074425"
 您可以使用[服务信任门户](https://servicetrust.microsoft.com)上的更新的[合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)工具来跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>合规性管理器中的新增功能（预览）
+
+- **基于角色的对合规性管理器的访问：** 已删除默认的**推测访问**角色。 为使用户能够访问合规性管理器，全局管理员必须为[每个用户分配一个权限](compliance-manager-overview#permissions.md)。
 
 - **与 Microsoft 安全分数的集成：** 合规性管理器通过将客户管理的操作映射到50以上的安全分数操作，支持与[Microsoft 安全分数](../security/mtp/microsoft-secure-score.md)的集成。 在安全分数中完成映射的操作后，相应的合规性管理器操作将自动更新。
 
@@ -38,7 +40,7 @@ ms.locfileid: "37074425"
     - **所有者：** 为每个即席项目指定一个所有者。
     - **客户操作：** 管理合规性管理器（预览版）中包含的操作项的完整列表，并启用/禁用与安全得分集成的操作项的安全分数监视。
 
-- **更新了合规性分数**：该方法已更改为支持与 Microsoft 安全分数同步。 评分系统删除了 Microsoft 托管的控制积分，并仅侧重于客户托管的控制措施的完成。
+- **更新了合规性分数**：该方法已更改为支持与 Microsoft 安全分数同步。 分数的计算基于 Microsoft 托管的行动分数和客户管理的行动分数。
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>合规性管理器中的已知问题（预览）
 

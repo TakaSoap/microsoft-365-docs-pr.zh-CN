@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: c88b45fb568b0fe29bc967676ea09e89e9084a62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074427"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417531"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -111,11 +111,16 @@ ms.locfileid: "37074427"
 
 ## <a name="permissions"></a>权限
 
-合规性管理器使用基于角色的访问控制[权限模型](working-with-compliance-manager.md#permissions)。 默认情况下，使用 Azure Active Directory （Azure AD）帐户的组织中的所有人都具有完全访问权限，并且可以在合规性管理器中执行任何操作。 在组织实施了基于角色的访问控制后，任何未分配到已定义合规性管理器角色的用户都将被分配来宾访问权限。 Microsoft 服务人员不具有对您输入或上载的任何数据的访问权限。
+合规性管理器使用基于角色的访问控制权限模型。 只有分配了用户角色的用户才可以访问合规性管理器，并且每个用户允许的操作受角色类型的限制。 [查看](working-with-compliance-manager.md#permissions)显示每个权限允许执行的操作的表。
 
-若要更改默认权限并实现完全基于角色的访问控制模型，必须至少将一个用户添加到每个合规性管理器角色。 将用户添加到角色后，执行分配给该角色的操作的权限将从对所有用户可用的默认权限集删除。 只有使用该角色设置的用户才能访问合规性管理器并执行该角色允许的操作。
+门户管理员合规性管理器可以通过执行以下步骤，在合规性管理器中设置其他用户的权限：
 
-如果将用户添加到角色以管理评估，则只有该角色的成员可以管理评估。 如果不将用户添加到允许用户读取评估中的数据的角色，则组织中的所有用户都可以访问合规性管理器并读取任何评估中的数据。
+1. 从 "最**多**" 下拉菜单中依次选择 "**管理员**" 和 "**设置**"。
+2. 在此处，选择要分配的角色，然后添加要分配给该角色的员工。 然后，用户将能够执行某些操作。
+
+此外，在[Azure Active Directory （AZURE AD）中分配了全局读者角色](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的用户拥有访问合规性管理器的只读权限;但是，他们无法在合规性管理器中编辑数据或执行任何操作。
+
+请注意，不再存在默认**来宾访问**角色。 必须为每个用户分配一个角色，以便在合规性管理器中访问和工作。
   
 ## <a name="manage-evidence"></a>管理证据
 
