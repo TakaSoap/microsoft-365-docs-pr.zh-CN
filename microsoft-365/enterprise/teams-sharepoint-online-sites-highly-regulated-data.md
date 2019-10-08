@@ -1,9 +1,9 @@
 ---
-title: 针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站
+title: 用于高度管控数据的 SharePoint 网站
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2019
+ms.date: 10/04/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,212 +12,199 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 创建安全的 SharePoint Online 团队网站或 Microsoft Teams 团队以存储最有价值和最敏感的数字资产。
-ms.openlocfilehash: 1243a88e6553b1d58370a60b5e2fec38d3dbcaf6
-ms.sourcegitcommit: 681ae93ca1d07532944665cf5d99ff1f08c0b46a
+description: 创建安全的 SharePoint 团队网站来存储最有价值和敏感的文件。
+ms.openlocfilehash: dc604870826075cee645dd466b82f908e1571339
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37210048"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403173"
 ---
-# <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>针对高度管控数据的 Microsoft Teams 和 SharePoint Online 网站
+# <a name="sharepoint-sites-for-highly-regulated-data"></a>用于高度管控数据的 SharePoint 网站
 
 *此方案适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建、存储和保护高度管控的数据。这包括符合以下条件的数据：
+Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建、存储和保护文件中存储的高度管控数据。这包括符合以下条件的数据：
 
 - 受地区法规约束。
 - 组织最有价值的数据，例如商业机密、财务或人力资源信息以及组织策略。
 
 满足此业务需求的 Microsoft 365 企业版基于云的方案要求用户执行以下操作：
 
-- 在 SharePoint Online 团队网站或 Microsoft Teams 团队的“文件”**** 选项卡中存储数字资产（文档、幻灯片组、电子表格等）。
-- 锁定网站或团队以防止：
-   - 通过组成员身份仅访问特定用户帐户组之外的所有用户帐户，其中包括可以访问 SharePoint Online 团队网站以及拥有权限级别的用户帐户以及可以管理它的用户帐户。
-   - 网站成员向其他用户授予访问权限。
-   - 非网站成员请求访问网站。
-- 为 SharePoint Online 网站或团队配置 Office 365 保留标签，将此作为在站点或团队中的文档上定义保留策略的默认方式。
-- 阻止用户向组织外发送文件。
-- 加密网站或团队中最敏感的数字资产。
-- 添加对最敏感的数字资产的权限，这样，即使它们在网站外共享，打开资产仍需要具有权限的用户帐户的有效凭据。
+- 在 SharePoint 团队网站中存储文件（文档、幻灯片和电子表格等）。
+- 锁定网站以防止：
+  - 对不是网站 Office 365 组成员的用户进行访问。
+  - 网站成员向其他用户授予访问权限。
+  - 非网站成员请求访问网站。
+- 为 SharePoint 网站配置 Office 365 保留标签，作为阻止用户将文件发送到组织外部的默认方法。
+- 使用随文件一起传输的加密信息对网站中最敏感的文件进行加密。
+- 添加对最敏感的文件的权限，这样，即使它们在网站外共享，打开文件仍需要具有权限的用户帐户提供有效凭据。
 
 下表将此方案的要求映射到 Microsoft 365 企业版的功能。
 
 |||
 |:-------|:-----|
 | **要求** | **Microsoft 365 企业版 功能** |
-| 存储数字资产 | SharePoint Online 团队网站和 Office 365 团队 |
-| 锁定网站 | Azure AD 组和 SharePoint Online 团队网站权限 |
-| 标记网站的数字资产 | Office 365 保留标签 |
+| 存储文件 | SharePoint 团队网站 |
+| 锁定网站 | Azure Active Directory (Azure AD) 组和 SharePoint Online 团队网站权限 |
+| 标记网站中的文件 | Office 365 保留标签 |
 | 阻止向组织外发送文件的用户 | Office 365 中的数据丢失防护 (DLP) 策略 |
-| 加密网站的所有数字资产 | 企业移动性 + 安全性 (EMS) 中的 Azure 信息保护子标签 |
-| 向网站的数字资产添加权限 | EMS 中的 Azure 信息保护子标签 |
+| 加密网站中的所有文件 | Office 365 灵敏度子标签 |
+| 添加网站文件的权限 | Office 365 灵敏度子标签 |
 |||
 
-以下是针对 SharePoint Online 网站的配置。
+以下是用于安全 SharePoint 网站的配置。
 
-![针对高度管控数据方案的 Microsoft Teams 和 SharePoint Online 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 此方案要求已经部署：
 
 - [标识](identity-infrastructure.md)以及基础架构的[信息保护](infoprotect-infrastructure.md)阶段的步骤 1 和 2。 
-- 对于 SharePoint Online 团队网站中的高度管控数据：[SharePoint Online](sharepoint-online-onedrive-workload.md)。
-- 对于 Microsoft Teams 团队中的高度管控数据：[Microsoft Teams](teams-workload.md)。
+- [SharePoint](sharepoint-online-onedrive-workload.md)。
 
-以下各阶段将指导你完成针对高度管控数据的 SharePoint Online 网站和团队的设计、配置和驱动采用。
+以下各阶段将指导你完成用于高度管控数据的 SharePoint 网站的设计、配置和驱动采用。
 
-若要了解 Contoso Corporation（虚构但具代表性的跨国组织）如何为其研究团队设计 SharePoint Online 网站，请参阅此[示例配置](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。
+若要了解 Contoso Corporation（虚构但具代表性的跨国组织）如何为其研究团队设计 SharePoint 网站，请参阅此[示例配置](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。
 
-高度管控数据的团队要求首先为高度管控数据创建一个 SharePoint Online 团队网站。然后，创建一个使用 SharePoint Online 团队网站的 Office 365 组的新团队。有关详细信息，请参阅第 2 阶段的步骤 4。
+## <a name="identity-and-device-access-prerequisites"></a>标识和设备访问先决条件
 
-以下是针对团队的配置。
-
-![针对高度管控数据方案的 Microsoft Teams 和 SharePoint Online 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
-
-
-## <a name="identity-and-device-access-prerequisites"></a>身份识别和设备访问先决条件
-
-若要保护对团队或 SharePoint Online 网站的访问，请确保已配置[身份识别和设备访问策略](identity-access-policies.md)以及[建议的 SharePoint Online 访问策略](sharepoint-file-access-policies.md)。
+若要保护对 SharePoint 网站的访问，请确保已配置[标识和设备访问策略](identity-access-policies.md)以及[建议的 SharePoint 访问策略](sharepoint-file-access-policies.md)。
 
 ## <a name="phase-1-design"></a>第 1 阶段：设计
 
-若要针对高度管控数据创建 SharePoint Online 网站或团队，必须首先确定其用途。例如，制造业组织的研发部门需要 SharePoint Online 网站来存储现有产品的当前设计规范，以及需要一个用于协作研发新产品的位置。只允许研发部门的成员和选定的管理人员访问该网站。
+若要创建用于高度管控数据的 SharePoint 网站，必须首先确定其用途。 例如，制造组织的研发部需要一个 SharePoint 网站来存储现有产品的当前设计规范，并需要一个协作处理新产品的位置。 仅允许研发部和选定的管理人员访问该网站。
 
 该目的将推动基本配置项的确定，例如：
 
-- SharePoint Online 权限集和 SharePoint 组的集合
-- 访问组、Azure AD 安全组及其要添加到 SharePoint 组的成员的集合
-- 要分配到网站的 Office 365 保留标签以及标签的 DLP 策略集合
-- 用户应用到网站中存储的高度敏感数据资产的 Azure 信息保护子标签的设置
+- 要分配给网站“文档”部分的 Office 365 保留标签以及该标签的 DLP 策略
+- 由用户应用于网站中存储的高度敏感文件的 Office 365 敏感度子标签的设置
 
 确定后，使用这些设置在第 2 阶段中配置网站。 
 
-### <a name="step-1-an-isolated-sharepoint-online-site"></a>步骤 1：独立 SharePoint Online 网站
+### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>步骤 1：Office 365 保留标签和 DLP 策略
 
-SharePoint Online 团队网站的锁定版本称为独立网站。与私有团队网站的默认设置不同，独立网站配置为阻止：
-
-- 访问非指定组成员。
-- 请求访问权限。
-- 未经授权向指定组的当前成员授予访问权限。
-- 访问组成员管理网站。
-
-除非由网站的 SharePoint 管理员操作，否则包含高度管控资产的 SharePoint Online 团队网站的安全性不会改变。
-
-请参阅[设计独立的 SharePoint Online 团队网站](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site)，详细了解如何确定权限级别、SharePoint 组、访问组和组成员的集合。
-
-### <a name="step-2-office-365-retention-labels-and-dlp-policies"></a>步骤 2：Office 365 保留标签和 DLP 策略
-
-应用于 SharePoint Online 团队网站时，Office 365 保留标签提供对存储在网站上的所有数字资产进行分类的默认方法。
+应用于 SharePoint 团队网站的“文档”部分时，Office 365 保留标签提供对存储在网站上的所有文件进行分类的默认方法。
  
-对于针对高度管控数据的 SharePoint Online，需要确定要使用的 Office 365 保留标签。
+对于用于高度管控数据的 SharePoint 网站，需要确定要使用的 Office 365 保留标签。
 
 有关 Office 365 标签的设计注意事项，请参阅 [Office 365 分类和标签](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)。
 
 为保护敏感信息并防止意外或故意泄露，可以使用 DLP 策略。有关详细信息，请参阅此[概述](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)。
 
-对于针对高度管控数据的 SharePoint Online 网站，必须为分配给网站的 Office 365 保留标签配置 DLP 策略，在用户尝试与外部用户共享数字资产时进行阻止。 
+对于 SharePoint 网站，必须为分配给网站的 Office 365 保留标签配置 DLP 策略，在用户尝试与外部用户共享文件时进行阻止。 
 
-### <a name="step-3-your-azure-information-protection-sub-label"></a>步骤 3：Azure 信息保护子标签
+### <a name="step-2-your-office-365-sensitivity-sublabel"></a>步骤 2：Office 365 灵敏度子标签
 
-若要为最敏感的数字资产提供加密和一组权限，用户必须使用 Azure 信息保护客户端来应用 Azure 信息保护标签。若要为针对高度管控数据的 SharePoint Online 网站使用 Azure 信息保护标签，必须在范围策略中配置 Azure 信息保护子标签。 
+若要对最敏感的文件提供加密和一组权限，用户必须应用 Office 365 敏感度子标签。
 
-子标签位于现有标签下。例如，可以在“高度机密”标签下创建一个“研发”子标签。范围策略是仅适用于用户子集的策略。对于针对高度管控数据的 SharePoint Online 网站，该范围是作为网站访问组的成员的用户集。
+子标签存在于现有标签下。 例如，可在“高度管控”标签下创建“研发部”子标签。 对于用于高度管控数据的 SharePoint 网站，需要配置权限，以便只有网站成员可以打开和更改已附加子标签的文件。
 
-应用的子标签的设置随资产一起移动。即使在网站外部下载和共享，也只有具有权限的经过身份验证的用户帐户才能打开它。
+已应用子标签的设置会随文件一起移动。 即使文件泄露到网站外，也只有拥有权限并经过身份验证的用户帐户才可以将其打开。
+
 
 ### <a name="design-results"></a>设计结果
 
 已确定以下内容：
 
-- SharePoint 组集及权限级别
-- 每个权限级别的访问组及其成员集
-- 与标签关联的相应的 Office 365 保留标签和 DLP 策略
-- 包含加密和权限的 Azure 信息保护子标签设置
+- 适当的 Office 365 保留标签以及与标签关联的 DLP 策略
+- 包含加密和权限的 Office 365 敏感度子标签设置
 
 ## <a name="phase-2-configure"></a>第 2 阶段：配置
 
-在此阶段中，将执行第 1 阶段中确定的设置并实现这些设置，以针对高度管控的数据创建 SharePoint Online 网站。
+此阶段将使用并实施第 1 阶段中确定的设置，为高度管控的数据创建 SharePoint 网站。
 
-### <a name="step-1-create-and-configure-an-isolated-sharepoint-online-team-site"></a>步骤 1：创建和配置独立的 SharePoint Online 团队网站
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>步骤 1：创建专用 SharePoint 团队网站，使其包含相应 Office 365 组的所有者和成员
 
-使用[部署独立的 SharePoint Online 团队网站](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site)中的说明执行以下操作：
+请遵循[这些说明]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8)创建专用的 SharePoint 团队网站。
 
-- 为网站中使用的每个 SharePoint 权限级别创建并填充访问组。
-- 创建并配置独立的团队网站。
+### <a name="step-2-configure-additional-permissions-settings-for-the-sharepoint-team-site"></a>步骤 2：配置 SharePoint 团队网站的其他权限设置
 
-### <a name="step-2-configure-the-site-for-an-office-365-retention-label"></a>步骤 2：针对 Office 365 保留标签配置网站
+在 SharePoint 网站中配置以下权限设置。
 
-按照[使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的说明执行以下操作：
+1.  在工具栏中，依次单击设置图标和“网站权限”****。
+2.  在“网站权限”窗格中，单击“高级权限设置”********。
+3.  在浏览器的新“权限”标签页中，单击“访问请求设置”********。
+4.  在“**访问请求设置**”对话框中，取消选中“**允许成员共享网站以及个别文件和文件夹**”和“**允许访问请求**”（以便取消选中全部三个复选框），然后单击“**确定**”。
 
-- 识别或创建 Office 365 保留标签，然后将其应用到独立的 SharePoint Online 网站。
-- 创建并配置 DLP 策略，用于在用户尝试于组织外部的 SharePoint Online 网站上共享数字资产时阻止用户。
+使用这些设置可以禁止网站用户组成员与其他成员共享网站以及非成员访问网站。
 
-### <a name="step-3-create-an-azure-information-protection-sub-label-for-the-site"></a>步骤 3：创建网站的 Azure 信息保护子标签
+### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>步骤 3：为网站配置 Office 365 保留标签
 
-按照[使用 Azure 信息保护来保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)中的说明执行以下操作： 
+按照[使用 Office 365 标签和 DLP 保护 SharePoint 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的说明执行以下操作：
 
-- 在范围策略中创建并配置 Azure 信息保护子标签。
-- 将 Azure 信息保护客户端部署到用户计算机。
+1. 创建并发布高度管控数据的保留标签（如果需要）。
+2. 为网站配置步骤 1 中创建的保留标签。
+3. 为高度管控数据创建 DLP 策略以使用步骤 2 中创建的保留标签并阻止用户将文件发送到组织外部
 
-### <a name="step-4-optional-create-a-team-for-the-highly-regulated-data"></a>步骤 4（可选）：针对高度管控数据创建团队
+#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>步骤 4：为网站创建 Office 365 敏感度子标签
 
-如果需要针对高度管控数据的团队，可以首先针对高度管控数据创建一个 SharePoint Online。创建初始私有 SharePoint Online 团队网站时，需要指定一个 Office 365 组名。
+与可由任何人应用于任何文件的高度管控数据敏感度标签不同，安全网站需要其自己的子标签，使分配了子标签的文件：
 
-完全配置了针对高度管控数据的 SharePoint Online 网站后，使用以下步骤将其转换为针对高度管控数据的团队：
+- 启用加密，并且加密信息将与文件一起移动。
+-   包含自定义权限，以便只有网站用户组的成员能打开文件。
 
-1. 登录 Office 365。
-2. 在“Microsoft Office 主页”**** 选项卡上，单击“Teams”****。
-3. 从“Microsoft Teams”**** 选项卡上的“加入或创建团队”**** 窗格中，单击“创建团队”****。
-4. 在“创建团队”**** 窗格中，单击“从现有 Office 365 组创建团队”****。
-5. 在 Office 365 组的列表中，选择针对高度管控数据的 SharePoint Online 网站对应的 Office 365 组的名称，然后单击“选择团队”****。
+若要以这种方式为网站中存储的文件实现更高的安全级别，必须配置一个新的敏感度标签，作为高度管控文件的常规标签的子标签。 只有网站的用户组成员才能在高度管控标签的子标签列表中看到该子标签。
 
-新团队的“文件”**** 选项卡列出了相应的 SharePoint Online 网站“文档”**** 区域的“常规”**** 文件夹的内容。若要查看团队的 SharePoint Online 网站的其余资源，请单击省略号，然后单击“在 SharePoint 中打开”****。
+请按照[此处](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)的说明，使用以下设置来配置用于高度管控文件的标签的子标签：
+
+- 子标签的名称包含网站的名称，以便在将子标签分配给文件时实现轻松关联。
+- 启用加密。
+- 网站用户组具有共同创作权限。
 
 ### <a name="configuration-results"></a>配置结果
 
 已配置了以下内容：
 
-- SharePoint Online 独立网站
-- 分配给 SharePoint Online 独立网站的 Office 365 保留标签
+- SharePoint 网站上具有更严格的权限设置
+- 将 Office 365 保留标签分配给 SharePoint 网站的“文档”部分
 - Office 365 保留标签的 DLP 策略
-- 用户可以应用到加密资产和强制执行权限的网站中存储的最敏感数字资产的范围策略的 Azure 信息保护子标签
-- 基于 SharePoint Online 网站的针对高度管控数据的团队（如果需要）
+- 可由用户应用于网站中存储的最敏感文件的 Office 365 敏感度子标签，用于对文件加密并仅允许团队网站用户组中的成员进行“共同创作”访问 
+
+下面是配置结果。
+
+![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+
+下面是对网站中存储的文件应用了敏感度子标签的用户示例。
+
+![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
+
 
 ## <a name="phase-3-drive-user-adoption"></a>第 3 阶段：驱动用户采用
 
-针对高度管控数据的 SharePoint Online 网站或团队只有在始终用于存储和访问敏感数字资产的情况下才能保护该数据。这是最困难的一个阶段，因为它依赖于用户改变他们的方式。 
+用于高度管控数据的 SharePoint 网站对这些数据进行保护的前提是该网站一直用于存储和访问敏感文件。 此阶段依赖于用户改变其习惯和喜好，因此是最困难的阶段。 
 
-例如，用于在 USB 驱动器或基于云的个人存储解决方案上存储敏感文件的管理人员现在必须将它们专门存储在针对高度管控数据的 SharePoint Online 网站或团队中。
+例如，习惯于在 USB 驱动器或基于云的个人存储解决方案中存储敏感文件的员工现在必须将这些文件专门存储在用于高度管控数据的 SharePoint 网站中。
 
 ### <a name="step-1-train-your-users"></a>步骤 1：培训用户
 
 完成配置后，对作为网站访问组成员的一组用户培训以下内容：
 
-- 有关使用新网站或团队保护重要资产的重要性以及高度管控数据泄露的后果，例如法律后果、管制罚款、勒索软件或失去竞争优势。
-- 如何访问网站及其资产。
+- 有关使用新网站保护重要文件的重要性以及高度管控数据泄露的后果，例如法律后果、监管罚款、勒索软件或失去竞争优势。
+- 如何访问网站及其文件。
 - 如何在网站上创建新文件和上传本地存储的新文件。
 - DLP 策略如何阻止它们在外部共享文件。
-- 如何使用 Azure 信息保护客户端对最敏感的数字资产标记已配置的子标签。
-- 如果资产从网站或团队中泄露，Azure 信息保护子标签如何保护资产。
+- 如何使用网站的子标签来标记最敏感的文件。
+- 子标签如何保护文件（即使文件泄露到网站外部）。
 
 此培训应包括实践练习，让用户可以体验这些操作及其结果。
 
 ### <a name="step-2-conduct-periodic-reviews-of-usage-and-files"></a>步骤 2：定期审查使用情况和文件
 
-在培训后的几周内，SharePoint Online 网站或团队的 SharePoint 管理员可以执行以下操作：
+在培训后的几周内，SharePoint 网站的 SharePoint 管理员可以执行以下操作：
 
-- 分析网站或团队的使用情况，并将其与预期使用情况进行比较。
-- 验证是否使用 Azure 信息保护子标签正确标记了高度敏感的文件。
+- 分析网站的使用情况，并将其与预期使用情况进行比较。
+- 验证是否使用敏感度子标签正确标记了高度敏感的文件。
 
 根据需要重新培训用户。
 
 ### <a name="user-adoption-results"></a>用户采用结果
 
-敏感数字资产专门存储在针对高度管控数据的 SharePoint Online 网站或团队中，并且已对最敏感的资产应用了已配置的 Azure 信息保护子标签。
+高度管控的文件专门存储在用于高度管控数据的 SharePoint 网站上，并且最敏感的文件应用了网站的敏感度子标签。
 
 ## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企业版
 
-Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 Contoso 是如何设计、配置并推动其在巴黎、莫斯科、纽约、北京和班加罗尔的研究团队采用[安全的 SharePoint Online 网站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)的。 
+Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 Contoso 如何设计、配置并推动其在巴黎、莫斯科、纽约、北京和班加罗尔的研究团队采用[安全的 SharePoint 网站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。 
 
 ## <a name="see-also"></a>另请参阅
 
@@ -225,4 +212,3 @@ Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总
 
 [测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[保护开发/测试环境中的 SharePoint Online 网站安全](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-in-a-dev-test-environment)
