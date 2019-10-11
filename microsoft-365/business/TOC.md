@@ -16,8 +16,8 @@
 ### [设置移动设备](set-up-mobile-devices.md)
 ### [设置 Windows 设备](set-up-windows-devices.md)
 ## [保护业务](security-features.md)
+### [设置 MFA](set-up-mfa.md)
 ### [增强威胁防护](increase-threat-protection.md)
-### [条件访问入门](set-up-conditional-access-policies.md)
 ### [设置合规性功能](set-up-compliance.md)
 ## 管理用户
 ### [添加用户](add-users-m365b.md)
@@ -29,9 +29,9 @@
 ### [将保护功能映射到 Intune 设置](map-protection-features-to-intune-settings.md)
 ### [Android 和 iOS 的应用保护设置](app-protection-settings-for-android-and-ios.md)
 #### [验证 Android 或 iOS 上的设置](validate-settings-on-android-or-ios.md)
-### [Windows 10 PC 的保护设置](protection-settings-for-windows-10-pcs.md)
+### [Windows 10 PC 的设备保护设置](protection-settings-for-windows-10-pcs.md)
 #### [验证 Windows 10 PC 上的设置](validate-settings-on-windows-10-pcs.md)
-### [Windows 10 设备的保护设置](protection-settings-for-windows-10-devices.md)
+### [Windows 10 PC 的应用保护设置](protection-settings-for-windows-10-devices.md)
 ## [迁移到 Microsoft 365 商业版](migrate-to-microsoft-365-business.md)
 ## 帐单
 ### [你的账单](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
