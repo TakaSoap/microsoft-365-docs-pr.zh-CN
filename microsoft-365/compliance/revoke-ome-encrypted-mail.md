@@ -7,23 +7,23 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 10/8/2019
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: 作为 Office 365 管理员，您可以吊销使用 Office 365 高级邮件加密进行加密的某些电子邮件。
-ms.openlocfilehash: e55129f68c7add589bd973b36f069d7cdbf631cf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7adc5713c8753e0caf780bbacf98519665458c52
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075380"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435546"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>撤销使用 Office 365 高级邮件加密进行加密的电子邮件
 
-电子邮件吊销作为 Office 365 高级邮件加密的一部分提供。 Office 365 高级邮件加密在特定订阅中的 Office 365 邮件加密的顶层可用。 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)e5、Office 365 企业版 E5 和 Office 365 教育版 A5 中包含高级邮件加密。 如果您的组织有一个不包含 Office 365 高级邮件加密的 Office 365 订阅，则可以将高级邮件加密作为加载项进行购买，使其具有高级合规性 SKU 的 E5 合规性。
+电子邮件吊销作为 Office 365 高级邮件加密的一部分提供。 Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 e5 （非盈利员工定价）、Office 365 企业版 E5 （非盈利员工定价）和 Office 365 教育版 A5 中。 如果您的组织有一个不包含 Office 365 高级邮件加密的订阅，则可以使用 microsoft 365 E5 兼容性 SKU 附加项购买 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 高级适用于 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 Sku 的合规性 SKU 外接程序。
 
 本文是有关[Office 365 邮件加密](ome.md)的更多系列文章的一部分。
 

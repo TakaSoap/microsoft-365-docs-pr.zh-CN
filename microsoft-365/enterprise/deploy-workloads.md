@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 将组织用户载入到 Microsoft 365 企业版的工作效率工作负载。
-ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369423"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403241"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
 
@@ -44,7 +44,7 @@ ms.locfileid: "37369423"
 
 ![整体 Microsoft 365 企业版部署指南中的工作负载和方案](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-请参阅 [Microsoft 365 生产力库](https://www.microsoft.com/microsoft-365/success/)了解更多方案。 
+请参阅 [Microsoft 365 工作效率库](https://aka.ms/productivitylibrary) https://aka.ms/productivitylibrary)了解更多方案。 
 
 ## <a name="foundation-infrastructure-prerequisites"></a>基础结构先决条件
 

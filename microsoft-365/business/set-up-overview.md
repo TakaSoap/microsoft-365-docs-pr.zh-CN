@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商业版的设置步骤概述。
-ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4be0a8aa1b050ee3e20a045eb2c07666765118ed
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288567"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440529"
 ---
-# <a name="overview-of-setup"></a>安装程序概述
+# <a name="overview-of-setup"></a>设置概述
 
 大部分设置步骤可以在安装向导中完成，但也会列出其他选项。
 
@@ -41,7 +41,7 @@ ms.locfileid: "37288567"
         - 您还可以在随后的管理中心[添加用户](add-users-m365b.md)。
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>步骤2：设置安全策略和配置设备 
 
-  - 使用[安装向导](set-up.md#set-up-security-policies-and-device-configurations)配置设备和安全策略。 
+  - 使用[安装向导](set-up.md#protect-data-and-devices)配置设备和安全策略。 
   - 您还可以在[管理员中心](view-policies-and-devices.md)和[Intune 门户](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)中添加更多或编辑它们。
   - 除了安装向导中的安全设置之外，还可以通过添加以下设置来提高安全性：
 
@@ -62,7 +62,7 @@ ms.locfileid: "37288567"
    将 Windows 10 设备加入 Azure AD 时，将在[步骤 2](#step-2-set-up-security-policies-and-configure-devices)中设置的策略应用于该 AD。
 
    - Windows 10 专业版是 Microsoft 365 商业版的[先决条件](pre-requisites-for-data-protection.md)，但如果你有 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 专业版，你的订阅使你能够[升级到 Windows 10 专业](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)版。
-    - 使用[安装向导](set-up.md#set-up-security-policies-and-device-configurations)为 Windows 10 设备配置策略。
+    - 使用[安装向导](set-up.md#protect-data-and-devices)为 Windows 10 设备配置策略。
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4：安装 Office 365 商业版
 - 您可以使用[安装向导](set-up.md#deploy-office-365-client-apps)在 Windows 设备中自动安装 Office。

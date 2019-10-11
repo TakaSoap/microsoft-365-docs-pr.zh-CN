@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
-ms.openlocfilehash: ef2f08c953b91ccefcadd5947d2d0a9f39683ae2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074742"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440649"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
 
@@ -123,7 +123,7 @@ MailboxFormsExport-*dd*.csv –通常情况下，使用自定义窗体非常罕�
 Exchange 服务器上的邮箱的步骤
 
 1. 使用远程 PowerShell 连接到 Exchange 服务器。 按照[使用远程 PowerShell 连接到 Exchange 服务器](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps)中的步骤操作。
-2. 如果要从邮箱中完全删除单个规则、多个规则或所有规则，请使用 "[删除收件箱" 规则 cmdlet ](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)-使用此项可从邮箱中完全删除一个、多个或所有规则。
+2. 如果要从邮箱中完全删除单个规则、多个规则或所有规则，请使用 "[删除收件箱" 规则 cmdlet](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)-使用此项可从邮箱中完全删除一个、多个或所有规则。
 3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule cmdlet](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx)。 
 
 Exchange Online 中邮箱的步骤
@@ -144,8 +144,8 @@ Exchange Online 中邮箱的步骤
     <li>监视如何<a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">访问和使用</a>您的用户帐户。 您可能不会阻止最初的破坏，但您将通过更快地进行检测来缩短危害的持续时间和影响。 您可以使用以下内容： <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">Office 365 云应用安全策略</a>来监视您的帐户并通知异常活动。 
         <ol type="a">
             <li><b>多次失败的登录尝试</b>当用户在一个会话中执行多个失败的登录活动时，此策略将配置为您的环境并触发警报，这可能表示尝试受到破坏。</li>
-            <li><b>无法旅行</b>-此策略配置您的环境，并在从同一用户在两个位置之间的不同位置（短于两个位置之间的预期旅行时间）内检测到活动时触发警报。 这可能表示其他用户正在使用相同的凭据。 如果检测到此异常行为，则可以在七天内学习新用户的活动模式的初始学习期。</li>
-            <li><b>异常模拟活动（按用户）</b>-当用户在一个会话中执行多个模拟活动时，此策略将对你的环境和触发警报进行分析，这可能表示尝试了泄露。</li>
+            <li><b>无法传播</b> - ：此策略配置文件在两个时间段内的同一用户在不同位置（短于两个位置之间的预期旅行时间）内检测到活动时，您的环境并触发警报。 这可能表示其他用户正在使用相同的凭据。 如果检测到此异常行为，则可以在七天内学习新用户的活动模式的初始学习期。</li>
+            <li><b>异常模拟活动（按用户）</b> -此策略会在用户在一个会话中执行多个模拟活动时通知您的环境并触发警报，这可能表示试图泄露。</li>
         </ol>
     </li>
     <li>利用类似于<a href="https://securescore.office.com/">Office 365 安全分数</a>的工具来管理帐户安全配置和行为。 

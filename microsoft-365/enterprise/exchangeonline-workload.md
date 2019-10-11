@@ -2,7 +2,7 @@
 title: 部署适用于 Microsoft 365 企业版的 Exchange Online
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/29/2018
+ms.date: 10/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,38 +11,38 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 逐步完成在组织内的 Microsoft 365 企业中规划、推出和驱动 Exchange Online 价值的过程。
-ms.openlocfilehash: a13cb36dd313ef3e6763c6c48720bb2b3e935880
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: c11a4ca0216d42f039005616c5d414759b8c0bad
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981873"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437812"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>部署适用于 Microsoft 365 企业版的 Exchange Online
 
 *此工作负载包含在适用于 Microsoft 365 企业版的 E3 和 E5 版本中*
 
-Exchange Online 是用于电子邮件和日历的主要云服务，可帮助您的用户以不需要实时聊天或集中式文档存储的方式进行协作。 Exchange Online 是您实现个人和小型组短期通信和计划的方式，并且是 Microsoft 365 企业的团队合作价值的关键要素。 借助 Exchange Online，无论您在使用什么设备，都可以使用已知的 Outlook 应用程序更有效地完成更多和工作。
+Exchange Online 是针对电子邮件和日历的主要云服务，可帮助你的用户以不需要实时聊天或集中存储文档的方式进行协作。 Exchange Online 是 Microsoft 365 企业的团队合作价值的关键元素。 借助 Exchange Online，无论您在使用什么设备，都可以使用已知的 Outlook 应用程序更有效地完成更多和工作。
 
-Exchange Online 还具有高级安全功能，包括反恶意软件和反垃圾邮件筛选，以保护邮箱和数据丢失防护功能，以防止用户错误地将敏感信息发送给未经授权的人员。 Exchange Online security 是 Microsoft 365 企业版的智能安全价值的关键要素。
+Exchange Online 还拥有可保护邮箱的高级安全功能（包括反恶意软件和反垃圾邮件筛选），以及可防止用户错误地向未授权人员发送敏感信息的数据丢失预防功能。 Exchange Online security 是 Microsoft 365 企业版的智能安全价值的关键要素。
 
-如果你对 Exchange Online 全新品牌，请参阅[Microsoft Exchange online](https://products.office.com/exchange/exchange-online)。
+如果你是第一次使用 Exchange online，请参阅 [Microsoft Exchange online](https://products.office.com/exchange/exchange-online)。
 
 下面的阶段和步骤将指导您完成在组织中对 Exchange Online 角色进行构想的过程，通过一系列渐进式部署将组织加入 Exchange Online，并推动 Exchange Online 和它的使用对最终用户的价值。
 
 >[!Note]
->仅在完成了[第2阶段](identity-infrastructure.md)后，才应遵循以下部署说明： Microsoft 365 企业版基础结构的标识。
+>仅在完成了第2阶段后，才应遵循以下部署说明[： Microsoft 365 企业版基础结构的标识](identity-infrastructure.md)。
 >
 
-## <a name="phase-1-envision"></a>阶段 1：构想
+## <a name="phase-1-envision-your-exchange-online-deployment"></a>第1阶段：构想 Exchange Online 部署
 
 在此阶段中，您将为您的 Exchange Online 部署收集人员，并确定组织如何使用 Exchange Online 来满足其业务需求。
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>步骤1：收集 Exchange Online 部署成员
 
-若要在 Microsoft 365 企业版基础结构的[第2阶段（第2阶段](identity-infrastructure.md)）上成功部署 Exchange Online，您需要获取合适的人员进行输入和反馈。 关键人员包括业务决策者、IT 人员（如架构师和实施者），并支持最终用户。 
+若要在 Microsoft 365 企业版基础结构的[第2阶段（第2阶段](identity-infrastructure.md)）上成功部署 Exchange Online，您需要收集合适的人员进行输入和反馈。 关键人员包括业务决策者、IT 人员（如架构师和实施者），并支持最终用户。 
 
-这三个组确保您的 Exchange Online 部署包括满足业务需求的注意事项、邮箱迁移和安全性的技术方面以及结果将是典型用户将使用的内容。
+这三个组可确保您的 Exchange Online 部署包括满足业务需求的注意事项、邮箱迁移和安全性的技术方面以及结果是典型用户将使用的内容。
 
 #### <a name="result"></a>结果
 
@@ -67,63 +67,65 @@ Exchange Online 可用于不同的用途。 您需要根据您的组织、业务
 
 ### <a name="step-1-complete-your-technical-planning"></a>第 1 步：完成技术计划
 
-在开始技术规划之前，请确定是否要使用 FastTrack。 如果您的组织有超过50的座位并且参与了[符合条件的计划](https://technet.microsoft.com/library/dn783224.aspx)，则可以使用[FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)，无需额外成本即可指导您完成规划、部署和服务采用。 或者，您可以使用 FastTrack 载入向导完成此工作，在使用 Office 365 帐户登录后，即可在[FastTrack](https://fasttrack.microsoft.com/)中使用这些向导。
+开始技术规划前，请确定是否要使用 FastTrack。 如果您的组织有超过50的座位并且参与了[符合条件的计划](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)，则可以使用[FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)，*无需额外成本*即可指导您完成规划、部署和服务采用。 你也可以使用我们的 FastTrack 载入向导自行完成此工作，使用 Office 365 帐户登录后即可从 [FastTrack](https://fasttrack.microsoft.com/) 获取此向导。
 
-如果您正在进行自己的规划，或与 FastTrack 结合使用，则需要确定您的网络和组织是否已准备好进行 Exchange Online。 尤其重要的是，在基础结构中满足网络退出条件的需要，特别关注 Internet 带宽、吞吐量和流量延迟，以最大限度地提高 Exchange 的其他流量的性能基于联机的电子邮件和附件。
+如果您正在进行自己的规划，或与 FastTrack 结合使用，则需要确定您的网络和组织是否已准备好进行 Exchange Online。 对于连接到组织网络的用户，在基础结构中满足[网络](networking-infrastructure.md)的退出条件尤其重要。 特别注意 Internet 带宽、吞吐量和流量延迟，以最大程度地提高基于 Exchange Online 的电子邮件和附件的额外流量的性能。
 
 使用这些资源为 Exchange Online 部署的技术方面做准备： 
 
 - [将多个电子邮件帐户迁移到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
-- [Exchange Online 中的协作](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
-- [Exchange Online 中的收件人](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
+- [Exchange Online 中的协作](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
+- [Exchange Online 中的收件人](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
 
 若要更好地了解 Exchange Online 中的安全性，请查看以下资源：
 
-- [Exchange Online 中的权限](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx) 
-- [Exchange Online 的安全性和合规性](https://technet.microsoft.com/library/jj200706(v=exchg.150).aspx) 
-- [反垃圾邮件和反恶意软件保护](https://technet.microsoft.com/library/jj200731(v=exchg.150).aspx)
+- [Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
+- [Exchange Online 的安全性和合规性](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance) 
+- [反垃圾邮件和反恶意软件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
 接下来，请使用以下资源来了解 Exchange Online 邮箱管理：
 
-- [在 Exchange Online 中创建用户邮箱](https://technet.microsoft.com/library/jj907304(v=exchg.150).aspx)
-- [管理用户邮箱](https://technet.microsoft.com/library/bb123809(v=exchg.150).aspx) 
-- [创建和管理通讯组](https://technet.microsoft.com/library/bb124513%28v=exchg.150%29.aspx)
+- [在 Exchange Online 中创建用户邮箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/create-user-mailboxes)
+- [管理用户邮箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) 
+- [创建和管理通讯组](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 
 #### <a name="result"></a>结果
 
 您了解邮箱迁移、安全性和管理，并准备好开始向组织中选定的组推出 Exchange Online。
 
-### <a name="step-2-run-an-it-pilot"></a>步骤 2：运行 IT 试点
+### <a name="step-2-run-an-it-pilot"></a>第 2 步：运行 IT 试点
 
-在大多数大中型组织中，应通过阶段 1 中的利益干系人以及早期采用者和技术爱好者运行一个 IT 试点。在 IT 试点期间：
+对于大多数中型和大型组织，应与您的利益干系人在第1阶段、早期采用者和技术爱好者之间运行 IT 试点。 在 IT 试点期间：
 
-- 选择你的 IT 试点参与者可以实践的 Exchange Online 业务方案。
-- 向你的试点参与者 Office 365 许可证，并将其本地邮箱迁移到 Exchange Online。
+- 向你的试点参与者 Microsoft 365 许可证，并将其本地邮箱迁移到 Exchange Online。
 - 为你的试点参与者提供一组练习来测试 Exchange Online 电子邮件、计划和其他功能。
-- 确定更改管理策略并生成可促进组织范围内用户采用 Exchange Online 的材料。 变更管理材料可包括电子邮件通知文本、内部培训计划、hallway 海报和演示文稿。 这些材料将告知组织有关 Exchange Online 及其优势的信息，以提高意识和促进使用的目标。 有关某些想法，请参阅[Microsoft 团队文章的更改管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)。
-- 让 IT 试点参与者根据他们的经验查看更改管理材料。 他们可以提供有关最佳做法的提示，并提供有关如何最大限度地说明 Exchange Online 的优势以及如何将其用于通信和日程安排的建议。
+- 确定您的更改管理策略并生成可促进组织范围内用户采用 Outlook 和 Exchange Online 的材料。 
+ 
+  变更管理资料可以包括电子邮件公告文本、内部培训计划、走廊海报和演示文稿。 这些材料将告知组织有关 Exchange Online 及其优势的信息，以提高意识和促进使用的目标。 有关某些想法，请参阅[Microsoft 团队文章的更改管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)。
+
+- 让 IT 试点参与者根据自己的体验审阅变更管理材料。 他们可以提供有关最佳做法的提示，并提供有关如何最大限度地说明 Outlook 和 Exchange Online 的优势以及如何使用它进行通信和日程安排的建议。
 
 #### <a name="result"></a>结果
 
 您的 Exchange Online IT 试点已完成，并且已开发、评审和优化初始变更管理材料。
 
-### <a name="step-3-roll-out-to-a-business-group"></a>步骤 3：推广到业务组
+### <a name="step-3-roll-out-to-a-business-group"></a>第 3 步：向业务组发布
 
-完成 IT 试点后，将 Exchange Online 部署到组织中的业务组或部门。 如果您的组织使用的是本地电子邮件服务（如 Exchange Server），则此部署由邮箱迁移组成。 此首展应包括：
+完成 IT 试点后，将 Exchange Online 部署到组织中的业务组或部门。 如果您的组织使用的是本地电子邮件服务（如 Exchange Server），则此部署由邮箱迁移组成。 此发布应包括：
 
 - 在业务组中确定 Exchange Online 的关键业务方案。
 - 通知用户为部门、工作或项目团队的 Exchange Online 使用提供预期和日程表的通知活动。
 - 将您的业务组成员的本地邮箱迁移到 Exchange Online。
-- 在 Exchange Online 上提供用户培训，或链接到介绍 Exchange Online 和如何使用 Exchange Online 的资源。
+- 在 Outlook 中提供[用户培训](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca)或链接到介绍 outlook 和如何使用它的资源。
 - 设立反馈机制（如包含业务组中所有成员的中心 Microsoft Teams 团队），以收集业务组中用户的评论，并采取措施来解决他们报告的问题。
 
 发布期间，可以优化变更管理材料，为在整个组织范围内发布做好准备。
 
 #### <a name="result"></a>结果
 
-业务组已启动并在 Exchange Online 中运行，并且已对更改管理资料进行了测试和改进。
+业务组已启动并在 Outlook 和 Exchange Online 中运行，并且已对更改管理资料进行了测试和改进。
 
-## <a name="phase-3-drive-value"></a>阶段 3：推动价值
+## <a name="phase-3-drive-value"></a>阶段 3：提升价值
 
 在这一阶段，您将完成 Exchange Online 的推出并支持您的用户帮助他们实现其优势。
 
@@ -134,14 +136,14 @@ Exchange Online 可用于不同的用途。 您需要根据您的组织、业务
 - 在单独的业务组中标识 Exchange Online 的关键业务方案。
 - 将精选的更改管理材料用于发布活动，以向组织提供 Exchange Online 使用的预期和日程表。
 - 将组织其余部分的邮箱迁移到 Exchange Online。
-- 在 Exchange Online 上提供用户培训，或提供指向介绍 Exchange Online 和如何使用 Exchange Online 的资源的链接。
+- 在 Outlook 中提供[用户培训](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca)，或提供指向介绍 outlook 和如何使用它的资源的链接。
 - 设立反馈机制（如包含所有用户的中心团队），以收集组织用户反馈的评论和问题。如果组织中的人数少于 2500 人，请使用 Teams 中的公用频道；否则，请使用 Yammer 中的公用组。
 
 #### <a name="result"></a>结果
 
 您的组织已启动并在运行，并且您的更改管理策略已就绪，可以通知、培训和允许用户使用 Exchange Online。
 
-### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>步骤 2：衡量使用情况、管理满意度和推动采用
+### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>第 2 步：衡量使用情况、管理满意度和提高采用率
 
 向整个组织推出 Exchange Online 后，必须继续使用您的更改管理策略执行以下操作：
 
@@ -150,18 +152,18 @@ Exchange Online 可用于不同的用途。 您需要根据您的组织、业务
 
 建议的活动如下：
 
-- 参阅 [Office 365 采用指南](https://aka.ms/successfactors)，了解与云服务采用有关的常规最佳做法。 
+- 请参阅 [Office 365 的成功因素](https://aka.ms/successfactors)，了解与云服务采用有关的常规最佳做法。 
 - 请参阅 [Office 365 活动报告](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)，了解整个组织的 Office 365 服务使用情况。如果不是组织的 Office 365 全局管理员，请让全局管理员向你的用户帐户授予“报告读取者”权限，以便你能够访问活动报告。
-- 监视反馈场所（中心团队团队或 Yammer 中的公共渠道），了解个人是否遇到 Exchange Online 的问题和反馈。 尽快解决问题和问题，以防止他人感到失望并演示对部署的支持。
-- 在每个业务组中确定并培养拥护者，并使用 Exchange Online 突出显示其成果和最佳做法。 反映它们对组织的成功，以显示项目成功和采用情况。 由业务组内的技术领导者签署可对领导者和同行施加强大的影响。
+- 监视反馈场所（中心团队团队或 Yammer 中的公共渠道），了解个人是否遇到 Exchange Online 的问题和反馈。 尽快解决他们的疑问和问题，以避免个人受挫，并证明我们是支持发布的。
+- 在每个业务组中找出并培养冠军，并使用 Outlook 突出显示其最佳实践。 将他们的成功事迹反映给组织，以展示项目的成功和采用。 由业务组内的技术领导者签署可对领导者和同行施加强大的影响。
 
 #### <a name="result"></a>结果
 
-您的组织已采用 Exchange Online 作为其主要个人和小型组短期限的通信和计划工具。
+您的组织已采用 Exchange Online 和 Outlook 作为其主要个人和小型组短寿命的通信和计划工具。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-若要查看并了解公司如何迁移到 Exchange Online 并了解如何使用 Exchange Online Protection 来防范网络攻击，请参阅：
+若要查看并了解如何迁移到 Exchange Online 并了解如何使用 Exchange Online Protection 来防范网络攻击，请参阅：
 
 - [Microsoft 将 150,000 个邮箱迁移到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft 使用威胁智能来保护、检测和响应威胁](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
@@ -171,6 +173,6 @@ Exchange Online 可用于不同的用途。 您需要根据您的组织、业务
 
 有关日常维护 Exchange Online，请参阅以下资源：
 
-- [Exchange Online 中的 exchange 管理中心](https://technet.microsoft.com/library/jj200743(v=exchg.150).aspx) 
-- [Exchange Online 中的监视、报告和邮件跟踪](https://technet.microsoft.com/library/jj200725(v=exchg.150).aspx)
-- [在 Exchange Online 中备份电子邮件](https://technet.microsoft.com/library/dn440734(v=exchg.150).aspx) 
+- [Exchange Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center) 
+- [Exchange Online 中的监视、报告和邮件跟踪](https://docs.microsoft.com/exchange/monitoring/monitoring)
+- [在 Exchange Online 中备份电子邮件](https://docs.microsoft.com/exchange/back-up-email) 

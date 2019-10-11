@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: d36499815979fb0b5ac805a98f0c9320fc07a538
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075130"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441089"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
@@ -79,7 +79,7 @@ Exchange Online Protection 客户： [Exchange Online protection 中的报告和
   
  **问：有人发送一封邮件给我，但是我找不到它。 我怀疑此邮件可能被检测为垃圾邮件了。 有什么工具可以让我找到这封邮件吗？**
   
-答：有的，邮件跟踪工具可以使您在电子邮件通过服务时跟踪它们，以了解所发生的情况。 有关如何使用邮件跟踪工具找到邮件被标识为垃圾邮件的原因的详细信息，请参阅[邮件被标记为垃圾邮件？](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
+A. 是的，通过邮件跟踪工具，您可以在电子邮件通过服务时进行跟踪，以找出他们遇到的问题。 若要详细了解如何使用邮件跟踪工具来找出邮件被标记为垃圾邮件的原因，请参阅[是否已将邮件标记为垃圾邮件？](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **问：如果我的用户发送出站垃圾邮件，服务将会限制（速率限制）我的邮件吗？**
   

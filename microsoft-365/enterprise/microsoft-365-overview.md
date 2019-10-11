@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍了 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 8ae6462c2d1de32aa44820f4f417b92bad6db7d3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: b5629edbdbd660a8548fc30809c408d88b18111b
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370459"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437833"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -30,7 +30,7 @@ Microsoft 365 企业版包括：
 
 |||
 |:-------|:-----|
-| 本地和基于云的应用和生产率服务 | 包括 Office 365 专业增强版、电脑和 Mac 的最新 Office 应用程序（如 Word、Excel、PowerPoint、Outlook 和其他用户），以及用于电子邮件、文件存储和协作、会议等的一套完整的在线服务。 |
+| 本地和基于云的应用和生产率服务 | 包括 Office 365 专业增强版、适用于 PC 和 Mac 的最新 Office 应用（例如 Word、Excel、PowerPoint、Outlook 和其他应用），以及用于电子邮件、文件存储和协作、会议等的一整套在线服务。 |
 | Windows 10 企业版 | 满足了大型和中型组织的需求，为用户提供了具有全面部署、设备和应用程序管理的最高效、安全的 Windows 和 IT 专业人员版本。 |
 | 设备管理和高级安全服务 | 包括 Microsoft Intune，这是一种基于云的企业移动管理（EMM）服务，可帮助您的员工在保持公司数据受保护的情况下提高工作效率。 |
 |||
@@ -57,7 +57,7 @@ Microsoft 365 企业版提供了三个计划。
 
 ## <a name="get-the-big-picture"></a>获取大图
 
-[Microsoft 365 企业版海报](media/Microsoft365Enterprise.pdf)是查看的中心位置：
+[Microsoft 365 企业版海报](media/m365-poster/Microsoft365Enterprise.pdf)是查看的中心位置：
 
 - Microsoft 365 企业的优势，以及应用和服务如何映射到其价值支柱
 - Microsoft 365 企业版计划及其包含的组件 
@@ -65,20 +65,20 @@ Microsoft 365 企业版提供了三个计划。
 - 适用于一些常见组织部门的[Microsoft 365 生产率库](https://www.microsoft.com/microsoft-365/success/)和代表性方案
 - 重点介绍了 Microsoft 365 企业版[部署指南](deploy-microsoft-365-enterprise.md)的采用路线图
 
-[![Microsoft 365 企业版海报的图像](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
+[![Microsoft 365 企业版海报的图像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
-若要下载海报的副本，请单击[此处](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf)。
+要下载海报副本，请单击[此处](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
-## <a name="transition-your-entire-organization"></a>转换你的整个组织
+## <a name="transition-your-entire-organization"></a>转换整个组织
 
 若要更好地了解如何将整个组织迁移到 Microsoft 365 企业版中的产品和服务，请下载[转换海报](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
 [![转换为 Microsoft 365 海报的图像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-此两页海报是一种快速清点现有基础结构的方法，并提供了在 Microsoft 365 企业版中转到相应产品或服务的指南。 它包括 Windows 和 Office 产品以及其他基础结构和安全元素，如设备管理、标识以及信息和威胁保护。
+此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 
-您还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)并以字母、法律或 tabloid （11 x 17）格式打印。
+还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>避免对 Windows 7 和 Office 2010 客户端和服务器的支持终止
 
@@ -98,7 +98,7 @@ Microsoft 365 企业版提供了三个计划。
 
 此页面海报是一种快速了解您可以采取的各种途径，以防止 Windows 7 和 Office 2010 客户端和服务器产品到达支持的末尾，并突出显示 Microsoft 365 企业版中的首选路径和支持。
 
-您还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)并以字母、法律或 tabloid （11 x 17）格式打印。
+还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 
 ## <a name="deploy"></a>部署
 

@@ -10,12 +10,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 7583ded65033b172ecba05f315c7487bd4f9d0de
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+hideEdit: true
+ms.openlocfilehash: 5b41775a4ab68f1738748f6726842472288ce8f1
+ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698384"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37422389"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Dynamics 365 责任就绪清单
 
@@ -137,7 +138,7 @@ ms.locfileid: "34698384"
 | 8 <a name="8"> </a> | [Dynamics 365 SOC 2 类型 2 报告与沟通信函](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 9 <a name="9"> </a> | [Dynamics 365 — 发现内置安全功能](https://www.microsoft.com/trustcenter/security/dynamics365-security) |
 | 10 <a name="10"> </a> | [谁以及根据哪些条款可以访问你的数据](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 11 <a name="11"> </a> | [次级处理者合同：与 Microsoft 签订合同](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
+| 11 <a name="11"> </a> | [次级处理者合同：与 Microsoft 签订合同](https://www.microsoft.com/zh-CN/procurement/supplier-contracting.aspx#SSPA) |
 | 12<a name="12"> </a>  | [GDPR 下的 Dynamics 365 泄露通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) |
 | 13 <a name="13"> </a> | [Microsoft 信任中心合规性产品/服务](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
 | 14 <a name="14"> </a> | [Dynamics 365 渗透测试和安全评估报告](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments) |

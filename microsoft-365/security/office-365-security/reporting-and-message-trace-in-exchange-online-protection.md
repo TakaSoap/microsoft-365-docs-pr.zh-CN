@@ -3,19 +3,19 @@ title: Exchange Online Protection 中的报告和邮件跟踪
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 12/18/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮助您确定组织的总体状态和运行状况。此外，还提供可帮助您解决特定事件（例如邮件没有到达目标收件人）的工具，以及协助满足合规性要求的审核报告。下表描述了 EOP 管理员可用的报告和故障排除工具。
-ms.openlocfilehash: e1a07d8872bee89689f8ce3e16a87bb69c4b6903
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 81b4ce3d22fbf33dc2f22a4b0a73a3459b1874ee
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306086"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441409"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection 中的报告和邮件跟踪
 

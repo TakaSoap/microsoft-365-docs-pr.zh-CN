@@ -13,21 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全的 SharePoint 团队网站来存储最有价值和敏感的文件。
-ms.openlocfilehash: dc604870826075cee645dd466b82f908e1571339
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403173"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437822"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>用于高度管控数据的 SharePoint 网站
 
 *此方案适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建、存储和保护文件中存储的高度管控数据。这包括符合以下条件的数据：
+Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建、存储、保护和管理文件中存储的高度管控数据。这包括符合以下条件的数据：
 
 - 受地区法规约束。
 - 组织最有价值的数据，例如商业机密、财务或人力资源信息以及组织策略。
+
+>[!Note]
+> 一个使用 Microsoft Teams 的类似方案正在开发中。
+>
 
 满足此业务需求的 Microsoft 365 企业版基于云的方案要求用户执行以下操作：
 

@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 在 office 365 Exchange Online Protection 的 Office 365 高级威胁防护和基本保护中具有全面保护的反网络钓鱼保护，可帮助保护您的组织免受基于模拟的恶意网络钓鱼攻击和其他网络钓鱼攻击。
-ms.openlocfilehash: e668a4681f37f4a3d6977f9d42c4aa661a07cac7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 620a6f818d3de7c360c3dc22a0ca5822357fb487
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075321"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428403"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略
 
@@ -39,7 +39,7 @@ ms.locfileid: "37075321"
 3. 设置反网络钓鱼策略或 ATP 反网络钓鱼策略。
 
 >[!IMPORTANT]
-> 若要了解如何应用多种技术，请访问[如何组合策略和保护](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined)。
+> 若要了解如何应用多种技术，请访问[如何组合策略和保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined)。
 
 ## <a name="review-the-prerequisites"></a>查看先决条件
 
@@ -48,7 +48,7 @@ ms.locfileid: "37075321"
     |Role  |分配的位置/方式  |
     |---------|---------|
     |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
-    |Security Administrator |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
+    |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
     |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)） |
 
     若要了解有关角色和权限的详细信息，请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
@@ -94,9 +94,6 @@ Office 365 中的每个组织都有一个适用于所有用户的默认反网络
 |**应用于** <br/> |定义其传入电子邮件将受策略规则制约的收件人。 您可以为与该策略相关联的收件人创建条件和例外。  <br/> 例如，您可以通过将规则应用于域中的所有收件人来为您的组织创建全局策略。  <br/> 您还可以创建例外规则，如不扫描特定收件人组的电子邮件的规则。  <br/> |每个策略都必须与一组用户（例如，特定组或域中的用户）相关联。  <br/> |
 |**高级网络钓鱼阈值** <br/> |定义处理网络钓鱼邮件的方式的设置级别。  <br/> **Standard**怀疑为网络钓鱼的电子邮件是按照标准方式处理的。  <br/> **主动**如果怀疑电子邮件的网络钓鱼是高或极高的可信度，系统将以相同的方式处理这些电子邮件。  <br/> **更主动**如果怀疑电子邮件是以中等、高或极高的置信度进行网络钓鱼，则将以相同的方式处理系统。  <br/> **最积极**如果怀疑电子邮件的网络钓鱼是低、中、高或极高的可信度，则由系统以相同的方式处理。  <br/> |当您希望更积极地处理 Office 365 中可能存在的网络钓鱼邮件时。 例如，具有较高的网络钓鱼的邮件将会对其执行最严格的操作，而概率较低的邮件则对其执行的操作较少。 此设置还会影响将信号组合在一起的筛选系统的其他部分。 这并不一定意味着会实现不同的操作。  实际上，您设置邮件网络钓鱼邮件的概率，以确定（相同）指定的操作。 随着设置级别的增加，移动好邮件的可能性也会增加。  <br/>|
 
-> [!IMPORTANT]
-> ![图像](../media/EnableMailboxIntelligenceBasedImpersonation.png)新的重要设置，separting * * 邮箱智能 "来自基于邮箱智能的模拟保护"。 模拟是通过使用脚本、API 或第三方软件或邮箱下的恶意代码以编程方式访问邮箱和执行对邮箱的操作时。
-
 ## <a name="learn-about-anti-phishing-policy-options"></a>了解反网络钓鱼策略选项
 
 在设置或编辑反网络钓鱼时，可以从多个选项中进行选择，如下表所述： 
@@ -123,7 +120,7 @@ Contoso 的安全管理员可能会使用如下所示的值，以便创建满足
 |||
 |:-----|:-----|
 |**设置或选项** <br/> |**示例** <br/> |
-|Name  <br/> |域和 CEO  <br/> |
+|名称  <br/> |域和 CEO  <br/> |
 |说明  <br/> |确保未模拟 CEO 和我们的域。  <br/> |
 |添加要保护的用户  <br/> |CEO 的电子邮件地址（最小值）。  <br/> |
 |添加要保护的域  <br/> |包含 CEO 的办公室的组织域。  <br/> |

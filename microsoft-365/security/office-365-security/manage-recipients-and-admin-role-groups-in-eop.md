@@ -1,26 +1,26 @@
 ---
 title: 在 EOP 中管理收件人和管理角色组
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 3/9/2015
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) 提供了几种用于管理邮件收件人的方法。下列主题及其相关的子主题提供了管理收件人和分配管理员角色组权限的信息与配置过程。
-ms.openlocfilehash: 74b1cf273aa2f4f97515c2295ffa42d9d3b211c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d69183c009f12dd33aec28d6ee353bf4177601f5
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075911"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441439"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>在 EOP 中管理收件人和管理角色组
 
 Microsoft Exchange Online Protection (EOP) 提供了几种用于管理邮件收件人的方法。下列主题及其相关的子主题提供了管理收件人和分配管理员角色组权限的信息与配置过程。
-  
+
 |**主题**|**说明**|
 |:-----|:-----|
 |[在 EOP 中管理收件人](manage-recipients-in-eop.md)|介绍了 EOP 中收件人的类型（邮件用户和组）；如何添加、删除和编辑收件人；在哪里可以找到 EAC 中的收件人；以及管理收件人的其他方面。|

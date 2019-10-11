@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: baf715b6bb3a09495d6b5efa47eee6ea0ec3160a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ec5f61eec3e4f4f94fa955a936db0b245fc772eb
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074394"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435566"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 
@@ -114,8 +114,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
             <Description default="true" langcode="en-us">
             A custom classification for detecting Employee IDs.
             </Description>
-            <Name default="true" langcode="de-de">Name for German locale</Name>
-            <Description default="true" langcode="de-de">
+            <Description default="false" langcode="de-de">
             Description for German locale.
             </Description>
         </Resource>

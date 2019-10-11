@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业版附带的安全功能。
-ms.openlocfilehash: 8e45d5fdb6a78f3966c46542189aa30ddd80998e
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: c0c37b09fd0bb0218864b6bc97aa127feae1ff16
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288447"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453968"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
 
@@ -98,9 +98,9 @@ Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的
     
     Exchange Online 存档许可证使邮件能够通过连续数据备份轻松存档。 它存储用户的所有电子邮件，包括已删除的项目，以备日后发现或还原时使用。 此外，您还可以使用不同的保留策略来保留电子邮件数据以用于诉讼保留、电子数据展示或满足合规性要求。
     
-- **[Azure 信息保护](https://go.microsoft.com/fwlink/p/?linkid=871406)**
-    
-    信息保护可帮助您通过像 "不转发" 和 "不复制" 这样的控件来控制对电子邮件和文档中敏感信息的访问。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 Microsoft 365 商业版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关更多详细信息，请参阅[Azure 信息保护客户端管理员指南](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)。
+- **[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+
+   Microsoft 365 商业版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，您可以创建**敏感度标签**，以允许您使用类似于 "不转发" 和 "不复制" 的控件来控制对电子邮件和文档中敏感信息的访问。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关更多详细信息，请参阅[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装**AzInfoProtection_UL**。
 
 您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将被添加到 Microsoft 365 Business 管理中心。
   

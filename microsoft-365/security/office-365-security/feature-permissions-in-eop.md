@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 执行管理 Microsoft Exchange Online Protection (EOP) 的任务所需的权限根据正在管理的功能的不同而不同。
-ms.openlocfilehash: 411132bf009f7eb76556d64a8c887b94d92b36f4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 06223b0ec11df0b5a7bedc538913a55ca5998a01
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074687"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441549"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP 中的功能权限
 
 执行管理 Exchange Online Protection （EOP）的任务所需的权限视所管理的功能而变化。
-  
+
 您必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组），才能设置 EOP。
-  
+
 ## <a name="exchange-online-protection-permissions"></a>Exchange Online Protection 权限
 
 要找到管理 EOP 功能所需的权限，请参考下表：如果某个功能列出多个角色组，则您只需要被分配到其中一个角色组就可以使用此功能。
-  
+
 |**功能**|**所需的权限**|
 |:-----|:-----|
 |反恶意软件|[组织管理](http://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [清洁管理](http://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|

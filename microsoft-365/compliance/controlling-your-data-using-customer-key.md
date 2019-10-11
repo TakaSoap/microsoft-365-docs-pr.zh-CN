@@ -14,12 +14,12 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: 了解如何为 Exchange Online、Skype for Business、SharePoint Online 和 OneDrive for business 设置适用于 Office 365 的客户密钥。 使用 "客户密钥"，可以控制组织的加密密钥，然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。
-ms.openlocfilehash: 839d0b56b3748e2ab4ccecc30a084447f22131aa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d3e10a32aeedc90dc06257a29b63df8657157a0b
+ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074389"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435526"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>使用客户密钥控制 Office 365 中的数据
 
@@ -504,7 +504,7 @@ New-MoveRequest <mailbox alias>
 ### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>为每个 SharePoint Online 和 OneDrive for business 地域创建数据加密策略（DEP）
 <a name="CreateDEP4SPOODfB"> </a>
 
-一个 DEP 与 Azure Key Vault 中存储的一组密钥相关联。 您将 DEP 应用于一个地理位置（也称为地理位置）中的所有数据。 如果您使用的是 Office 365 的多地理位置功能（当前处于预览阶段），您可以为每个地理位置创建一个 DEP。 如果您不使用多地理位置，则可以在 Office 365 中创建一个用于 SharePoint Online 和 OneDrive for business 的 DEP。 然后，Office 365 将使用在 DEP 中标识的密钥来加密该地理位置中的数据。 若要创建 DEP，您需要之前获取的主要保管库 Uri。 有关说明，请参阅[获取每个 Azure Key Vault 密钥的 URI](controlling-your-data-using-customer-key.md#GetKeyURI) 。 
+一个 DEP 与 Azure Key Vault 中存储的一组密钥相关联。 您将 DEP 应用于一个地理位置（也称为地理位置）中的所有数据。 如果使用 Office 365 的多地理位置功能，则可以为每个地理位置创建一个 DEP。 如果您不使用多地理位置，则可以在 Office 365 中创建一个用于 SharePoint Online 和 OneDrive for business 的 DEP。 然后，Office 365 将使用在 DEP 中标识的密钥来加密该地理位置中的数据。 若要创建 DEP，您需要之前获取的主要保管库 Uri。 有关说明，请参阅[获取每个 Azure Key Vault 密钥的 URI](controlling-your-data-using-customer-key.md#GetKeyURI) 。 
   
 还! 创建 DEP 时，请指定驻留在两个不同的 Azure Key 保管库中的两个密钥。 确保这些项位于两个单独的 Azure 区域中，以确保地域冗余。
   

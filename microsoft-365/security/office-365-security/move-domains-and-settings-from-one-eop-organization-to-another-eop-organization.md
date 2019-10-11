@@ -1,39 +1,39 @@
 ---
 title: 将域和设置从一个 EOP 组织移动到另一个 EOP 组织
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。
-ms.openlocfilehash: da0ac33d9b14b2a5d5f581604c0d204d41704df3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 89f62a158801dc269cebafcb37f72bb5cb8c93b8
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075825"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441449"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 
 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。从一个 EOP 组织移动到另一个 EOP 组织极具挑战性，但通过一些基本的远程 Windows PowerShell 脚本和少量的准备工作，您便可以通过相对较小的维护窗口实现此目标。
-  
+
 > [!NOTE]
 > 仅可将设置稳定可靠地从一个 EOP 独立 (Standard) 组织移动到另一个 EOP Standard 或 Exchange Enterprise CAL with Services (EOP Premium) 组织，或从一个 EOP Premium 组织移动到另一个 EOP Premium 组织。 由于某些高级功能在 EOP 标准组织中不受支持，因此从 EOP Premium 组织移动到 EOP 标准组织可能不会成功。 <br><br> 这些说明是针对 EOP 仅筛选组织。从一个 Exchange Online 组织移动到另一个 Exchange Online 组织还有其他一些注意事项。Exchange Online 组织不在这些说明的范畴内。
-  
+
 在以下示例中，Contoso, Ltd. 已与 Contoso Suites 合并。下图显示了将域、邮件用户和组，以及设置从源 EOP 组织 (contoso.onmicrosoft.com) 移动到目标 EOP 组织 (contososuites.onmicrosoft.com) 的过程。
-  
+
 ![移动 EOP 域和设置](../media/EOP-Move-domains-and-settings.jpg)
-  
+
 将域从一个组织移动到另一个组织的挑战性在于，同一个经验证的域不能同时存在于两个组织中。以下步骤将帮助您逐步完成这一过程。
 
 ## <a name="step-1-collect-data-from-the-source-organization"></a>步骤 1：收集源组织数据
 
 要在目标组织中重新创建源组织，请确保收集和存储有关源组织的以下信息：
-  
+
 - 域
 
 - 邮件用户
@@ -50,28 +50,28 @@ ms.locfileid: "37075825"
 
   > [!NOTE]
   > Cmdlet 对邮件流规则集的导出和导入的支持目前仅支持 EOP 高级订阅计划。
-  
-收集您的所有设置最简便的方法是使用远程 Windows PowerShell。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
-  
+
+收集所有设置的最简单方法是使用 PowerShell。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
+
 接下来，您就可以收集所有设置，并将其导出到 .xml 文件，此文件将导入目标租户。通常，您可以通过管道将每个设置的 **Get** cmdlet 的输出传递到 **Export-Clixml** cmdlet，以将设置保存到 .xml 文件中，如以下代码示例中所示。
-  
-在 Exchange Online PowerShell 中，在易于查找并更改到该目录的位置创建名为 "导出" 的目录。 例如：
-  
-```Powershell
+
+在 Exchange Online Protection PowerShell 中，在易于查找并更改到该目录的位置创建名为 "导出" 的目录。 例如：
+
+```PowerShell
 mkdir C:\EOP\Export
 ```
 
-```Powershell
+```PowerShell
 cd C:\EOP\Export
 ```
 
 以下脚本可用于收集源组织中的所有邮件用户、组、反垃圾邮件设置、反恶意软件设置、连接器和邮件流规则。 将下面的文本复制并粘贴到记事本等文本编辑器，将文件在刚刚创建的"Export"目录中另存为 Source_EOP_Settings.ps1，然后运行以下命令：
-  
-```Powershell
+
+```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
 ```
 
-```Powershell
+```PowerShell
 #****************************************************************************
 # Export Domains
 #*****************************************************************************
@@ -84,32 +84,32 @@ Get-Recipient -ResultSize unlimited -RecipientTypeDetails MailUser | Export-Clix
 #****************************************************************************
 # Groups
 #
-# If you're using directory synchronization, you can skip this step and 
-# simply sync to the target 
+# If you're using directory synchronization, you can skip this step and
+# simply sync to the target
 # tenant.
 # First, you need to capture information about the distribution groups.
 #****************************************************************************
 Get-Recipient -ResultSize unlimited -RecipientTypeDetails MailUniversalDistributionGroup | Export-Clixml DistributionGroups.xml
-Get-Recipient -ResultSize unlimited -RecipientTypeDetails MailUniversalSecurityGroup | Export-Clixml SecurityGroups.xml 
+Get-Recipient -ResultSize unlimited -RecipientTypeDetails MailUniversalSecurityGroup | Export-Clixml SecurityGroups.xml
 #****************************************************************************
-# And then we'll use that output to loop through each group and get the 
+# And then we'll use that output to loop through each group and get the
 # members.
 #****************************************************************************
 $DGs = Import-Clixml .\DistributionGroups.xml
 ForEach ($dg in $DGs) {Get-DistributionGroupMember -Identity $dg.name | Export-Clixml $dg.ExternalDirectoryObjectId}
 $SGs = Import-Clixml .\SecurityGroups.xml
-ForEach ($sg in $SGs) {Get-DistributionGroupMember -Identity $sg.name | Export-Clixml $sg.ExternalDirectoryObjectId} 
+ForEach ($sg in $SGs) {Get-DistributionGroupMember -Identity $sg.name | Export-Clixml $sg.ExternalDirectoryObjectId}
 #*****************************************************************************
 # Export dynamic distribution groups - EOP Premium Only
 #
-# If you're using directory synchronization, then you can skip this step and simply 
+# If you're using directory synchronization, then you can skip this step and simply
 # sync to the target tenant.
 #*****************************************************************************
 Get-DynamicDistributionGroup -ResultSize unlimited | Export-Clixml DynamicDistributionGroups.xml
 #*****************************************************************************
 # Export mail contacts - EOP Premium Only
 #
-# If you're using directory synchronization, then you can skip this step and simply 
+# If you're using directory synchronization, then you can skip this step and simply
 # sync to the target tenant.
 #*****************************************************************************
 Get-MailContact -ResultSize unlimited -RecipientTypeDetails MailContact | Export-Clixml MailContacts.xml
@@ -138,8 +138,8 @@ Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 ```
 
 从“Export”目录运行以下命令，以通过目标组织更新 .xml 文件。将 contoso.onmicrosoft.com 和 contososuites.onmicrosoft.com 分别替换为您的源组织名称和目标组织名称。
-  
-```Powershell
+
+```PowerShell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
@@ -147,14 +147,14 @@ ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -repla
 ## <a name="step-2-add-domains-to-the-target-organization"></a>步骤 2：将域添加到目标组织
 
 通过使用以下脚本将域添加到目标组织。将文本复制并粘贴到记事本等文本编辑器，将脚本另存为 C:\EOP\Export\Add_Domains.ps1，然后运行以下命令：
-  
-```Powershell
+
+```PowerShell
 & "C:\EOP\Export\Add_Domains.ps1"
 ```
 
 这些域将不会经过验证，且不能用于路由邮件，但添加域之后，您就可以收集所需信息来验证域，并最终更新新租户的 MX 记录。
-  
-```Powershell
+
+```PowerShell
 #***********************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -170,12 +170,12 @@ Foreach ($domain in $Domains) {
 ```
 
 现在，您可以查看和收集目标组织的 Microsoft 365 管理中心中的信息，以便您可以在时间到来时快速验证您的域：
-  
+
 1. 登录到 Microsoft 365 管理中心[https://portal.office.com](https://portal.office.com)。
 
 2. Click **Domains**.
 
-3. Click each **Start setup** link, and then proceed through the setup wizard. 
+3. Click each **Start setup** link, and then proceed through the setup wizard.
 
 4. On the **Confirm ownership** page, for **See step-by-step instructions for performing this step with**, select **General instructions**.
 
@@ -186,25 +186,25 @@ Foreach ($domain in $Domains) {
 ## <a name="step-3-force-senders-to-queue-mail"></a>步骤 3：强制发件人对邮件进行排队
 
 在将域从一个租户移动到另一个租户时，您需要从源组织中删除这些域，然后在目标组织中验证这些域。在此期间，您不能通过 EOP 路由邮件。
-  
+
 强制发件人对邮件进行排队的一个选择是将 MX 记录更新为直接指向您的内部部署邮件服务器。
-  
+
 另一个选择是在每个域中放置一个无效的 MX 记录，这些域中都保留了域的 DNS 记录（也称为 DNS 托管服务）。这将使发件人对邮件进行排队，并进行重试（通常重试时间为 48 小时，但具体可能因提供程序而异）。您可以使用 invalid.outlook.com 作为无效的 MX 目标。将 MX 记录的生存时间 (TTL) 值降低为五分钟，这将有助于更快速地将更改传播到 DNS 提供程序。
-  
+
 有关配置 DNS 的详细信息，请参阅[为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
-  
+
 > [!IMPORTANT]
-> 不同的提供程序对邮件进行排队的时间段均不同。您将需要快速设置新租户，并还原 DNS 设置，以避免如果排队时间到期向发件人发送未送达报告 (NDR)。 
-  
+> 不同的提供程序对邮件进行排队的时间段均不同。您将需要快速设置新租户，并还原 DNS 设置，以避免如果排队时间到期向发件人发送未送达报告 (NDR)。
+
 ## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a>步骤 4：从源组织删除用户、组和域
 
-以下脚本将使用 Azure Active Directory 远程 Windows PowerShell 从源租户删除用户、组和域。将以下文本复制并粘贴到记事本等文本编辑器，将文件另存为 C:\EOP\Export\Remove_Users_and_Groups.ps1，然后运行以下命令：
-  
-```Powershell
+下面的脚本使用 Azure Active Directory PowerShell 从源租户中删除用户、组和域。 将以下文本复制并粘贴到记事本等文本编辑器，将文件另存为 C:\EOP\Export\Remove_Users_and_Groups.ps1，然后运行以下命令：
+
+```PowerShell
 & "C:\EOP\Export\Remove_Users_and_Groups.ps1"
 ```
 
-```Powershell
+```PowerShell
 #*****************************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -243,19 +243,19 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 2. Click **Domains**.
 
-3. 单击目标域的每个“启动安装程序”**** 链接，然后再通过安装向导继续操作。 
+3. 单击目标域的每个“启动安装程序”**** 链接，然后再通过安装向导继续操作。
 
 ## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>步骤 6：将邮件用户和组添加到目标组织
 
 EOP 的最佳做法是使用 Azure Active Directory 将本地 Active Directory 同步到目标租户。 有关如何执行此操作的详细信息，请参阅在[EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的 "使用目录同步管理邮件用户"。 您还可以使用以下脚本从源租户重新创建用户和组。 注意：不能移动用户密码。 创建新的用户密码并将其保存在名为 UsersAndGroups 的文件中。
-  
+
 若要使用脚本，可以将以下文本复制并粘贴到记事本等文本编辑器，将文件另存为 C:\EOP\Export\Add_Users_and_Groups.ps1，然后运行以下命令：
-  
-```Powershell
+
+```PowerShell
 & "C:\EOP\Export\Add_Users_and_Groups.ps1"
 ```
 
-```Powershell
+```PowerShell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -379,20 +379,20 @@ If((Get-PSSession).ComputerName.Contains("ps.protection")) {
     if($DynamicDistributionGroupsCount -gt 0){
         Write-Host "Importing $DynamicDistributionGroupsCount Dynamic Distribution Groups"
         foreach ($DynamicDistributionGroup in $DynamicDistributionGroups) {
-            $DynamicDistributionGroupsCmdlet = "New-DynamicDistributionGroup" 
+            $DynamicDistributionGroupsCmdlet = "New-DynamicDistributionGroup"
             $DynamicDistributionGroupsCmdlet += " -Confirm:`$False"
-            $DynamicDistributionGroupsCmdlet += makeparam "DisplayName" $DynamicDistributionGroup.DisplayName 
-            $DynamicDistributionGroupsCmdlet += makeparam "ModeratedBy" $DynamicDistributionGroup.ModeratedBy 
-            $DynamicDistributionGroupsCmdlet += makeparam "ModerationEnabled" $DynamicDistributionGroup.ModerationEnabled 
-            $DynamicDistributionGroupsCmdlet += makeparam "Name" $DynamicDistributionGroup.Name 
-            $DynamicDistributionGroupsCmdlet += makeparam "PrimarySmtpAddress" $DynamicDistributionGroup.PrimarySmtpAddress 
+            $DynamicDistributionGroupsCmdlet += makeparam "DisplayName" $DynamicDistributionGroup.DisplayName
+            $DynamicDistributionGroupsCmdlet += makeparam "ModeratedBy" $DynamicDistributionGroup.ModeratedBy
+            $DynamicDistributionGroupsCmdlet += makeparam "ModerationEnabled" $DynamicDistributionGroup.ModerationEnabled
+            $DynamicDistributionGroupsCmdlet += makeparam "Name" $DynamicDistributionGroup.Name
+            $DynamicDistributionGroupsCmdlet += makeparam "PrimarySmtpAddress" $DynamicDistributionGroup.PrimarySmtpAddress
             $DynamicDistributionGroupsCmdlet += makeparam "RecipientContainer" $DynamicDistributionGroup.RecipientContainer
             $RecipientFilterParam =  makeparam "RecipientFilter" $DynamicDistributionGroup.RecipientFilter
             $RecipientFilterParam = " -RecipientFilter {" + $RecipientFilterParam.Substring(19)
             $RecipientFilterParam = $RecipientFilterParam.Substring(0,$RecipientFilterParam.Length-1)
             $RecipientFilterParam += "}"
             $DynamicDistributionGroupsCmdlet +=  $RecipientFilterParam
-            $DynamicDistributionGroupsCmdlet += makeparam "SendModerationNotifications" $DynamicDistributionGroup.SendModerationNotifications 
+            $DynamicDistributionGroupsCmdlet += makeparam "SendModerationNotifications" $DynamicDistributionGroup.SendModerationNotifications
             Add-Content $outfile "`n$DynamicDistributionGroupsCmdlet"
         }
 
@@ -411,7 +411,7 @@ If((Get-PSSession).ComputerName.Contains("ps.protection")) {
     if($MailContactsCount -gt 0){
         Write-Host "Importing $MailContactsCount Dynamic Distribution Groups"
         foreach ($MailContact in $MailContacts) {
-            $MailContactsCmdlet = "New-MailContact" 
+            $MailContactsCmdlet = "New-MailContact"
             $MailContactsCmdlet += makeparam "UsePreferMessageFormat" $MailContact.UsePreferMessageFormat
             $MailContactsCmdlet += makeparam "DisplayName" $MailContact.DisplayName
             $MailContactsCmdlet += makeparam "ModeratedBy" $MailContact.ModeratedBy
@@ -545,20 +545,20 @@ $DynamicDistributionGroupsCount = $DynamicDistributionGroups.Name.Count
 if($DynamicDistributionGroupsCount -gt 0){
     Write-Host "Importing $DynamicDistributionGroupsCount Dynamic Distribution Groups"
     foreach ($DynamicDistributionGroup in $DynamicDistributionGroups) {
-        $DynamicDistributionGroupsCmdlet = "New-DynamicDistributionGroup" 
+        $DynamicDistributionGroupsCmdlet = "New-DynamicDistributionGroup"
         $DynamicDistributionGroupsCmdlet += " -Confirm:`$False"
-        $DynamicDistributionGroupsCmdlet += makeparam "DisplayName" $DynamicDistributionGroup.DisplayName 
-        $DynamicDistributionGroupsCmdlet += makeparam "ModeratedBy" $DynamicDistributionGroup.ModeratedBy 
-        $DynamicDistributionGroupsCmdlet += makeparam "ModerationEnabled" $DynamicDistributionGroup.ModerationEnabled 
-        $DynamicDistributionGroupsCmdlet += makeparam "Name" $DynamicDistributionGroup.Name 
-        $DynamicDistributionGroupsCmdlet += makeparam "PrimarySmtpAddress" $DynamicDistributionGroup.PrimarySmtpAddress 
+        $DynamicDistributionGroupsCmdlet += makeparam "DisplayName" $DynamicDistributionGroup.DisplayName
+        $DynamicDistributionGroupsCmdlet += makeparam "ModeratedBy" $DynamicDistributionGroup.ModeratedBy
+        $DynamicDistributionGroupsCmdlet += makeparam "ModerationEnabled" $DynamicDistributionGroup.ModerationEnabled
+        $DynamicDistributionGroupsCmdlet += makeparam "Name" $DynamicDistributionGroup.Name
+        $DynamicDistributionGroupsCmdlet += makeparam "PrimarySmtpAddress" $DynamicDistributionGroup.PrimarySmtpAddress
         $DynamicDistributionGroupsCmdlet += makeparam "RecipientContainer" $DynamicDistributionGroup.RecipientContainer
         $RecipientFilterParam =  makeparam "RecipientFilter" $DynamicDistributionGroup.RecipientFilter
         $RecipientFilterParam = " -RecipientFilter {" + $RecipientFilterParam.Substring(19)
         $RecipientFilterParam = $RecipientFilterParam.Substring(0,$RecipientFilterParam.Length-1)
         $RecipientFilterParam += "}"
         $DynamicDistributionGroupsCmdlet +=  $RecipientFilterParam
-        $DynamicDistributionGroupsCmdlet += makeparam "SendModerationNotifications" $DynamicDistributionGroup.SendModerationNotifications 
+        $DynamicDistributionGroupsCmdlet += makeparam "SendModerationNotifications" $DynamicDistributionGroup.SendModerationNotifications
         Add-Content $outfile "`n$DynamicDistributionGroupsCmdlet"
     }
 
@@ -573,7 +573,7 @@ $MailContactsCount = $MailContacts.Name.Count
 if($MailContactsCount -gt 0){
     Write-Host "Importing $MailContactsCount Dynamic Distribution Groups"
     foreach ($MailContact in $MailContacts) {
-        $MailContactsCmdlet = "New-MailContact" 
+        $MailContactsCmdlet = "New-MailContact"
         $MailContactsCmdlet += makeparam "UsePreferMessageFormat" $MailContact.UsePreferMessageFormat
         $MailContactsCmdlet += makeparam "DisplayName" $MailContact.DisplayName
         $MailContactsCmdlet += makeparam "ModeratedBy" $MailContact.ModeratedBy
@@ -600,16 +600,16 @@ if($MailContactsCount -gt 0){
 ## <a name="step-7-add-protection-settings-to-the-target-organization"></a>步骤 7：将保护设置添加到目标组织
 
 您可以在登录目标组织时从“Export”目录运行以下脚本，重新创建早期从源组织导出到 .xml 文件的设置。
-  
+
 将脚本文本复制并粘贴到记事本等文本编辑器，将文件另存为 C:\EOP\Export\Import_Settings.ps1，然后运行以下命令：
-  
-```Powershell
+
+```PowerShell
 & "C:\EOP\Export\Import_Settings.ps1"
 ```
 
 此脚本将导入 .xml 文件，并创建名为 Settings.ps1 的 Windows PowerShell 脚本文件，您可以查看、编辑，然后运行此脚本文件来重新创建保护设置和邮件流设置。
-  
-```Powershell
+
+```PowerShell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -646,20 +646,20 @@ if($HostedContentFilterPolicyCount -gt 0){
         else {
         $HostedContentFilterPolicyCmdlet += makeparam "Name" $HostedContentFilterPolicy.Name
         }
-        $HostedContentFilterPolicyCmdlet += makeparam "AddXHeaderValue" $HostedContentFilterPolicy.AddXHeaderValue 
+        $HostedContentFilterPolicyCmdlet += makeparam "AddXHeaderValue" $HostedContentFilterPolicy.AddXHeaderValue
         $HostedContentFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedContentFilterPolicy.AdminDisplayName
         $HostedContentFilterPolicyCmdlet += " -Confirm:`$False"
-        $HostedContentFilterPolicyCmdlet += makeparam "DownloadLink" $HostedContentFilterPolicy.DownloadLink 
-        $HostedContentFilterPolicyCmdlet += makeparam "EnableEndUserSpamNotifications" $HostedContentFilterPolicy.EnableEndUserSpamNotifications 
-        $HostedContentFilterPolicyCmdlet += makeparam "EnableLanguageBlockList" $HostedContentFilterPolicy.EnableLanguageBlockList 
+        $HostedContentFilterPolicyCmdlet += makeparam "DownloadLink" $HostedContentFilterPolicy.DownloadLink
+        $HostedContentFilterPolicyCmdlet += makeparam "EnableEndUserSpamNotifications" $HostedContentFilterPolicy.EnableEndUserSpamNotifications
+        $HostedContentFilterPolicyCmdlet += makeparam "EnableLanguageBlockList" $HostedContentFilterPolicy.EnableLanguageBlockList
         $HostedContentFilterPolicyCmdlet += makeparam "EnableRegionBlockList" $HostedContentFilterPolicy.EnableRegionBlockList
         if($HostedContentFilterPolicy.EndUserSpamNotificationCustomFromAddress.Length -gt 0)
         {
             $HostedContentFilterPolicyCmdlet += makeparam "EndUserSpamNotificationCustomFromAddress" $HostedContentFilterPolicy.EndUserSpamNotificationCustomFromAddress
         }
-        $HostedContentFilterPolicyCmdlet += makeparam "EndUserSpamNotificationCustomFromName" $HostedContentFilterPolicy.EndUserSpamNotificationCustomFromName 
-        $HostedContentFilterPolicyCmdlet += makeparam "EndUserSpamNotificationCustomSubject" $HostedContentFilterPolicy.EndUserSpamNotificationCustomSubject 
-        $HostedContentFilterPolicyCmdlet += makeparam "EndUserSpamNotificationFrequency" $HostedContentFilterPolicy.EndUserSpamNotificationFrequency 
+        $HostedContentFilterPolicyCmdlet += makeparam "EndUserSpamNotificationCustomFromName" $HostedContentFilterPolicy.EndUserSpamNotificationCustomFromName
+        $HostedContentFilterPolicyCmdlet += makeparam "EndUserSpamNotificationCustomSubject" $HostedContentFilterPolicy.EndUserSpamNotificationCustomSubject
+        $HostedContentFilterPolicyCmdlet += makeparam "EndUserSpamNotificationFrequency" $HostedContentFilterPolicy.EndUserSpamNotificationFrequency
         $HostedContentFilterPolicyCmdlet += makeparam "EndUserSpamNotificationLanguage" $HostedContentFilterPolicy.EndUserSpamNotificationLanguage
         $HostedContentFilterPolicyCmdlet += makeparam "LanguageBlockList" $HostedContentFilterPolicy.LanguageBlockList
         $HostedContentFilterPolicyCmdlet += makeparam "MarkAsSpamBulkMail" $HostedContentFilterPolicy.MarkAsSpamBulkMail
@@ -724,7 +724,7 @@ if($HostedContentFilterPolicyCount -gt 0){
         $HostedOutboundSpamFilterPolicyCmdlet = "Set-HostedOutboundSpamFilterPolicy Default"
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedOutboundSpamFilterPolicy.AdminDisplayName
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundAdditionalRecipients"
-        $HostedOutboundSpamFilterPolicy.BccSuspiciousOutboundAdditionalRecipients 
+        $HostedOutboundSpamFilterPolicy.BccSuspiciousOutboundAdditionalRecipients
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundMail" $HostedOutboundSpamFilterPolicy.BccSuspiciousOutboundMail
         $HostedOutboundSpamFilterPolicyCmdlet += " -Confirm:`$False"
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "NotifyOutboundSpam" $HostedOutboundSpamFilterPolicy.NotifyOutboundSpam
@@ -818,7 +818,7 @@ if($HostedContentFilterPolicyCount -gt 0){
         $MalwareFilterRuleCmdlet += makeparam "ExceptIfSentToMemberOf" $MalwareFilterRule.ExceptIfSentToMemberOf
         $MalwareFilterRuleCmdlet += makeparam "RecipientDomainIs" $MalwareFilterRule.RecipientDomainIs
         $MalwareFilterRuleCmdlet += makeparam "SentTo" $MalwareFilterRule.SentTo
-        $MalwareFilterRuleCmdlet += makeparam "SentToMemberOf" $MalwareFilterRule.SentToMemberOf       
+        $MalwareFilterRuleCmdlet += makeparam "SentToMemberOf" $MalwareFilterRule.SentToMemberOf
         Add-Content $outfile "`n$MalwareFilterRuleCmdlet"
     }
  }else{
@@ -851,13 +851,13 @@ if($InboundConnectorCount -gt 0){
             }
         }
 
-        $InboundConnectorCmdlet += makeparam "CloudServicesMailEnabled" $InboundConnector.CloudServicesMailEnabled 
-        $InboundConnectorCmdlet += makeparam "Comment" $InboundConnector.Comment 
+        $InboundConnectorCmdlet += makeparam "CloudServicesMailEnabled" $InboundConnector.CloudServicesMailEnabled
+        $InboundConnectorCmdlet += makeparam "Comment" $InboundConnector.Comment
         $InboundConnectorCmdlet += " -Confirm:`$False"
         $InboundConnectorCmdlet += makeparam "ConnectorSource" $InboundConnector.ConnectorSource
         $InboundConnectorCmdlet += makeparam "ConnectorType" $InboundConnector.ConnectorType
         $InboundConnectorCmdlet += makeparam "Enabled" $InboundConnector.Enabled
-        $InboundConnectorCmdlet += makeparam "RequireTls" $InboundConnector.RequireTls 
+        $InboundConnectorCmdlet += makeparam "RequireTls" $InboundConnector.RequireTls
         $InboundConnectorCmdlet += makeparam "RestrictDomainsToCertificate" $InboundConnector.RestrictDomainsToCertificate
         $InboundConnectorCmdlet += makeparam "RestrictDomainsToIPAddresses" $InboundConnector.RestrictDomainsToIPAddresses
         $InboundConnectorCmdlet += makeparam "SenderIPAddresses" $InboundConnector.SenderIPAddresses

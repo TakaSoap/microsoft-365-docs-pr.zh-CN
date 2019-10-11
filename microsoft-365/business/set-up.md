@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: d33839693001f36fbb56541775015f739300b043
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4f31af3fa63416d3b1bd7281f7712313252ad437
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288487"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440581"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>在安装向导中设置 Microsoft 365 商业版
 
@@ -44,7 +44,7 @@ ms.locfileid: "37288487"
     > [!IMPORTANT]
     > 如果你在注册过程中购买了一个域，你将不会在此处看到 "**添加域**" 步骤。 改为转到 "[添加用户](#add-users-and-assign-licenses)"。
 
-    ![选择 "添加域"。](media/addadomainadmincenter.png)
+    ![选择 "转到安装程序"。](media/gotosetupinadmincenter.png)
     
 3. 在向导中，输入要使用的域名（如 contoso.com）。
 
@@ -70,7 +70,9 @@ ms.locfileid: "37288487"
 
 1. 如果你的 Microsoft 365 业务订阅具有现有用户（例如，如果你使用的是 Azure AD Connect），你将获得一个选项，用于立即向其分配许可证。 继续操作，并为这些用户添加许可证。
 
-3. 添加用户后，您还将获得一个选项，用于与添加的新用户共享凭据。 可以选择打印、通过电子邮件发送或下载凭据。
+2. 添加用户后，您还将获得一个选项，用于与添加的新用户共享凭据。 可以选择打印、通过电子邮件发送或下载凭据。
+
+3. 在 "为您的组织创建团队" 中，您可以选择添加团队并向他们添加用户。 您还可以在以后执行此操作。 有关详细信息，请参阅[创建公司范围的团队](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3)。
 
 4. 跳过迁移电子邮件，然后在" **迁移电子邮件**"页面上选择" **下一步**"。 
 
@@ -86,14 +88,14 @@ ms.locfileid: "37288487"
   
 1. 设置向导通常可检测到你的注册机构并提供一个链接，该链接指向在注册机构网站更新 NS 记录的分步说明。 如果不是，请[将名称服务器更改为使用任何域注册机构设置 Office 365](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2)。 
 
-    - 如果您有现有的 DNS 记录（例如现有网站），但 DNS 主机启用了[域连接](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)，请选择 "**添加记录**"。 
+    - 如果您有现有的 DNS 记录（例如现有网站），但 DNS 主机启用了[域连接](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)，请选择 "**添加记录**"。 在 "**选择您的在线服务**" 页面上，接受所有默认设置，然后选择 "**下一步**"，然后在 DNS 主机的页面上选择 "**授权**"。
     - 如果已有其他 DNS 主机（未启用域连接）的现有 DNS 记录，则需要管理自己的 DNS 记录，以确保现有服务保持连接。 有关详细信息，请参阅[域基础知识](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)。
 
         ![连接域页面，我将管理自己的 DNS 记录。](media/connectyourdomainpage.png)
 
 2. 按照向导中的步骤进行操作，将为你设置电子邮件和其他服务。
 
-### <a name="set-up-security-policies-and-device-configurations"></a>设置安全策略和设备配置 
+### <a name="protect-data-and-devices"></a>保护数据和设备 
 
 在向导中设置的策略将自动应用于名为 "*所有用户*" 的[安全组](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups)。 您还可以在管理中心中创建其他组来分配策略。
 
@@ -113,7 +115,6 @@ ms.locfileid: "37288487"
 3. 你也可以选择在 Windows 10 设备上[自动安装 Office](install-office-on-windows-10-during-setup.md) 。
 
     !["设置 Windows 10 设备配置" 页的屏幕截图。](media/setwin10config.png)
-
 
 
 ## <a name="deploy-office-365-client-apps"></a>部署 Office 365 客户端应用程序

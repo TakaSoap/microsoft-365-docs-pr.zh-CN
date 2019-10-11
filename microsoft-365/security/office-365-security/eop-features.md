@@ -1,7 +1,7 @@
 ---
 title: EOP 功能
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,20 +10,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: a5a11204cff0392245c91d371aad0fcae9e4d124
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1dd3ff638c9cb209c51a82fd2388057f3bf4b95e
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074705"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441509"
 ---
 # <a name="eop-features"></a>EOP 功能
 
 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-  
+
 > [!TIP]
-> [适用于企业的 Office 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)在找到有关即将推出的新功能的信息方面是不错的资源。有关不同 EOP 订阅计划中的可用功能的更全面介绍，请参阅 [Exchange Online Protection 服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。 
-  
+> [适用于企业的 Office 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)在找到有关即将推出的新功能的信息方面是不错的资源。有关不同 EOP 订阅计划中的可用功能的更全面介绍，请参阅 [Exchange Online Protection 服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+
 |||
 |:-----|:-----|
 |**功能**|**说明**|
@@ -77,7 +77,7 @@ ms.locfileid: "37074705"
 |按照规则更改邮件的垃圾邮件可信度。|您可以检测传输中的邮件并根据您选择条件，向其分配垃圾邮件可信度。 有关详细信息，请参阅[使用邮件流规则在邮件中设置垃圾邮件可信度级别（SCL）](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。|
 |检查邮件附件|您可以检查附件内容或附加文件的特性，并根据结果定义要采取的操作。 有关详细信息，请参阅[使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。|
 |**管理**||
-|基于 Web 的管理|EOP 管理员可以通过 Exchange 管理中心 (EAC) 界面（支持 60 种语言）管理服务。 有关详细信息，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。|
+|基于 Web 的管理|EOP 管理员可以通过 Exchange 管理中心 (EAC) 界面（支持 60 种语言）管理服务。 有关详细信息，请参阅 [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md)。|
 |目录同步|目录同步通过 Azure Active Directory 同步工具提供。有关详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"部分。  |
 |基于目录的边缘阻止 (DBEB)|通过 DBEB 功能，您可以在服务网络外围拒绝发送至无效收件人的邮件。 DBEB 可让管理员向 Office 365 添加已启用邮件的收件人，并阻止发送到 Office 365 中不存在的电子邮件地址的所有邮件。 有关配置 DBEB 的详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。|
 |远程 Windows PowerShell 访问|远程 Windows PowerShell 提供完整的 EOP 功能。 有关详细信息，请参阅[Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)。|

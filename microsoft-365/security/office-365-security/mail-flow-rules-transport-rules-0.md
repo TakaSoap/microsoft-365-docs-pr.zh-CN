@@ -1,7 +1,7 @@
 ---
 title: Exchange Online Protection 中的邮件流规则（传输规则）
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,25 +10,25 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则（传输规则）识别通过 Office 365 组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 50b068c39ad02d04596b6598c31333be79ac28c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075564"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441529"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则（传输规则）
 
 可以使用邮件流规则（也称为传输规则）识别通过 Office 365 组织进行传递的邮件并对其进行操作。邮件流规则与 Outlook 和 Web 上的 Outlook 中提供的收件箱规则类似。主要区别在于邮件流规则在邮件传输过程中对其进行操作，而不是在邮件传递到邮箱后进行操作。邮件流规则包含更丰富的条件、例外和操作集，让你能灵活实现多种类型的邮件策略。
-  
+
 本文介绍了邮件流规则的组件及其工作方式。
-  
+
 有关创建、复制和管理邮件流规则的步骤，请参阅[在 Exchange Online 中管理邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 若要了解有关测试选项的详细信息，请参阅[在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)[测试邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)和策略提示。
-  
+
 有关与邮件流规则匹配的邮件的摘要和详细信息报告，请参阅[使用 Office 365 中的邮件保护报告查看关于恶意软件、垃圾邮件和规则检测的数据](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。
-  
+
 若要通过使用邮件流规则实现特定的邮件策略，请参阅下列主题：
-  
+
 - [使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [设置 Office 365 企业版中的加密](../../compliance/set-up-encryption.md)
@@ -44,20 +44,20 @@ ms.locfileid: "37075564"
 - [为加密或解密电子邮件定义规则](https://go.microsoft.com/fwlink/p/?Linkid=402846)
 
 以下视频演示了如何设置 Exchange Online Protection 中的邮件流规则。
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
+
 ## <a name="mail-flow-rule-components"></a>邮件流规则组件
 
 邮件流规则由条件、例外、操作和属性组成：
-  
-- **条件**：确定要向其应用操作的邮件。 一些条件检查邮件头字段（例如“收件人”、“发件人”或“抄送”字段）。 其他条件检查邮件属性（例如邮件主题、正文、附件、邮件大小或邮件分类）。 大多数条件要求你指定比较运算符（例如等于、不等于或包含）以及要匹配的值。 如果没有条件或例外，规则将应用到所有邮件。 
+
+- **条件**：确定要向其应用操作的邮件。 一些条件检查邮件头字段（例如“收件人”、“发件人”或“抄送”字段）。 其他条件检查邮件属性（例如邮件主题、正文、附件、邮件大小或邮件分类）。 大多数条件要求你指定比较运算符（例如等于、不等于或包含）以及要匹配的值。 如果没有条件或例外，规则将应用到所有邮件。
 
 有关 Exchange Online Protection 中的邮件流规则条件的详细信息，请参阅[Exchange online 中的邮件流规则条件和例外（谓词）](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
-- **例外**：（可选）标识操作不应应用于的邮件。 条件中可用的相同邮件标识符同样在例外中可用。 例外会覆盖条件并阻止规则操作应用于邮件，即使邮件匹配所有配置的条件也是如此。 
+- **例外**：（可选）标识操作不应应用于的邮件。 条件中可用的相同邮件标识符同样在例外中可用。 例外会覆盖条件并阻止规则操作应用于邮件，即使邮件匹配所有配置的条件也是如此。
 
-- **操作**：指定要对与规则中的条件匹配的邮件执行的操作，并且不匹配任何例外。 例外会覆盖条件并阻止将操作应用于电子邮件，即使该邮件符合所有配置的条件也是如此。 
+- **操作**：指定要对与规则中的条件匹配的邮件执行的操作，并且不匹配任何例外。 例外会覆盖条件并阻止将操作应用于电子邮件，即使该邮件符合所有配置的条件也是如此。
 
 有关 Exchange Online Protection 中可用的邮件流规则操作的详细信息，请参阅[Exchange online 中的邮件流规则操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
@@ -68,18 +68,18 @@ ms.locfileid: "37075564"
 ### <a name="multiple-conditions-exceptions-and-actions"></a>多个条件、例外和操作
 
 下表显示了在规则中处理的多个条件、条件值、例外和操作。
-  
+
 |**组件**|**逻辑**|**Comments**|
 |:-----|:-----|:-----|
 |注释|AND|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果要为带有附件的邮件和包含指定文本的邮件添加相同的免责声明，请为每个条件创建一个规则。在 EAC 中，你可以轻松地复制规则。|
-|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。|OR|一些条件允许你指定多个值。邮件必须匹配任一（并非全部）指定值。例如，如果电子邮件的主题为 Stock price information，并且 **主题包含这些词中的任一个**条件被配置为匹配单词 Contoso 或 stock，则符合该条件，因为主题中至少包含指定值中的一个。  |
+|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。|或|一些条件允许你指定多个值。邮件必须匹配任一（并非全部）指定值。例如，如果电子邮件的主题为 Stock price information，并且 **主题包含这些词中的任一个**条件被配置为匹配单词 Contoso 或 stock，则符合该条件，因为主题中至少包含指定值中的一个。  |
 |一些条件允许您指定多个值。如果一个条件允许输入多个值，则邮件必须与为该条件指定的任何值匹配。例如，如果电子邮件的主题为股价信息，并且主题包含这些词中的任一个条件被配置为匹配词 Contoso 或 stock，则符合该条件，因为主题中至少包含条件值中的一个。|OR|如果邮件匹配任何例外，则操作不会应用到邮件。该邮件不需要匹配所有例外。|
 |如果邮件匹配任何例外，则不会执行操作。邮件不需要匹配所有例外。|AND|匹配规则条件的邮件获取规则中指定的所有操作。例如，如果选择了操作" **在邮件主题前面追加**"和" **将收件人添加到密件抄送框**"，则两种操作都将应用至邮件。  <br/><br/> 匹配规则的条件的邮件会获取规则中指定的所有操作。例如，如果选择了操作“在邮件主题前面追加”和“添加收件人到密件抄送框”，两种操作都将应用至邮件。该邮件将在邮件主题的前面添加指定的字符串作为前缀，并且指定的收件人将添加为密件抄送收件人。<br/><br/> 还可以为规则设置操作，以便在应用该规则时，后续规则不会应用至邮件。|
 
 ### <a name="mail-flow-rule-properties"></a>邮件流规则属性
 
 下表介绍了邮件流规则中所提供的规则属性。
-  
+
 |**EAC 中的属性名称**|**PowerShell 中的参数名称**|**说明**|
 |:-----|:-----|:-----|
 |**优先级**|_Priority_|指示规则应用于邮件的顺序。默认优先级基于规则创建的先后顺序（较早规则的优先级高于较新规则的优先级，先处理具有较高优先级的规则，然后再处理具有较低优先级的规则）。   <br/><br/> 通过在规则列表中上移或下移规则可更改 EAC 中规则的优先级。在 PowerShell中，可设置优先级编号（0 表示最高优先级）。   <br/><br/> 例如，如果有一个拒绝包含信用卡号码的邮件的规则，还有一个需要批准的规则，你希望拒绝规则先发生，并停止应用其他规则。  |
@@ -94,13 +94,13 @@ ms.locfileid: "37075564"
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>如何将邮件流规则应用于邮件
 
 All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. 规则是按照 EAC 中的 "**邮件流** \> **规则**" 页上列出的顺序或根据 PowerShell 中相应的_优先级_参数值进行处理的。
-  
+
 每个规则还提供在规则匹配时停止处理其他规则的选项。此设置对于匹配多个邮件流规则中条件的邮件而言非常重要（想要哪个规则应用于邮件？全部？还是一个？）。
-  
+
 ### <a name="differences-in-processing-based-on-message-type"></a>基于消息类型的处理的差异
 
 通过组织进行传递的邮件有几种类型。下表显示了哪些邮件类型可以通过邮件流规则进行处理。
-  
+
 ****
 
 |**消息类型**|**是否可以应用规则？**|
@@ -121,9 +121,9 @@ All messages that flow through your organization are evaluated against the enabl
 - 在创建或修改邮件流规则后，最长可能需要30分钟才能将新的或更新的规则应用于邮件。
 
 ## <a name="for-more-information"></a>详细信息
-  
+
 [使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
-  
+
 [Office 365 中的电子邮件加密](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
-  
+
 [日记、传输和收件箱规则限制](https://go.microsoft.com/fwlink/p/?LinkId=324584)

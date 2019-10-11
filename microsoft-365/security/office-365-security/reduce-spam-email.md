@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解有助于减少 Office 365 中垃圾邮件的最常用方法。
-ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 759d56862497444c27d0cc0f081731a3581337bd
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075794"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428423"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何减少 Office 365 中的垃圾邮件
 
@@ -35,7 +35,7 @@ ms.locfileid: "37075794"
 
 ## <a name="fixing-allowed-spam"></a>修复允许的垃圾邮件
 
-我们经常看到客户因配置不正确而使垃圾邮件出现在收件箱中。其中最常见的是在邮件流规则（也称为传输规则）中将域配置为绕过筛选器或者列出允许/安全发件人列表中的域。不推荐这样做，因为这些本应视为垃圾邮件的邮件会跳过垃圾邮件筛选。  
+我们经常看到客户因配置不正确而使垃圾邮件出现在收件箱中。其中最常见的是在邮件流规则（也称为传输规则）中将域配置为绕过筛选器或者列出允许/安全发件人列表中的域。不推荐这样做，因为这些本应视为垃圾邮件的邮件会跳过垃圾邮件筛选，因而必须考虑将创建[安全发件人列表](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365)作为一种临时解决方案。  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>其他垃圾邮件过多常见原因的解决方案
 
