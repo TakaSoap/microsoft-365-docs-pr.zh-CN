@@ -99,11 +99,6 @@
 ## [Windows 和 Office 部署和实验室工具包](modern-desktop-deployment-and-management-lab.md)
 ## [查找有关部署的帮助](find-help-for-modern-desktop-deployment.md)
 
-# [标识和设备访问配置](microsoft-365-policies-configurations.md)
-##[前提性工作](identity-access-prerequisites.md)
-## [常见标识和设备访问策略](identity-access-policies.md)
-## [建议的 Exchange Online 访问策略](secure-email-recommended-policies.md)
-## [建议的 SharePoint Online 访问策略](sharepoint-file-access-policies.md)
 
 # [Microsoft 365 合规中心](../compliance/index.yml)
 # [Microsoft 365 安全](../security/index.yml)

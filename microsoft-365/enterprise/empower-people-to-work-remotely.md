@@ -3,7 +3,7 @@ title: 为远程工作者提供强大功能
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/27/2019
+ms.date: 10/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 配置基础结构和安全性，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: b73e16a52741a6587e9ed903cab6ddfedf896973
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 198b01205e7419c4a3aa874c1e6213cce5284576
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403251"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453939"
 ---
 # <a name="empower-remote-workers"></a>为远程工作者提供强大功能
 
@@ -69,6 +69,13 @@ ms.locfileid: "37403251"
   - 具有混合标识的组织可使用 Azure AD 应用程序代理，而不是虚拟专用网络 (VPN) 连接
 
 以下阶段将指导你部署 Microsoft 365 企业版功能以实现远程访问并推动远程工作者的采用。 如果你已部署这些阶段的元素，请确保在移到下一个元素之前满足规定的要求。
+
+<a name="poster"></a>有关此方案的 1 页摘要，请参阅[“为远程工作者提供强大功能”海报](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)。
+
+[![“为远程工作者提供强大功能”海报](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+
+还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
+
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>阶段 1：为远程工作者部署 Microsoft 365 特性和功能
 

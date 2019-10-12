@@ -19,6 +19,13 @@
 
 ### [通过 ServiceNow 管理票证](./mtp/tickets.md)
 
+
+## [标识和设备访问配置](../enterprise/microsoft-365-policies-configurations.md)
+### [前提性工作](../enterprise/identity-access-prerequisites.md)
+### [常见标识和设备访问策略](../enterprise/identity-access-policies.md)
+### [建议的 Exchange Online 访问策略](../enterprise/secure-email-recommended-policies.md)
+### [建议的 SharePoint Online 访问策略](../enterprise/sharepoint-file-access-policies.md)
+
 ## [Office 365 安全]()
 ### [入门]()
 #### [Office 365 安全路线图](./office-365-security/security-roadmap.md)
@@ -43,7 +50,6 @@
 ##### [反恶意软件保护常见问题](./office-365-security/anti-malware-protection-faq-eop.md)
 ##### [Office 365 中的反垃圾邮件和反恶意软件保护](./office-365-security/anti-malware-protection.md)
 ##### [反垃圾邮件保护常见问题](./office-365-security/anti-spam-protection-faq.md)
-##### [控制 Office 365 中的出站垃圾邮件](./office-365-security/controlling-outbound-spam-in-Office-365.md)
 ##### [避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中出现无效字符](./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md)
 ##### [Exchange Online 中的安全发件人和阻止发件人列表](./office-365-security/safe-sender-and-blocked-sender-lists-faq.md)
 ##### [Office 365 中电子邮件中的安全提示](./office-365-security/safety-tips-in-office-365.md)
@@ -253,4 +259,8 @@
 
 ### [Office 365 企业版](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 企业版](https://docs.microsoft.com/office-365-security/admin/admin-home)
+
+
+
+
 ## [Microsoft 365 合规中心](https://docs.microsoft.com/microsoft-365/compliance/)
