@@ -2,7 +2,7 @@
 title: 为 Microsoft 365 企业版部署 SharePoint 和 OneDrive
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在你的组织中，逐步完成对 SharePoint 的价值规划、推广和推动过程。
-ms.openlocfilehash: d8a61a6bc6b4dae431d94e7ccfb9fb0ea8019427
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329201"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37469144"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>为 Microsoft 365 企业版部署 SharePoint 和 OneDrive
 
@@ -27,7 +27,7 @@ SharePoint 和 Microsoft Teams 用于执行文件存储和共享、内容管理�
 
 SharePoint 还有高级安全功能，包括访问控制、权限以及动态加密和静态加密。SharePoint 安全性是 Microsoft 365 企业版的“智能安全性”价值的关键元素。
 
-如果完全不了解 SharePoint，请参阅 [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) 和 [SharePoint 入门](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics)。
+如果完全不了解 SharePoint，请参阅 [SharePoint](https://products.office.com/sharepoint/collaboration) 和 [SharePoint 入门](https://support.office.com/article/video-what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121)。
 
 下面分阶段逐步介绍了如何完成构想 SharePoint 在组织中的作用，通过一系列渐进式发布让组织上手使用，并提升对最终用户的使用价值。 开始之前，请确保你配置了正确的[底层基础结构](deploy-workloads.md#foundation-infrastructure-prerequisites)阶段，以便 SharePoint 网站具有所需的安全功能。 
 
@@ -50,18 +50,17 @@ SharePoint 还有高级安全功能，包括访问控制、权限以及动态加
 
 SharePoint 可用于不同用途。需要确定哪些用途能够满足业务需求。应确定将 SharePoint 用于满足团队、部门或整个组织的文档存储和共享、内容管理和协作需求。 
 
-有关应用场景和功能列表，请参阅 [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software)。
+有关应用场景和功能列表，请参阅 [SharePoint](https://products.office.com/sharepoint/collaboration )。
 
 下面的业务核心可满足组织需求：
 
 |||
 |:-----|:-----|
-| 共享和协作 | 利用团队网站、协作网站和同步。 |
+| 共享和协作 | 充分利用团队网站、通信网站和同步。 |
 | 通知和交互 | 未来将发布的信息。 |
-| 变革 | 使用流来创建存储或工作流。 |
+| 变革 | 使用 Flow 在应用和服务之间创建自动化工作流。 |
 | 利用集体性知识 | 使用搜索功能在组织内获取所需结果。 |
 | 保护 | 确保组织受到保护且合规。 |
-| 外部/开发 | 允许组织使用 SharePoint 框架来开发自定义解决方案和应用。 |
 |||
 
 请参阅 [SharePoint 管理](https://docs.microsoft.com/sharepoint/sharepoint-online)，获取根据需求配置 SharePoint 的帮助资源。
@@ -85,14 +84,11 @@ SharePoint 可用于不同用途。需要确定哪些用途能够满足业务需
 
 ### <a name="step-1-complete-your-technical-planning"></a>第 1 步：完成技术计划
 
-开始技术规划前，请确定是否要使用 FastTrack。 如果贵组织拥有超过 50 个席位且参与了[合格计划](https://technet.microsoft.com/library/dn783224.aspx)，你可以使用可用的 FastTrack 优势，指导你完成规划、迁移、部署和服务采用，无需任何额外成本。 你也可以使用我们的 FastTrack 载入向导自行完成此工作，使用 Office 365 帐户登录后即可从 [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) 获取此向导。
+开始技术规划前，请确定是否要使用 FastTrack。 如果贵公司有 50 个以上的席位，并且参与了[合格计划](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)，则可以使用 FastTrack 福利，该福利免费提供，可指导你进行计划、迁移、部署和服务采用。 你也可以使用我们的 FastTrack 载入向导自行完成此工作，使用 Office 365 帐户登录后即可从 [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) 获取此向导。
 
-若要自行计划（或结合使用 FastTrack），需要确定网络和组织是否都已具备使用 SharePoint 的条件。 在底层基础结构中满足网络退出条件尤其重要，需要特别注意 Internet 带宽、吞吐量和流量延迟，以最大限度地提升性能，便于发生基于 SharePoint 的文档的其他通信。
+若要自行计划（或结合使用 FastTrack），需要确定网络和组织是否都已具备使用 SharePoint 的条件。 在底层基础结构中满足[网络退出条件](networking-exit-criteria.md)尤其重要，需要特别注意 Internet 带宽、吞吐量和流量延迟，以最大限度地提升基于 SharePoint 文档的附加流量的性能。
 
-若要为发布 SharePoint 技术方面做准备，请参阅下面这些资源： 
-
-- [SharePoint 计划指南](https://docs.microsoft.com/sharepoint/planning-guide)
-- [迁移到 SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) 
+使用 [迁移至 SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)，为 SharePoint 推出做好准备： 
 
 若要更好地了解 SharePoint 安全性，请参阅以下资源：
 
@@ -108,8 +104,8 @@ SharePoint 可用于不同用途。需要确定哪些用途能够满足业务需
 在大多数大中型组织中，应通过阶段 1 中的利益干系人以及早期采用者和技术爱好者运行一个 IT 试点。 在 IT 试点期间：
 
 - 选择 IT 试点参与者可以实践的 SharePoint 业务应用场景。
-- 向试点参与者提供一组练习，以测试 SharePoint 文档存储、共享、协作、团队计划和其他功能。
-- 确定变更管理策略并生成材料，以在组织范围内推动用户采用。 变更管理资料可以包括电子邮件公告文本、内部培训计划、走廊海报和演示文稿。 这些材料可将 SharePoint 及其优势，以及提高认知度和推动使用的目标告知你的组织。 请参阅文章 [Microsoft Teams 的变更管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)，以汲取更多想法。
+- 为你的试验参与者提供一组练习，以测试 SharePoint 文档的存储、共享、协作和其他功能。
+- 确定变更管理策略并生成材料，以在组织范围内推动用户采用。 变更管理资料可以包括电子邮件公告文本、内部培训计划、走廊海报和演示文稿。 这些材料可将 SharePoint 及其优势，以及提高认知度和推动使用的目标告知你的组织。 请参阅 [SharePoint 采纳资源](https://resources.techcommunity.microsoft.com/resources/SharePoint-adoption/) 以开始使用。
 - 让 IT 试点参与者根据自己的体验审阅变更管理材料。 他们可以提供最佳做法提示，并建议如何最准确说明 SharePoint 的优势以及如何使用它。
 
 #### <a name="result"></a>结果
