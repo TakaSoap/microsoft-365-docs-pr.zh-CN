@@ -1,14 +1,31 @@
 # [Microsoft 365 安全](index.yml)
 
+## 入门
+### [适用于 BDM 的 Microsoft 365 安全](Microsoft-365-security-for-bdm.md)
+### [安全功能分数](./mtp/microsoft-secure-score.md)
+### [首席信息安全官 (CISO) 研讨会培训](./office-365-security/ciso-workshop.md)
+#### [模块 1 - Microsoft 网络安全简介](./office-365-security/ciso-workshop-module-1.md)
+#### [模块 2 - 安全管理](./office-365-security/ciso-workshop-module-2.md)
+#### [模块 3 - 标识和访问管理](./office-365-security/ciso-workshop-module-3.md)
+#### [模块 4a - 威胁防护策略第 I 部分](./office-365-security/ciso-workshop-module-4a.md)
+#### [模块 4b - 威胁防护策略第 II 部分](./office-365-security/ciso-workshop-module-4b.md)
+#### [模块 5 - 信息保护](./office-365-security/ciso-workshop-module-5.md)
+
+
+## [标识和设备访问配置](../enterprise/microsoft-365-policies-configurations.md)
+### [前提性工作](../enterprise/identity-access-prerequisites.md)
+### [常见标识和设备访问策略](../enterprise/identity-access-policies.md)
+### [建议的 Exchange Online 访问策略](../enterprise/secure-email-recommended-policies.md)
+### [建议的 SharePoint Online 访问策略](../enterprise/sharepoint-file-access-policies.md)
+
+
 ## Microsoft 威胁防护
 ### [概述]()
 #### [什么是 Microsoft 威胁防护？](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 安全中心](mtp/overview-security-center.md)
 
-
 ### [在 Microsoft 365 中搜寻](./mtp/hunting.md)
 
-### [安全功能分数](./mtp/microsoft-secure-score.md)
 
 ### [报表]()
 #### [监视和查看报表](./mtp/monitoring-and-reporting.md)
@@ -20,12 +37,6 @@
 ### [通过 ServiceNow 管理票证](./mtp/tickets.md)
 
 
-## [标识和设备访问配置](../enterprise/microsoft-365-policies-configurations.md)
-### [前提性工作](../enterprise/identity-access-prerequisites.md)
-### [常见标识和设备访问策略](../enterprise/identity-access-policies.md)
-### [建议的 Exchange Online 访问策略](../enterprise/secure-email-recommended-policies.md)
-### [建议的 SharePoint Online 访问策略](../enterprise/sharepoint-file-access-policies.md)
-
 ## [Office 365 安全]()
 ### [入门]()
 #### [Office 365 安全路线图](./office-365-security/security-roadmap.md)
@@ -34,13 +45,8 @@
 #### [安全与合规中心内的权限](./office-365-security/permissions-in-the-security-and-compliance-center.md)
 #### [向用户授予对安全中心的访问权限](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
-#### [首席信息安全官 (CISO) 研讨会培训](./office-365-security/ciso-workshop.md)
-##### [模块 1 - Microsoft 网络安全简介](./office-365-security/ciso-workshop-module-1.md)
-##### [模块 2 - 安全管理](./office-365-security/ciso-workshop-module-2.md)
-##### [模块 3 - 标识和访问管理](./office-365-security/ciso-workshop-module-3.md)
-##### [模块 4a - 威胁防护策略第 I 部分](./office-365-security/ciso-workshop-module-4a.md)
-##### [模块 4b - 威胁防护策略第 II 部分](./office-365-security/ciso-workshop-module-4b.md)
-##### [模块 5 - 信息保护](./office-365-security/ciso-workshop-module-5.md)
+
+
 
 
 ### [威胁防护](./office-365-security/protect-against-threats.md)
