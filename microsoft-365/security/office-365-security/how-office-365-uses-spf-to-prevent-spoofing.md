@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了 Office 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。 这适用于从 Office 365 发送的出站邮件。 从 Office 365 发送给 Office 365 收件人的邮件始终可通过 SPF。
-ms.openlocfilehash: 2845fc9b20b337764159d9debc04f165dcb4bf62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7db1259f4ec15fffe46955ba2166b244c5737d43
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074645"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510549"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗
 
@@ -244,6 +244,6 @@ cust-spf.exacttarget.com
 ## <a name="for-more-information"></a>详细信息
 <a name="SPFTroubleshoot"> </a>
 
-需要有关添加 SPF TXT 记录的？我们提供有关更新多种流行域注册机构的 SPF (TXT) 记录的[分步操作说明](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)。[反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Office 365 进行 SPF 检查时使用的语法和标头字段。 
+需要有关添加 SPF TXT 记录的？ 阅读文章 "[在任何 DNS 托管提供商处创建用于 office 365 的 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-a-txt-record-for-spf-to-help-prevent-email-spam)"，以了解有关在 office 365 中使用自定义域的发件人策略框架的详细信息。 [反垃圾邮件邮件头](anti-spam-message-headers.md)包含 Office 365 用于 SPF 检查的语法和标头字段。 
   
 

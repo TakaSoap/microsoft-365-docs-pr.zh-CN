@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了关于托管隔离的常见问题及解答。
-ms.openlocfilehash: 389fa939c2fd35351abad4d355829656c3977deb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 393542596eacd26a4f64237f666fabfe236dceed
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075795"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510529"
 ---
 # <a name="quarantine-faq"></a>隔离常见问题解答
 
@@ -47,15 +47,15 @@ A. 若要访问最终用户垃圾邮件隔离邮箱，最终用户必须具有�
   
  **问：除垃圾邮件以外的其他邮件可以发送到隔离邮箱吗？**
   
-A. 如果已配置的操作，则也可以将与邮件流规则（也称为 "传输规则"）相匹配的邮件发送到管理员隔离。 最终用户隔离仅适用于垃圾邮件。
+A. 可以。 与邮件流规则（也称为传输规则）相匹配的邮件以及标识为网络钓鱼的邮件也会发送到管理员隔离（如果这是配置的操作）。 最终用户隔离仅适用于垃圾邮件。
   
  **问：邮件将在隔离邮箱中保留多长时间？**
   
-A. 默认情况下，垃圾邮件隔离的邮件在隔离中保留30天，而与邮件流规则匹配的隔离邮件将保留在隔离时间7天内。 在此时间段后，邮件将被删除且不可检索。 与邮件流规则匹配的隔离邮件的保留期不可配置。 但是，垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件（天）** " 设置来降低。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
+A. 默认情况下，垃圾邮件隔离的邮件在隔离中保留30天，而与邮件流规则匹配的隔离邮件将在隔离中保留最长30天（基于默认内容筛选策略中设置的保留期）。 在此时间段后，邮件将被删除且不可检索。 与邮件流规则匹配的隔离邮件的保留期不可配置。 但是，垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件（天）** " 设置来降低。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
   
  **问：可以一次释放或报告多个被隔离的邮件吗？**
   
-答：同时释放或报告多个邮件的功能目前对 EAC 或最终用户的垃圾邮件隔离不可用。但是，管理员可以创建一个远程 Windows PowerShell 脚本来完成此任务。使用 [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet 搜索邮件，使用 [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) 释放邮件。 
+A. 是的，在隔离门户中一次最多可以释放100封邮件。 此外，管理员还可以创建远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet 搜索邮件，并使用[get-quarantinemessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet 释放邮件。 
   
  **问：搜索被隔离邮件时是否支持通配符？是否可以搜索特定域的隔离邮件？**
   
