@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。
-ms.openlocfilehash: 38160952827d8e60884877a67aea15521000f63f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fb46e735c4fae73565b6fe008d47a3e7ffd3f4cb
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075042"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510559"
 ---
 # <a name="configure-your-spam-filter-policies"></a>配置垃圾邮件筛选器策略
 垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。 垃圾邮件筛选器策略设置仅适用于入站邮件，并且有两种类型：
@@ -50,7 +50,7 @@ ms.locfileid: "37075042"
 
 3. 在“**垃圾邮件和批量操作**”部分下：
 
-  - 为“**垃圾邮件**”、“**高可信度垃圾邮件**”、“**钓鱼电子邮件**”和“**批量电子邮件**”类型选择操作。 可用值有： 
+  - 为“**垃圾邮件**”、“**高可信度垃圾邮件**”、“**高可信度钓鱼电子邮件**”、“**钓鱼电子邮件**”和“**批量电子邮件**”类型选择操作。 可用值有： 
 
     - **将邮件移动到垃圾邮件文件夹：** 将邮件发送到指定收件人的垃圾邮件文件夹。 这是适用于垃圾邮件、高度可信度垃圾邮件和批量邮件的默认操作。<br/><br/>
 
