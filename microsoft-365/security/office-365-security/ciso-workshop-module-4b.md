@@ -1,8 +1,8 @@
 ---
 title: 首席信息安全监察官（CISO）研讨会，模块4b：威胁防护策略
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 5644ea7e69381b108dd3e90ec5fb0cbf8738886d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 88cb6ab079afcd420202f5cca47f555895d0d46a
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075060"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517497"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO 研讨会模块4b：威胁防护策略 
 
 本模块检查 microsoft 智能安全中心（SOC）在 Microsoft 智能安全图形中的 trillions 信号的演变和轨迹。
 
 - 下载 PDF 摘要：[模块4b：威胁防护策略](../media/ciso-workshop-4b-threat-protection-strategy.pdf)
-- 下载 PowerPoint 摘要：[模块4b：威胁防护策略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
+- 下载 PowerPoint 摘要：[模块4b：威胁防护策略](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>简介：威胁防护策略（检测-响应）（3:38）
 

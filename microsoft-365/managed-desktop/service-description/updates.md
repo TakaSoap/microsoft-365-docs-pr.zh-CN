@@ -1,17 +1,17 @@
 ---
 title: 如何在 Microsoft 托管桌面中处理更新
-description: 将 Microsoft 托管桌面保持最新状态是速度和稳定性的平衡。
+description: 将 Microsoft 托管桌面保持最新是速度和稳定性的平衡。
 keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c2ab48c87f1239c21e6620ea00640bb3dabbdd45
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ed95d7d854422fe0cd2379e21b5de36a0c680c4b
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981633"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523577"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 托管桌面中处理更新
 

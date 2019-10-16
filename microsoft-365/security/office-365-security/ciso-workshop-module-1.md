@@ -1,8 +1,8 @@
 ---
 title: 首席信息安全监察官（CISO）研讨会，模块1： Microsoft Cybersecurity 简报
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 5a4c2cf41ea7af809ba74fe5a4a59f52051850b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fa572e24a549be2f8f9a56d3f83e53d43a6c5294
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075061"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517511"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO 研讨会模块1： Microsoft Cybersecurity 简报
 
 本模块概述了有关关键安全卫生、Microsoft cybersecurity 参考体系结构、cybersecurity 恢复能力、Internet 内容（IoT）和运营技术人员的概述。
 
 - 下载 PDF 摘要：[模块1： Microsoft Cybersecurity 简介](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
-- 下载 PowerPoint 摘要：[模块1： Microsoft Cybersecurity 简介](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)
+- 下载 PowerPoint 摘要：[模块1： Microsoft Cybersecurity 简介](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ## <a name="part-1-course-introduction-and-overview-913"></a>第1部分：课程简介和概述（9:13）
 

@@ -1,8 +1,8 @@
 ---
 title: 首席信息安全监察官（CISO）研讨会，模块4a：威胁防护策略
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 0bbc9cf6cb102067aadcacdb416f6f538bb2555b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f136f8ccb12ac09048b0b6a9de22ebb37fcc40dd
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075055"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517571"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO 研讨会模块4a：威胁防护策略
 
 探索有关威胁防护、安全演变、策略和安全路线图的关键学习。
 
 - 下载 PDF 摘要：[模块4a：威胁防护策略](../media/ciso-workshop-4a-threat-protection.pdf)
-- 下载 PowerPoint 摘要：[模块4a：威胁防护策略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
+- 下载 PowerPoint 摘要：[模块4a：威胁防护策略](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>简介：威胁防护策略（4:37）
 

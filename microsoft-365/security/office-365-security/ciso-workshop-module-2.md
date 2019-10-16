@@ -1,8 +1,8 @@
 ---
 title: 首席信息安全监察官（CISO）研讨会，模块2：安全管理
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 9fba19de7d2fcc406d1c058cb0fad3c80242c64c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1403b35c9cea10c87f528c6f09c2948f316f27
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075058"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517581"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>CISO 研讨会模块2：安全管理 
 
 了解如何通过集成的指导、自动化的策略实施和监控来提高对混合企业版的可视性和控制能力。
 
 - 下载 PDF 摘要：[模块2：安全管理](../media/ciso-workshop-2-security-management.pdf)
-- 下载 PowerPoint 摘要：[模块2：安全管理](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx)
+- 下载 PowerPoint 摘要：[模块2：安全管理](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-2-security-management.pptx)
 
 ## <a name="introduction-security-management-125"></a>简介：安全管理（1:25）
 

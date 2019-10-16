@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: 1b6c834f5d54c54a577b51edf5f135e30990a92c
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510539"
+ms.locfileid: "37523627"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
@@ -33,6 +33,15 @@ ms.locfileid: "37510539"
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>如何在收件箱中识别可疑邮件？
 
 当邮件的发件人无法识别或其身份与 "发件人" 地址中所示的不同时，web 上的 Outlook.com 和 Outlook 显示指示器。
+
+## <a name="you-see-a--in-the-sender-image"></a>您将在发件人图像中看到 "？"
+
+当 Outlook.com 和 Outlook 网页上的 Outlook 无法使用电子邮件身份验证技术验证发件人的身份时，它们将在发件人照片中显示 "？"。 
+
+![邮件未通过验证](../media/message-did-not-pass-verification.jpg)
+
+并不是每个验证失败的邮件都是恶意的。 但是，如果您不识别发件人，则应注意与不进行身份验证的邮件进行交互。 或者，如果您识别的发件人在发件人图像中通常不包含 '？ '，但突然开始看到它，则可能是发件人哄骗的签名。
+
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>如何管理哪些邮件会收到未验证的发件人处理 
 
@@ -49,14 +58,6 @@ ms.locfileid: "37510539"
     - 通过将 get-phishfilterpolicy cmdlet 添加域对。 有关更多详细信息，请参阅 Office 365 中的将 get-phishfilterpolicy 和反欺骗保护
 
 此外，如果通过管理员允许列表（包括电子邮件传输规则（Etr）、安全域列表（反垃圾邮件策略）、安全发件人列表或用户已将此用户设置为 "安全发件人"，则不会应用未验证的发件人治疗收件箱.
-
-### <a name="you-see-a--in-the-sender-image"></a>您将在发件人图像中看到 "？"
-
-当 Outlook.com 和 Outlook 网页上的 Outlook 无法使用电子邮件身份验证技术验证发件人的身份时，它们将在发件人照片中显示 "？"。 
-
-![邮件未通过验证](../media/message-did-not-pass-verification.jpg)
-
-并不是每个验证失败的邮件都是恶意的。 但是，如果您不识别发件人，则应注意与不进行身份验证的邮件进行交互。 或者，如果您识别的发件人在发件人图像中通常不包含 '？ '，但突然开始看到它，则可能是发件人哄骗的签名。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
