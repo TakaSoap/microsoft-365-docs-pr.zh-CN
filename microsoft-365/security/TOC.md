@@ -6,7 +6,7 @@
 ### [首席信息安全官 (CISO) 研讨会培训](./office-365-security/ciso-workshop.md)
 #### [模块 1 - Microsoft 网络安全简介](./office-365-security/ciso-workshop-module-1.md)
 #### [模块 2 - 安全管理](./office-365-security/ciso-workshop-module-2.md)
-#### [模块 3 - 标识和访问管理](./office-365-security/ciso-workshop-module-3.md)
+#### [模块 3 - 标识和零信任用户访问](./office-365-security/ciso-workshop-module-3.md)
 #### [模块 4a - 威胁防护策略第 I 部分](./office-365-security/ciso-workshop-module-4a.md)
 #### [模块 4b - 威胁防护策略第 II 部分](./office-365-security/ciso-workshop-module-4b.md)
 #### [模块 5 - 信息保护](./office-365-security/ciso-workshop-module-5.md)
@@ -99,6 +99,7 @@
 #### [Office 365 中的防欺骗保护](./office-365-security/anti-spoofing-protection.md)
 ##### [详细了解防欺骗智能](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [演练欺骗智能见解](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [识别 Outlook.com 和 Outlook 网页版中的可疑邮件](./office-365-security/unverified-sender-feature.md)
 
 #### [什么是 EOP？](./office-365-security/what-is-eop.md)
 ##### [支持通过 IPv6 发送的匿名入站电子邮件](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -160,7 +161,7 @@
 
 #### [威胁资源管理器（和实时检测）](./office-365-security/threat-explorer.md)
 ##### [威胁资源管理器视图](./office-365-security/threat-explorer-views.md)
-##### [识别 Outlook.com 和 Outlook 网页版中的可疑邮件](./office-365-security/unverified-sender-feature.md)
+
 
 #### [进行集成来增强安全性]()
 ##### [将 Office 365 ATP 与 Microsoft Defender ATP 集成](./office-365-security/integrate-office-365-ti-with-wdatp.md)
