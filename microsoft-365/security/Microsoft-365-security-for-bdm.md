@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 组织在其 Microsoft 365 环境中目前面临的最常见的威胁和攻击方案，以及缓解这些风险的建议操作。
-ms.openlocfilehash: 16108f71702e2464721fa09fee4c6c298496a2c4
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: c847e11d141dd6b3b4ce7601631259ba73e1703f
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481323"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37556817"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>适用于商业决策者的 Microsoft 365 安全决策者（Bdm）
 
-本文讨论当前组织针对其 Microsoft 365 环境所面临的一些最常见的威胁和攻击方案，以及用于缓解这些风险的建议操作。 虽然 Microsoft 365 提供了一系列预配置的安全功能，但也要求您作为客户负责保护您自己的身份、数据和用于访问云服务的设备。 
+本文讨论当前组织针对其 Microsoft 365 环境所面临的一些最常见的威胁和攻击方案，以及用于缓解这些风险的建议操作。 虽然 Microsoft 365 提供了一系列预配置的安全功能，但也要求您作为客户负责保护您自己的身份、数据和用于访问云服务的设备。 本指南由 Kozeta 横梁（Microsoft 云安全架构师）和 Thiagaraj Sundararajan （Microsoft 高级顾问）开发。
 
 本文按工作优先级进行组织，从保护用于管理最关键服务和资产（如租户、电子邮件和 SharePoint）的帐户开始。 它为接近安全性和使用以下电子表格一起工作提供了一种方法，以便您可以跟踪组织中的利益干系人和团队的进度： [Microsoft 365 bdm 电子表格的安全性](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)。 
 
