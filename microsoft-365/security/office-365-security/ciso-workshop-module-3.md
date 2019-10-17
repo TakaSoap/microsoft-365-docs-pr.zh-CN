@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 08698a0c8e9bf79ef4c464ef4800d737df1421fc
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: be27e92c44ef6764906448828a94a207bd38bb18
+ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523587"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554129"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>CISO 研讨会模块3：标识和零信任用户访问
 
 由于大多数新式攻击涉及危及用户身份，因此了解如何构建新的标识安全外围设备来保护公司网络外部的资产。
 
-- 下载 PDF 摘要：[模块3：标识和访问管理](../media/ciso-workshop-3-identity-protection.pdf)
-- 下载 PowerPoint 摘要：[模块3：标识和访问管理](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-3-identity-protection.pptx)
+- 下载 PDF 摘要：[模块3：标识和零信任用户访问](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
+- 下载 PowerPoint 摘要：[模块3：标识和访问管理](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## <a name="part-1-identity-and-zero-trust-history-933"></a>第1部分：标识和零信任历史记录（9:33）
 

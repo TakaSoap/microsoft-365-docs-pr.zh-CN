@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 6987f5fcb0504ad4b5bee91a417ff632faa11623
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: b00d18e9d14d369716f9c37fb9975f55d3c0eece
+ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523617"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554119"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>首席信息安全监察官（CISO）研讨会培训
 
@@ -32,7 +32,7 @@ CISO 研讨会视频和 PDF/PowerPoint 下载内容是模块化的，因此您�
 
 - [模块2：安全管理](ciso-workshop-module-2.md)：了解如何通过集成的指导、自动化的策略实施和监控来提高对混合企业版的可视性和控制能力。
 
-- [模块3：模块 3-标识和零信任用户访问](ciso-workshop-module-3.md)：了解如何在您的身份和用户访问策略中包括零信任概念，以便更好地保护网络外围和外部的公司数据。
+- [模块3：模块 3-标识和零信任用户访问](ciso-workshop-module-3.md)：了解如何使用标识和用户访问策略提前零信任，以便更好地保护网络外围和外部的公司数据
 
 - [模块4a：威胁防护策略，第 I 部分](ciso-workshop-module-4a.md)：了解有关威胁防护、安全演变、策略和安全路线图的关键学习。
 
