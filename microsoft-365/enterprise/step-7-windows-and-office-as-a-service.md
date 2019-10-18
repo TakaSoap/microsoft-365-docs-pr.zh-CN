@@ -71,7 +71,7 @@ Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持
 
 ### <a name="expanded-validation-of-updates"></a>扩展更新验证
 
-另一个优点是，在我们推出更新以实现广泛部署之前，我们会首先通过 [Office](https://products.office.com/zh-CN/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/zh-CN/) 的预览体验计划发布内部版本，这让我们可以在广泛发布更新之前收集诊断数据和反馈。 目前，预览体验计划对所有人开放，这样可以预先了解更新。 当发布更新时，我们将从上百万个配置中接收诊断数据，因此当我们推出更新时，质量更易于预测
+另一个优点是，在我们推出更新以实现广泛部署之前，我们会首先通过 [Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/zh-CN/) 的预览体验计划发布内部版本，这让我们可以在广泛发布更新之前收集诊断数据和反馈。 目前，预览体验计划对所有人开放，这样可以预先了解更新。 当发布更新时，我们将从上百万个配置中接收诊断数据，因此当我们推出更新时，质量更易于预测
 
 还有一点，由于 Office 365 专业增强版预览体验版本反映了每月频道更新，因此如果针对 Office 使用半年频道来提供每年两次的功能更新（Windows 同样如此），则可以提前验证这些版本，并使用半年频道定向发布。
 

@@ -67,23 +67,23 @@ USMT 捕获用户帐户、用户文件、操作系统设置和应用程序设置
 
 [将 Windows 已知文件夹重定向和移动到 OneDrive](https://docs.microsoft.com/zh-CN/onedrive/redirect-known-folders)
 
-如果已经在使用 OneDrive，你将知道用户可以选择要从 OneDrive 或 SharePoint 同步到其设备的文件夹和位置，但这实际上会给最终用户带来设置负担。通过“已知文件夹移动”，可以在用户配置文件中锁定文档、桌面和图片文件夹，并在 OneDrive 中实施全面保护。用户可以自行操作，或者，对于此重要场景而言，你可以[使用组策略设置来执行此操作](https://docs.microsoft.com/zh-CN/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)。
+如果已经在使用 OneDrive，你将知道用户可以选择要从 OneDrive 或 SharePoint 同步到其设备的文件夹和位置，但这实际上会给最终用户带来设置负担。通过“已知文件夹移动”，可以在用户配置文件中锁定文档、桌面和图片文件夹，并在 OneDrive 中实施全面保护。用户可以自行操作，或者，对于此重要场景而言，你可以[使用组策略设置来执行此操作](https://docs.microsoft.com/en-us/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)。
 
 使用“已知文件夹移动”，用户不会改变其工作流 – 在完成与 OneDrive 的同步之前、同步期间和同步之后，都没有任何变化。通过组策略，你甚至可以选择是否通知用户有关其文档、图片和桌面在 OneDrive 中受到保护的信息。如果选择不通知，这一切都将在后台默默发生。用户只有在使用新电脑或刷新电脑时才会收到通知。一旦他们登录 OneDrive 账户，这些文件将再次可用，并且会还原到他们的新电脑。当然，OneDrive 意味着，他们将在任何时候从手机和其他设备安全保存文件。
 
 对 Azure Active Directory 支持的 OneDrive 进行身份验证，为了获得额外的安全性，可以轻松启用多重身份验证，并且可以设置策略来控制 OneDrive 用来限制网络活动的上传和下载带宽。
 
-不需要同时迁移每个用途。你可能想要逐步推出组策略设置，或者[将文件同步到已加入域的电脑](https://docs.microsoft.com/zh-CN/powershell/module/sharepoint-online/Set-SPOTenantSyncClientRestriction?view=sharepoint-ps)。
+不需要同时迁移每个用途。你可能想要逐步推出组策略设置，或者[将文件同步到已加入域的电脑](https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Set-SPOTenantSyncClientRestriction?view=sharepoint-ps)。
 
 ## <a name="start-menu-and-task-bar-customization"></a>开始菜单和任务栏自定义
 
 OneDrive 旨在同步和保护文件和文件夹；它不同步应用程序或 Windows 设置。为了做到这一点，在过去，你可能使用复制配置文件的方法来为用户的“开始”菜单和任务栏设置配置标准布局。在 Windows 10 专业版、企业版和教育版中，可以使用组策略、MDM、PowerShell 或预配包来部署[自定义开始和任务栏布局](https://docs.microsoft.com/zh-CN/windows/configuration/windows-10-start-layout-options-and-policies)。不需要重新成像，只需简单地通过重写包含布局的 .xml 文件即可更新布局。
 
-若要创建新布局，只需配置一个示例系统，并使用 PowerShell [Export-StartLayout](https://docs.microsoft.com/zh-CN/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet 来生成 XML 文件，然后将该文件置于网络共享中，或者将其作为部署序列的一部分在本地缓存；一旦用户登录，它只需作为只读文件访问。然后可以使用策略或 [Import-StartLayout](https://docs.microsoft.com/zh-CN/powershell/module/startlayout/import-startlayout?view=win10-ps) cmdlet 来引用此文件。
+若要创建新布局，只需配置一个示例系统，并使用 PowerShell [Export-StartLayout](https://docs.microsoft.com/en-us/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet 来生成 XML 文件，然后将该文件置于网络共享中，或者将其作为部署序列的一部分在本地缓存；一旦用户登录，它只需作为只读文件访问。然后可以使用策略或 [Import-StartLayout](https://docs.microsoft.com/en-us/powershell/module/startlayout/import-startlayout?view=win10-ps) cmdlet 来引用此文件。
 
 ## <a name="removing-unwanted-in-box-apps"></a>删除不需要的框中应用
 
-作为标准安装的一部分，Windows 10 包含多个有用的内置应用，但你可能想要从托管的电脑中删除部分应用，甚至配置安装以防止这些应用返回，例如，XBOX 或 Zune Music。可以使用 [PowerShell Get-AppxPackage](https://technet.microsoft.com/zh-CN/library/hh856044.aspx) 命令检索一个包含这些应用的列表，然后使用 [Remove-AppxPackage](https://technet.microsoft.com/zh-CN/library/hh856038.aspx) 命令删除不需要的应用。或者，你也可以在部署之前离线装载 Windows 映像 (.img) 文件，然后使用[部署映像服务和管理 (DISM)](https://docs.microsoft.com/zh-CN/windows-hardware/manufacture/desktop/what-is-dism) 命令行工具和 [Remove-AppxProvisionedPackage](https://docs.microsoft.com/zh-CN/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) 命令提取不需要的包。
+作为标准安装的一部分，Windows 10 包含多个有用的内置应用，但你可能想要从托管的电脑中删除部分应用，甚至配置安装以防止这些应用返回，例如，XBOX 或 Zune Music。可以使用 [PowerShell Get-AppxPackage](https://technet.microsoft.com/zh-CN/library/hh856044.aspx) 命令检索一个包含这些应用的列表，然后使用 [Remove-AppxPackage](https://technet.microsoft.com/zh-CN/library/hh856038.aspx) 命令删除不需要的应用。或者，你也可以在部署之前离线装载 Windows 映像 (.img) 文件，然后使用[部署映像服务和管理 (DISM)](https://docs.microsoft.com/zh-CN/windows-hardware/manufacture/desktop/what-is-dism) 命令行工具和 [Remove-AppxProvisionedPackage](https://docs.microsoft.com/en-us/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) 命令提取不需要的包。
 
 ## <a name="next-step"></a>后续步骤
 
