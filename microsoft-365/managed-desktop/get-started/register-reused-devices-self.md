@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: c2527b18c422d53060398f90b7470db8b4959afa
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982945"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577768"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -91,7 +91,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
     - 模型 
     - Serial_Number 
     - HardwareHash
-7. 选择“确定”****。
+7. 选择“**确定**”。
 
 接下来，通过执行以下步骤来**定义报告显示和创建报告**：
 
@@ -176,7 +176,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 
 如果您通过手动 PowerShell 或闪存驱动器方法收集了硬件哈希数据，则您现在需要将 CSV 文件中的数据组合到单个文件中才能完成注册。 下面是一个示例 PowerShell 脚本，可轻松实现此操作：
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 将哈希数据合并到一个 CSV 文件中，现在就可以继续[注册设备了](#register-devices)。
 
@@ -225,7 +225,7 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](#troubleshooting-device-registration)。 |
 | 为用户准备就绪 | 注册成功，现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
-| 可用 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
+| 活动 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
 | 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们最近未使用设备（最近7天）。  | 
 
 #### <a name="troubleshooting-device-registration"></a>设备注册故障排除

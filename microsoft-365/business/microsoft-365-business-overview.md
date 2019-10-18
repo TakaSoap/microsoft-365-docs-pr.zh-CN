@@ -11,22 +11,27 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: 8568232eb65485f1e016342bb13de9a07f706c00
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: e6f99d6d2f2d7951303591a806a3618615a25310
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288527"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575910"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
-## <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 Business
+## <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 业务
 
 Microsoft 365 Business 是一套功能全面的业务生产和协作工具，如 Outlook、Word、Excel 和始终不断优化的其他 Office 产品。可通过易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。
   

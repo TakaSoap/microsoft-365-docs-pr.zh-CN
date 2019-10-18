@@ -14,17 +14,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: 在 iPhone 或 Android 手机上安装 Office, Office 应用中的工作文件将受到 Microsoft 365 商业版的保护。
-ms.openlocfilehash: 81ec7eb980cbe35ced37ab3b25d87d77d9e4390a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 在 iPhone 或 Android 手机上安装 Office，Office 应用中的工作文件将受到 Microsoft 365 商业版的保护。
+ms.openlocfilehash: 6dd18569f0d4b3c71f00004706c2430eb7c5ae43
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074682"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575600"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 Business 用户设置移动设备
 
@@ -37,7 +38,7 @@ ms.locfileid: "34074682"
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-观看有关如何使用 Microsoft 365 商业版在 iOS 设备上设置 Office 应用的视频:
+观看有关如何使用 Microsoft 365 商业版在 iOS 设备上设置 Office 应用的视频：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
@@ -67,7 +68,7 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
-若要在 Android 手机上开始安装程序, 请转到 "播放存储区"。
+若要在 Android 手机上开始安装程序，请转到 "播放存储区"。
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   

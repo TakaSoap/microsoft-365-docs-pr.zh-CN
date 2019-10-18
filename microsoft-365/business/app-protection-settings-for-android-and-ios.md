@@ -11,18 +11,23 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: 68a338ffb4f9b6cab16c677f80d27481ccec4bd8
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: a829cfbcb3209313a53e0a1406f5252d3d5580d8
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287687"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574730"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
@@ -30,7 +35,7 @@ ms.locfileid: "37287687"
 
 ## <a name="create-an-app-management-policy"></a>创建应用管理策略
 
-1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。 
     
 2. 在左侧导航中，选择 "**设备** \> **策略** \> " "**添加**"。
   
@@ -76,7 +81,7 @@ ms.locfileid: "37287687"
   
 |||
 |:-----|:-----|
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备的未使用天数达到指定天数，则自动删除该设备上存储的任何工作文件。  <br/> |
 |强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为" **打开**"，则工作文件的唯一可用保存位置是 OneDrive for Business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。即使设备丢失或被盗，也没有人能够读取公司的数据。  <br/> |
@@ -87,7 +92,7 @@ ms.locfileid: "37287687"
   
 |||
 |:-----|:-----|
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |需要 PIN 或指纹才能访问 Office 应用  <br/> |如果此设置在" **开**"位置，则用户必须在提供用户名和密码后再提供一种形式的身份验证，才能在其移动设备上使用 Office 应用。  <br/> |
 |登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |
 |要求用户在 Office 应用空闲以下时间后重新登录  <br/> |此设置确定用户保持空闲状态多久后系统会提示再次登录。  <br/> |

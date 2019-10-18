@@ -8,24 +8,28 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: '了解如何将 Windows 设备升级到 Windows 10 专业版创意者更新。 '
-ms.openlocfilehash: 95efe45ec43c027ff62b0468e0cfb1fbcc7b60bf
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 5daebb16dcb98ebcdacfb5c7cf330772b24ab753
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288077"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575480"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>将 Windows 设备升级到 Windows 专业版创意者更新
 
 ## <a name="upgrade-to-windows-10-pro-creators-update"></a>升级到 Windows 10 专业版创意者更新
   
-1. 若要升级到 Windows 10 专业版创意者更新，您有多个选项。 可以执行下列操作：
+1. 若要升级到 Windows 10 专业版创意者更新，您有多个选项。 可执行下列操作：
     
     - 从[Microsoft 软件下载网站](https://go.microsoft.com/fwlink/?LinkID=836951 )安装升级-如果你登录的设备与您要更新的设备位于同一设备上，请选择此选项。
     

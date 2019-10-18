@@ -10,24 +10,29 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: 了解如何在 Microsoft 365 商业版中添加新用户、保护其设备以及分配角色。
-ms.openlocfilehash: 9451be8a13c78230d0314e6d4ac74a6c9d7564ae
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 0ea3a4845e46ed1d13abf966eea895aa394aebca
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287427"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574750"
 ---
 # <a name="add-additional-users-to-microsoft-365-business"></a>将其他用户添加到 Microsoft 365 商业版
 
 ## <a name="add-new-users"></a>添加新用户
 
-1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。 
 2. 在左侧导航中，选择 "**用户** \> **活动用户**"。
 1. 在 "**活动用户**" 页上，选择 "**添加用户**"。
  4. 在 "**新建用户**" 面板中，键入所需的信息。 

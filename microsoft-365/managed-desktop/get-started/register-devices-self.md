@@ -1,18 +1,18 @@
 ---
-title: 自己注册新设备
+title: 自行注册新设备
 description: 自己注册设备，以便它们可以由 Microsoft 托管桌面管理
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1e42ebe38cea87b3fedc7ebd7bdb52ceb2f1b2c5
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 952fac18db8ecc31fcd041dbfdf45e6ee8edee75
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981723"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577758"
 ---
-# <a name="register-new-devices-yourself"></a>自己注册新设备
+# <a name="register-new-devices-yourself"></a>自行注册新设备
 
 Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用可能已有的设备（这将需要您对其进行重新映像）。 您可以使用 Azure 门户上的 Microsoft 托管桌面注册设备。
 
@@ -64,7 +64,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 
 您需要将 CSV 文件中的数据组合到单个文件中才能完成注册。 下面是一个示例 PowerShell 脚本，可轻松实现此操作：
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 ### <a name="register-devices"></a>注册设备
 
@@ -111,7 +111,7 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](#troubleshooting-device-registration)。 |
 | 为用户准备就绪 | 注册成功，现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
-| 可用 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
+| 活动 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
 | 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们最近未使用设备（最近7天）。  | 
 
 #### <a name="troubleshooting-device-registration"></a>设备注册故障排除

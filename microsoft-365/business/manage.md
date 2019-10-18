@@ -8,18 +8,23 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: 了解如何管理 Microsoft 365 业务相关的管理任务、移动设备、Windows 10PCs 和许多这样的任务。
-ms.openlocfilehash: 87ba4093a37c708fe405cd0876a53f8b9ae91567
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287951"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575950"
 ---
 # <a name="manage-microsoft-365-business"></a>管理 Microsoft 365 Business
 
@@ -89,7 +94,7 @@ Office 365 for business 的大多数[管理内容](/Office365/Admin/admin-home.m
     
 - [使用设置向导设置 Microsoft 365 商业版](set-up.md)
     
-- [迁移到 Microsoft 365 业务](migrate-to-microsoft-365-business.md)
+- [迁移到 Microsoft 365 商业版](migrate-to-microsoft-365-business.md)
     
 - [启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备](manage-windows-devices.md)
     

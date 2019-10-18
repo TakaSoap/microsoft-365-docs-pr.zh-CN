@@ -14,19 +14,23 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: 了解如何在 Windows 10 设备上创建应用管理策略并保护工作文件。
-ms.openlocfilehash: 92cd3facbd3eabbfef674300abe0257c370294ea
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 0e1221e533418166b80afd94431414016774f247
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288407"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575770"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>设置 Windows 10 设备的应用程序保护设置
 
@@ -34,7 +38,7 @@ ms.locfileid: "37288407"
 
 如果用户在个人 Windows 10 设备上执行工作任务，也可以在该类设备上保护你的数据。
   
-1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。 
     
 2. 在左侧导航中，选择 "**设备** \> **策略** \> " "**添加**"。
 

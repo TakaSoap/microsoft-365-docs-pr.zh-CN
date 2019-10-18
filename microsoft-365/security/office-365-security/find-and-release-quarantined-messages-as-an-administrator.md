@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。
-ms.openlocfilehash: 80bc774d53b82ecd9295ed40f6c8254c7047a2e0
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 8f127dd1e7c14bbf2ae1d3bf23e611ef5c3ac1dc
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441129"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37576030"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以管理员身份查找并释放隔离邮件
 
 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。 Office 365 将邮件定向到隔离区，因为它们被标识为垃圾邮件或与邮件流规则匹配（也称为 "传输规则"）。
 
-使用安全&amp;合规中心（而不是 EAC）完成这些任务，并查看和处理发送到隔离的邮件，因为它们包含恶意软件。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+您可以使用安全 & 合规中心（而不是 EAC）来完成这些任务中的任何任务;Exchange 管理中心（EAC）内的隔离门户将设置为 "decommisioned"。  有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
 
 已隔离邮件在 EAC 的 "**隔离**" 页面上列出。 默认情况下，"**接收**时间" 字段中的邮件按从最新到最旧的顺序排列。 还将为每封邮件列出“发件人”****、“主题”**** 和“到期”**** 值。 您可以通过单击标题来对任何字段排序。 再次单击列标题将按相反顺序排序。 "**隔离**" 页面最多显示500个邮件。
 
@@ -37,7 +37,7 @@ ms.locfileid: "37441129"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
-- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "隔离" 条目。
+- 你必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "隔离" 条目。
 
 - 您可以在 "**隔离**" 页面上一次释放或报告多封邮件。 或者，您可以创建一个远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet 搜索邮件，并使用[get-quarantinemessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet 释放邮件。
 
@@ -67,7 +67,7 @@ ms.locfileid: "37441129"
    6. **过期**：可以选择在接下来的24小时内（"**今天**"），在接下来的48小时内（接下来的**2 天**），在下一周内（"**接下来7天**"），或者您可以选择自定义时间间隔将从隔离区中删除该邮件。
 
       > [!IMPORTANT]
-      > 默认情况下，垃圾邮件隔离的邮件在15天内保留隔离，而与邮件流规则匹配的隔离邮件将保留在隔离时间7天内。 7 天后，这些邮件将被 Office 365 删除并且不可检索。 与邮件流规则匹配的隔离邮件的保留期不可配置。 但是，垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件（天）** " 设置来降低。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
+      > 默认情况下，垃圾邮件隔离的邮件会在30天内保留，而与邮件流规则匹配的隔离邮件将在隔离中保留最长30天，并根据您在默认内容筛选策略中设置的保留期。 7 天后，这些邮件将被 Office 365 删除并且不可检索。 与邮件流规则匹配的隔离邮件的保留期不可配置。 但是，垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件（天）** " 设置来降低。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
 
    7. **类型**您可以指定是否搜索已被标识为**垃圾**邮件的隔离邮件，或者是否搜索与邮件流规则匹配的邮件（**传输规则**）。
 
@@ -184,6 +184,6 @@ ms.locfileid: "37441129"
 
 如果单击 "**刷新**![刷新" 图标](../media/ITPro-EAC-RefreshIcon.gif)图标刷新数据，然后双击邮件，您应该会看到它已发布给预期的收件人。
 
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>有关详细信息
 
 [隔离常见问题解答](quarantine-faq.md)

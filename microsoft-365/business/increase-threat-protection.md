@@ -10,19 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并保护敏感数据。
-ms.openlocfilehash: 81197a8baf1c4d0cbfd898c41a305c1a99bab57c
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 0b0c1ac1d23bc7b167a58ecf93019a77c51c4366
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288107"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37576010"
 ---
-# <a name="increase-threat-protection"></a>增加威胁防护
+# <a name="increase-threat-protection"></a>增强威胁防护
 
 本文可帮助你提高 Microsoft 365 订阅中的保护，以防止出现网络钓鱼、恶意软件和其他威胁。 这些建议适用于具有更高安全性需求的组织，如法律办公室和卫生保健诊所。
 
@@ -69,7 +72,7 @@ ms.locfileid: "37288107"
     
 5. 对规则应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 单击“保存”****。
+6. 单击“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**||
 |:-----|:-----|:-----|
@@ -103,7 +106,7 @@ ms.locfileid: "37288107"
     
 5. 应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 单击“保存”****。
+6. 单击“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|
 |:-----|:-----|
@@ -146,8 +149,6 @@ ms.locfileid: "37288107"
 |邮箱智能  <br/> |默认情况下，当您创建新的反网络钓鱼策略时，将选择邮箱智能。 将此设置保留为 **"开"** 以获得最佳效果。  <br/> |
 |添加受信任的发件人和域  <br/> |你可以在此处添加你自己的域或任何其他受信任域。  <br/> |
 |应用于  <br/> |选择 **"收件人域"**。 在**以下任一情况**下，选择 "**选择**"。 选择 " **+ 添加**"。 选中域名称旁边的复选框，例如 " *contoso"。<span>com <span>*，请在列表中，然后选择 "**添加**"。 选择 "**完成**"。  <br/> |
-   
-有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>使用 ATP 安全附件防止恶意附件和文件
 
@@ -206,7 +207,7 @@ ms.locfileid: "37288107"
     
 2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 " **office 365 专业增强版，office For iOS 和 Android**"。
     
-3. 单击“保存”****。 
+3. 单击“**保存**”。 
     
 创建一个面向域中所有收件人的新策略：
   
@@ -214,7 +215,7 @@ ms.locfileid: "37288107"
     
 2. 应用下表中列出的设置。
     
-3. 单击“保存”****。 
+3. 单击“**保存**”。 
 
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|
