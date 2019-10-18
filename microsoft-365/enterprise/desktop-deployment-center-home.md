@@ -24,7 +24,7 @@ ms.locfileid: "36982083"
 # <a name="desktop-deployment-center"></a>桌面部署中心
 
 <strong>从 Windows 7 升级到 Windows 10</strong>
-<p>Windows 7 扩展支持将于2020年1月14日结束。 就地从 Windows 7 升级到 Windows 10 是部署速度最快的方法。 可使用 System Center Configuration Manager <a href="https://docs.microsoft.com/zh-CN/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">升级单台电脑</a>或 <a href="https://docs.microsoft.com/zh-CN/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">升级数以千计的电脑</a>。 无需专注于应用的交付、文件迁移、自定义映像或通过就地升级启用基于云的服务。 可以使用已有的工具升级现有电脑，并关注升级的以下部署步骤： </p>
+<p>Windows 7 扩展支持将于2020年1月14日结束。 就地从 Windows 7 升级到 Windows 10 是部署速度最快的方法。 可使用 System Center Configuration Manager <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">升级单台电脑</a>或 <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">升级数以千计的电脑</a>。 无需专注于应用的交付、文件迁移、自定义映像或通过就地升级启用基于云的服务。 可以使用已有的工具升级现有电脑，并关注升级的以下部署步骤： </p>
 
 <p>
 </p>
