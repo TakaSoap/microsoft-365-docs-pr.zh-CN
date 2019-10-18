@@ -15,38 +15,43 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot 配置文件可帮助您控制 Windows 在用户设备上的安装方式。 配置文件包含 "跳过 Cortana 安装" 等默认和可选设置。
-ms.openlocfilehash: cd66627943301f4a4f2410bafeff6074919ec29d
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: eb0d9a95c796909d024db1d061aaeace7d07ed1b
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287467"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574570"
 ---
-# <a name="about-autopilot-profile-settings"></a><span data-ttu-id="9d9c0-104">关于"AutoPilot 配置文件"设置</span><span class="sxs-lookup"><span data-stu-id="9d9c0-104">About AutoPilot Profile settings</span></span>
+# <a name="about-autopilot-profile-settings"></a><span data-ttu-id="14ff7-104">关于"AutoPilot 配置文件"设置</span><span class="sxs-lookup"><span data-stu-id="14ff7-104">About AutoPilot Profile settings</span></span>
 
-## <a name="autopilot-profile-settings"></a><span data-ttu-id="9d9c0-105">AutoPilot 配置文件设置</span><span class="sxs-lookup"><span data-stu-id="9d9c0-105">AutoPilot profile settings</span></span>
+## <a name="autopilot-profile-settings"></a><span data-ttu-id="14ff7-105">AutoPilot 配置文件设置</span><span class="sxs-lookup"><span data-stu-id="14ff7-105">AutoPilot profile settings</span></span>
 
-<span data-ttu-id="9d9c0-106">您可以使用 AutoPilot 配置文件控制 Windows 在用户设备上的安装方式。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-106">You can control how Windows gets installed on user devices by using the AutoPilot profiles.</span></span> <span data-ttu-id="9d9c0-107">配置文件包含以下设置。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-107">The profiles contain the following settings.</span></span>
+<span data-ttu-id="14ff7-106">您可以使用 AutoPilot 配置文件控制 Windows 在用户设备上的安装方式。</span><span class="sxs-lookup"><span data-stu-id="14ff7-106">You can control how Windows gets installed on user devices by using the AutoPilot profiles.</span></span> <span data-ttu-id="14ff7-107">配置文件包含以下设置。</span><span class="sxs-lookup"><span data-stu-id="14ff7-107">The profiles contain the following settings.</span></span>
   
- <span data-ttu-id="9d9c0-108">**自动设置的 AutoPilot 默认功能（必需）：**</span><span class="sxs-lookup"><span data-stu-id="9d9c0-108">**AutoPilot default features (required) that are set automatically:**</span></span>
+ <span data-ttu-id="14ff7-108">**自动设置的 AutoPilot 默认功能（必需）：**</span><span class="sxs-lookup"><span data-stu-id="14ff7-108">**AutoPilot default features (required) that are set automatically:**</span></span>
   
-|<span data-ttu-id="9d9c0-109">**设置**</span><span class="sxs-lookup"><span data-stu-id="9d9c0-109">**Setting**</span></span>|<span data-ttu-id="9d9c0-110">**说明**</span><span class="sxs-lookup"><span data-stu-id="9d9c0-110">**Description**</span></span>|
+|<span data-ttu-id="14ff7-109">**设置**</span><span class="sxs-lookup"><span data-stu-id="14ff7-109">**Setting**</span></span>|<span data-ttu-id="14ff7-110">**说明**</span><span class="sxs-lookup"><span data-stu-id="14ff7-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="9d9c0-111">跳过 Cortana、OneDrive 和 OEM 注册</span><span class="sxs-lookup"><span data-stu-id="9d9c0-111">Skip Cortana, OneDrive and OEM registration</span></span>  <br/> |<span data-ttu-id="9d9c0-112">跳过安装使用者应用程序，如 Cortana 和个人 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-112">Skips the installation of consumer apps like Cortana and personal OneDrive.</span></span> <span data-ttu-id="9d9c0-113">只要他或她是设备上的本地管理员，设备用户就可以在以后安装这些设备。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-113">The device user can install these later as long as he or she is a local admin on the device.</span></span> <span data-ttu-id="9d9c0-114">由于设备将由 Microsoft 365 商业版管理，因此将跳过原始制造商注册。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-114">The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business.</span></span>  <br/> |
-|<span data-ttu-id="9d9c0-115">使用贵公司品牌登录体验</span><span class="sxs-lookup"><span data-stu-id="9d9c0-115">Sign in experience with your company brand</span></span>  <br/> |<span data-ttu-id="9d9c0-116">如果您的公司[将公司商标添加到 Office 365 登录页面](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)，则设备用户将在登录时获得该体验。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-116">If your company has a [Add your company branding to Office 365 Sign In page](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), the device user will get that experience when signing in.</span></span>  <br/> |
-|<span data-ttu-id="9d9c0-117">使用已配置的 AAD 帐户的 MDM 自动注册。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-117">MDM auto-enrollment with configured AAD accounts.</span></span>  <br/> |<span data-ttu-id="9d9c0-118">用户标识将由 Azure Active directory 管理，并且用户将使用其 Microsoft 365 商业版凭据登录 Windows 和 Office 365。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-118">The user identity will be managed by Azure Active directory, and the users will sign into Windows and Office 365 with their Microsoft 365 Business credentials.</span></span>  <br/> |
+|<span data-ttu-id="14ff7-111">跳过 Cortana、OneDrive 和 OEM 注册</span><span class="sxs-lookup"><span data-stu-id="14ff7-111">Skip Cortana, OneDrive and OEM registration</span></span>  <br/> |<span data-ttu-id="14ff7-112">跳过安装使用者应用程序，如 Cortana 和个人 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="14ff7-112">Skips the installation of consumer apps like Cortana and personal OneDrive.</span></span> <span data-ttu-id="14ff7-113">只要他或她是设备上的本地管理员，设备用户就可以在以后安装这些设备。</span><span class="sxs-lookup"><span data-stu-id="14ff7-113">The device user can install these later as long as he or she is a local admin on the device.</span></span> <span data-ttu-id="14ff7-114">由于设备将由 Microsoft 365 商业版管理，因此将跳过原始制造商注册。</span><span class="sxs-lookup"><span data-stu-id="14ff7-114">The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business.</span></span>  <br/> |
+|<span data-ttu-id="14ff7-115">使用贵公司品牌登录体验</span><span class="sxs-lookup"><span data-stu-id="14ff7-115">Sign in experience with your company brand</span></span>  <br/> |<span data-ttu-id="14ff7-116">如果您的公司[将公司商标添加到 Office 365 登录页面](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)，则设备用户将在登录时获得该体验。</span><span class="sxs-lookup"><span data-stu-id="14ff7-116">If your company has a [Add your company branding to Office 365 Sign In page](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), the device user will get that experience when signing in.</span></span>  <br/> |
+|<span data-ttu-id="14ff7-117">使用已配置的 AAD 帐户的 MDM 自动注册。</span><span class="sxs-lookup"><span data-stu-id="14ff7-117">MDM auto-enrollment with configured AAD accounts.</span></span>  <br/> |<span data-ttu-id="14ff7-118">用户标识将由 Azure Active directory 管理，并且用户将使用其 Microsoft 365 商业版凭据登录 Windows 和 Office 365。</span><span class="sxs-lookup"><span data-stu-id="14ff7-118">The user identity will be managed by Azure Active directory, and the users will sign into Windows and Office 365 with their Microsoft 365 Business credentials.</span></span>  <br/> |
    
- <span data-ttu-id="9d9c0-119">**可选设置：**</span><span class="sxs-lookup"><span data-stu-id="9d9c0-119">**Optional settings:**</span></span>
+ <span data-ttu-id="14ff7-119">**可选设置：**</span><span class="sxs-lookup"><span data-stu-id="14ff7-119">**Optional settings:**</span></span>
   
-|<span data-ttu-id="9d9c0-120">**设置**</span><span class="sxs-lookup"><span data-stu-id="9d9c0-120">**Setting**</span></span>|<span data-ttu-id="9d9c0-121">**说明**</span><span class="sxs-lookup"><span data-stu-id="9d9c0-121">**Description**</span></span>|
+|<span data-ttu-id="14ff7-120">**设置**</span><span class="sxs-lookup"><span data-stu-id="14ff7-120">**Setting**</span></span>|<span data-ttu-id="14ff7-121">**说明**</span><span class="sxs-lookup"><span data-stu-id="14ff7-121">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="9d9c0-122">跳过隐私设置（默认情况下禁用）</span><span class="sxs-lookup"><span data-stu-id="9d9c0-122">Skip privacy settings (Off by default)</span></span>  <br/> |<span data-ttu-id="9d9c0-123">如果此选项设置为 **"开**"，则在用户首次登录时，设备用户将看不到设备和 Windows 的许可协议。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-123">If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.</span></span>  <br/> |
-|<span data-ttu-id="9d9c0-124">不允许用户成为本地管理员</span><span class="sxs-lookup"><span data-stu-id="9d9c0-124">Don't allow the user to become the local admin</span></span>  <br/> |<span data-ttu-id="9d9c0-125">如果此选项设置为 **"开**"，则设备用户将无法安装任何个人应用程序，如 Cortana。</span><span class="sxs-lookup"><span data-stu-id="9d9c0-125">If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.</span></span>  <br/> |
+|<span data-ttu-id="14ff7-122">跳过隐私设置（默认情况下禁用）</span><span class="sxs-lookup"><span data-stu-id="14ff7-122">Skip privacy settings (Off by default)</span></span>  <br/> |<span data-ttu-id="14ff7-123">如果此选项设置为 **"开**"，则在用户首次登录时，设备用户将看不到设备和 Windows 的许可协议。</span><span class="sxs-lookup"><span data-stu-id="14ff7-123">If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.</span></span>  <br/> |
+|<span data-ttu-id="14ff7-124">不允许用户成为本地管理员</span><span class="sxs-lookup"><span data-stu-id="14ff7-124">Don't allow the user to become the local admin</span></span>  <br/> |<span data-ttu-id="14ff7-125">如果此选项设置为 **"开**"，则设备用户将无法安装任何个人应用程序，如 Cortana。</span><span class="sxs-lookup"><span data-stu-id="14ff7-125">If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.</span></span>  <br/> |
    
