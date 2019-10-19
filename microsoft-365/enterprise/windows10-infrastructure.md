@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 0b98e48b128eeaea0e0dd5cb9613ece95e991861
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7253ea698613a38988bd7a6942a4908e9c797e2a
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982743"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37372763"
 ---
-# <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
+# <a name="phase-3-windows-10-enterprise"></a>第 3 阶段：Windows 10 企业版
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更多和保持安全保护的工具。 Windows 10 企业版：
 
@@ -42,7 +42,7 @@ Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更
 | [使用 System Center Configuration Manager 作为就地升级](windows10-deploy-inplaceupgrade.md) | 如果需要将 Windows 7 或 Windows 8.1 计算机升级到<a href="https://aka.ms/windows-10-release-information" target="_blank">当前版本</a>的 Windows 10 企业版，并且您的计算机当前是使用<a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager （当前分支）</a>进行管理的，请选择此选项。 |
 | [使用 Windows Autopilot](windows10-deploy-autopilot.md) | 如果要设置 Windows 10 企业版、版本1703或更高版本预安装的新 Windows 计算机，请选择此选项。 最终用户将使用所需的配置来启动安装程序，方法是输入其工作或学校帐户凭据。 |
 
-如果这些部署方案不能满足您组织的需求，您可以了解其他方案并了解每个方案在[Windows 10 部署方案](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的功能和限制。 您还可以对<a href="https://aka.ms/planforwin10deployment" target="_blank">Windows 10 部署进行规划</a>。
+如果这些部署方案不能满足您组织的需求，您可以了解其他方案并了解每个方案在[Windows 10 部署方案](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的功能和限制。 也可以自行<a href="https://aka.ms/planforwin10deployment" target="_blank">计划 Windows 10 部署</a>。
 
 您可以通过以下文章了解有关 Windows 10 的详细信息：
 
@@ -78,10 +78,10 @@ Windows 10 提供了一些功能，可帮助保护抵御威胁、帮助保护设
 
 请参阅 Contoso Corporation，它是一个虚构但具有代表性的多国企业，[部署了 Windows 10 企业版](contoso-win10.md)。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [为 Windows 10 企业版准备组织](windows10-prepare-your-org.md) |
+|![第 1 步](./media/stepnumbers/Step1.png)| [为 Windows 10 企业版准备组织](windows10-prepare-your-org.md) |

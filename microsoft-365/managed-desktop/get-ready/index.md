@@ -1,24 +1,25 @@
 ---
-title: 准备好在 Microsoft 托管桌面中进行注册
-description: ''
-keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
+title: 做好注册 Microsoft 托管桌面的准备
+description: 准备组织进行注册所需的步骤
+keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
-ms.openlocfilehash: 68cf55e5528affef352f144384888c0cb01cfc88
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390539"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595588"
 ---
-# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>准备好在 Microsoft 托管桌面中进行注册
+# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>做好注册 Microsoft 托管桌面的准备
 
-了解有关 Microsoft 托管桌面的先决条件的详细信息。 
+这些主题介绍在您的组织准备注册时需要执行的步骤，包括检查您的环境是否满足关键先决条件、配置网络、设置证书以及准备您的应用程序以包含在服务台.
 
-## <a name="in-this-section"></a>本节内容
+- [Microsoft 托管桌面的系统必备](prerequisites.md)
+- [Microsoft 托管桌面的网络配置](network.md)
+- [为 Microsoft 托管桌面准备本地资源访问权限](network.md)
+- [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
+- [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
+- [Microsoft 托管桌面中的应用程序](apps.md)
 
-- [Microsoft 托管桌面的先决条件](prerequisites.md)
-- [网络配置](network.md)
-- [为 Microsoft 托管桌面准备应用程序](apps.md)

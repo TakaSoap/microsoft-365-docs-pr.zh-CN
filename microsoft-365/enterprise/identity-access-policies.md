@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982013"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590496"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -39,7 +39,7 @@ ms.locfileid: "36982013"
 为了让你有时间完成这些任务，我们建议你按照此表中所列的顺序实施基准策略。 但是，敏感和高度管控保护的 MFA 策略可在任何时候实施。
 
 
-|保护级别|策略|详细信息|
+|保护级别|策略|更多信息|
 |:---------------|:-------|:----------------|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](#require-mfa-based-on-sign-in-risk)| |
 |        |[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)|不使用新式身份验证的客户端可以绕过条件访问规则，因此，请务必阻止这些|
@@ -47,7 +47,7 @@ ms.locfileid: "36982013"
 |        |[定义应用保护策略](#define-app-protection-policies)|每个平台（iOS、Android、Windows）一个策略。|
 |        |[需要批准的应用程序](#require-approved-apps)|为电话和平板电脑强制实施移动应用保护|
 |        |[定义设备合规性策略](#define-device-compliance-policies)|每个平台一个策略|
-|        |[需要符合要求的电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|强制对电脑进行 Intune 管理|
+|        |[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|强制对电脑进行 Intune 管理|
 |**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](#require-mfa-based-on-sign-in-risk)| |
 |         |[需要符合要求*的 pc 和*移动设备](#require-compliant-pcs-and-mobile-devices)|对电脑和电话/平板电脑强制 Intune 管理|
 |**高度管控**|[*始终*要求进行 MFA](#require-mfa-based-on-sign-in-risk)|
@@ -192,7 +192,7 @@ Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.a
 - Android
 - Windows 10
 
-若要创建新的应用保护策略，请使用你的管理凭据登录到 Microsoft Azure 门户，然后导航到**移动应用 > 应用保护策略**。 选择 "**添加策略**"。
+若要创建新的应用保护策略，请使用管理员凭据登录到 Microsoft Azure 门户，然后导航到**客户端应用** > **应用程序保护策略**。 选择 "**创建策略**"。
 
 iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于 Android。 将本指南用作其他策略的指南。
 
@@ -211,23 +211,23 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|数据重定位|阻止 Android 备份|是|在 iOS 上，这会专门调用 iTunes 和 iCloud|
+|数据重定位|阻止 Android 备份|可访问|在 iOS 上，这会专门调用 iTunes 和 iCloud|
 ||允许应用向其他应用传送数据|策略托管应用||
 ||允许应用从其他应用接收数据|策略托管应用||
-||防止“另存为”|是||
+||防止“另存为”|可访问||
 ||选择企业数据可保存到其中的存储服务|OneDrive for Business、SharePoint||
 ||限制使用其他应用剪切、复制和粘贴|使用 "粘贴到" 的策略托管应用||
 ||限制显示在托管浏览器内的 Web 内容|否||
 ||加密应用数据|是|在 iOS 上，选择选项：“锁定设备时”|
-||启用设备时禁用应用程序加密|是|禁用此设置可避免双重加密|
+||启用设备时禁用应用程序加密|可访问|禁用此设置可避免双重加密|
 ||禁用联系人同步|否||
 ||禁用打印|否||
-|访问|访问需要 PIN|是||
+|访问|访问需要 PIN|可访问||
 ||选择类型|数值||
 ||允许使用简单 PIN|否||
 ||PIN 长度|型||
 ||允许使用指纹而不是 PIN|是||
-||在管理设备 PIN 时禁用应用 PIN|是||
+||在管理设备 PIN 时禁用应用 PIN|可访问||
 ||需要公司凭据才能访问|否||
 ||在一定时间后重新检查访问要求(分钟)|30||
 ||阻止屏幕捕获和 Android 助手|否|在 iOS 上，此选项不可用|
@@ -265,7 +265,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 11. 选择 "**授予访问权限**"，选择 "**需要批准的客户端应用**"。 对于多个控件，选择 "**需要选定的控件**"，然后选择 "**选择**"。 
 
-12. 选择“创建”。****
+12. 选择“创建”****。
 
 ## <a name="define-device-compliance-policies"></a>定义设备合规性策略
 
@@ -305,7 +305,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|Password|需要密码才能解锁移动设备|需要||
+|密码|需要密码才能解锁移动设备|需要||
 ||简单密码|阻止||
 ||密码类型|设备默认值||
 ||最短密码长度|型||
@@ -326,7 +326,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|中||
+|Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|Medium||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>需要符合要求的电脑（但不符合兼容电话和平板电脑）
 在将策略添加到需要兼容的电脑之前，请务必在 Intune 中注册设备进行管理。 建议在将设备注册到 Intune 中之前使用多重身份验证，以确保设备已占有目标用户。 
@@ -353,7 +353,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 10. 选择 "**授予访问权限**"，选择 "**要求设备被标记为合规**"。 对于多个控件，选择 **"要求所有选定控件**"，然后选择 "**选择**"。 
 
-11. 选择“创建”。****
+11. 选择“创建”****。
 
 如果您的目标是要求符合合规性的 Pc*和*移动设备，请不要选择 "平台"。 这将强制实施所有设备的符合性。 
 
@@ -379,7 +379,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 9. 选择 "**授予访问权限**"，选择 "**要求设备被标记为合规**"。 对于多个控件，选择 **"要求所有选定控件**"，然后选择 "**选择**"。 
 
-10. 选择“创建”。****
+10. 选择“创建”****。
 
 创建此策略时，请不要选择平台。 这将强制实施符合性的设备。
 

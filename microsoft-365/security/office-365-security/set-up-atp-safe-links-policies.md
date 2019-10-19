@@ -15,17 +15,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: ba9089cd541e3834b967be4032fe21a4bb948d33
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 82731d961fddf90c2b53bfead1b72a3f35df2b24
+ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076053"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37593877"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
 > [!IMPORTANT]
-> 本文适用于具有[Office 365 高级威胁防护](office-365-atp.md)的商业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 [ATP 安全链接](atp-safe-links.md)是[Office 365 高级威胁防护](office-365-atp.md)（ATP）的一项功能，可帮助保护您的组织免受网络钓鱼和其他攻击中使用的恶意链接。 如果您拥有[Office 365 安全&amp;合规中心](permissions-in-the-security-and-compliance-center.md)的必要权限，则可以设置 ATP 安全链接策略，以帮助确保当用户单击 "Web 地址" （url）时，您的组织受到保护。 您的 ATP 安全链接策略可以配置为扫描 Office 文档中的电子邮件和 Url 中的 Url。
   
@@ -47,17 +47,17 @@ ms.locfileid: "37076053"
     
 - 请确保您具有必要的权限。 若要定义（或编辑） ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例： <br>
 
-    |Role  |分配的位置/方式  |
+    |角色  |分配的位置/方式  |
     |---------|---------|
     |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
-    |Security Administrator |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
+    |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
     |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)） |
 
     若要了解有关角色和权限的详细信息，请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 请确保将 Office 客户端配置为使用[新式验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)（这适用于 office 文档中的 ATP 安全链接保护）。
     
-- [了解 ATP 安全链接策略选项](#step-4-learn-about-atp-safe-links-policy-options)（在本文中）。 
+- [了解 ATP 安全链接策略选项](#step-4-learn-about-atp-safe-links-policy-options)（本文中的）。 
 
 - 最长允许30分钟，新的或更新的策略将传播到所有的 Office 365 数据中心。
     
@@ -130,8 +130,8 @@ ms.locfileid: "37076053"
 
 |此选项  |执行的操作  |
 |---------|---------|
-|**关** <br/> |不扫描电子邮件中的 Url。  <br/> 使您能够定义例外规则，如不扫描电子邮件中的 Url 的特定收件人组的 Url 的规则。  <br/> |
-|**On** <br/> |通过在用户单击电子邮件中的 Url 时，通过 ATP 安全链接保护来重写 Url 以路由用户。  <br/> 对被阻止或恶意 Url 的列表单击时检查 URL。  <br/> |
+|**关闭** <br/> |不扫描电子邮件中的 Url。  <br/> 使您能够定义例外规则，如不扫描电子邮件中的 Url 的特定收件人组的 Url 的规则。  <br/> |
+|**On** <br/> |通过在用户单击电子邮件中的 Url 并在 Windows 中启用（C2R）的 ATP 安全链接，来将 Url 重写为在 ATP 安全链接保护中路由用户。  <br/> 在对阻止或恶意 Url 列表单击时检查 URL，并在后台异步触发 URL 的沙箱，前提是该 URL 没有有效的信誉。  <br/> |
 |**对指向文件的可疑链接和链接应用实时 URL 扫描** <br/> |如果选择此选项，则会扫描指向可下载内容的可疑 Url 和链接。  <br/> |
 |**等待 URL 扫描完成后再传递邮件** <br/> |如果选择此选项，则将一直保留包含要扫描的 Url 的邮件，直到 Url 完成扫描并在传递邮件之前将其确认为安全。  <br/> |
 |**将安全链接应用于在组织内发送的邮件** <br/> | 当此选项可用并选中时，如果电子邮件帐户托管在 Office 365 中，则会将 ATP 安全链接保护应用于在组织中的人员之间发送的电子邮件。  <br/> |

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 40f26f83e8b3001d2010d3197020f067fc51aaae
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982473"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37159680"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的管理员支持
 
@@ -50,7 +50,14 @@ ms.locfileid: "36982473"
 - **营业时间**-对于大多数国家/地区，营业时间是从 9:00 AM 到 5:00 PM （太平洋标准时间）。
 - **应用程序兼容性**-要考虑的应用程序兼容性问题，在以前版本的 Windows 或 Office 中，同一版本的应用程序必须存在 reproduceable 错误。 若要解决应用程序兼容性问题，Microsoft 需要客户联系点来使用。 个人必须直接与我们的快速跟踪团队合作，以调查并解决问题。
 - **客户响应时间**如果客户无法满足预期的响应要求，Microsoft 会将请求降级一个严重级别，最小为严重度 C。如果客户没有响应操作请求，Microsoft 将在上一次请求的48小时内缓解和关闭支持请求。
- 
+
+
+## <a name="providing-administrator-rights-to-specific-users"></a>向特定用户提供管理员权限
+
+在与支持人员合作的过程中，您可能需要向设备上的用户提供本地管理员权限，以协助进行故障排除。 若要执行此操作，您必须已在 Microsoft Intune 中具有全局管理员或设备管理员权限，才能获取自己的帐户。 按照以下任一步骤操作，具体取决于您的情况：
+
+- 如果你的用户是从本地 Active Directory 帐户同步的，请从提升的命令提示符运行**net localgroup administrators/add "Contoso\username"** 。
+- 如果你的用户是在 Azure Active Directory 中创建的，请从提升的命令提示符运行**net localgroup administrators/add "AzureAD\UserUpn"** 。
 
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面的最终用户支持](end-user-support.md)。 

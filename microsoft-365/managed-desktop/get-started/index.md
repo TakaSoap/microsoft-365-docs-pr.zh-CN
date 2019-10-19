@@ -1,23 +1,21 @@
 ---
 title: Microsoft 托管桌面入门
 description: ''
-keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
+keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: a79b71a836444ff745e2e9c64fce023db81c1d17
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390499"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595578"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft 托管桌面入门
 
-在 Microsoft 托管桌面中, 管理桌面设备将转换为企业云基础结构。 
+当您准备好注册服务后，本节包括要执行的步骤，以实际加入服务、获取和设置设备、准备最终用户并部署应用。
 
-## <a name="in-this-section"></a>本节内容
-
-- [添加管理员联系人](add-admin-contacts.md)
-- [订购设备](devices.md)
+- [在 Microsoft 托管桌面管理门户中添加管理员联系人](add-admin-contacts.md)
+- [设置 Microsoft 托管桌面设备](set-up-devices.md)
+- [将应用程序部署到 Microsoft 托管桌面设备](deploy-apps.md)
