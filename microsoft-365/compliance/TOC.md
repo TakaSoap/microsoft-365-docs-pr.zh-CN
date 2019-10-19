@@ -17,7 +17,7 @@
 ## 客户密钥
 ### [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)
 ### [有关使用 Office 365 客户密钥执行服务加密的 FAQ](service-encryption-with-customer-key-faq.md)
-## [监督]()
+## [监督通信]()
 ### [了解监督策略](supervision-policies.md)
 ### [配置组织的监督策略](configure-supervision-policies.md)
 ## [信息屏障](information-barriers.md)
@@ -124,6 +124,7 @@
 ### [观看 Microsoft 数据治理团队的视频](https://go.microsoft.com/fwlink/?linkid=867039)
 ## 记录管理
 ### [记录管理](records-management.md)
+### [记录](records.md)
 ### 文件计划
 #### [文件计划管理器](file-plan-manager.md)
 #### [保留标签](labels.md)
@@ -349,7 +350,7 @@
 ## [管理邮箱审核](enable-mailbox-auditing.md)
 ## [审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)
 ## [导出、配置和查看审核日志记录](export-view-audit-log-records.md)
-## [使用审核日志对常见方案进行故障排除](auditing-troubleshooting-scenarios.md)
+## [使用审核日志调查常见问题](auditing-troubleshooting-scenarios.md)
 ## [在审核日志中使用共享审核](use-sharing-auditing.md)
 ## [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
 
