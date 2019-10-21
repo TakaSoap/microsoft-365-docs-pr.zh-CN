@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从 Office 365 组织发送的邮件。
-ms.openlocfilehash: 24196139d46df8de7813e827e57d04c4bf9146b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 677b46f970edab98e950c9db49f264afc8d5dd73
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075784"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590486"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 
@@ -209,6 +209,13 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 - 用户使用其电子邮件客户端分别添加安全发件人
     
 - 管理员创建一个适用于所有用户的 Exchange 邮件流规则（也称为传输规则），允许那些特定发件人的邮件。 
+
+## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>Office 365 如何使用经过身份验证的接收链 (ARC)
+<a name="ARC"> </a>
+
+Office 365 中的所有托管邮箱都将获得 ARC 的优势，实现改进的邮件可传递性和增强的反欺骗保护。 当电子邮件从始发服务器路由到收件人邮箱时，ARC 将保留来自所有参与中介或跃点的电子邮件身份验证结果。 在采用 ARC 之前，电子邮件路由中的中介执行的修改（如转发规则或自动签名）可能会在电子邮件到达收件人邮箱时导致 DMARC 故障。 有了 ARC 之后，身份验证结果的加密保留使得 Office 365 能够验证电子邮件发件人的真伪。 
+
+目前，当 Microsoft 是 ARC 保护方时，Office 365 会利用 ARC 来验证身份验证结果，但计划在将来添加对第三方 ARC 保护方的支持。 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>DMARC 实现疑难解答
 <a name="dmarctroubleshoot"> </a>

@@ -3,6 +3,7 @@ title: 在 Office 365 的自定义域中使用 DKIM 发送电子邮件
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
+ms.date: 09/27/2019, 10/8/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,24 +14,24 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: e672556448774798f5746207ff578ff18059573c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bebbc355e6d16d5571733295ce0e48b91332f863
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37073983"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37424228"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
  **摘要：** 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域向出站方向发送的邮件。
   
-除了使用 SPF 和 DMARC 之外，还应使用 DKIM，这样有助于防止欺骗程序假冒从你的域发送邮件。可以使用 DKIM 将数字签名添加到电子邮件的邮件头中。这听起来很复杂，其实不然。配置 DKIM 时，可以使用加密身份验证，授权你的域将域名与电子邮件相关联，或在电子邮件中签署域名。接收从你的域发送的电子邮件的电子邮件系统可以使用此数字签名来确定收到的传入电子邮件是否合法。
+除了使用 SPF 和 DMARC 之外，还应使用 DKIM 来帮助防止欺骗程序发送看上去发送自您的域的邮件。 可以使用 DKIM 将数字签名添加到出站电子邮件的邮件头中。 这听起来这很复杂，其实不然。 配置 DKIM 时，您将使用加密身份验证授权您的域关联到电子邮件或对电子邮件进行签名。 接收来自域的电子邮件的电子邮件系统可以使用此数字签名来帮助确定他们收到的传入电子邮件是否合法。
   
-一般来说，可以使用私钥在域的传出电子邮件中加密邮件头。向域 DNS 记录发布公钥，然后接收服务器可用来解码签名。接收服务器使用公钥来确认邮件是否确实是你发送的，而不是假冒你的域的欺骗程序发送的。
+基本上，您可以使用私钥来加密域的传出电子邮件中的邮件头。 向域 DNS 记录发布公钥，然后接收服务器可用来解码签名。 它们使用公钥来确认邮件确实是你发送的，而不是其他人*假冒*你的域发送的。
   
-Office 365 自动为初始域设置 DKIM。 初始域是指 Office 365 在你注册此服务时为你创建的域，例如 contoso.onmicrosoft.com。 无需执行任何操作，即可为初始域设置 DKIM。 有关域的详细信息，请参阅[关于域的常见问题](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
-  
-也可以选择不为自定义域配置 DKIM。如果你没有为自定义域设置 DKIM，Office 365 会创建私钥和公钥对，启用 DKIM 签名，然后为自定义域配置 Office 365 默认策略。虽然这足以覆盖大多数 Office 365 客户，但在以下情况下，仍应为自定义域手动配置 DKIM：
+Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味着无需执行任何操作，即可为任意初始域名（例如 litware.onmicrosoft.com）设置 DKIM。 有关域的详细信息，请参阅[关于域的常见问题](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)。
+
+你也可以选择对自己的自定义域不执行任何有关 DKIM 的操作。 如果你没有为自定义域设置 DKIM，Office 365 会创建私钥和公钥对，启用 DKIM 签名，然后为自定义域配置 Office 365 默认策略。 虽然这足以覆盖大多数 Office 365 客户，但在以下情况下，仍应为自定义域手动配置 DKIM：
   
 - 在 Office 365 中拥有多个自定义域
 
@@ -46,7 +47,9 @@ Office 365 自动为初始域设置 DKIM。 初始域是指 Office 365 在你注
   
 - [DKIM 如何能够比 SPF 更有效地在 Office 365 中防止恶意欺骗发生](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
-- [在 Office 365 中手动设置 DKIM 需要执行的操作](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
+- [手动将 1024 位密钥升级到 2048 位 DKIM 加密密钥](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+
+- [在 Office 365 中手动设置 DKIM 需要执行的步骤](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
 - [在 Office 365 中为多个自定义域配置 DKIM 的具体步骤](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
@@ -58,7 +61,10 @@ Office 365 自动为初始域设置 DKIM。 初始域是指 Office 365 在你注
 
 - [后续步骤：为 Office 365 设置 DKIM 之后](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
-## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>DKIM 如何能够比 SPF 更有效地防止 Office 365 中的恶意欺骗现象
+> [!NOTE]
+> Microsoft 365 支持 1024 或 2048 位 DKIM 的用户。 如果你使用的是 1024 位 DKIM，但想要配置 2048 位 DKIM，请继续关注本文中有关轮换 DKIM 签名配置的步骤。 到 2019 年底，Microsoft 将默认为所有客户提供 2048 位密钥支持。 
+
+## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>DKIM 如何比单独使用 SPF 更有效地防止 Office 365 中的恶意欺骗现象
 <a name="HowDKIMWorks"> </a>
 
 虽然 SPF 将信息添加到邮件信封中，但实际上是 DKIM 在邮件头中加密签名。当你转发邮件时，转发服务器可能会截除邮件信封部分。由于数字签名作为电子邮件头的一部分与电子邮件同时存在，因此即使当邮件进行了转发，DKIM 也仍在运行，如以下示例所示。
@@ -68,8 +74,36 @@ Office 365 自动为初始域设置 DKIM。 初始域是指 Office 365 在你注
 在此示例中，如果您只发布了域的一条 SPF TXT 记录，收件人的邮件服务器可能已将您的电子邮件标记为垃圾邮件，并生成一个误报结果。在这种情况下，添加 DKIM 可以减少误报垃圾邮件报告。由于 DKIM 依赖于公钥加密（而不仅仅对 IP 地址加密）进行身份验证，DKIM 被认为是比 SPF 更强大的身份验证形式。建议在部署中同时使用 SPF、DKIM 以及 DMARC。
   
 具体功能：DKIM 使用私钥将加密的签名插入邮件头。在邮件头中，将签名域或出站域作为 **d =** 字段中的值插入。然后，验证域或收件人的域使用 **d =** 字段从 DNS 中查找公钥，对邮件进行身份验证。如果邮件已经过验证，则 DKIM 检查通过。 
-  
-## <a name="what-you-need-to-do-to-manually-set-up-dkim-in-office-365"></a>在 Office 365 中手动设置 DKIM 需要执行的操作
+
+## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手动将 1024 位密钥升级到 2048 位 DKIM 加密密钥
+<a name="1024to2048DKIM"> </a>
+
+由于 DKIM 密钥同时支持 1024 和 2048 位，因此这些说明将告诉你如何将 1024 位密钥升级到 2048 位。 以下步骤针对的是两种用例，请选择最适合你的配置的步骤。
+
+1. 如果你**已经配置了 DKIM**，请按如下所示轮换位数：
+    1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/zh-CN/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 （cmdlet 来自 Exchange Online。）
+    1. 然后执行以下 cmdlet：
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
+
+1. 或者，对于**新实现的 DKIM**：
+    1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/zh-CN/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 （这是 Exchange Online cmdlet。）
+    1. 执行以下 cmdlet：
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True`
+
+请保持与 Office 365 的连接，以*验证*该配置。
+
+2. 执行 cmdlet：
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Get-DkimSigningConfig | fl`
+
+> [!TIP]
+>这一新的 2048 位密钥将在 RotateOnDate 生效，在过渡期间则使用 1024 位密钥发送电子邮件。 四天后，可以使用 2048 位秘钥再次进行测试（即一旦轮换对第二个选择器生效）。 
+
+如果你想要轮换到第二个选择器，可以 a) 让 Office 365 服务轮换选择器，并在未来 6 个月内升级到 2048 位，或 b) 4 天后升级到 2048 位，然后确认已经使用该位数，使用上面列出的相应 cmdlet 手动轮换第二个选择器秘钥。
+
+## <a name="steps-you-need-to-do-to-manually-set-up-dkim-in-office-365"></a>在 Office 365 中手动设置 DKIM 需要执行的步骤
 <a name="SetUpDKIMO365"> </a>
 
 要配置 DKIM，您需要完成以下步骤：
