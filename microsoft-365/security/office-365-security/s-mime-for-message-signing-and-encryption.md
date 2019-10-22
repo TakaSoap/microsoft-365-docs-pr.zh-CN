@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: ddb244e9e0cb189dbeb78af49e34ed90f64e77cc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b7ad73f1a7dd55abdc5a88a2f86344f5a2f0f5b
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075220"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608583"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 
@@ -47,6 +47,9 @@ S/MIME （安全/多用途 Internet 邮件扩展）是发送经过数字签名�
 
 - 将 Outlook 或 EAS 终结点设置为使用 S/MIME。
 
+> [!NOTE]
+> 无法在 Mac、iOS、Android 或其他非 Windows 设备上的 web 上的 Outlook 中安装 S/MIME 控件。 有关详细信息，请参阅[web 上的在 Outlook 中使用 S/MIME 加密邮件](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)。
+
 ## <a name="setup-smime-with-outlook-on-the-web"></a>设置 web 上的 Outlook 的 S/MIME
 
 使用 web 上的 Outlook 为 Exchange Online 设置 S/MIME 涉及以下关键步骤：
@@ -71,7 +74,7 @@ S/MIME （安全/多用途 Internet 邮件扩展）是发送经过数字签名�
 
 S/MIME 需要证书和发布基础结构，通常用于企业到企业和企业到消费者的情况。 用户控制 S/MIME 中的加密密钥，并且可以选择是否为他们发送的每封邮件使用密钥。 Outlook 等电子邮件程序搜索可信任根证书颁发机构位置，以执行数字签名和签名验证。 Office 365 邮件加密是一种基于策略的加密服务，可由管理员而不是单个用户配置，以加密发送给组织内部或外部的任何人的邮件。 它是基于 Azure 权限管理（RMS）构建的在线服务，不依赖公钥基础结构。 Office 365 邮件加密还提供了其他功能，例如，使用组织品牌自定义邮件的功能。 有关 Office 365 邮件加密的详细信息，请参阅[office 365 邮件加密](https://go.microsoft.com/fwlink/?LinkID=392525)。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 [Outlook 网页版](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
 

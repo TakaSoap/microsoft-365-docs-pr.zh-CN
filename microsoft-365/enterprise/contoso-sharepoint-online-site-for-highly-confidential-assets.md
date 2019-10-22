@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为高度管控的数据实现 SharePoint 网站，以便在研究团队之间实现协作。
-ms.openlocfilehash: bb3c178ee64d5925f82aef9887c06ceafe51f4ee
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403213"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617250"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 的高度机密数字资产的 SharePoint 网站
 
@@ -104,4 +104,4 @@ Contoso 安全员工在强制性课程中培训了**研究**Office 365 组的成
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 生产率库](https://aka.ms/productivitylibrary)（https://aka.ms/productivitylibrary)
+[Microsoft 365 工作效率库](https://aka.ms/productivitylibrary) https://aka.ms/productivitylibrary)
