@@ -3,7 +3,7 @@ title: Microsoft 365 企业版部署内容的更改
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 查看 Microsoft 365 部署指南中的新增内容和对内容的更改。
-ms.openlocfilehash: 67d0f51dd1f2602a21d199da1ed7ca6ba6e41c09
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: e872b0c289a002b4a0e0459a9ee19aa78b039b31
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453988"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617240"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Microsoft 365 企业版部署内容的更改
 
 ## <a name="october-2019"></a>2019 年 10 月
 
 ### <a name="new-content"></a>新内容 
+
+- [用于高度管控数据的 Teams 方案](secure-teams-highly-regulated-data-scenario.md)
+
+  [![用于高度管控数据的 Teams 方案](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
 
 - [“为远程工作者提供强大功能”海报](empower-people-to-work-remotely.md#poster)
 
@@ -34,7 +38,7 @@ ms.locfileid: "37453988"
 ### <a name="updates-and-enhancements"></a>更新和增强功能
 
 - 更新[Contoso 案例研究](contoso-case-study.md)
-- 更新 [Exchange Online](exchangeonline-workload.md) 工作负荷
+- 更新 [Microsoft Teams](teams-workload.md)、[Exchange Online](exchangeonline-workload.md) 和 [SharePoint Online](sharepoint-online-onedrive-workload.md) 工作负载
 - 更新[用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)场景
  
   [![用于高度管控数据的 SharePoint 网站场景](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)

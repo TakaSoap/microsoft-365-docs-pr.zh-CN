@@ -2,7 +2,7 @@
 title: Microsoft 365 企业版工作负载和方案
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 将组织用户载入到 Microsoft 365 企业版的工作效率工作负载。
-ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403241"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608593"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
 
@@ -38,7 +38,12 @@ ms.locfileid: "37403241"
 - 受地区法规约束。
 - 组织最有价值的数据，例如商业机密、财务或人力资源信息以及组织策略。
 
-要保护此数据免受内部和外部威胁的影响，请参阅[适用于高度管控数据的 Microsoft Teams 和 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)。 此方案将指导你配置 SharePoint 网站或 Microsoft Teams 团队，以便安全地存储最有价值的数据。
+要保护此数据免受内部和外部威胁，请参阅：
+
+- [用于高度管控数据的 Teams](secure-teams-highly-regulated-data-scenario.md)
+- [用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)。 
+
+这些方案将指导你配置 Microsoft Teams 团队或 SharePoint 网站，以便安全地存储最有价值的数据。
 
 以下是 Microsoft 365 企业版部署指南中的工作负载和方案：
 
