@@ -37,4 +37,4 @@
 ## [将设备重置为出厂设置](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # 安全事件管理
-## [响应遭到入侵的电子邮件帐户](../compliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json)
+## [响应遭到入侵的电子邮件帐户](https://docs.microsoft.com/microsoft-365/compliance/responding-to-a-compromised-email-account)
