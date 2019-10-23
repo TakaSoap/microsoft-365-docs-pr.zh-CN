@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并保护敏感数据。
-ms.openlocfilehash: 0b0c1ac1d23bc7b167a58ecf93019a77c51c4366
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
+ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37576010"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636744"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -72,7 +72,7 @@ ms.locfileid: "37576010"
     
 5. 对规则应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 单击“**保存**”。
+6. 单击“保存”****。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**||
 |:-----|:-----|:-----|
@@ -106,7 +106,7 @@ ms.locfileid: "37576010"
     
 5. 应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 单击“**保存**”。
+6. 单击“保存”****。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|
 |:-----|:-----|
@@ -134,7 +134,7 @@ ms.locfileid: "37576010"
     
 4. 在 "**反钓鱼网站**" 页上，选择 " **+ 创建**"。 向导将启动，引导您完成定义您的反网络钓鱼策略。
     
-5. 按照下表中的建议，指定策略的名称、说明和设置。 有关详细信息，请参阅[了解 ATP 反网络钓鱼策略选项](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。 
+5. 按照下表中的建议，指定策略的名称、说明和设置。 有关详细信息，请参阅[了解 ATP 反网络钓鱼策略选项](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options)。 
     
 6. 查看设置后，根据需要选择 "**创建此策略**" 或 "**保存**"。
     
@@ -207,7 +207,7 @@ ms.locfileid: "37576010"
     
 2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 " **office 365 专业增强版，office For iOS 和 Android**"。
     
-3. 单击“**保存**”。 
+3. 单击“保存”****。 
     
 创建一个面向域中所有收件人的新策略：
   
@@ -215,7 +215,7 @@ ms.locfileid: "37576010"
     
 2. 应用下表中列出的设置。
     
-3. 单击“**保存**”。 
+3. 单击“保存”****。 
 
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|

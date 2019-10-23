@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业版附带的安全功能。
-ms.openlocfilehash: 668b83e363a40e61391cbe56b0dbfab88cae7c43
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
+ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575690"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636764"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
 
@@ -48,7 +48,7 @@ Microsoft 365 商业版提供了简化的安全功能，以帮助保护电脑、
     
 - [设置 Windows 10 设备的设备保护设置](protection-settings-for-windows-10-pcs.md)。 
     
-    您可以启用[BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405)加密以在设备丢失或被盗时帮助保护数据，并启用[Windows 漏洞防护](https://go.microsoft.com/fwlink/p/?linkid=871404)以提供针对勒索软件的高级防护。 
+    您可以启用[BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405)加密以在设备丢失或被盗时帮助保护数据，并启用[Windows 漏洞防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection)以提供针对勒索软件的高级防护。 
     
 - [从设备中删除公司数据](remove-company-data.md)
     
@@ -109,7 +109,7 @@ Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的
 您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将被添加到 Microsoft 365 Business 管理中心。
   
     
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能在所有市场中是否可用？
   
