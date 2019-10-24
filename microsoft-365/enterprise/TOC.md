@@ -46,6 +46,7 @@
 ### [SharePoint 和 OneDrive for Business](sharepoint-online-onedrive-workload.md)
 ### [迁移](migration-microsoft-365-enterprise-workload.md)
 ### [为远程工作者提供强大功能](empower-people-to-work-remotely.md)
+### [针对高度管控数据的 Teams](secure-teams-highly-regulated-data-scenario.md)
 ### [用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [测试实验室指南](m365-enterprise-test-lab-guides.md)
 ### [基本配置]()
