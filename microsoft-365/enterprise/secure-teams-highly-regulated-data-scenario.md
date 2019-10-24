@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全团队来存储最有价值的敏感文件。
-ms.openlocfilehash: 5117d310ccd877a7377e6e538e7fba13daaad4ef
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617260"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628346"
 ---
 # <a name="teams-for-highly-regulated-data"></a>用于高度管控数据的 Teams
 
@@ -40,9 +40,9 @@ ms.locfileid: "37617260"
 
 ![安全团队方案配置](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
  
-## <a name="configuration"></a>配置
+## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>阶段 1：为高度管控数据配置团队
 
-安全团队的端到端配置包括以下步骤：
+端到端配置包括以下步骤：
 
 1. 配置标识和设备访问。
 2. 创建私人团队。
@@ -142,30 +142,20 @@ ms.locfileid: "37617260"
 
 
 >[!Note]
->如果为用户定义的权限配置敏感度标签或子标签或具有到期日期，则无法从 Teams 或 SharePoint Online 中打开文件。 必须使用 Office 应用。
+>如果为用户定义的权限配置敏感度标签或子标签或具有到期日期，则无法从 Teams 或 SharePoint 中打开文件。 必须使用 Office 应用。
 >
 
-## <a name="using-the-team-and-a-sensitivity-label"></a>使用团队和敏感度标签
-
-团队组成员可以访问团队及其所有资源，包括聊天、会议和其他应用。 使用频道的“**文件**”部分中的文件时，团队组成员必须将敏感度标签或子标签分配给为安全团队创建的文件。 下面是一个示例。
-
-![将标签应用于安全团队中的文件的示例](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
- 
-将标签应用于受保护的文件时。 团队组成员可以在 Teams 中打开它并进行实时协作。 它已加密，并且包含为团队组成员提供的共同创作权限集。 如果文件离开网站并转发给恶意用户，则他们必须提供作为团队组成员的用户帐户的凭据，这样才能打开文件并查看其内容。 
-
-通过查看 SharePoint Online 中的文件夹并使用“**添加列**”的“**显示/隐藏列**”选项添加“**敏感度**”列，可以查看为哪些文件分配了标签。
-
-## <a name="custom-permissions"></a>自定义权限
+### <a name="custom-permissions"></a>自定义权限
 
 你还可以为团队网站配置自定义 SharePoint 网站权限，并根据需要配置其相应的敏感度标签。 下面是两个示例。
 
-### <a name="example-1-delegating-sharepoint-site-administration"></a>示例 1：委派 SharePoint 网站管理
+#### <a name="example-1-delegating-sharepoint-site-administration"></a>示例 1：委派 SharePoint 网站管理
 
 如果团队所有者没有 SharePoint 管理经验，或者希望委派团队网站的管理，则他们可以将 SharePoint 管理员的用户帐户添加到团队所有者列表中。 但是，SharePoint 管理员可以完全访问团队及其所有资源，并且可以打开应用了敏感度标签的文件。 
 
 为了防止过度授予特权，请在网站的高级权限设置中将 SharePoint 管理员的用户帐户添加到团队网站所有者 SharePoint 组中。 SharePoint 管理员可以管理网站，但是将无法访问团队及其任何资源，也无法打开分配了敏感度标签的文件。
 
-### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>示例 2：允许仅查看带标签的文件
+#### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>示例 2：允许仅查看带标签的文件
 
 如果某些员工只需要查看团队网站中带标签的文件内容，可将其个人用户帐户添加到：
 
@@ -178,8 +168,48 @@ ms.locfileid: "37617260"
  
 网站访问者将能够直接访问团队网站，并查看已应用子标签的文件内容。 但是，由于它们不是团队组的成员，因此不能访问团队或其任何资源。
 
+
+## <a name="phase-2-drive-user-adoption-for-team-members"></a>阶段 2：驱动团队成员的用户采用
+
+随着团队的建立，是时候驱动该团队的采用以及提升它对团队成员的额外安全性。
+
+### <a name="step-1-train-your-users"></a>步骤 1：培训用户
+
+团队组成员可以访问团队及其所有资源，包括聊天、会议和其他应用。 使用频道的“**文件**”部分中的文件时，团队组成员必须将敏感度标签或子标签分配给为安全团队创建的文件。 下面是一个示例。
+
+![将标签应用于安全团队中的文件的示例](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+ 
+将标签应用于受保护的文件时。 团队组成员可以在 Teams 中打开它并进行实时协作。 它已加密，并且包含为团队组成员提供的共同创作权限集。 如果文件离开网站并转发给恶意用户，则他们必须提供作为团队组成员的用户帐户的凭据，这样才能打开文件并查看其内容。 
+
+培训团队成员：
+
+- 了解使用新团队访问聊天、会议、文件和团队网站的其他资源的重要性以及高度管控数据泄露的后果，例如法律后果、监管罚款、勒索软件或失去竞争优势。
+- 如何访问团队。
+- 如何在网站上创建新文件和上传本地存储的新文件。
+- DLP 策略如何阻止它们在外部共享文件。
+- 如何使用团队的自定义标签或子标签来标记文件。
+- 标签或子标签如何保护文件（即使文件泄露到网站外部）。
+
+此培训应包括实践练习，让团队成员可以体验这些功能及其结果。
+
+### <a name="step-2-conduct-periodic-reviews-of-usage-and-address-team-member-feedback"></a>步骤 2：定期审查使用情况并处理团队成员的反馈意见
+
+在培训后的几周内：
+
+- 快速处理团队成员的反馈意见并微调相关策略和配置。
+- 分析团队的使用情况，并将其与预期使用情况进行比较。
+- 验证是否使用自定义敏感度标签或子标签正确标记了高度管控的文件。
+
+  通过查看 SharePoint 中的文件夹并使用“**添加列**”的“**显示/隐藏列**”选项添加“**敏感度**”列，可以查看为哪些文件分配了标签。
+
+根据需要重新培训用户。
+
 ## <a name="see-also"></a>另请参阅
 
 [用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)
+
+[Microsoft 365 企业版工作负载和方案](deploy-workloads.md)
+
+[Microsoft 365 工作效率库](https://aka.ms/productivitylibrary) https://aka.ms/productivitylibrary)
 
 [部署指南](deploy-microsoft-365-enterprise.md)

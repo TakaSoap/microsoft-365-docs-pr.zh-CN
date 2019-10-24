@@ -3,7 +3,7 @@ title: 用于高度管控数据的 SharePoint 网站
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全的 SharePoint 团队网站来存储最有价值和敏感的文件。
-ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437822"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628336"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>用于高度管控数据的 SharePoint 网站
 
@@ -30,7 +30,7 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 - 组织最有价值的数据，例如商业机密、财务或人力资源信息以及组织策略。
 
 >[!Note]
-> 一个使用 Microsoft Teams 的类似方案正在开发中。
+> [此处](secure-teams-highly-regulated-data-scenario.md)是使用 Microsoft Teams 的一个类似方案。
 >
 
 满足此业务需求的 Microsoft 365 企业版基于云的方案要求用户执行以下操作：
@@ -50,14 +50,14 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 |:-------|:-----|
 | **要求** | **Microsoft 365 企业版 功能** |
 | 存储文件 | SharePoint 团队网站 |
-| 锁定网站 | Azure Active Directory (Azure AD) 组和 SharePoint Online 团队网站权限 |
+| 锁定网站 | Office 365 组和 SharePoint 团队网站权限 |
 | 标记网站中的文件 | Office 365 保留标签 |
 | 阻止向组织外发送文件的用户 | Office 365 中的数据丢失防护 (DLP) 策略 |
-| 加密网站中的所有文件 | Office 365 灵敏度子标签 |
-| 添加网站文件的权限 | Office 365 灵敏度子标签 |
+| 加密网站中的所有文件 | Office 365 敏感度标签或子标签 |
+| 添加网站文件的权限 | Office 365 敏感度标签或子标签 |
 |||
 
-以下是用于安全 SharePoint 网站的配置。
+以下是安全的 SharePoint 网站的示例配置。
 
 ![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
@@ -99,12 +99,11 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 ### <a name="step-2-your-office-365-sensitivity-sublabel"></a>步骤 2：Office 365 灵敏度子标签
 
-若要对最敏感的文件提供加密和一组权限，用户必须应用 Office 365 敏感度子标签。
+若要对最敏感的文件提供加密和一组权限，用户必须应用 Office 365 敏感度标签或子标签。 子标签存在于现有标签下。 
 
-子标签存在于现有标签下。 例如，可在“高度管控”标签下创建“研发部”子标签。 对于用于高度管控数据的 SharePoint 网站，需要配置权限，以便只有网站成员可以打开和更改已附加子标签的文件。
+如果需要将少量标签应用于全局和各个私人团队，请使用敏感度标签。 如果你拥有大量标签，或者希望在高度管控标签下整理安全网站的标签，请使用敏感度子标签。 
 
-已应用子标签的设置会随文件一起移动。 即使文件泄露到网站外，也只有拥有权限并经过身份验证的用户帐户才可以将其打开。
-
+已应用标签或子标签的设置会随文件一起移动。 即使文件泄露到网站外，也只有拥有权限并经过身份验证的用户帐户才可以将其打开。
 
 ### <a name="design-results"></a>设计结果
 
@@ -125,10 +124,10 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 在 SharePoint 网站中配置以下权限设置。
 
-1.  在工具栏中，依次单击设置图标和“网站权限”****。
-2.  在“网站权限”窗格中，单击“高级权限设置”********。
-3.  在浏览器的新“权限”标签页中，单击“访问请求设置”********。
-4.  在“**访问请求设置**”对话框中，取消选中“**允许成员共享网站以及个别文件和文件夹**”和“**允许访问请求**”（以便取消选中全部三个复选框），然后单击“**确定**”。
+1. 在工具栏中，依次单击设置图标和“**网站权限**”。
+2. 在“**网站权限**”窗格的“**共享设置**”下方，单击“**更改共享设置**”。
+3. 在“**共享权限**”下方，选择“**仅网站所有者可以共享文件、文件夹和网站**”。
+4. 关闭“**允许访问请求**”，然后单击“**保存**”。
 
 使用这些设置可以禁止网站用户组成员与其他成员共享网站以及非成员访问网站。
 
@@ -145,13 +144,13 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 与可由任何人应用于任何文件的高度管控数据敏感度标签不同，安全网站需要其自己的子标签，使分配了子标签的文件：
 
 - 启用加密，并且加密信息将与文件一起移动。
--   包含自定义权限，以便只有网站用户组的成员能打开文件。
+- 包含自定义权限，以便只有网站用户组的成员能打开文件。
 
-若要以这种方式为网站中存储的文件实现更高的安全级别，必须配置一个新的敏感度标签，作为高度管控文件的常规标签的子标签。 只有网站的用户组成员才能在高度管控标签的子标签列表中看到该子标签。
+要以这种方式为网站中存储的文件实现更高的安全级别，必须为高度管控文件配置新的敏感度标签或常规标签的子标签。 只有网站的用户组成员才能在高度管控标签的子标签列表中看到该子标签。
 
-请按照[此处](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)的说明，使用以下设置来配置用于高度管控文件的标签的子标签：
+请按照[此处](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)的说明，使用以下设置来配置用于高度管控文件的标签或标签的子标签：
 
-- 子标签的名称包含网站的名称，以便在将子标签分配给文件时实现轻松关联。
+- 标签或子标签的名称包含网站的名称，以便在将标签或子标签分配给文件时实现轻松关联。
 - 启用加密。
 - 网站用户组具有共同创作权限。
 
@@ -162,14 +161,13 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 - SharePoint 网站上具有更严格的权限设置
 - 将 Office 365 保留标签分配给 SharePoint 网站的“文档”部分
 - Office 365 保留标签的 DLP 策略
-- 可由用户应用于网站中存储的最敏感文件的 Office 365 敏感度子标签，用于对文件加密并仅允许团队网站用户组中的成员进行“共同创作”访问 
+- 可由用户应用于网站中存储的最敏感文件的 Office 365 敏感度标签或子标签，用于对文件加密并仅允许团队网站用户组中的成员进行“共同创作”访问 
 
-下面是配置结果。
+下面是使用高管控标签的子标签生成的配置。
 
 ![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
-
-下面是对网站中存储的文件应用了敏感度子标签的用户示例。
+下面是对网站中存储的文件应用了子标签的用户示例。
 
 ![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
@@ -182,14 +180,14 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 ### <a name="step-1-train-your-users"></a>步骤 1：培训用户
 
-完成配置后，对作为网站访问组成员的一组用户培训以下内容：
+完成配置后，对作为网站成员的一组用户培训以下内容：
 
 - 有关使用新网站保护重要文件的重要性以及高度管控数据泄露的后果，例如法律后果、监管罚款、勒索软件或失去竞争优势。
 - 如何访问网站及其文件。
 - 如何在网站上创建新文件和上传本地存储的新文件。
 - DLP 策略如何阻止它们在外部共享文件。
-- 如何使用网站的子标签来标记最敏感的文件。
-- 子标签如何保护文件（即使文件泄露到网站外部）。
+- 如何使用网站的标签或子标签来标记最敏感的文件。
+- 标签或子标签如何保护文件（即使文件泄露到网站外部）。
 
 此培训应包括实践练习，让用户可以体验这些操作及其结果。
 
@@ -198,21 +196,27 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 在培训后的几周内，SharePoint 网站的 SharePoint 管理员可以执行以下操作：
 
 - 分析网站的使用情况，并将其与预期使用情况进行比较。
-- 验证是否使用敏感度子标签正确标记了高度敏感的文件。
+- 验证是否使用敏感度标签或子标签正确标记了高度敏感的文件。
+
+  通过查看 SharePoint 中的文件夹并使用“**添加列**”的“**显示/隐藏列**”选项添加“**敏感度**”列，可以查看为哪些文件分配了标签。
+
 
 根据需要重新培训用户。
 
 ### <a name="user-adoption-results"></a>用户采用结果
 
-高度管控的文件专门存储在用于高度管控数据的 SharePoint 网站上，并且最敏感的文件应用了网站的敏感度子标签。
+高度管控的文件专门存储在用于高度管控数据的 SharePoint 网站上，并且最敏感的文件应用了网站的敏感度标签或子标签。
 
 ## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企业版
 
-Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 Contoso 如何设计、配置并推动其在巴黎、莫斯科、纽约、北京和班加罗尔的研究团队采用[安全的 SharePoint 网站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。 
+Contoso Corporation 是一家虚构但具代表性的全球大型制企业。 了解 Contoso 如何设计、配置并推动其在巴黎、莫斯科、纽约、北京和班加罗尔的研究团队采用[安全的 SharePoint 网站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。 
 
 ## <a name="see-also"></a>另请参阅
 
+[用于高度管控数据的 Teams](secure-teams-highly-regulated-data-scenario.md)
+
+[Microsoft 365 企业版工作负载和方案](deploy-workloads.md)
+
+[Microsoft 365 工作效率库](https://aka.ms/productivitylibrary) https://aka.ms/productivitylibrary)
+
 [部署指南](deploy-microsoft-365-enterprise.md)
-
-[测试实验室指南](m365-enterprise-test-lab-guides.md)
-
