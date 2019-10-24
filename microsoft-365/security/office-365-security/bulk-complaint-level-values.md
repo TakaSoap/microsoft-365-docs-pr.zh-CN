@@ -14,12 +14,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 中的批量投诉级别（BCL）值。
-ms.openlocfilehash: 6f9314a5b96dbd641e461dfb564ed8605372a949
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: 822c84ea9b36cfdae1d8faccf7e0c7d9f747c917
+ms.sourcegitcommit: 7830969c8fa41724359657910716f3ce312cc2cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451094"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37650114"
 ---
 # <a name="bulk-complaint-level-values"></a>批量投诉级别值
 
@@ -39,4 +39,4 @@ ms.locfileid: "37451094"
 |0|邮件不是由批量发件人发送。|
 |1, 2, 3|邮件来自于产生少量抱怨的批量发件人。|
 |4, 5, 6, 7|邮件来自于产生各种各样的抱怨的批量发件人。|
-|8, 9|邮件来自于产生大量抱怨的批量发件人。|
+|8, 9|邮件来自批量发件人，生成大量投诉。|

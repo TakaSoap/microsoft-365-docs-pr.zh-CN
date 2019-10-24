@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: 18198007bf61d448581335594016433668edb47d
-ms.sourcegitcommit: 23173f7d0ca5079662ef4060371d8ee11bac228e
+ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37611413"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646377"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商业版常见问题
 
@@ -164,7 +164,7 @@ Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最�
 现在销售 Office 365 的合作伙伴可以使用相同的顾问式销售方法销售 Microsoft 365 商业版。 此外，我们将引入更多资源和培训，让你的销售团队了解客户的现有桌面环境、Active Directory 依赖性、移动性和安全性需求，从而采用与客户相关的方式有效传递 Microsoft 365 商业版的全部价值。 请在 Office 合作伙伴门户 [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business) 中查找这些资源。 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Microsoft 365 商业版如何帮助合作伙伴提高盈利能力？ 
-Microsoft 365 商业版将通过提高运营效率来帮助合作伙伴降低成本，并通过出售额外的服务来增加收入。 Forrester Research，Microsoft 365 商业版总体经济影响 (TEI) 研究，2017 年 6 月 (https://partners.office.com/TEIBusiness)，表明 Microsoft 365 商业版将对合作伙伴盈利能力产生积极影响。 
+Microsoft 365 商业版将通过提高运营效率来帮助合作伙伴降低成本，并通过出售额外的服务来增加收入。 Forrester Research，Microsoft 365 商业版总体经济影响 (TEI) 研究，2017 年 6 月 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI)，表明 Microsoft 365 商业版将对合作伙伴盈利能力产生积极影响。 
 
 在 TEI 研究中，合作伙伴报告说，对于 Microsoft 365 商业版，他们预计： 
 
