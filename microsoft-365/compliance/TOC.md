@@ -11,13 +11,13 @@
 # 管理内部风险
 ## [保护用户和设备的访问权限](protect-access-to-data-and-services.md)
 ## [客户密码箱](customer-lockbox-requests.md)
-## [特权访问管理]()
+## 特权访问管理
 ### [了解特权访问管理](privileged-access-management-overview.md)
 ### [配置特权访问管理](privileged-access-management-configuration.md)
 ## 客户密钥
 ### [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)
 ### [有关使用 Office 365 客户密钥执行服务加密的 FAQ](service-encryption-with-customer-key-faq.md)
-## [监督通信]()
+## 监督通信
 ### [了解监督策略](supervision-policies.md)
 ### [配置组织的监督策略](configure-supervision-policies.md)
 ## [信息屏障](information-barriers.md)
@@ -387,7 +387,7 @@
 ## [GDPR](gdpr.md)
 ### [适用于 GDPR 的建议行动计划](gdpr-action-plan.md)
 
-### [当责就绪清单]()
+### 当责就绪清单
 #### [当责就绪清单](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
 #### [Dynamics 365](gdpr-arc-dynamics365.md)
@@ -396,7 +396,7 @@
 
 ### [信息保护](gdpr-information-protection.md)
 
-### [数据主体请求]()
+### 数据主体请求
 #### [数据主体请求](gdpr-data-subject-requests.md)
 #### [Azure](gdpr-dsr-azure.md)
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)
@@ -406,14 +406,14 @@
 #### [Office 365](gdpr-dsr-office365.md)
 #### [Visual Studio 系列产品](gdpr-dsr-visual-studio-family.md)
 
-### [泄露通知]()
+### 泄露通知
 #### [泄露通知](gdpr-breach-notification.md)
 #### [Azure](gdpr-breach-azure.md)
 #### [Dynamics 365](gdpr-breach-dynamics365.md)
 #### [Microsoft 支持和专业服务](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
-### [数据保护影响评估]()
+### 数据保护影响评估
 #### [数据保护影响评估](gdpr-data-protection-impact-assessments.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics 365](gdpr-dpia-dynamics.md)
@@ -574,7 +574,7 @@
 #### [欧盟美国隐私盾](offering-eu-us-privacy-shield.md)
 #### [GDPR（欧盟）](offering-gdpr-eu.md)
 #### [G-Cloud（英国）](offering-g-cloud-uk.md)
-#### [IDW PS 951（德国）]()
+#### IDW PS 951（德国）
 #### [IT Grundschutz Workbook（德国）](offering-it-grundschutz-workbook-germany.md)
 #### [LOPD（西班牙）](offering-lopd-spain.md)
 #### [PASF（英国）](offering-pasf-uk.md)
