@@ -15,6 +15,7 @@
 ### [支持](service-description/support.md)
 ### [操作和监视](service-description/operations-and-monitoring.md)
 ### [应用程序要求](service-description/mmd-app-requirements.md)
+### [服务更改和通信](service-description/servicechanges.md)
 ### [自定义服务](service-description/customizing.md)
 ## [做好注册 Microsoft 托管桌面的准备](get-ready/index.md)
 ### [Microsoft 托管桌面的系统必备](get-ready/prerequisites.md)
