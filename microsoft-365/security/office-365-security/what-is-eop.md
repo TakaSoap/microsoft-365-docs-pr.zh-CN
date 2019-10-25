@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: 本简介文档将帮助您了解 Exchange Online Protection （EOP）和一些重要的术语。 这适用于保护 Exchange Online 云托管邮箱的 Office 365 客户和保护本地邮箱（如 Exchange Server 2016）的 EOP 独立客户。
-ms.openlocfilehash: 0ca3e8215eb57a08362dd836b4519aedd0b6ab84
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2e4de0b62b24498b1153c713523418193e8694b4
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075551"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662518"
 ---
-## <a name="what-is-exchange-online-protection-eop"></a>什么是 Exchange Online Protection （EOP）
+# <a name="what-is-exchange-online-protection-eop"></a>什么是 Exchange Online Protection （EOP）
 
 Exchange Online Protection （EOP）是一种基于云的电子邮件筛选服务，可帮助组织抵御垃圾邮件和恶意软件。 如果您的邮箱在 Office 365 中，它们将自动受 EOP 保护，因为它是服务的一部分。 这包括在 Office 365 和内部部署中具有邮箱的组织，这些邮箱通常称为混合方案。 此外，EOP 还可用于在云中没有邮箱但要保护其内部部署邮箱的客户。
 

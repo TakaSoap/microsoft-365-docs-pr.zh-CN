@@ -1,5 +1,5 @@
 ---
-title: '信息图: 帮助保护你的市场活动'
+title: 信息图：帮助保护你的市场活动
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,15 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以采取什么操作来帮助保护您的市场活动免受数字攻击。
-ms.openlocfilehash: 8e1c958b7434019067c5f85ea534811611a0d037
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 625b72b5bb677769b6ef5cdd3aa2fa10819c5ba2
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772499"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662528"
 ---
-## <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>信息图: 帮助保护你自己和你的市场活动免受数字威胁 
-以下适用于 PowerPoint 和 PDF 的链接可以下载和打印为 tabloid 格式 (也称为分类账、11 x 17 或 A3)。
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>信息图：帮助保护你自己和你的市场活动免受数字威胁 
+
+以下适用于 PowerPoint 和 PDF 的链接可以下载和打印为 tabloid 格式（也称为分类账、11 x 17 或 A3）。
 
 [![帮助保护您的市场活动信息的图像安全图](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 

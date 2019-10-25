@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: e6f99d6d2f2d7951303591a806a3618615a25310
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 0c717271da17ff4bf28d8d3546df3a9da427dba5
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575910"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697757"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
@@ -54,7 +54,43 @@ Microsoft 365 商业版可帮助保护其中每个实例中的数据。 下图�
 
 ![显示 M365B 如何保护您的企业的图。](media/m365businessvalueadd.png)
 
-若要查看安全功能的完整列表，请参阅[Microsoft 365 商业安全功能](security-features.md)。 [设置 Microsoft 365 商业](set-up.md)版后，请参阅[设置高级安全策略](set-up-advanced-security.md)以开始使用不作为安装程序的一部分的安全功能。 阅读有关如何针对网络罪犯和黑客设置保护的最佳概述，请参阅[保护 Office 365 和 Microsoft 365 商业版计划](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的十大方法。
+## <a name="how-your-data-and-devices-are-protected"></a>数据和设备的保护方式
+
+Microsoft 365 Business 通过以下方式帮助**defended 抵御威胁**：
+
+实时扫描电子邮件和文档中的任何链接，以阻止不安全的网站（ATP 安全链接）。
+
+- 在沙盒环境中对电子邮件附件执行高级分析，以检测新开发的恶意软件（ATP 安全附件）。 
+
+- 启用使用机器学习模型和模拟检测的反网络钓鱼策略，以提供针对高级攻击的保护（ATP 反网络钓鱼智能）。 
+
+- 设置禁用来自不受信任位置的访问权限的高级策略，或绕过来自受信任位置（如 office 网络（Azure MFA 包括受信任的 Ip 和条件访问）的多重身份验证。 
+
+- 在所有公司的 Windows 10 设备上强制实施恶意软件保护，并通过勒索软件所做的更改保护关键系统文件夹中的文件（Windows Defender）
+
+您的**业务数据受以下保护**：
+
+- 使用自动检测来帮助防止敏感信息（如社会保险号码或信用卡泄露到公司外部）（数据丢失防护）。 
+
+- 对敏感电子邮件进行加密，以便您可以与公司外部的客户或其他人进行安全通信，以确保只有预期的收件人才能阅读邮件（Office 365 邮件加密）。
+
+- 通过应用限制（如不**复制**和不**转发**电子邮件和文档（Azure 信息保护、计划1）来控制谁有权访问公司信息。
+
+- 启用无限制云存档，以便您可以保留所有企业的电子邮件，包括以前员工的邮箱（Exchange Online 存档）。
+
+通过以下方式**保护设备**：
+
+- 控制哪些设备和用户可以访问您的 Office 365 数据;使用选项阻止用户从家庭计算机、未批准的应用程序或工作时间之外（有条件访问）登录。
+
+- 应用安全策略以保护 iOS 和 Android 设备上的业务数据。  例如，您可以要求用户提供 PIN 或指纹以访问业务数据，并对移动设备上的数据（Office 相关应用程序保护）进行加密。
+
+- 在批准的 Office 移动应用程序中保留业务文档、电子邮件和其他数据，并防止员工将这些数据保存到未经授权的应用程序和位置（Office 移动应用的应用程序保护）。
+
+- 远程擦除丢失或被盗设备中的业务数据，而不会影响个人信息（Intune 选择性擦除）。
+
+- 使用简化的控件来管理公司中所有 Windows 10 电脑的策略，强制实施 BitLocker 加密并自动安装关键 Windows 更新（强制实施 Windows 更新策略）。
+
+若要查看安全功能的完整列表，请参阅[Microsoft 365 商业安全功能](security-features.md)。 [设置 Microsoft 365 商业](set-up.md)版后，请参阅[设置高级安全策略](set-up-advanced-security.md)以开始使用不作为引导安装程序的一部分的安全功能。 阅读有关如何针对网络罪犯和黑客设置保护的最佳概述，请参阅[保护 Office 365 和 Microsoft 365 商业版计划](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的十大方法。
 
 ## <a name="get-microsoft-365-business"></a>获取 Microsoft 365 商业版
 
