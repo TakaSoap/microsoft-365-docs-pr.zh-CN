@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c32257fb9066f170da1f1a3cfe4b865e383cfcb
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982763"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646397"
 ---
 # <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![阶段 4：Office 365 专业增强版](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 ** 这适用于 Microsoft 365 企业版和 Microsoft 365 教育版的 E3 和 E5 版本
 
-Microsoft 365 企业版包括 Office 365 专业增强版，即订阅版本的 Office。与 Office 2016 一样，Office 365 专业增强版包含所有 Office 应用程序，而且都将直接安装到客户端设备上。与 Office 2016 不同的是，Office 365 专业增强版会定期更新以推出新功能，并且采用基于用户的许可模型，允许用户在最多 5 台设备上安装 Office。有关详细信息，请参阅[有关企业版中的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅版本。 与 Office 2019 一样，Office 365 专业增强版包含所有 Office 应用程序，这些应用程序直接安装在客户端设备上。 与 Office 2019 不同的是，Office 365 专业增强版会定期更新新功能，并拥有基于用户的许可模型，允许用户在多个设备上安装 Office。 有关详细信息，请参阅[关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
 在这个阶段，会将 Office 365 专业增强版作为 Microsoft 365 企业版的一部分部署到客户端设备。除了此项指导，建议使用 [Microsoft Fastrack](https://fasttrack.microsoft.com/office)，以帮助进行部署。 
 
@@ -44,7 +44,7 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即订阅版本的 Of
 
 评估环境后，按照[规划 Office 365 专业增强版部署](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus)中的指导来创建部署计划。此计划可包括以下决策： 
 
-- 如何部署 Office，包括要使用哪种工具（如 System Center Configuration Manager 或 Office 部署工具 [ODT]），以及从何处安装 Office
+- 如何部署 Office，包括要使用哪种工具（如 System Center Configuration Manager 或 Office 部署工具），以及从何处安装 Office
 - 如何管理 Office 更新
 - 使用哪个更新通道（Office 更新通道将控制用户接收其 Office 应用程序功能更新的频率）
 - 要使用的 Office 安装程序包和部署组，包括应对什么样的用户安装哪些 Office 应用程序和语言
@@ -53,14 +53,12 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即订阅版本的 Of
 
 ## <a name="step-3-deploy"></a>步骤 3：部署
 
-基于步骤 2 中的部署计划，选择所需的部署方式：
+基于部署计划，选择所需的部署方式：
 
 - **[使用 System Center Configuration Manager 部署 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager)：** 使用配置管理器管理部署，并从网络上的分发点下载并部署 Office
 
 - **[从云中使用 ODT 部署 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud)：** 使用 ODT 管理部署，并在客户端设备上直接从 Office CDN 安装 Office
  
-- **[从本地源使用 ODT 部署 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source)：** 使用 ODT 管理部署，并从网络上的本地源下载和部署 Office 
-
 - **[从 Office 门户自助安装 Office 365 专业增强版](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658)：** 从 Office 门户管理部署，并让用户在其客户端设备上直接从门户安装 Office
 
 许多组织将针对不同用户使用这些选项组合。例如，组织可能使用配置管理器对大部分用户部署 Office，但对不经常连接到内部网络的一小组工作人员启用自助安装。 
@@ -75,7 +73,7 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即订阅版本的 Of
 
 了解 Contoso Corporation（虚构但具代表性的跨国企业）是如何[部署 Office 365 专业增强版](contoso-o365pp.md)的。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 
