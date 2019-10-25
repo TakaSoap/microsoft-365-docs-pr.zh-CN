@@ -16,14 +16,14 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 用于帮助阻止垃圾邮件误报的独立 EOP 管理员文档
-ms.openlocfilehash: 5094caf8a5ceded71d68e9bddc5206f6ceb0e493
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ddd26c3ce8c2670118d85fafa2fc912f3d20dddf
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075065"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662538"
 ---
-## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>为 Office 365 反垃圾邮件筛选器自定义这些设置
+# <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>为 Office 365 反垃圾邮件筛选器自定义这些设置
 
 管理员可使用多个 Office 365 垃圾邮件筛选器设置，以避免将垃圾邮件发送到用户收件箱。如果你采用本文列出的设置，Office 365 垃圾邮件筛选器将能更好地阻止垃圾邮件，并避免出现漏报邮件。在这种情况下，漏报是指垃圾邮件发送到用户收件箱。
   
