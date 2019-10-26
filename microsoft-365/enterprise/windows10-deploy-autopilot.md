@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 2ce02826ae2b0661d3b893c1074e692ce93cf9f3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 131c48e89a5bb82381347e766b3f00451a852410
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370279"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733438"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>步骤3：使用 Windows Autopilot 为新设备部署 Windows 10 企业版
 
@@ -26,6 +26,18 @@ ms.locfileid: "37370279"
 如果你有新的 Windows 10 电脑，则可以使用 Windows Autopilot 为你的组织自定义现成体验（OOBE），并部署具有已配置的应用程序和设置的新系统。 没有要部署的映像，没有要注入的驱动程序，没有要管理的基础结构。 用户可以独立完成部署过程，无需咨询其 IT 管理员。
 
 您可以设置和预配置新的 Windows 10 设备，让它们准备好使用 Windows Autopilot 进行高效使用。 若要了解有关 Windows Autopilot 的详细信息（包括福利和 Windows Autopilot 方案），请参阅[Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)。 准备就绪后，请按照以下部件开始设置新设备。
+
+## <a name="the-windows-autopilot-deployment-process-poster"></a>Windows Autopilot 部署过程海报
+
+Windows Autopilot 海报是纵向模式（11x17）中的两页。 单击下面的图像以在浏览器中查看 PDF。 
+
+[![使用 Autopilot 海报部署 Windows 10](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+
+<!--
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
+
+-->
 
 ## <a name="part-1-start-windows-autopilot-deployment"></a>第1部分：启动 Windows Autopilot 部署
 请参阅[Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)to：

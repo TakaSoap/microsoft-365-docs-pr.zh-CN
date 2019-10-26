@@ -10,12 +10,12 @@ ms.author: TrudyHa
 ms.date: 5/29/2019
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: e1c16deaeb61a497a4ec4fc1dc2cd9af672d55c7
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: a094057ba635a6ca848b822fc2888b4bc717573a
+ms.sourcegitcommit: a372c634c3befcb488a4cc85a593e17c53fe36e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646358"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37732866"
 ---
 # <a name="manage-commercial-purchases-in-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理商业购买
 
@@ -30,7 +30,6 @@ ms.locfileid: "37646358"
 | [了解发票](/microsoft-365/commerce/billing-and-payments/understand-your-invoice) | 有关通过 Microsoft 365 管理中心购买的商品的发票信息。 |
 | [管理付款方式](https://docs.microsoft.com/microsoft-store/payment-methods) | 添加、编辑或删除支付方式。 |
 | [管理计费配置文件](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) | 自定义您在发票上的不同项目的记帐方式。  |
-| [订单历史记录](https://docs.microsoft.com/microsoft-store/manage-orders-microsoft-store-for-business) | 跟踪你的商业订单。 |
 | [管理帐单帐户信息](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings) | 通过付费帐户，您可以管理组织信息、购买与 Microsoft 签订的协议以及管理员批准。 |
 | [将租户与帐单帐户关联](https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business) | 添加到您的购买帐户的租户或租户控制如何将产品分配给组织中的人员。 |
 | [管理合作伙伴关系](https://docs.microsoft.com/microsoft-store/work-with-partner-microsoft-store-business) | 与 Microsoft 认证的解决方案提供商合作，为您的组织或学校购买和管理产品和服务。 |
