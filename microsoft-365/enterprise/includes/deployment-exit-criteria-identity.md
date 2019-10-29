@@ -68,7 +68,7 @@
 <a name="crit-identity-custom-sign-in"></a>
 ### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>可选：个性化组织的 Office 365 登录屏幕
 
-你已使用[将公司品牌添加到登录和访问面板页面](http://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。
+你已使用[将公司品牌添加到登录和访问面板页面](https://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。
 
 如果忽略此选项，你的用户将看到通用的 Office 365 登录屏幕，可能会让他们疑惑是否登录到了组织的网站。
 

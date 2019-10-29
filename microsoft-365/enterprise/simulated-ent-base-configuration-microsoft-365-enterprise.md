@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用本测试实验室指南，创建针对 Microsoft 365 企业版的模拟企业测试环境。
-ms.openlocfilehash: b0bb241cb475b8ab3bdb0d7ebbbda6ab0936b29d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7a23f0eabcd9b4b0b94f6f932570fed12de32cbe
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073092"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746498"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 
@@ -371,7 +371,7 @@ Restart-Computer
 
 接下来，添加 Microsoft 365 E5 试用版订阅，并将 Microsoft 365 许可证分配给全局管理员帐户。
 
-1. 通过 Internet 浏览器的专用实例，使用全局管理员帐户凭据登录 [http://admin.microsoft.com](http://admin.microsoft.com) 上的 Microsoft 365 管理中心。
+1. 通过 Internet 浏览器的专用实例，使用全局管理员帐户凭据登录 [https://admin.microsoft.com](https://admin.microsoft.com) 上的 Microsoft 365 管理中心。
     
 2. 在“**Microsoft 365 管理中心**”页面上的左侧导航栏中，单击“**计费 > 购买服务**”。
     

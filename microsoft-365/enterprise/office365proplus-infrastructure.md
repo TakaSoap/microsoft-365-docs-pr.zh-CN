@@ -3,7 +3,7 @@ title: 阶段 4：Office 365 专业增强版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/29/2019
+ms.date: 10/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: 5c32257fb9066f170da1f1a3cfe4b865e383cfcb
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 0e3a1a3d45cb51f43a7e2266e7662f532fc0a47c
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646397"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746488"
 ---
 # <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 

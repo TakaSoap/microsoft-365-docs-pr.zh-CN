@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 根据本测试实验室指南，可以创建轻型测试环境来测试 Microsoft 365 企业版。
-ms.openlocfilehash: a189cb63847f2b95402a864422257a38d1f098d1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 770ddf46f40036f0d711c7c30bdaebee7fdeef6e
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072182"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746528"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
@@ -49,7 +49,7 @@ ms.locfileid: "34072182"
   
 首先，请添加 Microsoft 365 E5 试用版订阅并向全局管理员帐户分配一个 Microsoft 365 许可证。
   
-1. 通过 Internet 浏览器的专用实例，使用全局管理员帐户凭据登录 [http://admin.microsoft.com](http://admin.microsoft.com) 上的 Microsoft 365 管理中心。
+1. 通过 Internet 浏览器的专用实例，使用全局管理员帐户凭据登录 [https://admin.microsoft.com](https://admin.microsoft.com) 上的 Microsoft 365 管理中心。
     
 2. 在“**Microsoft 365 管理中心**”页面上的左侧导航栏中，单击“**计费 > 购买服务**”。
     

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你需要确保你的密码在整个组织中都强大并易于管理。
-ms.openlocfilehash: a3661eedc11e0c826422f540cf1e2e9abf911f9d
-ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
+ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37662548"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746508"
 ---
 # <a name="step-2-secure-your-passwords"></a>第 2 步：保护密码安全
 
@@ -90,7 +90,7 @@ ms.locfileid: "37662548"
 
 有关详细信息，请参阅[向 Office 365 登录页添加公司品牌](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)。
 
-有关配置说明，请参阅[向登录页和访问面板页添加公司品牌](http://aka.ms/aadpaddbranding)。
+有关配置说明，请参阅[向登录页和访问面板页添加公司品牌](https://aka.ms/aadpaddbranding)。
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-custom-sign-in)。
 

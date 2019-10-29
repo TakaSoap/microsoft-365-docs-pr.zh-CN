@@ -3,7 +3,7 @@ title: Office 365 专业增强版部署退出条件
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/06/2019
+ms.date: 10/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对 Office 365 专业增强版基础结构的条件。
-ms.openlocfilehash: 544eb31a8fd2417adfa929df793f88ec52b1d503
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 749d9661911bd6b69a3d6abff0b54e9ea1200adc
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073142"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746578"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Office 365 专业增强版部署退出条件
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![阶段 4：Office 365 专业增强版](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 ** 这适用于 Microsoft 365 企业版和 Microsoft 365 教育版的 E3 和 E5 版本
 
@@ -60,4 +60,4 @@ ms.locfileid: "34073142"
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是[移动设备管理](mobility-infrastructure.md)。 |
+|![阶段 5：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是[移动设备管理](mobility-infrastructure.md)。 |

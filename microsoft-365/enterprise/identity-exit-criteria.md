@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对基于身份的服务和基础结构的条件。
-ms.openlocfilehash: 4a93d0a9fb497daccba4fd2641fd5faf9c4fb384
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 84c2b97e064d3dba8a97767a31cc9fe7ccc6dd8c
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370199"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746518"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>阶段 2：身份基础结构退出条件
 
@@ -96,7 +96,7 @@ ms.locfileid: "37370199"
 <a name="crit-identity-custom-sign-in"></a>
 ## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>可选：个性化组织的 Office 365 登录屏幕
 
-你已使用[将公司品牌添加到登录和访问面板页面](http://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。
+你已使用[将公司品牌添加到登录和访问面板页面](https://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。
 
 如果忽略此选项，你的用户将看到通用的 Office 365 登录屏幕，可能会让他们疑惑是否登录到了组织的网站。
 
