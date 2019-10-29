@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 为了帮助防止网络钓鱼，Office 365 和 Outlook.com 现在要求来自：地址的 RFC 合规性。
-ms.openlocfilehash: 39c9898a31c715487f3bc934ad0986e9a7b3679d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: da1728b59ce100d988538d572a24ca1a44fa9a7b
+ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074641"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749154"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何验证发件人地址以防止仿冒
 
@@ -223,7 +223,7 @@ Microsoft 强烈建议您不要覆盖 From： policy 的强制执行。 覆盖�
 ### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>阻止和防止 cybercrimes 在 Office 365 中的其他方法
 <a name="OtherProtection"> </a>
 
-若要详细了解如何在 cybercrimes （如网络钓鱼、垃圾邮件、数据泄露和其他威胁）上加强组织，请参阅[Office 365 的安全性最佳实践](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3)。
+若要详细了解如何在 cybercrimes （如网络钓鱼、垃圾邮件、数据泄露和其他威胁）上加强组织，请参阅[Office 365 的安全性最佳实践](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)。
   
 ## <a name="related-topics"></a>相关主题
 
