@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 45cc75a7b090df86d0c5f9b1d47d452520693530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d20186afaa25b70a40efa88f692a04f3428abb65
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075969"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772226"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中配置最终用户垃圾邮件通知
   
@@ -31,17 +31,9 @@ ms.locfileid: "37075969"
   
 收到通知邮件后，最终用户可以从以下选项中进行选择：
 
-如果要在执行操作之前预览内容或标题，请**预览**邮件。
-
-如果要在执行操作之前查看设备上的邮件和附件（如果有），请**下载**邮件。
-
-如果邮件不是垃圾邮件，并且您希望 Office 365 将邮件发送到您的邮箱，则**释放**。
-
-如果邮件不是垃圾邮件，并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中，请**释放 & 允许发件人**列表中的其他电子邮件。 请注意，您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
-
-如果邮件不是垃圾邮件，并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析，请**释放 & 报告**。
-
 如果希望 Office 365 将发件人添加到阻止发件人列表，请**阻止发件人**。
+
+如果要执行其他操作，如预览或发布，请**查看**以导航到安全与合规中心内的隔离门户。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 <a name="sectionSection0"> </a>
@@ -77,7 +69,7 @@ ms.locfileid: "37075969"
   
 ![测试最终用户垃圾邮件通知的传输规则](../media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)
   

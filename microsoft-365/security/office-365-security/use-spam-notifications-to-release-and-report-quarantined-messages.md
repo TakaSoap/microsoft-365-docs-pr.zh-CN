@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 如果管理员为用户启用通知，则会收到一条通知消息，其中列出了发送到邮箱的邮件，并被标识为垃圾邮件、批量邮件或网络钓鱼邮件。 您可以在收到通知后释放或报告邮件。
-ms.openlocfilehash: 499af3ae2934eed19e421918af07a45b72fe2518
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7042f847dbc8df9d60efc694a07a258eff411f6d
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075534"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772206"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
 
@@ -36,23 +36,13 @@ ms.locfileid: "37075534"
     
 - **主题** 隔离邮件的主题行文本。 
     
-- **日期** 邮件隔离的日期和时间 (UTC)。 
-    
-- **尺寸**邮件的大小，以千字节（Kb）为单位。 
-    
+- **日期** 邮件隔离的日期和时间 (UTC)。     
+  
 以下是您可以使用隔离邮件执行的操作：
 
-- 如果要在执行操作之前预览内容或标题，请**预览**邮件。
-
-- 如果要在执行操作之前查看设备上的邮件和附件（如果有），请**下载**邮件。
-
-- 如果邮件不是垃圾邮件，并且您希望 Office 365 将邮件发送到您的邮箱，则**释放**。
-
-- 如果邮件不是垃圾邮件，并且您希望 Office 365 将发件人添加到安全发件人和收件人列表中，请**释放 & 允许发件人**列表中的其他电子邮件。 请注意，您的管理员可能有其他组织范围的允许/阻止配置替代安全发件人列表。
-
-- 如果邮件不是垃圾邮件，并且您想要将邮件发送到您的邮箱并将其报告给 Microsoft 进行分析，请**释放 & 报告**。
-
 - 如果希望 Office 365 将发件人添加到阻止发件人列表，请**阻止发件人**。
+
+- 如果要执行其他操作，如预览或发布，请**查看**以导航到安全与合规中心内的隔离门户。
 
 请注意以下事项：
   

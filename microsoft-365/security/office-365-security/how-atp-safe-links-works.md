@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "\"安全链接\" 功能可提供对 Office 文档中的超链接和电子邮件中的超链接的单击时间验证。 阅读本文，了解 ATP 安全链接的工作原理。"
-ms.openlocfilehash: 45053b51bb5a91698d90f61567aa7f5577518587
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bb60d57a422d908b013caf7267f21f390769cfb4
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074647"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772196"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 ATP 安全链接的工作原理
          
@@ -49,11 +49,11 @@ ms.locfileid: "37074647"
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>ATP 安全链接如何处理 Office 文档中的 Url
 
-在较高级别，以下是[ATP 安全链接](atp-safe-links.md)保护对 Office 365 专业增强版应用程序中的 url 的工作方式（Windows 或 Mac 上的 Word、Excel 和 PowerPoint 的当前版本、IOS 或 Android 设备上的 Office 应用、windows 上的 Visio、浏览器中的 Visio 以及浏览器中的 Office）：
+从较高的层次来看， [ATP 安全链接](atp-safe-links.md)保护对 Office 365 专业增强版或商业高级应用程序中的 url 的工作方式（Windows、Mac 上的 Word、Excel 和 PowerPoint 的当前版本、在 IOS 或 Android 设备上的 Office 应用程序、Visio 在Windows，OneNote 在浏览器中）：
   
-1. 用户在其计算机、智能手机或平板电脑上安装了 Office 365 专业增强版。 （或者，他们在浏览器中使用 Office。）
+1. 用户已在其计算机、智能手机或平板电脑上安装 Office 365 专业增强版或商业高级版。 （或者，他们在浏览器中使用 Office。）
     
-2. 用户打开 Word、Excel、PowerPoint 或 Visio，并使用其工作或学校帐户登录到 Office 365 企业版。 文档包含 Url。
+2. 用户打开 Word、Excel、PowerPoint、OneNote （在 web 上）或 Visio （在桌面上），并使用其工作或学校帐户登录到 Office 365 企业版。 文档包含 Url。
     
 3. 当用户单击文档中的某个 URL 时，ATP 安全链接服务将检查该链接。
     
@@ -66,4 +66,6 @@ ms.locfileid: "37074647"
       - 如果 URL 转到可下载的文件，并且已将[ATP 安全链接策略](set-up-atp-safe-links-policies.md)配置为扫描此类下载，则会检查可下载的文件。 
     
       - 如果该 URL 被认为是安全的，则会将用户转到该网站。
+      
+      - 如果 URL 检查失败，安全链接的保护将不会触发。 在桌面客户端上，将在继续进入网站之前警告用户。
 

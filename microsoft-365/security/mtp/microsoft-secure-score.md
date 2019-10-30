@@ -15,18 +15,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d8ba3626fc2b6cb7dbc56d32cb61baf34e43996e
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 74afe39e78990d794368ed19aa5fd5116bee17bb
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697747"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37774905"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
 Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 从 Microsoft 365 安全中心的中央仪表板中，组织可以监视和使用其 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。
 
-安全分数可帮助组织执行以下操作：  
+安全分数可帮助组织：
 
 * 报告组织安全状况的当前状态。
 * 通过提供可发现性、可见性、指导和控制改进其安全状况。  
@@ -38,17 +38,17 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 ## <a name="how-it-works"></a>运作方式
 
-为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。 安全性应始终与可用性平衡，而不是每个建议对您的环境都适用。
+为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。 安全性应与可用性平衡，而不是每个建议对您的环境都适用。
 
 你的分数将实时更新，以反映可视化和改进操作页面中显示的信息。 安全分数也会每天同步，以接收有关每个操作的已实现分数的系统数据。
 
 ### <a name="how-improvement-actions-are-scored"></a>如何对改进行动进行评分
 
-大多数都是以二进制方式进行评分—如果实施改进操作（如创建新策略或打开特定设置），则将获得100% 的点数。 对于其他改进操作，点作为总配置的百分比提供。 例如，如果通过使用多重身份验证保护您的所有用户，并且您只有5% 以上的用户都受到保护，则提高操作的状态为30点。在 2 100 个点的部分分数（5个受保护/100 总数 * 30 个最大值 = 2 pt）中，可获得系数 部分分数）。
+大多数都是以二进制方式进行评分—如果实现改进操作（如创建新策略或打开特定设置），则将获得100% 的点数。 对于其他改进操作，点作为总配置的百分比提供。 例如，如果通过使用多重身份验证保护您的所有用户，并且您只有5% 以上的用户都受到保护，则提高操作的状态为30点。在 2 100 个点的部分分数（5个受保护/100 总数 * 30 个最大值 = 2 pt）中，可获得系数 部分分数）。
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包括的产品
 
-目前，我们提供了 Office 365 的一些建议（包括 SharePoint Online、Exchange Online、OneDrive for Business、Microsoft 信息保护等）、Azure AD、Intune 和云应用安全性。 对其他安全产品（如 Azure ATP 和 Microsoft Defender ATP）的建议即将推出。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为第三方覆盖。 
+目前，我们提供了 Office 365 的一些建议（包括 SharePoint Online、Exchange Online、OneDrive for Business、Microsoft 信息保护等）、Azure AD、Intune 和云应用安全性。 对其他安全产品（如 Azure ATP 和 Microsoft Defender ATP）的建议即将推出。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为第三方覆盖。
 
 ## <a name="required-permissions"></a>所需权限
 
@@ -85,10 +85,10 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 为了帮助您更快地了解所需的信息，Microsoft 改善操作将组织成组：
 
-* Identity （Azure AD 帐户和角色）
-* 数据（Office 365 文档）
+* Identity （Azure AD 帐户 & 角色，即将推出 Azure ATP）
+* 数据（Microsoft 信息保护）
 * 设备（Microsoft Defender ATP 设备，即将推出）
-* 应用（电子邮件和云应用）
+* 应用（电子邮件和云应用，包括 Office 365 和 Microsoft 云应用安全性）
 * 基础结构（Azure 资源）
 
 在 "Microsoft 安全分数概述" 页中，您可以看到在这些组之间如何拆分点以及哪些点可用。 [！注意] 概述页面也是获取总分和基准对比的安全分数的历史趋势的完整视图的位置，以及可采取的优先改进措施以提高成绩。
@@ -102,7 +102,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 ### <a name="ranking"></a>排名
 
-排名基于要达到的剩余点数、实现难度、用户影响和复杂性。 最高排名改进操作的剩余分数与较低的难度、用户影响和复杂性较低。
+排名基于要达到的剩余点数、实现难度、用户影响和复杂性。 最高排名改进操作的剩余分数与较低的难度、用户影响和复杂性相同。
 
 ### <a name="actions"></a>操作
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: e091946792e78f47f5c0ab5a001bf45ca4de6b08
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440449"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772266"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -56,13 +56,13 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 ## <a name="eop-plans-and-features"></a>EOP 计划和功能
 
-以下是可用的 EOP 订阅计划：
+可用的 EOP 订阅计划包括：
 
-- **EOP 独立**：其中 EOP 保护您的内部部署邮箱。
+- **EOP 独立**：在 EOP 中注册以保护您的内部部署电子邮件组织。
 
-- **Exchange online 中的 EOP 功能**：其中 EOP 保护您的 exchange online 云托管邮箱。
+- **Exchange online 中的 EOP 功能**：包括 exchange online 的任何订阅（独立的或作为 Office 365 的一部分）使用 EOP 来保护 Exchange Online 邮箱。
 
-- **Exchange ENTERPRISE CAL With Services**：其中 EOP 保护您的内部部署邮箱（如 EOP 独立），并包括数据丢失防护（DLP）和使用 web 服务的报告。
+- **Exchange ENTERPRISE cal With services**：如果您有一个内部部署 exchange 组织，并且您已使用这些服务许可证购买了其他 Exchange 企业版 cal，则 EOP 是所包含服务的一部分。
 
 有关跨所有 EOP 订阅计划的要求、重要限制和功能可用性的信息，请参阅 [Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。
 
@@ -72,7 +72,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 如果您已购买 EOP，请参阅 [设置 EOP 服务](set-up-your-eop-service.md)，确保完成配置 EOP 所需的所有步骤，以保护您的邮件环境。
 
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [EOP 功能](eop-features.md)
 

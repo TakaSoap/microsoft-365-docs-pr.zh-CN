@@ -15,17 +15,17 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全链接策略时，可以包括 "不重写" 的 Url 列表，以使组织中的某些人能够访问包含在列表中的网站。
-ms.openlocfilehash: 7debc03fd11ddcdf6fd930779c56d686e30fb389
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 512d4ce507c191b00bc2d21f61d5efbf2dffcb57
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075326"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772136"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
 
 > [!IMPORTANT]
-> 本文适用于具有[Office 365 高级威胁防护](office-365-atp.md)的商业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 使用[Office 365 高级威胁防护](office-365-atp.md)（ATP），您的组织可以有一个[自定义的阻止 url](set-up-a-custom-blocked-urls-list-wtih-atp.md)，这样，当用户单击电子邮件中的 web 地址（Url）或某些 Office 文档时，将阻止这些 Url 转到这些 url。 您的组织还可以为组织中的特定组提供自定义的 "不重写" 列表。 "不重写" 列表使某些用户能够访问由[Office 365 中的 ATP 安全链接](atp-safe-links.md)阻止的 url。 
   
@@ -40,7 +40,7 @@ ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "
 |Role  |分配的位置/方式  |
 |---------|---------|
 |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
-|Security Administrator |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
+|安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
 |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)） |
 
 > [!TIP]
@@ -69,19 +69,19 @@ ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "
 
 - 您在 "不重写" 列表中指定的任何 Url 将从 ATP 安全链接扫描中排除，用于您指定的收件人。
  
-- 如果您在 "不重写" 列表中已经有 Url 列表，请务必查看该列表并根据需要添加通配符。 例如，如果您的现有列表中有类似`http://contoso.com/a`的条目，并且您希望在策略`http://contoso.com/a/b`中包含类似的子路径，请将通配符添加到您的`http://contoso.com/a*`条目，使其看起来像这样。
+- 如果您在 "不重写" 列表中已经有 Url 列表，请务必查看该列表并根据需要添加通配符。 例如，如果您的现有列表中有类似`http://contoso.com/a`的条目，并且您希望在策略`http://contoso.com/a/b`中包含类似的子路径，请将通配符添加到您的`http://contoso.com/a/*`条目，使其看起来像这样。
     
 - 请勿在 "不重写" 列表中指定的 Url 中包含正斜杠（/）。 例如，而不是在`contoso.com/` "不重写" 列表中输入，而`contoso.com`是输入。
 
-- 当您为 ATP 安全链接策略指定 "不重写" 列表时，可以包含最大为三个通配符星号（\*）。 通配符（\*）用于显式包含前缀或子域，如`http://`或。 `https://` 条目，如`contoso.com` `*contoso.com*` "不重写" 列表中的条目。 如果要允许`*contoso.com*`用户访问域及其子域和路径，则必须具有。
+- 当您为 ATP 安全链接策略指定 "不重写" 列表时，可以包含最大为三个通配符星号（\*）。 通配符（\*）用于显式包含前缀或子域，如`http://`或。 `https://` 条目，如`contoso.com` `*.contoso.com/*` "不重写" 列表中的条目。 如果要允许`*.contoso.com/*`用户访问域及其子域和路径，则必须具有。
     
 下表列出了可以输入的内容的示例以及这些项有何影响。
     
 |**示例条目**|**功能**|
 |:-----|:-----|
 |`contoso.com`|允许收件人访问的网站（如`http://contoso.com`不是子域或路径）。|
-|`*contoso.com*`  <br/> |允许收件人访问域、子域和路径，例如`http://www.contoso.com`、 `https://www.contoso.com` `https://maps.contoso.com`、或`http://www.contoso.com/a`  <br/> |
+|`*.contoso.com/*`  <br/> |允许收件人访问域、子域和路径，例如`http://www.contoso.com`、 `https://www.contoso.com` `https://maps.contoso.com`、或`http://www.contoso.com/a`  <br/> |
 |`http://contoso.com/a`  <br/> |允许特定收件人访问类似`http://contoso.com/a`的网站，但不允许像这样的子路径`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |允许特定收件人访问像这样的子`http://contoso.com/a`网站之类的子网站`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a/*`  <br/> |允许特定收件人访问像这样的子`http://contoso.com/a`网站之类的子网站`http://contoso.com/a/b`  <br/> |
    
  
