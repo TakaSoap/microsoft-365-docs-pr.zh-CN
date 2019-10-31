@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 4d9228301a4cafd3728a349ad710496ba8f9d379
-ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
+ms.openlocfilehash: 07cb90684bbbba4851697020ceac4756381f8b55
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "37598286"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772236"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -129,7 +129,7 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
-DNS 中的 CNAME 记录将指向 Office 365 的 Microsoft DNS 服务器上 DNS 中存在的已创建 A 记录。
+DNS 中的 CNAME 记录将指向 Office 365 的 Microsoft DNS 服务器上的 DNS 中存在的已创建的 DKIM TXT 记录。
   
 Office 365 使用你创建的两条记录执行自动密钥轮替。如果在 Office 365 中除了初始域外你还预配了自定义域，必须为额外配置的每个域发布两条 CNAME 记录。因此，如果有两个域，就必须发布两条额外的 CNAME 记录，依此类推。
   

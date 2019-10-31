@@ -25,7 +25,7 @@
         - name: 管理计费配置文件
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: 付款服务指令2和强客户身份验证
-          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+          href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: 计费帐户
       items:
         - name: 管理帐单帐户信息

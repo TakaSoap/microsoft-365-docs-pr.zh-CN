@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 详细了解由 Exchange Online Protection 添加到邮件的标头字段和值。
-ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: df0e31ad6d1c67c8d7ed92e9b42efb1da0c37731
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451114"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772256"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -39,7 +39,6 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |CTRY|邮件与服务连接时所处的国家/地区。该值由连接 IP 地址决定，它可能与原始发送 IP 地址不同。|
 |LANG|邮件的编写语言，由国家/地区代码指定（例如，俄语的代码为 ru_RU）。|
 |SCL|邮件的垃圾邮件可信度 (SCL) 值。有关这些值的详细解释信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。  |
-|PCL|邮件的仿冒可能性等级 (PCL) 值。|
 |SRV:BULK|邮件被标识为批量电子邮件。如果“**阻止所有批量电子邮件高级垃圾邮件筛选选项**”已启用，则相应的邮件会被标记为垃圾邮件。如果未启用，则该邮件只会在剩余筛选规则确定邮件是垃圾邮件时才被标记为垃圾邮件。|
 |SFV:SFE|由于邮件发送自个人的安全发件人列表上的地址，因此邮件会跳过筛选并得以通过。|
 |SFV:BLK|由于邮件发送自个人的阻止的发件人名单上的地址，因此邮件会跳过筛选并得以阻止。  <br/> **提示**：若要详细了解最终用户如何能创建安全发件人列表和阻止的发件人列表，请参阅[阻止或允许（垃圾邮件设置）](https://go.microsoft.com/fwlink/p/?LinkId=294862)（Outlook 网页版）和[垃圾邮件筛选器概述](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook)。|
@@ -66,8 +65,7 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 
 |**标头字段**|**说明**|
 |:-----|:-----|
-|PCL|邮件的网络钓鱼可能性等级 (PCL) 显示这是否为网络钓鱼邮件。 此状态会以下列其中一个数值返回： <br/>**0-3**：邮件的内容不可能是仿冒的。 <br/>**4-8**：邮件内容可能是仿冒的。 <br/>**-9990**：（仅限 Exchange Online Protection）邮件内容可能是仿冒的。  <br/>  这些值用于确定你的电子邮件客户端对这些邮件采取什么操作。 例如，Outlook 使用 PCL 标记来阻止可疑邮件的内容。 有关网络钓鱼和 Outlook 如何处理网络钓鱼邮件的详细信息，请参阅[打开或关闭电子邮件中的链接](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8)。|
-|
+|BCL|消息的批量投诉级别 (BCL) 可帮助区别批量发件人的不同类型。 这表示为一个介于 0 到 9 之间的值。 有关 BCL 的值及其他信息，请参阅[批量投诉级别值](bulk-complaint-level-values.md)。|
 
 ## <a name="authentication-results-message-header"></a>“Authentication-results”邮件头
 
