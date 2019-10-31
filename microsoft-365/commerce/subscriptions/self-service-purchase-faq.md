@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
-ms.openlocfilehash: f88d815b83da1038f3c5854a7499a5efaa029320
-ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
+ms.openlocfilehash: 7cf1fa1b12ab11e777754cba8f75cc4bead95279
+ms.sourcegitcommit: 29d85279c76ffaaa3f45e7ea3bdb590f54847fd6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749164"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37885576"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
@@ -29,15 +29,15 @@ ms.locfileid: "37749164"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Microsoft 宣布的针对电源平台产品的自助服务购买有哪些变化？
 
-从2019年11月19日起，Power Platform 产品（Power BI、PowerApps 和流程）的自助服务购买、订阅和许可证管理功能将适用于美国的大多数商业云客户。 自助式购买为用户提供了一种尝试新技术的机会，使他们能够开发最终会对更大的组织带来好处的解决方案。 目前，此功能将不可用于政府、非盈利或教育的租户。 集中采购和 IT 团队可查看通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买和部署自助服务购买解决方案的所有用户。
+从2019年11月19日起，Power Platform 产品（Power BI、PowerApps 和流程）的自助服务购买、订阅和许可证管理功能将适用于美国的大多数商业云客户。 自助式购买为用户提供了一种尝试新技术的机会，使他们能够开发最终会对更大的组织带来好处的解决方案。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。 集中采购和 IT 团队可查看通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买和部署自助服务购买解决方案的所有用户。
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>为什么 Microsoft 为电源平台产品添加自助服务购买选项？
 
-由于数字转换的结果，传统角色正在发生变化。 随着员工在技术方面越来越独立且更好地精通，我们已发现来自用户和组织的增加了需求，使用户能够自行购买订阅。 自助服务购买选项旨在使用户能够开发自己的解决方案，以解锁工作效率并推动业务影响，同时遵从组织的数据管理和合规性。
+在当今世界，最终用户和部门越来越多地寻求和购买技术解决方案。 我们已收到来自这些客户的多个请求，以启用 Power Platform 产品的自助服务购买。 我们正在对此客户需求做出响应，同时平衡 IT 管理员的需求，在组织内的个人采用第三方解决方案而没有其知识的情况下，经常会失去可视性和控制能力。 借助面向电源平台产品的自助服务功能，IT 管理员可以完全了解在其组织内进行的所有自助服务购买，在组织级别设置的数据管理策略将计入通过自助服务购买的订阅。 管理员还可以通过现有协议和定价为分配到自助购买的用户分配电源平台产品的现有许可证或购买其他订阅。 在分配这些集中购买的许可证之后，管理员可以请求购买者取消其现有订阅。 Microsoft 正在探索为将来的管理员简化和简化此过程的方法。
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>何时提供适用于电源平台产品的自助服务购买？
 
-Microsoft 正在从2019年11月19日向美国的客户启动针对 Power BI 的自助购买，并在未来的几个月中提供更多市场。 在2019年12月4日，将添加 PowerApps 和 Microsoft 流。 目前，此功能将不可用于政府、非盈利或教育的租户。
+Microsoft 正在从2019年11月19日向美国的客户启动针对 Power BI 的自助购买，并在未来的几个月中提供更多市场。 在2019年12月4日，将添加 PowerApps 和 Microsoft 流。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>是否会为电源平台产品之外的服务启用自助服务购买？
 
@@ -97,11 +97,11 @@ Microsoft 正在从2019年11月19日向美国的客户启动针对 Power BI 的�
 
 ### <a name="why-are-self-service-purchases-not-subject-to-admin-approval"></a>为什么自助购买不受管理员批准？
 
-我们正在向已请求此功能的客户做出响应，同时允许管理员保持对服务的控制，并遵从数据治理和合规性。 若要了解有关管理 Azure AD 服务主体的详细信息，请参阅[new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0)。 此外，管理员可以完全了解谁已进行了自助购买，以及租户上哪些用户已从自助购买中为其分配了许可证。 然后，组织可以依赖自己的内部策略、过程和通信，以确保使自助购买的个人能够遵守公司策略。 
+我们正在为已请求自助购买的客户提供响应，同时仍遵从对服务的管理员控制。 管理员可以完全了解如何进行自助购买，以及租户上哪些用户已从自助购买中为其分配了许可证。 组织还可以依赖内部策略、过程和通信，以确保那些让自助购买的个人能够遵守公司策略。  作为如何控制对服务的访问的一个示例： [new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0)可用于防止在整个租户中使用产品。
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>Microsoft 如何通过启用自助购买来尊重数据治理和合规性？
 
-管理员可以根据其数据治理和合规性要求，控制哪些服务和产品在其租户中已启用。 此外，您的组织已启用的所有数据管理和访问策略将继续应用于启用自助服务购买的服务。
+管理员可以根据其数据治理和合规性要求，控制哪些服务和产品在其租户中已启用。 此外，您的组织已启用的所有数据管理和访问策略将应用于启用自助服务购买的服务。
 
 ### <a name="who-owns-the-product-data-created-from-self-service-purchases"></a>谁负责从自助购买创建的产品数据？
 

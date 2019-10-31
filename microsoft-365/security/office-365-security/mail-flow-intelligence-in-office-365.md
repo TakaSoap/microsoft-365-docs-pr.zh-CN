@@ -11,16 +11,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解与使用 Office 365 中的连接器（也称为 "邮件流智能"）关联的邮件传递的错误代码。
-ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
+ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441539"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37886855"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 中的邮件流智能
 
-通常情况下，使用连接器将来自 Office 365 组织的电子邮件路由到本地电子邮件环境。 您还可以使用连接器将邮件从 Office 365 路由到合作伙伴组织。 当 Office 365 无法通过连接器传递这些邮件时，它们将在 Office 365 中排队。 Office 365 将继续为每封邮件重新尝试传递48个小时。 在48小时后，排队的邮件将会过期，并在未送达报告（也称为 "NDR" 或 "退回邮件"）中将邮件返回给原始发件人。
+通常情况下，使用连接器将来自 Office 365 组织的电子邮件路由到本地电子邮件环境。 您还可以使用连接器将邮件从 Office 365 路由到合作伙伴组织。 当 Office 365 无法通过连接器传递这些邮件时，它们将在 Office 365 中排队。 Office 365 将继续为每封邮件重新尝试传递24小时。 24小时后，排队的邮件将会过期，并且邮件将在未送达报告（也称为 "NDR" 或 "退回邮件"）中返回到原始发件人。
 
 当无法使用连接器传递邮件时，Office 365 将生成错误。 本主题中介绍了最常见的错误及其解决方案。 通过连接器发送的未送达邮件的排队和通知错误称为 "_邮件流智能_"。
 
