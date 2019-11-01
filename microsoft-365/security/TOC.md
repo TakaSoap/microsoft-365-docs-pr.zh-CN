@@ -15,6 +15,8 @@
 ## [标识和设备访问配置](../enterprise/microsoft-365-policies-configurations.md)
 ### [前提性工作](../enterprise/identity-access-prerequisites.md)
 ### [常见标识和设备访问策略](../enterprise/identity-access-policies.md)
+### [面向来宾和外部用户的策略](../enterprise/identity-access-policies-guest-access.md)
+### [推荐的 Teams 访问策略](../enterprise/teams-access-policies.md)
 ### [建议的 Exchange Online 访问策略](../enterprise/secure-email-recommended-policies.md)
 ### [建议的 SharePoint Online 访问策略](../enterprise/sharepoint-file-access-policies.md)
 

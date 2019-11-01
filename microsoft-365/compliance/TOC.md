@@ -82,6 +82,12 @@
 #### [Office 365 邮件加密的旧信息](legacy-information-for-message-encryption.md)
 #### [为以前版本的 Office 365 邮件加密设置 Azure 权限管理](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+## [了解数据分类（预览）](data-classification-overview.md)
+### [查看标签活动（预览）](data-classification-activity-explorer.md)
+### [可训练分类器入门（预览）](classifier-getting-started-with.md)
+### [使用就绪分类器（预览）](classifier-using-a-ready-to-use-classifier)
+### [创建和训练分类器（预览）](classifier-creating-a-trainable-classifier.md)
+
 # 管理信息治理
 ## [导入数据](importing-pst-files-to-office-365.md)
 ### [使用网络上传导入 PST 文件](use-network-upload-to-import-pst-files.md)
