@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
-ms.openlocfilehash: 7cf1fa1b12ab11e777754cba8f75cc4bead95279
-ms.sourcegitcommit: 29d85279c76ffaaa3f45e7ea3bdb590f54847fd6
+ms.openlocfilehash: 9faa573ea2062af2fe49e2810eaecc75ce90c84c
+ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37885576"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37911383"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
@@ -29,7 +29,12 @@ ms.locfileid: "37885576"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Microsoft 宣布的针对电源平台产品的自助服务购买有哪些变化？
 
-从2019年11月19日起，Power Platform 产品（Power BI、PowerApps 和流程）的自助服务购买、订阅和许可证管理功能将适用于美国的大多数商业云客户。 自助式购买为用户提供了一种尝试新技术的机会，使他们能够开发最终会对更大的组织带来好处的解决方案。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。 集中采购和 IT 团队可查看通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买和部署自助服务购买解决方案的所有用户。
+更新自2019年10月31日起，在过去一周内，我们已为客户提供有关为 Power Platform 产品的自助服务购买功能推出的客户反馈。 根据反馈，我们正在对计划进行以下更改：
+
+- 在19月19日，我们将通过 PowerShell 向 IT 管理员提供一种基于每个产品关闭自助购买的方法。 将会即将推出更多详细信息。
+- 若要提供更多的时间来为此更改做准备，我们正在为 Power Platform 产品更新启动，以在14月14日为所有商业云客户启动 Power BI。  
+
+从2020年1月14日起，Power Platform 产品（Power BI、PowerApps 和流程）的自助服务购买、订阅和许可证管理功能将适用于美国的商业云客户。 自助式购买为用户提供了一种尝试新技术的机会，使他们能够开发最终会对更大的组织带来好处的解决方案。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。 集中采购和 IT 团队可查看通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买和部署自助服务购买解决方案的所有用户，并将能够通过 PowerShell 基于每个产品关闭自助购买。
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>为什么 Microsoft 为电源平台产品添加自助服务购买选项？
 
@@ -37,7 +42,7 @@ ms.locfileid: "37885576"
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>何时提供适用于电源平台产品的自助服务购买？
 
-Microsoft 正在从2019年11月19日向美国的客户启动针对 Power BI 的自助购买，并在未来的几个月中提供更多市场。 在2019年12月4日，将添加 PowerApps 和 Microsoft 流。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。
+Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，并在未来的几个月中提供更多市场。 将在以下几周中添加 PowerApps 和 Microsoft 流程。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>是否会为电源平台产品之外的服务启用自助服务购买？
 
@@ -91,13 +96,7 @@ Microsoft 正在从2019年11月19日向美国的客户启动针对 Power BI 的�
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>管理员对自助购买有哪些功能？
 
-管理员可以在其组织中查看在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>内进行的所有自助服务购买。 他们可以查看每个自助购买的产品、购买者名称、购买订阅、到期日期、订单历史记录、购买价格和分配的用户。
-
-虽然符合条件的组织中的所有 Azure AD 用户都可以进行自助购买，并且能够完全控制其订阅，但管理员对通过自助购买购买的产品具有相同的数据管理和访问策略，或者位居.
-
-### <a name="why-are-self-service-purchases-not-subject-to-admin-approval"></a>为什么自助购买不受管理员批准？
-
-我们正在为已请求自助购买的客户提供响应，同时仍遵从对服务的管理员控制。 管理员可以完全了解如何进行自助购买，以及租户上哪些用户已从自助购买中为其分配了许可证。 组织还可以依赖内部策略、过程和通信，以确保那些让自助购买的个人能够遵守公司策略。  作为如何控制对服务的访问的一个示例： [new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0)可用于防止在整个租户中使用产品。
+管理员可以在其组织中查看在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>内进行的所有自助服务购买。 他们可以查看每个自助购买的产品、购买者名称、购买订阅、到期日期、订单历史记录、购买价格和分配的用户。 如果组织需要，管理员将能够通过 PowerShell 基于每个产品关闭自助购买。 管理员对通过自助购买或集中购买的产品具有相同的数据管理和访问策略。
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>Microsoft 如何通过启用自助购买来尊重数据治理和合规性？
 
@@ -122,6 +121,11 @@ Microsoft 正在从2019年11月19日向美国的客户启动针对 Power BI 的�
 ### <a name="are-customers-it-departments-or-partners-expected-to-support-products-bought-through-self-service-purchase"></a>客户的 IT 部门或合作伙伴是否希望支持通过自助购买购买的产品？
 
 IT 部门和合作伙伴不希望为通过自助购买购买的产品提供支持。 Microsoft 将为自助服务购买者提供标准支持。
+
+### <a name="if-a-self-service-purchaser-calls-support-will-they-use-the-customers-premier-support-incidents"></a>如果自助服务买方呼叫支持，他们是否将使用客户的首要支持事件？
+
+自助服务购买者不会使用客户的首要支持事件接收自助服务购买支持。
+
 
 ### <a name="how-are-users-expected-to-receive-training-on-the-products-they-buy-through-self-service-purchase"></a>用户期望如何在通过自助购买的产品上接收有关他们购买的产品的培训？
 
