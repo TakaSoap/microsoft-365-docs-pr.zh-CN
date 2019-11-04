@@ -85,7 +85,7 @@
 ## [了解数据分类（预览）](data-classification-overview.md)
 ### [查看标签活动（预览）](data-classification-activity-explorer.md)
 ### [可训练分类器入门（预览）](classifier-getting-started-with.md)
-### [使用就绪分类器（预览）](classifier-using-a-ready-to-use-classifier)
+### [使用就绪分类器（预览）](classifier-using-a-ready-to-use-classifier.md)
 ### [创建和训练分类器（预览）](classifier-creating-a-trainable-classifier.md)
 
 # 管理信息治理
@@ -363,11 +363,16 @@
 
 # 管理合规性风险
 ## [Microsoft 服务信任门户](get-started-with-service-trust-portal.md)
-## [合规性管理器（经典）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [合规性管理器（预览版）](compliance-manager-overview.md)
-### [合规性管理器（预览版）新增功能](compliance-manager-release-notes.md)
-### [使用合规性管理器（预览版）](working-with-compliance-manager.md)
-### [合规性分数计算方法（预览版）](compliance-score-methodology.md)
+## 合规性分数 – 合规性管理器
+### [合规性分数（预览版）](compliance-score.md)
+### [设置合规性分数（预览版）](compliance-score-setup.md)
+### [使用合规性分数（预览版）](working-with-compliance-score.md)
+### [合规性分数计算（预览版）](compliance-score-methodology.md)
+### [合规性分数发行说明（预览版）](compliance-score-release-notes.md)
+### [合规性管理器（预览版）](compliance-manager-overview.md)
+#### [合规性管理器（预览版）新增功能](compliance-manager-release-notes.md)
+#### [使用合规性管理器（预览版）](working-with-compliance-manager.md)
+#### [合规性管理器（旧版）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR 数据主体请求工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [符合 GDPR 的 Office 365 信息保护](office-365-information-protection-for-gdpr.md)
