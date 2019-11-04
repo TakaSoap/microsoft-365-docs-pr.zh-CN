@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 企业移动到 Microsoft 365 企业版 E3。
-ms.openlocfilehash: efdf4030a2a638a3fd56d1c415fcc6e6ac261c1a
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772707"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931850"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>从 Microsoft 365 Business 迁移到 Microsoft 365 企业版 E3
 
@@ -34,10 +34,10 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 
 或者，您的业务需要企业版功能，如 Office 365 专业增强版、Windows 10 企业版 E3 或企业客户端访问许可证（Cal）。
 
-迁移非常简单：仅交换许可证。 保留当前订阅中的所有数据和配置。 无需为迁移做准备，也无需执行任何操作，除非利用新功能。 
+升级非常简单：您可以[从管理中心](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)启动升级。 保留当前订阅中的所有数据和配置。 无需为迁移做准备，也无需执行任何操作，除非利用新功能。 
 
 >[!Note]
->您还可以使用 Microsoft 365 商业版订阅进行最多300个座位，并获取 Microsoft 365 企业版 E3 订阅（适用于超过300的座位）。 但是，Office 365 ATP 不包含在 Microsoft 365 企业版 E3 中。 应为 Microsoft 365 企业版 E3 订阅中的用户添加其他 Office 365 ATP 许可证。
+>您还可以使用 Microsoft 365 商业版订阅进行最多300个座位，并获取 Microsoft 365 企业版 E3 订阅（适用于超过300的座位）。 但是，Office 365 ATP 不包含在 Microsoft 365 企业版 E3 中。 若要持续进行威胁防护，应添加其他 Office 365 ATP 许可证，以便许可证365范围内的所有用户都可以获得许可。
 >
 
 ## <a name="differences-between-microsoft-365-business-and-microsoft-365-enterprise"></a>Microsoft 365 商业版与 Microsoft 365 企业版之间的区别
@@ -51,7 +51,7 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 | Office 应用程序 *  | [Office 365 商业版](#office-365-business)   | Office 365 专业增强版 | 
 | **云生产力应用程序**       | | | 
 | Exchange Online 和 Outlook   | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档   | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
-| Teams | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 企业版 E3 中](./media/check-mark.png) | 
+| 团队 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 企业版 E3 中](./media/check-mark.png) | 
 | OneDrive for Business | 每个用户 1 TB 存储限制   | 无限制 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 企业版 E3 中](./media/check-mark.png) | 
 | StaffHub  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 企业版 E3 中](./media/check-mark.png) | 
@@ -104,7 +104,7 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 您可以开始对10个以上的应用程序使用云应用发现、Azure AD Connect Health 和 SSO。
 
 >[!Note]
->迁移到 Microsoft 365 企业版 E3 后，不再是 Outlook 客户经理和 MileIQ。
+>迁移到 Microsoft 365 企业版 E3 的用户无法再使用 Outlook 客户管理器和 MileIQ。
 >
 
 <a name="threat-protection"></a>
@@ -127,7 +127,7 @@ Windows 10 商业版包括以下保护：
 Windows 10 企业版 E3 还包括针对 Microsoft Edge 的基于硬件的隔离的企业管理。
 
 >[!Note]
->迁移到 Microsoft 365 企业版 E3 后，您不再拥有 Office 365 ATP。 您可以为您的 Microsoft 365 企业版 E3 订阅购买额外的 Office 365 ATP 许可证，并将其分配给您的用户帐户。
+>迁移到 Microsoft 365 企业版 E3 的用户每个用户都需要一个 Office 365 ATP 许可证以实现持续的威胁防护。 请务必购买其他 Office 365 ATP 许可证，以便许可的 Office 365 ATP 策略范围内的所有用户。 
 >
 
 ### <a name="device-management-with-intune"></a>使用 Intune 的设备管理

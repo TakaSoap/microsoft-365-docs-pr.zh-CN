@@ -203,16 +203,16 @@
 ##### [为政治宣传活动开发/测试环境配置组和用户](./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ##### [在政治宣传活动开发/测试环境中创建团队网站](./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
+#### [保护 Microsoft Teams 中的文件](./office-365-security/secure-files-in-teams.md)
+##### [部署适用于三层文件保护的团队](./office-365-security/deploy-teams-three-tiers.md)
+##### [使用保留标签和 DLP 保护团队中的文件](./office-365-security/deploy-teams-retention-DLP.md)
+##### [使用灵敏度标签保护团队中的文件](./office-365-security/deploy-teams-sensitivity-labels.md)
+##### [为开发/测试环境中的文件提供安全的团队](./office-365-security/secure-team-for-files-in-a-dev-test-environment.md)
+
 #### [保护 SharePoint Online 网站和文件](./office-365-security/secure-sharepoint-online-sites-and-files.md)
 ##### [在开发/测试环境中保护 SharePoint Online 网站](./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
-#### [独立 SharePoint Online 团队网站](./office-365-security/isolated-sharepoint-online-team-sites.md)
-##### [设计独立 SharePoint Online 团队网站](./office-365-security/design-an-isolated-sharepoint-online-team-site.md)
-##### [部署独立 SharePoint Online 团队网站](./office-365-security/deploy-an-isolated-sharepoint-online-team-site.md)
-##### [管理独立 SharePoint Online 团队网站](./office-365-security/manage-an-isolated-sharepoint-online-team-site.md)
-##### [独立 SharePoint Online 团队网站开发/测试环境](./office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md)
 #### [SIEM 服务器集成](./office-365-security/siem-server-integration.md)
-
 
 #### [Exchange Online Protection](./office-365-security/exchange-online-protection-overview.md)
 ##### [EOP 功能](./office-365-security/eop-features.md)
