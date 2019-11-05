@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供多种报告垃圾邮件的方式：
-ms.openlocfilehash: 622463be7aea51b0912965ff713c76e8961c51d3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b53f6df11f2b0ee8fe6b20d3797d6e317c9a73e
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075591"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964438"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 报告垃圾邮件
 
@@ -34,7 +34,7 @@ Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供�
 垃圾邮件报告加载项可帮助您将报告提交至 Microsoft Exchange Online Protection (EOP) 服务。如果您的邮箱未受该服务保护，提交垃圾邮件报告将不会影响您的垃圾邮件筛选器。有关适用于整个组织的详细垃圾邮件设置，管理员可参阅[如何帮助确保邮件不会标记为垃圾邮件](https://go.microsoft.com/fwlink/p/?LinkId=534224)或[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](https://go.microsoft.com/fwlink/p/?LinkId=534225)。如果您拥有管理员级别控制，并且您想要阻止误报或漏报问题，这些会很有帮助。
   
 > [!TIP]
-> 您还可以通过使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)电子邮件地址和误报（非垃圾邮件）邮件将垃圾邮件直接提交给 Microsoft，方法是使用[not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com)电子邮件地址。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
+> 您还可以通过使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)电子邮件地址和误报（非垃圾邮件）邮件将垃圾邮件直接提交给 Microsoft，方法是使用[not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)电子邮件地址。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 
   
 ### <a name="to-report-junk-email-messages-from-outlook"></a>报告来自 Outlook 的垃圾电子邮件
 

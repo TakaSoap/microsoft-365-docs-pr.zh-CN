@@ -9,18 +9,21 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: a936a3b24c97e9336550527750afa800345891e6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
+ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075912"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968522"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
 ## <a name="overview"></a>概述
 
 Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递的电子邮件中遵循这些电子邮件。 您可以确定服务是否已接收、拒绝、推迟或发送邮件。 它还显示邮件在到达其最终状态之前对邮件执行的操作。
+
+> [!NOTE]
+> 若要执行邮件跟踪，管理员必须是 "组织管理"、"合规性管理" 或 "技术支持" 角色组的成员。
 
 Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心（EAC）中可用的邮件跟踪。 您可以使用邮件跟踪中的信息来有效地回答用户对其邮件发生的问题、解决邮件流问题以及验证策略更改的问题。
 
@@ -29,7 +32,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 
-1. 使用您的 工作或学校帐户[登录到 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用您的工作或学校帐户[登录 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在左上角选择应用启动器图标 ![Office 365 应用启动器图标](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png)，然后选择" **管理**"。
 
@@ -60,7 +63,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 - 对于**以下人员**：在此字段中单击以选择组织中的一个或多个收件人。
 
 > [!NOTE]
-> 您还可以键入外部发件人和收件人的电子邮件地址。 支持通配符（`*@contoso.com`或`scot?@contoso.com`），但不能同时在同一字段中使用多个通配符条目。<br/>可以粘贴多个发件人或收件人列表，用`;`分号（）分隔。 允许使用`\s`空格（）、回车`\r`符（）或下`\n`一行（）符号。
+> 您还可以键入外部发件人和收件人的电子邮件地址。 支持通配符（例如， `*@contoso.com`），但不能同时在同一字段中使用多个通配符条目。<br/>可以粘贴多个发件人或收件人列表，用`;`分号（）分隔。 允许使用`\s`空格（）、回车`\r`符（）或下`\n`一行（）符号。
 
 ### <a name="time-range"></a>时间范围
 
@@ -334,7 +337,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 |**值**|**说明**|
 |:-----|:-----|
-|`SFV=NSPM`|邮件被标记为非垃圾邮件并发送给预期发件人。|
+|`SFV=NSPM`|邮件被标记为非垃圾邮件并发送给预期收件人。|
 |`SFV=SPM`|邮件由内容筛选器标记为垃圾邮件。|
 |`SFV=BLK`|跳过筛选但阻止邮件，因为它是由已阻止发件人发送。|
 |`SFV=SKS`|邮件在内容筛选器处理之前被标记为垃圾邮件。这包括符合以下传输规则条件的邮件：自动将邮件标记为垃圾邮件并规避其他所有筛选。|
@@ -347,7 +350,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 |`DI=SN`|邮件已通过高风险传送池路由。 有关详细信息，请参阅[出站邮件的高风险传递池](https://technet.microsoft.com/library/jj200746.aspx)。|
 |`DI=SO`|邮件已通过正常出站传送池路由。|
 |`SFS=[a]|SFS=[b]`|说明匹配此垃圾邮件规则。|
-|`IPV=CAL`|邮件已通过垃圾邮件筛选器允许，因为已在连接筛选器中的 IP 允许列表中指定该 IP 地址。|
+|`IPV=CAL`|邮件已获得垃圾邮件筛选器的允许，因为 IP 地址已在连接筛选器的 IP 允许列表中指定。|
 |`H=<EHLOstring>`|连接电子邮件服务器的 HELO 或 EHLO 字符串。|
 |`PTR=<ReverseDNS>`|发送 IP 地址的 PTR 记录，也被称为反向 DNS 地址。|
 

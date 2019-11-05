@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要确保收到来自特定发件人的邮件，因为您信任这些邮件及其邮件，您可以在 Exchange 管理中心的垃圾邮件筛选器策略中调整您的允许列表。
-ms.openlocfilehash: b01abc327dd19a2d3098d3c49deed1edb1c07b68
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8651b09d891a57cd5239311026af701064c9a4e1
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075738"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964448"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 
@@ -59,7 +59,7 @@ ms.locfileid: "37075738"
 
 1. 将垃圾邮件可信度（SCL）设置为-1 （绕过垃圾邮件筛选）。
 
-2. 添加 X 标头，以指示规则执行的操作。 在下面的示例中，您可以添加一个简单的标头 "X-ETR：绕过经过`contoso.com`身份验证的发件人的垃圾邮件筛选"。 如果在此规则中有多个域，则可以根据需要更改标题文本。**当邮件由于 ETR 而跳过筛选时，它会在 X-Forefront-反垃圾邮件报告标头中标记 SFV： SKN**（**如果它位于 IP 允许列表中，它还会标记 IPV： CAL**）。 这将帮助进行故障排除。
+2. 添加 X 标头，以指示规则执行的操作。 在下面的示例中，您可以添加一个简单的标头 "X-ETR：绕过经过`contoso.com`身份验证的发件人的垃圾邮件筛选"。 如果在此规则中有多个域，则可以根据需要更改标题文本。 **当邮件由于 ETR 而跳过筛选时，它会在 X Forefront 反垃圾邮件报告标头中标记 SFV： SKN** （**如果它位于 IP 允许列表中，它还会标记 IPV： CAL**）。 这将帮助进行故障排除。
 
 ![用于绕过垃圾邮件筛选的 GUI。](../media/1-AllowList-SkipFilteringFromContoso.png)
 
