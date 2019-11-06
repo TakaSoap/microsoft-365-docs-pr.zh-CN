@@ -90,6 +90,7 @@
 #### [为以前版本的 Office 365 邮件加密设置 Azure 权限管理](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 ## [了解数据分类（预览）](data-classification-overview.md)
+### [查看已应用标签的内容（预览）](data-classification-content-explorer.md)
 ### [查看标签活动（预览）](data-classification-activity-explorer.md)
 ### [可训练分类器入门（预览）](classifier-getting-started-with.md)
 ### [使用就绪分类器（预览）](classifier-using-a-ready-to-use-classifier.md)
