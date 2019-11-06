@@ -4,6 +4,7 @@
 ## [合规中心的新增功能](whats-new.md)
 ## [最新的合规性内容更新](recently-updated-topics-mcc.md)
 ## [Microsoft 365 合规中心](microsoft-365-compliance-center.md)
+## [Microsoft 365 解决方案目录（预览版）](microsoft-365-solution-catalog.md)
 ## [转到安全与合规中心](go-to-the-securitycompliance-center.md)
 ## [使用免费的 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全与合规计划](plan-for-security-and-compliance.md)
@@ -17,9 +18,13 @@
 ## 客户密钥
 ### [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)
 ### [有关使用 Office 365 客户密钥执行服务加密的 FAQ](service-encryption-with-customer-key-faq.md)
-## 监督通信
-### [了解监督策略](supervision-policies.md)
-### [配置组织的监督策略](configure-supervision-policies.md)
+## 沟通合规性
+### [了解沟通合规性（预览版）](communication-compliance.md)
+### [在 Microsoft 365 中配置通信合规性（预览版）](communication-compliance-configure.md)
+### [调查和修正沟通合规性警报（预览版）](communication-compliance-investigate-remediate.md)
+### [沟通合规性功能参考（预览版）](communication-compliance-feature-reference.md)
+### [Office 365 中的监督策略](supervision-policies.md)
+### [配置 Office 365 的监督策略](configure-supervision-policies.md)
 ## [信息屏障](information-barriers.md)
 ### [定义信息屏障策略](information-barriers-policies.md)
 ### [信息屏障策略的属性](information-barriers-attributes.md)
@@ -31,6 +36,8 @@
 ### [使用敏感度标签中的加密限制对内容的访问](encryption-sensitivity-labels.md)
 ### [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)
 ### [使用标签分析查看标签使用情况](label-analytics.md)
+### [将灵敏度标签与团队、组和网站配合使用](sensitivity-labels-teams-groups-sites.md)
+### [启用 SharePoint 和 OneDrive 中 Office 文件的灵敏度标签](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [在 Office 应用中的敏感度标签](sensitivity-labels-office-apps.md)
 
 ## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
@@ -89,6 +96,7 @@
 ### [创建和训练分类器（预览）](classifier-creating-a-trainable-classifier.md)
 
 # 管理信息治理
+## [管理信息治理](manage-information-governance.md)
 ## [导入数据](importing-pst-files-to-office-365.md)
 ### [使用网络上传导入 PST 文件](use-network-upload-to-import-pst-files.md)
 ### [使用驱动器传送导入 PST 文件](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -372,7 +380,7 @@
 ### [合规性管理器（预览版）](compliance-manager-overview.md)
 #### [合规性管理器（预览版）新增功能](compliance-manager-release-notes.md)
 #### [使用合规性管理器（预览版）](working-with-compliance-manager.md)
-#### [合规性管理器（旧版）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+#### [合规性管理器（经典）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR 数据主体请求工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [符合 GDPR 的 Office 365 信息保护](office-365-information-protection-for-gdpr.md)
@@ -394,8 +402,8 @@
 # [法规合规性行动计划](compliance-solutions-overview.md)
 
 ## [ISO - 建议行动计划](iso-action-plan.md)
-## [NIST - 建议行动计划](nist-action-plan.md) 
-
+## [NIST - 建议行动计划](nist-action-plan.md)
+## [CCPA - 常见问题](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [适用于 GDPR 的建议行动计划](gdpr-action-plan.md)
 
@@ -592,6 +600,7 @@
 #### [PASF（英国）](offering-pasf-uk.md)
 
 ### 北美
+#### [加州消费者隐私法案 (CCPA)](offering-ccpa.md)
 #### [加拿大隐私法](offering-canadian-privacy-laws.md)
 
 ### 南美洲

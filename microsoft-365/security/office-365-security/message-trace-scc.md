@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
+ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968522"
+ms.locfileid: "37993727"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -63,7 +63,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 - 对于**以下人员**：在此字段中单击以选择组织中的一个或多个收件人。
 
 > [!NOTE]
-> 您还可以键入外部发件人和收件人的电子邮件地址。 支持通配符（例如， `*@contoso.com`），但不能同时在同一字段中使用多个通配符条目。<br/>可以粘贴多个发件人或收件人列表，用`;`分号（）分隔。 允许使用`\s`空格（）、回车`\r`符（）或下`\n`一行（）符号。
+> 您还可以键入外部发件人和收件人的电子邮件地址。 支持通配符（例如， `*@contoso.com`），但不能同时在同一字段中使用多个通配符条目。<br/>可以粘贴多个发件人或收件人列表，用`;`分号（）分隔。 空格（`\s`）、回车符（`\r`）或下一行（`\n`）。
 
 ### <a name="time-range"></a>时间范围
 
