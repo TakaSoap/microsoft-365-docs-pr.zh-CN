@@ -1,5 +1,5 @@
 ---
-title: 从 Office 365 商业高级版迁移到 Microsoft 365 商业版
+title: 从 Office 365 商业高级版升级到 Microsoft 365 商业版
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,99 +19,114 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: 了解如何将企业移动到 Microsoft 365 商业版。
-ms.openlocfilehash: ae9ca0fe97916fdae6104a6edbb04efba5d9299e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: 将你的企业从 Office 365 商业高级升级到 Microsoft 365 业务的步骤。
+ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
+ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575870"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38002099"
 ---
-# <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a><span data-ttu-id="c7dc5-103">从 Office 365 商业高级版迁移到 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="c7dc5-103">Migrate to Microsoft 365 Business from Office 365 Business Premium</span></span>
+# <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a><span data-ttu-id="3036e-103">从 Office 365 商业高级版升级到 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="3036e-103">Upgrade to Microsoft 365 Business from Office 365 Business Premium</span></span>
 
-<span data-ttu-id="c7dc5-104">如果已有 Office 365 for business 订阅（例如，Office 365 商业高级版），则可以轻松地将许可证添加到 Microsoft 365 商业，并将其分配给部分或所有用户。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-104">If you already have an Office 365 for business subscription, for example, Office 365 Business Premium, you can easily add licenses to Microsoft 365 Business, and assign them to some, or all users.</span></span>
-  
-> [!NOTE]
-> <span data-ttu-id="c7dc5-105">您不能使用 "[切换计划](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton)" 按钮来升级到 Microsoft 365 商业版。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-105">You can't use the [Switch plans](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton) button to upgrade to Microsoft 365 Business yet.</span></span> 
-  
-## <a name="add-microsoft-365-business-licenses"></a><span data-ttu-id="c7dc5-106">添加 Microsoft 365 商业版许可证</span><span class="sxs-lookup"><span data-stu-id="c7dc5-106">Add Microsoft 365 Business licenses</span></span>
+<span data-ttu-id="3036e-104">如果你有[office 365 for business 订阅](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)（例如 Office 365 商业高级版），你可以轻松地升级到 Microsoft 365 business。</span><span class="sxs-lookup"><span data-stu-id="3036e-104">If you have an [Office 365 for business subscription](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), for example, Office 365 Business Premium, you can easily upgrade to Microsoft 365 Business.</span></span> <span data-ttu-id="3036e-105">如果要添加以下内容，请升级到 Microsoft 365 商业版：</span><span class="sxs-lookup"><span data-stu-id="3036e-105">Upgrade to Microsoft 365 Business if you want to add:</span></span> 
+- <span data-ttu-id="3036e-106">Windows 10 专业版（对运行 Windows 8 或更高版本的电脑）</span><span class="sxs-lookup"><span data-stu-id="3036e-106">Windows 10 Pro (to PCs running Windows 8 or later)</span></span>
+- <span data-ttu-id="3036e-107">管理设备上的业务数据的简单控件</span><span class="sxs-lookup"><span data-stu-id="3036e-107">Simple controls that manage business data on devices</span></span>
+- <span data-ttu-id="3036e-108">高级安全功能。</span><span class="sxs-lookup"><span data-stu-id="3036e-108">Advanced security capabilities.</span></span>
+<span data-ttu-id="3036e-109">有关[Microsoft.com](https://www.microsoft.com/microsoft-365/business)的详细信息，请参阅 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="3036e-109">Find out more about Microsoft 365 Business at [Microsoft.com](https://www.microsoft.com/microsoft-365/business)</span></span>
 
-<span data-ttu-id="c7dc5-107">你可以通过两种方式获取 Microsoft 365 商业版。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-107">You have two ways to get Microsoft 365 Business.</span></span> <span data-ttu-id="c7dc5-108">合作伙伴可以从[Microsoft 合作伙伴中心](get-microsoft-365-business.md)为你购买 Microsoft 365 商业版。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-108">A partner can purchase Microsoft 365 Business for you from [Microsoft Partner Center](get-microsoft-365-business.md).</span></span> <span data-ttu-id="c7dc5-109">您的合作伙伴还可以帮助您过渡到 Microsoft 365 业务。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-109">Your partner can also help you transition to Microsoft 365 Business.</span></span>
-  
-<span data-ttu-id="c7dc5-110">如果你管理自己的订阅，可以[联系 sales](https://www.microsoft.com/microsoft-365/business)以购买 Microsoft 365 商业版许可证。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-110">If you manage your own subscription, you can [contact sales](https://www.microsoft.com/microsoft-365/business) to purchase Microsoft 365 Business licenses.</span></span> 
-  
-<span data-ttu-id="c7dc5-111">请参阅[添加、更改或删除订阅顾问合作伙伴](https://support.office.com/article/f86e8177-936e-491e-9024-44dea2b296ff)，了解如何开始使用合作伙伴。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-111">See [Add, change, or delete a subscription advisor partner](https://support.office.com/article/f86e8177-936e-491e-9024-44dea2b296ff) to find out how you can start working with a partner.</span></span> 
-  
-<span data-ttu-id="c7dc5-112">如果提供了购买许可证的链接，您将完成如下所示的向导。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-112">If you are given a link to purchase your licences, you will walk through a wizard like the one below.</span></span> <span data-ttu-id="c7dc5-113">选择 **"是，将它添加到我的帐户**"。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-113">Choose **Yes, add it to my account**.</span></span> <span data-ttu-id="c7dc5-114">您还可以选取许可数量和付款方法。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-114">You can also pick the number of licences and the method of payment.</span></span>
-  
-![在 Microsoft 365 Business direct 买链接上，选择添加到你的当前帐户，或注册一个新帐户。](media/8bc54fd1-9cab-44d5-af91-c471e89aea46.png)
-  
-## <a name="assign-microsoft-365-licenses"></a><span data-ttu-id="c7dc5-116">分配 Microsoft 365 许可证</span><span class="sxs-lookup"><span data-stu-id="c7dc5-116">Assign Microsoft 365 licenses</span></span>
+## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a><span data-ttu-id="3036e-110">Office 365 商业高级版和 Microsoft 365 商业版之间的区别是什么？</span><span class="sxs-lookup"><span data-stu-id="3036e-110">What's the difference between Office 365 Business Premium and Microsoft 365 Business?</span></span>
+<span data-ttu-id="3036e-111">我们已将这两个计划的并行比较添加到[Microsoft 365 业务服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)中。</span><span class="sxs-lookup"><span data-stu-id="3036e-111">We've added a side-by-side comparison of these two plans to the [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).</span></span> 
 
-1. <span data-ttu-id="c7dc5-117">一旦购买了新的许可证，并且这是您首次执行此操作，Microsoft 365 企业版的安装标题将显示在管理中心的顶部。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-117">Once you have purchased new licenses, and this is the first time you did, the setup banner for Microsoft 365 Business will display on top of the admin center.</span></span>
+1. <span data-ttu-id="3036e-112">一旦购买了新的许可证，并且这是您首次执行此操作，Microsoft 365 企业版的安装标题将显示在管理中心的顶部。</span><span class="sxs-lookup"><span data-stu-id="3036e-112">Once you have purchased new licenses, and this is the first time you did, the setup banner for Microsoft 365 Business will display on top of the admin center.</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="c7dc5-118">安装标题是添加新用户、新域和为新用户迁移电子邮件的机会。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-118">The setup banner is an opportunity to add new users, a new domain, and migrate email for new users.</span></span> <span data-ttu-id="c7dc5-119">如果不打算执行任何操作，则仍应完成向导并选择 "默认选项"，使其从管理主页中消失。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-119">If you don't plan to do any, you should still go through the wizard and choose default options to make it disappear from the admin home page.</span></span> 
+    > <span data-ttu-id="3036e-113">安装标题是添加新用户、新域和为新用户迁移电子邮件的机会。</span><span class="sxs-lookup"><span data-stu-id="3036e-113">The setup banner is an opportunity to add new users, a new domain, and migrate email for new users.</span></span> <span data-ttu-id="3036e-114">如果不打算执行任何操作，则仍应完成向导并选择 "默认选项"，使其从管理主页中消失。</span><span class="sxs-lookup"><span data-stu-id="3036e-114">If you don't plan to do any, you should still go through the wizard and choose default options to make it disappear from the admin home page.</span></span> 
   
    ![选择 "在 Microsoft 365 企业上启动安装程序" 已准备好设置横幅。](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
   
-    <span data-ttu-id="c7dc5-121">选择" **开始设置**"。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-121">Choose **Start setup**.</span></span>
+    <span data-ttu-id="3036e-116">选择" **开始设置**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-116">Choose **Start setup**.</span></span>
     
-2. <span data-ttu-id="c7dc5-122">在 "**个性化登录和电子邮件**" 页上，如果要使用此机会将其他域添加到订阅中，则可以通过选择 "**连接您已拥有的域**" 来添加域。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-122">On the **Personalize your sign-in and email** page, you can add a domain by choosing **Connect a domain you already own** if you want to use this opportunity to add another domain to your subscription.</span></span> 
+2. <span data-ttu-id="3036e-117">在 "**个性化登录和电子邮件**" 页上，如果要使用此机会将其他域添加到订阅中，则可以通过选择 "**连接您已拥有的域**" 来添加域。</span><span class="sxs-lookup"><span data-stu-id="3036e-117">On the **Personalize your sign-in and email** page, you can add a domain by choosing **Connect a domain you already own** if you want to use this opportunity to add another domain to your subscription.</span></span> 
     
-    <span data-ttu-id="c7dc5-123">如果您已经设置了一个域，则第二个字段将指示并将显示 "**继续使用** \<_域名_\> **进行电子邮件" 和 "登录"**。  </span><span class="sxs-lookup"><span data-stu-id="c7dc5-123">If you have already set up a domain, the second field will indicate that and will say **Continue using** \<  _your domain name_\> **for email and signing in**.</span></span> <span data-ttu-id="c7dc5-124">如果你未设置与订阅的域，则将**继续使用** \<_贵公司的 name.onmicrosoft.com_ \> **电子邮件并登录**。  </span><span class="sxs-lookup"><span data-stu-id="c7dc5-124">If you haven't set up a domain with you subscription, it will say **Continue using** \<  _your company name.onmicrosoft.com_\> **for email and signing in**.</span></span>
+    <span data-ttu-id="3036e-118">如果您已经设置了一个域，则第二个字段将指示并将显示 "**继续使用** \<_域名_\> **进行电子邮件" 和 "登录"**。  </span><span class="sxs-lookup"><span data-stu-id="3036e-118">If you have already set up a domain, the second field will indicate that and will say **Continue using** \<  _your domain name_\> **for email and signing in**.</span></span> <span data-ttu-id="3036e-119">如果你未设置与订阅的域，则将**继续使用** \<_贵公司的 name.onmicrosoft.com_ \> **电子邮件并登录**。  </span><span class="sxs-lookup"><span data-stu-id="3036e-119">If you haven't set up a domain with you subscription, it will say **Continue using** \<  _your company name.onmicrosoft.com_\> **for email and signing in**.</span></span>
     
-    <span data-ttu-id="c7dc5-125">选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-125">Choose **Next**.</span></span>
+    <span data-ttu-id="3036e-120">选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="3036e-120">Choose **Next**.</span></span>
     
     ![在 "个性化登录和电子邮件" 页上，选择 "添加域" 或 "使用您已使用的域"。](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
   
-3. <span data-ttu-id="c7dc5-127">在 "**添加新用户**" 页上，如果您有要向其分配 Microsoft 365 业务许可证的新员工，则可以添加新用户。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-127">On the **Add new users** page, you can add new users, if you have new employees that you want to assign the Microsoft 365 Business licenses to.</span></span> 
+3. <span data-ttu-id="3036e-122">在 "**添加新用户**" 页上，如果您有要向其分配 Microsoft 365 业务许可证的新员工，则可以添加新用户。</span><span class="sxs-lookup"><span data-stu-id="3036e-122">On the **Add new users** page, you can add new users, if you have new employees that you want to assign the Microsoft 365 Business licenses to.</span></span> 
     
-    <span data-ttu-id="c7dc5-128">如果你没有要添加的新员工，并且想要将许可证分配给现有用户，请选择 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-128">If you don't have new employees to add and want to assign licences to existing users, choose **Next**.</span></span>
+    <span data-ttu-id="3036e-123">如果你没有要添加的新员工，并且想要将许可证分配给现有用户，请选择 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-123">If you don't have new employees to add and want to assign licences to existing users, choose **Next**.</span></span>
     
-4. <span data-ttu-id="c7dc5-129">在 \* \* 迁移电子邮件 \* \* 页面上，您可以选择为您在步骤3中添加的任何新用户迁移电子邮件。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-129">On the \*\* Migrate email messages \*\* page you can choose to migrate email for any of the new users you added in step 3.</span></span> <span data-ttu-id="c7dc5-130">您也可以跳过这一步。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-130">You can skip this step also.</span></span> <span data-ttu-id="c7dc5-131">选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-131">Choose **Next**.</span></span>
+4. <span data-ttu-id="3036e-124">在 "**迁移电子邮件**" 页面上，您可以选择为您在步骤3中添加的任何新用户迁移电子邮件。</span><span class="sxs-lookup"><span data-stu-id="3036e-124">On the **Migrate email messages** page you can choose to migrate email for any of the new users you added in step 3.</span></span> <span data-ttu-id="3036e-125">您也可以跳过这一步。</span><span class="sxs-lookup"><span data-stu-id="3036e-125">You can skip this step also.</span></span> <span data-ttu-id="3036e-126">选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="3036e-126">Choose **Next**.</span></span>
     
-5. <span data-ttu-id="c7dc5-132">在最后一页上，选择 **"转到管理中心**"，然后继续安装。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-132">On the last page, choose **go to the admin center**, and continue setup there.</span></span>
+5. <span data-ttu-id="3036e-127">在最后一页上，选择 **"转到管理中心**"，然后继续安装。</span><span class="sxs-lookup"><span data-stu-id="3036e-127">On the last page, choose **go to the admin center**, and continue setup there.</span></span>
     
-6. <span data-ttu-id="c7dc5-133">在管理中心中，转到 "**用户** \> **活动用户**"。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-133">In the admin center, go to **Users** \> **Active users**.</span></span>
+6. <span data-ttu-id="3036e-128">在管理中心中，转到 "**用户** \> **活动用户**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-128">In the admin center, go to **Users** \> **Active users**.</span></span>
     
-7. <span data-ttu-id="c7dc5-134">选择要向其分配**Microsoft 365 业务**许可证的用户，然后选择 "**产品许可证**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-134">Select the user to whom you want to assign the **Microsoft 365 Business** license to, and then choose **Edit** next to **Product Licenses**.</span></span>
+7. <span data-ttu-id="3036e-129">选择要向其分配**Microsoft 365 业务**许可证的用户，然后选择 "**产品许可证**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-129">Select the user to whom you want to assign the **Microsoft 365 Business** license to, and then choose **Edit** next to **Product Licenses**.</span></span>
     
     ![在用户卡中，选择 "产品许可证" 旁边的 "编辑"。](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. <span data-ttu-id="c7dc5-136">在**产品许可证**中，将**Microsoft 365 企业**幻灯片保存到 **"** \> **保存**"，然后**关闭**。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-136">In **Product licenses** slide **Microsoft 365 Business** to **On** \> **Save**, and then **Close**.</span></span>
-    
-<span data-ttu-id="c7dc5-137">购买 Microsoft 365 商业版的初始许可证后，你现在可以在**帐单** \> **购买服务**中添加更多的许可证。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-137">Once you have purchased the initial license for Microsoft 365 Business, you can now also add more in **Billing** \> **Purchase services**.</span></span> <span data-ttu-id="c7dc5-138">在 "**购买服务**" 页上，可以单击**Microsoft 365 名片**上的省略号，然后选择 "**更改许可证数量**" 以购买更多。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-138">On the **Purchase services** page you can click on the ellipses on the **Microsoft 365 Business** card, and choose **Change license quantity** to purchase more.</span></span> 
-  
-## <a name="protect-user-devices-and-files"></a><span data-ttu-id="c7dc5-139">保护用户设备和文件</span><span class="sxs-lookup"><span data-stu-id="c7dc5-139">Protect user devices and files</span></span>
+## <a name="before-you-get-started"></a><span data-ttu-id="3036e-131">开始前的准备</span><span class="sxs-lookup"><span data-stu-id="3036e-131">Before you get started</span></span>
 
-<span data-ttu-id="c7dc5-140">为 Microsoft 365 商业版分配许可证之后，可以开始保护用户的设备和文件。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-140">After you have assigned licenses to Microsoft 365 Business, you can start protecting the users' devices and files.</span></span>
+- <span data-ttu-id="3036e-132">**何时应选择升级？**</span><span class="sxs-lookup"><span data-stu-id="3036e-132">**When should I choose upgrade?**</span></span> <span data-ttu-id="3036e-133">如果要升级分配给单个计划的**所有用户**，则升级是正确的选择。</span><span class="sxs-lookup"><span data-stu-id="3036e-133">Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan.</span></span> <span data-ttu-id="3036e-134">当您选择 "升级" 时，所有计划用户都会同时切换到另一个计划。</span><span class="sxs-lookup"><span data-stu-id="3036e-134">When you choose upgrade, all plan users get switched to another plan at the same time.</span></span> <span data-ttu-id="3036e-135">如果您不想将每个分配到单个计划的用户进行升级，请为新计划购买许可证（在此示例中为 Microsoft 365 企业版），并[将这些许可证单独分配](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)给您要升级的每个用户。</span><span class="sxs-lookup"><span data-stu-id="3036e-135">If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business), and [assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) to each user that you want to upgrade.</span></span> 
+- <span data-ttu-id="3036e-136">**某些加载项可能会阻止升级**如果您尝试启动升级且您的加载项无法继续运行，则可以先删除加载项，稍后再将其添加到（如果仍需要）。</span><span class="sxs-lookup"><span data-stu-id="3036e-136">**Some add-ons might prevent upgrade** If you try to start an upgrade and you have an add-on that prevents you from continuing, you can remove the add-on first, and then add it back later - if you still need it.</span></span> 
+- <span data-ttu-id="3036e-137">**如果预付计划**预付计划没有直接的升级路径。</span><span class="sxs-lookup"><span data-stu-id="3036e-137">**If you prepaid your plan** There isn't a straightforward upgrade path for prepaid plans.</span></span> <span data-ttu-id="3036e-138">你会知道你是否拥有预付计划，因为你使用可能已在商店中购买的产品 ID 设置你的计划。</span><span class="sxs-lookup"><span data-stu-id="3036e-138">You'll know if you have a prepaid plan because you set up your plan using a product ID that you might have purchased in a store.</span></span> <span data-ttu-id="3036e-139">联系合作伙伴，转到 Microsoft store，或等到预付计划过期，以切换到新计划。</span><span class="sxs-lookup"><span data-stu-id="3036e-139">Contact a partner, go to the Microsoft store, or wait until your prepaid plan expires to switch to a new plan.</span></span>
+
+## <a name="upgrade-to-microsoft-365-business"></a><span data-ttu-id="3036e-140">升级到 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="3036e-140">Upgrade to Microsoft 365 Business</span></span>
+<span data-ttu-id="3036e-141">通过在[新管理中心](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)中执行以下步骤来购买你的许可证：</span><span class="sxs-lookup"><span data-stu-id="3036e-141">Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview):</span></span>
+1. <span data-ttu-id="3036e-142">登录到管理员中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。</span><span class="sxs-lookup"><span data-stu-id="3036e-142">Sign into the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
+2. <span data-ttu-id="3036e-143">转到导航窗格，然后选择 "**计费** \> **产品 & 服务**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-143">Go to the navigation pane and select **Billing** \> **Products & Services**.</span></span> <span data-ttu-id="3036e-144">查找你的 Office 365 订阅并将其选中以查看详细信息。</span><span class="sxs-lookup"><span data-stu-id="3036e-144">Find your Office 365 subscription and select it to view the details.</span></span> 
+
+    ![屏幕截图显示如何在管理中心查找和选择订阅。](media/FindYourSubscription.png)
+
+3. <span data-ttu-id="3036e-146">在下一个页面上，选择 "**升级**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-146">On the next page, select **Upgrade**.</span></span> 
+
+      ![屏幕截图显示在管理中心中选择 "升级" 的位置。](media/SelectUpgrade.png)
+
+  > [!NOTE]
+  > <span data-ttu-id="3036e-148">如果您看到一条消息，指出出现 "在 Azure Active Directory 中基于组的许可不支持订阅的升级"，则可以安全地忽略此情况，除非您的组织非常大。</span><span class="sxs-lookup"><span data-stu-id="3036e-148">If you see a message that says "Upgrading your subscription is not supported with group-based licensing in Azure Active Directory", you can safely ignore this unless you have a very large organization.</span></span> <span data-ttu-id="3036e-149">已选择此选项的组织将知道他们使用的是基于组的许可。</span><span class="sxs-lookup"><span data-stu-id="3036e-149">Organizations who have selected this option will be aware that they're using group-based licensing.</span></span>
+
+4. <span data-ttu-id="3036e-150">接下来，您可以查看可以升级到的 Office 计划的列表。</span><span class="sxs-lookup"><span data-stu-id="3036e-150">Next, you can view a list of Office plans that you can upgrade to.</span></span> <span data-ttu-id="3036e-151">在这种情况下，请查找 Microsoft 365 商业版计划。</span><span class="sxs-lookup"><span data-stu-id="3036e-151">In this case, find the Microsoft 365 Business plan.</span></span> <span data-ttu-id="3036e-152">如果想要查看此计划中包含的所有 Office 应用和服务，可以向下滚动。</span><span class="sxs-lookup"><span data-stu-id="3036e-152">You can scroll down if you want to see all the Office apps and services that are included with this plan.</span></span> <span data-ttu-id="3036e-153">在**Microsoft 365 商业**版下，选择 "**升级**" 以将 Microsoft 365 业务添加到你的购物车。</span><span class="sxs-lookup"><span data-stu-id="3036e-153">Under **Microsoft 365 Business**, select **Upgrade** to add Microsoft 365 Business to your cart.</span></span>
+5. <span data-ttu-id="3036e-154">在购物车中：</span><span class="sxs-lookup"><span data-stu-id="3036e-154">In the cart:</span></span>
+    1. <span data-ttu-id="3036e-155">我们会自动将你的所有当前用户的许可证包括到购物车中。</span><span class="sxs-lookup"><span data-stu-id="3036e-155">We'll automatically include licenses for all your current users to the cart.</span></span> <span data-ttu-id="3036e-156">如果你需要更多或更少的许可证，你需要[单独购买并分配这些许可证](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)。</span><span class="sxs-lookup"><span data-stu-id="3036e-156">If you need more, or less licenses, you'll need to [buy and assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).</span></span>  
+    2. <span data-ttu-id="3036e-157">您可以调整按月或按年支付的方式。</span><span class="sxs-lookup"><span data-stu-id="3036e-157">You can adjust how you'd like to pay - monthly or yearly.</span></span> <span data-ttu-id="3036e-158">选择下拉菜单以做出选择。</span><span class="sxs-lookup"><span data-stu-id="3036e-158">Select the drop-down menu to make your choice.</span></span>
+6. <span data-ttu-id="3036e-159">选择您将看到购买摘要的 "**转到签出**"，其中包括此帐户的付款方式。</span><span class="sxs-lookup"><span data-stu-id="3036e-159">Select **Go to Checkout** where you'll see a summary of your purchase, including the payment method for this account.</span></span> <span data-ttu-id="3036e-160">您还可以在此处添加促销代码（如果有的话）。</span><span class="sxs-lookup"><span data-stu-id="3036e-160">You can also add a promo code here if you have one.</span></span>
+7. <span data-ttu-id="3036e-161">选择 "**下订单**" 以完成购买。</span><span class="sxs-lookup"><span data-stu-id="3036e-161">Select **Place order** to complete your purchase.</span></span>
+<span data-ttu-id="3036e-162">需要 Microsoft 几分钟的时间来设置新的服务计划。</span><span class="sxs-lookup"><span data-stu-id="3036e-162">It takes Microsoft a few minutes to set up your new service plans.</span></span> <span data-ttu-id="3036e-163">若要查看进度，请选择 "**检查升级状态**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-163">To check on progress, select **Check upgrade status**.</span></span> 
+1. <span data-ttu-id="3036e-164">计划准备就绪后，您可能需要在管理中心完成一些额外的设置步骤。</span><span class="sxs-lookup"><span data-stu-id="3036e-164">Once your plan is ready, you might need to complete some additional setup steps in the admin center.</span></span> <span data-ttu-id="3036e-165">在导航窗格中，选择 "**主页**" 以完成任何其他设置步骤。</span><span class="sxs-lookup"><span data-stu-id="3036e-165">In the navigation pane, select **Home** to complete any additional setup steps.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="3036e-166">你将收到一个你不再需要的 Ofifce 365 许可证的按比例退款。</span><span class="sxs-lookup"><span data-stu-id="3036e-166">You'll receive a prorated refund for the Ofifce 365 licenses that you no longer need.</span></span> <span data-ttu-id="3036e-167">在设置新计划后，您的银行帐户或信用卡将会在两天内收取费用。</span><span class="sxs-lookup"><span data-stu-id="3036e-167">Your bank account or credit card will be charged about two days after you set up the new plan.</span></span>
   
-1. <span data-ttu-id="c7dc5-141">在管理中心的左侧导航中，转到 "**设备** \> **策略**"。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-141">In the admin center, in the left nav, go to **Devices** \> **Policies**.</span></span>
-    
-2. <span data-ttu-id="c7dc5-142">在 "**设备策略**" 页上，选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-142">On the **Device policies** page, choose **Add**.</span></span>
-    
-3. <span data-ttu-id="c7dc5-143">在 "**添加策略**" 窗格中，为策略指定一个名称，然后从下拉类型中选择一个**策略类型**。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-143">In the **Add policy** pane give the policy a name, and then choose a **Policy type** from the drop-down.</span></span> 
-    
-    <span data-ttu-id="c7dc5-144">您可以设置应用程序策略来保护 Android 和 iPhone 设备上的文件以及 Windows 10，还可以为公司拥有的 Windows 10 设备设置设备配置策略。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-144">You can set up application policies for protecting files on Android and iPhone devices, as well as Windows 10, and you can set up device configuration policies for company owned Windows 10 devices.</span></span> <span data-ttu-id="c7dc5-145">有关详细信息，请参阅以下链接：</span><span class="sxs-lookup"><span data-stu-id="c7dc5-145">See the following links for details:</span></span>
-    
-  - [<span data-ttu-id="c7dc5-146">设置 Android 或 iOS 设备的应用保护设置</span><span class="sxs-lookup"><span data-stu-id="c7dc5-146">Set app protection settings for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
-    
-  - [<span data-ttu-id="c7dc5-147">设置 Windows 10 设备的应用程序保护设置</span><span class="sxs-lookup"><span data-stu-id="c7dc5-147">Set application protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
-    
-  - [<span data-ttu-id="c7dc5-148">设置 Windows 10 电脑的设备保护设置</span><span class="sxs-lookup"><span data-stu-id="c7dc5-148">Set device protection settings for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
-    
-   ![在 "添加策略" 窗格中，为其输入名称，然后从下拉菜单中选择策略类型。](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
+## <a name="protect-user-devices-and-files"></a><span data-ttu-id="3036e-168">保护用户设备和文件</span><span class="sxs-lookup"><span data-stu-id="3036e-168">Protect user devices and files</span></span>
+
+<span data-ttu-id="3036e-169">现在已分配 Microsoft 365 业务许可证，请完成启动保护设备和文件的步骤。</span><span class="sxs-lookup"><span data-stu-id="3036e-169">Now that Microsoft 365 Business licenses have been assigned, complete steps to start protecting devices and files.</span></span> <span data-ttu-id="3036e-170">你将使用管理中心导航窗格中包含的一些新选项。</span><span class="sxs-lookup"><span data-stu-id="3036e-170">You'll be using some new options included in the admin center navigation pane.</span></span>
   
-4. <span data-ttu-id="c7dc5-150">设置策略后，你和你的员工可以设置设备：</span><span class="sxs-lookup"><span data-stu-id="c7dc5-150">Once you set up policies, you and your employees can set up devices:</span></span>
+1. <span data-ttu-id="3036e-171">在 "管理中心" 的导航窗格中，转到 "**设备** \> **策略**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-171">In the admin center, in the navigation pane, go to **Devices** \> **Policies**.</span></span>
     
-  - <span data-ttu-id="c7dc5-151">如果 windows Pro Creator 更新中还没有您的 Windows，则需要将[其升级到 Windows Pro 创意者更新](upgrade-to-windows-pro-creators-update.md)。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-151">If your Windows aren't already on Windows Pro Creator update, you will need to [upgrade them to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).</span></span>
+2. <span data-ttu-id="3036e-172">在 "**设备策略**" 页上，选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="3036e-172">On the **Device policies** page, select **Add**.</span></span>
     
-  - <span data-ttu-id="c7dc5-152">有关 Windows 设备的步骤，请参阅为[Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-152">See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) for steps for Windows devices.</span></span> 
+3. <span data-ttu-id="3036e-173">在 "**添加策略**" 窗格中，为策略指定一个名称（例如，保护工作文件），然后从下拉类型中选择一个**策略类型**。</span><span class="sxs-lookup"><span data-stu-id="3036e-173">In the **Add policy** pane give the policy a name (for example, Protect work files), and then choose a **Policy type** from the drop-down.</span></span> 
     
-  - <span data-ttu-id="c7dc5-153">有关 Android 手机和 Iphone 的步骤，请参阅为[Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-153">See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) for steps for Android phones and iPhones.</span></span> 
+    <span data-ttu-id="3036e-174">您可以设置应用程序策略来保护 Android 和 iPhone 设备上的文件以及 Windows 10，还可以为公司拥有的 Windows 10 设备设置设备配置策略。</span><span class="sxs-lookup"><span data-stu-id="3036e-174">You can set up application policies for protecting files on Android and iPhone devices, as well as Windows 10, and you can set up device configuration policies for company owned Windows 10 devices.</span></span> <span data-ttu-id="3036e-175">有关详细信息，请参阅以下链接：</span><span class="sxs-lookup"><span data-stu-id="3036e-175">See the following links for details:</span></span>
     
-5. <span data-ttu-id="c7dc5-154">若要自动安装 Office 客户端应用，请参阅[Prepare For office client deployment By Microsoft 365 Business](prepare-for-office-client-deployment.md)和[在 Windows 10 设备上自动安装或卸载 office](auto-install-or-uninstall-office.md)。</span><span class="sxs-lookup"><span data-stu-id="c7dc5-154">To automatically install Office client apps, see [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md) and [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md).</span></span>
+  - [<span data-ttu-id="3036e-176">设置 Android 或 iOS 设备的应用保护设置</span><span class="sxs-lookup"><span data-stu-id="3036e-176">Set app protection settings for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
     
+  - [<span data-ttu-id="3036e-177">设置 Windows 10 设备的应用程序保护设置</span><span class="sxs-lookup"><span data-stu-id="3036e-177">Set application protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
+    
+  - [<span data-ttu-id="3036e-178">设置 Windows 10 电脑的设备保护设置</span><span class="sxs-lookup"><span data-stu-id="3036e-178">Set device protection settings for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
+    
+  
+4. <span data-ttu-id="3036e-179">设置策略后，你和你的员工可以设置设备：</span><span class="sxs-lookup"><span data-stu-id="3036e-179">After you set up policies, you and your employees can set up devices:</span></span>
+    
+  - <span data-ttu-id="3036e-180">如果你的 Windows 设备尚未使用 Windows Pro Creator 更新，则需要将[其升级到 Windows Pro 创意者更新](upgrade-to-windows-pro-creators-update.md)。</span><span class="sxs-lookup"><span data-stu-id="3036e-180">If your Windows devices aren't already using the Windows Pro Creator update, you'll need to [upgrade them to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).</span></span>
+    
+  - <span data-ttu-id="3036e-181">有关 Windows 设备的步骤，请参阅为[Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="3036e-181">See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) for steps for Windows devices.</span></span> 
+    
+  - <span data-ttu-id="3036e-182">有关 Android 手机和 Iphone 的步骤，请参阅为[Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="3036e-182">See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) for steps for Android phones and iPhones.</span></span> 
+
 
 

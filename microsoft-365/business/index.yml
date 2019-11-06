@@ -1,0 +1,185 @@
+### YamlMime:Hub
+title: Microsoft 365 业务资源
+summary: Microsoft 365 商业版包括 Windows 和 Office 应用程序（如 Excel 和 Outlook）的最新版本。 获取并运行并利用扩展到所有业务设备的数据保护和安全性。
+brand: m365
+metadata:
+  title: Microsoft 365 业务资源
+  description: 说明
+  ms.service: o365-administration
+  ms.topic: hub-page
+  ms.collection: collection
+  author: samanro
+  ms.author: samanro
+  ms.date: 10/01/2019
+  ms.openlocfilehash: 88c08b430fa67d81435b7b6a4eb079a216b228d7
+  ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/06/2019
+  ms.locfileid: "38002417"
+conceptualContent:
+  items:
+  - title: 什么是 Microsoft 365 商业版？
+    links:
+    - url: microsoft-365-business-overview.md
+      itemType: overview
+      text: 概述
+    - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+      itemType: video
+      text: Microsoft 365 商业培训
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
+      itemType: overview
+      text: 比较计划（仅英文版）
+    - url: https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+      itemType: reference
+      text: 服务说明
+    - url: support/microsoft-365-business-faqs.md
+      itemType: reference
+      text: 常见问题
+  - title: 设置 Microsoft 365 商业版
+    links:
+    - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
+      itemType: video
+      text: 1. 运行安装向导
+    - url: protection-settings-for-windows-10-pcs.md
+      itemType: how-to-guide
+      text: 2. 保护你的电脑
+    - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
+      itemType: video
+      text: 3. 设置团队
+    - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+      itemType: get-started
+      text: 4. 安装 Office
+  - title: 合作伙伴的资源（仅限英文版）
+    links:
+    - url: https://www.microsoft.com/microsoft-365/partners/business
+      itemType: overview
+      text: 合作伙伴页面
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-customer-pitch-deck
+      itemType: download
+      text: 音调卡片（客户聚焦）
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-partner-pitch-deck
+      itemType: download
+      text: 音调组（合作伙伴焦点）
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+      itemType: download
+      text: 技术基础知识
+  - title: 管理用户
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
+      itemType: how-to-guide
+      text: 添加用户
+    - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
+      itemType: how-to-guide
+      text: 删除用户
+    - url: https://docs.microsoft.com/office365/admin/add-users/reset-passwords
+      itemType: how-to-guide
+      text: 重置某人的密码
+    footerLink:
+      url: https://docs.microsoft.com/office365/admin/admin-home
+      text: 查看详细信息
+  - title: 管理威胁
+    links:
+    - url: https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp
+      itemType: overview
+      text: Office 365 高级威胁防护
+    - url: set-up-mfa.md
+      itemType: how-to-guide
+      text: 设置 MFA
+    - url: https://docs.microsoft.com/en-us/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+      itemType: how-to-guide
+      text: 防御勒索软件
+    - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
+      itemType: overview
+      text: 条件访问
+    footerLink:
+      url: https://docs.microsoft.com/office365/admin/admin-home
+      text: 查看详细信息
+  - title: 管理数据
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+      itemType: overview
+      text: 数据丢失防护
+    - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+      itemType: how-to-guide
+      text: 发送加密电子邮件
+    - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
+      itemType: how-to-guide
+      text: 设置电子邮件保留
+    - url: https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+      itemType: video
+      text: 创建和使用敏感度标签
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/compliance/
+      text: 查看详细信息
+  - title: 管理设备
+    links:
+    - url: view-policies-and-devices.md
+      itemType: how-to-guide
+      text: 电脑 & 移动设备
+    - url: remove-company-data.md
+      itemType: how-to-guide
+      text: 删除公司数据
+    - url: reset-devices-to-factory-settings.md
+      itemType: how-to-guide
+      text: 擦除和重置
+    - url: https://docs.microsoft.com/en-us/intune/index
+      itemType: overview
+      text: Intune
+    - url: manage-windows-devices.md
+      itemType: how-to-guide
+      text: 设置混合 Azure AD 加入
+    - url: access-resources.md
+      itemType: how-to-guide
+      text: 设置 Azure AD 加入
+    - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
+      text: Windows Autopilot
+      itemType: overview
+    footerLink:
+      url: manage-windows-devices.md
+      text: 查看详细信息
+  - title: 监视安全性
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+      itemType: how-to-guide
+      text: 安全分数
+    - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
+      itemType: overview
+      text: Intune 应用保护策略报告
+    - url: https://docs.microsoft.com/office365/enterprise/view-service-health
+      itemType: how-to-guide
+      text: 运行状况监视警报
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/security/
+      text: 查看详细信息
+  - title: 支持和社区
+    links:
+    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
+      itemType: whats-new
+      text: 公告
+    - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
+      itemType: video
+      text: 获取帮助
+    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
+      itemType: overview
+      text: 发送反馈
+    - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
+      itemType: overview
+      text: 中小型企业技术社区
+  - title: 我如何...
+    links:
+    - url: sign-up.md
+      itemType: get-started
+      text: 注册 Microsoft 365 商业版
+    - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
+      itemType: video
+      text: 在云中存储文件
+    - url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+      itemType: video
+      text: 与 Microsoft 团队协作
+    - url: https://docs.microsoft.com/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+      itemType: how-to-guide
+      text: 查看我的帐单
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/security/
+      text: 查看详细信息
