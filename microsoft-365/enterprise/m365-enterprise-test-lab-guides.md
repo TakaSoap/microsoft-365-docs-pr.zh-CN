@@ -3,7 +3,7 @@ title: Microsoft 365 企业版测试实验室指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 11/04/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 082d110ca7b25d3613ee276b30066683cd0232b5
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: dadde9d6366e2d5d12bf632d0b77bf60ba9cdbab
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733415"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964419"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -32,9 +32,10 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
   
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
-  
+单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+
+[![Microsoft 365 企业版测试实验室指南堆栈](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+
 ## <a name="base-configuration"></a>基本配置
 
 首先，为包含 Office 365 E5、企业移动性+安全性 (EMS) E5 和 Windows 10 企业版的 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365-enterprise/)创建测试环境。你可以创建两种不同类型的基本配置：
@@ -117,6 +118,4 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
     
    配置 Privileged Access Management，以便实时访问 Office 365 组织中的提升和特权任务。
 
-## <a name="see-also"></a>另请参阅
 
-[使用云应用测试实验室指南 (TLG) 测试 Office 365](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
