@@ -1,5 +1,5 @@
 # Microsoft 365 商业版
-## [Microsoft 365](index.md)
+## [Microsoft 365](index.yml)
 ## [什么是 Microsoft 365 商业版？](microsoft-365-business-overview.md)
 ## [获取 Microsoft 365 商业版](sign-up.md)
 ## [数据保护先决条件](pre-requisites-for-data-protection.md)
@@ -32,7 +32,10 @@
 ### [Windows 10 PC 的设备保护设置](protection-settings-for-windows-10-pcs.md)
 #### [验证 Windows 10 PC 上的设置](validate-settings-on-windows-10-pcs.md)
 ### [Windows 10 PC 的应用保护设置](protection-settings-for-windows-10-devices.md)
-## [迁移到 Microsoft 365 商业版](migrate-to-microsoft-365-business.md)
+## 迁移到 Microsoft 365 商业版
+### [从 Office 365 商业高级版迁移](migrate-to-microsoft-365-business.md)
+### [从 Office 365 E3 迁移](migrate-from-e3.md)
+### [迁移到 Microsoft 365 企业版](migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md)
 ## 帐单
 ### [你的账单](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [支付](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
