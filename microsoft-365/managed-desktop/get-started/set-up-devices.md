@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd86637aeb0d8a8690729a97e81ad5e2bea62818
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7282e1f9d780c127dd70845efefa90aa03e57537
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982885"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011843"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>设置 Microsoft 托管桌面设备
 
@@ -24,7 +24,7 @@ ms.locfileid: "36982885"
 1. 查看[当前已批准的设备](../service-description/device-list.md)的列表。
 2. 使用经批准的设备合作伙伴对设备进行排序。
 3. 到达后，请执行下列操作之一：
-    - [自己注册新设备](register-devices-self.md)
+    - [自行注册新设备](register-devices-self.md)
     - 与合作伙伴合作以注册设备
 4. [让你的用户准备好](get-started-devices.md)使用 Microsoft 托管桌面设备
 
@@ -35,3 +35,14 @@ ms.locfileid: "36982885"
     - [自行注册现有设备](register-reused-devices-self.md)
     - 与合作伙伴合作以注册设备
 3. [让你的用户准备好](get-started-devices.md)使用 Microsoft 托管桌面设备
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft 托管桌面入门步骤
+
+1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)
+2. [调整条件访问](conditional-access.md)
+3. [分配许可证](assign-licenses.md)
+4. [部署 Intune 公司门户](company-portal.md)
+5. [启用企业状态漫游](enterprise-state-roaming.md)
+6. 设置设备（本主题）
+7. [让用户做好使用设备的准备](get-started-devices.md)
+8. [部署应用](deploy-apps.md)

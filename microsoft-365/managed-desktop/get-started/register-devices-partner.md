@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 69d9387047cbb14a97f3da1d401b30a97bd7fd90
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 971b17d3f9fad15d5c254d47af9b6eb30b66633c
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982713"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011943"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>合作伙伴注册设备的步骤
 
@@ -20,7 +20,7 @@ ms.locfileid: "36982713"
 
 
 ## <a name="prepare-for-registration"></a>准备注册 
-在完成客户注册之前，必须首先在[合作伙伴中心](https://partner.microsoft.com/dashboard)建立与它们的关系。 请务必选择 "**包括 Azure Active Directory 和 Office 365 的委派管理权限**"。 有关详细信息，请参阅[合作伙伴中心帮助](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)。
+在完成客户注册之前，必须首先在[合作伙伴中心](https://partner.microsoft.com/dashboard)建立与它们的关系。 请务必选择 "**包括 Azure Active Directory 和 Office 365 的委派管理权限**"。 有关详细信息，请参阅[合作伙伴中心帮助](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)。
 
 若要完成对客户的注册，请首先创建 CSV 文件。
 
@@ -70,12 +70,12 @@ ms.locfileid: "36982713"
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](register-devices-self.md#troubleshooting-device-registration)。 |
 | 为用户准备就绪 | 注册成功，现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
-| 可用 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
+| 活动 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
 | 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们最近未使用设备（最近7天）。  |
 
 
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 | 错误消息 | 详细信息 |
 |---------------|-------------|

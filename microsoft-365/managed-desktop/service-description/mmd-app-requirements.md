@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 6b5f1d7cf8070808aecb57c7f5b2c16ec84b37d6
+ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982453"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38020365"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用程序要求
 
@@ -38,7 +38,7 @@ Microsoft 托管桌面设备上不允许某些应用程序类型：
 
 ## <a name="restricted-app-behaviors"></a>受限制的应用程序行为
 
-某些应用程序行为可能会对用户体验产生负面影响，也可能对 Microsoft 托管桌面设备带来安全风险。 不允许在 Microsoft 托管桌面环境中运行具有以下行为的应用程序，而无需从 Microsoft 进行特定的例外。
+某些应用程序行为可能会对用户体验产生负面影响，也可能对 Microsoft 托管桌面设备带来安全风险。 在 Microsoft 托管桌面环境中，不允许运行具有以下行为的应用程序，而无需从 Microsoft 进行指定。
 
 用户体验：
 - 安装后台服务
@@ -58,5 +58,5 @@ Microsoft 托管桌面设备上不允许某些应用程序类型：
 
 Microsoft 托管桌面仅支持通过 Microsoft 托管设备在 Windows 更新或已安装的收件箱中提供的设备驱动程序。 
 
-如果应用程序需要特定驱动程序来运行它，则会将其视为受限制的应用程序，并要求将豁免部署到 Microsoft 托管桌面。 
+如果应用程序需要特定驱动程序来运行它，则会将其视为受限制的应用程序，并且需要将其部署到 Microsoft 托管桌面。 
 

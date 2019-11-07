@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b17b5a3458458ff0c73c93fa184ef8ff6a064199
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37159680"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011993"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的管理员支持
 
@@ -21,7 +21,7 @@ ms.locfileid: "37159680"
 >请确保为应用程序打包、设备、安全性和其他[设置了管理员联系人](../get-started/add-admin-contacts.md)。 如果未配置管理员联系人，则无法在上述任何区域中提交支持请求。
 
 **提交支持请求**
-1. 登录到[Microsoft 托管桌面管理门户](http://aka.ms/mwaasportal)。 
+1. 登录到[Microsoft 托管桌面管理门户](https://aka.ms/mwaasportal)。 
 2. 在 "**支持请求**" 中，选择 " **+ 新支持票证**"。
 3. 选择与您需要的帮助相匹配的**支持请求类型**。 下表概述了这些选项。 
 4. 选择**严重性级别**。 有关详细信息，请参阅[支持请求严重性定义](#sev)。 
