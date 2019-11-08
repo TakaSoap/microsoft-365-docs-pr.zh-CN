@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果用户从 Office 365 连续发送被归类为垃圾邮件的电子邮件，这些用户将被限制发送任何其他电子邮件。
-ms.openlocfilehash: d0409a16a8584e7561f04a30fcc4184bfa41d87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4abb37bbda20d17b19144d6f62b4ef1a4fc8fb4c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075539"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032157"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>发送垃圾电子邮件后，从受限用户门户删除用户
 
@@ -34,7 +34,7 @@ ms.locfileid: "37075539"
 
 估计完成时间：5 分钟
   
-您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅 [Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的“反垃圾邮件”条目。
+您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅 [Exchange Online 中的功能权限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的“反垃圾邮件”条目。
 
 以下步骤也可以通过远程 PowerShell 执行。 使用 Get-BlockedSenderAddress cmdlet 获取受限用户的列表，并使用 Remove-BlockedSenderAddress  移除限制。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
@@ -81,10 +81,10 @@ Office 365 安全与合规性警报策略页下有一条“被限制发送电子
 
 [响应遭到入侵的电子邮件帐户](../../compliance/responding-to-a-compromised-email-account.md)
 
-[了解“被限制发送电子邮件的用户”警报](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies)
+[了解“被限制发送电子邮件的用户”警报](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)
 
 [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
 
-[安全与合规中心内的警报策略](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies)
+[安全与合规中心内的警报策略](https://docs.microsoft.com/office365/securitycompliance/alert-policies)

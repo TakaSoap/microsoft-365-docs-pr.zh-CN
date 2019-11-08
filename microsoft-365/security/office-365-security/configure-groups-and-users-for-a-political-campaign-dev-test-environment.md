@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
-ms.openlocfilehash: 6cf9fb03c66f1cf4d1f20287f5dc121474898d5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ca72ee800287bf8a90fe45f4aaa1de3400cb71e1
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075400"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038881"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
@@ -134,7 +134,7 @@ ms.locfileid: "37075400"
   
 接下来，填写你的组织名称、位置和常用密码，然后从 PowerShell 命令提示符或集成的脚本环境 (ISE) 运行这些命令：
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -169,31 +169,31 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 使用这些步骤验证动态组成员资格和基于组的许可是否工作正常。
   
 1. 在浏览器的“**Microsoft Office 主页**”标签页中，单击“**管理**”磁贴。
-    
+
 2. 在浏览器的新“**Microsoft 365 管理中心**”标签页中，单击“**用户**”。
-    
+
 3. 在用户列表中，单击“候选人”****。
-    
+
 4. 在列出“候选人”**** 用户帐户属性的窗格中，确保：
-    
+
   - 它是“高级和战略人员”**** 组（位于“组成员资格”****）的成员。
-    
+
   - 它已被分配“企业移动性 + 安全性 E5”**** 和“Office 365 企业 E5”**** 许可证（位于“产品许可证”**** 中）。
-    
+
 5. 关闭“候选人”**** 用户帐户窗格。
-    
+
 ## <a name="record-values-for-future-reference"></a>记录这些值以供将来参考
 
 记录此开发/测试环境的这些值以用于 Office 365 和 EMS 试用订阅：
   
 - 试用订阅组织名称：![](../media/Common-Images/TableLine.png) 
-    
+
     例如，对于 contoso.onmicrosoft.com 的试用订阅域名，组织名称是“contoso”。
-    
+
 - Office 365 全局管理员名称：![](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     在安全位置记录此帐户的密码和其他用户帐户的常用初始密码。
-    
+
 ## <a name="next-step"></a>后续步骤
 
 通过[在政治宣传活动开发/测试环境中创建团队网站](create-team-sites-in-a-political-campaign-dev-test-environment.md)，在此开发/测试环境中构建四种不同类型的 SharePoint Online 团队网站。
@@ -207,7 +207,3 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 [云采用测试实验室指南 (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

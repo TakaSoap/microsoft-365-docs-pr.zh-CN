@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步了解相关信息，然后在整个组织中内推广 Microsoft Teams。
-ms.openlocfilehash: e6a4ccc1b7ec5989707e2195b66fa1cf987cd091
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889911"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033597"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版的 Microsoft Teams
 
@@ -63,8 +63,8 @@ Microsoft Teams 集聊天、会议、文档共享和按线索组织对话等多�
 
 若要深入了解 Microsoft，了解如何进行部署以及如何使用 Teams 进行协作，请参阅：
 
-- [Microsoft Teams 采用策略让员工为新的工作文化做好准备](https://www.microsoft.com/zh-CN/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
-- [通过 Microsoft Teams 会议室在全球范围内实现可扩展的新式会议体验](https://www.microsoft.com/zh-CN/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
+- [Microsoft Teams 采用策略让员工为新的工作文化做好准备](https://www.microsoft.com/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [通过 Microsoft Teams 会议室在全球范围内实现可扩展的新式会议体验](https://www.microsoft.com/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: 0e3a1a3d45cb51f43a7e2266e7662f532fc0a47c
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 05615c4c9020326da6b2e3e97b162dbb8d132854
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746488"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033647"
 ---
 # <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 
@@ -67,7 +67,7 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-了解 Microsoft 的专家如何[部署和管理 Office 365 专业增强版更新](https://www.microsoft.com/zh-CN/itshowcase/deploying-and-managing-microsoft-365#primaryR7)。
+了解 Microsoft 的专家如何[部署和管理 Office 365 专业增强版更新](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR7)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 

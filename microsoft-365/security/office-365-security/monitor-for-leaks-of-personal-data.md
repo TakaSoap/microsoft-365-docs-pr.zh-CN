@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: 51e681d751e9d36872a47fcde1390c3dda8a2184
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b4ca34f3446a0067c6497d844e5b79a78d0eb35e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075826"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032237"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -59,7 +59,7 @@ ms.locfileid: "37075826"
 
 DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查看报告”。 在“数据丢失防护 (DLP)”下，转到“DLP 策略和规则匹配项”或“DLP 误报和重写”。
 
-有关详细信息，请参阅[查看数据丢失防护报告](https://support.office.com/zh-CN/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)。
+有关详细信息，请参阅[查看数据丢失防护报告](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)。
 
 ![显示 DLP 策略匹配项的报告](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -77,21 +77,21 @@ Office 365 审核日志包含来自 Exchange Online、SharePoint Online、OneDri
 
 信息安全团队还可以搜索审核日志来调查可疑的数据泄露并确定根本原因和泄露的范围。此内置功能有助于遵守 GDPR 条款 33 和 34 的规定，其中要求在特定时间段内向 GDPR 监管机构和数据泄露的数据主体自身提供通知。通常建议在服务内仅将审核日志条目保留 90 天，而许多组织则要求将这些日志保留更长的时间。
 
-可以使用通过 Microsoft 管理活动 API 订阅到统一审核日志的解决方案，此解决方案按需存储日志条目并提供高级仪表板和警报。例如：[Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/zh-CN/azure/operations-management-suite/oms-solution-office-365)。
+可以使用通过 Microsoft 管理活动 API 订阅到统一审核日志的解决方案，此解决方案按需存储日志条目并提供高级仪表板和警报。例如：[Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365)。
 
 有关警报策略和搜索审核日志的更多信息：
 
--   [Microsoft 365 安全与合规中心中的警报策略](https://support.office.com/zh-CN/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Microsoft 365 安全与合规中心中的警报策略](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
--   [在 Office 365 中搜索用户和管理员活动的审核日志](https://support.office.com/zh-CN/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6)（介绍）
+-   [在 Office 365 中搜索用户和管理员活动的审核日志](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6)（介绍）
 
--   [启用或禁用 Office 365 审核日志搜索](https://support.office.com/zh-CN/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   [启用或禁用 Office 365 审核日志搜索](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [搜索审核日志](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [搜索审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501(v=exchg.160).aspx) (cmdlet) 
 
--   [Office 365 审核日志中的属性详细信息](https://support.office.com/zh-CN/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   [Office 365 审核日志中的属性详细信息](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -125,11 +125,11 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 
 详细信息：
 
--   [部署 Cloud App Security](https://docs.microsoft.com/zh-CN/cloud-app-security/getting-started-with-cloud-app-security)
+-   [部署 Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [有关 Microsoft Cloud App Security 的更多信息](https://www.microsoft.com/zh-CN/cloud-platform/cloud-app-security)
+-   [有关 Microsoft Cloud App Security 的更多信息](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [使用 Microsoft Cloud App Security 代理阻止下载敏感信息](https://docs.microsoft.com/zh-CN/cloud-app-security/use-case-proxy-block-session-aad)
+-   [使用 Microsoft Cloud App Security 代理阻止下载敏感信息](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>用于检测个人数据共享的示例文件和活动策略
 

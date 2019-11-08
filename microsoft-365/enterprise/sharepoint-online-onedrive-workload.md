@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在你的组织中，逐步完成对 SharePoint 的价值规划、推广和推动过程。
-ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
-ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
+ms.openlocfilehash: 74ab3b65597cdf1752dd5dbf9179724464c998a3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37469144"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031637"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>为 Microsoft 365 企业版部署 SharePoint 和 OneDrive
 
@@ -165,7 +165,7 @@ SharePoint 可用于不同用途。需要确定哪些用途能够满足业务需
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-若要一窥 Microsoft，并了解我们是如何部署 SharePoint 的，请参阅 [SharePoint 到云：了解 Microsoft 如何运行自己的迁移](https://www.microsoft.com/zh-CN/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration)。
+若要一窥 Microsoft，并了解我们是如何部署 SharePoint 的，请参阅 [SharePoint 到云：了解 Microsoft 如何运行自己的迁移](https://www.microsoft.com/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration)。
 
 ## <a name="next-steps"></a>后续步骤
 

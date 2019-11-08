@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 07cb90684bbbba4851697020ceac4756381f8b55
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 0a65c5c02d9361efd65a7b3c58eb8a0e516033c3
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772236"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038981"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -81,13 +81,13 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 由于 DKIM 密钥同时支持 1024 和 2048 位，因此这些说明将告诉你如何将 1024 位密钥升级到 2048 位。 以下步骤针对的是两种用例，请选择最适合你的配置的步骤。
 
 1. 如果你**已经配置了 DKIM**，请按如下所示轮换位数：
-    1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/zh-CN/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 （cmdlet 来自 Exchange Online。）
+    1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 （cmdlet 来自 Exchange Online。）
     1. 然后执行以下 cmdlet：
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
 
 1. 或者，对于**新实现的 DKIM**：
-    1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/zh-CN/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 （这是 Exchange Online cmdlet。）
+    1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 （这是 Exchange Online cmdlet。）
     1. 执行以下 cmdlet：
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True`
@@ -115,7 +115,7 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>在 DNS 中发布自定义域的两条 CNAME 记录
 <a name="Publish2CNAME"> </a>
 
-对于您要为其在 DNS 中添加 DKIM 签名的每个域，您需要发布两条 CNAME 记录。 
+对于您要为其在 DNS 中添加 DKIM 签名的每个域，您需要发布两条 CNAME 记录。
 
 运行以下命令：
 
@@ -129,6 +129,7 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
+
 DNS 中的 CNAME 记录将指向 Office 365 的 Microsoft DNS 服务器上的 DNS 中存在的已创建的 DKIM TXT 记录。
   
 Office 365 使用你创建的两条记录执行自动密钥轮替。如果在 Office 365 中除了初始域外你还预配了自定义域，必须为额外配置的每个域发布两条 CNAME 记录。因此，如果有两个域，就必须发布两条额外的 CNAME 记录，依此类推。
@@ -210,8 +211,8 @@ TTL:                3600
    其中，_domain_ 是要对其启用 DKIM 签名的自定义域名。 
 
    例如，对于域 contoso.com：
-   
-   ```powershell
+
+    ```powershell
     Set-DkimSigningConfig -Identity contoso.com -Enabled $true
     ```
 
@@ -226,15 +227,15 @@ TTL:                3600
 - 打开邮件，然后查看邮件头。查看邮件头的说明因邮件客户端而异。有关在 Outlook 中查看邮件头的说明，请参阅[查看电子邮件头](https://support.office.com/article/CD039382-DC6E-4264-AC74-C048563D212C)。
 
   进行了 DKIM 签名的邮件将包含主机名以及您在发布 CNAME 条目时定义的域。该邮件如下例所示：
-    
-    ```text
+
+  ```text
     From: Example User <example@contoso.com>
     DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
         s=selector1; d=contoso.com; t=1429912795;
         h=From:To:Message-ID:Subject:MIME-Version:Content-Type;
         bh=<body hash>;
         b=<signed field>;
-    ```
+  ```
 
 - 查找身份验证结果标头。尽管每个接收服务用于标记传入邮件的格式稍有不同，但结果应都包括以下类似内容：**DKIM=pass** 或 **DKIM=OK**
 

@@ -3,7 +3,7 @@ title: 第 1 阶段：Microsoft 365 企业版的网络基础结构
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 部署 Microsoft 365 企业版的网络基础结构的步骤。
-ms.openlocfilehash: 35c65515854bb0c47a45e48d8e3c6af6a80d907c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 9fe7f16aef8b9c82ded2c17ce562dffb2194eaa2
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982793"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033667"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>第 1 阶段：Microsoft 365 企业版的网络基础结构
 
-![](./media/deploy-foundation-infrastructure/networking_icon.png)
+![第 1 阶段：网络](./media/deploy-foundation-infrastructure/networking_icon.png)
 
 Microsoft 365 企业版包括 Office 365、Microsoft Intune 以及 Microsoft Azure 的许多标识和安全服务。 所有这些基于云的服务都依赖于来自客户端设备通过 Internet 或专用电路的连接的安全性、性能和可靠性。 为了托管这些服务并将其提供给世界各地的客户，Microsoft 设计了一个强调性能和集成的网络基础架构。 
 
@@ -37,28 +37,28 @@ Microsoft 365 企业版包括 Office 365、Microsoft Intune 以及 Microsoft Azu
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[准备用于 Microsoft 365 的·网络](networking-provide-bandwidth-cloud-services.md)|
-|![](./media/stepnumbers/Step2.png)|[配置每个办公室的本地 Internet 连接](networking-dns-resolution-same-location.md)|
-|![](./media/stepnumbers/Step3.png)|[避免网络回流](networking-avoid-network-hairpins.md)|
-|![](./media/stepnumbers/Step4.png)|[配置流量旁路](networking-configure-proxies-firewalls.md)|
-|![](./media/stepnumbers/Step5.png)|[优化客户端和 Office 365 服务性能](networking-optimize-tcp-performance.md)|
+|![第 1 步](./media/stepnumbers/Step1.png)|[准备用于 Microsoft 365 的网络](networking-provide-bandwidth-cloud-services.md)|
+|![第 2 步](./media/stepnumbers/Step2.png)|[配置每个办公室的本地 Internet 连接](networking-dns-resolution-same-location.md)|
+|![第 3 步](./media/stepnumbers/Step3.png)|[避免网络回流](networking-avoid-network-hairpins.md)|
+|![第 4 步](./media/stepnumbers/Step4.png)|[配置流量旁路](networking-configure-proxies-firewalls.md)|
+|![第 5 步](./media/stepnumbers/Step5.png)|[优化客户端和 Office 365 服务性能](networking-optimize-tcp-performance.md)|
 
 
 在完成这些步骤后，请转到这一阶段的[退出条件](networking-exit-criteria.md)，以确保满足 Microsoft 365 企业版的必备条件和可选条件。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-洞察 Microsoft，了解这家公司如何[针对云服务优化 Microsoft 网络](https://www.microsoft.com/zh-CN/itshowcase/deploying-and-managing-microsoft-365#primaryR4)。
+洞察 Microsoft，了解这家公司如何[针对云服务优化 Microsoft 网络](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR4)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 
 了解 Contoso Corporation（有代表性的虚构跨国企业）如何针对 Microsoft 365 云服务[优化自己的网络设备和 Internet 连接](contoso-networking.md)。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[准备用于 Microsoft 365 的·网络](networking-provide-bandwidth-cloud-services.md)|
+|![第 1 步](./media/stepnumbers/Step1.png)|[准备用于 Microsoft 365 的·网络](networking-provide-bandwidth-cloud-services.md)|
 

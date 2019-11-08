@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文介绍 Office 365 如何缓解使用伪造发件人域（即欺骗性域）的网络钓鱼攻击。 通过分析邮件并阻止无法使用标准电子邮件身份验证方法或其他发件人信誉技术进行身份验证的邮件，它可以实现这一目标。 实施此更改是为了减少 Office 365 中的组织所面临的网络钓鱼攻击的数量。
-ms.openlocfilehash: e863a7fe580bdd6c60ba6f28d3fbf2df010e9384
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b793d3244343111f1894ff8aae77c2d6ea8f4f3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075136"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034283"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的反欺骗保护
 
@@ -115,7 +115,7 @@ Microsoft 区分两种不同类型的欺骗邮件：
   
  **组织内欺骗**
   
-也称为自我欺骗，如果“发件人: 地址”中的域与收件人域相同或相一致（当收件人域是组织的[接受域](https://technet.microsoft.com/zh-CN/library/jj945194%28v=exchg.150%29.aspx)之一时），就会发生这种情况。或者，当“发件人: 地址”中的域是同一组织的一部分时，也会发生这种情况。
+也称为自我欺骗，如果“发件人: 地址”中的域与收件人域相同或相一致（当收件人域是组织的[接受域](https://technet.microsoft.com/library/jj945194%28v=exchg.150%29.aspx)之一时），就会发生这种情况。或者，当“发件人: 地址”中的域是同一组织的一部分时，也会发生这种情况。
   
 例如，以下邮件具有来自同一域 (contoso.com) 的发件人和收件人。 在电子邮件地址中插入空格以防止垃圾邮件程序在此页面上收集信息：
   
@@ -654,7 +654,7 @@ Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 报告垃圾邮件或非垃圾邮件？
 
-你可以使用[适用于 Outlook 的报告消息加载项](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，或者如果未安装它，请[将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析](https://technet.microsoft.com/zh-CN/library/jj200769%28v=exchg.150%29.aspx)。
+你可以使用[适用于 Outlook 的报告消息加载项](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，或者如果未安装它，请[将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析](https://technet.microsoft.com/library/jj200769%28v=exchg.150%29.aspx)。
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>我是域管理员，不知道我的所有发件人都是谁！
 

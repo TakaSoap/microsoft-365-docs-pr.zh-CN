@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981693"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031107"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -26,7 +26,7 @@ ms.locfileid: "36981693"
 
 这些实验室旨在帮助您规划、 测试和验证运行 Windows 10 企业版和 Office 365 专业增强版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 System Center Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
-作为 Windows 10 和 Office 365 专业增强版的[桌面部署](http://www.aka.ms/howtoshift)过程的一部分，在开始探索部署工具更新和测试与部署相关的自动化时，建议首先生成沙盒或隔离的实验室环境。
+作为 Windows 10 和 Office 365 专业增强版的[桌面部署](https://www.aka.ms/howtoshift)过程的一部分，在开始探索部署工具更新和测试与部署相关的自动化时，建议首先生成沙盒或隔离的实验室环境。
 
 实验室工具包可免费下载，并使用试用版软件。
 
@@ -122,11 +122,11 @@ ms.locfileid: "36981693"
 
 ## <a name="additional-guidance"></a>**其他指南**
 
-  - [桌面部署中心](http://www.aka.ms/howtoshift)
+  - [桌面部署中心](https://www.aka.ms/howtoshift)
 
-  - [Microsoft Mechanics 的桌面部署系列视频](http://www.aka.ms/watchhowtoshift)
+  - [Microsoft Mechanics 的桌面部署系列视频](https://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager OS 部署](https://docs.microsoft.com/zh-CN/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager OS 部署](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 部署计划</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

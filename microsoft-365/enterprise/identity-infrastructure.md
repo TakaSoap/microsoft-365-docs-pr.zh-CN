@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 部署 Microsoft 365 企业版的身份基础结构的步骤。
-ms.openlocfilehash: cb5b714afcacd1e21951ec9f83fd7f09cbd88662
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 50c3321dfd8a552d7585606f654360b9cff35b3c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370439"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030887"
 ---
 # <a name="phase-2-identity"></a>阶段 2：标识
 
@@ -68,7 +68,7 @@ Microsoft 提供了一组有关[标识和设备访问](microsoft-365-policies-co
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-了解 Microsoft 的 IT 专家如何[管理标识和安全访问](https://www.microsoft.com/zh-CN/itshowcase/deploying-and-managing-microsoft-365#primaryR5)。
+了解 Microsoft 的 IT 专家如何[管理标识和安全访问](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的目录和网络就绪情况。
-ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982723"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031557"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步骤 2：目录和网络就绪情况
 
@@ -49,7 +49,7 @@ ms.locfileid: "36982723"
 
 如果你的组织已使用 Office 365、Exchange Online、Microsoft Intune 或其他 Microsoft Online 服务，表明你已在使用 Azure Active Directory。 如果是这样的话，只需确保你的桌面部署目标用户位于 Azure Active Directory 中，并且已分配许可证。
 
-如果当前未使用 Azure Active Directory，则有[大量资源](https://docs.microsoft.com/zh-CN/azure/active-directory/)可帮助你进行设置。 作为 Office 365 许可证的一部分，你可能完全有资格通过 Microsoft FastTrack 获得个性化帮助。 可以在[此处](https://fasttrack.microsoft.com)查看有关 Microsoft Fastrack 的更多信息。
+如果当前未使用 Azure Active Directory，则有[大量资源](https://docs.microsoft.com/azure/active-directory/)可帮助你进行设置。 作为 Office 365 许可证的一部分，你可能完全有资格通过 Microsoft FastTrack 获得个性化帮助。 可以在[此处](https://fasttrack.microsoft.com)查看有关 Microsoft Fastrack 的更多信息。
 
 Azure Active Directory 安装完成后，你的用户就可以登录并激活他们的 Office 365 专业增强版应用，你可以使用 Microsoft Intune 或 Windows Autopilot 部署来自动部署应用和策略。
 
@@ -65,7 +65,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
 ### <a name="software-updates"></a>软件更新
 
-需要为软件更新规划网络带宽。 Windows 10 和 Office 365 专业增强版使用新的服务模型，每月和每半年更新一次。 如果你不熟悉此模型，可以在[此处](https://docs.microsoft.com/zh-CN/windows/deployment/update/waas-overview)了解模型的更多信息。
+需要为软件更新规划网络带宽。 Windows 10 和 Office 365 专业增强版使用新的服务模型，每月和每半年更新一次。 如果你不熟悉此模型，可以在[此处](https://docs.microsoft.com/windows/deployment/update/waas-overview)了解模型的更多信息。
 
 新的服务模型包括一年两次的 Windows 功能更新、Office 半年频道更新和每月质量更新。功能更新大小通常为 2 - 4 GB，Office 半年频道更新大小为每次更新 300 - 400 MB。然后，每月质量更新大小可能从几百 MB 到 1 GB 以上。这是因为每月更新是累积更新，因此每个 Windows 10 版本的服务生命周期内的大小都会增加。也就是说，有些工具可以帮助减少必须通过网络传递实现更新的数据量。我们将在下面更详细地介绍这一点。
 
@@ -77,7 +77,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
 限制部署相关流量对网络的影响的一种方法是使用客户端上的 BITS（后台智能传输服务）设置来限制它。BITS 使用自适应比特率 (ABR) 来调整可用于部署目的的带宽；可以使用组策略在客户端上配置它。
 
-[关于 BITS](https://docs.microsoft.com/zh-CN/windows/desktop/bits/about-bits)
+[关于 BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
 如果使用 System Center Configuration Manager (Current Branch)，还可以配置启用 BITS 的分发点或使用 WDS 启用多播。
 
@@ -119,7 +119,7 @@ Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中
 
 **二进制增量压缩**从最新版本的 Office 365 专业增强版更新到下一版本时，Office 365 专业增强版使用二进制增量压缩来减少软件更新所消耗的带宽。通过仅从先前版本中提取二进制级别更改，可以最大限度地减少累积更新的逐月增长所带来的影响。这样一来，每台电脑每月可以节省数百 MB 的数据空间。但是，若要使用此功能，不能跳过版本。如果这样做的话，必须下载完整的累积更新。
 
-[下载适用于 Office 365 的更新](https://docs.microsoft.com/zh-CN/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[下载适用于 Office 365 的更新](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
 **Outlook 数据文件** Outlook 通常配置为在本地缓存用户的整个邮箱以供脱机使用。 在任何 Windows 部署中，只有就地升级需要用户的 Outlook 数据文件在升级后自行重建。 这是一个自动执行过程，但 Outlook 邮箱限制通常设置为最多 100 GB，所有用户在本地重新缓存整个邮箱意味着需要进行大量数据传输。 要减少网络负载，可能需要考虑使用组策略来减少“邮件保持脱机”设置。 在 Office 365 专业增强版的 Outlook 中或 Outlook 2016 中，默认值设置为 12 个月。 考虑将脱机缓存设置为持续 1 到 6 个月。 更改此设置不会影响联机邮箱的大小，并且在联机时仍可以通过 Outlook 搜索整个邮箱。
 
@@ -131,7 +131,7 @@ Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中
 
 [设置已知文件夹移动](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 
-[OneDrive 文件按需下载](https://www.microsoft.com/zh-CN/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
+[OneDrive 文件按需下载](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
 如果你还没有推出 OneDrive，那么从 Windows 7 到 Windows 10 的转换是启用 OneDrive 的绝佳机会，它可以无缝集成 Office 365 专业增强版。 请考虑在完成应用和设备准备工作的同时开始推出。 在开始移动 Windows 映像并通过网络部署应用之前，将先执行文件同步。
 

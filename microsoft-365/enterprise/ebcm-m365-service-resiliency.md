@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 恢复能力主题说明
-ms.openlocfilehash: 4c718674a70186b004d8fefc5381074dba81c164
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122282"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031047"
 ---
 # <a name="built-in-resiliency"></a>内置恢复能力
 
@@ -26,7 +26,7 @@ ms.locfileid: "37122282"
 
 **“SharePoint Online 停机时间**：用户无法读取或写入其具有适当权限的 SharePoint Online 网站集的任何部分的任何时间段。”
 
-可以在[服务级别协议](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37)中找到每个服务的停机时间定义。
+可以在[服务级别协议](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37)中找到每个服务的停机时间定义。
 
 若要最大限度地减少计划或意外停机时间，Microsoft 365 服务的设计和操作都具有高度可用性，并通过以下四个方面来从故障中恢复：
 

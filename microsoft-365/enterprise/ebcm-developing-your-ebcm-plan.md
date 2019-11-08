@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 开发云感知业务连续性计划时要考虑的事项。
-ms.openlocfilehash: 4a133c65f6a5a2de44e871995886a01c2ce8e9a9
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122332"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031067"
 ---
 # <a name="developing-your-continuity-plan"></a>开发连续性计划
 
@@ -61,7 +61,7 @@ ms.locfileid: "37122332"
 
 接下来，你将跨业务流程查看存在任何级联依赖关系的位置。 根据结果，你可以确定优先级并形成弹性策略和支持策略的标准操作过程。
 
-可以使用 [Microsoft 服务映射](https://docs.microsoft.com/zh-CN/azure/azure-monitor/insights/service-map)来帮助你使用此映射。 Microsoft 服务映射会自动发现 Windows 和 Linux 系统上的应用程序组件，并映射所有 TCP 依赖关系，标识连接和应用所依赖的远程第三方系统。 它还会将依赖关系映射到传统上黑暗的网络区域，如 Active Directory。
+可以使用 [Microsoft 服务映射](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)来帮助你使用此映射。 Microsoft 服务映射会自动发现 Windows 和 Linux 系统上的应用程序组件，并映射所有 TCP 依赖关系，标识连接和应用所依赖的远程第三方系统。 它还会将依赖关系映射到传统上黑暗的网络区域，如 Active Directory。
 
 下面是一个可以着手开始的依赖关系分析 (DA) 示例。 在依赖关系分析 (DA) 中，你将确定并检查流程依赖关系。 请确保包括人员、供应商、客户、合作伙伴和设施。 此分析中的数据将用于确定流程的恢复要求与支持依赖关系的恢复功能之间的差距。
 

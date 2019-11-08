@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的设备和应用就绪情况。
-ms.openlocfilehash: dda8291e8f57e4855e582614573d6971fa3919f1
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37422559"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031627"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步骤 1：设备和应用就绪情况
 
@@ -59,7 +59,7 @@ ms.locfileid: "37422559"
 
 若要设置桌面分析，首先需要设置 Azure 订阅并为其添加一个 Azure Log Analytics 工作区。 运行桌面分析服务后，便可以通过组策略设置注册任何连接 Internet 的 Windows 7 SP1 或更新系统的设备，非常简单。 不需要部署代理，桌面分析的可视化工作流可指导你完成从试生产到生产部署的过程。 如果需要，可以将桌面分析中的数据导出到软件部署工具（如 System Center Configuration Manager (Current Branch)），这样就可以在准备好部署时，直接定位电脑并生成集合。
 
-如果当前环境未设置桌面分析或者想要注册试用版，请转到桌面分析页 http://www.aka.ms/desktopanalytics) 并开始使用。
+如果当前环境未设置桌面分析或者想要注册试用版，请转到桌面分析页 https://www.aka.ms/desktopanalytics) 并开始使用。
 
 ## <a name="device-and-app-readiness-process"></a>设备和应用就绪情况过程
 
@@ -85,9 +85,9 @@ ms.locfileid: "37422559"
 
 你会发现清查的大多数应用程序、驱动程序和加载项将按原样工作。 对于桌面分析评估出存在问题的项目，它会为你提供已知信息，包括在何处查找版本更新以解决兼容性问题。 可以选择与用户一起停用和替换这些项目，而不是花费时间和资源来解决稀疏部署的非关键型应用程序和较旧设备中的复杂问题。
 
-还可以使用桌面分析来评估基于浏览器的兼容性问题，识别仍在使用 ActiveX 控件、浏览器帮助程序对象、VBScript 或 Microsoft Edge 浏览器不支持的其他旧技术的用户访问的网站和 Web 应用程序。 用户仍需要为这些站点使用 Internet Explorer 11，你可以使用 Enterprise Mode Site List Manager 将它们添加到 [Enterprise Mode Site List](https://docs.microsoft.com/zh-CN/microsoft-edge/deploy/emie-to-improve-compatibility)。
+还可以使用桌面分析来评估基于浏览器的兼容性问题，识别仍在使用 ActiveX 控件、浏览器帮助程序对象、VBScript 或 Microsoft Edge 浏览器不支持的其他旧技术的用户访问的网站和 Web 应用程序。 用户仍需要为这些站点使用 Internet Explorer 11，你可以使用 Enterprise Mode Site List Manager 将它们添加到 [Enterprise Mode Site List](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)。
 
-此外，为了帮助你迁移到 Office 365 专业增强版，你可能希望使用 [Readiness Toolkit for Office](https://docs.microsoft.com/zh-CN/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) 来测试加载项和 Microsoft Visual Basic for Applications (VBA) 宏的兼容性。
+此外，为了帮助你迁移到 Office 365 专业增强版，你可能希望使用 [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) 来测试加载项和 Microsoft Visual Basic for Applications (VBA) 宏的兼容性。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "37422559"
 
 Configuration Manager 软件清单是为设备和应用就绪情况使用基于云的分析解决方案的替代方法。 可以使用安装计数并钻取到特定计算机，帮助确定兼容性测试和验证的优先顺序，并通过包设置将应用程序包设置为与 Windows 10 兼容。 虽然此选项无法比较与 Microsoft 的分析服务的已知兼容性信息，但它可以作为一个有效解决方案来定位一组较小的按优先级排列的应用，用于进行手动测试。 
 
-有关更多信息，请参阅 [System Center Configuration Manager 中的软件清单简介](https://docs.microsoft.com/zh-CN/sccm/core/clients/manage/inventory/introduction-to-software-inventory)和 [System Center Configuration Manager 中的包和程序](https://docs.microsoft.com/zh-CN/sccm/apps/deploy-use/packages-and-programs)中的应用程序包的设置平台要求。
+有关更多信息，请参阅 [System Center Configuration Manager 中的软件清单简介](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory)和 [System Center Configuration Manager 中的包和程序](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs)中的应用程序包的设置平台要求。
 
 
 ## <a name="desktop-app-assure"></a>桌面应用保证

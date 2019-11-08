@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Windows 和 Office 重要的安全性和合规性注意事项。
-ms.openlocfilehash: 472a838c68ed06560f5b81f7854b05b1b2e8eefd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 10fc9ca58d9b48f752bdfed860b805e4f5663d6a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981753"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031687"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步骤 5：安全性和合规性注意事项
 
@@ -51,11 +51,11 @@ ms.locfileid: "36981753"
 
 解决这些问题的一种方法是在 Windows 10 中使用 BitLocker，它包含在 Windows 10 专业版和更高版本中。使用 BitLocker 可以在此过程中暂停对 OS 升级和功能更新的保护。
 
-[Bitlocker 基本部署](https://docs.microsoft.com/zh-CN/windows/security/information-protection/bitlocker/bitlocker-basic-deployment)
+[Bitlocker 基本部署](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-basic-deployment)
 
 ### <a name="antivirus-and-antimalware-application-compatibility"></a>防病毒和反恶意软件应用程序兼容性
 
-其次，虽然我们已经看到 Windows 7 和 Windows 10 之间超过 [99% 的 Windows 应用程序具有兼容性](https://www.microsoft.com/zh-CN/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)，但防病毒 (AV) 应用或虚拟专用网络 (VPN) 客户端通常属例外情况。这些应用程序通常使用未记录的方式实现非标准开发实践和 API，从而保护你的系统或将你连接到网络资源。
+其次，虽然我们已经看到 Windows 7 和 Windows 10 之间超过 [99% 的 Windows 应用程序具有兼容性](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)，但防病毒 (AV) 应用或虚拟专用网络 (VPN) 客户端通常属例外情况。这些应用程序通常使用未记录的方式实现非标准开发实践和 API，从而保护你的系统或将你连接到网络资源。
 
 因此，当转换到新版本的 Windows 时，这些应用本质上不怎么发生变化。如果你的 AV 或 VPN 软件在 Windows 10 中或升级后无法运行，修复方法通常是使用 Windows 10 上经测试受支持的内容替换你正在使用的应用。
 
@@ -77,19 +77,19 @@ ms.locfileid: "36981753"
 
 生物识别技术可以在设备级别提供唯一标识符，帮助你在朝着消除密码的目标迈进时实现更简单、更安全地访问设备和应用。Windows Hello 提供基于设备的多重身份验证。它依赖于设备本身、你的 PIN 或唯一生物识别标识符（例如，你的面部或指纹），可以通过策略强制执行。
 
-[Azure 身份管理基础知识](https://docs.microsoft.com/zh-CN/azure/active-directory/fundamentals/identity-fundamentals)
+[Azure 身份管理基础知识](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-fundamentals)
 
-[了解 Azure 标识解决方案](https://docs.microsoft.com/zh-CN/azure/active-directory/fundamentals/understand-azure-identity-solutions)
+[了解 Azure 标识解决方案](https://docs.microsoft.com/azure/active-directory/fundamentals/understand-azure-identity-solutions)
 
-[Azure Active Directory 条件访问](https://docs.microsoft.com/zh-CN/azure/active-directory/conditional-access/overview)
+[Azure Active Directory 条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
 
-[Windows Hello 企业版](https://docs.microsoft.com/zh-CN/windows/security/identity-protection/hello-for-business/hello-identity-verification)
+[Windows Hello 企业版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)
 
 ### <a name="virtualization-based-security"></a>基于虚拟化的安全性
 
 现在，除了身份之外，还可以针对已知威胁和未知威胁启用持续保护，为此，Windows 10 使用起核心作用的基于虚拟化的安全性，通过安全启动确保启动完整性和代码完整性。我们还可以通过保持独立于 Windows 的用户机密来帮助借助 Credential Guard 阻止凭据窃取。此外，应用程序防护可以通过在隔离容器中运行浏览器来隔离和缓解基于浏览器的威胁。所有这些技术都使用 Windows 10 基于虚拟化的安全性，并且是无法在 Windows 7 系统上复制的基础更改。请注意，这些功能也需要带 UEFI 的 64 位 Windows 和 SLAT 的虚拟化扩展支持（硬件级别）。
 
-[有关基于虚拟化的安全性的详细信息](https://docs.microsoft.com/zh-CN/windows-hardware/design/device-experiences/oem-vbs)
+[有关基于虚拟化的安全性的详细信息](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-vbs)
 
 ### <a name="security-enhancements-from-cloud-services"></a>云服务的安全增强功能
 
@@ -97,27 +97,27 @@ ms.locfileid: "36981753"
 
 借助 Microsoft Intelligent Security Graph，可以更快速地访问来自新出现的威胁的信息和保护。可以借助下面的一些示例开始使用 Office。
 
-**[数据丢失防护](https://docs.microsoft.com/zh-CN/office365/securitycompliance/data-loss-prevention-policies)** 内置于 Office 365 专业增强版中，可帮助在检测到信用卡或标识号等高风险内容时通知用户相关的安全策略。通知用户后，策略可以通知或阻止发送和共享。
+**[数据丢失防护](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** 内置于 Office 365 专业增强版中，可帮助在检测到信用卡或标识号等高风险内容时通知用户相关的安全策略。通知用户后，策略可以通知或阻止发送和共享。
 
-**[Azure 信息保护](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/client-admin-guide)** 是一项可与 Office 一起使用的补充服务，使用户能够轻松地对 Office 文件进行分类和标记。它可以触发对标记文件的自动操作，例如加密或锁定共享。
+**[Azure 信息保护](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)** 是一项可与 Office 一起使用的补充服务，使用户能够轻松地对 Office 文件进行分类和标记。它可以触发对标记文件的自动操作，例如加密或锁定共享。
 
-我们还在 Office 应用中引入了**[安全链接](https://docs.microsoft.com/zh-CN/office365/securitycompliance/atp-safe-links)** 保护，保护你免受已知恶意网站的动态列表的侵害。
+我们还在 Office 应用中引入了**[安全链接](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)** 保护，保护你免受已知恶意网站的动态列表的侵害。
 
-此外，Outlook 中的**[安全附件](https://docs.microsoft.com/zh-CN/office365/securitycompliance/atp-safe-attachments)** 作为 Exchange Online 的一部分，不仅仅是通过电子邮件筛选来检查附件。如果识别出高风险附件，安全附件将通知用户已知的恶意附件并将其从电子邮件中删除。
+此外，Outlook 中的**[安全附件](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments)** 作为 Exchange Online 的一部分，不仅仅是通过电子邮件筛选来检查附件。如果识别出高风险附件，安全附件将通知用户已知的恶意附件并将其从电子邮件中删除。
 
-**[Office 365 邮件加密](https://docs.microsoft.com/zh-CN/office365/securitycompliance/encryption)** (OME) 也可用于保护发送的电子邮件和附件，确保只有目标收件人才能查看电子邮件内容。OME 与 Google、Yahoo 和 Microsoft 使用者帐户身份验证无缝协作，一次性密码使其他电子邮件服务的用户也可以安全地接收电子邮件。
+**[Office 365 邮件加密](https://docs.microsoft.com/office365/securitycompliance/encryption)** (OME) 也可用于保护发送的电子邮件和附件，确保只有目标收件人才能查看电子邮件内容。OME 与 Google、Yahoo 和 Microsoft 使用者帐户身份验证无缝协作，一次性密码使其他电子邮件服务的用户也可以安全地接收电子邮件。
 
 #### <a name="additional-windows-10-protections"></a>其他 Windows 10 保护
 
-Windows 10 中的 **[Windows Defender 应用程序控制](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** 执行 Microsoft 已检查过安全性的已批准允许和拒绝应用程序列表，所有这些都使用 Microsoft Intune 通过终结点保护策略进行管理。
+Windows 10 中的 **[Windows Defender 应用程序控制](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** 执行 Microsoft 已检查过安全性的已批准允许和拒绝应用程序列表，所有这些都使用 Microsoft Intune 通过终结点保护策略进行管理。
 
-**[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/windows-defender-atp/overview)** 是一个用于预防性保护、破坏后检测、自动调查和响应的统一平台。它可以保护终结点免受网络威胁；检测高级攻击和数据泄露，自动执行安全事件并改善安全状况。
+**[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview)** 是一个用于预防性保护、破坏后检测、自动调查和响应的统一平台。它可以保护终结点免受网络威胁；检测高级攻击和数据泄露，自动执行安全事件并改善安全状况。
 
-**[攻击防护](https://docs.microsoft.com/zh-CN/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** 通过阻止恶意软件进入 Windows 并阻止不受信任的进程访问受保护的文件夹，帮助减小运行应用程序的攻击面。
+**[攻击防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** 通过阻止恶意软件进入 Windows 并阻止不受信任的进程访问受保护的文件夹，帮助减小运行应用程序的攻击面。
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/zh-CN/intune/introduction-intune) 作为基于云的管理服务，用于包括 IOS、Android 和 Windows 设备在内的移动应用场景，现在可以配置为共同管理，以补充和扩展由 System Center Configuration Manager 管理的特定工作负载的控件。这里涉及到一个优势：访问受保护资源的设备可能必须注册到设备管理（甚至是非托管、非加入域或非加入 Azure AD 的设备）。用户还可以在操作系统和应用程序级别利用粒度配置和符合性策略实施。可以使用 Microsoft Intune 集中配置应用程序策略和设置，并对 Windows 10 中的 Office 365 专业增强版和应用商店应用强制执行应用程序策略和设置。
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) 作为基于云的管理服务，用于包括 IOS、Android 和 Windows 设备在内的移动应用场景，现在可以配置为共同管理，以补充和扩展由 System Center Configuration Manager 管理的特定工作负载的控件。这里涉及到一个优势：访问受保护资源的设备可能必须注册到设备管理（甚至是非托管、非加入域或非加入 Azure AD 的设备）。用户还可以在操作系统和应用程序级别利用粒度配置和符合性策略实施。可以使用 Microsoft Intune 集中配置应用程序策略和设置，并对 Windows 10 中的 Office 365 专业增强版和应用商店应用强制执行应用程序策略和设置。
 
 ## <a name="next-step"></a>后续步骤
 
