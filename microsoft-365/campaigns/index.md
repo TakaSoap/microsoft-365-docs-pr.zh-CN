@@ -22,37 +22,37 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 适用于市场活动的 Microsoft 365
-ms.openlocfilehash: 02fb7f62466f5830f83128126a89f7e6a830dc16
-ms.sourcegitcommit: 204deabd34e5ee38b59d4742d75e74e3873cf892
+ms.openlocfilehash: d80e25aedaf3a0160fc6ed926222dd3c12cf7466
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35183225"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029076"
 ---
-<a name="microsoft-365-for-campaigns"></a>适用于市场活动的 Microsoft 365
+<a name="microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns
 ===========================
 
-在我们当前的世界中, 保持数据和通信的安全性是头等大事, 尤其是政治活动、医疗和法律惯例以及许多其他业务。 Microsoft 365 的市场活动提供了一组用于帮助保护您和数据的建议。 此库包括设置和使用此推荐的环境的帮助, 即使您不是市场活动也是如此。
+在我们当前的世界中，保持数据和通信的安全性是头等大事，尤其是政治活动、医疗和法律惯例以及许多其他业务。 Microsoft 365 的市场活动提供了一组用于帮助保护您和数据的建议。 此库包括设置和使用此推荐的环境的帮助，即使您不是市场活动也是如此。
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
 
 
-**Microsoft 365 的市场活动是什么？** 这是建议的包含 Microsoft 365 业务的安全配置, 以便您能够:
-- 依赖于可信的商业工作效率和协作工具, 如 Outlook、Word、Excel 和其他 Office 产品 
+**Microsoft 365 的市场活动是什么？** 这是建议的包含 Microsoft 365 业务的安全配置，以便您能够：
+- 依赖于可信的商业工作效率和协作工具，如 Outlook、Word、Excel 和其他 Office 产品 
 - 使用易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件 
 - 对用户帐户和标识应用额外保护 
 
 ![Microsoft 365 商业版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和身份](media/M365-WhatIsIt-SecurityFocus.png)
 
-虽然美国的联邦选举活动符合 Microsoft 365 商业版的特殊定价, 但具有此计划的任何组织都可以利用本指南来配置更高的安全性, 并了解如何安全地进行协作。
+虽然美国的联邦选举活动符合 Microsoft 365 商业版的特殊定价，但具有此计划的任何组织都可以利用本指南来配置更高的安全性，并了解如何安全地进行协作。
 
-此库包含以下内容:
+此库包含以下内容：
 - 添加更高安全性的说明性设置指南。
 - 帮助用户设置设备以实现安全访问。
 - 有关如何安全地进行协作和共享的指南。
 
-有关所包含内容的详细信息, 请参阅[Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)。 
+有关所包含内容的详细信息，请参阅[Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)。 
 
 
 <a name="get-started"></a>入门
@@ -65,7 +65,7 @@ ms.locfileid: "35183225"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
+                            <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -83,7 +83,7 @@ ms.locfileid: "35183225"
 <a name="solutions-for-your-campaign-or-small-business"></a>适用于您的市场活动或小型企业的解决方案
 --------------------------
 
-在设置安全的 Microsoft 365 环境之后, 可以使用以下解决方案来实现工作:
+在设置安全的 Microsoft 365 环境之后，可以使用以下解决方案来实现工作：
 
 <ul class="panelContent cardsW cols cols2">
     <li>
@@ -97,7 +97,7 @@ ms.locfileid: "35183225"
                     </div>
                     <div class="cardText">
                         <h3>创建协作团队</h3>
-                        <p>使用与 Microsoft 团队的主要员工、所有员工和合作伙伴或供应商之间的通信和协作, 与特定团队进行通信和协作。</p>
+                        <p>使用与 Microsoft 团队的主要员工、所有员工和合作伙伴或供应商之间的通信和协作，与特定团队进行通信和协作。</p>
                         <p><a href="create-teams-for-collaboration.md">创建团队</a></p>
                     </div>
                 </div>
@@ -151,7 +151,7 @@ ms.locfileid: "35183225"
                     </div>
                     <div class="cardText">
                         <h3>创建通信网站</h3>
-                        <p>在使用 SharePoint 创建的内部通信网站中, 与团队共享事件、邮件、图像等。</p>
+                        <p>在使用 SharePoint 创建的内部通信网站中，与团队共享事件、邮件、图像等。</p>
                         <p><a href="create-communications-site.md">创建网站</a></p>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ ms.locfileid: "35183225"
                     </div>
                     <div class="cardText">
                         <h3>共享文件和视频</h3>
-                        <p>将文件和视频保存到云, 以便所有相应的人员均可使用这些文件和视频。</p>
+                        <p>将文件和视频保存到云，以便所有相应的人员均可使用这些文件和视频。</p>
                         <p><a href="share-files-and-videos.md">开始共享</a></p>
                     </div>
                 </div>
