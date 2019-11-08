@@ -13,12 +13,12 @@ ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online Protection 和 Exchange Online 中的 DKIM 签名邮件验证
-ms.openlocfilehash: 75c104af4b3e6126bac37024de2c7f6ab337a028
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 347b47c0b182aab32d032abaa864357cc5b242ce
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076034"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031707"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>支持 DKIM 签名邮件验证
 
@@ -28,6 +28,6 @@ DKIM 可在邮件标头中验证出现在 DKIM 签名标头中的数字签名邮
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-管理员可以在 DKIM 验证结果中创建 Exchange[邮件流规则](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)（也称为传输规则），以根据需要筛选或路由邮件。 
+管理员可以在 DKIM 验证结果中创建 Exchange[邮件流规则](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)（也称为传输规则），以根据需要筛选或路由邮件。 
   
 

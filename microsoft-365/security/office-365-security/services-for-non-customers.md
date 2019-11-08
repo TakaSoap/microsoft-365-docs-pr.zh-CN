@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
-ms.openlocfilehash: 17d069a9bee76087790b608ba3c00bae9c644f99
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: cabb583aebc1baff1eb9f8286fceb2864b26deea
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441219"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031767"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>非客户向 Office 365 发送邮件的服务
 
@@ -46,7 +46,7 @@ Microsoft 提供了多种支持方案，以支持向 Office 365 收件箱发送�
 
 - 使用 [Office 365 除名门户](https://sender.office.com)提交请求以将您的 IP 从被阻止的发件人列表中删除。
 
-- 参阅 [Microsoft 社区论坛](https://community.office365.com/en-us/f/)。
+- 参阅 [Microsoft 社区论坛](https://community.office365.com/f/)。
 
 - 使用另一种方法联系您正在尝试发送邮件的 Office 365 客户，让他们联系 Microsoft 支持，并代表您开立支持票证。在某些情况下，出于法律原因，Microsoft 支持必须与拥有被阻止的 IP 空间的发件人直接沟通。但是，非客户通常无法开立支持票证。
 

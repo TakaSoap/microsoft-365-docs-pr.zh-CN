@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: ee14e4a1309bcf1077a8901ce874dc2872b694be
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70073197091e75ae7ca2740b9be53edce87e1d8a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075175"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030706"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
-如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)（OFFICE 365 ATP），并且您拥有[必要的权限](#required-licenses-and-permissions)，则您可以使用**资源管理器**或**实时检测**（以前的*实时报告*）。[请参阅新增功能](#new-features-in-real-time-detections)！ 在安全 & 合规性中心中，转到 "**威胁管理**"，然后选择 "**浏览器**" 或 "**实时检测**"。 
+如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)（OFFICE 365 ATP），并且您拥有[必要的权限](#required-licenses-and-permissions)，则您可以使用**资源管理器**或**实时检测**（以前的*实时报告*）[查看新增功能](#new-features-in-real-time-detections)！ 在安全 & 合规性中心中，转到 "**威胁管理**"，然后选择 "**浏览器**" 或 "**实时检测**"。 
 
 |在 ATP 计划2中，您将看到：  |在 ATP 计划1中，您将看到：  |
 |---------|---------|
@@ -37,7 +37,7 @@ ms.locfileid: "37075175"
 使用此报告，可以执行以下操作：
 - [查看 Office 365 安全功能检测到的恶意软件](#see-malware-detected-in-email-by-technology)
 - [查看有关仿冒 Url 的数据，然后单击 "判定"](#view-data-about-phishing-urls-and-click-verdict)
-- [从资源管理器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response)（仅 ATP 计划2）
+- [从浏览器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response)（仅限 ATP 计划2）
 - ...[调查恶意电子邮件，](#more-ways-to-use-explorer-or-real-time-detections)等等！
 
 ## <a name="new-features-in-real-time-detections"></a>实时检测中的新功能
@@ -78,7 +78,7 @@ ms.locfileid: "37075175"
 
 **电子邮件日程表**是另一个新的浏览器功能，旨在提高管理员的求职体验。 它会在随机时减少，因为检查不同位置以尝试了解事件的时间较少。 当电子邮件上的多个事件发生时，或在同一时间结束时，这些事件将显示在 "日程表" 视图中。 事实上，在传递给邮件的某些事件将在 "特殊操作" 列中捕获。 将该邮件的时间线中的信息与邮件投递后执行的特殊操作组合在一起，管理员可以了解其策略的工作方式，即最后路由邮件的位置，在某些情况下，最终评估是什么。
 
-有关调查恶意电子邮件的详细讨论，请参阅[查找和调查 Office 365 中提供的恶意电子邮件](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered)。
+有关调查恶意电子邮件的详细讨论，请参阅[查找和调查 Office 365 中提供的恶意电子邮件](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered)。
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看电子邮件中的技术检测到恶意软件
 

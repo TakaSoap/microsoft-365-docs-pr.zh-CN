@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 您可以为适用于域的默认公司范围的垃圾邮件筛选器策略或自定义垃圾邮件筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 9da8ae5a9fd17db1cd9d92f21950a2ef5eb1a225
-ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
+ms.openlocfilehash: 0f2fc88e0004f78c74f2447998d136e4c5ebc3d0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428393"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032448"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>在 Exchange Online 中配置最终用户垃圾邮件通知
 
@@ -47,7 +47,7 @@ ms.locfileid: "37428393"
 
 估计完成时间：2 分钟
   
-您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "反垃圾邮件" 条目。 
+您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "反垃圾邮件" 条目。 
   
 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
   
@@ -72,7 +72,7 @@ ms.locfileid: "37428393"
 > [!NOTE]
 >  最终用户垃圾邮件通知将仅适用于启用的垃圾邮件筛选器策略。 >  每天只发送一次最终用户垃圾邮件通知。 无法保证和配置任何特定客户的通知发送时间。 
   
- **提示：** 如果要在完全实现最终用户垃圾邮件通知之前将其发送给一组有限的用户，请创建自定义垃圾邮件筛选器策略，为用户驻留的域启用最终用户垃圾邮件通知。 然后，在 EAC 中的 "**邮件流\>规则**" 下，创建邮件流规则（也称为 "传输规则"），以阻止来自 quarantine@messaging.microsoft.com 的邮件（发送通知的电子邮件地址），并对所需的用户例外。以接收通知。 下图是为 Contoso.com 域中的两个用户（SaraD 和 AlexD）创建一个异常的示例： 
+ **提示：** 如果要在完全实现最终用户垃圾邮件通知之前将其发送给一组有限的用户，请创建自定义垃圾邮件筛选器策略，为用户驻留的域启用最终用户垃圾邮件通知。 然后，在 EAC 中的 "**邮件流\>规则**" 下，创建邮件流规则（也称为传输规则），以阻止来自 quarantine@messaging.microsoft.com （发送通知的电子邮件地址）的邮件，但要接收通知的用户例外。 下图是为 Contoso.com 域中的两个用户（SaraD 和 AlexD）创建一个异常的示例： 
   
 ![测试最终用户垃圾邮件通知的传输规则](../media/EOP-ESN-testspecificusers.jpg)
   

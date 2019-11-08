@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: bf099dfe8fffdc763d42122e466c982bb90b6492
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074622"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031897"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>查找并调查 Office 365 中提供的恶意电子邮件
 
@@ -30,7 +30,7 @@ ms.locfileid: "37074622"
 
 请确保满足以下要求：
   
-- 您的组织具有[Office 365 高级威胁防护](office-365-atp.md)，并将[许可证分配给用户](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+- 您的组织具有[Office 365 高级威胁防护](office-365-atp.md)，并将[许可证分配给用户](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
     
 - 为你的组织启用了[Office 365 审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md)。 
     
@@ -44,9 +44,9 @@ ms.locfileid: "37074622"
 
 |活动  |角色组 |是否需要预览角色？  |
 |---------|---------|---------|
-|使用威胁浏览器（和实时检测）分析威胁     |Office 365 全局管理员 <br> Security Administrator <br> 安全读者     | 否   |
-|使用威胁资源管理器（和实时检测）查看电子邮件的邮件头，以及预览和下载隔离的电子邮件    |Office 365 全局管理员 <br> Security Administrator <br>安全读者   |       否  |
-|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |Office 365 全局管理员 <br>Security Administrator <br> 安全读者 <br> 预览   |   是      |
+|使用威胁浏览器（和实时检测）分析威胁     |Office 365 全局管理员 <br> 安全管理员 <br> 安全读者     | 否   |
+|使用威胁资源管理器（和实时检测）查看电子邮件的邮件头，以及预览和下载隔离的电子邮件    |Office 365 全局管理员 <br> 安全管理员 <br>安全读者   |       否  |
+|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |Office 365 全局管理员 <br>安全管理员 <br> 安全读者 <br> 预览   |   是      |
 
 > [!NOTE]
 > *预览*是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 Office 365 全局管理员角色分配有 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)），安全管理员和安全读者角色是在 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）中分配的。 若要了解有关角色和权限的详细信息，请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。

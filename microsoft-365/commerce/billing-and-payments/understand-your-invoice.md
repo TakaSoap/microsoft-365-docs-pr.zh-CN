@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的发票。
 keywords: 帐单帐户、组织信息、发票
-ms.openlocfilehash: e0af9ec0808de97e55ef550c6feb51a146dbb5f6
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 79d652f56617837019322b7329d918488283659a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646414"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029036"
 ---
 # <a name="understand-your-invoice"></a>了解发票
 
 发票提供了您的费用摘要和付款说明。 你可以在 Microsoft 365 管理中心[查看你的联机发票](#view-your-online-invoice)。 您还可以将其下载为可移植文档格式（.pdf）以通过电子邮件发送。
 
-如果你只有 Office 365 订阅，请参阅[查看 office 365 for business 的发票](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice)。
+如果你只有 Office 365 订阅，请参阅[查看 office 365 for business 的发票](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice)。
 
 ## <a name="understand-the-invoice-header"></a>了解发票抬头
 
@@ -50,13 +50,13 @@ ms.locfileid: "37646414"
 | --- | --- |
 | 费用|此计费期间购买的产品总数及其相关的费用和税款。 对采购进行聚合，以提供帐单的简明视图。 |
 | 制作人员 |从退货中接收的信用 |
-| 应用的 Azure 信用 |将自动应用于 Azure 的你的 Azure 信用费用将收取每个帐单期。 如果你没有任何 Azure 信用，此字段将被隐藏。 有关 Azure 信用的详细信息，请参阅[跟踪 Microsoft 客户协议 Azure 信用余额](https://docs.microsoft.com/en-us/azure/billing/billing-mca-check-azure-credits-balance)。 |
+| 应用的 Azure 信用 |将自动应用于 Azure 的你的 Azure 信用费用将收取每个帐单期。 如果你没有任何 Azure 信用，此字段将被隐藏。 有关 Azure 信用的详细信息，请参阅[跟踪 Microsoft 客户协议 Azure 信用余额](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)。 |
 | Subtotal |税前金额 |
 | 税款 |根据帐单配置文件的国家/地区，支付的类型和金额。 如果您无需支付税，发票上不会显示任何税。 |
 
 ### <a name="understand-your-charges"></a>了解你的费用
 
-费用页面显示按产品细分的成本。 对于 Azure 客户，费用可能按发票部分进行组织。 有关如何将发票部分用于 Azure 产品的详细信息，请参阅[Microsoft 客户协议帐单帐户入门](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview)中的 "[发票" 部分](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview#invoice-sections)。 在每个产品订单中，成本按服务系列划分。
+费用页面显示按产品细分的成本。 对于 Azure 客户，费用可能按发票部分进行组织。 有关如何将发票部分用于 Azure 产品的详细信息，请参阅[Microsoft 客户协议帐单帐户入门](https://docs.microsoft.com/azure/billing/billing-mca-overview)中的 "[发票" 部分](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)。 在每个产品订单中，成本按服务系列划分。
 
 | 术语 |描述 |
 | --- | --- |
@@ -76,7 +76,7 @@ ms.locfileid: "37646414"
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-如果你希望更详细了解你的发票上的 Azure 费用，请参阅[了解 Microsoft 客户协议发票上的费用](https://docs.microsoft.com/en-us/azure/billing/billing-mca-understand-your-bill)。
+如果你希望更详细了解你的发票上的 Azure 费用，请参阅[了解 Microsoft 客户协议发票上的费用](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill)。
 
 ## <a name="understand-the-last-invoice-page"></a>了解 "最后一张发票" 页
 
@@ -106,8 +106,8 @@ ms.locfileid: "37646414"
 
 3. 若要查看你的联机发票，请从列表中选择一个发票。 您还可以从 "发票详细信息" 页下载 .pdf 文件。
 
-## <a name="need-help-contact-support"></a>是否需要帮助？ 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助? 请联系支持人员。
 
 如果你在使用 Azure 信用时遇到疑问或需要帮助，请<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">创建支持 azure 支持的支持请求</a>。
 
-如果你在 Microsoft 365 管理中心中对发票有任何疑问或需要帮助，请[联系业务产品支持人员](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products)。
+如果你在 Microsoft 365 管理中心中对发票有任何疑问或需要帮助，请[联系业务产品支持人员](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。

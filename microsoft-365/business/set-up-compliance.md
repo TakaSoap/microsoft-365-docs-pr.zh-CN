@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能，以防止数据丢失并为敏感数据添加标签。
-ms.openlocfilehash: 73709c1302a2e9e46eb2d54ea021438b5f1743c5
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5213c55f4a8ce0e223896f1b960847714d6d06cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575650"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031407"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
@@ -57,7 +57,7 @@ DLP 提供了许多不同区域设置的多种可供使用的策略模板。 例
 
 敏感度标签随附有 Azure 信息保护（AIP）计划1，并通过应用标签帮助您分类和（可选）保护文档和电子邮件。 可以由管理员自动应用标签，这些管理员定义规则和条件、手动按用户或通过使用用户提供建议的组合。
 
-若要设置敏感度标签，请查看[创建和管理敏感度标签](https://support.office.com/en-us/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)视频。
+若要设置敏感度标签，请查看[创建和管理敏感度标签](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)视频。
 
 
 

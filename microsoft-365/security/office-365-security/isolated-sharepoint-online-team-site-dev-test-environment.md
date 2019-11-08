@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。
-ms.openlocfilehash: a540cd616fb39c2da7afc603786243c0d383c352
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0f91bcce140fd1ad00c51b27e8b1e134e5f2a283
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074612"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032337"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
@@ -50,7 +50,7 @@ Office 365 中的 SharePoint Online 团队网站是使用通用文档库、OneNo
 3. 创建一个新的 ProjectX SharePoint Online 团队网站并将其隔离。
     
 > [!TIP]
-> 单击[此处](http://aka.ms/catlgstack)可以在 One Microsoft 云测试实验室指南堆栈图中直观转到相应的任何文章。
+> 单击[此处](https://aka.ms/catlgstack)可以在 One Microsoft 云测试实验室指南堆栈图中直观转到相应的任何文章。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>第 1 阶段：构建轻型或模拟的企业 Office 365 开发/测试环境
 
@@ -171,7 +171,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 11. 单击列表中的“ProjectX 成员”****。
     
-12. 在“人员和组”页中，单击“新建”********。
+12. 在“**人员和组**”页中，单击“**新建**”。
     
 13. 在“共享”**** 对话框中，键入并选择“ProjectX-Members”****，然后单击“共享”****。
     

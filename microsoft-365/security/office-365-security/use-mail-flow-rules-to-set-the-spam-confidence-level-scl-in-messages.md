@@ -14,12 +14,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection 中设置邮件的 SCL。
-ms.openlocfilehash: 627284a1c2a7463989ca3050b2becbff780cf3d6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8da95c5356f7cde47d378d93c721057959554631
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075786"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030626"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
 
@@ -29,7 +29,7 @@ ms.locfileid: "37075786"
   
 - 估计完成该过程的时间：10 分钟。
     
-- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)或 EOP 中的[功能权限](feature-permissions-in-eop.md)中的 "邮件流规则" 条目。 
+- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)或 EOP 中的[功能权限](feature-permissions-in-eop.md)中的 "邮件流规则" 条目。 
     
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
     
@@ -67,6 +67,6 @@ ms.locfileid: "37075786"
   
 ## <a name="how-do-you-know-this-worked"></a>您如何知道操作成功？
 
-要验证此步骤是否能正常工作，请发送电子邮件至组织中的某位同事，并验证是否对该邮件执行预期的操作。 例如，如果**将垃圾邮件可信度（SCL）设置**为 "**绕过垃圾邮件筛选**"，则应将邮件发送到指定收件人的收件箱。 但是，如果**将垃圾邮件可信度（SCL）设置**为**9**，并且适用的内容筛选器策略的**高可信度垃圾邮件**操作是将邮件移动到 "垃圾邮件" 文件夹，则应将邮件发送到指定的收件人的 "垃圾邮件" 文件夹。 
+要验证此步骤是否能正常工作，请发送电子邮件至组织中的某位同事，并验证是否对该邮件执行预期的操作。 例如，如果**将垃圾邮件可信度（SCL）设置**为 "**绕过垃圾邮件筛选**"，则应将邮件发送到指定收件人的收件箱。 但是，如果您**将垃圾邮件可信度（SCL）设置**为**9**，并且适用的内容筛选器策略的**高可信度垃圾邮件**操作是将邮件移至 "垃圾邮件" 文件夹，则邮件应发送到指定收件人的 "垃圾邮件" 文件夹。 
   
 

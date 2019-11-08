@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5dcdce4b86356d514317967188ef07ebaeecbf16
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076131"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034203"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
@@ -27,7 +27,7 @@ ms.locfileid: "37076131"
 
 新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心是专门为满足安全团队和合规性团队的需求而设计的专用工作区。 这些解决方案集成在 Microsoft 365 服务中，并提供可操作的见解，以帮助减少风险并保护您的数字空间。
 
-[了解详细信息并准备好获取](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-security-and-compliance)新的 microsoft 365 安全中心和 Microsoft 365 合规性中心。
+[了解详细信息并准备好获取](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance)新的 microsoft 365 安全中心和 Microsoft 365 合规性中心。
 
 在 security.microsoft.com 访问 Microsoft 365 安全中心。  
 
@@ -50,7 +50,7 @@ Microsoft 365 安全中心包括：
 * **策略**-设置管理设备、防止威胁以及接收有关你的组织中的各种活动的警报的策略。
 * **权限**-管理组织中的哪些用户有权访问 Microsoft 365 安全中心以查看内容和执行任务。 您还可以在 Azure AD 门户中分配 Microsoft 365 权限。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 浏览以下有关监视、查看和响应安全需求的主题：
 

@@ -1,5 +1,5 @@
 ---
-title: '在 web 上的 Outlook 中报告垃圾电子邮件和网络钓鱼诈骗 '
+title: '在 Outlook 网页版中报告垃圾电子邮件和钓鱼行为 '
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,14 +14,14 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook 网页上的用户可以使用内置的电子邮件报告选项报告垃圾邮件和网络钓鱼诈骗。 如果一封电子邮件被错误地识别为垃圾邮件，您还可以让 Microsoft 了解这一情况。
-ms.openlocfilehash: 0191394c1e0c0f43c65af977c219630c65b6a292
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f066181e912060b137437893dee545787fa405a2
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074006"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031797"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>在 web 上的 Outlook 中报告垃圾电子邮件和网络钓鱼诈骗 
+# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>在 Outlook 网页版中报告垃圾电子邮件和钓鱼行为 
 
 如果组织内的用户收到垃圾邮件或者某个重要电子邮件因被错误识别为垃圾邮件而丢失，这将非常令人沮丧。我们正在不断微调 Exchange Online Protection (EOP) 垃圾邮件筛选器以使其更加准确，您和您的最终用户可以帮助完成此过程；Web 上的 Microsoft Outlook 用户可以通过使用内置电子邮件报告选项报告垃圾邮件和欺诈邮件。如果一封电子邮件被错误地识别为垃圾邮件，您还可以让 Microsoft 了解这一情况。
   
@@ -64,7 +64,7 @@ ms.locfileid: "37074006"
 
 [了解垃圾邮件和网络钓鱼](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 
-[Microsoft Outlook 垃圾电子邮件举报外接程序](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+[Microsoft Outlook 垃圾电子邮件举报外接程序](https://docs.microsoft.com/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 

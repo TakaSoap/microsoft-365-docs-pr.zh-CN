@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 2067badcb78b48bac59770993de25c0ebbeaa829
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646377"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031357"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商业版常见问题
 
@@ -92,7 +92,7 @@ Windows 10 商业版还附带了某些高级 Microsoft Defender 功能，如针�
 ### <a name="how-does-microsoft-365-business-help-support-our-bring-your-own-device-byod-policy"></a>Microsoft 365 商业版如何帮助支持“自带设备办公 (BYOD)”策略？ 
 许多员工更喜欢使用其自己的手机或平板电脑来访问个人和工作信息，而不是为每种目的携带多台设备。 使用个人设备工作虽然很常见，但会增加业务信息最终可能落入他人手中的风险。 许多竞争性移动数据保护解决方案要求用户在其设备上切换到特定方式，或使用另一种复杂机制，用户可能会发现这种机制具有干扰性，因此会避免使用。 
  
-Microsoft 365 业务为客户提供了一个简单但功能强大的方法，使员工能够使用其个人设备进行工作，同时让这些设备能够阻止这些设备访问、保留和/或共享业务信息. 更具体地说： 
+Microsoft 365 业务为客户提供了一个简单但功能强大的方法，使员工能够使用其个人设备进行工作，同时让这些设备能够阻止这些设备访问、保留和/或共享业务信息。 更具体地说： 
 * **适用于 Office 移动应用的应用保护**可通过强力执行策略（如在未连接到服务的规定时长过后自动删除业务数据、要求将信息仅存储到 OneDrive for Business、要求进行 PIN/指纹验证来访问 Office 应用，以及防止将公司数据从 Office 应用复制到个人应用）来帮助应用保护 Office 数据，包括 iOS 和 Android 移动设备上的电子邮件、日历、联系人和文档。 Microsoft 365 业务订阅者也提供了通过 Intune 进行的其他移动应用的移动应用程序管理。 
   
 * 利用**适用于 Windows 10 电脑的设备管理**，企业可以选择设置和实施一些功能，如 Windows Defender 恶意软件防护、自动更新以及在规定时长过后关闭屏幕。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
@@ -161,7 +161,7 @@ Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最�
 还不是 Microsoft 合作伙伴的 IT 服务提供商可以在 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business) 了解有关 Microsoft 云解决方案提供商计划的详细信息。
 
 ### <a name="where-can-i-learn-how-to-sell-microsoft-365-business"></a>在哪里可以了解如何销售 Microsoft 365 商业版？ 
-现在销售 Office 365 的合作伙伴可以使用相同的顾问式销售方法销售 Microsoft 365 商业版。 此外，我们将引入更多资源和培训，让你的销售团队了解客户的现有桌面环境、Active Directory 依赖性、移动性和安全性需求，从而采用与客户相关的方式有效传递 Microsoft 365 商业版的全部价值。 请在 Office 合作伙伴门户 [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business) 中查找这些资源。 
+现在销售 Office 365 的合作伙伴可以使用相同的顾问式销售方法销售 Microsoft 365 商业版。 此外，我们将引入更多资源和培训，让你的销售团队了解客户的现有桌面环境、Active Directory 依赖性、移动性和安全性需求，从而采用与客户相关的方式有效传递 Microsoft 365 商业版的全部价值。 请在 Office 合作伙伴门户 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business) 中查找这些资源。 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Microsoft 365 商业版如何帮助合作伙伴提高盈利能力？ 
 Microsoft 365 商业版将通过提高运营效率来帮助合作伙伴降低成本，并通过出售额外的服务来增加收入。 Forrester Research，Microsoft 365 商业版总体经济影响 (TEI) 研究，2017 年 6 月 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI)，表明 Microsoft 365 商业版将对合作伙伴盈利能力产生积极影响。 

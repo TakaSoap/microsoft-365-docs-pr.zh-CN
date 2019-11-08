@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全链接策略时，可以包括 "不重写" 的 Url 列表，以使组织中的某些人能够访问包含在列表中的网站。
-ms.openlocfilehash: 512d4ce507c191b00bc2d21f61d5efbf2dffcb57
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1068f7e2ac75f9c4403475e1fa9bc4da57fabe51
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772136"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032047"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
 
@@ -69,19 +69,19 @@ ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "
 
 - 您在 "不重写" 列表中指定的任何 Url 将从 ATP 安全链接扫描中排除，用于您指定的收件人。
  
-- 如果您在 "不重写" 列表中已经有 Url 列表，请务必查看该列表并根据需要添加通配符。 例如，如果您的现有列表中有类似`http://contoso.com/a`的条目，并且您希望在策略`http://contoso.com/a/b`中包含类似的子路径，请将通配符添加到您的`http://contoso.com/a/*`条目，使其看起来像这样。
+- 如果您在 "不重写" 列表中已经有 Url 列表，请务必查看该列表并根据需要添加通配符。 例如，如果您的现有列表中有类似`https://contoso.com/a`的条目，并且您希望在策略`https://contoso.com/a/b`中包含类似的子路径，请将通配符添加到您的`https://contoso.com/a/*`条目，使其看起来像这样。
     
 - 请勿在 "不重写" 列表中指定的 Url 中包含正斜杠（/）。 例如，而不是在`contoso.com/` "不重写" 列表中输入，而`contoso.com`是输入。
 
-- 当您为 ATP 安全链接策略指定 "不重写" 列表时，可以包含最大为三个通配符星号（\*）。 通配符（\*）用于显式包含前缀或子域，如`http://`或。 `https://` 条目，如`contoso.com` `*.contoso.com/*` "不重写" 列表中的条目。 如果要允许`*.contoso.com/*`用户访问域及其子域和路径，则必须具有。
+- 当您为 ATP 安全链接策略指定 "不重写" 列表时，可以包含最大为三个通配符星号（\*）。 通配符（\*）用于显式包含前缀或子域，如`https://`或。 `https://` 条目，如`contoso.com` `*.contoso.com/*` "不重写" 列表中的条目。 如果要允许`*.contoso.com/*`用户访问域及其子域和路径，则必须具有。
     
 下表列出了可以输入的内容的示例以及这些项有何影响。
     
 |**示例条目**|**功能**|
 |:-----|:-----|
-|`contoso.com`|允许收件人访问的网站（如`http://contoso.com`不是子域或路径）。|
-|`*.contoso.com/*`  <br/> |允许收件人访问域、子域和路径，例如`http://www.contoso.com`、 `https://www.contoso.com` `https://maps.contoso.com`、或`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |允许特定收件人访问类似`http://contoso.com/a`的网站，但不允许像这样的子路径`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a/*`  <br/> |允许特定收件人访问像这样的子`http://contoso.com/a`网站之类的子网站`http://contoso.com/a/b`  <br/> |
+|`contoso.com`|允许收件人访问的网站（如`https://contoso.com`不是子域或路径）。|
+|`*.contoso.com/*`  <br/> |允许收件人访问域、子域和路径，例如`https://www.contoso.com`、 `https://www.contoso.com` `https://maps.contoso.com`、或`https://www.contoso.com/a`  <br/> |
+|`https://contoso.com/a`  <br/> |允许特定收件人访问类似`https://contoso.com/a`的网站，但不允许像这样的子路径`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a/*`  <br/> |允许特定收件人访问像这样的子`https://contoso.com/a`网站之类的子网站`https://contoso.com/a/b`  <br/> |
    
  

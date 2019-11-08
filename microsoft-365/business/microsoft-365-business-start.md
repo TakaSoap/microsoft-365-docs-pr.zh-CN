@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: ed302a79d125ffc9c6203d902f437749a5b0f8d4
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 4c744d6a900dba3c11ee51e75602a430268e15bb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575890"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029096"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business 入门
 
@@ -40,7 +40,7 @@ Microsoft 365 商业版适用于最多300个许可证，如果你需要更多许
 
 - 如果有合作伙伴，他们将获取 Microsoft 365 商业版：[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业版](get-microsoft-365-business.md)。
     
-- 如果你没有合作伙伴并且想要获取 Microsoft 365 商业版，你可以在[此处购买它](https://www.microsoft.com/en-us/microsoft-365/business)。
+- 如果你没有合作伙伴并且想要获取 Microsoft 365 商业版，你可以在[此处购买它](https://www.microsoft.com/microsoft-365/business)。
     
 ## <a name="set-up-microsoft-365-business"></a>设置 Microsoft 365 商业版
 
@@ -78,7 +78,7 @@ Microsoft 365 商业版适用于最多300个许可证，如果你需要更多许
   
 如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照 Microsoft 365 商业版中的 "[启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作，以便对此进行设置。 这是此状态的首选方法，称为**混合 AZURE AD 加入的设备**。 
   
-如果保留包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以通过以下步骤为**AZURE AD 联接的设备**授予对这些资源的访问权限：[从访问本地资源Microsoft 365 商业版中的 Azure AD 加入设备](access-resources.md)。
+如果保留包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以通过以下步骤向**AZURE ad 联接设备**授予对这些资源的访问权限：[从 Microsoft 365 商业版中的 Azure AD 加入设备访问本地资源](access-resources.md)。
   
 设置 Windows 10 电脑后，可以将[Office 自动安装](auto-install-or-uninstall-office.md)到设备上。 
   

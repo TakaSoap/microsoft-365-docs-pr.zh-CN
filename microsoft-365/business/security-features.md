@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业版附带的安全功能。
-ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636764"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031437"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
 
@@ -33,7 +33,7 @@ Microsoft 365 商业版提供了简化的安全功能，以帮助保护电脑、
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 商业管理员中心安全功能
 
-[!["标签"，告知 "管理中心" 正在更改，您可以在 aka.ms/aboutM365preview 中找到更多详细信息。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 您可以在管理中心管理许多 Microsoft 365 商业安全功能，这为您提供了一种简单的方法来打开或关闭这些功能。 在管理中心，您可以执行以下操作：
   
@@ -73,7 +73,7 @@ Microsoft 365 商业版中的高级功能可帮助您保护业务，抵御网络
 - **[Azure 门户中的 Intune 的完整功能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     通过在 Azure 门户中访问 Intune 管理中心，可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 高级设备管理，这些设备不能通过 Microsoft 使用365商业管理中心。
-- **与 Azure AD P1 计划相同的[条件访问](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)**
+- **与 Azure AD P1 计划相同的[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
     条件访问可帮助保护您的组织不受登录风险、访问来自意外网络或区域设置的尝试、访问尝试形成有风险的设备类型等。 在第一次身份验证完成后强制执行条件访问策略，并使用来自第一种身份验证事件的信号来确定是否应批准、拒绝或 f 更好的验证（例如，第二种标识形式）。必填。
 
@@ -104,12 +104,12 @@ Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的
     
 - **[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 商业版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，您可以创建**敏感度标签**，以允许您使用类似于 "不转发" 和 "不复制" 的控件来控制对电子邮件和文档中敏感信息的访问。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关更多详细信息，请参阅[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装**AzInfoProtection_UL**。
+   Microsoft 365 商业版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，您可以创建**敏感度标签**，以允许您使用类似于 "不转发" 和 "不复制" 的控件来控制对电子邮件和文档中敏感信息的访问。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关更多详细信息，请参阅[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装**AzInfoProtection_UL .exe**。
 
 您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将被添加到 Microsoft 365 Business 管理中心。
   
     
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能在所有市场中是否可用？
   

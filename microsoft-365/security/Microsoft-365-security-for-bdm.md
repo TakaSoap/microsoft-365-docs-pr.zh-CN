@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 组织在其 Microsoft 365 环境中目前面临的最常见的威胁和攻击方案，以及缓解这些风险的建议操作。
-ms.openlocfilehash: c847e11d141dd6b3b4ce7601631259ba73e1703f
-ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
+ms.openlocfilehash: 7a8e593a1e4280327b82802bb08a57370e4db652
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37556817"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030516"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>适用于商业决策者的 Microsoft 365 安全决策者（Bdm）
 
@@ -112,12 +112,12 @@ Microsoft 365 信息保护功能可帮助您发现您拥有的信息、存储的
 |---------|---------|---------|
 |**查看并优化你的条件访问和相关策略，以适应零信任网络的目标**。 防范已知威胁包括实施一组建议的[策略](../enterprise/microsoft-365-policies-configurations.md)。 检查这些策略的实现，以确保您正在保护您的应用程序和数据免受已访问您的网络的黑客的攻击。 请注意，推荐的适用于 Windows 10 的 Intune 应用保护策略启用 Windows 信息保护（WIP）。 WIP 可防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄漏组织数据。 |         |![绿色复选标记](../images/green-check-mark.png)|
 |**禁用外部电子邮件转发**。 通过将邮箱设置为自动转发电子邮件，获取对用户邮箱的访问权限的黑客可以盗取您的邮件。 即使没有用户的意识，也会发生这种情况。 您可以通过配置邮件流规则来防止这种情况发生。|![绿色复选标记](../images/green-check-mark.png) |![绿色复选标记](../images/green-check-mark.png)|
-|**禁用匿名外部日历共享**。 默认情况下，允许外部匿名日历共享。 [禁用日历共享](https://docs.microsoft.com/en-us/exchange/sharing/sharing-policies/modify-a-sharing-policy)，以减少敏感信息的可能泄漏。|![绿色复选标记](../images/green-check-mark.png) |![绿色复选标记](../images/green-check-mark.png)|
+|**禁用匿名外部日历共享**。 默认情况下，允许外部匿名日历共享。 [禁用日历共享](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy)，以减少敏感信息的可能泄漏。|![绿色复选标记](../images/green-check-mark.png) |![绿色复选标记](../images/green-check-mark.png)|
 |**配置敏感数据的数据丢失防护策略**。 在 Office 365 安全与合规中心中创建数据丢失防护策略，以发现和保护敏感数据，如信用卡号、社会保险号码和银行帐户号码。 Office 365 包括许多可在数据丢失防护策略中使用的预定义敏感信息类型。 您还可以为您的环境自定义的敏感数据创建您自己的敏感信息类型。 |![绿色复选标记](../images/green-check-mark.png)|![绿色复选标记](../images/green-check-mark.png)|
 |**实施数据分类和信息保护策略**。 在 Office 365 中实施灵敏度标签，并使用这些标签对敏感数据进行分类和应用保护。 您还可以在数据丢失防护策略中使用这些标签。 如果使用的是 Azure 信息保护标签，我们建议您避免在其他管理中心创建新标签。|         |![绿色复选标记](../images/green-check-mark.png)|
 |**使用云应用安全性保护第三方应用程序和服务中的数据**。 配置云应用安全策略以保护跨第三方云应用（如 Salesforce、Box 或 Dropbox）的敏感信息。 您可以在云应用安全策略中使用在 Office 365 中创建的敏感信息类型和敏感度标签，并在您的 SaaS 应用程序中应用它们。 <br><br>Microsoft 云应用安全性使您能够强制实施各种自动化的过程。 可以将策略设置为提供连续合规性扫描、法律电子数据展示任务、DLP 对公开共享的敏感内容等。 云应用安全可以根据20个以上的元数据筛选器（例如，访问级别、文件类型）监视任何文件类型。 |         |![绿色复选标记](../images/green-check-mark.png)|
-|**使用[MICROSOFT Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)来确定用户是否将敏感信息存储在其 Windows 设备上**。 |         |![绿色复选标记](../images/green-check-mark.png)|
-|**使用[AIP 扫描程序](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner)可在服务器和文件共享中标识和分类信息**。 使用 AIP 报告工具查看结果并采取适当的操作。|         |![绿色复选标记](../images/green-check-mark.png)|
+|**使用[MICROSOFT Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)来确定用户是否将敏感信息存储在其 Windows 设备上**。 |         |![绿色复选标记](../images/green-check-mark.png)|
+|**使用[AIP 扫描程序](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)可在服务器和文件共享中标识和分类信息**。 使用 AIP 报告工具查看结果并采取适当的操作。|         |![绿色复选标记](../images/green-check-mark.png)|
 
 下图说明了这些功能。
 ![针对防止泄露的建议功能](../images/m365-security-bdm-illustrations-assume-breach.png)
@@ -132,10 +132,10 @@ Microsoft 365 信息保护功能可帮助您发现您拥有的信息、存储的
 |确保启用了**Office 365 审核日志**。|![绿色复选标记](../images/green-check-mark.png)|![绿色复选标记](../images/green-check-mark.png)|
 |**每周查看安全分数**-安全分数是访问 Office 365 租户安全状态的中心位置，并根据安全得分建议采取行动。 建议每周执行此检查。|![绿色复选标记](../images/green-check-mark.png)|![绿色复选标记](../images/green-check-mark.png)|
 |使用**Office 365 ATP**工具：<br>•威胁调查和响应功能<br> •自动化调查和响应 |         |![绿色复选标记](../images/green-check-mark.png)|
-|使用**Microsoft DEFENDER ATP**：<br> •[终结点检测和响应](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> •自动化调查和修正安全分数 <br>•[高级搜寻](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![绿色复选标记](../images/green-check-mark.png)|
+|使用**Microsoft DEFENDER ATP**：<br> •[终结点检测和响应](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> •自动化调查和修正安全分数 <br>•[高级搜寻](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![绿色复选标记](../images/green-check-mark.png)|
 |使用**Microsoft 云应用安全**来检测各云应用程序之间的异常行为，以确定勒索软件、受损用户或恶意应用程序、分析高风险使用率并自动修正以限制组织的风险。|         |![绿色复选标记](../images/green-check-mark.png)|
 |使用**Microsoft Azure Sentinel**或你的**当前 SIEM**工具监视整个环境中的威胁。 在预览期间，可以自由使用 Azure Sentinel。 |         |![绿色复选标记](../images/green-check-mark.png)|
-|**部署[Azure ATP](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp) **以监视和保护针对本地 Active Directory 环境的威胁。   |         |![绿色复选标记](../images/green-check-mark.png) |
+|**部署[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) **以监视和保护针对本地 Active Directory 环境的威胁。   |         |![绿色复选标记](../images/green-check-mark.png) |
 |使用**Azure 安全中心**监视跨混合和云工作负载的威胁。 Azure 安全中心包含一层免费的功能和标准功能层，这些功能根据资源时间或交易情况支付。|         |         |
 
 下图说明了这些功能。

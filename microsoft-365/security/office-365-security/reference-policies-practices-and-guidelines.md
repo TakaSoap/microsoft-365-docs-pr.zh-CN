@@ -14,12 +14,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 制定了各种策略和过程，并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
-ms.openlocfilehash: e897b5ecf7fb31581c22e2a6e3cc80f927f43454
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 0957e34008f4e05693218970c458656d73d9c0fe
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441419"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031807"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
@@ -83,7 +83,7 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
 
 - [在线信任联盟](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
+- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 

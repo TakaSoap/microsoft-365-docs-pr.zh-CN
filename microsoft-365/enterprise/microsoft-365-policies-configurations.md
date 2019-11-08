@@ -14,24 +14,24 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 1fae59706a77663090d4f29cc6a34b339c11e92c
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: eba186233efa5bebb980c4e16aafb0fe854910c9
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481300"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031317"
 ---
 # <a name="identity-and-device-access-configurations"></a>身份识别与设备访问配置
 
 本系列文章介绍了如何配置通过企业移动性 + 安全性（EMS）产品的对云服务的安全访问，具体方法是实施建议的环境和配置，包括一组规定的条件访问策略和相关功能。 EMS 是 Microsoft 365 的核心组件。 您可以使用本指南来保护与 Azure Active Directory 集成的所有服务（包括 Office 365 服务、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序）的访问权限。 
 
-这些建议与 Microsoft 安全分数以及[AZURE AD 中的标识分数](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score)相一致，并将增加组织的这些分数。 这些建议还将帮助您实施以下[五个步骤来保护您的身份基础结构](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps)。 
+这些建议与 Microsoft 安全分数以及[AZURE AD 中的标识分数](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)相一致，并将增加组织的这些分数。 这些建议还将帮助您实施以下[五个步骤来保护您的身份基础结构](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。 
 
 Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你是这些组织之一，请使用这些建议作为起点。 但是，大多数组织都可以按规定实现这些建议。 
 
 ## <a name="intended-audience"></a>目标受众
 
-这些建议适用于熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)和[Microsoft 企业移动性 + 安全性](http://microsoft.com/ems)的企业架构师和 IT 专业人员，其中包括其他、Azure Active Directory （identity）、microsoftIntune （设备管理）和 Azure 信息保护（数据保护）。
+这些建议适用于熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)和[Microsoft 企业移动性 + 安全性](https://microsoft.com/ems)的企业架构师和 IT 专业人员，其中包括其他、azure Active Directory （Identity）、Microsoft Intune （设备管理）和 azure 信息保护（数据保护）。
 
 ### <a name="customer-environment"></a>客户环境
 
@@ -69,7 +69,7 @@ Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你
 
 **Office 365 中的文件保护解决方案**<br/>
 ![海报 "Office 365 中的文件保护解决方案" 的缩略图](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>安全性和生产力权衡
 

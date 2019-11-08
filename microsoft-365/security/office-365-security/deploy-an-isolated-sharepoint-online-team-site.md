@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要：使用这些分步说明部署一个新的独立 SharePoint Online 团队网站。
-ms.openlocfilehash: bd5915f43c6ff70477077f0047e0f2dfc97a874b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 67c6a5304e067ac847c9f8158d48a588ca118220
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075733"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039111"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
@@ -70,7 +70,7 @@ ms.locfileid: "37075733"
     
 4. 在**新组**边栏上：
     
-  - 选择 "**组类型**中的**安全性**"。
+  - 在“组类型”中选择“安全性”********。
     
   - 在 "**名称**" 中键入组名称。
     
@@ -89,7 +89,7 @@ ms.locfileid: "37075733"
   
 ![用于部署独立 SharePoint Online 网站的三个访问组。](../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
-### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>步骤 5. 将用户帐户添加到访问组
+### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>第 5 步： 将用户帐户添加到访问组
 
 在此步骤中，请执行以下操作：
   
@@ -109,7 +109,7 @@ ms.locfileid: "37075733"
   
 接下来，使用以下命令块将单个用户帐户添加到访问组中：
   
-```
+```powershell
 $userUPN="<UPN of the user account>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -120,7 +120,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
   
 如果您为文本文件中的任何访问组存储了用户帐户的 Upn，则可以使用下面的 PowerShell 命令块一次添加所有这些组：
   
-```
+```powershell
 $grpName="<display name of the access group>"
 $fileName="<path and name of the file containing the list of account UPNs>"
 $grpID=(Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -129,7 +129,7 @@ Get-Content $fileName | ForEach { $userUPN=$_; Add-AzureADGroupMember -RefObject
 
 对于 PowerShell，使用以下命令块将单个组添加到访问组中：
   
-```
+```powershell
 $nestedGrpName="<display name of the group to add to the access group>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $nestedGrpName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -146,7 +146,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
     
 使用 Microsoft 365 管理中心或以下 PowerShell 命令块验证每个访问组的组成员列表：
   
-```
+```powershell
 $grpName="<display name of the access group>"
 Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID | Sort UserPrincipalName | Select UserPrincipalName,DisplayName,UserType
 ```
@@ -173,9 +173,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 6. 在 "**团队网站说明" 中，** 键入网站用途的可选说明。
     
-7. 在“隐私设置”中，选择“专用 - 仅成员可以访问此网站”，然后单击“下一步”************。
+7. 在“**隐私设置**”中，选择“**专用 - 仅成员可以访问此网站**”，然后单击“**下一步**”。
     
-8. 在“希望添加哪些人员?”窗格中，单击“完成”********。
+8. 在“**希望添加哪些人员?**”窗格中，单击“**完成**”。
     
 接下来，从新的 SharePoint Online 团队网站配置权限。
   
@@ -185,7 +185,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 3. 在浏览器的新“权限”标签页中，单击“访问请求设置”********。
     
-4. 在 "**访问请求设置**" 对话框中，清除 "**允许成员" 以共享网站和各个文件和文件夹**，并**允许访问请求**（以便清除所有三个复选框），然后单击 **"确定"**。
+4. 在“**访问请求设置**”对话框中，取消选中“**允许成员共享网站以及个别文件和文件夹**”和“**允许访问请求**”（以便取消选中全部三个复选框），然后单击“**确定**”。
     
 5. 在浏览器的 "**权限**" 选项卡上，单击** \<** 列表中的 "网站名称"> 成员。
     

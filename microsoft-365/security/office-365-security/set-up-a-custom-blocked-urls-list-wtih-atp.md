@@ -15,17 +15,17 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用 Office 365 高级威胁防护为您的组织设置阻止的 Url 的列表。 阻止的 Url 将根据 ATP 安全链接策略应用于电子邮件和 Office 文档。
-ms.openlocfilehash: 738509978bfafb44cd289113ef77c3d12fb79a78
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ab79f86646ffd195b31d46980c3bd3bd3bb8f444
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075329"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032057"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义已阻止 Url 列表
 
 > [!IMPORTANT]
-> 本文适用于具有[Office 365 高级威胁防护](office-365-atp.md)的商业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 使用[Office 365 高级威胁防护](office-365-atp.md)（ATP），您的组织可以拥有已阻止的网站地址（url）的自定义列表。 在阻止 URL 的情况下，单击指向被阻止 URL 的链接的用户将被带到类似于以下图像的[警告页面](atp-safe-links-warning-pages.md)： 
   
@@ -44,7 +44,7 @@ ms.locfileid: "37075329"
 |Role  |分配的位置/方式  |
 |---------|---------|
 |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
-|Security Administrator |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
+|安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
 |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)） |
 
 > [!TIP]
@@ -66,7 +66,7 @@ ms.locfileid: "37075329"
 
 将 Url 添加到列表中时，请记住以下几点： 
 
-- 不要在 URL 的末尾包含正**/** 斜杠（）。 例如，而不是`http://www.contoso.com/`输入。 `http://www.contoso.com`
+- 不要在 URL 的末尾包含正**/** 斜杠（）。 例如，而不是`https://www.contoso.com/`输入。 `https://www.contoso.com`
     
 - 您可以指定一个仅域的 URL （如`contoso.com`或`tailspintoys.com`）。 这将阻止单击包含域的任何 URL。
 
@@ -76,10 +76,10 @@ ms.locfileid: "37075329"
     
 |**示例条目**|**功能**|
 |:-----|:-----|
-|`contoso.com` 或 `*contoso.com*`  <br/> |阻止域、子域和路径，例如`https://www.contoso.com`、和`http://sub.contoso.com``http://contoso.com/abc`  <br/> |
-|`http://contoso.com/a`  <br/> |阻止网站`http://contoso.com/a` ，而不是其他子路径（如`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |阻止网站`http://contoso.com/a`和其他子路径（如`http://contoso.com/a/b`  <br/> |
-|`http://toys.contoso.com*`  <br/> |阻止子域（本例中为 "玩具"），但允许单击其他域 Url （如`http://contoso.com`或`http://home.contoso.com`）。  <br/> |
+|`contoso.com` 或 `*contoso.com*`  <br/> |阻止域、子域和路径，例如`https://www.contoso.com`、和`https://sub.contoso.com``https://contoso.com/abc`  <br/> |
+|`https://contoso.com/a`  <br/> |阻止网站`https://contoso.com/a` ，而不是其他子路径（如`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a*`  <br/> |阻止网站`https://contoso.com/a`和其他子路径（如`https://contoso.com/a/b`  <br/> |
+|`https://toys.contoso.com*`  <br/> |阻止子域（本例中为 "玩具"），但允许单击其他域 Url （如`https://contoso.com`或`https://home.contoso.com`）。  <br/> |
    
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>如何为组织中的某些用户定义例外

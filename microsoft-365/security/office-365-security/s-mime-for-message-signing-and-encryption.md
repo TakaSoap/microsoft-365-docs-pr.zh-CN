@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: 9b7ad73f1a7dd55abdc5a88a2f86344f5a2f0f5b
-ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
+ms.openlocfilehash: 64a76d1e9eebea86e548a06bf05d0030b0396d3d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37608583"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032147"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 
@@ -76,6 +76,6 @@ S/MIME 需要证书和发布基础结构，通常用于企业到企业和企业�
 
 ## <a name="more-information"></a>更多信息
 
-[Outlook 网页版](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[Outlook 网页版](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
 
-[安全邮件（2000）](https://technet.microsoft.com/en-us/library/cc962043.aspx)
+[安全邮件（2000）](https://technet.microsoft.com/library/cc962043.aspx)

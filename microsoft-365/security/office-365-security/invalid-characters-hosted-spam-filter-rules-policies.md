@@ -1,5 +1,5 @@
 ---
-title: 避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中的无效字符
+title: 避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中出现无效字符
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 为在反垃圾邮件配置中具有无效字符的管理员提供帮助，并在尝试使用安全&amp;合规性中心时遇到问题。
-ms.openlocfilehash: 286a96814e0be5857499d7c54839d20142d0dd60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 96d81c17c33c5ecf6e7b88ebe5676336b963cb4e
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074617"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039101"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中的无效字符 
 
@@ -41,13 +41,13 @@ ms.locfileid: "37074617"
     
 2. 若要更改垃圾邮件筛选器策略的名称，请运行 Set-hostedcontentfilterpolicy cmdlet，如下所示：
     
-    ```
+    ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
 3. 若要更改垃圾邮件筛选器规则的名称，请运行 Disable-hostedcontentfilterrule cmdlet，如下所示：
     
-    ```
+    ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 

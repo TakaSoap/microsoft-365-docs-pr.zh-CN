@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了关于托管隔离的常见问题及解答。
-ms.openlocfilehash: 393542596eacd26a4f64237f666fabfe236dceed
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: c61d2e3a9a6bcb847bf7e850e4bb13a7f1160d59
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510529"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039001"
 ---
 # <a name="quarantine-faq"></a>隔离常见问题解答
 
@@ -39,15 +39,15 @@ ms.locfileid: "37510529"
   
 作为最终用户，您可以通过以下方式管理自己的垃圾邮件隔离邮件： 
   
-- 垃圾邮件隔离用户界面。 有关详细信息，请参阅[Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx)。
+- 垃圾邮件隔离用户界面。 有关详细信息，请参阅[Find and Release Quarantined Messages (End Users)](https://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx)。
         
  **问：如何为我的最终用户授予访问垃圾邮件隔离的权限？**
   
-A. 若要访问最终用户垃圾邮件隔离邮箱，最终用户必须具有有效 Office 365 用户 ID 和密码。 保护本地邮箱的 EOP 客户必须是通过目录同步或 EAC 创建的有效电子邮件用户。 有关管理用户的详细信息，EOP 管理员可以参阅[Manage mail users IN EOP](manage-mail-users-in-eop.md)。 对于 EOP 独立客户，建议使用目录同步并启用基于目录的边缘阻止，有关详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
+A. 若要访问最终用户垃圾邮件隔离邮箱，最终用户必须具有有效 Office 365 用户 ID 和密码。 保护本地邮箱的 EOP 客户必须是通过目录同步或 EAC 创建的有效电子邮件用户。 有关管理用户的详细信息，EOP 管理员可以参阅[Manage mail users IN EOP](manage-mail-users-in-eop.md)。 对于 EOP 独立客户，建议使用目录同步并启用基于目录的边缘阻止，有关详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
   
  **问：除垃圾邮件以外的其他邮件可以发送到隔离邮箱吗？**
   
-A. 可以。 与邮件流规则（也称为传输规则）相匹配的邮件以及标识为网络钓鱼的邮件也会发送到管理员隔离（如果这是配置的操作）。 最终用户隔离仅适用于垃圾邮件。
+A. 是。 与邮件流规则（也称为传输规则）相匹配的邮件以及标识为网络钓鱼的邮件也会发送到管理员隔离（如果这是配置的操作）。 最终用户隔离仅适用于垃圾邮件。
   
  **问：邮件将在隔离邮箱中保留多长时间？**
   
@@ -55,21 +55,21 @@ A. 默认情况下，垃圾邮件隔离的邮件在隔离中保留30天，而与
   
  **问：可以一次释放或报告多个被隔离的邮件吗？**
   
-A. 是的，在隔离门户中一次最多可以释放100封邮件。 此外，管理员还可以创建远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet 搜索邮件，并使用[get-quarantinemessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet 释放邮件。 
+A. 是的，在隔离门户中一次最多可以释放100封邮件。 此外，管理员还可以创建远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet 搜索邮件，并使用[get-quarantinemessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet 释放邮件。 
   
  **问：搜索被隔离邮件时是否支持通配符？是否可以搜索特定域的隔离邮件？**
   
 答：在 Exchange 管理员中心指定搜索条件时，不支持通配符。例如，在搜索某个发件人时，必须指定完整的电子邮件地址。
   
-通过远程 Windows PowerShell，管理员可以指定 [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet 以搜索特定域的隔离邮件（例如 contoso.com）： 
+通过远程 Windows PowerShell，管理员可以指定 [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet 以搜索特定域的隔离邮件（例如 contoso.com）： 
   
-```
+```powershell
 Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
 ```
 
-可将结果传递给 [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet。包括 -ReleaseToAll 参数以将邮件释放给所有收件人。邮件释放后，无法再次释放该邮件。 
+可将结果传递给 [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet。包括 -ReleaseToAll 参数以将邮件释放给所有收件人。邮件释放后，无法再次释放该邮件。 
   
-```
+```powershell
 Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
 ```
 

@@ -11,23 +11,23 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 管理员，您可以关闭用户将电子邮件报告为垃圾邮件的功能。
-ms.openlocfilehash: de0e5d1aa51ececafc0d344b9907f6751a613370
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: cec89b4298be76f1236e4e2ac7296cbe962696e3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441169"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030686"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>关闭 Outlook 网页版中的垃圾邮件报告
 
-您可以使用 web 上的 Outlook （以前称为 "Outlook Web App"）垃圾邮件报告选项，将垃圾邮件、网络钓鱼邮件和非垃圾邮件发送给 Microsoft 进行分析，如在[outlook 网页版中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中所述。 如果不想使用这些选项，管理员可以通过[set-owamailboxpolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet 将其关闭。 
+您可以使用 web 上的 Outlook （以前称为 "Outlook Web App"）垃圾邮件报告选项，将垃圾邮件、网络钓鱼邮件和非垃圾邮件发送给 Microsoft 进行分析，如在[outlook 网页版中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中所述。 如果不想使用这些选项，管理员可以通过[set-owamailboxpolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet 将其关闭。 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 <a name="sectionSection0"> </a>
 
 - 估计完成时间：5 分钟
     
-- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[web 权限](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp)主题中的 "outlook on the web 邮箱策略" 条目。 
+- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[web 权限](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp)主题中的 "outlook on the web 邮箱策略" 条目。 
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
@@ -52,7 +52,7 @@ Set-OwaMailboxPolicy -Identity "<OWAMailboxPolicyName>" -ReportJunkEmailEnabled 
 Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
 ```
 
-有关语法和参数的详细信息，请参阅[set-owamailboxpolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx)和[set-owamailboxpolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx)。
+有关语法和参数的详细信息，请参阅[set-owamailboxpolicy](https://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx)和[set-owamailboxpolicy](https://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx)。
 
 ## <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 <a name="sectionSection2"> </a>

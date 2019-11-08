@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态，查看安全警报并对其采取操作。
-ms.openlocfilehash: 8f86aa654c79bac2409d64b43d0cf7bb563c1412
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075161"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033933"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -64,7 +64,7 @@ ms.locfileid: "37075161"
 
 |如果你的订阅包括 .。。 |你将看到这些详细信息 |
 |---------|---------|
-|EOP，而不是 Office 365 ATP     |EOP 检测到并阻止的恶意电子邮件<br> 请参阅[威胁防护状态报告（EOP）](../../compliance/view-email-security-reports.md#threat-protection-status-report)。| |
+|EOP，而不是 Office 365 ATP     |EOP 检测到并阻止的恶意电子邮件<br> 请参阅[威胁防护状态报告（EOP）](../../compliance/view-email-security-reports.md#threat-protection-status-report)。| 
 |Office 365 ATP |EOP 和 Office 365 ATP 检测到并阻止了恶意内容和恶意电子邮件<br>由反恶意软件引擎、[零小时自动清除](zero-hour-auto-purge.md)和 atp 功能（包括[安全链接](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)和[atp 反网络钓鱼](atp-anti-phishing.md)）阻止的包含恶意内容的独特电子邮件的聚合计数。<br>请参阅[威胁防护状态报告（ATP）](view-reports-for-atp.md#threat-protection-status-report)。 | 
 
 若要查看或访问威胁防护状态小部件，您必须具有查看高级威胁防护报告的权限。 若要了解详细信息，请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
@@ -111,7 +111,7 @@ ms.locfileid: "37075161"
   
 ![趋势部分汇总了组织的电子邮件流趋势](../media/trends.png)
   
-如果组织的 Office 365 订阅包括[office 365 高级威胁防护计划 2](office-365-ti.md)，您还将在此部分中添加一个**最近的威胁管理警报**报告，使安全团队能够查看并对其执行操作高优先级的安全警报。 
+如果组织的 Office 365 订阅包括[office 365 高级威胁防护计划 2](office-365-ti.md)，您还将在此部分中添加一个**最近的威胁管理警报**报告，使安全团队能够查看高优先级安全警报并对其执行操作。 
 
 若要查看或访问已发送和已接收的电子邮件小组件，您必须具有查看高级威胁防护报告的权限。 若要了解详细信息，请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
 

@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386139"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031147"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>第5阶段： Microsoft 365 企业版的移动设备管理
 
-![第5阶段：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![阶段 5：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *此功能适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
@@ -151,7 +151,7 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-了解 Microsoft IT 专家如何[使用 EMS 管理设备](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8)。
+了解 Microsoft IT 专家如何[使用 EMS 管理设备](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 

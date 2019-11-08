@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 description: 必须先设置适当的证书，然后才能够发送受 S/MIME 保护的邮件。发件人的电子邮件程序使用收件人的公用证书对邮件进行加密，以通过 Exchange Online 发送加密邮件。此公用 X.509 证书必须向 Office 365 发布。
-ms.openlocfilehash: ad58b5663eaadf771ed1518edc01ce2f765f5202
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b42f757ade54e362afc65f920096252bf69eb31
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076023"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030836"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>出于 S/MIME 目的将用户证书同步到 Office 365
 
@@ -25,7 +25,7 @@ ms.locfileid: "37076023"
 
 ## <a name="to-sync-certificates-that-support-smime"></a>对支持 S/MIME 的证书进行同步
 
-首先，通过颁发证书并在本地 Active Directory 域服务中发布证书来设置 S/MIME。 有关在 Exchange Server 中管理证书的详细信息，请参阅[数字证书和 SSL](http://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx)。
+首先，通过颁发证书并在本地 Active Directory 域服务中发布证书来设置 S/MIME。 有关在 Exchange Server 中管理证书的详细信息，请参阅[数字证书和 SSL](https://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx)。
 
 发布证书之后，使用 Azure Active Directory 同步工具将本地 Exchange 环境中的用户数据同步至 Office 365。有关此过程的详细信息，请参阅[目录同步：目录同步工具版本历史](https://go.microsoft.com/fwlink/p/?LinkId=392587)。
 

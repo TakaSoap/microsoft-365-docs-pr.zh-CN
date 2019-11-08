@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 了解如何从 Microsoft 合作伙伴中心购买 Microsoft 365 商业版。
-ms.openlocfilehash: cd13db200292f84ea736bbd27af69608e576e586
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 09d2f24fba1725278b663d5c3159163a56dcdc59
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574900"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038911"
 ---
 # <a name="get-microsoft-365-business"></a>获取 Microsoft 365 商业版
 
@@ -36,7 +36,7 @@ ms.locfileid: "37574900"
 
 有关详细说明，请参阅[注册 Microsoft 365 商业](sign-up.md)版。
 
-你还可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)以购买 Microsoft 365 商业版并获取设置帮助。
+你还可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)以购买 Microsoft 365 商业版并获取设置帮助。
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>从 Microsoft 合作伙伴中心获取 Microsoft 365 商业版
 
@@ -46,7 +46,7 @@ ms.locfileid: "37574900"
     
     ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. 在客户的" **订阅**"页面上，选择"添加订阅"，在"目录"下选择"小型企业版"选项，然后选择" **Microsoft 365 商业版**"。
+3. 在 "客户**订阅**" 页上，选择 "**添加订阅**"，选择 "目录" 下的 "小型企业" 选项，然后选择 " **Microsoft 365 business**"。
     
     选择所需的许可证数（不超过 300 个）。 如果用户数超过300，请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 。 
     

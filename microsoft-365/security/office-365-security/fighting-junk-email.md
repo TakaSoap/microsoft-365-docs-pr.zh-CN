@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Microsoft 的电子邮件安全路线图包括不匹配的跨产品方法。跨 Microsoft 电子邮件平台应用 Exchange Online Protection (EOP) 反垃圾邮件和反网络钓鱼筛选技术，以便为用户提供整个网络的最新反垃圾和反网络钓鱼工具及创新。 EOP 的目标是提供全面且可用的电子邮件服务，以帮助用户检测垃圾邮件、诈骗电子邮件威胁（网络钓鱼）和恶意软件，并免受其侵扰。
-ms.openlocfilehash: 0a73d428e952c0c0cb340d91a52768a42ae204a1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7c1b74d2ddb98d1250f80455163c5f0b8690b0de
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074686"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032367"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>抵制发送到 Office 365 的垃圾邮件
 
@@ -66,9 +66,9 @@ Microsoft 重点关注反钓鱼技术的两个方面：第一，防止网络钓�
   
 EOP 使用发件人保护架构框架 (SPF)、域密钥识别邮件 (DKIM)、基于域的邮件身份验证、举报和一致性 (DMARC) 和其他隐式身份验证，以验证邮件的实际来源域与其声称的来源域相同。我们建议所有发件人使用 SPF 和 DKIM 保护其收件人免受垃圾邮件和钓鱼欺诈的侵害。此外，我们建议发件人考虑发布 DMARC 以拒绝或隔离未经身份验证的发件人发送的邮件。
   
-- 若要了解有关 SPF 的详细信息，请参阅 [RFC 7208](https://tools.ietf.org/html/rfc7208) 和 [发件人策略框架](http://www.openspf.org/)。
+- 若要了解有关 SPF 的详细信息，请参阅 [RFC 7208](https://tools.ietf.org/html/rfc7208) 和 [发件人策略框架](https://www.openspf.org/)。
     
-- 若要了解有关 DKIM 的详细信息，请参阅 [RFC 6376](https://tools.ietf.org/html/rfc6376) 和 [DKIM.org](http://dkim.org/)。
+- 若要了解有关 DKIM 的详细信息，请参阅 [RFC 6376](https://tools.ietf.org/html/rfc6376) 和 [DKIM.org](https://dkim.org/)。
     
 - 若要了解有关 DMARC 的详细信息，请参阅 [DMARC.org](https://dmarc.org/)。
     

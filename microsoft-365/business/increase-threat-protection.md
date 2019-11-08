@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并保护敏感数据。
-ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 1827b70f1e4d78a072753390c1a99d7cb4bd5cfd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636744"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030756"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -31,7 +31,7 @@ ms.locfileid: "37636744"
 
 在开始之前，请检查您的 Office 365 安全分数。 Office 365 安全分数根据您的常规活动和安全设置来分析 Office 365 组织的安全性，并给出分数。 首先记录你的当前分数。 采取本文中建议的操作可提高您的成绩。 目标不能达到最大分数，但请注意保护您的环境不会对用户的工作效率造成负面影响的机会。 
 
-有关详细信息，请参阅[Microsoft 安全分数](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score)。
+有关详细信息，请参阅[Microsoft 安全分数](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提高针对邮件中的恶意软件的保护级别
 
@@ -56,7 +56,7 @@ ms.locfileid: "37636744"
 
 勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它会通过在 exchange 中请求 "勒索" （通常为 "Bitcoin" 形式）（通常为 ""），在 exchange 中获取数据访问权限，从而从受害人 extort。 
   
-您可以通过创建一个或多个邮件流规则来阻止用于勒索软件的文件扩展名（在 "在[邮件中提高保护级别](#raise-the-level-of-protection-against-malware-in-mail)" 一步骤中添加的）或警告用户接收这些信息，从而防止勒索软件电子邮件中的附件。
+您可以通过创建一个或多个邮件流规则来阻止勒索软件常用的文件扩展名（在 "在[邮件中提高保护级别](#raise-the-level-of-protection-against-malware-in-mail)" 一步骤中添加的），或警告用户在电子邮件中接收这些附件，从而防止勒索软件受到侵害。
 
 除了在上一步中阻止的文件，在打开包含宏的 Office 文件附件之前，创建规则来警告用户也是一种很好的做法。 勒索软件可以隐藏在宏中，因此我们将警告用户不要从他们不知道的人打开这些文件。
 
@@ -72,7 +72,7 @@ ms.locfileid: "37636744"
     
 5. 对规则应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 单击“保存”****。
+6. 单击“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**||
 |:-----|:-----|:-----|
@@ -106,7 +106,7 @@ ms.locfileid: "37636744"
     
 5. 应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 单击“保存”****。
+6. 单击“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|
 |:-----|:-----|
@@ -207,7 +207,7 @@ ms.locfileid: "37636744"
     
 2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 " **office 365 专业增强版，office For iOS 和 Android**"。
     
-3. 单击“保存”****。 
+3. 单击“**保存**”。 
     
 创建一个面向域中所有收件人的新策略：
   
@@ -215,7 +215,7 @@ ms.locfileid: "37636744"
     
 2. 应用下表中列出的设置。
     
-3. 单击“保存”****。 
+3. 单击“**保存**”。 
 
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|

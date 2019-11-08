@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
-ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 56882ca53852d33a642f6031c6a3fa6c68eb667d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440649"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033893"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
 
@@ -124,18 +124,18 @@ Exchange 服务器上的邮箱的步骤
 
 1. 使用远程 PowerShell 连接到 Exchange 服务器。 按照[使用远程 PowerShell 连接到 Exchange 服务器](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps)中的步骤操作。
 2. 如果要从邮箱中完全删除单个规则、多个规则或所有规则，请使用 "[删除收件箱" 规则 cmdlet](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)-使用此项可从邮箱中完全删除一个、多个或所有规则。
-3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule cmdlet](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx)。 
+3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule cmdlet](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx)。 
 
 Exchange Online 中邮箱的步骤
 1. 按照 "[使用 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)" 中的步骤操作。
 2.  如果要完全删除单个规则、多个规则或来自一个邮箱的所有规则，请使用 "[删除收件箱" 规则 cmdlet](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)。
-3.  如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule cmdlet](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx)。 
+3.  如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule cmdlet](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx)。 
 
 ## <a name="how-to-minimize-future-attacks"></a>如何最大限度地减少未来攻击
 
 ### <a name="first-protect-your-accounts"></a>首先：保护你的帐户
 
-只有攻击者在窃取或破坏用户的帐户后，才会使用这些规则和表单攻击。 因此，阻止对组织使用这些漏洞的第一步是主动保护您的用户帐户。  帐户受到破坏的一些最常见的方法是通过网络钓鱼或[密码 spraying](http://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻击。
+只有攻击者在窃取或破坏用户的帐户后，才会使用这些规则和表单攻击。 因此，阻止对组织使用这些漏洞的第一步是主动保护您的用户帐户。  帐户受到破坏的一些最常见的方法是通过网络钓鱼或[密码 spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻击。
 
 
 
@@ -145,7 +145,7 @@ Exchange Online 中邮箱的步骤
         <ol type="a">
             <li><b>多次失败的登录尝试</b>当用户在一个会话中执行多个失败的登录活动时，此策略将配置为您的环境并触发警报，这可能表示尝试受到破坏。</li>
             <li><b>无法传播</b> - ：此策略配置文件在两个时间段内的同一用户在不同位置（短于两个位置之间的预期旅行时间）内检测到活动时，您的环境并触发警报。 这可能表示其他用户正在使用相同的凭据。 如果检测到此异常行为，则可以在七天内学习新用户的活动模式的初始学习期。</li>
-            <li><b>异常模拟活动（按用户）</b> -此策略会在用户在一个会话中执行多个模拟活动时通知您的环境并触发警报，这可能表示试图泄露。</li>
+            <li><b>异常模拟活动（按用户）</b> -此策略会在用户在一个会话中执行多个模拟活动时通知您的环境并触发警报，这可能表示尝试了泄露。</li>
         </ol>
     </li>
     <li>利用类似于<a href="https://securescore.office.com/">Office 365 安全分数</a>的工具来管理帐户安全配置和行为。 
@@ -161,19 +161,19 @@ Exchange Online 中邮箱的步骤
 
 有关各个安全修补程序的详细信息，请参阅：
 
-- [Outlook 2013 安全修补程序](https://support.microsoft.com/en-us/help/3191938) 
-- [Outlook 2016 安全修补程序](https://support.microsoft.com/en-us/help/3191883)
+- [Outlook 2013 安全修补程序](https://support.microsoft.com/help/3191938) 
+- [Outlook 2016 安全修补程序](https://support.microsoft.com/help/3191883)
 
 ### <a name="third-monitor-your-outlook-clients"></a>第三个：监视您的 Outlook 客户端
 请注意，即使安装了修补程序和更新，攻击者也有可能更改本地计算机配置以重新启用 "启动应用程序" 行为。 您可以使用[高级组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/)在客户端上监视和强制实施本地计算机策略。  
-通过使用[如何使用 Windows 的64位版本查看系统注册表](https://support.microsoft.com/en-us/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)中的信息，可以查看是否已通过注册表中的替代重新启用了 "启动应用程序"。  检查以下子项： 
+通过使用[如何使用 Windows 的64位版本查看系统注册表](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)中的信息，可以查看是否已通过注册表中的替代重新启用了 "启动应用程序"。  检查以下子项： 
 
-- Outlook 2016： HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\
-- Outlook 2013： HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\
+- Outlook 2016： HKEY_CURRENT_USER \Software\Microsoft\Office\16.0\Outlook\Security\
+- Outlook 2013： HKEY_CURRENT_USER \Software\Microsoft\Office\15.0\Outlook\Security\
 
 查找注册表项 EnableUnsafeClientMailRules。 如果已存在并且设置为1，则表示 Outlook 安全修补程序已被覆盖，并且计算机易受表单/规则攻击。 如果值为0，则禁用 "启动应用程序" 操作。  如果安装了已更新和修补的 Outlook 版本，但此注册表项不存在，则系统不易受到这些攻击。
 
-使用本地 Exchange 安装的客户应考虑阻止未提供修补程序的旧版本的 Outlook。 有关此过程的详细信息，请参阅[配置 Outlook 客户端阻止](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx)一文。
+使用本地 Exchange 安装的客户应考虑阻止未提供修补程序的旧版本的 Outlook。 有关此过程的详细信息，请参阅[配置 Outlook 客户端阻止](https://technet.microsoft.com/library/dd335207(v=exchg.150).aspx)一文。
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
 你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用“[Office 365 安全路线图：前 30 天、90 天内以及之后的首要行动](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。

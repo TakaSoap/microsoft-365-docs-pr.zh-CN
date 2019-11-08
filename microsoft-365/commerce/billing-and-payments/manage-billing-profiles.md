@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解计费配置文件如何支持发票。
 keywords: 计费配置文件、发票、费用、管理费用
-ms.openlocfilehash: bd963ff993a064615f0f7ad06c8f2cc5c3401ad2
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 9db8b949cb07c8386505234d9d88aa2627a752b5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646413"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029046"
 ---
 # <a name="manage-billing-profiles"></a>管理计费配置文件
 对于从 Microsoft 购买产品和服务的商业客户，计费配置文件允许您自定义发票中包含的项目以及支付发票的方式。
@@ -66,8 +66,8 @@ ms.locfileid: "37646413"
     > [!NOTE]
     > 如果你没有任何 Azure 信用，你将看不到**azure 信用余额**或**azure 积分**选项卡。
 
-## <a name="need-help-contact-support"></a>是否需要帮助？ 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助? 请联系支持人员。
 
 如果你在 Azure 费用方面遇到疑问或需要帮助，请<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">使用 azure 支持创建支持请求</a>。
 
-如果您在 Microsoft 365 管理中心中有关于付费配置文件的问题或需要帮助，请[联系业务产品支持人员](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products)。
+如果您在 Microsoft 365 管理中心中有关于付费配置文件的问题或需要帮助，请[联系业务产品支持人员](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。

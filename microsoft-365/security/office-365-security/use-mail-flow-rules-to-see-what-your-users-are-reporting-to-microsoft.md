@@ -13,22 +13,22 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 您可以创建 Exchange 邮件流规则，以防止用户将电子邮件发送给 Microsoft 进行分析并在自己的安全过程中使用它们。
-ms.openlocfilehash: 16075605892bcb6d7b99269a64c9c6acd0d3254e
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d1b67d60d10ea9ce5d3ed47e20959c85d785e437
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441159"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030636"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用邮件流规则来查看用户向 Microsoft 报告的内容
 
 您可以使用多种方法将假负和误报邮件发送给 Microsoft 进行分析。 作为管理员，您可以使用邮件流规则查看用户以垃圾邮件、非垃圾邮件和网络钓鱼诈骗的形式向 Microsoft 报告的内容。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 相反，您可以创建 Exchange 邮件流规则（也称为传输规则），以阻止用户将电子邮件发送给 Microsoft 进行分析，并在自己的安全过程中使用它们。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 估计完成时间：5 分钟
 
-您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅邮件[策略和合规性权限](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)主题中的 "邮件流规则" 条目和 "[客户端和移动设备权限](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx)" 主题中的 "Outlook on the web 邮箱策略" 条目。
+您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅邮件[策略和合规性权限](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)主题中的 "邮件流规则" 条目和 "[客户端和移动设备权限](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx)" 主题中的 "Outlook on the web 邮箱策略" 条目。
 
 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "37441159"
 
    - 类型`false_positive@messaging.microsoft.com`，单击 **"添加** !["](../media/ITPro-EAC-AddIcon.gif)"添加`not_junk@office365.microsoft.com`" 图标，键入，然后单击](../media/ITPro-EAC-AddIcon.gif)"**添加** ![" "添加" 图标。 这些电子邮件地址用于向 Microsoft 提交误报邮件。
 
-   - 单击“确定”。
+   - 单击“**确定**”。
 
 6. 在 "**执行以下操作**" 下，选择 **"将邮件密件抄送给 ...** "，然后选择您想要在其中接收邮件的邮箱。
 

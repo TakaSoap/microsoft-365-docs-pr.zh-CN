@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: 0c717271da17ff4bf28d8d3546df3a9da427dba5
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 86af927c05168fabe5a72f331c14c9f3e5cbc1dd
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697757"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038941"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
 ## <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 业务
 
-Microsoft 365 Business 是一套功能全面的业务生产和协作工具，如 Outlook、Word、Excel 和始终不断优化的其他 Office 产品。可通过易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。
+Microsoft 365 Business 是一款订阅服务，其中包括 Office 365 生产率工具和高级功能，以帮助保护您的业务不受威胁、保护您的数据和管理设备。
   
 Microsoft 365 商业版适用于最多300个许可证，如果你需要更多许可证，请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)文档以了解详细信息。
 
@@ -98,4 +98,4 @@ Microsoft 365 Business 通过以下方式帮助**defended 抵御威胁**：
 
 - 如果你没有合作伙伴并且想要获取 Microsoft 365 商业版，你可以在[此处购买它](https://www.microsoft.com/microsoft-365/business)并按照[注册](sign-up.md)说明进行操作。
 
-- 你还可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)以购买 Microsoft 365 商业版并获取设置帮助。
+- 你还可以转到[Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS)以购买 Microsoft 365 商业版并获取设置帮助。

@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441089"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034183"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
@@ -33,13 +33,13 @@ ms.locfileid: "37441089"
 A. **对于入站邮件：** 大部分垃圾邮件都是通过基于发件人 IP 地址的连接筛选检测到的。 然后，服务会检查邮件内容。 默认情况下，内容筛选的垃圾邮件会发送到发件人的垃圾邮件文件夹。 可以更改此操作。 例如，可以选择将垃圾邮件发送到隔离区，而不是配置内容筛选策略。 
   
 > [!IMPORTANT]
-> 对于 EOP 独立客户：为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱，您必须在您的本地服务器上配置两个 Exchange 邮件流规则（也称为传输规则），以检测由 EOP 添加的垃圾邮件头。 For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> 对于 EOP 独立客户：为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱，您必须在您的本地服务器上配置两个 Exchange 邮件流规则（也称为传输规则），以检测 EOP 添加的垃圾邮件头。 For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **对于出站邮件：** 邮件要么通过高风险传递池进行路由，要么被退回、未传递。不管是哪种情况，发件人都会收到一封告知其邮件未传递的传递状态通知 (DSN) 邮件。 
   
  **问：什么是零日垃圾邮件变体，该服务将如何处理它？**
   
-答：零日垃圾邮件变体是第一代，是之前从未捕获或分析过的未知垃圾邮件变体，所以我们的垃圾邮件内容筛选器还没有可用于检测它的任何信息。 在我们的垃圾邮件分析师们捕获和分析过零日垃圾邮件样本之后，如果符合垃圾分类条件，我们的垃圾邮件内容筛选器会更新对它的检测，此后不再将其看做"零日"。 ( 注意： 如果您收到一封可能是一个零日垃圾邮件变体的邮件，为了帮助我们改进服务，请使用以下 将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析中介绍的方法之一将邮件提交给 Microsoft。 （**注意：** 如果收到的邮件可能是零天垃圾邮件变种，为了帮助我们改进服务，请使用将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件中所述的方法之一提交给 microsoft 以进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。）
+答：零日垃圾邮件变体是第一代，是之前从未捕获或分析过的未知垃圾邮件变体，所以我们的垃圾邮件内容筛选器还没有可用于检测它的任何信息。 在我们的垃圾邮件分析师们捕获和分析过零日垃圾邮件样本之后，如果符合垃圾分类条件，我们的垃圾邮件内容筛选器会更新对它的检测，此后不再将其看做"零日"。 ( 注意： 如果您收到一封可能是一个零日垃圾邮件变体的邮件，为了帮助我们改进服务，请使用以下 将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析中介绍的方法之一将邮件提交给 Microsoft。 （**注意：** 如果收到的邮件可能是零天垃圾邮件变种，为了帮助我们改进服务，请使用将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)中所述的方法之一提交给 microsoft 进行分析。）
   
  **问：我需要配置用于提供反垃圾邮件保护的服务吗？**
   
@@ -73,13 +73,13 @@ A. 可以通过几种方式将垃圾邮件和非垃圾邮件提交给 Microsoft 
   
 A. 是的，例如，您可以在 Microsoft 365 管理中心中获取垃圾邮件检测报告。 此报告将垃圾邮件数量显示为唯一邮件的计数。 有关报告的详细信息，请参阅以下链接：
   
-Exchange Online 客户： [Exchange online 中的监视、报告和邮件跟踪](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online 客户： [Exchange online 中的监视、报告和邮件跟踪](https://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
 Exchange Online Protection 客户： [Exchange Online protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)
   
  **问：有人发送一封邮件给我，但是我找不到它。 我怀疑此邮件可能被检测为垃圾邮件了。 有什么工具可以让我找到这封邮件吗？**
   
-A. 是的，通过邮件跟踪工具，您可以在电子邮件通过服务时进行跟踪，以找出他们遇到的问题。 若要详细了解如何使用邮件跟踪工具来找出邮件被标记为垃圾邮件的原因，请参阅[是否已将邮件标记为垃圾邮件？](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
+A. 是的，通过邮件跟踪工具，您可以在电子邮件通过服务时进行跟踪，以找出他们遇到的问题。 若要详细了解如何使用邮件跟踪工具来找出邮件被标记为垃圾邮件的原因，请参阅[是否已将邮件标记为垃圾邮件？](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **问：如果我的用户发送出站垃圾邮件，服务将会限制（速率限制）我的邮件吗？**
   
@@ -89,15 +89,15 @@ A.如果通过服务发送自用户的超过一半的邮件是在某段时间范
   
  **问：是否可以与 Exchange Online 同时使用第三方反垃圾邮件和反恶意软件提供程序？**
   
-答：可以，您可以配置另一个垃圾邮件和恶意软件筛选服务来保护 Exchange Online 邮箱。 要对入站邮件执行此操作，您应通过将 MX 记录更改为指向第三方提供程序来将电子邮件重定向到第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 要对出站邮件执行此操作，请将邮件传递目标配置为第三方提供程序（智能主机），如[Scenario: Outbound Smart Hosting](http://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx)中所示。
+答：可以，您可以配置另一个垃圾邮件和恶意软件筛选服务来保护 Exchange Online 邮箱。 要对入站邮件执行此操作，您应通过将 MX 记录更改为指向第三方提供程序来将电子邮件重定向到第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 要对出站邮件执行此操作，请将邮件传递目标配置为第三方提供程序（智能主机），如[Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx)中所示。
   
  **Q. Microsoft 是否拥有任何有关如何保护自己免受网络钓鱼诈骗之害的文档？**
   
 答：我们有。请参阅下列文章：
   
-[获取有关网络钓鱼诈骗、彩票欺诈和其他类型的诈骗的帮助](http://go.microsoft.com/fwlink/p/?LinkId=325606)
+[获取有关网络钓鱼诈骗、彩票欺诈和其他类型的诈骗的帮助](https://go.microsoft.com/fwlink/p/?LinkId=325606)
   
-[电子邮件和网络诈骗： 如何保护自己](http://go.microsoft.com/fwlink/p/?LinkID=325607)
+[电子邮件和网络诈骗： 如何保护自己](https://go.microsoft.com/fwlink/p/?LinkID=325607)
   
  **问：正在调查将垃圾邮件和恶意邮件发送给谁，还是正在移交给执法机构？**
   

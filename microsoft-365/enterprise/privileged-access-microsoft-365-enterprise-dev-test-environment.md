@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的特权访问管理。
-ms.openlocfilehash: df3a2138de105b45f472ff0a862af2afe6dd2a34
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: f701f3f8f74036966de2c516d662ef77341f4842
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733414"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033607"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 Privileged Access Management
 
@@ -27,9 +27,9 @@ ms.locfileid: "37733414"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段：构建 Microsoft 365 企业版测试环境
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
 如果只想使用最低要求以轻型方式配置特权访问管理，请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
   
@@ -44,15 +44,16 @@ ms.locfileid: "37733414"
 
 按照以下步骤设置和使用 Office 365 组织中的特权访问：
 
-- [步骤1：创建审批者的组](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
+- [步骤1：创建审批者的组](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
     在开始使用权限访问之前，请确定谁将拥有对已提升和特权任务的传入请求的审批权限。 作为审批者组的一部分的任何用户都将能够批准访问请求。 这是通过在 Office 365 中创建启用邮件的安全组来启用的。 在测试环境中创建一个名为 "特权访问审批者" 的新安全组，并添加先前在之前的测试实验室指南步骤中创建的 "用户 3"。
 
-- [步骤2：启用特权访问](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
+- [步骤2：启用特权访问](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
     需要在 Office 365 中显式打开具有默认审批者组的特权访问权限，并包含要从特权访问管理访问控制中排除的一组系统帐户。 在开始本指南的第3阶段之前，请务必在 Office 365 组织中启用特权访问。
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>第3阶段：验证提升权限和特权任务是否都需要审批
+
 在此阶段中，您将验证特权访问策略是否正常工作，以及用户是否需要批准以执行定义的提升和特权任务。
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>测试执行未在特权访问策略中定义的任务的能力
@@ -63,9 +64,10 @@ ms.locfileid: "37733414"
 
 2. 在 Exchange 管理 Powershell 中，为您的组织创建新的日记规则：
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
+
 4. 查看在 Exchange 管理 PowerShell 中已成功创建新日记规则。
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>为新的-New-journalrule 任务创建新的特权访问策略
@@ -82,7 +84,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 4. 选择 "**配置策略**"，然后选择 "**添加策略**"。
 
 5. 从下拉字段中，选择或输入以下值：
-    
+
     **策略类型**：任务
 
     **策略作用域**： Exchange
@@ -97,16 +99,17 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>在特权访问策略中定义的 New-journalrule 任务的测试批准要求
 
-1. 在本地计算机上，在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 exchange online 远程 powershell 模块。对你的测试使用全局管理员帐户环境.
+1. 在您的本地计算机上，在**microsoft Corporation** > **microsoft Exchange online powershell 模块**中打开并登录到 exchange online 远程 powershell 模块，使用您的测试环境的全局管理员帐户。
 
 2. 在 Exchange 管理 Powershell 中，为您的组织创建新的日记规则：
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
+
 3. 在 Exchange 管理 PowerShell 中查看 "Insuffient 权限" 错误：
 
-```
+```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
     + CategoryInfo          : NotSpecified: (:) [], LocalizedException
     + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
@@ -152,9 +155,10 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 2. 在 Exchange 管理 Powershell 中，为您的组织创建新的日记规则：
 
-```
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
+
 3. 查看在 Exchange 管理 PowerShell 中已成功创建新日记规则。
 
 ## <a name="next-step"></a>后续步骤

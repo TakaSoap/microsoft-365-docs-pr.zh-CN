@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: 将 Office 365 高级威胁防护扩展到 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件，为您的组织启用更安全的协作。
-ms.openlocfilehash: 151acef2c5993d4deef77e1dbb7960925c59864f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ad2b5e06dab99bb2cdbe4b0e4c1785d716d865f7
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075110"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035712"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
@@ -28,7 +29,7 @@ ms.locfileid: "37075110"
 
 用户定期共享文件，并使用 SharePoint、OneDrive 和 Microsoft 团队进行协作。 使用[Office 365 高级威胁防护](office-365-atp.md)（ATP），您的组织可以更安全地进行协作。 ATP 可帮助检测和阻止在工作组网站和文档库中被标识为恶意的文件。  
   
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 如果 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件被标识为恶意，ATP 将直接与文件存储集成以锁定该文件。 下图显示了在库中检测到的恶意文件的示例。
   
@@ -42,11 +43,11 @@ ms.locfileid: "37075110"
   
 [![在 OneDrive for Business 中下载阻止的文件](../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
-若要了解详细信息，请参阅[打开 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
+有关详细信息，请参阅[开启适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
   
 ## <a name="keep-these-points-in-mind"></a>记住这些要点
 
-- ATP 将不会扫描 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的每个单个文件。 这是设计造成的。 通过使用共享和来宾活动事件的进程以及智能试探和威胁信号识别恶意文件，异步扫描文件。
+- ATP 将不会扫描 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的每个单个文件。 这是有意设计的。 通过使用共享和来宾活动事件的进程以及智能试探和威胁信号识别恶意文件，异步扫描文件。
 
 - 确保您的 SharePoint 网站已配置为使用[新式体验](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 当文件被标识为恶意的且被阻止时，人们可以看到这种情况发生在新式体验中，而不是经典视图中。 ATP protection 适用于是否使用新式体验或经典视图;但是，仅在新式体验中，才会出现阻止文件的视觉指示器。
     
@@ -62,7 +63,7 @@ ms.locfileid: "37075110"
   
 当 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的文件被标识为恶意文件时，除了 ATP 阻止打开或共享该文件之外，该文件还包含在隔离项目的列表中。 （在安全&amp;合规性中心中，转到 "**威胁管理** \> " "**查看** \> **隔离**" 和 "筛选**内容**"。） 
   
-如果您是组织的 Office 365 安全团队的一部分，并且拥有[在 Office 365 安全&amp;合规中心中分配](permissions-in-the-security-and-compliance-center.md)的必要权限，则可以通过 ATP 下载、发布、报告和删除被检测为恶意的文件。从隔离区。
+如果你是组织的 Office 365 安全团队的一部分，并且在[Office 365 安全&amp;合规中心中分配](permissions-in-the-security-and-compliance-center.md)了必要的权限，则可以下载、发布、报告和删除从隔离版中的 ATP 检测为恶意的文件。
   
 - **释放和报告**文件将在 SharePoint、OneDrive 或 Microsoft 团队的相应团队网站或文档库中删除文件上的 ATP 块。 然后，用户可以打开、共享和下载文件。 当选择 "**向 Microsoft 发送报告**" 选项时，该文件将报告为 "误报到 microsoft"。 
     

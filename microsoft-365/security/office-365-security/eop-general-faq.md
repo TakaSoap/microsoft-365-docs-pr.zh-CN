@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 我们在此处回答了有关 Microsoft Exchange Online Protection (EOP) 云托管电子邮件筛选服务的一般常见问题。有关其他常见问题 (FAQ) 的主题，请转到下列链接：
-ms.openlocfilehash: b49bb92cea781dc2c2120f1c0512a9de5182f16a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 838e69ad52dbb7f2012c5d8605e41c91ba4c6b7e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441499"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033863"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常见问题解答
 
@@ -33,7 +33,7 @@ ms.locfileid: "37441499"
 
 - [反恶意软件保护常见问题](anti-malware-protection-faq-eop.md)
 
-- [邮件跟踪常见问题解答](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
+- [邮件跟踪常见问题解答](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
 
 **问：什么是 EOP？**
   
@@ -63,7 +63,7 @@ ms.locfileid: "37441499"
   
 A. Microsoft 365 管理中心将包含此信息中的一些信息。 如果您受到服务级别事件的影响，则在登录到 Microsoft 365 管理中心后，您应该会看到一条通信警报（通常伴随响铃图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。
   
-关于新的 EOP 功能，[适用于企业的 Office 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)在找到有关即将推出的新功能的信息方面是不错的资源。 我们还将向[Microsoft 365 博客](https://www.microsoft.com/en-us/microsoft-365/blog/)网站发布有关新功能的博客文章。
+关于新的 EOP 功能，[适用于企业的 Office 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)在找到有关即将推出的新功能的信息方面是不错的资源。 我们还将向[Microsoft 365 博客](https://www.microsoft.com/microsoft-365/blog/)网站发布有关新功能的博客文章。
   
 **问：该服务对旧版 Exchange 版本（比如 Exchange Server 2010）和非 Exchange 环境也有效吗？**
   

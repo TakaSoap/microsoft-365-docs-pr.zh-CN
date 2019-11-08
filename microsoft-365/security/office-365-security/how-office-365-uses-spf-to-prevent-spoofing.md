@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了 Office 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。 这适用于从 Office 365 发送的出站邮件。 从 Office 365 发送给 Office 365 收件人的邮件始终可通过 SPF。
-ms.openlocfilehash: 9a0cbbe29a43a223a006b1a8495d2522ca2386c4
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 189b97de92386a7dc1a7a264ee1bb58cd367839a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772216"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033913"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗
 
@@ -127,7 +127,7 @@ v=spf1 include:spf.protection.outlook.com -all
 
 请参考本文中的语法信息，构成自定义域的 SPF TXT 记录。尽管还有其他语法选项本文未提及，这些都是最常用的选项。在构成记录后，需要在域注册机构更新记录。
   
-有关 Office 365 需要包含的域的信息，请参阅 [SPF 所需的外部 DNS 记录](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)。使用[分步操作说明](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)更新域注册机构的 SPF (TXT) 记录。如果未列出你的注册机构，你将需要单独联系他们以了解如何更新你的记录。 
+有关 Office 365 需要包含的域的信息，请参阅 [SPF 所需的外部 DNS 记录](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)。使用[分步操作说明](https://office.microsoft.com/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)更新域注册机构的 SPF (TXT) 记录。如果未列出你的注册机构，你将需要单独联系他们以了解如何更新你的记录。 
   
 ### <a name="spf-txt-record-syntax-for-office-365"></a>Office 365 的 SPF TXT 记录语法
 <a name="SPFSyntaxO365"> </a>

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: 您可以使用 Exchange Online Protection (EOP) 为 Exchange 组织创建启用邮件的组。 您还可以使用 EOP 定义或更新可指定成员资格、电子邮件地址和组其他方面的组属性。
-ms.openlocfilehash: 1efbb32635d6dd2a66c1039b04f57c4910d927c4
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: af7198b9130236ff74b0c6d147ebae5a8916d7b0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441519"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032307"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
@@ -42,7 +42,7 @@ ms.locfileid: "37441519"
 
 - 本主题中的 PowerShell 过程使用一种批处理方法，该方法会导致在几分钟内发生传播延迟，然后才能看到命令的结果。
 
-- 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)。
+- 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)。
 
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -148,7 +148,7 @@ Get-Recipient "Seattle Employees" | Format-List "PrimarySmtpAddress"
 Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
 ```
 
-有关语法和参数的详细信息，请参阅[EOPDistributionGroupMember](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)。
+有关语法和参数的详细信息，请参阅[EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)。
 
 若要获取组 "西雅图员工" 中所有成员的列表，请运行以下命令：
 
