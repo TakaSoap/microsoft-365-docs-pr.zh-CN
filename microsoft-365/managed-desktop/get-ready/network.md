@@ -4,15 +4,15 @@ description: ''
 keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b2b1a147659bf58c9b8ded26d6774994a3c1682
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012207"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074686"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
@@ -23,19 +23,19 @@ ms.locfileid: "38012207"
 
 Microsoft 托管桌面是云托管服务。 Microsoft 托管桌面服务需要能够达到的一组终结点。 此部分列出了 Microsoft 托管桌面服务的各个方面需要允许的终结点。 
 
-客户可以通过防火墙/代理直接发送所有受信任的 Microsoft 365 网络请求，从而绕过身份验证和所有其他数据包级别检查或处理，从而优化其网络。 这可降低延迟和外围容量要求。 
+客户可以通过防火墙或代理直接发送所有受信任的 Microsoft 365 网络请求，从而绕过身份验证和所有其他数据包级别检查或处理，从而优化其网络。 这可降低延迟和外围容量要求。 
 
 此外，为了优化基于 Microsoft 托管桌面云服务的性能，这些终结点需要客户客户端浏览器和其边缘网络中的设备进行特殊处理。 这些设备包括防火墙、SSL 中断和检查、数据包检查设备和数据丢失防护系统。
 
 ### <a name="proxy-requirement"></a>代理要求
 
-代理或防火墙必须支持 TLS 1.2。 否则，客户可能必须禁用协议检测。
+代理或防火墙必须支持 TLS 1.2。 否则，您可能必须禁用协议检测。
 
 ### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>允许的终结点-特定于 Microsoft 托管桌面
 
 Microsoft 托管桌面使用 Azure 门户承载其 web 控制台。 下表中的以下 Url 需要位于代理和防火墙的允许列表中，以便 Microsoft 托管桌面设备可以与 Microsoft 服务进行通信。  
 
-请注意，以下 Microsoft 托管桌面 URL 将用于在客户 API 上运行的任何服务。 客户必须确保此 URL 在其企业网络中始终可访问。
+请注意，以下 Microsoft 托管桌面 URL 将用于在客户 API 上运行的任何服务。 您必须确保此 URL 在企业网络中始终是可访问的。
 
 Microsoft 服务  | 允许列表上所需的 Url 
 --- | --- | ---
@@ -56,8 +56,7 @@ Windows 10 企业版，包括 Windows Update for Business | [管理 Windows 10 �
 Office 365 | [Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合标识所需的端口和协议](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)以及[Active Directory 和 Active Directory 域服务端口要求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 网络配置要求](https://docs.microsoft.com/intune/network-bandwidth-use)
-Microsoft Defender 高级威胁防护（ATP） | [Microsoft Defender ATP 终结点](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
-)
+Microsoft Defender 高级威胁防护（ATP） | [Microsoft Defender ATP 终结点](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

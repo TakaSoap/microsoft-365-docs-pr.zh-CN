@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 此解决方案告诉您在 Office 365 中最常见的 cybersecurity 攻击可能如下所示，以及如何对其做出响应
-ms.openlocfilehash: 71289c42ab5f86fee088e5bb158746a8b809caa9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33cacf98efb78826f2655376b19a9d05d12955e7
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075818"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078071"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全事件响应
 
@@ -46,7 +46,7 @@ ms.locfileid: "37075818"
 
 ## <a name="incident-response-articles"></a>事件响应文章
 
-- [响应 Office 365 中遭到入侵的电子邮件帐户](/compliance/responding-to-a-compromised-email-account.md)
+- [响应 Office 365 中遭到入侵的电子邮件帐户](~/compliance/responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
 你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用“[Office 365 安全路线图：前 30 天、90 天内以及之后的首要行动](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。

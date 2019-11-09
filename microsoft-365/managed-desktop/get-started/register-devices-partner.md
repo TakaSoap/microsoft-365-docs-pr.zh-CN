@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 971b17d3f9fad15d5c254d47af9b6eb30b66633c
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: ceda5765ca6450959c99222daf457cf7584401ba
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011943"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074724"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>合作伙伴注册设备的步骤
 
@@ -35,6 +35,8 @@ ms.locfileid: "38011943"
   
   
   ```
+
+
 
 
 >[!NOTE]
@@ -65,7 +67,7 @@ ms.locfileid: "38011943"
 
 你可以在主**Microsoft 托管台式机-设备**页面上监视设备注册的进度。 可能报告的状态包括：
 
-| 状态 | 说明 |
+| 状态 | 描述 |
 |---------------|-------------|
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](register-devices-self.md#troubleshooting-device-registration)。 |

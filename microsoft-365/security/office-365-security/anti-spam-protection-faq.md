@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d858706a80cf66772ea3a422e07d4f773935446c
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034183"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076316"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
@@ -89,7 +89,7 @@ A.如果通过服务发送自用户的超过一半的邮件是在某段时间范
   
  **问：是否可以与 Exchange Online 同时使用第三方反垃圾邮件和反恶意软件提供程序？**
   
-答：可以，您可以配置另一个垃圾邮件和恶意软件筛选服务来保护 Exchange Online 邮箱。 要对入站邮件执行此操作，您应通过将 MX 记录更改为指向第三方提供程序来将电子邮件重定向到第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 要对出站邮件执行此操作，请将邮件传递目标配置为第三方提供程序（智能主机），如[Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx)中所示。
+A. 是的，您可以配置其他垃圾邮件和恶意软件筛选服务来保护 Exchange Online 邮箱。 若要对入站邮件执行此操作，应通过将 MX 记录更改为指向第三方提供程序，将您的电子邮件重定向到第三方提供程序，然后将邮件重定向到 EOP 以进行其他处理。 若要对出站邮件执行此操作，请将邮件传递目标配置为第三方提供商（智能主机）。
   
  **Q. Microsoft 是否拥有任何有关如何保护自己免受网络钓鱼诈骗之害的文档？**
   
@@ -125,7 +125,7 @@ A.如果通过服务发送自用户的超过一半的邮件是在某段时间范
     
     [在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-    [为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/?LinkID=275414)
+    [关于域的常见问题](/office365/admin/setup/domains-faq)
     
 5. **使用 DKIM 对电子邮件签名，用较宽松的规范签名。**
     

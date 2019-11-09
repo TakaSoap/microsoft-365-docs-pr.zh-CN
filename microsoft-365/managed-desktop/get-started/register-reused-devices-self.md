@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577768"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074734"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -71,20 +71,25 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 4. 在**报表生成器**中，选择 "**数据源：**"。 选择应以 "AutoGen" 开头的默认数据源。 
 5. 选择 "**查询类型" 作为文本**，然后输入以下查询：
 
-```
 
+
+
+```sql
 SELECT comp.manufacturer0      AS Manufacturer,  
        comp.model0             AS Model,  
        bios.serialnumber0      AS Serial_Number,  
        mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp  
+FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
+
        INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
                ON comp.resourceid = bios.resourceid  
        INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
                ON comp.resourceid = mdm.resourceid
-
-
 ```
+
+
+
+
 5. 导航到 "**字段**" 选项卡，应已填充**字段名称**和**字段源**的 wehre 值。 如果不是，请选择 "**添加**"，然后选择 "**查询字段**"。 输入**字段名称**和**字段源**。
 6. 对以下每个值重复上述操作： 
     - 负责 
@@ -115,7 +120,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
 
 
 > [!IMPORTANT]
-> Configuration Manager 中的查询不允许导出的列名称中包含空格;这就是为什么这些步骤需要您输入 "Serial_Number" 和 "HardwareHash" 的原因。 现在，您已导出了 CSV 文件，您必须编辑报告标头，以便阅读此处所示的*序列号*和*硬件哈希*，然后再继续执行设备注册。
+> Configuration Manager 中的查询不允许导出的列名称中包含空格;这就是为什么这些步骤输入 "Serial_Number" 和 "HardwareHash" 的原因所在。 现在，您已导出了 CSV 文件，您必须编辑报告标头，以便阅读此处所示的*序列号*和*硬件哈希*，然后再继续执行设备注册。
 
 现在，你可以继续[使用 Azure 门户注册设备](#register-devices-by-using-the-azure-portal)。
 
@@ -220,7 +225,7 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 
 你可以在主**Microsoft 托管台式机-设备**页面上监视设备注册的进度。 可能报告的状态包括：
 
-| 状态 | 说明 |
+| 状态 | 描述 |
 |---------------|-------------|
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](#troubleshooting-device-registration)。 |
