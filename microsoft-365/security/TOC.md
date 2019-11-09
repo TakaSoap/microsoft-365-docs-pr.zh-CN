@@ -3,6 +3,7 @@
 ## 入门
 ### [适用于 BDM 的 Microsoft 365 安全](Microsoft-365-security-for-bdm.md)
 ### [安全功能分数](./mtp/microsoft-secure-score.md)
+### [安全功能分数（预览版）](./mtp/microsoft-secure-score-preview.md)
 ### [首席信息安全官 (CISO) 研讨会培训](./office-365-security/ciso-workshop.md)
 #### [模块 1 - Microsoft 网络安全简介](./office-365-security/ciso-workshop-module-1.md)
 #### [模块 2 - 安全管理](./office-365-security/ciso-workshop-module-2.md)
