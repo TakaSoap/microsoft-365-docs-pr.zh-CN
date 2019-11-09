@@ -1,0 +1,67 @@
+### YamlMime:Hub
+title: 适用于管理员和 IT 专业人员的 Microsoft 365 帮助中心
+summary: 浏览 Microsoft 365 帮助和培训资源。
+brand: m365
+metadata:
+  title: 适用于管理员和 IT 专业人员的 Microsoft 365 帮助中心
+  description: 设置、部署和管理 Microsoft 365 以支持组织、小型企业、市场活动或教师和学生
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection: m365-security-compliance
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 11/08/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 770cd0927ebab80a545b56de04ed3d4de0226989
+  ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/08/2019
+  ms.locfileid: "38076350"
+highlightedContent:
+  items:
+  - title: 针对管理员和 IT 专业人员的培训
+    itemType: learn
+    url: https://docs.microsoft.com/learn/m365/
+  - title: 面向最终用户的培训
+    itemType: learn
+    url: https://support.microsoft.com
+  - title: 适用于小型企业的培训
+    itemType: learn
+    url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+  - title: 适用于 IT 专业人员的测试实验室指南
+    itemType: how-to-guide
+    url: ./enterprise/m365-enterprise-test-lab-guides.md
+  - title: Microsoft 365 技术社区
+    itemType: get-started
+    url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+  - title: 面向开发人员的资源
+    itemType: reference
+    url: https://developer.microsoft.com/microsoft-365
+additionalContent:
+  sections:
+  - title: 获取 Microsoft 365 的帮助
+    summary: 选择一个卡片以了解有关 Microsoft 365 的详细信息。
+    items:
+    - title: Microsoft 365 商业版
+      summary: 专为中小型企业而设计。 使用最新版本的 Windows 和 Office 应用程序（如 Excel 和 Outlook）运行你的企业。 充分利用扩展到所有业务设备的数据保护和安全性。
+      url: ./business/index.yml
+    - title: Microsoft 365 Enterprise
+      summary: 专为大型组织而设计。 保护您的业务并转换使用 Office 应用程序、Windows 10 和企业移动性 + 安全性的方式。
+      url: ./enterprise/index.md
+    - title: Microsoft 365 教育版
+      summary: 旨在为教育版提供创新、促进团队协作和为教育而打造的单个经济实惠的解决方案提供简单而安全的体验。
+      url: https://docs.microsoft.com/education/
+    - title: Microsoft 365 合规中心
+      summary: 帮助您的组织管理信息、防止风险并遵守法律或法规标准。
+      url: ./compliance/index.yml
+    - title: Microsoft 365 安全中心
+      summary: 帮助保护您的企业跨攻击面。
+      url: ./security/index.yml
+    - title: Microsoft 365 for Campaigns
+      summary: 使用 Microsoft 365 商业版的推荐配置来保证您的市场活动或业务数据和通信的安全。
+      url: ./campaigns/index.md
+    - title: 新增— Microsoft 学习的 Microsoft 365 培训和认证
+      summary: 全新的学习途径，以提高您的 Microsoft 365 技能并获得认证。
+      url: https://docs.microsoft.com/learn/m365/
