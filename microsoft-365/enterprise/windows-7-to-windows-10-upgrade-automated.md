@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 适用于大型组织的 windows 7 到 Windows 10 自动升级
-ms.openlocfilehash: 4d1601c23d160d5618d491cd168583c78b54181c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033627"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078081"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>适用于大型组织的 windows 7 到 Windows 10 自动就地升级
 
@@ -44,7 +44,7 @@ ms.locfileid: "38033627"
 
 ## <a name="upgrading-a-small-number-of-computers"></a>升级少量计算机
 
-对于一台或几台计算机, 较之更自动化的方法，手动升级方法通常是最佳选择。 如果你有批量许可，则可在 [Microsoft 商店](https://go.microsoft.com/fwlink/p/?LinkId=808282)、其他软件零售商或[批量许可服务中心](https://www.microsoft.com/licensing/servicecenter/default.aspx)找到所需的软件和许可证。 有关将单台电脑升级到 windows 10 以及升级后还原选项的详细指南, 请参阅[windows 7 到 windows 10 手动升级分步指南](https://docs.microsoft.com/zh-CN/microsoft-365/enterprise/windows-7-to-windows-10-upgrade)。
+对于一台或几台计算机, 较之更自动化的方法，手动升级方法通常是最佳选择。 如果你有批量许可，则可在 [Microsoft 商店](https://go.microsoft.com/fwlink/p/?LinkId=808282)、其他软件零售商或[批量许可服务中心](https://www.microsoft.com/licensing/servicecenter/default.aspx)找到所需的软件和许可证。 有关将单台电脑升级到 windows 10 以及升级后还原选项的详细指南, 请参阅[windows 7 到 windows 10 手动升级分步指南](https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade)。
 
 ## <a name="how-to-upgrade-many-computers"></a>如何升级大批计算机
 
