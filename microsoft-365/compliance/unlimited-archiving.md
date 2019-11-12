@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解 Office 365 中的自动扩展存档，该存档为 Exchange Online 邮箱提供无限制的存档存储。
-ms.openlocfilehash: 475bf53304be55bbac085693788cff4b5522bb14
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c13a6067a4c17b78a869be151b6e119f0c784f46
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075942"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231373"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 中的无限制存档概述
 
@@ -55,13 +55,13 @@ Office 365 中的无限制存档功能（称为*自动扩展存档*）在存档�
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>移动到其他存档存储空间的内容是什么？
 
-为了高效地使用自动扩展存档存储，文件夹可能会移动。 Office 365 确定在将其他存储添加到存档中时哪些文件夹发生移动。 移动文件夹时，将自动在 Outlook 的文件夹列表的存档部分中的原始文件夹下创建子文件夹。 这个新的子文件夹指向已移动的项目。 Office 365 用来为此文件夹命名的命名约定是** \<文件夹名称\>_yyyy （在 mmm dd，yyyy h_mm 创建）**，其中： 
-  
+为了高效地使用自动扩展存档存储，文件夹可能会移动。 Office 365 确定在将其他存储添加到存档中时哪些文件夹发生移动。 有时移动文件夹时，会自动创建一个或多个子文件夹，并将原始文件夹中的项目分发到这些文件夹，以促进移动过程。 在 Outlook 中查看文件夹列表的存档部分时，这些子文件夹将显示在原始文件夹下。  Office 365 用于命名这些子文件夹的命名约定是** \<文件夹\>名称 _yyyy （在 mmm dd，yyyy h_mm 上创建）**，其中：
+
 - **yyyy**是接收文件夹中邮件的年份。 
     
-- **mmm dd，yyyy h_m**是 Office 365 创建子文件夹的日期和时间，以 UTC 格式表示，基于用户的时区和 Outlook 中的区域设置。 
+- **mmm dd，yyyy h_m**是 Office 365 创建子文件夹的日期和时间，以 UTC 格式为单位，基于用户的时区和 Outlook 中的区域设置。 
     
-下面的屏幕截图显示在自动展开的存档中移动邮件前后的文件夹列表。
+下面的屏幕截图显示在邮件移动到自动展开的存档之前和之后的文件夹列表。
   
  **添加额外的存储之前**
   
@@ -71,6 +71,9 @@ Office 365 中的无限制存档功能（称为*自动扩展存档*）在存档�
   
 ![预配自动扩展存档后存档邮箱的文件夹列表](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
+> [!NOTE]
+> 如前面所述，Office 365 将项目移至子文件夹（并使用上述命名约定对其进行命名），以帮助将内容分发到辅助存档。 但将项目移动到子文件夹可能并非总是如此。 有时可能会将整个文件夹移动到辅助存档中。 在这种情况下，文件夹将保留其原始名称。  在 Outlook 的文件夹列表中，该文件夹已移动到辅助存档中并不明显。
+
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>用于访问自动扩展存档中的项目的 Outlook 要求
 
 若要访问存储在自动扩展的存档中的邮件，用户必须使用以下 Outlook 客户端之一：
@@ -102,12 +105,12 @@ Office 365 中的无限制存档功能（称为*自动扩展存档*）在存档�
   
 - **电子数据展示：** 当您使用 Office 365 电子数据展示工具（如内容搜索或就地电子数据展示）时，还会搜索自动扩展存档中的其他存储区域。
     
-- **保留**:* * 通过在 Exchange Online 或电子数据展示事例保留中使用诉讼保留或电子数据展示事例保留策略（如在 "安全与合规中心" 中保留策略）将邮箱置于保留状态，位于自动扩展存档中的内容也会置于保留状态。
+- **保留：** 将邮箱置于保留状态时，使用诸如 Exchange Online 中的诉讼保留或电子数据展示事例保留和合规性中心中的保留策略等工具，位于自动扩展存档中的内容也会置于保留状态。
     
 - **邮件记录管理（MRM）：** 如果使用 Exchange Online 中的 MRM 删除策略以永久删除过期的邮箱项目，则也会删除位于自动展开的存档中的已过期项目。
     
-- **导入服务**:* * 您可以使用 Office 365 导入服务将 PST 文件导入到用户的自动扩展存档中。 你可以将 PST 文件中的最大为 100 GB 的数据导入用户的存档邮箱。 
+- **导入服务：** 您可以使用 Office 365 导入服务将 PST 文件导入到用户的自动扩展存档中。 你可以将 PST 文件中的最大为 100 GB 的数据导入用户的存档邮箱。 
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 有关自动扩展存档的更多技术详细信息，请参阅[Office 365：自动扩展存档常见问题解答](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)。

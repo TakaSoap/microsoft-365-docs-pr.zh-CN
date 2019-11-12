@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 将你的企业从 Office 365 商业高级升级到 Microsoft 365 业务的步骤。
-ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002099"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231403"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>从 Office 365 商业高级版升级到 Microsoft 365 商业版
 
@@ -38,37 +38,6 @@ ms.locfileid: "38002099"
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Office 365 商业高级版和 Microsoft 365 商业版之间的区别是什么？
 我们已将这两个计划的并行比较添加到[Microsoft 365 业务服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)中。 
 
-1. 一旦购买了新的许可证，并且这是您首次执行此操作，Microsoft 365 企业版的安装标题将显示在管理中心的顶部。
-    
-    > [!NOTE]
-    > 安装标题是添加新用户、新域和为新用户迁移电子邮件的机会。 如果不打算执行任何操作，则仍应完成向导并选择 "默认选项"，使其从管理主页中消失。 
-  
-   ![选择 "在 Microsoft 365 企业上启动安装程序" 已准备好设置横幅。](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    选择" **开始设置**"。
-    
-2. 在 "**个性化登录和电子邮件**" 页上，如果要使用此机会将其他域添加到订阅中，则可以通过选择 "**连接您已拥有的域**" 来添加域。 
-    
-    如果您已经设置了一个域，则第二个字段将指示并将显示 "**继续使用** \<_域名_\> **进行电子邮件" 和 "登录"**。   如果你未设置与订阅的域，则将**继续使用** \<_贵公司的 name.onmicrosoft.com_ \> **电子邮件并登录**。  
-    
-    选择 **下一步**。
-    
-    ![在 "个性化登录和电子邮件" 页上，选择 "添加域" 或 "使用您已使用的域"。](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. 在 "**添加新用户**" 页上，如果您有要向其分配 Microsoft 365 业务许可证的新员工，则可以添加新用户。 
-    
-    如果你没有要添加的新员工，并且想要将许可证分配给现有用户，请选择 "**下一步**"。
-    
-4. 在 "**迁移电子邮件**" 页面上，您可以选择为您在步骤3中添加的任何新用户迁移电子邮件。 您也可以跳过这一步。 选择 **下一步**。
-    
-5. 在最后一页上，选择 **"转到管理中心**"，然后继续安装。
-    
-6. 在管理中心中，转到 "**用户** \> **活动用户**"。
-    
-7. 选择要向其分配**Microsoft 365 业务**许可证的用户，然后选择 "**产品许可证**" 旁边的 "**编辑**"。
-    
-    ![在用户卡中，选择 "产品许可证" 旁边的 "编辑"。](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
 ## <a name="before-you-get-started"></a>开始前的准备
 
 - **何时应选择升级？** 如果要升级分配给单个计划的**所有用户**，则升级是正确的选择。 当您选择 "升级" 时，所有计划用户都会同时切换到另一个计划。 如果您不想将每个分配到单个计划的用户进行升级，请为新计划购买许可证（在此示例中为 Microsoft 365 企业版），并[将这些许可证单独分配](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)给您要升级的每个用户。 
