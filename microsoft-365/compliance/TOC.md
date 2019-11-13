@@ -208,6 +208,7 @@
 ### [解决处理错误](processing-data-for-case.md)
 #### [保管人数据的高级索引](indexing-custodian-data.md)
 #### [修正处理数据时出现的错误](error-remediation-when-processing-data-in-advanced-ediscovery.md)
+#### [单个项目错误更正](single-item-error-remediation.md)
 
 ### [收集事例数据](collecting-data-for-ediscovery.md)
 #### [创建搜索](create-search-to-collect-data.md)
@@ -429,8 +430,7 @@
 
 ### 泄露通知
 #### [泄露通知](gdpr-breach-notification.md)
-#### [Azure](gdpr-breach-azure.md)
-#### [Dynamics 365](gdpr-breach-dynamics365.md)
+#### [Azure 和 Dynamics 365](gdpr-breach-azure-dynamics.md)
 #### [Microsoft 支持和专业服务](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
