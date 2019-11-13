@@ -3,7 +3,7 @@ title: 用于高度管控数据的 Teams
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/31/2019
+ms.date: 11/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全团队来存储最有价值的敏感文件。
-ms.openlocfilehash: c4a7c724b6fbb4515deba1a207eea31902f822e0
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 97cc19b0b0067dc0eaca845dd16621be823f1334
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929216"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302949"
 ---
 # <a name="teams-for-highly-regulated-data"></a>用于高度管控数据的 Teams
 
@@ -115,7 +115,7 @@ ms.locfileid: "37929216"
  
 ### <a name="step-4-create-a-retention-label-and-dlp-policy"></a>步骤 4：创建保留标签和 DLP 策略
 
-按照[这些说明](https://docs.microsoft.com/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp)执行以下操作：
+按照[这些说明](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp)执行以下操作：
 
 1. 创建并发布高度管控数据的保留标签（如果需要）。
 2. 为团队网站配置步骤 1 中创建的保留标签。
