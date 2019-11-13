@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的队列通知和队列。
-ms.openlocfilehash: ef8b4acd4008f3039030049893f83a5e49e1efc2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66bd4116cfb84d15bbecafa269fcc2c7a88789d8
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075872"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290542"
 ---
 # <a name="queue-alerts-and-queues"></a>队列警报和队列
 
@@ -26,9 +26,9 @@ ms.locfileid: "37075872"
 
 - 本地环境中的网络或防火墙发生变化。
 
-Office 365 将继续重试传递48小时。 在48小时后，邮件将会过期，并将返回到未送达报告（也称为 "Ndr" 或 "退回邮件"）中的发件人。
+Office 365 将继续重试传递24小时。 24小时后，邮件将会过期，并将返回到未送达报告（也称为 "Ndr" 或 "退回邮件"）中的发件人。
 
-如果已排队的电子邮件数量超过了预定义的阈值（默认值为2000邮件），则在**最近通知**的邮件流仪表板中将提供这些通知，并且管理员将收到电子邮件通知（为其备用电子邮件地址）. 若要配置警报阈值、每日通知限制和/或通知收件人，请参阅下面的 "**自定义队列通知**" 部分。
+如果排队的电子邮件数量超过了预定义的阈值（默认值为2000邮件），则在**最近通知**的邮件流仪表板中将提供这些通知，并且管理员将收到电子邮件通知（指向其备用电子邮件地址）。 若要配置警报阈值、每日通知限制和/或通知收件人，请参阅下面的 "**自定义队列通知**" 部分。
 
 ![在安全 & 合规中心中的邮件流仪表板的 "最近的通知" 区域中对警报进行排队](../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 

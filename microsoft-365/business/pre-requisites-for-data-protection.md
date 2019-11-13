@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: '了解使用 Microsoft 365 业务设置组织的先决条件。 '
-ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575830"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290522"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>通过 Microsoft 365 Business 保护设备上的数据的先决条件
 
@@ -34,6 +34,8 @@ ms.locfileid: "37575830"
 - Windows 设备必须运行 Windows 7 专业版、Windows 8 专业版或 Windows 8.1 Pro。
     
     [将 Windows 设备升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)
+    
+    如果你运行的是 Windows 10 家庭版，则需要**购买**Windows 10 专业版。 有关说明，请参阅[将 windows 10 家庭版升级到 Windows 10 专业](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US)版。 
     
 - 从移动管理解决方案（Mobile Iron、AirWatch 等）中删除设备。将为组织中的所有人员注册 Microsoft 365 商业版 移动管理。
     
