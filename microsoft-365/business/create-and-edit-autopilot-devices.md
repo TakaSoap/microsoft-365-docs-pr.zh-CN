@@ -23,24 +23,24 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: 了解如何使用 Microsoft 365 商业版中的 AutoPilot 上传设备。 您可以将配置文件分配给一个或一组设备。
-ms.openlocfilehash: 4eadaa800aa174bcd9cac50375f68c8471e1684e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 1dd6b1a574166379e29465bf3699e47e3b155e0b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575400"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320250"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>创建和编辑 AutoPilot 设备
 
 ## <a name="upload-a-list-of-devices"></a>上传设备列表
 
-可以使用[分步指南](add-autopilot-devices-and-profile.md)上传设备，还可通过" **设备**"选项卡上传设备。 
+您可以使用分步[指南](add-autopilot-devices-and-profile.md)上载设备，但也可以在 "**设备**" 选项卡中上传设备。 
   
-设备需要满足以下要求：
+设备必须满足以下要求：
   
-- Windows 10 版本 1703 或更高版本。
+- Windows 10 版本1703或更高版本
     
-- 未获得过 Windows 现成体验的新设备。
+- 尚未通过 Windows 开箱即用体验的新设备
 
 1. 在 Microsoft 365 Business 管理中心中，选择 "**设备** \> " **AutoPilot**。
   
@@ -50,11 +50,11 @@ ms.locfileid: "37575400"
   
 3. 在 "**添加设备**" 面板上，浏览到已准备好\> **保存** \> **** 的[设备列表 CSV 文件](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)。
     
-    可从硬件供应商获取此信息，也可以使用将生成 csv 文件的 [G-et-WindowsAutoPilotInfo PowerShell 脚本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)获取。 
+    您可以从您的硬件供应商处获取此信息，也可以使用[G-et-windowsautopilotinfo PowerShell 脚本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)生成 CSV 文件。 
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>向单个设备或一组设备应用配置文件
 
-1. 在" **准备 Windows**"页面上，选择" **设备**"选项卡，并勾选一个或多个设备旁边的复选框。 
+1. 在 "**准备 Windows** " 页面上，选择 "**设备**" 选项卡，然后选中一个或多个设备旁边的复选框。 
     
 2. 在" **设备**"面板中，从" **分配的配置文件**"下拉列表中选择一个配置文件。 
     
