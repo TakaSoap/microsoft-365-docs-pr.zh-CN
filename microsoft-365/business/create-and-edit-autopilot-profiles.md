@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 了解如何创建、编辑、删除或删除 AutoPilot 配置文件。
-ms.openlocfilehash: 4305340a2fc5df8202cf4d85f9e2541690bf9ed0
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574710"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320230"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>创建和编辑 AutoPilot 配置文件
 
@@ -40,17 +40,17 @@ ms.locfileid: "37574710"
   
 2. 在 " **AutoPilot** " 页上，选择 "**配置文件**" 选项卡\> **创建配置文件**。
     
-3. 在" **创建配置文件**"页面上，输入可帮助识别配置文件的文件名称，例如"市场营销"，启用所需设置（请参阅[关于"AutoPilot 配置文件"设置](autopilot-profile-settings.md)获取详细信息），并选择" **保存**"。
+3. 在 "**创建配置文件**" 页上，输入可帮助您识别它的配置文件的名称，例如 "营销"。 打开所需的设置，然后选择 "**保存**"。 有关 AutoPilot 配置文件设置的详细信息，请参阅[关于 AutoPilot 配置文件设置](autopilot-profile-settings.md)。
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>对设备应用配置文件
 
-创建配置文件之后，可将其应用到一个或一组设备。可以选择[分步指南](add-autopilot-devices-and-profile.md)中的现有配置文件，然后将其应用于新设备，或可替换某个设备或一组设备的现有配置文件。 
+创建配置文件后，可以将其应用到一个或一组设备。 您可以在分步[指南](add-autopilot-devices-and-profile.md)中选取现有配置文件，并将其应用于新设备，或替换某个设备或设备组的现有配置文件。 
   
 1. 在" **准备 Windows**"页面上，选择" **设备**"选项卡。 
     
-2. Click the check-box next to a device name and in the **Device** panel, choose a profile from the **Assigned profile** drop-down \> **Save**.
+2. 选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "**分配的配置文件**" 下拉列表\> **中**选择一个配置文件。
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -62,7 +62,7 @@ ms.locfileid: "37574710"
 
 1. 在" **准备 Windows**"页面上，选择" **配置文件**"选项卡。 
     
-2. Click the check-box next to a device name and in the **Profile** panel update any of the available settings \> **Save**.
+2. 选中设备名称旁边的复选框，然后在 "**配置文件**" 面板中，更新任何可用设置\> **保存**。
     
     如果在用户将设备连接到 internet 之前执行此操作，配置文件会应用于设置过程。
     
@@ -70,7 +70,7 @@ ms.locfileid: "37574710"
 
 1. 在" **准备 Windows**"页面上，选择" **配置文件**"选项卡。 
     
-2. Click the check-box next to a device name and in the **Profile** panel click **Delete profile** \> **Save**.
+2. 选中设备名称旁边的复选框，然后在 "**配置文件**" 面板中选择 "**删除配置文件** \> **保存**"。
     
     如果删除了配置文件，该文件会从之前分配到的一个或一组设备中移除。
     
@@ -78,5 +78,5 @@ ms.locfileid: "37574710"
 
 1. 在" **准备 Windows**"页面上，选择" **设备**"选项卡。 
     
-2. Click the check-box next to a device name and in the **Device** panel, choose a **None** from the **Assigned profile** drop-down \> **Save**.
+2. 选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "分配的**配置文件**" \> **下拉列表中**选择 "**无**"。
     

@@ -24,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: 了解在完成业务云套件安装程序后应执行的操作。
-ms.openlocfilehash: b11c247e8d857f8c7a4d41f633267038b3dd86c6
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: d19438d6e085ba27ec3fb0308005a9bf473383e1
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574690"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320180"
 ---
 # <a name="help-users-connect-to-microsoft-365-business"></a>帮助用户连接到 Microsoft 365 Business
 
-完成设置后，默认设备策略准备就绪，可以应用。在移动设备上，用户会下载 Office 应用，然后在用户使用其工作或学校帐户登录时应用策略。此外，还需执行一些其他操作（如就地升级），策略才能应用于 Windows 电脑。请参考并共享以下主题，帮助用户进行设置和连接。
+完成设置后，你的默认设备策略将准备就绪，可以应用。 在移动设备上，用户下载 Office 应用程序。 然后，在用户使用其工作或学校帐户登录时应用策略。 此外，还需执行一些其他操作（如就地升级），策略才能应用于 Windows 电脑。 请参阅和共享以下主题，以帮助用户进行设置和连接：
   
 [为 Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)
   

@@ -22,16 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: 了解 Microsoft 365 商业版中的设备状态。
-ms.openlocfilehash: 06e5c800e6a104785c1fd0724223e05d7729722e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b55e6a5d538ec28d195225e93797cea27afd2e8b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072712"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320200"
 ---
 # <a name="device-states"></a>设备状态
-
-## <a name="device-states"></a>设备状态
 
 " **设备操作**"列表中的设备（管理员主页 \>" **设备操作**"）可具有以下状态。
   
@@ -43,12 +41,12 @@ ms.locfileid: "34072712"
 |等待停用  <br/> |Microsoft 365 商业版 正准备从设备中删除公司数据。  <br/> |
 |正在停用  <br/> |Microsoft 365 商业版 当前正在从设备中删除公司数据。  <br/> |
 |停用失败  <br/> | 删除公司数据操作失败。  <br/> |
-|已取消停用  <br/> |已取消"停用"操作。  <br/> |
+|停用取消  <br/> |取消停用操作。  <br/> |
 |等待擦除  <br/> |正在等待恢复出厂重置。  <br/> |
 |正在擦除  <br/> |已开始恢复出厂设置。  <br/> |
-|擦除失败  <br/> |无法恢复出厂设置。  <br/> |
-|已取消擦除  <br/> |已取消工厂擦除。  <br/> |
-|不正常  <br/> |这表明某个操作正在等待执行（或正在执行），但设备未签入时间已超过 30 天。  <br/> |
+|擦除失败  <br/> |无法进行恢复出厂设置。  <br/> |
+|擦除已取消  <br/> |已取消工厂擦除。  <br/> |
+|不正常  <br/> |某个操作已挂起（或正在进行），但设备尚未签入30天以上的天数。  <br/> |
 |等待删除  <br/> |正在等待执行"删除"操作。  <br/> |
 |已发现  <br/> |Microsoft 365 商业版 已检测到设备。  <br/> |
    
