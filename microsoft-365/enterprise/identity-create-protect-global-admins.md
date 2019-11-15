@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 全局管理员帐户需要特殊对待，以确保其免受凭据泄露的影响。
-ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370209"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627078"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步骤 1：创建和保护全局管理员帐户
 
@@ -47,7 +47,7 @@ ms.locfileid: "37370209"
 此部分的结果是：
 
 - 订阅中唯一具备全局管理员角色的用户帐户是专用全局管理员帐户。 使用以下 Azure Active Directory PowerShell Graph 命令验证这部分： 
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - 所有管理订阅服务的其他用户帐户分配有与其工作职责相关联的管理员角色。
