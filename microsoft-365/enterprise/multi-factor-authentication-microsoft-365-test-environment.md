@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用发送到 Microsoft 365 企业版测试环境中的智能手机的短信配置多重身份验证。
-ms.openlocfilehash: f209c3cebaefd8b4bddafb68471c35e5c37905be
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6c004f1ac093a997c263162ab8c945366f6361bd
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071571"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639902"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的多重身份验证
 
@@ -35,9 +35,9 @@ ms.locfileid: "37071571"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>第1阶段：构建 Microsoft 365 企业版测试环境
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
 如果只想使用最低要求以轻型方式测试多重身份验证，请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
   
@@ -74,7 +74,7 @@ ms.locfileid: "37071571"
     
 2. 转到 Office 365 门户（[https://portal.office.com](https://portal.office.com)），并使用用户2帐户名称和密码登录。
     
-3. 登录后，系统会提示您设置帐户以获取详细信息。 单击“下一步”。****
+3. 登录后，系统会提示您设置帐户以获取详细信息。 单击“**下一步**”。
     
 4. 在“其他安全性验证”**** 页上： 
     
@@ -84,7 +84,7 @@ ms.locfileid: "37071571"
     
    - 在**方法**中，单击 "**通过短信向我发送代码**"。
     
-5. 单击“下一步”。****
+5. 单击“**下一步**”。
     
 6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     

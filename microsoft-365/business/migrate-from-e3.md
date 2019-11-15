@@ -19,18 +19,18 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何通过 Office 365 E3 将企业移动到 Microsoft 365 商业版。
-ms.openlocfilehash: 5142038110cada6e1da77d405c82f119e0f9e4d3
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f624ee7ef7c00ac4d1fe413500d0cd081a156748
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002416"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640573"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>从 Office 365 E3 迁移到 Microsoft 365 业务 
 
-Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最佳的基于云的工作效率应用与简单的设备管理和安全性结合在一起。  如果你当前有一个 Office 365 E3 订阅，但没有超过300个员工，请考虑切换到 Microsoft 365 Business 以添加安全功能。
+Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最佳的基于云的工作效率应用与简单的设备管理和安全性结合在一起。 如果你当前有一个 Office 365 E3 订阅，但没有超过300个员工，请考虑切换到 Microsoft 365 Business 以添加安全功能。
 
-迁移非常简单：首先切换许可证，并保留当前订阅中的所有数据和用户信息。 迁移完成后，你将需要设置在 Microsoft 365 商业版中添加的功能。
+迁移非常简单：首先切换许可证，并保留当前订阅中的所有数据和用户信息。 迁移完成后，你将需要设置在 Microsoft 365 业务中添加的功能。
 
 ## <a name="differences-between-office-365-e3-and-microsoft-365-business"></a>Office 365 E3 与 Microsoft 365 商业版之间的区别
 
@@ -42,7 +42,7 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 | Office 应用程序<sup>1</sup>   | Office 365 商业版   | Office 365 专业增强订阅版 | 
 | **云生产力应用程序**       | | | 
 | Exchange Online 和 Outlook   | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档   | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
-| 团队 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Office 365 E3 中](./media/check-mark.png) | 
+| Teams | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Office 365 E3 中](./media/check-mark.png) | 
 | OneDrive for Business | 每个用户 1 TB 存储限制   | 无限制 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Office 365 E3 中](./media/check-mark.png) | 
 | StaffHub  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Office 365 E3 中](./media/check-mark.png) | 
@@ -62,15 +62,15 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 |**客户端访问许可证（CAL 权限）**|||
 |企业 CAL 套件（Exchange、SharePoint、Skype）||![包含在 Office 365 E3 中](./media/check-mark.png)|
 
-<sup>1</sup> Microsoft 365 商业版 Office 应用程序不包括通过组策略、应用遥测、更新控件、电子表格比较和查询以及商业智能等批量激活。
+<sup>1</sup> Microsoft 365 商业版的 Office 应用程序不包括通过组策略、应用遥测、更新控件、电子表格比较和查询或商业智能等批量激活。
 
 ## <a name="migration"></a>迁移
 
-若要迁移订阅，请参阅[手动切换到不同的计划](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually)。若要仅将少数用户移动到 Microsoft 365 业务，可以[自动升级每个人](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)，也可以与合作伙伴合作以移动您的 E3Microsoft 365 商业版订阅的订阅和许可证。
-以下各节介绍了需要进行哪些更改（如果有），以及迁移后可以执行的操作。
+若要迁移订阅，请参阅[手动切换到不同的计划](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually)，以获取有关仅将少数用户移动到 Microsoft 365 业务的说明。 您还可以[自动升级每个人](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)，或与合作伙伴合作将您的 E3 订阅和许可证移动到 Microsoft 365 业务订阅。
+以下各节介绍了需要进行的更改（如果有），以及迁移后可以执行的操作。
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 订阅配置和数据
-您不需要在迁移之前对当前订阅或数据进行任何更改，其中包括：
+在迁移之前，无需对当前订阅或数据进行任何更改，其中包括：
 
 - 订阅配置，如 DNS 记录和域名。
 - 用户和组帐户以及身份验证设置，例如多重因素身份验证或条件访问策略。
@@ -78,7 +78,7 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 
 ### <a name="windows-10"></a>Windows 10
 
-如果 windows Pro Creator 更新中还没有您的 Windows，则需要将[其升级到 Windows Pro 创意者更新](upgrade-to-windows-pro-creators-update.md)。
+如果 windows Pro Creator 更新中还没有你的 Windows，请[将其升级到 Windows Pro 创意者更新](upgrade-to-windows-pro-creators-update.md)。
 
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>设置策略以保护用户设备和文件
 
@@ -87,7 +87,7 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 
 为 Microsoft 365 商业版分配许可证之后，可以开始保护用户的设备和文件。
 
-如果将组织中的每个人都升级到 Microsoft 365 企业版，您将在主页上看到 "设置向导"，并且可以按照[安装向导中设置的 Microsoft 365 业务中](set-up.md)的步骤操作，以保护文件和移动设备。
+如果将组织中的每个人升级到 Microsoft 365 企业版，您将在主页上看到 "安装向导"，并且可以按照[安装向导中设置的 Microsoft 365 业务中](set-up.md)的步骤操作，以保护文件和移动设备。
 
 您还可以在 "设备" 页上完成以下步骤：
   
@@ -97,7 +97,7 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
     
 3. 在 "**添加策略**" 窗格中，为策略指定一个名称，然后从下拉类型中选择一个**策略类型**。 
     
-    您可以设置应用程序策略来保护 Android 和 iPhone 设备上的文件以及 Windows 10，还可以为公司拥有的 Windows 10 设备设置设备配置策略。 有关详细信息，请参阅以下链接：
+     您可以设置应用程序策略来保护 Android 和 iPhone 设备上的文件以及 Windows 10，还可以为公司拥有的 Windows 10 设备设置设备配置策略。 有关详细信息，请参阅以下链接：
     
   - [设置 Android 或 iOS 设备的应用保护设置](app-protection-settings-for-android-and-ios.md)
     
@@ -113,7 +113,7 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 
 ### <a name="threat-protection"></a>威胁防护
 
-迁移到 Microsoft 365 商业版后，你有 Office 365 ATP。 有关概述和设置的详细介绍，请参阅[设置 atp 安全链接](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)、[设置 atp 安全的附件](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)和[设置 atp 反网络钓鱼](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)。 [365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+迁移到 Microsoft 365 商业版后，你有 Office 365 ATP。 有关概述，请参阅[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要设置，请参阅[设置 atp 安全链接](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)、[设置 atp 安全附件](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)以及[设置 atp 反网络钓鱼](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 

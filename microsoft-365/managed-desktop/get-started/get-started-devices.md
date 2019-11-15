@@ -1,36 +1,44 @@
 ---
-title: 管理员-帮助用户开始使用 Microsoft 托管桌面设备
+title: 让用户做好使用设备的准备
 description: ''
 keywords: Microsoft 托管桌面、设备、入门、Microsoft 365
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9b87156a66d2f7a8d69a6c6f1a22353a52c69385
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012397"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627556"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>让用户做好使用设备的准备
 
-Microsoft 托管桌面设备已预先配置了当前版本的 Windows。 当用户完成设备设置时，将从云中安装配置和应用。 
+在 Microsoft 托管桌面设备进入最终用户的手中后，即可快速轻松地入门。 在 Windows 的当前版本中预配置了设备，并且在用户完成安装程序时，将从云中安装配置和应用程序。 
  
-在设置设备的工作效率过程中，只有几个步骤需要用户执行。 Microsoft 托管桌面建议使用以下链接*的 "开始使用设备*指南"。 本可下载指南提供了有关设置新的 Microsoft 托管桌面设备的基本说明。 我们已将本指南设计为 IT 管理员的基准。 可以按自己的方式使用，也可以更新它以添加可帮助用户设置其设备的步骤或信息。 
+为了更加轻松，我们提供了指导，指导用户完成初始设置，并为设置提供帮助资源并在以后必要时使用。 您可以自定义本指南，以包含特定于您的组织的特定详细信息。 然后，将指南直接分发给用户及其设备。 有两个版本，一个适用于使用 Microsoft 支持系统的组织（获取帮助应用程序），一个用于提供自己的内部最终用户支持的组织。
 
-## <a name="get-started-guide"></a>入门指南 
-你可以下载指南： [Microsoft 托管桌面-开始使用你的设备](https://www.microsoft.com/download/details.aspx?id=57918)。
+## <a name="to-prepare-the-guide"></a>准备指南
 
-## <a name="what-should-i-update-in-the-get-started-guide"></a>我应该在入门指南中进行什么更新？
+1. 下载适用于您的组织的版本：
+- [Microsoft 托管桌面-开始使用你的设备（获取帮助版本）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) -如果你的最终用户将使用 Microsoft 支持系统，请使用此版本。
+- [Microsoft 托管桌面-开始使用你的设备](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)-如果你的最终用户*不*使用 Microsoft 支持系统，则使用此版本。
+2. 使用任何能够打开 PDF 文件的应用程序，以填写与您的组织相关的详细信息：
+    - 您的用户应连接到的网络名称，以便继续安装（指南中的第3步）
+    - 您的组织的 Azure 租户帐户的名称（指南中的第4步）
+    - 组织内部 IT 支持的联系信息（第二页的顶部）
+3. 保存编辑后的 PDF，然后分发给最终用户。 
 
-以下是 IT 管理员可以个性化设置*开始使用设备*的几种方法：
-- 在第2步中包括用户应连接到的首选 internet
-- 为用户提供适当的用户名或域名以在步骤3中输入
-- 在您的组织中添加支持联系人以支持 Microsoft 托管桌面支持之外的支持
-- 添加有关在何处选取设备的说明（如果这与这些说明不同）
+## <a name="ready-to-use-guide"></a>"随时使用指南"
 
-此时，你已准备就绪，可以继续执行入门步骤：
+我们还为不需要对其进行自定义的组织提供更通用版本的指南。 有两个版本，一个适用于使用 Microsoft 支持系统的组织（获取帮助应用程序），一个用于提供自己的内部最终用户支持的组织。
+
+- [Microsoft 托管桌面-开始使用你的设备（获取帮助版本-已准备好使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) -如果你的最终用户将使用 Microsoft 支持系统，则使用此版本。
+- [Microsoft 托管桌面-开始使用你的设备（可供使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) -如果你的最终用户*不*使用 Microsoft 支持系统，则使用此版本。
+
+此时，你已准备好继续部署应用：
 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft 托管桌面入门步骤

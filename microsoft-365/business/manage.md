@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: 了解如何管理 Microsoft 365 业务相关的管理任务、移动设备、Windows 10PCs 和许多这样的任务。
-ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: 了解如何管理 Microsoft 365 业务相关的管理任务、移动设备、Windows 10 电脑和许多此类任务。
+ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575950"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633301"
 ---
 # <a name="manage-microsoft-365-business"></a>管理 Microsoft 365 Business
 
@@ -32,7 +32,7 @@ ms.locfileid: "37575950"
 
 Office 365 for business 的大多数[管理内容](/Office365/Admin/admin-home.md)也适用于 Microsoft 365 商业版。
 
-- [将其他用户添加到 Microsoft 365 商业版](add-users-m365b.md)
+- [向 Microsoft 365 Business 添加更多用户](add-users-m365b.md)
     
 - [查看策略和设备](view-policies-and-devices.md)
     
@@ -40,7 +40,7 @@ Office 365 for business 的大多数[管理内容](/Office365/Admin/admin-home.m
     
 - [Microsoft 365 商业版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)
     
-请参阅以下各节，了解如何使用 Microsoft 365 商业版保护电脑和移动设备中的组织数据。
+请参阅以下各节，了解如何使用 Microsoft 365 商业版保护您的组织在 Pc 和移动设备上的数据。
   
 ## <a name="manage-mobile-devices"></a>管理移动设备
 
@@ -48,7 +48,7 @@ Office 365 for business 的大多数[管理内容](/Office365/Admin/admin-home.m
     
 - [设置 Android 或 iOS 设备的应用保护设置](app-protection-settings-for-android-and-ios.md)
     
-    请参阅[验证 Android 或 iOS 设备上的应用保护设置](validate-settings-on-android-or-ios.md)以确保其有效。 
+    若要确保此功能有效，请参阅[验证 Android 或 iOS 设备上的应用保护设置](validate-settings-on-android-or-ios.md)。 
     
 - [从设备中删除公司数据](remove-company-data.md)
     
@@ -62,11 +62,11 @@ Office 365 for business 的大多数[管理内容](/Office365/Admin/admin-home.m
     
 - [设置 Windows 10 设备的设备保护设置](protection-settings-for-windows-10-pcs.md)
     
-    请参阅[验证 Windows 10 设备上的设备保护设置](validate-settings-on-windows-10-pcs.md)，确保其有效。 
+    若要确保此功能正常运行，请参阅[验证 Windows 10 设备上的设备保护设置](validate-settings-on-windows-10-pcs.md)。 
     
 - [设置 Windows 10 设备的应用程序保护设置](protection-settings-for-windows-10-devices.md)
     
-    请参阅 [验证 Windows 10 电脑上的设备保护设置](validate-protection-settings-on-windows-10-pcs.md)，确保其有效。 
+    若要确保此功能有效，请参阅[验证 Windows 10 电脑上的应用保护设置](validate-protection-settings-on-windows-10-pcs.md)。 
     
 - [从设备中删除公司数据](remove-company-data.md)
     
@@ -88,18 +88,14 @@ Office 365 for business 的大多数[管理内容](/Office365/Admin/admin-home.m
     
 - [关于"AutoPilot 配置文件"设置](autopilot-profile-settings.md)
     
-## <a name="set-up-and-pre-requisite-information"></a>设置和先决条件信息
+## <a name="set-up-and-prerequisite-information"></a>设置和先决条件信息
 
-- [通过 Microsoft 365 商业版保护设备上的数据的先决条件](pre-requisites-for-data-protection.md)
+- [使用 Microsoft 365 Business 保护设备上的数据的先决条件](pre-requisites-for-data-protection.md)
     
-- [使用设置向导设置 Microsoft 365 商业版](set-up.md)
+- [使用安装向导安装 Microsoft 365 Business](set-up.md)
     
 - [迁移到 Microsoft 365 商业版](migrate-to-microsoft-365-business.md)
     
 - [启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备](manage-windows-devices.md)
     
-[其他安全功能](security-features.md#additional-security-features)
-    
-
-  
-
+- [其他安全功能](security-features.md#additional-security-features)

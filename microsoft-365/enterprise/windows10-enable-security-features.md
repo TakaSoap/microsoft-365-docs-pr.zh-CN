@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 0f7b4ddec9c52861b4ecf4a7e86831efcce402d6
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1c39745b2dc891b4dc079ecd657eaf0d883af23
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370259"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627456"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>步骤5：部署 Windows 10 企业版安全功能
 
-![阶段 3：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 提供了保护企业用户、停止威胁和防止数据丢失的安全功能。 
 
@@ -58,12 +58,12 @@ Windows Defender 防病毒（AV）是内置到 Windows 10 中的反恶意软件�
 您可以使用[Windows DEFENDER av 保护评估指南](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus)来帮助评估网络上 WINDOWS defender av 的保护级别和影响。 这在创建初始配置或作为 "快速入门指南" 时也很有用，并且定期进行更新，以提供有关配置和启用功能以确保最大保护的最有用的建议。
 
 ### <a name="reporting"></a>Reporting
-您可以通过使用配置工具（如 System Center Configuration Manager 或 Microsoft Intune）获取报告。 您还可以从更新合规性（OMS）中获取报告，也可以通过使用 SIEM 中的 Windows 事件日志来获取报告。 如果你拥有 Microsoft Defender ATP 的许可证，还可以获取 Windows Defender AV 检测中的报告并执行基本修正。 有关详细信息，请参阅以下资源：
+您可以通过使用配置工具（例如 Microsoft 终结点配置管理器或 Microsoft Intune）获取报告。 您还可以从更新合规性（OMS）中获取报告，也可以通过使用 SIEM 中的 Windows 事件日志来获取报告。 如果你拥有 Microsoft Defender ATP 的许可证，还可以获取 Windows Defender AV 检测中的报告并执行基本修正。 有关详细信息，请参阅以下资源：
 * [在 Windows Defender AV 上部署、管理和报告](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
 * [Windows Defender AV 保护报告](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
 * [Microsoft Defender ATP 门户概述](https://go.microsoft.com/fwlink/?linkid=861596)
 
-### <a name="troubleshooting"></a>疑难解答
+### <a name="troubleshooting"></a>故障排除
 有关错误和事件代码的基本故障排除的信息，请参阅[查看事件日志和错误代码，以解决 Windows DEFENDER AV 的问题](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)。
 
 您还可以使用 Windows Defender 安全智能提交系统提交问题（如误报）。 若要了解如何操作，请参阅[将问题提交给 Microsoft](https://www.microsoft.com/wdsi/filesubmission)。
@@ -82,11 +82,11 @@ Windows Defender 攻击防护是一组新的 Windows 10 主机入侵防护功能
 您可以使用一系列评估主题来帮助评估网络上 Windows Defender 攻击防护措施的保护级别和影响。 这在创建初始配置或作为 "快速入门指南" 时也很有用，这些主题和指南定期更新，以提供有关配置和启用功能以确保最大保护的最有用的建议。 有关详细信息，请[评估 Windows Defender 攻击防护](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard)。
 
 ### <a name="reporting"></a>Reporting
-您可以通过使用配置工具（如 System Center Configuration Manager 或 Intune）获取报告。 您还可以通过使用 SIEM 中的 Windows 事件日志来获取报告。 如果你拥有 Microsoft Defender ATP 的许可证，还可以获取 Windows Defender AV 检测中的报告并执行基本修正。 有关详细信息，请参阅以下资源：
+您可以通过使用配置工具（例如配置管理器或 Intune）获取报告。 您还可以通过使用 SIEM 中的 Windows 事件日志来获取报告。 如果你拥有 Microsoft Defender ATP 的许可证，还可以获取 Windows Defender AV 检测中的报告并执行基本修正。 有关详细信息，请参阅以下资源：
 * [查看 Windows Defender 攻击防护事件](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard)
 * [Microsoft Defender ATP 门户概述](https://go.microsoft.com/fwlink/?linkid=861596)
 
-### <a name="troubleshooting"></a>疑难解答
+### <a name="troubleshooting"></a>故障排除
 您可以使用 Windows Defender 安全智能提交系统执行基本的故障排除或提供 Microsoft with .cab 文件，并提交问题（如误报）。 若要了解如何操作，请参阅[将问题提交给 Microsoft](https://www.microsoft.com/wdsi/filesubmission)。
 
 
@@ -123,7 +123,7 @@ Microsoft Defender ATP 集成并支持各种其他产品和工具，以扩展其
 * [使用 Api](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection)
 * [构建 Power BI 报表](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection)
 
-### <a name="troubleshooting"></a>疑难解答
+### <a name="troubleshooting"></a>故障排除
 在载入或使用产品的过程中，可能会遇到问题。 有关如何解决问题的详细信息，请参阅：
 * [解决载入问题](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
 * [Microsoft Defender ATP 故障排除](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection)

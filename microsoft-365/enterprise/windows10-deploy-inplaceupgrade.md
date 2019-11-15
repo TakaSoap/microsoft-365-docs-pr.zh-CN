@@ -1,7 +1,7 @@
 ---
 title: 将适用于现有设备的 Windows 10 企业版部署为就地升级
-description: 提供有关使用 System Center Configuration Manager 将 Windows 10 企业版映像配置和部署为就地升级的指南。
-keywords: Microsoft 365，Microsoft 365 Enterprise，Microsoft 365 文档，Windows 10 企业版，部署，就地升级，配置管理器，System Center Configuration Manager
+description: 提供有关使用 Microsoft 终结点配置管理器配置和部署 Windows 10 企业版映像作为就地升级的指南。
+keywords: Microsoft 365，Microsoft 365 Enterprise，Microsoft 365 文档，Windows 10 企业版，部署，就地升级，配置管理器，配置管理器
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f7dfa5c72a98dacc7a772ea034df6696621a8ef6
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: f3a518ca448bf56c4328bbc34fe29a41d5f16488
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302929"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627466"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步骤2：将现有设备的 Windows 10 企业版部署为就地升级
 
@@ -23,13 +23,13 @@ ms.locfileid: "38302929"
 
 ![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-将当前运行 Windows 7 或 Windows 8.1 的电脑升级到 Windows 10 的最简单途径是通过就地升级。 您可以使用 System Center Configuration Manager （配置管理器）任务序列来完全自动执行该过程。 
+将当前运行 Windows 7 或 Windows 8.1 的电脑升级到 Windows 10 的最简单途径是通过就地升级。 您可以使用配置管理器（配置管理器）任务序列来完全自动执行该过程。 
 
 如果你的现有计算机运行的是 Windows 7 或 Windows 8.1，我们建议你在你的组织部署 Windows 10 时使用此路径。 这利用 Windows 安装程序（setup.exe）执行就地升级，这将自动保留现有操作系统版本中的所有数据、设置、应用程序和驱动程序。 这需要最少的 IT 工作，因为不需要任何复杂的部署基础结构。
 
 按照这些步骤操作，使用 Configuration Manager 将 Windows 10 企业版映像配置和部署为就地升级。
 
-## <a name="the-windows-10-deployment-with-system-center-configuration-manager-poster"></a>使用 System Center Configuration Manager 海报部署 Windows 10
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>使用 Configuration Manager 海报的 Windows 10 部署
 
 Configuration Manager 海报是横向模式（17x11）中的一页。 单击下面的图像以在浏览器中查看 PDF。 
 
@@ -43,9 +43,9 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
 
 请参阅[使用升级准备管理 Windows 升级](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)，了解详细信息、入门、使用和疑难解答升级准备情况。
 
-接下来，按照指南操作，使用 System Center Configuration Manager （Current Branch）将 Windows 7 或更高版本的操作系统升级到 Windows 10。 与任何高风险部署一样，我们建议您先备份用户数据，然后再继续。 OneDrive 云存储准备就绪，可用于许可的 Microsoft 365 用户，并可用于安全地存储文件。 有关详细信息，请参阅[OneDrive 快速入门指南](https://aka.ms/ODfBquickstartguide)。 若要访问此页面，必须在 Office 365 或 Microsoft 365 租户中以租户管理员或全局管理员身份登录。
+接下来，按照指南使用 Configuration Manager （当前分支）将 Windows 7 或更高版本的操作系统升级到 Windows 10。 与任何高风险部署一样，我们建议您先备份用户数据，然后再继续。 OneDrive 云存储准备就绪，可用于许可的 Microsoft 365 用户，并可用于安全地存储文件。 有关详细信息，请参阅[OneDrive 快速入门指南](https://aka.ms/ODfBquickstartguide)。 若要访问此页面，必须在 Office 365 或 Microsoft 365 租户中以租户管理员或全局管理员身份登录。
 
-有关配置管理器版本和受支持的相应 Windows 10 客户端版本的列表，请参阅[Support For System Center Configuration Manager 的 windows 10](https://aka.ms/supportforwin10sccm)。
+有关配置管理器版本和受支持的相应 Windows 10 客户端版本的列表，请参阅[支持 windows 10 For Configuration Manager](https://aka.ms/supportforwin10sccm)。
 
 **验证是否已准备好升级 Windows**
 
@@ -58,12 +58,12 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
     - 用户数据的备份-尽管在升级中将迁移用户数据，但最佳做法是配置备份方案。 例如，将所有用户数据导出到 OneDrive 帐户，将 BitLocker 导出到加密的 USB 闪存驱动器或网络文件服务器。 有关详细信息，请参阅[在 Windows 中备份或传输数据](https://aka.ms/backuptransferdatawindows)。
 - **环境准备**-您将使用现有的 Configuration Manager 服务器结构来准备操作系统部署。 除了基本设置外，还应在 Configuration Manager 环境中进行以下配置：
     1. [扩展 Active Directory 架构](https://aka.ms/extendadschema)并[创建系统管理容器](https://aka.ms/createsysmancontainer)。
-    2. 启用 Active Directory 林发现和 Active Directory 系统发现。 有关详细信息，请参阅[Configure discovery 方法 For System Center Configuration Manager](https://aka.ms/configurediscoverymethods)。
-    3. 为内容和网站分配创建 IP 范围边界和边界组。 有关详细信息，请参阅[为 System Center Configuration Manager 定义网站边界和边界组](https://aka.ms/definesiteboundaries)。
+    2. 启用 Active Directory 林发现和 Active Directory 系统发现。 有关详细信息，请参阅[Configure discovery 方法 For Configuration Manager](https://aka.ms/configurediscoverymethods)。
+    3. 为内容和网站分配创建 IP 范围边界和边界组。 有关详细信息，请参阅[为 Configuration Manager 定义网站边界和边界组](https://aka.ms/definesiteboundaries)。
     4. 添加和配置 Configuration Manager reporting services 点角色。 有关详细信息，请参阅[配置管理器中的配置报告](https://aka.ms/configurereporting)。
     5. 为程序包创建文件系统文件夹结构。
     6. 为程序包创建 Configuration Manager 控制台文件夹结构。
-    7. 安装 System Center Configuration Manager （当前分支）更新和任何其他 Windows 10 先决条件。
+    7. 安装 Configuration Manager （当前分支）更新和任何其他 Windows 10 先决条件。
 
 ## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>第2部分：使用 Configuration Manager 添加 Windows 10 OS 映像
 现在，你需要创建包含完整 Windows 10 安装媒体的操作系统升级程序包。 在下面的步骤中，您将使用 Configuration Manager 为 Windows 10 企业版 x64 创建升级包。
@@ -94,7 +94,7 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
 创建升级任务序列后，需要创建包含要升级的设备的集合。
 
 > [!NOTE]
-> 使用以下设置测试单个设备上的部署。 准备就绪后，可以使用不同的成员身份规则来包含设备组。 有关详细信息，请参阅[如何在 System Center Configuration Manager 中创建集合](https://aka.ms/sccm-create-collections)。
+> 使用以下设置测试单个设备上的部署。 准备就绪后，可以使用不同的成员身份规则来包含设备组。 有关详细信息，请参阅[如何在 Configuration Manager 中创建集合](https://aka.ms/sccm-create-collections)。
 
 1. 在 Configuration Manager 控制台中的 "**资产和合规性**" 工作区中，右键单击 "**设备集合**"，然后选择 "**创建设备集合**"。 
 2. 在 "创建设备集合" 向导中的 "**常规**" 页面上，输入以下设置，然后选择 "**下一步**"：

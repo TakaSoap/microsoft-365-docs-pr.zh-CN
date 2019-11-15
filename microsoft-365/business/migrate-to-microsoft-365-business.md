@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 将你的企业从 Office 365 商业高级升级到 Microsoft 365 业务的步骤。
-ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231403"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640553"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>从 Office 365 商业高级版升级到 Microsoft 365 商业版
 
@@ -40,9 +40,9 @@ ms.locfileid: "38231403"
 
 ## <a name="before-you-get-started"></a>开始前的准备
 
-- **何时应选择升级？** 如果要升级分配给单个计划的**所有用户**，则升级是正确的选择。 当您选择 "升级" 时，所有计划用户都会同时切换到另一个计划。 如果您不想将每个分配到单个计划的用户进行升级，请为新计划购买许可证（在此示例中为 Microsoft 365 企业版），并[将这些许可证单独分配](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)给您要升级的每个用户。 
-- **某些加载项可能会阻止升级**如果您尝试启动升级且您的加载项无法继续运行，则可以先删除加载项，稍后再将其添加到（如果仍需要）。 
-- **如果预付计划**预付计划没有直接的升级路径。 你会知道你是否拥有预付计划，因为你使用可能已在商店中购买的产品 ID 设置你的计划。 联系合作伙伴，转到 Microsoft store，或等到预付计划过期，以切换到新计划。
+- **我应该何时选择升级？** 如果要升级分配给单个计划的**所有用户**，则升级是正确的选择。 当您选择 "升级" 时，所有计划用户都会同时切换到另一个计划。 如果您不想将每个分配到单个计划的用户进行升级，请为新计划购买许可证（在此示例中为 Microsoft 365 企业版），并[将这些许可证单独分配](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)给您要升级的每个用户。 
+- **某些加载项可能会阻止升级**如果您尝试启动升级且您的加载项无法继续运行，则可以先删除加载项，以后再将其添加回来（如果仍需要）。 
+- **如果预付计划**预付计划没有直接的升级路径。 你会知道你是否拥有预付计划，因为你使用可能已在商店中购买的产品 ID 设置你的计划。 联系合作伙伴，转到 Microsoft Store，或等到预付计划过期，以切换到新计划。
 
 ## <a name="upgrade-to-microsoft-365-business"></a>升级到 Microsoft 365 商业版
 通过在[新管理中心](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)中执行以下步骤来购买你的许可证：
@@ -56,12 +56,12 @@ ms.locfileid: "38231403"
       ![屏幕截图显示在管理中心中选择 "升级" 的位置。](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > 如果您看到一条消息，指出出现 "在 Azure Active Directory 中基于组的许可不支持订阅的升级"，则可以安全地忽略此情况，除非您的组织非常大。 已选择此选项的组织将知道他们使用的是基于组的许可。
+  > 如果您看到一条消息，指出**在 Azure Active Directory 中不支持将订阅升级到基于组的许可证**，则可以安全地忽略此消息，除非您的组织非常大。 已选择此选项的组织将知道他们使用的是基于组的许可。
 
 4. 接下来，您可以查看可以升级到的 Office 计划的列表。 在这种情况下，请查找 Microsoft 365 商业版计划。 如果想要查看此计划中包含的所有 Office 应用和服务，可以向下滚动。 在**Microsoft 365 商业**版下，选择 "**升级**" 以将 Microsoft 365 业务添加到你的购物车。
 5. 在购物车中：
-    1. 我们会自动将你的所有当前用户的许可证包括到购物车中。 如果你需要更多或更少的许可证，你需要[单独购买并分配这些许可证](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)。  
-    2. 您可以调整按月或按年支付的方式。 选择下拉菜单以做出选择。
+    1. 我们将自动为你的所有当前用户包含许可证。 如果你需要更多或更少的许可证，你需要[单独购买并分配这些许可证](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)。  
+    2. 您可以调整您想要支付的方式：每月或每年。 选择下拉菜单以做出选择。
 6. 选择您将看到购买摘要的 "**转到签出**"，其中包括此帐户的付款方式。 您还可以在此处添加促销代码（如果有的话）。
 7. 选择 "**下订单**" 以完成购买。
 需要 Microsoft 几分钟的时间来设置新的服务计划。 若要查看进度，请选择 "**检查升级状态**"。 
@@ -78,7 +78,7 @@ ms.locfileid: "38231403"
     
 2. 在 "**设备策略**" 页上，选择 "**添加**"。
     
-3. 在 "**添加策略**" 窗格中，为策略指定一个名称（例如，保护工作文件），然后从下拉类型中选择一个**策略类型**。 
+3. 在 "**添加策略**" 窗格中，为策略指定一个名称（例如，"保护工作文件"），然后从下拉列表中选择一个**策略类型**。 
     
     您可以设置应用程序策略来保护 Android 和 iPhone 设备上的文件以及 Windows 10，还可以为公司拥有的 Windows 10 设备设置设备配置策略。 有关详细信息，请参阅以下链接：
     
@@ -96,6 +96,3 @@ ms.locfileid: "38231403"
   - 有关 Windows 设备的步骤，请参阅为[Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)。 
     
   - 有关 Android 手机和 Iphone 的步骤，请参阅为[Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。 
-
-
-

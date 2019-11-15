@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: 了解在用户设备丢失或被盗时可用于保护工作文件的设置。
-ms.openlocfilehash: 505b85dabfdd27a9da8b7bcfdf7741dbb22b0ba3
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fe40f04f27b90f97a734e0a761cdbf0bba60ca2c
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074442"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640493"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>在移动设备丢失或被盗时保护工作文件
 
-策略设置确定为了保护遗失或被盗设备而自动采取的操作。建议在设置过程中接受默认值，创建适用于所有用户的 Android、iOS 和 Windows 10 应用程序策略。在设置完成后，可以创建多个策略。
+策略设置确定为了保护遗失或被盗设备而自动采取的操作。 建议您在安装过程中接受默认值，以创建适用于所有用户的 Android、iOS 和 Windows 10 应用程序策略。 在设置完成后，可以创建多个策略。
   
 ## <a name="settings-that-protect-work-files"></a>用户保护工作文件的设置
 
@@ -39,9 +39,9 @@ ms.locfileid: "34074442"
   
 |||
 |:-----|:-----|
-|设置  <br/> |说明  <br/> |
-|在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备的未使用天数达到指定天数，则自动删除该设备上存储的任何工作文件。  <br/> |
-|强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为" **打开**"，则工作文件的唯一可用保存位置是 OneDrive for Business。  <br/> |
-|对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。即使设备丢失或被盗，也没有人能够读取公司的数据。  <br/> |
+|Setting  <br/> |说明  <br/> |
+|在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备未用于您在此处指定的天数，则将自动删除存储在该设备上的所有工作文件。  <br/> |
+|强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开**"，则工作文件的唯一可用保存位置是 OneDrive for business。  <br/> |
+|对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。 即使设备丢失或被盗，也没有人能够读取您的公司数据。  <br/> |
    
 

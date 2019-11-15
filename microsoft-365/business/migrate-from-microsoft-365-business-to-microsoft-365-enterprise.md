@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 企业移动到 Microsoft 365 企业版 E3。
-ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 77760aa8ea5b79f39d4c069d86e79a3cec6844e9
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931850"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640781"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>从 Microsoft 365 Business 迁移到 Microsoft 365 企业版 E3
+# <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>从 Microsoft 365 企业版迁移至 Microsoft 365 企业版 E3
 
 Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳的基于云的工作效率应用与简单的设备管理和安全性相结合，使员工能够完成其最佳工作。 但在某些情况下，可能需要将 Microsoft 365 业务订阅迁移到 Microsoft 365 企业版。 
 
@@ -34,7 +34,7 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 
 或者，您的业务需要企业版功能，如 Office 365 专业增强版、Windows 10 企业版 E3 或企业客户端访问许可证（Cal）。
 
-升级非常简单：您可以[从管理中心](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)启动升级。 保留当前订阅中的所有数据和配置。 无需为迁移做准备，也无需执行任何操作，除非利用新功能。 
+升级非常简单：您可以[从管理中心](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)启动升级。 保留当前订阅中的所有数据和配置。 除了利用新功能之外，无需为迁移做准备，也不做任何操作。 
 
 >[!Note]
 >您还可以使用 Microsoft 365 商业版订阅进行最多300个座位，并获取 Microsoft 365 企业版 E3 订阅（适用于超过300的座位）。 但是，Office 365 ATP 不包含在 Microsoft 365 企业版 E3 中。 若要持续进行威胁防护，应添加其他 Office 365 ATP 许可证，以便许可证365范围内的所有用户都可以获得许可。
@@ -51,7 +51,7 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 | Office 应用程序 *  | [Office 365 商业版](#office-365-business)   | Office 365 专业增强版 | 
 | **云生产力应用程序**       | | | 
 | Exchange Online 和 Outlook   | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档   | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
-| 团队 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 企业版 E3 中](./media/check-mark.png) | 
+| Teams | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 企业版 E3 中](./media/check-mark.png) | 
 | OneDrive for Business | 每个用户 1 TB 存储限制   | 无限制 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 企业版 E3 中](./media/check-mark.png) | 
 | StaffHub  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 企业版 E3 中](./media/check-mark.png) | 
@@ -93,7 +93,7 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 
 ### <a name="microsoft-365-subscription-configuration-and-data"></a>Microsoft 365 订阅配置和数据
 
-您不需要在迁移之前对当前订阅或数据进行任何更改，其中包括：
+您无需在迁移之前对当前订阅或数据进行任何更改，其中包括：
 
 - 订阅配置，如 DNS 域名。
 - 用户和组帐户以及身份验证设置，例如多重因素身份验证或条件访问策略。
@@ -136,7 +136,7 @@ Windows 10 企业版 E3 还包括针对 Microsoft Edge 的基于硬件的隔离�
 
 ### <a name="windows-10"></a>Windows 10
 
-Microsoft 365 Business 包括 Windows 10 商业版，可以通过 Windows Autopilot 安装。 当迁移到 Microsoft 365 企业版 E3 时，每个用户许可证都包含 Windows 10 企业版 E3，您还可以使用 Windows Autopilot 进行安装。
+Microsoft 365 Business 包括 Windows 10 商业版，可以通过 Windows AutoPilot 安装。 当迁移到 Microsoft 365 企业版 E3 时，每个用户许可证都包含 Windows 10 企业版 E3，您还可以使用 Windows Autopilot 进行安装。
 
 <a name="office-365-business"></a>
 ### <a name="office-365-business"></a>Office 365 商业版

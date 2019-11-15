@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: cfa46fa61483f68031ef508779dd71bd43fa92ae
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11cbdaf47e06536afd996fd41c3ea603967e2685
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034243"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640344"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
@@ -33,13 +33,14 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 
 | 模型    | 最低规范  | 其他要求    | 存档日期   | 退休日期   |
 |----------|----------------|---------------------------|----------------|--------------------|
-|[Dell Precision 3530](https://www.dell.com/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 5月22日，2020  | 5月22日，2023 |
-|[Dell Latitude 5300/5400/5500](https://www.dell.com/work/shop/dell-laptops-and-notebooks/latitude-5400-business-laptop/spd/latitude-14-5400-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 2021年6月1日  | 2024年6月1日  |
-[Dell Latitude 5490](https://www.dell.com/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 2020年1月9日  | 2023年1月9日  |
-[Dell Latitude 7200 2-1/7300/7400](https://www.dell.com/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 5月1日，2021  | 5月1日，2024  |
-[Dell Latitude 7390 7390 2-in-1/7490](https://www.dell.com/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297)   | 256 GB/Intel i5/8 GB RAM   | 需要 IR 相机 | 2020年1月9日 | 2023年1月9日 |
+| [Dell Precision 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 5月22日，2020  | 5月22日，2023 |
+| [Dell Latitude 5300/5400/5500](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-5400-business-laptop/spd/latitude-14-5400-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 2021年6月1日  | 2024年6月1日  |
+| [Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 2020年1月9日  | 2023年1月9日  |
+| [Dell Latitude 7200 2-1/7300/7400](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 5月1日，2021  | 5月1日，2024  |
+| [Dell Latitude 7390 7390 2-in-1/7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM   | 需要 IR 相机 | 2020年1月9日 | 2023年1月9日 |
+| [HP EliteBook 830/840/850 G6 笔记本电脑](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
+| [HP EliteBook x360 830 G6 笔记本电脑](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
 | [HP 精英 x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 带有5VS03AV 的 SKU，需要 IR 相机 | 5月14日，2020 | 5月14日，2023 |
-| [HP EliteBook 830/840/850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年2月15日 | 2023年2月15日 |
 | [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 56 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | 5月14日，2020 | 5月14日，2023 |
 | [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | 10月23日，2020 | 10月23日，2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 带有5VS04AV 的 SKU | 2020年07月18日 | 2023年07月18日 |
@@ -51,7 +52,9 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 | [Surface 膝上型电脑2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | 无 | 2020年10月16日 | 2023年10月16日 |
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | 无 | 2020年10月16日 | 2023年10月16日 |
 
-此外，设备还必须：     
+
+
+此外，设备还必须满足以下条件：     
 
 - 拥有由 Microsoft 托管桌面批准的图像。 对设备进行排序时，请确保指定它们与 Microsoft 托管桌面配合使用。
 - 尚未完成 Windows 首次运行体验。
@@ -63,7 +66,7 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 
 - 有关戴尔设备的更多问题，请联系<a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>。
 
-- 有关 HP 设备的更多问题，请联系：美洲（<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>）;欧洲/中东/非洲（<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>）;亚太地区/日本（<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>）;全局（<a href="mailto:mmd@hp.com">mmd@hp.com</a>）
+- 有关 HP 设备和设备订购说明的更多问题，请联系：美洲（<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>）;欧洲/中东/非洲（<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>）;亚太地区/日本（<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>）;全局（<a href="mailto:mmd@hp.com">mmd@hp.com</a>）
 
 
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft cybersecurity 团队提供的用于实施安全功能以保护您的 Office 365 环境的主要建议。 '
-ms.openlocfilehash: e9731b9e64fa552363a52422146e1ae6eccf64ab
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: ab2d780ff947ac829ba2565cf3fd142208fcf8b0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032097"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627566"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Office 365 安全路线图-前30天、90天及以上的首要优先级
 
@@ -74,7 +74,7 @@ ms.locfileid: "38032097"
 |区域  <br/> |任务  <br/> |
 |安全管理  <br/> | •检查安全分数以了解针对你的环境的[https://securescore.office.com](https://securescore.office.com)建议操作（）。  <br/>  •继续定期查看 Microsoft 365 安全中心、云应用安全和 SIEM 工具中的仪表板和报告。  <br/>  •查找并实施软件更新。  <br/>  •使用[攻击模拟器](https://support.office.com/article/attack-simulator-office-365-da5845db-c578-4a41-b2cb-5a09689a551b)（包含在[Office 365 威胁智能](office-365-ti.md)中）对 spear 进行攻击模拟，从而实现网络钓鱼、密码喷涂和强力密码攻击。  <br/>  •通过查看 Cloud App Security 中的内置报告（在 "调查" 选项卡上），查找共享风险。  <br/>  •检查[合规性管理器](../../compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)以查看适用于您的组织的规章的状态（如 GDPR、NIST 800-171）。  <br/> |
 |威胁防护  <br/> | 为管理员帐户实施增强的保护：  <br/>  •为管理员活动配置[权限访问工作站](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations)（PAWs）。  <br/>  •配置[AZURE AD 特权标识管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。  <br/>  •配置安全信息和事件管理（SIEM）工具以收集来自 Office 365、云应用安全性和其他服务（包括 AD FS）的日志记录数据。 Office 365 审核日志仅存储90天的数据。 通过在 SIEM 工具中捕获此数据，可以将数据存储在更长的时间段中。  <br/> |
-|标识和访问管理  <br/> | •为所有用户启用和强制执行 MFA。  <br/>  •实现一组[条件访问和相关策略](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations)。 |
+|标识和访问管理  <br/> | •为所有用户启用和强制执行 MFA。  <br/>  •实现一组[条件访问和相关策略](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。 |
 |信息保护  <br/> | 修改和实施信息保护策略。 这些资源包括示例：  <br/> •[适用于 GDPR 的 Office 365 信息保护](https://aka.ms/o365gdpr) <br/> •[保护 SharePoint Online 网站和文件](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) <br/> <br> 对于存储在 Office 365 中的数据，使用数据丢失防护策略和监视工具（而不是云应用安全）在 Office 365 中。 <br><br>使用适用于 Office 365 的云应用安全性进行高级警报功能（而不是数据丢失防护）。  <br/> |
    
 ## <a name="beyond"></a>满足
