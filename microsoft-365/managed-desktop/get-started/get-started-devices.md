@@ -1,45 +1,53 @@
 ---
-title: 管理员-帮助用户开始使用 Microsoft 托管桌面设备
+title: 让用户做好使用设备的准备
 description: ''
 keywords: Microsoft 托管桌面、设备、入门、Microsoft 365
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9b87156a66d2f7a8d69a6c6f1a22353a52c69385
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012397"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627556"
 ---
-# <a name="get-your-users-ready-to-use-devices"></a><span data-ttu-id="a1de3-103">让用户做好使用设备的准备</span><span class="sxs-lookup"><span data-stu-id="a1de3-103">Get your users ready to use devices</span></span>
+# <a name="get-your-users-ready-to-use-devices"></a><span data-ttu-id="1e31c-103">让用户做好使用设备的准备</span><span class="sxs-lookup"><span data-stu-id="1e31c-103">Get your users ready to use devices</span></span>
 
-<span data-ttu-id="a1de3-104">Microsoft 托管桌面设备已预先配置了当前版本的 Windows。</span><span class="sxs-lookup"><span data-stu-id="a1de3-104">Microsoft Managed Desktop devices come pre-configured with the current version of Windows.</span></span> <span data-ttu-id="a1de3-105">当用户完成设备设置时，将从云中安装配置和应用。</span><span class="sxs-lookup"><span data-stu-id="a1de3-105">Configurations and apps will be installed from the cloud as the user completes setting up the device.</span></span> 
+<span data-ttu-id="1e31c-104">在 Microsoft 托管桌面设备进入最终用户的手中后，即可快速轻松地入门。</span><span class="sxs-lookup"><span data-stu-id="1e31c-104">Once a Microsoft Managed Desktop device is in the hands of your end user, getting started with it is fast and easy.</span></span> <span data-ttu-id="1e31c-105">在 Windows 的当前版本中预配置了设备，并且在用户完成安装程序时，将从云中安装配置和应用程序。</span><span class="sxs-lookup"><span data-stu-id="1e31c-105">Devices come pre-configured with the current version of Windows, and configurations and apps are installed from the cloud as the user completes setup.</span></span> 
  
-<span data-ttu-id="a1de3-106">在设置设备的工作效率过程中，只有几个步骤需要用户执行。</span><span class="sxs-lookup"><span data-stu-id="a1de3-106">There are only a few steps a user needs to take during device set up to be productive with their device.</span></span> <span data-ttu-id="a1de3-107">Microsoft 托管桌面建议使用以下链接*的 "开始使用设备*指南"。</span><span class="sxs-lookup"><span data-stu-id="a1de3-107">Microsoft Managed Desktop recommends using *Get started with your device* guide linked below.</span></span> <span data-ttu-id="a1de3-108">本可下载指南提供了有关设置新的 Microsoft 托管桌面设备的基本说明。</span><span class="sxs-lookup"><span data-stu-id="a1de3-108">This downloadable guide provides basic instructions for setting up a new Microsoft Managed Desktop device.</span></span> <span data-ttu-id="a1de3-109">我们已将本指南设计为 IT 管理员的基准。</span><span class="sxs-lookup"><span data-stu-id="a1de3-109">We've designed this guide to be a baseline for IT administrators.</span></span> <span data-ttu-id="a1de3-110">可以按自己的方式使用，也可以更新它以添加可帮助用户设置其设备的步骤或信息。</span><span class="sxs-lookup"><span data-stu-id="a1de3-110">Use it as is, or update it to add steps or info that will help your users set up their devices.</span></span> 
+<span data-ttu-id="1e31c-106">为了更加轻松，我们提供了指导，指导用户完成初始设置，并为设置提供帮助资源并在以后必要时使用。</span><span class="sxs-lookup"><span data-stu-id="1e31c-106">To make this even easier, we offer a guide that walks your users through the initial setup and provides help resources both for the setup and for use later, if needed.</span></span> <span data-ttu-id="1e31c-107">您可以自定义本指南，以包含特定于您的组织的特定详细信息。</span><span class="sxs-lookup"><span data-stu-id="1e31c-107">You can customize this guide to include certain details specific to your organization.</span></span> <span data-ttu-id="1e31c-108">然后，将指南直接分发给用户及其设备。</span><span class="sxs-lookup"><span data-stu-id="1e31c-108">You then distribute the guide directly to your users along with their device.</span></span> <span data-ttu-id="1e31c-109">有两个版本，一个适用于使用 Microsoft 支持系统的组织（获取帮助应用程序），一个用于提供自己的内部最终用户支持的组织。</span><span class="sxs-lookup"><span data-stu-id="1e31c-109">There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing their own internal end-user support.</span></span>
 
-## <a name="get-started-guide"></a><span data-ttu-id="a1de3-111">入门指南</span><span class="sxs-lookup"><span data-stu-id="a1de3-111">Get started guide</span></span> 
-<span data-ttu-id="a1de3-112">你可以下载指南： [Microsoft 托管桌面-开始使用你的设备](https://www.microsoft.com/download/details.aspx?id=57918)。</span><span class="sxs-lookup"><span data-stu-id="a1de3-112">You can download the guide: [Microsoft Managed Desktop - Get started with your device](https://www.microsoft.com/download/details.aspx?id=57918).</span></span>
+## <a name="to-prepare-the-guide"></a><span data-ttu-id="1e31c-110">准备指南</span><span class="sxs-lookup"><span data-stu-id="1e31c-110">To prepare the guide</span></span>
 
-## <a name="what-should-i-update-in-the-get-started-guide"></a><span data-ttu-id="a1de3-113">我应该在入门指南中进行什么更新？</span><span class="sxs-lookup"><span data-stu-id="a1de3-113">What should I update in the Get started guide?</span></span>
+1. <span data-ttu-id="1e31c-111">下载适用于您的组织的版本：</span><span class="sxs-lookup"><span data-stu-id="1e31c-111">Download the version appropriate to your organization:</span></span>
+- <span data-ttu-id="1e31c-112">[Microsoft 托管桌面-开始使用你的设备（获取帮助版本）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) -如果你的最终用户将使用 Microsoft 支持系统，请使用此版本。</span><span class="sxs-lookup"><span data-stu-id="1e31c-112">[Microsoft Managed Desktop - Get started with your device (Get Help version)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) - use this version if your end users will use Microsoft's support system.</span></span>
+- <span data-ttu-id="1e31c-113">[Microsoft 托管桌面-开始使用你的设备](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)-如果你的最终用户*不*使用 Microsoft 支持系统，则使用此版本。</span><span class="sxs-lookup"><span data-stu-id="1e31c-113">[Microsoft Managed Desktop - Get started with your device](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) - use this version if your end users will *not* use Microsoft's support system.</span></span>
+2. <span data-ttu-id="1e31c-114">使用任何能够打开 PDF 文件的应用程序，以填写与您的组织相关的详细信息：</span><span class="sxs-lookup"><span data-stu-id="1e31c-114">Use any app capable of opening PDF files to fill in details relevant to your organization:</span></span>
+    - <span data-ttu-id="1e31c-115">您的用户应连接到的网络名称，以便继续安装（指南中的第3步）</span><span class="sxs-lookup"><span data-stu-id="1e31c-115">The name of the network your users should connect to in order to continue setup (Step 3 in the guide)</span></span>
+    - <span data-ttu-id="1e31c-116">您的组织的 Azure 租户帐户的名称（指南中的第4步）</span><span class="sxs-lookup"><span data-stu-id="1e31c-116">The name of your organization's Azure tenant account (Step 4 in the guide)</span></span>
+    - <span data-ttu-id="1e31c-117">组织内部 IT 支持的联系信息（第二页的顶部）</span><span class="sxs-lookup"><span data-stu-id="1e31c-117">Contact information for your organization's internal IT support (top of second page)</span></span>
+3. <span data-ttu-id="1e31c-118">保存编辑后的 PDF，然后分发给最终用户。</span><span class="sxs-lookup"><span data-stu-id="1e31c-118">Save the edited PDF, and then distribute to your end users.</span></span> 
 
-<span data-ttu-id="a1de3-114">以下是 IT 管理员可以个性化设置*开始使用设备*的几种方法：</span><span class="sxs-lookup"><span data-stu-id="a1de3-114">Here are a few ways IT administrators can personalize *Get started with your device*:</span></span>
-- <span data-ttu-id="a1de3-115">在第2步中包括用户应连接到的首选 internet</span><span class="sxs-lookup"><span data-stu-id="a1de3-115">Include the preferred internet the user should connect to in step 2</span></span>
-- <span data-ttu-id="a1de3-116">为用户提供适当的用户名或域名以在步骤3中输入</span><span class="sxs-lookup"><span data-stu-id="a1de3-116">Give the user with the appropriate username, or domain name to enter at step 3</span></span>
-- <span data-ttu-id="a1de3-117">在您的组织中添加支持联系人以支持 Microsoft 托管桌面支持之外的支持</span><span class="sxs-lookup"><span data-stu-id="a1de3-117">Add a support contact within your organization for support outside of Microsoft Managed Desktop support</span></span>
-- <span data-ttu-id="a1de3-118">添加有关在何处选取设备的说明（如果这与这些说明不同）</span><span class="sxs-lookup"><span data-stu-id="a1de3-118">Add instructions about where to pick up their device (if this is separate from these instructions)</span></span>
+## <a name="ready-to-use-guide"></a><span data-ttu-id="1e31c-119">"随时使用指南"</span><span class="sxs-lookup"><span data-stu-id="1e31c-119">"Ready-to-use guide"</span></span>
 
-<span data-ttu-id="a1de3-119">此时，你已准备就绪，可以继续执行入门步骤：</span><span class="sxs-lookup"><span data-stu-id="a1de3-119">At this point, you're ready to continue with the getting started steps:</span></span>
+<span data-ttu-id="1e31c-120">我们还为不需要对其进行自定义的组织提供更通用版本的指南。</span><span class="sxs-lookup"><span data-stu-id="1e31c-120">We also provide a more generic version of the guide for those organizations that don't need to customize it.</span></span> <span data-ttu-id="1e31c-121">有两个版本，一个适用于使用 Microsoft 支持系统的组织（获取帮助应用程序），一个用于提供自己的内部最终用户支持的组织。</span><span class="sxs-lookup"><span data-stu-id="1e31c-121">There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing their own internal end-user support.</span></span>
+
+- <span data-ttu-id="1e31c-122">[Microsoft 托管桌面-开始使用你的设备（获取帮助版本-已准备好使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) -如果你的最终用户将使用 Microsoft 支持系统，则使用此版本。</span><span class="sxs-lookup"><span data-stu-id="1e31c-122">[Microsoft Managed Desktop - Get started with your device (Get Help version - ready to use)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) - use this version if your end users will use Microsoft's support system.</span></span>
+- <span data-ttu-id="1e31c-123">[Microsoft 托管桌面-开始使用你的设备（可供使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) -如果你的最终用户*不*使用 Microsoft 支持系统，则使用此版本。</span><span class="sxs-lookup"><span data-stu-id="1e31c-123">[Microsoft Managed Desktop - Get started with your device (ready to use)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) - use this version if your end users will *not* use Microsoft's support system.</span></span>
+
+<span data-ttu-id="1e31c-124">此时，你已准备好继续部署应用：</span><span class="sxs-lookup"><span data-stu-id="1e31c-124">At this point, you're ready to move on to deploying apps:</span></span>
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="a1de3-120">Microsoft 托管桌面入门步骤</span><span class="sxs-lookup"><span data-stu-id="a1de3-120">Steps to get started with Microsoft Managed Desktop</span></span>
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="1e31c-125">Microsoft 托管桌面入门步骤</span><span class="sxs-lookup"><span data-stu-id="1e31c-125">Steps to get started with Microsoft Managed Desktop</span></span>
 
-1. [<span data-ttu-id="a1de3-121">在管理门户中添加和验证管理员联系人</span><span class="sxs-lookup"><span data-stu-id="a1de3-121">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
-2. [<span data-ttu-id="a1de3-122">调整条件访问</span><span class="sxs-lookup"><span data-stu-id="a1de3-122">Adjust conditional access</span></span>](conditional-access.md)
-3. [<span data-ttu-id="a1de3-123">分配许可证</span><span class="sxs-lookup"><span data-stu-id="a1de3-123">Assign licenses</span></span>](assign-licenses.md)
-4. [<span data-ttu-id="a1de3-124">部署 Intune 公司门户</span><span class="sxs-lookup"><span data-stu-id="a1de3-124">Deploy Intune Company Portal</span></span>](company-portal.md)
-5. [<span data-ttu-id="a1de3-125">启用企业状态漫游</span><span class="sxs-lookup"><span data-stu-id="a1de3-125">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
-6. [<span data-ttu-id="a1de3-126">设置设备</span><span class="sxs-lookup"><span data-stu-id="a1de3-126">Set up devices</span></span>](set-up-devices.md)
-7. <span data-ttu-id="a1de3-127">使用户可以使用设备（本主题）</span><span class="sxs-lookup"><span data-stu-id="a1de3-127">Get your users ready to use devices (this topic)</span></span>
-8. [<span data-ttu-id="a1de3-128">部署应用</span><span class="sxs-lookup"><span data-stu-id="a1de3-128">Deploy apps</span></span>](deploy-apps.md)
+1. [<span data-ttu-id="1e31c-126">在管理门户中添加和验证管理员联系人</span><span class="sxs-lookup"><span data-stu-id="1e31c-126">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
+2. [<span data-ttu-id="1e31c-127">调整条件访问</span><span class="sxs-lookup"><span data-stu-id="1e31c-127">Adjust conditional access</span></span>](conditional-access.md)
+3. [<span data-ttu-id="1e31c-128">分配许可证</span><span class="sxs-lookup"><span data-stu-id="1e31c-128">Assign licenses</span></span>](assign-licenses.md)
+4. [<span data-ttu-id="1e31c-129">部署 Intune 公司门户</span><span class="sxs-lookup"><span data-stu-id="1e31c-129">Deploy Intune Company Portal</span></span>](company-portal.md)
+5. [<span data-ttu-id="1e31c-130">启用企业状态漫游</span><span class="sxs-lookup"><span data-stu-id="1e31c-130">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
+6. [<span data-ttu-id="1e31c-131">设置设备</span><span class="sxs-lookup"><span data-stu-id="1e31c-131">Set up devices</span></span>](set-up-devices.md)
+7. <span data-ttu-id="1e31c-132">使用户可以使用设备（本主题）</span><span class="sxs-lookup"><span data-stu-id="1e31c-132">Get your users ready to use devices (this topic)</span></span>
+8. [<span data-ttu-id="1e31c-133">部署应用</span><span class="sxs-lookup"><span data-stu-id="1e31c-133">Deploy apps</span></span>](deploy-apps.md)
