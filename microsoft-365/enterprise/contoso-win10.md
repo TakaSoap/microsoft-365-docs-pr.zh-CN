@@ -12,24 +12,24 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 如何使用 System Center Configuration Manager 来部署 Windows 10 企业版的就地升级。
-ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Windows 10 企业版的就地升级。
+ms.openlocfilehash: a36e933d31ac6d629b649f07d6b8c9a4fe950ec8
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370469"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627328"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso Windows 10 企业版部署
 
-**摘要：** 了解 Contoso 如何使用 System Center Configuration Manager 来部署 Windows 10 企业版的就地升级。
+**摘要：** 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Windows 10 企业版的就地升级。
 
 在广泛推出 Microsoft 365 企业版之前，Contoso 的 Windows 兼容电脑和设备混合运行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要将其电脑升级为 Windows 10 企业版，以利用自动部署更新中的高级安全性并减少 IT 开销。 
 
 在评估其基础结构和业务需求之后，Contoso 确定了这些部署的关键要求：
 
 - 应有尽可能多的电脑和设备运行 Windows 10 企业版
-- 就地升级的推广利用现有 System Center Configuration Manager 基础结构
+- 就地升级的推广利用了现有的 Configuration Manager 基础结构
 - 控制哪些版本的 Windows 10 企业版的部署和更新是通过环来完成的
 - 电脑和设备应保持最新的更新、使用最低的 IT 管理成本，并尽量减少对最终用户带来的影响
 
@@ -51,7 +51,7 @@ ms.locfileid: "37370469"
 
   识别由于经常崩溃而可能需要重新生成或替换的设备以及导致设备崩溃的设备驱动程序，还包括有关这些驱动程序的可减少崩溃次数的替代版本建议。 提供 Windows 信息保护错误配置的通知，向最终用户发送相关提示。
  
-Contoso 具有一个现有的 System Center Configuration Manager (Current Branch) 基础结构。Configuration Manager 针对大型环境进行缩放，并在安装、更新和设置过程中提供广泛的控制。它还具有内置功能，能够更为轻松和高效地部署和管理 Windows 10 企业版。
+Contoso 具有一个现有的 Configuration Manager (Current Branch) 基础结构。Configuration Manager 针对大型环境进行扩展，并在安装、更新和设置过程中提供广泛的控制。它还具有内置功能，能够更为轻松和高效地部署和管理 Windows 10 企业版。
 
 ## <a name="planning-process"></a>规划过程
 
@@ -83,7 +83,7 @@ Contoso 具有一个现有的 System Center Configuration Manager (Current Branc
 
 此基础结构的组成部分：
 
-- System Center Configuration Manager：
+- Configuration Manager：
   - 从 Microsoft 网络的 Microsoft 批量许可中心获取 Windows 10 企业版包的图像。
   - 是用于部署包的集中管理点。
 - 通常位于 Contoso 区域中心办事处的区域分发点。
@@ -91,7 +91,7 @@ Contoso 具有一个现有的 System Center Configuration Manager (Current Branc
 
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-o365pp.md) Contoso 如何利用其 System Center Configuration Manager 基础结构在组织中部署 Office 365 专业增强版并使之保持最新。 
+[了解](contoso-o365pp.md) Contoso 如何利用其 Configuration Manager 基础结构在组织中部署 Office 365 专业增强版并使之保持最新。 
 
 ## <a name="see-also"></a>另请参阅
 
