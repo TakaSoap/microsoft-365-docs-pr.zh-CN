@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的 Microsoft Intune 来管理其设备及其上运行的应用。
-ms.openlocfilehash: b083b7fed67eb08b47daf70c3fd22c181f5a8f77
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c486c9ef338ab1bd8959266183da6b79d62b3311
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370479"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673178"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
-
-**摘要：** 了解 Contoso 如何使用 Microsoft 365 企业版中的 Microsoft Intune 来管理其设备及其上运行的应用。
 
 Microsoft 365 企业版包含 Intune 和一组 Azure 服务，可对移动设备和应用程序的管理和安全性进行支持。
 

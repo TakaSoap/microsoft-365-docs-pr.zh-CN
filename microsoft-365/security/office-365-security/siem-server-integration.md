@@ -1,11 +1,11 @@
 ---
-title: SIEM server 与 Microsoft 365 的集成
+title: SIEM server 与 Microsoft 365 服务和应用程序的集成
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 06/17/2019
+ms.date: 11/15/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -13,35 +13,45 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - SIEM
-description: 摘要：阅读本文，了解 SIEM server 与 Microsoft 365 集成的概述。
-ms.openlocfilehash: 97f1c1d1f1862d140e014b4460ac9f40cb1934bb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 阅读本文，了解 SIEM server 与 Microsoft 365 集成的概述。
+ms.openlocfilehash: bea6141022fef1275a7e291217f698f52613f170
+ms.sourcegitcommit: d8d001c03c28c10bea005d1c9b5f4a8f393af706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076041"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38677505"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
 
-## <a name="overview"></a>概述
+## <a name="summary"></a>Summary
 
-如果您的组织使用的是安全信息和事件管理（SIEM）服务器，或者您打算马上获取 SIEM 服务器，那么您可能想知道如何与您的 Microsoft 365 （包括 Office 365 E5）集成。 您是否需要 SIEM 服务器取决于多个因素，例如组织的安全要求。 Microsoft 365 提供了多种安全功能;但是，如果您的组织在本地和云中有内容和应用程序（如混合云部署的情况），则可以考虑添加 SIEM 服务器以实现额外保护。 或者，如果您的组织具有特别严格的安全要求，必须满足这些要求，则可以考虑将 SIEM 服务器添加到您的环境中。
+如果您的组织使用的是安全信息和事件管理（SIEM）服务器，或者您打算马上获取 SIEM 服务器，那么您可能会想知道如何将与 Microsoft 365 或 Office 365 集成。 本文提供了可用于设置 SIEM server 与 Microsoft 365 服务和应用程序集成的资源的列表。
 
-## <a name="siem-server-integration-microsoft-365"></a>SIEM server 集成 Microsoft 365
+> [!TIP]
+> 如果你还没有 SIEM 服务器并且正在浏览你的选项，请考虑使用**[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)**。
 
-SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数据。 下表列出了几个 Microsoft 365 服务和应用程序以及 SIEM 服务器输入，以及在哪里可以了解有关 SIEM server 集成的更多信息。 
+## <a name="do-i-need-a-siem-server"></a>我是否需要 SIEM 服务器？
 
-| Microsoft 365 服务或应用程序 | SIEM 服务器输入 | 要了解详细信息的资源 |
+您是否需要 SIEM 服务器取决于多个因素，例如组织的安全要求和数据所在的位置。 Microsoft 365 包括各种安全功能，这些功能可满足许多组织的安全需要，而无需其他服务器（如 SIEM 服务器）。 某些组织具有需要使用 SIEM 服务器的特殊情况。 下面是一些示例：
+
+- *Fabrikam*在本地有一些内容和应用程序，而有些在云中（它们具有混合云部署）。 若要在其所有内容和应用程序中获取安全报告，Fabrikam 已实现 SIEM 服务器。 
+
+- *Contoso*是一种具有特别严格的安全要求的金融服务组织。 他们已将 SIEM 服务器添加到其环境中，以充分利用他们所需的额外安全保护。
+
+## <a name="siem-server-integration-with-microsoft-365"></a>SIEM server 与 Microsoft 365 的集成
+
+SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数据。 下表列出了几个 Microsoft 365 服务和应用程序以及 SIEM 服务器输入和资源，以详细了解 SIEM server 集成。 
+
+| Microsoft 365 服务或应用程序 | SIEM 服务器输入 | 了解详细信息的资源 |
 | --- | --- | --- |
-| [Office 365 高级威胁防护](office-365-atp.md) <br/>或<br/>[Office 365 威胁智能](office-365-ti.md) | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
+| [Office 365 高级威胁防护](office-365-atp.md)  | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
+| [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | Azure 中托管的 HTTPS 终结点 <br/>REST API| [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Microsoft 威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | 日志集成 | [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
-| [Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro)（威胁防护和威胁检测） | 警报 | [Azure 安全数据导出到 SIEM 配置-预览](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-|[Azure 高级威胁分析](https://docs.microsoft.com/azure/security/azure-threat-detection) | Azure 监视器 | [博客使用 Azure Monitor 与 SIEM 工具集成](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools) |
-|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) |日志集成 |[将 Microsoft Graph 安全性 API 警报与 SIEM 集成](https://docs.microsoft.com/graph/security-siemintegration) |
 
+> [!TIP]
+> 查看[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)，它附带了许多连接器（适用于 Microsoft 解决方案），现成且提供了实时集成（包括 Microsoft 威胁防护解决方案）和 microsoft 365 源（包括 Office 365、azure AD、azure ATP 和 Microsoft 云应用安全性等）。
 
-## <a name="audit-logging-must-be-turned-on"></a>必须打开审核日志记录
+### <a name="audit-logging-must-be-turned-on"></a>必须打开审核日志记录
 
 在配置 SIEM server 集成之前，请确保审核日志记录已打开。 
 
@@ -49,10 +59,8 @@ SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数
 
 - 对于 Exchange Online，[审核日志记录是使用 Windows PowerShell 打开](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing)的。
  
-## <a name="see-also"></a>另请参阅
+## <a name="additional-resources"></a>其他资源
 
-[云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-  
-[云应用测试实验室指南 (TLG) ](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[在 Azure 安全中心集成安全解决方案](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
-
+[将 Microsoft Graph 安全性 API 警报与 SIEM 集成](https://docs.microsoft.com/graph/security-integration)
