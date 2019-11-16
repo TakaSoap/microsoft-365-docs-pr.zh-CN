@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: 了解如何管理 Microsoft 365 业务相关的管理任务、移动设备、Windows 10 电脑和许多此类任务。
-ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: 77b8757d9e6ab644b16e97ff20f50c0ce3123088
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633301"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675960"
 ---
 # <a name="manage-microsoft-365-business"></a>管理 Microsoft 365 Business
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Microsoft 365 商业版常规管理任务
 
-Office 365 for business 的大多数[管理内容](/Office365/Admin/admin-home.md)也适用于 Microsoft 365 商业版。
+Office 365 for business 的大多数[管理内容](https://docs.microsoft.com/office365/admin/admin-home)也适用于 Microsoft 365 商业版。
 
 - [向 Microsoft 365 Business 添加更多用户](add-users-m365b.md)
     
@@ -55,9 +55,7 @@ Office 365 for business 的大多数[管理内容](/Office365/Admin/admin-home.m
 ## <a name="manage-windows-10-pcs"></a>管理 Windows 10 电脑
 
 - [为 Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)
-    
-- [在 Windows 10 设备上自动安装或卸载 Office](auto-install-or-uninstall-office.md)
-    
+
     阅读[准备通过 Microsoft 365 商业版部署 Office 客户端](prepare-for-office-client-deployment.md)，然后自动安装 Office。 
     
 - [设置 Windows 10 设备的设备保护设置](protection-settings-for-windows-10-pcs.md)

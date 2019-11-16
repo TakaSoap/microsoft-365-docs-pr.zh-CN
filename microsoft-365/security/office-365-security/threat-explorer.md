@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: 01985c69d1d89536d16b166eafc23df37ee53d0a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: e3f205a75c30397382b63112df4503f7a1d23582
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639883"
+ms.locfileid: "38673278"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -81,11 +81,15 @@ ms.locfileid: "38639883"
 有关调查恶意电子邮件的详细讨论，请参阅[查找和调查 Office 365 中提供的恶意电子邮件](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered)。
 
 
-此外，您现在可以将**报告导出**到 Microsoft Excel，以查看其网络消息 ID 和单击结论，从而使了解您的流量更容易的任务。 下面介绍了它的工作原理。 从 "Office 365 快速启动" 上的 "威胁管理" 开始，依次单击 "通过此链"：
+此外，您现在可以将**URL 单击的报告导出**到 Microsoft Excel 中，以查看其网络消息 ID 和单击结论，从而使了解您的 URL 单击流量更容易的任务。 下面介绍了它的工作原理。 从 "Office 365 快速启动" 上的 "威胁管理" 开始，依次单击 "通过此链"：
 
-**资源管理器 > 查看网络钓鱼 > 单击 > 顶部 Url**
+**资源管理器 > 查看网络钓鱼 > 单击 > 顶部 Url 或 URL 顶部单击 > 单击任意记录打开 URL 浮出控件**
 
 当您单击列表中的某个 URL 时，将会在弹出面板上看到一个新的 "导出" 按钮。 使用此按钮可以将数据移动到 Excel 电子表格，以便更轻松地进行报告。
+
+你可以在实时检测中获取相同的位置，如下所示：
+
+**Explorer > 实时检测 > 查看网络钓鱼 > Url > 顶部 Url 或顶部单击 > 单击任意记录打开 URL 浮出 > 导航到 "单击" 选项卡。**
 
 > [!TIP]
 > 当您通过网络邮件 ID 搜索浏览器或关联的第三方工具时，网络邮件 ID 会将单击映射回特定邮件。 在网络邮件 ID 中搜索将为管理员提供与单击结果关联的特定电子邮件。 在有导出功能的情况下，网络邮件 ID 的关联标识将使分析速度更快、更强大。

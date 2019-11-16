@@ -1,9 +1,9 @@
 ---
-title: Office 365 中的自动化调查和响应（空气）
+title: Office 365 中的自动事件响应（空气）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,28 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 了解 Office 365 高级威胁防护中的自动化调查和响应功能。
-ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
+ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386199"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673398"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
+# <a name="automated-incident-response-air-in-office-365"></a>Office 365 中的自动事件响应（空气）
 
-自动化调查和响应（空中）功能使您能够运行自动化的调查过程，以应对目前存在的已知威胁。 空中可帮助您的安全操作团队更高效地运行。
+自动化事件响应（空中）功能使您能够运行自动化的调查过程，以应对目前存在的已知威胁。 空中可帮助您的安全操作团队更高效地运行。
 - 若要了解空气的工作原理，请使用本文。
 - 若要开始使用 AIR，请参阅[在 Office 365 中自动调查和响应威胁](office-365-air.md)。
 
 > [!NOTE]
 > 您必须是全局管理员、安全管理员、安全操作员或安全读者才能访问空中功能。 若要了解有关这些权限的详细信息，请参阅[Microsoft 365 安全中心：角色和权限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
-
-以下订阅中包含空中：
-- Microsoft 365 E5
-- Microsoft 365 E5 安全性
-- Office 365 E5
-- Office 365 高级威胁防护计划2
 
 ## <a name="the-overall-flow-of-air"></a>空气的整体流动
 
@@ -72,7 +66,7 @@ ms.locfileid: "37386199"
 
 若要查看警报，请在安全 & 合规性中心中，选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 请注意，默认情况下通知视图中隐藏了信息警报。 若要查看它们，您需要更改警报筛选以包含信息警报。
 
-如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理（SIEM）系统管理安全警报，则可以通过电子邮件通知或通过[电子邮件通知将 Office 365 警报发送到该系统。Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 通过电子邮件或 API 的调查通知通知包括访问安全 & 合规性中心中的警报的链接，使分配的安全管理员能够快速导航到调查。
+如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理（SIEM）系统管理安全警报，则可以通过电子邮件通知或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)将 Office 365 警报发送到该系统。 通过电子邮件或 API 的调查通知通知包括访问安全 & 合规性中心中的警报的链接，使分配的安全管理员能够快速导航到调查。
 
 ![链接到调查的警报](../media/air-alerts-page-details.png) 
 
@@ -112,24 +106,28 @@ ms.locfileid: "37386199"
 
 ![空气的主要调查页面](../media/air-maininvestigationpage.png) 
   
-可执行下列操作：
+可以执行下列操作：
 - 直接导航到调查（选择**调查 ID**）。
 - 应用筛选器。 从**调查类型**、**时间范围**、**状态**或这些情况的组合中进行选择。
 - 将数据导出到 .csv 文件。
 
 调查状态指示分析和操作的进度。 在调查运行时，状态更改以指示是否发现威胁，以及是否已批准操作。 
-- **启动**：调查已排入队列，以便尽快开始
-- **正在运行**：调查已开始，正在进行分析
-- **未找到威胁**：调查已完成其分析，未发现任何威胁
-- 已**由系统终止**：调查未关闭并在7天后过期
-- **待处理操作**：调查发现存在建议操作的威胁
-- **发现的威胁**：调查发现威胁，但威胁没有在空中可用的操作
-- 已**修正**：调查已完成且已完全修正（已批准所有操作）
-- **部分修正**：调查已完成，某些建议的操作已获得批准
-- 已**被用户终止**：管理员终止了调查
-- **失败**：调查过程中出现错误，使其无法达到威胁的结论
-- **按限制排队**：调查因系统处理限制而正在等待分析（以保护服务性能）
-- **由限制终止**：由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来重新触发调查。
+
+
+|状态  |含义  |
+|---------|---------|
+|即将开始 | 调查已排入队列，以便尽快开始 |
+|运行 | 调查已开始，正在进行分析 |
+|找不到威胁 | 调查已完成其分析，未发现任何威胁 |
+|已由系统终止 | 调查未关闭并在7天后过期 |
+|挂起的操作 | 调查发现了与建议的操作有关的威胁 |
+|发现威胁 | 调查发现威胁，但威胁没有在空中可用的操作 |
+|已修正 | 调查已完成且已完全修正（已批准所有操作） |
+|部分修正 | 调查已完成，某些建议的操作已获得批准 |
+|由用户终止 | 管理员终止了调查 |
+|Failed | 调查过程中发生错误，阻止它达到威胁的结论 |
+|按限制排队 | 由于系统处理限制，调查正在等待分析（以保护服务性能） |
+|已通过限制终止 | 由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来重新触发调查。 |
 
 ### <a name="investigation-graph"></a>调查图形
 
@@ -137,7 +135,7 @@ ms.locfileid: "37386199"
 
 ![空中调查图形页面](../media/air-investigationgraphpage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取当前调查的直观概述。
 - 查看调查持续时间的摘要。
 - 在可视化中选择一个节点以查看该节点的详细信息。
@@ -149,7 +147,7 @@ ms.locfileid: "37386199"
 
 ![空气警报页面](../media/air-investigationalertspage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取当前触发警报和任何关联警报的直观概述。
 - 在列表中选择一个警报，打开显示完整警报详细信息的飞出页面。
 
@@ -182,14 +180,15 @@ ms.locfileid: "37386199"
 
 ![空中电子邮件调查页面](../media/air-investigationemailpage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取当前群集结果和发现的威胁的直观概述。
 - 单击 "群集" 实体或威胁列表打开显示完整警报详细信息的弹出页面。
 - 单击 "电子邮件群集详细信息" 选项卡顶部的 "在资源管理器中打开" 链接进一步调查电子邮件群集
 
 ![使用浮出控件详细信息的航空调查电子邮件](../media/air-investigationemailpageflyoutdetails.png)
 
-* 注意：在电子邮件上下文中，您可能会在调查过程中看到一个卷异常威胁曲面。 卷异常表明调查事件时间与之前的时间框架相比，与调查事件的类似电子邮件中的峰值。 这种具有类似特征（例如，subject 和发件人域、正文相似性和发件人 IP）的电子邮件通信的峰值是电子邮件宣传活动或攻击的典型启动。 但是，批量、垃圾邮件和合法电子邮件活动通常共享这些特征。 由于使用反病毒引擎、沙箱或恶意信誉识别的恶意软件或网络钓鱼威胁相比，大量异常会带来潜在的威胁，因此可能会降低严重程度。
+> [!NOTE]
+> 在电子邮件上下文中，您可能会在调查过程中看到一个卷异常威胁曲面。 卷异常表明调查事件时间与之前的时间框架相比，与调查事件的类似电子邮件中的峰值。 这种具有类似特征（例如，subject 和发件人域、正文相似性和发件人 IP）的电子邮件通信的峰值是电子邮件宣传活动或攻击的典型启动。 但是，批量、垃圾邮件和合法电子邮件活动通常共享这些特征。 由于使用反病毒引擎、沙箱或恶意信誉识别的恶意软件或网络钓鱼威胁相比，大量异常会带来潜在的威胁，因此可能会降低严重程度。
 
 ### <a name="user-investigation"></a>用户调查
 
@@ -199,7 +198,7 @@ ms.locfileid: "37386199"
 
 ![空中调查用户页](../media/air-investigationuserspage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取已确定的用户结果和发现的风险的直观概述。
 - 选择用户以打开显示完整警报详细信息的飞出页面。
 
@@ -212,7 +211,7 @@ ms.locfileid: "37386199"
 作为调查的一部分，空中将电子邮件威胁与设备相关联。 例如，调查会将恶意文件哈希传递到[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 )以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。 
 
-可执行下列操作：
+可以执行下列操作：
 - 获取发现的当前计算机和威胁的直观概述。
 - 选择一台计算机以打开在 Microsoft Defender 安全中心的相关[Microsoft DEFENDER ATP 调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中的视图。
 
@@ -224,7 +223,7 @@ ms.locfileid: "37386199"
 
 !["航空调查实体" 页](../media/air-investigationentitiespage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取发现的调查实体和威胁的直观概述。
 - 选择一个实体以打开显示相关实体详细信息的飞出页面。
 
@@ -236,7 +235,7 @@ ms.locfileid: "37386199"
 
 ![航空调查日志页](../media/air-investigationlogpage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取有关执行操作手册步骤的直观概述。
 - 将结果导出到 CSV 文件。
 - 筛选视图。
@@ -249,7 +248,7 @@ ms.locfileid: "37386199"
 
 ![航空调查操作页](../media/air-investigationactionspage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取对操作手册建议的操作的直观概述。
 - 选择一个或多个操作。
 - 使用注释批准或拒绝建议的操作。
@@ -299,12 +298,12 @@ ms.locfileid: "37386199"
 
 ## <a name="how-to-get-air"></a>如何获取空中
 
-Office 365 AIR 包括在以下订阅中：
+Office 365 AIR 包含在以下订阅中：
 
-- Microsoft 365 企业版 E5
-- Office 365 企业版 E5
+- Microsoft 365 E5
+- Office 365 E5
 - Microsoft 威胁防护
-- Office 365 高级威胁防护计划2
+- Office 365 高级威胁防护（计划 2）
 
 如果你没有这些订阅，请[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)。
 
@@ -317,3 +316,4 @@ Office 365 AIR 包括在以下订阅中：
 [了解 Microsoft Defender ATP 中的空气](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
 
 [访问 Microsoft 365 路线图以了解即将推出和推出的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+

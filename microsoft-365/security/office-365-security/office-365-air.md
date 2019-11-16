@@ -4,7 +4,7 @@ keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动事件响应功能高级威胁防护计划2。
-ms.openlocfilehash: 293b567cf24e9c6b0e33e28e9dd1ca0453fd0cd1
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37385729"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673418"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>在 Office 365 中自动调查和响应威胁
 
@@ -37,13 +37,15 @@ ms.locfileid: "37385729"
 - [查看与调查相关的警报的详细信息](#view-details-about-an-alert-related-to-an-investigation)
 
 > [!NOTE]
-> 您必须是全局管理员、安全管理员、安全操作员或安全读者才能执行本文中所述的任务。 若要了解详细信息，请参阅[Microsoft 365 安全中心：角色和权限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> 您必须具有适当的权限才能执行本文中所述的任务。 例如，您 myst 是全局管理员、安全管理员、安全操作员或安全读者。 [了解有关 Microsoft 365 安全中心角色和权限的详细信息](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
 以下订阅中包含空中：
 - Microsoft 365 E5
-- Microsoft 365 E5 安全性
+- Microsoft 365 E5 安全版
 - Office 365 E5
-- Office 365 高级威胁防护计划2
+- Office 365 高级威胁防护（计划 2）
+
+如果你没有这些订阅之一，请[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
 

@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 对于管理员：了解如何在 Office 365 中启用自动扩展存档，从而为用户提供对其 Exchange Online 邮箱的无限制存储。 您可以为整个组织或仅为特定用户启用自动扩展存档。
 ms.openlocfilehash: b5191aa080722b5bb3150c92d922b6b150fc545e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38627088"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>在 Office 365 中启用无限制存档—管理帮助

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商业版的设置步骤概述。
-ms.openlocfilehash: 50f172c235aa06aa78fec60fc119ac7f568df308
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 3e1cf240db673a7b961ec8aa574f3e09efee476b
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575580"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676020"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
@@ -70,7 +70,6 @@ ms.locfileid: "37575580"
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4：安装 Office 365 商业版
 - 您可以使用[安装向导](set-up.md#deploy-office-365-client-apps)在 Windows 设备中自动安装 Office。
-- 从管理中心自动[安装 Office](auto-install-or-uninstall-office.md) 。
 - 允许用户安装适用于 Windows 和设备的[Office 应用程序](https://docs.microsoft.com/office365/admin/setup/install-applications)。
      
 ## <a name="advanced"></a>高级
@@ -82,6 +81,6 @@ ms.locfileid: "37575580"
 
      - 如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照 Microsoft 365 商业版中的 "[启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作，以便对此进行设置。 这是此状态的首选方法，称为混合 Azure AD 加入的设备。
 
-    - 如果你的企业有包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以执行以下步骤，为 Azure AD 联接的设备提供对这些资源的访问权限：[从访问本地资源Microsoft 365 商业版中的 Azure AD 加入设备](access-resources.md)。
+    - 如果你的企业具有包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以按照以下步骤为 Azure AD 联接的设备授予对这些资源的访问权限：[从 Microsoft 365 商业版中的 AZURE AD 加入设备访问本地资源](access-resources.md)。
 
   

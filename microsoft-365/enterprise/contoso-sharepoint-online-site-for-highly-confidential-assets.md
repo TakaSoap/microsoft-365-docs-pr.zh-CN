@@ -13,17 +13,15 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为高度管控的数据实现 SharePoint 网站，以便在研究团队之间实现协作。
-ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: ce813407c0f4c6f7b68aa997bf5e54b86a24ff2d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617250"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672708"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 的高度机密数字资产的 SharePoint 网站
 
- **摘要：** Contoso 如何为高度管控的数据实现 SharePoint 网站，以便在研究团队之间实现协作。
-  
 Contoso 最有价值的资产是采用商业机密的知识产权，如专用的制造技术和开发中的产品的设计规范。 这些资产是数字表单，最初存储为 SharePoint Server 2016 网站上的文件。 当 Contoso 部署了 Microsoft 365 企业版时，他们希望将其本地数字资产转换为云，以便在巴黎、莫斯科、纽约、北京和 Bangalore 的研究团队中实现更轻松的访问和更多的开放协作。 
   
 但是，由于其敏感性，对这些文件的访问权限必须为：

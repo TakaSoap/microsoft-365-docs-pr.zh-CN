@@ -13,14 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用这些步骤来保护 Microsoft 365 企业版测试环境中的全局管理员帐户。
-ms.openlocfilehash: c7ee5bca3f5841ac7751e497ca88391daf965301
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 89985f99f5471aab87189e78035062add2c6bad9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640354"
+ms.locfileid: "38673328"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中保护全局管理员帐户
+
+*此测试实验室指南仅可用于 Microsoft 365 企业版测试环境。*
 
 您可以通过确保您的管理员帐户尽可能安全，来阻止组织的数字攻击。 本文介绍如何使用 Azure Active Directory （Azure AD）条件访问策略来保护全局管理员帐户。
 
@@ -32,7 +34,7 @@ ms.locfileid: "38640354"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 

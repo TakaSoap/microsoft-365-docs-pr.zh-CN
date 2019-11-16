@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并保护敏感数据。
-ms.openlocfilehash: 00a40ceb6d51add2ebe8cc7ca4c299fe07a10b89
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320100"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676000"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -86,7 +86,7 @@ ms.locfileid: "38320100"
    
 有关详细信息，请参阅：
   
-- [如何处理勒索软件](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
+- [如何处理勒索软件](https://go.microsoft.com/fwlink/?linkid=2016501)
     
 - [还原你的 OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
@@ -178,7 +178,7 @@ ms.locfileid: "38320100"
 |在检测时重定向附件  <br/> |启用重定向（选择此框）输入管理员帐户或邮箱设置进行隔离。          如果恶意软件扫描附件超时或发生错误（选中此框），请应用上面的选择。  <br/> |
 |应用于  <br/> |收件人域为。 . . 选择您的域。  <br/> |
    
-有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。
+有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
   
 
 

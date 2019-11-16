@@ -13,14 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在 Microsoft 365 企业版测试环境中配置基于组的许可和动态组成员身份。
-ms.openlocfilehash: c3b515a9b453275f9b79ba2b90d5a4c14611c2aa
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: fe6380d94919556904a1fb1ac0624fac3496fe30
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639792"
+ms.locfileid: "38673248"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自动化 Microsoft 365 企业版测试环境的许可和组成员身份
+
+*此测试实验室指南仅可用于 Microsoft 365 企业版测试环境。*
 
 基于组的许可根据组成员身份自动分配或删除用户帐户的许可证。 动态组成员身份根据用户帐户属性（如部门或国家/地区）添加或删除组中的成员。 本文将指导您完成 Microsoft 365 企业版测试环境中的两个演示。
 
@@ -32,7 +34,7 @@ ms.locfileid: "38639792"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 

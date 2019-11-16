@@ -3,7 +3,7 @@ title: Office 365 威胁调查和响应
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/23/2019
+ms.date: 11/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击，并搜索威胁指示器.
-ms.openlocfilehash: 749ddef383839043141027ace4a2d906932b7e91
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047fb99a32fdd7e86572c5a96370f351da50f139
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031867"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673268"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -32,13 +32,13 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
     
 - 提供有关帮助安全操作的见解和知识，以防止针对组织的 cyberattacks
 
-- 对基于电子邮件的关键威胁采用[自动调查和响应](automated-investigation-response-office.md)
+- 对基于电子邮件的关键威胁采用[自动事件响应](automated-investigation-response-office.md)
     
 威胁调查和响应功能提供了对 Office 365 安全&amp;合规中心中提供的威胁和相关响应操作的见解。 这些见解可帮助您的组织的安全团队保护 Office 365 用户免受电子邮件或基于文件的攻击。 这些功能可帮助监视信号和收集来自多个源（如用户活动、身份验证、电子邮件、受损电脑和安全事件）的数据。 业务决策者和 Office 365 全局管理员、安全管理员和安全分析员都可以使用此信息来了解和响应针对 Office 365 用户的威胁，并保护知识产权。
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>了解威胁调查和响应工具
 
-安全&amp;合规中心中的威胁调查和响应功能，作为一组工具和响应工作流，包括[威胁仪表板](#threat-dashboard)、[资源管理器](#threat-explorer)、[事件](#incidents)、[攻击模拟器](#attack-simulator)和[自动调查 & 响应](automated-investigation-response-office.md)。
+安全&amp;合规中心中的威胁调查和响应功能，作为一组工具和响应工作流，包括[威胁仪表板](#threat-dashboard)、[资源管理器](#threat-explorer)、[事件](#incidents)、[攻击模拟器](#attack-simulator)和[自动事件响应](automated-investigation-response-office.md)。
   
 ### <a name="threat-dashboard"></a>威胁仪表板
 
@@ -46,7 +46,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
   
 ![威胁仪表板](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-若要查看和使用此仪表板，请&amp;在安全合规性中心中，转到 "**威胁管理** \> "**仪表板**。
+若要查看和使用此仪表板，请在 Office &amp; 365 安全合规中心中，转到 "**威胁管理** \> "**仪表板**。
 
 若要详细了解 
   
@@ -56,7 +56,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
   
 ![威胁资源管理器](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-若要查看和使用此报告，请在&amp;安全合规性中心中，转到 "**威胁管理** \> **资源管理器**"。
+若要查看和使用此报告，请在 Office 365 &amp;安全合规性中心中，转到 "**威胁管理** \> **资源管理器**"。
   
 ### <a name="incidents"></a>例
 
@@ -74,7 +74,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 ### <a name="automated-investigation-and-response"></a>自动调查和响应
 
-使用自动调查和响应（空气）功能来节省与内容、设备和人员相关的时间和精力，以防止组织中的威胁带来风险。 只要触发了某些警报，或安全操作团队启动时，AIR 进程就可以开始。 若要了解详细信息，请参阅[使用 Office 365 的自动化事件响应（AIR）](automated-investigation-response-office.md)。 
+使用自动调查和响应（空气）功能来节省与内容、设备和人员相关的时间和精力，以防止组织中的威胁带来风险。 只要触发了某些警报，或安全操作团队启动时，AIR 进程就可以开始。 若要了解详细信息，请参阅[Office 365 中的自动化事件响应](automated-investigation-response-office.md)。 
   
 ## <a name="threat-intelligence-widgets"></a>威胁智能小部件
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解有关 Microsoft 365 业务的详细信息。
-ms.openlocfilehash: 03e16c336a2d6d3d8ffd5875ed7419bba3c7e378
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: abd1e8374ef7530a879de71ab7ad0125f1ca4616
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633391"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676061"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
@@ -98,4 +98,7 @@ Microsoft 365 Business 通过以下方式帮助**defended 抵御威胁**：
 
 - 如果你没有合作伙伴并且想要获取 Microsoft 365 商业版，你可以在[此处购买它](https://www.microsoft.com/microsoft-365/business)并按照[注册](sign-up.md)说明进行操作。
 
-- 你还可以转到[Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS)以购买 Microsoft 365 商业版并获取设置帮助。
+- 你还可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer)以购买 Microsoft 365 商业版并获取设置帮助。
+
+    > [!NOTE]
+    > 此链接仅适用于美国的商店

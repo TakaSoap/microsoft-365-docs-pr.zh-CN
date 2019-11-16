@@ -13,21 +13,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的特权访问管理。
-ms.openlocfilehash: cd90aadd2e473668d8c7f634d3edc777c3380dfb
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 68d542b3f97022abc65b94162f333e7059f614a8
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639762"
+ms.locfileid: "38673338"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 Privileged Access Management
+
+*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 使用本文中的说明，可以配置特权访问管理以提高 Microsoft 365 企业版测试环境中的安全性。
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
