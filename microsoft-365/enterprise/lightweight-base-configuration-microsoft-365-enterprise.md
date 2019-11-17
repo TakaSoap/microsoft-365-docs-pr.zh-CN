@@ -3,7 +3,7 @@ title: 轻型基本配置
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 根据本测试实验室指南，可以创建轻型测试环境来测试 Microsoft 365 企业版。
-ms.openlocfilehash: 770ddf46f40036f0d711c7c30bdaebee7fdeef6e
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: c654dc80620b98d09cf508e309d4410d9cf4a4dc
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746528"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639912"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
@@ -33,17 +33,150 @@ ms.locfileid: "37746528"
 ![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 单击[此处](https://aka.ms/m365etlgstack)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
 
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>第 1 阶段：创建 Office 365 E5 订阅
 
-按照 [Office 365 开发/测试环境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)第 2 和第 3 阶段中的步骤来创建一个轻量级的 Office 365 开发/测试环境。
+我们首先使用 Office 365 E5 试用版订阅，然后向其添加 Microsoft 365 E5 订阅。
 
->[!Note]
->我们为你创建了 Office 365 的试用版订阅，以便你的开发/测试环境具有与你当前拥有的任何付费版订阅分开的 Azure AD 租户。 这样分开意味着你可在测试租户中添加和删除用户和组，而不影响生产订阅。
->
+要启动 Office 365 E5 试用订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
-## <a name="phase-2-add-a-microsoft-365-e5-trial-subscription"></a>第 2 阶段：Microsoft 365 E5 试用版订阅
+1. 我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称：![](./media/Common-Images/TableLine.png)
+    
+2. 要注册新的 Microsoft 帐户，请转到 [https://outlook.com](https://outlook.com)，然后使用新的电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
+    
+  - 在此记录新帐户的名字和姓氏：![](./media/Common-Images/TableLine.png)
+    
+  - 在此记录新的电子邮件帐户地址：![](./media/Common-Images/TableLine.png)@outlook.com
+    
+### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>注册 Office 365 E5 试用订阅
+
+1. 在计算机上打开 Internet 浏览器，转到 [https://aka.ms/e5trial](https://aka.ms/e5trial)。
+    
+2. 在“欢迎，很高兴认识你”**** 页上，请指定：
+    
+  - 你的实际位置
+    
+  - 你新的 Microsoft 帐户的名字和姓氏
+    
+  - 你新的电子邮件帐户地址
+    
+  - 业务电话号码
+    
+  - 你虚构的公司名称
+    
+  - 规模达 250-999 人的组织
+    
+3. 单击“只需再执行一步”****。
+    
+4. 在“**创建你的用户 ID**”页上，基于你新的电子邮件地址、@ 符号之后你的虚构公司（删除名称中的所有空格）键入用户名，然后为此新的 Office 365 帐户键入密码（两次）。
+    
+    将你键入的密码记录在安全的位置。
+    
+    在此记录你的虚构公司名称，将其称为“组织名称”****：![](./media/Common-Images/TableLine.png)
+    
+5. 单击“创建我的帐户”****。
+    
+6. 在“证明你不是机器人”**** 页上，键入可发短信的手机号码，然后单击“给我发短信”****。
+    
+7. 键入短信中收到的验证代码，然后单击“下一步”****。
+    
+8. 在此记录登录页面 URL（选择并复制）：![](./media/Common-Images/TableLine.png)
+    
+9. 在此记录用户 ID（选择并复制）：![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+    此值将被称为“Office 365 全局管理员名称”****。
+    
+10. 看到“你已准备就绪”**** 时，请单击它。
+    
+11. 在下一页，等到 Office 365 完成设置并且显示所有标题。
+    
+你应可看到 Office 365 门户主页，可从该页访问 Office 服务和 Microsoft 365 管理中心。
+  
+我们为你创建了 Office 365 的试用版订阅，以便你的开发/测试环境具有与你当前拥有的任何付费版订阅分开的 Azure AD 租户。 这样分开意味着你可在测试租户中添加和删除用户和组，而不影响生产订阅。
+    
+## <a name="phase-2-configure-your-office-365-trial-subscription"></a>第 2 阶段：配置 Office 365 试用版订阅
+
+在这个阶段，配置包含其他用户的 Office 365 订阅，并为这些用户分配 Office 365 E5 许可证。
+  
+按照[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) 中的说明，使用计算机中的 Azure Active Directory PowerShell for Graph 模块连接到 Office 365 订阅。
+    
+在“Windows PowerShell 凭据请求”对话框中，键入 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码。
+  
+填写组织名称（示例：contosotoycompany）、你所在位置的两位字符的国家/地区代码以及通用帐户密码，然后 PowerShell 提示符中运行以下命令：
+
+```powershell
+$orgName="<organization name>"
+$loc="<two-character country code, such as US>"
+$commonPW="<common user account password>"
+$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+$PasswordProfile.Password=$commonPW
+
+$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+
+$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+
+$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
+New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+```
+> [!NOTE]
+> 此处使用公用密码旨在自动配置开发/测试环境，简化配置过程。 显然，对于生产订阅，这是非常不鼓励的。 
+
+### <a name="record-key-information-for-future-reference"></a>记录关键信息供将来参考
+
+不妨打印这篇文章，以便记录在 30 天的 Office 365 试用版订阅期内需要对此环境使用的特定信息。 可以轻松地将该订阅的试用期再延长 30 天。 对于永久性开发/测试环境，请创建一个包含单独 Azure AD 租户和少量许可证的新付费订阅。
+
+请记录以下值：
+  
+- Office 365 全局管理员名称：![](./media/Common-Images/TableLine.png).onmicrosoft.com（在第 2 阶段的第 9 步中）
+    
+    此外，还应将此帐户的密码记录在安全位置。
+    
+- 试用订阅组织名称：![](./media/Common-Images/TableLine.png)（在第 2 阶段的第 4 步中）
+    
+- 要列出 User 2、User 3、User 4 和 User 5 的帐户，从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
+    
+  ```powershell
+  Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
+  ```
+
+    在此记录帐户名称：
+    
+  - User 2 的帐户名称：user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+  - User 3 的帐户名称：user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+  - User 4 的帐户名称：user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+  - User 5 的帐户名称：user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+    
+    此外，在安全位置记录这些帐户的公用密码。
+   
+
+### <a name="using-an-office-365-devtest-environment"></a>使用 Office 365 开发/测试环境
+
+如果你只需要一个 Office 365 开发/测试环境，则可以在此处停止。 
+
+有关同时适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。
+  
+## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>第 3 阶段：添加 Microsoft 365 E5 试用版订阅
 
 在该阶段中，可注册 Microsoft 365 E5 试用版订阅，并将其添加到 Office 365 E5 试用版订阅所在的组织中。
   
@@ -69,7 +202,7 @@ ms.locfileid: "37746528"
 
 10. 单击“**保存 > 关闭 > 关闭**”。
 
-接下来，***如果你完成了*** [Office 365 开发/测试环境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的第 3 阶段，请为所有其他帐户（用户 2、用户 3、用户 4 和用户 5）重复前述过程的步骤 8 到 11。
+接下来，对其他所有帐户（用户 2、用户 3、用户 4 和用户 5）重复执行上面过程的第 8 步到第 11 步。
   
 > [!NOTE]
 > Microsoft 365 E5 试用版订阅的有效期为 30 天。 对于永久性测试环境，请将此试用版订阅转换为包含少量许可证的付费版订阅。 
@@ -79,13 +212,11 @@ ms.locfileid: "37746528"
 - Microsoft 365 E5 试用版订阅。
 - 所有适当的用户帐户（无论是全局管理员帐户还是全部五个用户帐户）都可以使用 Microsoft 365 E5。
     
-图 1 显示了所得到的配置，它添加了 Microsoft 365 E5，还同时包含了 Office 365 和企业安全性 + 管理 (EMS)。
+下面是所得到的配置，它添加了 Microsoft 365 E5，还同时包含了 Office 365 和企业安全性 + 管理 (EMS)。
   
-**图 1：添加 Microsoft 365 试用版订阅**
-
 ![Microsoft 365 企业版测试环境的第 2 阶段](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
-## <a name="phase-3-create-a-windows-10-enterprise-computer"></a>第 3 阶段：创建 Windows 10 企业版计算机
+## <a name="phase-4-create-a-windows-10-enterprise-computer"></a>第 4 阶段：创建 Windows 10 企业版计算机
 
 在这一阶段，将运行 Windows 10 企业版的独立计算机创建为物理计算机、虚拟机或 Azure 虚拟机。
   
@@ -108,32 +239,32 @@ ms.locfileid: "37746528"
   
 使用以下命令登录 Azure 帐户。
   
-```
+```powershell
 Connect-AzAccount
 ```
 
 使用以下命令获得订阅名称。
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
 设置 Azure 订阅。使用正确的名称替换引号内的所有内容（包括 \< 和 > 字符）。
   
-```
+```powershell
 $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
 接下来，创建一个新的资源组。要确定一个唯一的资源组名称，请使用此命令列出你现有的资源组。
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 使用这些命令创建新的资源组。使用正确的名称替换引号内的所有内容（包括 \< 和 > 字符）。
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
@@ -141,7 +272,7 @@ New-AzResourceGroup -Name $rgName -Location $locName
 
 接下来，使用这些命令创建新的虚拟网络和 WIN10 虚拟机。出现提示时，为 WIN10 提供本地管理员帐户的名称和密码，并将这些名称和密码存储在安全位置。
   
-```
+```powershell
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
 New-AzVirtualNetwork -Name "M365Ent-TestLab" -ResourceGroupName $rgName -Location $locName -AddressPrefix 10.0.0.0/8 -Subnet $corpnetSubnet
 $rule1=New-AzNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
@@ -161,7 +292,7 @@ $vm=Set-AzVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateO
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>第 4 阶段：将 Windows 10 计算机加入到 Azure AD
+## <a name="phase-5-join-your-windows-10-computer-to-azure-ad"></a>第 5 阶段：将 Windows 10 计算机加入到 Azure AD
 
 在创建具有 Windows 10 企业版的物理计算机或虚拟机之后，使用本地管理员帐户登录。
   
@@ -192,15 +323,15 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 4. 等待 Office 完成安装。当看到“**你已设置完毕!**”时，单击“**关闭**”两次。
     
-图 3 显示生成的环境，其中包括具有以下内容的 WIN10 计算机：
+下面是生成的环境。
+
+![Microsoft 365 企业版测试环境的第 5 阶段](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+
+这包括符合以下条件的 WIN10 计算机：
 
 - 已联接 Microsoft 365 E5 订阅的 Azure AD 租户。
 - 已注册为 Microsoft Intune (EMS) 中的 Azure AD 设备。
 - 已安装 Office 365 专业增强版。
-  
-**图 2：Microsoft 365 测试环境的最终配置**
-
-![Microsoft 365 企业版测试环境的第 4 阶段](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 现在可以试验 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   

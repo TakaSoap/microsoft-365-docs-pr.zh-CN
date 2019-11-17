@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: 05615c4c9020326da6b2e3e97b162dbb8d132854
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a51a37a321b450d233d7f9fd6da28b5828514d13
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033647"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627446"
 ---
 # <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 
@@ -44,7 +44,7 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅�
 
 评估环境后，按照[规划 Office 365 专业增强版部署](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus)中的指导来创建部署计划。此计划可包括以下决策： 
 
-- 如何部署 Office，包括要使用哪种工具（如 System Center Configuration Manager 或 Office 部署工具），以及从何处安装 Office
+- 如何部署 Office，包括要使用哪种工具（如 Microsoft Endpoint Configuration Manager 或 Office 部署工具），以及从何处安装 Office
 - 如何管理 Office 更新
 - 使用哪个更新通道（Office 更新通道将控制用户接收其 Office 应用程序功能更新的频率）
 - 要使用的 Office 安装程序包和部署组，包括应对什么样的用户安装哪些 Office 应用程序和语言
@@ -55,7 +55,7 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅�
 
 基于部署计划，选择所需的部署方式：
 
-- **[使用 System Center Configuration Manager 部署 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager)：** 使用配置管理器管理部署，并从网络上的分发点下载并部署 Office
+- **[使用 Configuration Manager 部署 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager)：** 使用 Configuration Manager 管理部署，并从网络上的分发点下载并部署 Office
 
 - **[从云中使用 ODT 部署 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud)：** 使用 ODT 管理部署，并在客户端设备上直接从 Office CDN 安装 Office
  

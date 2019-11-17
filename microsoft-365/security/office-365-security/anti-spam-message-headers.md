@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 详细了解由 Exchange Online Protection 添加到邮件的标头字段和值。
-ms.openlocfilehash: df0e31ad6d1c67c8d7ed92e9b42efb1da0c37731
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: df1d85c49ee4c9485ae426864a3014b6a7c9f3cc
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772256"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640324"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -54,7 +54,7 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |SFV:NSPM|邮件被标记为非垃圾邮件并发送给预期收件人。|
 |H：\[helostring\]|连接邮件服务器的 HELO 或 EHLO 字符串。|
 |PTR：\[ReverseDNS\]|发送 IP 地址的 PTR 记录或指针记录，亦称为反向 DNS 地址。|
-|CAT：|应用于邮件的保护策略类别： <br/>MALW：恶意软件 <br/>PHSH：网络钓鱼 <br/>HSPM：高可信度垃圾邮件 <br/>SPOOF：欺骗 <br/>SPM：垃圾邮件 <br/>BULK：批量邮件 <br/>DIMP：域模仿 <br/>UIMP：用户模拟 <br/>一封传入的邮件可能被多种形式的保护和多个检测扫描标记。 策略具有不同的优先级，将应用优先级最高的策略。 请参阅 [What policy applies when multiple protection methods and detection scans run on your email](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined)（在电子邮件上运行多个保护方法和检测扫描时应用哪种策略）。|
+|CAT：|应用于邮件的保护策略类别： <br/>MALW：恶意软件 <br/>PHSH：网络钓鱼 <br/>HSPM：高可信度垃圾邮件 <br/>SPOOF：欺骗 <br/>SPM：垃圾邮件 <br/>BULK：批量邮件 <br/>DIMP：域模仿 <br/>UIMP：用户模拟 <br/><br/>GIMP：邮箱智能<br/>一封传入的邮件可能被多种形式的保护和多个检测扫描标记。 策略具有不同的优先级，将应用优先级最高的策略。 请参阅 [What policy applies when multiple protection methods and detection scans run on your email](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined)（在电子邮件上运行多个保护方法和检测扫描时应用哪种策略）。|
 |SFTY|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <br/>9.1：默认值。 邮件包含网络钓鱼 URL，可能包含其他网络钓鱼内容，或者可能已被其他邮件筛选器（例如 Exchange Server 的本地版本）在将其中继到 Office 365 之前标记为网络钓鱼。 <br/>9.11：邮件未通过反欺骗检查，其中“发件人:”标头中的发送域与接收域相同、与接收域匹配或者与接收域属于同一组织。 这表示将向邮件中添加组织内欺骗安全提示。 <br/>9.19：邮件未通过域模仿检查，其中发送域正在尝试模仿收件人拥有的域或受到反网络钓鱼策略保护的自定义域。 这表示将向邮件添加模拟安全提示（如果已通过反网络钓鱼策略启用）。 <br/>9.20：邮件未通过用户模拟检查，其中发送邮件的用户正在尝试模拟收件人组织中的用户或者受到反网络钓鱼策略保护的自定义用户。 这表示将向邮件添加模拟安全提示（如果已通过反网络钓鱼策略启用）。 <br/>9.21：邮件未通过反欺骗检查，并且“发件人:”标头中的发送域未进行身份验证且来自外部域。 与 CompAuth 结合使用（请参阅 Authentication-Results）。 <br/>9.22：与 9.21 相同，只是用户具有遭到覆盖的安全发件人。 <br/>9.23：与 9.22 相同，只是组织具有遭到覆盖的允许发件人或域。 <br/>9.24：与 9.23 相同，只是用户具有遭到覆盖的 Exchange 邮件流规则。|
 |X-CustomSpam：\[ASFOption\]|邮件匹配高级垃圾邮件筛选选项。 例如，**X-CustomSpam: Image links to remote sites** 表示匹配 **“到远程站点的图像链接”** ASF 选项。 若要找出为每个特定的 ASF 选项添加了哪个 X-header 文本，请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)。|
 |
@@ -136,5 +136,5 @@ dmarc=fail action=oreject header.from=contoso.com
 |action|指示垃圾邮件筛选器基于 DMARC 检查结果执行的操作。例如： <br/>**permerror**：DMARC 评估期间发生了永久性错误，例如在 DNS 中遇到格式有误的 DMARC TXT 记录。 尝试重新发送此邮件不太可能产生不同的结果。 你反而可能需要联系域的所有者，以解决该问题。 <br/>**temperror**：DMARC 评估期间出现暂时性错误。 你可能能够请求发件人稍后重新发送邮件，以便正确处理电子邮件。 <br/>**oreject** 或 **o.reject**：表示替代拒绝。 在这种情况下，Office 365 在从 DMARC TXT 记录的策略为 p=reject 的域中接收未通过 DMARC 检查的邮件时使用此操作。 Office 365 将该邮件标记为垃圾邮件，而不是删除或拒绝该邮件。 有关这样配置 Office 365 的原因的详细信息，请参阅 [Office 365 如何处理未通过 DMARC 的入站电子邮件](use-dmarc-to-validate-email.md#inbounddmarcfail)。 <br/>**pct.quarantine**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为隔离，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。 <br/>**pct.reject**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为拒绝，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。|
 |header.from|电子邮件标头中发件人地址的域。 这有时也称为 _5322.From_ 地址。|
 |compauth|复合身份验证结果。 由 Office 365 使用，用于合并多种类型的身份验证，例如 SPF、DKIM、DMARC 或邮件的任何其他部分，以确定是否对邮件进行身份验证。 使用“From: domain”作为评估的基础。|
-|reason|复合身份验证通过或失败的原因。 reason 的值由三个数字组成： <br/>**000**：邮件身份验证时显式失败。 例如，邮件未通过 DMARC 检查，采用的操作是“隔离”或“拒绝”。 <br/>**001**：邮件身份验证时隐式失败，且发送域未发布身份验证策略。 例如，p=none 的 DMARC 策略。 <br/>**1xx**：邮件通过了身份验证。 第二个两位数是 Office 365 使用的内部代码。 <br/>**2xx**：邮件“软”通过了身份验证。 第二个两位数是 Office 365 使用的内部代码。 <br/>**3xx**：未针对复合身份验证检查邮件。 <br/>**4xx**：邮件规避了复合身份验证。 第二个两位数是 Office 365 使用的内部代码。|
+|reason|复合身份验证通过或失败的原因。 reason 的值由三个数字组成： <br/>**000**：邮件身份验证时显式失败。 例如，邮件未通过 DMARC 检查，采用的操作是“隔离”或“拒绝”。 <br/>**001**：邮件身份验证时隐式失败，且发送域未发布身份验证策略。 例如，p=none 的 DMARC 策略。 <br/>**1xx** 或 **7xx**：邮件通过了身份验证。 第二个两位数是 Office 365 使用的内部代码。 <br/>**2xx**：邮件“软”通过了身份验证。 第二个两位数是 Office 365 使用的内部代码。 <br/>**3xx**：未针对复合身份验证检查邮件。 <br/>**4xx** 或 **9xx**：邮件规避了复合身份验证。 第二个两位数是 Office 365 使用的内部代码。|
 |

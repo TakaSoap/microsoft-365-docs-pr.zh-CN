@@ -49,9 +49,6 @@
 #### [向用户授予对安全中心的访问权限](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
-
-
-
 ### [威胁防护](./office-365-security/protect-against-threats.md)
 #### [反垃圾邮件和反恶意软件保护](./office-365-security/anti-spam-and-anti-malware-protection.md)
 ##### [高级垃圾邮件筛选选项](./office-365-security/advanced-spam-filtering-asf-options.md)
@@ -141,7 +138,6 @@
 ##### [查看恶意文件的相关信息](./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md)
 
 
-
 ### [高级威胁防护](./office-365-security/office-365-atp.md)
 #### [查看新增功能]()
 ##### [Office 365 ATP 的新增功能](office-365-security/whats-new-in-office-365-atp.md)
@@ -182,6 +178,7 @@
 #### [Office 365 安全事件响应](./office-365-security/office365-security-incident-response-overview.md)
 #### [检测和修正 Office 365 中的非法授权](./office-365-security/detect-and-remediate-illicit-consent-grants.md)
 #### [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+#### [响应 Office 365 中遭到入侵的电子邮件帐户](office-365-security/responding-to-a-compromised-email-account.md)
 
 ### [邮件流]()
 #### [启用报告消息加载项](./office-365-security/enable-the-report-message-add-in.md)
@@ -222,7 +219,7 @@
 
 ##### [设置 EOP 服务](./office-365-security/set-up-your-eop-service.md)
 ###### [配置 EOP 的最佳实践](./office-365-security/best-practices-for-configuring-eop.md)
-###### [配置 EOP 和 Office365 ATP 安全性的最佳实践](./office-365-security/best-practices-for-eop-office365-atp.md)
+###### [用于配置 EOP 和 Office 365 ATP 安全性的建议设置](./office-365-security/recommended-settings-for-eop-and-office365-atp.md)
 ###### [将 EOP 设置应用到多个租户的示例脚本](./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md)
 ###### [将域和设置从一个 EOP 组织移动到另一个 EOP 组织](./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
 ###### [从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP](./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)
