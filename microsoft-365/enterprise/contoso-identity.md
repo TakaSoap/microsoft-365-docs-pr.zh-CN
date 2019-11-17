@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: a61ce89c3d0069edffccc12a6ed2a4c578e6968a
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 81a1542edf82bbf773360af6b09e1f940f5fd061
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370249"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627358"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
@@ -77,7 +77,7 @@ Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件�
  
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-win10.md) Contoso 如何利用其 System Center Configuration Manager 基础结构在组织中部署 Windows 10 企业版并使之保持最新。
+[了解](contoso-win10.md) Contoso 如何利用其 Microsoft Endpoint Configuration Manager 基础结构在组织中部署 Windows 10 企业版并使之保持最新。
 
 ## <a name="see-also"></a>另请参阅
 

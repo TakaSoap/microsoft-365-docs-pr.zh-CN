@@ -15,14 +15,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: dadde9d6366e2d5d12bf632d0b77bf60ba9cdbab
-ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
+ms.openlocfilehash: 2f6fd8c17096c9c25a0f1af886894e68d33e939d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37964419"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672568"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
+
+*这同时适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 测试实验室指南 (TLG) 可帮助你快速了解 Microsoft 产品。它们提供了用于配置已简化但具有代表性的测试环境的说明性指南。可以在试用版或付费订阅期间使用这些环境进行演示、自定义或创建概念的复杂论证。 
 
@@ -43,6 +45,8 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 - 当你想要在仅限云环境（其中不包含任何本地组件）中配置并演示 Microsoft 365 企业版特性和功能时，请使用[轻型基础配置](lightweight-base-configuration-microsoft-365-enterprise.md)。
 
 - 当你想要在混合云环境（其中会使用 Active Directory 域服务 (AD DS) 域等本地组件）中配置并演示 Microsoft 365 企业版特性和功能时，请使用[模拟企业基础配置](simulated-ent-base-configuration-microsoft-365-enterprise.md)。
+
+此外，还可通过不将 Microsoft 365 E5 许可证添加到试用版或产品测试环境中，来创建 Office 365 E5 的测试环境。
     
 ## <a name="identity"></a>标识
 

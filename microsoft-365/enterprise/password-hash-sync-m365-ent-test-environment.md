@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和展示 Microsoft 365 测试环境的密码哈希同步和登录。
-ms.openlocfilehash: ad48a11684903c65fb6d8e07a4e7a3c2523a153f
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: dcf5e4301d6c9c91068abc1d12db8e6de1083376
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639812"
+ms.locfileid: "38673378"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
@@ -72,6 +72,8 @@ ms.locfileid: "38639812"
 - 是模拟 Intranet 上的 AD DS 域。
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>第 3 阶段：在 APP1 上安装 Azure AD Connect
+
+*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 在这一阶段，在 APP1 上安装和配置 Azure AD Connect 工具，并验证它能否正常工作。
   

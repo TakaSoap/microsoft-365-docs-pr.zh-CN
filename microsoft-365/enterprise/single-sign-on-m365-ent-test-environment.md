@@ -16,14 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录。
-ms.openlocfilehash: c8417d7ff1c4a2b9a753968804d187300b6c6195
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 2845b3ec7d1725219fcbbb14ed4c1067a11a90bc
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640593"
+ms.locfileid: "38673288"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录
+
+*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备上的用户登入。借助 Azure AD 无缝 SSO，用户无需使用其他任何本地组件，即可轻松访问基于云的应用程序。
 

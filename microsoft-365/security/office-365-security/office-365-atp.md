@@ -3,7 +3,7 @@ title: Office 365 高级威胁防护
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: dbfff642563117a479db1ac36e76700cca71dd75
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: abe11acd2b254405ec432288ae87d12b626f617c
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032197"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673408"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -33,21 +33,25 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 - [威胁防护策略](#configure-atp-policies)：定义威胁防护策略，为组织设置适当级别的保护。 
 
-- [报告](#view-atp-reports)：查看实时报告，监视组织中的 ATP 性能。 
+- [报告](#view-office-365-atp-reports)：查看实时报告，监视组织中的 ATP 性能。 
 
 - [威胁调查和响应功能](#use-threat-investigation-and-response-capabilities)：使用前沿工具调查、理解、模拟和阻止威胁。 
 
-- [自动化调查和响应功能](#save-time-with-automated-investigation-and-response)：节省时间和精力来调查和缓解威胁。
+- [自动事件响应功能](#save-time-with-automated-incident-response)：节省调查和缓解威胁的时间和精力。
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 计划 1 和计划 2
 
-ATP 包含在 Office 365 E5 中；但是，ATP 计划 1 和 ATP 计划 2 可各自用作特定订阅的加载项。 若要了解详细信息，请参阅[跨高级威胁防护 (ATP) 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+ATP 包含在 Office 365 E5 中；但是，Office 365 ATP 计划 1 和 Office 365 ATP 计划 2 可各自用作特定订阅的加载项。 若要了解详细信息，请参阅[跨高级威胁防护 (ATP) 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+
+如果没有 Office 365 ATP，可[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+
 
 ## <a name="configure-atp-policies"></a>配置 ATP 策略
 
-Office 365 ATP 提供了大量工具，可为组织设置适当级别的保护。 
+借助 Office 365 ATP，组织的安全团队可以通过在 Office 365 安全与合规中心中定义策略来进行保护配置（转到[https://protection.office.com](https://protection.office.com) > **威胁管理** > **策略**。） 
 
-组织的安全团队必须在 Office 365 安全与合规中心中为每一个 ATP 工具定义策略。 转到“威胁管理”**** > “策略”**** 访问策略选项。 有关详细信息，请参阅[防范威胁](protect-against-threats.md)。
+> [!TIP]
+> 有关可定义的策略的快速列表，请参阅[威胁防护](protect-against-threats.md)。
 
 为组织定义的策略将确定预定义威胁的行为和保护级别。 策略选项非常灵活。 例如，组织的安全团队可以在用户、组织、收件人和域级别设置细化的威胁防护。 定期查看策略非常重要，因为每天都会出现新的威胁和挑战。  
 
@@ -59,9 +63,9 @@ Office 365 ATP 提供了大量工具，可为组织设置适当级别的保护�
 
 - [ATP 防钓鱼防护](atp-anti-phishing.md)：检测模拟用户和自定义域的尝试。 它应用机器学习模型和高级模仿检测算法，防止钓鱼攻击。 若要了解详细信息，请参阅[设置 Office 365 ATP 防钓鱼和防钓鱼策略](set-up-anti-phishing-policies.md)。
 
-## <a name="view-atp-reports"></a>查看 ATP 报告
+## <a name="view-office-365-atp-reports"></a>查看 Office 365 ATP 报告
 
-Office 365 ATP 包含用于监视 ATP 性能的高级[报告仪表板](view-reports-for-atp.md)。 可在安全与合规中心的**报告 > 仪表板**上访问该文件。 
+Office 365 ATP 包含用于监视 ATP 性能的高级[报告仪表板](view-reports-for-atp.md)。 可在安全与合规中心的“**报告**” > “**仪表板**”处访问该内容。 
 
 实时更新报告，为你提供最新见解。 这些报告还提供建议并向你提醒即将面临的威胁。 预定义的报告包括以下内容： 
 
@@ -85,18 +89,9 @@ Office 365 ATP 计划 2 包括同类最佳的[威胁调查和响应工具](offic
 
 - [攻击仿真程序](attack-simulator.md)使你能够在组织中运行现实的攻击方案以确定漏洞。 可仿真当前类型的攻击，包括[显示名称鱼叉式网络钓鱼攻击](attack-simulator.md#display-name-spear-phishing-attack)、[密码喷涂攻击](attack-simulator.md#password-spray-attack)、 [强力密码攻击](attack-simulator.md#brute-force-password-attack)等等。
     
-## <a name="save-time-with-automated-investigation-and-response"></a>节省自动调查和响应的时间
+## <a name="save-time-with-automated-incident-response"></a>通过自动事件响应节省时间
 
-（**新增！**）调查可能的网络攻击时，时间至关重要。 越快地识别和缓解威胁，贵公司的状况就越好。 现在，下面列出的订阅包括[自动调查和响应 (AIR)](automated-investigation-response-office.md) 功能。 （如果你尚未拥有这些功能，那么你若有下面的一份订阅，就会很快获得这些功能。）
-
-Office 365 AIR 包含在以下订阅中：
-
-- Microsoft 365 E5
-- Microsoft 365 E5 安全版
-- Office 365 E5
-- Office 365 高级威胁防护（计划 2）
-
-AIR 包括一套可自动启动（例如触发预警时）或手动启动（例如从资源管理器中的视图启动）的安全手册。 AIR 可以有效且高效地节省安全操作团队缓解威胁的时间和精力。 若要了解详细信息，请参阅[使用 Office 365 实现自动化调查和响应 (AIR)](automated-investigation-response-office.md)。
+（**新增！**）调查可能的网络攻击时，时间至关重要。 越快地识别和缓解威胁，贵公司的状况就越好。 [自动事件响应](automated-investigation-response-office.md) (AIR) 功能包括一套可自动启动（例如触发预警时）或手动启动（例如从资源管理器中的视图启动）的安全手册。 AIR 可以有效且高效地节省安全操作团队缓解威胁的时间和精力。 若要了解详细信息，请参阅 [Office 365 中的自动事件响应](automated-investigation-response-office.md)。
 
 ## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的权限
 
@@ -108,26 +103,24 @@ AIR 包括一套可自动启动（例如触发预警时）或手动启动（例�
 |安全管理员 |[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 组织管理 |[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
-有关详细信息，请参阅：
-
-- [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md) 
-
-- [向用户授予对安全与合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)
+有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="get-office-365-atp"></a>获取 Office 365 ATP
 
-Office 365 ATP 计划 2 包含在 Office 365 企业版 E5、Office 365 教育版 A5 和 Microsoft 365 商业版中。 如果你的订阅未包括 Office 365 ATP，则可以将 ATP 计划 1 或 ATP 计划 2 作为加载项附加到特定订阅进行购买。 若要了解详细信息，请参阅以下资源：
+Office 365 ATP 包含在某些订阅中，如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商业版。 如果你的订阅未包括 Office 365 ATP，则可以将 ATP 计划 1 或 ATP 计划 2 作为加载项附加到特定订阅进行购买。 若要了解详细信息，请参阅以下资源：
 
-- 有关包含 ATP 计划的订阅的列表，请参阅 [Office 365 高级威胁防护 (ATP) 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)。
+- 有关包含 ATP 计划的订阅的列表，请参阅 [Office 365 高级威胁防护可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)。
 
 - 有关计划 1 和 2 中所含功能的列表，请参阅[高级威胁防护 (ATP) 计划中的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
-- 请参阅[获得正确的 Office 365 高级威胁防护](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content)，比较计划和购买 Office 365 ATP。
+- 如需比较各个计划和购买 Office 365 ATP，请参阅[获得正确的 Office 365 高级威胁防护](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content)。
+
+- [启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 ## <a name="new-features-in-office-365-atp"></a>Office 365 ATP 中的新功能
 
 向 Office 365 ATP 持续添加新功能。 若要了解详细信息，请参阅以下资源：
 
-- [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供了开发和推出的新功能列表。
+- [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供了正在开发和即将推出的新功能列表。
 
 - [Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)介绍了 ATP 计划中的功能和可用性。
