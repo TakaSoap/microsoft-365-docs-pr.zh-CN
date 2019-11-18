@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解管理员如何使用 Exchange Online PowerShell 和 CSV 文件将外部联系人批量导入到全局地址列表。
-ms.openlocfilehash: 08fe7666f03c7fe60555133292be9e27a9ffa413
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 272223d9ab61b2c5ae17043cf4523d49da306de9
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074449"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685249"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>将外部联系人批量导入到 Exchange Online
 
@@ -47,10 +47,10 @@ ms.locfileid: "37074449"
     > [!TIP]
     > 如果您的语言包含特殊字符（例如， **å**、 **ä**和**ö** in 瑞典语），则在记事本中保存文件时，请使用 UTF-8 或其他 Unicode 编码保存 CSV 文件。 
   
-    ```
+    ```text
     ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
     danp@fabrikam.com,Dan Park,Dan,Park,1234 23rd Ave,Golden,CO,80215,206-111-1234,303-900-1234,555-1212,123-456-7890,Fabrikam,Shipping clerk,555-5555,Shipping,US,123-4567,R.,Good worker,31/1663,Dan Park
-    pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park 
+    pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park
     ```
 
     CSV 文件的第一行（即标题行）列出了在将联系人导入 Exchange Online 时可使用的联系人的属性。 每个属性名称都用逗号分隔。 标题行下的每一行表示用于导入单个外部联系人的属性值。 
@@ -75,7 +75,7 @@ ms.locfileid: "37074449"
     
 3. 运行以下命令以创建外部联系人：
 
-    ```
+    ```powershell
     Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
     ```
 
@@ -86,7 +86,7 @@ ms.locfileid: "37074449"
     > [!TIP]
     > 有关连接到 EAC 的说明，请参阅 exchange [Online 中的 exchange 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=328197)。 
   
-5. 如有必要， **** ![请单击 "](media/O365-MDM-Policy-RefreshIcon.gif)刷新刷新" 图标更新列表，并查看导入的外部联系人。 
+5. 如有必要，请单击 "**刷新**" 以更新列表，并查看导入的外部联系人。 
     
     导入的联系人将显示在 Outlook 和 web 上的 Outlook 中的共享通讯簿中。
     
@@ -103,12 +103,12 @@ ms.locfileid: "37074449"
     
 3. 运行以下两个命令，将其他属性从 CSV 文件添加到您在步骤2中创建的外部联系人。
     
-    ```
+    ```powershell
     $Contacts = Import-CSV .\ExternalContacts.csv
   
     ```
 
-    ```
+    ```powershell
     $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
@@ -140,19 +140,19 @@ ms.locfileid: "37074449"
     
 2. 若要隐藏单个外部联系人，请运行以下命令。
     
-    ```
+    ```powershell
     Set-MailContact <external contact> -HiddenFromAddressListsEnabled $true 
     ```
- 
+
     例如，若要隐藏共享通讯簿中的 Pilar Pinilla，请运行以下命令：
 
-    ```
+    ```powershell
     Set-MailContact "Pilar Pinilla" -HiddenFromAddressListsEnabled $true
     ```
-   
+
 3. 若要隐藏共享通讯簿中的所有外部联系人，请运行以下命令：
 
-    ```
+    ```powershell
     Get-Contact -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailContact')} | Set-MailContact -HiddenFromAddressListsEnabled $true  
     ```
 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: 在 Office 365 邮箱变为非活动状态后，可以更改分配给非活动邮箱的保留或 Office 365 保留策略的持续时间。 保留期定义了"可恢复的项目"文件夹中的项目的保留持续时间。
-ms.openlocfilehash: 7840131af3df32b8b8e5a0faa1b101f9ec8ef541
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c07c360a557dfad5b13447bbc9fbf800f96e75d5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074446"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685252"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>在 Office 365 中更改非活动邮箱的保留期
 
@@ -28,7 +28,7 @@ ms.locfileid: "37074446"
 > [!IMPORTANT]
 > 我们推迟了最后期限，在 2017 年 7 月 1 后，仍可通过新建就地保留创建非活动邮箱。 But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. 在这段时间，仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须使用 Exchange Online PowerShell 更改非活动邮箱上的诉讼保留的保留期。 不能使用 Exchange 管理中心 (EAC)。 但您可以使用 Exchange Online PowerShell 或 EAC 更改就地保留的保留期。 您可以使用安全与合规中心或 Security & 合规性中心 PowerShell 更改 Office 365 保留策略的保留期。
     
@@ -48,16 +48,16 @@ ms.locfileid: "37074446"
   
 在 Exchange Online PowerShell 中运行以下命令，以显示组织中所有非活动邮箱的保留信息。
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
-   
+
 如果 **LitigationHoldEnabled** 属性的值为 **True** ，则表示非活动邮箱被置于诉讼保留状态。 如果非活动邮箱上设置了就地保留、电子数据展示保留或 Office 365 保留策略，则保留或保留策略的 GUID 将显示为**InPlaceHolds**属性的值。 例如，以下显示5个非活动邮箱的结果。 
   
 ||
 |:-----|
 |
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -93,7 +93,7 @@ LitigationHoldEnabled : False
 LitigationHoldDuration: Unlimited
 InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 ```
-   
+
 下表列出了用于将每个邮箱设为非活动状态的五种不同的保留类型。
   
 |**非活动邮箱**|**保留类型**|**如何标识非活动邮箱上的保留**|
@@ -114,7 +114,7 @@ InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 
 下面介绍了如何使用 Exchange Online PowerShell 更改非活动邮箱上的诉讼保留的保留期。 不能使用 EAC。 运行以下命令，更改保留期。 在此示例中，可将保留期更改为无限期。
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
 ```
 
@@ -131,7 +131,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 1. 如果您知道要更改的就地保留的名称，请转到下一步。 如果不知道，请运行以下命令，获取非活动邮箱上设置的就地保留的名称。 使用您在[步骤 1](#step-1-identify-the-holds-on-an-inactive-mailbox)中获取的就地保留 GUID。
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
@@ -155,13 +155,13 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 1. 如果您知道要更改的就地保留的名称，请转到下一步。 如果不知道，请运行以下命令，获取非活动邮箱上设置的就地保留的名称。 使用您在[步骤 1](#step-1-identify-the-holds-on-an-inactive-mailbox)中获取的就地保留 GUID。
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
 2. 使用您在第 1 步：识别非活动邮箱上设置的保留中获得的就地保留 GUID。 运行以下命令，更改保留期。在此示例中，更改后的保留期为 2,555 天（大约 7 年）。 
     
-    ```
+    ```powershell
     Set-MailboxSearch <identity of In-Place Hold> -ItemHoldPeriod 2555
     ```
 
@@ -173,28 +173,28 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 - 保留期从邮箱项目的接收或创建原始日期开始计算。 当保留期过期时，会怎么样？当"可恢复的项目"文件夹中邮箱项目的保留期过期时，系统会将此项目从非活动邮箱中永久删除（清除）。如果非活动邮箱上设置的保留没有指定的保留期，则"可恢复的项目"文件夹中的项目永远都不会清除（除非您更改非活动邮箱的保留期）。 当保留期过期时，会怎么样？ 
     
-- **是否仍在非活动邮箱上处理 Exchange 保留策略？** 如果将 Exchange 保留策略（Exchange Online 中的邮件记录管理或 MRM）应用于邮箱（如果某个邮箱处于非活动状态），则删除策略（是使用**删除**保留操作配置的保留标记）将继续在非活动邮箱上进行处理。 也就是说，在保留期过期时，标记有删除策略的项目会移到“可恢复的项目”文件夹中。 当项目的保留期过期时，这些项目会从非活动邮箱中清除。 
+- **是否仍在非活动邮箱上处理 Exchange 保留策略？** 如果 Exchange 保留策略（Exchange Online 中的 "邮件记录管理" 或 "MRM" 功能）在邮箱变为非活动状态时应用于该邮箱，则将继续在非活动邮箱上处理删除策略（即，使用**删除**保留操作配置的保留标记）。 也就是说，在保留期过期时，标记有删除策略的项目会移到“可恢复的项目”文件夹中。 当项目的保留期过期时，这些项目会从非活动邮箱中清除。 
     
     当项目的保留期过期时，这些项目会从非活动邮箱中清除。 相反，分配给非活动邮箱的保留策略中包含的所有存档策略（配置了 MoveToArchive 保留操作的保留标记）会遭到忽略。也就是说，在保留期过期时，非活动邮箱中标记有存档策略的项目会保留在主邮箱中。这些项目不会移到存档邮箱或其中的"可恢复的项目"文件夹内。由于用户无法登录非活动邮箱，因此没有理由消耗数据中心资源来处理存档策略。 相反，分配给非活动邮箱的保留策略中包含的所有存档策略（配置了 MoveToArchive 保留操作的保留标记）会遭到忽略。 也就是说，在保留期过期时，非活动邮箱中标记有存档策略的项目会保留在主邮箱中。 
     
 - 由于用户无法登录非活动邮箱，因此没有理由消耗数据中心资源来处理存档策略。 第一个命令适用于诉讼保留;第二个用于就地保留。 
 
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | FL LitigationHoldDuration
     ```
 
-    ```
+    ```powershell
     Get-MailboxSearch <identity of In-Place Hold> | FL ItemHoldPeriod
     ```
 
 - **托管文件夹助理 (MFA) 还会处理非活动邮箱，就像处理常规邮箱一样。** 在 Exchange Online 中，MFA 大约每 7 天处理一次邮箱。 更改非活动邮箱的保留期后，您可以使用 **Start-ManagedFolderAssistant** cmdlet 立即开始处理非活动邮箱的新保留期。 运行以下命令。 
 
-    ```
+    ```powershell
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
 - **如果非活动邮箱上放置了很多保留项，则不会显示所有保留 Guid。** 您可以运行以下命令来显示非活动邮箱上的所有保留项（诉讼保留除外）的 Guid。 
     
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds
     ```

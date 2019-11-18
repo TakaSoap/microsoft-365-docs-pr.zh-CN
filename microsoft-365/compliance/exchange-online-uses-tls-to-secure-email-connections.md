@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解 Exchange Online 和 Office 365 如何使用传输层安全性（TLS）和转发保密（FS）来保护电子邮件通信。 此外，还可获取 Microsoft 为 Exchange Online 颁发的证书的相关信息。
-ms.openlocfilehash: e165be9a3407abfcc165054f7f147eeb2d2c0a82
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 34667714840e23be5d19aed8f47a539ea1474ab4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074846"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685118"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接
 
@@ -88,7 +88,7 @@ Exchange Online 服务器始终通过 TLS 1.2 加密到我们数据中心其他 
 在验证证书的过程中，新证书需要连接到新 CA 的终结点。 如果不这样做，可能会导致邮件流受到负面影响。 如果您使用仅让邮件服务器与特定目标连接的防火墙保护邮件服务器，则需要检查您的服务器是否能够验证新证书。 若要确认您的服务器可以使用新证书，请完成以下步骤：
 
 1. 使用 Windows PowerShell 连接到本地 Exchange 服务器，然后运行以下命令：  
-  `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
+  `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. 在出现的窗口中，选择 "**检索**"。
 3. 当实用程序完成检查后，它将返回状态。 如果状态显示为 **"确定"**，则您的邮件服务器可以成功地验证新证书。 如果不是，则需要确定导致连接失败的原因。 最可能的情况是，您需要更新防火墙的设置。 需要访问的终结点的完整列表包括：
     - ocsp.globalsign.com

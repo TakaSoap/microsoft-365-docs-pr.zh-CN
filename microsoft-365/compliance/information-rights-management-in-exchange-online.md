@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 如果需要，您可以将 Exchange Online IRM 配置为使用内部部署 Active Directory 权限管理服务（AD RMS），以满足您的组织的要求。 这并不常见。 如果您不需要使用 AD RMS，请改用 Office 邮件加密。
-ms.openlocfilehash: f5611ca7efeae0ab60ef90ebf4f8a225ea1332e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1c3bdf02f31f57f1328f0244d539d0dc88e7ba89
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074026"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685136"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>带 AD RMS 的 Exchange Online 邮件加密
 
@@ -43,6 +43,6 @@ Exchange Online IRM 使用本地 Active Directory 权限管理服务（AD RMS）
     
 - **管理员可以使用传输保护规则自动将 IRM 保护应用于 Outlook 和 web 上的 Outlook。** 您可以为 IRM 保护邮件创建传输保护规则。 将传输保护规则操作配置为将 AD RMS 权限策略模板应用于符合规则条件的邮件。 启用 IRM 之后，您的组织的 AD RMS 权限策略模板可用于传输保护规则操作（称为**将权限保护应用于邮件**）。
     
-- **管理员可以创建 Outlook 保护规则。** Outlook 保护规则根据邮件条件（不包括发件人的部门）自动将 IRM 保护应用于 Outlook 2010 中的邮件，将邮件发送到的收件人，以及收件人是否在您的内部或外部组织. 有关详细信息，请参阅[Create an Outlook Protection Rule](http://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx)。
+- **管理员可以创建 Outlook 保护规则。** Outlook 保护规则根据邮件条件（不包括发件人的部门）自动将 IRM 保护应用于 Outlook 2010 中的邮件，将邮件发送到的收件人，以及收件人是否在您的内部或外部组织. 有关详细信息，请参阅[Create an Outlook Protection Rule](https://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx)。
     
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 使用 Office 365，你的内容将在静止时加密，并在传输过程中提供最强大的加密、协议和技术。 获取 Office 365 中的加密概述。
-ms.openlocfilehash: 1dd31990e4a284c81ce9fa8b2aced45b8a06a0c6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074879"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685130"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 
@@ -37,19 +37,19 @@ ms.locfileid: "37074879"
   
 加密本身不会阻止内容拦截。 加密是组织的更大的信息保护策略的一部分。 通过使用加密，可帮助确保只有授权方可以使用加密的数据。
   
-可以同时进行多层加密。 例如，您可以对电子邮件进行加密，也可以对通过其发送电子邮件流的通信通道进行加密。 使用 Office 365，您的数据在静态和传输过程中进行加密，使用多个强加密协议，以及包含传输层安全性/安全套接字层（TLS/SSL）、Internet 协议安全性（IPSec）和高级加密的技术Standard （AES）。
+可以同时进行多层加密。 例如，您可以对电子邮件进行加密，也可以对通过其发送电子邮件流的通信通道进行加密。 使用 Office 365，您的数据在静态和传输过程中进行加密，使用多个强加密协议，以及包含传输层安全性/安全套接字层（TLS/SSL）、Internet 协议安全性（IPSec）和高级加密标准（AES）的技术。
   
 ## <a name="encryption-for-data-at-rest-and-data-in-transit"></a>静态数据的加密和传输中的数据
 
- **Rest 中的数据示例**包括已上载到 SharePoint 库的文件、Project Online 数据、您在 Skype for business 会议中上载的文档、电子邮件和存储在 Office 365 中的文件夹中的附件邮箱和已上载到 OneDrive for Business 的文件。
+ **Rest 中的数据示例**包括您已上载到 SharePoint 库的文件、Project Online 数据、您在 Skype for business 会议中上载的文档、您在 Office 365 邮箱中的文件夹中存储的电子邮件和附件以及上载到 OneDrive for business 的文件。
   
  **传输中的数据示例**包括正在传递的邮件或联机会议中正在进行的对话。 在 Office 365 中，只要用户的设备与 Office 365 服务器通信，或当 Office 365 服务器与另一台服务器通信时，数据就会被传输。
   
 使用 Office 365，多层和类型的加密可协同工作来保护你的数据。 下表包括一些示例，并提供了指向其他信息的链接。
   
-|**内容的种类**|**加密技术**|**要了解详细信息的资源**|
+|**内容的种类**|**加密技术**|**了解详细信息的资源**|
 |:-----|:-----|:-----|
-|设备上的文件。 这些文件可以包括保存在文件夹中的电子邮件、保存在计算机上的 Office 文档、平板电脑或电话或保存到 Microsoft 云的数据。  <br/> |Microsoft 数据中心中的 BitLocker。 BitLocker 也可用于客户端计算机，如 Windows 计算机和平板电脑  <br/> Microsoft 数据中心内的分布式密钥管理器（DKM）  <br/> Office 365 的客户密钥  <br/> |[Windows IT 中心： BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft 信任中心：加密](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [云安全性控制系列：静态数据加密](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online 如何进行电子邮件保密](exchange-online-secures-email-secrets.md) <br/> [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md) <br/> |
+|设备上的文件。 这些文件可以包括保存在文件夹中的电子邮件、保存在计算机上的 Office 文档、平板电脑或电话或保存到 Microsoft 云的数据。  <br/> |Microsoft 数据中心中的 BitLocker。 BitLocker 也可用于客户端计算机，如 Windows 计算机和平板电脑  <br/> Microsoft 数据中心内的分布式密钥管理器（DKM）  <br/> Office 365 的客户密钥  <br/> |[Windows IT 中心： BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft 信任中心：加密](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [云安全性控制系列：静态数据加密](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online 如何进行电子邮件保密](exchange-online-secures-email-secrets.md) <br/> [使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md) <br/> |
 |用户之间传输的文件。 这些文件可以包括在用户之间共享的 Office 文档或 SharePoint 列表项。  <br/> |传输中的文件的 TLS  <br/> |[OneDrive for Business 和 SharePoint Online 中的数据加密](data-encryption-in-odb-and-spo.md) <br/> [Skype for Business Online：安全性和存档](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |在收件人之间传输电子邮件。 此电子邮件包括由 Exchange Online 托管的电子邮件。  <br/> |Office 365 在传输过程中电子邮件的 Azure 权限管理、S/MIME 和 TLS 的邮件加密  <br/> |[Office 365 邮件加密 (OME)](ome.md) <br/> [Office 365 中的电子邮件加密](email-encryption.md) <br/> [Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 

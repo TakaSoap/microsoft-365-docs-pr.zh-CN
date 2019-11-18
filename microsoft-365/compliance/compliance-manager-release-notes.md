@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417501"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "38685087"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>合规性管理器的发行说明（预览）
 
@@ -27,11 +27,9 @@ ms.locfileid: "37417501"
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>合规性管理器中的新增功能（预览）
 
-- **基于角色的对合规性管理器的访问：** 已删除默认的**推测访问**角色。 为使用户能够访问合规性管理器，全局管理员必须为[每个用户分配一个权限](compliance-manager-overview#permissions.md)。
+- **基于角色的对合规性管理器的访问：** 已删除默认的**来宾访问**角色。 为使用户能够访问合规性管理器，全局管理员必须为[每个用户分配一个权限](compliance-manager-overview.md#permissions)。
 
-- **与 Microsoft 安全分数的集成：** 合规性管理器通过将客户管理的操作映射到50以上的安全分数操作，支持与[Microsoft 安全分数](../security/mtp/microsoft-secure-score.md)的集成。 在安全分数中完成映射的操作后，相应的合规性管理器操作将自动更新。
-
-- **导入自定义评估：** 除了内置评估，合规性管理器现在还支持导入自定义模板。 您可以为任何产品或服务以及任何标准或法规创建自定义评估。
+- **更新的合规性分数**：合规性分数现在包括 Microsoft 管理的操作的分数。 因此，你的分数将增加。
 
 - **Actions 项：** 操作项现在是单个项目，并且许多包含来自 Microsoft 安全分数图形 API 的遥测集合。 在可能的情况下，技术操作建议现在有指向 Office 365 服务中适用配置页面的链接。
 
@@ -39,8 +37,6 @@ ms.locfileid: "37417501"
     - **维：** 查看、添加和自定义模板、评估和操作项的元数据，以允许您为筛选器创建自定义透视。
     - **所有者：** 为每个即席项目指定一个所有者。
     - **客户操作：** 管理合规性管理器（预览版）中包含的操作项的完整列表，并启用/禁用与安全得分集成的操作项的安全分数监视。
-
-- **更新了合规性分数**：该方法已更改为支持与 Microsoft 安全分数同步。 分数的计算基于 Microsoft 托管的行动分数和客户管理的行动分数。
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>合规性管理器中的已知问题（预览）
 
@@ -52,8 +48,11 @@ ms.locfileid: "37417501"
 
 ### <a name="secure-score"></a>安全功能分数
 
-- 安全分数结果不适用于某些 Microsoft 365 和 Office 365 订阅中的某些操作项。 在这些情况下，安全得分结果为 "无法检测到"。
+- 安全分数结果不适用于某些 Microsoft 365 和 Office 365 订阅中的某些操作项。 在这些情况下，**无法检测到**安全分数结果。
 - 有时，不完成相应策略和操作项目的安全分数结果。
+- 对于新租户，将自动打开所有操作的安全得分更新。 全局管理员可以将 "安全分数连续更新" 开关设置为 "关闭"，这将关闭所有操作的更新。
+- 如果启用了安全分数更新，尽管操作的测试日期不会更新以反映监控，但这些操作会受到安全分数积极监控。
+- 在创建新的评估时，分数将自动包含 Microsoft 托管的控制得分和安全得分集成。
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 托管控件
 
@@ -69,12 +68,9 @@ ms.locfileid: "37417501"
 
 - 导入模板时，基于该模板的所有评估都会反映属于该模板的所有控制系列。 但是，如果向模板中添加新的控制系列，则任何现有评估都不会反映所做的更改。 仅由更新后的模板创建的新评估将反映所做的更改。
 
-### <a name="filters"></a>筛选器
-
-- 对交办事项或控件的筛选不会始终如一地生成正确的结果。
-
 ### <a name="templates"></a>模板
 
+- 创建模板时，您必须包括**产品**和**证书**的维度，以确保您的模板在合规性分数中显示。
 - 存档的模板是可编辑的，不应是可编辑的。
 - 锁定的模板允许在不应进行评估时创建评估。 锁定模板旨在防止它用于创建评估。
 

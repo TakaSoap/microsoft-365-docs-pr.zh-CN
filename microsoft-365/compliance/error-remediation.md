@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 614397a81fd898975e5163c669fb8693fcdfe77c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c7bc6043722059b04d7fb99663a7dfb8815de697
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074873"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685131"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>处理调查数据时的错误修正
 
@@ -54,7 +54,7 @@ ms.locfileid: "37074873"
     >建议使用本地文件路径，而不是远程网络路径，以实现最佳性能。
 
     > [!NOTE]
-    > 如果尚未安装 AzCopy，则可以从此处进行安装：https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > 如果尚未安装 AzCopy，则可以从此处进行安装：https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
 
 6. 通过单击 "**复制到剪贴板**" 复制预定义命令。 启动 windows 命令提示符，粘贴命令，然后按**enter**。  
 

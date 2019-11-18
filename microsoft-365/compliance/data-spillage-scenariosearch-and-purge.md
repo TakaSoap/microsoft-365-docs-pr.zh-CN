@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 电子数据展示和搜索工具来管理和响应组织中的数据外泄事件。
-ms.openlocfilehash: bf6c22a593a2611b86012cd51e3e2932a13dfe4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074183"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685299"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： Data 外泄方案-搜索和清除
 
@@ -82,7 +82,7 @@ ms.locfileid: "37074183"
 
 创建内容搜索后，需要查看并验证搜索结果，并验证它们是否仅包含必须删除的电子邮件。 在内容搜索中，可以预览1000电子邮件的随机采样，而无需导出搜索结果以避免进一步的数据外泄。 您可以阅读有关[内容搜索限制](limits-for-content-search.md)的预览限制的详细信息。
   
-如果要查看的邮箱超过1000个或多于100个电子邮件，可以使用其他关键字或条件（如日期范围或发件人/收件人）并查看每个搜索的结果，将初始搜索划分为多个搜索。零售. 请务必记下在[步骤 7](#step-7-permanently-delete-the-spilled-data)中删除邮件时要使用的所有搜索查询。
+如果要查看的邮箱超过1000个邮箱或多于100封电子邮件，可以使用其他关键字或条件（如日期范围或发件人/收件人）将初始搜索划分为多个搜索，并分别查看每个搜索的结果。 请务必记下在[步骤 7](#step-7-permanently-delete-the-spilled-data)中删除邮件时要使用的所有搜索查询。
 
 如果为保管人或最终用户分配了 Office 36 E5 许可证，则可以使用 Office 365 高级电子数据展示一次性检查10000个搜索结果。 如果要查看的电子邮件数超过10000个，可以按日期范围划分搜索查询，并在搜索结果按日期排序时分别查看每个结果。 在高级电子数据展示中，可以使用预览面板中的 "**标签为**" 功能标记搜索结果，并按标记的标记筛选搜索结果。 当您与辅助审阅者进行协作时，这将非常有用。 通过使用高级电子数据展示中的其他分析工具（如光学字符识别、电子邮件线程和预测编码），您可以快速处理和查看成千上万封邮件，并标记它们以供进一步审阅。 请参阅[Office 365 高级电子数据展示的快速设置](quick-setup-for-advanced-ediscovery.md)。
 
@@ -154,7 +154,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
 
 如果启用了单个项目恢复或将邮箱置于保留状态，则将在 "可恢复的项目" 文件夹中保留永久删除的（清除的）邮件。 因此，在清除溢出的数据之前，您需要检查现有的邮箱配置并禁用单个项目恢复，并删除任何保留或 Office 365 保留策略。 请注意，您可以一次准备一个邮箱，然后在不同的邮箱上运行相同的命令，也可以创建一个 PowerShell 脚本来同时准备多个邮箱。
 
-- 请参阅 "[删除基于云的邮箱的可恢复项目文件夹中的邮件" 文件夹](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox)中的 "步骤1：收集有关邮箱的信息"，了解有关如何检查是否启用了单个项目恢复或者是否将邮箱置于保留状态或分配给了邮箱的说明保留策略。 
+- 若要了解如何检查是否启用了单个项目恢复，或者是否将邮箱置于保留状态或已分配给保留策略，请参阅 "步骤1：收集有关邮箱的信息"。在["保留基于云的邮箱的可恢复项目" 文件夹中删除项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox)的说明。 
     
 - 若要了解如何禁用单个项目恢复，请参阅 "[删除基于云的邮箱的可恢复项目文件夹中的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox)" 中的 "步骤2：准备邮箱"。 
     
@@ -174,24 +174,24 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
     
 2. 运行以下命令：
     
-    ```
+    ```powershell
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
     ```
-  
+
 3. 通过替换 Identity 参数的值，为包含溢出数据的每个邮箱重新运行上一个命令;例如：
 
-    ```
+    ```powershell
     Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-    ```
+    ```powershell
     Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-   ```
+   ```powershell
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
-  
+
 如前所述，您还可以创建[powershell 脚本](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6)并对邮箱列表运行该脚本，以便脚本删除每个邮箱中溢出的数据。
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步骤8：验证、提供删除证明和审核

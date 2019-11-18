@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 查看有关 Office 365 中的 encyption 的技术详细信息。
-ms.openlocfilehash: 0ae26aa6a534f0de0923f869acb94d7ee8529f31
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b21409007b82490730aa48f403c30e542ead0316
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075280"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685138"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>有关 Office 365 加密的技术参考详情
 
@@ -55,7 +55,7 @@ Office 365 支持的所有密码套件使用 FIPS 140-2 可接受的算法。 Of
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>弃用支持 TLS 1.0 和1.1 以及这对您的含义
 <a name="TLS11and12deprecation"> </a>
 
-自2018年10月31日起，Office 365 不再支持 TLS 1.0 和1.1。 这意味着，Microsoft 不会修复在使用 TLS 1.0 和1.1 连接到 Office 365 的客户端、设备或服务中发现的新问题。
+自2018年10月31日起，Office 365 不再支持 TLS 1.0 和1.1。 这意味着对于使用 TLS 1.0 和 1.1 连接到 Office 365 的客户端、设备或服务，Microsoft 将不再修复其出现的新问题。
 
 注意这并不意味着 Office 365 将阻止 TLS 1.0 和1.1 连接。 
 
@@ -63,7 +63,7 @@ TLS 1.0 和 TLS 1.1 将在以下日期正式弃用：
 - 在全球和 GCC 环境中，客户6月1日，2020。
 - 在2020年1月15日，适用于 GCC 高和 DoD sovereign 环境中的客户。 
 
-应确保所有客户端服务器和浏览器的组合均使用 TLS 1.2 （或更高版本），以保持与 Office 365 服务的连接。 您可能需要更新某些客户端服务器和浏览器-服务器的组合。 有关这对你有何影响的信息，请参阅在[Office 365 中强制使用 TLS 1.2 的准备工作](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)。
+应确保所有客户端服务器和浏览器的组合均使用 TLS 1.2 （或更高版本），以保持与 Office 365 服务的连接。 您可能需要更新某些客户端服务器和浏览器-服务器的组合。 有关这对你有何影响的信息，请参阅在[Office 365 中强制使用 TLS 1.2 的准备工作](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
   
 ## <a name="deprecating-support-for-3des"></a>对3DES 的弃用支持
 <a name="TLS11and12deprecation"> </a>
@@ -105,6 +105,6 @@ TLS 1.0 和 TLS 1.1 将在以下日期正式弃用：
   
 [在 Windows 安全状态更新中，TLS 1.0 的 Schannel 实现：11月24日，2015](https://support.microsoft.com/kb/3117336)
   
-[TLS/SSL 加密增强功能（Windows IT 中心）](https://technet.microsoft.com/en-us/library/cc766285%28v=ws.10%29.aspx)
+[TLS/SSL 加密增强功能（Windows IT 中心）](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
 

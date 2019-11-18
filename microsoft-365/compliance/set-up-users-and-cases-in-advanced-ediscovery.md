@@ -1,9 +1,9 @@
 ---
 title: 在 Office 365 高级电子数据展示中设置用户和案例
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: '了解如何配置用户角色、创建案例，以及如何将用户分配到 Office 365 高级电子数据展示中的案例。  '
-ms.openlocfilehash: e53d304445aa7d171766d38496d95a0d6cb47792
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6fa3581fe15c089292e7585e7d053b817ae167b
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075311"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38685180"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置用户和案例
 
@@ -35,7 +35,7 @@ ms.locfileid: "37075311"
     
 - 您必须是 Office 365 安全&amp;合规中心中的电子数据展示管理器角色组的成员，才能创建电子数据展示事例并向其添加成员。 若要将自己添加到安全&amp;合规中心中的电子数据展示管理器角色组，您必须是 Office 365 组织中的全局管理员。 如果您不是全局管理员，则必须要求全局管理员将您添加到电子数据展示管理器角色组。 有关详细信息，请参阅：
     
-  - [Microsoft 365 安全&amp;合规中心中的权限](/security/office-365-security/protect-against-threats.md)
+  - [Microsoft 365 安全&amp;合规中心中的权限](~/security/office-365-security/protect-against-threats.md)
     
   - [在 Microsoft 365 安全&amp;合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)
     

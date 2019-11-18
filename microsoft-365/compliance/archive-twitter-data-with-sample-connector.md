@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将 Twitter 数据导入 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 6780e3fbb53e2326994e03815403c1e5ae0d0616
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cf738f67778dbe435e60098b9fc6d753583858a8
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074503"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685158"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>使用示例连接器在 Office 365 中存档 Twitter 数据（预览）
 
@@ -23,7 +23,7 @@ ms.locfileid: "37074503"
 
 在 Office 365 中的安全性 & 合规性中心中使用示例连接器，以从 Twitter 导入和存档数据。 在设置和配置示例连接器之后，它会连接到您的组织的 Twitter 帐户（根据计划），将项目的内容转换为电子邮件格式，然后将这些项目导入到 Office 365 中的邮箱中。
 
-在导入 Twitter 数据之后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、监督和 Office 365 保留策略）应用于邮箱中存储的数据。 例如，您可以使用内容搜索来搜索 Twitter 数据，或将与数据存储在一起的邮箱与高级电子数据展示事例中的保管人相关联。 使用示例连接器在 Office 365 中导入和存档 Twitter 数据可帮助您的组织遵守政府和法规策略。
+在导入 Twitter 数据之后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、[通信合规性](communication-compliance.md)和 Office 365 保留策略）应用到邮箱中存储的数据。 例如，您可以使用内容搜索来搜索 Twitter 数据，或将与数据存储在一起的邮箱与高级电子数据展示事例中的保管人相关联。 使用示例连接器在 Office 365 中导入和存档 Twitter 数据可帮助您的组织遵守政府和法规策略。
 
 > [!NOTE]
 > 目前，仅可使用 Twitter 和[Facebook 商业页面](archive-facebook-data-with-sample-connector.md)的示例连接器进行预览。 即将推出更多示例连接器。
@@ -91,7 +91,7 @@ ms.locfileid: "37074503"
 
 此外，您还可以在此步骤中上载在第1步中下载的 SampleConnector 文件，以部署 Twitter 连接器应用的源代码。
 
-完成此步骤后，请务必复制 Azure 应用服务 URL （例如， https://twitterconnector.azurewebsites.net)。 您需要使用此操作来完成步骤5、步骤6和步骤7。
+完成此步骤后，请务必复制 Azure 应用服务 URL （例如， `https://twitterconnector.azurewebsites.net`）。 您需要使用此操作来完成步骤5、步骤6和步骤7。
 
 ## <a name="step-5-create-developer-app-on-twitter"></a>步骤5：在 Twitter 上创建开发人员应用
 
@@ -120,7 +120,7 @@ ms.locfileid: "37074503"
 - Twitter 访问令牌机密（在步骤5中获取）
 - Azure Active Directory 应用程序 ID （在步骤2中获取的 AAD 应用程序 ID）
 - Azure Active Directory 应用程序密码（在步骤2中获取的 AAD 应用程序密码）
-- Azure Active Directory 应用程序 Uri （在步骤2中获取的 AAD 应用程序 Uri; 例如，https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- Azure Active Directory 应用程序 Uri （在步骤2中获取的 AAD 应用程序 Uri; 例如，`https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步骤7：在安全 & 合规性中心中设置自定义连接器
 
@@ -130,5 +130,5 @@ ms.locfileid: "37074503"
 
 在完成此步骤（按照分步说明操作）后，您将提供以下信息（在完成这些步骤后，您已将其复制到文本文件中）。
 
-- Azure 应用服务 URL （在步骤4中获取; 例如，https://twitterconnector.azurewebsites.net)
+- Azure 应用服务 URL （在步骤4中获取; 例如， `https://twitterconnector.azurewebsites.net`）
 - APISecretKey （您在步骤4中创建）

@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分索引项目（也称为未编制索引项）是 SharePoint 和 OneDrive 网站上的 Exchange 邮箱项目和文档，由于某些原因未完全为内容搜索编制索引。 在本文中，您可以了解为什么无法将项目编入搜索，并作为部分索引项目返回，确定部分索引项目的搜索错误，以及使用 PowerShell 脚本确定组织的部分索引电子邮件的公开程度。items.
-ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074027"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685275"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>使用 Office 365 电子数据展示调查部分索引项
 
@@ -33,7 +33,7 @@ ms.locfileid: "37074027"
     
 - 文件类型支持索引，但特定文件发生索引错误
     
-尽管它不同，但大多数 Office 365 组织客户的内容数量少于 1%，而按部分索引的大小少于 12% 的内容。 卷与大小之间的差异在于，较大的文件包含无法完全编制索引的内容的可能性较高。
+尽管它不同，但大多数 Office 365 组织客户的内容数量少于1%，而按部分索引的大小少于12% 的内容。 卷与大小之间的差异在于，较大的文件包含无法完全编制索引的内容的可能性较高。
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>对于搜索，部分索引项目数的变化是什么？
 
@@ -60,7 +60,7 @@ ms.locfileid: "37074027"
 
 `(470/56,208) x 100 = 0.84%`
  
-通过使用上一示例中的搜索结果，将对所有邮箱项目的 84% 进行部分索引。
+通过使用上一示例中的搜索结果，将对所有邮箱项目的84% 进行部分索引。
   
  **若要计算组织中部分索引项目大小的百分比，请执行以下操作：**
 
@@ -68,7 +68,7 @@ ms.locfileid: "37074027"
 
 `(316 MB/4830 MB) x 100 = 6.54%`
 
-所以在上一示例中，邮箱项目总大小的 6.54% 来自部分索引项目。 如前所述，大多数 Office 365 组织客户的内容少于 1%，而按部分索引的大小少于 12% 的内容。
+所以在上一示例中，邮箱项目总大小的6.54% 来自部分索引项目。 如前所述，大多数 Office 365 组织客户的内容少于1%，而按部分索引的大小少于12% 的内容。
 
 ## <a name="working-with-partially-indexed-items"></a>使用部分索引项目
 
@@ -84,7 +84,7 @@ ms.locfileid: "37074027"
 
 错误标记由两条信息组成，即错误和文件类型。 例如，在此错误/文件对：
 
-```
+```text
  parseroutputsize_xls
 ```
 
@@ -120,7 +120,7 @@ ms.locfileid: "37074027"
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `PartiallyIndexedItems.ps1`。
 
-```
+```powershell
   write-host "**************************************************"
   write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
@@ -163,15 +163,15 @@ ms.locfileid: "37074027"
   }
   
 ```
-   
+
 2. [连接到安全 & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
     
 3. 在安全 & 合规性中心 PowerShell 中，转到在步骤1中保存脚本的文件夹，然后运行该脚本;例如：
 
-    ```
+    ```powershell
     .\PartiallyIndexedItems.ps1
     ```
-   
+
 下面的示例展示了脚本返回的输出。
   
 ![生成来自组织公开的报告的脚本的输出示例，以部分索引的电子邮件项目](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)

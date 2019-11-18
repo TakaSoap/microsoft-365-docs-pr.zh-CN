@@ -7,17 +7,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在安全 & 合规中心中使用内容搜索来执行目标集合。 目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。 使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
-ms.openlocfilehash: 525e2daf5b9dc8268e2b5db2eaab17099bf5bc0d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cd78f9ebb02f7c41e0703ba4ddb78bfd184000
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075248"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685314"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>将 Office 365 中的内容搜索用于目标集合
 
@@ -26,7 +28,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
 > [!NOTE]
 > 若要返回位于 SharePoint 或 OneDrive for business 网站中的文件夹中的内容，本主题中的脚本使用 DocumentLink 托管属性而不是 Path 属性。 DocumentLink 属性比 Path 属性更可靠，因为它将返回文件夹中的所有内容，而 Path 属性将不会返回某些媒体文件。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是安全&amp;合规中心中的电子数据展示管理器角色组的成员，才能在第1步中运行该脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -34,7 +36,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
 - 每次在第1步中运行脚本时，都会创建一个新的远程 PowerShell 会话。 因此，你可以使用所有可供你使用的远程 PowerShell 会话。 若要防止这种情况发生，可以运行以下命令来断开活动的远程 PowerShell 会话。
     
-  ```
+  ```powershell
   Get-PSSession | Remove-PSSession
   ```
 
@@ -62,7 +64,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `GetFolderSearchParameters.ps1`。
     
-  ```
+  ```powershell
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
@@ -177,7 +179,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
 3. 运行脚本;例如：
     
-      ```
+      ```powershell
       .\GetFolderSearchParameters.ps1
       ```
 
@@ -203,7 +205,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   
 ### <a name="script-output-for-site-folders"></a>网站文件夹的脚本输出
 
-如果从 SharePoint 或 OneDrive for business 网站获取**documentlink**属性的路径，则该脚本将使用远程 PowerShell 连接到安全 & 合规性中心，创建一个新的内容搜索以搜索网站中的文件夹，并然后显示位于指定网站中的文件夹的列表。 该脚本将显示每个文件夹的名称，并将**documentlink**的前缀添加到文件夹 URL 中。 由于**documentlink**属性是一个可搜索的属性，因此您`documentlink:<path>`将在步骤2中的搜索查询中使用属性： value 对来搜索该文件夹。 该脚本最多显示200个网站文件夹。 如果网站文件夹多于200，则显示最新的网站文件夹。
+如果从 SharePoint 或 OneDrive for Business 网站获取**documentlink**属性的路径，则该脚本将使用远程 PowerShell 连接到安全 & 合规性中心，创建一个新的内容搜索，用于搜索网站中的文件夹，然后显示位于指定网站中的文件夹的列表。 该脚本将显示每个文件夹的名称，并将**documentlink**的前缀添加到文件夹 URL 中。 由于**documentlink**属性是一个可搜索的属性，因此您`documentlink:<path>`将在步骤2中的搜索查询中使用属性： value 对来搜索该文件夹。 该脚本最多显示200个网站文件夹。 如果网站文件夹多于200，则显示最新的网站文件夹。
   
 下面的示例展示了网站文件夹的脚本返回的输出。
   
@@ -229,7 +231,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
     - 单击 "**选择要搜索的特定网站**" 搜索，然后添加在步骤1中运行脚本时指定的相同网站 URL。 
     
-6. 单击“下一步”。****
+6. 单击“**下一步**”。
     
 7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框`folderid:<folderid>`中`documentlink:<path>` ，粘贴步骤1中的脚本返回的 or 值。 
     
@@ -245,29 +247,29 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   
 - 本示例将搜索三个不同的邮箱文件夹。 可以使用类似的查询语法搜索用户的 "可恢复的项目" 文件夹中的隐藏文件夹。
     
-  ```
+  ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
 - 本示例将在邮箱文件夹中搜索包含精确短语的项目。
     
-  ```
+  ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
 - 本示例在标题中搜索包含字母 "NDA" 的文档的网站文件夹（和任何子文件夹）。
     
-  ```
+  ```powershell
   documentlink:<path> AND filename:nda
   ```
 
 - 本示例搜索某个日期范围内已更改的文档的网站文件夹（和任何子文件夹）。
     
-  ```
+  ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
-  
-## <a name="more-information"></a>详细信息
+
+## <a name="more-information"></a>更多信息
 
 在使用本文中的脚本执行目标集合时，请记住以下事项。
   

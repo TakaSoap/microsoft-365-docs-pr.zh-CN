@@ -2,8 +2,8 @@
 title: 发送电子邮件通知并显示 DLP 策略的策略提示
 ms.author: chrfox
 author: chrfox
-manager: dansimp
-ms.date: 06/14/2019
+manager: laurawi
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项，以便它们不会被阻止，如果他们具有有效的业务需求，或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: 198b2de6d26b260840f0e578e4b50f0693708a94
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076072"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685225"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -214,23 +215,13 @@ ms.locfileid: "37076072"
 - 内容包含
 - 共享内容
 
-我们目前正在努力为其他条件显示策略提示。 具体包括：
-
-- 无法扫描任何电子邮件附件的内容
-- 任何电子邮件附件的内容未完成扫描
-- 附件文件扩展名为
-- 附件受密码保护
-- Document 属性为
-- 收件人域为
-- 发件人 IP 地址为
-
 请注意，所有这些条件在 Outlook 中都有效，在这里，它们将与内容相匹配，并对内容强制实施保护操作。 但尚不支持向用户显示策略提示。
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Exchange 管理中心中的策略提示与 Office 365 安全&amp;合规中心
 
 策略提示可使用在 Exchange 管理中心中创建的 DLP 策略和邮件流规则，或使用在 Office 365 安全&amp;合规中心中创建的 dlp 策略，但不能同时使用这两种策略。 这是因为这些策略存储在不同的位置，但策略提示只能从一个位置进行绘制。
   
-如果已在 Exchange 管理中心中配置了策略提示，则在 Office 365 安全&amp;合规中心中配置的任何策略提示都不会显示在 outlook 网页和 outlook 2013 及更高版本的 outlook 中，直到您关闭 Exchange 中的提示。管理中心。 这样可确保当前的 Exchange 邮件流规则（也称为传输规则）在您选择切换到 "Office 365 安全&amp;合规中心" 之前仍有效。
+如果已在 Exchange 管理中心中配置了策略提示，则在 Office 365 安全&amp;合规中心中配置的任何策略提示都不会显示在 outlook 网页和 outlook 2013 及更高版本的 outlook 中，直到您关闭 Exchange 管理中心中的提示。 这样可确保当前的 Exchange 邮件流规则（也称为传输规则）在您选择切换到 "Office 365 安全&amp;合规中心" 之前仍有效。
   
 请注意，虽然策略提示只能从一个位置进行绘制，但总是发送电子邮件通知，即使您在 Office 365 安全&amp;合规中心和 Exchange 管理中心中使用的是 DLP 策略也是如此。
   
@@ -295,5 +286,3 @@ Office 桌面程序将自动从 Office 365 中直接同步 DLP 策略，然后�
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
     
 - [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)
-    
-

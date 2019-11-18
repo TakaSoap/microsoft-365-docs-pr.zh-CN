@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 "重试" 按钮解决包含内容位置错误的内容搜索。
-ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b35c2985efeafa3192a2404047fe62e28e04157e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075973"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685328"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重试内容搜索以解决内容位置错误
 
 当您在安全与合规中心中使用内容搜索来搜索大量邮箱时，可能会收到类似于以下内容的搜索错误：
 
-```
+```text
 Error
 
 The search on the following locations failed:

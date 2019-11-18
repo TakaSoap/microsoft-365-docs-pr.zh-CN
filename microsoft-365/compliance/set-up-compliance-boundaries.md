@@ -10,17 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: 1e87926910ad7dd356696368ad6759bfacfe37c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 13f45ce55f23d91a81068031691436383ec87ba3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075190"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685324"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -106,10 +107,10 @@ ms.locfileid: "37075190"
   
 下面是用于创建用于合规性边界的搜索权限筛选器的语法。
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
-  
+
 以下是对命令中的每个参数的说明：
   
 -  `FilterName`：指定筛选器的名称。 使用描述或标识使用筛选器的机构的名称。 
@@ -135,13 +136,13 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
   
  **第四个咖啡**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
 ```
-   
+
  **Coho Winery**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
@@ -220,30 +221,30 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 下面的示例展示了如何在为合规性边界创建搜索权限筛选器时使用**Region**参数。 这假定第四个咖啡子公司位于北美，并且 Coho Winery 位于欧洲。 
   
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
-   
+
 在多地理位置环境中搜索和导出内容时，请记住以下事项。
   
-- **Region**参数并不控制 Exchange 邮箱的搜索。 搜索邮箱时将搜索所有数据中心。 若要限制搜索的 Exchange 邮箱的作用域，请在创建或更改搜索权限筛选器时使用**Filters**参数。 
+- **Region** 参数不控制 Exchange 邮箱的搜索。 搜索邮箱时将搜索所有数据中心。 若要限制搜索的 Exchange 邮箱的作用域，请在创建或更改搜索权限筛选器时使用**Filters**参数。 
     
 - 如果电子数据展示管理器需要在多个 SharePoint 区域中进行搜索，则需要为该电子数据展示管理器创建一个不同的用户帐户，以便在搜索权限筛选器中使用，以指定 SharePoint 网站或 OneDrive 的区域帐户位于。 有关对此进行设置的详细信息，请参阅在[Office 365 中的内容搜索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的 "在 SharePoint 多地理位置环境中搜索内容" 部分。
     
 - 在 SharePoint 和 OneDrive 中搜索内容时，**区域**参数会将搜索定向到电子数据展示管理器将在其中执行电子数据展示调查的主或卫星位置。 如果电子数据展示管理器在搜索权限筛选器中指定的区域之外搜索 SharePoint 和 OneDrive 网站，则不会返回任何搜索结果。 
     
-- 导出搜索结果时，会将来自所有内容位置的内容（包括 Exchange、Skype for Business、SharePoint、OneDrive 和其他可以使用内容搜索工具搜索的 Office 365 服务）上传到 Azure 存储位置由**Region**参数指定的数据中心。 这可帮助组织在合规性范围内不允许跨受控制的边框导出内容。 如果未在搜索权限筛选器中指定任何区域，则会将内容上传到组织的默认区域。 
+- 导出搜索结果时，会将来自所有内容位置（包括 Exchange、Skype for Business、SharePoint、OneDrive 和其他可以使用内容搜索工具搜索的 Office 365 服务）的内容上载到由**Region**参数指定的数据中心中的 Azure 存储位置。 这可帮助组织在合规性范围内不允许跨受控制的边框导出内容。 如果未在搜索权限筛选器中指定任何区域，则会将内容上传到组织的默认区域。 
     
 - 您可以通过运行以下命令来编辑现有搜索权限筛选器，以添加或更改区域：
 
-    ```
+    ```powershell
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
- 
+
 ## <a name="frequently-asked-questions"></a>常见问题
 
  **谁可以创建和管理搜索权限筛选器（使用 New-compliancesecurityfilter 和 New-compliancesecurityfilter cmdlet）？**

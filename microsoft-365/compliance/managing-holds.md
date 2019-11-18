@@ -8,18 +8,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1e457ffa05670e6a8b48692bbb382ebd8f2b404e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1cea83ffec8af8b22b5a27e9d760946e71ba7f68
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074972"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685307"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留
 
@@ -27,7 +29,7 @@ ms.locfileid: "37074972"
 
 ## <a name="manage-custodian-based-holds"></a>管理基于保管人的保留
 
-在某些情况下，您可能会有一组已标识和要保留的数据保管人。 在高级电子数据展示中，当这些保管人置于保留状态时，用户及其选择的数据源将自动添加到保管人保留策略中。 
+在某些情况下，您可能有一组已确定的保管人，并决定在这种情况下保留其数据。 在高级电子数据展示中，当这些保管人置于保留状态时，用户及其选择的数据源将自动添加到保管人保留策略中。 
 
 若要查看保管人保留策略，请执行以下操作：
 
@@ -60,7 +62,7 @@ ms.locfileid: "37074972"
  
 6. Optional在 "**说明**" 框中，添加保留的说明。
   
-7. 单击“下一步”。****
+7. 单击“**下一步**”。
   
 8. 选择要置于保留状态的内容位置。 您可以将邮箱、网站和公用文件夹置于保留状态。
 
@@ -86,7 +88,7 @@ ms.locfileid: "37074972"
 
     - 单击 "**添加**条件" 以添加一个或多个条件以缩小保留的搜索查询。 每个条件都会向在创建保留时创建并运行的 KQL 搜索查询中添加一个子句。 例如，您可以指定日期范围，以使在日期范围内创建的电子邮件或网站文档置于保留状态。 可通过使用 AND 运算符在逻辑上将条件连接至关键字查询（在关键字框中指定）。 这意味着项目必须同时满足关键字查询和要置于保留状态的条件。
 
-     有关创建搜索查询和使用条件的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions)。
+     有关创建搜索查询和使用条件的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions)。
 
 12. 配置基于查询的保留后，单击 "**下一步**"。
  
@@ -116,10 +118,10 @@ ms.locfileid: "37074972"
 - **如何将额外的 Office 365 组或 Microsoft 团队网站映射到管理员？在 Office 365 组和 Microsoft 团队中放置非 Custodial 保留会怎么样？** Microsoft 团队基于 Office 365 组构建。 因此，在电子数据展示事例中将其置于保留状态非常相似。 将 Office 365 组和 Microsoft 团队置于保留状态时，请记住以下事项。
   - 若要将位于 Office 365 组和 Microsoft 团队中的内容置于保留状态，您必须指定与组或团队关联的邮箱和 SharePoint 网站。
   
-  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Office 365 组或 Microsoft 团队的属性。 如果要获取与 Office 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令将显示名为 "高级领导" 团队的 Office 365 组的选定属性：
+  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Office 365 组或 Microsoft 团队的属性。 如果要获取与 Office 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性：
 
 
-    ```
+    ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
     DisplayName            : Senior Leadership Team
     Alias                  : seniorleadershipteam
@@ -128,24 +130,24 @@ ms.locfileid: "37074972"
     ```
 
     > [!NOTE]
-    > 若要运行 Remove-unifiedgroup cmdlet，您必须在 Exchange Online 中分配 "仅查看收件人" 角色，或者是分配了 "仅查看收件人" 角色的角色组的成员。
+    > 若要运行 Get-UnifiedGroup cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。
 
  - 在搜索用户的邮箱时，不会搜索用户是其成员的任何 Office 365 组或 Microsoft 团队。 同样，当您放置 Office 365 组或 Microsoft 团队保留时，只有组邮箱和组网站处于保留状态。除非将组成员的邮箱和 OneDrive for Business 网站明确添加为保管人或将其数据源放置，否则它们不会置于保留状态。 因此，如果需要将 Office 365 组或 Microsoft 团队置于保留状态以供特定保管人使用，请考虑将组网站和组邮箱映射到保管人（请参阅在高级电子数据展示中管理保管人）。 如果 Office 365 组或 Microsoft 团队不属于单个管理员，请考虑将该源添加到非 custodial 保留中。 
  
- - 若要获取 Office 365 组或 Microsoft 团队成员的列表，您可以在 Microsoft 365 管理中心的 "家庭 > 组" 页上查看属性。 或者，您可以在 Exchange Online PowerShell 中运行以下命令：
+ - 若要获取 Office 365 组或 Microsoft 团队成员的列表，您可以在 Microsoft 365 管理中心的 "家庭 > 组" 页上查看属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令：
 
-   ``` 
+   ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
    ```
 
     > [!NOTE]
-    > 若要运行**UnifiedGroupLinks** cmdlet，您必须在 Exchange Online 中分配 "仅查看收件人" 角色，或者是分配了 "仅查看收件人" 角色的角色组的成员。
+    > 若要运行 **Get-UnifiedGroupLinks** cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。
 
-- 属于 Microsoft 团队渠道的频道会话存储在与团队相关联的邮箱中。 同样，在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此，您必须将 Microsoft 团队邮箱和 SharePoint 网站置于保留状态，以在频道中保留对话和文件。
+- 属于 Microsoft 团队渠道的频道会话存储在与团队相关联的邮箱中。 同样，团队成员在渠道中共享的文件将存储在团队的 SharePoint 网站上。 因此，您必须将 Microsoft 团队邮箱和 SharePoint 网站置于保留状态，以在频道中保留对话和文件。
   
 - 或者，在 Microsoft 团队中作为聊天列表一部分的对话存储在用户参与聊天的用户的邮箱中。  用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for Business 网站中。 因此，您必须将单独的用户邮箱和 OneDrive for Business 网站置于保留状态，以便在聊天列表中保留对话和文件。 
   
-- 每个 Microsoft 团队或团队频道都包含用于笔记记录和协作的 Wiki。 Wiki 内容将自动保存到格式为 .mht 的文件中。 此文件存储在团队的 SharePoint 网站上的 "团队 Wiki 数据" 文档库中。 您可以通过将团队的 SharePoint 网站置于保留状态，使 Wiki 中的内容处于保留状态。
+- 每个 Microsoft 团队或团队频道都包含用于笔记记录和协作的 Wiki。 Wiki 内容将会自动保存至采用 .mht 格式的文件。 此文件存储在团队 SharePoint 网站的 Teams Wiki 数据文档库中。 您可以通过将团队的 SharePoint 网站置于保留状态，使 Wiki 中的内容处于保留状态。
 
   > [!NOTE]
   > 为 Microsoft 团队或团队频道保留 Wiki 内容的功能（在将团队的 SharePoint 网站置于保留状态时）发布在2017年6月22日。 如果工作组网站处于保留状态，则会在该日期开始保留 Wiki 内容。 但是，如果工作组网站处于保留状态，并且在6月 22 2017 日之前删除了 Wiki 内容，则不会保留 Wiki 内容。

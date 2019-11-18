@@ -8,24 +8,26 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 使用本文中的脚本生成一个报告，该报告包含有关与 Office 365 或 Microsoft 365 中的符合性中心中的电子数据展示事例相关联的所有保留的信息。
-ms.openlocfilehash: 7118b62dcd42413309e33c45e80516c8822faeff
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e07e628b21c9e8f7485f3012a8740823fe301fc2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074316"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685247"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>在 Office 365 中的电子数据展示事例中创建保留报告
   
 本文中的脚本允许电子数据展示管理员和电子数据展示管理器生成一个报告，其中包含有关与 Office 365 或 Microsoft 365 中的合规性中心中的电子数据展示事例相关联的所有保留项的信息。 报告包含与保留相关联的事例的名称、放置在保留中的内容位置以及保留是否基于查询的信息。 如果存在不包含任何保留的案例，该脚本将创建另一个报告，其中包含不含 "保留" 的案例列表。
 
-有关报告中包含的信息的详细说明，请参阅[详细信息](#more-information)部分。 
+有关报告中包含的信息的详细说明，请参阅[详细信息](#more-information)部分。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要生成组织中所有电子数据展示事例的报告，您必须是组织中的电子数据展示管理员。 如果您是电子数据展示管理器，则报告将仅包含有关您可以访问的事例的信息。 有关电子数据展示权限的详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -39,7 +41,7 @@ ms.locfileid: "37074316"
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `ConnectSCC.ps1`。 
     
-      ```
+      ```powershell
       # Get login credentials 
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -51,10 +53,10 @@ ms.locfileid: "37074316"
     
 3. 运行脚本;例如：
 
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-   
+
 4. 当系统提示你输入凭据时，请输入你的电子邮件地址和密码，然后单击 **"确定"**。 
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>步骤2：运行脚本以报告与电子数据展示事例相关联的保留
@@ -63,7 +65,7 @@ ms.locfileid: "37074316"
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如，CaseHoldsReport。 
     
-  ```
+  ```powershell
 #script begin
 " " 
 write-host "***********************************************"
@@ -155,7 +157,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
 3. 运行脚本;例如：
 
-    ```
+    ```powershell
     .\CaseHoldsReport.ps1
     ```
 
@@ -174,7 +176,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     ![运行 CaseHoldsReport 脚本后的输出](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 事例包含运行本文中的脚本时创建的报告，其中包含有关每个保留的以下信息。 如前面所述，您必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关案例保留的详细信息，请参阅[电子数据展示事例](ediscovery-cases.md)。
   

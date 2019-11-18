@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: 5a9036908d97a62897b7d52b875a46008a7a337c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 61b55c221c11a577a64d0d2358c89253b1e90714
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074484"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685260"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -43,11 +43,11 @@ ms.locfileid: "37074484"
 > [!NOTE]
 > 若要使用高级电子数据展示分析用户的数据，必须为用户（数据管理员）分配 Office 365 E5 许可证。 或者，可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。 分配给案例并使用高级电子数据展示分析数据的管理员和合规性监察官不需要 E5 许可证。  
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是组织管理角色组（或分配有角色管理角色）的成员，才能在安全 & 合规性中心中分配电子数据展示权限。
     
-- 您可以使用 Security & 合规性中心 PowerShell 中的[add-rolegroupmember](https://technet.microsoft.com/en-us/library/dd638207%28v=exchg.160%29.aspx) cmdlet 将已启用邮件的安全组添加为电子数据展示管理器角色组中的电子数据展示管理器子组的成员。 但是，不能将已启用邮件的安全组添加到电子数据展示管理员子组。 有关更多详细信息，请参阅[详细信息](#more-information)部分。 
+- 您可以使用 Security & 合规性中心 PowerShell 中的[add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) cmdlet 将已启用邮件的安全组添加为电子数据展示管理器角色组中的电子数据展示管理器子组的成员。 但是，不能将已启用邮件的安全组添加到电子数据展示管理员子组。 有关更多详细信息，请参阅[详细信息](#more-information)部分。 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -58,11 +58,11 @@ ms.locfileid: "37074484"
 3. 在安全与合规中心的左窗格中，单击 "**权限**"，然后单击 "**电子数据展示管理器**" 旁边的复选框。
     
 4. 在 "**电子数据展示管理器**" 飞出页面上，根据要分配的电子数据展示权限执行以下操作之一。 
-    
-  - **使用户成为电子数据展示管理器**在 "**电子数据展示管理器**" 旁边，单击 "**编辑**"。 在**选定的电子数据展示管理器**下，单击!["**编辑**"，然后单击 "添加图标](media/ITPro-EAC-AddIcon.gif) **"**。 选择要添加为电子数据展示管理器的用户（或用户），然后单击 "**添加**"。 添加完用户后，单击 "**完成**"。 然后，在 "**编辑选择电子数据展示管理器**" 弹出页面上，单击 "**保存**" 以保存对电子数据展示管理器成员身份的更改。 
-    
-  - **使用户成为电子数据展示管理员**在 "**电子数据展示管理员**" 旁边，单击 "**编辑**"。 在 **"选定的电子数据展示管理员**" 下， ![单击 "](media/ITPro-EAC-AddIcon.gif) **编辑**"，然后单击 "**添加图标"**。 选择要添加为电子数据展示管理员的用户（或用户），然后单击 "**添加**"。 添加完用户后，单击 "**完成**"。 然后，在 "**编辑选择电子数据展示管理员**" 弹出页面上，单击 "**保存**" 以保存对电子数据展示管理员成员身份所做的更改。 
-    
+  
+    **使用户成为电子数据展示管理器：** 在 "**电子数据展示管理器**" 旁边，单击 "**编辑**"。 在 "**选择电子数据展示管理器**" 部分，单击**选择电子数据展示管理器**超链接，然后单击 " ![](media/ITPro-EAC-AddIcon.gif) **添加图标"**。 选择要添加为电子数据展示管理器的用户（或用户），然后单击 "**添加**"。 添加完用户后，单击 "**完成**"。 然后，在 "**编辑选择电子数据展示管理器**" 弹出页面上，单击 "**保存**" 以保存对电子数据展示管理器成员身份的更改。
+  
+    **使用户成为电子数据展示管理员：** 在 "**电子数据展示管理器**" 旁边，单击 "**编辑**"。 在 "**选择电子数据展示管理员**" 部分的 "**电子数据展示管理员**" 下，单击 "**选择电子数据展示管理器** **"，然后**单击 " ![](media/ITPro-EAC-AddIcon.gif) **添加图标"**。 选择要添加为**电子数据展示管理员**的用户（或用户），然后单击 "**添加**"。 添加完用户后，单击 "**完成**"。 然后，在 "**编辑选择电子数据展示管理员**" 弹出页面上，单击 "**保存**" 以保存对电子数据展示管理员成员身份所做的更改。
+      
 > [!NOTE]
 > 您还可以使用**eDiscoveryCaseAdmin** cmdlet 向用户发出电子数据展示管理员。 但是，必须先为该用户分配事例管理角色，然后才能使用此 cmdlet 使其成为电子数据展示管理员。 有关详细信息，请参阅[外接程序 eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217)。 
   
@@ -77,9 +77,9 @@ ms.locfileid: "37074484"
 |案例管理 <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |合规性搜索 <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |导出 <br/> | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|同时 <br/>  |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Hold <br/>  |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |预览 <br/>  | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|审阅 <br/>  | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Review <br/>  | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |RMS 解密 <br/>  ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |搜索和清除 <br/> | <br/> | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -106,7 +106,7 @@ ms.locfileid: "37074484"
 
 有关导出搜索结果的详细信息，请参阅[Export search results From Security & 合规中心](export-search-results.md)。
 
-### <a name="hold"></a>同时
+### <a name="hold"></a>Hold
 
 此角色允许用户在保留邮箱、公用文件夹、网站、Skype for Business 对话和 Office 365 组中放置内容。 当内容处于保留状态时，内容所有者仍能修改或删除原始内容，但在删除保留或保留持续时间过期之前，将保留内容。 
 
@@ -119,7 +119,7 @@ ms.locfileid: "37074484"
 
 此角色允许用户查看从内容搜索返回的项目列表。 他们还可以打开并查看列表中的每个项目以查看其内容。
 
-### <a name="review"></a>审阅
+### <a name="review"></a>Review
 
 此角色允许用户访问 Office 365 高级电子数据展示中的事例数据。 此角色的主要用途是为用户提供对高级电子数据展示的访问权限。 分配了此角色的用户可以在其成员的安全性 & 合规性中心中查看和打开电子数据展示页面上的案例列表。 在用户访问安全 & 合规性中心中的案例后，他们可以单击 "**切换到高级电子数据展示**" 以访问和分析高级电子数据展示中的事例数据。 此角色不允许用户预览与事例关联的内容搜索的结果，或执行其他内容搜索或案例管理任务。
 
@@ -144,7 +144,7 @@ ms.locfileid: "37074484"
     
 - **是否可以将组添加为电子数据展示管理器角色组的成员？** 如前所述，您可以通过在 Security & 合规性中心 PowerShell 中使用**add-rolegroupmember** cmdlet，将启用邮件的安全组添加为电子数据展示管理器角色组中的电子数据展示管理器子组的成员。 例如，您可以运行以下命令，将已启用邮件的安全组添加到电子数据展示管理器角色组。 
     
-  ```
+  ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 

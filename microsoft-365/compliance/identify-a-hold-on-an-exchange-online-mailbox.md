@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可在 Office 365 邮箱中放置的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Office 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户
-ms.openlocfilehash: 47e7ffff1703c0de94f014dc18e249cc9775e3e2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074087"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685276"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -41,7 +41,7 @@ Office 365 提供了多种方法，使您的组织可以阻止邮箱内容被永
     - **组织范围内的保留策略：** 这些是分配给组织中的所有内容位置的策略。 您可以使用 Exchange Online PowerShell 中的**set-organizationconfig** cmdlet 来获取有关组织范围的保留策略的信息。
   有关详细信息，请参阅[Office 365 保留策略概述](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)中的 "将保留策略应用于整个组织或特定位置" 部分。
 
-- **[Office 365 保留标签](labels.md)：** 如果用户应用 Office 365 保留标签（配置为保留内容或保留内容，然后将内容删除）到其邮箱中的*任何*文件夹或项目中，则邮箱上的保留将放置在邮箱中，就像邮箱是置于诉讼保留或分配到 Office 365 保留策略。 有关详细信息，请参阅[保留邮箱处于保留状态，因为已将保留标签应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)部分。
+- **[Office 365 保留标签](labels.md)：** 如果用户将 office 365 保留标签（配置为保留内容或保留，然后删除内容）应用到其邮箱中的*任何*文件夹或项目中，则会在邮箱上放置保留，就像邮箱被置于诉讼保留或分配到 Office 365 保留策略。 有关详细信息，请参阅[保留邮箱处于保留状态，因为已将保留标签应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)部分。
 
 若要管理处于保留状态的邮箱，您可能需要确定邮箱中放置的保留类型，以便可以执行诸如更改保留持续时间、临时或永久删除保留或从 Office 365 保留策略中排除邮箱等任务。 在这些情况下，第一步是确定邮箱上放置的保留类型。 由于多个保留（和不同类型的保留）可以放置在单个邮箱上，因此，如果您想要删除或更改保留，则必须标识邮箱中的所有保留项。
 
@@ -59,7 +59,7 @@ Office 365 提供了多种方法，使您的组织可以阻止邮箱内容被永
 
 运行以下命令以获取有关保留和 Office 365 保留策略应用于邮箱的信息。
 
-```
+```powershell
 Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ```
 
@@ -80,7 +80,7 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ### <a name="get-organizationconfig"></a>Set-organizationconfig
 如果运行**邮箱**cmdlet 时， *InPlaceHolds*属性为空，则仍可能会将一个或多个组织范围内的 Office 365 保留策略应用于邮箱。 在 Exchange Online PowerShell 中运行以下命令，获取组织范围内的 Office 365 保留策略的 Guid 列表。
 
-```
+```powershell
 Get-OrganizationConfig | FL InPlaceHolds
 ```
 
@@ -125,15 +125,15 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 在 Security & 合规性中心 PowerShell 中运行以下命令，以确定应用于邮箱的电子数据展示保留。 使用您在步骤1中确定的电子数据展示保留的 GUID （不包括 UniH 前缀）。 第一个命令创建包含有关保留的信息的变量。 在其他命令中使用此变量。 第二个命令显示与保留相关联的电子数据展示事例的名称。 第三个命令显示保留的名称和应用保留的邮箱列表。
 
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold | FL Name,ExchangeLocation
 ```
 
@@ -143,16 +143,17 @@ $CaseHold | FL Name,ExchangeLocation
 
 在 Exchange Online PowerShell 中运行以下命令，以确定应用于邮箱的就地保留。 对您在步骤1中标识的就地保留使用 GUID。 该命令将显示保留的名称和应用保留的邮箱列表。
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
+
 如果就地保留的 GUID 以`cld`前缀开头，请确保在运行前一个命令时包含前缀。
 
 ### <a name="office-365-retention-policies"></a>Office 365 保留策略
 
 在 Security & 合规中心 PowerShell 中运行以下命令，以标识应用于邮箱的 Office 365 保留策略（组织范围或特定位置）。 使用您在步骤1中标识的 GUID （不包括 mbx、skp 或 grp 前缀或操作后缀）。
 
-```
+```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
@@ -166,7 +167,7 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 
 若要查看*ComplianceTagHoldApplied*属性的值，请在 Exchange Online PowerShell 中运行以下命令：
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -178,20 +179,21 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 若要查看邮箱的*DelayHoldApplied*属性的值，请在 Exchange Online PowerShell 中运行以下命令。
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
 若要在过期之前删除延迟保留，可以在 Exchange Online PowerShell 中运行以下命令： 
  
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 您必须在 Exchange Online 中向您分配 "合法保留" 角色，才能使用*RemoveDelayHoldApplied*参数 
 
 若要删除非活动邮箱的延迟保留，请在 Exchange Online PowerShell 中运行以下命令：
 
-```
+```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 

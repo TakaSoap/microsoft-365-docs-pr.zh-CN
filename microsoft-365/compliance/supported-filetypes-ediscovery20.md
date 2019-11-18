@@ -14,16 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3dbebb20d179f78e97a8ae18fb810a8cb53c45ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075297"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38685056"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
 
 高级电子数据展示支持多种不同级别的文件类型，如下表所述。 此列表未定稿，我们将在继续进行验证测试时添加新的文件类型。 这些表指示文件类型是否支持文本提取（图像的 OCR）、在本机查看器中可见，还支持高级电子数据展示中的批注查看器。
+
 
 ## <a name="archive--container"></a>存档/容器
 
@@ -33,6 +34,18 @@ ms.locfileid: "37075297"
 | application/x-已压缩的 rar | 是 | 是 | 是 | rar |
 | 应用程序/x-tar | 是 | 是 | 是 | tar |
 | application/zip | 是 | 是 | 是 | .zip |
+||||||||
+
+## <a name="audio--video"></a>音频/视频
+
+| Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/ | 是 | 是 | 否 | 必需 | 否 | . m4v;. mp4v;. mpeg4 中的. m4a |
+| 音频/mpeg | 是 | 是 | 否 | 必需 | 否 | mpeg |
+| video/3gpp | 是 | 是 | 否 | 必需 | 否 | .3gp |
+| video/3gpp2 | 是 | 是 | 否 | 必需 | 否 | .3g2; .3gp2 |
+| 视频/quicktime | 是 | 是 | 否 | 必需 | 否 | . moov; mov;. qt |
+| 视频/x-m4v | 是 | 是 | 否 | 必需 | 否 | .m4v |
 ||||||||
 
 ## <a name="database"></a>数据库
@@ -95,6 +108,13 @@ ms.locfileid: "37075297"
 | openxmlformats-officedocument 的应用程序/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | 。 .xltx |
 ||||||||
 
+## <a name="microsoft-onenote"></a>Microsoft OneNote
+
+| Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| 应用程序/onenote | 是 | 是 | 是 | 是 | 否 | .one |
+||||||||
+
 ## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
@@ -103,6 +123,13 @@ ms.locfileid: "37075297"
 | application/vnd.openxmlformats-officedocument.presentationml.presentation | 是 | 是 | 是 | 是 | 是 | .pptx |
 | openxmlformats-officedocument 的应用程序/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | 。 ppsx |
 | openxmlformats-officedocument 的应用程序/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | 。 .potx |
+||||||||
+
+## <a name="microsoft-project"></a>Microsoft Project
+
+| Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd.ms-excel ms-project | 是 | 是 | 是 | 否 | 可访问 | mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher

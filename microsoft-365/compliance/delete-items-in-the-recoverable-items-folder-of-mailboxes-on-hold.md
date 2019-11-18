@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 对于管理员：删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Office 365 中的数据的有效方法。
-ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070731"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685297"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -43,7 +43,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
 > [!CAUTION]
 > 本文中所述的过程将导致从 Exchange Online 邮箱永久删除（清除）的数据。 这意味着无法恢复从 "可恢复的项目" 文件夹中删除的邮件，也不会提供用于法律查询或其他合规性的邮件。 如果要从作为诉讼保留的一部分的邮箱中删除邮件，请在 "安全与合规中心" 中创建的 "就地保留"、"电子数据展示保留" 或 "Office 365 保留策略" 中，与您的记录管理或法律部门进行核实在删除保留之前。 您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须在 Exchange Online 中为以下两个管理角色分配搜索和删除步骤5中的 "可恢复的项目" 文件夹中的邮件。
     
@@ -71,7 +71,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
     
 2. 运行以下命令以获取有关单个项目恢复和已删除项目保留期限的信息。
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL SingleItemRecoveryEnabled,RetainDeletedItemsFor
     ```
 
@@ -79,7 +79,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
     
 3. 运行以下命令以获取邮箱的邮箱访问设置。 
     
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
@@ -87,7 +87,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
     
 4. 运行以下命令以获取有关保留和适用于邮箱的 Office 365 保留策略的信息。
     
-    ```
+    ```powershell
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
@@ -97,9 +97,10 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
   
 5. 运行以下命令以获取有关组织范围内的 Office 365 保留策略的信息。 
 
-    ```
+    ```powershell
     Get-OrganizationConfig | FL InPlaceHolds
     ```
+   
    如果您的组织具有任何组织范围的 Office 365 保留策略，则必须在步骤3中将邮箱排除在这些策略之外。
 
    > [!TIP]
@@ -107,7 +108,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
   
 6. 运行以下命令，获取用户主邮箱中的 "可恢复的项目" 文件夹中的文件夹和子文件夹中的当前大小和项目总数。 
 
-    ```
+    ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
@@ -138,19 +139,19 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
     ```   
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
-   
+
    > [!NOTE]
     > 最长可能需要60分钟才能禁用邮箱的所有客户端访问方法。 请注意，禁用这些访问方法不会断开他们当前登录的邮箱所有者。 如果未登录到所有者，则在禁用这些访问方法后，他们将无法访问其邮箱。 
   
 2. 运行以下命令，将已删除项目的保留期增加到最大30天。 这假定当前设置少于30天。 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 30
     ```
 
 3. 运行以下命令以禁用单个项目恢复。
     
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
@@ -159,7 +160,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
   
 4. 运行以下命令以阻止托管文件夹助理处理邮箱。 正如前面所述，仅当具有保留锁定的 Office 365 保留策略未应用于邮箱时，才可以禁用托管文件夹助理。 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
     ```
 
@@ -174,7 +175,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
   
 在 Exchange Online PowerShell 中运行以下命令，以从邮箱中删除诉讼保留。
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
@@ -186,31 +187,31 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
   
 在 Exchange Online PowerShell 中运行以下命令，以标识邮箱中放置的就地保留。 对您在步骤1中标识的就地保留使用 GUID。 
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
-   
+
 在确定就地保留之后，可以使用 Exchange 管理中心（EAC）或 Exchange Online PowerShell 将邮箱从保留中删除。 有关详细信息，请参阅[创建或删除就地保留](https://go.microsoft.com/fwlink/?linkid=852668)。
   
  ### <a name="office-365-retention-policies-applied-to-specific-mailboxes"></a>应用于特定邮箱的 Office 365 保留策略
   
 在[Security & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令，以确定应用于邮箱的 Office 365 保留策略。 对您在步骤1中标识`mbx`的`skp`保留策略使用 GUID （不包括或前缀）。 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
-   
-在确定保留策略后，请转到 "安全 & 合规性中心" 中的 "**日期调控** \> "**保留**页，编辑在上一步中标识的保留策略，并从列表中删除该邮箱。保留策略中包含的收件人。 
+
+在确定保留策略后，请转到 "安全 & 合规性中心" 中的 "**日期调控** \> "**保留**页，编辑在上一步中标识的保留策略，并从保留策略中包含的收件人列表中删除邮箱。 
   
  ### <a name="organization-wide-office-365-retention-policies"></a>组织范围内的 Office 365 保留策略
   
 组织范围和 Exchange 范围的 Office 365 保留策略应用于组织中的每个邮箱。 它们在组织级别（而不是邮箱级别）应用，并在您在步骤1中运行**set-organizationconfig** cmdlet 时返回。 在[Security & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令，以确定组织范围内的 Office 365 保留策略。 对您在步骤1中确定`mbx`的组织范围的保留策略使用 GUID （不包括前缀）。 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-在确定组织范围内的 Office 365 保留策略后，请转到安全 & 合规中心中的 "**日期调控** \> "**保留**页，编辑您在中标识的每个组织范围的保留策略。上一步，并将邮箱添加到排除的收件人列表中。 执行此操作会将用户的邮箱从保留策略中删除。 
+在确定组织范围内的 Office 365 保留策略后，请转到 "安全 & 合规中心" 中的 "**日期调控** \> "**保留**页，编辑在上一步中标识的每个组织范围的保留策略，并将邮箱添加到排除的收件人列表中。 执行此操作会将用户的邮箱从保留策略中删除。 
 
 ### <a name="office-365-retention-labels"></a>Office 365 保留标签
 
@@ -218,7 +219,7 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 
 若要查看*ComplianceTagHoldApplied*属性的值，请在 Exchange Online PowerShell 中运行以下命令：
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -230,15 +231,15 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
   
 在[Security & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令，以确定与应用于邮箱的电子数据展示事例关联的保留。 使用您在步骤1中确定`UniH`的电子数据展示保留的 GUID （不包括前缀）。 请注意，第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。 
   
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold.Name
 ```
 
@@ -250,7 +251,7 @@ $CaseHold.Name
 
 在您可以删除步骤5中的项目之前，必须从邮箱中删除延迟保留。 首先，通过在 Exchange Online PowerShell 中运行以下命令来确定是否对邮箱应用延迟保留：
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
@@ -258,9 +259,10 @@ Get-Mailbox <username> | FL DelayHoldApplied
 
 如果*DelayHoldApplied*属性的值设置为**True**，请运行以下命令删除延迟保留：
 
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 请注意，您必须在 Exchange Online 中向您分配 "合法保留" 角色，才能使用*RemoveDelayHoldApplied*参数。
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>步骤5：删除 "可恢复的项目" 文件夹中的项目
@@ -284,7 +286,7 @@ Set-Mailbox <username> -RemoveDelayHoldApplied
 
 本示例将用户的 "可恢复的项目" 文件夹中的所有项目复制到组织的发现搜索邮箱中的一个文件夹中。 这样，你就可以在永久删除项目之前查看它们。
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
 ```
 
@@ -294,15 +296,15 @@ Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox
 
 本示例将用户的 "可恢复的项目" 文件夹中的所有项目复制到组织的发现搜索邮箱中的一个文件夹中，然后从用户的 "可恢复的项目" 文件夹中删除这些项目。
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
 ```
- 
+
 ### <a name="example-3"></a>示例 3
 
 本示例删除用户的 "可恢复的项目" 文件夹中的所有项目，而不将其复制到目标邮箱。 
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
 ```
 
@@ -312,41 +314,41 @@ Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
   
 本示例返回在 "Subject" 字段中包含特定短语的邮件。
   
-```
+```powershell
 SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
 ```
 
 本示例返回在指定日期范围内发送的邮件。
   
-```
+```powershell
 SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
 ```
- 
+
 本示例返回发送给指定人员的邮件。
 
-```
+```powershell
 SearchQuery 'to:garthf@alpinehouse.com'
 ```
-   
+
 ### <a name="verify-that-items-were-deleted"></a>验证项目是否已被删除
 
 若要验证是否已成功删除邮箱的 "可恢复的项目" 文件夹中的项目，请使用 Exchange Online PowerShell 中的**get-mailboxfolderstatistics** cmdlet 检查 "可恢复的项目" 文件夹中的邮件大小和数量。 您可以将这些统计信息与您在步骤1中收集的统计信息进行比较。 
   
 在中运行以下命令，以获取用户主邮箱中的 "可恢复的项目" 文件夹中的文件夹和子文件夹中的当前大小和项目总数。 
   
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-   
+
 运行以下命令以获取用户存档邮箱中的 "可恢复的项目" 文件夹中的文件夹和子文件夹中的项目大小和总数。 
 
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-  
+
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>步骤6：将邮箱还原到其以前的状态
 
-最后一步是将邮箱还原回其以前的配置。 这意味着重置您在步骤2中更改的属性，并重新应用您在步骤3中删除的保留。 具体包括：
+最后一步是将邮箱还原回其以前的配置。 这意味着重置您在步骤2中更改的属性，并重新应用您在步骤3中删除的保留。 这包括：
   
 - 将已删除项目的保留期更改回其以前的值。 或者，您可以仅将此设置保留为30天，即 Exchange Online 中的最大值。
     
@@ -365,29 +367,29 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
   
 1. 运行以下命令，将已删除项目的保留期更改回其原始值。 这假定上一个设置的时间不到30天;例如14天。 
     
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 14
     ```
-   
+
 2. 运行以下命令以重新启用单个项目恢复。
    
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $true
     ```
 
 3. 运行以下命令，将所有客户端访问方法重新启用到邮箱。
     
-    ```
+    ```powershell
     Set-CASMailbox <username> -EwsEnabled $true -ActiveSyncEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
     ```
-   
+
 4. 重新应用您在步骤3中删除的保留。 根据保留的类型，使用以下过程之一。
     
     **诉讼保留**
     
     运行以下命令以重新启用邮箱的诉讼保留。
     
-    ```
+    ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
@@ -409,21 +411,21 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     
 5. 运行以下命令，以允许托管文件夹助理再次处理邮箱。 如前所述，我们建议您在重新启用托管文件夹助理之前，请等待24小时后再重新应用365保留策略（并验证是否已就绪）。 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $false
     ```
-   
+
 6. 若要验证是否已将邮箱还原回其以前的配置，可以运行以下命令，然后将设置与您在步骤1中收集的设置进行比较。
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL ElcProcessingDisabled,InPlaceHolds,LitigationHoldEnabled,RetainDeletedItemsFor,SingleItemRecoveryEnabled
     ```
 
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
-  
-## <a name="more-information"></a>详细信息
+
+## <a name="more-information"></a>更多信息
 
 下面的表格介绍了在运行 Set-organizationconfig **cmdlet 或** **** cmdlet 时，如何根据*InPlaceHolds*属性中的值标识不同类型的保留。 有关更多详细信息，请参阅[如何识别 Exchange Online 邮箱上放置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)。
 

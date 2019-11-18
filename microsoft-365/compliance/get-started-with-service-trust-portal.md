@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 对于 Office 365、Azure 和 Dynamics 365 Online 规章合规性报告，若要查看第三方审核，请了解 Microsoft 如何使客户数据安全，以及如何在使用这些在线服务时遵守 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP 的合规性。
-ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 22968c23b1d521b8fd48e9eccd4679e0a6dd2ed2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074082"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685273"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -76,20 +76,20 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
   有关审核报告和指向 "**审核报告**" 页面的链接的信息也会显示在服务信任门户主页上。 
   
-- **合规性管理**器-合规性管理器是一项基于工作流的风险评估工具，可帮助您跟踪、分配和验证与 Microsoft 云服务（如 Office 365、Dynamics 365）相关的组织的合规性活动，以及Azure. 使用合规性管理器在云的共享职责模型中管理法规遵从性。 有关详细信息，请参阅[使用合规性管理器有助于在使用 Microsoft 云服务时满足数据保护和法规要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)。
+- **合规性管理**器-合规性管理器是一项基于工作流的风险评估工具，可帮助您跟踪、分配和验证与 Microsoft 云服务（如 Office 365、Dynamics 365 和 Azure）相关的组织的法规遵从性活动。 使用合规性管理器在云的共享职责模型中管理法规遵从性。 有关详细信息，请参阅[使用合规性管理器有助于在使用 Microsoft 云服务时满足数据保护和法规要求](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)。
 
-### <a name="industries--regions"></a>行业 & 区域
+### <a name="industries--regions"></a>行业和区域
 
 提供有关 Microsoft 云服务的行业和地区特定的合规性信息。
 
 - **行业**-提供特定于行业的登陆页面，以及 Microsoft 云服务如何帮助您的组织符合这些行业的标准和法规：
 
-    - 教育版
+    - 教育
     - 金融服务
     - 政府
     - 运行状况
     - 制造业
-    - 零售商
+    - 零售
 
 - **区域**-提供有关各国家/地区各定律的 Microsoft 云服务合规性的法律意见。 特定国家/地区包括澳大利亚、捷克共和国、德国、波兰、罗马尼亚、西班牙和英国。
   
@@ -112,7 +112,7 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 此新功能允许您保存（或*固定*）文档，以便您可以在 "我的库" 页面上快速访问它们。 您还可以设置通知，以便在更新 My Library 中的文档时，Microsoft 会向您发送一封电子邮件。 有关详细信息，请参阅本文中的[我的库](#my-library-1)部分。
 
-### <a name="admin"></a>Admin
+### <a name="admin"></a>管理员
 
 仅对全局管理员帐户可用的管理功能。 仅当以全局管理员身份登录时，此选项才可见。
   
@@ -169,4 +169,4 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
   
 你的反馈对我们非常重要。 单击页面底部的 "反馈" 按钮，向我们发送有关您所做的操作或不喜欢的内容，或者您可能需要改进我们的产品或产品功能的建议。
   
-![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![你有什么类型的反馈](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

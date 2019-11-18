@@ -10,12 +10,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 组织中的信息工作人员每天会处理大量的敏感信息。 "文档指纹"可识别贵组织中使用的标准表单，以便于您保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建一个概念。
-ms.openlocfilehash: 776410ec042e629e32fa6b03a2cb4fe0f2bacd2e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8ac8e0f44c71f0f52d362f6c6c84f7fc9e55face
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070108"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38685182"
 ---
 # <a name="document-fingerprinting"></a>文档指纹
 
@@ -51,7 +51,7 @@ ms.locfileid: "37070108"
   
 ### <a name="supported-file-types"></a>支持的文件类型
 
-文档指纹支持在邮件流规则（也称为传输规则）中受支持的相同文件类型。 有关受支持的文件类型的列表，请参阅[邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。 有关文件类型的快速说明：邮件流规则和文档指纹都不支持 .dotx 文件类型，因为这是 Word 中的模板文件，这样做可能会造成混淆。 当您在本主题或其他文档指纹主题中看到"template"一词时，它是指您构建为标准模板的文档，而非模板文件类型。
+文档指纹支持在邮件流规则（也称为传输规则）中受支持的相同文件类型。 有关受支持的文件类型的列表，请参阅[邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。 有关文件类型的快速说明：邮件流规则和文档指纹都不支持 .dotx 文件类型，因为这是 Word 中的模板文件，这样做可能会造成混淆。 当您在本主题或其他文档指纹主题中看到"template"一词时，它是指您构建为标准模板的文档，而非模板文件类型。
   
 #### <a name="limitations-of-document-fingerprinting"></a>文档指纹的限制
 
@@ -65,18 +65,18 @@ ms.locfileid: "37070108"
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>使用 PowerShell 创建基于文档指纹的分类规则包
 
-请注意，当前可以在安全&amp;合规中心中使用 PowerShell 创建文档指纹。 若要进行连接，请参阅[connect To Security & 合规性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+请注意，当前可以在安全&amp;合规中心中使用 PowerShell 创建文档指纹。 若要进行连接，请参阅[connect To Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
-DLP 使用分类规则包来检测敏感内容。 若要创建基于文档指纹的分类规则包，请使用**DlpFingerprint**和**DlpSensitiveInformationType** cmdlet。 由于**DlpFingerprint**的结果不会存储在数据分类规则的外部，因此您始终在相同的**DlpFingerprint**和**DlpSensitiveInformationType**或**DlpSensitiveInformationType**中运行新的PowerShell 会话。 以下示例基于文件 C:\My Documents\Contoso Employee Template.docx 创建新的文档指纹。 将新的指纹存储为变量，以便您可以在同一 PowerShell 会话中将其与**DlpSensitiveInformationType** cmdlet 一起使用。 
+DLP 使用分类规则包来检测敏感内容。 若要创建基于文档指纹的分类规则包，请使用**DlpFingerprint**和**DlpSensitiveInformationType** cmdlet。 由于**DlpFingerprint**的结果不会存储在数据分类规则的外部，因此您始终在同一 PowerShell 会话中运行**DlpFingerprint**和**DlpSensitiveInformationType**或**DlpSensitiveInformationType**等新的结果。 以下示例基于文件 C:\My Documents\Contoso Employee Template.docx 创建新的文档指纹。 将新的指纹存储为变量，以便您可以在同一 PowerShell 会话中将其与**DlpSensitiveInformationType** cmdlet 一起使用。
   
-```
+```powershell
 $Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte -ReadCount 0
 $Employee_Fingerprint = New-DlpFingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
 ```
 
 现在，我们可以一起创建名为"Contoso Employee Confidential"的新数据分类规则，该规则使用文件 C:\My Documents\Contoso Customer Information Form.docx 的文档指纹。
   
-```
+```powershell
 $Customer_Form = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte -ReadCount 0
 $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
 New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
@@ -86,15 +86,14 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
   
 最后，将 "Contoso Customer 保密" 数据分类规则包添加到安全&amp;合规中心中的 DLP 策略。 本示例将一个规则添加到名为 "ConfidentialPolicy" 的现有 DLP 策略中。
 
-```
+```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-您还可以在 Exchange Online 中使用邮件流规则中的数据分类规则包，如下面的示例所示。 若要运行此命令，首先需要[连接到 Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 另请注意，规则包从安全&amp;合规中心同步到 Exchange 管理中心需要花费一些时间。
+您还可以在 Exchange Online 中使用邮件流规则中的数据分类规则包，如下面的示例所示。 若要运行此命令，首先需要[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 另请注意，规则包从安全&amp;合规中心同步到 Exchange 管理中心需要花费一些时间。
   
-```
+```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
-
 ```
 
 DLP 现在检测与 Contoso Customer 表单的 .docx 文档指纹相匹配的文档。

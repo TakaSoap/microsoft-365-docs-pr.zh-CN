@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 您可以在导出电子数据展示搜索结果时更改下载到您的计算机上的 PST 文件的默认大小。
-ms.openlocfilehash: 82a3d80cae04cd8d08b126c800ec2b4a1995f262
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3bba45ce336b143ed948db384673f0a1a5a456f
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074450"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685251"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>导出电子数据展示搜索结果时更改 PST 文件的大小
 
@@ -33,7 +33,7 @@ ms.locfileid: "37074450"
     
 2. 使用文件名后缀 .reg 将以下文本保存到窗口注册表文件;例如，PstExportSize。 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "PstSizeLimitInBytes"="1073741824"

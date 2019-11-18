@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: 在您的本地计算机上编辑 Windows 注册表，以便在从 Office 365 中的安全性 & 合规性中心导出内容搜索结果时禁用报告。 禁用这些报告可加快下载时间并节省磁盘空间。
-ms.openlocfilehash: f6abcf8afe70bc6ce04f0f9343e28879f7fed885
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f9b999eaf3f1924012c9d4899b0e234f0893fc2c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074129"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685294"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>导出内容搜索结果时禁用报告
 
@@ -34,7 +34,7 @@ ms.locfileid: "37074129"
     
       使用文件名后缀 .reg 将以下文本保存到 Windows 注册表文件中;例如，DisableResultsCsv。
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
@@ -43,7 +43,7 @@ ms.locfileid: "37074129"
     
       使用文件名后缀 .reg 将以下文本保存到 Windows 注册表文件中;例如，DisableManifestXml。
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
@@ -68,7 +68,7 @@ ms.locfileid: "37074129"
     
         在记事本中打开 DisableResultsCsv 文件，将值`False`更改为`True`，然后保存文件。 例如，在编辑文件后，其外观如下所示：
     
-        ```
+        ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
@@ -77,7 +77,7 @@ ms.locfileid: "37074129"
     
         在记事本中打开 DisableManifestXml 文件，将值`False`更改为`True`，然后保存文件。 例如，在编辑文件后，其外观如下所示：
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
@@ -91,7 +91,6 @@ ms.locfileid: "37074129"
     注册表编辑器将显示一条消息，指出已成功将设置添加到注册表中。
   
 ## <a name="frequently-asked-questions-about-disabling-export-reports"></a>有关禁用导出报告的常见问题
-<a name="faqs"> </a>
 
  **什么是结果 .csv 和清单 .xml 报告？**
   

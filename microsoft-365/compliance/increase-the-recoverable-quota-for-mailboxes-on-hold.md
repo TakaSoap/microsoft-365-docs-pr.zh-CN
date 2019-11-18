@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '启用存档邮箱并打开自动扩展存档，以增加 Office 365 中的 "可恢复的项目" 文件夹的大小。 '
-ms.openlocfilehash: 4c2e36dae3c8677579569d55a9c5b88efb5c54e5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074063"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685279"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 
@@ -40,12 +40,12 @@ ms.locfileid: "37074063"
   
 当置于保留状态的邮箱的主邮箱"可恢复的项目"文件夹的存储配额接近其限额时，可以执行以下操作：
   
-- **启用存档邮箱并打开自动扩展存档**-您只需启用存档邮箱，然后在 Exchange 中打开自动扩展存档功能，即可为 "可恢复的项目" 文件夹启用无限制的存储容量隐私声明. 这将导致主邮箱中的 "可恢复的项目" 文件夹的 110 GB 和用户存档中 "可恢复的项目" 文件夹的存储容量不受限制。 请参阅如何：[在安全 & 合规性中心中启用存档邮箱](enable-archive-mailboxes.md)，以及如何[在 Office 365 中启用无限存档](enable-unlimited-archiving.md)。
+- **启用存档邮箱并打开自动扩展存档**-您只需启用存档邮箱，然后在 Exchange Online 中打开自动扩展存档功能，即可为 "可恢复的项目" 文件夹启用无限存储容量。 这将导致主邮箱中的 "可恢复的项目" 文件夹的 110 GB 和用户存档中 "可恢复的项目" 文件夹的存储容量不受限制。 请参阅如何：[在安全 & 合规性中心中启用存档邮箱](enable-archive-mailboxes.md)，以及如何[在 Office 365 中启用无限存档](enable-unlimited-archiving.md)。
     
     > [!NOTE]
     > 为"可恢复的项目"文件夹存储配额接近上限的邮箱启用存档功能后，可能需要运行托管文件夹助理以自动触发助理处理邮箱，以便将过期项目移至存档邮箱的"可恢复的项目"文件夹。 有关说明，请参阅[步骤 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 。 注意，用户邮箱中的其他项目可能会移至新的存档邮箱。 请考虑告诉用户在启用存档邮箱后可能会发生这种情况。 
   
-- 在**保留时为邮箱创建自定义保留策略**，除了在诉讼保留或就地保留中启用邮箱的存档邮箱和自动扩展存档外，你可能还需要为上的邮箱创建自定义保留策略同时. 你可以将保留策略应用于保留的邮箱，此策略与应用到未保留邮箱的"默认 MRM 策略"有所不同。 这样就可以应用专为置于保留状态的邮箱设计的保留标记。 其中包括为"可恢复的项目"文件夹创建新的保留标记。 
+- 在**保留时为邮箱创建自定义保留策略**，除了在诉讼保留或就地保留中启用邮箱的存档邮箱和自动扩展存档外，您可能还需要为处于保留状态的邮箱创建自定义保留策略。 你可以将保留策略应用于保留的邮箱，此策略与应用到未保留邮箱的"默认 MRM 策略"有所不同。 这样就可以应用专为置于保留状态的邮箱设计的保留标记。 其中包括为"可恢复的项目"文件夹创建新的保留标记。 
     
 本主题的其余部分介绍了为处于保留状态的邮箱创建自定义保留策略的分步过程。
   
@@ -65,13 +65,13 @@ ms.locfileid: "37074063"
     
 2. 运行以下命令，为 "可恢复的项目" 文件夹创建一个新的 RPT： 
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
     ```
 
     例如，以下命令为 "保留的邮箱为30天" 的 "可恢复的项目" 文件夹创建一个 RPT，保留期为30天。 这意味着项目已在 "可恢复的项目" 文件夹中的30天后，它将移至用户存档邮箱中的 "可恢复的项目" 文件夹中。
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
     ```
 
@@ -118,17 +118,17 @@ ms.locfileid: "37074063"
   
 运行以下命令，为处于保留状态的邮箱创建新的保留策略。 
   
-```
+```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
 
 ```
 
 例如，以下命令将创建在上图中显示的保留策略和链接的保留标记。
   
-```
+```powershell
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
-  
+
 ## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>步骤3：将新的保留策略应用于处于保留状态的邮箱
 
 最后一步是将您在步骤2中创建的新的保留策略应用于组织中的 "保留中的邮箱"。 您可以使用 EAC 或 Exchange Online PowerShell 将保留策略应用于单个邮箱或多个邮箱。 
@@ -161,27 +161,27 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
   
 本示例将新的保留策略应用于 Pilar Pinilla 的邮箱。
   
-```
+```powershell
 Set-Mailbox "Pilar Pinilla" -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 本示例将新的保留策略应用于组织中处于诉讼保留状态的所有邮箱。
   
-```
+```powershell
 $LitigationHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'}
 ```
 
-```
+```powershell
 $LitigationHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 本示例将新的保留策略应用于组织中的 "就地保留" 中的所有邮箱。
   
-```
+```powershell
 $InPlaceHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null}
 ```
 
-```
+```powershell
 $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
@@ -189,39 +189,39 @@ $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for M
   
 下面是一些示例，用于验证前面示例中的命令是否将 "MRM Policy for 邮箱保留" 保留策略应用于诉讼保留中的邮箱和就地保留中的邮箱。
   
-```
+```powershell
 Get-Mailbox "Pilar Pinilla" | Select RetentionPolicy
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'} | FT DisplayName,RetentionPolicy -Auto
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | FT DisplayName,RetentionPolicy -Auto
 ```
-  
+
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>Optional步骤4：运行托管文件夹助理以应用新的保留设置
 
 将新的保留策略应用于保留邮箱后，托管文件夹助理在 Exchange Online 中最长可能需要7天才能使用新的保留策略中的设置处理这些邮箱。 您可以使用**start-managedfolderassistant** cmdlet 手动触发助理以处理应用新的保留策略的邮箱，而不是等待托管文件夹助理运行。 
   
 运行以下命令以启动 Pilar Pinilla 的邮箱的托管文件夹助理。
   
-```
+```powershell
 Start-ManagedFolderAssistant "Pilar Pinilla"
 ```
 
 运行以下命令以启动处于保留状态的所有邮箱的托管文件夹助理。
   
-```
+```powershell
 $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlaceHolds -ne $null) -or ($_.LitigationHoldEnabled -eq "True")}
 ```
 
-```
+```powershell
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 启用用户的存档邮箱后，请考虑告诉用户其邮箱中的其他项目（不仅仅是 "可恢复的项目" 文件夹中的项目）可能会被移至存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含一个保留标记（名为 "默认2年移动到存档"），该保留标记将项目移至存档邮箱，然后在邮件传递到邮箱或由 "创建时间"user. 有关详细信息，请参阅[Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     

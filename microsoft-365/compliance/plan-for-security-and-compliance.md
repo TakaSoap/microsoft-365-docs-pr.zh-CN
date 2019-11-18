@@ -3,7 +3,7 @@ title: 在 Office 365 &amp;中规划安全合规性
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 3/15/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 用于规划安全性和合规性的登录页
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3619a5e22a5bc957b001dd4f42a9569a7543e6b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 86eef432f30ea9a437f0857f693d62eb23f4ba8d
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075352"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38685187"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>在 Office 365 &amp;中规划安全合规性
 
@@ -51,7 +51,7 @@ ms.locfileid: "37075352"
 
 查看并规划按三个级别的保护组织的文件保护功能。
   
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>第5步：利用 Microsoft 365 安全&amp;合规中心
 
@@ -59,9 +59,9 @@ ms.locfileid: "37075352"
   
 - [转到 Office 365 安全&amp;合规中心](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [向用户授予对 Office 365 安全&amp;合规中心的访问权限](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [向用户授予对 Office 365 安全&amp;合规中心的访问权限](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步骤6：将端到端安全方案用作起始点
 
@@ -69,16 +69,14 @@ ms.locfileid: "37075352"
   
 - [安全电子邮件策略和配置](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
-- [Microsoft 云中的 Contoso](http://aka.ms/cloudarchcontoso)
+- [Microsoft 云中的 Contoso](https://aka.ms/cloudarchcontoso)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 管理中心和仪表板
 
 在这些管理中心和仪表板中配置安全和合规性设置，以保护 Office 365 环境
   
-|**订购**|**管理 URL**|**仪表板和管理中心**|
+|**订阅**|**管理 URL**|**仪表板和管理中心**|
 |:-----|:-----|:-----|
 |Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理中心  <br/>  Security &amp; Compliance Center  <br/>  Exchange 管理中心  <br/>  SharePoint 管理员中心和 OneDrive for Business 管理中心  <br/> |
 |企业移动性 + 安全性  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 移动应用程序管理  <br/>  Microsoft Intune  <br/> |
 |企业移动性 + 安全性  <br/> |`https://portal.cloudappsecurity.com`  <br/> | 云应用安全  <br/> |
-   
-

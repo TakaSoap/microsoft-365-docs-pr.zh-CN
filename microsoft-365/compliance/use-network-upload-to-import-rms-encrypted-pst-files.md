@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: 了解如何使用网络上传将 RMS 加密的 PST 文件导入 Office 365 中的用户邮箱。
-ms.openlocfilehash: e14c5a7260bc8b2092075dd2ab711f4da2d3b9c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c31658ead08fd1c72447f1182af28c32db421842
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076085"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685339"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>使用网络上载将 RMS 加密的 PST 文件导入到 Office 365
 
@@ -51,7 +51,7 @@ ms.locfileid: "37076085"
   
 有关将数据导入到 Office 365 的详细信息，请参阅将[组织 PST 文件导入到 office 365 概述](importing-pst-files-to-office-365.md)。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须在 Exchange Online 中分配 "邮箱导入导出" 角色，才能将 PST 文件导入到 Office 365 邮箱。 默认情况下，此角色不会分配给 Exchange Online 中的任何角色组。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 有关详细信息，请参阅[管理角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的 "向角色组添加角色" 或 "创建角色组" 部分。
     
@@ -110,13 +110,13 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
     
 2. 运行以下命令来设置 RMS 密钥共享 URL。
     
-    ```
+    ```powershell
     Set-IRMConfiguration -RMSOnlineKeySharingLocation <RMS key sharing location>
     ```
 
     使用下表确定正确的 RMS 密钥共享您组织所处位置。
     
-    |**Location**|**RMS 关键共享位置**|
+    |**位置**|**RMS 关键共享位置**|
     |:-----|:-----|
     |北美  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |欧盟  <br/> | `https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
@@ -129,13 +129,13 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
   
     例如，此命令在 Exchange Online 中为位于北美的客户配置 RMS Online 关键共享位置。
     
-    ```
+    ```powershell
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
 3. 运行以下命令，将受信任的发布域（TPD）从 RMS Online 导入到 Office 365 组织中。 
     
-    ```
+    ```powershell
     Import-RMSTrustedPublishingDomain -RMSOnline -Name "RMS Online"
     ```
 
@@ -143,7 +143,7 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
     
 4. 运行以下命令，为 Office 365 组织启用 IRM。
     
-    ```
+    ```powershell
     Set-IRMConfiguration -InternalLicensingEnabled $true
     ```
 
@@ -151,7 +151,7 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
 
 本节的最后一步是下载权限管理服务 (RMS) 客户端 2.1。 此软件可帮助保护对 Azure RMS 的访问，并保护通过使用 Azure RMS 的应用程序流动的信息。 在您将用于在步骤5中加密和上载 PST 文件的同一台计算机上安装 RMS 客户端。 
   
-1. 下载[权限管理服务客户端 2.1](https://www.microsoft.com/en-us/download/details.aspx?id=38396)。
+1. 下载[权限管理服务客户端 2.1](https://www.microsoft.com/download/details.aspx?id=38396)。
     
 2. 运行 Active Directory 权限管理服务客户端 2.1 向导来安装客户端。
 
@@ -163,7 +163,7 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
     
 2. 运行下面的命令以连接到 Microsoft Online 服务。
     
-    ```
+    ```powershell
     Connect-MsolService
     ```
 
@@ -171,7 +171,7 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
     
 4. 运行以下命令以生成加密密钥（也称作“对称密钥”）。 您将通过创建新的 PST 加密主体来执行此操作。
     
-    ```
+    ```powershell
     New-MsolServicePrincipal -DisplayName PstEncryptionPrincipal
     ```
 
@@ -192,7 +192,7 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
   
 1. 在用于 Windows PowerShell 的 Azure Active Directory 模块（连接到 Microsoft Online 服务）中，运行以下命令以连接到您的 Office 365 组织中的 Azure RMS 服务。
     
-    ```
+    ```powershell
     Connect-AadrmService 
     ```
 
@@ -200,7 +200,7 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
     
 3. 运行以下命令以显示 Office 365 组织中的 Azure RMS 服务的租户 ID。
     
-    ```
+    ```powershell
     Get-AadrmConfiguration | FL BPOSId
     ```
 
@@ -208,7 +208,7 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
     
 4. 运行以下命令以显示 Azure RMS 服务的许可位置。
     
-    ```
+    ```powershell
     Get-AadrmConfiguration | FL LicensingIntranetDistributionPointUrl
     ```
 
@@ -260,7 +260,7 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
     
 3. 运行以下命令，将 PST 文件加密并上载到 Office 365。
     
-    ```
+    ```powershell
     O365ImportTool.exe /srcdir:<Location of PST files> /protect-rmsserver:<RMS licensing location> /protect-tenantid:<BPOSId> /protect-key:<Symmetric key> /transfer:upload /upload-dest:<Network upload URL> /upload-destSAS:<SAS key>
     ```
 
@@ -273,13 +273,13 @@ Azure RMS 默认情况下处于禁用状态，但你或组织中的其他管理�
     | `/protect-tenantid:` <br/> |指定你的 Azure RMS 组织的标识。 使用您在步骤 3 `BPOSId`中获取的属性的值。  <br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
     | `/protect-key:` <br/> |指定您在步骤 2 中获得的对称密钥。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
     | `/transfer:` <br/> |指定您通过网络上载 PST 文件还是将它们传送到硬盘上。 该值`upload`指示你正在通过网络上传文件。 该值`drive`指示你要在硬盘驱动器上传送 pst。  <br/> | `/transfer:upload` <br/> |
-    | `/upload-dest:` <br/> |指定要将 PST 文件上载到的 Office 365 中的目标;这是你的组织的 Azure 存储位置。 此参数的值由您在步骤4中复制的 SAS URL 中的网络上载 URL 组成。 请务必用双引号 (" ") 引住此参数的值。  <br/><br/> **提示：** Optional您可以在 Azure 存储位置指定一个子文件夹，将加密的 PST 文件上载到。 为此，可在网络上载 URL 中添加子文件夹位置（在 "ingestiondata" 之后）。 第一个示例未指定子文件夹;这意味着 Pst 将被上载到 Azure 存储位置的根（名为*ingestiondata* ）。 第二个示例将 PST 文件上载到 Azure 存储位置中的一个子文件夹（名为*EncryptedPSTs* ）。           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> 或  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
+    | `/upload-dest:` <br/> |指定要将 PST 文件上载到的 Office 365 中的目标;这是你的组织的 Azure 存储位置。 此参数的值由您在步骤4中复制的 SAS URL 中的网络上载 URL 组成。 请务必用双引号 (" ") 引住此参数的值。  <br/><br/> **提示：** （可选）您可以在 Azure 存储位置指定一个子文件夹，将加密的 PST 文件上载到。 为此，可在网络上载 URL 中添加子文件夹位置（在 "ingestiondata" 之后）。 第一个示例未指定子文件夹;这意味着 Pst 将被上载到 Azure 存储位置的根（名为*ingestiondata* ）。 第二个示例将 PST 文件上载到 Azure 存储位置中的一个子文件夹（名为*EncryptedPSTs* ）。           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> 或  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
     | `/upload-destSAS:` <br/> |为你的组织指定 SAS 密钥。 此参数的值由您在步骤4中复制的 SAS URL 中的 SAS 密钥组成。 请注意，SA 密钥中的第一个字符是问号（"？"）。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/recurse` <br/> |此可选开关指定递归模式，以便 O365importtool.zip 工具将复制位于由`/srcdir:`参数指定的源目录中的子文件夹中的 pst 文件。  <br/><br/> **注意：** 如果包含此开关，则在上载后，在 Azure 存储位置中，子文件夹中的 PST 文件将具有不同的文件路径。 您必须在您在步骤 7 中创建的 CSV 文件中指定确切的文件路径名。           | `/recurse` <br/> |
    
     以下是对每个参数使用实际值的 O365ImportTool.exe 工具的语法示例：
     
-    ```
+    ```powershell
     O365ImportTool.exe /srcdir:\\FILESERVER01\PSTs /protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing" /protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b  /protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=" /transfer:upload /upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata" /upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
     ```
 
@@ -339,7 +339,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
 2. 打开或将 CSV 文件保存到您的本地计算机。下面的示例显示已完成的 PST 导入映射文件（在记事本中打开）。使用 Microsoft Excel 编辑 CSV 文件变得容易得多。
     
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst.pfile,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst.pfile,annb@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
@@ -410,7 +410,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
 13. 在详细信息窗格中，单击“查看详细信息”**** 以获取所选作业的最新状态。 
  
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 为什么要将 PST 文件导入 Office 365？
     
@@ -434,7 +434,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
 - 下面是在步骤2、3和4中获取的键、Id 和 Url 的示例。 此示例还包含在 O365importtool.zip 工具中运行的命令的语法，用于将 PST 文件加密并上载到 Office 365。 一定要采取预防措施来保护这些文件，就像保护密码或其他与安全相关的信息一样。
     
-  ```
+  ```text
   Symmetric key: l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=
 
   BPOSId: 42745b33-2a5c-4726-8a2a-ca43caa0f74b

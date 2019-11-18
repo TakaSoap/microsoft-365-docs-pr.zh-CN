@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/11/2019
+ms.date: ''
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 标识敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）或不当/露骨语言时。虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小受限，且必须修改 XML 才能创建或编辑它们。借助关键字词典，可以更大规模地轻松管理关键字（每个词典最多支持 100,000 个关键字）。
-ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 73ca1e83f716af076f99b1bcb8fba4fbb6e69d9d
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074326"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38685179"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字词典
 
-Office 365 中的数据丢失防护（DLP）可以识别、监视和保护您的敏感信息。 识别敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）时，或者不恰当或明确的语言。 虽然您可以在敏感信息类型中创建关键字列表，但关键字列表的大小受到限制，并需要修改 XML 以创建或编辑它们。 关键字字典提供了更简单的关键字管理和更大的规模，支持每个字典最多为100000个术语。
+Office 365 中的数据丢失防护（DLP）可以识别、监视和保护您的敏感信息。识别敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）时，或者不恰当或明确的语言。虽然您可以在敏感信息类型中创建关键字列表，但关键字列表的大小受到限制，并需要修改 XML 以创建或编辑它们。关键字字典提供了更简单的关键字管理和更大的规模，支持每个字典最多为100000个术语。
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>创建关键字词典的基本步骤
 
@@ -73,13 +73,13 @@ Office 365 中的数据丢失防护（DLP）可以识别、监视和保护您的
     
 3. 运行下面的 cmdlet，以将文件读入变量中：
     
-    ```
+    ```powershell
     $fileData = Get-Content <filename> -Encoding Byte -ReadCount 0
     ```
 
 4. 运行下面的 cmdlet，以创建词典：
     
-    ```
+    ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
     ```
 
@@ -91,7 +91,7 @@ Office 365 中的数据丢失防护（DLP）可以识别、监视和保护您的
 
 首先，检索词典对象：
   
-```
+```powershell
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
@@ -99,7 +99,7 @@ $dict = Get-DlpKeywordDictionary -Name "Diseases"
 
 在修改字典之前，需要使用`.split(',')`方法将术语字符串重新转换为数组。 然后，使用`.trim()`方法清除关键字之间不需要的空格，只保留要使用的关键字。 
   
-```
+```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
@@ -109,71 +109,68 @@ $terms = $dict.KeywordDictionary.split(',').trim()
   
 运行命令 `$terms`，以显示当前关键字列表。此命令的输出如下所示： 
   
-```
-aarskog's syndrome
-abandonment
-abasia
-abderhalden-kaufmann-lignac
-abdominalgia
-abduction contracture
-abetalipoproteinemia
-abiotrophy
-ablatio
-ablation
-ablepharia
-abocclusion
-abolition
-aborter
-abortion
-abortus
-aboulomania
-abrami's disease
-```
+`aarskog's syndrome`
+`abandonment`
+`abasia`
+`abderhalden-kaufmann-lignac`
+`abdominalgia`
+`abduction contracture`
+`abetalipoproteinemia`
+`abiotrophy`
+`ablatio`
+`ablation`
+`ablepharia`
+`abocclusion`
+`abolition`
+`aborter`
+`abortion`
+`abortus`
+`aboulomania`
+`abrami's disease`
 
 运行下面的命令，以指定要删除的关键字：
   
-```
+```powershell
 $termsToRemove = @('abandonment', 'ablatio')
 ```
 
 运行下面的命令，以实际删除列表中的关键字：
   
-```
+```powershell
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
 运行命令 `$updatedTerms`，以显示更新后的关键字列表。此命令的输出如下所示（指定关键字已遭删除）： 
   
-```
-aarskog's syndrome
-abasia
-abderhalden-kaufmann-lignac
-abdominalgia
-abduction contracture
-abetalipo proteinemia
-abiotrophy
-ablation
-ablepharia
-abocclusion
-abolition
-aborter
-abortion
-abortus
-aboulomania
-abrami's disease
+`aarskog's syndrome`
+`abasia`
+`abderhalden-kaufmann-lignac`
+`abdominalgia`
+`abduction contracture`
+`abetalipo proteinemia`
+`abiotrophy`
+`ablation`
+`ablepharia`
+`abocclusion`
+`abolition`
+`aborter`
+`abortion`
+`abortus`
+`aboulomania`
+`abrami's disease`
 ```
 
-现在，在本地保存词典，并添加其他一些关键字。可直接在 PowerShell 中添加关键字，但仍需要在本地导出文件，以确保它是使用 Unicode 编码进行保存并包含 BOM。
+Now save the dictionary locally and add a few more terms. You could add the terms right here in PowerShell, but you'll still need to export the file locally to ensure it's saved with Unicode encoding and contains the BOM.
   
-运行下面的命令，以在本地保存词典：
+Save the dictionary locally by running the following:
   
-```
+```powershell
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
 现在只需打开文件，添加其他关键字，并使用 Unicode 编码 (UTF-16) 保存文件即可。现在将上传更新后的关键字，并就地更新词典。
   
-```
+```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
@@ -183,7 +180,7 @@ PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "
 
 关键字字典可用作自定义敏感信息类型的匹配要求的一部分，也可用作敏感信息类型本身。 两者都要求您创建[自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。 按照链接的文章中的说明操作，以创建敏感的信息类型。 拥有 XML 之后，你将需要使用字典的 GUID 标识符来使用它。
   
-```
+```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
         <IdMatch idRef=". . ."/>
@@ -193,27 +190,25 @@ PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "
 
 若要获得词典标识，请运行下面的命令，并复制 **Identity** 属性值： 
   
-```
+```powershell
 Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
 此命令的输出如下所示：
   
-```
-RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255
-Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f
-Name              : Diseases
-Description       : Names of diseases and injuries from ICD-10-CM lexicon
-KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo
-                    proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,
-                    abrami's disease, abramo
-IsValid           : True
-ObjectState       : Unchanged
-```
+`RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255`
+`Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f`
+`Name              : Diseases`
+`Description       : Names of diseases and injuries from ICD-10-CM lexicon`
+`KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo` `proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,`
+                    `abrami's disease, abramo`
+`IsValid           : True`
+`ObjectState       : Unchanged`
+
 
 将标识粘贴到自定义敏感信息类型的 XML 中，并上传它。此时，词典会出现在敏感信息类型列表中，你可以直接在策略中使用它，同时指定必须匹配多少个关键字。
   
-```
+```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f" />
@@ -226,5 +221,3 @@ ObjectState       : Unchanged
       </Resource>
     </LocalizedStrings>
 ```
-
-

@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 5b3438537e2936fa140052c6869f84937e103746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074088"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685270"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -74,7 +75,7 @@ ms.locfileid: "37074088"
 
 ## <a name="searchable-site-properties"></a>可搜索网站属性
 
-下表列出了一些 SharePoint 和 OneDrive for business 属性，可以使用安全性 & 合规性中心中的内容搜索功能或使用**new-compliancesearch**或 new-compliancesearch 来搜索这些属性。 **** cmdlet。 该表包括属性的一个示例：每个属性的_值_语法和示例返回的搜索结果的说明。 
+下表列出了一些 SharePoint 和 OneDrive for business 属性，可以使用安全 & 合规性中心中的内容搜索功能或使用**new-compliancesearch**或**new-compliancesearch** cmdlet 搜索这些属性。 该表包括属性的一个示例：每个属性的_值_语法和示例返回的搜索结果的说明。 
   
 有关可搜索的 SharePoint 属性的完整列表，请参阅[sharepoint 中的已爬网和托管属性概述](https://go.microsoft.com/fwlink/p/?LinkId=331599)。 可以在可**查询**的列中搜索 **"是" 标记为 "是"** 的属性。 
   
@@ -92,7 +93,7 @@ ms.locfileid: "37074088"
 |ModifiedBy|上次更改项目的人员。 请务必对此属性使用用户的显示名称。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
 |Path|SharePoint 或 OneDrive for Business 网站中特定网站的路径（URL）。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目，您必须添加/\*到指定网站的 URL;例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用该`Path`属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站（和网站中的文件夹）中的文档，其中包含文件名中的 "保密" 一词。|
 |SharedWithUsersOWSUser|与指定用户共享并显示在用户的 OneDrive for business 网站中的 "**与我共享**" 页上的文档。 这些文档已与组织中的其他人员明确与指定的用户共享。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档将从与指定用户共享文档的人员的原始内容位置导出。 有关详细信息，请参阅[搜索组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都将返回所有已与 Garth Fort 显式共享且显示在 Garth Fort 的 OneDrive for business 帐户中的 "**与我共享**" 页上的内部文档。|
-|Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
+|站点|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
 |标题|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
 |||||
@@ -205,7 +206,7 @@ ms.locfileid: "37074088"
 |类型|电子邮件项目的邮件类属性。 这是 ItemClass 电子邮件属性的相同属性。 它也是一个多值条件。 因此，若要选择多个邮件类，请按住**CTRL**键，然后在下拉列表中单击要添加到条件的两个或多个邮件类。 在列表中选择的每个邮件类别将在相应的搜索查询中通过**OR**运算符逻辑连接。  <br/> 有关 Exchange 使用的邮件类别（及其相应的邮件类 ID）的列表，可以在**邮件类**列表中选择，请参阅[项目类型和邮件类](https://go.microsoft.com/fwlink/?linkid=848143)。|
 |Received|收件人接收电子邮件的日期。 此属性与“Received”电子邮件属性相同。|
 |收件人|电子邮件中的所有收件人字段。 这些字段分别为 "收件人"、"抄送" 和 "密件抄送"。|
-|Sender|电子邮件的发件人。|
+|发件人|电子邮件的发件人。|
 |Sent|发件人发送电子邮件的日期。 此属性与“Sent”电子邮件属性相同。|
 |Subject|电子邮件主题行中的文本。|
 |To|"收件人" 字段中的电子邮件的收件人。|
@@ -228,7 +229,7 @@ ms.locfileid: "37074088"
 
 当您添加一个条件时，您可以选择与该条件的属性类型相关的运算符。下表描述了与条件一起使用的运算符，并列出了在搜索查询中使用的等效项。
   
-|**运算符**|**查询等效项**|**说明**|
+|**Operator**|**查询等效项**|**说明**|
 |:-----|:-----|:-----|
 |段后|`property>date`|使用日期条件。返回在指定日期后发送、接收或修改的项。 |
 |Before|`property<date`|使用日期条件。返回在指定日期前发送、接收或修改的项。|
@@ -277,7 +278,7 @@ ms.locfileid: "37074088"
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>示例
 
-下面的示例展示了包含条件的搜索查询的基于 GUI 的版本、搜索查询语法，这些语法显示在所选搜索的细节窗格中（也由**new-compliancesearch** cmdlet 返回），逻辑对应的 KQL 查询。 
+下面的示例展示了包含条件的搜索查询的基于 GUI 的版本、搜索查询语法，这些语法显示在所选搜索的细节窗格（也由**new-compliancesearch** cmdlet 返回）和相应的 KQL 查询的逻辑中。 
   
 #### <a name="example-1"></a>示例 1
 
@@ -379,13 +380,13 @@ ms.locfileid: "37074088"
 
 您可以使用以下关键字查询专门搜索 Skype for Business 对话中的内容：
 
-```
+```powershell
 kind:im
 ```
 
 以前的搜索查询还会从 Microsoft 团队中返回聊天。 若要防止出现这种情况，您可以通过使用以下关键字查询缩小搜索结果，以仅包括 Skype for Business 对话：
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
@@ -393,7 +394,7 @@ kind:im AND subject:conversation
 
 若要搜索在特定日期范围内发生的 Skype for Business 对话，请使用以下关键字查询：
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从 LinkedIn 公司页面导入到 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的合规性。
-ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1117eb6b7c756519ad07cafc52a635d65999d9e0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074505"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685250"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>设置连接器以存档 Office 365 中的 LinkedIn 数据（预览）
 
@@ -65,20 +65,16 @@ ms.locfileid: "37074505"
 
 若要查看更多详细信息，请单击 "**存档第三方数据**" 页上的列表中的连接器以显示弹出页面。 在 "**状态**" 下，显示的日期范围表示创建连接器时选择的年龄筛选器。 
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 将 LinkedIn 项目导入到 Office 365 中的存储邮箱的 "收件箱" 文件夹中。 它们显示为电子邮件。 邮件发件人的显示名称是 "LinkedIn 公司" 页面的名称。 发件人的实际电子邮件地址是存储邮箱的电子邮件地址。 公司页面的名称也会预先追加到主题行。 
 
 - 由于以前的行为，在使用 Microsoft 电子数据`from`展示`subject`工具搜索在 Office 365 中存档的 LinkedIn 项目时，可以搜索或电子邮件属性。 例如，如果公司页面的名称是 "Contoso Company Page"，则可以在关键字搜索查询中使用下列*属性之一：值*对：
    
-   ```
-   from:"Contoso Company Page"
-   ```
+   > 发件人： "Contoso Company Page"
 
     或
 
-   ```
-   subject:"Contoso Company Page"
-   ```
+   > 主题： "Contoso Company Page"
 
 - 若要更轻松地查找或管理导入到 Office 365 的 LinkedIn 项目，存储邮箱的所有者（或任何被分配了 FullAccess 权限的人）可以设置收件箱规则，将项目从 LinkedIn 公司页面移动到特定文件夹。 如果存储邮箱用于存档从不同第三方数据源导入的项目，这将非常有用。 例如，您可以创建收件箱规则，将 "主题" 字段中包含特定 "LinkedIn 公司" 页面的所有项目移到特定文件夹中。

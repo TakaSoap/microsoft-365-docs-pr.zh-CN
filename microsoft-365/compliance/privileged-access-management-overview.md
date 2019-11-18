@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关 Office 365 中的特权访问管理的详细信息
-ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9bc2aab9c9758daf35aa14a41d7997a0bff5764f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075630"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685151"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的特权访问管理
 
@@ -92,6 +92,6 @@ Office 365 中的特权访问管理在**任务**级别进行定义和作用域�
 
 开始[为您的组织配置特权访问管理](privileged-access-management-configuration.md)。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
-[交互式指南：使用特权访问管理监视和控制管理员任务](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)
+[交互式指南：使用特权访问管理监视和控制管理员任务](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

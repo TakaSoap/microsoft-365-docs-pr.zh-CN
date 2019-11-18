@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 使用 office 365 高级邮件加密功能在 Office 365 邮件加密（OME）上，您可以通过自定义品牌化模板来设置电子邮件的过期日期，从而扩展电子邮件的安全性。
-ms.openlocfilehash: 59e014a69214c8085ad248ad1c1a0c21142abd47
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: 6790cc7103ad098419bde96b93738424626cd0cc
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435536"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685146"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>为使用 Office 365 高级邮件加密进行加密的电子邮件设置到期日期
 
@@ -37,7 +37,7 @@ Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.m
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>使用 PowerShell 创建自定义品牌模板以强制邮件过期
 
-1. 使用在 Office 365 组织中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
+1. 使用在 Office 365 组织中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
 
 2. 运行 Set-omeconfiguration cmdlet。
 
@@ -57,4 +57,4 @@ Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.m
 
 - [撤销使用 Office 365 高级邮件加密进行加密的电子邮件](revoke-ome-encrypted-mail.md)
 
-- [邮件策略和合规性服务说明](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [邮件策略和合规性服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

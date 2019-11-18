@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 在 Office 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
-ms.openlocfilehash: ca43498d785f1a5525a8159e7e553bd36257a7c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075199"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685327"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>为 Office 365 组织中的邮箱设置存档和删除策略
 
@@ -44,7 +44,7 @@ ms.locfileid: "37075199"
     
 您可以按照本文中的部分或全部步骤操作，为自己组织中的邮箱设置存档和删除策略。 我们建议您先对几个邮箱测试此过程，然后再在组织中的所有邮箱上实施此过程。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Office 365 组织中的全局管理员才能执行本主题中的步骤。 
     
@@ -125,7 +125,7 @@ ms.locfileid: "37075199"
     
 3. **保留期**选择 **"当项目达到以下期限（天）**"，然后输入保留期的持续时间。 在这种情况下，项目将在1095天（3年）后移至存档邮箱。
     
-4. **注释**Optional键入说明自定义保留标记用途的注释。 
+4. **Comment** （可选）键入说明自定义保留标记用途的注释。 
     
 3. 单击 "**保存**" 以创建自定义存档 DPT。 
     
@@ -147,7 +147,7 @@ ms.locfileid: "37075199"
     
 3. **保留期**选择 **"当项目达到以下期限（天）**"，然后输入保留期的持续时间。 在这种情况下，将在2555天（7年）后清除项目。
     
-4. **注释**Optional键入说明自定义保留标记用途的注释。 
+4. **Comment** （可选）键入说明自定义保留标记用途的注释。 
     
 3. 单击 "**保存**" 以创建自定义删除 DPT。 
     
@@ -171,7 +171,7 @@ ms.locfileid: "37075199"
     
 4. **保留期**选择 **"当项目达到以下期限（天）**"，然后输入保留期的持续时间。 在这种情况下，将在1825天（5年）后删除项目。
     
-5. **注释**Optional键入说明自定义保留标记用途的注释。 
+5. **Comment** （可选）键入说明自定义保留标记用途的注释。 
     
 3. 单击 "**保存**" 为 "已删除邮件" 文件夹创建自定义 RPT。 
     
@@ -242,7 +242,7 @@ ms.locfileid: "37075199"
   
 1. 在本地计算机上，打开 Windows PowerShell 并运行以下命令。
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     ```
 
@@ -250,19 +250,19 @@ ms.locfileid: "37075199"
     
 2. 运行以下命令。
     
-    ```
+    ```powershell
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     ```
 
 3. 运行以下命令。
     
-    ```
+    ```powershell
     Import-PSSession $Session
     ```
 
 4. 要验证您是否已连接至您的 Exchange Online 组织，请运行以下命令获取组织中所有邮箱的列表。
     
-    ```
+    ```powershell
     Get-Mailbox
     ```
 
@@ -271,11 +271,11 @@ ms.locfileid: "37075199"
   
 5. 运行以下两个命令，为组织中的所有用户邮箱启动托管文件夹助理。
     
-    ```
+    ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
     ```
 
-    ```
+    ```powershell
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
@@ -289,19 +289,21 @@ ms.locfileid: "37075199"
 
 2. 运行以下命令以显示组织中的邮箱计划的相关信息。
 
-    ```
+    ```powershell
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
+    
     记下设置为默认的邮箱计划。
 
 3. 运行以下命令，将您在步骤3中创建的新保留策略（例如， **Alpine 房子存档和保留策略**）分配给默认邮箱计划。 本示例假定默认邮箱计划的名称为**ExchangeOnlineEnterprise**。
 
-    ```
+    ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
+
 4. 您可以在步骤2中重新运行该命令，以验证分配给默认邮箱计划的保留策略是否已更改。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 保留期限是如何计算的？ 邮箱项目的保留期限是根据传递日期或邮件的创建日期计算的，例如未发送但由用户创建的草稿邮件。 When the Managed Folder Assistant processes items in a mailbox, it stamps a start date and an expiration date for all items that have retention tags with the Delete and Allow Recovery or Permanently Delete retention action. 具有存档标记的项目标记有移动日期。 
     

@@ -7,23 +7,25 @@ ms.date: 7/31/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: 除了通过 BitLocker 和分布式密钥管理器（DKM）启用的对卷级别加密之外，Office 365 还在应用程序级别为 Office 365 中的客户内容（包括来自 Exchange 的数据）提供了额外的加密层Online、Skype for Business、SharePoint Online 和 OneDrive for Business。 这称为 "服务加密"。
-ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075207"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685213"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>有关使用 Office 365 客户密钥执行服务加密的常见问题解答
 
 除了通过 BitLocker 和分布式密钥管理器（DKM）启用的对卷级别加密之外，Office 365 还在应用程序级别为 Office 365 中的客户内容（包括来自 Exchange 的数据）提供了额外的加密层Online、Skype for Business、SharePoint Online 和 OneDrive for Business。 这称为 "服务加密"。
   
-客户密钥是基于服务加密构建的，使您能够提供和控制用于在 Office 365 中对静态数据进行加密的密钥，如[联机服务条款（OST）](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)中所述。 客户密钥可帮助您满足合规性义务，因为您控制 Office 365 用于解密数据的加密密钥。
+客户密钥是基于服务加密构建的，使您能够提供和控制用于在 Office 365 中对静态数据进行加密的密钥，如[联机服务条款（OST）](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中所述。 客户密钥可帮助您满足合规性义务，因为您控制 Office 365 用于解密数据的加密密钥。
   
 若要提供有关客户密钥的反馈（包括文档），请将你的想法、建议和观点发送到 customerkeyfeedback@microsoft.com。
   
@@ -46,16 +48,16 @@ ms.locfileid: "37075207"
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Office 365 邮件加密和使用您自己的密钥进行 Azure 信息保护更改 Microsoft 对第三方数据请求（如 subpoenas）的方法？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-不能。 Office 365 邮件加密和用于提供和控制您自己的加密密钥的选项（带有引入和控制您自己的加密密钥）将您自己的密钥（BYOK）用于 Azure 信息保护，而不是旨在响应执法部门 subpoenas。 BYOK for AIP 的 Office 365 邮件加密专为需要满足其内部或外部合规性义务的合规性客户而设计。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。 （请阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们会定期发布我们在[此处](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)收到的请求的详细信息。
+不能。 Office 365 邮件加密和用于提供和控制您自己的加密密钥的选项（带有引入和控制您自己的加密密钥）将您自己的密钥（BYOK）用于 Azure 信息保护，而不是旨在响应执法部门 subpoenas。 BYOK for AIP 的 Office 365 邮件加密专为需要满足其内部或外部合规性义务的合规性客户而设计。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。 （请阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们会定期发布我们在[此处](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data)收到的请求的详细信息。
   
-有关详细信息，请参阅[联机服务条款（OST）](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)中有关第三方数据请求和 "客户数据泄露" 的[Microsoft 信任中心](https://www.microsoft.com/en-us/trustcenter/default.aspx)。
+有关详细信息，请参阅[联机服务条款（OST）](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中有关第三方数据请求和 "客户数据泄露" 的[Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)。
   
 ## <a name="does-service-encryption-with-customer-key-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>服务加密是否具有客户密钥更改 Microsoft 对第三方数据请求（如 subpoenas）的方法？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-不能。 客户密钥不旨在响应执法部门的 subpoenas。 它是为管控客户设计的，以满足其内部或外部合规性义务。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。 （请阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们会定期发布我们在[此处](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)收到的请求的详细信息。
+不能。 客户密钥不旨在响应执法部门的 subpoenas。 它是为管控客户设计的，以满足其内部或外部合规性义务。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。 （请阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们会定期发布我们在[此处](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)收到的请求的详细信息。
   
-有关详细信息，请参阅[联机服务条款（OST）](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)中有关第三方数据请求和 "客户数据泄露" 的[Microsoft 信任中心](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)。 
+有关详细信息，请参阅[联机服务条款（OST）](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中有关第三方数据请求和 "客户数据泄露" 的[Microsoft 信任中心](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data)。 
   
 ## <a name="is-fasttrack-support-available-for-implementing-customer-key"></a>是否有可用于实现客户密钥的 FastTrack 支持？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -89,15 +91,15 @@ ms.locfileid: "37075207"
 ## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>如何验证是否已激活客户密钥的加密功能，以及 Office 365 是否已完成客户密钥加密？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online 和 Skype For business：** 您可以[使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) ，然后对要检查的每个邮箱使用 **[get-mailboxstatistics]** cmdlet。 在 Get-mailboxstatistics cmdlet 的输出中，如果邮箱已加密，则_IsEncrypted_属性返回**true** ，如果不是，则返回值**false** 。 如果邮箱已加密，则为_DataEncryptionPolicyID_属性返回的值是邮箱加密的 DEP 的 GUID。 有关运行此 cmdlet 的详细信息，请参阅[get-mailboxstatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx)和使用 PowerShell With Exchange Online。 
+ **Exchange Online 和 Skype For business：** 您可以[使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) ，然后对要检查的每个邮箱使用 **[get-mailboxstatistics]** cmdlet。 在 Get-mailboxstatistics cmdlet 的输出中，如果邮箱已加密，则_IsEncrypted_属性返回**true** ，如果不是，则返回值**false** 。 如果邮箱已加密，则为_DataEncryptionPolicyID_属性返回的值是邮箱加密的 DEP 的 GUID。 有关运行此 cmdlet 的详细信息，请参阅[get-mailboxstatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx)和使用 PowerShell With Exchange Online。 
   
-如果邮箱在您分配 DEP 之后的等待时间为72小时之后未加密，请启动邮箱移动。 为此，请[使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) ，然后使用 new-moverequest cmdlet，并提供邮箱的别名，如下所示： 
+如果邮箱在您分配 DEP 之后的等待时间为72小时之后未加密，请启动邮箱移动。 为此，请[使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) ，然后使用 new-moverequest cmdlet，并提供邮箱的别名，如下所示： 
   
-```
+```powershell
 New-MoveRequest <alias>
 ```
 
- **SharePoint Online 和 OneDrive For business：** 您可以[连接到 SharePoint Online PowerShell](https://technet.microsoft.com/en-us/library/fp161372.aspx)，然后使用 **[SPODataEncryptionPolicy]** cmdlet 检查租户的状态。 如果启用了客户密钥加密且所有站点中的所有文件均已加密，* * _State_* * 属性将返回一个**注册**值。 如果仍在进行加密，则此 cmdlet 提供有关已完成的网站百分比的信息。 
+ **SharePoint Online 和 OneDrive For business：** 您可以[连接到 SharePoint Online PowerShell](https://technet.microsoft.com/library/fp161372.aspx)，然后使用 **[SPODataEncryptionPolicy]** cmdlet 检查租户的状态。 如果启用了客户密钥加密且所有站点中的所有文件均已加密，* * _State_* * 属性将返回一个**注册**值。 如果仍在进行加密，则此 cmdlet 提供有关已完成的网站百分比的信息。 
   
 ## <a name="if-i-want-to-switch-to-a-different-set-of-keys-how-long-does-it-take-for-the-new-set-of-keys-to-protect-my-data"></a>如果我要切换到一组不同的键，则需要多长时间才能保护我的数据的新密钥集？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -140,7 +142,7 @@ New-MoveRequest <alias>
   
 Office 365 使用可用性密钥来实现服务可用性，并从 Exchange Online 的不正常客户密钥状态恢复。 有一个由客户密钥使用的密钥的层次结构。 此层次结构如下图所示。
   
-![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
+![图中显示了 "客户密钥" 中的键的层次结构](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
 如果单个数据加密策略（DEP）的两个 Azure 密钥保管库密钥均不可用，则 Office 365 可以使用可用性密钥更改为新的 DEP。 Office 365 根据用户启动的活动（例如，用户是否将电子邮件下载到 Outlook 客户端）或系统启动的活动（如索引），确定是否使用可用性密钥以不同方式使用可用性密钥。邮箱内容或电子数据展示搜索触发此过程。
   
@@ -206,11 +208,11 @@ Office 365 遵循此过程来访问包含客户文件数据的 blob：
   
 对于 Exchange Online，"用户" 邮箱和 "邮件用户" 邮箱必须获得许可。 所有其他（如共享邮箱）不需要拥有客户密钥许可证。 若要检查您的 Exchange Online 邮箱是否已得到正确许可，请运行以下 cmdlet：
   
-```
+```powershell
 (Get-Mailbox <alias >).PersistedCapabilities
 ```
 
-如果字符串 BPOS_S_EquivioAnalytics 存在，则对邮箱进行了正确的授权。 如果不是，则必须应用适当的许可证，才能使用此邮箱的客户密钥功能。
+如果 BPOS_S_EquivioAnalytics 存在该字符串，则会正确许可邮箱。 如果不是，则必须应用适当的许可证，才能使用此邮箱的客户密钥功能。
   
 ## <a name="can-i-enable-customer-key-for-a-trial-subscription"></a>我是否可以为试用订阅启用客户密钥？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -220,9 +222,9 @@ Office 365 遵循此过程来访问包含客户文件数据的 blob：
 ## <a name="how-much-will-using-customer-key-cost"></a>使用客户密钥的成本有多大？
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-除了客户密钥所需的许可，客户将对密钥存储使用承担成本。 [Azure Key Vault 定价详细信息](https://azure.microsoft.com/en-us/pricing/details/key-vault/)介绍了成本模型，并将协助估计。 由于使用模式不同，因此无法预测任何客户将产生的确切成本。 经验表明，成本非常低，并且通常在每个用户每月 $0.002 到 $0.005 的范围内，再加上受 HSM 支持的密钥的成本。 根据客户选择的日志记录配置和用于 Azure Key Vault 日志的 Azure 存储量，该成本也会有所不同。 
+除了客户密钥所需的许可，客户将对密钥存储使用承担成本。 [Azure Key Vault 定价详细信息](https://azure.microsoft.com/pricing/details/key-vault/)介绍了成本模型，并将协助估计。 由于使用模式不同，因此无法预测任何客户将产生的确切成本。 经验表明，成本非常低，并且通常在每个用户每月 $0.002 到 $0.005 的范围内，再加上受 HSM 支持的密钥的成本。 根据客户选择的日志记录配置和用于 Azure Key Vault 日志的 Azure 存储量，该成本也会有所不同。 
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多详细信息
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 若要开始使用客户密钥，请参阅[使用客户密钥控制 Office 365 中的数据](controlling-your-data-using-customer-key.md)。

@@ -7,24 +7,26 @@ ms.date: 6/26/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何在 Office 365 的安全 & 合规中心中通过 PowerShell 脚本自动执行内容搜索任务，如创建搜索和运行报告。
-ms.openlocfilehash: 75caf75d576ac4a24779de15f5b05cb7fe8fa724
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43f6046521ef121f52b2a5abe26d2cd6a322d22c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074266"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685304"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
  当你尝试了解基础数据以及搜索的丰富程度和质量时，快速创建和报告发现搜索通常是电子数据展示和调查中的重要步骤。 为帮助你执行此操作，安全 & 合规性中心 PowerShell 提供了一组用于自动执行耗时的内容搜索任务的 cmdlet。 这些脚本提供了创建大量搜索的快速、简便的方法，然后运行估计的搜索结果报告，这些报告可帮助您确定所讨论的数据量。 您还可以使用脚本来创建不同版本的搜索，以比较每个搜索结果所产生的结果。 这些脚本可帮助您快速高效地识别和挑选数据。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本主题中所述的脚本。 
     
@@ -42,7 +44,7 @@ ms.locfileid: "37074266"
   
 1. 使用记事本将以下文本复制并粘贴到一个 .txt 文件中。 将此文件保存到本地计算机上的文件夹中。 此外，还会将其他脚本保存到此文件夹中。
     
-    ```
+    ```text
     ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2000,12/31/2005
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2006,12/31/2010
@@ -72,7 +74,7 @@ ms.locfileid: "37074266"
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `ConnectSCC.ps1`。 将文件保存到在步骤1中保存 CSV 文件的文件夹。
     
-    ```
+    ```powershell
     # Get login credentials 
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -82,15 +84,15 @@ ms.locfileid: "37074266"
 
 2. 在本地计算机上，打开 Windows PowerShell，转到上一步中创建的脚本所在的文件夹，然后运行该脚本;例如：
     
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-  
+
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>步骤3：运行脚本以创建并启动搜索
 
 此步骤中的脚本将为您在步骤1中创建的 CSV 文件中的每一行创建单独的内容搜索。 运行此脚本时，系统将提示您输入两个值：
   
-- **搜索组 ID** -此名称提供了一种简单的方法来组织从 CSV 文件创建的搜索。 创建的每个搜索都使用搜索组 ID 命名，然后将数字追加到搜索名称。 例如，如果您为搜索组 ID 输入**ContosoCase** ，则会将搜索命名为**ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**等等。 请注意，键入的名称区分大小写。 在第4步和第5步中使用搜索组 ID 时，必须使用与创建时相同的大小写。 
+- **搜索组 ID** -此名称提供了一种简单的方法来组织从 CSV 文件创建的搜索。 创建的每个搜索都使用搜索组 ID 命名，然后将数字追加到搜索名称。 例如，如果您为搜索组 ID 输入 " **ContosoCase** "，则会将搜索命名为**ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**等。 请注意，键入的名称区分大小写。 在第4步和第5步中使用搜索组 ID 时，必须使用与创建时相同的大小写。 
     
 - **Csv 文件**-您在步骤1中创建的 CSV 文件的名称。 确保包含使用完整文件名，包括 .csv 文件扩展名;例如， `ContosoCase.csv`。
     

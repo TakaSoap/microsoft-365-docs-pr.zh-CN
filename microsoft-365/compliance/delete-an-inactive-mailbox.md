@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: 当不再需要保留 Office 365 非活动邮箱的内容时，可以通过删除保留永久删除非活动邮箱。 删除保留后，非活动邮箱将标记为删除，并在处理后被永久删除。
-ms.openlocfilehash: b6cea7284ccb930ef10ec96c082291acb9f66f2f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c4cf9385d5b642f410c210c6372e4ff469838377
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070618"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685302"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>删除 Office 365 中的非活动邮箱
 
@@ -46,13 +46,13 @@ ms.locfileid: "37070618"
   
 运行以下命令，显示组织中所有非活动邮箱的保留信息。
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
 ```
 
 如果 **LitigationHoldEnabled** 属性的值为 **True** ，则表示非活动邮箱被置于诉讼保留状态。 如果非活动邮箱被置于就地保留状态，则保留的 GUID 会显示为 **InPlaceHolds** 属性的值。 例如，以下两个非活动邮箱的结果显示 Ann Beebe 设置的是诉讼保留，而 Pilar Pinilla 设置了两个就地保留。 
   
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -77,7 +77,7 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, ba6f4ba25b62490aaaa25
 
 如前所述，您必须使用 Windows PowerShell 从非活动邮箱删除诉讼保留。不能使用 EAC。运行以下命令以删除诉讼保留。
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
 ```
 
@@ -99,9 +99,9 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 1. 如果您知晓要删除的就地保留的名称，则可前往下一步。否则，请运行以下命令以获取想要永久删除的非活动邮箱上设置的就地保留的名称。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
     
-```
-  Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-```
+   ```powershell
+   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
+   ```
 
 2. 在 EAC 中，转到"合规管理"****"就地电子数据展示和保留"。
     
@@ -117,29 +117,29 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 1. 创建一个变量，其中包含您想要删除的就地保留的属性。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
     
-```
-  $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
-```
+   ```powershell
+   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
+   ```
 
 2. 禁用就地保留上的该保留。
     
-```
-  Set-MailboxSearch $InPlaceHold.Name -InPlaceHoldEnabled $false
-```
+   ```powershell
+   Set-MailboxSearch $InPlaceHold.Name -InPlaceHoldEnabled $false
+   ```
 
 3. 删除该就地保留。
     
-```
-  Remove-MailboxSearch $InPlaceHold.Name
-```
+   ```powershell
+   Remove-MailboxSearch $InPlaceHold.Name
+   ```
 
 #### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>使用 EAC 从就地保留删除非活动邮箱
 
 1. 如果您知晓非活动邮箱上设置的就地保留的名称，则可前往下一步。否则，请运行以下命令以获取该邮箱上设置的就地保留的名称。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
     
-```
-  Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-```
+   ```powershell
+   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
+   ```
 
 2. 在 EAC 中，转到"合规管理"****"就地电子数据展示和保留"。
     
@@ -159,49 +159,49 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 1. 创建一个变量，其中包含非活动邮箱上设置的就地保留的属性。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
     
-```
-  $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
-```
+    ```powershell
+    $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
+    ```
 
 2. 验证非活动邮箱是否作为就地保留的源邮箱列出。 
     
-```
-  $InPlaceHold.Sources
-```
+   ```powershell
+   $InPlaceHold.Sources
+   ```
 
    **注意：** 就地保留的*source 属性通过*其*LegacyExchangeDN*属性标识源邮箱。 由于此属性唯一标识非活动邮箱，因此使用就地保留中的*源*属性有助于防止删除错误的邮箱。 如果两个邮箱具有相同的别名或 SMTP 地址，这还有助于避免出现问题。 
    
 3. 从变量中的源邮箱列表删除非活动邮箱。 请务必使用上一步中的命令返回的非活动邮箱的**LegacyExchangeDN** 。 
     
-```
-  $InPlaceHold.Sources.Remove("<LegacyExchangeDN of the inactive mailbox>")
-```
+    ```powershell
+    $InPlaceHold.Sources.Remove("<LegacyExchangeDN of the inactive mailbox>")
+    ```
 
-    For example, the following command removes the inactive mailbox for Pilar Pinilla.
+    例如，以下命令将删除 Pilar Pinilla 的非活动邮箱。
     
-  ```
-  $InPlaceHold.Sources.Remove("/o=contoso/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=9c8dfff651ec4908950f5df60cbbda06-pilarp")
-  ```
+    ```powershell
+    $InPlaceHold.Sources.Remove("/o=contoso/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/ cn=9c8dfff651ec4908950f5df60cbbda06-pilarp")
+    ```
 
 4. 验证非活动邮箱已从变量中的源邮箱列表中删除。
     
-```
-  $InPlaceHold.Sources
-```
+   ```powershell
+   $InPlaceHold.Sources
+   ```
 
 5. 使用源邮箱的更新列表（其中不包括非活动邮箱）修改就地保留。
     
-```
-  Set-MailboxSearch $InPlaceHold.Name -SourceMailboxes $InPlaceHold.Sources
-```
+   ```powershell
+   Set-MailboxSearch $InPlaceHold.Name -SourceMailboxes $InPlaceHold.Sources
+   ```
 
 6. 验证非活动邮箱已从就地保留的源邮箱列表中删除。
     
-```
-  Get-MailboxSearch $InPlaceHold.Name | FL Sources
-```
+   ```powershell
+   Get-MailboxSearch $InPlaceHold.Name | FL Sources
+   ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **非活动邮箱是一种软删除邮箱。** 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。 Exchange Online 中的软删除邮箱保留期为 30 天。 这意味着该邮箱可以在软删除后 30 天内进行恢复。 30 天后，软删除邮箱将标记为永久删除并且无法恢复。 
     
@@ -213,7 +213,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 - **在删除保留设置后，如何显示非活动邮箱的相关信息？** 在删除保留并将非活动邮箱还原为软删除邮箱后，不会通过将*InactiveMailboxOnly*参数与**Get 邮箱**cmdlet 一起使用来返回该邮箱。 不过，您可以使用**SoftDeletedMailbox**命令显示有关邮箱的信息。 例如： 
     
-```
+  ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
   Placeholds,WhenSoftDeleted,IsInactiveMailbox
   Name                   : pilarp
@@ -222,7 +222,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   InPlaceHolds           : {}
   WhenSoftDeleted        : 10/30/2014 1:19:04 AM
   IsInactiveMailbox      : False
-```
-  
-在上面的示例中， *WhenSoftDeleted*属性标识软删除日期，在此示例中为2014年10月30日。 如果此软删除邮箱之前已删除保留的非活动邮箱，则它将在*WhenSoftDeleted*属性值之后的30天内永久删除。 在本例中，该邮箱将在 2014 年 11 月 30 日之后永久删除。
+  ```
+
+  在上面的示例中， *WhenSoftDeleted*属性标识软删除日期，在此示例中为2014年10月30日。 如果此软删除邮箱之前已删除保留的非活动邮箱，则它将在*WhenSoftDeleted*属性值之后的30天内永久删除。 在本例中，该邮箱将在 2014 年 11 月 30 日之后永久删除。
 

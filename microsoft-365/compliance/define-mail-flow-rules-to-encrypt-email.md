@@ -14,21 +14,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则（传输规则），以使用 Office 365 邮件加密对邮件进行加密和解密。
-ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 17a04941d7132dbe50f8a79ec3b8879b300b414e
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074168"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38685048"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
 
 作为 Office 365 全局管理员，您可以创建邮件流规则（也称为传输规则），以帮助保护您发送和接收的电子邮件。 您可以设置规则来加密任何传出的电子邮件，并删除来自组织内部或从组织发送的加密邮件的答复的加密邮件的加密。 您可以使用 Exchange 管理中心（EAC）或 Exchange Online PowerShell 创建这些规则。 除了整体的加密规则，你还可以针对最终用户选择启用或禁用单个邮件加密选项。
-
-||
-|:-----|
-|本文是有关 Office 365 邮件加密的更多系列文章的一部分。 本文适用于管理员和 ITPros。 如果只是查找有关发送或接收加密邮件的信息，请参阅[Office 365 邮件加密（OME）](ome.md)中的文章列表，并找到最符合您的需求的文章。 |
-||
 
 如果你最近从 AD RMS 迁移到 Azure 信息保护，你将需要查看现有的邮件流规则，以确保它们可以在你的新环境中继续工作。 此外，如果您想利用新的 Office 365 邮件加密（OME）功能通过 Azure 信息保护来使用，则需要更新现有的邮件流规则。 否则，您的用户将继续接收使用以前的 HTML 附件格式的加密邮件，而不是新的无缝 OME 体验。 如果尚未设置 OME，请参阅为信息[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。
 
@@ -93,7 +88,7 @@ ms.locfileid: "37074168"
 
 7. 从 "**执行以下**操作" 列表中，删除为**修改邮件安全性** \>而分配的所有操作**应用早期版本的 OME**。
 
-8. 选择“保存”****。
+8. 选择“**保存**”。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>创建不带新功能的 Office 365 邮件加密的邮件流规则
 
@@ -143,7 +138,7 @@ ms.locfileid: "37074168"
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **注意**：
+   **注意：**
 
    - 新规则的唯一名称是 "加密 Dr Toni Ramos" 的规则。
 
@@ -173,7 +168,7 @@ ms.locfileid: "37074168"
 
 7. 在 **"执行以下操作**" 中，选择 "**修改邮件安全性** \> **" 删除 OME 的早期版本**。
 
-8. 选择“保存”****。
+8. 选择“**保存**”。
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 创建一个规则，以从加密的电子邮件答复中删除加密，而不使用新的 OME 功能
 
@@ -187,7 +182,7 @@ ms.locfileid: "37074168"
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **注意**：
+   **注意：**
 
    - 新规则的唯一名称是 "从传入邮件中删除加密"。
 

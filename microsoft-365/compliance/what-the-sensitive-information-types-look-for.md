@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 820bab0a128f952cf5d96208f5d561f4994bd859
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9c3111069ff30784af5fe781200de5e770c79066
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075438"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38685353"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -211,12 +211,12 @@ Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括许多�
 - 两位数字 
 - 五位数字或字母（不区分大小写）
 
-OR
+或
 
 - 1-2 个可选字母（不区分大小写）  
 - 4-9 位数字
 
-OR
+或
 
 - 九个数字或字母（不区分大小写）
 
@@ -428,7 +428,7 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_australia_passport_number 找到与该模式匹配的内容。
-- 找到来自 Keyword_passport 或 Keyword_australia_passport_number 的关键字。
+- 找到 Keyword_passport 或 Keyword_australia_passport_number 中的关键字。
 
 ```xml
 <!-- Australia Passport Number -->
@@ -588,7 +588,7 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 CEP_Regex_AzureDocumentDBAuthKey 找到与该模式匹配的内容。
-- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+- 正则表达式**CEP_CommonExampleKeywords 不会找到与**该模式匹配的内容。
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -648,7 +648,7 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 CEP_Regex_AzureConnectionString 找到与该模式匹配的内容。
-- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+- 正则表达式**CEP_CommonExampleKeywords 不会找到与**该模式匹配的内容。
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -708,7 +708,7 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 CEP_Regex_AzureIoTConnectionString 找到与该模式匹配的内容。
-- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+- 正则表达式**CEP_CommonExampleKeywords 不会找到与**该模式匹配的内容。
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -758,7 +758,7 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 CEP_Regex_AzurePublishSettingPasswords 找到与该模式匹配的内容。
-- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+- 正则表达式**CEP_CommonExampleKeywords 不会找到与**该模式匹配的内容。
 
 
 ```xml
@@ -814,7 +814,7 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 CEP_Regex_AzureRedisCacheConnectionString 找到与该模式匹配的内容。。
-- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+- 正则表达式**CEP_CommonExampleKeywords 不会找到与**该模式匹配的内容。
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -908,7 +908,7 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 CEP_Regex_AzureServiceBusConnectionString 找到与该模式匹配的内容。。
-- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+- 正则表达式**CEP_CommonExampleKeywords 不会找到与**该模式匹配的内容。
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -966,8 +966,8 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 CEP_Regex_AzureStorageAccountKey 找到与该模式匹配的内容。
-- 正则表达式 CEP_AzureEmulatorStorageAccountFilter**未**找到与该模式匹配的内容。
-- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+- 正则表达式**CEP_AzureEmulatorStorageAccountFilter 不会找到与**该模式匹配的内容。
+- 正则表达式**CEP_CommonExampleKeywords 不会找到与**该模式匹配的内容。
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1440,7 +1440,7 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
 
 - 省/市/自治区的缩写，例如 AB
 - 省名称，例如 Alberta
@@ -1642,7 +1642,7 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_passport_number 找到与该模式匹配的内容。
-- 找到来自 Keyword_canada_passport_number 或 Keyword_passport 的关键字。
+- 找到 Keyword_canada_passport_number 或 Keyword_passport 中的关键字。
 
 ```xml 
 <!-- Canada Passport Number -->
@@ -1707,7 +1707,7 @@ Cédula de identidade identity 卡片国家 id número de rregistro registro de 
 
 ### <a name="definition"></a>定义
 
-DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息：正则表达式 Regex_canada_phin 找到与该模式匹配的内容。
+DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信息：正则表达式 Regex_canada_phin 找到与该模式匹配的内容。
 找到 Keyword_canada_phin 或 Keyword_canada_provinces 中至少有两个关键字。。
 
 ```xml
@@ -1840,7 +1840,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - drivers licence 
 - DOB 
 - 出生日期 
-- 生日 
+- 一定 
 - Date of Birth 
    
 ## <a name="chile-identity-card-number"></a>	智利身份证号
@@ -2304,7 +2304,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 9个数字（旧格式）：
 - 九个数字
 
-OR
+或
 
 - 代表出生日期的六个数字
 - 一个正斜杠 
@@ -2313,7 +2313,7 @@ OR
 10个数字（新格式）：
 - 10 个数字
 
-OR
+或
 
 - 代表出生日期的六个数字
 - 一个正斜杠  
@@ -2325,7 +2325,7 @@ OR
 
 ### <a name="definition"></a>定义
 
-DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_czech_id_card 找到与该模式匹配的内容。
+DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_czech_id_card 找到与该模式匹配的内容。
 找到 Keyword_czech_id_card 中的一个关键字。
 校验和通过。
 
@@ -2362,7 +2362,7 @@ DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感�
 
 ### <a name="definition"></a>定义
 
-DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息：正则表达式 Regex_denmark_id 找到与该模式匹配的内容。
+DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信息：正则表达式 Regex_denmark_id 找到与该模式匹配的内容。
 找到 Keyword_denmark_id 中的一个关键字。
 校验和通过。
 
@@ -2836,12 +2836,12 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
    
 ## <a name="finland-passport-number"></a>芬兰护照号
 
-设置九个字母和数字的组合的组合九个字母和数字的组合：两个字母（不区分大小写）七个数字校验和无定义 DLP 策略是 75% 确信它检测到这种类型的敏感信息，如果在300个字符的邻近性：正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。
+设置九个字母和数字的组合的组合九个字母和数字的组合：两个字母（不区分大小写）七个数字校验和无定义 DLP 策略是75% 确信它检测到这种类型的敏感信息，如果在300个字符的邻近性：正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。
 找到 Keyword_finland_passport_number 中的一个关键字。
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
 </Entity>
-关键字 Keyword_finland_passport_number Passport Passi
+Keyword_finland_passport_number Passport Passi 的关键字
    
 ## <a name="france-drivers-license-number"></a>法国驾驶证号码
 
@@ -3522,10 +3522,10 @@ bnationalit
 
 ### <a name="definition"></a>定义
 
-DLP 策略 85% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_india_aadhaar 找到与该模式匹配的内容。
+DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_india_aadhaar 找到与该模式匹配的内容。
 找到 Keyword_india_aadhar 中的一个关键字。
 校验和通过。
-DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_india_aadhaar 找到与该模式匹配的内容。
+DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_india_aadhaar 找到与该模式匹配的内容。
 校验和通过。
 ```xml
 <!-- India Unique Identification (Aadhaar) number -->
@@ -3726,7 +3726,7 @@ Dictionary
 - 找到 Dictionary_icd_10_codes 中的关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 找到来自 Dictionary_icd_10_ 更新的关键字。
+- 找到 Dictionary_icd_10_ 更新的关键字。
 
 ```xml
       <!-- ICD-10 CM -->
@@ -3743,9 +3743,9 @@ Dictionary
 
 关键字
 
-Dictionary_icd_10_updated 关键字词典中的任何术语，它基于[Diseases 的国际分类、第十个修订、临床修改（icd-10-CM）](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找术语，而不是保险代码。
+Dictionary_icd_10_updated 关键字词典中的任何术语，基于[国际分类 Diseases，第10次修订，临床修改（icd-10-CM）](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找术语，而不是保险代码。
 
-Dictionary_icd_10_codes 关键字词典中的任何术语，它基于[Diseases 的国际分类、第十个修订、临床修改（icd-10-CM）](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找保险业代码，而不是说明。
+Dictionary_icd_10_codes 关键字词典中的任何术语，基于[国际分类 Diseases，第10次修订，临床修改（icd-10-CM）](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找保险业代码，而不是说明。
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>国际分类的 Diseases （ICD-9-CM）
 
@@ -3784,9 +3784,9 @@ Dictionary
 
 ### <a name="keywords"></a>关键字
 
-Dictionary_icd_9_updated 关键字词典中的任何术语，基于[Diseases 的国际分类、第九修订版、临床修改（icd-9 CM）](https://go.microsoft.com/fwlink/?linkid=852605)。 此类型仅查找术语，而不是保险代码。
+Dictionary_icd_9_updated 关键字词典中的任何术语，基于[国际分类的 Diseases，第九个修订，临床修改（icd-9 CM）](https://go.microsoft.com/fwlink/?linkid=852605)。 此类型仅查找术语，而不是保险代码。
 
-Dictionary_icd_9_codes 关键字词典中的任何术语，基于[Diseases 的国际分类、第九修订版、临床修改（icd-9 CM）](https://go.microsoft.com/fwlink/?linkid=852605)。 此类型仅查找保险业代码，而不是说明。
+Dictionary_icd_9_codes 关键字词典中的任何术语，基于[国际分类的 Diseases，第九个修订，临床修改（icd-9 CM）](https://go.microsoft.com/fwlink/?linkid=852605)。 此类型仅查找保险业代码，而不是说明。
 
 ## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公共服务 (PPS) 号码
 
@@ -4615,7 +4615,7 @@ Keyword_nz_terms
 
 ### <a name="definition"></a>定义
 
-DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_polish_national_id 找到与该模式匹配的内容。
+DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_polish_national_id 找到与该模式匹配的内容。
 找到 Keyword_polish_national_id_passport_number 中的一个关键字。
 校验和通过。
 
@@ -5019,8 +5019,8 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 CEP_Regex_SQLServerConnectionString 找到与该模式匹配的内容。
 - 找**不**到 CEP_GlobalFilter 中的关键字。
-- 正则表达式 CEP_PasswordPlaceHolder**未**找到与该模式匹配的内容。
-- 正则表达式 CEP_CommonExampleKeywords**未**找到与该模式匹配的内容。
+- 正则表达式**CEP_PasswordPlaceHolder 不会找到与**该模式匹配的内容。
+- 正则表达式**CEP_CommonExampleKeywords 不会找到与**该模式匹配的内容。
 
 ```sql
 <!---SQL Server Connection String>
@@ -5501,7 +5501,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 18 个字母和数字：
 - 用五个字母（不区分大小写）或数字“9”来代替一个字母 
 - 一位数字 
-- 采用日期格式 DDMMY 的五位数字，表示出生日期 
+- MMDDY 的日期格式的五个数字（如果驱动程序是女，第七个字符增加50，即51到62而不是01到12）
 - 用两个字母（不区分大小写）或数字“9”来代替一个字母 
 - 五位数字
 
@@ -5669,7 +5669,7 @@ DLP 策略 75% 确信在300个字符的邻近度内检测到此类型的敏感�
 - 六位数字
 - "A"、"B"、"C" 或 "d" （与前缀一样，后缀中只允许有某些字符; 不区分大小写）
 
-OR
+或
 
 - 两个字母
 - 一个空格或破折号
@@ -5989,7 +5989,7 @@ OR
 - identification cards# 
 
 
-#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
 
 - 州缩写（例如，“NY”） 
 - 州名称（例如，“New York”）    
@@ -6084,7 +6084,7 @@ OR
 - 通讯 
 - DOB 
 - 出生日期 
-- 生日 
+- 一定 
 - Date of Birth 
    
 ## <a name="us-social-security-number-ssn"></a>美国社会保险号 (SSN)
@@ -6135,17 +6135,17 @@ OR
 - 函数 Func_us_date 找到正确日期格式的日期。
 - 函数 Func_us_address 找到正确格式的地址。
 
-如果 DLP 策略在300个字符的邻近度内检测到此类型的敏感信息，则 DLP 策略 40% 确信它检测到这种类型的敏感信息：
+如果 DLP 策略在300个字符的邻近度内检测到此类型的敏感信息，则 DLP 策略40% 确信它检测到这种类型的敏感信息：
 - 函数 Func_ssn 找到与该模式匹配的内容。
 - 函数 Func_unformatted_ssn 未找到与该模式匹配的内容。
-- 函数 Func_randomized_unformatted_ssn 未找到与该模式匹配的内容。
+- 函数 Func_randomized_unformatted_ssn 找不到与该模式匹配的内容。
 - 找不到 Keyword_ssn 中的关键字。
  
 或
 
 - 函数 Func_randomized_formatted_ssn 找到与该模式匹配的内容。
 - 函数 Func_unformatted_ssn 未找到与该模式匹配的内容。
-- 函数 Func_randomized_unformatted_ssn 未找到与该模式匹配的内容。
+- 函数 Func_randomized_unformatted_ssn 找不到与该模式匹配的内容。
 - 找不到 Keyword_ssn 中的关键字。
 
 ```xml

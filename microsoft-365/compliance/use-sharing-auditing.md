@@ -13,15 +13,17 @@ search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核，以确定与组织外部的用户共享的资源。 '
-ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8d473a3e3fb1c8e5e8753265c3982b27271ed39c
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076064"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685227"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>审核共享以查找与外部用户共享的资源
 
@@ -77,7 +79,7 @@ ms.locfileid: "37076064"
    
       - **AddedToSecureLink** 
 
-      - **SharingInvitationCreated**（仅当共享资源是网站时，才会记录此事件）
+      - **SharingInvitationCreated** （仅当共享资源是网站时，才会记录此事件）
     
    - 当目标用户接受发送给他们的共享邀请（通过单击邀请中的链接）时，SharePoint 会记录一个**SharingInvitationAccepted**事件并为目标用户分配访问资源的权限。 如果向目标用户发送匿名链接，则在目标用户使用该链接访问资源后记录**AnonymousLinkUsed**事件。 对于安全链接，当外部用户使用链接访问资源时，将记录**FileAccessed**事件。
 

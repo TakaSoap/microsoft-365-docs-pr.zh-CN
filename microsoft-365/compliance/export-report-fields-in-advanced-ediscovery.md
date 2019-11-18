@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 介绍了用于高级电子数据展示的导出报告中包含的所有字段。
-ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 54287b4319a3fd7cf5be8aaf74d3a375253cba1f
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074832"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38685349"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中导出报告字段
 
@@ -62,17 +62,17 @@ ms.locfileid: "37074832"
 |Email_recipient_domains  <br/> |电子邮件  <br/> |电子邮件收件人域（"收件人"、"抄送" 和 "密件抄送"）。  <br/> |是  <br/> |是  <br/> |
 |Email_date_received  <br/> |电子邮件  <br/> |接收电子邮件的日期。  <br/> |是  <br/> |是  <br/> |
 |Email_action  <br/> |电子邮件  <br/> |值：根据电子邮件主题： "转发" （针对 "FW："）、"答复" （对于 "RE："）或 "其他" （其他主题文本）。  <br/> |是  <br/> |是  <br/> |
-|Meeting_Start_Date/时间  <br/> ||会议项目的开始日期和时间。  <br/> |是  <br/> |是  <br/> |
-|Meeting_End_Date/时间  <br/> ||会议项目结束的日期和时间。  <br/> |是  <br/> |是  <br/> |
+|Meeting_Start_Date/Time  <br/> ||会议项目的开始日期和时间。  <br/> |是  <br/> |是  <br/> |
+|Meeting_End_Date/Time  <br/> ||会议项目结束的日期和时间。  <br/> |是  <br/> |是  <br/> |
 |File_relevance_score  <br/> |相关性  <br/> |相关性分数（0-100）。 每个问题。  <br/> |是  <br/> |是  <br/> |
 |Family_relevance_score  <br/> |相关性  <br/> |最大族相关性分数（0-100）。 每个问题。  <br/> |是  <br/> |是  <br/> |
 |Relevance_tag  <br/> |相关性  <br/> |文件的标记，如果文件是手动标记的相关。 每个问题。  <br/> |是  <br/> |是  <br/> |
 |Relevance_load_group  <br/> |相关性  <br/> |指定文件的相关性负载组，每个问题包含一个字段。  <br/> |是  <br/> |是  <br/> |
 |Normalized_relevance_score  <br/> |相关性  <br/> |标准化的相关性分数（0-100），可在问题和负载之间进行比较。  <br/> |是  <br/> |是  <br/> |
 |Marked_as_seed  <br/> |相关性  <br/> |文件的标记，如果它在每个问题/类别的相关性中设置为 "种子文件"。  <br/> |是  <br/> |是  <br/> |
-|Marked_as_pre-标记  <br/> |相关性  <br/> |文件的标记，如果它在每个问题/类别的相关性设置为预先标记。  <br/> |是  <br/> |是  <br/> |
+|Marked_as_pre 标记  <br/> |相关性  <br/> |文件的标记，如果它在每个问题/类别的相关性设置为预先标记。  <br/> |是  <br/> |是  <br/> |
 |Relevance_status_description  <br/> |相关性  <br/> |相关性状态的说明。  <br/> |是  <br/> |是  <br/> |
-|Comment  <br/> |常规  <br/> |用户输入的注释。  <br/> |是  <br/> |是  <br/> |
+|评论  <br/> |常规  <br/> |用户输入的注释。  <br/> |是  <br/> |是  <br/> |
 |Export_input_path  <br/> |正在处理  <br/> |导出输入路径。  <br/> |是  <br/> |是  <br/> |
 |Pivot_ID  <br/> |临近重复项  <br/> |文件的数据透视 ID。  <br/> |是  <br/> |是  <br/> |
 |Family_size  <br/> |正在处理  <br/> |系列中的文件数。  <br/> |是  <br/> |是  <br/> |
@@ -130,9 +130,7 @@ ms.locfileid: "37074832"
 |Set_order_inclusives_first  <br/> |电子邮件  <br/> |电子邮件和附件：按时间顺序排列（Inclusives）。 文档：先透视，再按相似性分数（降序）。  <br/> |否  <br/> |是  <br/> |
 |Tagged_By  <br/> |相关性  <br/> |将文件标记为与特定问题相关的用户。  <br/> |否  <br/> |是  <br/> |
 |Word_count  <br/> |分析  <br/> |文档中的单词数。  <br/> |否  <br/> |是  <br/> |
-|||||||||||
-||||||
-||||||
+|
    
 ## <a name="related-topics"></a>相关主题
 

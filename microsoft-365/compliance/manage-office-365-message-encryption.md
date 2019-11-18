@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 完成设置 Office 365 邮件加密（OME）后，您可以通过多种方式自定义部署的配置。 例如，您可以配置是否启用一次性传递代码，在 Outlook 网页版中显示 "保护" 按钮，等等。 本文中的任务介绍了如何。
-ms.openlocfilehash: 5e087211ec72c9cc37896a9a48cc01ce3c1a8d07
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 780be179485fa18f7e0da0fabc7bb5365238da94
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074982"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685134"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
@@ -32,7 +32,7 @@ ms.locfileid: "37074982"
   
 ### <a name="to-manage-whether-recipients-can-use-social-ids-to-sign-in-to-the-ome-portal"></a>管理收件人是否可以使用社交 Id 登录到 OME 门户
   
-1. [使用远程 PowerShell 连接到 Exchange Online](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)。
+1. [使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)。
 
 2. 使用 SocialIdSignIn 参数运行 Set-omeconfiguration cmdlet，如下所示：
 

@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
-ms.openlocfilehash: 198459eb013c2f34b1a440d29375069175bfb0c6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d416e1e808ae6045f5510e0a051f038e4b38c06
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074961"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685284"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -33,7 +34,7 @@ ms.locfileid: "37074961"
   
 导出内容搜索结果包括准备结果，然后将其下载到本地计算机。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要导出搜索结果，您必须在安全 & 合规性中心中分配有导出管理角色。 此角色分配给内置电子数据展示管理员角色组。 它没有默认分配至组织管理角色组。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -47,7 +48,7 @@ ms.locfileid: "37074961"
     
      - Microsoft Edge
     
-        OR
+        或
     
      - Microsoft Internet Explorer 10 及更高版本
     
@@ -65,17 +66,17 @@ ms.locfileid: "37074961"
     
     将以下行添加到位于`<configuration>`和`</configuration>`标记之间的 machine.config 文件中。 ** 请务必将和`ProxyServer` `Port`替换为你的组织的正确值;例如， `proxy01.contoso.com:80` 。 
     
-    ```
+    ```text
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
-         <proxy proxyaddress="http://ProxyServer :Port " 
+         <proxy proxyaddress="https://ProxyServer :Port " 
                 usesystemdefault="False" 
                 bypassonlocal="True" 
                 autoDetect="False" />
        </defaultProxy>
     </system.net>
     ```
-    
+
 ## <a name="step-1-prepare-search-results-for-export"></a>第 1 步：准备要导出的搜索结果
 
 第一步是要准备用于导出的搜索结果。 当你准备结果时，会将其上载到 Microsoft 云中的 Microsoft 提供的 Azure 存储位置。 邮箱和网站中的内容将以每小时 2 GB 的最大速度上载。
@@ -170,7 +171,7 @@ ms.locfileid: "37074961"
     
 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 以下是有关导出搜索结果的详细信息。
   
@@ -256,7 +257,7 @@ ms.locfileid: "37074961"
     
     如果同时导出已编制索引和部分索引的项目，或者如果只从返回所有项目的内容搜索中导出已编制索引的项目，则会下载相同数量的项目。 即使内容搜索的估计搜索结果（在 Security & 合规性中心的搜索统计信息中显示）仍将包含对部分索引项目数的单独估计，这也会发生。 例如，假设搜索包含所有项目（搜索查询中没有关键字）的估计值显示已找到1000个项目，并且也找到了200个部分索引的项目。 在这种情况下，1000项目包含部分索引的项目，因为搜索将返回所有项目。 换言之，搜索返回的项目总数为1000个，而不是1200个项目（如您所料）。 如果您导出此搜索的结果并选择导出已编制索引和部分索引的项目（或仅导出部分索引项目），则将下载1000个项目。 同样，这是因为当您使用空白搜索查询返回所有项目时，部分索引的项目将包含在常规（已编制索引）的结果中。 在此示例中，如果您选择仅导出部分索引项，则只会下载200未编制索引的项。
     
-    另请注意，在上一示例中（导出已编制索引和部分索引的项目，或仅导出索引项目）时，导出的搜索结果中包含的**导出摘要**报告将列出1000项目估计的项目和1000下载项的原因与前面所述的相同。 
+    另请注意，在上一示例中（当导出已编制索引和部分索引的项目或仅导出索引项目）时，导出的搜索结果中包含的**导出摘要**报告将列出1000项目估计项目和1000下载项目，原因与前面所述的相同。 
     
 - 如果要从中导出结果的搜索是对组织中的特定内容位置或所有内容位置的搜索，则仅导出内容位置中包含与搜索条件匹配的项目的部分项目。 换言之，如果在邮箱或网站中找不到任何搜索结果，则不会导出该邮箱或网站中的任何部分索引项目。 这样做的原因是，从组织中的很多位置导出部分索引项目可能会增加导出错误的可能性，并增加导出和下载搜索结果所需的时间。
     
@@ -277,7 +278,7 @@ ms.locfileid: "37074961"
     
     如果选择导出部分索引项目，部分索引的邮箱项目将导出到单独的 PST 文件中，而不考虑您在 "将**Exchange 内容导出为**" 下选择的选项。
 
-- 如果搜索结果中返回部分索引项目（因为部分索引项目的其他属性与搜索条件匹配），则将使用常规搜索结果导出部分索引的项目。 因此，如果选择同时导出已编制索引的项目和部分索引项目（通过选择**所有项目（包括不可识别格式的项目）、加密或未按其他原因为导出选项编制索引**，则会导出部分索引项目将在结果 .csv 报告中列出常规结果。 它们将不会列在未编制索引的 items .csv 报告中。
+- 如果搜索结果中返回部分索引项目（因为部分索引项目的其他属性与搜索条件匹配），则将使用常规搜索结果导出部分索引的项目。 因此，如果选择同时导出已编制索引的项目和部分索引项目（通过选择**所有项目（包括不可识别格式的项目）、加密或未按其他原因为导出选项编制索引**，则在结果 .csv 报告中将列出以常规结果导出的部分已编制索引的项目。 它们将不会列在未编制索引的 items .csv 报告中。
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>导出单个邮件或 PST 文件
   

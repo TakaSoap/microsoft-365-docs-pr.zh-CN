@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以使用 Office 365 审核日志搜索工具来帮助您解决常见问题，例如调查已损坏的帐户、找出设置邮箱的电子邮件转发的用户，或者确定外部用户为什么能够成功登录到您的组织.
-ms.openlocfilehash: 255fd323ca08dd4ea759648fbe0673f5e5254c22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074493"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685254"
 ---
-# <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>搜索 Office 365 审核日志以解决常见方案
+# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>搜索 Office 365 审核日志，以调查常见的支持问题
 
-本文介绍如何使用 Office 365 审核日志搜索工具来帮助您解决常见的支持方案。 这包括使用审核日志执行以下操作：
+本文介绍如何使用 Office 365 审核日志搜索工具来帮助您调查常见的支持问题。 这包括使用审核日志执行以下操作：
 
 - 查找用于访问已泄露帐户的计算机的 IP 地址
 - 确定为邮箱设置电子邮件转发的发件商
@@ -114,13 +114,13 @@ a. 在 " **ObjectId** " 字段中，将显示设置了电子邮件转发的邮�
 
 b. 在 "**参数**" 字段中，值*ForwardingSmtpAddress*表示在邮箱上设置了电子邮件转发。 在此示例中，将邮件转发到 alpinehouse.onmicrosoft.com 组织外部的电子邮件地址 mike@contoso.com。
 
-c. *DeliverToMailboxAndForward*参数的*True*值指示传递给 sarad@alpinehouse.onmicrosoft.com 的邮件的副本 *，并*转发到 ForwardingSmtpAddress 指定的电子邮件地址。 ** 参数，在此示例中为 mike@contoso.com。 如果将*DeliverToMailboxAndForward*参数的值设置为*False*，则仅将电子邮件转发到*ForwardingSmtpAddress*参数指定的地址。 它不会传递到**ObjectId**字段中指定的邮箱。
+c. *DeliverToMailboxAndForward*参数的*True*值指示传递给 sarad@alpinehouse.onmicrosoft.com 的邮件的副本，*并*转发到*ForwardingSmtpAddress*参数指定的电子邮件地址，该地址在此示例中为 mike@contoso.com。 如果将*DeliverToMailboxAndForward*参数的值设置为*False*，则仅将电子邮件转发到*ForwardingSmtpAddress*参数指定的地址。 它不会传递到**ObjectId**字段中指定的邮箱。
 
 d. **UserId**字段指示在**ObjectId**字段中指定的邮箱上设置电子邮件转发的用户。 此用户也显示在搜索结果页上的**用户**列中。 在这种情况下，似乎邮箱的所有者在其邮箱上设置了电子邮件转发。
 
 如果您确定不应在邮箱上设置电子邮件转发，则可以通过在 Exchange Online PowerShell 中运行以下命令将其删除：
 
-```
+```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
@@ -221,9 +221,9 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
 以下两个示例方案将导致成功的**用户在审核活动中登录**，这是因为传递身份验证： 
 
-  - 拥有 Microsoft 帐户的用户（如 SaraD@outlook.com）尝试访问 fourthcoffee.onmicrosoft.com 中的 OneDrive for Business 帐户中的文档，其不是 SaraD@outlook.com 的相应来宾用户帐户fourthcoffee.onmicrosoft.com。
+  - 拥有 Microsoft 帐户的用户（如 SaraD@outlook.com）尝试访问 fourthcoffee.onmicrosoft.com 中的 OneDrive for Business 帐户中的文档，其不是 fourthcoffee.onmicrosoft.com 中的 SaraD@outlook.com 的相应来宾用户帐户。
 
-  - 在 Office 365 组织中拥有工作或学校帐户的用户（如 pilarp@fabrikam.onmicrosoft.com）尝试访问 contoso.onmicrosoft.com 中的 SharePoint 网站，并且他们不是 pilarp@fabrikam.com 的对应来宾用户帐户。contoso.onmicrosoft.com。
+  - 在 Office 365 组织中拥有工作或学校帐户的用户（如 pilarp@fabrikam.onmicrosoft.com）尝试访问 contoso.onmicrosoft.com 中的 SharePoint 网站，并且他们不是 contoso.onmicrosoft.com 中的 pilarp@fabrikam.com 的相应来宾用户帐户。
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>有关调查由传递身份验证产生的成功登录的提示
@@ -232,7 +232,7 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
    ![搜索外部用户执行的所有活动](media/PassThroughAuth2.png)
 
-    除了**用户登录**的活动之外，还可以返回其他审核记录，这是指您的组织中的用户与外部用户共享资源以及外部用户是否访问、修改或下载了一个文档。已与其共享。
+    除了**用户登录**的活动之外，还可以返回其他审核记录，如表明组织中的用户与外部用户共享的资源，以及外部用户是否访问、修改或下载了与它们共享的文档。
 
 - 搜索 SharePoint 共享活动，该活动将指示文件与由登录审核记录的**用户**标识的外部用户共享。 有关详细信息，请参阅[在 Office 365 审核日志中使用共享审核](use-sharing-auditing.md)。
 

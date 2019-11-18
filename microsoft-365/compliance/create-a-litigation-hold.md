@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: e6201fc938f7481a524a8d3c4171d4c1b67997e9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 720381c067ba17614df253ffdf0543821a0bf192
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074320"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685258"
 ---
 # <a name="create-a-litigation-hold"></a>创建诉讼保留
 
@@ -31,7 +31,7 @@ ms.locfileid: "37074320"
     
 - 用户主和存档邮箱中的项目将保留
     
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要在诉讼保留中放置 Exchange Online 邮箱，必须为其分配 Exchange Online 计划2许可证。 如果向某个邮箱分配了 Exchange Online 计划1许可证，则必须为其分配一个单独的 Exchange Online 存档许可证以将其置于保留状态。
     
@@ -64,17 +64,17 @@ ms.locfileid: "37074320"
 
 您还可以通过在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中运行以下命令来创建诉讼保留：
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
 ```
 
 由于未指定保留持续时间，上一个命令将无限期保留项目。 若要创建基于时间的保留，请使用以下命令：
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-有关详细信息，请参阅[设置邮箱](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox)。
+有关详细信息，请参阅[设置邮箱](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)。
 
 ## <a name="how-does-litigation-hold-work"></a>诉讼保留的工作原理是什么？
 

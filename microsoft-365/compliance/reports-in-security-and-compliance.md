@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用安全 & 合规中心获取 SharePoint Online 和 Exchange Online 组织的各种报告，以及 Azure Active Directory 报告。  '
-ms.openlocfilehash: 979eb59ed0adf115b9cdda4cd99f97845e9b4b4c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: af0fbe34d24853a5c6aa3afff664477ce93c2a03
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075978"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685127"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全与合规中心中的报告
 
@@ -54,8 +54,8 @@ ms.locfileid: "37075978"
 |**报告**|**说明**|
 |:-----|:-----|
 |**Office 365 审核日志报告** <br/> |您可以在 Office 365 组织中搜索用户和管理员活动的 Office 365 审核日志。 此报告包含 Exchange Online、SharePoint Online、OneDrive for Business 和 Azure Active Directory （这是 Office 365 的目录服务）中的 "用户和管理员活动" 条目。 有关详细信息，请参阅[在 Office 365 中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。  <br/> |
-|**Azure AD 报告** <br/> |若要查找 Office 365 组织中的异常或可疑登录活动，您可以使用 Microsoft Azure 中的登录和活动报告。 您还可以在 Azure AD 审核日志中查看事件。 若要在 Azure 中查看报告，只需单击 "**查看 AZURE AD 报告**"。 有关详细信息，请参阅： <br/><br/>[在 Office 365 中使用免费的 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)。 <br/> [查看您的访问和使用情况报告](http://go.microsoft.com/fwlink/p/?LinkId=506902)。  <br/> |
-|**Exchange 审核报告** <br/> | 您可以使用 Office 365 中的审核功能来跟踪组织管理员对 Exchange Online 配置所做的更改。 由 Microsoft 数据中心管理员或委派管理员对 Exchange Online 组织所做的更改也会记录下来。 对于 Exchange Online，管理员审核日志记录在默认情况下处于启用状态，因此您无需执行任何操作即可将其打开。 Exchange Online 还提供了邮箱审核日志记录功能，使您能够跟踪邮箱所有者以外的邮箱对邮箱的访问。 对于需要跟踪非所有者访问的每个邮箱，你必须启用邮箱审核日志记录。  <br/>  对于管理员和邮箱审核日志记录，你可以运行审核报告来查看审核日志条目。 你还可以导出邮箱和管理员审核日志，它们会作为电子邮件附件在 24 小时内以 XML 文件格式发送给你。 <br/><br/>有关导出审核日志的详细信息，请参阅：  <br/><br/> [导出邮箱审核日志](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [查看和导出数据中心管理员审核日志](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [搜索角色组更改或管理员审核日志](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Exchange 审核报告](http://go.microsoft.com/fwlink/p/?LinkID=395232)。  <br/> |
+|**Azure AD 报告** <br/> |若要查找 Office 365 组织中的异常或可疑登录活动，您可以使用 Microsoft Azure 中的登录和活动报告。 您还可以在 Azure AD 审核日志中查看事件。 若要在 Azure 中查看报告，只需单击 "**查看 AZURE AD 报告**"。 有关详细信息，请参阅： <br/><br/>[在 Office 365 中使用免费的 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)。 <br/> [查看您的访问和使用情况报告](https://go.microsoft.com/fwlink/p/?LinkId=506902)。  <br/> |
+|**Exchange 审核报告** <br/> | 您可以使用 Office 365 中的审核功能来跟踪组织管理员对 Exchange Online 配置所做的更改。 由 Microsoft 数据中心管理员或委派管理员对 Exchange Online 组织所做的更改也会记录下来。 对于 Exchange Online，管理员审核日志记录在默认情况下处于启用状态，因此您无需执行任何操作即可将其打开。 Exchange Online 还提供了邮箱审核日志记录功能，使您能够跟踪邮箱所有者以外的邮箱对邮箱的访问。 对于需要跟踪非所有者访问的每个邮箱，你必须启用邮箱审核日志记录。  <br/>  对于管理员和邮箱审核日志记录，你可以运行审核报告来查看审核日志条目。 你还可以导出邮箱和管理员审核日志，它们会作为电子邮件附件在 24 小时内以 XML 文件格式发送给你。 <br/><br/>有关导出审核日志的详细信息，请参阅：  <br/><br/> [导出邮箱审核日志](https://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [查看和导出数据中心管理员审核日志](https://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [搜索角色组更改或管理员审核日志](https://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Exchange 审核报告](https://go.microsoft.com/fwlink/p/?LinkID=395232)。  <br/> |
    
 ## <a name="supervisory-review-report"></a>监察审核报告
 

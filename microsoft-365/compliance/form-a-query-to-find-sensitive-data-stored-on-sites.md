@@ -9,17 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: 使用 SharePoint Online 中的数据丢失防护（DLP），您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后，可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
-ms.openlocfilehash: c9013e8334a4ef891885c7bc53b746b2db42b156
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0cf5d0446d8f12560e8fd7b0948dc5b6ce2bbe0f
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074828"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685231"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -46,7 +47,7 @@ ms.locfileid: "37074828"
   
 #### <a name="confidence-range"></a>置信区间
 
-最后，置信区间是指已检测到敏感类型实际匹配的置信水平。 置信区间的值与计数范围使用的原理相似。 您可以创建一个不包括计数范围的查询。 例如，若要搜索具有任意数量信用卡号的文档，只要可信度范围为 85% 或更高，就可以使用此查询： `SensitiveType:"Credit Card Number|*|85.."`。 
+最后，置信区间是指已检测到敏感类型实际匹配的置信水平。 置信区间的值与计数范围使用的原理相似。 您可以创建一个不包括计数范围的查询。 例如，若要搜索具有任意数量信用卡号的文档，只要可信度范围为85% 或更高，就可以使用此查询： `SensitiveType:"Credit Card Number|*|85.."`。 
   
 > [!IMPORTANT]
 > 星号（ `*`）是一个代表任何值有效的通配符。 可以在计数区域或置信区间`*`（而不是敏感类型）中使用通配符（）。 

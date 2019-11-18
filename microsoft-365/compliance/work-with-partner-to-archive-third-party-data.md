@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用 Office 365 合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: a22b4226efb582969072bbd92149080cca9b749c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9a1767baadb237196161032166f78c06dc7e099b
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075432"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685344"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作，以在 Office 365 中存档第三方数据
 
@@ -123,7 +123,7 @@ ms.locfileid: "37075432"
     
 - Instagram
     
-- 领英
+- LinkedIn
     
 - Pinterest
     
@@ -333,7 +333,7 @@ ms.locfileid: "37075432"
     
 - JXTA
     
-- 领英
+- LinkedIn
     
 - Microsoft Lync（2010、2013）
     
@@ -479,7 +479,7 @@ ms.locfileid: "37075432"
   
 1. 从通讯簿和组织中的其他地址列表中隐藏第三方数据邮箱;请参阅[管理用户邮箱](https://go.microsoft.com/fwlink/p/?LinkId=616058)。 或者，可以运行以下 PowerShell 命令：
     
-    ```
+    ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
@@ -494,8 +494,6 @@ ms.locfileid: "37075432"
       - [将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
       - [Office 365 中的保留策略概述](retention-policies.md)
-    
-       
     
     - 对访问第三方数据邮箱的所有者、委派用户和管理员启用邮箱审核日志记录；请参阅[Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)。 这使您可以审核任何有权访问第三方数据邮箱的用户执行的所有活动。
 
@@ -519,7 +517,7 @@ ms.locfileid: "37075432"
   
 - 用于连接到 Office 365 中的 Azure 服务的终结点：
 
-    ```
+    ```text
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
@@ -529,7 +527,7 @@ ms.locfileid: "37075432"
 
 从2018年9月30日起，Office 365 中的 Azure 服务将开始使用 Exchange Online 中的新式验证来验证尝试连接到 Office 365 组织的第三方数据连接器以导入数据。 此更改的原因是新式验证提供的安全性高于当前方法，后者基于使用前面所述的终结点连接到 Azure 服务的白名单第三方连接器。
 
-若要使第三方数据连接器能够使用新式新式身份验证方法连接到 Office 365，Office 365 组织中的管理员必须同意在 Azure Active Directory 中将连接器注册为受信任的服务应用程序。 这是通过接受允许连接器在 Azure Active Directory 中访问组织数据的权限请求来实现的。 接受此请求后，第三方数据连接器将作为企业应用程序添加到 Azure Active Directory，并表示为服务主体。 有关许可过程的详细信息，请参阅[租户管理员同意](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
+若要使第三方数据连接器能够使用新式新式身份验证方法连接到 Office 365，Office 365 组织中的管理员必须同意在 Azure Active Directory 中将连接器注册为受信任的服务应用程序。 这是通过接受允许连接器在 Azure Active Directory 中访问组织数据的权限请求来实现的。 接受此请求后，第三方数据连接器将作为企业应用程序添加到 Azure Active Directory，并表示为服务主体。 有关许可过程的详细信息，请参阅[租户管理员同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
 
 以下是访问和接受注册连接器的请求的步骤：
 
@@ -545,9 +543,9 @@ ms.locfileid: "37075432"
 
 在您的组织同意要在 Azure Active Directory 中注册第三方数据连接器的权限请求后，您的组织可以随时撤销该许可。 但是，废除连接器的同意意味着将不再将第三方数据源中的数据导入到 Office 365 中。
 
-若要撤销第三方数据连接器的同意，可以使用 Azure 门户中的 "**企业应用程序**" 边栏从 Azure Active Directory 中删除应用程序（通过删除相应的服务主体），或使用[New-msolserviceprincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal)在 Office 365 PowerShell 中删除。 您还可以在 Azure Active Directory PowerShell 中使用[AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
+若要撤销第三方数据连接器的同意，可以使用 Azure 门户中的 "**企业应用程序**" 边栏或使用 Office 365 PowerShell 中的[new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal)删除应用程序（通过删除相应的服务主体）从 azure Active Directory 中删除该应用程序。 您还可以在 Azure Active Directory PowerShell 中使用[AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某项缺少强制属性，则不会将其导入 Office 365。 导入过程将返回一条错误消息，说明无法导入项目的原因和缺少的属性。
     
@@ -563,7 +561,7 @@ ms.locfileid: "37075432"
    
 - 将项目成功导入 Office 365 中的邮箱时，会将唯一标识符作为 HTTP 响应的一部分返回给调用方。 此标识符（称为`x-IngestionCorrelationID`）可用于合作伙伴进行项的端到端跟踪的后续故障排除目的。 建议合作伙伴捕获此信息，并在他们的所在端相应地记录此信息。 下面是显示此标识符的 HTTP 响应的示例：
 
-    ```
+    ```text
     HTTP/1.1 200 OK
     Content-Type: text/xml; charset=utf-8
     Server: Microsoft-IIS/8.5
@@ -572,7 +570,7 @@ ms.locfileid: "37075432"
     X-Powered-By: ASP.NET
     Date: Tue, 02 Feb 2016 22:55:33 GMT 
     ```
- 
+
 - 您可以使用安全与合规中心中的内容搜索工具来搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 若要专门搜索这些导入项，可以在内容搜索的关键字框中使用以下消息属性-值对。
     
   - **`kind:externaldata`**：使用此属性-值对可搜索所有第三方数据类型。 例如，若要搜索从第三方数据源导入，并在导入项目的 Subject 属性中包含 "contoso" 一词的项目，请使用关键字查询`kind:externaldata AND subject:contoso`。

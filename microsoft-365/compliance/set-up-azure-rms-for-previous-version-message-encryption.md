@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 早期版本的 Office 365 邮件加密取决于 Microsoft Azure 权限管理（以前称为 "Windows Azure Active Directory 权限管理"）。
-ms.openlocfilehash: 84922a57c6245cf3214f17ba922417b5e025b796
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a6ba18982a65ff9687374b9e5dc370646817d96d
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075192"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38685166"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>为以前版本的 Office 365 邮件加密设置 Azure 权限管理
 
@@ -59,7 +59,7 @@ TPD 是一个 XML 文件，其中包含有关您的组织的权限管理设置�
 
 2. 选择与您的 Office 365 组织的地理位置对应的密钥共享 URL：
 
-|**Location**|**键共享位置 URL**|
+|**位置**|**键共享位置 URL**|
 |:-----|:-----|
 |北美  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |欧盟  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
@@ -69,46 +69,46 @@ TPD 是一个 XML 文件，其中包含有关您的组织的权限管理设置�
    
 3. 通过运行[get-irmconfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.160%29.aspx) cmdlet 配置键共享位置，如下所示： 
     
-  ```
+  ```powershell
   Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
   ```
 
     例如，如果您的组织位于北美，若要配置关键共享位置，请执行以下操作：
-    
-  ```
+
+  ```powershell
   Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
   ```
 
 4. 使用-RMSOnline 开关运行[import-rmstrustedpublishingdomain](https://technet.microsoft.com/library/jj200724%28v=exchg.150%29.aspx) cmdlet，以从 Azure 权限管理导入 TPD： 
-    
-  ```
+
+  ```powershell
   Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
   ```
 
     其中， *TPDName*是要用于 TPD 的名称。 例如，"Contoso 北方美洲 TPD"。 
-    
+
 5. 若要验证您是否已成功将 Office 365 组织配置为使用 Azure 权限管理服务，请运行[get-irmconfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) cmdlet 和-RMSOnline 开关，如下所示： 
-    
-  ```
+
+  ```powershell
   Test-IRMConfiguration -RMSOnline
   ```
 
     此外，此 cmdlet 还检查与 Azure 权限管理服务的连接，下载 TPD，并检查其有效性。
-    
+
 6. 运行[get-irmconfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) cmdlet，如下所示，以禁用 Web 和 outlook 上的 outlook 中提供的 Azure 权限管理模板： 
-    
-  ```
+
+  ```powershell
   Set-IRMConfiguration -ClientAccessServerEnabled $false
   ```
 
 7. 运行[get-irmconfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) cmdlet，如下所示，为您的基于云的电子邮件组织启用 Azure 权限管理，并将其配置为使用 Azure 权限管理 for Office 365 邮件加密： 
-    
-  ```
+
+  ```powershell
   Set-IRMConfiguration -InternalLicensingEnabled $true
   ```
 
 8. 若要验证您是否已成功导入 TPD 并启用 Azure 权限管理，请使用 Get-irmconfiguration cmdlet 测试 Azure 权限管理功能。 有关详细信息，请参阅 [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx) 中的"示例 1"。
-    
+
 ## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>我已将早期版本的 OME 设置为使用 Active Directory 权限管理，而不是 Azure 信息保护，我该怎么办？
 <a name="importTPDs"> </a>
 
@@ -129,5 +129,3 @@ TPD 是一个 XML 文件，其中包含有关您的组织的权限管理设置�
 [有关 Office 365 加密的技术参考详情](technical-reference-details-about-encryption.md)
   
 [什么是 Azure 权限管理？](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
-  
-

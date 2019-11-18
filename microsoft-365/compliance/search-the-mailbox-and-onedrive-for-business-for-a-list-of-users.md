@@ -7,23 +7,25 @@ ms.date: 1/3/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用内容搜索和本文中的脚本在邮箱和 OneDrive for business 网站中搜索一组用户。
-ms.openlocfilehash: 9c8de90f8d2faee73ba269466f90478bc72b708e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02b89646fdb4175d30dce8840ac069f62995cbbc
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075343"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685263"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用内容搜索在邮箱和 OneDrive for Business 站点中搜索用户列表
 
 Security & 合规性中心提供了许多 Windows PowerShell cmdlet，可让您自动执行耗时和电子数据展示相关的任务。 目前，在安全 & 合规中心中创建内容搜索，以搜索大量的保管人内容位置并准备时间和准备情况。 在创建搜索之前，您必须收集每个 OneDrive for Business 网站的 URL，然后将每个邮箱和 OneDrive for business 网站添加到搜索中。 在将来的版本中，这在安全 & 合规性中心中的工作更简单。 在此之前，可以使用本文中的脚本自动执行此过程。 此脚本会提示您组织的 "我的用户" 域的名称（例如**** ，URL https://contoso-my.sharepoint.com)中的 contoso、用户电子邮件地址的列表、新内容搜索的名称以及要使用的搜索查询）。 该脚本将获取列表中每个用户的 OneDrive for business URL，然后使用您提供的搜索查询，创建并启动搜索该列表中每个用户的邮箱和 OneDrive for business 网站的内容搜索。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Security & 合规中心中的电子数据展示管理器角色组的成员，SharePoint Online 全局管理员才能在步骤3中运行该脚本。
     
@@ -45,7 +47,7 @@ Security & 合规性中心提供了许多 Windows PowerShell cmdlet，可让您�
   
 下面是一个[Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)命令，您可以 runt 以获取组织中所有用户的电子邮件地址列表，并将其保存到名为`Users.txt`的文本文件中。 
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
@@ -70,7 +72,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `SearchEXOOD4B.ps1`。 将该文件保存到您在步骤2中保存用户列表的同一文件夹中。
     
-  ```
+  ```powershell
   # This PowerShell script will prompt you for the following information:
   #    * Your user credentials 
   #    * The name of your organization's MySite domain                                              
@@ -106,7 +108,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
       }
   }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -114,7 +116,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "SharePoint Online Management Shell isn't installed, please install from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
+          Write-Error "SharePoint Online Management Shell isn't installed, please install from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
           return;
       }
   }
@@ -164,7 +166,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 3. 启动脚本;例如：
     
-    ```
+    ```powershell
     .\SearchEXOOD4B.ps1
     ```
 
@@ -180,4 +182,4 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 搜索查询（将其留空可返回内容位置中的所有项）。
     
-    此脚本获取每个 OneDrive for Business 网站的 Url，然后创建并启动搜索。 可以在 Security & 合规性中心 PowerShell 中运行**new-compliancesearch** cmdlet，以显示搜索统计信息和结果，也可以转到安全 & 合规性中心中的 "**内容搜索**" 页以查看信息关于搜索。 
+    此脚本获取每个 OneDrive for Business 网站的 Url，然后创建并启动搜索。 您可以在 Security & 合规性中心 PowerShell 中运行**new-compliancesearch** cmdlet，以显示搜索统计信息和结果，也可以转到安全 & 合规性中心中的 "**内容搜索**" 页以查看有关搜索的信息。 

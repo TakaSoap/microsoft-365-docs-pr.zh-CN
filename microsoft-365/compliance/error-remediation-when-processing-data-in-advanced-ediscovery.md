@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 02fa8870d6edb4e1a6616604ee0e98638b217237
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66c515ff083d8b71a9ec4851986639063858514d
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074963"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38685052"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 
@@ -95,6 +95,14 @@ ms.locfileid: "37074963"
 11. 运行 AzCopy 命令后，单击 "**下一步：处理文件**"。
 
     处理完成后，可以转到 "查看" 设置并查看修正的文件。 
+
+## <a name="remediating-errors-in-container-files"></a>修正容器文件中的错误
+
+在使用高级电子数据展示无法提取容器文件内容（如 .zip 文件）的情况下，可以下载容器，并将内容扩展到原始容器所在的同一个文件夹中。 扩展的文件将被视为父容器，就像它最初由高级电子数据展示展开一样。 此过程如上文所述，除了将单个文件上载为替换文件之外。  上载修正的文件时，请勿包含原始容器文件。
+
+## <a name="remediating-errors-by-uploading-the-extracted-text"></a>通过上传提取的文本修正错误
+
+有时，不能将文件修正为高级电子数据展示可以解释的本机格式。 但您可以将原始文件替换为包含原文件（在称为*文本覆盖*的过程中）的原始文本的文本文件。 为此，请按照本文中介绍的步骤操作，但不是使用本机格式修正原始文件，而是创建一个包含原始文件中提取的文本的文本文件，然后使用原始文件名上传文本文件。附加了 .txt 后缀。 例如，在错误修正过程中使用文件名335850cc-6602-4af0-acfa-1d14d9128ca2 下载文件。 在本机应用程序中打开文件，复制文本，然后将其粘贴到名为335850cc-6602-4af0-acfa-1d14d9128ca2 的新文件中。 执行此操作时，请务必在将修正的文本文件上载到高级电子数据展示之前，从本地计算机上的修正文件位置中删除原始文件（以本机格式）。
 
 ## <a name="what-happens-when-files-are-remediated"></a>修正文件时会发生什么情况
 

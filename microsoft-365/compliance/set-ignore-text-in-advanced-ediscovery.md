@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: '了解在使用 Office 365 高级电子数据展示中的分析和处理模块时，如何定义要忽略特定文本的规则。  '
-ms.openlocfilehash: 70d9879f1cb6b3def06ff978fc2f7fa8f20a92f0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cb40ebe946b65f08de9ffc27ff830fbf76d4f8a7
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075570"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685140"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>设置用于在 Office 365 高级电子数据展示中进行分析的 "忽略文本" 选项
 
@@ -96,7 +96,7 @@ ms.locfileid: "37075570"
   - 正则 eExpression 字段的长度不受限制。
     
 > [!TIP]
-> 有关正则表达式的说明和详细语法，请参阅：[正则表达式语言-快速参考](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx)。 
+> 有关正则表达式的说明和详细语法，请参阅：[正则表达式语言-快速参考](https://msdn.microsoft.com/library/az24scfc%28v=vs.110%29.aspx)。 
   
 ## <a name="define-ignore-text-rule"></a>定义 "忽略文本" 规则
 

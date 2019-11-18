@@ -1,5 +1,5 @@
 ---
-title: 从原始位置删除项目
+title: 从项目的原始位置删除项目
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: 本文介绍如何使用安全 & 合规性中心中的新数据调查（预览版）工具删除其原始位置中的项目。
-ms.openlocfilehash: d855a8e4c69d64cdb37c40b37b042c2571af67a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070605"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38685242"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>从原始位置删除项目（预览）
 
@@ -27,9 +29,9 @@ ms.locfileid: "37070605"
 
 使用数据调查，可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您拥有在证据集内保留的项目的副本以供进一步调查或保留为参考。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-- 若要删除项目，您必须在安全 & 合规性中心中为其分配**搜索和清除**角色。 默认情况下，此角色分配给内置的 "数据调查者" 角色组。 
+- 若要删除项目，您必须在安全 & 合规性中心中为其分配**搜索和清除**角色。 默认情况下，此角色分配给内置的 "数据调查者" 角色组。
 
 - 本主题中的过程假定您已运行与调查相关的搜索并将搜索结果添加到证据集。 在搜索结果位于证据中之后，您可以选择一个或多个要删除的项目。 有关详细信息，请参阅[在调查中搜索数据](search-for-data.md)。
 
@@ -41,7 +43,7 @@ ms.locfileid: "37070605"
 
 1. 在 "**数据调查**" 工具中，打开包含要删除的项目的数据调查，然后单击 "**证据**" 选项卡。
 
-2. 选择要删除的项目。 您可以选择证据集内的所有项目，也可以仅选择项目的子集。 
+2. 选择要删除的项目。 您可以选择证据集内的所有项目，也可以仅选择项目的子集。
 
    > [!NOTE]
    > 如果在 SharePoint 和 OneDrive 中选择了电子邮件附件或附加到文档的文件，则当项目从其原始位置删除时，父项目也将被选中并被删除。 同样，如果选择包含附件的项，则会删除父项项目和所有附件。
@@ -57,11 +59,11 @@ ms.locfileid: "37070605"
    > [!NOTE]
    > 在上面的屏幕快照中，项目数指示选定要删除的项目数。 文档数指示包含附加到父项目的任何文件的项目总数。 例如，如果您选择一封电子邮件，并且该邮件包含附加的 Word 文档，则 "**选定的文档**" 下显示的项目数和文档数将为**1 个项目（2个文档）**。
 
-您可以在 "**作业**" 选项卡上跟踪 "**从原始位置删除项目**" 作业的进度。单击该作业以显示弹出页面。 
+您可以在 "**作业**" 选项卡上跟踪 "**从原始位置删除项目**" 作业的进度。单击该作业以显示弹出页面。
 
 ![用于从原始位置作业中删除项目的飞出页面](media/DataInvestigationsDeleteItems3.png)
 
-删除作业中的项目时，作业状态将设置为 "**成功**"。 还会显示已完成作业的时间和日期。 
+删除作业中的项目时，作业状态将设置为 "**成功**"。 还会显示已完成作业的时间和日期。
 
 ![已完成的 "删除项目" 作业](media/DataInvestigationsDeleteItems4.png)
 

@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 安装和使用 Azure 存储资源管理器下载从高级电子数据展示中的审阅集导出的文档。
-ms.openlocfilehash: d7af50b37383e69c666084a93b5b91591a76c114
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 安装和使用 Azure 存储资源管理器下载从数据调查中的证据导出的文档。
+ms.openlocfilehash: af71cb43f91c940e4c5edb8ca7be39f4bca9b3be
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074116"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685292"
 ---
 # <a name="download-export-jobs"></a>下载导出作业
 
-在高级电子数据展示案例中从审阅集导出文档时，会将文档上载到 Microsoft 提供的 Azure 存储位置或由组织管理的 Azure 存储位置。 所使用的 Azure 存储位置的类型取决于导出文档时选择的选项。 
+当您在数据调查中从证据导出文档时，这些文档将上载到 Microsoft 提供的 Azure 存储位置或由您的组织管理的 Azure 存储位置。 所使用的 Azure 存储位置的类型取决于导出文档时选择的选项。 
 
-本文提供了有关如何使用 Microsoft Azure 存储资源管理器连接到 Azure 存储位置以浏览和下载导出的文档的说明。 有关 Azure 存储资源管理器的详细信息，请参阅[快速入门：使用 Azure 存储资源管理器](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
+本文提供了有关如何使用 Microsoft Azure 存储资源管理器连接到 Azure 存储位置以浏览和下载导出的文档的说明。 有关 Azure 存储资源管理器的详细信息，请参阅[快速入门：使用 Azure 存储资源管理器](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>步骤1：安装 Azure 存储资源管理器
 
@@ -35,7 +35,7 @@ ms.locfileid: "37074116"
 
 下一步是获取在创建导出作业以[从审阅集导出文档](export-documents-from-review-set.md)时生成的共享访问签名（SAS） URL。 您可以复制上载到 Microsoft 提供的 Azure 存储位置或由组织管理的 Azure 存储位置的文档的 SAS URL。 无论在哪种情况下，都可以使用 SAS URL 连接到步骤3中的 Azure 存储位置。
 
-1. 在 "**高级电子数据展示**" 页上，转到事例，然后单击 "**导出**" 选项卡。
+1. 在 "**数据调查**" 页上，转到 "调查"，然后单击 "**导出**" 选项卡。
 
 2. 在 "**导出**" 选项卡上，单击要下载的导出作业。
 
@@ -61,9 +61,9 @@ ms.locfileid: "37074116"
 
     ![将 SAS URL 粘贴到 URI 框中](media/AzureStorageConnect3.png)
 
-    请注意，SAS URL 的一部分显示在 "**显示名称**" 框中。 这将在连接到存储位置后用作**存储帐户**下创建的容器的显示名称。 此名称由高级电子数据展示事例的 ID 和唯一标识符组成。 您可以保留默认的显示名称，也可以对其进行更改。 如果您更改它，则显示名称必须是唯一的。
+    请注意，SAS URL 的一部分显示在 "**显示名称**" 框中。 这将在连接到存储位置后用作**存储帐户**下创建的容器的显示名称。 此名称由数据调查的 ID 和唯一标识符组成。 您可以保留默认的显示名称，也可以对其进行更改。 如果您更改它，则显示名称必须是唯一的。
 
-5.  单击“下一步”。****
+5.  单击“**下一步**”。
 
     将显示 "**连接摘要**" 页。
    
@@ -73,7 +73,7 @@ ms.locfileid: "37074116"
 
     " **Blob 容器**" 节点（在 "**存储帐户** > **（附加容器）** \> " 下打开）。 
 
-    ![](media/AzureStorageConnect5.png)
+    ![在 "Blob 容器" 节点中导出作业](media/AzureStorageConnect5.png)
 
     它包含使用步骤4中的显示名称命名的容器。 此容器包含您创建的每个导出作业的文件夹。 这些文件夹使用与导出作业的 ID 对应的 ID 进行命名。 您可以在弹出页面上的 "**支持信息**" 下找到这些导出 id （和导出的名称），在 "**作业**" 选项卡上列出的每个**为导出作业准备数据的每个准备数据**。
 
@@ -85,7 +85,7 @@ ms.locfileid: "37074116"
 
    "导出作业" 文件夹包含以下项目。 导出文件夹中的实际项目由创建导出作业时配置的导出选项决定。 有关详细信息，请参阅[从审阅集导出文档](export-documents-from-review-set.md)。
 
-    - Export_load_file：此 CSV 文件是包含有关每个导出文档的信息的详细导出报告。 该文件由一个用于文档的每个元数据属性的列组成。 有关此报告中包含的元数据的列表和说明，请参阅[高级电子数据展示中的文档元数据字段](document-metadata-fields.md)的表中的 "**导出的字段名称**" 列。
+    - Export_load_file .csv：此 CSV 文件是包含有关每个导出文档的信息的详细导出报告。 该文件由一个用于文档的每个元数据属性的列组成。 有关此报告中包含的元数据的列表和说明，请参阅[高级电子数据展示中的文档元数据字段](document-metadata-fields.md)的表中的 "**导出的字段名称**" 列。
     
     - 摘要：包含导出摘要（包括导出统计信息）的文本文件。
     
@@ -93,7 +93,7 @@ ms.locfileid: "37074116"
      
     - NativeFiles：此文件夹包含每个导出文档的本机文件版本。
     
-    - Error_files：当导出作业包含任何错误文件时，此文件夹包含以下项： 
+    - Error_files：当导出作业包含任何错误文件时，此文件夹包括以下项目： 
         
       - ExtractionError：此 CSV 文件包含未从其父项正确提取的文件的可用元数据。
         
@@ -101,7 +101,7 @@ ms.locfileid: "37074116"
  
 8. 若要导出导出中的所有内容，请选择 "导出" 文件夹，然后单击 "**下载**"。
 
-9. 指定要在其中下载导出文件的位置，然后单击 "选择文件夹"。
+9. 指定要在其中下载导出文件的位置，然后单击 "**选择文件夹**"。
 
     Azure 存储资源管理器将启动导出过程。 下载导出项目的状态将显示在 "**活动**" 窗格中。 下载完成后，会显示一条消息。
 

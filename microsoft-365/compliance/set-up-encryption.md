@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: 使用 Office 365 时，某些加密功能在默认情况下处于打开状态。可以配置其他功能以满足某些合规性或法律要求。
-ms.openlocfilehash: 3bb76d70bd364bd461721d6277516801b3675031
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f758bc026ee1ef8b071b92d29c950c3f436305a3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075188"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685139"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>设置 Office 365 企业版中的加密
 
@@ -40,4 +40,4 @@ ms.locfileid: "37075188"
 
 ## <a name="additional-information"></a>其他信息
 
-若要了解有关包含加密选项的文件保护解决方案的详细信息，请参阅[Office 365 中的文件保护解决方案](https://www.microsoft.com/en-us/download/details.aspx?id=55523)。
+若要了解有关包含加密选项的文件保护解决方案的详细信息，请参阅[Office 365 中的文件保护解决方案](https://www.microsoft.com/download/details.aspx?id=55523)。

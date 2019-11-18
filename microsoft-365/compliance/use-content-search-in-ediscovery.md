@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: '使用 PowerShell 脚本根据在安全 & 合规中心中创建的搜索在 Exchange Online 中创建就地电子数据展示搜索。 '
-ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a16bf747da2d2eb8219ac4c13f4ff8c34d37b2c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075258"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685318"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>在电子数据展示工作流中使用内容搜索
 
@@ -62,11 +62,11 @@ ms.locfileid: "37075258"
   
 下面的示例展示了如何使用 PowerShell 搜索组织中的所有邮箱。 搜索查询将返回 2015 年 1 月 1 日和 2015 年 6 月 30 日之间发送的以及主题行中包含短语“财务报告”的所有邮件。 第一个命令创建搜索，第二个命令运行搜索。 
   
-```
+```powershell
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
 ```
 
-```
+```powershell
 Start-ComplianceSearch -Identity "Search All-Financial Report"
 ```
 
@@ -80,7 +80,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   
 1. 使用文件名后缀. ps1 将以下文本保存到 PowerShell 脚本文件中。 例如，可以将其保存到名为`SourceMailboxes.ps1`的文件中。
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -112,7 +112,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
 
 2. 在安全 & 合规性中心 PowerShell 中，转到上一步中创建的脚本所在的文件夹，然后运行该脚本;例如：
     
-    ```
+    ```powershell
     .\SourceMailboxes.ps1
     ```
 
@@ -128,7 +128,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   
 1. 使用 .ps1 文件名后缀将以下文本保存到 Windows PowerShell 脚本文件。 例如，可以将其保存到名为`ConnectEXO-CC.ps1`的文件中。
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -139,7 +139,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
 
 2. 在本地计算机上，打开 Windows PowerShell，转到上一步中创建的脚本所在的文件夹，然后运行该脚本;例如：
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
 
@@ -167,7 +167,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
     
 1. 使用 ps1 文件名后缀将以下文本保存到 Windows PowerShell 脚本文件。 例如，可以将其保存到名为`CreateMBSearchFromComplianceSearch.ps1`的文件中。
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -231,12 +231,11 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   {
     New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
   }
-  
   ```
 
 2. 在您在步骤2中创建的 Windows PowerShell 会话中，转到在上一步中创建的脚本所在的文件夹，然后运行该脚本;例如：
     
-    ```
+    ```powershell
     .\CreateMBSearchFromComplianceSearch.ps1
     ```
 

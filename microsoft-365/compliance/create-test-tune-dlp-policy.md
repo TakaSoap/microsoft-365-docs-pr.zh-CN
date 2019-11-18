@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: b13dab63514dc8658479dbd68d5a014dc7347bb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074256"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685123"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -107,7 +107,7 @@ Office 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](wha
 
 ![不通过校验和的澳大利亚税收文件编号](media/DLP-create-test-tune-email-test1.png)
 
-相比之下，带有 "税收 file number" 一词的电子邮件和传递校验和的有效 TFN 将触发该策略。 对于此处的记录，使用的 TFN 是从生成有效但不是正版的 TFNs 的网站获取的。 有类似的网站生成[有效但假冒信用卡号](http://www.fakecreditcardgenerator.net/)。 此类网站非常有用，因为测试 DLP 策略时最常见的错误之一是使用无效的虚设号码，而不会传递校验和（因此不会触发策略）。
+相比之下，带有 "税收 file number" 一词的电子邮件和传递校验和的有效 TFN 将触发该策略。 对于此处的记录，使用的 TFN 是从生成有效但不是正版的 TFNs 的网站获取的。 有类似的网站生成[有效但假冒信用卡号](https://www.fakecreditcardgenerator.net/)。 此类网站非常有用，因为测试 DLP 策略时最常见的错误之一是使用无效的虚设号码，而不会传递校验和（因此不会触发策略）。
 
 ![传递校验和的澳大利亚税收文件编号](media/DLP-create-test-tune-email-test2.png)
 
@@ -203,7 +203,7 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![启用策略的选项](media/DLP-create-test-tune-turn-on-policy.png)
  
-如果你正在等待查看策略将生效的时间，请[连接到 Security & 合规性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ，然后运行[DlpCompliancePolicy cmdlet](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) ，以查看 DistributionStatus。
+如果你正在等待查看策略将生效的时间，请[连接到 Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ，然后运行[DlpCompliancePolicy cmdlet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) ，以查看 DistributionStatus。
 
 ![在 PowerShell 中运行 cmdlet](media/DLP-create-test-tune-PowerShell.png)
 

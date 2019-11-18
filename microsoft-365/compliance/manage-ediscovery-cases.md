@@ -7,15 +7,17 @@ ms.date: 10/12/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: 使用安全 & 合规性中心创建电子数据展示保留，以及访问和管理组织中的电子数据展示案例。
-ms.openlocfilehash: 026bd31145dc73261012a9cde1b6befd19ddba4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a2c276b80f5f713ad8c044aa8f1339413bb3f0bd
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075017"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685271"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全与合规中心管理电子数据展示事例
 
@@ -104,7 +106,7 @@ ms.locfileid: "37075017"
     
     ![新建事例页](media/538f66b8-eb6e-4c4c-83d8-7154fd85883a.png)
   
-    新事例将显示在**电子数据展示**页面上的案例列表中。 请注意，您可以将光标悬停在事例名称上方，以显示有关事例的信息，包括案例的状态（**活动**或**已关闭**）、案例说明（在上一步中创建）以及最后一次更改事例的时间和更改的作者。
+    新事例将显示在**电子数据展示**页面上的案例列表中。 请注意，您可以将光标悬停在事例名称上方，以显示有关事例的信息，包括案例的状态（**活动**或**已关闭**）、案例的说明（在上一步中创建）以及最后更改了该事例的时间和更改时间。
     
     > [!TIP]
     > 创建新事例后，可以随时对其进行重命名。 只需在**电子数据展示**页面上单击事例的名称即可。 在 "**管理此案例**" 弹出页面上，更改显示在 "**名称**" 下的框中的名称，然后保存更改。 
@@ -258,17 +260,17 @@ ms.locfileid: "37075017"
     
 8. 在 "**新建搜索**" 页上，您可以添加关键字和条件来创建搜索查询。 <br/>![搜索条件和条件](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-9. 在“您想要我们查找哪些内容”**** 下的框中，键入搜索查询。 您可以指定关键字、邮件属性（例如发送和接收日期）或文档属性（例如文件名或上次更改文档的日期）。 您可以使用更复杂的查询，这些查询使用布尔运算符，例如**AND**、 **or**、 **NOT**、 **NEAR**或**ONEAR**。 您还可以在文档中搜索敏感信息（如社会保险号），或搜索在外部共享的文档。 如果将 "关键字" 框留空，则位于指定内容位置的所有内容都将包含在搜索结果中。 
+9. 在“您想要我们查找哪些内容”**** 下的框中，键入搜索查询。 您可以指定关键字、邮件属性（例如发送和接收日期）或文档属性（例如文件名或上次更改文档的日期）。 您可以使用更复杂的查询，这些查询使用布尔运算符，例如**AND**、 **or**、 **NOT**、 **NEAR**或**ONEAR**。 还可以搜索文档中的敏感信息（如社会保险号），或者搜索已外部共享的文档。 如果将 "关键字" 框留空，则位于指定内容位置的所有内容都将包含在搜索结果中。 
     
 10. 您可以单击 "**显示关键字列表**" 复选框，然后在每行中键入关键字。 如果执行此操作，则每行上的关键字通过所创建的搜索查询中的**OR**运算符进行连接。 
     
     ![搜索关键字](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
-    为什么要使用关键字列表？ 您可以获取显示与每个关键字匹配的项目数的统计信息。 这可以帮助您快速确定哪些关键字最有效（最少）。 您还可以在行中使用关键字短语（括在括号中）。 有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计](view-keyword-statistics-for-content-search.md)信息。
+    为什么使用关键字列表？ 可以获取与每个关键字匹配的项数量的统计信息。 这可以帮助你快速标识哪些关键字最有效和最无效。 还可以在行中使用关键字短语（使用括号包围）。 有关搜索统计信息的更多信息，请参阅[查看内容搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md)。
     
     有关使用关键字列表的详细信息，请参阅[详细信息](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)。
     
-11. 单击 "**检查查询以查找打字错误**" 以检查查询是否有不受支持的字符以及可能不大写的布尔运算符。 不受支持的字符通常是隐藏的，通常会导致搜索错误或返回意外的结果。 有关检查不受支持的字符的详细信息，请参阅[检查内容搜索查询是否有错误](check-your-content-search-query-for-errors.md)。
+11. 单击 "**检查查询以查找打字错误**" 以检查查询是否有不受支持的字符以及可能不大写的布尔运算符。 不受支持的字符往往会被隐藏，并且通常会引发搜索错误或者返回意外结果。 有关检查到的不受支持字符的详细信息，请参阅[检查内容搜索查询中是否存在错误](check-your-content-search-query-for-errors.md)。
     
 12. 在 "**条件**" 下，向搜索查询添加条件以缩小搜索范围，并返回一组更细化的结果。 每个条件都可以将一个子句添加到 KQL 搜索查询中，该搜索查询会在开始搜索时进行创建并运行。 条件在逻辑上通过 **AND** 运算符连接到关键字查询（在关键字框中指定）。 这意味着，项目必须满足关键字查询和要在结果中包括的条件。 这就是条件如何帮助缩小结果范围的原理。 
     
@@ -307,7 +309,7 @@ ms.locfileid: "37075017"
     
     ![单击 "导出" 以显示导出作业的列表](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
   
-    您可能需要单击 "**刷新**![刷新"](media/O365-MDM-Policy-RefreshIcon.gif)图标以更新导出作业列表，以显示您刚创建的导出作业。 请注意，导出作业与相应的内容搜索的名称相同，追加到搜索名称的末尾的 **_Export** 。 
+    您可能需要单击 "**刷新**![刷新"](media/O365-MDM-Policy-RefreshIcon.gif)图标以更新导出作业列表，以显示您刚创建的导出作业。 请注意，导出作业与相应的内容搜索具有相同的名称，并将 **_Export**追加到搜索名称的末尾。 
     
 6. 单击您刚创建的导出作业，以在详细信息窗格中显示状态信息。 此信息包括已传输到 Microsoft 云中 Azure 存储区域的项目百分比。
     
@@ -491,7 +493,7 @@ ms.locfileid: "37075017"
     
     在此过程完成后，将在**电子数据展示**页面上将该案例的状态更改为 "**活动**"。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 <a name="moreinfo_1"> </a>
 
 - **对于与电子数据展示事例相关联的电子数据展示案例或保留是否有任何限制？** 下表列出了电子数据展示事例和事例保留的限制。
@@ -533,9 +535,9 @@ ms.locfileid: "37075017"
     
   - 若要将位于 Office 365 组和 Microsoft 团队中的内容置于保留状态，您必须指定与组或团队关联的邮箱和 SharePoint 网站。
     
-  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Office 365 组或 Microsoft 团队的属性。 如果要获取与 Office 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令将显示名为 "高级领导" 团队的 Office 365 组的选定属性： 
+  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Office 365 组或 Microsoft 团队的属性。 如果要获取与 Office 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性： 
     
-  ```
+  ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
@@ -545,29 +547,29 @@ ms.locfileid: "37075017"
   ```
 
     > [!NOTE]
-    > 若要运行**remove-unifiedgroup** cmdlet，您必须在 Exchange Online 中分配 "仅查看收件人" 角色，或者是分配了 "仅查看收件人" 角色的角色组的成员。 
+    > 若要运行 **Get-UnifiedGroup** cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。 
   
   - 在搜索用户的邮箱时，不会搜索用户是其成员的任何 Office 365 组或 Microsoft 团队。 同样，当您放置 Office 365 组或 Microsoft 团队保留时，只有组邮箱和组网站处于保留状态。除非将组成员的邮箱和 OneDrive for Business 网站显式添加到保留，否则不会将其置于保留状态。 因此，如果出于法律原因需要将 Office 365 组或 Microsoft 团队置于保留状态，请考虑在同一保留中添加组成员和工作组成员的邮箱和 OneDrive for business 网站。
     
-  - 若要获取 Office 365 组或 Microsoft 团队的成员列表，可以在 Microsoft 365 管理中心的 "**家庭\>工作组**" 页上查看属性。 或者，您可以在 Exchange Online PowerShell 中运行以下命令： 
+  - 若要获取 Office 365 组或 Microsoft 团队的成员列表，可以在 Microsoft 365 管理中心的 "**家庭\>工作组**" 页上查看属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令： 
     
-  ```
-  Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
-  ```
+    ```powershell
+    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
+    ```
 
     > [!NOTE]
-    > 若要运行**UnifiedGroupLinks** cmdlet，您必须在 Exchange Online 中分配 "仅查看收件人" 角色，或者是分配了 "仅查看收件人" 角色的角色组的成员。 
+    > 若要运行 **Get-UnifiedGroupLinks** cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。 
   
-  - 属于 Microsoft 团队渠道的对话存储在与 Microsoft 团队相关联的邮箱中。 同样，在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此，您必须将 Microsoft 团队邮箱和 SharePoint 网站置于保留状态，以在频道中保留对话和文件。
+  - 属于 Microsoft 团队渠道的对话存储在与 Microsoft 团队相关联的邮箱中。 同样，团队成员在渠道中共享的文件将存储在团队的 SharePoint 网站上。 因此，您必须将 Microsoft 团队邮箱和 SharePoint 网站置于保留状态，以在频道中保留对话和文件。
     
     或者，在 Microsoft 团队中作为聊天列表一部分的对话存储在用户参与聊天的用户的邮箱中。 以及用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for Business 网站中。 因此，您必须将单独的用户邮箱和 OneDrive for Business 网站置于保留状态，以便在聊天列表中保留对话和文件。 这就是为什么除了将工作组邮箱（和网站）置于保留状态的情况下，最好将保留在 Microsoft 团队成员的邮箱上保留。
     
     > [!IMPORTANT]
     > 在 Microsoft 团队中加入聊天列表的用户必须具有 Exchange Online （基于云的）邮箱，以便在将邮箱放在电子数据展示保留时保持聊天对话。 这是因为聊天列表中的对话存储在聊天参与者的基于云的邮箱中。 如果聊天参与者没有 Exchange Online 邮箱，将无法保留聊天对话。 例如，在 Exchange 混合部署中，具有本地邮箱的用户可能能够参与属于 Microsoft 团队中的聊天列表的对话。 但是在这种情况下，无法保留这些对话中的内容，因为用户不具有基于云的邮箱。 
   
-  - 每个 Microsoft 团队或团队频道都包含用于笔记记录和协作的 Wiki。 Wiki 内容将自动保存到格式为 .mht 的文件中。 此文件存储在团队的 SharePoint 网站上的 "团队 Wiki 数据" 文档库中。 您可以通过将团队的 SharePoint 网站置于保留状态，使 Wiki 中的内容处于保留状态。
+  - 每个 Microsoft 团队或团队频道都包含用于笔记记录和协作的 Wiki。 Wiki 内容将会自动保存至采用 .mht 格式的文件。 此文件存储在团队 SharePoint 网站的 Teams Wiki 数据文档库中。 您可以通过将团队的 SharePoint 网站置于保留状态，使 Wiki 中的内容处于保留状态。
     
     > [!NOTE]
     > 为 Microsoft 团队或团队频道保留 Wiki 内容的功能（在将团队的 SharePoint 网站置于保留状态时）发布在2017年6月22日。 如果工作组网站处于保留状态，则会在该日期开始保留 Wiki 内容。 但是，如果工作组网站处于保留状态，并且在6月 22 2017 日之前删除了 Wiki 内容，则不会保留 Wiki 内容。 
   
-- **如何查找 OneDrive for business 网站的 URL？** 若要收集组织中的 OneDrive for business 网站的 Url 列表，以便可以将其添加到与电子数据展示事例关联的保留或搜索，请参阅[创建组织中所有 OneDrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的此脚本创建一个文本文件，其中包含所有 OneDrive 网站的列表。 若要运行此脚本，您必须安装并使用 SharePoint Online 命令行管理程序。 请务必将组织的 "我的网站" 域的 URL 追加到要搜索的每个 OneDrive 站点。 这是包含所有 OneDrive 的域;例如， `https://contoso-my.sharepoint.com`。 下面的示例展示了用户的 OneDrive 网站的 URL： `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
+- **如何查找 OneDrive for business 网站的 URL？** 若要收集组织中的 OneDrive for business 网站的 Url 列表，以便可以将其添加到与电子数据展示事例关联的保留或搜索，请参阅[创建组织中所有 OneDrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的脚本将创建包含所有 OneDrive 网站的文本文件。 若要运行此脚本，您必须安装并使用 SharePoint Online 命令行管理程序。 请务必将你组织的 MySite 域的 URL 附加到你想要搜索的每个 OneDrive 网站。 这是包含你所有的 OneDrive 的域；例如，`https://contoso-my.sharepoint.com`。 下面是用户的 OneDrive 网站的 URL 示例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。

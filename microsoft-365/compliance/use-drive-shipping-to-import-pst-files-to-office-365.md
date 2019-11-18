@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '对于管理员：了解如何通过将 PST 文件复制到硬盘并将其发送到 Microsoft，来批量将组织的 PST 文件导入到 Office 365 邮箱。 '
-ms.openlocfilehash: 033eee7a5ec33a8839542c8a942c4a1178968cec
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 977da95d4b335507122594910d2b4c5be00b9f2d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440659"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685311"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>使用驱动器传送将组织的 PST 文件导入到 Office 365
 
@@ -159,7 +159,7 @@ ms.locfileid: "37440659"
     
 3. 您首次使用 WAImportExport.exe 将 PST 文件复制到硬盘驱动器时，请运行以下命令。
 
-    ```
+    ```powershell
     WAImportExport.exe PrepImport /j:<Name of journal file> /t:<Drive letter> /id:<Name of session> /srcdir:<Location of PST files> /dstdir:<PST file path> /sk:<Storage account key> /blobtype:BlockBlob /encrypt /logdir:<Log file location>
     ```
 
@@ -179,7 +179,7 @@ ms.locfileid: "37440659"
    
     以下是对每个参数使用实际值的 WAImportExport.exe 工具的语法示例：
     
-    ```
+    ```powershell
     WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER01\PSTs" /dstdir:"ingestiondata/" /sk:"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==" blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
     ```
 
@@ -187,13 +187,13 @@ ms.locfileid: "37440659"
     
 4. 以后每次运行 WAImportExport.ext 工具将 PST 文件复制到同一个硬盘驱动器时运行此命令。
 
-    ```
+    ```powershell
     WAImportExport.exe PrepImport /j:<Name of journal file> /id:<Name of new session> /srcdir:<Location of PST files> /dstdir:<PST file path> /blobtype:BlockBlob 
     ```
 
     下面是运行后续会话将 PST 文件复制到同一个硬盘驱动器的语法示例。  
 
-    ```
+    ```powershell
     WAImportExport.exe PrepImport /j:PSTHDD1.jrn /id:driveship2 /srcdir:"\\FILESERVER01\PSTs\SecondBatch" /dstdir:"ingestiondata/" /blobtype:BlockBlob
     ```
 
@@ -205,7 +205,7 @@ ms.locfileid: "37440659"
     
 2. 打开或将 CSV 文件保存到您的本地计算机。下面的示例显示已完成的 PST 导入映射文件（在记事本中打开）。使用 Microsoft Excel 编辑 CSV 文件变得容易得多。
 
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,FILESERVER01/PSTs,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,FILESERVER01/PSTs,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
@@ -443,7 +443,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     > [!NOTE]
     > 若要帮助您对 PST 导入 CSV 映射文件进行故障排除，请使用[Azure 存储资源管理器](#view-a-list-of-the-pst-files-uploaded-to-office-365)工具在**ingestiondata**容器中查看已上载到 Azure 存储区域的硬驱中的 PST 文件的文件夹结构。 映射文件错误通常是由于 FilePath 参数中的值不正确而导致的。 此参数指定 PST 文件在 Azure 存储区域中的位置。 请参阅[第3步](#step-3-create-the-pst-import-mapping-file)中表中的 FilePath 参数的说明。 如前所述，当您在`/dstdir:` [步骤 2](#step-2-copy-the-pst-files-to-the-hard-drive)中运行 waimportexport.exe 工具时，由参数指定在 AZURE 存储区域中 PST 文件的位置。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 驱动器运输是一种将大量存档邮件数据导入到 Office 365 以利用对您的组织可用的合规性功能的有效方法。 将存档数据导入到用户邮箱后，可以执行以下操作：
     
@@ -464,7 +464,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 - 以下是安全存储帐户密钥和 BitLocker 加密密钥的示例。此示例还包含 WAImportExport.exe 命令的语法，运行此命令可将 PST 文件复制到硬盘驱动器。一定要采取预防措施来保护这些文件，就像保护密码或其他与安全相关的信息一样。
     
 
-    ```
+    ```text
     Secure storage account key: 
 
     yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==
@@ -493,7 +493,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
   WAImportExport.exe PrepImport /j:PSTHDD1.jrn /id:driveship2 /srcdir:"\\FILESERVER1\PSTs\SecondBatch" /dstdir:"ingestiondata/" /blobtype:BlockBlob
     ```
-   
+
 - 如前所述，Office 365 导入服务在将 PST 文件导入邮箱后，将启用保留挂起设置（无限期）。 这意味着*RentionHoldEnabled*属性设置为`True` ，因此不会处理分配给邮箱的保留策略。 这样，邮箱所有者可以通过阻止删除或存档策略来删除或存档较旧的邮件，从而管理新导入的邮件的时间。 若要管理此保留挂起，可以执行以下步骤： 
     
   - 在特定时间段后，可以通过运行`Set-Mailbox -RetentionHoldEnabled $false`命令关闭保留挂起。 有关说明，请参阅[将邮箱放在保留挂起](https://go.microsoft.com/fwlink/p/?LinkId=544749)中。

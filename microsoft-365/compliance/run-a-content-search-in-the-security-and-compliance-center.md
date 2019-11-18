@@ -9,21 +9,23 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ComplianceSearch
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: '在安全 & 合规中心中使用内容搜索来搜索邮箱、SharePoint Online 网站和 OneDrive for business 位置。 '
-ms.openlocfilehash: cebdbf7808534b82085affa16c06ac1929b3fd8d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 41b3a3d30decd1787d18652398ee0462bada38fc
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075382"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685331"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>在安全与合规中心运行内容搜索
 
-您可以使用安全性 & 合规性中心中的内容搜索电子数据展示工具搜索 Office 365 组织中的项目，例如电子邮件、文档和即时消息对话。 使用此工具搜索这些 Office 365 服务中的项目：
+您可以使用安全性 & 合规性中心中的内容搜索电子数据展示工具搜索 Office 365 组织中的项目，例如电子邮件、文档和即时消息对话。 使用此工具搜索以下 Office 365 服务中的项：
   
-- Exchange Online 邮箱和公用文件夹
+- Exchange Online 邮箱和公共文件夹
     
 - SharePoint Online 和 OneDrive for Business 网站
     
@@ -51,7 +53,7 @@ ms.locfileid: "37075382"
   
 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 有关生成搜索查询和使用布尔搜索运算符的信息和指南，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。 本文还包含有关搜索敏感信息类型和搜索与组织内部和外部的人员共享的内容的信息。
     
@@ -71,7 +73,7 @@ ms.locfileid: "37075382"
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>创建搜索
 <a name="create"> </a>
 
 1. 转到 [https://protection.office.com](https://protection.office.com)。
@@ -102,9 +104,9 @@ ms.locfileid: "37075382"
     
   - 您可以将非活动邮箱和通讯组添加到要搜索的邮箱列表中。 对于通讯组，将搜索组成员的邮箱。 请注意，不支持动态通讯组。
     
-  - 若要获取组织中非活动邮箱的列表，请在 Exchange Online `Get-Mailbox -InactiveMailboxOnly` PowerShell 中运行命令。 或者，您可以转到安全 & 合规性中心中的 "**数据管理** \> "**保留**，然后单击 "**更多**![导航栏椭圆](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **非活动邮箱**"。
+  - 若要获取组织中的非活动邮箱列表，请在 Exchange Online PowerShell 中运行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，你可以转至安全与合规中心中的“**数据管理**”\>“**保留**”，然后单击“**更多**”“![导航栏省略号](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)”\>“**非活动邮箱**”。
     
-  - 您还可以添加与 Office 365 组或 Microsoft 团队相关联的邮箱。 在这种情况下，仅搜索组或工作组邮箱;不搜索组或工作组成员的邮箱。 若要搜索这些文件，您必须将其专门添加到搜索中。
+  - 您还可以添加与 Office 365 组或 Microsoft 团队相关联的邮箱。 在这种情况下，仅搜索组或工作组邮箱;不搜索组或工作组成员的邮箱。 若要搜索它们，必须将它们专门添加到搜索中。
     
   - 如果不希望在搜索中包含任何邮箱，请选择 "**选择要搜索的特定邮箱**"，但不要将邮箱添加到列表中。
     
@@ -120,23 +122,23 @@ ms.locfileid: "37075382"
     
     对于公用文件夹，您可以选择搜索 Exchange Online 组织中的所有公用文件夹，或者不搜索任何公用文件夹。
     
-7. 单击“下一步”。****
+7. 单击“**下一步**”。
     
 8. 在 "**新建搜索**" 页上，您可以添加关键字和条件来创建搜索查询。 
     
     ![使用关键字和条件创建搜索查询](media/1b7cf7b5-f1e1-471a-ad5c-48aad8435b00.png)
   
-1. 在“您想要我们查找哪些内容”**** 下的框中，键入搜索查询。 您可以指定关键字、邮件属性（例如发送和接收日期）或文档属性（例如文件名或上次更改文档的日期）。 您可以使用更复杂的查询，这些查询使用布尔运算符，例如**AND**、 **or**、 **NOT**、 **NEAR**或**ONEAR**。 您还可以在文档中搜索敏感信息（如社会保险号），或搜索在外部共享的文档。 如果将 "关键字" 框留空，则位于指定内容位置的所有内容都将包含在搜索结果中。 
+1. 在“您想要我们查找哪些内容”**** 下的框中，键入搜索查询。 您可以指定关键字、邮件属性（例如发送和接收日期）或文档属性（例如文件名或上次更改文档的日期）。 您可以使用更复杂的查询，这些查询使用布尔运算符，例如**AND**、 **or**、 **NOT**、 **NEAR**或**ONEAR**。 还可以搜索文档中的敏感信息（如社会保险号），或者搜索已外部共享的文档。 如果将 "关键字" 框留空，则位于指定内容位置的所有内容都将包含在搜索结果中。 
     
 2. 您可以单击 "**显示关键字列表**" 复选框，然后在每行中键入关键字。 如果执行此操作，则每行上的关键字通过所创建的搜索查询中的**OR**运算符进行连接。 
     
     ![您可以在关键字列表的行中键入关键字或关键字阶段](media/aea1a361-639d-4a82-8c3c-48645ef3fc05.png)
   
-    为什么要使用关键字列表？ 您可以获取显示与每个关键字匹配的项目数的统计信息。 这可以帮助您快速确定哪些关键字最有效（最少）。 您还可以在行中使用关键字短语（括在括号中）。 有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计](view-keyword-statistics-for-content-search.md)信息。
+    为什么使用关键字列表？ 可以获取与每个关键字匹配的项数量的统计信息。 这可以帮助你快速标识哪些关键字最有效和最无效。 还可以在行中使用关键字短语（使用括号包围）。 有关搜索统计信息的更多信息，请参阅[查看内容搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md)。
     
     有关使用关键字列表的指南，请参阅一节。 
     
-3. 单击 "**检查查询以查找打字错误**" 以检查查询是否有不受支持的字符以及可能不大写的布尔运算符。 不受支持的字符通常是隐藏的，通常会导致搜索错误或返回意外的结果。 有关检查不受支持的字符的详细信息，请参阅[检查内容搜索查询是否有错误](check-your-content-search-query-for-errors.md)。
+3. 单击 "**检查查询以查找打字错误**" 以检查查询是否有不受支持的字符以及可能不大写的布尔运算符。 不受支持的字符往往会被隐藏，并且通常会引发搜索错误或者返回意外结果。 有关检查到的不受支持字符的详细信息，请参阅[检查内容搜索查询中是否存在错误](check-your-content-search-query-for-errors.md)。
     
 4. 在 "**条件**" 下，向搜索查询添加条件以缩小搜索范围，并返回一组更细化的结果。 每个条件都可以将一个子句添加到 KQL 搜索查询中，该搜索查询会在开始搜索时进行创建并运行。 条件在逻辑上通过 **AND** 运算符连接到关键字查询（在关键字框中指定）。 这意味着，项目必须满足关键字查询和要在结果中包括的条件。 这就是条件如何帮助缩小结果范围的原理。 
     
@@ -167,7 +169,7 @@ ms.locfileid: "37075382"
 ## <a name="export-search-results"></a>导出搜索结果
 <a name="export"> </a>
 
-成功运行搜索后，可以将搜索结果导出到本地计算机。 导出电子邮件结果时，会将其作为 PST 文件下载到您的计算机上。 当您从 SharePoint 和 OneDrive for business 网站导出内容时，会导出本机 Office 文档的副本。 导出的搜索结果中还包含其他文档和报告。 有关详细信息，请参阅[从安全 & 合规中心导出搜索结果](export-search-results.md)。
+成功运行搜索之后，你可以将搜索结果导出至本地计算机。 导出电子邮件结果时，会将其作为 PST 文件下载到您的计算机上。 当您从 SharePoint 和 OneDrive for business 网站导出内容时，会导出本机 Office 文档的副本。 导出的搜索结果中还包含其他文档和报告。 有关详细信息，请参阅[从安全 & 合规中心导出搜索结果](export-search-results.md)。
   
 ## <a name="preview-search-results"></a>预览搜索结果
 <a name="preview"> </a>
@@ -184,30 +186,30 @@ ms.locfileid: "37075382"
     
     项目在预览窗格中打开。
     
-4. 如果文件类型不支持预览或下载文档的副本，则可以单击 "**下载原始文件**" 将其下载到本地计算机。 对于 .aspx 网页，如果您可能没有访问该页面的权限，则会包含该页面的 URL。 
+4. 如果文件类型不支持预览或者下载文档副本，则可以单击“**下载原始文件**”以将其下载到本地计算机。 对于 .aspx Web 页面，尽管你可能没有访问该页面的权限，但该页面的 URL 将包括在内。 
     
 > [!NOTE]
 > 如果您要预览 7 天之前运行的上一次搜索的搜索结果，系统将提示您更新搜索结果。 将重新运行搜索，以获取最新符合搜索查询的结果。 
   
 ### <a name="file-types-that-can-be-previewed"></a>可预览的文件类型
 
-您可以在预览窗格中预览受支持的文件类型。 如果文件类型不受支持，则必须将该文件的副本下载到本地计算机以进行查看。 支持以下文件类型，并且可以在 "**预览搜索结果**" 页上预览这些文件类型。 
+可以在预览窗格中预览受支持的文件类型。 如果文件类型不受支持，则必须将该文件的副本下载到本地计算机以进行查看。 支持以下文件类型，并且可以在 "**预览搜索结果**" 页上预览这些文件类型。 
   
-- .txt、.html、mhtml
+- .txt、.html、.mhtml
     
 - .eml
     
-- .doc、.docx、. .docm
+- .doc、.docx、.docm
     
-- . .pptm、.pptx
+- .pptm、.pptx
     
 - .pdf
     
-此外，还支持以下文件容器类型。 您可以在预览窗格中查看容器中的文件列表。
+此外，还支持以下文件容器类型。 可以在预览窗格中查看容器中的文件列表。
   
 - .zip
     
-- gzip
+- .gzip
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -279,15 +281,15 @@ ms.locfileid: "37075382"
   
 - 有关应用于内容搜索功能的限制的说明，请参阅[Security & 合规性中心中的搜索限制](limits-for-content-search.md)。
     
-- Microsoft 收集由所有 Office 365 组织运行的内容搜索的性能信息。 虽然搜索查询的复杂性可能会影响搜索时间，但影响搜索所用时间的最大因素是搜索的邮箱数。 尽管 Microsoft 不提供搜索时间的服务级别协议，但下表根据搜索中包括的邮箱数量列出了内容搜索的平均搜索时间。
+- Microsoft 将会收集所有 Office 365 组织运行的内容搜索性能信息。 尽管搜索查询的复杂性可能会影响搜索项，但是影响搜索所需时长的最大因素仍然是搜索的邮箱数。 尽管 Microsoft 未为搜索时间提供服务级别协议，但是下表根据搜索中所含的邮箱数列出了内容搜索的平均搜索时间。
     
 |**邮箱数**|**平均搜索时间**|
 |:-----|:-----|
 |100  <br/> |30 秒  <br/> |
-|1,000  <br/> |45秒  <br/> |
+|1,000  <br/> |45 秒  <br/> |
 |10,000  <br/> |4 分钟  <br/> |
-|25000  <br/> |10 分钟  <br/> |
-|50000  <br/> |20 分钟  <br/> |
+|25,000  <br/> |10 分钟  <br/> |
+|50,000  <br/> |20 分钟  <br/> |
 |100,000  <br/> |25 分钟  <br/> |
    
   
@@ -299,13 +301,13 @@ ms.locfileid: "37075382"
   
 ### <a name="microsoft-teams-and-office-365-groups"></a>Microsoft 团队和 Office 365 组
   
-- Microsoft 团队基于 Office 365 组构建。 因此，搜索它们非常相似。 在 Microsoft 团队和 Office 365 组中搜索内容时，请记住以下事项。
+- Microsoft 团队基于 Office 365 组构建。 因此，搜索它们非常相似。 搜索 Microsoft Teams 和 Office 365 组中的内容时，请注意以下内容。
     
   - 若要搜索位于 Microsoft 团队和 Office 365 组中的内容，您必须指定与团队或组相关联的邮箱和 SharePoint 网站。
     
-  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Microsoft 团队或 Office 365 组的属性。 如果要获取与团队或组相关联的网站的 URL，这是一种很好的方法。 例如，以下命令将显示名为 "高级领导" 团队的 Office 365 组的选定属性： 
+  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Microsoft 团队或 Office 365 组的属性。 这是一种获取与团队或组关联的网站 URL 的好方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性： 
     
-  ```
+  ```powershell
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
@@ -315,32 +317,32 @@ ms.locfileid: "37075382"
   ```
 
     > [!NOTE]
-    > 若要运行**remove-unifiedgroup** cmdlet，您必须在 Exchange Online 中分配 "仅查看收件人" 角色，或者是分配了 "仅查看收件人" 角色的角色组的成员。 
+    > 若要运行 **Get-UnifiedGroup** cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。 
   
   - 在搜索用户的邮箱时，不会搜索用户是其成员的任何 Microsoft 团队或 Office 365 组。 同样，当您搜索 Microsoft 团队或 Office 365 组时，仅搜索您指定的组邮箱和组网站;除非将组成员的邮箱和 OneDrive for Business 帐户显式添加到搜索中，否则不会搜索这些帐户。
     
-  - 若要获取 Microsoft 团队或 Office 365 组成员的列表，您可以在 Microsoft 365 管理中心的 "**家庭\>组**" 页上查看属性。 或者，您可以在 Exchange Online PowerShell 中运行以下命令： 
+  - 若要获取 Microsoft 团队或 Office 365 组成员的列表，您可以在 Microsoft 365 管理中心的 "**家庭\>组**" 页上查看属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令： 
     
-  ```
+  ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
     > [!NOTE]
-    > 若要运行**UnifiedGroupLinks** cmdlet，您必须在 Exchange Online 中分配 "仅查看收件人" 角色，或者是分配了 "仅查看收件人" 角色的角色组的成员。 
+    > 若要运行 **Get-UnifiedGroupLinks** cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。 
   
-  - 属于 Microsoft 团队渠道的对话存储在与 Microsoft 团队相关联的邮箱中。 同样，在频道中共享的工作组成员的文件存储在团队的 SharePoint 网站上。 因此，您必须将 Microsoft 团队邮箱和 SharePoint 网站添加为内容位置，以便在频道中搜索对话和文件。
+  - 属于 Microsoft 团队渠道的对话存储在与 Microsoft 团队相关联的邮箱中。 同样，团队成员在渠道中共享的文件将存储在团队的 SharePoint 网站上。 因此，您必须将 Microsoft 团队邮箱和 SharePoint 网站添加为内容位置，以便在频道中搜索对话和文件。
     
   - 
     
-    或者，在 Microsoft 团队中作为聊天列表一部分的对话存储在参与聊天的用户的 Exchange Online 邮箱中。 以及用户在聊天对话中共享的文件存储在共享该文件的用户的 OneDrive for Business 帐户中。 因此，您必须将单个用户邮箱和 OneDrive for Business 帐户添加为在聊天列表中搜索对话和文件的内容位置。
+    或者，在 Microsoft 团队中作为聊天列表一部分的对话存储在参与聊天的用户的 Exchange Online 邮箱中。 用户在聊天对话中共享的文件将存储在共享该文件的用户的 OneDrive for Business 帐户中。 因此，必须将单独的用户邮箱和 OneDrive for Business 帐户作为内容位置添加到聊天列表中的搜索对话和文件中。
     
     > [!NOTE]
     > 参与在 Microsoft 团队中作为聊天列表一部分的对话的用户必须具有 Exchange Online （基于云的）邮箱，您才能搜索对话对话。 这是因为聊天列表中的对话存储在聊天参与者的基于云的邮箱中。 如果聊天参与者没有 Exchange Online 邮箱，将无法搜索对话对话。 例如，在 Exchange 混合部署中，具有本地邮箱的用户可能能够参与属于 Microsoft 团队中的聊天列表的对话。 但是在这种情况下，无法搜索这些对话中的内容，因为用户不具有基于云的邮箱。 
   
-  - 每个 Microsoft 团队或团队频道都包含用于笔记记录和协作的 Wiki。 Wiki 内容将自动保存到格式为 .mht 的文件中。 此文件存储在团队的 SharePoint 网站上的 "团队 Wiki 数据" 文档库中。 您可以使用内容搜索工具来搜索 Wiki，具体方法是将团队的 SharePoint 网站指定为要搜索的内容位置。 
+  - 每个 Microsoft 团队或团队频道都包含用于笔记记录和协作的 Wiki。 Wiki 内容将会自动保存至采用 .mht 格式的文件。 此文件存储在团队 SharePoint 网站的 Teams Wiki 数据文档库中。 可以使用内容搜索工具来搜索 Wiki，方法是将团队的 SharePoint 网站指定为要搜索的内容位置。 
     
     > [!NOTE]
-    > 在 Microsoft 团队或频道中搜索 Wiki 的功能（在搜索团队的 SharePoint 网站时）在2017年6月22日发布。 在该日期或之后保存或更新的 Wiki 页面可供搜索。 上次保存或更新的 Wiki 页面在该日期不可用于搜索之前。 
+    > 在 Microsoft 团队或频道中搜索 Wiki 的功能（在搜索团队的 SharePoint 网站时）在2017年6月22日发布。 可以对在该日期或之后保存或更新的 Wiki 页面进行搜索。 不可搜索最后保存或更新时间早于该日期的 Wiki 页面。 
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
   
@@ -351,19 +353,19 @@ ms.locfileid: "37075382"
   
 - 在使用关键字列表创建搜索查询时，请记住以下事项。
     
-  - 您必须选择 "**显示关键字列表**" 复选框，然后在单独的行中键入每个关键字，以创建搜索查询，在该查询中，每行中的关键字（或关键字短语）通过**or**运算符连接。 如果只是将关键字列表粘贴到关键字框中或在键入关键字后按**enter**键，则不会通过**or**运算符连接。 下面是添加关键字列表的错误和正确示例。 
+  - 必须选中“**显示关键字列表**”复选框并在单独行中键入每个关键字，才能创建每行中的关键字以 **OR** 运算符连接的搜索查询。 如果只是将关键字列表粘贴到关键字框中或在键入关键字后按**enter**键，则不会通过**or**运算符连接。 下面是添加关键字列表的错误和正确示例。 
     
-    **不**
-    
-    ![设置关键字列表格式的错误方法（通过将列表粘贴到关键字框中）](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
-  
     **错误**
     
-    ![设置关键字列表格式的正确方法（通过选中 "checkbox" 和 "粘贴" 列表）](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![设置关键字列表格式的不正确方式（通过将列表粘贴至关键字框）](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-  - 您还可以在 Excel 文件或纯文本文件中准备关键字或关键字短语列表，然后将列表复制并粘贴到关键字列表中。 若要执行此操作，必须选中 "**显示关键字列表**" 复选框。 然后，单击 "关键字" 列表中的第一行并粘贴列表。 Excel 或文本文件中的每一行将粘贴到关键字列表中单独的行中。 
+    **正确**
     
-  - 使用关键字列表创建查询之后，最好验证搜索查询语法（在所选搜索的细节窗格中），以使搜索查询成为您预期的结果。 在 "详细信息" 窗格的 "**查询**" 下显示的搜索查询中，关键字由文本 **（c:s）** 分隔。 这表示关键字是通过**OR**运算符连接的。 同样，如果您的搜索查询包含条件，关键字和条件由文本 **（c:c）** 分隔。 这表示关键字通过**and**运算符连接到条件。 下面的示例展示了在使用关键字列表和条件时生成的搜索查询（在详细信息窗格中）。 
+    ![设置关键字列表格式的正确方式（在选中复选框后粘贴列表）](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+  
+  - 您还可以在 Excel 文件或纯文本文件中准备关键字或关键字短语列表，然后将列表复制并粘贴到关键字列表中。 若要执行此操作，你必须选中“**显示关键字列表**”复选框。 然后，单击关键字列表中的第一行并粘贴你的列表。 Excel 或文本文件中的每一行将粘贴到关键字列表中单独的行中。 
+    
+  - 使用关键字列表创建查询之后，最好验证搜索查询语法（在所选搜索的细节窗格中），以使搜索查询成为您预期的结果。 在详细信息窗格的“**查询**”下显示的搜索查询中，关键字将以文本 **(c:s)** 分隔。 这表示关键字是通过**OR**运算符连接的。 同样，如果搜索查询中包含条件，则关键字和条件将以 **(c:c)** 分隔。 这表示关键字通过**and**运算符连接到条件。 以下是使用关键字列表和条件时创建的搜索查询（显示在详细信息窗格中）示例。 
     
     ![使用关键字列表和条件时创建的查询示例](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -373,7 +375,7 @@ ms.locfileid: "37075382"
     
     若要更改现有内容搜索的语言设置，请在 Security & 合规性中心 PowerShell 中运行以下命令：
     
-  ```
+  ```powershell
   Set-ComplianceSearch <name of content search> -Language <culture code value>
   ```
 
@@ -382,17 +384,17 @@ ms.locfileid: "37075382"
 
 ### <a name="searching-inactive-mailboxes"></a>搜索非活动邮箱
   
-如前所述，您可以在内容搜索中搜索非活动邮箱。 以下是在搜索非活动邮箱时要牢记的一些事项。
+如前所述，您可以在内容搜索中搜索非活动邮箱。 以下是在搜索非活动邮箱时应记住的一些事项。
   
 - 如果内容搜索包括用户邮箱，并且该邮箱随后变为非活动状态，则当您在搜索变为非活动状态后重新运行该搜索时，内容搜索将继续搜索非活动邮箱。
     
 - 在某些情况下，用户可能有一个活动邮箱和一个具有相同 SMTP 地址的非活动邮箱。 在这种情况下，将仅搜索您选择作为内容搜索的位置的特定邮箱。 换句话说，如果将用户的邮箱添加到搜索，则不能假定将搜索其活动邮箱和非活动邮箱;将仅搜索您显式添加到搜索中的邮箱。
     
-- 强烈建议您避免使用相同 SMTP 地址的活动邮箱和非活动邮箱。 如果需要重用当前分配给非活动邮箱的 SMTP 地址，我们建议您恢复非活动邮箱或将非活动邮箱的内容还原到活动邮箱（或活动邮箱的存档）中，然后删除非活动邮箱。 有关详细信息，请参阅下列主题之一：
+- 强烈建议避免活动邮箱和非活动邮箱具有相同的 SMTP 地址。 如果需要重用当前分配给非活动邮箱的 SMTP 地址，我们建议您恢复非活动邮箱或将非活动邮箱的内容还原到活动邮箱（或活动邮箱的存档）中，然后删除非活动邮箱。 有关详细信息，请参阅下列主题之一：
     
-  - [在 Office 365 中恢复非活动邮箱](recover-an-inactive-mailbox.md)
+  - [恢复 Office 365 中的非活动邮箱](recover-an-inactive-mailbox.md)
     
-  - [在 Office 365 中还原非活动邮箱](restore-an-inactive-mailbox.md)
+  - [还原 Office 365 中的非活动邮箱](restore-an-inactive-mailbox.md)
     
   - [删除 Office 365 中的非活动邮箱](delete-an-inactive-mailbox.md)
     

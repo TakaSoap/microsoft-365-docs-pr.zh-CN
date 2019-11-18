@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过对邮箱应用保留或 Office 365 保留策略，然后删除相应的 Office 365 用户帐户，可以在 Office 365 中创建非活动邮箱。 非活动邮箱中的项目会在保留或应用到其非活动状态的保留策略的持续时间内保留。 若要永久删除非活动邮箱，只需删除保留策略或保留策略即可。
-ms.openlocfilehash: ca6fc5b579b6974ce89db14d318a6dc5a50f3f5c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cf2484dad9e9fda105985e9291a16a5f8a83f5c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074292"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685253"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>在 Office 365 中创建和管理非活动邮箱
 
@@ -30,7 +30,7 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
 > [!NOTE]
 > 我们推迟了最后期限，在 2017 年 7 月 1 后，仍可通过新建就地保留创建非活动邮箱。 But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. 在这段时间，仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要将邮箱设为非活动邮箱，必须为其分配一个 Exchange Online 计划2许可证，以便在删除邮箱之前可以将诉讼保留或 Office 365 保留策略应用于该邮箱。 Exchange Online 计划2许可证是 Office 365 企业版 E3 和 E5 订阅的一部分。 如果为邮箱分配了 Exchange Online 计划1或 Exchange Online 展台许可证（分别是 Office 365 E1 和 F1 订阅的一部分），则必须为其分配一个单独的 Exchange Online 存档许可证，以便可以将保留应用于邮箱 before 它已被删除。 有关详细信息，请参阅 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)。
     
@@ -73,7 +73,7 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
   
 1. 转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 组织中的管理员帐户凭据登录。 
     
-2. 单击 "**数据调控** > **保留**"。
+2. 单击 "**信息治理** > **保留**"。
     
 3. 在 "**保留**" 页上，单击 "**更多**![导航栏省略号](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)"，然后单击 "**非活动邮箱**"。
     
@@ -85,7 +85,7 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
   
 或者，您可以在 Exchange Online PowerShell 中运行以下命令，以显示非活动邮箱的列表。
 
-```
+```powershell
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
@@ -93,10 +93,10 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
   
 您还可以运行以下命令，将非活动邮箱列表和其他信息导出到 CSV 文件中。 在此示例中，将在当前目录中创建 CSV 文件。
 
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoType
 ```
-   
+
 > [!NOTE]
 > 非活动邮箱可能具有与活动用户邮箱相同的 SMTP 地址。 在这种情况下，可以使用**DistinguishedName**或**ExchangeGuid**属性的值来唯一标识非活动邮箱。 
   
@@ -108,13 +108,13 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
     
 - [导出内容搜索结果](export-search-results.md)
     
-以下是在搜索非活动邮箱时要牢记的一些事项。
+以下是在搜索非活动邮箱时应记住的一些事项。
   
 - 如果内容搜索包括用户邮箱，并且该邮箱随后变为非活动状态，则当您在搜索变为非活动状态后重新运行该搜索时，内容搜索将继续搜索非活动邮箱。
     
 - 在某些情况下，用户可能有一个活动邮箱和一个具有相同 SMTP 地址的非活动邮箱。 在这种情况下，将仅搜索您选择作为内容搜索的位置的特定邮箱。 换句话说，如果将用户的邮箱添加到搜索，则不能假定将搜索其活动邮箱和非活动邮箱;将仅搜索您显式添加到搜索中的邮箱。
     
-- 强烈建议您避免使用相同 SMTP 地址的活动邮箱和非活动邮箱。 如果需要重用当前分配给非活动邮箱的 SMTP 地址，我们建议您恢复非活动邮箱或将非活动邮箱的内容还原到活动邮箱（或活动邮箱的存档）中，然后删除非活动邮箱。
+- 强烈建议避免活动邮箱和非活动邮箱具有相同的 SMTP 地址。 如果需要重用当前分配给非活动邮箱的 SMTP 地址，我们建议您恢复非活动邮箱或将非活动邮箱的内容还原到活动邮箱（或活动邮箱的存档）中，然后删除非活动邮箱。
     
 ## <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>更改非活动邮箱的保留期
 

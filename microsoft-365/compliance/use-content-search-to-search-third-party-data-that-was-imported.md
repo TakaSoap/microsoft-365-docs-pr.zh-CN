@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询以搜索所有导入的项，或创建查询以搜索特定的第三方数据类型。 本文列出了可在关键字查询中用于搜索可导入到 Office 365 的第三方数据类型的值。
-ms.openlocfilehash: 2d531557054398be4ca963a9b09943f1bf583d10
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57a39049ae1df3707a96311c9138195b7cc4c83a
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075237"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685312"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>使用内容搜索来搜索第三方数据导入到 Office 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "37075237"
 
 若要搜索（或置于保留状态）您导入到 Office 365 的任何类型的第三方数据，可以在内容`kind:externaldata`搜索的关键字框中使用邮件属性-值对，也可以在创建基于查询的保留时使用。 例如，若要搜索从任何第三方数据源导入的项目，并在导入项目的 Subject 属性中包含 "contoso" 一词，请使用以下查询： 
   
-```
+```powershell
 kind:externaldata AND subject:contoso
 ```
 
@@ -41,13 +41,13 @@ kind:externaldata AND subject:contoso
 
 除了搜索所有类型的第三方数据之外，您可以使用以下消息*属性：值*对在内容搜索的关键字框中创建仅搜索指定类型的第三方数据的查询：
   
-```
+```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
 例如，若要在 Subject 属性中搜索包含 "contoso" 一词的 Facebook 数据，应使用以下查询：
   
-```
+```powershell
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
@@ -103,7 +103,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
-|领英  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
+|LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |构思对齐  <br/> | `ipm.externaldata.MindAlign*` <br/> |

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 将 Office 365 审核日志搜索的结果导出并下载到 CSV 文件后，可以使用 Excel 中 Power Query 编辑器中的 JSON 转换功能将 AuditData 列中的 JSON 对象中的每个属性拆分为自己的列。 这可以帮助您快速找到要查找的特定审核数据。
-ms.openlocfilehash: 7dac373e8f25ead38dddbe2663e521b35b3153ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b422877c10f086553a695e43c50f02d389dd2b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074831"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685281"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>导出、配置和查看审核日志记录
 
@@ -108,11 +108,11 @@ CSV 文件将在**查询编辑器**中打开。 共有四列： **CreationDate**
 
    在此示例中，运行以下命令以返回与 SharePoint 共享操作相关的所有记录。 
    
-   ```
+   ```powershell
    $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
    ```
 
-   ```
+   ```powershell
    $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
    ```
 
@@ -122,10 +122,10 @@ CSV 文件将在**查询编辑器**中打开。 共有四列： **CreationDate**
    
    - 此参数仅可包含一个值。 若要搜索其他记录类型的审核记录，您必须再次运行前面的两个命令以指定不同的记录类型，并将这些结果追加到原始 CSV 文件中。 例如，您可以运行以下两个命令，将 SharePoint 文件活动从同一日期范围添加到 PowerShellAuditlog 文件中。
 
-       ```
+       ```powershell
       $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
       ```
 
-      ```
+      ```powershell
       $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-      ```
+      ```powershell

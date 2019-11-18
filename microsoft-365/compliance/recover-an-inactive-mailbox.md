@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中恢复非活动邮箱
+title: 恢复 Office 365 中的非活动邮箱
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果以前的员工返回到您的组织，或者如果雇用新员工来承担 departed 员工的工作职责，则可以在 Office 365 中恢复非活动邮箱的内容。 恢复非活动邮箱时，会将其转换为新邮箱，其中包含非活动邮箱的内容。 '
-ms.openlocfilehash: be7935472363e406a978c09f926776e69c3024fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9caa5d8f8c44ee5a916129e7f181532c8c0dd1a2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075949"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685332"
 ---
-# <a name="recover-an-inactive-mailbox-in-office-365"></a>在 Office 365 中恢复非活动邮箱
+# <a name="recover-an-inactive-mailbox-in-office-365"></a>恢复 Office 365 中的非活动邮箱
 
 非活动邮箱（一种软删除的邮箱）用于在之前员工离开您的组织后保留他/她的电子邮件。 如果该员工返回到您的组织或其他员工承担前一个员工的工作职责，则可以通过两种方法使非活动邮箱的内容对用户可用： 
   
@@ -34,13 +34,13 @@ ms.locfileid: "37075949"
 > [!NOTE]
 > 我们推迟了创建新的就地保留的截止时间，以使邮箱处于非活动状态。 但在将来的某一时刻，你将无法在 Exchange Online 中创建新的就地保留。 在这段时间，仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须使用 Exchange Online PowerShell 来还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     
 - 运行以下命令获取组织中非活动邮箱的标识信息。 
 
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly | FL Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
     ```
 
@@ -54,16 +54,16 @@ ms.locfileid: "37075949"
   
 1. 创建包含非活动邮箱的属性的变量。 
     
-    ```
+    ```powershell
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
-   
+
     > [!IMPORTANT]
     > 在上一命令中，使用 **DistinguishedName** 或 **ExchangeGUID** 属性的值来标识非活动邮箱。这些属性对于您组织中的每个邮箱都是唯一的，但活动和非活动邮箱可能具有相同的主 SMTP 地址。 
   
 2. 此示例使用在上一个命令中获取的属性，并将非活动邮箱恢复到用户 Ann Beebe 的活动邮箱。 请确保为*Name*和*MicrosoftOnlineServicesID*参数指定的值在您的组织中是唯一的。 
 
-    ```
+    ```powershell
     New-Mailbox -InactiveMailbox $InactiveMailbox.DistinguishedName -Name annbeebe -FirstName Ann -LastName Beebe -DisplayName "Ann Beebe" -MicrosoftOnlineServicesID Ann.Beebe@contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
     ```
 
@@ -71,7 +71,7 @@ ms.locfileid: "37075949"
     
 恢复非活动邮箱后，还将创建新的 Office 365 用户帐户。 您必须通过分配许可证来激活此用户帐户。 若要在 Microsoft 365 管理中心分配许可证，请参阅[分配或取消分配 Office 365 商业版许可证](https://go.microsoft.com/fwlink/p/?LinkId=276798)。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - **恢复和还原非活动邮箱的主要区别是什么？** 恢复非活动邮箱时，邮箱基本上会转换为一个新邮箱，将保留非活动邮箱的的内容和文件夹结构，并将邮箱链接到新的用户帐户。恢复后，非活动邮箱不再存在，并且对新邮箱中的内容所做的任何更改都会影响最初保留在非活动邮箱中内容。相反，还原非活动邮箱时，只是将内容复制到另一个邮箱。非活动邮箱将保留，并且仍保留非活动状态。对目标邮箱中的内容所做的任何更改都不会影响非活动邮箱中保留的原始内容。仍可以使用就地电子数据展示搜索非活动邮箱，可以将其内容还原到另一个邮箱，也可以在以后将其恢复或删除。 
     
@@ -95,7 +95,7 @@ ms.locfileid: "37075949"
     
 - **如何知道非活动邮箱的软删除邮箱保留期是否已过期？** 运行以下命令。 
     
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL ExternalDirectoryObjectId
   ```
 

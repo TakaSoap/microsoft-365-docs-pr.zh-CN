@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据（称为1xN 聊天）。
-ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b849e682c0902b6a2d48919c2f2cd1257d8691
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075936"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685326"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
@@ -38,7 +38,7 @@ ms.locfileid: "37075936"
     
  **注意：** 团队频道对话始终存储在与团队相关联的基于云的邮箱中。 这意味着您可以使用内容搜索来搜索频道对话，而无需将其作为支持请求的文件。 有关搜索团队频道对话的详细信息，请参阅[搜索 Microsoft 团队和 Office 365 组](content-search.md#searching-microsoft-teams-and-office-365-groups)。
   
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 如果启用了 Microsoft 团队的用户具有本地邮箱，并且其用户帐户/标识已同步到云，Microsoft 将创建一个基于云的邮箱来存储1xN 团队聊天数据。 在将团队聊天数据存储在基于云的邮箱中之后，将为搜索编制索引。 这样，您就可以使用内容搜索（和与电子数据展示事例关联的搜索）来搜索、预览和导出本地用户的团队聊天数据。 您还可以使用** \*** Security & 合规性中心 PowerShell 中的 new-compliancesearch cmdlet 搜索本地用户的团队聊天数据。 
   
@@ -86,7 +86,7 @@ ms.locfileid: "37075936"
     
 3. 创建关键字查询，并在必要时向搜索查询添加条件。 若要仅搜索工作组聊天数据，您可以在 "**关键字**" 框中添加以下查询： 
     
-    ```
+    ```text
     kind:im
     ``` 
 
@@ -112,15 +112,15 @@ ms.locfileid: "37075936"
     
 2. 运行以下 PowerShell 命令，以创建搜索本地用户的基于云的邮箱的内容搜索。
     
-    ```
+    ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
-   
+
     *IncludeUserAppContent*参数用于为用户或由*ExchangeLocation*参数指定的用户指定基于云的邮箱。 *AllowNotFoundExchangeLocationsEnabled*允许本地用户的基于云的邮箱。 当您使用此`$true`参数的值时，搜索在运行前不会尝试验证邮箱是否存在。 为本地用户搜索基于云的邮箱时，这是必需的，因为这些类型的邮箱不会解析为常规邮箱。 
     
     下面的示例在基于云的 redstone Davis （Contoso 组织中的本地用户）的邮箱中搜索包含关键字 "" 的团队聊天（这是即时消息）。
   
-    ```
+    ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 

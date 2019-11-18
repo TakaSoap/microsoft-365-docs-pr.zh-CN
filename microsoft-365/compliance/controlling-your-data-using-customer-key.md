@@ -13,29 +13,30 @@ search.appverid:
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: 了解如何为 Exchange Online、Skype for Business、SharePoint Online 和 OneDrive for business 设置适用于 Office 365 的客户密钥。 使用 "客户密钥"，可以控制组织的加密密钥，然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。
-ms.openlocfilehash: d3e10a32aeedc90dc06257a29b63df8657157a0b
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: 500adf03469833784228e13e26d8272716acc56c
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435526"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685219"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>使用客户密钥控制 Office 365 中的数据
 
 使用 "客户密钥"，可以控制组织的加密密钥，然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。 换言之，客户密钥允许客户添加属于其密钥的加密层。 静态数据包含来自 Exchange Online 和 Skype for Business 的数据，这些数据存储在存储在 SharePoint Online 和 OneDrive for business 中的邮箱和文件中。
-  
+
 您必须先安装 Azure，然后才能使用适用于 Office 365 的客户密钥。 本主题介绍了创建和配置所需 Azure 资源时需要遵循的步骤，然后提供在 Office 365 中设置客户密钥的步骤。 完成 Azure 安装后，确定要为组织中的邮箱和文件分配的策略，并因此确定哪些项。 未分配策略的邮箱和文件将使用由 Microsoft 控制和管理的加密策略。 有关客户密钥的详细信息，或有关一般概述的详细信息，请参阅[Customer key For Office 365 FAQ](service-encryption-with-customer-key-faq.md)。
   
 > [!IMPORTANT]
-> 强烈建议您遵循本主题中的最佳实践。 这些信息称为**提示**和**重要**。 通过 "客户密钥"，您可以控制其作用域与整个组织一样大的根加密密钥。 这意味着，使用这些密钥进行的错误可能会产生很大影响，并且可能会导致数据中断或无法挽回的数据丢失。 
+> 强烈建议您遵循本主题中的最佳实践。 这些信息称为**提示**和**重要**。 通过 "客户密钥"，您可以控制其作用域与整个组织一样大的根加密密钥。 这意味着，使用这些密钥进行的错误可能会产生很大影响，并且可能会导致数据中断或无法挽回的数据丢失。
   
 ## <a name="before-you-begin-setting-up-customer-key"></a>开始设置客户密钥之前
 <a name="Beforeyoustart"> </a>
 
 在开始之前，请确保你的组织拥有适当的许可。 Office 365 中的客户密钥在 Office 365 E5 或高级合规性 SKU 中提供。
   
-然后，若要了解本主题中的概念和过程，应查看[Azure Key Vault](https://azure.microsoft.com/en-us/documentation/services/key-vault/)文档。 此外，还应熟悉 Azure 中使用的术语（例如[租户](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)）。
+然后，若要了解本主题中的概念和过程，应查看[Azure Key Vault](https://azure.microsoft.com/documentation/services/key-vault/)文档。 此外，还应熟悉 Azure 中使用的术语（例如[租户](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)）。
   
 若要提供有关客户密钥的反馈（包括文档），请将你的想法、建议和观点发送到 customerkeyfeedback@microsoft.com。
   
@@ -49,33 +50,33 @@ ms.locfileid: "37435526"
 你将通过远程连接到 Azure PowerShell 来完成大部分这些任务。 为获得最佳结果，请使用版本4.4.0 或更高版本的 Azure PowerShell。
   
 - [创建两个新的 Azure 订阅](controlling-your-data-using-customer-key.md#Create2newsubs)
-    
+
 - [注册 Azure 订阅以使用强制保留期](controlling-your-data-using-customer-key.md#RegisterSubsforMRP)
-    
+
     注册可能需要一到五个工作日的时间。
-    
+
 - [提交为激活 Office 365 的客户密钥的请求](controlling-your-data-using-customer-key.md#FastTrack)
-    
+
     创建了这两个新的 Azure 订阅后，您需要通过完成 Microsoft FastTrack 门户中承载的 web 表单来提交相应的客户密钥提供请求。 **FastTrack 团队不会向客户密钥提供帮助。Office 只是使用 FastTrack 门户来允许您提交表单并帮助我们跟踪客户密钥的相关优惠**。
   
 提交客户密钥提供后，Microsoft 会查看你的请求，并在你继续执行其余设置任务时通知你。 此过程最长可能需要5个工作日。
-    
+
 - [在每个订阅中创建高级 Azure 密钥保管库](controlling-your-data-using-customer-key.md#CreateKeyVault)
-    
+
 - [将权限分配给每个密钥存储库](controlling-your-data-using-customer-key.md#KeyVaultPerms)
-    
+
 - [启用然后确认密钥电子仓库上的软删除](controlling-your-data-using-customer-key.md#SoftDelete)
-    
+
 - [通过创建或导入密钥将密钥添加到每个密钥存储库](controlling-your-data-using-customer-key.md#AddKeystoKeyVault)
-    
+
 - [检查密钥的恢复级别](controlling-your-data-using-customer-key.md#CheckKeyRecoveryLevel)
-    
+
 - [备份 Azure 密钥存储库](controlling-your-data-using-customer-key.md#BackupAzureKeyVaultkeys)
-    
+
 - [验证 Azure Key Vault 配置设置](controlling-your-data-using-customer-key.md#Validateconfiguration)
-    
+
 - [获取每个 Azure Key Vault 密钥的 URI](controlling-your-data-using-customer-key.md#GetKeyURI)
-    
+
 **在 Office 365 中：**
   
 Exchange Online 和 Skype for Business：
@@ -100,7 +101,7 @@ SharePoint Online 和 OneDrive for Business：
 ### <a name="create-two-new-azure-subscriptions"></a>创建两个新的 Azure 订阅
 <a name="Create2newsubs"> </a>
 
-客户密钥需要两个 Azure 订阅。 作为一种最佳做法，Microsoft 建议您创建新的 Azure 订阅以用于客户密钥。 Azure Key Vault 密钥只能为同一 Azure Active Directory （AAD）租户中的应用程序授权，您必须使用用于将 DEPs 分配到的 Office 365 组织使用的相同 Azure AD 租户创建新订阅。 例如，在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户。 有关详细步骤，请参阅[将 Azure 注册为组织](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/)。
+客户密钥需要两个 Azure 订阅。 作为一种最佳做法，Microsoft 建议您创建新的 Azure 订阅以用于客户密钥。 Azure Key Vault 密钥只能为同一 Azure Active Directory （AAD）租户中的应用程序授权，您必须使用用于将 DEPs 分配到的 Office 365 组织使用的相同 Azure AD 租户创建新订阅。 例如，在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户。 有关详细步骤，请参阅[将 Azure 注册为组织](https://azure.microsoft.com/documentation/articles/sign-up-organization/)。
   
 > [!IMPORTANT]
 > 客户密钥需要每个数据加密策略（DEP）的两个密钥。 若要实现此目的，必须创建两个 Azure 订阅。 作为一种最佳做法，Microsoft 建议您的组织的各个成员在每个订阅中配置一个密钥。 此外，这些 Azure 订阅应仅用于管理 Office 365 的加密密钥。 这将保护您的组织，以防您在某个操作员意外、有意或恶意删除或以其他方式 mismanages 它们所负责的密钥。 <br/> 我们建议您设置新的 Azure 订阅，这些订阅仅用于管理 Azure Key Vault 资源，以便与客户密钥配合使用。 您可以为您的组织创建的 Azure 订阅数没有实际限制。 按照这些最佳做法，可以最大限度地减少人为错误的影响，同时帮助管理由客户密钥使用的资源。 
@@ -143,7 +144,7 @@ SharePoint Online 和 OneDrive for Business：
     
 2. 运行 AzureRmProviderFeature cmdlet 以注册你的订阅，以使用强制保留期。
     
-  ```
+  ```powershell
   Register-AzureRmProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
   ```
 
@@ -155,20 +156,20 @@ SharePoint Online 和 OneDrive for Business：
     
 4. 收到 Microsoft 注册已完成的通知后，通过运行 AzureRmProviderFeature cmdlet 验证注册的状态，如下所示：
     
-  ```
+  ```powershell
   Get-AzureRmProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
   ```
 
 5. 在验证 AzureRmProviderFeature cmdlet 中的**注册状态**属性返回**已注册**的值后，请运行以下命令来完成此过程：
     
-  ```
+  ```powershell
   Register-AzureRmResourceProvider -ProviderNamespace "Microsoft.KeyVault"
   ```
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>在每个订阅中创建高级 Azure 密钥保管库
 <a name="CreateKeyVault"> </a>
 
-创建密钥存储库的步骤在[开始使用 Azure Key vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)时进行介绍，此步骤将指导你完成安装和启动 azure PowerShell，连接到 azure 订阅，创建资源组，以及在其中创建密钥存储库资源组。
+创建密钥存储库的步骤在[开始使用 Azure Key vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)时进行了介绍，此步骤将指导您完成安装和启动 azure PowerShell，连接到 azure 订阅，创建资源组，以及在该资源组中创建密钥存储库。
   
 创建密钥存储库时，必须选择 SKU：标准版或高级存储库。 标准 SKU 允许 Azure Key Vault 密钥受软件保护-没有硬件安全模块（HSM）密钥保护-并且 Premium SKU 允许使用 Hsm 来保护关键保管库密钥。 客户密钥接受使用任何 SKU 的密钥电子仓库，尽管 Microsoft 强烈建议您仅使用高级 SKU。 无论是哪种类型的键的运算开销都是一样的，因此，每个受 HSM 保护的密钥的成本的唯一区别是每个月的成本。 有关详细信息，请参阅[主要保管库定价](https://azure.microsoft.com/pricing/details/key-vault/)。 
   
@@ -200,14 +201,14 @@ SharePoint Online 和 OneDrive for Business：
     
 - 运行 AzureRmKeyVaultAccessPolicy cmdlet 以分配所需的权限。
     
-  ```
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> 
   -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
   ```
 
   例如：
     
-  ```
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
   -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
   ```
@@ -216,7 +217,7 @@ SharePoint Online 和 OneDrive for Business：
     
 - 如果打算将客户密钥用于 Exchange Online 和 Skype for business，则需要向 Office 365 授予权限，以代表 Exchange Online 和 Skype for business 使用密钥保管库。 同样，如果您打算将客户密钥与 SharePoint Online 和 OneDrive for business 结合使用，则需要添加 Office 365 的权限，以代表 SharePoint Online 和 OneDrive for business 使用密钥存储库。 若要向 Office 365 授予权限，请使用以下语法运行**AzureRmKeyVaultAccessPolicy** cmdlet： 
     
-  ```
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
   ```
 
@@ -230,14 +231,14 @@ SharePoint Online 和 OneDrive for Business：
     
   示例：设置 Exchange Online 和 Skype for business 的权限：
     
-  ```
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
   -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
   ```
 
   示例：设置 SharePoint Online 和 OneDrive for business 的权限
-    
-  ```
+
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1 
   -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
   ```
@@ -250,24 +251,22 @@ SharePoint Online 和 OneDrive for Business：
 若要在密钥保管库上启用软删除，请完成以下步骤：
   
 1. 使用 Windows Powershell 登录到你的 Azure 订阅。 有关说明，请参阅[使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
-    
+
 2. 运行[AzureRmKeyVault](https://docs.microsoft.com/powershell/module/azurerm.keyvault/get-azurermkeyvault) cmdlet。 在此示例中， *vaultname*是要为其启用软删除的主要保管库的名称： 
-    
-   ```
+
+   ```powershell
    $v = Get-AzureRmKeyVault -VaultName <vaultname>
    $r = Get-AzureRmResource -ResourceId $v.ResourceId
    $r.Properties | Add-Member -MemberType NoteProperty -Name enableSoftDelete -Value 'True'
    Set-AzureRmResource -ResourceId $r.ResourceId -Properties $r.Properties
-   ``` 
-    
-3. 通过运行**AzureRmKeyVault** cmdlet，确认已为密钥存储库配置了软删除。 如果为密钥存储库正确配置了软删除，则会启用软删除？属性返回的值**为 True**： 
-    
    ```
+
+3. 通过运行**AzureRmKeyVault** cmdlet，确认已为密钥存储库配置了软删除。 如果为密钥存储库正确配置了软删除，则会启用软删除？属性返回的值**为 True**： 
+
+   ```powershell
    Get-AzureRmKeyVault -VaultName <vaultname> | fl
    ```
 
-   
-    
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>通过创建或导入密钥将密钥添加到每个密钥存储库
 <a name="AddKeystoKeyVault"> </a>
 
@@ -275,24 +274,24 @@ SharePoint Online 和 OneDrive for Business：
   
 若要直接在密钥保管库中创建密钥，请运行[AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey) cmdlet，如下所示： 
   
-```
+```powershell
 Add-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
 其中：
   
--  *vaultname*是要在其中创建密钥的密钥保管库的名称。 
-    
--  *keyname*是要赋予新键的名称。 
-    
+- *vaultname*是要在其中创建密钥的密钥保管库的名称。
+
+- *keyname*是要赋予新键的名称。
+
     > [!TIP]
     > 使用上面的密钥库的命名约定命名键。 这样一来，在仅显示密钥名称的工具中，字符串是自我描述的。 
   
 - 如果打算使用 HSM 保护密钥，请确保将**HSM**指定为_Destination_参数的值，否则指定 "**软件**"。
-    
+
 For example,
   
-```
+```powershell
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
 ```
 
@@ -301,9 +300,9 @@ Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
 某些组织首选使用此方法来建立其密钥的 provenance，此方法还提供以下内容：
   
 - 用于导入的工具集包括来自 Thales 的证明，用于加密所生成密钥的密钥交换密钥（KEK）不可导出，并在 Thales 制造的正版 HSM 中生成。
-    
+
 - 该工具集包括来自 Thales 的证明，这些安全世界也是在由 Thales 生产的正版 HSM 上生成的。 此认证向你证明 Microsoft 也在使用正版 Thales 硬件。
-    
+
 检查安全组以确定是否需要上述 attestations。 有关在本地创建密钥并将其导入到密钥保管库的详细步骤，请参阅 how [to 为 Azure Key vault 生成和传输受 HSM 保护的密钥](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)。 使用 Azure 说明在每个密钥存储库中创建密钥。
   
 ### <a name="check-the-recovery-level-of-your-keys"></a>检查密钥的恢复级别
@@ -313,11 +312,11 @@ Office 365 要求 Azure Key Vault 订阅设置为 "不取消"，并且客户密�
   
 若要检查注册表项的恢复级别，请在 Azure PowerShell 中运行 AzureKeyVaultKey cmdlet，如下所示：
   
-```
-(Get-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>).Attributes 
+```powershell
+(Get-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>).Attributes
 ```
 
-如果_恢复级别_属性返回的值不是**可恢复 + ProtectedSubscription**的值，则需要查看本主题，并确保已按照所有步骤将订阅放在 "不要取消" 列表中，并将已在每个密钥保管库上启用软删除。
+如果_恢复级别_属性返回的值不是**可恢复 + ProtectedSubscription**的值，则需要查看本主题，并确保已按照所有步骤将订阅放在 "不要取消" 列表中，并且已在每个密钥保管库上启用软删除。
   
 ### <a name="backup-azure-key-vault"></a>备份 Azure 密钥存储库
 <a name="BackupAzureKeyVaultkeys"> </a>
@@ -325,10 +324,10 @@ Office 365 要求 Azure Key Vault 订阅设置为 "不取消"，并且客户密�
 立即完成创建或对某个键的任何更改，执行备份并存储联机和脱机的备份副本。 脱机副本不应连接到任何网络，例如在物理安全或商业存储设施中。 至少应将备份的一个副本存储在灾难发生时可访问的位置。 备份 blob 是恢复密钥材料的唯一方法（应永久销毁密钥保管库密钥），或以其他方式呈现为不可操作。 Azure Key Vault 外部的密钥和已导入到 Azure Key Vault 的密钥不能作为备份，因为客户密钥使用密钥所需的元数据在外部密钥中不存在。 只有从 Azure 密钥存储库中获取的备份才能用于使用客户密钥的还原操作。 因此，在上载或创建密钥时，应创建 Azure 密钥存储库的备份，这一点非常重要。
   
 若要创建 Azure Key Vault 密钥的备份，请运行[AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Backup-AzureKeyVaultKey) cmdlet，如下所示：
-```
-Backup-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> 
--OutputFile <filename .backup>
 
+```powershell
+Backup-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>
+-OutputFile <filename .backup>
 ```
 
 确保输出文件使用后缀`.backup`。
@@ -336,11 +335,11 @@ Backup-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>
 此 cmdlet 生成的输出文件已加密，不能在 Azure 密钥保管库外部使用。 只能将备份还原到从中获取备份的 Azure 订阅。
   
 > [!TIP]
-> 对于输出文件，选择您的电子仓库名称和密钥名称的组合。 这将使文件名自我描述。 它还将确保备份文件名称不会发生冲突。 
+> 对于输出文件，选择您的电子仓库名称和密钥名称的组合。 这将使文件名自我描述。 它还将确保备份文件名称不会发生冲突。
   
 例如：
   
-```
+```powershell
 Backup-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
@@ -351,9 +350,9 @@ Backup-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365E
   
 若要验证您的密钥是否启用了 get、wrapKey 和 unwrapKey 操作，请执行以下操作：
   
-运行[AzureRmKeyVault](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureRmKeyVault) cmdlet，如下所示： 
+运行[AzureRmKeyVault](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureRmKeyVault) cmdlet，如下所示：
   
-```
+```powershell
 Get-AzureRMKeyVault -VaultName <vaultname>
 ```
 
@@ -361,41 +360,41 @@ Get-AzureRMKeyVault -VaultName <vaultname>
   
 如果访问策略配置不正确，请运行 AzureRmKeyVaultAccessPolicy cmdlet，如下所示：
   
-```
+```powershell
 Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
 ```
 
 例如，对于 Exchange Online 和 Skype for Business：
   
-```
+```powershell
 Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
 ```
 
 例如，对于 SharePoint Online 和 OneDrive for Business：
   
-```
+```powershell
 Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1 
 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName TBD
 ```
 
-若要验证没有为你的密钥设置到期日期，请运行[AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureKeyVaultKey) cmdlet，如下所示： 
+若要验证没有为你的密钥设置到期日期，请运行[AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureKeyVaultKey) cmdlet，如下所示：
   
-```
-Get-AzureKeyVaultKey -VaultName <vaultname> 
+```powershell
+Get-AzureKeyVaultKey -VaultName <vaultname>
 ```
 
 已过期的密钥不能由客户密钥使用，尝试使用过期密钥的操作将会失败，并且可能会导致服务中断。 强烈建议使用与客户密钥一起使用的密钥不具有过期日期。 过期日期一旦设置，便无法删除，但可以更改为不同的日期。 如果必须使用具有过期日期设置的密钥，请将 "过期" 值更改为 "12/31/9999"。 过期日期设置为12/31/9999 之外的密钥将不会通过 Office 365 验证。
   
-若要更改已设置为12/31/9999 以外的任何其他值的过期日期，请运行[AzureKeyVaultKeyAttribute](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Set-AzureKeyVaultKeyAttribute) cmdlet，如下所示： 
+若要更改已设置为12/31/9999 以外的任何其他值的过期日期，请运行[AzureKeyVaultKeyAttribute](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Set-AzureKeyVaultKeyAttribute) cmdlet，如下所示：
   
-```
+```powershell
 Set-AzureKeyVaultKeyAttribute -VaultName <vaultname> -Name <keyname> 
 -Expires (Get-Date -Date "12/31/9999")
 ```
 
 > [!CAUTION]
-> 不要在与客户密钥结合使用的加密密钥上设置到期日期。 
+> 不要在与客户密钥结合使用的加密密钥上设置到期日期。
   
 ### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>获取每个 Azure Key Vault 密钥的 URI
 <a name="GetKeyURI"> </a>
@@ -404,7 +403,7 @@ Set-AzureKeyVaultKeyAttribute -VaultName <vaultname> -Name <keyname>
   
 在 Azure PowerShell 中：
   
-```
+```powershell
 (Get-AzureKeyVaultKey -VaultName <vaultname>).Id
 ```
 
@@ -418,49 +417,49 @@ Set-AzureKeyVaultKeyAttribute -VaultName <vaultname> -Name <keyname>
 ### <a name="create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business"></a>创建与 Exchange Online 和 Skype for Business 一起使用的数据加密策略（DEP）
 <a name="CreateDEP4EXOSkype"> </a>
 
-一个 DEP 与 Azure Key Vault 中存储的一组密钥相关联。 您在 Office 365 中向邮箱分配了一个 DEP。 然后，Office 365 将使用在策略中标识的密钥来加密邮箱。 若要创建 DEP，您需要之前获取的主要保管库 Uri。 有关说明，请参阅[获取每个 Azure Key Vault 密钥的 URI](controlling-your-data-using-customer-key.md#GetKeyURI) 。 
+一个 DEP 与 Azure Key Vault 中存储的一组密钥相关联。 您在 Office 365 中向邮箱分配了一个 DEP。 然后，Office 365 将使用在策略中标识的密钥来加密邮箱。 若要创建 DEP，您需要之前获取的主要保管库 Uri。 有关说明，请参阅[获取每个 Azure Key Vault 密钥的 URI](controlling-your-data-using-customer-key.md#GetKeyURI) 。
   
 还! 创建 DEP 时，请指定驻留在两个不同的 Azure Key 保管库中的两个密钥。 确保这些项位于两个单独的 Azure 区域中，以确保地域冗余。
   
 若要创建 DEP，请按照以下步骤操作：
   
-1. 在您的本地计算机上，使用在 Office 365 组织中具有全局管理员权限的工作或学校帐户，通过打开 Windows PowerShell 并运行以下命令[连接到 Exchange Online PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) 。 
-    
-   ```
+1. 在您的本地计算机上，使用在 Office 365 组织中具有全局管理员权限的工作或学校帐户，通过打开 Windows PowerShell 并运行以下命令[连接到 Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) 。
+
+   ```powershell
    $UserCredential = Get-Credential
    ```
 
-2. 在 "Windows PowerShell 凭据请求" 对话框中，输入你的工作或学校帐户信息，单击 **"确定**"，然后输入以下命令。 
-    
-   ```
+2. 在 "Windows PowerShell 凭据请求" 对话框中，输入你的工作或学校帐户信息，单击 **"确定**"，然后输入以下命令。
+
+   ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
    ```
 
 3. 运行以下命令。
-    
-   ```
+
+   ```powershell
    Import-PSSession $Session
    ```
 
 4. 若要创建 DEP，请通过键入以下命令来使用 DataEncryptionPolicy cmdlet。
-    
-   ```
+
+   ```powershell
    New-DataEncryptionPolicy -Name <PolicyName> -Description "PolicyDescription " -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
    ```
 
    其中：
-    
-   -  *PolicyName*是要用于策略的名称。 名称不能包含空格。 例如，USA_mailboxes。 
-    
-   -  *PolicyDescription*是一种用户友好的策略说明，可帮助您记住该策略的用途。 您可以在说明中包含空格。 例如，美国邮箱和其区域的根键。 
-    
-   -  *KeyVaultURI1*是策略中的第一个项的 URI。 例如，https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01。 
-    
-   -  *KeyVaultURI2*是策略中的第二个项的 URI。 例如，https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02。 用逗号和空格分隔两个 Uri。 
-    
+
+   -  *PolicyName*是要用于策略的名称。 名称不能包含空格。 例如，USA_mailboxes。
+
+   -  *PolicyDescription*是一种用户友好的策略说明，可帮助您记住该策略的用途。 您可以在说明中包含空格。 例如，美国邮箱和其区域的根键。
+
+   -  *KeyVaultURI1*是策略中的第一个项的 URI。 例如，https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01。
+
+   -  *KeyVaultURI2*是策略中的第二个项的 URI。 例如，https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02。 用逗号和空格分隔两个 Uri。
+
    示例：
   
-   ```
+   ```powershell
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02
    ```
 
@@ -469,7 +468,7 @@ Set-AzureKeyVaultKeyAttribute -VaultName <vaultname> -Name <keyname>
 
 使用 "设置邮箱" cmdlet 将 DEP 分配给邮箱。 一旦分配了策略，Office 365 就可以使用 DEP 中指定的密钥对邮箱进行加密。
   
-```
+```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
@@ -482,7 +481,7 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
   
 使用 Get-mailboxstatistics cmdlet 可以确定邮箱是否已加密。
   
-```
+```powershell
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
 
@@ -490,14 +489,14 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 完成邮箱移动的时间取决于第一次为其分配 DEP 的邮箱数以及邮箱的大小。 如果自您分配 DEP 之后一周后邮箱尚未加密，请使用 New-moverequest cmdlet 为未加密邮箱启动邮箱移动。
 
-```
+```powershell
 New-MoveRequest <mailbox alias>
-``` 
+```
 
 ## <a name="office-365-setting-up-customer-key-for-sharepoint-online-and-onedrive-for-business"></a>Office 365：设置适用于 SharePoint Online 和 OneDrive for business 的客户密钥
 <a name="AzureSteps"> </a>
 
-在开始之前，请确保您已完成设置 Azure Key Vault 所需的任务。 有关信息，请参阅[Azure Key Vault 和 Microsoft FastTrack 中的 "完成任务" 以获取客户密钥](controlling-your-data-using-customer-key.md#AzureSteps)。 
+在开始之前，请确保您已完成设置 Azure Key Vault 所需的任务。 有关信息，请参阅[Azure Key Vault 和 Microsoft FastTrack 中的 "完成任务" 以获取客户密钥](controlling-your-data-using-customer-key.md#AzureSteps)。
   
 若要设置适用于 SharePoint Online 和 OneDrive for business 的客户密钥，你将需要通过使用 Windows PowerShell 远程连接到 SharePoint Online 来执行这些步骤。
   
@@ -511,51 +510,51 @@ New-MoveRequest <mailbox alias>
 若要创建 DEP，您需要使用 Windows PowerShell 远程连接到 SharePoint Online。
   
 1. 在您的本地计算机上，使用在 Office 365 组织中具有全局管理员权限的工作或学校帐户，[连接到 SharePoint Online Powershell](https://technet.microsoft.com/library/fp161372.aspx)。
-    
-2. 在 Microsoft SharePoint Online 命令行管理程序中，运行[SPODataEncryptionPolicy](https://technet.microsoft.com/library/mt843950.aspx) cmdlet，如下所示： 
-    
-   ```
+
+2. 在 Microsoft SharePoint Online 命令行管理程序中，运行[SPODataEncryptionPolicy](https://technet.microsoft.com/library/mt843950.aspx) cmdlet，如下所示：
+
+   ```powershell
    Register-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
 
    注册 DEP 时，会开始对 geo 中的数据进行加密。 这可能需要一些时间。
-    
+
 ### <a name="validate-encryption-of-group-sites-team-sites-and-onedrive-for-business"></a>验证组网站、团队网站和 OneDrive for Business 的加密
 <a name="validateencryptionSPO"> </a>
 
 您可以通过运行 SPODataEncryptionPolicy cmdlet 来检查加密状态，如下所示：
   
-```
+```powershell
 Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 ```
 
 此 cmdlet 的输出包括：
   
 - 主键的 URI。
-    
+
 - 辅助密钥的 URI。
-    
+
 - 地理位置的加密状态。 可能的状态包括：
-    
-  - 未**注册：** 尚未应用客户密钥加密。 
-    
-  - **注册：** 客户密钥加密已应用，并且您的文件正在被加密。 如果你的地理位置处于此状态，则还会显示有关 geo 中的多少个网站的完成百分比的信息，以便你可以监视加密进度。 
-    
-  - **注册：** 客户密钥加密已应用，并且所有网站中的所有文件均已加密。 
-    
-  - **滚动：** 正在进行密钥滚动。 如果你的地理位置处于此状态，则还会显示有关已完成密钥滚动操作的网站百分比的信息，以便你可以监视进度。 
-    
+
+  - 未**注册：** 尚未应用客户密钥加密。
+
+  - **注册：** 客户密钥加密已应用，并且您的文件正在被加密。 如果你的地理位置处于此状态，则还会显示有关 geo 中的多少个网站的完成百分比的信息，以便你可以监视加密进度。
+
+  - **注册：** 客户密钥加密已应用，并且所有网站中的所有文件均已加密。
+
+  - **滚动：** 正在进行密钥滚动。 如果你的地理位置处于此状态，则还会显示有关已完成密钥滚动操作的网站百分比的信息，以便你可以监视进度。
+
 ## <a name="managing-customer-key-for-office-365"></a>管理 Office 365 的客户密钥
 <a name="ManageCustomerKey"> </a>
 
 在设置了适用于 Office 365 的客户密钥之后，可以执行这些额外的管理任务。
   
 - [还原 Azure Key Vault 密钥](controlling-your-data-using-customer-key.md#RestoreAzureKeyVaultKeys)
-    
+
 - [在使用客户密钥的 Azure Key Vault 中滚动或旋转密钥](controlling-your-data-using-customer-key.md#RollCKkey)
-    
+
 - [管理密钥存储库权限](controlling-your-data-using-customer-key.md#Managekeyvaultperms)
-    
+
 - [确定分配给邮箱的 DEP](controlling-your-data-using-customer-key.md#DeterminemailboxDEP)
     
 ### <a name="restore-azure-key-vault-keys"></a>还原 Azure Key Vault 密钥
@@ -563,13 +562,13 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 在执行还原之前，请使用由软删除提供的恢复功能。 需要使用与客户密钥一起使用的所有密钥才能启用软删除。 软删除操作类似于回收站，允许恢复最长为90天，而无需进行还原。 只有在极端或异常情况下才需要还原，例如，密钥或密钥存储库丢失。 如果您必须还原密钥以用于客户密钥，请在 Azure PowerShell 中运行 AzureKeyVaultKey cmdlet，如下所示：
   
-```
+```powershell
 Restore-AzureKeyVaultKey -VaultName <vaultname> -InputFile <filename>
 ```
 
 例如：
   
-```
+```powershell
 Restore-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
@@ -581,17 +580,17 @@ Restore-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso
 Azure Key Vault 或 Customer 密钥不需要滚动密钥。 此外，通过 HSM 保护的密钥几乎不可能受到危害。 即使某个根键是在拥有恶意参与者的情况下，也没有使用它来解密数据的可行方法，因为只有 Office 365 代码知道了如何使用它。 但是，滚动密钥是由客户密钥支持的。
   
 > [!CAUTION]
-> 在明确的技术原因或合规性要求规定您必须滚动密钥时，只需滚动与客户密钥一起使用的加密密钥。 此外，请勿删除与策略关联的或与之相关联的任何密钥。 在滚动键时，会使用以前的密钥对内容进行加密。 例如，虽然活动邮箱将被频繁地重新加密，但非活动邮箱、断开连接和已禁用邮箱仍可以使用以前的密钥进行加密。 SharePoint Online 执行用于还原和恢复目的的内容备份，因此可能仍有存档的内容使用旧密钥。 <br/> 为了确保数据的安全性，SharePoint Online 将不允许一个以上的键滚动操作一次进行。 如果要将密钥存储库中的两个密钥一起滚动，则需要等待第一个密钥滚动操作完全完成。 我们建议您将密钥滚动操作以不同的间隔错开，这样就不会出现问题。 
+> 在明确的技术原因或合规性要求规定您必须滚动密钥时，只需滚动与客户密钥一起使用的加密密钥。 此外，请勿删除与策略关联的或与之相关联的任何密钥。 在滚动键时，会使用以前的密钥对内容进行加密。 例如，虽然活动邮箱将被频繁地重新加密，但非活动邮箱、断开连接和已禁用邮箱仍可以使用以前的密钥进行加密。 SharePoint Online 执行用于还原和恢复目的的内容备份，因此可能仍有存档的内容使用旧密钥。 <br/> 为了确保数据的安全性，SharePoint Online 将不允许一个以上的键滚动操作一次进行。 如果要将密钥存储库中的两个密钥一起滚动，则需要等待第一个密钥滚动操作完全完成。 我们建议您将密钥滚动操作以不同的间隔错开，这样就不会出现问题。
   
 当您滚动某个键时，您请求的是现有密钥的新版本。 若要请求现有密钥的新版本，请使用相同的 cmdlet （ [AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey)），其语法与您在第一个位置创建密钥时使用的语法相同。
   
 例如：
   
-```
+```powershell
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
 ```
 
-在此示例中，由于名为**contoso-O365EX-VaultA1-Key001**的键在**contoso-O365EX-na-VaultA1**保管库中已存在，将创建一个新的密钥版本。 该操作将添加新的密钥版本。 此操作将保留密钥版本历史记录中以前的密钥版本，以便仍可以解密之前使用该密钥加密的数据。 完成滚动与 DEP 关联的任何键后，必须运行其他 cmdlet，以确保客户密钥开始使用新密钥。 
+在此示例中，由于名为**contoso-O365EX-VaultA1-Key001**的键在**contoso-O365EX-na-VaultA1**保管库中已存在，将创建一个新的密钥版本。 该操作将添加新的密钥版本。 此操作将保留密钥版本历史记录中以前的密钥版本，以便仍可以解密之前使用该密钥加密的数据。 完成滚动与 DEP 关联的任何键后，必须运行其他 cmdlet，以确保客户密钥开始使用新密钥。
   
 #### <a name="enable-exchange-online-and-skype-for-business-to-use-a-new-key-after-you-roll-or-rotate-keys-in-azure-key-vault"></a>在滚动或旋转 Azure Key Vault 中的密钥之后，启用 Exchange Online 和 Skype for business 以使用新密钥
 
@@ -599,23 +598,23 @@ Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
   
 若要指示客户密钥使用新密钥加密 Office 365 中的邮箱，请运行 DataEncryptionPolicy cmdlet，如下所示：
   
-```
-Set-DataEncryptionPolicy <policyname> -Refresh 
+```powershell
+Set-DataEncryptionPolicy <policyname> -Refresh
 ```
 
-在48小时内，使用此策略加密的活动邮箱将会与更新的密钥相关联。 按照[确定分配给邮箱的 DEP](controlling-your-data-using-customer-key.md#DeterminemailboxDEP)中的步骤检查邮箱的 DataEncryptionPolicyID 属性的值。 一旦应用了更新的键，此属性的值将更改。 
+在48小时内，使用此策略加密的活动邮箱将会与更新的密钥相关联。 按照[确定分配给邮箱的 DEP](controlling-your-data-using-customer-key.md#DeterminemailboxDEP)中的步骤检查邮箱的 DataEncryptionPolicyID 属性的值。 一旦应用了更新的键，此属性的值将更改。
   
 #### <a name="enable-sharepoint-online-and-onedrive-for-business-to-use-a-new-key-after-you-roll-or-rotate-keys-in-azure-key-vault"></a>启用 SharePoint Online 和 OneDrive for business 以在 Azure Key Vault 中滚动或旋转密钥后使用新密钥
 
 当您滚动与 SharePoint Online 和 OneDrive for Business 使用的 DEP 相关联的任何 Azure Key Vault 密钥时，您必须运行[SPODataEncryptionPolicy](https://technet.microsoft.com/library/mt843948.aspx) cmdlet 以更新 DEP，并启用 Office 365 以开始使用新密钥。 
   
-```
+```powershell
 Update-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
 ```
 
 这将启动 SharePoint Online 和 OneDrive for business 的密钥滚动操作。 此操作不是即时执行的。 若要查看密钥滚动操作的进度，请运行 SPODataEncryptionPolicy cmdlet，如下所示：
   
-```
+```powershell
 Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 ```
 
@@ -626,27 +625,27 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
   
 若要查看密钥存储区权限，请运行 AzureRmKeyVault cmdlet：
   
-```
+```powershell
 Get-AzureRmKeyVault -VaultName <vaultname>
 ```
 
 例如：
   
-```
+```powershell
 Get-AzureRmKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
 若要删除管理员权限，请运行 AzureRmKeyVaultAccessPolicy cmdlet：
   
-```
-Remove-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> 
+```powershell
+Remove-AzureRmKeyVaultAccessPolicy -VaultName <vaultname>
 -UserPrincipalName <UPN of user>
 ```
 
 例如：
   
-```
-Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
+```powershell
+Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1
 -UserPrincipalName alice@contoso.com
 ```
 
@@ -655,7 +654,7 @@ Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1
 
 若要确定分配给邮箱的 DEP，请使用 Get-mailboxstatistics cmdlet。 Cmdlet 返回唯一标识符（GUID）。
   
-```
+```powershell
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
 ```
 
@@ -663,10 +662,8 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataE
   
 通过运行以下 cmdlet，使用 GUID 找出邮箱所分配到的 DEP 的友好名称。
   
-```
+```powershell
 Get-DataEncryptionPolicy <GUID>
 ```
 
-其中*guid*是上一步中的 get-mailboxstatistics cmdlet 返回的 guid。 
-  
-
+其中*guid*是上一步中的 get-mailboxstatistics cmdlet 返回的 guid。

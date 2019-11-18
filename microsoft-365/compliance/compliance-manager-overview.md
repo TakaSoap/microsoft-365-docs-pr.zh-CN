@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417531"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38685063"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -105,22 +105,22 @@ ms.locfileid: "37417531"
 
 [操作项](working-with-compliance-manager.md#controls-and-actions)以内置工作流管理功能的一部分的形式包含在客户托管的控件中，可用于管理和跟踪评估完成的进展情况。
 
-组织中的人员可以使用合规性管理器从其分配的所有评估中查看客户托管的控件。 当用户登录合规性管理器并打开 "**交办事项**" 仪表板时，将显示分配给它们的操作项的列表。 根据为用户分配的合规性管理器角色，他们可以提供实施或测试详细信息、更新状态或分配操作项。
+组织中的人员可以使用合规性管理器从其分配的所有评估中查看客户托管的控件。 用户登录合规性管理器并打开“**操作项目**”仪表板时，会显示分配给他们的操作项目列表。 根据分配给用户的合规性管理器角色，他们可以提供实施或测试详细信息，更新状态或分配操作项目。
 
 证书控制通常由一个人实施，并由另一个人测试。 例如，在最初分配给一个人实现实施的操作项目结束后，会向下一个要测试和上载证据的人员分配措施项。 对控制分配具有足够权限的任何用户都可以分配和重新分配操作项目。 这样可以集中管理控制分配以及 implementors 和测试人员之间的操作项目的分散路由。
 
 ## <a name="permissions"></a>权限
 
-合规性管理器使用基于角色的访问控制权限模型。 只有分配了用户角色的用户才可以访问合规性管理器，并且每个用户允许的操作受角色类型的限制。 [查看](working-with-compliance-manager.md#permissions)显示每个权限允许执行的操作的表。
+合规性管理器使用基于角色的访问控制权限模型。 只有分配了用户角色的用户可访问合规性管理器，并且每位用户允许的操作受到角色类型的限制。 [查看](working-with-compliance-manager.md#permissions)显示每个权限允许执行的操作的表。
 
 门户管理员合规性管理器可以通过执行以下步骤，在合规性管理器中设置其他用户的权限：
 
 1. 从 "最**多**" 下拉菜单中依次选择 "**管理员**" 和 "**设置**"。
 2. 在此处，选择要分配的角色，然后添加要分配给该角色的员工。 然后，用户将能够执行某些操作。
 
-此外，在[Azure Active Directory （AZURE AD）中分配了全局读者角色](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的用户拥有访问合规性管理器的只读权限;但是，他们无法在合规性管理器中编辑数据或执行任何操作。
+此外，在[Azure Active Directory （AZURE AD）中分配了全局读者角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的用户拥有访问合规性管理器的只读权限;但是，他们无法在合规性管理器中编辑数据或执行任何操作。
 
-请注意，不再存在默认**来宾访问**角色。 必须为每个用户分配一个角色，以便在合规性管理器中访问和工作。
+请注意，“**来宾访问**”这一默认角色已不复存在。 必须为每位用户分配一个角色，使其可访问合规性管理器并在其中工作。
   
 ## <a name="manage-evidence"></a>管理证据
 
@@ -131,28 +131,30 @@ ms.locfileid: "37417531"
 合规性管理器为评估提供预先配置的[模板](working-with-compliance-manager.md#templates)，并允许您为客户托管的控件创建自定义模板，以满足您的合规性需求。 新模板是通过导入 Excel 文件中的控件信息来创建的，也可以通过现有模板的副本创建模板。
 
 合规性管理器附带的预配置模板为：
- 
-- [ISO 27001:2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
-- [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
-- [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
-- [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
-- [NIST Cybersecurity Framework （CSF）](https://www.nist.gov/cyberframework)
-- [云安全联盟（CSA）云控制矩阵（CCM）3.0。1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
-- [联邦金融机构检查委员会（FFIEC）信息安全手册](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
-- [HIPAA](https://www.hhs.gov/hipaa/for-professionals/index.html) / 高[科技](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html)
-- [FedRAMP 中等](https://www.fedramp.gov/documents/)
-- [欧洲联合 GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
+
+1. [ISO 27001：2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018：2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [NIST 800-53 修订版4](https://go.microsoft.com/fwlink/?linkid=2109075)
+4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+5. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
+6. [云安全联盟（CSA）云控制矩阵（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
+8. [联邦金融机构检查委员会（FFIEC）信息安全手册](https://go.microsoft.com/fwlink/?linkid=2109077) 
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [FedRAMP 中等](https://go.microsoft.com/fwlink/?linkid=2108869)
+10. [欧洲联合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+11. [加利福尼亚消费者隐私法案（CCPA）-预览](https://go.microsoft.com/fwlink/?linkid=2108871)
+12. [Microsoft 365 数据保护基准](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>合规性分数
 
-[合规性分数](compliance-score-methodology.md)是合规性管理器的核心组件，可帮助您的组织了解和管理合规性。 与[Microsoft 安全分数](../security/mtp/microsoft-secure-score.md)一样，合规性分数是基于行为的计分系统，用于实现与组织中的数据保护、隐私和安全性相关的活动。 评估的合规性分数是符合给定标准或法规的表达式。 数值分数越高，评估的合规性状况越好。 了解合规性评分方法对于确定必需的客户托管控制操作的优先级至关重要。
+[Microsoft 合规性分数（预览版）](compliance-score.md)是 microsoft 365 合规性中心中的一项功能，可帮助您了解组织的合规性状况。 它将计算基于风险的分数，以衡量您在帮助降低数据保护和法规标准方面的风险的完成操作的进度。 了解您的总体合规性分数可帮助您的组织了解和管理合规性。 了解[如何计算合规性分数](compliance-score-methodology.md)。
   
 > [!IMPORTANT]
-> 合规性分数并不是组织遵守任何特定标准或法规情况的绝对度量。它表示执行控制措施的程度，这些控制措施可降低个人数据和个人隐私面临的风险。任何服务都无法保证遵守标准或法规，不得以任何方式将合规性分数解读为保证。
+> 合规性分数不表示对任何特定标准或法规的组织合规性的绝对衡量。 它表示您已采用的控制程度，可降低个人数据和个人隐私的风险。 任何服务都不能保证您符合标准或法规，并且不应以任何方式将合规性分数解释为保证。
 
 ## <a name="secure-score-integration"></a>安全分数集成
 
-合规性管理器与[Microsoft 安全分数](../security/mtp/microsoft-secure-score.md)集成，以自动对同步交办事项的合规性分数应用安全分数积分。 可以对单个操作项进行配置，并在各项之间进行连续更新。
+合规性管理器与[Microsoft 安全分数](../security/mtp/microsoft-secure-score.md)集成，以自动对同步交办事项的合规性分数应用安全分数积分。 这可在全局操作项或全局操作中进行配置，并提供安全分数的更新。
 
 例如，您对在组织中激活 Azure 权限管理（也适用于与合规性相关的措施项）进行安全相关的要求。 当 Azure 权限管理激活并由安全得分处理时，合规性管理器将接收更新通知，并通过完成信用自动更新措施项的分数。
 

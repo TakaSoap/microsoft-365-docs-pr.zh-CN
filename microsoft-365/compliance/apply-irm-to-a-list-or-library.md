@@ -16,19 +16,20 @@ search.appverid:
 ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: 您可以使用信息权限管理（IRM）来帮助控制和保护从列表或库中下载的文件。
-ms.openlocfilehash: 3c350a3648b77992dd8e86ee47498efc327b2af8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 82cbbf7fdea4a534c2bc73bf0f817d6fc3a249de
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074533"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685234"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>向列表或库应用信息权限管理（IRM）
 
 您可以使用信息权限管理（IRM）来帮助控制和保护从列表或库中下载的文件。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - Azure Rights Management service （Azure RMS）（来自 Azure 信息保护）和本地等效项 Active Directory 权限管理服务（AD RMS），支持网站的信息权限管理。 不需要单独安装或其他安装。
     

@@ -13,14 +13,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 向欧盟公民（称为 "数据主体"）授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 DSR 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: 8a4882070509991ca91403c96b55825fac3a2536
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075004"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685269"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
 
@@ -133,13 +134,13 @@ EU 常规数据保护条例（GDPR）是关于保护和启用欧盟（EU）内�
     
 下面是创建 DSR 事例时自动创建的内置搜索的关键字查询的外观。
   
-```
+```powershell
 participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
 ```
 
 例如，如果数据主体的名称是中 Leonte，则关键字查询将如下所示：
   
-```
+```powershell
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
@@ -210,7 +211,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     搜索结果已准备好下载，这意味着它们将被上载到 Microsoft 云中的组织的 Azure 存储区域。 接下来的步骤演示了如何将此数据下载到本地计算机。
     
-6. 单击 "**导出**" 选项卡以显示所创建的导出作业。 导出作业与对应的搜索具有相同的名称，并在搜索名称的末尾追加 **_Export** 。 
+6. 单击 "**导出**" 选项卡以显示所创建的导出作业。 导出作业与对应的搜索具有相同的名称，并将 **_Export**追加到搜索名称的末尾。 
     
 7. 单击刚创建的导出作业以显示 "导出" 弹出页面。 此页面显示有关搜索的信息，如要导出的项目的大小和总数，以及已转移到 Azure 存储区域的项目的百分比。 单击 "**刷新**" 以更新上载状态信息。 
     
@@ -272,7 +273,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 3. 如果要修改内置搜索中的内容位置，请单击 "**保存&amp;运行**" 以重新启动搜索。 
 
 > [!NOTE]
-> 当您搜索所有邮箱位置或仅搜索特定邮箱时，当您导出搜索结果时，将包括保存到用户邮箱的来自其他 Office 365 应用程序的数据。 此数据不会包括在估计的搜索结果中，也不能用于预览。 但在导出和下载搜索结果时，会将其包括在内。 有关将数据存储在用户邮箱中的应用程序的详细信息，请参阅[存储在 Exchange Online 邮箱中的内容](what-is-stored-in-exo-mailbox.md)。
+> 当您搜索所有邮箱位置或仅搜索特定邮箱时，当您导出搜索结果时，将包括保存到用户邮箱的来自其他 Office 365 应用程序的数据。 此数据将不会包括在估计的搜索结果中，并且也不可用于预览。 但在导出和下载搜索结果时，会将其包括在内。 有关将数据存储在用户邮箱中的应用程序的详细信息，请参阅[存储在 Exchange Online 邮箱中的内容](what-is-stored-in-exo-mailbox.md)。
   
 ## <a name="more-information-about-using-the-dsr-case-tool"></a>有关使用 DSR 机箱工具的详细信息
 
@@ -341,7 +342,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     搜索结果已准备好下载，这意味着它们将被上载到 Microsoft 云中的组织的 Azure 存储区域。 接下来的步骤演示了如何将此数据下载到本地计算机。
     
-5. 单击 "**导出**" 选项卡以显示所创建的导出作业。 导出作业与对应的搜索具有相同的名称，并在搜索名称的末尾追加 **_Export** 。 
+5. 单击 "**导出**" 选项卡以显示所创建的导出作业。 导出作业与对应的搜索具有相同的名称，并将 **_Export**追加到搜索名称的末尾。 
     
 6. 单击刚创建的导出作业以显示 "导出" 弹出页面。 
     
@@ -414,7 +415,7 @@ Microsoft 团队（称为团队聊天或一对一聊天）中的聊天列表的�
     
   - 在 "**关键字**" 框中，使用以下搜索查询： 
     
-    ```
+    ```powershell
     itemclass:ipm.post AND "<email address of the data subject>"
     ```
 

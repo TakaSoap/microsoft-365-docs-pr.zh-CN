@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 帮助说明 Office 365 邮件加密版本之间的区别。
-ms.openlocfilehash: 29c30c1630e6fbf24e9037837c162b4ac67950e2
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: 1d4016e3fa0576a52ef9627539ecd96416a53fae
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435516"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38685046"
 ---
 # <a name="compare-versions-of-ome"></a>比较 OME 的版本
 
@@ -72,11 +72,9 @@ Office 365 高级邮件加密功能提供了新 OME 功能的其他功能。 您
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>GCC 高部署中的 Office 365 邮件加密的独特特征
 
-Office 365 高级消息加密在 GCC 高环境中不可用。 您仍可以在 GCC 高环境中使用单个品牌模板。
+Office 365 高级消息加密在 GCC 高环境中不可用。 您仍可以在 GCC 高环境中使用和自定义单个品牌模板。
 
 此外，如果您计划在 GCC 高环境中使用 Office 365 邮件加密，则有一些关于收件人体验的独特特征。
-
-在 GCC High 中不支持对 Office 365 高级邮件加密。
 
 ### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>来自 GCC 高到 GCC 的加密电子邮件高收件人
 
