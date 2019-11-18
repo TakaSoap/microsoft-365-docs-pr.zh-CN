@@ -1,0 +1,190 @@
+---
+title: 为 Microsoft 365 配置通信合规性（预览）
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+audience: Admin
+ms.topic: article
+f1_keywords:
+- ms.o365.cc.SupervisoryReview
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+search.appverid:
+- MET150
+- MOE150
+description: 设置通信合规性策略以配置员工通信以供审阅。
+ms.openlocfilehash: 76b28443d2fa77967933ea61f2724a2a5ff072be
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38685077"
+---
+# <a name="configure-communication-compliance-for-microsoft-365-preview"></a><span data-ttu-id="cd858-103">为 Microsoft 365 配置通信合规性（预览）</span><span class="sxs-lookup"><span data-stu-id="cd858-103">Configure communication compliance for Microsoft 365 (preview)</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="cd858-104">本主题适用于在 Microsoft 365 订阅中配置通信合规性。</span><span class="sxs-lookup"><span data-stu-id="cd858-104">This topic applies to configuring communication compliance in a Microsoft 365 subscription.</span></span> <span data-ttu-id="cd858-105">如果要为 Office 365 订阅配置监督策略，请参阅[configure 监督 For office 365](supervision-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="cd858-105">If you want to configure Supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).</span></span>
+
+<span data-ttu-id="cd858-106">使用通信合规性策略，以捕获内部或外部审阅者进行检查的员工通信。</span><span class="sxs-lookup"><span data-stu-id="cd858-106">Use communication compliance policies to capture employee communications for examination by internal or external reviewers.</span></span> <span data-ttu-id="cd858-107">有关通信合规性策略如何帮助您监视组织中的通信的详细信息，请参阅[Microsoft 365 中的通信合规性策略](communication-compliance.md)。</span><span class="sxs-lookup"><span data-stu-id="cd858-107">For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="cd858-108">通过通信合规性策略监控的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。</span><span class="sxs-lookup"><span data-stu-id="cd858-108">Users monitored by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.</span></span>
+> <span data-ttu-id="cd858-109">如果你没有现有的企业版 E5 计划，并且想要尝试进行通信合规性，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="cd858-109">If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span>
+  
+<span data-ttu-id="cd858-110">按照以下步骤在 Microsoft 365 组织中设置和使用通信合规性：</span><span class="sxs-lookup"><span data-stu-id="cd858-110">Follow these steps to set up and use communication compliance in your Microsoft 365 organization:</span></span>
+  
+- <span data-ttu-id="cd858-111">**步骤1（可选）**：[设置组以实现通信合规性](#step-1-set-up-groups-for-communication-compliance-optional)</span><span class="sxs-lookup"><span data-stu-id="cd858-111">**Step 1 (optional)**: [Set up groups for communication compliance](#step-1-set-up-groups-for-communication-compliance-optional)</span></span> 
+
+    <span data-ttu-id="cd858-112">在开始使用通信合规性之前，请确定哪些用户需要查看通信以及谁执行了检查。</span><span class="sxs-lookup"><span data-stu-id="cd858-112">Before you start using communication compliance, determine who needs communications reviewed and who performs reviews.</span></span> <span data-ttu-id="cd858-113">如果要开始使用几个用户查看通信合规性的工作方式，则可以跳过 "立即" 设置组。</span><span class="sxs-lookup"><span data-stu-id="cd858-113">If you want to get started with just a few users to see how communication compliance works, you can skip setting up groups for now.</span></span>
+
+- <span data-ttu-id="cd858-114">**步骤2（必需）**：[在组织中提供通信合规性](#step-2-make-communication-compliance-available-in-your-organization-required)</span><span class="sxs-lookup"><span data-stu-id="cd858-114">**Step 2 (required)**: [Make communication compliance available in your organization](#step-2-make-communication-compliance-available-in-your-organization-required)</span></span>
+
+    <span data-ttu-id="cd858-115">将自己添加到**监管审核管理员**角色，以便您可以设置策略。</span><span class="sxs-lookup"><span data-stu-id="cd858-115">Add yourself to the **Supervisory Review Administrator** role so you can set up policies.</span></span> <span data-ttu-id="cd858-116">您还需要将**案例管理**和**审阅**角色分配给将对具有策略匹配的邮件进行调查和修正操作的人员或组。</span><span class="sxs-lookup"><span data-stu-id="cd858-116">You'll also need to assign the **Case Management** and **Review** roles to people or groups that will take investigative and remediation action on messages with policy matches.</span></span> <span data-ttu-id="cd858-117">分配了这些角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。</span><span class="sxs-lookup"><span data-stu-id="cd858-117">Anyone who has these roles assigned can access the **Communication compliance** page in the Microsoft 365 compliance center.</span></span> <span data-ttu-id="cd858-118">如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="cd858-118">If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).</span></span>
+
+- <span data-ttu-id="cd858-119">**步骤3（必需）**：[设置通信合规性策略](#step-3-create-a-communication-compliance-policy-required)</span><span class="sxs-lookup"><span data-stu-id="cd858-119">**Step 3 (required)**: [Set up a communication compliance policy](#step-3-create-a-communication-compliance-policy-required)</span></span>
+
+    <span data-ttu-id="cd858-120">在 Microsoft 365 合规性中心创建通信合规性策略。</span><span class="sxs-lookup"><span data-stu-id="cd858-120">You create communication compliance policies in the Microsoft 365 compliance center.</span></span> <span data-ttu-id="cd858-121">这些策略定义哪些通信将在组织中进行审核，并指定执行审阅的用户。</span><span class="sxs-lookup"><span data-stu-id="cd858-121">These policies define which communications are subject to review in your organization and specifies who performs reviews.</span></span> <span data-ttu-id="cd858-122">通信包括电子邮件、Microsoft 团队、Skype for Business 和第三方平台通信（如 Facebook、Twitter 等）。</span><span class="sxs-lookup"><span data-stu-id="cd858-122">Communications include email, Microsoft Teams, Skype for Business, and 3rd-party platform communications (such as Facebook, Twitter, etc.).</span></span>
+
+- <span data-ttu-id="cd858-123">**步骤4（可选）**：[创建员工通知模板](#step-4-create-employee-notice-templates-optional)</span><span class="sxs-lookup"><span data-stu-id="cd858-123">**Step 4 (optional)**: [Create employee notice templates](#step-4-create-employee-notice-templates-optional)</span></span>
+
+    <span data-ttu-id="cd858-124">创建自定义通知模板以向员工发送电子邮件通知，作为策略匹配项的修正选项。</span><span class="sxs-lookup"><span data-stu-id="cd858-124">Create custom notice templates to send email notifications to employees as a remediation option for policy matches.</span></span>
+
+- <span data-ttu-id="cd858-125">**步骤5（可选）**：[测试通信合规性策略](#step-5-test-your-communication-compliance-policy-optional)</span><span class="sxs-lookup"><span data-stu-id="cd858-125">**Step 5 (optional)**: [Test your communication compliance policy](#step-5-test-your-communication-compliance-policy-optional)</span></span>
+
+    <span data-ttu-id="cd858-126">测试通信合规性策略以确保其按预期工作。</span><span class="sxs-lookup"><span data-stu-id="cd858-126">Test your communication compliance policy to make sure it functions as desired.</span></span> <span data-ttu-id="cd858-127">一定要确保符合性策略满足您的标准。</span><span class="sxs-lookup"><span data-stu-id="cd858-127">It is important to ensure that your compliance strategy is meeting your standards.</span></span>
+
+## <a name="step-1-set-up-groups-for-communication-compliance-optional"></a><span data-ttu-id="cd858-128">步骤1：为通信合规性设置组（可选）</span><span class="sxs-lookup"><span data-stu-id="cd858-128">Step 1: Set up groups for communication compliance (optional)</span></span>
+
+ <span data-ttu-id="cd858-129">创建通信合规性策略时，您需要定义哪些用户已查看其通信，以及谁执行了评论。</span><span class="sxs-lookup"><span data-stu-id="cd858-129">When you create a communication compliance policy, you define who has their communications reviewed and who performs reviews.</span></span> <span data-ttu-id="cd858-130">在策略中，您将使用电子邮件地址来标识个人或用户组。</span><span class="sxs-lookup"><span data-stu-id="cd858-130">In the policy, you'll use email addresses to identify individuals or groups of people.</span></span> <span data-ttu-id="cd858-131">为简化您的设置，您可以为已查看其通信的用户创建组，并为查看这些通信的用户分组。</span><span class="sxs-lookup"><span data-stu-id="cd858-131">To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications.</span></span> <span data-ttu-id="cd858-132">如果使用的是组，可能需要多个。</span><span class="sxs-lookup"><span data-stu-id="cd858-132">If you're using groups, you may need several.</span></span> <span data-ttu-id="cd858-133">例如，您想要监视两个不同的人员组之间的通信，或者如果您想要指定一个不受监督的组。</span><span class="sxs-lookup"><span data-stu-id="cd858-133">For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.</span></span>
+
+<span data-ttu-id="cd858-134">使用下图可帮助您为组织中的通信合规性策略配置组：</span><span class="sxs-lookup"><span data-stu-id="cd858-134">Use the following chart to help you configure groups in your organization for communication compliance policies:</span></span>
+
+| <span data-ttu-id="cd858-135">**Policy 成员**</span><span class="sxs-lookup"><span data-stu-id="cd858-135">**Policy Member**</span></span> | <span data-ttu-id="cd858-136">**支持的组**</span><span class="sxs-lookup"><span data-stu-id="cd858-136">**Supported Groups**</span></span> | <span data-ttu-id="cd858-137">**不受支持的组**</span><span class="sxs-lookup"><span data-stu-id="cd858-137">**Unsupported Groups**</span></span> |
+|:-----|:-----|:-----|
+|<span data-ttu-id="cd858-138">受监督用户</span><span class="sxs-lookup"><span data-stu-id="cd858-138">Supervised users</span></span> <br> <span data-ttu-id="cd858-139">非监督用户</span><span class="sxs-lookup"><span data-stu-id="cd858-139">Non-supervised users</span></span> | <span data-ttu-id="cd858-140">通讯组</span><span class="sxs-lookup"><span data-stu-id="cd858-140">Distribution groups</span></span> <br> <span data-ttu-id="cd858-141">Office 365 组</span><span class="sxs-lookup"><span data-stu-id="cd858-141">Office 365 groups</span></span> | <span data-ttu-id="cd858-142">动态通讯组</span><span class="sxs-lookup"><span data-stu-id="cd858-142">Dynamic distribution groups</span></span> |
+| <span data-ttu-id="cd858-143">Reviewers</span><span class="sxs-lookup"><span data-stu-id="cd858-143">Reviewers</span></span> | <span data-ttu-id="cd858-144">启用邮件功能的安全组</span><span class="sxs-lookup"><span data-stu-id="cd858-144">Mail-enabled security groups</span></span>  | <span data-ttu-id="cd858-145">通讯组</span><span class="sxs-lookup"><span data-stu-id="cd858-145">Distribution groups</span></span> <br> <span data-ttu-id="cd858-146">动态通讯组</span><span class="sxs-lookup"><span data-stu-id="cd858-146">Dynamic distribution groups</span></span> |
+  
+<span data-ttu-id="cd858-147">当您为受监督的用户选择 Office 365 组时，该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。</span><span class="sxs-lookup"><span data-stu-id="cd858-147">When you select an Office 365 group for supervised users, the policy monitors the content of the shared Office 365 mailbox and the Microsoft Teams channels associated with the group.</span></span> <span data-ttu-id="cd858-148">当您选择通讯组列表时，该策略将监视单个用户邮箱。</span><span class="sxs-lookup"><span data-stu-id="cd858-148">When you select a distribution list, the policy monitors individual user mailboxes.</span></span>
+
+<span data-ttu-id="cd858-149">有关设置组的详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="cd858-149">For more information about setting up groups, see:</span></span>
+
+- [<span data-ttu-id="cd858-150">创建和管理通讯组</span><span class="sxs-lookup"><span data-stu-id="cd858-150">Create and manage distribution groups</span></span>](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [<span data-ttu-id="cd858-151">管理启用邮件的安全组</span><span class="sxs-lookup"><span data-stu-id="cd858-151">Manage mail-enabled security groups</span></span>](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [<span data-ttu-id="cd858-152">Office 365 组概述</span><span class="sxs-lookup"><span data-stu-id="cd858-152">Overview of Office 365 Groups</span></span>](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
+## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a><span data-ttu-id="cd858-153">步骤2：在您的组织中提供通信合规性（必需）</span><span class="sxs-lookup"><span data-stu-id="cd858-153">Step 2: Make communication compliance available in your organization (required)</span></span>
+
+<span data-ttu-id="cd858-154">若要在 Microsoft 365 合规性中心中将**通信合规性**用作菜单选项，您必须分配有监管审核管理员角色。</span><span class="sxs-lookup"><span data-stu-id="cd858-154">To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the Supervisory Review Administrator role.</span></span> <span data-ttu-id="cd858-155">若要使用策略匹配来调查和修正邮件，必须为您分配**事例管理**和**审核**角色。</span><span class="sxs-lookup"><span data-stu-id="cd858-155">To investigate and remediate messages with policy matches, you must be assigned the **Case Management** and **Review** roles.</span></span>
+  
+<span data-ttu-id="cd858-156">若要执行此操作，您可以将自己添加为监管审核角色组的成员，也可以创建新的角色组。</span><span class="sxs-lookup"><span data-stu-id="cd858-156">To do this, you can either add yourself as a member of the Supervisory Review role group, or you can create a new role group.</span></span>
+  
+### <a name="add-required-roles-to-the-supervisory-reviewer-role-group"></a><span data-ttu-id="cd858-157">向监管的审阅者角色组添加所需的角色</span><span class="sxs-lookup"><span data-stu-id="cd858-157">Add required roles to the Supervisory Reviewer role group</span></span>
+
+1. <span data-ttu-id="cd858-158">在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。</span><span class="sxs-lookup"><span data-stu-id="cd858-158">Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.</span></span>
+
+2. <span data-ttu-id="cd858-159">在 Microsoft 365 合规性中心中，转到 "**权限**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-159">In the Microsoft 365 compliance center, go to **Permissions**.</span></span> <span data-ttu-id="cd858-160">选择用于查看和管理 Office 365 中的角色的链接。</span><span class="sxs-lookup"><span data-stu-id="cd858-160">Select the link to view and manage roles in Office 365.</span></span>
+
+3. <span data-ttu-id="cd858-161">选择 "**监管审核**" 角色组，然后单击 "详细信息" 页的 "**已分配角色**" 部分中的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-161">Select the **Supervisory Review** role group and then click **Edit** in the **Assigned roles** section of the details page.</span></span>
+
+4. <span data-ttu-id="cd858-162">选择 "**编辑**"，然后选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-162">Select **Edit**, then select **Add**.</span></span> <span data-ttu-id="cd858-163">选中 "**案例管理**和**审阅**" 复选框，然后选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-163">Select the checkbox for **Case Management** and **Review**, then select **Add**.</span></span>
+
+5. <span data-ttu-id="cd858-164">选择 "**完成**"，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-164">Select **Done**, then select **Save**.</span></span>
+
+6. <span data-ttu-id="cd858-165">在 "**成员**" 部分，选择 "**编辑**" 以添加要为组织管理通信合规性的人员。</span><span class="sxs-lookup"><span data-stu-id="cd858-165">In the **Members** section, select **Edit** to add the people who you want to manage communication compliance for your organization.</span></span>
+
+7. <span data-ttu-id="cd858-166">选择 "**编辑**"，然后选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-166">Select **Edit**, then select **Add**.</span></span> <span data-ttu-id="cd858-167">选中您要使用策略匹配管理邮件的所有用户和组的复选框，然后选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-167">Select the checkbox for all the users and groups you want manage messages with policy matches, then select **Add**.</span></span>
+
+8. <span data-ttu-id="cd858-168">选择 "**完成**"，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-168">Select **Done**, then select **Save**.</span></span>
+
+9. <span data-ttu-id="cd858-169">选择 "**关闭**" 以退出 "角色组详细信息" 页。</span><span class="sxs-lookup"><span data-stu-id="cd858-169">Select **Close** to exit the role group detail page.</span></span>
+
+### <a name="create-a-new-role-group"></a><span data-ttu-id="cd858-170">创建新的角色组</span><span class="sxs-lookup"><span data-stu-id="cd858-170">Create a new role group</span></span>
+
+1. <span data-ttu-id="cd858-171">在 Office [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。</span><span class="sxs-lookup"><span data-stu-id="cd858-171">Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Office 365 organization.</span></span>
+
+2. <span data-ttu-id="cd858-172">在 Microsoft 365 合规性中心中，转到 "**权限**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-172">In the Microsoft 365 compliance center, go to **Permissions**.</span></span> <span data-ttu-id="cd858-173">选择用于查看和管理 Office 365 中的角色的链接。</span><span class="sxs-lookup"><span data-stu-id="cd858-173">Select the link to view and manage roles in Office 365.</span></span>
+
+3. <span data-ttu-id="cd858-174">选择“创建”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="cd858-174">Select **Create**.</span></span>
+
+4. <span data-ttu-id="cd858-175">在 "**名称**" 字段中，为新角色组指定一个友好名称。</span><span class="sxs-lookup"><span data-stu-id="cd858-175">In the **Name** field, give the new role group a friendly name.</span></span> <span data-ttu-id="cd858-176">选择“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="cd858-176">Select **Next**.</span></span>
+
+5. <span data-ttu-id="cd858-177">选择 "**选择角色**"，然后选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-177">Select **Choose roles** and then select **Add**.</span></span> <span data-ttu-id="cd858-178">选中 "**监察审核管理员**、**案例管理**和**审阅**" 复选框，然后选择 "**添加**并**完成**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-178">Select the checkbox for **Supervisory Review Administrator**, **Case Management**, and **Review**, then select **Add** and **Done**.</span></span> <span data-ttu-id="cd858-179">选择“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="cd858-179">Select **Next**.</span></span>
+
+6. <span data-ttu-id="cd858-180">选择 "**选择成员**"，然后选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-180">Select **Choose members** and then select **Add**.</span></span> <span data-ttu-id="cd858-181">选中您想要创建策略的所有用户和组的复选框，并使用策略匹配来管理邮件，然后选择 "**添加**并**完成**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-181">Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**.</span></span> <span data-ttu-id="cd858-182">选择“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="cd858-182">Select **Next**.</span></span>
+
+7. <span data-ttu-id="cd858-183">选择 "**创建角色组**" 以完成。</span><span class="sxs-lookup"><span data-stu-id="cd858-183">Select **Create role group** to finish.</span></span>
+
+<span data-ttu-id="cd858-184">有关角色组和权限的详细信息，请参阅[合规性中心中的权限](../security/office-365-security/protect-against-threats.md)。</span><span class="sxs-lookup"><span data-stu-id="cd858-184">For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).</span></span>
+
+## <a name="step-3-create-a-communication-compliance-policy-required"></a><span data-ttu-id="cd858-185">步骤3：创建通信合规性策略（必需）</span><span class="sxs-lookup"><span data-stu-id="cd858-185">Step 3: Create a communication compliance policy (required)</span></span>
+  
+1. <span data-ttu-id="cd858-186">在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。</span><span class="sxs-lookup"><span data-stu-id="cd858-186">Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.</span></span>
+
+2. <span data-ttu-id="cd858-187">在 Microsoft 365 合规性中心中，选择 "**通信合规性**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-187">In the Microsoft 365 compliance center, select **Communication compliance**.</span></span>
+  
+3. <span data-ttu-id="cd858-188">选择 "**策略**" 选项卡。</span><span class="sxs-lookup"><span data-stu-id="cd858-188">Select the **Policies** tab.</span></span>
+
+4. <span data-ttu-id="cd858-189">选择 "**创建策略**"，从模板创建和配置新策略，或创建和配置自定义策略。</span><span class="sxs-lookup"><span data-stu-id="cd858-189">Select **Create policy** to create and configure a new policy from a template or to create and configure a custom policy.</span></span>
+
+    <span data-ttu-id="cd858-190">如果选择策略模板来创建策略，您将：</span><span class="sxs-lookup"><span data-stu-id="cd858-190">If you choose a policy template to create a policy, you will:</span></span>
+
+    - <span data-ttu-id="cd858-191">确认或更新策略名称。</span><span class="sxs-lookup"><span data-stu-id="cd858-191">Confirm or update the policy name.</span></span> <span data-ttu-id="cd858-192">一旦创建了策略，便无法更改策略名称。</span><span class="sxs-lookup"><span data-stu-id="cd858-192">Policy names cannot be changed once the policy is created.</span></span>
+    - <span data-ttu-id="cd858-193">选择要监督的用户或组，包括选择要排除的用户或组。</span><span class="sxs-lookup"><span data-stu-id="cd858-193">Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.</span></span>
+    - <span data-ttu-id="cd858-194">选择策略的审阅者。</span><span class="sxs-lookup"><span data-stu-id="cd858-194">Choose the reviewers for the policy.</span></span> <span data-ttu-id="cd858-195">审阅者可以是单个用户，也可以是[启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。</span><span class="sxs-lookup"><span data-stu-id="cd858-195">Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group).</span></span> <span data-ttu-id="cd858-196">所有审阅者都必须在 Exchange Online 上托管邮箱。</span><span class="sxs-lookup"><span data-stu-id="cd858-196">All reviewers must have mailboxes hosted on Exchange Online.</span></span>
+    - <span data-ttu-id="cd858-197">选择 "受限条件" 字段，通常是要应用于策略的敏感信息类型或关键字词典。</span><span class="sxs-lookup"><span data-stu-id="cd858-197">Choose a limited condition field, usually a sensitive info type or keyword dictionary to apply to the policy.</span></span>
+
+    <span data-ttu-id="cd858-198">如果您选择使用策略向导创建自定义策略，您将：</span><span class="sxs-lookup"><span data-stu-id="cd858-198">If you choose to use the policy wizard to create a custom policy, you will:</span></span>
+
+    - <span data-ttu-id="cd858-199">为策略指定名称和说明。</span><span class="sxs-lookup"><span data-stu-id="cd858-199">Give the policy a name and description.</span></span> <span data-ttu-id="cd858-200">一旦创建了策略，便无法更改策略名称。</span><span class="sxs-lookup"><span data-stu-id="cd858-200">Policy names cannot be changed once the policy is created.</span></span>
+    - <span data-ttu-id="cd858-201">选择要监督的用户或组，包括选择组织中的所有用户、特定用户和组，或者要排除的其他用户和组。</span><span class="sxs-lookup"><span data-stu-id="cd858-201">Choose the users or groups to supervise, including choosing all users in your organization, specific users and groups, or other users and groups you'd like to exclude.</span></span> -
+    - <span data-ttu-id="cd858-202">选择策略的审阅者。</span><span class="sxs-lookup"><span data-stu-id="cd858-202">Choose the reviewers for the policy.</span></span> <span data-ttu-id="cd858-203">审阅者可以是单个用户，也可以是[启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。</span><span class="sxs-lookup"><span data-stu-id="cd858-203">Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group).</span></span> <span data-ttu-id="cd858-204">所有审阅者都必须在 Exchange Online 上托管邮箱。</span><span class="sxs-lookup"><span data-stu-id="cd858-204">All reviewers must have mailboxes hosted on Exchange Online.</span></span>
+    - <span data-ttu-id="cd858-205">选择要扫描的通信通道，包括 Exchange、Microsoft 团队或 Skype for Business。</span><span class="sxs-lookup"><span data-stu-id="cd858-205">Choose the communication channels to scan, including Exchange, Microsoft Teams, or Skype for Business.</span></span> <span data-ttu-id="cd858-206">如果您在 Microsoft 365 中配置了连接器，您还将选择扫描第三方源。</span><span class="sxs-lookup"><span data-stu-id="cd858-206">You'll also choose to scan third party sources if you've configured a connector in Microsoft 365.</span></span>
+    - <span data-ttu-id="cd858-207">选择要监视的通信方向，包括入站、出站或内部通信。</span><span class="sxs-lookup"><span data-stu-id="cd858-207">Choose the communication direction to monitor, including inbound, outbound, or internal communications.</span></span>
+    - <span data-ttu-id="cd858-208">定义通信合规性策略[条件](communication-compliance-feature-reference.md#ConditionalSettings)。</span><span class="sxs-lookup"><span data-stu-id="cd858-208">Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings).</span></span> <span data-ttu-id="cd858-209">您可以从 "消息地址"、"关键字"、"文件类型" 和 "大小匹配条件" 中进行选择。</span><span class="sxs-lookup"><span data-stu-id="cd858-209">You can choose from message address, keyword, file types, and size match conditions.</span></span>
+    - <span data-ttu-id="cd858-210">选择是否要包含敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="cd858-210">Choose if you'd like to include sensitive information types.</span></span> <span data-ttu-id="cd858-211">你可以在此处选择默认和自定义敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="cd858-211">This is where you can select default and custom sensitive info types.</span></span> <span data-ttu-id="cd858-212">从现有自定义敏感信息类型或自定义关键字词典中选择在 "通信合规性策略" 向导中，如果需要，可以在运行向导之前创建这些项目。</span><span class="sxs-lookup"><span data-stu-id="cd858-212">Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard, you can create these items before running the wizard if needed.</span></span> <span data-ttu-id="cd858-213">如果需要，还可以在 "通信合规性策略" 向导中创建新的敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="cd858-213">If desired, you can also create new sensitive information types from within the communication compliance policy wizard.</span></span>
+    - <span data-ttu-id="cd858-214">选择是否要启用冒犯性语言模型。</span><span class="sxs-lookup"><span data-stu-id="cd858-214">Choose if you'd like to enable the offensive language model.</span></span> <span data-ttu-id="cd858-215">这将检测在电子邮件正文中发送或接收的不正确的语言。</span><span class="sxs-lookup"><span data-stu-id="cd858-215">This detects inappropriate language sent or received in the body of email messages.</span></span>
+    - <span data-ttu-id="cd858-216">定义要查看的通信百分比。</span><span class="sxs-lookup"><span data-stu-id="cd858-216">Define the percentage of communications to review.</span></span>
+    - <span data-ttu-id="cd858-217">查看策略选择并创建策略。</span><span class="sxs-lookup"><span data-stu-id="cd858-217">Review your policy selections and create the policy.</span></span>
+
+5. <span data-ttu-id="cd858-218">使用 "自定义策略" 向导时，选择 "使用模板或**提交**时**创建策略**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-218">Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.</span></span>
+
+6. <span data-ttu-id="cd858-219">**您的策略已创建**页面将显示有关何时激活策略和捕获通信的指南。</span><span class="sxs-lookup"><span data-stu-id="cd858-219">The **Your policy was created** page is displayed with guidelines on when policy will be activated and communications will be captured.</span></span>
+
+## <a name="step-4-create-employee-notice-templates-optional"></a><span data-ttu-id="cd858-220">步骤4：创建员工通知模板（可选）</span><span class="sxs-lookup"><span data-stu-id="cd858-220">Step 4: Create employee notice templates (optional)</span></span>
+
+<span data-ttu-id="cd858-221">如果希望通过向关联的员工发送提醒通知来选择对策略警报做出响应，您需要在您的组织中至少创建一个通知模板。</span><span class="sxs-lookup"><span data-stu-id="cd858-221">If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization.</span></span> <span data-ttu-id="cd858-222">在作为警报修正过程的一部分进行发送并为每个通信合规性策略创建自定义通知模板之前，"通知模板" 字段是可编辑的。</span><span class="sxs-lookup"><span data-stu-id="cd858-222">The notice template fields are editable prior to sending as part of the alert remediation process and creating a customized notice template for each communication compliance policy is recommended.</span></span>
+
+1. <span data-ttu-id="cd858-223">在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。</span><span class="sxs-lookup"><span data-stu-id="cd858-223">Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.</span></span>
+
+2. <span data-ttu-id="cd858-224">在 Microsoft 365 合规性中心中，转到 "**通信合规性**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-224">In the Microsoft 365 compliance center, go to **Communication compliance**.</span></span>
+
+3. <span data-ttu-id="cd858-225">选择 "**通知模板**" 选项卡，然后选择 "**创建通知模板**"。</span><span class="sxs-lookup"><span data-stu-id="cd858-225">Select the **Notice templates** tab and then select **Create notice template**.</span></span>
+
+4. <span data-ttu-id="cd858-226">在 "**修改通知模板**" 页上，填写下列字段：</span><span class="sxs-lookup"><span data-stu-id="cd858-226">On the **Modify a notice template** page, complete the following fields:</span></span>
+
+    - <span data-ttu-id="cd858-227">通知模板名称（必需）</span><span class="sxs-lookup"><span data-stu-id="cd858-227">Notice template name (required)</span></span>
+    - <span data-ttu-id="cd858-228">发件人（必需）</span><span class="sxs-lookup"><span data-stu-id="cd858-228">Send from (required)</span></span>
+    - <span data-ttu-id="cd858-229">"抄送" 和 "密件抄送" （可选）</span><span class="sxs-lookup"><span data-stu-id="cd858-229">Cc and Bcc (optional)</span></span>
+    - <span data-ttu-id="cd858-230">主题（必需）</span><span class="sxs-lookup"><span data-stu-id="cd858-230">Subject (required)</span></span>
+    - <span data-ttu-id="cd858-231">邮件正文（必需）</span><span class="sxs-lookup"><span data-stu-id="cd858-231">Message body (required)</span></span>
+
+5. <span data-ttu-id="cd858-232">选择 "**保存**" 以创建并保存 "通知" 模板。</span><span class="sxs-lookup"><span data-stu-id="cd858-232">Select **Save** to create and save the notice template.</span></span>
+
+## <a name="step-5-test-your-communication-compliance-policy-optional"></a><span data-ttu-id="cd858-233">步骤5：测试通信合规性策略（可选）</span><span class="sxs-lookup"><span data-stu-id="cd858-233">Step 5: Test your communication compliance policy (optional)</span></span>
+
+<span data-ttu-id="cd858-234">创建通信合规性策略后，最好进行测试以确保策略正确地强制实施了您定义的条件。</span><span class="sxs-lookup"><span data-stu-id="cd858-234">After you create a communication compliance policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy.</span></span> <span data-ttu-id="cd858-235">如果通信合规性策略包含敏感信息类型，您可能还需要[测试数据丢失防护（DLP）策略](create-test-tune-dlp-policy.md)。</span><span class="sxs-lookup"><span data-stu-id="cd858-235">You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types.</span></span> <span data-ttu-id="cd858-236">请确保为策略激活时间，以便捕获要测试的通信。</span><span class="sxs-lookup"><span data-stu-id="cd858-236">Make sure you give your policies time to activate so that the communications you want to test are captured.</span></span>
+
+<span data-ttu-id="cd858-237">按照以下步骤测试您的通信合规性策略：</span><span class="sxs-lookup"><span data-stu-id="cd858-237">Follow these steps to test your communication compliance policy:</span></span>
+
+1. <span data-ttu-id="cd858-238">打开以您要测试的策略中定义的监督用户身份登录的电子邮件客户端或 Microsoft 团队。</span><span class="sxs-lookup"><span data-stu-id="cd858-238">Open an email client or Microsoft Teams logged in as a supervised user defined in the policy you want to test.</span></span>
+2. <span data-ttu-id="cd858-239">发送符合通信合规性策略中定义的条件的电子邮件或 Microsoft 团队聊天。</span><span class="sxs-lookup"><span data-stu-id="cd858-239">Send an email or Microsoft Teams chat that meets the criteria you've defined in the communication compliance policy.</span></span> <span data-ttu-id="cd858-240">它可以是关键字、附件大小、域等。确保您确定策略中配置的条件设置过于严格或太 lenient。</span><span class="sxs-lookup"><span data-stu-id="cd858-240">This can be a keyword, attachment size, domain, etc. Make sure that you determine if your configured conditional settings in the policy are too restrictive or too lenient.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="cd858-241">所有源通道中的通信可能需要长达24小时才能在策略中完全处理。</span><span class="sxs-lookup"><span data-stu-id="cd858-241">Communications in all source channels can take up to 24 hours to fully process in a policy.</span></span>
+
+3. <span data-ttu-id="cd858-242">以通信合规性策略中指定的审阅者的形式登录 Microsoft 365。</span><span class="sxs-lookup"><span data-stu-id="cd858-242">Log into Microsoft 365 as a reviewer designated in the communication compliance policy.</span></span> <span data-ttu-id="cd858-243">导航到 "**通信合规性** > **警报**" 以查看策略的警报。</span><span class="sxs-lookup"><span data-stu-id="cd858-243">Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.</span></span>
+
+4. <span data-ttu-id="cd858-244">使用修正控件修正警报，并验证是否正确解决了警报。</span><span class="sxs-lookup"><span data-stu-id="cd858-244">Remediate the alert using the remediation controls and verify that the alert is properly resolved.</span></span>

@@ -1,0 +1,118 @@
+---
+title: 调查和修正沟通合规性警报（预览版）
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+audience: Admin
+ms.topic: article
+f1_keywords:
+- ms.o365.cc.SupervisoryReview
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+search.appverid:
+- MET150
+- MOE150
+description: 调查并修正 Microsoft 365 中的通信合规性警报。
+ms.openlocfilehash: 8aaf74ceafc737487bd97bb7c71b26fc139aacf0
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38685074"
+---
+# <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a><span data-ttu-id="5bb1b-103">调查和修正沟通合规性警报（预览版）</span><span class="sxs-lookup"><span data-stu-id="5bb1b-103">Investigate and remediate communication compliance alerts (preview)</span></span>
+
+<span data-ttu-id="5bb1b-104">配置通信合规性策略后，您将开始在 Microsoft 365 合规性中心中接收通知，以了解与策略条件相匹配的邮件问题。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-104">After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft 365 compliance center for message issues that match your policy conditions.</span></span> <span data-ttu-id="5bb1b-105">按照此处的工作流说明，调查并修正警报问题。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-105">Follow the workflow instructions here to investigate and remediate alert issues.</span></span>
+
+## <a name="investigate-alerts"></a><span data-ttu-id="5bb1b-106">调查通知</span><span class="sxs-lookup"><span data-stu-id="5bb1b-106">Investigate alerts</span></span>
+
+<span data-ttu-id="5bb1b-107">调查策略检测到的问题的第一步是查看 Microsoft 365 合规性中心内生成的警报。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-107">The first step to investigate issues detected by your policies is to review generated alerts in the Microsoft 365 compliance center.</span></span> <span data-ttu-id="5bb1b-108">合规中心中有多个区域可帮助您快速调查通知，具体取决于您更愿意查看警报分组的方式：</span><span class="sxs-lookup"><span data-stu-id="5bb1b-108">There are several areas in the compliance center to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:</span></span>
+
+- <span data-ttu-id="5bb1b-109">**通信合规性主页**：当您在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户登录时，请选择 "**通信合规性** > **概述**" 以显示通信合规性主页。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-109">**Communication compliance home page**: When you sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** > **Overview** to display the communication compliance home page.</span></span> <span data-ttu-id="5bb1b-110">你将看到以下内容：</span><span class="sxs-lookup"><span data-stu-id="5bb1b-110">Here you'll see:</span></span>
+    - <span data-ttu-id="5bb1b-111">需要查看的通知从高到低严重性列出。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-111">Alerts needing review listed from high to low severity.</span></span> <span data-ttu-id="5bb1b-112">选择一个警报以启动警报详细信息页面并启动修正操作。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-112">Select an alert to launch the alert details page and to start remediation actions.</span></span>
+    - <span data-ttu-id="5bb1b-113">按策略名称列出的最近策略匹配项。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-113">Recent policy matches listed by policy name.</span></span>
+    - <span data-ttu-id="5bb1b-114">按策略名称列出的已解决项目。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-114">Resolved items listed by policy name.</span></span>
+    - <span data-ttu-id="5bb1b-115">按策略名称列出的升级。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-115">Escalations listed by policy name.</span></span>
+    - <span data-ttu-id="5bb1b-116">具有最多策略匹配的用户从最多匹配数最多列出。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-116">Users with the most policy matches, listed from the most to the least number of matches.</span></span>
+- <span data-ttu-id="5bb1b-117">**"警报" 选项卡**：导航到 "**通信合规性** > **警报**" 以显示按匹配的通信合规性策略分组的警报。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-117">**Alerts tab**: Navigate to **Communication compliance** > **Alerts** to display alerts grouped by matched communication compliance policy.</span></span> <span data-ttu-id="5bb1b-118">通过此视图，可以快速查看哪些通信合规性策略生成的按严重性排序的最多警报。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-118">This view allows you to quickly see which communication compliance policies are generating the most alerts ordered by severity.</span></span>  <span data-ttu-id="5bb1b-119">若要启动修正操作，请展开策略以选择特定警报并启动警报详细信息页。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-119">To start remediation actions, expand a policy to select a specific alert and to launch the alert details page.</span></span>
+- <span data-ttu-id="5bb1b-120">**"策略" 选项卡**：导航到 "**通信合规性** > **策略**" 以显示为 Microsoft 365 组织配置的通信合规性策略。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-120">**Policies tab**: Navigate to **Communication compliance** > **Policies** to display communication compliance policies configured for your Microsoft 365 organization.</span></span> <span data-ttu-id="5bb1b-121">列出的每个策略都包含需要审阅的警报的计数。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-121">Each policy listed includes the count of alerts that need review.</span></span> <span data-ttu-id="5bb1b-122">选择策略将显示与策略匹配的所有待处理警报，选择启动 "策略详细信息" 页的特定警报并启动修正操作。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-122">Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.</span></span>
+
+### <a name="using-filters"></a><span data-ttu-id="5bb1b-123">使用筛选器</span><span class="sxs-lookup"><span data-stu-id="5bb1b-123">Using filters</span></span>
+
+<span data-ttu-id="5bb1b-124">下一步是对邮件进行排序，以便更轻松地调查警报。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-124">The next step is to sort the messages so that it's easier for you to investigate alerts.</span></span> <span data-ttu-id="5bb1b-125">通信合规性支持多个邮件字段的多级别筛选，以帮助您使用策略匹配快速调查和查看邮件。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-125">Communication compliance supports multi-level filtering for several message fields to help you quickly investigate and review messages with policy matches.</span></span> <span data-ttu-id="5bb1b-126">筛选可用于每个配置策略的挂起和已解决项。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-126">Filtering is available for pending and resolved items for each configured policy.</span></span> <span data-ttu-id="5bb1b-127">您可以配置策略的筛选器查询，或配置并保存用于每个特定策略的自定义筛选器查询和默认筛选器查询。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-127">You can configure filter queries for a policy or configure and save custom and default filter queries for use in each specific policy.</span></span> <span data-ttu-id="5bb1b-128">为筛选器配置字段后，您将看到 "筛选器" 字段显示在通知邮件队列的顶部，可以为特定筛选器值配置这些字段。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-128">After configuring fields for a filter, you'll see the filter fields displayed on the top of the alert message queue that you can configure for specific filter values.</span></span>
+
+<span data-ttu-id="5bb1b-129">有关筛选器和字段详细信息的完整列表，请参阅功能参考主题中的[筛选器](communication-compliance-feature-reference.md#filters)。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-129">For a complete list of filters and field details, see [Filters](communication-compliance-feature-reference.md#filters) in the feature reference topic.</span></span>
+
+#### <a name="to-configure-a-filter"></a><span data-ttu-id="5bb1b-130">配置筛选器</span><span class="sxs-lookup"><span data-stu-id="5bb1b-130">To configure a filter</span></span>
+
+1. <span data-ttu-id="5bb1b-131">在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-131">Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.</span></span>
+
+2. <span data-ttu-id="5bb1b-132">在 Microsoft 365 合规性中心中，转到 "**通信合规性**"。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-132">In the Microsoft 365 compliance center, go to **Communication compliance**.</span></span>
+
+3. <span data-ttu-id="5bb1b-133">选择 "**策略**" 选项卡，然后选择要调查的策略，双击以打开 "**策略**" 页。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-133">Select the **Policies** tab and then select a policy for investigation, double-click to open the **Policy** page.</span></span>
+
+4. <span data-ttu-id="5bb1b-134">在 "**策略**" 页上，选择 "**挂起**" 或 "**已解析**" 选项卡以显示要筛选的项。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-134">On the **Policy** page, select either the **Pending** or **Resolved** tab to display the items for filtering.</span></span>
+
+5. <span data-ttu-id="5bb1b-135">选择 "**筛选器**" 控件以打开 "**筛选器**详细信息" 页。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-135">Select the **Filters** control to open the **Filters** details page.</span></span>
+
+6. <span data-ttu-id="5bb1b-136">选择一个或多个复选框以启用这些通知的筛选器。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-136">Select one or more checkboxes to enable filters for these alerts.</span></span>
+
+7. <span data-ttu-id="5bb1b-137">如果要保存选定的筛选器作为默认筛选器，请选择 "**另存为默认值**"。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-137">If you'd like to save the filter selected as the default filter, select **Save as default**.</span></span> <span data-ttu-id="5bb1b-138">如果要将此筛选器用作已保存的筛选器，请选择 "**完成**"。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-138">If you want to use this filter as a saved filter, select **Done**.</span></span>
+
+8. <span data-ttu-id="5bb1b-139">如果要将选定的筛选器另存为筛选器查询，请在配置了至少一个筛选器值后，选择 **"保存查询控件"** 。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-139">If you'd like to save the selected filters as a filter query, select **Save the query** control after you've configured at least one filter value.</span></span> <span data-ttu-id="5bb1b-140">输入筛选器查询的名称，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-140">Enter a name for the filter query and select **Save**.</span></span> <span data-ttu-id="5bb1b-141">此筛选器仅可用于此策略，并在 "**筛选器**详细信息" 页的 "**已保存的筛选器查询**" 部分中列出。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-141">This filter is available to use for only this policy and is listed in the **Saved filter queries** section of the **Filters** details page.</span></span>
+
+    ![通信合规性筛选器详细信息控件](media/communication-compliance-filter-detail-controls.png)
+
+### <a name="using-near-and-exact-duplicate-analysis"></a><span data-ttu-id="5bb1b-143">使用接近和完全重复的分析</span><span class="sxs-lookup"><span data-stu-id="5bb1b-143">Using near and exact duplicate analysis</span></span>
+
+<span data-ttu-id="5bb1b-144">通信合规性策略在不进行任何其他配置步骤的情况下自动扫描和预先分组的邻近邮件和完全邮件重复。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-144">Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps.</span></span> <span data-ttu-id="5bb1b-145">这使您可以快速一次性地更正类似的邮件或作为一个组，从而减少审阅者的邮件调查负担。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-145">This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers.</span></span> <span data-ttu-id="5bb1b-146">在检测到重复项时，"修正操作" 工具栏中将显示 "**接近的重复项**" 和 "/" 和 "**完全重复**" 控件。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-146">As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.</span></span>
+
+#### <a name="to-remediate-duplicates"></a><span data-ttu-id="5bb1b-147">更正重复项</span><span class="sxs-lookup"><span data-stu-id="5bb1b-147">To remediate duplicates</span></span>
+
+1. <span data-ttu-id="5bb1b-148">在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-148">Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.</span></span>
+
+2. <span data-ttu-id="5bb1b-149">在 Microsoft 365 合规性中心中，转到 "**通信合规性**"。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-149">In the Microsoft 365 compliance center, go to **Communication compliance**.</span></span>
+
+3. <span data-ttu-id="5bb1b-150">选择 "**策略**" 选项卡，然后选择要调查的策略，双击以打开 "**策略**" 页。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-150">Select the **Policies** tab and then select a policy for investigation, double-click to open the **Policy** page.</span></span>
+
+4. <span data-ttu-id="5bb1b-151">在 "**策略**" 页上，选择 "**挂起**" 或 "**已解决**" 选项卡以显示重复消息。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-151">On the **Policy** page, select either the **Pending** or **Resolved** tab to display duplicate messages.</span></span>
+
+5. <span data-ttu-id="5bb1b-152">选择**临近的重复**项或**完全重复**的控件以打开 "重复项详细信息" 页。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-152">Select the **Near Duplicates** or **Exact Duplicates** controls to open the duplicates details page.</span></span>
+
+6. <span data-ttu-id="5bb1b-153">为这些邮件选择一个或多个要修正的操作控件的邮件。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-153">Select one or more messages to remediation action controls for these messages.</span></span>
+
+7. <span data-ttu-id="5bb1b-154">选择 "**解决**"、"**通知**"、"**升级**" 或 "**下载**" 以将操作应用于所选的重复邮件。选择的作为默认筛选器。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-154">Select **Resolve**, **Notify**, **Escalate**, or **Download** to apply the action to the selected duplicate messages.elected as the default filter.</span></span>
+
+8. <span data-ttu-id="5bb1b-155">完成对邮件的修正操作后，选择 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-155">Select **Close** after completing the remediation actions on the messages.</span></span>
+
+    ![通信合规性精确复制控件](media/communication-compliance-duplicates-controls.png)
+
+## <a name="remediate-alerts"></a><span data-ttu-id="5bb1b-157">修正警报</span><span class="sxs-lookup"><span data-stu-id="5bb1b-157">Remediate alerts</span></span>
+
+<span data-ttu-id="5bb1b-158">无论您在何处开始查看警报或您配置的筛选，下一步都是采取措施修正警报。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-158">No matter where you start to review alerts or the filtering you configure, the next step is to take action to remediate the alert.</span></span> <span data-ttu-id="5bb1b-159">在 "**策略**" 或 "**通知**" 页面上使用以下工作流启动通知修补：</span><span class="sxs-lookup"><span data-stu-id="5bb1b-159">Start your alert remediation using the following workflow on the **Policy** or **Alerts** pages:</span></span>
+
+1. <span data-ttu-id="5bb1b-160">**检查邮件基础知识**：有时，可以直接修正邮件的来源或主题。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-160">**Examine the message basics**: Sometimes it's obvious from the source or subject that a message can be immediately remediated.</span></span> <span data-ttu-id="5bb1b-161">可能是邮件是虚假的或与策略不正确匹配，应将其解析为误报。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-161">It may be that the message is spurious or incorrectly matched to a policy and it should be resolved as a false positive.</span></span> <span data-ttu-id="5bb1b-162">选择**误报**控件以立即解析警报，并从挂起的警报队列中删除。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-162">Select the **False Positive** control to immediately resolve the alert and remove from the pending alert queue.</span></span> <span data-ttu-id="5bb1b-163">在源或发件人信息中，您可能已经知道在这些情况下应如何路由或处理邮件。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-163">From the source or sender information, you may already know how the message should be routed or handled in these circumstances.</span></span> <span data-ttu-id="5bb1b-164">请考虑使用**标记作为**或**升级**控件将标记分配给适用的邮件，或将邮件发送给指定的审阅者。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-164">Consider using the **Tag as** or **Escalate** controls to assign a tag to applicable messages or to send messages to a designated reviewer.</span></span>
+
+    ![通信合规性修正控制](media/communication-compliance-remediation-controls.png)
+
+2. <span data-ttu-id="5bb1b-166">**检查邮件详细信息**：查看邮件基础知识后，可以打开邮件检查详细信息并确定进一步的修正操作。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-166">**Examine the message details**: After reviewing the message basics, it's time to open a message to examine the details and to determine further remediation actions.</span></span> <span data-ttu-id="5bb1b-167">选择一封邮件以查看完整的邮件头和正文信息。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-167">Select a message to view the complete message header and body information.</span></span> <span data-ttu-id="5bb1b-168">有几种不同的视图可用于帮助您确定正确的操作过程：</span><span class="sxs-lookup"><span data-stu-id="5bb1b-168">Several different views are available to help you decide the proper course of action:</span></span>
+
+    - <span data-ttu-id="5bb1b-169">**源视图**：此视图是在大多数基于 web 的邮件平台中通常会看到的标准邮件视图。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-169">**Source view**: This view is the standard message view commonly seen in most web-based messaging platforms.</span></span> <span data-ttu-id="5bb1b-170">标头信息的格式为 "正文" 样式，邮件正文支持嵌入的图形文件和换行的文本。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-170">The header information is formatted in the normal style and the message body supports imbedded graphic files and word-wrapped text.</span></span>
+    - <span data-ttu-id="5bb1b-171">**文本视图**：文本视图显示邮件的单行文本视图，并包括关联通信合规性策略中匹配术语的关键字突出显示。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-171">**Text view**: Text view displays a line-numbered text-only view of the message and includes keyword highlighting for terms matched in the associated communication compliance policy.</span></span> <span data-ttu-id="5bb1b-172">关键字突出显示可帮助您快速扫描感兴趣区域的长邮件。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-172">Keyword highlighting can help you quickly scan long messages for the area of interest.</span></span> <span data-ttu-id="5bb1b-173">嵌入的文件不会显示，并且该视图的行号有助于在多个审阅者之间引用相关详细信息。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-173">Embedded files aren't displayed and the line numbering this view is helpful for referencing pertinent details among multiple reviewers.</span></span>
+    - <span data-ttu-id="5bb1b-174">**批注视图**：通过此视图，审阅者可以直接在保存到邮件视图中的邮件上添加批注。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-174">**Annotate view**: This view allows reviewers to add annotations directly on the message that are saved to the view of the message.</span></span>
+    - <span data-ttu-id="5bb1b-175">**用户历史记录**：用户历史记录视图显示发送邮件的用户的任何通信合规性策略生成的所有其他警报。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-175">**User history**: User history view displays all other alerts generated by any communication compliance policy for the user sending the message.</span></span>
+
+    ![通信合规性邮件视图控件](media/communication-compliance-message-views.png)
+
+3. <span data-ttu-id="5bb1b-177">**确定修正操作**：现在您已经查看了警报消息的详细信息，您可以选择多个修正操作：</span><span class="sxs-lookup"><span data-stu-id="5bb1b-177">**Decide on a remediation action**: Now that you've reviewed the details of the message for the alert, you can choose several remediation actions:</span></span>
+
+    - <span data-ttu-id="5bb1b-178">**解决**：选择 "**解析**" 控件会立即从 "**待处理的警报**" 队列中删除邮件，而不能对邮件执行进一步的操作。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-178">**Resolve**: Selecting the **Resolve** control immediately removes the message from the **Pending alerts** queue and no further action can be taken on the message.</span></span> <span data-ttu-id="5bb1b-179">通过选择 "**解析**"，实际上是在不进一步分类的情况下关闭了警报，并且无法对其重新打开以进行进一步操作。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-179">By selecting **Resolve**, you've essentially closed the alert without further classification and it cannot be reopened for further actions.</span></span> <span data-ttu-id="5bb1b-180">所有已解决的邮件都显示在 "**已解决**" 选项卡中。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-180">All resolved messages are displayed in the **Resolved** tab.</span></span>
+    - <span data-ttu-id="5bb1b-181">**误报**：在邮件审阅工作流的任何时候，都可以随时将邮件解析为误报。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-181">**False Positive**: You can always resolve a message as a false positive at any point during the message review workflow.</span></span> <span data-ttu-id="5bb1b-182">无法重新打开该邮件，并在 "**已解决**" 选项卡中显示所有误报邮件。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-182">The message cannot be reopened and all false positive messages are displayed in the **Resolved** tab.</span></span>
+    - <span data-ttu-id="5bb1b-183">**标记为**：将邮件标记为*兼容性*、*不符合要求*或为*可疑*，因为它与组织的策略和标准相关。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-183">**Tag as**: Tag the message as *compliant*, *non-compliant*, or as *questionable* as it relates to the policies and standards for your organization.</span></span> <span data-ttu-id="5bb1b-184">添加标签和标记注释可帮助您微筛选策略警报以进行升级或作为其他内部审核流程的一部分。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-184">Adding tags and tagging comments can help you micro-filter policy alerts for escalations or as part of other internal review processes.</span></span> <span data-ttu-id="5bb1b-185">完成标记后，您还可以选择解析邮件以将其从挂起的审阅队列中移出。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-185">After tagging is complete, you can also choose to resolve the message to move it out of the pending review queue.</span></span>
+    - <span data-ttu-id="5bb1b-186">**通知**：您可以使用**通知**控件向警报分配自定义通知模板并向用户发送警告通知。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-186">**Notify**: You can use the **Notify** control to assign a custom notice template to the alert and to send a warning notice to the user.</span></span> <span data-ttu-id="5bb1b-187">选择相应的声明模板，然后选择 "**发送**" 以通过电子邮件向发送邮件的员工发送提醒并解决问题。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-187">Choose the appropriate notice template and select **Send** to email a reminder to the employee that sent the message and to resolve the issue.</span></span>
+    - <span data-ttu-id="5bb1b-188">**升级**：使用**提升**的控件，您可以选择组织中的其他人应查看邮件。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-188">**Escalate**: Using the **Escalate** control, you can choose who else in your organization should review the message.</span></span> <span data-ttu-id="5bb1b-189">从已配置的审阅者列表中进行选择，以发送电子邮件通知，请求对邮件警报进行其他审阅。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-189">Choose from a list of configured reviewers to send an email notification requesting additional review of the message alert.</span></span> <span data-ttu-id="5bb1b-190">所选审阅者可以使用电子邮件通知中的链接直接转到升级到这些项目以供审阅的项目。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-190">The selected reviewer can use a link in the email notification to go directly to items escalated to them for review.</span></span>
+
+4. <span data-ttu-id="5bb1b-191">**确定是否应将消息详细信息存档在通信合规性之外**：如果需要将邮件存档在单独的存储解决方案中，则可以导出或下载消息详细信息。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-191">**Determine if message details should be archived outside of communication compliance**: Message details can be exported or downloaded if you need to archive the messages in a separate storage solution.</span></span> <span data-ttu-id="5bb1b-192">选择**下载**控件会自动将选定的邮件添加到。可以保存到 Microsoft 365 之外的存储中的 ZIP 文件。</span><span class="sxs-lookup"><span data-stu-id="5bb1b-192">Selecting the **Download** control automatically adds selected messages to a .ZIP file that can be saved to storage outside of Microsoft 365.</span></span>
