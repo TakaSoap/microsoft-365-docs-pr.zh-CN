@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 description: 摘要：对 Skype、OneDrive、SharePoint 和 Exchange Online 加密的说明。
-ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 220f3060bd9581b22183bbb56e68c3ec930d0c24
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075665"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38690193"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>适用于 Skype for business、OneDrive for Business、SharePoint Online 和 Exchange Online 的 Office 365 加密
 
@@ -63,7 +64,7 @@ Office 365 中的多个工作负荷在 SharePoint Online 中存储数据，包�
 > [!NOTE]
 > 对于 Office 365 美国政府版客户，数据 blob 存储在 Azure 美国政府存储中。 此外，Office 365 美国政府版中对 SharePoint Online 密钥的访问权限仅限于专门筛选过的 Office 365 员工。 Azure 美国政府运营人员无法访问用于加密数据 blob 的 SharePoint Online 密钥存储。
 
-有关 SharePoint Online 和 OneDrive for Business 中的数据加密的详细信息，请参阅[OneDrive For business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/en-us/library/dn905447.aspx)。
+有关 SharePoint Online 和 OneDrive for Business 中的数据加密的详细信息，请参阅[OneDrive For business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx)。
 
 ### <a name="list-items-in-sharepoint-online"></a>SharePoint Online 中的列表项
 

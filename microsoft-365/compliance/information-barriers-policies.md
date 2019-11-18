@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: 8ad6dd5e098438de0904fb511c631afbc761ff5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074935"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38690198"
 ---
 # <a name="define-policies-for-information-barriers"></a>定义信息障碍策略
 
@@ -77,7 +77,7 @@ ms.locfileid: "37074935"
 
    1. 运行以下 PowerShell cmdlet：
 
-      ```
+      ```powershell
       Login-AzureRmAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
@@ -108,7 +108,10 @@ ms.locfileid: "37074935"
 
 ### <a name="identify-segments"></a>标识段
 
-除了您的初始策略列表之外，请为您的组织创建一个段落列表。 将包含在信息屏障策略中的用户应属于某个网段，并且任何用户都不应属于两个或多个网段。 每个段只能应用一个信息障碍策略。 
+除了您的初始策略列表之外，请为您的组织创建一个段落列表。 将包括在信息屏障策略中的用户应属于某个网段。 仔细规划你的段落，因为用户只能在一段时间内使用。 每个段只能应用一个信息障碍策略。
+
+> [!IMPORTANT]
+> 一个用户只能在一段中。
 
 确定您的组织的目录数据中将用来定义段落的属性。 您可以使用 "*部门*"、" *MemberOf*" 或任何受支持的属性。 请确保您为用户选择的属性中具有值。 [请参阅信息障碍的受支持属性的列表](information-barriers-attributes.md)。
 

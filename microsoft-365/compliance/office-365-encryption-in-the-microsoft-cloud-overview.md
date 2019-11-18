@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Microsoft 云中的加密概述。
-ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075657"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690110"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft 云中的加密
 
@@ -27,11 +27,11 @@ Microsoft 企业云服务中的客户数据受各种技术和过程（包括各�
 
 无论客户配置如何，存储在 Microsoft 企业云服务中的客户数据都使用一种或多种形式的加密进行保护。 （我们的加密策略及其强制实施的验证将独立于多个第三方审计员进行验证，这些审核的报告在[服务信任门户](https://aka.ms/stp)上可用。）
 
-Microsoft 提供了在 rest 和途对客户数据进行加密的服务端技术。 例如，对于 rest 上的客户数据，Microsoft Azure 使用[bitlocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)和[DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)，而 Microsoft Office 365 使用 Bitlocker、 [Azure 存储服务加密](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、[分布式密钥管理器](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376)（DKM）和 Office 365 服务技术. 对于传输中的客户数据、Azure、Office 365、Microsoft 商业支持、Microsoft Dynamics 365、Microsoft Power BI 和 Visual Studio Team Services 使用行业标准安全传输协议，如 Internet 协议安全性（IPsec）和Microsoft 数据中心之间和用户设备与 Microsoft 数据中心之间的传输层安全性（TLS）。
+Microsoft 提供了在 rest 和途对客户数据进行加密的服务端技术。 例如，对于 rest 上的客户数据，Microsoft Azure 使用[bitlocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)和[DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)，而 Microsoft Office 365 使用 Bitlocker、 [Azure 存储服务加密](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、[分布式密钥管理器](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376)（DKM）和 Office 365 服务加密。 对于传输中的客户数据、Azure、Office 365、Microsoft 商业支持、Microsoft Dynamics 365、Microsoft Power BI 和 Visual Studio Team Services 使用行业标准安全传输协议，如 Internet 协议安全性（IPsec）和Microsoft 数据中心之间和用户设备与 Microsoft 数据中心之间的传输层安全性（TLS）。
 
 除了 Microsoft 提供的加密安全的基准级别之外，我们的云服务还包括您可以管理的其他加密选项。 例如，您可以对其 Azure 虚拟机（Vm）及其用户之间的流量启用加密。 使用[Azure 虚拟网络](https://azure.microsoft.com/services/virtual-network/)，您可以使用行业标准 IPsec 协议来加密公司 VPN 网关和 Azure 之间以及位于虚拟网络上的虚拟机之间的通信。 此外，[新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)允许您向任何人发送加密邮件。
 
-根据公钥基础结构运营安全标准（这是[Microsoft 安全策略](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)的一个组件），Microsoft 利用 Windows 操作系统中包含的加密功能来颁发证书和身份验证机制，包括使用符合美国政府的[联邦信息处理标准](http://csrc.nist.gov/publications/PubsFIPS.html)（FIPS）140-2 标准的加密模块。 （可在处找到适用于 Microsoft 的可 NIST 证书号码。http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401vend.htm.)
+根据公钥基础结构运营安全标准（这是[Microsoft 安全策略](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)的一个组件），Microsoft 利用 Windows 操作系统中包含的用于证书和身份验证机制的加密功能，其中包括使用符合美国政府的[联邦信息处理标准](https://csrc.nist.gov/publications/PubsFIPS.html)（FIPS）140-2 标准的加密模块。 （可在处找到适用于 Microsoft 的可 NIST 证书号码。https://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401vend.htm.)
 
 > 便笺若要将 Microsoft 安全策略作为资源进行访问，必须使用工作或学校帐户登录。 如果你还没有订阅，[可以注册免费试用版](https://servicetrust.microsoft.com/Home/TrialSubscriptions)。
 

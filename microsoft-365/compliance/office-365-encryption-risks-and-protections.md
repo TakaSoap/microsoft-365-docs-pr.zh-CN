@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 摘要：了解 Microsoft Office 365 中的数据恢复能力。
-ms.openlocfilehash: c154637ad2834622ba61baf115454cdb9a076e45
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 113fd60f8b585e4f59245f00b0f238cb2020b57d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075655"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690108"
 ---
 # <a name="encryption-risks-and-protections"></a>加密风险和保护
 
@@ -51,15 +51,15 @@ Microsoft 遵循控制和合规性框架，重点关注 Office 365 服务和客�
 | 服务加密 | SharePoint Online | AES 256 位 | 用于加密 blob 的密钥存储在 SharePoint Online 内容数据库中。 SharePoint Online 内容数据库受数据库访问控制和静态加密的保护。 使用 Azure SQL Database 中的 TDE 执行加密。 这些机密是 SharePoint Online 的服务级别，而不是租户级别。 这些机密（有时称为主密钥）存储在单独的安全存储库中，称为 "密钥存储区"。 TDE 为活动数据库和数据库备份和事务日志提供了 rest 的安全性。 当客户提供可选密钥时，客户密钥存储在 Azure Key Vault 中，服务使用密钥来加密租户密钥，该密钥用于加密网站密钥，然后使用它来加密文件级密钥。 实质上，当客户提供密钥时，会引入新的密钥层次结构。 | 是 |
 |  | Skype for Business | AES 256 位 | 使用不同的随机生成的256位密钥对每个数据片段进行加密。 加密密钥存储在相应的元数据 XML 文件中，该文件也是由每会议主密钥加密的。 每次会议中也随机生成一次主密钥。 | 是 |
 |  | Exchange Online | AES 256 位 | 每个邮箱都使用使用 Microsoft （在路线图）控制的加密密钥的数据加密策略或客户（使用客户密钥时）进行加密。 | 是 |
-| Office 365 与客户端/合作伙伴之间的 TLS | Exchange Online | [支持多个密码套件的机会 TLS](https://technet.microsoft.com/en-us/library/mt163898.aspx) | Exchange Online （outlook.office.com）的 TLS 证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Exchange Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA1RSA 证书。 | 是，当使用带256位密码强度的 TLS 1.2 时 |
-|  | SharePoint Online | 使用 AES 256 的 TLS 1。2 <br> <br> [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/en-us/library/dn905447.aspx) | SharePoint Online （* sharepoint.com）的 TLS 证书是由巴尔的摩 CyberTrust 根颁发的2048位 SHA256RSA 证书。 <br> <br> SharePoint Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA1RSA 证书。 | 是 |
+| Office 365 与客户端/合作伙伴之间的 TLS | Exchange Online | [支持多个密码套件的机会 TLS](https://technet.microsoft.com/library/mt163898.aspx) | Exchange Online （outlook.office.com）的 TLS 证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Exchange Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA1RSA 证书。 | 是，当使用带256位密码强度的 TLS 1.2 时 |
+|  | SharePoint Online | 使用 AES 256 的 TLS 1。2 <br> <br> [OneDrive for Business 和 SharePoint Online 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) | SharePoint Online （* sharepoint.com）的 TLS 证书是由巴尔的摩 CyberTrust 根颁发的2048位 SHA256RSA 证书。 <br> <br> SharePoint Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA1RSA 证书。 | 是 |
 |  | Skype for Business | [适用于 SIP 通信和 PSOM 数据共享会话的 TLS](https://support.office.com/article/Set-up-your-network-for-Skype-for-Business-Online-d21f89b0-3afc-432e-b735-036b2432fdbf) | 适用于 Skype for Business 的 TLS 证书（* lync.com）是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Skype for Business 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 | 是 |
 |  | Microsoft Teams | 使用 AES 256 的 TLS 1。2 <br> <br> [有关 Microsoft 团队的常见问题-管理员帮助](https://docs.microsoft.com/MicrosoftTeams/teams-overview) | Microsoft 团队的 TLS 证书（teams.microsoft.com、edge.skype.com）是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Microsoft 团队的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 | 是 |
 | Microsoft 数据中心之间的 TLS | 所有 Office 365 服务 | 使用 AES 256 的 TLS 1。2 <br> <br> 安全实时传输协议（SRTP） | Microsoft 使用内部托管和部署的证书颁发机构来实现 Microsoft 数据中心之间的服务器到服务器的通信。 | 是 |
 | Azure 权限管理（包括在 Office 365 或 Azure 信息保护中） | Exchange Online | 支持[加密模式 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))，这是一个更新和增强的 RMS 加密实现。 它支持签名和加密的 RSA 2048，以及针对签名中的 SHA-256。 | [由 Microsoft 进行管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。 | 是 |
-|  | SharePoint Online | 支持[加密模式 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))，这是一个更新和增强的 RMS 加密实现。 它支持签名和加密的 RSA 2048，以及用于签名的 SHA-256。 | [由 Microsoft 进行管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)，这是默认设置;和 <br> <br> 客户管理的是 Microsoft 托管密钥的替代方法。 具有 IT 托管的 Azure 订阅的组织可以使用 BYOK 并记录其使用情况，而无需额外付费。 有关详细信息，请参阅[实现提供自己的密钥](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。 在此配置中，将使用 Thales Hsm 来保护你的密钥。 有关详细信息，请参阅[Thales hsm 和 AZURE RMS](http://www.thales-esecurity.com/msrms/cloud)。 | 是 |
+|  | SharePoint Online | 支持[加密模式 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))，这是一个更新和增强的 RMS 加密实现。 它支持签名和加密的 RSA 2048，以及用于签名的 SHA-256。 | [由 Microsoft 进行管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)，这是默认设置;和 <br> <br> 客户管理的是 Microsoft 托管密钥的替代方法。 具有 IT 托管的 Azure 订阅的组织可以使用 BYOK 并记录其使用情况，而无需额外付费。 有关详细信息，请参阅[实现提供自己的密钥](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。 在此配置中，将使用 Thales Hsm 来保护你的密钥。 有关详细信息，请参阅[Thales hsm 和 AZURE RMS](https://www.thales-esecurity.com/msrms/cloud)。 | 是 |
 | S/MIME | Exchange Online | 加密邮件语法标准1.5 （PKCS #7） | 取决于已部署的客户管理的公钥基础结构。 客户执行密钥管理，Microsoft 永远无法访问用于签名和解密的私钥。 | 是，当配置为使用3DES 或 AES256 加密传出邮件时 |
-| Office 365 邮件加密 | Exchange Online | 与 Azure RMS 相同（[加密模式 2](https://technet.microsoft.com/en-us/library/dn569290.aspx) -用于签名和加密的 RSA 2048，对于签名，则为 SHA-256） | 使用 Azure 信息保护作为其加密基础结构。 所使用的加密方法取决于从何处获取用来加密和解密邮件的 RMS 密钥。 | 是 |
+| Office 365 邮件加密 | Exchange Online | 与 Azure RMS 相同（[加密模式 2](https://technet.microsoft.com/library/dn569290.aspx) -用于签名和加密的 RSA 2048，对于签名，则为 SHA-256） | 使用 Azure 信息保护作为其加密基础结构。 所使用的加密方法取决于从何处获取用来加密和解密邮件的 RMS 密钥。 | 是 |
 | 具有合作伙伴组织的 SMTP TLS | Exchange Online | 使用 AES 256 的 TLS 1。2 | Exchange Online （outlook.office.com）的 TLS 证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Exchange Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA1RSA 证书。 | 是，当使用带256位密码强度的 TLS 1.2 时 |
 
 **此表中引用的 TLS 证书适用于美国数据中心;非美国数据中心也使用2048位 SHA256RSA 证书。*
@@ -76,16 +76,16 @@ Microsoft 遵循控制和合规性框架，重点关注 Office 365 服务和客�
 | 服务加密 | SharePoint Online | AES 256 位 | 用于加密 blob 的密钥存储在 SharePoint Online 内容数据库中。 SharePoint Online 内容数据库受数据库访问控制和静态加密的保护。 使用 Azure SQL Database 中的 TDE 执行加密。 这些机密是 SharePoint Online 的服务级别，而不是租户级别。 这些机密（有时称为主密钥）存储在单独的安全存储库中，称为 "密钥存储区"。 TDE 为活动数据库和数据库备份和事务日志提供了 rest 的安全性。 当客户提供可选密钥时，客户密钥存储在 Azure Key Vault 中，服务使用密钥来加密租户密钥，该密钥用于加密网站密钥，然后使用它来加密文件级密钥。 实质上，当客户提供密钥时，会引入新的密钥层次结构。 | 是 |
 |  | Skype for Business | AES 256 位 | 使用不同的随机生成的256位密钥对每个数据片段进行加密。 加密密钥存储在相应的元数据 XML 文件中，该文件也是由每会议主密钥加密的。 每次会议中也随机生成一次主密钥。 | 是 |
 |  | Exchange Online | AES 256 位 | 每个邮箱都使用使用 Microsoft 或客户控制的加密密钥的数据加密策略进行加密（使用客户密钥时）。 | 是 |
-| Office 365 与客户端/合作伙伴之间的 TLS | Exchange Online | [支持多个密码套件的机会 TLS](https://technet.microsoft.com/en-us/library/mt163898.aspx) | Exchange Online （outlook.office.com）的 TLS 证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Exchange Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA1RSA 证书。 | 是，当使用带256位密码强度的 TLS 1.2 时 |
+| Office 365 与客户端/合作伙伴之间的 TLS | Exchange Online | [支持多个密码套件的机会 TLS](https://technet.microsoft.com/library/mt163898.aspx) | Exchange Online （outlook.office.com）的 TLS 证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Exchange Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA1RSA 证书。 | 是，当使用带256位密码强度的 TLS 1.2 时 |
 |  | SharePoint Online | 使用 AES 256 的 TLS 1。2 | SharePoint Online （* sharepoint.com）的 TLS 证书是由巴尔的摩 CyberTrust 根颁发的2048位 SHA256RSA 证书。 <br> <br> SharePoint Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA1RSA 证书。 | 是 |
 |  | Skype for Business | 适用于 SIP 通信和 PSOM 数据共享会话的 TLS | 适用于 Skype for Business 的 TLS 证书（* lync.com）是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Skype for Business 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 | 是 |
 |  | Microsoft Teams | [有关 Microsoft 团队的常见问题-管理员帮助](https://docs.microsoft.com/MicrosoftTeams/teams-overview) | Microsoft 团队的 TLS 证书（teams.microsoft.com; edge.skype.com）是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Microsoft 团队的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 | 是 |
 | Microsoft 数据中心之间的 TLS | Exchange Online、SharePoint Online、Skype for Business | 使用 AES 256 的 TLS 1。2 | Microsoft 使用内部托管和部署的证书颁发机构来实现 Microsoft 数据中心之间的服务器到服务器的通信。 | 是 |
 |  |  | 安全实时传输协议（SRTP） |  |  |
 | Azure 权限管理服务 | Exchange Online | 支持[加密模式 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))，这是一个更新和增强的 RMS 加密实现。 它支持签名和加密的 RSA 2048，以及针对签名中的 SHA-256。 | [由 Microsoft 进行管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。 | 是 |
-|  | SharePoint Online | 支持[加密模式 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))，这是一个更新和增强的 RMS 加密实现。 它支持签名和加密的 RSA 2048，以及针对签名中的 SHA-256。 | [由 Microsoft 进行管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)，这是默认设置;和 <br> <br> 客户托管（也称为 BYOK），这是 Microsoft 托管密钥的替代方法。 具有 IT 托管的 Azure 订阅的组织可以使用 BYOK 并记录其使用情况，而无需额外付费。 有关详细信息，请参阅[实现提供自己的密钥](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。 <br> <br> 在 BYOK 方案中，Thales Hsm 用于保护你的密钥。 有关详细信息，请参阅[Thales hsm 和 AZURE RMS](http://www.thales-esecurity.com/msrms/cloud)。 | 是 |
+|  | SharePoint Online | 支持[加密模式 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))，这是一个更新和增强的 RMS 加密实现。 它支持签名和加密的 RSA 2048，以及针对签名中的 SHA-256。 | [由 Microsoft 进行管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)，这是默认设置;和 <br> <br> 客户托管（也称为 BYOK），这是 Microsoft 托管密钥的替代方法。 具有 IT 托管的 Azure 订阅的组织可以使用 BYOK 并记录其使用情况，而无需额外付费。 有关详细信息，请参阅[实现提供自己的密钥](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。 <br> <br> 在 BYOK 方案中，Thales Hsm 用于保护你的密钥。 有关详细信息，请参阅[Thales hsm 和 AZURE RMS](https://www.thales-esecurity.com/msrms/cloud)。 | 是 |
 | S/MIME | Exchange Online | 加密邮件语法标准1.5 （PKCS #7） | 取决于部署的公钥基础结构。 | 是，当配置为使用3DES 或 AES-256 加密传出邮件时。 |
-| Office 365 邮件加密 | Exchange Online | 与 Azure RMS 相同（[加密模式 2](https://technet.microsoft.com/en-us/library/dn569290.aspx) -用于签名和加密的 RSA 2048，对于签名中的哈希，为 SHA-256） | 使用 Azure RMS 作为其加密基础结构。 所使用的加密方法取决于从何处获取用来加密和解密邮件的 RMS 密钥。 <br> <br> 如果使用 Microsoft Azure RMS 获取密钥，则使用加密模式2。 如果您使用 Active Directory (AD) RMS 获取这些密钥，则可以使用加密模式 1，也可以使用加密模式 2。 使用的方法取决于您的本地 AD RMS 部署。 加密模式 1 是原始的 AD RMS 加密实现。 它支持针对签名和加密的 RSA 1024，并支持对 SHA-1 进行签名。 除了使用 Hsm 的 BYOK 配置之外，所有当前版本的 RMS 仍将继续支持此模式。 | 是 |
+| Office 365 邮件加密 | Exchange Online | 与 Azure RMS 相同（[加密模式 2](https://technet.microsoft.com/library/dn569290.aspx) -用于签名和加密的 RSA 2048，对于签名中的哈希，为 SHA-256） | 使用 Azure RMS 作为其加密基础结构。 所使用的加密方法取决于从何处获取用来加密和解密邮件的 RMS 密钥。 <br> <br> 如果使用 Microsoft Azure RMS 获取密钥，则使用加密模式2。 如果您使用 Active Directory (AD) RMS 获取这些密钥，则可以使用加密模式 1，也可以使用加密模式 2。 使用的方法取决于您的本地 AD RMS 部署。 加密模式 1 是原始的 AD RMS 加密实现。 它支持针对签名和加密的 RSA 1024，并支持对 SHA-1 进行签名。 除了使用 Hsm 的 BYOK 配置之外，所有当前版本的 RMS 仍将继续支持此模式。 | 是 |
 | 具有合作伙伴组织的 SMTP TLS | Exchange Online | 使用 AES 256 的 TLS 1。2 | Exchange Online （outlook.office.com）的 TLS 证书是由巴尔的摩 CyberTrust Root 颁发的2048位 SHA256RSA 证书。 <br> <br> Exchange Online 的 TLS 根证书是由巴尔的摩 CyberTrust Root 颁发的2048位 sha1RSA 证书。 <br> <br> 请注意，出于安全考虑，我们的证书会随时更改。 | 是 |
 
 **此表中引用的 TLS 证书适用于美国数据中心;非美国数据中心也使用2048位 SHA256RSA 证书。*

@@ -11,18 +11,18 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：了解 Microsoft Office 365 中的数据恢复能力。
-ms.openlocfilehash: 385bb936de2c0cfcb478f0b20d2f7367d5b55ff4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7fec40db9ce12b52d37f2003d7ee8db68739aa41
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075647"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690107"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 服务加密
 
 除了使用卷级加密之外，Exchange Online、Skype for business、SharePoint Online 和 OneDrive for business 还使用服务加密来加密客户数据。 服务加密允许两个密钥管理选项：
 - Microsoft 管理所有加密密钥。 （此选项目前在 SharePoint Online、OneDrive for business 和 Skype for Business 中可用。 它当前位于 Exchange Online 的路线图中。
-- 客户提供用于服务加密的根键，并且客户使用 Azure Key Vault 管理这些密钥。 Microsoft 管理所有其他密钥。 此选项称为 "客户密钥"，目前适用于 Exchange Online、SharePoint Online 和 OneDrive for Business。 （以前称为使用 BYOK 的高级加密。 请参阅增强针对原始公告的[Office 365 客户的透明度和控制](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)。
+- 客户提供用于服务加密的根键，并且客户使用 Azure Key Vault 管理这些密钥。 Microsoft 管理所有其他密钥。 此选项称为 "客户密钥"，目前适用于 Exchange Online、SharePoint Online 和 OneDrive for Business。 （以前称为使用 BYOK 的高级加密。 请参阅增强针对原始公告的[Office 365 客户的透明度和控制](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)。
 
 服务加密提供了多项优势。 例如，它：
 - 在强加密保护之上提供权限保护和管理功能。
