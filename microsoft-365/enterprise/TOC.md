@@ -83,6 +83,7 @@
 ### [移动设备管理](contoso-mdm.md)
 ### [信息保护](contoso-info-protect.md)
 ### [安全摘要](contoso-security-summary.md)
+### [最高机密项目团队](contoso-team-for-top-secret-project.md)
 ### [用于高度管控数据的 SharePoint 网站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 ## [Microsoft 365 企业版部署内容的更改](microsoft-365-deploment-guide-changes.md)
 # [桌面部署中心](desktop-deployment-center-home.md)
