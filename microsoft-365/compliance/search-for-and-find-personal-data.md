@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何在 Office 365 中搜索和查找个人数据。
-ms.openlocfilehash: b63cf930a38feab6df815b5350d60184a6339927
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075349"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38709992"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜索和查找个人数据
 
@@ -79,7 +79,7 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 
 本主题列出了适用于欧盟公民的某些敏感信息类型。 请检查安全中心或合规中心，了解是否有可帮助实现 GDPR 合规性的新增内容。
 
-另请参阅下文：[敏感信息类型列表及每种类型可查找的内容](https://support.office.com/zh-CN/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)。
+另请参阅下文：[敏感信息类型列表及每种类型可查找的内容](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)。
 
 敏感信息类型定义了自动进程识别特定信息类型的方式，例如银行帐号、卫生服务号码和信用卡号码等。敏感信息类型也可称为条件。敏感信息类型通过正则表达式或函数可以识别的模式定义。此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。可信度和邻近度也会在评估过程中使用。
 
@@ -97,7 +97,7 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 <tbody>
 <tr class="odd"><td align="left"><p>转到安全与合规中心的“内容搜索”</p></td>
 <td align="left"><p>在安全与合规中心的左侧窗格中，单击“搜索和调查”****&gt;****“内容搜索”。</p>
-<p>请参阅<a href="https://support.office.com/zh-CN/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全与合规中心运行内容搜索</a>。</p></td>
+<p>请参阅<a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全与合规中心运行内容搜索</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>为每种敏感信息类型创建新的搜索项</p></td>
@@ -110,14 +110,14 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 <p>SensitiveType:&quot;法国护照号码&quot;</p>
 </blockquote>
 <p>将搜索范围限定为 SharePoint（包括 OneDrive for Business）。确保语法准确无误，没有多余的空格或拼写错误。</p>
-<p>请参阅<a href="https://support.office.com/zh-CN/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">创建查询以查找存储在站点上的敏感数据</a>。</p></td>
+<p>请参阅<a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">创建查询以查找存储在站点上的敏感数据</a>。</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>查看各个搜索的结果</p></td>
 <td align="left"><p>查看是否存在以下类型的问题，确定查询准确性是否符合目标：</p>
 <p><li>许多误报</li></p>
 <p><li>缺少已知的数据实例</li></p>
-<p>请参阅<a href="https://support.office.com/zh-CN/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">从 Office 365 安全与合规中心导出内容搜索结果</a>。</p>
+<p>请参阅<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">从 Office 365 安全与合规中心导出内容搜索结果</a>。</p>
 <p>注意：如果使用的是 Mozilla Firefox 或 Chrome，可能需要先使用 Internet Explorer 或 Edge 下载报告，才能安装所需的加载项。</p></td>
 </tr>
 </tbody>
@@ -217,4 +217,4 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 
 注意：“SensitiveType”区分大小写，但查询的其余部分不区分大小写。
 
-此外，还可以使用属性和运算符来说明如何优化查询。有关详细信息和示例，请参阅[创建查询以查找存储在站点上的敏感数据](https://support.office.com/zh-CN/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)。
+此外，还可以使用属性和运算符来说明如何优化查询。有关详细信息和示例，请参阅[创建查询以查找存储在站点上的敏感数据](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)。

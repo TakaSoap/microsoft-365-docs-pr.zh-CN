@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何修改或新建针对 GDPR 的 Office 365 敏感信息类型。
-ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074212"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708036"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自定义或新建敏感信息类型
 
@@ -71,7 +71,7 @@ ms.locfileid: "37074212"
 
 7.  上传新的敏感信息类型。
 
-8.  重新对内容进行爬网，找出敏感信息。请参阅[手动请求对网站进行爬网和重新编制其索引](https://support.office.com/zh-CN/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)。
+8.  重新对内容进行爬网，找出敏感信息。请参阅[手动请求对网站进行爬网和重新编制其索引](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)。
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>示例：修改“欧盟借记卡号”敏感信息类型
 
@@ -141,15 +141,15 @@ ms.locfileid: "37074212"
 
 使用以下资源通过 KQL 构建和优化查询：
 
--   [关键字查询语言 (KQL) 语法参考 (DMC)](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [关键字查询语言 (KQL) 语法参考 (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [运行内容搜索](https://support.office.com/zh-CN/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [运行内容搜索](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
-内容搜索提供了可帮助开发 KQL 查询和敏感信息类型的其他资源 — 关键字。为什么要使用关键字列表？因为这样可以获取显示与各个关键字相匹配的项目数的统计信息。该信息有助于快速找到最有效（及最无效）的关键字。有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计信息](https://support.office.com/zh-CN/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
+内容搜索提供了可帮助开发 KQL 查询和敏感信息类型的其他资源 — 关键字。为什么要使用关键字列表？因为这样可以获取显示与各个关键字相匹配的项目数的统计信息。该信息有助于快速找到最有效（及最无效）的关键字。有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计信息](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
 
 所创建的搜索查询中各行上的关键字通过 OR 运算符连接。也可以在行中使用关键字短语（用括号括起来）。
 
-有关详细信息，请参阅[内容搜索的关键字查询和搜索条件](https://support.office.com/zh-CN/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)。
+有关详细信息，请参阅[内容搜索的关键字查询和搜索条件](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)。
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>示例 — 使用内容搜索找出电子邮件地址
 
@@ -374,7 +374,7 @@ CCN 示例：
 ```xml
 \<?xml version="1.0" encoding="utf-8"?\>
 
-\<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"\>
+\<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"\>
 
 \<RulePack id="130ae63b-a91e-4a12-9e02-a90e36a83d7f"\>
 

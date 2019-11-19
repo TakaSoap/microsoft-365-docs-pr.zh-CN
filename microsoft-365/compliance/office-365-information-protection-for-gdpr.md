@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 此解决方案演示了如何保护 Office 365 服务中存储的敏感数据。
-ms.openlocfilehash: 6765a6dd389ad4b08bb6eaa74aac68381e0c5731
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9540eb41c6603a7ee09cb5499d09f464353d9fd9
+ms.sourcegitcommit: 4d9a075f4c890fa5bbd1751740a5540edbc1b999
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075648"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "38709990"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>针对 GDPR 的 Office 365 信息保护
 
@@ -28,12 +28,12 @@ ms.locfileid: "37075648"
   
 此解决方案包括针对发现、分类、保护和监视个人数据的指导性建议。该解决方案以一般数据保护条例 (GDPR) 为例，但用户可以采用同一流程实现对许多其他条例的符合性。
 
-[![针对 GDPR 的 Office 365 信息保护海报的缩略图。](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
+[![针对 GDPR 的 Office 365 信息保护海报的缩略图。](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
 
-[PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
+[PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
   
-有关执行针对 GDPR 的数据主体请求的信息，请参阅[针对 GDPR 的 Office 365 数据主体请求](https://docs.microsoft.com/microsoft-365/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json)。 
+有关执行针对 GDPR 的数据主体请求的信息，请参阅[针对 GDPR 的 Office 365 数据主体请求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365)。 
 
 ## <a name="see-also"></a>另请参阅
   
-[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)

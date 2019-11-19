@@ -11,17 +11,18 @@ ms.collection:
 - Strat_O365_Enterprise
 - GDPR
 - M365-security-compliance
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 DLP 策略保护 Office 365 中的个人数据。
-ms.openlocfilehash: f6d6d69f7c776b9b49ea360367117a9ce86293b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074531"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38708043"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用保护
 
@@ -41,7 +42,7 @@ ms.locfileid: "37074531"
 
 -   查看显示符合组织 DLP 策略的内容的 DLP 报告。
 
-有关详细信息，请参阅[数据丢失防护策略概述](https://support.office.com/zh-CN/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
+有关详细信息，请参阅[数据丢失防护策略概述](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
 ![用于创建数据丢失防护策略的选项](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -79,7 +80,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">感知</td>
+<td align="left">感知度</td>
 <td align="left"><p>在 SharePoint Online 和 OneDrive for Business 中的文档内发现此数据时，向合规性团队发送电子邮件通知。</p>
 <p>在员工访问包含此数据的文档时，在 SharePoint 和 OneDrive for Business 中自定义策略提示并向员工显示相应的提示。</p>
 <p>此数据被共享时，进行检测和报告。</p></td>
@@ -142,7 +143,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 <tr class="odd">
 <td align="left">当内容符合策略设置时通知用户</td>
 <td align="left"><p>选中此框（“向用户显示策略提示并向他们发送电子邮件通知。”）</p>
-<p>单击“自定义提示和电子邮件”，然后针对所在的环境进行更新。请参阅下文中的默认通知：<a href="https://support.office.com/zh-CN/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">发送电子邮件通知并显示 DLP 策略的策略提示</a>。</p></td>
+<p>单击“自定义提示和电子邮件”，然后针对所在的环境进行更新。请参阅下文中的默认通知：<a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">发送电子邮件通知并显示 DLP 策略的策略提示</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left">共享特定数量的敏感信息时进行检测</td>
@@ -176,8 +177,8 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>范围</strong></th>
-<th align="left"><strong>Capabilities</strong></th>
+<th align="left"><strong>保护范围</strong></th>
+<th align="left"><strong>功能</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -300,7 +301,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 详细信息：
 
--   [管理 SharePoint Online 环境的外部共享](https://support.office.com/zh-CN/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [管理 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [与组织外部的用户共享站点或文档](https://support.office.com/zh-CN/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
@@ -351,7 +352,7 @@ SharePoint 和 OneDrive for Business 的设备访问策略需要支持 Azure Act
 </tbody>
 </table>
 
-详细信息：[SharePoint Online 管理中心：控制来自非托管设备的访问](https://support.office.com/zh-CN/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
+详细信息：[SharePoint Online 管理中心：控制来自非托管设备的访问](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>对标识和设备的服务访问保护
 
@@ -359,9 +360,9 @@ Microsoft 建议为访问服务的标识和设备配置保护。用于保护 Off
 
 对标识和设备的访问保护提供了基准保护，确保标识不被攻击、设备安全且在设备上访问的组织数据已隔离并受到保护。
 
-有关入门建议和配置指南，请参阅 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南](https://docs.microsoft.com/zh-CN/microsoft-365-enterprise/microsoft-security-guidance)。
+有关入门建议和配置指南，请参阅 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)。
 
-对于使用 AD FS 的混合标识环境，请参阅[建议的安全策略和配置](https://docs.microsoft.com/zh-CN/microsoft-365-enterprise/microsoft-security-guidance)。
+对于使用 AD FS 的混合标识环境，请参阅[建议的安全策略和配置](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)。
 
 下图说明了云服务（SaaS、PaaS）、帐户类型（租户域帐户与 B2B 帐户）和服务访问功能之间的关联。请务必注意哪些功能可用于 B2B 帐户。
 

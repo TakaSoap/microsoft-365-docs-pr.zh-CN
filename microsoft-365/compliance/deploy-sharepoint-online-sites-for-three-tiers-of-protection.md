@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：为各种级别的信息保护创建和配置 SharePoint Online 团队网站。
-ms.openlocfilehash: 2ddf3de7180d384c387bdc335afda6214508e3c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ff892d57d4fe6e707e4cbcb4f1562a3594fe70b
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070687"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38708046"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署具有三层保护的 SharePoint Online 网站
 
@@ -46,7 +47,7 @@ ms.locfileid: "37070687"
     
 4. 在“创建网站”页中，单击“团队网站”********。
     
-5. 在“网站名称”中，键入公共团队网站的名称****。 
+5. 在“网站名称”中，键入公共团队网站的名称****。
     
 6. 在“团队网站说明”中，键入关于网站用途的说明。****
     
@@ -70,7 +71,7 @@ ms.locfileid: "37070687"
     
 4. 在“创建网站”页中，单击“团队网站”********。
     
-5. 在“网站名称”中，键入专用团队网站的名称****。 
+5. 在“网站名称”中，键入专用团队网站的名称****。
     
 6. 在“团队网站说明”中，键入关于网站用途的说明。****
     
