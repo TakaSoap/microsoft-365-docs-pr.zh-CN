@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并保护敏感数据。
-ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676000"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704067"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -233,4 +233,4 @@ ms.locfileid: "38676000"
 
 3. 在结果出现后，选择 " **Microsoft Intune** " 旁边的 "开始"，使其成为收藏且易于查找。
 
-除了管理中心之外，你还可以使用 Intune 注册和管理你的组织的设备。 有关详细信息，请参阅[Windows 设备注册方法](https://docs.microsoft.com/intune/enrollment-method-capabs)和由[Intune 管理的设备的注册选项](https://docs.microsoft.com/intune/enrollment-options)的功能。
+除了管理中心之外，你还可以使用 Intune 注册和管理你的组织的设备。 有关详细信息，请参阅[Windows 设备注册方法](https://docs.microsoft.com/intune/enrollment/enrollment-method-capab)和由[Intune 管理的设备的注册选项](https://docs.microsoft.com/intune/enrollment-options)的功能。

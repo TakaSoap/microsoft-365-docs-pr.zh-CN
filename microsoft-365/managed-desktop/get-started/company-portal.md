@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 121771dd2474d58e7bd6a0d56218563c8785d4bf
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 4e83983ae7b8b936b639382f025f1f88eeca0762
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011953"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699672"
 ---
 # <a name="install-intune-company-portal-on-on-devices"></a>在设备上安装 Intune 公司门户
 
@@ -42,7 +42,7 @@ Microsoft 托管桌面要求 IT 管理员使用 Microsoft 托管桌面设备为�
 ## <a name="step-3---communicate-change-to-your-users"></a>第3步-将更改传达给用户
 作为组织的 IT 管理员，让你的用户知道如何在你的组织中使用公司门户，这一点非常重要。 Microsoft 托管桌面建议：
 - 从公司门户安装应用程序的步骤。 有关详细信息，请参阅在[设备上安装和共享应用](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)。
-- 如何向 IT 管理员发送对当前不可用的应用程序的请求。
+- 如何向 IT 管理员发送对当前不可用的应用程序的请求。 有关详细信息，请参阅[请求适用于工作或学校的应用程序](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school)。  
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft 托管桌面入门步骤
 

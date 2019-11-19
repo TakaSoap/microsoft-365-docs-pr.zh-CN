@@ -7,18 +7,18 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
+ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627556"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38697155"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>让用户做好使用设备的准备
 
 在 Microsoft 托管桌面设备进入最终用户的手中后，即可快速轻松地入门。 在 Windows 的当前版本中预配置了设备，并且在用户完成安装程序时，将从云中安装配置和应用程序。 
  
-为了更加轻松，我们提供了指导，指导用户完成初始设置，并为设置提供帮助资源并在以后必要时使用。 您可以自定义本指南，以包含特定于您的组织的特定详细信息。 然后，将指南直接分发给用户及其设备。 有两个版本，一个适用于使用 Microsoft 支持系统的组织（获取帮助应用程序），一个用于提供自己的内部最终用户支持的组织。
+为了更加轻松，我们提供了指导，指导用户完成初始设置，并为设置提供帮助资源并在以后必要时使用。 您可以自定义本指南，以包含特定于您的组织的特定详细信息。 然后，将指南直接分发给用户及其设备。 有两个版本，一个用于使用 Microsoft 支持系统的组织（获取帮助应用程序），一个用于为其用户提供替代支持的组织。
 
 ## <a name="to-prepare-the-guide"></a>准备指南
 

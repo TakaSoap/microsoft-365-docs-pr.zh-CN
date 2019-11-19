@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: 5986e3fb7786ebb3fa7bcf42b34345be98af44a2
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: f269e970cc1ee5ba7455ea799b238db577116f09
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633421"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704107"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business 入门
 
@@ -80,7 +80,6 @@ Microsoft 365 商业版适用于最高300的许可证。 如果你需要更多�
   
 如果保留包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以通过以下步骤向**AZURE ad 联接设备**授予对这些资源的访问权限：[从 Microsoft 365 商业版中的 Azure AD 加入设备访问本地资源](access-resources.md)。
   
-设置 Windows 10 电脑后，可以将[Office 自动安装](auto-install-or-uninstall-office.md)到设备上。 
   
 ## <a name="contact-support"></a>联系支持人员
 
