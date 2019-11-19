@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c4135e52f88f72cde171cbc6c897359cd8e13e05
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685270"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699682"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -145,7 +145,7 @@ ms.locfileid: "38685270"
 |**运算符**|**用法**|**说明**|
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|返回包含所有指定关键字或`property:value`表达式的项。 例如， `from:"Ann Beebe" AND subject:northwind`将返回王小姐 Beebe 发送的所有邮件，其中包含 "主题" 行中的 "罗斯文" 一词。 <sup>双面</sup>|
-|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> 查询`keyword1 + keyword2` （ **+** 符号后面有一个空格）与使用 * * 和 * * 运算符的作用不同。 This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
+|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> 查询`keyword1 + keyword2` （在**+** 符号后面有一个空格）与使用**AND**运算符不同。 This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|返回包含一个或多个指定关键字或`property:value`表达式的项。 <sup>双面</sup>|
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> 不是种类： im|排除由关键字或`property:value`表达式指定的项目。 在第二个示例中，排除王小姐 Beebe 发送的邮件。 第三个示例排除了所有即时消息对话，例如保存到对话历史记录邮箱文件夹中的 Skype for Business 对话。 <sup>双面</sup>|
 |-|keyword1 -keyword2|与 **NOT** 运算符作用相同。 因此，此查询将返回包含`keyword1`和将排除包含`keyword2`的项的项。|
