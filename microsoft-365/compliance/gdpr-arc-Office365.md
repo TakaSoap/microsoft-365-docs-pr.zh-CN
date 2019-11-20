@@ -8,13 +8,16 @@ ms.topic: article
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: c1d671e125eca07f1d559fdeded7ae590c5b8b38
-ms.sourcegitcommit: aace6acb94c3a944fe5863b3a52d74f9054dcd23
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 66a3478ed625b3c7453992e04070d57beef173eb
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "35921123"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749670"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>适用于 Microsoft Office 365 的责任准备情况清单
 
@@ -93,7 +96,7 @@ ms.locfileid: "35921123"
 |***确定信息安全管理系统的范围（5.2.3、5.2.4）***|作为客户拥有的任何整体安全或隐私程序的一部分，它们应包括与之相关的个人数据处理和要求。|Microsoft 服务如何在信息安全管理和隐私计划中纳入个人数据处理。<br>- *Microsoft Office 365 ISO/IEC 27001:2013 ISMS 适用性声明* [[12](gdpr-arc-Office365.md#12)]，请参阅 A.19<br>- *SOC 2 类型 2 审核报告* [[11](gdpr-arc-Office365.md#11)]<br>- Office 365 ISMS 手册 [[14](gdpr-arc-Office365.md#14)]，请参阅 *4. 组织背景*<br>- 5.2.3 确定合规性管理器中的信息安全管理系统的范围<br>- 5.2.4 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的信息安全管理系统|(32)(2)|
 |***规划 (5.3)***|客户应将个人数据处理视为他们完成的任何风险评估的一部分，并在他们认为有必要以减轻他们控制的个人数据相关风险时采取控制措施。|Microsoft 服务如何在整体安全和隐私计划中纳入个人数据处理风险。<br>- *Office 365 ISMS 手册* [[14](gdpr-arc-Office365.md#14)] 请参阅 *5.2 策略*<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的“5.3 计划”|(32)(1)(b)、(32)(2)|
 |***信息安全策略 (6.2)***|客户应该加强任何现有的信息安全政策以将个人数据保护包括在内，其中包括遵守任何适用法律所必需的策略。|与信息安全和任何个人信息保护措施相关的 Microsoft 策略。<br>- *Microsoft Office 365（全部）ISO/IEC 27001:2013 ISMS 适用性声明* [[12](gdpr-arc-Office365.md#12)]，请参阅 A.19<br>- *SOC 2 类型 2 审核报告* [[11](gdpr-arc-Office365.md#11)]<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的“6.2 信息安全策略”|24(2)|
-|***信息安全组织客户注意事项 (6.3)***|客户应在其组织内定义个人数据的安全和保护职责。 这包括建立特定角色来监督隐私相关事宜，包括 DPO。 应提供适当的培训和管理支持来支持这些角色。|有关 Microsoft 数据保护管理人员角色及其职责性质、报告结构和联系信息的概述。<br>- *Microsoft 数据保护管理人员* [[18](gdpr-arc-Office365.md#18)]<br>- *Office 365 ISMS 手册* [[14](gdpr-arc-Office365.md#14)]，请参阅 *5.3 组织角色、职责和颁发机构*<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的“6.3 信息安全组织”|(37)(1)(a)、(37)(1)(b)、(37)(1)(c)、(37)(2)、(37)(3)、(37)(4)、(37)(5)、(37)(6)、(37)(7)、(38)(1)、(38)(2)、(38)(3)、(38)(4)、(38)(5)、(38)(6)、(39)(1)(a)、(39)(1)(b)、(39)(1)(c)、(39)(1)(d)、(39)(1)(e)、(39)(2)|
+|***信息安全组织客户注意事项 (6.3)***|客户应在其组织内定义个人数据的安全和保护职责。这包括建立特定角色来监督隐私相关事宜，包括 DPO。应提供适当的培训和管理支持来支持这些角色。|有关 Microsoft 数据保护管理人员角色及其职责性质、报告结构和联系信息的概述。<br>- *Microsoft 数据保护管理人员* [[18](gdpr-arc-Office365.md#18)]<br>- *Office 365 ISMS 手册* [[14](gdpr-arc-Office365.md#14)]，请参阅 *5.3 组织角色、职责和颁发机构*<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的“6.3 信息安全组织”|(37)(1)(a)、(37)(1)(b)、(37)(1)(c)、(37)(2)、(37)(3)、(37)(4)、(37)(5)、(37)(6)、(37)(7)、(38)(1)、(38)(2)、(38)(3)、(38)(4)、(38)(5)、(38)(6)、(39)(1)(a)、(39)(1)(b)、(39)(1)(c)、(39)(1)(d)、(39)(1)(e)、(39)(2)|
 |***人员安全 (6.4)***|客户应确定并分配提供与保护个人数据相关的相关培训的责任。|有关 Microsoft 数据保护管理人员角色及其职责性质、报告结构和联系信息的概述。<br>- *Microsoft 数据保护管理人员* [[18](gdpr-arc-Office365.md#18)]<br>- *Office 365 ISMS 手册* [[14](gdpr-arc-Office365.md#14)]，请参阅 *5.3 组织角色、职责和颁发机构*<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的“6.4 人力资源安全”|(39)(1)(b)|
 |***信息分类 (6.5.1)***|客户应该明确地将个人数据视为数据分类方案的一部分。|Office 365 中支持个人数据分类的功能。<br>- *符合 GDPR 的 Office 365 信息保护* [[5](gdpr-arc-Office365.md#5)]，请参阅“为个人数据构建分类架构”<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的“6.5.1 信息分类”|(39)(1)(b)|
 |***管理可移动媒体 (6.5.2)***|客户应确定使用可移动媒体的内部策略，因为这涉及个人数据保护（例如，加密设备）。|Microsoft 服务如何保护任何可移动媒体上的个人信息安全性。<br>- *FedRAMP 中等 FedRAMP 系统安全计划* [[3](gdpr-arc-Office365.md#3)]，请参阅“13.10 媒体保护 (MP)”<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的“管理可移动媒体”|(32)(1)(a)、(5)(1)(f)|
@@ -113,13 +116,13 @@ ms.locfileid: "35921123"
 |***信息传输策略和过程 (6.10.1)***|对于个人数据可能在物理媒体上传输（例如在服务器或设施之间移动的硬盘）的情况，客户应有应对过程。这些包括日志、授权和跟踪。如果第三方或其他处理者正在传送物理介质，则客户应确保该组织有应对流程来确保个人数据的安全。|Microsoft 服务如何传输可能包含个人数据的物理介质，包括传输时间以及为保护数据而采取的保护措施等情况。<br>- FedRAMP 中等 FedRAMP 系统安全计划 [[3](gdpr-arc-Office365.md#3)] 请参阅 13.10 媒体保护 (MP)<br>- 6.10.1 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的信息传输策略和过程|(5)(1)(f)|
 |***保密性或保密协议 (6.10.2)***|客户应确定保密协议的必要性，或者有权访问个人数据的个人或对个人数据负有相关责任的个人的等同性。|Microsoft 服务如何确保有权访问个人数据的个人承诺保密。<br>- SOC 2 类型 2 审核报告 [[11](gdpr-arc-Office365.md#11)] 请参阅 CC1.4 pp33<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的保密性或非披露协议 6.10.2|(5)(1)(f)、(28)(3)(b)、(38)(5)|
 |***保护公共网络上的应用服务 (6.11.1)***|客户应了解个人数据加密的要求，尤其是通过公共网络发送的情况。如果系统提供加密数据的机制，则客户应根据需要使用这些机制。|Microsoft 服务为保护传输中的数据（包括数据加密）而采取的措施的说明、以及 Microsoft 服务在数据通过公用数据网络（包括任何加密措施）时如何保护可能包含个人数据的数据的说明。<br>- Microsoft 云中的加密 [[17](gdpr-arc-Office365.md#17)] 请参阅 *Office 365 客户数据传输过程中的加密*<br>- 6.11.1 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的保护公共网络上的应用服务|(5)(1)(f)、(32)(1)(a)|
-|***安全系统工程原理 (6.11.2)***|客户应了解系统是如何从考虑保护个人数据的角度设计和策划的。 如果客户使用由第三方设计的系统，则他们有责任确保已慎重考虑此类保护措施。|Microsoft 服务如何将个人数据保护原则纳入安全设计/工程原则的强制性部分。<br>- SOC 2 类型 2 审核报告 [[11](gdpr-arc-Office365.md#11)] 请参阅*安全开发生命周期* pp23、CC7.1 pp45 <br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的安全系统工程原理|(25)(1)|
-|***供应商关系 (6.12)***|客户应确保任何信息安全和个人数据保护要求以及第三方责任均在合同信息或其他协议中得到解决。 协议还应给出处理说明。|Microsoft 服务如何在我们与供应商达成的协议中指定安全和数据保护，以及我们如何确保这些协议得到有效执行。<br>- 谁以及根据哪些条款可以访问你的数据 [[6](gdpr-arc-Office365.md#6)]<br>- 次级处理者合同：与 Microsoft 签订合同 [[7](gdpr-arc-Office365.md#7)]<br>- 6.12 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的供应商关系|(5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h)、(30)(2)(d)、(32)(1)(b)|
+|***安全系统工程原理 (6.11.2)***|客户应了解系统是如何从考虑保护个人数据的角度设计和策划的。如果客户使用由第三方设计的系统，则他们有责任确保已慎重考虑此类保护措施。|Microsoft 服务如何将个人数据保护原则纳入安全设计/工程原则的强制性部分。<br>- SOC 2 类型 2 审核报告 [[11](gdpr-arc-Office365.md#11)] 请参阅*安全开发生命周期* pp23、CC7.1 pp45 <br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的安全系统工程原理|(25)(1)|
+|***供应商关系 (6.12)***|客户应确保任何信息安全和个人数据保护要求以及第三方责任均在合同信息或其他协议中得到解决。协议还应给出处理说明。|Microsoft 服务如何在我们与供应商达成的协议中指定安全和数据保护，以及我们如何确保这些协议得到有效执行。<br>- 谁以及根据哪些条款可以访问你的数据 [[6](gdpr-arc-Office365.md#6)]<br>- 次级处理者合同：与 Microsoft 签订合同 [[7](gdpr-arc-Office365.md#7)]<br>- 6.12 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的供应商关系|(5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h)、(30)(2)(d)、(32)(1)(b)|
 |***信息安全事件管理和改进 (6.13.1)***|客户应具有确定何时发生个人数据泄露的流程。|Microsoft 服务如何确定某个安全事件是否是个人数据泄漏事件，以及我们如何向你传达该泄漏事件。<br>- Office 365 和 GDPR 泄露通知 [[9](gdpr-arc-Office365.md#9)]<br>- [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager) 信息安全事件管理和改进 6.13.1|(33)(2)|
 |***责任和过程（在信息安全事件期间）(6.13.2)***|客户应在涉及个人数据的数据泄露或安全事件期间了解并记录他们的职责。职责包括通知各相关方、与处理者或其他第三方进行通信，以及在客户组织内的职责。|如果检测到安全事件或个人数据泄漏，如何通知 Microsoft 服务<br>- Office 365 和 GDPR 泄露通知 [[9](gdpr-arc-Office365.md#9)]<br>- 6.13.2 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的职责和过程|(5)(1)(f)、(33)(1)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)、(34)(3)(a)、(34)(3)(b)、(34)(3)(c)、(34)(4)|
 |***信息安全事件响应 (6.13.3)***|客户应具有确定何时发生个人数据泄露的流程。|Microsoft 服务提供的信息说明，有助于你确定是否发生了个人数据泄露。<br>- Office 365 和 GDPR 泄露通知 [[9](gdpr-arc-Office365.md#9)]<br>- 6.13.3 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的信息安全事件响应|(33)(1)、(33)(2)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)|
 |***记录保护 (6.15.1)***|客户应了解与个人数据处理相关的需要维护的记录的要求。|Microsoft 服务如何存储与处理个人数据相关的记录<br>- 在 Office 365 安全合规中心搜索审核日志 [[16](gdpr-arc-Office365.md#16)]<br>- Microsoft Office 365 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-Office365.md#12)] 请参阅 A.18.1.3<br>- Office 365 ISM 手册 [14] 请参阅 *9 性能评估*|(5)(2)、(24)(2)|
-|***独立审查信息安全 (6.15.2)***|客户应了解对个人数据处理安全性评估的要求。 这包括内部或外部审核或其他评估处理安全性的措施。 如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。|Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br>- Microsoft 联机服务条款、数据保护条款，请参阅数据安全、审核合规性 [[1](gdpr-arc-Office365.md#1)]<br>- Office 365 ISM 手册 [[14](gdpr-arc-Office365.md#14)] 请参阅 *9 性能评估*<br>- 6.15.2 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的独立审查信息安全|(32)(1)(d)、(32)(2)|
+|***独立审查信息安全 (6.15.2)***|客户应了解对个人数据处理安全性评估的要求。这包括内部或外部审核或其他评估处理安全性的措施。如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。|Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br>- Microsoft 联机服务条款、数据保护条款，请参阅数据安全、审核合规性 [[1](gdpr-arc-Office365.md#1)]<br>- Office 365 ISM 手册 [[14](gdpr-arc-Office365.md#14)] 请参阅 *9 性能评估*<br>- 6.15.2 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的独立审查信息安全|(32)(1)(d)、(32)(2)|
 |***技术符合性审查 (6.15.3)***|客户应了解测试和评估处理个人数据安全性的要求。 这包括技术测试，如渗透测试。 如果客户使用第三方系统或处理者，则他们应了解他们在保护和测试安全方面承担的责任（例如管理配置以保护数据，然后测试这些配置设置）。 如果第三方负责安全性处理的全部或部分，则客户应该了解第三方为确保处理的安全性而进行的测试或评估。|如何基于标识的风险（包括由第三方发起的测试，以及技术测试类型和测试中任何可用的报表）对 Microsoft 服务测试安全性。<br>- Microsoft Online Services 条款、数据保护条款，请参阅“数据安全之审核合规性”[[1](gdpr-arc-Office365.md#1)]<br>- 有关外部认证的列表，请参阅 *Microsoft 信任中心合规性产品 [[13](gdpr-arc-Office365.md#13)]*<br>- 有关渗透测试应用程序的详细信息，请参阅 FedRAMP 中等 FedRAMP 系统安全计划 (SSP) [[3](gdpr-arc-Office365.md#3)]，CA-8 渗透测试 (M) (H) pp204<br>- 6.15.3 [合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)中的技术合规性审阅|(32)(1)(d)、(32)(2)|
 
 ## <a name="6-bibliography-of-resources-and-links"></a>6. 资源和链接参考文献
@@ -127,19 +130,19 @@ ms.locfileid: "35921123"
 |||
 |:-----|:-----|
 |**ID**|**说明/链接**|
-| 1 <a name="1"> </a> | [联机服务条款](http://aka.ms/ost) |
+| 1 <a name="1"> </a> | [联机服务条款](https://aka.ms/ost) |
 | 2 <a name="2"> </a> | [Office 365 安全文档](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e) |
 | 3 <a name="3"> </a> | [FedRAMP 中等 FedRAMP 系统安全计划 (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Microsoft 云安全策略](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 5 <a name="5"> </a> | [针对 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
 | 6 <a name="6"> </a> | [谁以及根据哪些条款可以访问你的数据？](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 7 <a name="7"> </a> | [次级处理者合同：与 Microsoft 签订合同](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
+| 7 <a name="7"> </a> | [次级处理者合同：与 Microsoft 签订合同](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 8 <a name="8"> </a> | [适用于 GDPR 的 365 数据主体请求](https://aka.ms/DSROffice365) |
 | 9 <a name="9"> </a> | [Office 365 和 GDPR 泄露通知](https://aka.ms/BreachOffice365) |
 | 10  <a name="10"> </a> | [Office 365 适用的客户数据保护影响评估关键信息](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) |
 | 11 <a name="11"> </a> | [SOC 2 类型 2 审核报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=0cf2cce9-972d-4a64-865f-b8e6eba4ed5e&docTab=4ce99610-c9c0-11e7-8c2c-) |
 | 12 <a name="12"> </a> | [Microsoft Office 365 ISO/IEC 27001:2013 ISMS 适用性声明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d7255c90-03e3-48a6-938d-e69d8f723c7a&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 13 <a name="13"> </a> | [Microsoft 信任中心合规性产品/服务](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
+| 13 <a name="13"> </a> | [Microsoft 信任中心合规性产品/服务](offering-home.md) |
 | 14 <a name="14"> </a> | [Office 365 ISM 手册](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 15 <a name="15"> </a> | [使用租户限制管理对 SaaS 云应用程序的访问权限](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
 | 16 <a name="16"> </a> | [在 Office 365 安全合规中心搜索审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) |

@@ -15,14 +15,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 根据本测试实验室指南，可以创建轻型测试环境来测试 Microsoft 365 企业版。
-ms.openlocfilehash: c654dc80620b98d09cf508e309d4410d9cf4a4dc
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: fce612000fac79fe9552fa9882d6c48fdacda1c2
+ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639912"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38694119"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
+
+*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 本文分步说明了如何使用 Microsoft 365 E5 订阅和运行 Windows 10 企业版的计算机创建简化的环境。 
 
@@ -283,7 +285,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPre
 $vnet | Set-AzVirtualNetwork
 $pip=New-AzPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
-$vm=New-AzVMConfig -VMName WIN10 -VMSize Standard_D1_V2
+$vm=New-AzVMConfig -VMName WIN10 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for WIN10."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"

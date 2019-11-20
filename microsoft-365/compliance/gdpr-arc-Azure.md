@@ -9,13 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: b605bfa3d549b3359f8bb780cfffa7306db44d2d
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 92d7e08c17d2f67781b5d261e103717ab57578d9
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982407"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749669"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Azure 责任准备情况清单
 
@@ -111,21 +114,21 @@ ms.locfileid: "36982407"
 | ***信息传输策略和过程 (6.10.1)*** | 对于个人数据可能在物理媒体上传输（例如在服务器或设施之间移动的硬盘）的情况，客户应有应对过程。这些包括日志、授权和跟踪。如果第三方或其他处理者正在传送物理介质，则客户应确保该组织有应对流程来确保个人数据的安全。 | Microsoft 服务如何传输可能包含个人数据的物理介质，包括传输时间以及为保护数据而采取的保护措施等情况。<br>- *FedRAMP 中等 FedRAMP 系统安全计划* [[3](gdpr-arc-Azure.md#3)]，请参阅“13.10 媒体保护 (MP)” | (5)(1)(f) |
 | ***保密性或保密协议 (6.10.2)*** | 客户应确定保密协议的必要性，或者有权访问个人数据的个人或对个人数据负有相关责任的个人的等同性。  | Microsoft 服务如何确保有权访问个人数据的个人承诺保密。<br>- *SOC 2 类型 2 审核报告* [[12](gdpr-arc-Azure.md#12)]，请参阅 CC1.4 pp72，SOC2 — 13 | (5)(1)(f)、(28)(3)(b)、(38)(5) |
 | ***保护公共网络上的应用服务 (6.11.1)*** | 客户应了解个人数据加密的要求，尤其是通过公共网络发送的情况。如果系统提供加密数据的机制，则客户应根据需要使用这些机制。 | Microsoft 服务为保护传输中的数据（包括数据加密）而采取的措施的说明、以及 Microsoft 服务在数据通过公用数据网络（包括任何加密措施）时如何保护可能包含个人数据的数据的说明。<br>- Azure 安全文档 [[2](gdpr-arc-Azure.md#2)] 请参阅[通过加密保护传输中的个人数据](https://docs.microsoft.com/azure/security/protect-personal-data-in-transit-encryption) | (5)(1)(f)、(32)(1)(a) |
-| ***安全系统工程原理 (6.11.2)*** | 客户应了解系统是如何从考虑保护个人数据的角度设计和策划的。 如果客户使用由第三方设计的系统，则他们有责任确保已慎重考虑此类保护措施。 | Microsoft 服务如何将个人数据保护原则纳入安全设计/工程原则的强制性部分。<br>- SOC 2 类型 2 审核报告 [12]，请参阅 CC7.1 pp90 和[什么是安全开发生命周期？](https://www.microsoft.com/sdl/) | (25)(1) |
-| ***供应商关系 (6.12)*** | 客户应确保任何信息安全和个人数据保护要求以及第三方责任均在合同信息或其他协议中得到解决。 协议还应给出处理说明。 | Microsoft 服务如何在我们与供应商达成的协议中指定安全和数据保护，以及我们如何确保这些协议得到有效执行。<br>- 谁可以访问你的数据和所依据的条款 [[7](gdpr-arc-Azure.md#7)] | (5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h)、(30)(2)(d)、(32)(1)(b) |
+| ***安全系统工程原理 (6.11.2)*** | 客户应了解系统是如何从考虑保护个人数据的角度设计和策划的。如果客户使用由第三方设计的系统，则他们有责任确保已慎重考虑此类保护措施。 | Microsoft 服务如何将个人数据保护原则纳入安全设计/工程原则的强制性部分。<br>- SOC 2 类型 2 审核报告 [12]，请参阅 CC7.1 pp90 和[什么是安全开发生命周期？](https://www.microsoft.com/sdl/) | (25)(1) |
+| ***供应商关系 (6.12)*** | 客户应确保任何信息安全和个人数据保护要求以及第三方责任均在合同信息或其他协议中得到解决。协议还应给出处理说明。 | Microsoft 服务如何在我们与供应商达成的协议中指定安全和数据保护，以及我们如何确保这些协议得到有效执行。<br>- 谁可以访问你的数据和所依据的条款 [[7](gdpr-arc-Azure.md#7)] | (5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h)、(30)(2)(d)、(32)(1)(b) |
 | ***信息安全事件管理和改进 (6.13.1)*** | 客户应具有确定何时发生个人数据泄露的流程。 | Microsoft 服务如何确定安全事件是否是个人数据泄露事件，以及我们如何向你传达泄露事件。<br>-*Azure 和 GDPR 规定的泄露通知* [[10](gdpr-arc-Azure.md#10)] | (33)(2) |
 | ***责任和过程（在信息安全事件期间）(6.13.2)*** | 客户应在涉及个人数据的数据泄露或安全事件期间了解并记录他们的职责。职责包括通知各相关方、与处理者或其他第三方进行通信，以及在客户组织内的职责。 | 如何在检测到安全事件或个人数据泄露时通知 Microsoft 服务。<br>-*Azure 和 GDPR 规定的泄露通知* [[10](gdpr-arc-Azure.md#10)] | (5)(1)(f)、(33)(1)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)、(34)(3)(a)、(34)(3)(b)、(34)(3)(c)、(34)(4) |
 | ***信息安全事件响应 (6.13.3)*** | 客户应具有确定何时发生个人数据泄露的流程。 | Microsoft 服务提供的信息说明，有助于你确定是否发生了个人数据泄露。<br>- *Azure 和 GDPR 规定的泄露通知* [[10](gdpr-arc-Azure.md#10)] | (33)(1)、(33)(2)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2) |
 | ***记录保护 (6.15.1)*** | 客户应了解与个人数据处理相关且需要维护的记录的相关要求。 | Microsoft 服务如何存储与个人数据处理相关的记录。<br>- Azure 安全文档之用户注册。<br>- Azure 安全文档 [[2](gdpr-arc-Azure.md#2)]，请参阅[通过 Azure 报告工具执行个人数据文档保护](https://docs.microsoft.com/azure/security/protection-personal-data-azure-reporting-tools) | (5)(2)、(24)(2)  |
-| ***独立审查信息安全 (6.15.2)*** | 客户应了解对个人数据处理安全性评估的要求。 这包括内部或外部审核或其他评估处理安全性的措施。 如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。 | Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br/>*Microsoft Online Services 条款、数据保护条款，请参阅“数据安全之审核合规性”*[[1](gdpr-arc-Azure.md#1)] | (32)(1)(d)、(32)(2) |
-| ***技术符合性审查 (6.15.3)*** | 客户应了解测试和评估处理个人数据安全性的要求。 这包括技术测试，如渗透测试。 如果客户使用第三方系统或处理者，则他们应了解他们在保护和测试安全方面承担的责任（例如管理配置以保护数据，然后测试这些配置设置）。 如果第三方负责安全性处理的全部或部分，则客户应该了解第三方为确保处理的安全性而进行的测试或评估。 | 如何基于标识的风险（包括由第三方发起的测试，以及技术测试类型和测试中任何可用的报表）对 Microsoft 服务测试安全性。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“数据安全之审核合规性”*[[1](gdpr-arc-Azure.md#1)]<br>- 有关外部认证的列表，请参阅 **Microsoft 信任中心合规性**产品 [[14](gdpr-arc-Azure.md#14)]<br>- 若要详细了解如何对应用程序执行渗透测试，请参阅 *Azure 安全文档* [[2](gdpr-arc-Azure.md#2)] [渗透测试](https://docs.microsoft.com/azure/security/azure-security-pen-testing) | (32)(1)(d)、(32)(2) |
+| ***独立审查信息安全 (6.15.2)*** | 客户应了解对个人数据处理安全性评估的要求。这包括内部或外部审核或其他评估处理安全性的措施。如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。 | Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br/>*Microsoft Online Services 条款、数据保护条款，请参阅“数据安全之审核合规性”*[[1](gdpr-arc-Azure.md#1)] | (32)(1)(d)、(32)(2) |
+| ***技术符合性审查 (6.15.3)*** | 客户应了解测试和评估处理个人数据安全性的要求。这包括技术测试，如渗透测试。如果客户使用第三方系统或处理者，则他们应了解他们在保护和测试安全方面承担的责任（例如管理配置以保护数据，然后测试这些配置设置）。如果第三方负责安全性处理的全部或部分，则客户应该了解第三方为确保处理的安全性而进行的测试或评估。 | 如何基于标识的风险（包括由第三方发起的测试，以及技术测试类型和测试中任何可用的报表）对 Microsoft 服务测试安全性。<br>- *Microsoft Online Services 条款、数据保护条款，请参阅“数据安全之审核合规性”*[[1](gdpr-arc-Azure.md#1)]<br>- 有关外部认证的列表，请参阅 **Microsoft 信任中心合规性**产品 [[14](gdpr-arc-Azure.md#14)]<br>- 若要详细了解如何对应用程序执行渗透测试，请参阅 *Azure 安全文档* [[2](gdpr-arc-Azure.md#2)] [渗透测试](https://docs.microsoft.com/azure/security/azure-security-pen-testing) | (32)(1)(d)、(32)(2) |
 
 ## <a name="6-bibliography-of-resources-and-links"></a>6. 资源和链接参考文献
 
 ||||
 |:-----|:-----|:-------|
 |**ID**|**说明/链接**|
-| 1 <a name="1"> </a> | [联机服务条款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
+| 1 <a name="1"> </a> | [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 | 2 <a name="2"></a>  | [Azure 安全文档](https://docs.microsoft.com/azure/security/)，请参阅治理和合规性，GDPR |
 | 3 <a name="3"> </a> | [FedRAMP 中等 FedRAMP 系统安全计划 (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e46a519a-bcf6-4dc2-8f60-6d0e4e00a85e&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a>   | [Microsoft 云安全策略](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)  |
@@ -138,7 +141,7 @@ ms.locfileid: "36982407"
 | 11 <a name="11"> </a> | [Azure 适用的客户数据保护影响评估关键信息](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 类型 2 审核报告 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure（全部）ISO/IEC 27001:2013 ISMS 适用性声明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Microsoft 信任中心合规性产品/服务](https://www.microsoft.com/trustcenter/compliance/complianceofferings)  |
+| 14 <a name="14"> </a> | [Microsoft 信任中心合规性产品/服务](offering-home.md)  |
 | 15 <a name="15"> </a> | [Intune 中的隐私和个人数据](https://review.docs.microsoft.com/intune/privacy-personal-data) |
 | 16 <a name="16"> </a> | [完全可下载的 Azure GDPR 控件集](https://aka.ms/GDPRControls) 或通过[合规性管理器工具](https://servicetrust.microsoft.com/ComplianceManager) |
 | 17 <a name="17"> </a> | [Microsoft DPO 信息](https://aka.ms/GDPRDPO) |

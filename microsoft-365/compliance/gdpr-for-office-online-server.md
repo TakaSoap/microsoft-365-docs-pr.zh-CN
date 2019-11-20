@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解如何解决本地 Exchange Server 中的 GDPR 要求。
-ms.openlocfilehash: 9b15934f598adcd692d8c47358db357bcea58814
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b1cf86beeeb195396e45e0bc262f1d1b81b21057
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074098"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749648"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>用于 Office Web Apps Server 和 Office Online Server 的 GDPR
 
-Office Online Server 和 Office Web Apps Server 遥测数据以 ULS 日志的形式存储。可以使用 [ULS 查看器](https://www.microsoft.com/en-us/download/details.aspx?id=44020)查看本地租户的 ULS 日志。
+Office Online Server 和 Office Web Apps Server 遥测数据以 ULS 日志的形式存储。可以使用 [ULS 查看器](https://www.microsoft.com/download/details.aspx?id=44020)查看本地租户的 ULS 日志。
 
 每个日志行都包含一个 CorrelationID。相关的日志行使用相同的 CorrelationID。每个 CorrelationID 都与一个 SessionID 绑定，并且一个 SessionID 可能与许多 CorrelationID 相关。每个 SessionID 可能与单 个UserID 相关，但某些会话可能是匿名的，因此没有关联的 UserID。因此，为了确定哪些数据与特定用户相关联，可以从单个 UserID 映射到与该用户相关联的 SessionID，从那些 SessionID 映射到相关联的 CorrelationID，以及从 CorrelationID 映射到这些相关性中的所有日志。请参阅下图了解不同 ID 之间的关系。
 

@@ -14,17 +14,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为 Microsoft 365 测试环境。
-ms.openlocfilehash: 7fc3035db5e0b6e924d8b55e81cbee5eca38bfbf
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 69e269de55aa7cd06dc5e26edbd29ae981fb9683
+ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640711"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38694079"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 测试环境中的模拟跨界虚拟网络
 
- **摘要：** 在 Microsoft Azure 中创建模拟跨界虚拟网络作为开发/测试环境。
-  
+*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+
 本文逐步介绍了如何使用两个 Azure 虚拟网络来创建 Microsoft Azure 模拟混合云环境。下面是生成的配置。 
   
 ![第 3 阶段的模拟跨界虚拟网络开发/测试环境，XPrem VNet 中有 DC2 虚拟机](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
@@ -140,7 +140,7 @@ $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name XPrem -ResourceGroupName $rgName
 $pip=New-AzPublicIpAddress -Name DC2-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name DC2-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress 192.168.0.4
-$vm=New-AzVMConfig -VMName DC2 -VMSize Standard_A1
+$vm=New-AzVMConfig -VMName DC2 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for DC2."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName DC2 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"

@@ -9,14 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3269eb851ab21e98126bff6fbbf92a230450fdb2
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: a92ec4a54b3b79ed4cffbcac147e15360907af68
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422409"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749639"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>数据保护影响评估：使用 Microsoft Azure 的数据控制者指南
 
@@ -51,11 +53,11 @@ GDPR 第 35 条要求数据控制者来创建数据保护影响评估 (DPIA)，�
 ||||
 |:---|:---|:--|
 |**DPIA 的元素**|**Microsoft Azure 的相关信息**| |
-| 处理目的 | 使用 Microsoft Azure 处理数据的目的由实施、配置和使用它的控制者确定。 <br><br> 正如[联机服务条款 (OST)](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) 中所规定，作为数据处理者，Microsoft 处理客户数据只是为了向客户（即数据控制者）提供所请求的服务。Microsoft 不会将客户数据或相关信息用于任何广告或类似商业目的。 |   |
-| 处理的个人数据类别  | *客户数据* — 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文本、声音、视频或图像文件以及软件。  客户数据包括 (1) 最终用户的身份信息（例如，Azure Active Directory 中的用户名和联系人信息）和客户上传到特定服务或者在特定服务中创建的客户内容（例如，Azure 存储帐户中的客户内容，Azure SQL 数据库的客户内容，或 Azure 虚拟机中的客户虚拟机映像）。<br><br> *系统生成日志* — Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 系统生成日志主要包括化名数据，例如唯一标识符（它由系统生成，无法单独识别个人，但可用于向用户提供企业服务）。  系统生成日志还可能包含最终用户的身份信息，例如用户名。 <br><br> *支持数据* — 客户或代表客户通过与 Microsoft 签订协定以获取联机服务技术支持而提供给 Microsoft 的数据（或客户授权 Microsoft 从联机服务获取的数据）。 <br><br> 有关 Azure 所处理数据的其他详细信息，请参阅[联机服务条款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)和 [Microsoft 信任中心](https://www.microsoft.com/trustcenter)。</p> |   |
+| 处理目的 | 使用 Microsoft Azure 处理数据的目的由实施、配置和使用它的控制者确定。 <br><br> 正如[联机服务条款 (OST)](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) 中所规定，作为数据处理者，Microsoft 处理客户数据只是为了向客户（即数据控制者）提供所请求的服务。Microsoft 不会将客户数据或相关信息用于任何广告或类似商业目的。 |   |
+| 处理的个人数据类别  | *客户数据* — 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文本、声音、视频或图像文件以及软件。  客户数据包括 (1) 最终用户的身份信息（例如，Azure Active Directory 中的用户名和联系人信息）和客户上传到特定服务或者在特定服务中创建的客户内容（例如，Azure 存储帐户中的客户内容，Azure SQL 数据库的客户内容，或 Azure 虚拟机中的客户虚拟机映像）。<br><br> *系统生成日志* — Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 系统生成日志主要包括化名数据，例如唯一标识符（它由系统生成，无法单独识别个人，但可用于向用户提供企业服务）。  系统生成日志还可能包含最终用户的身份信息，例如用户名。 <br><br> *支持数据* — 客户或代表客户通过与 Microsoft 签订协定以获取联机服务技术支持而提供给 Microsoft 的数据（或客户授权 Microsoft 从联机服务获取的数据）。 <br><br> 有关 Azure 所处理数据的其他详细信息，请参阅[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)和 [Microsoft 信任中心](https://www.microsoft.com/trustcenter)。</p> |   |
 | 数据保留 | Microsoft 将在客户有权使用该联机服务期间保留和处理客户数据，直到客户检索所有客户数据或根据 OST 的条款删除所有客户数据。  在客户订阅期内，客户可随时访问和提取每个联机服务中存储的客户数据。 除免费试用版和领英服务外，如果客户订阅到期或终止，帐户功能将受到限制，Microsoft 会将该帐户存储在该联机服务中的客户数据保留 90 天，便于客户提取数据。 90 天保留期结束后，Microsoft 将禁用客户帐户并删除客户数据。 客户可使用 [Azure 数据使用者请求 GDPR 文档](https://servicetrust.microsoft.com/ViewPage/GDPRDSR)中介绍的功能根据数据使用者请求删除个人数据。 |   |
 | 个人数据的位置和传输 | 客户能够在指定的[地理区域](https://azure.microsoft.com/global-infrastructure/)中预配静态的客户数据，但 OST 中规定了一些例外情况。有关服务部署和数据驻留的其他详细信息，请参阅 [Azure 全球基础结构](https://azuredatacentermap.azurewebsites.net/)网页。<br><br>对于来自欧洲经济区和瑞士的个人数据，Microsoft 将确保在向第三方国家/地区或国际组织传输的个人数据时实施 GDPR 第 46 条中规定的相应安全措施。除 Microsoft 根据处理者标准合同条款和其他模板合同所做的承诺外，Microsoft 还获得了欧盟-美国和瑞士-美国隐私防护框架认证并践行其承诺。 |   |
-| 与第三方分享的数据 | Microsoft 会与充当下级处理者（即处理个人数据的分包商）角色的第三方分享数据，以实现客户和技术支持、服务维护和其他操作。 Microsoft 将向其传输客户数据或支持数据的任何分包商都会与 Microsoft 签订书面协议，该协议的效力不低于[联机服务条款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)中的数据保护条款。 与其分享客户数据或支持数据的所有第三方分包商都包括在[分包商列表](https://www.microsoft.com/trustcenter/privacy/who-can-access-your-data-and-on-what-terms#subcontractors)中（参阅“我们限制分包商的访问”）。 <br><br> 《联机服务条款》中还规定了 Microsoft 如何回应执法机构和第三方请求客户数据和支持数据的情况。 Microsoft 会尝试将执法机构或第三方的请求直接转达客户，除非法律禁止。 |   |
+| 与第三方分享的数据 | Microsoft 会与充当下级处理者（即处理个人数据的分包商）角色的第三方分享数据，以实现客户和技术支持、服务维护和其他操作。 Microsoft 将向其传输客户数据或支持数据的任何分包商都会与 Microsoft 签订书面协议，该协议的效力不低于[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)中的数据保护条款。 与其分享客户数据或支持数据的所有第三方分包商都包括在[分包商列表](https://www.microsoft.com/trustcenter/privacy/who-can-access-your-data-and-on-what-terms#subcontractors)中（参阅“我们限制分包商的访问”）。 <br><br> 《联机服务条款》中还规定了 Microsoft 如何回应执法机构和第三方请求客户数据和支持数据的情况。 Microsoft 会尝试将执法机构或第三方的请求直接转达客户，除非法律禁止。 |   |
 | 数据使用者权力 | 作为数据处理者，Microsoft 会向客户（即数据控制者）提供其数据使用者的个人数据，并赋予客户在数据使用者依据 GDPR 行使权力时满足其请求的能力。Microsoft 以符合产品功能和其数据处理者角色的方式实现此目标。如果 Microsoft 收到来自客户数据使用者的请求（请求依据 GDPR 行使其一项或多项权力），会将请求转发给数据控制者。<br><br>[Azure 数据使用者请求 GDPR 文档](https://servicetrust.microsoft.com/ViewPage/GDPRDSR)介绍如何使用 Azure 中的功能支持数据使用者权力。 |   |
 | 对与处理操作的目的相关的必要性和合理性的评估 | 这种评估将取决于数据控制者的处理需求和目的。<br><br>为了向数据控制者提供服务，Microsoft 需要进行某些处理，此类是必要且合理的。Microsoft 在 OST 中作此承诺。 | |
 | 对数据使用者的权力和自由带来的风险的评估 | 使用 Microsoft Azure 对数据使用者的权力和自由带来的关键风险取决于数据控制者实施、配置和使用 Microsoft Azure 的方式和背景。<br><br> 然而，与其他所有服务一样，该服务中保存的个人数据可能存在未经授权的访问或意外泄漏的风险。OST 中说明了 Microsoft 用于应对此类风险的措施，下文将进一步详细讨论。 | |

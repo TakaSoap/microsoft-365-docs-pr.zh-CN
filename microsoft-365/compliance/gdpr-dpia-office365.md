@@ -9,14 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: aa7df98b718e950a895cd1ff369e94707f81954a
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: 2dd9363d0adf7604d5153781d2843a9e2531ce0e
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422369"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749637"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>数据保护影响评估：使用 Microsoft Office 365 的数据控制者指南 
 
@@ -53,11 +55,11 @@ GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估�
 |||
 |:-----|:-----|
 |**风险因素**|**Office 365 的相关信息**|
-|处理目的|使用 Office 365 处理数据的目的由实现、配置和使用它的控制者确定。 <br><br> 正如[联机服务条款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)中所规定，作为数据处理者，Microsoft 处理客户数据只是为了向客户（即数据控制者）提供所请求的服务，包括与提供这些服务一致的目的。Microsoft 不会将客户数据或相关信息用于任何广告或类似商业目的。 |
+|处理目的|使用 Office 365 处理数据的目的由实现、配置和使用它的控制者确定。 <br><br> 正如[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)中所规定，作为数据处理者，Microsoft 处理客户数据只是为了向客户（即数据控制者）提供所请求的服务，包括与提供这些服务一致的目的。Microsoft 不会将客户数据或相关信息用于任何广告或类似商业目的。 |
 |处理的个人数据类别|**客户数据：** 这是客户或代表客户通过使用 Microsoft 联机服务向 Microsoft 提供的所有数据，包括文本、声音、视频或图像文件和软件。 它包括客户上传用于存储或处理的数据以及定制数据。 Office 365 中处理的客户数据示例包括 Exchange Online 中的电子邮件内容，以及存储在 SharePoint Online 或 OneDrive for Business 中的文档或文件。 <br><br> **系统生成的日志数据：** 这是 Microsoft 为运行服务而生成的数据，例如使用或性能数据。 这些数据大多包含由 Microsoft 生成的假名标识符。 <br><br> **支持数据：** 客户或代表客户通过与 Microsoft 签订协定以获取联机服务技术支持而提供给 Microsoft 的数据（或客户授权 Microsoft 从联机服务获取的数据）。 <br><br> 客户数据、系统生成的数据和支持数据不包括管理员和数据，例如客户管理员联系信息、订阅信息和付款信息，Microsoft 在其作为数据控制者的角色中收集和处理这些数据，这不在本文档的讨论范围内。 |
 |数据保留|**客户数据：** 如联机服务条款中的数据保护条款所述，Microsoft 将在客户有权使用服务的期间保留客户数据，直到按照客户的指示或联机服务条款删除或返回所有客户数据为止。 <br><br> 在客户订阅期间，客户可随时访问、提取和删除存储在服务中的客户数据，在某些情况下，还可访问旨在降低无意删除风险的特定产品功能（例如，Exchange 恢复的项目文件夹），产品文档对此进行了详细介绍。 <br><br> 除了免费试用和 LinkedIn 服务外，Microsoft 将在客户订阅到期或终止后的 90 天内，在功能受限的帐户中保留存储在联机服务中的客户数据，以便客户能够提取该数据。在 90 天保留期结束后，Microsoft 将禁用客户的帐户并删除客户数据。 <br><br> **系统生成的日志数据：** 在收集后，此数据的默认保留期限为长达 180 天，为了确保服务的安全性或履行法律或监管义务，可能会将该数据保留更长时间。 <br><br> 如需进一步了解可让客户随时删除在服务中维护的个人数据的服务功能，请参阅 [Office 365 数据主体请求指南](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests?toc=/microsoft-365/enterprise/toc.json)。|
 |个人数据的位置和传输|如联机服务条款中的数据保护条款所述，如果客户在澳大利亚、加拿大、欧盟、法国、印度、日本、韩国、英国或美国配置 Office 365 实例，Microsoft 将仅在该位置存储以下静态客户数据：(1) Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）；(2) SharePoint Online 网站内容和该网站中存储的文件；(3) 上传到 OneDrive for Business 的文件；以及 (4) 上传到 Project Online 的项目内容。 <br><br> 对于来自欧洲经济区和瑞士的其他类型的个人数据，Microsoft 将确保在向第三方国家/地区或国际组织传输的个人数据时实施 GDPR 第 46 条中规定的相应安全措施。除 Microsoft 根据处理者标准合同条款和其他模板合同所做的承诺外，Microsoft 还获得了欧盟-美国和瑞士-美国隐私防护框架认证并践行其承诺。 |
-|与第三方下级处理者分享的数据|Microsoft 会与充当下级处理者角色的第三方分享数据，以实现客户和技术支持、服务维护和其他操作。Microsoft 将向其传输客户数据或支持数据的任何分包商都会与 Microsoft 签订书面协议，该协议的效力不低于[联机服务条款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)中的数据保护条款。与其分享来自 Microsoft 核心联机服务的客户数据的所有第三方下级处理者都包含在[联机服务分包商列表](https://aka.ms/Online_Serv_Subcontractor_List)中。可以访问支持数据的所有第三方下级处理者（包括客户在其支持互动期间选择共享的客户数据）都包含在 [Microsoft 商业支持承包商列表](http://aka.ms/servicesapprovedsuppliers)中。 |
+|与第三方下级处理者分享的数据|Microsoft 会与充当下级处理者角色的第三方分享数据，以实现客户和技术支持、服务维护和其他操作。Microsoft 将向其传输客户数据或支持数据的任何分包商都会与 Microsoft 签订书面协议，该协议的效力不低于[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)中的数据保护条款。与其分享来自 Microsoft 核心联机服务的客户数据的所有第三方下级处理者都包含在[联机服务分包商列表](https://aka.ms/Online_Serv_Subcontractor_List)中。可以访问支持数据的所有第三方下级处理者（包括客户在其支持互动期间选择共享的客户数据）都包含在 [Microsoft 商业支持承包商列表](https://aka.ms/servicesapprovedsuppliers)中。 |
 |与独立第三方分享的数据|某些 Office 365 产品包含扩展性选项，可根据控制者的选择与独立第三方共享数据。例如，Exchange Online 是一种可扩展的平台，它允许第三方加载项或连接器与 Outlook 集成并扩展 Outlook 的功能集。这些加载项或连接器的第三方提供商独立于 Microsoft，并且它们必须由使用其加载项或连接器帐户进行身份验证的用户或企业管理员来启用。 <br><br> 除非法律要求，否则 Microsoft 不会向执法部门公开客户数据或支持数据。如果执法部门联系 Microsoft 要求提供客户数据或支持数据，Microsoft 将尝试重定向执法部门，直接从客户处请求该数据。如果强迫向执法部门公开客户数据或支持数据，Microsoft 将立即通知客户并提供所需副本（除非法律禁止这样做）。 <br><br> 收到其他任何第三方对客户数据或支持数据的请求后，Microsoft 将立即通知客户（除非法律严禁这样做）。除非法律要求配合，否则 Microsoft 将拒绝请求。如果请求有效，Microsoft 将尝试重定向第三方，直接从客户处请求该数据。 |
 |数据使用者权力|当以处理者的身份操作时，Microsoft 向客户（即数据控制者）提供其数据使用者的个人数据以及依据 GDPR 行使权力时满足数据使用者请求的能力。我们以与产品功能和我们作为处理者的角色一致的方式完成此操作。如果我们收到来自客户数据使用者的请求，请求依据 GDPR 行使其一项或多项权力，我们将重定向数据使用者，使其直接向数据控制者提出请求。 <br><br> [Office 365 数据主体请求指南](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests?toc=/microsoft-365/enterprise/toc.json)向数据控制者介绍了如何使用 Office 365 中的功能来支持数据主体权限。 |
 |对与处理操作的目的相关的必要性和合理性的评估|这种评估将取决于控制者的处理需求和目的。 <br><br> 为了向数据控制者提供服务，Microsoft 需要进行某些处理，此类是必要且合理的。 |

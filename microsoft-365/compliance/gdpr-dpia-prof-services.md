@@ -10,14 +10,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 61b39db3280d6b55a04a5962f0ca2a7e56cb43c8
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: ff9306aad0a4dcd80971a8429e62e79368969e34
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422349"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749655"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>数据保护影响评估：使用 Microsoft 专业服务的数据控制者指南
 
@@ -65,14 +67,14 @@ GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估�
 |||
 |:-----|:-----|
 |**DPIA 的元素** |**专业服务的相关信息**|
-|处理目的|使用专业服务处理数据的目的由实施、配置和使用它的控制者确定。 <br><br> 正如 [Microsoft 专业服务数据保护附录](http://aka.ms/professionalservicesdpa) (MPSDPA) 中所规定，作为数据处理者，Microsoft 处理支持和咨询数据只是为了向客户（即数据控制者）提供请求的服务。Microsoft 不会将支持和咨询数据或从中派生的信息用于任何广告或商业目的。 |
-|使用专业服务处理数据的目的由实施、配置和使用它的控制者确定。|正如 [Microsoft 专业服务数据保护附录](http://aka.ms/professionalservicesdpa) (MPSDPA) 中所规定，作为数据处理者，Microsoft 处理支持和咨询数据只是为了向客户（即数据控制者）提供请求的服务。Microsoft 不会将支持和咨询数据或从中派生的信息用于任何广告或类似商业目的。|
+|处理目的|使用专业服务处理数据的目的由实施、配置和使用它的控制者确定。 <br><br> 正如 [Microsoft 专业服务数据保护附录](https://aka.ms/professionalservicesdpa) (MPSDPA) 中所规定，作为数据处理者，Microsoft 处理支持和咨询数据只是为了向客户（即数据控制者）提供请求的服务。Microsoft 不会将支持和咨询数据或从中派生的信息用于任何广告或商业目的。 |
+|使用专业服务处理数据的目的由实施、配置和使用它的控制者确定。|正如 [Microsoft 专业服务数据保护附录](https://aka.ms/professionalservicesdpa) (MPSDPA) 中所规定，作为数据处理者，Microsoft 处理支持和咨询数据只是为了向客户（即数据控制者）提供请求的服务。Microsoft 不会将支持和咨询数据或从中派生的信息用于任何广告或类似商业目的。|
 |处理的个人数据类别|支持和咨询数据是指由客户或代表客户按照与 Microsoft 达成的有关获取专业服务和支持的协议，提供给 Microsoft 的所有数据（或客户授权 Microsoft 通过联机服务获取的数据），包括所有文本、音频、视频、图像文件或软件。这可能包括通过电话、聊天、电子邮件或 Web 表单收集的信息。它可能包括问题描述、为解决支持问题而传输给 Microsoft 的文件、自动故障排除程序或经客户许可通过远程访问客户系统收集的信息。 <br><br> 客户数据和支持数据不包括客户合同和帐单数据，例如订阅信息和付款信息，Microsoft 在其作为数据控制者的角色中收集和处理这些数据，这不在本文档的讨论范围内。 |
 |数据保留|Microsoft 将在客户参与期间保留支持和咨询数据，并在参与结束后保留一段时间，以确保服务的质量和连续性。 例如，在关闭支持案例之后，数据通常会保留一段时间，以确保在问题重新出现和重新打开案例时能够引用该数据。 <br><br> 当专业服务提供支持时，将在支持案例关闭时定义参与期限。当专业服务提供咨询服务时，参与期限通常由工作单定义。在其他情况下，参与期限由业务关系的维持状况来定义。在所有情况下，都可根据请求或按照客户的指示，使用专业服务*数据主体权限指南*中所述的功能来删除或返回支持和咨询数据，而不会无故拖延。 |
-|个人数据的位置和传输|由于专业服务的性质，包括需要提供全天候支持，可能会在全球范围内传输数据。可根据要求提供 Microsoft 开展运营的位置列表。对于咨询服务，如果在工作单中同意，则数据可以留在国内。 <br><br> 对于来自欧洲经济区和瑞士的个人数据，Microsoft 将确保在向第三方国家/地区或国际组织传输的个人数据时实施 GDPR 第 46 条中规定的相应安全措施。除 Microsoft 根据处理者标准合同条款和其他模板合同所做的承诺（如 [MPSDPA](http://aka.ms/professionalservicesdpa) 中所述）外，Microsoft 还获得了欧盟-美国和瑞士-美国隐私防护框架认证并践行其承诺。|
-|与第三方分享的数据|Microsoft 会与充当下级处理者角色的第三方分享数据，以实现客户和技术支持、服务维护和其他操作。Microsoft 将向其传输支持和咨询数据的任何分包商都会与 Microsoft 签订书面协议，该协议的效力不低于 [MPSDPA](http://aka.ms/professionalservicesdpa) 中的数据保护条款。根据 [MPSDPA](http://aka.ms/professionalservicesdpa) 的要求与其分享支持和咨询数据的所有第三方下级处理者都包含在 [Microsoft 商业支持承包商列表](http://aka.ms/servicesapprovedsuppliers)中。 <br><br> 除非法律要求，否则 Microsoft 不会向执法部门公开支持和咨询数据。如果执法部门联系 Microsoft 要求提供支持和咨询数据，Microsoft 将尝试重定向执法部门，直接从客户处请求该数据。如果强迫向执法部门公开支持和咨询数据，Microsoft 将立即通知客户并提供所需副本（除非法律禁止这样做）。 <br><br> 收到其他任何第三方对支持和咨询数据的请求后，Microsoft 将立即通知客户（除非法律严禁这样做）。除非法律要求配合，否则 Microsoft 将拒绝请求。如果请求有效，Microsoft 将尝试重定向第三方，直接从客户处请求该数据。 |
+|个人数据的位置和传输|由于专业服务的性质，包括需要提供全天候支持，可能会在全球范围内传输数据。可根据要求提供 Microsoft 开展运营的位置列表。对于咨询服务，如果在工作单中同意，则数据可以留在国内。 <br><br> 对于来自欧洲经济区和瑞士的个人数据，Microsoft 将确保在向第三方国家/地区或国际组织传输的个人数据时实施 GDPR 第 46 条中规定的相应安全措施。除 Microsoft 根据处理者标准合同条款和其他模板合同所做的承诺（如 [MPSDPA](https://aka.ms/professionalservicesdpa) 中所述）外，Microsoft 还获得了欧盟-美国和瑞士-美国隐私防护框架认证并践行其承诺。|
+|与第三方分享的数据|Microsoft 会与充当下级处理者角色的第三方分享数据，以实现客户和技术支持、服务维护和其他操作。Microsoft 将向其传输支持和咨询数据的任何分包商都会与 Microsoft 签订书面协议，该协议的效力不低于 [MPSDPA](https://aka.ms/professionalservicesdpa) 中的数据保护条款。根据 [MPSDPA](https://aka.ms/professionalservicesdpa) 的要求与其分享支持和咨询数据的所有第三方下级处理者都包含在 [Microsoft 商业支持承包商列表](https://aka.ms/servicesapprovedsuppliers)中。 <br><br> 除非法律要求，否则 Microsoft 不会向执法部门公开支持和咨询数据。如果执法部门联系 Microsoft 要求提供支持和咨询数据，Microsoft 将尝试重定向执法部门，直接从客户处请求该数据。如果强迫向执法部门公开支持和咨询数据，Microsoft 将立即通知客户并提供所需副本（除非法律禁止这样做）。 <br><br> 收到其他任何第三方对支持和咨询数据的请求后，Microsoft 将立即通知客户（除非法律严禁这样做）。除非法律要求配合，否则 Microsoft 将拒绝请求。如果请求有效，Microsoft 将尝试重定向第三方，直接从客户处请求该数据。 |
 |数据使用者权力|当以处理者的身份操作时，Microsoft 向客户（即数据控制者）提供其数据使用者的个人数据以及依据 GDPR 行使权力时满足数据使用者请求的能力。我们以与产品功能和我们作为处理者的角色一致的方式完成此操作。如果我们收到来自客户数据使用者的请求，请求依据 GDPR 行使其一项或多项权力，我们将重定向数据使用者，使其直接向数据控制者提出请求。 <br><br> *专业服务数据主体请求 GDPR 文档*介绍了客户如何在专业服务中履行其数据主体权利和义务。 |
-对与处理操作的目的相关的必要性和合理性的评估|这种评估将取决于控制者的处理需求和目的。 <br><br> 为了向数据控制者提供服务，Microsoft 需要进行某些处理，此类是必要且合理的。Microsoft 在 [MPSDPA](http://aka.ms/professionalservicesdpa) 中作此承诺。 |
+对与处理操作的目的相关的必要性和合理性的评估|这种评估将取决于控制者的处理需求和目的。 <br><br> 为了向数据控制者提供服务，Microsoft 需要进行某些处理，此类是必要且合理的。Microsoft 在 [MPSDPA](https://aka.ms/professionalservicesdpa) 中作此承诺。 |
 |对数据使用者的权力和自由带来的风险的评估|使用专业服务对数据使用者的权力和自由带来的关键风险取决于数据控制者实施、配置和使用专业服务以及由专业服务提供的任何解决方案的方式和背景。 <br><br> 然而，与其他所有服务一样，该服务中保存的个人数据可能存在未经授权的访问或意外泄漏的风险。下面介绍 Microsoft 所采取的用来应对此类风险的措施。 |
 | 应对风险的措施（包括保护措施、安全措施和机制），以确保对个人数据的保护并证明符合此 GDPR 的规定（将数据使用者和其他相关人员的合法权益考虑在内）。 |Microsoft 致力于帮助保护客户的信息安全。 按照 GDPR 第 32 条的规定，Microsoft 已采取并且将维持和遵循适当的技术和组织措施，这些措施旨在防止支持和咨询数据意外泄露、未经授权或非法访问、公开、篡改、丢失或损坏。 <br><br> 此外，Microsoft 履行 GDPR 规定的适用于数据处理者的所有其他义务，包括但不限于数据保护影响评估和记录保存。 |
 

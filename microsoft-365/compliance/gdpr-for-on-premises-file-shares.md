@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解如何解决本地 Windows Server 文件共享中的 GDPR 要求。
-ms.openlocfilehash: b5d5023ec8a052dc51575fa01f9cb77c4bf001c4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b57bff104539691ca53c3c90dc676b7c0769743
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074090"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749653"
 ---
 # <a name="gdpr-for-on-premises-windows-server-file-shares"></a>用于本地 Windows Server 文件共享的 GDPR
 
@@ -51,6 +51,6 @@ ms.locfileid: "37074090"
 
     -   要为数据主体请求查找个人数据，请使用 Azure 信息保护扫描程序。还可以配置 SharePoint Server 搜索以爬网文件共享。
 
-有关使用 Azure 信息保护扫描程序查找和标记个人数据的详细信息，请参阅位于 [http://aka.ms/gdprpartners](<http://aka.ms/gdprpartners>) 中的 Microsoft GDPR 数据发现工具包。
+有关使用 Azure 信息保护扫描程序查找和标记个人数据的详细信息，请参阅位于 [https://aka.ms/gdprpartners](<https://aka.ms/gdprpartners>) 中的 Microsoft GDPR 数据发现工具包。
 
-有关配置条件扫描程序和使用 Office 365 数据丢失防护 (DLP) 敏感信息类型的信息，请参阅[如何配置 Azure 信息保护的自动和建议分类的条件](https://docs.microsoft.com/zh-CN/information-protection/deploy-use/configure-policy-classification)。请注意，新的 Office 365 敏感信息类型不会立即可供扫描程序使用，并且自定义敏感信息类型不能与扫描程序一起使用。
+有关配置条件扫描程序和使用 Office 365 数据丢失防护 (DLP) 敏感信息类型的信息，请参阅[如何配置 Azure 信息保护的自动和建议分类的条件](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification)。请注意，新的 Office 365 敏感信息类型不会立即可供扫描程序使用，并且自定义敏感信息类型不能与扫描程序一起使用。

@@ -9,14 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7b42333f23e674af07bf8acc15069d04605c5e84
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: a0d261616446e94cb6d39ec3e9d67d6d3e3fe0c3
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422419"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749666"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Microsoft 支持和专业服务责任就绪清单
 
@@ -89,7 +91,7 @@ ms.locfileid: "37422419"
 | ***确定信息安全管理系统的范围（5.2.3、5.2.4）*** | 作为客户拥有的任何整体安全或隐私程序的一部分，它们应包括与之相关的个人数据处理和要求。 | Microsoft 服务如何在信息安全管理和隐私计划中纳入个人数据处理。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- ISO 27001 审核报告 [[11](gdpr-arc-prof-services.md#11)] | (32)(2) |
 | ***规划 (5.3)***| 客户应将个人数据处理视为他们完成的任何风险评估的一部分，并在他们认为有必要以减轻他们控制的个人数据相关风险时采取控制措施。 | Microsoft 服务如何在整体安全和隐私计划中纳入个人数据处理风险。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)] | (32)(1)(b)、(32)(2) |
 | ***信息安全策略 (6.2)*** | 客户应该加强任何现有的信息安全政策以将个人数据保护包括在内，其中包括遵守任何适用法律所必需的策略。| 与信息安全和任何个人信息保护措施相关的 Microsoft 策略。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- ISO 27001 审核报告 [[11](gdpr-arc-prof-services.md#11)] | 24(2) |
-| ***信息安全组织客户注意事项 (6.3)*** | 客户应在其组织内定义个人数据的安全和保护职责。 这包括建立特定角色来监督隐私相关事宜，包括 DPO。 应提供适当的培训和管理支持来支持这些角色。 | Microsoft 发布了以下相关信息：Microsoft 数据保护管理人员及其职责性质、报告结构和联系信息。<br>- Microsoft DPO 信息 [[13](gdpr-arc-prof-services.md#13)] | (37)(1)(a)、(37)(1)(b)、(37)(1)(c)、(37)(2)、(37)(3)、(37)(4)、(37)(5)、(37)(6)、(37)(7)、(38)(1)、(38)(2)、(38)(3)、(38)(4)、(38)(5)、(38)(6)、(39)(1)(a)、(39)(1)(b)、(39)(1)(c)、(39)(1)(d)、(39)(1)(e)、(39)(2) |
+| ***信息安全组织客户注意事项 (6.3)*** | 客户应在其组织内定义个人数据的安全和保护职责。这包括建立特定角色来监督隐私相关事宜，包括 DPO。应提供适当的培训和管理支持来支持这些角色。 | Microsoft 发布了以下相关信息：Microsoft 数据保护管理人员及其职责性质、报告结构和联系信息。<br>- Microsoft DPO 信息 [[13](gdpr-arc-prof-services.md#13)] | (37)(1)(a)、(37)(1)(b)、(37)(1)(c)、(37)(2)、(37)(3)、(37)(4)、(37)(5)、(37)(6)、(37)(7)、(38)(1)、(38)(2)、(38)(3)、(38)(4)、(38)(5)、(38)(6)、(39)(1)(a)、(39)(1)(b)、(39)(1)(c)、(39)(1)(d)、(39)(1)(e)、(39)(2) |
 | ***人员安全 (6.4)*** | 客户应确定并分配提供与保护个人数据相关的相关培训的责任。 | 有关 Microsoft 数据保护管理人员角色及其职责性质、报告结构和联系信息的概述。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- 培训和意识计划说明 [[3](gdpr-arc-prof-services.md#3)] | (39)(1)(b) |
 | ***信息分类 (6.5.1)*** | 客户应将个人数据明确纳入数据分类方案。 | Microsoft 如何在数据分类、标记和跟踪信息中纳入个人数据。<br>- Microsoft 专业服务适用的客户数据保护影响评估关键信息 [[10](gdpr-arc-prof-services.md#10)] | (39)(1)(b) |
 | ***管理可移动媒体 (6.5.2)*** | 客户应确定使用可移动媒体的内部策略，因为这涉及个人数据保护（例如加密设备）。 | Microsoft 服务如何保护任何可移动媒体上的个人信息安全性。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 专业服务控件集 [[5](gdpr-arc-prof-services.md#5)] | (32)(1)(a)、(5)(1)(f) |
@@ -101,7 +103,7 @@ ms.locfileid: "37422419"
 | ***安全登录过程 (6.6.5)*** | 客户应利用服务中提供的机制来确保必要时为其用户提供安全登录功能。 | Microsoft 服务如何支持与个人数据相关的内部访问控制策略。<br>- 谁可以访问你的数据和所依据的条款 [[7](gdpr-arc-prof-services.md#7)] | (5)(1)(f) |
 | ***加密 (6.7)*** | 客户应确定哪些数据需要加密，以及他们正在使用的服务是否提供这种功能。客户应根据需要通过可用的工具来使用加密。 | Microsoft 服务如何支持加密和假名化，以减少个人数据处理风险。<br>- Microsoft 信任中心上的 Microsoft 专业服务安全文档 [[2](gdpr-arc-prof-services.md#2)] | (32)(1)(a) |
 | ***安全处置或重新使用设备 (6.8.1)*** | 在客户使用云计算服务（PaaS、SaaS、IaaS）的情况下，他们应了解云提供商如何确保在将存储空间分配给其他客户之前将个人数据从该空间中清除。 | Microsoft 服务如何在结合使用专业服务和 Microsoft Azure 云计算服务时，确保在设备转让或重用前从存储设备中清除个人数据。<br>- Microsoft 专业服务数据安全（数据清理和泄露）[[4](gdpr-arc-prof-services.md#4)] | (5)(1)(f) |
-| ***清除桌面和清除屏幕策略 (6.8.2)*** | 客户应考虑显示个人数据的硬拷贝材料相关的风险，并可能限制此类材料的创建。 如果正在使用的系统提供限制此类材料的功能（例如，设置为防止打印或复制/粘贴敏感数据），客户应根据需要使用这些功能。 | Microsoft 管理硬拷贝所采取的措施。<br>- Microsoft 在内部维护这些控件，请参阅 Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 专业服务 GDPR 控件集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
+| ***清除桌面和清除屏幕策略 (6.8.2)*** | 客户应考虑显示个人数据的硬拷贝材料相关的风险，并可能限制此类材料的创建。如果正在使用的系统提供限制此类材料的功能（例如，设置为防止打印或复制/粘贴敏感数据），客户应根据需要使用这些功能。 | Microsoft 管理硬拷贝所采取的措施。<br>- Microsoft 在内部维护这些控件，请参阅 Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 专业服务 GDPR 控件集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
 | ***分离开发、测试和运行环境 (6.9.1)*** | 客户应考虑在组织内的开发和测试环境中使用个人数据的影响。 | Microsoft 如何确保个人数据在开发和测试环境中受到保护。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 专业服务控件集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
 | ***信息备份 (6.9.2)*** | 客户应确保他们使用系统提供的功能来创建数据冗余并在必要时进行测试。 | Microsoft 如何确保可能包含个人数据的数据的可用性，如何确保已还原数据的准确性以及 Microsoft 服务提供的可备份和还原数据的工具和过程的准确性。<br>- Microsoft 企业版业务连续性管理文档 [[6](gdpr-arc-prof-services.md#6)] | (32)(1)(c)、(5)(1)(f) |
 | ***事件日志记录 (6.9.3)*** | 客户应了解系统提供的记录功能，并利用这些功能来确保他们可以记录他们认为必要的与个人数据相关的操作。 | Microsoft 服务为你记录的数据包括用户活动、异常、错误和信息安全事件，以及如何访问这些日志以作为保存记录的一部分使用。<br>- Microsoft 专业服务安全文档 [[2](gdpr-arc-prof-services.md#2)]<br>- Microsoft 专业服务控件集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
@@ -109,21 +111,21 @@ ms.locfileid: "37422419"
 | ***信息传输策略和过程 (6.10.)*** | 对于个人数据可能在物理媒体上传输（例如在服务器或设施之间移动的硬盘）的情况，客户应有应对过程。这些包括日志、授权和跟踪。如果第三方或其他处理者正在传送物理介质，则客户应确保该组织有应对流程来确保个人数据的安全。 | Microsoft 服务如何传输可能包含个人数据的物理介质，包括传输时间以及为保护数据而采取的保护措施等情况。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 专业服务控件集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
 | ***保密性或保密协议 (6.10.2)*** | 客户应确定保密协议的必要性，或者有权访问个人数据的个人或对个人数据负有相关责任的个人的等同性。 | Microsoft 服务如何确保有权访问个人数据的个人承诺保密。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 专业服务控件集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f)、(28)(3)(b)、(38)(5) |
 | ***保护公共网络上的应用服务 (6.11.1)*** | 客户应了解个人数据加密的要求，尤其是通过公共网络发送的情况。如果系统提供加密数据的机制，则客户应根据需要使用这些机制。 | Microsoft 服务为保护传输中的数据（包括数据加密）而采取的措施的说明、以及 Microsoft 服务在数据通过公用数据网络（包括任何加密措施）时如何保护可能包含个人数据的数据的说明。<br>- Microsoft 专业服务安全文档 [[2](gdpr-arc-prof-services.md#2)] | (5)(1)(f)、(32)(1)(a) |
-| ***安全系统工程原理 (6.11.2)*** | 客户应了解系统是如何从考虑保护个人数据的角度设计和策划的。 如果客户使用由第三方设计的系统，则他们有责任确保已慎重考虑此类保护措施。 | Microsoft 服务如何将个人数据保护原则纳入安全设计/工程原则的强制性部分。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- [什么是安全开发生命周期？](https://www.microsoft.com/sdl/) | (25)(1) |
-| ***供应商关系 (6.12)***| 客户应确保任何信息安全和个人数据保护要求以及第三方责任均在合同信息或其他协议中得到解决。 协议还应给出处理说明。 | Microsoft 服务如何在我们与供应商达成的协议中指定安全和数据保护，以及我们如何确保这些协议得到有效执行。<br>- 谁可以访问你的数据和所依据的条款 [[7](gdpr-arc-prof-services.md#7)] | (5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h)、(30)(2)(d)、(32)(1)(b) |
+| ***安全系统工程原理 (6.11.2)*** | 客户应了解系统是如何从考虑保护个人数据的角度设计和策划的。如果客户使用由第三方设计的系统，则他们有责任确保已慎重考虑此类保护措施。 | Microsoft 服务如何将个人数据保护原则纳入安全设计/工程原则的强制性部分。<br>- Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 [[12](gdpr-arc-prof-services.md#12)]<br>- [什么是安全开发生命周期？](https://www.microsoft.com/sdl/) | (25)(1) |
+| ***供应商关系 (6.12)***| 客户应确保任何信息安全和个人数据保护要求以及第三方责任均在合同信息或其他协议中得到解决。协议还应给出处理说明。 | Microsoft 服务如何在我们与供应商达成的协议中指定安全和数据保护，以及我们如何确保这些协议得到有效执行。<br>- 谁可以访问你的数据和所依据的条款 [[7](gdpr-arc-prof-services.md#7)] | (5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h)、(30)(2)(d)、(32)(1)(b) |
 | ***信息安全事件管理和改进 (6.13.1)*** | 客户应具有确定何时发生个人数据泄露的流程。 | Microsoft 服务如何确定安全事件是否是个人数据泄露事件，以及我们如何向你传达泄露事件。<br>- Microsoft 专业服务和 GDPR 规定的泄露通知 [[9](gdpr-arc-prof-services.md#9)] | (33)(2) |
 | ***责任和过程（在信息安全事件期间）(6.13.2)*** | 客户应在涉及个人数据的数据泄露或安全事件期间了解并记录他们的职责。职责包括通知各相关方、与处理者或其他第三方进行通信，以及在客户组织内的职责。 | 如何在检测到安全事件或个人数据泄露时通知 Microsoft 服务。<br>- Microsoft 专业服务和 GDPR 规定的泄露通知 [[9](gdpr-arc-prof-services.md#9)] | (5)(1)(f)、(33)(1)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)、(34)(3)(a)、(34)(3)(b)、(34)(3)(c)、(34)(4) |
 | ***信息安全事件响应 (6.13.3)*** | 客户应具有确定何时发生个人数据泄露的流程。 | Microsoft 服务提供的信息说明，有助于你确定是否发生了个人数据泄露。<br>- Microsoft 专业服务和 GDPR 规定的泄露通知 [[9](gdpr-arc-prof-services.md#9)] | (33)(1)、(33)(2)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2) |
 | ***记录保护 (6.15.1)*** | 客户应了解与个人数据处理相关且需要维护的记录的相关要求。 | Microsoft 服务如何存储与个人数据处理相关的记录。<br>- Microsoft 专业服务安全文档 [[2](gdpr-arc-prof-services.md#2)] | (5)(2)、(24)(2) |
-| ***独立审查信息安全 (6.15.2)*** | 客户应了解对个人数据处理安全性评估的要求。 这包括内部或外部审核或其他评估处理安全性的措施。 如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。 | Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br>- Microsoft 专业服务数据保护附录 [[1](gdpr-arc-prof-services.md#1)] | (32)(1)(d)、(32)(2)|
-| ***技术符合性审查 (6.15.3)*** | 客户应了解测试和评估处理个人数据安全性的要求。 这包括技术测试，如渗透测试。 如果客户使用第三方系统或处理者，则他们应了解他们在保护和测试安全方面承担的责任（例如管理配置以保护数据，然后测试这些配置设置）。 如果第三方负责安全性处理的全部或部分，则客户应该了解第三方为确保处理的安全性而进行的测试或评估。 | 如何根据确定的风险测试 Microsoft 服务的安全性（包括第三方测试，以及技术测试类型和任何可用测试）[[1](gdpr-arc-prof-services.md#1)]<br>- 有关外部认证的列表，请参阅 Microsoft 信任中心合规性产品[[13](gdpr-arc-prof-services.md#13)]<br>- 若要详细了解应用程序漏洞测试，请参阅 Microsoft 专业服务安全文档 [[2](gdpr-arc-prof-services.md#2)] | (32)(1)(d)、(32)(2) |
+| ***独立审查信息安全 (6.15.2)*** | 客户应了解对个人数据处理安全性评估的要求。这包括内部或外部审核或其他评估处理安全性的措施。如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。 | Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br>- Microsoft 专业服务数据保护附录 [[1](gdpr-arc-prof-services.md#1)] | (32)(1)(d)、(32)(2)|
+| ***技术符合性审查 (6.15.3)*** | 客户应了解测试和评估处理个人数据安全性的要求。这包括技术测试，如渗透测试。如果客户使用第三方系统或处理者，则他们应了解他们在保护和测试安全方面承担的责任（例如管理配置以保护数据，然后测试这些配置设置）。如果第三方负责安全性处理的全部或部分，则客户应该了解第三方为确保处理的安全性而进行的测试或评估。 | 如何根据确定的风险测试 Microsoft 服务的安全性（包括第三方测试，以及技术测试类型和任何可用测试）[[1](gdpr-arc-prof-services.md#1)]<br>- 有关外部认证的列表，请参阅 Microsoft 信任中心合规性产品[[13](gdpr-arc-prof-services.md#13)]<br>- 若要详细了解应用程序漏洞测试，请参阅 Microsoft 专业服务安全文档 [[2](gdpr-arc-prof-services.md#2)] | (32)(1)(d)、(32)(2) |
 
 ## <a name="6-bibliography-of-resources-and-links"></a>6. 资源和链接参考文献
 
 ||||
 |:-----|:---|:---|
 |**ID**|**说明/链接**|**备注**|
-| 1 <a name="1"> </a> | [Microsoft 专业服务数据保护附录](http://aka.ms/professionalservicesdpa) | |
+| 1 <a name="1"> </a> | [Microsoft 专业服务数据保护附录](https://aka.ms/professionalservicesdpa) | |
 | 2 <a name="2"> </a> | [Microsoft 信任中心上的 Microsoft 专业服务安全文档](https://www.microsoft.com/TrustCenter/professional-services-security) | |
 | 3 <a name="3"> </a> | 培训和意识计划说明 | 可向客户的帐户管理团队请求获取。| |
 | 4 <a name="4"> </a> | [Microsoft 专业服务 GDPR 控件集](https://aka.ms/GDPRControls) | |
@@ -134,7 +136,7 @@ ms.locfileid: "37422419"
 |  9 <a name="9"> </a> | [Microsoft 专业服务适用的客户数据保护影响评估关键信息](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services) | |
 | 10 <a name="10"> </a> | [ISO 27001 审核报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) | |
 | 11 <a name="11"> </a> | Microsoft 专业服务 ISO/IEC 27001:2013 ISMS 适用性声明 | 可向客户的帐户管理团队请求获取的 SOA。|
-| 12 <a name="12"> </a> | [Microsoft 信任中心合规性产品/服务](https://www.microsoft.com/trustcenter/compliance/complianceofferings) | |
+| 12 <a name="12"> </a> | [Microsoft 信任中心合规性产品/服务](offering-home.md) | |
 | 13 <a name="13"> </a> | [Microsoft DPO 信息](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) | |
 
 ## <a name="learn-more"></a>了解更多

@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 11bf048dd1cd913d8344929b5025a65638d47f4b
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078932"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749645"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -29,9 +31,9 @@ ms.locfileid: "35078932"
 
 本文档中使用的 GDPR 术语的有用定义：
 
-- *数据控制者（控制者）*：法人、主管机构、机构或其他主体，单独或与其他主体共同确定处理个人数据的目的和方法。  
-- *个人数据*和*数据主体*：与已识别或可识别的自然人（数据主体）有关的任何信息；可识别的自然人是可以直接或间接识别的人。  
-- *处理者*：代表控制者处理个人数据的自然人或法人、主管机构、代理机构或其他主体。  
+- *数据控制者（控制者）*：单独或与他人共同确定个人数据处理目的和方法的法人、公共机关、机构或其他团体。  
+- *个人数据*和*数据主体*：与已识别或可识别的自然人（数据主体）相关的任何信息；可识别的自然人是可以直接或间接识别的自然人。  
+- *处理者*：代表控制者处理个人数据的自然人或法人、公共机关、机构或其他团队。  
 - *客户数据*：在运营业务的日常运营中生成和存储的数据。
 
 ## <a name="what-is-the-gdpr"></a>什么是 GDPR？
@@ -66,7 +68,7 @@ GDPR 授予人们管理组织收集的个人数据的权限。 可通过数据�
 - **完成 DSR 将需要采取哪些操作？**：DSR 涉及六项活动：发现、访问、校正、限制、导出和删除。
 - **数据源是什么？**：组织的很大一部分数据是在 [Office 应用程序](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)（如 Excel 和 Outlook）中生成的。 还可以在 Microsoft 产品和服务生成的[见解](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365)以及[系统生成的日志](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)中找到与 DSR 相关的数据。
 - **需要搜索哪些类型的数据？**：可以在客户数据、Microsoft 产品和服务生成的见解以及系统生成的日志中找到个人数据。
-- **如何搜索个人数据？**：搜索个人数据可能因 Microsoft 产品和服务的不同而异。 搜索工具包括[内容搜索](https://docs.microsoft.com/zh-CN/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)或[应用内搜索](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs)容量。 管理员可以访问与用户活动关联的[系统生成的日志](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)。  
+- **如何搜索个人数据？**：搜索个人数据可能因 Microsoft 产品和服务的不同而异。 搜索工具包括[内容搜索](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)或[应用内搜索](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs)容量。 管理员可以访问与用户活动关联的[系统生成的日志](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)。  
 - **个人数据应以何种格式提供？**：GDPR“数据移植权限”允许数据主体请求“常用的计算机可读结构化格式”个人数据副本，还可请求组织将这些文件传输给另一数据控制者。
 
 ### <a name="data-protection-impact-assessment"></a>数据保护影响评估

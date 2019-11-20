@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 3a07400f6c3e788734b4d959080e2008eb7b0cfe
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698284"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749661"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft 支持和专业服务与 GDPR 泄露通知
 
@@ -27,7 +29,7 @@ Microsoft 专业版服务的全球数据保护事件响应小组的驱动力是 
 
 ## <a name="data-protection-incident-response-overview"></a>数据保护事件响应概述 
 
-Microsoft 专业服务致力于保护其客户并采取大量措施来防止发生数据保护事件，以维护客户信任。专业服务组织中发生数据保护事件会危及安全性，导致个人数据或者支持或咨询数据在由 Microsoft 处理时发生意外或非法的销毁、丢失、改动、未经授权的泄露或访问。对于购买了顶级支持、统一支持或 Microsoft 咨询服务的商业客户，请参考在专业服务数据保护附录（位于 <http://aka.ms/professionalservicesdpa/>）中的数据保护事件响应语言。
+Microsoft 专业服务致力于保护其客户并采取大量措施来防止发生数据保护事件，以维护客户信任。专业服务组织中发生数据保护事件会危及安全性，导致个人数据或者支持或咨询数据在由 Microsoft 处理时发生意外或非法的销毁、丢失、改动、未经授权的泄露或访问。对于购买了顶级支持、统一支持或 Microsoft 咨询服务的商业客户，请参考在专业服务数据保护附录（位于 <https://aka.ms/professionalservicesdpa/>）中的数据保护事件响应语言。
 
 ## <a name="scope--limits-of-data-protection-incident-response-process"></a>数据保护事件响应流程的范围和限制
 
@@ -54,7 +56,7 @@ Microsoft 专业服务会持续监控所有包含个人数据的数据存储中�
 Microsoft 专业服务使用的检测流程旨在发现数据保护事件和触发调查。例如：
 
 - 安全漏洞将报告到整个 Microsoft 范围的报告系统进行转交，或者直接报告给专业服务数据保护事件响应团队。
-- 客户通过[客户支持门户](http://support.microsoft.com)提交描述可疑活动的报告。
+- 客户通过[客户支持门户](https://support.microsoft.com)提交描述可疑活动的报告。
 - 专业服务工作人员提交上报。Microsoft 员工经过培训，可识别和上报潜在安全问题。
 - 对于提供专业服务的流程中所使用的工具和系统，运营团队通过内部监控和警报框架来使用自动化系统警报。这些警报采用反恶意软件和入侵检测等基于签名的形式提供，或者通过专为分析发生异常时的预期活动和警报而设计的算法来提供。
 
