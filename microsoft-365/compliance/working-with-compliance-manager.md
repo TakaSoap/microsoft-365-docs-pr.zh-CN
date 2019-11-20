@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38685175"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718681"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -421,13 +421,13 @@ ms.locfileid: "38685175"
 
 - **actionDimensionValues：** 使用以下格式的 "维" 选项卡中的适用维度的两个以分号分隔的列表：
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     例如：
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -461,7 +461,7 @@ ms.locfileid: "38685175"
 
 项目符号表示为星号而不是 Word 或 Excel 项目符号。 例如：
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -480,15 +480,16 @@ ms.locfileid: "38685175"
 
 通过在超链接文本周围加上括号并将超链接本身放在右方括号旁边的括号中来构造超链接。  例如：
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 此文本呈现如下：单击[此处](https://www.microsoft.com)转到 Microsoft 主页。
+
 如上面的示例中所示，合规性管理器不呈现带下划线的 Url。
 
-粗体文本只是文本的每一侧都加粗的两个星号。  例如：
+粗体文本是文本的每一侧加粗的两个星号。  例如：
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **此文本以粗体呈现**
