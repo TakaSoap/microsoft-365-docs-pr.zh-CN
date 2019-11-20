@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何在 Windows 10 设备中验证 Microsoft 365 商业应用保护设置。
-ms.openlocfilehash: 7710accf9a3cd1db788dd5215ab6d7bbb97e48a6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074372"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721852"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的应用保护设置
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>确定用户不能将公司数据复制到企业设备上的个人文件中
 
-[设置应用保护策略](protection-settings-for-windows-10-devices.md) 后，可能需要几个小时策略才会在用户的设备上生效。如果将公司拥有的设备上的" **防止用户将公司数据复制到个人文件，并强制要求将工作文件保存到 OneDrive for Business**"设置调整为" **打开**"状态，则可以在用户连接到 Azure AD 并登录之后在其设备上选中此选项。 
+[设置应用保护策略](protection-settings-for-windows-10-devices.md) 后，可能需要几个小时策略才会在用户的设备上生效。 如果启用了 "**阻止用户将公司数据复制到个人文件，并强制他们将公司拥有的工作文件保存到 OneDrive for** business**设置"，** 则可以在用户的设备连接到 Azure AD 并登录后对其进行检查。 
   
  **验证连接设置**
   
@@ -38,11 +38,11 @@ ms.locfileid: "34074372"
     
     ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. 在 "**管理者** \<租户名称\> " 页上, 您可以看到包含**管理服务器地址**的**连接信息**, 如下图中所示。 
+2. 在 "**管理者** \<租户名称\> " 页上，您可以看到包含**管理服务器地址**的**连接信息**，如下图中所示。 
     
     ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
- **验证不能将公司数据粘贴到非托管的应用**
+ **确认无法将公司数据粘贴到非托管应用中**
   
 1. 打开由 Microsoft 365 商业版安装的 Outlook 2016。
     
@@ -50,7 +50,7 @@ ms.locfileid: "34074372"
     
     打开记事本，并尝试将该内容粘贴到其中。
     
-    会收到错误，表示应用不能访问该内容。
+    你将收到一条错误，指出应用无法访问内容。
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
@@ -60,7 +60,7 @@ ms.locfileid: "34074372"
 
  **验证连接设置**
   
-1. 在作为本地用户登录到其中的 Windows 10 个人设备上，转到" **Windows 设置**"并单击或点击" **帐户**"\>" **访问工作或学校帐户**"。
+1. 在以本地用户身份登录的 windows 10 个人设备上，转到 " **Windows 设置**"，然后单击或点击 "**帐户** \> **访问工作或学校**"。
     
 2. 在" **访问工作或学校帐户**"下选择" **连接**"。
     
@@ -68,13 +68,13 @@ ms.locfileid: "34074372"
     
 4. 在" **访问工作或学校帐户**"页面，选择" **工作或学校帐户**"，然后选择" **信息**"。
     
-    ![Click or tap Info on the Work or school account dalog.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![单击或点击 "工作或学校帐户" 对话框上的 "信息"。](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
-5. 在" **访问工作或学校帐户**"页面，可以看到" **连接信息**"，其中包含如下图所示的" **管理服务器地址**"，还包括单词  *wip*  和  *mam*  。 
+5. 在 "**访问工作或学校**" 页面上，您可以看到包含**管理服务器地址**的**连接信息**，如下图中所示，并在中包括 " *wip* " 和 " *mam* " 一词。 
     
     ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
- **验证不能将公司数据粘贴到非托管的应用**
+ **确认无法将公司数据粘贴到非托管应用中**
   
 1. 打开 Outlook 2016，并添加 Microsoft 365 商业版 帐户（如有必要），然后使用 Microsoft 365 商业版凭据进行登录。
     
@@ -82,7 +82,7 @@ ms.locfileid: "34074372"
     
     打开记事本，并尝试将该内容粘贴到其中。
     
-    会收到错误，表示应用不能访问该内容。
+    您将收到一条错误，说明应用程序无法访问内容。
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   

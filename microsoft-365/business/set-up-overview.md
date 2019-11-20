@@ -22,24 +22,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Microsoft 365 商业版的设置步骤概述。
-ms.openlocfilehash: 3e1cf240db673a7b961ec8aa574f3e09efee476b
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+description: Microsoft 365 商业版的安装步骤概述。
+ms.openlocfilehash: 3447f06d031462a7bebc6f129238de9f0c5dee41
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676020"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721551"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
-大部分设置步骤可以在安装向导中完成，但也会列出其他选项。
-
+大部分安装步骤可以在安装向导中完成，但也会列出其他选项。
 
 ## <a name="step-1-add-your-domain-and-users"></a>步骤1：添加您的域和用户
 
    - **[添加你的域](set-up.md#add-your-domain-to-personalize-sign-in)**（如果你在[注册](sign-up.md)过程中购买了你的域，则此步骤已完成。）
 
-    - **添加用户**。 可以通过以下三种方式之一执行此操作：
+    - **添加用户**。 可以通过以下三种方式之一添加用户：
         - 在[向导](set-up.md#add-users-in-the-wizard)中。
         - 如果你有本地 Active directory，请使用目录同步来[使用 AZURE AD Connect 添加用户](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)。
         - 您还可以在随后的管理中心[添加用户](add-users-m365b.md)。
@@ -65,21 +64,21 @@ ms.locfileid: "38676020"
 
    将 Windows 10 设备加入 Azure AD 时，将在[步骤 2](#step-2-set-up-security-policies-and-configure-devices)中设置的策略应用于该 AD。
 
-   - Windows 10 专业版是 Microsoft 365 商业版的[先决条件](pre-requisites-for-data-protection.md)，但如果你有 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 专业版，你的订阅使你能够[升级到 Windows 10 专业](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)版。
+   - Windows 10 专业版是 Microsoft 365 商业版的[先决条件](pre-requisites-for-data-protection.md)，但如果你有 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 pro，你的订阅让你能够[升级到 Windows 10 专业](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)版。
     - 使用[安装向导](set-up.md#protect-data-and-devices)为 Windows 10 设备配置策略。
 
-## <a name="stes-4-install-office-365-business"></a>Stes 4：安装 Office 365 商业版
+## <a name="step-4-install-office-365-business"></a>步骤4：安装 Office 365 商业版
 - 您可以使用[安装向导](set-up.md#deploy-office-365-client-apps)在 Windows 设备中自动安装 Office。
 - 允许用户安装适用于 Windows 和设备的[Office 应用程序](https://docs.microsoft.com/office365/admin/setup/install-applications)。
      
 ## <a name="advanced"></a>高级
 - **使用 Autopilot 设置新设备**
             
-     可以使用[Windows Autopilot](add-autopilot-devices-and-profile.md)为用户自动预配置**新**的 Windows 10 设备，但更易于获取可为您执行此操作的[合作伙伴](https://www.microsoft.com/solution-providers/search)。 你也可以转到[Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)并咨询云技术专家，以设置你购买的新设备。
+     可以使用[Windows Autopilot](add-autopilot-devices-and-profile.md)为用户自动预配置**新**的 Windows 10 设备，但更易于获取可为您执行此操作的[合作伙伴](https://www.microsoft.com/solution-providers/search)。 你也可以转到[Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)，并请求云技术专家设置你购买的新设备。
 
 - **访问本地资源**
 
-     - 如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照 Microsoft 365 商业版中的 "[启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作，以便对此进行设置。 这是此状态的首选方法，称为混合 Azure AD 加入的设备。
+     - 如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照 Microsoft 365 商业版中的 "[启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作，以便对此进行设置。 这是首选方法，而此状态的设备称为混合 Azure AD 加入的设备。
 
     - 如果你的企业具有包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以按照以下步骤为 Azure AD 联接的设备授予对这些资源的访问权限：[从 Microsoft 365 商业版中的 AZURE AD 加入设备访问本地资源](access-resources.md)。
 

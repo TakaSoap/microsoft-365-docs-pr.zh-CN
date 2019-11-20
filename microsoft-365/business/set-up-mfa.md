@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 为 Microsoft 365 商业版设置多重身份验证。
-ms.openlocfilehash: 3aa08670551da3754784237e14a35e94c6f64250
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 59a3ff7a9494ccfc44fa701c6f605a9bd9eeafcf
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575620"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715054"
 ---
 # <a name="multi-factor-authentication"></a>多重身份验证
 
@@ -31,7 +31,7 @@ ms.locfileid: "37575620"
 
 ## <a name="set-up-mfa-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中设置 MFA
 
-[!["标签"，告知 "管理中心" 正在更改，您可以在 aka.ms/aboutM365preview 中找到更多详细信息。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 1. 使用全局管理员凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。 
 2. 在左侧导航中，选择 "**设置**"。
@@ -40,4 +40,4 @@ ms.locfileid: "37575620"
 
   :::image type="content" source="media/turnonmfa.png" alt-text="启用 MFA 页面的屏幕截图。":::
 
-5. 在 " **Strenghen 登录安全**" 面板上，选中 "**需要管理员的多重身份验证**" 中的两个或一个，然后选择 "**创建策略**"。
+5. 在 "**加强登录安全**" 面板上，选中 "**需要管理员的多因素身份验证**" 或 "**创建策略**"。

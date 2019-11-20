@@ -1,24 +1,26 @@
 ---
 title: 查看文档的标签活动
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全与合规中心内的标签活动资源管理器，可快速搜索和查看过去 30 天内 SharePoint 和 OneDrive for Business 中所有内容的标签活动。此为实时数据，可便于你明确了解租户中发生了什么。
-ms.openlocfilehash: 6b68c82e364432107d616c5184959cd879cdcb9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99e3f461ed1ff38b2f204a2823299a3c441c995f
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075457"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38710000"
 ---
 # <a name="view-label-activity-for-documents"></a>查看文档的标签活动
 
@@ -36,7 +38,7 @@ ms.locfileid: "37075457"
     
 - 查看文件夹或各个文档的标签活动。即将可以查看文件夹中有多少个文件继承文件夹的标签。
     
-要查找标签活动资源管理器，可访问安全与合规中心 >“**数据管理**” >  **标签活动资源管理器**。
+要查找标签活动资源管理器，可访问安全 &amp; 合规中心 >“**信息管理**” > “**标签活动资源管理器**”。
   
 请注意，必须有 Office 365 企业版 E5 订阅，才能使用标签活动资源管理器。
   

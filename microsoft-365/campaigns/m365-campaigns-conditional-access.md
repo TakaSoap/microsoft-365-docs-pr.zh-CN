@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何要求进行 MFA 并为 Microsoft 365 商业版设置条件访问策略。
-ms.openlocfilehash: b4ea67037339ae1a00f12d7b51e4584d259264e4
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0279fff8dd4143c883b2f1633907ac197c65f04a
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031337"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748283"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重身份验证并设置条件访问策略
 
@@ -59,7 +59,7 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
     ![制作登录更安全的卡。](media/setupmfa.png)
 3. 在 "使登录更安全" 页上，选择 "**已启动**"。
  
-4. 在 "加强登录安全" 窗格中，选中 "**要求对管理员使用多重身份验证**" 旁边的复选框，并**要求用户注册多重身份验证，并在检测到风险时阻止访问**。
+4. 在 "加强登录安全" 窗格中，选中 "**要求对管理员启用多重身份验证**" 旁边的复选框，并**要求用户注册多重身份验证，并在检测到风险时阻止访问**。
     确保在 "**查找用户**" 框中排除了来自 MFA 要求的[紧急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)或 "中断玻璃" 管理帐户。
     
     ![增强 "在安全中的安全" 页。](media/requiremfa.png)
@@ -70,15 +70,13 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
 
 1. 转到 " [azure 门户](https://portal.azure.com)"，然后导航到 " **azure Active Directory** \> **条件访问**"。
     
-    基准策略在页面上列出，您可以看到，在完成 "[需要 mfa](#require-mfa)" 中的步骤后，"需要对管理员和最终用户进行 mfa" 功能已启用。
+    基准策略在页面上列出，您可以看到，在完成 "[需要 mfa](#require-mfa)" 中的步骤后，"**需要对管理员**和**最终用户**进行 mfa" 功能已启用。
 
     ![列出用于条件访问的基准策略的页面。](media/casettings.png)
 2. 请参阅以下针对每个策略的特定说明：
 
     - [要求对管理员进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-
-       
-    -   [要求对用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+    - [要求对用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
     - [阻止旧版身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
     - [需要进行服务管理的 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 

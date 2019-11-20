@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何购买和注册 Microsoft 365 商业版。
-ms.openlocfilehash: ef34a3e2bc848ce98efb2218f7bdd9b2a186b6b2
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: 16953f7c752c3105af795e721332e2e6d6bdebe5
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968775"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718711"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>注册 Microsoft 365 商业版
 
@@ -35,7 +35,7 @@ ms.locfileid: "37968775"
 - **对于 Microsoft 合作伙伴**：如果你是合作伙伴，请参阅[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)版。
 - **获取 microsoft**store 的帮助：头到[microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 商店可以帮助您解决计划、帮助您购买适合您的业务需求的计划，并帮助您完成设置。
 
-**需要不同的东西？** 可以执行下列操作：
+**需要不同的东西？** 可执行下列操作：
 - [将 Office 365 计划升级到 Microsoft 365 商业](migrate-to-microsoft-365-business.md)版。
 - 在一个月内获取 Microsoft 365 商业[版免费试用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
 - 如果你需要具有较少功能的计划，请[注册 Office 365 商业高级版](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 了解每个业务计划在[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的内容。
@@ -46,10 +46,10 @@ ms.locfileid: "37968775"
 若要注册并购买适用于您的企业的 Microsoft 365，请完成以下步骤：
 
 1. 在 " [Microsoft 365 for business" 页](https://go.microsoft.com/fwlink/?linkid=2109654)上，选择 "**查看 & 定价的计划**"。 
-2. 在下一页上，查找每月费用，然后向下滚动页面，以了解有关 Microsoft 365 Business 中包含的内容的详细信息。 在 Microsoft 365 商业版下，选择 "**立即购买**"。
+2. 在下一页上，查找每月费用，然后向下滚动页面，以了解有关 Microsoft 365 Business 中所包含内容的详细信息。 在 Microsoft 365 商业版下，选择 "**立即购买**"。
 3. 在**感谢你选择 Microsoft 365 商业**版页面上，输入你的信息即可开始。
 4. 在**步骤 1**中，输入您已使用的电子邮件地址。 这可以是你当前的工作电子邮件地址或你希望 Microsoft 在安装过程中用于与你进行通信的任何地址。 它还是向你发送有关帐单和续订信息的地址。 然后依次选择 ""、"**设置帐户**"。
-5. 在**步骤 2**中，输入你的姓名、业务电话号码、公司名称和位置。 请注意，你的国家或地区决定了你从 Microsoft 收到的确切服务，在完成此步骤后无法更改。 选择“下一步”****。
+5. 在**步骤 2**中，输入你的姓名、业务电话号码、公司名称和位置。 你的国家或地区决定了你从 Microsoft 收到的确切服务，在完成此步骤后无法更改。 选择“下一步”****。
     > [!NOTE]
     > 我们在管理中心显示你的公司名称;你可以在此处管理 Microsoft 365 用户、许可证等。 此外，我们还将其包含在任何内部（SharePoint）网站 Url 中。
 6. 在**步骤 3**：
@@ -66,7 +66,7 @@ ms.locfileid: "37968775"
         
         - **我不确定，或者我已经拥有一个域名** 
         
-             选择 "**立即获取 Microsoft 域**"。 这并不会降低成本，稍后你可以为你的企业获取自定义名称，或连接到你已经&mdash;拥有的一个你已拥有的内容。
+             选择 "**立即获取 Microsoft 域**"。 这并不会降低成本，稍后您可以为您的企业获取自定义名称，或连接到已有的自定义名称。 我们将向你介绍操作方法。
 
     3. 选择 "**下一步**" 创建用户 ID 和业务电子邮件地址。 输入要使用的名称（也称为别名）。 例如，Robert 年轻人可能将 RobY 或 RobYoung 用作工作别名。 添加密码并选择 "**注册**"。 记下你的密码。 我们将向您在步骤1中输入的地址发送一封电子邮件，提醒您用户 ID。
 7. 在**步骤 4**： 

@@ -13,17 +13,17 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
-ms.openlocfilehash: 9faa573ea2062af2fe49e2810eaecc75ce90c84c
-ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
+ms.openlocfilehash: cbf30a29ed3948cb3b20da919835ed2524163617
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37911383"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721643"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
 > [!NOTE]
-> 本文中的信息仅适用于 Microsoft Power Platform （Power BI、PowerApps 和 Flow）订阅。
+> 本文中的信息仅适用于 Microsoft Power Platform （Power BI、Power Apps 和 Power 自动化）订阅。
 
 ## <a name="general"></a>常规
 
@@ -31,10 +31,10 @@ ms.locfileid: "37911383"
 
 更新自2019年10月31日起，在过去一周内，我们已为客户提供有关为 Power Platform 产品的自助服务购买功能推出的客户反馈。 根据反馈，我们正在对计划进行以下更改：
 
-- 在19月19日，我们将通过 PowerShell 向 IT 管理员提供一种基于每个产品关闭自助购买的方法。 将会即将推出更多详细信息。
+- 在19月19日，我们将通过 PowerShell 向 IT 管理员提供一种基于每个产品关闭自助购买的方法。 若要了解如何使用它，请参阅[Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
 - 若要提供更多的时间来为此更改做准备，我们正在为 Power Platform 产品更新启动，以在14月14日为所有商业云客户启动 Power BI。  
 
-从2020年1月14日起，Power Platform 产品（Power BI、PowerApps 和流程）的自助服务购买、订阅和许可证管理功能将适用于美国的商业云客户。 自助式购买为用户提供了一种尝试新技术的机会，使他们能够开发最终会对更大的组织带来好处的解决方案。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。 集中采购和 IT 团队可查看通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买和部署自助服务购买解决方案的所有用户，并将能够通过 PowerShell 基于每个产品关闭自助购买。
+从2020年1月14日起，将提供适用于美国商业云客户的 Power Platform 产品（Power BI、Power Apps 和 Power 自动化）的自助服务购买、订阅和许可证管理功能。 自助式购买为用户提供了一种尝试新技术的机会，使他们能够开发最终会对更大的组织带来好处的解决方案。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。 集中采购和 IT 团队可查看通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买和部署自助服务购买解决方案的所有用户，并将能够通过 PowerShell 基于每个产品关闭自助购买。
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>为什么 Microsoft 为电源平台产品添加自助服务购买选项？
 
@@ -42,7 +42,7 @@ ms.locfileid: "37911383"
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>何时提供适用于电源平台产品的自助服务购买？
 
-Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，并在未来的几个月中提供更多市场。 将在以下几周中添加 PowerApps 和 Microsoft 流程。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。
+Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，并在未来的几个月中提供更多市场。 电源应用和电源自动执行将在以下几周内添加。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>是否会为电源平台产品之外的服务启用自助服务购买？
 
@@ -52,7 +52,7 @@ Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，
 
 ### <a name="how-does-a-customer-make-a-self-service-purchase"></a>客户如何购买自助服务？
 
-客户将能够从 Microsoft Power BI、PowerApps 和流网站进行自助在线购买。 将首先要求客户输入电子邮件地址，以确保他们是现有 Azure Active Directory （AD）租户中的用户，然后通过使用其 Azure AD 凭据将其定向到 "登录"。 登录后，系统将要求客户选择他们要购买的订阅数并提供信用卡付款。 购买完成后，他们将能够开始使用其订阅。 购买者还可以访问<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>的受限视图，在这里，他们可以让组织中的其他人使用该产品。
+客户将能够从 Microsoft Power BI、Power Apps 和 Power 自动化网站进行自助在线购买。 将首先要求客户输入电子邮件地址，以确保他们是现有 Azure Active Directory （AD）租户中的用户，然后通过使用其 Azure AD 凭据将其定向到 "登录"。 登录后，系统将要求客户选择他们要购买的订阅数并提供信用卡付款。 购买完成后，他们将能够开始使用其订阅。 购买者还可以访问<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>的受限视图，在这里，他们可以让组织中的其他人使用该产品。
 
 ### <a name="what-are-the-payment-options-for-self-service-purchases"></a>自助服务购买的付款选项是什么？
 
@@ -60,7 +60,9 @@ Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，
 
 ### <a name="who-can-buy-through-self-service-purchase"></a>谁可以通过自助购买购买？
 
-在托管 Azure AD 租户中具有非来宾用户帐户的任何用户都可以购买。 目前，此功能将不可用于政府、非盈利或教育的租户。 组织或市场中不符合自助购买条件的用户将看到一条消息，询问他们现在是与 IT 管理员联系。
+在托管 Azure AD 租户中具有非来宾用户帐户的任何用户都可以购买。 目前，此功能将不可用于政府、非盈利或教育的租户。 如果这适用于您的组织，则此时无需执行任何其他操作即可控制自助购买。
+
+组织或市场中不符合自助购买条件的用户将看到一条消息，询问他们现在是与 IT 管理员联系。
 
 ### <a name="can-guest-users-buy-through-self-service-purchase"></a>来宾用户是否可以通过自助购买服务购买？
 
@@ -98,6 +100,8 @@ Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，
 
 管理员可以在其组织中查看在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>内进行的所有自助服务购买。 他们可以查看每个自助购买的产品、购买者名称、购买订阅、到期日期、订单历史记录、购买价格和分配的用户。 如果组织需要，管理员将能够通过 PowerShell 基于每个产品关闭自助购买。 管理员对通过自助购买或集中购买的产品具有相同的数据管理和访问策略。
 
+管理员还可以控制组织中的用户是否可以进行自助服务购买。 有关详细信息，请参阅[Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
+
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>Microsoft 如何通过启用自助购买来尊重数据治理和合规性？
 
 管理员可以根据其数据治理和合规性要求，控制哪些服务和产品在其租户中已启用。 此外，您的组织已启用的所有数据管理和访问策略将应用于启用自助服务购买的服务。
@@ -108,11 +112,11 @@ Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，
 
 ### <a name="how-do-i-centralize-the-purchases-made-through-self-service-purchase"></a>如何通过 "自助式购买" 集中进行购买？
 
-管理员可以通过现有协议和定价为已分配到自助购买的用户分配现有许可证或购买其他 Power Platform 产品（Power BI、PowerApps 和 Microsoft Flow）订阅。 在分配这些集中购买的许可证之后，管理员可以请求购买者取消其现有订阅。 Microsoft 正在探索为将来的管理员简化和简化此过程的方法。
+管理员可以通过现有协议和定价为分配到自助购买的用户分配现有许可证或购买附加的 Power Platform 产品（Power BI、Power Apps 和 Power 自动化）订阅。 在分配这些集中购买的许可证之后，管理员可以请求购买者取消其现有订阅。 Microsoft 正在探索为将来的管理员简化和简化此过程的方法。
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>管理员在哪里查看自我服务购买？
 
-全局和计费管理员可以通过在 " <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>" 中的**计费** > **产品 & 服务**以及通过中心购买的所有其他订阅来查看购买的自服务购买订阅。物资. 他们可以将列表筛选为仅通过中央采购购买的订阅，或者包括通过自助购买购买的订阅。
+全局和计费管理员可以通过在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中的**计费** > **产品 & 服务**以及通过中央采购购买的所有其他订阅，查看通过自助购买服务购买的订阅。 他们可以将列表筛选为仅通过中央采购购买的订阅，或者包括通过自助购买购买的订阅。
 
 管理员可以查看产品、买方名称、购买订阅、到期日期、订单历史记录、采购价和分配的用户。
 
@@ -126,10 +130,9 @@ IT 部门和合作伙伴不希望为通过自助购买购买的产品提供支�
 
 自助服务购买者不会使用客户的首要支持事件接收自助服务购买支持。
 
-
 ### <a name="how-are-users-expected-to-receive-training-on-the-products-they-buy-through-self-service-purchase"></a>用户期望如何在通过自助购买的产品上接收有关他们购买的产品的培训？
 
-在 Microsoft Power BI、PowerApps 和流网站上提供了针对用户的广泛培训。 这些产品具有指导性的学习、文档、示例和强大的社区，可直接从其他用户获取答案和提示。
+对用户的广泛培训在 Microsoft Power BI、Power Apps 和 Power 自动化网站上提供。 这些产品具有指导性的学习、文档、示例和强大的社区，可直接从其他用户获取答案和提示。
 
 ### <a name="what-happens-to-a-self-service-purchase-if-a-user-leaves-the-organization"></a>如果用户离开组织，自我服务购买会发生什么情况？
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 iPhone 或 Android 手机上安装 Office，Office 应用中的工作文件将受到 Microsoft 365 商业版的保护。
-ms.openlocfilehash: 6dd18569f0d4b3c71f00004706c2430eb7c5ae43
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: e09db43705d601df0c0b30a46ee36cf0295ecae3
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575600"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718931"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 Business 用户设置移动设备
 
@@ -58,11 +58,11 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
   
 ![Sign in to your work account](media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-如果组织正在保护应用上的文件，你将看到一个对话框指出你的组织正在保护应用中的数据，需重启应用才能继续使用该数据。点击" **确定**"并关闭 Outlook。 
+如果您的组织正在保护应用程序中的文件，您将看到一个对话框，说明您的组织现在正在保护应用程序中的数据，您需要重新启动应用程序才能继续使用它。 点击" **确定**"并关闭 Outlook。 
   
-![Screenshot that showa your organization is now protecting your Outlook app](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![显示您的组织的屏幕截图现在正在保护您的 Outlook 应用程序](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
-在 iPhone 上找到 Outlook，并重启。系统提示时输入 PIN，然后验证。现在即可开始使用 iPhone 上的 Outlook。
+在 iPhone 上找到 Outlook，并重启。 出现提示时，输入 PIN 并对其进行验证。 现在即可开始使用 iPhone 上的 Outlook。
   
 ![Set a PIN to access your organization's data](media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
@@ -72,11 +72,11 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-在 Google Play 搜索框中输入 Microsoft Outlook，然后点击" **安装**"。Outlook 安装完成后，点击" **打开**"。
+在 "Google Play 搜索" 框中输入 Microsoft Outlook，然后点击 "**安装**"。 安装完 Outlook 后，点击 "**打开**"。
   
 ![Tap Open to open Outlook app](media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-In the Outlook app tap **Get Started**, then add your Microsoft 365 Business email account \> **Continue**, and sign in with your organization credentials.
+在 Outlook 应用中，点击 "**入门**"，再添加 Microsoft 365 业务电子邮件\> **帐户，** 然后使用您的组织凭据进行登录。
   
 ![Sign in to your organizational account in Outlook](media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -84,7 +84,7 @@ In the Outlook app tap **Get Started**, then add your Microsoft 365 Business ema
   
 ![Tap on Go to store to get Intune Company Portal app](media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-在 Play Store 上安装 Intune 公司门户。
+在 "播放存储" 中，安装 Intune 公司门户。
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   

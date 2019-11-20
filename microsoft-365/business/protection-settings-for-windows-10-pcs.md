@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解 Microsoft 365 商业版中提供的默认设置和其他设置，以保护 Windows 10 设备。
-ms.openlocfilehash: 5d4bce02df1276dc9b284c7b0709c7dc26b0dbce
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 1846ee7ae09db94575ef27dcf4f5721661f7666d
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676040"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715194"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>设置 Windows 10 电脑的设备保护设置
 
@@ -43,7 +43,7 @@ ms.locfileid: "38676040"
     
 4. 在" **策略类型**"下，选择" **Windows 10 设备配置**"。
     
-5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. See [Available settings](#available-settings) for more information. 
+5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. 有关详细信息，请参阅[可用设置](#available-settings)。 
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
@@ -55,7 +55,7 @@ ms.locfileid: "38676040"
     
 ## <a name="available-settings"></a>可用设置
 
-所有设置均默认为" **开启**"状态。可使用以下设置：
+所有设置均默认为" **开启**"状态。 可使用以下设置：
   
 有关详细信息，请参阅 [Microsoft 365 商业版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)。 
   
@@ -66,13 +66,10 @@ ms.locfileid: "38676040"
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |
 |使用减少设备攻击面的规则  <br/> |启用此规则后，攻击面减少有助于阻止通常被恶意软件用来感染设备的操作和应用。仅当 Windows Defender 防病毒设置为"开启"时，此设置才可用。请参阅[减少攻击面](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)以了解详细信息。  <br/> |
 |保护文件夹免受勒索软件等威胁  <br/> |此设置使用受控文件夹访问来保护公司数据免受可疑或恶意应用（如勒索软件）的修改。 无法在受保护的文件夹中更改这些类型的应用。 仅当 Windows Defender 防病毒设置为"开启"时，此设置才可用。 请参阅[使用受控制文件夹的访问保护文件夹](https://docs.microsoft.com/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA)以了解详细信息。  <br/> |
-|防止网络访问 Internet 上的潜在恶意内容  <br/> |使用此设置可阻止出站用户连接到可能承载网络钓鱼诈骗、漏洞利用或其他恶意内容的低信誉 Internet 位置。仅当 Windows Defender 防病毒设置为"开启"时，此设置才可用。有关详细信息，请参阅[保护网络](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)。  <br/> |
-|使用 BitLocker 帮助保护 PC 上的文件和文件夹免遭未经授权的访问  <br/> |Bitlocker 通过加密计算机硬盘来保护数据，在计算机丢失或被盗时防止数据泄露。有关详细信息，请参阅 [Bitlocker 常见问题解答](https://go.microsoft.com/fwlink/?linkid=871000)。  <br/> |
+|防止网络访问 Internet 上的潜在恶意内容  <br/> |使用此设置可阻止出站用户与可承载网络钓鱼诈骗、入侵或其他恶意内容的低信誉 Internet 位置的连接。 仅当 Windows Defender 防病毒设置为**打开**时，此设置才可用。 有关详细信息，请参阅[保护网络](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)。  <br/> |
+|使用 BitLocker 帮助保护 PC 上的文件和文件夹免遭未经授权的访问  <br/> |Bitlocker 通过加密计算机硬盘来保护数据，在计算机丢失或被盗时防止数据泄露。 有关详细信息，请参阅[BITLOCKER FAQ](https://go.microsoft.com/fwlink/?linkid=871000)。  <br/> |
 |允许用户从 Microsoft Store 下载应用  <br/> |允许用户从 Microsoft Store 下载和安装应用。应用种类繁多，囊括了游戏和生产力工具，因此将此设置保留为" **开**"，但可将其关闭以增强安全性。  <br/> |
-|允许用户访问 Cortana  <br/> |Cortana 非常有用！该功能可为你打开/关闭设置、发出指令并确保你按时赴约，因此此设置默认保留为" **开**"。  <br/> |
+|允许用户访问 Cortana  <br/> |Cortana 非常有用！ Cortana 可以为你打开或关闭设置、提供说明，并确保你的约会时间已过，因此，默认情况下将此设置保持为**打开**。  <br/> |
 |允许用户接收来自 Microsoft 的 Windows 提示和广告  <br/> |Windows 提示非常方便，可在新功能发布时为用户提供指导。  <br/> |
 |让 Windows 10 设备自动保持最新状态  <br/> |确保 Windows 10 设备会自动接收最新的更新。  <br/> |
 |在空闲此时长后关闭设备屏幕  <br/> |确保用户处于空闲时，公司数据受到保护。用户可能会在咖啡店等公共场所工作，短暂离开或心不在焉，其设备有被随意瞥视的风险。借助此设置，可以控制用户处于空闲状态多长时间后关闭屏幕。  <br/> |
-   
-  
-

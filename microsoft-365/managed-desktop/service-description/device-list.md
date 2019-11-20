@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 11cbdaf47e06536afd996fd41c3ea603967e2685
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 64b5ffab59b19945b20bc614f09963ca43027afe
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640344"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715504"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
@@ -20,7 +20,7 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft 托管桌面中注册，设备必须为以下模型之一，并满足或超过列出的 RAM、处理器系列和磁盘空间规范。 不支持任何其他自定义项。
+若要在 Microsoft 托管桌面中注册，设备必须为以下模型之一，并满足或超过列出的 RAM、处理器系列和磁盘空间规范。 
 
 此处的设备链接仅供你参考。 如果要订购设备，请与商业渠道联系人合作，以确保选择正确的配置。 在此表中，*存档日期*是这些模型将受较短 Microsoft 托管桌面服务生命周期控制的日期;在此日期之后载入的任何此类设备都不会从 Microsoft 托管桌面收到完整的三年期支持。 存档设备也在[Microsoft 托管桌面存档设备](archived-device-list.md)中列出。 "*退休日期*" 是 Microsoft 托管桌面根本不支持此模型将不再受 Microsoft 托管桌面支持的日期。 在该日期，将从 Microsoft 托管桌面中删除此模型的所有注册设备，而不管它们何时注册都是如此。
 
@@ -41,7 +41,7 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 | [HP EliteBook 830/840/850 G6 笔记本电脑](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
 | [HP EliteBook x360 830 G6 笔记本电脑](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
 | [HP 精英 x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 带有5VS03AV 的 SKU，需要 IR 相机 | 5月14日，2020 | 5月14日，2023 |
-| [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 56 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | 5月14日，2020 | 5月14日，2023 |
+| [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | 5月14日，2020 | 5月14日，2023 |
 | [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | 10月23日，2020 | 10月23日，2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 带有5VS04AV 的 SKU | 2020年07月18日 | 2023年07月18日 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 带有5VS04AV 的 SKU | 2020年07月18日 | 2023年07月18日 |

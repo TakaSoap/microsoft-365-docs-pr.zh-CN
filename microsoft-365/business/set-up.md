@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: cd59570cbcb9b027780e160117b44be88770d6b9
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f29dbdb61636fdfe573a1a6920d0aed963b737ad
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575540"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721481"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>在安装向导中设置 Microsoft 365 商业版
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>添加你的域、用户并设置策略
 
-[!["标签"，告知 "管理中心" 正在更改，您可以在 aka.ms/aboutM365preview 中找到更多详细信息。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 在购买 Microsoft 365 商业版时，您可以选择使用自己的域，也可以在[注册](sign-up.md)过程中购买一个域。
 
@@ -58,7 +58,7 @@ ms.locfileid: "37575540"
     
 4. 按照向导中的步骤在[适用于 Office 365 的任何 dns 托管提供程序中创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)，以验证您是否拥有该域。 如果你知道你的域主机，请参阅[特定主机说明](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
 
-    如果托管提供商为 GoDaddy，或使用[域连接](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)启用了其他主机，则该过程非常简单，并且您将被自动要求登录，并让 Microsoft 代表你进行身份验证：
+    如果您的托管提供商是 GoDaddy 或另一台使用[域连接](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)启用的主机，则此过程非常简单，您将自动要求您登录并让 Microsoft 代表你进行身份验证。
 
     ![在 GoDaddy "确认访问" 页上，选择 "授权"。](media/godaddyauth.png)
 
@@ -93,7 +93,7 @@ ms.locfileid: "37575540"
 1. 设置向导通常可检测到你的注册机构并提供一个链接，该链接指向在注册机构网站更新 NS 记录的分步说明。 如果不是，请[将名称服务器更改为使用任何域注册机构设置 Office 365](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2)。 
 
     - 如果您有现有的 DNS 记录（例如现有网站），但 DNS 主机启用了[域连接](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)，请选择 "**添加记录**"。 在 "**选择您的在线服务**" 页面上，接受所有默认设置，然后选择 "**下一步**"，然后在 DNS 主机的页面上选择 "**授权**"。
-    - 如果已有其他 DNS 主机（未启用域连接）的现有 DNS 记录，则需要管理自己的 DNS 记录，以确保现有服务保持连接。 有关详细信息，请参阅[域基础知识](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)。
+    - 如果已有其他 DNS 主机的现有 DNS 记录（未启用域连接），则需要管理自己的 DNS 记录，以确保现有服务保持连接。 有关详细信息，请参阅[域基础知识](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)。
 
         ![连接域页面，我将管理自己的 DNS 记录。](media/connectyourdomainpage.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "37575540"
 
 在向导中设置的策略将自动应用于名为 "*所有用户*" 的[安全组](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups)。 您还可以在管理中心中创建其他组来分配策略。
 
-1. 在**移动设备上保护你的工作文件**。默认情况下，选择 "在**设备丢失或被盗时保护工作文件**" 选项。 你可以选择启用 "**管理用户如何在移动设备上访问 Office 文件**"，并建议这样做。
+1. 在 "**保护移动设备上的工作文件**" 中，默认情况下选择 "**设备丢失或被盗时保护工作文件**" 选项。 你可以选择启用 "**管理用户如何在移动设备上访问 Office 文件**"，并建议这样做。
 
     !["移动设备上的保护工作文件" 页的屏幕截图。](media/protectworkfilesondevices.png)
 
@@ -123,7 +123,8 @@ ms.locfileid: "37575540"
 
 ## <a name="deploy-office-365-client-apps"></a>部署 Office 365 客户端应用程序
 
-如果你选择在设置过程中自动安装 Office 应用，则在用户使用其工作凭据从 Windows 设备登录到 Azure AD 之后，应用将在 Windows 10 设备上安装。
+如果你选择在安装过程中自动安装 Office 应用，则在用户使用其工作凭据从 Windows 设备登录到 Azure AD 之后，应用将在 Windows 10 设备上安装。
+
 若要在移动 iOS 或 Android 设备上安装 Office，请参阅[为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。
 
 您也可以单独安装 Office。 有关说明，请参阅[在电脑或 Mac 上安装 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) 。

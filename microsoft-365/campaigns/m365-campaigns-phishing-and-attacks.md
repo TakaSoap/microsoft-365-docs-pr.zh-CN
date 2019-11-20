@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 针对针对市场活动的 Microsoft 365 防御网络钓鱼和其他攻击。
-ms.openlocfilehash: be00cdc0c70c2a2f6ac9292e933031280b7c4616
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 04779d1c69b57811cf493a9f48185eed2435c82e
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029056"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748253"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>防御网络钓鱼和其他攻击
 
@@ -36,7 +36,6 @@ Microsoft 365 提供了很多保护来防御攻击，但您可以采取一些措
 - **网络钓鱼**"仿冒骗局" 是一种看似合法的电子邮件，但它是尝试获取你的个人信息或盗取你的资金的电子邮件。
 - **哄骗**欺诈者还可以使用一种称为 "哄骗" 的技术，使其显示为似乎已收到来自自己的电子邮件。 
 - **恶意**软件是可以安装在计算机上的恶意软件，通常在单击链接或从电子邮件打开文档之后安装。 有各种类型的恶意软件（例如，勒索软件，在您的计算机上拍摄时），但您不希望拥有其中的恶意软件。 
-
 
 ## <a name="best-practices"></a>最佳做法
 
@@ -70,11 +69,9 @@ Microsoft 365 提供了很多保护来防御攻击，但您可以采取一些措
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
- 
-
 ## <a name="set-it-up"></a>设置
 
 了解有关如何执行以下操作的详细信息：
-- [使用 Office 保持文件和通信安全](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [在工作时保持安全和私密](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [使用 Office 保持文件和通信的安全](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)。
+- [在工作中保持安全和保密](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)。
   

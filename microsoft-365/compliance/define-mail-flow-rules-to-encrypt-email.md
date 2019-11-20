@@ -14,16 +14,18 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则（传输规则），以使用 Office 365 邮件加密对邮件进行加密和解密。
-ms.openlocfilehash: 17a04941d7132dbe50f8a79ec3b8879b300b414e
-ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
+ms.openlocfilehash: 54fc53d1e39208f42348b6def4afadf71092ff11
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "38685048"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748550"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
 
 作为 Office 365 全局管理员，您可以创建邮件流规则（也称为传输规则），以帮助保护您发送和接收的电子邮件。 您可以设置规则来加密任何传出的电子邮件，并删除来自组织内部或从组织发送的加密邮件的答复的加密邮件的加密。 您可以使用 Exchange 管理中心（EAC）或 Exchange Online PowerShell 创建这些规则。 除了整体的加密规则，你还可以针对最终用户选择启用或禁用单个邮件加密选项。
+
+无法对组织外部的发件人的入站邮件进行加密。
 
 如果你最近从 AD RMS 迁移到 Azure 信息保护，你将需要查看现有的邮件流规则，以确保它们可以在你的新环境中继续工作。 此外，如果您想利用新的 Office 365 邮件加密（OME）功能通过 Azure 信息保护来使用，则需要更新现有的邮件流规则。 否则，您的用户将继续接收使用以前的 HTML 附件格式的加密邮件，而不是新的无缝 OME 体验。 如果尚未设置 OME，请参阅为信息[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。
 

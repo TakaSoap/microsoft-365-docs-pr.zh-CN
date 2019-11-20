@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取有关在 Microsoft 365 商业版中提高保护级别的帮助
-ms.openlocfilehash: 9b17af7f6dde321fb8da758f0cc8223e5f488121
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676100"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748303"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -59,11 +59,11 @@ ms.locfileid: "38676100"
 
 ## <a name="protect-against-ransomware"></a>防御勒索软件
 
-勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它会通过在 exchange 中请求 "勒索" （通常为 "Bitcoin" 形式）（通常为 ""），在 exchange 中获取数据访问权限，从而从受害人 extort。 
+勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它会通过在 exchange 中请求 "勒索" （通常为 "cryptocurrencies" 的形式为 "Bitcoin"），从受害者处 extort 钱，以供 exchange 访问数据。 
   
 您可以通过创建一个或多个邮件流规则来阻止勒索软件常用的文件扩展名（在 "在[邮件中提高保护级别](#raise-the-level-of-protection-against-malware-in-mail)" 一步骤中添加的），或警告用户在电子邮件中接收这些附件，从而防止勒索软件受到侵害。
 
-除了在上一步中阻止的文件，在打开包含宏的 Office 文件附件之前，创建规则来警告用户也是一种很好的做法。 勒索软件可以隐藏在宏中，因此我们将警告用户不要从他们不知道的人打开这些文件。
+除了在上一步中阻止的文件，在打开包含宏的 Office 文件附件之前，创建规则来警告用户也是一种很好的做法。 勒索软件可以隐藏在宏中，因此警告用户不要从他们不知道的人打开这些文件。
 
 若要创建邮件传输规则，请执行以下操作：
   
@@ -128,7 +128,6 @@ ms.locfileid: "38676100"
   
 我们建议您通过创建策略来保护最重要的用户和您的自定义域，以此来开始保护。 
 
-  
 若要创建 ATP 反网络钓鱼策略，请观看[此简短的培训视频](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。 
@@ -157,26 +156,26 @@ ms.locfileid: "38676100"
    
 有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
   
-## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>使用高级威胁防护（ATP）防止恶意附件、文件和链接
+## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>针对具有高级威胁防护（ATP）的恶意附件、文件和链接提供保护
 
 ![指向的标题https://aka.ms/aboutM365preview。](../business/media/m365admincenterchanging.png)
 
-首先，请确保在管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>启用新的管理中心预览。打开**新管理中心**的文本旁边的切换。
+首先，请确保在管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>中打开了新的管理中心预览。 打开**新管理中心**的文本旁边的切换。
 
    ![上的新管理中心预览。](media/previewon.png)
 
 如果你的租户中未显示 "**设置**" 页面，请参阅如何在 Office 365 安全&amp;合规中心中完成这些步骤。 请参阅[在安全 & 合规性中心中设置 atp 安全附件](#set-up-atp-safe-attachments-in-the-security--compliance-center)，并[在安全 & 合规性中心中设置 atp 安全链接](#set-up-atp-safe-links-in-the-security--compliance-center)。
 
 1.  在左侧导航中，选择 "**设置**"。
-2. 在 "**设置**" 页面上，选择 "**增加对来自高级威胁的保护**" 卡片的 "**查看**"。</br></br>
+2. 在 "**安装程序**" 页上，选择 "**增强来自高级威胁的保护**" 卡片上的 "**查看**"。</br></br>
     ![选择 "从高级威胁提高保护" 上的 "查看"。](media/startatp.png) 
 
 3. 在 "**提高来自高级威胁的保护**" 页上，选择 "**已启动**"。
-4. 在打开的窗格中，选中 "**电子邮件中的链接和附件**" 旁边的复选框，**扫描 SharePoint、OneDrive 和团队**中的文件，并在 "扫描项目" 下的 Office **Online 应用中扫描链接**以**查找恶意内容**。
+4. 在打开的窗格中，选中 "电子邮件中的**链接和附件**" 旁边的复选框、"在**SharePoint、OneDrive 和团队中扫描文件**" 和 "扫描项目中的 office **Online 应用程序**" 中的链接，**以查找恶意内容**。
 
       - **在 "电子邮件中的链接和附件**" 下，键入所有用户或要扫描其电子邮件的特定用户。
 
-    ![选中 "增加 protestion 中的所有复选框，并从高级威胁"。](media/setatp.png)
+    ![选中 "增强对来自高级威胁的保护" 中的所有复选框。](media/setatp.png)
 5. 选择 "**创建策略**" 以打开 ATP 安全附件和 atp 安全链接。
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>在安全 & 合规中心中设置 ATP 安全附件
@@ -288,9 +287,9 @@ ms.locfileid: "38676100"
 
 您可以阻止组织中的人员共享其日历，也可以管理他们可以共享的内容。 例如，您可以将共享限制为仅限共享忙/闲时间。
 
-1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然后选择 "**设置** \> **服务" & 外接程序**
-2. 在 "**服务" & "外接程序**" 页上，选择 "**日历**"，并选择组织中的人员是否可以与拥有 Office 365 或 Exchange 或任何人的用户共享其日历。 
-    如果选择 "与任何人共享"，则可以决定只共享忙/闲信息。
+1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然后选择 "**设置** \> **服务 & 外接程序**"。
+2. 在 "**服务" & "外接程序**" 页上，选择 "**日历**"，然后选择组织中的人员是否可以与拥有 Office 365 或 Exchange 的人员或任何人共享其日历。 
+    如果选择 "与任何人共享" 选项，则可以决定仅共享忙/闲信息。
 
 3. 在页面底部选择 "**保存更改**"。
 

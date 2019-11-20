@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: '了解如何设置运行 Windows 10 Pro for Microsoft 365 商业用户的 Windows 设备。 '
-ms.openlocfilehash: 7b6fa2ce3243500c3ddcff7883fa9d8da27dcf86
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575560"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718861"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 商业版用户设置 Windows 设备
 
@@ -41,7 +41,7 @@ ms.locfileid: "37575560"
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>将 Windows 10 设备加入到组织的 Azure AD
 
-一旦组织中的所有 Windows 设备升级到 Windows 10 专业版创意者更新或者已经运行 Windows 10 专业版创意者更新，就可以将这些设备加入到组织的 Azure Active Directory。一旦加入设备，将自动升级到 Windows 10 商业版，这是 Microsoft 365 商业版订阅的一部分。
+如果组织中的所有 Windows 设备都已升级到 Windows 10 Pro 创意者更新或已运行 Windows 10 Pro 创意者更新，则可以将这些设备加入到组织的 Azure Active Directory 中。 设备加入后，它们将自动升级到 Windows 10 商业版，这是 Microsoft 365 商业版订阅的一部分。
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>全新或新升级的 Windows 10 专业版设备
 
@@ -89,7 +89,7 @@ ms.locfileid: "37575560"
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-如果已将文件上传到 OneDrive for Business，请将其同步回电脑。如果使用第三方工具迁移个人资料和文件，请将这些也同步到新的个人资料中。
+如果已将文件上传到 OneDrive for Business，请将其同步回电脑。 如果您使用第三方工具来迁移配置文件和文件，也将其同步到新的配置文件。
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>验证设备是否连接到 Azure AD
 
@@ -97,7 +97,7 @@ ms.locfileid: "37575560"
   
 在同步状态页面上，单击"同步"，将最新的移动设备管理策略同步到电脑上。
   
-若要开始使用 Microsoft 365 商业版 帐户，请转到 Windows 的" **开始**"按钮，右键单击当前帐户图片，然后单击" **切换帐户**"。使用组织电子邮件和密码进行登录。
+若要开始使用 Microsoft 365 商业版帐户，请转到 Windows "**开始**" 按钮，右键单击您当前的帐户图片，然后**切换帐户**。 使用组织电子邮件和密码进行登录。
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   

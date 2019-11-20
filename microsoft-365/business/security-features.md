@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业版附带的安全功能。
-ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f24836ef93c529eddc05c767d6e4fa8af6aef314
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031437"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715134"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
 
@@ -36,7 +36,6 @@ Microsoft 365 商业版提供了简化的安全功能，以帮助保护电脑、
 [![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 您可以在管理中心管理许多 Microsoft 365 商业安全功能，这为您提供了一种简单的方法来打开或关闭这些功能。 在管理中心，您可以执行以下操作：
-  
   
 - [设置 Android 或 iOS 设备的应用程序管理设置](app-protection-settings-for-android-and-ios.md)。 
     
@@ -68,14 +67,14 @@ Microsoft 365 商业版中的高级功能可帮助您保护业务，抵御网络
     
   - 完善的附件扫描和 AI 分析，以检测并丢弃危险邮件。
     
-  - 自动检查电子邮件中的链接以进行评估，如果它们是网络钓鱼方案的一部分。 这使您可以安全地访问不安全的网站。
+  - 自动检查电子邮件中的链接以进行评估（如果它们是网络钓鱼方案的一部分）。 这使您可以安全地访问不安全的网站。
 
 - **[Azure 门户中的 Intune 的完整功能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    通过在 Azure 门户中访问 Intune 管理中心，可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 高级设备管理，这些设备不能通过 Microsoft 使用365商业管理中心。
+    通过在 Azure 门户中访问 Intune 管理中心，可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 高级设备管理，这些功能无法通过 Microsoft 使用365商业管理中心。
 - **与 Azure AD P1 计划相同的[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
-    条件访问可帮助保护您的组织不受登录风险、访问来自意外网络或区域设置的尝试、访问尝试形成有风险的设备类型等。 在第一次身份验证完成后强制执行条件访问策略，并使用来自第一种身份验证事件的信号来确定是否应批准、拒绝或 f 更好的验证（例如，第二种标识形式）。必填。
+    条件访问可帮助保护您的组织不受登录风险、访问来自意外网络或区域设置的尝试、访问来自有风险的设备类型的尝试，等等。 在第一次身份验证完成后，将强制执行条件访问策略，并使用来自第一种身份验证事件的信号来确定是否应批准、拒绝或更多校对（如第二种形式的标识）是必需的。
 
     条件访问功能包括：
 
@@ -85,7 +84,7 @@ Microsoft 365 商业版中的高级功能可帮助您保护业务，抵御网络
     - 需要对 access 进行 MFA
     - 阻止对使用[旧版身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)的应用的访问
     - 要求应用 tp 使用[Intune 应用保护](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
-    - 自定义身份验证（如与第三方提供商的 MFA），例如双核。
+    - 自定义身份验证（如与第三方提供商的 MFA），例如，双核。
    
     其他功能：
     - 混合 Azure AD 的[自助服务密码重置](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization)
@@ -96,15 +95,15 @@ Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的
 
 - **[数据丢失防护策略](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**（DLP）概述。 
     
-    您可以设置 DLP 以自动检测敏感信息，如信用卡号、社会保险号码等，以防止无意中与公司以外的用户共享。
+    您可以设置 DLP 以自动检测敏感信息，如信用卡号、社会保险号码等，以防止无意中与公司外部共享。
     
 - **[Exchange Online Archiving](https://products.office.com/exchange/microsoft-exchange-online-archiving-email)**
     
-    Exchange Online 存档许可证使邮件能够通过连续数据备份轻松存档。 它存储用户的所有电子邮件，包括已删除的项目，以备日后发现或还原时使用。 此外，您还可以使用不同的保留策略来保留电子邮件数据以用于诉讼保留、电子数据展示或满足合规性要求。
+    Exchange Online 存档许可证使邮件能够通过连续数据备份轻松存档。 它存储用户的所有电子邮件，包括已删除的项目，以备日后发现或还原时需要。 此外，您还可以使用不同的保留策略来保留电子邮件数据以用于诉讼保留、电子数据展示或满足合规性要求。
     
 - **[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 商业版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，您可以创建**敏感度标签**，以允许您使用类似于 "不转发" 和 "不复制" 的控件来控制对电子邮件和文档中敏感信息的访问。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关更多详细信息，请参阅[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装**AzInfoProtection_UL .exe**。
+   Microsoft 365 商业版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，可以创建**敏感度标签**，以允许您控制对电子邮件和文档中敏感信息的访问，其中包含 "请勿转发" 和 "不复制" 等控件。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关详细信息，请参阅[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装**AzInfoProtection_UL .exe**。
 
 您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将被添加到 Microsoft 365 Business 管理中心。
   
