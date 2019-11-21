@@ -12,12 +12,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: 了解新的服务配额功能。
-ms.openlocfilehash: 3414fce02844629826edc6d9474f746aa27cfa2e
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: fff63b3c61ad95696e7f7677a34154ad65e82259
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012446"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753571"
 ---
 # <a name="allotment-basics"></a>服务配额基础
 
@@ -47,4 +47,4 @@ ms.locfileid: "38012446"
 
 ## <a name="getting-started"></a>入门
 
-仅在一小部分客户的私人预览版中提供服务配额功能。 如果你有兴趣加入，请填写此表单：[https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)
+仅在一小部分客户的私人预览版中提供服务配额功能。 如果你有兴趣加入，请填写以下表单： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

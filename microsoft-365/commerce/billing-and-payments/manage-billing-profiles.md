@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 description: 了解计费配置文件如何支持发票。
 keywords: 计费配置文件、发票、费用、管理费用
-ms.openlocfilehash: 9db8b949cb07c8386505234d9d88aa2627a752b5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029046"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753541"
 ---
 # <a name="manage-billing-profiles"></a>管理计费配置文件
 对于从 Microsoft 购买产品和服务的商业客户，计费配置文件允许您自定义发票中包含的项目以及支付发票的方式。
 
 计费配置文件包括以下信息：
 
-- 与配置文件相关**的帐单帐户名称** &mdash;
-- **支付方式** &mdash;信用卡或借记卡、银行帐户、支票或电汇转帐
-- **联系人信息** &mdash;帐单地址和联系人姓名
-- **发票设置** &mdash;货币根据计费帐户所在的国家/地区、可选的 PO 号以及将发票作为电子邮件附件接收的选项。
-- 允许您更改帐单配置文件、支付帐单或使用付费配置文件上的付款方式进行购买的**权限** &mdash;权限
+- 与配置文件相关**的帐单帐户名称** &ndash;
+- **支付方式** &ndash;信用卡或借记卡、银行帐户、支票或电汇转帐
+- **联系人信息** &ndash;帐单地址和联系人姓名
+- **发票设置** &ndash;货币根据计费帐户所在的国家/地区、可选的 PO 号以及将发票作为电子邮件附件接收的选项。
+- 允许您更改帐单配置文件、支付帐单或使用付费配置文件上的付款方式进行购买的**权限** &ndash;权限
 
 使用计费配置文件控制购买和自定义发票。 为使用记帐配置文件购买的产品生成月度发票。 您可以自定义发票，例如更新采购订单编号和电子邮件发票首选项。
 

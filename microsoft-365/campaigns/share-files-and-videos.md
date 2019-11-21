@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 团队和 SharePoint 中共享市场活动中的文件和视频。
-ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031187"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753611"
 ---
 # <a name="share-files-and-videos"></a>共享文件和视频
 
-当您需要控制哪些用户可以查看以及谁可以编辑您的文件时，您需要将文件存储在安全的位置，从而确保正确应用权限。 您可以使用 Microsoft 团队存储文件，然后使用 Microsoft 团队或通过发送 SharePoint 链接在市场活动内部或外部共享文件。 发送链接（而不是电子邮件附件）意味着您知道谁正在查看和修改文件，并且在没有您的许可的情况下无法查看或修改这些文件。 
+当您需要控制谁可以查看您的文件以及谁可以编辑您的文件时，您需要将文件存储在一个安全的位置，以确保正确应用权限。 您可以使用 Microsoft 团队存储文件，然后使用 Microsoft 团队或通过发送 SharePoint 链接在市场活动内部或外部共享这些文件。 发送链接（而不是电子邮件附件）意味着您知道谁正在查看和修改文件，并且在没有您的许可的情况下无法查看或修改这些文件。 
 
 ![Microsoft 团队窗口的关系图，显示 "文件" 选项卡并获取菜单上的链接](media/m365-democracy-teams-sharefiles.png)
 

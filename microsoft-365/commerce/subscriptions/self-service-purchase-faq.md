@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
-ms.openlocfilehash: cbf30a29ed3948cb3b20da919835ed2524163617
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: fb295315eca84614e78792d0900318610c26b239
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721643"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757689"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
@@ -29,12 +29,11 @@ ms.locfileid: "38721643"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Microsoft 宣布的针对电源平台产品的自助服务购买有哪些变化？
 
-更新自2019年10月31日起，在过去一周内，我们已为客户提供有关为 Power Platform 产品的自助服务购买功能推出的客户反馈。 根据反馈，我们正在对计划进行以下更改：
+在11月19日，我们向 IT 管理员提供了一种通过 PowerShell 基于每个产品关闭自助购买的方法。 若要了解如何使用它，请参阅[Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
 
-- 在19月19日，我们将通过 PowerShell 向 IT 管理员提供一种基于每个产品关闭自助购买的方法。 若要了解如何使用它，请参阅[Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
-- 若要提供更多的时间来为此更改做准备，我们正在为 Power Platform 产品更新启动，以在14月14日为所有商业云客户启动 Power BI。  
+若要提供更多的时间来为此更改做准备，我们正在更新 Power BI 产品的自助服务购买功能启动，以在1月14日为所有商业云客户提供。  
 
-从2020年1月14日起，将提供适用于美国商业云客户的 Power Platform 产品（Power BI、Power Apps 和 Power 自动化）的自助服务购买、订阅和许可证管理功能。 自助式购买为用户提供了一种尝试新技术的机会，使他们能够开发最终会对更大的组织带来好处的解决方案。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。 集中采购和 IT 团队可查看通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买和部署自助服务购买解决方案的所有用户，并将能够通过 PowerShell 基于每个产品关闭自助购买。
+从2020年1月14日起，将提供适用于美国商业云客户的 Power Platform 产品（Power BI、Power Apps 和 Power 自动化）的自助服务购买、订阅和许可证管理功能。 自助式购买为用户提供了一种尝试新技术的机会，让他们能够开发最终会对更大的组织带来好处的解决方案。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。 集中采购和 IT 团队可查看通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买和部署自助服务购买解决方案的所有用户，并将能够通过 PowerShell 基于每个产品禁用自助购买。
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>为什么 Microsoft 为电源平台产品添加自助服务购买选项？
 
@@ -46,13 +45,13 @@ Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>是否会为电源平台产品之外的服务启用自助服务购买？
 
-目前，电源平台系列产品是通过自助购买提供服务的唯一服务。
+目前，只有 Power Platform 系列产品通过 "自助式购买" 提供。
 
 ## <a name="making-a-self-service-purchase"></a>进行自助服务购买
 
 ### <a name="how-does-a-customer-make-a-self-service-purchase"></a>客户如何购买自助服务？
 
-客户将能够从 Microsoft Power BI、Power Apps 和 Power 自动化网站进行自助在线购买。 将首先要求客户输入电子邮件地址，以确保他们是现有 Azure Active Directory （AD）租户中的用户，然后通过使用其 Azure AD 凭据将其定向到 "登录"。 登录后，系统将要求客户选择他们要购买的订阅数并提供信用卡付款。 购买完成后，他们将能够开始使用其订阅。 购买者还可以访问<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>的受限视图，在这里，他们可以让组织中的其他人使用该产品。
+客户将能够从 Microsoft Power BI、Power Apps 和 Power 自动化网站进行自助在线购买。 将首先要求客户输入电子邮件地址，以确保他们是现有 Azure Active Directory （AD）租户中的用户。 然后，它们将通过使用其 Azure AD 凭据定向到 "登录"。 登录后，将要求客户选择他们要购买的订阅数并提供信用卡付款。 购买完成后，他们将能够开始使用其订阅。 购买者还可以访问<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>的受限视图，在这里，他们可以让组织中的其他人使用该产品。
 
 ### <a name="what-are-the-payment-options-for-self-service-purchases"></a>自助服务购买的付款选项是什么？
 
@@ -88,7 +87,7 @@ Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，
 
 ### <a name="what-is-the-pricing-for-self-service-purchases"></a>自助购买的定价是什么？
 
-适用于自助购买的每个电源平台产品的定价将在 Microsoft 网站上提供，同时还作为结帐体验的一部分显示，同时购买自助服务。 这些价格可能与组织在通过合作伙伴提供的集中购买或价格时支付的价格不同。
+适用于自助购买的每个电源平台产品的定价将在 Microsoft 网站上提供，同时还作为签入体验的一部分显示，同时购买自助服务。 这些价格可能与组织在通过合作伙伴提供的集中购买或价格时支付的价格不同。
 
 ### <a name="who-is-responsible-for-payment"></a>谁负责付款？
 

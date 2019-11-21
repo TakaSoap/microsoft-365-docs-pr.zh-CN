@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 的市场活动对用户有何影响。
-ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11a141ba24aa45c0c60dec064877f319f0b5ded2
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031237"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753591"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 的市场活动对用户有何影响
 
@@ -53,7 +53,7 @@ Microsoft 365 的市场活动使黑客更难获取对环境的访问权限。 �
 设置这些设置后，用户将在访问这些设备（包括邮件）上的组织数据时提示用户使用身份验证器应用。 
 
 ## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>保持 BYOD Mac 和 Windows 10 Pc 新鲜 
-用户将其主要工作设备保持为最新状态也很重要：
+用户将其主要工作设备保持为最新状态也是非常重要的：
 - 在收到提示时，安装最新版本的 Office 桌面应用，并将这些更新与更新保持最新。 
 - 保持在操作系统更新（如 Windows 更新）之上。
 
@@ -73,8 +73,4 @@ Microsoft 365 的市场活动使黑客更难获取对环境的访问权限。 �
 
 
 ## <a name="set-up-managed-windows-10-devices"></a>设置托管 Windows 10 设备
-我们建议您最重要的教职员工成员使用您管理的最近获取的 Windows 10 设备。 我们将向你介绍如何[管理和保护这些设备](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)。 这样可确保作为黑客最大价值的教职员工成员获得最大限度的保护。 
-
-
-
-  
+我们建议您最重要的教职员工成员使用您管理的最近获取的 Windows 10 设备。 我们将向你介绍如何[管理和保护这些设备](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)。 这样可确保作为黑客最大价值的教职员工成员能够获得最大限度的保护。 

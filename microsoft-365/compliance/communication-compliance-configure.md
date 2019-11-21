@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置通信合规性策略以配置员工通信以供审阅。
-ms.openlocfilehash: 76b28443d2fa77967933ea61f2724a2a5ff072be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685077"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755600"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>为 Microsoft 365 配置通信合规性（预览）
 
@@ -42,7 +42,7 @@ ms.locfileid: "38685077"
 
 - **步骤2（必需）**：[在组织中提供通信合规性](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    将自己添加到**监管审核管理员**角色，以便您可以设置策略。 您还需要将**案例管理**和**审阅**角色分配给将对具有策略匹配的邮件进行调查和修正操作的人员或组。 分配了这些角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
+    将自己添加到**监管审核管理员**角色，以便您可以设置策略。 您还需要创建一个具有**监管审核管理员**、**案例管理**和**审阅**角色的组，以便对具有策略匹配的邮件进行调查和修正操作的人员或组使用这些角色。 分配了这些角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
 - **步骤3（必需）**：[设置通信合规性策略](#step-3-create-a-communication-compliance-policy-required)
 
@@ -77,29 +77,7 @@ ms.locfileid: "38685077"
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>步骤2：在您的组织中提供通信合规性（必需）
 
-若要在 Microsoft 365 合规性中心中将**通信合规性**用作菜单选项，您必须分配有监管审核管理员角色。 若要使用策略匹配来调查和修正邮件，必须为您分配**事例管理**和**审核**角色。
-  
-若要执行此操作，您可以将自己添加为监管审核角色组的成员，也可以创建新的角色组。
-  
-### <a name="add-required-roles-to-the-supervisory-reviewer-role-group"></a>向监管的审阅者角色组添加所需的角色
-
-1. 在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。
-
-2. 在 Microsoft 365 合规性中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
-
-3. 选择 "**监管审核**" 角色组，然后单击 "详细信息" 页的 "**已分配角色**" 部分中的 "**编辑**"。
-
-4. 选择 "**编辑**"，然后选择 "**添加**"。 选中 "**案例管理**和**审阅**" 复选框，然后选择 "**添加**"。
-
-5. 选择 "**完成**"，然后选择 "**保存**"。
-
-6. 在 "**成员**" 部分，选择 "**编辑**" 以添加要为组织管理通信合规性的人员。
-
-7. 选择 "**编辑**"，然后选择 "**添加**"。 选中您要使用策略匹配管理邮件的所有用户和组的复选框，然后选择 "**添加**"。
-
-8. 选择 "**完成**"，然后选择 "**保存**"。
-
-9. 选择 "**关闭**" 以退出 "角色组详细信息" 页。
+若要在 Microsoft 365 合规性中心中将**通信合规性**用作菜单选项，您必须分配有**监管审核管理员**角色。 此外，若要使用策略匹配来调查和修正邮件，您必须为具有**监管审核管理员**、**案例管理**和**审阅**角色的审阅者创建一个组。
 
 ### <a name="create-a-new-role-group"></a>创建新的角色组
 

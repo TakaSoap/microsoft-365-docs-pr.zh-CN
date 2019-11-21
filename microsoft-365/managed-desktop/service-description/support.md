@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 134e971e00fc64d3ea005d32ed95359ed8fb8feb
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982503"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757659"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面支持
 
@@ -39,7 +39,7 @@ Microsoft 托管桌面支持包括：
 
 支持详细信息：
 
-- Current：北美、加拿大（不包括魁北克）、英国、澳大利亚和新西兰（24x7x365） 
+- 当前：美国、加拿大（不包括魁北克）、英国、比利时、卢森堡、荷兰、澳大利亚和新西兰（24x7x365） 
 - 英语是与客户进行电话和聊天对话的唯一受支持的语言 
 - 我们与你的公司支持人员合作，而不是更换。业务线（LOB）应用程序、网络资源等仍由你的技术支持人员处理 
 - "Test" 组中的 Microsoft 托管桌面设备和不属于 Microsoft 托管桌面的设备不在范围内 

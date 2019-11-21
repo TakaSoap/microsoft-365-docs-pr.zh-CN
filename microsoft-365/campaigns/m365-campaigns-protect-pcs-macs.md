@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 针对针对市场活动的 Microsoft 365 防御网络钓鱼和其他攻击。
-ms.openlocfilehash: 2533710ccb7b173f5cc1fd19b185fcd32b7801c9
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 93bb36f115ee5f83e07ac9623c852fec4dbf205f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031287"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753621"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保护非托管 Windows 10 电脑和 Mac
 
-你可以通过将 Windows 10 电脑和 Mac 注册到 Microsoft Intune 中来管理这些电脑和 Mac，这使你能够在访问环境中的数据之前确保 tht 的状态和安全性。 但是，许多市场活动和小型公司都包含了自己的设备（byod）的人员，这些设备不会由组织管理。 对于这些非托管电脑和 Mac，请使用本文以确保配置最低安全功能。 
+你可以通过在 Microsoft Intune 中注册 Windows 10 电脑和 Mac 来管理这些电脑和 Mac，这使你能够在访问环境中的数据之前确保它们处于健康和安全状态。 但是，许多市场活动和小型公司都包含了自己的设备（byod）的人员，这些设备不会由组织管理。 对于这些非托管电脑和 Mac，请使用本文以确保配置最低安全功能。 
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -53,13 +53,12 @@ ms.locfileid: "38031287"
  如果设备加密在设备上不可用，则可以改为打开标准[BitLocker 加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)。 （BitLocker 在 Windows 10 家庭版中不可用。） 
 
 
-
 **使用 Windows 安全保护你的设备**<p>
 如果你有 Windows 10，你将获得最新的使用 Windows 安全的防病毒保护。 当您首次启动 Windows 10 时，Windows 安全处于打开状态，并通过扫描恶意软件（恶意软件）、病毒和安全威胁来主动帮助保护你的电脑。 Windows 安全使用实时保护来扫描您在电脑上下载或运行的所有内容。
 
 Windows 更新会自动下载 Windows 安全更新，以帮助确保你的电脑安全并保护其免受威胁的侵扰。
 
-如果你具有早期版本的 Windows 且正在使用 Microsoft 安全概要，最好移动到 Windows 安全。 有关详细信息，请参阅[help 使用 Windows 安全保护我的设备](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
+如果你具有早期版本的 Windows 且正在使用 Microsoft 安全概要，最好移动到 Windows 安全。 有关详细信息，请参阅[帮助保护我的设备和 Windows 安全](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
 
 **启用 Windows 防火墙**<p>
 即使已打开另一个防火墙，也应始终运行 Windows 防火墙。 关闭 Windows 防火墙可能会使你的设备（如果你的网络可用）更容易受到未经授权的访问。 请参阅[打开或关闭 Windows 防火墙](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)获取说明

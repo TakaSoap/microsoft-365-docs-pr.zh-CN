@@ -22,26 +22,26 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置与 Microsoft 团队的联机会议。
-ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7ecdec3f7dc329f1ff70bf8d72a7ca5bc946636f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772299"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753581"
 ---
 # <a name="set-up-meetings"></a>设置会议
 
-Microsoft 团队中的会议包括音频、视频和共享。 由于这些用户处于联机状态, 你将始终拥有会议空间, 并且你的市场活动永远不需要会议室或投影仪。Microsoft 团队会议是与组织内部和外部的员工和志愿者共同提供的一种非常好的方法。 您不需要是组织的成员, 甚至可以拥有加入会议的帐户。 对于您的政治活动, 您可以使用 Microsoft 团队安排和运行在线会议。 你可以在组织外部加入员工、志愿者和来宾。 在会议期间, 您可以共享屏幕、共享文件、分配任务等。
+Microsoft 团队中的会议包括音频、视频和共享。 由于这些用户处于联机状态，你将始终拥有会议空间，并且你的市场活动永远不需要会议室或投影仪。Microsoft 团队会议是与组织内部和外部的员工和志愿者共同提供的一种非常好的方法。 您不需要是组织的成员，甚至可以拥有加入会议的帐户。 对于您的政治活动，您可以使用 Microsoft 团队安排和运行在线会议。 你可以在组织外部加入员工、志愿者和来宾。 在会议期间，您可以共享屏幕、共享文件、分配任务等。
 
 [![会议中的两个用户的说明](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
-下载[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)中的信息图, 以快速了解如何通过 Microsoft 团队加入或主持联机会议。
+下载[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)中的信息图，以快速了解如何通过 Microsoft 团队加入或主持联机会议。
 
 ## <a name="best-practices"></a>最佳做法
 
-请遵循以下针对您的联机会议的最佳实践:
-1. 在 Microsoft 团队中立即安排你的联机会议。 您可以选择团队和频道, 团队将自动邀请该团队或频道中的参与者。
-2. 需要即席会议？ 如果你正在使用一对一聊天, 请选择 "**立即开会**" 开始与你正在聊天的用户进行视频或音频呼叫。 
+请遵循以下针对您的联机会议的最佳实践：
+- 在 Microsoft 团队中立即安排你的联机会议。 您可以选择团队和频道，团队将自动邀请该团队或频道中的参与者。
+- 需要即席会议？ 如果你正在使用一对一聊天，请选择 "**立即开会**" 开始与你正在聊天的用户进行视频或音频呼叫。 
 
 
 ## <a name="schedule-a-meeting"></a>安排会议
@@ -52,6 +52,6 @@ Microsoft 团队中的会议包括音频、视频和共享。 由于这些用户
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 
-在 Microsoft 团队中了解有关会议的详细信息:
+在 Microsoft 团队中了解有关会议的详细信息：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]

@@ -11,12 +11,12 @@ ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: f14809e58c1580333ba4e412a2b442df79e61975
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047c93dd6dbeeb1e55bfc22b337f42870f34e104
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029026"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753551"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>为你的组织管理第三方应用订阅
 
@@ -50,7 +50,7 @@ ms.locfileid: "38029026"
 - 西欧
 
 ## <a name="set-up-app"></a>设置应用程序
-管理员需要先激活第三方应用程序，然后才能将其分配给用户。 它们在第三方发布者的门户中被激活。 
+管理员需要先激活第三方应用程序，然后才能将其分配给用户。 这些应用程序将在第三方发布者的门户中激活。 
 
 **激活第三方应用程序**
 1. 转到 " [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=837890)"，然后打开 "**尝试预览"**。
@@ -60,7 +60,7 @@ ms.locfileid: "38029026"
 
 您将转到应用程序发布者的网站，您可以在其中激活应用程序。 
 
-## <a name="managing-3rd-party-apps"></a>管理第三方应用程序
+## <a name="managing-third-party-apps"></a>管理第三方应用程序
 管理员在两个位置管理第三方应用： Microsoft 365 管理中心和第三方应用程序提供商的门户。 可在每个门户中执行这些操作。
 
 ### <a name="app-status"></a>应用状态
@@ -71,7 +71,7 @@ ms.locfileid: "38029026"
 | 更改许可证数量 <br> 管理你的帐单支付方式 <br> 管理你的帐单支付方式 <br> 更改支付方式（信用卡） <br> 查看发票 <br> 取消应用订阅 | 设置应用程序（为每个应用一次） <br> 向用户分配许可证 <br> 技术支持 |
 
 ## <a name="assign-licenses"></a>分配许可证
-管理员需要先激活第三方应用程序，然后才能将其分配给用户。 它们在第三方发布者的门户中被激活。 在 "应用程序" 页上的 "设置" & "操作" 下，选择要分配许可证的链接。
+管理员需要先激活第三方应用程序，然后才能将其分配给用户。 它们是在第三方发布者的门户中激活的。 在 "应用程序" 页上的 "**设置" & "操作**" 下，选择要分配许可证的链接。
 
 **分配第三方应用程序**
 
@@ -81,7 +81,7 @@ ms.locfileid: "38029026"
 4. 在 "**设置" & "操作**" 下，选择要**在 publisher 的门户中管理**的链接。 
  
 ## <a name="change-license-quantity"></a>更改许可证数量
-管理员可以更改其组织拥有的许可证的数量。 这仅适用于使用基于座位的定价购买的应用程序。
+管理员可以更改其组织拥有的许可证的数量。 这仅适用于使用基于座位的定价购买的应用。
 
 **更改许可证数量**
 
@@ -99,7 +99,7 @@ ms.locfileid: "38029026"
 
 有关计费配置文件的详细信息，请参阅[了解计费配置文件](https://docs.microsoft.com/microsoft-store/billing-profile)。 
 
-**更改作为服务的应用程序订阅上的记帐配置文件**
+**在软件服务应用订阅上更改记帐配置文件**
 
 1. 转到 " [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=837890)"，然后打开 "**尝试预览"**。
 2. 选择 "**帐单** > **产品 & 服务** > **应用程序**"。
