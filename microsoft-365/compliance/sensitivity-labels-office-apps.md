@@ -1,318 +1,153 @@
 ---
-title: 敏感度标签在 Office 应用中的工作方式
-ms.author: greglin
-author: greg-lindsay
+title: 在 Office 应用中的敏感度标签
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: ''
+ms.date: 11/20/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
-ms.translationtype: HT
+description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
+ms.openlocfilehash: 1b472185df2d45717cba6cfca30176768bf9cd4e
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417561"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755590"
 ---
-# <a name="how-sensitivity-labels-work-in-office-apps"></a><span data-ttu-id="2db1f-104">敏感度标签在 Office 应用中的工作方式</span><span class="sxs-lookup"><span data-stu-id="2db1f-104">How sensitivity labels work in Office apps</span></span>
+# <a name="sensitivity-labels-in-office-apps"></a><span data-ttu-id="00627-104">在 Office 应用中的敏感度标签</span><span class="sxs-lookup"><span data-stu-id="00627-104">Sensitivity labels in Office apps</span></span>
 
-## <a name="what-prerequisites-are-there-to-use-sensitivity-labels-in-office-applications"></a><span data-ttu-id="2db1f-105">在 Office 应用程序中使用敏感度标签有哪些先决条件？</span><span class="sxs-lookup"><span data-stu-id="2db1f-105">What prerequisites are there to use sensitivity labels in Office applications?</span></span>
+<span data-ttu-id="00627-105">本文内容：</span><span class="sxs-lookup"><span data-stu-id="00627-105">This article describes:</span></span>
 
-### <a name="common-requirements"></a><span data-ttu-id="2db1f-106">常见要求</span><span class="sxs-lookup"><span data-stu-id="2db1f-106">Common requirements</span></span> 
+- <span data-ttu-id="00627-106">对您的环境的要求，然后才能对电子邮件、文件和附件应用敏感标签。</span><span class="sxs-lookup"><span data-stu-id="00627-106">Requirements for your environment before you apply sensitivity labels to email, files, and attachments.</span></span>
+- <span data-ttu-id="00627-107">每个 Office 应用支持哪种敏感度标签功能。</span><span class="sxs-lookup"><span data-stu-id="00627-107">Which sensitivity label capabilities are supported by each Office app.</span></span>
+- <span data-ttu-id="00627-108">当您将灵敏度标签与 Office 应用程序使用的其他 Microsoft 安全和合规性技术相结合时，会发生什么情况。</span><span class="sxs-lookup"><span data-stu-id="00627-108">What happens when you combine sensitivity labels with other Microsoft security and compliance technologies that work with Office apps.</span></span>
+- <span data-ttu-id="00627-109">组织中的用户如何在使用适用于 Windows 的 Office 应用和 Office 相关 web 应用程序时使用敏感度标签。</span><span class="sxs-lookup"><span data-stu-id="00627-109">How people in your organization can use sensitivity labels when they work with Office apps for Windows and Office apps for the web.</span></span>
+- <span data-ttu-id="00627-110">在何处转到让组织中的人员使用敏感度标签开始。</span><span class="sxs-lookup"><span data-stu-id="00627-110">Where to go to get people in your organization started with sensitivity labels.</span></span>
 
-- <span data-ttu-id="2db1f-107">[必须在安全与合规中心配置和发布](https://aka.ms/managemip)统一的敏感度标签</span><span class="sxs-lookup"><span data-stu-id="2db1f-107">Unified sensitivity labels must be [configured and published in the Security and Compliance Center](https://aka.ms/managemip)</span></span>
-- <span data-ttu-id="2db1f-108">用户必须使用其工作帐户登录到 Office。</span><span class="sxs-lookup"><span data-stu-id="2db1f-108">Users must be signed in to Office with their work account.</span></span>
-- <span data-ttu-id="2db1f-109">用户必须分配有 Office 365 E3 或更高版本的许可证。</span><span class="sxs-lookup"><span data-stu-id="2db1f-109">Users must have an Office 365 E3 or above license assigned.</span></span>
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a><span data-ttu-id="00627-111">敏感度标签的订阅和许可要求</span><span class="sxs-lookup"><span data-stu-id="00627-111">Subscription and licensing requirements for sensitivity labels</span></span>
 
-### <a name="additional-requirements-for-office-for-windows"></a><span data-ttu-id="2db1f-110">针对 Office for Windows 的其他要求</span><span class="sxs-lookup"><span data-stu-id="2db1f-110">Additional requirements for Office for Windows</span></span> 
+<span data-ttu-id="00627-112">用户必须至少已分配以下许可证之一：</span><span class="sxs-lookup"><span data-stu-id="00627-112">Users must have at least one of the following licenses assigned:</span></span>
 
-- <span data-ttu-id="2db1f-111">Azure 信息保护客户端必须未在 Office 中运行。</span><span class="sxs-lookup"><span data-stu-id="2db1f-111">The Azure Information Protection client must not be running in Office.</span></span> <span data-ttu-id="2db1f-112">另请参阅：[敏感度标签能否与 Azure 信息保护客户端一起在 Office for Windows 中运行？](#can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows)。</span><span class="sxs-lookup"><span data-stu-id="2db1f-112">See also: [Can sensitivity labels run alongside the Azure Information Protection client in Office for Windows?](#can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows).</span></span>
+- <span data-ttu-id="00627-113">[Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)或更高版本</span><span class="sxs-lookup"><span data-stu-id="00627-113">[Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above</span></span>
 
-### <a name="additional-requirements-for-outlook-on-all-platforms"></a><span data-ttu-id="2db1f-113">针对所有平台上的 Outlook 的其他要求</span><span class="sxs-lookup"><span data-stu-id="2db1f-113">Additional requirements for Outlook on all platforms</span></span> 
+- <span data-ttu-id="00627-114">[Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software)或更高版本</span><span class="sxs-lookup"><span data-stu-id="00627-114">[Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above</span></span>
 
-- <span data-ttu-id="2db1f-114">在标签配置中，如果已打开内容标记，则必须为要在传输中插入的内容标记使用 Exchange Online。</span><span class="sxs-lookup"><span data-stu-id="2db1f-114">In your label configuration, if you turn on content marking, you must be using Exchange Online for that content marking to be inserted in transit.</span></span>
+- <span data-ttu-id="00627-115">[Azure 信息保护高级 P1](https://azure.microsoft.com/pricing/details/information-protection/)或更高版本</span><span class="sxs-lookup"><span data-stu-id="00627-115">[Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above</span></span>
 
-## <a name="what-sensitivity-label-capabilities-are-supported-in-office-today"></a><span data-ttu-id="2db1f-115">Office 目前支持哪些敏感度标签功能？</span><span class="sxs-lookup"><span data-stu-id="2db1f-115">What sensitivity label capabilities are supported in Office today?</span></span> 
+<span data-ttu-id="00627-116">Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签。</span><span class="sxs-lookup"><span data-stu-id="00627-116">The Office built-in labeling client supports sensitivity labels with a subscription version of Office.</span></span> <span data-ttu-id="00627-117">客户端不支持独立版本，例如，Office 2016 或 Office 2019。</span><span class="sxs-lookup"><span data-stu-id="00627-117">The client doesn't support standalone versions, for example, Office 2016 or Office 2019.</span></span>
 
-<table border="1" cellspacing="0" cellpadding="0">
-<th><span data-ttu-id="2db1f-116"><font size="-1">功能</span><span class="sxs-lookup"><span data-stu-id="2db1f-116"><font size="-1">Capability</span></span><th><span data-ttu-id="2db1f-117"><font size="-1">Windows</span><span class="sxs-lookup"><span data-stu-id="2db1f-117"><font size="-1">Windows</span></span><th><span data-ttu-id="2db1f-118"><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</span><span class="sxs-lookup"><span data-stu-id="2db1f-118"><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</span></span></tr>
-<tr><td>
+<span data-ttu-id="00627-118">若要使用自动或建议的敏感度标记，用户需要以下许可证之一：</span><span class="sxs-lookup"><span data-stu-id="00627-118">To use automatic or recommended sensitivity labeling, your users need one of the following licenses:</span></span>
 
-<td><span data-ttu-id="2db1f-119"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="2db1f-119"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="2db1f-120">Excel</span><span class="sxs-lookup"><span data-stu-id="2db1f-120">Excel</span></span><br>
-<span data-ttu-id="2db1f-121">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="2db1f-121">PowerPoint</span></span><br>
-<span data-ttu-id="2db1f-122">Outlook</span><span class="sxs-lookup"><span data-stu-id="2db1f-122">Outlook</span></span>
+- <span data-ttu-id="00627-119">[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)或更高版本</span><span class="sxs-lookup"><span data-stu-id="00627-119">[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above</span></span>
 
+- <span data-ttu-id="00627-120">[Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software)或更高版本</span><span class="sxs-lookup"><span data-stu-id="00627-120">[Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) or above</span></span>
 
-<td><span data-ttu-id="2db1f-123"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="2db1f-123"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="2db1f-124">Excel</span><span class="sxs-lookup"><span data-stu-id="2db1f-124">Excel</span></span><br>
-<span data-ttu-id="2db1f-125">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="2db1f-125">PowerPoint</span></span><br>
-<span data-ttu-id="2db1f-126">Outlook</span><span class="sxs-lookup"><span data-stu-id="2db1f-126">Outlook</span></span>
+- <span data-ttu-id="00627-121">[Azure 信息保护高级 P2](https://azure.microsoft.com/pricing/details/information-protection/)或更高版本</span><span class="sxs-lookup"><span data-stu-id="00627-121">[Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) or above</span></span>
 
-<td><span data-ttu-id="2db1f-127"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="2db1f-127"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="2db1f-128">Excel</span><span class="sxs-lookup"><span data-stu-id="2db1f-128">Excel</span></span><br>
-<span data-ttu-id="2db1f-129">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="2db1f-129">PowerPoint</span></span>
-<td><span data-ttu-id="2db1f-130"><font size="-1"> Outlook</span><span class="sxs-lookup"><span data-stu-id="2db1f-130"><font size="-1"> Outlook</span></span>
+## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a><span data-ttu-id="00627-122">在 Word、Excel 和 PowerPoint 中支持敏感度标签功能</span><span class="sxs-lookup"><span data-stu-id="00627-122">Support for sensitivity label capabilities in Word, Excel, and PowerPoint</span></span>
 
-<td><span data-ttu-id="2db1f-131"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="2db1f-131"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="2db1f-132">Excel</span><span class="sxs-lookup"><span data-stu-id="2db1f-132">Excel</span></span><br>
-<span data-ttu-id="2db1f-133">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="2db1f-133">PowerPoint</span></span>
-<td><span data-ttu-id="2db1f-134"><font size="-1"> Outlook</span><span class="sxs-lookup"><span data-stu-id="2db1f-134"><font size="-1"> Outlook</span></span>
+<span data-ttu-id="00627-123">对于每项功能，下表列出了应用程序所需的最低版本。</span><span class="sxs-lookup"><span data-stu-id="00627-123">For each capability, the following table lists the minimum version you need for that app.</span></span> <span data-ttu-id="00627-124">TBD 表示无法在该平台上使用该功能。</span><span class="sxs-lookup"><span data-stu-id="00627-124">TBD means that you can't use that capability on that platform.</span></span>
 
-<td><span data-ttu-id="2db1f-135"><font size="-1"> Word</span><span class="sxs-lookup"><span data-stu-id="2db1f-135"><font size="-1"> Word</span></span><br>
-<span data-ttu-id="2db1f-136">Excel</span><span class="sxs-lookup"><span data-stu-id="2db1f-136">Excel</span></span><br>
-<span data-ttu-id="2db1f-137">PowerPoint</span><span class="sxs-lookup"><span data-stu-id="2db1f-137">PowerPoint</span></span>
-<td><span data-ttu-id="2db1f-138"><font size="-1"> Outlook </b>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-138"><font size="-1"> Outlook </b>
-</span></span></tr>
+|<span data-ttu-id="00627-125">功能</span><span class="sxs-lookup"><span data-stu-id="00627-125">Capability</span></span>                                                                                                        |<span data-ttu-id="00627-126">Windows 桌面</span><span class="sxs-lookup"><span data-stu-id="00627-126">Windows Desktop</span></span> |<span data-ttu-id="00627-127">Mac 桌面</span><span class="sxs-lookup"><span data-stu-id="00627-127">Mac Desktop</span></span> |<span data-ttu-id="00627-128">iOS</span><span class="sxs-lookup"><span data-stu-id="00627-128">iOS</span></span>    |<span data-ttu-id="00627-129">Android</span><span class="sxs-lookup"><span data-stu-id="00627-129">Android</span></span>      |<span data-ttu-id="00627-130">Web</span><span class="sxs-lookup"><span data-stu-id="00627-130">Web</span></span>                                                         |
+|------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
+|[<span data-ttu-id="00627-131">手动应用、更改或删除标签</span><span class="sxs-lookup"><span data-stu-id="00627-131">Manually apply, change, or remove label</span></span>](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| <span data-ttu-id="00627-132">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-132">1910+</span></span>          | <span data-ttu-id="00627-133">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-133">16.21+</span></span>     | <span data-ttu-id="00627-134">2.21+</span><span class="sxs-lookup"><span data-stu-id="00627-134">2.21+</span></span> | <span data-ttu-id="00627-135">16.0.11231+</span><span class="sxs-lookup"><span data-stu-id="00627-135">16.0.11231+</span></span> | [<span data-ttu-id="00627-136">预览</span><span class="sxs-lookup"><span data-stu-id="00627-136">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="00627-137">应用默认标签</span><span class="sxs-lookup"><span data-stu-id="00627-137">Apply a default label</span></span>](sensitivity-labels.md#what-label-policies-can-do)                                         | <span data-ttu-id="00627-138">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-138">1910+</span></span>          | <span data-ttu-id="00627-139">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-139">16.21+</span></span>     | <span data-ttu-id="00627-140">2.21+</span><span class="sxs-lookup"><span data-stu-id="00627-140">2.21+</span></span> | <span data-ttu-id="00627-141">16.0.11231+</span><span class="sxs-lookup"><span data-stu-id="00627-141">16.0.11231+</span></span> | <span data-ttu-id="00627-142">待定</span><span class="sxs-lookup"><span data-stu-id="00627-142">TBD</span></span>                                                        |
+|[<span data-ttu-id="00627-143">需要调整以更改标签</span><span class="sxs-lookup"><span data-stu-id="00627-143">Require a justification to change a label</span></span>](sensitivity-labels.md#what-label-policies-can-do)                     | <span data-ttu-id="00627-144">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-144">1910+</span></span>          | <span data-ttu-id="00627-145">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-145">16.21+</span></span>     | <span data-ttu-id="00627-146">2.21+</span><span class="sxs-lookup"><span data-stu-id="00627-146">2.21+</span></span> | <span data-ttu-id="00627-147">16.0.11231+</span><span class="sxs-lookup"><span data-stu-id="00627-147">16.0.11231+</span></span> | [<span data-ttu-id="00627-148">预览</span><span class="sxs-lookup"><span data-stu-id="00627-148">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="00627-149">为自定义帮助页面提供帮助链接</span><span class="sxs-lookup"><span data-stu-id="00627-149">Provide help link to a custom help page</span></span>](sensitivity-labels.md#what-label-policies-can-do)                       | <span data-ttu-id="00627-150">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-150">1910+</span></span>          | <span data-ttu-id="00627-151">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-151">16.21+</span></span>     | <span data-ttu-id="00627-152">2.21+</span><span class="sxs-lookup"><span data-stu-id="00627-152">2.21+</span></span> | <span data-ttu-id="00627-153">16.0.11231+</span><span class="sxs-lookup"><span data-stu-id="00627-153">16.0.11231+</span></span> | [<span data-ttu-id="00627-154">预览</span><span class="sxs-lookup"><span data-stu-id="00627-154">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="00627-155">标记内容</span><span class="sxs-lookup"><span data-stu-id="00627-155">Mark the content</span></span>](sensitivity-labels.md#what-label-policies-can-do)                                              | <span data-ttu-id="00627-156">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-156">1910+</span></span>          | <span data-ttu-id="00627-157">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-157">16.21+</span></span>     | <span data-ttu-id="00627-158">2.21+</span><span class="sxs-lookup"><span data-stu-id="00627-158">2.21+</span></span> | <span data-ttu-id="00627-159">16.0.11231+</span><span class="sxs-lookup"><span data-stu-id="00627-159">16.0.11231+</span></span> | [<span data-ttu-id="00627-160">预览</span><span class="sxs-lookup"><span data-stu-id="00627-160">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="00627-161">立即分配权限</span><span class="sxs-lookup"><span data-stu-id="00627-161">Assign permissions now</span></span>](encryption-sensitivity-labels.md#assign-permissions-now)                                 | <span data-ttu-id="00627-162">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-162">1910+</span></span>          | <span data-ttu-id="00627-163">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-163">16.21+</span></span>     | <span data-ttu-id="00627-164">2.21+</span><span class="sxs-lookup"><span data-stu-id="00627-164">2.21+</span></span> | <span data-ttu-id="00627-165">16.0.11231+</span><span class="sxs-lookup"><span data-stu-id="00627-165">16.0.11231+</span></span> | [<span data-ttu-id="00627-166">预览</span><span class="sxs-lookup"><span data-stu-id="00627-166">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[<span data-ttu-id="00627-167">允许用户分配权限</span><span class="sxs-lookup"><span data-stu-id="00627-167">Let users assign permissions</span></span>](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | <span data-ttu-id="00627-168">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-168">TBD</span></span>            | <span data-ttu-id="00627-169">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-169">TBD</span></span>        | <span data-ttu-id="00627-170">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-170">TBD</span></span>   | <span data-ttu-id="00627-171">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-171">TBD</span></span>         | <span data-ttu-id="00627-172">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-172">TBD</span></span>                                                        |
+|<span data-ttu-id="00627-173">[查看标签使用情况标签分析](label-analytics.md)并为管理员发送数据</span><span class="sxs-lookup"><span data-stu-id="00627-173">[View label usage with label analytics](label-analytics.md) and send data for administrators</span></span>                      | <span data-ttu-id="00627-174">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-174">TBD</span></span>            | <span data-ttu-id="00627-175">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-175">TBD</span></span>        | <span data-ttu-id="00627-176">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-176">TBD</span></span>   | <span data-ttu-id="00627-177">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-177">TBD</span></span>         | <span data-ttu-id="00627-178">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-178">TBD</span></span>                                                        |
+|<span data-ttu-id="00627-179">
+  [要求用户为其电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)</span><span class="sxs-lookup"><span data-stu-id="00627-179">[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)</span></span>   | <span data-ttu-id="00627-180">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-180">TBD</span></span>            | <span data-ttu-id="00627-181">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-181">TBD</span></span>        | <span data-ttu-id="00627-182">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-182">TBD</span></span>   | <span data-ttu-id="00627-183">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-183">TBD</span></span>         | <span data-ttu-id="00627-184">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-184">TBD</span></span>                                                        |
+|[<span data-ttu-id="00627-185">将敏感度标签自动应用于内容</span><span class="sxs-lookup"><span data-stu-id="00627-185">Apply a sensitivity label to content automatically</span></span>](apply-sensitivity-label-automatically.md)                    | <span data-ttu-id="00627-186">预览：在向[Office 预览体验成员](https://office.com/insider)的回滚中</span><span class="sxs-lookup"><span data-stu-id="00627-186">Preview: In roll-out to [Office Insider](https://office.com/insider)</span></span>                                  | <span data-ttu-id="00627-187">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-187">TBD</span></span> | <span data-ttu-id="00627-188">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-188">TBD</span></span> | <span data-ttu-id="00627-189">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-189">TBD</span></span> | [<span data-ttu-id="00627-190">预览</span><span class="sxs-lookup"><span data-stu-id="00627-190">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|<span data-ttu-id="00627-191">支持在标签和受保护的文档上的[自动保存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[共同创作](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4)</span><span class="sxs-lookup"><span data-stu-id="00627-191">Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents</span></span> | <span data-ttu-id="00627-192">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-192">TBD</span></span> | <span data-ttu-id="00627-193">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-193">TBD</span></span> | <span data-ttu-id="00627-194">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-194">TBD</span></span> | <span data-ttu-id="00627-195">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-195">TBD</span></span> | [<span data-ttu-id="00627-196">预览</span><span class="sxs-lookup"><span data-stu-id="00627-196">Preview</span></span>](sensitivity-labels-sharepoint-onedrive-files.md) |
+|
 
-<tr>
-<td><span data-ttu-id="2db1f-139"><font size="-1">手动应用、更改或删除标签</span><span class="sxs-lookup"><span data-stu-id="2db1f-139"><font size="-1">Manually apply, change, or remove label</span></span><td><span data-ttu-id="2db1f-140"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-140"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-141"><font size="-1">1910+</font>
+## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a><span data-ttu-id="00627-197">在 Outlook 中支持敏感度标签功能</span><span class="sxs-lookup"><span data-stu-id="00627-197">Support for sensitivity label capabilities in Outlook</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-141"><font size="-1">1910+</font>
+<span data-ttu-id="00627-198">对于每项功能，下表列出了应用程序所需的最低版本。</span><span class="sxs-lookup"><span data-stu-id="00627-198">For each capability, the following table lists the minimum version you need for that app.</span></span> <span data-ttu-id="00627-199">TBD 表示无法在该平台上使用该功能。</span><span class="sxs-lookup"><span data-stu-id="00627-199">TBD means that you can't use that capability on that platform.</span></span>
 
-</span></span><td><span data-ttu-id="2db1f-142"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-142"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-143"><font size="-1">16.21.0+</font>
+|<span data-ttu-id="00627-200">功能</span><span class="sxs-lookup"><span data-stu-id="00627-200">Capability</span></span>                                                                                                        |<span data-ttu-id="00627-201">Windows 桌面上的 Outlook</span><span class="sxs-lookup"><span data-stu-id="00627-201">Outlook on Windows Desktop</span></span> |<span data-ttu-id="00627-202">Mac 桌面上的 Outlook</span><span class="sxs-lookup"><span data-stu-id="00627-202">Outlook on Mac Desktop</span></span>  |<span data-ttu-id="00627-203">iOS 版 Outlook</span><span class="sxs-lookup"><span data-stu-id="00627-203">Outlook on iOS</span></span> |<span data-ttu-id="00627-204">Android 版 Outlook</span><span class="sxs-lookup"><span data-stu-id="00627-204">Outlook on Android</span></span> |<span data-ttu-id="00627-205">Outlook 网页版</span><span class="sxs-lookup"><span data-stu-id="00627-205">Outlook on the web</span></span> |
+|------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
+|[<span data-ttu-id="00627-206">手动应用、更改或删除标签</span><span class="sxs-lookup"><span data-stu-id="00627-206">Manually apply, change, or remove label</span></span>](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| <span data-ttu-id="00627-207">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-207">1910+</span></span>                     | <span data-ttu-id="00627-208">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-208">16.21+</span></span>                 | <span data-ttu-id="00627-209">4.71 +</span><span class="sxs-lookup"><span data-stu-id="00627-209">4.71+</span></span>         | <span data-ttu-id="00627-210">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="00627-210">4.0.39+</span></span>           | <span data-ttu-id="00627-211">可访问</span><span class="sxs-lookup"><span data-stu-id="00627-211">Yes</span></span>               |
+|[<span data-ttu-id="00627-212">应用默认标签</span><span class="sxs-lookup"><span data-stu-id="00627-212">Apply a default label</span></span>](sensitivity-labels.md#what-label-policies-can-do)                                         | <span data-ttu-id="00627-213">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-213">1910+</span></span>                     | <span data-ttu-id="00627-214">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-214">16.21+</span></span>                 | <span data-ttu-id="00627-215">4.71 +</span><span class="sxs-lookup"><span data-stu-id="00627-215">4.71+</span></span>         | <span data-ttu-id="00627-216">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="00627-216">4.0.39+</span></span>           | <span data-ttu-id="00627-217">可访问</span><span class="sxs-lookup"><span data-stu-id="00627-217">Yes</span></span>               |
+|[<span data-ttu-id="00627-218">需要调整以更改标签</span><span class="sxs-lookup"><span data-stu-id="00627-218">Require a justification to change a label</span></span>](sensitivity-labels.md#what-label-policies-can-do)                     | <span data-ttu-id="00627-219">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-219">1910+</span></span>                     | <span data-ttu-id="00627-220">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-220">16.21+</span></span>                 | <span data-ttu-id="00627-221">4.71 +</span><span class="sxs-lookup"><span data-stu-id="00627-221">4.71+</span></span>         | <span data-ttu-id="00627-222">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="00627-222">4.0.39+</span></span>           | <span data-ttu-id="00627-223">可访问</span><span class="sxs-lookup"><span data-stu-id="00627-223">Yes</span></span>               |
+|[<span data-ttu-id="00627-224">为自定义帮助页面提供帮助链接</span><span class="sxs-lookup"><span data-stu-id="00627-224">Provide help link to a custom help page</span></span>](sensitivity-labels.md#what-label-policies-can-do)                       | <span data-ttu-id="00627-225">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-225">1910+</span></span>                     | <span data-ttu-id="00627-226">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-226">16.21+</span></span>                 | <span data-ttu-id="00627-227">4.71 +</span><span class="sxs-lookup"><span data-stu-id="00627-227">4.71+</span></span>         | <span data-ttu-id="00627-228">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="00627-228">4.0.39+</span></span>           | <span data-ttu-id="00627-229">可访问</span><span class="sxs-lookup"><span data-stu-id="00627-229">Yes</span></span>               |
+|[<span data-ttu-id="00627-230">标记内容</span><span class="sxs-lookup"><span data-stu-id="00627-230">Mark the content</span></span>](sensitivity-labels.md#what-label-policies-can-do)                                              | <span data-ttu-id="00627-231">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-231">1910+</span></span>                     | <span data-ttu-id="00627-232">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-232">16.21+</span></span>                 | <span data-ttu-id="00627-233">4.71 +</span><span class="sxs-lookup"><span data-stu-id="00627-233">4.71+</span></span>         | <span data-ttu-id="00627-234">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="00627-234">4.0.39+</span></span>           | <span data-ttu-id="00627-235">可访问</span><span class="sxs-lookup"><span data-stu-id="00627-235">Yes</span></span>               |
+|[<span data-ttu-id="00627-236">立即分配权限</span><span class="sxs-lookup"><span data-stu-id="00627-236">Assign permissions now</span></span>](encryption-sensitivity-labels.md#assign-permissions-now)                                 | <span data-ttu-id="00627-237">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-237">1910+</span></span>                     | <span data-ttu-id="00627-238">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-238">16.21+</span></span>                 | <span data-ttu-id="00627-239">4.71 +</span><span class="sxs-lookup"><span data-stu-id="00627-239">4.71+</span></span>         | <span data-ttu-id="00627-240">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="00627-240">4.0.39+</span></span>           | <span data-ttu-id="00627-241">可访问</span><span class="sxs-lookup"><span data-stu-id="00627-241">Yes</span></span>               |
+|[<span data-ttu-id="00627-242">允许用户分配权限</span><span class="sxs-lookup"><span data-stu-id="00627-242">Let users assign permissions</span></span>](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | <span data-ttu-id="00627-243">1910+</span><span class="sxs-lookup"><span data-stu-id="00627-243">1910+</span></span>                     | <span data-ttu-id="00627-244">16.21 +</span><span class="sxs-lookup"><span data-stu-id="00627-244">16.21+</span></span>                 | <span data-ttu-id="00627-245">4.71 +</span><span class="sxs-lookup"><span data-stu-id="00627-245">4.71+</span></span>         | <span data-ttu-id="00627-246">4.0.39 +</span><span class="sxs-lookup"><span data-stu-id="00627-246">4.0.39+</span></span>           | <span data-ttu-id="00627-247">可访问</span><span class="sxs-lookup"><span data-stu-id="00627-247">Yes</span></span>               |
+|<span data-ttu-id="00627-248">[查看标签使用情况标签分析](label-analytics.md)并为管理员发送数据</span><span class="sxs-lookup"><span data-stu-id="00627-248">[View label usage with label analytics](label-analytics.md) and send data for administrators</span></span>                      | <span data-ttu-id="00627-249">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-249">TBD</span></span>                       | <span data-ttu-id="00627-250">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-250">TBD</span></span>                    | <span data-ttu-id="00627-251">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-251">TBD</span></span>           | <span data-ttu-id="00627-252">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-252">TBD</span></span>               | <span data-ttu-id="00627-253">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-253">TBD</span></span>               |
+|<span data-ttu-id="00627-254">
+  [要求用户为其电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)</span><span class="sxs-lookup"><span data-stu-id="00627-254">[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)</span></span>   | <span data-ttu-id="00627-255">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-255">TBD</span></span>                       | <span data-ttu-id="00627-256">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-256">TBD</span></span>                    | <span data-ttu-id="00627-257">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-257">TBD</span></span>           | <span data-ttu-id="00627-258">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-258">TBD</span></span>               | <span data-ttu-id="00627-259">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-259">TBD</span></span>               |
+|[<span data-ttu-id="00627-260">将敏感度标签自动应用于内容</span><span class="sxs-lookup"><span data-stu-id="00627-260">Apply a sensitivity label to content automatically</span></span>](apply-sensitivity-label-automatically.md)                    | <span data-ttu-id="00627-261">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-261">TBD</span></span>                       | <span data-ttu-id="00627-262">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-262">TBD</span></span>                    | <span data-ttu-id="00627-263">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-263">TBD</span></span>           | <span data-ttu-id="00627-264">TBD</span><span class="sxs-lookup"><span data-stu-id="00627-264">TBD</span></span>               | <span data-ttu-id="00627-265">预览：在向[目标发布](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)的回滚中</span><span class="sxs-lookup"><span data-stu-id="00627-265">Preview: In roll-out to [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)</span></span> |
+|
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-143"><font size="-1">16.21.0+</font>
+## <a name="about-the-office-built-in-labeling-client"></a><span data-ttu-id="00627-266">关于 Office 内置标签客户端</span><span class="sxs-lookup"><span data-stu-id="00627-266">About the Office built-in labeling client</span></span>
 
-</span></span><td><span data-ttu-id="2db1f-144"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-144"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-145"><font size="-1">2.21+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-145"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="2db1f-146"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-146"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-147"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-147"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-148"><font size="-1">16.0.11231+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-148"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="2db1f-149"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-149"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-150"><font size="-1">即将推出<sup>3</sup></span><span class="sxs-lookup"><span data-stu-id="2db1f-150"><font size="-1">Coming soon<sup>3</sup></span></span><td><span data-ttu-id="2db1f-151"><font size="-1">即将推出<sup>3</sup>
+<span data-ttu-id="00627-267">Office 内置标签客户端从以下管理中心下载标签和策略设置：</span><span class="sxs-lookup"><span data-stu-id="00627-267">The Office built-in labeling client downloads labels and policy settings from the following admin centers:</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-151"><font size="-1">Coming soon<sup>3</sup>
+- <span data-ttu-id="00627-268">Office 365 安全与合规中心</span><span class="sxs-lookup"><span data-stu-id="00627-268">Office 365 Security & Compliance Center</span></span>
 
-</span></span><tr>
-<td><span data-ttu-id="2db1f-152"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">应用默认标签</a>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-152"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a>
-</span></span><td><span data-ttu-id="2db1f-153"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-153"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-154"><font size="-1">1910+</font>
+- <span data-ttu-id="00627-269">Microsoft 365 安全中心</span><span class="sxs-lookup"><span data-stu-id="00627-269">Microsoft 365 security center</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-154"><font size="-1">1910+</font>
+- <span data-ttu-id="00627-270">Microsoft 365 合规中心</span><span class="sxs-lookup"><span data-stu-id="00627-270">Microsoft 365 compliance center</span></span>
 
-</span></span><td><span data-ttu-id="2db1f-155"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-155"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-156"><font size="-1">16.21.0+</font>
+<span data-ttu-id="00627-271">对于向其发布了一个或多个[标签策略](sensitivity-labels.md#what-label-policies-can-do)的用户，会自动启用 Office 内置标签客户端。</span><span class="sxs-lookup"><span data-stu-id="00627-271">The Office built-in labeling client is enabled automatically for users who have one or more [label policy published](sensitivity-labels.md#what-label-policies-can-do) to them.</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-156"><font size="-1">16.21.0+</font>
+<span data-ttu-id="00627-272">若要在 Windows 上使用 Office 中的内置标签客户端，不能在 Office 中同时运行 Azure 信息保护外接。</span><span class="sxs-lookup"><span data-stu-id="00627-272">To use the built-in labeling client in Office on Windows, you can't run the Azure Information Protection add-in at the same time in Office.</span></span> <span data-ttu-id="00627-273">您可以临时或永久卸载 Azure 信息保护客户端，也可以将其安装并配置 Office 以阻止其运行。</span><span class="sxs-lookup"><span data-stu-id="00627-273">You can either temporarily or permanently uninstall the Azure Information Protection client, or you can leave it installed and configure Office to prevent it from running.</span></span>
 
-</span></span><td><span data-ttu-id="2db1f-157"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-157"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-158"><font size="-1">2.21+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-158"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="2db1f-159"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-159"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-160"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-160"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-161"><font size="-1">16.0.11231+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-161"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="2db1f-162"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-162"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-163"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-163"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-164"><font size="-1">即将推出<sup>3</sup>
+1. <span data-ttu-id="00627-274">完成以下选项之一：</span><span class="sxs-lookup"><span data-stu-id="00627-274">Complete one of these options:</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-164"><font size="-1">Coming soon<sup>3</sup>
+    <span data-ttu-id="00627-275">**对于多台计算机：** 配置在 **Office 中使用敏感度功能以应用并查看敏感度标签**组策略设置。</span><span class="sxs-lookup"><span data-stu-id="00627-275">**For multiple computers:** Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting.</span></span> <span data-ttu-id="00627-276">在 "**用户配置/管理模板/Microsoft Office 2016/安全设置**" 下找到此设置。</span><span class="sxs-lookup"><span data-stu-id="00627-276">Find this setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.</span></span> <span data-ttu-id="00627-277">通过组策略或使用[Office 云策略服务](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)部署此设置。</span><span class="sxs-lookup"><span data-stu-id="00627-277">Deploy this setting through group policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).</span></span>
 
-</span></span><tr><td><span data-ttu-id="2db1f-165"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">要求提供更改标签的理由</a><sup>1</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-165"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup>
-</span></span><td><span data-ttu-id="2db1f-166"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-166"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-167"><font size="-1">1910+</font>
+    <span data-ttu-id="00627-278">**对于单个计算机：** 请参阅 "查看、管理和安装 Office 程序中的外接程序"，并[永久禁用或删除](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)一台计算机上的 Azure 信息保护外接程序。</span><span class="sxs-lookup"><span data-stu-id="00627-278">**For a single computer:** See "view, manage, and install add-ins in Office programs," and [permanently disable or remove](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection add-in on a single computer.</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-167"><font size="-1">1910+</font>
+2. <span data-ttu-id="00627-279">重新启动所有 Office 应用程序。</span><span class="sxs-lookup"><span data-stu-id="00627-279">Restart all Office applications.</span></span>
 
-</span></span><td><span data-ttu-id="2db1f-168"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-168"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-169"><font size="-1">16.21.0+</font>
+<span data-ttu-id="00627-280">有关客户端应用程序的信息保护的详细信息，请参阅[Azure 信息保护的客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client)。</span><span class="sxs-lookup"><span data-stu-id="00627-280">For more information about client apps for information protection, see [The client side of Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/use-client).</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-169"><font size="-1">16.21.0+</font>
+## <a name="protection-templates-and-sensitivity-labels"></a><span data-ttu-id="00627-281">保护模板和敏感度标签</span><span class="sxs-lookup"><span data-stu-id="00627-281">Protection templates and sensitivity labels</span></span>
 
-</span></span><td><span data-ttu-id="2db1f-170"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-170"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-171"><font size="-1">2.21+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-171"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="2db1f-172"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-172"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-173"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-173"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-174"><font size="-1">16.0.11231+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-174"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="2db1f-175"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-175"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-176"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-176"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-177"><font size="-1">即将推出<sup>3</sup>
+<span data-ttu-id="00627-282">在启用敏感度标签时，管理员定义的[保护模板](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)（如为 Office 365 邮件加密定义的模板）在 Office 用户体验中是隐藏的，因为它们对于启用了加密的敏感度标签是多余的。</span><span class="sxs-lookup"><span data-stu-id="00627-282">Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-177"><font size="-1">Coming soon<sup>3</sup>
-
-</span></span><tr><td><span data-ttu-id="2db1f-178"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">为自定义帮助页面提供帮助链接</a>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-178"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a>
-</span></span><td><span data-ttu-id="2db1f-179"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-179"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-180"><font size="-1">1910+</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-180"><font size="-1">1910+</font>
+## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a><span data-ttu-id="00627-283">将敏感度标签应用于文件、电子邮件和附件</span><span class="sxs-lookup"><span data-stu-id="00627-283">Apply sensitivity labels to files, emails, and attachments</span></span>
 
-</span></span><td><span data-ttu-id="2db1f-181"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-181"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-182"><font size="-1">16.21.0+</font>
+<span data-ttu-id="00627-284">用户可以一次仅为每个文档或电子邮件应用一个标签。</span><span class="sxs-lookup"><span data-stu-id="00627-284">Users can apply just one label at a time for each document or email.</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-182"><font size="-1">16.21.0+</font>
+<span data-ttu-id="00627-285">当您标记包含附件的电子邮件时，附件不会继承该标签。</span><span class="sxs-lookup"><span data-stu-id="00627-285">When you label an email message that has attachments, the attachments don't inherit the label.</span></span> <span data-ttu-id="00627-286">如果附件具有标签，则会保留单独应用的标签。</span><span class="sxs-lookup"><span data-stu-id="00627-286">If the attachments had a label they keep that separately applied label.</span></span> <span data-ttu-id="00627-287">如果附件不包含标签，则不会在不带标签的情况下保留附件。</span><span class="sxs-lookup"><span data-stu-id="00627-287">If the attachments didn't have a label, then the attachments remain without a label.</span></span> <span data-ttu-id="00627-288">但是，如果电子邮件标签应用了保护，则该保护将应用于 Office 附件。</span><span class="sxs-lookup"><span data-stu-id="00627-288">However, if the label for the email applies protection, that protection is applied to Office attachments.</span></span>
 
-</span></span><td><span data-ttu-id="2db1f-183"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-183"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-184"><font size="-1">2.21+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-184"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="2db1f-185"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-185"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-186"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-186"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-187"><font size="-1">16.0.11231+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-187"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="2db1f-188"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-188"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-189"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-189"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-190"><font size="-1">即将推出<sup>3</sup>
+## <a name="sensitivity-label-compatibility"></a><span data-ttu-id="00627-289">敏感度标签兼容性</span><span class="sxs-lookup"><span data-stu-id="00627-289">Sensitivity label compatibility</span></span>
 
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-190"><font size="-1">Coming soon<sup>3</sup>
-
-</span></span><tr><td><span data-ttu-id="2db1f-191"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">标记内容</a>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-191"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a>
-</span></span><td><span data-ttu-id="2db1f-192"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-192"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-193"><font size="-1">1910+</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-193"><font size="-1">1910+</font>
-
-</span></span><td><span data-ttu-id="2db1f-194"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-194"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-195"><font size="-1">16.21.0+</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-195"><font size="-1">16.21.0+</font>
-
-</span></span><td><span data-ttu-id="2db1f-196"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-196"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-197"><font size="-1">2.21+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-197"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="2db1f-198"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-198"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-199"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-199"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-200"><font size="-1">16.0.11231+</font
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-200"><font size="-1">16.0.11231+</font
-</span></span>><td><span data-ttu-id="2db1f-201"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-201"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-202"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-202"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-203"><font size="-1">即将推出<sup>3</sup>
-
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-203"><font size="-1">Coming soon<sup>3</sup>
-
-</span></span><tr><td><span data-ttu-id="2db1f-204"><font size="-1">
-  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">分配预定义的权限</a>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-204"><font size="-1">Assign pre-defined permissions</span></span><td><span data-ttu-id="2db1f-205"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-205"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-206"><font size="-1">1910+</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-206"><font size="-1">1910+</font>
-
-</span></span><td><span data-ttu-id="2db1f-207"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-207"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-208"><font size="-1">16.21.0+</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-208"><font size="-1">16.21.0+</font>
-
-</span></span><td><span data-ttu-id="2db1f-209"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-209"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-210"><font size="-1">2.21+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-210"><font size="-1">2.21+</font>
-</span></span><td><span data-ttu-id="2db1f-211"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-211"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-212"><font size="-1"><b>是</b></span><span class="sxs-lookup"><span data-stu-id="2db1f-212"><font size="-1"><b>Yes</b></span></span><br><span data-ttu-id="2db1f-213"><font size="-1">16.0.11231+</font>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-213"><font size="-1">16.0.11231+</font>
-</span></span><td><span data-ttu-id="2db1f-214"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-214"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-215"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-215"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-216"><font size="-1">即将推出<sup>3</sup>
-
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-216"><font size="-1">Coming soon<sup>3</sup>
-
-</span></span><tr><td><span data-ttu-id="2db1f-217"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">允许用户分配权限</a>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-217"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a>
-</span></span><td><span data-ttu-id="2db1f-218"><font size="-1"><b>是</b><sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="2db1f-218"><font size="-1"><b>Yes</b><sup>2</sup></span></span><br><span data-ttu-id="2db1f-219"><font size="-1">1910+</font>
-
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-219"><font size="-1">1910+</font>
-
-</span></span><td><span data-ttu-id="2db1f-220"><font size="-1"><b>是</b><sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="2db1f-220"><font size="-1"><b>Yes</b><sup>2</sup></span></span><br><span data-ttu-id="2db1f-221"><font size="-1">16.21.0+</font></span><span class="sxs-lookup"><span data-stu-id="2db1f-221"><font size="-1">16.21.0+</font></span></span>
-
-<td><span data-ttu-id="2db1f-222"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-222"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-223"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-223"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-224"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-224"><font size="-1">TBD</span></span><td
-><span data-ttu-id="2db1f-225"><font size="-1">即将推出<sup>3</sup>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-225"><font size="-1">Coming soon<sup>3</sup>
-</span></span><td><span data-ttu-id="2db1f-226"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-226"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-227"><font size="-1">即将推出<sup>3</sup></span><span class="sxs-lookup"><span data-stu-id="2db1f-227"><font size="-1">Coming soon<sup>3</sup></span></span>
-
-<tr><td><span data-ttu-id="2db1f-228"><font size="-1">向管理员发送<a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">标签分析</a>数据</span><span class="sxs-lookup"><span data-stu-id="2db1f-228"><font size="-1">Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators</span></span>
-<td><span data-ttu-id="2db1f-229"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-229"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="2db1f-230"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-230"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="2db1f-231"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-231"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-232"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-232"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-233"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-233"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-234"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-234"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-235"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-235"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-236"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-236"><font size="-1">TBD</span></span>
-
-<tr><td><span data-ttu-id="2db1f-237"><font size="-1">
-  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">要求用户为其电子邮件和文档应用标签</a>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-237"><font size="-1">Require users to apply a label to their email and documents</span></span><td><span data-ttu-id="2db1f-238"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-238"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="2db1f-239"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-239"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="2db1f-240"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-240"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-241"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-241"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-242"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-242"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-243"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-243"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-244"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-244"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-245"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-245"><font size="-1">TBD</span></span>
-
-<tr><td><span data-ttu-id="2db1f-246"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">将敏感度标签自动应用于内容</a>
-</span><span class="sxs-lookup"><span data-stu-id="2db1f-246"><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a>
-</span></span><td><span data-ttu-id="2db1f-247"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-247"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="2db1f-248"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-248"><font size="-1">TBD</span></span>
-
-<td><span data-ttu-id="2db1f-249"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-249"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-250"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-250"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-251"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-251"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-252"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-252"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-253"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-253"><font size="-1">TBD</span></span>
-<td><span data-ttu-id="2db1f-254"><font size="-1">待定</span><span class="sxs-lookup"><span data-stu-id="2db1f-254"><font size="-1">TBD</span></span>
-</table>
-
-<br><span data-ttu-id="2db1f-255"><sup>1</sup>如果已配置，将提示用户提供标签降级的理由。</span><span class="sxs-lookup"><span data-stu-id="2db1f-255"><sup>1</sup>If configured, users are prompted to justify label downgrades.</span></span> <span data-ttu-id="2db1f-256">但是，尚未向管理员提供理由数据。</span><span class="sxs-lookup"><span data-stu-id="2db1f-256">However, the justification data is not made available for administrators yet.</span></span> <span data-ttu-id="2db1f-257">当支持“向管理员发送标签分析数据”功能时，它才可用。</span><span class="sxs-lookup"><span data-stu-id="2db1f-257">It will become available when the “send label analytics data for administrators” capability is supported.</span></span>
-<br><span data-ttu-id="2db1f-258"><sup>2</sup>目前，仅在 Outlook for Windows 和 Outlook for Mac 中允许用户分配权限。</span><span class="sxs-lookup"><span data-stu-id="2db1f-258"><sup>2</sup>Let users assign permissions is currently only available in Outlook for Windows and Mac.</span></span> <span data-ttu-id="2db1f-259">针对 Word、Excel 和 PowerPoint 的可用性待定。</span><span class="sxs-lookup"><span data-stu-id="2db1f-259">Availability for Word, Excel, and PowerPoint is TBD.</span></span>
-<br><span data-ttu-id="2db1f-260"><sup>3</sup>预计为 2019 日历年第 4 季度。</span><span class="sxs-lookup"><span data-stu-id="2db1f-260"><sup>3</sup>Expected Q4 of calendar year 2019.</span></span>
-
-## <a name="when-do-content-marks-or-encryption-get-applied-after-content-is-given-a-sensitivity-label"></a><span data-ttu-id="2db1f-261">在为内容提供敏感度标签后，何时应用内容标记或加密？</span><span class="sxs-lookup"><span data-stu-id="2db1f-261">When do content marks or encryption get applied after content is given a sensitivity label?</span></span>
-
-| <span data-ttu-id="2db1f-262">应用程序</span><span class="sxs-lookup"><span data-stu-id="2db1f-262">Application</span></span> | <span data-ttu-id="2db1f-263">内容标记</span><span class="sxs-lookup"><span data-stu-id="2db1f-263">Content marking</span></span> | <span data-ttu-id="2db1f-264">加密</span><span class="sxs-lookup"><span data-stu-id="2db1f-264">Encryption</span></span>
+<span data-ttu-id="00627-290">**使用 RMS-智能型应用**。</span><span class="sxs-lookup"><span data-stu-id="00627-290">**With RMS-enlightened apps**.</span></span> <span data-ttu-id="00627-291">如果在不支持敏感度标签的[智能型应用程序](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)中打开了已标记_和加密_的文档或电子邮件，则应用仍强制实施加密和权限管理。</span><span class="sxs-lookup"><span data-stu-id="00627-291">If you open a labeled _and encrypted_ document or email in an [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) that doesn't support sensitivity labels, the app still enforces encryption and rights management.</span></span>
+
+<span data-ttu-id="00627-292">**与 Azure 信息保护客户端**。</span><span class="sxs-lookup"><span data-stu-id="00627-292">**With Azure Information Protection client**.</span></span> <span data-ttu-id="00627-293">您可以使用 Azure 信息保护客户端和其他方法查看和更改应用于 Office 内置标记客户端的文档和电子邮件的敏感度标签。</span><span class="sxs-lookup"><span data-stu-id="00627-293">You can view and change sensitivity labels that you apply to documents and emails with the Office built-in labeling client with the Azure Information Protection client, and the other way around.</span></span>
+
+<span data-ttu-id="00627-294">**与其他版本的 Office**。</span><span class="sxs-lookup"><span data-stu-id="00627-294">**With other versions of Office**.</span></span> <span data-ttu-id="00627-295">任何授权的用户都可以在其他版本的 Office 中打开带标签的文档和电子邮件。</span><span class="sxs-lookup"><span data-stu-id="00627-295">Any authorized user can open labeled documents and emails in other versions of Office.</span></span> <span data-ttu-id="00627-296">但是，只能在受支持的 Office 版本或 Azure 信息保护客户端中查看或更改标签。</span><span class="sxs-lookup"><span data-stu-id="00627-296">However, you can only view or change the label in supported Office versions or in the Azure Information Protection client.</span></span> <span data-ttu-id="00627-297">本文的表中列出了受支持的 Office 应用程序版本。</span><span class="sxs-lookup"><span data-stu-id="00627-297">Supported Office app versions are listed in the tables in this article.</span></span>
+
+## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a><span data-ttu-id="00627-298">支持由敏感度标签保护的 SharePoint 和 OneDrive 文件</span><span class="sxs-lookup"><span data-stu-id="00627-298">Support for SharePoint and OneDrive files protected by sensitivity labels</span></span>
+
+<span data-ttu-id="00627-299">若要在 web 上的 Office 中使用 Office 内置标签客户端，该文档必须位于 OneDrive for business 或 SharePoint Online 实例中，并已选择加入到在[SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。</span><span class="sxs-lookup"><span data-stu-id="00627-299">To use the Office built-in labeling client in Office on the web, the document must be located in a OneDrive for Business or SharePoint Online instance that has opted-in to the [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).</span></span>
+
+## <a name="when-office-365-applies-marks-and-encryption-to-content"></a><span data-ttu-id="00627-300">当 Office 365 对内容应用标记和加密时</span><span class="sxs-lookup"><span data-stu-id="00627-300">When Office 365 applies marks and encryption to content</span></span>
+
+<span data-ttu-id="00627-301">Office 365 根据您使用的应用程序以不同的敏感度标签应用内容标记或加密。</span><span class="sxs-lookup"><span data-stu-id="00627-301">Office 365 applies content marks or encryption with a sensitivity label differently depending on the application you use.</span></span>
+
+| <span data-ttu-id="00627-302">应用程序</span><span class="sxs-lookup"><span data-stu-id="00627-302">Application</span></span> | <span data-ttu-id="00627-303">内容标记</span><span class="sxs-lookup"><span data-stu-id="00627-303">Content marking</span></span> | <span data-ttu-id="00627-304">加密</span><span class="sxs-lookup"><span data-stu-id="00627-304">Encryption</span></span> |
 | --- | --- | --- |
-| <span data-ttu-id="2db1f-265">所有平台上的 Word、Excel 和 PowerPoint</span><span class="sxs-lookup"><span data-stu-id="2db1f-265">Word, Excel, PowerPoint on all platforms</span></span> | <span data-ttu-id="2db1f-266">立即</span><span class="sxs-lookup"><span data-stu-id="2db1f-266">Immediately</span></span> | <span data-ttu-id="2db1f-267">立即</span><span class="sxs-lookup"><span data-stu-id="2db1f-267">Immediately</span></span> |
-| <span data-ttu-id="2db1f-268">Outlook for PC 和 Outlook for Mac</span><span class="sxs-lookup"><span data-stu-id="2db1f-268">Outlook for PC and Mac</span></span> | <span data-ttu-id="2db1f-269">通过 Exchange Online 发送电子邮件之后</span><span class="sxs-lookup"><span data-stu-id="2db1f-269">After the email is sent by Exchange Online</span></span> | <span data-ttu-id="2db1f-270">立即</span><span class="sxs-lookup"><span data-stu-id="2db1f-270">Immediately</span></span> |
-| <span data-ttu-id="2db1f-271">网页版、iOS 版和 Android 版 Outlook</span><span class="sxs-lookup"><span data-stu-id="2db1f-271">Outlook on the web, iOS, and Android</span></span> | <span data-ttu-id="2db1f-272">通过 Exchange Online 发送电子邮件之后</span><span class="sxs-lookup"><span data-stu-id="2db1f-272">After the email is sent by Exchange Online</span></span> | <span data-ttu-id="2db1f-273">通过 Exchange Online 发送电子邮件之后</span><span class="sxs-lookup"><span data-stu-id="2db1f-273">After the email is sent by Exchange Online</span></span> |
+| <span data-ttu-id="00627-305">所有平台上的 Word、Excel 和 PowerPoint</span><span class="sxs-lookup"><span data-stu-id="00627-305">Word, Excel, PowerPoint on all platforms</span></span> | <span data-ttu-id="00627-306">立即</span><span class="sxs-lookup"><span data-stu-id="00627-306">Immediately</span></span> | <span data-ttu-id="00627-307">立即</span><span class="sxs-lookup"><span data-stu-id="00627-307">Immediately</span></span> |
+| <span data-ttu-id="00627-308">Outlook for PC 和 Outlook for Mac</span><span class="sxs-lookup"><span data-stu-id="00627-308">Outlook for PC and Mac</span></span> | <span data-ttu-id="00627-309">Exchange Online 发送电子邮件后</span><span class="sxs-lookup"><span data-stu-id="00627-309">After Exchange Online sends the email</span></span> | <span data-ttu-id="00627-310">立即</span><span class="sxs-lookup"><span data-stu-id="00627-310">Immediately</span></span> |
+| <span data-ttu-id="00627-311">网页版、iOS 版和 Android 版 Outlook</span><span class="sxs-lookup"><span data-stu-id="00627-311">Outlook on the web, iOS, and Android</span></span> | <span data-ttu-id="00627-312">Exchange Online 发送电子邮件后</span><span class="sxs-lookup"><span data-stu-id="00627-312">After Exchange Online sends the email</span></span> | <span data-ttu-id="00627-313">Exchange Online 发送电子邮件后</span><span class="sxs-lookup"><span data-stu-id="00627-313">After Exchange Online sends the email</span></span> |
+|
 
-## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a><span data-ttu-id="2db1f-274">敏感度标签能否与 Azure 信息保护客户端一起在 Office for Windows 中运行？</span><span class="sxs-lookup"><span data-stu-id="2db1f-274">Can sensitivity labels run alongside the Azure Information Protection client in Office for Windows?</span></span>
+## <a name="more-resources"></a><span data-ttu-id="00627-314">更多资源</span><span class="sxs-lookup"><span data-stu-id="00627-314">More resources</span></span>
 
-<span data-ttu-id="2db1f-275">否。</span><span class="sxs-lookup"><span data-stu-id="2db1f-275">No.</span></span> <span data-ttu-id="2db1f-276">如果在 Office for Windows 中加载 Azure 信息保护客户端，则会关闭敏感度标签。</span><span class="sxs-lookup"><span data-stu-id="2db1f-276">Sensitivity labels are turned off if the Azure Information Protection client is loaded in Office for Windows.</span></span>
+[<span data-ttu-id="00627-315">有关 Azure 信息保护中分类和标记的常见问题</span><span class="sxs-lookup"><span data-stu-id="00627-315">Frequently asked questions about classification and labeling in Azure Information Protection</span></span>](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)
 
-<span data-ttu-id="2db1f-277">如果你已安装了 Azure 信息保护客户端，但你希望改为使用敏感度标签，则可以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="2db1f-277">If you have the Azure Information Protection client installed, but you want to use sensitivity labels instead, you can:</span></span>
-
-1. <span data-ttu-id="2db1f-278">配置“ **使用 Office 中的“敏感度”功能应用并查看敏感度标签**”组策略设置，可在“**用户配置/管理模板/Microsoft Office 2016/安全设置**”下方找到该设置。</span><span class="sxs-lookup"><span data-stu-id="2db1f-278">Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting, which can be found under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.</span></span>
-
-  ><span data-ttu-id="2db1f-279">注意：可通过传统的组策略部署机制或 [Office 云策略服务](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)来部署此设置。</span><span class="sxs-lookup"><span data-stu-id="2db1f-279">Note: this setting can be deployed via traditional group policy deployment mechanisms, or by the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).</span></span> 
- 
-  <span data-ttu-id="2db1f-280">或者，你也可以卸载或 [禁用](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) Azure 信息保护客户端。</span><span class="sxs-lookup"><span data-stu-id="2db1f-280">Alternatively, you can uninstall or [disable](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection client.</span></span> 
-
-2. <span data-ttu-id="2db1f-281">重新启动所有 Office 应用程序。</span><span class="sxs-lookup"><span data-stu-id="2db1f-281">Restart all Office applications.</span></span>
-
-## <a name="will-sensitivity-labels-be-supported-in-non-subscription-versions-of-office-like-office-2016-or-office-2019"></a><span data-ttu-id="2db1f-282">Office 的非订阅版本（例如 Office 2016 或 Office 2019）是否支持敏感度标签？</span><span class="sxs-lookup"><span data-stu-id="2db1f-282">Will sensitivity labels be supported in non-subscription versions of Office like Office 2016 or Office 2019?</span></span>
-
-<span data-ttu-id="2db1f-283">否。</span><span class="sxs-lookup"><span data-stu-id="2db1f-283">No.</span></span> <span data-ttu-id="2db1f-284">敏感度标签仅在 Office 365 订阅中受支持，在任何非订阅版本中均不受支持。</span><span class="sxs-lookup"><span data-stu-id="2db1f-284">Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription version.</span></span> <span data-ttu-id="2db1f-285">但是，可在非订阅版本的 Office 中使用 Azure 信息保护统一标记客户端。</span><span class="sxs-lookup"><span data-stu-id="2db1f-285">However, the Azure Information Protection unified labeling client may be used in non-subscription versions of Office.</span></span> 
-
-## <a name="i-previously-deployed-protection-templates-before-setting-up-sensitivity-labels-where-did-they-go"></a><span data-ttu-id="2db1f-286">在设置敏感度标签之前，我曾部署过保护模板。</span><span class="sxs-lookup"><span data-stu-id="2db1f-286">I previously deployed protection templates before setting up sensitivity labels.</span></span> <span data-ttu-id="2db1f-287">它们去哪儿了？</span><span class="sxs-lookup"><span data-stu-id="2db1f-287">Where did they go?</span></span>
-
-<span data-ttu-id="2db1f-288">启用敏感度标签后，管理员定义的[保护模板](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)将在 Office 用户体验中隐藏，因为对于已启用加密的敏感度标签而言，它们是多余的。</span><span class="sxs-lookup"><span data-stu-id="2db1f-288">Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.</span></span> 
-
-## <a name="can-a-file-or-email-have-more-than-one-classification"></a><span data-ttu-id="2db1f-289">文件或电子邮件能否具有多个分类？</span><span class="sxs-lookup"><span data-stu-id="2db1f-289">Can a file or email have more than one classification?</span></span>
-
-<span data-ttu-id="2db1f-290">否。</span><span class="sxs-lookup"><span data-stu-id="2db1f-290">No.</span></span> <span data-ttu-id="2db1f-291">对于每个文档或电子邮件，用户每次可只选一个标签。</span><span class="sxs-lookup"><span data-stu-id="2db1f-291">Users can select just one label at a time for each document or email, which often results in just one classification.</span></span>
-
-## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a><span data-ttu-id="2db1f-292">标记电子邮件后，任何附件会自动获得相同的标记吗？</span><span class="sxs-lookup"><span data-stu-id="2db1f-292">When an email is labeled, do any attachments automatically get the same labeling?</span></span>
-
-<span data-ttu-id="2db1f-293">否。</span><span class="sxs-lookup"><span data-stu-id="2db1f-293">No.</span></span> <span data-ttu-id="2db1f-294">标记带附件的电子邮件时，这些附件不会继承相同的标签。</span><span class="sxs-lookup"><span data-stu-id="2db1f-294">When you label an email message that has attachments, those attachments do not inherit the same label.</span></span> <span data-ttu-id="2db1f-295">附件要么没有标签，要么保留单独应用的标签。</span><span class="sxs-lookup"><span data-stu-id="2db1f-295">The attachments remain either without a label or retain a separately applied label.</span></span> <span data-ttu-id="2db1f-296">但是，如果电子邮件标签应用了保护，则该保护将应用于 Office 附件。</span><span class="sxs-lookup"><span data-stu-id="2db1f-296">However, if the label for the email applies protection, that protection is applied to Office attachments.</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="2db1f-297">其他资源</span><span class="sxs-lookup"><span data-stu-id="2db1f-297">Additional resources</span></span>
-
-[<span data-ttu-id="2db1f-298">有关 Azure 信息保护中分类和标记的常见问题</span><span class="sxs-lookup"><span data-stu-id="2db1f-298">Frequently asked questions about classification and labeling in Azure Information Protection</span></span>](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)<br>
-[<span data-ttu-id="2db1f-299">将敏感度标签应用于 Office 文档和电子邮件</span><span class="sxs-lookup"><span data-stu-id="2db1f-299">Apply sensitivity labels to your documents and email within Office</span></span>](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+[<span data-ttu-id="00627-316">将敏感度标签应用于 Office 文档和电子邮件</span><span class="sxs-lookup"><span data-stu-id="00627-316">Apply sensitivity labels to your documents and email within Office</span></span>](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
