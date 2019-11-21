@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c3d3c8047e6814a56ec6470a9166fd0c13eb6839
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031107"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718631"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -36,7 +36,7 @@ ms.locfileid: "38031107"
 
 实验室为你提供了自动预配的虚拟实验室环境，其中包括域加入桌面客户端、域控制器、Internet 网关和完全配置的 ConfigMgr 实例。实验室包含以下产品的评估版本：
 
-  - Windows 10 企业版，版本 1903
+  - Windows 10 企业版，版本 1909
   - Windows 7 企业版
   - System Center Configuration Manager，版本 1902
   - 适用于 Windows 10 的 Windows 评估和部署工具包，版本 1903
@@ -118,7 +118,7 @@ ms.locfileid: "38031107"
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下载 Windows 和 Office 部署实验室工具包**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*请使用高带宽下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2019 年 11 月 16 日过期。新版本将于该过期日期前发布。*
+*请使用高宽带下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 2 月 15 日过期。新版本将于旧版本到期前发布。*
 
 ## <a name="additional-guidance"></a>**其他指南**
 
