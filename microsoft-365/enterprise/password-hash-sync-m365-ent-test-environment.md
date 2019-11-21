@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和展示 Microsoft 365 测试环境的密码哈希同步和登录。
-ms.openlocfilehash: 019a1f80712c426d678603b467bf19815d25f391
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: e1055f9a4a64c05f55d4a5446f637ba195c0377c
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694109"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757729"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
-许多组织使用 Azure AD Connect 和密码哈希同步来同步他们内部部署的 Active Directory 域服务 (AD DS) 林账户集与 Office 365 和 EMS E5 订阅的 Azure AD 租户账户集。 本文介绍了如何添加密码哈希同步至 Microsoft 365 测试环境，从而生成以下配置：
+许多组织使用 Azure AD Connect 和密码哈希同步来同步他们内部部署的 Active Directory 域服务 (AD DS) 林帐户集与 Microsoft 365 或 Office 365 订阅的 Azure AD 租户帐户集。 本文介绍了如何添加密码哈希同步至 Microsoft 365 测试环境，从而生成以下配置：
   
 ![使用密码哈希同步测试环境的模拟企业配置](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -47,7 +47,7 @@ ms.locfileid: "38694109"
   
 此配置包括： 
   
-- Office 365 E5 和 EMS E5 试用订阅或付费订阅。
+- Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络中的 DC1、APP1 和 CLIENT1 虚拟机。 DC1 是 testlab.\<你的公共域名 > AD DS 域的域控制器。
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>第 2 阶段：创建和注册 testlab 域
@@ -64,7 +64,7 @@ ms.locfileid: "38694109"
   
 此配置包括：
 
-- 包含已注册 DNS 域 testlab.\<你的公共域名> 的 Office 365 E5 和 EMS E5 试用订阅或付费订阅。
+- 包含已注册 DNS 域 testlab.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。
 
 请注意，现在 testlab.\<你的公共域名>：
@@ -131,8 +131,8 @@ ms.locfileid: "38694109"
 
 此配置包括： 
   
-- 包含已注册 DNS 域 TESTLAB.\<域名> 的 Office 365 E5 和 EMS E5 试用订阅或付费订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域周期性同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
+- 包含已注册 DNS 域 TESTLAB.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域周期性同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
 - TESTLAB  AD DS 域中的 User1 帐户已与 Azure AD 租户同步。
 
 ## <a name="next-step"></a>后续步骤

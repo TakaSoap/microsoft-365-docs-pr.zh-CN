@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: 3ad5a1477bfc40b541c0b048b9b68b896a748e0a
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 100db14b7940d68a185c3f6065df053aed7fbf73
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673368"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757709"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -48,9 +48,9 @@ ms.locfileid: "38673368"
   
 此配置包括： 
   
-- Office 365 E5 和 EMS E5 试用订阅或付费订阅。
+- Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
-- 在 APP1 上运行的 Azure AD Connect，它用于将 TESTLAB Active Directory 域服务 (AD DS) 同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
+- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
 
 
 ## <a name="phase-2-enable-password-writeback"></a>阶段 2：启用密码写回

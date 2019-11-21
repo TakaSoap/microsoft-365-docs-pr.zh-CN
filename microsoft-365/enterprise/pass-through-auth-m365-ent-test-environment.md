@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的传递身份验证。
-ms.openlocfilehash: 21289d01f85f7e7e5e92b4f84d7ba0c1a4f6e8a9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 98e0ad4b216fdc3940c0077cb308d6271ffed678
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673388"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757719"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的传递身份验证
 
@@ -49,8 +49,8 @@ ms.locfileid: "38673388"
   
 此配置包括： 
   
-- Office 365 E5 和 EMS E5 试用订阅或付费订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域周期性同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
+- Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域周期性同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>阶段 2：在 APP1 上对 Azure AD Connect 进行传递身份验证配置
 
@@ -92,8 +92,8 @@ ms.locfileid: "38673388"
  
 此配置包括：
 
-- 包含已注册 DNS 域 testlab.\<你的域名> 的 Office 365 E5 和 EMS E5 试用订阅或付费订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以便处理你的 Office 365 和 EMS E5 订阅的 Azure AD 租户所发起的传递身份验证请求。
+- 包含已注册 DNS 域 testlab.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以便处理你的 Microsoft 365 或 Office 365 订阅的 Azure AD 租户所发起的传递身份验证请求。
 
 ## <a name="next-step"></a>后续步骤
 

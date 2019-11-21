@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录。
-ms.openlocfilehash: 2845b3ec7d1725219fcbbb14ed4c1067a11a90bc
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: a32dca8c37d9e6788aef801e9f99a90b724e86b1
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673288"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757669"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录
 
@@ -49,9 +49,9 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
   
 此配置包括： 
   
-- Office 365 E5 和 EMS E5 试用订阅或付费订阅。
+- Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
-- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 定期同步到 Office 365 和 EMS E5 订阅的 Azure AD 租户。
+- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 定期同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>阶段 2：为 APP1 上的 Azure AD Connect 配置 Azure AD 无缝 SSO
 
@@ -106,9 +106,9 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
  
 此配置包括：
 
-- 包含已注册 DNS 域 testlab.\<你的域名> 的 Office 365 E5 和 EMS E5 试用订阅或付费订阅。
+- 包含已注册 DNS 域 testlab.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
-- 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Office 365 和 EMS E5 订阅同步到 TESTLAB AD DS 域。 
+- 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Microsoft 365 或 Office 365 订阅同步到 TESTLAB AD DS 域。 
 - 已启用的 Azure AD 无缝 SSO，这样模拟 Intranet 上的计算机无需指定用户帐户密码，即可登录 Microsoft 365 云资源。
 
 若要了解如何在生产中配置 Azure AD 无缝 SSO 和相关链接，请参阅“标识”阶段中的[简化用户登录](identity-secure-your-passwords.md#identity-sso)步骤。
