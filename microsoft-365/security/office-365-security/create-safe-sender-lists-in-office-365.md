@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要确保收到来自特定发件人的邮件，因为您信任这些邮件及其邮件，您可以在 Exchange 管理中心的垃圾邮件筛选器策略中调整您的允许列表。
-ms.openlocfilehash: 2a161573e3b51f12cd7582df26a021fab3f8de84
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033687"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793676"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 
@@ -87,7 +87,7 @@ ms.locfileid: "38033687"
 
 最不理想的选择是通过发件人/域进行授权。 应*尽可能*避免此选项，因为它会完全绕过垃圾邮件/欺骗/网络钓鱼保护，并且不会评估发件人身份验证。 此方法可提高从错误的参与者接收邮件的风险，并且仅在测试时暂时和仅进行建议。 可在[配置垃圾邮件筛选器策略](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)文档中找到详细步骤。
 
-这些列表的最大限制约为1000个条目。
+这些列表的最大限制约为1000个条目;尽管只能将30个条目输入到门户中。 必须使用 PowerShell 添加30个以上的条目。
 
 > [!CAUTION]
 > 将反垃圾邮件策略配置为*允许发件人/允许域*会导致邮件跳过来自允许列表中的发件人或 b 的来自允许域的发件人发来的邮件的垃圾邮件筛选。 此方法会显著增加垃圾邮件制造者可以欺骗发送域（或模拟完整电子邮件地址）的邮件，该邮件会跳过所有垃圾邮件筛选、发件人身份验证检查，并将邮件直接发送到用户的收件箱。

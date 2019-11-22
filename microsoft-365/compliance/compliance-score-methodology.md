@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合规性分数如何根据为解决风险而采取的措施计算个性化分数，并提高您的合规性状况。
-ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685062"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793656"
 ---
-# <a name="microsoft-compliance-score-calculation-preview"></a>Microsoft 合规性分数计算（预览）
+# <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft 合规性分数（预览）计算
 
 > [!IMPORTANT]
 > 合规性分数不表示对任何特定标准或法规的组织合规性的绝对衡量。 它表示您已采用的控制程度，可降低个人数据和个人隐私的风险。 不应将合规性分数和合规性管理器中的建议解释为合规性保证。 此服务目前处于预览阶段，并受[在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件的制约。
@@ -74,12 +74,12 @@ ms.locfileid: "38685062"
   
 根据其表示的风险，每个控件都在合规性分数中分配了一个值：
 
-|**Type**|**分配分数**|
+|**类型**|**分配分数**|
 |:-----|:-----|
 | 预防性强制 | 27 |
-| 预防自由 | 第 |
-| 侦探必备 | 第三章 |
-| 侦探自由 | 1 |
-| 强制纠正 | 第三章 |
-| 随机纠正 | 1 |
+| 预防自由 | 9  |
+| 侦探必备 | 3  |
+| 侦探自由 | 1  |
+| 强制纠正 | 3  |
+| 随机纠正 | 1  |
   

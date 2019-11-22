@@ -14,23 +14,23 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: 高级垃圾邮件筛选选项为管理员提供检查邮件的各种内容属性的功能。 邮件中存在的这些属性或者增加邮件的垃圾邮件得分（从而增加被标识为垃圾邮件的可能性），或者导致邮件被标记为垃圾邮件。 ASF 选项的目标是特定邮件属性，如垃圾邮件中常见的 HTML 标签和 URL 重定向。
-ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075753"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793696"
 ---
 # <a name="advanced-spam-filtering-options"></a>高级垃圾邮件筛选选项
+
+> [!NOTE]
+> 反垃圾邮件策略的高级垃圾邮件筛选器设置当前已被弃用。 我们推荐的设置是**将其关闭**。 高级垃圾邮件筛选器中可用的功能被合并到筛选堆栈的其他部分中。
 
 高级垃圾邮件筛选选项为管理员提供检查邮件的各种内容属性的功能。 邮件中存在的这些属性或者增加邮件的垃圾邮件得分（从而增加被标识为垃圾邮件的可能性），或者导致邮件被标记为垃圾邮件。 ASF 选项的目标是特定邮件属性，如垃圾邮件中常见的 HTML 标签和 URL 重定向。
   
 启用 ASF 选项是进行垃圾邮件筛选的主动方法，同时任何被这些选项筛选的邮件将无法报告为误报。这些邮件可以通过定期最终用户垃圾邮件通知进行标识，并从垃圾邮件隔离中抢救出来。还可以通过特定于每个 ASF 选项，且显示在邮件（匹配 ASF 选项）的 Internet 标题中的 X 标头文本，对它们进行标识。有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
   
 编辑内容筛选器策略时，可以设置 ASF 选项为打开、关闭或测试。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。 测试模式对“**NDR 退信**”、“**SPF 记录: 硬失败**”、“**条件发件人 ID 筛选: 硬失败**”和“**批量邮件**”选项不可用。 
-  
-> > [!TIP]
->  可以在测试模式下启用 ASF 选项，以基于环境实现垃圾邮件阻止的最大化。 对于特定 ASF 选项具有高垃圾邮件百分比的客户来说，我们建议您在部署他们到您的生产环境之前测试这些选项。 如果你关注组织中的网络钓鱼，请打开 " **SPF 记录：硬失败**" 选项。 
   
 下表介绍了每个高级垃圾邮件筛选选项。
   

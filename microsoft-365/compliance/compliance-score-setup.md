@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何登录、设置权限以及了解 Microsoft 合规性分数的仪表板，这有助于简化和自动化风险评估。
-ms.openlocfilehash: 8c9bc7d1605bad66228bb47de8f86042839ac5be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685068"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793646"
 ---
-# <a name="microsoft-compliance-score-setup-preview"></a>Microsoft 合规性分数设置（预览）
+# <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合规性分数（预览）设置
 
 ## <a name="before-you-begin"></a>准备工作
 

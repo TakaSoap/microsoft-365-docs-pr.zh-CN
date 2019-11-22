@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074439"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191167"
 ---
 # <a name="close-or-delete-a-case"></a>关闭或删除事例
 
@@ -35,16 +35,16 @@ ms.locfileid: "37074439"
 
 若要关闭事例：
 
-1. 在 "**高级电子数据展示**" 页上，转到您的案例。
+1. 在 "**高级电子数据展示**" 页上，选择要关闭的大小写。
 
-2. 转到 "**设置**"，然后选择 "**事例信息**"。 
+2. 在 "**设置**" 选项卡上的 "**事例信息**" 下，单击 "**选择**"。
 
-3. 单击 "**关闭事例**"。 
+3. 单击 "**关闭事例**"。
 
 删除案例：
 
-1. 在 "**高级电子数据展示**" 页上，转到您的案例。
+1. 在 "**高级电子数据展示**" 页上，选择要删除的大小写。
 
-2. 转到 "**设置**"，然后选择 "**事例信息**"。 
+2. 在 "**设置**" 选项卡上的 "**事例信息**" 下，单击 "**选择**"。
 
 3. 单击 "**删除大小写**"。 

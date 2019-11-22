@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 阻止发件人列表选项包括 Outlook 阻止的发件人、反垃圾邮件发件人/域阻止列表、IP 阻止列表和 Exchange 传输规则（Etr）也称为邮件流规则。
-ms.openlocfilehash: 7f52472f54fb1de93f02b271ec6338da3fb1af93
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032397"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793706"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>在 Office 365 中创建阻止发件人列表
 
@@ -49,7 +49,7 @@ ms.locfileid: "38032397"
 
 当多个用户受到影响时，范围将变宽，您需要使用公司范围内的发件人/域阻止列表反垃圾邮件策略。 可在[配置垃圾邮件筛选器策略](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)文档中找到详细步骤。 通过此方法阻止的任何邮件都将遵循策略中配置的垃圾邮件操作。
 
-这些列表的最大限制约为1000个条目。
+这些列表的最大限制约为1000个条目;尽管只能将30个条目输入到门户中。 必须使用 PowerShell 添加30个以上的条目。
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>使用 Exchange 传输规则（Etr）阻止特定发件人
 

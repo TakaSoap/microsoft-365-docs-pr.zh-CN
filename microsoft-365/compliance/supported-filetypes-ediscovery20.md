@@ -13,18 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+description: Microsoft 365 高级电子数据展示中支持的文件类型列表。 这包括高级电子数据展示中的 OCR 功能支持的图像文件类型的列表。
+ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38685056"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191237"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
 
-高级电子数据展示支持多种不同级别的文件类型，如下表所述。 此列表未定稿，我们将在继续进行验证测试时添加新的文件类型。 这些表指示文件类型是否支持文本提取（图像的 OCR）、在本机查看器中可见，还支持高级电子数据展示中的批注查看器。
-
+高级电子数据展示支持多种不同级别的文件类型，如下表所述。 此列表未定稿，我们将在继续进行验证测试时添加新的文件类型。 这些表指示文件类型是否受文本提取（和光学字符识别或图像文件的 OCR 文本提取）的支持，在本机查看器中可见，还支持高级电子数据展示中的批注查看器。
 
 ## <a name="archive--container"></a>存档/容器
 
@@ -115,7 +114,7 @@ ms.locfileid: "38685056"
 | 应用程序/onenote | 是 | 是 | 是 | 是 | 否 | .one |
 ||||||||
 
-## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
+## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

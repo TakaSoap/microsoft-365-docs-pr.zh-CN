@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 13267597bb29708fcf477a79168e6873a7ccdd90
-ms.sourcegitcommit: b8dd1cb1da936f2b7c9ed621bce6ef5b3588427c
+ms.openlocfilehash: 6f024337ac134cc830dfb61286e7f8e53d41c169
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37400338"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191217"
 ---
-# <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
+# <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
 **应用于：**
 
@@ -30,7 +30,7 @@ ms.locfileid: "37400338"
 
 >尚不具有 Office 365 ATP？ [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。 
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 计划1和计划2
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 计划 1 和计划 2
 
 Office 365 ATP 提供了两个计划： Office 365 ATP 计划1和 Office 365 ATP 计划2。 下表汇总了每个计划中包含的内容。 
 
@@ -40,9 +40,13 @@ Office 365 ATP 提供了两个计划： Office 365 ATP 计划1和 Office 365 ATP
 
 Office 365 ATP 计划2包含在 Office 365 企业版 E5、Office 365 教育版 A5 和 Microsoft 365 企业版 E5 中。 Microsoft 365 商业版中包含 Office 365 ATP 计划1。 如果当前订阅不包含 Office 365 ATP，请[联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，并查看 ATP 如何适用于您的组织。 
 
+## <a name="november-2019"></a>2019 年 11 月
+
+- [查看新的已损坏用户检测和响应功能（预览）](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) （OFFICE 365 ATP 计划2）
+
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [利用 office 365 中的自动事件响应（AIR）](automated-investigation-response-office.md) （OFFICE 365 ATP 计划2）
+- [在 office 365 中使用自动事件响应（AIR）](automated-investigation-response-office.md) （OFFICE 365 ATP 计划2）
 
 - [使用 office 365 管理活动 API 与 office 365 ATP AIR 事件集成](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)（OFFICE 365 atp 计划2）
 
