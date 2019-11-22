@@ -54,7 +54,8 @@
 #### [模拟企业版](simulated-ent-base-configuration-microsoft-365-enterprise.md)
 ### [标识]()
 #### [密码哈希同步](password-hash-sync-m365-ent-test-environment.md)。
-#### [直通身份验证](pass-through-auth-m365-ent-test-environment.md)
+#### [传递身份验证](pass-through-auth-m365-ent-test-environment.md)
+#### [联合身份验证](federated-identity-for-your-office-365-dev-test-environment.md)
 #### [Azure AD 无缝单一登录](single-sign-on-m365-ent-test-environment.md)
 #### [多重身份验证](multi-factor-authentication-microsoft-365-test-environment.md)
 #### [保护全局管理员帐户](protect-global-administrator-accounts-microsoft-365-test-environment.md)
