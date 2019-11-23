@@ -3,7 +3,7 @@ title: 在 Microsoft 365 企业版测试环境中保护全局管理员帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用这些步骤来保护 Microsoft 365 企业版测试环境中的全局管理员帐户。
-ms.openlocfilehash: 89985f99f5471aab87189e78035062add2c6bad9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5447177c6581b69d48272ceef7718552ea84dc9d
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673328"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202223"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中保护全局管理员帐户
 
@@ -34,7 +34,7 @@ ms.locfileid: "38673328"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -56,7 +56,7 @@ ms.locfileid: "38673328"
 4. 单击 "**密码**"，单击 "**让我创建密码**"，然后键入一个强密码。 将此新帐户的密码记录在安全位置。
 5. 清除**使此用户在首次登录时更改其密码**。
 6. 单击 "**角色**"，然后单击 "**全局管理员**"。
-7. 单击 "**产品许可证**"，然后在上打开**企业移动性 + 安全 E5**和**Office 365 企业版 e5 许可证**。
+7. 单击 "**产品许可证**"，然后在上打开**Microsoft 365 E5**许可证。
 8. 单击“添加”****。
 9. 在 "**添加了用户" 页面**上，清除 "**在电子邮件中发送密码**"，然后单击 "**关闭**"。
 

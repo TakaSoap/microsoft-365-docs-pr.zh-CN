@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要：使用这些分步说明部署一个新的独立 SharePoint Online 团队网站。
-ms.openlocfilehash: 67c6a5304e067ac847c9f8158d48a588ca118220
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: deebf8c89c616a1807072f32e306043c94aca186
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38039111"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202463"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
@@ -114,10 +114,6 @@ $userUPN="<UPN of the user account>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
-
-> [!TIP]
-> 对于包含所有 PowerShell 命令的文本文件和基于您的组和用户帐户名称生成 PowerShell 命令的 Excel 配置工作表，请下载[独立的 SharePoint Online 团队网站部署工具包](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)。 
-  
 如果您为文本文件中的任何访问组存储了用户帐户的 Upn，则可以使用下面的 PowerShell 命令块一次添加所有这些组：
   
 ```powershell
@@ -173,9 +169,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 6. 在 "**团队网站说明" 中，** 键入网站用途的可选说明。
     
-7. 在“**隐私设置**”中，选择“**专用 - 仅成员可以访问此网站**”，然后单击“**下一步**”。
+7. 在“隐私设置”中，选择“专用 - 仅成员可以访问此网站”，然后单击“下一步”************。
     
-8. 在“**希望添加哪些人员?**”窗格中，单击“**完成**”。
+8. 在“希望添加哪些人员?”窗格中，单击“完成”********。
     
 接下来，从新的 SharePoint Online 团队网站配置权限。
   

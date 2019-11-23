@@ -3,7 +3,7 @@ title: 自动化 Microsoft 365 企业版测试环境的许可和组成员身份
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在 Microsoft 365 企业版测试环境中配置基于组的许可和动态组成员身份。
-ms.openlocfilehash: fe6380d94919556904a1fb1ac0624fac3496fe30
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: b1f3bc4a44e66d162360e82295c8f2877131cd07
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673248"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202473"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自动化 Microsoft 365 企业版测试环境的许可和组成员身份
 
@@ -34,7 +34,7 @@ ms.locfileid: "38673248"
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -63,10 +63,10 @@ ms.locfileid: "38673248"
 12. 单击“添加查询”****，然后单击“创建”****。
 13. 关闭 "**组**" 和 "**组"-"所有组**" 刀片。
 
-接下来，配置 Sales 组，以便自动为成员分配 Office 365 E5 和企业移动性 + 安全 E5 许可证。
+接下来，配置 "销售" 组，以便自动向成员分配 Microsoft 365 E5 许可证。
 
 1. 在 "适用于 Azure Active Directory 的**概述**刀片" 中，单击 "**许可证 > 所有产品**"。
-2. 在列表中，选择“**企业移动性 + 安全性 E5**”和“**Office 365 企业版 E5**”，然后单击“**分配**”。
+2. 在列表中，选择 " **Micrsooft 365 E5**"，然后单击 "**分配**"。
 3. 在 "**分配许可证**" 边栏选项卡上，单击 "**用户和组**"。
 4. 在组列表中，选择 "**销售**" 组。
 5. 单击“**选择**”，然后单击“**分配**”。
@@ -78,7 +78,7 @@ ms.locfileid: "38673248"
 2. 在 " **Microsoft 365 管理中心**" 选项卡上，单击 "**活动用户**"。
 3. 在 "**活动用户**" 页上，单击 "**用户 4** " 帐户。
 4. 在 "**用户 4** " 窗格中，单击 "**产品许可证**" 的 "**编辑**"。
-5. 在 "**产品许可证**" 窗格中，关闭**企业移动性 + 安全 E5**和**Office 365 企业版 E5**许可证，然后单击 "**保存" > "关闭**"。
+5. 在 "**产品许可证**" 窗格上，禁用**Microsoft 365 E5**许可证，然后单击 "**保存" > "关闭**"。
 6. 在 "User 4" 帐户的 "属性" 中，确认未分配任何产品许可证，并且没有组成员身份。
 7. 单击**** "编辑**联系人信息**"。
 8. 在 "**编辑联系人信息**" 窗格中，单击 "**联系人信息**"。
@@ -88,7 +88,7 @@ ms.locfileid: "38673248"
 您应该会看到以下内容：
 
 - 更新了**Sales**组的**组成员身份**属性。
-- 使用**企业移动性 + 安全 E5**和**Office 365 企业版 e5**许可证更新的**产品许可证**属性。
+- 使用**Microsoft 365 E5**许可证更新的 "**产品许可证**" 属性。
 
 请参阅 Identity 阶段的这些步骤，了解在生产中部署动态组成员身份和自动许可的信息和链接：
 

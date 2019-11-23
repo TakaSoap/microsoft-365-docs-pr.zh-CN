@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: f758213802d32b4154924d1ab4a3d8bbff49e717
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523627"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204252"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
 > [!NOTE] 
-> 这些更新现在即将推出，可能对所有用户不可用。
+> 这些更新现在即将推出，可能对所有用户不可用。 Enterprise outlook.com users 支持此功能。 它目前对消费者 outlook.com 不可用。
 
 若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
 
@@ -51,15 +51,15 @@ ms.locfileid: "37523627"
 
     ![在图形界面中编辑未经身份验证的发件人。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
-- 如果管理员已识别误报，并且发件人不应接收未验证的发件人治疗，则可以执行下列操作之一将发件人添加到欺骗智能欺骗允许列表：
+- 如果管理员已识别误报，并且发件人不应接收未验证的发件人处理，则可以执行下列操作之一将发件人添加到欺骗智能欺骗允许列表中：
         
-    - 通过欺骗性智能洞察力添加域对。 有关更多详细信息，请参阅演练：欺骗性智能洞察力
+    - 通过欺骗性智能洞察力添加域对。 有关更多详细信息，请参阅[演练：欺骗性智能洞察力](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight)。
                 
-    - 通过将 get-phishfilterpolicy cmdlet 添加域对。 有关更多详细信息，请参阅 Office 365 中的将 get-phishfilterpolicy 和反欺骗保护
+    - 通过将 get-phishfilterpolicy cmdlet 添加域对。 有关更多详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)和[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
 
 此外，如果通过管理员允许列表（包括电子邮件传输规则（Etr）、安全域列表（反垃圾邮件策略）、安全发件人列表或用户已将此用户设置为 "安全发件人"，则不会应用未验证的发件人治疗收件箱.
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Outlook.com 和 Outlook 在 web 上使用哪些条件来添加 '？ ' 和 ' via ' 属性？
 

@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6f024337ac134cc830dfb61286e7f8e53d41c169
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 3f9d4e1dff1f324e8e2c3eedb502ef0480d2c25e
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191217"
+ms.locfileid: "39202413"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -26,23 +26,27 @@ ms.locfileid: "39191217"
 
 - [Office 365 高级威胁防护（Office 365 ATP）](office-365-atp.md)
 
-以下功能现已在最新版本的 Office 365 ATP 中正式推出（GA）。 
+本文列出了最新版本的 Office 365 ATP 中的新功能。 当前在预览中的功能用 **（预览）** 表示。
 
 >尚不具有 Office 365 ATP？ [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。 
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 计划 1 和计划 2
 
-Office 365 ATP 提供了两个计划： Office 365 ATP 计划1和 Office 365 ATP 计划2。 下表汇总了每个计划中包含的内容。 
+Office 365 ATP 提供了两个计划： Office 365 ATP 计划1和 Office 365 ATP 计划2。
+ 
+下表汇总了每个计划中包含的内容。 
 
 |Office 365 ATP 计划1  |Office 365 ATP 计划2  |
 |---------|---------|
 |配置、保护和检测功能：<br/>- [安全附件](atp-safe-attachments.md)<br/>- [安全链接](atp-safe-links.md)<br/>- [SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)<br/>- [高级 antiphishing 保护](atp-anti-phishing.md)<br/>- [实时检测](threat-explorer.md)     |Office 365 ATP 计划1的功能<br/>---加---<br/>自动化、调查、修正和教育功能：<br/>- [威胁跟踪](threat-trackers.md)<br/>- [威胁资源管理器](threat-explorer.md)<br/>- [自动化事件响应](automated-investigation-response-office.md)<br/>- [攻击模拟器](attack-simulator.md)         |
 
-Office 365 ATP 计划2包含在 Office 365 企业版 E5、Office 365 教育版 A5 和 Microsoft 365 企业版 E5 中。 Microsoft 365 商业版中包含 Office 365 ATP 计划1。 如果当前订阅不包含 Office 365 ATP，请[联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，并查看 ATP 如何适用于您的组织。 
+- Office 365 ATP 计划2包含在 Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中。 
+- Microsoft 365 商业版中包含 Office 365 ATP 计划1。 
+- 如果当前订阅不包含 Office 365 ATP，请[联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，并查看 ATP 如何适用于您的组织。 
 
 ## <a name="november-2019"></a>2019 年 11 月
 
-- [查看新的已损坏用户检测和响应功能（预览）](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) （OFFICE 365 ATP 计划2）
+- [查看新的已损坏用户检测和响应功能（**预览**）](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) （Office 365 ATP 计划2）
 
 ## <a name="september-2019"></a>2019 年 9 月
 

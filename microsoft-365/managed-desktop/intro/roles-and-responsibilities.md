@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6eb10fda5df4d21068c9a3194cc4b97ba1afaaf3
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 0288dfd2ee84f406c4bcdf4a604d1370afeefed7
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982543"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202173"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 托管桌面角色和职责
 
@@ -41,7 +41,7 @@ Microsoft 托管桌面服务支持 | Microsoft 将通过 Microsoft 托管桌面�
 
 角色或责任 | 说明
 --- | ---
-变更管理 | 当需要对 Microsoft 托管桌面环境进行更改时，Microsoft 将提前通知客户。 客户需要拥有自己的更改管理流程，并具有与 Microsoft 托管桌面操作团队建立的联系人。 客户还需要有资源来查看和批准这些更改。 有关详细信息，请参阅[操作和监视](../service-description/operations-and-monitoring.md)。  
+变更管理 | 当需要对 Microsoft 托管桌面环境进行更改时，Microsoft 将提前通知客户。 有关详细信息，请参阅[服务更改和通信](../service-description/servicechanges.md)<br><br>客户需要拥有自己的更改管理流程，并具有与 Microsoft 托管桌面操作团队建立的联系人。 客户还需要有资源来查看和批准这些更改。 有关详细信息，请参阅[操作和监视](../service-description/operations-and-monitoring.md)。  
 身份管理 | 客户负责创建用户帐户，将用户分配到组，并将元数据保持为最新。 
 Office 365 专业增强版配置和管理 | Microsoft 负责确保将 Office 应用程序部署到最终用户，这些应用程序将保持最新状态。 <br><br> 客户负责管理 Office 365 服务和策略，包括 Exchange Online 管理责任：<br>-电子邮件管理<br>-邮箱和规则配置<br>-Exchange 本地管理<br><br>客户还负责 Office 365 管理门户中设置的协作工具、SharePoint server 管理、域管理、安全性和信息策略。 
 最终用户支持 | 客户负责为以下用户提供对的最终用户的支持： <br>-基于网站基础结构：所有网络和 internet 连接、VPN 基础结构和客户端配置、本地会议室设备、打印机、代理服务器和配置以及防火墙。<br><br>-公司范围内的云资源：电子邮件、SharePoint、协作服务和其他与公司范围的技术覆盖相关的云基础结构。<br><br>-业务线和任何其他特定于公司的应用程序。
