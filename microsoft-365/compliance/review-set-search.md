@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8eadfbeb1a78edd12129c97dc3144a45c5c409cf
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191267"
+ms.locfileid: "39202343"
 ---
 # <a name="query-the-data-in-a-review-set"></a>查询审阅集中的数据
 
@@ -51,11 +51,11 @@ ms.locfileid: "39191267"
 
 ### <a name="query-language"></a>查询语言
 
-除了条件卡片之外，还可以在关键字卡片中使用类似 KQL 的查询语言来生成查询。 评审 set 查询的查询语言支持标准布尔运算符，例如 AND、OR、NOT 和 NEAR （n）。 它还支持单字符通配符（？）和多字符通配符（*）。
+除了条件卡片之外，还可以在关键字卡片中使用类似 KQL 的查询语言来生成查询。 评审 set 查询的查询语言支持标准布尔运算符，例如**AND**、 **OR**、 **NOT**和**NEAR**。 它还支持单字符通配符（？）和多字符通配符（*）。
 
 ## <a name="using-filters"></a>使用筛选器
 
-除了可以保存的查询之外，还可以使用审阅设置筛选器将其他条件快速应用于审阅集查询。 这可帮助您进一步优化由审阅集查询显示的结果。 
+除了可以保存的查询之外，还可以使用审阅设置筛选器将其他条件快速应用于审阅集查询。 这可帮助您进一步优化由审阅集查询显示的结果。
 
 ![查看设置筛选器](media/AeDReviewSetFilters.png)
 

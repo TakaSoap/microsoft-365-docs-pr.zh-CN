@@ -701,6 +701,8 @@
           href: compliance-score-methodology.md
         - name: 合规性分数发行说明（预览版）
           href: compliance-score-release-notes.md
+        - name: 合规性分数常见问题（预览）
+          href: compliance-score-faq.md
         - name: 合规性管理器（预览版）
           href: compliance-manager-overview.md
           items:

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1f233a6bc19f4a7afa495f49ad77e39e496c1dc5
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38685087"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202163"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>合规性管理器的发行说明（预览）
 
@@ -51,8 +51,10 @@ ms.locfileid: "38685087"
 - 安全分数结果不适用于某些 Microsoft 365 和 Office 365 订阅中的某些操作项。 在这些情况下，**无法检测到**安全分数结果。
 - 有时，不完成相应策略和操作项目的安全分数结果。
 - 对于新租户，将自动打开所有操作的安全得分更新。 全局管理员可以将 "安全分数连续更新" 开关设置为 "关闭"，这将关闭所有操作的更新。
+  - **注意**：当组织首次部署 Microsoft 365 或 Office 365 时，将需要大约7天的时间来完全收集数据，并将其划分到你的成绩中。 在这段时间内，将安全分数连续更新开关设置为**Off**并手动设置要**实现**的操作，则会将该操作计为成绩。 在最初的七天之后，将安全分数连续更新打开将启用从该点继续进行监视。
 - 如果启用了安全分数更新，尽管操作的测试日期不会更新以反映监控，但这些操作会受到安全分数积极监控。
 - 在创建新的评估时，分数将自动包含 Microsoft 托管的控制得分和安全得分集成。
+- 安全分数集成不支持的任何操作都可以手动实现。 手动实现将考虑该操作的组的分数。
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 托管控件
 

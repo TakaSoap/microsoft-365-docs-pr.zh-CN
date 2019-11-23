@@ -14,21 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 配置适用于案例中所有审阅集的高级电子数据展示设置。 这包括分析和 OCR 的设置。
-ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 2def41ecc090b54cd3d6b789c2d9890392d1e0d3
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191137"
+ms.locfileid: "39202193"
 ---
 # <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
 
 您可以为每个高级电子数据展示事例配置设置来控制以下功能。
 
 - 临近重复项和电子邮件线程
+
 - 主题
+
 - 自动生成的审阅集查询
+
 - 忽略文本
+
 - 光学字符识别
 
 为事例配置搜索和分析设置：
@@ -69,7 +73,7 @@ ms.locfileid: "39191137"
 
 ![For 审阅自动生成查询](media/AeDForReviewQuery.png)
 
-此查询基本上筛选出评审集的重复项。 这样，你就可以查看评审集中的唯一项。 仅在为事例中的任何评审集运行分析时，才会创建此查询。 有关详细信息，请参阅关于查看集查询的详细信息，请参阅[在审阅集中查询数据](review-set-search.md)。
+此查询基本上筛选出评审集的重复项。 这使您可以查看评审集中的唯一项。 仅当在案例中运行评审集的分析时，才会创建此查询。 有关详细信息，请参阅关于查看集查询的详细信息，请参阅[在审阅集中查询数据](review-set-search.md)。
 
 ## <a name="ignore-text"></a>忽略文本
 
@@ -77,7 +81,8 @@ ms.locfileid: "39191137"
 
 ## <a name="optical-character-recognition-ocr"></a>光学字符识别（OCR）
 
-启用此设置后，OCR 将在添加到审阅集的图像文件上运行，以便可以对图像文本进行审阅、搜索、标记和分析。 有关详细信息，请参阅：
+启用此设置后，OCR 将在添加到审阅集的图像文件上运行，以便可以对图像文本进行审阅、搜索、标记和分析。 您可以在审阅集中的选定图像文件的文本查看器中查看提取的文本。 有关详细信息，请参阅：
 
 - [将搜索结果添加到审阅集](add-data-to-review-set.md#optical-character-recognition)
+
 - [受支持的图像文件类型](supported-filetypes-ediscovery20.md#image)

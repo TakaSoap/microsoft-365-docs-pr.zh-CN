@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: c50122f390809e145af621ed6341d02ae9c3b8cf
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718681"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202353"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -149,15 +149,19 @@ ms.locfileid: "38718681"
 
 "客户操作" 区域显示合规性管理器中所有模板和评估的所有客户操作（预览）。
 
-![合规性管理器-添加用户](media/compliance-manager-customer-actions.png)
+![合规性管理器-添加用户](media/compliance-manager-customer-actions.png "合规性管理器客户操作")
 
-一览，您可以查看操作的标题、所有者、类别、强制和分数，并确定它是否与安全得分集成。 您可以展开操作并选择 "**读取更多**"，以读取操作说明并访问说明中的任何链接。 您还可以使用此接口基于每个操作启用和禁用安全得分集成，并添加自定义操作。 具有安全得分集成功能的操作旁边有一个省略号（...）（请注意，自定义操作旁边还有一个省略号）。
+您可以一目了然地看到操作的标题、所有者、类别、强制和分数，并确定它是否与安全得分集成。 您可以展开操作并选择 "**读取更多**"，以读取操作说明并访问说明中的任何链接。 您还可以使用此接口基于每个操作启用和禁用安全得分集成，并添加自定义操作。 具有安全得分集成功能的操作旁边有一个省略号（...）（请注意，自定义操作旁边还有一个省略号）。
 
 #### <a name="enable-or-disable-secure-score-integration"></a>启用或禁用安全分数集成
 
 1. 选择要修改的操作的省略号（...），然后选择 "**编辑**"。
 2. 切换交换机以确保安全分数连续更新为 "开" 或 "关"，以通过安全分数启用或禁用连续监控。
 3. 选择“**保存**”。
+
+当组织首次部署 Microsoft 365 或 Office 365 时，将需要大约7天的时间来完全收集数据，并将其划分到你的成绩中。 在这段时间内，将安全分数连续更新开关设置为**Off**并手动设置要**实现**的操作，则会将该操作计为成绩。 在最初的七天之后，将安全分数连续更新打开将启用从该点继续进行监视。
+
+安全分数集成不支持的任何操作都可以手动实现。 手动实现将考虑该操作的组的分数。
 
 #### <a name="add-a-customer-action"></a>添加客户操作
 

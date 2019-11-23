@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 添加与高级电子数据展示事例相关的搜索结果。 将项目从其原始位置复制并复制到 Microsoft 提供的 Azure 存储位置。 此外，还会重新编制项索引，高级电子数据展示将对图像文件执行光学字符识别（OCR），并上传图像文本以供审阅和分析。
-ms.openlocfilehash: 0a1b2a245e3a650d6a35bc1032539e7b7e969dc9
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 99fe0cce8bd872ecd5f4a94699857c36c3a4d617
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191177"
+ms.locfileid: "39202323"
 ---
 # <a name="add-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
 
@@ -57,6 +57,6 @@ ms.locfileid: "39191177"
 
 ## <a name="optical-character-recognition"></a>光学字符识别
 
-将搜索结果添加到审阅集时，高级电子数据展示中的光学字符识别（OCR）功能会自动从图像中提取文本，并包括包含添加到评审集的数据的图像文本。 这样，您就可以对图像中的文本进行进一步的审阅和分析。 稀疏文件、电子邮件附件和嵌入图像支持 OCR。 有关 OCR 支持的图像文件格式的列表，请参阅[高级电子数据展示中支持的文件类型](supported-filetypes-ediscovery20.md#image)。
+将搜索结果添加到审阅集时，高级电子数据展示中的光学字符识别（OCR）功能会自动从图像中提取文本，并包括包含添加到评审集的数据的图像文本。 您可以在审阅集中的选定图像文件的文本查看器中查看提取的文本。 这样，您就可以对图像中的文本进行进一步的审阅和分析。 稀疏文件、电子邮件附件和嵌入图像支持 OCR。 有关 OCR 支持的图像文件格式的列表，请参阅[高级电子数据展示中支持的文件类型](supported-filetypes-ediscovery20.md#image)。
 
 您必须为在高级电子数据展示中创建的每个事例启用 OCR 功能。 有关详细信息，请参阅[配置搜索和分析设置](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr)。
