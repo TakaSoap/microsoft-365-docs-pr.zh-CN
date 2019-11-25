@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 组织中搜索并删除电子邮件 - 管理员帮助
+title: 在 Office 365 组织中搜索并删除电子邮件
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 的安全与合规中心内的搜索和清除功能在组织中的所有邮箱中搜索并删除电子邮件。
-ms.openlocfilehash: cd592ca48fdb2390e8449672920aa697cc297495
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37073997"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39218857"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>在 Office 365 组织中搜索并删除电子邮件 - 管理员帮助
+# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>在 Office 365 组织中搜索并删除电子邮件
 
 **本文适用于管理员。你是否尝试在邮箱中查找要删除的项目？请参阅[使用“即时搜索”查找邮件或项目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
@@ -39,11 +39,11 @@ ms.locfileid: "37073997"
   
 ## <a name="before-you-begin"></a>准备工作
 
-- 若要创建并运行内容搜索，你必须是**电子数据展示管理员**角色组的成员，或者分配有**合规性搜索**管理角色。 若要删除邮件，你必须是**组织管理**角色组的成员或分配有**搜索并清除**管理角色。 有关将用户添加到角色组的信息，请参阅[向用户授予对安全与合规中心的访问权限](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+- 若要创建并运行内容搜索，你必须是**电子数据展示管理员**角色组的成员，或者分配有**合规性搜索**管理角色。 若要删除邮件，你必须是**组织管理**角色组的成员或分配有**搜索并清除**管理角色。 有关将用户添加到角色组的信息，请参阅[向用户授予对安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
     
 - 你必须使用安全与合规中心 PowerShell 删除邮件。 有关如何连接的说明，请参阅[步骤 2](#step-2-connect-to-security--compliance-center-powershell)。
     
-- 一次最多可以删除每个邮箱的 10 封邮件。 因为搜索和删除邮件的功能是用作事件响应工具，所以此限制可帮助确保从邮箱中快速删除邮件。 此功能并不用于清理用户邮箱。 若要删除 10 个以上的项目，可以使用 Exchange Online PowerShell 中的 **Search-Mailbox -DeleteContent** 命令。 请参阅[搜索和删除邮件 - 管理员帮助](search-for-and-delete-messagesadmin-help.md)。
+- 一次最多可以删除每个邮箱的 10 封邮件。 因为搜索和删除邮件的功能是用作事件响应工具，所以此限制可帮助确保从邮箱中快速删除邮件。 此功能并不用于清理用户邮箱。 若要删除 10 个以上的项目，可以使用 Exchange Online PowerShell 中的 **Search-Mailbox -DeleteContent** 命令。 请参阅[搜索和删除邮件](search-for-and-delete-messagesadmin-help.md)。
     
 - 在内容搜索中，可通过搜索和清除操作删除其内项目的最大邮箱数为 50,000。 如果内容搜索（在[步骤 1](#step-1-create-a-content-search-to-find-the-message-to-delete) 中创建）具有超过 50,000 个源邮箱，则清除操作（在步骤 3 中创建）将失败。 请参阅[详细信息](#more-information)部分，以了解有关对超过 50,000 个邮箱执行搜索和清除操作的提示。 
     
@@ -82,13 +82,13 @@ ms.locfileid: "37073997"
   
 - 此查询返回用户在 2016 年 4 月 13 日至 2016 年 4 月 14 日之间收到的邮件，而且包含主题行中的单词“操作”和“必需”。
     
-    ```
+    ```powershell
     (Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
     ```
-   
+
 - 此查询返回由 chatsuwloginsset12345@outlook.com 发送的邮件，而且包含主题行中的完全匹配的短语“更新您的帐户信息”。
     
-    ```
+    ```powershell
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
@@ -102,19 +102,19 @@ ms.locfileid: "37073997"
 
 创建并优化内容搜索以返回你想要删除的邮件并且连接到安全与合规中心 PowerShell 后，最后一步是运行 **New-ComplianceSearchAction** cmdlet 来删除邮件。 可对邮件进行软删除或硬删除。 软删除的邮件将移至用户的“可恢复的项目”文件夹并保留，直到已删除项目的保留期到期。 硬删除的邮件被标记为从邮箱中永久删除，并在托管文件夹助理下次处理邮箱时永久删除。 如果为邮箱启用了单个项目恢复，则在已删除项目的保留期到期后，将永久删除硬删除的项目。 如果邮箱处于保留状态，则会保留已删除的邮件，直到该项目的保留期到期或从邮箱中删除保留为止。
   
-在以下示例中，该命令将软删除名为“删除网络钓鱼邮件”的内容搜索返回的搜索结果。 
+在以下示例中，该命令软删除名为“删除网络钓鱼邮件”的内容搜索返回的搜索结果。 
 
-```
+```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
 若要硬删除由“删除网络钓鱼邮件”内容搜索返回的项目，你需要运行以下命令：
 
-```
+```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-请注意，当你运行上一个命令以软删除或硬删除邮件时，*SearchName* 参数是你在步骤 1 中创建的内容搜索。 
+当你运行上一个命令以软删除或硬删除邮件时，*SearchName* 参数是你在步骤 1 中创建的内容搜索。 
   
 有关详细信息，请参阅 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
 
@@ -122,7 +122,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 - **如何获取有关搜索和删除操作的状态？**
 
-    运行 **Get-ComplianceSearchAction** 以获取有关删除操作的状态。 请注意，运行 **New-ComplianceSearchAction** cmdlet 时创建的对象使用以下格式命名：`<name of Content Search>_Purge`。 
+    运行 **Get-ComplianceSearchAction** 以获取有关删除操作的状态。 运行 **New-ComplianceSearchAction** cmdlet 时创建的对象使用以下格式命名：`<name of Content Search>_Purge`。 
     
 - **删除邮件后会发生什么情况？**
 

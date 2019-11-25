@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 对于管理员：了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到 Exchange Online 的用户邮箱中。 本主题提供了常见问题解答并解释了 PST 导入流程的工作原理。
-ms.openlocfilehash: 4682114ad150f818dfe39fe662bc3440d655e4ea
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074779"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39218837"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>将组织的 PST 文件导入到 Office 365 的概述
 
@@ -96,7 +96,7 @@ ms.locfileid: "37074779"
     
   - 使用安全与合规中心的“[保留策略](retention-policies.md)”来控制邮箱内容的保留时长，然后在保留期限到期之后删除内容。 
 
-  - 使用“[监督策略](supervision-policies.md)”检查邮件，以确保它们符合邮件标准并添加分类类型。
+  - 使用“[沟通合规性策略](communication-compliance.md)”检查邮件，以确保它们符合邮件标准并添加分类类型。
     
 - 将数据导入到 Office 365 有助于防止数据丢失。 导入到 Office 365 的电子邮件数据将继承 Exchange Online 的高可用性功能。
     
