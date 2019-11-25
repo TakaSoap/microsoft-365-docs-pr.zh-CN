@@ -12,12 +12,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5c43a0e26dfc052c23cbaf349bd541d996dca558
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 9a1ca4898696923b7dcbe22879906b25ccebcd13
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "38709988"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757649"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -25,7 +25,7 @@ Microsoft 365 允许你使用云控制框架来运营企业，该框架将控制
 
 Microsoft 被认为是云安全领域的行业领袖。通过多年构建企业软件和运行联机服务的经验，我们的团队一直在不断地学习，并持续更新服务和应用程序，从而交付满足严格行业标准的安全云生产力服务，以实现合规性。Microsoft 的政府云服务（包括 Office 365 美国政府版），满足美国联邦风险和授权管理计划 (FedRAMP) 的要求，使美国联邦机构能够从 Microsoft 云的成本节约和严格的安全性中获益。
 
-本文介绍了可遵循的优先级行动计划，从而能够符合 NIST 800-53 的要求。此行动计划由专门从事合规性工作的 Microsoft 合作伙伴 Protiviti 共同制定。请参加以下会话，详细了解如何在 Microsoft Ignite 大会中使用此行动计划：[规划 Microsoft 365 合规性路径并制定信息保护策略](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions)（主讲人：Maithili Dandige (Microsoft) 和 Antonio Maio (Protiviti)）。
+本文介绍了致力于符合 NIST 800-53 要求时可遵循的优先行动计划。此行动计划是与专门从事合规性工作的 Microsoft 合作伙伴 Protiviti 共同制定的。 
 
 ## <a name="action-plan-outcomes"></a>行动计划结果
 
