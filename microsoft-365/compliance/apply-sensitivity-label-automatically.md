@@ -1,10 +1,11 @@
 ---
 title: 将敏感度标签自动应用于内容
-ms.author: laurawi
-author: laurawi
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
+ms.date: 11/01/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: f0287eff3a462bc6f30c18c561203ba1a9a9dc19
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: eccc60dc7a306f3e7b2eb128ed45a92af65491a5
+ms.sourcegitcommit: cd748ca00088275372f51fbf8c4bc72bfd3e1437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37343105"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "39233207"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -32,8 +33,7 @@ ms.locfileid: "37343105"
 
 - 用户不再需要了解你的策略，反而可以专注于自己的工作。
 
-> [!NOTE]
-> 自动应用标签的功能需要 Azure 信息保护 P2 订阅。若要使用此功能，必须[下载并安装 Azure 信息保护统一标签客户端](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。我们正在设法实现 Office 应用对此功能的本机支持，因此届时将不需要 Azure 信息保护统一标签客户端。此外，统一标签客户端仅可在 Windows 上运行，因此 Mac、iOS 和 Android 尚不支持此功能。
+有关许可证要求的信息，请参阅 [Office 应用中的敏感度标签](sensitivity-labels-office-apps.md)。
 
 在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的“分类”**** > “敏感度标签”**** 下创建敏感度标签时，可使用自动标签设置。
 
@@ -41,15 +41,15 @@ ms.locfileid: "37343105"
 
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>根据条件自动应用敏感度标签
 
-敏感度标签的最强大功能之一是，能自动应用于符合特定条件的内容。在这种情况下，组织内人员无需应用敏感度标签，而是由 Office 365 代劳。
-   
-当内容包含特定类型的敏感信息时，可以选择自动将敏感度标签应用于该内容。配置要自动应用的敏感度标签时，你会看到与创建数据丢失防护 (DLP) 策略时相同的敏感信息类型列表。因此，可以自动将“高度机密”标签应用于包含客户个人身份信息 (PII)（例如信用卡号或社会安全号码）的任何内容。 
+敏感度标签最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用敏感度标签 - Office 365 会代为操作。
+
+当内容包含特定类型的敏感信息时，可以选择自动将敏感度标签应用于该内容。配置要自动应用的敏感度标签时，你会看到与创建数据丢失防护 (DLP) 策略时相同的敏感信息类型列表。因此，可以自动将“高度机密”标签应用于包含客户个人身份信息 (PII)（例如信用卡号或社会安全号码）的任何内容。
 
 ![实例计数和匹配准确度的选项](media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-选择敏感信息类型后，可以通过更改实例计数或匹配准确度来优化条件。有关详细信息，请参阅[调整规则以使其更容易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
+选择敏感信息类型后，可通过更改实例计数或匹配准确度来优化条件。 有关详细信息，请参阅[调整规则以使其更容易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
 
-此外，可以选择条件是必须检测所有敏感信息类型，还是仅检测其中一种。为了使条件更加灵活或复杂，可以添加组并在组之间使用逻辑运算符。有关详细信息，请参阅[分组和逻辑运算符](data-loss-prevention-policies.md#grouping-and-logical-operators)。
+此外，也可选择某项条件是必须删除所有敏感信息类型还是只删除其中一种。 要使条件更灵活或更复杂，可添加组并在组之间使用逻辑运算符。 有关详细信息，请参阅[分组和逻辑运算符](data-loss-prevention-policies.md#grouping-and-logical-operators)。
 
 当自动应用敏感度标签时，用户会在其 Office 应用中看到通知。他们可以选择“**确定**”以关闭通知。
 
@@ -57,11 +57,11 @@ ms.locfileid: "37343105"
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>建议用户应用敏感度标签
 
-如果愿意，可以建议用户应用标签，而不是自动对内容应用敏感度标签。此做法为用户提供了灵活性，他们可以接受分类和任何相关保护，也可以在标签不适合其文档或电子邮件时拒绝该建议。
+如果愿意，可建议你的用户应用此标签。 通过此选项，你的用户可接受分类及任何相关保护，也可在标签不适合其文档或电子邮件时关闭建议。
 
-请注意，Word、PowerPoint 和 Excel 均支持建议标签（并要求安装 Azure 信息保护统一标签客户端）。我们正设法让 Outlook 也支持建议标签。
+建议的标签在 Word、PowerPoint 和 Excel 中受支持（需要安装 Azure 信息保护统一标记客户端）。
 
-![向用户建议敏感度标签的选项](media/Sensitivity-labels-Recommended-label-option.png)
+![用于向用户建议敏感度标签的选项](media/Sensitivity-labels-Recommended-label-option.png)
 
 以下示例是配置条件来将标签应用为建议操作时的提示以及自定义策略提示。你可以选择策略提示中显示的文本。
 
@@ -69,13 +69,13 @@ ms.locfileid: "37343105"
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何应用自动标签或建议标签
 
-- 自动标签适用于 Word、Excel 和 PowerPoint 的文档保存场合以及 Outlook 的电子邮件发送场合。这些条件下会检测文档和电子邮件正文中的敏感信息，以及页眉和页脚中的敏感信息，但不包括电子邮件的主题行和附件中的敏感信息。
+- 自动标记在你保存文档时应用于 Word、Excel 和 PowerPoint，在你发送电子邮件时应用于 Outlook。 这些条件会检测文档和电子邮件的正文文本和页眉页脚中是否有敏感信息，但不检测电子邮件的主题行或附件。
 
-- 不能对以前手动标记过或者以前使用更高分类级别进行了自动分类的文档和电子邮件使用自动分类。请记住，文档或电子邮件只能应用一个敏感标签（不包括单个保留标签）。
+- 不可对之前已手动标记或者之前已自动标记有更高级分类的文档和电子邮件使用自动分类。 请记住，除了一个保留标签，另外仅可向文档或电子邮件应用一个敏感度标签。
 
-- 建议分类适用于 Word、Excel 和 PowerPoint 的文档保存场合。我们正设法让 Outlook 也支持建议标签。
+- 在保存文档时，建议分类会应用于 Word、Excel 和 PowerPoint。
 
-- 不能对以前使用更高分类级别标记的文档使用建议分类。在这种情况下，当内容已经标记有更高分类级别时，用户将看不到包含建议和策略提示的提示信息。
+- 不可对之前标记有更高级分类的文档使用建议的分类。 如果内容已标记有更高级分类，则用户不会看到带有建议和策略提醒的提示。
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>在多个条件适用于多个标签时如何评估这些条件
 
@@ -83,4 +83,4 @@ ms.locfileid: "37343105"
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>不要将父标签配置为自动应用或推荐使用
 
-请记住，父标签（带子标签的标签）无法应用于内容。 确保未将父标签配置为自动应用或推荐使用，因为父标签不会应用于使用 Azure 信息保护统一标签客户端的 Office 应用程序中的内容。 有关父标签和子标签的更多信息，请参阅[子标签（对标签进行分组）](sensitivity-labels.md#sublabels-grouping-labels)。
+请记住，不可向内容应用父标签（即带子标签的标签）。 确保未将父标签配置为自动应用或推荐使用，因为父标签不会应用于使用 Azure 信息保护统一标签客户端的 Office 应用程序中的内容。 有关父标签和子标签的更多信息，请参阅[子标签（对标签进行分组）](sensitivity-labels.md#sublabels-grouping-labels)。
