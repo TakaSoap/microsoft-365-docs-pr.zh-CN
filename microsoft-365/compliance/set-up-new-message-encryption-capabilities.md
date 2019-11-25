@@ -15,46 +15,41 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 新的 Office 365 邮件加密功能在 Azure 信息保护的基础上构建，你的组织可使用受保护的电子邮件通信，与组织内部和外部的人员通信。 新的 OME 功能适用于其他 Office 365 组织、Outlook.com、Gmail 和其他电子邮件服务。
-ms.openlocfilehash: 835b1d6f40868684536dbea8f75dab0665950210
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c772151250d30e62a3f2689df5cd853536af3ede
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075314"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "39218731"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>设置全新的 Office 365 邮件加密功能
 
 通过新的 Office 365 邮件加密 (OME) 功能，组织可与任何设备上的任何人共享受保护的电子邮件。 用户可使用 Outlook.com、Gmail 和其他电子邮件服务与其他 Office 365 组织以及非 Office 365 客户交换受保护的邮件。
 
-||
-|:-----|
-|本文是有关 Office 365 邮件加密的一系列文章的一部分。 本文适用于管理员和 IT 专业人员。 如果只是在查找发送或接收加密邮件的相关信息，请参阅 [Office 365 邮件加密 (OME)](ome.md) 中的文章列表，并找到最符合你的需求的文章。 |
-||
-
 请按照下列步骤操作，确保 Office 365 组织中提供了新的 OME 功能。
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>验证 Azure 权限管理已激活
 
-全新的 OME 功能利用 [Azure 权限管理服务 (Azure RMS)](https://docs.microsoft.com/zh-CN/azure/information-protection/what-is-information-protection) 中的保护功能，它是 [Azure 信息保护](https://docs.microsoft.com/zh-CN/azure/information-protection/what-is-azure-rms)用于通过加密和访问控制来保护电子邮件和文档的技术。
+全新的 OME 功能利用 [Azure 权限管理服务 (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) 中的保护功能，它是 [Azure 信息保护](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)用于通过加密和访问控制来保护电子邮件和文档的技术。
 
-使用全新的 OME 功能的唯一前提是必须在组织的租户中激活[Azure 权限管理](https://docs.microsoft.com/zh-CN/azure/information-protection/what-is-azure-rms)。 如果是这样，Office 365 将自动激活全新的 OME 功能，你无需执行任何操作。
+使用全新的 OME 功能的唯一前提是必须在组织的租户中激活[Azure 权限管理](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 如果是这样，Office 365 将自动激活全新的 OME 功能，你无需执行任何操作。
 
-对于最符合条件的计划，也会自动激活 Azure RMS，因此你可能也不需要在此方面执行任何操作。 有关详细信息，请参阅[激活 Azure 权限管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service)。
+对于最符合条件的计划，也会自动激活 Azure RMS，因此你可能也不需要在此方面执行任何操作。 有关详细信息，请参阅[激活 Azure 权限管理](https://docs.microsoft.com/azure/information-protection/activate-service)。
 
 >[!IMPORTANT]
->如果通过 Exchange Online 使用 Active Directory 权限管理服务 (AD RMS)，则需要先[迁移到 Azure 信息保护](https://docs.microsoft.com/zh-CN/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，然后才能使用全新的 OME 功能。 OME 与 AD RMS 不兼容。  
+>如果通过 Exchange Online 使用 Active Directory 权限管理服务 (AD RMS)，则需要先[迁移到 Azure 信息保护](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，然后才能使用全新的 OME 功能。 OME 与 AD RMS 不兼容。  
 
 有关详细信息，请参阅：
 
 - [使用新的 OME 功能需要什么订阅？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)检查你的订阅计划是否包含 Azure 信息保护 (包括 Azure RMS 功能)。
-- [Azure 信息保护](https://azure.microsoft.com/zh-CN/services/information-protection/)获取有关购买符合条件的订阅的信息。  
+- [Azure 信息保护](https://azure.microsoft.com/services/information-protection/)获取有关购买符合条件的订阅的信息。  
 
 ### <a name="manually-activating-azure-rights-management"></a>请手动激活 Azure 权限管理
 
 如果禁用了 Azure RMS，或者由于某种原因未自动激活，则可在以下各项中将其手动激活：
 
-- **Microsoft 365 管理中心**：有关说明，请参阅[如何从管理中心激活 Azure 权限管理](https://docs.microsoft.com/zh-CN/azure/information-protection/activate-office365)。
-- **Azure 门户**：有关说明，请参阅[如何从 Azure 门户激活 Azure 权限管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure)。
+- **Microsoft 365 管理中心**：有关说明，请参阅[如何从管理中心激活 Azure 权限管理](https://docs.microsoft.com/azure/information-protection/activate-office365)。
+- **Azure 门户**：有关说明，请参阅[如何从 Azure 门户激活 Azure 权限管理](https://docs.microsoft.com/azure/information-protection/activate-azure)。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>配置对 Azure 信息保护租户密钥的管理
 
@@ -64,9 +59,9 @@ ms.locfileid: "37075314"
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>在 Exchange Online PowerShell 中验证新的 OME 配置
 
-可验证 Office 365 租户是否已正确配置，以使用 [Exchange Online PowerShell](https://docs.microsoft.com/zh-CN/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) 中的新 OME 功能。
+可验证 Office 365 租户是否已正确配置，以使用 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) 中的新 OME 功能。
   
-1. 使用 Office 365 租户中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/zh-CN/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. 使用 Office 365 租户中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 2. 运行 Get-IRMConfiguration cmdlet。
 
@@ -104,7 +99,7 @@ ms.locfileid: "37075314"
 
    - Office 365 组织名称将替换 *Contoso*。
 
-   - 默认模板名称可能与上面显示的不同。 有关详细信息，请参阅[配置和管理 Azure 信息保护模板](https://docs.microsoft.com/zh-CN/azure/information-protection/configure-policy-templates)。
+   - 默认模板名称可能与上面显示的不同。 有关详细信息，请参阅[配置和管理 Azure 信息保护模板](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)。
 
 4. 运行 Remove-PSSession cmdlet，从权限管理服务断开连接。
 

@@ -3,7 +3,7 @@ title: 在 Office 365 中设置 SPF 以防止欺骗
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/07/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 和自定义域。 SPF 有助于验证从自定义域发送的出站电子邮件。
-ms.openlocfilehash: 4861799695b28b0f096000ddee6e20d7a187a5aa
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 547577fbcddca6e17d8e70a7fda8ffa469dfb525
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038861"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191277"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>在 Office 365 中设置 SPF 以防止欺骗
 
@@ -28,7 +28,7 @@ ms.locfileid: "38038861"
 若要使用自定义域，Office 365 要求你将发件人策略框架 (SPF) TXT 记录添加到 DNS 记录中，这样做有助于防止欺骗发生。SPF 标识允许哪些邮件服务器代表你发送邮件。一般来说，SPF 以及 DKIM、DMARC 和 Office 365 支持的其他技术可有助于防止欺骗和钓鱼发生。以 TXT 记录的形式添加 SPF 后，DNS 可使用此记录来确定哪些邮件服务器可以代表你的自定义域发送邮件。收件人邮件系统可以参阅 SPF TXT 记录，从而确定从你的自定义域发送的邮件是否来自已获授权的邮件服务器。
   
 例如，假设自定义域 contoso.com 使用 Office 365。你添加一个 SPF TXT 记录，将 Office 365 邮件服务器列为你的域的合法邮件服务器。当接收邮件服务器从 joe@contoso.com 收到一封邮件时，服务器会查找 contoso.com 的 SPF TXT 记录，并确定这封邮件是否有效。如果接收服务器确定这封邮件不是来自 SPF 记录中列出的 Office 365 邮件服务器，则可以选择将这封邮件作为垃圾邮件拒绝。
-  
+
 另外，如果自定义域没有 SPF TXT 记录，某些接收服务器可能会彻底拒绝邮件。这是因为接收服务器无法验证邮件是否来自已获授权的邮件服务器。
   
 如果你已经为 Office 365 设置了邮件，则表明已经将 Microsoft 的邮件服务器作为 SPF TXT 记录添加在 DNS 中。不过，在某些情况下，可能需要在 DNS 中更新 SPF TXT 记录。例如：
@@ -41,7 +41,7 @@ ms.locfileid: "38038861"
 
 ## <a name="updating-your-spf-txt-record-for-office-365"></a>为 Office 365 更新您的 SPF TXT 记录
 
-更新 DNS 中的 TXT 记录之前，需要收集一些信息，并确定记录的格式。这将有助于防止生成 DNS 错误。有关高级示例（更详细地介绍了支持的 SPF 语法），请参阅 [SPF 在 Office 365 中防止欺骗和钓鱼的工作原理](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
+更新 DNS 中的 TXT 记录之前，需要收集一些信息，并确定记录的格式。这将有助于防止生成 DNS 错误。有关高级示例和支持的 SPF 语法的更详细地介绍，请参阅 [SPF 在 Office 365 中防止欺骗和钓鱼的工作原理](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
   
 收集此信息：
   

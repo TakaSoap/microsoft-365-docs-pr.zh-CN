@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的安全 & 合规性中心来启用存档邮箱, 以便支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: ea6448c4d47eb89d16266644e5a4ab06f774e0da
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 63c6986e3bf053f09ce4c4925735e920da3b5ed4
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38708048"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793666"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全与合规中心中启用存档邮箱
   
 Office 365 中的存档（称为“就地存档”）为用户提供额外的邮箱存储空间。 打开存档邮箱后, 用户可使用 Microsoft Outlook 和 Outlook 网页版 (以前称为 Outlook Web App) 在其存档邮箱中访问并存储邮件。 用户可以在其主邮箱和存档邮箱之间移动或复制邮件。 他们还可以使用“恢复已删除邮件”工具恢复存档邮箱中“可恢复的项目”文件夹下的已删除邮件。 
   
-> [!TIP]
-> Office 365 提供了一种无限制的存档存储空间, 可自动展开存档功能。 当启用自动展开存档, 并到达用户存档邮箱中的初始存储配额时, Office 365 将自动增加额外的存储空间。 这意味着用户不会耗尽邮箱存储空间, 并且在最初启用存档邮箱为贵公司打开自动扩展存档后, 你将不必管理任何内容。 有关详细信息，请参阅 [在 Office 365 中不受限制地存档概述](unlimited-archiving.md)。 
+> [!NOTE]
+> Office 365 中的自动扩展存档功能在存档邮箱中提供 1 TB 额外的存储空间。 当启用自动扩展存档，并到达用户存档邮箱中的初始存储配额时，Office 365 将自动增加额外的存储空间。 这意味着用户不会耗尽邮箱存储空间, 并且在最初启用存档邮箱为贵公司打开自动扩展存档后, 你将不必管理任何内容。 有关详细信息，请参阅 [在 Office 365 中不受限制地存档概述](unlimited-archiving.md)。 
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -43,7 +43,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
 3. 在安全与合规中心的左窗格中，单击**数据管理** \> **存档**。
     
-    将显示“存档”**** 页。 “存档邮箱”**** 列表示启用还是禁用每个用户的存档邮箱。 
+    将显示“存档”**** 页。“存档邮箱”**** 列表示每个用户的存档邮箱已启用还是禁用。 
     
 4. 在邮箱的列表中，选择要启用存档邮箱的用户。
     
