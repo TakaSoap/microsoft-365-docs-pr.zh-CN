@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204251"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257547"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -88,8 +88,8 @@ ms.locfileid: "39204251"
 |恶意软件检测响应|否|否|如果在电子邮件附件中检测到恶意软件，邮件将被隔离，并且只能由管理员释放。|
 |用于阻止可疑文件类型的 "常见附件类型筛选器"|打开|打开||
 |恶意软件零小时自动清除|打开|打开||
-|通知内部发件人未送达邮件|已禁用|已禁用||
-|通知外部发件人未送达的邮件|已禁用|已禁用||
+|通知内部发件人未送达邮件|Disabled|Disabled||
+|通知外部发件人未送达的邮件|Disabled|Disabled||
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP 反网络钓鱼策略设置
 
@@ -148,7 +148,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |安全功能名称|标准|全|评论|
 |---------|---------|---------|---------|
 |在 Office 365 应用中使用 ATP 安全链接，Office for iOS 和 Android|已启用|已启用|这属于适用于整个组织的 ATP 安全链接策略|
-用户单击安全链接时不进行跟踪|已禁用|已禁用|这属于适用于整个组织的 ATP 安全链接策略|
+用户单击安全链接时不进行跟踪|Disabled|Disabled|这属于适用于整个组织的 ATP 安全链接策略|
 |不要让用户通过指向原始 URL 的安全链接进行单击|已启用|已启用|这属于适用于整个组织的 ATP 安全链接策略|
 |邮件中未知的潜在恶意 Url 的操作|打开|打开||
 |对指向文件的可疑链接和链接应用实时 URL 扫描|已启用|已启用||
@@ -164,24 +164,3 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |在检测时重定向附件|已启用|已启用|重定向到安全管理员的电子邮件地址，该管理员知道如何确定附件是否为恶意软件|
 |如果恶意软件扫描附件超时或发生错误，则 ATP 安全附件响应|已启用|已启用||
 
-## <a name="miscellaneous-settings"></a>其他设置
-
-这些设置涵盖了一系列不一定符合上述特定类别的功能。 某些设置在安全 & 合规中心之外。
-
-安全功能名称|标准|全|评论|
-|---------|---------|---------|---------|
-|[在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
-|[使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)|是|是||
-|[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)|是|是|对 Standard 使用 action = 隔离，对 Strict 执行 action = 拒绝。|
-|部署报告邮件加载项以改进最终用户报告可疑电子邮件的情况|是|是||
-|安排恶意软件和垃圾邮件报告|是|是||
-|自动转发到外部域应为 "允许" 或 "受监视"|是|是||
-|应启用统一审核|是|是||
-|IMAP 到邮箱的连接|已禁用|已禁用||
-|到邮箱的 POP 连接|已禁用|已禁用||
-|对邮箱的 SMTP 已验证的提交|已禁用|已禁用||
-|到邮箱的 EWS 连接|已禁用|已禁用||
-|PowerShell 连接|已禁用|已禁用||
-|尽可能使用欺骗智能白名单发件人|是|是||
-|基于目录的边缘阻止（DBEB）|已启用|已启用|域类型 = 权威|
-|[为所有管理员帐户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|已启用|已启用||

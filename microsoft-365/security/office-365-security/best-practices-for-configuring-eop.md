@@ -1,5 +1,5 @@
 ---
-title: 配置 EOP 的最佳实践
+title: 配置 EOP 和 Office 365 ATP 的最佳实践
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,16 +10,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
-ms.openlocfilehash: 95b415038fdddd1548b23edb89921084d70850c6
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: ccc312d6e3e9954ea38b10ebe9b4c8877a85b925
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204241"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257287"
 ---
 # <a name="best-practices-for-configuring-eop"></a>配置 EOP 的最佳做法
 
-请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。建议一般情况下使用默认的配置设置。参阅本主题的前提是，你已经完成安装过程。如果还没有完成 EOP 安装，请参阅[设置 EOP 服务](set-up-your-eop-service.md)。
+请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。 参阅本主题的前提是，你已经完成安装过程。 如果还没有完成 EOP 安装，请参阅[设置 EOP 服务](set-up-your-eop-service.md)。
 
 ## <a name="use-a-test-domain"></a>使用测试域
 
@@ -27,36 +27,44 @@ ms.locfileid: "39204241"
 
 ## <a name="synchronize-recipients"></a>同步收件人
 
-如果你的组织在本地 Active Directory 环境中拥有现成的用户帐户，则可以将这些帐户同步到云中的 Azure Active Directory。建议使用目录同步。若要详细了解使用目录同步的具体优势以及安装步骤，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)。
+如果您的组织在本地 Active Directory 环境中有现有的用户帐户，则可以将这些帐户同步到云中的 Azure Active Directory。 建议使用目录同步。 若要详细了解使用目录同步的具体优势以及安装步骤，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)。
 
-## <a name="spf-record-customization-to-help-prevent-spoofing"></a>SPF 记录自定义帮助防止欺骗
+## <a name="recommended-settings"></a>推荐设置
 
-在设置 EOP 时，会将 EOP 的发件人策略框架（SPF）记录添加到 DNS 记录中。 SPF 记录可帮助防止欺骗。 有关 SPF 记录如何阻止欺骗以及如何将本地 IP 地址添加到 SPF 记录的详细信息，请参阅[Set UP SPF In Office 365 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
+我们为安全管理员自定义 satistfy 其环境需求的安全设置。 尽管作为一般规则，我们建议的 EOP 和 Office 365 ATP 中有两个安全级别：标准和严格。 这些设置在[EOP 和 Office 365 ATP security 的推荐设置](recommended-settings-for-eop-and-office365-atp.md)中列出。 
 
-## <a name="set-anti-spam-options"></a>设置反垃圾邮件选项
+### <a name="miscellaneousnon-policy-settings"></a>杂项/非策略设置
 
-通过将 IP 地址添加到 IP 允许和 IP 阻止列表中，以及通过选择 "**启用安全列表**" 选项（它应减少错误分类为垃圾邮件的正常邮件）来管理连接筛选器设置。 有关详细信息，请参阅[配置连接筛选器策略](configure-the-connection-filter-policy.md)。 有关适用于整个组织的更多垃圾邮件设置，请参阅[如何防止在 office 365 中将真实电子邮件标记为垃圾](../../compliance/prevent-email-from-being-marked-as-spam.md)邮件，或在[office 365 中减少垃圾](reduce-spam-email.md)邮件。 如果您拥有管理员级别的控制，并且想要避免误报或漏报，这些主题将很有帮助。
+这些设置涵盖了安全策略之外的一系列功能。
 
-通过查看和（可选）更改默认设置来管理内容筛选器。 例如，您可以更改对垃圾邮件检测到的邮件发生的操作。 如果要采用严格的垃圾邮件筛选方法，可以配置高级垃圾邮件筛选选项。 我们建议您先测试这些选项，然后再在生产环境中实施它们（通过打开它们）。 我们建议关注网络钓鱼的组织启用 " **SPF 记录：硬失败**" 选项。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)和[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)。
+安全功能名称|标准|全|评论|
+|---------|---------|---------|---------|
+|[在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
+|[使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)|是|是||
+|[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)|是|是|对 Standard 使用 action = 隔离，对 Strict 执行 action = 拒绝。|
+|部署报告邮件加载项以改进最终用户报告可疑电子邮件的情况|是|是||
+|安排恶意软件和垃圾邮件报告|是|是||
+|自动转发到外部域应为 "允许" 或 "受监视"|是|是||
+|应启用统一审核|是|是||
+|IMAP 到邮箱的连接|Disabled|Disabled||
+|到邮箱的 POP 连接|Disabled|Disabled||
+|对邮箱的 SMTP 已验证的提交|Disabled|Disabled||
+|到邮箱的 EWS 连接|Disabled|Disabled||
+|PowerShell 连接|Disabled|Disabled||
+|尽可能使用欺骗智能白名单发件人|是|是||
+|基于目录的边缘阻止（DBEB）|已启用|已启用|域类型 = 权威|
+|[为所有管理员帐户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|已启用|已启用||
 
-> [!IMPORTANT]
-> 如果正在使用 "默认内容筛选器操作"，请**将邮件移至垃圾邮件文件夹**，以确保该操作将适用于本地邮箱，则需要在内部部署 Exchange 组织中配置邮件流规则（也称为传输规则），以检测由 EOP 添加的垃圾邮件头。 有关详细信息，请参阅[确保垃圾邮件已路由到每个用户的"垃圾邮件"文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+## <a name="troubleshooting"></a>故障排除
 
-我们建议您查看[反垃圾邮件保护常见问题解答](anti-spam-protection-faq.md)，包括 "出站邮件最佳实践" 部分，这将有助于确保出站邮件已送达。
+使用管理中心中的报告解决一般问题和趋势。 使用消息跟踪工具来查找有关邮件的单点数据。 有关报告的详细信息，请参阅 [Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)。 有关消息跟踪工具的详细信息，请参阅[Trace an Email Message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)。
 
-可以通过多种方式向 Microsoft 提交漏报（垃圾邮件）和误报（非垃圾邮件）以供分析。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>向 Microsoft 报告误报和假负整数
 
-## <a name="set-anti-malware-options"></a>设置反恶意软件选项
+管理员应通过我们的管理员提交门户将漏报（垃圾邮件）和误报（非垃圾邮件）提交给 Microsoft。 可以提交电子邮件、文件和 Url，以帮助管理员确定我们为什么传递或未将邮件传递给最终用户。 有关详细信息，请参阅[如何将可疑垃圾邮件、网络钓鱼、url 和文件提交到 Microsoft For Office 365 扫描](admin-submission.md)。
 
-查看并优化恶意软件筛选器设置。 有关详细信息，请参阅[配置反恶意软件策略](configure-anti-malware-policies.md)。 我们还建议你阅读[Anti-malware protection FAQ](anti-malware-protection-faq-eop.md) 中有关反恶意软件保护的其他常见问题解答。
+最终用户还可以直接将漏报（垃圾邮件）和误报（非垃圾邮件）报告给 Microsoft，以便在 verdicts 时对其进行不同意的分析。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
 
-如果您担心包含恶意软件的可执行文件，则可以创建邮件流规则，以阻止任何具有可执行内容的电子邮件附件。 按照[如何通过 Exchange Online Protection 中的文件附件阻止功能降低恶意软件威胁](https://support.microsoft.com/kb/2959596)的步骤，以阻止在[Exchange online 中使用邮件流规则检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)中列出的文件类型。
-
-您可以使用反恶意软件策略中的[常见附件类型筛选器](protect-against-threats.md#part-1---anti-malware-protection)。
-
-为了加强保护，我们仍建议你使用邮件流规则阻止以下部分或全部的扩展名：ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、ht、hta、inf、ins、isp、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、vbs、wsc、wsf 和 wsh。 您可以通过使用 "**任何附件文件扩展名包含这些词**" 条件来执行此操作。
-
-管理员和最终用户可以提交恶意软件，使其越过筛选器，或提交您认为被错误地标识为恶意软件的文件，方法是将其发送到 Microsoft 进行分析。 有关详细信息，请参阅[Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)。
 
 ## <a name="create-mail-flow-rules"></a>创建邮件流规则
 
@@ -68,35 +76,4 @@ ms.locfileid: "39204241"
 
 在组织同时包括本地 Exchange 和 Office 365 的混合环境中，请考虑在邮件流规则中使用的条件。 如果要将规则应用于整个组织，请务必使用内部部署 Exchange 和 Office 365 中提供的条件。 虽然大多数条件在这两个环境中都可用，但只有一个环境或另一个环境中提供了一些。 有关详细信息，请参阅[Exchange Online 中的邮件流规则（传输规则）](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
 
-您可以使用邮件流规则检查组织内传输中邮件的邮件附件。 配置规则条件以查找附件，然后对检测到的附件执行操作。 有关详细[信息，请参阅使用邮件流规则检查 Exchange Online 中的邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。
 
-### <a name="phishing-and-spoofing-prevention"></a>网络钓鱼和欺骗预防
-
-通过检测电子邮件中个人信息退出组织的时间，可以提高防钓鱼保护。例如，可以在邮件流规则中使用下列正则表达式，检测可能危及隐私的个人财务数据或信息传输：
-
-- `\d\d\d\d\s\d\d\d\d\s\d\d\d\d\s\d\d\d\d`（MasterCard 或签证）
-
-- `\d\d\d\d\s\d\d\d\d\d\d\s\d\d\d\d\d`（美国速成版）
-
-- `\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d`（任何16位数字）
-
-- `\d\d\d\-\d\d\-\d\d\d\d`（社会安全号码）
-
-通过阻止似乎是从你自己的域发送的入站恶意电子邮件，也可以成功减少垃圾邮件和网络钓鱼。例如，可以创建一个邮件流规则，拒绝从你的公司域发送到同一个公司域的邮件，以阻止此类发件人伪造。
-
-> [!CAUTION]
-> 我们建议仅当您确定您的域中没有合法电子邮件从 Internet 发送到邮件服务器时，才创建此拒绝规则。当邮件从组织中的某位用户发送给外部收件人，并随后转发给组织中的其他收件人时，会发生此问题。
-
-## <a name="reporting-and-troubleshooting"></a>报告和疑难解答
-
-使用管理中心中的报告解决一般问题和趋势。 使用消息跟踪工具来查找有关邮件的单点数据。 有关报告的详细信息，请参阅 [Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)。 有关消息跟踪工具的详细信息，请参阅[Trace an Email Message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)。
-
-## <a name="for-more-information"></a>有关详细信息
-
-[EOP 一般常见问题解答](eop-general-faq.md)
-
-[EOP 帮助与支持](help-and-support-for-eop.md)
-
-[如何防止真实电子邮件在 Office 365 中标记为垃圾邮件](../../compliance/prevent-email-from-being-marked-as-spam.md)
-
-[如何减少 Office 365 中的垃圾电子邮件](reduce-spam-email.md)
