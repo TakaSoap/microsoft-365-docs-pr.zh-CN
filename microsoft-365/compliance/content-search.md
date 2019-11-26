@@ -10,18 +10,19 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合规中心中的内容搜索工具搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Office 365 组 和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: e3553ff2e3c8398ac4bc00258e41e8d9607b3639
-ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
+ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37334252"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39266101"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -37,7 +38,7 @@ ms.locfileid: "37334252"
     
 - Office 365 组
     
-运行内容搜索后，内容位置的数量和搜索结果的估计数量将会显示在搜索配置文件中。 还可以快速查看统计信息，例如具有与搜索查询匹配的项的内容位置。 运行搜索后，可预览结果或将其导出到本地计算机。
+运行内容搜索后，内容位置的数量和搜索结果的估计数量将会显示在搜索统计信息中。 还可以快速查看统计信息，例如具有与搜索查询匹配的项的内容位置。 运行搜索后，可预览结果或将其导出到本地计算机。
 
 ## <a name="create-a-search"></a>创建搜索
 
@@ -103,11 +104,10 @@ ms.locfileid: "37334252"
 若要再次访问此内容搜索或者访问“**内容搜索**”页面上列出的其他内容搜索，请选择搜索，然后单击“**打开**”。 
   
 若要清除结果或者创建其他搜索，请单击“![添加图标](media/O365-MDM-CreatePolicy-AddIcon.gif)”“**新建搜索**”。 
-
   
 ## <a name="preview-search-results"></a>预览搜索结果
 
-具有两种预览搜索结果配置设置。 运行新搜索或者打开现有搜索之后，请单击 **单独的结果** 以查看以下预览设置： 
+具有两种预览搜索结果配置设置。 运行新搜索或者打开现有搜索之后，请单击**单独的结果**以查看以下预览设置： 
   
 ![预览搜索结果设置](media/83519477-1c85-4442-8886-481f186fd758.png)
   
@@ -133,7 +133,7 @@ ms.locfileid: "37334252"
     
 2. 在浮出页面上，单击“**打开查询**”。 
     
-3. 在“**单独的结果**”下拉列表中，单击“**搜索配置文件**”。
+3. 在“**单独的结果**”下拉列表中，单击“**搜索统计信息**”。
     
 4. 在“**类型**”下拉列表中，根据想要查看的搜索统计信息单击以下选项之一。 
     
@@ -244,13 +244,12 @@ ms.locfileid: "37334252"
     
 - 在 Exchange Online 中运行 **Get-UnifiedGroup** cmdlet，以查看团队或 Office 365 组的属性。 这是一种获取与团队或组关联的网站 URL 的好方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性： 
     
-  ```
+  ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
   PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
   SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
-  
   ```
 
     > [!NOTE]
@@ -260,7 +259,7 @@ ms.locfileid: "37334252"
     
 - 若要获取团队或 Office 365 组的成员列表，则可以查看 Microsoft 365 管理中心 **“主页”“\>组**”页面上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令： 
     
-  ```
+  ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
@@ -387,19 +386,19 @@ ms.locfileid: "37334252"
 
 **北美**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-NAM" -Users ediscovery-nam@contoso.com -Region NAM -Action ALL
 ```
 
 **欧洲**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-EUR" -Users ediscovery-eur@contoso.com -Region EUR -Action ALL
 ```
 
 **亚太地区**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@contoso.com -Region APC -Action ALL
 ```
 

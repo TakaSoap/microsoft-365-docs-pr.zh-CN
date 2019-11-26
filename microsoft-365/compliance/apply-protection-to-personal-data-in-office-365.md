@@ -16,13 +16,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 了解如何使用 DLP 策略保护 Office 365 中的个人数据。
-ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: 了解如何使用数据丢失防护 (DLP) 策略保护 Office 365 中的个人数据。
+ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708043"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256779"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用保护
 
@@ -84,7 +84,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 <td align="left"><p>在 SharePoint Online 和 OneDrive for Business 中的文档内发现此数据时，向合规性团队发送电子邮件通知。</p>
 <p>在员工访问包含此数据的文档时，在 SharePoint 和 OneDrive for Business 中自定义策略提示并向员工显示相应的提示。</p>
 <p>此数据被共享时，进行检测和报告。</p></td>
-<td align="left"><p>提高合规性团队及员工对该数据存储位置的感知度。</p>
+<td align="left"><p>提高合规性团队和员工对该数据存储位置的感知度。</p>
 <p>指导员工学习用于处理包含该数据的文档的公司策略。</p>
 <p>无法防止员工对该数据进行内部或外部共享。</p>
 <p>可以查看 DLP 报告以获取共享数据，从而决定是否需要增强保护。</p></td>
@@ -156,11 +156,11 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 所有位置包括：
 
--   SharePoint Online
+- SharePoint Online
 
--   OneDrive for Business 帐户
+- OneDrive for Business 帐户
 
--   Exchange 邮箱
+- Exchange 邮箱
 
 由于内容搜索当前不允许通过电子邮件检测敏感信息类型，因此请考虑使用各个策略中的敏感信息类型的子集为 Exchange 创建单独的策略，并监视这些策略的执行情况。
 

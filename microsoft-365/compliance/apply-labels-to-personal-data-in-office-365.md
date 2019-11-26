@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为 GDPR 保护计划的一部分。
-ms.openlocfilehash: 518e5352861242bfbf9220f876edcb4b616493df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 023d6e2d3db1b6ec844801598df1925f3660217f
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074541"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256909"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用标签
 
@@ -78,7 +78,7 @@ Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Se
 <p>. . . 应用于带此标签的文档 . . .</p>
 <p>客户数据</p></td>
 <td align="left"><p>在以下情况下发出警报：当批准的 SaaS 应用中的带这些属性的文件 . . .</p>
-<p>选择一个或多个属性：预定义的 PII 属性、Office 365 敏感信息类型、敏感性标签 (AIP)、自定义表达式</p>
+<p>选择一个或多个属性：预定义的 PII 属性、Office 365 敏感信息类型、敏感度标签 (AIP)、自定义表达式</p>
 <p>。 。 。 （组织外部共享的任何批准 SaaS 应用中）</p><p>注释：保留标签当前在 Cloud App Security 中不受支持。</td>
 </tr>
 <tr class="even">
@@ -119,9 +119,9 @@ Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Se
 
 确保使用标签的计划包括以下事项：
 
--   设置自动应用策略创建顺序的优先级。
+- 设置自动应用策略创建顺序的优先级。
 
--   预留足够的时间，以便可以在展示标签供用户手动应用前自动应用这些标签。标签应用于符合条件的所有内容最多可能需要 7 天。
+- 预留足够的时间，以便可以在展示标签供用户手动应用前自动应用这些标签。标签应用于符合条件的所有内容最多可能需要 7 天。
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>用于创建自动应用策略的优先级示例
 
@@ -198,8 +198,8 @@ Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Se
 
 在此图中：
 
--   创建了“客户数据”标签。
+- 创建了“客户数据”标签。
 
--   列出了针对 GDPR 的所需敏感信息类型：比利时国家/地区号码、信用卡号码、克罗地亚身份证号、芬兰国家/地区身份证号码。
+- 列出了针对 GDPR 的所需敏感信息类型：比利时国家/地区号码、信用卡号码、克罗地亚身份证号、芬兰国家/地区身份证号码。
 
--   创建自动应用策略，将标签“客户数据”分配给包括添加到策略的敏感信息类型之一的任何文件。
+- 创建自动应用策略，将标签“客户数据”分配给包括添加到策略的敏感信息类型之一的任何文件。

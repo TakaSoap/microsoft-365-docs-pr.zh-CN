@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 92979fd66ac2d51c48b7a0836be5eb1133ae242a
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982333"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39266095"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 与 GDPR 泄露通知
 
@@ -71,7 +73,7 @@ Microsoft 将通过确定功能影响、可恢复性和事件的信息影响来�
 
 安全响应团队与 Microsoft Dynamics 365 安全工程师和主题专家 (SME) 一起，基于从证据得出的事实性数据对事件进行分类。安全事件可分类为：
 
-- **误报：** 满足检测条件但被发现属于正常业务实践的一部分的事件，可能需要对事件进行筛选。服务团队将确认误报的根本原因，利用检测源以系统方式加以解决并根据需要进行微调。<span id="_Toc350859432" class="anchor"></span>
+- **误报：** 符合检测条件的事件被发现属于正常业务惯例，可能需要进行筛选。 服务团队将确定误报的根本原因，并将根据需要通过系统化方式利用检测源并对其进行微调，以解决这些问题。
 - **安全事件：** 非法访问存储在 Microsoft 设备或 Microsoft 设施上的任何客户数据或支持数据，或者未经授权访问此类设备或设施从而导致客户数据或支持数据丢失、泄露或改动的事件。
 - **客户可报告的安全/隐私事件 (CRSPI)：** 非法或未经授权访问或使用 Microsoft 的系统、设备或设施从而导致客户数据泄露、修改或丢失。
 - **隐私事件：** 涉及个人数据的安全事件的子类型。 处理过程与安全事件没有区别。
@@ -97,8 +99,8 @@ Microsoft Dynamics 365 向客户提供详细信息，使他们能够执行内部
 
 个人数据泄露通知将通过 Microsoft 选择的任何途径送达客户，包括通过电子邮件。数据泄露通知会送达 Office 安全中心提供的客户联系人/管理员列表（仅受影响的租户），该列表可由客户/租户管理员配置。为确保通知成功送达，客户有责任确保每个适用订阅和在线服务门户上管理员联系信息的正确性。
 
-Microsoft Dynamics 365 团队还可能选择通知其他 Microsoft 人员，例如客户服务 (CSS) 和客户的客户经理 (AM) 或技术客户经理 (TAM)。这些人员通常与客户关系密切，因此可加速补救过程。<span id="_Appendix_A" class="anchor"></span>
+Microsoft Dynamics 365 团队还可能选择通知其他 Microsoft 人员，例如客户服务 (CSS) 和客户的客户经理 (AM) 或技术客户经理 (TAM)。 这些人员通常与客户关系密切，因此可加速补救过程。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 - [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

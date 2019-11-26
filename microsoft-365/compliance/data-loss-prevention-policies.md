@@ -12,15 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MET150
 description: 通过安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
-ms.openlocfilehash: 940db3e32c67ee0c457bd499f63a562343f09e2b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074193"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "39266099"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -106,6 +107,9 @@ DLP 策略包含以下基本内容：
 - 包含标签的内容。 有关详细信息，请参阅下方的[在 DLP 策略中使用标签作为条件](#using-a-label-as-a-condition-in-a-dlp-policy)部分。
     
 - 内容是与贵组织的外部还是内部人员共享。
+
+> [!NOTE]
+> 在主体组织的 Active Directory 或 Azure Active Directory 租户中具有非来宾帐户的用户是否被视为该组织内部人员。
     
 #### <a name="types-of-sensitive-information"></a>敏感信息类型
 
@@ -322,7 +326,11 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
     
 若要详细了解标签，请参阅[保留标签概述](labels.md)。
   
-创建标签后，即可在 DLP 策略中使用该标签作为条件。 例如，可能基于以下原因执行此操作：
+创建标签后，即可在 DLP 策略中将该标签用作条件。 
+
+![用作条件的标签](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+例如，可能需要基于以下原因执行此操作：
   
 - 发布了名为“**机密**”的标签，使组织内部人员可在机密电子邮件和文档中手动应用该标签。 通过在 DLP 策略中使用此标签作为条件，可限制与组织外部人员共享标记为“**机密**”的内容。 
     
@@ -332,11 +340,12 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
     
 - 对一组管理人员的 Exchange 邮箱和 OneDrive 帐户发布了名为“**高层管理团队 - 敏感**”的标签。 通过在 DLP 策略中使用此标签作为条件，可对同一部分内容和用户执行保留和保护操作。 
     
-在 DLP 策略中使用标签作为条件之后，可对一组特定内容、位置或用户选择性地执行保护操作。
-  
-![用作条件的标签](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+在 DLP 规则中将标签用作条件后，可选择性地对一组特定内容、位置或用户执行保护操作。 
 
-### <a name="support-for-sensitivity-labels-is-coming"></a>即将支持敏感度标签
+> [!NOTE]
+> 如果在 DLP 策略中将保留标签指定为条件，而且你还包含 Exchange 和/或 Teams 作为位置，则你将收到以下错误：“不支持保护电子邮件和团队消息中带标签的内容。 请删除下述标签或取消将 Exchange 和 Teams 设为位置。” 这是因为 Exchange 传输在消息提交和传递过程中不会评估标签元数据。 
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>即将推出对敏感度标签的支持
 
 目前，你只能将保留标签用作条件，而不能将[敏感度标签](sensitivity-labels.md)用作条件。 目前，我们正致力于支持在此条件中使用敏感度标签。
   
