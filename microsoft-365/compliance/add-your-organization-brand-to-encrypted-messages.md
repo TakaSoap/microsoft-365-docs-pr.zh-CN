@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 作为 Office 365 全局管理员，你可以将组织的品牌化应用于组织的加密电子邮件和加密门户的内容。
-ms.openlocfilehash: ea68e8ddb9e29c4948d8ee51b8d7b6a94501c986
-ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
+ms.openlocfilehash: 118bf93f7bdcb7dc522f95978eb5bb4456e90d5b
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "38685047"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256739"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>在加密的邮件中添加组织的品牌
 
@@ -39,7 +39,7 @@ ms.locfileid: "38685047"
 
 您也可以随时还原到默认的外观。
 
-如果您想要进行更多控制，可以使用 Office 365 高级邮件加密并为来自您的组织的加密电子邮件创建多个模板。 使用这些模板，不仅可以控制电子邮件的外观，还可以控制最终用户体验的各个部分。 例如，您可以指定是否已应用此模板的邮件收件人以及使用 Google、Yahoo 和 Microsoft 帐户的收件人是否可以使用这些帐户登录到 Office 365 邮件加密门户。 您可以使用模板来实现几个用例，例如：
+如果您想要进行更多控制，可以使用 Office 365 高级邮件加密并为来自您的组织的加密电子邮件创建多个模板。 使用这些模板，不仅可以控制电子邮件的外观，还可以控制最终用户体验的各个部分。 例如，您可以指定应用了此模板的邮件收件人以及使用 Google、Yahoo 和 Microsoft 帐户的用户是否可以使用这些帐户登录到 Office 365 邮件加密门户。 您可以使用模板来实现几个用例，例如：
 
 - 每个部门的模板，如财务、销售等。
 
@@ -47,7 +47,7 @@ ms.locfileid: "38685047"
 
 - 不同地理区域或国家/地区的模板
 
-- 是否允许撤消电子邮件
+- 是否要允许对电子邮件进行吊销
 
 - 您是否希望发送给外部收件人的电子邮件在指定天数后过期。
 
@@ -55,7 +55,7 @@ ms.locfileid: "38685047"
 
 ## <a name="work-with-ome-branding-templates"></a>使用 OME 品牌打造模板
 
-您可以修改品牌模板中的多个功能。 您可以修改默认模板，但不能删除。 如果您具有高级邮件加密，则还可以创建、修改和删除自定义模板。 使用 Windows PowerShell 一次处理一个品牌模板。 您需要具有 Office 365 组织中具有全局管理员权限的工作或学校帐户，才能使用这些 cmdlet。
+您可以修改品牌模板中的多个功能。 您可以修改但不能删除默认模板。 如果您具有高级邮件加密，则还可以创建、修改和删除自定义模板。 使用 Windows PowerShell 一次处理一个品牌模板。 您需要具有 Office 365 组织中具有全局管理员权限的工作或学校帐户，才能使用这些 cmdlet。
 
 - [Set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) -修改默认品牌模板或您创建的自定义品牌模板。
 - [Set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) -创建新的品牌打造模板（仅限高级邮件加密）。
@@ -65,7 +65,7 @@ ms.locfileid: "38685047"
 
 使用 Windows PowerShell 一次修改一个品牌模板。 如果您具有高级邮件加密，则还可以创建、修改和删除自定义模板。
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用 Set-omeconfiguration cmdlet 修改模板，如[set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)中所述，或使用下图中所述的图形和表进行指南。
 
@@ -74,7 +74,7 @@ ms.locfileid: "38685047"
 |**自定义加密体验的这一功能**|**使用这些命令**|
 |:-----|:-----|
 |背景色|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|徽标|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支持的文件格式：.png、.jpg、.bmp 或 .tiff  <br/> 徽标文件的最佳大小：小于 40 KB  <br/> 徽标图像的最佳大小：170x70 像素。 如果您的图像超过这些尺寸，服务将调整徽标大小以在门户中显示。 该服务不会修改图形文件本身。 为获得最佳效果，请使用最佳大小。|
+|徽标|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支持的文件格式：.png、.jpg、.bmp 或 .tiff  <br/> 徽标文件的最佳大小：小于 40 KB  <br/> 徽标图像的最佳大小：170x70 像素。 如果您的图像超过这些尺寸，服务将调整徽标大小以在门户中显示。 服务不会修改图形文件本身。 为获得最佳效果，请使用最佳大小。|
 |发件人姓名和电子邮件地址旁边的文本|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |显示在 "阅读邮件" 按钮上的文本|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
 |显示在 "阅读邮件" 按钮下方的文本|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
@@ -89,7 +89,7 @@ ms.locfileid: "38685047"
 
 若要创建新的自定义品牌模板：
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用[set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) cmdlet 可以创建新的模板。
 
@@ -107,7 +107,7 @@ ms.locfileid: "38685047"
 
 若要从默认模板中删除所有修改，包括品牌自定义项等，请完成以下步骤：
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用**set-omeconfiguration** cmdlet，如[set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)中所述。 若要从 DisclaimerText、EmailText 和 PortalText 值中删除您的组织的标记自定义项，请将该值设置为`""`一个空字符串。 对于所有图像值（如 "徽标"），请将`"$null"`值设置为。
 
@@ -128,7 +128,7 @@ ms.locfileid: "38685047"
 
 若要删除自定义品牌模板，请执行以下操作：
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用**set-omeconfiguration** cmdlet，如下所示：
 
@@ -172,7 +172,7 @@ ms.locfileid: "38685047"
 
 7. 从**执行以下操作**，选择 **"修改邮件安全性** > 对**OME 邮件应用自定义品牌打造**"。 接下来，从下拉菜单中选择您创建或修改的品牌模板。
 
-8. Optional如果您希望邮件流规则还应用除自定义品牌的加密之外的加密，请选择 **"****修改邮件安全性**"，然后选择 "**应用 Office 365 邮件加密和权限保护**"。 从列表中选择一个 RMS 模板，选择 "**保存**"，然后选择 **"确定"**。
+8. Optional如果您希望邮件流规则应用除自定义品牌的加密之外的加密，请选择 **"****修改邮件安全性**"，然后选择 "**应用 Office 365 邮件加密和权限保护**"。 从列表中选择一个 RMS 模板，选择 "**保存**"，然后选择 **"确定"**。
   
    模板列表包含所有默认模板和选项，以及您创建的用于 Office 365 的任何自定义模板。 如果列表为空，请确保已使用新功能设置了 Office 365 邮件加密，如[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)中所述。 有关默认模板的信息，请参阅[配置和管理 Azure 信息保护的模板](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 有关 "**不要转发**" 选项的信息，请参阅[电子邮件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)的 "不要转发" 选项。 有关**仅加密**选项的信息，请参阅[仅加密电子邮件选项](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 

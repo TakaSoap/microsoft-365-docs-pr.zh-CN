@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 添加与高级电子数据展示事例相关的搜索结果。 将项目从其原始位置复制并复制到 Microsoft 提供的 Azure 存储位置。 此外，还会重新编制项索引，高级电子数据展示将对图像文件执行光学字符识别（OCR），并上传图像文本以供审阅和分析。
-ms.openlocfilehash: 99fe0cce8bd872ecd5f4a94699857c36c3a4d617
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 838301576d84f4cf3dcb618904f55b661bcf95b3
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202323"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257020"
 ---
 # <a name="add-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
 

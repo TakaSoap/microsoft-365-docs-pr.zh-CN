@@ -3,7 +3,7 @@ title: Microsoft 365 测试环境的传递身份验证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的传递身份验证。
-ms.openlocfilehash: 98e0ad4b216fdc3940c0077cb308d6271ffed678
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ed21007932b455c4f24af83434af75d44e583574
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757719"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202313"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的传递身份验证
 
@@ -78,13 +78,13 @@ ms.locfileid: "38757719"
 
 10. 单击“**传递身份验证**”。“**传递身份验证**”窗格中会列出身份验证代理所安装到的服务器。APP1 应该会出现在该列表中。关闭“**传递身份验证**”窗格。
 
-接下来，测试能否使用 User1 帐户的用户名 <strong>user1@testlab.</strong>\<公共域名> 登录 Office 365 订阅。
+接下来，测试能否使用 User1 帐户的用户名 <strong>user1@testlab.</strong>\<公共域名> 登录你的订阅。
 
-1. 在 APP1 中，注销 Office 365，再重新登录，这次指定不同的帐户。
+1. 在 APP1 中，注销，再重新登录，这次指定不同的帐户。
 
 2. 当系统提示输入用户名和密码时，指定 <strong>user1@testlab.</strong>\<公共域> 和 User1 密码。 你应该能以 User1 身份成功登录。
 
-请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是 Office 365 全局管理员。 因此，不会看到作为一个选项的**管理员**图标。
+请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是全局管理员。 因此，不会看到作为一个选项的**管理员**图标。
 
 下面是生成的配置：
 
@@ -106,5 +106,3 @@ ms.locfileid: "38757719"
 [部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
 
 [Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-

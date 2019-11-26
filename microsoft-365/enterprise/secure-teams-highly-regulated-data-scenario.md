@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全团队来存储最有价值的敏感文件。
-ms.openlocfilehash: d875c3148a019774e038d18a75bb6fb2c2413463
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: cc29bbc076bf4d66593f785a1e4d1f881a530d83
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699762"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202423"
 ---
 # <a name="teams-for-highly-regulated-data"></a>用于高度管控数据的 Teams
 
@@ -213,6 +213,12 @@ ms.locfileid: "38699762"
   通过查看 SharePoint 中的文件夹并使用“**添加列**”的“**显示/隐藏列**”选项添加“**敏感度**”列，可以查看为哪些文件分配了标签。
 
 根据需要重新培训用户。
+
+## <a name="demonstrate-this-in-a-test-environment"></a>在测试环境中演示这种情况
+
+若要构建自己的测试环境以测试团队的敏感和高度机密文件，请参阅[这些说明](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment)。 
+
+![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Contoso Corporation 如何对最高机密项目使用安全团队
 

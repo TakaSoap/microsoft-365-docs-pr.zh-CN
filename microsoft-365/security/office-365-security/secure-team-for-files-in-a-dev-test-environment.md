@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在 Microsoft Teams 中，为开发/测试环境中的文件创建敏感和高度机密团队。
-ms.openlocfilehash: f22b3b1fbe07af6866206034ad6c9a90ced8a268
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929257"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202293"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>为开发/测试环境中的文件提供安全的团队
 
@@ -62,7 +62,7 @@ ms.locfileid: "37929257"
       
 5. 单击“**创建**”，然后关闭“**组**”边栏选项卡。
     
-6.  对名为“市场营销人员”的下列新组重复步骤 3-5****。
+6.  对名为“市场营销人员”的新组重复步骤 3-5****。
     
 然后配置自动授权，以便组的成员可自动分配 Office 365 和 EMS 订阅的许可证。
   
@@ -172,7 +172,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 3.  在团队的工具栏中，单击“文件”****。
 4.  单击省略号，然后单击“在 SharePoint 中打开”****。
 5.  在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”****。
-6.  在“网站权限”窗格的“共享设置”下方，单击“更改共享设置”************。
+6.  在“**网站权限**”窗格的“**共享设置**”下方，单击“**更改共享设置**”。
 7.  在“共享权限”下方，选择“仅网站所有者可以共享文件、文件夹和网站”，然后单击“保存”************。
 
 接下来，针对敏感标签配置基础市场营销活动 SharePoint 网站的文档文件夹。
