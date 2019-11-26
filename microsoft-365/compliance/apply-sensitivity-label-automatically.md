@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: eccc60dc7a306f3e7b2eb128ed45a92af65491a5
-ms.sourcegitcommit: cd748ca00088275372f51fbf8c4bc72bfd3e1437
+ms.openlocfilehash: 3c5b52c89c9a5eb9e78e670bce0b5c3edec89cd1
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "39233207"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256709"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 

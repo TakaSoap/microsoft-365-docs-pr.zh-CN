@@ -10,17 +10,18 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 9885463e61c36713cbd7be82ac1ef2caaee70e7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074000"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39233515"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -86,13 +87,13 @@ ms.locfileid: "37074000"
 
 - 如果希望为组织关闭 Office 365 中的审核日志搜索，可以在连接到 Exchange Online 组织的远程 PowerShell 中运行以下命令：
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
     若要再次打开审核搜索，可在 Exchange Online PowerShell 中运行以下命令：
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
@@ -213,7 +214,10 @@ ms.locfileid: "37074000"
 
 - “**IP 地址**”：记录活动时所用设备的 IP 地址。 IP 地址显示为 IPv4 或 IPv6 地址格式。
 
-- “**用户**”：执行触发事件的操作的用户（或服务帐户）。
+   > [!NOTE]
+  > 对于某些服务，此字段中显示的值可能是代表用户调用服务的受信任应用程序（例如，Web 应用上的 Office）的 IP 地址，而不是执行活动的人员所使用设备的 IP 地址。 此外，对于针对 Azure Active Directory 相关事件的管理员活动（或由系统帐户执行的活动），未记录 IP 地址，此字段中显示的值为 `null`。
+
+- **用户**：执行触发事件的操作的用户（或服务帐户）。
 
 - “**活动**”：用户执行的活动。 此值对应于你在“**活动**”下拉列表中选定的活动。 对于来自 Exchange 管理员审核日志的事件，此列中的值为 Exchange cmdlet。
 
@@ -296,8 +300,9 @@ ms.locfileid: "37074000"
 |[用户管理活动](#user-administration-activities)|[Azure AD 组管理活动](#azure-ad-group-administration-activities)|[应用程序管理活动](#application-administration-activities)|
 |[角色管理活动](#role-administration-activities)|[目录管理活动](#directory-administration-activities)|[电子数据展示活动](#ediscovery-activities)|
 |[高级电子数据展示活动](#advanced-ediscovery-activities)|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams 活动](#microsoft-teams-activities)|[Yammer 活动](#yammer-activities)|[Microsoft Flow 活动](#microsoft-flow-activities)|
-|[Microsoft PowerApps 活动](#microsoft-powerapps)|[Microsoft Stream 活动](#microsoft-stream-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|
+|[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Yammer 活动](#yammer-activities)|
+|[Microsoft Flow 活动](#microsoft-flow-activities)|[Microsoft PowerApps 活动](#microsoft-powerapps)|[Microsoft Stream 活动](#microsoft-stream-activities)|
+[Exchange 管理员活动](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -439,7 +444,7 @@ ms.locfileid: "37074000"
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
-|已添加网站集管理员|SiteCollectionAdminAdded|网站集管理员或所有者为网站添加了作为网站集管理员的人员。 网站集管理员具有网站集和所有子网站的完全控制权限。 当管理员（通过在 SharePoint 管理中心编辑用户配置文件或[使用 Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)）向自己授予对用户 OneDrive 帐户的访问权限时，也将记录此活动。|
+|已添加网站集管理员|SiteCollectionAdminAdded|网站集管理员或所有者为网站添加了作为网站集管理员的人员。 网站集管理员具有网站集和所有子网站的完全控制权限。 当管理员（通过编辑 SharePoint 管理中心的用户配置文件或[使用 Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)）向自己授予对用户 OneDrive 帐户的访问权限时，也将记录此活动。|
 |已向 SharePoint 组添加用户或组|AddedToGroup|用户向 SharePoint 组添加了成员或来宾。 这可能是目的性操作，也可能是其他活动（例如共享事件）的结果。|
 |中断权限级别继承|PermissionLevelsInheritanceBroken|已更改项目，使其不再从父级继承权限级别。|
 |中断共享继承|SharingInheritanceBroken|已更改项目，使其不再从父级继承共享权限。|
@@ -680,7 +685,7 @@ ms.locfileid: "37074000"
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft 工作区分析活动
 
-工作区分析可让你深入了解整个 Office 365 组织内的组协作方式。 下表列出了由在工作区分析中分配有管理员角色或分析员角色的用户执行的活动。 分配有分析员角色的用户拥有对所有服务功能的完全访问权限，并且可使用产品进行分析。 分配有管理员角色的用户可以配置隐私设置和系统默认设置，并且可以在工作区分析中准备、上传和验证组织数据。 有关详细信息，请参阅[工作区分析](https://docs.microsoft.com/zh-CN/workplace-analytics/index-orig)。
+工作区分析可让你深入了解整个 Office 365 组织内的组协作方式。 下表列出了由在工作区分析中分配有管理员角色或分析员角色的用户执行的活动。 分配有分析员角色的用户拥有对所有服务功能的完全访问权限，并且可使用产品进行分析。 分配有管理员角色的用户可以配置隐私设置和系统默认设置，并且可以在工作区分析中准备、上传和验证组织数据。 有关详细信息，请参阅[工作区分析](https://docs.microsoft.com/workplace-analytics/index-orig)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -724,8 +729,16 @@ ms.locfileid: "37074000"
 |已删除选项卡|TabRemoved|用户从频道中删除选项卡。|
 |已更新连接器|ConnectorUpdated|用户修改了频道中的连接器。|
 |已更新选项卡|TabUpdated|用户修改了频道中的选项卡。|
-|用户已登录到 Teams|TeamsSessionStarted|用户登录到 Microsoft Teams 客户端。|
+|用户已登录到 Teams|TeamsSessionStarted|用户登录到 Microsoft Teams 客户端。 此事件不会捕获令牌刷新活动。|
 ||||
+
+### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams 医疗保健活动
+
+如果你的组织正在使用 Microsoft Teams 中的[患者应用程序](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview)，你可以在审核日志中搜索与使用患者应用相关的活动。 如果你的环境配置为支持患者应用，则可在“活动”**** 选择器列表中找到这些活动的附加活动组。
+
+![“活动”选取器列表中的 Microsoft Teams 医疗保健活动](media/TeamsHealthcareAuditActivities.png)
+
+有关患者应用活动的说明，请参阅[患者应用的审核日志](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)。
 
 ### <a name="yammer-activities"></a>Yammer 活动
 
@@ -758,7 +771,7 @@ ms.locfileid: "37074000"
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
-可以在审核日志中搜索 PowerApps 中与应用相关的活动。 这些活动包括创建、启动和发布应用。 还会审核为应用分配权限。 有关所有PowerApps活动的说明，请参阅 [PowerApps 的活动日志记录](https://docs.microsoft.com/zh-CN/power-platform/admin/logging-powerapps#what-events-are-audited)。
+可以在审核日志中搜索 PowerApps 中与应用相关的活动。 这些活动包括创建、启动和发布应用。 还会审核为应用分配权限。 有关所有PowerApps活动的说明，请参阅 [PowerApps 的活动日志记录](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)。
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream 活动
 
@@ -840,7 +853,7 @@ ms.locfileid: "37074000"
 
 **Office 365 审核数据是否跨地域流动？**
 
-否。 我们目前在 NA（北美）、EMEA（欧洲、中东和非洲）和 APAC（亚太地区）进行了审核管道部署。 但是，我们可能会跨这些区域流动数据以实现负载平衡，并且仅在现场出现问题时才会这样做。 当我们执行这些活动时，传输中的数据会被加密。
+否。 我们目前在 NA（北美）、EMEA（欧洲、中东和非洲）和 APAC（亚太地区）进行了审核管道部署。 但是，我们可能会使数据跨这些区域流动以实现负载平衡，并且仅在现场出现问题时才会这样做。 当我们执行这些活动时，传输中的数据会被加密。
 
 **审核数据是否已加密？**
 
