@@ -3,7 +3,7 @@ title: Microsoft 365 测试环境的密码哈希同步
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和展示 Microsoft 365 测试环境的密码哈希同步和登录。
-ms.openlocfilehash: e1055f9a4a64c05f55d4a5446f637ba195c0377c
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ef08fcf59602d7812875015971d00a34526576d6
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757729"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202453"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
@@ -54,9 +54,9 @@ ms.locfileid: "38757729"
 
 在这一阶段，将公共 DNS 域添加到订阅中。
 
-首先，使用公共 DNS 注册提供程序，根据当前域名新建一个公共 DNS 域名，并将它添加到 Office 365 订阅中。建议命名为 **testlab.**\<公共域名>。例如，如果公共域名是 <span>**contoso</span>.com**，请添加公共域名 **<span>testlab</span>.contoso.com**。
+首先，使用公共 DNS 注册提供程序，根据当前域名新建一个公共 DNS 域名，并将它添加到订阅中。建议命名为 **testlab.**\<公共域名>。例如，如果公共域名是 **<span>contoso</span>.com**，请添加公共域名 **<span>testlab</span>.contoso.com**。
   
-接下来，通过域注册过程添加**testlab.**\<公共域 > 域到 Office 365 试用版或付费订阅。 这包括添加其他 DNS 记录到**testlab.**\<公共域 > 域。 有关详细信息，请参阅[添加用户和域到 Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)。 
+接下来，通过域注册过程将 **testlab.**\<公共域名> 域添加到 Microsoft 365 或 Office 365 试用版或付费订阅。 这包括添加其他 DNS 记录到**testlab.**\<公共域 > 域。 有关详细信息，请参阅[添加域到 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)。 
 
 下面是生成的配置。
   
@@ -70,7 +70,7 @@ ms.locfileid: "38757729"
 请注意，现在 testlab.\<你的公共域名>：
 
 - 受公共 DNS 记录支持。
-- 在 Office 365 和 EMS 订阅中进行了注册。
+- 已在 Microsoft 365 或 Office 365 订阅中注册。
 - 是模拟 Intranet 上的 AD DS 域。
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>第 3 阶段：在 APP1 上安装 Azure AD Connect
@@ -97,7 +97,7 @@ ms.locfileid: "38757729"
     
 6. 在“快速设置”**** 页上，单击“使用快速设置”****。
     
-7. 在“连接到 Azure AD”**** 页上，在“用户名”**** 中键入 Office 365 全局管理员帐户名，在“密码”**** 中键入密码，再单击“下一步”****。
+7. 在“连接到 Azure AD”**** 页上，在“用户名”**** 中键入全局管理员帐户名称，在“密码”**** 中键入其密码，然后单击“下一步”****。
     
 8. 在“连接到 AD DS”**** 页上，在“用户名”**** 中键入“TESTLAB\\User1”****，在“密码”**** 中键入密码，再单击“下一步”****。
     
@@ -111,19 +111,19 @@ ms.locfileid: "38757729"
     
     请注意，该帐户名为**用户 1**。 此帐户来自 TESTLAB AD DS 域，证明目录同步已正常工作。
     
-13. 单击 **User1** 帐户。对于产品许可证，请单击“编辑”****。
+13. 依次单击“User1”**** 帐户和“许可证和应用”****。
     
-14. 在“产品许可证”**** 中，选择所在的国家/地区，再单击“Office 365 企业版 E5”**** 的“关”**** 控件（将它切换为“开”****）。对“企业移动性 + 安全性 E5”**** 许可证执行相同的操作。 
+14. 在“产品许可证”**** 中，选择你的位置（如果需要），禁用“Office 365 E5”**** 许可证，然后启用“Microsoft 365 E5”**** 许可证。 
 
-15. 依次单击页面底部的“**保存**”和“**关闭**”。
+15. 依次单击页面底部的“保存”和“关闭”********。
     
-接下来，使用 User1 帐户的用户名“<strong>user1@testlab.</strong>\<域名>”，测试能否登录 Office 365 订阅。
+接下来，使用 User1 帐户的用户名“<strong>user1@testlab.</strong>\<域名>”，测试能否登录订阅。
 
-1. 在 APP1 中，注销 Office 365，再重新登录，这次指定不同的帐户。
+1. 在 APP1 中，注销，再重新登录，这次指定不同的帐户。
 
 2. 当系统提示输入用户名和密码时，指定 <strong>user1@testlab.</strong>\<你的公共域名> 和 User1 密码。应该能以 User1 身份成功登录。 
  
-请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是 Office 365 全局管理员。 因此，不会看到作为一个选项的**管理员**图标。 
+请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是全局管理员。 因此，不会看到作为一个选项的**管理员**图标。 
 
 下面是生成的配置。
 

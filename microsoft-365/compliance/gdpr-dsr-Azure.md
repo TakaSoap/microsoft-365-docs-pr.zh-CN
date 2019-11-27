@@ -1,7 +1,7 @@
 ---
-title: Azure 与 GDPR 数据主体请求
+title: 针对 GDPR 和 CCPA 的 Azure 数据主体请求
 description: ''
-keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
+keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,28 +9,33 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 7a294893d609747b5ab36c66319427608462b451
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 73139f0ab67f728ecb55874bb92d9cc874b60408
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698334"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268447"
 ---
-# <a name="azure-data-subject-requests-for-the-gdpr"></a>Azure 与 GDPR 数据主体请求
+# <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的 Azure 数据主体请求
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>数据主体请求 (DSR) 简介
 
 根据欧盟[一般数据保护条例 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm)，用户（在条例中称为“*数据主体*”）有权管理由雇主或其他类型机构或组织（称为“*数据控制者*”或简称为“*控制者*”）收集的个人数据。根据 GDPR，个人数据的定义非常广泛，包括与身份已识别或可识别的自然人相关的任何数据。根据 GDPR，数据主体有权对自己的个人数据执行以下操作：获取个人数据副本、请求更正个人数据、限制个人数据处理、删除个人数据或接收电子格式的个人数据（以便于转移给其他控制者）。数据主体为了对自己的个人数据执行操作而向控制者发出的正式请求，称为“*数据主体请求*”或“DSR”。
 
+同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。 CCPA 还就某些披露规定了在选择行使权限时防止歧视的保障措施，并就分类为“销售”的特定数据传输提出了“选择退出/选择加入”要求。 “出售”广义定义为包含共享数据来换取有值对价的行为。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
+
 本指南讨论了如何使用 Microsoft 产品、服务和管理工具以帮助我们的控制者客户查找和操作个人数据以响应 DSR。具体而言，这包括如何查找、访问和操作驻留在 Microsoft 云中的个人数据。下面是本指南中所列流程的快速概述：
 
-- **发现：** 使用搜索和发现工具更轻松地查找可能是 DSR 主体的客户数据。一旦收集了潜在响应文档，则可以执行一个或多个下列步骤中所述的 DSR 操作来响应请求。或者，你可能会确定该请求不符合组织有关响应 DSR 的指导原则。
-- **访问：** 检索驻留在 Microsoft 云中的个人数据，如果提出请求，还制作可供数据主体使用的个人数据副本。
+- **发现：** 使用搜索和发现工具更轻松地查找可能是 DSR 主体的客户的数据。 收集了潜在的响应性文档后，你便可以执行下列步骤中所述的一项或多项 DSR 操作来响应请求。 或者，你也可以确定请求是否不符合组织的 DSR 响应指南。
+- **访问：** 检索驻留在 Microsoft 云中的个人数据，并根据请求复制个人数据以供数据主体使用。
 - **纠正：** 进行更改或者对个人数据实施其他请求的操作（如果适用）。
-- **限制：** 通过移除各种 Azure 服务的许可证或者在可能的情况下关闭所需服务，限制个人数据的处理。你也可以从 Microsoft 云中移除数据并仍将其保留在內部或其他位置。
+- **限制：** 通过移除各种 Azure 服务的许可证，或者在可能的情况下关闭所需的服务，限制对个人数据的处理。 此外还可以从 Microsoft 云中删除数据，并将其保留在本地或其他位置。
 - **删除：** 永久删除保存在 Microsoft 云中的个人数据。
-- **导出：** 向数据主体提供个人数据的电子副本（使用机器可读格式）。
+- **导出/接收（可移植性）：** 向数据主体提供个人数据或个人信息的电子副本（采用机器可读格式）。 根据 CCPA 的定义，个人信息是指与已识别或可识别人员相关的任何信息。 个人的私人、公共或工作角色之间没有任何区别。 所定义的“个人信息”术语与 GDPR 下的“个人信息”大致相同。 但是，CCPA 还包括家人和家庭数据。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
 
 本指南中的每个部分概述了数据控制者组织为响应对 Microsoft 云中个人数据的 DSR 而采取的技术过程。
 
@@ -41,15 +46,15 @@ ms.locfileid: "34698334"
 - **控制者：** 单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或其提名的具体准则。
 - **个人数据和数据主体：** 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识符等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
 - **处理者：** 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
-- **客户数据：** 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文本、声音、视频或图像文件以及软件。客户数据包括 (1) 最终用户的身份信息（例如，Azure Active Directory 中的用户名和联系人信息）和客户上传到特定服务或者在特定服务中创建的客户内容（例如，Azure 存储帐户中的客户内容，Azure SQL 数据库的客户内容，或 Azure 虚拟机中的客户虚拟机映像）。
-- **系统生成日志：** Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。系统生成日志主要包括化名数据，例如唯一标识符，这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。系统生成日志还可能包含有关最终用户的身份信息，例如用户名。
+- **客户数据：** 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文字、声音、视频或图像文件以及软件。 客户数据包括 (1) 最终用户的身份信息（例如，Azure Active Directory 中的用户名和联系人信息）和客户上传到特定服务或者在特定服务中创建的客户内容（例如，Azure 存储帐户中的客户内容，Azure SQL 数据库的客户内容，或 Azure 虚拟机中的客户虚拟机映像）。
+- **系统生成日志：** Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 系统生成日志主要包括化名数据，例如唯一标识符 — 这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。 系统生成日志还可能包含最终用户的身份信息，例如用户名。
 
 ## <a name="how-to-use-this-guide"></a>如何使用本指南
 
 本指南由两部分组成：
 
-- **第 1 部分：响应对客户数据的数据主体请求：** 本指南第 1 部分讨论了如何访问、纠正、限制、删除数据和将数据从你创建数据的应用程序中导出。本节详细介绍了如何针对客户内容以及最终用户的身份信息执行 DSR。
-- **第 2 部分：响应对系统生成日志的数据主体请求：** 在你使用 Microsoft 的企业服务时，Microsoft 会生成一些信息（称为系统生成日志）以提供服务。本指南第 2 部分讨论了如何访问、删除和导出 Azure 的此类信息。
+- **第 1 部分：响应针对客户数据发出的数据主体请求：** 本指南的第 1 部分介绍了如何在你用来创作数据的应用程序中访问、校正、限制、删除和导出数据。 本节详细介绍了如何响应针对客户内容和最终用户的个人身份信息发出的 DSR。
+- **第 2 部分：响应针对系统生成日志发出的数据主体请求：** 在你使用 Microsoft 的企业服务时，Microsoft 会生成一些信息（称为“系统生成日志”）来提供服务。 本指南的第 2 部分介绍了如何为 Azure 访问、删除和导出此类信息。
 
 ## <a name="understanding-dsrs-for-azure-active-directory-and-microsoft-service-accounts"></a>了解 Azure Active Directory 和 Microsoft 服务帐户的 DSR
 
@@ -85,19 +90,19 @@ Microsoft 让你能够通过 Azure 门户访问、删除和导出某些客户数
 
 1. 使用作为该目录的全局管理员的帐户登录到 [Azure 门户](https://portal.azure.com/)。
 
-2. 选择“所有服务”****，在文本框中输入“用户和组”****，然后选择“进入”****。
+2. 选择“**Azure Active Directory**”。
 
-     ![选择所有服务](media/azure-dsr_image3.png)
+     ![选择“所有服务”](media/gdpr-azure-dsr-azure-portal.png)
 
-3. 在“用户和组”**** 边栏选项卡上，选择“用户”****。
+3. 选择“**用户**”。
 
-     ![选择用户](media/azure-dsr_image9.png)
+     ![选择用户](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. 在“**用户和组 — 用户**”边栏选项卡上，从列表中选择用户，然后在所选用户的边栏选项卡上，选择“**配置文件**”以查看可能包含个人数据的用户配置文件信息。
+4. 在“**所有用户**”边栏选项卡上，从列表中选择用户，然后在所选用户的边栏选项卡上，选择“**配置文件**”以查看可能包含个人数据的用户配置文件信息。
 
-    ![选择配置文件](media/azure-dsr_image5.png)
+    ![选择配置文件](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. 如果需要添加或更改用户配置文件信息，可执行此操作，然后在命令栏中选择“保存”****。
+5. 如果需要添加或更改用户配置文件信息，可以在命令栏中选择“**编辑**”，然后在做出更改后选择“**保存**”。
 
 #### <a name="service-specific-interfaces"></a>特定于服务的界面
 
@@ -133,25 +138,21 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 1. 使用作为该目录的全局管理员的帐户登录到 [Azure 门户](https://portal.azure.com/)。
 
-2. 选择“所有服务”****，在文本框中输入“用户和组”****，然后选择“进入”****。
+2. 选择“**Azure Active Directory**”。
 
-    ![选择所有服务](media/azure-dsr_image3.png)
+    ![选择“所有服务”](media/gdpr-azure-dsr-azure-portal.png)
 
-3. 在“用户和组”**** 边栏选项卡上，选择“用户”****。
+3. 选择“**用户**”。
 
-    ![选择用户](media/azure-dsr_image9.png)
+    ![选择用户](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. 在“**用户和组 — 用户**”边栏选项卡上，从列表中选择用户，然后在所选用户的边栏选项卡上，选择“**配置文件**”以查看需要更正或更新的用户配置文件信息。
+4. 在“**所有用户**”边栏选项卡上，从列表中选择用户，然后在所选用户的边栏选项卡上，选择“**配置文件**”以查看需要更正或更新的用户配置文件信息。
 
-    ![选择配置文件](media/azure-dsr_image5.png)
+    ![选择配置文件](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. 更正或更新信息，然后在命令栏中选择“保存”****。
+5. 通过在命令栏中选择“**编辑**”，然后在做出更改后选择“ **保存**”，可更正或更新包括工作信息在内的用户配置文件信息。
 
-6. 在所选用户的边栏选项卡上，选择“工作信息”**** 以查看需要更正或更新的用户工作信息。
-
-    ![选择工作信息](media/azure-dsr_image4.png)
-
-7. 更正或更新用户工作信息，然后在命令栏中选择“保存”****。
+    ![选择配置文件](media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### <a name="service-specific-interfaces"></a>特定于服务的界面
 
@@ -184,26 +185,30 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 ###### <a name="to-delete-a-user-from-an-azure-tenant"></a>从 Azure 租户删除用户
 
-1. 打开 Azure 门户，选择“Azure Active Directory”**** 边栏选项卡，然后选择“用户”****。
+1. 使用作为该目录的全局管理员的帐户登录到 [Azure 门户](https://portal.azure.com/)。
 
-    将显示“**用户 — 所有用户**”边栏选项卡。
+2. 选择“**Azure Active Directory**”。
 
-    ![查找用户](media/azure-dsr_image8.png)
+    ![选择“所有服务”](media/gdpr-azure-dsr-azure-portal.png)
 
-2. 选中想要删除的用户旁边的框，选择“删除用户”****，然后在询问你是否要删除用户时在框中选择“是”****。
+3. 选择“**用户**”。
 
-    ![用户管理](media/azure-dsr_image9.png)
+    ![选择用户](media/gdpr-azure-dsr-azure-all-users.png)
 
-3. 在“显示”**** 下拉框中，选择“最近已删除的用户”****。
+4. 选中想要删除的用户旁边的框，选择“删除用户”****，然后在询问你是否要删除用户时在框中选择“是”****。
 
-    ![查看用户配置文件](media/azure-dsr_image10.png)
+    ![用户管理](media/gdpr-azure-dsr-azure-selected-user.png)
 
-4. 再次选择同一用户，选择“永久删除”****，然后在询问你是否确定时在框中选择“是”****。
+5. 在“ **所有用户**” 边栏选项卡上，选择“ **已删除的用户**”。
+
+    ![查看用户配置文件](media/gdpr-azure-dsr-azure-deleted-user.png)
+
+4. 再次选择同一用户，在命令栏中选择“ **永久删除**”，然后在询问你是否确定时在框中选择“ **是**” 。
 
 >[!IMPORTANT]  
 >请注意，通过单击“是”，**** 将永久且不可挽回地删除用户和所有关联的数据及系统生成日志。如果错误地执行了该操作，必须手动将用户添加回租户。关联的数据和系统生成日志是不可恢复的。
 
-   ![查看用户工作信息](media/azure-dsr_image11.png)
+   ![查看用户工作信息](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### <a name="service-specific-interfaces"></a>特定于服务的界面
 
@@ -279,15 +284,15 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 1. 打开 Azure 门户，选择“所有服务”****，在筛选器中键入“策略”**，然后选择“策略”****。
 
-     ![“所有服务”筛选器 ](media/azure-dsr_image12.png)
+     ![“所有服务”筛选器 ](media/gdpr-azure-dsr-azure-policy.png)
 
 2. 在“策略”边栏选项卡中，**** 依次选择“用户策略”****、“管理用户请求”**** 和“添加导出请求”****。
 
-    ![添加导出请求 ](media/azure-dsr_image13.png)
+    ![添加导出请求 ](media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. 完成“导出数据请求”****：
 
-    ![新建导出数据请求](media/azure-dsr_image14.png)
+    ![新建导出数据请求](media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **用户。** 键入请求导出的 Azure Active Directory 用户的电子邮件地址。
 - **订阅。** 选择要用于报告资源使用情况和为服务开具帐单的帐户。这也是 Azure 存储帐户所在的位置。
