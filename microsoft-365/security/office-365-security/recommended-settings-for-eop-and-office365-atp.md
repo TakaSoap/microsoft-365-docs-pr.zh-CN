@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257547"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615652"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -41,7 +41,7 @@ ms.locfileid: "39257547"
 |网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |高可信度网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |批量电子邮件检测操作|将邮件移动到 "垃圾邮件" 文件夹|隔离邮件||
-|将批量电子邮件阈值设置为|型|4||
+|将批量电子邮件阈值设置为|型|4|默认值为7，但我们建议大多数组织将其 mvoe 到至少6|
 |隔离保留期|30 天|30 天||
 |安全提示|打开|打开||
 |允许的发件人|无|无||
@@ -76,9 +76,9 @@ ms.locfileid: "39257547"
 
 |安全功能名称|标准|全|评论|
 |---------|---------|---------|---------|
-|出站垃圾邮件策略收件人限制-外部每小时限制|400|500||
-|出站垃圾邮件策略收件人限制-内部每小时限制|800|1000||
-|出站垃圾邮件策略收件人限制-每日限制|800|1000||
+|出站垃圾邮件策略收件人限制-外部每小时限制|500|400||
+|出站垃圾邮件策略收件人限制-内部每小时限制|1000|800||
+|出站垃圾邮件策略收件人限制-每日限制|1000|800||
 |用户超出限制时的操作|限制用户发送邮件|限制用户发送邮件||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP 反恶意软件策略设置
