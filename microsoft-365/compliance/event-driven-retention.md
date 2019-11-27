@@ -1,7 +1,7 @@
 ---
 title: 事件驱动保留概述
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签，能让保留期以特定类型事件发生的时间为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: 1f258296017734c80cb3719eb0b830593f69b220
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074850"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "39268425"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "37074850"
 - 基于事件的标签通常会在保留期到期时触发处置评审，这样记录管理者便能手动评审和处置内容。有关详细信息，请参阅[处置评审概述](disposition-reviews.md)。
     
 基于事件的标签的功能与 Office 365 中的任何标签都相同。若要了解详情，请参阅[标签概述](labels.md)。
-    
+
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>了解事件类型、标签、事件和资产 ID 之间的关系
 
 为了成功使用事件驱动保留，请务必了解事件类型、标签、事件和资产 ID 之间的关系，如下所示。关系图后面紧跟着就是说明。
@@ -75,6 +75,9 @@ ms.locfileid: "37074850"
   
 ![事件驱动保留的设置工作流的关系图](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
+> [!TIP]
+> 有关使用 SharePont 中的托管属性来自动应用保留标签并实施事件驱动保留的详细方案，请参阅[使用保留标签管理 SharePoint 文档的生命周期](auto-apply-retention-labels-scenario.md)。
+
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>第 1 步：创建保留期以事件为依据的标签
 
 在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，从左侧导航栏中选择“分类”**** > “保留标签”**** > “标签”**** 选项卡 >“创建标签”****。
@@ -103,7 +106,7 @@ ms.locfileid: "37074850"
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>第 3 步：发布或自动应用标签
 
-与任何标签类似，需要发布或自动应用基于事件的标签，以便将其手动或自动应用到内容。可以在“分类”**** > “保留标签”**** 页上完成此操作。
+与任何标签类似，需要发布或自动应用基于事件的标签，以便将其手动或自动应用到内容。 可在“**分类**” > “**保留标签**”页面执行此操作。
   
 ![用于发布或自动应用保留标签的选项](media/options-to-publish-auto-apply-retention-label.png)
 
@@ -123,9 +126,7 @@ ms.locfileid: "37074850"
   
 ### <a name="step-5-create-an-event"></a>第 5 步：创建事件
 
-当相应事件类型的特定实例（例如，产品的生存期结束）发生时，请转到安全与合规中心内的“事件”页，并创建事件。需要通过创建事件来手动触发事件。
-  
-![安全与合规中心内的“事件”页](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
+当相应事件类型的特定实例（例如，产品的生存期结束）发生时，请转到安全与合规中心内的“**记录管理**” > “**事件**”页，并创建事件。需要通过创建事件来手动触发事件。
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>第 6 步：选择第 2 步中标签使用的相同事件类型
 

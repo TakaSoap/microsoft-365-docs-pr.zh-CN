@@ -1,7 +1,7 @@
 ---
-title: GDPR 数据主体请求
+title: 针对 GDPR 和 CCPA 的数据主体请求
 description: ''
-keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
+keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,21 +9,25 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: dc4352ac14f42a227f1572b0c7f1442aa4dec838
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078902"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39268428"
 ---
-# <a name="data-subject-requests-and-the-gdpr"></a>数据主体请求和 GDPR
+# <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的数据主体请求
 
-一般数据保护条例 (GDPR) 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务的组织，或收集并分析欧盟居民相关数据的组织。无论你或你的企业位于何处，都要遵守这些新规定。 如需了解更多详情，可以参阅 [GDPR 摘要主题](gdpr.md)。 <br><br>
+一般数据保护条例 (GDPR) 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务的组织，或收集并分析欧盟居民相关数据的组织。无论你或你的企业位于何处，都要遵守这些新规定。 如需了解更多详情，可以参阅 [GDPR 摘要主题](gdpr.md)。
+
+同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。  CCPA 还规定了某些披露，选择行使权时防止歧视以及针对分类为“销售”的特定数据传输的“选择退出/选择加入”要求。  <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
 
-本文档介绍了如何根据 GDPR 使用 Microsoft 产品和服务来完成数据主体请求 (DSR)。
+本文档介绍了如何根据 GDPR 和 CCPA 使用 Microsoft 产品和服务来完成数据主体请求 (DSR)。
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -45,6 +49,8 @@ ms.locfileid: "35078902"
 ## <a name="what-is-a-dsr"></a>什么是 DSR？
 
 一般数据保护条例 (GDPR) 赋予民众（在条例中称为“数据主体”）权利，即管理已由雇主或其他类型机构或组织（称为“数据控制者”或简称为“控制者”）收集的个人数据。 GDPR 赋予数据主体对其个人数据的特定权利；这些权利包括，获取个人数据副本、请求更改个人数据、限制个人数据处理、删除个人数据，或接收能转移给另一个控制者的电子格式个人数据。
+
+加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。  
 
 作为控制者，你有义务迅速考虑每个 DSR，并通过执行所请求的操作或解释控制者为什么无法接受 DSR 来提供实质性响应。 控制者应咨询自己的法律顾问或合规顾问，以决定如何妥善处置任何给定 DSR。
 
