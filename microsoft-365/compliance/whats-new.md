@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: c9ed6e6d7f1489a510283a344094754a6f8cdeb4
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369633"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615662"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -39,13 +39,13 @@ ms.locfileid: "37369633"
 - 将标签应用于**Outlook 电子邮件**时，用户可以强制实施与 "不转发" 选项等效的限制。 收件人将能够读取邮件，但不能转发、打印或复制内容。
 - 将标签应用于**Word、PowerPoint 和 Excel 文件**时，系统将提示用户为特定用户和组分配访问权限。
 
-[了解更多](encryption-sensitivity-labels.md#let-users-assign-permissions)
+[了解详细信息](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
 ## <a name="august-2019"></a>2019 年 8 月
 
 ### <a name="update-to-data-investigations"></a>对数据调查的更新
 
-在执行数据调查时，您现在可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您可以将这些项目的副本保留在证据集中，以便您可以进一步调查或仅保留为参考。 [了解更多](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+在执行数据调查时，您现在可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您可以将这些项目的副本保留在证据集中，以便您可以进一步调查或仅保留为参考。 [了解详细信息](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>2019 年 7 月
 
@@ -54,7 +54,7 @@ ms.locfileid: "37369633"
 我们发布了两个新的管理员角色，以帮助管理您的组织中的安全性和合规性。请告诉你的所有朋友。
 
 - **合规性数据管理员**。具有此角色的用户具有在 Microsoft 365 合规性中心、Microsoft 365 管理中心和 Azure 中保护和跟踪数据的权限。 它们还可以管理 Exchange 管理中心、合规性管理器、团队 & Skype for Business 管理中心并为 Azure 和 Microsoft 365 创建支持票证。
-- **Security 运算符**。 具有此角色的用户可以管理警报并具有对安全相关功能的全局只读访问权限，其中包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、特权身份管理和 Office 365 中的所有内容安全性 & 合规性中心。
+- **Security 运算符**。 具有此角色的用户可以管理警报并拥有对安全相关功能的全局只读访问权限，其中包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、特权身份管理和 Office 365 安全性 & 合规性中心中的所有内容。
 
 [了解有关这些角色的详细信息](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
 

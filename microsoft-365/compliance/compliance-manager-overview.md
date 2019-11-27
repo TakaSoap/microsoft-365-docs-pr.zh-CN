@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685063"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615612"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -39,7 +39,7 @@ ms.locfileid: "38685063"
 
 ## <a name="compliance-manager-relationships"></a>合规性管理器关系
 
-合规性管理器使用多个组件可帮助你实现合规性管理活动。 这些组件协同工作，为审计员提供完整的管理工作流和无障碍的合规性报告。
+合规性管理器使用多个组件来帮助你实现合规性管理活动。 这些组件协同工作，为审计员提供完整的管理工作流和无障碍的合规性报告。
 
 图中显示了合规性管理器的主要组件之间的关系：
 
@@ -109,7 +109,7 @@ ms.locfileid: "38685063"
 
 证书控制通常由一个人实施，并由另一个人测试。 例如，在最初分配给一个人实现实施的操作项目结束后，会向下一个要测试和上载证据的人员分配措施项。 对控制分配具有足够权限的任何用户都可以分配和重新分配操作项目。 这样可以集中管理控制分配以及 implementors 和测试人员之间的操作项目的分散路由。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 合规性管理器使用基于角色的访问控制权限模型。 只有分配了用户角色的用户可访问合规性管理器，并且每位用户允许的操作受到角色类型的限制。 [查看](working-with-compliance-manager.md#permissions)显示每个权限允许执行的操作的表。
 

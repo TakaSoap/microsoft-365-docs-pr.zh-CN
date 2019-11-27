@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将 Twitter 数据导入 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: cf738f67778dbe435e60098b9fc6d753583858a8
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 86362193b0c64afa182c2f49ff27bd7e5f27935c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685158"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615572"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>使用示例连接器在 Office 365 中存档 Twitter 数据（预览）
 
@@ -31,13 +31,13 @@ ms.locfileid: "38685158"
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>为 Twitter 设置连接器的先决条件
 
-必须先完成以下先决条件，然后才能在安全 & 合规性中心中设置和配置示例连接器，以便从组织的 Twitter 帐户导入和存档数据。 
+先完成以下先决条件，然后才能在安全 & 合规性中心中设置和配置示例连接器，以便从组织的 Twitter 帐户导入和存档数据。 
 
 - 您的组织需要 Twitter 帐户;设置连接器时，需要登录到此帐户。
 
 - 您的组织必须具有有效的 Azure 订阅。 如果你没有现有的 Azure 订阅，你可以注册以下选项之一：
 
-    - [注册免费的1年 Azure 订阅](https://azure.microsoft.com/free) 
+    - [注册免费的一年 Azure 订阅](https://azure.microsoft.com/free) 
 
     - [注册 "转到即点即用 Azure 订阅"](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
@@ -46,14 +46,14 @@ ms.locfileid: "38685158"
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。
 
-- 在安全 & 合规性（步骤7）中设置自定义连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，此角色不会分配给 Exchange Online 中的任何角色组。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建新的角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
+- 在安全 & 合规性（步骤7）中设置自定义连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建新的角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
 
-## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>步骤1：从 Github 下载预建的连接器应用程序包
+## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>步骤1：从 GitHub 下载预建的连接器应用程序包
 
 第一步是下载将使用 Twitter API 连接到 Twitter 帐户并提取数据的 Twitter 示例连接器应用的源代码，以便您可以将数据导入到 Office 365。
 
 1. 转到[此 GitHub 网站](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases)。 
-2. 在最新版本下，单击 " **SampleConnector** " 文件。
+2. 在最新版本下，选择 " **SampleConnector** " 文件。
 3. 将 ZIP 文件保存到本地计算机上的某个位置。 您在步骤4中将此 zip 文件上传到 Azure。
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤2：在 Azure Active Directory 中创建应用程序
@@ -75,7 +75,7 @@ ms.locfileid: "38685158"
 
 有关分步说明，请参阅[第3步：创建 Azure 存储帐户](deploy-twitter-connector.md#step-3-create-an-azure-storage-account)。
 
-在完成此步骤（按照分步说明操作）后，保存生成的连接字符串 Uri。 在第4步中在 Azure 中创建 web 应用资源时，可以使用此字符串。
+在完成此步骤（按照分步说明操作）后，将保存生成的连接字符串 Uri。 在第4步中在 Azure 中创建 web 应用资源时，可以使用此字符串。
 
 ## <a name="step-4-create-a-web-app-resource-in-azure"></a>步骤4：在 Azure 中创建 web 应用资源
 
@@ -91,7 +91,7 @@ ms.locfileid: "38685158"
 
 此外，您还可以在此步骤中上载在第1步中下载的 SampleConnector 文件，以部署 Twitter 连接器应用的源代码。
 
-完成此步骤后，请务必复制 Azure 应用服务 URL （例如， `https://twitterconnector.azurewebsites.net`）。 您需要使用此操作来完成步骤5、步骤6和步骤7。
+完成此步骤后，请务必复制 Azure 应用服务 URL （例如， `https://twitterconnector.azurewebsites.net`）。 您需要使用此 URL 来完成步骤5、步骤6和步骤7。
 
 ## <a name="step-5-create-developer-app-on-twitter"></a>步骤5：在 Twitter 上创建开发人员应用
 
@@ -124,7 +124,7 @@ ms.locfileid: "38685158"
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步骤7：在安全 & 合规性中心中设置自定义连接器
 
-最后一步是在安全 & 合规性中心中设置自定义连接器，以将组织的 Twitter 帐户中的数据导入 Office 365 中的指定邮箱。 在成功完成此步骤后，Office 365 导入服务将启动从 Twitter 向 Office 365 导入数据的过程。 
+最后一步是在安全 & 合规性中心中设置自定义连接器，以将组织的 Twitter 帐户中的数据导入 Office 365 中的指定邮箱。 成功完成此步骤后，Office 365 导入服务将开始从 Twitter 向 Office 365 导入数据。 
 
 有关分步说明，请参阅[第7步：在安全与合规中心中设置自定义连接器](deploy-twitter-connector.md#step-7-set-up-a-custom-connector-in-the-security-and-compliance-center)。 
 

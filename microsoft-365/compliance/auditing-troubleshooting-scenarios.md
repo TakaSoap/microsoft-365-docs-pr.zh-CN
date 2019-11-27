@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 您可以使用 Office 365 审核日志搜索工具来帮助您解决常见问题，例如调查已损坏的帐户、找出设置邮箱的电子邮件转发的用户，或者确定外部用户为什么能够成功登录到您的组织.
-ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: 您可以使用 Office 365 审核日志搜索工具来帮助您解决常见问题，例如调查已损坏的帐户、找出设置邮箱的电子邮件转发的用户或确定外部用户成功登录组织的原因。
+ms.openlocfilehash: a9901168ef4c8e2d2128fb143cbe134a04fb4e2c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685254"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39603786"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>搜索 Office 365 审核日志，以调查常见的支持问题
 
@@ -33,11 +33,11 @@ ms.locfileid: "38685254"
 
 ## <a name="using-the-office-365-audit-log-search-tool"></a>使用 Office 365 审核日志搜索工具
 
-本文中介绍的每个故障排除方案都基于 Office 365 安全与合规中心中的审核日志搜索工具。 本节列出了搜索审核日志所需的权限，并介绍了访问和运行审核日志搜索的步骤。 每个方案部分都提供了有关如何配置审核日志搜索查询的具体指导，以及在与搜索条件匹配的审核记录中的详细信息中要查找的内容。
+本文中介绍的每个故障排除方案都基于 Office 365 安全与合规中心中的审核日志搜索工具。 本节列出了搜索审核日志所需的权限，并介绍了访问和运行审核日志搜索的步骤。 每个方案部分介绍了如何配置审核日志搜索查询，以及在与搜索条件匹配的审核记录中的详细信息中要查找的内容。
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>使用审核日志搜索工具所需的权限
 
-您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色，才能搜索 Office 365 审核日志。 默认情况下，将这些角色分配给 Exchange 管理中心中 "**权限**" 页上的 "合规性管理" 和 "组织管理" 角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 中的 "组织管理" 角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色，才能搜索 Office 365 审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 中的 "组织管理" 角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
 ### <a name="running-audit-log-searches"></a>运行审核日志搜索
 
@@ -45,23 +45,23 @@ ms.locfileid: "38685254"
 
 1. 转到[https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog)并使用你的工作或学校帐户登录。
     
-    将显示 "**审核日志搜索**" 页。 
+    此时将显示“**审核日志搜索**”页面。 
     
-    ![配置条件，然后单击 "搜索" 以运行搜索](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![配置条件，然后选择 "搜索" 以运行搜索](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. 您可以配置以下搜索条件。 本文中的每个故障排除方案都建议了有关配置这些字段的具体指导。
     
-    a. **活动：** 单击下拉列表以显示您可以搜索的活动。 运行搜索后，仅显示所选活动的审核记录。 选择 "**显示所有活动的结果**" 将显示符合其他搜索条件的所有活动的结果。 在某些故障排除方案中，您还需要将此字段留空。
+    a. **活动：** 选择下拉列表以显示您可以搜索的活动。 运行搜索后，仅显示所选活动的审核记录。 选择 "**显示所有活动的结果**" 将显示符合其他搜索条件的所有活动的结果。 在某些故障排除方案中，您还需要将此字段留空。
     
-    b. "**开始日期**" 和 "**结束日期"：** 选择要显示在该时间段内发生的事件的日期和时间范围。 默认情况下，选择最后七天。 日期和时间以协调通用时间（UTC）格式显示。 您可以指定的最大日期范围为90天。
+    b. "**开始日期**" 和 "**结束日期"：** 选择要显示在该时间段内发生的事件的日期和时间范围。 默认情况下，选择最后七天。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。
 
-    c. **用户：** 在此框中单击，然后选择要为其显示搜索结果的一个或多个用户。 您在此框中选择的用户执行的选定活动的审核记录将显示在结果列表中。 将此框保留为空将返回组织中所有用户（和服务帐户）的条目。
+    c. **用户：** 在此框中单击，然后选择要为其显示搜索结果的一个或多个用户。 您在此框中选择的用户执行的选定活动的审核记录将显示在结果列表中。 将此框留空以返回组织中所有用户（和服务帐户）的条目。
     
-    d. **文件、文件夹或网站：** 键入文件或文件夹名称的部分或全部，以搜索与包含指定关键字的文件夹文件相关的活动。 您还可以指定文件或文件夹的 URL。 如果使用 URL，请确保键入完整的 URL 路径，或者如果只键入 URL 的一部分，请勿包含任何特殊字符或空格。 将此框保留为空将返回组织中的所有文件和文件夹的条目。 在本文的所有故障排除方案中，此字段保留为空。
+    d. **文件、文件夹或网站：** 键入文件或文件夹名称的部分或全部，以搜索与包含指定关键字的文件夹文件相关的活动。 你还可以指定文件或文件夹的 URL。 如果使用 URL，请确保键入完整的 URL 路径，或者如果只键入 URL 的一部分，请勿包含任何特殊字符或空格。 将此框留空以返回组织中所有文件和文件夹的条目。 在本文的所有故障排除方案中，此字段保留为空。
     
-5. 单击 "**搜索**" 以使用搜索条件运行搜索。 
+5. 选择 "**搜索**" 以使用搜索条件运行搜索。 
     
-    搜索结果已加载，并在几分钟后显示在 "**审核日志搜索**" 页上的 "**结果**" 下。 本文中的每个部分都提供了有关在特定故障排除方案的上下文中查找的事项的指南。
+    搜索结果将被加载，并在几分钟后显示在 "**审核日志搜索**" 页上的 "**结果**" 下。 本文中的每个部分都提供了有关在特定故障排除方案的上下文中查找的事项的指南。
 
     有关查看、筛选或导出审核日志搜索结果的详细信息，请参阅：
 
@@ -86,7 +86,7 @@ ms.locfileid: "38685254"
 
 **文件、文件夹或网站：** 将此字段留空。
 
-运行搜索后，每个活动的 IP 地址将显示在搜索结果的 " **ip 地址**" 列中。 单击搜索结果中的记录，以查看有关弹出页面的更多详细信息。
+运行搜索后，每个活动的 IP 地址将显示在搜索结果的 " **ip 地址**" 列中。 选择搜索结果中的记录，以查看有关弹出页面的更多详细信息。
 
 ## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>确定为邮箱设置电子邮件转发的发件商
 
@@ -102,11 +102,11 @@ ms.locfileid: "38685254"
 
 **文件、文件夹或网站：** 将此字段留空。
 
-运行搜索后，单击搜索结果页上的 "**筛选结果**"。 在 "**活动**" 列标题下的框中，键入 "**设置"-"邮箱**"，以便只显示与 "**设置邮箱**" cmdlet 相关的审核记录。
+运行搜索后，选择 "搜索结果" 页上的 "**筛选结果**"。 在 "**活动**" 列标题下的框中，键入 "**设置"-"邮箱**"，以便只显示与 "**设置邮箱**" cmdlet 相关的审核记录。
 
 ![筛选审核日志搜索的结果](media/emailforwarding1.png)
 
-在这种情况下，您必须查看每个审核记录的详细信息，以确定该活动是否与电子邮件转发相关。 单击 "审核记录" 以显示 "**详细**信息" 弹出页面，然后单击 "**详细信息**"。 下面的屏幕截图和说明突出显示了指示邮箱上设置了电子邮件转发的信息。
+在这种情况下，您必须查看每个审核记录的详细信息，以确定该活动是否与电子邮件转发相关。 选择 "审核记录" 以显示 "**详细**信息" 弹出页面，然后选择 "**详细信息**"。 下面的屏幕截图和说明突出显示了指示邮箱上设置了电子邮件转发的信息。
 
 ![审核记录中的详细信息](media/emailforwarding2.png)
 
@@ -114,7 +114,7 @@ a. 在 " **ObjectId** " 字段中，将显示设置了电子邮件转发的邮�
 
 b. 在 "**参数**" 字段中，值*ForwardingSmtpAddress*表示在邮箱上设置了电子邮件转发。 在此示例中，将邮件转发到 alpinehouse.onmicrosoft.com 组织外部的电子邮件地址 mike@contoso.com。
 
-c. *DeliverToMailboxAndForward*参数的*True*值指示传递给 sarad@alpinehouse.onmicrosoft.com 的邮件的副本，*并*转发到*ForwardingSmtpAddress*参数指定的电子邮件地址，该地址在此示例中为 mike@contoso.com。 如果将*DeliverToMailboxAndForward*参数的值设置为*False*，则仅将电子邮件转发到*ForwardingSmtpAddress*参数指定的地址。 它不会传递到**ObjectId**字段中指定的邮箱。
+c. *DeliverToMailboxAndForward*参数的*True*值表示邮件的副本传递到 sarad@alpinehouse.onmicrosoft.com *，并*转发到*ForwardingSmtpAddress*参数指定的电子邮件地址，该地址在此示例中为 mike@contoso.com。 如果将*DeliverToMailboxAndForward*参数的值设置为*False*，则仅将电子邮件转发到*ForwardingSmtpAddress*参数指定的地址。 它不会传递到**ObjectId**字段中指定的邮箱。
 
 d. **UserId**字段指示在**ObjectId**字段中指定的邮箱上设置电子邮件转发的用户。 此用户也显示在搜索结果页上的**用户**列中。 在这种情况下，似乎邮箱的所有者在其邮箱上设置了电子邮件转发。
 
@@ -124,7 +124,7 @@ d. **UserId**字段指示在**ObjectId**字段中指定的邮箱上设置电子�
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-有关与电子邮件转发相关的参数的详细信息，请参阅 "[设置邮箱" 一](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)文。
+有关与电子邮件转发相关的参数的详细信息，请参阅[设置邮箱](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)文章。
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>确定用户是否已删除电子邮件项目
 
@@ -146,7 +146,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 **文件、文件夹或网站：** 将此字段留空。
 
-运行搜索后，可以筛选搜索结果，以显示软删除项目或硬删除项目的审核记录。 单击 "审核记录" 以显示 "**详细**信息" 弹出页面，然后单击 "**详细信息**"。 在 " **AffectedItems** " 字段中显示有关已删除项目的其他信息，如主题行和项目的删除位置。 下面的屏幕截图显示软删除项和硬删除项中的**AffectedItems**字段的示例。
+运行搜索后，可以筛选搜索结果，以显示软删除项目或硬删除项目的审核记录。 选择 "审核记录" 以显示 "**详细**信息" 弹出页面，然后选择 "**详细信息**"。 在 " **AffectedItems** " 字段中显示有关已删除项目的其他信息，如主题行和项目的删除位置。 下面的屏幕截图显示软删除项和硬删除项中的**AffectedItems**字段的示例。
 
 **软删除项的 AffectedItems 字段的示例**
 
@@ -160,7 +160,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 如果已删除项目的保留期尚未过期，则用户可以恢复软删除的项目。 在 Exchange Online 中，默认的已删除项目保留期为14天，但管理员可以将此设置增加到最多30天。 将用户指向 "在[Outlook 中恢复已删除项目或电子邮件" web](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)文章，以获取有关恢复已删除项目的说明。
 
-如前所述，如果已删除项目的保留期尚未过期或邮箱处于保留状态，则管理员可能能够恢复已删除邮件，在这种情况下，将保留项目，直到保留期间过期。 在运行内容搜索时，如果搜索结果与搜索查询相匹配，则会在搜索结果中返回软删除和硬删除的项目文件夹中的项目。 有关运行内容搜索的详细信息，请参阅[Office 365 中的内容搜索](content-search.md)。
+如前所述，如果已删除项目的保留期尚未过期或邮箱处于保留状态，则管理员可以恢复已删除的邮件，在这种情况下，项目将保留到保留期过期。 在运行内容搜索时，如果搜索结果与搜索查询相匹配，则会在搜索结果中返回软删除和硬删除的项目文件夹中的项目。 有关运行内容搜索的详细信息，请参阅[Office 365 中的内容搜索](content-search.md)。
 
 > [!TIP]
 > 若要搜索已删除的电子邮件项目，请在审核记录的 " **AffectedItems** " 字段中搜索显示的全部或部分主题行。
@@ -182,7 +182,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 **文件、文件夹或网站：** 将此字段留空。
 
-运行搜索后，此活动的所有审核记录都会显示在搜索结果中。 单击某一审核记录以显示 "**详细**信息" 弹出页面，然后单击 "**详细信息**"。 有关收件箱规则设置的信息将显示在 "**参数**" 字段中。 下面的屏幕截图和说明突出显示了有关收件箱规则的信息。
+运行搜索后，此活动的所有审核记录都会显示在搜索结果中。 选择要显示 "**详细**信息" 弹出页面的审核记录，然后选择 "**详细信息**"。 有关收件箱规则设置的信息将显示在 "**参数**" 字段中。 下面的屏幕截图和说明突出显示了有关收件箱规则的信息。
 
 ![新收件箱规则的审核记录](media/NewInboxRuleRecord.png)
 
@@ -190,7 +190,7 @@ a. 在 " **ObjectId** " 字段中，将显示收件箱规则的完整名称。 �
 
 b. 在 "**参数**" 字段中，显示收件箱规则的条件。 在此示例中，条件由*From*参数指定。 为*From*参数定义的值表示收件箱规则作用于由 admin@alpinehouse.onmicrosoft.com 发送的电子邮件。 有关可用于定义收件箱规则条件的参数的完整列表，请参阅[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)文章。
 
-c. *MoveToFolder*参数指定收件箱规则的操作。 在此示例中，从 admin@alpinehouse.onmicrosoft.com 接收的邮件将移至名为*AdminSearch*的文件夹中。 另请参阅[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)文章，获取可用于定义收件箱规则操作的参数的完整列表。
+c. *MoveToFolder*参数指定收件箱规则的操作。 在此示例中，从 admin@alpinehouse.onmicrosoft.com 接收的邮件将移至名为*AdminSearch*的文件夹中。 此外，有关可用于定义收件箱规则操作的完整参数列表，请参阅[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)文章。
 
 d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱规则的用户。 此用户也显示在搜索结果页上的**用户**列中。
 
@@ -198,16 +198,16 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
 在查看 Office 365 审核日志中的审核记录时，您可能会看到指示外部用户通过 Azure Active Directory 进行身份验证并成功登录到组织的记录。 例如，contoso.onmicrosoft.com 中的管理员可能会看到一条审核记录，表明来自不同的 Office 365 组织（例如，fabrikam.onmicrosoft.com）的用户已成功登录 contoso.onmicrosoft.com。 同样，您可能会看到审核记录，这些记录表明用户使用 Microsoft 帐户（MSA）（如 Outlook.com 或 Live.com）成功登录到您的组织。 在这些情况下，审核的活动是**用户登录**的。 
 
-此行为是设计的。 如果外部用户尝试访问您组织中的 SharePoint 网站或 OneDrive 位置，则 azure Active Directory （Azure AD）（Office 365 中的目录服务）将允许出现一种称为 "*传递身份验证" 的*情况。 当外部用户尝试执行此操作时，系统会提示他们输入其 Office 365 凭据。 Azure AD 使用凭据对用户进行身份验证，即仅 Azure AD 验证用户是否为他们所声称的用户。 审核记录中成功登录的指示是对用户进行身份验证的 Azure AD 的结果。 成功的登录并不意味着用户能够访问任何资源或在组织中执行任何其他操作。 它仅指示用户由 Azure AD 进行身份验证。 为了使传递用户能够访问 SharePoint 或 OneDrive 资源，组织中的用户必须通过向外部用户发送共享邀请或匿名共享链接来明确地与外部用户共享资源。 
+此行为是设计造成的。 如果外部用户尝试访问您组织中的 SharePoint 网站或 OneDrive 位置，则 azure Active Directory （Azure AD）（Office 365 中的目录服务）将允许出现一种称为 "*传递身份验证" 的*情况。 当外部用户尝试执行此操作时，系统会提示他们输入 Office 365 凭据。 Azure AD 使用凭据对用户进行身份验证，即仅 Azure AD 验证用户是否为他们所声称的用户。 审核记录中成功登录的指示是对用户进行身份验证的 Azure AD 的结果。 成功的登录并不意味着用户能够访问任何资源或在您的组织中执行任何其他操作。 它仅指示用户由 Azure AD 进行身份验证。 为了使传递用户能够访问 SharePoint 或 OneDrive 资源，组织中的用户必须通过向外部用户发送共享邀请或匿名共享链接来明确地与外部用户共享资源。 
 
 > [!NOTE]
 > Azure AD 仅允许对*第一方应用程序*（如 SharePoint Online 和 OneDrive for business）进行传递身份验证。 不允许其他第三方应用程序。
 
-下面的示例和描述了作为传递身份验证结果的**用户登录**事件的审核记录中的相关属性。 单击 "审核记录" 以显示 "**详细**信息" 弹出页面，然后单击 "**详细信息**"。
+下面是一个**登录**事件的审核记录中的相关属性的示例和说明，该事件是通过身份验证的结果。 选择 "审核记录" 以显示 "**详细**信息" 弹出页面，然后选择 "**详细信息**"。
 
 ![成功传递身份验证的审核记录示例](media/PassThroughAuth1.png)
 
-   a. 此字段指示在组织的 Azure AD 中找不到尝试访问组织中的资源的用户。
+   a. 此字段指示在组织的 Azure AD 中找不到试图访问组织中的资源的用户。
 
    b. 此字段显示尝试访问组织中的资源的外部用户的 UPN。 此外，还会在审核记录的**user**和**UserId**属性中标识此用户 ID。
 
@@ -221,9 +221,9 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
 以下两个示例方案将导致成功的**用户在审核活动中登录**，这是因为传递身份验证： 
 
-  - 拥有 Microsoft 帐户的用户（如 SaraD@outlook.com）尝试访问 fourthcoffee.onmicrosoft.com 中的 OneDrive for Business 帐户中的文档，其不是 fourthcoffee.onmicrosoft.com 中的 SaraD@outlook.com 的相应来宾用户帐户。
+  - 拥有 Microsoft 帐户的用户（如 SaraD@outlook.com）尝试访问 fourthcoffee.onmicrosoft.com 中的 OneDrive for Business 帐户中的文档，并且在 fourthcoffee.onmicrosoft.com 中没有与 SaraD@outlook.com 相对应的来宾用户帐户。
 
-  - 在 Office 365 组织中拥有工作或学校帐户的用户（如 pilarp@fabrikam.onmicrosoft.com）尝试访问 contoso.onmicrosoft.com 中的 SharePoint 网站，并且他们不是 contoso.onmicrosoft.com 中的 pilarp@fabrikam.com 的相应来宾用户帐户。
+  - 在 Office 365 组织中拥有工作或学校帐户的用户（如 pilarp@fabrikam.onmicrosoft.com）尝试访问 contoso.onmicrosoft.com 中的 SharePoint 网站，并且在 contoso.onmicrosoft.com 中没有与 pilarp@fabrikam.com 相对应的来宾用户帐户。
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>有关调查由传递身份验证产生的成功登录的提示
@@ -234,6 +234,6 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
     除了**用户登录**的活动之外，还可以返回其他审核记录，如表明组织中的用户与外部用户共享的资源，以及外部用户是否访问、修改或下载了与它们共享的文档。
 
-- 搜索 SharePoint 共享活动，该活动将指示文件与由登录审核记录的**用户**标识的外部用户共享。 有关详细信息，请参阅[在 Office 365 审核日志中使用共享审核](use-sharing-auditing.md)。
+- 搜索将指示文件与由**用户登录**的审核记录所标识的外部用户共享的 SharePoint 共享活动。 有关详细信息，请参阅[在 Office 365 审核日志中使用共享审核](use-sharing-auditing.md)。
 
 - 导出包含与您的调查相关的记录的审核日志搜索结果，以便您可以使用 Excel 搜索与外部用户相关的其他活动。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。

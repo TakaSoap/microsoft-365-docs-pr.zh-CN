@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器，以便从数据源（如 Facebook 商业页面、Twitter、LinkedIn 公司页面和即时 Bloomberg）导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 74b35281f72277c4698b835a63613288dce7d9ce
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 9479734fd1fcc65b4db7fd7e9a1ffc0f2c5fda59
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685159"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615592"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>使用示例连接器在 Office 365 中存档 Facebook 数据（预览）
 
@@ -31,7 +31,7 @@ ms.locfileid: "38685159"
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>设置用于 Facebook 商业页面的连接器的先决条件
 
-必须先完成以下先决条件，然后才能在安全 & 合规性中心中设置和配置示例连接器，以便从组织的 Facebook 商业页面导入和存档数据。 
+先完成以下先决条件，然后才能在安全 & 合规中心中设置和配置示例连接器，以便从组织的 Facebook 商业页面导入和存档数据。 
 
 - 您的组织的业务页面需要一个 Facebook 帐户（在设置连接器时，需要登录到此帐户）。 目前，您只能存档 Facebook 商业页面中的数据;您不能存档单个 Facebook 配置文件中的数据。
 
@@ -46,15 +46,15 @@ ms.locfileid: "38685159"
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。
 
-- 在安全 & 合规性（步骤7）中设置自定义连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，此角色不会分配给 Exchange Online 中的任何角色组。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
+- 在安全 & 合规性（步骤7）中设置自定义连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
 
-## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>步骤1：从 Github 下载预建的连接器应用程序包
+## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>步骤1：从 GitHub 下载预建的连接器应用程序包
 
 第一步是下载预构建的 Facebook 连接器应用程序的源代码，该应用程序将使用 Facebook API 连接到你的 Facebook 商业页面并提取 Facebook 数据，以便可以将其导入 Office 365。
 
 1. 转到[此 GitHub 网站](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases)。 
-2. 在最新版本下，单击 " **SampleConnector** " 文件。
-3. 将 ZIP 文件保存到本地计算机上的某个位置。 您在步骤4中将此 zip 文件上传到 Azure。
+2. 在最新版本下，选择 " **SampleConnector** " 文件。
+3. 将 ZIP 文件保存到本地计算机上的某个位置。 您在步骤4中将此 ZIP 文件上传到 Azure。
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤2：在 Azure Active Directory 中创建应用程序
 
@@ -83,15 +83,15 @@ ms.locfileid: "38685159"
 
 有关分步说明，请参阅[在 Azure 中创建新的 web 应用资源](deploy-facebook-connector.md#step-4-create-a-new-web-app-resource-in-azure)。
 
-在完成此步骤（按照分步说明操作）后，您将在创建 web 应用资源时提供以下信息（在完成前面的步骤之后，您已将其复制到文本文件中）。
+当您按照分步说明完成此步骤时，您将在创建 web 应用资源时提供以下信息（在完成前面的步骤之后复制到文本文件中）。
 
-- APISecretKey：在完成此步骤的过程中，您将创建此密码;它在步骤7中使用。
+- APISecretKey：在完成此步骤的过程中，您将创建此密码。 它在步骤7中使用。
 - StorageAccountConnectionString：在步骤3中创建 Azure 存储帐户后复制的连接字符串 Uri。
 - tenantId：在步骤2中创建 Azure Active Directory 中的 Facebook 连接器应用之后复制的 Office 365 组织的租户 ID。
 
 此外，您可以在此步骤中上载在第1步中下载的 SampleConnector 文件，以部署 Facebook 连接器应用程序的源代码。
 
-完成此步骤后，请务必复制应用服务 URL （例如， https://fbconnector.azurewebsites.net)。 您需要使用此操作来完成步骤5、步骤6和步骤7。
+完成此步骤后，请务必复制应用服务 URL （例如， https://fbconnector.azurewebsites.net)。 您需要使用此 URL 来完成步骤5、步骤6和步骤7。
 
 ## <a name="step-5-register-the-web-app-on-facebook"></a>步骤5：在 Facebook 上注册 web 应用程序
 
@@ -122,7 +122,7 @@ ms.locfileid: "38685159"
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步骤7：在安全 & 合规性中心中设置自定义连接器
 
-最后一步是在安全 & 合规性中心中设置自定义连接器，以将来自 Facebook 商业页面的数据导入 Office 365 中的指定邮箱。 完成此步骤后，Office 365 导入服务将启动从 Facebook Business pages 向 Office 365 导入数据的过程。 
+最后一步是在安全 & 合规性中心中设置自定义连接器，以将来自 Facebook 商业页面的数据导入 Office 365 中的指定邮箱。 完成此步骤后，Office 365 导入服务将开始从 Facebook 商业版页面向 Office 365 导入数据。 
 
 有关分步说明，请参阅[在安全 & 合规性中心中设置自定义连接器](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center)。 
 

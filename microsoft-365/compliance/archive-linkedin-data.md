@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从 LinkedIn 公司页面导入到 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的合规性。
-ms.openlocfilehash: 1117eb6b7c756519ad07cafc52a635d65999d9e0
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: bd11102a15396132cb192d8b0a4cc9a0dfca5645
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685250"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615622"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>设置连接器以存档 Office 365 中的 LinkedIn 数据（预览）
 
@@ -29,41 +29,41 @@ ms.locfileid: "38685250"
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。
 
-- 必须在 Exchange Online 中为创建 LinkedIn 公司页面连接器的用户分配邮箱导入导出角色。 这是访问安全 & 合规中心中的 "**存档第三方数据**" 页所必需的。 默认情况下，此角色不会分配给 Exchange Online 中的任何角色组。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
+- 必须在 Exchange Online 中为创建 LinkedIn 公司页面连接器的用户分配邮箱导入导出角色。 若要访问安全 & 合规性中心中的 "**存档第三方数据**" 页，此角色是必需的。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
 
 - 您必须具有作为您要存档的 "LinkedIn 公司" 页面的管理员的 LinkedIn 用户帐户的登录凭据（电子邮件地址或电话号码和密码）。 设置连接器时，可以使用这些凭据登录到 LinkedIn。
 
 ## <a name="create-a-linkedin-connector"></a>创建 LinkedIn 连接器
 
-1. 转到<https://protection.office.com> ，然后单击 "**数据\>调控导入**"，然后单击 "**存档第三方数据**"。
+1. 转到<https://protection.office.com> ，然后选择 "**数据\>调控导入**"，然后选择 "**存档第三方数据**"。
 
-2. 在 "**存档第三方数据**" 页上，单击 "**添加连接器**"，然后单击 " **LinkedIn**"。
+2. 在 "**存档第三方数据**" 页上，选择 "**添加连接器**"，然后选择 " **LinkedIn**"。
 
-3. 在 "**服务条款**" 页上，单击 "**接受**"。
+3. 在 "**服务条款**" 页上，选择 "**接受**"。
 
-4. 在 "**使用 Linkedin 登录**" 页面上，单击 "**使用 linkedin 登录**"。
+4. 在 "**使用 Linkedin 登录**" 页面上，选择 "**使用 linkedin 登录**"。
 
    将显示 "LinkedIn 登录" 页面。
 
    ![LinkedIn 登录页](media/LinkedInSigninPage.png)
 
-5. 在 "LinkedIn 登录" 页面上，输入与要存档的公司页面相关联的 LinkedIn 帐户的电子邮件地址（或电话号码）和密码，然后单击 "**登录**"。
+5. 在 "LinkedIn 登录" 页面上，输入与要存档的 "公司" 页面相关联的 LinkedIn 帐户的电子邮件地址（或电话号码）和密码，然后选择 "**登录**"。
 
    将显示一个向导页，其中包含与您登录的帐户关联的所有 LinkedIn 公司页面的列表。 仅可为一个公司页面配置连接器。 如果您的组织具有多个 LinkedIn 公司页面，则必须为每个公司创建一个连接器。
 
    ![将显示一个包含 "LinkedIn 公司" 页面列表的页面](media/LinkedInSelectCompanyPage.png)
 
-6. 选择要存档其项目的公司页面，然后单击 "**下一步**"。
+6. 选择要存档其项目的公司页面，然后选择 "**下一步**"。
 
-7. 在 "**设置筛选器**" 页上，您可以将筛选器应用于最初导入特定年龄的项目。 选择年龄，然后单击 "**下一步**"。
+7. 在 "**设置筛选器**" 页上，您可以将筛选器应用于最初导入特定年龄的项目。 选择年龄，然后选择 "**下一步**"。
 
-8. 在 "**设置存储帐户**" 页上，键入将向其导入 LinkedIn 项目的 Office 365 邮箱的电子邮件地址，然后单击 "**下一步**"。 项目将导入到此邮箱的 "收件箱" 文件夹中。
+8. 在 "**设置存储帐户**" 页上，键入将向其导入 LinkedIn 项目的 Office 365 邮箱的电子邮件地址，然后选择 "**下一步**"。 项目将导入到此邮箱的 "收件箱" 文件夹中。
 
-9. 查看连接器设置，然后单击 "**保存**" 以完成连接器设置。
+9. 查看连接器设置，然后选择 "**保存**" 以完成连接器设置。
 
-创建连接器后，可以返回到 "**存档第三方数据**" 页（如果需要更新连接器列表，请单击 "**刷新**"）查看新的连接器。 "**状态**" 列中的值为 "**正在等待启动**"。 启动初始导入过程需要长达24小时。 在第一次运行连接器并导入 LinkedIn 项目后，连接器将每24小时运行一次，并导入 "LinkedIn 公司" 页上的 "在前24小时内创建的任何新项目"。
+创建连接器后，可以返回到 "**存档第三方数据**" 页（如果需要更新连接器列表，请选择 "**刷新**"）查看新的连接器。 "**状态**" 列中的值为 "**正在等待启动**"。 启动初始导入过程需要长达24小时。 在第一次运行连接器并导入 LinkedIn 项目后，连接器将每24小时运行一次，并导入 "LinkedIn 公司" 页上的 "在前24小时内创建的任何新项目"。
 
-若要查看更多详细信息，请单击 "**存档第三方数据**" 页上的列表中的连接器以显示弹出页面。 在 "**状态**" 下，显示的日期范围表示创建连接器时选择的年龄筛选器。 
+若要查看更多详细信息，请在 "**存档第三方数据**" 页上选择列表中的连接器以显示弹出页面。 在 "**状态**" 下，显示的日期范围表示创建连接器时选择的年龄筛选器。 
 
 ## <a name="more-information"></a>更多信息
 

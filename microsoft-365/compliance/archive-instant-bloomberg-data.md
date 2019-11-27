@@ -10,16 +10,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从即时 Bloomberg 聊天工具导入 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685085"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615602"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>设置连接器以存档 Office 365 中的即时 Bloomberg 数据
 
-使用 Office 365 的 Security & 合规性中心中的本机连接器从[即时 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)协作工具导入和存档金融 services 聊天数据。 在设置和配置连接器后，它每天连接到组织的 Bloomberg 安全 FTP 站点（SFTP），将聊天消息的内容转换为电子邮件格式，然后将这些项目导入 Office 365 中的邮箱。
+在 Office 365 的 Security & 合规性中心中使用本机连接器，以便从 "[即时 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)协作" 工具导入和存档金融 services 聊天数据。 在设置和配置连接器后，它每天连接到组织的 Bloomberg 安全 FTP 站点（SFTP），将聊天消息的内容转换为电子邮件格式，然后将这些项目导入 Office 365 中的邮箱。
 
 在将即时 Bloomberg 数据存储在用户邮箱中之后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、[通信合规性](communication-compliance.md)和 Office 365 保留策略）应用于即时 Bloomberg 数据。 例如，您可以使用内容搜索来搜索即时 Bloomberg 聊天邮件，或将包含即时 Bloomberg 数据的邮箱与高级电子数据展示事例中的管理员关联起来。 使用即时 Bloomberg 连接器在 Office 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
 
@@ -39,9 +39,9 @@ ms.locfileid: "38685085"
     
     a. **在 CorporateEmailAddress 属性中具有值的项与 Office 365 用户帐户对应的项：** 如果连接器可以将*CorporateEmailAddress*属性中的电子邮件地址与 Office 365 中的特定用户帐户相关联，则会将该项目复制到用户的 office 365 邮箱中的 "收件箱" 文件夹中。
     
-    b. **CorporateEmailAddress 属性中的值与 Office 365 用户帐户不对应的项：** 如果连接器无法将*CorporateEmailAddress*属性中的电子邮件地址与 office 365 中的特定用户帐户相关联，则会将该项目复制到 office 365 中备选的 "全部捕获" 邮箱的 "收件箱" 文件夹中。
+    b. **CorporateEmailAddress 属性中的值与 Office 365 用户帐户不对应的项：** 如果连接器无法将*CorporateEmailAddress*属性中的电子邮件地址与 office 365 中的特定用户帐户相关联，则会将该项目复制到 office 365 中备用的 "全部捕获" 邮箱的 "收件箱" 文件夹中。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 存档即时 Bloomberg 数据所需的许多实施步骤都是 Office 365 外部的，并且必须先完成，然后才能在安全 & 合规性中心中创建连接器。
 
@@ -67,7 +67,7 @@ ms.locfileid: "38685085"
 
     - Bloomberg SFTP 站点的端口号
 
-- 在第3步（以及在第1步中下载公钥和 IP 地址的用户）中创建即时 Bloomberg 连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 这是访问安全 & 合规中心中的 "**存档第三方数据**" 页所必需的。 默认情况下，此角色不会分配给 Exchange Online 中的任何角色组。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
+- 在第3步（以及在第1步中下载公钥和 IP 地址的用户）中创建即时 Bloomberg 连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 这是访问安全 & 合规中心中的 "**存档第三方数据**" 页所必需的。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>步骤1：获取 SSH 和 PGP 公钥
 
@@ -114,7 +114,7 @@ ms.locfileid: "38685085"
 
     - **SFTP URL：** Bloomberg SFTP 网站的 URL （例如，sftp.bloomberg.com）。
 
-    - **SFTP 端口：** Bloomberg SFTP 站点的端口号。 连接器使用此连接到 SFTP 站点。
+    - **SFTP 端口：** Bloomberg SFTP 站点的端口号。 连接器使用此端口连接到 SFTP 站点。
 
 5. 在 "**备用邮箱**" 页上，键入用于存储来自即时 Bloomberg （与组织中的用户邮箱不关联）的聊天邮件的邮箱的电子邮件地址。
 

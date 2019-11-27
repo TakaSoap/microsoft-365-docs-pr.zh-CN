@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以将来自社交媒体平台、即时消息平台和文档协作平台的第三方数据导入 Office 365 组织中的邮箱。 这样，你就可以在 Office 365 中存档 Facebook、Twitter 和其他第三方数据源中的数据。 然后，您可以使用并应用适用于第三方数据的 Office 365 合规性功能（如法律封存、电子数据展示、就地存档和保留策略）。
-ms.openlocfilehash: 1e4cc8fc322b4e7e447cc053bd1b0a74ffe40aeb
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 084cacf1c2bef8b5786e6dba804f9a1e87001338
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685079"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615582"
 ---
 # <a name="archive-third-party-data-in-office-365"></a>在 Office 365 中存档第三方数据
 
@@ -35,7 +35,7 @@ Office 365 使管理员能够从社交媒体平台、即时消息平台和文档
     
 - **短信/短信服务：** BlackBerry 
     
-导入第三方数据后，可以将 Office 365 合规性功能（如诉讼保留、电子数据展示、就地存档、审核、[通信合规性](communication-compliance.md)和 Office 365 保留策略）应用到此数据。 例如，当将邮箱置于诉讼保留状态时，将保留第三方数据。 您可以使用 Microsoft 电子数据展示工具搜索第三方数据。 或者，您可以将存档和保留策略应用于第三方数据，就像 Microsoft 数据一样。 简言之，在 Office 365 中存档第三方数据可帮助您的组织遵守政府和法规策略。
+导入第三方数据后，可以将 Office 365 合规性功能&mdash;（如诉讼保留、电子数据展示、就地存档、审核、[通信合规性](communication-compliance.md)和 Office 365 保留策略&mdash;）应用到此数据。 例如，当将邮箱置于诉讼保留状态时，将保留第三方数据。 您可以使用 Microsoft 电子数据展示工具搜索第三方数据。 或者，您可以将存档和保留策略应用于第三方数据，就像 Microsoft 数据一样。 简言之，在 Office 365 中存档第三方数据可帮助您的组织遵守政府和法规策略。
 
 有两种方法可在 Office 365 中导入和存档第三方数据：
 
