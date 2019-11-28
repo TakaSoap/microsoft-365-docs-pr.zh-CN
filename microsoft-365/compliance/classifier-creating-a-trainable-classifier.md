@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 当 "准备就绪" 框中的一个可供使用时，使用 trainable 分类器将无法满足您的需求。 Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本主题介绍如何创建自定义分类器。
-ms.openlocfilehash: 1d62b70d821593ff7d8d3889c0da0e0b5cc9809f
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38690195"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633979"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>创建 trainable 分类器（预览）
 
@@ -38,7 +38,7 @@ ms.locfileid: "38690195"
 
 ## <a name="testing-content"></a>测试内容
 
-在 trainable 分类器处理足够的正样本以生成预测模型后，需要测试它所做的预测，以确定分类器能否正确区分与不匹配的类别和项目之间的项目。 为此，请将其放在另一组中，这是一组人工挑选的内容，这些内容由应归入的类别和样本组成的样本组成。 处理这些步骤后，您将手动浏览结果，并验证每个预测是否正确、不正确或是否不确定。 Trainable 分类器使用此反馈来改进其预测模型。
+在 trainable 分类器处理足够的正样本以生成预测模型后，需要测试它所做的预测，以确定分类器能否正确区分与类别和项目不匹配的项目。 为此，请将其放在另一组中，这是一组人工挑选的内容，这些内容由应归入的类别和样本组成的样本组成。 在处理这些工作后，您需要手动浏览结果，并验证每个预测是否正确、不正确或是否不确定。 Trainable 分类器使用此反馈来改进其预测模型。
 
 > [!TIP]
 > 为获得最佳结果，您的测试示例集中有10000个项目，并且这些项目的分布为正和负匹配。
@@ -56,7 +56,7 @@ ms.locfileid: "38690195"
 > [!IMPORTANT]
 > 请确保种子集中的项是类别的**强**示例。 Trainable 分类器最初根据您对其进行种子设定的内容生成模型。 分类器假定所有种子示例都是强的，并且无法知道样本是否为类别的弱匹配或负匹配。
 
-2. 将种子内容放在专门用于保存*种子内容*的 SharePoint Online 文件夹中。 请记下网站、库和文件夹 url。
+2. 将种子内容放在专门用于保存*种子内容*的 SharePoint Online 文件夹中。 请记下网站、库和文件夹 URL。
 
 > [!TIP]
 > 如果为种子数据创建新的网站和文件夹，则在创建将使用该种子数据的 trainable 分类器之前，至少要为该位置编制索引一个小时。
@@ -85,7 +85,7 @@ ms.locfileid: "38690195"
 > [!IMPORTANT]
 > 示例项目不能加密且必须为英语。
 
-12. 将测试内容放置在专门用于保存*测试内容*的 SharePoint Online 文件夹中。 请记下 SharePoint Online 网站、库和文件夹 url。
+12. 将测试内容放置在专门用于保存*测试内容*的 SharePoint Online 文件夹中。 请记下 SharePoint Online 网站、库和文件夹 URL。
 
 > [!TIP]
 > 如果为测试数据创建新的网站和文件夹，则在创建将使用该种子数据的 trainable 分类程序之前，至少要为该位置编制索引一个小时。

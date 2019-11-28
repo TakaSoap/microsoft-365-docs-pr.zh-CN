@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可在 Office 365 邮箱中放置的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Office 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户
-ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685276"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634009"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -175,30 +175,56 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>在延迟保留时管理邮箱
 
-从邮箱中删除了任何类型的保留后， *DelayHoldApplied*邮箱属性的值将设置为**True**。 下次托管文件夹助理处理邮箱并检测已删除保留时，会发生此情况。 这称为*延迟保留*，表示实际删除保留的延迟为30天，以防止永久删除（清除）邮箱中的数据。 这使管理员有机会搜索或恢复在删除保留后将清除的邮箱项目。 将延迟保留放在邮箱上时，该邮箱仍被视为无限持续时间处于保留状态，就像该邮箱处于诉讼保留状态一样。 30天后，延迟保留过期，Office 365 将自动尝试删除延迟保留（通过将*DelayHoldApplied*属性设置为**False**），以便删除保留。 在*DelayHoldApplied*属性设置为**False**后，在下一次托管文件夹助理处理邮箱时，将清除标记为要删除的项目。
+从邮箱中删除了任何类型的保留后，将应用*延迟保留*。 这意味着保留的实际删除延迟30天，以防止永久删除（清除）邮箱中的数据。 这使管理员有机会搜索或恢复在删除保留后将清除的邮箱项目。 在下一次托管文件夹助理处理邮箱并检测已删除保留时，会在邮箱上放置延迟保留。 具体来说，当托管文件夹助理将下列邮箱属性之一设置为**True**时，将对邮箱应用延迟保留：
 
-若要查看邮箱的*DelayHoldApplied*属性的值，请在 Exchange Online PowerShell 中运行以下命令。
+- **DelayHoldApplied：** 此属性适用于存储在用户邮箱中的与电子邮件相关的内容（由使用 Outlook 和 web 上的 Outlook 生成的用户生成）。
+
+- **DelayReleaseHoldApplied：** 此属性适用于存储在用户邮箱中的基于云的内容（由非 Outlook 应用程序（如 Microsoft 团队、Microsoft Forms 和 Microsoft Yammer）生成。 Microsoft 应用生成的云数据通常存储在用户邮箱的隐藏文件夹中。
+ 
+ 在邮箱上放置延迟保留（当上述任一属性设置为**True**）时，邮箱仍被视为无限制保留持续时间处于保留状态，就像邮箱处于诉讼保留状态一样。 30天后，延迟保留过期，Office 365 将自动尝试删除延迟保留（通过将 DelayHoldApplied 或 DelayReleaseHoldApplied 属性设置为**False**），以便删除保留。 在这两个属性都设置为**False**后，在下一次由托管文件夹助理处理邮箱时，将清除标记为要删除的相应项。
+
+若要查看邮箱的 DelayHoldApplied 和 DelayReleaseHoldApplied 属性的值，请在 Exchange Online PowerShell 中运行以下命令。
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL *HoldApplied*
 ```
 
-若要在过期之前删除延迟保留，可以在 Exchange Online PowerShell 中运行以下命令： 
+若要在过期之前删除延迟保留，可以在 Exchange Online PowerShell 中运行以下命令（或同时运行这两项），具体取决于要更改的属性： 
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-您必须在 Exchange Online 中向您分配 "合法保留" 角色，才能使用*RemoveDelayHoldApplied*参数 
+或
+ 
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
 
-若要删除非活动邮箱的延迟保留，请在 Exchange Online PowerShell 中运行以下命令：
+您必须在 Exchange Online 中向您分配 "合法保留" 角色，才能使用*RemoveDelayHoldApplied*或*RemoveDelayReleaseHoldApplied*参数。 
+
+若要删除非活动邮箱的延迟保留，请在 Exchange Online PowerShell 中运行以下命令之一：
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
+或
+
+```powershell
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
+```
+
 > [!TIP]
 > 在上一命令中指定非活动邮箱的最佳方法是使用其可分辨名称或 Exchange GUID 值。 使用下列值之一有助于避免意外指定错误的邮箱。 
+
+有关使用这些参数管理延迟保留的详细信息，请参阅[设置邮箱](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)。
+
+在延迟保留时管理邮箱时，请记住以下事项：
+
+- 如果将 DelayHoldApplied 或 DelayReleaseHoldApplied 属性设置为**True** ，并且删除了一个邮箱（或对应的 Office 365 用户帐户），则该邮箱将成为非活动邮箱。 这是因为，如果将某个属性设置为**True**，并在保留时删除邮箱导致非活动邮箱中的邮箱，则认为邮箱处于保留状态。 若要删除邮箱而不使其成为非活动邮箱，必须将这两个属性都设置为**False**。
+
+- 如前所述，如果 DelayHoldApplied 或 DelayReleaseHoldApplied 属性设置为**True**，则会将邮箱视为无限制保留持续时间的保留。 但是，这并不意味着保留邮箱中的*所有*内容。 这取决于设置为每个属性的值。 例如，假设这两个属性都设置为**True** ，因为从邮箱中删除了保留。 然后，仅删除应用于非 Outlook 云数据的延迟保留（通过使用*RemoveDelayReleaseHoldApplied*参数）。 托管文件夹助理下次处理邮箱时，将清除标记为要删除的非 Outlook 项目。 由于 DelayHoldApplied 属性仍设置为**True**，因此不会清除任何标记为要删除的 Outlook 项目。 反之也是如此：如果将 DelayHoldApplied 设置为**False** ，DelayReleaseHoldApplied 设置为**true**，则仅清除标记为删除的 Outlook 项目。
 
 ## <a name="next-steps"></a>后续步骤
 

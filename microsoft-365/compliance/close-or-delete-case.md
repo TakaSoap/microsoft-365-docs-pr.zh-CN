@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+description: " "
+ms.openlocfilehash: 5d8950f2e6164781111465aee8d89eaff92ee958
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191167"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633831"
 ---
 # <a name="close-or-delete-a-case"></a>关闭或删除事例
 
@@ -31,7 +31,7 @@ ms.locfileid: "39191167"
 
 - 该事例仍在安全 & 合规性中心的电子数据展示页面中列出。 已关闭事例的详细信息、保留、搜索和成员将保留。
 
-- 您可以在关闭案例后对其进行编辑。 例如，您可以在高级电子数据展示中添加或删除成员、创建搜索、导出搜索结果和准备搜索结果以供分析。 活动和已关闭的事例之间的主要区别是在关闭事例时，保留功能将关闭。
+- 您可以在关闭案例后对其进行编辑。 例如，您可以在高级电子数据展示中添加或删除成员、创建搜索、导出搜索结果并准备用于分析的搜索结果。 活动和已关闭的事例之间的主要区别是在关闭事例时，保留功能将关闭。
 
 若要关闭事例：
 

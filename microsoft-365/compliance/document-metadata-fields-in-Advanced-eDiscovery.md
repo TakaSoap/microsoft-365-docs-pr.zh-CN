@@ -14,16 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc198bd5aa042cad2aadbe35ae4f19f66effe2bf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074126"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633581"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
-下表列出了高级电子数据展示中的审阅集内的文档的元数据字段。 该表指示元数据字段的名称，该字段是否可以在审阅集中运行查询时进行搜索，是否在查看评审集中的所选文档的文件元数据时显示该字段，以及在文档 a 时是否包含该字段重新导出。
+下表列出了高级电子数据展示中的审阅集内的文档的元数据字段。 该表提供以下信息：
+
+- 元数据字段的名称（在 "**字段名称**" 列中）。
+
+- 运行[审阅集查询](review-set-search.md)（在可搜索的 "**字段名称**" 列中）时可搜索的属性的名称。 空白单元格表示无法在审阅集查询中搜索该字段。
+
+- 导出文档时包括的元数据字段的名称（在 "导出的**字段名称**" 列中）。  空白单元格表示元数据字段不包含在导出的元数据中。
+
+- 在审阅集中查看选定文档的文件元数据时显示的元数据字段的名称（在 "**显示字段名称**" 列中）。 空单元格表示在查看文档的文件元数据时不包含元数据字段。
+
+- "元数据" 字段（在 "说明"**列**中）的说明。
 
 | 字段名 | 可搜索字段名称 | 导出的域名称 | 显示字段名称 | 说明 |
 | :- |  :- |  :- |  :- |  :- |
@@ -35,7 +45,7 @@ ms.locfileid: "37074126"
 | CC | Cc | Email_cc | CC | 邮件类型的 "抄送" 字段。  格式为**DisplayName \<SMTPAddress>**。 |
 | 合规性标签 | ComplianceLabels | Compliance_labels | 合规性标签 | 在 Office 365 中应用的合规性标签。 |
 | 复合路径 | CompoundPath | Compound_path | 复合路径 | 描述项目来源的可读路径。 |
-| Content | Content |  |  | 提取的项的文本。 |
+| 内容 | 内容 |  |  | 提取的项的文本。 |
 | 对话正文 | 对话正文 |  | 对话正文 | 项目的对话正文。 |
 | 对话主题 | 对话主题 |  | 对话主题 | 项目的对话主题。 |
 | 会话 ID | ConversationId | Conversation_ID | 会话 ID | 邮件中的会话 Id。 |
@@ -75,7 +85,7 @@ ms.locfileid: "37074126"
 | 系列 ID | FamilyId | Family_ID | 系列 ID | 系列 Id 将所有项目组合在一起;对于电子邮件，这包括邮件和所有附件;对于文档，这包括文档和任何嵌入项。 |
 | 系列大小 |  | Family_size | 系列大小 | 系列中的文档数。 |
 | 文件相关性分数事例问题1 |  | File_relevance_score_case_issue_1 |  | 来自相关性的文件相关性分数事例问题1。 |
-| File 类 | FileClass | File_class | File 类 | 对于 SharePoint 和 OneDrive 中的内容：**文档**;对于 "Exchange：**电子邮件**" 或 "**附件**" 中的内容。 |
+| File 类 | FileClass | File_class | File 类 | 对于 SharePoint 和 OneDrive 中的内容：**文档**;对于 Exchange： * * 电子邮件或**附件**的内容。 |
 | 文件 ID | FileId | File_ID | 文件 ID | 大小写中唯一的文档标识符。|
 | 文件系统创建日期 |  | File_system_date_created | 文件系统创建日期 | 从文件系统创建的日期（仅适用于非 Office 365 数据）。 |
 | 修改了文件系统日期 |  | File_system_date_modified | 修改了文件系统日期 | 从文件系统修改的日期（仅适用于非 Office 365 数据）。 |
@@ -129,7 +139,7 @@ ms.locfileid: "37074126"
 | 相关性分数 | RelevanceScore |  | 相关性分数 | 基于相关性的文档的相关性分数。 |
 | 相关性标记 | RelevanceTag |  | 相关性标记 | 基于相关性的文档的相关性分数。 |
 | 代表 ID | RepresentativeId |  | 代表 ID | 每个精确副本集的数字标识符。 |
-| Sender | Sender | Email_sender | Sender | 邮件类型的发件人（发件人）域。  格式为**DisplayName \<SmtpAddress>**。 |
+| 发件人 | 发件人 | Email_sender | 发件人 | 邮件类型的发件人（发件人）域。  格式为**DisplayName \<SmtpAddress>**。 |
 | 发件人/作者 | SenderAuthor |  | 发件人/作者 | 由项目的发件人或作者组成的计算字段。 |
 | 发件人域 | SenderDomain | Email_sender_domain | 发件人域 | 发件人的域。 |
 | 发件箱 | 发件箱 | Email_date_sent | 发件箱 | 邮件的发送日期。 |
@@ -149,4 +159,4 @@ ms.locfileid: "37074126"
 ||||||
 
   > [!NOTE]
-  > 若要详细了解直接在 Office 365 中搜索时，可搜索字段的详细信息，请参阅[关键字查询和搜索条件以进行内容搜索](keyword-queries-and-search-conditions.md)
+  > 有关在为高级电子数据展示事例收集数据时搜索 Office 365 内容位置时可搜索属性的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。

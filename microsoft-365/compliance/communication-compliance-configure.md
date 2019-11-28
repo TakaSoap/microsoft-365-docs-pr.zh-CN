@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置通信合规性策略以配置员工通信以供审阅。
-ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
-ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
+ms.openlocfilehash: 24b821158ca0f6d7486d1177256f5b1ce9123479
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38755600"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633621"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>为 Microsoft 365 配置通信合规性（预览）
 
@@ -38,15 +38,15 @@ ms.locfileid: "38755600"
   
 - **步骤1（可选）**：[设置组以实现通信合规性](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    在开始使用通信合规性之前，请确定哪些用户需要查看通信以及谁执行了检查。 如果要开始使用几个用户查看通信合规性的工作方式，则可以跳过 "立即" 设置组。
+    在开始使用通信合规性之前，请确定哪些用户需要查看通信以及谁在进行审阅。 如果要开始使用几个用户查看通信合规性的工作方式，则可以跳过 "立即" 设置组。
 
 - **步骤2（必需）**：[在组织中提供通信合规性](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    将自己添加到**监管审核管理员**角色，以便您可以设置策略。 您还需要创建一个具有**监管审核管理员**、**案例管理**和**审阅**角色的组，以便对具有策略匹配的邮件进行调查和修正操作的人员或组使用这些角色。 分配了这些角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
+    将自己添加到**监管审核管理员**角色，以便您可以设置策略。 您还需要创建一个具有**监管审核管理员**、**案例管理**和**审阅**角色的组，以便对具有策略匹配的邮件执行调查和修正操作的人员或组的角色。 分配了这些角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
 - **步骤3（必需）**：[设置通信合规性策略](#step-3-create-a-communication-compliance-policy-required)
 
-    在 Microsoft 365 合规性中心创建通信合规性策略。 这些策略定义哪些通信将在组织中进行审核，并指定执行审阅的用户。 通信包括电子邮件、Microsoft 团队、Skype for Business 和第三方平台通信（如 Facebook、Twitter 等）。
+    在 Microsoft 365 合规性中心创建通信合规性策略。 这些策略定义哪些通信将在组织中进行审核，并指定谁进行审阅。 通信包括电子邮件、Microsoft 团队、Skype for Business 和第三方平台通信（如 Facebook、Twitter 等）。
 
 - **步骤4（可选）**：[创建员工通知模板](#step-4-create-employee-notice-templates-optional)
 
@@ -54,11 +54,11 @@ ms.locfileid: "38755600"
 
 - **步骤5（可选）**：[测试通信合规性策略](#step-5-test-your-communication-compliance-policy-optional)
 
-    测试通信合规性策略以确保其按预期工作。 一定要确保符合性策略满足您的标准。
+    测试通信合规性策略以确保其按预期工作。 务必确保合规性策略满足标准。
 
 ## <a name="step-1-set-up-groups-for-communication-compliance-optional"></a>步骤1：为通信合规性设置组（可选）
 
- 创建通信合规性策略时，您需要定义哪些用户已查看其通信，以及谁执行了评论。 在策略中，您将使用电子邮件地址来标识个人或用户组。 为简化您的设置，您可以为已查看其通信的用户创建组，并为查看这些通信的用户分组。 如果使用的是组，可能需要多个。 例如，您想要监视两个不同的人员组之间的通信，或者如果您想要指定一个不受监督的组。
+ 创建通信合规性策略时，您需要定义哪些用户已查看其通信，以及谁执行了评论。 在策略中，您将使用电子邮件地址来标识个人或用户组。 为简化您的设置，您可以为已查看其通信的用户创建组，并为查看这些通信的用户分组。 如果使用的是组，可能需要多个。 例如，如果要监视两个不同的人员组之间的通信，或者要指定不受监督的组。
 
 使用下图可帮助您为组织中的通信合规性策略配置组：
 
@@ -117,23 +117,23 @@ ms.locfileid: "38755600"
     如果您选择使用策略向导创建自定义策略，您将：
 
     - 为策略指定名称和说明。 一旦创建了策略，便无法更改策略名称。
-    - 选择要监督的用户或组，包括选择组织中的所有用户、特定用户和组，或者要排除的其他用户和组。 -
+    - 选择要监督的用户或组，包括组织中的所有用户、特定用户和组，或者要排除的其他用户和组。 -
     - 选择策略的审阅者。 审阅者可以是单个用户，也可以是[启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。 所有审阅者都必须在 Exchange Online 上托管邮箱。
     - 选择要扫描的通信通道，包括 Exchange、Microsoft 团队或 Skype for Business。 如果您在 Microsoft 365 中配置了连接器，您还将选择扫描第三方源。
     - 选择要监视的通信方向，包括入站、出站或内部通信。
     - 定义通信合规性策略[条件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以从 "消息地址"、"关键字"、"文件类型" 和 "大小匹配条件" 中进行选择。
-    - 选择是否要包含敏感信息类型。 你可以在此处选择默认和自定义敏感信息类型。 从现有自定义敏感信息类型或自定义关键字词典中选择在 "通信合规性策略" 向导中，如果需要，可以在运行向导之前创建这些项目。 如果需要，还可以在 "通信合规性策略" 向导中创建新的敏感信息类型。
+    - 选择是否要包含敏感信息类型。 你可以在此处选择默认和自定义敏感信息类型。 从 "通信合规性策略向导" 中的现有自定义敏感信息类型或自定义关键字词典中进行选择。 如果需要，可以在运行向导之前创建这些项目。 您还可以在 "通信合规性策略" 向导中创建新的敏感信息类型。
     - 选择是否要启用冒犯性语言模型。 这将检测在电子邮件正文中发送或接收的不正确的语言。
     - 定义要查看的通信百分比。
     - 查看策略选择并创建策略。
 
 5. 使用 "自定义策略" 向导时，选择 "使用模板或**提交**时**创建策略**"。
 
-6. **您的策略已创建**页面将显示有关何时激活策略和捕获通信的指南。
+6. **您的策略已创建**页面将显示有关何时激活策略以及将捕获哪些通信的指南。
 
 ## <a name="step-4-create-employee-notice-templates-optional"></a>步骤4：创建员工通知模板（可选）
 
-如果希望通过向关联的员工发送提醒通知来选择对策略警报做出响应，您需要在您的组织中至少创建一个通知模板。 在作为警报修正过程的一部分进行发送并为每个通信合规性策略创建自定义通知模板之前，"通知模板" 字段是可编辑的。
+如果希望通过向关联的员工发送提醒通知来选择对策略警报做出响应，您需要在您的组织中至少创建一个通知模板。 在将 "通知模板" 字段作为警报修正过程的一部分发送并为每个通信合规性策略创建自定义的通知模板之前，这些字段都是可编辑的。
 
 1. 在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。
 
@@ -153,16 +153,16 @@ ms.locfileid: "38755600"
 
 ## <a name="step-5-test-your-communication-compliance-policy-optional"></a>步骤5：测试通信合规性策略（可选）
 
-创建通信合规性策略后，最好进行测试以确保策略正确地强制实施了您定义的条件。 如果通信合规性策略包含敏感信息类型，您可能还需要[测试数据丢失防护（DLP）策略](create-test-tune-dlp-policy.md)。 请确保为策略激活时间，以便捕获要测试的通信。
+创建通信合规性策略后，最好对其进行测试，以确保策略正确地强制实施了您定义的条件。 如果通信合规性策略包含敏感信息类型，您可能还需要[测试数据丢失防护（DLP）策略](create-test-tune-dlp-policy.md)。 请确保为策略激活时间，以便捕获要测试的通信。
 
 按照以下步骤测试您的通信合规性策略：
 
-1. 打开以您要测试的策略中定义的监督用户身份登录的电子邮件客户端或 Microsoft 团队。
-2. 发送符合通信合规性策略中定义的条件的电子邮件或 Microsoft 团队聊天。 它可以是关键字、附件大小、域等。确保您确定策略中配置的条件设置过于严格或太 lenient。
+1. 打开电子邮件客户端或 Microsoft 团队，同时以您要测试的策略中定义的监督用户的身份登录。
+2. 发送符合通信合规性策略中定义的条件的电子邮件或 Microsoft 团队聊天。 它可以是关键字、附件大小、域等。 请确保您确定策略中配置的条件设置过于严格或太 lenient。
 
     > [!NOTE]
     > 所有源通道中的通信可能需要长达24小时才能在策略中完全处理。
 
-3. 以通信合规性策略中指定的审阅者的形式登录 Microsoft 365。 导航到 "**通信合规性** > **警报**" 以查看策略的警报。
+3. 以通信合规性策略中指定的审阅者的资格登录到 Microsoft 365。 导航到 "**通信合规性** > **警报**" 以查看策略的警报。
 
 4. 使用修正控件修正警报，并验证是否正确解决了警报。

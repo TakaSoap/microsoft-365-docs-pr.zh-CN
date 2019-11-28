@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: 使用本文中的 Windows PowerShell 脚本，可以在 Office 365 或 Microsoft 365 中的合规性中心快速克隆现有的内容搜索。 当您克隆搜索时，将创建一个新的搜索（具有新的名称），其中包含与原始搜索相同的属性。 然后，您可以编辑新的搜索（通过更改关键字查询或日期范围），然后运行它。
-ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: 使用本文中的 Windows PowerShell 脚本，可以在 Office 365 或 Microsoft 365 中的合规性中心快速克隆现有的内容搜索。 在克隆搜索时，将创建一个新的搜索（具有新的名称），其中包含与原始搜索相同的属性。 然后，可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行该搜索。
+ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685265"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633841"
 ---
 # <a name="clone-a-content-search"></a>克隆内容搜索
 
-在 Office 365 或 Microsoft 365 中的合规性中心内创建内容搜索，以搜索大量邮箱或 SharePoint 和 OneDrive for business 网站可能需要一段时间。 如果错误键入 URL，则指定要搜索的网站也很容易出错。 若要避免这些问题，您可以使用本文中的 Windows PowerShell 脚本快速克隆现有的内容搜索。 当您克隆搜索时，会创建一个新的搜索（名称不同），其中包含与原始搜索相同的属性（如内容位置和搜索查询）。 然后，您可以编辑新的搜索（通过更改关键字查询或日期范围）并运行它。
+在 Office 365 或 Microsoft 365 中的合规性中心内创建内容搜索，以搜索多个邮箱或 SharePoint 和 OneDrive for business 网站可能需要一段时间。 如果错误键入 URL，则指定要搜索的网站也很容易出错。 若要避免这些问题，您可以使用本文中的 Windows PowerShell 脚本快速克隆现有的内容搜索。 在克隆搜索时，会创建一个新的搜索（使用不同的名称），其中包含与原始搜索相同的属性（如内容位置和搜索查询）。 然后，可以通过更改关键字查询或日期范围来编辑新的搜索，并运行它。
   
 为什么要克隆内容搜索？
   
@@ -30,9 +30,9 @@ ms.locfileid: "38685265"
     
 - 在创建新的搜索时，不必重新输入大量的内容位置。
     
-- 减小搜索结果的大小;例如，如果您的搜索返回过多要导出的结果，则可以克隆搜索，然后根据日期范围添加搜索条件，以减少搜索结果的数量。
+- 减小搜索结果的大小。 例如，如果您的搜索返回过多要导出的结果，则可以克隆搜索，然后根据日期范围添加搜索条件，以减少搜索结果的数量。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本主题中所述的脚本。
     

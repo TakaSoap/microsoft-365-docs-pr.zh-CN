@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4d74685aec0de4d26a7bd52c3cb53f475ca8490b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3a888458dce090091fbba020d1fa17ec6d56e0f5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074438"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633821"
 ---
 # <a name="close-or-delete-an-investigation"></a>关闭或删除调查
 
 ## <a name="close-an-investigation"></a>结束调查
 
- 在完成调查并采取适当的补救措施之后，您可能希望保留所收集的证据，但请关闭该事例，以便以后能够轻松跟踪引用。 一旦您关闭调查，它仍会在安全 & 合规性中心的 "数据调查" 页面上列出。 已关闭事例的详细信息、保留、搜索和成员将保留。 稍后，您可以重新打开已关闭的调查。
+ 完成调查并采取适当的补救措施后，您可能希望保留所收集的证据，但要关闭该事例，以便将来可以轻松地再次引用它。 一旦您关闭调查，它仍会在安全 & 合规性中心的 "数据调查" 页面中列出。 已关闭事例的详细信息、保留、搜索和成员将保留。 稍后，您可以重新打开已关闭的调查。
 
 要结束调查，请执行以下操作：
 
-1. 在 "**设置**" 选项卡上，单击 "**调查信息**"。
+1. 在 "**设置**" 选项卡上，选择 "**调查信息**"。
 
-2. 单击 "**关闭调查**"。 
+2. 选择 "**关闭调查**"。 
 
 
 ## <a name="delete-an-investigation"></a>删除调查
@@ -40,6 +40,6 @@ ms.locfileid: "37074438"
 
 若要删除调查，请执行以下操作：
 
-1. 在 "**设置**" 选项卡上，单击 "**调查信息**"。
+1. 在 "**设置**" 选项卡上，选择 "**调查信息**"。
 
-2. 单击 "**删除调查**"。 
+2. 选择 "**删除调查**"。 

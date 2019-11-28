@@ -13,18 +13,18 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解管理员如何使用 Exchange Online PowerShell 和 CSV 文件将外部联系人批量导入到全局地址列表。
-ms.openlocfilehash: 272223d9ab61b2c5ae17043cf4523d49da306de9
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 12fc8ec47881ce5cb3dc00a7a646966588bd5cca
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685249"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39630982"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>将外部联系人批量导入到 Exchange Online
 
 **本文适用于管理员。您是否正在尝试将联系人导入您自己的邮箱？请参阅[将联系人导入到 Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-您的公司是否有许多您想要在 Exchange Online 中的共享通讯簿（也称为 "全局地址列表"）中包含的现有业务联系人？ 您是否要将外部联系人添加为通讯组的成员，就像您可以与公司内部的用户进行操作一样？ 如果是这样，您可以使用 Exchange Online PowerShell 和 CSV （逗号分隔值）文件将外部联系人批量导入 Exchange Online。 这是一个包含三个步骤的过程：
+您的公司是否有许多您想要在 Exchange Online 中的共享通讯簿（也称为 "全局地址列表"）中包含的现有业务联系人？ 您是否要将外部联系人添加为通讯组的成员，就像您可以与公司内部的用户进行操作一样？ 如果是这样，您可以使用 Exchange Online PowerShell 和 CSV （逗号分隔值）文件以批量导入外部联系人到 Exchange Online。 这是一个包含三个步骤的过程：
   
 [步骤1：创建包含有关外部联系人的信息的 CSV 文件](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -42,7 +42,7 @@ ms.locfileid: "38685249"
 
 第一步是创建一个 CSV 文件，其中包含有关要导入到 Exchange Online 的每个外部联系人的信息。 
   
-1. 将以下文本复制到记事本中的文本文件，并使用文件名后缀 .csv 将其以 CSV 文件的形式保存到您的桌面。例如，ExternalContacts。
+1. 将以下文本复制到记事本中的文本文件中，并使用文件名后缀 .csv 将其保存到您的桌面上作为 CSV 文件;例如，ExternalContacts。
     
     > [!TIP]
     > 如果您的语言包含特殊字符（例如， **å**、 **ä**和**ö** in 瑞典语），则在记事本中保存文件时，请使用 UTF-8 或其他 Unicode 编码保存 CSV 文件。 
@@ -99,7 +99,7 @@ ms.locfileid: "38685249"
   
 1.  将 PowerShell 连接到您的 Exchange Online 组织。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
-2. 转到在步骤1中保存 CSV 文件的 "桌面" 文件夹;例如`C:\Users\Administrator\desktop`。
+2. 转到在步骤1中保存 CSV 文件的 "桌面" 文件夹;例如， `C:\Users\Administrator\desktop`。
     
 3. 运行以下两个命令，将其他属性从 CSV 文件添加到您在步骤2中创建的外部联系人。
     

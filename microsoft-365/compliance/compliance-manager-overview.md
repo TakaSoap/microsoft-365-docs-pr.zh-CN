@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615612"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633651"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -51,7 +51,7 @@ ms.locfileid: "39615612"
 
 ## <a name="assessments"></a>评估
 
-[评估](working-with-compliance-manager.md#assessments)是容器，允许您根据在 Microsoft 和组织之间共享的职责来组织控制，以评估云服务安全性和合规性风险。 评估可帮助您实施由合规性标准和适用的数据保护标准、法规或法律指定的数据保护安全措施。 它们可帮助您针对选定 Microsoft 云服务的所选行业标准来辨别您的数据保护和合规性状况。 评估通过在与证书标准对应的评估中包含的控制实施完成。
+[评估](working-with-compliance-manager.md#assessments)是允许您组织在 Microsoft 和您的组织之间共享的责任的控制措施，以评估云服务安全性和合规性风险。 评估可帮助您实施由合规性标准和适用的数据保护标准、法规或法律指定的数据保护安全措施。 它们可帮助您针对选定 Microsoft 云服务的所选行业标准来辨别您的数据保护和合规性状况。 评估通过在与证书标准对应的评估中包含的控制实施完成。
 
 默认情况下，合规性管理器将为您的组织创建以下评估：
 
@@ -107,7 +107,7 @@ ms.locfileid: "39615612"
 
 组织中的人员可以使用合规性管理器从其分配的所有评估中查看客户托管的控件。 用户登录合规性管理器并打开“**操作项目**”仪表板时，会显示分配给他们的操作项目列表。 根据分配给用户的合规性管理器角色，他们可以提供实施或测试详细信息，更新状态或分配操作项目。
 
-证书控制通常由一个人实施，并由另一个人测试。 例如，在最初分配给一个人实现实施的操作项目结束后，会向下一个要测试和上载证据的人员分配措施项。 对控制分配具有足够权限的任何用户都可以分配和重新分配操作项目。 这样可以集中管理控制分配以及 implementors 和测试人员之间的操作项目的分散路由。
+证书控制通常由一个人实施，并由另一个人测试。 例如，在最初分配给一个人员以实现实施后，会将这些操作项分配给下一个测试和上载证据的人员。 对控制分配具有足够权限的任何用户都可以分配和重新分配操作项目。 这样可以集中管理控制分配以及 implementors 和测试人员之间的操作项目的分散路由。
 
 ## <a name="permissions"></a>Permissions
 
@@ -118,13 +118,13 @@ ms.locfileid: "39615612"
 1. 从 "最**多**" 下拉菜单中依次选择 "**管理员**" 和 "**设置**"。
 2. 在此处，选择要分配的角色，然后添加要分配给该角色的员工。 然后，用户将能够执行某些操作。
 
-此外，在[Azure Active Directory （AZURE AD）中分配了全局读者角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的用户拥有访问合规性管理器的只读权限;但是，他们无法在合规性管理器中编辑数据或执行任何操作。
+此外，在[Azure Active Directory （AZURE AD）中分配了全局读者角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的用户拥有访问合规性管理器的只读权限。 但是，他们无法在合规性管理器中编辑数据或执行任何操作。
 
-请注意，“**来宾访问**”这一默认角色已不复存在。 必须为每位用户分配一个角色，使其可访问合规性管理器并在其中工作。
+不再存在默认**来宾访问**角色。 必须为每位用户分配一个角色，使其可访问合规性管理器并在其中工作。
   
 ## <a name="manage-evidence"></a>管理证据
 
-合规性管理器可以存储实施任务的证据，以执行客户托管控件的测试和验证。 证据包括文档、电子表格、屏幕截图、图像、脚本、脚本输出文件和其他文件。 合规性管理器还会自动接收遥测并为与安全得分集成的措施项创建证据记录。 作为证据上传到合规性管理器中的任何数据均存储在 Microsoft 云存储站点上的美国。 此数据在位于东南亚和西欧的 Azure 区域之间复制。
+合规性管理器可以存储实施任务的证据，以执行测试和验证客户托管的控件。 证据包括文档、电子表格、屏幕截图、图像、脚本、脚本输出文件和其他文件。 合规性管理器还会自动接收遥测并为与安全得分集成的措施项创建证据记录。 作为证据上传到合规性管理器中的任何数据均存储在 Microsoft 云存储站点上的美国。 此数据在位于东南亚和西欧的 Azure 区域之间复制。
 
 ## <a name="templates"></a>模板
 
@@ -156,7 +156,7 @@ ms.locfileid: "39615612"
 
 合规性管理器与[Microsoft 安全分数](../security/mtp/microsoft-secure-score.md)集成，以自动对同步交办事项的合规性分数应用安全分数积分。 这可在全局操作项或全局操作中进行配置，并提供安全分数的更新。
 
-例如，您对在组织中激活 Azure 权限管理（也适用于与合规性相关的措施项）进行安全相关的要求。 当 Azure 权限管理激活并由安全得分处理时，合规性管理器将接收更新通知，并通过完成信用自动更新措施项的分数。
+例如，您对在组织中激活 Azure 权限管理（也适用于与合规性相关的措施项）进行安全相关的要求。 当 Azure 权限管理激活并按安全分数处理时，合规性管理器会收到更新通知，并且该措施项的得分会自动更新为完成信用。
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 

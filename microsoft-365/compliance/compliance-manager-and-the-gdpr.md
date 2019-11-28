@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0d2edb2f7362fa8e8bea6ae82c417f61072bccff
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074437"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633611"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft 合规性管理器和 GDPR
 
@@ -48,7 +48,7 @@ ms.locfileid: "37074437"
 
 ## <a name="export-a-report-of-account-data-history"></a>导出帐户数据历史记录报告
 
-对于标识的每个用户帐户，您可以生成链接到此帐户的依赖项的报告。 此信息使您可以重新分配打开的操作项或确保对以前上载的证据的访问权限。
+对于标识的每个用户帐户，您可以生成链接到该帐户的依赖项的报告。 此信息使您可以重新分配打开的操作项或确保对以前上载的证据的访问权限。
   
  若要生成并导出报告，请执行以下操作：
   
@@ -69,6 +69,6 @@ ms.locfileid: "37074437"
   
 1. 选择 "**删除**"。
 
-    将显示确认对话框，"*这将删除所选用户的所有控制措施项分配和文档上传历史记录。此操作是永久性的。是否确实要继续？*
+    将显示确认对话框： "*这将删除所选用户的所有控制措施项分配和文档上传历史记录。此操作是永久性的。是否确实要继续？*
 
 2. 若要继续，请选择 **"确定"**，否则选择 "**取消**"。
