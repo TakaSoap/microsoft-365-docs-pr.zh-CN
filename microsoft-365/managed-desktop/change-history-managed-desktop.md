@@ -8,16 +8,43 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369623"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634059"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
 本主题列出了[Microsoft 托管桌面文档](index.yml)中新增和更新的主题。 "已更新" 主题是指那些具有材料附加或更正措施的主题--不列出更正拼写、样式或格式问题等次要修补程序。 您可以通过访问[GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的存储库，随时查看特定提交的历史记录（包括任何更改的详细信息）。
+
+## <a name="november-2019"></a>2019 年 11 月
+新建或更改的主题 | 说明
+--- | ---
+[使用见解](working-with-managed-desktop/insights.md) | 新主题
+[使用情况见解](working-with-managed-desktop/usage-insights.md) | 新主题
+[可靠性见解](working-with-managed-desktop/reliability-insights.md) | 新主题
+[Microsoft 托管桌面设备](service-description/device-list.md) | 更新的主题
+[Microsoft 托管桌面主页](https://docs.microsoft.com/microsoft-365/managed-desktop/) | 更新的主题
+[什么是 Microsoft 托管桌面？](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | 更新的主题
+[让用户做好使用设备的准备](get-started/get-started-devices.md) | 更新的主题
+[服务计划的例外情况](service-description/customizing.md) | 更新的主题
+
+
+## <a name="october-2019"></a>2019 年 10 月
+新建或更改的主题 | 说明
+--- | ---
+[服务计划的例外情况](service-description/customizing.md) | 新主题
+[获取最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的主题
+[Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的主题
+[服务更改和通信](service-description/servicechanges.md) | 新主题
+[自行注册新设备](get-started/register-devices-self.md) | 更新的主题
+[自行注册现有设备](get-started/register-reused-devices-self.md) | 更新的主题
+[Microsoft 托管桌面支持的区域和语言](service-description/regions-languages.md) | 更新的主题
+
+
+
 
 ## <a name="september-2019"></a>2019 年 9 月
 新建或更改的主题 | 说明

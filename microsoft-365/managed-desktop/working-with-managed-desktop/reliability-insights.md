@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f830e01d54aef9065727971533633f8e63bc1214
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 8ecc117b2bc6e7cec3dcf0470a6d3c61ad34adf0
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257030"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634029"
 ---
 # <a name="reliability-insights"></a>可靠性见解
 
@@ -35,5 +35,12 @@ ms.locfileid: "39257030"
 - 该数字代表的受管理设备的百分比
 - 特定问题的总次数
 - 似乎是问题源的软件组件
+- 检测到的问题的类别：
+    - 浏览器（边缘、Chrome、IE）
+    - 未知（非 Microsoft 组件）
+    - 驱动程序（音频、图形或其他驱动程序）
+    - 生产率（可宽延时间、G 套件、Microsoft Office 及其加载项或扩展、团队）
+    - 媒体（图像、音乐或视频应用程序
+    - 安全性（Windows 安全组件）
 - 当前状态为 Microsoft 托管桌面操作调查和 remediates 问题
 

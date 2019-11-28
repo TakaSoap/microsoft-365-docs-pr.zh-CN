@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除（ZAP）是一种电子邮件保护功能，可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件，然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: dd702e88dc2400367330d9cb1b54b5b0017334e4
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 8496887f135e5a2c6496f969d420ae6eaa8f4908
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191227"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631582"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -42,7 +42,7 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
 
 ### <a name="malware-zap"></a>恶意软件 ZAP
 
-对于新检测到的恶意软件，ZAP 将从电子邮件中删除附件，并将邮件正文保留在用户邮箱中。 无论邮件的阅读状态如何，都会删除附件。
+对于新检测到的恶意软件，ZAP 会将整个邮件（包括其附件）移动到恶意软件隔离中。 无论邮件的阅读状态如何，都会移动邮件。 如果我们在动态传递扫描过程中收到邮件的恶意软件信号，则 ZAP 将对邮件执行 "移动到垃圾邮件" 操作。 然后，它将允许动态传递，以完成传递扫描的时间并采取适当的措施。
 
 在恶意软件策略中，默认情况下会启用恶意软件 ZAP。 您可以使用 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的[get-malwarefilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) cmdlet 上的*ZapEnabled*参数禁用恶意软件 ZAP。 还可以通过编辑安全与合规中心中的恶意软件策略来启用或禁用恶意软件 ZAP。
 
@@ -58,7 +58,7 @@ Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但�
 
 垃圾邮件策略中默认启用垃圾邮件 ZAP。 您可以使用 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) Cmdlet 的*SpamZapEnabled*参数禁用垃圾邮件 ZAP。
 
-###<a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>网络钓鱼和垃圾邮件 ZAP 要求、排除和通知
+### <a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>网络钓鱼和垃圾邮件 ZAP 要求、排除和通知
 
 > [!IMPORTANT]
 > 以前的*ZapEnabled* cmdlet 参数控制了网络钓鱼和垃圾邮件 ZAP 将**弃用2020年2月1日**。 如果你已编写使用 ZapEnabled 参数的任何脚本，我们建议将其更新为使用 SpamZapEnabled 和 PhishZapEnabled。 在过渡期内，所有3个参数（ZapEnabled、PhishZapEnabled 和 SpamZapEnabled）都将通过 cmdlet 提供。 在通过 UI 或 PowerShell 显式设置之前，PhishZapEnabled 和 SpamZapEnabled 将显示 ZapEnabled 参数中的继承值。 一旦设置了新参数，它们就不再从 ZapEnabled 参数继承。 弃用后设置 ZapEnabled 将对 PhishZapEnabled 或 SpamZapEnabled 属性没有任何影响，ZapEnabled 将从 cmdlet 中的参数列表中删除。
@@ -97,7 +97,7 @@ Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEna
 
 有关语法和参数的详细信息，请参阅[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)。
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>如果将合法邮件移动到 "垃圾邮件" 文件夹中，会发生什么情况？
   

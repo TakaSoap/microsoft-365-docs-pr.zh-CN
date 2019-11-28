@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 70be19947e31d8c2b918d12887d63b1b360cf37b
-ms.sourcegitcommit: 3df6b6092542d466661c0fa08b7bfe7cec441b55
+ms.openlocfilehash: f46f5164340ec257a056a2f31bec8f846bb4a54a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254371"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634049"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
@@ -25,7 +25,7 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 此处的设备链接仅供你参考。 如果要订购设备，请与商业渠道联系人合作，以确保选择正确的配置。 在此表中，*存档日期*是这些模型将受较短 Microsoft 托管桌面服务生命周期控制的日期;在此日期之后载入的任何此类设备都不会从 Microsoft 托管桌面收到完整的三年期支持。 存档设备也在[Microsoft 托管桌面存档设备](archived-device-list.md)中列出。 "*退休日期*" 是 Microsoft 托管桌面根本不支持此模型将不再受 Microsoft 托管桌面支持的日期。 在该日期，将从 Microsoft 托管桌面中删除此模型的所有注册设备，而不管它们何时注册都是如此。
 
 >[!NOTE]
->可以随时将设备添加到此表中，但我们将为影响存档或退休日期的任何更改提供90天通知。
+>可以随时将设备添加到此表中，但我们将为影响存档或退休日期的任何更改提供90天通知。 使用**\*** 最近添加的设备进行标记。
 
 
 **Microsoft 托管桌面设备**
@@ -38,8 +38,8 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 | [Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 2020年1月9日  | 2023年1月9日  |
 | [Dell Latitude 7200 2-1/7300/7400](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | 5月1日，2021  | 5月1日，2024  |
 | [Dell Latitude 7390 7390 2-in-1/7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM   | 需要 IR 相机 | 2020年1月9日 | 2023年1月9日 |
-| [HP EliteBook 830/840/850 G6 笔记本电脑](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
-| [HP EliteBook x360 830 G6 笔记本电脑](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
+| **\*[HP EliteBook 830/840/850 G6 笔记本电脑](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features)** | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
+| **\*[HP EliteBook x360 830 G6 笔记本电脑](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc)** | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
 | [HP 精英 x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 带有5VS03AV 的 SKU，需要 IR 相机 | 5月14日，2020 | 5月14日，2023 |
 | [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | 5月14日，2020 | 5月14日，2023 |
 | [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | 10月23日，2020 | 10月23日，2023 |

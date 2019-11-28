@@ -6,15 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f1d1deb031d26f9dec687b73be86ec8a2491a50
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256859"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634019"
 ---
 # <a name="usage-insights"></a>使用情况见解
-此视图提供 Microsoft 托管桌面设备的使用指标。 
+此视图提供 Microsoft 托管桌面设备的使用指标。 出于这些目的，如果应用程序正在运行且处于焦点，则会被视为 "正在使用中"。
 
 若要查看使用率数据，请选择 "**使用率**" 选项卡。
 
