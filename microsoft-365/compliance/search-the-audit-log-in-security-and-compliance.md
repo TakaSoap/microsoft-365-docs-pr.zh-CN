@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39233515"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634039"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -58,6 +58,8 @@ ms.locfileid: "39233515"
 - Microsoft 工作区分析中的分析员和管理员活动
 
 - Microsoft PowerApps 中的用户和管理员活动
+
+- Microsoft Forms 中的用户和管理员活动
 
 ## <a name="before-you-begin"></a>开始之前
 
@@ -125,7 +127,9 @@ ms.locfileid: "39233515"
   |SharePoint Online 和 OneDrive for Business|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |工作区分析|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Yammer||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  ||||
 
 - Azure Active Directory (Azure AD) 是 Office 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 Microsoft 365 管理中心或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
 
@@ -302,7 +306,7 @@ ms.locfileid: "39233515"
 |[高级电子数据展示活动](#advanced-ediscovery-activities)|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Yammer 活动](#yammer-activities)|
 |[Microsoft Flow 活动](#microsoft-flow-activities)|[Microsoft PowerApps 活动](#microsoft-powerapps)|[Microsoft Stream 活动](#microsoft-stream-activities)|
-[Exchange 管理员活动](#exchange-admin-audit-log)|||
+|[Microsoft Forms 活动](#microsoft-forms-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -776,6 +780,43 @@ ms.locfileid: "39233515"
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream 活动
 
 可以在审核日志中搜索 Microsoft Stream 内的活动。 这些活动包括用户执行的视频活动、组频道活动和管理员活动，例如管理用户、管理组织设置和导出报告。 有关这些活动的说明，请参阅 [Microsoft Stream 中的审核日志](https://docs.microsoft.com/stream/audit-logs)的“Microsoft Stream 中记录的活动”部分。
+
+### <a name="microsoft-forms-activities"></a>Microsoft Forms 活动
+
+下表列出了 Microsoft Forms 中记录在 Office 365 审核日志中的用户和管理员活动。 Microsoft Forms 是用于收集分析数据的表单/测验/调查工具。 
+
+在下面的说明中可以看到，一些操作包含其他活动参数。
+
+|**友好名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+|已创建批注|CreateComment|表单所有者向测验添加批注或分数。|
+|已创建表单|CreateForm|表单所有者创建一个新表单。|
+|已编辑表单|EditForm|表单所有者编辑表单，如创建、删除或编辑问题。 <br><br>属性 EditOperation:string 表示编辑操作名称。 可能的操作有：CreateQuestion、CreateQuestionChoice、DeleteQuestion、DeleteQuestionChoice、DeleteFormImage、DeleteQuestionImage、UpdateQuestion、UpdateQuestionChoice、UploadFormImage/Bing/Onedrive、UploadQuestionImage 和 ChangeTheme。  <br><br>大多数操作名称都一目了然。 <br><br>FormImage 包含表单中用户可上传图像的任何位置，例如在查询中或作为背景主题。|
+|已移动表单|MoveForm|表单所有者移动表单。 <br><br>属性 DestinationUserId:string 表示移动表单的人员的用户 ID。 属性 NewFormId:string 是新复制的表单的新 ID。|
+|已删除表单|DeleteForm|表单所有者删除表单。 这包括 SoftDelete（使用删除选项并将表单移动到回收站）和 HardDelete（清空回收站）。|
+|已查看表单（设计时）|ViewForm|表单所有者打开现有表单进行编辑。|
+|已预览表单|PreviewForm|表单所有者使用“预览”功能预览表单。|
+|已导出表单|ExportForm|表单所有者将结果导出到 Excel。 <br><br>属性 ExportFormat:string 表示 Excel 文件是下载还是在线文件。|
+|已允许共享表单以进行复制|AllowShareFormForCopy|表单所有者创建模板链接以便与其他用户共享表单。 当表单所有者通过单击生成模板 URL 时，将记录此事件。|
+|不允许共享表单以进行复制|DisallowShareFormForCopy|表单所有者删除模板链接。|
+|已添加表单共同创作|AddFormCoauthor|用户使用协作链接来帮助设计/查看响应。 当用户使用协作 URL 时（而不是首次生成协作 URL 时），将记录此事件。|
+|已删除表单共同创作|RemoveFormCoauthor|表单所有者删除协作链接。|
+|已查看响应页面|ViewRuntimeForm|用户已打开响应页面以进行查看。 无论用户是否提交响应，都将记录此事件。|
+|已创建响应|CreateResponse|类似于接收新响应。  用户提交了对表单的响应。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
+|已更新响应|UpdateResponse|表单所有者更新了测验的批注或分数。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
+|已删除所有响应|DeleteAllResponses|表单所有者删除所有响应数据。|
+|已删除响应|DeleteResponse|表单所有者删除一个响应。 <br><br>属性 ResponseId:string 表示所删除的响应。|
+|已查看多个响应|ViewResponses|表单所有者查看聚合的响应列表。 <br><br>属性 ViewType:string 表示表单所有者是在查看详细还是聚合数据|
+|已查看单个响应|ViewResponse|表单所有者查看特定响应。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
+|已创建摘要链接|GetSummaryLink|表单所有者创建摘要结果链接以共享结果。|
+|已删除摘要链接|DeleteSummaryLink|表单所有者删除摘要结果链接。|
+|已更新表单钓鱼状态|UpdatePhishingStatus|无论是否更改了最终安全状态（例如，表单现为“已关闭”或“已打开”状态），只要内部安全状态的详细信息值发生更改，就会记录此事件。 这意味着可能会在最终安全状态未更改的情况下看到重复的事件。|
+|已发送 Forms Pro 邀请|ProInvitation|用户通过单击激活 Pro 试用版。|
+|已更新表单设置|UpdateFormSetting|表单所有者更新表单设置。 <br><br>属性 FormSettingName:string 表示设置的名称和新值。|
+|已更新用户设置|UpdateUserSetting|表单所有者更新用户设置。 <br><br>属性 UserSettingName:string 表示设置的名称和新值|
+|已列出表单|ListForms|表单所有者正在查看表单列表。 <br><br>属性 ViewType:string 表示表单所有者正在使用的查看视图：“所有表单”、“与我共享”或“组表单”|
+|已提交响应|SubmitResponse|用户提交对表单的响应。 <br><br>属性 IsInternalForm:boolean 表示响应者是否与表单所有者位于同一组织中。|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志
 

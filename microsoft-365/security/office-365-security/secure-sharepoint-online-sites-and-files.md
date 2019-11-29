@@ -19,17 +19,15 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 SharePoint Online 和 Office 365 中文件的配置建议。
-ms.openlocfilehash: 15b67d2569f2c8ceafb16973ae2bf6862ebb9ded
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: e724370c439f8330b28c32fc36d2ea39b303f6ec
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38311106"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631303"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
- **摘要：** 用于保护 SharePoint Online 和 Office 365 中的文件的配置建议。
-  
 本文就如何配置 SharePoint Online 团队网站并在平衡安全性与易于协作的同时如何进行文件保护方面提供了相关建议。本文定义了四个不同的配置，首先是具有最开放共享策略的组织内的公共网站。每个额外配置均表示一个有意义的保护设置，但对资源的访问和协作被限定为一组相关用户。以这些建议为出发点，并调整配置以满足组织的需要。
   
 本文中的配置符合 Microsoft 针对数据、标识和设备的三层保护的建议：
@@ -62,7 +60,7 @@ ms.locfileid: "38311106"
     
 - 为敏感和高度机密保留标签配置[数据丢失防护](../../compliance/data-loss-prevention-policies.md) (DLP) 策略，在其试图向组织外部发送这些类型的文件时警告或阻止用户。
     
-- 如果方案需要，可以使用[敏感度标签](../../compliance/sensitivity-labels.md)来通过加密和权限来保护高度机密文件。 对于 Azure 信息保护客户，你可以在 Microsoft 365 合规中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 Azure 信息保护标签和 Office 365 敏感度标签彼此完全相互兼容。 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。并非所有客户都需要此级别的保护。 
+- 如果方案需要，可以使用[敏感度标签](../../compliance/sensitivity-labels.md)来通过加密和权限来保护高度机密文件。 对于 Azure 信息保护客户，你可以在 Microsoft 365 合规中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 Azure 信息保护标签和 Office 365 敏感度标签彼此完全相互兼容。 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。 并非所有客户都需要这一级别的保护。 
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和 OneDrive for Business 的租户范围内设置
 
@@ -117,20 +115,20 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 ||**基线保护 #1** <br/> |**基线保护 #2** <br/> |**敏感保护** <br/> |**高度机密** <br/> |
-|描述  <br/> |组织内的开放式发现和协作。  <br/> |允许在组外部共享的专用网站和组。  <br/> |独立网站，该网站中的访问级别由特定组中的成员身份进行定义。仅允许网站成员进行共享。DLP 在用户试图向组织外发送文件时警告用户。  <br/> |启用 Azure 信息保护的独立网站和文件及权限。DLP 阻止用户向组织外发送文件。  <br/> |
+|描述  <br/> |组织内的开放式发现和协作。  <br/> |允许在组外部共享的专用网站和组。  <br/> |仅允许网站成员进行共享的专用网站。DLP 在用户试图向组织外发送文件时警告用户。  <br/> |具有敏感标签的专用网站和文件加密及权限。 DLP 阻止用户向组织外发送文件。  <br/> |
 |专用或公用团队网站  <br/> |公用  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |谁可以访问？  <br/> |组织中的任何人，包括 B2B 用户和来宾用户。  <br/> |仅限网站成员。其他人可以请求访问。  <br/> |仅限网站成员。其他人可以请求访问。  <br/> |仅限成员。其他人无法请求访问。  <br/> |
 |网站级共享控制  <br/> |允许与任何人共享。默认设置。  <br/> |允许与任何人共享。默认设置。  <br/> |成员无法共享对网站的访问权限。  <br/> 非成员可以请求访问该网站，但需要由网站管理员对这些请求进行寻址。  <br/> |成员无法共享对网站的访问权限。  <br/> 非成员无法请求访问网站或内容。  <br/> |
 |网站级别的设备访问控制  <br/> |无任何额外控制。  <br/> |无任何额外控制。  <br/> |防止用户将文件下载到不符合或未加入域的设备。使所有其他设备仅限浏览器访问。  <br/> |阻止将文件下载到不符合或未加入域的设备。  <br/> |
 |保留标签  <br/> |内部公用  <br/> |Private  <br/> |敏感  <br/> |高度机密  <br/> |
 |DLP 策略  <br/> |||在用户向组织外发送标记为“敏感”的文件时进行警告。  <br/> 要阻止外部共享敏感数据类型，如信用卡号或其他个人数据，可以针对这些数据类型（包括所配置的自定义数据类型）配置其他 DLP 策略。  <br/> |阻止用户向组织外发送标记为“高度机密”的文件。允许用户通过提供他们与之共享的对象等理由来替代此行为。  <br/> |
-|敏感度标签  <br/> ||||使用敏感度标签自动加密和授予文件权限。 敏感度标签使用 Azure 信息保护来加密文件。 此保护将始终伴随文件，以防其泄露。  <br/> Office 365 无法读取使用 Azure 信息保护加密的文件。此外，DLP 策略只能与元数据（包括标签）一起使用，但并不能处理这些文件的内容（如文件内的信用卡号）。  <br/> |
+|敏感度标签  <br/> ||||使用敏感度标签自动加密和授予文件权限。 此保护将始终伴随文件，以防其泄露。  <br/> Office 365 无法读取使用敏感度标签加密的文件。 此外，DLP 策略只适用于元数据（包括标签），但并不适用于这些文件的内容（如文件内的信用卡号）。  <br/> |
    
 有关如何部署此解决方案中四种不同类型的 SharePoint Online 团队网站的步骤，请参阅[部署具有三层保护的 SharePoint Online 网站](../../compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)。 
   
 ## <a name="office-365-retention-labels"></a>Office 365 保留标签
 
-对于具有敏感数据的环境，建议使用保留标签。 在配置和发布保留标签后：
+对于具有敏感和高度机密数据的环境，建议使用保留标签。 在配置和发布保留标签后：
   
 - 可以将默认标签应用于 SharePoint Online 团队网站中的文档库，以便该库中的所有文档都能获取默认标签。 
     
@@ -158,16 +156,16 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
   
 ## <a name="sensitivity-labels"></a>敏感度标签 
 
-如果你的安全方案需要保护，则可以使用敏感度标签应用与文件如影随形的保护。 Microsoft 365 合规中心内的敏感度标签与 Azure 信息保护标签是相同的。 对于此解决方案，建议使用作用域内 Azure 信息保护策略和“高度机密”标签的子标签来加密需要最高级别安全性保护的文件并授予相应权限。 
+如果你的安全方案需要保护，则可以使用敏感度标签应用与文件如影随形的保护。 Microsoft 365 合规中心内的敏感度标签与 Azure 信息保护标签是相同的。 对于此解决方案，建议使用敏感度标签或高度机密敏感度标签的子标签来加密需要最高级别安全性保护的文件并授予相应权限。 
   
-请注意，将 Azure 信息保护加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。 共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。 DLP 策略只适用于元数据（包括保留标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
+请注意，将敏感度标签加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。 共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。 DLP 策略只适用于元数据（包括保留标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
 
 有关详细信息，请参阅[敏感度标签概述](../../compliance/sensitivity-labels.md)。
 
     
-### <a name="adding-permissions-for-external-users"></a>添加外部用户的权限
+### <a name="adding-permissions-for-external-users"></a>为外部用户添加权限
 
-可通过两种方式授予使用 Azure 信息保护进行保护的文件外部用户访问权限。在这两种情况下，外部用户均须具有 Azure AD 帐户。如果外部用户不是使用 Azure AD 的组织的成员，他们可以通过使用此注册页面以个人身份获得 Azure AD 帐户：[https://aka.ms/aip-signup](https://aka.ms/aip-signup)。
+可通过两种方式授予使用敏感度标签进行保护的文件的外部用户访问权限。 在这两种情况下，外部用户均须具有 Azure AD 帐户。 如果外部用户不是使用 Azure AD 的组织的成员，他们可以通过使用此注册页面以个人身份获得 Azure AD 帐户：[https://aka.ms/aip-signup](https://aka.ms/aip-signup)。
   
 - 将外部用户添加到用于配置标签保护的 Azure AD 组
     
@@ -177,9 +175,9 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
     
      你可以添加组织（例如 Fabrikam.com）、Azure AD 组（如组织内的财务组）中的所有用户或单个用户。例如，可以将监管机构的外部团队添加到标签保护中。使用此方法，可仅向在外部实体添加到保护后使用标签进行保护的文件授予权限。
     
-### <a name="deploying-and-using-azure-information-protection"></a>部署并使用 Azure 信息保护
+### <a name="deploying-and-using-a-sensitivity-label"></a>部署和使用敏感度标签
 
-有关配置此解决方案中的 Azure 信息保护的步骤，请参阅[使用 Azure 信息保护来保护 SharePoint Online 文件](../../compliance/protect-sharepoint-online-files-with-azure-information-protection.md)。
+有关在此解决方案中配置敏感度标签的步骤，请参阅[使用敏感度标签保护 SharePoint Online 文件](../../compliance/protect-sharepoint-online-files-with-sensitivity-label.md)。
   
 
 ## <a name="next-step"></a>后续步骤

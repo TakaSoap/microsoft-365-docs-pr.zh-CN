@@ -13,19 +13,19 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: 在 Office 365 中，可使用保留标签为组织实现保留计划。记录管理者或合规部主管可能需要创建和发布数百个保留标签。为此，可使用安全与合规中心 UI，但一次只能创建一个保留标签，这样既费时又低效。使用下面的脚本和 .csv 文件，可批量创建和发布保留标签及保留标签策略。首先，在 Excel 中创建保留标签列表和保留标签策略列表。然后，使用 PowerShell 批量创建这些列表中的保留标签和保留标签策略。这样就可以更轻松地一次性创建和发布保留计划所需的全部保留标签。
-ms.openlocfilehash: 2be7c2251a3a35f32ff9754134cca1f5958b447a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: 在 Office 365 中，可使用保留标签为组织实施保留计划。 使用提供的脚本和 .csv 文件，可通过 PowerShell 批量创建并发布保留标签和保留标签策略。
+ms.openlocfilehash: b2bf7f4a4934e1c5b0c88005e586dd6b0d38e3f9
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708042"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631592"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 批量创建和发布保留标签
 
 在 Office 365 中，可使用保留标签为组织实现保留计划。记录管理者或合规部主管可能需要创建和发布数百个保留标签。为此，可使用安全&amp;合规中心 UI，但一次只能创建一个保留标签，这样既费时又低效。
   
-使用下面的脚本和 .csv 文件，可批量创建和发布保留标签及保留标签策略。首先，在 Excel 中创建保留标签列表和保留标签策略列表。然后，使用 PowerShell 批量创建这些列表中的保留标签和保留标签策略。这样就可以更轻松地一次性创建和发布保留计划所需的全部保留标签。
+使用以下提供的脚本和 .csv 文件，可批量创建保留标签并发布保留标签策略。 首先在 Excel 中创建保留标签列表和保留标签策略列表，然后使用 PowerShell 在这些列表中批量创建保留标签和保留标签策略。 这样可更轻松地一次性创建和发布保留计划所需的所有保留标签。
   
 若要详细了解保留标签，请参阅[标签概述](labels.md)。
   
@@ -69,7 +69,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
     
 - 如果 .csv 文件中有保留标签策略与现有保留标签策略同名，脚本会跳过创建此保留标签策略。原则是不创建重复保留标签策略。
     
-- 脚本仅发布手动应用于内容的保留标签。此脚本不支持自动应用于内容的保留标签。
+- 该脚本仅发布手动应用于内容的保留标签。 此脚本不支持自动应用于内容的保留标签。
     
 - 如果更改或重命名列标题，脚本会失败。脚本要求 .csv 文件必须采用本文中的格式。
     

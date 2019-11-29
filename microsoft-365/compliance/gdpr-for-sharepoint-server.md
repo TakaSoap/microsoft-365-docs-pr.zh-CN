@@ -8,20 +8,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解如何解决本地 SharePoint Server 中的 GDPR 要求。
-ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dba20f2f85bc9a474b39e427ed2628a2f9c9f437
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074086"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39625377"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>适用于 SharePoint Server 的 GDPR
 
-作为保护个人信息的一部分，建议进行以下操作：
+应用于：
+- SharePoint Server 2013
+- SharePoint Server 2016
+- SharePoint Server 2019
+
+作为保护个人信息的一部分，我们建议如下：
 
 -   使用 Azure 信息保护对数据进行分类。
 
--   在最低特权配置中运行 SharePoint Server。如需详细信息，请参阅[在 SharePoint Server 中规划最低权限管理](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration)和 [SharePoint Server 的安全性](https://docs.microsoft.com/zh-CN/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server)。
+-   在最低特权配置中运行 SharePoint Server。如需详细信息，请参阅[在 SharePoint Server 中规划最低权限管理](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration)和 [SharePoint Server 的安全性](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server)。
 
 -   [在服务器上启用 BitLocker 加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server)。
 
@@ -35,7 +40,7 @@ ms.locfileid: "37074086"
 
 对于文件共享和 SharePoint 站点和库，推荐的方法包括下列步骤：
 
-1.  **[安装并配置 Azure 信息保护扫描程序。](https://docs.microsoft.com/zh-CN/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[安装并配置 Azure 信息保护扫描程序。](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   决定要使用的敏感数据类型。
 
@@ -65,7 +70,7 @@ ms.locfileid: "37074086"
 
 如果对敏感数据应用标签，请务必使用未配置保护的标签。保护包括可阻止服务检测文件中的敏感数据的加密。
 
-有关使用 Azure 信息保护扫描程序查找和标记个人数据的详细信息，请参阅 [Microsoft GDPR 数据发现工具包](http://aka.ms/gdprpartners) (http://aka.ms/gdprpartners))。
+有关使用 Azure 信息保护扫描程序查找和标记个人数据的详细信息，请参阅 [Microsoft GDPR 数据发现工具包](https://aka.ms/gdprpartners) (https://aka.ms/gdprpartners))。
 
 有关配置条件扫描程序和使用 Office 365 数据丢失防护 (DLP) 敏感信息类型的信息，请参阅[如何为 Azure 信息保护的自动推荐分类配置条件](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification)。请注意，新的 Office 365 敏感信息类型不会立即可供扫描程序使用，并且自定义敏感信息类型不能与扫描程序一起使用。
 
@@ -85,7 +90,7 @@ ms.locfileid: "37074086"
 
 ### <a name="uls-logs"></a>ULS 日志
 
-SharePoint Server 中的统一日志记录服务 (ULS) 和使用情况日志记录可跟踪各种系统功能并包含用户信息。ULS 日志和使用情况日志为文本文件，可使用各种搜索工具进行搜索。[Merge-SPLogFile PowerShell cmdlet](https://docs.microsoft.com/zh-CN/powershell/module/sharepoint-server/merge-splogfile) 提供了一种从场中多台服务器上的 ULS 日志中返回记录的方式。
+SharePoint Server 中的统一日志记录服务 (ULS) 和使用情况日志记录可跟踪各种系统功能并包含用户信息。ULS 日志和使用情况日志为文本文件，可使用各种搜索工具进行搜索。[Merge-SPLogFile PowerShell cmdlet](https://docs.microsoft.com/powershell/module/sharepoint-server/merge-splogfile) 提供了一种从场中多台服务器上的 ULS 日志中返回记录的方式。
 
 考虑将日志保留策略设置为业务目的所需的最小值。有关如何在 SharePoint Server 中配置日志记录的信息，请参阅[在 SharePoint Server 中配置诊断日志记录](https://docs.microsoft.com/SharePoint/administration/configure-diagnostic-logging)。
 

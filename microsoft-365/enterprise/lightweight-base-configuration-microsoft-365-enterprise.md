@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 根据本测试实验室指南，可以创建轻型测试环境来测试 Microsoft 365 企业版。
-ms.openlocfilehash: fce612000fac79fe9552fa9882d6c48fdacda1c2
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694119"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202303"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
@@ -55,47 +55,19 @@ ms.locfileid: "38694119"
 
 1. 在计算机上打开 Internet 浏览器，转到 [https://aka.ms/e5trial](https://aka.ms/e5trial)。
     
-2. 在“欢迎，很高兴认识你”**** 页上，请指定：
-    
-  - 你的实际位置
-    
-  - 你新的 Microsoft 帐户的名字和姓氏
-    
-  - 你新的电子邮件帐户地址
-    
-  - 业务电话号码
-    
-  - 你虚构的公司名称
-    
-  - 规模达 250-999 人的组织
-    
-3. 单击“只需再执行一步”****。
-    
-4. 在“**创建你的用户 ID**”页上，基于你新的电子邮件地址、@ 符号之后你的虚构公司（删除名称中的所有空格）键入用户名，然后为此新的 Office 365 帐户键入密码（两次）。
-    
-    将你键入的密码记录在安全的位置。
-    
-    在此记录你的虚构公司名称，将其称为“组织名称”****：![](./media/Common-Images/TableLine.png)
-    
-5. 单击“创建我的帐户”****。
-    
-6. 在“证明你不是机器人”**** 页上，键入可发短信的手机号码，然后单击“给我发短信”****。
-    
-7. 键入短信中收到的验证代码，然后单击“下一步”****。
-    
-8. 在此记录登录页面 URL（选择并复制）：![](./media/Common-Images/TableLine.png)
-    
-9. 在此记录用户 ID（选择并复制）：![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    此值将被称为“Office 365 全局管理员名称”****。
-    
-10. 看到“你已准备就绪”**** 时，请单击它。
-    
-11. 在下一页，等到 Office 365 完成设置并且显示所有标题。
-    
-你应可看到 Office 365 门户主页，可从该页访问 Office 服务和 Microsoft 365 管理中心。
+2. 在“感谢选择 Office 365 E5”**** 页面上，指定第 1 步中的新电子邮件帐户地址。
+3. 在跟踪订阅过程的第 2 步中，键入请求的信息，然后执行验证。
+4. 在第 3 步中，依次键入组织名称和将成为该订阅的全局管理员的帐户名称。 
+5. 在第 4 步中，在此记录登录页面（选择并复制）：![](./media/Common-Images/TableLine.png) 
+6. 在此记录用户 ID：![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+   将你键入的密码记录在安全的位置。
+   此值将被称为“Office 365 全局管理员名称”****。
+8. 选择“转到设置”****。
+9. 在 Office 365 E5 设置中，单击邮件的“继续使用 organization **.onmicrosoft.com 并登录”*，* 然后单击“退出**，**稍后再继续”。**
+
+你应当查看 Microsoft 365 管理中心。
   
-我们为你创建了 Office 365 的试用版订阅，以便你的开发/测试环境具有与你当前拥有的任何付费版订阅分开的 Azure AD 租户。 这样分开意味着你可在测试租户中添加和删除用户和组，而不影响生产订阅。
+我们为你创建了 Office 365 的试用版订阅，以便你的测试环境具有与你当前拥有的任何付费版订阅分开的 Azure AD 租户。 这样分开意味着你可在测试租户中添加和删除用户和组，而不影响生产订阅。
     
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>第 2 阶段：配置 Office 365 试用版订阅
 
@@ -103,7 +75,7 @@ ms.locfileid: "38694119"
   
 按照[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) 中的说明，使用计算机中的 Azure Active Directory PowerShell for Graph 模块连接到 Office 365 订阅。
     
-在“Windows PowerShell 凭据请求”对话框中，键入 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码。
+在“Windows PowerShell 凭据请求”**** 对话框中，键入 Office 365 全局管理员名称（示例：jdoe@contosotoycompany.onmicrosoft.com）和密码。
   
 填写组织名称（示例：contosotoycompany）、你所在位置的两位字符的国家/地区代码以及通用帐户密码，然后 PowerShell 提示符中运行以下命令：
 
@@ -139,19 +111,19 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 > [!NOTE]
-> 此处使用公用密码旨在自动配置开发/测试环境，简化配置过程。 显然，对于生产订阅，这是非常不鼓励的。 
+> 此处使用公用密码旨在自动配置测试环境，简化配置过程。 显然，对于生产订阅，这是非常不鼓励的。 
 
 ### <a name="record-key-information-for-future-reference"></a>记录关键信息供将来参考
 
-不妨打印这篇文章，以便记录在 30 天的 Office 365 试用版订阅期内需要对此环境使用的特定信息。 可以轻松地将该订阅的试用期再延长 30 天。 对于永久性开发/测试环境，请创建一个包含单独 Azure AD 租户和少量许可证的新付费订阅。
+不妨打印这篇文章，以便记录在 30 天的 Office 365 试用版订阅期内需要对此环境使用的特定信息。 可以轻松地将该订阅的试用期再延长 30 天。 对于永久性测试环境，请创建一个包含单独 Azure AD 租户和少量许可证的新付费订阅。
 
 请记录以下值：
   
-- Office 365 全局管理员名称：![](./media/Common-Images/TableLine.png).onmicrosoft.com（在第 2 阶段的第 9 步中）
+- Office 365 全局管理员名称：![](./media/Common-Images/TableLine.png).onmicrosoft.com（在第 1 阶段的第 6 步中）
     
     此外，还应将此帐户的密码记录在安全位置。
     
-- 试用订阅组织名称：![](./media/Common-Images/TableLine.png)（在第 2 阶段的第 4 步中）
+- 试用订阅组织名称：![](./media/Common-Images/TableLine.png)（在第 1 阶段的第 4 步中）
     
 - 要列出 User 2、User 3、User 4 和 User 5 的帐户，从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
     
@@ -172,9 +144,9 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
     此外，在安全位置记录这些帐户的公用密码。
    
 
-### <a name="using-an-office-365-devtest-environment"></a>使用 Office 365 开发/测试环境
+### <a name="using-an-office-365-test-environment"></a>使用 Office 365 测试环境
 
-如果你只需要一个 Office 365 开发/测试环境，则可以在此处停止。 
+如果你只需要一个 Office 365 测试环境，则可以在此处停止。 
 
 有关同时适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。
   
@@ -182,32 +154,34 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 在该阶段中，可注册 Microsoft 365 E5 试用版订阅，并将其添加到 Office 365 E5 试用版订阅所在的组织中。
   
-首先，请添加 Microsoft 365 E5 试用版订阅并向全局管理员帐户分配一个 Microsoft 365 许可证。
+首先，请添加 Microsoft 365 E5 试用版订阅并向全局管理员帐户分配一个新的 Microsoft 365 许可证。
   
 1. 通过 Internet 浏览器的专用实例，使用全局管理员帐户凭据登录 [https://admin.microsoft.com](https://admin.microsoft.com) 上的 Microsoft 365 管理中心。
     
 2. 在“**Microsoft 365 管理中心**”页面上的左侧导航栏中，单击“**计费 > 购买服务**”。
     
-3. 在“**购买服务**”页面上，找到“**Microsoft 365 E5**”项目。 将鼠标指针悬停在该项目上方并单击“**开始免费试用**”。
+3. 在“采购服务”**** 页面上，依次单击“Microsoft 365 E5”**** 和“获取免费试用”****。
 
-4. 在“**Microsoft 365 E5 试用版**”页面上，选择接收短信或通话，输入你的电话号码，然后单击“**发短信给我**”或“**打电话给我**”。
+4. 在“**Microsoft 365 E5 试用版**”页面上，选择接收短信或通话，输入你的电话号码，然后单击“**发短信给我**”或“**打电话给我**”。 执行验证。
 
 5. 在“确认订单”页上，单击“立即试用”********。
 
 6. 在“订单签收”页中，单击“继续”********。
 
-7. 在 Microsoft 365 管理中心中，单击“**活动用户**”，然后单击管理员帐户。
+7. 在“Microsoft 365 管理中心”中，单击“用户”>“活动用户”****。
 
-8. 对于**产品许可证**，请单击“**编辑**”。
+8. 在“活动用户”**** 中，单击“管理员帐户”。
 
-9. 关闭 Office 365 企业版 E5 的许可证，并打开 Microsoft 365 E5 的许可证。
+9. 单击“许可证和应用”****。
 
-10. 单击“**保存 > 关闭 > 关闭**”。
+10. 禁用 Office 365 企业版 E5 的许可证，并启用 Microsoft 365 E5 的许可证。
+
+11. 单击“保存更改”****，然后关闭“用户帐户信息”窗格。
 
 接下来，对其他所有帐户（用户 2、用户 3、用户 4 和用户 5）重复执行上面过程的第 8 步到第 11 步。
   
 > [!NOTE]
-> Microsoft 365 E5 试用版订阅的有效期为 30 天。 对于永久性测试环境，请将此试用版订阅转换为包含少量许可证的付费版订阅。 
+> Microsoft 365 E5 试用版订阅的有效期为 30 天。 对于永久测试环境，将此试用版订阅转换为带少量许可证的付费订阅。 
   
 测试环境现在包含：
   
@@ -216,7 +190,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
     
 下面是所得到的配置，它添加了 Microsoft 365 E5，还同时包含了 Office 365 和企业安全性 + 管理 (EMS)。
   
-![Microsoft 365 企业版测试环境的第 2 阶段](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Microsoft 365 企业版测试环境的第 3 阶段](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## <a name="phase-4-create-a-windows-10-enterprise-computer"></a>第 4 阶段：创建 Windows 10 企业版计算机
 
