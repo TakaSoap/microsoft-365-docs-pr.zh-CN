@@ -1,7 +1,7 @@
 ---
-title: 符合 GDPR 的 Office 365 数据服务请求
-description: 了解 GDPR 提供的用户权限，以及 Office 365 如何帮助企业查找和处理数据以响应 DSR。
-keywords: Office 365, DSR, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
+title: 符合 GDPR 和 CCPA 的 Office 365 数据服务请求
+description: 了解 GDPR 和 CCPA 下规定的用户权限，以及 Office 365 如何帮助企业查找和处理数据以响应 DSR。
+keywords: Office 365, DSR, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,28 +9,32 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: bacf6b55bc4c92987511bdf1ab4ac5b120f11836
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 9f2d17c6165a028061cf7d155f828c683f09543f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071491"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624514"
 ---
-# <a name="office-365-data-subject-requests-for-the-gdpr"></a>符合 GDPR 的 Office 365 数据主体请求
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Office 365 数据主体请求
 
 ## <a name="introduction-to-dsrs"></a>DSR 简介
 
 根据欧盟[一般数据保护条例 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm)，用户（在条例中称为“*数据主体*”）有权管理由雇主或其他类型机构或组织（称为“*数据控制者*”或简称为“*控制者*”）收集的个人数据。根据 GDPR，个人数据的定义比较广泛，包括与身份已识别或可识别的自然人相关的任何数据。根据 GDPR，数据主体有权对自己的个人数据执行以下操作：获取个人数据副本、请求更改个人数据、限制个人数据处理、删除个人数据或接收电子格式个人数据（以便于转移给其他控制者）。数据主体为了对自己的个人数据执行操作而向控制者发出的的正式请求，称为“*数据主体请求*”(DSR)。控制者有义务及时审议各个 DSR，并提供实质性响应，具体是通过执行所请求的操作，或解释控制者为什么无法接纳 DSR。控制者应咨询自己的法律或合规性顾问，商讨如何妥善处置任何给定 DSR。
 
-本指南讨论了如何使用 Office 365 产品、服务和管理工具帮助查找和处理个人数据以响应 DSR。具体而言，这包括如何查找、访问和操作驻留在 Microsoft 云中的个人数据。下面是本指南中所列流程的快速概述：
+同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，其中包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。 CCPA 还就某些披露规定了在选择行使权限时防止歧视的保障措施，并就分类为“销售”的特定数据传输提出了“选择退出/选择加入”要求。 “出售”广义定义为包含共享数据来换取有值对价的行为。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
 
-- **发现：** 使用搜索和发现工具更轻松地查找可能是 DSR 主体的客户数据。一旦收集了潜在响应文档，则可以执行一个或多个下列步骤中所述的 DSR 操作来响应请求。或者，你可能会确定该请求不符合组织有关响应 DSR 的指导原则。
-- **访问：** 检索驻留在 Microsoft 云中的个人数据，如果提出请求，还制作可供数据主体使用的个人数据副本。
+本指南介绍了如何使用 Office 365 产品、服务和管理工具来帮助查找和处理个人数据或个人信息以响应 DSR。 具体而言，这包括如何查找、访问和处理驻留在 Microsoft 云中的个人数据或个人信息。 下面是本指南中所述的过程的快速概览：
+
+- **发现：** 使用搜索和发现工具更轻松地查找可能是 DSR 主体的客户的数据。 收集了潜在的响应性文档后，你便可以执行下列步骤中所述的一项或多项 DSR 操作来响应请求。 或者，你也可以确定请求是否不符合组织的 DSR 响应指南。
+- **访问：** 检索驻留在 Microsoft 云中的个人数据，并根据请求复制个人数据以供数据主体使用。
 - **纠正：** 进行更改或者对个人数据实施其他请求的操作（如果适用）。
-- **限制：** 通过移除各种 Azure 服务的许可证或者在可能的情况下关闭所需服务，限制个人数据的处理。你也可以从 Microsoft 云中移除数据并仍将其保留在內部或其他位置。
+- **限制：** 通过移除各种 Azure 服务的许可证，或者在可能的情况下关闭所需的服务，限制对个人数据的处理。 此外还可以从 Microsoft 云中删除数据，并将其保留在本地或其他位置。
 - **删除：** 永久删除保存在 Microsoft 云中的个人数据。
-- **导出：** 向数据主体提供个人数据的电子副本（采用机器可读格式）。
+- **导出/接收（可移植性）：** 向数据主体提供个人数据或个人信息的电子副本（采用机器可读格式）。 根据 CCPA 的定义，个人信息是指与已识别或可识别人员相关的任何信息。 个人的私人、公共或工作角色之间没有任何区别。 所定义的“个人信息”术语与 GDPR 下的“个人信息”大致相同。 但是，CCPA 还包括家人和家庭数据。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
 
 ### <a name="terminology"></a>术语
 
@@ -183,13 +187,13 @@ Office 365 组织可能包含由基于云的服务和本地服务器产品组合
 
 ***关键字语法***
 
-```
+```Query
 pilar@contoso.com AND filetype="xlxs"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image18.png)
+![关键字对话框](media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>示例 2
 
@@ -199,19 +203,19 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image19.png)
+![关键字对话框](media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>示例 3
 
 此示例返回包含指定身份证号码（法国社会安全号码 (INSEE)）的电子邮件
 
-```
+```Query
 "1600330345678 97" AND kind="email"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image20.png)
+![关键字对话框](media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>处理内容搜索中的部分索引项
 
@@ -281,13 +285,13 @@ OneDrive for Business 帐户和 SharePoint Online 网站中不仅存储了用户
 
 用户还可通过导航到其 OneDrive for Business 帐户中的“**编辑个人资料**”页面来访问其 SharePoint 个人资料数据，要访问该页面，可转到 OneDrive for Business 帐户 URL 下的 **EditProfile.aspx** 路径。 例如，对于用户 <strong>user1@contoso.com</strong>，该用户的 OneDrive for Business 帐户位于：
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 ```
 
 “编辑个人资料”页面的 URL 将为：
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/EditProfile.aspx`
 ```
 
@@ -357,9 +361,11 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 3. 选择该项，然后复制详细信息窗格中显示的文件夹路径。这是课堂笔记本的根文件夹。
 4. 编辑在步骤 1 中创建的搜索，将关键字查询中的课堂名称替换为课堂笔记本的文件夹路径，并在文件夹路径之前追加 **path** 网站属性，例如，**path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**。请务必包括引号和末尾斜杠。
 5. 添加搜索条件，选择文件类型条件，使用 one 作为文件类型的值。 这将在搜索结果中返回所有 OneNote 文件。 最终的关键字语法如下所示：[](#building-search-queries-to-find-personal-data)
-    ```
+
+    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
+
 6.  重新运行内容搜索。 搜索结果应包括班级团队中 Class Notebook 的所有 OneNote 文件。
 
 #### <a name="microsoft-to-do"></a>微软待办
@@ -426,13 +432,13 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 导出和下载项目：
 
 1. 在安全与合规中心打开内容搜索。
-2. 在搜索飞出页面上，单击“![](media/o365-dsr_image21.png) **更多**”，然后单击“**导出结果**”。 你还可以导出报告。
+2. 在搜索飞出页面上，单击![下载图标](media/o365-dsr_image21.png)“**更多**”，然后单击“**导出结果**”。 你还可导出报告。
 3. 完成“**导出结果**”飞出页面上的各个部分。请务必使用滚动条查看所有导出选项。
 4. 返回安全与合规中心的内容搜索页面，并单击“**导出**”选项卡。
 5. 单击“**刷新**”更新页面。
 6. 在“**名称**”列中，单击刚刚创建的导出作业。 导出作业的名称为内容搜索名称追加 **\_Export**。
 7. 在导出飞出页面上，单击“**导出密钥**”下的“**复制到剪贴板**”。 在步骤 10 中，将使用此密钥下载搜索结果
-8. 在飞出页面顶部，单击“![](media/o365-dsr_image21.png) **下载结果**”。
+8. 在飞出页面顶部，单击![下载图标](media/o365-dsr_image21.png)“**下载结果**”。
 9. 如果系统提示安装 **Microsoft Office 365 电子数据展示导出工具**，请单击“**安装**”。
 10. 在“**电子数据展示导出工具**”中，将在步骤 7 中复制的导出密钥粘贴在相应的框中。
 11. 单击“**浏览**”指定要下载搜索结果文件的位置。
@@ -845,15 +851,18 @@ Invoicing 收集并将存储以下类型数据：
 
 与提交作业相关的学生文件存储在一个文档库中（名为**学生工作**），而与教师创建的作业相关的文件（可由学生访问）则存储在不同的文档库中（名为**课堂文件**）。两个文档库都在相应的课堂团队 SharePoint 网站中。
 
-管理员可使用 Office 365 安全与合规中心的内容搜索工具搜索与作业提交相关的学生文件（在“学生作业”和“课堂作业”库中）以及与作业相关的文件。 例如，管理员可搜索组织中的所有 SharePoint 网站，并在搜索查询中使用学生姓名和课堂或作业名称，以查找与 DSR 请求相关的数据。
+管理员可使用 Office 365 安全与合规中心的内容搜索工具搜索与作业提交相关的学生文件（在“学生作业”和“课堂作业”库中）以及与作业相关的文件。 例如，管理员可搜索组织中的所有 SharePoint 网站，并在搜索查询中使用学生姓名和课程/作业名称，以查找与 DSR 请求相关的数据。
 
-同样，管理员可以搜索与作业相关的教师文件，以获取教师分发给学生的文件。例如，管理员可在组织中搜索所有 SharePoint 网站，并在搜索查询中使用教师姓名和课堂或作业名称，以查找与 DSR 请求相关的数据。
+同样，管理员可在与作业相关的教师文件中搜索教师分配给学生的文件。 例如，管理员可搜索组织中的所有 SharePoint 网站，并在搜索查询中使用教师姓名和班级或作业名称来查找与 DSR 请求相关的数据。
 
-请参阅本指南中的[使用内容搜索电子数据展示工具响应 DSR](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)部分。
+有关详细信息，请参阅：
 
-##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>查找不存储在 SharePoint 中的作业数据
+- [作业管理员文档](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-admin-documentation)
+- [使用内容搜索电子数据展示工具响应 DSR](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)（在本指南中）
 
-以下类型的作业数据不存储在课堂团队 SharePoint 网站中，因此无法使用内容搜索发现。 此数据包含以下信息：
+##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>查找未存储在 SharePoint 中的作业数据
+
+以下类型的作业数据未存储在课堂团队 SharePoint 网站中，因此无法使用内容搜索发现。 此数据包含以下信息：
 
 - 学生成绩和教师反馈
 - 每个学生为作业提交的文档列表
@@ -865,24 +874,27 @@ Invoicing 收集并将存储以下类型数据：
 
 ##### <a name="export"></a>导出
 
-可以使用 PowerShell 脚本导出一名特定学生已选修的所有课程的作业数据。 请参阅：
+对于特定学生注册参加的所有课程，可使用 PowerShell 脚本获取该学生的课程列表，然后使用 PowerShell 脚本导出其作业数据。 请参阅：
 
-- [使用脚本导出作业并从作业中删除用户数据](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe)。
-- [从作业中导出学生和教师数据](https://support.office.com/article/e8c36e0e-fb6e-42c5-97fd-66f90f92a13a)。
+- [配置 Teams 的作业](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [获取特定学生的课程列表](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [从作业中导出学生和教师数据](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export)。
 
 如果已从团队课堂网站删除学生，管理员可以在运行导出脚本之前将学生添加回网站。或者管理员可以使用脚本的输入文件来标识学生以往选修的每个课程。作业导出脚本还可用于导出教师有权访问的所有作业的提交数据。
 
-##### <a name="delete"></a>删除
+##### <a name="delete"></a>Delete
 
-可以使用 PowerShell 脚本删除一名特定学生已选修的所有课程的作业数据。 应在从课堂中删除学生之前执行此操作。 请参阅：
+对于特定学生注册参加的所有课程，可使用 PowerShell 脚本获取该学生的课程列表，然后使用 PowerShell 脚本删除其作业数据。 应在从课程中删除学生之前执行此操作。 请参阅：
 
-- [使用脚本导出作业并从作业中删除用户数据](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe)。
-
-- [从作业中删除学生数据](https://support.office.com/article/a368853a-9565-4320-8e86-2f9423e932a4)。
+- [配置 Teams 的作业](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [获取特定学生的课程列表](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [从作业中删除学生数据](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete)。
 
 如果已从团队课堂网站删除学生，管理员可以在运行导出脚本之前将学生添加回网站。或者管理员可以使用脚本的输入文件来标识学生以往选修的每个课程。不能使用作业删除脚本删除教师数据，因为所有作业在课堂团队网站之间共享。作为替代方法，管理员必须将自己添加到课堂团队网站，然后删除特定作业。
 
-**课堂笔记本：** 本指南前面讨论了在课堂笔记本中搜索内容。 请参阅 [OneNote 课堂笔记本](#onenote-class-notebook)部分。 内容搜索工具还可用于从课堂笔记本中导出数据。 或者，管理员或数据主体也可从课堂笔记本中导出数据。 请参阅[保存课堂笔记本副本](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec)。
+#### <a name="class-notebook"></a>课堂笔记本
+
+本指南前面讨论了在课堂笔记本中搜索内容。 请参阅 [OneNote 课堂笔记本](#onenote-class-notebook)部分。 内容搜索工具还可用于从课堂笔记本中导出数据。 或者，管理员或数据主体也可从课堂笔记本中导出数据。 请参阅[保存课堂笔记本副本](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec)。
 
 ### <a name="flow"></a>Flow
 
@@ -1073,7 +1085,7 @@ PowerApps 是一项服务，可用于生成可在组织内共享和使用的应�
 
 为了帮助推进与 PowerApps 相关的 DSR 请求，可利用在 [PowerApps 管理中心](https://admin.powerapps.com/)和 [PowerApps 管理员 PowerShell cmdlet](https://go.microsoft.com/fwlink/?linkid=871804) 中公开的管理操作。 访问这些工具需要具有以下权限的帐户：
 
-- PowerApps 计划 2 付费证或 PowerApps 计划 2 试用版许可证。 可在[此处](http://web.powerapps.com/trial)注册 30 天的试用版许可证。
+- PowerApps 计划 2 付费证或 PowerApps 计划 2 试用版许可证。 可在[此处](https://web.powerapps.com/trial)注册 30 天的试用版许可证。
 - [Office 365 全局管理员](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)或
 - [Azure Active Directory 全局管理员](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
@@ -1168,7 +1180,7 @@ StaffHub 内的大部分数据都可供所有 StaffHub 团队成员和管理者�
 - **共享文件：** StaffHub 中的所有文件都存储在 SharePoint Online 上，因此可使用内容搜索发现、访问和导出，如上文所述。 也可从 StaffHub 内的“**文件**”选项卡下查看。
 - **消息：** 目前，可按照下一项目中有关访问用户特定的数据的步骤访问消息。 将来，StaffHub 中的所有消息都会存储在 Microsoft Teams 中，这意味着可使用内容搜索工具访问它们。
 - **用户特定的数据：** 用户特定的数据包括用户设置、用户活动源以及用户排班请求历史记录，团队成员或管理员无法查看任何此类数据。 要访问或导出用户特定的数据，请让数据主体登录其 StaffHub 帐户以获取该数据。 或者，如果数据主体已离开组织，可请求管理员重置该数据主体的用户密码，以便你或管理员使用该数据主体的帐户登录，从而获取此数据。
-- **Kronos** - StaffHub 支持连接到 [Kronos](http://www.kronos.com/)（一个第三方工作人员管理工具）。 StaffHub 和 Kronos 是独立的处理程序，可处理你与每一方签署的各条款下的组织数据。 如果 DSR 与由 Kronos 保留的数据相关，需要联系 Kronos 寻求 DSR 协助，反之亦然。
+- **Kronos** - StaffHub 支持连接到 [Kronos](https://www.kronos.com/)（一个第三方工作人员管理工具）。 StaffHub 和 Kronos 是独立的处理程序，可处理你与每一方签署的各条款下的组织数据。 如果 DSR 与由 Kronos 保留的数据相关，需要联系 Kronos 寻求 DSR 协助，反之亦然。
 
 #### <a name="delete"></a>删除
 
@@ -1205,7 +1217,7 @@ StaffHub 内的大部分数据都可供所有 StaffHub 团队成员和管理者�
 
 #### <a name="discover"></a>发现
 
-使用 Sway（位于 [www.sway.com](http://www.sway.com)）创建的内容仅供所有者和作者已向其授权查看 Sway 的用户查看。 请参阅 [Sway 中的隐私设置](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)。 要确定 Sway 是否可能包含响应 DSR 的个人数据，可以让数据主体和组织用户搜索其 Sway，并与你共享任何可能包含响应数据主体请求的个人数据的 Sway。 有关如何共享 Sway 的信息，请参阅[共享你的 Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) 一文中的“从组织帐户共享 Sway”。
+使用 Sway（位于 [www.sway.com](https://www.sway.com)）创建的内容仅供所有者和作者已向其授权查看 Sway 的用户查看。 请参阅 [Sway 中的隐私设置](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)。 要确定 Sway 是否可能包含响应 DSR 的个人数据，可以让数据主体和组织用户搜索其 Sway，并与你共享任何可能包含响应数据主体请求的个人数据的 Sway。 有关如何共享 Sway 的信息，请参阅[共享你的 Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) 一文中的“从组织帐户共享 Sway”。
 
 #### <a name="access"></a>Access
 
@@ -1531,7 +1543,7 @@ Microsoft Office 365 服务套件包括多种联机服务，可为选择使用�
 
 ### <a name="myanalytics"></a>MyAnalytics
 
-MyAnalytics 为用户提供统计信息，帮助他们了解如何安排工作时间。要帮助用户更好地了解通过其个人仪表板呈现的数据以及数据的计算方式，请指导用户转到 [MyAnalytics 个人仪表板](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard)帮助主题。
+MyAnalytics 为用户提供统计信息，帮助他们了解如何安排工作时间。要帮助用户更好地了解通过其个人仪表板呈现的数据以及数据的计算方式，请指导用户转到 [MyAnalytics 个人仪表板](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2)帮助主题。
 
 #### <a name="access-and-export"></a>访问和导出
 
@@ -1543,7 +1555,7 @@ MyAnalytics 生成的所有见解都派生自用户的邮件和日历项目。�
 
 #### <a name="restrict"></a>限制
 
-要针对特定用户限制处理，可让这些用户选择退出 MyAnalytics。请参阅[配置 MyAnalytics 用户设置](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings)了解相关方法。
+要针对特定用户限制处理，可让这些用户选择退出 MyAnalytics。请参阅[配置 MyAnalytics 用户设置](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-myanalytics)了解相关方法。
 
 #### <a name="delete"></a>删除
 
@@ -1551,7 +1563,7 @@ MyAnalytics 生成的所有见解都派生自用户的邮件和日历项目。�
 
 ### <a name="workplace-analytics"></a>工作区分析
 
-使用 Workplace Analytics，组织可使用自己的业务数据扩充 Office 365 数据，以获取有关组织生产效率、协作模式和员工参与的见解。[本文](https://docs.microsoft.com/workplace-analytics/overview/privacy-and-data-access)介绍了组织对 Workplace Analytics 所处理数据的掌控以及有权访问该数据的人员。
+使用 Workplace Analytics，组织可使用自己的业务数据扩充 Office 365 数据，以获取有关组织生产效率、协作模式和员工参与的见解。[本文](https://docs.microsoft.com/workplace-analytics/index-orig)介绍了组织对 Workplace Analytics 所处理数据的掌控以及有权访问该数据的人员。
 
 在工作区分析中提供 DSR 方面的协助： 
 
@@ -1580,7 +1592,7 @@ Office 365 全局管理员可以采取以下步骤来删除数据主体的个人
 1. 删除数据主体的工作区分析许可证。
 2. 删除数据主体的 Azure Active Directory (AAD) 项。（有关详细信息，请参阅[删除用户](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)。）
 3. 联系支持人员，让支持人员提交数据主体权限 (DSR) 用户删除请求的票证。在此票证中使用用户主体名称 (UPN) 标识数据主体。
-4. 从公司的 HR 系统导出 HR 数据副本（请参阅[导出数据](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)），从该 HR 数据文件删除数据主体的信息，然后将编辑后的 HR 数据文件以 .csv 格式上传到工作区分析（请参阅[上传组织数据](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)）。
+4. 从公司的 HR 系统导出 HR 数据副本（请参阅[导出数据](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data)），从该 HR 数据文件删除数据主体的信息，然后将编辑后的 HR 数据文件以 .csv 格式上传到工作区分析（请参阅[上传组织数据](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)）。
 
 ## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>第 3 部分：响应对系统生成日志的 DSR
 
@@ -1625,7 +1637,7 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 
 - **系统生成的日志中的数据看上去是怎样的？**：JSON 格式的系统生成日志记录示例：
 
-   ```
+   ```JSON
    [{
             "DateTime": "2017-04-28T12:09:29-07:00",
              "AppName": "SharePoint",
@@ -1666,7 +1678,7 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 全局 IT 管理员需要执行以下操作以删除以下国家云中的系统生成日志：
 
 - Office 365 德国版 - 当永久删除用户帐户时，也将删除系统生成的日志。 
-- Office 365 美国政府版：通过 [Office 365 管理门户](http://portal.office365.us)向 Microsoft 支持部门提交请求。
+- Office 365 美国政府版：通过 [Office 365 管理门户](https://portal.office365.us)向 Microsoft 支持部门提交请求。
 - 由世纪互联运营的 Office 365（中国版） - 通过此处 [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) 中的 Office 365 管理门户向 Microsoft 支持部门提交请求。转到“**商务**”，然后选择“**订阅**” -> “**隐私**” -> “**GDPR**”并输入所需的信息。
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>第 4 部分：可提供 DSR 协助的其他资源
@@ -1783,5 +1795,6 @@ IT 管理员可使用安全与合规中心的审核日志搜索工具识别用�
 |11/12/2018| 全部| 修复了受损坏的书签和指向外部主题的链接。|
 |2019 年 1 月 9 日|[StaffHub](#staffhub)|在“删除”部分，更新了永久删除用户帐户时所发生情况的描述。|
 |2019 年 5 月 8 日| [Publisher](#publisher)|添加了有关为 Publisher 响应 DSR 的内容。|
-|2019 年 7 月 11 日| [MyAnalytics](#myanalytics)|管理员使用 Office 365 安全与合规中心内的 DSR 事例工具导出 MyAnalytics 数据的功能已被删除，因为所有用户现在都可以在 MyAnalytics 应用中查看他们的数据。 |
+|2019 年 7 月 11 日| [MyAnalytics](#myanalytics)|管理员无法再使用 Office 365 安全与合规中心内的 DSR 事例工具导出 MyAnalytics 数据，因为所有用户现都可在 MyAnalytics 应用中查看自己的数据。 |
+|2019/11/6|[教育版](#education)|链接到有关使用 PowerShell 脚本的新主题以获取特定学生的课程列表，然后导出或删除其数据。|
 ||||
