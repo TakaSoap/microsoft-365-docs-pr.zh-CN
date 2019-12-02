@@ -1,7 +1,7 @@
 ---
-title: 针对 GDPR 的 Visual Studio 系列数据主体请求
-description: 针对 GDPR 的 Visual Studio 系列数据主体请求
-keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studio 文档, 隐私, GDPR
+title: 符合 GDPR 和 CCPA 的 Visual Studio 系列数据主体请求
+description: 符合 GDPR 和 CCPA 的 Visual Studio 系列数据主体请求
+keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studio 文档, 隐私, GDPR, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: visual-studio-family
@@ -10,23 +10,29 @@ ms.date: 05/24/2018
 author: PoulChapman
 ms.author: olholder
 manager: pchapman
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 96cb6820e24a378351c82264929c3aec99e6d4f6
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431543"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624793"
 ---
-# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>针对 GDPR 的 Visual Studio 系列数据主体请求
+# <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Visual Studio 系列数据主体请求
 
-根据欧盟[一般数据保护条例 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm)，用户（在条例中称为_数据主体_）有权管理其个人数据。根据 GDPR，个人数据的定义非常广泛，包括与身份已识别或可识别的自然人相关的任何数据。根据 GDPR，数据主体有权对自己的个人数据执行以下操作：获取个人数据副本、请求更正个人数据、限制个人数据处理、删除个人数据或接受电子格式的个人数据。数据主体为了对自己的个人数据执行操作而向数据控制者（雇主或有权控制个人数据的其他类型的机构或组织）发出的正式请求称为_数据主体请求_或 DSR。有关 GDPR 的 一般信息，请参阅[服务信任门户的 GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) 部分。
+根据欧盟[一般数据保护条例 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm)，用户（在条例中称为_数据主体_）有权管理其个人数据。根据 GDPR，个人数据的定义非常广泛，包括与身份已识别或可识别的自然人相关的任何数据。根据 GDPR，数据主体有权对自己的个人数据执行以下操作：获取个人数据副本、请求更正个人数据、限制个人数据处理、删除个人数据或接受电子格式的个人数据。数据主体为了对自己的个人数据执行操作而向数据控制者（雇主或有权控制个人数据的其他类型的机构或组织）发出的正式请求称为_数据主体请求_或 DSR。
+
+同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，其中包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。  CCPA 还就某些披露规定了在选择行使权限时防止歧视的保障措施，并就分类为“销售”的特定数据传输提出了“选择退出/选择加入”要求。 “出售”广义定义为包含共享数据来换取有值对价的行为。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
+
+有关 GDPR 的一般信息，请参阅[服务信任门户的 GDPR 部分](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)。
 
 ## <a name="products-covered-by-this-guide"></a>本指南涵盖的产品
 
-本指南介绍如何使用 Microsoft 工具来导出或删除经过身份验证的（已登录）会话在使用 Visual Studio 和 Visual Studio for Mac 以及针对它们和 Visual Studio Code 的 Microsoft 扩展过程中所收集的个人数据。本指南还介绍如何对使用 Visual Studio 开发人员社区、NuGet.org 和 ASP.NET 网站时所收集的个人数据提出数据主体请求。这些产品可能允许使用非 Microsoft 工具和扩展，Microsoft 不是这些工具和扩展的数据处理者或控制者。用户应联系工具或扩展提供商，以了解针对这些工具和扩展的个人数据和收集策略。
+本指南介绍了如何使用 Microsoft 工具导出或删除在经过身份验证（已登录）的会话使用过程中收集到的个人数据，其中会话涉及到 Visual Studio、Visual Studio for Mac 以及到这两者和 Visual Studio Code 的 Microsoft 扩展。 本指南还介绍了如何对在使用 Visual Studio 开发者社区、NuGet.org 和 ASP.NET 网站时收集到的个人数据发出数据主体请求。 这些产品可能支持使用非 Microsoft 工具和扩展，而且 Microsoft 不是这些工具和扩展的数据处理者或控制者。 用户需联系工具或扩展提供商来了解有关这些工具和扩展的个人数据及收集策略。
 
 ## <a name="additional-privacy-information"></a>其他隐私信息
 
@@ -72,8 +78,8 @@ Visual Studio 2015 及更高版本、Visual Studio for Mac 和 Visual Studio Cod
 
 控制者可以使用两种方法中的任意一种来管理客户数据以及从其数据主体收集的系统生成的日志，具体取决于其 Visual Studio 系列产品或 Microsoft 扩展注册的方式。在某些情况下，必须同时使用这两种方法。两者都允许控制者下载由该方法管理的活动历史记录的副本。关闭 AAD 或 MSA 帐户将删除相关联的 Visual Studio 客户数据，并对系统生成的日志中与这些产品相关的个人可识别数据匿名处理。匿名处理的系统生成的日志的保留期限不超过 18 个月。
 
-- 使用由 Azure 租户支持的帐户— 例如 AAD 帐户或与 Azure 订阅关联的 MSA 帐户 — 注册 Visual Studio 系列产品的用户可以按照[针对 GDPR 的 Azure 数据主体请求](gdpr-dsr-azure.md)中的说明执行操作。
-- 未使用由 Azure 租户支持的帐户 — 例如使用 Microsoft 帐户 (MSA) 的许多帐户 — 注册 Visual Studio 系列产品的用户可以使用其 Microsoft 帐户提供的[基于 Web 的 Microsoft 隐私响应中心](https://aka.ms/userprivacysite)跨多个 Microsoft 服务来查看、控制和删除绑定到他们的 Microsoft 帐户的活动数据。在此应用场景中，用户是自己个人数据的控制者。
+- 如果用户使用由 Azure 租户支持的帐户（例如 AAD 帐户或与 Azure 订阅关联的 MSA 帐户）注册了 Visual Studio 系列产品，则他们可按照[符合 GDPR 的 Azure 数据主体请求](gdpr-dsr-azure.md)中的说明执行操作。
+- 如果用户已注册 Visual Studio 系列产品但没有由 Azure 租户支持的帐户（例如 Microsoft 帐户 (MSA) 支持的很多帐户），他们可通过其 Microsoft 帐户使用[基于 Web 的 Microsoft 隐私响应中心](https://aka.ms/userprivacysite)跨多个 Microsoft 服务查看、控制和删除与其 Microsoft 帐户绑定的活动数据。 在该场景中，用户是其自己的个人数据的控制者。
 
 > [!NOTE]
 > 当 MSA 帐户持有者删除其帐户时，所有与这些产品相关的个人可识别数据都将被删除（无论该帐户是否受 Azure 租户支持），并且将对系统生成的日志匿名处理。
@@ -148,7 +154,7 @@ Microsoft 收集数据，帮助我们重现和排查你报告的 Visual Studio �
 
 若要启动删除操作，请执行以下步骤：
 
-1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。在右上角，单击个人资料并选择“**个人资料和首选项**”。
+1. 登录到[开发人员社区](https://developercommunity.visualstudio.com)。 在右上角，单击个人资料并选择“**个人资料和首选项**”。
 2. 单击“隐私”**** 选项卡，然后单击“删除数据和帐户”**** 开始删除你的数据。
 3. 将显示确认屏幕。
 4. 在框中键入“delete”，然后单击“删除我的帐户”****。
@@ -162,11 +168,11 @@ Microsoft 收集数据，帮助我们重现和排查你报告的 Visual Studio �
 - 如果报告新问题或登录到[开发人员社区](https://developercommunity.visualstudio.com)，你将被标识为新用户。
 - 如果你将自己的帐户从[开发人员社区](https://developercommunity.visualstudio.com)中删除，我们将不会从其他 Microsoft 服务中删除该帐户。
 
-## <a name="xamarin-forums-and-bugzilla"></a>Xamarin 论坛和 Bugzilla
+## <a name="xamarin-forums"></a>Xamarin 论坛
 
 ### <a name="personal-data-we-collect"></a>我们收集的个人数据
 
-Microsoft 通过 [Xamarin 论坛](https://forums.xamarin.com)用户社区和 [Xamarin Bugzilla](https://bugzilla.xamarin.com/) bug 报告网站收集你提供的数据，帮助我们重现和排查你在使用 Microsoft 产品和服务时可能遇到的问题。此数据包括个人数据和公共反馈。我们收集的个人数据是用户帐户数据（例如，与你的 Xamarin 论坛或 Bugzilla 帐户相关联的用户名和电子邮件地址），我们收集的公共反馈包括你通过 Xamarin 论坛或 Xamarin Bugzilla bug 报告网站所提供的 bug、问题、评论和解决方案。
+通过 [Xamarin 论坛](https://forums.xamarin.com/)用户社区，Microsoft 会收集你提供用来帮助我们重现和解决你在 Microsoft 产品和服务方面可能遇到的问题的数据。 此数据包括个人数据和公共反馈。 我们收集的个人数据是用户帐户数据（例如，与你的 Xamarin 论坛关联的用户名和电子邮件地址），而我们收集的公共反馈包括你通过 Xamarin 论坛提供的 bug、问题、评论和解决方案。
 
 ### <a name="how-you-can-control-your-data"></a>如何控制数据
 
@@ -184,19 +190,8 @@ Xamarin 论坛由第三方 Vanilla 论坛托管。若要请求导出你的公共
 
 Xamarin 论坛由第三方 Vanilla 论坛托管。若要请求删除你的个人数据和公共数据，请联系 forums@xamarin.com（由 Xamarin 团队监控）。然后，我们将根据用户请求手动删除个人数据。
 
-#### <a name="bugzilla-for-xamarin"></a>Xamarin 的 Bugzilla
-
-##### <a name="view"></a>查看
-
-具有 Xamarin Bugzilla 活动帐户的用户可以查看他们已报告的所有 bug，以及他们向 bug 添加的所有注释，方法是单击 Xamarin Bugzilla 主页上相应的链接。
-
-##### <a name="export"></a>导出
-
-不支持导出个人数据。
-
-##### <a name="delete"></a>删除
-
-若要请求删除 Xamarin 的 Bugzilla bug 报告网站中所使用的个人数据，用户可以关闭其 Xamarin Bugzilla 帐户，方法是导航到[用户首选项页](https://bugzilla.xamarin.com/userprefs.cgi)并选择“关闭帐户”**** 选项卡。输入 Bugzilla 密码并勾选“确认你已了解此操作将永久删除你的帐户”框。收到删除请求后，将不会删除用户已发布到 Xamarin Bugzilla 的公共反馈（例如，bug、问题、评论和解决方案）。公共反馈改为以匿名形式显示，这是通过删除与提交删除请求的用户所创建的任何公共反馈关联的名称和电子邮件地址实现的。
+> [!NOTE]
+> Bugzilla for Xamarin 不再接受新问题。 之前的 Xamarin Bugzilla 帐户持有者可在此处查看他们所报告的所有 bug 及其添加的所有评论的存档：[https://xamarin.github.io/bugzilla-archives/](https://xamarin.github.io/bugzilla-archives/)。 若要请求删除存档中包含的个人数据，用户可以在[https://github.com/xamarin/bugzilla-archives/issues/new/choose](https://github.com/xamarin/bugzilla-archives/issues/new/choose)上归档并发布。 收到删除请求后，用户发布到 Xamarin Bugzilla 上的公共反馈（bug、问题、注释和解决方案）将不会被删除。 通过删除与提交删除请求的用户所创建公共反馈关联的姓名和电子邮件地址，从而匿名处理公共反馈。
 
 ## <a name="nuget"></a>NuGet
 
@@ -215,16 +210,6 @@ Xamarin 论坛由第三方 Vanilla 论坛托管。若要请求删除你的个人
 ### <a name="surveymonkey"></a>SurveyMonkey
 
 有时，我们会邀请客户通过 SurveyMonkey 提供有关这些产品的反馈。此数据将在 28 天内删除。为这些产品提供数据主体请求服务时，如果我们已验证了调查响应，会将其添加到导出和删除数据主体请求中。
-
-### <a name="uservoice"></a>UserVoice
-
-我们邀请客户在 UserVoice.com 网站上提供有关这些产品的产品建议。这些网站是由 UserVoice 独立运营的，数据主体请求由 UserVoice 管理。
-
-- [https://visualstudio.uservoice.com/](https://visualstudio.uservoice.com/)
-- [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
-- [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
-
-有关此数据的数据主体请求，请参阅[如何导出数据](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data)或[如何删除数据](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information)上的 UserVoice 指南。
 
 ## <a name="learn-more"></a>了解更多
 
