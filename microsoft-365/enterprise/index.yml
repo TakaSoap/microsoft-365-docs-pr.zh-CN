@@ -1,0 +1,106 @@
+### YamlMime:Hub
+title: Microsoft 365 企业版文档和资源
+summary: 具有可转换工作方式的智能云服务的最优秀的工作效率应用程序。
+brand: m365
+metadata:
+  title: Microsoft 365 企业版文档和资源
+  description: 了解为 IT 专业人员、信息工作者和合作伙伴提供的适用于 Microsoft 365 企业版的产品文档和资源。
+  services: service
+  ms.prod: microsoft-365-enterprise
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection: M365-subscription-management
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 11/29/2019
+  ms.openlocfilehash: 945412e8e66fe558971ceacf3a57023b5bba6e5f
+  ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/03/2019
+  ms.locfileid: "39669531"
+highlightedContent:
+  items:
+  - title: 了解 Microsoft 365 企业版
+    itemType: get-started
+    url: microsoft-365-overview.md
+  - title: 使用 FastTrack 加速您的部署
+    itemType: quickstart
+    url: https://www.microsoft.com/fasttrack/microsoft-365
+  - title: 培训你的 IT 专业人员和管理员
+    itemType: learn
+    url: https://docs.microsoft.com/learn/m365/
+conceptualContent:
+  title: 获取 Microsoft 365 企业版和其他资源的帮助
+  summary: 探索 Microsoft 365 企业版部署指南、功能和服务。
+  items:
+  - title: 遵循部署路线图
+    links:
+    - url: deploy-microsoft-365-enterprise.md
+      itemType: deploy
+      text: 部署概述
+    - url: deploy-foundation-infrastructure.md
+      itemType: how-to-guide
+      text: Foundation 基础结构
+    - url: deploy-workloads.md
+      itemType: how-to-guide
+      text: 工作负载和应用场景
+    - url: desktop-deployment-center-home.md
+      itemType: get-started
+      text: 桌面部署中心
+  - title: 部署关键元素
+    links:
+    - url: identity-infrastructure.md
+      itemType: how-to-guide
+      text: 标识基础结构
+    - url: https://docs.microsoft.com/windows/deployment/
+      itemType: get-started
+      text: Windows 10 企业版
+    - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
+      itemType: deploy
+      text: Office 365 专业增强版
+    - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
+      itemType: deploy
+      text: Microsoft Intune
+  - title: 部署关键方案
+    links:
+    - url: secure-teams-highly-regulated-data-scenario.md
+      itemType: how-to-guide
+      text: 针对高度管控数据的 Microsoft Teams
+    - url: teams-sharepoint-online-sites-highly-regulated-data.md
+      itemType: how-to-guide
+      text: 用于高度管控数据的 SharePoint 网站
+    - url: empower-people-to-work-remotely.md
+      itemType: how-to-guide
+      text: 远程工作人员
+    - url: migration-microsoft-365-enterprise-workload.md
+      itemType: deploy
+      text: Office 客户端和服务器和 Windows 迁移
+  - title: 管理 Microsoft 365 企业版
+    links:
+    - url: https://docs.microsoft.com/windows/deployment/update/
+      itemType: how-to-guide
+      text: Windows 10 企业版
+    - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+      itemType: concept
+      text: Office 365 专业增强版
+    - url: https://docs.microsoft.com/intune/apps/app-management
+      itemType: get-started
+      text: 具有 Intune 的应用程序
+    - url: https://docs.microsoft.com/office365/
+      itemType: get-started
+      text: Office 365 服务
+additionalContent:
+  sections:
+  - title: 其他资源
+    summary: 了解有关其他 Microsoft 365 功能和资源的详细信息。
+    items:
+    - title: Microsoft 365 合规性
+      summary: 帮助您的组织管理信息、防止风险并遵守法律或法规标准。
+      url: https://docs.microsoft.com/microsoft-365/compliance/index
+    - title: Microsoft 365 安全
+      summary: 使用强健的安全服务和解决方案跨攻击面保护你的组织。
+      url: https://docs.microsoft.com/microsoft-365/security/index
+    - title: Microsoft 365 技术社区
+      summary: 在 Microsoft 技术社区中与同行和专家进行连接和协作，并共享 Microsoft 365 最佳实践。
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
