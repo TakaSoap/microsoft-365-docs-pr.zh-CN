@@ -1,7 +1,7 @@
 ---
 title: 刑事审判信息服务（CJIS）安全策略
 description: Microsoft 政府云服务遵守美国刑事审判信息服务安全策略。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 52b5718ecbd558cf1bf5e89702b6574c87841040
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7fb31d007b7935d8a2beef93b80ca1958c7a3a27
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690140"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668810"
 ---
 # <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>合规性服务：刑事审判信息服务（CJIS）安全策略
 
@@ -40,12 +40,12 @@ Microsoft 已评估 Microsoft Azure 政府、Microsoft Office 365 美国政府�
 
 了解如何使用 Azure 安全性和合规性蓝图加快 CJIS 安全策略：[下载 Microsoft 政府云服务的 CJIS 实施指南](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)
 - [Office 365 美国政府版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务作为独立服务或包含在 Office 365 品牌计划或套件中
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -53,13 +53,13 @@ FBI 不提供 Microsoft 符合 CJIS 要求的认证。 相反，Microsoft 证明
 
 [Microsoft CJIS 云要求](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states"></a>美国的 CJIS 状态
+## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>美国的 CJIS 状态（当前状态为9/23/2019）
 
-36州和哥伦比亚带有管理协议的地区，以绿色的地图突出显示：
+37州和哥伦比亚带有管理协议的地区，以绿色的地图突出显示：
 
-Alabama、阿拉斯加、Arkansas、亚利桑那、加利福尼亚、科罗拉多、佛罗里达、格鲁吉亚、夏威夷、伊利诺斯州、印地安那、艾奥瓦、堪萨斯州、Kentucky、Maine、马萨诸塞州、密歇根、Minnesota、Missouri、Montana、New Jersey、纽约、内华达、北卡罗莱纳州、俄克拉荷马、俄勒冈州宾夕法尼亚州、Rhode 岛、南卡罗莱纳卡罗莱纳州、田纳西州、德克萨斯、犹他、Vermont、弗吉尼亚州、华盛顿、华盛顿特区、西弗吉尼亚州。
+Alabama、阿拉斯加、Arkansas、亚利桑那、加利福尼亚、科罗拉多、佛罗里达、格鲁吉亚、夏威夷、伊利诺斯州、印地安那、艾奥瓦、堪萨斯州、Kentucky、Maine、马萨诸塞州、密歇根、Minnesota、Missouri、Montana、New Jersey、纽约、内华达、北卡罗莱纳州、俄克拉荷马、俄勒冈州宾夕法尼亚州、Rhode 岛、南部卡罗莱纳州、田纳西州、德克萨斯、犹他、Vermont、弗吉尼亚州、华盛顿特区、西弗吉尼亚州、Wisconsin。
 
-Microsoft 承诺满足适用的 CJIS 管理法规控制措施，允许刑事审判组织实施基于云的解决方案，并符合 CJIS 安全策略-5.7。
+Microsoft 承诺满足适用的 CJIS 管理法规控制措施，允许刑事审判组织实施基于云的解决方案，并符合 CJIS 安全策略 V 5.8。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
@@ -70,8 +70,6 @@ Microsoft 承诺满足适用的 CJIS 管理法规控制措施，允许刑事审�
 **Microsoft 如何证明其云服务能够符合我的状态要求？**
 
 Microsoft 使用州 CJIS Systems 机关（CSA）签署信息协议;你可以从你的状态的 CSA 请求副本。 此外，Microsoft 还为客户提供了详细的安全、隐私和合规性信息。 客户还可以查看独立审计员准备的安全性和合规性报告，以便他们能够验证 Microsoft 是否已实现适合相关审核作用域的安全控制（如 ISO 27001）。
-
-包含 CJIS 文档（从8月2017日起）的状态，包括：阿拉斯加、亚利桑那、Arkansas、加利福尼亚、科罗拉多、夏威夷、格鲁吉亚、伊利诺斯州、印地安地、艾奥瓦、堪萨斯州、Kentucky、马萨诸塞州、密歇根州、Minnesota、Missouri、Montana、内华达、New Jersey、纽约、北卡罗莱纳州、俄勒冈、宾夕法尼亚、Rhode 岛、南部卡罗莱纳州、田纳西州、德克萨斯、弗吉尼亚州、犹他州、Vermont 和华盛顿。
 
 **我应从哪里开始使用我的机构的合规性工作？**
 
@@ -85,8 +83,8 @@ Microsoft 使用州 CJIS Systems 机关（CSA）签署信息协议;你可以从�
 - [适用于 Azure 政府的 CJIS 实施指南](https://aka.ms/cjisimplementationguidelines)
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/?linkid=2087246)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf)。

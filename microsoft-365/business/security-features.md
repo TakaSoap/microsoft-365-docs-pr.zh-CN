@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业版附带的安全功能。
-ms.openlocfilehash: f24836ef93c529eddc05c767d6e4fa8af6aef314
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 98eb0c2015ed6088b2d5e8621c8e72a5b63f2a17
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715134"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668840"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
 
@@ -74,7 +74,8 @@ Microsoft 365 商业版中的高级功能可帮助您保护业务，抵御网络
     通过在 Azure 门户中访问 Intune 管理中心，可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 高级设备管理，这些功能无法通过 Microsoft 使用365商业管理中心。
 - **与 Azure AD P1 计划相同的[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
-    条件访问可帮助保护您的组织不受登录风险、访问来自意外网络或区域设置的尝试、访问来自有风险的设备类型的尝试，等等。 在第一次身份验证完成后，将强制执行条件访问策略，并使用来自第一种身份验证事件的信号来确定是否应批准、拒绝或更多校对（如第二种形式的标识）是必需的。
+
+    条件访问可帮助保护您的组织不受登录风险、访问来自意外网络或区域设置的尝试、访问来自有风险的设备类型的尝试，等等。 在第一次身份验证完成后强制执行条件访问策略，并使用来自第一种身份验证事件的信号来确定是否应批准、拒绝或更多校对（如标识的第二种形式）是必需的。
 
     条件访问功能包括：
 
@@ -108,7 +109,7 @@ Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的
 您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将被添加到 Microsoft 365 Business 管理中心。
   
     
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能在所有市场中是否可用？
   

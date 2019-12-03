@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从加入 Windows 10 设备的 Azure Active Directory 中获取本地资源（如业务线应用、文件共享和打印机）的访问权限。
-ms.openlocfilehash: fdc1eca6913ba6af4f6b65691fdee2165e7c827e
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38323387"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668780"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>从 Microsoft 365 商业版中的 Azure AD 加入设备访问本地资源
 
@@ -32,6 +32,9 @@ ms.locfileid: "38323387"
 若要了解详细信息，请参阅[Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/azure/active-directory/device-management-introduction)。
 以下各节也汇总了这些步骤。
 
+> [!IMPORTANT]
+> 此过程仅适用于 OAuth 和 NTLM。 Kerberos 不受支持。
+ 
 ## <a name="run-azure-ad-connect"></a>运行 Azure AD Connect
 
 完成以下步骤，使组织的 Azure AD 加入设备能够访问本地资源。
@@ -43,6 +46,8 @@ ms.locfileid: "38323387"
 3. 一旦 Windows 10 设备加入了 Azure AD，每个用户都必须重新启动其设备，并使用其 Microsoft 365 商业版凭据登录。 现在，所有设备都有权访问本地资源。
     
 无需执行任何其他步骤即可访问 Azure AD 加入的设备的本地资源。 此功能内置在 Windows 10 中。 
+
+如果您计划登录到 AADJ 设备而不是 password 方法（如通过 WHFB 凭据登录的 PIN/Bio 指标），然后访问本地资源（共享、打印机）。等），请按照https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 如果你的组织未准备好在上面所述的 Azure AD 联接的设备配置中进行部署，请考虑设置[混合 AZURE ad 已加入设备配置](manage-windows-devices.md)。
   
