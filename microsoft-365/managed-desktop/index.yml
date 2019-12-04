@@ -24,26 +24,31 @@ sections:
             html: <p>Microsoft 托管桌面的决策制定者简介-它是什么、工作原理以及它可以为您做些什么</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+              alt: ''
             title: 什么是 Microsoft 托管桌面？
           - href: service-description/index.md
             html: <p>Microsoft 托管桌面的所有部分的详细说明</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+              alt: ''
             title: 服务说明
           - href: get-ready/index.md
             html: <p>为您的环境和组织准备好使用服务的所有步骤</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_support.svg'
+              alt: ''
             title: 准备就绪
           - href: get-started/index.md
             html: <p>使用 Microsoft 托管桌面（包括设置设备和部署应用程序）在主板上获取组织</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+              alt: ''
             title: 入门
           - href: working-with-managed-desktop/index.md
             html: <p>有关服务的日常操作的所有信息</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_portal.svg'
+              alt: ''
             title: 使用 Microsoft 托管桌面
   - title: 新文章和博客文章
     items:

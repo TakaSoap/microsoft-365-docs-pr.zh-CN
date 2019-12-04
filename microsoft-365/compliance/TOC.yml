@@ -291,7 +291,7 @@
               href: view-label-activity-for-documents.md
             - name: 查看数据管理报告
               href: view-the-data-governance-reports.md
-        - name: 事件
+        - name: 活动
           items:
             - name: 基于事件的保留
               href: event-driven-retention.md
@@ -317,6 +317,8 @@
           href: export-search-results.md
         - name: 导出内容搜索报告
           href: export-a-content-search-report.md
+        - name: 在 Microsoft Edge 中使用电子数据展示导出工具
+          href: configure-edge-to-export-search-results.md
         - name: 搜索和删除电子邮件
           href: search-for-and-delete-messages-in-your-organization.md
         - name: 在 Office 365 中搜索本地用户基于云的邮箱
