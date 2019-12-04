@@ -1,7 +1,7 @@
 ---
 title: 查看数据管理报告
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全与合规中心内的数据管理报告，可快速查看标签是否按预期应用于内容。
-ms.openlocfilehash: d6537c7c2c6f4bda9aad105ea5882e245a430f4c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d761931cea171afb84e25fa0900bec7c3a2f3c2
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075473"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813902"
 ---
 # <a name="view-the-data-governance-reports"></a>查看数据管理报告
 
@@ -34,7 +34,7 @@ ms.locfileid: "37075473"
     
 所有这些报告显示的都是 Exchange、SharePoint 和 OneDrive for Business 中的已标记内容。
   
-若要查找这些报告，可以在安全与合规中心内依次单击“数据管理”**** 和“仪表板”****。
+这些报告可在安全 &amp; 合规中心 \> **信息治理** \> **仪表板**中找到。
   
 ![显示过去 90 天内标签趋势的图表](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
