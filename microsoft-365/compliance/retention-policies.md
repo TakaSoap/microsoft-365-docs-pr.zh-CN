@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: e8014b04df0991c89c6f487b3f9d8e176b9cff75
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: caeec733b3b5722f25210d0d2566e1dd9a5cd95e
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39637706"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818984"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -213,9 +213,9 @@ ms.locfileid: "39637706"
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>包含或排除特定位置、用户或组的策略
 
-此外，还可以将保留策略应用于特定用户。为此，请先将相应位置的“状态”**** 切换为“开”，再使用链接来添加或排除特定用户、Office 365 组或位置。 
+还可将保留策略应用于特定用户、Office 365 组或网站。为此，请先将相应位置的“**状态**”切换为“开”，再使用链接来添加或排除特定用户、Office 365 组或网站。 
   
-不过，请注意，包含或排除超过 1,000 位特定用户的保留策略存在以下限制：
+但请注意，包含或排除超过 1,000 个特定位置的保留策略存在以下限制：
   
 - 此类保留策略最多可包含 1,000 个邮箱和 100 个网站集。
     

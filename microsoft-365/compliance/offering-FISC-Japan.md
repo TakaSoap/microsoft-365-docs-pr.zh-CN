@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0cf7a32d50c6fd648894934ccbb32d84959bd12b
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39232888"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676679"
 ---
 # <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>合规性产品/服务：金融行业信息系统中心 (FISC)
 
@@ -40,12 +40,9 @@ Microsoft 聘请了外部评估人员来验证 Microsoft Azure、Dynamics 365 �
 
 金融机构可以依赖对 Azure、Dynamics 365、Office 365 和 Microsoft 云应用安全的范围内基础结构和平台服务进行的这三方面的合规性评估。
 
-了解 Microsoft 云上 FISC 的优势：
+[详细了解外部评估人员的验证及评估人员网站链接（仅日语版）](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx)。
 
-- [下载日本 FISC 背景材料](https://aka.ms/fisc-backgrounder)
-- [深入了解外部评估人员的验证以及评估人员的网站链接（仅限日语）](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx) 
-
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - 云应用安全

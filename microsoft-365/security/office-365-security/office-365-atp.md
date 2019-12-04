@@ -3,7 +3,7 @@ title: Office 365 高级威胁防护
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: abe11acd2b254405ec432288ae87d12b626f617c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: ba7395c29a700039e29c066daa942687e610e4aa
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673408"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813762"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -43,7 +43,8 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 ATP 包含在 Office 365 E5 中；但是，Office 365 ATP 计划 1 和 Office 365 ATP 计划 2 可各自用作特定订阅的加载项。 若要了解详细信息，请参阅[跨高级威胁防护 (ATP) 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
-如果没有 Office 365 ATP，可[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+> [!TIP]
+> 如果没有 Office 365 ATP，可[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 
 ## <a name="configure-atp-policies"></a>配置 ATP 策略
@@ -55,13 +56,13 @@ ATP 包含在 Office 365 E5 中；但是，Office 365 ATP 计划 1 和 Office 36
 
 为组织定义的策略将确定预定义威胁的行为和保护级别。 策略选项非常灵活。 例如，组织的安全团队可以在用户、组织、收件人和域级别设置细化的威胁防护。 定期查看策略非常重要，因为每天都会出现新的威胁和挑战。  
 
-- [ATP 安全附件](atp-safe-attachments.md)：提供可通过检查电子邮件附件查找恶意内容来保护邮件系统的零日防护。 它会将无病毒/恶意软件签名的所有邮件和附件路由到特殊环境，然后使用机器学习和分析技术检测恶意意向。 如果未找到可疑活动，邮件将转发到邮箱。 若要了解详细信息，请参阅[设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)。
+- **[ATP 安全附件](atp-safe-attachments.md)**：提供可通过检查电子邮件附件查找恶意内容来保护邮件系统的零日防护。 它会将无病毒/恶意软件签名的所有邮件和附件路由到特殊环境，然后使用机器学习和分析技术检测恶意意向。 如果未找到可疑活动，邮件将转发到邮箱。 若要了解详细信息，请参阅[设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)。
 
-- [ATP 安全链接](atp-safe-links.md)：在诸如电子邮件和 Office 文件中提供 URL 的单击时验证。 正在进行保护并适用于邮件和 Office 环境。 每次单击时都扫描链接：安全链接仍然可访问，恶意链接被动态阻止。 若要了解详细信息，请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)。 
+- **[ATP 安全链接](atp-safe-links.md)**：在诸如电子邮件和 Office 文件中提供 URL 的单击时验证。 正在进行保护并适用于邮件和 Office 环境。 每次单击时都扫描链接：安全链接仍然可访问，恶意链接被动态阻止。 若要了解详细信息，请参阅[设置 Office 365 ATP 安全链接策略](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)。 
 
-- [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)：当用户协作和共享文件时，可通过识别和阻止工作组网站和文档库中的恶意文件来保护你的组织。 有关详细信息，请参阅[开启适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。 
+- **[用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)**：当用户协作和共享文件时，可通过识别和阻止工作组网站和文档库中的恶意文件来保护你的组织。 有关详细信息，请参阅[开启适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。 
 
-- [ATP 防钓鱼防护](atp-anti-phishing.md)：检测模拟用户和自定义域的尝试。 它应用机器学习模型和高级模仿检测算法，防止钓鱼攻击。 若要了解详细信息，请参阅[设置 Office 365 ATP 防钓鱼和防钓鱼策略](set-up-anti-phishing-policies.md)。
+- **[ATP 防钓鱼防护](atp-anti-phishing.md)**：检测模拟用户和自定义域的尝试。 它应用机器学习模型和高级模仿检测算法，防止钓鱼攻击。 若要了解详细信息，请参阅[设置 Office 365 ATP 防钓鱼和防钓鱼策略](set-up-anti-phishing-policies.md)。
 
 ## <a name="view-office-365-atp-reports"></a>查看 Office 365 ATP 报告
 
@@ -77,21 +78,21 @@ Office 365 ATP 包含用于监视 ATP 性能的高级[报告仪表板](view-repo
 
 - [ATP 邮件处置报告](view-reports-for-atp.md#atp-message-disposition-report)
 
-- ...等等。 
+- …及更多精彩内容。 
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>使用威胁调查和响应功能
 
 Office 365 ATP 计划 2 包括同类最佳的[威胁调查和响应工具](office-365-ti.md)，可让组织的安全团队预测、理解和防范恶意攻击。 
 
-- [威胁跟踪器](threat-trackers.md)提供有关主流网络安全问题的最新智能。 例如，你可以查看有关最新恶意软件的信息，并采取措施，然后将其作为组织的实际威胁。 可用的跟踪器包括[值得注意的跟踪器](threat-trackers.md#noteworthy-trackers)、[趋势跟踪器](threat-trackers.md#trending-trackers)、[跟踪的查询](threat-trackers.md#tracked-queries)和[已保存的查询](threat-trackers.md#saved-queries)。
+- **[威胁跟踪器](threat-trackers.md)** 提供有关主流网络安全问题的最新智能。 例如，你可以查看有关最新恶意软件的信息，并采取措施，然后将其作为组织的实际威胁。 可用的跟踪器包括[值得注意的跟踪器](threat-trackers.md#noteworthy-trackers)、[趋势跟踪器](threat-trackers.md#trending-trackers)、[跟踪的查询](threat-trackers.md#tracked-queries)和[已保存的查询](threat-trackers.md#saved-queries)。
 
-- [威胁资源管理器（或实时检测）](threat-explorer.md)（也称为“资源管理器”）是一种实时报表，可用于识别和分析最近的威胁。 可配置资源管理器显示自定义期间的数据。
+- **[威胁资源管理器（或实时检测）](threat-explorer.md)** 也称为“资源管理器”，它是一种实时报表，可用于识别和分析最近的威胁。 可配置资源管理器显示自定义期间的数据。
 
-- [攻击仿真程序](attack-simulator.md)使你能够在组织中运行现实的攻击方案以确定漏洞。 可仿真当前类型的攻击，包括[显示名称鱼叉式网络钓鱼攻击](attack-simulator.md#display-name-spear-phishing-attack)、[密码喷涂攻击](attack-simulator.md#password-spray-attack)、 [强力密码攻击](attack-simulator.md#brute-force-password-attack)等等。
+- **[攻击仿真程序](attack-simulator.md)** 使你能够在组织中运行现实的攻击方案以确定漏洞。 可仿真当前类型的攻击，包括[显示名称鱼叉式网络钓鱼攻击](attack-simulator.md#display-name-spear-phishing-attack)、[密码喷涂攻击](attack-simulator.md#password-spray-attack)、 [强力密码攻击](attack-simulator.md#brute-force-password-attack)等等。
     
 ## <a name="save-time-with-automated-incident-response"></a>通过自动事件响应节省时间
 
-（**新增！**）调查可能的网络攻击时，时间至关重要。 越快地识别和缓解威胁，贵公司的状况就越好。 [自动事件响应](automated-investigation-response-office.md) (AIR) 功能包括一套可自动启动（例如触发预警时）或手动启动（例如从资源管理器中的视图启动）的安全手册。 AIR 可以有效且高效地节省安全操作团队缓解威胁的时间和精力。 若要了解详细信息，请参阅 [Office 365 中的自动事件响应](automated-investigation-response-office.md)。
+（**新增！**）调查可能的网络攻击时，时间至关重要。 越快地识别和缓解威胁，贵公司的状况就越好。 [自动事件响应](automated-investigation-response-office.md) (AIR) 功能包括一套可自动启动（例如触发预警时）或手动启动（例如从资源管理器中的视图启动）的安全手册。 AIR 可以有效且高效地节省安全操作团队缓解威胁的时间和精力。 要了解详细信息，请参阅 [Office 365 中的 AIR](automated-investigation-response-office.md)。
 
 ## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的权限
 
@@ -99,9 +100,10 @@ Office 365 ATP 计划 2 包括同类最佳的[威胁调查和响应工具](offic
 
 |角色或角色组  |了解详细信息的资源  |
 |---------|---------|
-|Office 365 全局管理员 |[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|安全管理员 |[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online 组织管理 |[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Office 365 全局管理员（可在 Azure Active Directory 或 Office 365 安全与合规中心分配此权限） |[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|安全管理员（可在 Azure Active Directory 或 Office 365 安全与合规中心分配此权限） |[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
+|Exchange Online 组织管理（在 Exchange Online 中分配此权限）|[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|搜索和清除（仅在 Office 365 安全与合规中心分配此权限） |[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md) |
 
 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 

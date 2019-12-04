@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 6f062901acbf149f6fc56c266d10b370ed0c1112
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 9e9ad76d2bdd7f74368121346f7e04d1208803ff
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "39268442"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818854"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>使用数据分类内容资源管理器（预览版）
 
@@ -27,7 +27,19 @@ ms.locfileid: "39268442"
 
 ## <a name="content-explorer"></a>内容资源管理器
 
-内容资源管理器是具有敏感度标签、保留标签或在你的组织中被归类为敏感信息类型的项目的当前快照。
+内容资源管理器可显示具有敏感度标签、保留标签或在你的组织中被归类为敏感信息类型的项目的当前快照。
+
+### <a name="sensitive-information-types"></a>敏感信息类型
+
+[DLP 策略](data-loss-prevention-policies.md)可帮助保护定义为**敏感信息类型**的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](what-the-sensitive-information-types-look-for.md)它们已准备就绪可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
+
+### <a name="sensitivity-labels"></a>敏感度标签
+
+[灵敏度标签](sensitivity-labels.md)只是一个标记，指出项目对你的组织的价值。 该标签可手动应用，也可自动应用。 应用后，它将嵌入到文档中并始终保留在文档上。 可通过敏感度标签实现各种保护行为，例如强制水印或加密。 如果启用了终结点保护，你甚至还可阻止项目脱离组织控制。
+
+### <a name="retention-labels"></a>保留标签
+
+[保留标签](labels.md)可用于定义带标记的项目将保留多长时间以及删除项目前要采取哪些操作。 这些标签可手动应用，也可通过策略自动应用。 它们在帮助组织持续遵守法律法规要求方面发挥着作用。
 
 ![内容资源管理器折叠的屏幕截图](media/data-classification-content-explorer-1.png)
 
@@ -55,3 +67,4 @@ ms.locfileid: "39268442"
 - [保留标签](labels.md)
 - [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)
 - [保留策略概述](retention-policies.md)
+- [数据丢失防护概述](data-loss-prevention-policies.md)
