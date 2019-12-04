@@ -6,10 +6,11 @@
 ## 设置
 ### [设置概述](set-up-overview.md)
 ### [设置 Microsoft 365 商业版](set-up.md)
+### [保护 Windows 10 计算机](secure-win-10-pcs.md)
 ### [升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)
 ### [准备部署 Office 客户端](prepare-for-office-client-deployment.md)
 ### [帮助用户安装 Office](help-users-install-office.md)
-### [访问本地资源]()
+### [访问本地资源]
 #### [启用要进行托管的已加入域的 Windows 10 设备](manage-windows-devices.md)
 #### [从已加入 Azure AD 的设备访问资源](access-resources.md)
 ## 用户设备设置
