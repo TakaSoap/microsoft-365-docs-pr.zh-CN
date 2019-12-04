@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以将标签应用于 Microsoft 团队、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
+ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818834"
+ms.locfileid: "39819128"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
@@ -77,15 +77,15 @@ Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐�
   }
 ```
 
-如果启用此预览，Office 365 将不再使用新组和 SharePoint 网站的旧分类。 如果使用的是[AZURE AD 网站分类](/sharepoint/dev/solution-guidance/modern-experience-site-classification)（$setting ["ClassificationList"]），则现有组和网站仍将显示旧的分类。 若要显示新的分类，请对其进行转换。 有关如何转换它们的信息，请参阅[如果您使用的是经典 AZURE AD 网站分类](#if-you-used-classic-azure-ad-site-classification)。
+如果启用此预览，Office 365 将不再使用新组和 SharePoint 网站的旧分类。 如果使用的是[AZURE AD 网站分类](/sharepoint/dev/solution-guidance/modern-experience-site-classification)（$setting ["ClassificationList"]），则现有组和网站仍将显示旧的分类。 若要显示新的分类，请对其进行转换。 有关如何转换它们的信息，请参阅[如果您使用的是经典 AZURE AD 网站分类](#if-you-used-classic-azure-ad-site-classification)。 
 
-## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>创建（或编辑）敏感度标签时设置网站和组设置
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>创建或编辑敏感度标签时设置网站和组设置
 
-启用预览后，请按照以下步骤创建敏感度标签。 对这些设置所做的更改可能需要长达24小时的同步。
+启用预览后，请按照以下步骤创建或编辑敏感度标签。 您必须完成这些步骤，才能使用网站和组，即使您已定义标签也是如此。 对这些设置所做的更改可能需要长达24小时的同步。
 
 1. 在 Microsoft 365 合规性中心中，选择 "**分类** > **敏感度标签**"。
 
-2. 选择 "**创建标签**"。
+2. 选择 "**创建标签**"。 如果您已经有一个标签，请跳至下一步。
 
 3. 选择所需的选项，然后在 "**网站和组设置**" 选项卡上选择：
 
@@ -97,6 +97,14 @@ Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐�
 
 > [!IMPORTANT]
 > 将标签应用于团队、组或网站时，只有网站和组设置才会生效。 其他设置（如加密和内容标记）不适用于团队、组或网站中的所有内容。 同样，如果您创建一个标签但不启用网站和组设置，则在用户创建团队、组和网站时，该标签仍可用，但在用户应用它时，将不会执行任何操作。
+
+[了解如何发布敏感度标签](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+
+## <a name="troubleshoot-sensitivity-label-deployment"></a>敏感度标签部署疑难解答
+
+如果您在启用这些设置或对标签的说明进行了更改后遇到问题，请保存标签，等待几小时，然后再次尝试创建团队或 Office 365 组，以确保在您创建团队或 Office 365 组时遇到问题。
+
+如果你仍然无法看到 SharePoint Online 中的新敏感度标签，请立即联系 Microsoft 支持部门。
 
 [了解如何发布敏感度标签](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
