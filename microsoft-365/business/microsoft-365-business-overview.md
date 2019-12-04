@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -22,19 +23,25 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解有关 Microsoft 365 业务的详细信息。
-ms.openlocfilehash: abd1e8374ef7530a879de71ab7ad0125f1ca4616
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 419754b5ea06baabac8c170a860e076dc7fa8f81
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676061"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812850"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
 ## <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 业务
 
 Microsoft 365 Business 是一款订阅服务，其中包括 Office 365 生产率工具和高级功能，以帮助保护您的业务不受威胁、保护您的数据和管理设备。
+
+观看此视频，了解 Microsoft 365 商业版的快速概述。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
+如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。 
+
 Microsoft 365 商业版适用于最高300的许可证。 如果你需要更多许可证，请参阅[Microsoft 365 企业版](https://go.microsoft.com/fwlink/p/?linkid=860986)文档以了解详细信息。
 
 有关完整的功能列表，请参阅[Microsoft 365 业务服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
@@ -102,3 +109,7 @@ Microsoft 365 Business 通过以下方式帮助**defended 抵御威胁**：
 
     > [!NOTE]
     > 此链接仅适用于美国的商店
+
+## <a name="see-also"></a>另请参阅
+
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

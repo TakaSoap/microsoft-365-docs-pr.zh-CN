@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -21,18 +22,22 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: f269e970cc1ee5ba7455ea799b238db577116f09
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+ms.openlocfilehash: 2e6e1e6153fe4033aa7dd47280c737957d0e4bd5
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704107"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813050"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business 入门
 
 ## <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 业务
 
 Microsoft 365 商业版是一组全面的业务效率和协作工具，如 Outlook、Word、Excel 和其他 Office 产品，它们始终处于最新状态。 您可以使用易于管理的企业级安全性来保护所有 iOS、Android 和 Windows 10 设备上的工作文件。
+
+观看此视频，了解 Microsoft 365 商业版的快速概述。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
 Microsoft 365 商业版适用于最高300的许可证。 如果你需要更多许可证，请参阅[Microsoft 365 企业版](https://go.microsoft.com/fwlink/p/?linkid=860986)文档以了解详细信息。 
   
@@ -49,6 +54,13 @@ Microsoft 365 商业版适用于最高300的许可证。 如果你需要更多�
 下图介绍了管理员如何设置 Microsoft 365 商业版。 还介绍为 Microsoft 365 商业版 准备 Windows 电脑的步骤。 您还可以使用[Windows AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 商业版管理中心添加新设备。 您可以使用 AutoPilot 设置和预配置新设备，以便用户可以在用户使用其 Microsoft 365 业务凭据登录后立即进行生产。
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+
+观看此视频，了解 Microsoft 365 Business 安装程序的概述。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
+
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1：设置 Microsoft 365 商业版（管理员）
 
@@ -89,9 +101,10 @@ Microsoft 365 商业版适用于最高300的许可证。 如果你需要更多�
     
 - 作为 Microsoft 365 商业版管理员，你可以访问我们的客户支持团队： **[联系商业版产品支持人员-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="related-topics"></a>相关主题
+## <a name="see-also"></a>另请参阅
+
 [Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)（Microsoft 365 Business 文档和资源）
   
 [管理 microsoft 365 业务](manage.md)[迁移到 microsoft 365 业务](migrate-to-microsoft-365-business.md)
-  
 
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

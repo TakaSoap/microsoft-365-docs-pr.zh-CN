@@ -1,9 +1,9 @@
 ---
-title: 将敏感度标签与 Microsoft 团队、Office 365 组和 SharePoint 网站结合使用（公共预览版）
+title: 将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/13/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以将标签应用于 Microsoft 团队、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: 5fc7fec199482449baf9174d6e854d0a5564faa6
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685245"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818834"
 ---
-# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft 团队、Office 365 组和 SharePoint 网站结合使用（公共预览版）
+# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
 在[microsoft 365 合规性中心](https://protection.office.com/)创建敏感度标签时，现在可以将其应用于 microsoft 团队、Office 365 组和 SharePoint 网站。 您可以将策略与要控制的标签相关联：
 
@@ -37,6 +37,8 @@ ms.locfileid: "38685245"
 ## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>关于 Microsoft 团队、Office 365 组和 SharePoint 网站的公共预览版
 
 Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐步推出到租户，并且在最终发布之前可能会发生更改。
+
+公共预览版不适用于 Office 365 内容传递网络（Cdn）。
 
 ## <a name="overview"></a>概述
 
@@ -77,9 +79,9 @@ Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐�
 
 如果启用此预览，Office 365 将不再使用新组和 SharePoint 网站的旧分类。 如果使用的是[AZURE AD 网站分类](/sharepoint/dev/solution-guidance/modern-experience-site-classification)（$setting ["ClassificationList"]），则现有组和网站仍将显示旧的分类。 若要显示新的分类，请对其进行转换。 有关如何转换它们的信息，请参阅[如果您使用的是经典 AZURE AD 网站分类](#if-you-used-classic-azure-ad-site-classification)。
 
-## <a name="set-site-and-group-settings-when-you-create-sensitivity-labels"></a>创建敏感度标签时设置网站和组设置
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>创建（或编辑）敏感度标签时设置网站和组设置
 
-启用预览后，请按照以下步骤操作：
+启用预览后，请按照以下步骤创建敏感度标签。 对这些设置所做的更改可能需要长达24小时的同步。
 
 1. 在 Microsoft 365 合规性中心中，选择 "**分类** > **敏感度标签**"。
 
@@ -87,7 +89,7 @@ Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐�
 
 3. 选择所需的选项，然后在 "**网站和组设置**" 选项卡上选择：
 
-    - 隐私（公用/专用）：私有表示组织中的已批准成员只能查看组内的内容。 组织中的任何其他人都无法查看组中的内容。 [了解详细信息](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
+    - 隐私（公用/专用）：私有表示组织中的已批准成员只能查看组内的内容。 组织中的任何其他人都无法查看组中的内容。 [了解更多](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
     - 来宾访问：您可以控制来宾是否可以添加到组中。 [了解如何在 Office 365 组中管理来宾访问](/office365/admin/create-groups/manage-guest-access-in-groups)
     - 非托管设备：此设置允许您阻止或限制从 Intune 中未加入混合广告或合规性的设备访问 SharePoint 内容。 如果选择非托管设备，则需要转到 Azure AD 以完成策略设置。 有关信息，请参阅[控制来自非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。
 
@@ -162,7 +164,7 @@ Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐�
 - Dynamics 365  
 - Yammer  
 - Stream  
-- Planner  
+- 规划器  
 - Project  
 - PowerBI  
 - 团队管理员中心  

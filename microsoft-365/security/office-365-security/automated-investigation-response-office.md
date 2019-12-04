@@ -3,7 +3,7 @@ title: Office 365 中的自动事件响应（空气）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
-ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: dc1f2a4c0c91cf7b1e2d351f173367e34c5d3323
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673398"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813912"
 ---
 # <a name="automated-incident-response-air-in-office-365"></a>Office 365 中的自动事件响应（空气）
 
 自动化事件响应（空中）功能使您能够运行自动化的调查过程，以应对目前存在的已知威胁。 空中可帮助您的安全操作团队更高效地运行。
 - 若要了解空气的工作原理，请使用本文。
 - 若要开始使用 AIR，请参阅[在 Office 365 中自动调查和响应威胁](office-365-air.md)。
-
-> [!NOTE]
-> 您必须是全局管理员、安全管理员、安全操作员或安全读者才能访问空中功能。 若要了解有关这些权限的详细信息，请参阅[Microsoft 365 安全中心：角色和权限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
 ## <a name="the-overall-flow-of-air"></a>空气的整体流动
 
@@ -47,24 +44,22 @@ ms.locfileid: "38673398"
 
 [警报](../../compliance/alert-policies.md#viewing-alerts)表示用于事件响应的安全操作团队工作流的触发器。 确定要调查的正确通知集的优先级，同时确保没有威胁是 unaddressed 的挑战。 在手动对通知进行调查时，安全操作团队必须在威胁的风险下对实体（例如，内容、设备和用户）进行搜寻和关联。 此类任务和工作流非常耗时，并涉及多个工具和系统。 通过空气、调查和响应自动化到关键安全和威胁管理警报，可自动触发安全响应行动手册。 
 
-在空中的初始发行版（2019年4月开始），根据以下单个事件通知策略生成的警报将自动调查。 
+在空中的初始发行版（2019年4月开始），将自动调查从以下几种单一事件警报策略生成的警报：  
 
 - 检测到潜在的恶意 URL 单击
-
 - 用户报告为网络钓鱼的电子邮件 *
-
 - 包含在传递后删除的恶意软件的电子邮件 *
-
 - 包含在传递后删除的网络钓鱼 Url 的电子邮件 *
-
 - 检测到可疑的电子邮件发送模式#
-
 - 限制用户发送电子邮件#
 
 > [!NOTE]
 > 以星号（*）标记的警报在安全 & 合规性中心（电子邮件通知已关闭）的相应警报策略中被分配了一个*信息性*严重性。 可以通过[报警策略配置](../../compliance/alert-policies.md#alert-policy-settings)启用电子邮件通知。 使用哈希（#）标记的警报通常是与公共预览版行动手册相关联的警报。
 
-若要查看警报，请在安全 & 合规性中心中，选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 请注意，默认情况下通知视图中隐藏了信息警报。 若要查看它们，您需要更改警报筛选以包含信息警报。
+若要查看警报，请在安全 & 合规性中心中，选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 
+
+> [!NOTE]
+> 默认情况下，通知视图中隐藏信息警报。 若要查看它们，请更改警报筛选以包含信息警报。
 
 如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理（SIEM）系统管理安全警报，则可以通过电子邮件通知或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)将 Office 365 警报发送到该系统。 通过电子邮件或 API 的调查通知通知包括访问安全 & 合规性中心中的警报的链接，使分配的安全管理员能够快速导航到调查。
 
@@ -106,7 +101,7 @@ ms.locfileid: "38673398"
 
 ![空气的主要调查页面](../media/air-maininvestigationpage.png) 
   
-可以执行下列操作：
+可执行下列操作：
 - 直接导航到调查（选择**调查 ID**）。
 - 应用筛选器。 从**调查类型**、**时间范围**、**状态**或这些情况的组合中进行选择。
 - 将数据导出到 .csv 文件。
@@ -117,15 +112,15 @@ ms.locfileid: "38673398"
 |状态  |含义  |
 |---------|---------|
 |即将开始 | 调查已排入队列，以便尽快开始 |
-|运行 | 调查已开始，正在进行分析 |
+|正在运行 | 调查已开始，正在进行分析 |
 |找不到威胁 | 调查已完成其分析，未发现任何威胁 |
 |已由系统终止 | 调查未关闭并在7天后过期 |
 |挂起的操作 | 调查发现了与建议的操作有关的威胁 |
 |发现威胁 | 调查发现威胁，但威胁没有在空中可用的操作 |
 |已修正 | 调查已完成且已完全修正（已批准所有操作） |
 |部分修正 | 调查已完成，某些建议的操作已获得批准 |
-|由用户终止 | 管理员终止了调查 |
-|Failed | 调查过程中发生错误，阻止它达到威胁的结论 |
+|已由用户终止 | 管理员终止了调查 |
+|已失败 | 调查过程中发生错误，阻止它达到威胁的结论 |
 |按限制排队 | 由于系统处理限制，调查正在等待分析（以保护服务性能） |
 |已通过限制终止 | 由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来重新触发调查。 |
 
@@ -135,7 +130,7 @@ ms.locfileid: "38673398"
 
 ![空中调查图形页面](../media/air-investigationgraphpage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取当前调查的直观概述。
 - 查看调查持续时间的摘要。
 - 在可视化中选择一个节点以查看该节点的详细信息。
@@ -147,7 +142,7 @@ ms.locfileid: "38673398"
 
 ![空气警报页面](../media/air-investigationalertspage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取当前触发警报和任何关联警报的直观概述。
 - 在列表中选择一个警报，打开显示完整警报详细信息的飞出页面。
 
@@ -180,7 +175,7 @@ ms.locfileid: "38673398"
 
 ![空中电子邮件调查页面](../media/air-investigationemailpage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取当前群集结果和发现的威胁的直观概述。
 - 单击 "群集" 实体或威胁列表打开显示完整警报详细信息的弹出页面。
 - 单击 "电子邮件群集详细信息" 选项卡顶部的 "在资源管理器中打开" 链接进一步调查电子邮件群集
@@ -198,7 +193,7 @@ ms.locfileid: "38673398"
 
 ![空中调查用户页](../media/air-investigationuserspage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取已确定的用户结果和发现的风险的直观概述。
 - 选择用户以打开显示完整警报详细信息的飞出页面。
 
@@ -211,7 +206,7 @@ ms.locfileid: "38673398"
 作为调查的一部分，空中将电子邮件威胁与设备相关联。 例如，调查会将恶意文件哈希传递到[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 )以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。 
 
-可以执行下列操作：
+可执行下列操作：
 - 获取发现的当前计算机和威胁的直观概述。
 - 选择一台计算机以打开在 Microsoft Defender 安全中心的相关[Microsoft DEFENDER ATP 调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中的视图。
 
@@ -223,7 +218,7 @@ ms.locfileid: "38673398"
 
 !["航空调查实体" 页](../media/air-investigationentitiespage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取发现的调查实体和威胁的直观概述。
 - 选择一个实体以打开显示相关实体详细信息的飞出页面。
 
@@ -235,7 +230,7 @@ ms.locfileid: "38673398"
 
 ![航空调查日志页](../media/air-investigationlogpage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取有关执行操作手册步骤的直观概述。
 - 将结果导出到 CSV 文件。
 - 筛选视图。
@@ -248,7 +243,7 @@ ms.locfileid: "38673398"
 
 ![航空调查操作页](../media/air-investigationactionspage.png)
 
-可以执行下列操作：
+可执行下列操作：
 - 获取对操作手册建议的操作的直观概述。
 - 选择一个或多个操作。
 - 使用注释批准或拒绝建议的操作。
@@ -308,6 +303,15 @@ Office 365 AIR 包含在以下订阅中：
 如果你没有这些订阅，请[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)。
 
 若要了解有关功能可用性的详细信息，请访问[跨高级威胁防护（ATP）计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+
+## <a name="required-permissions-to-use-air-capabilities"></a>使用空中功能所需的权限
+
+通过某些角色（如下表中所述的角色）授予权限： 
+
+|任务 |需要 #a0 个角色 |
+|--|--|
+|设置空中功能 |以下各项之一： <br/>- **全局管理员**<br/>- **安全管理员** <br/>可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或在[Office 365 安全 & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配这些角色。 |
+|批准或拒绝建议的操作|下列角色之一（可在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或[Office 365 Security & 合规中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)）中分配这些角色：<br/>- **全局管理员** <br/>- **安全管理员**<br/>- **安全读者** <br/>---和---<br/>- **搜索和清除**（此角色仅在[Office 365 安全 & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配）
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 完成设置 Office 365 邮件加密（OME）后，您可以通过多种方式自定义部署的配置。 例如，您可以配置是否启用一次性传递代码，在 Outlook 网页版中显示 "保护" 按钮，等等。 本文中的任务介绍了如何。
-ms.openlocfilehash: 780be179485fa18f7e0da0fabc7bb5365238da94
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6222825872dc512918b512d0dfc1918dd8a0cbe3
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685134"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813110"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
@@ -58,7 +58,7 @@ ms.locfileid: "38685134"
   
 ### <a name="to-manage-whether-ome-generates-one-time-pass-codes"></a>管理 OME 是否生成一次性传递代码
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用 OTPEnabled 参数运行 Set-omeconfiguration cmdlet：
 
@@ -84,7 +84,7 @@ ms.locfileid: "38685134"
   
 ### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>管理 "加密" 按钮是否出现在 web 上的 Outlook 中
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 运行带-SimplifiedClientAccessEnabled 参数的 Get-irmconfiguration cmdlet：
 
@@ -114,7 +114,7 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>管理 iOS 邮件应用程序用户是否可以查看受 Office 365 邮件加密保护的邮件
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用 AllowRMSSupportForUnenlightenedApps 参数运行 ActiveSyncOrganizations cmdlet：
 
@@ -151,24 +151,24 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>管理在从 web 浏览器下载时是否解密电子邮件附件
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
-2. 使用 DecryptAttachmentFromPortal 参数运行 Get-irmconfiguration cmdlet：
+2. 使用 DecryptAttachmentForEncryptOnly 参数运行 Get-irmconfiguration cmdlet：
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly <$true|$false>
    ```
 
    例如，将服务配置为在用户从 web 浏览器下载电子邮件附件时对其进行解密：
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal $true
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
    ```
 
    将服务配置为在下载时保留加密的电子邮件附件：
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal $false
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
 ## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only"></a>确保所有外部收件人都使用 OME 门户来阅读加密邮件（仅适用于 Office 365 高级邮件加密）
@@ -177,7 +177,7 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
 
 ### <a name="create-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email-to-be-revocable-and-expire-in-7-days"></a>创建自定义模板以强制所有外部收件人使用 OME 门户，并将加密电子邮件的加密电子邮件设为可吊销并在7天后过期
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 运行 Set-omeconfiguration cmdlet：
 
@@ -227,7 +227,7 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
   
 ### <a name="to-disable-the-new-capabilities-for-ome"></a>禁用 OME 的新功能
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 如果您在 web 上的 Outlook 中启用了 "**加密**" 按钮，请通过运行 get-irmconfiguration Cmdlet 和 SimplifiedClientAccessEnabled 参数来禁用它。 否则，请跳过此步骤。
 

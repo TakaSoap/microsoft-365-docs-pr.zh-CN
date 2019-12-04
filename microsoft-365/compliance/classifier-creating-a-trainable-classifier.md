@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 当 "准备就绪" 框中的一个可供使用时，使用 trainable 分类器将无法满足您的需求。 Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本主题介绍如何创建自定义分类器。
-ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633979"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813370"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>创建 trainable 分类器（预览）
 
@@ -28,6 +28,9 @@ ms.locfileid: "39633979"
 此时间线反映了一个示例部署。
 
 ![trainable-分类轴](media/trainable-classifier-deployment-timeline_border.png)
+
+> [!TIP]
+> 第一次需要 trainable 分类器时，自愿加入是必需的。 Microsoft 365 需要在12天内完成组织内容的基准评估。
 
 ## <a name="seed-content"></a>种子内容
 
@@ -42,9 +45,6 @@ ms.locfileid: "39633979"
 
 > [!TIP]
 > 为获得最佳结果，您的测试示例集中有10000个项目，并且这些项目的分布为正和负匹配。
-
-> [!TIP]
-> 第一次需要 trainable 分类器时，自愿加入是必需的。 Microsoft 365 需要在12天内完成组织内容的基准评估。
 
 ## <a name="how-to-create-a-trainable-classifier"></a>如何创建 trainable 类元
 
@@ -107,6 +107,8 @@ ms.locfileid: "39633979"
 !["查看项目" 框](media/classifier-trainable-review-detail.png)
 
 19. 查看*至少200个*项目。
+
+<!-- insert Analyze steps here-->
 
 20. 继续查看，直到准确性达到至少70%， `Publish the classifier`状态为。 `Ready to use`
 

@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何购买和注册 Microsoft 365 商业版。
-ms.openlocfilehash: 16953f7c752c3105af795e721332e2e6d6bdebe5
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 3470d07f98a1c5806a27d8f21f152a818e4a0371
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718711"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812790"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>注册 Microsoft 365 商业版
 
@@ -42,6 +43,12 @@ ms.locfileid: "38718711"
 - 如果你不需要购买企业版，[请注册家庭或家庭计划](https://go.microsoft.com/fwlink/?linkid=2109398)。 
 
 ## <a name="sign-up-steps"></a>注册步骤
+
+观看此视频，了解注册过程的快速概述。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
+
+如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
 
 若要注册并购买适用于您的企业的 Microsoft 365，请完成以下步骤：
 
@@ -82,3 +89,6 @@ ms.locfileid: "38718711"
 
 若要获取有关安装的帮助，请参阅[set up](set-up.md)。
 
+## <a name="see-also"></a>另请参阅
+
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

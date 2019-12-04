@@ -3,7 +3,7 @@ title: Office 365 邮件加密 FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关 Office 365 中的新邮件保护功能如何工作的问题？ 在此处查找答案。
-ms.openlocfilehash: 8fea73b73ab49dcfb0ac67935a9e027e87eb721a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38685347"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818844"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
@@ -133,7 +133,11 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>是否可以打开发送到共享邮箱的加密邮件？
 
-是的！ 共享邮箱支持加密邮件。 应用一些限制。
+是的！ 共享邮箱支持加密邮件。
+
+- 用户可以在共享邮箱中打开受保护的邮件，其中共享邮箱作为通讯组的一部分收到受保护的邮件。
+
+- 当用户使用 Outlook for Windows、Outlook for Mac 和 Outlook 网页版时，用户可以查看从电子邮件继承保护的附件。
 
 ## <a name="is-delegated-access-supported"></a>是否支持委派访问权限？
 

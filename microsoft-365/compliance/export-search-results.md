@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
-ms.openlocfilehash: 3d416e1e808ae6045f5510e0a051f038e4b38c06
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b3c978f57533623a6e58d22919430f4e02e78b77
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685284"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676779"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -34,7 +34,7 @@ ms.locfileid: "38685284"
   
 导出内容搜索结果包括准备结果，然后将其下载到本地计算机。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要导出搜索结果，您必须在安全 & 合规性中心中分配有导出管理角色。 此角色分配给内置电子数据展示管理员角色组。 它没有默认分配至组织管理角色组。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -44,15 +44,17 @@ ms.locfileid: "38685284"
     
   - Microsoft .NET Framework 4。7
     
-  - 支持的浏览器：
+- 您必须使用下列受支持的浏览器之一运行电子数据展示导出工具<sup>1</sup>：
+
+  - Microsoft Edge <sup>2</sup>
+  
+    或
+
+  - Microsoft Internet Explorer 10 及更高版本
     
-     - Microsoft Edge
-    
-        或
-    
-     - Microsoft Internet Explorer 10 及更高版本
-    
-    **注意：** Microsoft 不会为 ClickOnce 应用程序制造第三方扩展或加载项。 使用不受支持的浏览器导出搜索结果，但不支持第三方分机或加载项。 
+  > [!NOTE]
+  > <sup>1</sup> Microsoft 不会为 ClickOnce 应用程序制造第三方扩展或加载项。 使用不受支持的浏览器导出搜索结果，但不支持第三方分机或加载项。<br/>
+  > <sup>2</sup>由于最近对 Microsoft Edge 进行了更改，因此 ClickOnce 支持在默认情况下不再启用。 有关在 Edge 中启用 ClickOnce 支持的说明，请参阅[使用 Microsoft Edge 中的 Office 365 电子数据展示导出工具](configure-edge-to-export-search-results.md)。
     
 - 下载搜索结果时（如步骤2中所述），您可以通过在用于导出搜索结果的计算机上配置 Windows 注册表设置来提高下载速度。 有关详细信息，请参阅[在从 Office 365 导出电子数据展示搜索结果时提高下载速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
     

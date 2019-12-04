@@ -18,18 +18,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：应用 Azure 信息保护来保护高度机密的 SharePoint Online 团队网站中的文件。
-ms.openlocfilehash: b5251d393249e9023f6f437cb3df6c074ebdf436
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39637710"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668800"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>使用敏感度标签保护 SharePoint Online 文件
 
 使用本文中的步骤配置 Office 365 敏感度标签，从而为文件提供加密和各种权限。 你可以将这些文件添加到配置为高度机密保护的 SharePoint 库中。 或者，也可以直接从网站打开文件，并应用相应标签。 加密和权限保护会一直跟随文件，即使从网站上下载下来也是如此。 
 
-为 SharePoint 网站及其中文件配置高度机密保护的大型解决方案采用这些步骤。有关详细信息，请参阅[保护 SharePoint Online 网站和文件](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)。 
+为 SharePoint 网站及其中文件配置高度机密保护的大型解决方案采用这些步骤。有关详细信息，请参阅[保护 SharePoint Online 网站和文件](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)。 
 
 对于有些客户而言，不建议对 SharePoint Online 中的文件使用敏感度标签，但对于部分文件需要这种保护级别的客户，这提供了一种选择。
 
@@ -44,7 +44,7 @@ ms.locfileid: "39637710"
 
 - 如果需要将少量标签应用于全局和各个私人团队，请使用敏感度标签。
 
-- 如果你拥有大量标签，或者希望在高度管控标签下整理高度机密团队的标签，请使用敏感度子标签。
+- 如果你具有大量标签或者希望根据高级机密文件的常规用途标签整理高级机密团队的标签，请使用敏感度子标签。
 
 按照[这些说明](encryption-sensitivity-labels.md)，使用以下设置配置单独的标签或子标签：
 
@@ -67,7 +67,7 @@ ms.locfileid: "39637710"
 
 ## <a name="see-also"></a>另请参阅
 
-[保护 SharePoint Online 网站和文件](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[保护 SharePoint Online 网站和文件](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

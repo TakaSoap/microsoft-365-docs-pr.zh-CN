@@ -4,13 +4,14 @@ description: 已停用但仍可供你注册但将缩短支持寿命的设备
 keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ccc4d7e2fae0a8e5ee6e3a7d71fb55edc8f04930
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640583"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813872"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
 
@@ -23,7 +24,7 @@ ms.locfileid: "38640583"
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 若要在 Microsoft 托管桌面中注册，设备必须为以下模型之一，并满足或超过列出的 RAM、处理器系列和磁盘空间规范。 不支持任何其他自定义项。
 
-此处的设备链接仅供你参考。 如果要订购设备，请与商业渠道联系人合作，以确保选择正确的配置。
+
 
 >[!NOTE]
 >在此表中，"退休日期" 是 Microsoft 托管桌面根本不再支持此模型的日期。 在该日期，将从 Microsoft 托管桌面中删除此模型的所有注册设备，而不管它们何时注册都是如此。
@@ -32,9 +33,9 @@ ms.locfileid: "38640583"
 
 | 模型  | 最低规范  | 其他要求   | 退休日期 |
 |---------|---------|---------|---------|
-| [HP EliteBook 830/840/850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU  | **2023年2月15日** |
-|[Surface 膝上型电脑](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | 无 | **5月20日2022** |
-|[Surface Pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB RAM | 无 | **2022年6月15日** |
+| HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU  | **2023年2月15日** |
+|Surface 膝上型电脑| 256 GB/Intel i5/8 GB RAM | 无 | **5月20日2022** |
+|Surface Pro| 256 GB/Intel i5/8 GB RAM | 无 | **2022年6月15日** |
 
 
 此外，设备还必须：

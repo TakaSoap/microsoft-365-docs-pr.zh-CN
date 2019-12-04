@@ -1,7 +1,7 @@
 ---
 title: 美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 description: Microsoft 云服务符合美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6ea67a9214f5c52f02f7b4d5888b59971951d033
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7dae370f9fd41ba0a04dd4c327a238dac3841da3
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690182"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676649"
 ---
 # <a name="compliance-offering-national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>合规性服务：美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
@@ -26,7 +26,7 @@ ms.locfileid: "38690182"
 
 FICIC 的主要优先级是建立一组标准和做法，以帮助组织管理 cybersecurity 风险，同时实现业务效率。 NIST 框架解决 cybersecurity 风险，而无需为政府和私营部门组织提供其他法规要求。
 
-FICIC 引用了全球公认的标准，包括 NIST SP 800-53 在 NIST 的2014框架的附录 A 中发现的可[改进关键基础结构 Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)。 FICIC 框架中的每个控件都映射到 FedRAMP 中等比较基准中的相应 NIST 800-53 控件。
+FICIC 引用了全球公认的标准，包括 nist SP 800-53 在 NIST 框架的附录 A 中发现了[用于改善关键基础结构 Cybersecurity 的](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)附录 A。 FICIC 框架中的每个控件都映射到 FedRAMP 中等比较基准中的相应 NIST 800-53 控件。
 
 ## <a name="microsoft-and-the-nist-csf"></a>Microsoft 和 NIST CSF
 
@@ -37,11 +37,11 @@ NIST Cybersecurity Framework （CSF）是一个自愿的框架，其中包含用
 - [下载 Azure 安全性和合规性蓝图-NIST CSF 风险评估清单](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [了解有关合规性管理器中的适用于 Office 365 的 NIST CSF 评估的详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [适用于政府的 Dynamics 365](https://aka.ms/d365-compliance-list)
-- [Office 365 和 Office 365 美国政府版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 和 Office 365 US 政府计划](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audit-cycle-and-certification"></a>审核周期和证书
 
@@ -98,12 +98,12 @@ NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online
 
 - [Microsoft 云服务授权](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [将 Microsoft 网络产品映射到： NIST Cybersecurity Framework （CSF）、CIS 控件、ISO27001：2013和 HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
-- [用于改进关键基础结构的2014框架 Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)
+- [改进关键基础结构的框架 Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [总统执行官在加强 Cybersecurity 的联邦网络和关键基础结构方面的顺序](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf)。

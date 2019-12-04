@@ -7,7 +7,9 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,14 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: '了解如何将 Windows 设备升级到 Windows 10 专业版创意者更新。 '
-ms.openlocfilehash: 72522626d3d5cd836b47e896202e6c18c06fe0b1
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 7aaf1f64e93c05a0ffc7de47c8eab9c787b6c220
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718841"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812740"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>将 Windows 设备升级到 Windows 专业版创意者更新
+
+观看有关将 Windows 设备升级到 Windows 10 专业版的简短视频。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
+
+如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
 
 ## <a name="upgrade-to-windows-10-pro-creators-update"></a>升级到 Windows 10 专业版创意者更新
   
@@ -46,3 +54,6 @@ ms.locfileid: "38718841"
   
 请参阅[为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)，以完成 Android 和 iOS 设备的设置。 
   
+## <a name="see-also"></a>另请参阅
+
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -18,16 +18,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：为具有各种信息保护级别的 SharePoint Online 团队网站应用保留标签和数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: 4c9eb83cbde7d54706f109484257e97c22c4733c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: c40261df8203841e3627a0d7a0c09c7f88a02a6b
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39630998"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668870"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留标签和 DLP 保护 SharePoint Online 文件
 
-使用本文中的步骤针对基线、敏感和高度机密的 SharePoint Online 团队网站设计并部署保留标签和 DLP 策略。 有关三层保护的详细信息，请参阅[保护 SharePoint Online 网站和文件](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)。
+使用本文中的步骤针对基线、敏感和高度机密的 SharePoint Online 团队网站设计并部署保留标签和 DLP 策略。 有关三层保护的详细信息，请参阅[保护 SharePoint Online 网站和文件](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)。
   
 ## <a name="how-this-works"></a>工作原理
 
@@ -150,7 +150,7 @@ ms.locfileid: "39630998"
     
 14. 在“自定义策略提示和电子邮件通知”窗格中，单击“自定义策略提示文本”********。
     
-15. 在文本框中，键入或粘贴下列提示之一，具体取决于你是否正在使用敏感度标签来保护高度机密文件：
+15. 在文本框中，键入或粘贴下列提示之一，具体取决于你是否正在选择性地使用敏感度标签来保护敏感文件：
     
   - 要与组织外部的用户共享，请下载并打开文件。 依次单击“文件”、“保护文档”、“使用密码加密”，然后指定强密码。 通过单独的电子邮件或其他通信方式发送密码。
   - 高度机密文件已获加密保护。只有 IT 部门向其授予对这些文件的相应权限的外部用户，才能读取这些文件。

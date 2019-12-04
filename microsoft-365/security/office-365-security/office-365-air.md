@@ -4,7 +4,7 @@ keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动事件响应功能高级威胁防护计划2。
-ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673418"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813862"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>在 Office 365 中自动调查和响应威胁
 
@@ -35,17 +35,6 @@ ms.locfileid: "38673418"
 - [查看调查的详细信息](#view-details-of-an-investigation)
 - [查看和批准作为调查结果的操作](#review-and-approve-actions) 
 - [查看与调查相关的警报的详细信息](#view-details-about-an-alert-related-to-an-investigation)
-
-> [!NOTE]
-> 您必须具有适当的权限才能执行本文中所述的任务。 例如，您 myst 是全局管理员、安全管理员、安全操作员或安全读者。 [了解有关 Microsoft 365 安全中心角色和权限的详细信息](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
-
-以下订阅中包含空中：
-- Microsoft 365 E5
-- Microsoft 365 E5 安全版
-- Office 365 E5
-- Office 365 高级威胁防护（计划 2）
-
-如果你没有这些订阅之一，请[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
 
@@ -111,7 +100,7 @@ ms.locfileid: "38673418"
 
 使用以下资源对此进行设置：
 
-|资源  |说明  |
+|Resource  |说明  |
 |---------|---------|
 |[Office 365 管理 API 概述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |使用 Office 365 管理活动 API，可从 Office 365 和 Azure Active Directory 活动日志中获取各个用户、管理员、系统以及策略操作和事件的相关信息。         |
 |[Office 365 管理 API 入门](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |Office 365 管理 API 使用 Azure AD 为应用程序提供用于访问 Office 365 数据的身份验证服务。 请按照本文中的步骤进行设置。          |
@@ -120,10 +109,8 @@ ms.locfileid: "38673418"
 
 ## <a name="next-steps"></a>后续步骤
 
-[了解有关通知的详细信息](../../compliance/alert-policies.md)
-
-[手动查找和调查 Office 365 中提供的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
-
-[了解 Microsoft Defender ATP 中的空气](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
-[访问 Microsoft 365 路线图以了解即将推出和推出的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [了解如何获取空中和查看所需的权限](automated-investigation-response-office.md#how-to-get-air)
+- [了解有关通知的详细信息](../../compliance/alert-policies.md)
+- [手动查找和调查 Office 365 中提供的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
+- [了解 Microsoft Defender ATP 中的空气](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [访问 Microsoft 365 路线图以了解即将推出和推出的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)

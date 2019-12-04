@@ -4,15 +4,16 @@ description: 有关如何更新部署到 Microsoft 托管桌面设备的业务�
 keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7aca4713aae189e39133e08a1fbcad6fd75e6a70
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012407"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813852"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中管理业务线应用程序
 
@@ -41,7 +42,7 @@ ms.locfileid: "38012407"
 ## <a name="update-line-of-business-apps-in-intune"></a>更新 Intune 中的业务线应用程序
 
 **在 Intune 中更新业务线应用程序**
-1. 登录到[Azure 门户](https://azure.portal.com)。
+1. 登录到[Azure 门户](https://portal.azure.com)。
 2. 选择 "**所有服务** > "**Intune**。 Intune 位于 "**监控 + 管理**" 部分。
 3. 选择 "**客户端应用 > 应用**"。
 4. 在应用列表中查找并选择您的应用程序。

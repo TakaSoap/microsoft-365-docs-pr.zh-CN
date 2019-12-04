@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商业版的安装步骤概述。
-ms.openlocfilehash: 3447f06d031462a7bebc6f129238de9f0c5dee41
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721551"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812770"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
@@ -44,16 +44,15 @@ ms.locfileid: "38721551"
         - 您还可以在随后的管理中心[添加用户](add-users-m365b.md)。
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>步骤2：设置安全策略和配置设备 
 
-  - 使用[安装向导](set-up.md#protect-data-and-devices)配置设备和安全策略。 
+  - 使用[安装向导](set-up.md#protect-your-organization)配置设备策略。 
   - 您还可以在[管理员中心](view-policies-and-devices.md)和[Intune 门户](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)中添加更多或编辑它们。
-  - 除了安装向导中的安全设置之外，还可以通过添加以下设置来提高安全性：
+  - 安装向导还会设置基本威胁防护和数据丢失防护设置。
+  
+  除了安装向导中的安全设置之外，还可以通过添加以下设置来提高安全性：
 
       - **电子邮件恶意软件保护**
-      - **高级威胁防护（ATP）安全链接**
-      - **ATP 安全附件**
       - **ATP 反网络钓鱼**
       - **Exchange Online Archiving**
-      - **Data Loss Prevention (DLP)**
       - **Azure 信息保护（Plan1**）
 
           若要开始，请[设置高级安全策略](set-up-advanced-security.md)。
@@ -62,10 +61,12 @@ ms.locfileid: "38721551"
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>步骤3：设置和管理 Windows 10 设备
 
-   将 Windows 10 设备加入 Azure AD 时，将在[步骤 2](#step-2-set-up-security-policies-and-configure-devices)中设置的策略应用于该 AD。
+运行设置向导后，您需要 proctect 组织中的所有 Windwos 10 台计算机。
+  
+- Windows 10 专业版是 Microsoft 365 商业版的[先决条件](pre-requisites-for-data-protection.md)，但如果你有 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 pro，你的订阅让你能够[升级到 Windows 10 专业](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)版。
+- 按照[安全 windows 10 电脑](secure-win-10-pcs.md)中的步骤设置 windows 10 设备的策略。
 
-   - Windows 10 专业版是 Microsoft 365 商业版的[先决条件](pre-requisites-for-data-protection.md)，但如果你有 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 pro，你的订阅让你能够[升级到 Windows 10 专业](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)版。
-    - 使用[安装向导](set-up.md#protect-data-and-devices)为 Windows 10 设备配置策略。
+将 Windows 10 设备加入 Azure AD 时，您为 Windows 10 计算机设置的策略将应用于。 有关详细信息，请参阅为[Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)。
 
 ## <a name="step-4-install-office-365-business"></a>步骤4：安装 Office 365 商业版
 - 您可以使用[安装向导](set-up.md#deploy-office-365-client-apps)在 Windows 设备中自动安装 Office。
@@ -82,4 +83,6 @@ ms.locfileid: "38721551"
 
     - 如果你的企业具有包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以按照以下步骤为 Azure AD 联接的设备授予对这些资源的访问权限：[从 Microsoft 365 商业版中的 AZURE AD 加入设备访问本地资源](access-resources.md)。
 
-  
+## <a name="see-also"></a>另请参阅
+
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

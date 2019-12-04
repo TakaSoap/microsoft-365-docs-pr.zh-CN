@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ccb90c9b814c6e38793f48e671ddd07a16177045
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 9d9309c7840fd9ca6d0038444c40884dcb92ae83
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625187"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676659"
 ---
 # <a name="compliance-offering-it-grundschutz-compliance-workbook"></a>合规性产品/服务：IT-Grundschutz 合规性工作簿
 
@@ -63,7 +63,6 @@ Microsoft 云德国实际位于德国，并遵守德国隐私法的要求，严�
 - [IT-Grundschutz](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzHome/itgrundschutzhome_node.html;jsessionid=5ABC53411232B460035220974AE634C4.1_cid351)
 - [IT-Grundschutz Catalogues v.15](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/International/GSK_15_EL_EN_Draft.pdf?__blob=publicationFile&v=2) (2015)
 - [BSI 标准](https://www.bsi.bund.de/EN/Publications/BSIStandards/BSIStandards_node.html)
-- [IT-Grundschutz 认证流程](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzCertification/itgrundschutzcertification_node.html)
 - [Azure 德国 IT-Grundschutz 合规性工作簿](https://aka.ms/grundschutzworkbook)
 - [ISO/IEC 27001:2013 信息安全管理系统背景](offering-iso-27001.md)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

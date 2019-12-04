@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: '了解如何设置运行 Windows 10 Pro for Microsoft 365 商业用户的 Windows 设备。 '
-ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: b377c1e69d117b893b256880cd3b9972e33345c7
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718861"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812870"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 商业版用户设置 Windows 设备
 
@@ -37,7 +37,13 @@ ms.locfileid: "38718861"
   
 有关如何将 Windows 设备升级到 Windows 10 专业版创意者更新的详细信息，请按照本主题中的步骤操作：[将 Windows 设备升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)。
   
-请参阅[验证设备是否已连接到 AZURE AD](#verify-the-device-is-connected-to-azure-ad) ，以验证您是否可以升级，或确保升级有效。 
+请参阅[验证设备是否已连接到 AZURE AD](#verify-the-device-is-connected-to-azure-ad) ，以验证您是否可以升级，或确保升级有效。
+
+观看有关将 Windows 连接到 Microsoft 365 的简短视频。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
+
+如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>将 Windows 10 设备加入到组织的 Azure AD
 
@@ -115,3 +121,6 @@ ms.locfileid: "38718861"
 
 若要设置移动设备，请参阅[为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。若要设置设备保护或应用保护策略，请参阅[管理 Microsoft 365 商业版](manage.md)。
   
+## <a name="see-also"></a>另请参阅
+
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

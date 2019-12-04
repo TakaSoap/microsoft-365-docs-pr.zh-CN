@@ -3,7 +3,7 @@ title: Office 365 威胁调查和响应
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击，并搜索威胁指示器.
-ms.openlocfilehash: 047fb99a32fdd7e86572c5a96370f351da50f139
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 63b5579c5a3e52273064f85a901a6b592e7dd939
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673268"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813732"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -47,8 +47,6 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 ![威胁仪表板](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 若要查看和使用此仪表板，请在 Office &amp; 365 安全合规中心中，转到 "**威胁管理** \> "**仪表板**。
-
-若要详细了解 
   
 ### <a name="threat-explorer"></a>威胁资源管理器
 
@@ -74,7 +72,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 ### <a name="automated-investigation-and-response"></a>自动调查和响应
 
-使用自动调查和响应（空气）功能来节省与内容、设备和人员相关的时间和精力，以防止组织中的威胁带来风险。 只要触发了某些警报，或安全操作团队启动时，AIR 进程就可以开始。 若要了解详细信息，请参阅[Office 365 中的自动化事件响应](automated-investigation-response-office.md)。 
+使用自动调查和响应（空气）功能来节省与内容、设备和人员相关的时间和精力，以防止组织中的威胁带来风险。 只要触发了某些警报，或安全操作团队启动时，AIR 进程就可以开始。 若要了解详细信息，请参阅 [Office 365 中的自动事件响应](automated-investigation-response-office.md)。 
   
 ## <a name="threat-intelligence-widgets"></a>威胁智能小部件
 
@@ -99,15 +97,16 @@ Office 365 高级威胁防护计划2和企业版 E5 中包含 office 365 威胁�
     
 4. 向所有活动用户分配 Office 365 高级威胁防护计划2许可证。 （只有拥有此项许可证的用户才会显示在报告中，如 Explorer。）
     
-5. 为组织中将使用 Office 365 高级威胁防护的人员分配角色。 请参阅[向用户授予对 Office 365 安全&amp;合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)，并参阅下表：<br/>
+5. 为组织中将使用 Office 365 高级威胁防护的人员分配角色。 请参阅[向用户授予对 Office 365 安全&amp;合规中心的访问权限](grant-access-to-the-security-and-compliance-center.md)，并参阅下表：<br/><br/>
 
-  |**若要执行此活动 .。。** <br/> |**您必须具有以下角色之一** <br/> |  
+
+  |**若要执行此活动 .。。** <br/> |**您必须具有这些角色** <br/> |  
   |:-----|:-----|
-  |使用威胁仪表板（或新[安全仪表板](security-dashboard.md)）<br/> 查看有关最近或当前威胁的信息  <br/> |Office 365 全局管理员  <br/> 安全管理员（在安全&amp;合规中心中分配）  <br/> 安全读者（在安全&amp;合规中心中分配）  <br/> |
-  |使用[威胁浏览器（和实时检测）](threat-explorer.md)分析威胁  <br/> |Office 365 全局管理员  <br/> 安全管理员（在安全&amp;合规中心中分配）  <br/> 安全读者（在安全&amp;合规中心中分配）  <br/> |
-  |查看事件（也称为调查） <br/> 将电子邮件添加到事件  <br/> |Office 365 全局管理员  <br/> 安全管理员（在安全&amp;合规中心中分配）  <br/> 安全读者（在安全&amp;合规中心中分配）  <br/> |
-  |触发事件中的电子邮件操作  <br/> 查找和删除可疑电子邮件  <br/> |Office 365 全局管理员或安全管理员  <br/> 上述角色之一和搜索和清除（在安全&amp;合规中心中分配）  <br/> |
-  |将 Office 365 高级威胁防护计划2与 Microsoft Defender ATP 集成  <br/> 将 Office 365 高级威胁防护计划2与 SIEM 服务器集成  <br/> |Office 365 全局管理员  <br/> 安全管理员（在安全&amp;合规中心中分配）  <br/> 在其他应用程序（如 Microsoft Defender Security Center 或 SIEM server）中分配的相应角色  <br/> |
+  |使用威胁仪表板（或新[安全仪表板](security-dashboard.md)）<br/> 查看有关最近或当前威胁的信息  <br/> |以下任一项（在 Azure Active Directory 或 Office 365 安全&amp;合规中心中分配）： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> |
+  |使用[威胁浏览器（和实时检测）](threat-explorer.md)分析威胁  <br/> |以下任一项（在 Azure Active Directory 或 Office 365 安全&amp;合规中心中分配）： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> |
+  |查看事件（也称为调查） <br/> 将电子邮件添加到事件  <br/> |以下任一项（在 Azure Active Directory 或 Office 365 安全&amp;合规中心中分配）： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/>  <br/> |
+  |触发事件中的电子邮件操作  <br/> 查找和删除可疑电子邮件  <br/> |以下任一项（在 Azure Active Directory 或 Office 365 安全&amp;合规中心中分配）： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>---和---<br/>- **搜索和清除**（仅在 Office 365 安全&amp;合规中心中分配）  <br/> |
+  |将 Office 365 高级威胁防护计划2与 Microsoft Defender ATP 集成  <br/> 将 Office 365 高级威胁防护计划2与 SIEM 服务器集成  <br/> |以下任一项（在 Azure Active Directory 或 Office 365 安全&amp;合规中心中分配）： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>---和---<br/>在其他应用程序（如 Microsoft Defender Security Center 或 SIEM server）中分配的相应角色  <br/> |
    
 有关角色、角色组和权限的信息，请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
     
