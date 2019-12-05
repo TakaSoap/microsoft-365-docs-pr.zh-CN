@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 在服务事件期间采取了哪些措施来让你能够更好地准备业务连续性计划。
-ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031077"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831863"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>客户和云合作伙伴在企业业务连续性方面的责任
 
@@ -34,7 +34,7 @@ Microsoft 通过更新 Microsoft 365 管理门户上租户专用的服务运行�
 ## <a name="targeted"></a>有针对性
 在大多数情况下，当我们的监视系统检测到问题时，我们可确定受影响的客户群（范围从一名客户到区域或更大范围不等），并向这些客户发送必要的通知。 这可帮助你了解业务须知信息，而不受对你没有影响的不必要通知的干扰。 例如，如果特定邮箱数据库受到影响，我们能够准确确定哪些客户有用户位于受影响的基础结构中并向他们发送通知。 如果事件影响范围不明确，我们会向可能受到影响的范围最广的客户发送通知。
 
-## <a name="highly-avaliable"></a>高度可触达
+## <a name="highly-available"></a>高可用性
 Microsoft 维持了多个渠道可供客户用来获取服务状态通知。
 
 - 如果管理中心或其中的服务运行状况仪表板不可用，你可使用我们的[备份网站](https://status.office365.com/)监视服务状态。

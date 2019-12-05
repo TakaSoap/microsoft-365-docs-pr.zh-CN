@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对网络基础结构的条件。
-ms.openlocfilehash: ad54284fdbd00fef486a13a957af6f06cb6a7450
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370149"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831943"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第 1 阶段：网络基础结构退出条件
 
@@ -48,7 +48,7 @@ ms.locfileid: "37370149"
 如果需要，可在[步骤 2](networking-dns-resolution-same-location.md) 中进行设置以满足此要求。
 
 <a name="crit-networking-step3"></a>
-## <a name="optional-unneccessary-network-hairpins-are-removed"></a>可选：删除不必要的网络回流
+## <a name="optional-unnecessary-network-hairpins-are-removed"></a>可选：删除不必要的网络回流
 
 检查网络回流并为所有办公室确定这些回流对性能的影响。在可能的情况下删除网络回流，或与第三方网络或安全提供商协作，以实现与其网络对等的最优 Microsoft 365。
 

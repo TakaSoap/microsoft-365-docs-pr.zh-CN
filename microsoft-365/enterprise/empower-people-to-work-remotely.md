@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 配置基础结构和安全性，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 95b48112928902a046d837e5d02f025149028135
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 2544820b577b81062550a8c0a84513f2a8c28668
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929195"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831963"
 ---
 # <a name="empower-remote-workers"></a>为远程工作者提供强大功能
 

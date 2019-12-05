@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 开发云感知业务连续性计划时要考虑的事项。
-ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9f8b7f6950375fb976202a10da03662c3b2715a
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031067"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831665"
 ---
 # <a name="developing-your-continuity-plan"></a>开发连续性计划
 
@@ -26,7 +26,7 @@ ms.locfileid: "38031067"
 
 一般说来，业务连续性计划包括四个方面，即评估、计划、功能验证以及通信和协调。
 
-## <a name="assesment"></a>评估
+## <a name="assessment"></a>评估
 首先，你必须确定组织中的业务功能以及支持它们的服务和流程。 这包括完成业务影响分析（其中每个业务功能按照关键程度进行排名），以及确定每个业务功能所依赖的流程和服务。 下面是一个可参考的示例表，它有助于你开始使用自己的评估。
 
 **业务影响评估 (BIA) 示例**
@@ -49,7 +49,7 @@ ms.locfileid: "38031067"
 |该技术是否有一个已知的管理法规要求来推动特定的流程 SLA？ 如果是，请详细说明。|`details here`|
 |与此服务相关联的数据的丢失或泄露是否会触发重大事件？ 如果是，请详细说明。|`details here`|
 |服务对某些或全部关键功能和特征是否有解决方法或替代措施？ 如果是，请详细说明。|`details here`|
-|服务是否处理、存储或传输客户数据 (PII)？ 如果是，请详细说明。|`details here`|
+|服务是否处理、存储或传输客户数据（例如个人身份信息 (PII)）？ 如果是，请详细说明。|`details here`|
 |BIA 状态|`develop your own status classification, here are some examples: planned, started, in-progress, complete, on-hold, expired`|
 |完成日期|`the date this BIA was completed`|
 |BIA 推动者|`name of the person or group who is responsible for developing and maintaining this BIA`|

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的信息保护功能来保护其在云中的数字资产。
-ms.openlocfilehash: f5893414a0aab3d0ab89eb180f0c907d4379194c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673198"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831675"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -65,7 +65,7 @@ Contoso 使用以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
 4. 为敏感和高度管控数据创建了受保护的 SharePoint 网站，同时包含锁定访问权限的权限
 
-   敏感和高度管控网站均配置为[独立网站](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)，其中默认的 SharePoint Online 团队网站权限是自定义的。 敏感和高度管控的 SharePoint 网站还配置了相应的保留标签。 存储在高度管控 SharePoint 网站中的文件受高度管控标签的敏感度子标签保护。 有关详细信息，请参阅方案：[用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)。
+   敏感和高度管控网站均配置为具有其他权限限制的专用团队网站。 敏感和高度管控的 SharePoint 网站还配置了相应的保留标签。 存储在高度管控 SharePoint 网站中的文件受高度管控标签的敏感度子标签保护。 有关详细信息，请参阅方案：[用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)。
 
 5.  将数据从本地 SharePoint 网站和文件共享转移到新的 SharePoint 网站
 
