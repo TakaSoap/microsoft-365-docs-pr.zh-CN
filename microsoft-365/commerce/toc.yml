@@ -17,6 +17,7 @@
         - name: 升级订阅
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: 帐单和付款
+      expanded: true
       items:
         - name: 了解发票
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
@@ -28,8 +29,8 @@
           href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: 计费帐户
       items:
-        - name: 管理帐单帐户信息
-          href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
+        - name: 管理帐单帐户
+          href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
         - name: 将租户与我的计费帐户关联
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: 管理与我的合作伙伴的关系

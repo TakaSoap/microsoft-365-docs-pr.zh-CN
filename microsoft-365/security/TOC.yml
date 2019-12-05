@@ -1,0 +1,484 @@
+- name: Microsoft 365 安全
+  href: index.yml
+  items:
+    - name: 入门
+      items:
+        - name: 适用于 BDM 的 Microsoft 365 安全
+          href: Microsoft-365-security-for-bdm.md
+        - name: 安全功能分数
+          href: ./mtp/microsoft-secure-score.md
+        - name: 安全功能分数（预览版）
+          href: ./mtp/microsoft-secure-score-preview.md
+        - name: 首席信息安全官 (CISO) 研讨会培训
+          href: ./office-365-security/ciso-workshop.md
+          items:
+            - name: 模块 1 - Microsoft 网络安全简介
+              href: ./office-365-security/ciso-workshop-module-1.md
+            - name: 模块 2 - 安全管理
+              href: ./office-365-security/ciso-workshop-module-2.md
+            - name: 模块 3 - 标识和零信任用户访问
+              href: ./office-365-security/ciso-workshop-module-3.md
+            - name: 模块 4a - 威胁防护策略第 I 部分
+              href: ./office-365-security/ciso-workshop-module-4a.md
+            - name: 模块 4b - 威胁防护策略第 II 部分
+              href: ./office-365-security/ciso-workshop-module-4b.md
+            - name: 模块 5 - 信息保护
+              href: ./office-365-security/ciso-workshop-module-5.md
+    - name: 身份识别与设备访问配置
+      href: ../enterprise/microsoft-365-policies-configurations.md
+      items:
+        - name: 前提性工作
+          href: ../enterprise/identity-access-prerequisites.md
+        - name: 常见标识和设备访问策略
+          href: ../enterprise/identity-access-policies.md
+        - name: 面向来宾和外部用户的策略
+          href: ../enterprise/identity-access-policies-guest-access.md
+        - name: 推荐的 Teams 访问策略
+          href: ../enterprise/teams-access-policies.md
+        - name: 建议的 Exchange Online 访问策略
+          href: ../enterprise/secure-email-recommended-policies.md
+        - name: 建议的 SharePoint Online 访问策略
+          href: ../enterprise/sharepoint-file-access-policies.md
+    - name: Microsoft 威胁防护
+      items:
+        - name: 概述
+          items:
+            - name: 什么是 Microsoft 威胁防护？
+              href: mtp/microsoft-threat-protection.md
+            - name: Microsoft 365 安全中心
+              href: mtp/overview-security-center.md
+        - name: 在 Microsoft 365 中搜寻
+          href: ./mtp/hunting.md
+        - name: 报告
+          items:
+            - name: 监视和查看报表
+              href: ./mtp/monitoring-and-reporting.md
+            - name: 身份监视和报告
+              href: ./mtp/monitor-and-report-identities.md
+            - name: 数据监视和报告
+              href: ./mtp/monitor-data.md
+            - name: 设备监视和报告
+              href: ./mtp/monitor-devices.md
+            - name: 应用监视和报告
+              href: ./mtp/monitor-apps.md
+        - name: 通过 ServiceNow 管理票证
+          href: ./mtp/tickets.md
+    - name: Office 365 安全
+      items:
+        - name: 入门
+          items:
+            - name: Office 365 安全路线图
+              href: ./office-365-security/security-roadmap.md
+            - name: 配置 Office 365 租户以提高安全性
+              href: ./office-365-security/tenant-wide-setup-for-increased-security.md
+            - name: 新 Microsoft 365 安全中心
+              href: ./mtp/overview-security-center.md
+            - name: 安全与合规中心的权限
+              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
+            - name: 向用户授予对安全中心的访问权限
+              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
+        - name: 保护免遭威胁侵害
+          href: ./office-365-security/protect-against-threats.md
+          items:
+            - name: 反垃圾邮件和反恶意软件保护
+              href: ./office-365-security/anti-spam-and-anti-malware-protection.md
+              items:
+                - name: 高级垃圾邮件筛选选项
+                  href: ./office-365-security/advanced-spam-filtering-asf-options.md
+                - name: 出站邮件的高风险传递池
+                  href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
+                - name: 反恶意软件保护常见问题
+                  href: ./office-365-security/anti-malware-protection-faq-eop.md
+                - name: Office 365 中的反垃圾邮件和反恶意软件保护
+                  href: ./office-365-security/anti-malware-protection.md
+                - name: 反垃圾邮件保护常见问题解答
+                  href: ./office-365-security/anti-spam-protection-faq.md
+                - name: 避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中出现无效字符
+                  href: ./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md
+                - name: Exchange Online 中的安全发件人和阻止发件人列表
+                  href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
+                - name: Office 365 中电子邮件中的安全提示
+                  href: ./office-365-security/safety-tips-in-office-365.md
+                - name: 发件人被阻止发送出站垃圾邮件时的示例通知
+                  href: ./office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md
+                - name: 使用最终用户垃圾邮件通知释放和报告垃圾邮件隔离邮件
+                  href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
+                - name: 抵制发送到 Office 365 的垃圾邮件
+                  href: ./office-365-security/fighting-junk-email.md
+                - name: SharePoint Online 中的病毒检测
+                  href: ./office-365-security/virus-detection-in-spo.md
+                - name: Office 365 电子邮件反垃圾邮件保护
+                  href: ./office-365-security/anti-spam-protection.md
+                - name: 如何将策略和保护组合在一起
+                  href: ./office-365-security/how-policies-and-protections-are-combined.md
+                - name: 如何减少 Office 365 中的垃圾邮件
+                  href: ./office-365-security/reduce-spam-email.md
+                - name: 控制 Office 365 中的出站垃圾邮件
+                  href: ./office-365-security/outbound-spam-controls.md
+                - name: 使用 Office 365 垃圾邮件筛选器阻止垃圾邮件以避免出现漏报问题
+                  href: ./office-365-security/reduce-spam-email.md
+                - name: 零时差自动清除 - 防范垃圾邮件和恶意软件
+                  href: ./office-365-security/zero-hour-auto-purge.md
+                - name: 确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹
+                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: 向 Microsoft 报告垃圾邮件
+                  href: ./office-365-security/report-junk-email-messages-to-microsoft.md
+                - name: 管理邮件群发程序的安全发件人列表
+                  href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
+                - name: 配置反恶意软件策略
+                  href: ./office-365-security/configure-anti-malware-policies.md
+                - name: 配置反垃圾邮件策略
+                  href: ./office-365-security/configure-the-anti-spam-policies.md
+                - name: Create-block-sender-lists-in-office-365
+                  href: ./office-365-security/Create-block-sender-lists-in-office-365.md
+                - name: Create-safe-sender-lists-in-office-365
+                  href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
+                - name: 配置垃圾邮件筛选器策略
+                  href: ./office-365-security/configure-your-spam-filter-policies.md
+                - name: 配置连接筛选器策略
+                  href: ./office-365-security/configure-the-connection-filter-policy.md
+                - name: 配置出站垃圾邮件策略
+                  href: ./office-365-security/configure-the-outbound-spam-policy.md
+                - name: 发送垃圾电子邮件后，从受限用户门户删除用户
+                  href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+                - name: 垃圾邮件可信度
+                  href: ./office-365-security/spam-confidence-levels.md
+                - name: 在 Exchange Online 中修复错误代码 5.7.7 xx
+                  href: ./office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md
+                - name: 使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
+                  href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+                - name: 将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
+                  href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+                - name: Office 365 中的管理员提交
+                  href: ./office-365-security/admin-submission.md
+                - name: 将恶意软件和非恶意软件提交给 Microsoft 进行分析
+                  href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                - name: 使用除名门户将自己从 Office 365 阻止的发件人名单中删除
+                  href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: 反垃圾邮件邮件头
+                  href: ./office-365-security/anti-spam-message-headers.md
+            - name: Office 365 中的防钓鱼保护
+              href: ./office-365-security/anti-phishing-protection.md
+              items:
+                - name: 优化防钓鱼保护
+                  href: ./office-365-security/tuning-anti-phishing.md
+                - name: Office 365 中的 ATP 防钓鱼功能
+                  href: ./office-365-security/atp-anti-phishing.md
+                - name: 设置防钓鱼和 ATP 防钓鱼策略
+                  href: ./office-365-security/set-up-anti-phishing-policies.md
+                - name: Office 365 如何通过验证发件人地址来防止钓鱼
+                  href: ./office-365-security/how-office-365-validates-the-from-address.md
+            - name: Office 365 中的反欺骗保护
+              href: ./office-365-security/anti-spoofing-protection.md
+              items:
+                - name: 详细了解防欺骗智能
+                  href: ./office-365-security/learn-about-spoof-intelligence.md
+                - name: 演练欺骗智能见解
+                  href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
+                - name: 识别 Outlook.com 和 Outlook 网页版中的可疑邮件
+                  href: ./office-365-security/unverified-sender-feature.md
+            - name: 什么是 EOP？
+              href: ./office-365-security/what-is-eop.md
+              items:
+                - name: 支持通过 IPv6 发送的匿名入站电子邮件
+                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
+                - name: 在独立 EOP 中阻止垃圾邮件
+                  href: ./office-365-security/block-email-spam-in-EOPStandalone.md
+                - name: 在 EOP 中配置最终用户垃圾邮件通知
+                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
+                - name: 在 Exchange Online 中配置最终用户垃圾邮件通知
+                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
+                - name: 在 Outlook 网页版中报告垃圾电子邮件和钓鱼行为
+                  href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+                - name: 使用 Exchange Online Protection 保护本地邮箱
+                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
+                - name: 安装 Microsoft Outlook 的垃圾邮件报告外接程序
+                  href: ./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md
+                - name: 关闭 Outlook 网页版中的垃圾邮件报告
+                  href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
+                - name: 垃圾邮件和批量邮件之间有什么差异？
+                  href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: 在 Office 365 中隔离电子邮件
+              href: ./office-365-security/quarantine-email-messages.md
+              items:
+                - name: 以管理员身份管理隔离的邮件和文件
+                  href: ./office-365-security/manage-quarantined-messages-and-files.md
+                - name: 以用户身份查找并释放隔离的邮件
+                  href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+                - name: Office 365 的隔离常见问题解答
+                  href: ./office-365-security/quarantine-faq.md
+                - name: 在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
+                  href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
+            - name: 电子邮件验证和身份验证
+              items:
+                - name: Office 365 如何使用 SPF 来防止欺骗
+                  href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
+                - name: 在 Office 365 中设置 SPF 以防止欺骗
+                  href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
+                - name: 使用 DKIM 验证出站电子邮件
+                  href: ./office-365-security/use-dkim-to-validate-outbound-email.md
+                - name: 支持 DKIM 签名邮件验证
+                  href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
+                - name: 使用 DMARC 验证电子邮件
+                  href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: 安全与合规中心内的智能报表和见解
+              href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
+              items:
+                - name: 安全仪表板概述
+                  href: ./office-365-security/security-dashboard.md
+                  items:
+                    - name: 演练 - 从详细报表到见解
+                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
+                    - name: 演练 - 从见解到详细报表
+                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
+                    - name: 演练 - 从仪表板到见解
+                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
+                    - name: 创建报表计划
+                      href: ./office-365-security/create-a-schedule-for-a-report.md
+                    - name: 管理多个报表的计划
+                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
+                    - name: 设置并下载自定义报表
+                      href: ./office-365-security/set-up-and-download-a-custom-report.md
+                    - name: 下载现有报表
+                      href: ./office-365-security/download-existing-reports.md
+                - name: 启用或禁用 Office 365 中的安全提示
+                  href: ./office-365-security/enable-or-disable-safety-tips.md
+                - name: 查看恶意文件的相关信息
+                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+        - name: 高级威胁防护
+          href: ./office-365-security/office-365-atp.md
+          items:
+            - name: 查看新增功能
+              items:
+                - name: Office 365 ATP 的新增功能
+                  href: office-365-security/whats-new-in-office-365-atp.md
+            - name: 管理员的 ATP 设置任务
+              items:
+                - name: 全局管理员设置任务
+                  items:
+                    - name: 设置 ATP 安全链接策略
+                      href: ./office-365-security/set-up-atp-safe-links-policies.md
+                    - name: 设置 ATP 安全附件策略
+                      href: ./office-365-security/set-up-atp-safe-attachments-policies.md
+                    - name: 设置自定义“不重写”URL 列表
+                      href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
+                    - name: 设置自定义已阻止 URL 列表
+                      href: ./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md
+                - name: 角色管理员设置任务
+                  items:
+                    - name: 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
+                      href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
+            - name: 通过威胁分析了解最新的攻击活动
+              href: ./mtp/latest-attack-campaigns.md
+            - name: 查看和阅读 ATP 报告
+              href: ./office-365-security/view-reports-for-atp.md
+            - name: ATP 安全链接警告页是指什么
+              href: ./office-365-security/atp-safe-links-warning-pages.md
+            - name: 使用威胁跟踪器
+              href: ./office-365-security/threat-trackers.md
+            - name: 在 Office 365 中使用攻击模拟器
+              href: ./office-365-security/attack-simulator.md
+            - name: 通过威胁调查和响应保障用户安全
+              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
+            - name: 在 Office 365 中自动调查和响应威胁
+              href: ./office-365-security/office-365-air.md
+            - name: 查找和调查投递的恶意电子邮件
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: 威胁资源管理器（和实时检测）
+              href: ./office-365-security/threat-explorer.md
+              items:
+                - name: 威胁资源管理器视图
+                  href: ./office-365-security/threat-explorer-views.md
+            - name: 进行集成来增强安全性
+              items:
+                - name: 将 Office 365 ATP 与 Microsoft Defender ATP 集成
+                  href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
+                - name: SIEM 与 Office 365 ATP 集成
+                  href: ./office-365-security/siem-integration-with-office-365-ti.md
+            - name: ATP 的工作原理
+              items:
+                - name: ATP 安全链接的工作原理
+                  href: ./office-365-security/how-atp-safe-links-works.md
+                - name: ATP 安全附件的工作原理
+                  href: ./office-365-security/how-atp-safe-attachments-works.md
+                - name: 动态传递和预览详细信息
+                  href: ./office-365-security/dynamic-delivery-and-previewing.md
+                - name: 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
+                  href: ./office-365-security/atp-for-spo-odb-and-teams.md
+                - name: 威胁调查和响应的工作原理
+                  href: ./office-365-security/office-365-ti.md
+                - name: 自动调查和响应的工作原理
+                  href: ./office-365-security/automated-investigation-response-office.md
+        - name: 安全事件管理
+          items:
+            - name: Office 365 安全事件响应
+              href: ./office-365-security/office365-security-incident-response-overview.md
+            - name: 检测和修正 Office 365 中的非法授权
+              href: ./office-365-security/detect-and-remediate-illicit-consent-grants.md
+            - name: 在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
+              href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
+            - name: 响应 Office 365 中遭到入侵的电子邮件帐户
+              href: office-365-security/responding-to-a-compromised-email-account.md
+        - name: 邮件流
+          items:
+            - name: 启用报表消息加载项
+              href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: 安全与合规中心内的消息跟踪
+              href: ./office-365-security/message-trace-scc.md
+            - name: 安全与合规中心内的邮件流见解
+              href: ./office-365-security/mail-flow-insights-v2.md
+              items:
+                - name: 邮件流地图报表
+                  href: ./office-365-security/mfi-mail-flow-map-report.md
+                - name: 顶级域邮件流状态见解
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
+                - name: SMTP 身份验证客户端报表
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: 修复发件人域见解
+                  href: ./office-365-security/mfi-sender-domain-insight.md
+                - name: 未送达报告
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: 非接受域报告
+                  href: ./office-365-security/mfi-non-accepted-domain-report.md
+                - name: 入站和出站邮件流
+                  href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
+                - name: 队列警报和队列
+                  href: ./office-365-security/mfi-queue-alerts-and-queues.md
+                - name: 自动转发的消息报表
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: 邮件循环见解
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: 慢邮件流规则见解
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+        - name: 安全解决方案
+          items:
+            - name: Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南
+              href: ./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+              items:
+                - name: 为政治宣传活动开发/测试环境配置组和用户
+                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+                - name: 在政治宣传活动开发/测试环境中创建团队网站
+                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+            - name: 保护 Microsoft Teams 中的文件
+              href: ./office-365-security/secure-files-in-teams.md
+              items:
+                - name: 部署适用于三层文件保护的团队
+                  href: ./office-365-security/deploy-teams-three-tiers.md
+                - name: 使用保留标签和 DLP 保护团队中的文件
+                  href: ./office-365-security/deploy-teams-retention-DLP.md
+                - name: 使用敏感度标签保护团队中的文件
+                  href: ./office-365-security/deploy-teams-sensitivity-labels.md
+                - name: 为开发/测试环境中的文件提供安全的团队
+                  href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
+            - name: 保护 SharePoint Online 网站和文件
+              href: ./office-365-security/secure-sharepoint-online-sites-and-files.md
+              items:
+                - name: 在开发/测试环境中保护 SharePoint Online 网站
+                  href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
+            - name: SIEM 服务器集成
+              href: ./office-365-security/siem-server-integration.md
+            - name: Exchange Online Protection
+              href: ./office-365-security/exchange-online-protection-overview.md
+              items:
+                - name: EOP 功能
+                  href: ./office-365-security/eop-features.md
+                - name: EOP 中的功能权限
+                  href: ./office-365-security/feature-permissions-in-eop.md
+                - name: Exchange Online Protection 中的 Exchange 管理中心
+                  href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
+                - name: 设置 EOP 服务
+                  href: ./office-365-security/set-up-your-eop-service.md
+                  items:
+                    - name: 配置 EOP 的最佳做法
+                      href: ./office-365-security/best-practices-for-configuring-eop.md
+                    - name: 用于配置 EOP 和 Office 365 ATP 安全性的建议设置
+                      href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
+                    - name: 将 EOP 设置应用到多个租户的示例脚本
+                      href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
+                    - name: 将域和设置从一个 EOP 组织移动到另一个 EOP 组织
+                      href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+                    - name: 从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
+                      href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+                    - name: 退信式垃圾邮件消息和 EOP
+                      href: ./office-365-security/backscatter-messages-and-eop.md
+                - name: EOP 中的邮件策略和合规性
+                  href: ./office-365-security/messaging-policy-and-compliance-in-eop.md
+                  items:
+                    - name: EOP 中的审核报告
+                      href: ./office-365-security/auditing-reports-in-eop.md
+                    - name: 在 EOP 中运行管理员角色组报告
+                      href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
+                - name: 在 EOP 中管理收件人和管理角色组
+                  href: ./office-365-security/manage-recipients-and-admin-role-groups-in-eop.md
+                  items:
+                    - name: 在 EOP 中管理收件人
+                      href: ./office-365-security/manage-recipients-in-eop.md
+                    - name: 在 EOP 中管理邮件用户
+                      href: ./office-365-security/manage-mail-users-in-eop.md
+                    - name: 在 EOP 中管理组
+                      href: ./office-365-security/manage-groups-in-eop.md
+                    - name: 在 EOP 中管理管理员角色组权限
+                      href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+                - name: EOP 中的邮件流
+                  href: ./office-365-security/mail-flow-in-eop.md
+                  items:
+                    - name: 如何确保邮件不会标记为垃圾邮件
+                      href: ./office-365-security/how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md
+                    - name: 邮件流规则（传输规则）
+                      href: ./office-365-security/mail-flow-rules-transport-rules-0.md
+                    - name: 使用邮件流规则来配置批量电子邮件筛选
+                      href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
+                    - name: 使用邮件流规则来查看用户向 Microsoft 报告的内容
+                      href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+                    - name: 通过文件附件阻止降低恶意软件的威胁
+                      href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
+                    - name: 报告和邮件跟踪
+                      href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
+                    - name: Office 365 中的邮件流智能
+                      href: ./office-365-security/mail-flow-intelligence-in-office-365.md
+                - name: 隔离
+                  href: ./office-365-security/quarantine.md
+                  items:
+                    - name: 以管理员身份查找并释放隔离邮件
+                      href: ./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md
+                - name: 疑难解答信息和支持信息
+                  href: ./office-365-security/troubleshooting-and-support-information.md
+                  items:
+                    - name: 向 Office 365 发送故障排除邮件
+                      href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
+                    - name: EOP 帮助与支持
+                      href: ./office-365-security/help-and-support-for-eop.md
+                    - name: EOP 一般常见问题解答
+                      href: ./office-365-security/eop-general-faq.md
+                    - name: EOP 排队、延迟以及退回邮件的常见问题
+                      href: ./office-365-security/eop-queued-deferred-and-bounced-messages-faq.md
+                    - name: 委派管理常见问题解答
+                      href: ./office-365-security/delegated-administration-faq.md
+                - name: 参考：策略、实践和指南
+                  href: ./office-365-security/reference-policies-practices-and-guidelines.md
+                  items:
+                    - name: 向 Office 365 发送邮件
+                      href: ./office-365-security/sending-mail-to-office-365.md
+                    - name: 非客户服务
+                      href: ./office-365-security/services-for-non-customers.md
+        - name: 传统安全功能
+          items:
+            - name: S/MIME
+              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+              items:
+                - name: 用于邮件签名和加密的 S/MIME
+                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+                - name: 配置 Outlook 网页版的 S/MIME 设置
+                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
+                - name: 发送和接收经 S/MIME 签名和加密的电子邮件
+                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
+                - name: 出于 S/MIME 目的将用户证书同步到 Office 365
+                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
+                - name: 设置虚拟证书集合以验证 S/MIME
+                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
+        - name: Office 365 企业版
+          href: 'https://docs.microsoft.com/office-365-security/Enterprise'
+        - name: Office 365 商业版
+          href: 'https://docs.microsoft.com/office-365-security/admin/admin-home'
+    - name: Microsoft 365 合规性
+      href: 'https://docs.microsoft.com/microsoft-365/compliance/'

@@ -1,5 +1,5 @@
 ---
-title: 保护 Windows 10 电脑
+title: 保护 Windows 10 计算机
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,25 +20,30 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何在设置 Microsoft 365 商业版之后保护 Windows 10 电脑。
-ms.openlocfilehash: 6f599f3638ec9649be9464e1c51a531bf6c231b2
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39814250"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837316"
 ---
-# <a name="secure-windows-10-pcs"></a><span data-ttu-id="b1995-103">保护 Windows 10 电脑</span><span class="sxs-lookup"><span data-stu-id="b1995-103">Secure Windows 10 PCs</span></span>
+# <a name="secure-windows-10-computers"></a><span data-ttu-id="748e8-103">保护 Windows 10 计算机</span><span class="sxs-lookup"><span data-stu-id="748e8-103">Secure Windows 10 computers</span></span>
 
-<span data-ttu-id="b1995-104">在[设置](set-up.md)了 Microsoft 365 商业版之后，可以保护贵组织中的 Windows 10 计算机免受盗窃，以及病毒和恶意软件等恶意威胁的时间。</span><span class="sxs-lookup"><span data-stu-id="b1995-104">After you have [set up](set-up.md) Microsoft 365 Business, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.</span></span>
+<span data-ttu-id="748e8-104">在[设置](set-up.md)了 Microsoft 365 商业版之后，可以保护贵组织中的 Windows 10 计算机免受盗窃，以及病毒和恶意软件等恶意威胁的时间。</span><span class="sxs-lookup"><span data-stu-id="748e8-104">After you have [set up](set-up.md) Microsoft 365 Business, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.</span></span>
+<span data-ttu-id="748e8-105">观看此视频，了解有关如何设置策略以保护 Windows 10 计算机安全的概述。</span><span class="sxs-lookup"><span data-stu-id="748e8-105">Watch this video for an overview of how to set up policies to secure your Windows 10 computers.</span></span><br><br>
 
-## <a name="to-secure-your-windows-10-pcs"></a><span data-ttu-id="b1995-105">保护 Windows 10 电脑的安全</span><span class="sxs-lookup"><span data-stu-id="b1995-105">To secure your Windows 10 PCs</span></span>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-1. <span data-ttu-id="b1995-106">使用全局管理员凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。</span><span class="sxs-lookup"><span data-stu-id="b1995-106">Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials.</span></span> 
-2. <span data-ttu-id="b1995-107">在左侧导航中，选择 "**设置**"，然后在 "有**安全" 和 "安全性**" 下，选择 "**保护 Windows 10 计算机**"。</span><span class="sxs-lookup"><span data-stu-id="b1995-107">On the left nav, select **Setup** and then, under **Sing-in and security**, choose **Secure your Windows 10 computers**.</span></span> <span data-ttu-id="b1995-108">选择 "**查看**" 即可开始。</span><span class="sxs-lookup"><span data-stu-id="b1995-108">Choose **View** to get started.</span></span>
-3. <span data-ttu-id="b1995-109">在 "**保护 Windows 10 计算机**" 页上，阅读所有信息以了解您打开的内容以及用户的影响。</span><span class="sxs-lookup"><span data-stu-id="b1995-109">On the **Secure your Windows 10 computers** page, read all the information to understand what you are turning on, and what the user impact is.</span></span>
+<span data-ttu-id="748e8-106">如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。</span><span class="sxs-lookup"><span data-stu-id="748e8-106">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
-    <span data-ttu-id="b1995-110">在页面顶部，选择 "**开始**"。</span><span class="sxs-lookup"><span data-stu-id="b1995-110">On the top of the page, choose **Get started**.</span></span>
+## <a name="to-secure-your-windows-10-pcs"></a><span data-ttu-id="748e8-107">保护 Windows 10 电脑的安全</span><span class="sxs-lookup"><span data-stu-id="748e8-107">To secure your Windows 10 PCs</span></span>
 
-4. <span data-ttu-id="b1995-111">在 "Windows 10 设置" 中，选择要启用的选项。</span><span class="sxs-lookup"><span data-stu-id="b1995-111">On the Windows 10 setting, select the options you want to turn on.</span></span> <span data-ttu-id="b1995-112">有关这些设置的详细信息，请参阅[Secure Windows 10 设备](secure-windows-10-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="b1995-112">For more information about the settings, see [Secure Windows 10 devices](secure-windows-10-devices.md).</span></span> 
-5. <span data-ttu-id="b1995-113">选择要向组织中的哪些用户应用策略，然后选择 "**保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="b1995-113">Choose to who in your organization to apply the policy to, and then choose **Save changes**.</span></span>
+1. <span data-ttu-id="748e8-108">使用全局管理员凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。</span><span class="sxs-lookup"><span data-stu-id="748e8-108">Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials.</span></span> 
+2. <span data-ttu-id="748e8-109">在左侧导航中，选择 "**设置**"，然后在 "有**安全" 和 "安全性**" 下，选择 "**保护 Windows 10 计算机**"。</span><span class="sxs-lookup"><span data-stu-id="748e8-109">On the left nav, select **Setup** and then, under **Sing-in and security**, choose **Secure your Windows 10 computers**.</span></span> <span data-ttu-id="748e8-110">选择 "**查看**" 即可开始。</span><span class="sxs-lookup"><span data-stu-id="748e8-110">Choose **View** to get started.</span></span>
+3. <span data-ttu-id="748e8-111">在 "**保护 Windows 10 计算机**" 页上，阅读所有信息以了解您打开的内容以及用户的影响。</span><span class="sxs-lookup"><span data-stu-id="748e8-111">On the **Secure your Windows 10 computers** page, read all the information to understand what you are turning on, and what the user impact is.</span></span>
+
+    <span data-ttu-id="748e8-112">在页面顶部，选择 "**开始**"。</span><span class="sxs-lookup"><span data-stu-id="748e8-112">On the top of the page, choose **Get started**.</span></span>
+
+4. <span data-ttu-id="748e8-113">在 "Windows 10 设置" 中，选择要启用的选项。</span><span class="sxs-lookup"><span data-stu-id="748e8-113">On the Windows 10 setting, select the options you want to turn on.</span></span> <span data-ttu-id="748e8-114">有关这些设置的详细信息，请参阅[Secure Windows 10 设备](secure-windows-10-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="748e8-114">For more information about the settings, see [Secure Windows 10 devices](secure-windows-10-devices.md).</span></span> 
+5. <span data-ttu-id="748e8-115">选择要向组织中的哪些用户应用策略，然后选择 "**保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="748e8-115">Choose to who in your organization to apply the policy to, and then choose **Save changes**.</span></span>
 
