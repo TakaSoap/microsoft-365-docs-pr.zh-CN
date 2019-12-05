@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 12446dcb69b9f2324afcece9f230605fdcfcfdc8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034203"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831993"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
@@ -25,9 +25,7 @@ ms.locfileid: "38034203"
 
 进入 Microsoft 365 安全中心-用于监视和管理整个 Microsoft 标识、数据、设备、应用程序和基础结构中的安全性的新的家庭。 您可以在此处轻松查看组织的安全运行状况、配置设备、用户和应用，并获取可疑活动的警报。 Microsoft 365 安全中心专门为安全管理员和安全操作团队提供了更好的管理和保护其组织的目的。
 
-新的 Microsoft 365 安全中心和 Microsoft 365 合规性中心是专门为满足安全团队和合规性团队的需求而设计的专用工作区。 这些解决方案集成在 Microsoft 365 服务中，并提供可操作的见解，以帮助减少风险并保护您的数字空间。
-
-[了解详细信息并准备好获取](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance)新的 microsoft 365 安全中心和 Microsoft 365 合规性中心。
+新的 Microsoft 365 安全中心和[Microsoft 365 合规性中心](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)是专门为满足安全团队和合规性团队的需求而设计的专用工作区。 这些解决方案集成在 Microsoft 365 服务中，并提供可操作的见解，以帮助减少风险并保护您的数字空间。
 
 在 security.microsoft.com 访问 Microsoft 365 安全中心。  
 

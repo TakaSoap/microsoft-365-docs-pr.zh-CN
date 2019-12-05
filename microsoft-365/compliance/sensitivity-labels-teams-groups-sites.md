@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以将标签应用于 Microsoft 团队、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
-ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
+ms.openlocfilehash: ebe5e00c3458782e1874274cb508326968461ce3
+ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819128"
+ms.locfileid: "39822488"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
@@ -102,11 +102,9 @@ Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐�
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>敏感度标签部署疑难解答
 
-如果您在启用这些设置或对标签的说明进行了更改后遇到问题，请保存标签，等待几小时，然后再次尝试创建团队或 Office 365 组，以确保在您创建团队或 Office 365 组时遇到问题。
+如果在启用365了这些设置或对灵敏度标签的说明进行了更改之后遇到问题，请保存该标签，等待几小时，然后再次尝试创建团队或 Office 365 组。
 
-如果你仍然无法看到 SharePoint Online 中的新敏感度标签，请立即联系 Microsoft 支持部门。
-
-[了解如何发布敏感度标签](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+如果您仍无法从 SharePoint Online 中看到新的敏感度标签，请立即与 Microsoft 支持部门联系。
 
 ## <a name="apply-a-sensitivity-label-to-a-new-team"></a>将敏感度标签应用于新团队
 
@@ -173,7 +171,7 @@ Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐�
 - Yammer  
 - Stream  
 - 规划器  
-- Project  
+- 项目  
 - PowerBI  
 - 团队管理员中心  
 - Microsoft 365 管理中心  

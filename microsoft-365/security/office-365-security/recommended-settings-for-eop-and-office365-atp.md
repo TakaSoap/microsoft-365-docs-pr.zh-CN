@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615652"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837326"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -41,7 +41,7 @@ ms.locfileid: "39615652"
 |网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |高可信度网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |批量电子邮件检测操作|将邮件移动到 "垃圾邮件" 文件夹|隔离邮件||
-|将批量电子邮件阈值设置为|型|4|默认值为7，但我们建议大多数组织将其 mvoe 到至少6|
+|将批量电子邮件阈值设置为|6 |4 |默认值为7，但我们建议大多数组织将其向下移动到至少6|
 |隔离保留期|30 天|30 天||
 |安全提示|打开|打开||
 |允许的发件人|无|无||

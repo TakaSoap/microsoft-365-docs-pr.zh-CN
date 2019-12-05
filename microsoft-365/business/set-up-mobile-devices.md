@@ -15,30 +15,31 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 iPhone 或 Android 手机上安装 Office，Office 应用中的工作文件将受到 Microsoft 365 商业版的保护。
-ms.openlocfilehash: e09db43705d601df0c0b30a46ee36cf0295ecae3
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: d87ea714f578130d05be57d1f66270b306f37c7c
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718931"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831375"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 Business 用户设置移动设备
 
 按照标签中的说明在 iPhone 或 Android 手机上安装 Office。按照以下步骤操作后，你在 Office 应用中创建的工作文件将受到 Microsoft 365 商业版的保护。
 
-  
 此示例适用于 Outlook，但也适用于要安装的任何其他 Office 应用程序。
   
 ## <a name="set-up-mobile-devices"></a>设置移动设备
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-观看有关如何使用 Microsoft 365 商业版在 iOS 设备上设置 Office 应用的视频：
+观看有关如何使用 Microsoft 365 商业版在 iOS 设备上设置 Office 应用的视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
@@ -68,6 +69,12 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
+观看有关在 Android 设备上安装 Outlook 和 Office 的视频。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
+
+如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
+
 若要在 Android 手机上开始安装程序，请转到 "播放存储区"。
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
@@ -91,7 +98,9 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
 再次打开 Outlook，然后输入并确认 PIN。现在即可开始使用 Outlook 应用。
   
 ![Set  PIN for Outlook app in Android](media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
-  
+
+## <a name="see-also"></a>另请参阅
+
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+
 ---
-
-

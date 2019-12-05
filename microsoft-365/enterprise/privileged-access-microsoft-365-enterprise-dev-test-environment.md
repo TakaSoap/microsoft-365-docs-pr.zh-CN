@@ -13,23 +13,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的特权访问管理。
-ms.openlocfilehash: 68d542b3f97022abc65b94162f333e7059f614a8
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673338"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831813"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 Privileged Access Management
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 使用本文中的说明，可以配置特权访问管理以提高 Microsoft 365 企业版测试环境中的安全性。
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -64,7 +64,7 @@ ms.locfileid: "38673338"
 
 1. 在本地计算机上，使用您的测试环境的全局管理员帐户在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 Exchange online 远程 powershell 模块。
 
-2. 在 Exchange 管理 Powershell 中，为您的组织创建新的日记规则：
+2. 在 Exchange 管理 PowerShell 中，为您的组织创建新的日记规则：
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
@@ -101,15 +101,15 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>在特权访问策略中定义的 New-journalrule 任务的测试批准要求
 
-1. 在您的本地计算机上，在**microsoft Corporation** > **microsoft Exchange online powershell 模块**中打开并登录到 exchange online 远程 powershell 模块，使用您的测试环境的全局管理员帐户。
+1. 在您的本地计算机上，使用您的测试环境的全局管理员帐户在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 Exchange online 远程 powershell 模块。
 
-2. 在 Exchange 管理 Powershell 中，为您的组织创建新的日记规则：
+2. 在 Exchange 管理 PowerShell 中，为您的组织创建新的日记规则：
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
-3. 在 Exchange 管理 PowerShell 中查看 "Insuffient 权限" 错误：
+3. 在 Exchange 管理 PowerShell 中查看 "权限不足" 错误：
 
 ```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -155,7 +155,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. 在本地计算机上，使用您的测试环境的全局管理员帐户在**microsoft Corporation** > **microsoft Exchange online 远程 powershell 模块**中打开并登录到 Exchange online 远程 powershell 模块。
 
-2. 在 Exchange 管理 Powershell 中，为您的组织创建新的日记规则：
+2. 在 Exchange 管理 PowerShell 中，为您的组织创建新的日记规则：
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true

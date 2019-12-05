@@ -16,17 +16,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 帮助你的用户安装 Office 应用。
-ms.openlocfilehash: dd2d32ee04402ef977ee1530c20d77512c2d8336
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 73eb3ed9bb88dca4232865b2ecd9015441875c07
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320220"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831205"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>帮助你的用户在 Windows 10 设备上安装 Office
 
@@ -34,8 +36,14 @@ ms.locfileid: "38320220"
 
 你可以从 Microsoft 365 商业版管理中心快速轻松地在 Windows 10 电脑上安装 Office。
   
-若要了解这如何适用于以前安装的 Office 应用，请在开始之前阅读[准备 Office 客户端安装](prepare-for-office-client-deployment.md)。 
-  
+若要了解这如何适用于以前安装的 Office 应用，请在开始之前阅读[准备 Office 客户端安装](prepare-for-office-client-deployment.md)。
+
+观看有关安装 Office 应用程序的简短视频。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
+
+如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
+
 ## <a name="manage-office-deployments"></a>管理 Office 部署
 
 1. 转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>，并使用全局管理员凭据登录。 
@@ -51,4 +59,6 @@ ms.locfileid: "38320220"
     
       :::image type="content" source="media/sendemailtousers.png" alt-text="选择 "用户"，通过 Office 下载链接发送电子邮件。":::
 
+## <a name="see-also"></a>另请参阅
 
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何登录、设置权限以及了解 Microsoft 合规性分数的仪表板，这有助于简化和自动化风险评估。
-ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793646"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831175"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合规性分数（预览）设置
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 您的组织的 Microsoft 365 全局管理员可能是第一个访问合规性分数的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性得分时所述。
 
@@ -63,8 +63,6 @@ ms.locfileid: "38793646"
 
 1. 请转到[Microsoft 365 合规性中心](https://compliance.microsoft.com)并使用全局管理员帐户登录。
 2. 在左侧导航窗格中选择 "**权限**"。 在此处，您可以查看角色和分配权限。
-
-有关详细信息，请参阅[Microsoft 365 合规性中心中的角色和权限](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)。
 
 ## <a name="understand-the-compliance-score-dashboard"></a>了解合规性分数仪表板
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解计费配置文件如何支持发票。
 keywords: 计费配置文件、发票、费用、管理费用
-ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753541"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837386"
 ---
 # <a name="manage-billing-profiles"></a>管理计费配置文件
 对于从 Microsoft 购买产品和服务的商业客户，计费配置文件允许您自定义发票中包含的项目以及支付发票的方式。

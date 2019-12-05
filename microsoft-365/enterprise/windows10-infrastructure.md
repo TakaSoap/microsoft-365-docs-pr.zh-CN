@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 3cdb5fd6644d76a843e109ff53f73eb9ec4638f8
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 147dd0ec0276d685177ae389092ec18ace0d7bed
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627536"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831685"
 ---
-# <a name="phase-3-windows-10-enterprise"></a>第 3 阶段：Windows 10 企业版
+# <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
 
-![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![阶段 3：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更多和保持安全保护的工具。 Windows 10 企业版：
 
@@ -68,7 +68,7 @@ Windows 使用诊断数据提供丰富的可操作信息，以帮助您深入了
 
 Windows 10 提供了一些功能，可帮助保护抵御威胁、帮助保护设备和帮助访问控制。 使用 Windows 10 时，你可以从一开始就获得保护设备的关键安全功能。 Microsoft 365 E3 添加了诸如 Windows Hello 企业版、Windows Defender 应用程序控制和 Windows 信息保护等安全功能。 使用 Microsoft 365 E5，你可以从 Microsoft 365 E3 security 和基于云的安全功能以及 Microsoft Defender 高级威胁防护中获得所有保护。 
 
-若要了解有关使用 Windows 10 企业版获取的安全功能的详细信息，并获取有关如何部署、管理、配置三个关键 ecurity 功能并对其进行故障排除的指导，请参阅[步骤5：部署 Windows 10 企业版安全功能](windows10-enable-security-features.md)。
+若要了解有关使用 Windows 10 企业版获取的安全功能的详细信息，并获取有关如何部署、管理、配置三种关键安全功能以及排除这些问题的指导，请参阅[步骤5：部署 Windows 10 企业版安全功能](windows10-enable-security-features.md)。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 

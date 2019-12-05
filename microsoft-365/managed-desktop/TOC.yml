@@ -1,0 +1,115 @@
+- name: Microsoft 托管桌面
+  href: index.yml
+  items:
+    - name: 什么是 Microsoft 托管桌面？
+      href: intro/index.md
+      items:
+        - name: 角色和责任
+          href: intro/roles-and-responsibilities.md
+        - name: Microsoft 托管桌面的技术
+          href: intro/technologies.md
+        - name: Microsoft 托管桌面和 ITIL
+          href: MMD-and-ITSM.md
+    - name: Microsoft 托管桌面服务说明
+      href: service-description/index.md
+      items:
+        - name: 支持的区域和语言
+          href: service-description/regions-languages.md
+        - name: 产品生命周期
+          href: service-description/device-lifecycle.md
+        - name: 程序设备
+          href: service-description/device-list.md
+          items:
+            - name: 已存档的程序设备
+              href: service-description/archived-device-list.md
+        - name: 设备服务
+          href: service-description/device-services.md
+        - name: 设备配置
+          href: service-description/device-policies.md
+        - name: 安全性
+          href: service-description/security.md
+        - name: 更新
+          href: service-description/updates.md
+        - name: 支持
+          href: service-description/support.md
+        - name: 操作和监视
+          href: service-description/operations-and-monitoring.md
+        - name: 应用程序要求
+          href: service-description/mmd-app-requirements.md
+        - name: 服务更改和通信
+          href: service-description/servicechanges.md
+        - name: 服务计划的例外情况
+          href: service-description/customizing.md
+    - name: 做好注册 Microsoft 托管桌面的准备
+      href: get-ready/index.md
+      items:
+        - name: Microsoft 托管桌面的系统必备
+          href: get-ready/prerequisites.md
+        - name: 准备网络
+          href: get-ready/network.md
+        - name: 为 Microsoft 托管桌面准备本地资源访问权限
+          href: get-ready/authentication.md
+        - name: 为 Microsoft 托管桌面准备映射的驱动器
+          href: get-ready/mapped-drives.md
+        - name: 为 Microsoft 托管桌面准备证书和网络配置文件
+          href: get-ready/certs-wifi-lan.md
+        - name: 准备应用
+          href: get-ready/apps.md
+          items:
+            - name: 使用 Microsoft 咨询服务
+              href: get-ready/apps-MCS.md
+    - name: Microsoft 托管桌面入门
+      href: get-started/index.md
+      items:
+        - name: 在管理门户中添加和验证管理员联系人
+          href: get-started/add-admin-contacts.md
+        - name: 调整条件访问
+          href: get-started/conditional-access.md
+        - name: 分配许可证
+          href: get-started/assign-licenses.md
+        - name: 部署 Intune 公司门户
+          href: get-started/company-portal.md
+        - name: 启用企业状态漫游
+          href: get-started/enterprise-state-roaming.md
+        - name: 设置设备
+          href: get-started/set-up-devices.md
+          items:
+            - name: 自行注册新设备
+              href: get-started/register-devices-self.md
+              items:
+                - name: 合作伙伴注册设备的步骤
+                  href: get-started/register-devices-partner.md
+            - name: 自行注册现有设备
+              href: get-started/register-reused-devices-self.md
+        - name: 让用户做好使用设备的准备
+          href: get-started/get-started-devices.md
+        - name: 部署应用
+          href: get-started/deploy-apps.md
+          items:
+            - name: Microsoft Project 和 Microsoft Visio
+              href: get-started/project-visio.md
+    - name: 使用 Microsoft 托管桌面
+      href: working-with-managed-desktop/index.md
+      items:
+        - name: 使用见解
+          href: working-with-managed-desktop/insights.md
+          items:
+            - name: 使用情况见解
+              href: working-with-managed-desktop/usage-insights.md
+            - name: 可靠性见解
+              href: working-with-managed-desktop/reliability-insights.md
+        - name: 管理支持
+          href: working-with-managed-desktop/admin-support.md
+        - name: 最终用户支持
+          href: working-with-managed-desktop/end-user-support.md
+        - name: 管理应用
+          href: working-with-managed-desktop/manage-apps.md
+        - name: 可配置设置
+          href: working-with-managed-desktop/config-setting-overview.md
+          items:
+            - name: 可配置设置参考
+              href: working-with-managed-desktop/config-setting-ref.md
+            - name: 部署可配置设置
+              href: working-with-managed-desktop/config-setting-deploy.md
+    - name: Microsoft 托管桌面文档更改历史记录
+      href: change-history-managed-desktop.md

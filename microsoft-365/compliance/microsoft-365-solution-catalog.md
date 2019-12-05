@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a789aca60bbb34f6831c27afea4b1ec5d3135f59
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38685090"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831635"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Microsoft 365 解决方案目录概述（预览）
 
@@ -80,13 +80,11 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 - 若要访问 Microsoft 365 解决方案目录，请转[https://compliance.microsoft.com](https://compliance.microsoft.com)到并以全局管理员、合规性管理员或合规性数据管理员身份登录。 在屏幕左侧的导航窗格中选择 "**目录**"，以打开 "目录主页"。
 
-- 若要了解有关要求的详细信息，请参阅[必需的许可证和权限](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)。
-
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么我还看不到新的 Microsoft 365 解决方案目录？**
 
-首先，请确保您具有适当的[许可证和权限](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)。 然后，以全局管理员[https://compliance.microsoft.com](https://compliance.microsoft.com) 、合规性管理员或合规性数据管理员身份登录。 如果仍未在左侧导航窗格中看到新的解决方案目录，你很快就会有。
+首先，请确保您具有适当的许可证和权限。 然后，以全局管理员[https://compliance.microsoft.com](https://compliance.microsoft.com) 、合规性管理员或合规性数据管理员身份登录。 如果仍未在左侧导航窗格中看到新的解决方案目录，你很快就会有。
 
 **"解决方案目录" 页上列出的某些合规性功能在 Microsoft 365 合规性中心中不可用。我该怎么办？**
 

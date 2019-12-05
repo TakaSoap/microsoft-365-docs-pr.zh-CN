@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 合规性中心，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 619f18f1113d3c84cb9629c60fca6dd044d1de76
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 920de48cf81134a22f117ee8d1dea0160b0daaa8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38685103"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831645"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心概述
 
@@ -70,9 +70,7 @@ ms.locfileid: "38685103"
 
 - 若要访问 Microsoft 365 合规性中心，作为全局管理员、合规性管理员或合规性数据管理员， [https://compliance.microsoft.com](https://compliance.microsoft.com)请转到并登录。
 
-- 若要了解有关要求的详细信息，请参阅[必需的许可证和权限](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)。
-
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么我已进入 Office 365 安全 & 合规中心来完成某些任务，如定义某些策略？**
 
@@ -80,7 +78,7 @@ ms.locfileid: "38685103"
 
 **为什么我还看不到新的 Microsoft 365 合规中心？**
 
-首先，请确保您具有适当的[许可证和权限](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)。 然后，在处[https://compliance.microsoft.com](https://compliance.microsoft.com)登录。 如果你还没有看到新的合规性中心，你很快就会有。
+首先，请确保您具有适当的许可证和权限。 然后，在处[https://compliance.microsoft.com](https://compliance.microsoft.com)登录。 如果你还没有看到新的合规性中心，你很快就会有。
 
 **我的一些合规性功能在 Microsoft 365 合规性中心中不可用。我该怎么办？**
 
