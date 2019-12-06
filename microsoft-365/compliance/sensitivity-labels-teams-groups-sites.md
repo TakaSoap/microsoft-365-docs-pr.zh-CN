@@ -3,7 +3,7 @@ title: 将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/05/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以将标签应用于 Microsoft 团队、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: ebe5e00c3458782e1874274cb508326968461ce3
-ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
+ms.openlocfilehash: e69968ad5939069ca8ae1611f3bbdc674f9dd7de
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39822488"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871248"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
@@ -102,7 +102,7 @@ Microsoft 团队、Office 365 组和 SharePoint 网站的敏感度标签将逐�
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>敏感度标签部署疑难解答
 
-如果在启用365了这些设置或对灵敏度标签的说明进行了更改之后遇到问题，请保存该标签，等待几小时，然后再次尝试创建团队或 Office 365 组。
+如果在启用365了这些设置或对灵敏度标签的说明进行了更改之后遇到问题，请保存该标签，等待几小时，然后再次尝试创建团队或 Office 365 组。 有关信息，请参阅在[创建或更改灵敏度标签后计划回滚](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)。
 
 如果您仍无法从 SharePoint Online 中看到新的敏感度标签，请立即与 Microsoft 支持部门联系。
 

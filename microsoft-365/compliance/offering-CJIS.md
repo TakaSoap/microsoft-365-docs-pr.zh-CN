@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7fb31d007b7935d8a2beef93b80ca1958c7a3a27
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 8d28327e4627351c27140e954c2fa26571d1689d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668810"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860042"
 ---
-# <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>合规性服务：刑事审判信息服务（CJIS）安全策略
+# <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事审判信息服务（CJIS）安全策略
 
 ## <a name="cjis-overview"></a>CJIS 概述
 
@@ -40,7 +40,7 @@ Microsoft 已评估 Microsoft Azure 政府、Microsoft Office 365 美国政府�
 
 了解如何使用 Azure 安全性和合规性蓝图加快 CJIS 安全策略：[下载 Microsoft 政府云服务的 CJIS 实施指南](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -61,7 +61,7 @@ Alabama、阿拉斯加、Arkansas、亚利桑那、加利福尼亚、科罗拉�
 
 Microsoft 承诺满足适用的 CJIS 管理法规控制措施，允许刑事审判组织实施基于云的解决方案，并符合 CJIS 安全策略 V 5.8。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **在哪里可以请求符合性信息？**
 

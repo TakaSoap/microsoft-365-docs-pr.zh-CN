@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 206dbd57f5fc5c41c4238e13d9dca3072ef7d121
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676679"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859812"
 ---
-# <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>合规性产品/服务：金融行业信息系统中心 (FISC)
+# <a name="center-for-financial-industry-information-systems-fisc"></a>金融行业信息系统中心 (FISC)
 
 ## <a name="fisc-overview"></a>FISC 概述
 

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c773d2e4f69b415745e0a327e497ce26ed62c223
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 4d8587438d564d98d9b30897ebdf5bf8722a09c8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218671"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859482"
 ---
-# <a name="compliance-offering-service-organization-controls-soc"></a>合规性产品/服务：Service Organization Controls (SOC)
+# <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
 ## <a name="soc-1-2-and-3-reports-overview"></a>SOC 1、2 和 3 报告概述
 
@@ -65,7 +65,7 @@ Microsoft 已获得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 报告。 通常，SOC
 - 云应用安全
 - Graph
 - Intune
-- Microsoft Flow 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI
 - Stream

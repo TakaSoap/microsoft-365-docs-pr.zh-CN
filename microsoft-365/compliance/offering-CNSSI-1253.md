@@ -1,7 +1,7 @@
 ---
 title: 国内安全系统的委员会说明否。 1253（CNSSI 1253）
 description: Azure 政府符合 CNSSI 1253 安全控制要求提供高保密性、高完整性和高可用性的美国政府系统。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 232d8ddcdcd108d069247bc76850d7d17f18b629
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 12af7c84a922e3db0b7d234dce6f4095ba062a64
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690139"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860032"
 ---
-# <a name="compliance-offering-committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>合规性服务：国家安全系统上的委员会说明否。 1253（CNSSI 1253）
+# <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>国内安全系统的委员会说明否。 1253（CNSSI 1253）
 
 ## <a name="about-cnss-instruction-1253"></a>关于 CNSS 说明1253
 
@@ -48,7 +48,7 @@ Azure 政府 CNSSI 1253 认证合规性与 CNSSI 1253 高-高-高基线
 
 - [Azure 政府文档](https://docs.microsoft.com/azure/azure-government/)：教程和操作方法指南帮助开发人员使用 Azure 政府部署和管理服务。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **CNSSI 1253 适用于哪些人？**
 
@@ -62,11 +62,11 @@ Azure 政府（FedRAMP 程序包 ID F1603087869）已再次测试这些控件。
 
 - [什么是 Azure 政府？](https://docs.microsoft.com/azure/azure-government/documentation-government-welcome)
 - [Azure 政府](https://aka.ms/Azure-Government)
-- [Microsoft 和 FedRAMP](offering-fedramp.md)
+- [Microsoft 与 FedRAMP](offering-fedramp.md)
 - [Microsoft 和 DoD 临时授权](offering-DoD-DISA-L2-L4-L5.md)
 - [Microsoft 政府云](https://www.microsoft.com/enterprise/government)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf)。

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 95f3d0a8a502dc1a3100366d9c73419b2e7d06d4
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: df2c929523f651b7220fb0546928509dd8c0b6ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195423"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859582"
 ---
-# <a name="compliance-offering-multi-tier-cloud-security-mtcs-standard-for-singapore"></a>合规性产品/服务：新加坡多层云安全 (MTCS) 标准
+# <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>新加坡多层云安全 (MTCS) 标准
 
 ## <a name="mtcs-overview"></a>MTCS 概述
 
@@ -105,4 +105,4 @@ MTCS 总共有 535 种控制措施，涵盖三层安全级别：
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf)。

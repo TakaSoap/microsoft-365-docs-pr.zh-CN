@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 01af4fd17ecbf88377605101d05de662d37e4c12
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: e4591a6050dd6d1805b4d8904ce5f9b6497c3706
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622409"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859752"
 ---
-# <a name="compliance-offering-health-data-hosting-hds-france"></a>合规性产品/服务：法国健康数据托管 (HDS)
+# <a name="health-data-hosting-hds-france"></a>法国健康数据托管 (HDS)
 
 ## <a name="about-hds"></a>关于 HDS
 

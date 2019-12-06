@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f526845ccaee4ea914c3859d4a2a9c34068048
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+ms.openlocfilehash: 73a21ba3089646df55ad51a7918749f29691aad8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38763025"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859422"
 ---
-# <a name="compliance-offering-cloud-security-alliance-csa-star-self-assessment"></a>合规性产品/服务：云安全联盟 (CSA) STAR 自我评估
+# <a name="cloud-security-alliance-csa-star-self-assessment"></a>云安全联盟 (CSA) STAR 自我评估
 
 ## <a name="csa-star-self-assessment-overview"></a>CSA STAR 自我评估概述
 
@@ -67,8 +67,8 @@ CCM 与行业接受的安全标准、法规和控制措施框架相对应，例�
 **哪些 CSA STAR 保障级别配备有 Microsoft 商业云服务？**
 
 - **第 1 级别** - **CSA STAR 自我评估**：Azure、Dynamics 365 和 Office 365。 自我评估是云服务提供商免费提供的一项服务，可用于记录其安全控制措施，从而帮助客户对服务的安全性进行评估。
-- **第 2 级别** - **CSA STAR 认证**：Azure、Cloud App Security、Intune 和 Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会奖励该认证。
-- **第 3 级别** - **CSA STAR 证明**：Azure 和 Intune。 CSA 和美国注册会计师协会 (AICPA) 根据 AICPA（信任服务原则，AT 101）和 CSA CCM 共同提出了指导方针，供注册会计师 (CPA) 在参与 SOC 2 认证过程中采用。 STAR 证明根据这些指导方针提供，并在对云提供商进行严格独立评估后授予。
+- **第 2 级别** - **CSA STAR 认证**：Azure、Cloud App Security、Intune 和 Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
+- **第 2 个级别** - **CSA STAR 证明**：Azure 和 Intune。 CSA 和美国注册会计师协会 (AICPA) 根据 AICPA（信任服务原则，AT 101）和 CSA CCM 共同提出了指导方针，供注册会计师 (CPA) 在参与 SOC 2 认证过程中采用。 STAR 证明根据这些指导方针提供，并在对云提供商进行严格独立评估后授予。
 
 ## <a name="resources"></a>资源
 
@@ -85,5 +85,5 @@ CCM 与行业接受的安全标准、法规和控制措施框架相对应，例�
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf)。
 

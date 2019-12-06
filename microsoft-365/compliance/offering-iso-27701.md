@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8deb153fa7dd22c7a4346cf8098e1b184d76e4b7
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233475"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859372"
 ---
-# <a name="compliance-offering-isoiec-27701-privacy-information-management-system-pims"></a>合规性产品/服务：ISO/IEC 27701 隐私信息管理系统 (PIMS)
+# <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隐私信息管理系统 (PIMS)
 
 ## <a name="privacy-information-management-system-pims-overview"></a>隐私信息管理系统 (PIMS) 概述
 

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c6637db6b73bdc83972d90c938efede0b70938ad
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 208bf7d1e31f797ec24654d1c2cdfe374d1aafe3
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218711"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859562"
 ---
-# <a name="compliance-offering-my-number-act-japan"></a>合规性产品：个人编号法案（日本）
+# <a name="my-number-act-japan"></a>个人编号法案（日本）
 
 ## <a name="about-the-my-number-act"></a>关于个人编号法案
 
@@ -72,7 +72,7 @@ PPC 问答文件的[第 3-13 问部分](https://www.ppc.go.jp/legal/policy/faq/)
 - [Azure Compliance and the Japan Security and Privacy Requirements](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)（Azure 合规性和日本安全及隐私要求）
 - [Microsoft 隐私](https://privacy.microsoft.com/zh-CN/)
 - [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)
-- [Privacy considerations in the cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)（云端隐私保护的注意事项）
+- [云端隐私保护的注意事项](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息

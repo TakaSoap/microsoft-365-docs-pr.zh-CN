@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6009eb0300515e14444d8389df77c8705cb95a22
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 6e9aea06e6479a0aa4ec83d35d1fc8c7704e8b0f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622418"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859902"
 ---
-# <a name="compliance-offering-eu-us-and-swiss-us-privacy-shield-frameworks"></a>合规性产品/服务：欧盟-美国及瑞士-美国隐私保护框架
+# <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>欧盟-美国及瑞士-美国隐私保护框架
 
 ## <a name="about-the-eu-us-and-swiss-us-privacy-shield-frameworks"></a>关于欧盟-美国及瑞士-美国隐私保护框架
 

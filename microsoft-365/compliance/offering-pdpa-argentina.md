@@ -11,22 +11,22 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3c1bfd0d77eb2dd1a928355441cd8bb1ca5d574c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3bb251b888ba98bd1a815bde0aed0584a4a9bc13
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39625230"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859302"
 ---
-# <a name="compliance-offering-personal-data-protection-act-pdpa-argentina"></a>合规性产品/服务：阿根廷个人数据保护法 (PDPA)
+# <a name="personal-data-protection-act-pdpa-argentina"></a>阿根廷个人数据保护法 (PDPA)
 
 ## <a name="about-the-pdpa"></a>关于 PDPA
 
-根据阿根廷国家宪法，[阿根廷个人数据保护法第 25.326 号](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) 已于 2000 年执行，用来帮助保护个人数据隐私，并为用户提供对存储在公用和专用数据库和注册表中的任何信息的访问权限。 内阁中访问公共信息的阿根廷机构（[Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)，AAIP）负责强制实施这条法律。
+根据阿根廷国家宪法，[阿根廷个人数据保护法第 25.326 号](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) 已于 2000 年执行，用来帮助保护个人数据隐私，并为用户提供对存储在公用和专用数据库和注册表中的任何信息的访问权限。 内阁中访问公共信息的阿根廷机构（[Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)，AAIP）负责强制实施这条法律。
 
 PDPA 与用于保护数据隐私的欧洲立法模式一致，并且阿根廷是拉丁美洲第一个获得从欧盟进行数据传输的“充足”资格的国家/地区。
 
-2016 年，AAIP 发布了一条新法规（[条款 60-E/2016](https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm)（西班牙语）），用来管理个人数据的跨境传输。 在该规则下，批准了传输到数据控制器和数据处理器的模式（部分基于欧盟中的数据传输模式）。
+2016 年，AAIP 发布了一条新法规（[条款 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm)（西班牙语）），用来管理个人数据的跨境传输。 在该规则下，批准了传输到数据控制器和数据处理器的模式（部分基于欧盟中的数据传输模式）。
 
 ## <a name="microsoft-and-the-pdpa"></a>Microsoft 和 PDPA
 

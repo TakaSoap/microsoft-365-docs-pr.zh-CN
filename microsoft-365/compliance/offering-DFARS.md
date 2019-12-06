@@ -1,7 +1,7 @@
 ---
 title: 防御联邦收购法规补充（DFARS）
 description: Microsoft Azure 政府支持防御联邦获取法规（DFARS）要求。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: de25c210fb5b361cf9bba1d7efe15e27d386e200
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690129"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859972"
 ---
-# <a name="compliance-offering-defense-federal-acquisition-regulation-supplement-dfars"></a>合规性产品：防御联邦收购法规补充（DFARS）
+# <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>防御联邦收购法规补充（DFARS）
 
 ## <a name="dfars-overview"></a>DFARS 概述
 
@@ -36,7 +36,7 @@ Microsoft 政府云服务可帮助美国国防部工业和国防承包商客户�
 
 涵盖的针对 DoD 影响的服务级别5
 
-- [Azure 和 Azure 政府](https://aka.ms/AzureCompliance)
+- [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - [Office 365 美国政府版和 Office 365 美国政府国防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
@@ -45,7 +45,7 @@ Microsoft 政府云服务可帮助美国国防部工业和国防承包商客户�
 - [Azure P-ATO 字母签名2017年3月3日](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
 - [查看其他审核报告](https://aka.ms/auditreports)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **Microsoft Azure 政府和 Office 365 美国政府防御部门支持哪些 DFARS 要求？**
 
@@ -75,7 +75,7 @@ CDI 是控制的技术信息或其他信息（如 CUI 注册表中所述），�
 ## <a name="resources"></a>资源
 
 - [防御联邦收购法规补充（DFARS）](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
-- [适用于政府的 Microsoft 云](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Microsoft 政府云](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [受控制的未分类信息（CUI）](https://www.archives.gov/cui/registry/category-list)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -1,7 +1,7 @@
 ---
 title: 英国网络重点加上
 description: 网络重点加上一个英国政府定义的方案，可帮助组织抵御常见的网络安全威胁。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f30ec3181a90f259d6cafd9a3548d7a1ad5852
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 795a8b94c53aa94731d6c55786312b1baef6a685
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690137"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859982"
 ---
-# <a name="compliance-offering-united-kingdom-cyber-essentials-plus"></a>合规性服务：英国网络重点加上
+# <a name="united-kingdom-cyber-essentials-plus"></a>英国网络重点加上
 
 ## <a name="uk-cyber-essentials-plus-overview"></a>英国网络重点加上概述
 
@@ -47,8 +47,8 @@ Microsoft Azure 已获得网络 Essentials 加上徽章，符合[网络重点方
 ## <a name="resources"></a>资源
 
 - [网络重点方案：确定性框架](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf)。

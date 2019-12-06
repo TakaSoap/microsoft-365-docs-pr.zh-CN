@@ -1,7 +1,7 @@
 ---
 title: 美国国防部（DoD）临时授权
 description: Microsoft 已收到影响级别为5、4和2的国防部（DoD）临时授权。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ad34c497e82ef8e61e61d6953afcca5815f1bc06
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: d805c5dab7e8ebeb31ea94895356a6529bcd970d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690126"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859952"
 ---
-# <a name="compliance-offering-us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>合规性服务：美国国防部（DoD）临时授权，其影响级别为2、4和5
+# <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部（DoD）在影响级别2、4和5的临时授权
 
 ## <a name="dod-and-disa-overview"></a>DoD 和 DISA 概述
 
@@ -60,19 +60,19 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 ### <a name="covered-services-for-dod-impact-level-5"></a>涵盖的针对 DoD 影响的服务级别5
 
 - [适用于 DoD 的 Azure 政府](https://aka.ms/AzureCompliance)
-- [美国政府防御部门的 Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 美国政府防御版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### <a name="covered-services-for-dod-impact-level-4"></a>针对 DoD 影响级别4的涵盖的服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
-- [美国政府防御部门的 Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 美国政府防御版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### <a name="covered-services-for-dod-impact-level-2"></a>针对 DoD 影响级别2的涵盖的服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)
 - [Office 365 美国政府版](https://aka.ms/o365-compliance-framework)
-- Power BI 云服务作为独立服务或包含在 Office 365 品牌计划或套件中
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -82,9 +82,9 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 
 开始使用在政府中利用云的优势与防御蓝图的 Azure 安全性和合规性部门的优势。 此蓝图提供的工具和指南可帮助你立即开始构建符合 DoD 的解决方案。 [开始使用 Azure DoD 蓝图](https://aka.ms/Azure-Blueprint-DoD-NIST)。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
-**我可以在组织的认证过程中使用 Microsoft 合规性吗？**
+**能否在我组织的认证过程中使用 Microsoft 的合规性认证？**
 
 是。 所有 DoD 机构都可能依赖 Microsoft 云服务的认证，作为需要 DoD 授权的任何计划或计划的基础。 （这也适用于支持 DoD 并需要云服务的其他组织。）但是，您需要在这些服务之外为自己的组件实现自己的授权。
 
@@ -104,8 +104,8 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf)。

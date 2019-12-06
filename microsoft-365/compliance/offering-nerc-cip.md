@@ -1,7 +1,7 @@
 ---
 title: 北美电力可靠性协会 (NERC)
 description: Azure 和 Azure 政府适用于根据 NERC CIP 标准在云端部署特定工作负载的注册实体。
-keywords: Microsoft 365, 合规性, 产品
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e2a5ece0c6604ff6e2e9073557ee0f6c59f3694f
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: ceb87ace9d4ed832ea23ea7cddaf7e73ce0a17cb
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195403"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859353"
 ---
-# <a name="compliance-offering-north-american-electric-reliability-corporation-nerc"></a>合规性产品：北美电力可靠性协会 (NERC)
+# <a name="north-american-electric-reliability-corporation-nerc"></a>北美电力可靠性协会 (NERC)
 
 ## <a name="about-the-nerc"></a>关于 NERC
 

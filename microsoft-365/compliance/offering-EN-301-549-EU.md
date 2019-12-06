@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c882f427ea3d03a649751db514f8239676c6f7af
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 33bd7c3626e29471495e9d7d7d251fc65c4e7892
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39192524"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859932"
 ---
-# <a name="compliance-offering-european-standards-en-301-549-reports"></a>合规性产品/服务：欧洲标准 EN 301 549 报告
+# <a name="european-standards-en-301-549-reports"></a>欧洲标准 EN 301 549 报告
 
 ## <a name="about-en-301-549"></a>关于 EN 301 549
 
@@ -53,4 +53,4 @@ Microsoft 对 EN 301549 标准的遵守表明了其对所有客户的辅助功�
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf)。

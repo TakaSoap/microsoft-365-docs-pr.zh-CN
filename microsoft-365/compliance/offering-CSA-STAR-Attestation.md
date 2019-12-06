@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: be3355f23fcdde86ab2713e0021ed277c5047ddb
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: b5f6ae8d7047ab36867938b65bf546a5ffb7b0a6
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233595"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860012"
 ---
-# <a name="compliance-offering-cloud-security-alliance-csa-star-attestation"></a>合规性产品/服务：云安全联盟 (CSA) STAR 证明
+# <a name="cloud-security-alliance-csa-star-attestation"></a>云安全联盟 (CSA) STAR 证明
 
 ## <a name="csa-star-attestation-overview"></a>CSA STAR 证明概述
 
@@ -41,7 +41,7 @@ Microsoft Azure 和 Microsoft Intune 已被授予 CSA STAR 证明。 STAR 证明
 - 云应用安全
 - Graph
 - Intune
-- Microsoft Flow 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供 
 - Power BI
 
@@ -63,7 +63,7 @@ CCM 与行业接受的安全标准、法规和控制措施框架相对应，例�
 
 - **第 1 个级别**：**CSA STAR 自我评估**：Azure、Microsoft Dynamics 365 和 Microsoft Office 365。 [自我评估](offering-csa-star-self-assessment.md)是云服务提供商免费提供的一项产品/服务，可用于记录其安全控制措施，帮助客户对服务的安全性进行评估。
 - **第 2 个级别**：**CSA STAR 认证**：Azure、Cloud App Security、Intune 和 Microsoft Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的标准，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
-- **第 3 个级别**：**CSA STAR 证明**：Azure 和 Intune。 CSA 和 AICPA 协作，根据 AICPA（信任服务原则，AT 101）中的标准和 CSA CCM 提供了指导原则，供 CPA 在参与 SOC 2 认证过程中采用。 [STAR 证明](offering-CSA-STAR-Attestation.md)是基于这些指导原则并在对云提供商进行严格独立评估后授予的。
+- **第 2 个级别** - **CSA STAR 证明**：Azure 和 Intune。 CSA 和 AICPA 协作，根据 AICPA（信任服务原则，AT 101）中的标准和 CSA CCM 提供了指导原则，供 CPA 在参与 SOC 2 认证过程中采用。 [STAR 证明](offering-CSA-STAR-Attestation.md)是基于这些指导原则并在对云提供商进行严格独立评估后授予的。
 
 ## <a name="resources"></a>资源
 

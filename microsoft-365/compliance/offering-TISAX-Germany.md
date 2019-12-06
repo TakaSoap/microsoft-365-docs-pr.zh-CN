@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a96c362d9992e4d21e96ae475ebdd95a5aa6791d
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 89656556e4cba8fca12708e558aef3254c37bfba
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233695"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859452"
 ---
-# <a name="compliance-offering-trusted-information-security-assessment-exchange-tisax-germany"></a>合规性产品/服务：德国可信信息安全评估交换记住 (TISAX)
+# <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>德国可信信息安全评估交换机制 (TISAX)
 
 ## <a name="about-tisax"></a>关于 TISAX
 

@@ -1,7 +1,7 @@
 ---
 title: 商品先期备货贸易委员会（CFTC）规则1.31 （c-d）美国
 description: 独立评估事务所验证了 Azure 和 Office 365 可以帮助金融公司满足 CFTC Rule 1.31 记录保留和不可变的存储要求。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 72b5f8301dd32ed9188f52153498853720d883c1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: db357418b87e98ee0f649e48b1c00f9073d5e5de
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690141"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860062"
 ---
-# <a name="compliance-offering-commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>合规性服务：商品先期备货贸易委员会（CFTC）规则1.31 （c-d）美国
+# <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品先期备货贸易委员会（CFTC）规则1.31 （c-d）美国
 
 ## <a name="about-cftc-rule-13c-d"></a>关于 CFTC 规则1.3 （c-d）
 
@@ -56,19 +56,19 @@ Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语
 ## <a name="how-to-implement"></a>如何实现
 
 - [金融服务法规](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)：符合云计算和 Microsoft online services 的关键美国规章原则的合规性地图。
-- [风险评估 & 合规性指南](https://aka.ms/RiskGovernanceGuide)：为 Microsoft 云服务和调压器通知创建用于风险评估的管理模型。
-- [财务使用案例](https://docs.microsoft.com/azure/industry/financial/)：使用事例概述、教程和其他资源构建适用于金融服务的 Azure 解决方案。
+- [风险评估和合规性指南](https://aka.ms/RiskGovernanceGuide)：针对 Microsoft 云服务风险评估和监管机构通知创建一个管理模型。
+- [金融用例](https://docs.microsoft.com/azure/industry/financial/)：在案例概述、教程和其他资源的帮助下构建适合金融服务的 Azure 解决方案。
 
 ## <a name="resources"></a>资源
 
-- [Microsoft 金融服务业合规性计划](https://aka.ms/FSCP-Print)
+- [Microsoft 金融服务合规性计划](https://aka.ms/FSCP-Print)
 - [Microsoft 商业云服务和金融服务](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure 金融服务云风险评估工具](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Office 365 保留策略](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融服务博客](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf)。

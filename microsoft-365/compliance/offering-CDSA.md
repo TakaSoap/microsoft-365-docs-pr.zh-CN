@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ecc702232156d6dcef161f0c19a829641542b6e3
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 6158a9584e70615b1f20e5ffbc25c46a33cac8a9
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195631"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860072"
 ---
-# <a name="compliance-offering-content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>合规性产品/服务：内容交付和安全协会 (CDSA) 内容保护和安全性 (CPS) 标准
+# <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>内容交付和安全协会 (CDSA) 内容保护和安全性 (CPS) 标准
 
 ## <a name="cdsa-overview"></a>CDSA 概述
 
@@ -76,4 +76,4 @@ Microsoft 已成功完成六个月的 CDSA CPS 认证续订，并且 Azure 现�
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf)。

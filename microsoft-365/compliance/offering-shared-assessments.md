@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 56e033e2d9bf672262e9ef092aa8c0d17c89f2f8
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 3e6a7512c78eb4d63e3d8b76c48f6ac59e39d968
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625226"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859262"
 ---
-# <a name="compliance-offering-shared-assessments-program"></a>合规性产品/服务：共享评估计划
+# <a name="shared-assessments-program"></a>共享评估计划
 
 ## <a name="about-shared-assessments"></a>关于共享评估
 

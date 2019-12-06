@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 968e2196bec0ff853c8f68625ca078f384d8951d
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 264f592357c9030865d3acd6dc138878bedf41bf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233605"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860052"
 ---
-# <a name="compliance-offering-center-for-internet-security-cis-benchmarks"></a>合规性产品/服务：Internet 安全中心 (CIS) 基准
+# <a name="center-for-internet-security-cis-benchmarks"></a>Internet 安全中心 (CIS) 基准
 
 ## <a name="about-cis-benchmarks"></a>关于 CIS 基准
 
