@@ -1,0 +1,92 @@
+---
+title: 澳大利亚政府认证云服务列表（CCSL）
+description: Microsoft 在澳大利亚认证云服务列表中包含在未分类的散播限制标记（DLM）和受保护的数据中，基于 IRAP 评估和澳大利亚网络安全中心（ACSC）的认证。
+keywords: Microsoft 365, 合规性, 产品/服务
+localization_priority: None
+ms.prod: Microsoft-365-enterprise
+ms.topic: article
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+audience: itpro
+ms.collection: M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 0b4c31408f14bfca45358086678cb2d4e4f7eaae
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860082"
+---
+# <a name="australian-government-information-security-registered-assessor-program-irap"></a><span data-ttu-id="4ab78-104">澳大利亚政府信息安全注册评估员计划（IRAP）</span><span class="sxs-lookup"><span data-stu-id="4ab78-104">Australian Government Information Security Registered Assessor Program (IRAP)</span></span>
+
+<span data-ttu-id="4ab78-105">信息安全注册的评估员计划（IRAP）为针对澳大利亚政府策略和指南的系统安全的独立评估提供了一个全面的过程。</span><span class="sxs-lookup"><span data-stu-id="4ab78-105">The Information Security Registered Assessor Program (IRAP) provides a comprehensive process for the independent assessment of a system’s security against Australian government policies and guidelines.</span></span> <span data-ttu-id="4ab78-106">IRAP 目标是通过重点介绍存储、处理和传达澳大利亚的信息和通信技术基础结构，最大限度地提高澳大利亚联邦、州和本地政府数据的安全性。</span><span class="sxs-lookup"><span data-stu-id="4ab78-106">The IRAP goal is to maximize the security of Australian federal, state, and local government data by focusing on the information and communications technology infrastructure that stores, processes, and communicates it.</span></span>
+
+## <a name="irap-overview"></a><span data-ttu-id="4ab78-107">IRAP 概述</span><span class="sxs-lookup"><span data-stu-id="4ab78-107">IRAP overview</span></span>
+
+<span data-ttu-id="4ab78-108">信息安全注册的评估员程序（IRAP）由 ACSC 进行管理和管理。</span><span class="sxs-lookup"><span data-stu-id="4ab78-108">The Information Security Registered Assessors Program (IRAP) is governed and administered by the ACSC.</span></span> <span data-ttu-id="4ab78-109">IRAP 提供了用于从私有和公共扇区中为个人背书，以向澳大利亚政府提供网络安全评估服务的框架。</span><span class="sxs-lookup"><span data-stu-id="4ab78-109">IRAP provides the framework to endorse individuals from the private and public sectors to provide cyber security assessment services to the Australian government.</span></span> <span data-ttu-id="4ab78-110">已背书的 IRAP 评估员可提供对 ICT 安全的独立评估，建议缓解措施并突出显示剩余风险。</span><span class="sxs-lookup"><span data-stu-id="4ab78-110">Endorsed IRAP assessors can provide an independent assessment of ICT security, suggest mitigations and highlight residual risks.</span></span> <span data-ttu-id="4ab78-111">IRAP 提供了针对澳大利亚政府策略和准则独立评估系统安全的综合过程。</span><span class="sxs-lookup"><span data-stu-id="4ab78-111">IRAP provides a comprehensive process for the independent assessment of a system’s security against Australian government policies and guidelines.</span></span> <span data-ttu-id="4ab78-112">IRAP 目标是通过重点介绍存储、处理和传达澳大利亚的信息和通信技术基础结构，最大限度地提高澳大利亚联邦、州和本地政府数据的安全性。</span><span class="sxs-lookup"><span data-stu-id="4ab78-112">The IRAP goal is to maximize the security of Australian federal, state, and local government data by focusing on the information and communications technology infrastructure that stores, processes, and communicates it.</span></span>
+
+- <span data-ttu-id="4ab78-113">在2014中，Azure 作为第一个 IRAP 评估的云服务在澳大利亚，以墨尔本和悉尼的数据中心托管。</span><span class="sxs-lookup"><span data-stu-id="4ab78-113">In 2014, Azure was launched as the first IRAP-assessed cloud service in Australia, hosted from datacenters in Melbourne and Sydney.</span></span> <span data-ttu-id="4ab78-114">这两个数据中心使澳大利亚客户能够控制其客户数据的存储位置，同时还通过在两个位置进行备份而在灾难发生时提供增强的数据耐用性。</span><span class="sxs-lookup"><span data-stu-id="4ab78-114">These two datacenters give Australian customers control over where their customer data is stored, while also providing enhanced data durability in the event of a disaster through backups at both locations.</span></span>
+- <span data-ttu-id="4ab78-115">在早期2015中，Office 365 成为了完成此评估的第一个云生产效率服务。</span><span class="sxs-lookup"><span data-stu-id="4ab78-115">In early 2015, Office 365 became the first cloud productivity service to complete this assessment.</span></span>
+- <span data-ttu-id="4ab78-116">在4月2015，该 .ASD 宣布了 Azure 和 Office 365 的 CCSL 证书，在11月2015的 Dynamics 365。</span><span class="sxs-lookup"><span data-stu-id="4ab78-116">In April 2015, the ASD announced the CCSL certification of both Azure and Office 365, and in November 2015, of Dynamics 365.</span></span>
+- <span data-ttu-id="4ab78-117">在6月2017，.ASD 宣布了 Microsoft Azure 和 Office 365 的 recertification，以提供一组显著扩展的服务。</span><span class="sxs-lookup"><span data-stu-id="4ab78-117">In June 2017, ASD announced the recertification of Microsoft Azure and Office 365 for a greatly expanded set of services.</span></span>
+- <span data-ttu-id="4ab78-118">2018年4月，ACSC 宣布了 Azure 和 Office 365 在受保护的分类中的证书。</span><span class="sxs-lookup"><span data-stu-id="4ab78-118">In April 2018, the ACSC announced the certification of Azure and Office 365 at the PROTECTED classification.</span></span> <span data-ttu-id="4ab78-119">Microsoft 是第一个也是唯一一个实现此级别证书的公共云提供商</span><span class="sxs-lookup"><span data-stu-id="4ab78-119">Microsoft is the first and only public cloud provider to achieve this level of certification</span></span>
+- <span data-ttu-id="4ab78-120">2019年9月，Microsoft 的更新的 IRAP 评估范围已展开，以包含受保护分类中的113服务。</span><span class="sxs-lookup"><span data-stu-id="4ab78-120">In September 2019, Microsoft’s updated IRAP assessment scope expanded to include 113 services at the PROTECTED classification.</span></span>
+
+## <a name="ccsl-overview"></a><span data-ttu-id="4ab78-121">CCSL 概述</span><span class="sxs-lookup"><span data-stu-id="4ab78-121">CCSL overview</span></span>
+
+<span data-ttu-id="4ab78-122">认证云服务列表（CCSL）确定已通过澳大利亚政府成功完成 IRAP 评估的云服务，并已由澳大利亚网络安全中心（ACSC）授予认证。</span><span class="sxs-lookup"><span data-stu-id="4ab78-122">The Certified Cloud Services List (CCSL) identifies cloud services that have successfully completed an IRAP assessment by the Australian Government, and have been awarded certification by the Australian Cyber Security Centre (ACSC).</span></span> <span data-ttu-id="4ab78-123">该认证可识别已成功完成、审查和接受通过已注册的信息安全进行的全面评估的评估员，因此所有澳大利亚政府机构都可以使用它。</span><span class="sxs-lookup"><span data-stu-id="4ab78-123">The certification recognizes the successful completion, review, and acceptance of a comprehensive assessment undertaken by an Information Security Registered Assessor, so all Australian Government agencies can use it.</span></span> <span data-ttu-id="4ab78-124">在进行风险评估时，新的新西兰政府组织也可以参考 CCSL，因为它与新西兰的公司和澳大利亚政府 ISM 相一致。</span><span class="sxs-lookup"><span data-stu-id="4ab78-124">The CCSL can also be referenced by New Zealand Government organizations in conducting their risk assessments as the NZ ISM and Australian Government ISM are aligned.</span></span>
+
+<span data-ttu-id="4ab78-125">Microsoft 的 Azure、Dynamics 365 CRM 和 Office 365 将继续在 CCSL 中包含未分类：散播限制标记（DLM）（现在为官方：敏感）和受保护的数据（基于以前的 IRAP 评估和证书）澳大利亚网络安全中心（ACSC）。</span><span class="sxs-lookup"><span data-stu-id="4ab78-125">Microsoft’s Azure, Dynamics 365 CRM, and Office 365 continue to be included on the CCSL for both Unclassified: Dissemination Limiting Markers (DLM) (now OFFICIAL: Sensitive) and PROTECTED data based on the previous IRAP assessment and certification by the Australian Cyber Security Centre (ACSC).</span></span>
+
+## <a name="microsoft-and-irap"></a><span data-ttu-id="4ab78-126">Microsoft 和 IRAP</span><span class="sxs-lookup"><span data-stu-id="4ab78-126">Microsoft and IRAP</span></span>
+
+<span data-ttu-id="4ab78-127">2019年9月，Microsoft 已完成对 Azure、Office 365 和 Dynamics 365 客户参与的 IRAP 安全评估的年度更新。</span><span class="sxs-lookup"><span data-stu-id="4ab78-127">In September 2019 Microsoft completed its annual update to the IRAP security assessments of Azure, Office 365, and Dynamics 365 Customer Engagement.</span></span> <span data-ttu-id="4ab78-128">对于2019，Azure 评估的范围包括 Dynamics 365 客户接洽和 Azure DevOps。</span><span class="sxs-lookup"><span data-stu-id="4ab78-128">For 2019, the scope of the Azure assessment includes both Dynamics 365 Customer Engagement and Azure DevOps.</span></span>
+
+<span data-ttu-id="4ab78-129">Microsoft 在澳大利亚的服务评估涵盖了四个可用的 Azure 区域。</span><span class="sxs-lookup"><span data-stu-id="4ab78-129">The assessment of Microsoft’s services in Australia covers the four available Azure regions.</span></span> <span data-ttu-id="4ab78-130">对于政府和关键基础结构，我们已经部署了两个专门满足您在堪培拉中的 CDC 数据中心提供的需求的区域。[澳大利亚中部和澳大利亚中部 2](https://azure.microsoft.com/global-infrastructure/australia/)。</span><span class="sxs-lookup"><span data-stu-id="4ab78-130">For Government and critical infrastructure, we’ve deployed two regions designed specifically for your needs that are delivered from CDC Data Centres in Canberra; [Australia Central and Australia Central 2](https://azure.microsoft.com/global-infrastructure/australia/).</span></span> <span data-ttu-id="4ab78-131">在[Microsoft 服务信任门户](https://aka.ms/au-irap)的澳大利亚特定页面上提供的 "Azure IRAP 评估报告" 中详细介绍了澳大利亚区域之间的差异。</span><span class="sxs-lookup"><span data-stu-id="4ab78-131">The differences between the Australian regions are covered in detail in the Azure IRAP Assessment report, which is available on the Australia-specific page of [Microsoft Service Trust Portal](https://aka.ms/au-irap).</span></span>
+
+<span data-ttu-id="4ab78-132">对于每个评估，Microsoft 按照 ACSC 资格鉴定的 IRAP 评估员负责检查 Microsoft IT 运营团队、物理数据中心、入侵检测、加密、跨域和网络安全性所使用的安全控制和流程。范围内服务的访问控制和信息安全风险管理。</span><span class="sxs-lookup"><span data-stu-id="4ab78-132">For each assessment, Microsoft engaged an ACSC-accredited IRAP assessor who examined the security controls and processes used by Microsoft’s IT operations team, physical datacenters, intrusion detection, cryptography, cross-domain and network security, access control, and information security risk management of in-scope services.</span></span> <span data-ttu-id="4ab78-133">IRAP 评估发现，Microsoft 系统体系结构基于合理的安全原则，并且适用的澳大利亚政府信息安全手册（ISM）控件在评估服务中已就绪且完全有效。</span><span class="sxs-lookup"><span data-stu-id="4ab78-133">The IRAP assessments found that the Microsoft system architecture is based on sound security principles, and that the applicable Australian Government Information Security Manual (ISM) controls are in place and fully effective within our assessed services.</span></span>
+
+<span data-ttu-id="4ab78-134">ISM 使用的风险管理框架是从[国家标准和技术协会（NIST）特殊出版物（SP） 800-37](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)的 "风险管理框架" （针对信息系统和组织的风险管理框架）中进行绘制的，即安全和隐私的系统生命周期方法。</span><span class="sxs-lookup"><span data-stu-id="4ab78-134">The risk management framework used by the ISM draws from [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-37 Rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), “Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy.”</span></span> <span data-ttu-id="4ab78-135">在此风险管理框架中，可以使用各种风险管理标准（如[国际标准化组织（ISO）31000:2018、风险管理–指南）](https://www.iso.org/standard/65694.html)来确定风险和选择安全控制措施。</span><span class="sxs-lookup"><span data-stu-id="4ab78-135">Within this risk management framework, the identification of risks and selection of security controls can be undertaken using a variety of risk management standards, such as [International Organization for Standardization (ISO) 31000:2018, Risk management – Guidelines](https://www.iso.org/standard/65694.html).</span></span> <span data-ttu-id="4ab78-136">ISM 广泛使用的风险管理框架包含六个步骤：</span><span class="sxs-lookup"><span data-stu-id="4ab78-136">Broadly, the risk management framework used by the ISM has six steps:</span></span>
+
+- <span data-ttu-id="4ab78-137">定义系统</span><span class="sxs-lookup"><span data-stu-id="4ab78-137">Define the system</span></span>
+- <span data-ttu-id="4ab78-138">选择安全控件</span><span class="sxs-lookup"><span data-stu-id="4ab78-138">Select security controls</span></span>
+- <span data-ttu-id="4ab78-139">实施安全控制</span><span class="sxs-lookup"><span data-stu-id="4ab78-139">Implement security controls</span></span>
+- <span data-ttu-id="4ab78-140">评估安全控制措施</span><span class="sxs-lookup"><span data-stu-id="4ab78-140">Assess security controls</span></span>
+- <span data-ttu-id="4ab78-141">授权系统</span><span class="sxs-lookup"><span data-stu-id="4ab78-141">Authorize the system</span></span>
+- <span data-ttu-id="4ab78-142">监视系统</span><span class="sxs-lookup"><span data-stu-id="4ab78-142">Monitor the system</span></span>
+
+<span data-ttu-id="4ab78-143">与往常一样，其他补偿控件可由各个机构在代理授权之前的各个机构实施，并在后续使用这些云服务时实现。</span><span class="sxs-lookup"><span data-stu-id="4ab78-143">As always, additional compensating controls can be implemented on a risk-managed basis by individual agencies prior to agency authorization and subsequent use of these cloud services.</span></span>
+
+<span data-ttu-id="4ab78-144">Microsoft 的服务的 IRAP 评估有助于向政府及其合作伙伴的公共部门客户提供对受保护的处理、存储和传输实施适当且有效的安全控制和低于保密信息。</span><span class="sxs-lookup"><span data-stu-id="4ab78-144">The IRAP assessment of Microsoft’s services helps provide assurance to public sector customers in government and their partners that Microsoft has appropriate and effective security controls in place for the processing, storage, and transmission of PROTECTED and below classified information.</span></span> <span data-ttu-id="4ab78-145">这包括澳大利亚的大部分政府、医疗保健和教育数据。</span><span class="sxs-lookup"><span data-stu-id="4ab78-145">This includes the majority of government, healthcare, and education data in Australia.</span></span>
+
+## <a name="microsoft-in-scope-cloud-services"></a><span data-ttu-id="4ab78-146">Microsoft 范围内的云服务</span><span class="sxs-lookup"><span data-stu-id="4ab78-146">Microsoft in-scope cloud services</span></span>
+
+- [<span data-ttu-id="4ab78-147">Azure 和 Dynamics</span><span class="sxs-lookup"><span data-stu-id="4ab78-147">Azure and Dynamics</span></span>](https://aka.ms/AzureCompliance)
+- [<span data-ttu-id="4ab78-148">Office 365</span><span class="sxs-lookup"><span data-stu-id="4ab78-148">Office 365</span></span>](https://aka.ms/Office365ComplianceOfferings)
+
+## <a name="frequently-asked-questions"></a><span data-ttu-id="4ab78-149">常见问题解答</span><span class="sxs-lookup"><span data-stu-id="4ab78-149">Frequently asked questions</span></span>
+
+<span data-ttu-id="4ab78-150">**IRAP 适用于哪些人？**</span><span class="sxs-lookup"><span data-stu-id="4ab78-150">**To whom does the IRAP apply?**</span></span>
+
+<span data-ttu-id="4ab78-151">IRAP 适用于所有使用云服务的澳大利亚联邦、州和本地政府机构。</span><span class="sxs-lookup"><span data-stu-id="4ab78-151">IRAP applies to all Australian federal, state, and local government agencies that use cloud services.</span></span> <span data-ttu-id="4ab78-152">新的新西兰政府机构要求遵守与澳大利亚政府 ISM 类似的标准，因此他们还可以使用 IRAP 评估。</span><span class="sxs-lookup"><span data-stu-id="4ab78-152">New Zealand government agencies require compliance with a standard very similar to the Australian Government ISM, so they may also use the IRAP assessments.</span></span>
+
+<span data-ttu-id="4ab78-153">**我是否可以在组织的风险评估和审批过程中使用 Microsoft 合规性？**</span><span class="sxs-lookup"><span data-stu-id="4ab78-153">**Can I use Microsoft’s compliance in my organization’s risk assessment and approval process?**</span></span>
+
+<span data-ttu-id="4ab78-154">是。</span><span class="sxs-lookup"><span data-stu-id="4ab78-154">Yes.</span></span> <span data-ttu-id="4ab78-155">如果您的组织要求或正在寻求批准在 ISM 中运行，则可以在风险评估中使用 Azure 和 Office 365 的 IRAP 安全评估。</span><span class="sxs-lookup"><span data-stu-id="4ab78-155">If your organization requires or is seeking an approval to operate in line with the ISM, you can use the IRAP security assessments of Azure and Office 365 in your risk assessment.</span></span> <span data-ttu-id="4ab78-156">你是;但是，负责接洽评估员以评估在 Microsoft 平台上部署的实施，以及您自己的组织中的控件和流程。</span><span class="sxs-lookup"><span data-stu-id="4ab78-156">You are; however, responsible for engaging an assessor to evaluate your implementation as deployed on Microsoft’s platforms, and for the controls and processes within your own organization.</span></span>
+
+<span data-ttu-id="4ab78-157">**从哪里开始我的组织自己的风险评估和批准才能运行？**</span><span class="sxs-lookup"><span data-stu-id="4ab78-157">**Where do I start with my organization’s own risk assessment and approval to operate?**</span></span>
+
+<span data-ttu-id="4ab78-158">从["IRAP"](https://www.cyber.gov.au/irap/what-irap)开始，并在其后面提供以下信息：</span><span class="sxs-lookup"><span data-stu-id="4ab78-158">Start with [What is IRAP?](https://www.cyber.gov.au/irap/what-irap) and follow it with the information below:</span></span>
+
+- [<span data-ttu-id="4ab78-159">什么是 IRAP 评估？</span><span class="sxs-lookup"><span data-stu-id="4ab78-159">What is an IRAP assessment?</span></span>](https://acsc.gov.au/infosec/irap/irap_assessments.htm)
+- [<span data-ttu-id="4ab78-160">谁提供 IRAP 培训？</span><span class="sxs-lookup"><span data-stu-id="4ab78-160">Who provides IRAP training?</span></span>](https://acsc.gov.au/infosec/irap/training.htm)
+- [<span data-ttu-id="4ab78-161">合规性和不合规要求信息</span><span class="sxs-lookup"><span data-stu-id="4ab78-161">Compliance and noncompliance requirements information</span></span>](https://acsc.gov.au/infosec/irap/compliance.htm)
+
+## <a name="resources"></a><span data-ttu-id="4ab78-162">资源</span><span class="sxs-lookup"><span data-stu-id="4ab78-162">Resources</span></span>
+
+- [<span data-ttu-id="4ab78-163">澳大利亚政府 ISM</span><span class="sxs-lookup"><span data-stu-id="4ab78-163">Australian Government ISM</span></span>](https://acsc.gov.au/infosec/ism/index.htm)
+- [<span data-ttu-id="4ab78-164">Microsoft 服务信任门户（STP）的 "澳大利亚" 页面</span><span class="sxs-lookup"><span data-stu-id="4ab78-164">Australia page of the Microsoft Service Trust Portal (STP)</span></span>](https://aka.ms/au-irap)
+- [<span data-ttu-id="4ab78-165">澳大利亚安全和网关指南</span><span class="sxs-lookup"><span data-stu-id="4ab78-165">Australia Security and Gateway Guides</span></span>](https://docs.microsoft.com/azure/azure-australia)
+- [<span data-ttu-id="4ab78-166">经 .ASD 认证的云服务</span><span class="sxs-lookup"><span data-stu-id="4ab78-166">ASD Certified Cloud Services</span></span>](https://acsc.gov.au/infosec/irap/certified_clouds.htm)
+- [<span data-ttu-id="4ab78-167">Microsoft 信任中心内的合规性</span><span class="sxs-lookup"><span data-stu-id="4ab78-167">Compliance on the Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/compliance/compliance-overview)
