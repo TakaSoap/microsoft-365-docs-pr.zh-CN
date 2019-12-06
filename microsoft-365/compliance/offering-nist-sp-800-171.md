@@ -1,7 +1,7 @@
 ---
 title: NIST SP 800 –171
 description: Microsoft 云服务遵循 NIST SP 800 –171准则，以保护 nonfederal 信息系统中的受控制的未分类信息（CUI）。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8924905e83d1911dc30a420319d61940b75bfe05
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690181"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859342"
 ---
-# <a name="compliance-offering-nist-sp-800171"></a>合规性服务： NIST SP 800 –171
+# <a name="nist-sp-800171"></a>NIST SP 800 –171
 
 ## <a name="about-nist-sp-800171"></a>关于 NIST SP 800 –171
 
@@ -54,7 +54,7 @@ NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准�
 
 - [NIST sp 800 –171蓝图](https://aka.ms/NIST-800-171-Blueprint)：获取在 Azure 中实现符合 NIST SP 800 –171的工作负载支持。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **对于我的组织，我可以使用 Microsoft 合规性的 NIST SP 800 –171吗？**
 
@@ -68,8 +68,8 @@ NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准�
 - [NIST 800-171 3.3 审核和责任与 Office 365 GCC 高](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)
 - [Microsoft 和 NIST Cybersecurity 框架](offering-nist-csf.md)
 - [Microsoft 政府云](https://www.microsoft.com/enterprise/government)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf )。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf )。

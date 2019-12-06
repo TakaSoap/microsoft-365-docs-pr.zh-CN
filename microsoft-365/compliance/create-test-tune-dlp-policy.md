@@ -15,20 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685123"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866354"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
-
-**主体作者** <br/>
-Paul Cunningham，Microsoft MVP <br/>
-[实用365](https://practical365.com/) <br/>
-[@Practical365](https://twitter.com/practical365)<br/>
-__________________________________________________
 
 数据丢失防护是 Office 365 的一项合规性功能，旨在帮助您的组织防止对不需要的敏感信息进行有意或无意的暴露。 DLP 的根在 Exchange Server 和 Exchange Online 中，也适用于 SharePoint Online 和 OneDrive for Business。
 
@@ -217,6 +211,6 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![内容受限制的策略提示](media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>总结
 
 数据丢失防护策略对于所有类型的组织都很有用。 由于您对策略提示、最终用户覆盖和事件报告等的控制，测试某些 DLP 策略是一个低风险的实践。 您可以安静地测试一些 DLP 策略，以查看组织中已发生的冲突类型，然后使用较低的误报率手工创建策略，向用户介绍允许和不允许的情况，然后将 DLP 策略回滚到组织.

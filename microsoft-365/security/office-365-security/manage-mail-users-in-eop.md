@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: 38beaa283d4fa120a75f11accf22861e6598d6e0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034353"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871768"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -30,7 +30,7 @@ ms.locfileid: "38034353"
 > [!NOTE]
 > 你可以在 Microsoft 365 管理中心添加用户，但这些用户不能用作邮件收件人。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要打开 Exchange 管理中心，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "38034353"
 
 - 本主题中的 PowerShell 命令使用一种批处理方法，该方法会导致在几分钟内发生传播延迟，然后才能看到命令的结果。
 
-- 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
+- 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -59,10 +59,10 @@ ms.locfileid: "38034353"
 
   - **Outlook 安全发件人和阻止的发件人列表**：当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。 这允许用户在每个用户或每个域的基础上管理他们自己的白名单和黑名单。
 
-  - **基于目录的边缘阻止（DBEB）**：有关 DBEB 的详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
+  - **基于目录的边缘阻止（DBEB）**：有关 DBEB 的详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
 
   - **最终用户垃圾邮件隔离**：为了访问最终用户的垃圾邮件隔离，最终用户必须具有有效的 Office 365 用户 ID 和密码。 负责保护本地邮箱的 EOP 客户必须是有效的电子邮件用户。
- 
+
   - **邮件流规则**：使用目录同步时，会自动将现有的 Active directory 用户和组上载到云，然后可以创建邮件流规则（也称为传输规则），这些规则针对特定用户和/或组，而无需通过 EAC 或 Exchange Online Protection PowerShell 手动添加它们。 请注意， [动态通讯组](https://go.microsoft.com/fwlink/?LinkId=507569)无法通过目录同步进行同步。
 
 按[准备进行目录同步](https://go.microsoft.com/fwlink/p/?LinkId=308908)中所述，获取所需权限，并准备进行目录同步。

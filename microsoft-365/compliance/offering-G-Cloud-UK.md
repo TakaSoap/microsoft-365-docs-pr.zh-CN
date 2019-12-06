@@ -1,7 +1,7 @@
 ---
 title: 英国政府-云（G-云）
 description: Crown 商业服务已将 Microsoft 云服务分类续订为政府云。6。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a79b56bc5f6150439cd945f99b53a69b34a04a45
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 525ea4c129e351b157463efdf02280a1f55797ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690159"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859782"
 ---
-# <a name="compliance-offering-united-kingdom-government-cloud-g-cloud"></a>合规性服务：英国政府-云（G-云）
+# <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云（G-云）
 
 ## <a name="uk-g-cloud-overview"></a>英国 G-云概述
 
@@ -44,10 +44,10 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 - 云应用安全
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow 云服务作为独立服务或包含在 Office 365 或 Dynamics 365 品牌的计划或套件中
+- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Office 365： Exchange Online、SharePoint Online 和 Skype for Business Online
-- PowerApps 云服务作为独立服务或在 Office 365 或 Dynamics 365 标记计划或套件中包含
-- Power BI 云服务作为独立服务或包含在 Office 365 品牌计划或套件中
+- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -79,7 +79,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 [开始使用 Azure UK G-云蓝图](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **谁有资格使用数字市场？**
 
@@ -102,7 +102,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 **如何获取审计员的报告的副本？**
 
-[服务信任门户](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供了独立审核的符合性报告。 您可以使用门户请求审核报告，以便审计员能够将 Microsoft 结果与您自己的法律和法规要求进行比较。
+[服务信任门户](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便审计员能够将 Microsoft 结果与您自己的法律和法规要求进行比较。
 
 ## <a name="resources"></a>资源
 
@@ -111,8 +111,8 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 - [G-云安全原则](https://aka.ms/UK-G-Cloud)
 - [数字市场](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf)。

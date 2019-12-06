@@ -1,7 +1,7 @@
 ---
 title: 联邦信息处理标准（FIPS）发布140-2
 description: Microsoft 证明其加密模块符合美国联邦信息处理标准。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 91dab1a0f064d35e836a921864817e670fd998b5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690124"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859822"
 ---
-# <a name="compliance-offering-federal-information-processing-standard-fips-publication-140-2"></a>合规性服务：联邦信息处理标准（FIPS）发布140-2
+# <a name="federal-information-processing-standard-fips-publication-140-2"></a>联邦信息处理标准（FIPS）发布140-2
 
 ## <a name="fips-140-2-standard-overview"></a>FIPS 140-2 标准概述
 
@@ -36,11 +36,11 @@ Microsoft 保持积极的承诺来满足140-2 的要求，由于标准是在2001
 
 当前 CMVP FIPS 140-2 实施指南排除了云服务本身的 FIPS 140-2 验证;云服务提供商可以选择为构成云服务的计算元素获取并运行 FIPS 140 验证的加密模块。 Microsoft online services 包括已验证 FIPS 140-2 的组件，其中包括：
 
-- [Azure 和 Azure 政府](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
+- [Azure 与 Azure 政府](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
 - [Dynamics 365 和 Dynamics 365 政府](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
-- [Office 365、Office 365 美国政府版和 Office 365 美国政府防御](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
+- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **"FIPS 140 验证" 和 "FIPS 140 兼容" 的区别是什么？**
 
@@ -83,8 +83,8 @@ Azure 内置了硬件、商业可用操作系统（Linux 和 Windows）以及特
 - [FIPS Pub 140-2 加密模块的安全要求](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [NIST 加密模块验证程序](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows、Windows Server 和 FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf)。

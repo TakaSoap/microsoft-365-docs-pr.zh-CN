@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 82731d961fddf90c2b53bfead1b72a3f35df2b24
-ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
+ms.openlocfilehash: 09a9a47610915244ade77e1410024d7f055e390f
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37593877"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866614"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -47,11 +47,11 @@ ms.locfileid: "37593877"
     
 - 请确保您具有必要的权限。 若要定义（或编辑） ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例： <br>
 
-    |角色  |分配的位置/方式  |
+    |Role  |分配的位置/方式  |
     |---------|---------|
     |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
     |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
-    |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)） |
+    |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)） |
 
     若要了解有关角色和权限的详细信息，请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -75,7 +75,7 @@ ms.locfileid: "37593877"
     
 5. 在 "**应用于除电子邮件以外的内容的设置**" 部分，选择（或清除）要使用的选项。 （我们建议您选择所有选项。） 
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>步骤3：添加（或编辑）适用于特定电子邮件收件人的 ATP 安全链接策略
 
@@ -107,7 +107,7 @@ ms.locfileid: "37593877"
     
   - 在 "**应用**于" 部分中，选择 **"收件人是其成员**"，然后选择要包括在策略中的组。 选择 "**添加**"，然后选择 **"确定"**。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>步骤4：了解 ATP 安全链接策略选项
 

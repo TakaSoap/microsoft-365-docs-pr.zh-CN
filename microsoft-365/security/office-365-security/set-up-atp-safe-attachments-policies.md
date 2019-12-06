@@ -15,17 +15,17 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 定义安全附件策略以保护您的组织免受电子邮件中的恶意文件的攻击。
-ms.openlocfilehash: 80e698faf012f56b809cd88d33e0c8227723127e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0c81c8323db417d6e462812efe8686389139e915
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075320"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866634"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
 > [!IMPORTANT]
-> 本文适用于具有[Office 365 高级威胁防护](office-365-atp.md)的商业客户。 如果您是在 Outlook 中查找有关安全附件的信息的主用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全附件的信息的主用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 用户定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 只需查看一封电子邮件，就能判断附件是安全还是恶意的，并不总是容易。 您需要的最后一件事是您的组织的 wreaking havoc 的恶意附件。 幸运的是， [Office 365 高级威胁防护](office-365-atp.md)（ATP）可能会有所帮助。 您可以设置[ATP 安全附件](atp-safe-attachments.md)策略，以帮助确保组织免受不安全电子邮件附件的攻击。 
   
@@ -46,12 +46,12 @@ ms.locfileid: "37075320"
     |Role  |分配的位置/方式  |
     |---------|---------|
     |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
-    |Security Administrator |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
-    |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)） |
+    |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
+    |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)） |
     
     若要了解有关角色和权限的详细信息，请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- [了解 ATP 安全附件策略选项](#step-3-learn-about-atp-safe-attachments-policy-options)（在本文中）。 某些选项（如 "监视器" 或 "替换" 选项）可能会导致在扫描附件时出现电子邮件的轻微延迟。 若要避免邮件延迟，请考虑使用[动态传递和预览](dynamic-delivery-and-previewing.md)。
+- [了解 ATP 安全附件策略选项](#step-3-learn-about-atp-safe-attachments-policy-options)（本文中的）。 某些选项（如 "监视器" 或 "替换" 选项）可能会导致在扫描附件时出现电子邮件的轻微延迟。 若要避免邮件延迟，请考虑使用[动态传递和预览](dynamic-delivery-and-previewing.md)。
     
 - 最长允许30分钟，新的或更新的策略将传播到所有的 Office 365 数据中心。
     
@@ -77,7 +77,7 @@ ms.locfileid: "37075320"
     
       - 在 "**应用**于" 部分中，选择 **"收件人域**"，然后选择您的域。 选择 "**添加**"，然后选择 **"确定"**。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 考虑为您的组织设置多个 ATP 安全附件策略。 这些策略将按其在**ATP 安全附件**页面上列出的顺序应用。 在定义或编辑策略之后，至少需要30分钟才能使策略在整个 Microsoft 数据中心中生效。 
   
@@ -87,7 +87,7 @@ ms.locfileid: "37075320"
   
 |**选项**|**Effect**|**在需要执行以下操作时使用：**|
 |:-----|:-----|:-----|
-|**关** <br/> |不扫描附件中的恶意软件  <br/> 不延迟邮件传递  <br/> |对内部发件人、扫描仪、传真或仅发送已知、良好附件的智能主机关闭扫描  <br/> 避免路由内部邮件中不必要的延迟  <br/> **对于大多数用户，不建议使用此选项。它使您能够为一小组内部发件人关闭 ATP 安全附件扫描。**           |
+|**关闭** <br/> |不扫描附件中的恶意软件  <br/> 不延迟邮件传递  <br/> |对内部发件人、扫描仪、传真或仅发送已知、良好附件的智能主机关闭扫描  <br/> 避免路由内部邮件中不必要的延迟  <br/> **对于大多数用户，不建议使用此选项。它使您能够为一小组内部发件人关闭 ATP 安全附件扫描。**           |
 |**监视器** <br/> |传递包含附件的邮件，然后跟踪检测到的恶意软件所发生的情况  <br/> |查看检测到的恶意软件在您的组织中的位置  <br/> |
 |**阻止** <br/> |阻止包含检测到的恶意软件附件的邮件继续  <br/> 将带有检测到的恶意软件的邮件发送到[Office 365 中的隔离](manage-quarantined-messages-and-files.md)，安全管理员或分析师可以在其中查看并释放（或删除）这些邮件  <br/> 自动阻止将来的邮件和附件  <br/> |使用相同的恶意软件附件保护贵组织免受重复攻击  <br/> |
 |**Replace** <br/> |删除检测到的恶意软件附件  <br/> 通知收件人已删除附件  <br/> 将带有检测到的恶意软件的邮件发送到[Office 365 中的隔离](manage-quarantined-messages-and-files.md)，安全管理员或分析师可以在其中查看并释放（或删除）这些邮件  <br/> |对收件人可见由于检测到的恶意软件，附件已被删除  <br/> |

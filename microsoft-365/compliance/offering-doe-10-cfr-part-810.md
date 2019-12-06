@@ -1,7 +1,7 @@
 ---
 title: 美国 DoE 10 CFR Part 810
 description: 根据美国 DoE 10 CFR Part 810 的出口控制要求，客户可以使用 Azure 政府。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1e7f850a06a95f86c2afd5c8bccc77ff5431dda4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690166"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859402"
 ---
-# <a name="compliance-offering-us-doe-10-cfr-part-810"></a>合规性服务：美国 DoE 10 CFR Part 810
+# <a name="us-doe-10-cfr-part-810"></a>美国 DoE 10 CFR Part 810
 
 ## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft 和 DoE 10 CFR Part 810
 
@@ -44,7 +44,7 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 
 美国能源（DoE）出口控制规章[10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)管理未经分类的核技术和协助的出口。 它有助于确保从美国出口的核技术将仅用于 peaceful 目的。 修订后的部件810（最终规则）在3月2015生效，并由[国家核安全管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)进行管理。 第810.6 节指出，对于 "通常授权" 的敏感核技术以及那些需要特定授权（如寻求协助）的支持和传输，都需要特定的 DoE 授权。涉及敏感的核技术，如扩充和重型生产）。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **美国核法规委员会的 10 CFR Part 110 规章是否适用于 Azure 政府？**
 
@@ -61,11 +61,11 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 ## <a name="resources"></a>资源
 
 - [Azure 云服务和美国出口控制](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- [Microsoft 和 FedRAMP](offering-fedramp.md)
+- [Microsoft 与 FedRAMP](offering-fedramp.md)
 - [Microsoft 和 DoD](offering-dod-disa-l2-l4-l5.md)
 - [Microsoft 政府云](https://www.microsoft.com/enterprise/government)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf)。

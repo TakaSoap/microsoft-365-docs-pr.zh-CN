@@ -1,7 +1,7 @@
 ---
 title: 保留印度银行（RBI）和印度的保险费和开发机构（IRDAI）
 description: Microsoft 已发布指导来帮助印度的金融机构与云采用情况配合使用。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5e6af9be34fe5b14c84e8ba6cc9a55510baab92d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c88cfbfc9237e6e9a43dc8b143af015ba377ad17
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690165"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859492"
 ---
-# <a name="compliance-offering-reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>合规性产品：保留印度银行（RBI）和印度的保险费和开发机构（IRDAI）
+# <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>保留印度银行（RBI）和印度的保险费和开发机构（IRDAI）
 
 ## <a name="about-rbi-and-irdai"></a>关于 RBI 和 IRDAI
 
@@ -40,8 +40,8 @@ ms.locfileid: "38690165"
 
 Microsoft 清单可帮助印度中的财务公司进行 Microsoft 商业云服务的截止时间评估，包括：
 
-- 上下文管理环境的概述。
-- 一个检查表，它规定了要解决的问题并将 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 服务与这些法规义务对应起来。 检查表可用作一个工具，用于根据规章框架衡量合规性，并提供用于记录合规性的内部结构，并帮助客户对 Microsoft 商业云服务进行自己的风险评估。
+- 对应用情景法规环境的概述。
+- 一个检查表，它规定了要解决的问题并将 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 服务与这些法规义务对应起来。 该清单可以用作度量是否符合法规框架的工具，并提供用于记录合规性的内部结构，帮助客户自行对 Microsoft 业务云服务进行风险评估。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
@@ -52,24 +52,24 @@ Microsoft 清单可帮助印度中的财务公司进行 Microsoft 商业云服�
 ## <a name="how-to-implement"></a>如何实现
 
 - [印度的合规性检查表](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)：金融公司可以帮助执行 Microsoft 商业云服务的风险评估。
-- [风险评估 & 合规性指南](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)：为 Microsoft 云服务和调压器通知创建用于风险评估的管理模型。
+- [风险评估和合规性指南](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)：针对 Microsoft 云服务风险评估和监管机构通知创建一个管理模型。
 - [Azure 的财务用例](https://docs.microsoft.com/azure/industry/financial/)：用例概述、教程和其他资源为金融服务构建 Azure 解决方案。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
-**是否有必须包含在云服务提供商的合同中的必需条款？**
+**在与云服务提供商签订的合同中是否必须包含某些强制性条款？**
 
 是。 上面引用的准则自己金融机构必须纳入其云服务合同中的一些特定点。 [检查表](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)的第2部分（第70页）将这些内容与 Microsoft 合同文档中要解决的部分进行对应。
 
 ## <a name="resources"></a>资源
 
 - [Microsoft 和 MeitY](offering-meity-india.md)
-- [Microsoft 金融服务业合规性计划](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Microsoft 金融服务合规性计划](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [Microsoft 商业云服务和金融服务](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure 金融服务云风险评估工具](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf)。

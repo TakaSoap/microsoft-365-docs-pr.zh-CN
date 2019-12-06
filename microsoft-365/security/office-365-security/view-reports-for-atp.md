@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 了解如何在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
-ms.openlocfilehash: d5f0958d199684a9d6ca6bfe4ed01c0ab9102a2a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076112"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866404"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -29,7 +29,7 @@ ms.locfileid: "37076112"
 ![安全&amp;合规中心仪表板可帮助您了解高级威胁防护的工作情况](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 ATP 报告包括以下内容：
-- [威胁防护状态报告](#threat-protection-status-report)
+- [威胁防护状态](#threat-protection-status-report)
 - [ATP 文件类型报告](#atp-file-types-report)
 - [ATP 邮件处置报告](#atp-message-disposition-report)
 - [实时检测或资源管理器](threat-explorer.md)（取决于您是否拥有 OFFICE 365 ATP 计划1或2）
@@ -37,11 +37,11 @@ ATP 报告包括以下内容：
 
 阅读本文，了解有关 ATP 报告以及如何使用它们的概述。
   
-## <a name="threat-protection-status-report"></a>威胁防护状态报告
+## <a name="threat-protection-status-report"></a>威胁防护状态
 
 **威胁防护状态**报告是一个视图，它将有关检测到的恶意内容和恶意电子邮件的信息，以及[Exchange Online Protection](exchange-online-protection-overview.md) （EOP）和 Office 365 ATP （）和[Office ATP](office-365-atp.md)结合在一起。 此报告可用于查看一段时间内的检测（最多90天），并使安全管理员能够确定趋势或确定策略是否需要调整。 
 
-威胁防护状态报告提供了包含恶意内容的独特电子邮件的聚合计数，如反恶意软件引擎阻止的文件或网站地址（Url）、[零小时自动清除（ZAP）](zero-hour-auto-purge.md)和 ATP 功能（如[Atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[atp 反网络钓鱼功能](atp-anti-phishing.md)。 
+威胁防护状态报告提供了包含恶意内容的独特电子邮件的聚合计数，如反恶意软件引擎阻止的文件或网站地址（Url）、[零小时自动清除（ZAP）](zero-hour-auto-purge.md)和 atp 功能（如[atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[atp 反网络钓鱼功能](atp-anti-phishing.md)）。 
 
 > [!NOTE]
 > 拥有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](exchange-online-protection-eop.md) （EOP）的客户可以使用威胁防护状态报告;但是，在 ATP 客户的威胁防护状态报告中显示的信息可能包含不同的 EOP 客户可能看到的数据。 例如，ATP 客户的威胁防护状态报告将包含有关[在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](atp-for-spo-odb-and-teams.md)的信息。 此类信息特定于 ATP，因此具有 EOP 但不是 ATP 的客户将不会在其威胁防护状态报告中看到这些详细信息。
@@ -92,11 +92,11 @@ ATP 报告包括以下内容：
 
 |报告  |详细信息  |
 |---------|---------|
-|**浏览器**或**实时检测**（Office 365 ATP 计划2客户拥有资源管理器;Office 365 ATP 计划1客户具有实时检测。| [威胁浏览器（和实时检测）](threat-explorer.md)       |
+|**浏览器**或**实时检测**（Office 365 ATP 计划2客户拥有资源管理器;Office 365 ATP 计划1客户具有实时检测。| [威胁资源管理器（和实时检测）](threat-explorer.md)       |
 |**电子邮件安全报告**，如主要发件人和收件人报告、欺骗邮件报告和垃圾邮件检测报告。 | [查看安全&amp;合规性中心中的电子邮件安全报告](../../compliance/view-email-security-reports.md)        |
-|**ATP 安全链接 URL 跟踪**（这是使用 PowerShell 生成的报告。）此报告显示过去七（7）天的 ATP 安全链接操作的结果。 |[UrlTrace cmdlet 参考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
-|**EOP 和 ATP 结果**（这是使用 PowerShell 生成的自定义报表）。 此报告包含域、日期、事件类型、方向、操作和邮件计数等信息。  | [MailTrafficATPReport cmdlet 参考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
-|**EOP 和 ATP 检测**（这是使用 PowerShell 生成的自定义报表）。 此报告包含有关电子邮件或文件中的恶意文件或 Url、网络钓鱼企图、模拟和其他潜在威胁的详细信息。   | [MailDetailATPReport cmdlet 参考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
+|**ATP 安全链接 URL 跟踪**（这是使用 PowerShell 生成的报告。）此报告显示过去七（7）天的 ATP 安全链接操作的结果。 |[UrlTrace cmdlet 参考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace) |
+|**EOP 和 ATP 结果**（这是使用 PowerShell 生成的自定义报告）。 此报告包含域、日期、事件类型、方向、操作和邮件计数等信息。  | [MailTrafficATPReport cmdlet 参考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport) |
+|**EOP 和 ATP 检测**（这是使用 PowerShell 生成的自定义报告）。 此报告包含有关电子邮件或文件中的恶意文件或 Url、网络钓鱼企图、模拟和其他潜在威胁的详细信息。   | [MailDetailATPReport cmdlet 参考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)        |
 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 报告所需的权限是什么？
@@ -108,7 +108,7 @@ ATP 报告包括以下内容：
     - 安全管理员（可在 Azure Active Directory 管理中心中分配（[https://aad.portal.azure.com](https://aad.portal.azure.com)））
     - 安全读者
 
-- 对于 Exchange Online，必须在 Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)）或 PowerShell cmdlet 中分配以下角色之一（请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)）：
+- 对于 Exchange Online，必须在 Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)）或 PowerShell cmdlet 中分配以下角色之一（请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）：
     - 组织管理
     - 仅限查看组织管理
     - “仅供查看收件人”角色

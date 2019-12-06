@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: e3f205a75c30397382b63112df4503f7a1d23582
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 4507155acf3a973484f8228803660abf65167121
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673278"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866364"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -166,7 +166,7 @@ ms.locfileid: "38673278"
 - [查看 SharePoint Online、OneDrive 和 Microsoft 团队中检测到的恶意文件](malicious-files-detected-in-spo-odb-or-teams.md)
 - [获取威胁资源管理器中的视图（和实时检测）的概述](threat-explorer-views.md)
 
-## <a name="required-licenses-and-permissions"></a>必需的许可证和权限
+## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
 您必须具有[Office 365 ATP](office-365-atp.md)才能获取资源管理器或实时检测。
 - 资源管理器包含在 Office 365 ATP 计划2中。 
@@ -180,7 +180,7 @@ ms.locfileid: "38673278"
     - 安全管理员（可在 Azure Active Directory 管理中心中分配（[https://aad.portal.azure.com](https://aad.portal.azure.com)））
     - 安全读者
 
-- 对于 Exchange Online，必须在 Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)）或 PowerShell cmdlet 中分配以下角色之一（请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)）：
+- 对于 Exchange Online，必须在 Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)）或 PowerShell cmdlet 中分配以下角色之一（请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）：
     - 组织管理
     - 仅限查看组织管理
     - “仅供查看收件人”角色

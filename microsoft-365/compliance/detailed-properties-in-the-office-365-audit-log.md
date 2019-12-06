@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 审核日志记录中包含的其他属性的说明。
-ms.openlocfilehash: e77fedb58d9f2142e9c7a386ee8105042766158e
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 7c41b19c3725b51af195e7836bf538c9fb1696e8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633641"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859312"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 审核日志中的属性详细信息
 
@@ -42,7 +42,7 @@ ms.locfileid: "39633641"
 |AzureActiveDirectoryEventType|Azure Active Directory 事件的类型。 以下值指示事件的类型。  <br/> **0** -指示帐户登录事件。<br/> **1** -指示 Azure 应用程序安全事件。|Azure Active Directory|
 |ChannelGuid|Microsoft 团队频道的 ID。 通道所在的团队由**TeamName**和**TeamGuid**属性标识。|Microsoft Teams|
 |ChannelName|Microsoft 团队频道的名称。 通道所在的团队由**TeamName**和**TeamGuid**属性标识。|Microsoft Teams|
-|客户端|用于登录事件的客户端设备、设备 OS 和设备浏览器（例如，Nokia Lumia 920;Windows Phone 8;IE 移动11）。|Azure Active Directory|
+|Client|用于登录事件的客户端设备、设备 OS 和设备浏览器（例如，Nokia Lumia 920;Windows Phone 8;IE 移动11）。|Azure Active Directory|
 |ClientInfoString|有关用于执行此操作的电子邮件客户端的信息，例如浏览器版本、Outlook 版本和移动设备信息|Exchange （邮箱活动）|
 |ClientIP|记录活动时使用的设备的 IP 地址。 IP 地址显示为 IPv4 或 IPv6 地址格式。<br/><br/> 对于某些服务，此属性中显示的值可能是代表用户调用服务的受信任应用程序（例如，Web 应用上的 Office）的 IP 地址，而不是执行活动的人员使用的设备的 IP 地址。 <br/><br/>此外，对于与 Azure Active Directory 相关的事件，为管理活动（或由系统帐户执行的活动），不记录 IP 地址，ClientIP 属性的值为`null`。 |Azure Active Directory、Exchange、SharePoint|
 |CreationTime|用户执行活动时的协调世界时 (UTC) 日期和时间。|全部|
@@ -66,7 +66,7 @@ ms.locfileid: "39633641"
 |OrganizationID|Office 365 组织的 GUID。|全部|
 |Path|访问的邮件所在的邮箱文件夹的名称。 此属性还标识在其中创建或复制/移动邮件的文件夹。|Exchange （邮箱活动）|
 |Parameters|对于 Exchange 管理员活动，与在 Operation 属性中标识的 cmdlet 一起使用的所有参数的名称和值。|Exchange （管理员活动）|
-|RecordType|记录指示的操作类型。 以下值指示记录类型。  <br/><br/> **1** -指示 Exchange 管理员审核日志中的记录。 <br/>**2** -指示对 singled 邮箱项目执行的操作的 Exchange 邮箱审核日志中的记录。 <br/>**3** -还指示 Exchange 邮箱审核日志中的记录。 此记录类型指示对源邮箱中的多个项目执行了该操作（例如，将多个项目移动到 "已删除邮件" 文件夹或永久删除多个项目）。 <br/>**4** -指示 SharePoint 中的网站管理员操作，例如管理员或用户分配对网站的权限。 <br/>**6** -指示 SharePoint 中与文件或文件夹相关的操作，例如用户查看或修改文件。 <br/>**8** -指示在 Azure Active Directory 中执行的管理员操作。 <br/>**9** -指示 Azure Active Directory 中的 OrgId 登录事件。 此记录类型已被弃用。 <br/>**10** -指示由 Microsoft 人员在数据中心执行的安全 cmdlet 事件。 <br/>**11** -指示 SharePoint 中的数据丢失保护（DLP）事件。<br/> **12** -指示 Sway 事件。 <br/>**13** -当使用统一的 DLP 策略进行配置时，指示 Exchange 中的 DLP 事件。 不支持基于 Exchange 邮件流规则（也称为传输规则）的 DLP 事件。<br>**14** -指示 SharePoint 中的共享事件。<br/> **15** -指示 Azure Active Directory 中的安全令牌服务（STS）登录事件。 <br/>**18** -表示安全 & 合规中心事件。 <br/>**20** -指示 Power BI 事件。 <br/>**21**-指示 Dynamics 365 事件。<br/>**22** -指示 Yammer 事件。 <br/>**23** -指示 Skype for business 事件。 <br/>**24** -指示电子数据展示事件。 此记录类型指示在安全与合规中心中运行内容搜索和管理电子数据展示事例所执行的活动。 有关详细信息，请参阅[在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)。<br/>**25、26或 27** -表示 Microsoft 团队活动。 <br/>**28** -指示来自 Exchange Online Protection 和 Office 365 高级威胁防护事件的网络钓鱼和恶意软件事件。<br/> **30** -指示 Microsoft Flow 事件。<br/> **31** -指示高级电子数据展示事件。<br/> **32** -指示 Microsoft Stream 事件。<br/> **35** -指示 Microsoft 项目事件。 <br/> **36** -指示 SharePoint 列表事件。<br/> **38** -指示与安全与合规中心中的保留策略和保留标记相关的事件。  <br/>**40** -指示安全性和合规性警报信号中产生的事件。<br/> **41** -指示 Office 365 高级威胁防护中的安全链接时间段和阻止覆盖事件。<br/>**44** -指示 Workplace Analytics 事件。 <br/>**45** -指示 PowerApps 应用程序事件。 <br/> **47** -指示 SharePoint、OneDrive 和 Microsoft 团队中的文件的来自 Office 365 高级威胁防护的网络钓鱼和恶意软件事件。 <br/> **52** -指示与数据见解 REST API 相关的事件。<br/>**54** -指示 SharePoint 列表项事件。<br/>**55** -指示 SharePoint 内容类型事件。<br/>**66** -指示 Microsoft Forms 事件。
+|RecordType|记录指示的操作类型。 以下值指示记录类型。  <br/><br/> **1** -指示 Exchange 管理员审核日志中的记录。 <br/>**2** -指示对 singled 邮箱项目执行的操作的 Exchange 邮箱审核日志中的记录。 <br/>**3** -还指示 Exchange 邮箱审核日志中的记录。 此记录类型指示对源邮箱中的多个项目执行了该操作（例如，将多个项目移动到 "已删除邮件" 文件夹或永久删除多个项目）。 <br/>**4** -指示 SharePoint 中的网站管理员操作，例如管理员或用户分配对网站的权限。 <br/>**6** -指示 SharePoint 中与文件或文件夹相关的操作，例如用户查看或修改文件。 <br/>**8** -指示在 Azure Active Directory 中执行的管理员操作。 <br/>**9** -指示 Azure Active Directory 中的 OrgId 登录事件。 此记录类型已被弃用。 <br/>**10** -指示由 Microsoft 人员在数据中心执行的安全 cmdlet 事件。 <br/>**11** -指示 SharePoint 中的数据丢失保护（DLP）事件。<br/> **12** -指示 Sway 事件。 <br/>**13** -当使用统一的 DLP 策略进行配置时，指示 Exchange 中的 DLP 事件。 不支持基于 Exchange 邮件流规则（也称为传输规则）的 DLP 事件。<br>**14** -指示 SharePoint 中的共享事件。<br/> **15** -指示 Azure Active Directory 中的安全令牌服务（STS）登录事件。 <br/>**18** -表示安全 & 合规中心事件。 <br/>**20** -指示 Power BI 事件。 <br/>**21**-指示 Dynamics 365 事件。<br/>**22** -指示 Yammer 事件。 <br/>**23** -指示 Skype for business 事件。 <br/>**24** -指示电子数据展示事件。 此记录类型指示在安全与合规中心中运行内容搜索和管理电子数据展示事例所执行的活动。 有关详细信息，请参阅[在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)。<br/>**25、26或 27** -表示 Microsoft 团队活动。 <br/>**28** -指示来自 Exchange Online Protection 和 Office 365 高级威胁防护事件的网络钓鱼和恶意软件事件。<br/> **30** -指示 Microsoft Flow 事件。<br/> **31** -指示高级电子数据展示事件。<br/> **32** -指示 Microsoft Stream 事件。<br/> **33** -指示与 SharePoint 中的 DLP 分类相关的事件。<br/>**35** -指示 Microsoft 项目事件。 <br/> **36** -指示 SharePoint 列表事件。<br/> **38** -指示与安全与合规中心中的保留策略和保留标记相关的事件。  <br/>**40** -指示安全性和合规性警报信号中产生的事件。<br/> **41** -指示 Office 365 高级威胁防护中的安全链接时间段和阻止覆盖事件。<br/>**42** -指示与 Office 365 安全与合规中心中的见解和报告相关的事件。<br/>**44** -指示 Workplace Analytics 事件。 <br/>**45** -指示 PowerApps 应用程序事件。 <br/> **47** -指示 SharePoint、OneDrive 和 Microsoft 团队中的文件的来自 Office 365 高级威胁防护的网络钓鱼和恶意软件事件。<br/> **49** -指示适用于医疗保健的 Microsoft 团队中的[患者应用程序](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)事件。 <br/> **52** -指示与数据见解 REST API 相关的事件。<br/>**54** -指示 SharePoint 列表项事件。<br/>**55** -指示 SharePoint 内容类型事件。<br/> **56** -指示 SharePoint 列表字段事件。 <br/>**64** -指示自动事件响应事件。 有关信息，请参阅[Office 365 中的自动化事件响应（AIR）](../security/office-365-security/automated-investigation-response-office.md)<br/>**66** -指示 Microsoft Forms 事件。
 |ResultStatus|指示操作（在**Operation**属性中指定）是否成功。  <br/> 对于 Exchange 管理员活动，值可以为**True** （成功）或**False** （失败）。|全部  <br/>|
 |SecurityComplianceCenterEventType|指示活动是安全 & 合规中心事件。 所有安全 & 合规性中心活动的值都为此属性的值为**0** 。|安全与合规中心|
 |SharingType|分配给用户的共享权限类型，该用户是与资源共享的。 此用户在**UserSharedWith**属性中进行标识。|SharePoint|
@@ -87,14 +87,12 @@ ms.locfileid: "39633641"
 |UserSharedWith|与之共享资源的用户。 如果**Operation**属性的值为**SharingSet**，则包含此属性。 此用户也在报告中的 "**共享与**" 列中列出。|SharePoint|
 |UserType|执行操作的用户类型。 以下值指示用户类型。 <br/> <br/> **0** -常规用户。 <br/>**2** -Office 365 组织中的管理员。<sup>1</sup> <br/>**3** -Microsoft 数据中心管理员或数据中心系统帐户。 <br/>**4** -系统帐户。 <br/>**5** -应用程序。 <br/>**6** -服务主体。<br/>**7** -自定义策略。<br/>**8** -系统策略。|全部|
 |版本|指示已记录的活动的版本号（由**操作**属性标识）。|全部|
-|Workload|其中发生活动的 Office 365 服务。 此属性的可能值为：  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>合规<br/>性<br/>Sway Skype for<br/>business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>项目<br/>PowerApps 工作区分析**<br/>**MicrosoftForms**|全部|
+|Workload|其中发生活动的 Office 365 服务。 此属性的可能值为：  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>合规<br/>性<br/>Sway Skype for<br/>business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>项目<br/>PowerApps 工作区分析**<br/>**MicrosoftForms**<br/>**AirInvestigation**|全部|
 ||||
 
 > [!NOTE]
 ><sup>1</sup>对于与 Azure Active Directory 相关的事件，审核记录中不使用管理员的值。 审核由管理员执行的活动的记录将指示常规用户（例如， **UserType： 0**）执行了该活动。 **UserID**属性将标识执行活动的人员（常规用户或管理员）。<br/>
 
-
 当您查看特定事件的详细信息时，还会显示上述属性（如果您单击 "**详细信息**"）。 
   
 ![单击“详细信息”，查看审核日志事件记录的详细属性](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
-  

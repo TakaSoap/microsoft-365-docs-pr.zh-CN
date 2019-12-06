@@ -1,7 +1,7 @@
 ---
 title: 2002 年萨班尼斯-奥克斯莱法案 (Sarbanes-Oxley Act of 2002, SOX)
 description: 金融服务公司可以使用 Microsoft 合规性报告来满足对 Sarbanes-oxley 法案的遵从性要求。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 2f496db53cde8779dd45f7d15cc9d6bd7789a75c
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1bc568d6db13dd91d0e16e29633dccc58e28fc2a
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690170"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859472"
 ---
-# <a name="compliance-offering-sarbanes-oxley-act-of-2002-sox"></a>合规性服务：2002的 Sarbanes-oxley 法案（SOX）
+# <a name="sarbanes-oxley-act-of-2002-sox"></a>2002 年萨班尼斯-奥克斯莱法案 (Sarbanes-Oxley Act of 2002, SOX)
 
 ## <a name="sox-overview"></a>SOX 概述
 
@@ -46,7 +46,7 @@ Microsoft 云服务客户遵守 Sarbanes-oxley 法案（SOX）的要求，在满
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务作为独立服务或包含在 Office 365 品牌计划或套件中
+- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -56,7 +56,7 @@ Microsoft 云服务客户遵守 Sarbanes-oxley 法案（SOX）的要求，在满
 - Dynamics 365
 - Office 365
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **如何使用 Microsoft SOX 合规性以促进组织的合规流程？**
 
@@ -65,12 +65,12 @@ Microsoft 云服务客户遵守 Sarbanes-oxley 法案（SOX）的要求，在满
 ## <a name="resources"></a>资源
 
 - [针对 Sarbanes-oxley 法案的 Azure 指南](https://aka.ms/Azure-SOX-Guide)
-- [Microsoft 金融服务业合规性计划](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Microsoft 金融服务合规性计划](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft 商业云服务和金融服务](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [云计算的共同职责](https://aka.ms/sharedresponsibility)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)（关于云计算的共同责任）
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf)。

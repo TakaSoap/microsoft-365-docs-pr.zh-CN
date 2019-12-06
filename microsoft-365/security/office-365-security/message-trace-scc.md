@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
-ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
+ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37993727"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871758"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -139,7 +139,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 - 虽然可以为任何日期/时间范围选择增强的摘要或扩展报告，但存档数据的最后四个小时通常对这两种类型的报告都不可用。
 
-单击 "**下一步**" 时，将显示一个摘要页，其中列出了所选的筛选选项、报表的唯一的（可编辑的）标题以及在邮件跟踪完成时接收通知的电子邮件地址（也是可编辑的）。，并且必须位于组织的接受域之一中。 单击 "**准备报告**" 以提交邮件跟踪。 在 "主**邮件跟踪**" 页面上，您可以在**可下载报告**部分中看到报告的状态。
+单击 "**下一步**" 时，将显示一个摘要页，其中列出了所选的筛选选项、报表的唯一（可编辑）标题，以及在邮件跟踪完成时接收通知的电子邮件地址（也是可编辑的，并且必须位于组织的接受域之一中）。 单击 "**准备报告**" 以提交邮件跟踪。 在 "主**邮件跟踪**" 页面上，您可以在**可下载报告**部分中看到报告的状态。
 
 有关不同报告类型中返回的信息的详细信息，请参阅下一节。
 
@@ -235,7 +235,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 - **sender_address**：发件人的电子邮件地址（*别名*@*域*）。
 
-- **Recipient_status**：邮件传递给收件人的状态。 如果邮件发送给多个收件人，则它将显示所有收件人以及每个收件人的相应状态，格式为： \<*电子邮件地址*\>##\<*状态*\>。 例如：
+- **Recipient_status**：将邮件传递给收件人的状态。 如果邮件发送给多个收件人，则它将显示所有收件人以及每个收件人的相应状态，格式为： \<*电子邮件地址*\>##\<*状态*\>。 例如：
 
   - **# #Receive，Send**表示该邮件由服务接收，并发送到预定的目标。
 
@@ -247,9 +247,9 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 - **total_bytes**：邮件的大小（以字节为单位），包括附件。
 
-- **message_id**：此值在本主题前面的[邮件 id](#message-id)部分中进行了介绍。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
+- **message_id**：此值在本主题前面的[邮件 id](#message-id)部分中进行了描述。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
 
-- **network_message_id**：在可能由于分叉或通讯组扩展而创建的邮件的所有副本中保持的唯一邮件 id 值。 示例值为`1341ac7b13fb42ab4d4408cf7f55890f`。
+- **network_message_id**：在由于分叉或通讯组扩展而可能创建的邮件的所有副本中保持的唯一邮件 id 值。 示例值为`1341ac7b13fb42ab4d4408cf7f55890f`。
 
 - **original_client_ip**：发件人客户端的 ip 地址。
 
@@ -263,7 +263,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 ### <a name="extended-reports"></a>扩展报告
 
-可用（已完成）扩展报告在邮件跟踪开头的**可下载报告**部分中可用。 实际上，来自增强的摘要报告的所有信息均位于扩展报告中（ **origin_timestamp**和**delivery_priority**除外）。 以下附加信息仅适用于扩展报告：
+可用（已完成）扩展报告在邮件跟踪开头的**可下载报告**部分中可用。 实际上，来自增强摘要报告的所有信息均位于扩展报告中（除了**origin_timestamp**和**delivery_priority**）。 以下附加信息仅适用于扩展报告：
 
 - **client_ip**：提交邮件的电子邮件服务器或邮件客户端的 ip 地址。
 
@@ -273,7 +273,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 - **server_hostname**：目标服务器的主机名或 FQDN。
 
-- **source_context**：与**源**字段关联的额外信息。 例如：
+- **source_context**：与**源**字段相关联的额外信息。 例如：
 
   - `Protocol Filter Agent`
 
@@ -287,13 +287,13 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
   - `SMTP`
 
-- **event_id**：这些值对应于在 "[查找此邮件的相关记录](#find-related-records-for-this-message)" 部分中介绍的**消息事件**值。
+- **event_id**：这些值对应于在 "[查找此邮件的相关记录](#find-related-records-for-this-message)" 一节中介绍的**消息事件**值。
 
 - **internal_message_id**：由当前正在处理邮件的 Exchange Online 服务器分配的邮件标识符。
 
-- **recipient_address**：邮件的收件人的电子邮件地址。 多个电子邮件地址通过分号字符 (;) 分隔。
+- **recipient_address**：邮件收件人的电子邮件地址。 多个电子邮件地址通过分号字符 (;) 分隔。
 
-- **recipient_count**：邮件中的收件人总数。
+- **recipient_count**：邮件中的总收件人数。
 
 - **related_recipient_address**：与`EXPAND`、 `REDIRECT`和`RESOLVE`事件一起用来显示与邮件相关联的其他收件人电子邮件地址。
 
@@ -301,7 +301,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
   - **DSN**：包含报告链接，如果此事件后面生成 dsn，则该链接是关联的传递状态通知（也称为 DSN、未送达报告、NDR 或退回邮件）的**message_id**值。 如果这是 DSN 邮件，则此字段包含为其生成 DSN 的原始邮件的**message_id**值。
 
-  - **展开**：包含相关邮件的**related_recipient_address**值。
+  - **EXPAND**：包含相关邮件的**related_recipient_address**值。
 
   - **RECEIVE**：如果邮件是由其他进程生成的（例如，收件箱规则），则可能包含相关邮件的**message_id**值。
 
@@ -313,11 +313,11 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
     对于其他类型的事件，此字段通常为空。
 
-- **return_path**：发送邮件的**邮件发件**人命令指定的返回电子邮件地址。 虽然此字段永远不为空，但它可以有表示为`<>`的 null 发件人地址值。
+- **return_path**：发送邮件的 "**邮件发件**人" 命令指定的返回电子邮件地址。 虽然此字段永远不为空，但它可以有表示为`<>`的 null 发件人地址值。
 
 - **message_info**：有关邮件的其他信息。 例如：
 
-  - 的消息起始日期-时间（ `DELIVER` UTC）和`SEND`事件。 源日期-时间是邮件第一次进入 Exchange Online 组织的时间。 UTC `yyyy-mm-ddThh:mm:ss.fffZ`日期-时间以 ISO 8601 日期-时间格式表示：，其中`yyyy` = year， `mm` = month， `dd` = day， `T`表示时间部分的开始时间， `hh` = 小时， `mm` = 分钟， `ss` = 秒，= `fff`秒的小数部分，并`Z`表示`Zulu`，这是表示 UTC 的另一种方法。
+  - 的消息起始日期-时间（ `DELIVER` UTC）和`SEND`事件。 源日期-时间是邮件第一次进入 Exchange Online 组织的时间。 `yyyy-mm-ddThh:mm:ss.fffZ`UTC 日期-时间以 ISO 8601 日期-时间格式表示：，其中`yyyy` = year， `mm` = month， `dd` = day， `T`表示时间部分的开始， `hh` = 小时， `mm` = 分钟， `ss` = second， `fff` = 秒的小数， `Z`表示`Zulu`，这是表示 UTC 的另一种方法。
 
   - 身份验证错误。 例如，您可能会看到值`11a`和身份验证错误发生时使用的身份验证类型。
 
@@ -333,7 +333,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 #### <a name="spam-filter-agent"></a>垃圾邮件筛选器代理
 
-以**custom_data**开头`S:SFA`的值来自垃圾邮件筛选器代理。 下表介绍了关键详细信息：
+以**** 来自垃圾邮件筛选器`S:SFA`代理的开头的 custom_data 值。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|
@@ -341,26 +341,26 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 |`SFV=SPM`|邮件由内容筛选器标记为垃圾邮件。|
 |`SFV=BLK`|跳过筛选但阻止邮件，因为它是由已阻止发件人发送。|
 |`SFV=SKS`|邮件在内容筛选器处理之前被标记为垃圾邮件。这包括符合以下传输规则条件的邮件：自动将邮件标记为垃圾邮件并规避其他所有筛选。|
-|`SCL=<number>`|有关不同的 SCL 值及其含义的详细信息，请参阅[垃圾邮件可信度](https://technet.microsoft.com/library/jj200686.aspx)。|
-|`PCL=<number>`|邮件的仿冒可能性等级 (PCL) 值。可按照[垃圾邮件可信度](https://technet.microsoft.com/library/jj200686.aspx)中介绍 SCL 值的方式对这些值做出解释。  |
+|`SCL=<number>`|有关不同的 SCL 值及其含义的详细信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。|
+|`PCL=<number>`|邮件的仿冒可能性等级 (PCL) 值。可按照[垃圾邮件可信度](spam-confidence-levels.md)中介绍 SCL 值的方式对这些值做出解释。  |
 |`DI=SB`|已阻止邮件发件人。|
 |`DI=SQ`|邮件已隔离。|
 |`DI=SD`|邮件已删除。|
 |`DI=SJ`|邮件已发送至收件人的"垃圾邮件"文件夹。|
-|`DI=SN`|邮件已通过高风险传送池路由。 有关详细信息，请参阅[出站邮件的高风险传递池](https://technet.microsoft.com/library/jj200746.aspx)。|
+|`DI=SN`|邮件已通过高风险传送池路由。 有关详细信息，请参阅[出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)。|
 |`DI=SO`|邮件已通过正常出站传送池路由。|
 |`SFS=[a]|SFS=[b]`|说明匹配此垃圾邮件规则。|
 |`IPV=CAL`|邮件已获得垃圾邮件筛选器的允许，因为 IP 地址已在连接筛选器的 IP 允许列表中指定。|
 |`H=<EHLOstring>`|连接电子邮件服务器的 HELO 或 EHLO 字符串。|
 |`PTR=<ReverseDNS>`|发送 IP 地址的 PTR 记录，也被称为反向 DNS 地址。|
 
-针对垃圾邮件筛选的邮件的示例**custom_data**值，如下所示：
+针对以下垃圾邮件筛选出的邮件的示例**custom_data**值，如下所示：
 
 `S:SFA=SUM|SFV=SPM|IPV=CAL|SRV=BULK|SFS=470454002|SFS=349001|SCL=9|SCORE=-1|LIST=0|DI=SN|RD=ftmail.inc.com|H=ftmail.inc.com|CIP=98.129.140.74|SFP=1501|ASF=1|CTRY=US|CLTCTRY=|LANG=en|LAT=287|LAT=260|LAT=18;`
 
 #### <a name="malware-filter-agent"></a>恶意软件筛选器代理
 
-以**** 的开头`S:AMA`的 custom_data 值来自恶意软件筛选器代理。 下表介绍了关键详细信息：
+以**** 其开头`S:AMA`的 custom_data 值来自恶意软件筛选器代理。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|
@@ -377,19 +377,19 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 |`Name=<malware>`|已检测到的恶意软件的名称。|
 |`File=<filename>`|恶意软件中包含的文件名称。|
 
-包含恶意软件的邮件的示例**custom_data**值如下所示：
+包含恶意软件的邮件的**custom_data**值示例如下所示：
 
 `S:AMA=SUM|v=1|action=b|error=|atch=1;S:AMA=EV|engine=M|v=1|sig=1.155.974.0|name=DOS/Test_File|file=filename;S:AMA=EV|engine=A|v=1|sig=201707282038|name=Test_File|file=filename`
 
 #### <a name="transport-rule-agent"></a>传输规则代理
 
-以**custom_data**开头`S:TRA`的值来自邮件流规则的传输规则代理（也称为传输规则）。 下表介绍了关键详细信息：
+从**** 邮件流规则的传输`S:TRA`规则代理（也称为传输规则）开始的 custom_data 值。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|匹配的规则 ID。|
 |`St=<datetime>`|发生规则匹配时的日期和时间（以 UTC 为单位）。|
-|`Action=<ActionDefinition>`|应用的操作。 有关可用操作的列表，请参阅[Exchange Online 中的邮件流规则操作](https://technet.microsoft.com/library/jj919237.aspx)。|
+|`Action=<ActionDefinition>`|应用的操作。 有关可用操作的列表，请参阅[Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |`Mode=<Mode>`|规则模式。 有效值为： <br/>•**强制实施**：将强制执行对规则的所有操作。 <br/>•**使用策略提示进行测试：**：将发送所有策略提示操作，但不会对其他强制操作执行操作。 <br/>•**测试没有策略提示**：将在日志文件中列出操作，但不会以任何方式通知发件人，并且不会对强制性操作进行处理。|
 
 与邮件流规则的条件相匹配的邮件的示例**custom_data**值如下所示：

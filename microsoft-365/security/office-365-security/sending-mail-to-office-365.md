@@ -14,18 +14,18 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: 这些文章有助于外部发件人改善其信誉，并提高他们向 Office 365 的用户传送电子邮件的能力。它们还提供了一些您如何报告垃圾邮件和网络钓鱼的信息（即使您不是 Office 365 用户）。
-ms.openlocfilehash: 335118eb49a078b79ae36f4813c530fe15643bae
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: da19605f97c906fae158bb8299339ffb82755faf
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032077"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872028"
 ---
 # <a name="sending-mail-to-office-365"></a>向 Office 365 发送邮件
 
 这些文章有助于外部发件人改善其信誉，并提高他们向 Office 365 的用户传送电子邮件的能力。它们还提供了一些您如何报告垃圾邮件和网络钓鱼的信息（即使您不是 Office 365 用户）。
 
-如果您不是 Office 365 客户，但是正尝试向 Office 365 客户发送邮件，那么您找对地方了。 如果您是 Office 365 管理员，并且需要帮助以抵制垃圾邮件，那么这不是您要找的地方。 请转为转到[Anti-spam and anti-malware protection](https://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)。
+如果您不是 Office 365 客户，但是正尝试向 Office 365 客户发送邮件，那么您找对地方了。 如果您是 Office 365 管理员，并且需要帮助以抵制垃圾邮件，那么这不是您要找的地方。 相反，请转到[Office 365 中的 "反垃圾邮件" 和 "反恶意软件保护](anti-spam-and-anti-malware-protection.md)"。
 
 |**有关以下内容的信息：**|**请参阅 .。。**|
 |:-----|:-----|

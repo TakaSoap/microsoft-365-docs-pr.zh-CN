@@ -1,7 +1,7 @@
 ---
 title: 健康保险便携性和责任（HIPAA） & 高科技行为
 description: Microsoft 提供健康保险可移植性 & 责任法案业务关联协议（Baa）。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b603cc6b946f62a8ca6b7cfa5c0dd7faf64dfbe4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690154"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859742"
 ---
-# <a name="compliance-offering-health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>合规性产品：健康保险便携性和责任（HIPAA） & 高科技行为
+# <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任（HIPAA） & 高科技行为
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>HIPAA 和高科技法案概述
 
@@ -50,16 +50,16 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
-- [Azure 和 Azure 政府](https://aka.ms/AzureCompliance)
+- [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - 云应用安全
 - Microsoft Health Bot 服务
 - Microsoft Stream
-- Microsoft 专业服务：适用于 Office 365 的面向中型企业和企业客户的 Azure、Dynamics 365、Intune 和企业客户的首要和内部部署
-- [Dynamics 365 和 Dynamics 365 美国政府版](https://aka.ms/d365-compliance-list)
-- Microsoft Flow 云服务作为独立服务或包含在 Office 365 或 Dynamics 365 品牌的计划或套件中
+- Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Office 365 中型企业客户的高级和本地支持。
+- [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
+- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Intune
-- [Office 365、Office 365 美国政府版和 Office 365 美国政府防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps 云服务作为独立服务或在 Office 365 或 Dynamics 365 标记计划或套件中包含
+- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务作为独立服务或包含在 Office 365 或 Dynamics 365 品牌的计划或套件中
 - Azure DevOps Services
 
@@ -69,7 +69,7 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 
 [开始使用 Azure HIPAA/HITRUST 蓝图](https://aka.ms/healthblueprint)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **我的组织是否可以使用 Microsoft 在 BAA 中输入？**
 
@@ -89,7 +89,7 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 **如何获取审计员的报告的副本？**
 
-[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供了独立审核的符合性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
+[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
 
 **如何了解有关遵守 HIPAA 和高科技法案的更多信息？**
 
@@ -103,12 +103,12 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 - [HIPAA Omnibus 规则](https://aka.ms/HIPAA-omnibus)（最终管理法规-修改 HIPAA 规则）
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services 条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [了解 Azure 的 HIPAA 合规性](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)（5月19日，2016）
 - [Azure HIPAA 实现指南](https://aka.ms/azure-hipaa-guide)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf)。

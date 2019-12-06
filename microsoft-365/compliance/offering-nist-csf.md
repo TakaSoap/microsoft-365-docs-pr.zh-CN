@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7dae370f9fd41ba0a04dd4c327a238dac3841da3
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 8ed1da925da40b439d449638887808aa9830d6e0
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676649"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859354"
 ---
-# <a name="compliance-offering-national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>合规性服务：美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
+# <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
 ## <a name="nist-csf-overview"></a>NIST CSF 概述
 
@@ -37,7 +37,7 @@ NIST Cybersecurity Framework （CSF）是一个自愿的框架，其中包含用
 - [下载 Azure 安全性和合规性蓝图-NIST CSF 风险评估清单](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [了解有关合规性管理器中的适用于 Office 365 的 NIST CSF 评估的详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [适用于政府的 Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -61,7 +61,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 - [开始使用合规性管理器](https://aka.ms/compliancemanager)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **是否有独立的评估员验证了 Azure 政府、Dynamics 365 和 Office 365 是否支持 NIST CSF 要求？**
 

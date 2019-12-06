@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。
-ms.openlocfilehash: d1e2913b9263879b1d9a1ca9d20b6b623f2208cf
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 94d37e4e39b690c681b83a159d57d20109470497
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032217"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866754"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 
@@ -51,7 +51,7 @@ ms.locfileid: "38032217"
   > [!NOTE]
   > Cmdlet 对邮件流规则集的导出和导入的支持目前仅支持 EOP 高级订阅计划。
 
-收集所有设置的最简单方法是使用 PowerShell。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
+收集所有设置的最简单方法是使用 PowerShell。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 接下来，您就可以收集所有设置，并将其导出到 .xml 文件，此文件将导入目标租户。通常，您可以通过管道将每个设置的 **Get** cmdlet 的输出传递到 **Export-Clixml** cmdlet，以将设置保存到 .xml 文件中，如以下代码示例中所示。
 

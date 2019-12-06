@@ -1,7 +1,7 @@
 ---
 title: 英国财务行为权威机构（FCA）
 description: 适用于英国的金融公司的 Microsoft 指南遵循金融行为和向云外包的指南。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 55cb9e1901231f63b5e02b44b97c029359718625
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: f009914f2a5178104968fe443bbac0655f5541b9
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690119"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859882"
 ---
-# <a name="compliance-offering-united-kingdom-financial-conduct-authority-fca"></a>合规性服务：英国财务行为权威机构（FCA）
+# <a name="united-kingdom-financial-conduct-authority-fca"></a>英国财务行为权威机构（FCA）
 
 ## <a name="fca-uk-overview"></a>FCA （英制）概述
 
@@ -44,9 +44,9 @@ Microsoft 指南更详细地介绍了我们遵守众多公认的国际标准的�
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
-- Power BI 云服务作为独立服务或包含在 Office 365 品牌计划或套件中
+- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **我是否可以在组织的合规流程中使用 Microsoft 响应此框架？**
 
@@ -59,11 +59,11 @@ Microsoft 指南更详细地介绍了我们遵守众多公认的国际标准的�
 - [英国金融机构的 Microsoft 云检查表](https://aka.ms/Azure-UK-compliance)
 - [FG 16/5 —将公司外包给云和其他第三方 IT 服务的指导](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
 - [启用合规性： Microsoft FCA 定案云指南的方法](https://go.microsoft.com/fwlink/p/?linkid=2101561)
-- [Microsoft 金融服务业合规性计划](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Microsoft 金融服务合规性计划](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft 商业云服务和金融服务](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf)。

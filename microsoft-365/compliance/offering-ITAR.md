@@ -1,7 +1,7 @@
 ---
 title: Arm 规章中的国际流量（ITAR）
 description: Azure 政府支持客户在支持 Arm 的 Regs 系统中构建国际流量。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b79cd30c225631b93c92f8199d008d24ecc9a06d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690152"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859652"
 ---
-# <a name="compliance-offering-international-traffic-in-arms-regulations-itar"></a>合规性服务： Arm 规章中的国际流量（ITAR）
+# <a name="international-traffic-in-arms-regulations-itar"></a>Arm 规章中的国际流量（ITAR）
 
 ## <a name="itar-overview"></a>ITAR 概述
 
@@ -39,9 +39,9 @@ ITAR 有特定的义务来举报违规，从而可以提供特定风险缓解优
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
-- [美国政府防御部门的 Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 美国政府防御版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **在哪里可以请求符合性信息？**
 
@@ -54,8 +54,8 @@ ITAR 有特定的义务来举报违规，从而可以提供特定风险缓解优
 - [将 Azure 政府与 ITAR 控制数据结合使用](https://aka.ms/azure-itar-guide)
 - [Azure 政府](https://azure.microsoft.com/features/gov/)
 - [Office 365 美国政府版](https://products.office.com/government/office-365-web-services-for-government)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf)。

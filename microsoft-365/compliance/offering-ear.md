@@ -1,7 +1,7 @@
 ---
 title: 美国出口管理条例（EAR）
 description: Microsoft 云服务可帮助客户遵守美国出口管理条例（EAR），以满足其合规性要求并管理出口控制风险。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 283b6a45807547f9a8d0521cf2c6793a2a15c4d6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690167"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859392"
 ---
-# <a name="compliance-offering-us-export-administration-regulations-ear"></a>合规性服务：美国出口管理条例（EAR）
+# <a name="us-export-administration-regulations-ear"></a>美国出口管理条例（EAR）
 
 ## <a name="about-the-ear"></a>关于 EAR
 
@@ -48,7 +48,7 @@ Microsoft 技术、产品和服务受美国出口管理条例（EAR）的约束�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
-- [Azure 和 Azure 政府](https://aka.ms/AzureCompliance)
+- [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - [Office 365 政府版（GCC-高和 DoD）](https://aka.ms/Office-365-Export-Controls)
 - Intune
 
@@ -59,7 +59,7 @@ Microsoft 技术、产品和服务受美国出口管理条例（EAR）的约束�
 - [Azure](https://aka.ms/Azure-Export-Controls)
 - [Office 365](https://aka.ms/Office-365-Export-Controls)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **在使用 Microsoft 云服务时，应如何遵守导出控制？**
 
@@ -88,4 +88,4 @@ Microsoft 技术、产品和服务受美国出口管理条例（EAR）的约束�
 - [对加密的导出限制](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft 和 FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft 和 ITAR](offering-itar.md)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

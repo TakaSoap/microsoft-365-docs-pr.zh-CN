@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: f758213802d32b4154924d1ab4a3d8bbff49e717
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 89cd473a7b7f2ff663d7ee1eee41f84144dee6d7
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204252"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866434"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
@@ -47,7 +47,7 @@ ms.locfileid: "39204252"
 
 如果你是 Office 365 客户，则可以通过安全 & 合规中心管理此功能。 
 
-- 在 Office 365 安全 & 合规性中心中，全局或安全管理员可以通过反网络钓鱼策略下的反欺骗保护来打开或关闭该功能。 此外，还可以通过 "AntiPhishPolicy" cmdlet 对其进行管理。 有关更多详细信息，请参阅[Office 365 中的反钓鱼防护](anti-phishing-protection.md)和 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps)。
+- 在 Office 365 安全 & 合规性中心中，全局或安全管理员可以通过反网络钓鱼策略下的反欺骗保护来打开或关闭该功能。 此外，还可以通过 "AntiPhishPolicy" cmdlet 对其进行管理。 有关更多详细信息，请参阅[Office 365 中的反钓鱼防护](anti-phishing-protection.md)和 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)。
 
     ![在图形界面中编辑未经身份验证的发件人。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

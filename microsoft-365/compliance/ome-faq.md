@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关 Office 365 中的新邮件保护功能如何工作的问题？ 在此处查找答案。
-ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818844"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866414"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
@@ -119,6 +119,10 @@ PDF 加密使您能够通过安全通信或安全协作来保护敏感 PDF 文�
 
 Not yet. OneDrive for business 附件不受支持，最终用户无法对包含云 OneDrive for Business 附件的邮件进行加密。
   
+## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>哪些电子邮件客户端支持在受保护的电子邮件中预览加密附件？
+
+当使用受保护的邮件保护附件时，Outlook 客户端可以提供对文档直接预览的功能。 Outlook 支持预览 Office 文档（.Docx、.xlsx、.pptx、doc、xls、ppt）。 Web 上的 Outlook 支持 Office 文档（.docx、.xlsx、.pptx）和 PDF 的预览。  
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>是否可以通过设置策略自动加密邮件？
 
 是。 使用 Exchange Online 中的邮件流规则，根据特定条件自动加密邮件。 例如，您可以创建基于收件人 ID、收件人域或邮件正文或主题中的内容的策略。 请参阅[定义邮件流规则以对 Office 365 中的电子邮件进行加密](define-mail-flow-rules-to-encrypt-email.md)。

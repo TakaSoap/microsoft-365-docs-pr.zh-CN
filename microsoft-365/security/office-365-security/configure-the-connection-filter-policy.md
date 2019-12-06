@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要确保从不受信任的人发送的电子邮件被阻止，可以使用连接筛选器策略创建您信任的 IP 地址的允许列表（也称为 "安全发件人列表"）。 您还可以创建阻止的发件人列表。
-ms.openlocfilehash: 541960ce5339e1334cdc61e1f88bff9be48fe2bd
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6dc0bc4f29446cc064420632f04265c93c0ffa1b
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032427"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871918"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
 
@@ -42,13 +42,13 @@ ms.locfileid: "38032427"
 
 - 估计完成时间：15 分钟
 
-- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "反垃圾邮件" 条目。
+- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "反垃圾邮件" 条目。
 
 - 要获取想要允许或阻止其邮件的发件人的 IP 地址，你可以检查邮件的 Internet 标题。 查找 CIP 标题，如[反垃圾邮件邮件头](anti-spam-message-headers.md)中所述。 有关如何在各种电子邮件客户端中查看邮件头的信息，请参阅[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。
 
 - 从 IP 阻止列表中的 IP 地址发送的电子邮件被拒绝，未标记为垃圾邮件，且未进行其他筛选。
 
-- 以下连接筛选器步骤也可以通过远程 PowerShell 执行。 使用 [Get-HostedConnectionFilterPolicy](https://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) cmdlet 查看设置，以及使用 [Set-HostedConnectionFilterPolicy](https://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) 编辑连接筛选策略设置。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=627290)。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+- 以下连接筛选器步骤也可以通过远程 PowerShell 执行。 使用 [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) cmdlet 查看设置，以及使用 [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) 编辑连接筛选策略设置。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=627290)。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>使用 EAC 编辑默认连接筛选器策略
 

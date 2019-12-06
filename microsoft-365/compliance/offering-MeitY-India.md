@@ -1,7 +1,7 @@
 ---
 title: 电子产品和信息技术（MeitY）
 description: Microsoft 已获得印度的电子产品和信息技术部的完全资格鉴定。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 34e20578d09079031d4a41bafdf199d055ced09a
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690144"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859572"
 ---
-# <a name="compliance-offering-ministry-of-electronics-and-information-technology-meity"></a>合规性产品：电子产品和信息技术（MeitY）
+# <a name="ministry-of-electronics-and-information-technology-meity"></a>电子产品和信息技术（MeitY）
 
 ## <a name="meity-overview"></a>MeitY 概述
 
@@ -47,7 +47,7 @@ Microsoft 的 MeitY 资格鉴定是由标准化测试和质量认证（STQC） D
 
 - [云服务提供商的审核状态下的](https://meity.gov.in/content/gi-cloud-meghraj)Microsoft 云资格鉴定
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么 MeitY 很重要？**
 
@@ -58,8 +58,8 @@ Microsoft 的 MeitY 资格鉴定是由标准化测试和质量认证（STQC） D
 - [电子产品和信息技术的部](https://meity.gov.in/)
 - [MeghRaj 云计划](https://meity.gov.in/content/gi-cloud-meghraj)
 - [获得资格鉴定的云服务提供商](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf)。

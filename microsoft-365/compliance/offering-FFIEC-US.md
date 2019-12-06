@@ -1,7 +1,7 @@
 ---
 title: 联邦金融机构检查委员会（FFIEC）
 description: Microsoft 可帮助金融服务客户端遵守联邦金融机构检查委员会（FFIEC）的审核要求。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 61028937f469c21d50688912d9acccde7d1c117c
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3ee932493aca94109381edde1b2df0aae342a4c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690120"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859852"
 ---
-# <a name="compliance-offering-federal-financial-institutions-examination-council-ffiec"></a>合规性产品：联邦金融机构检查委员会（FFIEC）
+# <a name="federal-financial-institutions-examination-council-ffiec"></a>联邦金融机构检查委员会（FFIEC）
 
 ## <a name="ffiec-overview"></a>FFIEC 概述
 
@@ -44,13 +44,13 @@ Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是为满足为金
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务作为独立服务或包含在 Office 365 品牌计划或套件中
+- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
 Azure 和 Office 365 SOC 认证报告。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **我能否使用有关 SOC 标准的 Microsoft 合规性来满足针对我的机构的 FFIEC 合规性义务？**
 
@@ -65,14 +65,14 @@ Azure 和 Office 365 SOC 认证报告。
 - [Azure 金融服务云风险评估工具](https://aka.ms/FFIEC-CSDT)
 - [Azure 安全性和合规性 FFIEC 金融服务蓝图](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
 
-## <a name="other-microsoft-resources-for-financial-services"></a>金融服务的其他 Microsoft 资源
+## <a name="other-microsoft-resources-for-financial-services"></a>针对金融服务的其他 Microsoft 资源
 
-- [Microsoft 金融服务业合规性计划](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Microsoft 金融服务合规性计划](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft 商业云服务和金融服务](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [云计算的共同职责](https://aka.ms/sharedresponsibility)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)（关于云计算的共同责任）
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf)。

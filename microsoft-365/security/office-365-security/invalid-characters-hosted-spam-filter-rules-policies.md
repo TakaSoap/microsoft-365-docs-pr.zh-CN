@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 为在反垃圾邮件配置中具有无效字符的管理员提供帮助，并在尝试使用安全&amp;合规性中心时遇到问题。
-ms.openlocfilehash: 96d81c17c33c5ecf6e7b88ebe5676336b963cb4e
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 5e6fa97a3f325b6fc6fdc449ba4a61282f67b644
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38039101"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866714"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中的无效字符 
 
@@ -37,7 +37,7 @@ ms.locfileid: "38039101"
 
 在确定了包含无效字符的策略和规则后，可以使用 Windows PowerShell cmdlet 更改这些名称。 
 
-1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
     
 2. 若要更改垃圾邮件筛选器策略的名称，请运行 Set-hostedcontentfilterpolicy cmdlet，如下所示：
     
@@ -56,6 +56,6 @@ ms.locfileid: "38039101"
 
 [安全&amp;合规性中心中的威胁管理](protect-against-threats.md)
   
-[Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
+[Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)
 
-[Disable-hostedcontentfilterrule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule?view=exchange-ps)
+[Disable-hostedcontentfilterrule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule)

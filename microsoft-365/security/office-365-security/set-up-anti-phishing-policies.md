@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 在 office 365 Exchange Online Protection 的 Office 365 高级威胁防护和基本保护中具有全面保护的反网络钓鱼保护，可帮助保护您的组织免受基于模拟的恶意网络钓鱼攻击和其他网络钓鱼攻击。
-ms.openlocfilehash: 29b65fb73102622fdfb3663e027c296f2d68c447
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: dd3537c2b30c0345b5be29f70160110d886c3ce6
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772126"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866554"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略
 
@@ -49,7 +49,7 @@ ms.locfileid: "37772126"
     |---------|---------|
     |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
     |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
-    |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)） |
+    |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)） |
 
     若要了解有关角色和权限的详细信息，请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -127,7 +127,7 @@ Contoso 的安全管理员可能会使用如下所示的值，以便创建满足
 |选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址， `securityadmin@contoso.com`例如。  <br/> 如果由模拟域发送电子邮件：选择 "**隔离邮件**"。  <br/> |
 |邮箱智能  <br/> |默认情况下，当您创建新的反网络钓鱼策略时，将选择邮箱智能。 将此设置保留为 **"开"** 以获得最佳效果。  <br/> |
 |添加受信任的发件人和域  <br/> |对于此示例，不要定义任何替代。  <br/> |
-|应用于  <br/> |选择 **"收件人域"**。 在**以下任一情况**下，选择 "**选择**"。 选择 " **+ 添加**"。 选中域的名称旁边的复选框，例如， `contoso.com`在列表中，然后选择 "**添加**"。 选择 "**完成**"。  <br/> |
+|应用于  <br/> |选择 **"收件人域"**。 在**以下任一情况**下，选择 "**选择**"。 选择 " **+ 添加**"。 选中域的名称旁边的复选框，例如， `contoso.com`在列表中，然后选择 "**添加**"。 选择“**完成**”。  <br/> |
 
 ## <a name="delete-an-anti-phishing-or-atp-anti-phishing-policy"></a>删除反网络钓鱼或 ATP 反网络钓鱼策略
 

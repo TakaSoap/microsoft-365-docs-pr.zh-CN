@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。
-ms.openlocfilehash: c8779fb89ecb1deda92382ae2d91de4e54b303e7
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e60c0ae87f050b6e72e53b6069a61cd52df0641a
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032357"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871838"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以管理员身份查找并释放隔离邮件
 
@@ -35,11 +35,11 @@ ms.locfileid: "38032357"
 
 - 释放邮件并允许接收该发件人未来发送的所有邮件。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
-- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "隔离" 条目。
+- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "隔离" 条目。
 
-- 您可以在 "**隔离**" 页面上一次释放或报告多封邮件。 或者，您可以创建一个远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet 搜索邮件，并使用[get-quarantinemessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet 释放邮件。
+- 您可以在 "**隔离**" 页面上一次释放或报告多封邮件。 或者，您可以创建一个远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) cmdlet 搜索邮件，并使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet 释放邮件。
 
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "38032357"
 
 2. 在 "**高级搜索**" 窗口中，选择下列条件的任意组合。 选中关联的复选框，以启用各个条件。 不支持通配符。
 
-   1. **邮件 ID**：您可以使用此参数对特定邮件执行目标搜索。 例如，如果特定邮件由贵组织的用户发送，或准备发送给贵组织的用户，但是未抵达目标收件人，则您可以使用邮件跟踪功能搜索该邮件。 有关详细信息，请参阅 [运行邮件跟踪和查看结果](https://technet.microsoft.com/library/74a9fc59-7e0e-4832-baf9-2a86418b0079.aspx)。 如果您发现邮件被发送到隔离区，可能是因为它符合某个规则或被标识为垃圾邮件，您可以通过指定其邮件 ID，在隔离区中轻松找到此邮件。 请务必包含完整的邮件 ID 字符串。 这可能包括尖括号 (\<\>)。
+   1. **邮件 ID**：您可以使用此参数对特定邮件执行目标搜索。 例如，如果特定邮件由贵组织的用户发送，或准备发送给贵组织的用户，但是未抵达目标收件人，则您可以使用邮件跟踪功能搜索该邮件。 有关详细信息，请参阅 [运行邮件跟踪和查看结果](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results)。 如果您发现邮件被发送到隔离区，可能是因为它符合某个规则或被标识为垃圾邮件，您可以通过指定其邮件 ID，在隔离区中轻松找到此邮件。 请务必包含完整的邮件 ID 字符串。 这可能包括尖括号 (\<\>)。
 
    2. **发件人电子邮件地址**：指定发送邮件的人员的电子邮件地址。
 

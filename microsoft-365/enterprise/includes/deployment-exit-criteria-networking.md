@@ -20,7 +20,7 @@
 如果需要，可在[步骤 2](../networking-dns-resolution-same-location.md) 中进行设置以满足此要求。
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneccessary-network-hairpins-are-removed"></a>可选：删除不必要的网络回流
+### <a name="optional-unnecessary-network-hairpins-are-removed"></a>可选：删除不必要的网络回流
 
 检查网络回流并为所有办公室确定这些回流对性能的影响。在可能的情况下删除网络回流，或与第三方网络或安全提供商协作，以实现与其网络对等的最优 Microsoft 365。
 

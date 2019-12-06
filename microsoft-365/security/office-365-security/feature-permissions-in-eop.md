@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 执行管理 Microsoft Exchange Online Protection (EOP) 的任务所需的权限根据正在管理的功能的不同而不同。
-ms.openlocfilehash: e3b41ea2b58397a9af2a1cb8ba979b5f816b416b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dcf56a5295f7964b2271331deb2e7f8c1ba1635e
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031907"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871848"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP 中的功能权限
 
@@ -29,15 +29,15 @@ ms.locfileid: "38031907"
 
 |**功能**|**所需的权限**|
 |:-----|:-----|
-|反恶意软件|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [清洁管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|反垃圾邮件|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [清洁管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|邮件流规则|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Records Management](https://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx)|
-|域|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|
-|高级威胁防护（ATP）|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [清洁管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Office 365 连接器|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|邮件跟踪|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|
-|组织配置|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|隔离|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|用户、联系人和角色组|[组织管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|通讯组和安全组|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|查看报告|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) - 用户有权访问邮件保护报告。  <br/> [View-Only Recipients](https://technet.microsoft.com/library/37e66b92-81d3-412f-b7a9-e1bb8cbeb468.aspx) - 用户有权访问邮件保护报告。  <br/> [Compliance Management](https://technet.microsoft.com/library/b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15.aspx) - 用户有权访问邮件保护报告和数据丢失预防 (DLP) 报告（如果他们的订阅具有 DLP 功能）。|
+|反恶意软件|组织管理 <br/><br/> 安全管理|
+|反垃圾邮件|组织管理 <br/><br/> 安全管理|
+|邮件流规则|组织管理 <br/><br/> 记录管理|
+|域|组织管理 <br/><br/> 仅查看组织管理|
+|高级威胁防护（ATP）|组织管理 <br/><br/> 安全管理|
+|Office 365 连接器|组织管理|
+|Message trace|组织管理 <br/><br/> 仅查看组织管理|
+|组织配置|组织管理|
+|Quarantine|组织管理 <br/><br/> 仅查看组织管理 <br/><br/> 安全管理|
+|用户、联系人和角色组|组织管理 <br/><br/> 仅查看组织管理 <br/><br/> 安全管理|
+|通讯组和安全组|组织管理 <br/><br/> 仅查看组织管理 <br/><br/> 安全管理|
+|查看报告|组织管理：访问邮件保护报告。 <br/><br/> 仅查看收件人：访问邮件保护报告。  <br/><br/> 合规性管理：访问邮件保护报告和数据丢失防护（DLP）报告（如果你的订阅具有 DLP 功能）。|

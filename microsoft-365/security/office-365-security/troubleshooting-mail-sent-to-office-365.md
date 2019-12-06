@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: 本文提供了发件人尝试向 Office 365 中的收件箱发送邮件时遇到的问题的故障排除信息，以及向 Office 365 客户群发邮件的最佳做法。
-ms.openlocfilehash: b87b0745c95cd043987f49ed7f21118339d3e592
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 44fe5b984c22a4560da6cf8d63096775f5b47095
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030696"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872008"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>向 Office 365 发送故障排除邮件
 
@@ -71,7 +71,7 @@ ms.locfileid: "38030696"
 
 出现一些传送问题是因为发件人的 IP 地址被 Microsoft 阻止或用户账户由于以前的垃圾邮件活动被标识为已禁止的发件人。如果您认为您错误地收到了 NDR，首先按照在 NDR 邮件中解决此问题的说明进行操作。
 
-有关您收到错误的详细信息，请参阅[DSNs and NDRs in On-Premises Exchange 2013 and Office 365](https://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx) 中 SMTP 错误代码的完整列表。
+有关收到的错误的详细信息，请参阅[Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)中的错误代码列表。
 
  例如，如果您收到以下 NDR，则表明发送 IP 地址已被 Microsoft 阻止。
 

@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件问题（阻止发送邮件的租户）。
-ms.openlocfilehash: 28ed444d821cbe00cfcb92872de15bb43a65ae28
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d89cc0caeebbf37336a3b00346b3393dd5e74e78
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033873"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865844"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
 
@@ -51,7 +51,7 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 1. 请确保在 Microsoft 365 管理中心内注册所有域。 可在[此处](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)找到详细信息。
 
-2. 查找异常连接器。 恶意参与者通常会在 Office 365 租户中创建新的入站连接器以发送垃圾邮件。 可在[此处](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)找到有关检查连接器的详细信息。 
+2. 查找异常连接器。 恶意参与者通常会在 Office 365 租户中创建新的入站连接器以发送垃圾邮件。 可在[此处](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)找到有关检查连接器的详细信息。 
 
 3. 锁定你的本地服务器，并确保其不会受到威胁。
 

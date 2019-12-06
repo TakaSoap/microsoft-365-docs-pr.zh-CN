@@ -13,18 +13,18 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Exchange online 管理员在 Exchange Online 中查看和配置 Outlook 网页中的 S/MIME 设置时需要执行的操作的简短说明。
-ms.openlocfilehash: 408a8f7aed800175e7bae7af73d77f340359c17d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 759e48544e9c9dedca15500edb56e9111987bf93
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032437"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866334"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>在 Exchange Online 中为 web 上的 Outlook 配置 S/MIME 设置
 
 作为 Exchange Online 管理员，您可以设置 web 上的 Outlook （以前称为 "Outlook Web App"），以允许发送和接收受 S/MIME 保护的邮件。 使用**get-smimeconfig**和**Get-smimeconfig** Cmdlet 在 Exchange Online PowerShell 中查看和管理此功能。 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
-有关语法和参数的详细信息，请参阅[get-smimeconfig](https://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)和[get-smimeconfig](https://technet.microsoft.com/library/de357ce0-8143-4c36-8032-026292fc63f0.aspx)。
+有关语法和参数的详细信息，请参阅[get-smimeconfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig)和[get-smimeconfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig)。
 
 ## <a name="considerations-for-chrome"></a>Chrome 注意事项
 

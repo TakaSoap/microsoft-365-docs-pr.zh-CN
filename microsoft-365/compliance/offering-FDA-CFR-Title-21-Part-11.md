@@ -1,7 +1,7 @@
 ---
 title: 食物和药品管理 CFR Title 21 第11部分
 description: Microsoft 可帮助客户遵守这些美国的食物和药品管理法规。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d37557c1df1edfc026960b5a7d256d5d3fbc7a0b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7e8d24aecb2343ed03a1d224b21060619426717f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690121"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859872"
 ---
-# <a name="compliance-offering-food-and-drug-administration-cfr-title-21-part-11"></a>合规性服务：食物和药品管理 CFR Title 21 第11部分
+# <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和药品管理 CFR Title 21 第11部分
 
 ## <a name="fda-cfr-title-21-overview"></a>FDA CFR 标题21概述
 
@@ -48,16 +48,16 @@ Microsoft 企业云服务经历了常规独立的第三方 SOC 1 类型2和 SOC 
 
 - Azure：云服务、存储、流量管理器、虚拟机和虚拟网络
 - Intune
-- [Dynamics 365 和 Dynamics 365 美国政府版](https://aka.ms/d365-compliance-list)
-- [Office 365 和 Office 365 美国政府版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
+- [Office 365 和 Office 365 US 政府计划](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
 SOC 1 和 SOC 2 类型2、ISO/IEC 27001 和 ISO/IEC 27018 标准的审核报告证明了 Microsoft 实施的控制措施的有效性，并可帮助客户符合 FDA CFR Title 21 第11部分。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
-**对什么应用标准？**
+**此标准适用于哪些对象？**
 
 FDA CFR Title 21 第11部分适用于具有产品和服务的组织，这些组织涉及在研究、临床研究、维护、制造和生命科学产品分发等的 FDA 管控方面。
 
@@ -69,7 +69,7 @@ FDA CFR Title 21 第11部分适用于具有产品和服务的组织，这些组�
 
 **如何获取审计员的报告的副本？**
 
-[服务信任门户](https://aka.ms/stphelp)提供了独立审核的符合性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
+[服务信任门户](https://aka.ms/stphelp)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
 
 **我可以在组织的认证过程中使用 Microsoft 合规性吗？**
 
@@ -87,10 +87,10 @@ Microsoft 确保其企业云服务符合控制[联机服务条款](https://www.m
 - [Azure 的资格认证准则](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Office 365 的限定准则](https://aka.ms/o365-qualification-guideline)
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Microsoft Online Services 条款](https://aka.ms/Online-Services-Terms)
-- [适用于政府的 Microsoft 云](https://aka.ms/govt-cloud)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 政府云](https://aka.ms/govt-cloud)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf)。

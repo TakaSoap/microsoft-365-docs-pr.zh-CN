@@ -14,12 +14,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection 中设置邮件的 SCL。
-ms.openlocfilehash: 8da95c5356f7cde47d378d93c721057959554631
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 35a1235ee8bbb1a61bf37c3cd29e06e62252351d
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030626"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871218"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
 
@@ -29,7 +29,7 @@ ms.locfileid: "38030626"
   
 - 估计完成该过程的时间：10 分钟。
     
-- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)或 EOP 中的[功能权限](feature-permissions-in-eop.md)中的 "邮件流规则" 条目。 
+- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)或 EOP 中的[功能权限](feature-permissions-in-eop.md)中的 "邮件流规则" 条目。 
     
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
     

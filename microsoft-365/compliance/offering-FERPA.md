@@ -1,7 +1,7 @@
 ---
 title: 家庭教育权利和隐私法案（FERPA）
 description: Microsoft 与美国家庭教育权限和隐私法案的要求相符。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 02259b8c9e957e29ce695330a80b2a252478c0e1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690118"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859862"
 ---
-# <a name="compliance-offering-family-educational-rights-and-privacy-act-ferpa"></a>合规性服务：家庭教育权限和隐私法案（FERPA）
+# <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育权利和隐私法案（FERPA）
 
 ## <a name="ferpa-overview"></a>FERPA 概述
 
@@ -47,7 +47,7 @@ FERPA 不需要或识别审核或其他证书，因此受 FERPA 制约的任何�
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365、Office 365 美国政府版和 Office 365 美国政府防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI、PowerApps 和 Microsoft 流，作为独立服务或包含在 Office 365 标记计划或套件中的
 - Azure DevOps Services
 - Windows Defender ATP
@@ -56,7 +56,7 @@ FERPA 不需要或识别审核或其他证书，因此受 FERPA 制约的任何�
 
 FERPA 不需要或识别审核或证书。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么 FERPA 很重要？**
 
@@ -74,9 +74,9 @@ FERPA 不需要或识别审核或证书。
 - [联邦收银机： FERPA Final 规则](https://aka.ms/ferpa-reg)
 - [Microsoft Azure 的 FERPA 实施指南](https://aka.ms/azureferpa)
 - [Azure FERPA 合规性框架映射](https://aka.ms/AzureFERPAMapping)
-- [Microsoft Online Services 条款](https://aka.ms/Online-Services-Terms)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf)。

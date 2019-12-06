@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。
-ms.openlocfilehash: d59d167a3e62dcb3d0f0532331902644c6b469dc
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: baf6999923a4c4cf346915800b8f97a0d0378f58
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033853"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871908"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>配置出站垃圾邮件策略
 
@@ -37,9 +37,9 @@ ms.locfileid: "38033853"
 
 估计完成时间：5 分钟
 
-您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅 [Exchange Online 中的功能权限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的“反垃圾邮件”条目。
+您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅 [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的“反垃圾邮件”条目。
 
-以下步骤也可以通过远程 PowerShell 执行。 使用[HostedOutboundSpamFilterPolicy](https://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) cmdlet 可查看您的设置，以及用于编辑出站垃圾邮件策略设置的[HostedOutboundSpamFilterPolicy](https://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) 。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=627290)。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+以下步骤也可以通过远程 PowerShell 执行。 使用[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) cmdlet 可查看您的设置，以及用于编辑出站垃圾邮件策略设置的[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) 。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=627290)。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
 ## <a name="use-the-security-and-compliance-center-scc-to-edit-the-default-outbound-spam-policy"></a>使用安全与合规中心（SCC）编辑默认的出站垃圾邮件策略
 

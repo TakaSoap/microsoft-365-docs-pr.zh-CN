@@ -12,12 +12,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: 在此 articleSupported 中 LanguagesInstall 垃圾电子邮件报告外接 inUninstall 垃圾电子邮件报告添加-inFor 详细信息
-ms.openlocfilehash: 7f294ed78affba6e55f2372b81b517bbd25d3f08
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 508d542be4862a6a06b795fc7a4b97bdc405d430
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074631"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865884"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安装 Microsoft Outlook 的垃圾邮件报告外接程序
   
@@ -59,13 +59,12 @@ ms.locfileid: "37074631"
 - 西班牙语
     
 ## <a name="install-the-junk-email-reporting-add-in"></a>安装垃圾电子邮件报告外接程序
-<a name="sectionSection1"> </a>
 
 您可以安装垃圾电子邮件报告外接程序：
   
-- 像运行任何其他 .msi 文件一样运行 Windows Installer 程序包。当安装外接程序时，会打开一个 GUI 界面并通过安装屏幕提示您。有关详细信息，请参阅[使用安装向导安装垃圾电子邮件报告外接程序](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard)。或者
+- 像运行任何其他 .msi 文件一样运行 Windows Installer 程序包。当安装外接程序时，会打开一个 GUI 界面并通过安装屏幕提示您。有关详细信息，请参阅[使用安装向导安装垃圾电子邮件报告外接程序](#install-the-junk-email-reporting-add-in-using-the-setup-wizard)。或者
     
-- 运行不显示安装用户界面的静默安装。您可以转而指定运行安装脚本的命令行选项。当安装外接程序时，会提供无法通过 GUI 界面提供的其他配置选项。有关详细信息，请参阅[使用静默模式安装垃圾电子邮件报告外接程序](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode)。
+- 运行不显示安装用户界面的静默安装。您可以转而指定运行安装脚本的命令行选项。当安装外接程序时，会提供无法通过 GUI 界面提供的其他配置选项。有关详细信息，请参阅[使用静默模式安装垃圾电子邮件报告外接程序](#install-the-junk-email-reporting-add-in-using-silent-mode)。
     
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
@@ -87,7 +86,6 @@ ms.locfileid: "37074631"
 > 您必须在要安装外接程序的计算机上拥有管理员权限。 
   
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>使用安装向导安装垃圾电子邮件报告外接程序
-<a name="BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard"> </a>
 
 1. 在您的计算机上关闭 Outlook。
     
@@ -108,7 +106,6 @@ ms.locfileid: "37074631"
 9. 如果想要向 Microsoft 报告仿冒垃圾电子邮件，请选择****“垃圾邮件”旁边的向下箭头查看更多选项，如****“报告为仿冒邮件”。如果一封电子邮件被错误识别为垃圾邮件，则在垃圾邮件文件夹中，您还可以选择“报告不是垃圾邮件”****。 
     
 ### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>使用静默模式安装垃圾电子邮件报告外接程序
-<a name="BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode"> </a>
 
 1. 在您的计算机上关闭 Outlook。
     
@@ -135,9 +132,9 @@ ms.locfileid: "37074631"
   
     要基于上述示例添加全部两个可选参数，需要为运行 x86 Outlook 的计算机指定以下内容： 
     
-  ```
-  msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
-  ```
+      ```
+      msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
+      ```
 
 4. 安装完成后，启动 Outlook。
     
@@ -146,21 +143,19 @@ ms.locfileid: "37074631"
 6. 如果想要向 Microsoft 报告仿冒垃圾电子邮件，请选择****“垃圾邮件”旁边的向下箭头查看更多选项，如****“报告为仿冒邮件”。如果一封电子邮件被错误识别为垃圾邮件，则在垃圾邮件文件夹中，您还可以选择“报告不是垃圾邮件”****。 
     
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>卸载垃圾电子邮件报告外接程序
-<a name="sectionSection2"> </a>
 
 使用下列选项之一卸载垃圾电子邮件报告外接程序：
   
-- 使用 Windows 控制面板删除外接程序。有关详细信息，请参阅[从控制面板卸载垃圾电子邮件报告外接程序](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel)。或者
+- 使用 Windows 控制面板删除外接程序。 有关详细信息，请参阅[从控制面板卸载垃圾电子邮件报告外接程序](#uninstall-the-junk-email-reporting-add-in-from-control-panel)。
     
-- 运行 Windows Installer 程序包并选择卸载选项。有关详细信息，请参阅[通过运行 Windows Installer 程序包卸载垃圾电子邮件报告外接程序](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage)。或者
+- 运行 Windows installer 程序包并选择 "卸载" 选项。 有关详细信息，请参阅[通过运行 Windows Installer 程序包卸载垃圾电子邮件报告外接程序](#uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package)。
     
-- 使用卸载选项运行静默安装。有关详细信息，请参阅[在静默模式下卸载垃圾电子邮件报告外接程序](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#MK_UninstalltheJunkEmailReportingAdd-ininSilentMode)。
+- 使用卸载选项运行静默安装。有关详细信息，请参阅[在静默模式下卸载垃圾电子邮件报告外接程序](#uninstall-the-junk-email-reporting-add-in-in-silent-mode)。
     
 > [!NOTE]
 > 您必须在要卸载外接程序的计算机上拥有管理员权限。 
   
 ### <a name="uninstall-the-junk-email-reporting-add-in-from-control-panel"></a>从控制面板卸载垃圾电子邮件报告外接程序
-<a name="BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel"> </a>
 
 1. 在您的计算机上关闭 Outlook。
     
@@ -175,7 +170,6 @@ ms.locfileid: "37074631"
 6. 再次启动 Outlook 以确认该外接程序不再显示在 Outlook 功能区中。
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package"></a>通过运行 Windows Installer 程序包卸载垃圾电子邮件报告外接程序
-<a name="BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage"> </a>
 
 1. 在您的计算机上关闭 Outlook。
     
@@ -191,7 +185,6 @@ ms.locfileid: "37074631"
 4. 再次启动 Outlook 以确认该外接程序不再显示在 Outlook 功能区中。
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-in-silent-mode"></a>在静默模式下卸载垃圾电子邮件报告外接程序
-<a name="MK_UninstalltheJunkEmailReportingAdd-ininSilentMode"> </a>
 
 1. 在您的计算机上关闭 Outlook。
     
@@ -209,7 +202,6 @@ ms.locfileid: "37074631"
 4. 再次启动 Outlook 以确认该外接程序不再显示在 Outlook 功能区中。
     
 ## <a name="for-more-information"></a>详细信息
-<a name="sectionSection3"> </a>
 
 [向 Microsoft 报告垃圾邮件](report-junk-email-messages-to-microsoft.md)
   

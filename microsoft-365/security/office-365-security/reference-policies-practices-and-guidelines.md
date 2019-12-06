@@ -14,12 +14,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 制定了各种策略和过程，并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
-ms.openlocfilehash: 0957e34008f4e05693218970c458656d73d9c0fe
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a1e1e213c01eea5a07b616e72955303f21c6d2ae
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031807"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872058"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
@@ -73,7 +73,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。因此，Micro
 
 ## <a name="office-365-limits"></a>Office 365 限制
 
-发件人必须遵循 [Exchange Online Protection 限制](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)列出的 Office 365 限制。
+发件人必须遵循 [Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)列出的 Office 365 限制。
 
 ## <a name="email-delivery-resources-and-organizations"></a>电子邮件传送资源和组织
 

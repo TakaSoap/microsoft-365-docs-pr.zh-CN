@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 将 Office 365 审核日志搜索的结果导出并下载到 CSV 文件后，可以使用 Excel 中 Power Query 编辑器中的 JSON 转换功能将 AuditData 列中的 JSON 对象中的每个属性拆分为自己的列。 这可以帮助您快速找到要查找的特定审核数据。
-ms.openlocfilehash: 9b422877c10f086553a695e43c50f02d389dd2b5
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: dc96bb8fbcf3acbab66bdb8d4b3d1450e9d3aeaf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685281"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39858178"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>导出、配置和查看审核日志记录
 
@@ -45,7 +45,7 @@ ms.locfileid: "38685281"
    ![CSV 文件下载完成时显示的消息](media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
-  > 您可以从单个审核日志搜索中最多将50000个条目下载到 CSV 文件中。 如果将50000条目下载到 CSV 文件中，您可能会假定有超过50000个事件满足搜索条件。 若要导出超过此限制，请尝试使用日期范围来减少审核日志记录的数量。 您可能需要运行包含较小日期范围的多个搜索以导出50000个以上的条目。
+  > 你可以将最多 50,000 个条目从单个审核日志搜索中下载到 CSV 文件。 如果下载了 50,000 个条目到 CSV 文件，则可以假定可能存在超过 50,000 个符合搜索条件的事件。 若要导出超过此限制，请尝试使用日期范围来减少审核日志记录的数量。 你可能需要使用更小日期范围运行多个搜索来导出超过 50,000 个条目。
 
 ## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>步骤2：使用 Power Query 编辑器格式化导出的审核日志
 
@@ -90,7 +90,7 @@ CSV 文件将在**查询编辑器**中打开。 共有四列： **CreationDate**
     
    - 将 "**使用原始列名称作为前缀**" 复选框保留为选中状态，以将 AuditData 前缀添加到列名称中;例如，RecordType 或**AuditData**。 **AuditData** 。
 
-9. 单击“确定”****。
+9. 单击“确定”。
     
     **AuditData**列拆分为多个列。 每个新列对应于 AuditData JSON 对象中的一个属性。 该列中的每一行都包含属性的值。 如果属性不包含值，则显示*null*值。 在 Excel 中，空值的单元格为空。
   
@@ -122,10 +122,10 @@ CSV 文件将在**查询编辑器**中打开。 共有四列： **CreationDate**
    
    - 此参数仅可包含一个值。 若要搜索其他记录类型的审核记录，您必须再次运行前面的两个命令以指定不同的记录类型，并将这些结果追加到原始 CSV 文件中。 例如，您可以运行以下两个命令，将 SharePoint 文件活动从同一日期范围添加到 PowerShellAuditlog 文件中。
 
-       ```powershell
-      $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
-      ```
+          ```powershell
+          $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
+          ```
 
-      ```powershell
-      $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-      ```powershell
+          ```powershell
+          $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
+          ```

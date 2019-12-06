@@ -1,7 +1,7 @@
 ---
 title: 由警察确保的安全设施（PASF）英国
 description: Microsoft 商业云服务支持需要警方的安全设施以在云中处理和存储数据的英国法律实施。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ec66f54c8db21bf4d94feb22c5dd17ee4b45ef5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690180"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859292"
 ---
-# <a name="compliance-offering-police-assured-secure-facilities-pasf-united-kingdom"></a>合规性服务：有警察的安全设施（PASF）英国
+# <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>由警察确保的安全设施（PASF）英国
 
 ## <a name="about-pasf"></a>关于 PASF
 
@@ -48,7 +48,7 @@ NPIRMT 每年将审核一个 Azure 数据中心，每年在英国对四个 Micro
 
 - [AZURE UK 官方蓝图](https://servicetrust.microsoft.com/ViewPage/UKBlueprints)：帮助英国客户加快 IaaS 和 PaaS 部署 Azure 中合规性工作负荷的情况。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **在英国，警察中的警察部门是否可以使用 Azure PASF 评估作为自己的风险评估的一部分？**
 
@@ -59,9 +59,9 @@ NPIRMT 每年将审核一个 Azure 数据中心，每年在英国对四个 Micro
 - [国家监察资格鉴定策略](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure 设施、本地和物理安全性](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft 和 ISO/IEC 27001:2013 ISM 标准](offering-iso-27001.md)
-- [Microsoft Online Services 条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf)。

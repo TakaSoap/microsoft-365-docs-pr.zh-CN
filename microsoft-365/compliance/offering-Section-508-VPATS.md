@@ -1,7 +1,7 @@
 ---
 title: 美国508节
 description: Microsoft 提供了许多云服务的详细可访问性一致性报告，这些服务描述了这些服务的辅助功能。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 86973d36149a938507c93938b9d97a99761ece8b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 044e92561c86829477339dbd6db2a5fde2da87bb
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690169"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859462"
 ---
-# <a name="compliance-offering-us-section-508"></a>合规性服务：美国508节
+# <a name="us-section-508"></a>美国508节
 
 ## <a name="about-us-section-508"></a>关于美国508节
 
@@ -32,26 +32,26 @@ Microsoft 对美国508法规的遵守情况旨在帮助其为所有客户提供�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
-- [Azure 和 Azure 政府](https://go.microsoft.com/fwlink/p/?linkid=2051569)
+- [Azure 与 Azure 政府](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
-- Dynamics 365 和 Dynamics 365 美国政府版
+- Dynamics 365 和 Dynamics 365 美国政府
 - Intune
-- [Office 365 和 Office 365 美国政府版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- [美国政府防御部门的 Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 和 Office 365 US 政府计划](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 美国政府防御版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Windows Server 2016
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft 辅助功能一致性报告
 
-查找所有产品和服务的[一致性报告](https://go.microsoft.com/fwlink/p/?linkid=2050974)。
+查找我们各项产品和服务的[一致性报告](https://go.microsoft.com/fwlink/p/?linkid=2050974)。
 
 ## <a name="resources"></a>资源
 
 - [Microsoft 辅助功能页面](https://go.microsoft.com/fwlink/p/?linkid=2051579)：探索 microsoft innovates 使每个人都有能力实现更多的方式。
-- [Office 365 辅助功能中心](https://go.microsoft.com/fwlink/p/?linkid=2051801)：适用于残障人士的 office 365 资源。
-- [企业残疾应答台](https://go.microsoft.com/fwlink/p/?linkid=2050890)：针对我们的产品和服务或合规性有辅助功能问题的企业客户提供专用支持。
+- [Office 365 辅助功能中心](https://go.microsoft.com/fwlink/p/?linkid=2051801)：适用于残疾人士的 Office 365 资源。
+- [企业级辅助功能咨询台](https://go.microsoft.com/fwlink/p/?linkid=2050890)：针对就我们的产品和服务或合规性抱有可访问性方面的问题的企业客户提供专属支持。
 - [DHS 受信任的测试者程序](https://go.microsoft.com/fwlink/?linkid=2052171)：获取有关 Microsoft 参与的美国 Homeland 安全（DHS）受信任的测试者计划的信息。
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)。

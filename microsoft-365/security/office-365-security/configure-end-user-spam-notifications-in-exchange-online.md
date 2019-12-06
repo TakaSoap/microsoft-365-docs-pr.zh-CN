@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 您可以为适用于域的默认公司范围的垃圾邮件筛选器策略或自定义垃圾邮件筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 0f2fc88e0004f78c74f2447998d136e4c5ebc3d0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0eef6f508a775513ff5c6e061d12e023534eb0bd
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032448"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871928"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>在 Exchange Online 中配置最终用户垃圾邮件通知
 
@@ -47,7 +47,7 @@ ms.locfileid: "38032448"
 
 估计完成时间：2 分钟
   
-您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主题中的 "反垃圾邮件" 条目。 
+您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "反垃圾邮件" 条目。 
   
 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
   
@@ -67,7 +67,7 @@ ms.locfileid: "38032448"
     
    - **通知语言**使用下拉列表，选择为此策略编写最终用户垃圾邮件通知所使用的语言。 
     
-   - 单击“**保存**”。 在右侧窗格中将显示垃圾邮件筛选器策略设置的摘要，包括您的最终用户垃圾邮件通知设置。
+   - 单击“保存”****。 在右侧窗格中将显示垃圾邮件筛选器策略设置的摘要，包括您的最终用户垃圾邮件通知设置。
     
 > [!NOTE]
 >  最终用户垃圾邮件通知将仅适用于启用的垃圾邮件筛选器策略。 >  每天只发送一次最终用户垃圾邮件通知。 无法保证和配置任何特定客户的通知发送时间。 
@@ -94,7 +94,7 @@ ms.locfileid: "38032448"
     
    - **通知语言**使用下拉列表，选择为此策略编写最终用户垃圾邮件通知所使用的语言。 
     
-   - 单击“**保存**”。 包含最终用户垃圾邮件通知设置的垃圾邮件筛选器策略设置摘要将显示在 "" 窗格中。
+   - 单击“保存”****。 包含最终用户垃圾邮件通知设置的垃圾邮件筛选器策略设置摘要将显示在 "" 窗格中。
 
 ## <a name="for-more-information"></a>详细信息
 

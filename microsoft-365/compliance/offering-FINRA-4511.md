@@ -1,7 +1,7 @@
 ---
 title: 金融行业法规颁发机构（FINRA）规则4511（c）美国
 description: 独立评估事务所验证了 Azure 和 Office 365 可以帮助金融公司满足 FINRA Rule 4511 记录保留和不可变的存储要求。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 80114436580e388afce0508f69dc892c0eaaf435
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: af2e282ac992dbf6935e9a2c1a9c7144d26aad39
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690122"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859832"
 ---
-# <a name="compliance-offering-financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>合规性服务：金融行业规章机构（FINRA）规则4511（c）美国
+# <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融行业法规颁发机构（FINRA）规则4511（c）美国
 
 ## <a name="about-finra-rule-4511"></a>关于 FINRA 规则4511
 
@@ -65,22 +65,22 @@ Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语
 
 ## <a name="how-to-implement"></a>如何实现
 
-- **金融服务法规**：符合云计算和 Microsoft online services 的关键美国规章原则的合规性地图。 [了解详细信息](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **风险评估 & 合规性指南**：为 Microsoft 云服务和调压器通知创建用于风险评估的管理模型。 [了解详细信息](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **财务使用案例**：使用事例概述、教程和其他资源构建适用于金融服务的 Azure 解决方案。
+- **金融服务法规**：符合云计算和 Microsoft online services 的关键美国规章原则的合规性地图。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- **风险评估和合规性指南**：针对 Microsoft 云服务风险评估和监管机构通知创建一个管理模型。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **金融用例**：在案例概述、教程和其他资源的帮助下构建适合金融服务的 Azure 解决方案。
 
-[了解详细信息](https://docs.microsoft.com/azure/industry/financial/)
+[了解更多](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>资源
 
-- [Microsoft 金融服务业合规性计划](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Microsoft 金融服务合规性计划](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [Microsoft 商业云服务和金融服务](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure 金融服务云风险评估工具](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Office 365 保留策略](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融服务博客](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf)。

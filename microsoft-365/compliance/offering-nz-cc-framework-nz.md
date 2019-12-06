@@ -1,7 +1,7 @@
 ---
 title: 新西兰政府云计算安全性和隐私注意事项
 description: Microsoft 新西兰解决在新西兰云计算框架中发布的问题。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: eb14bbe784685fb79ba09f28bc9ca12216b24d57
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 2722c5df4b96f28a449057abae353350b036a13b
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690178"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859332"
 ---
-# <a name="compliance-offering-new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>合规性服务：新西兰政府云计算安全和隐私注意事项
+# <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>新西兰政府云计算安全性和隐私注意事项
 
 ## <a name="new-zealand-government-cloud-computing-security-and-privacy-overview"></a>新西兰政府云计算安全性和隐私概述
 
@@ -38,14 +38,14 @@ Microsoft 和新西兰政府云计算安全性和隐私注意事项
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
-- [Azure 和 Azure 政府](https://aka.ms/AzureCompliance)
+- [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Power BI 云服务作为独立服务或包含在 Office 365 品牌计划或套件中
+- Power BI 云服务，作为独立服务提供，后者随 Office 365 品牌计划或套件一并提供
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online、SharePoint Online 和 Skype for Business Online。 Microsoft NZ 已与 GCIO 团队合作开发用于集成 Exchange Online 和 SEEMail 的参考体系结构。白皮书[Office 365： SEEMail 集成和参考体系结构](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)中所述
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **框架适用于哪些人？**
 
@@ -62,9 +62,9 @@ GCIO 要求（公共和非公共服务部门、20地区健康委员会和七个 
 - [新西兰政府 ICT 策略2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [对云计算的新西兰政府要求](https://aka.ms/NZ-Cloud-Requirements)
 - [云计算：信息安全和隐私注意事项（ISPC）](https://aka.ms/NZ-Cloud-Computing-Considerations)
-- [Microsoft Online Services 条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
 - [Office 365： SEEMail 集成和参考体系结构](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)（有关云服务采用的其他 Microsoft NZ 指南）
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Microsoft 对 "云计算 IPSC" 的响应
 
@@ -74,6 +74,6 @@ GCIO 要求（公共和非公共服务部门、20地区健康委员会和七个 
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf)。

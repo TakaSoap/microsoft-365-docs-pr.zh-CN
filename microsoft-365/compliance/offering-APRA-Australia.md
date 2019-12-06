@@ -1,7 +1,7 @@
 ---
 title: 澳大利亚 Prudential 法规颁发机构（APRA）
 description: Microsoft 指导，帮助金融服务客户端遵守澳大利亚 Prudential 法规颁发机构的外包标准。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: dbbe64b20578860d3635876ec9fb1bd3c523c9b1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 8d6314b7a2adf3f677c8343ddece9cb27bff073e
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690117"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859242"
 ---
-# <a name="compliance-offering-australian-prudential-regulation-authority-apra"></a>合规性产品：澳大利亚 Prudential 规章机构（APRA）
+# <a name="australian-prudential-regulation-authority-apra"></a>澳大利亚 Prudential 法规颁发机构（APRA）
 
 ## <a name="apra-overview"></a>APRA 概述
 
@@ -54,7 +54,7 @@ Microsoft 还解决了每个 APRA 风险管理的考虑事项：策略、治理�
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **金融机构在外包商业活动前是否需要 APRA 批准？**
 
@@ -74,11 +74,11 @@ Microsoft 还解决了每个 APRA 风险管理的考虑事项：策略、治理�
 - [Microsoft 对云上的 APRA 信息纸张的响应](https://aka.ms/navigatecloudaustralia)
 - [导航到云的方式：适用于澳大利亚金融机构的合规性检查表](https://aka.ms/microsoftaprachecklistjun17)
 - [Microsoft 澳大利亚：金融服务业中的云](https://www.microsoft.com/en-sg/apac/trustedcloud/australia-financial-service.aspx)
-- [Microsoft 金融服务业合规性计划](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Microsoft 金融服务合规性计划](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft 商业云服务和金融服务](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf)。

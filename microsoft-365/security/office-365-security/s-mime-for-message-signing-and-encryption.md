@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: 64a76d1e9eebea86e548a06bf05d0030b0396d3d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 87f7438b8297b0c7d6d7674cd2c02db6be14bb28
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032147"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872048"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 
@@ -37,7 +37,7 @@ S/MIME （安全/多用途 Internet 邮件扩展）是发送经过数字签名�
 
 为每个终结点设置 S/MIME 所遵循的步骤略有不同。 通常，您需要执行以下步骤：
 
-- 安装基于 WIndows 的证书颁发机构，并设置公钥基础结构以颁发 S/MIME 证书。 此外，还支持第三方证书提供商颁发的证书。 有关详细信息，请参阅 [Active Directory 证书服务概述](https://technet.microsoft.com/library/hh831740.aspx)。
+- 安装基于 WIndows 的证书颁发机构，并设置公钥基础结构以颁发 S/MIME 证书。 此外，还支持第三方证书提供商颁发的证书。 有关详细信息，请参阅 [Active Directory 证书服务概述](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
 
 - 在**UserSMIMECertificate**和/或**UserCertificate**属性中的本地 AD DS 帐户中发布用户证书。
 
@@ -76,6 +76,6 @@ S/MIME 需要证书和发布基础结构，通常用于企业到企业和企业�
 
 ## <a name="more-information"></a>更多信息
 
-[Outlook 网页版](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[Outlook 网页版](https://docs.microsoft.com/exchange/exchange-admin-center)
 
-[安全邮件（2000）](https://technet.microsoft.com/library/cc962043.aspx)
+[安全邮件（2000）](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))

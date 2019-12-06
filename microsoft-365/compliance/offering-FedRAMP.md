@@ -1,7 +1,7 @@
 ---
 title: 联邦风险和授权管理计划（FedRAMP）
 description: Microsoft 被授予美国联邦风险和授权管理计划 P-ATOs 和 ATOs。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5edd043db7d5f8c401aa287032ddf7cfd9b63982
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 0e967520dbbac845861168d3eea5053e18a46edf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690163"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859802"
 ---
-# <a name="compliance-offering-federal-risk-and-authorization-management-program-fedramp"></a>合规性产品：联邦风险和授权管理计划（FedRAMP）
+# <a name="federal-risk-and-authorization-management-program-fedramp"></a>联邦风险和授权管理计划（FedRAMP）
 
 ## <a name="fedramp-overview"></a>FedRAMP 概述
 
@@ -30,7 +30,7 @@ ms.locfileid: "38690163"
 
 基于 NIST 指南（低、中和高）的三个影响级别授予 FedRAMP 授权。 这些等级对组织中可能存在的机密性、完整性或可用性的影响（低（有限影响）、中型（严重不利影响）和高（严重或灾难性影响）造成的影响。
 
-## <a name="microsoft-and-fedramp"></a>Microsoft 和 FedRAMP
+## <a name="microsoft-and-fedramp"></a>Microsoft 与 FedRAMP
 
 Microsoft 的政府云服务，包括 Azure 政府、Office 365 美国政府和 Dynamics 365 政府满足美国联邦风险和授权管理计划（FedRAMP）的苛刻要求，从而支持美国联邦机构利用 Microsoft 云的成本节约和严格的安全性。
 
@@ -64,12 +64,12 @@ Azure 在中等影响级别维护 ATO。 （Azure 是第一个具有基础结构
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
-- [Azure 和 Azure 政府](https://go.microsoft.com/fwlink/p/?linkid=2095323)
+- [Azure 与 Azure 政府](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365 和 Office 365 美国政府版](https://aka.ms/o365-compliance-framework)
-- 美国政府防御部门的 Office 365
-- Power BI 云服务作为独立服务或包含在 Office 365 品牌计划或套件中
+- [Office 365 和 Office 365 US 政府计划](https://aka.ms/o365-compliance-framework)
+- Office 365 美国政府防御版
+- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
 - Microsoft Defender ATP
 
 > [!NOTE]
@@ -80,7 +80,7 @@ Azure 在中等影响级别维护 ATO。 （Azure 是第一个具有基础结构
 Microsoft 需要每年 recertify 其云服务，以维护其 P-ATO 和 ATOs。 为此，Microsoft 必须不断监视和评估其安全控制，并证明其服务的安全性仍符合合规性。
 
 - [Microsoft 云服务授权](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
-- [Microsoft FedRAMP 审核报告](https://aka.ms/MicrosoftFedRAMPAuditDocuments)
+- [Microsoft FedRAMP 审计报告](https://aka.ms/MicrosoftFedRAMPAuditDocuments)
 
 ## <a name="ramp-up-your-fedramp-solutions-on-azure-government"></a>在 Azure 政府上提升你的 FedRAMP 解决方案
 
@@ -88,7 +88,7 @@ Microsoft 需要每年 recertify 其云服务，以维护其 P-ATO 和 ATOs。 �
 
 [开始使用 Azure FedRAMP 蓝图](https://aka.ms/fedrampblueprint)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **Microsoft 云服务是否符合联邦信息安全管理法案（FISMA）？**
 
@@ -112,8 +112,8 @@ FISMA 是一种联邦法律，要求我们的联邦机构及其合作伙伴仅�
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [FedRAMP 安全评估框架](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf)。

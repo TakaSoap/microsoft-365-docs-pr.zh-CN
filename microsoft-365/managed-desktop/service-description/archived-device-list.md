@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 437029198d48ef8b2d9d91466108fbef989486c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813872"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859282"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
 
@@ -34,6 +34,7 @@ ms.locfileid: "39813872"
 | 模型  | 最低规范  | 其他要求   | 退休日期 |
 |---------|---------|---------|---------|
 | HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU  | **2023年2月15日** |
+|Surface Book 2| 256 GB/Intel i5/8 GB RAM | 无 | **2022年11月16日** |
 |Surface 膝上型电脑| 256 GB/Intel i5/8 GB RAM | 无 | **5月20日2022** |
 |Surface Pro| 256 GB/Intel i5/8 GB RAM | 无 | **2022年6月15日** |
 

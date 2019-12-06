@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
-ms.openlocfilehash: cabb583aebc1baff1eb9f8286fceb2864b26deea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f98044b65b49bd9594708ea9e6f798156037ac34
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031767"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871258"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>非客户向 Office 365 发送邮件的服务
 
@@ -50,7 +50,7 @@ Microsoft 提供了多种支持方案，以支持向 Office 365 收件箱发送�
 
 - 使用另一种方法联系您正在尝试发送邮件的 Office 365 客户，让他们联系 Microsoft 支持，并代表您开立支持票证。在某些情况下，出于法律原因，Microsoft 支持必须与拥有被阻止的 IP 空间的发件人直接沟通。但是，非客户通常无法开立支持票证。
 
-  有关对 Office 365 的 Microsoft 技术支持的详细信息，请参阅 [支持](https://technet.microsoft.com/library/office-365-support.aspx)。
+  有关对 Office 365 的 Microsoft 技术支持的详细信息，请参阅 [支持](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support)。
 
 ## <a name="office-365-anti-spam-ip-delist-portal"></a>Office 365 反垃圾邮件 IP 除名门户
 

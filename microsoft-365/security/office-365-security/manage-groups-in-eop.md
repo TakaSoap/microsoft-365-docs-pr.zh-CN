@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: 您可以使用 Exchange Online Protection (EOP) 为 Exchange 组织创建启用邮件的组。 您还可以使用 EOP 定义或更新可指定成员资格、电子邮件地址和组其他方面的组属性。
-ms.openlocfilehash: af7198b9130236ff74b0c6d147ebae5a8916d7b0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dcc816118f36d5e451c459aa67bef638eb97dad9
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032307"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866962"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
@@ -42,7 +42,7 @@ ms.locfileid: "38032307"
 
 - 本主题中的 PowerShell 过程使用一种批处理方法，该方法会导致在几分钟内发生传播延迟，然后才能看到命令的结果。
 
-- 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)。
+- 若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 

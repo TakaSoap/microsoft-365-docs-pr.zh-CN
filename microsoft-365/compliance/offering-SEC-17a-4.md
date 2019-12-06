@@ -1,7 +1,7 @@
 ---
 title: 证券和交换委员会（SEC）规则17a-4 （f）美国
 description: 独立评估事务所验证了 Azure 和 Office 365 可以帮助金融公司满足 SEC Rule 17a-4 （f）记录保留和不可变存储要求。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 54a221458da57cb403072dcbd91a55ba2e2021df
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 08ae4841f2523d5b5df576906bdf04e798d8e60f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690164"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859512"
 ---
-# <a name="compliance-offering-securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>合规性服务：有价证券和 Exchange 委员会（SEC）规则 17a-4-4 （f）美国
+# <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>证券和交换委员会（SEC）规则17a-4 （f）美国
 
 ## <a name="microsoft-and-sec-rule-17a-4f"></a>Microsoft 和 SEC Rule 17a-4 （f）
 
@@ -58,15 +58,15 @@ Microsoft Azure 不可变 Blob 存储 with with Policy Lock 和 Microsoft Office
 
 ### <a name="financial-services-regulation"></a>金融服务法规
 
-云计算和 Microsoft online services 的关键美国法规原则的合规性地图。 [了解详细信息](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+云计算和 Microsoft online services 的关键美国法规原则的合规性地图。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
 ### <a name="risk-assessment--compliance-guide"></a>风险评估 & 合规性指南
 
-创建用于对 Microsoft 云服务进行风险评估和调节器通知的管理模型。 [了解详细信息](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+创建用于对 Microsoft 云服务进行风险评估和调节器通知的管理模型。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 ### <a name="financial-use-cases"></a>财务用例
 
-使用事例概述、教程和其他资源构建用于金融服务的 Azure 解决方案。 [了解详细信息](https://docs.microsoft.com/azure/industry/financial/)
+使用事例概述、教程和其他资源构建用于金融服务的 Azure 解决方案。 [了解更多](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>资源
 
@@ -77,8 +77,8 @@ Microsoft Azure 不可变 Blob 存储 with with Policy Lock 和 Microsoft Office
 - [Azure 金融服务云风险评估工具](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Office 365 保留策略](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融服务博客](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf)。

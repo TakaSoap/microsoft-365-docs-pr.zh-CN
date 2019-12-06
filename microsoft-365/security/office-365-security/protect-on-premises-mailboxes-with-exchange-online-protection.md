@@ -17,19 +17,19 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: 即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection （EOP）保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅在由世纪互联运营的 Office 365 中分配管理员角色。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。
-ms.openlocfilehash: 787c01ff7d06943b51916675b9e30dc3f020d5e1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7a9d7c3752e612b8e0bdcce6a0f9bb420c61c249
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075797"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866644"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保护本地邮箱
 
 > [!NOTE]
 > 本文仅适用于由中国世纪互联运营的 Office 365。 
   
-即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection （EOP）保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅[在由世纪互联运营的 office 365 中分配管理员角色](https://support.office.com/article/d58b8089-cbfd-41ec-b64c-9cfcbef495ac)。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。 
+即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection （EOP）保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅[在由世纪互联运营的 office 365 中分配管理员角色](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet)。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。 
   
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步骤1：使用 Microsoft 365 管理中心添加并验证你的域
 
@@ -38,7 +38,7 @@ ms.locfileid: "37075797"
 2.  按照门户中的步骤将适用的 DNS 记录添加到您的 DNS 托管提供商，以验证域所有权。 
     
 > [!TIP]
-> [将您的域和用户添加到由世纪互联运营的 office 365](https://support.office.com/article/1cd4839b-d051-46b8-ab9b-bc7752024e78)中，并为[office 365 创建 dns 记录。当您](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b)将您的域添加到服务并配置 dns 时，可以参考这些资源，从而为 office 创建 DNS 记录。 
+> [将您的域和用户添加到由世纪互联运营的 office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet)中，并为[office 365 创建 dns 记录。当您](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet)将您的域添加到服务并配置 dns 时，可以参考这些资源，从而为 office 创建 DNS 记录。 
   
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>步骤2：添加收件人并配置域类型
 
@@ -54,7 +54,7 @@ ms.locfileid: "37075797"
   
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步骤 4：允许入站端口 25 SMTP 访问
 
-配置连接器后，请等待 72 小时，允许准备 DNS 记录更新。 执行此操作后，将防火墙或邮件服务器上的入站端口-25 SMTP 流量限制为仅接受来自 EOP 数据中心的邮件，尤其是在[由世纪互联运营的 Office 365 的 url 和 ip 地址范围](https://support.office.com/article/5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0#__exchange_online_protection)中列出的 ip 地址。 此操作将通过限制可以接收的入站邮件范围，保护内部部署环境。 此外，如果邮件服务器上的设置控制了允许为邮件中继连接的 IP 地址，也要更新这些设置。
+配置连接器后，请等待 72 小时，允许准备 DNS 记录更新。 遵循此限制，将防火墙或邮件服务器上的入站端口-25 SMTP 流量限制为仅接受来自 EOP 数据中心的邮件，特别是从[Office 365 的 url 和 ip 地址范围](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)列出的 ip 地址。 此操作将通过限制可以接收的入站邮件范围，保护内部部署环境。 此外，如果邮件服务器上的设置控制了允许为邮件中继连接的 IP 地址，也要更新这些设置。
   
 > [!TIP]
 > 将 SMTP 服务器上的设置配置 60 秒的连接时间。此设置在大多数情况下都可接受，例如，在发送带有很大附件的邮件时允许有些延迟。 
@@ -65,7 +65,7 @@ ms.locfileid: "37075797"
   
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步骤6：使用 Microsoft 365 管理中心将 MX 记录指向 EOP
 
-按照 Office 365 域配置步骤更新你的域的 MX 记录，以便于你的入站电子邮件能够通过 EOP。 有关详细信息，请参阅[管理 dns 记录时，可以再次引用为 Office 365 创建 dns 记录](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b)。
+按照 Office 365 域配置步骤更新你的域的 MX 记录，以便于你的入站电子邮件能够通过 EOP。 有关详细信息，请参阅[管理 dns 记录时，可以再次引用为 Office 365 创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
   
 您如何知道此任务有效？
   

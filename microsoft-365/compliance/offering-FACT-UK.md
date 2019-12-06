@@ -1,7 +1,7 @@
 ---
 title: 针对版权窃取的联盟（事实）
 description: Microsoft Azure 在英国对联合身份验证进行了认证，以防止版权盗用。
-keywords: Microsoft 365，合规性，产品选项
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1a3fe8adac9dae1b2dcbc04430e9d7d3f49bc201
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 378f03c5c579939abed84cfdea436845f37292af
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690125"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859892"
 ---
-# <a name="compliance-offering-federation-against-copyright-theft-fact"></a>合规性服务：针对版权窃取的联盟（事实）
+# <a name="federation-against-copyright-theft-fact"></a>针对版权窃取的联盟（事实）
 
 ## <a name="fact-overview"></a>事实概述
 
@@ -34,13 +34,13 @@ ms.locfileid: "38690125"
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
-[Azure 和 Azure 政府](https://aka.ms/AzureCompliance)
+[Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
 每年续订 Azure 认证： [AZURE 事实证书](https://aka.ms/azurefactcert)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么这一点很重要？**
 
@@ -57,9 +57,9 @@ ms.locfileid: "38690125"
 - [Azure 媒体服务的 CDSA 认证](https://aka.ms/cdsa-cert)
 - [Azure ISO 27001 证书](https://aka.ms/Azure-BSI-Cert)
 - [MPAA 评估](offering-mpaa.md)
-- [对 CSA CAIQ 的 Azure 响应关于 CSA 的3.0。1](https://aka.ms/csacaiqresponses)
-- [Microsoft 信任中心的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Azure 对 CSA CAIQ 的响应 3.0.1 版](https://aka.ms/csacaiqresponses)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下载产品 backgrounder
+## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品的 backgrounder 文档？ 下载[PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf)。

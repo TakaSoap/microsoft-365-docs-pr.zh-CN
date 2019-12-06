@@ -13,16 +13,16 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用 Exchange Online Protection 中的邮件流规则进行批量电子邮件筛选。
-ms.openlocfilehash: 557a12455284519cc224cbee5e40a564aa3d4f14
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 4f53ee482567a3c76acb4ee8ca0ffb10f6f8cca0
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441141"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866744"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用邮件流规则在 Exchange Online Protection 中配置批量电子邮件筛选
 
-您可以使用默认的垃圾邮件内容筛选器策略针对垃圾邮件和批量电子设置公司范围的内容筛选器。请查看[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)和 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) 以了解如何设置内容筛选器策略。
+您可以使用默认的垃圾邮件内容筛选器策略针对垃圾邮件和批量电子设置公司范围的内容筛选器。请查看[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)和 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) 以了解如何设置内容筛选器策略。
 
 如果您想要更多的选项筛选批量邮件，则可以创建邮件流规则（也称为传输规则），以搜索批量电子邮件中经常找到的文本模式或短语。 任何包含这些特征的邮件将被标记为垃圾邮件。 使用这些规则有助于减少组织收到的垃圾批量电子邮件数量。
 
