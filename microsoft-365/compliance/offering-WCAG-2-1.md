@@ -1,7 +1,7 @@
 ---
 title: Web 内容辅助功能准则 2.1
 description: Microsoft 发布了 WCAG 2.1 AA 报告，其中反映了整个产品/服务或者产品中可单独安装的部分。
-keywords: Microsoft 365, 合规性, 产品
+keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9239ac26cfdb0e81c979faacf253191577a22b9a
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: a1887bd2b6c04836ebb11d224fcc59debcd88e55
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195125"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859442"
 ---
-# <a name="compliance-offering-web-content-accessibility-guidelines-21"></a>合规性产品：Web 内容辅助功能准则 2.1
+# <a name="web-content-accessibility-guidelines-21"></a>Web 内容辅助功能准则 2.1
 
 ## <a name="about-wcag-21"></a>关于 WCAG 2.1
 
@@ -66,4 +66,4 @@ Microsoft 发布了 WCAG 2.1 报告，其中反映的是完整的产品或服务
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)。

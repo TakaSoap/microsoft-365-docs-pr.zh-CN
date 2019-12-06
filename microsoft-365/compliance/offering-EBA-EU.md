@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 67fa87edfeb8db2c97854e062a9b1d24910d67d8
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 9c202d6710d1615dcdc34698687826c768ac55b3
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233455"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859942"
 ---
-# <a name="compliance-offering-european-banking-authority-eba"></a>合规性产品/服务：欧洲银行管理局 (EBA)
+# <a name="european-banking-authority-eba"></a>欧洲银行管理局 (EBA)
 
 ## <a name="about-the-eba"></a>关于 EBA
 

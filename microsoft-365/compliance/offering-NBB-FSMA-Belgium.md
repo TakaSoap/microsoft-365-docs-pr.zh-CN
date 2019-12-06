@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c388eac90c0210e6c1351d77acc73205f6ee617a
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: e9f43842e50dd61095a99dd2944bd47dfaaab1e0
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195266"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859552"
 ---
-# <a name="compliance-offering-national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>合规性产品/服务：比利时国家银行 (NBB) 及金融服务和市场管理局 (FSMA)
+# <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>比利时国家银行 (NBB) 及金融服务和市场管理局 (FSMA)
 
 ## <a name="about-the-nbb-and-fsma"></a>关于 NBB 和 FSMA
 
@@ -43,9 +43,9 @@ NBB 和 FSMA 与欧洲银行管理局 (EBA) 联手配合，该管理局是一家
 Microsoft 清单可对正在就 Microsoft 商业云服务进行尽职调查评估的比利时金融公司提供帮助。 其中包括：
 
 - 对应用情景法规环境的概述。
-- 一份清单，其中列出了要处理的问题并对照这些法规义务关联了 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft 365 服务。 该清单可当做一项工具，用来对照法规框架衡量合规性并对合规性文件编制提供内部结构，它还可帮助客户就 Microsoft 商业云服务展开自己的风险评估。
+- 一份清单，其中列出了要解决的问题，并将 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft 365 服务与这些法规义务进行对应。 该清单可以用作度量是否符合法规框架的工具，并提供用于记录合规性的内部结构，帮助客户自行对 Microsoft 业务云服务进行风险评估。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -71,10 +71,10 @@ Microsoft 清单可对正在就 Microsoft 商业云服务进行尽职调查评�
 
 - [Microsoft 金融服务合规性计划](https://aka.ms/FSCP-Print)
 - [Microsoft 商业云服务和金融服务](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)（Azure 中的金融服务合规性）
+- [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure 金融服务云风险评估工具](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
 
-是否需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/5/F/3/5F3E78C9-767C-4260-92D9-A244EF3BA607/NBB-FSMA-Compliance.pdf)。
+需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/5/F/3/5F3E78C9-767C-4260-92D9-A244EF3BA607/NBB-FSMA-Compliance.pdf)。

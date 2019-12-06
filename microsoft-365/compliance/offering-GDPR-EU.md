@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ab50ba0a901672b2bd6f21f95f04612bba3f8cfd
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233535"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859772"
 ---
-# <a name="compliance-offering-general-data-protection-regulation-gdpr"></a>合规性产品/服务：一般数据保护条例 (GDPR)
+# <a name="general-data-protection-regulation-gdpr"></a>一般数据保护条例 (GDPR)
 
 ## <a name="learn-about-gdpr-compliance-best-practices"></a>了解 GDPR 合规性的最佳做法
 
