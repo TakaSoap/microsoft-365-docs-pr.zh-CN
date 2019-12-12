@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: 在 Microsoft Outlook 中发送或回复 S/MIME 加密邮件与发送或回复未加密邮件类似。
-ms.openlocfilehash: 63f45688946f1946f0b0a63cec748d0f0c6a50ee
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: ccea4e3359ecb9a5b214e4d19afa3e188b1b2865
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305926"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970278"
 ---
-# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a><span data-ttu-id="bcaad-103">在 Exchange Online 中发送和接收 S/MIME 签名和加密的电子邮件</span><span class="sxs-lookup"><span data-stu-id="bcaad-103">Send and receive S/MIME signed and encrypted email in Exchange Online</span></span>
+# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a><span data-ttu-id="4d3e7-103">在 Exchange Online 中发送和接收 S/MIME 签名和加密的电子邮件</span><span class="sxs-lookup"><span data-stu-id="4d3e7-103">Send and receive S/MIME signed and encrypted email in Exchange Online</span></span>
 
-<span data-ttu-id="bcaad-104">在 Microsoft Outlook 中发送或回复 S/MIME 加密邮件与发送或回复未加密邮件类似。</span><span class="sxs-lookup"><span data-stu-id="bcaad-104">Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message.</span></span> <span data-ttu-id="bcaad-105">有关从电子邮件程序（如 Outlook 网页版（以前称为 "Outlook Web App"）读取或发送 S/MIME 加密邮件的详细信息，请参阅[使用 Outlook 发送和回复 S/mime 加密邮件](https://go.microsoft.com/fwlink/p/?LinkId=392520)。</span><span class="sxs-lookup"><span data-stu-id="bcaad-105">For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook on the web (formerly known as Outlook Web App), see [Use Outlook to send and reply to S/MIME encrypted messages](https://go.microsoft.com/fwlink/p/?LinkId=392520).</span></span>
+<span data-ttu-id="4d3e7-104">在 Microsoft Outlook 中发送或回复 S/MIME 加密邮件与发送或回复未加密邮件类似。</span><span class="sxs-lookup"><span data-stu-id="4d3e7-104">Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message.</span></span> <span data-ttu-id="4d3e7-105">有关从电子邮件程序（如 Outlook 网页版（以前称为 Outlook Web App）读取或发送 S/MIME 加密邮件的详细信息，请参阅[web 上的使用 S/Mime 加密邮件](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)。</span><span class="sxs-lookup"><span data-stu-id="4d3e7-105">For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook on the web (formerly known as Outlook Web App), see [Encrypt messages by using S/MIME in Outlook on the web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="bcaad-106">详细信息</span><span class="sxs-lookup"><span data-stu-id="bcaad-106">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="4d3e7-106">更多信息</span><span class="sxs-lookup"><span data-stu-id="4d3e7-106">For more information</span></span>
 
-[<span data-ttu-id="bcaad-107">邮件签名和加密的 S/MIME</span><span class="sxs-lookup"><span data-stu-id="bcaad-107">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
+[<span data-ttu-id="4d3e7-107">邮件签名和加密的 S/MIME</span><span class="sxs-lookup"><span data-stu-id="4d3e7-107">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
