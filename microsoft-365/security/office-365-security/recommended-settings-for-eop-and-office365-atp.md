@@ -13,18 +13,21 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837326"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971540"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
 **Exchange Online Protection （EOP）** 是 Office 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Office 365 高级威胁防护（ATP）** ATP Plan 1 或 ATP 计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
 
 尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Office 365 ATP 中有两个安全级别：**标准**和**严格**。 每个客户的环境和需求各不相同，但我们认为这些级别的邮件筛选配置将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
+
+> [!IMPORTANT]
+> 必须在邮箱上启用垃圾邮件配置，才能使筛选正常工作。 默认情况下启用此设置，但如果筛选似乎不起作用，则应进行检查。 阅读[set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)以了解详细信息。 
 
 本主题介绍了这些 Microsoft 推荐的设置，以帮助保护 Office 365 用户。
 
@@ -41,7 +44,7 @@ ms.locfileid: "39837326"
 |网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |高可信度网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |批量电子邮件检测操作|将邮件移动到 "垃圾邮件" 文件夹|隔离邮件||
-|将批量电子邮件阈值设置为|6 |4 |默认值为7，但我们建议大多数组织将其向下移动到至少6|
+|将批量电子邮件阈值设置为|6 |4 |默认值为7，但我们建议您将其更改为6。 有关详细信息，请参阅[批量投诉级别值](bulk-complaint-level-values.md)。|
 |隔离保留期|30 天|30 天||
 |安全提示|打开|打开||
 |允许的发件人|无|无||
@@ -163,4 +166,3 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |ATP 安全附件未知的恶意软件响应|阻止|阻止||
 |在检测时重定向附件|已启用|已启用|重定向到安全管理员的电子邮件地址，该管理员知道如何确定附件是否为恶意软件|
 |如果恶意软件扫描附件超时或发生错误，则 ATP 安全附件响应|已启用|已启用||
-

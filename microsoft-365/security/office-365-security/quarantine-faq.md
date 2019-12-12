@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了关于托管隔离的常见问题及解答。
-ms.openlocfilehash: 2754efb6edee577eca351da0486ac54912ec4b5b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: f8d7d0820685671c4cbe9ae7671058cc60d8e637
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872078"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971550"
 ---
 # <a name="quarantine-faq"></a>隔离常见问题解答
 
@@ -27,7 +27,7 @@ ms.locfileid: "39872078"
 
  **问：如何在隔离中管理恶意软件隔离的邮件？**
 
-您需要使用安全&amp;合规性中心，以便查看和处理发送到隔离的邮件，因为它们包含恶意软件。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+您需要使用安全&amp;合规性中心，以便查看和处理发送到隔离的邮件，因为它们包含恶意软件。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](quarantine-email-messages.md)。
 
  **问：如何将该服务配置为将垃圾邮件隔离的邮件发送到隔离邮箱？**
 

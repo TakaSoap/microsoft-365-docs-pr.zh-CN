@@ -2,7 +2,7 @@
 title: 在 Microsoft 365 安全中心中监视和查看报告
 description: 介绍 Microsoft 365 安全中心如何一目了然地概述保护和安全状态。
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、status
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 80b7bf07790b7f5cb8cf0e07acd6abb921404d6f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5b2dee5916a793221e8030dd41c8c0ba33ea7a0d
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076132"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910129"
 ---
-# <a name="monitor-and-view-reports-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中监视和查看报告
+# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中监视和查看报告
 
 Microsoft 365 安全中心提供了有关整个 Microsoft 365 环境的保护和安全状态摘要。
 
@@ -29,14 +29,14 @@ Microsoft 365 安全中心提供了有关整个 Microsoft 365 环境的保护和
 
 默认情况下，卡片分为以下几类：
   
-* [标识](monitor-and-report-identities.md)–用户帐户和凭据
-* [Data](monitor-data.md) –电子邮件和文档内容
-* [设备](monitor-devices.md)–计算机、移动电话和其他设备
-* [应用](monitor-apps.md)程序–程序和附加的联机服务
+* [标识](monitor-and-report-identities.md)-用户帐户和凭据
+* [Data](monitor-data.md) -电子邮件和文档内容
+* [设备](monitor-devices.md)-计算机、移动电话和其他设备
+* [应用](monitor-apps.md)程序-程序和附加的联机服务
 
 切换到 "**按主题分组**"，重新排列卡片并将其分组为以下内容：
 
-* **风险**–突出显示可能存在风险的实体（如帐户和设备）的卡片。 这些卡片还突出显示了可能的风险来源，如新的威胁活动和特权云应用  
-* **检测趋势**–突出显示新的威胁检测、异常和策略违规的卡片
-* **配置和运行状况**–包括安全控制的配置和部署的卡片，包括将设备加入状态添加到管理服务
-* **其他**–所有其他不按其他主题分类的卡片
+* **风险**卡片，突出显示可能存在风险的实体（如帐户和设备）。 这些卡片还突出显示了可能的风险来源，如新的威胁活动和特权云应用  
+* **检测趋势**-突出显示新的威胁检测、异常和策略违规的卡片
+* **配置和运行状况**，包括安全控制的配置和部署，包括将设备加入状态到管理服务
+* **其他-其他**所有不按其他主题分类的卡片

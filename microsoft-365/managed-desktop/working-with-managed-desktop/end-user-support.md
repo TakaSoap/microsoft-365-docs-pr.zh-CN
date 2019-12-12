@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
-ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
+ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37391215"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962199"
 ---
 # <a name="getting-help-for-end-users"></a>获取最终用户的帮助
 
@@ -24,7 +24,7 @@ ms.locfileid: "37391215"
 
 为您的用户提供支持的首选方法是**获取帮助**，这是最终用户设备中内置的易于使用的界面。  
 
-![获取帮助](images/get-help.png)
+![获取帮助应用程序图标](images/get-help.png)
 
 这是安装在所有 Microsoft 托管桌面设备上并固定到任务栏的应用程序。 
 
@@ -51,6 +51,8 @@ ms.locfileid: "37391215"
 - 美国： + 1 855 425 0216
 - 加拿大（魁北克除外）： + 1 855 425 0216
 - 英国： + 44 800 026 0698
+- 比利时： + 32 800 58533
+- 卢森堡： + 352 800 40119
 - 澳大利亚： + 61 180 037 0619
 - 新西兰： + 64 988 44380
 
@@ -60,4 +62,4 @@ ms.locfileid: "37391215"
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面的管理员支持](admin-support.md)。 
 - [支持 Microsoft 托管桌面](../service-description/support.md)。
-- 如果您已订阅 Microsoft 托管桌面，则可以在 Microsoft 托管桌面管理的 "**联机资源**" 部分的 "Microsoft 托管桌面管理指南" 中找到详细的过程、流程、工作说明和 faq。 [门户](https://aka.ms/mwaasportal)。
+- 如果您已订阅 Microsoft 托管桌面，则可以在[Microsoft 托管桌面管理门户](https://aka.ms/mwaasportal)的 "**联机资源**" 部分的 "Microsoft 托管桌面管理指南" 中找到详细的过程、流程、工作说明和 faq。

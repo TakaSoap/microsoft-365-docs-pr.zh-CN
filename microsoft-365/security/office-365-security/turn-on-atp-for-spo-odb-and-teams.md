@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP，包括如何为检测到的文件设置通知。
-ms.openlocfilehash: c438bd1ce0469c831ab5f1b9e08e22a69d2d21a6
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 720b14100409ab607eab7370644ee3e8ff96dca9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866444"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971650"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 [适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md)可防止您的组织无意中共享恶意文件。 检测到恶意文件时，将阻止该文件，以便在组织的安全团队执行进一步操作之前，任何人都无法打开、复制、移动或共享该文件。 阅读本文以打开 SharePoint、OneDrive 和团队的 ATP，设置通知以获得检测到的文件的通知，并采取后续步骤。
   
@@ -48,7 +48,7 @@ ms.locfileid: "39866444"
   
 3. 选择 "**为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP**"。<br/>![为 SharePoint Online、OneDrive for Business 和 Microsoft 团队启用高级威胁防护](../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
-4. 单击“保存”****。
+4. 单击 **“保存”**。
     
 5. 查看（并根据需要编辑）您组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
     
@@ -84,7 +84,7 @@ ms.locfileid: "39866444"
     
 6. 在 "**将此通知发送给 ...** " 部分，选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。 
     
-7. 单击“保存”****。
+7. 单击 **“保存”**。
     
 若要了解有关通知的详细信息，请参阅[在 Office 365 安全&amp;合规中心中创建活动通知](../../compliance/create-activity-alerts.md)。 
   

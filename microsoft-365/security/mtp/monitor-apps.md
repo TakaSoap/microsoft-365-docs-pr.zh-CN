@@ -2,7 +2,7 @@
 title: Microsoft 365 安全中心中的应用程序监控和报告
 description: 介绍如何能够深入了解组织中的云应用程序使用情况
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、apps
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 29dd1f4ebb8d65bb6079cdc4467f1aa5e33ae906
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8688088508f57fca1ba62dd41c28cd204df5c05e
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076152"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910257"
 ---
-# <a name="app-monitoring-and-reporting-in-microsoft-365-security-center"></a>Microsoft 365 安全中心中的应用程序监控和报告
+# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的应用程序监控和报告
 
 这些报告可更深入地了解如何在组织中使用云应用程序，包括哪些类型的应用、风险级别和警报。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37076152"
 
 **电子邮件保护**显示有风险的电子邮件帐户。 您可以单击某个帐户以在 Microsoft Defender 安全中心中进行进一步调查。
 
-![电子邮件保护卡](../media/security-docs/email-protection.png)
+![电子邮件保护卡](../images/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>监视用户授予的应用程序权限
 
@@ -35,25 +35,25 @@ ms.locfileid: "37076152"
 
 风险因素从一般信息（如应用程序发布者）开始，到安全措施和控件，例如应用程序是否支持在 rest 上进行加密或提供用户活动的审核日志。
 
-![云应用安全 OAuth 应用程序卡片](../media/security-docs/cloud-app-security-oauth-apps.png)
+![云应用安全 OAuth 应用程序卡片](../images/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>监视云应用程序用户帐户
 
 **适用于审阅的云应用帐户**列表可能需要注意的帐户。
 
-![审阅卡片的云应用程序帐户](../media/security-docs/cloud-app-accounts-for-review.png)
+![审阅卡片的云应用程序帐户](../images/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>了解使用的是哪些云应用程序
 
 已**发现的云应用程序（类别）** 显示在您的组织中使用的是哪些类型的应用程序，以及云发现仪表板在云应用安全中的链接。 有关详细信息，请参阅[快速入门：使用已发现的应用](https://docs.microsoft.com/cloud-app-security/discovered-apps)。  
 
-![发现的云应用类别卡片](../media/security-docs/discovered-cloud-apps-categories.png)
+![发现的云应用类别卡片](../images/discovered-cloud-apps-categories.png)
 
 ## <a name="monitor-where-users-access-cloud-apps"></a>监视用户访问云应用程序的位置
 
 **云应用活动位置**显示用户在访问云应用程序的位置。
 
-![云应用活动位置卡片](../media/security-docs/cloud-app-activity-locations.png)
+![云应用活动位置卡片](../images/cloud-app-activity-locations.png)
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>监视基础架构工作负载的运行状况
 
@@ -63,4 +63,4 @@ Azure 安全中心在内部部署和云工作负载中提供统一的安全管�
 
 有关详细信息，请参阅[Azure 安全中心文档](https://docs.microsoft.com/azure/security-center/)。
 
-![基础结构运行状况卡片](../media/security-docs/infrastructure-health.png)
+![基础结构运行状况卡片](../images/infrastructure-health.png)

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 244070c7fd2d5c98f87990bcb4ef6de96ca5a90c
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012297"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962239"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署和跟踪可配置的设置-Microsoft 托管桌面
 
@@ -40,11 +40,12 @@ ms.locfileid: "38012297"
 3. 在 "**部署状态**" 工作区中，选择要部署的设置，然后选择要部署的暂存部署。
 4. 选择 "**部署**" 以将更改部署到其中一个部署组。
 
-![可配置的设置部署](images/1deployedit.png)状态概述 Microsoft 托管桌面建议按此顺序部署到部署组： Test、First、Fast 和广义。 
+![部署状态工作区。 右侧的 "受信任的网站" 窗格。 "部署组" 部分包含三列：部署组、设备和状态。 在 "状态" 列中，突出显示 "部署"。](images/1deployedit.png)
+我们建议按以下顺序部署到部署组： Test、First、Fast 和广义。 
 
 当每个组中的更改完成后，状态将更改为 "**完成**"。
 
-![可配置的设置部署完成](images/2completeedit.png)
+![包含日期更新、版本、测试、首、快速和广泛的列的部署状态工作区。 将展开代理行，并在四个部署组中显示标记为 "complete" 的日期设置。](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>还原部署
 
@@ -56,9 +57,9 @@ ms.locfileid: "38012297"
 1. 登录到[Microsoft 托管桌面管理门户](https://aka.ms/mwaasportal)
 2. 在 "**设置**" 下，选择 "**可配置**"。
 3. 在 "**部署状态**" 工作区中，选择要还原的设置，然后选择要还原的暂存部署。
-4. 在 "**需要还原此更改**" 下，选择 "**还原部署**"。
+4. 在 "**需要还原此更改？**" 下，选择 "**还原部署**"。
 
-![可配置的设置部署还原](images/3revert.png) 
+![部署状态工作区。 "浏览器起始页" 已选中，在右侧打开一个窗格，其中包含有关已提交的更改及其状态的数据。 底部是 "需要还原此更改" 区域，可在其中选择 "还原部署"。](images/3revert.png) 
 
 ## <a name="additional-resources"></a>其他资源
 - [可配置的设置概述](config-setting-overview.md)

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则（传输规则）识别通过 Office 365 组织传递的邮件并对其执行操作。
-ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 604e2c7cb0b2cc34021e6708ae9f08769e8e6e91
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441529"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970338"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则（传输规则）
 
@@ -41,7 +41,7 @@ ms.locfileid: "37441529"
 
 - [通过 Exchange Online Protection 中的文件附件阻止功能降低恶意软件的威胁](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [为加密或解密电子邮件定义规则](https://go.microsoft.com/fwlink/p/?Linkid=402846)
+- [定义用于在 Office 365 中加密或解密电子邮件的规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
 以下视频演示了如何设置 Exchange Online Protection 中的邮件流规则。
 
@@ -69,7 +69,7 @@ ms.locfileid: "37441529"
 
 下表显示了在规则中处理的多个条件、条件值、例外和操作。
 
-|**组件**|**逻辑**|**Comments**|
+|**组件**|**逻辑**|**备注**|
 |:-----|:-----|:-----|
 |注释|AND|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果要为带有附件的邮件和包含指定文本的邮件添加相同的免责声明，请为每个条件创建一个规则。在 EAC 中，你可以轻松地复制规则。|
 |邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。|或|一些条件允许你指定多个值。邮件必须匹配任一（并非全部）指定值。例如，如果电子邮件的主题为 Stock price information，并且 **主题包含这些词中的任一个**条件被配置为匹配单词 Contoso 或 stock，则符合该条件，因为主题中至少包含指定值中的一个。  |
@@ -106,9 +106,9 @@ All messages that flow through your organization are evaluated against the enabl
 |**消息类型**|**是否可以应用规则？**|
 |:-----|:-----|
 |**常规邮件**：包含单个 rtf 格式（rtf）、HTML 或纯文本邮件正文或多部分或备用的邮件正文集的邮件。|是|
-|**Office 365 邮件加密**：在 office 365 中由 Office 365 邮件加密加密的邮件。 有关详细信息，请参阅 [Office 365 邮件加密](https://go.microsoft.com/fwlink/p/?LinkId=392525)。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 对于检查或修改加密邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。有关详细信息，请参阅 [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060)（启用或禁用传输解密）。  <br/><br/> 还可以创建规则，自动解密加密邮件。有关详细信息，请参阅[为加密或解密电子邮件定义规则](https://go.microsoft.com/fwlink/p/?Linkid=402846)。  |
+|**Office 365 邮件加密**：在 office 365 中由 Office 365 邮件加密加密的邮件。 有关详细信息，请参阅 [Office 365 中的加密](https://docs.microsoft.com/microsoft-365/compliance/encryption)。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 对于检查或修改加密邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。 有关详细信息，请参阅[在 Office 365 中定义用于加密或解密电子邮件的规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。|
 |**S/MIME 加密邮件**|规则仅可根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 无法处理具有需要检查邮件内容的条件的规则或可以修改邮件内容的操作。|
-|**受 RMS 保护的邮件**：应用了 Active Directory 权限管理服务（AD RMS）或 Azure 权限管理（rms）策略的邮件。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 对于检查或修改 RMS 保护的邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。有关详细信息，请参阅 [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060)（启用或禁用传输解密）。  |
+|**受 RMS 保护的邮件**：应用了 Active Directory 权限管理服务（AD RMS）或 Azure 权限管理（rms）策略的邮件。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 对于检查或修改 RMS 保护的邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。|
 |**明文签名的邮件**：已签名但未加密的邮件。|是|
 |**UM 邮件**：由统一消息服务创建或处理的邮件，如语音邮件、传真、未接来电通知以及使用 Microsoft Outlook voice Access 创建或转发的邮件。|是|
 |**匿名邮件**：由匿名发件人发送的邮件。|是|
@@ -120,10 +120,10 @@ All messages that flow through your organization are evaluated against the enabl
 
 - 在创建或修改邮件流规则后，最长可能需要30分钟才能将新的或更新的规则应用于邮件。
 
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多信息
 
 [使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 [Office 365 中的电子邮件加密](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
 
-[日记、传输和收件箱规则限制](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[日记、传输和收件箱规则限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

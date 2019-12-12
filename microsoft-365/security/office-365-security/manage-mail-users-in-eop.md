@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871768"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971740"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -63,13 +63,13 @@ ms.locfileid: "39871768"
 
   - **最终用户垃圾邮件隔离**：为了访问最终用户的垃圾邮件隔离，最终用户必须具有有效的 Office 365 用户 ID 和密码。 负责保护本地邮箱的 EOP 客户必须是有效的电子邮件用户。
 
-  - **邮件流规则**：使用目录同步时，会自动将现有的 Active directory 用户和组上载到云，然后可以创建邮件流规则（也称为传输规则），这些规则针对特定用户和/或组，而无需通过 EAC 或 Exchange Online Protection PowerShell 手动添加它们。 请注意， [动态通讯组](https://go.microsoft.com/fwlink/?LinkId=507569)无法通过目录同步进行同步。
+  - **邮件流规则**：使用目录同步时，会自动将现有的 Active directory 用户和组上载到云，然后可以创建邮件流规则（也称为传输规则），这些规则针对特定用户和/或组，而无需通过 EAC 或 Exchange Online Protection PowerShell 手动添加它们。 请注意， [动态通讯组](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)无法通过目录同步进行同步。
 
-按[准备进行目录同步](https://go.microsoft.com/fwlink/p/?LinkId=308908)中所述，获取所需权限，并准备进行目录同步。
+获取必要的权限并准备目录同步，如["使用 Azure Active directory 的混合标识是什么？"](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)中所述。
 
 ### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>将用户目录与 Azure Active Directory Connect 同步（AAD 连接）
 
-若要将用户同步到 Azure Active Directory （AAD），您必须首先**激活目录同步**，如[激活目录同步](https://go.microsoft.com/fwlink/p/?LinkId=308909)中所述。
+若要将用户同步到 Azure Active Directory （AAD），您必须首先**激活目录同步**，如[Azure AD Connect sync 中所述：了解和自定义同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)。
 
 接下来是安装和配置本地计算机以运行 AAD 连接（如果尚不存在，则需要事先检查）。 [设置 Aad 连接，](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)了解如何设置用户并将帐户从本地部署到使用 AAD 连接的 Azure AD 的方法。
 

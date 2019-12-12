@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: 本主题的目的是帮助您了解从内部部署电子邮件卫生设备或基于云的保护服务切换到 Exchange Online Protection (EOP) 的过程，然后为您提供开始操作的帮助资源。
-ms.openlocfilehash: ebb06951513f742b5b1a1917513960ffa144d127
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: c9d8bc73ee6226bececed7d8a4fc66b0eccfa6e1
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441199"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971390"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
 
@@ -25,7 +25,7 @@ ms.locfileid: "37441199"
 
 在切换到 EOP 之前，有必要考虑是要在云中、Exchange Online、内部部署还是在混合方案中托管 EOP 保护的邮箱。（混合方案意味着某些邮箱在内部部署中托管，其他一些邮箱使用 Exchange Online 托管。）各托管方案：可能是云、内部部署和混合，但安装步骤可能有所不同。有一些考虑事项可帮助您选择合适的部署：
 
-- **使用本地邮箱的 EOP 保护**：如果您有要使用的现有邮件托管基础结构，或者您具有将邮箱保留在本地的业务要求，并且您希望将 EOP 用作基于云的电子邮件，则此方案适用。保护. [独立切换到 EOP](#switch-to-eop-standalone)详细描述了此方案。
+- **使用本地邮箱的 EOP 保护**：如果您有要使用的现有邮件托管基础结构，或者您有业务要求将邮箱保留在本地，并且您希望将 EOP 用作基于云的电子邮件保护，则此方案适用。 [独立切换到 EOP](#switch-to-eop-standalone)详细描述了此方案。
 
 - **使用 Exchange Online 邮箱的 EOP 保护**：如果您希望 EOP 保护和在云中托管的所有邮箱，则此方案适用。 它可以帮助您降低复杂性，因为您不必维护内部部署邮件传递服务器。 [切换到 Exchange Online](#switch-to-exchange-online) 描述了此方案。
 
@@ -37,7 +37,7 @@ ms.locfileid: "37441199"
 
 ## <a name="switch-to-exchange-online"></a>切换到 Exchange Online
 
-或许您有本地邮箱受本地设备保护，并且您希望跳转到 Exchange Online 云托管邮箱和 EOP 保护以利用 Office 365 云邮件和保护功能。 若要开始，你可以注册 Office 365 并添加你的域。 此方案不需要设置连接器，因为不存在到本地邮箱的任何路由。 从[Office 365 注册页](https://www.microsoft.com/office365/online-software.aspx)开始。 [Office 365 入门](https://go.microsoft.com/fwlink/p/?LinkId=275407)提供了熟悉其功能的资源。
+或许您有本地邮箱受本地设备保护，并且您希望跳转到 Exchange Online 云托管邮箱和 EOP 保护以利用 Office 365 云邮件和保护功能。 若要开始，你可以注册 Office 365 并添加你的域。 此方案不需要设置连接器，因为不存在到本地邮箱的任何路由。 从[获取 Office 365 的最新高级功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)开始注册并熟悉其功能。
 
 在 Office 365 设置过程中，将创建基于云的邮箱用户。
 

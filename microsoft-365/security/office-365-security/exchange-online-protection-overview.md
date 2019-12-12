@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服务，可帮助您的组织防御垃圾邮件和恶意邮件，并包括用于保护您的组织避免违反邮件策略的功能。
-ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 2083b71655b1d5bbf30adbb7bfff3229cfb07525
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772266"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970488"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -38,7 +38,7 @@ Microsoft Exchange Online Protection (EOP) 是基于云的电子邮件筛选服�
 
 ![电子邮件流程图。](../media/GitHubBugs/emailprocessingineop1.png)
 
-传入邮件最初通过连接筛选，它会检查发件人的信誉并检查邮件中是否存在恶意软件。 大多数垃圾邮件在这时就会被 EOP 阻止并删除。 邮件将继续通过策略筛选，其中将根据您从模板创建或实施的自定义邮件流规则（也称为传输规则）对邮件进行评估。 例如，你可以将规则设置为当收到来自特定发件人的邮件时向管理器发送通知。 （此时也会发生数据丢失防护检查，如果你具有该功能，则为; 有关功能可用性的信息，请参阅[Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。）接下来，邮件通过内容筛选，在其中对内容进行检查，了解公共的垃圾邮件的术语或属性。 根据您的设置，可将内容筛选器确定为垃圾邮件的邮件发送到用户的垃圾邮件文件夹或隔离区中，以及其他选项（包括 "收件箱" 或 "自定义文件夹"）。 在邮件成功传递所有这些保护层后，会将其传递给收件人。
+传入邮件最初通过连接筛选，它会检查发件人的信誉并检查邮件中是否存在恶意软件。 大多数垃圾邮件在这时就会被 EOP 阻止并删除。 邮件将继续通过策略筛选，其中将根据您从模板创建或实施的自定义邮件流规则（也称为传输规则）对邮件进行评估。 例如，你可以将规则设置为当收到来自特定发件人的邮件时向管理器发送通知。 （此时也会发生数据丢失防护检查，如果你具有该功能，则为; 有关功能可用性的信息，请参阅[Exchange Online Protection 服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。）接下来，邮件通过内容筛选，在其中对内容进行检查，了解公共的垃圾邮件的术语或属性。 根据您的设置，可将内容筛选器确定为垃圾邮件的邮件发送到用户的垃圾邮件文件夹或隔离区中，以及其他选项（包括 "收件箱" 或 "自定义文件夹"）。 在邮件成功传递所有这些保护层后，会将其传递给收件人。
 
 ### <a name="eop-datacenters"></a>EOP 数据中心
 
@@ -64,7 +64,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 - **Exchange ENTERPRISE cal With services**：如果您有一个内部部署 exchange 组织，并且您已使用这些服务许可证购买了其他 Exchange 企业版 cal，则 EOP 是所包含服务的一部分。
 
-有关跨所有 EOP 订阅计划的要求、重要限制和功能可用性的信息，请参阅 [Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。
+有关跨所有 EOP 订阅计划的要求、重要限制和功能可用性的信息，请参阅[Exchange Online Protection 服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
 ## <a name="setting-up-eop"></a>设置 EOP
 
@@ -72,7 +72,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 如果您已购买 EOP，请参阅 [设置 EOP 服务](set-up-your-eop-service.md)，确保完成配置 EOP 所需的所有步骤，以保护您的邮件环境。
 
-## <a name="for-more-information"></a>更多详细信息
+## <a name="for-more-information"></a>更多信息
 
 [EOP 功能](eop-features.md)
 

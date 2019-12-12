@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商业版的安装步骤概述。
-ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39812770"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967615"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
@@ -50,14 +50,16 @@ ms.locfileid: "39812770"
   
   除了安装向导中的安全设置之外，还可以通过添加以下设置来提高安全性：
 
-      - **电子邮件恶意软件保护**
-      - **ATP 反网络钓鱼**
-      - **Exchange Online Archiving**
-      - **Azure 信息保护（Plan1**）
 
-          若要开始，请[设置高级安全策略](set-up-advanced-security.md)。
+- **电子邮件恶意软件保护**
+- **ATP 反网络钓鱼**
+- **Exchange Online Archiving**
+- **Azure 信息保护（Plan1**）
 
-        请参阅[保护 Microsoft 365 业务的十大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)，以获得最佳安全实践的路线图。
+
+若要开始，请[设置高级安全策略](set-up-advanced-security.md)。
+
+请参阅[保护 Microsoft 365 业务的十大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)，以获得最佳安全实践的路线图。
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>步骤3：设置和管理 Windows 10 设备
 

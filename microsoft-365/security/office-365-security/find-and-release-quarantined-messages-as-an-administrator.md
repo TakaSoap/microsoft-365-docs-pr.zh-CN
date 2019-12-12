@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。
-ms.openlocfilehash: e60c0ae87f050b6e72e53b6069a61cd52df0641a
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871838"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971750"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以管理员身份查找并释放隔离邮件
 
 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。 Office 365 将邮件定向到隔离区，因为它们被标识为垃圾邮件或与邮件流规则匹配（也称为 "传输规则"）。
 
-您可以使用安全 & 合规中心（而不是 EAC）来完成这些任务中的任何任务;Exchange 管理中心（EAC）内的隔离门户将设置为 "decommisioned"。  有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)。
+您可以使用安全 & 合规中心（而不是 EAC）来完成这些任务中的任何任务;Exchange 管理中心（EAC）内的隔离门户将设置为 "decommisioned"。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](quarantine-email-messages.md)。
 
 已隔离邮件在 EAC 的 "**隔离**" 页面上列出。 默认情况下，"**接收**时间" 字段中的邮件按从最新到最旧的顺序排列。 还将为每封邮件列出“发件人”****、“主题”**** 和“到期”**** 值。 您可以通过单击标题来对任何字段排序。 再次单击列标题将按相反顺序排序。 "**隔离**" 页面最多显示500个邮件。
 
@@ -35,16 +35,16 @@ ms.locfileid: "39871838"
 
 - 释放邮件并允许接收该发件人未来发送的所有邮件。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "隔离" 条目。
+- 你必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "隔离" 条目。
 
 - 您可以在 "**隔离**" 页面上一次释放或报告多封邮件。 或者，您可以创建一个远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) cmdlet 搜索邮件，并使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet 释放邮件。
 
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
-> 是否有任何疑问？ 在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。
+> 是否有任何疑问？ 在[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)论坛中寻求帮助。
 
 ## <a name="use-advanced-search-to-filter-and-locate-quarantined-messages"></a>使用高级搜索来筛选和查找隔离邮件
 
@@ -184,6 +184,6 @@ ms.locfileid: "39871838"
 
 如果单击 "**刷新**![刷新" 图标](../media/ITPro-EAC-RefreshIcon.gif)图标刷新数据，然后双击邮件，您应该会看到它已发布给预期的收件人。
 
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多信息
 
 [隔离常见问题解答](quarantine-faq.md)

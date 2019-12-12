@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871758"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970328"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -99,7 +99,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 - **失败**：邮件未送达。
 
-- 已**隔离**：邮件被隔离（如垃圾邮件、批量邮件或网络钓鱼）。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx)。
+- 已**隔离**：邮件被隔离（如垃圾邮件、批量邮件或网络钓鱼）。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](quarantine-email-messages.md)。
 
 - **筛选为垃圾**邮件：邮件已标识为垃圾邮件，已被拒绝或阻止（未隔离）。
 
@@ -335,7 +335,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 以**** 来自垃圾邮件筛选器`S:SFA`代理的开头的 custom_data 值。 下表介绍了关键详细信息：
 
-|**值**|**说明**|
+|**Value**|**说明**|
 |:-----|:-----|
 |`SFV=NSPM`|邮件被标记为非垃圾邮件并发送给预期收件人。|
 |`SFV=SPM`|邮件由内容筛选器标记为垃圾邮件。|
@@ -362,7 +362,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 以**** 其开头`S:AMA`的 custom_data 值来自恶意软件筛选器代理。 下表介绍了关键详细信息：
 
-|**值**|**说明**|
+|**Value**|**说明**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` 或 `AMA=EV|v=1`|已确定此邮件包含恶意软件。 `SUM`指示任意数量的引擎可能检测到恶意软件。 `EV`指示特定引擎检测到恶意软件。 引擎检测到恶意软件后，将触发后续操作。|
 |`Action=r`|邮件已被替换。|
@@ -385,7 +385,7 @@ Security & 合规性中心中的邮件跟踪改进了在 Exchange 管理中心�
 
 从**** 邮件流规则的传输`S:TRA`规则代理（也称为传输规则）开始的 custom_data 值。 下表介绍了关键详细信息：
 
-|**值**|**说明**|
+|**Value**|**说明**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|匹配的规则 ID。|
 |`St=<datetime>`|发生规则匹配时的日期和时间（以 UTC 为单位）。|

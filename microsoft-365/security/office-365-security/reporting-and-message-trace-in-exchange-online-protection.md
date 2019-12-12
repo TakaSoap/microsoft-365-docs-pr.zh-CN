@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮助您确定组织的总体状态和运行状况。此外，还提供可帮助您解决特定事件（例如邮件没有到达目标收件人）的工具，以及协助满足合规性要求的审核报告。下表描述了 EOP 管理员可用的报告和故障排除工具。
-ms.openlocfilehash: 81b4ce3d22fbf33dc2f22a4b0a73a3459b1874ee
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 251286fca4ed54b87809c46e6e0f47ea618df747
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441409"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971502"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection 中的报告和邮件跟踪
 
@@ -31,15 +31,15 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 **邮箱使用情况**：查看邮箱的已用存储、配额消耗、项目计数和上次活动（发送或读取活动）的相关信息。
 
-有关详细信息，请参阅以下资源：
+有关详细信息，请参阅下列资源：
 
-- [Admin center 中的 office 365 报告-Office 365 组](https://go.microsoft.com/fwlink/p/?linkid=861610)
+- [Admin center 中的 office 365 报告-Office 365 组](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [管理中心内的 Office 365 报告-电子邮件活动](https://go.microsoft.com/fwlink/p/?linkid=859706)
+- [管理中心内的 Office 365 报告-电子邮件活动](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [管理中心中的 Office 365 报表-电子邮件应用程序使用情况](https://go.microsoft.com/fwlink/p/?linkid=859707)
+- [管理中心中的 Office 365 报表-电子邮件应用程序使用情况](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [管理中心中的 Office 365 报表-邮箱使用情况](https://go.microsoft.com/fwlink/p/?linkid=859708)
+- [管理中心中的 Office 365 报表-邮箱使用情况](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的安全性 & 合规性报告
 
@@ -49,17 +49,15 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 **EOP**：查看组织中的恶意软件检测、欺骗邮件、垃圾邮件检测和邮件流的相关信息。
 
-[查看高级威胁防护和 Exchange Online Protection 报告](https://go.microsoft.com/fwlink/p/?linkid=852409)
+[查看 Office 365 高级威胁防护报告](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自定义报告
 
-使用 Microsoft Graph 以编程方式创建 Microsoft 365 管理中心提供的报告。有关[在 Microsoft graph 中使用 Office 365 使用率报告](https://go.microsoft.com/fwlink/p/?linkid=865135)的主题
+使用 Microsoft Graph 以编程方式创建 Microsoft 365 管理中心提供的报告。 请参阅[在 Microsoft Graph 中使用 Office 365 使用情况报告](https://docs.microsoft.com/graph/api/resources/report)的主题。
 
-## <a name="custom-reports-using-reporting-web-services"></a>使用报告 Web 服务的自定义报告
+## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自定义报告
 
-使用 REST/ODATA2 查询筛选以编程方式从可用的 Exchange Online Protection PowerShell 报告 cmdlet 创建报告。
-
-请参阅[Office 365 Reporting Web 服务](https://go.microsoft.com/fwlink/p/?LinkId=279926)
+以编程方式创建报表。 请参阅[Microsoft Graph 概述](https://docs.microsoft.com/graph/overview)。
 
 ## <a name="message-trace"></a>Message trace
 

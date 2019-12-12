@@ -1,9 +1,8 @@
 ---
-title: Office 365 中的自动事件响应（空气）
+title: Office 365 中的自动化调查和响应（空气）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,38 +12,41 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
-ms.openlocfilehash: dc1f2a4c0c91cf7b1e2d351f173367e34c5d3323
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: c019d07a9971619f4af453c352ecb5555d402640
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813912"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971940"
 ---
-# <a name="automated-incident-response-air-in-office-365"></a>Office 365 中的自动事件响应（空气）
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
-自动化事件响应（空中）功能使您能够运行自动化的调查过程，以应对目前存在的已知威胁。 空中可帮助您的安全操作团队更高效地运行。
+自动化调查和响应（空中）功能使您能够运行自动化的调查过程，以应对目前存在的已知威胁。 空中可帮助您的安全操作团队更高效地运行。
 - 若要了解空气的工作原理，请使用本文。
 - 若要开始使用 AIR，请参阅[在 Office 365 中自动调查和响应威胁](office-365-air.md)。
+
+> [!TIP]
+> 您是否已将 Microsoft 365 E5 或 Microsoft 365 E3 与身份 & 威胁防护结合使用？ 考虑尝试[Microsoft 威胁防护](../mtp/microsoft-threat-protection.md)。
 
 ## <a name="the-overall-flow-of-air"></a>空气的整体流动
 
 从较高的层次来看，空气流的工作原理如下所示：
 
-|阶段  |涉及的内容  |
+|阶段|涉及的内容|
 |---------|---------|
-|1     |触发的[警报](#alerts)，以及[安全行动手册](#security-playbooks)启动。         |
-|双面     |根据特定的警报和安全行动手册，[自动调查立即开始](#example-a-user-reported-phish-message-launches-an-investigation-playbook)。 （或者，安全分析员可以[手动开始进行自动调查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)，从报告中的值（如[Explorer](threat-explorer.md)）。         |
-|第三章     |自动调查运行时，其范围可能会随着新的相关警报的触发而增加。         |
-|4     |在自动调查期间和之后，可以查看[详细信息和结果](#investigation-graph)。 结果包括[建议的操作](#recommended-actions)，可采取这些操作来响应和修正发现的任何威胁。 此外，还可以使用[行动手册日志](#playbook-log)来跟踪所有调查活动。<br/>如果您的组织使用的是自定义报告解决方案或第三方解决方案，则可以[使用 Office 365 管理活动 API](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions)来查看有关自动调查和威胁的信息。         |
-|5     |您的安全操作团队将检查结果和建议，并批准修正操作。 在 Office 365 中，仅在组织的安全团队批准时才采取更正措施。         |
+|1|触发的[警报](#alerts)，以及[安全行动手册](#security-playbooks)启动。|
+|双面|根据特定的警报和安全行动手册，[自动调查立即开始](#example-a-user-reported-phish-message-launches-an-investigation-playbook)。 （或者，安全分析员可以[手动开始进行自动调查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)，从报告中的值（如[Explorer](threat-explorer.md)）。|
+|第三章|自动调查运行时，其范围可能会随着新的相关警报的触发而增加。|
+|4 |在自动调查期间和之后，可以查看[详细信息和结果](#investigation-graph)。 结果包括[建议的操作](#recommended-actions)，可采取这些操作来响应和修正发现的任何威胁。 此外，还可以使用[行动手册日志](#playbook-log)来跟踪所有调查活动。<br/>如果您的组织使用的是自定义报告解决方案或第三方解决方案，则可以[使用 Office 365 管理活动 API](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions)来查看有关自动调查和威胁的信息。|
+|5 |您的安全操作团队将检查结果和建议，并批准修正操作。 在 Office 365 中，仅在组织的安全团队批准时才采取更正措施。|
 
 以下各节提供了有关空中的更多详细信息，包括有关警报、安全行动手册和调查详细信息的详细信息。 此外，本文还介绍了如何提供空中工作的两个示例。 若要开始使用 AIR，请参阅[在 Office 365 中自动调查和响应威胁](office-365-air.md)。
 
 ## <a name="alerts"></a>警报
 
-[警报](../../compliance/alert-policies.md#viewing-alerts)表示用于事件响应的安全操作团队工作流的触发器。 确定要调查的正确通知集的优先级，同时确保没有威胁是 unaddressed 的挑战。 在手动对通知进行调查时，安全操作团队必须在威胁的风险下对实体（例如，内容、设备和用户）进行搜寻和关联。 此类任务和工作流非常耗时，并涉及多个工具和系统。 通过空气、调查和响应自动化到关键安全和威胁管理警报，可自动触发安全响应行动手册。 
+[警报](../../compliance/alert-policies.md#viewing-alerts)表示用于事件响应的安全操作团队工作流的触发器。 确定要调查的正确通知集的优先级，同时确保没有威胁是 unaddressed 的挑战。 在手动对通知进行调查时，安全操作团队必须在威胁的风险下对实体（例如，内容、设备和用户）进行搜寻和关联。 此类任务和工作流非常耗时，并涉及多个工具和系统。 通过空气、调查和响应自动化到关键安全和威胁管理警报，可自动触发安全响应行动手册。
 
-在空中的初始发行版（2019年4月开始），将自动调查从以下几种单一事件警报策略生成的警报：  
+在空中的初始发行版（2019年4月开始），将自动调查从以下几种单一事件警报策略生成的警报：
 
 - 检测到潜在的恶意 URL 单击
 - 用户报告为网络钓鱼的电子邮件 *
@@ -56,18 +58,18 @@ ms.locfileid: "39813912"
 > [!NOTE]
 > 以星号（*）标记的警报在安全 & 合规性中心（电子邮件通知已关闭）的相应警报策略中被分配了一个*信息性*严重性。 可以通过[报警策略配置](../../compliance/alert-policies.md#alert-policy-settings)启用电子邮件通知。 使用哈希（#）标记的警报通常是与公共预览版行动手册相关联的警报。
 
-若要查看警报，请在安全 & 合规性中心中，选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。 
+若要查看警报，请在安全 & 合规性中心中，选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 "**查看调查**" 链接转到相应的[调查](#investigation-graph)。
 
 > [!NOTE]
 > 默认情况下，通知视图中隐藏信息警报。 若要查看它们，请更改警报筛选以包含信息警报。
 
 如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理（SIEM）系统管理安全警报，则可以通过电子邮件通知或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)将 Office 365 警报发送到该系统。 通过电子邮件或 API 的调查通知通知包括访问安全 & 合规性中心中的警报的链接，使分配的安全管理员能够快速导航到调查。
 
-![链接到调查的警报](../media/air-alerts-page-details.png) 
+![链接到调查的警报](../media/air-alerts-page-details.png)
 
 ## <a name="security-playbooks"></a>安全行动手册
 
-安全行动手册是在 Microsoft 威胁防护中处于自动化的中心的后端策略。 AIR 中提供的安全行动手册基于常见的实际安全方案。 当您的组织中触发一个警报时，将自动启动安全行动手册。 通知触发后，关联的行动手册将自动运行。 行动手册将运行调查，查看所有关联的元数据（包括电子邮件、用户、主题、发件人等）。 根据行动手册的发现，AIR 推荐了您的组织的安全团队可采取的一组操作来控制和缓解威胁。 
+安全行动手册是在 Microsoft 威胁防护中处于自动化的中心的后端策略。 AIR 中提供的安全行动手册基于常见的实际安全方案。 当您的组织中触发一个警报时，将自动启动安全行动手册。 通知触发后，关联的行动手册将自动运行。 行动手册将运行调查，查看所有关联的元数据（包括电子邮件、用户、主题、发件人等）。 根据行动手册的发现，AIR 推荐了您的组织的安全团队可采取的一组操作来控制和缓解威胁。
 
 你将使用空中获取的安全行动手册旨在解决组织目前面临的最常见威胁。 它们基于安全操作和事件响应团队的输入，包括帮助保护 Microsoft 和客户资产的人员。
 
@@ -88,9 +90,9 @@ ms.locfileid: "39813912"
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>行动手册包括调查和建议
 
-在空中，每个安全行动手册包括： 
-- 根调查 
-- 确定并关联其他潜在威胁所需的步骤，以及 
+在空中，每个安全行动手册包括：
+- 根调查
+- 确定并关联其他潜在威胁所需的步骤，以及
 - 建议的威胁补救措施。
 
 每个高级别步骤都包含多个执行的子步骤，以提供对威胁的深入、详细和详尽的响应。
@@ -99,30 +101,30 @@ ms.locfileid: "39813912"
 
 "自动调查" 页面显示您的组织的调查及其当前状态。
 
-![空气的主要调查页面](../media/air-maininvestigationpage.png) 
-  
+![空气的主要调查页面](../media/air-maininvestigationpage.png)
+
 可执行下列操作：
 - 直接导航到调查（选择**调查 ID**）。
 - 应用筛选器。 从**调查类型**、**时间范围**、**状态**或这些情况的组合中进行选择。
 - 将数据导出到 .csv 文件。
 
-调查状态指示分析和操作的进度。 在调查运行时，状态更改以指示是否发现威胁，以及是否已批准操作。 
+调查状态指示分析和操作的进度。 在调查运行时，状态更改以指示是否发现威胁，以及是否已批准操作。
 
 
-|状态  |含义  |
+|状态|含义|
 |---------|---------|
-|即将开始 | 调查已排入队列，以便尽快开始 |
-|正在运行 | 调查已开始，正在进行分析 |
-|找不到威胁 | 调查已完成其分析，未发现任何威胁 |
-|已由系统终止 | 调查未关闭并在7天后过期 |
-|挂起的操作 | 调查发现了与建议的操作有关的威胁 |
-|发现威胁 | 调查发现威胁，但威胁没有在空中可用的操作 |
-|已修正 | 调查已完成且已完全修正（已批准所有操作） |
-|部分修正 | 调查已完成，某些建议的操作已获得批准 |
-|已由用户终止 | 管理员终止了调查 |
-|已失败 | 调查过程中发生错误，阻止它达到威胁的结论 |
-|按限制排队 | 由于系统处理限制，调查正在等待分析（以保护服务性能） |
-|已通过限制终止 | 由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来重新触发调查。 |
+|即将开始| 调查已排入队列，以便尽快开始|
+|正在运行| 调查已开始，正在进行分析|
+|找不到威胁| 调查已完成其分析，未发现任何威胁|
+|已由系统终止| 调查未关闭并在7天后过期|
+|挂起的操作| 调查发现了与建议的操作有关的威胁|
+|发现威胁| 调查发现威胁，但威胁没有在空中可用的操作|
+|已修正| 调查已完成且已完全修正（已批准所有操作）|
+|部分修正| 调查已完成，某些建议的操作已获得批准|
+|已由用户终止| 管理员终止了调查|
+|已失败| 调查过程中发生错误，阻止它达到威胁的结论|
+|按限制排队| 由于系统处理限制，调查正在等待分析（以保护服务性能）|
+|已通过限制终止| 由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来重新触发调查。|
 
 ### <a name="investigation-graph"></a>调查图形
 
@@ -148,16 +150,16 @@ ms.locfileid: "39813912"
 
 ### <a name="email-investigation"></a>电子邮件调查
 
-在调查的 "**电子邮件**" 选项卡上，您可以查看标识为调查一部分的电子邮件的所有群集。 
+在调查的 "**电子邮件**" 选项卡上，您可以查看标识为调查一部分的电子邮件的所有群集。
 
-由于组织中的用户发送和接收的电子邮件数量巨大，因此 
-- 根据邮件头、正文、URL 和附件中的类似属性对电子邮件进行群集化; 
-- 将恶意电子邮件与优质电子邮件分开;并 
-- 对恶意电子邮件采取操作 
+由于组织中的用户发送和接收的电子邮件数量巨大，因此
+- 根据邮件头、正文、URL 和附件中的类似属性对电子邮件进行群集化;
+- 将恶意电子邮件与优质电子邮件分开;并
+- 对恶意电子邮件采取操作
 
-可能需要几个小时。 现在，AIR 可以自动执行此过程，从而节省了贵组织的安全团队的时间和精力。 
+可能需要几个小时。 现在，AIR 可以自动执行此过程，从而节省了贵组织的安全团队的时间和精力。
 
-电子邮件分析步骤中可能会标识两种不同类型的电子邮件群集：相似性群集和指示器群集。 
+电子邮件分析步骤中可能会标识两种不同类型的电子邮件群集：相似性群集和指示器群集。
 - 相似性群集是包含相似的发件人和内容属性的电子邮件。 根据原始检测结果评估这些群集中的恶意内容。 包含足够恶意检测的电子邮件群集被认为是恶意的。
 - 指示器群集是包含来自原始电子邮件的指示器实体（文件哈希或 URL）的电子邮件。 将原始文件/URL 实体标识为恶意时，AIR 会将指示器判定为包含该实体的电子邮件的整个群集。 作为恶意软件识别的文件意味着包含该文件的电子邮件群集被视为恶意软件电子邮件。
 
@@ -165,13 +167,13 @@ ms.locfileid: "39813912"
 
 "**电子邮件**" 选项卡还显示与调查相关的电子邮件项目，例如用户报告的电子邮件详细信息、报告的原始电子邮件、电子邮件 zapped （由于恶意软件/网络钓鱼诈骗等）。
 
-"电子邮件" 选项卡上标识的电子邮件计数当前代表 "**电子邮件**" 选项卡上显示的所有电子邮件的总数。由于电子邮件存在于多个群集中，因此标识的电子邮件的实际总数（并受修正操作影响）是所有群集和原始收件人的电子邮件中显示的唯一电子邮件的计数。 
+"电子邮件" 选项卡上标识的电子邮件计数当前代表 "**电子邮件**" 选项卡上显示的所有电子邮件的总数。由于电子邮件存在于多个群集中，因此标识的电子邮件的实际总数（并受修正操作影响）是所有群集和原始收件人的电子邮件中显示的唯一电子邮件的计数。
 
-由于每个收件人的安全 verdicts、操作和传递位置各不相同，因此每个收件人的资源管理器和空中计数电子邮件都会有所不同。 因此，发送给三个用户的原始电子邮件总共计为三封电子邮件，而不是一封电子邮件。 注释可能会出现两次或多次计数电子邮件的情况，因为电子邮件可能会对其进行多个操作，并且在发生所有操作后，可能会有多个电子邮件副本。 例如，在传递时检测到的恶意软件电子邮件可能会导致阻止（隔离）的电子邮件和替换的电子邮件（受警告文件替换的威胁文件，然后传递到用户的邮箱）。 由于在系统中有电子邮件的两个副本，因此这两个副本可能会在群集计数中进行计数。 
+由于每个收件人的安全 verdicts、操作和传递位置各不相同，因此每个收件人的资源管理器和空中计数电子邮件都会有所不同。 因此，发送给三个用户的原始电子邮件总共计为三封电子邮件，而不是一封电子邮件。 注释可能会出现两次或多次计数电子邮件的情况，因为电子邮件可能会对其进行多个操作，并且在发生所有操作后，可能会有多个电子邮件副本。 例如，在传递时检测到的恶意软件电子邮件可能会导致阻止（隔离）的电子邮件和替换的电子邮件（受警告文件替换的威胁文件，然后传递到用户的邮箱）。 由于在系统中有电子邮件的两个副本，因此这两个副本可能会在群集计数中进行计数。
 
 电子邮件计数是在调查时计算的，当您打开调查 flyouts 时，会重新计算一些计数（基于基础查询）。 "电子邮件" 选项卡上显示的电子邮件群集的电子邮件计数以及在调查时将计算在 "群集浮出控件" 上显示的电子邮件数量值。 在 "群集" 浮出控件的 "电子邮件" 选项卡底部显示的电子邮件计数，资源管理器中显示的电子邮件计数反映在调查的初始分析之后收到的电子邮件。 因此，显示原始数量10封电子邮件的电子邮件群集会在调查分析阶段和管理员审查调查时，显示总的电子邮件列表15个电子邮件。 在不同的视图中显示这两个计数将完成，以指示调查时的电子邮件影响和当前的影响，直到运行补救时间为止。
 
-例如，请考虑以下方案。 三封电子邮件的第一个群集被认为是网络钓鱼。 找到具有相同 IP 和主题的类似邮件的另一个群集，并被视为恶意邮件，因为在初始检测过程中将其部分标识为网络钓鱼。 
+例如，请考虑以下方案。 三封电子邮件的第一个群集被认为是网络钓鱼。 找到具有相同 IP 和主题的类似邮件的另一个群集，并被视为恶意邮件，因为在初始检测过程中将其部分标识为网络钓鱼。
 
 ![空中电子邮件调查页面](../media/air-investigationemailpage.png)
 
@@ -199,12 +201,12 @@ ms.locfileid: "39813912"
 
 ### <a name="machine-investigation"></a>机器调查
 
-在 "**计算机**" 选项卡上，您可以看到标识为调查的一部分的所有计算机。 
+在 "**计算机**" 选项卡上，您可以看到标识为调查的一部分的所有计算机。
 
 ![空中调查计算机页面](../media/air-investigationmachinepage.png)
 
 作为调查的一部分，空中将电子邮件威胁与设备相关联。 例如，调查会将恶意文件哈希传递到[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-)以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。 
+)以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。
 
 可执行下列操作：
 - 获取发现的当前计算机和威胁的直观概述。
@@ -212,9 +214,9 @@ ms.locfileid: "39813912"
 
 ### <a name="entity-investigation"></a>实体调查
 
-在 "**实体**" 选项卡上，您可以看到标识为调查的一部分的所有实体。 
+在 "**实体**" 选项卡上，您可以看到标识为调查的一部分的所有实体。
 
-在这里，您可以查看调查的实体和实体类型的详细信息，例如电子邮件、群集、IP 地址、用户等。 您还可以查看已分析的实体数以及与每个实体相关联的威胁。 
+在这里，您可以查看调查的实体和实体类型的详细信息，例如电子邮件、群集、IP 地址、用户等。 您还可以查看已分析的实体数以及与每个实体相关联的威胁。
 
 !["航空调查实体" 页](../media/air-investigationentitiespage.png)
 
@@ -226,7 +228,7 @@ ms.locfileid: "39813912"
 
 ### <a name="playbook-log"></a>行动手册日志
 
-在 "**日志**" 选项卡上，您可以查看调查过程中的所有操作手册步骤。 该日志将捕获由 Office 365 自动调查功能作为空气的一部分完成的所有操作的完整清单。 它提供了所执行的所有步骤的清晰视图，包括操作本身、说明以及实际 "开始到完成" 的持续时间。 
+在 "**日志**" 选项卡上，您可以查看调查过程中的所有操作手册步骤。 该日志将捕获由 Office 365 自动调查功能作为空气的一部分完成的所有操作的完整清单。 它提供了所执行的所有步骤的清晰视图，包括操作本身、说明以及实际 "开始到完成" 的持续时间。
 
 ![航空调查日志页](../media/air-investigationlogpage.png)
 
@@ -237,7 +239,7 @@ ms.locfileid: "39813912"
 
 ### <a name="recommended-actions"></a>建议的操作
 
-在 "**操作**" 选项卡上，您可以查看在调查完成后建议用于修正的所有操作手册操作。 
+在 "**操作**" 选项卡上，您可以查看在调查完成后建议用于修正的所有操作手册操作。
 
 操作会捕获 Microsoft 建议在调查结束时执行的步骤。 您可以通过选择一个或多个操作来采取补救措施。 单击 "**批准**" 可开始进行修正。 （需要适当的权限-需要 "搜索和清除" 角色才能从资源管理器和 AIR 运行操作）。 例如，安全读者可以查看操作但不能批准。 注意-您无需批准每个操作。 如果您不同意建议的操作，或者您的组织不选择特定类型的操作，则可以选择**拒绝**这些操作，也可以仅忽略它们，不执行任何操作。 通过批准和/或拒绝所有操作，可以完全关闭调查，同时保留某些操作不完整将导致调查状态更改为 "部分修正" 状态。
 
@@ -264,18 +266,18 @@ ms.locfileid: "39813912"
 - 等等。
 
 根调查完成后，行动手册提供了要对其关联的原始电子邮件和实体执行的建议操作的列表。
-  
+
 接下来，执行以下几个威胁调查和搜寻步骤：
 
 - 搜索其他电子邮件群集中的类似电子邮件。
 - 该信号与其他平台（如[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共享。
 - 确定是否有用户通过可疑电子邮件中的任何恶意链接单击过。
 - 跨 Office 365 Exchange Online Protection （[EOP](exchange-online-protection-eop.md)）和 Office 365 高级威胁防护（[ATP](office-365-atp.md)）执行检查以查看用户是否报告了任何其他类似的消息。
-- 将执行检查以查看是否已泄露用户。 此检查在[Microsoft 云应用安全](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)中利用信号，关联任何相关的用户活动异常。 
+- 将执行检查以查看是否已泄露用户。 此检查在[Microsoft 云应用安全](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)中利用信号，关联任何相关的用户活动异常。
 
-在搜寻阶段，会为各种搜寻步骤分配风险和威胁。 
+在搜寻阶段，会为各种搜寻步骤分配风险和威胁。
 
-修正是行动手册的最后阶段。 在此阶段中，将根据调查和搜寻阶段采取补救措施。 
+修正是行动手册的最后阶段。 在此阶段中，将根据调查和搜寻阶段采取补救措施。
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>示例：安全管理员触发来自威胁资源管理器的调查
 
@@ -285,7 +287,7 @@ ms.locfileid: "39813912"
 
 ![使用调查按钮的资源管理器中的用户报告的消息](../media/Explorer-UserReported-Investigate.png)
 
-作为另一个示例，假设您要查看检测为包含恶意软件的电子邮件的数据，并且有几封电子邮件被检测为包含恶意软件。 您可以选择 "**电子邮件**" 选项卡，选择一个或多个电子邮件，然后在 "**操作**" 菜单上选择 "**调查**"。 
+作为另一个示例，假设您要查看检测为包含恶意软件的电子邮件的数据，并且有几封电子邮件被检测为包含恶意软件。 您可以选择 "**电子邮件**" 选项卡，选择一个或多个电子邮件，然后在 "**操作**" 菜单上选择 "**调查**"。
 
 ![在资源管理器中开始调查恶意软件](../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
@@ -300,24 +302,26 @@ Office 365 AIR 包含在以下订阅中：
 - Microsoft 威胁防护
 - Office 365 高级威胁防护（计划 2）
 
-如果你没有这些订阅，请[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)。
+如果你没有这些订阅，请[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 若要了解有关功能可用性的详细信息，请访问[跨高级威胁防护（ATP）计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>使用空中功能所需的权限
 
-通过某些角色（如下表中所述的角色）授予权限： 
+通过某些角色（如下表中所述的角色）授予权限：
 
-|任务 |需要 #a0 个角色 |
+|任务|需要 #a0 个角色|
 |--|--|
-|设置空中功能 |以下各项之一： <br/>- **全局管理员**<br/>- **安全管理员** <br/>可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或在[Office 365 安全 & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配这些角色。 |
-|批准或拒绝建议的操作|下列角色之一（可在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或[Office 365 Security & 合规中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)）中分配这些角色：<br/>- **全局管理员** <br/>- **安全管理员**<br/>- **安全读者** <br/>---和---<br/>- **搜索和清除**（此角色仅在[Office 365 安全 & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配）
+|设置空中功能|以下各项之一： <br/>- **全局管理员**<br/>- **安全管理员** <br/>可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或在[Office 365 安全 & 合规性中心](permissions-in-the-security-and-compliance-center.md)中分配这些角色。|
+|批准或拒绝建议的操作|下列角色之一（可在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或[Office 365 Security & 合规中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)）中分配这些角色：<br/>- **全局管理员** <br/>- **安全管理员**<br/>- **安全读者** <br/>---和---<br/>- **搜索和清除**（此角色仅在[Office 365 安全 & 合规性中心](permissions-in-the-security-and-compliance-center.md)中分配）
 
 ## <a name="next-steps"></a>后续步骤
 
-[开始使用 Office 365 中的 AIR](office-365-air.md)
+- [开始使用 Office 365 中的 AIR](office-365-air.md)
+- [了解 Microsoft Defender ATP 中的空气](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [访问 Microsoft 365 路线图以了解即将推出和推出的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-[了解 Microsoft Defender ATP 中的空气](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
+## <a name="see-also"></a>另请参阅
 
-[访问 Microsoft 365 路线图以了解即将推出和推出的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
+- [Microsoft 威胁防护](../mtp/microsoft-threat-protection.md)
+- [Microsoft 威胁防护中的自动化调查和修正（空气）](../mtp/mtp-autoir.md)

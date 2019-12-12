@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解与使用 Office 365 中的连接器（也称为 "邮件流智能"）关联的邮件传递的错误代码。
-ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
-ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
+ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37886855"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971770"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 中的邮件流智能
 
@@ -60,7 +60,7 @@ ms.locfileid: "37886855"
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>如何修复错误代码 450 4.4.316？
 
-- 如果您的本地环境中有邮箱，您需要修改防火墙设置，以允许从 TCP 端口25上的 Office 365 IP 地址连接到您的本地电子邮件服务器。 有关 Office 365 IP 地址的列表，请参阅[office 365 url 和 IP 地址范围](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx)。
+- 如果您的本地环境中有邮箱，您需要修改防火墙设置，以允许从 TCP 端口25上的 Office 365 IP 地址连接到您的本地电子邮件服务器。 有关 Office 365 IP 地址的列表，请参阅[office 365 url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
 
 - 如果不应将更多的邮件传递到您的本地环境，请单击警报中的 "**立即修复**"，以便 Office 365 可以立即拒绝具有无效收件人的邮件。 这将降低组织的配额对无效收件人的配额造成的风险，这可能会影响正常的邮件传递。 或者，您可以使用以下说明手动修复问题：
 
@@ -74,7 +74,7 @@ ms.locfileid: "37886855"
 
        - 通过单击 "**编辑** ![编辑图标](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) " 和 "取消选中" 禁用连接器以将**其关闭**。
 
-  - 将与本地电子邮件环境关联的 Office 365 中的 "接受域" 从 "**内部中继**" 更改为 "**权威**"。 有关说明，请参阅[在 Exchange Online 中管理接受的域](https://go.microsoft.com/fwlink/p/?linkid=785428)。
+  - 将与本地电子邮件环境关联的 Office 365 中的 "接受域" 从 "**内部中继**" 更改为 "**权威**"。 有关说明，请参阅[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
   **注意**：通常情况下，这些更改需要30分钟到1小时才能生效。 一小时后，验证您是否不再收到该错误。
 

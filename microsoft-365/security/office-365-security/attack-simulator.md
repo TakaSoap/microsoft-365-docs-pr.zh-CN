@@ -14,16 +14,16 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员，你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: bb68850587647f7e96c940de10e3da23cd5e83de
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306176"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971930"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
-**摘要**如果您是 Office 365 全局管理员或安全管理员，并且您的组织具有 Office 365 高级威胁防护计划2（其中包括[威胁调查和响应功能](office-365-ti.md)），则可以使用攻击模拟器运行组织中的真实攻击方案。 这可以帮助您识别和查找易受攻击的用户，在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
+**摘要**如果您是 Office 365 全局管理员或安全管理员，并且您的组织具有 Office 365 高级威胁防护计划2（其中包括[威胁调查和响应功能](office-365-ti.md)），则可以使用攻击模拟器在组织中运行实际的攻击方案。 这可以帮助您识别和查找易受攻击的用户，在真正的攻击影响你的底线之前。 阅读本文以了解详细信息。
 
 ## <a name="the-attacks"></a>攻击
 
@@ -47,7 +47,7 @@ ms.locfileid: "37306176"
 
 - 您是 Office 365 全局管理员或安全管理员
 
-- [多因素身份验证/条件访问](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)已打开，至少适用于将使用攻击模拟器的 Office 365 全局管理员帐户和安全管理员。 （理想情况下，为组织中的所有用户启用多重身份验证/条件访问。）
+- [多因素身份验证/条件访问](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)已打开，至少适用于将使用攻击模拟器的 Office 365 全局管理员帐户和安全管理员。 （理想情况下，为组织中的所有用户启用多重身份验证/条件访问。）
 
 - 您的组织[具有 Office 365 高级威胁防护计划 2](office-365-atp.md)，在&amp;安全合规性中心中显示攻击模拟器（转到**威胁管理** \> **攻击模拟器**）
 

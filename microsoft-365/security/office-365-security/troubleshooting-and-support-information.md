@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。
-ms.openlocfilehash: c87744608930603f70e6be1132a0b405e9646b57
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441189"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971620"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑难解答信息和支持信息
 
@@ -84,8 +84,8 @@ ms.locfileid: "37441189"
 
 如果你需要有关加载项的安装、配置或卸载的帮助，请使用 Microsoft 365 管理中心中的 "支持" 页面上的 "新建服务请求" 链接联系技术支持。 有关其他选项，包括通过电话提交服务请求和自助支持选项，请参阅[Help and support FOR EOP](help-and-support-for-eop.md)。
 
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多信息
 
-[启用报告消息加载项](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[启用报告消息加载项](enable-the-report-message-add-in.md)
 
 [向 Microsoft 报告垃圾邮件](report-junk-email-messages-to-microsoft.md)

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。
-ms.openlocfilehash: 94d37e4e39b690c681b83a159d57d20109470497
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 4081c5ec67dc88429fd748014534830c42a816f8
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866754"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971600"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 
@@ -181,7 +181,7 @@ Foreach ($domain in $Domains) {
 
 5. 记录您将用来验证域的 MX 记录或 TXT 记录，并完成安装向导。
 
-6. 将验证 TXT 记录添加到你的 DNS 记录。这将使你在从目标组织中删除域后，可以更快速地验证源组织中的域。有关配置 DNS 的详细信息，请参阅[为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
+6. 将验证 TXT 记录添加到你的 DNS 记录。 这将使你在从目标组织中删除域后，可以更快速地验证源组织中的域。 有关配置 DNS 的详细信息，请参阅[在任何 DNS 托管提供商处创建适用于 Office 365 的 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>步骤 3：强制发件人对邮件进行排队
 
@@ -191,7 +191,8 @@ Foreach ($domain in $Domains) {
 
 另一个选择是在每个域中放置一个无效的 MX 记录，这些域中都保留了域的 DNS 记录（也称为 DNS 托管服务）。这将使发件人对邮件进行排队，并进行重试（通常重试时间为 48 小时，但具体可能因提供程序而异）。您可以使用 invalid.outlook.com 作为无效的 MX 目标。将 MX 记录的生存时间 (TTL) 值降低为五分钟，这将有助于更快速地将更改传播到 DNS 提供程序。
 
-有关配置 DNS 的详细信息，请参阅[为 Office 365 创建 DNS 记录](https://go.microsoft.com/fwlink/p/?LinkId=304219)。
+有关配置 DNS 的详细信息，请参阅[在任何 DNS 托管提供商处创建适用于 Office 365 的 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+
 
 > [!IMPORTANT]
 > 不同的提供程序对邮件进行排队的时间段均不同。您将需要快速设置新租户，并还原 DNS 设置，以避免如果排队时间到期向发件人发送未送达报告 (NDR)。

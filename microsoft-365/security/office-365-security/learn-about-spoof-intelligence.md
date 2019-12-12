@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 在 "反垃圾邮件设置&amp; " 页上的 "安全合规性中心" 中使用欺骗智能，以查看所有哄骗的发件人是组织中的域，还是哄骗外部域。 欺骗智能作为 Office 365 企业版 E5 的一部分或作为高级威胁防护和 Exchange Online Protection 的一部分单独提供。
-ms.openlocfilehash: 35dee30472317349b330a8507fbf3d7e9573100e
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871808"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970428"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>详细了解防欺骗智能
 
@@ -106,7 +106,7 @@ ms.locfileid: "39871808"
 
 除了允许或阻止特定发件人将欺骗电子邮件发送到您的组织中之外，您还可以配置您希望筛选器的严格程度，以及在找到欺骗邮件时要采取的操作。
 
-反欺骗保护应用于来自 Office 365 组织外部的域的发件人的电子邮件。 您可以将该策略应用于其邮箱授权使用 Office 365 企业版 E5、高级威胁防护和从10月到10月的高级威胁防护的收件人以及 2018 EOP 客户。 您可以管理反欺骗策略以及其他反网络钓鱼设置。 有关反网络钓鱼设置的详细信息，请参阅[设置 Office 365 反网络钓鱼策略](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions)。
+反欺骗保护应用于来自 Office 365 组织外部的域的发件人的电子邮件。 您可以将该策略应用于其邮箱授权使用 Office 365 企业版 E5、高级威胁防护和从10月到10月的高级威胁防护的收件人以及 2018 EOP 客户。 您可以管理反欺骗策略以及其他反网络钓鱼设置。 有关反网络钓鱼设置的详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md)。
 
 Office 365 包括始终运行的默认反欺骗保护。 此默认保护在安全&amp;合规性中心中不可见，或者通过 Windows PowerShell cmdlet 可检索。 您不能修改默认的反欺骗保护。 相反，您可以配置在您创建的每个反网络钓鱼策略中，Office 365 严格实施反欺骗保护的方式。
 

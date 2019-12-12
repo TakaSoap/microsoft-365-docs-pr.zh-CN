@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f77a5f6f0af83ea82d2ab3cea0798b95e27c2d2
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012063"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962609"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -40,7 +40,7 @@ Microsoft 托管桌面管理门户要求访问门户的用户拥有以下 Azure 
 设备 | 设备运行状况，使用 Microsoft 托管桌面设备进行故障排除
 安全性 | Microsoft 托管桌面设备的安全问题故障排除
 IT 技术支持人员 | 如果我们的支持人员在 Microsoft 托管桌面支持区域之外的最终用户票据上进行了干预 
-Other | 对于未被其他区域覆盖的问题
+其他 | 对于未被其他区域覆盖的问题
 
 **你为这些联系人选择的任何人都需要了解有关 Microsoft 托管桌面环境的决策的知识和权威。** 在集成 Microsoft 托管桌面环境时，系统会提示你为本地帮助台和安全添加联系人。 
 
@@ -52,15 +52,15 @@ Other | 对于未被其他区域覆盖的问题
 
 2.  在 "**支持**" 下，选择 "**管理联系人**"。 
 
-    ![支持菜单、管理员联系人](images/admincontacts.png)
+    ![支持菜单，在所选顶部附近为管理员联系人](images/admincontacts.png)
 
 3. 选择“添加”****。
 
-    ![管理门户添加按钮](images/adminadd.png)
+    !["管理门户"、"添加" 按钮（位于 "导出" 和 "刷新" 的左侧）](images/adminadd.png)
 
 4.  选择**焦点区域**并输入联系人的信息。 
 
-    ![焦点区域的列表](images/areaoffocus.png)
+    ![焦点区域的列表，如其他、应用程序和安全性](images/areaoffocus.png)
 
 5. 对每个焦点区域重复此操作。 
 

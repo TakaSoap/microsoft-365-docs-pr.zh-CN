@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 6e114f60d95edb68797e096f56b93836a14425a8
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634019"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962349"
 ---
 # <a name="usage-insights"></a>使用情况见解
 此视图提供 Microsoft 托管桌面设备的使用指标。 出于这些目的，如果应用程序正在运行且处于焦点，则会被视为 "正在使用中"。
 
 若要查看使用率数据，请选择 "**使用率**" 选项卡。
 
-![使用窗格](images/insights_usage.png)
+![使用窗格。 左上角的设备使用情况图（使用情况与时间的百分比）。 右上角的应用程序使用情况表。 列在底部的设备列表表，其中列设备名称、模型、序列号、显示名称、用户名、当前状态（活动、低或非活动）、总设备使用情况（以小时为单位）以及活动天数的数量。](images/insights_usage.png)
 
 ## <a name="device-usage"></a>设备使用情况
 

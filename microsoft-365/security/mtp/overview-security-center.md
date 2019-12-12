@@ -2,7 +2,7 @@
 title: Microsoft 365 安全中心概述
 description: 介绍在 Microsoft 标识、数据、设备和应用程序中监视和管理安全性的新的主页。
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、身份、数据、设备、应用程序
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 12446dcb69b9f2324afcece9f230605fdcfcfdc8
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: e58ceb29693fbf950ba64c267332cf2b3efcadc0
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831993"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909971"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
@@ -27,7 +27,11 @@ ms.locfileid: "39831993"
 
 新的 Microsoft 365 安全中心和[Microsoft 365 合规性中心](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)是专门为满足安全团队和合规性团队的需求而设计的专用工作区。 这些解决方案集成在 Microsoft 365 服务中，并提供可操作的见解，以帮助减少风险并保护您的数字空间。
 
-在 security.microsoft.com 访问 Microsoft 365 安全中心。  
+请访问 Microsoft 365 安全中心（ [https://security.microsoft.com](https://security.microsoft.com)网址为）。 
+
+> [!NOTE]
+> 必须在 Azure Active Directory 中向您分配适当的角色，如全局管理员、安全管理员、安全操作员或安全阅读者，才能访问 Microsoft 365 安全中心。
+
 
 ## <a name="lets-take-a-closer-look"></a>让我们进一步了解一下
 
@@ -35,24 +39,25 @@ ms.locfileid: "39831993"
 
 这一一览的信息可帮助您与组织中的最新活动保持联系。 Microsoft 365 安全中心将来自各种源的信号组合在一起，展示了 Microsoft 365 环境的整体视图。
 
-![Microsoft 365 安全主页](../media/security-docs/home.jpg)
-
 Microsoft 365 安全中心包括：
 
 * **主页**–快速查看你的组织的整体安全运行状况。
-* **警报**–更好地了解 microsoft 356 环境中的所有警报，包括来自 Microsoft 云应用安全性、OFFICE 365 Atp、Azure AD 和 MICROSOFT Defender atp 的警报。 对 E3 和 E5 客户可用。  
+* **事件**-通过将针对实体的各个警报上看到的点连接起来，了解攻击的更广泛的故事。 你将确切知道攻击的启动位置、受影响的设备、受影响的设备以及威胁已消失的位置。
+* **警报**–更好地了解 microsoft 356 环境中的所有警报，包括来自 Microsoft 云应用安全性、OFFICE 365 Atp、azure AD、azure Atp 和 MICROSOFT Defender atp 的警报。 对 E3 和 E5 客户可用。  
+* **操作中心**-减少安全团队必须手动处理的警报量，使安全操作团队能够将重点放在更复杂的威胁和其他高价值计划上。
 * **报告**-获取更好地保护用户、设备、应用程序等所需的详细信息和信息。
 * **安全分数**–通过 Microsoft 安全分数改善总体安全状态。 此页面提供了已启用的不同安全特性和功能的汇总摘要，并提供了针对要改进的区域的建议。
-* **搜寻**-主动搜索 Microsoft 365 组织中的恶意软件、可疑文件和活动。
+* **高级搜寻**-主动搜索 Microsoft 365 组织中的恶意软件、可疑文件和活动。
 * **分类**–通过添加标签以对文档、电子邮件、文档、网站等进行分类，帮助保护数据丢失。 当应用标签（自动或用户）时，内容或网站将根据您选择的设置受到保护。 例如，您可以创建用于加密文件、添加内容标记以及控制用户对特定网站的访问权限的标签。
 * **策略**-设置管理设备、防止威胁以及接收有关你的组织中的各种活动的警报的策略。
 * **权限**-管理组织中的哪些用户有权访问 Microsoft 365 安全中心以查看内容和执行任务。 您还可以在 Azure AD 门户中分配 Microsoft 365 权限。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解更多 
 
 浏览以下有关监视、查看和响应安全需求的主题：
-
-* 使用 [Microsoft 安全分数](microsoft-secure-score.md)查看和改进安全状态 holistically
-* [报告](monitoring-and-reporting.md)你的标识、数据、设备、应用程序和基础结构的状态
-* [主动](hunting.md)查找影响你的电子邮件、数据、设备和帐户的入侵尝试和泄露活动
-* 通过威胁分析[了解最新的攻击活动](latest-attack-campaigns.md)和技术
+- 通过[事件](incident-queue.md)连接警报上的点
+- 使用[自动调查和修正](mtp-autoir.md)自动修正威胁
+- 使用 [Microsoft 安全分数](microsoft-secure-score.md)查看和改进安全状态 holistically
+- [报告](monitoring-and-reporting.md)你的标识、数据、设备、应用程序和基础结构的状态
+- 主动查找影响您的电子邮件、数据、设备和帐户的入侵尝试和破坏性活动[的威胁](advanced-hunting-overview.md)
+- 通过威胁分析[了解最新的攻击活动](latest-attack-campaigns.md)和技术

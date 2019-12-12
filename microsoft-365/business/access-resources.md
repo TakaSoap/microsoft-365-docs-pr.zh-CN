@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从加入 Windows 10 设备的 Azure Active Directory 中获取本地资源（如业务线应用、文件共享和打印机）的访问权限。
-ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668780"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967155"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>从 Microsoft 365 商业版中的 Azure AD 加入设备访问本地资源
 
@@ -47,7 +47,7 @@ ms.locfileid: "39668780"
     
 无需执行任何其他步骤即可访问 Azure AD 加入的设备的本地资源。 此功能内置在 Windows 10 中。 
 
-如果您计划登录到 AADJ 设备而不是 password 方法（如通过 WHFB 凭据登录的 PIN/Bio 指标），然后访问本地资源（共享、打印机）。等），请按照https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
+如果您计划登录到 AADJ 设备而不是 password 方法（如通过 WHFB 凭据登录的 PIN/Bio 指标），然后访问本地资源（共享、打印机）。等），请按照https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 如果你的组织未准备好在上面所述的 Azure AD 联接的设备配置中进行部署，请考虑设置[混合 AZURE ad 已加入设备配置](manage-windows-devices.md)。
   

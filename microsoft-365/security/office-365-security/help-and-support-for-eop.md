@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: e02723b0c8e2d5b5309054babf27f0f3e9587a88
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 3be67348b9522832a754e83e57e4a99e4f9147b3
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441109"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970418"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -23,17 +23,17 @@ ms.locfileid: "37441109"
 
 ## <a name="self-support-options"></a>自助支持选项
 
-登录后，可查看 Office 365 门户上显示的组织服务状态相关信息。此外，Office 365 的服务运行状况部分还显示了服务的当前状态、中断和故障的详细信息，并列出了计划的维护时间。Office 365 门户还显示已知问题和预期解决方案。如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。我们建议你阅读所有项的信息，然后酌情进行处理。有关 Office 365 服务运行状况区域的详细信息，请参阅[服务运行状况](https://go.microsoft.com/fwlink/?LinkId=394289)。通过本文列出的工具、论坛和社区站点，还可以自行获得更多帮助。
+登录后，可查看 Office 365 门户上显示的组织服务状态相关信息。 此外，Office 365 的服务运行状况部分还显示了服务的当前状态、中断和故障的详细信息，并列出了计划的维护时间。 Office 365 门户还显示已知问题和预期解决方案。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关 Office 365 的 "服务运行状况" 区域的详细信息，请参阅[服务运行状况和连续性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 通过本文列出的工具、论坛和社区站点，还可以自行获得更多帮助。
 
-[Exchange Online Protection 产品概述](https://go.microsoft.com/fwlink/p/?LinkId=279912)
+[Exchange Online Protection 产品概述](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Office 365 and Exchange Online support](https://go.microsoft.com/fwlink/?LinkId=299655)（Office 365 和 Exchange Online 支持）
+[联系商业版产品的支持人员 - 管理员帮助](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Office 365 社区](https://go.microsoft.com/fwlink/?LinkId=299656)
+[Office 365 社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Office 365 自助 (DIY) 疑难解答](https://go.microsoft.com/fwlink/?LinkId=299657)
+[Microsoft 支持和恢复助理（SaRA）](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-[Office 365 Mail Flow Guided Walkthrough](https://go.microsoft.com/fwlink/?LinkId=323470)（Office 365 邮件流指导演示）
+[邮件流疑难解答程序](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 协助支持
 
@@ -43,7 +43,7 @@ ms.locfileid: "37441109"
 
 如果您是 EOP 客户，而且具有 Microsoft Premier Support 合同，您可以通过正常的 Microsoft Premier Support 渠道获得支持。这允许您接收对 Premier Support 客户可用的所有进程和资源（如 Premier 技术客户经理 (TAM) 和实例提交）的访问权限。适用于 Microsoft Online Services 的 Premier Support 将 Premier Support 框架从内部部署产品扩展到联机服务，从而为您提供跨所有产品和服务的统一支持体验。该服务有助于确保客户可以快速解决问题，并且简化对 IT 基础结构不同组件的支持进行管理的任务。
 
-若要详细了解顶级支持如何帮助组织最大限度地提高 IT 投资回报率，请参阅 [Microsoft Premier Support](https://go.microsoft.com/fwlink/?LinkId=317437)（Microsoft 顶级支持）。
+有关高级支持如何帮助组织最大限度地提高 IT 投资价值的详细信息，请参阅[适用于合作伙伴的首要支持](https://partner.microsoft.com/support/microsoft-services-premier-support)。
 
 ### <a name="ask-for-help-on-the-web"></a>在 Web 上寻求帮助
 

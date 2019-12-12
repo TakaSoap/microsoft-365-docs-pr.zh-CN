@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: 04cffc6c6e09794e4c92653c1a09dd43718f38c0
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: b782c58bc3694bd27024f9aa7cdb2316c6d2a48a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871988"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971961"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
@@ -93,11 +93,7 @@ A. 是的，您可以配置其他垃圾邮件和恶意软件筛选服务来保�
 
  **Q. Microsoft 是否拥有任何有关如何保护自己免受网络钓鱼诈骗之害的文档？**
 
-答：我们有。请参阅下列文章：
-
-[获取有关网络钓鱼诈骗、彩票欺诈和其他类型的诈骗的帮助](https://go.microsoft.com/fwlink/p/?LinkId=325606)
-
-[电子邮件和网络诈骗： 如何保护自己](https://go.microsoft.com/fwlink/p/?LinkID=325607)
+答：我们有。 是的，请阅读[保护您在 internet 上的隐私](https://support.microsoft.com/help/4091455)
 
  **问：正在调查将垃圾邮件和恶意邮件发送给谁，还是正在移交给执法机构？**
 
@@ -125,7 +121,7 @@ A. 是的，您可以配置其他垃圾邮件和恶意软件筛选服务来保�
 
     [在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-    [关于域的常见问题](/office365/admin/setup/domains-faq)
+    [关于域的常见问题](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 5. **使用 DKIM 对电子邮件签名，用较宽松的规范签名。**
 
@@ -159,25 +155,25 @@ A. 是的，您可以配置其他垃圾邮件和恶意软件筛选服务来保�
 
     双重加入是要求用户采取以下两种操作注册市场邮件的做法。
 
-1. 第一次在用户单击一个之前未选中的复选框（其中他们选择接收营销人员发送的其他促销或电子邮件）时选择。
+   1. 第一次在用户单击一个之前未选中的复选框（其中他们选择接收营销人员发送的其他促销或电子邮件）时选择。
 
-2. 第二次在营销人员向用户提供的电子邮件地址发送确认邮件，要求用户在时间敏感型链接上单击时选择。
+   2. 第二次在营销人员向用户提供的电子邮件地址发送确认邮件，要求用户在时间敏感型链接上单击时选择。
 
-    使用双重选择为群发邮件发件人构建良好的信誉。
+      使用双重选择为群发邮件发件人构建良好的信誉。
 
 10. **群发邮件发件人应创建透明内容，以便他们负起责任：**
 
-1. 收件人将发件人添加到通讯簿上的冗长请求应清楚地表明这些操作无法保证邮件传送的安全性。
+    1. 收件人将发件人添加到通讯簿上的冗长请求应清楚地表明这些操作无法保证邮件传送的安全性。
 
-2. 当在邮件正文构建重定向时，使用一致的链接样式。
+    2. 当在邮件正文构建重定向时，使用一致的链接样式。
 
-3. 请不要发送大容量图片或附件，或仅含一张图片的邮件。
+    3. 请不要发送大容量图片或附件，或仅含一张图片的邮件。
 
-4. 当采用跟踪像素（网络臭虫或信号），清楚地说明公开隐私或 P3P 设置。
+    4. 当采用跟踪像素（网络臭虫或信号），清楚地说明公开隐私或 P3P 设置。
 
 11. **格式出站传输状态通知。**
 
-    当生成传送状态通知邮件时，发件人需按照 [RFC 3464](https://go.microsoft.com/fwlink/?LinkId=279715) 指定的退回格式发送邮件。
+    当生成传送状态通知邮件时，发件人需按照 [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt) 指定的退回格式发送邮件。
 
 12. **清除退回的不存在用户的电子邮件地址。**
 
@@ -189,12 +185,10 @@ A. 是的，您可以配置其他垃圾邮件和恶意软件筛选服务来保�
 
 ## <a name="for-more-information"></a>详细信息
 
-[Office 365 电子邮件反垃圾邮件保护](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
 
 [Exchange Online 中的安全发件人和阻止发件人列表](safe-sender-and-blocked-sender-lists-faq.md)
 
 [反垃圾邮件邮件头](anti-spam-message-headers.md)
 
 [退信消息和 EOP](backscatter-messages-and-eop.md)
-
-
