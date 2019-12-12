@@ -1,32 +1,39 @@
 ---
-title: 在 Microsoft 365 中寻找恶意软件和其他威胁
-description: 介绍如何查找受损帐户、文件较少的恶意软件、可疑电子邮件等。
-keywords: security、恶意软件、Microsoft 365、M365、security center、查寻、搜寻、Microsoft Defender ATP、Office 365 ATP、Azure ATP
-ms.prod: w10
+title: 在 Microsoft 365 中寻找其他威胁
+description: 使用 Microsoft 365 安全中心中的威胁搜寻功能主动发现违规行为和其他威胁
+keywords: security、恶意软件、Microsoft 365、M365、security center、查寻、搜寻、Microsoft Defender ATP、Office 365 ATP、Azure ATP、高级搜寻
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: lomayor
+author: lomayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 218c78cd8737c3a963386ae0a58a79824ef1615f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 795a7d88c2b6021a5bdd665b3787644b50fb346a
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034384"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909419"
 ---
-# <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a><span data-ttu-id="fbdb0-104">在 Microsoft 365 中寻找恶意软件和其他威胁</span><span class="sxs-lookup"><span data-stu-id="fbdb0-104">Hunt for malware and other threats in Microsoft 365</span></span>
+# <a name="hunt-for-threats-in-microsoft-365"></a><span data-ttu-id="81b3c-104">在 Microsoft 365 中寻找威胁</span><span class="sxs-lookup"><span data-stu-id="81b3c-104">Hunt for threats in Microsoft 365</span></span>
 
-<span data-ttu-id="fbdb0-105">搜寻为安全小组提供了跨电子邮件和数据、设备和标识对组织中可能存在的威胁的了解。</span><span class="sxs-lookup"><span data-stu-id="fbdb0-105">Hunting provides security teams a view into possible threats in your organization across email and data, devices, and identities.</span></span> <span data-ttu-id="fbdb0-106">在 Microsoft Defender ATP、Office 365 ATP 和 Azure ATP 门户中，可以查找已损坏的帐户、文件较少的恶意软件、可疑的电子邮件等。</span><span class="sxs-lookup"><span data-stu-id="fbdb0-106">Within Microsoft Defender ATP, Office 365 ATP, and Azure ATP portals you can look for compromised accounts, file less malware, suspicious emails, and more.</span></span>
+<span data-ttu-id="81b3c-105">使用 Microsoft 365 安全中心中的威胁搜索功能，您可以主动发现影响电子邮件和数据、设备和标识的组织中的威胁。</span><span class="sxs-lookup"><span data-stu-id="81b3c-105">With threat hunting capabilities in the Microsoft 365 security center, you can proactively find threats in your organization affecting email and data, devices, and identities.</span></span> <span data-ttu-id="81b3c-106">从 "**搜寻**" 屏幕中，您可以访问各种解决方案提供的威胁搜寻工具：</span><span class="sxs-lookup"><span data-stu-id="81b3c-106">From the **Hunting** screen, you can access threat hunting tools made available by various solutions:</span></span>
+- <span data-ttu-id="81b3c-107">Office 365 ATP-[寻找电子邮件和数据的威胁](../office-365-security/office-365-atp.md)</span><span class="sxs-lookup"><span data-stu-id="81b3c-107">Office 365 ATP — [hunt for threats to email and data](../office-365-security/office-365-atp.md)</span></span>
+- <span data-ttu-id="81b3c-108">Microsoft Defender ATP-[寻找对设备的威胁](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span><span class="sxs-lookup"><span data-stu-id="81b3c-108">Microsoft Defender ATP — [hunt for threats to devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span></span>
+- <span data-ttu-id="81b3c-109">Azure ATP —[寻找对标识的威胁](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span><span class="sxs-lookup"><span data-stu-id="81b3c-109">Azure ATP — [hunt for threats to identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span></span>
 
-![搜寻页面](../media/security-docs/hunt.png)
+![搜寻页面](../images/hunt.png)
 
-<span data-ttu-id="fbdb0-108">了解详细信息：</span><span class="sxs-lookup"><span data-stu-id="fbdb0-108">Learn more:</span></span>
 
-* <span data-ttu-id="fbdb0-109">Microsoft Defender 高级威胁防护中的[设备](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)</span><span class="sxs-lookup"><span data-stu-id="fbdb0-109">[Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) in Microsoft Defender Advanced Threat Protection</span></span>
-* <span data-ttu-id="fbdb0-110">Office 365 高级威胁防护中的[电子邮件和数据](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)</span><span class="sxs-lookup"><span data-stu-id="fbdb0-110">[Email and data](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) in Office 365 Advanced Threat Protection</span></span>
-* <span data-ttu-id="fbdb0-111">Azure 高级威胁防护中的[身份](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)</span><span class="sxs-lookup"><span data-stu-id="fbdb0-111">[Identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user) in Azure Advanced Threat Protection</span></span>
+## <a name="hunt-with-microsoft-threat-protection"></a><span data-ttu-id="81b3c-111">使用 Microsoft 威胁防护进行查寻</span><span class="sxs-lookup"><span data-stu-id="81b3c-111">Hunt with Microsoft Threat Protection</span></span>
+
+<span data-ttu-id="81b3c-112">[打开 Microsoft 威胁防护](mtp-enable.md)以直接在 Microsoft 365 安全中心中获取高级搜寻查询接口。</span><span class="sxs-lookup"><span data-stu-id="81b3c-112">[Turn on Microsoft Threat Protection](mtp-enable.md) to get the advanced hunting query interface directly in the Microsoft 365 security center.</span></span> <span data-ttu-id="81b3c-113">通过[高级](advanced-hunting-overview.md)搜索，您可以创建单个查询，以查看来自 MICROSOFT Defender ATP 的数据、从载入设备中覆盖数据以及从电子邮件中提供数据的 OFFICE 365 atp。</span><span class="sxs-lookup"><span data-stu-id="81b3c-113">With [advanced hunting](advanced-hunting-overview.md), you can create single queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="81b3c-114">相关主题</span><span class="sxs-lookup"><span data-stu-id="81b3c-114">Related topics</span></span>
+- [<span data-ttu-id="81b3c-115">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="81b3c-115">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="81b3c-116">Microsoft 威胁防护概述</span><span class="sxs-lookup"><span data-stu-id="81b3c-116">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
+- [<span data-ttu-id="81b3c-117">启用 Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="81b3c-117">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)
