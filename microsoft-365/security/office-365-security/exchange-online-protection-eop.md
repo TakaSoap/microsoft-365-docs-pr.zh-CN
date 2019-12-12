@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: 在开始使用 EOP 之前，应注意以下几点。
-ms.openlocfilehash: 707e909821c4a394e230b1746bde86521d8fb10a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: ae08ff17a3ef25f0b0903d02ffe396cd201bd06c
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441559"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970518"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
 欢迎使用 Microsoft Exchange Online Protection (EOP) 托管电子邮件筛选服务。在开始使用 EOP 和此内容之前，您应当了解以下信息：
 
-- 要了解有关 EOP 的详细信息，请查看 [Exchange Online Protection 服务说明](https://go.microsoft.com/fwlink/p/?LinkId=320619)。其他有用资源有 [Exchange Online Protection 概述](exchange-online-protection-overview.md)、[EOP 一般常见问题解答](eop-general-faq.md)和 [EOP 功能](eop-features.md)，以及 [Exchange Online Protection 主页](https://go.microsoft.com/fwlink/?LinkId=279912)。
+- 若要了解有关 EOP 的详细信息，请查看[Exchange Online Protection 服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。 其他有用资源有 [Exchange Online Protection 概述](exchange-online-protection-overview.md)、[EOP 一般常见问题解答](eop-general-faq.md)和 [EOP 功能](eop-features.md)，以及 [Exchange Online Protection 主页](https://products.office.com/exchange/exchange-email-security-spam-protection)。
 
 - 若要开始使用 EOP，新客户应转到[设置 EOP 服务](set-up-your-eop-service.md)。 本主题提供的步骤可帮助您启动并运行 EOP。
 
@@ -67,6 +67,6 @@ ms.locfileid: "37441559"
 
 - [将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)：介绍最终用户如何提交经过筛选器的恶意软件，或者提交被错误识别为恶意软件的文件。
 
-- 最终用户可以通过在 Outlook 或 web 上的 Outlook 中配置其垃圾邮件设置，将特定用户或域添加到安全发件人列表或阻止的发件人列表中。 请注意，从阻止的发件人发送的邮件被标记为垃圾邮件，而不是被拒绝，这意味着可以从 "垃圾邮件" 文件夹或隔离区中检索邮件（具体取决于管理员已将该服务配置为发送垃圾邮件的位置）。有关详细信息，请参阅[使用报告邮件外接程序](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+- 最终用户可以通过在 Outlook 或 web 上的 Outlook 中配置其垃圾邮件设置，将特定用户或域添加到安全发件人列表或阻止的发件人列表中。 请注意，从阻止的发件人发送的邮件被标记为垃圾邮件，而不是被拒绝，这意味着可以从 "垃圾邮件" 文件夹或隔离区中检索邮件（具体取决于管理员已将该服务配置为发送垃圾邮件的位置）。有关详细信息，请参阅[使用报告邮件外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
 
 - [EOP 帮助与支持](help-and-support-for-eop.md) 提供有关获取帮助和技术支持的信息。

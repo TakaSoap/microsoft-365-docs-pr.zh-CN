@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Office 365 安全 & 合规性中心中分配权限，然后才能管理其任何安全或合规性功能。
-ms.openlocfilehash: 5f9688662714a4a33f2c6e3483cf902e0f61def9
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 698a319b4297a00e0c248df495b7013fa3ae3542
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305946"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970438"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>向用户授予对 Office 365 安全与合规中心的访问权限
 
@@ -41,7 +41,7 @@ ms.locfileid: "37305946"
 
 ## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>使用管理中心向另一个用户授予对安全 & 合规中心的访问权限
 
-1. [登录到 Office 365 并转到管理中心](https://go.microsoft.com/fwlink/p/?LinkId=525275)。
+1. [登录到 Office 365 并转到管理中心](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center)。
 
 2. 在 Microsoft 365 管理中心，打开 "**管理中心**"，然后单击 "**安全 & 合规性**"。
 
@@ -65,7 +65,7 @@ ms.locfileid: "37305946"
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用 PowerShell 授予另一个用户对安全 & 合规中心的访问权限
 
-1. [连接到 Office 365 安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 使用 **Add-rolegroupmember** 命令将用户添加到组织管理角色，如以下示例中所示。
 
@@ -79,7 +79,7 @@ ms.locfileid: "37305946"
 
    - _Member_是要添加到角色组的邮箱、通用安全组（USG）或计算机。 每次只能指定一个成员。
 
-有关语法和参数的详细信息，请参阅[外接程序 add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)。
+有关语法和参数的详细信息，请参阅[外接程序 add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember)。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
@@ -89,4 +89,4 @@ ms.locfileid: "37305946"
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-有关语法和参数的详细信息，请参阅[add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510860)。
+有关语法和参数的详细信息，请参阅[add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember)。

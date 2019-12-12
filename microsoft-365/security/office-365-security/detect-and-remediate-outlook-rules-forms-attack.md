@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
-ms.openlocfilehash: 5a35a227baf7c2d07ca0e7a28f791d65311c96b9
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: d5f4a653463f4105df025bf29679465ca5335098
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871888"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970788"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
 
@@ -98,7 +98,7 @@ ms.locfileid: "39871888"
 
 1. 以用户的形式打开用户 Outlook 客户端。 用户可能需要您的帮助来检查其邮箱上的规则。
 
-2. 有关如何在2007、2010或2013版本的 Outlook 中打开 rules 接口的过程，请参阅[使用规则文章管理电子邮件](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010)。
+2. 有关如何在 Outlook 中打开 rules 接口的过程，请参阅[使用规则文章管理电子邮件](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59)。
 
 3. 查找用户未创建的规则或具有可疑名称的任何意外规则或规则。
 
@@ -110,7 +110,7 @@ ms.locfileid: "39871888"
 
 1. 以用户的形式打开用户 Outlook 客户端。
 
-2. 按照中的步骤，为用户版本的 Outlook[显示 "开发工具" 选项卡](https://support.office.com/article/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45)。
+2. 按照中的步骤，为用户版本的 Outlook[显示 "开发工具" 选项卡](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45)。
 
 3. 在 Outlook 中打开 "现在可见的开发工具" 选项卡，然后单击 "**设计窗体**"。
 
@@ -156,13 +156,13 @@ ms.locfileid: "39871888"
 
 1. 标识用户在 Outlook 中使用的所有设备。 所有这些人都需要清除潜在的恶意软件。 在清理所有设备之前，不要允许用户登录并使用电子邮件。
 
-2. 按照 "删除每个设备的[规则](https://support.office.com/article/Delete-a-rule-2F0E7139-F696-4422-8498-44846DB9067F)" 中的步骤操作。
+2. 按照 "删除每个设备的[规则](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f)" 中的步骤操作。
 
 3. 如果您不确定是否存在其他恶意软件，可以在设备上格式化并重新安装所有软件。 对于移动设备，您可以按照制造商的步骤操作，将设备重置为出厂映像。
 
 4. 安装最新版本的 Outlook。 请注意，默认情况下，当前版本的 Outlook 阻止这两种攻击类型。
 
-5. 删除邮箱的所有脱机副本后，重置用户的密码（使用高质量的密码），并按照[Setup 多重身份365验证](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)（如果尚未启用 MFA）中的步骤操作。 这可确保用户的凭据不会通过其他方式（如网络钓鱼或密码重用）公开。
+5. 删除邮箱的所有脱机副本后，重置用户的密码（使用高质量的密码），并按照[Setup 多重身份365验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)（如果尚未启用 MFA）中的步骤操作。 这可确保用户的凭据不会通过其他方式（如网络钓鱼或密码重用）公开。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -190,7 +190,7 @@ ms.locfileid: "39871888"
 
 只有攻击者在窃取或破坏用户的帐户后，才会使用这些规则和表单攻击。 因此，阻止对组织使用这些漏洞的第一步是主动保护您的用户帐户。 帐户受到破坏的一些最常见的方法是通过网络钓鱼或[密码 spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻击。
 
-保护用户帐户（尤其是管理员帐户）的最佳方法是为[Office 365 用户设置多重身份验证](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)。 此外，还应执行以下操作：
+保护用户帐户（尤其是管理员帐户）的最佳方法是为[Office 365 用户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。 此外，还应执行以下操作：
 
 - 监视如何[访问和使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)您的用户帐户。 您可能不会阻止最初的破坏，但您将通过更快地进行检测来缩短危害的持续时间和影响。 您可以使用这些[Office 365 云应用安全策略](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)来监视您在异常活动上的帐户和警报：
 
@@ -204,7 +204,7 @@ ms.locfileid: "39871888"
 
 ### <a name="second-keep-your-outlook-clients-current"></a>其次：将 Outlook 客户端保持为最新
 
-完全更新和修补的 Outlook 2013 版本，2016默认禁用 "启动应用程序" 规则/表单操作。 这将确保即使攻击者破坏了帐户，规则和表单操作也将受到阻止。 您可以按照[安装 Office 更新](https://support.office.com/article/Install-Office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)中的步骤安装最新的更新和安全修补程序。
+完全更新和修补的 Outlook 2013 版本，2016默认禁用 "启动应用程序" 规则/表单操作。 这将确保即使攻击者破坏了帐户，规则和表单操作也将受到阻止。 您可以按照[安装 Office 更新](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5)中的步骤安装最新的更新和安全修补程序。
 
 下面是 Outlook 2013 和2016客户端的修补程序版本：
 
@@ -234,7 +234,7 @@ ms.locfileid: "39871888"
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
 
-你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Office 365 安全路线图：前 30 天、90 天内以及之后的首要行动](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
+你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用[Office 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
 
 - 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
 

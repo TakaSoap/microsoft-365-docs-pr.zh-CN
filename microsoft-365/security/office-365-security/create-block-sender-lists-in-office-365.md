@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 阻止发件人列表选项包括 Outlook 阻止的发件人、反垃圾邮件发件人/域阻止列表、IP 阻止列表和 Exchange 传输规则（Etr）也称为邮件流规则。
-ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: f4fab732a92df2a2500212c9825d2b3e710b0a07
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793706"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970888"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>在 Office 365 中创建阻止发件人列表
 
@@ -43,7 +43,7 @@ ms.locfileid: "38793706"
 > [!IMPORTANT]
 > 如果不需要的邮件是来自可信且可识别的来源的新闻快递，则取消订阅该电子邮件是另一个选项，阻止用户将来收到该电子邮件。
 
-设置此设置的步骤在[Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46)和[outlook 客户端](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)之间有所不同。 **当邮件由于被阻止的发件人而成功被阻止时，您将在 X Forefront-反垃圾邮件中看到 SFV： BLK** ，这表明该邮件已被阻止。
+[在 web 上的 outlook](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)和[outlook 客户端](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)上设置此设置的步骤有所不同。 **当邮件由于被阻止的发件人而成功被阻止时，您将在 X Forefront-反垃圾邮件中看到 SFV： BLK** ，这表明该邮件已被阻止。
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>使用反垃圾邮件策略发件人/域阻止列表
 

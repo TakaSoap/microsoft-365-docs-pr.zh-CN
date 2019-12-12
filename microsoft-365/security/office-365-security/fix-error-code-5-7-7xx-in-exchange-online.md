@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件问题（阻止发送邮件的租户）。
-ms.openlocfilehash: d89cc0caeebbf37336a3b00346b3393dd5e74e78
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865844"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970448"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
 
@@ -51,23 +51,23 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 1. 请确保在 Microsoft 365 管理中心内注册所有域。 可在[此处](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)找到详细信息。
 
-2. 查找异常连接器。 恶意参与者通常会在 Office 365 租户中创建新的入站连接器以发送垃圾邮件。 可在[此处](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)找到有关检查连接器的详细信息。 
+2. 查找异常连接器。 恶意参与者通常会在 Office 365 租户中创建新的入站连接器以发送垃圾邮件。 可在[此处](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)找到有关检查连接器的详细信息。
 
 3. 锁定你的本地服务器，并确保其不会受到威胁。
 
-> [!TIP]
-> 此处涉及许多因素，尤其是当它们是第三方服务器时。 无论如何，您都需要能够确认离开服务器的所有邮件都是合法的。
+   > [!TIP]
+   > 此处涉及许多因素，尤其是当它们是第三方服务器时。 无论如何，您都需要能够确认离开服务器的所有邮件都是合法的。
 
-4. 完成后，你将需要致电 Microsoft 支持部门，让你的租户不再被阻止，以从未注册的域中再次发送。  提供错误代码很有帮助，但您需要证明您的环境是安全的，并且不会再次发送垃圾邮件。 可在[此处](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)找到有关打开支持案例的详细信息。
-  
-## <a name="for-more-information"></a>详细信息
+4. 完成后，你将需要致电 Microsoft 支持部门，让你的租户不再被阻止，以从未注册的域中再次发送。  提供错误代码很有帮助，但您需要证明您的环境是安全的，并且不会再次发送垃圾邮件。 可在[此处](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)找到有关打开支持案例的详细信息。
+
+## <a name="for-more-information"></a>更多信息
 
 [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
 
-[Office 365 中的电子邮件未送达报告](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
+[Office 365 中的电子邮件未送达报告](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
 [配置邮箱的电子邮件转发](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[如何设置多功能设备或应用程序以使用 Office 365 发送电子邮件](https://support.office.com/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[如何设置多功能设备或应用程序以使用 Office 365 发送电子邮件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3)
 
 [在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。

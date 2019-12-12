@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: 获取安全&amp;合规性中心中的报告和真知灼见 avialable 的概述。
-ms.openlocfilehash: 5c6ef13bbbb46de63dfb0cfecfa0824d8e50547d
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: 33e02ff96621df72b2224cc8dc9b3666caab3429
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034173"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967965"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全&amp;合规中心中的智能报告和见解
 
@@ -50,7 +50,7 @@ Office 365 安全&amp;合规性中心中提供的监视功能包括智能报告�
 |:-----|:-----|:-----|
 |**安全&amp;合规性中心报告**（全部更新）  <br/> 热门见解和建议，以及指向安全&amp;合规性报告的链接，包括数据丢失防护报告、标签、电子邮件安全报告、高级威胁防护报告等  <br/> |在安全&amp;合规性中心中，转到 "**报告** \> "**仪表板** <br/> |[在 Microsoft 365 安全中心中监视和查看报告](../mtp/monitoring-and-reporting.md) <br/> |
 |**数据丢失防护** <br/> 数据丢失防护策略匹配、误报和重写以及用于创建或编辑策略的链接  <br/> |在安全&amp;合规性中心中，转到 "**数据丢失防护** \> "**策略** <br/> |[查看数据丢失防护报告](../../compliance/view-the-dlp-reports.md) <br/> |
-|**数据治理** <br/> 有关如何应用标签、作为记录分类的标签、标签趋势等的信息  <br/> |在安全&amp;合规性中心中，转到 "**数据管理** \> "**仪表板** <br/> |[查看数据管理报告](../../compliance/view-the-data-governance-reports.md) <br/> |
+|**数据治理** <br/> 有关如何应用标签、作为记录分类的标签、标签趋势等的信息  <br/> |在 "安全&amp;合规性中心" 中，转到 "**信息管理** \> "**仪表板** <br/> |[查看数据管理报告](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**威胁管理仪表板**（也称为 "安全" 仪表板和 "威胁智能" 仪表板）  <br/> 威胁检测、恶意软件趋势、主要目标用户、有关发送和接收的电子邮件的详细信息等  <br/> |在安全&amp;合规性中心中，转到 "**威胁管理** \> "**仪表板** <br/> |[安全仪表板概述](security-dashboard.md) <br/> |
 |**威胁资源管理器**（也称为资源管理器）或**实时检测** <br/> 在 Office 365 中的电子邮件和文件中检测到可疑的恶意软件  <br/> |在 "安全&amp;合规性中心" 中，转到 "**威胁管理** \> **资源管理器**" 或 "**实时检测**"<br/> |[威胁资源管理器（或实时检测）](threat-explorer.md) <br/> |
 |**高级威胁防护和电子邮件安全报告** <br/> 电子邮件安全和威胁防护报告（包括恶意软件、垃圾邮件、网络钓鱼和欺骗报告）  <br/> |在安全&amp;合规性中心中，转到 "**报告** \> "**仪表板** <br/> |[查看 Office 365 高级威胁防护报告](view-reports-for-atp.md) <br/><br/> [查看安全&amp;合规性中心中的电子邮件安全报告](../../compliance/view-email-security-reports.md) <br/> |

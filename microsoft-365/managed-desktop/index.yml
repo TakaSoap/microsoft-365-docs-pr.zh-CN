@@ -71,7 +71,14 @@ sections:
             title: '[电子书]使用新式工作场所为你的公司欣喜'
             image:
               src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+              alt: ''
   - title: 视频
     items:
+      - type: paragraph
+        text: 从印地安那 Pacers 的技术部副总裁了解 Microsoft 托管桌面的优势。
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
+      - type: paragraph
+        text: Microsoft 托管桌面的常规管理器共享每年 Ignite 会议的服务的所有亮点。
+      - type: markdown
+        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'

@@ -14,12 +14,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: 通知 Office 365 和 EOP 管理员如何在电子邮件中启用和禁用安全提示。
-ms.openlocfilehash: f812ac1a81dfed6061fe404893e3be2e19a75212
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: da91ec595697c7cfb1fdd5150a4c04e05cd91b0a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871878"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970598"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>启用或禁用 Office 365 中的安全提示
 
@@ -69,7 +69,7 @@ Office 365 默认为您的组织启用安全提示，我们建议您将其保持
 
 管理员可以使用 Exchange Online PowerShell 启用或禁用安全提示。 使用 Set-hostedcontentfilterpolicy cmdlet 可以在垃圾邮件筛选器策略中启用或禁用安全提示。
 
-1. 连接到 Exchange Online PowerShell。 有关信息，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. 连接到 Exchange Online PowerShell。 有关信息，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 2. 运行 Set-hostedcontentfilterpolicy cmdlet 以启用或禁用安全提示：
 

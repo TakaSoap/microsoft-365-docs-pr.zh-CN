@@ -22,19 +22,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: "\"安全链接\" 功能可提供对 Office 文档中的超链接和电子邮件中的超链接的单击时间验证。 使用安全链接保护组织免受网络钓鱼和其他攻击的攻击。"
-ms.openlocfilehash: 2418704c7d3d1eced0194418e98f9833cf2f962b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fadec60dc25aad418480d7c26a06e92f5a2065dd
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865902"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970908"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全链接
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Office 365 ATP 安全链接概述
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果你使用的是 Outlook.com、Office 365 家庭版或 Office 365 个人版，并且正在查找有关 Outlook 中安全链接的信息，请参阅[高级 Outlook.com 安全](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果你使用的是 Outlook.com、Office 365 家庭版或 Office 365 个人版，并且正在查找有关 Outlook 中安全链接的信息，请参阅[高级 Outlook.com 安全](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 Office 365 ATP 安全链接（[高级威胁防护](office-365-atp.md)的一部分）通过在[电子邮件](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email)和[Office 文档](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents)中提供 web 地址（url）的验证时间，可帮助保护您的组织。 通过由 Office 365 安全团队设置的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)定义保护。
   

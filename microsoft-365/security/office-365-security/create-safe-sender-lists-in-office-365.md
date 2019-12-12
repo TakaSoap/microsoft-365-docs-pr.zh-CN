@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要确保收到来自特定发件人的邮件，因为您信任这些邮件及其邮件，您可以在 Exchange 管理中心的垃圾邮件筛选器策略中调整您的允许列表。
-ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793676"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970848"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 
@@ -74,7 +74,7 @@ ms.locfileid: "38793676"
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>使用 Outlook 安全发件人（最终用户托管）
 
-最终用户也可以通过 Outlook 安全发件人来允许发送地址，而不是在全局范围内授权地址、域或 IP 地址。 设置此设置的步骤在[Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46)和[outlook 客户端](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)之间有所不同。 **如果由于安全发件人而成功授权邮件，则会在 X-Forefront-反垃圾邮件报告中看到 SFV： SFE** ，这表示将绕过垃圾邮件/欺骗/网络钓鱼筛选。
+最终用户也可以通过 Outlook 安全发件人来允许发送地址，而不是在全局范围内授权地址、域或 IP 地址。 [在 web 上的 outlook](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)和[outlook 客户端](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)上设置此设置的步骤有所不同。 **如果由于安全发件人而成功授权邮件，则会在 X-Forefront-反垃圾邮件报告中看到 SFV： SFE** ，这表示将绕过垃圾邮件/欺骗/网络钓鱼筛选。
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>使用反垃圾邮件策略 IP 允许列表
 

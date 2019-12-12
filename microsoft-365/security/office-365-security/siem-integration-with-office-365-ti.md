@@ -15,12 +15,12 @@ ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: 将组织的 SIEM 服务器与 office 365 高级威胁防护以及 Office 365 活动管理 API 中相关的威胁事件集成。
-ms.openlocfilehash: 5b3cdfa48f64bb3d73f02b3d9b20dee510a2f409
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 93253982b9920cd133419e0fc61650cadfa9d192
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202433"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967925"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>SIEM 与 Office 365 高级威胁防护的集成
 
@@ -28,7 +28,7 @@ ms.locfileid: "39202433"
 
 Office 365 活动管理 API 检索组织的 Office 365 和 Azure Active Directory 活动日志中的用户、管理员、系统和策略操作以及事件的相关信息。 [Office 365 高级威胁防护架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)使用高级威胁防护功能，因此，如果您的组织具有 Office 365 高级威胁防护计划1或计划2或 Office 365 E5，您仍可以对您的 SIEM 服务器集成使用相同的 API。 
 
-作为我们最近更新的一部分，我们还为管理 API 中的 Office 365 ATP 计划2中的自动事件响应添加了调查事件。 除了包含有关核心调查详细信息（如 ID、名称和状态）的数据之外，它还包含有关调查操作和实体的高级信息。   
+作为我们最近更新的一部分，我们还在 office 365 管理活动 API 中的 Office 365 ATP 计划2中添加了来自自动调查和响应功能的事件。 除了包含有关核心调查详细信息（如 ID、名称和状态）的数据之外，它还包含有关调查操作和实体的高级信息。   
 
 SIEM 服务器或其他类似系统应轮询**审核。常规**工作负荷以访问检测事件。 若要了解详细信息，请参阅[Office 365 管理 api 入门](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。 此外， **AuditLogRecordType**的以下值与 OFFICE 365 ATP 事件相关：
 
@@ -41,7 +41,7 @@ SIEM 服务器或其他类似系统应轮询**审核。常规**工作负荷以�
 |28|ThreatIntelligence|Exchange Online Protection 和 Office 365 高级威胁防护中的网络钓鱼和恶意软件事件。|
 |41|ThreatIntelligenceUrl|ATP 安全链接从 Office 365 高级威胁防护的阻止时间和阻止覆盖事件。|
 |47|ThreatIntelligenceAtpContent|Office 365 高级威胁防护中的 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件的网络钓鱼和恶意软件事件。|
-|64|AirInvestigation|自动事件响应事件，包括调查详细信息和 Office 365 高级威胁防护计划2中的相关项目。|
+|64|AirInvestigation|自动调查和响应事件，例如调查详细信息和 Office 365 高级威胁防护计划2中的相关项目。|
 
 
 > [!IMPORTANT]
@@ -51,7 +51,7 @@ SIEM 服务器或其他类似系统应轮询**审核。常规**工作负荷以�
 
 [Office 365 威胁调查和响应](office-365-ti.md)
 
-[Office 365 中的自动事件响应（空气）](automated-investigation-response-office.md)
+[Office 365 中的自动化调查和响应（空气）](automated-investigation-response-office.md)
 
 [Office 365 高级威胁防护](office-365-atp.md)
 

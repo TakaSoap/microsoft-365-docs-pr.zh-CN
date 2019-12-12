@@ -10,19 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 本主题介绍了如何设置 Microsoft Exchange Online Protection (EOP)。 如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。 若要详细了解如何配置连接器，请参阅Configure mail flow using connectors in Office 365。
-ms.openlocfilehash: 189c3bb08609eb2604e77b5140e866711e8f1a09
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4cd7d6e82c07d0b5a942427c947181b2d4e80c37
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031997"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970108"
 ---
 # <a name="set-up-your-eop-service"></a>设置 EOP 服务
 
 本主题介绍了如何设置 Microsoft Exchange Online Protection (EOP)。如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。若要详细了解如何配置连接器，请参阅[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
 > [!NOTE]
-> 此主题假设你拥有内部部署邮箱，并且想使用 EOP 对其进行保护，这称为独立方案。 如果要使用 Exchange Online 在云中托管所有邮箱，则不必完成本主题中的所有步骤。 转到[Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286312)以注册并购买云邮箱。 如果你想在内部部署和云中分别托管一部分邮箱，这称为混合方案。 这需要更高级的邮件流设置。 [Exchange Server 混合部署](https://docs.microsoft.com/exchange/exchange-hybrid)介绍了混合邮件流，并提供了指向说明如何进行设置的资源的链接。
+> 此主题假设你拥有内部部署邮箱，并且想使用 EOP 对其进行保护，这称为独立方案。 如果要使用 Exchange Online 在云中托管所有邮箱，则不必完成本主题中的所有步骤。 转到[比较 Exchange Online 计划](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)以注册和购买云邮箱。 如果你想在内部部署和云中分别托管一部分邮箱，这称为混合方案。 这需要更高级的邮件流设置。 [Exchange Server 混合部署](https://docs.microsoft.com/exchange/exchange-hybrid)介绍了混合邮件流，并提供了指向说明如何进行设置的资源的链接。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
@@ -30,7 +30,7 @@ ms.locfileid: "38031997"
 
 - 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关信息，请参阅[EOP 中的功能权限](feature-permissions-in-eop.md)。
 
-- 如果你还未注册 EOP，请访问 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=282660) 并选择购买或者试用服务。
+- 如果你还未注册 EOP，请访问 [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) 并选择购买或者试用服务。
 
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "38031997"
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步骤1：使用 Microsoft 365 管理中心添加并验证你的域
 
-1. 在[Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=521888)，转到 "**安装程序**"，将您的域添加到服务中。
+1. 在[Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)，转到 "**安装程序**"，将您的域添加到服务中。
 
 2. 按照该步骤将适用的 DNS 记录添加到您的 DNS 托管提供程序以验证域所有权。
 

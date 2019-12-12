@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 44a870263a832e2d130e0404c5e2ad0736a5fae5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1f4e9afb86d475a7dd7261dfe26ff0b5a17826f
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034374"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962629"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>CISO 研讨会模块3：标识和零信任用户访问
 
@@ -46,7 +46,7 @@ ms.locfileid: "38034374"
 
 ##  <a name="part-6-build-an-identity-perimeter-1357"></a>第6部分：构建恒等外围设备（13:57）
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
 
 ## <a name="part-7-identity-system-security-337"></a>第7部分：标识系统安全性（3:37）
 

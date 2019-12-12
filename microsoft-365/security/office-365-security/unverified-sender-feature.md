@@ -13,16 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: 89cd473a7b7f2ff663d7ee1eee41f84144dee6d7
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 4c8b8a0711ab66607d0db5923c1115c436537bd0
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866434"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970928"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
-> [!NOTE] 
+> [!NOTE]
 > 这些更新现在即将推出，可能对所有用户不可用。 Enterprise outlook.com users 支持此功能。 它目前对消费者 outlook.com 不可用。
 
 若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
@@ -36,12 +36,11 @@ ms.locfileid: "39866434"
 
 ## <a name="you-see-a--in-the-sender-image"></a>您将在发件人图像中看到 "？"
 
-当 Outlook.com 和 Outlook 网页上的 Outlook 无法使用电子邮件身份验证技术验证发件人的身份时，它们将在发件人照片中显示 "？"。 
+当 Outlook.com 和 Outlook 网页上的 Outlook 无法使用电子邮件身份验证技术验证发件人的身份时，它们将在发件人照片中显示 "？"。
 
 ![邮件未通过验证](../media/message-did-not-pass-verification.jpg)
 
 并不是每个验证失败的邮件都是恶意的。 但是，如果您不识别发件人，则应注意与不进行身份验证的邮件进行交互。 或者，如果您识别的发件人在发件人图像中通常不包含 '？ '，但突然开始看到它，则可能是发件人哄骗的签名。
-
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>如何管理哪些邮件会收到未验证的发件人处理 
 
@@ -52,10 +51,10 @@ ms.locfileid: "39866434"
     ![在图形界面中编辑未经身份验证的发件人。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - 如果管理员已识别误报，并且发件人不应接收未验证的发件人处理，则可以执行下列操作之一将发件人添加到欺骗智能欺骗允许列表中：
-        
-    - 通过欺骗性智能洞察力添加域对。 有关更多详细信息，请参阅[演练：欺骗性智能洞察力](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight)。
-                
-    - 通过将 get-phishfilterpolicy cmdlet 添加域对。 有关更多详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)和[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
+
+  - 通过欺骗性智能洞察力添加域对。 有关更多详细信息，请参阅[演练：欺骗性智能洞察力](walkthrough-spoof-intelligence-insight.md)。
+
+  - 通过将 get-phishfilterpolicy cmdlet 添加域对。 有关更多详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)和[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md)。
 
 此外，如果通过管理员允许列表（包括电子邮件传输规则（Etr）、安全域列表（反垃圾邮件策略）、安全发件人列表或用户已将此用户设置为 "安全发件人"，则不会应用未验证的发件人治疗收件箱.
 
@@ -81,6 +80,6 @@ ms.locfileid: "39866434"
 
 [帮助保护你的 Outlook.com 电子邮件帐户](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
-[处理 Outlook.com 中的滥用、网络钓鱼或欺骗](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
+[在 Outlook.com 中处理网络钓鱼或欺骗](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
 [在 web 上的 Outlook 中筛选垃圾电子邮件和垃圾邮件](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要：使用这些分步说明部署一个新的独立 SharePoint Online 团队网站。
-ms.openlocfilehash: deebf8c89c616a1807072f32e306043c94aca186
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: e5bb5ffdec98b2a8610e4f9d1ecaa0999f5ae710
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202463"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970808"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
@@ -157,7 +157,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 首先，使用这些步骤创建 SharePoint Online 团队网站。
   
-1. 使用将同时用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用将同时用于管理 SharePoint Online 团队网站的帐户（即 SharePoint Online 管理员帐户）登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
