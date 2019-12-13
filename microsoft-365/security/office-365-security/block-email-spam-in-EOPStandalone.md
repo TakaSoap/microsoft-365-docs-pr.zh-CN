@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 用于帮助阻止垃圾邮件误报的独立 EOP 管理员文档
-ms.openlocfilehash: cc0237ddc127c9818ae9cf4916187485e4d1dee7
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871948"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971900"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>为 Office 365 反垃圾邮件筛选器自定义这些设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "39871948"
 
 通过将发件人 IP 地址添加到连接筛选器 IP 阻止列表，自定义 Office 365 垃圾邮件筛选器：
 
-1. 按照[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)中所述，获取要在邮件客户端（如 Outlook 或 Outlook 网页版，先前称为 Outlook Web App）中阻止的邮件的邮件头。
+1. 按照[Outlook 中查看 Internet 邮件头](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)中所述，获取要在邮件客户端（如 Outlook 或 Outlook 网页版，先前称为 Outlook Web App）中阻止的邮件的邮件头。
 
 2. 在 X-Forefront-Antispam-Report 头中，使用[邮件头分析器](https://testconnectivity.microsoft.com/?tabid=mha)或手动搜索 CIP 标记后面的 IP 地址。
 
@@ -49,7 +49,7 @@ ms.locfileid: "39871948"
 
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>电子邮件用户还可有助于确保通过 Office 365 垃圾邮件筛选器避免漏报和阻止垃圾邮件
 
-如果让用户在 [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) 或 [Outlook 网页版](https://go.microsoft.com/fwlink/p/?LinkId=294862)中将垃圾邮件发件人地址添加到阻止的发件人名单中，将有助于 Office 365 反垃圾邮件筛选器避免漏报并阻止垃圾邮件。在 Outlook 网页版中，首先依次单击“**设置**”\>“**选项**”\>“**阻止或允许**”，再将地址添加到“**阻止的发件人**”名单中，如下所示。
+如果让用户在 [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) 或 [Outlook 网页版](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)中将垃圾邮件发件人地址添加到阻止的发件人名单中，将有助于 Office 365 反垃圾邮件筛选器避免漏报并阻止垃圾邮件。在 Outlook 网页版中，首先依次单击“**设置**”\>“**选项**”\>“**阻止或允许**”，再将地址添加到“**阻止的发件人**”名单中，如下所示。
 
 ![在 Outlook 网页版中阻止发件人](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 

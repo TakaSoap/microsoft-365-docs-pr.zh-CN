@@ -13,18 +13,18 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 详细了解由 Exchange Online Protection 添加到邮件的标头字段和值。
-ms.openlocfilehash: adc97ea59293d226ae304e128643901faedc1a37
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 7336d67d29976cf968b95b8f0d4157aef6682ba6
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615672"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971980"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
 Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮件中插入" **X-Forefront-Antispam-Report**"标头。该邮件头中的这些字段有助于为管理员提供与邮件及其处理方式有关的信息。" **X-Microsoft-Antispam**"标头中的字段提供批量邮件和网络钓鱼的更多信息。除这两种标头外，Exchange Online Protection 还会在" **Authentication-results**"标头中为每封邮件插入其处理的电子邮件身份验证结果。
 
-要了解如何查看各种电子邮件客户端中的电子邮件头，请参阅[邮件头分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。
+要了解如何查看各种电子邮件客户端中的电子邮件头，请参阅[ Outlook 中查看 Internet 邮件头](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
 
 > [!TIP]
 > 可将邮件头的内容复制粘贴到[邮件分析器](https://testconnectivity.microsoft.com/?tabid=mha)工具中。 此工具可帮助分析标头，并将其放入更可靠的格式中。
@@ -41,7 +41,7 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |SCL|邮件的垃圾邮件可信度 (SCL) 值。有关这些值的详细解释信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。  |
 |SRV:BULK|邮件被标识为批量电子邮件。如果“**阻止所有批量电子邮件高级垃圾邮件筛选选项**”已启用，则相应的邮件会被标记为垃圾邮件。如果未启用，则该邮件只会在剩余筛选规则确定邮件是垃圾邮件时才被标记为垃圾邮件。|
 |SFV:SFE|由于邮件发送自个人的安全发件人列表上的地址，因此邮件会跳过筛选并得以通过。|
-|SFV:BLK|由于邮件发送自个人的阻止的发件人名单上的地址，因此邮件会跳过筛选并得以阻止。  <br/> **提示**：若要详细了解最终用户如何能创建安全发件人列表和阻止的发件人列表，请参阅[阻止或允许（垃圾邮件设置）](https://go.microsoft.com/fwlink/p/?LinkId=294862)（Outlook 网页版）和[垃圾邮件筛选器概述](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook)。|
+|SFV:BLK|由于邮件发送自个人的阻止的发件人名单上的地址，因此邮件会跳过筛选并得以阻止。  <br/> **提示**：若要详细了解最终用户如何能创建安全发件人列表和阻止的发件人列表，请参阅[在 Outlook 网页版中筛选垃圾邮件](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)和[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)(Outlook)。|
 |IPV:CAL|邮件已获得垃圾邮件筛选器的允许，因为 IP 地址已在连接筛选器的 IP 允许列表中指定。|
 |IPV:NLI|IP 地址没有在任何 IP 信誉列表中列出。|
 |SFV:SPM|邮件由内容筛选器标记为垃圾邮件。|
@@ -54,7 +54,7 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |SFV:NSPM|邮件被标记为非垃圾邮件并发送给预期收件人。|
 |H：\[helostring\]|连接邮件服务器的 HELO 或 EHLO 字符串。|
 |PTR：\[ReverseDNS\]|发送 IP 地址的 PTR 记录或指针记录，亦称为反向 DNS 地址。|
-|CAT：|应用于邮件的保护策略类别： <br/>MALW：恶意软件 <br/>PHSH：网络钓鱼 <br/>HSPM：高可信度垃圾邮件 <br/>SPOOF：欺骗 <br/>SPM：垃圾邮件 <br/>BULK：批量邮件 <br/>DIMP：域模仿 <br/>UIMP：用户模拟 <br/>GIMP：邮箱智能<br/>一封传入的邮件可能被多种形式的保护和多个检测扫描标记。 策略具有不同的优先级，将应用优先级最高的策略。 请参阅 [What policy applies when multiple protection methods and detection scans run on your email](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined)（在电子邮件上运行多个保护方法和检测扫描时应用哪种策略）。|
+|CAT：|应用于邮件的保护策略类别： <br/>MALW：恶意软件 <br/>PHSH：网络钓鱼 <br/>HSPM：高可信度垃圾邮件 <br/>SPOOF：欺骗 <br/>SPM：垃圾邮件 <br/>BULK：批量邮件 <br/>DIMP：域模仿 <br/>UIMP：用户模拟 <br/>GIMP：邮箱智能<br/>一封传入的邮件可能被多种形式的保护和多个检测扫描标记。 策略具有不同的优先级，将应用优先级最高的策略。 请参阅 [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md)（在电子邮件上运行多个保护方法和检测扫描时应用哪种策略）。|
 |SFTY|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <br/>9.1：默认值。 邮件包含网络钓鱼 URL，可能包含其他网络钓鱼内容，或者可能已被其他邮件筛选器（例如 Exchange Server 的本地版本）在将其中继到 Office 365 之前标记为网络钓鱼。 <br/>9.11：邮件未通过反欺骗检查，其中“发件人:”标头中的发送域与接收域相同、与接收域匹配或者与接收域属于同一组织。 这表示将向邮件中添加组织内欺骗安全提示。 <br/>9.19：邮件未通过域模仿检查，其中发送域正在尝试模仿收件人拥有的域或受到反网络钓鱼策略保护的自定义域。 这表示将向邮件添加模拟安全提示（如果已通过反网络钓鱼策略启用）。 <br/>9.20：邮件未通过用户模拟检查，其中发送邮件的用户正在尝试模拟收件人组织中的用户或者受到反网络钓鱼策略保护的自定义用户。 这表示将向邮件添加模拟安全提示（如果已通过反网络钓鱼策略启用）。 <br/>9.21：邮件未通过反欺骗检查，并且“发件人:”标头中的发送域未进行身份验证且来自外部域。 与 CompAuth 结合使用（请参阅 Authentication-Results）。 <br/>9.22：与 9.21 相同，只是用户具有遭到覆盖的安全发件人。 <br/>9.23：与 9.22 相同，只是组织具有遭到覆盖的允许发件人或域。 <br/>9.24：与 9.23 相同，只是用户具有遭到覆盖的 Exchange 邮件流规则。|
 |X-CustomSpam：\[ASFOption\]|邮件匹配高级垃圾邮件筛选选项。 例如，**X-CustomSpam: Image links to remote sites** 表示匹配 **“到远程站点的图像链接”** ASF 选项。 若要找出为每个特定的 ASF 选项添加了哪个 X-header 文本，请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)。|
 |
