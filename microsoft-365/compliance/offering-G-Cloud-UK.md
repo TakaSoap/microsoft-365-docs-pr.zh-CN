@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 525ea4c129e351b157463efdf02280a1f55797ad
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 91f3575934f9007d8570898047f96202f83dc087
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859782"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804855"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云（G-云）
 
@@ -38,15 +39,15 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 了解如何使用我们的 Azure 安全性和合规性蓝图加快英国 G-云 v6 部署：[下载 Azure 蓝图 UK G-云原则实现指南](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - 云应用安全
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Microsoft Flow 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Office 365： Exchange Online、SharePoint Online 和 Skype for Business Online
-- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书

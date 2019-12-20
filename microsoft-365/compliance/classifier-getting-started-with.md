@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 分类器入门（预览）
+title: 可训练分类器入门（预览）
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护（DLP）或保留策略中。
-ms.openlocfilehash: 458f7e6c9f15bac71cd3dadf2ed64e1c1f4ef1c5
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: f37549a311af630ced0191b86f0be47b295f93ea
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633861"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807421"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>可训练分类器入门（预览）
 

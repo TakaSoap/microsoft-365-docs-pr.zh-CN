@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 468fa4bb8b6eb2e6b5bc4d94f193560373dfc1e7
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859862"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805027"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育权利和隐私法案（FERPA）
 
@@ -40,7 +41,7 @@ FERPA 不需要或识别审核或其他证书，因此受 FERPA 制约的任何�
 
 了解 FERPA 在 Microsoft 云上的优势：[下载 FERPA backgrounder](https://aka.ms/ferpa-compliance)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 在客户数据中，Microsoft 同意将其指定为 "学校官方" 的服务，其中包含 "合法教育兴趣"：
 
@@ -74,7 +75,7 @@ FERPA 不需要或识别审核或证书。
 - [联邦收银机： FERPA Final 规则](https://aka.ms/ferpa-reg)
 - [Microsoft Azure 的 FERPA 实施指南](https://aka.ms/azureferpa)
 - [Azure FERPA 合规性框架映射](https://aka.ms/AzureFERPAMapping)
-- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息

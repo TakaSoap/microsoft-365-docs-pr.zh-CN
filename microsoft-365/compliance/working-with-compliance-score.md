@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 Microsoft 合规性分数中的工作流工具来帮助管理组织的合规性。
-ms.openlocfilehash: 9dc3eb41b1ad686e1c9e1f0a4cf2df66ccb3ffbe
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685066"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802128"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>使用 Microsoft 合规性分数（预览）
 
@@ -193,7 +193,7 @@ ms.locfileid: "38685066"
 
 ### <a name="default-assessments"></a>默认评估
 
-默认情况下，您将在 "评估" 页上看到 "Microsoft 365 数据保护基准评估"。 如果要添加更多评估以涵盖其他法规和标准，可以在合规性管理器中管理评估。 合规性分数提供了10个开箱即用的评估，其中包括 GDPR、CCPA、ISO 27001、ISO 27018、NIST 800-53、NIST 800-171、NIST CSF、CSA CCM、FFIEC、HIPAA/高科技和 FedRAMP。
+默认情况下，您将在 "评估" 页上看到 "Microsoft 365 数据保护基准评估"。 合规性分数还提供了几个开箱即用评估（[查看完整列表](compliance-score.md#templates)）。 如果要添加更多评估以涵盖其他法规和标准，可以在合规性管理器中执行此操作。
 
 ### <a name="managing-assessments"></a>管理评估
 

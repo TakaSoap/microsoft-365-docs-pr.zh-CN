@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7d2d718aa8c502afedce0fe99d6f444f78735246
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859742"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804805"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任（HIPAA） & 高科技行为
 
@@ -48,7 +49,7 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 
 了解 Microsoft 云上 HIPAA 和高科技的优势：[阅读 Zwanger — Pesiri 放射科客户案例](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - 云应用安全
@@ -56,10 +57,10 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 - Microsoft Stream
 - Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Office 365 中型企业客户的高级和本地支持。
 - [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Microsoft Flow 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Intune
 - [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务作为独立服务或包含在 Office 365 或 Dynamics 365 品牌的计划或套件中
 - Azure DevOps Services
 
@@ -103,7 +104,7 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 - [HIPAA Omnibus 规则](https://aka.ms/HIPAA-omnibus)（最终管理法规-修改 HIPAA 规则）
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [了解 Azure 的 HIPAA 合规性](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)（5月19日，2016）
 - [Azure HIPAA 实现指南](https://aka.ms/azure-hipaa-guide)

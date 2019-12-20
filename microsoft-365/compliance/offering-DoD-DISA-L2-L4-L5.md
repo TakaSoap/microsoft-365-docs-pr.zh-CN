@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d805c5dab7e8ebeb31ea94895356a6529bcd970d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 2fa27680dcc9e0ee7fb495164683a291cc167d59
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859952"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805225"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部（DoD）在影响级别2、4和5的临时授权
 
@@ -55,7 +56,7 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 
 影响级别2涵盖非控制的未分类信息-已授权公开发布的数据。 此外，它还介绍了在不被视为 "关键任务" 的情况下的其他未分类信息，仍需要最低级别的访问控制。 此授权使美国联邦政府客户能够在范围内的 Microsoft 云服务上部署非敏感信息和基本防护应用程序和网站。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>涵盖的针对 DoD 影响的服务级别5
 

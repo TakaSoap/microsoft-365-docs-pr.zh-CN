@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: db357418b87e98ee0f649e48b1c00f9073d5e5de
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: e2c911592dea19afeca8d0f347e20ac3bd6c6ba2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860062"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805435"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品先期备货贸易委员会（CFTC）规则1.31 （c-d）美国
 
@@ -42,7 +43,7 @@ ms.locfileid: "39860062"
 
 Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以便将数据存储在定义的时间段内，而不是以不可改写、不可擦除的格式存储。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)

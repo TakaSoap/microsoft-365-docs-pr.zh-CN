@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ee932493aca94109381edde1b2df0aae342a4c2
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6b1b852ee79b377b5d67ada8a5a4de602a74e466
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859852"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805026"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>联邦金融机构检查委员会（FFIEC）
 
@@ -39,12 +40,12 @@ Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是为满足为金
 
 为了进一步帮助您遵守 FFIEC 要求，Microsoft 云服务提供独立 CPA 事务所生成的[SOC 认证报告](offering-SOC.md)。 例如，SOC 1 类型2证明基于 AICPA SSAE 18 standard （请参阅 C：105节），它取代了 SAS 70，并且适用于报告特定的财务报告控制措施。 SOC 报告包括审计员对 Microsoft 控件的有效性的意见，以实现指定监控期内的相关控制目标。 金融机构可以在满足在 Azure、Power BI 和 Office 365 上部署的资产的 FFIEC 合规性义务时使用此正式审核。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 

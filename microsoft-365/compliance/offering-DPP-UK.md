@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: b49a898c3a517b6c9468478ad7b7eddeeee1755c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859962"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805235"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>数字生产合作关系（DPP）（英国）
 
@@ -32,7 +33,7 @@ Microsoft Azure 已获授予 DPP 在完成数字生产合作关系（DPP）自�
   
 这意味着，使用 Azure 的广播公司和其他媒体客户可以确信其强大的安全性和弹性服务能够帮助满足广播行业的独特需求，从程序开发到传输。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 

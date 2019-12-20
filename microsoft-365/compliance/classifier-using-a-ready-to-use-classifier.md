@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 提供了可用于在组织中标识和标记内容的计算机学习分类器的准备工作。 本主题介绍如何准备好使用类元的准备工作。
-ms.openlocfilehash: 7e10bb94f84dd10a1ac22126106531d8ad309c47
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+description: Microsoft 365 提供了许多现成的可供使用的机器学习分类器，可用于在整个组织中标识和标记内容。 本主题介绍如何准备好使用类元的准备工作。
+ms.openlocfilehash: 6eaa3689dce1bfb37fdad6b1b22dcac3539bb31e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633851"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807411"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>使用就绪分类器（预览）
 
@@ -34,7 +34,7 @@ Microsoft 已通过大量的示例数据集进行了培训和测试了大量分�
 > 在使用准备就绪以在分类和标记工作流中使用分类器之前，应根据您认为适合类别的组织内容示例对其进行测试，以验证其分类预测是否符合您的预期。
 
 > [!IMPORTANT]
-> 请注意，冒犯性语言、骚扰、猥亵和威胁分类器仅适用于可搜索文本，但并不详尽或完整。 此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留在决定时更新这些分类符的权利。 虽然分类程序可以帮助组织监视攻击性和其他使用的语言，但分类程序不会解决此类语言的后果，也不打算提供组织的唯一方法来监视或响应使用此类语言。 您的组织（而不是 Microsoft 或其子公司）仍负责与监控、强制执行、阻止、删除和保留预先培训的分类器所标识的任何内容相关的所有决策。
+> 请注意，冒犯性语言、骚扰、猥亵和威胁分类器仅适用于可搜索文本不详尽或完整。 此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留在决定时更新这些分类器的权利。 虽然分类程序可以帮助组织监视攻击性和其他使用的语言，但分类程序不会解决此类语言的后果，也不打算提供组织的唯一方法来监视或响应使用此类语言。 您的组织（而不是 Microsoft 或其子公司）仍负责与监控、强制执行、阻止、删除和保留预先培训的分类器所标识的任何内容相关的所有决策。
 
 ## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>如何准备和使用分类器准备就绪
 

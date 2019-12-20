@@ -1,5 +1,6 @@
 ---
-title: 配置 Office 365 的监督策略
+title: 配置监督策略
+description: 为 Office 365 配置通信监督
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +16,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 为 Office 365 配置通信监督
-ms.openlocfilehash: 694f35fd42fb534292130695efa12bacc114713c
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+titleSuffix: Office 365 Compliance
+ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38685239"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806625"
 ---
-# <a name="configure-supervision-policies-for-office-365"></a>配置 Office 365 的监督策略
+# <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中配置监督策略
 
 > [!IMPORTANT]
 > 本主题适用于在 Office 365 订阅中配置监督策略。 如果要为 Microsoft 365 订阅配置通信合规性，请参阅[在 microsoft 365 中配置通信合规性（预览）](communication-compliance-configure.md)。

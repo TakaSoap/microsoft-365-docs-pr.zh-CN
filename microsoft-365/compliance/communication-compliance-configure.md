@@ -1,5 +1,6 @@
 ---
-title: 为 Microsoft 365 配置通信合规性（预览）
+title: 配置通信合规性（预览）
+description: 设置通信合规性策略以配置员工通信以供审阅。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +16,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 设置通信合规性策略以配置员工通信以供审阅。
-ms.openlocfilehash: 24b821158ca0f6d7486d1177256f5b1ce9123479
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633621"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807371"
 ---
-# <a name="configure-communication-compliance-for-microsoft-365-preview"></a>为 Microsoft 365 配置通信合规性（预览）
+# <a name="configure-communication-compliance-in-microsoft-365-preview"></a>在 Microsoft 365 中配置通信合规性（预览版）
 
 > [!IMPORTANT]
 > 本主题适用于在 Microsoft 365 订阅中配置通信合规性。 如果要为 Office 365 订阅配置监督策略，请参阅[configure 监督 For office 365](supervision-policies.md)。
@@ -38,7 +38,7 @@ ms.locfileid: "39633621"
   
 - **步骤1（可选）**：[设置组以实现通信合规性](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    在开始使用通信合规性之前，请确定哪些用户需要查看通信以及谁在进行审阅。 如果要开始使用几个用户查看通信合规性的工作方式，则可以跳过 "立即" 设置组。
+    在开始使用通信合规性之前，请确定哪些用户需要查看通信以及谁执行了检查。 如果要开始使用几个用户查看通信合规性的工作方式，则可以跳过 "立即" 设置组。
 
 - **步骤2（必需）**：[在组织中提供通信合规性](#step-2-make-communication-compliance-available-in-your-organization-required)
 
@@ -46,7 +46,7 @@ ms.locfileid: "39633621"
 
 - **步骤3（必需）**：[设置通信合规性策略](#step-3-create-a-communication-compliance-policy-required)
 
-    在 Microsoft 365 合规性中心创建通信合规性策略。 这些策略定义哪些通信将在组织中进行审核，并指定谁进行审阅。 通信包括电子邮件、Microsoft 团队、Skype for Business 和第三方平台通信（如 Facebook、Twitter 等）。
+    在 Microsoft 365 合规性中心创建通信合规性策略。 这些策略定义哪些通信将在组织中进行审核，并指定执行审阅的用户。 通信包括电子邮件、Microsoft 团队、Skype for Business 和第三方平台通信（如 Facebook、Twitter 等）。
 
 - **步骤4（可选）**：[创建员工通知模板](#step-4-create-employee-notice-templates-optional)
 
@@ -55,6 +55,10 @@ ms.locfileid: "39633621"
 - **步骤5（可选）**：[测试通信合规性策略](#step-5-test-your-communication-compliance-policy-optional)
 
     测试通信合规性策略以确保其按预期工作。 务必确保合规性策略满足标准。
+
+- **步骤6（可选）**：[为您的通信合规性策略启用审核](#step-6-enable-auditing-for-your-communication-compliance-policies-optional)
+
+    为您的组织启用审核，以记录通信合规性策略的管理活动。
 
 ## <a name="step-1-set-up-groups-for-communication-compliance-optional"></a>步骤1：为通信合规性设置组（可选）
 
@@ -77,6 +81,9 @@ ms.locfileid: "39633621"
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>步骤2：在您的组织中提供通信合规性（必需）
 
+> [!Important]
+> 默认情况下，全局管理员不具有对通信合规性功能的访问权限。 在此步骤中分配的角色在所有通信合规性功能都可访问之前是必需的。
+
 若要在 Microsoft 365 合规性中心中将**通信合规性**用作菜单选项，您必须分配有**监管审核管理员**角色。 此外，若要使用策略匹配来调查和修正邮件，您必须为具有**监管审核管理员**、**案例管理**和**审阅**角色的审阅者创建一个组。
 
 ### <a name="create-a-new-role-group"></a>创建新的角色组
@@ -85,7 +92,7 @@ ms.locfileid: "39633621"
 
 2. 在 Microsoft 365 合规性中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
-3. 选择“创建”****。
+3. 选择“**创建**”。
 
 4. 在 "**名称**" 字段中，为新角色组指定一个友好名称。 选择“下一步”****。
 
@@ -122,8 +129,8 @@ ms.locfileid: "39633621"
     - 选择要扫描的通信通道，包括 Exchange、Microsoft 团队或 Skype for Business。 如果您在 Microsoft 365 中配置了连接器，您还将选择扫描第三方源。
     - 选择要监视的通信方向，包括入站、出站或内部通信。
     - 定义通信合规性策略[条件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以从 "消息地址"、"关键字"、"文件类型" 和 "大小匹配条件" 中进行选择。
-    - 选择是否要包含敏感信息类型。 你可以在此处选择默认和自定义敏感信息类型。 从 "通信合规性策略向导" 中的现有自定义敏感信息类型或自定义关键字词典中进行选择。 如果需要，可以在运行向导之前创建这些项目。 您还可以在 "通信合规性策略" 向导中创建新的敏感信息类型。
-    - 选择是否要启用冒犯性语言模型。 这将检测在电子邮件正文中发送或接收的不正确的语言。
+    - 选择是否要包含敏感信息类型。 在此步骤中，您可以选择默认和自定义的敏感信息类型。 从 "通信合规性策略向导" 中的现有自定义敏感信息类型或自定义关键字词典中进行选择。 如果需要，可以在运行向导之前创建这些项目。 您还可以在 "通信合规性策略" 向导中创建新的敏感信息类型。
+    - 选择是否要启用冒犯性语言分类器。 此分类器检测在电子邮件正文中发送或接收的不正确语言。
     - 定义要查看的通信百分比。
     - 查看策略选择并创建策略。
 
@@ -158,7 +165,7 @@ ms.locfileid: "39633621"
 按照以下步骤测试您的通信合规性策略：
 
 1. 打开电子邮件客户端或 Microsoft 团队，同时以您要测试的策略中定义的监督用户的身份登录。
-2. 发送符合通信合规性策略中定义的条件的电子邮件或 Microsoft 团队聊天。 它可以是关键字、附件大小、域等。 请确保您确定策略中配置的条件设置过于严格或太 lenient。
+2. 发送符合通信合规性策略中定义的条件的电子邮件或 Microsoft 团队聊天。 此测试可以是关键字、附件大小、域等。请确保您确定策略中配置的条件设置过于严格或太 lenient。
 
     > [!NOTE]
     > 所有源通道中的通信可能需要长达24小时才能在策略中完全处理。
@@ -166,3 +173,12 @@ ms.locfileid: "39633621"
 3. 以通信合规性策略中指定的审阅者的资格登录到 Microsoft 365。 导航到 "**通信合规性** > **警报**" 以查看策略的警报。
 
 4. 使用修正控件修正警报，并验证是否正确解决了警报。
+
+## <a name="step-6-enable-auditing-for-your-communication-compliance-policies-optional"></a>步骤6：为您的通信合规性策略启用审核（可选）
+
+测试策略后，您可能需要启用审核，以便记录与通信合规性管理相关的活动。 这可能是与定义的组织策略相关联的所有活动的摘要，或任何与通信合规性策略更改相关的活动。
+
+启用审核后，通信合规性策略具有内置审核跟踪功能，以实现内部或外部审核的完全准备就绪。 您可以在主页面上使用 "**导出审阅活动**" 控件来生成审核文件，如果启用了审核，则可以在统一审核日志中查看审核活动。
+
+若要启用审核，请在 "Office 365 安全 & 合规中心" 的 "**审核日志搜索**" 页上，单击 "**开始记录用户和管理员活动**"。 如果未看到此链接，则已为你的组织开启审核。 启用审核后，会显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。 只需执行一次此操作。 有关审核日志的详细信息，请参阅[Search the audit log](search-the-audit-log-in-security-and-compliance.md)。
+

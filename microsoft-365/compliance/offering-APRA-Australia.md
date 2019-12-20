@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8d6314b7a2adf3f677c8343ddece9cb27bff073e
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7a402b880778a1644d63dfcdbe73ecc96f61f5be
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859242"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805535"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>澳大利亚 Prudential 法规颁发机构（APRA）
 
@@ -48,7 +49,7 @@ Microsoft 还解决了每个 APRA 风险管理的考虑事项：策略、治理�
 
 获得在符合 APRA 法规的情况之下将数据和工作负载移动到 Azure 的实践支持：[下载适用于澳大利亚金融机构的合规性检查表](https://aka.ms/microsoftaprachecklistjun17)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune

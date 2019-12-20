@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: c87618648c4b34553312a91d5633164fee316e52
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859822"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804995"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>联邦信息处理标准（FIPS）发布140-2
 
@@ -32,7 +33,7 @@ Microsoft 保持积极的承诺来满足140-2 的要求，由于标准是在2001
 
 有关 Microsoft Windows 加密模块的技术信息、每个模块的安全策略以及 CMVP 证书详细信息的目录，请参阅[windows 和 Windows SERVER FIPS 140-2 内容](https://aka.ms/AA6ehud)。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 当前 CMVP FIPS 140-2 实施指南排除了云服务本身的 FIPS 140-2 验证;云服务提供商可以选择为构成云服务的计算元素获取并运行 FIPS 140 验证的加密模块。 Microsoft online services 包括已验证 FIPS 140-2 的组件，其中包括：
 

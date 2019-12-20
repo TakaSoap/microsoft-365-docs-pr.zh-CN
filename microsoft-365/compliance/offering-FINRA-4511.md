@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: af2e282ac992dbf6935e9a2c1a9c7144d26aad39
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 1ef6f3c9e8f6a5b3aaef40b4d0aa8eaac1c3572c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859832"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805005"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融行业法规颁发机构（FINRA）规则4511（c）美国
 
@@ -48,10 +49,10 @@ Cohasset 验证了使用策略锁定选项的[Azure 不可变 Blob 存储](https
 
 Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以便将数据存储在定义的时间段内，而不是以不可改写、不可擦除的格式存储。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -67,9 +68,7 @@ Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语
 
 - **金融服务法规**：符合云计算和 Microsoft online services 的关键美国规章原则的合规性地图。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - **风险评估和合规性指南**：针对 Microsoft 云服务风险评估和监管机构通知创建一个管理模型。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **金融用例**：在案例概述、教程和其他资源的帮助下构建适合金融服务的 Azure 解决方案。
-
-[了解更多](https://docs.microsoft.com/azure/industry/financial/)
+- **金融用例**：在案例概述、教程和其他资源的帮助下构建适合金融服务的 Azure 解决方案。 [了解更多](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>资源
 

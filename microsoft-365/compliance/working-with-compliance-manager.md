@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: c50122f390809e145af621ed6341d02ae9c3b8cf
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202353"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962249"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -78,7 +78,7 @@ ms.locfileid: "39202353"
 
 2. 在 "服务信任门户" 顶部菜单栏上，选择 "**管理员**"，然后选择 "**设置**"。
 
-4. 在 "**安全分数**" 选项卡中，为您选择的设置选择适当的按钮。
+4. 在 "**安全分数**" 选项卡中，选择所选设置对应的相应按钮。
 
 **注意：** 只有全局管理员才能打开或关闭所有操作的自动更新。 合规性管理器管理员可以为单个操作启用自动更新，而不是全局执行所有操作。
 
@@ -157,7 +157,7 @@ ms.locfileid: "39202353"
 
 1. 选择要修改的操作的省略号（...），然后选择 "**编辑**"。
 2. 切换交换机以确保安全分数连续更新为 "开" 或 "关"，以通过安全分数启用或禁用连续监控。
-3. 选择“**保存**”。
+3. 选择“保存”****。
 
 当组织首次部署 Microsoft 365 或 Office 365 时，将需要大约7天的时间来完全收集数据，并将其划分到你的成绩中。 在这段时间内，将安全分数连续更新开关设置为**Off**并手动设置要**实现**的操作，则会将该操作计为成绩。 在最初的七天之后，将安全分数连续更新打开将启用从该点继续进行监视。
 
@@ -567,7 +567,7 @@ Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 
 ![合规性管理器评估 Excel 报告](media/compliance-manager-assessment-report.png)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 下表介绍了每个合规性管理器权限及其允许用户执行的操作。 该表还指示分配了每个权限的角色。
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 97cbc676f9de070d1532d1e56c96db0efcce8bd0
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633651"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807331"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -51,7 +51,7 @@ ms.locfileid: "39633651"
 
 ## <a name="assessments"></a>评估
 
-[评估](working-with-compliance-manager.md#assessments)是允许您组织在 Microsoft 和您的组织之间共享的责任的控制措施，以评估云服务安全性和合规性风险。 评估可帮助您实施由合规性标准和适用的数据保护标准、法规或法律指定的数据保护安全措施。 它们可帮助您针对选定 Microsoft 云服务的所选行业标准来辨别您的数据保护和合规性状况。 评估通过在与证书标准对应的评估中包含的控制实施完成。
+[评估](working-with-compliance-manager.md#assessments)是允许您根据 Microsoft 与组织之间共享的职责来组织控制，以评估云服务安全性和合规性风险的容器。 评估可帮助您实施由合规性标准和适用的数据保护标准、法规或法律指定的数据保护安全措施。 它们可帮助您针对选定 Microsoft 云服务的所选行业标准来辨别您的数据保护和合规性状况。 评估通过在与证书标准对应的评估中包含的控制实施完成。
 
 默认情况下，合规性管理器将为您的组织创建以下评估：
 
@@ -124,7 +124,7 @@ ms.locfileid: "39633651"
   
 ## <a name="manage-evidence"></a>管理证据
 
-合规性管理器可以存储实施任务的证据，以执行测试和验证客户托管的控件。 证据包括文档、电子表格、屏幕截图、图像、脚本、脚本输出文件和其他文件。 合规性管理器还会自动接收遥测并为与安全得分集成的措施项创建证据记录。 作为证据上传到合规性管理器中的任何数据均存储在 Microsoft 云存储站点上的美国。 此数据在位于东南亚和西欧的 Azure 区域之间复制。
+合规性管理器可以在测试和验证客户托管的控件方面存储实施任务的证据。 证据包括文档、电子表格、屏幕截图、图像、脚本、脚本输出文件和其他文件。 合规性管理器还会自动接收遥测并为与安全得分集成的措施项创建证据记录。 作为证据上传到合规性管理器中的任何数据均存储在 Microsoft 云存储站点上的美国。 此数据在位于东南亚和西欧的 Azure 区域之间复制。
 
 ## <a name="templates"></a>模板
 
@@ -132,18 +132,20 @@ ms.locfileid: "39633651"
 
 合规性管理器附带的预配置模板为：
 
-1. [ISO 27001：2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018：2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 修订版4](https://go.microsoft.com/fwlink/?linkid=2109075)
-4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-5. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
-6. [云安全联盟（CSA）云控制矩阵（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
+1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+4. [NIST 800-53 修订版4](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [云安全联盟（CSA）云控制矩阵（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [联邦金融机构检查委员会（FFIEC）信息安全手册](https://go.microsoft.com/fwlink/?linkid=2109077) 
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [FedRAMP 中等](https://go.microsoft.com/fwlink/?linkid=2108869)
-10. [欧洲联合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-11. [加利福尼亚消费者隐私法案（CCPA）-预览](https://go.microsoft.com/fwlink/?linkid=2108871)
-12. [Microsoft 365 数据保护基准](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP 中等](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [欧洲联合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [加利福尼亚州消费者隐私法案（CCPA）](https://go.microsoft.com/fwlink/?linkid=2108871) （预览）
+13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳大利亚政府版 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （预览）
+14. [Microsoft 365 数据保护基准](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>合规性分数
 

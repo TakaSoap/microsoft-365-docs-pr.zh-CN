@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8d28327e4627351c27140e954c2fa26571d1689d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: cdaf19b59960745e32e00b6833cea5edfd6258a5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860042"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805405"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事审判信息服务（CJIS）安全策略
 
@@ -40,7 +41,7 @@ Microsoft 已评估 Microsoft Azure 政府、Microsoft Office 365 美国政府�
 
 了解如何使用 Azure 安全性和合规性蓝图加快 CJIS 安全策略：[下载 Microsoft 政府云服务的 CJIS 实施指南](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)

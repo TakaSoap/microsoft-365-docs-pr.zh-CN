@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 导入服务中的新智能导入功能可筛选实际导入到目标邮箱的项目。 智能导入使您可以主动决定要导入的数据和留下的内容。 智能导入还提供了有关要导入到 Office 365 中的数据的见解。 '
-ms.openlocfilehash: 2e012159f7f278dc10db14b07531686b5d130fd9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e070c32814e8f5a34a90a12dfcd4148199731d66
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074826"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967345"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 时筛选数据
 
@@ -49,7 +49,7 @@ ms.locfileid: "37074826"
     
   - [使用网络上载将 PST 文件导入到 Office 365](use-network-upload-to-import-pst-files.md)
     
-  - [使用驱动器寄送，将 PST 文件导入到 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
+  - [使用驱动器传送将 PST 文件导入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
 - 在使用网络上载创建导入作业之后，安全 & 合规中心中的 "导入" 页上的导入作业的状态设置为 "**正在进行分析**"，这意味着 Office 365 正在分析您上载的 PST 文件中的数据。 单击****!["刷新](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)刷新" 以更新导入作业的状态。 
     
@@ -59,21 +59,21 @@ ms.locfileid: "37074826"
 
 创建 PST 导入作业后，请按照以下步骤在将数据导入到 Office 365 之前对其进行筛选。
   
-1. 转到[https://protection.office.com/](https://protection.office.com/)并使用 Office 365 组织中的管理员帐户凭据登录。 
+1. 转到 [https://protection.office.com/](https://protection.office.com/)，然后使用你 Office365 组织中的管理员帐户的凭据进行登录。 
     
-2. 单击 "**数据调控** \> **导入**"。
+2. 单击 "**信息调控** \> **导入** \> " "**导入 PST 文件**"。
     
-    您的组织的导入作业将在 "**导入**" 页上列出。 请注意，"**状态**" 列中的 "**分析完成**" 值指示 Office 365 已分析并准备好导入的导入作业。 
+    您的组织的导入作业列在 "**导入 PST 文件**" 页上。 请注意，"**状态**" 列中的 "**分析完成**" 值指示 Office 365 已分析并准备好导入的导入作业。 
     
     ![分析完成状态表示 Office 365 已分析 PST 文件中的数据](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
 3. 对于要完成的导入作业，单击 "已**准备好导入到 Office 365** "。 
     
-    将显示一个 "飞出" 页面，其中包含有关 PST 文件的信息以及有关导入作业的其他信息。
+    系统将显示一个浮出页面，其中包含有关 PST 文件的信息和有关导入作业的其他信息。
     
 4. 单击 "**导入到 Office 365**"。
     
-    将显示 "**筛选数据**" 页。 它包含有关导入作业的 PST 文件中的数据的数据见解，包括有关数据期限的信息。 
+    系统将显示“**筛选数据**”页面。 它包含有关导入作业的 PST 文件中的数据的数据见解，包括有关数据期限的信息。 
     
     !["筛选数据" 页面显示导入作业的 PST 文件的数据见解](media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
   
@@ -108,7 +108,7 @@ ms.locfileid: "37074826"
     
     ![数据洞察力根据您的筛选器设置进行更新](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. 单击“下一步”。****
+    d. 单击“**下一步**”。
     
     将显示 "状态" 页，其中显示了筛选器设置。 同样，您可以编辑任何筛选设置。
     
@@ -120,12 +120,12 @@ ms.locfileid: "37074826"
     
     b. 在 "将**数据导入到 Office 365** " 页上，单击 "**导入数据**" 以启动导入。 请注意，将显示将导入的总数据量。 
     
-6. 在 "**导入**" 页**** ![上，](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)单击 "刷新刷新"。 导入作业的状态将显示在 "**状态**" 列中。 
+6. 在 "**导入 PST 文件**" 页**** ![上，](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)单击 "刷新刷新"。 导入作业的状态将显示在 "**状态**" 列中。 
     
 7. 单击 "导入作业" 以显示更多详细信息，如每个 PST 文件的状态和您配置的筛选器设置。
 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - Office 365 如何确定年龄筛选器的增量？ 当 Office 365 分析 PST 文件时，它会查看每个项目的已发送或接收时间戳（如果某个项目同时具有已发送和已接收的时间戳，则选择了最早的日期）。 然后，Office 365 将查看该时间戳的年份值，并将其与当前日期进行比较以确定项目的年龄。 然后，将这些年龄用作**年龄**筛选器的下拉列表中的值。 例如，如果 PST 文件包含来自2016、2015和2014的邮件，则**年龄**筛选器中的值将为**1 年**、 **2 年**和**3 年**。
     

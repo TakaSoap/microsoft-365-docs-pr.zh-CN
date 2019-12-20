@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: 067a54f6286df5a5ce6e5b02b7ea1d6964b16777
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 54a12334c4b63e1751d578dcd5a9c79d887d246d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603746"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823724"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -79,7 +79,7 @@ ms.locfileid: "39603746"
 |导出 <br/> | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |预览 <br/>  | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|审阅 <br/>  | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |RMS 解密 <br/>  ||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |搜索和清除 <br/> | <br/> | <br/> |![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -88,7 +88,7 @@ ms.locfileid: "39603746"
 
 ### <a name="case-management"></a>案例管理
 
-此角色允许用户创建、编辑、删除和控制对安全 & 合规性中心中的电子数据展示案例的访问。 有关详细信息，请参阅[在安全 & 合规中心中管理电子数据展示事例](manage-ediscovery-cases.md)。 如前所述，在使用**eDiscoveryCaseAdmin** cmdlet 使其成为电子数据展示管理员之前，必须向用户分配事例管理角色。 
+此角色允许用户创建、编辑、删除和控制对安全 & 合规性中心中的电子数据展示案例的访问。 有关详细信息，请参阅[在安全 & 合规中心中管理电子数据展示事例](ediscovery-cases.md)。 如前所述，在使用**eDiscoveryCaseAdmin** cmdlet 使其成为电子数据展示管理员之前，必须向用户分配事例管理角色。 
 
 ### <a name="compliance-search"></a>合规性搜索
 
@@ -119,7 +119,7 @@ ms.locfileid: "39603746"
 
 此角色允许用户查看从内容搜索返回的项目列表。 他们还可以打开并查看列表中的每个项目以查看其内容。
 
-### <a name="review"></a>Review
+### <a name="review"></a>审阅
 
 此角色允许用户访问 Office 365 高级电子数据展示中的事例数据。 此角色的主要用途是为用户提供对高级电子数据展示的访问权限。 分配了此角色的用户可以在其成员的安全 & 合规中心中查看和打开电子数据展示页面上的案例列表。 在用户访问安全 & 合规性中心中的案例后，他们可以选择**切换到高级电子数据展示**，以在高级电子数据展示中访问和分析事例数据。 此角色不允许用户预览与案例相关联的内容搜索的结果，或执行其他内容搜索或案例管理任务。
 

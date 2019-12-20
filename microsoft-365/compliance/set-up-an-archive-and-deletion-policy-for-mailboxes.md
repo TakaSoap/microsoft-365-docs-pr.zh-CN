@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 在 Office 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
-ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6da5d9bc180623778925697419f0ca39acee9185
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685327"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967765"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>为 Office 365 组织中的邮箱设置存档和删除策略
 
@@ -44,7 +44,7 @@ ms.locfileid: "38685327"
     
 您可以按照本文中的部分或全部步骤操作，为自己组织中的邮箱设置存档和删除策略。 我们建议您先对几个邮箱测试此过程，然后再在组织中的所有邮箱上实施此过程。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Office 365 组织中的全局管理员才能执行本主题中的步骤。 
     
@@ -64,7 +64,7 @@ ms.locfileid: "38685327"
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. 在安全 & 合规性中心中，转到 "**数据调控** \> **存档**"。
+3. 在安全 & 合规性中心中，转到 "**信息管理** \> **存档**"。
     
     将显示组织中的邮箱列表以及相应的存档邮箱是否已启用或已禁用。 
     
@@ -309,7 +309,7 @@ ms.locfileid: "38685327"
     
 - 下表提供了有关添加到自定义保留策略的每个保留标记的详细信息，该保留策略是按照本主题中的步骤创建的。
     
-    |**保留标记**|**此标记执行的操作**|**内置的还是自定义的？**|**Type**|
+    |**保留标记**|**此标记执行的操作**|**内置的还是自定义的？**|**类型**|
     |:-----|:-----|:-----|:-----|
     |Alpine 住宅3年后移动到存档  <br/> |将1095天（3年）的项目移至存档邮箱。  <br/> |自定义（请参阅[第2步：为存档和删除策略创建新的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)）  <br/> |默认策略标记（存档）;此标记将自动应用于整个邮箱。  <br/> |
     |Alpine 住宅7年永久删除  <br/> |将主邮箱或存档邮箱中的项目永久删除（如果有7年）。  <br/> |自定义（请参阅[第2步：为存档和删除策略创建新的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)）  <br/> |默认策略标记（删除）;此标记将自动应用于整个邮箱。  <br/> |

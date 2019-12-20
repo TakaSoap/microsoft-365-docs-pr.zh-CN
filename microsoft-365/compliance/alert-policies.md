@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略，以监视潜在威胁、数据丢失和权限问题。 然后，您可以查看和管理用户执行符合通知策略条件的活动时生成的警报。
-ms.openlocfilehash: 5a609095370b2e397ccb68af2e2a9f27fc38b93d
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 451883f94df3a58781ae6de0d82322c29f95bbb9
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257557"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823744"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心中的警报策略
 
@@ -104,21 +104,21 @@ Office 365 提供了内置的通知策略，可帮助确定 Exchange 管理员�
 
 |**默认通知策略**|**说明**|**Category**|**Office 365 企业版订阅**|
 |:-----|:-----|:-----|:-----|
-|**检测到潜在的恶意 URL 单击**|当组织中的用户受[Office 365 ATP 安全链接](../security/office-365-security/atp-safe-links.md)的保护时，将生成警报。单击恶意链接。 当通过 Office 365 ATP 标识 URL 判定更改时，或者用户替代 Office 365 ATP 安全链接页面（基于组织的 Office 365 ATP 安全链接策略）时，将触发此事件。 此通知策略具有**高**严重性设置。 对于 Office 365 ATP P2，E5，G5 客户，此警报会自动触发[Office 365 自动事件响应](https://go.microsoft.com/fwlink/?linkid=2084737)。 有关触发此警报的事件的详细信息，请参阅[设置 Office 365 ATP 安全链接策略](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
+|**检测到潜在的恶意 URL 单击**|当组织中的用户受[Office 365 ATP 安全链接](../security/office-365-security/atp-safe-links.md)的保护时，将生成警报。单击恶意链接。 当通过 Office 365 ATP 标识 URL 判定更改时，或者用户替代 Office 365 ATP 安全链接页面（基于组织的 Office 365 ATP 安全链接策略）时，将触发此事件。 此通知策略具有**高**严重性设置。 对于 Office 365 ATP P2，E5，G5 客户，此通知会自动触发[Office 365 中的自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。 有关触发此警报的事件的详细信息，请参阅[设置 Office 365 ATP 安全链接策略](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**管理员提交结果已完成**|当[管理员提交](../security/office-365-security/admin-submission.md)完成已提交实体的重新扫描时生成警报。 每次从管理员提交中呈现重新扫描结果时，都会触发警报。 这些警报旨在提醒您[查看以前提交的结果](https://protection.office.com/reportsubmission)、提交用户报告的邮件以获取最新的策略检查并重新扫描 verdicts，并帮助您确定组织中的筛选策略是否有预期的影响。 此策略的严重性设置**较低**。|威胁管理|E1/F1、E3 或 E5|
 |**创建转发/重定向规则**|当组织中的某个人为其邮箱创建了将邮件转发或重定向到其他电子邮件帐户的收件箱规则时，将生成警报。 此策略仅跟踪使用 web 上的 Outlook （以前称为 Outlook Web App）或 Exchange Online PowerShell 创建的收件箱规则。 此策略的严重性设置**较低**。 有关在 Outlook 网页版中使用收件箱规则转发和重定向电子邮件的详细信息，请参阅[使用 web 上的 outlook 中的规则将邮件自动转发到其他帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**启动或导出的电子数据展示搜索**|当有人使用安全与合规中心中的内容搜索工具时，将生成警报。 执行以下内容搜索活动时，将触发警报： <br/><br/>•已启动内容搜索<br/>•将导出内容搜索的结果<br/>•导出内容搜索报告<br/><br/>在与电子数据展示事例相关联的前一内容搜索活动执行时，也会触发警报。 此策略的严重性设置为**中等**。 有关内容搜索活动的详细信息，请参阅[在 Office 365 审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**Exchange 管理员权限提升**|在 Exchange Online 组织中向某人分配管理权限时生成警报。 例如，当用户添加到 Exchange Online 中的 "组织管理" 角色组时。 此策略的严重性设置**较低**。|Permissions|E1/F1/G1、E3/G3 或 E5/G5|
-|**包含在传递后删除的恶意软件的电子邮件**|在将包含恶意软件的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件，Office 365 将使用[零小时自动清除](../security/office-365-security/zero-hour-auto-purge.md)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置，并自动触发[Office 365 自动事件响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
-|**包含投递后删除的网络钓鱼 Url 的电子邮件**|在将包含网络钓鱼的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件，Office 365 将使用[零小时自动清除](../security/office-365-security/zero-hour-auto-purge.md)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置，并自动触发[Office 365 自动事件响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
-|**用户报告为恶意软件或网络钓鱼的电子邮件**|当组织中的用户将邮件报告为使用报告邮件加载项的仿冒电子邮件时，将生成警报。 此策略有一个**信息性**严重性设置。 有关此加载项的详细信息，请参阅[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 对于 Office 365 ATP P2，E5，G5 客户，此警报会自动触发[Office 365 自动事件响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
-|**超过电子邮件发送限制**|当组织中的某个人发送了超过出站垃圾邮件策略允许的邮件时，将生成警报。 这通常表示用户发送过多电子邮件或帐户可能会受到威胁。 此策略的严重性设置为**中等**。 如果你收到此警报策略生成的警报，最好[检查用户帐户是否受到威胁](responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
+|**包含在传递后删除的恶意软件的电子邮件**|在将包含恶意软件的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件，Office 365 将使用[零小时自动清除](../security/office-365-security/zero-hour-auto-purge.md)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置，并自动触发[Office 365 中的自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
+|**包含投递后删除的网络钓鱼 Url 的电子邮件**|在将包含网络钓鱼的任何邮件传递到组织中的邮箱时生成警报。 如果发生此事件，Office 365 将使用[零小时自动清除](../security/office-365-security/zero-hour-auto-purge.md)从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**信息性**严重性设置，并自动触发[Office 365 中的自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
+|**用户报告为恶意软件或网络钓鱼的电子邮件**|当组织中的用户将邮件报告为使用报告邮件加载项的仿冒电子邮件时，将生成警报。 此策略有一个**信息性**严重性设置。 有关此加载项的详细信息，请参阅[使用报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 对于 Office 365 ATP P2，E5，G5 客户，此通知会自动触发[Office 365 中的自动调查和响应](https://go.microsoft.com/fwlink/?linkid=2084737)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
+|**超过电子邮件发送限制**|当组织中的某个人发送了超过出站垃圾邮件策略允许的邮件时，将生成警报。 这通常表示用户发送过多电子邮件或帐户可能会受到威胁。 此策略的严重性设置为**中等**。 如果你收到此警报策略生成的警报，最好[检查用户帐户是否受到威胁](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**邮件已延迟**|当 Office 365 无法使用连接器将电子邮件发送到内部部署组织或合作伙伴服务器时生成警报。 当发生这种情况时，邮件将在 Office 365 中排队。 当队列中有2000个或更多的邮件超过一小时时，将触发此警报。 此策略具有**高**严重性设置。|邮件流|E1/F1/G1、E3/G3 或 E5/G5|
 |**传递后检测到恶意软件市场**|当包含恶意软件的大量邮件传递到组织中的邮箱时，将生成警报。 如果发生此事件，Office 365 将从 Exchange Online 邮箱中删除受感染的邮件。 此策略具有**高**严重性设置。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**检测到恶意软件市场活动并阻止**|当有人试图向组织中的用户发送包含特定类型的恶意软件的大量电子邮件时生成警报。 如果发生此事件，则受感染的邮件将被 Office 365 阻止，且不会传递到邮箱。 此策略的严重性设置**较低**。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**SharePoint 和 OneDrive 中检测到的恶意软件市场**|当组织中的 SharePoint 网站或 OneDrive 帐户中的文件中检测到异常数量的恶意软件或病毒时，将生成警报。 此策略具有**高**严重性设置。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**由于租户或用户替代**<sup>1</sup>而传递的网络钓鱼|当 Office 365 检测到管理员或用户替代允许将仿冒邮件传递到邮箱时，将生成警报。 替代的示例包括允许来自特定发件人或域的邮件的收件箱或邮件流规则，或者允许来自特定发件人或域的邮件的反垃圾邮件策略。 此策略具有**高**严重性设置。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
-|**检测到可疑的电子邮件发送模式**|当组织中的某个人发送了可疑电子邮件，并且受到限制发送电子邮件的风险时，将生成警报。 这是一种针对可能表示帐户受到威胁但不够严重以限制用户的行为的早期警告。 此策略的严重性设置为**中等**。 尽管极少数情况下，此策略生成的警报也可能是异常情况。 但是，最好[检查用户帐户是否受到威胁](responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5  |
+|**检测到可疑的电子邮件发送模式**|当组织中的某个人发送了可疑电子邮件，并且受到限制发送电子邮件的风险时，将生成警报。 这是一种针对可能表示帐户受到威胁但不够严重以限制用户的行为的早期警告。 此策略的严重性设置为**中等**。 尽管极少数情况下，此策略生成的警报也可能是异常情况。 但是，最好[检查用户帐户是否受到威胁](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5  |
 |**受限制的租户发送电子邮件**|如果组织中的大多数电子邮件流量检测到可疑，并且 Microsoft 已将组织限制为发送电子邮件，则会生成警报。 调查任何可能受到威胁的用户和管理员帐户、新连接器或开放中继，然后与 Microsoft 支持部门联系以取消阻止您的组织。 此策略具有**高**严重性设置。 有关阻止组织的原因的详细信息，请参阅[修复电子邮件传递问题，了解 Exchange Online 中的错误代码 5.7.7 xx](https://go.microsoft.com/fwlink/?linkid=2022138)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**异常外部用户文件活动**|当您的组织外部的用户对 SharePoint 或 OneDrive 中的文件执行异常数量的活动时，将生成警报。 这包括访问文件、下载文件和删除文件等活动。 此策略具有**高**严重性设置。|数据治理|E5/G5、Office 365 ATP P2 或高级合规性附加订阅|
 |**外部文件共享的数量不寻常**|当与组织外部的用户共享 SharePoint 或 OneDrive 中的大量文件时生成警报。 此策略的严重性设置为**中等**。|数据治理|E5/G5、Office 365 ATP P2 或高级合规性附加订阅|
@@ -187,12 +187,12 @@ Office 365 提供了内置的通知策略，可帮助确定 Exchange 管理员�
 |预览|||||||
 |记录管理|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |保留管理|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Review|||||||
+|审阅|||||||
 |RMS 解密|||||||
 |角色管理||||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |搜索和清除|||||||
 |安全管理员||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|安全读者||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|安全读取者||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |服务保证视图|||||||
 |监管审核管理员|||||||
 |仅查看审核日志|||||||

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 378f03c5c579939abed84cfdea436845f37292af
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a23cd042004747dd65f53da71817cf571a520de5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859892"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805145"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>针对版权窃取的联盟（事实）
 
@@ -32,7 +33,7 @@ ms.locfileid: "39859892"
 
 了解 Microsoft 云上的事实的好处：[下载事实 backgrounder](https://aka.ms/fact-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 

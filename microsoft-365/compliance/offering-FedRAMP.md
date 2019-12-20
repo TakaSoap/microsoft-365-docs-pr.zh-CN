@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0e967520dbbac845861168d3eea5053e18a46edf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: da8e7e473210c42cb5d95f2701779561c95b6bb3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859802"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804945"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>联邦风险和授权管理计划（FedRAMP）
 
@@ -62,14 +63,14 @@ Azure 在中等影响级别维护 ATO。 （Azure 是第一个具有基础结构
 - Office 365 （企业和企业计划）和 Office 365 美国政府在检查器的运行状况和人体学服务（DHHS）办公室的中等影响级别都有一个 FedRAMP 机构 ATO。 Office 365 美国政府是第一个用于获取此授权的基于云的电子邮件和协作服务。
 - 任何希望使用 O365 美国政府防御的客户都可以利用 DISA P-ATO 来生成代理商 ATO，以记录其对 O365 的接受。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 与 Azure 政府](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365 和 Office 365 US 政府计划](https://aka.ms/o365-compliance-framework)
 - Office 365 美国政府防御版
-- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 - Microsoft Defender ATP
 
 > [!NOTE]

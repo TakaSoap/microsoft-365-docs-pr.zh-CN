@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中存档第三方数据
+title: 存档第三方数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以将来自社交媒体平台、即时消息平台和文档协作平台的第三方数据导入 Office 365 组织中的邮箱。 这样，你就可以在 Office 365 中存档 Facebook、Twitter 和其他第三方数据源中的数据。 然后，您可以使用并应用适用于第三方数据的 Office 365 合规性功能（如法律封存、电子数据展示、就地存档和保留策略）。
-ms.openlocfilehash: 084cacf1c2bef8b5786e6dba804f9a1e87001338
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 10ec436887816080716ecd8870e2b2da8021e9af
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615582"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807461"
 ---
-# <a name="archive-third-party-data-in-office-365"></a>在 Office 365 中存档第三方数据
+# <a name="archive-third-party-data"></a>存档第三方数据
 
 Office 365 使管理员能够从社交媒体平台、即时消息平台和文档协作平台将第三方数据导入和存档到 Office 365 组织中的邮箱。 可以导入到 Office 365 的第三方数据源示例包括以下服务： 
   

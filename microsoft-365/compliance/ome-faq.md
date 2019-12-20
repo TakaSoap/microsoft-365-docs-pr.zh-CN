@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关 Office 365 中的新邮件保护功能如何工作的问题？ 在此处查找答案。
-ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866414"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962559"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
@@ -69,10 +69,10 @@ Office 365 邮件加密的新功能是现有 IRM 和旧版 OME 解决方案的�
 
 |**功能**|**早期版本的 OME**|**IRM**|**新的 OME 功能**|
 |:-----|:-----|:-----|:-----|
-|**发送加密电子邮件**|仅通过 Exchange 邮件流规则|最终用户从 Outlook for PC、Outlook for Mac 或 web 上的 Outlook 启动;或通过 Exchange 邮件流规则|最终用户从 Outlook for PC、Outlook for Mac 或 web 上的 Outlook 启动;或通过邮件流规则|
+|**发送加密电子邮件**|仅通过 Exchange 邮件流规则|最终用户从 Outlook for Windows、Outlook for Mac 或 web 上的 Outlook 启动;或通过 Exchange 邮件流规则|最终用户从 Outlook for Windows、Outlook for Mac 或 web 上的 Outlook 启动;或通过邮件流规则|
 |**版权管理**|-|"不要转发" 选项和自定义模板|"不要转发" 选项、"仅加密" 选项、"默认" 和 "自定义" 模板|
 |**支持的收件人类型**|仅限外部收件人|仅限内部收件人|内部和外部收件人|
-|**收件人体验**|外部收件人收到了他们在浏览器或下载的移动应用程序中下载和打开的 HTML 邮件。|内部收件人仅在 Outlook 中为电脑、Outlook for Mac 和 Outlook 网页接收加密电子邮件。|内部和外部收件人在 Outlook for PC、Outlook for Mac、outlook 网页版、Outlook for Android 和 Outlook for iOS 中接收电子邮件，无论他们是否在同一 Office 365 组织中或在任何 Office 365 中，都可以通过 web 门户获取它们。组织. OME 门户不需要单独下载。|
+|**收件人体验**|外部收件人收到了他们在浏览器或下载的移动应用程序中下载和打开的 HTML 邮件。|内部收件人在 Outlook for Windows、Outlook for Mac 和 Outlook 网页版中仅收到加密电子邮件。|内部和外部收件人在 Outlook for Windows、Outlook for Mac、outlook 网页版、Outlook for Android 和 Outlook for iOS 中接收电子邮件，无论他们是否在同一 Office 365 组织中或在任何 Office 365 中，都可以通过 web 门户获取这些收件人。组织. OME 门户不需要单独下载。|
 |**提供你自己的密钥支持**|不可用|不可用| 支持的 BYOK|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>如何为我的组织启用新的 OME 功能？
@@ -93,11 +93,11 @@ Office 365 邮件加密的新功能是现有 IRM 和旧版 OME 解决方案的�
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>需要使用什么电子邮件客户端才能创建 OME 加密邮件？ 发送受保护的邮件支持哪些应用程序？
 
-您可以从 Outlook 2016、Outlook 2013 for PC 和 Mac 以及 outlook 网页版中创建受保护的邮件。
+您可以从 Outlook 2016、Outlook 2013 for Windows 和 Mac 以及 outlook 网页版中创建受保护的邮件。
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>支持哪些电子邮件客户端读取和回复受保护的电子邮件？
 
-如果你是 Office 365 用户，则可以阅读 Outlook for PC 和 Mac （2013和2016）、Outlook 网页版和 Outlook mobile （Android 和 iOS）中的 "阅读和响应"。 如果你的组织允许，你也可以使用 iOS 本机邮件客户端。 如果您是非 Office 365 用户，则可以通过 web 浏览器阅读并答复 web 上的加密邮件。
+如果你是 Office 365 用户，则可以阅读并响应 Outlook for Windows 和 Mac （2013和2016）、Outlook 网页版和 Outlook mobile （Android 和 iOS）。 如果你的组织允许，你也可以使用 iOS 本机邮件客户端。 如果您是非 Office 365 用户，则可以通过 web 浏览器阅读并答复 web 上的加密邮件。
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>受保护的电子邮件中支持哪些文件类型作为附件？ 附件是否继承与受保护的电子邮件关联的保护策略？
 
@@ -135,18 +135,6 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
 
 是的！ 您可以在 Exchange Online 中设置邮件流规则，也可以使用安全&amp;合规性中心中的 DLP 进行设置。
   
-## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>是否可以打开发送到共享邮箱的加密邮件？
-
-是的！ 共享邮箱支持加密邮件。
-
-- 用户可以在共享邮箱中打开受保护的邮件，其中共享邮箱作为通讯组的一部分收到受保护的邮件。
-
-- 当用户使用 Outlook for Windows、Outlook for Mac 和 Outlook 网页版时，用户可以查看从电子邮件继承保护的附件。
-
-## <a name="is-delegated-access-supported"></a>是否支持委派访问权限？
-
-此时不作用。
-
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>我是否可以使用我的公司品牌自定义加密邮件？
 
 是的！ 有关自定义电子邮件和 OME 门户的信息，请参阅将组织的品牌添加到加密邮件。 请参阅[将组织的品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
@@ -162,3 +150,32 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
 ## <a name="can-i-remove-encryption-from-email"></a>是否可以从电子邮件中删除加密？
 
 管理员可以设置邮件流规则，以从传出邮件中删除加密。 无法使用邮件流规则从传入邮件中删除加密。
+
+## <a name="is-delegated-access-supported"></a>是否支持委派访问权限？
+
+此时不作用。
+
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>是否可以打开发送到共享邮箱的加密邮件？
+
+是的！ 共享邮箱支持加密邮件。
+
+- 用户可以在共享 mMailbox 中打开受保护的邮件，其中共享邮箱作为通讯组的一部分收到受保护的邮件。
+
+- 当用户使用 Outlook for Windows、Outlook for Mac 和 Outlook 网页版时，用户可以查看从电子邮件继承保护的附件。
+
+下表列出了受支持的共享邮箱客户端。
+
+| 平台 | 阅读邮件 | 查看电子邮件附件 |
+|----------|-----------|------------------------|
+| Outlook 网页版 | 是 | 是                |
+| Outlook for Windows| 是 | 是                |
+| Outlook for Mac    | 是 | 是                |
+| Outlook for Android| 是 | 否                 |
+| Outlook for iOS    | 是 | 否                 |
+|
+
+目前有两个已知的限制：
+
+- 仅支持通过直接用户分配向共享邮箱提供的访问权限。 我们不支持通过启用电子邮件的安全组进行分配。
+
+- 您不能使用 Outlook mobile 打开在移动设备上收到的电子邮件附件。

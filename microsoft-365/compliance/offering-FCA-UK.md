@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f009914f2a5178104968fe443bbac0655f5541b9
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 582f7175ae7eb851c1a58497369d069d7f295aa8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859882"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805055"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>英国财务行为权威机构（FCA）
 
@@ -40,7 +41,7 @@ Microsoft 指南更详细地介绍了我们遵守众多公认的国际标准的�
 
 [下载 Microsoft 方法以 FCA 最终云指南](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune

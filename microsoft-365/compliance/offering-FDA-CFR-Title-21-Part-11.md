@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7e8d24aecb2343ed03a1d224b21060619426717f
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: adda0e14a5712a4943ee37e029b96aecb0cd7c58
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859872"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805045"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和药品管理 CFR Title 21 第11部分
 
@@ -42,7 +43,7 @@ Microsoft 企业云服务经历了常规独立的第三方 SOC 1 类型2和 SOC 
 
 了解如何加速 FDA CFR Title 21 部署：[下载 AZURE FDA 21 资格指南](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 尽管没有用于遵守 CFR 标题21第11部分的认证，但以下 Microsoft 企业云服务已完成独立的第三方审核，这可能有助于客户实现法规遵从性工作。 这些服务包括：
 

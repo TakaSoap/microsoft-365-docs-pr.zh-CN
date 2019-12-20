@@ -1,5 +1,6 @@
 ---
-title: Microsoft 365 中的通信合规性（预览）
+title: 通信合规性（预览）
+description: 了解 Microsoft 365 中的通信合规性
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 了解 Microsoft 365 中的通信合规性
-ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 2e54a9d6e0cb74d7e58cda9869548214a7c69582
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633661"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807351"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Microsoft 365 中的通信合规性（预览）
 
@@ -93,7 +93,7 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 通信合规性策略跨多个通信通道扫描和捕获邮件，以帮助您快速查看和修正合规性问题：
 
-- **Microsoft 团队**：针对公共和私有[microsoft 团队](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)频道和个人聊天的聊天通信和相关附件在通信合规性中支持作为独立频道源或其他 Microsoft 365 服务。 现在，策略将自动扫描策略中定义的特定用户的所有 Microsoft 团队频道和团队，从而无需为 Microsoft 工作组工作分配保留单独的映射列表。
+- **Microsoft 团队**：针对公共和私有[microsoft 团队](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)频道和个人聊天的聊天通信在通信合规性中支持作为独立频道源或其他 Microsoft 365 服务。 现在，策略将自动扫描策略中定义的特定用户的所有 Microsoft 团队频道和团队，从而无需为 Microsoft 工作组工作分配保留单独的映射列表。
 - **Exchange online**：在 Microsoft 365 组织中的[exchange online](https://docs.microsoft.com/Exchange/exchange-online)上托管的所有邮箱都符合扫描条件。 与通信合规性策略条件匹配的电子邮件和附件可立即用于监视和监控报告。 Exchange Online 现在是一个可选的源通道，并且在通信合规性策略中不再需要。
 - **Skype For Business online**：通信合规性策略支持在[Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中扫描聊天通信和关联的附件。
 - **第三方来源**：您可以从[第三方来源](archiving-third-party-data.md)扫描邮件，以获取在 Microsoft 365 组织中导入到邮箱中的数据。 通信合规性支持与几个流行平台（包括即时 Bloomberg、Facebook、Twitter 和其他平台）的连接。
@@ -111,6 +111,9 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 ### <a name="configure"></a>配置
 
 在此工作流步骤中，您可以确定合规性要求并配置适用的通信合规性策略。 策略模板是一种很好的方法，不仅可以快速配置新的符合性策略，还可以在要求发生变化时快速修改和更新策略。 例如，在为组织中的所有用户配置策略之前，您可能需要为一小部分用户在通信中快速测试针对冒犯性语言和反骚扰的策略。
+
+> [!Important]
+> 默认情况下，全局管理员不具有对通信合规性功能的访问权限。 若要启用通信合规性功能的权限，请参阅[使通信合规性在组织中可用](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required)。
 
 您可以从 Microsoft 365 合规性中心的以下策略模板中进行选择：
 

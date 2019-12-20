@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0b4c31408f14bfca45358086678cb2d4e4f7eaae
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4be943b83d1b2286a01731de87dd2b0af34cb322
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860082"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805475"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>澳大利亚政府信息安全注册评估员计划（IRAP）
 
@@ -60,7 +61,7 @@ ISM 使用的风险管理框架是从[国家标准和技术协会（NIST）特�
 
 Microsoft 的服务的 IRAP 评估有助于向政府及其合作伙伴的公共部门客户提供对受保护的处理、存储和传输实施适当且有效的安全控制和低于保密信息。 这包括澳大利亚的大部分政府、医疗保健和教育数据。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 和 Dynamics](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

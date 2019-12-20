@@ -3,6 +3,7 @@ title: 在 Office 365 高级电子数据展示中查看流程模块结果
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: '了解如何查找在 Office 365 高级电子数据展示中运行的进程模块的结果，包括任务状态和过程摘要。  '
-ms.openlocfilehash: 4bbdbf68f71e3459ff2ddcd8ba3fb33e52f16825
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: decfd181354a51054f2ab33870b281d91783cf50
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075481"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802177"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中查看流程模块结果
 

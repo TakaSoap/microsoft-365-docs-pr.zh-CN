@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 30509260e83f1aaa59c57365357e18a3f12097c4
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4df4d225658c03433384ca85e5e9d15eed5f1ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859722"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804815"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>美国内部收入服务出版物1075
 
@@ -42,7 +43,7 @@ Microsoft Azure 政府和[Microsoft Office 365 美国政府](https://products.of
 
 了解 IRS 1075 在 Microsoft 云上的优势：[下载 irs 1075 backgrounder](https://aka.ms/irs1075-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 基于 NIST 指南（低、中和高）的三个影响级别授予 FedRAMP 授权。 这些等级对组织中可能存在的机密性、完整性或可用性的影响（低（有限影响）、中型（严重不利影响）和高（严重或灾难性影响）造成的影响。
 

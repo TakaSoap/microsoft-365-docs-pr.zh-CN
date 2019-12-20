@@ -1,7 +1,7 @@
 ---
 title: 转到 Office 365 安全与合规中心
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: 您必须具有正确的权限，然后才能使用安全 & 合规性中心。 必须为你的工作或学校帐户分配 Office 365 全局管理员角色，或将其分配给全局管理员的一个或多个安全 & 合规性中心角色组。
-ms.openlocfilehash: 357b9c494c9b6441d801932ed2ca313c8780db68
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7dc7afb00750586b34921cce347bcf459c2cf474
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074083"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807111"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>转到 Office 365 安全与合规中心
 

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 12af7c84a922e3db0b7d234dce6f4095ba062a64
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7e5d72b6a8992b8db91820c04b451979b474aeb9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860032"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805415"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>国内安全系统的委员会说明否。 1253（CNSSI 1253）
 
@@ -36,7 +37,7 @@ Azure 政府目前拥有 FedRAMP 高临时授权，以供联合授权委员会�
   
 Azure 政府与苛刻的 CNSSI 1253 要求的合规性意味着，Azure 可以为美国的公共事业部门客户提供各种符合 CNSSI 1253 的服务，使他们能够从成本节约和严格的成本方面获益Microsoft 云的安全性。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 

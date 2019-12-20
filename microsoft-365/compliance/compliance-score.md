@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: f604f52fd66664aeb1b61fb873cfe40e8f48115c
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: c13b4e345f5ab9bee7a0edd134aea73c23d84036
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685060"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806655"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合规性分数（预览）
 
@@ -106,18 +106,20 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 预配置的合规性分数模板包括：
 
-1. [ISO 27001：2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018：2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 修订版4](https://go.microsoft.com/fwlink/?linkid=2109075)
-4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-5. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
-6. [云安全联盟（CSA）云控制矩阵（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
+1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+4. [NIST 800-53 修订版4](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [云安全联盟（CSA）云控制矩阵（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [联邦金融机构检查委员会（FFIEC）信息安全手册](https://go.microsoft.com/fwlink/?linkid=2109077) 
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [FedRAMP 中等](https://go.microsoft.com/fwlink/?linkid=2108869)
-10. [欧洲联合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-11. [加利福尼亚消费者隐私法案（CCPA）-预览](https://go.microsoft.com/fwlink/?linkid=2108871)
-12. [Microsoft 365 数据保护基准](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP 中等](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [欧洲联合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [加利福尼亚州消费者隐私法案（CCPA）](https://go.microsoft.com/fwlink/?linkid=2108871) （预览）
+13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳大利亚政府版 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （预览）
+14. [Microsoft 365 数据保护基准](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 > [!NOTE]
 > 在公共预览过程中，转到合规性管理器以创建和管理模板。
