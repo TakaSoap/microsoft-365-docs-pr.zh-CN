@@ -9,53 +9,53 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
 description: 您必须启用 ClickOnce 支持，才能使用 Microsoft Edge 在安全与合规中心中导出内容搜索和电子数据展示中的搜索结果。
-ms.openlocfilehash: 75595f45a1369eb732c2249258af21edced86890
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: f3e0442fe349aa3364594e07873b229f3205fb5e
+ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676836"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39891123"
 ---
-# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a><span data-ttu-id="2bcd1-103">在 Microsoft Edge 中使用 Office 365 电子数据展示导出工具</span><span class="sxs-lookup"><span data-stu-id="2bcd1-103">Use the Office 365 eDiscovery Export Tool in Microsoft Edge</span></span>
+# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a><span data-ttu-id="befbb-103">在 Microsoft Edge 中使用 Office 365 电子数据展示导出工具</span><span class="sxs-lookup"><span data-stu-id="befbb-103">Use the Office 365 eDiscovery Export Tool in Microsoft Edge</span></span>
 
-<span data-ttu-id="2bcd1-104">由于对 Microsoft Edge 的最近更改的结果，默认情况下 ClickOnce 支持不再启用。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-104">As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default.</span></span> <span data-ttu-id="2bcd1-105">若要继续使用 Microsoft Office 365 电子数据展示导出工具下载内容搜索或电子数据展示搜索结果，您需要使用[Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)或在 microsoft Edge 中启用 ClickOnce 支持。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-105">To continue using the Microsoft Office 365 eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in Microsoft Edge.</span></span>
+<span data-ttu-id="befbb-104">由于对 Microsoft Edge 的最近更改的结果，默认情况下 ClickOnce 支持不再启用。</span><span class="sxs-lookup"><span data-stu-id="befbb-104">As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default.</span></span> <span data-ttu-id="befbb-105">若要继续使用 Microsoft Office 365 电子数据展示导出工具下载内容搜索或电子数据展示搜索结果，您需要使用[Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)或在 microsoft Edge 中启用 ClickOnce 支持。</span><span class="sxs-lookup"><span data-stu-id="befbb-105">To continue using the Microsoft Office 365 eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in Microsoft Edge.</span></span>
 
-## <a name="how-to-enable-clickonce-support-in-microsoft-edge"></a><span data-ttu-id="2bcd1-106">如何在 Microsoft Edge 中启用 ClickOnce 支持</span><span class="sxs-lookup"><span data-stu-id="2bcd1-106">How to enable ClickOnce support in Microsoft Edge</span></span>
+## <a name="how-to-enable-clickonce-support-in-microsoft-edge"></a><span data-ttu-id="befbb-106">如何在 Microsoft Edge 中启用 ClickOnce 支持</span><span class="sxs-lookup"><span data-stu-id="befbb-106">How to enable ClickOnce support in Microsoft Edge</span></span>
 
-1. <span data-ttu-id="2bcd1-107">在 Microsoft Edge 中，导航到 "edge://flags/"，**然后单击 "#edge"**。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-107">In Microsoft Edge, navigate to **edge://flags/#edge-click-once**.</span></span>
+1. <span data-ttu-id="befbb-107">在 Microsoft Edge 中，导航到 "edge://flags/"，**然后单击 "#edge"**。</span><span class="sxs-lookup"><span data-stu-id="befbb-107">In Microsoft Edge, navigate to **edge://flags/#edge-click-once**.</span></span>
 
-2. <span data-ttu-id="2bcd1-108">如果在下拉列表中将现有值设置为 "**默认**" 或 "**禁用**"，请将其更改为 "**启用**"。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-108">If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.</span></span>
+2. <span data-ttu-id="befbb-108">如果在下拉列表中将现有值设置为 "**默认**" 或 "**禁用**"，请将其更改为 "**启用**"。</span><span class="sxs-lookup"><span data-stu-id="befbb-108">If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.</span></span>
     
    ![](media/ClickOnceimage1.png)
 
-3. <span data-ttu-id="2bcd1-109">向下滚动到浏览器窗口的底部，然后单击 "**重新启动**" 以重新启动边缘。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-109">Scroll down to the bottom of the browser window and click **Restart** to restart Edge.</span></span>
+3. <span data-ttu-id="befbb-109">向下滚动到浏览器窗口的底部，然后单击 "**重新启动**" 以重新启动边缘。</span><span class="sxs-lookup"><span data-stu-id="befbb-109">Scroll down to the bottom of the browser window and click **Restart** to restart Edge.</span></span>
 
    ![](media/ClickOnceimage2.png)
 
-<span data-ttu-id="2bcd1-110">**注意：** 组织可以使用组策略禁用 ClickOnce 支持。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-110">**Note:** Organizations can use Group Policy to disable ClickOnce support.</span></span> <span data-ttu-id="2bcd1-111">若要检查是否存在 ClickOnce 支持的组织策略，请导航到**edge://policy**。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-111">To check if there is an organizational policy for ClickOnce support, navigate to **edge://policy**.</span></span> <span data-ttu-id="2bcd1-112">下面的屏幕截图显示在整个组织中启用 ClickOnce。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-112">The following screenshot shows that ClickOnce is enabled across the entire organization.</span></span> <span data-ttu-id="2bcd1-113">如果将此策略值设置为**false**，则需要与组织中的管理员联系。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-113">If this policy value is set to **false**, you will need to contact an admin in your organization.</span></span>
+<span data-ttu-id="befbb-110">**注意：** 组织可以使用组策略禁用 ClickOnce 支持。</span><span class="sxs-lookup"><span data-stu-id="befbb-110">**Note:** Organizations can use Group Policy to disable ClickOnce support.</span></span> <span data-ttu-id="befbb-111">若要检查是否存在 ClickOnce 支持的组织策略，请导航到**edge://policy**。</span><span class="sxs-lookup"><span data-stu-id="befbb-111">To check if there is an organizational policy for ClickOnce support, navigate to **edge://policy**.</span></span> <span data-ttu-id="befbb-112">下面的屏幕截图显示在整个组织中启用 ClickOnce。</span><span class="sxs-lookup"><span data-stu-id="befbb-112">The following screenshot shows that ClickOnce is enabled across the entire organization.</span></span> <span data-ttu-id="befbb-113">如果将此策略值设置为**false**，则需要与组织中的管理员联系。</span><span class="sxs-lookup"><span data-stu-id="befbb-113">If this policy value is set to **false**, you will need to contact an admin in your organization.</span></span>
 
 ![](media/ClickOnceimage3.png)
 
-## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a><span data-ttu-id="2bcd1-114">安装和运行 Office 365 电子数据展示导出工具</span><span class="sxs-lookup"><span data-stu-id="2bcd1-114">Install and run the Office 365 eDiscovery Export Tool</span></span>
+## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a><span data-ttu-id="befbb-114">安装和运行 Office 365 电子数据展示导出工具</span><span class="sxs-lookup"><span data-stu-id="befbb-114">Install and run the Office 365 eDiscovery Export Tool</span></span>
 
-1. <span data-ttu-id="2bcd1-115">单击 "在内容搜索中导出" 的飞出页面或电子数据展示事例中的 "**下载结果**"。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-115">Click **Download results** on the flyout page of an export in Content Search or an eDiscovery case.</span></span>
+1. <span data-ttu-id="befbb-115">单击 "在内容搜索中导出" 的飞出页面或电子数据展示事例中的 "**下载结果**"。</span><span class="sxs-lookup"><span data-stu-id="befbb-115">Click **Download results** on the flyout page of an export in Content Search or an eDiscovery case.</span></span>
 
    ![单击弹出页面上的 "下载结果" 以下载搜索结果](media/ClickOnceExport1.png)
 
-2. <span data-ttu-id="2bcd1-117">系统将提示您确认启动该工具，请单击 "**打开**"。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-117">You will be prompted with a confirmation to launch the tool, Click **Open**.</span></span>
+2. <span data-ttu-id="befbb-117">系统将提示您确认启动该工具，请单击 "**打开**"。</span><span class="sxs-lookup"><span data-stu-id="befbb-117">You will be prompted with a confirmation to launch the tool, Click **Open**.</span></span>
 
    ![单击 "打开" 以启动电子数据展示导出工具](media/ClickOnceimage4.png)
 
-   <span data-ttu-id="2bcd1-119">如果未安装 Microsoft Office 365 电子数据展示导出工具，则系统会提示您提供安全警告，</span><span class="sxs-lookup"><span data-stu-id="2bcd1-119">If the Microsoft Office 365 eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning,</span></span> 
+   <span data-ttu-id="befbb-119">如果未安装 Microsoft Office 365 电子数据展示导出工具，则系统会提示您提供安全警告，</span><span class="sxs-lookup"><span data-stu-id="befbb-119">If the Microsoft Office 365 eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning,</span></span> 
 
    ![单击 "安装" 以安装电子数据展示导出工具](media/ClickOnceimage5.png)
 
-3. <span data-ttu-id="2bcd1-121">单击“**安装**”。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-121">Click **Install**.</span></span> <span data-ttu-id="2bcd1-122">安装完成后，"导出" 工具将自动启动。</span><span class="sxs-lookup"><span data-stu-id="2bcd1-122">After it's installed, the export tool will launch automatically.</span></span>
+3. <span data-ttu-id="befbb-121">单击“**安装**”。</span><span class="sxs-lookup"><span data-stu-id="befbb-121">Click **Install**.</span></span> <span data-ttu-id="befbb-122">安装完成后，"导出" 工具将自动启动。</span><span class="sxs-lookup"><span data-stu-id="befbb-122">After it's installed, the export tool will launch automatically.</span></span>
 
-<span data-ttu-id="2bcd1-123">有关详细信息，请参阅下列主题：</span><span class="sxs-lookup"><span data-stu-id="2bcd1-123">For more information, see the following topics:</span></span>
+<span data-ttu-id="befbb-123">有关详细信息，请参阅下列主题：</span><span class="sxs-lookup"><span data-stu-id="befbb-123">For more information, see the following topics:</span></span>
 
-- [<span data-ttu-id="2bcd1-124">导出内容搜索结果</span><span class="sxs-lookup"><span data-stu-id="2bcd1-124">Export Content Search results</span></span>](export-search-results.md)
+- [<span data-ttu-id="befbb-124">导出内容搜索结果</span><span class="sxs-lookup"><span data-stu-id="befbb-124">Export Content Search results</span></span>](export-search-results.md)
 
-- [<span data-ttu-id="2bcd1-125">如何在 Microsoft Edge 中启用实验标志</span><span class="sxs-lookup"><span data-stu-id="2bcd1-125">How to enable experiment flags in Microsoft Edge</span></span>](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [<span data-ttu-id="befbb-125">如何在 Microsoft Edge 中启用实验标志</span><span class="sxs-lookup"><span data-stu-id="befbb-125">How to enable experiment flags in Microsoft Edge</span></span>](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
