@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: e90609c2cb25f78345c7f4da2b7b2811dd104c16
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859402"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804175"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>美国 DoE 10 CFR Part 810
 
@@ -31,7 +32,7 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 
 此外，Azure 政府是一种物理上独立于 Azure 云的美国政府社区云。 它提供了有关美国政府特定的后台筛选要求的其他保证，包括限制对信息和系统的访问，以在 Azure 操作人员中对美国公民进行筛选的特定控件。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - Intune

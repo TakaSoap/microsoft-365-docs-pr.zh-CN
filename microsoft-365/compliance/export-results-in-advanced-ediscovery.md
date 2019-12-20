@@ -3,6 +3,7 @@ title: Office 365 高级电子数据展示中的导出结果
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定义用于从 Office 365 高级电子数据展示中导出结果的选项，包括为导出批处理指定参数的过程。 '
-ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d535c24a3acfeb09f45ff26e0792f852bf7e016
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074830"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805865"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的导出结果
 
@@ -65,7 +66,7 @@ ms.locfileid: "37074830"
     
     - 若要导出添加到现有事例中的新文件的结果，请继续使用当前批处理。 若要在批处理中创建会话，请选择同一批次号码并单击 "**创建导出会话**" 可以使用此选项以增量方式导出与上一批次相同的参数。 
     
-    - 若要导出到新批次， **** ![请单击 "](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击“确定”****。
+    - 若要导出到新批次， **** ![请单击 "](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击 **“确定”**。
     
     - 若要编辑批次名称或说明，请在 "**导出批次**" **** ![中选择名称](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，单击 "编辑编辑图标"，然后修改字段。
     
@@ -112,7 +113,7 @@ ms.locfileid: "37074830"
   
    - 在 "**查看字段设置**" 下的 "**选择方案**" 下拉列表中，选择评审的方案和范围。 将根据您的选择显示设置。
     
-      - **查看所有**（默认值）：默认情况下，选择所有电子邮件、附件和文档。 
+      - **全部检查**（默认）：默认情况下，选择所有电子邮件、附件和文档。 
     
       - **查看集合中的所有唯一内容**： Inclusives 和唯一的包含副本、电子邮件集级别中的唯一附件以及每组完全相同的代表。
     
@@ -120,7 +121,7 @@ ms.locfileid: "37074830"
     
       - **查看所有独特的内容和相关系列文件**： Inclusives、电子邮件集级别中的唯一附件、每组完全相同的代表、展开以包含 "家庭文件"。
     
-      - **自定义**（允许您定义对话框中的选项）：默认设置是保留当前选择并启用所有对话框选项，以允许其选择。 如果选择此选项，则可以自定义电子邮件、文档、附件和杂项的设置。
+      - **自定义**（允许您在对话框中定义选项）：默认设置是保留当前选择并启用所有对话框选项，以允许其选择。 如果选择此选项，则可以自定义电子邮件、文档、附件和杂项的设置。
     
     - 在 "**电子邮件**" 下，选择要导出的电子邮件。
     
@@ -187,7 +188,7 @@ ms.locfileid: "37074830"
 |输入或本机文件  <br/> |文件文件夹  <br/> |包含导出文件的本机和输入文件的文件夹。  <br/> |
 |导出列表  <br/> |.xlsx  <br/> |以 .xlsx 格式导出的文件元数据。 文件中的字段根据模板用户选择导出的。 如果需要，将创建多个文件，每个文件包含 100 150K 行。 如果某个值包含的字符数多于 Excel 单元格可以包含的字符数（当前限制为32767个字符），则值将被修整为允许的最大长度。 如果某个值被修整，则该单元格的背景色为红色，表示这对用户。如果将电子邮件发送到大型通讯组，则 "电子邮件参与者" 是可以超过长度限制的字段的示例。 有关输出字段的详细信息，请参阅[导出报告字段](export-report-fields-in-advanced-ediscovery.md)。  <br/> |
 |加载文件  <br/> |csv  <br/> |以 csv 格式导出的文件元数据，用于加载到不同的应用程序。 文件中的字段根据模板用户选择导出的。  <br/> |
-|成功指示器  <br/> |readme.txt  <br/> |仅在导出到第三方 Azure blob 时创建。 如果完全导出成功，将创建文件。 如果出现故障或部分成功，将不会创建文件。 文件将在根文件夹中创建，允许在不同的导出批处理/会话状态上进行自动跟踪。 这是一个空文件。 其名称为： TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime。  <br/> |
+|成功指示器  <br/> |readme.txt  <br/> |仅在导出到第三方 Azure blob 时创建。 如果完全导出成功，将创建文件。 如果出现故障或部分成功，将不会创建文件。 文件将在根文件夹中创建，允许在不同的导出批处理/会话状态上进行自动跟踪。 这是一个空文件。 其名称为： TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime .txt。  <br/> |
    
 ## <a name="see-also"></a>另请参阅
 

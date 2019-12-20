@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 2722c5df4b96f28a449057abae353350b036a13b
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 1f0ed98386a33b84d109fb94093b3d03cefc127b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859332"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803995"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>新西兰政府云计算安全性和隐私注意事项
 
@@ -36,7 +37,7 @@ Microsoft 和新西兰政府云计算安全性和隐私注意事项
 
 了解如何通过我们的 Azure 安全性和合规性蓝图加快你的新西兰 CC 框架部署：[将 Azure 响应下载到 NZ CC framework](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -62,7 +63,7 @@ GCIO 要求（公共和非公共服务部门、20地区健康委员会和七个 
 - [新西兰政府 ICT 策略2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [对云计算的新西兰政府要求](https://aka.ms/NZ-Cloud-Requirements)
 - [云计算：信息安全和隐私注意事项（ISPC）](https://aka.ms/NZ-Cloud-Computing-Considerations)
-- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Office 365： SEEMail 集成和参考体系结构](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)（有关云服务采用的其他 Microsoft NZ 指南）
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

@@ -3,6 +3,7 @@ title: 定义问题并在 Office 365 高级电子数据展示中分配用户
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: 了解如何在 Office 365 高级电子数据展示中添加或编辑问题，包括向用户分配用户或删除电子数据展示事例的问题。
-ms.openlocfilehash: a7dad3cce54a3162cedf3c14e521f5e8fe966acf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a56942eec8f43ba9fd6175807437e71701c29e39
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071305"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806095"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>定义问题并在 Office 365 高级电子数据展示中分配用户
 

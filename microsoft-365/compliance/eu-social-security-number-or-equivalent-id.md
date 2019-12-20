@@ -1,7 +1,7 @@
 ---
 title: 欧盟社会安全号码或等效 ID
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟社会保险号码或等效 ID 敏感信息类型时，将会查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0666818dc892070f5c2f0c34abd8ca33d1253e33
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074865"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805925"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会安全号码或等效 ID
 
@@ -608,7 +608,7 @@ magyar áfa szám
     
   - 序列号中的最后一个数字指示在为 "男" 分配一个奇数号码时的性别，以及一个 "女" 的偶数号码。
     
-  - 最多1990，将序列号 corresponded 分配给在其中，号码持有者出生或（如果在1947之前出生）的县（根据纳税记录，在年1月 1947 1 日，使用特殊代码（通常为第七个数字）的特殊代码（通常为9号）immigrants 
+  - 最多1990，将序列号的分配 corresponded 到在其中，号码持有者出生或（如果在1947之前出生）的县，在此之前/她已经在其居住的地方（如果是在之前），对于 immigrants，使用特殊代码（通常为9的1947第七位数字）。 
     
 - 一个校验位
     

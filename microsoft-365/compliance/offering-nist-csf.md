@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8ed1da925da40b439d449638887808aa9830d6e0
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 0fbe175d16a7b588e8c0cb3e7b5457459c314bdc
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859354"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804035"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
@@ -37,7 +38,7 @@ NIST Cybersecurity Framework （CSF）是一个自愿的框架，其中包含用
 - [下载 Azure 安全性和合规性蓝图-NIST CSF 风险评估清单](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [了解有关合规性管理器中的适用于 Office 365 的 NIST CSF 评估的详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [适用于政府的 Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -101,7 +102,7 @@ NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online
 - [改进关键基础结构的框架 Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [总统执行官在加强 Cybersecurity 的联邦网络和关键基础结构方面的顺序](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [在线服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息

@@ -3,6 +3,7 @@ title: 跟踪 Office 365 高级电子数据展示中的相关性分析
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: '了解如何查看和解释 Office 365 高级电子数据展示中的案例问题的相关性培训状态和结果。  '
-ms.openlocfilehash: 1018b414d0192491feebfbec25d865d4463fa26a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b5d8777cdf54741f585fc6af587e9220a8daf0c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075274"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802645"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>跟踪 Office 365 高级电子数据展示中的相关性分析
 
@@ -130,7 +131,7 @@ ms.locfileid: "37075274"
  **培训进度图**：显示与 F 度量值相比，在大量相关培训周期后的相关性培训稳定性程度。 当我们在图形中从左到右移动时，置信区间会缩小，并在高级电子数据展示优化时，与 F 度量标准一起使用，以确定稳定性。
   
 > [!NOTE]
-> 相关性使用 F2 的 F 度量标准，在这种情况下，回调的精确度应为精度的两倍。 对于高丰富的情况（超过 25%），相关性使用 F1 （1:1 比率）。 可以在**关联设置** \> "**高级设置**" 中配置 F 度量比率。 
+> 相关性使用 F2 的 F 度量标准，在这种情况下，回调的精确度应为精度的两倍。 对于高丰富的情况（超过25%），相关性使用 F1 （1:1 比率）。 可以在**关联设置** \> "**高级设置**" 中配置 F 度量比率。 
   
 ### <a name="batch-calculation-results"></a>批量计算结果
 

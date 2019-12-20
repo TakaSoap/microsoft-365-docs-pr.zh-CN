@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 39ce4518e12b4446b339cbf7341a354bf5bd8876
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633581"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805965"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -35,15 +35,15 @@ ms.locfileid: "39633581"
 
 - "元数据" 字段（在 "说明"**列**中）的说明。
 
-| 字段名 | 可搜索字段名称 | 导出的域名称 | 显示字段名称 | 说明 |
-| :- |  :- |  :- |  :- |  :- |
+|字段名|可搜索字段名称|导出的域名称|显示字段名称|说明|
+|:-|:-|:-|:-|:-|
 | 附件内容 Id | AttachmentContentId |  | 附件内容 Id | 项目的附件内容 Id。 |
 | 附件名称 | AttachmentNames | Attachment_Names | 附件名称 | 附件的名称列表。 |
 | 律师客户端权限分数 | AttorneyClientPrivilegeScore |  | 律师客户端权限分数 | 律师-客户端权限模型内容分数。 |
 | 作者 | 作者 | Doc_authors | 作者 | 来自文档元数据的作者。 |
 | BCC | Bcc | Email_bcc | BCC | 邮件类型的 "密件抄送" 字段。  格式为**DisplayName \<SMTPAddress>**。 |
 | CC | Cc | Email_cc | CC | 邮件类型的 "抄送" 字段。  格式为**DisplayName \<SMTPAddress>**。 |
-| 合规性标签 | ComplianceLabels | Compliance_labels | 合规性标签 | 在 Office 365 中应用的合规性标签。 |
+| 合规性标签 | ComplianceLabels | Compliance_labels | 合规性标签 |将[保留标签](labels.md)应用于 Office 365 中的内容。 |
 | 复合路径 | CompoundPath | Compound_path | 复合路径 | 描述项目来源的可读路径。 |
 | 内容 | 内容 |  |  | 提取的项的文本。 |
 | 对话正文 | 对话正文 |  | 对话正文 | 项目的对话正文。 |

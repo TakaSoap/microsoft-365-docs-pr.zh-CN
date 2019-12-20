@@ -3,6 +3,7 @@ title: 在 Office 365 高级电子数据展示中运行流程模块
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: '了解使用 office 365 高级电子数据展示为分析准备 Office 365 数据的大小写文件的指南。  '
-ms.openlocfilehash: 75b6b23a913a6aa8b732501b1c52afb55b47e51e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f96b7670a3886b2bfe01801ea76061bea4a37d14
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075372"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802905"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中运行流程模块
 
@@ -47,7 +48,7 @@ ms.locfileid: "37075372"
     
 - **文件路径**：高级电子数据展示可以加载最长为400个字符的路径长度的文件。
     
-- **文本提取**：从本机文件中提取文本时，除了常规文本之外，还会提取以下内容：隐藏文本（excel 和 .doc）、隐藏列（Excel）、跟踪更改（.doc）、演讲者备注（.ppt）、嵌入对象（例如，.Ppt 中的 Excel 对象）。 可以在文本编辑器中查看这些内容。
+- **文本提取**：从本机文件中提取文本时，除了常规文本之外，还会提取以下内容：隐藏文本（excel 和 .doc）、隐藏列（excel）、跟踪更改（.doc）、演讲者备注（.ppt）、嵌入对象（例如，.ppt 中的 Excel 对象）。 可以在文本编辑器中查看这些内容。
     
 - **Ignore Text**：此可选功能是在运行进程之后和分析前定义的。 应谨慎使用 "忽略" 文本，因为它的使用可能会降低文件分析的性能。
     

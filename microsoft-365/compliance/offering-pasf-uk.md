@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 476d1b63cfba4c3c9d31fd38c4ad526ca167f7d7
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859292"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803985"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>由警察确保的安全设施（PASF）英国
 
@@ -34,7 +35,7 @@ Microsoft 采用全面的纵深防御方法来实现安全性。 我们的英国
 
 这些认证由我们为保护数据中心的物理安全所采取的措施来提供支持。 我们采用一种分层方法，该方法首先介绍如何设计、构建和操作数据中心，以严格控制对客户数据存储区域的物理访问。 Microsoft 托管的数据中心具有广泛的保护级别，需要在设施的外围、建筑物的外围、建筑物内部以及数据中心地板上进行访问审批。 这降低了未授权用户获取对数据和数据中心资源的物理访问的风险。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -59,7 +60,7 @@ NPIRMT 每年将审核一个 Azure 数据中心，每年在英国对四个 Micro
 - [国家监察资格鉴定策略](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure 设施、本地和物理安全性](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft 和 ISO/IEC 27001:2013 ISM 标准](offering-iso-27001.md)
-- [Microsoft 联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft 在线服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息

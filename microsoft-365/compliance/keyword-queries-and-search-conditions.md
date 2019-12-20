@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: c4135e52f88f72cde171cbc6c897359cd8e13e05
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 5c5aafebf0dabfd43487c0c410088fe2a50aef35
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699682"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808497"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -50,7 +50,7 @@ ms.locfileid: "38699682"
   
 |**属性**|**属性描述**|**示例**|**示例返回的搜索结果**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|电子邮件附件的文件名。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|含有名为 annualreport.ppt 的附加文件的邮件。在第二个示例中，使用通配符返回附件名中带有单词“annual”的邮件。|
+|AttachmentNames|电子邮件附件的文件名。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames： .pptx|含有名称为 annualreport.ppt 的附件的邮件。 在第二个示例中，使用通配符返回附件名中带有单词"annual"的邮件。 第三个示例返回具有 .pptx 文件扩展名的所有附件。|
 |Bcc|电子邮件的 "密件抄送" 字段。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有示例都返回"密件抄送"字段中包含"Pilar Pinilla"的邮件。|
 |Category| 搜索类别。 用户可以使用 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）定义类别。 可能的值是：  <br/><br/>  蓝色  <br/>  绿色  <br/>  橙色  <br/>  紫色  <br/>  红色  <br/>  黄色|`category:"Red Category"`|在源邮箱中已指定红色类别的邮件。|
 |抄送|电子邮件的 "抄送" 字段。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在这两个示例中，在 "抄送" 字段中指定了包含 Pilar Pinilla 的邮件。|
@@ -93,7 +93,7 @@ ms.locfileid: "38699682"
 |ModifiedBy|上次更改项目的人员。 请务必对此属性使用用户的显示名称。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
 |Path|SharePoint 或 OneDrive for Business 网站中特定网站的路径（URL）。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目，您必须添加/\*到指定网站的 URL;例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用该`Path`属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站（和网站中的文件夹）中的文档，其中包含文件名中的 "保密" 一词。|
 |SharedWithUsersOWSUser|与指定用户共享并显示在用户的 OneDrive for business 网站中的 "**与我共享**" 页上的文档。 这些文档已与组织中的其他人员明确与指定的用户共享。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档将从与指定用户共享文档的人员的原始内容位置导出。 有关详细信息，请参阅[搜索组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都将返回所有已与 Garth Fort 显式共享且显示在 Garth Fort 的 OneDrive for business 帐户中的 "**与我共享**" 页上的内部文档。|
-|站点|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
+|Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
 |标题|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
 |||||
@@ -192,7 +192,7 @@ ms.locfileid: "38699682"
 |发件人/作者|对于电子邮件而言，是指发送邮件的人。 对于文档而言，是指从 Office 文档的作者字段中引用的人员。 你可以键入多个名称，用逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
 |大小（以字节为单位）|对于电子邮件和文档而言，是项目的大小（以字节为单位）。|
 |主题/职务|对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如上文所述，Title 属性是在 Microsoft Office 文档中指定的元数据。 您可以键入多个主题/标题的名称，以逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
-|合规性标记|对于电子邮件和文档，已由用户手动分配的标签策略或标签自动分配给邮件和文档的标签。 标签用于根据标签定义的分类对电子邮件和文档进行分类，并强制执行保留规则。 您可以键入部分标签名称并使用通配符或键入完整的标签名称。 有关详细信息，请参阅[Office 365 中的标签概述](labels.md)。|
+|合规性标签|对于电子邮件和文档，通过标签策略或由用户手动分配的保留标签自动分配给邮件和文档的保留标签。 保留标签用于对电子邮件和文档进行分类，以根据标签定义的设置对电子邮件和文档进行分类和强制实施保留规则。 您可以键入部分保留标签名称，然后使用通配符或键入完整的标签名称。 有关详细信息，请参阅[保留标签概述](labels.md)。|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>邮件属性的条件
@@ -313,7 +313,6 @@ ms.locfileid: "38699682"
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
 #### <a name="example-3"></a>示例 3
-<a name="conditionexamples"> </a>
 
 本示例返回在12/1/2016 和11/30/2016 之间发送的、包含以 "phone" 或 "smartphone" 开头的单词的电子邮件或日历会议。
   

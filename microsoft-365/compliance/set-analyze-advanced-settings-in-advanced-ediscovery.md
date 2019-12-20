@@ -3,6 +3,7 @@ title: 在 Office 365 高级电子数据展示中设置分析高级设置
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '了解如何为 Office 365 高级电子数据展示中的分析过程配置高级设置，包括接近重复的电子邮件线程和主题。 '
-ms.openlocfilehash: 2302d44ae8985f820e1fa0f0428f1c9c5ef762fc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 06ee57542bfdb87b8bea77b3e4271adf02490046
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075932"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802815"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析高级设置
 
@@ -37,7 +38,7 @@ ms.locfileid: "37075932"
     
   - **最大单词数**：单词的最大数目，超过该数目时不会将文件提交到接近重复的分析。
     
-  - **电子邮件相似性**：将两封电子邮件视为相似的最小 resemblance 级别。 值始终等于或大于文档相似性。 默认值为 90%。
+  - **电子邮件相似性**：将两封电子邮件视为相似的最小 resemblance 级别。 值始终等于或大于文档相似性。 默认值为90%。
     
 3. 在 "**主题参数**" 中，选中 "将**数字包含在主题分析**中" 复选框，以在分析期间包含处理主题过程中的数字。 
     

@@ -1,7 +1,7 @@
 ---
 title: 处置评审概述
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留 Microsoft 365 中的内容的保留标签时，可以选择在保留期结束时触发处置评审。
-ms.openlocfilehash: 22079fc92cabc902cd7afee7e187b7e186aa2328
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074127"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806065"
 ---
 # <a name="overview-of-disposition-reviews"></a>处置评审概述
 
@@ -116,7 +116,7 @@ ms.locfileid: "37074127"
   
 - "**挂起处置**" 显示已达到其保留期并需要进行处置评审的项目。 查看每个项目后，决定是否要向其应用不同的保留标签，延长保留期，或将其永久删除。 您可以选择多个项目。
     
-- "已**释放的项目**" 选项卡显示处置审核过程中已批准要删除的处置，且现在正处于永久删除的过程中。 在审阅中应用了不同保留标签或其保留期延长的项目不会显示在此处。
+- "已**释放的项目**" 选项卡显示处置审核过程中已批准要删除的处置，并且现在正处于永久删除或已删除的项目被标记为记录的过程。 在审阅中应用了不同保留标签或其保留期延长的项目不会显示在此处。
 
 ![处置选项卡](media/Retention-Disposition-tabs.png)
     

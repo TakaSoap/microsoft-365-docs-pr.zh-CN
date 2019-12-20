@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以存档 Office 365 中的即时 Bloomberg 数据
+title: 设置连接器以存档 Instant Bloomberg 数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从即时 Bloomberg 聊天工具导入 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 55b0acf6a2643fed4a994604e92e4c0e218da5d9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615602"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807747"
 ---
-# <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>设置连接器以存档 Office 365 中的即时 Bloomberg 数据
+# <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
 在 Office 365 的 Security & 合规性中心中使用本机连接器，以便从 "[即时 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)协作" 工具导入和存档金融 services 聊天数据。 在设置和配置连接器后，它每天连接到组织的 Bloomberg 安全 FTP 站点（SFTP），将聊天消息的内容转换为电子邮件格式，然后将这些项目导入 Office 365 中的邮箱。
 
@@ -73,7 +73,7 @@ ms.locfileid: "39615602"
 
 第一步是获取用于安全命令行管理程序（SSH）和相当出色的隐私（PGP）的公钥副本。 您可以在步骤2中使用这些键来配置 Bloomberg SFTP 站点，以允许连接器（在步骤3中创建）连接到 SFTP 站点，并将 "即时 Bloomberg" 聊天数据传输到 Office 365 邮箱。 您还可以在此步骤中获取 IP 地址，在配置 Bloomberg SFTP 站点时使用此地址。
 
-1. 转到<https://protection.office.com> ，然后单击 "**数据\>调控导入**"，然后单击 "**存档第三方数据**"。
+1. 转到<https://protection.office.com> ，然后单击 "**信息\>调控导入** > **存档第三方数据**"。
 
 2. 在 "**存档第三方数据**" 页上，单击 "**添加一个连接器**"，然后单击 "**即时 Bloomberg**"。
 
@@ -100,7 +100,7 @@ ms.locfileid: "39615602"
 
 最后一步是在安全 & 合规性中心中创建一个即时 Bloomberg 连接器。 连接器使用您提供的信息连接到 Bloomberg SFTP 站点，并将聊天邮件传输到 Office 365 中对应的用户邮箱框中。 
 
-1. 转到<https://protection.office.com> ，然后单击 "**数据\>调控导入**"，然后单击 "**存档第三方数据**"。
+1. 转到<https://protection.office.com> ，然后单击 "**信息\>调控导入** > **存档第三方数据**"。
 
 2. 在 "**存档第三方数据**" 页上，单击 "**添加一个连接器**"，然后单击 "**即时 Bloomberg**"。
 

@@ -1,7 +1,7 @@
 ---
 title: 启用 SharePoint 和 OneDrive 中 Office 文件的灵敏度标签
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: c050aefb9feebbb3ff37a8504ba1b8385fb0ff49
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: c62db0d77ed805c607e79bf25cb9816a554cb6d2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685223"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802825"
 ---
-# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签（公共预览）
+# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
 以前，在对存储在 SharePoint 和 OneDrive 中的 Office 文件应用包含加密的敏感度标签时，该服务无法处理这些文件的内容。 在这些情况下，合著、电子数据丢失、数据丢失防护、搜索、Delve 和其他协作功能不起作用。 此预览启用以下功能：
 
@@ -75,19 +75,24 @@ ms.locfileid: "38685223"
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>为预览准备 SharePoint Online 命令行管理程序
 
-在启用预览之前，请确保您运行的是最新的 SharePoint Online 命令行管理程序。 如果已有最新版本，可以继续并启用预览。
+在启用预览之前，请确保您运行的是 SharePoint Online 命令行管理程序版本16.0.19418.12000 或更高版本。 如果已有最新版本，可以继续并启用预览。
 
-为预览准备 SharePoint Online 命令行管理程序：
+1. 如果已从 PowerShell 库安装了早期版本的 SharePoint Online 命令行管理程序，则可以通过运行以下 cmdlet 来更新模块。
 
-1. 如果已安装早期版本的 SharePoint Online 命令行管理程序，请转到 "**添加或删除程序**" 并卸载 "SharePoint Online 命令行管理程序"。
+    ```PowerShell
+    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
 
-2. 在 web 浏览器中，转到 "下载中心" 页面并[下载最新的 SharePoint Online 命令行管理](https://go.microsoft.com/fwlink/p/?LinkId=255251)程序。
+2. 或者，如果您已从 Microsoft 下载中心安装了早期版本的 SharePoint Online 命令行管理程序，则还可以转到 "**添加或删除程序**"，然后卸载 SharePoint Online 命令行管理程序。
 
-3. 选择您的语言，然后单击 "**下载**"。
+3. 在 web 浏览器中，转到 "下载中心" 页面并[下载最新的 SharePoint Online 命令行管理](https://go.microsoft.com/fwlink/p/?LinkId=255251)程序。
 
-4. 在 x64 和 x86 .msi 文件之间进行选择。 如果运行的是64位版本的 Windows 或 x86 文件（如果运行32位版本），请下载 x64 文件。 如果您不知道，请参阅[我运行的是哪个版本的 Windows 操作系统？](https://support.microsoft.com/help/13443/windows-which-operating-system)。
+4. 选择您的语言，然后单击 "**下载**"。
 
-5. 下载文件后，运行文件并按照安装向导中的步骤操作。
+5. 在 x64 和 x86 .msi 文件之间进行选择。 如果运行的是64位版本的 Windows 或 x86 文件（如果运行32位版本），请下载 x64 文件。 如果您不知道，请参阅[我运行的是哪个版本的 Windows 操作系统？](https://support.microsoft.com/help/13443/windows-which-operating-system)
+
+
+6. 下载文件后，运行文件并按照安装向导中的步骤操作。
 
 ## <a name="enable-the-preview-by-using-microsoft-powershell-opt-in"></a>使用 Microsoft PowerShell 启用预览（自愿加入）
 

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 115b0499d481b29361c74db1dfa0481933616405
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859412"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804185"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消费者隐私法案 (CCPA)
 
@@ -36,7 +37,7 @@ CCPA 将于 2020 年 1 月 1 日生效。 但是，由加利福尼亚律师常�
 
 在 OST 中设置时，Microsoft 符合其提供的在线服务的所有法律和法规，其中包括 CCPA。  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Azure Dev Ops

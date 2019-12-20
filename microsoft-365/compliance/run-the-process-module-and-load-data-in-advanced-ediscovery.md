@@ -3,6 +3,7 @@ title: 在 Office 365 高级电子数据展示中运行 Process module 和 load 
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: '了解如何使用 Office 365 安全&amp;合规中心访问 Office 365 高级电子数据展示，并运行 Process module for a case。  '
-ms.openlocfilehash: 89a4be9bf56f35d9d9cbd88494bcae5a5a10fe7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ac0b36f17b891f28b4d34ba838551da2de778b17
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075370"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802925"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中运行 Process module 和 load data
 
@@ -50,7 +51,7 @@ ms.locfileid: "37075370"
   
 5. 如果要将容器添加为 seed 文件或预先加标签的文件，请单击 "**高级设置"。** 
     
-    使用种子文件加快丰富程度较低的问题（通常为 2% 或更少）的培训。 对于种子文件，建议您选择各种明显相关的文件，并在每个问题中处理大约20-50 种子（种子文件太多可能会扭曲相关性结果）。 应由将对问题进行培训的同一人审阅种子文件。
+    使用种子文件加快丰富程度较低的问题（通常为2% 或更少）的培训。 对于种子文件，建议您选择各种明显相关的文件，并在每个问题中处理大约20-50 种子（种子文件太多可能会扭曲相关性结果）。 应由将对问题进行培训的同一人审阅种子文件。
     
     使用预先加标签的文件以自动进行相关性培训。 应标记至少1500个文件，并将与非相关文件相关的比例与添加到相关性的集合中的比例保持一致。 应手动标记这些文件，并且您应该自信标记质量。
     

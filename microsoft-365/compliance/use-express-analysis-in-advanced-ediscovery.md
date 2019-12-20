@@ -3,6 +3,7 @@ title: 在 Office 365 高级电子数据展示中使用快速分析
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: 了解如何运行 Office 365 高级电子数据展示的快速分析模式
-ms.openlocfilehash: 04b48db445f114fd6138b099703e826c6b4ce7c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f1b26e40c2ed3a3b468ada0d501fcafd20fefe2c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075230"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802307"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中使用快速分析
 
@@ -101,7 +102,7 @@ ms.locfileid: "37075230"
     
   - 若要导出添加到现有事例中的新文件的结果，请继续使用当前批处理。 若要在批处理中创建会话，请选择同一批次号码并单击 "**创建导出会话**" 可以使用此选项以增量方式导出与上一批次相同的参数。 
     
-  - 若要导出到新批次， **** ![请单击 "](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击“确定”****。
+  - 若要导出到新批次， **** ![请单击 "](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击 **“确定”**。
     
   - 若要编辑批次名称或说明，请在 "**导出批次**" **** ![中选择名称](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，单击 "编辑编辑图标"，然后修改字段。
     

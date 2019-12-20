@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果以前的员工返回到您的组织，或者如果雇用新员工来承担 departed 员工的工作职责，则可以在 Office 365 中恢复非活动邮箱的内容。 恢复非活动邮箱时，会将其转换为新邮箱，其中包含非活动邮箱的内容。 '
-ms.openlocfilehash: 9caa5d8f8c44ee5a916129e7f181532c8c0dd1a2
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6589c8b75e7d17720848ed221e9625c77b867503
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685332"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803709"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>恢复 Office 365 中的非活动邮箱
 
@@ -34,7 +34,7 @@ ms.locfileid: "38685332"
 > [!NOTE]
 > 我们推迟了创建新的就地保留的截止时间，以使邮箱处于非活动状态。 但在将来的某一时刻，你将无法在 Exchange Online 中创建新的就地保留。 在这段时间，仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须使用 Exchange Online PowerShell 来还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     
@@ -45,9 +45,7 @@ ms.locfileid: "38685332"
     ```
 
     使用此命令返回的信息来恢复特定的非活动邮箱。
-    
-- 有关非活动邮箱的详细信息，请参阅[Office 365 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
-    
+
 ## <a name="recover-an-inactive-mailbox"></a>恢复非活动邮箱
 
 将**新邮箱**Cmdlet 与*InactiveMailbox*参数一起使用可恢复非活动邮箱。 
@@ -101,5 +99,5 @@ ms.locfileid: "38685332"
 
     如果不存在 **ExternalDirectoryObjectId** 属性的值，则说明邮箱保留期已过期，您可以通过运行 **New-Mailbox -InactiveMailbox** 命令恢复非活动邮箱。如果存在 **ExternalDirectoryObjectId** 属性的值，则说明软删除邮箱保留期尚未过期，您必须通过还原 Office 365 用户帐户来恢复邮箱。请参阅 [删除或还原用户](https://go.microsoft.com/fwlink/p/?LinkId=279162)。
     
-- **请考虑在恢复非活动邮箱后启用存档邮箱。** 这样，复职用户或新员工就可以将旧邮件移动到存档邮箱。 当保留挂起过期时，作为分配给 Exchange Online 邮箱的默认 Exchange 保留策略的一部分的存档策略将把两年或更早的项目移动到存档邮箱中。 如果未启用存档邮箱，早于两年的项目将保留在用户的主邮箱中。 有关详细信息，请参阅[在 Office 365 安全&amp;合规中心中启用存档邮箱](enable-archive-mailboxes.md)。
+- **请考虑在恢复非活动邮箱后启用存档邮箱。** 这样，复职用户或新员工就可以将旧邮件移动到存档邮箱。 当保留挂起过期时，作为分配给 Exchange Online 邮箱的默认 Exchange 保留策略的一部分的存档策略将把两年或更早的项目移动到存档邮箱中。 如果未启用存档邮箱，早于两年的项目将保留在用户的主邮箱中。 有关详细信息，请参阅[Enable archive 邮箱](enable-archive-mailboxes.md)。
  

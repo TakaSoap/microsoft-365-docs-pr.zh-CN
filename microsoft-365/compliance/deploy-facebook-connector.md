@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中部署用于存档 Facebook 数据的连接器
+title: 部署连接器以存档 Facebook 数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Facebook 商业页面导入和存档到 Office 365。 将此数据导入 Office 365 后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的 Facebook 数据的管理。
-ms.openlocfilehash: 786ff97c558a5618643783de803c742c50185f00
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e1ab281b8a3b684f408f80f86246778a9ee6267d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685214"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806255"
 ---
-# <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>在 Office 365 中部署用于存档 Facebook 数据的连接器
+# <a name="deploy-a-connector-to-archive-facebook-data"></a>部署连接器以存档 Facebook 数据
 
 本文包含了部署使用 Office 365 导入服务将数据从 Facebook 商业页面导入 Office 365 的连接器的分步过程。 有关此过程的简要概述以及部署 Facebook 连接器所需的先决条件列表，请参阅[使用示例连接器存档 Office 365 中的 Facebook 数据（预览）](archive-facebook-data-with-sample-connector.md)。 
 
@@ -232,9 +232,9 @@ ms.locfileid: "38685214"
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步骤7：在安全 & 合规性中心中设置自定义连接器
 
-1. 转到<https://protection.office.com> ，然后单击 "**数据\>调控\>导入存档第三方数据**"。
+1. 转到<https://protection.office.com> ，然后单击 "**信息\>调控\>导入存档第三方数据**"。
 
-   ![转到 "安全与合规中心"，然后单击 "数据管理" > 导入 > 存档第三方数据](media/FBCimage44.png)
+   ![转到 "安全与合规中心"，然后单击 "信息管理" > 导入 > 存档第三方数据](media/FBCimage44.png)
 
 2.  单击 "**添加连接器**"，然后单击 " **Facebook 页面**"。
 

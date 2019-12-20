@@ -3,6 +3,7 @@ title: 了解 Office 365 高级电子数据展示中的文档相似性
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: '查看 "文档相似性" 值（两个文件的最小 resemblance 级别，将其视为邻近的重复项）在 Office 365 高级电子数据展示中起作用。 '
-ms.openlocfilehash: 78e4ab7d39600522370cd91f3d6561ff2fbdcf60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 29a9eef44f8eb46f53099f457c8cc86afe64dea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075255"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802635"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>了解 Office 365 高级电子数据展示中的文档相似性
 
@@ -35,15 +36,15 @@ ms.locfileid: "37075255"
   
 在接近重复（ND）集内，可能存在低于相似性阈值的 resemblance 级别的文档。 对于要加入 ND 集的文档，在 ND 集中必须至少有一个文档的 resemblance 级别超过相似性。 
   
-例如，假设相似性设置为 80%，文档 F1 类似于 85% 级别的文档 F2，文档 F2 类似于文档 F3 的级别为 90%。 
+例如，假设相似性设置为80%，文档 F1 类似于85% 级别的文档 F2，文档 F2 类似于文档 F3 的级别为90%。 
   
-但是，文档 F1 在仅为 70% 的级别（低于阈值）可能会类似于文档 F3。 尽管如此，在此示例中，文档 F1、F2 和 F3 都显示在一对等设置中。 同样，使用相似性值 80%，我们可能创建了两个集合，EquiSet-1 和 EquiSet。 EquiSet-1 包含文档 E1 和 E2。 Equiset-2 包含文档 F1、F2 和 F3。 
+但是，文档 F1 在仅为70% 的级别（低于阈值）可能会类似于文档 F3。 尽管如此，在此示例中，文档 F1、F2 和 F3 都显示在一对等设置中。 同样，使用相似性值80%，我们可能创建了两个集合，EquiSet-1 和 EquiSet。 EquiSet-1 包含文档 E1 和 E2。 Equiset-2 包含文档 F1、F2 和 F3。 
   
 Resemblance 的级别如下所示：
   
 ![文档相似性](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
-假定现在已插入另一个文档 X1。 X1 和 E3 之间的 resemblance 为 87%。 同样，X1 和 F1 之间的 resemblance 为 92%。 因此，EquiSet-1、EquiSet-2 和 X1 现已组合到一个 ND 集中。
+假定现在已插入另一个文档 X1。 X1 和 E3 之间的 resemblance 为87%。 同样，X1 和 F1 之间的 resemblance 为92%。 因此，EquiSet-1、EquiSet-2 和 X1 现已组合到一个 ND 集中。
   
 ![文档相似性](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   

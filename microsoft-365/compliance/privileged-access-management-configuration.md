@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关在 Office 365 中配置特权访问管理的详细信息
-ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5b7bf33f41bc722c557f2b515c5ab027bd401a2a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075631"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803759"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中配置特权访问管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "37075631"
 
 - [步骤1：创建审批者的组](privileged-access-management-configuration.md#step1)
 
-    在开始使用权限访问之前，请确定哪些用户需要获得对提升的权限和特权的任务的传入请求的审批授权。 作为审批者组的一部分的任何用户都可以批准访问请求。 这是通过在 Office 365 中创建启用邮件的安全组来启用的。
+    在开始使用权限访问之前，请确定哪些用户需要获得对提升的权限和特权的任务的传入请求的审批授权。 作为审批者组的一部分的任何用户都可以批准访问请求。 通过在 Office 365 中创建已启用邮件的安全组来启用此组。
 
 - [步骤2：启用特权访问](privileged-access-management-configuration.md#step2)
 
@@ -52,7 +52,7 @@ ms.locfileid: "37075631"
 授予批准后，请求用户可以执行预期的任务，而特权访问将代表用户授权和执行任务。 审批在请求的持续时间（默认持续时间为4小时）内保持有效，在此期间，请求者可以多次执行预期任务。 将记录所有此类执行情况，并提供安全和合规性审核。 
 
 > [!NOTE]
-> 如果要使用 Exchange 管理 PowerShell 启用和配置特权访问，请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 Exchange online Powershell 与 Office 365 连接到 exchange online powershell 中的步骤操作。凭据. 您无需为 Office 365 组织启用多重身份验证，即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。 使用多重身份验证进行连接将创建一个 OAuth 令牌，该令牌由用于对您的请求进行签名的特权访问使用。
+> 如果要使用 Exchange 管理 PowerShell 启用和配置特权访问，请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 Exchange online Powershell 与 Office 365 凭据连接到 Exchange online powershell 中的步骤操作。 您无需为 Office 365 组织启用多重身份验证，即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。 使用多重身份验证进行连接将创建一个 OAuth 令牌，该令牌由用于对您的请求进行签名的特权访问使用。
 
 <a name="step1"> </a>
 
@@ -78,9 +78,9 @@ ms.locfileid: "37075631"
 
 1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**设置" > 安全 & 隐私** > 权限**访问**。
+2. 在管理中心中，转到 "**设置" > 设置 > 安全性 & 隐私** > 权限**访问**。
 
-3. 启用 "**需要批准以进行特权访问**控制"。
+3. 启用 "**需要批准以获取特权任务**" 控件。
 
 4. 将您在步骤1中创建的审批者组分配为默认的 "**审批者" 组**。
 

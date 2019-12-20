@@ -1,5 +1,5 @@
 ---
-title: 部署连接器以在 Office 365 中存档 Twitter 数据
+title: 部署连接器以存档 Twitter 数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Twitter 数据导入和存档到 Office 365。 将此数据导入 Office 365 后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
-ms.openlocfilehash: fda03e3e489b0ae9c754f2eba18bc60785bb3def
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 87faad6546d70b1e3893e2f5737af189ebb5f77b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685216"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806145"
 ---
-# <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>部署连接器以在 Office 365 中存档 Twitter 数据
+# <a name="deploy-a-connector-to-archive-twitter-data"></a>部署连接器以存档 Twitter 数据
 
 本文包含的分步过程可部署使用 Office 365 导入服务将数据从组织的 Twitter 帐户导入 Office 365 的连接器。 有关此过程的高级概述以及部署 Twitter 连接器所需的先决条件列表，请参阅[使用示例连接器在 Office 365 中存档 Twitter 数据（预览）](archive-twitter-data-with-sample-connector.md)。 
 
@@ -206,7 +206,7 @@ ms.locfileid: "38685216"
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security-and-compliance-center"></a>步骤7：在安全与合规中心中设置自定义连接器
 
-1.  转到<https://protection.office.com> ，然后单击 "**数据\>调控\>导入存档第三方数据**"。
+1.  转到<https://protection.office.com> ，然后单击 "**信息\>调控\>导入存档第三方数据**"。
 
     ![转到安全与合规中心中的 "存档第三方数据" 页](media/TCimage36.png)
 

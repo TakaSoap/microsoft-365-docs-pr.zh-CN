@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a7967a4bd12f98f3654f2b5006568c868a7e134f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859342"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804015"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
@@ -39,7 +40,7 @@ NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准�
 
 处理或存储美国政府 CUI 的任何实体（研究机构、咨询公司、制造承包商）必须遵守 NIST SP 800 –171的严格要求。 此证明意味着 Microsoft 的范围内云服务可以适应希望部署 CUI 工作负荷的客户，并确保 Microsoft 处于完全遵从性。 例如，在信息系统中使用范围内的 Microsoft 云服务处理、存储或传输 "涉及的防御信息" 的所有 DoD 承包商都在其信息系统中满足美国国防部的 DFARS 条款要求遵守安全性NIST SP 800 –171的要求。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)

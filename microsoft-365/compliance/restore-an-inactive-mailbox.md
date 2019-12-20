@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 如果新员工或其他用户需要访问 Office 365 中非活动邮箱的内容，则可以将非活动邮箱的内容还原（或合并）到现有邮箱。
-ms.openlocfilehash: fe71825435dd3dbcc0e1db79591a78ead83218ba
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 8cd8477695523fc6d1f7e8f0a1c939e8700720ba
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685330"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802991"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>还原 Office 365 中的非活动邮箱
 
@@ -31,7 +31,7 @@ ms.locfileid: "38685330"
 
 有关还原和恢复非活动邮箱之间的差异的更多详细信息，请参阅本文中的**详细信息**一节。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须使用 Exchange Online PowerShell 来还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
 
@@ -74,7 +74,7 @@ ms.locfileid: "38685330"
 
 ## <a name="restore-the-archive-from-an-inactive-mailbox"></a>从非活动邮箱还原存档
 
-如果非活动邮箱具有存档邮箱，您还可以将其还原到现有邮箱的存档邮箱。要从非活动邮箱还原存档，必须向用于还原非活动邮箱的命令添加  _SourceIsArchive_ 和  _TargetIsAchive_ 开关。 
+如果非活动邮箱具有存档邮箱，您还可以将其还原到现有邮箱的存档邮箱。要从非活动邮箱还原存档，必须向用于还原非活动邮箱的命令添加  _SourceIsArchive_ 和  _TargetIsAchive_ 开关。
   
 1. 创建包含非活动邮箱的属性的变量。
 
@@ -82,7 +82,7 @@ ms.locfileid: "38685330"
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > 在上一命令中，使用 **DistinguishedName** 或 **ExchangeGUID** 属性的值来标识非活动邮箱。这些属性对于您组织中的每个邮箱都是唯一的，但活动和非活动邮箱可能具有相同的主 SMTP 地址。 
   
 2. 将非活动邮箱的存档（源存档）内容还原到现有邮箱的存档（目标存档）。在此示例中，将源存档的内容复制到目标邮箱的存档中一个名为"非活动邮箱存档"的文件夹。
@@ -93,7 +93,7 @@ ms.locfileid: "38685330"
 
 ## <a name="more-information"></a>详细信息
 
-- **恢复和还原非活动邮箱的主要区别是什么？** 恢复非活动邮箱时，邮箱基本上会转换为一个新邮箱，将保留非活动邮箱的的内容和文件夹结构，并将邮箱链接到新的用户帐户。 恢复后，非活动邮箱不再存在，并且对新邮箱中的内容所做的任何更改都会影响最初保留在非活动邮箱中内容。 相反，还原非活动邮箱时，只是将内容复制到另一个邮箱。 非活动邮箱将保留，并且仍保留非活动状态。 对目标邮箱中的内容所做的任何更改都不会影响非活动邮箱中保留的原始内容。 仍然可以使用安全性 & 合规性中心中的[内容搜索工具](run-a-content-search-in-the-security-and-compliance-center.md)搜索非活动邮箱，可以将其内容还原到另一个邮箱，也可以在以后恢复或删除它。
+- **恢复和还原非活动邮箱的主要区别是什么？** 恢复非活动邮箱时，邮箱基本上会转换为一个新邮箱，将保留非活动邮箱的的内容和文件夹结构，并将邮箱链接到新的用户帐户。 恢复后，非活动邮箱不再存在，并且对新邮箱中的内容所做的任何更改都会影响最初保留在非活动邮箱中内容。 相反，还原非活动邮箱时，只是将内容复制到另一个邮箱。 非活动邮箱将保留，并且仍保留非活动状态。 对目标邮箱中的内容所做的任何更改都不会影响非活动邮箱中保留的原始内容。 仍然可以使用[内容搜索工具](content-search.md)搜索非活动邮箱，可以将其内容还原到另一个邮箱，也可以在以后恢复或删除它。
 
 - **如何查找非活动邮箱？** 要获取您组织中的非活动邮箱的列表，并显示可用于恢复非活动邮箱的信息，可以运行此命令。
 

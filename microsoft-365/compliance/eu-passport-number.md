@@ -1,7 +1,7 @@
 ---
 title: EU 护照号码
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟护照号敏感信息类型时，应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 44ee6e7b46d79772bcd3aec0fd26265f58f6c4c6
-ms.sourcegitcommit: 3fd6d175c1954ce463198e835d1d8f2f91d80d79
+ms.openlocfilehash: 4afcf7b764eb8976e0588464515256f7cb1bdb8d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39662797"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805945"
 ---
 # <a name="eu-passport-number"></a>EU 护照号码
 

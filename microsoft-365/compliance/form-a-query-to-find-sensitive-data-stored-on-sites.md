@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 SharePoint Online 中的数据丢失防护（DLP），您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后，可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
-ms.openlocfilehash: 0cf5d0446d8f12560e8fd7b0948dc5b6ce2bbe0f
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685231"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823644"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -74,7 +74,7 @@ SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性，此属性�
 
 并非所有查询都一样。 下表提供了在 SharePoint 中不能使用 DLP 的查询示例并介绍了原因。
   
-|**不支持的查询**|**原因**|
+|**不支持的查询**|**Reason**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |必须至少添加一个数值。  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule" 不是有效的敏感类型名称。 仅在 DLP 查询中的[敏感信息类型](https://go.microsoft.com/fwlink/?LinkID=509999)中的名称可供使用。  <br/> |
@@ -88,7 +88,7 @@ SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性，此属性�
 
 [敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
   
-[在 Office 365 安全&amp;合规中心中运行内容搜索](run-a-content-search-in-the-security-and-compliance-center.md)
+[运行内容搜索](content-search.md)
   
 [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
   

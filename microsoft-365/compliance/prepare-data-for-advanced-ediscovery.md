@@ -3,6 +3,7 @@ title: 准备用于 Office 365 高级电子数据展示的数据
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: '了解如何使用 Microsoft 365 安全&amp;合规中心来准备 office 365 数据，以便使用 Office 365 高级电子数据展示进行分析。 '
-ms.openlocfilehash: be778acb3356071e9575ed708623a0b94e2b3c7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0429c957035068074a571c97cf430b27f9ad5904
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075351"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803819"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>准备用于 Office 365 高级电子数据展示的数据
 
@@ -29,7 +30,7 @@ ms.locfileid: "37075351"
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步骤1：为高级电子数据展示准备 Office 365 数据
 
-若要使用高级电子数据展示分析数据，可以使用在 Microsoft 365 安全&amp;合规性中心（在 Microsoft 365 安全&amp;合规中心的**内容搜索**页中列出）中运行的内容搜索的结果或与电子数据展示事例相关联的搜索（在安全&amp;合规中心中的**电子数据展示**页面上列出）。 
+若要使用高级电子数据展示分析数据，可以使用在 Microsoft 365 &amp;安全合规性中心（在 Microsoft 365 安全&amp;合规中心的**内容搜索**页中列出）中运行的内容搜索结果或与电子数据展示事例关联的搜索（在安全&amp;合规性中心的**电子数据展示**页中列出）。 
   
 有关在高级电子数据展示中准备搜索结果以供分析的详细步骤，请参阅[Prepare search results For Office 365 Advanced ediscovery](prepare-search-results-for-advanced-ediscovery.md)。
   

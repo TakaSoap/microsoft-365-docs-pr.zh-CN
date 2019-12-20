@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: ae28d96416f46a45c0d271b9c291040c2e9d8b31
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859392"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804125"
 ---
 # <a name="us-export-administration-regulations-ear"></a>美国出口管理条例（EAR）
 
@@ -46,7 +47,7 @@ Microsoft 技术、产品和服务受美国出口管理条例（EAR）的约束�
 - **端到端加密**。 通过对 EAR 中指定的物理存储位置利用端到端加密安全港，Microsoft in 范围内的云服务提供了可帮助防止出口控制风险的加密功能。 它们还为客户提供了多种用于在传输和 rest 中[加密数据的选项](https://aka.ms/Azure-Encryption-Overview)，以及在加密选项之间进行选择的灵活性。
 - **用于防止未经授权的导出的工具和协议**。 加密的使用还有助于防止在 EAR 中出现可能被认为的出口（或被视为重新导出），因为即使非美国人员有权访问加密数据，也不会发现数据在加密时无法读取或理解的情况。因此，不存在受控制数据的 "释放"。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - [Office 365 政府版（GCC-高和 DoD）](https://aka.ms/Office-365-Export-Controls)

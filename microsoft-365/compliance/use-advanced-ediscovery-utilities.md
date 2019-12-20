@@ -3,6 +3,7 @@ title: 使用 Office 365 高级电子数据展示实用程序
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: '了解 Office 365 高级电子数据展示中的实用程序，包括案例日志、清除数据、处理错误、修改相关性和透明度分析。  '
-ms.openlocfilehash: df769ddddd37284da50bc715444f2bf928307706
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fd7ed1afe4b9204665e58b393c79bbb47b7598e3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075253"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802327"
 ---
 # <a name="use-office-365-advanced-ediscovery-utilities"></a>使用 Office 365 高级电子数据展示实用程序
 
