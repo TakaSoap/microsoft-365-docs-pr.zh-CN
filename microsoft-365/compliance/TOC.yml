@@ -203,7 +203,7 @@
           href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: 有关导入 PST 文件的常见问题解答
           href: faqimporting-pst-files-to-office-365.md
-        - name: 在 Office 365 中存档第三方数据
+        - name: 存档第三方数据
           href: archiving-third-party-data.md
           items:
             - name: 使用示例连接器存档 Facebook 数据
@@ -317,8 +317,6 @@
           href: export-search-results.md
         - name: 导出内容搜索报告
           href: export-a-content-search-report.md
-        - name: 在 Microsoft Edge 中使用电子数据展示导出工具
-          href: configure-edge-to-export-search-results.md
         - name: 搜索和删除电子邮件
           href: search-for-and-delete-messages-in-your-organization.md
         - name: 在 Office 365 中搜索本地用户基于云的邮箱
@@ -749,7 +747,6 @@
         - name: 适用于本地 Windows Server 文件共享的 GDPR
           href: gdpr-for-on-premises-file-shares.md
 - name: 法规合规性行动计划
-  href: compliance-solutions-overview.md
   items:
     - name: ISO - 建议行动计划
       href: iso-action-plan.md
@@ -855,7 +852,7 @@
           href: offering-iso-9001.md
         - name: SOC
           href: offering-soc.md
-        - name: WCAG 2.1
+        - name: WCAG
           href: offering-wcag-2-1.md
     - name: 美国政府
       items:
@@ -935,6 +932,8 @@
               href: offering-rbi-irdai-india.md
             - name: SEC 17a-4
               href: offering-sec-17a-4.md
+            - name: SEC 法规 SCI
+              href: offering-sec-reg-sci.md
             - name: SOC
               href: offering-soc.md
             - name: SOX
