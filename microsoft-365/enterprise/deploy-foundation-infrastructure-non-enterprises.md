@@ -3,7 +3,7 @@ title: 适用于非企业组织的 Microsoft 365 企业版基础结构
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,21 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成适用于非企业组织的 Microsoft 365 企业版基础结构的简化部署阶段。
-ms.openlocfilehash: 4006980de5341c53d9c6a2d827613015c000fab0
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: ce673222c08823c99c7e9851fced46a90a72b892
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369573"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802027"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>适用于非企业组织的 Microsoft 365 企业版基础结构
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>适用于非企业组织的 Microsoft 365 企业版基础结构
 
 非企业组织也可以部署 Microsoft 365 企业版，并实现集成式安全基础结构的业务价值，从而实现团队协作并激发创造力。 非企业组织通常具有：
 
 - 少量的本地 IT 基础结构，例如电子邮件和文件服务器以及 Active Directory 域服务 (AD DS) 域，或者根本不存在。
 - 少量的 IT 人员，其中大多数是 IT 通才，而不是特定技术或工作负载（如网络或电子邮件）领域的专家。
 
-Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。 但是，出于某些原因你可能需要使用 Microsoft 365 企业版，例如：
+Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。 但是，你可能出于某些原因需要使用 Microsoft 365 企业版，例如：
 
 - 你的组织需要超过 300 个 Microsoft 365 许可证，而 Microsoft 365 商业版的最大许可证数量为 300 个。
 - 你的组织需要高级生产力、语音、安全性和分析功能，这些功能是 Microsoft 365 商业版所不具备的。
@@ -112,15 +112,15 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 |:------|:-----|
 | 基线策略：要求管理员执行 MFA | 此策略适用于管理员角色，因此不需要指定任何组。 只需要启用此策略。 需要创建和启用所有后续策略。 |
 | 阻止不支持新式身份验证的客户端 | 在策略设置中选择“所有用户”。 |
-| 当登录风险为中或高时需要执行 MFA（需要使用 Microsoft 365 企业版 E5） | 基线 |
-| 当登录风险为低、中或高时需要执行 MFA（需要使用 Microsoft 365 企业版 E5） | 敏感 |
+| 当登录风险为中或高时需要执行 MFA（需使用 Microsoft 365 E5） | 基线 |
+| 无论登录风险是低、中还是高，都需要执行 MFA（需使用 Microsoft 365 E5） | 敏感 |
 | 始终需要进行 MFA | 高度管控 |
 | 需要在 iOS 和 Android 设备上使用经过批准的应用 | 基线、敏感、高度管控 |
 | 需要兼容电脑 | 基线 |
 | 需要兼容电脑以及 iOS 和 Android 设备 | 敏感、高度管控 |
 |||
 
-以下是要创建和启用的 Azure AD Identity Protection（需要使用 Microsoft 365 企业版 E5）用户风险策略。
+以下是要创建和启用的 Azure AD Identity Protection（需使用 Microsoft 365 E5）用户风险策略。
 
 | Azure AD Identity Protection 用户风险策略 | 应用到的组 |
 |:------|:-----|
@@ -144,7 +144,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 ### <a name="monitor-user-access"></a>监视用户访问
 
-如果你具有 Microsoft 365 企业版 E5，则可以使用 Azure AD Identity Protection 来监视和分析用户登录是否存在凭据泄露。 有关详细信息，请参阅[防范凭据泄露](identity-secure-user-sign-ins.md#protect-against-credential-compromise)。
+如果你具有 Microsoft 365 E5，则可使用 Azure AD Identity Protection 来监视和分析用户登录是否存在凭据泄露情况。 有关详细信息，请参阅[防范凭据泄露](identity-secure-user-sign-ins.md#protect-against-credential-compromise)。
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
@@ -178,7 +178,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 ## <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
 
-为确保将 Windows 10 企业版设备集成到 Microsoft 365 企业版的标识和安全基础结构中，可以使用以下选项：
+为确保将 Windows 10 企业版设备集成到 Microsoft 365 企业版的标识和安全基础结构中，可使用以下选项：
 
 - 混合（你具有本地 AD DS 域）
 
@@ -276,7 +276,7 @@ Intune 策略可以强制执行设备合规性和应用保护。 以下是要创
 
 ## <a name="phase-6-information-protection"></a>阶段 6：信息保护
 
-Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不同级别的管理、安全性和保护来区别对待数据分类。 
+Microsoft 365 企业版具有许多信息保护功能，让你能够通过应用不同级别的管理、安全性和保护来区别对待数据分类。 
 
 例如，通常大多数员工与他们所处理文档之间的对应关系都需要特定的基线保护级别。 财务记录、客户数据和你的知识产权需要更高级别的保护。
 
@@ -310,14 +310,14 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 有关详细信息，请参阅 [Microsoft 365 分类类型](infoprotect-configure-classification.md#microsoft-365-classification-types)。
 
-如果你使用具有权限的敏感度标签，则可能必须创建其他 Azure AD 安全组，以定义允许谁对已应用敏感度标签的电子邮件和文档执行哪些操作。 
+如果你使用具有权限的敏感度标签，则可能必须创建其他 Office 365 安全组，以定义允许谁对已应用敏感度标签的电子邮件和文档执行哪些操作。 
 
 例如，你需要创建一个“研发”敏感度标签来保护研发团队的电子邮件和文档。 你确定：
 
 - 研发人员必须具有更改带“研发”敏感度标签文档的权限。
 - 非研发员工只需具有查看带“研发”敏感度标签文档的权限。 
 
-这意味着你需要创建和管理两个附加组：
+这意味着你需要创建和管理两个附加 Office 365 组：
 
 - 研发-全部
 - 研发-查看
@@ -343,7 +343,7 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 ## <a name="onboarding"></a>载入
 
-有了 Microsoft 365 企业版基础结构，你可以轻松载入员工。
+有了 Microsoft 365 企业版基础结构，你就可轻松载入员工。
 
 ### <a name="a-new-windows-10-enterprise-device"></a>新的 Windows 10 企业版设备
 
@@ -369,7 +369,7 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 可向 Microsoft 365 管理中心内的多个 Azure AD 组添加用户帐户。 从用户帐户的属性中，单击“**管理组” > “添加成员身份**”。
 
-如果要使用 PowerShell，请参阅[可下载的 Excel 工作簿](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)，它基于指定的用户帐户和选定的组名称生成 PowerShell 命令。
+如果要使用 PowerShell，请参阅[可下载的 Excel 工作簿](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)，它基于指定的用户帐户和选定的组名称生成 PowerShell 命令。
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>使用仅限云用户帐户的新员工
 
@@ -394,7 +394,7 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
 
 ### <a name="infrastructure-results"></a>基础结构结果
 
-在构建和配置 Microsoft 365 企业版基础结构之后，你应该：
+在构建和配置 Microsoft 365 企业版基础结构之后，你应该会具有：
 
 - 为每个办公室建立了本地 Internet 连接，其具有由使用区域性本地 DNS 服务器的 ISP 提供的足够带宽。
 - 对于混合标识，具有在服务器上运行的 Azure AD Connect，该服务器可将你的本地 AD DS 域与 Azure AD 租户同步。
@@ -403,7 +403,7 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
   - 条件-访问-排除
   - 相应的 AD DS 或 Azure AD 安全组，它们也是“基线”、“敏感”和“高度管控”Azure AD 组的成员 
   - 工作组、部门和区域组
-  - 敏感度标签组（根据需要）
+  - 敏感度标签 Office 365 组（根据需要）
 - Azure AD 登录条件访问策略，它们使用“基线”、“敏感”、“高度管控”和“条件-访问-排除”Azure AD 组。
 - Intune 应用程序和设备合规性策略。
 - 自定义敏感信息类型（根据需要）。
@@ -427,7 +427,7 @@ Microsoft 365 企业版具有许多信息保护功能，允许你通过应用不
    - 已许可
    - 相应的 AD DS 或 Azure AD 安全组，它们也是“基线”、“敏感”和“高度管控”Azure AD 条件访问策略组的成员 
    - 相应的工作组、部门和区域组
-   - 敏感度标签组（根据需要）
+   - 敏感度标签 Office 365 组（根据需要）
 - Windows 10 企业版设备：
    - 已加入 Azure AD 租户（仅限云）或已同时加入 Azure AD 租户和 AD DS 域（混合）。
    - 使用最新的 Windows 10 企业版产品改进和安全增强功能进行自动更新。

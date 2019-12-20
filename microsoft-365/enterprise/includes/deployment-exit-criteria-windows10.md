@@ -71,19 +71,19 @@ Windows Autopilot 配置设备并将其连接到 Azure AD。
 <a name="crit-windows10-step5a"></a>
 ### <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>必需：你正在使用 Windows Defender 防病毒或正在使用你自己的反恶意软件解决方案
 
-已部署 Windows Defender 防病毒或已部署你自己的防病毒解决方案，以保护运行 Windows 10 企业版的设备免受恶意软件的侵害。如果已部署 Windows Defender 防病毒，则已实施报告方法（例如，System Center Configuration Manager 或 Microsoft Intune），以监控防病毒事件和活动。
+已部署 Windows Defender 防病毒软件或已部署你自己的防病毒解决方案来保护运行 Windows 10 企业版的设备免受恶意软件的侵害。如果已部署 Windows Defender 防病毒软件，则已实施报告方法（例如，Microsoft Endpoint Configuration Manager 或 Microsoft Intune）来监控防病毒事件和活动。
 
 如果需要，可在[步骤 5](../windows10-enable-security-features.md#windows10-sec-av) 中进行设置以满足此要求。
 
 <a name="crit-windows10-step5b"></a>
 ### <a name="required-you-are-using-windows-defender-exploit-guard"></a>必需：你正在使用 Windows Defender 攻击防护
 
-已部署 Windows Defender 攻击防护，以保护运行 Windows 10 企业版的设备免受入侵，并已实施报告方法（例如，System Center Configuration Manager 或 Microsoft Intune），以监控入侵事件和活动。
+已部署 Windows Defender 攻击防护来保护运行 Windows 10 企业版的设备免受入侵，并已实施报告方法（例如，Configuration Manager 或 Microsoft Intune）来监控入侵事件和活动。
 
 如果需要，可在[步骤 5](../windows10-enable-security-features.md#windows10-sec-eg) 中进行设置以满足此要求。
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必需：你正在使用 Microsoft Defender 高级威胁防护（仅限 Microsoft 365 企业版 E5）
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-e5-only"></a>必需：你正在使用 Microsoft Defender 高级威胁防护（仅限 Microsoft 365 E5）
 
 已部署 Microsoft Defender 高级威胁防护 (ATP)，以针对运行 Windows 10 企业版的网络和设备检测、调查和响应高级威胁。 
 

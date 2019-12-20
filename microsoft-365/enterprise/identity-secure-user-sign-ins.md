@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你可以让用户更安全地登录到 Windows 设备和 Microsoft 365。
-ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370189"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801727"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>步骤 3：保护和管理用户登录
 
@@ -28,7 +28,7 @@ ms.locfileid: "37370189"
 <a name="identity-windows-hello"></a>
 ## <a name="use-windows-hello-for-business"></a>使用 Windows Hello 企业版
 
-*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+*这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
 Windows 10 企业版中的 Windows Hello 企业版在 Windows 设备上签名时，会将密码替换为强双因素身份验证。 这两个因素是一种与设备和生物识别或 PIN 相关联的新型用户凭据。
 
@@ -38,7 +38,7 @@ Windows 10 企业版中的 Windows Hello 企业版在 Windows 设备上签名时
 <a name="identity-mfa"></a>
 ## <a name="set-up-azure-multi-factor-authentication"></a>设置 Azure 多因素身份验证
 
-*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+*这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
 在此步骤中，将设置 Azure 多因素身份验证 (MFA)，为用户登录和事务添加第二层安全性。 用户正确输入密码后，MFA 需要一种附加验证方法。 如果不使用 MFA，则密码是唯一的验证方法。 对于密码而言，其问题在于许多密码很容易被攻击者猜到，或在不知情的情况下与非受信任方共享。
 

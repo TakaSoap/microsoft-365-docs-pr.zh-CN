@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解组织中部署 Microsoft 365 企业版底层基础结构（也称为核心部署）的主要阶段。
-ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370349"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801957"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
 
 如果你是自行端到端部署 Microsoft 365 企业版，则应首先奠定坚实的基础，在此基础上，应用程序和服务可以在安全的环境中激发创造力和提高团队协作。 该底层有时称为*核心部署*。
 
@@ -78,7 +78,7 @@ ms.locfileid: "37370349"
 
 底层基础结构是一组经过配置的软件和服务，如果针对某一用户将它们组合到一起，可以充分利用 Microsoft 365 企业版具有的全部功能和保护。 端到端部署旅程的最终目标是将此基础结构应用于所有用户及其基于 Windows 的设备。 
 
-但是，必须注意的是，Microsoft 365 企业版底层基础结构与为用户部署软件和服务是不相关的。 ***你可以配置底层基础结构层，而无需将这些曾部署到所有用户中。***
+但是，必须注意的是，Microsoft 365 企业版底层基础结构与为用户部署软件和服务无关。 ***你可以配置底层基础结构层，而无需将这些曾部署到所有用户中。***
 
 可在将元素部署到组织办公室、区域或部门的众多用户之前配置、测试和试用底层基础结构的元素。
 

@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: 35f5c789d4e8db13cb46a568fc58f49bce4d3c96
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031957"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801917"
 ---
-# <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版
+# <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企业版
 
 Microsoft 365 企业版是本地和基于云的生产力应用和服务与 Windows 10 企业版的组合：  
 
@@ -35,21 +35,21 @@ Microsoft 365 企业版是本地和基于云的生产力应用和服务与 Windo
 
 - 使用 [FastTrack for Microsoft 365](#fasttrack-for-microsoft-365) 与 Microsoft 工程师一起部署。
 - 在 Microsoft 咨询服务或 [Microsoft 合作伙伴](https://partner.microsoft.com/)的协助下部署。
-- 使用 [Microsoft 365 企业版部署指南](#microsoft-365-enterprise-deployment-guide)自行部署。
+- 使用 [Microsoft 365 企业版部署指南](#microsoft-365-for-enterprise-deployment-guide)自行部署。
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack for Microsoft 365
 
 FastTrack 的优势在于持续且可重复（*可作为订阅的一部分免费提供*），由 Microsoft 工程师提供以帮助你按自己的节奏移动到云。 此外，FastTrack 还可使你根据需要访问合格的合作伙伴以获取其他服务。 目前为止，40,000 多个客户已启用此功能，FastTrack 可帮助最大化投资回报率、加快部署，提高整个组织的采用率。 请参阅 [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)。
 
-如果想要充分利用 FastTrack 来部署 Microsoft 365 企业版，可以使用 FastTrack [Microsoft 365 部署顾问](https://aka.ms/microsoft365setupguide)了解如何部署和设置底层基础结构。 必须以 Office 365 或 Microsoft 365 租户中的全局管理员身份登录才能访问此页面。
+如果想要充分利用 FastTrack 来部署 Microsoft 365 企业版，可通过 FastTrack [Microsoft 365 部署顾问](https://aka.ms/microsoft365setupguide)了解如何部署和设置底层基础结构。 必须以 Office 365 或 Microsoft 365 租户中的全局管理员身份登录才能访问此页面。
 
 利用[此处](https://fasttrack.microsoft.com/microsoft365)的 FastTrack 开启你的端对端部署旅程吧。
 
-## <a name="microsoft-365-enterprise-deployment-guide"></a>Microsoft 365 企业版部署指南
+## <a name="microsoft-365-for-enterprise-deployment-guide"></a>Microsoft 365 企业版部署指南
 
 Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产品和功能的适当和必需配置。
 
-若要自行部署 Microsoft 365 企业版，请：
+要自行部署 Microsoft 365 企业版，你可：
 
 - 针对内置安全性和集成部署所需的[底层基础架构](deploy-foundation-infrastructure.md)，以简化管理，从而可更轻松地确保使用最新生产力和安全增强功能更新客户端软件。 
  
@@ -99,7 +99,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 使用这些资源了解其他人是如何部署和使用 Microsoft 365 企业版的。
 
-### <a name="how-customers-use-microsoft-365-enterprise"></a>客户如何使用 Microsoft 365 企业版
+### <a name="how-customers-use-microsoft-365-for-enterprise"></a>客户如何使用 Microsoft 365 企业版
 
 在客户案例网站上查看 Microsoft 客户正在如何使用 Microsoft 365 企业版。
 
@@ -109,9 +109,9 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 4. 在“**产品**”中选择 **Microsoft 365**。
 5. 单击卡片查看客户的案例研究。
 
-### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企业版
+### <a name="how-microsoft-uses-microsoft-365-for-enterprise"></a>Microsoft 如何使用 Microsoft 365 企业版
 
-对于每一个致力于培养现代工作场所的领导者来说，打造数字文化是他们的首要任务。 Microsoft 365 旨在支持实现这种文化转变，帮助领导者赋予公司的每个人权力，以释放创造力和促进协作。 正在 Microsoft 基础架构的建立才引发了数字文化的转变。 实施 Microsoft 365 企业版使我们能够部署协作技术，如 Microsoft Teams 和 Exchange Online，并在安全的 SharePoint Intranet 站点之间在线共享敏感数据。
+对于每一个致力于培养现代工作场所的领导者来说，打造数字文化是他们的首要任务。 Microsoft 365 旨在支持实现这种文化转变，帮助领导者赋予公司的每个人权力，以释放创造力和促进协作。 正在 Microsoft 基础架构的建立才引发了数字文化的转变。 通过实施 Microsoft 365 企业版，我们能够部署 Microsoft Teams 和 Exchange Online 等协作技术，并在安全的 SharePoint Intranet 站点之间在线共享敏感数据。
 
 同时，智能安全功能和产品集成有助于简化管理需求，并最大限度地降低整个 IT 生命周期的总体拥有成本。 
 
@@ -120,9 +120,9 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 > [!Note]
 > 此网页仅提供英文版本。
 
-### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企业版
+### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企业版
 
-Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 [Contoso 如何部署 Microsoft 365 企业版](contoso-case-study.md)并且完成了主要设计决策和针对以下方面的实施细节：网络、标识、Windows 10 企业版、Office 365 专业增强版、移动设备管理、信息保护和安全性。 
+Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 [Contoso 如何部署 Microsoft 365 企业版](contoso-case-study.md)并且完成主要设计决策和针对以下方面的实施细节：网络、标识、Windows 10 企业版、Office 365 专业增强版、移动设备管理、信息保护和安全性。 
 
 ## <a name="stay-current-with-deployment-content"></a>随时了解部署内容
 

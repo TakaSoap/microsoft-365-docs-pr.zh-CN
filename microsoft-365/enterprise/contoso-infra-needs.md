@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 本地 IT 基础设施的基本结构，以及 Microsoft 365 企业版如何满足其业务需求。
-ms.openlocfilehash: 157aa17e6ea5c345c1c1c5bdc9a2588f6384277d
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d98f401ae4a39e3e04b5840e8f76c1e3e1b1a24d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673188"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802067"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基础结构和业务需求
 
@@ -112,7 +112,7 @@ Contoso 的业务需求分为五个主要类别。
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>将 Contoso 业务需求映射到 Microsoft 365 企业版
 
-Contoso 的 IT 部门会在部署之前，确定以下映射到 Microsoft 365 企业版 E5 功能的业务需求：
+Contoso 的 IT 部门会在部署之前，确定以下映射到 Microsoft 365 E5 功能的业务需求：
 
 ||||
 |:-------|:-----|:-----|

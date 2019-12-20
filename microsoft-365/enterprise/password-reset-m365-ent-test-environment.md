@@ -3,7 +3,7 @@ title: Microsoft 365 测试环境的密码重置
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: 100db14b7940d68a185c3f6065df053aed7fbf73
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 930c5b4a4ddcc4866a586ff444380ff6dcd66238
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757709"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801407"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -33,7 +33,7 @@ ms.locfileid: "38757709"
 
 1.  创建 Microsoft 365 企业版测试环境。
 2.  启用密码写回。
-3.  为用户 2 帐户配置和测试密码重置。
+3.  为用户 3 帐户配置和测试密码重置。
     
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,6 @@ ms.locfileid: "38757709"
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
 
-
 ## <a name="phase-2-enable-password-writeback"></a>阶段 2：启用密码写回
 
 接下来，按照[“密码写回”测试实验室指南的阶段 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) 中的说明进行操作。
@@ -67,25 +66,26 @@ ms.locfileid: "38757709"
 
 1. 在浏览器的专用实例中，打开 [https://portal.azure.com](https://portal.azure.com)，然后使用全局管理员帐户的凭据登录。
 2. 在 Azure 门户中，单击“Azure Active Directory”>“组”>“新组”****。
-3. 将“组类型”**** 设置为“安全”****，将“组名称”**** 设置为“PWReset”****，将“成员身份类型”**** 设置为“分配”****。单击“创建”****。
-5. 单击列表中的“PWReset”**** 组，然后单击“成员”****。
-6. 依次单击“添加成员”****、“用户 2”****，再单击“选择”****。关闭“PWReset”**** 和“组”**** 页。
-7. 在 Azure Active Directory 页上，单击“密码重置”****。
-8. 在“属性”**** 页的“自助服务密码重置已启用”**** 选项下，选择“已选择”****。
-9. 从“选择组”**** 中选择“PWReset”****，然后单击“保存”****。
-10. 关闭专用浏览器实例。
+3. 将“**组类型**”设置为“**安全**”，将“**组名称**”设置为“**PWReset**”，将“**成员身份类型**”设置为“**已分配**”。 
+4. 单击“**成员**”，查找并选择**用户 3**，然后单击“**选择**”，再单击“**创建**”。
+5. 关闭“**组**”窗格。
+6. 在 Azure Active Directory 窗格中，单击左侧导航兰中的“**密码重置**”。
+7. 在“**密码重置属性**”窗格的“**已启用自助式密码重置**”选项下，选中“**已选择**”。
+8. 单击“**选择组**”，选择“**PWReset**组，然后单击**选择”>“保存”**。
+9. 关闭专用浏览器实例。
 
-接下来，为用户 2 帐户测试密码重置。
+接下来，为用户 3 帐户测试密码重置。
 
 1. 打开新的专用浏览器实例并浏览到 [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup)。
-2. 使用用户 2 帐户凭据登录。
-3. 在“不丢失对帐户的访问权限”**** 中，将身份验证电话设置为你的手机号码，并将身份验证电子邮件设置为你的工作或个人电子邮件帐户。
-4. 对这两项进行验证后，单击“良好”****，然后关闭浏览器的专用实例。
-5. 打开新的专用浏览器实例并转到 [https://aka.ms/sspr](https://aka.ms/sspr)
-6. 使用用户 2 帐户凭据登录，键入 CAPTCHA 中的字符，然后单击“下一步”****。
-8. 对于“验证步骤 1”****，单击“以电子邮件形式发送备用电子邮件”****，然后单击“电子邮件”****。在收到电子邮件时，键入验证码，然后单击“下一步”****。
-9. 在“返回到帐户”**** 中，键入用户 2 帐户的新密码，然后单击“完成”****。记录用户 2 帐户更改后的密码，然后将其存储在一个安全的位置。
-10. 在同一浏览器的独立选项卡中，转到 [https://portal.office.com](https://portal.office.com)，然后使用用户 2 帐户名及其新密码登录。 此时应会看到“**Microsoft Office 主页**”页面。
+2. 使用用户 3 帐户凭据登录。
+3. 在“**需要详细信息**”中，单击“**下一步**”。 
+5. 在“不丢失对帐户的访问权限”**** 中，将身份验证电话设置为你的手机号码，并将身份验证电子邮件设置为你的工作或个人电子邮件帐户。
+7. 对这两项进行验证后，单击“良好”****，然后关闭浏览器的专用实例。
+8. 打开新的专用浏览器实例并转到 [https://aka.ms/sspr](https://aka.ms/sspr)
+9. 键入用户 3 帐户的名称，键入来自 CAPTCHA 的字符，然后单击“**下一步**”。
+10. 对于“验证步骤 1”****，单击“以电子邮件形式发送备用电子邮件”****，然后单击“电子邮件”****。在收到电子邮件时，键入验证码，然后单击“下一步”****。
+11. 在“**返回帐户**”中，键入用户 3 帐户的新密码，然后单击“**完成**”。 记下已更改的用户 3 帐户密码并将其存储在安全的位置。
+12. 在同一浏览器的独立选项卡中，转到 [https://portal.office.com](https://portal.office.com)，然后使用用户 3 帐户名及其新密码登录。 应该会看到“Microsoft Office 主页”页面。****
 
 有关在生产中配置密码重置的信息和相关链接，请参阅“标识”阶段中的[简化密码重置](identity-secure-your-passwords.md#identity-pw-reset)步骤。
 
