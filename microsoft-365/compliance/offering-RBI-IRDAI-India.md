@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c88cfbfc9237e6e9a43dc8b143af015ba377ad17
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 26276567ec2a7f5bf7594ffdf91e7ead21135e17
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859492"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804315"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>保留印度银行（RBI）和印度的保险费和开发机构（IRDAI）
 
@@ -43,7 +44,7 @@ Microsoft 清单可帮助印度中的财务公司进行 Microsoft 商业云服�
 - 对应用情景法规环境的概述。
 - 一个检查表，它规定了要解决的问题并将 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 服务与这些法规义务对应起来。 该清单可以用作度量是否符合法规框架的工具，并提供用于记录合规性的内部结构，帮助客户自行对 Microsoft 业务云服务进行风险评估。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)

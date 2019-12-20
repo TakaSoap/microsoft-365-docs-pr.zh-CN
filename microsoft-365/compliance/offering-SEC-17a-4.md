@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 08ae4841f2523d5b5df576906bdf04e798d8e60f
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 915e70065e6efb05424c710bb3e8a98902857c6c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859512"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804245"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>证券和交换委员会（SEC）规则17a-4 （f）美国
 
@@ -39,10 +40,10 @@ Microsoft Azure 不可变 Blob 存储 with with Policy Lock 和 Microsoft Office
 - **Azure**： [SEC 17a-4 （f）合规性评估： Microsoft azure 存储](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)，Cohasset 使用策略锁定选项验证了[Azure 不可变 blob 存储](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage)，用于保留不可擦除和不可改写（WORM）格式的基于时间的 blob，满足 SEC 规则的不可变存储要求。 每个 Blob （记录）都受到保护，无法进行修改、覆盖或删除，除非所需的保留期已过期，并且已释放所有关联的合法保留期。 具有敏感工作负载的软件提供商和合作伙伴现在可以依赖 Azure 不可变 Blob 存储作为 onestop 云解决方案，以实现记录保留和不可变存储。 金融机构现在可以构建自己的应用程序，利用这些功能，同时保持兼容性。
 - **Office 365**：[使用 EXCHANGE Online 符合 SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)，Cohasset 验证了[具有保留锁定的 Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy)包括存档功能，这些功能可让受管制的客户（包括经纪人代理商）以帮助其符合 SEC 对记录保留的要求的方式存储数据。 Office 365 中的保留策略帮助保留一系列数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以将数据存储在定义的时间段内，并在不可重写的 nonerasable 格式的后面。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -70,7 +71,7 @@ Microsoft Azure 不可变 Blob 存储 with with Policy Lock 和 Microsoft Office
 
 ## <a name="resources"></a>资源
 
-- Microsoft Office 365 中的存档、数据保留和规则 17a-4-4
+- [Microsoft Office 365 中的存档、数据保留和规则 17a-4-4](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
 - [合规性 Microsoft 金融服务](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [合规性计划 Microsoft 商业云服务和金融服务](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)

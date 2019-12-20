@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a15b787904149073394bfc08a3ae8faf119d7ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859652"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804605"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Arm 规章中的国际流量（ITAR）
 
@@ -36,7 +37,7 @@ ITAR 有特定的义务来举报违规，从而可以提供特定风险缓解优
   
 寻求承载 ITAR 管控数据的客户应与他们的 Microsoft 帐户和许可团队合作，以了解详细信息，获取正确的协议，并访问相关的系统体系结构信息。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [Office 365 美国政府防御版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)

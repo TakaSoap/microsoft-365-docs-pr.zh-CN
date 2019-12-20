@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: f5627194ad21b73cae664c808d2bba9f4254d8b5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859972"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805245"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>防御联邦收购法规补充（DFARS）
 
@@ -32,7 +33,7 @@ Microsoft 政府云服务可帮助美国国防部工业和国防承包商客户�
   
 了解如何使用我们的 Azure 安全性和合规性蓝图加快 DFARS 部署：[下载 Azure-蓝图 DFARS 客户责任矩阵](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 涵盖的针对 DoD 影响的服务级别5
 
@@ -76,6 +77,6 @@ CDI 是控制的技术信息或其他信息（如 CUI 注册表中所述），�
 
 - [防御联邦收购法规补充（DFARS）](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
 - [Microsoft 政府云](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [在线服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [受控制的未分类信息（CUI）](https://www.archives.gov/cui/registry/category-list)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

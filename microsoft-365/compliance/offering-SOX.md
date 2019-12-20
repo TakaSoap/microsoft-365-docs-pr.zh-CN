@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1bc568d6db13dd91d0e16e29633dccc58e28fc2a
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 35e1887d37f3ca5840d595c7927ff4d6064e08d9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859472"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804235"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>2002 年萨班尼斯-奥克斯莱法案 (Sarbanes-Oxley Act of 2002, SOX)
 
@@ -40,13 +41,13 @@ Microsoft 云服务客户遵守 Sarbanes-oxley 法案（SOX）的要求，在满
 
 了解有关如何在满足您的 SOX 合规性义务时使用 Microsoft Azure 合规性报告的详细信息：[下载针对 Sarbanes-oxley 法案的 Azure 指南](https://aka.ms/Azure-SOX-Guide)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
