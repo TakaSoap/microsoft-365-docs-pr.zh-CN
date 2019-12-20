@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果用户从 Office 365 连续发送被归类为垃圾邮件的电子邮件，这些用户将被限制发送任何其他电子邮件。
-ms.openlocfilehash: 7d900e154e60b49b3fcfe63552b6ad3288adfc82
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871738"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823814"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>发送垃圾电子邮件后，从受限用户门户删除用户
 
@@ -33,19 +33,19 @@ ms.locfileid: "39871738"
 <a name="sectionSection0"> </a>
 
 估计完成时间：5 分钟
-  
+
 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅 [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的“反垃圾邮件”条目。
 
-以下步骤也可以通过远程 PowerShell 执行。 使用 Get-BlockedSenderAddress cmdlet 获取受限用户的列表，并使用 Remove-BlockedSenderAddress  移除限制。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+以下步骤也可以通过远程 PowerShell 执行。 使用 Get-BlockedSenderAddress cmdlet 获取受限用户的列表，并使用 Remove-BlockedSenderAddress  移除限制。 若要了解如何使用 Windows PowerShell 连接到 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>移除对阻止的 Office 365 电子邮件帐户的限制
 
 可在安全与合规中心 (SCC) 中完成此任务。 有关 SCC 的详细信息, 请[转到安全与合规中心](../../compliance/go-to-the-securitycompliance-center.md)。 若要执行这些功能，你需要在 **“组织管理”** 或 **“安全管理员”** 角色组中。 有关 SCC 角色组的更多详细信息，请[转到安全与合规中心中的“权限”](permissions-in-the-security-and-compliance-center.md)。
 
 1. 使用具有 office 365 全局管理员权限的工作或学校帐户登录到 office 365 安全与合规中心，然后在左侧的列表中展开 **“威胁管理”**，选择 **“审阅”**，然后选择 **“受限用户”**。
-    
+
     > [!TIP]
-    > 若要直接转到安全&amp;合规中心中的 **“受限用户”** 页面（以前称为“操作中心”），请使用此 URL：> [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > 若要直接转到安全&amp;合规中心中的“**受限用户**”页面（以前称为“操作中心”），请使用此 URL：[https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
 2. 此页面将包含已被阻止发送电子邮件的用户的列表。  查找想要为其移除限制的用户，然后选择 **“取消阻止”**。
 
@@ -56,7 +56,7 @@ ms.locfileid: "39871738"
 5. 单击 **“是”** 确认更改。
 
     > [!NOTE]
-    > 移除限制可能需要 30 分钟或更长时间。 
+    > 移除限制可能需要 30 分钟或更长时间。
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>确保在这种情况下提醒管理员
 
@@ -79,7 +79,7 @@ Office 365 安全与合规性警报策略页下有一条“被限制发送电子
 
 ## <a name="for-more-information"></a>有关详细信息
 
-[响应遭到入侵的电子邮件帐户](../../compliance/responding-to-a-compromised-email-account.md)
+[响应遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
 [了解“被限制发送电子邮件的用户”警报](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
