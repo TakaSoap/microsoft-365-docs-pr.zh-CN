@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f7c7ab393a956aa894a0ca8704ea0e99a82addc9
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 6aca41e46af8ba94f87e7ee91059c3d11a4fbe9e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910785"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808627"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 高级搜寻架构中的 `DeviceTvmSoftwareInventoryVulnerabilities` 表包含设备上软件的[威胁和漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)清单以及这些软件产品中的任何已知漏洞。 此表还包括操作系统信息、CVE ID 和漏洞严重性信息。 使用此参考来构建从该表返回信息的查询。
 
@@ -35,8 +35,8 @@ ms.locfileid: "39910785"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `MachineId` | string | 服务中的计算机的唯一标识符 |
-| `ComputerName` | string | 计算机的完全限定域名 (FQDN) |
+| `DeviceId` | string | 服务中的计算机的唯一标识符 |
+| `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
 | `OSVersion` | string | 计算机上运行的操作系统版本 |
 | `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |

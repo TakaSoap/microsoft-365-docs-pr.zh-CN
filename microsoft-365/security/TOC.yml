@@ -5,10 +5,6 @@
       items:
         - name: 适用于 BDM 的 Microsoft 365 安全
           href: Microsoft-365-security-for-bdm.md
-        - name: 安全功能分数
-          href: ./mtp/microsoft-secure-score.md
-        - name: 安全功能分数（预览版）
-          href: ./mtp/microsoft-secure-score-preview.md
         - name: 首席信息安全官 (CISO) 研讨会培训
           href: ./office-365-security/ciso-workshop.md
           items:
@@ -55,9 +51,9 @@
               href: ./mtp/troubleshoot.md
         - name: 操作方法指南
           items:
-            - name: 启用 Microsoft 威胁防护
+            - name: 打开 Microsoft 威胁防护
               href: mtp/mtp-enable.md
-            - name: 例
+            - name: 事件
               items:
                 - name: 概述
                   href: mtp/incidents-overview.md
@@ -92,24 +88,24 @@
                 - name: 了解架构
                   href: mtp/advanced-hunting-schema-tables.md
                   items:
-                    - name: MachineInfo
-                      href: mtp/advanced-hunting-machineinfo-table.md
-                    - name: MachineNetworkInfo
-                      href: mtp/advanced-hunting-machinenetworkinfo-table.md
-                    - name: ProcessCreationEvents
-                      href: mtp/advanced-hunting-processcreationevents-table.md
-                    - name: NetworkCommunicationEvents
-                      href: mtp/advanced-hunting-networkcommunicationevents-table.md
-                    - name: FileCreationEvents
-                      href: mtp/advanced-hunting-filecreationevents-table.md
-                    - name: RegistryEvents
-                      href: mtp/advanced-hunting-registryevents-table.md
-                    - name: LogonEvents
-                      href: mtp/advanced-hunting-logonevents-table.md
-                    - name: ImageLoadEvents
-                      href: mtp/advanced-hunting-imageloadevents-table.md
-                    - name: MiscEvents
-                      href: mtp/advanced-hunting-miscevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceEvents
+                      href: mtp/advanced-hunting-deviceevents-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
@@ -124,7 +120,7 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
-                - name: 应用查询最佳实践
+                - name: 应用查询最佳做法
                   href: mtp/advanced-hunting-best-practices.md
             - name: 安全功能分数
               items:
@@ -357,7 +353,9 @@
                   items:
                     - name: 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: 通过威胁分析了解最新的攻击活动
+            - name: 市场活动视图
+              href: ./office-365-security/campaigns.md
+            - name: 了解使用威胁分析的最新攻击
               href: ./mtp/latest-attack-campaigns.md
             - name: 查看和阅读 ATP 报告
               href: ./office-365-security/view-reports-for-atp.md
@@ -569,5 +567,5 @@
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
         - name: Office 365 商业版
           href: 'https://docs.microsoft.com/office-365-security/admin/admin-home'
-    - name: Microsoft 365 合规性
+    - name: Microsoft 365 合规中心
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'

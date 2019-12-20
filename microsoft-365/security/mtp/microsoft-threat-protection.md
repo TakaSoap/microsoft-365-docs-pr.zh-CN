@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 01a81d5f4ac68d72095f86de93b727c60d28393f
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: a47ffecbf0ef1ac7dcfeef9d8cbe4e104de9ca2d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910206"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808577"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft 威胁防护
 
-**应用于：**
+**适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Microsoft 威胁防护是一种统一的前期和 post 违规企业防护套件，它固有集成在终结点、标识、电子邮件和应用程序上，以检测、阻止、调查和自动响应复杂的攻击。  
 
@@ -74,6 +74,6 @@ Microsoft 威胁防护跨产品功能包括：
 
 
 ## <a name="get-started"></a>入门
-使用 Microsoft 365 E5 或等效许可证的客户可以使用 Microsoft 威胁防护。 若要开始，请在 Microsoft 365 安全中心的[security.microsoft.com](https://security.microsoft.com)中启用该服务。 有关详细信息，请参阅：
+拥有 Microsoft 365 E5 或等效许可证的客户可以使用 Microsoft 威胁防护。 若要开始，请在 Microsoft 365 安全中心的[security.microsoft.com](https://security.microsoft.com)中启用该服务。 有关详细信息，请参阅：
 - [授权要求](prerequisites.md#licensing-requirements)
-- [启用 Microsoft 威胁防护](mtp-enable.md)
+- [打开 Microsoft 威胁防护](mtp-enable.md)

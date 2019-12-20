@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的管理员提交，O365 报送，Office 365 垃圾邮件问题，O365 false 负数，提交在 office 365 中的网络钓鱼，提交电子邮件以便进行扫描，在 Office 365 中提交可疑电子邮件，扫描邮件，让 Microsoft 扫描网络钓鱼，使用 microsoft 扫描进行垃圾邮件，提交电子邮件、提交电子邮件、dodgy 电子邮件、不正确的演员邮件、可疑、不受信任的邮件
+title: Office 365 中的管理员提交，O365 报送，Office 365 垃圾邮件问题，O365 false 负数，提交在 office 365 中的网络钓鱼，提交电子邮件以便进行扫描，在 Office 365 中提交可疑电子邮件，扫描邮件，让 Microsoft 扫描网络钓鱼，使用 microsoft 扫描进行垃圾邮件，提交电子邮件、提交电子邮件、dodgy 电子邮件、不正确的主角邮件、可疑、不受信任的邮件、向 microsoft 报告网络钓鱼电子邮件、将网络邮件报告给 microsoft、向 microsoft 报告欺诈电子邮件、将电子邮件报告给 microsoft、将电子邮件报告给 microsoft、垃圾邮件收件箱 office 365 中的电子邮件，病毒在电子邮件 office 365 中
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何将可疑电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件从 Office 365 租户提交到 Microsoft 进行扫描。
-ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
-ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
+ms.openlocfilehash: 54cb42f8c02f2f41ad583d640a090509817911ee
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39915213"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808547"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>如何将可疑的垃圾邮件、网络钓鱼、Url 和文件提交到 Microsoft for Office 365 扫描
 

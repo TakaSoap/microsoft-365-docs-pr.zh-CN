@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2fee44c0d9c9ff30ca23ccef863e056cadee7de8
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: d03b278fbf029b08b476f20292315807a3f5e32a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910787"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808617"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 `DeviceTvmSecureConfigurationAssessment` 表中的每一行均包含针对来自[威胁和漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的特定安全配置的评估事件。 使用此参考来检查最新的评估结果，并确定设备是否符合要求。
 
@@ -35,8 +35,8 @@ ms.locfileid: "39910787"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `MachineId` | string | 服务中的计算机的唯一标识符 |
-| `ComputerName` | string | 计算机的完全限定域名 (FQDN) |
+| `DeviceId` | string | 服务中的计算机的唯一标识符 |
+| `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。|
 | `Timestamp` | datetime | 生成记录的日期和时间 |
 | `ConfigurationId` | string | 特定配置的唯一标识符 |

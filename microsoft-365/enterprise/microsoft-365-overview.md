@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 企业版概述
+title: 适用于企业的 Microsoft 365 概述
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,23 +10,23 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: 介绍了 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 67d7417af01b7c64094aa46350326f32e0f18534
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+description: 提供对适用于企业的 Microsoft 365 的组件、计划和部署路径的介绍。
+ms.openlocfilehash: 16efb061bbb8be4ff8cb5a93186d342fc55ca849
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831953"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801457"
 ---
-# <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企业版概述
+# <a name="microsoft-365-for-enterprise-overview"></a>适用于企业的 Microsoft 365 概述
 
-Microsoft 365 企业版是一个完整的智能解决方案，使每个人都能进行创作和安全协作。 
+适用于企业的 Microsoft 365 是一个完整的智能解决方案，使每个人都能进行创作和安全协作。 
 
-虽然专为大型组织设计，但 Microsoft 365 企业也可用于需要最高级安全性和生产力功能的中型企业和小型企业。 
+虽然专为大型组织设计，但 Microsoft 365 for 企业也可用于需要最高级安全性和生产力功能的中型企业和小型企业。 
 
 ## <a name="components"></a>组件
 
-Microsoft 365 企业版包括：
+适用于企业的 Microsoft 365 包括：
 
 |||
 |:-------|:-----|
@@ -37,7 +37,7 @@ Microsoft 365 企业版包括：
 
 ## <a name="plans"></a>计划
 
-Microsoft 365 企业版提供了三个计划。
+适用于企业的 Microsoft 365 在三个计划中提供。
 
 |||
 |:-------|:-----|
@@ -46,37 +46,37 @@ Microsoft 365 企业版提供了三个计划。
 | F1 | 通过专门构建的工具和资源与您的 Firstline 工作人员联系，让他们能够完成其最佳工作。 |
 |||
 
-如果你拥有 Microsoft 365 企业版 E3，还可以获取以下[产品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
+如果你拥有 Microsoft 365 E3，还可以获取以下[产品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
 
 - 身份 & 威胁防护
 - 信息保护 & 合规性
 
-这些产品包含 Microsoft 365 企业版 E5 附带的其他功能。
+这些产品包含 Microsoft 365 E5 附带的其他功能。
 
 有关详细信息，请参阅[每个计划的特性和功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
 ## <a name="get-the-big-picture"></a>获取大图
 
-[Microsoft 365 企业版海报](media/m365-poster/Microsoft365Enterprise.pdf)是查看的中心位置：
+[Microsoft 365 for enterprise 海报](media/m365-poster/Microsoft365Enterprise.pdf)是查看的中心位置：
 
-- Microsoft 365 企业的优势，以及应用和服务如何映射到其价值支柱
-- Microsoft 365 企业版计划及其包含的组件 
-- Microsoft 365 企业版支持的新式工作场所的关键组件
+- Microsoft 365 for 企业以及应用和服务如何映射到其价值的优势
+- 适用于企业计划的 Microsoft 365 以及它们包含的组件 
+- Microsoft 365 for enterprise 的新式工作场所的关键组件支持
 - 适用于一些常见组织部门的[Microsoft 365 生产率库](https://www.microsoft.com/microsoft-365/success/)和代表性方案
-- 重点介绍了 Microsoft 365 企业版[部署指南](deploy-microsoft-365-enterprise.md)的采用路线图
+- 采用指南重点介绍了 Microsoft 365 企业版[部署指南](deploy-microsoft-365-enterprise.md)
 
-[![Microsoft 365 企业版海报图像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![适用于 Microsoft 365 for 企业版海报的图像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 要下载海报副本，请单击[此处](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请下载[转换海报](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要更好地了解如何将整个组织移动到 Microsoft 365 for enterprise 中的产品和服务，请下载[转换海报](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
 [![转移到 Microsoft 365 海报图像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
+此两页海报是一种快速清点现有基础结构的方法，并提供了在 Microsoft 365 for enterprise 中转到相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 
 还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 
@@ -96,13 +96,13 @@ Microsoft 365 企业版提供了三个计划。
 
 [![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-此页面海报是一种快速了解您可以采取的各种途径，以防止 Windows 7 和 Office 2010 客户端和服务器产品到达支持的末尾，并突出显示 Microsoft 365 企业版中的首选路径和支持。
+这一页的海报是一种快速了解您可以采取的各种途径，以防止 Windows 7 和 Office 2010 客户端和服务器产品到达支持的末尾，并在 Microsoft 365 中突出显示了针对企业的首选路径和支持。
 
 还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 
 ## <a name="deploy"></a>部署
 
-可通过以下三种方法来部署 Microsoft 365 企业版的产品、功能和组件：
+可通过以下三种方法来部署适用于企业的 Microsoft 365 的产品、功能和组件：
 
 1. 与 FastTrack 的合作关系
   
@@ -110,17 +110,17 @@ Microsoft 365 企业版提供了三个计划。
   
 2. 提供 Microsoft 咨询服务或[microsoft 合作伙伴](https://partner.microsoft.com/)的帮助。
 
-   顾问可以分析您的当前基础结构，并帮助您制定合并 Microsoft 365 企业的所有软件和服务的计划。
+   顾问可以分析您的当前基础结构，并帮助您制定一个将 Microsoft 365 for enterprise 的所有软件和服务结合在一起的计划。
 
 3. 自行执行
 
-   [Microsoft 365 企业版部署指南](deploy-microsoft-365-enterprise.md)将指导您逐步构建基础结构和工作效率工作负载。 
+   《 [Microsoft 365 for 企业版部署指南》](deploy-microsoft-365-enterprise.md)逐步介绍了如何构建基础结构和工作效率工作负载。 
 
 有关更多部署信息，请参阅操作方法：
 
-- [客户](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)使用 Microsoft 365 企业版。
-- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise)使用 Microsoft 365 企业版。
-- [Contoso Corporation](contoso-overview.md)（一个虚构但具有代表性的跨国组织）部署了 Microsoft 365 企业版。
+- [客户](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-for-enterprise)使用适用于企业的 Microsoft 365。
+- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-for-enterprise)使用适用于企业的 microsoft 365。
+- [Contoso Corporation](contoso-overview.md)（一个虚构但具有代表性的跨国组织）已为企业部署了 Microsoft 365。
 
 ## <a name="additional-microsoft-365-solutions"></a>其他 Microsoft 365 解决方案
 
@@ -146,8 +146,8 @@ Microsoft 365 企业版提供了三个计划。
 
 ## <a name="next-step"></a>后续步骤
 
-如果你要自己完成部署，请启动[Microsoft 365 企业版部署旅程](deploy-microsoft-365-enterprise.md)。
+如果你要自己部署，请启动[Microsoft 365 以进行企业部署旅程](deploy-microsoft-365-enterprise.md)。
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 Enterprise 产品页](https://www.microsoft.com/microsoft-365/enterprise)
+[适用于企业版的 Microsoft 365 页面](https://www.microsoft.com/microsoft-365/enterprise)

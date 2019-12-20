@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1803445dfd9b46fce23b0dcc9585ea543f1b0347
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 631b328168003668ed06e37d76177c327794ed18
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910793"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808657"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高级搜寻](advanced-hunting-overview.md)架构由可提供事件信息或计算机和实体相关信息的多个表组成。 若要高效构建跨多个表的查询，需要了解高级搜寻架构中的表和列。
 
@@ -37,15 +37,15 @@ ms.locfileid: "39910793"
 
 | 表名 | 说明 |
 |------------|-------------|
-| **[MachineInfo](advanced-hunting-machineinfo-table.md)** | 计算机信息，包括操作系统信息 |
-| **[MachineNetworkInfo](advanced-hunting-machinenetworkinfo-table.md)** | 计算机的网络属性，包括适配器、IP 和 MAC 地址，以及已连接的网络和域 |
-| **[ProcessCreationEvents](advanced-hunting-processcreationevents-table.md)** | 过程创建和相关事件 |
-| **[NetworkCommunicationEvents](advanced-hunting-networkcommunicationevents-table.md)** | 网络连接和相关事件 |
-| **[FileCreationEvents](advanced-hunting-filecreationevents-table.md)** | 文件创建、修改和其他文件系统事件 |
-| **[RegistryEvents](advanced-hunting-registryevents-table.md)** | 创建和修改注册表项 |
-| **[LogonEvents](advanced-hunting-logonevents-table.md)** | 登录和其他身份验证事件 |
-| **[ImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | DLL 加载事件 |
-| **[MiscEvents](advanced-hunting-miscevents-table.md)** | 多个事件类型，包括安全控件（如 Windows Defender 防病毒和 Exploit Protection）触发的事件 |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | 计算机信息，包括操作系统信息 |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | 计算机的网络属性，包括适配器、IP 和 MAC 地址，以及已连接的网络和域 |
+| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | 过程创建和相关事件 |
+| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | 网络连接和相关事件 |
+| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | 文件创建、修改和其他文件系统事件 |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | 创建和修改注册表项 |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | 登录和其他身份验证事件 |
+| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL 加载事件 |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多个事件类型，包括安全控件（如 Windows Defender 防病毒和 Exploit Protection）触发的事件 |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Office 365 电子邮件事件，包括电子邮件送达和阻止事件 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 有关附加到 Office 365 电子邮件的文件的信息 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有关 Office 365 电子邮件上的 URL 的信息 |

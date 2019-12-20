@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ed5dd99d2ac569353ed72ddf67d906dfe21e7cd0
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 7c6c92aeec6c1644472103a1aaf175eb813d5758
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910792"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808677"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 高级搜寻基于 [Kusto 查询语言](https://docs.microsoft.com/azure/kusto/query/)。 你可以使用 Kusto 语法和运算符来构建查询，该查询可以在专为高级搜寻构造的[架构](advanced-hunting-schema-tables.md)中查找信息。 若要更好地了解这些概念，请运行你的第一个查询。
 
@@ -37,16 +37,16 @@ ms.locfileid: "39910792"
 
 ```
 // Finds PowerShell execution events that could involve a download.
-ProcessCreationEvents  
-| where EventTime > ago(7d)
+DeviceProcessEvents 
+| where Timestamp > ago(7d)
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
         or ProcessCommandLine has "Invoke-Shellcode"
         or ProcessCommandLine contains "http:"
-| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by EventTime
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by Timestamp
 ```
 
 这是它在高级搜寻中的显示效果。
@@ -57,15 +57,15 @@ ProcessCreationEvents
 
 ```
 // Finds PowerShell execution events that could involve a download.
-ProcessCreationEvents
+DeviceProcessEvents
 ```
 
-查询本身通常以表名称开头，后跟一系列由管道 (`|`) 开头的元素。 在此示例中，我们首先添加表名称 `ProcessCreationEvents`，然后根据需要添加管道元素。
+查询本身通常以表名称开头，后跟一系列由管道 (`|`) 开头的元素。 在此示例中，我们首先添加表名称 `DeviceProcessEvents`，然后根据需要添加管道元素。
 
 第一个管道元素是范围为前 7 天的时间筛选器。 尽可能缩小时间范围可以确保查询运行良好、返回易于管理的结果并且不会超时。
 
 ```
-| where EventTime > ago(7d)
+| where Timestamp > ago(7d)
 ```
 
 时间范围后紧跟表示 PowerShell 应用程序的文件搜索。
@@ -87,8 +87,8 @@ ProcessCreationEvents
 现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project` 将返回特定列，并且 `top` 将限制结果数量，以使结果格式良好、大小合理且易于处理。
 
 ```
-| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by EventTime'
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by Timestamp'
 ```
 
 单击“**运行查询**”以查看结果。 你可以展开屏幕视图，以便专注于你的搜寻查询和结果。

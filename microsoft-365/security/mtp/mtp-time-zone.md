@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6d2ae81324e7448b9d6a339e1d2bb6a75ef580ae
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 66546b689428b5663c71c82b72ec6cd008458c0d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910848"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808557"
 ---
 # <a name="set-the-time-zone-for-microsoft-threat-protection"></a>设置 Microsoft 威胁防护的时区
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Microsoft 威胁防护可以使用本地时区或 UTC 显示日期和时间信息。 所选时区将应用于 Microsoft 365 安全中心的以下功能中所示的所有日期和时间信息：
 - 事件

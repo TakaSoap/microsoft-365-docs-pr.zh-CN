@@ -13,12 +13,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: 了解有关计费帐户以及如何管理这些帐户的信息。
-ms.openlocfilehash: 9ea96a0187a1f4bec9c71dc02478375a4c13b371
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 9a5d7548608cb44befb271e63420e7eb84b2e399
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837955"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805745"
 ---
 # <a name="manage-billing-accounts"></a>管理帐单帐户
 
@@ -46,6 +46,15 @@ Microsoft 365 admin center 目前支持以下类型的计费帐户：
 | 税号 | 如果你不在美国，则必须提供 VAT 或当地的等价国家/地区。 有关详细信息，请参阅[税务信息](#tax-information)。 |
 | 本 | 在创建计费帐户（通过直接购买或批量许可安排）时，组织的签字人接受或签署一个协议，该协议描述了帐户 & 条件的条款。 如果适用，此视图列出协议历史记录。 如果需要接受更新的术语，则显示 "**审批协议**" 的链接。 |
 | 计费配置文件 | 计费配置文件定义发票的属性，如接收帐单的用户、帐单的交货方式、付款期限和采购订单编号。 若要在组织中分发帐单，可以创建多个记帐配置文件，并在购买时标识相应的记帐配置文件。 有关计费配置文件以及如何使用它们为组织生成更灵活的记帐选项的详细信息，请[管理计费配置文件](../billing-and-payments/manage-billing-profiles.md)。 |
+
+> [!NOTE] 
+> 如果要更改**售出**的名称或地址，但看不到**编辑**链接，则必须[与支持人员联系](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)以更改它。 对**售出**的名称更改的请求将需要进行信用检查。 在联系支持人员时，请准备好以下文档之一：
+>
+> - 外部通知文档，指示公司名称或公司结构中的任何更改
+> - 政府颁发的文档或注册信件
+> - 打印出本地公司的注册表
+>
+> 支持可帮助解决仅客户名称更改的名称和地址更改，但该实体保持不变。 提供的文档应清楚地表明只有实体的名称发生了更改。 如果更改与客户关联的任何交易记录（如业务销售或剥离或 "spinoff"）相关，请联系你的 Microsoft 卖家。
 
 ## <a name="shipping-addresses"></a>送货地址
 

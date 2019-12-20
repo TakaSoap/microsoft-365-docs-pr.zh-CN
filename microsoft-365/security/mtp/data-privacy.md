@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 708ae0965eadd453ad4a8fd1dd7c29231cb07916
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 49574f17abee645943becc8403bef01951d31924
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910816"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806941"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft 威胁防护数据安全性和隐私
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 使用 Microsoft 威胁防护预览版，视为同意以下条款：
 

@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1f2deef2c9ffc26f604194ff2d27d5f094471021
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910834"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808707"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高级搜寻](advanced-hunting-overview.md)架构中的 `EmailEvents` 表包含涉及 Office 365 ATP 处理电子邮件的事件的信息。 使用此参考来构建从此表返回信息的查询。
 
@@ -35,7 +35,7 @@ ms.locfileid: "39910834"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | 记录事件的日期和时间 |
+| `Timestamp` | datetime | 记录事件的日期和时间 |
 | `EmailId` | string | 唯一的电子邮件和收件人标识符 |
 | `NetworkMessageId` | string | 由 Office 365 生成的电子邮件的唯一标识符 |
 | `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |

@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b136dfcb11265e9ab19328d6ad0b3c515f7fc86f
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 28ecc159023bb9c86739b78c8a3a34e6d401b8ed
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910846"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806891"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 了解有关运行和使用 Microsoft 365 安全的许可、硬件和软件要求以及其他配置设置。
 

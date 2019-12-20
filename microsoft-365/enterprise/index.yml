@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 企业版文档和资源
+title: 适用于企业的 Microsoft 365 文档和资源
 summary: 具有可转换工作方式的智能云服务的最优秀的工作效率应用程序。
 brand: m365
 metadata:
-  title: Microsoft 365 企业版文档和资源
-  description: 了解为 IT 专业人员、信息工作者和合作伙伴提供的适用于 Microsoft 365 企业版的产品文档和资源。
+  title: 适用于企业的 Microsoft 365 文档和资源
+  description: 了解面向 IT 专业人员、信息工作者和合作伙伴的适用于企业的 Microsoft 365 的产品文档和资源。
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -13,15 +13,15 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 11/29/2019
-  ms.openlocfilehash: 945412e8e66fe558971ceacf3a57023b5bba6e5f
-  ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+  ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
+  ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/03/2019
-  ms.locfileid: "39669531"
+  ms.lasthandoff: 12/19/2019
+  ms.locfileid: "40801667"
 highlightedContent:
   items:
-  - title: 了解 Microsoft 365 企业版
+  - title: 了解适用于企业的 Microsoft 365
     itemType: get-started
     url: microsoft-365-overview.md
   - title: 使用 FastTrack 加速您的部署
@@ -31,8 +31,8 @@ highlightedContent:
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
 conceptualContent:
-  title: 获取 Microsoft 365 企业版和其他资源的帮助
-  summary: 探索 Microsoft 365 企业版部署指南、功能和服务。
+  title: 获取有关适用于企业和其他资源的 Microsoft 365 的帮助
+  summary: 探索适用于企业部署指南、功能和服务的 Microsoft 365。
   items:
   - title: 遵循部署路线图
     links:
@@ -76,7 +76,7 @@ conceptualContent:
     - url: migration-microsoft-365-enterprise-workload.md
       itemType: deploy
       text: Office 客户端和服务器和 Windows 迁移
-  - title: 管理 Microsoft 365 企业版
+  - title: 管理适用于企业的 Microsoft 365
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
       itemType: how-to-guide

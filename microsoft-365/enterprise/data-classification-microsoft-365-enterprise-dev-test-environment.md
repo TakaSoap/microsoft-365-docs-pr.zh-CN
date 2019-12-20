@@ -3,7 +3,7 @@ title: Microsoft 365 企业版测试环境的数据分类
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,23 +12,23 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南可在 Microsoft 365 企业版测试环境中的文档上创建和使用 Office 365 保留标签。
-ms.openlocfilehash: e0186bcfc786356b34aff45b1b1e67f54dd40001
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: dba98ca7a38291c9ce22e9a275585975e6b840ee
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672658"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802047"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的数据分类
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 使用本文中的说明，可以在 Microsoft 365 企业版测试环境中使用 Office 365 保留标签配置数据分类。
 
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -43,19 +43,19 @@ ms.locfileid: "38672658"
 
 在此阶段中，您将为 SharePoint Online 文档文件夹的不同保留级别创建保留标签。
 
-1. 使用全局管理员帐户登录 [Microsoft 365 合规性门户](https://compliance.microsoft.com)。
+1. 使用全局管理员帐户登录[Microsoft 365 安全中心](https://security.microsoft.com/homepage)。
     
-2. 在浏览器的“**主页 - Microsoft 365 合规性**”选项卡中，单击“**分类 > 标签**”。
+2. 在浏览器的 "**主页-Microsoft 365 安全**" 选项卡中，单击 "**分类 > 保留标签**"。
     
-3. 单击“**保留标签 > 创建标签**”。
+3. 单击“**创建标签**”。
     
-4. 在“**命名标签**”窗格上的“**命名标签**”中键入“**内部公用**”，然后单击“**下一步**”。
+4. 在 "**命名标签**" 窗格中，在 "**命名" 标签**中键入**Internal Public** ，然后单击 "**下一步**"。
 
-5. 在“**文件计划描述符**”窗格中，单击“**下一步**”。
+5. 在 "**文件计划描述符**" 窗格中，单击 "**下一步**"。
     
-6. 在“**标签设置**”窗格中，根据需要将“**保留**”设置为“**开**”，然后单击“**下一步**”。
+6. 在 "**标签设置**" 窗格中，根据需要将 "**保留**" 设置为 **"开**"，然后单击 "**下一步**"。
     
-7. 在“**查看设置**”窗格中，单击“**创建标签**”。
+7. 在 "**查看设置**" 窗格中，单击 "**创建标签"**。
     
 8. 对具有以下名称的其他标签重复步骤 3-7：
     
@@ -65,13 +65,13 @@ ms.locfileid: "38672658"
     
   - 高度机密
   
-9. 在“开始”>“标签”窗格中，单击“发布标签”********。
+9. 在 "**保留标签**" 窗格中，单击 "**发布标签**"。
     
-10. 在“选择要发布的标签”窗格中，单击“选择要发布的标签”********。
+10. 在 "**选择要发布的标签**" 窗格中，单击 "**选择要发布的标签**"。
     
-11. 在“选择标签”窗格中，单击“添加”并选择全部四个标签********。
+11. 在 "**选择标签**" 窗格中，单击 "**添加**"，然后选择全部四个标签。
     
-12. 单击“完成”****。
+12. 单击 "**添加**"，然后单击 "**完成**"。
     
 13. 在“选择要发布的标签”窗格中，单击“下一步”********。
     
@@ -79,7 +79,7 @@ ms.locfileid: "38672658"
     
 15. 在“**命名策略**”窗格中，在“**名称**”中键入“**示例组织**”，然后单击“**下一步**”。
     
-16. 在“**查看设置**”窗格中，单击“**发布标签**”，然后单击“**关闭**”。
+16. 在 "**查看设置**" 窗格中，单击 "**发布标签**"。
  
 请注意，发布保留标签可能需要几分钟时间。
 
@@ -89,7 +89,7 @@ ms.locfileid: "38672658"
 
 首先，创建一个敏感级别的 SharePoint Online 团队网站：
   
-1. Using a browser on your local computer, sign in to the [Office 365 portal](https://portal.office.com) using your global administrator account.
+1. 使用浏览器的私有实例，使用全局管理员帐户登录到[Office 365 门户](https://portal.office.com)。
     
 2. 在磁贴列表中，单击“SharePoint”****。
     
@@ -101,17 +101,17 @@ ms.locfileid: "38672658"
     
 6. 在 "**工作组网站说明**" 中，键入 " **SharePoint 网站" 以查找敏感文件**。
     
-7.  在“**隐私设置**”中，选择“**专用 - 仅成员可以访问此网站**”，然后单击“**下一步**”。
+7.  在“隐私设置”中，选择“专用 - 仅成员可以访问此网站”，然后单击“下一步”************。
     
-8. 在“**希望添加哪些人员?**”窗格中，单击“**完成**”。
+8. 在 "**要添加哪些用户？"** 窗格中，单击 "**完成**"。
     
 接下来，为敏感保留标签配置 SensitiveFiles 团队网站的 Documents 文件夹。
   
 1. 在浏览器的 " **SensitiveFiles** " 选项卡中，单击 "**文档**"。
     
-2. 单击设置图标，然后单击“**库设置**”。
+2. 单击设置图标，然后单击“库设置”****。
     
-3. 在“权限和管理”下，单击“向此库中的项应用标签”********。
+3. 在 "**权限和管理**" 下，单击 "**将标签应用于此列表或库中的项目**"。 如果未显示此选项，则尚未发布你的保留标签。 稍后请尝试执行此步骤。
     
 4. 在 "**设置-应用标签**" 中，选择下拉框中的 "**敏感**"，然后单击 "**保存**"。
 
@@ -123,13 +123,13 @@ ms.locfileid: "38672658"
     
 3. 在菜单栏中，单击 "**共享文档**"。
     
-4. 单击**文档 .docx**文件名旁边的单词图标。
+4. 单击**文档 .docx**文件名旁边的垂直省略号，然后单击 "**详细信息**"。
     
-5. 在右侧窗格中的 "**属性**" 部分，在 "**应用保留标签**" 下，请注意文档已自动应用了**敏感**标签。
+5. 在右侧窗格中的 "**属性**" 部分的 "**应用保留标签**" 下，请注意文档是否已自动应用 "**敏感**保留" 标签。
     
 6. 单击 "**编辑全部**"。
     
-7. 在 "**文档 .docx** " 窗格中的 "**应用标签**" 下，选择 "**高度机密**" 标签，然后单击 "**保存**"。
+7. 在 "**文档 .docx** " 窗格中，在 "**应用保留标签**" 下，选择 "**高度机密**" 标签，然后单击 "**保存**"。
 
 请参阅**信息保护**阶段中的[配置环境分类](infoprotect-configure-classification.md)步骤的信息和链接，了解如何在生产环境中部署 Office 365 保留标签。
 

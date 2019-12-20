@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d83b659a98c56cc59e88f9777aa73ca2e25b745
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: ee14dcc1c2ae0a2bc6fa3c094d757441515f00de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910818"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807011"
 ---
 # <a name="alertevents"></a>AlertEvents
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高级搜寻](advanced-hunting-overview.md)架构中的 `AlertEvents` 表包含有关 Microsoft Defender ATP 警报的信息。 使用此参考来构建从此表返回信息的查询。
 
@@ -36,9 +36,9 @@ ms.locfileid: "39910818"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `AlertId` | string | 警报的唯一标识符 |
-| `EventTime` | datetime | 记录事件的日期和时间 |
-| `MachineId` | string | 服务中的计算机的唯一标识符 |
-| `ComputerName` | string | 计算机的完全限定域名 (FQDN) |
+| `Timestamp` | datetime | 记录事件的日期和时间 |
+| `DeviceId` | string | 服务中的计算机的唯一标识符 |
+| `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `Severity` | string | 指示警报所标识的威胁指示器或违反活动的潜在影响（高、中或低） |
 | `Category` | string | 由警报标识的威胁指示器或违反活动的类型 |
 | `Title` | string | 警报的标题 |
@@ -46,7 +46,7 @@ ms.locfileid: "39910818"
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `RemoteUrl` | string | 连接到的 URL 或完全限定域名 (FQDN) |
 | `RemoteIP` | string | 连接到的 IP 地址 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 要标识唯一事件，此列必须与 ComputerName 和 EventTime 列一起使用 |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用 |
 | `Table` | string | 包含事件详细信息的表 |
 
 ## <a name="related-topics"></a>相关主题

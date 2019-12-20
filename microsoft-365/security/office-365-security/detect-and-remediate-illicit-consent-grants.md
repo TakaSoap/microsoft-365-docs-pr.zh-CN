@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: 10c03fe0370732e9cb1a10a55767648ae0ddb80b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 46387f82a38c33debdc24a6825479bf3183f0283
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971720"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808427"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
 
@@ -101,7 +101,7 @@ ms.locfileid: "39971720"
 
 3. 以管理员身份打开 PowerShell 实例，并打开将脚本保存到的文件夹。
 
-4. 使用[AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) cmdlet 连接到您的目录。
+4. 使用[AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) cmdlet 连接到您的目录。
 
 5. 运行此 PowerShell 命令：
 
@@ -140,9 +140,9 @@ ms.locfileid: "39971720"
 
   - 在深化中单击 "**删除**"。
 
-- 您可以按照[AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant?view=azureadps-2.0)中的步骤撤销对 PowerShell 的 OAuth 同意授权。
+- 您可以按照[AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant)中的步骤撤销对 PowerShell 的 OAuth 同意授权。
 
-- 您可以按照[AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment?view=azureadps-2.0)中的步骤，通过 PowerShell 吊销服务应用程序角色分配。
+- 您可以按照[AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment)中的步骤，通过 PowerShell 吊销服务应用程序角色分配。
 
 - 您还可以完全禁用受影响帐户的登录，这将禁用对该帐户中的数据的应用程序访问。 这并不是最终用户的工作效率的理想之处，但如果您正在努力快速限制影响，则它可能是一个可行的短期补救措施。
 
@@ -150,7 +150,7 @@ ms.locfileid: "39971720"
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
 
-你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用[Office 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
+你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Office 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
 
 - 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
 

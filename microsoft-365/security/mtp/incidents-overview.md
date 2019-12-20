@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 989184c5dd8af6aafc525100e34e0172d96adcfe
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 1e157ff8c7c2ac61790b4be74c43553eb0807eb2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910811"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808727"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的事件概述
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 所有事件的基础是警报。 当网络中出现恶意事件或活动时，将创建警报。 各个警报提供有关各个事件或实体的最新情况的有价值线索。 但是，攻击通常使用各种攻击媒介来发动入侵。 将各个线索结合在一起可能是一项艰巨且耗时的任务。 
 

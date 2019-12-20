@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。
-ms.openlocfilehash: 06c74b578d7c18ad2f193bcbd4a8f9cdb6794416
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970868"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808437"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>配置出站垃圾邮件策略
 
@@ -61,11 +61,11 @@ ms.locfileid: "39970868"
 
    使用该设置指定的域管理员将收到该用户的出站邮件被阻止的通知。  若要查看此通知的样式，请参阅[发件人被阻止发送出站垃圾邮件时的示例通知](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)。
 
-   [注释！]还会生成一个系统警报，指示用户已受到限制。  若要了解有关警报以及如何恢复用户的详细信息，请参阅[发送垃圾电子邮件后，从受限用户门户中删除用户](removing-user-from-restricted-users-portal-after-spam.md)。
+   > [注释！]还会生成一个系统警报，指示用户已受到限制。  若要了解有关警报以及如何恢复用户的详细信息，请参阅[发送垃圾电子邮件后，从受限用户门户中删除用户](removing-user-from-restricted-users-portal-after-spam.md)。
 
 4. 展开 "**收件人限制**" 部分，指定用户可以向其发送的最大收件人数、内部和外部收件人的每小时收件人数以及每天的最大数量。
 
-    [注释！]任何输入的最大数量为10000。  有关详细信息，请参阅[Exchange online 中的接收和发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+    > [注释！]任何输入的最大数量为10000。  有关详细信息，请参阅[Exchange online 中的接收和发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 7. 指定当用户超过指定限制时要执行的**操作**。  可能的操作如下所示：
     * **限制用户在以下日期之前发送邮件**。  一旦超出任何发送限制（内部、外部或每日），将为管理员生成一个警报，并且用户将无法在下一天（基于 UTC 时间）发送任何后续电子邮件。 管理员无法替代此块。
@@ -103,7 +103,7 @@ ms.locfileid: "39970868"
 
 8. 单击 "**保存**"
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>详细信息
 
 [发送垃圾电子邮件后，从受限用户门户删除用户](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
 

@@ -15,23 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 03cd648a178d63b2b964e0136c105068f4d1c6ca
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 23942b1d39bacfab470d41fca1ea630ad7b80ea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910826"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808697"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>通过 Microsoft 威胁防护中的高级搜寻主动搜寻威胁
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。 你可以主动检查网络中的事件来找到感兴趣的指示器和实体。 灵活访问数据有助于无约束搜寻已知威胁和潜在威胁。
 
-在 Microsoft 365 安全中心中，高级搜寻支持从 Microsoft Defender ATP 中查看数据（涵盖来自已载入设备的数据）以及从 Office 365 ATP 中查看数据（提供来自电子邮件的数据）的查询。 若要使用高级搜寻，请[打开 Microsoft 威胁防护](mtp-enable.md)。
+在 Microsoft 365 安全中心中，高级搜索支持从 Microsoft Defender ATP 中查看数据的查询，其中包含来自载入设备的数据和 Office 365 ATP，从而提供来自电子邮件的数据。 若要使用高级搜寻，请[打开 Microsoft 威胁防护](mtp-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 

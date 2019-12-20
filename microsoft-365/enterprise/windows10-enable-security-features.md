@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: c1c39745b2dc891b4dc079ecd657eaf0d883af23
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d7e71eda9cf0750ce44a978dca742b43f2101d63
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627456"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801257"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>步骤5：部署 Windows 10 企业版安全功能
 
-![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![阶段 3：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 提供了保护企业用户、停止威胁和防止数据丢失的安全功能。 
 
@@ -92,7 +92,7 @@ Windows Defender 攻击防护是一组新的 Windows 10 主机入侵防护功能
 
 <a name="windows10-sec-atp"></a>
 ## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender 高级威胁防护
-Microsoft Defender ATP 仅适用于 Microsoft 365 企业版 E5 计划，它是一项安全服务，使企业客户能够检测、调查和响应其网络上的高级威胁。 有关 Microsoft Defender ATP、最低要求以及如何管理此功能的详细信息，请参阅：
+Microsoft Defender ATP 仅适用于 Microsoft 365 E5 计划，它是一项安全服务，使企业客户能够检测、调查和响应其网络上的高级威胁。 有关 Microsoft Defender ATP、最低要求以及如何管理此功能的详细信息，请参阅：
 
 * [Microsoft Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [最低要求](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)
