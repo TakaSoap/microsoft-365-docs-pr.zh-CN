@@ -1,6 +1,6 @@
 ---
-title: Web 内容辅助功能准则 2.1
-description: Microsoft 发布了 WCAG 2.1 AA 报告，其中反映了整个产品/服务或者产品中可单独安装的部分。
+title: Web 内容辅助功能准则
+description: Microsoft 发布了 WCAG AA 报告，其中反映了整个产品/服务或者产品中可单独安装的部分。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -11,59 +11,53 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a1887bd2b6c04836ebb11d224fcc59debcd88e55
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 316347bb212e415848586c88936bd345fd5d1a94
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859442"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804205"
 ---
-# <a name="web-content-accessibility-guidelines-21"></a><span data-ttu-id="81e76-104">Web 内容辅助功能准则 2.1</span><span class="sxs-lookup"><span data-stu-id="81e76-104">Web Content Accessibility Guidelines 2.1</span></span>
+# <a name="web-content-accessibility-guidelines"></a><span data-ttu-id="c90e5-104">Web 内容辅助功能准则</span><span class="sxs-lookup"><span data-stu-id="c90e5-104">Web Content Accessibility Guidelines 2.1</span></span>
 
-## <a name="about-wcag-21"></a><span data-ttu-id="81e76-105">关于 WCAG 2.1</span><span class="sxs-lookup"><span data-stu-id="81e76-105">About WCAG 2.1</span></span>
+## <a name="about-wcag"></a><span data-ttu-id="c90e5-105">关于 WCAG</span><span class="sxs-lookup"><span data-stu-id="c90e5-105">About WCAG 2.1</span></span>
 
-<span data-ttu-id="81e76-106">WCAG 2.1 提供了一个 Web 内功开发框架，除了帮助使用图形化能力有限的设备的用户，还让残障人士更易访问这些内容。</span><span class="sxs-lookup"><span data-stu-id="81e76-106">WCAG 2.1 provides a framework for developing web content that improves accessibility for people with disabilities, in addition to users of devices with limited graphical abilities.</span></span> <span data-ttu-id="81e76-107">WCAG 2.0 是万维网联盟 (W3C)（一家致力于制定 Web 标准的国际组织）于 2008 年发布的，在 2018 年 6 月更新为 WCAG 2.1 版。</span><span class="sxs-lookup"><span data-stu-id="81e76-107">WCAG 2.0 was published in 2008 by the World Wide Web Consortium (W3C), an international organization dedicated to creating web standards, and updated to WCAG 2.1 in June 2018.</span></span> <span data-ttu-id="81e76-108">2012 年，国际标准化组织 (ISO) 也以 ISO/IEC 40500:2012 的形式发布了 WCAG 2.0。</span><span class="sxs-lookup"><span data-stu-id="81e76-108">In 2012, WCAG 2.0 was also published by the International Organization for Standardization (ISO) as ISO/IEC 40500:2012.</span></span>  
+<span data-ttu-id="c90e5-106">Web 内容辅助功能准则 (WCAG) 提供了使 Web 内容更便于残障人士使用的框架。</span><span class="sxs-lookup"><span data-stu-id="c90e5-106">The Web Content Accessibility Guidelines (WCAG) provide a framework for making web content more accessible for people with disabilities.</span></span> <span data-ttu-id="c90e5-107">WCAG 2.0 版是万维网联盟 (W3C)（一家致力于制定 Web 标准的国际组织）于 2008 年发布的，在 2018 年 6 月更新为 WCAG 2.1 版。</span><span class="sxs-lookup"><span data-stu-id="c90e5-107">WCAG 2.0 was published in 2008 by the World Wide Web Consortium (W3C), an international organization dedicated to creating web standards, and updated to WCAG 2.1 in June 2018.</span></span> <span data-ttu-id="c90e5-108">2012 年，国际标准化组织 (ISO) 也以 ISO/IEC 40500:2012 的形式发布了 WCAG 2.0。</span><span class="sxs-lookup"><span data-stu-id="c90e5-108">In 2012, WCAG 2.0 was also published by the International Organization for Standardization (ISO) as ISO/IEC 40500:2012.</span></span>
+
+<span data-ttu-id="c90e5-109">符合 WCAG 2.1 的内容也符合 WCAG 2.0。</span><span class="sxs-lookup"><span data-stu-id="c90e5-109">Content that conforms to WCAG 2.1 also conforms to WCAG 2.0.</span></span> <span data-ttu-id="c90e5-110">对于需遵从 WCAG 2.0 的策略，WCAG 2.1 可提供替代合规方法。</span><span class="sxs-lookup"><span data-stu-id="c90e5-110">For policies requiring conformance to WCAG 2.0, WCAG 2.1 can provide an alternate means of conformance.</span></span>
+
+<span data-ttu-id="c90e5-111">Microsoft 是面向世界各地的消费者、企业和政府的主要软件和云服务提供商。</span><span class="sxs-lookup"><span data-stu-id="c90e5-111">Microsoft is a major software and cloud-services provider to consumers, businesses, and governments around the world.</span></span> <span data-ttu-id="c90e5-112">为了帮助客户做出购买决策，Microsoft 发布了辅助功能一致性报告，其中描述了我们的产品和服务对 WCAG 标准的支持程度。</span><span class="sxs-lookup"><span data-stu-id="c90e5-112">To assist customers in making purchasing decisions, Microsoft publishes Accessibility Conformance Reports describing the extent to which our products and services support the WCAG criteria.</span></span> <span data-ttu-id="c90e5-113">此信息可帮助 Microsoft 客户确定特定产品或服务是否能满足其特定需求。</span><span class="sxs-lookup"><span data-stu-id="c90e5-113">This information can help Microsoft customers determine whether a particular product or service will meet their specific needs.</span></span>
   
-<span data-ttu-id="81e76-109">符合 WCAG 2.1 的内容也符合 WCAG 2.0。</span><span class="sxs-lookup"><span data-stu-id="81e76-109">Content that conforms to WCAG 2.1 also conforms to WCAG 2.0.</span></span> <span data-ttu-id="81e76-110">对于需遵从 WCAG 2.0 的策略，WCAG 2.1 可提供替代合规方法。</span><span class="sxs-lookup"><span data-stu-id="81e76-110">For policies requiring conformance to WCAG 2.0, WCAG 2.1 can provide an alternate means of conformance.</span></span>  
-  
-<span data-ttu-id="81e76-111">每个准则的遵从要求都按 A、AA 和 AAA 这三个级别进行衡量。</span><span class="sxs-lookup"><span data-stu-id="81e76-111">Conformance requirements for each guideline are measured in three levels: A, AA, and AAA.</span></span> <span data-ttu-id="81e76-112">Microsoft 是世界各地国家/地区和政府的主要软件及云服务提供商，因此它承诺遵守各项相关[国际标准和合规控制措施](https://go.microsoft.com/fwlink/p/?linkid=2052226)。</span><span class="sxs-lookup"><span data-stu-id="81e76-112">Because Microsoft is a major software and cloud-services provider to states and governments around the world, it is committed to complying with all relevant [international standards and compliance controls](https://go.microsoft.com/fwlink/p/?linkid=2052226).</span></span> <span data-ttu-id="81e76-113">通过坚持这些广泛的无障碍标准，Microsoft 保护政府内外各方客户都可使用 Microsoft 服务和产品。</span><span class="sxs-lookup"><span data-stu-id="81e76-113">By adhering to these wide-ranging accessibility standards, Microsoft ensures that all customers — both inside and outside of government — can use Microsoft services and products.</span></span>  
+## <a name="microsoft-and-wcag"></a><span data-ttu-id="c90e5-114">Microsoft 与 WCAG</span><span class="sxs-lookup"><span data-stu-id="c90e5-114">Microsoft and WCAG 2.1</span></span>
 
-## <a name="microsoft-and-wcag-21"></a><span data-ttu-id="81e76-114">Microsoft 与 WCAG 2.1</span><span class="sxs-lookup"><span data-stu-id="81e76-114">Microsoft and WCAG 2.1</span></span>
+<span data-ttu-id="c90e5-115">Microsoft 在产品和服务开发中对 WCAG 标准的考虑表明了其致力于使所有客户都能使用技术和数据。</span><span class="sxs-lookup"><span data-stu-id="c90e5-115">Microsoft’s consideration of the WCAG standard in the development of products and services points to its commitment to making technology and data accessible for all customers.</span></span>
 
-<span data-ttu-id="81e76-115">Microsoft 遵守 WCAG 2.1 (ISO/IEC 40500) 标准表明了它承诺让所有客户都更易访问技术和数据。</span><span class="sxs-lookup"><span data-stu-id="81e76-115">Microsoft’s adherence to the WCAG 2.1 (ISO/IEC 40500) standard points to its commitment to making technology and data accessible for all customers.</span></span> <span data-ttu-id="81e76-116">WCAG 2.1 (ISO/IEC 40500) 是一项国际无障碍要求，对欧洲的 EN 301 549 和美国的第 508 条规定进行了补充。</span><span class="sxs-lookup"><span data-stu-id="81e76-116">WCAG 2.1 (ISO/IEC 40500) is the international accessibility requirement that complements EN 301 549 (Europe) and Section 508 (U.S.).</span></span>  
-  
-<span data-ttu-id="81e76-117">Microsoft 发布了 WCAG 2.1 报告，其中反映的是完整的产品或服务。</span><span class="sxs-lookup"><span data-stu-id="81e76-117">Microsoft publishes WCAG 2.1 reports that reflect the complete product or service.</span></span> <span data-ttu-id="81e76-118">它通常不对单个功能或组件创建报告。</span><span class="sxs-lookup"><span data-stu-id="81e76-118">It generally does not create reports for individual features or components.</span></span> <span data-ttu-id="81e76-119">有时，Microsoft 可能会对现有产品发布新的组件，或者发布现有组件的新版本 - 用户可选择单独安装它们，此时 Microsoft 可能也会对该组件发布 WCAG 2.1 报告。</span><span class="sxs-lookup"><span data-stu-id="81e76-119">Sometimes, Microsoft might release a new component for an existing product, or a new version of an existing component, which users can choose to install separately, and Microsoft might also publish a WCAG 2.1 report for that component.</span></span>  
-  
-[<span data-ttu-id="81e76-120">下载 WCAG 2.1 (ISO/IEC 40500) 辅助功能标准</span><span class="sxs-lookup"><span data-stu-id="81e76-120">Download the WCAG 2.1 (ISO/IEC 40500) accessibility standards</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+<span data-ttu-id="c90e5-116">Microsoft 发布的 WCAG 报告反映了完整的产品或服务。</span><span class="sxs-lookup"><span data-stu-id="c90e5-116">Microsoft publishes WCAG 2.1 reports that reflect the complete product or service.</span></span> <span data-ttu-id="c90e5-117">该公司通常不对单个功能或组件创建报告。</span><span class="sxs-lookup"><span data-stu-id="c90e5-117">It generally does not create reports for individual features or components.</span></span> <span data-ttu-id="c90e5-118">有时，Microsoft 可能会对现有产品发布新的组件，或者发布现有组件的新版本（用户可选择单独安装它们），此时 Microsoft 可能也会对该组件发布 WCAG 报告。</span><span class="sxs-lookup"><span data-stu-id="c90e5-118">Sometimes, Microsoft might release a new component for an existing product, or a new version of an existing component, which users can choose to install separately, and Microsoft might also publish a WCAG 2.1 report for that component.</span></span>
 
-## <a name="microsoft-in-scope-cloud-services"></a><span data-ttu-id="81e76-121">Microsoft 范围内的云服务</span><span class="sxs-lookup"><span data-stu-id="81e76-121">Microsoft in-scope cloud services</span></span>
+[<span data-ttu-id="c90e5-119">下载 WCAG (ISO/IEC 40500) 辅助功能标准</span><span class="sxs-lookup"><span data-stu-id="c90e5-119">Download the WCAG 2.1 (ISO/IEC 40500) accessibility standards</span></span>](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
-- [<span data-ttu-id="81e76-122">Azure 与 Azure 政府</span><span class="sxs-lookup"><span data-stu-id="81e76-122">Azure and Azure Government</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2051569)
-- <span data-ttu-id="81e76-123">Azure DevOps Services</span><span class="sxs-lookup"><span data-stu-id="81e76-123">Azure DevOps Services</span></span>
-- <span data-ttu-id="81e76-124">Dynamics 365 和 Dynamics 365 美国政府</span><span class="sxs-lookup"><span data-stu-id="81e76-124">Dynamics 365 and Dynamics 365 U.S. Government</span></span>
-- <span data-ttu-id="81e76-125">Intune</span><span class="sxs-lookup"><span data-stu-id="81e76-125">Intune</span></span>
-- <span data-ttu-id="81e76-126">Office 365 和 Office 365 US 政府计划</span><span class="sxs-lookup"><span data-stu-id="81e76-126">Office 365 and Office 365 U.S. Government</span></span>
-- <span data-ttu-id="81e76-127">Office 365 美国政府防御版</span><span class="sxs-lookup"><span data-stu-id="81e76-127">Office 365 U.S. Government Defense</span></span>
-- <span data-ttu-id="81e76-128">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="81e76-128">Windows Server 2016</span></span>
+## <a name="microsoft-in-scope-cloud-services"></a><span data-ttu-id="c90e5-120">Microsoft 范围内云服务</span><span class="sxs-lookup"><span data-stu-id="c90e5-120">Microsoft in-scope cloud services</span></span>
 
-## <a name="microsoft-accessibility-conformance-reports"></a><span data-ttu-id="81e76-129">Microsoft 辅助功能遵从报告</span><span class="sxs-lookup"><span data-stu-id="81e76-129">Microsoft accessibility conformance reports</span></span>
+- [<span data-ttu-id="c90e5-121">Azure 与 Azure 政府</span><span class="sxs-lookup"><span data-stu-id="c90e5-121">Azure and Azure Government</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2051569)
+- <span data-ttu-id="c90e5-122">Azure DevOps Services</span><span class="sxs-lookup"><span data-stu-id="c90e5-122">Azure DevOps Services</span></span>
+- <span data-ttu-id="c90e5-123">Dynamics 365 和 Dynamics 365 美国政府</span><span class="sxs-lookup"><span data-stu-id="c90e5-123">Dynamics 365 and Dynamics 365 U.S. Government</span></span>
+- <span data-ttu-id="c90e5-124">Intune</span><span class="sxs-lookup"><span data-stu-id="c90e5-124">Intune</span></span>
+- <span data-ttu-id="c90e5-125">Office 365 和 Office 365 US 政府计划</span><span class="sxs-lookup"><span data-stu-id="c90e5-125">Office 365 and Office 365 U.S. Government</span></span>
+- <span data-ttu-id="c90e5-126">Office 365 美国政府防御版</span><span class="sxs-lookup"><span data-stu-id="c90e5-126">Office 365 U.S. Government Defense</span></span>
+- <span data-ttu-id="c90e5-127">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="c90e5-127">Windows Server 2016</span></span>
 
-<span data-ttu-id="81e76-130">查找我们各项产品和服务的 WCAG 报告。</span><span class="sxs-lookup"><span data-stu-id="81e76-130">Find WCAG reports for all our products and services.</span></span>
+## <a name="microsoft-accessibility-conformance-reports"></a><span data-ttu-id="c90e5-128">Microsoft 辅助功能一致性报告</span><span class="sxs-lookup"><span data-stu-id="c90e5-128">Microsoft accessibility conformance reports</span></span>
 
-[<span data-ttu-id="81e76-131">**了解详细信息**</span><span class="sxs-lookup"><span data-stu-id="81e76-131">**Learn more**</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2050974)
+<span data-ttu-id="c90e5-129">阅读[我们所有产品和服务](https://go.microsoft.com/fwlink/p/?linkid=205097)的 WCAG 报告。</span><span class="sxs-lookup"><span data-stu-id="c90e5-129">Find WCAG reports for all our products and services.</span></span>
 
-## <a name="resources"></a><span data-ttu-id="81e76-132">资源</span><span class="sxs-lookup"><span data-stu-id="81e76-132">Resources</span></span>
+## <a name="resources"></a><span data-ttu-id="c90e5-130">资源</span><span class="sxs-lookup"><span data-stu-id="c90e5-130">Resources</span></span>
 
-<span data-ttu-id="81e76-133">[Microsoft 辅助功能网站 - 学习如何使用辅助功能，了解 Microsoft 通过创新来帮助人实现更多目标的方式。</span><span class="sxs-lookup"><span data-stu-id="81e76-133">[Microsoft accessibility site — Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.</span></span>
+- <span data-ttu-id="c90e5-131">[Microsoft 辅助功能网站](https://www.microsoft.com/accessibility)：获取有关使用辅助功能的信息，并了解 Microsoft 通过创新来帮助所有人实现更多目标的方式。</span><span class="sxs-lookup"><span data-stu-id="c90e5-131">[Microsoft accessibility site — Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.</span></span>
+- <span data-ttu-id="c90e5-132">[Office 365 辅助功能中心](https://go.microsoft.com/fwlink/p/?linkid=2051801)：适用于残疾人士的 Office 365 资源。</span><span class="sxs-lookup"><span data-stu-id="c90e5-132">[Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): Office 365 resources for people with disabilities.</span></span>
+- <span data-ttu-id="c90e5-133">[企业级辅助功能咨询台](https://go.microsoft.com/fwlink/p/?linkid=2050890)：针对就我们的产品和服务或合规性抱有可访问性方面的问题的企业客户提供专属支持。</span><span class="sxs-lookup"><span data-stu-id="c90e5-133">[Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.</span></span>
+- [<span data-ttu-id="c90e5-134">Microsoft 信任中心内的合规性</span><span class="sxs-lookup"><span data-stu-id="c90e5-134">Compliance on the Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-[<span data-ttu-id="81e76-134">Office 365 辅助功能中心</span><span class="sxs-lookup"><span data-stu-id="81e76-134">Office 365 Accessibility Center</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2051801)
-    - <span data-ttu-id="81e76-135">Office 365 面向残障人士的资源。</span><span class="sxs-lookup"><span data-stu-id="81e76-135">Office 365 resources for people with disabilities.</span></span>
+## <a name="download-the-offering-backgrounder"></a><span data-ttu-id="c90e5-135">下载产品/服务背景信息</span><span class="sxs-lookup"><span data-stu-id="c90e5-135">Download the offering backgrounder</span></span>
 
-[<span data-ttu-id="81e76-136">企业级辅助功能咨询台</span><span class="sxs-lookup"><span data-stu-id="81e76-136">Enterprise Disability Answer Desk</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2050890)
-    - <span data-ttu-id="81e76-137">针对就我们的产品和服务或合规性抱有可访问性方面的问题的企业客户提供专属支持。</span><span class="sxs-lookup"><span data-stu-id="81e76-137">Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.</span></span>
-
-[<span data-ttu-id="81e76-138">Microsoft 信任中心内的合规性</span><span class="sxs-lookup"><span data-stu-id="81e76-138">Compliance on the Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a><span data-ttu-id="81e76-139">下载产品/服务背景信息</span><span class="sxs-lookup"><span data-stu-id="81e76-139">Download the offering backgrounder</span></span>
-
-<span data-ttu-id="81e76-140">需要此产品/服务的背景信息文档？</span><span class="sxs-lookup"><span data-stu-id="81e76-140">Do you need the backgrounder document for this offering?</span></span> <span data-ttu-id="81e76-141">请下载 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)。</span><span class="sxs-lookup"><span data-stu-id="81e76-141">Download the [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).</span></span>
+<span data-ttu-id="c90e5-136">需要此产品/服务的背景信息文档？</span><span class="sxs-lookup"><span data-stu-id="c90e5-136">Do you need the backgrounder document for this offering?</span></span> <span data-ttu-id="c90e5-137">请下载 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)。</span><span class="sxs-lookup"><span data-stu-id="c90e5-137">Download the [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).</span></span>
