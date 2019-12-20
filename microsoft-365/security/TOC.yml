@@ -157,7 +157,7 @@
             - name: 配置 Office 365 租户以提高安全性
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: 新 Microsoft 365 安全中心
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
             - name: 安全与合规中心的权限
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: 向用户授予对安全中心的访问权限
@@ -405,7 +405,7 @@
             - name: 在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
               href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
             - name: 响应 Office 365 中遭到入侵的电子邮件帐户
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
         - name: 邮件流
           items:
             - name: 启用报表消息加载项

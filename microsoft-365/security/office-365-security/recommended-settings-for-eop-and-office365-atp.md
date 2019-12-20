@@ -1,7 +1,8 @@
 ---
-title: Microsoft 针对 EOP 和 Office 365 的建议使用 ATP 安全设置、建议、发件人策略框架、基于域的邮件报告和符合性、域密钥识别的邮件、步骤、工作原理等
+title: Microsoft for EOP and Office 365 的建议和 Office ATP 安全设置、建议、发件人策略框架、基于域的邮件报告和符合性、域密钥识别的邮件、步骤、工作方式、安全基准和 EOP 的基准ATP 的基线，设置 ATP，设置 EOP，配置 ATP，配置 EOP，安全配置
 ms.author: tracyp
 author: MSFTTracyP
+ms.date: 12/12/2019
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -13,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 60042d5903a9dadd178fe68b3a73a3a2b9148798
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971540"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807967"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -44,7 +45,7 @@ ms.locfileid: "39971540"
 |网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |高可信度网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |批量电子邮件检测操作|将邮件移动到 "垃圾邮件" 文件夹|隔离邮件||
-|将批量电子邮件阈值设置为|6 |4 |默认值为7，但我们建议您将其更改为6。 有关详细信息，请参阅[批量投诉级别值](bulk-complaint-level-values.md)。|
+|将批量电子邮件阈值设置为|6 |4|默认值为7，但我们建议您将其更改为6。 有关详细信息，请参阅[批量投诉级别值](bulk-complaint-level-values.md)。|
 |隔离保留期|30 天|30 天||
 |安全提示|打开|打开||
 |允许的发件人|无|无||
@@ -57,23 +58,23 @@ ms.locfileid: "39971540"
 
 反垃圾邮件策略中有几个称为高级垃圾邮件筛选器的参数在此撰写时被弃用。 我们推荐的设置是为标准和严格级别**关闭它们：**
 
-|安全功能名称|
-|---------|
-|IncreaseScoreWithImageLinks|
-|IncreaseScoreWithNumericIps|
-|IncreaseScoreWithRedirectToOtherPort|
-|IncreaseScoreWithBizOrInfoUrls|
-|MarkAsSpamEmptyMessages|
-|MarkAsSpamJavaScriptInHtml|
-|MarkAsSpamFramesInHtml|
-|MarkAsSpamObjectTagsInHtml|
-|MarkAsSpamEmbedTagsInHtml|
-|MarkAsSpamFormTagsInHtml|
-|MarkAsSpamWebBugsInHtml|
-|MarkAsSpamSensitiveWordList|
-|MarkAsSpamFromAddressAuthFail|
-|MarkAsSpamNdrBackscatter|
-|MarkAsSpamSpfRecordHardFail|
+|安全功能名称| Comments |
+|---------|---------|
+|IncreaseScoreWithImageLinks| |
+|IncreaseScoreWithNumericIps| |
+|IncreaseScoreWithRedirectToOtherPort| |
+|IncreaseScoreWithBizOrInfoUrls| |
+|MarkAsSpamEmptyMessages| |
+|MarkAsSpamJavaScriptInHtml| |
+|MarkAsSpamFramesInHtml| |
+|MarkAsSpamObjectTagsInHtml| |
+|MarkAsSpamEmbedTagsInHtml| |
+|MarkAsSpamFormTagsInHtml| |
+|MarkAsSpamWebBugsInHtml| |
+|MarkAsSpamSensitiveWordList| |
+|MarkAsSpamFromAddressAuthFail| |
+|MarkAsSpamNdrBackscatter| |
+|MarkAsSpamSpfRecordHardFail| |
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>EOP 出站垃圾邮件筛选器策略设置
 
@@ -166,3 +167,14 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |ATP 安全附件未知的恶意软件响应|阻止|阻止||
 |在检测时重定向附件|已启用|已启用|重定向到安全管理员的电子邮件地址，该管理员知道如何确定附件是否为恶意软件|
 |如果恶意软件扫描附件超时或发生错误，则 ATP 安全附件响应|已启用|已启用||
+
+
+## <a name="related-topics"></a>相关主题
+
+- 您是否正在寻找与**Exchange 邮件流/Exchange 传输规则**有关的最佳实践？ 有关详细信息，请参阅[本文](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop)。
+
+- 将可疑邮件、可疑垃圾邮件、网络钓鱼或 Url 发送给 Microsoft 进行扫描。 请按照[本文](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)中的**管理提交**说明进行操作。
+
+- 使用这些链接可获取有关如何**设置** [EOP 服务](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的信息，以及**配置** [Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 （请不要忘记在 "防御[Office 365 中的威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)" 中了解有用的说明。）
+
+- 可在[此处](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)获取适用于 GPO/本地选项的**Windows 安全基准**，并在[此处](https://docs.microsoft.com/intune/protect/security-baselines)查找基于 Intune 的安全性。 最后，Microsoft Defender 高级威胁防护（ATP）和 Windows Intune 安全基准之间的比较[如下所示](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)。

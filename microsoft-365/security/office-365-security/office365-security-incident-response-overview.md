@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 此解决方案告诉您在 Office 365 中最常见的 cybersecurity 攻击可能如下所示，以及如何对其做出响应
-ms.openlocfilehash: d908b32a5c3cb01476ab9b7604861eb94c7a2745
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971590"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823824"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全事件响应
 
@@ -51,11 +51,11 @@ ms.locfileid: "39971590"
 
 ## <a name="incident-response-articles"></a>事件响应文章
 
-- [响应 Office 365 中遭到入侵的电子邮件帐户](~/compliance/responding-to-a-compromised-email-account.md)
+- [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
 
-你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用[Office 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
+你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用“[Office 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
 
 - 需要在前 30 天完成的任务。  这些任务会对你的用户产生直接影响并且影响很小。
 

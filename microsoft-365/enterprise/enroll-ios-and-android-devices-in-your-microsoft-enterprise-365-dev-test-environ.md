@@ -3,7 +3,7 @@ title: 在 Microsoft 365 企业版测试环境中注册 iOS 和 Android 设备
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/11/2018
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在 Microsoft 365 测试环境中注册设备，并远程管理这些设备。
-ms.openlocfilehash: b98e184d3216a779fc495cf65b73d3a2b212e257
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 98670e64045b36dcdafb46c6ff798b8be7fd6dc1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694069"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801867"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中注册 iOS 和 Android 设备
 
@@ -25,7 +25,7 @@ ms.locfileid: "38694069"
 
 按照本文中提供的说明操作，您将能够在 Microsoft 365 企业版测试环境中注册和测试适用于 iOS 和 Android 设备的基本移动设备管理功能。
 
-![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
@@ -55,7 +55,7 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。 如果有人�
 远程锁定 iOS 或 Android 设备：
 
 1. [https://portal.azure.com](https://portal.azure.com)使用全局管理员帐户的凭据登录到 Azure 门户。
-2. 单击 "**所有服务**"，键入**Intune**，然后单击 " **intune**"。
+2. 在浏览器的 "Azure 门户" 选项卡上，在搜索框中键入**Intune** ，然后单击 " **intune**"。
 3. 单击 "**设备 > 所有设备**"。
 4. 在设备列表中，单击一个 iOS 或 Android 设备，然后单击**远程锁定**操作。
 
@@ -63,7 +63,7 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。 如果有人�
 远程重置密码：
 
 1. 如果需要，请[https://portal.azure.com](https://portal.azure.com)使用全局管理员帐户的凭据登录到 Azure 门户。
-2. 单击 "**所有服务**"，键入**Intune**，然后单击 " **intune**"。
+2. 在浏览器的 "Azure 门户" 选项卡上，在搜索框中键入**Intune** ，然后单击 " **intune**"。
 3. 单击 "**设备 > 所有设备**"。
 4. 从管理的设备列表中，单击 iOS 或 Android 设备，然后选择 **.。。更多**。 然后选择 "**删除密码**设备远程操作"。
 

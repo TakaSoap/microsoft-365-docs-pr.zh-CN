@@ -1,4 +1,4 @@
-另请参阅[先决条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)，获得有关标识基础结构的其他建议。
+另请参阅[先决条件](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites)，获得有关标识基础结构的其他建议。
 
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必需：全局管理员帐户受到保护 
@@ -14,7 +14,7 @@
 使用这些步骤验证是否已保护全局管理员帐户：
 
 1. 在 PowerShell 命令提示符处运行以下 Azure Active Directory PowerShell Graph 命令。 你应该只会看到专用全局管理员帐户列表。
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. 使用步骤 1 中的每个帐户登录到 Office 365。 每个登录必须要求 Azure 多重身份验证和组织中可用的最强形式的辅助身份验证。
@@ -93,7 +93,7 @@
 5.  删除该测试用户帐户。
 
 <a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限 Microsoft 365 Enterprise E5）
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限 Microsoft 365 E5）
 
 已启用 Azure AD Identity Protection，可以：
 

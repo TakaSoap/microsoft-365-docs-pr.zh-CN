@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 为 Microsoft 365 了解和配置提升的安全性。
-ms.openlocfilehash: 290b10dd8e0bf9a7180bae72669b22f3d575f914
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370169"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801677"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>步骤 3：为 Microsoft 365 配置提升的安全性:
 
@@ -43,7 +43,7 @@ ms.locfileid: "37370169"
 - 保护电子邮件中的[链接](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)和[附件](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments)。 
 - 为 Exchange Online 中的电子邮件和 [SharePoint Online、OneDrive for Business 以及 Microsoft Teams 中的文件](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams)提供欺骗智能和防钓鱼功能。 
 
-Office 365 ATP 仅在 Microsoft 365 企业版 E5 中提供。
+Office 365 ATP 仅在 Microsoft 365 E5 中提供。
 
 |||
 |:-------|:-----|

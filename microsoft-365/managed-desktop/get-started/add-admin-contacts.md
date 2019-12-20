@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962609"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823834"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -44,7 +44,7 @@ IT 技术支持人员 | 如果我们的支持人员在 Microsoft 托管桌面支
 
 **你为这些联系人选择的任何人都需要了解有关 Microsoft 托管桌面环境的决策的知识和权威。** 在集成 Microsoft 托管桌面环境时，系统会提示你为本地帮助台和安全添加联系人。 
 
-[提交支持请求](../working-with-managed-desktop/support.md)时，需要管理员联系人。 您需要具有管理员联系人的支持请求的焦点区域。 
+[提交支持请求](../service-description/support.md)时，需要管理员联系人。 您需要具有管理员联系人的支持请求的焦点区域。 
 
 **添加管理员联系人**
 

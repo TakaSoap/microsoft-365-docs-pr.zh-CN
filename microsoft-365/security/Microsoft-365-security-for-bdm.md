@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 组织在其 Microsoft 365 环境中目前面临的最常见的威胁和攻击方案，以及缓解这些风险的建议操作。
-ms.openlocfilehash: 7a8e593a1e4280327b82802bb08a57370e4db652
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030516"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801247"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>适用于商业决策者的 Microsoft 365 安全决策者（Bdm）
 
@@ -25,7 +25,7 @@ ms.locfileid: "38030516"
 
 [![缩略图 Microsoft 365 BDM 安全建议电子表格](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft 向你提供租户中的安全分数工具，以根据你的常规活动自动分析安全状态、分配分数并提供安全改进建议。 在执行本文中建议的操作之前，请注意你当前的分数和建议。 本文中建议的操作将增加你的成绩。 目标不能达到最大分数，但请注意保护您的环境不会对用户的工作效率造成负面影响的机会。 请参阅[Microsoft 安全分数](mtp/microsoft-secure-score.md)。
+Microsoft 向你提供租户中的安全分数工具，以根据你的常规活动自动分析安全状态、分配分数并提供安全改进建议。 在执行本文中建议的操作之前，请注意你当前的分数和建议。 本文中建议的操作将增加你的成绩。 目标不能达到最大分数，但要了解以不会对用户的工作效率产生负面影响的方式来保护您的环境的机会。 请参阅[Microsoft 安全分数](mtp/microsoft-secure-score.md)。
 
 在开始之前，还需要做一点准备。 . . [请务必打开 Office 365 审核日志](../compliance/search-the-audit-log-in-security-and-compliance.md)。 稍后你将需要此数据，如果你需要调查事件或泄露。 
 
@@ -46,14 +46,14 @@ Microsoft 向你提供租户中的安全分数工具，以根据你的常规活�
 其他建议：
 - 确保不会为云服务的管理员角色分配从本地同步的帐户。 这有助于防止攻击者利用本地帐户获取云服务的管理访问权限。 
 - 确保不会为服务帐户分配管理员角色。 这些帐户通常不会通过不过期的密码进行监视和设置。 首先，确保 AADConnect 和 ADFS 服务帐户在默认情况下不是全局管理员。
-- 从管理员帐户中删除许可证。 除非有特定的用户用例将许可证分配给特定的管理员帐户，否则请从这些帐户中删除许可证。 
+- 从管理员帐户中删除许可证。 除非有特定用例将许可证分配给特定的管理员帐户，否则请从这些帐户中删除许可证。 
 
 ## <a name="reduce-the-surface-of-attack"></a>降低攻击的表面
 
 下一个重点领域是减少攻击的表面。 这样可以实现对用户和服务的最小努力和影响。 通过减少攻击的外围区域，攻击者可以使用更少的方法发起对组织的攻击。
 
 下面是一些示例：
-- 禁用 POP3、IMAP 和 SMTP 协议。 大多数新式组织不再使用这些旧协议。 您可以安全地禁用这些规则，并在需要时仅允许例外。 
+- 禁用 POP3、IMAP 和 SMTP 协议。 大多数新式组织不再使用这些旧协议。 您可以安全地禁用这些异常，并在需要时仅允许例外。 
 - 将租户中的全局管理员数减少，并将其保留为所需的绝对最小值。 这将直接降低所有云应用程序的攻击面。 
 - 停用在您的环境中不再使用的服务器和应用程序。 
 - 实施用于禁用和删除不再使用的帐户的过程。 

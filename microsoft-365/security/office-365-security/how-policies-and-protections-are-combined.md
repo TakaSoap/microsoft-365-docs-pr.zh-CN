@@ -1,6 +1,6 @@
 ---
 title: 当邮件为红色标记时，如何组合策略和保护
-description: 当电子邮件标记为恶意软件、垃圾邮件、高可信度垃圾邮件、网络钓鱼，以及 EOP 和/或 ATP 时，将应用哪些策略以及要采取的操作。
+description: 介绍当电子邮件遇到多个保护且由多个检测形式进行扫描时，将应用哪些策略和保护。 当电子邮件标记为恶意软件、垃圾邮件、高可信度垃圾邮件、网络钓鱼，以及 EOP 和/或 ATP 时，将应用哪些策略以及要采取的操作。
 keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074639"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807981"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>在您的电子邮件上运行多个保护方法和检测扫描时应用什么策略
 
@@ -27,27 +27,27 @@ ms.locfileid: "37074639"
 
 以下策略适用于_所有组织_。
 
-|优先级 |策略  |类别  |托管 |
+|优先级 |Policy  |类别  |托管 |
 |---------|---------|---------|---------|
 |1     | 恶意软件      | MALW      | 恶意软件策略   |
 |双面     | 网络钓鱼     | PHSH     | 配置垃圾邮件筛选器策略     |
 |第三章     | 高可信度垃圾邮件      | HSPM        | 配置垃圾邮件筛选器策略        |
 |4     | 网络钓鱼        | SPOOF        | 反网络钓鱼策略、欺骗性智能        |
 |5     | 垃圾邮件         | SPM         | 配置垃圾邮件筛选器策略         |
-|型     | 批量邮件         | BULK        | 配置垃圾邮件筛选器策略         |
+|6      | 批量邮件         | BULK        | 配置垃圾邮件筛选器策略         |
 
 此外，这些策略适用于_具有 ATP 的组织_。
 
-|优先级 |策略  |类别  |托管 |
+|优先级 |Policy  |类别  |托管 |
 |---------|---------|---------|---------|
-|步     | 域模拟         | DIMP         | 设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略        |
-|utf-8     | 用户模拟        | UIMP         | 设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略         |
+|7      | 域模拟         | DIMP         | 设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略        |
+|8      | 用户模拟        | UIMP         | 设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略         |
 
 例如，如果您有两个策略及其各自的优先级：
 
-|策略  |优先级  |用户/域模拟  |反欺骗  |
+|Policy  |优先级  |用户/域模拟  |反欺骗  |
 |---------|---------|---------|---------|
-|A     | 1        | 开        |关         |
+|A     | 1        | 开        |关闭         |
 |B     | 双面        | 关        | 开        |
 
 如果一封邮件被标识为_用户模拟_和_欺骗_（请参阅上表中的反欺骗），并且范围限定为策略 a 的同一组用户的范围为策略 B，则邮件会被标记并被视为_欺骗_邮件。 但是，不会应用任何操作，因为尽管欺骗以更高的优先级（4）而不是用户模拟（8）运行，但反欺骗已关闭。

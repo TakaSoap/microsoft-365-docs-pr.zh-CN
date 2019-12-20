@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5eb91a45d844863b27ee208bda2bee812789851e
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 479aa8888a3a8e67c51cb7edf14747c840295a4f
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813842"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823714"
 ---
 # <a name="device-configuration"></a>设备配置
 
@@ -35,7 +35,7 @@ Policy | 说明
 --- | ---
 安全基准 | 针对所有 Microsoft 托管桌面设备配置了适用于 MDM 的[microsoft 安全基准](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基准是业界标准的配置。 它已公开发布、经过充分测试，并已由 Microsoft 安全专家进行了检查，以保持 Microsoft 托管桌面设备和应用在新式工作区中的安全。 <br><br>为了缓解不断发展的安全威胁中的威胁，Microsoft 安全基准将更新并部署到 Microsoft 托管桌面设备（每个 Windows 10 功能更新）。<br><br>有关详细信息，请参阅[Windows 10 安全基准](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/)。
 Microsoft 托管桌面建议的安全模板 | 对安全基准的一组建议更改，以优化用户体验。  这些更改记录在[安全附录](#security-addendum)中。 策略附录更新根据需要进行。  
-更新部署 | 使用 Windows Update for Business 执行软件更新的逐步部署。 IT 管理员无法修改部署组策略的设置。 有关基于组的部署的详细信息，请参阅[如何处理更新](../working-with-managed-desktop/updates.md)。
+更新部署 | 使用 Windows Update for Business 执行软件更新的逐步部署。 IT 管理员无法修改部署组策略的设置。 有关基于组的部署的详细信息，请参阅[如何在 Microsoft 托管桌面中处理更新](updates.md)。
 诊断数据 | 设备将设置为在已知商业版标识符下向 Microsoft 提供增强的诊断数据。 在 Microsoft 托管桌面中，IT 管理员不能更改这些设置。 对于一般数据保护条例（GDPR）区域中的客户，最终用户可以减少提供的诊断数据的级别，但会降低服务。 例如，Microsoft 托管桌面将无法收集必要的数据，以对设置和策略进行迭代以最好地满足性能和安全性需求。 有关详细信息，请参阅[在组织中配置 Windows 诊断数据。](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 按流量计费的连接 | 默认情况下，将关闭通过按流量计费的连接（如 LTE 网络）进行的更新，尽管每个用户可以在**Settings > updates > 高级选项**中单独打开此功能。 如果您希望允许所有用户通过按流量计费的连接启用更新，请[提交更改请求](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support)，这将为所有设备启用此设置。
 

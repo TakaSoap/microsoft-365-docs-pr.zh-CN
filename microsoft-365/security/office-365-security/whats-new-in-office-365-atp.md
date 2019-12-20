@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4d9401c7568534e9f9a0036ef273964d327dbf06
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971400"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807937"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
-**应用于：**
+**适用于：**
 
 - [Office 365 高级威胁防护（Office 365 ATP）](office-365-atp.md)
 
@@ -33,7 +33,7 @@ ms.locfileid: "39971400"
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 计划 1 和计划 2
 
-Office 365 ATP 提供了两个计划： Office 365 ATP 计划1和 Office 365 ATP 计划2。 [详细了解每个计划中包含的内容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
+Office 365 ATP 提供了两个计划： Office 365 ATP 计划1和 Office 365 ATP 计划2。 [了解详细信息](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
 ## <a name="december-2019"></a>2019 年 12 月
 

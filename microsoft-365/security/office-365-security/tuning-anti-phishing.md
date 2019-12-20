@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何确定仿冒邮件的原因以及在将来阻止更多的网络钓鱼邮件的原因。
-ms.openlocfilehash: bbcd57f649485cb753e3917a073ffec2b94cba24
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 03f4df5f552dab48283f18ec367ee6979afd9c89
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076004"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823844"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>优化 Office 365 中的反网络钓鱼保护
 
@@ -23,7 +23,7 @@ ms.locfileid: "37076004"
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>首先要做的第一件事：处理任何受损帐户，并确保阻止任何更多的网络钓鱼邮件
 
-如果收件人的帐户因仿冒邮件而受损，请按照在[Office 365 中响应受损电子邮件帐户](../../compliance/responding-to-a-compromised-email-account.md)中的步骤操作。
+如果收件人的帐户因仿冒邮件而受损，请按照在[Office 365 中响应受损电子邮件帐户](responding-to-a-compromised-email-account.md)中的步骤操作。
 
 如果你的订阅包括高级威胁防护（ATP），则可以使用[Office 365 威胁智能](office-365-ti.md)标识也收到网络钓鱼邮件的其他用户。 您还可以使用其他选项阻止网络钓鱼邮件：
 

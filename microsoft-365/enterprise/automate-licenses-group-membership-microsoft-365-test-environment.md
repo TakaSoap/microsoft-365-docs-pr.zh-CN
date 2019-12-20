@@ -3,7 +3,7 @@ title: 自动化 Microsoft 365 企业版测试环境的许可和组成员身份
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/21/2019
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在 Microsoft 365 企业版测试环境中配置基于组的许可和动态组成员身份。
-ms.openlocfilehash: b1f3bc4a44e66d162360e82295c8f2877131cd07
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: facff7eb556299c0312fa7488a35a96151bb1882
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202473"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802117"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自动化 Microsoft 365 企业版测试环境的许可和组成员身份
 
@@ -49,28 +49,26 @@ ms.locfileid: "39202473"
 
 首先，创建一个新的 Sales 组并添加一个动态组成员身份规则，以便将部门设置为 "销售" 的用户帐户自动添加到 "销售" 组中。
 
-1. 使用 Internet 浏览器的专用实例， [https://portal.office.com](https://portal.office.com)使用 Office 365 E5 测试实验室订阅的全局管理员帐户登录到 office 365 门户。
+1. 使用 Internet 浏览器的专用实例， [https://portal.office.com](https://portal.office.com)使用 Microsoft 365 E5 测试实验室订阅的全局管理员帐户登录到 Office 365 门户。
 2. 在浏览器的一个单独的选项卡上，转到 Azure [https://portal.azure.com](https://portal.azure.com)门户处。
-3. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”****。
-4. 在 "**所有组**" 边栏选项卡上，单击 "**新建组**"。
+3. 在 Azure 门户中，在搜索框中键入**组**，然后单击 "**组**"。
+4. 在 "**所有组**" 窗格中，单击 "**新建组**"。
 5. 在 "**组类型**" 中，选择 " **Office 365**"。
 6. 在 "**组名称**" 中，键入**Sales**。
 7. 在 "**成员身份类型**" 中，选择 "**动态用户**"。
-8. 单击“添加动态查询”****。
-9. 在“添加以下位置的用户”**** 中，选择“部门”****。
-10. 在下一个字段中，选择“等于”****。
-11. 在下一个字段中，键入**Sales**。
-12. 单击“添加查询”****，然后单击“创建”****。
-13. 关闭 "**组**" 和 "**组"-"所有组**" 刀片。
+8. 单击 "**动态用户成员**"。
+9. 在 "**动态成员身份规则**" 窗格中： 
+   - 选择 "**部门**" 属性。
+   - 选择 "**等于**" 运算符。
+   - 键入**值**中的**销售额**。
+10. 单击 **“保存”**。
+11. 单击“**创建**”。
 
 接下来，配置 "销售" 组，以便自动向成员分配 Microsoft 365 E5 许可证。
 
-1. 在 "适用于 Azure Active Directory 的**概述**刀片" 中，单击 "**许可证 > 所有产品**"。
-2. 在列表中，选择 " **Micrsooft 365 E5**"，然后单击 "**分配**"。
-3. 在 "**分配许可证**" 边栏选项卡上，单击 "**用户和组**"。
-4. 在组列表中，选择 "**销售**" 组。
-5. 单击“**选择**”，然后单击“**分配**”。
-6. 关闭浏览器中的 Azure 门户选项卡。
+1. 单击 "**销售**" 组，然后单击 "**许可证**"。
+2. 在 "**更新许可证分配**" 窗格中，选择 " **Microsoft 365 E5**"，然后单击 "**保存**"。
+3. 关闭浏览器中的 Azure 门户选项卡。
 
 接下来，在用户4帐户上测试动态组成员身份和自动许可。 
 

@@ -3,7 +3,7 @@ title: Office 365 中的 office 365 威胁调查和响应功能高级威胁防�
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击，并搜索威胁指示器.
-ms.openlocfilehash: 1e8a3cee67a3fdb56042bc83dac7b09367241bf3
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 45c12647b999e626cb620046aabc95fb4bfa8f4c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967995"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808117"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -37,7 +37,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 安全&amp;合规中心中的威胁调查和响应功能，作为一组工具和响应工作流，包括以下内容：
 - [威胁仪表板](#threat-dashboard)
 - [Explorer](#threat-explorer)
-- [例](#incidents)
+- [事件](#incidents)
 - [攻击模拟器](#attack-simulator)
 - [自动调查和响应](automated-investigation-response-office.md)
 
@@ -57,7 +57,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
   
 若要查看和使用此报告，请在 Office 365 &amp;安全合规性中心中，转到 "**威胁管理** \> **资源管理器**"。
   
-### <a name="incidents"></a>例
+### <a name="incidents"></a>事件
 
 使用 "事件" 列表（也称为 "调查"）查看飞行安全事件的列表。 事件用于跟踪可疑电子邮件等威胁，并进行进一步调查和修正。
   
@@ -85,9 +85,9 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 Office 365 中包含 office 365 高级威胁防护计划2，其中包括在企业版 E5 中，或作为特定订阅的加载项。 若要了解详细信息，请参阅[Office 365 ATP 计划1和计划 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
-## <a name="required-roles-and-permissions"></a>必需的角色和权限
+## <a name="required-roles-and-permissions"></a>所需角色和权限
 
-Office 365 高级威胁防护使用基于角色的访问控制。 权限是通过 Azure Active Directory、Microsoft 365 管理中心或 Office 365 安全 & 合规性中心中的角色分配的。
+Office 365 高级威胁防护使用基于角色的访问控制。 可以通过 Azure Active Directory、Microsoft 365 管理中心或 Office 365 安全性 & 合规性中心中的某些角色来分配权限。
 
 > [!TIP]
 > 尽管某些角色（例如安全管理员）可以在 Office 365 安全 & 合规性中心中分配，但请考虑改用 Microsoft 365 管理中心或 Azure Active Directory。 有关角色、角色组和权限的信息，请参阅以下资源：
