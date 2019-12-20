@@ -1,9 +1,9 @@
 ---
 title: 敏感度标签概述
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于强制执行保护设置，如对已标记内容设置加密或水印。
-ms.openlocfilehash: 5bc15b1ba18dbc52f9db554f8037cb59187b88fc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: f411cf5ac91581526c54f718ee83d0beaaaa2d73
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39232886"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802835"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -130,7 +130,7 @@ ms.locfileid: "39232886"
 
 - **将默认标签应用于**标签策略包含的用户和组新建的所有文档和电子邮件。此默认标签可设置要对所有内容应用的保护设置的基本级别。
 
-- **要求提供更改标签的理由。** 如果内容标记为“机密”，并且用户希望删除该标签或将其替换为较低分类，例如名为“公共”的标签，则可以要求用户在执行此操作时提供理由。 这些理由将由管理员进行审核。
+- **要求提供更改标签的理由。** 如果内容标记为“机密”，并且用户希望删除该标签或将其替换为较低分类，例如名为“公共”的标签，则可以要求用户在执行此操作时提供理由。 目前，未将理由原因发送到[标签分析](label-analytics.md)供管理员查看。 但是，[Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)将此信息发送到 [Azure 信息保护分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
     ![提示用户输入理由的页面](media/Sensitivity-label-justification-required.png)
 

@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何在 Office 365 中搜索和查找个人数据。
-ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 75c6afaae18cddc0c8e63cac671ac1140e3fa303
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38709992"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802855"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜索和查找个人数据
 
@@ -33,9 +33,7 @@ ms.locfileid: "38709992"
 
 本文演示了如何查找存储在 SharePoint Online 和 OneDrive for Business（其中包含所有 Office 365 组和 Microsoft Teams 的网站）中的个人数据。
 
-查找符合 GDPR 的个人数据依赖于使用 Office 365 中的敏感信息类型。这些类型定义了自动进程识别特定信息类型（例如卫生服务号码和信用卡号码等）的方式。目前，无法以静态方式使用它们在 Exchange 邮箱中查找数据。但是，可以将敏感信息类型与数据丢失防护策略结合使用，处于传输状态时在邮件中查找个人数据。
-
-因此，虽然当前不能以静态方式使用内容搜索在 Exchange Online 邮箱中查找个人数据，但是可以使用针对 GDPR 策展的敏感信息类型，在通过电子邮件发送个人信息时查找和保护个人信息。
+查找受 GDPR 约束的个人数据需要使用 Office 365 中的敏感信息类型。 这些信息类型定义了自动化过程如何识别健康服务号码和信用卡号等特定信息类型。 你可以使用数据丢失防护策略在传送过程中查找邮件中的个人数据。 可以使用为 GDPR 策展的敏感信息类型来查找和保护通过电子邮件发送的个人信息。 另请参阅[在安全与合规中心内使用 DSR 案例工具管理 GDPR 数据主体请求](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)。
 
 ## <a name="use-content-search-to-find-personal-data"></a>使用内容搜索查找个人数据
 

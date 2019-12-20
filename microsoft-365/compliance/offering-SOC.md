@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4d8587438d564d98d9b30897ebdf5bf8722a09c8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859482"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804255"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -108,7 +109,7 @@ Microsoft 云服务会根据 SOC 1（SSAE18，ISAE 3402）和 SOC 2（AT 条例 
 
 **Azure SOC 报告多久发布一次？**
 
-Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream 和 Microsoft 数据中心的 SOC 报告基于滚动的 12 个月运行窗口（审计期）每个季度发布一份新报告。 通过 SOC 报告，增加的审核频率可提供更及时的审核期覆盖范围，与 Bridge Letter 相比，外部审核员可以提供更大的保证。 客户可从服务信任门户[下载](https://aka.ms/stp)最新报告。
+Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream 和 Microsoft 数据中心的 SOC 报告基于滚动的 12 个月运行时间窗（审计期），且每半年（周期结束日期是 3 月 31 日和 9 月 30 日）发布一次新报告。 Bridge Letter 将在 1 月（涵盖 10/1 – 12/31 这段时间）和 7 月（涵盖 4/1 – 6/30 这段时间）发布。 客户可从服务信任门户[下载](https://aka.ms/stp)最新报告。
 
 **是否需要对 Microsoft 数据中心执行我自己的审核流程？**
 

@@ -1,7 +1,7 @@
 ---
 title: 记录概述
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 要在 Office 365 或 Microsoft 组织中实现记录管理策略，请使用将内容声明为记录的保留标签。 然后发布或自动应用保留记录标签。
-ms.openlocfilehash: 37f23dcd9c2b94edce99fa55977cb26e1faa4d8e
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39637708"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803829"
 ---
 # <a name="overview-of-records"></a>记录概述
 
@@ -62,7 +62,7 @@ ms.locfileid: "39637708"
 
     ![指明项未从 SharePoint 中删除的消息](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    如果用户尝试删除 OneDrive 中的记录，相应项会移至保留库中，如 [保留策略如何处理留在原处的内容](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites)中所述。
+    如果用户尝试删除 OneDrive 中的记录，相应项会移至保留库中，如[保留策略如何处理留在原处的内容](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites)中所述。
 
   - **记录标签无法移除。** 对项应用记录标签后，仅该位置（例如 SharePoint 网站的网站集管理员）的管理员可以移除该记录标签。
 
@@ -76,7 +76,7 @@ ms.locfileid: "39637708"
 
    ![选中“使用标签将内容分类为‘记录’”复选框](media/recordversioning6.png)
 
-3. 将保留标签[发布](labels.md#how-retention-labels-work-with-retention-label-policies)或[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)到 SharePoint 网站和/或 OneDrive 帐户。 
+3. 将保留标签[发布](labels.md#how-retention-labels-work-with-retention-label-policies)或[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)到 SharePoint 网站和/或 OneDrive 帐户。
 
 ### <a name="applying-a-retention-label-to-content"></a>对内容应用保留标签
 
@@ -85,7 +85,7 @@ ms.locfileid: "39637708"
 此处为记录标签应用到 SharePoint 网站或 OneDrive 帐户上的文档的情况。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning7.png" alt-text="标记为记录的文档的详细信息窗格":::
+![标记为记录的文档的详细信息窗格](media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>记录版本控制
 
@@ -102,7 +102,7 @@ ms.locfileid: "39637708"
 对于具有将项声明为记录的保留标签的任何文档，记录版本控制自动可用。 当用户通过详细信息窗格查看文档属性时，他们会将“记录状态”**** 从“已锁定”**** 切换为“已解锁”****。 单击一下，即可在保留库的“记录”文件夹中创建一个记录，该记录将在其中保存剩余的保留期。 当文档处于解锁状态时，具有权限的任何用户均可编辑此文件。 但是，用户无法编辑此文件，因为它被视为声明的记录。 进行必要的更改后，用户可以将“记录状态”**** 从“已解锁”**** 切换为“已锁定”****，因此文档会再次声明为记录并且无法编辑。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning8.png" alt-text="文档上的记录状态属性标记为记录":::
+![标记为记录的文档上的记录状态属性](media/recordversioning8.png)
 
 > [!NOTE]
 > 记录版本控制需要 Office 365 Enterprise E5 许可证，以便有权限的用户可以编辑无法在 SharePoint 网站或 OneDrive 帐户中声明为记录的内容。 具有只读权限的用户不需要许可证。
@@ -112,7 +112,7 @@ ms.locfileid: "39637708"
 记录标签分配到文档后，默认成员组（“参与”权限级别）中的任何用户均可将记录解锁或者锁定已解锁的记录。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning9.png" alt-text="记录状态显示记录文档已解锁":::
+![记录状态显示记录文档已解锁](media/recordversioning9.png)
 
 当用户解锁记录时，将会发生以下操作：
 
@@ -133,7 +133,7 @@ ms.locfileid: "39637708"
 每次用户解锁记录时，都会将最新版本复制到保留库的“记录”文件夹中，该版本在版本历史记录的“注释”**** 字段中的值为“记录”****。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning10.png" alt-text="保留库中显示的记录":::
+![保留库中显示的记录](media/recordversioning10.png)
 
 要查看版本历史记录，请在文档库中选择一个文档，然后在项菜单中单击“版本历史记录”****。
 
@@ -142,11 +142,11 @@ ms.locfileid: "39637708"
 记录保存在网站集顶层站点的保留库内的“记录”文件夹中。 在顶层站点的左侧导航中，选择“网站内容”****\>保留库”****。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning11.png" alt-text="保留库":::
+![保留库](media/recordversioning11.png)
 
 <br/><br/>
 
-:::image type="content" source="media/recordversioning12.png" alt-text="保留库中的“记录”文件夹":::
+![保留库中的“记录”文件夹](media/recordversioning12.png)
 
 保留库仅对网站集管理员可见。 此外，默认情况下保留库不存在。 仅当受保存标签影响的内容在网站集中第一次删除时才会创建。
 
@@ -155,6 +155,6 @@ ms.locfileid: "39637708"
 锁定和解锁记录的操作会记录在 Office 365 审核日志中。 你可以搜索特定活动“将记录状态更改为已锁定”**** 和“将记录状态更改为已解锁”****，这些活动位于安全与合规性中心“审核日志搜索”**** 页面“活动”**** 下拉列表中的“文件和页面活动”**** 部分。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning13.png" alt-text="搜索记录版本控制事件的审核日志":::
+![在审核日志中搜索记录版本控制事件](media/recordversioning13.png)
 
 有关搜索这些事件的详细信息，请参阅[在安全与合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)的“文件和页面活动”部分。
