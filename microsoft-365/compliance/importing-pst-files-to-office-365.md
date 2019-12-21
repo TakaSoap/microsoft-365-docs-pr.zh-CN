@@ -3,7 +3,7 @@ title: 将组织的 PST 文件导入到 Office 365 的概述
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: overview
 f1_keywords:
@@ -16,29 +16,30 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 对于管理员：了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到 Exchange Online 的用户邮箱中。 本主题提供了常见问题解答并解释了 PST 导入流程的工作原理。
-ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 309fde077cdf456ba33656c29f9e325aac1820e3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39218837"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807121"
 ---
-# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>将组织的 PST 文件导入到 Office 365 的概述
+# <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>将组织的 PST 文件导入到 Office 365 的概述
 
 > [!NOTE]
-> 这篇文章面向对象为管理员。 你正在尝试将 PST 文件导入到自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> 本文适用于管理员。 你正在尝试将 PST 文件导入到自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)
 
 可以使用安全与合规中心的导入服务将 PST 文件快速批量导入到 Office 365 组织中的 Exchange Online 邮箱中。 可通过两种方法将 PST 文件导入到 Office 365 中：
-   
+
 - **网络上传** ![云上传](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - 通过网络将 PST 文件上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Office 365 导入服务将 PST 数据导入到 Office 365 组织的邮箱中。 
 
-- **驱动器寄送** ![硬盘](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - 将 PST 文件复制到 BitLocker 加密的硬盘中，然后将驱动器实际寄到 Microsoft。 Microsoft 收到硬盘驱动器后，数据中心工作人员会将数据上传到 Microsoft 云中的临时 Azure 存储位置。 然后，你可以使用 Office 365 导入服务将 PST 数据导入到 Office 365 组织中的邮箱。
+- **驱动器寄送** ![硬盘](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - 将 PST 文件复制到 BitLocker 加密的硬盘中，然后将驱动器实际寄到 Microsoft。 Microsoft 收到硬盘后，数据中心工作人员会将数据上传到 Microsoft 云中的临时 Azure 存储位置。 然后，你可以使用 Office 365 导入服务将 PST 数据导入到 Office 365 组织中的邮箱。
 
 ## <a name="step-by-step-instructions"></a>分步说明
   
 请参阅以下主题，获取有关将组织的 PST 文件导入到 Office 365 的详细分步说明。 
-   
+
 - [使用网络上载将 PST 文件导入到 Office 365](use-network-upload-to-import-pst-files.md)
+
 - [使用驱动器传送将 PST 文件导入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
 
 ## <a name="how-importing-pst-files-works"></a>导入 PST 文件的工作原理
@@ -47,40 +48,40 @@ ms.locfileid: "39218837"
   
 ![PST 导入流程的工作流](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
   
-1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置** - 第一步是下载用于上传 PST 文件或将其复制到硬盘的工具和访问密钥。 需要从安全与合规中心的“**导入**”页面获取工具和密钥。 密钥为你（如果是驱动器寄送，则是 Microsoft 数据中心人员）提供所需的权限用于将 PST 文件上传到安全的专用 Azure 存储位置。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 请注意，将 PST 文件导入到 Office 365 不需要你的组织拥有单独的 Azure 订阅。 
+1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置** - 第一步是下载用于上传 PST 文件或将其复制到硬盘的工具和访问密钥。 需要从安全与合规中心的“导入”**** 页获取工具和密钥。 密钥为你（如果是驱动器寄送，则是 Microsoft 数据中心人员）提供所需的权限用于将 PST 文件上传到安全的专用 Azure 存储位置。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 将 PST 文件导入到 Office 365 不需要你的组织拥有单独的 Azure 订阅。 
     
 2. **上传或复制 PST 文件** - 下一步取决于你是使用网络上传或驱动器寄送来导入 PST 文件。 在两种情况下，你均使用在上一步中获得的工具和安全存储密钥。
     
-    - **网络上传**AzCopy.exe 工具（在第一步下载）用于将 PST 文件上传并存储于 Microsoft 云中的 Azure 存储位置。 请注意，将 PST 文件上传至的 Azure 存储位置驻留在 Office 365 组织所在的区域 Microsoft 数据中心。 
+    - **网络上传**AzCopy.exe 工具（在步骤 1 中下载）用于将 PST 文件上传并存储于 Microsoft 云中的 Azure 存储位置。 将 PST 文件上传至的 Azure 存储位置驻留在 Office 365 组织所在的区域 Microsoft 数据中心。
     
       若要上传，想要导入至 Office 365 的 PST 文件必须位于组织的文件共享或文件服务器上。
     
     - **驱动器寄送**WAImportExport.exe 工具（在第一步下载）用于将 PST 文件复制到硬盘。 该工具使用 BitLocker 加密硬盘，然后将 PST 复制到硬盘。 与网络上传方法类似，想要复制到硬盘的 PST 文件必须位于组织的文件共享或文件服务器上。
     
-3. **创建 PST 导入映射文件** - 将 PST 文件上传至 Azure 存储位置或复制到硬盘之后，下一步时创建逗号分隔值 (CSV) 文件，用于指定 PST 文件将要导入到的用户邮箱（并且 PST 文件可导入到用户的主邮箱或其存档邮箱）。 Office 365 导入服务将使用此信息来导入 PST 文件。 
+3. **创建 PST 导入映射文件** - 将 PST 文件上传至 Azure 存储位置或复制到硬盘之后，下一步是创建逗号分隔值 (CSV) 文件，用于指定 PST 文件将要导入到的用户邮箱（并且 PST 文件可导入到用户的主邮箱或其存档邮箱）。 Office 365 导入服务将使用此信息来导入 PST 文件。 
     
-4. **创建 PST 导入作业** - 下一步是在安全与合规中心的“**导入**”页面上创建 PST 导入作业并提交在上一步骤创建的 PST 导入映射文件。 对于网络上传，（因为 PST 文件已上传至 Azure），Office 365 将分析 PST 文件中的数据，然后为你提供设置筛选器的机会，以便控制哪些数据被实际导入到 PST 导入映射文件中指定的邮箱。 
+4. **创建 PST 导入作业** - 下一步是在安全与合规中心的“**导入 PST 文件**”页上创建 PST 导入作业并提交在上一步骤创建的 PST 导入映射文件。 对于网络上传，（因为 PST 文件已上传至 Azure），Office 365 将分析 PST 文件中的数据，然后为你提供设置筛选器的机会，以便控制哪些数据被实际导入到 PST 导入映射文件中指定的邮箱。 
     
     对于驱动器寄送，在此过程中的这个环节会发生一些其他事情。
     
-    - 将硬盘实际寄到 Microsoft 数据中心（创建导入作业时，将会显示 Microsoft 数据中心的寄送地址）
+    - 将硬盘实际寄到 Microsoft 数据中心（创建导入作业时，将会显示 Microsoft 数据中心的寄送地址）。
     
-    - Microsoft 收到硬盘驱动器后，数据中心工作人员会将硬盘驱动器上的 PST 文件上传到组织的 Azure 存储位置。 如前面所述，PST 文件将上传至驻留在 Office 365 组织所在的区域 Microsoft 数据中心的 Azure 存储位置。
+    - Microsoft 收到硬盘后，数据中心工作人员会将硬盘上的 PST 文件上传到组织的 Azure 存储位置。 如前面所述，PST 文件将上传至驻留在 Office 365 组织所在的区域 Microsoft 数据中心的 Azure 存储位置。
     
       > [!NOTE]
-      > 硬盘驱动器上的 PST 文件将在 Microsoft 收到硬盘驱动器之后 7-10 个工作日之内上传至 Azure。 
-  
+      > 硬盘驱动器上的 PST 文件将在 Microsoft 收到硬盘驱动器之后 7-10 个工作日之内上传至 Azure。
+
       与网络上传流程类似，Office 365 随后将分析 PST 文件中的数据，并为你提供设置筛选器的机会，以便控制哪些数据被实际导入到 PST 导入映射文件中指定的邮箱。
     
-    - Microsoft 将硬盘寄回给你。 
+    - Microsoft 将硬盘寄回给你。
     
-5. **筛选将要导入到邮箱的 PST 数据** - 创建导入作业之后（并在驱动器寄送作业中的 PST 文件上传至 Azure 存储位置后），Office 365 将安全地分析 PST 文件中的数据，方法是标识项目期限以及 PST 文件中所含的不同邮件类型。 分析完成且数据已导入就绪后，你可以选择导入 PST 文件中包含的所有数据，或者通过设置用于控制导入的数据的筛选器来减少数据。 
+5. **筛选将要导入到邮箱的 PST 数据** - 创建导入作业之后（并在驱动器寄送作业中的 PST 文件上传至 Azure 存储位置后），Office 365 将安全地分析 PST 文件中的数据，方法是标识项目期限以及 PST 文件中所含的不同邮件类型。 分析完成且数据准备就绪可供导入后，你可以选择导入 PST 文件中包含的所有数据，或者通过设置用于控制可导入哪些数据的筛选器来减少导入的数据。 
     
-6. **开始 PST 导入作业** - 开始导入作业之后，Office 365 使用 PST 导入映射文件中的信息将 PST 文件从 Azure 存储位置导入到用户邮箱。 与导入作业相关的状态信息（包括与每个导入的 PST 文件相关的信息）将显示在安全与合规中心的“**导入**”页面。 导入作业完成后，作业的状态将设置为“**完成**”。
+6. **开始 PST 导入作业** - 开始导入作业之后，Office 365 使用 PST 导入映射文件中的信息将 PST 文件从 Azure 存储位置导入到用户邮箱。 与导入作业相关的状态信息（包括与每个导入的 PST 文件相关的信息）将显示在安全与合规中心的“**导入 PST 文件**”页。 导入作业完成后，作业的状态将设置为“**完成**”。
   
 ## <a name="why-import-email-data-to-office-365"></a>为什么要将电子邮件数据导入到 Office 365？
 
-- 将 PST 文件导入到用户邮箱是将你的组织的电子邮件迁移至 Office365 的一种方式。
+- 这是将组织的存档邮件数据导入到 Office 365 的好方法。
     
 - 可以使用“[智能导入](filter-data-when-importing-pst-files.md)”功能来筛选 PST 文件中实际导入到目标邮箱的项。 这使你能够通过设置用于控制导入的数据的筛选器来减少导入的数据。 
     
@@ -92,7 +93,7 @@ ms.locfileid: "39218837"
     
   - 使用“[控制搜索工具](content-search.md)”搜索邮箱内容。 
     
-  - 使用“[电子数据展示示例](ediscovery-cases.md)”管理组织的法律调查 
+  - 使用[电子数据展示事例](ediscovery-cases.md)管理组织的法律调查 
     
   - 使用安全与合规中心的“[保留策略](retention-policies.md)”来控制邮箱内容的保留时长，然后在保留期限到期之后删除内容。 
 
@@ -132,11 +133,11 @@ ms.locfileid: "39218837"
 此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
   
 - 必须分配有 Exchange Onlin 中的“邮件收件人”角色。 默认情况下，此角色分配给“组织管理和收件人管理”角色组。
-    
+
     或
     
 - 必须是你的 Office365 组织中的全局管理员。
-    
+
 > [!TIP]
 > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
   
@@ -148,7 +149,7 @@ ms.locfileid: "39218837"
   
 Using network upload to import PST files is free.
   
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 Microsoft 365 管理中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在“**将数据导入到 Office 365**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 Microsoft 365 管理中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在“**将数据导入到 Office 365**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
   
  **哪个版本的 PST 文件格式支持导入到 Office 365？**
   
@@ -158,13 +159,13 @@ Using network upload to import PST files is free.
   
  **将 PST 文件上传到 Azure 存储区域后，这些文件在删除前可在 Azure 中保留多长时间？**
   
-使用网络上传的方法导入 PST 文件时，需要将它们上传到名为 **ingestiondata** 的 Azure Blob 容器。 如果安全与合规中心中的“**导入**”页面上没有正在进行的导入作业，则 Azure 中 **ingestiondata** 容器内的所有 PST 文件都会于在安全与合规中心中创建最新导入作业 30 天后被删除。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在安全与合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。 
+使用网络上传的方法导入 PST 文件时，需要将它们上传到名为 **ingestiondata** 的 Azure Blob 容器。 如果安全与合规中心中的“**导入 PST 页面**”页面上没有正在进行的导入作业，则 Azure 中 **ingestiondata** 容器内的所有 PST 文件都会在安全与合规中心中创建最新导入作业 30 天后被删除。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在安全与合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。
   
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
-这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 PST 文件复制到 Azure 存储区域后，PST 文件将以每天至少 24 GB 的速度导入到 Office 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据迁移到 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)。
+这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 PST 文件复制到 Azure 存储区域后，PST 文件将以每天至少 24 GB 的速度导入到 Office 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。
   
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
   
@@ -223,7 +224,7 @@ Using network upload to import PST files is free.
   
  **哪类硬盘支持驱动器发运？**
   
-仅支持将 2.5 英寸固态硬盘 (SSD) 或 2.5 或 3.5 英寸 SATA II/III 内部硬盘与 Office 365 导入服务结合使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘时，可使用 2.5 英寸 SSD 或 2.5 或 3.5 英寸 SATA II/III 连接器直接连接，或可使用外部 2.5 英寸 SSD 或 2.5 或 3.5 英寸 SATA II/III USB 适配器在外部将其连接。
+仅支持将 2.5 英寸固态硬盘 (SSD) 或 2.5 英寸或 3.5 英寸 SATA II/III 内部硬盘与 Office 365 导入服务结合使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘时，可使用 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III 连接器直接连接硬盘，或可使用外部 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III USB 适配器在外部连接硬盘。
   
 > [!IMPORTANT]
 > Office 365 导入服务中不支持内置 USB 适配器随附的外部硬盘。 此外，无法使用外部硬盘盒内的磁盘。 请不要发运外部硬盘。 
@@ -238,19 +239,19 @@ Using network upload to import PST files is free.
   
  **硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST文件上传到 Azure？**
   
-Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PST 文件上传到你组织的 Microsoft Azure 存储区域。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。 
+Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PST 文件上传到你组织的 Azure 存储位置。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。 
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
-将 PST 文件上传到 Azure 存储区域后，Office 365 采用安全的方式分析 PST 文件中的数据，确定 PST 文件中所含项目的存在时长以及各种邮件类型。 分析完成后，可以选择将所有数据导入 PST 文件，或设置筛选器控制导入的数据。 开始导入作业后，PST 文件将以每天至少 24 GB 的速度导入到 Office 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)。
+将 PST 文件上传到 Azure 存储区域后，Office 365 采用安全的方式分析 PST 文件中的数据，确定 PST 文件中所含项目的存在时长以及各种邮件类型。 分析完成后，可以选择将所有数据导入 PST 文件，或设置筛选器控制导入的数据。 开始导入作业后，PST 文件将以每天至少 24 GB 的速度导入到 Office 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。
   
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
   
  **Microsoft 将 PST 文件上传到 Azure 后，这些文件在删除前可在 Azure 中保留多长时间？**
   
-在安全与合规中心的“**导入**”页面上创建最新导入作业的 30 天后，将删除组织的 Azure 存储位置（位于名为 `ingestiondata` 的 Blob 容器中）内的所有 PST 文件。 
+在安全与合规中心的“**导入 PST 文件**”页面上创建最新导入作业的 30 天后，将删除组织的 Azure 存储位置（位于名为 `ingestiondata` 的 Blob 容器中）内的所有 PST 文件。 
   
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
   
  **哪个版本的 PST 文件格式支持导入到 Office 365？**
   
