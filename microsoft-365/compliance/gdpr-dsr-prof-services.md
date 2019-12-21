@@ -2,22 +2,23 @@
 title: Microsoft 支持和专业服务与 GDPR 和 CCPA 数据主体请求
 description: Microsoft 支持和专业服务如何处理 GDPR 和 CCPA 数据主体请求。
 keywords: 专业服务，Microsoft 365，Microsoft 365 教育版，Microsoft 365 文档，GDPR，CCPA
-author: robmazz
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: b54f3ceb056d182951ea7c2d8d21ffa2eeda2db3
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 60e567f5c5a0c63218b7e9d3aae19d127a1ae98e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268444"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806345"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft 支持和专业服务与 GDPR 和 CCPA 数据主体请求
 
@@ -25,7 +26,7 @@ ms.locfileid: "39268444"
 
 Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支持专业人员组成的多元化团队，专门负责履行 Microsoft 让客户实现更多收获更多的使命。我们的专业服务团队总共包括 21000 多名顾问、数字顾问、顶级支持、工程师和销售专业人员，他们在 191 个国家/地区工作，支持 46 种不同语言，每个月管理数百万个服务活动，并通过本地、电话、网络、社区和自动化工具与客户和合作伙伴交互。此组织利用将我们与企业客户连接在一起的由合作伙伴、技术社区、工具、诊断以及渠道所构成的广泛网络，汇聚了整个 Microsoft 产品组合的广泛专业知识。
 
-有关 Microsoft 专业服务的详细信息，请查看此处并访问 Microsoft 信任中心上的“Microsoft 专业服务”部分 (<https://www.microsoft.com/trustcenter/professional-services>)。 Microsoft 专业服务非常重视《一般数据保护条例》(GDPR) 规定的义务。 本文档中的信息旨在回答客户有关 Microsoft 的支持和咨询服务如何响应和协助客户响应 GDPR 规定的数据主体请求 (DSR) 义务的问题。
+有关 Microsoft 专业服务的详细信息，请访问 [Microsoft 专业服务安全文档网页](https://www.microsoft.com/en-us/professionalservices/overview)。 Microsoft 专业服务非常重视《一般数据保护条例》(GDPR) 规定的义务。 本文档中的信息旨在回答客户有关 Microsoft 的支持和咨询服务如何响应和协助客户响应 GDPR 规定的数据主体请求 (DSR) 义务的问题。
 
 ### <a name="introduction-to-dsrs"></a>DSR 简介 
 
@@ -81,7 +82,7 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 
 客户应了解 DSR 仅涵盖客户联系人的个人数据，而不会对服务过程中提交的任何客户数据（例如文字稿、案例描述、文件、工作成果）进行更改或删除，因为 Microsoft 是数据处理者。 此外，为了维护服务活动的历史记录，不会对已关闭的服务活动进行任何更改，包括是谁打开的服务活动的记录。
 
-从客户联系人收到有关 DSR 的查询后，Microsoft 工作人员会将客户联系人转到 [Microsoft 隐私支持](https://go.microsoft.com/fwlink/?LinkId=321116)。这是 Microsoft 处理隐私查询和投诉的主要输入机制。在收到查询后，Microsoft 隐私团队将确定这是商业客户还是组织帐户的一部分，并相应地做出响应。
+从客户联系人收到有关 DSR 的查询后，Microsoft 工作人员会将客户联系人转到[隐私响应中心](https://go.microsoft.com/fwlink/?LinkId=321116)。这是 Microsoft 处理隐私查询和投诉的主要输入机制。在收到查询后，隐私响应中心将确定这是商业客户还是组织帐户的一部分，并相应地做出响应。
 
 为了保持客户的业务连续性，在确认替换联系人之前，Microsoft 也不会处理与服务活动相关联的 DSR。在确认新联系人后，Microsoft 将在打开的服务活动中将旧联系人换成新联系人。
 
@@ -89,7 +90,7 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 
 ***仅用于说明目的的示例***
 
-John 是一家 O365 企业客户的 IT 管理员，有一个打开的支持服务活动和两个已关闭的服务活动。现在，John 从公司离职，想要删除其个人数据。John 联系了 PRC，确定他是 IT 管理员。John 得到通知，无法将他的姓名从以前（已关闭）的服务活动或从打开的服务活动内的任何数据中删除。但是，如果他确定了替换联系人，PRC 将替换当前打开的票证上作为联系人的 John。John 告知 Microsoft，Jane 将替换他成为联系人，Microsoft 将在所有支持系统中做出更改。
+John 是一家 O365 企业客户的 IT 管理员，有一个打开的支持服务活动和两个已关闭的服务活动。现在，John 从公司离职，想要删除其个人数据。John 联系了隐私响应中心，确定他是 IT 管理员。John 得到通知，无法将他的姓名从以前（已关闭）的服务活动或从打开的服务活动内的任何数据中删除。但是，如果他确定了替换联系人，隐私响应中心将替换当前打开的票证上作为联系人的 John。John 告知 Microsoft，Jane 将替换他成为联系人，Microsoft 将在所有支持系统中做出更改。
 
 ## <a name="dsr-for-an-end-user-engaging-microsoft"></a>针对与 Microsoft 打交道的最终用户的 DSR
 
@@ -117,7 +118,7 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 客户找到数据后，客户可以执行特定操作以满足数据主体的请求。根据客户尝试执行的操作，将决定客户需要参与的发现级别。
 
-在 Microsoft 协助客户解决 DSR 的情况下，这是一项业务功能，将通过你的常规支持渠道提出请求，而不是向 Microsoft 隐私团队提出请求。
+在 Microsoft 协助客户解决 DSR 的情况下，这是一项业务功能，将通过你的常规支持渠道提出请求，而不是向隐私响应中心提出请求。
 
 在发现相关数据和获取 Microsoft 协助的过程中，客户可使用若干选项来处理 DSR：
 
@@ -166,12 +167,11 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 在 Microsoft 的所有数据都必须应用保留和删除策略，因风险和其他因素不同而有所不同。
 
-如果客户请求在所有支持系统中普遍删除数据主体的个人数据，可通过你的 TAM 或通过在 SMC 或同等系统中填写支持申请 (SR) 来完成。你*必须*指出该请求是根据 GDPR 来协助处理 DSR。
+如果客户请求在所有支持系统中普遍删除数据主体的个人数据，则可通过你的 TAM 或通过在 SMC 或同等系统中填写支持申请 (SR) 来完成。你*必须*指出该请求是根据 GDPR 来协助处理 DSR。
 
 *选项 A - 跨 Microsoft 支持的客户 DSR*。 对于跨系统的 DSR，客户必须提供 Microsoft 识别所需数据需要的个人数据（例如电子邮件地址、电话号码）。 Microsoft 不会关联或研究记录，而是仅根据客户提供的标识符直接进行搜索。 找到数据后，Microsoft 将删除所有服务活动和所有关联数据。
 
-> [!IMPORTANT]
-> 重要注意事项：**这可能会导致对客户组织非常重要的历史记录发生丢失。
+> 重要注意事项：这可能会导致对客户组织非常重要的历史记录发生丢失。
 
 *选项 B — 特定客户服务活动*。 对于客户已识别并且想要删除的特定服务活动，不要从 SMC 删除票证。 这会导致个人数据遗留在日志和下游系统中，从而可能无法在所需时间范围内删除。 转为识别票证或必须删除的票证中的个人资料，并联系 Microsoft 支持协助你删除该数据。
 
@@ -200,7 +200,7 @@ John 从 Jane 那里收到了一个 DSR，要求删除她的所有数据。John 
 
 他还知道 Jane 的个人数据位于 SQL 数据库中。由于 SQL 虚拟机移到 DTM 的时间少于 90 天，因此他单独要求其 TAM 协助他将数据库立即从 DTM 中删除。
 
-最后，由于他知道数据可能已在提供支持期间从 DTM 文件中删除，因此他要求 Microsoft 在所有 IT 系统中执行检查，查看 SQL 数据库中是否存在 Jane 的个人数据。
+最后，由于他知道数据可能已在提供支持时从 DTM 文件中删除，因此他要求 Microsoft 在所有 IT 系统中执行检查，查看 SQL 数据库中是否存在 Jane 的个人数据。
 
 Microsoft 支持将执行所有这些删除操作，基于客户请求，TAM 还提供已删除所需数据的鉴证声明。
 
@@ -212,7 +212,7 @@ Microsoft 支持将执行所有这些删除操作，基于客户请求，TAM 还
 
 针对适用 Microsoft 专业版服务数据保护附录 (<https://aka.ms/professionalservicesdpa>) 的、已订立合同的 Microsoft 咨询服务的服务活动。
 
-Microsoft 是与服务活动团队合作的客户联系人的数据控制者。这些人应联系 [Microsoft 隐私支持](https://go.microsoft.com/fwlink/?LinkId=321116)以行使数据主体权利。
+Microsoft 是与服务活动团队合作的客户联系人的数据控制者。这些人应联系[隐私响应中心](https://go.microsoft.com/fwlink/?LinkId=321116)以行使数据主体权利。
 
 Microsoft 是位于咨询服务活动期间提供的数据内的 DSR 的数据处理者。客户应联系服务活动经理制定计划，以基于收集的数据和所提供的具体咨询服务类型协助响应 DSR。根据你的请求在 Microsoft 咨询服务活动中所构成的典型努力程度，可能还会需要额外的工作订单。此外，根据咨询服务活动的类型，将在每个咨询服务活动之后，在规定的时间范围内删除个人数据。客户可以请求尽快删除数据，并请求提供删除鉴证。
 
@@ -230,4 +230,4 @@ Microsoft 是与 FastTrack 团队合作的客户联系人的数据控制者。�
 
 ## <a name="other-consulting-services"></a>其他咨询服务
 
-通过 Microsoft 收到其他专业服务的客户应通过服务活动团队来履行所有 GDPR 要求。如果服务活动团队无法提供有关 GDPR DSR 履行的明确指导，客户可联系 [Microsoft 隐私支持](https://go.microsoft.com/fwlink/?LinkId=321116)寻求帮助。
+通过 Microsoft 收到其他专业服务的客户应通过服务活动团队来履行所有 GDPR 要求。如果服务活动团队无法提供有关 GDPR DSR 履行的明确指导，客户可联系[隐私响应中心](https://go.microsoft.com/fwlink/?LinkId=321116)寻求帮助。

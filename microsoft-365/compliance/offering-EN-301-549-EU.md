@@ -1,5 +1,5 @@
 ---
-title: 欧洲标准 EN 301 549 报告
+title: 欧洲标准 EN 301 549
 description: Microsoft 云涵盖多项服务，且包含在许多个人一致性报告中。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
@@ -11,26 +11,27 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 33bd7c3626e29471495e9d7d7d251fc65c4e7892
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3bb38720caaa27b0f8deba26046410c0d8f25d6c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859932"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805205"
 ---
-# <a name="european-standards-en-301-549-reports"></a>欧洲标准 EN 301 549 报告
+# <a name="european-standards-en-301-549"></a>欧洲标准 EN 301 549
 
 ## <a name="about-en-301-549"></a>关于 EN 301 549
 
-EN 301 549 中规定了适用于信息和通信技术 (ICT) 产品和服务公共采购的辅助功能要求，这是针对 ICT 产品和服务（包括网站、软件和数字设备）的一组标准。 EN 301 549 是欧洲电信标准化协会 (ETSI) 应欧盟委员会的要求于 2014 年发布的，并于 2018 年更新至版本 2.1.2。 它旨在用于政府和公共部门组织的采购。 EN 301 549 在条款 9.2 中包含了 WCAG 2.1 Web 辅助功能标准。
+EN 301 549 中规定了适用于信息和通信技术 (ICT) 产品和服务的辅助功能要求，这是针对 ICT 产品和服务（包括网站、软件和数字设备）的一组标准。 EN 301 549 是欧洲电信标准化协会 (ETSI) 应欧盟委员会的要求于 2014 年发布的，并最近于 2019 年 11 月更新至版本 3.1.1。 EN 301 549 3.1.1 包含了 [WCAG](offering-WCAG-2-1.md) Web 辅助功能标准。
 
-Microsoft 是欧洲国家/地区的主要软件及云服务提供商，因此它承诺遵守各项相关[政府标准和合规控制措施](https://go.microsoft.com/fwlink/p/?linkid=2051708)。 通过坚持这些广泛的辅助功能标准，Microsoft 保护政府内外各方客户都可使用 Microsoft 服务和产品。
+Microsoft 是欧洲国家/地区的主要软件和云服务提供商。 为了帮助政府客户做出采购决策，Microsoft 发布了辅助功能一致性报告 (ACR)，其中描述了我们的产品和服务对 EN 301 549 标准的支持程度。 ACR 中的信息可帮助 Microsoft 客户确定某产品或服务是否能满足其特定需求。
 
 ## <a name="microsoft-and-en-301-549"></a>Microsoft 和 EN 301 549
 
-Microsoft 对 EN 301549 标准的遵守表明了其对所有客户的辅助功能的承诺。 EN 301 549 是欧洲特定的辅助功能标准，是对《第 508 条》（美国）和 WCAG 2.1 （国际）的补充。
+Microsoft 在产品和服务开发中对 EN 301 549 的考虑表明了其致力于使所有客户都能轻松使用其产品和服务。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 与 Azure 政府](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
