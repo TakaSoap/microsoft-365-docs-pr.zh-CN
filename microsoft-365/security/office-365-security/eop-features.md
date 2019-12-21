@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: 06f2de012963333f1040861dd8268b6b088f627c
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
+ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970588"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "40840171"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -93,5 +93,5 @@ ms.locfileid: "39970588"
 |24 小时全天候电话和网络技术支持|有关 EOP 帮助和支持选项的详细信息，请参阅 [EOP 帮助与支持](help-and-support-for-eop.md)。|
 |**其他功能**||
 |服务器的地理位置冗余全局网络|EOP 在数据中心的全球网络中运行，旨在提供最好的可用性。有关详细信息，请参阅 [Exchange Online Protection 概述](exchange-online-protection-overview.md)中的"EOP 数据中心"一节。  |
-|内部部署服务器无法接受邮件时的邮件队列|延期的邮件将在我们的队列中保留 2 天。重试发送邮件的依据为从收件人的邮件系统返回的错误。邮件一般每 5 分钟重试发送一次。有关详细信息，请参阅 [EOP 排队、延迟以及退回邮件的常见问题](eop-queued-deferred-and-bounced-messages-faq.md)。  |
+|内部部署服务器无法接受邮件时的邮件队列|延期的邮件在队列中保留一天。 重试发送邮件的依据为从收件人的邮件系统返回的错误。 邮件一般每 5 分钟重试发送一次。 有关详细信息，请参阅 [EOP 排队、延迟以及退回邮件的常见问题](eop-queued-deferred-and-bounced-messages-faq.md)。|
 |Office 365 邮件加密可作为附加服务使用|有关详细信息，请参阅 [Office 365 中的加密](https://docs.microsoft.com/office365/securitycompliance/encryption)。|
