@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
-ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
+ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37590496"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37746548"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -162,7 +162,7 @@ ms.locfileid: "37590496"
 ## <a name="high-risk-users-must-change-password"></a>高风险用户必须更改密码
 若要确保所有高风险用户的受损帐户强制在登录时执行密码更改，必须应用以下策略。
 
-Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
+Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
 
 **作业**
 
@@ -211,23 +211,23 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|数据重定位|阻止 Android 备份|可访问|在 iOS 上，这会专门调用 iTunes 和 iCloud|
+|数据重定位|阻止 Android 备份|是|在 iOS 上，这会专门调用 iTunes 和 iCloud|
 ||允许应用向其他应用传送数据|策略托管应用||
 ||允许应用从其他应用接收数据|策略托管应用||
-||防止“另存为”|可访问||
+||防止“另存为”|是||
 ||选择企业数据可保存到其中的存储服务|OneDrive for Business、SharePoint||
 ||限制使用其他应用剪切、复制和粘贴|使用 "粘贴到" 的策略托管应用||
 ||限制显示在托管浏览器内的 Web 内容|否||
 ||加密应用数据|是|在 iOS 上，选择选项：“锁定设备时”|
-||启用设备时禁用应用程序加密|可访问|禁用此设置可避免双重加密|
+||启用设备时禁用应用程序加密|是|禁用此设置可避免双重加密|
 ||禁用联系人同步|否||
 ||禁用打印|否||
-|访问|访问需要 PIN|可访问||
+|访问|访问需要 PIN|是||
 ||选择类型|数值||
 ||允许使用简单 PIN|否||
-||PIN 长度|型||
+||PIN 长度|6 ||
 ||允许使用指纹而不是 PIN|是||
-||在管理设备 PIN 时禁用应用 PIN|可访问||
+||在管理设备 PIN 时禁用应用 PIN|是||
 ||需要公司凭据才能访问|否||
 ||在一定时间后重新检查访问要求(分钟)|30||
 ||阻止屏幕捕获和 Android 助手|否|在 iOS 上，此选项不可用|
@@ -265,7 +265,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 11. 选择 "**授予访问权限**"，选择 "**需要批准的客户端应用**"。 对于多个控件，选择 "**需要选定的控件**"，然后选择 "**选择**"。 
 
-12. 选择“创建”****。
+12. 选择“**创建**”。
 
 ## <a name="define-device-compliance-policies"></a>定义设备合规性策略
 
@@ -280,7 +280,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 - Windows 8.1 及更高版本
 - Windows 10 及更高版本
 
-若要创建设备合规性策略，请使用你的管理凭据登录到 Microsoft Azure 门户，然后导航到**Intune > 设备合规性**。 选择 "**创建策略**"。
+若要创建设备合规性策略，请使用你的管理凭据登录到 Microsoft Azure 门户，然后导航到**Intune > 设备合规性**。 选择“**创建策略**”。
 
 建议将以下设置用于 Windows 10。
 
@@ -305,11 +305,11 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|密码|需要密码才能解锁移动设备|需要||
+|Password|需要密码才能解锁移动设备|需要||
 ||简单密码|阻止||
 ||密码类型|设备默认值||
-||最短密码长度|型||
-||在需要密码之前不活动的最长分钟数|个|Android 版本4.0 及更高版本或 KNOX 4.0 及更高版本支持此设置。 对于 iOS 设备，支持 iOS 8.0 和更高版本|
+||最短密码长度|6 ||
+||在需要密码之前不活动的最长分钟数|15 |Android 版本4.0 及更高版本或 KNOX 4.0 及更高版本支持此设置。 对于 iOS 设备，支持 iOS 8.0 和更高版本|
 ||密码过期（天）|41||
 ||用于防止重复使用的以前密码的数目|5||
 ||当设备从空闲状态（移动和全息）返回时需要密码|需要|适用于 Windows 10 及更高版本|
@@ -326,7 +326,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|Medium||
+|Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|中等||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>需要符合要求的电脑（但不符合兼容电话和平板电脑）
 在将策略添加到需要兼容的电脑之前，请务必在 Intune 中注册设备进行管理。 建议在将设备注册到 Intune 中之前使用多重身份验证，以确保设备已占有目标用户。 
@@ -353,7 +353,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 10. 选择 "**授予访问权限**"，选择 "**要求设备被标记为合规**"。 对于多个控件，选择 **"要求所有选定控件**"，然后选择 "**选择**"。 
 
-11. 选择“创建”****。
+11. 选择“**创建**”。
 
 如果您的目标是要求符合合规性的 Pc*和*移动设备，请不要选择 "平台"。 这将强制实施所有设备的符合性。 
 
@@ -379,7 +379,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 9. 选择 "**授予访问权限**"，选择 "**要求设备被标记为合规**"。 对于多个控件，选择 **"要求所有选定控件**"，然后选择 "**选择**"。 
 
-10. 选择“创建”****。
+10. 选择“**创建**”。
 
 创建此策略时，请不要选择平台。 这将强制实施符合性的设备。
 

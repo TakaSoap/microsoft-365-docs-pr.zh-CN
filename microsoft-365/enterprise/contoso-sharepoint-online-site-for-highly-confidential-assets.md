@@ -3,7 +3,7 @@ title: Contoso Corporation 的高度机密数字资产的 SharePoint 网站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为高度管控的数据实现 SharePoint 网站，以便在研究团队之间实现协作。
-ms.openlocfilehash: ce813407c0f4c6f7b68aa997bf5e54b86a24ff2d
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: caad341c6a44b3270f2bdecd4ab4d8378c11db2c
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672708"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699704"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 的高度机密数字资产的 SharePoint 网站
 
@@ -55,7 +55,7 @@ Contoso 使用这些步骤为自己的研究团队创建并保护 SharePoint 工
 
 有关配置的详细信息，请参阅[使用保留标签和 DLP 保护 SharePoint 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)。
 
-## <a name="step-4-created-an-office-365-sensitivity-sublabel-for-the-site"></a>步骤4：为网站创建了 Office 365 灵敏度选项
+## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>步骤3：为网站创建 Office 365 灵敏度选项
 
 Contoso admins 创建了一个新的 Office 365 灵敏度选项，其中的 "**高度机密**" 标签的名称为 "**调查团队**"：
 
@@ -78,11 +78,11 @@ Contoso admins 创建了一个新的 Office 365 灵敏度选项，其中的 "**�
 ![针对高度机密资产的研究团队网站的结果配置](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
-## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>步骤5：迁移了本地 SharePoint 研究数据
+## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>步骤4：迁移了本地 SharePoint 研究数据
 
 Contoso admins 将本地 SharePoint Server 2016 网站中的所有本地研究文件移至新的**研究**SharePoint 网站中的文件夹。
 
-## <a name="step-6-trained-their-researchers"></a>步骤6：训练有素的研究人员
+## <a name="step-5-trained-their-researchers"></a>步骤5：训练有素的研究人员
 
 Contoso 安全员工在强制性课程中培训了**研究**Office 365 组的成员，其中包括：
 

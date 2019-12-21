@@ -1,11 +1,11 @@
 ---
-title: SIEM server 与 Microsoft 365 服务和应用程序的集成
+title: " 与 Microsoft 365 服务和应用程序的安全信息和事件管理（SIEM）服务器集成"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 11/15/2019
+ms.date: 11/18/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -13,19 +13,19 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - SIEM
-description: 阅读本文，了解 SIEM server 与 Microsoft 365 集成的概述。
-ms.openlocfilehash: bea6141022fef1275a7e291217f698f52613f170
-ms.sourcegitcommit: d8d001c03c28c10bea005d1c9b5f4a8f393af706
+description: 获取与 Microsoft 365 云服务和应用程序的安全信息和事件管理（SIEM）服务器集成的概述
+ms.openlocfilehash: b91d45235b61ff6a3c57ec70f3e6a8fee0fd39d2
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38677505"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699592"
 ---
-# <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server 与 Microsoft 365 服务和应用程序的集成
+#  <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>与 Microsoft 365 服务和应用程序的安全信息和事件管理（SIEM）服务器集成
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>摘要
 
-如果您的组织使用的是安全信息和事件管理（SIEM）服务器，或者您打算马上获取 SIEM 服务器，那么您可能会想知道如何将与 Microsoft 365 或 Office 365 集成。 本文提供了可用于设置 SIEM server 与 Microsoft 365 服务和应用程序集成的资源的列表。
+您的组织是使用还是计划获取安全信息和事件管理（SIEM）服务器？ 您可能想知道它是如何与 Microsoft 365 或 Office 365 集成的。 本文提供了可用于将 SIEM 服务器与 Microsoft 365 服务和应用程序相集成的资源的列表。
 
 > [!TIP]
 > 如果你还没有 SIEM 服务器并且正在浏览你的选项，请考虑使用**[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)**。
@@ -40,26 +40,26 @@ ms.locfileid: "38677505"
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM server 与 Microsoft 365 的集成
 
-SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数据。 下表列出了几个 Microsoft 365 服务和应用程序以及 SIEM 服务器输入和资源，以详细了解 SIEM server 集成。 
+SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数据。 下表列出了几个 Microsoft 365 服务和应用程序，以及 SIEM 服务器输入和资源，以了解详细信息。 
 
-| Microsoft 365 服务或应用程序 | SIEM 服务器输入 | 了解详细信息的资源 |
+| Microsoft 365 服务或应用程序 | SIEM 服务器输入/方法 | 了解详细信息的资源 |
 | --- | --- | --- |
 | [Office 365 高级威胁防护](office-365-atp.md)  | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
 | [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | Azure 中托管的 HTTPS 终结点 <br/>REST API| [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem) |
 
 > [!TIP]
-> 查看[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)，它附带了许多连接器（适用于 Microsoft 解决方案），现成且提供了实时集成（包括 Microsoft 威胁防护解决方案）和 microsoft 365 源（包括 Office 365、azure AD、azure ATP 和 Microsoft 云应用安全性等）。
+> 请看一下[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)。 Azure Sentinel 附带有 Microsoft 解决方案连接器。 这些连接器可用于 "开箱即用" 并提供实时集成。 您可以将 Azure Sentinel 与 Microsoft 威胁防护解决方案和 Microsoft 365 服务（包括 Office 365、Azure AD、Azure ATP、Microsoft 云应用安全性等）结合使用。
 
 ### <a name="audit-logging-must-be-turned-on"></a>必须打开审核日志记录
 
-在配置 SIEM server 集成之前，请确保审核日志记录已打开。 
+在配置 SIEM server 集成之前，请确保已启用审核日志记录。 
 
 - 对于 SharePoint Online、OneDrive for business 和 Azure Active Directory，[审核日志记录在安全 & 合规性中心中打开](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)。
 
 - 对于 Exchange Online，[审核日志记录是使用 Windows PowerShell 打开](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing)的。
  
-## <a name="additional-resources"></a>其他资源
+## <a name="more-resources"></a>更多资源
 
 [在 Azure 安全中心集成安全解决方案](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
