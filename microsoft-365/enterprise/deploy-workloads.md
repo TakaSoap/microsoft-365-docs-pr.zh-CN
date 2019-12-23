@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 将组织用户载入到 Microsoft 365 企业版的工作效率工作负载。
-ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
-ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
+ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37608593"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801897"
 ---
-# <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
+# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
 
 为了实现 Microsoft 365 企业版在创造力和团队合作方面的优势，请在基础结构上部署这些工作负载：
 
@@ -47,7 +47,7 @@ ms.locfileid: "37608593"
 
 以下是 Microsoft 365 企业版部署指南中的工作负载和方案：
 
-![整体 Microsoft 365 企业版部署指南中的工作负载和方案](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Microsoft 365 企业版部署指南中的工作负载和方案：](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 请参阅 [Microsoft 365 工作效率库](https://aka.ms/productivitylibrary) https://aka.ms/productivitylibrary)了解更多方案。 
 

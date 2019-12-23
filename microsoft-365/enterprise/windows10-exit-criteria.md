@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对 Windows 10 企业版的条件。
-ms.openlocfilehash: 98dd4b71f1c2af6d72580066d73e75dfd4aa60ff
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d51392572c78edb1a21f5edc3229057b9af3f514
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627526"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801217"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>阶段 3：Windows 10 企业版基础结构退出条件
 
@@ -111,7 +111,7 @@ Windows Autopilot 配置设备并将其连接到 Azure AD。
 如果需要，可在[步骤 5](windows10-enable-security-features.md#windows10-sec-eg) 中进行设置以满足此要求。
 
 <a name="crit-windows10-step5c"></a>
-## <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必需：你正在使用 Microsoft Defender 高级威胁防护（仅限 Microsoft 365 企业版 E5）
+## <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-e5-only"></a>必需：你正在使用 Microsoft Defender 高级威胁防护（仅限 Microsoft 365 E5）
 
 已部署 Microsoft Defender 高级威胁防护 (ATP)，以针对运行 Windows 10 企业版的网络和设备检测、调查和响应高级威胁。 
 

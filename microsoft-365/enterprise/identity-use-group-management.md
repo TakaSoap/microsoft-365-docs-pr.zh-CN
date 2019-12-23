@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 可以使用组来自动管理某些管理任务。
-ms.openlocfilehash: 0d46a2af5683b8da40275302460d453f1f14acbe
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 49cdb0c3d394cb423d0565d7093f1b32b6661158
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831655"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801707"
 ---
 # <a name="step-5-use-groups-for-management"></a>步骤 5：使用组进行管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "39831655"
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>允许用户创建和管理自己的组
 
-*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+*这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
 在此部分中，将标识可由组所有者而不是 IT 管理员来管理的 Azure Active Directory (Azure AD) 组。 此功能称为*自助服务组管理*，允许未分配管理角色的组所有者创建和管理安全组。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "39831655"
 <a name="identity-dyn-groups"></a>
 ## <a name="set-up-dynamic-group-membership"></a>设置动态组成员身份
 
-*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+*这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
 在此部分中，将创建一系列规则来为 Azure AD 组的成员自动添加或删除用户帐户。 这称为*动态组成员身份*。 这些规则将基于用户帐户属性，如部门或国家/地区。
 
@@ -74,7 +74,7 @@ ms.locfileid: "39831655"
 <a name="identity-group-license"></a>
 ## <a name="set-up-automatic-licensing"></a>设置自动许可
 
-*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+*这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
 在此部分中，将在 Azure AD 中配置安全组，以将许可证从一组订阅自动分配到组的所有成员。 这称为*基于组的许可*。 如果将某个用户帐户添加到组或从组中删除，则该组订阅的许可证将被自动分配或取消分配给该用户帐户。
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对基于身份的服务和基础结构的条件。
-ms.openlocfilehash: 94343400482083b2e793ff218816f06cb982187e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 540d3c01ea368634cebafb2ec3dd5562fcb0b73c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627388"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801747"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>阶段 2：身份基础结构退出条件
 
@@ -26,7 +26,7 @@ ms.locfileid: "38627388"
 
 确保你的标识基础结构符合以下必需条件，以及你认为可选的那些条件。
 
-另请参阅[先决条件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)，获得有关标识基础结构的其他建议。
+另请参阅[先决条件](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites)，获得有关标识基础结构的其他建议。
 
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>必需：全局管理员帐户受到保护 
@@ -121,7 +121,7 @@ ms.locfileid: "38627388"
 5.  删除该测试用户帐户。
 
 <a name="crit-identity-ident-prot"></a>
-## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限 Microsoft 365 Enterprise E5）
+## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限 Microsoft 365 E5）
 
 已启用 Azure AD Identity Protection，可以：
 

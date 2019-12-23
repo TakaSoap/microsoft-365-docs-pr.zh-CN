@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 全局管理员帐户需要特殊对待，以确保其免受凭据泄露的影响。
-ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627078"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801827"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步骤 1：创建和保护全局管理员帐户
 
@@ -72,7 +72,7 @@ ms.locfileid: "38627078"
 
 管理员帐户将成为符合条件的管理员，而不再是永久管理员。 有人需要管理员角色时，才会激活它。 然后完成激活过程，以将管理员角色在特定时间内添加到管理员帐户。 当时间到期后，PIM 会从管理员帐户中删除管理员角色。
 
-可从 Microsoft 365 企业版 E5 包含的 Azure Active Directory Premium P2 中获取 PIM。 或者，可以为管理员帐户单独购买 Azure Active Directory Premium P2 许可证。
+可从 Microsoft 365 E5 包含的 Azure Active Directory Premium P2 中获取 PIM。 或者，可以为管理员帐户单独购买 Azure Active Directory Premium P2 许可证。
 
 若要为 Azure AD 租户和管理员帐户启用 Azure PIM，请参阅 [PIM 配置步骤](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。
 

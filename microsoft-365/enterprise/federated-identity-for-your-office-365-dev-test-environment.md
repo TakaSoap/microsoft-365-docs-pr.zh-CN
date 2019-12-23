@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Microsoft 365 测试环境配置联合身份验证。
-ms.openlocfilehash: 895d6b825a3e2928fee1e9f68ce2195b92117e37
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 1158109a4d42a7434a1d66750b2182f940d511b9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202248"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801847"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>用于 Microsoft 365 测试环境的联合身份
 
@@ -41,7 +41,7 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
     
 - 连接 Internet 的简化组织 Intranet，由 Azure 虚拟网络子网中的五个虚拟机（DC1、APP1、CLIENT1、ADFS1 和 PROXY1）组成。Azure AD Connect 在 APP1 上运行，以便将 Active Directory 域服务域中的帐户列表同步到 Office 365。PROXY1 接收传入的身份验证请求。ADFS1 使用 DC1 验证凭据并颁发安全令牌。
     
-设置此开发/测试环境分为五个阶段：
+设置此测试环境分为五个阶段：
   
 1. 通过密码哈希同步创建模拟企业测试环境。
     

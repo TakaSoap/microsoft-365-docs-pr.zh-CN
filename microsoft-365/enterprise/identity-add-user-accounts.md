@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 直接在云中或通过与本地目录同步来添加用户帐户和组。
-ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370219"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801837"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步骤 4：添加用户帐户
 
@@ -82,7 +82,7 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 <a name="identity-sync-health"></a>
 ## <a name="monitor-synchronization-health"></a>监控同步运行状况
 
-*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+*这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
 在此部分中，将在每个本地 AD DS 域控制器上安装 Azure AD Connect Health 代理，以监控由 Azure AD Connect 提供的标识基础架构和同步服务。 Azure AD Connect Health 门户提供了监控信息，可以从中查看警报、性能监控、使用情况分析和其他信息。
 

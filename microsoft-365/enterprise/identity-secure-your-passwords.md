@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你需要确保你的密码在整个组织中都强大并易于管理。
-ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746508"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801737"
 ---
 # <a name="step-2-secure-your-passwords"></a>第 2 步：保护密码安全
 
@@ -27,7 +27,7 @@ ms.locfileid: "37746508"
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>防止密码错误
 
-*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+*这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
 所有用户都应使用 [Microsoft 的密码指南](https://www.microsoft.com/research/publication/password-guidance/)来创建用户帐户密码。
 
@@ -46,7 +46,7 @@ ms.locfileid: "37746508"
 <a name="identity-pw-reset"></a>
 ## <a name="simplify-password-resets"></a>简化密码重置
 
-*这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
+*这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
 在此部分中，将启用自助密码重置 (SSPR)，以允许用户重置或解除锁定其密码或帐户。 为提醒你避免误用或滥用，可以使用详细报告，跟踪用户访问系统的时间，并进行通知。 必须先启用密码写回，然后才能部署密码重置。
 

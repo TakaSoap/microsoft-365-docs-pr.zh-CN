@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步了解相关信息，然后在整个组织中内推广 Microsoft Teams。
-ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033597"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801237"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版的 Microsoft Teams
 
@@ -43,7 +43,7 @@ Microsoft Teams 集聊天、会议、文档共享和按线索组织对话等多�
 有关更为高级的 Teams 功能，请参阅：
 
 - [会话和会议](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
-- [云语音](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page)（需要 Microsoft 365 企业版 E5）
+- [云语音](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page)（需要 Microsoft 365 E5）
 
 若要监视组织对 Teams 的使用情况，请参阅：
 

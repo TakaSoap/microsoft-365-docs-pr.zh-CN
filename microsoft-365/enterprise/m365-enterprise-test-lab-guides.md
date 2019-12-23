@@ -15,14 +15,14 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 5f2f6b9fb137cf9d1ea9dc21ca12a3792d79e249
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 42cc3b5572352a4bf83b50e964fd04dd527506cd
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757831"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801637"
 ---
-# <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
+# <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
 *这同时适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
@@ -34,7 +34,7 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
   
 ![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
 
 [![Microsoft 365 企业版测试实验室指南堆栈](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
 

@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 如果你具有现有基础结构，请逐步完成 Microsoft 365 企业版部署的退出条件。
-ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148506"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801927"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>使用现有基础结构部署 Microsoft 365 企业版
+# <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>使用现有基础结构部署 Microsoft 365 企业版
 
 许多组织都有现有网络、标识和其他组件，或者具有 Microsoft 本地产品和基于云的服务。本文将逐步介绍部署 Microsoft 365 企业版的各个阶段，可让你快速确定如何调整或更改现有基础结构。
 
