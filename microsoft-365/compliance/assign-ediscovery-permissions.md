@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: 54a12334c4b63e1751d578dcd5a9c79d887d246d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 434fe9f4876bb29df98de5575611069b0afc6860
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823724"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854037"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -43,11 +43,11 @@ ms.locfileid: "40823724"
 > [!NOTE]
 > 若要使用高级电子数据展示分析用户的数据，必须为用户（数据管理员）分配 Office 365 E5 许可证。 或者，可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。 分配给案例并使用高级电子数据展示分析数据的管理员和合规性监察官不需要 E5 许可证。  
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 "组织管理" 角色组的成员，或分配有角色管理角色才能在安全 & 合规性中心中分配电子数据展示权限。
     
-- 您可以使用 Security & 合规性中心 PowerShell 中的[add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) cmdlet 将已启用邮件的安全组添加为电子数据展示管理器角色组中的电子数据展示管理器子组的成员。 但是，不能将已启用邮件的安全组添加到电子数据展示管理员子组。 有关更多详细信息，请参阅 "[详细信息](#more-information)" 部分。 
+- 您可以使用 Security & 合规性中心 PowerShell 中的[add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) cmdlet 将已启用邮件的安全组添加为电子数据展示管理器角色组中的电子数据展示管理器子组的成员。 但是，不能将已启用邮件的安全组添加到电子数据展示管理员子组。 有关详细信息，请参阅[详细信息](#more-information)部分。 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -121,7 +121,10 @@ ms.locfileid: "40823724"
 
 ### <a name="review"></a>审阅
 
-此角色允许用户访问 Office 365 高级电子数据展示中的事例数据。 此角色的主要用途是为用户提供对高级电子数据展示的访问权限。 分配了此角色的用户可以在其成员的安全 & 合规中心中查看和打开电子数据展示页面上的案例列表。 在用户访问安全 & 合规性中心中的案例后，他们可以选择**切换到高级电子数据展示**，以在高级电子数据展示中访问和分析事例数据。 此角色不允许用户预览与案例相关联的内容搜索的结果，或执行其他内容搜索或案例管理任务。
+此角色使用户能够在[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)（也称为高级电子数据展示 v1）中访问事例数据。 此角色的主要用途是为用户提供 Office 365 高级电子数据展示的访问权限。 分配了此角色的用户可以在其成员的安全 & 合规中心中查看和打开电子数据展示页面上的案例列表。 在用户访问安全 & 合规性中心中的案例后，他们可以选择 "**切换到高级电子数据展示**" 以访问和分析 Office 365 高级电子数据展示中的事例数据。 此角色不允许用户预览与案例相关联的内容搜索的结果，或执行其他内容搜索或案例管理任务。
+
+> [!NOTE]
+> 目前，分配了审阅角色的用户（或是审阅者角色组的成员）无法在 Microsoft 365 （也称为高级电子数据展示 v2）中访问[高级电子数据展示中](overview-ediscovery-20.md)的数据。 若要在高级电子数据展示 v2 中向事例添加成员，以便他们能够查看事例数据，用户必须是电子数据展示管理器角色组的成员。
 
 ### <a name="rms-decrypt"></a>RMS 解密
 

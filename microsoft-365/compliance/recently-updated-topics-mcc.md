@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 我们将不断创建新文章，更新现有文章，并根据你的反馈进行更改。 了解本月新增和更新的内容。
-ms.openlocfilehash: 497088cf5ad9da848879cf2c7197059917be6b07
-ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
+ms.openlocfilehash: 61e4798575c44a9759a15bb93dbbb723d5be8999
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685116"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850876"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -147,10 +147,6 @@ ms.locfileid: "38685116"
 
 [Office 365 中的内容搜索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)（已更新）<br>
 [在 Office 365 中为电子数据展示调查设置合规性边界](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)（已更新）<br>添加了有关在 SharePoint 多地理位置环境中搜索内容的这两篇文章的详细信息。
-
-### <a name="data-governance"></a>数据治理
-
-[Office 365 中的无限制存档概述](unlimited-archiving.md#how-auto-expanding-archiving-works)（已更新）<br>新增了有关 Office 365 如何为总计 1 TB 的额外存储空间添加最多20个辅助存档的详细信息。
 
 ### <a name="data-investigations"></a>数据调查
 

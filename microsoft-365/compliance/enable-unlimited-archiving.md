@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 对于管理员：了解如何在 Office 365 中启用自动扩展存档，从而为用户提供对其 Exchange Online 邮箱的无限制存储。 您可以为整个组织或仅为特定用户启用自动扩展存档。
-ms.openlocfilehash: b5191aa080722b5bb3150c92d922b6b150fc545e
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 4059e007039a62e415fd0b5847d1d8fa120a1570
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38627088"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850886"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>在 Office 365 中启用无限制存档—管理帮助
 
@@ -124,4 +124,4 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 - 管理员无法调整存储配额。
 
 > [!IMPORTANT]
-> 仅对用于单个用户的邮箱或每个不超过 1 GB 的增长速率的共享邮箱支持自动扩展存档。 不允许使用日记、传输规则或自动转发规则将邮件复制到存档邮箱以进行存档。 用户的存档邮箱只供该用户使用。 Microsoft 保留拒绝在用户存档邮箱用于存储其他用户存档数据的情况下进行无限制存档的权利。
+> 仅对用于单个用户的邮箱或每个不超过 1 GB 的增长速率的共享邮箱支持自动扩展存档。 不允许使用日记、传输规则或自动转发规则将邮件复制到存档邮箱以进行存档。 用户的存档邮箱只供该用户使用。 Microsoft 保留在用户的存档邮箱用于存储其他用户的存档数据或不适当使用的情况下，拒绝无限存档的权利。
