@@ -23,14 +23,20 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商业版的安装步骤概述。
-ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967615"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850796"
 ---
 # <a name="overview-of-setup"></a>设置概述
+
+观看有关 Microsoft 365 商业版安装程序的简短视频。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
 
 大部分安装步骤可以在安装向导中完成，但也会列出其他选项。
 
@@ -50,14 +56,12 @@ ms.locfileid: "39967615"
   
   除了安装向导中的安全设置之外，还可以通过添加以下设置来提高安全性：
 
-
 - **电子邮件恶意软件保护**
 - **ATP 反网络钓鱼**
 - **Exchange Online Archiving**
 - **Azure 信息保护（Plan1**）
 
-
-若要开始，请[设置高级安全策略](set-up-advanced-security.md)。
+若要开始，请参阅[设置高级安全策略](set-up-advanced-security.md)。
 
 请参阅[保护 Microsoft 365 业务的十大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)，以获得最佳安全实践的路线图。
 
