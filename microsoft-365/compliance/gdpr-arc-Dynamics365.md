@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 055c19715ff5dcd28ae05489600a31b2f7904e72
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 828c4f7faaae1225d438a4d34b159d981b31b141
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749667"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806515"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Dynamics 365 责任就绪清单
 
@@ -26,7 +27,7 @@ ms.locfileid: "38749667"
 
 本责任准备情况清单可方便你在使用 Microsoft Dynamics 365 时，访问支持 GDPR 可能所需的信息。本清单按个人数据处理者适用的一组隐私和安全控件的标题和参考编号（位于每个清单主题的括号中）进行组织，这些控件取自：
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) 安全技术要求。
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) 安全技术要求。
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隐私管理要求。
 
 可以使用合规性管理器 [[15](gdpr-arc-Dynamics365.md#15)] 来管理此清单中的项目，方法是引用 GDPR 磁贴中的“客户托管控件”** 下的控件 ID 和控件标题。

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的安全 & 合规性中心来启用存档邮箱, 以便支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: 63c6986e3bf053f09ce4c4925735e920da3b5ed4
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 29c90b85b4f8d05664ea6d28f8997265b7e14b49
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793666"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967355"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全与合规中心中启用存档邮箱
   
@@ -41,7 +41,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在安全与合规中心的左窗格中，单击**数据管理** \> **存档**。
+3. 在安全与合规中心的左窗格中，单击**信息管理** \> **存档**。
     
     将显示“存档”**** 页。“存档邮箱”**** 列表示每个用户的存档邮箱已启用还是禁用。 
     
@@ -72,7 +72,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在安全与合规中心的左窗格中，单击**数据管理** \> **存档**。
+3. 在安全与合规中心的左窗格中，单击**信息管理** \> **存档**。
     
     将显示“存档”**** 页。“存档邮箱”**** 列表示每个用户的存档邮箱已启用还是禁用。 
     

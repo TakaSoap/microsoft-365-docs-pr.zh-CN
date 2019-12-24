@@ -12,12 +12,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 66a3478ed625b3c7453992e04070d57beef173eb
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: c31107588e6d7841e93c3a1cd653790f3937c21e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749670"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808527"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>适用于 Microsoft Office 365 的责任准备情况清单
 
@@ -31,7 +32,7 @@ ms.locfileid: "38749670"
 
 依据以下要求，此清单和合规性管理器使用个人数据处理程序适用的一组隐私和安全控件的标题和参考编号（位于每个清单主题的括号中）进行组织：
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) 安全技术要求。
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) 安全技术要求。
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隐私管理要求。
 
 此控件结构还用于组织 Microsoft Office 365 为支持 GDPR 而实现的内部控件的演示文稿（可从[服务信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)下载）。

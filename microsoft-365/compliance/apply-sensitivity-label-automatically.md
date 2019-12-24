@@ -1,11 +1,11 @@
 ---
 title: 将敏感度标签自动应用于内容
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 3c5b52c89c9a5eb9e78e670bce0b5c3edec89cd1
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 77a0b3cdf88301677451fe7fe1bac58de2a40a5f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256709"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807837"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -29,11 +29,11 @@ ms.locfileid: "39256709"
 
 - 你无需为用户提供有关所有分类的培训。
 
-- 你无需依赖用户即可对全部内容进行正确分类。
+- 无需依赖用户，即可对全部内容进行正确分类。
 
 - 用户不再需要了解你的策略，反而可以专注于自己的工作。
 
-有关许可证要求的信息，请参阅 [Office 应用中的敏感度标签](sensitivity-labels-office-apps.md)。
+有关许可要求的信息，请参阅[灵敏度标签的订阅和许可要求](sensitivity-labels-office-apps.md#subscription-and-licensing-requirements-for-sensitivity-labels)。
 
 在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的“分类”**** > “敏感度标签”**** 下创建敏感度标签时，可使用自动标签设置。
 
