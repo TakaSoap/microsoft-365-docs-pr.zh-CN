@@ -1,7 +1,7 @@
 ---
 title: Microsoft 威胁防护先决条件
 description: 了解有关 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置
-keywords: 要求, 先决条件, 硬件, 软件, 浏览器
+keywords: 要求、先决条件、硬件、软件、浏览器、MTP、M365、许可证
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 28ecc159023bb9c86739b78c8a3a34e6d401b8ed
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2175ca328678e271056ae75d1bcbb7dc70a2198d
+ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806891"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "40881963"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 

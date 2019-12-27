@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 安全中心中打开 Microsoft 威胁防护
 description: 了解如何启用 Microsoft 威胁防护并开始集成安全事件和响应。
-keywords: 入门, MTP, Microsoft 威胁防护, M365, 安全, 数据位置
+keywords: 入门、启用 MTP、Microsoft 威胁防护、M365、security、data location、所需权限、许可证资格
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7790e079d4b39b5d41961a26bb17009adb1bec1d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 842c3be031e96467c8b82e8cf482435e66124960
+ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808447"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "40881973"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
@@ -33,8 +33,10 @@ ms.locfileid: "40808447"
 
 Microsoft 威胁防护通过集成 Microsoft Defender 高级威胁防护 (ATP)、Office 365 ATP、Microsoft Cloud App Security 和 Azure ATP 的关键功能来统一事件响应流程。 这种统一的体验增加了可在 Microsoft 365 安全中心访问的强大功能。
 
-## <a name="check-your-eligibility"></a>检查资格
+## <a name="check-license-eligibility-and-required-permissions"></a>检查许可证资格和必需权限
 拥有 Microsoft 365 E5 或等效许可证的客户可以使用 Microsoft 威胁防护。 有关更多信息，请[阅读许可要求](prerequisites.md#licensing-requirements)。
+
+ 若要启用 Microsoft 威胁防护功能，您必须是**全局管理员**或[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的**安全管理员**。
 
 ## <a name="start-using-the-service"></a>开始使用服务
 打开 Microsoft 威胁防护服务可聚合来自各种集成服务的数据。 系统将对数据进行集中处理和存储，以确定新的见解，并使集中的响应工作流程成为可能。
@@ -44,7 +46,7 @@ Microsoft 威胁防护通过集成 Microsoft Defender 高级威胁防护 (ATP)�
 ![不包含 Microsoft 威胁防护功能的 Microsoft 365 安全中心菜单图像](../images/mtp-off.png)
 *关闭了 Microsoft 威胁防护的 Microsoft 365 安全中心*
 
-要打开 Microsoft 威胁防护服务，请转到 Microsoft 365 安全中心中的“**设置**” > “**Microsoft 威胁防护**” > “**选择加入/选择退出**”。 要执行此任务，你需要是 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 中的全局管理员或安全管理员。
+要打开 Microsoft 威胁防护服务，请转到 Microsoft 365 安全中心中的“**设置**” > “**Microsoft 威胁防护**” > “**选择加入/选择退出**”。
 
 如果已为组织设置了 Microsoft Defender ATP，则数据将在为 [Microsoft Defender ATP 数据](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)选择的同一数据中心位置进行存储和处理。 如果你没有 Microsoft Defender ATP，系统将要求你选择一个专门用于 Microsoft 威胁防护的新数据中心位置。 你需要确认同意，才能在服务和聚合之间共享数据。
 
