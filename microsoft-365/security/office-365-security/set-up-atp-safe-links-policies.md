@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 06/26/2019
+ms.date: 12/30/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 29e0c8d485d89498fe952d29d8b68f808c4aaaf3
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 3055a5330707b3654998fbdc937ead239742cb32
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970128"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910153"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -122,8 +122,8 @@ ms.locfileid: "39970128"
 |此选项  |执行的操作  |
 |---------|---------|
 | **阻止以下 Url** <br/>    | 允许您的组织具有自动阻止的自定义 Url 的自定义列表。 当用户单击此列表中的某个 URL 时，将会看到一个[警告页面](atp-safe-links-warning-pages.md)，说明为什么阻止了该 url。 若要了解详细信息，请参阅[使用 Office 365 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)。 |
-| **Office 365 专业增强版、适用于 iOS 和 Android 的 Office** <br/>    | 如果选择此选项，则将 ATP 安全链接保护应用于 Windows 或 Mac OS 上的 Word、Excel 和 PowerPoint 文件中的 Url、iOS 上的 Office 文档、Windows 上的 Visio 2016 以及 Office 应用程序的 web 版本（Word、PowerPoint、Excel 和OneNote），前提是用户已登录 Office 365。 |
-| **在用户单击 ATP 安全链接时不进行跟踪** <br/>  | 选择此选项后，将不存储在 Word、Excel、PowerPoint 和 Visio 文档中的 Url 的数据。  <br/> |
+| **Office 365 专业增强版、适用于 iOS 和 Android 的 Office** <br/>    | 如果选择此选项，则会将 ATP 安全链接保护应用于 Windows 或 Mac OS 上的 Word、Excel 和 PowerPoint 文件中的 Url、Outlook 中的电子邮件、iOS 或 Android 设备上的 Office 文档、Windows 上的 Visio 2016 文件以及在的 web 版本中打开的文件如果用户已登录 Office 365，则 Office 应用（Word、PowerPoint、Excel、Outlook 和 OneNote）。 |
+| **在用户单击 ATP 安全链接时不进行跟踪** <br/>  | 选择此选项后，将不存储在 Word、Excel、PowerPoint、Visio 文档和 Outlook 电子邮件中的 Url 的数据。  <br/> |
 |**不要让用户点击到原始 URL 的 ATP 安全链接** <br/> |选择此选项后，用户将无法继续处理被确定为恶意的 URL 之后的[警告页](atp-safe-links-warning-pages.md)。  <br/> |
 
 ### <a name="policies-that-apply-to-specific-email-recipients"></a>适用于特定电子邮件收件人的策略

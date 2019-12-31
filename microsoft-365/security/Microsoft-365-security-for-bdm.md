@@ -2,7 +2,7 @@
 title: 适用于商业决策者的 Microsoft 365 安全决策者（Bdm）
 ms.author: bcarter
 author: brendacarter
-manager: ''
+manager: johmar
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 组织在其 Microsoft 365 环境中目前面临的最常见的威胁和攻击方案，以及缓解这些风险的建议操作。
-ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9ad9d05cf29dba5aa3a7d14063db6fa2b4dd3bc4
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801247"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910133"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>适用于商业决策者的 Microsoft 365 安全决策者（Bdm）
 
@@ -134,7 +134,7 @@ Microsoft 365 信息保护功能可帮助您发现您拥有的信息、存储的
 |使用**Office 365 ATP**工具：<br>•威胁调查和响应功能<br> •自动化调查和响应 |         |![绿色复选标记](../images/green-check-mark.png)|
 |使用**Microsoft DEFENDER ATP**：<br> •[终结点检测和响应](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> •自动化调查和修正安全分数 <br>•[高级搜寻](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![绿色复选标记](../images/green-check-mark.png)|
 |使用**Microsoft 云应用安全**来检测各云应用程序之间的异常行为，以确定勒索软件、受损用户或恶意应用程序、分析高风险使用率并自动修正以限制组织的风险。|         |![绿色复选标记](../images/green-check-mark.png)|
-|使用**Microsoft Azure Sentinel**或你的**当前 SIEM**工具监视整个环境中的威胁。 在预览期间，可以自由使用 Azure Sentinel。 |         |![绿色复选标记](../images/green-check-mark.png)|
+|使用**Microsoft Azure Sentinel**或你的当前 SIEM 工具监视整个环境中的威胁。 |         |![绿色复选标记](../images/green-check-mark.png)|
 |**部署[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) **以监视和保护针对本地 Active Directory 环境的威胁。   |         |![绿色复选标记](../images/green-check-mark.png) |
 |使用**Azure 安全中心**监视跨混合和云工作负载的威胁。 Azure 安全中心包含一层免费的功能和标准功能层，这些功能根据资源时间或交易情况支付。|         |         |
 

@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 4aff384d571444e5641d3bcff58df136d27c7624
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40832045"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910113"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -31,6 +31,9 @@ ms.locfileid: "40832045"
 > 必须在邮箱上启用垃圾邮件配置，才能使筛选正常工作。 默认情况下启用此设置，但如果筛选似乎不起作用，则应进行检查。 阅读[set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)以了解详细信息。 
 
 本主题介绍了这些 Microsoft 推荐的设置，以帮助保护 Office 365 用户。
+
+> [!TIP]
+> 有一个新的 PowerShell 模块可供下载，称为 "Office 365 高级威胁防护建议配置分析器（ORCA）"，可帮助确定其中一些设置。 在租户中以管理员身份运行时，ORCAReport 将帮助生成反垃圾邮件、反网络钓鱼和其他邮件清洁设置的评估。 您可以在https://www.powershellgallery.com/packages/ORCA/中下载此模块。
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>EOP 中的反垃圾邮件、反恶意软件和反网络钓鱼防护
 
@@ -45,7 +48,7 @@ ms.locfileid: "40832045"
 |网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |高可信度网络钓鱼电子邮件检测操作|隔离邮件|隔离邮件||
 |批量电子邮件检测操作|将邮件移动到 "垃圾邮件" 文件夹|隔离邮件||
-|将批量电子邮件阈值设置为|6 |4|默认值为7，但我们建议您将其更改为6。 有关详细信息，请参阅[批量投诉级别值](bulk-complaint-level-values.md)。|
+|将批量电子邮件阈值设置为|6 |4 |默认值为7，但我们建议您将其更改为6。 有关详细信息，请参阅[批量投诉级别值](bulk-complaint-level-values.md)。|
 |隔离保留期|30 天|30 天||
 |安全提示|打开|打开||
 |允许的发件人|无|无||
@@ -80,9 +83,9 @@ ms.locfileid: "40832045"
 
 |安全功能名称|标准|全|评论|
 |---------|---------|---------|---------|
-|出站垃圾邮件策略收件人限制-外部每小时限制|500|400||
-|出站垃圾邮件策略收件人限制-内部每小时限制|1000|800||
-|出站垃圾邮件策略收件人限制-每日限制|1000|800||
+|出站垃圾邮件策略收件人限制-外部每小时限制|400|500||
+|出站垃圾邮件策略收件人限制-内部每小时限制|800|1000||
+|出站垃圾邮件策略收件人限制-每日限制|800|1000||
 |用户超出限制时的操作|限制用户发送邮件|限制用户发送邮件||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP 反恶意软件策略设置
@@ -92,8 +95,8 @@ ms.locfileid: "40832045"
 |恶意软件检测响应|否|否|如果在电子邮件附件中检测到恶意软件，邮件将被隔离，并且只能由管理员释放。|
 |用于阻止可疑文件类型的 "常见附件类型筛选器"|打开|打开||
 |恶意软件零小时自动清除|打开|打开||
-|通知内部发件人未送达邮件|已禁用|已禁用||
-|通知外部发件人未送达的邮件|已禁用|已禁用||
+|通知内部发件人未送达邮件|Disabled|Disabled||
+|通知外部发件人未送达的邮件|Disabled|Disabled||
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP 反网络钓鱼策略设置
 
@@ -152,7 +155,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |安全功能名称|标准|全|评论|
 |---------|---------|---------|---------|
 |在 Office 365 应用中使用 ATP 安全链接，Office for iOS 和 Android|已启用|已启用|这属于适用于整个组织的 ATP 安全链接策略|
-用户单击安全链接时不进行跟踪|已禁用|已禁用|这适用于适用于整个组织的策略和适用于特定收件人的任何策略|
+用户单击安全链接时不进行跟踪|Disabled|Disabled|这适用于适用于整个组织的策略和适用于特定收件人的任何策略|
 |不要让用户通过指向原始 URL 的安全链接进行单击|已启用|已启用|这对于适用于整个组织的策略以及适用于特定收件人的任何策略都是如此。|
 |邮件中未知的潜在恶意 Url 的操作|打开|打开||
 |对指向文件的可疑链接和链接应用实时 URL 扫描|已启用|已启用||
