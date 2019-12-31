@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 5c5aafebf0dabfd43487c0c410088fe2a50aef35
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d76f92de4b41c7f6f0494af36a7e1aee953b9896
+ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808497"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911470"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -83,7 +83,7 @@ ms.locfileid: "40808497"
 |:-----|:-----|:-----|:-----|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其发送给其他人，然后再将其上载到 SharePoint，则该文档仍将保留原作者。 请务必对此属性使用用户的显示名称。|`author:"Garth Fort"`|所有文档的作者均为 Garth Fort。|
 |ContentType|项目的 SharePoint 内容类型，如项目、文档或视频。|`contenttype:document`|将返回所有文档。|
-|Created|创建项目的日期。|`created\>=06/01/2016`|在2016年6月1日或之后创建的所有项目。|
+|已创建|创建项目的日期。|`created\>=06/01/2016`|在2016年6月1日或之后创建的所有项目。|
 |CreatedBy|创建或上载项目的人员。 请务必对此属性使用用户的显示名称。|`createdby:"Garth Fort"`|所有项目均由 Garth Fort 创建或上载。|
 |DetectedLanguage|项目的语言。|`detectedlanguage:english`|所有项目均为英语。|
 |DocumentLink|SharePoint 或 OneDrive for business 网站上特定文件夹的路径（URL）。 如果使用此属性，请务必搜索指定文件夹所在的网站。  <br/> 若要返回在为 documentlink 属性指定的文件夹的子文件夹中的项目，您必须添加/\*到指定文件夹的 URL;例如，`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>有关搜索 documentlink 属性和使用脚本获取特定网站上的文件夹的 documentlink Url 的详细信息，请参阅[在 Office 365 for 目标集合中使用内容搜索](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for Business 文件夹中的所有项目。 第二个示例在指定的网站文件夹（和所有子文件夹）中返回文件名中包含单词 "保密信息" 的文档。|
@@ -150,7 +150,7 @@ ms.locfileid: "40808497"
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> 不是种类： im|排除由关键字或`property:value`表达式指定的项目。 在第二个示例中，排除王小姐 Beebe 发送的邮件。 第三个示例排除了所有即时消息对话，例如保存到对话历史记录邮箱文件夹中的 Skype for Business 对话。 <sup>双面</sup>|
 |-|keyword1 -keyword2|与 **NOT** 运算符作用相同。 因此，此查询将返回包含`keyword1`和将排除包含`keyword2`的项的项。|
 |NEAR|keyword1 NEAR(n) keyword2|返回包含邻近字词的项目，其中 n 表示间隔的字词数量。 例如， `best NEAR(5) worst`返回任何一个 "最差" 为 "最佳" 的五个字中的项。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup>|
-|ONEAR|keyword1 ONEAR(n) keyword2|类似于**near**，但以指定的顺序返回彼此相邻的单词的项。 例如， `best ONEAR(5) worst`返回在单词 "最差" 之前出现 "最佳" 的任何项目，并且两个单词在彼此之间的五个单词之间。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup> <br/> > [!NOTE]> 在搜索邮箱时不支持**ONEAR**运算符。 它仅在搜索 SharePoint 和 OneDrive for Business 网站时有效。 如果要在同一搜索中搜索邮箱和网站，并且查询包含**ONEAR**运算符，则搜索将返回邮箱项目，就像您使用的是**NEAR**运算符一样。 换言之，搜索返回的项目，其中指定的单词彼此接近，而不考虑单词出现的顺序。|
+|ONEAR|keyword1 ONEAR(n) keyword2|类似于**near**，但以指定的顺序返回彼此相邻的单词的项。 例如， `best ONEAR(5) worst`返回在单词 "最差" 之前出现 "最佳" 的任何项目，并且两个单词在彼此之间的五个单词之间。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup> <br/> **注意：** 搜索邮箱时不支持**ONEAR**运算符。 它仅在搜索 SharePoint 和 OneDrive for Business 网站时有效。 如果要在同一搜索中搜索邮箱和网站，并且查询包含**ONEAR**运算符，则搜索将返回邮箱项目，就像您使用的是**NEAR**运算符一样。 换言之，搜索返回的项目，其中指定的单词彼此接近，而不考虑单词出现的顺序。|
 |:|property:value|冒号（:)在语法`property:value`中，指定要搜索的属性的值包含指定的值。 例如，  `recipients:garthf@contoso.com` 返回发送至 garthf@contoso.com 的所有邮件。|
 |=|property=value|与 **：** 运算符相同。|
 |\<|property\<value|表示正在搜索的属性小于指定的值。<sup>1</sup>|
@@ -188,7 +188,7 @@ ms.locfileid: "40808497"
   
 |**条件**|**说明**|
 |:-----|:-----|
-|日期|对于电子邮件而言，是指收件人收到邮件的日期，或发件人发送邮件的日期。 对于文档，是上次修改文档的日期。|
+|Date|对于电子邮件而言，是指收件人收到邮件的日期，或发件人发送邮件的日期。 对于文档，是上次修改文档的日期。|
 |发件人/作者|对于电子邮件而言，是指发送邮件的人。 对于文档而言，是指从 Office 文档的作者字段中引用的人员。 你可以键入多个名称，用逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
 |大小（以字节为单位）|对于电子邮件和文档而言，是项目的大小（以字节为单位）。|
 |主题/职务|对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如上文所述，Title 属性是在 Microsoft Office 文档中指定的元数据。 您可以键入多个主题/标题的名称，以逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
@@ -220,7 +220,7 @@ ms.locfileid: "40808497"
 |:-----|:-----|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其发送给其他人，然后再将其上载到 SharePoint，则该文档仍将保留原作者。|
 |标题|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它与文档的文件名不同。|
-|Created|创建文档的日期。|
+|已创建|创建文档的日期。|
 |上次修改时间|上次修改文档的日期。|
 |文件类型|文件的扩展名;例如，.docx、one、.pptx 或 .xlsx。 此属性与 FileExtension 网站属性相同。|
 |||
