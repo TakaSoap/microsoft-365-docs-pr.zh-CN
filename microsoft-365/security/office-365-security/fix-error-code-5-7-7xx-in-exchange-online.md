@@ -3,7 +3,7 @@ title: 在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传�
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/11/2019
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件问题（阻止发送邮件的租户）。
-ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970448"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959650"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
 
@@ -27,42 +27,52 @@ ms.locfileid: "39970448"
 
 ## <a name="57705-tenant-has-exceeded-threshold-restriction-what-you-need-to-know"></a>5.7.705：租户已超出阈值限制：需要了解的内容
 
-如果你的租户受到威胁，内部发件人可以在你尝试发送邮件时看到此 NDR。 当你的租户中的大多数流量检测到可疑并导致阻止了租户的发送能力时，这通常会 occus。 如果您的用户从 Office 365 发送大量批量邮件，也会发生此情况。 如服务说明中所述，需要发送合法批量商业电子邮件的 Exchange Online 客户（例如，客户新闻稿）应使用专门用于这些服务的第三方提供商。
+一旦您的用户（统称为 "组织"），通过该服务发送一定数量的可疑电子邮件，则在解决问题之前，可以阻止所有用户发送任何电子邮件。 这通常是泄露（最常见的）或发送过多的批量邮件的结果。 用户将收到一 NDR，其中指出：
 
-一旦您的用户作为一个租户，通过该服务发送一定数量的可疑邮件，则在解决问题之前，可以阻止所有用户发送任何邮件。 用户将收到一个未送达报告（NDR），其中指出：
+`550 5.7.705 Access denied, tenant has exceeded threshold`
 
-- 550 5.7.705 访问被拒绝，租户已超出阈值
+在极少数情况下，如果您的订阅已过期，也可能会发生这种情况。 服务同步新订阅信息所需的时间（通常不超过一天），但在这种情况下，可能会阻止您的组织同时发送电子邮件。 避免这种情况的最佳方式是确保你的订阅不会过期。
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750：未注册的域电子邮件限制：您需要了解的内容
 
-Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些邮件。 一种受支持的示例是，当用户拥有 Office 365 邮箱，而其他人向其发送电子邮件，但电子邮件转发已配置为返回到用户的外部邮箱。 这在教育环境中最常见，在这种情况下，学生希望利用个人电子邮件界面，但仍会收到与学校相关的电子邮件。 另一个示例是当客户处于混合方案中，并且具有从 EOP 发送电子邮件的本地服务器时。
+Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些邮件。 例如：
+
+- Office 365 邮箱接收来自外部发件人的电子邮件。 邮件转发是在 Office 365 邮箱上配置的，因此邮件将返回到用户的外部电子邮件地址。 此方案在教育环境中最常见，即学生希望使用其个人电子邮件帐户查看学校相关的邮件。
+
+- 具有通过 EOP 发送传出邮件的本地电子邮件服务器的混合 envrionments。
 
 ### <a name="problems-with-unregistered-domains"></a>未注册域的问题
 
-问题是，在本地服务器受到威胁时，最终会将大量垃圾邮件转发给 EOP。 在几乎所有情况下，都设置了正确的连接器，但电子邮件是从未注册（也称为 "未设置的域"）发送的。 Office 365 确实允许未注册的域中包含合理的邮件，但应该为您计划发送的每个域在管理中心中配置一个接受域。
+问题是，在本地电子邮件服务器受到威胁时，会通过 EOP 中继大量垃圾邮件。 在几乎所有情况下，连接器都设置正确，但电子邮件是从未注册（也称为未设置）的域发送的。 Office 365 允许未注册的域中有合理的电子邮件量，但您应配置用于将电子邮件作为接受域发送的每个域。
 
-一旦受到威胁，租户将被阻止为未注册的域发送出站邮件。 用户将收到一个未送达报告（NDR），其中指出：
+一旦受到威胁，租户将被阻止为未注册的域发送出站电子邮件。 用户将收到一 NDR，其中指出：
 
-- 550 5.7.750 服务不可用。 阻止从未注册的域发送的客户端
+`550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
 ## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>如何取消阻止租户以便再次发送
 
 如果您的租户被阻止发送电子邮件，则需要执行以下几项操作：
 
-1. 请确保在 Microsoft 365 管理中心内注册所有域。 可在[此处](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)找到详细信息。
+1. 验证是否已注册所有电子邮件域。 有关详细信息，请参阅[将域添加到 Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)和[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-2. 查找异常连接器。 恶意参与者通常会在 Office 365 租户中创建新的入站连接器以发送垃圾邮件。 可在[此处](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)找到有关检查连接器的详细信息。
+2. 查找异常[连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。 恶意参与者通常会在 Office 365 组织中创建新的入站连接器以发送垃圾邮件。 若要查看现有连接器，请参阅[验证 Office 365 中的连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)。
 
-3. 锁定你的本地服务器，并确保其不会受到威胁。
+3. 按照对[Office 365 中的受损电子邮件帐户的响应](responding-to-a-compromised-email-account.md)中所述，检查是否存在已损坏的用户。
+
+4. 为 Office 365 组织中的所有管理员[启用 MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) 。
+
+5. 锁定你的本地电子邮件服务器并验证其是否未受到威胁。
 
    > [!TIP]
-   > 此处涉及许多因素，尤其是当它们是第三方服务器时。 无论如何，您都需要能够确认离开服务器的所有邮件都是合法的。
+   > 这里有许多因素，尤其是在使用第三方服务器时。 无论如何，您都需要验证所有传出电子邮件现在是否合法。
 
-4. 完成后，你将需要致电 Microsoft 支持部门，让你的租户不再被阻止，以从未注册的域中再次发送。  提供错误代码很有帮助，但您需要证明您的环境是安全的，并且不会再次发送垃圾邮件。 可在[此处](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)找到有关打开支持案例的详细信息。
+6. 致电 Microsoft 支持部门，让你的租户不再被阻止，以从未注册的域中再次发送。 错误代码很有帮助，但您需要证明您的环境已受到保护，并且无法发送垃圾邮件。 若要打开支持案例，请参阅[联系支持人员以获取商业产品-管理员帮助](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>有关详细信息
 
 [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
+
+[Exchange Online 服务说明的 "发送限制" 部分中的批量邮件指南](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Office 365 中的电子邮件未送达报告](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 

@@ -3,7 +3,7 @@ title: 将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/19/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: fb939c4166bc6c732f831dc767bffe1cfd7a2f7c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076039"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959640"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 
@@ -58,8 +58,8 @@ ms.locfileid: "37076039"
     
 3. 将垃圾邮件或钓鱼诈骗邮件复制并粘贴为附件形式的新邮件。 
     
-    > [!NOTE]
-    > 您可以将多封邮件附加到新邮件中。 确保所有邮件都是同一类型（即仿冒骗局邮件或垃圾邮件）。 > 保留新的邮件正文空白。 
+   > [!NOTE]
+   > •您可以在新邮件中附加多封邮件。 确保所有邮件都属于同一类型： "仿冒欺诈邮件" 或 "垃圾邮件"。 <br/><br/>•将新邮件的正文保留为空。 <br/><br/>•对于附加的邮件，请使用 .msg （默认 Outlook 格式）或 .eml （默认 Outlook 网页格式）格式。
   
 4. 单击“发送”****。
     
@@ -72,7 +72,7 @@ ms.locfileid: "37076039"
   
 您可以通过下列方式提交非垃圾邮件：
   
-- 如果您在配置内容筛选器时使用 "**将邮件移动到垃圾邮件文件夹**" 操作（这是默认操作），用户可以在其 outlook 或 web 上的 outlook （以前称为 "Outlook web App"） "垃圾邮件" 文件夹中释放假正邮件. 
+- 如果您在配置内容筛选器时使用 "**将邮件移动到垃圾邮件文件夹**" 操作（这是默认操作），则用户可以在其 outlook 或 web 上的 outlook （以前称为 "Outlook web App"） "垃圾邮件" 文件夹中释放假正邮件。 
     
   - Outlook 用户可以通过使用**非垃圾**邮件的右键单击菜单选项来释放误报邮件。 但是，他们必须通过电子邮件将邮件提交给 Microsoft，如本文中的过程所示。 
     
@@ -117,7 +117,7 @@ ms.locfileid: "37076039"
   
 垃圾邮件评估是一个无论原始语言或字符集如何都适用的持续过程。由于垃圾邮件可能是模糊的，甚至在主题或邮件正文中缺少文本，垃圾邮件团队需要依靠其他邮件特征执行筛选。这表示垃圾邮件团队将一个给定的邮件标记为垃圾邮件并根据其规则做必要更改后，未来该邮件将被阻止，直到其特征进行了修改并足以避开筛选器。不断部署新垃圾邮件规则。关于单个提交的规则的时间段根据提交的数量和质量而有所不同。因为新垃圾邮件规则是为全球所有客户设置的，所以并非所有的单个垃圾邮件提交都将产生新的垃圾邮件规则。
    
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>有关详细信息
 <a name="sectionSection4"> </a>
 
 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)

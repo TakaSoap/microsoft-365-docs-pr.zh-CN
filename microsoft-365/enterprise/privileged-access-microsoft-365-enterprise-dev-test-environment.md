@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的特权访问管理。
-ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: f0010b4d6aa85902473676d023d8b4fb9f4018bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831813"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959630"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 Privileged Access Management
 
@@ -26,10 +26,10 @@ ms.locfileid: "39831813"
 
 使用本文中的说明，可以配置特权访问管理以提高 Microsoft 365 企业版测试环境中的安全性。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+>[!TIP]
+>单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -37,8 +37,8 @@ ms.locfileid: "39831813"
   
 如果要在模拟的企业中配置特权访问管理，请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
-> [!NOTE]
-> 测试特权访问管理不需要模拟企业测试环境，其中包括连接到 Internet 的模拟 intranet 和 AD DS 林的目录同步。 此处提供它作为选项，以便您可以测试特权访问管理并在代表典型组织的环境中进行试验。 
+>[!NOTE]
+>测试特权访问管理不需要模拟企业测试环境，其中包括连接到 Internet 的模拟 intranet 和 AD DS 林的目录同步。 此处提供它作为选项，以便您可以测试特权访问管理并在代表典型组织的环境中进行试验。 
 
 ## <a name="phase-2-configure-privileged-access-management"></a>阶段2：配置特权访问管理
 
@@ -74,8 +74,8 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>为新的-New-journalrule 任务创建新的特权访问策略
 
-> [!NOTE]
-> 如果您尚未从本指南的第2阶段完成步骤1和步骤2，请确保按照步骤创建名为 "权限访问审批者" 的审批者组，并在您的测试环境中启用特权访问。
+>[!NOTE]
+>如果您尚未从本指南的第2阶段完成步骤1和步骤2，请确保按照步骤创建名为 "权限访问审批者" 的审批者组，并在您的测试环境中启用特权访问。
 
 1. 使用凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)您的测试环境的全局管理员帐户。
 

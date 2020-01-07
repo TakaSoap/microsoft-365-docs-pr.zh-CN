@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/30/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 3055a5330707b3654998fbdc937ead239742cb32
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: 7914c29f932469cdcea7436d1084536eaaf3d093
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910153"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959660"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -108,6 +108,9 @@ ms.locfileid: "40910153"
   - 在 "**应用**于" 部分中，选择 **"收件人是其成员**"，然后选择要包括在策略中的组。 选择 "**添加**"，然后选择 **"确定"**。
     
 6. 选择“**保存**”。
+
+> [!NOTE]
+> 优先级较高的 ATP 安全链接策略将优先。 如果用户接受两个或更多个策略，则只有较高优先级的策略才能生效。
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>步骤4：了解 ATP 安全链接策略选项
 
