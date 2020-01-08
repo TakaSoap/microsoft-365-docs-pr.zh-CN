@@ -14,20 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: 选择加入并使用律师-客户端权限检测模型，在查看高级电子数据展示事例中的内容时，使用基于机器学习的权限内容检测。
-ms.openlocfilehash: a483941ba5d28527eb509f2e1bbd129434430244
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+description: 使用律师-客户端特权检测模型，在阅读高级电子数据展示事例中的内容时，使用基于机器学习的权限内容检测。
+ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603776"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970860"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在高级电子数据展示中设置律师-客户端特权检测
 
 任何电子数据展示过程的审核阶段的主要和昂贵的方面是查看文档中的特权内容。 高级电子数据展示提供基于机器学习的权限内容检测，以提高此过程的效率。 此功能称为 "*律师-客户端特权检测*"。
-
-> [!NOTE]
-> 您必须选择使用律师-客户端权限检测模型，然后才能使用它。 有关说明，请参阅[步骤 1](#step-1-opt-in-to-attorney-client-privilege-detection) 。
 
 ## <a name="how-does-it-work"></a>它的工作原理
 
@@ -53,11 +50,11 @@ ms.locfileid: "39603776"
 
 ## <a name="set-up-the-attorney-client-privilege-detection-model"></a>设置律师-客户端权限检测模型
 
-若要启用律师-客户端权限检测模型，您的组织必须选择加入律师列表，然后再上传。
+若要启用律师-客户端权限检测模型，您的组织必须将其打开，然后上传律师列表。
 
-### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>步骤1：选择加入律师-客户端特权检测
+### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>步骤1：启用律师-客户端特权检测
 
-如前面所述，律师-客户端特权检测模型处于预览阶段。 因此，组织电子数据展示管理员（电子数据展示管理器角色组中的电子数据展示管理员子组的成员）的人员必须选择将模型提供给高级电子数据展示事例。
+组织中的电子数据展示管理员（电子数据展示管理器角色组中的电子数据展示管理员子组的成员）必须使模型在高级电子数据展示事例中可用。
 
 1. 在安全 & 合规性中心中，转到**电子数据展示 > 高级电子数据展示**。
 

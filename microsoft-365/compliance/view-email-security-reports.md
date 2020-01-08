@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: 35220410212f285c9024d2c8df7d5a275dad03ee
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 47c53f25954bc5691fe502f3857d9e4d80b97980
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075490"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962431"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 
@@ -30,7 +30,7 @@ ms.locfileid: "37075490"
   
 您的电子邮件安全报告包括以下内容：
 - [加密报告](#encryption-report)（新！）
-- [威胁防护状态报告](#threat-protection-status-report) 
+- [威胁防护状态](#threat-protection-status-report) 
 - [恶意软件检测报告](#malware-detections-report) 
 - [主要恶意软件报告](#top-malware-report)
 - [主要发件人和收件人报告](#top-senders-and-recipients-report)
@@ -63,20 +63,20 @@ ms.locfileid: "37075490"
 
 使用此报告使组织的安全和合规性团队能够监视邮件加密的使用情况，以及是否需要进一步的操作。 若要了解有关加密的详细信息，请参阅[Office 365 中的电子邮件加密](email-encryption.md)。
 
-## <a name="threat-protection-status-report"></a>威胁防护状态报告
+## <a name="threat-protection-status-report"></a>威胁防护状态
 
 **威胁防护状态**报告是一个智能报告，显示 Exchange Online Protection 检测到并阻止的恶意电子邮件。 此报告可用于查看标识为恶意软件的电子邮件或一段时间内的网络钓鱼尝试（最长为90天），并使安全管理员能够确定趋势或确定策略是否需要调整。
 
 > [!NOTE]
-> 拥有[Office 365 ATP](/security/office-365-security/office-365-atp.md)或[Exchange Online Protection](/security/office-365-security/exchange-online-protection-eop.md) （EOP）的客户可以使用威胁防护状态报告;但是，在 ATP 客户的威胁防护状态报告中显示的信息可能包含不同的 EOP 客户可能看到的数据。 例如，EOP 客户可以查看有关在电子邮件中检测到的恶意软件的信息，但不是关于[在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](/security/office-365-security/atp-for-spo-odb-and-teams.md)的信息，这是与 ATP 相关的功能。 （[了解有关 ATP 报告的详细信息](/security/office-365-security/view-reports-for-atp.md)。）
+> 拥有[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)或[Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) （EOP）的客户可以使用威胁防护状态报告;但是，在 ATP 客户的威胁防护状态报告中显示的信息可能包含不同的 EOP 客户可能看到的数据。 例如，EOP 客户可以查看有关在电子邮件中检测到的恶意软件的信息，但不是关于[在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)的信息，这是与 ATP 相关的功能。 （[了解有关 ATP 报告的详细信息](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)。）
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **威胁防护状态**。
   
-![威胁防护状态报告](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![威胁防护状态](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
 当您首次打开 "威胁 Protection 状态报告" 时，报告默认显示过去七天的数据;不过，您可以单击 "**筛选器**" 并将日期范围更改为最多90天的详细信息。 （如果使用的是试用订阅，则可能限制为30天的数据。）
 
-此报告对查看组织的[Exchange Online Protection 功能](/security/office-365-security//eop-features.md)和长期趋势分析的有效性和影响非常有用。 
+此报告对查看组织的[Exchange Online Protection 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)和长期趋势分析的有效性和影响非常有用。 
   
 ![威胁防护状态报告筛选器](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -96,7 +96,7 @@ ms.locfileid: "37075490"
   
 ## <a name="top-malware-report"></a>主要恶意软件报告
 
-**上面的恶意软件**报告显示[Exchange Online](/security/office-365-security/eop-features.md)检测到的各种类型的恶意软件。 
+**上面的恶意软件**报告显示[Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)检测到的各种类型的恶意软件。 
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> "**热门恶意软件**"。
   
@@ -122,7 +122,7 @@ ms.locfileid: "37075490"
   
 单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。
   
-使用 "**显示数据**" 列表选择是查看主要发件人、收件人、垃圾邮件收件人和恶意软件收件人的数据。 您还可以查看[Exchange Online Protection](/security/office-365-security/exchange-online-protection-overview.md)检测到的恶意软件的接收人。 
+使用 "**显示数据**" 列表选择是查看主要发件人、收件人、垃圾邮件收件人和恶意软件收件人的数据。 您还可以查看[Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop)检测到的恶意软件的接收人。 
   
 ![使用 "显示数据" 列表查看特定信息](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
@@ -138,7 +138,7 @@ ms.locfileid: "37075490"
   
 当您将鼠标指针悬停在图表中的某一天时，您可以看到通过的欺骗邮件的数量。
   
-单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。 若要了解有关反欺骗保护的详细信息，请参阅[Office 365 中的反欺骗保护](/security/office-365-security/anti-spoofing-protection.md)。
+单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。 若要了解有关反欺骗保护的详细信息，请参阅[Office 365 中的反欺骗保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spoofing-protection)。
   
 ## <a name="spam-detections-report"></a>垃圾邮件检测报告
 
@@ -154,7 +154,7 @@ ms.locfileid: "37075490"
   
 ![垃圾邮件检测报告可告知您阻止或筛选出的垃圾邮件数](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-在图表下方，你将看到检测到的垃圾邮件项目的列表。 选择一个项目以查看其他信息，例如垃圾邮件项目是否为入站或出站、其邮件 ID 及其收件人。 若要了解有关反垃圾邮件保护的详细信息，请参阅[Office 365 电子邮件反垃圾邮件保护](/security/office-365-security/anti-spam-protection.md)。
+在图表下方，你将看到检测到的垃圾邮件项目的列表。 选择一个项目以查看其他信息，例如垃圾邮件项目是否为入站或出站、其邮件 ID 及其收件人。 若要了解有关反垃圾邮件保护的详细信息，请参阅[Office 365 电子邮件反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)。
   
 ## <a name="sent-and-received-email-report"></a>发送和接收的电子邮件报告
 
@@ -176,11 +176,11 @@ ms.locfileid: "37075490"
   
 ![此报告告诉你有关反恶意软件、反垃圾邮件和其他邮件检测](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-若要了解有关电子邮件智能的详细信息，请参阅[Office 365 中的邮件流智能](/security/office-365-security/mail-flow-intelligence-in-office-365.md)。
+若要了解有关电子邮件智能的详细信息，请参阅[Office 365 中的邮件流智能](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)。
   
 ## <a name="user-reported-messages-report"></a>用户报告的邮件报告
 
-"**用户报告的邮件**" 报告显示用户通过使用[报告邮件外接程序](/security/office-365-security/enable-the-report-message-add-in.md)报告为垃圾邮件、网络钓鱼尝试或良好邮件的电子邮件的相关信息。
+"**用户报告的邮件**" 报告显示用户通过使用[报告邮件外接程序](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in)报告为垃圾邮件、网络钓鱼尝试或良好邮件的电子邮件的相关信息。
   
 详细信息可用于每封邮件，包括传递原因、为您的组织配置的垃圾邮件策略例外或邮件流规则。 若要查看详细信息，请在 "用户报告" 列表中选择一个项目，然后查看 "**摘要**" 和 "**详细信息**" 选项卡上的信息。 
   
@@ -195,7 +195,7 @@ ms.locfileid: "37075490"
 ![在 "安全&amp;合规性中心" 中， \>选择\> "威胁管理" 查看用户报告的消息](media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> 为了使用户报告的邮件报告正常工作，必须为您的 Office 365 环境**打开审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。 
+> 为了使用户报告的邮件报告正常工作，必须为您的 Office 365 环境**打开审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告所需的权限是什么？
 
@@ -204,7 +204,7 @@ ms.locfileid: "37075490"
 - 对于安全&amp;合规中心，您必须具有以下分配的角色之一：
     - 组织管理
     - 安全管理员（可在 Azure Active Directory 管理中心中进行分配（[https://aad.portal.azure.com](https://aad.portal.azure.com)）
-    - 安全读者
+    - 安全读取者
 
 - 对于 Exchange Online，必须在 Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)）或 PowerShell cmdlet 中分配以下角色之一（请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)）：
     - 组织管理
@@ -214,23 +214,23 @@ ms.locfileid: "37075490"
 
 若要了解详细信息，请参阅以下资源：
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 
 - [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告不显示数据，该怎么办？
 
-如果您未在报告中看到数据，请仔细检查您的策略设置是否正确。 若要了解详细信息，请参阅[在 Office 365 中防御威胁](/security/office-365-security/protect-against-threats.md)。
+如果您未在报告中看到数据，请仔细检查您的策略设置是否正确。 若要了解详细信息，请参阅[在 Office 365 中防御威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
   
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 电子邮件反垃圾邮件保护](/security/office-365-security/anti-spam-protection.md)
+[Office 365 电子邮件反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
   
-[Office 365 安全&amp;合规中心中的报告和见解](/security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[Office 365 安全&amp;合规中心中的报告和见解](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
   
-[在安全&amp;合规中心中创建报表的日程安排](/security/office-365-security/create-a-schedule-for-a-report.md)
+[在安全&amp;合规中心中创建报表的日程安排](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
   
-[在安全&amp;合规中心中设置和下载自定义报告](/security/office-365-security/set-up-and-download-a-custom-report.md)
+[在安全&amp;合规中心中设置和下载自定义报告](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)
   
 

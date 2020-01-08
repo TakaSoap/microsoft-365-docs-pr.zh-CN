@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 943c32aa535a319829bd93bde190a5fead12ef08
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910511"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970910"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -60,21 +60,21 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 通过读取和写入访问权限，您可以进行更改，并直接与安全分数进行交互。 您还可以将只读访问权限分配给其他用户。
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* 全局管理员
+* 安全管理员
+* Exchange 管理员
+* SharePoint 管理员
 
 ### <a name="read-only-roles"></a>只读角色
 
 如果具有只读访问权限，您将无法编辑 "改进" 操作的状态或注释、编辑分数区域或编辑自定义比较。
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* 帮助台管理员
+* 用户管理员
+* 服务管理员
+* 安全读者
+* 安全操作员
+* 全局读者
 
 ### <a name="graph-api"></a>Graph API
 

@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: c9ed6e6d7f1489a510283a344094754a6f8cdeb4
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: d9ef94323eb054b5f3c815b3fac114a1175d104e
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615662"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962411"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -28,6 +28,64 @@ ms.locfileid: "39615662"
 
 > [!TIP]
 > 对其他管理中心中的内容有兴趣？ 查看以下文章：<br>[Microsoft 365 管理中心的新增功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+
+## <a name="november--december-2019"></a>2019年11月 &
+
+在节日中，我们开始推出 Ignite 中演示的所有极好的合规性解决方案。 大多数情况下都处于预览状态，因此请将其测试出来，并确保通过打开合规性中心右侧右侧的反馈卡片来了解你的想法。
+
+![反馈](media/Feedback_card_MCC.JPG)
+
+### <a name="get-to-know-the-new-neighborhood"></a>了解新的邻居
+
+新的 Microsoft 365 合规性中心包含全新的解决方案以及 Office 365 安全性 & 合规性中心中了解和喜欢的合规性功能。 让我们更深入地了解 .。。
+
+#### <a name="new-compliance-solutions"></a>新的合规性解决方案
+
+您可能想知道什么是*解决方案*。 与云相比，云已彻底改变了业务的完成方式，它还为新的数据盗用和欺诈和必要的新法规提供了门。 我们的合规性解决方案是集成功能的集合，可帮助您帮助您管理这些不断发展的合规性要求。 解决方案的功能可能包括策略、警报、报告等的组合。
+
+以下是你将发现的新解决方案的摘要。 请留意即将推出的其他人。
+
+> [!NOTE]
+> 这些解决方案仅位于 Microsoft 365 合规性中心。 不能在 Office 365 安全 & 合规性中心中进行管理。
+<br/>
+
+|**新解决方案**|**说明**|**了解更多**|
+|:-----|:-----|:-----|
+|Microsoft 合规性分数（预览） <br/>|根据[合规性管理器](compliance-manager-overview.md)，合规性分数是一项独立功能，可帮助您了解和改进组织的合规性状态，这是一个更简单、更易于用户友好的设计。 它将计算基于风险的分数，以衡量您在帮助降低数据保护和法规标准方面的风险的完成操作的进度。 <br/>|[Microsoft 合规性分数概述（预览）](compliance-score.md)|
+|解决方案目录（预览） <br/>|解决方案目录是用于发现、了解和快速开始使用合规性和风险管理解决方案的一站式业务。 目录分为三个符合性类别，每个类别都包含有关组成该类别的解决方案的详细信息。 类别包括信息保护 & 治理、内幕风险管理和发现 & 响应 <br/>|[解决方案目录概述（预览）](microsoft-365-solution-catalog.md)|
+|通信合规性（预览） <br/>|通信合规性是新的内幕风险管理类别的一部分，可帮助您对组织中不适当的邮件进行检测、捕获和采取补救措施，以帮助最大限度地减少通信风险。 该解决方案通过引入几项新的增强功能（如智能模板、灵活的修正工作流和可操作的见解）扩展了监督策略在 Office 365 中的功能。 <br/>|[Microsoft 365 中的通信合规性（预览）](communication-compliance.md)|
+|数据分类（预览） <br/>|我们新的数据分类页面包含强大的见解和工具，可帮助您发现和评估组织中的内容中使用的敏感信息和标签（保留和敏感度）。 查看包含敏感信息或应用了标签的内容、跨 Microsoft 365 位置浏览标签活动、创建自定义敏感信息类型，以及更多。<br/>|[数据分类概述（预览）](data-classification-overview.md)|
+
+#### <a name="updated-compliance-solutions"></a>更新了合规性解决方案
+
+如果你已使用 Office 365 安全 & 合规性中心满足你的合规性需求，你可能会想知道在新的 Microsoft 365 合规性中心中，一些功能现在处于活动状态。 以下是帮助查找其新家庭的快速路线图。
+
+> [!NOTE]
+> 某些功能仍仅在 Office 365 安全 & 合规性中心中提供，如下所示。 但我们正在努力在 Microsoft 365 合规性中心预览这些问题，因此请随时关注更新。 
+<br/>
+
+|**功能**|**Office 365 安全与合规中心**|**Microsoft 365 合规中心**|**了解更多**|
+|:-----|:-----|:-----|:-----|
+|高级电子数据展示|电子数据展示 > 高级电子数据展示 <br/> https://protection.office.com/advancedediscoverycases |电子数据展示 > 高级 <br/> https://compliance.microsoft.com/advancedediscovery | [Microsoft 365 中的高级电子数据展示解决方案概述](overview-ediscovery-20.md) |
+|警报策略|警报 > 通知策略 <br/> https://protection.office.com/alertpolicies |目前，仅在 Office 365 安全性 & 合规性中心中管理警报策略。 |[安全与合规中心中的警报策略](alert-policies.md) |
+|警报|警报 > 查看警报 <br/> https://protection.office.com/viewalerts |警报 <br/> https://compliance.microsoft.com/compliancealerts |[查看警报](alert-policies.md#viewing-alerts)|
+|存档|信息治理 > 存档 <br/> https://protection.office.com/archiving |信息治理 > 存档 "选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[启用存档邮箱](enable-archive-mailboxes.md)|
+|审核日志搜索|搜索 > 审核日志搜索 <br/> https://protection.office.com/unifiedauditlog |目前，您只能从 Office 365 安全性 & 合规性中心搜索审核日志。| [在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)|
+|内容搜索|搜索 > 内容搜索 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | 内容搜索 <br/> https://compliance.microsoft.com/contentsearch |[在 Office 365 中搜索内容](search-for-content.md) |
+|数据连接器|信息治理 > 存档第三方数据 <br/> https://protection.office.com/nativeconnector | 数据连接器 <br/> https://compliance.microsoft.com/connectorlanding |[存档第三方数据](archiving-third-party-data.md)|
+|数据丢失防护|数据丢失防护 <br/> https://protection.office.com/datalossprevention |数据丢失防护 <br/> https://compliance.microsoft.com/datalossprevention |[数据丢失防护概述](data-loss-prevention-policies.md)|
+|数据主体请求 |数据隐私 > 数据主体请求 <br/> https://protection.office.com/dsrcases |数据主体请求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR case 工具管理 GDPR 数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
+|电子数据展示|电子数据展示 > 电子数据展示 <br/> https://protection.office.com/ediscoveryv1 |电子数据展示 > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理电子数据展示事例](ediscovery-cases.md) |
+|活动|记录管理 > 事件 <br/> https://protection.office.com/events |记录管理 > 事件选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件驱动保留概述](event-driven-retention.md)|
+|文件计划|记录管理 > 文件计划 <br/> https://protection.office.com/fileplan |记录管理 > 文件计划选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[文件计划管理器概述](file-plan-manager.md)|
+|导入 PST 文件|信息治理 > 导入 PST 文件 <br/> https://protection.office.com/importV2 |信息管理 > 导入选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[导入组织的 PST 文件概述](importing-pst-files-to-office-365.md)|
+|标签活动资源管理器|信息治理 > 标签活动资源管理器 <br/> https://protection.office.com/labelexplorer |"数据分类 > 活动资源管理器" 选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[查看关于标记的内容的活动（预览版）](data-classification-activity-explorer.md)|
+|保留标签和标签策略 |分类 > 保留标签 > 标签和标签策略选项卡 <br/> https://protection.office.com/retentionlabels |信息治理 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留标签概述](labels.md)|
+|保留策略|信息治理 > 保留 <br/> https://protection.office.com/retention |信息治理 > 保留选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[保留策略概述](retention-policies.md)|
+|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)|
+|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[敏感度标签概述](sensitivity-labels.md) |
+|服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全 & 合规中心中的服务保证](service-assurance.md)|
+|监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |沟通合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通信合规性（预览）](communication-compliance.md) |
 
 ## <a name="september-2019"></a>2019 年 9 月
 
@@ -39,13 +97,13 @@ ms.locfileid: "39615662"
 - 将标签应用于**Outlook 电子邮件**时，用户可以强制实施与 "不转发" 选项等效的限制。 收件人将能够读取邮件，但不能转发、打印或复制内容。
 - 将标签应用于**Word、PowerPoint 和 Excel 文件**时，系统将提示用户为特定用户和组分配访问权限。
 
-[了解详细信息](encryption-sensitivity-labels.md#let-users-assign-permissions)
+[了解更多](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
 ## <a name="august-2019"></a>2019 年 8 月
 
 ### <a name="update-to-data-investigations"></a>对数据调查的更新
 
-在执行数据调查时，您现在可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您可以将这些项目的副本保留在证据集中，以便您可以进一步调查或仅保留为参考。 [了解详细信息](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+在执行数据调查时，您现在可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您可以将这些项目的副本保留在证据集中，以便您可以进一步调查或仅保留为参考。 [了解更多](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>2019 年 7 月
 

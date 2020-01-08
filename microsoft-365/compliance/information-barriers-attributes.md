@@ -11,21 +11,21 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对可在信息屏障策略中使用的各种属性的参考。
-ms.openlocfilehash: 4198728d412062edced6238604b2b891da22aeac
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12acaa4fb8d6bcd6c660381b172703bd178af81f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074934"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970780"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>信息屏障策略的属性
 
 Azure Active Directory 中的某些属性可用于分段用户。 在定义段之后，这些段可用作信息屏障策略的筛选器。 例如，您可以使用**部门**按组织中的部门定义用户的分段（假设没有一个员工同时适用于两个部门）。 
 
 本文介绍如何使用具有信息障碍的属性，并提供可使用的属性列表。 若要了解有关信息障碍的详细信息，请参阅以下资源：
-- [信息障碍](information-barriers.md)
+- [信息屏障](information-barriers.md)
 - [在 Microsoft 团队中定义信息障碍策略](information-barriers-policies.md)
-- [编辑（或删除）信息屏障策略](information-barriers-edit-segments-policies.md.md)
+- [编辑（或删除）信息屏障策略](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何在信息屏障策略中使用属性
 
@@ -95,9 +95,9 @@ Azure Active Directory 中的某些属性可用于分段用户。 在定义段�
 
 [在 Microsoft 团队中定义信息障碍策略](information-barriers-policies.md)
 
-[信息障碍故障排除](information-barriers-troubleshooting.md)
+[信息屏障疑难解答](information-barriers-troubleshooting.md)
 
-[信息障碍](information-barriers.md)
+[信息屏障](information-barriers.md)
 
 
 

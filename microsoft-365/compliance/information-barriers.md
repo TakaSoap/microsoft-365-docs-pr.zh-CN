@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
-ms.openlocfilehash: 31de709e5ac834ad628110088b0dab80efe85950
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 352f101a443b015840b09b82626f7dbee9cfb79e
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690105"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970830"
 ---
 # <a name="information-barriers"></a>信息屏障
 
@@ -53,7 +53,7 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 
 若要了解有关信息障碍的用户体验方面的详细信息，请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
-## <a name="required-licenses-and-permissions"></a>必需的许可证和权限
+## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
 信息屏障现在正在推出，并包含在订阅中，如：
 
@@ -83,5 +83,4 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 
 - [定义信息障碍策略](information-barriers-policies.md)
 
-- [编辑（或删除）信息屏障策略](information-barriers-edit-segments-policies.md.md) 
-
+- [编辑（或删除）信息屏障策略](information-barriers-edit-segments-policies.md) 

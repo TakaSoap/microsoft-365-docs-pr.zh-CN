@@ -1,5 +1,5 @@
 ---
-title: 信息障碍故障排除
+title: 信息屏障疑难解答
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对信息障碍进行故障排除的指导。
-ms.openlocfilehash: 47549029ffbaa5ead028c18e97850b30f8072011
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 07c3c6fc12ec1b288ae9499715ddadb21764f6ef
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074028"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970800"
 ---
-# <a name="troubleshooting-information-barriers"></a>信息障碍故障排除
+# <a name="troubleshooting-information-barriers"></a>信息屏障疑难解答
 
 [信息障碍](information-barriers.md)可帮助您的组织遵守法律要求和行业法规。 例如，通过信息障碍，可以限制特定用户组之间的通信，以避免利益冲突或其他问题。 （若要了解有关如何设置信息屏障的详细信息，请参阅[定义信息障碍策略](information-barriers-policies.md)。）
 
@@ -71,7 +71,7 @@ ms.locfileid: "37074028"
     |---------|---------|
     |`Get-OrganizationSegment`<p>将此 cmdlet 与 Identity 参数一起使用。     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>在此示例中，我们将获取有关具有 GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*的段的信息。         |
 
-    查看段的详细信息。 如有必要，请[编辑段](information-barriers-edit-segments-policies.md.md#edit-a-segment)，然后重新使用`Start-InformationBarrierPoliciesApplication` cmdlet。
+    查看段的详细信息。 如有必要，请[编辑段](information-barriers-edit-segments-policies.md#edit-a-segment)，然后重新使用`Start-InformationBarrierPoliciesApplication` cmdlet。
 
     **如果您仍遇到信息障碍策略问题，请联系支持人员**。
 
@@ -99,8 +99,8 @@ ms.locfileid: "37074028"
     
     |结果  |下一步操作  |
     |---------|---------|
-    |未列出所选用户的任何段     |执行下列操作之一：<br/>-通过在 Azure Active Directory 中编辑用户配置文件，将用户分配到现有分段。 （请参阅[Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。）<br/>-使用[受支持的信息障碍属性](information-barriers-attributes.md)定义段。 然后，[定义新策略](information-barriers-policies.md#part-2-define-information-barrier-policies)或[编辑现有策略](information-barriers-edit-segments-policies.md.md#edit-a-policy)以包含该分段。  |
-    |列出了分段，但没有为这些分段分配信息障碍策略     |执行下列操作之一：<br/>- 为问题的每个段[定义新的信息障碍策略](information-barriers-policies.md#part-2-define-information-barrier-policies)<br/>- [编辑现有的信息屏障策略](information-barriers-edit-segments-policies.md.md#edit-a-policy)以将其分配给正确的段         |
+    |未列出所选用户的任何段     |执行下列操作之一：<br/>-通过在 Azure Active Directory 中编辑用户配置文件，将用户分配到现有分段。 （请参阅[Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。）<br/>-使用[受支持的信息障碍属性](information-barriers-attributes.md)定义段。 然后，[定义新策略](information-barriers-policies.md#part-2-define-information-barrier-policies)或[编辑现有策略](information-barriers-edit-segments-policies.md#edit-a-policy)以包含该分段。  |
+    |列出了分段，但没有为这些分段分配信息障碍策略     |执行下列操作之一：<br/>- 为问题的每个段[定义新的信息障碍策略](information-barriers-policies.md#part-2-define-information-barrier-policies)<br/>- [编辑现有的信息屏障策略](information-barriers-edit-segments-policies.md#edit-a-policy)以将其分配给正确的段         |
     |列出了分段，每个段都包含在信息屏障策略中     |-运行`Get-InformationBarrierPolicy` cmdlet 以验证信息屏障策略是否处于活动状态<br/>-运行`Get-InformationBarrierPoliciesApplicationStatus` cmdlet 以确认应用了策略<br/>-运行`Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动信息屏障策略          |
     
 
@@ -147,7 +147,7 @@ ms.locfileid: "37074028"
     |状态  |后续步骤  |
     |---------|---------|
     |**未启动**     |如果自运行**InformationBarrierPoliciesApplication** cmdlet 后，它已超过45分钟，请查看您的审核日志，以确定策略定义中是否存在任何错误，或者应用程序尚未启动的其他原因。 |
-    |**失败**     |如果应用程序失败，请查看您的审核日志。 此外，还应查看你的段落和策略。 是否有任何用户分配到多个段？ 是否为任何段分配了多个 poliicy？ 如有必要，请[编辑分段](information-barriers-edit-segments-policies.md.md#edit-a-segment)和/或[编辑策略](information-barriers-edit-segments-policies.md.md#edit-a-policy)，然后再次运行**InformationBarrierPoliciesApplication** cmdlet。  |
+    |**失败**     |如果应用程序失败，请查看您的审核日志。 此外，还应查看你的段落和策略。 是否有任何用户分配到多个段？ 是否为任何段分配了多个 poliicy？ 如有必要，请[编辑分段](information-barriers-edit-segments-policies.md#edit-a-segment)和/或[编辑策略](information-barriers-edit-segments-policies.md#edit-a-policy)，然后再次运行**InformationBarrierPoliciesApplication** cmdlet。  |
     |**进行中**     |如果仍在运行应用程序，请等待更多的时间完成。 如果是几天，请收集你的审核日志，然后与支持人员联系。 |
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>问题：根本不应用信息屏障策略
@@ -173,7 +173,7 @@ ms.locfileid: "37074028"
 
 [在 Microsoft 团队中定义信息障碍策略](information-barriers-policies.md)
 
-[信息障碍](information-barriers.md)
+[信息屏障](information-barriers.md)
 
 
 

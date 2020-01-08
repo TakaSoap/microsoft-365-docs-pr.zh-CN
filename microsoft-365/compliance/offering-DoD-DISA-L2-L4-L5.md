@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2fa27680dcc9e0ee7fb495164683a291cc167d59
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805225"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959551"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部（DoD）在影响级别2、4和5的临时授权
 
@@ -85,7 +85,7 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**能否在我组织的认证过程中使用 Microsoft 的合规性认证？**
+**能否在我自己组织的认证过程中使用 Microsoft 的合规性认证？**
 
 是。 所有 DoD 机构都可能依赖 Microsoft 云服务的认证，作为需要 DoD 授权的任何计划或计划的基础。 （这也适用于支持 DoD 并需要云服务的其他组织。）但是，您需要在这些服务之外为自己的组件实现自己的授权。
 
@@ -100,7 +100,7 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 ## <a name="resources"></a>资源
 
 - [DoD 云计算安全要求指南（SRG）和其他文档](https://public.cyber.mil/dccs/dccs-documents/)
-- [DISA 云服务支持](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [DISA 云服务支持](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [保护 nonfederal 信息系统和组织中的受控制的未分类信息](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)

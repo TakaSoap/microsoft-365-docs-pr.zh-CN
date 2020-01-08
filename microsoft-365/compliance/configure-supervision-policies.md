@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e7a46e2fcd15a77f6fe7f1b97adf5ed26e97e0e2
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806625"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959620"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中配置监督策略
 
-> [!IMPORTANT]
-> 本主题适用于在 Office 365 订阅中配置监督策略。 如果要为 Microsoft 365 订阅配置通信合规性，请参阅[在 microsoft 365 中配置通信合规性（预览）](communication-compliance-configure.md)。
+>[!IMPORTANT]
+>本主题适用于在 Office 365 订阅中配置监督策略。 如果要为 Microsoft 365 订阅配置通信合规性，请参阅[在 microsoft 365 中配置通信合规性（预览）](communication-compliance-configure.md)。
 
 使用监督策略来捕获由内部或外部审阅者进行检查的员工通信。 有关监察策略如何帮助您监视组织中的通信的详细信息，请参阅[Office 365 中的监察策略](supervision-policies.md)。
 
-> [!NOTE]
-> 监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。
-> 如果你没有现有的企业版 E5 计划，并且想要尝试监督，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+>[!NOTE]
+>监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。
+>如果你没有现有的企业版 E5 计划，并且想要尝试监督，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
   
 按照以下步骤在 Office 365 组织中设置和使用监督：
   
@@ -182,8 +182,8 @@ ms.locfileid: "40806625"
 1. 打开以您要测试的策略中定义的监督用户身份登录的电子邮件客户端或 Microsoft 团队。
 2. 发送符合您在监督策略中定义的条件的电子邮件或 Microsoft 团队聊天。 它可以是关键字、附件大小、域等。确保您确定策略中配置的条件设置过于严格或太 lenient。
 
-    > [!NOTE]
-    > 已定义策略的电子邮件将在接近实时的情况中进行处理，并且可以在配置策略后立即进行测试。 Microsoft 团队中的聊天可能需要长达24小时才能在策略中完全处理。 
+    >[!NOTE]
+    >已定义策略的电子邮件将在接近实时的情况中进行处理，并且可以在配置策略后立即进行测试。 Microsoft 团队中的聊天可能需要长达24小时才能在策略中完全处理。 
 
 3. 以通信监督策略中指定的审阅者的形式登录到 Office 365 租户。 导航到 "**监控** > "*您的自定义策略* > **打开**以查看该策略的报告。
 

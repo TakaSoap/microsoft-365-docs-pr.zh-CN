@@ -15,17 +15,17 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关在 Office 365 中配置特权访问管理的详细信息
-ms.openlocfilehash: 5b7bf33f41bc722c557f2b515c5ab027bd401a2a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1ea929026db3ac50a0eac3d452c2608fd0c0d123
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803759"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959511"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中配置特权访问管理
 
-> [!IMPORTANT]
-> 本主题介绍了 Office 365 E5 和高级合规 Sku 中目前仅提供的功能的部署和配置指南。
+>[!IMPORTANT]
+>本主题介绍了 Office 365 E5 和高级合规 Sku 中目前仅提供的功能的部署和配置指南。
 
 本主题指导您在 Office 365 组织中启用和配置特权访问管理。 您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。 
 
@@ -51,8 +51,8 @@ ms.locfileid: "40803759"
 
 授予批准后，请求用户可以执行预期的任务，而特权访问将代表用户授权和执行任务。 审批在请求的持续时间（默认持续时间为4小时）内保持有效，在此期间，请求者可以多次执行预期任务。 将记录所有此类执行情况，并提供安全和合规性审核。 
 
-> [!NOTE]
-> 如果要使用 Exchange 管理 PowerShell 启用和配置特权访问，请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 Exchange online Powershell 与 Office 365 凭据连接到 Exchange online powershell 中的步骤操作。 您无需为 Office 365 组织启用多重身份验证，即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。 使用多重身份验证进行连接将创建一个 OAuth 令牌，该令牌由用于对您的请求进行签名的特权访问使用。
+>[!NOTE]
+>如果要使用 Exchange 管理 PowerShell 启用和配置特权访问，请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 Exchange online Powershell 与 Office 365 凭据连接到 Exchange online powershell 中的步骤操作。 您无需为 Office 365 组织启用多重身份验证，即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。 使用多重身份验证进行连接将创建一个 OAuth 令牌，该令牌由用于对您的请求进行签名的特权访问使用。
 
 <a name="step1"> </a>
 
@@ -89,16 +89,19 @@ ms.locfileid: "40803759"
 ### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell 中
 
 若要启用特权访问并分配审批者的组，请在 Exchange Online PowerShell 中运行以下命令：
-```
+
+```PowerShell
 Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccounts @('<systemAccountUPN1>','<systemAccountUPN2>')
 ```
+
 示例：
-```
+
+```PowerShell
 Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
 ```
 
-> [!NOTE]
-> 系统帐户功能可用于确保组织内的某些自动脚本可以正常工作，而无需对特权访问进行依赖性，但建议将此类排除条件设为例外，并且应批准和审核这些排除条件保持.
+>[!NOTE]
+>系统帐户功能可用于确保组织内的某些自动脚本可以正常工作，而无需对特权访问进行依赖性，但建议将此类排除条件设为例外，并且应批准和审核这些排除条件保持.
 
 <a name="step3"> </a>
 
@@ -134,11 +137,13 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 若要创建和定义审批策略，请在 Exchange Online PowerShell 中运行以下命令：
 
-```
+```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\<exchange management cmdlet name>' -ApprovalType <Manual, Auto> -ApproverGroup '<default/custom approver group>'
 ```
+
 示例：
-```
+
+```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType Manual -ApproverGroup 'mbmanagers@fabrikamorg.onmicrosoft.com'
 ```
 
@@ -175,14 +180,19 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 #### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell 中
 
 在 Exchange Online PowerShell 中运行以下命令，以创建批准请求并将其提交给审批者的组：
-```
+
+```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\<exchange management cmdlet name>' -Reason '<appropriate reason>' -DurationHours <duration in hours>
 ```
+
 示例：
-```
+
+```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
+
 ### <a name="view-status-of-elevation-requests"></a>查看提升请求的状态
+
 在创建审批请求后，可以在管理中心或 Exchange Management PowerShell 中使用与请求 ID 关联的权限来查看提升请求状态。
 
 #### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心
@@ -198,15 +208,19 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 #### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell 中
 
 在 Exchange Online PowerShell 中运行以下命令，以查看特定请求 ID 的审批请求状态：
-```
+
+```PowerShell
 Get-ElevatedAccessRequest -Identity <request ID> | select RequestStatus
 ```
+
 示例：
-```
+
+```PowerShell
 Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | select RequestStatus
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>批准提升授权请求
+
 在创建审批请求时，相关审批者组的成员会收到电子邮件通知，并且可以批准与请求 ID 关联的请求。 请求者会收到请求审批或通过电子邮件的拒绝通知请求者。
 
 #### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心
@@ -225,25 +239,30 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 若要批准提升授权请求，请在 Exchange Online PowerShell 中运行以下命令：
 
-```
+```PowerShell
 Approve-ElevatedAccessRequest -RequestId <request id> -Comment '<approval comment>'
 ```
+
 示例：
-```
+
+```PowerShell
 Approve-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<approval comment>'
 ```
 
 若要拒绝提升授权请求，请在 Exchange Online PowerShell 中运行以下命令：
 
-```
+```PowerShell
 Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 ```
+
 示例：
-```
+
+```PowerShell
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
 ```
 
 ## <a name="delete-a-privileged-access-policy-in-office-365"></a>删除 Office 365 中的特权访问策略
+
 如果您的组织不再需要它，则可以删除特权访问策略。
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心
@@ -264,7 +283,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 若要删除特权访问策略，请在 Exchange Online Powershell 中运行以下命令：
 
-```
+```PowerShell
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
@@ -284,6 +303,6 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 若要禁用特权访问，请在 Exchange Online Powershell 中运行以下命令：
 
-```
+```PowerShell
 Disable-ElevatedAccessControl
 ```

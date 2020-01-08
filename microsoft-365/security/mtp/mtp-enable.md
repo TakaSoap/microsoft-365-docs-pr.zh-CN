@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 842c3be031e96467c8b82e8cf482435e66124960
-ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
+ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "40881973"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970850"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
@@ -67,7 +67,7 @@ Microsoft 威胁防护通过集成 Microsoft Defender 高级威胁防护 (ATP)�
 ## <a name="turn-off-microsoft-threat-protection"></a>关闭 Microsoft 威胁防护
 要停止使用 Microsoft 威胁防护，请转到 Microsoft 365 安全中心中的“**设置**” > “**Microsoft 威胁防护**” > “**选择加入/选择退出**”。 取消选择**打开 Microsoft 威胁防护**并保存更改。
 
-数据将被永久删除，相应的功能将从 Microsoft 365 安全中心中删除。
+将永久删除数据，并将从 Microsoft 365 安全中心删除相应的功能。
 
 ## <a name="get-assistance"></a>获取帮助
 

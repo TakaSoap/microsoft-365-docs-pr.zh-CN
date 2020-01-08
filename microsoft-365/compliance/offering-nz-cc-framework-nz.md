@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f0ed98386a33b84d109fb94093b3d03cefc127b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: da5fbef7ed9ceb136f276e2d6baab0c94bba3c22
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803995"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959531"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>新西兰政府云计算安全性和隐私注意事项
 
@@ -62,8 +62,8 @@ GCIO 要求（公共和非公共服务部门、20地区健康委员会和七个 
 - [Microsoft Azure 在新西兰安全性和隐私要求的环境中合规性](https://aka.ms/azurecompliancenewzealand)
 - [新西兰政府 ICT 策略2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [对云计算的新西兰政府要求](https://aka.ms/NZ-Cloud-Requirements)
-- [云计算：信息安全和隐私注意事项（ISPC）](https://aka.ms/NZ-Cloud-Computing-Considerations)
-- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
+- [云计算：信息安全和隐私注意事项（ISPC）](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
+- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
 - [Office 365： SEEMail 集成和参考体系结构](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)（有关云服务采用的其他 Microsoft NZ 指南）
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

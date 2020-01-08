@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '作为管理员，您可以在 Office 365 中查看、释放和报告误报的已隔离邮件。 您可以设置策略，以便 Office 365 筛选邮件并将其发送到隔离区，原因如下：因为它们被标识为垃圾邮件、批量、网络钓鱼和恶意软件，或者它们与邮件流规则匹配。 '
-ms.openlocfilehash: 89750aeed6b502155bfba50cc6e475c1ecf746e8
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970308"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970930"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 中的管理员身份管理隔离的邮件和文件
 
@@ -32,7 +32,25 @@ ms.locfileid: "39970308"
 您必须在 Office 365 中具有全局管理员（GA）权限，或者是一个或多个安全 & 合规性中心角色组的成员，才能处理隔离的邮件或隔离的文件。 有关详细信息，请参阅[Office 365 安全 & 合规性中心中的权限](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)。
 
 > [!IMPORTANT]
->默认情况下，垃圾邮件、批量和网络钓鱼邮件在30天内保持隔离状态。 由于与邮件流规则匹配而被隔离的邮件将保留在7天内的隔离中。 恶意软件邮件在15天内保留在隔离中。 可以在安全&amp;合规性中心的 "反垃圾邮件" 设置中自定义垃圾邮件隔离时间。 Office 365 从隔离区删除邮件后，你无法将其恢复。 如果你愿意，可以在反垃圾邮件筛选器策略中更改隔离邮件的保留期。 有关详细信息，请参阅本文中[的设置隔离保留期](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。
+> 默认情况下，垃圾邮件、批量和网络钓鱼邮件在30天内保持隔离状态。 由于与邮件流规则匹配而被隔离的邮件将保留在7天内的隔离中。 恶意软件邮件在15天内保留在隔离中。 可以在安全 & 合规性中心的 "反垃圾邮件" 设置中自定义垃圾邮件隔离时间。 Office 365 从隔离区删除邮件后，你无法将其恢复。 如果你愿意，可以在反垃圾邮件筛选器策略中更改隔离邮件的保留期。 有关详细信息，请参阅[设置隔离保留期](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+
+虽然隔离在安全 & 合规中心，但在隔离中管理邮件的权限是由**Exchange Online**角色组中的成员资格控制的。 有关 Exchange Online 中的角色组的详细信息，请参阅[在 Exchange online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+
+授予管理隔离文件权限的 Exchange Online 角色组包括：
+
+- **组织管理**：全局管理员自动成为此组的成员。
+
+- **安全管理员**
+
+- **清洁管理**
+
+授予查看隔离文件权限的 Exchange Online 角色组包括：
+
+- **View-Only Organization Management**
+
+- **安全读取者**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>查看组织的隔离邮件
 
@@ -41,9 +59,9 @@ ms.locfileid: "39970308"
 2. 在左侧的列表中，展开 "**威胁管理**"，选择 "**查看**"，然后选择 "**隔离**"。
 
     > [!TIP]
-    > 要直接转至安全&amp;合规中心的“**隔离区**”页面，请使用此 URL：> [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > 若要直接转到 Security & 合规性中心中的**隔离**页，请使用以下 URL： >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
-    默认情况下，安全&amp;合规中心显示所有已隔离为垃圾邮件的电子邮件。 邮件根据接收“**日期**”按从最新到最早的顺序排序。 还显示每封邮件的“**发件人**”、“**主题**”和到期日期（位于“**到期**”下）。 通过单击相应的列标题可按字段排序；再次单击列标题可反向排序。
+    默认情况下，安全 & 合规性中心会显示已被隔离为垃圾邮件的所有电子邮件。 邮件根据接收“**日期**”按从最新到最早的顺序排序。 还显示每封邮件的“**发件人**”、“**主题**”和到期日期（位于“**到期**”下）。 通过单击相应的列标题可按字段排序；再次单击列标题可反向排序。
 
 3. 您可以查看所有隔离邮件的列表，也可以通过筛选减少结果集。 最多只能对 100 项执行批量操作，因此如果结果集超过 100 项，筛选功能还可以帮助减小结果集。 您可以通过在页面顶部的筛选器中选择一个选项来快速筛选邮件的一个隔离原因。 选项包括：
 
@@ -70,13 +88,13 @@ ms.locfileid: "39970308"
 2. 在左侧，展开“**威胁管理**”，选择“**审阅**”，然后选择“**隔离区**”。
 
    > [!TIP]
-   > 要直接转至安全&amp;合规中心的“**隔离区**”页面，请使用此 URL：> [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+   > 若要直接转到 Security & 合规性中心中的**隔离**页，请使用以下 URL： >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 3. 默认情况下，页面显示隔离的电子邮件。 若要查看隔离的文件，请将页面顶部的筛选器设置为显示**文件**，并根据**恶意软件**进行隔离。 您必须具有 Office 365 中的管理员权限才能使用隔离的文件。
 
 4. 根据文件被隔离的日期，从最新到最旧对文件进行排序。 上次修改文件的**用户**、文件所发布到的**服务**、文件名、**位置**、**文件大小**和到期日期（**过期**）**也将列出**给每个文件。 您可以通过单击某个标头对该字段进行排序;再次单击列标题可反转排序顺序。
 
-您可以查看所有隔离文件的列表，也可以通过筛选来搜索特定文件。 就像邮件一样，您只能对最大为100个项目执行批量操作。 目前，安全&amp;合规性中心允许你查看和管理隔离中的文件，因为这些文件已被标识为包含恶意软件。 有关提示，请参阅[筛选结果和在本文中查找隔离的邮件和文件](manage-quarantined-messages-and-files.md#BKMK_AdvSearch)。
+您可以查看所有隔离文件的列表，也可以通过筛选来搜索特定文件。 就像邮件一样，您只能对最大为100个项目执行批量操作。 目前，安全 & 合规性中心允许你查看和管理隔离中的文件，因为这些文件已被标识为包含恶意软件。 有关提示，请参阅[筛选结果和在本文中查找隔离的邮件和文件](manage-quarantined-messages-and-files.md#BKMK_AdvSearch)。
 
 ## <a name="to-filter-results-and-find-quarantined-messages-and-files"></a>筛选结果并查找隔离的邮件和文件
 <a name="BKMK_AdvSearch"> </a>
@@ -99,25 +117,25 @@ ms.locfileid: "39970308"
 
    - **邮件 id**：在您知道邮件 id 时，使用它来标识特定邮件。
 
-     例如，如果您的组织中的用户发送或预定某个特定的邮件，但它从未到达其目标，则可以使用邮件跟踪（请参阅[Security & 合规中心中的邮件跟踪](message-trace-scc.md)）搜索邮件。 如果发现邮件已发送到隔离，可能是因为它与邮件流规则匹配或被标识为垃圾邮件，那么您可以通过指定邮件 ID 来轻松地在隔离中查找此邮件。 确保包含完整的邮件 ID 字符串。 这可能包括尖括号 (\<\>)，例如：
+     例如，如果特定邮件由贵组织的用户发送，或准备发送给贵组织的用户，但是未抵达目标收件人，则可以使用邮件跟踪功能（请参阅[安全与合规中心内的邮件跟踪](message-trace-scc.md)）搜索邮件。 如果发现邮件已发送到隔离，可能是因为它与邮件流规则匹配或被标识为垃圾邮件，那么您可以通过指定邮件 ID 来轻松地在隔离中查找此邮件。 确保包含完整的邮件 ID 字符串。 这可能包括尖括号 (\<\>)，例如：
 
      `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
 
-   - **发件人电子邮件地址**：选择按单个发件人电子邮件地址进行筛选。
+   - **发件人电子邮件地址**：选择此项可按发件人电子邮件地址进行筛选。
 
-   - **收件人电子邮件地址**：选择按单个收件人电子邮件地址进行筛选。
+   - **收件人电子邮件地址**：选择此项可按收件人电子邮件地址进行筛选。
 
    - **主题**：输入要查找的电子邮件地址的主题。 由于不支持通配符搜索，因此您必须使用邮件的整个主题，搜索才会在结果中返回邮件。 搜索不区分大小写。
 
 ## <a name="view-details-about-quarantined-messages-and-files"></a>查看有关隔离邮件和文件的详细信息
 
-当您选择隔离列表中显示的项目时，将在安全&amp;合规性中心右侧的**详细信息**窗格中看到其属性的摘要。
+当您选择隔离列表中显示的项目时，将在安全 & 合规中心右侧的**详细信息**窗格中看到其属性的摘要。
 
 ### <a name="details-displayed-for-quarantined-messages"></a>为隔离邮件显示的详细信息
 
 - **邮件 ID**：邮件的唯一标识符。
 
-- **发件人地址**：发送邮件的人。
+- **发件人地址**：邮件发送者。
 
 - **已接收**：接收邮件的日期和时间。
 
@@ -127,7 +145,7 @@ ms.locfileid: "39970308"
 
 - **过期**：将自动从隔离区中删除邮件的日期和时间。
 
-- **发布到**：邮件已释放到的所有电子邮件地址（如果有）。
+- **释放位置**：邮件已释放到其中的所有电子邮件地址（如有）。
 
 - **尚未发布到**：尚未发布邮件的所有电子邮件地址（如果有）。
 
@@ -168,7 +186,7 @@ ms.locfileid: "39970308"
 
 - **查看邮件头**：选择此链接可查看邮件头文本。 若要分析纵深标头，请将邮件头文本复制到剪贴板，然后选择 " **Microsoft 邮件头分析器**" 以转到远程连接分析器（右键单击并选择 "**在新选项卡中打开**"，如果您不想让 Office 365 完成此任务）。将邮件头粘贴到 "邮件头分析器" 部分中的页面上，然后选择 "**分析邮件头**"：
 
-- **预览邮件**：允许您查看邮件正文文本的原始版本或 HTML 版本。 在 HTML 视图中，禁用链接。
+- **预览邮件**：选择此选项可以查看邮件正文文本的原始版本或 HTML 版本。 在 HTML 视图中，禁用链接。
 
 - **下载邮件**或**下载文件**：选择此选项可将邮件或文件的副本下载到本地设备。 你需要确认你了解与从隔离区下载项目相关联的风险，然后再允许你执行此操作。 邮件以 .eml 格式保存到您指定的文件夹中。 隔离的文件以其原始格式保存。
 
@@ -202,7 +220,7 @@ ms.locfileid: "39970308"
 2. 在左侧，展开 "**威胁管理**"，选择 "**策略**"，然后选择 "**反垃圾邮件**"。
 
     > [!TIP]
-    > 若要直接转到安全&amp;合规性中心中的**反垃圾邮件**页面，请使用以下 URL： >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > 若要直接转到 Security & 合规性中心中的**反垃圾邮件**页面，请使用以下 URL： >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
 
 3. 展开 "**默认垃圾邮件筛选器策略（总是打开）** " 行。
 

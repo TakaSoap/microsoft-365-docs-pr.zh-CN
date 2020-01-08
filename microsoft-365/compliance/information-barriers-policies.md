@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 11195e588a983bb5617dd3f556734074bc0060b0
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38690198"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970840"
 ---
 # <a name="define-policies-for-information-barriers"></a>定义信息障碍策略
 
@@ -43,7 +43,7 @@ ms.locfileid: "38690198"
 
 - **策略应用程序**在定义所有信息屏障策略之后完成，并准备好在您的组织中应用它们。
 
-## <a name="the-work-flow-at-a-glance"></a>工作流一览
+## <a name="the-work-flow-at-a-glance"></a>工作流程概览
 
 |阶段    |涉及的内容  |
 |---------|---------|
@@ -51,7 +51,7 @@ ms.locfileid: "38690198"
 |[第1部分：组织中的用户区段](#part-1-segment-users)     |-确定所需的策略<br/>-创建要定义的段的列表<br/>-确定要使用的属性<br/>-在策略筛选器方面定义段        |
 |[第2部分：定义信息屏障策略](#part-2-define-information-barrier-policies)     |-定义你的策略（尚不应用）<br/>-从两种类型（阻止或允许）中选择 |
 |[第3部分：应用信息屏障策略](#part-3-apply-information-barrier-policies)     |-将策略设置为活动状态<br/>-运行策略应用程序<br/>-查看策略状态         |
-|（根据需要）[编辑段或策略](information-barriers-edit-segments-policies.md.md)    |-编辑分段<br/>-编辑或删除策略<br/>-重新运行策略应用程序<br/>-查看策略状态         |
+|（根据需要）[编辑段或策略](information-barriers-edit-segments-policies.md)    |-编辑分段<br/>-编辑或删除策略<br/>-重新运行策略应用程序<br/>-查看策略状态         |
 |（根据需要）[故障排除](information-barriers-troubleshooting.md)|-当事情未按预期工作时执行操作|
 
 ## <a name="prerequisites"></a>先决条件
@@ -260,11 +260,11 @@ ms.locfileid: "38690198"
 
 - 如果信息障碍出现问题，请参阅[故障排除信息障碍](information-barriers-troubleshooting.md)。
 
-- 若要停止应用策略，请参阅[停止策略应用程序](information-barriers-edit-segments-policies.md.md#stop-a-policy-application)。
+- 若要停止应用策略，请参阅[停止策略应用程序](information-barriers-edit-segments-policies.md#stop-a-policy-application)。
 
-- 若要删除信息屏障策略，请参阅[删除策略](information-barriers-edit-segments-policies.md.md#remove-a-policy)。
+- 若要删除信息屏障策略，请参阅[删除策略](information-barriers-edit-segments-policies.md#remove-a-policy)。
 
-- 若要对段落或策略进行更改，请参阅[编辑（或删除）信息屏障策略](information-barriers-edit-segments-policies.md.md)。
+- 若要对段落或策略进行更改，请参阅[编辑（或删除）信息屏障策略](information-barriers-edit-segments-policies.md)。
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>示例： Contoso 的部门、分段和策略
 
@@ -307,7 +307,7 @@ Contoso 将使用 Azure Active Directory 中的 "部门" 属性来定义段，�
 
 Contoso 定义了三种策略，如下表所述：
 
-|策略  |策略定义  |
+|Policy  |策略定义  |
 |---------|---------|
 |策略1：防止销售与信息检索通信     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*销售-研究*"。 当此策略处于活动状态且已应用时，它将有助于阻止销售部门中的用户与研究网段中的用户进行通信。 这是单向策略;它不会阻止研究与销售通信。 为此，需要策略2。      |
 |策略2：防止与销售通信的研究     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*研究-销售*"。 当此策略处于活动状态且已应用时，它将有助于防止在研究网段中的用户与销售部门中的用户进行通信。       |

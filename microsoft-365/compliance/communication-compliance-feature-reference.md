@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dc654a877e12eed308b5f8be9fd001ef9093398d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ece7264eba56aa9b389b0dc3555d69e71cc30ad5
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807927"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959610"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>通信合规性功能参考（预览）
 
@@ -29,8 +29,8 @@ ms.locfileid: "40807927"
 
 在 Microsoft 365 合规性中心为 Microsoft 365 组织创建通信合规性策略。 如果你拥有 Office 365 组织，你将在 Office 365 安全 & 合规性中心中[配置监督策略](configure-supervision-policies.md)。 通信合规性策略定义哪些通信和用户将在组织中进行审阅，定义通信必须满足的自定义条件，并指定应进行审核的用户。 **监管审核管理员**角色组中包括的用户可以设置策略，并且分配了此角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。 如果需要，您可以将对策略所做修改的历史记录导出到 .csv 文件中，该文件还包括待审阅的通知、已升级的项目和已解决的项目的状态。 策略不能重命名，在不再需要时可删除。
 
-> [!NOTE]
-> 在 office 365 安全与合规中心中为 Office 365 订阅创建的监督策略无法迁移到 Microsoft 365。 如果要从 Office 365 订阅迁移到 Microsoft 365 订阅，您需要创建新的通信合规性策略以替换现有的监督策略。
+>[!NOTE]
+>在 office 365 安全与合规中心中为 Office 365 订阅创建的监督策略无法迁移到 Microsoft 365。 如果要从 Office 365 订阅迁移到 Microsoft 365 订阅，您需要创建新的通信合规性策略以替换现有的监督策略。
 
 ## <a name="policy-templates"></a>策略模板
 
@@ -46,8 +46,8 @@ ms.locfileid: "40807927"
 
 在开始使用通信合规性之前，必须确定哪些用户需要查看其通信。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例包括 Office 365 组、基于 Exchange 的通讯组列表和 Microsoft 团队频道。 此外，还可以将特定用户或组排除在扫描时使用特定的排除组或组列表。
 
-> [!IMPORTANT]
-> 通信合规性策略涵盖的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。如果你没有现有的企业版 E5 计划，并且想要尝试进行通信合规性，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+>[!IMPORTANT]
+>通信合规性策略涵盖的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。如果你没有现有的企业版 E5 计划，并且想要尝试进行通信合规性，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 ## <a name="reviewers"></a>Reviewers
 
@@ -198,8 +198,8 @@ ms.locfileid: "40807927"
 </html>
 ```
 
-> [!NOTE]
-> 通信合规性通知模板中的 HTML href 属性实现目前仅支持对 URL 引用采用单引号而不是双引号。
+>[!NOTE]
+>通信合规性通知模板中的 HTML href 属性实现目前仅支持对 URL 引用采用单引号而不是双引号。
 
 ## <a name="filters"></a>筛选器
 
@@ -232,8 +232,8 @@ ms.locfileid: "40807927"
 | 阈值 | 4个活动 |
 | Window | 60分钟 |
 
-> [!Note]
-> 活动的警报策略阈值触发设置支持的通信合规性策略的最小值为3或更高。
+>[!Note]
+>活动的警报策略阈值触发设置支持的通信合规性策略的最小值为3或更高。
 
 您可以在 Office 365 安全 & 合规中心中的 "**通知**策略" 页上的活动数量、活动期限和 "通知策略" 页上的特定用户更改触发器的默认设置。
 
@@ -259,8 +259,8 @@ ms.locfileid: "40807927"
 
 在某些情况下，您必须向法规或合规性审核人员提供信息，以证明员工活动和通信的监督。 这可能是与定义的组织策略相关联的所有活动的摘要，或任何与通信合规性策略更改相关的活动。 通信合规性策略具有内置审核跟踪，可以实现内部或外部审核的完整就绪状态。 您的通信策略将捕获每个创建、编辑和删除操作的详细审核历史记录，以提供监督过程的证明。
 
-> [!Important]
-> 必须为你的组织启用审核，然后才会记录通信合规性事件。 若要启用审核，请参阅[为通信合规性策略启用审核](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional)。
+>[!Important]
+>必须为你的组织启用审核，然后才会记录通信合规性事件。 若要启用审核，请参阅[为通信合规性策略启用审核](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional)。
 
 若要查看通信合规性策略活动，请在主页上为任何策略选择 "**导出审阅活动**" 控件。 这将生成 .csv 格式的审核文件，其中包含以下信息：
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 1ae0b469e2edd6970f3384f2777bb9bdc5cad2a6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bd9d86a5a5d96e8f7978f5c2482eb127b0379a09
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802665"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959521"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -68,8 +68,8 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 在开始使用监督之前，您必须确定哪些用户需要查看其通信。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例包括 Office 365 组、基于 Exchange 的通讯组列表和 Microsoft 团队频道。 您还可以将特定用户或组从监督的组或组列表中排除。
 
-> [!IMPORTANT]
-> 监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。如果你没有现有的企业版 E5 计划，并且想要尝试监督，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+>[!IMPORTANT]
+>监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。如果你没有现有的企业版 E5 计划，并且想要尝试监督，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -129,11 +129,11 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 监视组织中发送或接收的电子邮件是否带有攻击性的语言。 模型使用机器学习、人工智能和关键字的组合来识别电子邮件中的语言，这可能会违反反骚扰和威胁策略。 冒犯性语言模型目前支持英语关键字，并监视电子邮件的正文。
 
-> [!NOTE]
-> 创建一个[数据丢失防护策略](create-test-tune-dlp-policy.md)，其中包含阻止术语的[自定义关键字词典](create-a-keyword-dictionary.md)，如果需要执行以下操作：
+>[!NOTE]
+>创建一个[数据丢失防护策略](create-test-tune-dlp-policy.md)，其中包含阻止术语的[自定义关键字词典](create-a-keyword-dictionary.md)，如果需要执行以下操作：
 >
-> - 监视组织中适用于攻击性语言的 Microsoft 团队通信
-> - 阻止或阻止组织中的通信中的冒犯性语言
+>- 监视组织中适用于攻击性语言的 Microsoft 团队通信
+>- 阻止或阻止组织中的通信中的冒犯性语言
 
 请注意，该模型不提供冒犯性语言的详尽列表。 此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留以其自己的意愿更新模型的权利。 虽然模型可以帮助组织监视攻击性语言，但该模型并不旨在提供组织的唯一方法来监视或解决此类语言。 您的组织（而不是 Microsoft）仍负责与监控和阻止冒犯性语言相关的所有决策。
 
@@ -235,8 +235,8 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 2. 请转到 "**报告** \> "**仪表板**或 "**监督**" 查看监督报告小组件，了解当前监督策略活动的摘要。
 3. 选择**监督**小组件以打开 "详细报告" 页。
 
-> [!NOTE]
-> 如果您无法访问 "**报告**" 页，请检查您是否是监管审核角色组的成员，如组织中的 "[使监督功能在组织中可用](configure-supervision-policies.md)" 中所述。 包含在此角色组中，您可以创建和管理监督策略并运行报告。
+>[!NOTE]
+>如果您无法访问 "**报告**" 页，请检查您是否是监管审核角色组的成员，如组织中的 "[使监督功能在组织中可用](configure-supervision-policies.md)" 中所述。 包含在此角色组中，您可以创建和管理监督策略并运行报告。
   
 ### <a name="how-to-use-the-report"></a>如何使用报表
 
@@ -260,8 +260,8 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 | **在 Purview** | 监督策略扫描的来自 Exchange、团队和第三方数据源的邮件的总数（每日） |
 | **解析** | 已分类为 "**已解决**" 的 Exchange、团队和第三方数据源中的邮件总数|
 
-> [!NOTE]
-> 必须先设置监督策略，然后才能将其显示在报告中。 如果删除策略，则仍显示历史数据。 但是，它们被指示为 "不存在的策略"，并且**导出**功能不可用。
+>[!NOTE]
+>必须先设置监督策略，然后才能将其显示在报告中。 如果删除策略，则仍显示历史数据。 但是，它们被指示为 "不存在的策略"，并且**导出**功能不可用。
 
 ## <a name="audit"></a>跟踪
 
@@ -288,4 +288,3 @@ Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -Re
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
 若要为你的组织配置监督策略，请参阅[配置监督策略](configure-supervision-policies.md)。
-
