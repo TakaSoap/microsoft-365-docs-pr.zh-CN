@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 149b3ab2f30d2387165dd98c0ba21eeac0fc8728
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 37e273a3e01177dec23b668ecb8a6301011ab88d
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910351"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966900"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的设备监控和报告
 
@@ -146,7 +146,7 @@ Intune 注册的设备数据包括：
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>监视和管理 ASR 规则部署和检测
 
-[攻击面减少（ASR）规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)可帮助阻止使用者查找恶意软件时通常使用的操作和应用程序感染设备。 这些规则控制何时以及如何运行可执行文件。 例如，可以阻止 JavaScript 或 VBScript 启动下载的可执行文件、阻止来自 Office 宏的 Win32 API 调用或阻止从 USB 驱动器运行的进程。
+[攻击面减少（ASR）规则](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)可帮助阻止使用者查找恶意软件时通常使用的操作和应用程序感染设备。 这些规则控制何时以及如何运行可执行文件。 例如，可以阻止 JavaScript 或 VBScript 启动下载的可执行文件、阻止来自 Office 宏的 Win32 API 调用或阻止从 USB 驱动器运行的进程。
 
 ![攻击面缩减卡片](../images/attack-surface-reduction-rules.png)
 
@@ -183,12 +183,12 @@ Microsoft Intune 为你的 ASR 规则提供管理功能。 如果要更新设置
 
 ### <a name="exclude-files-from-asr-rules"></a>从 ASR 规则中排除文件
 
-Microsoft 365 security center 根据攻击面减少规则收集[您可能要](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive)从检测中排除的文件的名称。 通过排除文件，可以减少误报检测，并更自信地在阻止模式下部署攻击面降低规则。
+Microsoft 365 security center 根据攻击面减少规则收集[您可能要](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules)从检测中排除的文件的名称。 通过排除文件，可以减少误报检测，并更自信地在阻止模式下部署攻击面降低规则。
 
 排除在 Microsoft Intune 上进行管理，但 Microsoft 365 安全中心提供了分析工具，可帮助您了解这些文件。 若要开始收集要排除的文件，请转到**攻击面减少规则**报告页中的 "**添加排除**" 选项卡。
 
 >[!NOTE]  
->该工具将分析所有攻击面减少规则的检测项，但[只有某些规则支持排除](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules)项。
+>该工具将分析所有攻击面减少规则的检测项，但[只有某些规则支持排除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr)项。
 
 ![添加排除选项卡](../images/add-exclusions-tab.png)
 
@@ -203,7 +203,8 @@ Microsoft 365 security center 根据攻击面减少规则收集[您可能要](ht
 
 若要查找源应用程序，请对此特定规则运行以下[高级搜寻查询](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)（由规则 ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2）：
 
-```MiscEvents
+```kusto
+MiscEvents
 | where EventTime > ago(7d)
 | where ActionType startswith "Asr"
 | where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
@@ -217,7 +218,8 @@ Microsoft 365 security center 根据攻击面减少规则收集[您可能要](ht
 
 若要在 Microsoft Defender 安全中心中查找检测到的文件，请使用以下高级搜寻查询搜索所有 ASR 检测：
 
-```MiscEvents
+```kusto
+MiscEvents
 | where EventTime > ago(7d)
 | where ActionType startswith "Asr"
 | project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1

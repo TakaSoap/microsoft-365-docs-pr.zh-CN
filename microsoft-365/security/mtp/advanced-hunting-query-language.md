@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c6c92aeec6c1644472103a1aaf175eb813d5758
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: df811e38c55becf9ba52de40891fc1201d0afae0
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808677"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966880"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -35,7 +35,7 @@ ms.locfileid: "40808677"
 
 在 Microsoft 365 安全中心，转到“**搜寻**”以运行你的第一个查询。 使用以下示例：
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents 
 | where Timestamp > ago(7d)
@@ -55,7 +55,7 @@ DeviceProcessEvents
 
 查询将从描述其用途的简短批注开始。 如果你以后决定保存查询并与组织中的其他人共享，这将很有用。
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents
 ```
@@ -64,19 +64,19 @@ DeviceProcessEvents
 
 第一个管道元素是范围为前 7 天的时间筛选器。 尽可能缩小时间范围可以确保查询运行良好、返回易于管理的结果并且不会超时。
 
-```
+```kusto
 | where Timestamp > ago(7d)
 ```
 
 时间范围后紧跟表示 PowerShell 应用程序的文件搜索。
 
-```
+```kusto
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
 之后，查询将查找通常与 PowerShell 一起使用以下载文件的命令行。
 
-```
+```kusto
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
@@ -86,7 +86,7 @@ DeviceProcessEvents
 
 现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project` 将返回特定列，并且 `top` 将限制结果数量，以使结果格式良好、大小合理且易于处理。
 
-```
+```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by Timestamp'
 ```

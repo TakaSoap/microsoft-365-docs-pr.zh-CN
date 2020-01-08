@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da985621c1cee3fe5aa30d961380ef3f3d83de8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 86b082baf5af34449f9981b92ccd8ea01aba29df
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808747"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966861"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>跨设备和电子邮件搜寻威胁
 
@@ -34,7 +34,7 @@ Microsoft 威胁防护中的[高级求职](advanced-hunting-overview.md)使你�
 ## <a name="obtain-user-accounts-from-email-addresses"></a>从电子邮件地址获取用户帐户
 在[涵盖设备和电子邮件的表](advanced-hunting-schema-tables.md)之间构建查询时，您可能需要从发件人或收件人电子邮件地址获取用户帐户名称。 为此，请使用来自电子邮件地址的*本地主机*：
 
-```
+```kusto
 AccountName = tostring(split(SenderFromAddress, "@")[0])
 ```
 
@@ -45,7 +45,7 @@ AccountName = tostring(split(SenderFromAddress, "@")[0])
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>检查来自已知恶意发件人的文件是否在您的设备上
 假设您知道发送恶意文件的电子邮件地址，则可以运行此查询来确定您的设备上是否存在来自此发件人的文件。 例如，您可以使用此查询来确定受恶意软件分布活动影响的设备的数量。
 
-```
+```kusto
 //Get prevalence of files sent by a malicious sender in your organization
 EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
@@ -59,7 +59,7 @@ DeviceFileEvents
 ### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>在收到恶意电子邮件后检查登录尝试
 此查询在收到已知恶意电子邮件后的30分钟内找到电子邮件收件人执行的10次最新登录。 您可以使用此查询检查电子邮件收件人的帐户是否已泄露。
 
-```
+```kusto
 //Find logons that occurred right after malicious email was received
 let MaliciousEmail=EmailEvents
 | where MalwareFilterVerdict == "Malware" 
@@ -76,7 +76,7 @@ DeviceLogonEvents
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>在收到来自已知恶意发件人的电子邮件后查看 PowerShell 活动
 恶意电子邮件通常包含文档和其他巧尽心思构建的附件，这些附件可运行 PowerShell 命令以提供额外的负载。 如果您知道来自已知恶意发件人的电子邮件，则可以使用此查询列出并查看从发件人收到电子邮件后30分钟内发生的 PowerShell 活动。  
 
-```
+```kusto
 //Find PowerShell activities right after email was received from malicious sender
 let x=EmailEvents
 | where SenderFromAddress =~ "MaliciousSender@example.com"
