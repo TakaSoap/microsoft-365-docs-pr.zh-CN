@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件问题（阻止发送邮件的租户）。
-ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959650"
+ms.locfileid: "40962301"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
 
@@ -53,7 +53,7 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 如果您的租户被阻止发送电子邮件，则需要执行以下几项操作：
 
-1. 验证是否已注册所有电子邮件域。 有关详细信息，请参阅[将域添加到 Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)和[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+1. 验证是否已注册所有电子邮件域。 有关详细信息，请参阅[将域添加到 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)和[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
 2. 查找异常[连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。 恶意参与者通常会在 Office 365 组织中创建新的入站连接器以发送垃圾邮件。 若要查看现有连接器，请参阅[验证 Office 365 中的连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)。
 
@@ -72,7 +72,7 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
 
-[Exchange Online 服务说明的 "发送限制" 部分中的批量邮件指南](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+[Exchange Online 服务说明的 "发送限制" 部分中的批量邮件指南](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Office 365 中的电子邮件未送达报告](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 

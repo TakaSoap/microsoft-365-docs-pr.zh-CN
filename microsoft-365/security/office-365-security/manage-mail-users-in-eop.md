@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9322198be4e180988e1651c2ccdcaef2b0ac52a9
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971740"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962321"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -30,7 +30,7 @@ ms.locfileid: "39971740"
 > [!NOTE]
 > 你可以在 Microsoft 365 管理中心添加用户，但这些用户不能用作邮件收件人。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要打开 Exchange 管理中心，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
@@ -174,7 +174,7 @@ Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser
 
 ### <a name="use-eop-powershell-to-remove-a-mail-user"></a>使用 EOP PowerShell 删除邮件用户
 
-此示例使用 [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient/remove-eopmailuser) cmdlet 删除用户 Jeffrey Zeng：
+此示例使用 [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser) cmdlet 删除用户 Jeffrey Zeng：
 
 ```PowerShell
 Remove-EOPMailUser -Identity Jeffrey
