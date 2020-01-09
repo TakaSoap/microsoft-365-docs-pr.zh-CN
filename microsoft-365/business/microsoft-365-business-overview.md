@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解有关 Microsoft 365 业务的详细信息。
-ms.openlocfilehash: 1d4eb62a31cc44ab8dc75964c038f0a3deef4005
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: eafd03be90c128051c8c91bc339af69a0a613136
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831425"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999546"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
@@ -42,7 +42,7 @@ Microsoft 365 Business 是一款订阅服务，其中包括 Office 365 生产率
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。 
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。 
 
 Microsoft 365 商业版适用于最高300的许可证。 如果你需要更多许可证，请参阅[Microsoft 365 企业版](https://go.microsoft.com/fwlink/p/?linkid=860986)文档以了解详细信息。
 
@@ -99,7 +99,7 @@ Microsoft 365 Business 通过以下方式帮助**defended 抵御威胁**：
 
 - 使用简化的控件来管理公司中所有 Windows 10 电脑的策略，强制实施 BitLocker 加密并自动安装关键 Windows 更新（强制实施 Windows 更新策略）。
 
-若要查看安全功能的完整列表，请参阅[Microsoft 365 商业安全功能](security-features.md)。 [设置 Microsoft 365 商业](set-up.md)版后，请参阅[设置高级安全策略](set-up-advanced-security.md)以开始使用不作为引导安装程序的一部分的安全功能。 阅读有关如何针对网络罪犯和黑客设置保护的最佳概述，请参阅[保护 Office 365 和 Microsoft 365 商业版计划](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的十大方法。
+若要查看安全功能的完整列表，请参阅[Microsoft 365 商业安全功能](security-features.md)。 [设置 Microsoft 365 商业](set-up.md)版后，请参阅[加强威胁防护](increase-threat-protection.md)并[设置合规性功能](set-up-compliance.md)，以开始使用不作为引导安装程序的一部分的安全功能。 阅读有关如何针对网络罪犯和黑客设置保护的最佳概述，请参阅[保护 Office 365 和 Microsoft 365 商业版计划](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的十大方法。
 
 ## <a name="get-microsoft-365-business"></a>获取 Microsoft 365 商业版
 
@@ -114,4 +114,4 @@ Microsoft 365 Business 通过以下方式帮助**defended 抵御威胁**：
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
