@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于对已标记内容应用包括加密或水印在内的保护设置。
-ms.openlocfilehash: f85d94b918c96ea6505b9b52d386e7f30a3fe77a
-ms.sourcegitcommit: 920bca353d16e9b1e5d4d268e0410ef179eced37
+ms.openlocfilehash: 91481bb1c1267b40ccd2596c06faf5005372ac39
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40948867"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989497"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -54,11 +54,11 @@ ms.locfileid: "40948867"
   
 可在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的“**分类**” > “**敏感度标签**”下创建敏感度标签。 这些敏感度标签可供 Azure 信息保护、Office 应用和 Office 365 服务使用。
 
-对于 Azure 信息保护客户，可以在其他管理中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 **Azure 信息保护标签和 Office 365 敏感度标签彼此完全相互兼容。** 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。
+对于 Azure 信息保护客户，可以在其他管理中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 Azure 信息保护标签和 Office 365 敏感度标签彼此相互兼容。也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。
 
 ## <a name="what-a-sensitivity-label-is"></a>什么是敏感度标签
 
-向文档或电子邮件分配的敏感度标签就像是具有以下特征的标记：
+为文档或电子邮件分配敏感度标签时，它就像是应用于以下内容的标记：
 
 - **可自定义**：可以为组织中不同级别的敏感内容创建类别，如“个人”、“公开”、“常规”、“机密”和“高度机密”。
 
@@ -66,7 +66,7 @@ ms.locfileid: "40948867"
 
 - **永久。** 将敏感度标签应用于内容后，该标签将保留在该电子邮件或文档的元数据中。 这意味着标签将随内容（包括保护设置）一起漫游，并且此数据将成为应用和强制实施策略的基础。
 
-在 Office 应用中，敏感度标签只显示为电子邮件或文档上的标记。
+在 Office 应用中，敏感度标签就像是电子邮件或文档上向用户显示的标记。
 
 每个内容项都可以应用有一个敏感度标签。一个内容项可以同时应用有一个敏感度标签和一个[保留标签](labels.md)。
 
@@ -153,7 +153,7 @@ ms.locfileid: "40948867"
 
 在你创建标签策略并将敏感度标签分配给用户和组后，这些人员会在不超过一小时的时间内在 Office 应用中看到这些标签。
 
-可创建和发布的敏感度标签的数量没有限制，但有一种例外：如果标签应用了加密，则最多可以有 500 个标签。 但是，最佳做法是最大程度地减少管理开销并降低用户复杂程度，尽量将标签的数量保持在最低限度。 事实证明，当用户拥有五个以上的主标签并且每个主标签拥有五个以上的子标签时，实际部署的效率就会降低。
+可创建和发布的敏感度标签的数量没有限制，但有一种例外：如果标签应用了加密，则最多可以有 500 个标签。 但是，最佳做法是减少管理开销并降低用户复杂程度，尽量将标签的数量保持在最低限度。 事实证明，当用户拥有五个以上的主标签或者每个主标签拥有五个以上的子标签时，实际部署的效率就会显著降低。
 
 ### <a name="label-policy-priority-order-matters"></a>标签策略优先级（顺序非常重要）
 
@@ -195,7 +195,7 @@ ms.locfileid: "40948867"
 
 - [Outlook 中的敏感度标签功能支持](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
 
-如果对 Windows 计算机使用了 Azure 信息保护统一标签客户端，则其他功能可用于敏感性标签。 有关详细信息，请参阅[比较 Windows 计算机的标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。 
+如果对 Windows 计算机使用了 Azure 信息保护统一标签客户端，则其他功能可用于敏感性标签。 有关详细信息，请参阅[比较 Windows 计算机的标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 
 ### <a name="office-apps-on-windows"></a>Windows 上的 Office 应用
 
@@ -240,10 +240,7 @@ Azure 信息保护用户可以使用 Azure 信息保护统一标签客户端在 
 - 保留文档和电子邮件中的现有 Azure 信息保护标签。
 - 保留现有 Azure 信息保护标签配置。
 
-如果你使用的是 Azure 信息保护标签（因为你的租户尚未在[统一标签平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上），我们建议你在激活统一标签之前避免在其他管理中心中创建新标签。 有关此过程的详细信息，请参阅[如何将 Azure 信息保护标签迁移到统一敏感度标签](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)。 
-
-> [!NOTE]
->  Azure 门户中的 Azure 信息保护标签的标签管理将于 **2021 年 3 月 31 日**弃用。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108)。
+如果你使用的是 Azure 信息保护标签（因为你的租户尚未在[统一标签平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)上），我们建议你在激活统一标签之前避免在其他管理中心中创建新标签。 有关此过程的详细信息，请参阅[如何将 Azure 信息保护标签迁移到统一敏感度标签](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)。
 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>敏感度标签和 Azure 信息保护客户端
 

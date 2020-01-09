@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上载将多个 PST 文件批量导入 Office 365 中的用户邮箱。
-ms.openlocfilehash: 4354e0c630066204811f98cce53d6b0f041b20ad
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+ms.openlocfilehash: a66655fd03a379d56e31ca0960f433d659265edc
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854067"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995292"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-office-365"></a>使用网络上载将组织的 PST 文件导入到 Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "40854067"
   
 下面是使用网络上载将多个 PST 文件批量导入到 Office 365 邮箱所需的分步说明。 有关使用网络上载将 PST 文件批量导入到 Office 365 邮箱的常见问题，请参阅[使用网络上载导入 PST 文件的常见问题](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files)。
   
-[步骤 1：复制 SAS URL 并安装 Azure AzCopy](#step-1-copy-the-sas-url-and-install-azure-azcopy)
+[步骤 1：复制 SAS URL 并安装 AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
 
 [步骤 2：将 PST 文件上载到 Office 365](#step-2-upload-your-pst-files-to-office-365)
 
@@ -57,39 +57,39 @@ ms.locfileid: "40854067"
   - 必须是你的 Office365 组织中的全局管理员。
     
   > [!TIP]
-    > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮箱导入导出”和“邮件收件人”角色分配给新角色组，然后添加成员。 
+    > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮箱导入导出”和“邮件收件人”角色分配给新角色组，然后添加成员。
   
-- 唯一受支持的将 PST 文件导入到 Office 365 的方法是使用 Azure AzCopy 工具，如本主题中所述。 无法使用 Azure 存储资源管理器将 PST 文件直接上传到 Azure 存储区域。
+- 唯一受支持的将 PST 文件导入到 Office 365 的方法是使用 AzCopy 工具，如本主题中所述。 无法使用 Azure 存储资源管理器将 PST 文件直接上传到 Azure 存储区域。
     
-- 需要将要导入到 Office365 中的 PST 文件存储在自己组织中的文件服务器或共享文件夹中。 在步骤 2 中，你将运行 Azure AzCopy 工具，该工具会将存储在文件服务器或共享文件夹中的 PST 文件上传到 Office 365。
+- 需要将要导入到 Office365 中的 PST 文件存储在自己组织中的文件服务器或共享文件夹中。 在步骤 2 中，你将运行 AzCopy 工具，以便将存储在文件服务器或共享文件夹中的 PST 文件上传到 Office 365。
     
 - 大型 PST 文件可能会影响 PST 导入过程的性能。 因此，我们建议你在步骤 2 中上传到 Azure 存储位置的每个 PST 文件不应大于 20 GB。
 
-- 此过程涉及复制和保存包含访问密钥的 URL 副本。 此信息将在步骤 2 中用于上载 PST 文件，而且如果要查看上载到 Office 365 的 PST 文件列表，还会在步骤 3 中用到。 请务必采取预防措施来保护此 URL，就像保护密码或其他与安全相关的信息一样。 例如，可以将其保存到受密码保护的 Microsoft Word 文档或加密的 USB 驱动器。 请参阅[更多信息](#more-information)部分，查看此组合 URL 和密钥的示例。 
+- 此过程涉及复制和保存包含访问密钥的 URL 副本。 此信息将在步骤 2 中用于上载 PST 文件，而且如果要查看上载到 Office 365 的 PST 文件列表，还会在步骤 3 中用到。 请务必采取预防措施来保护此 URL，就像保护密码或其他与安全相关的信息一样。 例如，可以将其保存到受密码保护的 Microsoft Word 文档或加密的 USB 驱动器。 请参阅[更多信息](#more-information)部分，查看此组合 URL 和密钥的示例。
     
 - 你可以将 PST 文件导入 Office 365 中的非活动邮箱。 可通过在 PST 导入映射文件中的 `Mailbox` 参数中指定非活动邮箱的 GUID 来实现此操作。 有关信息，请参阅本主题中“**说明**”选项卡上的步骤 4。 
     
 - 在 Exchange 混合部署中，对于主邮箱位于本地的用户，可将 PST 文件导入到基于云的存档邮箱中。 为此，请在 PST 导入映射文件中执行以下操作：
     
-  - 在 `Mailbox` 参数中指定用户本地邮箱的电子邮件地址。 
+  - 在 `Mailbox` 参数中指定用户本地邮箱的电子邮件地址。
     
-  - 在 `IsArchive` 参数中指定 **TRUE** 值。 
+  - 在 `IsArchive` 参数中指定 **TRUE** 值。
     
-    请参阅[步骤 4](#step-4-create-the-pst-import-mapping-file) 以了解更多信息。 
+    请参阅[步骤 4](#step-4-create-the-pst-import-mapping-file) 以了解更多信息。
     
-- 将 PST 文件导入到 Office 365 邮箱后，邮箱的保留挂起设置将无限期打开。 这意味着分配给该邮箱的保留策略将不会得到处理，除非你关闭保留挂起或设置关闭挂起的日期。 我们为什么要这样做？ 如果导入到邮箱的邮件是旧邮件，则可能会被永久删除（清除），因为根据为邮箱配置的保留设置，它们的保留期已过期。 将邮箱置于保留挂起状态将为邮箱所有者提供时间来管理这些新导入的邮件，或为你提供时间来更改邮箱的保留设置。 有关管理保留挂起的建议，请参阅本主题中的“[更多信息](#more-information)”部分。 
+- 将 PST 文件导入到 Office 365 邮箱后，邮箱的保留挂起设置将无限期打开。 这意味着分配给该邮箱的保留策略将不会得到处理，除非你关闭保留挂起或设置关闭挂起的日期。 我们为什么要这样做？ 如果导入到邮箱的邮件是旧邮件，则可能会被永久删除（清除），因为根据为邮箱配置的保留设置，它们的保留期已过期。 将邮箱置于保留挂起状态将为邮箱所有者提供时间来管理这些新导入的邮件，或为你提供时间来更改邮箱的保留设置。 有关管理保留挂起的建议，请参阅本主题中的“[更多信息](#more-information)”部分。
     
-- 默认情况下，Office 365 邮箱可以接收的最大邮件大小为 35 MB。 这是因为邮箱的 *MaxReceiveSize* 属性的默认值被设置为 35 MB。 但是，Office 365 中最大邮件接收大小的限制为 150 MB。 因此，如果你导入的 PST 文件中包含大于 35 MB 的项目，则 Office 365 导入服务会自动将目标邮箱上的 *MaxReceiveSize* 属性值更改为 150 MB。 这将允许将最大 150 MB 的邮件导入到用户邮箱。 
+- 默认情况下，Office 365 邮箱可以接收的最大邮件大小为 35 MB。 这是因为邮箱的 *MaxReceiveSize* 属性的默认值被设置为 35 MB。 但是，Office 365 中最大邮件接收大小的限制为 150 MB。 因此，如果你导入的 PST 文件中包含大于 35 MB 的项目，则 Office 365 导入服务会自动将目标邮箱上的 *MaxReceiveSize* 属性值更改为 150 MB。 这将允许将最大 150 MB 的邮件导入到用户邮箱。
     
     > [!TIP]
-    > 若要确定邮箱的邮件接收大小，可在 Exchange Online PowerShell 中运行此命令：`Get-Mailbox <user mailbox> | FL MaxReceiveSize`。 
+    > 若要确定邮箱的邮件接收大小，可在 Exchange Online PowerShell 中运行此命令：`Get-Mailbox <user mailbox> | FL MaxReceiveSize`。
 
-## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>步骤 1：复制 SAS URL 并安装 Azure AzCopy
+## <a name="step-1-copy-the-sas-url-and-install-azcopy"></a>步骤 1：复制 SAS URL 并安装 AzCopy
 
-第一步是下载并安装 Azure AzCopy 工具，你将在步骤 2 中运行该工具，以便将 PST 文件上传到 Office 365。 还会复制组织的 SAS URL。 此 URL 是组织 Microsoft 云中 Azure 存储位置的网络 URL 与共享访问签名 (SAS) 密钥的组合。 此密钥为你提供将 PST 文件上传到 Azure 存储位置所需的权限。 请务必采取预防措施来保护 SAS URL。 它是你的组织所特有的，并将在步骤 2 中使用。
+第一步是下载并安装 AzCopy 工具，你将在步骤 2 中运行该工具，以便将 PST 文件上传到 Office 365。 还会复制组织的 SAS URL。 此 URL 是组织 Microsoft 云中 Azure 存储位置的网络 URL 与共享访问签名 (SAS) 密钥的组合。 此密钥为你提供将 PST 文件上传到 Azure 存储位置所需的权限。 请务必采取预防措施来保护 SAS URL。 它是你的组织所特有的，并将在步骤 2 中使用。
 
 > [!IMPORTANT]
-> 若要使用网络上载方法导入 PST 文件，建议使用可以在以下过程的步骤 6b 中下载的 Azure AzCopy 版本。
+> 若要使用本文中所述的网络上载方法和命令语法导入 PST 文件，必须使用可以在以下过程的步骤 6b 中下载的 AzCopy 版本。 你也可以从[此处](https://aka.ms/downloadazcopy)下载相同版本的 AzCopy。 不支持使用不同版本的 AzCopy。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)，然后使用你 Office365 组织中的管理员帐户的凭据进行登录。 
     
@@ -110,11 +110,11 @@ ms.locfileid: "40854067"
   
 6. 在“**导入数据**”页面上，执行以下两项操作： 
     
-    ![在“导入数据”页面上复制 SAS URL 并下载 Azure AzCopy 工具](media/74411014-ec4b-4e25-9065-404c934cce17.png)
+    ![在“导入数据”页面上复制 SAS URL 并下载 AzCopy 工具](media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
     a. 在步骤 2 中，单击“**显示网络上传 SAS URL**”。 系统显示 SAS URL 后，单击“**复制到剪贴板**”，然后将其粘贴并保存到文件中，以便以后可以访问它。
     
-    b. 在步骤 3 中，单击“**下载 Azure AzCopy**”以下载并安装 Azure AzCopy 工具。 在弹出的窗口中，单击“**运行**”来安装 AzCopy。 
+    b. 在步骤 3 中，单击“**下载 Azure AzCopy**”以下载并安装 AzCopy 工具。 在弹出的窗口中，单击“**运行**”来安装 AzCopy。 
     
 > [!NOTE]
 > 可将“**导入数据**”页面保留为打开状态（如果需要再次复制 SAS URL），也可以单击“**取消**”将其关闭。 
@@ -267,7 +267,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
     ![单击“验证”来检查 CSV 文件是否有错误](media/4680999d-5538-4059-b878-2736a5445037.png)
   
-    CSV 文件必须经过成功验证才能创建 PST 导入作业。 请注意，文件名在成功验证后会更改为绿色。 如果验证失败，请单击“查看日志”**** 链接。 系统将打开一个验证错误报告，显示文件中失败的每一行所对应的错误消息。 
+    CSV 文件必须经过成功验证才能创建 PST 导入作业。 文件名在成功验证后会更改为绿色。 如果验证失败，请单击“查看日志”**** 链接。 系统将打开一个验证错误报告，显示文件中失败的每一行所对应的错误消息。
     
 9. 在成功验证 PST 映射文件后，请阅读条款和条件文档，然后单击复选框。
     
@@ -317,7 +317,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
   
 ![将 PST 文件导入到 Office 365 的网络上传过程的工作流](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置：** 第一步是下载用于将 PST 文件上传到 Microsoft 云中的 Azure 存储位置的 Azure AzCopy 命令行工具和访问密钥。 需要从安全与合规中心的“导入”**** 页获取工具和密钥。 密钥（称为安全访问签名 (SAS) 密钥）为你提供将 PST 文件上传到专用的安全 Azure 存储位置所需的权限。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 将 PST 文件导入到 Office 365 不需要你的组织拥有单独的 Azure 订阅。 
+1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置：** 第一步是下载用于将 PST 文件上传到 Microsoft 云中的 Azure 存储位置的 AzCopy 命令行工具和访问密钥。 需要从安全与合规中心的“导入”**** 页获取工具和密钥。 密钥（称为安全访问签名 (SAS) 密钥）为你提供将 PST 文件上传到专用的安全 Azure 存储位置所需的权限。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 将 PST 文件导入到 Office 365 不需要你的组织拥有单独的 Azure 订阅。 
     
 2. **将 PST 文件上传到 Azure 存储位置：** 下一步是使用 AzCopy.exe 工具（已在步骤 1 中下载）将 PST 文件上传并存储到 Azure 存储位置，该存储位置位于你的 Office 365 组织所在的区域 Microsoft 数据中心。 若要上传，想要导入至 Office 365 的 PST 文件必须位于组织的文件共享或文件服务器上。
     
