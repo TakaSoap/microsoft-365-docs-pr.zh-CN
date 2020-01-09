@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商业版的安装步骤概述。
-ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: cab999493bf86ed0adf32521eaf6b3943f107f79
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850796"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995242"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
@@ -36,7 +36,7 @@ ms.locfileid: "40850796"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 大部分安装步骤可以在安装向导中完成，但也会列出其他选项。
 
@@ -61,7 +61,7 @@ ms.locfileid: "40850796"
 - **Exchange Online Archiving**
 - **Azure 信息保护（Plan1**）
 
-若要开始，请参阅[设置高级安全策略](set-up-advanced-security.md)。
+若要开始，请参阅[增加威胁防护](increase-threat-protection.md)和[设置合规性功能](set-up-compliance.md)。
 
 请参阅[保护 Microsoft 365 业务的十大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)，以获得最佳安全实践的路线图。
 
@@ -91,4 +91,4 @@ ms.locfileid: "40850796"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件问题（阻止发送邮件的租户）。
-ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989527"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995223"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
 
@@ -39,7 +39,7 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 - Office 365 邮箱接收来自外部发件人的电子邮件。 邮件转发是在 Office 365 邮箱上配置的，因此邮件将返回到用户的外部电子邮件地址。 此方案在教育环境中最常见，即学生希望使用其个人电子邮件帐户查看学校相关的邮件。
 
-- 具有通过 EOP 发送传出邮件的本地电子邮件服务器的混合 envrionments。
+- 具有通过 EOP 发送传出邮件的本地电子邮件服务器的混合环境。
 
 ### <a name="problems-with-unregistered-domains"></a>未注册域的问题
 
@@ -57,7 +57,7 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 2. 为 Office 365 组织中的所有管理员[启用 MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) 。
 
-3. 验证是否已注册所有电子邮件域。 有关详细信息，请参阅[将域添加到 Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)和[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+3. 验证是否已注册所有电子邮件域。 有关详细信息，请参阅[将域添加到 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)和[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
 4. 查找异常[连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。 恶意参与者通常会在 Office 365 组织中创建新的入站连接器以发送垃圾邮件。 若要查看现有连接器，请参阅[验证 Office 365 中的连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)。
 
