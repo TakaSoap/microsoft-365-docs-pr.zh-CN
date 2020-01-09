@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
-ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
+ms.openlocfilehash: 59cdb911c46fbb2ad5dd998810297a5502c8fa0c
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38697155"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989547"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>让用户做好使用设备的准备
 
@@ -23,7 +23,7 @@ ms.locfileid: "38697155"
 ## <a name="to-prepare-the-guide"></a>准备指南
 
 1. 下载适用于您的组织的版本：
-- [Microsoft 托管桌面-开始使用你的设备（获取帮助版本）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) -如果你的最终用户将使用 Microsoft 支持系统，请使用此版本。
+- [Microsoft 托管桌面-开始使用你的设备（获取帮助版本）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) -如果你的最终用户将使用 Microsoft 支持系统，请使用此版本。
 - [Microsoft 托管桌面-开始使用你的设备](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)-如果你的最终用户*不*使用 Microsoft 支持系统，则使用此版本。
 2. 使用任何能够打开 PDF 文件的应用程序，以填写与您的组织相关的详细信息：
     - 您的用户应连接到的网络名称，以便继续安装（指南中的第3步）
@@ -33,9 +33,9 @@ ms.locfileid: "38697155"
 
 ## <a name="ready-to-use-guide"></a>"随时使用指南"
 
-我们还为不需要对其进行自定义的组织提供更通用版本的指南。 有两个版本，一个适用于使用 Microsoft 支持系统的组织（获取帮助应用程序），一个用于提供自己的内部最终用户支持的组织。
+我们还为不需要对其进行自定义的组织提供更通用版本的指南。 有两个版本，一个用于使用 Microsoft 支持系统的组织（获取帮助应用程序），一个用于为其用户提供替代支持的组织。 
 
-- [Microsoft 托管桌面-开始使用你的设备（获取帮助版本-已准备好使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) -如果你的最终用户将使用 Microsoft 支持系统，则使用此版本。
+- [Microsoft 托管桌面-开始使用你的设备（获取帮助版本-已准备好使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) -如果你的最终用户将使用 Microsoft 支持系统，则使用此版本。
 - [Microsoft 托管桌面-开始使用你的设备（可供使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) -如果你的最终用户*不*使用 Microsoft 支持系统，则使用此版本。
 
 此时，你已准备好继续部署应用：

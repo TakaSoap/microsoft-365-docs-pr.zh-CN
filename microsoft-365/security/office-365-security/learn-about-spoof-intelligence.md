@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 在 "反垃圾邮件设置&amp; " 页上的 "安全合规性中心" 中使用欺骗智能，以查看所有哄骗的发件人是组织中的域，还是哄骗外部域。 欺骗智能作为 Office 365 企业版 E5 的一部分或作为高级威胁防护和 Exchange Online Protection 的一部分单独提供。
-ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970428"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989487"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>详细了解防欺骗智能
 
@@ -79,9 +79,9 @@ ms.locfileid: "39970428"
 
     ![显示对反垃圾邮件页面的访问权限的屏幕截图](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. 在右侧窗格中的 "**反垃圾邮件设置**" 页上，选择 "**自定义**" 选项卡，然后向下滚动并展开 "**欺骗智能策略**"。
+4. 在右侧窗格中的 "**反垃圾邮件设置**" 页上，向下滚动并展开 "**欺骗智能策略**"。
 
-    ![显示对反垃圾邮件自定义设置的访问权限的屏幕截图](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![哄骗](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. 若要查看欺骗您的域的发件人列表，请选择 "**复查新发件人**"，然后选择 "**域**" 选项卡。
 

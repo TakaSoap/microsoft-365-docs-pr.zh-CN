@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件问题（阻止发送邮件的租户）。
-ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962301"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989527"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
 
@@ -55,18 +55,20 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 1. 验证是否已注册所有电子邮件域。 有关详细信息，请参阅[将域添加到 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)和[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-2. 查找异常[连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。 恶意参与者通常会在 Office 365 组织中创建新的入站连接器以发送垃圾邮件。 若要查看现有连接器，请参阅[验证 Office 365 中的连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)。
+2. 为 Office 365 组织中的所有管理员[启用 MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) 。
 
-3. 按照对[Office 365 中的受损电子邮件帐户的响应](responding-to-a-compromised-email-account.md)中所述，检查是否存在已损坏的用户。
+3. 验证是否已注册所有电子邮件域。 有关详细信息，请参阅[将域添加到 Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain)和[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-4. 为 Office 365 组织中的所有管理员[启用 MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) 。
+4. 查找异常[连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。 恶意参与者通常会在 Office 365 组织中创建新的入站连接器以发送垃圾邮件。 若要查看现有连接器，请参阅[验证 Office 365 中的连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)。
 
-5. 锁定你的本地电子邮件服务器并验证其是否未受到威胁。
+5. 按照对[Office 365 中的受损电子邮件帐户的响应](responding-to-a-compromised-email-account.md)中所述，检查是否存在已损坏的用户。
+
+6. 锁定你的本地电子邮件服务器并验证其是否未受到威胁。
 
    > [!TIP]
    > 这里有许多因素，尤其是在使用第三方服务器时。 无论如何，您都需要验证所有传出电子邮件现在是否合法。
 
-6. 致电 Microsoft 支持部门，让你的租户不再被阻止，以从未注册的域中再次发送。 错误代码很有帮助，但您需要证明您的环境已受到保护，并且无法发送垃圾邮件。 若要打开支持案例，请参阅[联系支持人员以获取商业产品-管理员帮助](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+7. 致电 Microsoft 支持部门，请求让租户解锁，以再次发送电子邮件。 错误代码很有帮助，但您需要证明您的环境已受到保护，并且无法发送垃圾邮件。 若要打开支持案例，请参阅[联系支持人员以获取商业产品-管理员帮助](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
 ## <a name="for-more-information"></a>有关详细信息
 
