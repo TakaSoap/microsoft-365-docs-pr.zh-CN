@@ -1,7 +1,7 @@
 ---
 title: 事件驱动保留概述
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签，能让保留期以特定类型事件发生的时间为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
-ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
+ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "39268425"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989567"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -61,7 +61,7 @@ ms.locfileid: "39268425"
     
   - 关键字（对于 Exchange 项）。在本示例中，组织在包含产品记录的邮件中使用产品代码，因此 Exchange 项的关键字与 SharePoint 和 OneDrive 文档的资产 ID 相同。
     
-  - 事件发生日期。此日期用作保留期的开始日期，只能是当前日期或未来日期，不能是过去日期。
+  - 事件发生日期。此日期用作保留期的开始日期。该日期可以是当前日期、过去日期或未来日期。
     
 4. 在你创建事件后，事件日期会同步到包含与相应事件类型关联的标签和指定资产 ID 或关键字的所有内容。与任何标签一样，此同步最长可能需要 7 天才能完成。在上面的关系图中，所有用红圈圈出的项的保留期由此事件触发。也就是说，当此产品的生存期结束时，这个事件就会触发此产品的记录的保留期。
     

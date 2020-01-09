@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 对于管理员：了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到 Exchange Online 的用户邮箱中。 本主题提供了常见问题解答并解释了 PST 导入流程的工作原理。
-ms.openlocfilehash: 309fde077cdf456ba33656c29f9e325aac1820e3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e58be4e90429c2d39bbcf4c5ef362e659764d63
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807121"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995282"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>将组织的 PST 文件导入到 Office 365 的概述
 
@@ -52,11 +52,11 @@ ms.locfileid: "40807121"
     
 2. **上传或复制 PST 文件** - 下一步取决于你是使用网络上传或驱动器寄送来导入 PST 文件。 在两种情况下，你均使用在上一步中获得的工具和安全存储密钥。
     
-    - **网络上传**AzCopy.exe 工具（在步骤 1 中下载）用于将 PST 文件上传并存储于 Microsoft 云中的 Azure 存储位置。 将 PST 文件上传至的 Azure 存储位置驻留在 Office 365 组织所在的区域 Microsoft 数据中心。
+    - **网络上传：** AzCopy.exe 工具（在步骤 1 中下载）用于将 PST 文件上传并存储于 Microsoft 云中的 Azure 存储位置。 将 PST 文件上传至的 Azure 存储位置驻留在 Office 365 组织所在的区域 Microsoft 数据中心。
     
       若要上传，想要导入至 Office 365 的 PST 文件必须位于组织的文件共享或文件服务器上。
     
-    - **驱动器寄送**WAImportExport.exe 工具（在第一步下载）用于将 PST 文件复制到硬盘。 该工具使用 BitLocker 加密硬盘，然后将 PST 复制到硬盘。 与网络上传方法类似，想要复制到硬盘的 PST 文件必须位于组织的文件共享或文件服务器上。
+    - **驱动器寄送：** WAImportExport.exe 工具（在步骤 1 中下载）用于将 PST 文件复制到硬盘。 该工具使用 BitLocker 加密硬盘，然后将 PST 复制到硬盘。 与网络上传方法类似，想要复制到硬盘的 PST 文件必须位于组织的文件共享或文件服务器上。
     
 3. **创建 PST 导入映射文件** - 将 PST 文件上传至 Azure 存储位置或复制到硬盘之后，下一步是创建逗号分隔值 (CSV) 文件，用于指定 PST 文件将要导入到的用户邮箱（并且 PST 文件可导入到用户的主邮箱或其存档邮箱）。 Office 365 导入服务将使用此信息来导入 PST 文件。 
     
