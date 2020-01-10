@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '作为管理员，您可以在 Office 365 中查看、释放和报告误报的已隔离邮件。 您可以设置策略，以便 Office 365 筛选邮件并将其发送到隔离区，原因如下：因为它们被标识为垃圾邮件、批量、网络钓鱼和恶意软件，或者它们与邮件流规则匹配。 '
-ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970930"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021858"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 中的管理员身份管理隔离的邮件和文件
 
@@ -31,26 +31,15 @@ ms.locfileid: "40970930"
 
 您必须在 Office 365 中具有全局管理员（GA）权限，或者是一个或多个安全 & 合规性中心角色组的成员，才能处理隔离的邮件或隔离的文件。 有关详细信息，请参阅[Office 365 安全 & 合规性中心中的权限](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)。
 
-> [!IMPORTANT]
-> 默认情况下，垃圾邮件、批量和网络钓鱼邮件在30天内保持隔离状态。 由于与邮件流规则匹配而被隔离的邮件将保留在7天内的隔离中。 恶意软件邮件在15天内保留在隔离中。 可以在安全 & 合规性中心的 "反垃圾邮件" 设置中自定义垃圾邮件隔离时间。 Office 365 从隔离区删除邮件后，你无法将其恢复。 如果你愿意，可以在反垃圾邮件筛选器策略中更改隔离邮件的保留期。 有关详细信息，请参阅[设置隔离保留期](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。
+## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>访问管理员隔离需要哪些权限？
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+管理隔离的权限由 **Security & 合规性中心*角色组中的成员身份控制。 有关安全 & 合规中心中的角色组的详细信息，请参阅[Office 365 安全 & 合规中心中的权限](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
 
-虽然隔离在安全 & 合规中心，但在隔离中管理邮件的权限是由**Exchange Online**角色组中的成员资格控制的。 有关 Exchange Online 中的角色组的详细信息，请参阅[在 Exchange online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+授予管理隔离权限的安全 & 合规性角色组包括：
 
-授予管理隔离文件权限的 Exchange Online 角色组包括：
-
-- **组织管理**：全局管理员自动成为此组的成员。
+- **隔离管理员**
 
 - **安全管理员**
-
-- **清洁管理**
-
-授予查看隔离文件权限的 Exchange Online 角色组包括：
-
-- **View-Only Organization Management**
-
-- **安全读取者**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>查看组织的隔离邮件
 

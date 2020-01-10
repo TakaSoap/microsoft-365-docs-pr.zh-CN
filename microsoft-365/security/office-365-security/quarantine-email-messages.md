@@ -3,7 +3,7 @@ title: 在 Office 365 中隔离电子邮件
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -16,23 +16,23 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: 您可以在 Office 365 中为传入电子邮件设置隔离，在其中已被筛选为垃圾邮件、批量、网络钓鱼邮件和恶意软件的传入电子邮件可以保留下来供以后查看。
-ms.openlocfilehash: 5590c9de9ff596c359910b5b1793004ae1913365
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f7669f69abb711d71362057f2019b0dd7e30443b
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075796"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021848"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>在 Office 365 中隔离电子邮件
 
-可以在 Office 365 中为传入电子邮件设置隔离，其中已筛选为垃圾邮件的邮件、批量邮件、网络钓鱼邮件、包含恶意软件的邮件以及与指定的邮件流规则匹配的邮件可以保留下来供以后查看。
+您可以在 Office 365 中为传入电子邮件设置隔离，其中已被筛选为垃圾邮件的邮件、批量邮件、网络钓鱼邮件、包含恶意软件的邮件以及与指定的邮件流规则匹配的邮件（也称为 trasport 规则）可供以后保留概述.
   
-默认情况下，筛选出的邮件将被发送到收件人的 "垃圾邮件" 文件夹，但包含默认情况下发送到隔离的恶意软件的邮件除外。 作为管理员，您可以设置内容筛选器策略，以将所有筛选出的邮件发送到隔离。 您可以对内容筛选邮件执行的不同操作取决于 "[配置垃圾邮件筛选器" 策略](configure-your-spam-filter-policies.md)。
+默认情况下，为网络钓鱼、恶意软件和邮件流规则筛选的邮件将被发送到隔离，而被筛选为垃圾邮件和批量邮件的邮件将被发送到收件人的 "垃圾邮件" 文件夹。 作为管理员，您可以设置垃圾邮件筛选器策略（也称为 "内容筛选器策略"），以便改为将垃圾邮件和批量邮件发送到隔离。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。
   
 用户和管理员都可以使用隔离邮件。 用户只能在隔离中处理自己的已筛选邮件。 管理员可以搜索和管理所有用户的隔离邮件。
 
 > [!NOTE]
-> 邮件流规则（也称为 "传输规则"）隔离的网络钓鱼邮件和邮件仅在管理员隔离区中可用。
+> 高可信度网络钓鱼邮件和通过邮件流规则操作隔离的邮件仅在管理员隔离区中可用。 用户可以访问自己的网络钓鱼邮件、垃圾邮件和批量邮件。 
   
 了解有关使用隔离邮件的详细信息：
   

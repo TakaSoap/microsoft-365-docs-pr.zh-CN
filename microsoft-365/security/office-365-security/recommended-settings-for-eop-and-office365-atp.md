@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: d353c4bee8381074b845e0774e06f411d823549f
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910113"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021828"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -59,33 +59,35 @@ ms.locfileid: "40910113"
 |零小时自动清除|打开|打开|对于垃圾邮件和网络钓鱼 ZAP|
 |MarkAsSpamBulkMail|打开|打开|此设置仅在 PowerShell 中可用|
 
-反垃圾邮件策略中有几个称为高级垃圾邮件筛选器的参数在此撰写时被弃用。 我们推荐的设置是为标准和严格级别**关闭它们：**
+在被称为高级垃圾邮件筛选器（ASF）的反垃圾邮件策略中，有几个其他参数处于弃用的过程中。 有关这些功能的折旧时间线的详细信息，将在本主题之外进行传递。
+ 
+ 我们建议您为标准和严格**级别关闭这些**设置：
 
-|安全功能名称| 备注 |
+|安全功能名称|备注|
 |---------|---------|
-|IncreaseScoreWithImageLinks| |
-|IncreaseScoreWithNumericIps| |
-|IncreaseScoreWithRedirectToOtherPort| |
-|IncreaseScoreWithBizOrInfoUrls| |
-|MarkAsSpamEmptyMessages| |
-|MarkAsSpamJavaScriptInHtml| |
-|MarkAsSpamFramesInHtml| |
-|MarkAsSpamObjectTagsInHtml| |
-|MarkAsSpamEmbedTagsInHtml| |
-|MarkAsSpamFormTagsInHtml| |
-|MarkAsSpamWebBugsInHtml| |
-|MarkAsSpamSensitiveWordList| |
-|MarkAsSpamFromAddressAuthFail| |
-|MarkAsSpamNdrBackscatter| |
-|MarkAsSpamSpfRecordHardFail| |
+|IncreaseScoreWithImageLinks||
+|IncreaseScoreWithNumericIps||
+|IncreaseScoreWithRedirectToOtherPort||
+|IncreaseScoreWithBizOrInfoUrls||
+|MarkAsSpamEmptyMessages||
+|MarkAsSpamJavaScriptInHtml||
+|MarkAsSpamFramesInHtml||
+|MarkAsSpamObjectTagsInHtml||
+|MarkAsSpamEmbedTagsInHtml||
+|MarkAsSpamFormTagsInHtml||
+|MarkAsSpamWebBugsInHtml||
+|MarkAsSpamSensitiveWordList||
+|MarkAsSpamFromAddressAuthFail||
+|MarkAsSpamNdrBackscatter||
+|MarkAsSpamSpfRecordHardFail||
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>EOP 出站垃圾邮件筛选器策略设置
 
 |安全功能名称|标准|全|评论|
 |---------|---------|---------|---------|
-|出站垃圾邮件策略收件人限制-外部每小时限制|400|500||
-|出站垃圾邮件策略收件人限制-内部每小时限制|800|1000||
-|出站垃圾邮件策略收件人限制-每日限制|800|1000||
+|出站垃圾邮件策略收件人限制-外部每小时限制|500|400||
+|出站垃圾邮件策略收件人限制-内部每小时限制|1000|800||
+|出站垃圾邮件策略收件人限制-每日限制|1000|800||
 |用户超出限制时的操作|限制用户发送邮件|限制用户发送邮件||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP 反恶意软件策略设置

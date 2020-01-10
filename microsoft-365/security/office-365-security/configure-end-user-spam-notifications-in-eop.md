@@ -13,19 +13,19 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 626d24b3a828ef90200c105bc2d4f5dd8572efe3
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: ea65081b1b312af3ee15335721ec042dc9d3b1da
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39909852"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021998"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中配置最终用户垃圾邮件通知
   
 > [!IMPORTANT]
 > 该主题适用于要保护本地邮箱的 Exchange Online Protection (EOP) 独立客户。 正在保护云托管邮箱的 Exchange Online 客户应阅读以下主题：[在 Exchange Online 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-exchange-online.md)。 
   
-您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。启用最终用户垃圾邮件通知邮件可以使您的最终用户自己管理自己的垃圾邮件隔离邮件。最终用户垃圾邮件通知无法与应用于用户、组的策略或有例外情况的策略一起使用。
+您可以为默认的公司范围的垃圾邮件筛选器策略或自定义垃圾邮件筛选器策略配置最终用户垃圾邮件通知。 启用最终用户垃圾邮件通知邮件，使用户可以管理自己的垃圾邮件隔离邮件。 
   
 最终用户垃圾邮件通知包含最终用户在您所配置的时间段（您可以指定一个介于 1 到 15 天之间的值）内收到的所有垃圾邮件隔离邮件的列表。您还可以配置通知邮件的编写语言。
   
@@ -71,7 +71,7 @@ ms.locfileid: "39909852"
   
 ![测试最终用户垃圾邮件通知的传输规则](../media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>有关详细信息
 
 [配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)
   
