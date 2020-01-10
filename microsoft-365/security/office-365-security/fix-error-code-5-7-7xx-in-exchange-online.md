@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件问题（阻止发送邮件的租户）。
-ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 4e82df78cfb83865142defb14cec0841ab29ba95
+ms.sourcegitcommit: 55cb11c2475f40d0f1c64cf45446bf383d7d5f86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995223"
+ms.locfileid: "41002972"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
 
@@ -49,11 +49,11 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 `550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
-## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>如何取消阻止租户以便再次发送
+## <a name="unblocking-tenant-in-order-to-send-again"></a>取消阻止租户以便再次发送
 
 如果您的租户被阻止发送电子邮件，则需要执行以下几项操作：
 
-1. 验证是否已注册所有电子邮件域。 有关详细信息，请参阅[将域添加到 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)和[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+1. 更改管理员帐户的密码。 如果阻止发送某个租户，则很可能是管理员帐户受到威胁。 更改密码是防止攻击者进行更多危害的第一步。
 
 2. 为 Office 365 组织中的所有管理员[启用 MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) 。
 
@@ -66,7 +66,7 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 6. 锁定你的本地电子邮件服务器并验证其是否未受到威胁。
 
    > [!TIP]
-   > 这里有许多因素，尤其是在使用第三方服务器时。 无论如何，您都需要验证所有传出电子邮件现在是否合法。
+   > 这里有许多因素，尤其是在使用第三方服务器时。 无论如何，您都需要确认传出邮件不包含垃圾邮件。
 
 7. 致电 Microsoft 支持部门，请求让租户解锁，以再次发送电子邮件。 错误代码很有帮助，但您需要证明您的环境已受到保护，并且无法发送垃圾邮件。 若要打开支持案例，请参阅[联系支持人员以获取商业产品-管理员帮助](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 

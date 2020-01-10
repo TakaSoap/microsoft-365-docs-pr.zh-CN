@@ -3,7 +3,7 @@ title: 将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网�
 ms.author: krowley
 author: cabailey
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可将标签应用于 Microsoft Teams、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: edaa13a21d5eb9069c6e4dce509c13456dec3d89
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4a8cf810ba29c2bb025b50e1529081a1a9ba6843
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802875"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966890"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
@@ -70,7 +70,9 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 1. 在 PowerShell 会话中，使用具有全局管理员权限的工作或学校帐户连接到 Azure Active Directory。 例如，运行：
     
-        Connect-AzureAD
+    ```powershell
+    Connect-AzureAD
+    ````
     
     有关完整说明，请参阅[连接到 Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad)。
 
@@ -97,7 +99,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 3. 在同一 PowerShell 会话中，通过使用拥有全局管理员权限的工作或学校帐户，立即连接到安全与合规中心。 有关说明，请参阅[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
-4. 运行以下命令：
+4. 运行以下命令以将标签同步到 Azure AD，以便它们可与 Office 365 组一起使用：
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -218,7 +220,36 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 ## <a name="change-site-and-group-settings-for-a-label"></a>更改标签的网站和组设置
 
-最佳做法是，在为多个团队、组或网站应用标签后，不要更改设置。 如果必须进行更改，则需要使用 Azure AD PowerShell 脚本手动应用更新。 此方法可确保所有现有团队、网站和组都强制实施新设置。
+每当您对标签的网站和组设置进行更改时，您必须运行以下 PowerShell 命令，以便团队、网站和组可以使用新设置。 最佳做法是，在为多个团队、组或网站应用标签后，不要更改标签的网站和组设置。
+
+1. 运行以下命令，连接到 Office 365 安全与合规中心 PowerShell，获取灵敏度标签及其 GUID 的列表。
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
+    Import-PSSession $Session
+    Get-Label |ft Name, Guid
+    ```
+
+2. 记下该标签或已更改标签的 GUID。
+
+3. 立即连接到 Exchange Online PowerShell 并运行 Get-UnifiedGroup cmdlet，指定标签 GUID，替代 "e48058ea-98e8-4940-8db0-ba1310fd955e" 的示例 GUID： 
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
+
+4. 对于每个组，请重新应用灵敏度标签，指定标签 GUID 来替代 "e48058ea-98e8-4940-8db0-ba1310fd955e" 的 GUID 示例：
+    
+    ```powershell
+    foreach ($g in $groups)
+    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
 
 ## <a name="support-for-the-new-sensitivity-labels"></a>支持新的敏感度标签
 
