@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ce06f582966f7209d4b539f9de41e8045b98519
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 0f54ee771f4358c5c99c3338366eb277013c15e3
+ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970920"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41012175"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全评分（预览）
 
@@ -148,6 +148,23 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 ## <a name="risk-awareness"></a>风险感知
 
 Microsoft 安全分数是基于系统配置、用户行为和其他安全相关度量的安全状态的数字摘要;它并不是对系统或数据受到破坏的可能性的绝对度量。 相反，它表示您在 Microsoft 环境中已采用安全控制的程度，这有助于抵消受到破坏的风险。 无在线服务完全不受安全破坏，并且安全分数不应以任何方式解释为保证安全。
+
+## <a name="whats-coming"></a>接下来是什么？
+
+### <a name="mfa-improvement-action-updates"></a>MFA 改进操作更新
+
+为了反映企业在应用使用其业务的策略时确保 upmost 安全性的需求，Microsoft 安全记分将删除围绕多重身份验证的三个改进操作，并添加两个。
+
+将删除的三个：
+- 为多因素身份验证注册所有用户
+- 要求对所有用户进行 MFA
+- 需要对 Azure AD 特权角色进行 MFA
+
+新的改进操作：
+- 确保所有用户都可以完成多重身份验证以实现安全访问
+- 需要对管理角色进行 MFA
+
+ 这些新的改进操作需要为你的用户或管理员在你的目录中注册多重身份验证（MFA），并建立符合你的组织需求的一组适当的策略。 主要目标具有灵活性，同时确保所有用户和管理员都可以通过多个因素或基于风险的身份验证提示进行身份验证。 这可以采用设置安全默认值的形式，让 Microsoft 决定何时对用户进行 MFA，或拥有多个应用范围决策的策略。
 
 ## <a name="whats-new"></a>新增功能 
 
