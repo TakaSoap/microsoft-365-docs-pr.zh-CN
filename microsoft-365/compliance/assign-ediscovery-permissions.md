@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: 434fe9f4876bb29df98de5575611069b0afc6860
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+ms.openlocfilehash: 548af12811287dce3461e5ce7d5f1ffa905eef73
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854037"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004837"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -128,7 +128,7 @@ ms.locfileid: "40854037"
 
 ### <a name="rms-decrypt"></a>RMS 解密
 
-此角色允许用户在导出搜索结果或在高级电子数据展示中准备搜索结果进行分析时对 RMS 加密的电子邮件进行解密。 有关导出过程中对搜索结果进行解密的详细信息，请参阅[导出内容搜索结果](export-search-results.md)。
+在高级电子数据展示中导出搜索结果或准备搜索结果以进行分析时，此角色允许用户解密受权限保护的电子邮件。 有关导出过程中对搜索结果进行解密的详细信息，请参阅[导出内容搜索结果](export-search-results.md)。
 
 ### <a name="search-and-purge"></a>搜索和清除
 

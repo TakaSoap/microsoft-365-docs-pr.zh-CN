@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 140ccc3984dc09a794d822eb3ff02f139d87fcd5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202343"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004809"
 ---
 # <a name="query-the-data-in-a-review-set"></a>查询审阅集中的数据
 
@@ -27,7 +27,7 @@ ms.locfileid: "39202343"
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>在审阅集中创建和运行查询
 
-若要在审阅集中对文档创建和运行查询，请单击 "审阅集" 中的 "**新建查询**"。 命名查询并定义条件后，单击 "**保存**" 以保存并运行查询。 若要运行以前保存的查询，请单击已保存的查询。 
+若要在审阅集中对文档创建和运行查询，请单击 "审阅集" 中的 "**新建查询**"。 命名查询并定义条件后，单击 "**保存**" 以保存并运行查询。 若要运行以前保存的查询，请单击已保存的查询。
 
 ![查看集查询](media/AeDReviewSetQueries.png)
 
