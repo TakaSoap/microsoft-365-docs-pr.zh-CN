@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823834"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004917"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -25,7 +25,7 @@ Microsoft 托管桌面服务与客户进行通信有几种方式。 为了简化
 Microsoft 托管桌面管理门户要求访问门户的用户拥有以下 Azure Active Directory （AD）角色之一：
 - 全局管理员
 - Intune 服务管理员
-- 记帐管理员
+- 全局读取者
 - 服务支持管理员
 
 全局管理员必须是在 Microsoft 托管桌面中注册您的组织的管理员。 在管理门户中，所有五个角色都具有相同的访问权限，以启动和查看任务。 有关在 Azure AD 中分配这些角色的详细信息，请参阅[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
