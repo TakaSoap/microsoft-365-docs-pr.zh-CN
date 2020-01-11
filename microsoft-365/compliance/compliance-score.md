@@ -12,22 +12,26 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: c13b4e345f5ab9bee7a0edd134aea73c23d84036
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d7dfb40434ad3f6da0c728015f53580034ecfdfd
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806655"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021888"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合规性分数（预览）
 
-Microsoft 合规性分数有助于简化管理合规性的方式，并通过用户友好的体验降低合规性风险。 合规性分数现在适用于[Microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的公共预览版。 阅读本文，了解符合性分数、它如何帮助您管理组织的合规性，以及如何开始。
+Microsoft 合规性分数有助于简化管理合规性的方式，并通过用户友好的体验降低合规性风险。 合规性分数现在适用于[Microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的公共预览版。
+
+**本文内容：** 阅读本文，了解符合性分数以及如何对组织进行设置。
+
+**了解更新：** 转到[合规性分数发行说明](compliance-score-release-notes.md)，以查看符合性分数的预览版本的新增和已知问题。
 
 ## <a name="what-is-compliance-score"></a>合规性分数是什么
 
 Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功能，可帮助您了解组织的合规性状况。 它将计算基于风险的分数，以衡量您在帮助降低数据保护和法规标准方面的风险的完成操作的进度。
 
-您可以使用合规性分数作为一种工具来跟踪所有风险评估。 它提供了工作流功能，可帮助您通过通用工具高效地执行和完成风险评估。
+您可以使用合规性分数作为一种工具来跟踪所有风险评估。 它提供了工作流功能，可帮助您通过通用工具高效完成风险评估。
 
 如果您当前使用[合规性管理器](compliance-manager-overview.md)，您会注意到，合规性分数现在是一个独立的功能，具有更简单、更易于使用用户的设计，可帮助您更轻松地管理合规性。 
 
@@ -58,7 +62,7 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 ## <a name="understanding-your-score"></a>了解你的成绩
 
-合规性分数为您提供了基于 Microsoft 365 数据保护基准的现成分数，这是一组包含常见行业法规和标准的控件。 虽然这一分数是评估合规性状况的一个很好的起点，但一旦添加了与贵组织更相关的评估，合规性分数就会变得更加强大。
+合规性分数为你提供了基于 Microsoft 365 数据保护基准的初始分数。 此基准是一组包含常见行业法规和标准的控件。 虽然这一分数是评估合规性状况的一个很好的起点，但一旦添加了与贵组织更相关的评估，合规性分数就会变得更加强大。
 
 例如，如果您的组织属于金融服务行业，您可能需要添加 FFIEC 评估。 如果您的组织属于医疗保健行业，则可以添加 HIPAA/高科技评估。 了解如何[在合规性管理器中添加评估](working-with-compliance-manager.md#assessments)。
 
@@ -77,8 +81,8 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 合规性分数跟踪两种类型的控件：
 
-1. **Microsoft 托管控件**：这些是 microsoft 云服务的控件，microsoft 负责实现
-2. **客户管理的控件**：这些控件由您的组织管理，您负责实施
+1. **Microsoft 托管控件**： microsoft 云服务的控件，microsoft 负责实现
+2. **客户管理的控件**：由您的组织管理的、负责实施的控件
  
 ### <a name="assessments"></a>评估
 
@@ -126,12 +130,12 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 ### <a name="groups"></a>组
 
-组允许您按符合您的逻辑方式组织评估。 例如，您可以选择按年、合规性标准、服务、组织内的团队或其他方式对评估进行分组。 
+组允许您按符合您的逻辑方式组织评估。 例如，您可以选择按年、合规性标准、服务、组织内的团队或其他方式对评估进行分组。
 
 当同一个组中的两个不同评估共享客户管理的操作时，一个评估中的操作的实施详细信息、测试和状态自动同步到组中任何其他评估中的相同操作。 这将统一分配给整个组的已分配改进操作，并减少重复工作。
 
-了解如何[在合规性管理器中创建组](working-with-compliance-manager.md#groups)。
+了解如何[在合规性管理器中创建组](working-with-compliance-manager.md#groups)。 创建组后，您可以[筛选合规性分数仪表板](compliance-score-setup.md#filtering-your-dashboard-view)，以查看一个或多个组的分数。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step-begin-setup"></a>下一步：开始安装
 
-登录、设置权限，并了解[合规性分数设置](compliance-score-setup.md)中的合规性分数仪表板。
+登录、设置权限，并在[合规性分数设置](compliance-score-setup.md)中了解合规性分数仪表板。

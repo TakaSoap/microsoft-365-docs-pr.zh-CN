@@ -13,19 +13,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在，你可以将 DLP 策略应用于 Microsoft 团队聊天和频道。 阅读本文，了解详细了解它的工作原理。
-ms.openlocfilehash: 9c8c122a84a739a0cc2942f63ff319121510415b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a13d44ab3cff777ee8ed4610d746c3649bf558
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074130"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022357"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft 团队
 
 > [!NOTE]
-> 最近将数据丢失防护功能添加到 Microsoft 团队聊天和针对 Office 365 高级合规性的用户的频道消息（可作为独立选项提供，包括在 Office 365 E5 和 Microsoft 365 E5 合规性中）。 Office 365 和 Microsoft 365 E3 包括适用于 SharePoint Online、OneDrive 和 Exchange Online 的 DLP 保护。 这还包括通过团队共享的文件，因为团队使用 SharePoint Online 和 OneDrive 共享文件。
+> 对于具有 Office 365 高级合规版许可证的用户，最近为 Microsoft Teams 聊天和频道消息添加了数据丢失防护功能。它是一种独立选项，包含在 Office 365 E5 和 Microsoft 365 E5 合规版中。 Office 365 和 Microsoft 365 E3 包括适用于 SharePoint Online、OneDrive 和 Exchange Online 的 DLP 保护。 这还包括通过团队共享的文件，因为团队使用 SharePoint Online 和 OneDrive 共享文件。
 对团队聊天版中的 DLP 保护的支持需要 E5。
-若要了解有关许可要求的详细信息，请参阅[Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
+要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>适用于 Microsoft 团队的 DLP 概述
 
@@ -90,7 +90,7 @@ ms.locfileid: "37074130"
 
 5. 保留所有帐户的默认设置，或指定要包含或排除的帐户。
 
-6. 单击“保存”****。
+6. 单击“**保存**”。
 
 允许大约一小时的更改通过数据中心工作并同步到用户帐户。
 <!-- again, why user accounts? -->
@@ -109,6 +109,7 @@ ms.locfileid: "37074130"
 5. 在 "**选择位置**" 选项卡上，保留 "所有位置" 的默认设置，或选择 "**让我选择特定位置**"，然后选择 "**下一步**"。<br/>如果您选择了特定位置，请为您的 DLP 策略选择它们，然后选择 "**下一步**"。<br/>![DLP 策略位置](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > 如果要确保包含敏感信息的文档不会被不当共享，请确保**SharePoint 网站**和**OneDrive 帐户**以及**团队聊天和频道消息**都已打开。
+    > Microsoft 团队中的频道强烈依赖 Exchange Online 功能。 请确保还为应用于频道内容的策略启用了**Exchange 电子邮件**位置。  
 <br/>
 
 6. 在 "**策略设置**" 选项卡上的 "**自定义要保护的内容类型**" 下，保留默认的简单设置，或选择 "**使用高级设置**"，然后选择 "**下一步**"。 如果选择 "高级设置"，则可以为策略创建或编辑规则。 （若要获取有关此方面的帮助，请参阅[简单设置与高级设置](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。）

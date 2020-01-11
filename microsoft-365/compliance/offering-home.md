@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7aabeb51ef2a72452320b059ab51f72ca0d9f49f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 93018d855565a441543e2f2d65109bf85526bc4f
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804055"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022407"
 ---
 # <a name="microsoft-compliance-offerings"></a>Microsoft 合规性产品/服务
 
@@ -168,8 +168,9 @@ Microsoft 提供了一套全面的合规性产品，帮助您的组织遵守管�
                         <p><a href="offering-eu-model-clauses.md">欧盟模式条款</a></p>
                         <p><a href="offering-eu-us-privacy-shield.md">EU-美国隐私防护板</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030（中国）</a></p>
-                        <p><a href="offering-gdpr-eu.md">GDPR（欧盟）</a></p>
+                        <p><a href="gdpr.md">GDPR（欧盟）</a></p>
                         <p><a href="offering-g-cloud-uk.md">G-Cloud（英国）</a></p>
+                        <p><a href="https://www.idw.de/the-idw/about-the-idw">IDW PS 951（德国）</a></p>
                         <p><a href="offering-ISMS-korea.md">ISMS（韩国）</a></p>
                         <p><a href="offering-it-grundschutz-workbook-germany.md">IT Grundschutz Workbook（德国）</a></p>
                         <p><a href="offering-lopd-spain.md">LOPD（西班牙）</a></p>

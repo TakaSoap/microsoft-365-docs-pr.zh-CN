@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fe075c004c397baa2ed568a56c9d675cdd788857
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866354"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021968"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -101,7 +101,7 @@ Office 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](wha
 
 ![不通过校验和的澳大利亚税收文件编号](media/DLP-create-test-tune-email-test1.png)
 
-相比之下，带有 "税收 file number" 一词的电子邮件和传递校验和的有效 TFN 将触发该策略。 对于此处的记录，使用的 TFN 是从生成有效但不是正版的 TFNs 的网站获取的。 有类似的网站生成[有效但假冒信用卡号](https://www.fakecreditcardgenerator.net/)。 此类网站非常有用，因为测试 DLP 策略时最常见的错误之一是使用无效的虚设号码，而不会传递校验和（因此不会触发策略）。
+相比之下，带有 "税收 file number" 一词的电子邮件和传递校验和的有效 TFN 将触发该策略。 对于此处的记录，使用的 TFN 是从生成有效但不是正版的 TFNs 的网站获取的。 此类网站非常有用，因为测试 DLP 策略时最常见的错误之一是使用无效的虚设号码，而不会传递校验和（因此不会触发策略）。
 
 ![传递校验和的澳大利亚税收文件编号](media/DLP-create-test-tune-email-test2.png)
 
@@ -177,7 +177,6 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 此驱动程序的许可证是深入研究的一个很有用的示例。 出现这种误报的原因是，在300个字符与关键字 "悉尼新南威尔士" （不区分大小写）的任何9位数的字符串（甚至是10个数字字符串的一部分）中将触发 "澳大利亚 Driver License" 类型。 因此，它是由电话号码和电子邮件签名触发的，仅因为用户在悉尼中的情况下。
 
-有趣的是，如果 "悉尼，新南威尔士" 有一个逗号，则不会触发 DLP 策略。 我不知道为什么在这里使用逗号，也不知道澳大利亚的其他城市和状态不包括在澳大利亚驾照的许可证信息类型的关键字中，但你可以这样做。 那么，我们可以对它做些什么？ 有几个选项。
 
 一种方法是从策略中删除澳大利亚 driver 的许可证信息类型。 由于它是 DLP 策略模板的一部分，因此不会强制使用该模板。 如果只对税文件号而不是驱动程序的许可证感兴趣，则可以将其删除。 例如，您可以从策略中的 "低容量" 规则中删除它，但将其保留在高容量规则中，以便仍检测到多个驱动程序许可证的列表。
 
@@ -191,7 +190,7 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 最后，如果您想要更多地获取更多的信息，可以自定义任何敏感信息类型-例如，可以从[澳大利亚驾照](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)的关键字列表中删除 "悉尼新南威尔士"，以消除上述误报。 若要了解如何使用 XML 和 PowerShell 执行此操作，请参阅本主题关于[自定义内置的敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
 
-## <a name="turn-off-a-dlp-policy"></a>禁用 DLP 策略
+## <a name="turn-on-a-dlp-policy"></a>启用 DLP 策略
 
 当您感到您的 DLP 策略准确而有效地检测敏感信息类型，并且最终用户准备好处理这些策略时，您可以启用该策略。
 
@@ -211,6 +210,6 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![内容受限制的策略提示](media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>总结
+## <a name="summary"></a>摘要
 
 数据丢失防护策略对于所有类型的组织都很有用。 由于您对策略提示、最终用户覆盖和事件报告等的控制，测试某些 DLP 策略是一个低风险的实践。 您可以安静地测试一些 DLP 策略，以查看组织中已发生的冲突类型，然后使用较低的误报率手工创建策略，向用户介绍允许和不允许的情况，然后将 DLP 策略回滚到组织.

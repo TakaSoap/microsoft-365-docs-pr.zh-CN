@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何登录、设置权限以及了解 Microsoft 合规性分数的仪表板，这有助于简化和自动化风险评估。
-ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831175"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021908"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合规性分数（预览）设置
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您的组织的 Microsoft 365 全局管理员可能是第一个访问合规性分数的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性得分时所述。
 
@@ -72,7 +72,7 @@ ms.locfileid: "39831175"
 
 ### <a name="overall-compliance-score"></a>总体合规性分数
 
-你的合规性分数，在顶部突出重点，显示了根据完成提高操作（解决关键数据保护标准和法规）实现的积分的百分比。 
+你的合规性分数，在顶部突出重点，显示了根据完成提高操作（解决关键数据保护标准和法规）实现的积分的百分比。
 
 首次遇到合规性得分时，最初的分数基于内置的 Microsoft 365 数据保护基准，这是一组包含常见行业法规和标准的控件。 由于合规性分数会扫描您的现有 Microsoft 365 解决方案的系统，因此它会根据您的组织当前启用的隐私和安全设置对合规性状态进行初始评估。
 
@@ -95,14 +95,14 @@ ms.locfileid: "39831175"
 
 ### <a name="filtering-your-dashboard-view"></a>筛选你的仪表板视图
 
-您可以筛选仪表板视图，以仅查看与特定法规和标准、解决方案、操作类型、组或数据保护类别相关的项目。 以这种方式筛选视图还将筛选仪表板上的分数，并根据筛选条件显示已实现的总积分数。
+您可以筛选仪表板视图，以仅查看与特定管理法规和标准、解决方案、操作类型、[设置的评估组](working-with-compliance-manager.md#groups)或数据保护类别相关的项目。 以这种方式筛选视图还将筛选仪表板上的分数，并根据筛选条件显示已实现的总积分数。
 
 应用筛选器：
 
 1. 选择仪表板右上侧的 "**筛选器**"。
 2. 从飞出的 "**筛选**器" 窗格中选择筛选条件，然后选择 "**应用**"。
 
-你将看到实时调整了你的分数，你将只会看到符合你的筛选器条件的改进操作、解决方案和分数细分信息。 如果你注销合规性分数，则在重新登录时将保留你的筛选视图。
+应用筛选器后，您将看到实时调整的分数。 合规性分数百分比和细目信息以及改进操作和解决方案现在仅适用于您的筛选器条件所覆盖的数据。 如果你注销合规性分数，则在重新登录时将保留你的筛选视图。
 
 若要删除筛选器：
 

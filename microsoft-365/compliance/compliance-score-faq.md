@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 查找有关 Microsoft 合规性分数的常见问题的解答，这有助于组织简化和自动化风险评估。
-ms.openlocfilehash: bc0ddfe71a3de2bbfa2c9c9a0fdc507a540daf90
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "39625383"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021978"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft 合规性分数（预览）常见问题解答
 
@@ -41,7 +41,7 @@ Microsoft 合规性分数是[microsoft 365 合规性中心](microsoft-365-compli
 
 合规性分数对组织中扮演了监视合规性的角色并执行活动以帮助符合法规标准的所有人都很有用。 通过遵守合规性分数，您无需熟悉管理法规和标准，以帮助改进组织的数据保护。 合规性分数是所有用户的最佳起始位置。 在这里，您可以看到您的合规性分数，了解哪些推荐的操作可帮助最大限度地减少风险，在许多情况下，请立即启动以执行这些操作的解决方案。
 
-目前，合规性管理器是用户可以在其中管理评估和创建自定义模板以建立评估的位置。 了解有关仅在公共预览版中[由合规性管理器支持的操作的](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship)详细信息。
+目前，合规性管理器是用户可以在其中管理评估和创建自定义模板以建立评估的位置。 了解有关仅在公共预览版中[由合规性管理器支持的操作的](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)详细信息。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果得分较高，这是否意味着我完全合规？
 

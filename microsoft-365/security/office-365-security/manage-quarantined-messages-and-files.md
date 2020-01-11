@@ -3,7 +3,7 @@ title: 以 Office 365 中的管理员身份管理隔离的邮件和文件
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 09/05/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '作为管理员，您可以在 Office 365 中查看、释放和报告误报的已隔离邮件。 您可以设置策略，以便 Office 365 筛选邮件并将其发送到隔离区，原因如下：因为它们被标识为垃圾邮件、批量、网络钓鱼和恶意软件，或者它们与邮件流规则匹配。 '
-ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021858"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023326"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 中的管理员身份管理隔离的邮件和文件
 
@@ -33,9 +33,11 @@ ms.locfileid: "41021858"
 
 ## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>访问管理员隔离需要哪些权限？
 
-管理隔离的权限由 **Security & 合规性中心*角色组中的成员身份控制。 有关安全 & 合规中心中的角色组的详细信息，请参阅[Office 365 安全 & 合规中心中的权限](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
+管理隔离的权限由*安全 & 合规中心*角色组（具体来说是 "**隔离**角色"）中的成员身份控制。 有关安全 & 合规中心中的角色和角色组的详细信息，请参阅[Office 365 安全 & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-授予管理隔离权限的安全 & 合规性角色组包括：
+默认情况下，授予管理隔离权限的安全 & 合规性角色组包括：
+
+- **组织管理**（全局管理员）
 
 - **隔离管理员**
 

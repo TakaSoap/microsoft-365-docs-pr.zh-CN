@@ -12,26 +12,36 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数的发行说明和已知问题（预览版）（M365 合规性中心中的一项功能，可帮助简化和自动化风险评估）。
-ms.openlocfilehash: d46e8a621b6f4daa1275a78b5cc1e6917e0a997c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793636"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021928"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft 合规性分数（预览）发行说明
 
-Microsoft 合规性分数的公开预览为你提供了对即将推出的功能和更新的早期访问权限。
+Microsoft 合规性分数的公开预览为你提供了对即将推出的功能和更新的早期访问权限。 请经常查看此页面，了解新增功能。
 
 合规性分数是[Microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项新功能，可计算基于风险的分数，从而衡量完成建议的操作以帮助降低合规性风险的进度。
 
-## <a name="compliance-score-and-compliance-manager-relationship"></a>合规性分数和合规性管理器关系
+## <a name="whats-new"></a>最近更新
+
+### <a name="new-templates-for-assessments"></a>新的评估模板
+
+将新的预先配置的模板发布到生产中，以便在符合性分数（预览）变得可用时发布这些模板。 [在此处查看模板的完整列表](compliance-score.md#templates)。 最近添加的模板包括：
+
+- ISO 27701:2019
+- IRAP/澳大利亚政府版 ISM （预览）
+
+
+### <a name="compliance-score-relationship-to-compliance-manager"></a>与合规性管理器的合规性分数关系
 
 现在，在合规性管理器中处理的许多合规性函数都可以在合规性分数中完成。 但是，某些功能仍仅驻留在合规性管理器中，并且在公共预览版期间，合规性管理器中的一些以前的功能会发生更改。 
 
 在公共预览版过程中使用合规性分数和合规性管理器时，请牢记以下几点：
 
-- **管理评估**：用户可以按合规性分数查看评估及其状态详细信息。 但是，用户只能在合规性管理器（[查看说明](working-with-compliance-manager.md#assessments)）和任务中执行评估管理任务，并将其限制为以下各项：
+- **管理评估**：用户可以按合规性分数查看评估及其状态详细信息。 但是，用户只能在合规性管理器中执行评估管理任务（[查看说明](working-with-compliance-manager.md#assessments)），并且任务限制为以下各项：
     - 上载新的评估，但不修改现有评估。 如果需要修改现有评估，将需要上传新模板。
     - 导出评估
     - 存档评估
@@ -40,7 +50,7 @@ Microsoft 合规性分数的公开预览为你提供了对即将推出的功能�
    - 用户必须转到合规性管理器以创建新模板并导出现有模板。 
    - 现有模板不能自定义。 阅读有关[管理合规性管理器中的模板](working-with-compliance-manager.md#templates)的说明。
    - 创建模板时，您必须包括**产品**和**证书**的维度，以确保您的模板在合规性分数中显示。
- - **设置权限**：合规性分数以前未授予合规性管理器中的权限的用户必须在 Microsoft 365 合规性中心中设置其权限。 以前在合规性管理器中设置了其角色的用户可以在遵守合规性分数时使用相同级别的访问权限。
+ - **设置权限**：合规性分数以前未授予合规性管理器中的权限的用户必须在 Microsoft 365 合规性中心中设置其权限（[了解详细信息](compliance-score-setup.md#set-user-permissions-and-assign-roles)）。 以前在合规性管理器中设置了其角色的用户可以在遵守合规性分数时使用相同级别的访问权限。
 - **数据传输**：具有驻留在合规性管理器中的数据的组织将看到符合性分数的数据，反之亦然。
 - **根据合规性分数登录合规性管理器**：如果用户已登录合规性分数并选择链接以转到合规性管理器，则用户将不必再次登录。 单击该链接后，将在浏览器中打开一个新的选项卡，其中带有一个对话框。 在标题为 "已成为 Microsoft 云服务客户" 的顶部部分？ 登录您的帐户，选择 "**登录**" 按钮以自动登录合规性管理器。
 
