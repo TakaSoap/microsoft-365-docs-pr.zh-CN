@@ -1,9 +1,9 @@
 ---
-title: 查看 Office 365 高级威胁防护报告
+title: 查看 Office 365 的报告高级威胁防护、恶意软件报告、网络钓鱼报告、受损帐户、URL 保护状态、威胁报告、报告威胁
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 01/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: 了解如何在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
-ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+description: 在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
+ms.openlocfilehash: a03fc9e14017255faf8c1c7f58cf2baa65823962
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866404"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022373"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -41,7 +41,27 @@ ATP 报告包括以下内容：
 
 **威胁防护状态**报告是一个视图，它将有关检测到的恶意内容和恶意电子邮件的信息，以及[Exchange Online Protection](exchange-online-protection-overview.md) （EOP）和 Office 365 ATP （）和[Office ATP](office-365-atp.md)结合在一起。 此报告可用于查看一段时间内的检测（最多90天），并使安全管理员能够确定趋势或确定策略是否需要调整。 
 
-威胁防护状态报告提供了包含恶意内容的独特电子邮件的聚合计数，如反恶意软件引擎阻止的文件或网站地址（Url）、[零小时自动清除（ZAP）](zero-hour-auto-purge.md)和 atp 功能（如[atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[atp 反网络钓鱼功能](atp-anti-phishing.md)）。 
+该报告提供了包含恶意内容的独特电子邮件的聚合计数，如反恶意软件引擎阻止的文件或网站地址（Url）、[零小时自动清除（ZAP）](zero-hour-auto-purge.md)和 atp 功能（如[atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和 atp[反网络钓鱼功能](atp-anti-phishing.md)）。 
+
+信息的筛选器和细目允许对此报告中的信息进行更精细的分类。 具体地说，有一个 "分解方式" 菜单，其中包含*电子邮件 > 网络钓鱼*和*电子邮件 > 恶意软件视图*。 它会将数据分解为：
+
+| |  |
+|---------|---------|
+|按检测类型    | 哪些策略有助于捕捉这些威胁？         |
+|按检测技术     | 哪种基本的 Microsoft 技术会发现威胁？        |
+|按传递状态     | 作为威胁检测到的电子邮件发生了什么？         |
+| | |
+
+> [!TIP]
+> 电子邮件 > 网络钓鱼 |恶意软件视图对所示的检测技术有细微的细分，其中类别如*ATP 生成的文件信誉*、*文件沙箱*、 *URL 沙箱*、*反欺骗： DMARC 故障*，例如，有助于准确准确地查明组织要拦截威胁的功能 led。
+
+![显示 "分解依据" 的威胁 Protection 状态报告下拉列表。](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+
+这些视图为您提供了通过按钮单击（在电子邮件 > 网络钓鱼、电子邮件 > 恶意软件和内容 > 恶意软件视图）中导出的选项。 可以在 Excel 中打开导出到您的计算机上的聚合数据。
+
+![此图显示了导出为恶意软件视图菜单中的一个选项、"创建计划" 和 "请求报告"。](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+概述和电子邮件视图将在处理小时数（而不是24小时）内显示信息（请求重新）。 此处的提高速度是一个清晰的信号）！
 
 > [!NOTE]
 > 拥有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](exchange-online-protection-eop.md) （EOP）的客户可以使用威胁防护状态报告;但是，在 ATP 客户的威胁防护状态报告中显示的信息可能包含不同的 EOP 客户可能看到的数据。 例如，ATP 客户的威胁防护状态报告将包含有关[在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](atp-for-spo-odb-and-teams.md)的信息。 此类信息特定于 ATP，因此具有 EOP 但不是 ATP 的客户将不会在其威胁防护状态报告中看到这些详细信息。
@@ -61,7 +81,28 @@ ATP 报告包括以下内容：
 您还可以使用 "**查看数据依据**" 菜单来更改报表中显示的信息。 
   
 ![查看 ATP 威胁保护状态报告的选项](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-  
+
+## <a name="url-protection-status-report"></a>URL 保护状态报告
+
+此报告基于每次单击收集的数据和检测到的威胁（而大多数其他电子邮件威胁相关报告针对每个邮件数据）。 此报告旨在显示来自电子邮件和文档中的超链接的威胁，每次单击。 有两种视图：
+
+|  |  |
+|---------|---------|
+|URL 单击保护操作   | 查看阻止的 Url 的数量、被阻止但被用户通过单击覆盖的 Url，通过用户的单击覆盖和允许。        |
+|按应用程序单击的 URL     | 查看从中单击了 URL 的应用程序。        |
+|  |  |
+
+在详细信息表中，您将能够看到有关单击时间和用户信息的详细信息。 最后，请记住 URL 保护状态报告显示来自 ATP 安全链接功能的保护，因此只有启用了 ATP 安全链接的客户才会看到此报告上反映的数据。
+
+> [!NOTE]
+> 这是一个 "*保护趋势" 报告*，即数据表示较大数据集中的趋势。 此处报告不提供实时报告。 对于实时 URL，请单击 "数据"，请继续使用 URL 跟踪。
+
+## <a name="compromised-users-report"></a>已泄露用户报告
+
+此报告可供任何具有 Exchange Online Protection 的用户使用，并显示标记为可疑用户或受限制用户的用户帐户数。在帐户中，数据特别有用。输入指示用户帐户可能有问题的任何状态，甚至威胁. 通过频繁使用，已损坏的用户报告可以发现处于可疑或受限制状态的帐户中的峰值、甚至是趋势，从而提供证据可能存在安全和租户的 wellness 问题。
+
+![已泄露的用户会在 Office 365 中进行报告。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="atp-file-types-report"></a>ATP 文件类型报告
 
 **Atp 文件类型**报告显示通过[ATP 安全附件](atp-safe-attachments.md)检测为恶意的文件类型。
@@ -106,7 +147,7 @@ ATP 报告包括以下内容：
 - 对于安全&amp;合规中心，您必须具有以下分配的角色之一：
     - 组织管理
     - 安全管理员（可在 Azure Active Directory 管理中心中分配（[https://aad.portal.azure.com](https://aad.portal.azure.com)））
-    - 安全读者
+    - 安全读取者
 
 - 对于 Exchange Online，必须在 Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)）或 PowerShell cmdlet 中分配以下角色之一（请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）：
     - 组织管理
