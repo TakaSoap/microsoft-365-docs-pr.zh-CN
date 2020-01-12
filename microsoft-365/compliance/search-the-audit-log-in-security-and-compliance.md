@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634039"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022018"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -65,7 +65,7 @@ ms.locfileid: "39634039"
 
 在开始搜索 Office 365 审核日志之前，请务必阅读以下各项。
 
-- 你（或其他管理员）必须首先开启审核日志记录，然后才能开始搜索 Office 365 审核日志。 若要将其打开，请单击安全与合规中心中的“**审核日志搜索**”页面上的“**开始录制用户和管理活动**”。 （如果未看到此链接，则已为你的组织开启审核。）打开后，将显示一条消息，称正在准备审核日志，你可以在准备完成后数小时内运行搜索。 只需执行一次此操作。
+- 你（或其他管理员）必须首先开启审核日志记录，然后才能开始搜索 Office 365 审核日志。 若要将其打开，请单击安全与合规中心中**审核日志搜索**页面上的**打开审核**。 （如果未看到此链接，则已为你的组织开启审核。）打开后，将显示一条消息，称正在准备审核日志，你可以在准备完成后数小时内运行搜索。 只需执行一次此操作。 有关详细信息，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
   > [!NOTE]
   > 默认正在启用审核。 在这之前，可以按上文所述启用审核。
@@ -335,6 +335,7 @@ ms.locfileid: "39634039"
 |(无)|FileModifiedExtended|这与“已修改文件”(FileModified) 活动相关。 如果一个用户长时间（至 3 小时）持续修改某一文件，则会记录下 FileModifiedExtended 事件。 <br/><br/> 记录 FileModifiedExtended 事件是为了减少持续修改文件时所记录的 FileModified 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileModified 记录的干扰，从而专注于初始（和更重要的）FileModified 事件。|
 |已移动文件|FileMoved|用户将文档从网站上的当前位置移动到新位置。|
 |(无)|FilePreviewed|用户在 SharePoint 或 OneDrive for Business 网站上预览文件。 这些事件通常发生在基于单个活动的高容量情形中，例如查看图库。|
+|已执行的搜索查询|SearchQueryPerformed|用户或系统帐户在 SharePoint 或 OneDrive for Business 中执行搜索。 部分服务帐户执行搜索查询的常见情形包括将电子数据展示挂起或保留策略应用到网站或 OneDrive 帐户，以及将保留或敏感度标签自动应用到网站内容。 在许多情况下，在审核记录的“用户”字段中登录的服务帐户名称为 **app@sharepoint**。 </br></br> **提示：** 已执行搜索查询活动的审核记录中的 ApplicationDisplayName 和 EventData 字段可以帮助你识别触发此事件的应用场景或服务。|
 |已回收文件的次要版本|FileVersionsAllMinorsRecycled|用户从文件版本历史记录中删除所有次要版本。 已删除的版本移动到网站的回收站。|
 |已回收所有版本的文件|FileVersionsAllRecycled|用户从文件版本历史记录中删除所有版本。 已删除的版本移动到网站的回收站。|
 |已回收文件版本|FileVersionRecycled|用户从文件版本历史记录中删除某个版本。 已删除的版本移动到网站的回收站。|
@@ -805,7 +806,7 @@ ms.locfileid: "39634039"
 |已创建响应|CreateResponse|类似于接收新响应。  用户提交了对表单的响应。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
 |已更新响应|UpdateResponse|表单所有者更新了测验的批注或分数。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
 |已删除所有响应|DeleteAllResponses|表单所有者删除所有响应数据。|
-|已删除响应|DeleteResponse|表单所有者删除一个响应。 <br><br>属性 ResponseId:string 表示所删除的响应。|
+|已删除响应|DeleteResponse|表单所有者删除一个响应。 <br><br>属性 ResponseId:string 表示正在删除的响应。|
 |已查看多个响应|ViewResponses|表单所有者查看聚合的响应列表。 <br><br>属性 ViewType:string 表示表单所有者是在查看详细还是聚合数据|
 |已查看单个响应|ViewResponse|表单所有者查看特定响应。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
 |已创建摘要链接|GetSummaryLink|表单所有者创建摘要结果链接以共享结果。|
@@ -845,7 +846,7 @@ ms.locfileid: "39634039"
 
    请记住，Exchange 管理员审核日志和 Office 365 审核日志中记录了相同的 Exchange 管理员活动。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **从哪里可以了解 Office 365 中的审核服务提供的功能？**
 

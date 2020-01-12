@@ -3,7 +3,7 @@ title: 敏感度标签概述
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 01/06/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,20 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于对已标记内容应用包括加密或水印在内的保护设置。
-ms.openlocfilehash: 91481bb1c1267b40ccd2596c06faf5005372ac39
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989497"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023346"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
-组织内人员需要与组织内外的其他人员协作，才能完成工作。也就是说，内容不再一直停留在防火墙后面 — 而是可跨设备、应用和服务到处漫游。你希望内容的漫游方式不仅安全、受保护，还符合组织的业务和合规性策略。
+组织内人员需要与组织内外的其他人员协作，才能完成工作。也就是说，内容不再一直停留在防火墙后面，而是可跨设备、应用和服务到处漫游。你希望内容的漫游方式不仅安全、受保护，还符合组织的业务和合规性策略。
 
 使用敏感度标签，可以对敏感内容进行分类和保护，而组织内人员的工作效率和协作能力丝毫不受影响。
 
-敏感度标签示例：
+> [!NOTE]
+> 敏感度标签不适用于美国政府社区 (GCC) 组织。
+
+显示敏感度标签的示例：
 
 ![Excel 功能区和状态栏上的敏感度标签](media/Sensitivity-label-in-Excel.png)
 
@@ -102,9 +105,9 @@ ms.locfileid: "40989497"
 
 在管理中心创建敏感度标签时，这些标签会显示在“**标签**”页的“**敏感度**”选项卡的列表中。 此列表中的标签顺序至关重要，因为它反映了标签的优先级。 限制性最高的敏感度标签（如“高度机密”）需显示在此列表的**底部**，限制性最低的敏感度标签（如“公开”）需显示在**顶部**。
 
-一个文档或电子邮件仅可应用一个敏感度标签。 如果要求用户提供将标签更改为较低分类的理由，理由可以是此列表的排序，因为它会标识较低分类。
+一个文档或电子邮件仅可应用一个敏感度标签。 如果设置的选项需要用户提供将标签更改为较低分类的理由，理由可以是此列表的排序，因为它会标识较低分类。 但是，此选项不适用于子标签。
 
-标签优先级也适用于子标签。
+子标签的排序与[自动标签](apply-sensitivity-label-automatically.md)结合使用。 将标签配置为自动应用或推荐时，多个匹配项可能会导致出现多个标签。 要确定要应用或推荐的标签，请使用标签排序：选择最不敏感的标签，如果适用，选择最后一个子标签。
 
 ![子标签创建选项](media/Sensitivity-label-sublabel-options.png)
 
@@ -112,11 +115,11 @@ ms.locfileid: "40989497"
 
 使用子标签，你可以将一个或多个标签分组到用户在 Office 应用程序中看到的父标签下方。 例如，在“机密”下，你的组织可能会为该分类的特定类型使用多个不同的标签。 在此示例中，父标签“机密”仅仅是没有保护设置的文本标签，并且因为它具有子标签，所以它不能应用于内容。 相反，用户必须选择“机密”才能查看子标签，然后他们可以选择要应用于内容的子标签。
 
-子标签只是向逻辑组中的用户显示标签的一种方式。 子标签不会从其父标签继承任何设置。 为用户发布子标签后，该用户可以将该子标签应用于内容，但不能仅应用父标签。
+子标签只是向逻辑组中的用户显示标签的一种方式。 子标签不会从其父标签继承任何设置。 为用户发布子标签时，该用户可以将该子标签应用于内容，但不能仅应用父标签。
 
-请勿选择父标签作为默认标签或将父标签配置为自动应用或推荐使用，因为父标签不会应用于使用 Azure 信息保护统一标签客户端的 Office 应用中的内容。
+不要选择父标签作为默认标签或将父标签配置为自动应用或推荐使用，因为父标签不会应用于使用 Azure 信息保护统一标签客户端的 Office 应用程序中的内容。
 
-面向用户的子标签显示方式示例：
+子标签如何向用户显示的示例：
 
 ![功能区上的已分组子标签](media/Sensitivity-label-grouped-labels.png)
 
@@ -177,9 +180,9 @@ ms.locfileid: "40989497"
 
 敏感度标签可快速上手：
 
-1. **定义标签。** 首先，需要建立分类法，以定义具有不同敏感度级别的内容。 使用对用户有意义的常用名称或术语。 例如，可以先使用“个人”、“公开”、“常规”、“机密”和“高度机密”等标签。 可以使用子标签按类别对类似标签进行分组。 此外，创建标签时，还需要一个工具提示，当用户将鼠标悬停在功能区上的标签选项上时，该提示将显示在 Office 应用中。
+1. **定义标签。** 首先，要建立定义不同敏感级别内容的分类法。 使用对用户有意义的常用名称或术语。 例如，可以从“个人”、“公开”、“常规”、“机密”和“高度机密”等标签开始。 可以使用子标签按类别对类似标签进行分组。 此外，创建标签时，还需要一个工具提示，当用户将鼠标悬停在功能区上的标签选项上时，该提示将显示在 Office 应用中。
 
-2. **定义每个标签的用途。** 然后，配置要与每个标签关联的保护设置。 例如，较低敏感度内容（如“常规”标签）可以只应用有页眉或页脚，而较高敏感度内容（如“机密”标签）则可以应用有水印、加密和 WIP，这样有助于确保只有特权用户才能访问它。
+2. **定义每个标签的用途。** 然后，配置要与每个标签关联的保护设置。 例如，较低敏感度内容（如“常规”标签）可以只应用页眉或页脚，而较高敏感度内容（如“机密”标签）则可以应用水印、加密和 WIP，这样有助于确保只有特权用户才能访问它。
 
 3. **定义谁能获取标签。** 定义组织的标签后，通过标签策略发布它们。标签策略控制了哪些用户和组能看到这些标签。一个标签是可重用的。也就是说，定义标签一次后，可将它添加到分配给不同用户的多个标签策略。不过，必须先发布相应标签，使其显示在 Office 应用或其他服务中，然后才能将标签分配给内容。刚开始的时候，可尝试仅将敏感度标签分配给少数几个人员。
 
@@ -189,13 +192,9 @@ ms.locfileid: "40989497"
 
 ## <a name="where-sensitivity-labels-can-appear"></a>敏感度标签可以显示在哪里
 
-敏感度标签显示在 Office 应用的 UI 中。 要查看特定应用和平台的内置标签的当前可用性，请使用下表：
+敏感度标签显示在 Office 应用的用户界面中，可以从功能区“开始”选项卡上的**敏感度**按钮中选择。 要查看特定应用和平台的内置标签的当前可用性，请参阅[应用中的敏感度标签功能支持](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
-- [Word、Excel 和 PowerPoint 中的敏感度标签功能支持](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-
-- [Outlook 中的敏感度标签功能支持](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
-
-如果对 Windows 计算机使用了 Azure 信息保护统一标签客户端，则其他功能可用于敏感性标签。 有关详细信息，请参阅[比较 Windows 计算机的标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
+如果对 Windows 计算机使用 Azure 信息保护统一标签客户端，则其他功能可用于敏感性标签。 有关详细信息，请参阅[比较 Windows 计算机的标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 
 ### <a name="office-apps-on-windows"></a>Windows 上的 Office 应用
 
@@ -235,7 +234,7 @@ ms.locfileid: "40989497"
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>如何结合使用敏感度标签与现有 Azure 信息保护标签
 
-Azure 信息保护用户可以使用 Azure 信息保护统一标签客户端在 Windows 上对内容进行分类和标记。 现有的 Azure 信息保护标签可与新的敏感度标签（也称为统一标签）无缝协作。 这意味着你可以：
+Azure 信息保护用户可以使用 Azure 信息保护统一标签客户端，在 Windows 上对内容进行分类和标记。 现有的 Azure 信息保护标签可与新的敏感度标签（也称为统一标签）无缝协作。 这意味着你可以：
 
 - 保留文档和电子邮件中的现有 Azure 信息保护标签。
 - 保留现有 Azure 信息保护标签配置。
@@ -245,11 +244,11 @@ Azure 信息保护用户可以使用 Azure 信息保护统一标签客户端在 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>敏感度标签和 Azure 信息保护客户端
 
 如果安装了 Azure 信息保护客户端，Office 365 专业增强版应用会自动关闭 Office Windows 应用中敏感度标签的内置标签。
-要更改此默认行为以便可以使用内置标签，请参阅[关于 Office 内置标签客户端](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client)。
+要更改此默认行为，以便可以使用内置标签，请参阅[关于 Office 内置标签客户端](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client)。
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>使用 Microsoft Intune 终结点保护来保护 Windows 设备上的内容
 
-创建敏感度标签时，可以选择告诉 Windows，当此内容存储在 Windows 设备上时，需要对具有此标签的文件进行保护，防止数据泄露。 此选项有助于确保具有此标签的内容只能共享或复制到已批准的位置，即使其存储在终结点上也是如此。 实际上，为敏感度标签启用此选项将告诉 Windows 这是额外的关键数据，需要额外的使用限制。
+创建灵敏度标签时，可以选择告诉 Windows，当此内容存储在 Windows 设备上时，需要对具有此标签的文件进行保护，防止数据泄露。 此选项有助于确保具有此标签的内容只能共享或复制到已批准的位置，即使其存储在终结点上也是如此。 实际上，为敏感度标签启用此选项将告诉 Windows，这是额外的关键数据，需要额外的使用限制。
 
 当你启用此选项后，Windows 便能读取、理解和处理文档中的敏感度标签，并自动对内容应用 Windows 信息保护 (WIP)，无论内容是以何种方式到达 Windows 托管设备的。这样有助于防止已标记文件发生意外数据泄露，无论是否应用加密。
 

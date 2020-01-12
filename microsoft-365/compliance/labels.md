@@ -1,7 +1,7 @@
 ---
 title: 保留标签概述
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留标签可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，保留标签还可用于在 Office 365 中实现记录管理。
-ms.openlocfilehash: dcf350f34a30d27aa66d3e4395b2441694537bae
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39621105"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023366"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -55,7 +55,7 @@ ms.locfileid: "39621105"
    - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
 
   > [!NOTE]
-  > 自动应用标签的功能需要为有权在网站或邮箱中编辑已自动标记的内容的每个用户提供一个 Office 365 企业版 E5 许可证。只有只读访问权限的用户不需要许可证。
+  > 自动应用标签的功能需要为有权在为自动标记选定的网站或邮箱中编辑已自动标记的内容的每个用户提供一个 Office 365 企业版 E5 许可证。只有内容或标签电子邮件回复只读访问权限的用户不需要许可证。
       
 - **在 Office 365 中实现记录管理**，包括电子邮件和文档。可使用保留标签将内容分类为记录。如果这样做，既无法更改或删除保留标签，也无法编辑或删除内容。 
 
