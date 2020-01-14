@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 1d7ed57ab504d8075d0be5ecda7f2a6b016bae89
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bb01d7d2bf4992e6d0e7ed2a01ef0a689e25fc22
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808357"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112236"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
@@ -186,7 +186,7 @@ Outlook 和 web 上的 Outlook 的报告消息外接程序使用户能够轻松�
 
 [使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
-[查看安全&amp;合规性中心中的电子邮件安全报告](../../compliance/view-email-security-reports.md)
+[查看安全&amp;合规性中心中的电子邮件安全报告](view-email-security-reports.md)
 
 [查看 Office 365 高级威胁防护报告](view-reports-for-atp.md)
 

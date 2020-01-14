@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 作为 Office 365 管理员，您可以吊销使用 Office 365 高级邮件加密进行加密的某些电子邮件。
-ms.openlocfilehash: 7adc5713c8753e0caf780bbacf98519665458c52
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: d3d449c969b2fa5d21042779ebad11e3807d1d3e
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435546"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112516"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>撤销使用 Office 365 高级邮件加密进行加密的电子邮件
 
@@ -43,7 +43,7 @@ ms.locfileid: "37435546"
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>如何撤销加密电子邮件
 
-### <a name="step-1-obtain-the-message-id-of-the-email"></a>步骤 1. 获取电子邮件的邮件 ID
+### <a name="step-1-obtain-the-message-id-of-the-email"></a>第 1 步： 获取电子邮件的邮件 ID
 
 在撤销加密邮件之前，您可以收集邮件的邮件 ID。 MessageId 的格式通常为：
 
@@ -59,19 +59,19 @@ ms.locfileid: "37435546"
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中使用 Office 邮件加密报告确定要吊销的电子邮件的邮件 ID
 
-1. 在 "安全&amp;合规性中心" 中，导航到 "**邮件加密" 报告**。 有关此报告的信息，请参阅[查看&amp;安全合规性中心中的电子邮件安全报告](view-email-security-reports.md)。
+1. 在 "安全&amp;合规性中心" 中，导航到 "**邮件加密" 报告**。 有关此报告的信息，请参阅[查看&amp;安全合规性中心中的电子邮件安全报告](../security/office-365-security/view-email-security-reports.md)。
 
 2. 选择 "**查看详细信息**" 表，并确定要撤消的邮件。
 
 3. 双击邮件以查看包含邮件 ID 的详细信息。
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>步骤 2. 验证邮件是否可吊销
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>第 2 步： 验证邮件是否可吊销
 
 若要验证是否可以撤消邮件，请检查安全&amp;合规性中心的**详细信息**表中的加密报告中是否显示 "吊销状态" 字段。
 
 若要验证是否可以使用 Windows Powershell 撤消特定的电子邮件，请完成以下步骤。
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 运行 OMEMessageStatus cmdlet，如下所示：
 
@@ -87,7 +87,7 @@ ms.locfileid: "37435546"
      “Test message”  True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>步骤 3. 撤销邮件
+### <a name="step-3-revoke-the-mail"></a>第 3 步： 撤销邮件
 
 一旦您知道要吊销的电子邮件的邮件 ID，并且已验证该邮件是可吊销的，则可以使用安全&amp;合规性中心或 Windows Powershell 吊销该电子邮件。
 

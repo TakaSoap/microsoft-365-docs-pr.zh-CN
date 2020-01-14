@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 现在，请使用本文作为指南来配置您的威胁防护功能。
-ms.openlocfilehash: b4e3aba1b03d9c5df9eae50813169a9b9d394f6f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2c2e67334f90b24ec60bc7af01451805b32037cc
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808047"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112006"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防御 Office 365 中的威胁
 
@@ -29,7 +29,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 > [!IMPORTANT]
 > **为每种策略提供了初始推荐设置; 但是，有许多可用选项，您可以调整设置以满足特定组织的需求**。 为你的策略或更改允许大约30分钟，以在你的数据中心中工作。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>订阅
 
@@ -71,7 +71,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
     - 在 "**常见附件类型筛选器**" 部分，选择 **"启用"**。
 
-4. 单击 **“保存”**。
+4. 单击“**保存**”。
 
 若要了解有关反恶意软件策略选项的详细信息，请参阅[配置反恶意软件策略](configure-anti-malware-policies.md)。
 
@@ -99,7 +99,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
    - 在 "**应用**于" 部分中，选择 **"收件人域"**。 然后，选择您的域，选择 "**添加**"，然后单击 **"确定"**。
 
-5. 单击 **“保存”**。
+5. 单击“**保存**”。
 
 6. （**建议的附加步骤**）作为全局管理员或 SharePoint Online 管理员，运行**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet，并将 Office 365 环境的**DisallowInfectedFileDownload**参数设置为*true* 。 （这将阻止用户打开、移动、复制或共享被检测为恶意的文件。）
 
@@ -133,7 +133,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
    - 在 "**应用**于" 部分中，选择 **"收件人域"**。 然后，选择您的域，选择 "**添加**"，然后单击 **"确定"**。
 
-6. 单击 **“保存”**。
+6. 单击“**保存**”。
 
 若要了解详细信息，请参阅[设置 Office 365 ATP 安全链接策略](set-up-atp-safe-links-policies.md)。
 
@@ -185,7 +185,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
    - 在 "**允许列表**" 部分中，查看（必要时编辑）您允许的发件人和域。
 
-4. 单击 **“保存”**。
+4. 单击“**保存**”。
 
 若要了解有关反垃圾邮件策略选项的详细信息，请参阅[配置反垃圾邮件策略](configure-the-anti-spam-policies.md)。
 
@@ -205,7 +205,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 ### <a name="audit-logging-for-reporting-and-investigation"></a>报告和调查的审核日志记录
 
-审核日志记录在包括[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)的订阅中可用。 为了查看威胁防护报告中的数据（如[安全仪表板](security-dashboard.md)、[电子邮件安全报告](../../compliance/view-email-security-reports.md)和[浏览器](threat-explorer.md)），必须为您的组织打开审核日志记录。 若要了解详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
+审核日志记录在包括[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)的订阅中可用。 为了查看威胁防护报告中的数据（如[安全仪表板](security-dashboard.md)、[电子邮件安全报告](view-email-security-reports.md)和[浏览器](threat-explorer.md)），必须为您的组织打开审核日志记录。 若要了解详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="post-setup-tasks"></a>安装后任务
 
@@ -213,6 +213,6 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 |需执行的操作|了解详细信息的资源|
 |---------|---------|
-|查看报告的威胁防护功能是如何为你的组织工作的|[安全仪表板](security-dashboard.md)<br/>[电子邮件安全报告](../../compliance/view-email-security-reports.md)<br/>[Office 365 ATP 报告](view-reports-for-atp.md)<br/>[威胁资源管理器](threat-explorer.md)|
+|查看报告的威胁防护功能是如何为你的组织工作的|[安全仪表板](security-dashboard.md)<br/>[电子邮件安全报告](view-email-security-reports.md)<br/>[Office 365 ATP 报告](view-reports-for-atp.md)<br/>[威胁资源管理器](threat-explorer.md)|
 |根据需要定期查看和修改威胁防护策略|[安全功能分数](../mtp/microsoft-secure-score.md)<br/>[智能报告和见解](reports-and-insights-in-security-and-compliance.md)<br/>[Office 365 威胁调查和响应功能](keep-users-safe-with-office-365-ti.md)|
 |监视新功能和服务更新|[标准和目标发布选项](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[消息中心](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

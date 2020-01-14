@@ -1,5 +1,5 @@
 ---
-title: 从 Microsoft 365 业务迁移到 Microsoft 365 E3
+title: 从 Microsoft 365 商业版迁移到 Microsoft 365 E3
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 企业移动到 Microsoft 365 E3。
-ms.openlocfilehash: dc715bbf4cef8a742a28a6452e83b6e8d2f7cdd8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805615"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111866"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>从 Microsoft 365 业务迁移到 Microsoft 365 E3
+# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>从 Microsoft 365 商业版迁移到 Microsoft 365 E3
 
 Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳的基于云的工作效率应用与简单的设备管理和安全性相结合，使员工能够完成其最佳工作。 但在某些情况下，可能需要将 Microsoft 365 业务订阅迁移到 Microsoft 365 E3。 
 
@@ -74,7 +74,7 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 | Office 365 数据丢失防护，Azure 信息保护计划1  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | Endpoint DLP 的窗口信息保护    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | **客户端访问许可证（CAL 权限）**    | | |   
-| 企业 CAL 套件（Exchange、SharePoint、Skype、Windows、System Center Configuration Manager、Windows 权限管理）| |        ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
+| 企业 CAL 套件（Exchange、SharePoint、Skype、Windows、Microsoft 终结点配置管理器、Windows 权限管理）| |       ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | **Compliance**        | | | 
 | 无限制的电子邮件存档 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | 合规性管理器    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 

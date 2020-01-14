@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959551"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112496"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部（DoD）在影响级别2、4和5的临时授权
 
@@ -36,7 +36,7 @@ Microsoft 的政府云服务可满足美国国防部的苛刻要求，从影响�
 - 了解 Microsoft 云上 DoD DISA L2、L4 和 L5 的优势：[下载美国国防部 DISA Backgrounder](https://aka.ms/disa-backgrounder)
 - 了解如何使用我们的 Azure 安全性和合规性蓝图加快 DoD DISA L2、L4 和 L5 部署：[下载 Azure DoD 第5级安全控制实施](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-## <a name="dod-impact-level-5-provisional-authorization"></a>[DoD 影响级别5临时授权
+## <a name="dod-impact-level-5-provisional-authorization"></a>DoD 影响级别5临时授权
 
 DISA 云服务支持已为适用于 DoD 的 Microsoft Azure 政府授予了 DoD 影响等级 5 PA。 DISA 还授予了 Office 365 美国政府防线 a DoD 影响级别 5 PA。 影响级别5涵盖受法律、其他政府法规或拥有信息的机构所认为的受保护的非分类信息（CUI），并且需要比级别4更高级别的保护。 它还介绍了未分类的国家安全系统。
 

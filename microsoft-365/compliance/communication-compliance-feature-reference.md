@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ece7264eba56aa9b389b0dc3555d69e71cc30ad5
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959610"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111846"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>通信合规性功能参考（预览）
 
@@ -177,7 +177,7 @@ ms.locfileid: "40959610"
 |:-----|:-----|:-----|
 |**模板名称** | 是 | "通知" 模板的友好名称，您将在修正期间的 "通知" 工作流中选择，支持文本字符。 |
 | **发件人地址** | 是 | 将邮件发送给具有策略匹配的员工的一个或多个用户或组的地址，该用户或组是从 Active Directory 中为订阅选择的一个或多个用户或组。 |
-| **抄送和密件抄送地址** | 否 | 从 Active Directory 为你的订阅选择的策略匹配通知的可选用户或组。 |
+| **抄送和密件抄送地址** | No | 从 Active Directory 为你的订阅选择的策略匹配通知的可选用户或组。 |
 | **Subject** | 是 | 显示在邮件主题行中的信息支持文本字符。 |
 | **邮件正文** | 是 | 显示在邮件正文中的信息支持文本或 HTML 值。 |
 
@@ -277,6 +277,12 @@ ms.locfileid: "40959610"
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+```
+
+本示例返回您的通信合规性策略的更新活动：
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？

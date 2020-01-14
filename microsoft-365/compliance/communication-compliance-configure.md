@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8627a46ee861751799e1175c7e030e1b28c6d935
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807371"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111877"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365-preview"></a>在 Microsoft 365 中配置通信合规性（预览版）
 
@@ -42,7 +42,7 @@ ms.locfileid: "40807371"
 
 - **步骤2（必需）**：[在组织中提供通信合规性](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    将自己添加到**监管审核管理员**角色，以便您可以设置策略。 您还需要创建一个具有**监管审核管理员**、**案例管理**和**审阅**角色的组，以便对具有策略匹配的邮件执行调查和修正操作的人员或组的角色。 分配了这些角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
+    将自己添加到**监管审核管理员**角色，以便您可以设置策略。 您还需要创建一个具有**监管审核管理员**、**案例管理**和**审阅**角色的新组，以便对具有策略匹配的邮件进行调查和修正操作的人员或组的角色。 分配了这些角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
 - **步骤3（必需）**：[设置通信合规性策略](#step-3-create-a-communication-compliance-policy-required)
 
@@ -88,15 +88,17 @@ ms.locfileid: "40807371"
 
 ### <a name="create-a-new-role-group"></a>创建新的角色组
 
-1. 在 Office [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。
+1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 组织中使用管理员帐户的凭据进行登录。
 
-2. 在 Microsoft 365 合规性中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
+2. 在 Microsoft Office 365 安全与合规中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
 3. 选择“**创建**”。
 
 4. 在 "**名称**" 字段中，为新角色组指定一个友好名称。 选择“下一步”****。
 
 5. 选择 "**选择角色**"，然后选择 "**添加**"。 选中 "**监察审核管理员**、**案例管理**和**审阅**" 复选框，然后选择 "**添加**并**完成**"。 选择“下一步”****。
+
+    ![满足通信合规性角色组](media/communication-compliance-role-groups.png)
 
 6. 选择 "**选择成员**"，然后选择 "**添加**"。 选中您想要创建策略的所有用户和组的复选框，并使用策略匹配来管理邮件，然后选择 "**添加**并**完成**"。 选择“下一步”****。
 

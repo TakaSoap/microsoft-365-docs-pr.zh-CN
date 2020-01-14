@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: bd9d86a5a5d96e8f7978f5c2482eb127b0379a09
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 6ccf5cb4dff8b458c91700ebc1e7dc830d16aafc
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959521"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112266"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -281,6 +281,12 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+```
+
+本示例返回您的通信合规性策略的更新活动：
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
 除了监督报告和日志中提供的信息之外，您还可以使用[SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet 来返回所有监察策略活动的完整详细列表。

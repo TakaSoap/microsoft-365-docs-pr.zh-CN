@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 8d2bc20a1d429510dfcd651c6b15dc1a2a89de9d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 1d9b390cc28002b4561d61fa1d6cc411f3b135f1
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962599"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112706"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -43,10 +43,10 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 
 #### <a name="configuration-manager"></a>Configuration Manager
 
-您可以使用 System Center Configuration Manager 收集要使用 Microsoft 托管桌面注册的现有设备的硬件哈希值。
+您可以使用 Microsoft 终结点配置管理器收集要使用 Microsoft 托管桌面注册的现有设备的硬件哈希值。
 
 > [!IMPORTANT]
-> 要获取此信息的任何设备都必须运行 Windows 10 版本1703或更高版本。 此外，还需要一个作为连接到 System Center Current Branch 网站的 Configuration Manager 客户端的设备。 您还需要在启用了 SQL Server Reporting Services 的环境中设置报告点站点系统角色。 
+> 要获取此信息的任何设备都必须运行 Windows 10 版本1703或更高版本。 此外，还需要一个设备，该设备是连接到配置管理器（"当前分支"）网站的 Configuration Manager 客户端。 您还需要在启用了 SQL Server Reporting Services 的环境中设置报告点站点系统角色。 
 
 如果你已满足所有这些先决条件，则可以按照以下步骤收集信息：
 
@@ -148,7 +148,7 @@ Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegis
 Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
 ```
 3. 访问可能包含设备条目的任何目录。 从*所有*目录中删除每个设备的条目，包括 Windows Server Active Directory 域服务和 Azure Active directory。 请注意，此删除操作可能需要几个小时才能完成。
-4. 可能包含设备条目的 Access management services。 从*所有*管理服务中删除每个设备的条目，包括 System Center Configuration 管理器、Microsoft Intune 和 Windows Autopilot。 请注意，此删除操作可能需要几个小时才能完成。
+4. 可能包含设备条目的 Access management services。 从*所有*管理服务（包括 Microsoft 终结点配置管理器、microsoft Intune 和 Windows Autopilot）中删除每个设备的条目。 请注意，此删除操作可能需要几个小时才能完成。
 
 现在，你可以继续[注册设备](#register-devices)。
 

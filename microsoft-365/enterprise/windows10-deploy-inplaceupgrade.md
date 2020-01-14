@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 08d10dae35023d3e1d9f1e98d36e52f283ec04fa
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38669675"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112686"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步骤2：将现有设备的 Windows 10 企业版部署为就地升级
 
@@ -27,7 +27,7 @@ ms.locfileid: "38669675"
 
 如果你的现有计算机运行的是 Windows 7 或 Windows 8.1，我们建议你在你的组织部署 Windows 10 时使用此路径。 这利用 Windows 安装程序（setup.exe）执行就地升级，这将自动保留现有操作系统版本中的所有数据、设置、应用程序和驱动程序。 这需要最少的 IT 工作，因为不需要任何复杂的部署基础结构。
 
-按照这些步骤操作，使用 Configuration Manager 将 Windows 10 企业版映像配置和部署为就地升级。
+按照这些步骤操作，使用 Microsoft 终结点配置管理器将 Windows 10 企业版映像配置和部署为就地升级。
 
 ## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>使用 Configuration Manager 海报的 Windows 10 部署
 
@@ -45,7 +45,7 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
 
 接下来，按照指南使用 Configuration Manager （当前分支）将 Windows 7 或更高版本的操作系统升级到 Windows 10。 与任何高风险部署一样，我们建议您先备份用户数据，然后再继续。 OneDrive 云存储准备就绪，可用于许可的 Microsoft 365 用户，并可用于安全地存储文件。 有关详细信息，请参阅[OneDrive 快速入门指南](https://aka.ms/ODfBquickstartguide)。 若要访问此页面，必须在 Office 365 或 Microsoft 365 租户中以租户管理员或全局管理员身份登录。
 
-有关配置管理器版本和受支持的相应 Windows 10 客户端版本的列表，请参阅[支持 windows 10 For Configuration Manager](https://aka.ms/supportforwin10sccm)。
+有关配置管理器版本和受支持的相应 Windows 10 客户端版本的列表，请参阅[支持 windows 10 For Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10)。
 
 **验证是否已准备好升级 Windows**
 
@@ -94,7 +94,7 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
 创建升级任务序列后，需要创建包含要升级的设备的集合。
 
 > [!NOTE]
-> 使用以下设置测试单个设备上的部署。 准备就绪后，可以使用不同的成员身份规则来包含设备组。 有关详细信息，请参阅[如何在 Configuration Manager 中创建集合](https://aka.ms/sccm-create-collections)。
+> 使用以下设置测试单个设备上的部署。 准备就绪后，可以使用不同的成员身份规则来包含设备组。 有关详细信息，请参阅[如何在 Configuration Manager 中创建集合](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections)。
 
 1. 在 Configuration Manager 控制台中的 "**资产和合规性**" 工作区中，右键单击 "**设备集合**"，然后选择 "**创建设备集合**"。 
 2. 在 "创建设备集合" 向导中的 "**常规**" 页面上，输入以下设置，然后选择 "**下一步**"：

@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和 Office 365 高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: c0cef17acf0028472a9b92352afd51786a8ae25c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970820"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107901"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧电子数据展示工具的退休
 
@@ -59,7 +59,7 @@ ms.locfileid: "40970820"
 
 根据2017年7月1日的原始通知，将停用 Exchange 管理中心（EAC）中的 "就地电子数据展示 & 保留功能"。 EAC 中的就地电子数据展示 & 保留页面允许您搜索、保留和导出 Exchange Online 中的内容。 就地电子数据展示还允许您将搜索结果复制到发现邮箱，以便您或其他电子数据展示管理者可以查看内容并使其可用于法律、法规和公共请求。
 
-Becuase 所有这些功能（除了将搜索结果复制到发现邮箱之外）现已在[microsoft 365 合规性中心](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)的内容搜索、电子数据展示和高级电子数据展示工具（改进了各种 Microsoft 365 服务的功能、可靠性和支持）中提供，我们建议您尽快开始使用这些工具。 为了帮助您转换到这些其他电子数据展示工具，下表列出了您可以使用的工具，而不是就地电子数据展示和就地保留。
+由于所有这些功能（除了将搜索结果复制到发现邮箱之外）现已在[microsoft 365 合规性中心](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)的内容搜索、电子数据展示和高级电子数据展示工具（改进了各种 Microsoft 365 服务的功能、可靠性和支持）中提供，我们建议您尽快开始使用这些工具。 为了帮助您转换到这些其他电子数据展示工具，下表列出了您可以使用的工具，而不是就地电子数据展示和就地保留。
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
     
@@ -168,7 +168,7 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
     
 - 2020年4月1日：您将无法使用**new-mailboxsearch**创建新的就地电子数据展示搜索和就地保留，但您仍可以使用 cmdlet 来运行、编辑和删除现有搜索并保留自己的风险。 Microsoft 支持将不再为这些类型的搜索和保留提供帮助。
     
-- 2020年7月1日：如前所述，就地电子数据展示 & 保留 EAC 中的功能将被置于只读模式下。 这也意味着您将不能使用**new-mailboxsearch**、 **new-mailboxsearch**或**new-mailboxsearch** cmdlet 的。 你将只能获取和删除现有搜索和保留。
+- 2020年7月1日：如前所述，就地电子数据展示 & 保留 EAC 中的功能将被置于只读模式下。 这也意味着您不能使用**new-mailboxsearch**、 **Start-new-mailboxsearch**或**new-mailboxsearch** cmdlet。 你将只能获取和删除现有搜索和保留。
 
 ### <a name="alternative-tools"></a>替代工具
 
@@ -205,7 +205,7 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 <tr class="odd">
 <td>将搜索结果复制到发现邮箱</td>
 <td>无</td>
-<td>此功能没有直接替代，因为它不提供对所有 Microsoft 365 服务的访问权限。 有关替代解决方案，请参阅下面的 FAQ。</td>
+<td>此功能没有直接替代，因为它不提供对所有 Microsoft 365 服务的访问权限。 有关其他解决方案，请参阅下面的 FAQ。</td>
 </tr>
 </tbody>
 </table>
@@ -268,7 +268,7 @@ Exchange Online PowerShell 中的**搜索邮箱**cmdlet 将被停用，因为最
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-New-compliancesearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-New-compliancesearchaction</span></a></p>
 <p></p></td>
-<td><p>New-compliancesearch 和 New-compliancesearchaction cmdlet 一起使用可帮助您搜索和清除内容。 您可以使用<strong>new-compliancesearch</strong>和<strong>new-compliancesearch</strong> cmdlet 创建和运行搜索，然后可以使用 New-compliancesearchaction--"<strong>清除" 和-PurgeType</strong>命令清除内容。</p>
+<td><p>New-compliancesearch 和 New-compliancesearchaction cmdlet 一起使用可帮助您搜索和清除内容。 您可以使用<strong>new-compliancesearch</strong>和<strong>new-compliancesearch</strong> cmdlet 创建和运行搜索，然后您可以使用<strong>new-compliancesearchaction-PurgeType</strong>命令清除内容的内容。 有关详细信息，请参阅<a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">搜索和删除邮件</span></a>。</p>
 </td>
 </tr>
 <tr class="odd">
@@ -299,7 +299,7 @@ Exchange 管理中心中的 "就地电子数据展示 & 保留" 功能和 exchan
 
 ## <a name="advanced-ediscovery-v10"></a>高级电子数据展示1.0 版
 
-高级电子数据展示 v1.0，即在电子数据展示事例中，通过单击 "**切换到高级电子数据展示**" 将停用的高级电子数据展示的版本。 其功能已由 Microsoft 365 合规性中心中的新[高级电子数据展示解决方案](https://aka.ms/edisco)取代。
+高级电子数据展示 v1.0，即在电子数据展示事例中，通过单击 "**切换到高级电子数据展示**" 将停用的高级电子数据展示的版本。 其功能已在 Microsoft 365 合规性中心中的新[高级电子数据展示解决方案](https://aka.ms/edisco)中取代。
 
 Microsoft 365 中新的高级电子数据展示解决方案（也称为*高级电子数据展示 2.0 2.0*）提供了原始解决方案的所有功能，但现在提供了一种基于保管人的方法，可识别其他 Microsoft 365 服务中的内容，收集该内容，然后将其添加到审阅集中，以便审阅者可以利用 fast search 查询、标记和分析功能来帮助挑选相关文档。 高级电子数据展示现在为 Microsoft 和非 Microsoft 文件类型提供了改进的处理和本机查看器[，此处提供](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20)了文件类型的完整列表以及支持[的元数据字段。](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery) 此外，新的高级电子数据展示解决方案提供了强大的保管人保留功能，允许您将保留应用于不同服务中的内容、通知用户保留和在高级电子数据展示事例中跟踪保管人响应。
 
