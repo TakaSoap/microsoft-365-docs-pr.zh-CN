@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 将你的企业从 Office 365 商业高级升级到 Microsoft 365 业务的步骤。
-ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 61da9148ccb87654aa2391ff90c4f086a4cbbe24
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640553"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120133"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>从 Office 365 商业高级版升级到 Microsoft 365 商业版
 
@@ -68,7 +68,7 @@ ms.locfileid: "38640553"
 1. 计划准备就绪后，您可能需要在管理中心完成一些额外的设置步骤。 在导航窗格中，选择 "**主页**" 以完成任何其他设置步骤。
 
 > [!NOTE]
-> 你将收到一个你不再需要的 Ofifce 365 许可证的按比例退款。 在设置新计划后，您的银行帐户或信用卡将会在两天内收取费用。
+> 你将收到一个你不再需要的 Office 365 许可证的按比例退款。 在设置新计划后，您的银行帐户或信用卡将会在两天内收取费用。
   
 ## <a name="protect-user-devices-and-files"></a>保护用户设备和文件
 
