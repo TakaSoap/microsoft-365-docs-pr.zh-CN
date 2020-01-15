@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何交付 Office 和 LOB 应用。
-ms.openlocfilehash: fdb16aa9d92e3fd2608ca3738dc5af80389f18ea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a4bc1a765edf6938ad37d91d8bf94950b6672bfe
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031527"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112578"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>步骤 3：Office 和 LOB 应用交付
 
@@ -49,7 +49,7 @@ ms.locfileid: "38031527"
 
 对于业务线应用，你可能会使用基于 MSI 的包或可执行文件，并将应用程序安装为 OS 部署任务序列的一部分。 Windows 10 会继续使用这些包。
 
-像 System Center Configuration Manager 和 Microsoft Intune 这样的软件部署工具也会被优化以交付 MSI 打包的应用。一旦在 Windows 10 上验证了应用，就可以使用 System Center Configuration Manager (Current Branch) 来交付应用。如果使用 Microsoft Intune 的公司门户，可以扩展可供组织使用的 IT 认可的应用选择，以包括最新应用程序，并且用户可以自行选择他们需要的应用。
+像 Microsoft Endpoint Configuration Manager 和 Microsoft Intune 这样的软件部署工具也会被优化以交付 MSI 打包的应用。一旦在 Windows 10 上验证了应用，就可以使用 Microsoft Endpoint Configuration Manager（当前分支版本）来交付应用。如果使用 Microsoft Intune 的公司门户，可以扩展可供组织使用的 IT 认可的应用选择，以包括最新应用程序，并且用户可以自行选择他们需要的应用。
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
 
@@ -61,7 +61,7 @@ ms.locfileid: "38031527"
 
 如果你想在映像中包含 Office 365 专业增强版，请记住，此操作使用基于用户的激活；系统管理员不能预先将其激活。使用 Office 部署工具在正在成像的设备上预安装 Office，并跳过用户登录。 部署映像后，最终用户可以使用其 Office 365 凭据登录并激活 Office 365 专业增强版。
 
-[创建安装操作系统的任务序列](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[创建安装操作系统的任务序列](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 [将 Office 365 专业增强版部署为操作系统映像的一部分](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
@@ -75,7 +75,7 @@ Microsoft 建议使用 [Office 自定义工具](https://config.office.com/)自�
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-如果使用 System Center Configuration Manager，仍然可以使用它来广泛部署 Office 365 专业增强版。System Center Configuration Manager (Current Branch) 为更新的 Office 自定义工具、安装时的即点即用包自定义，以及软件更新管理后安装提供本机支持。
+如果使用 Configuration Manager，仍然可以使用它来广泛部署 Office 365 专业增强版。Configuration Manager（当前分支版本）为更新的 Office 自定义工具、安装时的即点即用包自定义，以及软件更新管理后安装提供本机支持。
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
@@ -83,7 +83,7 @@ Microsoft 建议使用 [Office 自定义工具](https://config.office.com/)自�
 
 [在升级到 Office 365 专业增强版时删除 Office 的现有 MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备](https://docs.microsoft.com/intune/apps-add-office365)
 

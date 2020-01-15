@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 OS 部署和功能更新的选项。
-ms.openlocfilehash: c789ac0d62fd0b8c915f21174cae2b81e49e0c97
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 7da7c9ade2be43e8c60726bafd69cc7939b7bddc
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031667"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112676"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步骤 6：OS 部署和功能更新
 
@@ -49,13 +49,13 @@ ms.locfileid: "38031667"
 
 如果使用映像捕获路由，最好尽可能自动化，以确保最佳映像质量和可重复的过程。对于大多数部署，也建议在捕获前在 Windows 映像中最大程度减少自定义和预安装的应用。这是所谓的“细化图像”方法，该方法可通过消除映像内的应用数量来节省网络上的整体带宽。通过从细化基础映像开始，可以根据用户需求来灵活定制所需应用、语言和配置的分层。
 
-在生成和捕获过程中，System Center Configuration Manager (Current Branch) 和 Microsoft Deployment Toolkit 等工具使用系统准备工具（或 Sysprep）和“Generalize”命令在将 Windows 10 安装作为映像捕获前封装你的映像。
+在生成和捕获过程中，Microsoft Endpoint Configuration Manager（当前分支版本）和 Microsoft Deployment Toolkit 等工具使用系统准备工具（或 Sysprep）和“Generalize”命令在将 Windows 10 安装作为映像捕获前封装你的映像。
 
-捕获的映像将具有 Windows 映像（或 WIM），格式类似于标准 Windows 安装介质。具有自定义 WIM 文件后，可以使用其他任务序列作为 System Center Configuration Manager 或 Microsoft Deployment Toolkit 中的 OS 部署的一部分，以便在应用 Windows 映像前后执行部署相关的任务、应用映像和运行任务。
+捕获的映像将具有 Windows 映像（或 WIM），格式类似于标准 Windows 安装介质。具有自定义 WIM 文件后，可以使用其他任务序列作为 Configuration Manager 或 Microsoft Deployment Toolkit 中的 OS 部署的一部分，以便在应用 Windows 映像前后执行部署相关的任务、应用映像和运行任务。
 
 [创建 Windows 10 引用映像](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[创建安装操作系统的任务序列](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[创建安装操作系统的任务序列](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>部署类型
 
@@ -73,7 +73,7 @@ ms.locfileid: "38031667"
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>使用任务序列自动化的就地升级
 
-除了这些部署类型以外，在 Windows 10 中还提供了一个新的选项 System Center Configuration Manager (Current Branch) 任务序列，以及使用升级任务序列的就地升级。
+除了这些部署类型以外，在 Windows 10 中还提供了一个新的选项 Microsoft Endpoint Configuration Manager（当前分支版本）任务序列，以及使用升级任务序列的就地升级。
 
 以前版本的 Windows 中的就地升级不需要使用任务序列，但在进行企业级部署时，建议使用此方法。就地升级不允许你使用应用程序应用自定义映像，但可以使用脱机服务更新默认的 install.wim。例如，在执行升级前，可确保已向其应用了最新的 Windows 更新。
 
@@ -87,7 +87,7 @@ ms.locfileid: "38031667"
 
 [使用 Configuration Manager 执行 Windows 10 的就地升级](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>分阶段部署
 
@@ -95,11 +95,11 @@ ms.locfileid: "38031667"
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
-### <a name="recommended-tools-system-center-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>建议使用的工具：System Center Configuration Manager (Current Branch) 和 Microsoft Deployment Toolkit
+### <a name="recommended-tools-microsoft-endpoint-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>建议使用的工具：Microsoft Endpoint Configuration Manager（当前分支版本）和 Microsoft Deployment Toolkit
 
 无论选择哪种部署类型，你都想要确保对可预见部分和可重复部分执行自动化操作。Microsoft 提供使用自动化任务序列自动化 OS 部署的两种解决方案：
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction)** (ConfigMgr) 提供内置操作系统部署功能，以实施软件分发和软件更新管理的功能。ConfigMgr 被所有规模的组织广泛使用，并支持所有四种 Windows 部署类型。（可选）可将 ConfigMgr 与 Microsoft Intune 集成，以便为部署和设备管理添加其他功能。
+  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction)** (ConfigMgr) 提供内置操作系统部署功能，以实施软件分发和软件更新管理的功能。ConfigMgr 被所有规模的组织广泛使用，并支持所有四种 Windows 部署类型。（可选）可将 ConfigMgr 与 Microsoft Intune 集成，以便为部署和设备管理添加其他功能。
 
   - 另一个受欢迎的部署选项是免费的 **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT)，它通常供小型和中型组织使用，以进行 OS 部署。这几乎对基础结构没有要求。MDT 与 Windows 部署服务 (WDS) 集成，以用于网络启动。它支持所有四种部署类型，并支持安装应用程序、驱动程序和设置。当然，MDT 甚至可以与 Configuration Manager 集成。
 
@@ -117,7 +117,7 @@ Windows 10 中提供的一个新选项是使用 Windows Autopilot 将新电脑�
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>适用于企业的 Windows 更新的功能更新
 
-适用于企业的 Windows 更新是一项免费服务，支持 IT 专业人员通过将设备直接连接到 Windows 更新服务，使 Windows 10 设备始终保持最新状态。 适用于企业的 Windows 更新可以通过组策略或通过 MDM 解决方案（如 Microsoft Intune）进行配置，并允许 IT 专业人员创建[部署环](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates)以验证新的内部版本。 它集成到现有管理工具中，如 Windows Server Update Services (WSUS)、System Center Configuration Manager (Current Branch) 和 Microsoft Intune。 此外，适用于企业的 Windows 更新支持对等传送，以帮助优化带宽效率并减少网络拥塞。
+适用于企业的 Windows 更新是一项免费服务，支持 IT 专业人员通过将设备直接连接到 Windows 更新服务，使 Windows 10 设备始终保持最新状态。 适用于企业的 Windows 更新可以通过组策略或通过 MDM 解决方案（如 Microsoft Intune）进行配置，并允许 IT 专业人员创建[部署环](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates)以验证新的内部版本。 它集成到现有管理工具中，如 Windows Server Update Services (WSUS)、Microsoft Endpoint Configuration Manager（当前分支版本）和 Microsoft Intune。 此外，适用于企业的 Windows 更新支持对等传送，以帮助优化带宽效率并减少网络拥塞。
 
 有关适用于企业的 Windows 更新的详细信息，请查看以下文档：
 

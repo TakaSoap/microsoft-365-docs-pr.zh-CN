@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的设备和应用就绪情况。
-ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031627"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112716"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步骤 1：设备和应用就绪情况
 
@@ -45,7 +45,7 @@ ms.locfileid: "38031627"
 
 ## <a name="windows-10-compatibility-scan"></a>Windows 10 兼容性扫描
 
-在部署 Windows 10 之前，Microsoft 建议检查运行 Windows 7 或 8/8.1 的现有设备的就绪情况。 Windows 10 安装介质支持命令行开关，以便 setup.exe 运行升级，但仅检查兼容性，而非实际执行升级。 ScanOnly 可以作为脚本化批处理文件运行，也可以集成到 System Center Configuration Manager 任务序列中，包括直接从网络运行 ScanOnly 的功能，因此 Windows 10 安装介质不会被流式传输到本地设备。 当 ScanOnly 完成后，通过 Setup.EXE 生成的日志文件中的返回代码返回结果。   
+在部署 Windows 10 之前，Microsoft 建议检查运行 Windows 7 或 8/8.1 的现有设备的就绪情况。 Windows 10 安装介质支持命令行开关，以便 setup.exe 运行升级，但仅检查兼容性，而非实际执行升级。 ScanOnly 可以作为脚本化批处理文件运行，也可以集成到 Microsoft Endpoint Configuration Manager 任务序列中，包括直接从网络运行 ScanOnly 的功能，因此 Windows 10 安装介质不会被流式传输到本地设备。 当 ScanOnly 完成后，通过 Setup.EXE 生成的日志文件中的返回代码返回结果。   
 
 自动完成兼容性扫描的示例 ScanOnly 命令行如下所示：
 
@@ -57,7 +57,7 @@ ms.locfileid: "38031627"
 
 桌面分析提供许多优于传统桌面管理系统的优势，是我们推荐使用的工具。 它没有代理，可以指导你完成利用通过升级数亿台使用者电脑收集的应用程序和驱动程序兼容性信息所需的操作。 此信息为你提供详细的评估，帮助确定可能会阻止升级的兼容性问题，并提供指向 Microsoft 已知建议修补程序的链接。
 
-若要设置桌面分析，首先需要设置 Azure 订阅并为其添加一个 Azure Log Analytics 工作区。 运行桌面分析服务后，便可以通过组策略设置注册任何连接 Internet 的 Windows 7 SP1 或更新系统的设备，非常简单。 不需要部署代理，桌面分析的可视化工作流可指导你完成从试生产到生产部署的过程。 如果需要，可以将桌面分析中的数据导出到软件部署工具（如 System Center Configuration Manager (Current Branch)），这样就可以在准备好部署时，直接定位电脑并生成集合。
+若要设置桌面分析，首先需要设置 Azure 订阅并为其添加一个 Azure Log Analytics 工作区。 运行桌面分析服务后，便可以通过组策略设置注册任何连接 Internet 的 Windows 7 SP1 或更新系统的设备，非常简单。 不需要部署代理，桌面分析的可视化工作流可指导你完成从试生产到生产部署的过程。 如果需要，可以将桌面分析中的数据导出到软件部署工具（如 Microsoft Endpoint Configuration Manager（当前分支版本）），这样就可以在准备好部署时，直接定位电脑并生成集合。
 
 如果当前环境未设置桌面分析或者想要注册试用版，请转到桌面分析页 https://www.aka.ms/desktopanalytics) 并开始使用。
 
@@ -103,7 +103,7 @@ ms.locfileid: "38031627"
 
 Configuration Manager 软件清单是为设备和应用就绪情况使用基于云的分析解决方案的替代方法。 可以使用安装计数并钻取到特定计算机，帮助确定兼容性测试和验证的优先顺序，并通过包设置将应用程序包设置为与 Windows 10 兼容。 虽然此选项无法比较与 Microsoft 的分析服务的已知兼容性信息，但它可以作为一个有效解决方案来定位一组较小的按优先级排列的应用，用于进行手动测试。 
 
-有关更多信息，请参阅 [System Center Configuration Manager 中的软件清单简介](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory)和 [System Center Configuration Manager 中的包和程序](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs)中的应用程序包的设置平台要求。
+有关更多信息，请参阅 [Configuration Manager 中的软件清单简介](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)和 [Configuration Manager 中的包和程序](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs)中的应用程序包的设置平台要求。
 
 
 ## <a name="desktop-app-assure"></a>桌面应用保证

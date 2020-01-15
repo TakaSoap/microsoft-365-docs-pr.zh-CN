@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 32ad0abf61de5a64aac6914532f59bb5602e9d83
-ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
+ms.openlocfilehash: 3b8522dea71cd0ece5ec63f07a733e1eb5283a43
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40999586"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123623"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>在 Office 应用中的敏感度标签
 
@@ -52,7 +52,9 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支持应用程序中的敏感度标签功能
 
-对于每项功能，下表列出了该应用程序为支持使用内置标记的敏感度标签所需的最低版本。 新版本在不同的时间为不同的更新频道提供。 有关详细信息，包括如何配置更新频道以便能够测试您感兴趣的新标记功能，请参阅[Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
+对于每项功能，下表列出了该应用程序为支持使用内置标记的敏感度标签所需的最低版本。 或者，如果标签功能处于公共预览或正在审阅中，以供将来的版本使用。
+
+新版本的应用程序在不同的时间为不同的更新频道提供。 有关详细信息，包括如何配置更新频道以便能够测试您感兴趣的新标记功能，请参阅[Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。 专用预览中的新功能不包含在表中，但您可能可以通过 nominating 您的组织来加入[Microsoft 信息保护专用预览计划](https://aka.ms/mip-preview)，从而加入这些预览。
 
 在安装仅在 Windows 计算机上运行的 Azure 信息保护统一标记客户端时，可以使用其他功能。 有关这些详细信息，请参阅[比较 Windows 计算机的标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 

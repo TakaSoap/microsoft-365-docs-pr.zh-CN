@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的目录和网络就绪情况。
-ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: cae32d7bd7791cdfb0acce564b2a7839d5314a19
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031557"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112607"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步骤 2：目录和网络就绪情况
 
@@ -79,7 +79,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
 [关于 BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
-如果使用 System Center Configuration Manager (Current Branch)，还可以配置启用 BITS 的分发点或使用 WDS 启用多播。
+如果使用 Microsoft Endpoint Configuration Manager（当前分支版本），还可以配置启用 BITS 的分发点或使用 WDS 启用多播。
 
 限制特定流量意味着正常的网络流量受下载更新和应用程序的电脑的影响较小。但为这些任务划出一定比例的带宽有助于确保工作效率不受 Windows 或 Office 部署的影响，并且进程会根据需要继续运行，这可能会增加与部署相关的停机时间，导致用户在部署运行期间被锁定在电脑外。
 
@@ -89,7 +89,7 @@ Azure Active Directory 安装完成后，你的用户就可以登录并激活他
 
 ## <a name="scavenging-bandwidth"></a>清理带宽
 
-Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中支持的低额外时延背景传输 (LEDBAT) 旨在优化传送到 Windows 客户端的网络流量。
+Windows Server 2019 和 Microsoft Endpoint Configuration Manager（当前分支版本）中支持的低额外时延背景传输 (LEDBAT) 旨在优化传送到 Windows 客户端的网络流量。
 
 [Windows Server 2019 中的十大网络功能：\#9 LEDBAT - 延迟优化背景传输](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -101,15 +101,15 @@ Windows Server 2019 和 System Center Configuration Manager (Current Branch) 中
 
 对等选项越来越多地用于 Windows 10 迁移、电脑映像、软件更新和用户个性化设置。在初始 Windows 10 部署之后，它们对于推动版本到版本升级也很有价值。我们下面介绍几个示例，帮助将 Windows 10 和 Office 相关流量从网络中心移出，减少对经典限制方法的需求，并允许电脑在本地网络中的对等端上查找所需的更新文件，而不是从分发点或 Internet 下载它们。
 
-**BranchCache** 可以帮助你在分布式环境中下载内容而不会使网络饱和。它包含两个选项：托管缓存模式（可以使用本地服务器缓存内容）和分布式缓存模式（System Center Configuration Manager 支持的模式），它允许客户端彼此共享已下载的内容。
+**BranchCache** 可以帮助你在分布式环境中下载内容而不会使网络饱和。它包含两个选项：托管缓存模式（可以使用本地服务器缓存内容）和分布式缓存模式（Configuration Manager 支持的模式），它允许客户端彼此共享已下载的内容。
 
-**对等缓存** System Center Configure 支持的客户端也可以使用对等缓存。 这使在网络上可以可靠地使用的电脑可以托管内容分发源。 不必启用所有电脑，只需启用连接了可靠网络的主机（例如台式机、小型立式或立式电脑）。 对等缓存甚至可以在安装过程中用于在 Windows PE 阶段运行的部署任务。
+**对等缓存** Configuration Manager 支持的客户端也可以使用对等缓存。 这使在网络上可以可靠地使用的电脑可以托管内容分发源。 不必启用所有电脑，只需启用连接了可靠网络的主机（例如台式机、小型立式或立式电脑）。 对等缓存甚至可以在安装过程中用于在 Windows PE 阶段运行的部署任务。
 
 注意：BranchCache 和对等缓存是互补的，可以在同一环境中协同工作。
 
 [BranchCache 与对等缓存](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**传递优化**传递优化是另一种对等缓存技术，为 Windows 部署提供基于网络的控制。 Windows 10 传递优化用于更新内置 UWP 应用，还用于从 Microsoft Store 安装应用程序，以及使用 Express Update 进行软件更新。 它在自早期版本的 Windows 10 发布以来已经可用，但最近才与 System Center Configuration Manager (Current Branch) 集成。 自 Windows 10 版本 1803 开始，新配置选项意味着现在可以独立设置后台更新和前台作业（例如来自应用商店的应用安装）的带宽限制。 Windows 传递优化现在还在客户端更新期间支持 Office 365 专业增强版，并通过所有受支持的 Office 365 客户端更新频道提供。 即将提供在 Office 365 客户端初始安装期间对 Windows 传递优化的支持。  
+**传递优化**传递优化是另一种对等缓存技术，为 Windows 部署提供基于网络的控制。 Windows 10 传递优化用于更新内置 UWP 应用，还用于从 Microsoft Store 安装应用程序，以及使用 Express Update 进行软件更新。 它在自早期版本的 Windows 10 发布以来已经可用，但最近才与 Microsoft Endpoint Configuration Manager（当前分支版本）集成。 自 Windows 10 版本 1803 开始，新配置选项意味着现在可以独立设置后台更新和前台作业（例如来自应用商店的应用安装）的带宽限制。 Windows 传递优化现在还在客户端更新期间支持 Office 365 专业增强版，并通过所有受支持的 Office 365 客户端更新频道提供。 即将提供在 Office 365 客户端初始安装期间对 Windows 传递优化的支持。  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

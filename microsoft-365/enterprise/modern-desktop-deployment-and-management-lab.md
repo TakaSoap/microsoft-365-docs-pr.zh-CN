@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 0083eb91b49561c858cacc94a148e97c7463b754
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801357"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112506"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
 这些可下载的实操实验室着重于 Windows 10 部署和 Office 365 部署，以及相关的配置和管理注意事项后期部署。强烈建议正在为 Windows 7 生命周期的结束做准备的组织进行此培训，但该培训同样适用于当前使用 Windows 10 和 Office 365 增强版或 Office 2019 的用户。其中包含有关 Windows 10、Office 365 专业增强版、企业移动性 + 安全性和相关产品和服务的指南。
 
-这些实验室旨在帮助您规划、 测试和验证运行 Windows 10 企业版和 Office 365 专业增强版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 System Center Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
+这些实验室旨在帮助您规划、 测试和验证运行 Windows 10 企业版和 Office 365 专业增强版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
 作为 Windows 10 和 Office 365 专业增强版的[桌面部署](https://www.aka.ms/howtoshift)过程的一部分，在开始探索部署工具更新和测试与部署相关的自动化时，建议首先生成沙盒或隔离的实验室环境。
 
@@ -38,7 +38,7 @@ ms.locfileid: "40801357"
 
   - Windows 10 企业版，版本 1909
   - Windows 7 企业版
-  - System Center Configuration Manager，版本 1902
+  - Microsoft Endpoint Configuration Manager，版本 1902
   - 适用于 Windows 10 的 Windows 评估和部署工具包，版本 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
@@ -72,7 +72,7 @@ ms.locfileid: "40801357"
 
 ### <a name="office-and-lob-app-delivery"></a>**Office 和 LOB 应用交付**
 
-  - 使用 System Center Configuration Manager 进行 Office 365 专业增强版部署
+  - 使用 Microsoft Endpoint Configuration Manager 部署 Office 365 专业增强版
   - 使用 Microsoft Intune 进行 Office 365 专业增强版部署
   - 使用 Microsoft Intune 进行应用部署和管理
   - 使用适用于企业的 Microsoft Store 进行应用部署和自助式安装
@@ -126,7 +126,7 @@ ms.locfileid: "40801357"
 
   - [Microsoft Mechanics 的桌面部署系列视频](https://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager OS 部署](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager 操作系统部署](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 部署计划</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

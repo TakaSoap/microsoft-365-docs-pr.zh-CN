@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Windows 和 Office 重要的安全性和合规性注意事项。
-ms.openlocfilehash: 10fc9ca58d9b48f752bdfed860b805e4f5663d6a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031687"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112556"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步骤 5：安全性和合规性注意事项
 
@@ -117,7 +117,7 @@ Windows 10 中的 **[Windows Defender 应用程序控制](https://docs.microsoft
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) 作为基于云的管理服务，用于包括 IOS、Android 和 Windows 设备在内的移动应用场景，现在可以配置为共同管理，以补充和扩展由 System Center Configuration Manager 管理的特定工作负载的控件。这里涉及到一个优势：访问受保护资源的设备可能必须注册到设备管理（甚至是非托管、非加入域或非加入 Azure AD 的设备）。用户还可以在操作系统和应用程序级别利用粒度配置和符合性策略实施。可以使用 Microsoft Intune 集中配置应用程序策略和设置，并对 Windows 10 中的 Office 365 专业增强版和应用商店应用强制执行应用程序策略和设置。
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) 作为基于云的管理服务，用于包括 IOS、Android 和 Windows 设备在内的移动应用场景，现在可以配置为共同管理，以补充和扩展由 Configuration Manager 管理的特定工作负载的控件。这里涉及到一个优势：访问受保护资源的设备可能必须注册到设备管理（甚至是非托管、非加入域或非加入 Azure AD 的设备）。用户还可以在操作系统和应用程序级别利用粒度配置和符合性策略实施。可以使用 Microsoft Intune 集中配置应用程序策略和设置，并对 Windows 10 中的 Office 365 专业增强版和应用商店应用强制执行应用程序策略和设置。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留 Microsoft 365 中的内容的保留标签时，可以选择在保留期结束时触发处置评审。
-ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a48d47c6b02ebe20ba5fb48470a2efc88aa3dbc7
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806065"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123663"
 ---
 # <a name="overview-of-disposition-reviews"></a>处置评审概述
 
@@ -56,18 +56,22 @@ ms.locfileid: "40806065"
   
 ![安全与合规中心中的处置页](media/Retention-Dispositions-v2-page.png)
 
+
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>通过创建保留标签设置处置评审
 
 这是用于设置处置评审的基本工作流。 请注意，此流显示正在发布的保留标签，然后由用户手动应用;或者，可以将触发处置评审的保留标签自动应用于内容。
   
 ![显示处置的工作流的图表](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-当您在 Office 365 中创建保留标签时，可以选择进行处置评审。 请注意，此选项在保留策略中不可用，但只能在配置为保留内容的保留标签中使用。
+当您在 Office 365 中创建保留标签时，可以选择进行处置评审。 此选项在保留策略中不可用，但只能在配置为保留内容的保留标签中使用。
   
 有关保留标签的详细信息，请参阅[保留标签概述](labels.md)。
   
 ![标签的保留设置](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
-  
+ 
+> [!NOTE]
+> 当您指定选项 "在**有准备好查看的项目时通知这些人**" 时，请指定一个用户或已启用邮件的安全组。 此选项不支持 Office 365 组。
+
 ## <a name="disposing-content"></a>处置内容
 
 当通过电子邮件通知审阅者可以查看内容时，他们可以转到安全&amp;合规性中心中的 "**处置**" 页面。 审阅者可以查看每个保留标签的项目数正在等待处置，然后选择保留标签以查看具有该标签的所有内容。
@@ -94,9 +98,15 @@ ms.locfileid: "40806065"
   
 ## <a name="permissions-for-disposition"></a>处置权限
 
-若要获取对 "**处置**" 页面的访问权限，审阅者必须是 "**处置管理**" 角色和 "**仅查看审核日志**" 角色的成员。 我们建议创建一个名为 "处置审阅者" 的新角色组，将这两个角色添加到该角色组，然后将成员添加到该角色组。 
-  
-有关详细信息，请参阅[向用户授予对 Office 365 安全&amp;合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+若要获取对 "**处置**" 页面的访问权限，审阅者必须是 "**处置管理**" 角色和 "**仅查看审核日志**" 角色的成员。 我们建议您创建一个名为 "**处置审阅者**" 的新角色组，并将这两个角色添加到该角色组。 
+
+特定于**仅查看审核日志**角色：
+
+- 由于用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，因此您必须使用 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)（而不是使用 Security & 合规性中心中的 "**权限**" 页）为用户分配此角色。 有关说明，请参阅[在 Exchange Online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+
+- 此角色不支持 Office 365 组。 而是分配用户邮箱、邮件用户或启用邮件的安全组。
+
+有关向用户授予**处置管理**角色和创建新的**处置审阅者**角色的说明，请参阅[向用户授予对 Office 365 &amp;安全合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>在永久删除已释放内容之前的时间
 

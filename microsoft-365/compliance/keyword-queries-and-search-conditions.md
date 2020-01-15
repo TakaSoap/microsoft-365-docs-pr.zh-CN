@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: d76f92de4b41c7f6f0494af36a7e1aee953b9896
-ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
+ms.openlocfilehash: 2d3b69090d8b19d474e2049c2082516459d18148
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911470"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123653"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -188,7 +188,7 @@ ms.locfileid: "40911470"
   
 |**条件**|**说明**|
 |:-----|:-----|
-|Date|对于电子邮件而言，是指收件人收到邮件的日期，或发件人发送邮件的日期。 对于文档，是上次修改文档的日期。|
+|日期|对于电子邮件而言，是指收件人收到邮件的日期，或发件人发送邮件的日期。 对于文档，是上次修改文档的日期。|
 |发件人/作者|对于电子邮件而言，是指发送邮件的人。 对于文档而言，是指从 Office 文档的作者字段中引用的人员。 你可以键入多个名称，用逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
 |大小（以字节为单位）|对于电子邮件和文档而言，是项目的大小（以字节为单位）。|
 |主题/职务|对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如上文所述，Title 属性是在 Microsoft Office 文档中指定的元数据。 您可以键入多个主题/标题的名称，以逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
@@ -328,6 +328,12 @@ ms.locfileid: "40911470"
   
  `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
   
+## <a name="special-characters"></a>特殊字符
+
+某些特殊字符不包含在搜索索引中，因此不可搜索。 这还包括在搜索查询中表示搜索运算符的特殊字符。 下面的列表列出了由实际搜索查询中的空格替换或导致搜索错误的特殊字符。
+
+`+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
+
 ## <a name="searching-for-site-content-shared-with-external-users"></a>搜索与外部用户共享的网站内容
 
 您还可以使用安全 & 合规中心中的内容搜索功能搜索存储在 SharePoint 和 OneDrive for business 网站上的文档，这些文档已与组织外部的人员共享。 这可以帮助你识别与组织外部人员共享的敏感信息或专有信息。 可以通过在关键字查询中使用`ViewableByExternalUsers`属性来执行此操作。 此属性返回使用以下共享方法之一与外部用户共享的文档或网站： 
@@ -400,21 +406,19 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 ## <a name="search-tips-and-tricks"></a>搜索提示和技巧
 
 - 关键字搜索不区分大小写。 例如， **cat** 和 **CAT** 将返回相同的结果。 
-    
-- 布尔运算符**AND**、 **OR**、 **NOT**、 **NEAR**和**ONEAR**必须为大写。 
-    
-- 两个关键字或两个  `property:value` 表达式之间的空格与使用 **AND** 相同。 例如，返回`from:"Sara Davis" subject:reorganization`在 "主题" 行中包含 "重组" 一词的 "Sara Davis" 发送的所有邮件。 
-    
-- 使用与`property:value`格式相匹配的语法。 值不区分大小写，并且它们不可以在运算符后留有空格。 如果有空格，则您的预期值将是全文本搜索。 例如`to: pilarp` ，搜索 "pilarp" 作为关键字，而不是发送到 pilarp 的邮件。 
-    
-- 在搜索收件人属性（如 To、From、Cc 或 Recipients）时，您可以使用 SMTP 地址、别名或显示名来表示收件人。例如，您可以使用 pilarp@contoso.com、pilarp 或"Pilar Pinilla"。
-    
-- 只能使用前缀通配符搜索;例如， **cat\* **或**set\***。 后缀搜索（**\*cat**）、中缀搜索 **（\*c t**）和子字符串搜索**\*（\*cat**）不受支持。 
-    
-- 在搜索属性时，如果搜索值包含多个单词，则使用双引号（""）。 例如`subject:budget Q1` ，返回包含 "主题" 行中的**预算**的邮件，并在邮件或任何邮件属性中的任何位置包含**Q1** 。 使用`subject:"budget Q1"`返回 "主题" 行中任意位置包含**预算 Q1**的所有邮件。 
-    
-- 若要将使用某个属性值标记的内容从搜索结果中排除，请在属性名称前放置减号 (-)。 例如， `-from:"Sara Davis"`排除由 Sara Davis 发送的所有邮件。
 
-- 某些特殊字符不包含在搜索索引中，因此不可搜索，其中包括用于搜索的运算符（+-=:)和以下字符替换为 $null 或在搜索！时可能导致错误。 @ #% ^ &;_ / ?
+- 布尔运算符**AND**、 **OR**、 **NOT**、 **NEAR**和**ONEAR**必须为大写。 
+
+- 两个关键字或两个  `property:value` 表达式之间的空格与使用 **AND** 相同。 例如，返回`from:"Sara Davis" subject:reorganization`在 "主题" 行中包含 "重组" 一词的 "Sara Davis" 发送的所有邮件。 
+
+- 使用与`property:value`格式相匹配的语法。 值不区分大小写，并且它们不可以在运算符后留有空格。 如果有空格，则您的预期值将是全文本搜索。 例如`to: pilarp` ，搜索 "pilarp" 作为关键字，而不是发送到 pilarp 的邮件。 
+
+- 在搜索收件人属性（如 To、From、Cc 或 Recipients）时，您可以使用 SMTP 地址、别名或显示名来表示收件人。例如，您可以使用 pilarp@contoso.com、pilarp 或"Pilar Pinilla"。
+
+- 只能使用前缀通配符搜索;例如， **cat\* **或**set\***。 后缀搜索（**\*cat**）、中缀搜索 **（\*c t**）和子字符串搜索**\*（\*cat**）不受支持。
+
+- 在搜索属性时，如果搜索值包含多个单词，则使用双引号（""）。 例如`subject:budget Q1` ，返回包含 "主题" 行中的**预算**的邮件，并在邮件或任何邮件属性中的任何位置包含**Q1** 。 使用`subject:"budget Q1"`返回 "主题" 行中任意位置包含**预算 Q1**的所有邮件。
+
+- 若要将使用某个属性值标记的内容从搜索结果中排除，请在属性名称前放置减号 (-)。 例如， `-from:"Sara Davis"`排除由 Sara Davis 发送的所有邮件。
 
 - 您可以基于邮件类型导出项目。 例如，若要在 Microsoft 团队中导出 Skype 对话和聊天，请使用`kind:im`语法。 若要仅返回电子邮件，请使用`kind:email`。 若要在 Microsoft 团队中返回聊天、会议和呼叫， `kind:microsoftteams`请使用。

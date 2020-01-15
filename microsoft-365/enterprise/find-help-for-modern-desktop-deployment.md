@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在何处查找有关 Windows 10 和 Office 365 专业增强版部署的帮助和支持。
-ms.openlocfilehash: a6064fb49f6bdd44275a9038eeb8b264638ea618
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b7eb30e8a9b5b46635793e9c79e2609467d87848
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031017"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112536"
 ---
 # <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>查找有关 Windows 10 和 Office 365 专业增强版部署的帮助 
 
@@ -49,7 +49,7 @@ ms.locfileid: "38031017"
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Office 和 LOB 应用交付</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 专业增强版</a>配置和部署：Microsoft FastTrack 专家可帮助预配用户许可证，帮助配置安装和更新设置以便实现即点即用，以及帮助创建软件包（如果你的组织使用系统中心配置管理器）。</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 专业增强版</a>配置和部署：Microsoft FastTrack 专家可帮助预配用户许可证，帮助配置安装和更新设置以便实现即点即用，以及帮助创建软件包（如果你的组织使用 Microsoft Endpoint Configuration Manager）。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ ms.locfileid: "38031017"
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
 <td><p><strong>OS 部署和功能更新</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>：Microsoft FastTrack 专家可帮助预配用户许可证以及帮助进行以下方面的配置：针对新设备的 Windows Autopilot 和针对 Windows 10 及其他移动设备的 MDM 策略（包括应用部署）、Wi-Fi 和 VPN 配置文件、有关系统中心配置管理器的协同管理等。</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>：Microsoft FastTrack 专家可帮助预配用户许可证以及帮助进行以下方面的配置：针对新设备的 Windows Autopilot 和针对 Windows 10 及其他移动设备的 MDM 策略（包括应用部署）、Wi-Fi 和 VPN 配置文件、有关 Microsoft Endpoint Configuration Manager 的协同管理等。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
