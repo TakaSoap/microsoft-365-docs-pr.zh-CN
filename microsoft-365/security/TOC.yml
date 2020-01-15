@@ -412,6 +412,8 @@
               href: ./office-365-security/enable-the-report-message-add-in.md
             - name: 安全与合规中心内的消息跟踪
               href: ./office-365-security/message-trace-scc.md
+            - name: 查看安全与合规中心内的电子邮件安全报表
+              href: ./office-365-security/view-email-security-reports.md
             - name: 安全与合规中心内的邮件流见解
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
