@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 AlertEvents 表
 description: 在高级搜寻架构的 AlertEvents 表中，了解警报生成事件
-keywords: 高级搜寻, 威胁搜寻, 网络威胁搜寻, 搜索, 查询, 遥测, 架构参考, kusto, 表格, 列, 数据类型, 说明, alertevents, 警报, 严重性, 类别
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、alertevents、警报、严重性、类别
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ee14dcc1c2ae0a2bc6fa3c094d757441515f00de
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2d8c484f11e1384e1b98f05b907b043c33231f3f
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807011"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210077"
 ---
 # <a name="alertevents"></a>AlertEvents
 

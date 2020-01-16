@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceProcessEvents 表
 description: 了解高级搜寻架构的 DeviceProcessEventstable 中的过程生成或创建事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、processcreationevents、DeviceProcessEvents、进程 id、命令行、DeviceProcessEvents
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、processcreationevents、DeviceProcessEvents、进程 id、命令line，DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4e7899d06d9107ed5fdbaf67d507ed69a034329b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e65231b28e6baeff71ce8bc448b2955d062a46e9
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809237"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210377"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 

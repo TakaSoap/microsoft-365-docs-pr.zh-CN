@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft 威胁防护高级搜寻的共享查询
 description: 使用预定义的以及共享的查询快速启动威胁搜寻。 与公众或组织共享查询。
-keywords: 高级搜寻, 威胁搜寻, 网络威胁搜寻, 搜索, 查询, 遥测, 自定义检测, 架构, kusto, github 存储库, 我的查询, 共享查询
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、github 存储库、我的查询、共享查询
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fb8addc7bc9e8ab01cc72bbdf02c12559d263196
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 64c9b07dad0f109698222d3f3f079a4f3318273a
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808687"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210307"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 

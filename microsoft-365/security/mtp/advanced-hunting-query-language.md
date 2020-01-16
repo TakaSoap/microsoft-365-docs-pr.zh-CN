@@ -1,7 +1,7 @@
 ---
 title: 了解 Microsoft 威胁防护中的高级搜寻查询语言
 description: 创建你的第一个威胁搜寻查询，并了解高级搜寻查询语言的常见运算符和其他方面
-keywords: 高级搜寻, 威胁搜寻, 网络威胁搜寻, 搜索, 查询, 语言, 学习, 第一个查询, 遥测, 事件, 自定义检测, 架构, kusto, 运算符, 数据类型
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、语言、学习、第一个查询、遥测、事件、遥测、自定义检测、架构、kusto、运算符、数据类型
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b2b42c6a49a4422d73148b06e8379dcf1336e926
-ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
+ms.openlocfilehash: 36f2efb733e8403b30e0ecc406bb1ea2d6a6248e
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40999606"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210337"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 

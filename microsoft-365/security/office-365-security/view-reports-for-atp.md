@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
-ms.openlocfilehash: 1ddb5a549551e674fb257e4f78c81c5df1eb1a10
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 74ed1387af7792d8cb41d6f890deb89be07fc9fc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112726"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210504"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -96,12 +96,6 @@ ATP 报告包括以下内容：
 
 > [!NOTE]
 > 这是一个 "*保护趋势" 报告*，即数据表示较大数据集中的趋势。 此处报告不提供实时报告。 对于实时 URL，请单击 "数据"，请继续使用 URL 跟踪。
-
-## <a name="compromised-users-report"></a>已泄露用户报告
-
-此报告可供任何具有 Exchange Online Protection 的用户使用，并显示标记为可疑用户或受限制用户的用户帐户数。在帐户中，数据特别有用。输入指示用户帐户可能有问题的任何状态，甚至威胁. 通过频繁使用，已损坏的用户报告可以发现处于可疑或受限制状态的帐户中的峰值、甚至是趋势，从而提供证据可能存在安全和租户的 wellness 问题。
-
-![已泄露的用户会在 Office 365 中进行报告。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="atp-file-types-report"></a>ATP 文件类型报告
 

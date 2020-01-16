@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 中寻找威胁
 description: 使用 Microsoft 365 安全中心中的威胁搜寻功能主动发现违规行为和其他威胁
-keywords: security、恶意软件、Microsoft 365、M365、Microsoft 威胁防护、MTP、安全中心、智能寻线、威胁搜寻、cyberthreat 搜寻、Microsoft Defender ATP、Office 365 ATP、Azure ATP、高级搜寻
+keywords: Microsoft 365、M365、Microsoft 威胁防护、MTP、security center、查寻、威胁搜寻、cyberthreat 搜寻、Microsoft Defender ATP、Office 365 ATP、Azure ATP、高级搜寻
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e0f4c97a1c2963fc714420457208b40af688d86b
-ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
+ms.openlocfilehash: c2bb0b088a40511eea36348d39790fd5e88fa40b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41173498"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210157"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>在 Microsoft 365 中寻找威胁
 

@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceNetworkEvents 表
 description: 了解可以从高级搜寻架构的 DeviceNetworkEvents 表中查询的网络连接事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、devicenetworkevents、NetworkCommunicationEvents、网络连接、远程 ip、本地 ip
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、devicenetworkevents、NetworkCommunicationEvents、网络连接、远程 ip、本地 ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 82475ad15090250aa4fca70a6810cb869128102d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 6656aae93d6a8baca0cb351a29f41350b63bbd25
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809241"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210424"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 威胁防护中的高级搜寻最佳做法
 description: 了解如何在使用高级搜寻时构建快速、高效且无错误的威胁搜寻查询
-keywords: 高级搜寻, 威胁搜寻, 网络威胁搜寻, 搜索, 查询, 遥测, 自定义检测, 架构, kusto, 避免超时, 命令行, 进程 ID
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、避免超时、命令行、进程 id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 97c5f5541e1c3293346a53d87b950121e85e6eae
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: adb447916346ad83c95e64ef889d2986a106e776
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966862"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209937"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 

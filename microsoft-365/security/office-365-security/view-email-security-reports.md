@@ -1,9 +1,9 @@
 ---
-title: 查看安全&amp;合规性中心中的电子邮件安全报告
+title: 查看安全&amp;合规性中心中的电子邮件安全报告、受到威胁的用户、加密、威胁保护状态、恶意软件检测、热门恶意软件、垃圾邮件检测、发送和接收的电子邮件、用户报告的消息、阅读报告、检测、安全数据、安全信息
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/29/2019
+ms.date: 01/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: 70eceb8d7afa227027b71d475aa22b2151f2dea6
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112317"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209947"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 
@@ -29,7 +29,8 @@ ms.locfileid: "41112317"
 ![可在其中查看高级威胁防护的工作方式的仪表板](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 您的电子邮件安全报告包括以下内容：
-- [加密报告](#encryption-report)（新！）
+- [已泄露的用户报告（**新！**）](#compromised-users-report-new)
+- [加密报告](#encryption-report)
 - [威胁防护状态](#threat-protection-status-report) 
 - [恶意软件检测报告](#malware-detections-report) 
 - [主要恶意软件报告](#top-malware-report)
@@ -38,10 +39,17 @@ ms.locfileid: "41112317"
 - [垃圾邮件检测报告](#spam-detections-report)
 - [发送和接收的电子邮件报告](#sent-and-received-email-report)
 - [用户报告的邮件报告](#user-reported-messages-report)
-    
+
+
+## <a name="compromised-users-report-new"></a>已泄露的用户报告（**新！**） 
+
+此报告可供任何具有 Exchange Online Protection 的用户使用，并显示标记为可疑用户或受限制用户的用户帐户数。在帐户中，数据特别有用。输入指示用户帐户可能有问题的任何状态，甚至威胁. 通过频繁使用，已损坏的用户报告可以发现处于可疑或受限制状态的帐户中的峰值、甚至是趋势，从而提供证据可能存在安全和租户的 wellness 问题。
+
+![已泄露的用户会在 Office 365 中进行报告。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="encryption-report"></a>加密报告
 
-（**新！**）**加密报告**显示有关通过组织策略或通过最终用户控件进行加密的电子邮件的信息。 您组织的安全团队可以使用此报告中的信息来标识模式，并主动应用或调整敏感电子邮件的策略。
+**加密报告**显示有关通过组织策略或通过最终用户控件进行加密的电子邮件的信息。 您组织的安全团队可以使用此报告中的信息来标识模式，并主动应用或调整敏感电子邮件的策略。
 
 若要查看此报告，请在安全 & 合规性中心中，转到 "**报告** \> **" 仪表板** \> **加密报告**。
 

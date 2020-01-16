@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceInfo 表
 description: 了解高级搜寻架构的 DeviceInfo 表中的操作系统、计算机名称和其他计算机信息
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、machineinfo、DeviceInfo、设备、计算机、OS、平台、用户
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、machineinfo、DeviceInfo、设备、计算机、OS、平台，用户
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1141447de9b7ac714fb200dab56c4c2e8d75a05d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4c8c5cef3ba99339176086ada055d266f92c30cf
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809245"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210444"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0f54ee771f4358c5c99c3338366eb277013c15e3
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: 284efd5224f3e48ab718c0de0c877f68fc0bdecc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012175"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210474"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全评分（预览）
 
@@ -53,7 +53,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包括的产品
 
-目前，我们提供了 Office 365 的一些建议（包括 SharePoint Online、Exchange Online、OneDrive for business、Microsoft 信息保护等）、Azure AD、Intune、Microsoft Defender ATP 和云应用安全性。 即将推出针对其他安全产品的建议。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为第三方覆盖。
+目前，我们提供了 Office 365 的一些建议（包括 SharePoint Online、Exchange Online、OneDrive for Business、Microsoft 信息保护等）、Azure AD、Microsoft Defender ATP 和云应用安全性。 即将推出针对其他安全产品的建议。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为第三方覆盖。
 
 ## <a name="required-permissions"></a>所需权限
 
