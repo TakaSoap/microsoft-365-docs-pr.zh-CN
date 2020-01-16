@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b1832e2080c3178837f43cbfd45366fc4d48322d
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970850"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173818"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
@@ -41,7 +41,7 @@ Microsoft 威胁防护通过集成 Microsoft Defender 高级威胁防护 (ATP)�
 ## <a name="start-using-the-service"></a>开始使用服务
 打开 Microsoft 威胁防护服务可聚合来自各种集成服务的数据。 系统将对数据进行集中处理和存储，以确定新的见解，并使集中的响应工作流程成为可能。
 
-在你打开该服务之前，Microsoft 365 安全中心 ([security.microsoft.com](https://security.microsoft.com)) 不会在菜单上显示“**事件**”和“**操作中心**”选项。
+在将该服务打开之前，Microsoft 365 安全中心（[security.microsoft.com](https://security.microsoft.com)）不会在菜单上显示**事件**和**操作中心**选项。
 
 ![不包含 Microsoft 威胁防护功能的 Microsoft 365 安全中心菜单图像](../images/mtp-off.png)
 *关闭了 Microsoft 威胁防护的 Microsoft 365 安全中心*
@@ -71,7 +71,7 @@ Microsoft 威胁防护通过集成 Microsoft Defender 高级威胁防护 (ATP)�
 
 ## <a name="get-assistance"></a>获取帮助
 
-Microsoft 员工可以帮助在你的租户上设置或取消设置服务和相关资源。 如需帮助，[请联系顶级支持](https://go.microsoft.com/fwlink/?LinkID=733758)。
+Microsoft 员工可以帮助在你的租户上设置或取消设置服务和相关资源。 若要获取帮助，请在 Microsoft 365 安全中心中选择 **"需要帮助？** "。 在描述你的顾虑时，请注明 "Microsoft 威胁防护"。
 
 ## <a name="related-topics"></a>相关主题
 

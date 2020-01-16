@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: b2dbc9bdef01c349e7c9dc7e3716c661775d2a81
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: d470d6c8184f87af1ad78aae2979c6b87ca81676
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "39266097"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122451"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 
@@ -350,6 +350,8 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
   
 ## <a name="upload-your-rule-package"></a>上传规则包
 
+
+
 若要上传规则包，请按照以下步骤操作：
   
 1. 将文件另存为采用 Unicode 编码的 .xml 文件。
@@ -359,18 +361,21 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
 3. 使用以下语法：
 
 ```powershell
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte) -ReadCount 0
 ```
 
     This example uploads the Unicode XML file named MyNewRulePack.xml from C:\My Documents.
 
 ```powershell
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte)
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte) -ReadCount 0
 ```
 
     For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage).
 
-5. 若要验证是否已成功新建敏感信息类型，请按以下任一步骤操作：
+> [!NOTE]
+> 自定义敏感信息类型集合的限制是 10。
+
+4. 若要验证是否已成功新建敏感信息类型，请按以下任一步骤操作：
 
   - 运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，验证新规则包是否已列出：
 

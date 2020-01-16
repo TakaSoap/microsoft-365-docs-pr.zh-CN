@@ -1,7 +1,7 @@
 ---
 title: 使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates 已验证，当 Exchange Online 和安全与合规中心按建议配置时，它们满足 CFTC 规则 1.31(c)-(d)、FINRA 规则 4511 和 SEC 规则 17a-4 的相关存储要求。可以下载评估报告。
-ms.openlocfilehash: 60b8d27ed75afbfd6ffc5d8e254738ea62e0d21b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075231"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122421"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4
 
@@ -65,7 +65,7 @@ Cohasset 验证了当 Exchange Online 和安全与合规中心按照建议进行
 
 ## <a name="known-limitations"></a>已知限制
 
-我们注意到，Exchange Online 中存在一些限制。目前正在积极处理，并希望在 2019 年 7 月发布对以下场景的支持：
+目前，Exchange Online 有一些限制：
 
 - 项目级审核在 Office 365 组邮箱中不可用。
 - 线程通信不适用于 Teams 聊天和频道消息。
