@@ -1,0 +1,62 @@
+---
+title: 高级搜寻架构中的 DeviceFileCertificateInfoBeta 表
+description: 了解高级搜寻架构的 DeviceFileCertificateInfoBeta 表中的文件签名信息
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、数字签名、证书、文件签名DeviceFileCertificateInfoBeta
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: lomayor
+author: lomayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: d51fc812ffb82d9af1f706e513498da7611a1a6b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210464"
+---
+# <a name="devicefilecertificateinfobeta"></a><span data-ttu-id="dc82c-104">DeviceFileCertificateInfoBeta</span><span class="sxs-lookup"><span data-stu-id="dc82c-104">DeviceFileCertificateInfoBeta</span></span>
+
+<span data-ttu-id="dc82c-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="dc82c-105">**Applies to:**</span></span>
+- <span data-ttu-id="dc82c-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="dc82c-106">Microsoft Threat Protection</span></span>
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+<span data-ttu-id="dc82c-107">`DeviceFileCertificateInfoBeta` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关文件签名证书的信息。</span><span class="sxs-lookup"><span data-stu-id="dc82c-107">The `DeviceFileCertificateInfoBeta` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file signing certificates.</span></span> <span data-ttu-id="dc82c-108">此表使用从证书验证活动获取的数据，这些数据定期对终结点上的文件执行。</span><span class="sxs-lookup"><span data-stu-id="dc82c-108">This table uses data obtained from certificate verification activities regularly performed on files on endpoints.</span></span>
+
+<span data-ttu-id="dc82c-109">有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="dc82c-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+
+| <span data-ttu-id="dc82c-110">列名称</span><span class="sxs-lookup"><span data-stu-id="dc82c-110">Column name</span></span> | <span data-ttu-id="dc82c-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="dc82c-111">Data type</span></span> | <span data-ttu-id="dc82c-112">说明</span><span class="sxs-lookup"><span data-stu-id="dc82c-112">Description</span></span> |
+|-------------|-----------|-------------|
+| `Timestamp` | <span data-ttu-id="dc82c-113">datetime</span><span class="sxs-lookup"><span data-stu-id="dc82c-113">datetime</span></span> | <span data-ttu-id="dc82c-114">记录事件的日期和时间</span><span class="sxs-lookup"><span data-stu-id="dc82c-114">Date and time when the event was recorded</span></span>
+| `DeviceId` | <span data-ttu-id="dc82c-115">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-115">string</span></span> | <span data-ttu-id="dc82c-116">服务中的计算机的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="dc82c-116">Unique identifier for the machine in the service</span></span>
+| `DeviceName` | <span data-ttu-id="dc82c-117">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-117">string</span></span> | <span data-ttu-id="dc82c-118">计算机的完全限定域名 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="dc82c-118">Fully qualified domain name (FQDN) of the machine</span></span>
+| `SHA1` | <span data-ttu-id="dc82c-119">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-119">string</span></span> | <span data-ttu-id="dc82c-120">录制操作所应用到的文件的 SHA-1</span><span class="sxs-lookup"><span data-stu-id="dc82c-120">SHA-1 of the file that the recorded action was applied to</span></span>
+| `IsSigned` | <span data-ttu-id="dc82c-121">boolean</span><span class="sxs-lookup"><span data-stu-id="dc82c-121">boolean</span></span> | <span data-ttu-id="dc82c-122">指示文件是否已签名</span><span class="sxs-lookup"><span data-stu-id="dc82c-122">Indicates whether the file is signed</span></span>
+| `SignatureType` | <span data-ttu-id="dc82c-123">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-123">string</span></span> | <span data-ttu-id="dc82c-124">指示是否已将签名信息作为文件本身的嵌入内容读取或从外部目录文件读取</span><span class="sxs-lookup"><span data-stu-id="dc82c-124">Indicates whether signature information was read as embedded content in the file itself or read from an external catalog file</span></span>
+| `Signer` | <span data-ttu-id="dc82c-125">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-125">string</span></span> | <span data-ttu-id="dc82c-126">有关文件签名者的信息</span><span class="sxs-lookup"><span data-stu-id="dc82c-126">Information about the signer of the file</span></span>
+| `SignerHash` | <span data-ttu-id="dc82c-127">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-127">string</span></span> | <span data-ttu-id="dc82c-128">标识签名者的唯一哈希值</span><span class="sxs-lookup"><span data-stu-id="dc82c-128">Unique hash value identifying the signer</span></span>
+| `Issuer` | <span data-ttu-id="dc82c-129">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-129">string</span></span> | <span data-ttu-id="dc82c-130">有关颁发证书颁发机构（CA）的信息</span><span class="sxs-lookup"><span data-stu-id="dc82c-130">Information about the issuing certificate authority (CA)</span></span>
+| `IssuerHash` | <span data-ttu-id="dc82c-131">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-131">string</span></span> | <span data-ttu-id="dc82c-132">标识颁发证书颁发机构（CA）的唯一哈希值</span><span class="sxs-lookup"><span data-stu-id="dc82c-132">Unique hash value identifying issuing certificate authority (CA)</span></span>
+| `CrlDistributionPointUrls` | <span data-ttu-id="dc82c-133">string</span><span class="sxs-lookup"><span data-stu-id="dc82c-133">string</span></span> |  <span data-ttu-id="dc82c-134">包含证书和证书吊销列表（CRL）的网络共享的 URL</span><span class="sxs-lookup"><span data-stu-id="dc82c-134">URL of the network share that contains certificates and the certificate revocation list (CRL)</span></span>
+| `CertificateCreationTime` | <span data-ttu-id="dc82c-135">datetime</span><span class="sxs-lookup"><span data-stu-id="dc82c-135">datetime</span></span> | <span data-ttu-id="dc82c-136">证书的创建日期和时间</span><span class="sxs-lookup"><span data-stu-id="dc82c-136">Date and time the certificate was created</span></span>
+| `CertificateExpirationTime` | <span data-ttu-id="dc82c-137">datetime</span><span class="sxs-lookup"><span data-stu-id="dc82c-137">datetime</span></span> | <span data-ttu-id="dc82c-138">将证书设置为过期的日期和时间</span><span class="sxs-lookup"><span data-stu-id="dc82c-138">Date and time the certificate is set to expire</span></span>
+| `CertificateCountersignatureTime` | <span data-ttu-id="dc82c-139">datetime</span><span class="sxs-lookup"><span data-stu-id="dc82c-139">datetime</span></span> | <span data-ttu-id="dc82c-140">副署证书的日期和时间</span><span class="sxs-lookup"><span data-stu-id="dc82c-140">Date and time the certificate was countersigned</span></span>
+| `IsTrusted` | <span data-ttu-id="dc82c-141">boolean</span><span class="sxs-lookup"><span data-stu-id="dc82c-141">boolean</span></span> | <span data-ttu-id="dc82c-142">指示文件是否受 WinVerifyTrust 函数的结果（检查未知的根证书信息、无效签名、吊销的证书以及其他可疑属性）的信任。</span><span class="sxs-lookup"><span data-stu-id="dc82c-142">Indicates whether the file is trusted based on the results of the WinVerifyTrust function, which checks for unknown root certificate information, invalid signatures, revoked certificates, and other questionable attributes</span></span>
+| `IsRootSignerMicrosoft` | <span data-ttu-id="dc82c-143">boolean</span><span class="sxs-lookup"><span data-stu-id="dc82c-143">boolean</span></span> | <span data-ttu-id="dc82c-144">指示根证书的签名者是否为 Microsoft</span><span class="sxs-lookup"><span data-stu-id="dc82c-144">Indicates whether the signer of the root certificate is Microsoft</span></span>
+| `ReportId` | <span data-ttu-id="dc82c-145">long</span><span class="sxs-lookup"><span data-stu-id="dc82c-145">long</span></span> | <span data-ttu-id="dc82c-146">基于重复计数器的事件标识符。</span><span class="sxs-lookup"><span data-stu-id="dc82c-146">Event identifier based on a repeating counter.</span></span> <span data-ttu-id="dc82c-147">若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用。</span><span class="sxs-lookup"><span data-stu-id="dc82c-147">To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="dc82c-148">相关主题</span><span class="sxs-lookup"><span data-stu-id="dc82c-148">Related topics</span></span>
+- [<span data-ttu-id="dc82c-149">主动搜寻威胁</span><span class="sxs-lookup"><span data-stu-id="dc82c-149">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="dc82c-150">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="dc82c-150">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="dc82c-151">使用共享查询</span><span class="sxs-lookup"><span data-stu-id="dc82c-151">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="dc82c-152">跨设备和电子邮件搜寻威胁</span><span class="sxs-lookup"><span data-stu-id="dc82c-152">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="dc82c-153">了解架构</span><span class="sxs-lookup"><span data-stu-id="dc82c-153">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="dc82c-154">应用查询最佳做法</span><span class="sxs-lookup"><span data-stu-id="dc82c-154">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
