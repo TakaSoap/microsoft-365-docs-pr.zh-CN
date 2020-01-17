@@ -5,7 +5,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/01/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: c62db0d77ed805c607e79bf25cb9816a554cb6d2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0e164afca97818d2082ddf4053df791317e29ac5
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802825"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41218582"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
@@ -39,35 +39,37 @@ ms.locfileid: "40802825"
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
-现在，您还可以将灵敏度标签应用于 Microsoft 团队、Office 365 组和 SharePoint 网站。 [了解详细信息](sensitivity-labels-teams-groups-sites.md)。
+现在，您还可以将灵敏度标签应用于 Microsoft 团队、Office 365 组和 SharePoint 网站。 有关此单独预览的详细信息，请参阅[使用敏感度标签与 Microsoft 团队、Office 365 组和 SharePoint 网站（公共预览版）](sensitivity-labels-teams-groups-sites.md)。
 
-如有必要，可随时退出预览。
+你随时都可以选择退出此预览。
 
 ## <a name="requirements"></a>Requirements
 
-这些功能仅适用于[敏感度标签](sensitivity-labels.md)。 如果你使用的是 Azure 信息保护标签，则可以将其转换为敏感度标签，以对你上载的新文件启用这些功能。 [了解方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
+这些功能仅适用于[敏感度标签](sensitivity-labels.md)。 如果你当前有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便可以为上传的新文件启用这些功能。 有关说明，请参阅[如何将 Azure 信息保护标签迁移到统一敏感度标签](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
-对于此预览，请在 Windows 和版本19.002.0107.0008 或更高版本的 Mac 上使用 OneDrive 同步应用版本19.002.0121.0008 或更高版本。 这两个版本都是在2019年1月28日发布的，并且当前已发布到所有震铃。 [请参阅 OneDrive 发行说明](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 启用此预览后，将提示运行较早版本的同步应用的用户进行更新。
+对于此预览，请在 Windows 上使用 OneDrive 同步应用版本19.002.0121.0008 或更高版本，并在 Mac 上使用版本19.002.0107.0008 或更高版本。 这两个版本都发布了2019年1月28日，并且当前已发布到所有震铃。 有关详细信息，请参阅[OneDrive 发行说明](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 启用此预览后，系统会提示运行较旧版本的同步应用程序的用户对其进行更新。
 
 ## <a name="limitations"></a>限制
 
-- 如果启用此预览，则使用 Office 桌面或移动应用将标签应用于文件的用户可能无法保存对文件所做的其他更改。 相反，应用程序会提示用户另存为或放弃本地更改。 若要避免丢失工作，请执行以下操作之一：
-
-  - 若要应用标签，请使用 Office 应用的 web 版本。
-
-  - 在应用标签后关闭文件，然后重新打开该文件以进行其他更改。
+- 如果启用此预览，则在 OneDrive 同步文件夹中将标签更改为文件的用户可能无法保存对该文件所做的其他更改。  用户看到一个[带有白色交叉图标错误的红色圆圈](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，并要求他们将新的更改另存为一个单独副本。  除了用户启动的标签更改之外，如果管理员更改已应用于下载到用户同步客户端的文件的已发布标签的设置，也会发生相同的行为。
+    
+    若要避免在这些情况下丢失工作，请执行以下操作之一：
+    - 若要应用标签，请使用 Office 应用的 web 版本。
+    - 在应用标签后关闭文件，然后重新打开该文件以进行其他更改。
 
 - SharePoint 不会自动将新标签应用于已使用 Azure 信息保护标签加密的现有文件。 若要在启用此预览后获取要运行的功能，请完成以下任务：
+    
+    1. 确保已将 Azure 信息保护标签迁移到了敏感度标签，并已将其从 Microsoft 365 合规性中心或等效的标签管理中心进行了发布。
+    
+    2. 下载文件并将其上载到 SharePoint。
 
-  - 将 Azure 信息保护标签转换为敏感度标签。
+- 当应用了加密的标签具有以下加密配置之一时，SharePoint 将无法处理加密文件：
+    - **允许用户在应用标签**和**Word、PowerPoint 和 Excel 中分配权限，提示用户指定权限**
+    - **用户对内容的访问权限**设置为**永不**过期的值。
 
-  - 下载文件并将其上载到 SharePoint。
+- 对于向用户授予编辑权限的加密文档，不能在 Office 应用程序的 web 版本中阻止复制。
 
-- SharePoint 无法处理带有过期日期的自定义权限和标签的标签。
-
-- 当用户拥有编辑权限时，无论标签中的副本策略设置如何，Office 应用程序的 web 版本都允许复制。
-
-- 不支持 RMS 吊销、跟踪和报告。
+- 不支持 Azure 信息保护文档跟踪网站。
 
 - Office 桌面应用程序和移动应用程序不支持共同创作。 相反，这些应用将继续以独占编辑模式打开文件。
 
@@ -85,11 +87,11 @@ ms.locfileid: "40802825"
 
 2. 或者，如果您已从 Microsoft 下载中心安装了早期版本的 SharePoint Online 命令行管理程序，则还可以转到 "**添加或删除程序**"，然后卸载 SharePoint Online 命令行管理程序。
 
-3. 在 web 浏览器中，转到 "下载中心" 页面并[下载最新的 SharePoint Online 命令行管理](https://go.microsoft.com/fwlink/p/?LinkId=255251)程序。
+3. 在 Web 浏览器中，转到“下载中心”页面，[下载最新的 SharePoint Online 命令行管理程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)。
 
-4. 选择您的语言，然后单击 "**下载**"。
+4. 选择语言，然后单击“**下载**”。
 
-5. 在 x64 和 x86 .msi 文件之间进行选择。 如果运行的是64位版本的 Windows 或 x86 文件（如果运行32位版本），请下载 x64 文件。 如果您不知道，请参阅[我运行的是哪个版本的 Windows 操作系统？](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. 在 x64 和 x86.msi 文件之间进行选择。 如果运行的是64位版本的 Windows 或 x86 文件（如果运行32位版本），请下载 x64 文件。 如果您不知道，请参阅[我运行的是哪个版本的 Windows 操作系统？](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
 
 6. 下载文件后，运行文件并按照安装向导中的步骤操作。
