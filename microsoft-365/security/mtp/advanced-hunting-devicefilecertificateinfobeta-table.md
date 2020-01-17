@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d51fc812ffb82d9af1f706e513498da7611a1a6b
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 4d5769088f3904bf62d2889f35f236c9410628db
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210464"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230200"
 ---
 # <a name="devicefilecertificateinfobeta"></a>DeviceFileCertificateInfoBeta
 
@@ -35,23 +35,24 @@ ms.locfileid: "41210464"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | 记录事件的日期和时间
-| `DeviceId` | string | 服务中的计算机的唯一标识符
-| `DeviceName` | string | 计算机的完全限定域名 (FQDN)
-| `SHA1` | string | 录制操作所应用到的文件的 SHA-1
-| `IsSigned` | boolean | 指示文件是否已签名
-| `SignatureType` | string | 指示是否已将签名信息作为文件本身的嵌入内容读取或从外部目录文件读取
-| `Signer` | string | 有关文件签名者的信息
-| `SignerHash` | string | 标识签名者的唯一哈希值
-| `Issuer` | string | 有关颁发证书颁发机构（CA）的信息
-| `IssuerHash` | string | 标识颁发证书颁发机构（CA）的唯一哈希值
-| `CrlDistributionPointUrls` | string |  包含证书和证书吊销列表（CRL）的网络共享的 URL
-| `CertificateCreationTime` | datetime | 证书的创建日期和时间
-| `CertificateExpirationTime` | datetime | 将证书设置为过期的日期和时间
-| `CertificateCountersignatureTime` | datetime | 副署证书的日期和时间
-| `IsTrusted` | boolean | 指示文件是否受 WinVerifyTrust 函数的结果（检查未知的根证书信息、无效签名、吊销的证书以及其他可疑属性）的信任。
-| `IsRootSignerMicrosoft` | boolean | 指示根证书的签名者是否为 Microsoft
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用。
+| `Timestamp` | datetime | 记录事件的日期和时间 |
+| `DeviceId` | string | 服务中的计算机的唯一标识符 |
+| `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
+| `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
+| `IsSigned` | boolean | 指示文件是否已签名 |
+| `SignatureType` | string | 指示是否以嵌入方式读取签名信息 | 文件本身的内容或从外部目录文件读取 |
+| `Signer` | string | 有关文件签名者的信息 |
+| `SignerHash` | string | 标识签名者的唯一哈希值 |
+| `Issuer` | string | 有关颁发证书颁发机构（CA）的信息 |
+| `IssuerHash` | string | 标识颁发证书颁发机构（CA）的唯一哈希值 |
+| `CertificateSerialNumber` | string | 证书对于颁发证书颁发机构（CA）的唯一标识符 |
+| `CrlDistributionPointUrls` | string |  JSON 数组，列出包含证书和证书吊销列表（Crl）的网络共享的 Url |
+| `CertificateCreationTime` | datetime | 证书的创建日期和时间 |
+| `CertificateExpirationTime` | datetime | 将证书设置为过期的日期和时间 |
+| `CertificateCountersignatureTime` | datetime | 副署证书的日期和时间 |
+| `IsTrusted` | boolean | 指示文件是否受 WinVerifyTrust 函数的结果（检查未知的根证书信息、无效签名、吊销的证书以及其他可疑属性）的信任。 |
+| `IsRootSignerMicrosoft` | boolean | 指示根证书的签名者是否为 Microsoft |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用。 | 
 
 ## <a name="related-topics"></a>相关主题
 - [主动搜寻威胁](advanced-hunting-overview.md)

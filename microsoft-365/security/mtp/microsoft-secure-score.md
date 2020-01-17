@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210147"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230190"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -170,6 +170,7 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 - 启用审核数据记录
 - 发现有风险和不兼容的卷影 IT 应用程序
 - 查看权限 & 阻止连接到您的环境的有风险的 OAuth 应用程序
+- 在 SharePoint online 文档库中设置版本控制
 
 ### <a name="mfa-improvement-action-updates"></a>MFA 改进操作更新
 

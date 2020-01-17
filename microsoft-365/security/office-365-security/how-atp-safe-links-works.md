@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "\"安全链接\" 功能可提供对 Office 文档中的超链接和电子邮件中的超链接的单击时间验证。 阅读本文，了解 ATP 安全链接的工作原理。"
-ms.openlocfilehash: bf6c2f0460bc285d0093019812e295c1cfe5ce66
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 56b9ce71ed0f695e2f9ee7d833ecbc980a94edd8
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970758"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230180"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 ATP 安全链接的工作原理
          
@@ -36,9 +36,7 @@ ms.locfileid: "39970758"
 5. 用户打开一封电子邮件，然后单击电子邮件中的 URL。
     
 6. ATP 安全链接功能将在打开网站之前立即检查 URL。 该 URL 被标识为 "阻止"、"恶意" 或 "安全"。
-    
-   - 如果 URL 指向的网站包含在适用于该用户的策略的[自定义 "不重写" url 列表](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)中，则会打开该网站。 
-    
+        
    - 如果 URL 指向的网站包含在组织的[自定义阻止 url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)中，则会打开一个[警告页面](atp-safe-links-warning-pages.md)。 
     
    - 如果 URL 指向已确定为恶意的网站，将打开 "[警告" 页](atp-safe-links-warning-pages.md)。 

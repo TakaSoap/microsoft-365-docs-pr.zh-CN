@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e67ff2b28a6dec741b2ad7af5179dca226fb86ad
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962569"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230210"
 ---
 # <a name="manage-tickets-through-servicenow"></a>通过 ServiceNow 管理票证
 
@@ -109,15 +109,19 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 转到 ServiceNow 中的 "应用程序注册表" 表（菜单 > 系统 OAuth > 应用程序注册表），并查找您创建的 OAuth 实体（您为其分配的名称）。
 
-### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>如何验证在安装清单中创建的集成用户是否符合 Microsoft 365 安全 & 合规性连接器
-
-转到 ServiceNow 中的 "用户" 表（菜单 > 用户管理 > 用户），并查找您创建的集成用户（您为其分配的名称）。
+### <a name="logging-in-as-the-integration-user"></a>作为集成用户登录
 
 在授权 Microsoft 365 安全中心和 ServiceNow 之间的连接之前，请确保使用您在安装步骤中创建的集成用户登录名和密码。 请勿使用你的个人凭据。
 
-### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>安装已完成，但看不到票证且无法共享
+1. 转到 ServiceNow 中的 "授权" 页面。
+2. 如果使用个人凭据登录，请选择右上角的 "**不**链接"。
+3. 以您以前从安装清单创建的集成用户的形式登录到 ServiceNow。  
+4. 在 ServiceNow 页面中选择 "**允许**"，询问安全 + 合规性连接器是否可以连接到你的 ServiceNow 帐户。
+5. 继续执行设置步骤。
 
-如果已完成安装和设置步骤，但您在主页上看不到 ServiceNow 卡，并且无法从 Microsoft 安全分数中共享到 ServiceNow，请在处https://security.microsoft.com/ticketProvisioning检查设置页面的状态。 选择 "**保存**" 并返回到主页。 应显示卡片。
+### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>如何验证在安装清单中创建的集成用户是否符合 Microsoft 365 安全 & 合规性连接器
+
+转到 ServiceNow 中的 "用户" 表（菜单 > 用户管理 > 用户），并查找您创建的集成用户（您为其分配的名称）。
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>你的公司启用了单一登录，这将阻止你通过 Microsoft 365 安全中心连接到 ServiceNow
 
@@ -135,3 +139,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 1. 在 Azure Active Directory 中创建具有安全管理员权限的用户。 用户需要与您在安装清单中创建的集成用户具有相同的名称和电子邮件地址。 登录和连接完成后，可以删除安全管理员角色。
 2. 作为此用户登录到 Microsoft 365 安全中心，并按照安装步骤进行操作。
+
+### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>安装已完成，但看不到票证且无法共享
+
+如果已完成安装和设置步骤，但您在主页上看不到 ServiceNow 卡，并且无法从 Microsoft 安全分数中共享到 ServiceNow，请在处https://security.microsoft.com/ticketProvisioning检查设置页面的状态。 选择 "**保存**" 并返回到主页。 应显示卡片。
