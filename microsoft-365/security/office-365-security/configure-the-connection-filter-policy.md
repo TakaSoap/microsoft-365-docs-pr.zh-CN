@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要确保从不受信任的人发送的电子邮件被阻止，可以使用连接筛选器策略创建您信任的 IP 地址的允许列表（也称为 "安全发件人列表"）。 您还可以创建阻止的发件人列表。
-ms.openlocfilehash: d3151ab436c5d904897d518fa119d52a11db4850
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971830"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238419"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
 
@@ -29,7 +29,7 @@ ms.locfileid: "39971830"
 
 - 可以将创建阻止列表的连接筛选器策略视为筛选器中的 "仅捕获较少" 或 "不可信" 帐户。
 
- 有关适用于整个组织的更多垃圾邮件设置，请查看[如何防止在 office 365 中将电子邮件标记为垃圾](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)邮件或在[office 365 中减少垃圾](reduce-spam-email.md)邮件。 如果您拥有管理员级别控制，并且您想要防止误报或漏报问题，这些内容会很有帮助。
+ 有关适用于整个组织的更多垃圾邮件设置，请查看[如何防止在 office 365 中将电子邮件标记为垃圾](prevent-email-from-being-marked-as-spam.md)邮件或在[office 365 中减少垃圾](reduce-spam-email.md)邮件。 如果您拥有管理员级别控制，并且您想要防止误报或漏报问题，这些内容会很有帮助。
 
 > [!TIP]
 > 您可能想要暂停并阅读有关如何创建[允许（或安全发件人）列表](create-safe-sender-lists-in-office-365.md)和[阻止列表](create-block-sender-lists-in-office-365.md)的说明。
@@ -149,7 +149,7 @@ ms.locfileid: "39971830"
 |:-----|
 |![LinkedIn Learning 短图标](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **刚开始接触 Office 365？** 发现 LinkedIn Learning 向 **Office 365 admins and IT pros**提供的免费视频课程。|
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>有关详细信息
 
 [Exchange Online 中的安全发件人和阻止发件人列表](safe-sender-and-blocked-sender-lists-faq.md)
 
@@ -157,6 +157,6 @@ ms.locfileid: "39971830"
 
 [配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)
 
-[如何防止在 Office 365 中将电子邮件正确标记为垃圾邮件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[如何避免在 Office 365 中将有效的电子邮件标记为“垃圾邮件”](prevent-email-from-being-marked-as-spam.md)
 
 [如何减少 Office 365 中的垃圾电子邮件](reduce-spam-email.md)

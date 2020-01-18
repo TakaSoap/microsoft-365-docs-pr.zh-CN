@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 了解可帮助您阻止 Exchange Online 和 Office 365 中的垃圾邮件的反垃圾邮件设置和筛选器。 在 Office 365 中获取过多垃圾邮件？ 您可以自定义垃圾邮件筛选器和反垃圾邮件策略设置。
-ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 33a1415306dcfc635e6c5608f3834b79932d9420
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970898"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238529"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 电子邮件反垃圾邮件保护
 
@@ -34,7 +34,7 @@ ms.locfileid: "39970898"
 
 对于拥有 Office 365 企业版 E5 或购买了高级威胁防护（ATP）许可证的客户，欺骗版智能使用连接筛选来创建欺骗您的域的发件人的允许名单和阻止名单。 有关详细信息，请参阅[了解有关欺骗情报的详细](learn-about-spoof-intelligence.md)信息。
 
- **垃圾邮件筛选**： Office 365 使用垃圾邮件筛选检查邮件特征与垃圾邮件的一致性。 您可以更改要对已识别为垃圾邮件采取的操作，同时选择是否筛选以特定语言编写，或来自特定国家或地区的邮件。 如果您希望主动进行垃圾邮件筛选，您也可以启用高级垃圾邮件筛选选项。 此外，您可以配置最终用户垃圾邮件通知，在原本要发送给用户的邮件被发送到隔离邮箱时通知用户。 （将邮件发送到隔离是可配置的操作之一。）在这些通知中，最终用户可以释放误报并将其报告给 Microsoft 进行分析。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。 为了帮助阻止 Office 365 中的垃圾邮件，请使用垃圾邮件筛选（如果你担心 Office 365 中的垃圾邮件过多），请使用连接筛选帮助阻止垃圾邮件。
+ **垃圾邮件筛选**： Office 365 使用垃圾邮件筛选检查邮件特征与垃圾邮件的一致性。 您可以更改要对已识别为垃圾邮件采取的操作，同时选择是否筛选以特定语言编写，或来自特定国家或地区的邮件。 如果您希望主动进行垃圾邮件筛选，您也可以启用高级垃圾邮件筛选选项。 此外，您可以配置最终用户垃圾邮件通知，在原本要发送给用户的邮件被发送到隔离邮箱时通知用户。 （将邮件发送到隔离是可配置的操作之一。）在这些通知中，最终用户可以释放误报并将其报告给 Microsoft 进行分析。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。 为了帮助阻止 Office 365 中的垃圾邮件，请使用垃圾邮件筛选（如果你担心 Office 365 中的垃圾邮件过多），请使用连接筛选帮助阻止垃圾邮件。
 
 > [!NOTE]
 > 对于 EOP 独立客户：默认情况下，EOP 垃圾邮件筛选器将检测到的垃圾邮件发送到每个收件人的 "垃圾邮件" 文件夹。 但是，为了确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱，必须在您的本地服务器上配置两个 Exchange 邮件流规则（也称为传输规则），以检测由 EOP 添加的垃圾邮件头。 有关详细信息，请参阅[确保垃圾邮件已路由到每个用户的"垃圾邮件"文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
@@ -67,13 +67,13 @@ ms.locfileid: "39970898"
 
  **最终用户托管设置**：如果你正在寻找最终用户如何管理自己的垃圾邮件设置的信息，请查看[垃圾邮件筛选器的概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)（针对 Microsoft Outlook 用户）或[了解垃圾邮件和网络钓鱼](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)（针对 web 用户的 Outlook）。 如果您使用 EOP 来保护本地邮箱，请务必使用目录同步来确保这些设置已同步到服务。 有关如何设置目录同步的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>有关详细信息
 
 [博客：垃圾邮件和仿冒网站如何通过 Office 365？](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 
 [反垃圾邮件保护常见问题](anti-spam-protection-faq.md)
 
-[使用安全列表或其他技术避免出现标记为“垃圾邮件”的误报电子邮件](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[使用安全列表或其他技术避免出现标记为“垃圾邮件”的误报电子邮件](prevent-email-from-being-marked-as-spam.md)
 
 [如何设置 Office 365 垃圾邮件筛选以帮助阻止垃圾邮件](reduce-spam-email.md)
 

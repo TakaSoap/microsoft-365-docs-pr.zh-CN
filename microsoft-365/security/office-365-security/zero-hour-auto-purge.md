@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除（ZAP）是一种电子邮件保护功能，可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件，然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: 9ffe169baaa522ca86f712bc0fde41d4985092cd
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 87d0837b74606a57c7a4aaee3150f70449b09b81
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111896"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238379"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -101,7 +101,7 @@ Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEna
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>如果将合法邮件移动到 "垃圾邮件" 文件夹中，会发生什么情况？
 
-您应遵循正常的报告过程[假阳性](../../compliance/prevent-email-from-being-marked-as-spam.md)。 将邮件从 "收件箱" 移动到 "垃圾邮件" 文件夹的唯一原因是，该服务已确定邮件是垃圾邮件还是恶意邮件。
+您应遵循正常的报告过程[假阳性](prevent-email-from-being-marked-as-spam.md)。 将邮件从 "收件箱" 移动到 "垃圾邮件" 文件夹的唯一原因是，该服务已确定邮件是垃圾邮件还是恶意邮件。
 
 ### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>如果我使用的是 Office 365 隔离，而不是垃圾邮件文件夹，该怎么办？
 

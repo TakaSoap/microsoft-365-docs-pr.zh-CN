@@ -13,18 +13,18 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: 作为 Exchange Online 或 Exchange Online Protection (EOP) 管理员，你可以帮助确保通过服务传递的电子邮件不会被标记为垃圾邮件。实现上述任务的一种方法是为组织中的人员创建白名单和黑名单。
-ms.openlocfilehash: 5530fa8c8ee5a83c4e8515a8f31f91e45b2ec97b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9c281460aeff64226343af5e5608ccf42fc83799
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971670"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238389"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online 中的安全发件人和阻止发件人列表
 
 作为 Exchange Online 或 Exchange Online Protection (EOP) 管理员，你可以帮助确保通过服务传递的电子邮件不会被标记为垃圾邮件。实现上述任务的一种方法是为组织中的人员创建白名单和黑名单。
 
-若要了解如何在 Office 365 中将电子邮件标记为垃圾邮件，*请参阅更新版本的提示和过程。有关如何在* [Office 中阻止将电子邮件标记为垃圾邮件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)的管理员。
+若要了解如何在 Office 365 中将电子邮件标记为垃圾邮件，*请参阅更新版本的提示和过程。有关如何在* [Office 中阻止将电子邮件标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)的管理员。
 
 如果你不是管理员，并且只想使用安全发件人列表在 Outlook 中管理自己的垃圾邮件，请查看[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)中的步骤。
 

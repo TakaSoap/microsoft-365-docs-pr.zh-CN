@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供多种报告垃圾邮件的方式：
-ms.openlocfilehash: f77f9298058897b60345651a35289f6be88a47a8
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: df4eb2ceea3233d014efe545ca5d9c7bd39a3624
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970288"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238409"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 报告垃圾邮件
 
@@ -31,7 +31,7 @@ Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供�
 
 - 从打开的电子邮件内部
 
-垃圾邮件报告加载项可帮助您将报告提交至 Microsoft Exchange Online Protection (EOP) 服务。 如果您的邮箱未受该服务保护，提交垃圾邮件报告将不会影响您的垃圾邮件筛选器。 管理员可以了解更多有关适用于整个组织的垃圾邮件设置，以[防止在 office 365 中将电子邮件标记为垃圾](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)邮件或在[office 365 中减少垃圾](reduce-spam-email.md)邮件的方式。 如果您拥有管理员级别控制，并且您想要防止误报或漏报问题，这些内容会很有帮助。
+垃圾邮件报告加载项可帮助您将报告提交至 Microsoft Exchange Online Protection (EOP) 服务。 如果您的邮箱未受该服务保护，提交垃圾邮件报告将不会影响您的垃圾邮件筛选器。 管理员可以了解更多有关适用于整个组织的垃圾邮件设置，以[防止在 office 365 中将电子邮件标记为垃圾](prevent-email-from-being-marked-as-spam.md)邮件或在[office 365 中减少垃圾](reduce-spam-email.md)邮件的方式。 如果您拥有管理员级别控制，并且您想要防止误报或漏报问题，这些内容会很有帮助。
 
 > [!TIP]
 > 您还可以通过使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)电子邮件地址和误报（非垃圾邮件）邮件将垃圾邮件直接提交给 Microsoft，方法是使用[not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)电子邮件地址。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
@@ -73,6 +73,6 @@ Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供�
 
 [疑难解答信息和支持信息](troubleshooting-and-support-information.md)
 
-[如何防止在 Office 365 中将电子邮件正确标记为垃圾邮件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[如何避免在 Office 365 中将有效的电子邮件标记为“垃圾邮件”](prevent-email-from-being-marked-as-spam.md)
 
 [如何减少 Office 365 中的垃圾电子邮件](reduce-spam-email.md)

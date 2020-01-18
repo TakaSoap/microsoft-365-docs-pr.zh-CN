@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 6ca4c99d5e8803fdf7f41ff00cc2a5e65ab38049
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959640"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238429"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 
@@ -68,7 +68,7 @@ ms.locfileid: "40959640"
 
 如果邮件被错误地标识为垃圾邮件，您可以将 "误报" 邮件提交给 Microsoft 垃圾邮件分析团队。 分析师将评估并分析邮件。 根据分析结果的不同，可能会调整服务范围内的垃圾邮件内容筛选规则，以允许发送该邮件。
   
-管理员可以查看更多垃圾邮件设置信息，这些信息适用于整个组织。 请参阅[如何帮助确保邮件不会被标记为垃圾邮件](../../compliance/prevent-email-from-being-marked-as-spam.md)。 如果你拥有管理员级别控制，并且你想要阻止误报，此信息会很有帮助。
+管理员可以查看更多垃圾邮件设置信息，这些信息适用于整个组织。 请参阅[如何帮助确保邮件不会被标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)。 如果你拥有管理员级别控制，并且你想要阻止误报，此信息会很有帮助。
   
 您可以通过下列方式提交非垃圾邮件：
   
@@ -122,7 +122,7 @@ ms.locfileid: "40959640"
 
 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
   
-[如何帮助确保邮件不会标记为垃圾邮件](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[如何帮助确保邮件不会标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)
   
 [使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)
   
