@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文介绍 Office 365 如何缓解使用伪造发件人域（即欺骗性域）的网络钓鱼攻击。 通过分析邮件并阻止无法使用标准电子邮件身份验证方法或其他发件人信誉技术进行身份验证的邮件，它可以实现这一目标。 实施此更改是为了减少 Office 365 中的组织所面临的网络钓鱼攻击的数量。
-ms.openlocfilehash: 1bcf6b954c69297981eafecef192cab0e55a7684
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: cb978dd39e9645b8179490d498713137ab79af46
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112736"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233893"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的反欺骗保护
 
@@ -61,7 +61,7 @@ Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅
 
 为了阻止欺骗，电子邮件筛选行业开发了 [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、[DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) 和 [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) 等电子邮件身份验证协议。 DMARC 可防止通过欺骗手段检查邮件的发件人。 也就是说，用户在其电子邮件客户端（在上面的示例中为 service.outlook.com、outlook.com 和 ccountprotection.microsoft.com）中看到的发件人。 此外，用户还可以看到域已通过 SPF 或 DKIM 检查，这意味着域已通过身份验证，因此未受欺骗。 有关更完整的讨论，请参阅本文后面的“*了解电子邮件身份验证为何并非总能阻止欺骗*”。
 
-但问题在于电子邮件身份验证记录是可选的，而不是必需的。 因此，具有强大身份验证策略（如 microsoft.com 和 skype.com）的域可以防止欺骗，而发布较弱身份验证策略或根本没有策略的域则是欺骗活动攻击的目标。截至 2018 年 3 月，在财富 500 强企业中，只有 9% 的域发布了强大的电子邮件身份验证策略。 剩余 91％ 的域可能被网络钓鱼者冒充，除非电子邮件筛选器使用其他策略检测到这些欺骗活动，否则可能会将其传递给最终用户并误导他们：
+但问题在于电子邮件身份验证记录是可选的，而不是必需的。 因此，具有强身份验证策略（如 microsoft.com 和 skype.com）的域可以防止欺骗，而发布较弱身份验证策略或根本没有策略的域则是欺骗活动攻击的目标。 截至 2018 年 3 月，在财富 500 强企业中，只有 9% 的域发布了强电子邮件身份验证策略。 剩余 91％ 的域可能被网络钓鱼者冒充，除非电子邮件筛选器使用其他策略检测到这些欺骗活动，否则可能会将其传递给最终用户并误导他们：
 
 ![财富 500 强企业的 DMARC 策略](../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
