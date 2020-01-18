@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关 Office 365 中的新邮件保护功能如何工作的问题？ 在此处查找答案。
-ms.openlocfilehash: fa8268569bfabcaa9e3cca963ad12723c8c99369
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0afb27854e6e080963d7133fb32ecbd5532ae9b2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111856"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233843"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
@@ -85,7 +85,7 @@ Office 365 邮件加密的新功能是现有 IRM 和旧版 OME 解决方案的�
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>我的组织使用 Active Directory 权限管理，我是否可以使用此功能？
 
-否。 如果您使用的是 Active Directory 权限管理服务（AD RMS）的 Exchange Online，则不能立即启用这些新功能。 相反，您需要先将[AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。 
+否。 如果您使用的是 Active Directory 权限管理服务（AD RMS）的 Exchange Online，则不能立即启用这些新功能。 相反，您需要先将[AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的组织具有 Exchange 混合部署。 我是否可以使用此功能？
 
@@ -97,7 +97,7 @@ Office 365 邮件加密的新功能是现有 IRM 和旧版 OME 解决方案的�
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>支持哪些电子邮件客户端读取和回复受保护的电子邮件？
 
-如果你是 Office 365 用户，则可以阅读并响应 Outlook for Windows 和 Mac （2013和2016）、Outlook 网页版和 Outlook mobile （Android 和 iOS）。 如果你的组织允许，你也可以使用 iOS 本机邮件客户端。 如果您是非 Office 365 用户，则可以通过 web 浏览器阅读并答复 web 上的加密邮件。
+Office 365 用户可以从 Outlook for Windows 和 Mac （2013和2016）、Outlook 网页版和 Outlook mobile （Android 和 iOS）读取和响应。 如果你的组织允许，你也可以使用 iOS 本机邮件客户端。 如果您是非 Office 365 用户，则可以通过 web 浏览器阅读并答复 web 上的加密邮件。
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>受保护的电子邮件中支持哪些文件类型作为附件？ 附件是否继承与受保护的电子邮件关联的保护策略？
 

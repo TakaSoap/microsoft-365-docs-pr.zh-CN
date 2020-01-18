@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 0d47ce82b5138827c4ae1c1ea29c902a8cd77cc0
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230210"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233873"
 ---
 # <a name="manage-tickets-through-servicenow"></a>通过 ServiceNow 管理票证
 
@@ -107,7 +107,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>如何验证为 Microsoft 365 安全 & 合规性连接器创建的 OAuth 实体
 
-转到 ServiceNow 中的 "应用程序注册表" 表（菜单 > 系统 OAuth > 应用程序注册表），并查找您创建的 OAuth 实体（您为其分配的名称）。
+转到 ServiceNow 中的 "应用程序注册表" 表（**菜单 > 系统 OAuth > 应用程序注册表**），并使用您为其分配的名称查找您创建的 OAuth 实体。
 
 ### <a name="logging-in-as-the-integration-user"></a>作为集成用户登录
 
@@ -121,13 +121,13 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>如何验证在安装清单中创建的集成用户是否符合 Microsoft 365 安全 & 合规性连接器
 
-转到 ServiceNow 中的 "用户" 表（菜单 > 用户管理 > 用户），并查找您创建的集成用户（您为其分配的名称）。
+转到 ServiceNow 中的 "用户" 表 **（菜单 > 用户管理 > 用户**），并使用您为其分配的名称查找您创建的集成用户。
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>你的公司启用了单一登录，这将阻止你通过 Microsoft 365 安全中心连接到 ServiceNow
 
 如果贵公司已启用单一登录，但您收到错误或登录失败，请按照这两个解决方案之一。
 
-#### <a name="logging-into-servicenow-as-the-integration-user"></a>以集成用户的形式登录到 ServiceNow
+#### <a name="log-into-servicenow-as-the-integration-user"></a>以集成用户的形式登录到 ServiceNow
 
 1. 导航回 ServiceNow 中的 "授权" 页面。
 2. 选择右上角的 "**不向您**链接"。
@@ -142,4 +142,5 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>安装已完成，但看不到票证且无法共享
 
-如果已完成安装和设置步骤，但您在主页上看不到 ServiceNow 卡，并且无法从 Microsoft 安全分数中共享到 ServiceNow，请在处https://security.microsoft.com/ticketProvisioning检查设置页面的状态。 选择 "**保存**" 并返回到主页。 应显示卡片。
+如果已完成安装和设置步骤，但您在主页上看不到 ServiceNow 卡，并且无法从 Microsoft 安全分数中共享到 ServiceNow，请在处https://security.microsoft.com/ticketProvisioning检查设置页面的状态。 选择 "**授权**" 并返回到主页。 应显示卡片。
+

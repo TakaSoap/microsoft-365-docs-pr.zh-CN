@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 479aa8888a3a8e67c51cb7edf14747c840295a4f
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: d8de760fb4690af6675b67678b2441773993a8e5
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823714"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233913"
 ---
 # <a name="device-configuration"></a>设备配置
 
@@ -37,7 +37,8 @@ Policy | 说明
 Microsoft 托管桌面建议的安全模板 | 对安全基准的一组建议更改，以优化用户体验。  这些更改记录在[安全附录](#security-addendum)中。 策略附录更新根据需要进行。  
 更新部署 | 使用 Windows Update for Business 执行软件更新的逐步部署。 IT 管理员无法修改部署组策略的设置。 有关基于组的部署的详细信息，请参阅[如何在 Microsoft 托管桌面中处理更新](updates.md)。
 诊断数据 | 设备将设置为在已知商业版标识符下向 Microsoft 提供增强的诊断数据。 在 Microsoft 托管桌面中，IT 管理员不能更改这些设置。 对于一般数据保护条例（GDPR）区域中的客户，最终用户可以减少提供的诊断数据的级别，但会降低服务。 例如，Microsoft 托管桌面将无法收集必要的数据，以对设置和策略进行迭代以最好地满足性能和安全性需求。 有关详细信息，请参阅[在组织中配置 Windows 诊断数据。](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
-按流量计费的连接 | 默认情况下，将关闭通过按流量计费的连接（如 LTE 网络）进行的更新，尽管每个用户可以在**Settings > updates > 高级选项**中单独打开此功能。 如果您希望允许所有用户通过按流量计费的连接启用更新，请[提交更改请求](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support)，这将为所有设备启用此设置。
+按流量计费的连接 | 默认情况下，将关闭通过按流量计费的连接（如 LTE 网络）进行的更新，尽管每个用户可以在**Settings > updates > 高级选项**中单独打开此功能。 如果您希望允许所有用户通过按流量计费的连接启用更新，请[提交更改请求](../working-with-managed-desktop/admin-support.md)，这将为所有设备启用此设置。
+| 设备合规性 | 这些策略是针对所有 Microsoft 托管桌面设备进行配置的。 当设备从我们所需的安全配置中 drifts 时，该设备将报告为不合规。
 
  ## <a name="security-addendum"></a>安全附录
 

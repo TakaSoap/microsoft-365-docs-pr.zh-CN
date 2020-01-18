@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d5769088f3904bf62d2889f35f236c9410628db
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: ea20e7354838bade17ebb83522b543c8aec3d33e
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230200"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233923"
 ---
 # <a name="devicefilecertificateinfobeta"></a>DeviceFileCertificateInfoBeta
 
@@ -40,7 +40,7 @@ ms.locfileid: "41230200"
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `IsSigned` | boolean | 指示文件是否已签名 |
-| `SignatureType` | string | 指示是否以嵌入方式读取签名信息 | 文件本身的内容或从外部目录文件读取 |
+| `SignatureType` | string | 指示是否已将签名信息作为文件本身的嵌入内容读取或从外部目录文件读取 |
 | `Signer` | string | 有关文件签名者的信息 |
 | `SignerHash` | string | 标识签名者的唯一哈希值 |
 | `Issuer` | string | 有关颁发证书颁发机构（CA）的信息 |

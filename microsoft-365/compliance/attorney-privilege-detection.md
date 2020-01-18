@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 使用律师-客户端特权检测模型，在阅读高级电子数据展示事例中的内容时，使用基于机器学习的权限内容检测。
-ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: f4d5252a44183f5e2e38e4f4676c73d350befaf2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970860"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233714"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在高级电子数据展示中设置律师-客户端特权检测
 
@@ -36,11 +36,11 @@ ms.locfileid: "40970860"
 
 模型将为每个文档生成以下三个属性：
 
-- **AttorneyClientPrivilegeScore** –文档在本质上是合法的可能性;分数的值介于**0**和**1**之间。
+- **AttorneyClientPrivilegeScore：** 文档在本质上是合法的可能性;分数的值介于**0**和**1**之间。
 
-- **HasAttorney** –如果某个文档参与者在律师列表中列出，则此属性设置为**true** ; 否则为 false。否则，该值为**false**。 如果你的组织未上传律师列表，则此值也设置为**false** 。
+- **HasAttorney：** 如果某个文档参与者在律师列表中列出，则此属性设置为**true** ; 否则为 false。否则，该值为**false**。 如果你的组织未上传律师列表，则此值也设置为**false** 。
 
-- **IsPrivilege** –如果**AttorneyClientPrivilegeScore**的值高于阈值*或*文档有律师参与者，则此属性设置为**true** ; 否则为 false。否则，该值设置为**false**。
+- **IsPrivilege：** 如果**AttorneyClientPrivilegeScore**的值高于阈值，*或者*如果文档有律师参与者，则此属性设置为 true; 否则，此属性设置为**true** 。否则，该值设置为**false**。
 
 这些属性（及其对应的值）将添加到审阅集中文档的文件元数据中，如以下屏幕截图所示：
 
@@ -58,11 +58,11 @@ ms.locfileid: "40970860"
 
 1. 在安全 & 合规性中心中，转到**电子数据展示 > 高级电子数据展示**。
 
-2. 在**高级电子数据展示**主页上的 "**设置**" 磁贴中，选择 "**配置实验功能**"。
+2. 在**高级电子数据展示**主页上的 "**设置**" 磁贴中，单击 "**配置全局分析设置**"。
 
    ![选择 "配置实验功能"](media/AeDExperimentalFeatures.png)
 
-3. 在 "**实验功能**" 选项卡上，选择 "**管理律师-客户端权限设置**"。
+3. 在 "**分析设置**" 选项卡上，选择 "**管理律师-客户端权限设置**"。
 
 4. 在 "**律师-客户端权限**" 飞出页面上，使用切换功能打开功能，然后选择 "**保存**"。
 
