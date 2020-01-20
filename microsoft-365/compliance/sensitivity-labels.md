@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于对已标记内容应用包括加密或水印在内的保护设置。
-ms.openlocfilehash: 91dd28284ad83ec8505f52d380284e31dc9882d5
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: f416bcb32e9d8c14fee17d2dcecddac2aec20485
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233833"
+ms.locfileid: "41238499"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -154,7 +154,7 @@ ms.locfileid: "41233833"
 
     ![功能区上“敏感度”按钮中的“了解更多”链接](media/Sensitivity-label-learn-more.png)
 
-在你创建标签策略并将敏感度标签分配给用户和组后，这些人员会在不超过一小时的时间内在 Office 应用中看到这些标签。
+创建为用户和组分配敏感度标签的标签策略后，这些用户最多需要 24 小时才能在其 Office 应用中看到标签。
 
 可创建和发布的敏感度标签的数量没有限制，但有一种例外：如果标签应用了加密，则最多可以有 500 个标签。 但是，最佳做法是减少管理开销并降低用户复杂程度，尽量将标签的数量保持在最低限度。 事实证明，当用户拥有五个以上的主标签或者每个主标签拥有五个以上的子标签时，实际部署的效率就会显著降低。
 

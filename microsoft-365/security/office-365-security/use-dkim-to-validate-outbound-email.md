@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 350a8aa793270522b3ca79b9f0fda09c49f21a62
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 7861e2c0009b34d558d64a87a44a10cc3c953b3c
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971640"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233773"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -61,10 +61,7 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 
 - [后续步骤：为 Office 365 设置 DKIM 之后](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
-> [!NOTE]
-> Microsoft 365 支持 1024 或 2048 位 DKIM 的用户。 如果你使用的是 1024 位 DKIM，但想要配置 2048 位 DKIM，请继续关注本文中有关轮换 DKIM 签名配置的步骤。 到 2019 年底，Microsoft 将默认为所有客户提供 2048 位密钥支持。
-
-## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>DKIM 如何比单独使用 SPF 更有效地防止 Office 365 中的恶意欺骗现象
+## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>DKIM 如何能够比 SPF 更有效地防止 Office 365 中的恶意欺骗现象
 <a name="HowDKIMWorks"> </a>
 
 虽然 SPF 将信息添加到邮件信封中，但实际上是 DKIM 在邮件头中加密签名。当你转发邮件时，转发服务器可能会截除邮件信封部分。由于数字签名作为电子邮件头的一部分与电子邮件同时存在，因此即使当邮件进行了转发，DKIM 也仍在运行，如以下示例所示。
