@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 适用于大型组织的 windows 7 到 Windows 10 自动升级
-ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078081"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112696"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>适用于大型组织的 windows 7 到 Windows 10 自动就地升级
 
@@ -40,7 +40,7 @@ ms.locfileid: "38078081"
 
 默认情况下, 升级过程会备份以前的 Windows 安装, 以便在升级失败时或者设备或应用程序升级后不能正常运行时, 计算机可以回滚到 Windows 7。 默认情况下, 已升级的电脑有10天的时间可在必要时手动回滚到 Windows 7。
 
-可使用操作系统部署工具（[系统中心配置管理器](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)或[Microsoft 部署工具包](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit)）自动化就地升级。 本文重点介绍了自动化和优化的方法, 并提供了指向相关资源的链接以给予更多帮助。
+可使用操作系统部署工具（[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) 或 [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit)）自动化就地升级。 本文重点介绍了自动化和优化的方法, 并提供了指向相关资源的链接以给予更多帮助。
 
 ## <a name="upgrading-a-small-number-of-computers"></a>升级少量计算机
 
@@ -48,7 +48,7 @@ ms.locfileid: "38078081"
 
 ## <a name="how-to-upgrade-many-computers"></a>如何升级大批计算机
 
-如果管理几十或数千台计算机, 则最佳选择是使用系统中心配置管理器或 Microsoft 部署工具包的任务序列自动化来执行就地升级。 虽然在大多数情况下, 此过程非常可靠, 但根据要升级的计算机数量，仍有必要进行测试和控制, 以确保大规模的成功。
+如果管理几十或数千台计算机, 则最佳选择是使用 Microsoft Endpoint Configuration Manager 或 Microsoft Deployment Toolkit 的任务序列自动化来执行就地升级。 虽然在大多数情况下, 此过程非常可靠, 但根据要升级的计算机数量，仍有必要进行测试和控制, 以确保大规模的成功。
 
 这意味着你可以跳过目录就绪或与 Azure Active Directory、Office 和行业应用程序安装、打包及用户文件迁移相关的任务, 因为这些在升级过程中依然保留，非常安全。 这些方面均可随着时间的推移而提高。
 
@@ -78,13 +78,13 @@ ms.locfileid: "38078081"
 
   - 低水平代码解决方案, 如反恶意软件、VPN 或虚拟化
 
-[升级任务序列](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)模板内置于“系统中心配置管理器”目前的分支中, 可用于多个版本。 在最新版本中, 系统中心配置管理器的技术得到显著的增强, 使以下过程更高效：确定设备和 Office 兼容性准备情况, 减少网络拥堵及配置 OneDrive 备份之类的新选项。 观看此[Microsoft 技术展](https://youtu.be/CYRnAmCD7ls) , 进一步了解“系统中心配置管理器”操作系统部署的最新更新。
+[升级任务序列](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)模板内置于 Microsoft Endpoint Configuration Manager（当前分支版本）中，可用于多个版本。 在最新版本中，Configuration Manager 的技术得到显著的增强，使以下过程更高效：确定设备和 Office 兼容性准备情况，减少网络拥堵及配置 OneDrive 备份之类的新选项。 观看此[Microsoft 技术展](https://youtu.be/CYRnAmCD7ls)，进一步了解 Configuration Manager 操作系统部署的最新更新。
 
-如果未使用系统中心配置管理器, 则可以使用 Microsoft 部署工具包来构建和执行升级部署任务序列。
+如果未使用 Microsoft Endpoint Configuration Manager，则可以使用 Microsoft Deployment Toolkit 来构建和执行升级部署任务序列。
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>预缓存任务序列升级
 
-配置管理器部署任务序列的[预缓存选项](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)允许客户端在任务序列对操作系统进行升级之前下载相关的操作系统 升级程序包。 以前, 启动任务序列将启动程序包下载。 通过预缓存内容, 客户端可选择仅在收到部署后立即下载适用的 操作系统 升级包和所有其他参考内容。
+配置管理器部署任务序列的[预缓存选项](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)允许客户端在任务序列对操作系统进行升级之前下载相关的操作系统 升级程序包。 以前, 启动任务序列将启动程序包下载。 通过预缓存内容, 客户端可选择仅在收到部署后立即下载适用的 操作系统 升级包和所有其他参考内容。
 
 结合兼容性扫描的预缓存任务序列
 

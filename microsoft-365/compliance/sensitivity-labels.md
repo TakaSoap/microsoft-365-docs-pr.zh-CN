@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于对已标记内容应用包括加密或水印在内的保护设置。
-ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 91dd28284ad83ec8505f52d380284e31dc9882d5
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023346"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233833"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度标签概述
 
@@ -178,7 +178,7 @@ ms.locfileid: "41023346"
 
 ## <a name="how-to-get-started-with-sensitivity-labels"></a>如何开始使用敏感度标签
 
-敏感度标签可快速上手：
+请按照此过程开始使用敏感度标签：
 
 1. **定义标签。** 首先，要建立定义不同敏感级别内容的分类法。 使用对用户有意义的常用名称或术语。 例如，可以从“个人”、“公开”、“常规”、“机密”和“高度机密”等标签开始。 可以使用子标签按类别对类似标签进行分组。 此外，创建标签时，还需要一个工具提示，当用户将鼠标悬停在功能区上的标签选项上时，该提示将显示在 Office 应用中。
 
@@ -189,6 +189,8 @@ ms.locfileid: "41023346"
 下面的基本流展示了管理员、用户和 Office 应用为了让敏感度标签起作用所要执行的操作。
 
 ![敏感度标签工作流关系图](media/Sensitivity-label-flow.png)
+
+有关过程信息，请参阅[创建和配置敏感度标签及其策略](create-sensitivity-labels.md)。
 
 ## <a name="where-sensitivity-labels-can-appear"></a>敏感度标签可以显示在哪里
 

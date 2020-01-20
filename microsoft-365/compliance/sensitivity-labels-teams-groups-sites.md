@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可将标签应用于 Microsoft Teams、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: 4a8cf810ba29c2bb025b50e1529081a1a9ba6843
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: 0b5c4e8ef3611b417c59f7ac5b36f83a799e3397
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966890"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238439"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
@@ -148,7 +148,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 3. 等待 24 小时后，使用在步骤 1 中指定的用户帐户之一，创建具有在步骤 1 中创建的标签的团队、Office 365 组或 SharePoint 网站。
 
-4. 如果在步骤 3 的创建操作过程中没有错误，请为租户中的所有用户发布标签。 如果出现错误，请与 Microsoft 支持部门联系。
+4. 如果在步骤 3 的创建操作过程中没有错误，请为租户中的所有用户发布标签。 如果出现错误，请与 [Microsoft 支持部门](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)联系。
 
 **修改和删除已发布的标签：**
 
@@ -160,14 +160,14 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 3. 等待 48 小时后，尝试创建团队、组或网站，并确认标签不再可见。
 
-4. 如果敏感度标签不可见，则现在可以安全地修改或删除该标签。 如果标签仍可见，请与 Microsoft 支持部门联系。
+4. 如果敏感度标签不可见，则现在可以安全地修改或删除该标签。 如果标签仍可见，请与 [Microsoft 支持部门](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)联系。
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>敏感度标签部署疑难解答
 
 ### <a name="labels-not-visible-after-publishing"></a>发布后标签不可见
 如果在启用这些设置或修改敏感度标签的说明后创建团队或 Office 365 组时遇到问题，请保存标签，等待几小时，然后再次尝试创建团队或组。 有关信息，请参阅[计划在创建或更改敏感度标签后推出](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)。
 
-如果仍无法在 SharePoint Online 中看到新的敏感度标签，请与 Microsoft 支持部门联系。
+如果仍无法在 SharePoint Online 中看到新的敏感度标签，请与 [Microsoft 支持部门](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)联系。
 
 ### <a name="team-group-or-sharepoint-site-creation-errors"></a>团队、组或 SharePoint 网站创建错误
 如果在公共预览期间遇到创建错误，则你有两个选择：
