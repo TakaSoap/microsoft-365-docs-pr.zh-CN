@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 合规性中心，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 920de48cf81134a22f117ee8d1dea0160b0daaa8
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: f1a779037b283d2b03b48890dc8eb8423d90c147
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831645"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247577"
 ---
 # <a name="overview-of-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心概述
 
@@ -62,7 +62,7 @@ ms.locfileid: "39831645"
 
 |  |  |
 |---------|---------|
-|![Microsoft 365 合规性中心中的导航](media/m365-compliance-center-leftnav.png)  | 选择 "**主页**" 以返回 Microsoft 365 合规性中心主页。 <br><br> 选择 "**数据分类**" 部分，以访问[trainable 分类](classifier-getting-started-with.md)器、[敏感信息类型](what-the-sensitive-information-types-look-for.md)、内容和[活动](data-classification-activity-explorer.md)浏览器。 <br/><br/> 选择 "**数据连接器**" 以配置在 Microsoft 365 订阅中导入和存档数据的[连接器](archiving-third-party-data.md)。 <br><br> 转到 "**通知**" 以查看和解决[通知](alert-policies.md) <br/><br/>访问**报告**以查看有关[标签使用和保留](sensitivity-labels.md)的数据[、DLP 策略匹配和替代](view-the-dlp-reports.md)、[共享文件](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中的第三方应用程序](https://docs.microsoft.com/cloud-app-security/discovered-apps)等。 <br/><br/> 转到 "**策略**" 以设置用于控制数据、管理设备和接收[通知](../security/office-365-security/alerts.md)的策略。 您还可以访问您的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)策略。<br/><br/> 选择管理组织中的哪些用户有权访问 Microsoft 365 合规性中心以查看内容和完成任务的**权限**。 <br/><br/> 使用 "**解决方案**" 部分中的链接可访问组织的合规性解决方案。 具体包括： <br/><br/> [Catalog](microsoft-365-solution-catalog.md) <br> 发现、了解并开始使用适用于您的组织的智能合规性和风险管理解决方案。 <br/><br/> [信息保护](protect-information.md) <br> 跨组织的整个生命周期发现、分类和保护敏感和业务关键型内容。 <br/><br/> [数据丢失保护](data-loss-prevention-policies.md) <br> 检测在整个组织、云中和设备中使用和共享的敏感内容，并帮助防止意外的数据丢失。 <br/><br/> [记录管理](records-management.md) <br> 自动化并简化组织中的法规、法律和业务关键型记录的保留计划。 <br/><br/> [信息治理](manage-information-governance.md) <br> 使用用于导入、存储和分类业务关键数据的功能管理内容生命周期，以便您可以保留所需的内容并删除不需要的内容。 <br/><br/> [数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br> 查找和导出用户的个人数据，以帮助您响应常规数据保护法规（GDPR）的数据主体请求。 <br/><br/> [内容搜索](search-for-content.md) <br> 使用内容搜索在 Exchange 邮箱、SharePoint 网站中的文档和 OneDrive 位置以及 Microsoft 团队和 Skype for business 中的即时消息对话中快速查找电子邮件。 <br/><br/> [跟踪](search-the-audit-log-in-security-and-compliance.md) <br> 使用审核日志调查常见支持和合规性问题。 <br/><br/> [电子数据展示](overview-ediscovery-20.md) <br> 展开此部分可使用核心和高级电子数据展示来保留、收集、检查、分析和导出对组织内部和外部调查做出响应的内容。 <br/><br/> [数据调查](overview-data-investigations.md) <br/> 跨内容位置搜索以识别 Microsoft 365 中的敏感数据、恶意数据或误放数据，以便您可以调查和修正任何事件，如 data 外泄。 <br/><br/> [沟通合规性](communication-compliance.md) <br> 通过自动捕获不适当的邮件、调查可能的策略违规和采取补救措施来最大限度地减少通信风险。
+|![Microsoft 365 合规性中心中的导航](media/m365-compliance-center-leftnav.png)  | 选择 "**主页**" 以返回 Microsoft 365 合规性中心主页。 <br><br> 选择 "**数据分类**" 部分，以访问[trainable 分类](classifier-getting-started-with.md)器、[敏感信息类型](what-the-sensitive-information-types-look-for.md)、内容和[活动](data-classification-activity-explorer.md)浏览器。 <br/><br/> 选择 "**数据连接器**" 以配置在 Microsoft 365 订阅中导入和存档数据的[连接器](archiving-third-party-data.md)。 <br><br> 转到 "**通知**" 以查看和解决[通知](alert-policies.md) <br/><br/>访问**报告**以查看有关[标签使用和保留](sensitivity-labels.md)的数据[、DLP 策略匹配和替代](view-the-dlp-reports.md)、[共享文件](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中的第三方应用程序](https://docs.microsoft.com/cloud-app-security/discovered-apps)等。 <br/><br/> 转到 "**策略**" 以设置用于控制数据、管理设备和接收[通知](../security/office-365-security/alerts.md)的策略。 您还可以访问您的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)策略。<br/><br/> 选择管理组织中的哪些用户有权访问 Microsoft 365 合规性中心以查看内容和完成任务的**权限**。 <br/><br/> 使用 "**解决方案**" 部分中的链接可访问组织的合规性解决方案。 具体包括： <br/><br/> [Catalog](microsoft-365-solution-catalog.md) <br> 发现、了解并开始使用适用于您的组织的智能合规性和风险管理解决方案。 <br/><br/> [跟踪](search-the-audit-log-in-security-and-compliance.md) <br> 使用审核日志调查常见支持和合规性问题。 <br/><br/> [内容搜索](search-for-content.md) <br> 使用内容搜索在 Exchange 邮箱、SharePoint 网站中的文档和 OneDrive 位置以及 Microsoft 团队和 Skype for business 中的即时消息对话中快速查找电子邮件。 <br/><br/> [沟通合规性](communication-compliance.md) <br> 通过自动捕获不适当的邮件、调查可能的策略违规和采取补救措施来最大限度地减少通信风险。 <br/><br/> [数据调查](overview-data-investigations.md) <br/> 跨内容位置搜索以识别 Microsoft 365 中的敏感数据、恶意数据或误放数据，以便您可以调查和修正任何事件，如 data 外泄。 <br/><br/> [数据丢失保护](data-loss-prevention-policies.md) <br> 检测在整个组织、云中和设备中使用和共享的敏感内容，并帮助防止意外的数据丢失。 <br/><br/> [数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br> 查找和导出用户的个人数据，以帮助您响应常规数据保护法规（GDPR）的数据主体请求。 <br/><br/> [电子数据展示](overview-ediscovery-20.md) <br> 展开此部分可使用核心和高级电子数据展示来保留、收集、检查、分析和导出对组织内部和外部调查做出响应的内容。 <br/><br/> [信息治理](manage-information-governance.md) <br> 使用用于导入、存储和分类业务关键数据的功能管理内容生命周期，以便您可以保留所需的内容并删除不需要的内容。 <br/><br/> [信息保护](protect-information.md) <br> 跨组织的整个生命周期发现、分类和保护敏感和业务关键型内容。 <br/><br/> [内幕风险管理](insider-risk-management.md) <br> 检测整个组织中有风险的活动，以帮助您快速识别、调查和采取对内幕风险和威胁的操作。 <br/><br/> [记录管理](records-management.md) <br> 自动化并简化组织中的法规、法律和业务关键型记录的保留计划。
 
 ## <a name="how-do-i-get-the-compliance-center"></a>如何获取合规性中心？
 
@@ -92,10 +92,12 @@ ms.locfileid: "39831645"
 
 - **查看 Microsoft 合规性分数**以提高合规性分数。 若要了解详细信息，请参阅[合规性分数（预览）](compliance-score.md)。
 
+- **配置内幕风险管理策略**以帮助最大限度地减少内部风险，并使您能够检测、调查并对组织中的风险活动采取措施。 请参阅[内幕风险管理](insider-risk-management.md)。
+
 - **查看组织的数据丢失防护策略**并根据需要进行必要的更改。 若要了解详细信息，请参阅[数据丢失防护策略概述](data-loss-prevention-policies.md)。
 
 - **了解并设置 Microsoft 云应用安全性**。 请参阅[快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
 
 - **了解并创建通信合规性策略**，以快速确定和修正公司的行为准则策略违规。 请参阅[Microsoft 365 中的通信合规性](communication-compliance.md)。
 
-- 请**经常访问 Microsoft 365 合规性中心**，并确保查看任何警报或出现的潜在风险。 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并登录。
+- 请**经常访问 Microsoft 365 合规性中心**，并确保查看任何警报或出现的潜在风险。 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并登录。

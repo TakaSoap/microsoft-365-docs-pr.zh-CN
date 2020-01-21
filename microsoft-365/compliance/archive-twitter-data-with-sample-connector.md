@@ -1,5 +1,5 @@
 ---
-title: 使用示例连接器存档 Twitter 数据（预览）
+title: 设置连接器以存档 Twitter 数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,28 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将 Twitter 数据导入 Office 365。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 77f0a0615a177c0bfd6179a6a5ce1a58b024dcdc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 083c293e869cb35b428592717b7cf3810e7fea8c
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807481"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247555"
 ---
-# <a name="use-a-sample-connector-to-archive-twitter-data-preview"></a>使用示例连接器存档 Twitter 数据（预览）
+# <a name="set-up-a-connector-to-archive-twitter-data"></a>设置连接器以存档 Twitter 数据
 
-在 Office 365 中存档 Twitter 数据的示例连接器功能处于预览阶段。
+使用 Office 365 中安全 & 合规中心中的连接器从 Twitter 导入和存档数据。 在设置和配置连接器后，它会连接到您的组织的 Twitter 帐户（根据计划），将项目的内容转换为电子邮件格式，然后将这些项目导入到 Office 365 中的邮箱中。
 
-在 Office 365 中的安全性 & 合规性中心中使用示例连接器，以从 Twitter 导入和存档数据。 在设置和配置示例连接器之后，它会连接到您的组织的 Twitter 帐户（根据计划），将项目的内容转换为电子邮件格式，然后将这些项目导入到 Office 365 中的邮箱中。
-
-在导入 Twitter 数据之后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、[通信合规性](communication-compliance.md)和 Office 365 保留策略）应用到邮箱中存储的数据。 例如，您可以使用内容搜索来搜索 Twitter 数据，或将与数据存储在一起的邮箱与高级电子数据展示事例中的保管人相关联。 使用示例连接器在 Office 365 中导入和存档 Twitter 数据可帮助您的组织遵守政府和法规策略。
-
-> [!NOTE]
-> 目前，仅可使用 Twitter 和[Facebook 商业页面](archive-facebook-data-with-sample-connector.md)的示例连接器进行预览。 即将推出更多示例连接器。
-
+在导入 Twitter 数据之后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和 Office 365 保留策略）应用到邮箱中存储的数据。 例如，您可以使用内容搜索来搜索 Twitter 数据，或将与数据存储在一起的邮箱与高级电子数据展示事例中的保管人相关联。 使用连接器在 Office 365 中导入和存档 Twitter 数据可帮助您的组织遵守政府和法规策略。
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>为 Twitter 设置连接器的先决条件
 
-先完成以下先决条件，然后才能在安全 & 合规性中心中设置和配置示例连接器，以便从组织的 Twitter 帐户导入和存档数据。 
+先完成以下先决条件，然后才能在安全 & 合规中心中设置和配置连接器，以便从组织的 Twitter 帐户导入和存档数据。 
 
 - 您的组织需要 Twitter 帐户;设置连接器时，需要登录到此帐户。
 
@@ -42,7 +36,7 @@ ms.locfileid: "40807481"
     - [注册 "转到即点即用 Azure 订阅"](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Office 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的示例连接器。
+    > Office 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的连接器。
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。
 
@@ -50,7 +44,7 @@ ms.locfileid: "40807481"
 
 ## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>步骤1：从 GitHub 下载预建的连接器应用程序包
 
-第一步是下载将使用 Twitter API 连接到 Twitter 帐户并提取数据的 Twitter 示例连接器应用的源代码，以便您可以将数据导入到 Office 365。
+第一步是下载将使用 Twitter API 连接到 Twitter 帐户并提取数据以便可以将其导入 Office 365 的 Twitter 连接器应用的源代码。
 
 1. 转到[此 GitHub 网站](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases)。 
 2. 在最新版本下，选择 " **SampleConnector** " 文件。

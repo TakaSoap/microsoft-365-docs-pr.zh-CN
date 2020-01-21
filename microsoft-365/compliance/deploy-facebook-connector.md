@@ -11,16 +11,16 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Facebook 商业页面导入和存档到 Office 365。 将此数据导入 Office 365 后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的 Facebook 数据的管理。
-ms.openlocfilehash: e1ab281b8a3b684f408f80f86246778a9ee6267d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bb348c6e08151d63e92973d3f262704357e40814
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806255"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247475"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data"></a>部署连接器以存档 Facebook 数据
 
-本文包含了部署使用 Office 365 导入服务将数据从 Facebook 商业页面导入 Office 365 的连接器的分步过程。 有关此过程的简要概述以及部署 Facebook 连接器所需的先决条件列表，请参阅[使用示例连接器存档 Office 365 中的 Facebook 数据（预览）](archive-facebook-data-with-sample-connector.md)。 
+本文包含了部署使用 Office 365 导入服务将数据从 Facebook 商业页面导入 Office 365 的连接器的分步过程。 有关此过程的简要概述以及部署 Facebook 连接器所需的先决条件列表，请参阅[使用连接器存档 Office 365 中的 Facebook 数据（预览）](archive-facebook-data-with-sample-connector.md)。 
 
 ## <a name="step-1-download-the-package"></a>步骤1：下载程序包
 
@@ -278,7 +278,7 @@ ms.locfileid: "40806255"
 
     ![单击 "完成" 退出连接器服务应用](media/FBCimage53.png)
 
-11. 在 "**设置筛选器**" 页上，可以应用筛选器以导入（和存档）特定时间的项目。 单击“**下一步**”。
+11. 在 "**设置筛选器**" 页上，可以应用筛选器以导入（和存档）特定时间的项目。 单击“下一步”。****
 
     ![应用筛选器以导入特定年龄的项目](media/FBCimage54.png)
 

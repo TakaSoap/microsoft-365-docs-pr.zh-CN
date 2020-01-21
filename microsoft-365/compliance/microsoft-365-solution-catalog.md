@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b881e51f08e201f2870ea979e3f6c8181ab2ea02
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831635"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247595"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Microsoft 365 解决方案目录概述（预览）
 
@@ -51,13 +51,14 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 ## <a name="insider-risk-management-section"></a>内幕风险管理部分
 
-主页上的 "**内幕风险管理**" 部分向您展示了您的组织如何在内部风险造成损害之前识别、分析和修正这些风险。
+主页上的 "**内幕风险管理**" 部分向您展示了您的组织可以如何识别、分析并对内部风险采取措施，然后才会造成危害。
 
-![Microsoft 365 解决方案目录内幕风险管理部分](media/m365-solution-catalog-internal-risk-management.png)
+![Microsoft 365 解决方案目录内幕风险管理部分](media/m365-solution-catalog-insider-risk-management.png)
 
-从这里，你可以转到以下解决方案的卡片：
+在这里，你将看到以下解决方案的卡片：
 
-- [通信合规性](communication-compliance.md)：通过帮助您自动捕获不适当的邮件、调查可能的策略违规和执行补救措施来降低通信风险。
+- [通信合规性](communication-compliance.md)：通过帮助您自动捕获不适当的邮件、调查可能的策略违规并采取措施以最大限度地减少危害，最大程度地降低通信风险
+- [内幕风险管理](insider-risk-management.md)：检测整个组织中有风险的活动，以帮助您快速识别、调查和对内部人员风险和威胁采取措施。
 
 ## <a name="discovery--response-section"></a>发现 & 响应部分
 
@@ -95,6 +96,8 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 ## <a name="next-steps"></a>后续步骤
 
 - **查看 Microsoft 合规性分数**，这是一种个性化的基于风险的分数，可帮助您了解组织对主要标准和法规的遵从性状态。 它提供了可采取的建议措施，以增强您的总体合规性状况，并提供工作流功能以帮助您有效地执行这些操作。 若要了解详细信息，请参阅[合规性分数（预览）](compliance-score.md)。
+
+- **配置内幕风险管理策略**以帮助最大限度地减少内部风险，并使您能够检测、调查并对组织中的风险活动采取措施。 请参阅[内幕风险管理](insider-risk-management.md)。
 
 - **Microsoft 信息保护**，了解 microsoft 365 解决方案如何帮助您在任何生活或旅行时发现、分类和保护敏感信息。
     - **了解并设置 Microsoft 云应用安全性**。 请参阅[快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。

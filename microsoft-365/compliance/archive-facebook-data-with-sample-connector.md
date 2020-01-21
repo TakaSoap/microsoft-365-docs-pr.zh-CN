@@ -1,5 +1,5 @@
 ---
-title: 使用示例连接器存档 Facebook 数据（预览）
+title: 设置连接器以存档 Facebook 数据
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,28 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器，以便从数据源（如 Facebook 商业页面、Twitter、LinkedIn 公司页面和即时 Bloomberg）导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 83b85408afcb4613705691d5bd5a3b72365cb11a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f942df5401c14e3067d664aab41e6cac14542bc0
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808177"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247605"
 ---
-# <a name="use-a-sample-connector-to-archive-facebook-data-preview"></a>使用示例连接器存档 Facebook 数据（预览）
+# <a name="set-up-a-connector-to-archive-facebook-data"></a>设置连接器以存档 Facebook 数据
 
-在 Office 365 中存档 Facebook 数据的示例连接器功能处于预览阶段。
-
-使用 Office 365 中的安全性 & 合规性中心中的示例连接器将来自 Facebook 商业页面的数据导入和存档到 Office 365。 在设置和配置示例连接器之后，它会连接到 Facebook 商业页面（根据计划），将 Facebook 项目的内容转换为电子邮件格式，然后将这些项目导入到 Office 365 中的邮箱中。
+使用 Office 365 的 Security & 合规性中心中的数据连接器将来自 Facebook 商业页面的数据导入和存档到 Office 365。 设置和配置连接器后，它会连接到 Facebook 商业页面（根据计划），将 Facebook 项目的内容转换为电子邮件格式，然后将这些项目导入到 Office 365 中的邮箱中。
 
 在导入 Facebook 数据之后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、[通信合规性](communication-compliance.md)和 Office 365 保留策略）应用于 facebook 数据。 例如，如果将邮箱置于诉讼保留或分配到保留策略，则会保留 Facebook 数据。 您可以使用内容搜索来搜索第三方数据，或关联在高级电子数据展示事例中与保管人存储 Facebook 数据的邮箱。 使用连接器在 Office 365 中导入和存档 Facebook 数据可帮助您的组织遵守政府和法规策略。
 
-> [!NOTE]
-> 目前，仅可预览 Facebook 商业页面和[Twitter](archive-twitter-data-with-sample-connector.md)的示例连接器。 即将推出更多示例连接器。
-
-
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>设置用于 Facebook 商业页面的连接器的先决条件
 
-先完成以下先决条件，然后才能在安全 & 合规中心中设置和配置示例连接器，以便从组织的 Facebook 商业页面导入和存档数据。 
+先完成以下先决条件，然后才能在安全 & 合规性中心中设置和配置连接器，以便从组织的 Facebook 商业页面导入和存档数据。 
 
 - 您的组织的业务页面需要一个 Facebook 帐户（在设置连接器时，需要登录到此帐户）。 目前，您只能存档 Facebook 商业页面中的数据;您不能存档单个 Facebook 配置文件中的数据。
 
@@ -42,7 +36,7 @@ ms.locfileid: "40808177"
     - [注册 "转到即点即用 Azure 订阅"](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Office 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的示例连接器。
+    > Office 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的连接器。
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。
 
