@@ -98,6 +98,8 @@
               href: working-with-managed-desktop/usage-insights.md
             - name: 可靠性见解
               href: working-with-managed-desktop/reliability-insights.md
+            - name: 电池洞察力
+              href: working-with-managed-desktop/battery-insights.md
         - name: 管理支持
           href: working-with-managed-desktop/admin-support.md
         - name: 最终用户支持

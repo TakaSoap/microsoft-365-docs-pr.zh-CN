@@ -73,6 +73,8 @@
                   href: mtp/mtp-autoir-results.md
                 - name: 批准或拒绝挂起的操作
                   href: mtp/mtp-autoir-actions.md
+                - name: 举报误报/否定
+                  href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: 高级搜寻
               items:
                 - name: 在 Microsoft 365 中搜寻
