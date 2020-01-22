@@ -8,16 +8,25 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 8713b678432d71304649e05fba466659de0369ad
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634059"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260120"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
 本主题列出了[Microsoft 托管桌面文档](index.yml)中新增和更新的主题。 "已更新" 主题是指那些具有材料附加或更正措施的主题--不列出更正拼写、样式或格式问题等次要修补程序。 您可以通过访问[GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的存储库，随时查看特定提交的历史记录（包括任何更改的详细信息）。
+
+## <a name="december-2019"></a>2019 年 12 月
+新建或更改的主题 | 说明
+--- | ---
+[Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的主题
+[Microsoft 托管桌面设备](service-description/device-list.md) | 更新的主题
+[Microsoft 托管桌面存档设备](service-description/archived-device-list.md) | 更新的主题
+
+
 
 ## <a name="november-2019"></a>2019 年 11 月
 新建或更改的主题 | 说明

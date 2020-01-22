@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: edc952a0361ee8cfa6ed3df2eaf80f0fc4bf7fd5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 35433eccf93c56a8f8bf66b50fa6728ff7585d8e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808457"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260200"
 ---
 # <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>批准或拒绝自动调查的挂起操作
 
@@ -31,6 +31,9 @@ ms.locfileid: "40808457"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 运行自动调查后，可能会生成一个或多个[修正操作](mtp-action-center.md#remediation-actions)，需要批准这些操作才能继续。 例如，可能需要删除电子邮件的群集，或者可能需要删除已隔离的文件。 应尽快批准（或拒绝）挂起的操作，以便自动调查可以继续并及时完成。 
+
+> [!TIP]
+> 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅[如何在 Microsoft 威胁防护中报告误报/负面的自动调查和响应（空中）功能](mtp-autoir-report-false-positives-negatives.md)。
 
 可以使用以下几种方法之一来查看和批准挂起的操作：
 - [使用操作中心](#review-a-pending-action-in-the-action-center)

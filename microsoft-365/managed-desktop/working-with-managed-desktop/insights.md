@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962319"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260100"
 ---
 # <a name="work-with-insights"></a>使用见解
 
@@ -40,4 +40,9 @@ Microsoft 托管桌面提供了许多仪表板，在你的租户中，IT 管理�
 ## <a name="reliability-insights"></a>可靠性见解
 此视图为你提供托管设备的运行状况摘要。 若要查看可靠性数据，请选择 "**可靠性**" 选项卡。
 
-了解有关[可靠性见解](reliability-insights.md)的详细信息
+了解有关[可靠性见解](reliability-insights.md)的详细信息。
+
+## <a name="battery-insights"></a>电池洞察力
+此视图显示有关您的环境中的设备的应用和计划电池寿命的信息。 若要查看此信息，请选择 "**电池**" 选项卡。
+
+了解有关[电池洞察力](battery-insights.md)的详细信息。

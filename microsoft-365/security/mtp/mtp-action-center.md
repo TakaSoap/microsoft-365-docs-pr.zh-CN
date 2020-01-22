@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca98e59ded0956455e3279caa9de2af4f4af86c9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 91f2ae9a9fef96a3fdfedf86481aa5f5f33cb724
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808467"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260210"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>转到操作中心以查看修正操作
 
@@ -70,6 +70,10 @@ ms.locfileid: "40808467"
     - 如果调查与电子邮件内容有关（例如，实体是邮箱），则将在 Office 365 安全与合规中心 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)) 中打开调查详细信息。 
 
     - 如果调查涉及设备，则将在安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 中打开调查详细信息。 
+
+
+> [!TIP]
+> 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅[如何在 Microsoft 威胁防护中报告误报/负面的自动调查和响应（空中）功能](mtp-autoir-report-false-positives-negatives.md)。
 
 ## <a name="required-permissions-for-action-center-tasks"></a>操作中心任务所需的权限
 
