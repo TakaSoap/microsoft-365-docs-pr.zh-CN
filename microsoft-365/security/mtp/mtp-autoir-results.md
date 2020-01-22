@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: d33844c1bd774f6b53dbbaa428762c4832fccb85
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e70fa5f226b25df72514f75bb20873665d9021f6
+ms.sourcegitcommit: ca06ee52dec472d3827983d67b049847ec2fdfc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806981"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41256548"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>查看自动调查的详细信息和结果
 
@@ -92,6 +92,9 @@ ms.locfileid: "40806981"
 |清理  |设备或电子邮件内容   |不需要任何修正操作|
 
 [在操作中心中查看挂起的操作](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
+
+> [!TIP]
+> 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅[如何在 Microsoft 威胁防护中报告误报/负面的自动调查和响应（空中）功能](mtp-autoir-report-false-positives-negatives.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
