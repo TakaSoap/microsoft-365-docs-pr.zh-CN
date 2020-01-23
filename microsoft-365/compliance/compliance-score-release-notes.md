@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数的发行说明和已知问题（预览版）（M365 合规性中心中的一项功能，可帮助简化和自动化风险评估）。
-ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 370c714c927d09a16272f8ab265c7b0c4e36381a
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021928"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261866"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft 合规性分数（预览）发行说明
 
@@ -31,9 +31,11 @@ Microsoft 合规性分数的公开预览为你提供了对即将推出的功能�
 
 将新的预先配置的模板发布到生产中，以便在符合性分数（预览）变得可用时发布这些模板。 [在此处查看模板的完整列表](compliance-score.md#templates)。 最近添加的模板包括：
 
-- ISO 27701:2019
+- 巴西常规数据保护法律（LGPD）
 - IRAP/澳大利亚政府版 ISM （预览）
-
+- ISO 27701:2019
+- SOC 1
+- SOC 2
 
 ### <a name="compliance-score-relationship-to-compliance-manager"></a>与合规性管理器的合规性分数关系
 

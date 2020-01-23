@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 对于管理员：删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Office 365 中的数据的有效方法。
-ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: "对于管理员：删除中的项目 \n\nExchange Online 邮箱的 er 的 \"可恢复的项目\" 文件夹，即使该邮箱位于 \"合法保留\" 中也是如此。 这是一种删除意外溅入 Office 365 中的数据的有效方法。"
+ms.openlocfilehash: 6eeb3fecc531d4790330236f8b8857aa4344b371
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685297"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259670"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -43,19 +43,15 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
 > [!CAUTION]
 > 本文中所述的过程将导致从 Exchange Online 邮箱永久删除（清除）的数据。 这意味着无法恢复从 "可恢复的项目" 文件夹中删除的邮件，也不会提供用于法律查询或其他合规性的邮件。 如果要从作为诉讼保留的一部分的邮箱中删除邮件，请在 "安全与合规中心" 中创建的 "就地保留"、"电子数据展示保留" 或 "Office 365 保留策略" 中，与您的记录管理或法律部门进行核实在删除保留之前。 您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 您必须在 Exchange Online 中为以下两个管理角色分配搜索和删除步骤5中的 "可恢复的项目" 文件夹中的邮件。
-    
-  - **邮箱搜索**-此角色允许您在组织中搜索邮箱。 默认情况下，不会为 Exchange 管理员分配此角色。 若要为自己分配此角色，请将自己添加为 Exchange Online 中的 "发现管理" 角色组的成员。 
-    
-  - **邮箱导入导出**-此角色允许您删除用户邮箱中的邮件。 默认情况下，不向任何角色组分配此角色。 若要从用户的邮箱中删除邮件，您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 
+- 若要创建并运行内容搜索，您必须是电子数据展示管理员角色组的成员，或者分配有“合规性搜索”管理角色。 若要删除邮件，您必须是组织管理角色组的成员或分配有“搜索并清除”管理角色。 有关向角色组添加用户的信息，请参阅[在安全 & 合规性中心中分配电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
     
 - 非活动邮箱不支持本文中介绍的过程。 这是因为在删除保留项（或 Office 365 保留策略）后，不能将其重新应用到非活动邮箱。 从非活动邮箱删除保留时，它会更改为标准软删除邮箱，并且在托管文件夹助理处理后，将从组织中永久删除。
     
 - 您无法对已被分配到 Office 365 保留策略的邮箱执行此过程，该保留策略已通过保留锁定进行锁定。 这是因为保留锁可防止您从 Office 365 保留策略中删除或排除邮箱，也无法在邮箱上禁用托管文件夹助理。 有关锁定保留策略的详细信息，请参阅[锁定保留策略](retention-policies.md#locking-a-retention-policy)。
     
-- 如果未将邮箱置于保留状态（或未启用单个项目恢复），则只需从 "可恢复的项目" 文件夹中删除这些项目即可。 有关如何执行此操作的详细信息，请参阅[搜索和删除邮件](https://go.microsoft.com/fwlink/?linkid=852453)。
+- 如果未将邮箱置于保留状态（或未启用单个项目恢复），则只需从 "可恢复的项目" 文件夹中删除这些项目即可。 有关如何执行此操作的详细信息，请参阅[在 Office 365 组织中搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>步骤1：收集有关邮箱的信息
 
@@ -247,88 +243,35 @@ $CaseHold.Name
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>步骤4：从邮箱中删除延迟保留
 
-从邮箱中删除了任何类型的保留后， *DelayHoldApplied*邮箱属性的值将设置为**True**。 在下次托管文件夹助理处理邮箱并检测已删除保留时，会发生这种情况。 这称为*延迟保留*，意味着实际删除保留的延迟时间为30天，以防止永久删除邮箱中的数据。 （延迟保留的目的是使管理员有机会搜索或恢复在删除保留后将清除的邮箱项目。） 将延迟保留放在邮箱上时，该邮箱仍被视为无限持续时间处于保留状态，就像该邮箱处于诉讼保留状态一样。 30天后，延迟保留过期，Office 365 将自动尝试删除延迟保留（通过将*DelayHoldApplied*属性设置为**False**），以便实际删除保留。 
+从邮箱中删除了任何类型的保留后， *DelayHoldApplied*或*DelayReleaseHoldApplied*邮箱属性的值将设置为**True**。 在下次托管文件夹助理处理邮箱并检测已删除保留时，会发生这种情况。 这称为*延迟保留*，意味着实际删除保留的延迟时间为30天，以防止永久删除邮箱中的数据。 （延迟保留的目的是使管理员有机会搜索或恢复在删除保留后将清除的邮箱项目。） 将延迟保留放在邮箱上时，该邮箱仍被视为无限持续时间处于保留状态，就像该邮箱处于诉讼保留状态一样。 30天后，延迟保留过期，Office 365 将自动尝试删除延迟保留（通过将*DelayHoldApplied*或*DelayReleaseHoldApplied*属性设置为**False**），以便实际删除保留。 有关延迟保留的详细信息，请参阅[如何识别 Exchange Online 邮箱上的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)一节中的 "管理延迟挂起的邮箱" 一节。
 
 在您可以删除步骤5中的项目之前，必须从邮箱中删除延迟保留。 首先，通过在 Exchange Online PowerShell 中运行以下命令来确定是否对邮箱应用延迟保留：
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
 ```
 
-如果将*DelayHoldApplied*属性的值设置为**False**，则不会在邮箱上放置延迟保留。 您可以转到步骤5并删除 "可恢复的项目" 文件夹中的项目。
+如果将*DelayHoldApplied*或*DelayReleaseHoldApplied*属性的值设置为**False**，则不会在邮箱上放置延迟保留。 您可以转到步骤5并删除 "可恢复的项目" 文件夹中的项目。
 
-如果*DelayHoldApplied*属性的值设置为**True**，请运行以下命令删除延迟保留：
+如果*DelayHoldApplied*或*DelayReleaseHoldApplied*属性的值设置为**True**，则运行以下命令之一以删除延迟保留：
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-请注意，您必须在 Exchange Online 中向您分配 "合法保留" 角色，才能使用*RemoveDelayHoldApplied*参数。
+或
+
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
+
+请注意，您必须在 Exchange Online 中向您分配 "合法保留" 角色，才能使用*RemoveDelayHoldApplied*或*RemoveDelayReleaseHoldApplied*参数。
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>步骤5：删除 "可恢复的项目" 文件夹中的项目
 
-现在，您可以使用 Exchange Online PowerShell 中的[搜索-邮箱](https://go.microsoft.com/fwlink/?linkid=852595)cmdlet 实际删除 "可恢复的项目" 文件夹中的项目。 运行**搜索邮箱**cmdlet 时有三个选项。 
-  
-- 先将项目复制到目标邮箱，然后再将其删除，以便在删除之前可以查看这些项目（如有必要）。
-    
-- 将项目复制到目标邮箱，并在同一命令中将其删除。
-    
-- 删除项目，而不将其复制到目标邮箱。 
-    
-请注意，当您运行**搜索邮箱**cmdlet 时，用户的主存档邮箱中的 "可恢复的项目" 文件夹中的项目也会随之删除。 若要阻止这种情况发生，可以添加  *DoNotIncludeArchive*  开关。 如前所述，如果为邮箱启用了自动扩展存档，则 * * 搜索-邮箱 * * cmdlet 不会删除辅助存档邮箱中的项目。 有关自动扩展存档的详细信息，请参阅[Office 365 中的无限制存档概述](unlimited-archiving.md)。
-  
-> [!NOTE]
-> 如果添加一个搜索查询（通过使用  *SearchQuery*  参数）， **Search-Mailbox** cmdlet 最多返回搜索结果中的 10,000 个项目。因此，如果添加一个搜索查询，则可能需要多次运行 **Search-Mailbox** 命令才能将 10,000 多个项目删除。 
-  
-下面的示例显示了每个选项的命令语法。 这些示例使用`-SearchQuery size>0`参数值，这将从 "可恢复的项目" 文件夹中删除所有子文件夹中的所有项目。 如果需要仅删除符合特定条件的项目，则还可以使用*SearchQuery*参数指定其他条件，如邮件主题或日期范围。 请参阅下面的[使用 SearchQuery 参数的其他示例](#other-examples-of-using-the-searchquery-parameter)。 
-  
-### <a name="example-1"></a>示例 1
+现在，您已准备好在 "可恢复的项目" 文件夹中实际删除项目，方法是使用 Security & 合规性中心中的[new-compliancesearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)和[new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction) cmdlet。 
 
-本示例将用户的 "可恢复的项目" 文件夹中的所有项目复制到组织的发现搜索邮箱中的一个文件夹中。 这样，你就可以在永久删除项目之前查看它们。
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
-```
-
-在上面的示例中，不需要将项目复制到发现搜索邮箱。 您可以将邮件复制到任何目标邮箱。 但是，为了防止对潜在敏感邮箱数据的访问，我们建议将邮件复制到对已授权的人员有限制的邮箱中。 默认情况下，对默认发现搜索邮箱的访问权限限制为 Exchange Online 中发现管理角色组的成员。 
-  
-### <a name="example-2"></a>示例 2
-
-本示例将用户的 "可恢复的项目" 文件夹中的所有项目复制到组织的发现搜索邮箱中的一个文件夹中，然后从用户的 "可恢复的项目" 文件夹中删除这些项目。
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
-```
-
-### <a name="example-3"></a>示例 3
-
-本示例删除用户的 "可恢复的项目" 文件夹中的所有项目，而不将其复制到目标邮箱。 
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
-```
-
-### <a name="other-examples-of-using-the-searchquery-parameter"></a>使用 SearchQuery 参数的其他示例
-
-以下是使用*SearchQuery*参数查找特定邮件的几个示例。 如果使用*SearchQuery*参数搜索特定项目，请考虑将搜索结果复制到目标邮箱，以便可以查看搜索结果，然后在删除搜索结果之前修改查询（如有必要）。 
-  
-本示例返回在 "Subject" 字段中包含特定短语的邮件。
-  
-```powershell
-SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
-```
-
-本示例返回在指定日期范围内发送的邮件。
-  
-```powershell
-SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
-```
-
-本示例返回发送给指定人员的邮件。
-
-```powershell
-SearchQuery 'to:garthf@alpinehouse.com'
-```
+若要执行此操作，请参阅[搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
 
 ### <a name="verify-that-items-were-deleted"></a>验证项目是否已被删除
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 电子数据展示和搜索工具来管理和响应组织中的数据外泄事件。
-ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685299"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259418"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： Data 外泄方案-搜索和清除
 
@@ -54,7 +54,7 @@ ms.locfileid: "38685299"
     
 - 若要创建案例，您必须是电子数据展示管理器角色组的成员，或者是分配有案例管理角色的自定义角色组的成员。 如果你不是成员，请让 Office 365 管理员[将你添加到电子数据展示管理器角色组](assign-ediscovery-permissions.md)。
     
-- 若要删除溢出组织中的数据，需要使用 Exchange Online PowerShell 中的[搜索-邮箱-DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps)命令。 此外，若要使用*DeleteContent*参数，您还必须是 Exchange Online 中分配有邮箱导入导出角色的角色组的成员。 请参阅[管理角色组](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx)中的 "向角色组添加角色" 部分。
+- 若要创建并运行内容搜索，您必须是电子数据展示管理员角色组的成员，或者分配有“合规性搜索”管理角色。 若要删除邮件，您必须是组织管理角色组的成员或分配有“搜索并清除”管理角色。 有关向角色组添加用户的信息，请参阅[在安全 & 合规性中心中分配电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
     
 - 若要在步骤8中搜索 Office 365 审核日志电子数据展示活动，必须为您的组织启用审核。 您可以搜索在过去的90天内执行的活动。 若要了解有关如何启用和使用审核的详细信息，请参阅步骤8中的 "[审核数据外泄调查过程](#auditing-the-data-spillage-investigation-process)" 一节。 
     
@@ -84,7 +84,7 @@ ms.locfileid: "38685299"
   
 如果要查看的邮箱超过1000个邮箱或多于100封电子邮件，可以使用其他关键字或条件（如日期范围或发件人/收件人）将初始搜索划分为多个搜索，并分别查看每个搜索的结果。 请务必记下在[步骤 7](#step-7-permanently-delete-the-spilled-data)中删除邮件时要使用的所有搜索查询。
 
-如果为保管人或最终用户分配了 Office 36 E5 许可证，则可以使用 Office 365 高级电子数据展示一次性检查10000个搜索结果。 如果要查看的电子邮件数超过10000个，可以按日期范围划分搜索查询，并在搜索结果按日期排序时分别查看每个结果。 在高级电子数据展示中，可以使用预览面板中的 "**标签为**" 功能标记搜索结果，并按标记的标记筛选搜索结果。 当您与辅助审阅者进行协作时，这将非常有用。 通过使用高级电子数据展示中的其他分析工具（如光学字符识别、电子邮件线程和预测编码），您可以快速处理和查看成千上万封邮件，并标记它们以供进一步审阅。 请参阅[Office 365 高级电子数据展示的快速设置](quick-setup-for-advanced-ediscovery.md)。
+如果为保管人或最终用户分配了 Office 365 E5 许可证，则可以使用 Office 365 高级电子数据展示一次性检查10000个搜索结果。 如果要查看的电子邮件数超过10000个，可以按日期范围划分搜索查询，并在搜索结果按日期排序时分别查看每个结果。 在高级电子数据展示中，可以使用预览面板中的 "**标签为**" 功能标记搜索结果，并按标记的标记筛选搜索结果。 当您与辅助审阅者进行协作时，这将非常有用。 通过使用高级电子数据展示中的其他分析工具（如光学字符识别、电子邮件线程和预测编码），您可以快速处理和查看成千上万封邮件，并标记它们以供进一步审阅。 请参阅[Office 365 高级电子数据展示的快速设置](quick-setup-for-advanced-ediscovery.md)。
 
 当您找到包含溢出数据的电子邮件时，请检查邮件的收件人以确定它是否是在外部共享的。 若要进一步跟踪邮件，可以收集发件人信息和日期范围，以便您可以使用[步骤 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)中所述的邮件跟踪日志。
 
@@ -136,7 +136,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
     
 2. 在弹出页面上，单击 "**查看结果**"。
     
-3. 在 "**单个结果**" 下拉列表中，单击 "**搜索统计信息**"。
+3. 在“**单独的结果**”下拉列表中，单击“**搜索统计信息**”。
     
 4. 在 "**类型**" 下拉列表中，单击 "**顶部位置**"。
     
@@ -168,31 +168,9 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>步骤7：永久删除溢出的数据
 
-使用您在步骤6中收集和准备的邮箱位置以及在步骤3中创建并完善的搜索查询中的步骤3，以查找包含溢出数据的电子邮件，您现在可以永久删除溢出的数据。 如前所述，您必须分配有 Exchange Online 中的 "邮箱导入导出" 角色，才能使用以下过程删除邮件。
-  
-1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
-    
-2. 运行以下命令：
-    
-    ```powershell
-    Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
-    ```
+使用您在步骤6中收集和准备的邮箱位置以及在步骤3中创建并完善的搜索查询中的步骤3，以查找包含溢出数据的电子邮件，您现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是 "组织管理" 角色组的成员，或者分配有 "搜索和清除" 管理角色。 有关向角色组添加用户的信息，请参阅[在安全 & 合规性中心中分配电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
 
-3. 通过替换 Identity 参数的值，为包含溢出数据的每个邮箱重新运行上一个命令;例如：
-
-    ```powershell
-    Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-    ```powershell
-    Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-   ```powershell
-   Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-   ```
-
-如前所述，您还可以创建[powershell 脚本](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6)并对邮箱列表运行该脚本，以便脚本删除每个邮箱中溢出的数据。
+若要删除溢出的邮件，请参阅在[Office 365 组织中搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)中的步骤 2 & 3
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步骤8：验证、提供删除证明和审核
 
@@ -214,12 +192,9 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据外泄调查过程
 
-您可以在 Office 365 审核日志中搜索在调查过程中执行的电子数据展示活动。 您还可以搜索审核日志，以返回运行**搜索邮箱-DeleteContent**命令删除溢出的数据时创建的审核记录。 有关详细信息，请参阅：
+您可以在 Office 365 审核日志中搜索在调查过程中执行的电子数据展示活动。 您还可以搜索审核日志，以返回您在步骤7中运行的**new-compliancesearchaction-清除**命令的审核记录，以删除溢出的数据。 有关详细信息，请参阅：
 
 - [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 
 - [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)
-
-- 有关如何在 Exchange Online 中搜索与运行的 cmdlet 相关的审核记录的指南，请参阅[search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities)中的 "已审核的活动-Exchange 管理员审核日志" 一节。
   
-

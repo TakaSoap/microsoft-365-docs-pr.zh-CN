@@ -18,8 +18,24 @@
       href: plan-for-security-and-compliance.md
 - name: 管理内幕风险
   items:
-    - name: 保护用户和设备的访问权限
-      href: protect-access-to-data-and-services.md
+    - name: 内幕风险管理（预览）
+      items:
+        - name: 了解内幕风险管理（预览）
+          href: insider-risk-management.md
+        - name: 内幕风险管理入门（预览）
+          href: insider-risk-management-configure.md
+        - name: 创建和管理内幕风险策略（预览）
+          href: insider-risk-management-policies.md
+        - name: 调查内幕风险警报（预览）
+          href: insider-risk-management-alerts.md
+        - name: 对内幕风险案例执行操作（预览）
+          href: insider-risk-management-cases.md
+        - name: 使用内幕风险内容浏览器查看数据（预览）
+          href: insider-risk-management-content-explorer.md
+        - name: 向内部人员风险策略添加用户（预览）
+          href: insider-risk-management-users.md
+        - name: 创建内部人员风险通知（预览）
+          href: insider-risk-management-notices.md
     - name: 通信合规性（预览）
       items:
         - name: 了解沟通合规性（预览版）
@@ -57,6 +73,8 @@
           href: controlling-your-data-using-customer-key.md
         - name: 有关使用 Office 365 客户密钥执行服务加密的常见问题解答
           href: service-encryption-with-customer-key-faq.md
+    - name: 保护用户和设备的访问权限
+      href: protect-access-to-data-and-services.md
     - name: 客户密码箱
       href: customer-lockbox-requests.md
 - name: 管理信息保护

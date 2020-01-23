@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 3b8522dea71cd0ece5ec63f07a733e1eb5283a43
-ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
+ms.openlocfilehash: 611497bd485435d5705552cbbffe59286e2b27c8
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41123623"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259960"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>在 Office 应用中的敏感度标签
 
@@ -28,7 +28,7 @@ ms.locfileid: "41123623"
 - 每个 Office 应用支持哪种敏感度标签功能。
 - 当您将灵敏度标签与 Office 应用程序使用的其他 Microsoft 安全和合规性技术相结合时，会发生什么情况。
 - 组织中的用户如何在使用适用于 Windows 的 Office 应用和 Office 相关 web 应用程序时使用敏感度标签。
-- 在何处转到让组织中的人员使用敏感度标签开始。
+- 帮助组织中的人员开始使用敏感度标签的其他资源。
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>敏感度标签的订阅和许可要求
 
@@ -66,7 +66,7 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 |[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | 正在审阅                                                        |
 |[需要调整以更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[标记内容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[查看标签使用情况标签分析](label-analytics.md)并为管理员发送数据                      | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
@@ -95,17 +95,15 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 
 ## <a name="about-the-office-built-in-labeling-client"></a>关于 Office 内置标签客户端
 
-Office 内置标签客户端从以下管理中心下载标签和策略设置：
-
-- Office 365 安全与合规中心
-
-- Microsoft 365 安全中心
+Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感度标签策略设置：
 
 - Microsoft 365 合规中心
+- Microsoft 365 安全中心
+- Office 365 安全与合规中心
 
-若要使用 Office 内置标签客户端，必须向用户发布一个或多个从列出的管理中心[发布的标签策略](sensitivity-labels.md#what-label-policies-can-do)。
+若要使用 Office 内置标签客户端，必须向用户发布一个或多个从列出的管理中心[发布的标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
 
-但是，如果用户安装了其中一个 Azure 信息保护客户端（[统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或[经典客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)），则默认情况下，在其 Office 应用中禁用内置标签客户端。 若要使用内置标签而不是 Azure 信息保护客户端 Office 应用程序，请禁用或卸载 Office 外接程序以获取 Azure 信息保护：
+但是，如果用户安装了其中一个 Azure 信息保护客户端（[统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或[经典客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)），则默认情况下，在其 Office 应用中关闭内置的标记客户端。 若要使用内置标签而不是 Azure 信息保护客户端 Office 应用程序，请禁用或卸载 Office 外接程序以获取 Azure 信息保护：
 
 1. 完成以下选项之一：
     
@@ -143,11 +141,11 @@ Office 内置标签客户端从以下管理中心下载标签和策略设置：
 
 若要在 web 上的 Office 中使用 Office 内置标签客户端，该文档必须位于 OneDrive for business 或 SharePoint Online 实例中，并已选择加入到在[SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-## <a name="when-office-365-applies-marks-and-encryption-to-content"></a>当 Office 365 对内容应用标记和加密时
+## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>当 Office 365 对内容应用内容标记和加密时
 
-Office 365 根据您使用的应用程序以不同的敏感度标签应用内容标记或加密。
+Office 365 根据您使用的应用程序以不同的敏感度标签应用内容标记和加密。
 
-| 应用程序 | 内容标记 | 加密 |
+| 应用 | 内容标记 | 加密 |
 | --- | --- | --- |
 | 所有平台上的 Word、Excel 和 PowerPoint | 立即 | 立即 |
 | Outlook for PC 和 Outlook for Mac | Exchange Online 发送电子邮件后 | 立即 |
@@ -156,6 +154,6 @@ Office 365 根据您使用的应用程序以不同的敏感度标签应用内容
 
 ## <a name="more-resources"></a>更多资源
 
-[有关 Azure 信息保护中分类和标记的常见问题](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)
-
 [将敏感度标签应用于 Office 文档和电子邮件](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+
+- [将敏感度标签应用于 Office 文件时的已知问题](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)

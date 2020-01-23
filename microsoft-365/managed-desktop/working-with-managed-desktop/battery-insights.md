@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b14ef9970aa709ad5e23fdae467992497a1331e8
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260133"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269383"
 ---
 # <a name="battery-insights"></a>电池洞察力
 此视图提供 Microsoft 托管桌面设备的电源、电池和应用使用指标。 出于这些目的，如果应用程序正在运行且处于焦点，则会被视为 "正在使用中"。
@@ -43,8 +43,6 @@ ms.locfileid: "41260133"
 - 其他
 
 "其他" 可能包括各种源（如磁盘活动、移动宽带使用）和对内部电阻断电的能源消耗。 
-
-* * 热门能源使用者中显示的应用程序
 
 您可以使用右上角的菜单筛选此视图，以仅显示前台应用程序、后台应用程序或两者。 前台应用是指在最近28天内具有用户交互的应用程序，例如，使用鼠标选择一些内容。
 
