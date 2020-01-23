@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: '了解如何将 Windows 设备升级到 Windows 10 专业版。 '
-ms.openlocfilehash: acad4a393e0870299df768fd4c821d9c1e83ecac
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 3457b35c5f9e313e176664ca088e64ce5dd4f881
+ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995262"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41265850"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>将 Windows 设备升级到 Windows 10 专业版
 
@@ -50,7 +50,7 @@ ms.locfileid: "40995262"
     - 阅读有关如何使用此工具和创建安装媒体的说明。 
 
 > [!NOTE]
-> 如果你有运行 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 Pro 的 Windows 设备，Microsoft 365 商业版订阅将获得 Windows Pro 10 升级的证明;您不需要产品密钥。
+> 如果你有运行 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 Pro 的 Windows 设备，Microsoft 365 商业版订阅将向你提供 Windows Pro 10 升级。
     
 请参阅[为 Microsoft 365 商业版用户设置 windows 设备](set-up-windows-devices.md)，以完成 Windows 10 设备的设置。 
   
