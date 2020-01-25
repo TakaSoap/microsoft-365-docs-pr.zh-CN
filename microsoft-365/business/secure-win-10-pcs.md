@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何在设置 Microsoft 365 商业版之后保护 Windows 10 电脑。
-ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 3c558132f1e370a19735a38f9caa09ddb8e1f9f4
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837316"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515583"
 ---
 # <a name="secure-windows-10-computers"></a>保护 Windows 10 计算机
 
@@ -34,12 +34,12 @@ ms.locfileid: "39837316"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="to-secure-your-windows-10-pcs"></a>保护 Windows 10 电脑的安全
 
 1. 使用全局管理员凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。 
-2. 在左侧导航中，选择 "**设置**"，然后在 "有**安全" 和 "安全性**" 下，选择 "**保护 Windows 10 计算机**"。 选择 "**查看**" 即可开始。
+2. 在左侧导航中，选择 "**设置**"，然后在 "**登录和安全**" 下，选择 "**保护 Windows 10 计算机**"。 选择 "**查看**" 即可开始。
 3. 在 "**保护 Windows 10 计算机**" 页上，阅读所有信息以了解您打开的内容以及用户的影响。
 
     在页面顶部，选择 "**开始**"。

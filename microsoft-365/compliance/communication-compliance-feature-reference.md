@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 64514c8c46cbc2ef35746e052e1ffb87831933c2
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111846"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515783"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>通信合规性功能参考（预览）
 
@@ -84,6 +84,16 @@ ms.locfileid: "41111846"
     - [自定义数据连接器](archiving-third-party-data.md)
 
 您必须先为 Microsoft 365 组织配置第三方连接器，然后才能将连接器分配给通信合规性策略。 "通信合规性策略" 向导的 "**第三方源**" 部分仅显示当前配置的第三方连接器。
+
+## <a name="transitioning-from-supervision-in-office-365"></a>从 Office 365 中的监察转换
+
+在 Office 365 中使用监督策略并计划在 Microsoft 365 中过渡到通信合规性策略的组织需要了解这些重要事项：
+
+- 这两种解决方案可在您的组织中并行使用，但是在每个解决方案中使用的策略必须具有唯一的策略名称。 在转换期间，可以在解决方案之间共享组和自定义关键字词典。
+- 在 Office 365 策略匹配中保存的邮件无法在 Microsoft 365 中移动或共享到通信合规性中。
+- Office 365 中的监督解决方案将被 Microsoft 365 中的通信合规性解决方案完全取代。 我们建议在通信合规性中创建新策略，这些策略与现有监督策略具有相同的设置，以使用新的调查和补救措施改进。 在 Microsoft 365 中转换到通信合规性时，如果您具有内部合规性保留策略要求，则应计划在 Office 365 中的监察时导出报告数据。
+
+有关 Office 365 中监察的退休信息，请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)了解详细信息。
 
 ## <a name="policy-settings"></a>策略设置
 
@@ -177,7 +187,7 @@ ms.locfileid: "41111846"
 |:-----|:-----|:-----|
 |**模板名称** | 是 | "通知" 模板的友好名称，您将在修正期间的 "通知" 工作流中选择，支持文本字符。 |
 | **发件人地址** | 是 | 将邮件发送给具有策略匹配的员工的一个或多个用户或组的地址，该用户或组是从 Active Directory 中为订阅选择的一个或多个用户或组。 |
-| **抄送和密件抄送地址** | No | 从 Active Directory 为你的订阅选择的策略匹配通知的可选用户或组。 |
+| **抄送和密件抄送地址** | 否 | 从 Active Directory 为你的订阅选择的策略匹配通知的可选用户或组。 |
 | **Subject** | 是 | 显示在邮件主题行中的信息支持文本字符。 |
 | **邮件正文** | 是 | 显示在邮件正文中的信息支持文本或 HTML 值。 |
 
@@ -219,6 +229,7 @@ ms.locfileid: "41111846"
 | **主题/职务** | 邮件主题或聊天标题。 |
 | **Tags** | 分配给邮件的标记，无论是*可疑*的*还是**不兼容*的。 |
 | **升级到** | 作为邮件升级操作的一部分包含的人员的用户名。 |
+| **符** | 应用于邮件的内置和自定义分类器的名称。 一些示例包括*冒犯性语言*、*目标骚扰*、*猥亵*、*威胁*等。
 
 ## <a name="alert-policies"></a>警报策略
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合规性分数如何根据为解决风险而采取的措施计算个性化分数，并提高您的合规性状况。
-ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793656"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515573"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft 合规性分数（预览）计算
 
@@ -43,9 +43,11 @@ ms.locfileid: "38793656"
 
 ## <a name="how-compliance-score-continuously-assesses-controls"></a>合规性分数如何持续评估控制措施
 
-合规性分数将自动通过 Microsoft 365 环境扫描并检测系统设置，并持续并自动更新你的技术控制状态。 例如，如果在 Azure AD 门户中启用了多重身份验证（MFA），合规性分数将检测设置，并在控制访问解决方案详细信息中反映出该设置。 相反，如果未启用 MFA，合规性分数标志为建议采取的操作。
+合规性分数将自动通过 Microsoft 365 环境扫描并检测系统设置，并持续并自动更新你的技术控制状态。 合规性分数使用安全分数作为执行监控的基础引擎。 [了解有关安全分数及其工作方式的详细信息](../security/mtp/microsoft-secure-score.md)。
 
-合规性分数每24小时更新一次控件状态。 一旦您遵循了实现控件的建议，您将会看到在下一天更新控件状态。
+你的合规性分数仪表板每24小时更新一次你的控制状态。 一旦您遵循了实现控件的建议，您将会看到在下一天更新控件状态。
+
+例如，如果在 Azure AD 门户中打开多重身份验证（MFA），合规性分数将检测设置，并在控制访问解决方案详细信息中反映该设置。 相反，如果未启用 MFA，合规性分数标志为建议采取的操作。
 
 在公共预览过程中，连续评估适用于部分控件，但并非全部。
   
@@ -78,8 +80,8 @@ ms.locfileid: "38793656"
 |:-----|:-----|
 | 预防性强制 | 27 |
 | 预防自由 | 9  |
-| 侦探必备 | 3  |
-| 侦探自由 | 1  |
-| 强制纠正 | 3  |
-| 随机纠正 | 1  |
+| 侦探必备 | 第三章 |
+| 侦探自由 | 1 |
+| 强制纠正 | 第三章 |
+| 随机纠正 | 1 |
   

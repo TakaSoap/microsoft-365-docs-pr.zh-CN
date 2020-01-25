@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Facebook 商业页面导入和存档到 Microsoft 365。 将此数据导入 Microsoft 365 后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的 Facebook 数据的管理。
-ms.openlocfilehash: 1222a82e3a3b8415aa3fc98cd3c06376e491beb0
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: c13f055a9ca96d9b7cc1ec5791c476e6cda8e5f0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269407"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515733"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署连接器以存档 Facebook 商业页面数据
 
@@ -60,15 +60,12 @@ ms.locfileid: "41269407"
 
    ![复制密码的值并将其保存](media/FBCimage9.png)
 
-10. 转到**清单**并复制 identifierUris （也称为 AAD 应用程序 Uri），如以下屏幕截图中所示。 将 AAD 应用程序 Uri 复制到文本文件或其他存储位置。 您可以在步骤6中使用它。
-
-    ![转到清单并复制 AAD 应用程序 Uri](media/FBCimage10.png)
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步骤2：将来自 GitHub 的连接器 web 服务部署到你的 Azure 帐户
 
-1. 转到[此 GitHub 网站](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)，然后单击 "**部署到 Azure**"。
+1. 转到[此 GitHub 网站](https://github.com/microsoft/m365-sample-connector-csharp-aspnet)，然后单击 "**部署到 Azure**"。
 
-    ![单击 "部署到 Azure"](media/FBCimage11.png)
+    ![单击 "部署到 Azure"](media/FBCGithubApp.png)
 
 2. 单击 "**部署到 Azure**" 后，您将被重定向到具有自定义模板页面的 Azure 门户。 填写 "**基础知识**" 和 "**设置**详细信息"，然后单击 "**购买**"。
 

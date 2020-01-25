@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 67cb8cd6a7320f0b2ff79566be4cf6c6fa3f67a6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: efedbdd8230b5fac81b59ca51c0fe863ab4f0c2a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "39233735"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260110"
 ---
 # <a name="compliance-offerings-isoiec-270012013-information-security-management-standards"></a>合规性产品/服务：ISO/IEC 27001:2013 信息安全管理标准
 
@@ -43,6 +44,7 @@ ISO/IEC 27001 的国际接受度和适用性是 Microsoft 在实施和管理信�
 - Graph
 - Health Bot
 - Intune
+- Microsoft 托管桌面
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 德国
@@ -60,7 +62,7 @@ ISO/IEC 27001 的国际接受度和适用性是 Microsoft 在实施和管理信�
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS Service Map、PowerApps、Power BI、Stream 和 Microsoft Datacenter — ISO 27001 证书](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft 托管桌面、OMS Service Map、PowerApps、Power BI、Stream 和 Microsoft Datacenter — ISO 27001 证书](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 ### <a name="office-365"></a>Office 365
 

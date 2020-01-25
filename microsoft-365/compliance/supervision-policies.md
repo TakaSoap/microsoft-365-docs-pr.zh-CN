@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 6ccf5cb4dff8b458c91700ebc1e7dc830d16aafc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: aaeb73553d023ac1664ba3bbff10d7edbb4dea54
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112266"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515873"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -41,6 +41,16 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 若要了解有关即将推出的监察功能改进和可用性的详细信息，请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 想要在 Microsoft 365 中尝试新的通信合规性体验吗？ 查看[Microsoft 365 （预览）中的通信合规性](communication-compliance.md)中提供的新增和改进功能。
+
+## <a name="transitioning-from-supervision-in-office-365"></a>从 Office 365 中的监察转换
+
+在 Office 365 中使用监督策略并计划[在 Microsoft 365 中过渡到通信合规性策略](communication-compliance.md)的组织需要了解这些重要事项：
+
+- 这两种解决方案可在您的组织中并行使用，但是在每个解决方案中使用的策略必须具有唯一的策略名称。 在转换期间，可以在解决方案之间共享组和自定义关键字词典。
+- 在 Office 365 策略匹配中保存的邮件无法在 Microsoft 365 中移动或共享到通信合规性中。
+- Office 365 中的监督解决方案将被 Microsoft 365 中的通信合规性解决方案完全取代。 我们建议在通信合规性中创建新策略，这些策略与现有监督策略具有相同的设置，以使用新的调查和补救措施改进。 在 Microsoft 365 中转换到通信合规性时，如果您具有内部合规性保留策略要求，则应计划在 Office 365 中的监察时导出报告数据。
+
+有关 Office 365 中监察的退休信息，请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)了解详细信息。
 
 ## <a name="scenarios-for-supervision-policies"></a>监督策略的应用场景
 

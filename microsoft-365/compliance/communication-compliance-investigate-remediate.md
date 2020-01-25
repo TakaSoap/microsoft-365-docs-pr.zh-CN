@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 322e74b846cc574b52708627d5f59dde3cfe9e80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 221c773e04bd9b7a4e404d0ec6a5fd5695ca089c
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807381"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515753"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>调查和修正沟通合规性警报（预览版）
 
@@ -58,7 +58,7 @@ ms.locfileid: "40807381"
 
 5. 选择 "**筛选器**" 控件以打开 "**筛选器**详细信息" 页。
 
-6. 选择一个或多个复选框以启用这些通知的筛选器。
+6. 选择一个或多个复选框以启用这些通知的筛选器。 您可以从多个筛选器中进行选择，包括*日期*、*发件人*、*主题/标题*、*分类*符等。
 
 7. 如果要保存选定的筛选器作为默认筛选器，请选择 "**另存为默认值**"。 如果要将此筛选器用作已保存的筛选器，请选择 "**完成**"。
 

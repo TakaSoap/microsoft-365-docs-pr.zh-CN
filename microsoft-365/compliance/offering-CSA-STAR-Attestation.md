@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b5f6ae8d7047ab36867938b65bf546a5ffb7b0a6
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a76a557ef391462db09d9b0b3d409ba2b4a042c
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860012"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260060"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>云安全联盟 (CSA) STAR 证明
 
@@ -41,6 +42,7 @@ Microsoft Azure 和 Microsoft Intune 已被授予 CSA STAR 证明。 STAR 证明
 - 云应用安全
 - Graph
 - Intune
+- Microsoft 托管桌面
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供 
 - Power BI

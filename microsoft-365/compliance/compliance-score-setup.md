@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何登录、设置权限以及了解 Microsoft 合规性分数的仪表板，这有助于简化和自动化风险评估。
-ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: d6ec9617ff97a254514370c863b02b2fb0415798
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021908"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515653"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合规性分数（预览）设置
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 您的组织的 Microsoft 365 全局管理员可能是第一个访问合规性分数的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性得分时所述。
 
@@ -63,6 +63,38 @@ ms.locfileid: "41021908"
 
 1. 请转到[Microsoft 365 合规性中心](https://compliance.microsoft.com)并使用全局管理员帐户登录。
 2. 在左侧导航窗格中选择 "**权限**"。 在此处，您可以查看角色和分配权限。
+
+## <a name="configure-automatic-secure-score-updates"></a>配置自动安全得分更新
+
+默认情况下，所有新租户都启用了[安全分数](../security/mtp/microsoft-secure-score.md)自动更新。 这意味着，安全得分监控的所有操作将自动更新合规性分数中相同操作的状态。
+
+全局管理员可以管理此设置，以关闭所有操作的自动更新，或者分别设置各个操作的更新。
+
+在公共预览过程中，需要转到 Microsoft 服务信任门户（其中合规性管理器位于其中）以管理安全分数更新。
+
+若要管理自动安全得分更新，请按照以下步骤操作：
+
+1. 使用全局管理员帐户登录到[服务信任门户](https://servicetrust.microsoft.com)。
+
+2. 在服务信任门户顶部菜单栏上的 "**更多**" 下，选择 "**管理员**"，然后选择 "**设置**"。
+
+3. 在 "**安全分数**" 选项卡中，选择相应的按钮以**打开所有操作**、为**所有操作**禁用或设置 "**每个操作"。**
+
+如果选择 **"每个操作设置"，请**执行以下额外步骤，为单个操作打开安全得分更新：
+
+4. 从顶部菜单中选择 "**合规性管理器**" （注意：不要选择 "合规性管理器（经典）"）。
+
+5. 选择屏幕右上角的 "**租户管理**"。
+
+6. 在 "**客户操作**" 窗格上，使用 "**受影响的操作**" 列下的省略号（**...**）查找预期操作。 单击省略号，然后选择 "**编辑"。**
+
+7. 将 "**安全分数连续更新**" 切换开关切换到 **"开"。**
+
+8. 选择 "**保存"。** 现已为该操作启用安全分数连续监控。
+
+**注意：** 只有全局管理员才能打开或关闭所有操作的自动更新。 合规性管理器管理员可以为单个操作启用自动更新，而不是全局执行所有操作。
+
+阅读有关[管理安全得分更新](compliance-manager-release-notes.md#secure-score)的详细信息。
 
 ## <a name="understand-the-compliance-score-dashboard"></a>了解合规性分数仪表板
 

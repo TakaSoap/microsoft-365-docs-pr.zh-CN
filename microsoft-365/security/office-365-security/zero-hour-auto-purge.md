@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除（ZAP）是一种电子邮件保护功能，可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件，然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: 87d0837b74606a57c7a4aaee3150f70449b09b81
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b2e2fb8fb0786f921b7c5330e92df519b0877d30
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238379"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515893"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 
@@ -36,7 +36,7 @@ ZAP 可与包含 Exchange Online 邮箱的任何 Office 365 订阅附带的默�
 
 Office 365 每天实时更新反垃圾邮件引擎和恶意软件签名。 但是，用户仍可能会因各种原因而将恶意邮件传递到其收件箱，其中包括在将内容传递给用户后 weaponized 内容。 ZAP 通过持续监控对 Office 365 垃圾邮件和恶意软件签名的更新来解决此情况。 ZAP 可查找并删除已在用户收件箱中的以前传递的邮件。
 
-对于邮箱用户，ZAP 操作是无缝的;如果移动电子邮件，则不会收到通知。 消息不得早于2天。
+对于邮箱用户，ZAP 操作是无缝的;如果移动电子邮件，则不会收到通知。 
 
 允许列表、[邮件流规则](use-transport-rules-to-configure-bulk-email-filtering.md)（也称为传输规则）和最终用户规则或其他筛选器优先于 ZAP。
 
@@ -67,8 +67,8 @@ ZAP 不会将任何邮件移动到正在进行动态传递扫描的隔离中，�
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否移动了邮件
 
-若要确定 ZAP 是否移动了邮件，可以使用[威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)或[威胁浏览器（和实时检测）](threat-explorer.md)。
-
+若要确定 ZAP 是否移动了邮件，可以使用[威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)或[威胁浏览器（和实时检测）](threat-explorer.md)。 请注意，作为系统操作，不会在 exchange 邮箱审核日志中记录 ZAP。 
+ 
 ## <a name="disable-zap"></a>禁用 ZAP
 
 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
@@ -114,6 +114,16 @@ ZAP 将根据反垃圾邮件策略中的网络钓鱼和垃圾邮件操作设置�
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>如果邮件被移到另一个文件夹（例如收件箱规则），该怎么办？
 
 在这种情况下，ZAP 仍适用，除非邮件已被删除或在垃圾邮件中。
+
+### <a name="does-zap-change-the-email-header"></a>ZAP 是否会更改电子邮件头？
+
+ZAP 操作不会对电子邮件的标头进行任何更改。
+
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP 对邮箱的保留有何影响？
+
+ZAP 不会在保留邮箱中删除邮箱中的邮件，因此不会对邮件执行 "移动到隔离" 操作。 如果策略指定，邮件仍将移动到 "垃圾邮件" 文件夹。 
+
+[有关邮箱保留的详细信息，请单击此处。](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
 
 ## <a name="related-topics"></a>相关主题
 

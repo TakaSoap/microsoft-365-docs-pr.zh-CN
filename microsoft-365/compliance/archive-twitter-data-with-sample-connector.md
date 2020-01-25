@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将 Twitter 数据导入 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: cba4509c9752fbfefd8aadfdeac679aa45159711
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 65e2c5e2090364d28863763746b135a56fa58dee
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269373"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515793"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data"></a>设置连接器以存档 Twitter 数据
 
@@ -53,27 +53,30 @@ ms.locfileid: "41269373"
 在完成此步骤（按照分步说明操作）后，您将把以下信息保存到文本文件中。 这些值将在部署过程的后续步骤中使用。
 
 - AAD 应用程序 ID
+
+- AAD 应用程序密码
+
 - 租户 Id
 
 ## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>步骤2：将 GitHub 存储库中的连接器 web 服务部署到 Azure 帐户
 
 下一步是部署将使用 Twitter API 连接到 Twitter 帐户并提取数据的 Twitter 连接器应用的源代码，以便您可以将数据导入到 Microsoft 365。 为组织部署的 Twitter 连接器会将组织的 Twitter 帐户中的项目上载到在此步骤中创建的 Azure 存储位置。 在 Microsoft 365 合规性中心（步骤5）中创建 Twitter 连接器后，Office 365 导入服务会将 Twitter 数据从 Azure 存储位置复制到 Microsoft 365 中的邮箱。 如前面的 "[先决条件](#prerequisites-for-setting-up-a-connector-for-twitter)" 部分中所述，您必须具有有效的 azure 订阅才能创建 azure 存储帐户。
 
-您为组织部署的 Twitter 连接器将这些项目从 Twitter 上载到您在此步骤中创建的 Azure 存储位置。 在安全 & 合规中心（步骤7）中创建自定义连接器后，Office 365 导入服务会将 Twitter 数据从 Azure 存储位置复制到 Office 365 中的邮箱。 如前面的 "[先决条件](#prerequisites-for-setting-up-a-connector-for-twitter)" 部分中所述，您必须具有有效的 azure 订阅才能创建 azure 存储帐户。
-
-若要为 Twitter 连接器应用程序部署源代码，请
+若要部署 Twitter 连接器应用的源代码，请执行以下操作：
 
 1. 转到[此 GitHub 网站](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)。
-2. 单击 "**部署到 Azure** " 按钮
+
+2. 单击 "**部署到 Azure**"。
 
 有关分步说明，请参阅[将连接器 web 服务从 GitHub 部署到你的 Azure 帐户](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account)。
 
 按照分步说明完成此步骤，您将提供以下信息
 
 - APISecretKey：在完成此步骤的过程中，您将创建此密码。 它在步骤5中使用。
+
 - tenantId：在第1步中创建 Azure Active Directory 中的 Twitter 应用之后复制的 Microsoft 365 组织的租户 ID。
 
-完成此步骤后，请务必复制应用服务 URL （例如， https://twitterconnector.azurewebsites.net)。 您需要使用此 URL 来完成步骤3、步骤4和步骤5。
+完成此步骤后，请务必复制 app Service URL （例如`https://twitterconnector.azurewebsites.net`）。 您需要使用此 URL 来完成步骤3、步骤4和步骤5。
 
 ## <a name="step-3-create-developer-app-on-twitter"></a>步骤3：在 Twitter 上创建开发人员应用
 
@@ -84,8 +87,11 @@ ms.locfileid: "41269373"
 在完成此步骤（按照分步说明操作）后，将以下信息保存到文本文件中。 这些值将用于在步骤4中配置 Twitter 连接器应用。
 
 - Twitter API 密钥
+
 - Twitter API 密钥
+
 - Twitter 访问令牌
+
 - Twitter 访问令牌机密
 
 ## <a name="step-4-configure-the-twitter-connector-app"></a>步骤4：配置 Twitter 连接器应用
@@ -97,10 +103,15 @@ ms.locfileid: "41269373"
 在完成此步骤（按照分步说明操作）后，您将提供以下信息（在完成上述步骤后，您已将其复制到文本文件中）：
 
 - Twitter API 密钥（在步骤3中获取）
+
 - Twitter API 密钥（在步骤3中获取）
+
 - Twitter 访问令牌（在步骤3中获取）
+
 - Twitter 访问令牌机密（在步骤3中获取）
+
 - Azure Active Directory 应用程序 ID （在步骤1中获取的 AAD 应用程序 ID）
+
 - Azure Active Directory 应用程序密码（在步骤1中获取的 AAD 应用程序密码）
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>步骤5：在 Microsoft 365 合规性中心中设置 Twitter 连接器
@@ -112,4 +123,5 @@ ms.locfileid: "41269373"
 在完成此步骤（按照分步说明操作）后，您将提供以下信息（在完成这些步骤后，您已将其复制到文本文件中）。
 
 - Azure 应用服务 URL （在步骤2中获取; 例如， `https://twitterconnector.azurewebsites.net`）
+
 - APISecretKey （您在步骤2中创建）

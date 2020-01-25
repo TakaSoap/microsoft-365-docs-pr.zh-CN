@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使您能够跟踪、分配和验证与 Microsoft 产品相关的法规遵从性活动。
-ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: db63f1b5cba2166ae8e4f922b84672677b52c4e9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022008"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515863"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -72,13 +72,25 @@ ms.locfileid: "41022008"
 
 ### <a name="controlling-automatic-secure-score-updates"></a>控制自动安全得分更新
 
-可以为所有操作自动启用安全分数更新，可以为所有操作关闭这些更新，也可以通过单个操作进行设置。
+可以为所有操作自动启用安全分数更新，对所有操作关闭这些更新，或通过执行以下步骤设置单个操作。
 
 1. 使用全局管理员帐户登录到[服务信任门户](https://servicetrust.microsoft.com)。
 
-2. 在 "服务信任门户" 顶部菜单栏上，选择 "**管理员**"，然后选择 "**设置**"。
+2. 在服务信任门户顶部菜单栏上的 "**更多**" 下，选择 "**管理员**"，然后选择 "**设置**"。
 
-4. 在 "**安全分数**" 选项卡中，选择所选设置对应的相应按钮。
+3. 在 "**安全分数**" 选项卡中，选择相应的按钮以**打开所有操作**、为**所有操作**禁用或设置 "**每个操作"。**
+
+如果选择 **"每个操作设置"，请**执行以下额外步骤，为单个操作打开安全得分更新：
+
+4. 从顶部菜单中选择 "**合规性管理器**" （注意：不要选择 "合规性管理器（经典）"）。
+
+5. 选择屏幕右上角的 "**租户管理**"。
+
+6. 在 "**客户操作**" 窗格上，使用 "**受影响的操作**" 列下的省略号（**...**）查找预期操作。 单击省略号，然后选择 "**编辑"。**
+
+7. 将 "**安全分数连续更新**" 切换开关切换到 **"开"。**
+
+8. 选择 "**保存"。** 现已为该操作启用安全分数连续监控。
 
 **注意：** 只有全局管理员才能打开或关闭所有操作的自动更新。 合规性管理器管理员可以为单个操作启用自动更新，而不是全局执行所有操作。
 
@@ -582,7 +594,7 @@ Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 
 ![合规性管理器评估 Excel 报告](media/compliance-manager-assessment-report.png)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 下表介绍了每个合规性管理器权限及其允许用户执行的操作。 该表还指示分配了每个权限的角色。
 

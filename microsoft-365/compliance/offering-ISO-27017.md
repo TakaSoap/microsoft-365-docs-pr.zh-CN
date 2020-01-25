@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f58322fe915c811ba2613bef98116f910abc03d1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 758e7d0f3e82afa6cfd4b90501bd84080d8f6303
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859682"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260010"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 信息安全控制措施行为守则
 
@@ -48,7 +49,8 @@ ISO/IEC 27017 在为云服务提供商和云服务客户提供指南方面是独
 - Genomics
 - Graph
 - Intune
-- Microsoft Flow 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Microsoft 托管桌面
+- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Office 365、Office 365 美国政府版、Office 365 美国政府版防御和 Office 365 德国
 - PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
@@ -60,7 +62,7 @@ ISO/IEC 27017 在为云服务提供商和云服务客户提供指南方面是独
 
 - [Azure ISO 27017 证书](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Azure ISO 27017 评估报告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017 适用性声明](https://aka.ms/azureiso27017StatementofApplicability)
+- [Azure ISO 27017 适用性声明](https://aka.ms/AzureISO27017StatementofApplicability)
 - [Office 365 ISO 27001、27018 和 27017 审核评估报告](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
