@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbe175d16a7b588e8c0cb3e7b5457459c314bdc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 89296e2fb7b94bd74ee8ff617d818705fb844863
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804035"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558509"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
@@ -33,10 +33,10 @@ FICIC 引用了全球公认的标准，包括 nist SP 800-53 在 NIST 框架的�
 
 NIST Cybersecurity Framework （CSF）是一个自愿的框架，其中包含用于管理与 Cybersecurity 相关的风险的标准、指南和最佳做法。 Microsoft 云服务已经历独立的第三方 FedRAMP 中等和高基准审核，并根据 FedRAMP 标准进行了认证。 此外，通过由 HITRUST 执行的经过验证的评估（主要安全和隐私标准开发和资格鉴定组织），Office 365 经过了 NIST CSF 中指定的目标的认证。
 
-了解如何使用合规性管理器以及我们的 Azure 安全性和合规性蓝图加快您的 NIST Cybersecurity Framework 部署：
+了解如何使用合规性分数和我们的 Azure 安全性和合规性蓝图加快您的 NIST Cybersecurity Framework 部署：
 
 - [下载 Azure 安全性和合规性蓝图-NIST CSF 风险评估清单](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
-- [了解有关合规性管理器中的适用于 Office 365 的 NIST CSF 评估的详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+- [在合规性分数中了解有关适用于 Office 365 的 NIST CSF 评估的详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -56,11 +56,11 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 - [开始使用 Azure NIST CSF 蓝图](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
-## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-manager"></a>在合规性管理器中使用 NIST CSF 在 Office 365 上执行风险评估
+## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>在合规性分数中使用 NIST CSF 执行 Office 365 上的风险评估
 
-在数字转换时代，Cybersecurity 仍是一个关键管理问题。 为了帮助您实施和验证 Office 365 租户的安全控制，Microsoft 在合规性管理器中提供了 NIST CSF 评估中建议的客户操作。
+在数字转换时代，Cybersecurity 仍是一个关键管理问题。 为了帮助您实施和验证 Office 365 租户的安全控制，Microsoft 在合规性分数的 NIST CSF 评估中提供了建议的客户操作。
 
-- [开始使用合规性管理器](https://aka.ms/compliancemanager)
+- [开始使用合规性分数](compliance-score.md)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -78,7 +78,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 **我是否可以使用 Microsoft 对我的组织的合规性？**
 
-是。 对 FedRAMP 标准的独立第三方合规性报告证明 Microsoft 实施的控件的有效性，以维护 Microsoft 云服务的安全和隐私。 Microsoft 客户可以使用这些相关报告中所述的审核控件作为其自己的 FedRAMP 和 NIST FICIC 的风险分析和资格努力的一部分。
+可以。 对 FedRAMP 标准的独立第三方合规性报告证明 Microsoft 实施的控件的有效性，以维护 Microsoft 云服务的安全和隐私。 Microsoft 客户可以使用这些相关报告中所述的审核控件作为其自己的 FedRAMP 和 NIST FICIC 的风险分析和资格努力的一部分。
 
 **美国政府认为哪些组织是关键基础结构？**
 
@@ -102,7 +102,7 @@ NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online
 - [改进关键基础结构的框架 Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [总统执行官在加强 Cybersecurity 的联邦网络和关键基础结构方面的顺序](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [在线服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息

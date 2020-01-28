@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 73c1d7be6da17ae29c6ea8423c879286714fe8f1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804185"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558599"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消费者隐私法案 (CCPA)
 
@@ -51,7 +51,7 @@ CCPA 将于 2020 年 1 月 1 日生效。 但是，由加利福尼亚律师常�
 
 若要为 CCPA 做好准备，请执行以下几个步骤：
 
-- 首先将合规性管理器中的 GDPR 评估纳入您的 CCPA 隐私计划。
+- 作为 CCPA 隐私计划的一部分，开始利用[合规性分数](compliance-score.md)中的 GDPR 评估。
 - 建立一个过程，以使用数据主体请求工具有效响应数据主体访问请求（DSARs）。
 - 设置标签和策略，使用 Microsoft 信息保护服务来发现、分类、标记和保护敏感数据。
 - 使用电子邮件加密功能进一步控制敏感信息。

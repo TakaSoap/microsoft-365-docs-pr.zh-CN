@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 电子数据展示和搜索工具来管理和响应组织中的数据外泄事件。
-ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 06c02a9d5f31f8b7d6845214c10a150b6cacf379
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259418"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558359"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： Data 外泄方案-搜索和清除
 
@@ -124,7 +124,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
     
 ## <a name="step-6-prepare-the-mailboxes"></a>步骤6：准备邮箱
 
-在查看并验证搜索结果只包含必须删除的邮件之后，您需要收集受影响邮箱的电子邮件地址列表，以便在运行**搜索邮箱-DeleteContent**命令时在步骤7中使用。 您可能还必须准备邮箱，然后才能永久删除电子邮件，具体取决于是否在包含溢出数据的邮箱上启用单个项目恢复，或者这些邮箱处于保留状态。
+在查看并验证搜索结果只包含必须删除的邮件之后，您需要收集受影响邮箱的电子邮件地址列表，以便在删除溢出的数据时在步骤7中使用。 您可能还必须准备邮箱，然后才能永久删除电子邮件，具体取决于是否在包含溢出数据的邮箱上启用单个项目恢复，或者这些邮箱处于保留状态。
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>获取带溢出数据的邮箱的地址列表
 
@@ -170,7 +170,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
 
 使用您在步骤6中收集和准备的邮箱位置以及在步骤3中创建并完善的搜索查询中的步骤3，以查找包含溢出数据的电子邮件，您现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是 "组织管理" 角色组的成员，或者分配有 "搜索和清除" 管理角色。 有关向角色组添加用户的信息，请参阅[在安全 & 合规性中心中分配电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
 
-若要删除溢出的邮件，请参阅在[Office 365 组织中搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)中的步骤 2 & 3
+若要删除溢出的邮件，请参阅 "[搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)" 中的步骤 2 & 3
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步骤8：验证、提供删除证明和审核
 

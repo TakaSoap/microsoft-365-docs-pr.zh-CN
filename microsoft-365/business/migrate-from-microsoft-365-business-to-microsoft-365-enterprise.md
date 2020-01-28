@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 企业移动到 Microsoft 365 E3。
-ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111866"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558039"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>从 Microsoft 365 商业版迁移到 Microsoft 365 E3
 
@@ -77,7 +77,7 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 | 企业 CAL 套件（Exchange、SharePoint、Skype、Windows、Microsoft 终结点配置管理器、Windows 权限管理）| |       ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | **Compliance**        | | | 
 | 无限制的电子邮件存档 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| 合规性管理器    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
+| 合规性分数/合规性管理器   | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | 电子数据展示    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | 就地保留和诉讼保留 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | 邮件记录管理（MRM）保留标记和保留策略  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 

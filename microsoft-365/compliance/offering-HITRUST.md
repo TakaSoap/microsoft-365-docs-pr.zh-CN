@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9b0448a3ed5cf36a909ebb14e0aadf2b8ac96610
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6085446677e592425d5453aa350541590de1b9d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804795"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558529"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康信息信任联盟（HITRUST）常见安全框架（CSF）
 
@@ -58,9 +58,9 @@ Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>使用 Office 365 时，提高您的 HIPAA/HITRUST 合规性
 
-使用 Office 365，通过合规性管理器以安全且合规的方式管理运行状况信息，这使您能够对诸如 HIPAA 和安全控制框架（如 NIST CSF 和 NIST 800-53）执行风险评估（如卫生法规）。 您可以按照分步指南操作，了解如何实施和维护可帮助您满足医疗保健合规性义务的数据保护控制。
+使用 Office 365 通过合规性分数以安全且合规的方式管理运行状况信息，这使您能够针对诸如 HIPAA 和安全控制框架（如 NIST CSF 和 NIST 800-53）对运行状况法规执行风险评估。 您可以按照分步指南操作，了解如何实施和维护可帮助您满足医疗保健合规性义务的数据保护控制。
 
-[开始使用合规性管理器](https://go.microsoft.com/fwlink/p/?linkid=862650)
+[开始使用合规性分数](compliance-score.md)
 
 ## <a name="collaborate-with-microsoft-in-the-hitrust-shared-responsibility-program"></a>在 HITRUST 共享责任计划中与 Microsoft 协作
 
@@ -72,7 +72,7 @@ Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
 **我可以使用 Azure HITRUST 合规性来构建组织的认证过程吗？**
 
-是。 如果企业需要对部署在 Microsoft 服务上的实施进行 HITRUST 认证，则可以在进行合规性评估时在 Azure HITRUST 合规性上构建。 不过，您需要负责评估您自己的组织中的 HITRUST 要求和控件。
+可以。 如果企业需要对部署在 Microsoft 服务上的实施进行 HITRUST 认证，则可以在进行合规性评估时在 Azure HITRUST 合规性上构建。 不过，您需要负责评估您自己的组织中的 HITRUST 要求和控件。
 
 **如何获取 HITRUST 证书的副本？**
 
@@ -95,7 +95,7 @@ HITRUST CSF 认证的范围内的服务包括 Exchange Online 存档、Exchange 
 
 **在使用 Office 365 时，Microsoft 是否为我的组织提供了实施相应控件的指导？**
 
-是的，您可以在合规性管理器中查找推荐的客户操作、跨 Microsoft 云解决方案，帮助组织在使用云服务时满足复杂合规性义务。 具体来说，对于 HITRUST CSF，我们建议您在合规性管理器中使用 NIST 800-53 和 NIST CSF 评估执行风险评估。 在评估中，我们为你提供了分步指南以及你可以用来实现数据保护控件的 Microsoft 解决方案。 您可以在此[白皮书](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us)中了解有关合规性管理器的详细信息。
+是的，您可以在合规性分数中查找推荐的客户操作、跨 Microsoft 云解决方案，帮助组织在使用云服务时满足复杂合规性义务。 具体来说，对于 HITRUST CSF，我们建议您使用 NIST 800-53 和 NIST CSF 评估在合规性分数中执行风险评估。 在评估中，我们为你提供了分步指南以及你可以用来实现数据保护控件的 Microsoft 解决方案。 你可以在[Microsoft 合规性分数](compliance-score.md)中了解有关合规性分数的详细信息。
 
 **如何与 Microsoft 联系？**
 

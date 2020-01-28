@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: 了解如何通过将邮箱转变成非活动邮箱来保留以前员工的邮箱内容。 为此，可以将邮箱置于诉讼保留状态，或将 Office 365 保留策略应用于邮箱，然后删除相应的 Office 365 帐户。
-ms.openlocfilehash: cd0d69b77dada9f249e3c3e0b68f556ad1120030
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 8522242e499d1b612b3e0f68055919bc75c8b4aa
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38685241"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557969"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Office 365 中的非活动邮箱概述
 
@@ -33,9 +33,8 @@ ms.locfileid: "38685241"
   
 但是，如果您的组织需要保留前员工的邮箱内容，则可以通过将邮箱置于诉讼保留中，或将 Office 365 保留策略应用于安全 & 合规中心中的邮箱，然后删除相应的 Office 365 帐户，从而将邮箱转换为非活动邮箱。 非活动邮箱的内容会在邮箱被删除之前在邮箱或应用到它的 Office 365 保留策略的保留期内保留。 您仍可以在30天内恢复相应的用户帐户。 但是，30天后，非活动邮箱将保留在 Office 365 中，直到保留策略被删除。 
   
-> [!NOTE]
-> 我们推迟了最后期限，在 2017 年 7 月 1 后，仍可通过新建就地保留创建非活动邮箱。 But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. 在这段时间，仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
- 
+> [!IMPORTANT]
+> 随着我们继续投资保留邮箱内容的不同方式，我们宣布在 Exchange 管理中心中停用就地保留。 这意味着，应使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 从2020年4月1日开始，你将无法在 Exchange Online 中创建新的就地保留。 但您仍可以更改非活动邮箱上设置的就地保留的保留持续时间。 不过，从2020年6月1日开始，你将无法更改保留期。 你将只能通过删除就地保留来删除非活动邮箱。 在删除保留之前，就地保留中的现有非活动邮箱仍将保留。 有关停用就地保留的详细信息，请参阅[旧版电子数据展示工具的退休](legacy-ediscovery-retirement.md)。
   
 ## <a name="inactive-mailboxes-and-office-365-retention-policies"></a>非活动邮箱和 Office 365 保留策略
 

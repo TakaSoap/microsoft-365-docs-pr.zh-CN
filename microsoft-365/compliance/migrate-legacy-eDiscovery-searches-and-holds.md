@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: eacbb5577c070ce463ad8e17ba6d0d19a1d8736c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 3d0bba3c75bda77cbffbbd515215a10d579755be
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40971300"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558559"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>将旧式电子数据展示搜索和保留迁移到 Microsoft 365 合规性中心
 
@@ -26,7 +26,7 @@ Microsoft 365 合规性中心提供了改进的电子数据展示使用体验，
 > [!NOTE]
 > 由于存在许多不同的方案，本文提供了在 Microsoft 365 合规性中心中将搜索和保留转换为核心电子数据展示事例的一般指导。 不总是需要使用电子数据展示事例，而是通过允许您分配权限来控制对组织中的电子数据展示事例的访问权限，从而添加额外的安全层。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Office 365 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本文中所述的 PowerShell 命令。 此外，您还必须是 Exchange 管理中心中 "发现管理" 角色组的成员。
 
@@ -75,7 +75,7 @@ $search | FL
 ![使用 New-mailboxsearch 进行单个搜索的 PowerShell 输出示例](media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> 此示例中就地保留的持续时间不定（*ItemHoldPeriod：无限制*）。 这对于电子数据展示和法律调查方案来说是典型的。 如果保留期的值与不定的值不同，原因可能是由于保留正在用于保留方案中的内容。 我们建议您使用[remove-holdcompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy)和[Remove-holdcompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule)的电子数据展示 cmdlet 来保留方案，而不是在 Office 365 安全性 & 合规性中心 PowerShell 中使用它来保留内容。 使用这些 cmdlet 的结果将类似于使用**CaseHoldPolicy**和**new-caseholdrule**，但您可以指定保留期和保留操作，例如，在保留期过期后删除内容。 此外，使用保留 cmdlet 不需要将保留挂起与电子数据展示事例相关联。
+> 此示例中就地保留的持续时间不定（*ItemHoldPeriod：无限制*）。 这对于电子数据展示和法律调查方案来说是典型的。 如果保留期的值与不定的值不同，原因可能是由于保留正在用于保留方案中的内容。 我们建议您使用[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)和[New-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)的电子数据展示 cmdlet 来保留方案，而不是在 Office 365 安全性 & 合规性中心 PowerShell 中使用它来保留内容。 使用这些 cmdlet 的结果将类似于使用**CaseHoldPolicy**和**new-caseholdrule**，但您可以指定保留期和保留操作，例如，在保留期过期后删除内容。 此外，使用保留 cmdlet 不需要将保留挂起与电子数据展示事例相关联。
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>步骤4：在 Microsoft 365 合规性中心中创建事例
 

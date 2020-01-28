@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 877c0017359ab9193c4cae81cbef4240909053a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bb65745f92d1f77e6cc3224832c0a9871e567ca5
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075947"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558469"
 ---
 # <a name="generate-search-term-report-for-a-review-set"></a>生成评审集的搜索词报告
 
@@ -46,7 +46,7 @@ ms.locfileid: "37075947"
 
 透视是将如何组织报告。 请考虑以下示例。
 
-- 已保存的查询检索10个文档： doc1 到 doc10。
+- 已保存的查询检索10个文档： doc1 至 doc10。
 
 - doc1、doc2、doc3、doc4、doc5、doc6 和 doc7 包含术语 "电子数据展示"。
 
