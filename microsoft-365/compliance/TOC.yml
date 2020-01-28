@@ -347,8 +347,6 @@
           href: csv-file-for-an-id-list-content-search.md
         - name: 使用内容搜索来搜索第三方数据
           href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: 在电子数据展示工作流中使用内容搜索
-          href: use-content-search-in-ediscovery.md
         - name: 检查内容搜索查询中是否有错误
           href: check-your-content-search-query-for-errors.md
         - name: 重试失败的内容搜索
@@ -1013,7 +1011,7 @@
             - name: EAR（美国出口管理法规）
               href: offering-ear.md
             - name: ENISA IAF（欧盟）
-              href: 'https://aka.ms/ENISA'
+              href: offering-enisa.md
             - name: 欧盟模式条款
               href: offering-eu-model-clauses.md
             - name: EBA（欧盟）
@@ -1107,7 +1105,7 @@
             - name: ENS（西班牙）
               href: offering-ens-spain.md
             - name: ENISA IAF（欧盟）
-              href: 'https://aka.ms/ENISA'
+              href: offering-enisa.md
             - name: 欧盟模式条款
               href: offering-eu-model-clauses.md
             - name: 欧盟美国隐私盾
