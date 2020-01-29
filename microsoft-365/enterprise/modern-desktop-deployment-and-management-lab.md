@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 435b8177fc97f9cd07ff78704605428e594e0dd8
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112506"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558579"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -56,7 +56,7 @@ ms.locfileid: "41112506"
 
 ## <a name="step-by-step-labs"></a>**分步实验室**
 
-详细的实验室指南向你介绍多个部署和管理方案，其中包括：
+详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和配置管理器（版本 1910）的最新版本进行了更新。  
 
 ### <a name="device-and-app-readiness"></a>**设备和应用就绪情况**
 
@@ -116,9 +116,12 @@ ms.locfileid: "41112506"
   - Configuration Manager 中的 Office 365 专业增强版更新管理
   - 使用 Microsoft Intune 向 Windows 10 应用移动设备管理
 
+### <a name="new-windows-virtual-desktop"></a>**新！Windows 虚拟桌面**
+  - Windows 虚拟桌面：准备、部署、优化 
+
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下载 Windows 和 Office 部署实验室工具包**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*请使用高宽带下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 2 月 15 日过期。新版本将于旧版本到期前发布。*
+*请使用高带宽下载此内容，以增强下载体验并留出 30-45 分钟进行自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 4 月 18 日过期。新版本将于旧版本到期前发布。*
 
 ## <a name="additional-guidance"></a>**其他指南**
 

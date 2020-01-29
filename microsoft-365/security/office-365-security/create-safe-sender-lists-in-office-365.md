@@ -11,36 +11,36 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: 如果您想要确保收到来自特定发件人的邮件，因为您信任这些邮件及其邮件，您可以在 Exchange 管理中心的垃圾邮件筛选器策略中调整您的允许列表。
-ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+description: 如果您想要确保收到来自特定发件人的邮件，因为您信任这些邮件及其邮件，则可以在垃圾邮件筛选器策略中调整您的允许列表。
+ms.openlocfilehash: 02457a863445cf9544f75682aa2df3bf2b7e765a
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970848"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572999"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 
-如果您想要确保用户收到来自特定发件人或发件人的电子邮件，因为您信任这些发件人或发件人的邮件，则可以从中选择多个可用方法。 这些选项包括 Exchange 传输规则（Etr）、Outlook 安全发件人、IP 允许列表、反垃圾邮件发件人/域允许列表。
+如果您想要确保用户收到来自特定发件人或发件人的电子邮件，因为您信任这些发件人或发件人的邮件，则可以从中选择多个可用方法。 这些选项包括 Exchange 邮件流规则（也称为传输规则）、Outlook 安全发件人、IP 允许列表、反垃圾邮件发件人/域允许列表。
 
 > [!IMPORTANT]
 > 虽然可以使用组织允许列表来解决误报，但应将其视为临时解决方案，并尽可能避免。 建议不要通过使用 "允许列表" 来管理误报，因为这可能会在无意中将组织打开为欺骗、模拟和其他攻击。 如果要使用允许列表实现此目的，则在准备就绪时，您将需要警惕并保留将[垃圾邮件、非垃圾邮件和网络钓鱼邮件提交给 Microsoft 进行分析](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)的文章。
 
-配置安全发件人列表的建议方法是使用 Exchange 传输规则（Etr），因为这会提供最大的灵活性，以确保仅允许正确的邮件。 *反垃圾邮件策略电子邮件地址*和*基于域的允许列表*不像*基于 IP 地址的列表*那样安全，因为域很容易被欺骗。 但是，基于反垃圾邮件策略的允许列表还显示了风险，因为它们将允许通过该 IP 发送的任何域绕过垃圾邮件筛选。 请务必小心，并谨慎监视所做的*任何*异常。
+配置安全发件人列表的建议方法是使用邮件流规则，因为这会提供最大限度的灵活性来确保只允许正确的邮件。 *反垃圾邮件策略电子邮件地址*和*基于域的允许列表*不像*基于 IP 地址的列表*那样安全，因为域很容易被欺骗。 但是，基于反垃圾邮件策略的允许列表还显示了风险，因为它们将允许通过该 IP 发送的任何域绕过垃圾邮件筛选。 请务必小心，并谨慎监视所做的*任何*异常。
 
 > [!IMPORTANT]
 > 有关如何创建**被阻止的发件人列表**的信息在[这里](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="options-from-most-to-least-recommended"></a>从最多到最小建议的选项
 
-应始终限制允许列表，因为它们会绕过许多安全措施。 您必须重新检查所有允许列表作为标准维护的一部分，以便您知道允许绕过的用户。 建议尽可能使用限制性 Etr。
+应始终限制允许列表，因为它们会绕过许多安全措施。 您必须重新检查所有允许列表作为标准维护的一部分，以便您知道允许绕过的用户。 建议尽可能使用限制的邮件流规则。
 
-- Exchange 传输规则（Etr 也称为邮件流规则）
+- Exchange 邮件流规则
 - Outlook 安全发件人
 - 反垃圾邮件策略： IP 允许列表
 - 反垃圾邮件策略：发件人/域允许列表
 
-## <a name="using-exchange-transport-rules-etrs-to-allow-specific-senders-recommended"></a>使用 Exchange 传输规则（Etr）允许特定发件人（推荐）
+## <a name="using-exchange-mail-flow-rules-to-allow-specific-senders-recommended"></a>使用 Exchange 邮件流规则允许特定发件人（推荐）
 
 若要确保仅允许组织中的合法邮件，条件应为以下项之一：
 
@@ -59,7 +59,7 @@ ms.locfileid: "39970848"
 
 1. 将垃圾邮件可信度（SCL）设置为-1 （绕过垃圾邮件筛选）。
 
-2. 添加 X 标头，以指示规则执行的操作。 在下面的示例中，您可以添加一个简单的标头 "X-ETR：绕过经过`contoso.com`身份验证的发件人的垃圾邮件筛选"。 如果在此规则中有多个域，则可以根据需要更改标题文本。 **当邮件由于 ETR 而跳过筛选时，它会在 X Forefront 反垃圾邮件报告标头中标记 SFV： SKN** （**如果它位于 IP 允许列表中，它还会标记 IPV： CAL**）。 这将帮助进行故障排除。
+2. 添加 X 标头，以指示规则执行的操作。 在下面的示例中，您可以添加一个简单`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`的标头。 如果在此规则中有多个域，则可以根据需要更改标题文本。 **当邮件由于邮件流规则而跳过筛选时，它会在 X Forefront 垃圾邮件报告标头中标记 SFV： SKN** （**如果它位于 IP 允许列表中，它也会标记 IPV： CAL**）。 这将帮助进行故障排除。
 
 ![用于绕过垃圾邮件筛选的 GUI。](../media/1-AllowList-SkipFilteringFromContoso.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "39970848"
 
 请勿将您拥有的域或受欢迎的域（例如`microsoft.com`）作为条件添加到邮件流规则。 这被认为是高风险，因为它会给不良参与者带来机会，以向您发送邮件，否则将被筛选掉。
 
-[请单击以查看创建 ETR 的步骤，也称为邮件流规则](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages)。
+有关详细信息，请参阅[使用邮件流规则设置邮件中的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>使用 Outlook 安全发件人（最终用户托管）
 
@@ -78,7 +78,7 @@ ms.locfileid: "39970848"
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>使用反垃圾邮件策略 IP 允许列表
 
-如果在验证发件人身份验证时不能使用 Etr 全局允许特定发件人，或者通过将一个域和 IP 与它们结合在一起，则下一个最佳选择是将发件人添加到*反垃圾邮件策略 IP 允许列表*中。 [可以在配置连接筛选器策略文档中找到详细步骤](https://docs.microsoft.com/office365/securitycompliance/configure-the-connection-filter-policy)。 一定要将允许的 IP 地址列表保持为最小，并避免使用 IP 地址范围。 避免添加属于消费者服务或共享基础结构的 IP 地址范围，还应*确保*定期查看允许的 IP 地址列表，并删除不再需要的 ip 地址。
+如果在验证发件人身份验证时无法使用邮件流规则全局允许特定发件人，或者通过将一个域和 IP 与这些规则结合在一起，则下一个最佳选择是将发件人添加到*反垃圾邮件策略 IP 允许列表*中。 您可以在[配置连接筛选器策略](configure-the-connection-filter-policy.md)中找到详细步骤。 一定要将允许的 IP 地址数保持为最小值，因此请避免使用整个 IP 地址范围。 此外，不应添加属于消费者服务或共享基础结构的 IP 地址范围，还应*确保*定期查看允许的 IP 地址列表，并删除不再需要的 ip 地址。
 
 > [!CAUTION]
 > 将反垃圾邮件策略配置为仅允许基于发件人 IP 地址将导致跳过允许规则中来自该 IP 地址的所有邮件的垃圾邮件筛选。 这将产生较差的参与者向您发送邮件的高风险，否则将被筛选掉。此方法还会跳过所有垃圾邮件筛选、发件人身份验证检查和邮件发送到用户的收件箱中，从而增加风险。
@@ -89,10 +89,5 @@ ms.locfileid: "39970848"
 
 这些列表的最大限制约为1000个条目;尽管只能将30个条目输入到门户中。 必须使用 PowerShell 添加30个以上的条目。
 
-> [!CAUTION]
-> 将反垃圾邮件策略配置为*允许发件人/允许域*会导致邮件跳过来自允许列表中的发件人或 b 的来自允许域的发件人发来的邮件的垃圾邮件筛选。 此方法会显著增加垃圾邮件制造者可以欺骗发送域（或模拟完整电子邮件地址）的邮件，该邮件会跳过所有垃圾邮件筛选、发件人身份验证检查，并将邮件直接发送到用户的收件箱。
-> 
-> 不要将拥有或受欢迎域的域（例如`microsoft.com`）作为一个条件添加到邮件流规则。 此方法被认为是高风险，因为它会给不良参与者带来机会，以向您发送邮件，否则将被筛选掉，从而增加风险。
-
 > [!IMPORTANT]
-> 有关如何创建**被阻止的发件人列表**的信息在[这里](create-block-sender-lists-in-office-365.md)。
+> •配置反垃圾邮件策略以*允许发件人/允许域*将邮件跳过来自允许列表中的发件人或 b 中的发件人发来的来自允许域的所有发件人的邮件。 此方法会显著增加垃圾邮件制造者可以欺骗发送域（或模拟完整电子邮件地址）的邮件，该邮件会跳过所有垃圾邮件筛选、发件人身份验证检查，并将邮件直接发送到用户的收件箱。 <br/><br/>•不要将拥有或受欢迎域的域（例如`microsoft.com`）作为一个条件添加到邮件流规则。 此方法被认为是高风险，因为它会给不良参与者带来机会，以向您发送邮件，否则将被筛选掉，从而增加风险。 <br/><br/>•有关如何创建**阻止的发件人列表**的信息，请单击[此处](create-block-sender-lists-in-office-365.md)。

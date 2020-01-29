@@ -15,18 +15,18 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f2eadfaf23c4485e6b50b6550f0a884690a79548
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031897"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572979"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>查找并调查 Office 365 中提供的恶意电子邮件
 
 [Office 365 高级威胁防护](office-365-atp.md)使您能够调查将组织中的人员面临风险的活动，并采取措施保护组织。 例如，如果您是组织的安全团队的一部分，则可以查找并调查已传递的可疑电子邮件。 可以使用[威胁资源管理器（或实时检测）](threat-explorer.md)执行此操作。
   
-## <a name="before-you-begin"></a>开始之前 .。。
+## <a name="before-you-begin"></a>开始之前...
 
 请确保满足以下要求：
   
@@ -44,9 +44,9 @@ ms.locfileid: "38031897"
 
 |活动  |角色组 |是否需要预览角色？  |
 |---------|---------|---------|
-|使用威胁浏览器（和实时检测）分析威胁     |Office 365 全局管理员 <br> 安全管理员 <br> 安全读者     | 否   |
-|使用威胁资源管理器（和实时检测）查看电子邮件的邮件头，以及预览和下载隔离的电子邮件    |Office 365 全局管理员 <br> 安全管理员 <br>安全读者   |       否  |
-|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |Office 365 全局管理员 <br>安全管理员 <br> 安全读者 <br> 预览   |   是      |
+|使用威胁浏览器（和实时检测）分析威胁     |Office 365 全局管理员 <br> 安全管理员 <br> 安全读取者     | 否   |
+|使用威胁资源管理器（和实时检测）查看电子邮件的邮件头，以及预览和下载隔离的电子邮件    |Office 365 全局管理员 <br> 安全管理员 <br>安全读取者   |       否  |
+|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |Office 365 全局管理员 <br>安全管理员 <br> 安全读取者 <br> 预览   |   是      |
 
 > [!NOTE]
 > *预览*是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 Office 365 全局管理员角色分配有 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)），安全管理员和安全读者角色是在 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）中分配的。 若要了解有关角色和权限的详细信息，请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
