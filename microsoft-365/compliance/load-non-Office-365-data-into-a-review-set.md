@@ -1,5 +1,7 @@
 ---
 title: 将非 Office 365 数据加载到审阅集
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 将非 Office 365 数据导入到高级电子数据展示事例中的审阅集。
-ms.openlocfilehash: 508346c3fe3a8f67addfed4ced08693daa2d49e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075031"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585681"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>将非 Office 365 数据加载到审阅集
 
@@ -40,7 +42,7 @@ ms.locfileid: "37075031"
 
 - 非 Office 365 数据必须是高级电子数据展示支持的文件类型。 有关详细信息，请参阅[高级电子数据展示中支持的文件类型](supported-filetypes-ediscovery20.md)。
 
-- 上载到审阅集的所有文件都必须位于文件夹中，其中每个文件夹都与特定的保管人相关联。 这些文件夹的名称必须使用以下命名格式： *alias @ domainname*。 别名 @ domainname 必须是用户的 Office 365 别名和域。 您可以收集根文件夹中的所有别名 @ domainname 文件夹。 根文件夹仅可包含别名 @ domainname 文件夹。 不支持根文件夹中的松散文件。
+- 上载到审阅集的所有文件都必须位于文件夹中，其中每个文件夹都与特定的保管人相关联。 这些文件夹的名称必须使用以下命名格式： *alias@domainname*。 Alias@domainname 必须是用户的 Office 365 别名和域。 您可以收集根文件夹中的所有 alias@domainname 文件夹。 根文件夹仅可包含 alias@domainname 文件夹中。 不支持根文件夹中的松散文件。
 
    您要上载的非 Office 365 数据的文件夹结构与以下示例类似：
 

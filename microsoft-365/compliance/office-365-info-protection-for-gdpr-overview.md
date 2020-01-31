@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 概述针对 GDPR 的 Office 365 信息保护。了解如何发现、分类、保护和监视个人数据。
-ms.openlocfilehash: c1d73baef939ec69a69e63d26b7a204c353ca95a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 概览针对 GDPR 的 Office 365 信息保护。了解如何发现、分类、保护和监视个人数据。
+ms.openlocfilehash: d4e84e6a3fc1020f3eecda6eb72e3d02a9f66555
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075651"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558499"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>针对 GDPR 的 Office 365 信息保护概述
 
@@ -41,13 +41,13 @@ GDPR 对个人数据的收集、存储、处理和共享进行了规范化。个
 
 实现 GDPR 符合性的第一步是评估 GDPR 是否适用于组织，如果适用，适用程度如何。此分析包括了解组织所处理的数据及此数据所在的位置。
 
-### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>步骤 1 — 使用合规性管理器查看法规要求并跟踪进度
+### <a name="step-1--use-compliance-score-to-view-the-regulation-requirements-and-track-your-progress"></a>第 1 步 — 使用合规性分数查看法规要求并跟踪进度
 
-合规性管理器提供用于跟踪、实现和管理审核控制的工具，可帮助组织实现各种标准的符合性，其中包括 GDPR。
+合规性分数提供用于跟踪、实现和管理审核控制的工具，有助于组织符合各种标准（包括 GDPR）。
 
-![使用合规性管理器查看要求并跟踪进度](Media/Overview-image1.png)
+![使用合规性分数和合规性管理器查看要求并跟踪进度](Media/Overview-image1.png)
 
-有关详细信息，请参阅[使用服务信任门户中的合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)。 
+有关详细信息，请参阅[合规性分数](compliance-score.md)。
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>步骤 2 — 使用内容搜索和敏感信息类型查找个人数据 
 

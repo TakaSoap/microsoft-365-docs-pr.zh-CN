@@ -1,5 +1,7 @@
 ---
 title: EU 税标识号
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟税务识别号敏感信息类型时，应查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 0ee76fa46bb22b2754098d053ab769b862fdd3f2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5467db921bd518eeeab18a36ee2de473f9017358
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805845"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41591013"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税标识号
 

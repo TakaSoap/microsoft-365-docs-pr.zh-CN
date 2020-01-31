@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: 995f0b273753d7b3a92b8c5acef6eb94d51458b3
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872098"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572969"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -31,35 +31,35 @@ ms.locfileid: "39872098"
 
 在此图中：
 
--   从 SharePoint Online、OneDrive for Business 和传输中的电子邮件中用于监视个人数据的 Office 365 数据丢失防护报告着手。它们提供了有关监视个人数据的最为详细的内容。然而，这些报告并未包括 Office 365 中的所有服务。
+- 从 Office 365 数据丢失防护报告入手，它们用于监视 SharePoint Online、OneDrive for Business 和传输中的电子邮件内的个人数据。这些报告为监控个人数据提供了最详细的信息。然而，这些报告并未囊括 Office 365 中的所有服务。
 
--   接下来，使用警报策略和 Office 365 审核日志监视 Office 365 服务中的活动。设置持续监视或搜索审核日志以调查事件。Office 365 审核日志适用于 Office 365 服务：Sway、PowerBI、电子数据展示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理员活动、OneDrive for Business、SharePoint Online、传输中的邮件和静态邮箱。Skype 对话包含在静态邮箱中。
+- 接下来，使用警报策略和 Office 365 审核日志监视 Office 365 服务中的活动。设置持续监视或搜索审核日志以调查事件。Office 365 审核日志适用于 Office 365 服务：Sway、PowerBI、电子数据展示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理员活动、OneDrive for Business、SharePoint Online、传输中的邮件和静态邮箱。Skype 对话包含在静态邮箱中。
 
--   最后，使用 Microsoft Cloud App Security 监视其他 SaaS 提供程序中具有敏感数据的文件。即将推出一项可以将 Azure 信息保护和 Office 中的 Office 365 敏感信息类型和统一标签与 Cloud App Security 配合使用的功能。可以设置应用到所有 SaaS 应用或特定应用（如 Box）的策略。Cloud App Security 不会发现 Exchange Online 中的文件（包括附加到电子邮件的文件）。
+- 最后，使用 Microsoft Cloud App Security 监视其他 SaaS 提供程序中包含敏感数据的文件。即将推出的功能为，通过 Cloud App Security 跨 Azure 信息保护和 Office 使用 Office 365 敏感信息类型和统一标签。可以设置适用于所有 SaaS 应用或特定应用（如 Box）的策略。Cloud App Security 不会发现 Exchange Online 中的文件（包括附加到电子邮件的文件）。
 
 ## <a name="office-365-data-loss-prevention-reports"></a>Office 365 数据丢失防护报告
 
-创建数据丢失防护 (DLP) 策略后，你会希望验证这些策略是否按预期运行，以及是否有助于保持符合性。借助于 Office 365 中的 DLP 报告，可以快速查看 DLP 策略匹配项、重写或误报的数量；了解它们是否随着时间的推移呈上升或下降趋势；以不同的方式筛选报告；并且通过选择图形某个直线上的某个点来查看其他详细信息。
+创建数据丢失防护 (DLP) 策略后，你需要验证这些策略是否按预期运行，以及是否有助于你保持合规性。借助 Office 365 中的 DLP 报告，可以快速查看 DLP 策略匹配数、替代数或误报数；观察它们随时间推移是呈上升趋势还是下降趋势；以不同的方式筛选报告；以及通过选择图中直线上的点来查看其他详细信息。
 
 可以使用 DLP 报告实现以下目的：
 
--   重点关注特定的时间段，并了解峰值和发展趋势的原因。
+- 重点关注特定的时间段，并了解峰值和发展趋势的原因。
 
--   发现违反您组织的 DLP 策略的业务流程。
+- 发现违反组织的 DLP 策略的业务流程。
 
--   了解 DLP 策略的任何业务影响。
+- 了解 DLP 策略的任何业务影响。
 
--   查看用户在通过重写策略或报告误报解析策略提示时提交的理由。
+- 查看用户在通过重写策略或报告误报解析策略提示时提交的理由。
 
--   通过显示该策略的匹配结果，验证该策略是否遵守特定 DLP 策略。
+- 通过显示该策略的匹配结果，验证该策略是否遵守特定 DLP 策略。
 
--   在详细信息窗格中查看与您的 DLP 策略相匹配的含敏感数据的文件列表。
+- 在详细信息窗格中查看与您的 DLP 策略相匹配的含敏感数据的文件列表。
 
 此外，当你在测试模式下运行 DLP 策略时，可以使用 DLP 报告对其进行微调。
 
 DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查看报告”。 在“数据丢失防护 (DLP)”下，转到“DLP 策略和规则匹配项”或“DLP 误报和重写”。
 
-有关详细信息，请参阅[查看数据丢失防护报告](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)。
+有关详细信息，请参阅[查看数据丢失防护报告](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。
 
 ![显示 DLP 策略匹配项的报告](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -69,9 +69,9 @@ Office 365 审核日志包含来自 Exchange Online、SharePoint Online、OneDri
 
 安全中心和合规中心提供两种方法针对 Office 365 审核日志进行监视和报告：
 
--   设置警报策略、查看警报和监视趋势：使用安全中心或合规中心中的警报策略和警报仪表板工具。
+- 设置警报策略、查看警报和监视趋势：使用安全中心或合规中心中的警报策略和警报仪表板工具。
 
--   直接搜索审核日志：搜索指定日期范围内的所有事件。也可以根据特定条件（如执行操作的用户、操作或目标对象）筛选结果。
+- 直接搜索审核日志：搜索指定日期范围内的所有事件。也可以根据特定条件（如执行操作的用户、操作或目标对象）筛选结果。
 
 信息安全和合规性团队可以使用这些工具主动审核 Office 365 服务中由最终用户和管理员执行的活动。当特定网站集上发生某些活动时（例如共享已知网站的内容以包含 GDPR 相关信息时），可以配置自动警报以发送电子邮件通知。此操作使这些团队可以跟进用户以确保遵守企业安全策略，或提供其他培训。
 
@@ -81,17 +81,17 @@ Office 365 审核日志包含来自 Exchange Online、SharePoint Online、OneDri
 
 有关警报策略和搜索审核日志的更多信息：
 
-- [Microsoft 365 安全与合规中心中的警报策略](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+- [Microsoft 365 安全与合规中心中的警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
-- [在 Office 365 中搜索用户和管理员活动的审核日志](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6)（介绍）
+- [在 Office 365 中搜索用户和管理员活动的审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log)（介绍）
 
-- [启用或禁用 Office 365 审核日志搜索](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+- [启用或禁用 Office 365 审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-- [搜索审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+- [搜索审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Office 365 审核日志中的属性详细信息](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+- [Office 365 审核日志中的属性详细信息](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -111,25 +111,25 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 
 即将向 Cloud App Security 提供以下属性类型：
 
--   Office 365 敏感信息类型
+- Office 365 敏感信息类型
 
--   Office 365 和 Azure 信息保护中的统一标签
+- Office 365 和 Azure 信息保护中的统一标签
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security 仪表板
 
-如果尚未开始使用 Cloud App Security，请先启动它。Cloud App Security 的访问网址为 <https://portal.cloudappsecurity.com>。
+如果尚未开始使用 Cloud App Security，那就开始吧。Cloud App Security 的访问网址为 <https://portal.cloudappsecurity.com>。
 
-注意：开始使用 Cloud App Security 时或在分配标签前，请务必启用“自动扫描 Azure 信息保护分类标签的文件”（位于“常规”设置中）。设置完成后，在修改现有文件之前，Cloud App Security 不会再次对其进行扫描。
+注意：开始使用 Cloud App Security 时或在分配标签前，请务必启用“自动扫描文件中是否有 Azure 信息保护分类标签”（位于“常规”设置中）。设置后，Cloud App Security 不会再次扫描现有文件，除非它们遭到修改。
 
 ![显示有关警报信息的仪表板](../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 详细信息：
 
--   [部署 Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [部署 Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [有关 Microsoft Cloud App Security 的更多信息](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [有关 Microsoft Cloud App Security 的更多信息](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [使用 Microsoft Cloud App Security 代理阻止下载敏感信息](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [使用 Microsoft Cloud App Security 代理阻止下载敏感信息](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>用于检测个人数据共享的示例文件和活动策略
 
@@ -198,9 +198,9 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 
 类似策略：
 
--   检测包含 PII 的文件共享 — 电子邮件地址
+- 检测包含 PII 的文件共享 — 电子邮件地址
 
--   检测包含 PII 的文件共享 — 护照编号
+- 检测包含 PII 的文件共享 — 护照编号
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>检测 Box 或 OneDrive for Business 中的客户或 HR 数据
 
@@ -208,9 +208,9 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 
 注意：
 
--   Box 监视要求使用 API 连接器 SDK 配置连接器。
+- Box 监视要求使用 API 连接器 SDK 配置连接器。
 
--   此策略需要当前为个人预览版的功能。
+- 此策略需要当前为个人预览版的功能。
 
 <table>
 <thead>
@@ -267,6 +267,6 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 
 类似策略：
 
--   检测客户数据或 HR 数据的大量下载 — 如果在较短时间段内检测到单个用户正在下载大量包含客户数据或 HR 数据的文件，则发出警报。
+- 检测客户数据或 HR 数据的大量下载 — 如果在较短时间段内检测到单个用户正在下载大量包含客户数据或 HR 数据的文件，则发出警报。
 
--   检测客户和 HR 数据共享 — 共享包含客户或 HR 数据的文件时发出警报。
+- 检测客户和 HR 数据共享 — 共享包含客户或 HR 数据的文件时发出警报。

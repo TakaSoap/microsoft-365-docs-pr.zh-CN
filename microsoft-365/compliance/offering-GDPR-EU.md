@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: b0563e7056510682a685cb0950324dafa1fd2dd2
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959600"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558519"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>一般数据保护条例 (GDPR)
 
@@ -37,7 +37,7 @@ ms.locfileid: "40959600"
 
 ### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a>Abrona 使用 Microsoft 365 做好符合 GDPR 的准备
 
-了解荷兰医疗机构 Abrona 如何使用合规性管理器和 Azure 信息保护等 Microsoft 技术来做好符合 GDPR 的准备。
+了解荷兰医疗机构 Abrona 如何使用合规性分数和 Azure 信息保护等 Microsoft 技术来做好符合 GDPR 的准备。
 
 [立即观看](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
@@ -62,11 +62,11 @@ ms.locfileid: "40959600"
 
 ### <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隐私信息管理系统 (PIMS)
 
-[了解详细信息](offering-iso-27701.md)
+[了解更多](offering-iso-27701.md)
 
-### <a name="compliance-manager"></a>合规性管理器
+### <a name="compliance-score"></a>合规性分数
 
-使用[合规性管理器](https://go.microsoft.com/fwlink/p/?linkid=2048390)可帮助执行持续的风险评估，获得可行的见解，并简化合规性流程。
+使用[合规性分数](compliance-score.md)有助于执行持续的风险评估，获得可操作的见解，并简化合规性流程。
 
 ### <a name="microsoft-365-compliance-center"></a>Microsoft 365 合规中心
 

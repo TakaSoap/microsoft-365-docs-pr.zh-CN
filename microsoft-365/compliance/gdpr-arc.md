@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 1bc2ac17d8548382dff721decba674952de977d6
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: db67326b7fa1f09576ae49de75e3f1de525ffd86
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749664"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558069"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>通过责任就绪清单支持 GDPR 计划
 
@@ -36,7 +37,7 @@ ms.locfileid: "38749664"
 - [Azure](gdpr-arc-Azure.md)
 - [Microsoft 支持和专业服务](gdpr-arc-prof-services.md)
 
-可以使用[合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)来管理此清单中的项目，具体方法是引用 GDPR 磁贴中“客户托管控件”下的控件 ID 和控件标题。
+可以使用[合规性分数](compliance-score.md)来管理此清单中的项目，具体方法是引用 GDPR 磁贴中的“客户托管控制”下的“控制 ID”和“控制标题”。
 
 这些清单包括，下列支持 GDPR 的隐私计划的四类基本注意事项，以及示例要求。
 

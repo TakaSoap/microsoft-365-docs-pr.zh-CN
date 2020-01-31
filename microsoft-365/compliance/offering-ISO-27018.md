@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 300a6c5d43bdb3653426b451abb3c82709194039
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 5f22e7a1dccff1d278ee07adaa56ea7d11de4cd3
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859672"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260000"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保护云中个人数据的 ISO/IEC 27018 行为守则
 
@@ -49,6 +50,7 @@ Microsoft 和 ISO/IEC 27018
 - Graph
 - Health Bot
 - Intune
+- Microsoft 托管桌面
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 德国
@@ -67,9 +69,9 @@ Microsoft 和 ISO/IEC 27018
 
 ### <a name="audits-and-reports"></a>审核和报告
 
-- [Azure、Intune、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter — ISO 27001 和 27018 证书](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure、Intune、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter — ISO 27001 和 27018 审核评估报告](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure、Intune、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter — ISO 27001 和 27018 适用性声明 (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter — ISO 27001 和 27018 证书](https://go.microsoft.com/fwlink/p/?linkid=2078016)
+- [Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter — ISO 27001 和 27018 审核评估报告](https://go.microsoft.com/fwlink/p/?linkid=2078020)
+- [Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter — ISO 27001 和 27018 适用性声明 (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 - [Azure — 德国 ISO 27018 — 保护云中个人数据的行为守则 — 证书](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### <a name="office-365"></a>Office 365

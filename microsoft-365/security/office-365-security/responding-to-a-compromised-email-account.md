@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何识别并响应 Office 365 中遭到入侵的电子邮件帐户
-ms.openlocfilehash: 76ce2cd9b942403f5d25b7f356740cce6c2acad7
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0262ca29681aa04d66c628a7d9101e3d3296481b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971501"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572708"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>响应 Office 365 中遭到入侵的电子邮件帐户
 
@@ -56,9 +56,11 @@ ms.locfileid: "39971501"
 
 如果用户报告了上述任何症状，你应该进一步展开调查。 Microsoft 365 安全与合规中心和 Azure 门户提供了各种工具，可帮助你对疑似遭到入侵的用户帐户的活动展开调查。
 
-- 安全与合规中心中的 Office 365 统一审核日志 - 通过筛选从可疑活动发生前一天到当前日期之间的日期范围的结果，检查可疑帐户的所有活动。 不要在搜索过程中筛选活动。
+- **安全与合规中心内的 Office 365 统一审核日志**：通过筛选从可疑活动发生前到当前日期的日期范围内的结果，审阅可疑帐户的所有活动。 不要在搜索过程中筛选活动。
 
-- 使用 Azure AD 登录日志和 Azure AD 门户中提供的其他风险报告。 检查以下列中的值：
+- **EAC 中的 Office 365 管理员审核日志**：在 Exchange Online 中，可以使用 Exchange 管理中心 (EAC) 搜索和查看管理员审核日志中的条目。 管理员审核日志根据管理员和分配有管理权限的用户执行的 Exchange Online PowerShell cmdlet 来记录特定操作。 管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。
+
+- **Azure AD 门户中的 Azure AD 登录日志和其他风险报告**：检查以下列中的值：
 
   - 查看 IP 地址
 
@@ -92,7 +94,7 @@ ms.locfileid: "39971501"
 - 如果你的本地标识已与 Office 365 联合，则必须在本地更改密码，然后通知管理员帐户遭到入侵。
 
 > [!TIP]
-> 强烈建议你启用多重身份验证 (MFA) 以防止入侵，尤其是对于具有管理权限的帐户。  你可以在[此处](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)了解更多信息。
+> 强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。  可以单击[此处](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)详细了解 MFA。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步骤 2 删除可疑的电子邮件转发地址
 

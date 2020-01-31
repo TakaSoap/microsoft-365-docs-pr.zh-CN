@@ -1,5 +1,7 @@
 ---
 title: 内容搜索的关键字查询和搜索条件
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: 2d3b69090d8b19d474e2049c2082516459d18148
-ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
+ms.openlocfilehash: e8a0da1815b7ddda889217d027a3aabae4420c56
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41123653"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585911"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 

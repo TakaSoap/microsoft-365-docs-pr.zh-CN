@@ -1,5 +1,7 @@
 ---
 title: 管理保留通知
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0b1b20a8b41803a945bc9f5c39cd0618c420b0c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f43510d0055a487cf1ee00e799a7244114016384
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074996"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582901"
 ---
 # <a name="manage-hold-notifications"></a>管理保留通知
 
@@ -62,7 +64,7 @@ ms.locfileid: "37074996"
 2. 选择了事例后，导航到 "**通信**" 选项卡。
 3. 选择您想要更新的保留通知，然后单击 "**编辑**"。
 4. 在 "编辑工作流" 中，选择 "**定义门户内容**" 并更新通知的内容。 
-5. 单击“保存”****。 保存后，系统会将重新发布通知发送给当前分配了法定保留通知的所有保管人。 此外，如果启用了提醒/上报通知，则这些工作流也将重新启动。 
+5. 单击“**保存**”。 保存后，系统会将重新发布通知发送给当前分配了法定保留通知的所有保管人。 此外，如果启用了提醒/上报通知，则这些工作流也将重新启动。 
 
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>更新合法保留通知和设置

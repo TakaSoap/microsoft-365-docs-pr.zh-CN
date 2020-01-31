@@ -1,5 +1,7 @@
 ---
 title: 信息管理策略简介
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -17,12 +19,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: 信息管理策略是适用于特定类型内容的一组规则。 信息管理策略使组织能够控制和跟踪多类信息，例如将内容保留多长时间，或者用户可以对该内容执行哪些操作。 信息管理策略可帮助组织遵守法律或政府法规，或者可以仅强制执行内部业务流程。
-ms.openlocfilehash: a5cf571b22b7d698daf8a70f8565b250e2388a1a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3c3ca901674b9ae34aa990f320cf4eb550ea05b9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074930"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41588032"
 ---
 # <a name="introduction-to-information-management-policies"></a>信息管理策略简介
 
@@ -48,7 +50,7 @@ ms.locfileid: "37074930"
 ## <a name="locations-to-use-an-information-management-policy"></a>使用信息管理策略的位置
 <a name="__toc340213528"> </a>
 
-若要实现信息管理策略，必须将其添加到网站中的列表、库或内容类型。 您创建或添加信息管理策略的位置会影响策略应用范围的范围或可以使用的广泛程度。 可以执行下列操作：
+若要实现信息管理策略，必须将其添加到网站中的列表、库或内容类型。 您创建或添加信息管理策略的位置会影响策略应用范围的范围或可以使用的广泛程度。 可执行下列操作：
   
  **创建网站集策略，然后将此策略添加到内容类型、列表或库**您可以在网站集的首要网站中的 "策略" 列表中创建一个网站集策略。 创建网站集策略后，可以将其导出，以便其他网站集的管理员可以将其导入到策略列表中。 创建可导出的网站集策略使您能够在组织中的各个网站上标准化信息管理策略。 
   

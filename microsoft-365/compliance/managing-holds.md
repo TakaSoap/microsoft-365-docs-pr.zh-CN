@@ -1,5 +1,7 @@
 ---
 title: 在高级电子数据展示中管理保留
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1cea83ffec8af8b22b5a27e9d760946e71ba7f68
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 49b75e77f9884bb7cb40721a2aa986e203623c07
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685307"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582751"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留
 
@@ -62,7 +64,7 @@ ms.locfileid: "38685307"
  
 6. Optional在 "**说明**" 框中，添加保留的说明。
   
-7. 单击“**下一步**”。
+7. 单击“下一步”。****
   
 8. 选择要置于保留状态的内容位置。 您可以将邮箱、网站和公用文件夹置于保留状态。
 
@@ -113,7 +115,7 @@ ms.locfileid: "38685307"
 
 - 如果将 SharePoint 网站或 OneDrive 帐户移动到多地理位置环境中的其他区域，则该网站的统计信息将不会包含在保留统计信息中。 但是，网站中的内容仍处于保留状态。 此外，如果将网站移动到其他区域，则不会更新保留中显示的 URL。 您必须编辑保留并更新 URL。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 - **如何将额外的 Office 365 组或 Microsoft 团队网站映射到管理员？在 Office 365 组和 Microsoft 团队中放置非 Custodial 保留会怎么样？** Microsoft 团队基于 Office 365 组构建。 因此，在电子数据展示事例中将其置于保留状态非常相似。 将 Office 365 组和 Microsoft 团队置于保留状态时，请记住以下事项。
   - 若要将位于 Office 365 组和 Microsoft 团队中的内容置于保留状态，您必须指定与组或团队关联的邮箱和 SharePoint 网站。

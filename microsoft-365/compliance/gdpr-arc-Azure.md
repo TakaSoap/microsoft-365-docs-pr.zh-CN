@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 608e75dee25f73a1234a911bd5b9e4871412e59e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 34d36b6782d1f3dd8a5b12beb7be681e07518170
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676769"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558089"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Azure 责任准备情况清单
 
@@ -29,9 +30,9 @@ ms.locfileid: "39676769"
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) 安全技术要求。
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隐私管理要求。
 
-可以使用合规性管理器 [16] 来管理此清单中的项目，方法是引用 GDPR 磁贴中的“客户托管控件”下的控件 ID 和控件标题。 此控件结构还用于组织 Microsoft Azure 为支持 GDPR 而实现的内部控件的演示文稿（可从[服务信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)下载）。
+可以使用合规性分数 [16] 来管理此清单中的项目，具体方法是引用 GDPR 磁贴中的“客户托管控制”下的“控制 ID”和“控制标题”。 此控件结构还用于组织 Microsoft Azure 为支持 GDPR 而实现的内部控件的演示文稿（可从[服务信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)下载）。
 
-此控件结构还将用于组织[Microsoft Dynamics 365 用于支持 GDPR 所实施的内部控件](https://aka.ms/GDPRControls)的演示文稿。
+此控件结构还将用于组织[Microsoft Dynamics 365 用于支持 GDPR 所实施的内部控件](https://aka.ms/gdprcontrols)的演示文稿。
 
 有关更多 GDPR 相关的文档，请访问 [https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted)。
 
@@ -143,7 +144,7 @@ ms.locfileid: "39676769"
 | 13 <a name="13"> </a> | [Microsoft Azure（全部）ISO/IEC 27001:2013 ISMS 适用性声明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Microsoft 信任中心合规性产品/服务](offering-home.md)  |
 | 15 <a name="15"> </a> | [Intune 中的隐私和个人数据](https://review.docs.microsoft.com/intune/privacy-personal-data) |
-| 16 <a name="16"> </a> | [完全可下载的 Azure GDPR 控件集](https://aka.ms/GDPRControls) 或通过[合规性管理器工具](https://servicetrust.microsoft.com/ComplianceManager) |
+| 16 <a name="16"> </a> | [完全可下载的 Azure GDPR 控制集](https://aka.ms/GDPRControls)或通过[合规性分数](compliance-score.md) |
 | 17 <a name="17"> </a> | [Microsoft DPO 信息](https://aka.ms/GDPRDPO) |
 
 ## <a name="learn-more"></a>了解更多

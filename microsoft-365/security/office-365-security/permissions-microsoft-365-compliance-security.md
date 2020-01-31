@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，可以集中管理与安全或合规性相关的所有任务的权限。
-ms.openlocfilehash: 43f6388820c531c99b6c12f615a3ffb8e3b85427
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 070e9bb1f7bf070a1b95995c2010b79dee7cbc9b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971580"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572959"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
 
@@ -57,19 +57,19 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 |**在此服务中...**|**合规性管理员可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合规性中心**](https://compliance.microsoft.com/)|跨 Microsoft 365 服务保护和管理组织数据。 <br/><br/> 管理合规性警报。|
-|[**合规性管理器**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|跟踪、分配并验证组织的法规合规性活动。|
+|[**合规性分数**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|跟踪、分配并验证组织的法规合规性活动。|
 |[**Office 365 安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理数据治理。 <br/><br/> 执行法律和数据调查。 <br/><br/> 管理数据主体请求。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|查看所有 Intune 审核数据。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|拥有只读权限，可以管理警报。 <br/><br/> 可以创建和修改文件策略并允许执行文件管理操作。 <br/><br/> 可以查看数据管理下的所有内置报告。|
 
 ### <a name="compliance-data-administrator"></a>合规性数据管理员
 
-具有此角色的用户有权保护和跟踪 Microsoft 365 合规中心、Microsoft 365 管理中心和 Azure 中的数据。 这些用户还可以管理 Exchange 管理中心、Compliance Manager、Teams 和 Skype for Business 管理中心内的所有功能，并可创建适用于 Azure 和 Microsoft 365 的支持票证。
+具有此角色的用户有权保护和跟踪 Microsoft 365 合规中心、Microsoft 365 管理中心和 Azure 中的数据。 用户还可以管理 Exchange 管理中心、合规性分数、Teams 和 Skype for Business 管理中心内的所有功能，并创建适用于 Azure 和 Microsoft 365 的支持票证。
 
 |**在此服务中...**|**合规性数据管理员可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合规性中心**](https://compliance.microsoft.com/)|跨 Microsoft 365 服务保护和管理组织数据。 <br/><br/> 管理合规性警报。 <br/><br/> 管理敏感度标签|
-|[**合规性管理器**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|跟踪、分配并验证组织的法规合规性活动。|
+|[**合规性分数**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|跟踪、分配并验证组织的法规合规性活动。|
 |[**Office 365 安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理数据治理。 <br/><br/> 执行法律和数据调查。 <br/><br/> 管理数据主体请求。 <br/><br/> 管理敏感度标签|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)（即将推出）|查看所有 Intune 审核数据。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用只读权限查看信息。 <br/>管理警报。 <br/><br/> 创建和修改文件策略并允许执行文件管理操作。 <br/><br/> 查看数据管理下的所有内置报告。|
@@ -152,7 +152,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色也会
 |Azure Active Directory (Azure AD) 和 Azure AD Identity Protection|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure 高级威胁防护|[Azure ATP 角色组](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 信息保护|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|合规性管理器|[合规性管理器角色](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud#permissions-and-role-based-access-control)|
+|合规性分数|[“合规性分数”角色](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange 基于角色的访问控制](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Intune 基于角色的访问控制](https://docs.microsoft.com/intune/role-based-access-control)|
 |托管桌面|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

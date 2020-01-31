@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 08f05939e6cd4ebdff81fb2fd2fda47bac05e882
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: c872aa647496dcd81031418c71f2bcc6728cadfa
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260030"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558539"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 业务连续性管理标准
 
@@ -75,7 +75,7 @@ ISO 22301 是企业和政府组织使用的一种认证，通过实现业务连�
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 企业版业务连续性管理计划描述](https://go.microsoft.com/fwlink/p/?linkid=2092212)
-- [合规性管理器](https://go.microsoft.com/fwlink/p/?linkid=2092329)
+- [合规性分数](compliance-score.md)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息

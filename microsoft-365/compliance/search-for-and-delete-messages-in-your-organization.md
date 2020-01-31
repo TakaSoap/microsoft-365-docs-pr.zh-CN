@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 的安全与合规中心内的搜索和清除功能在组织中的所有邮箱中搜索并删除电子邮件。
-ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39218857"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259970"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>在 Office 365 组织中搜索并删除电子邮件
 
@@ -39,7 +39,7 @@ ms.locfileid: "39218857"
   
 ## <a name="before-you-begin"></a>准备工作
 
-- 若要创建并运行内容搜索，你必须是**电子数据展示管理员**角色组的成员，或者分配有**合规性搜索**管理角色。 若要删除邮件，你必须是**组织管理**角色组的成员或分配有**搜索并清除**管理角色。 有关将用户添加到角色组的信息，请参阅[向用户授予对安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+- 若要创建并运行内容搜索，你必须是**电子数据展示管理员**角色组的成员，或者分配有**合规性搜索**管理角色。 若要删除邮件，你必须是**组织管理**角色组的成员或分配有**搜索并清除**管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](assign-ediscovery-permissions.md)。
     
 - 你必须使用安全与合规中心 PowerShell 删除邮件。 有关如何连接的说明，请参阅[步骤 2](#step-2-connect-to-security--compliance-center-powershell)。
     

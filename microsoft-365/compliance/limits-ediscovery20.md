@@ -1,5 +1,7 @@
 ---
 title: 高级电子数据展示限制
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解对 Microsoft 365 中的高级电子数据展示解决方案的有效限制。 这包括使用搜索工具收集事例数据时的大小写限制、索引限制和搜索限制。
-ms.openlocfilehash: 622d2669457a2a1e84909aadae9b653ca37684ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3e5dd1d80a60249ccc24d1af20f5e78f94f8421
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074915"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585711"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>高级电子数据展示中的限制
 
@@ -32,7 +34,7 @@ ms.locfileid: "37074915"
 |可添加到案例中的文档的总数（案例中的所有审阅集）。  <br/> |100 万  <br/> |
 |每个加载集的总文件大小。  <br/> |100 GB  <br/> |
 |每日加载到事例中的总数据量。<br/> |2 TB <br/> |
-|每个事例的最大加载集数。  <br/> |个 <br/> |
+|每个事例的最大加载集数。  <br/> |15  <br/> |
 |每个案例的最大审阅集数。  <br/> |20 <br/> |
 |||
 

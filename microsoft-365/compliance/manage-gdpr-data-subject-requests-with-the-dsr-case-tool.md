@@ -1,5 +1,7 @@
 ---
 title: 在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 向欧盟公民（称为 "数据主体"）授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 DSR 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685269"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582931"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
 
@@ -53,7 +55,7 @@ EU 常规数据保护条例（GDPR）是关于保护和启用欧盟（EU）内�
     
 - 导出数据以响应 DSR 访问或导出请求。
     
-- 在 DSR 调查过程完成时删除事例。 这将删除与该事例关联的所有搜索和导出作业。
+- 在 DSR 调查过程完成时删除案件集。 这将删除与该事例关联的所有搜索和导出作业。
     
 以下是使用 DSR 机箱工具管理 DSR 调查的高级别过程：
   

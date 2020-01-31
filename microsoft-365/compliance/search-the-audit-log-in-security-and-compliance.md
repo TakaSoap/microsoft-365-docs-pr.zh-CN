@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
+ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022018"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41265890"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -51,13 +51,13 @@ ms.locfileid: "41022018"
 
 - Yammer 中的用户和管理员活动
 
-- Microsoft Flow 中的用户和管理员活动
+- Microsoft Power Automate 中的用户和管理员活动
 
 - Microsoft Stream 中的用户和管理员活动
 
 - Microsoft 工作区分析中的分析员和管理员活动
 
-- Microsoft PowerApps 中的用户和管理员活动
+- Microsoft Power Apps 中的用户和管理员活动
 
 - Microsoft Forms 中的用户和管理员活动
 
@@ -118,7 +118,7 @@ ms.locfileid: "41022018"
   |Dynamics 365 CRM|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |电子数据展示|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Flow|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Project|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -305,7 +305,7 @@ ms.locfileid: "41022018"
 |[角色管理活动](#role-administration-activities)|[目录管理活动](#directory-administration-activities)|[电子数据展示活动](#ediscovery-activities)|
 |[高级电子数据展示活动](#advanced-ediscovery-activities)|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Yammer 活动](#yammer-activities)|
-|[Microsoft Flow 活动](#microsoft-flow-activities)|[Microsoft PowerApps 活动](#microsoft-powerapps)|[Microsoft Stream 活动](#microsoft-stream-activities)|
+|[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|[Microsoft Stream 活动](#microsoft-stream-activities)|
 |[Microsoft Forms 活动](#microsoft-forms-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|||
 ||||
 
@@ -770,13 +770,13 @@ ms.locfileid: "41022018"
 |已查看文件|FileVisited|用户查看了文件。|
 ||||
 
-### <a name="microsoft-flow-activities"></a>Microsoft Flow 活动
+### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate 活动
 
-可以在审核日志中搜索 Microsoft Flow 内的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关 Flow 活动审核的信息，请参阅博客[现已在安全与合规中心提供 Microsoft Flow 审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
+可以在审核日志中搜索 Power Automate（以前称为 Microsoft Flow）内的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关 Power Automate 活动审核的信息，请参阅博客[现已在安全与合规中心提供 Microsoft Flow 审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
-### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps 活动
 
-可以在审核日志中搜索 PowerApps 中与应用相关的活动。 这些活动包括创建、启动和发布应用。 还会审核为应用分配权限。 有关所有PowerApps活动的说明，请参阅 [PowerApps 的活动日志记录](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)。
+可以在审核日志中搜索 Power Apps 中与应用相关的活动。 这些活动包括创建、启动和发布应用。 还会审核为应用分配权限。 有关所有Power Apps活动的说明，请参阅 [Power Apps 的活动日志记录](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)。
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream 活动
 

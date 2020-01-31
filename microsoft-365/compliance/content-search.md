@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: 使用 Office 365 或 Microsoft 365 合规中心中的内容搜索工具搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Office 365 组 和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+description: 使用 Office 365 或 Microsoft 365 合规中心内的内容搜索工具来搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Office 365 组、Yammer 组和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
+ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967515"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558399"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -35,8 +35,10 @@ ms.locfileid: "39967515"
 - Skype for Business 对话
     
 - Microsoft Teams 
-    
+
 - Office 365 组
+
+- Yammer 组 
     
 运行内容搜索后，内容位置的数量和搜索结果的估计数量将会显示在搜索统计信息中。 还可以快速查看统计信息，例如具有与搜索查询匹配的项的内容位置。 运行搜索后，可预览结果或将其导出到本地计算机。
 
@@ -81,9 +83,9 @@ ms.locfileid: "39967515"
     
        - **位置：** 选择要搜索的内容位置。
     
-      - **所有位置：** 使用此选项搜索组织中的所有内容位置。 这包括所有 Exchange 邮箱中的电子邮件（包括所有非活动邮箱、所有 Office 365 组邮箱、所有 Microsoft Teams 邮箱）、所有 Skype for Business 对话、所有 SharePoint 和 OneDrive for Business 网站（包括所有 Office 365 组和 Microsoft Teams 网站）以及所有 Exchange 公共文件夹中的项。
+      - **所有位置：** 使用此选项搜索组织中的所有内容位置。 这包括所有 Exchange 邮箱中的电子邮件（包括所有非活动邮箱，以及所有 Microsoft Teams、Yammer 组和 Office 365 组的邮箱）、所有 Skype for Business 对话、所有 SharePoint 和 OneDrive for Business 网站（包括所有 Microsoft Teams、Yammer 组和 Office 365 组的网站），以及所有 Exchange 公用文件夹中的项。
     
-      - **特定位置：** 使用此选项搜索特定内容位置。 可以搜索特定 Office 365 服务的所有内容位置（例如搜索所有 Exchange 邮箱或搜索所有 SharePoint 网站），或者在显示的任何 Office 365 服务中的特定位置。 
+      - **特定位置：** 使用此选项搜索特定内容位置。 可以搜索特定 Office 365 服务的所有内容位置（如搜索所有 Exchange 邮箱或搜索所有 SharePoint 网站），也可以搜索任何已显示 Office 365 服务的特定位置中的内容。 
     
         ![用于选择要搜索的内容位置的用户界面](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
@@ -91,8 +93,7 @@ ms.locfileid: "39967515"
     
        > [!NOTE]
        > 搜索所有邮箱位置或仅特定邮箱，导出内容搜索结果时，保存至用户邮箱的其他 Office 365 应用程序数据将包括在内。 此数据将不会包括在估计的搜索结果中，并且也不可用于预览。 导入和下载搜索结果时，此数据将包括在内。 有关详细信息，请参阅 [Exchange Online 邮箱中存储的内容](what-is-stored-in-exo-mailbox.md)。
-
-    
+   
 6. 设置搜索查询之后，请单击“**保存并返回**”。
     
 7. 在“**保存搜索**”页面上，键入搜索名称以及帮助标识搜索的可选描述。 搜索名称在你的组织中必须保持唯一。 
@@ -176,6 +177,8 @@ ms.locfileid: "39967515"
 [搜索 OneDrive 帐户](#searching-onedrive-accounts)
   
 [搜索 Microsoft Teams 和 Office 365 组](#searching-microsoft-teams-and-office-365-groups)
+
+[搜索 Yammer 组](#searching-yammer-groups)
   
 [搜索非活动邮箱](#searching-inactive-mailboxes)
   
@@ -308,6 +311,25 @@ ms.locfileid: "39967515"
 
 条件将通过 **AND** 运算符在逻辑上连接至关键字查询。 这意味着项必须与关键字查询和搜索条件匹配才能在搜索结果中返回。 有关详细信息，请参阅[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)中的“使用条件指南”一节。
   
+### <a name="searching-yammer-groups"></a>搜索 Yammer 组
+
+可以使用 **ItemClass** 电子邮件属性或 **Type** 搜索条件来专门搜索 Yammer 组中的对话项。
+
+  - 若要将 **ItemClass** 属性用作关键字搜索查询的一部分，可以在搜索查询的“关键字”**** 框中键入以下一个（或所有）property:value 对：
+
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
+  
+    例如，可以使用下面的搜索查询来返回 Yammer 消息和 Yammer 表扬项：
+
+    ![使用 ItemClass 属性搜索 Yammer 项](media/YammerContentSearch1.png)
+  
+  - 也可以使用 **Type** 电子邮件条件，并选择“Yammer 消息”****，以返回 Yammer 项。 例如，下面的搜索查询返回所有包含关键字“保密”的 Yammer 对话项。 
+
+    ![使用 Type 条件卡搜索 Yammer 对话项](media/YammerContentSearch2.png)
+
 ### <a name="searching-inactive-mailboxes"></a>搜索非活动邮箱
 
 可以在内容搜索中搜索非活动邮箱。 若要获取组织中的非活动邮箱列表，请在 Exchange Online PowerShell 中运行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，你可以转至安全与合规中心中的“**信息管理**”\>“**保留**”，然后单击“**更多**”![导航栏省略号](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>“**非活动邮箱**”。
@@ -321,7 +343,7 @@ ms.locfileid: "39967515"
 - 可使用安全与合规中心 PowerShell 来创建内容搜索，以搜索非活动邮箱。 若要执行此操作，必须预先附加一个句点 ( . ) 到非活动邮箱的电子邮件地址。 例如，下面的命令可创建一个搜索电子邮件地址为 pavelb@contoso.onmicrosoft.com 的非活动邮箱的内容搜索：
 
    ``` 
-   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - 强烈建议避免活动邮箱和非活动邮箱具有相同的 SMTP 地址。 如果需要重新使用分配给非活动邮箱的 SMTP 地址，我们建议恢复非活动邮箱或将非活动邮箱中的内容还原到活动邮箱中（或活动邮箱的存档中），然后删除非活动邮箱。 有关详细信息，请参阅下列主题之一：

@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 567c104fcb960cce3bd09cd636fed8814cdbeb4c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 9323cce022af6c624b76b56a27fe35ff55c3519f
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39637711"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558419"
 ---
 # <a name="california-consumer-privacy-act-ccpa-frequently-asked-questions"></a>加州消费者隐私法案 (CCPA) 常见问题解答
 
@@ -98,7 +98,7 @@ Microsoft 已在全球范围内实施与 GDPR 相关的数据主体权利，因�
 
 **哪些工具可帮助我的组织开始为 CCPA 做好准备？请例举一些**
 
-- 首先将合规性管理器中的 GDPR 评估纳入您的 CCPA 隐私计划。
+- 首先将合规性分数中的 GDPR 评估纳入你的 CCPA 隐私计划。
 - 建立一个可高效应对消费者请求的流程。
 - 设置标签和策略，使用 Microsoft 信息保护服务来发现、分类、标记和保护敏感数据。
 - 使用电子邮件加密功能进一步控制敏感信息。

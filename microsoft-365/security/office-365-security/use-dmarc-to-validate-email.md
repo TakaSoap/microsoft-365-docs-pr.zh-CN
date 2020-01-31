@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从 Office 365 组织发送的邮件。
-ms.openlocfilehash: 42238ce7d5129d933b28238f07a9e24ba05ff395
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: a812003df72cfb3697a5b114acb37aede4268b21
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515903"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572678"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 
@@ -229,7 +229,7 @@ contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
-由于它是主 MX，全部或大部分电子邮件将首先被路由到 mail.contoso.com，然后将邮件路由到 EOP。 在某些情况下，你甚至不可能将 EOP 列为 MX 记录，并直接挂接连接器来路由你的电子邮件。 EOP 不必是执行 DMARC 验证的第一个条目。 它只是确保验证，因为我们不能确定所有本地/非 O365 服务器都将执行 DMARC 检查。  设置 DMARC TXT 记录时，DMARC 有资格强制用于客户的域（而不是服务器），但是实际是否进行强制执行是由接收服务器决定的。  如果将 EOP 设置为接收服务器，那么 EOP 强制执行 DMARC。
+由于它是主 MX，全部或大部分电子邮件将首先被路由到 mail.contoso.com，然后将邮件路由到 EOP。 在某些情况下，你甚至不可能将 EOP 列为 MX 记录，并直接挂接连接器来路由你的电子邮件。 EOP 不必是执行 DMARC 验证的第一个条目。 它只是确保验证，因为我们不能确定所有本地/非 O365 服务器都将执行 DMARC 检查。  设置 DMARC TXT 记录时，可以对客户的域（而不是服务器）强制执行 DMARC，但是实际上强制执行取决于接收服务器。  如果将 EOP 设置为接收服务器，那么 EOP 强制执行 DMARC。
   
 ## <a name="for-more-information"></a>更多详细信息
 <a name="sectionSection8"> </a>
