@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594096"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661900"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
@@ -101,7 +101,7 @@ Microsoft 已为美国的客户启动了针对 Power Platform （Power BI、Powe
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>管理员对自助购买有哪些功能？
 
-管理员可以在其组织中查看在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>内进行的所有自助服务购买。 他们可以查看每个自助购买的产品、购买者名称、购买订阅、到期日期、订单历史记录、购买价格和分配的用户。 如果组织需要，管理员将能够通过 PowerShell 基于每个产品关闭自助购买。 管理员对通过自助购买或集中购买的产品具有相同的数据管理和访问策略。
+管理员可以在其组织中查看在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>内进行的所有自助服务购买。 他们可以查看每个自助购买的产品、购买者名称、购买订阅、到期日期、订单历史记录、购买价格和分配的用户。 在 Power Platform 管理中心中，管理员还可以查看自助服务购买容量。 如果组织需要，管理员将能够通过 PowerShell 基于每个产品关闭自助购买。 管理员对通过自助购买或集中购买的产品具有相同的数据管理和访问策略。
 
 管理员还可以控制组织中的用户是否可以进行自助服务购买。 有关详细信息，请参阅[Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
 
