@@ -1,5 +1,7 @@
 ---
 title: 安全仪表板概述
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态，查看安全警报并对其采取操作。
-ms.openlocfilehash: f7fc45ca1df86fa29c6e2af69da5258fe6d564b6
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 04c146a90cacccee831edd8a825bff0139963e16
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112646"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598459"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 

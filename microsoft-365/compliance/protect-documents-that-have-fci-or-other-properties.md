@@ -1,5 +1,7 @@
 ---
 title: 创建 DLP 策略来保护具有 FCI 或其他属性的文档
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 许多组织已拥有一个使用 Windows Server 文件分类基础结构 (FCI)、SharePoint 中的文档属性或由第三方系统应用的文档属性识别和分类敏感信息的流程。 如果您的组织就是这样，则可以在 Office 365 中创建一个 DLP 策略，来识别已由 Windows Server FCI 或其他系统应用到文档的属性，从而在带有特定 FCI 或其他属性值的 Office 文档上强制应用该 DLP 策略。
-ms.openlocfilehash: 286a66968727737c906ba24ac900eacd7732276e
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 1ae70571817de1df3a48b38a44da1ed1e3695750
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38685186"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597699"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>创建 DLP 策略来保护具有 FCI 或其他属性的文档
 
@@ -129,7 +131,7 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
 > [!CAUTION]
 > 重新编制网站的索引可能会导致搜索系统上的负荷大量增加。 除非您的方案确实需要，否则不要对网站重新编制索引。 
   
-有关详细信息，请参阅[手动对网站、库或列表的请求爬网和重新编制索引](https://go.microsoft.com/fwlink/p/?LinkID=627457)。
+有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](https://go.microsoft.com/fwlink/p/?LinkID=627457)（手动请求对网站、库或列表进行爬网和重新编制索引）。
   
 ### <a name="re-index-a-site-optional"></a>重新编制网站的索引（可选）
 
@@ -143,7 +145,7 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
     
 - [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
     
-- [发送通知并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
+- [发送通知，并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
     
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
     

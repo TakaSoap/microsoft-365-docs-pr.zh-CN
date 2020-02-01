@@ -1,5 +1,7 @@
 ---
 title: 标记审阅集中的文档
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: dfb5b32ac833f401d819b8697ff1bf1cca7ee2f9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: be4c86a5df7e0964744f6b5d7551382916e7ed2d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075282"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597409"
 ---
 # <a name="tag-documents-in-a-review-set"></a>标记审阅集中的文档
 
-在查看集中组织内容对于在电子数据展示过程中完成各种工作流非常重要。 具体包括：
+在查看集中组织内容对于在电子数据展示过程中完成各种工作流非常重要。 这包括：
 
 -  剔除不必要的内容
 

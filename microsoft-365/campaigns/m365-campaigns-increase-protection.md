@@ -1,5 +1,7 @@
 ---
 title: 增强威胁防护
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取有关在 Microsoft 365 商业版中提高保护级别的帮助
-ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748303"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594847"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -77,7 +79,7 @@ ms.locfileid: "38748303"
     
 5. 对规则应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 单击“保存”****。
+6. 单击“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**||
 |:-----|:-----|:-----|
@@ -111,7 +113,7 @@ ms.locfileid: "38748303"
     
 5. 应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 单击“保存”****。
+6. 单击“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|
 |:-----|:-----|
@@ -152,7 +154,7 @@ ms.locfileid: "38748303"
 |选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，*刘爱琳<span><span>@contoso .com*。          如果由模拟域发送电子邮件：选择 "**隔离邮件**"。  <br/> |
 |邮箱智能  <br/> |默认情况下，当您创建新的反网络钓鱼策略时，将选择邮箱智能。 将此设置保留为 **"开"** 以获得最佳效果。  <br/> |
 |添加受信任的发件人和域  <br/> |你可以在此处添加你自己的域或任何其他受信任域。  <br/> |
-|应用于  <br/> |选择 **"收件人域"**。 在**以下任一情况**下，选择 "**选择**"。 选择 " **+ 添加**"。 选中域名称旁边的复选框，例如 " *contoso"。<span>com <span>*，请在列表中，然后选择 "**添加**"。 选择 "**完成**"。  <br/> |
+|应用于  <br/> |选择 **"收件人域"**。 在**以下任一情况**下，选择 "**选择**"。 选择 " **+ 添加**"。 选中域名称旁边的复选框，例如 " *contoso"。<span>com <span>*，请在列表中，然后选择 "**添加**"。 选择“**完成**”。  <br/> |
    
 有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
   
@@ -233,7 +235,7 @@ ms.locfileid: "38748303"
     
 2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 " **office 365 专业增强版，office For iOS 和 Android**"。
     
-3. 单击“保存”****。 
+3. 单击“**保存**”。 
     
 创建一个面向域中所有收件人的新策略：
   
@@ -241,7 +243,7 @@ ms.locfileid: "38748303"
     
 2. 应用下表中列出的设置。
     
-3. 单击“保存”****。 
+3. 单击“**保存**”。 
 
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|

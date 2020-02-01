@@ -1,5 +1,7 @@
 ---
 title: 配置搜索和分析设置
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 配置适用于案例中所有审阅集的高级电子数据展示设置。 这包括分析和 OCR 的设置。
-ms.openlocfilehash: 2def41ecc090b54cd3d6b789c2d9890392d1e0d3
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 93e638dc29ec935f86fc2e078d8206b1f20ab14d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202193"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595709"
 ---
 # <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
 

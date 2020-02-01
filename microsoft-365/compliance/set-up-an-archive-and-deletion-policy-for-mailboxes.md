@@ -1,5 +1,7 @@
 ---
 title: 为 Office 365 组织中的邮箱设置存档和删除策略
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 在 Office 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
-ms.openlocfilehash: 6da5d9bc180623778925697419f0ca39acee9185
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 23732306abccbbdff654577ff120df8b79b78e6d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967765"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597479"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>为 Office 365 组织中的邮箱设置存档和删除策略
 

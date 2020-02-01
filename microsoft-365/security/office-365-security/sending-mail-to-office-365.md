@@ -1,5 +1,7 @@
 ---
 title: 向 Office 365 发送邮件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: 这些文章有助于外部发件人改善其信誉，并提高他们向 Office 365 的用户传送电子邮件的能力。它们还提供了一些您如何报告垃圾邮件和网络钓鱼的信息（即使您不是 Office 365 用户）。
-ms.openlocfilehash: da19605f97c906fae158bb8299339ffb82755faf
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: f6a0860c505453811e6e637941d90a91fd5b40f7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872028"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598409"
 ---
 # <a name="sending-mail-to-office-365"></a>向 Office 365 发送邮件
 

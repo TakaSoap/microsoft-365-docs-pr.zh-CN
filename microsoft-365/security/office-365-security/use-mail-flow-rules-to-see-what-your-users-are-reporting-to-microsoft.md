@@ -1,5 +1,7 @@
 ---
 title: 使用邮件流规则来查看用户向 Microsoft 报告的内容
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,18 +15,18 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 您可以创建 Exchange 邮件流规则，以防止用户将电子邮件发送给 Microsoft 进行分析并在自己的安全过程中使用它们。
-ms.openlocfilehash: 11033b0d4b0ab9da0109fd31907a1537adc09c4d
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 530cc12fd83650f319da3f65e961c925a1de7409
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871288"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598053"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用邮件流规则来查看用户向 Microsoft 报告的内容
 
 您可以使用多种方法将假负和误报邮件发送给 Microsoft 进行分析。 作为管理员，您可以使用邮件流规则查看用户以垃圾邮件、非垃圾邮件和网络钓鱼诈骗的形式向 Microsoft 报告的内容。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。 相反，您可以创建 Exchange 邮件流规则（也称为传输规则），以阻止用户将电子邮件发送给 Microsoft 进行分析，并在自己的安全过程中使用它们。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 估计完成时间：5 分钟
 
@@ -50,7 +52,7 @@ ms.locfileid: "39871288"
 
    - 类型`false_positive@messaging.microsoft.com`，单击 **"添加** !["](../media/ITPro-EAC-AddIcon.gif)"添加`not_junk@office365.microsoft.com`" 图标，键入，然后单击](../media/ITPro-EAC-AddIcon.gif)"**添加** ![" "添加" 图标。 这些电子邮件地址用于向 Microsoft 提交误报邮件。
 
-   - 单击“确定”。
+   - 单击“**确定**”。
 
 6. 在 "**执行以下操作**" 下，选择 **"将邮件密件抄送给 ...** "，然后选择您想要在其中接收邮件的邮箱。
 

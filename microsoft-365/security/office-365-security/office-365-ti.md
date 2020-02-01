@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的 office 365 威胁调查和响应功能高级威胁防护计划2
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击，并搜索威胁指示器.
-ms.openlocfilehash: 45c12647b999e626cb620046aabc95fb4bfa8f4c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808117"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598749"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -97,10 +99,10 @@ Office 365 高级威胁防护使用基于角色的访问控制。 可以通过 A
 
 |活动 |角色和权限 |  
 |:-----|:-----|
-|使用威胁仪表板（或新[安全仪表板](security-dashboard.md)）<br/> <br/>查看有关最近或当前威胁的信息  <br/> |以下各项之一： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在任何 Azure Active Directory （[https://portal.azure.com](https://portal.azure.com)）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中分配这些角色。 |
-|使用[威胁浏览器（和实时检测）](threat-explorer.md)分析威胁  <br/> |以下各项之一： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在任何 Azure Active Directory （[https://portal.azure.com](https://portal.azure.com)）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中分配这些角色。 |
-|查看事件（也称为调查） <br/> 将电子邮件添加到事件  <br/> |以下各项之一： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在任何 Azure Active Directory （[https://portal.azure.com](https://portal.azure.com)）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中分配这些角色。  |
-|触发事件中的电子邮件操作 <br/> <br/> 查找和删除可疑电子邮件  <br/> |以下各项之一： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员**和**搜索和清除**角色<br/><br/>**全局管理员**和**安全管理员**角色可以在 Azure Active Directory （[https://portal.azure.com](https://portal.azure.com)）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中进行分配。 <br/><br/>必须在 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）中分配**搜索和清除**角色。 |
+|使用威胁仪表板（或新[安全仪表板](security-dashboard.md)）<br/> <br/>查看有关最近或当前威胁的信息  <br/> |下列一种含义： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在任何 Azure Active Directory （[https://portal.azure.com](https://portal.azure.com)）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中分配这些角色。 |
+|使用[威胁浏览器（和实时检测）](threat-explorer.md)分析威胁  <br/> |下列一种含义： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在任何 Azure Active Directory （[https://portal.azure.com](https://portal.azure.com)）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中分配这些角色。 |
+|查看事件（也称为调查） <br/> 将电子邮件添加到事件  <br/> |下列一种含义： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在任何 Azure Active Directory （[https://portal.azure.com](https://portal.azure.com)）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中分配这些角色。  |
+|触发事件中的电子邮件操作 <br/> <br/> 查找和删除可疑电子邮件  <br/> |下列一种含义： <br/>- **Office 365 全局管理员**  <br/> - **安全管理员**和**搜索和清除**角色<br/><br/>**全局管理员**和**安全管理员**角色可以在 Azure Active Directory （[https://portal.azure.com](https://portal.azure.com)）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中进行分配。 <br/><br/>必须在 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）中分配**搜索和清除**角色。 |
 |将 Office 365 高级威胁防护计划2与 Microsoft Defender 高级威胁防护集成  <br/><br/> 将 Office 365 高级威胁防护计划2与 SIEM 服务器集成  <br/> |在任何 Azure Active[https://portal.azure.com](https://portal.azure.com)Directory （）或 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）中分配的**Office 365 全局管理员**或**安全管理员**角色。<br/>--- **外** ---<br/>在其他应用程序（如[Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)或 SIEM server）中分配的相应角色  |
    
     

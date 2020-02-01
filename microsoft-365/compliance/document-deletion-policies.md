@@ -1,5 +1,7 @@
 ---
 title: 文档删除策略概述
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 由于合规性、法律或其他业务要求，你的组织可能需要将文档保留一段时间。 但是，如果您的组织保留的文档比所需时间长，则会带来不必要的法律风险。 使用文档删除策略，您可以通过在特定时间段后删除网站中的文档来主动降低风险，例如，在创建文档五年后，可以在用户的 OneDrive for Business 网站中删除文档。
-ms.openlocfilehash: 85a8a4464a14cb2e0b9e901fbf3912c7ff3faa8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ac2bdfcd262a673af1078b2ed0a274fcd0b9d3b9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806045"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595207"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文档删除策略概述
 
@@ -124,7 +126,7 @@ ms.locfileid: "40806045"
   
 除非已将策略分配给网站集，否则不会显示 "**文档删除策略**" 链接。 此外，在将策略分配给网站后，链接不会立即显示出来，在显示 "**文档删除策略**" 链接时，可能需要从策略分配到24小时。 
   
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 将使用文件删除策略中心的合规性团队成员需要具有对策略中心和策略将应用到的网站的访问权限。我们建议您：
   

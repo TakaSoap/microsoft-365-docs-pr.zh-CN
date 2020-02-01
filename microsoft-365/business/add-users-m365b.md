@@ -1,5 +1,7 @@
 ---
 title: 向 Microsoft 365 Business 添加更多用户
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: 了解如何在 Microsoft 365 商业版中添加新用户、保护其设备以及分配角色。
-ms.openlocfilehash: f0498134d9f258f831cdbab10b7ee9c77b5d133d
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: 932b969d089dd223426e35c5bea4efde4409ad48
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850916"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593285"
 ---
 # <a name="add-more-users-to-microsoft-365-business"></a>向 Microsoft 365 Business 添加更多用户
 
@@ -38,7 +40,7 @@ ms.locfileid: "40850916"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
 
-如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 添加用户：
 

@@ -1,5 +1,7 @@
 ---
 title: 将搜索结果添加到审阅集
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 添加与高级电子数据展示事例相关的搜索结果。 将项目从其原始位置复制并复制到 Microsoft 提供的 Azure 存储位置。 此外，还会重新编制项索引，高级电子数据展示将对图像文件执行光学字符识别（OCR），并上传图像文本以供审阅和分析。
-ms.openlocfilehash: 838301576d84f4cf3dcb618904f55b661bcf95b3
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 748de7f3cb3fec5a37cb205e0d480701b4cded2e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257020"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594633"
 ---
 # <a name="add-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
 

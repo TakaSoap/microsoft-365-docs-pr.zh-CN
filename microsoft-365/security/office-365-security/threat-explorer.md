@@ -1,5 +1,7 @@
 ---
 title: 威胁资源管理器和实时检测、新增的威胁资源管理器、威胁资源管理器的更改、Office 365 的新增功能、安全性、云安全性、ATP 中的新安全性、新的 ATP 功能
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: 8b980273b92c92f58ddc31a5ae53d6f90eb1bee4
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 21fc170fc820fa0187c03ac07ddc8b8c771f54ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572728"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598239"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 

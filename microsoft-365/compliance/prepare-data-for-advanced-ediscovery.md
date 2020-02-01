@@ -1,5 +1,7 @@
 ---
 title: 准备用于 Office 365 高级电子数据展示的数据
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: '了解如何使用 Microsoft 365 安全&amp;合规中心来准备 office 365 数据，以便使用 Office 365 高级电子数据展示进行分析。 '
-ms.openlocfilehash: 0429c957035068074a571c97cf430b27f9ad5904
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 6407b6f2a2bbe9bc69842057232ec01569ef64c8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803819"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597759"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>准备用于 Office 365 高级电子数据展示的数据
 
 本主题介绍如何将内容搜索的结果加载到高级电子数据展示的案例中。 
   
-> [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> [!IMPORTANT]
+> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布弃用 Office 365 高级电子数据展示（也称为*高级电子数据展示 v1.0 1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快转换为[高级电子数据展示2.0 版](overview-ediscovery-20.md)（也称为*Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示2.0 包含高级电子数据展示 v1.0 中的类似功能，但也提供了许多新功能，如保管人管理、通信管理和审查集。 若要详细了解高级电子数据展示1.0 版，请参阅[旧电子数据展示工具的退休](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。  
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步骤1：为高级电子数据展示准备 Office 365 数据
 

@@ -1,5 +1,7 @@
 ---
 title: 创建查询以查找存储在站点上的敏感数据
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 SharePoint Online 中的数据丢失防护（DLP），您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后，可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
-ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: e3750ee69a197de5e7e5c0ac9346124568b8d5f5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823644"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594543"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -74,7 +76,7 @@ SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性，此属性�
 
 并非所有查询都一样。 下表提供了在 SharePoint 中不能使用 DLP 的查询示例并介绍了原因。
   
-|**不支持的查询**|**Reason**|
+|**不支持的查询**|**原因**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |必须至少添加一个数值。  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule" 不是有效的敏感类型名称。 仅在 DLP 查询中的[敏感信息类型](https://go.microsoft.com/fwlink/?LinkID=509999)中的名称可供使用。  <br/> |

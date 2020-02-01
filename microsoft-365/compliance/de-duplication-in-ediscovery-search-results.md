@@ -1,5 +1,7 @@
 ---
 title: 电子数据展示搜索结果中的重复数据删除
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您可以选择执行已导出的电子数据展示搜索结果，以便即使在不同邮箱中找到同一邮件的多个实例，也只导出电子邮件的一个副本。
-ms.openlocfilehash: 98639bd23b3d7c99b91a193c2651ff2fad677eeb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fa04b83e9ec06b3b0d20d42d3d800040aa6178ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074174"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595389"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>电子数据展示搜索结果中的重复数据删除
 
@@ -62,7 +64,7 @@ Office 365 电子数据展示工具使用以下电子邮件属性的组合来确
 > [!IMPORTANT]
 > 如果重复数据消除算法的限制可能会影响您的搜索结果的质量，则在导出项目时不应启用重复数据删除。 如果此部分中所述的情况不可能是搜索结果中的因素，并且您想要减少最有可能重复的项目数，则应考虑启用重复数据删除。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 本文中的信息适用于使用以下电子数据展示工具之一导出搜索结果：
     

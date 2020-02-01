@@ -1,5 +1,7 @@
 ---
 title: 设置 Windows 10 电脑的设备保护设置
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解 Microsoft 365 商业版中提供的默认设置和其他设置，以保护 Windows 10 设备。
-ms.openlocfilehash: 1846ee7ae09db94575ef27dcf4f5721661f7666d
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: b286eb417a8e723b01838c16286ceb612d497c7d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715194"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593508"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>设置 Windows 10 电脑的设备保护设置
 

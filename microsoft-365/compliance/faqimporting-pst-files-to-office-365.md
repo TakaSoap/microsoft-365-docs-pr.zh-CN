@@ -1,5 +1,7 @@
 ---
 title: 将 PST 文件导入到 Office 365 的常见问题解答
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '有关使用 Office 365 导入服务将 organizaiton 的 PST 文件导入到 Office 365 邮箱的管理员的常见问题。 '
-ms.openlocfilehash: dabec373b11009d4a66842572c9dd9a034a177d0
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: dcbc496273a08ea133cc11bacbb62f55eee58917
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967335"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594583"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 的常见问题解答
 
@@ -44,7 +46,7 @@ ms.locfileid: "39967335"
 - 必须是你的 Office365 组织中的全局管理员。
     
 > [!TIP]
-> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
+> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮箱导入导出”和“邮件收件人”角色分配给新角色组，然后添加成员。 
   
  **网络上传在哪些地区提供？**
   
@@ -64,9 +66,9 @@ Using network upload to import PST files is free.
   
  **将 PST 文件上传到 Azure 存储区域后，这些文件在删除前可在 Azure 中保留多长时间？**
   
-使用网络上传的方法导入 PST 文件时，需要将它们上传到名为 **ingestiondata** 的 Azure Blob 容器。 如果 Security & 合规中心 "中的"**导入 PST 文件**"页上没有正在进行的导入作业，则在安全 & 合规中心中创建最近的导入作业30天后，将删除 Azure 中**ingestiondata**容器中的所有 PST 文件。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在安全与合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。 
+使用网络上传的方法导入 PST 文件时，需要将它们上传到名为 **ingestiondata** 的 Azure Blob 容器。 如果安全与合规中心中的“**导入 PST 页面**”页面上没有正在进行的导入作业，则 Azure 中 **ingestiondata** 容器内的所有 PST 文件都会在安全与合规中心中创建最新导入作业 30 天后被删除。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在安全与合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。 
   
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然安全 & 合规中心中的 "**导入 PST 文件**" 页上仍可能会列出导入作业，但在查看较旧的导入作业的详细信息时，PST 文件列表可能为空。 
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
@@ -76,7 +78,7 @@ Using network upload to import PST files is free.
   
  **导入 PST 文件时是否有邮件大小限制？**
   
-是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+可以。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
   
  **PST 文件导入到 Office365 邮箱时，是否会保留邮件发送时间或接收时间、收件人和其他属性等邮件属性？**
   
@@ -158,7 +160,7 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
   
 在安全 & 合规中心的 "**导入 PST 文件**" 页上创建最近的导入作业之后30天内，将删除您的组织的 Azure 存储位置中的所有 PST 文件（在 blob 容器中名为**ingestiondata** ）。 
   
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然安全 & 合规中心中的 "**导入 PST 文件**" 页上仍可能会列出导入作业，但在查看较旧的导入作业的详细信息时，PST 文件列表可能为空。 
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
   
  **哪个版本的 PST 文件格式支持导入到 Office 365？**
   
@@ -168,11 +170,11 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
   
  **导入 PST 文件时是否有邮件大小限制？**
   
-是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+可以。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
   
  **PST 文件导入到 Office365 邮箱时，是否会保留邮件发送时间或接收时间、收件人和其他属性等邮件属性？**
   
-是。 导入过程中不会更改原始邮件的元数据
+可以。 导入过程中不会更改原始邮件的元数据
   
  **我想要导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？**
   

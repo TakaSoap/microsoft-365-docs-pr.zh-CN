@@ -1,5 +1,7 @@
 ---
 title: 文档指纹
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 组织中的信息工作人员每天会处理大量的敏感信息。 "文档指纹"可识别贵组织中使用的标准表单，以便于您保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建一个概念。
-ms.openlocfilehash: 8ac8e0f44c71f0f52d362f6c6c84f7fc9e55face
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 6aea349495aa31eba8c9b57abffb92131d00864c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38685182"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595197"
 ---
 # <a name="document-fingerprinting"></a>文档指纹
 

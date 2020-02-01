@@ -1,5 +1,7 @@
 ---
 title: 自助服务购买常见问题解答
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -13,17 +15,19 @@ search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: d8edca60687a269c062f44a23500b204b965863c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806235"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594096"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
 > [!NOTE]
 > 本文中的信息仅适用于 Microsoft Power Platform （Power BI、Power Apps 和 Power 自动化）订阅。
+
+现在可在美国的 Power Platform 中购买自助服务购买。
 
 ## <a name="general"></a>常规
 
@@ -39,9 +43,9 @@ ms.locfileid: "40806235"
 
 在当今世界，最终用户和部门越来越多地寻求和购买技术解决方案。 我们已收到来自这些客户的多个请求，以启用 Power Platform 产品的自助服务购买。 我们正在对此客户需求做出响应，同时平衡 IT 管理员的需求，在组织内的个人采用第三方解决方案而没有其知识的情况下，经常会失去可视性和控制能力。 借助面向电源平台产品的自助服务功能，IT 管理员可以完全了解在其组织内进行的所有自助服务购买，在组织级别设置的数据管理策略将计入通过自助服务购买的订阅。 管理员还可以通过现有协议和定价为分配到自助购买的用户分配电源平台产品的现有许可证或购买其他订阅。 在分配这些集中购买的许可证之后，管理员可以请求购买者取消其现有订阅。 Microsoft 正在探索为将来的管理员简化和简化此过程的方法。
 
-### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>何时提供适用于电源平台产品的自助服务购买？
+### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>哪些电源平台产品可用于自助购买？
 
-Microsoft 正在为美国的客户启动2020年1月14日的自助服务购买，并在未来的几个月中提供更多市场。 电源应用和电源自动执行将在以下几周内添加。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。
+Microsoft 已为美国的客户启动了针对 Power Platform （Power BI、Power Apps 和 Power 自动化）的自助服务购买，在未来的几个月内将推出更多市场。 目前，美国政府、非盈利或教育版的租户将无法使用此功能。
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>是否会为电源平台产品之外的服务启用自助服务购买？
 

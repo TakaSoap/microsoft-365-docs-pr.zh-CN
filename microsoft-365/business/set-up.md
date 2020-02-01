@@ -1,5 +1,7 @@
 ---
 title: 设置 Microsoft 365 商业版
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -26,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: 0001c2b9962f6cce0be1f77cbf427c68f9ee3249
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: c370a5b3fd735e704eea56ac1079bb2e5dad4c4b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831295"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594261"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>在安装向导中设置 Microsoft 365 商业版
 
@@ -39,7 +41,7 @@ ms.locfileid: "39831295"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>添加你的域、用户并设置策略
 
@@ -133,4 +135,4 @@ ms.locfileid: "39831295"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

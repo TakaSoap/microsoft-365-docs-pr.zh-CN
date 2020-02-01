@@ -1,5 +1,7 @@
 ---
 title: 使用就绪分类器（预览）
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 提供了许多现成的可供使用的机器学习分类器，可用于在整个组织中标识和标记内容。 本主题介绍如何准备好使用类元的准备工作。
-ms.openlocfilehash: b94a49930cc2d460fb2db5ff4ff0f441f6c7b35a
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: c6659bc32131948c57ad0bf7c8e3a30fbce125d9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259428"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595889"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>使用就绪分类器（预览）
 

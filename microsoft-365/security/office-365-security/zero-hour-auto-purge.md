@@ -1,5 +1,7 @@
 ---
 title: 零时差自动清除 - 防范垃圾邮件和恶意软件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -17,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除（ZAP）是一种电子邮件保护功能，可检测到已发送到用户收件箱的垃圾邮件或恶意软件的邮件，然后将恶意内容无害。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: b2e2fb8fb0786f921b7c5330e92df519b0877d30
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 6616281a98487c7edd7ca7721ade9a8510f6a21f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515893"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597951"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零时差自动清除 - 防范垃圾邮件和恶意软件
 

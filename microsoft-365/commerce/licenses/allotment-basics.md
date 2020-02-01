@@ -1,5 +1,7 @@
 ---
 title: 服务配额基础
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -12,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: 了解新的服务配额功能。
-ms.openlocfilehash: fff63b3c61ad95696e7f7677a34154ad65e82259
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 22f7c35b1a5baf97fb72f541d57da28adeeffbe4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753571"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594683"
 ---
 # <a name="allotment-basics"></a>服务配额基础
 
@@ -45,6 +47,6 @@ ms.locfileid: "38753571"
 
 您必须是全局或许可证管理员才能开始使用服务配额。
 
-## <a name="getting-started"></a>入门
+## <a name="getting-started"></a>开始使用
 
 仅在一小部分客户的私人预览版中提供服务配额功能。 如果你有兴趣加入，请填写以下表单： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

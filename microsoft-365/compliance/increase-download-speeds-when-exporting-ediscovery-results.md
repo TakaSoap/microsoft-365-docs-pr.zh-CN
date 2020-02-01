@@ -1,5 +1,7 @@
 ---
 title: 提高导出 Office 365 中的电子数据展示搜索结果时的下载速度
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何配置 Windows 注册表，以便在从 Security & 合规性中心和 Office 365 中的高级电子数据展示中下载搜索结果和搜索数据时增加数据吞吐量。
-ms.openlocfilehash: f74d164250f9d5b9b8315fe2651d3374457451ed
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: bb4ba0e788463e68588989c7c2c0c721dd15e018
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685274"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597919"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>提高导出 Office 365 中的电子数据展示搜索结果时的下载速度
 

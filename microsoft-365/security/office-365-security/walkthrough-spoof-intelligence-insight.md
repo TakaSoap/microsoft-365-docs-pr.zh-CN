@@ -1,5 +1,7 @@
 ---
-title: 演练欺骗性的智能洞察力
+title: 演练欺骗智能见解
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 了解新的欺骗智能洞察力的工作原理。
-ms.openlocfilehash: 652dde07d615a4eef98074fb8d2b5c676f65d633
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075549"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598009"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>演练：欺骗性的智能洞察力
 
@@ -60,7 +62,7 @@ ms.locfileid: "37075549"
   
 *域对*是 "发件人：" 地址和发送基础结构的组合。 
   
-- "发件人" 地址是邮件应用程序显示为 "发件人" 地址的地址。 此地址标识电子邮件的作者。 即，负责撰写邮件的个人或系统的邮箱。 有时称其为" 5322.From 地址"。
+- "发件人" 地址是邮件应用程序显示为 "发件人" 地址的地址。 此地址标识电子邮件的作者。 即，负责撰写邮件的个人或系统的邮箱。 有时也称其为"5322.From 地址"。
     
 - 发送方结构或发件人是发送 IP 地址的 PTR 记录的组织域。 如果发送 IP 地址没有 PTR 记录，则发件人由使用 CIDR 表示法（/24）中的255.255.255.0 子网掩码的发送 IP 进行标识。 例如，如果 IP 地址为192.168.100.100，则发件人的完整 IP 地址为 192.168.100.100/24。
     

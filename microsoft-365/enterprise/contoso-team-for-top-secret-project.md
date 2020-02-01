@@ -1,5 +1,7 @@
 ---
-title: Contoso Corporation 的首要项目的团队
+title: Contoso Corporation 的最高机密项目团队
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为首要项目的高管控数据使用团队开发一套新的产品和服务。
-ms.openlocfilehash: 23a967ea7ffdb3497d705a3ddda4d3c56e415b8e
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699882"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597069"
 ---
-# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的首要项目的团队
+# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的最高机密项目团队
 
 在执行异地异地工作时，Contoso 首席执行官订购了一系列新产品和服务，在接下来的五年中，这可能会导致 Contoso 的利润加倍。 开发业务、工程和市场计划的首要项目称为**Project 2x** ，而整个公司的主要员工均为 recruited。 
 

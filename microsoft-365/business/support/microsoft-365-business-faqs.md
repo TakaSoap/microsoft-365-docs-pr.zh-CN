@@ -2,6 +2,8 @@
 title: Microsoft 365 商业常见问题 
 description: 查找有关 Microsoft 365 商业版常见问题的答案，该解决方案是为小型和中型企业（SMB）设计的新解决方案。 
 author: Sirkkuw
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -10,19 +12,19 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: 09a155c87bf90309f8a4cdd2eb5c0b71d2337d58
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748363"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594220"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商业常见问题
 
 ## <a name="general"></a>常规
 
 ### <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 商业版？ 
-Microsoft 365 是一个集成的解决方案，可为中小型企业提供同类最佳的生产率工具、安全性和设备管理功能。 这包括：
+Microsoft 365 是一个集成的解决方案，可为中小型企业提供同类最佳的生产率工具、安全性和设备管理功能。 其中包括：
 
 **一组业务效率和协作工具** 
 * Word、Excel、PowerPoint、Outlook、OneNote、Publisher 和 Access 

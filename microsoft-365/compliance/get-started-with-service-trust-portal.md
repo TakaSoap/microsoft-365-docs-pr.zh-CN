@@ -1,5 +1,7 @@
 ---
 title: Microsoft 服务信任门户入门
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 对于 Office 365、Azure 和 Dynamics 365 Online 规章合规性报告，若要查看第三方审核，请了解 Microsoft 如何使客户数据安全，以及如何在使用这些在线服务时兼容 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP。
-ms.openlocfilehash: 69475ae493f429e994e2b4edb37b12e8b74cf8db
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: d8347a20543664a1de86001709f068bf39b1cb5d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004883"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596339"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 

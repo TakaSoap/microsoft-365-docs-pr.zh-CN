@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中为电子数据展示调查设置合规性边界
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: 13f45ce55f23d91a81068031691436383ec87ba3
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: bd167246bc43cba20a444594a2309ac888c734fc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685324"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597469"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -245,7 +247,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
  **谁可以创建和管理搜索权限筛选器（使用 New-compliancesecurityfilter 和 New-compliancesecurityfilter cmdlet）？**
   
@@ -261,7 +263,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **电子数据展示管理器能否从两个单独的合规性边界中查看内容？**
   
-是。 为此，可以将用户添加到对这两个机构都可见的角色组。
+可以。 为此，可以将用户添加到对这两个机构都可见的角色组。
   
  **搜索权限筛选器是否适用于电子数据展示事例保留、Office 365 保留策略或 DLP？**
   

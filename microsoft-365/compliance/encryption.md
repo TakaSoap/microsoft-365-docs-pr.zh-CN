@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的加密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 使用 Office 365，你的内容将在静止时加密，并在传输过程中提供最强大的加密、协议和技术。 获取 Office 365 中的加密概述。
-ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b16c3c4e71a3898acff0d23848b2fba185836729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685130"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593173"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 中的加密
 

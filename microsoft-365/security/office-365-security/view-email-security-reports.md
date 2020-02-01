@@ -1,5 +1,7 @@
 ---
 title: 查看安全&amp;合规性中心中的电子邮件安全报告、受到威胁的用户、加密、威胁保护状态、恶意软件检测、热门恶意软件、垃圾邮件检测、发送和接收的电子邮件、用户报告的消息、阅读报告、检测、安全数据、安全信息
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 59090e53389b4e95d8987989819e71be6fce61e2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41209947"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598109"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 

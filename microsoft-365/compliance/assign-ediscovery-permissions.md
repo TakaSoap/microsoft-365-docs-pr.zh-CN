@@ -1,5 +1,7 @@
 ---
 title: 在安全 & 合规中心中分配电子数据展示权限
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: 548af12811287dce3461e5ce7d5f1ffa905eef73
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 0ba8defac50c4037f8a7100b5e4d0808eb0af362
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004837"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595989"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -43,7 +45,7 @@ ms.locfileid: "41004837"
 > [!NOTE]
 > 若要使用高级电子数据展示分析用户的数据，必须为用户（数据管理员）分配 Office 365 E5 许可证。 或者，可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。 分配给案例并使用高级电子数据展示分析数据的管理员和合规性监察官不需要 E5 许可证。  
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 "组织管理" 角色组的成员，或分配有角色管理角色才能在安全 & 合规性中心中分配电子数据展示权限。
     

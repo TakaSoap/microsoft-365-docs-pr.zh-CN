@@ -1,6 +1,8 @@
 ---
 title: 在 Office 365 中自动调查和响应威胁
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
-ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967985"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598759"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>在 Office 365 中自动调查和响应威胁
 
@@ -30,7 +32,7 @@ ms.locfileid: "39967985"
 - 若要获取其工作原理的概述，请参阅[Office 365 中的自动调查和响应](automated-investigation-response-office.md)。
 
 > [!TIP]
-> 您是否已将 Microsoft 365 E5 或 Microsoft 365 E3 与身份 & 威胁防护结合使用？ 考虑尝试[在 Microsoft 威胁防护中进行自动调查和响应（空中）](../mtp/mtp-autoir.md)。
+> 你的 Microsoft 365 E5 或 Microsoft 365 E3 是否具有身份和威胁防护？ 考虑尝试[在 Microsoft 威胁防护中进行自动调查和响应（空中）](../mtp/mtp-autoir.md)。
 
 使用自动调查和响应功能，在触发特定警报时，一个或多个安全行动手册启动，并且自动调查过程开始。 在自动调查过程期间和之后，安全团队可以执行以下操作：
 
@@ -43,7 +45,7 @@ ms.locfileid: "39967985"
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
 
-1. 转到[https://protection.office.com](https://protection.office.com)并登录。 这将转到安全 & 合规性中心。
+1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。 这将转到安全 & 合规性中心。
 
 2. 执行下列操作之一：
 
@@ -65,7 +67,7 @@ ms.locfileid: "39967985"
 
 在 Office 365 中，自动调查通常会生成一个或多个建议的操作。 但是，在安全操作团队批准之前，不会执行任何操作。 使用以下过程可查看和审批操作。
 
-1. 转到[https://protection.office.com](https://protection.office.com)并登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。 
 
 2. 转到**威胁管理** > **调查**。
 
@@ -81,7 +83,7 @@ ms.locfileid: "39967985"
 
 某些类型的警报会触发 Office 365 中的自动调查。 若要了解详细信息，请参阅[警报](automated-investigation-response-office.md#alerts)。 使用以下过程可查看与自动调查相关联的警报的详细信息。
 
-1. 转到[https://protection.office.com](https://protection.office.com)并登录。 这将转到安全 & 合规性中心。
+1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。 这将转到安全 & 合规性中心。
 
 2. 转到**威胁管理** > **调查**。
 
@@ -105,7 +107,7 @@ ms.locfileid: "39967985"
 
 使用以下资源对此进行设置：
 
-|Resource  |说明  |
+|资源  |说明  |
 |---------|---------|
 |[Office 365 管理 API 概述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |使用 Office 365 管理活动 API，可从 Office 365 和 Azure Active Directory 活动日志中获取各个用户、管理员、系统以及策略操作和事件的相关信息。         |
 |[Office 365 管理 API 入门](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |Office 365 管理 API 使用 Azure AD 为应用程序提供用于访问 Office 365 数据的身份验证服务。 请按照本文中的步骤进行设置。          |

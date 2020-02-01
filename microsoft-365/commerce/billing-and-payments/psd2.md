@@ -1,5 +1,7 @@
 ---
 title: 面向商业客户的付款服务指令2和强客户身份验证
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 description: 从2019年9月14日开始，需要在欧洲经济区域的31个国家/地区内的银行验证在付款可以处理之前进行在线购买的人员的身份。
 keywords: 付款服务指令2，强大的客户身份验证，多重身份验证
-ms.openlocfilehash: 1e9272803fd592062676e3324d172560b6b2219b
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: f59808d3735f10b57ed5c0cd279b6703b24a44a4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646412"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594703"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>面向商业客户的付款服务指令2和强客户身份验证
 

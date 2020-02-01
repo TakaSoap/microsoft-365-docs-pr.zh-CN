@@ -1,5 +1,7 @@
 ---
 title: 保护非托管 Windows 10 电脑和 Mac
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 针对针对市场活动的 Microsoft 365 防御网络钓鱼和其他攻击。
-ms.openlocfilehash: 93bb36f115ee5f83e07ac9623c852fec4dbf205f
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 7cb09d0cadcc70b96c5f1404defa5d0387947ca8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753621"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594793"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保护非托管 Windows 10 电脑和 Mac
 

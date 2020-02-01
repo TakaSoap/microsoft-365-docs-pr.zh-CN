@@ -1,5 +1,7 @@
 ---
 title: 启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: 了解如何启用 Microsoft 365 以保护加入 Windows 10 设备的本地 Active Directory。
-ms.openlocfilehash: 93e3364fc94f3878bec13d0a87b17a7d3678a4cc
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: 170703c7367f9c0e9cb4c10edbd81cb214aa1d3e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633261"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593793"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备
 

@@ -1,5 +1,7 @@
 ---
 title: 在高级电子数据展示中设置智能标记
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 智能标记允许您在阅读高级电子数据展示事例中的内容时应用机器学习功能。 使用智能标记组来显示机器学习检测模型的结果，如律师-客户端权限模型。
-ms.openlocfilehash: 68b558cc2282cc388387f8d61825b9ee569ff32a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b3e1310baa06f53a3ee1dab5c371fb67d6ab95c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075310"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597399"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>在高级电子数据展示中设置智能标记
 

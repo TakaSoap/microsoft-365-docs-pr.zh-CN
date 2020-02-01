@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，可以集中管理与安全或合规性相关的所有任务的权限。
-ms.openlocfilehash: 070e9bb1f7bf070a1b95995c2010b79dee7cbc9b
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 53695bb412c760c769692dfe7fb40324f495d356
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572959"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598699"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
 

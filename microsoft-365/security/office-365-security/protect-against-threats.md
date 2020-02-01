@@ -1,5 +1,7 @@
 ---
 title: 防御 Office 365 中的威胁
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 现在，请使用本文作为指南来配置您的威胁防护功能。
-ms.openlocfilehash: 2c2e67334f90b24ec60bc7af01451805b32037cc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 96d5c85a5511ec67991283fbc164bb07d2ab34e9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112006"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598679"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防御 Office 365 中的威胁
 
@@ -29,7 +31,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 > [!IMPORTANT]
 > **为每种策略提供了初始推荐设置; 但是，有许多可用选项，您可以调整设置以满足特定组织的需求**。 为你的策略或更改允许大约30分钟，以在你的数据中心中工作。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 ### <a name="subscriptions"></a>订阅
 

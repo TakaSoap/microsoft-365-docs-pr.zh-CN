@@ -1,5 +1,7 @@
 ---
 title: 适用于企业的 Microsoft 365 概述
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供对适用于企业的 Microsoft 365 的组件、计划和部署路径的介绍。
-ms.openlocfilehash: 16efb061bbb8be4ff8cb5a93186d342fc55ca849
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801457"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596849"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>适用于企业的 Microsoft 365 概述
 
@@ -65,7 +67,7 @@ ms.locfileid: "40801457"
 - 适用于一些常见组织部门的[Microsoft 365 生产率库](https://www.microsoft.com/microsoft-365/success/)和代表性方案
 - 采用指南重点介绍了 Microsoft 365 企业版[部署指南](deploy-microsoft-365-enterprise.md)
 
-[![适用于 Microsoft 365 for 企业版海报的图像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Microsoft 365 企业版海报图像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 要下载海报副本，请单击[此处](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)。
 
@@ -76,7 +78,7 @@ ms.locfileid: "40801457"
 
 [![转移到 Microsoft 365 海报图像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-此两页海报是一种快速清点现有基础结构的方法，并提供了在 Microsoft 365 for enterprise 中转到相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
+此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 
 还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 

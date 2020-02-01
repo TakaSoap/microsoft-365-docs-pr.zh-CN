@@ -1,5 +1,7 @@
 ---
 title: 配置搜索和分析设置
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0456ee21087c7fe05c3ef96d517feb468c7cfe5e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cce056f1dcc0225da13612ffbd9985af3eb4ce9c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074420"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596219"
 ---
 # <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
 

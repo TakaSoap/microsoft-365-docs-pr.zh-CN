@@ -1,5 +1,7 @@
 ---
 title: 将 Office 365 中的内容搜索用于目标集合
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在安全 & 合规中心中使用内容搜索来执行目标集合。 目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。 使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
-ms.openlocfilehash: 02cd78f9ebb02f7c41e0703ba4ddb78bfd184000
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 66929911cdb1692ea1ee2a8920dad349d50ec156
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685314"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597299"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>将 Office 365 中的内容搜索用于目标集合
 
@@ -28,7 +30,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
 > [!NOTE]
 > 若要返回位于 SharePoint 或 OneDrive for business 网站中的文件夹中的内容，本主题中的脚本使用 DocumentLink 托管属性而不是 Path 属性。 DocumentLink 属性比 Path 属性更可靠，因为它将返回文件夹中的所有内容，而 Path 属性将不会返回某些媒体文件。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是安全&amp;合规中心中的电子数据展示管理器角色组的成员，才能在第1步中运行该脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -231,7 +233,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
     - 单击 "**选择要搜索的特定网站**" 搜索，然后添加在步骤1中运行脚本时指定的相同网站 URL。 
     
-6. 单击“**下一步**”。
+6. 单击“下一步”。****
     
 7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框`folderid:<folderid>`中`documentlink:<path>` ，粘贴步骤1中的脚本返回的 or 值。 
     

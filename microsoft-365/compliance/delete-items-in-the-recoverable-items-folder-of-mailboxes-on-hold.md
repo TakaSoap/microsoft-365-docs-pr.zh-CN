@@ -1,5 +1,7 @@
 ---
 title: 删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: "对于管理员：删除中的项目 \n\nExchange Online 邮箱的 er 的 \"可恢复的项目\" 文件夹，即使该邮箱位于 \"合法保留\" 中也是如此。 这是一种删除意外溅入 Office 365 中的数据的有效方法。"
-ms.openlocfilehash: 6eeb3fecc531d4790330236f8b8857aa4344b371
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 1a242122726635be530ec16934b465c152279400
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259670"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595307"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 

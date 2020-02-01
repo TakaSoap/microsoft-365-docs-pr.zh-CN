@@ -1,5 +1,7 @@
 ---
 title: 从项目的原始位置删除项目
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何使用安全 & 合规性中心中的新数据调查（预览版）工具删除其原始位置中的项目。
-ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38685242"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595317"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>从原始位置删除项目（预览）
 
@@ -29,7 +31,7 @@ ms.locfileid: "38685242"
 
 使用数据调查，可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您拥有在证据集内保留的项目的副本以供进一步调查或保留为参考。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要删除项目，您必须在安全 & 合规性中心中为其分配**搜索和清除**角色。 默认情况下，此角色分配给内置的 "数据调查者" 角色组。
 
@@ -76,7 +78,7 @@ ms.locfileid: "38685242"
 
 - **邮箱：** 将邮箱项目软删除时，会将其移动到邮箱中的 "可恢复的项目" 文件夹中。 当用户从 "已删除邮件" 文件夹中删除项目或通过按 Shift + Delete 永久删除项目时，此行为类似。 此时，用户可以恢复项目，直到已删除项目的保留期过期。 在 Office 365 中，默认情况下，已删除项目的保留期为14天，但管理员可以将保留期增加到30天。 保留期到期后，项目将移至隐藏文件夹（称为 "*清除*" 文件夹）。 下次处理邮箱时，将从 Office 365 中永久删除该项目。 每七天处理一次邮箱）。
 
-- **SharePoint 和 OneDrive 网站：** 当网站上的文件或文档软删除时，它会被移动到网站的回收站（也称为*第一阶段*回收站）。 项目将保留在回收站中的93天（Office 365 中的网站的已删除项目保留期）。 在93天内，仍可由 SharePoint 中的网站集管理员或 OneDrive 中的用户或管理员恢复已删除的项目。 也可以从第一阶段回收站中删除项目。 当发生这种情况时，会将项目移到网站集的回收站中，该网站集称为*第二阶段*回收站。 对于第一阶段和第二阶段回收站，保留期为93天。这意味着第二阶段回收站保留在最初删除项目时开始。 这意味着两个回收站的总保留时间总为93天。如果从第二阶段回收站中删除某个项目（由管理员手动或在保留期过期后自动进行），则管理员将无法再访问该项目。
+- **SharePoint 和 OneDrive 网站：** 当网站上的文件或文档软删除时，它会被移动到网站的回收站（也称为*第一阶段*回收站）。 删除的项目在回收站中保留 93 天（Office 365 中网站的已删除项目保留期限）。 在93天内，仍可由 SharePoint 中的网站集管理员或 OneDrive 中的用户或管理员恢复已删除的项目。 也可以从第一阶段回收站中删除项目。 当发生这种情况时，会将项目移到网站集的回收站中，该网站集称为*第二阶段*回收站。 对于第一阶段和第二阶段回收站，保留期为93天。这意味着第二阶段回收站保留在最初删除项目时开始。 这意味着两个回收站的总保留时间总为93天。如果从第二阶段回收站中删除某个项目（由管理员手动或在保留期过期后自动进行），则管理员将无法再访问该项目。
 
 ## <a name="what-happens-if-a-content-location-is-on-hold"></a>如果内容位置处于保留状态，会发生什么情况
 

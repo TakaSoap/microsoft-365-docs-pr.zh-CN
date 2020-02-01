@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中隔离电子邮件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: 您可以在 Office 365 中为传入电子邮件设置隔离，在其中已被筛选为垃圾邮件、批量、网络钓鱼邮件和恶意软件的传入电子邮件可以保留下来供以后查看。
-ms.openlocfilehash: f7669f69abb711d71362057f2019b0dd7e30443b
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 253e1b9e03d395f67ff1290a527e035cbf8dfc3f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021848"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598669"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>在 Office 365 中隔离电子邮件
 

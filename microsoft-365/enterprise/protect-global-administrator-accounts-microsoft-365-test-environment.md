@@ -1,5 +1,7 @@
 ---
 title: 在 Microsoft 365 企业版测试环境中保护全局管理员帐户
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用这些步骤来保护 Microsoft 365 企业版测试环境中的全局管理员帐户。
-ms.openlocfilehash: 32e5983532c89c6ada106ed32d8ef3eabd5dc569
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e33790d62adbac4f9b8d816041d28b9dfdf36095
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801385"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596739"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中保护全局管理员帐户
 
@@ -31,7 +33,7 @@ ms.locfileid: "40801385"
 1.  创建 Microsoft 365 企业版测试环境。
 2.  保护您的专用全局管理员帐户。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
@@ -53,7 +55,7 @@ ms.locfileid: "40801385"
 2. 单击 "**用户 > 活动用户**"，然后单击 "**添加用户**"。
 3. 在 "**添加用户**" 窗格中，在 "**名字"、"****显示名称**" 和 "**用户名**" 中键入**DedicatedAdmin** 。
 4. 单击 "**密码**"，单击 "**让我创建密码**"，然后键入一个强密码。 将此新帐户的密码记录在安全位置。
-5. 单击“**下一步**”。
+5. 单击“下一步”。****
 6. 在 "**分配产品许可证**" 窗格中，选择 " **Microsoft 365 e5** " 或 " **Office 365 e5**"，然后单击 "**下一步**"。
 7. 在 "**可选设置**" 窗格中，单击 "**角色**"，然后选择 "管理中心" "**访问**和**全局管理员**"。单击 "**下一步**"。
 8. 在 "**即将完成**" 窗格中，单击 "**完成添加**"，然后单击 "**关闭**"。

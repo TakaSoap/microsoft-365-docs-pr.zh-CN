@@ -1,5 +1,7 @@
 ---
 title: 在高级电子数据展示中收集事例数据
+f1.keywords:
+- NOCSH
 ms.author: esclee
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4e0bc71071ecfe20a2141e72b1146e9688618faf
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: a6b86d9f86edc427e10c02a99e3cda3e5e79db66
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633601"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595849"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>在高级电子数据展示中收集事例数据
 
@@ -39,7 +41,7 @@ ms.locfileid: "39633601"
 
 完成搜索估计后，选择搜索以显示弹出页面，这将显示有关搜索结果的一些高级统计信息。 在这种情况下，"**统计**" 按钮将处于活动状态。 您可以选择它以查看搜索统计信息，例如：
 
-- Summary
+- 摘要
 - 顶部位置
 - Queries
 

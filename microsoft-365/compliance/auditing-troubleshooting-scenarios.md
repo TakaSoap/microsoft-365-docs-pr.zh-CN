@@ -1,5 +1,7 @@
 ---
 title: 搜索 Office 365 审核日志以解决常见方案
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以使用 Office 365 审核日志搜索工具来帮助您解决常见问题，例如调查已损坏的帐户、找出设置邮箱的电子邮件转发的用户或确定外部用户成功登录组织的原因。
-ms.openlocfilehash: a9901168ef4c8e2d2128fb143cbe134a04fb4e2c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603786"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595969"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>搜索 Office 365 审核日志，以调查常见的支持问题
 

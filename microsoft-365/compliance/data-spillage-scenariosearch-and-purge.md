@@ -1,5 +1,7 @@
 ---
 title: 电子数据展示解决方案系列数据外泄方案-搜索和清除
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 电子数据展示和搜索工具来管理和响应组织中的数据外泄事件。
-ms.openlocfilehash: 06c02a9d5f31f8b7d6845214c10a150b6cacf379
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 3efeb183ca0629ea642eb21f14e31401d8618eea
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558359"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595399"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： Data 外泄方案-搜索和清除
 

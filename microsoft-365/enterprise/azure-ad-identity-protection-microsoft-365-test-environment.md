@@ -1,5 +1,7 @@
 ---
 title: 适用于 Microsoft 365 企业版测试环境的 Azure AD 标识保护
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 配置 Azure AD 标识保护并分析 Microsoft 365 企业版测试环境中的当前帐户。
-ms.openlocfilehash: c0d364eaef9cfd37531d9f9e1803db66739a7984
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 376fc838191314e93ae37accb7fc5066456499fb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802097"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597159"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>适用于 Microsoft 365 企业版测试环境的 Azure AD 标识保护
 
@@ -31,7 +33,7 @@ Azure Active Directory （Azure AD） Identity Protection 允许您检测影响�
 1. 创建 Microsoft 365 企业版测试环境。
 2. 使用 Azure AD Identity Protection。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
@@ -53,7 +55,7 @@ Azure Active Directory （Azure AD） Identity Protection 允许您检测影响�
 4. 在 "**通知**" 下，单击 "用户"，**查看风险检测警报**。
 5. 在 "**检测到风险的用户警报**" 窗格中，选择 "**中**"。
 6. 对于**向以下用户发送电子邮件**，请单击 "**包含**"，并验证全局管理员帐户是否在所选成员列表中。
-7. 单击 **“保存”**。
+7. 单击“**保存**”。
 
 依次单击 "**保护**" 下的不同策略以查看如何配置它们。 如果您创建并激活策略，请确保它没有阻止对条件范围过宽的访问，或者您可能无法登录，即使是全局管理员也是如此。
 

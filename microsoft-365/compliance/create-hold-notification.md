@@ -1,5 +1,7 @@
 ---
 title: 创建合法保留通知
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c34271f5dce3bc830241ba0fa5bad70cd294ba22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074294"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595619"
 ---
 # <a name="create-a-legal-hold-notice"></a>创建合法保留通知
 
@@ -84,7 +86,7 @@ ms.locfileid: "37074294"
    
 4. 指定您希望为保管人提供的内容或其他说明（必需）。 请注意，在步骤2中定义的门户内容将添加到发布通知的末尾。 
    
-5. 单击“保存”**** 
+5. 单击“**保存**” 
 
 ### <a name="re-issuance-notification"></a>重新发布通知 
 
@@ -100,7 +102,7 @@ ms.locfileid: "37074294"
    
 4. 指定您希望为保管人提供的内容或其他说明（必需）。 请注意，在步骤2中定义的门户内容将添加到重新发布通知的末尾。
    
-5. 单击“保存”****。
+5. 单击“**保存**”。
 
 >[!Note]
 >如果修改了保留通知，则将自动向分配给此通知的所有保管人发送重新发布通知。 发送通知后，将要求保管人重新确认其保留通知。 如果您已设置任何提醒或升级工作流，这些工作流也将重新启动。 

@@ -1,5 +1,7 @@
 ---
 title: Office 365 客户密码箱请求
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客户密码箱请求，使您可以控制 Microsoft 支持工程师在遇到问题时如何访问数据。
-ms.openlocfilehash: a9f7f6116d4667e294666afc71747a6fad1efb33
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 915f8570271835939f0086f6c19af41a42d4f0d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233763"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595499"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客户密码箱
 
@@ -255,7 +257,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>客户密码箱是否防止来自法律强制机构或其他第三方的数据请求？
 
-否。 Microsoft 会认真为客户数据提供第三方请求。 作为云服务提供商，Microsoft 始终支持客户数据的隐私。 在我们收到传唤的情况下，Microsoft 将始终尝试将第三方重定向到客户以获取信息。 （阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们将定期发布有关 Microsoft 收到的法律强制请求的[详细信息](https://www.microsoft.com/corporate-responsibility/lerr)。
+不是。 Microsoft 会认真为客户数据提供第三方请求。 作为云服务提供商，Microsoft 始终支持客户数据的隐私。 在我们收到传唤的情况下，Microsoft 将始终尝试将第三方重定向到客户以获取信息。 （阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们将定期发布有关 Microsoft 收到的法律强制请求的[详细信息](https://www.microsoft.com/corporate-responsibility/lerr)。
 
 有关详细信息，请参阅有关第三方数据请求的[Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)和[在线服务条款](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的 "客户数据泄露" 部分。
 

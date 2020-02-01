@@ -9,19 +9,21 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: josephd
-ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 69ff4846e3daeef39310aa63961e0b3f5ccb9875
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370239"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596589"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>步骤1：为 Windows 10 企业版准备组织
 
 *本文适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![阶段 3：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 将设备升级到 Windows 10 企业版之前，请考虑以下事项：
 
@@ -45,7 +47,7 @@ Microsoft 使用诊断数据，通过识别恶意软件趋势和其他威胁，�
 
 配置管理策略时，请使用下表中的相应值。
 
-| Level | 收集的数据 | 值 |
+| 级别 | 收集的数据 | 值 |
 |:--- |:--- |:--- |
 | 安全性 | 仅安全数据。 | 0 |
 | 基本 | 安全数据和基本系统和质量数据。 | 1 |

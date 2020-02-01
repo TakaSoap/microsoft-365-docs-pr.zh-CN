@@ -1,5 +1,7 @@
 ---
 title: 处理 Office 365 内容搜索中的部分索引项
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '了解 Exchange 和 SharePoint 中的未编制索引项目，您可以通过 Security & 合规性中心在内容搜索运行中加入未编制索引的项目。 '
-ms.openlocfilehash: 7a5baa37abbade64ac77ed288afbb5389ac2295f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075354"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597779"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>处理 Office 365 内容搜索中的部分索引项
 
 从 Office 365 中的安全性 & 合规性中心运行的内容搜索会在运行搜索时自动在估计的搜索结果中包含部分索引项目。 部分索引项目是指 SharePoint 和 OneDrive for business 网站上的 Exchange 邮箱项目和文档，因为某些原因未完全编制搜索索引。 在 Exchange 中，部分索引项目通常包含一个文件类型无法编制索引的文件，该文件将附加到电子邮件中。 以下是无法将项目编入索引以进行搜索的一些其他原因，在运行搜索时，这些项目作为部分索引项目返回： 
   
-- 无法识别或不支持对文件类型编制索引。
+- 文件类型是索引无法识别或不支持的文件类型。
     
 -  邮件有一个没有有效处理程序的附加文件，如图像文件;这是部分索引的电子邮件项的最常见原因。 
     
@@ -45,7 +47,7 @@ ms.locfileid: "37075354"
 - 文件具有密码保护。
     
 > [!NOTE]
-> 大多数 Office 365 组织的内容数量少于 1%，而按部分索引的大小少于 12%。 卷和大小之间区别的原因是，较大的文件包含无法完全编制索引的内容的可能性较高。 
+> 大多数 Office 365 组织的内容数量少于1%，而按部分索引的大小少于12%。 卷和大小之间区别的原因是，较大的文件包含无法完全编制索引的内容的可能性较高。 
   
 若要进行法律调查，你的组织可能需要查看部分索引的项目。 您还可以指定在将搜索结果导出到本地计算机时，或者在使用 Office 365 高级电子数据展示准备分析结果时是否包含部分索引的项目。 有关详细信息，请参阅[在 Office 365 电子数据展示中调查部分索引项](investigating-partially-indexed-items-in-ediscovery.md)。
   
@@ -81,7 +83,7 @@ ms.locfileid: "37075354"
     
 - 如果要从中导出结果的搜索是对组织中的特定内容位置或所有内容位置的搜索，则仅导出内容位置中包含与搜索条件匹配的项目的未编制索引的项目。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. 这样做的原因是，从组织中的很多位置导出部分索引项目可能会增加导出错误的可能性，并增加导出和下载搜索结果所需的时间。
     
-    若要从搜索的所有内容位置导出部分索引的项目，请将搜索配置为返回所有项目（通过删除搜索查询中的任何关键字），然后在导出搜索结果时仅导出部分索引项目（通过单击 "**仅"无法识别格式的项目、已加密或未针对 "输出选项" 下的其他原因编制索引的项目**。 ****
+    若要从搜索的所有内容位置中导出部分索引的项目，请将搜索配置为返回所有项目（通过从搜索查询中删除任何关键字），然后在导出搜索结果时仅导出部分索引项目（单击 "**仅限不可识别格式的邮件"、"已加密" 或**"**输出选项**" 下的 "无法为其他原因编制索引"）。
     
 - 如果选择在搜索结果中包含所有邮箱项目，或者搜索查询未指定任何关键字或仅指定了日期范围，则部分索引的项目可能不会复制到包含部分索引项目的 PST 文件中。 这是因为所有项目（包括所有部分索引的项目）将自动包含在常规搜索结果中。
     

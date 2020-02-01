@@ -1,5 +1,7 @@
 ---
 title: 欧盟驾驶执照号码
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟驱动程序的敏感信息类型时，应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 6df025caf8d06c617e09a3b53dc6c82d69aaf5a8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c54fcefcda08d0bc2ec500d25c74bb5789e27398
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805955"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41592653"
 ---
 # <a name="eu-drivers-license-number"></a>欧盟驾驶执照号码
 

@@ -1,5 +1,7 @@
 ---
 title: 部署连接器以存档 Facebook 商业页面数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Facebook 商业页面导入和存档到 Microsoft 365。 将此数据导入 Microsoft 365 后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的 Facebook 数据的管理。
-ms.openlocfilehash: c13f055a9ca96d9b7cc1ec5791c476e6cda8e5f0
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 22810b377abf3ed30c53bab2cd27b970a5dcd62f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515733"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595297"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署连接器以存档 Facebook 商业页面数据
 

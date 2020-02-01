@@ -1,5 +1,7 @@
 ---
 title: 创建关键字词典
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 标识敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）或不当/露骨语言时。虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小受限，且必须修改 XML 才能创建或编辑它们。借助关键字词典，可以更大规模地轻松管理关键字（每个词典最多支持 100,000 个关键字）。
-ms.openlocfilehash: 73ca1e83f716af076f99b1bcb8fba4fbb6e69d9d
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 3677fc01ef226b57b7b33c630e79ea12f9fb0a5a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38685179"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595649"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字词典
 

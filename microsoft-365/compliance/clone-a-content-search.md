@@ -1,5 +1,7 @@
 ---
 title: 克隆内容搜索
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: 使用本文中的 Windows PowerShell 脚本，可以在 Office 365 或 Microsoft 365 中的合规性中心快速克隆现有的内容搜索。 在克隆搜索时，将创建一个新的搜索（具有新的名称），其中包含与原始搜索相同的属性。 然后，可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行该搜索。
-ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 59fdaab7cf12bc0f5c4b08cbac1834803e5a8d98
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633841"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595879"
 ---
 # <a name="clone-a-content-search"></a>克隆内容搜索
 

@@ -1,5 +1,7 @@
 ---
 title: 有关使用 Office 365 客户密钥执行服务加密的常见问题解答
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: 除了通过 BitLocker 和分布式密钥管理器（DKM）启用的对卷级别加密之外，Office 365 还在应用程序级别为 Office 365 中的客户内容（包括来自 Exchange 的数据）提供了额外的加密层Online、Skype for Business、SharePoint Online 和 OneDrive for Business。 这称为 "服务加密"。
-ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: a2285db4bd5ff5594c6b766dcad8909f0442d3ce
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685213"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597449"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>有关使用 Office 365 客户密钥执行服务加密的常见问题解答
 

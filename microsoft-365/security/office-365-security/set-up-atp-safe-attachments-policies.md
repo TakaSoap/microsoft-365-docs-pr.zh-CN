@@ -1,5 +1,7 @@
 ---
 title: 设置 Office 365 ATP 安全附件策略
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 定义安全附件策略以保护您的组织免受电子邮件中的恶意文件的攻击。
-ms.openlocfilehash: e38067230554b5d37f7dc4526e90ab4e63608900
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 6ec78f8734fd655d71d9ce2877baa8ebde2e50ee
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558619"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598339"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 

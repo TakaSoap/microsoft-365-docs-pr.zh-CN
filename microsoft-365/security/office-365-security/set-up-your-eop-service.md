@@ -1,5 +1,7 @@
 ---
 title: 设置 EOP 服务
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 本主题介绍了如何设置 Microsoft Exchange Online Protection (EOP)。 如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。 若要详细了解如何配置连接器，请参阅Configure mail flow using connectors in Office 365。
-ms.openlocfilehash: 4cd7d6e82c07d0b5a942427c947181b2d4e80c37
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 135f3ce2d966c2c2918199f4680678031d9dc8d4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970108"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598299"
 ---
 # <a name="set-up-your-eop-service"></a>设置 EOP 服务
 
@@ -70,7 +72,7 @@ ms.locfileid: "39970108"
 
 若要确保垃圾邮件被正确路由到每个用户的 "垃圾邮件" 文件夹，您必须执行几个配置步骤。 提供的步骤可[确保将垃圾邮件路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
-如果您不想将邮件移至每个用户的垃圾电子邮件文件夹，可以选择其他操作，方法是在 Exchange 管理中心编辑内容筛选策略。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
+如果您不想将邮件移至每个用户的垃圾电子邮件文件夹，可以选择其他操作，方法是在 Exchange 管理中心编辑内容筛选策略。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步骤6：使用 Microsoft 365 管理中心将 MX 记录指向 EOP
 

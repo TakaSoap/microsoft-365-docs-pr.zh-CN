@@ -1,5 +1,7 @@
 ---
 title: 设置 Android 或 iOS 设备的应用保护设置
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: 2eebe5b603837d7e4125ab7e88b61792ca3a1e5d
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: c0c8883fb120db90d81e57fbb80206d6ce4eccbf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38321837"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593305"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 

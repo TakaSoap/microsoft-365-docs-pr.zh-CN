@@ -1,5 +1,7 @@
 ---
 title: 创建和应用信息管理策略
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 利用信息管理策略，组织可以控制保留内容的时间，审核用户对内容的处理，并向文档添加条码或标签。 策略可帮助强制遵守法律和政府法规或内部业务流程。 作为管理员，您可以设置一个策略来控制如何跟踪文档以及保留文档的时间。
-ms.openlocfilehash: d8572f570db7b0223bc2f08cd78875224897e02c
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: b61c18390dde2e5d2da92189acced42ea5ece64c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685228"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595609"
 ---
 # <a name="create-and-apply-information-management-policies"></a>创建和应用信息管理策略
 

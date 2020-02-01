@@ -5,6 +5,8 @@ author: MicrosoftHeidi
 manager: serdars
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: heidip
 ms.date: 10/31/2019
 ms.reviewer: anmorgan
@@ -14,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 645abf48297ddcf186d8971a422588d46f7b2fef
-ms.sourcegitcommit: 7c977771fc295ca1e4e9b16a6d05faee8edeadad
+ms.openlocfilehash: 258e116e2d51a5fde9f6e9c3273824994b9dcfa6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37913115"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596659"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保护团队聊天、组和文件的策略建议
 

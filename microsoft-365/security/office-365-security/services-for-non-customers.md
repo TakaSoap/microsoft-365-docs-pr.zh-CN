@@ -1,5 +1,7 @@
 ---
 title: 非客户向 Office 365 发送邮件的服务
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
-ms.openlocfilehash: f98044b65b49bd9594708ea9e6f798156037ac34
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: f6dc3cdb4ffb20fba1dbaa8d57d5041bf1cdbeae
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871258"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598389"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>非客户向 Office 365 发送邮件的服务
 

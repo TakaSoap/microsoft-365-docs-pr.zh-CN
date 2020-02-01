@@ -1,5 +1,7 @@
 ---
 title: 在调查中搜索数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcd7f3f38f53ef22fc50823f3d2e3564af333431
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62d42c29182a81cfa133c5d8863add56aba29be3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37073999"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597549"
 ---
 # <a name="search-for-data-in-an-investigation"></a>在调查中搜索数据
 
@@ -27,7 +29,7 @@ ms.locfileid: "37073999"
 
 在运行搜索后，可以查看搜索返回的项目的统计信息，例如，项目数与搜索查询匹配的内容位置。 您还可以预览结果的子集。 在确定要进一步调查的文档集后，可以将搜索结果添加到证据集，以便进一步处理和分析。
 
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>创建搜索
 
 1. 在调查中，单击 "**搜索**" 选项卡，然后单击 "**新建搜索**"。 
 

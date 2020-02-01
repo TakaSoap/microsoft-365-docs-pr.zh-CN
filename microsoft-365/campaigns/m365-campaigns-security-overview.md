@@ -1,5 +1,7 @@
 ---
 title: 为你的市场活动增大安全保护
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,24 +23,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何通过为市场活动提高 Microsoft 365 的安全性来保护你的活动。
-ms.openlocfilehash: 74c7d5f5836fd77b591389dd467114c93b8ab14e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: f2d57fe0cbc6765b359a759c3d33c6482d86bb06
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772409"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594783"
 ---
 # <a name="bump-up-security-protection-for-your-campaign"></a>为你的市场活动增大安全保护
 
 
 ## <a name="overview"></a>概述 
-观看此视频以了解如何保护你的市场活动:
+观看此视频以了解如何保护你的市场活动：
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
 
-然后按照以下步骤操作:
+然后按照以下步骤操作：
 - [抵御恶意软件和其他威胁](m365-campaigns-increase-protection.md)
 - 通过保护你的帐户和应用[来保护对你的市场活动数据的访问](m365-campaigns-conditional-access.md)
 - [保护管理员帐户](m365-campaigns-protect-admin-accounts.md)

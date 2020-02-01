@@ -1,5 +1,7 @@
 ---
 title: 确认保留通知
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可能需要通知保管人在法律调查过程中保留以电子方式存储的信息的义务。 利用高级电子数据展示，可以轻松管理保留通知过程。
-ms.openlocfilehash: 477396e9b249de0edbbe52c5310abe21a825a3e8
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962362"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594065"
 ---
 # <a name="acknowledge-a-hold-notification"></a>确认保留通知
 

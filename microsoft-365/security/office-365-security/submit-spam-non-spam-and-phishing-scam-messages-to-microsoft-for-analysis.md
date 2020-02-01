@@ -1,5 +1,7 @@
 ---
 title: 将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 6ca4c99d5e8803fdf7f41ff00cc2a5e65ab38049
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: f253e741ad2788f4b8d9d74b24630f4896722f98
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238429"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598259"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 
@@ -117,7 +119,7 @@ ms.locfileid: "41238429"
   
 垃圾邮件评估是一个无论原始语言或字符集如何都适用的持续过程。由于垃圾邮件可能是模糊的，甚至在主题或邮件正文中缺少文本，垃圾邮件团队需要依靠其他邮件特征执行筛选。这表示垃圾邮件团队将一个给定的邮件标记为垃圾邮件并根据其规则做必要更改后，未来该邮件将被阻止，直到其特征进行了修改并足以避开筛选器。不断部署新垃圾邮件规则。关于单个提交的规则的时间段根据提交的数量和质量而有所不同。因为新垃圾邮件规则是为全球所有客户设置的，所以并非所有的单个垃圾邮件提交都将产生新的垃圾邮件规则。
    
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>更多详细信息
 <a name="sectionSection4"> </a>
 
 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)

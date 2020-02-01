@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中的电子数据展示事例中创建保留报告
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 使用本文中的脚本生成一个报告，该报告包含有关与 Office 365 或 Microsoft 365 中的符合性中心中的电子数据展示事例相关联的所有保留的信息。
-ms.openlocfilehash: e07e628b21c9e8f7485f3012a8740823fe301fc2
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 415e484938a74620f0e3578bd1e00735232164de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685247"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595639"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>在 Office 365 中的电子数据展示事例中创建保留报告
   
@@ -27,7 +29,7 @@ ms.locfileid: "38685247"
 
 有关报告中包含的信息的详细说明，请参阅[详细信息](#more-information)部分。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要生成组织中所有电子数据展示事例的报告，您必须是组织中的电子数据展示管理员。 如果您是电子数据展示管理器，则报告将仅包含有关您可以访问的事例的信息。 有关电子数据展示权限的详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     

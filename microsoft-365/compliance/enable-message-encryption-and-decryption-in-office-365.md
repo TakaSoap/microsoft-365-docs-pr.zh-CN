@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中启用邮件加密和解密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,12 +14,12 @@ ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
 description: 通过 Office 365 邮件加密，电子邮件用户可将加密邮件发送给其组织以内或以外的人。 作为管理员，您可以通过创建邮件流规则（也称为传输规则）来设置用于加密的条件的邮件流规则，从而启用 Office 365 邮件加密。
-ms.openlocfilehash: 0110bc4bbfc8eeba3cc0390c845f6accb02aed39
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38152123f0cee4263bac7d2f7666fae2fff3622e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074892"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593213"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>在 Office 365 中启用邮件加密和解密
 

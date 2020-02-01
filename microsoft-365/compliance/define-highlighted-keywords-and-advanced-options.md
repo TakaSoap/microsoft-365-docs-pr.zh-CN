@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 高级电子数据展示中定义突出显示的关键字和高级选项
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: '了解如何将用户定义的关键字添加到相关性，以帮助在 Office 365 高级电子数据展示中标记时识别相关文件，并指定成本参数。  '
-ms.openlocfilehash: 967258c152c12692cc5eb51f6553317161efa695
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4b74730498b3cb08cd646d57845446ae91daeee9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806125"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595359"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中定义突出显示的关键字和高级选项
 
@@ -68,7 +70,7 @@ ms.locfileid: "40806125"
     
     ![成本参数的相关性设置](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. 单击 **“保存”**。 将保存所选设置。
+3. 单击“**保存**”。 将保存所选设置。
     
 ## <a name="see-also"></a>另请参阅
 

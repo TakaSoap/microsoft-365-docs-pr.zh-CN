@@ -1,5 +1,7 @@
 ---
 title: '在 EOP 中运行管理员角色组报告 '
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中运行管理员角色组报告。 当管理员向管理员角色组添加成员或从中删除成员时，此报告将记录，Microsoft Exchange Online Protection （EOP）会记录每次出现的情况。
-ms.openlocfilehash: 59557f6fab2281cd36569b40afcf3e0225bd9347
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441399"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598539"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>在 EOP 中运行管理员角色组报告
 
@@ -48,7 +50,7 @@ ms.locfileid: "37441399"
 
 如果使用指定的条件找到了所有更改，则这些更改会显示在结果窗格中。单击搜索结果中的角色组可在详细信息窗格中查看更改。
 
-## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+## <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 如果您已成功运行管理员角色组报告，那么在此日期范围内更改的角色组将显示在搜索结果窗格中。如果没有显示任何结果，那么在指定日期范围内没有发生对角色组的任何更改。如果您认为应该显示结果，请更改日期范围，然后再次运行报告。
 

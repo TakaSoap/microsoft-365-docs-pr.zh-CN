@@ -1,5 +1,7 @@
 ---
 title: 出于 S/MIME 目的将用户证书同步到 Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 description: 必须先设置适当的证书，然后才能够发送受 S/MIME 保护的邮件。发件人的电子邮件程序使用收件人的公用证书对邮件进行加密，以通过 Exchange Online 发送加密邮件。此公用 X.509 证书必须向 Office 365 发布。
-ms.openlocfilehash: caf5c3694034f3415b42f3b09302b6605fbf09cb
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a62af3b176f29ec2bd8c97ae02178c87b7a63544
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970088"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598189"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>出于 S/MIME 目的将用户证书同步到 Office 365
 

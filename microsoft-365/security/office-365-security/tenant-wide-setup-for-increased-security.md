@@ -1,5 +1,7 @@
 ---
 title: 配置 Office 365 租户以提高安全性
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 引导您完成影响 Office 365 环境安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
-ms.openlocfilehash: f5df416b71cd3b4885033786d83160644b6d7b1a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 01cf10818c83171fbbf30b5ec7f08871f0b9b328
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971450"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598199"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 
@@ -126,6 +128,7 @@ SharePoint 管理中心和 OneDrive for Business 管理中心包括相同的设�
 
 这些文章和指南提供了有关保护 Office 365 环境的其他说明性信息：
 
-- [适用于政治活动、非营利组织和其他 agile 组织的 Microsoft 安全指南](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)（可在任何环境中使用这些建议，尤其是仅限云环境）
+- [适用于政治活动、非营利组织和其他 agile 组织的 Microsoft 安全指南](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)（可在任何环境中使用这些建议，尤其是仅限云环境）
+
 
 - [推荐的标识和设备安全策略和配置](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations)（这些建议包括针对 AD FS 环境的帮助）

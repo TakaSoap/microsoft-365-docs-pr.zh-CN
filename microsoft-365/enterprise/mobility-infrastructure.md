@@ -3,6 +3,8 @@ title: 第5阶段-移动设备管理
 description: Microsoft 365 企业版包括使用 Microsoft Intune 的移动设备管理。 查看要求和先决条件、使用 Azure Active Directory 资源设置 Intune、注册 iOS、macOS、Android 和 Windows 设备、部署应用、创建配置配置文件、使用合规性策略，以及为移动启用条件访问Microsoft 365 企业版的设备管理。
 keywords: Microsoft 365，Microsoft 365 企业版，Microsoft 365 文档，移动设备管理，Intune
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/03/2019
@@ -13,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: c507db0d2867b006772f5aca83d8b5342e55113d
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6ada378d63e9a04bd820808ea8a1d93cd7690ffb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627426"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596839"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>第5阶段： Microsoft 365 企业版的移动设备管理
 
@@ -82,7 +84,7 @@ Intune 使用 Azure AD 中的许多功能，包括您的域、用户和组。 �
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南： iOS 和 Android 设备注册](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南： iOS 和 Android 设备注册](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -100,7 +102,7 @@ Intune 可以管理应用程序，包括添加应用程序、将其分配给不�
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：设备合规性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：设备合规性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>步骤6：启用合规性和条件访问

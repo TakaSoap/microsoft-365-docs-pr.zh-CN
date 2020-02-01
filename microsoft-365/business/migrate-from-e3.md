@@ -1,5 +1,7 @@
 ---
 title: 从 Office 365 E3 迁移到 Microsoft 365 业务
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何通过 Office 365 E3 将企业移动到 Microsoft 365 商业版。
-ms.openlocfilehash: f624ee7ef7c00ac4d1fe413500d0cd081a156748
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 210f3ebf76da49349dfb6d61d0b8ce88d15d3734
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640573"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593701"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>从 Office 365 E3 迁移到 Microsoft 365 业务 
 

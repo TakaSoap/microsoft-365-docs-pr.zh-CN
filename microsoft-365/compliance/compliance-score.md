@@ -1,5 +1,7 @@
 ---
 title: Microsoft 合规性分数
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: 8a523878cb003e1cc676ea65d69f402ddf056e84
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: c1f912deacd9e7a9b30cbc4665a259177aeebf65
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515673"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595739"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合规性分数（预览）
 

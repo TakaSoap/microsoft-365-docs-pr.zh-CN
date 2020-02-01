@@ -1,5 +1,7 @@
 ---
 title: Office 365 高级电子数据展示中的标记和评估
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: '查看执行评估培训的步骤，包括标记文件，并查看 Office 365 高级电子数据展示中的评估结果。 '
-ms.openlocfilehash: 33a79bd6a9debb203a5685dde11b9350da6006af
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b2eecb76416728f7319396f5c97054d0219b66e1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802745"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597419"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的标记和评估
 

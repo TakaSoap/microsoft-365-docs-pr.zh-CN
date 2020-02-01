@@ -1,5 +1,7 @@
 ---
 title: Microsoft for EOP and Office 365 的建议和 Office ATP 安全设置、建议、发件人策略框架、基于域的邮件报告和符合性、域密钥识别的邮件、步骤、工作方式、安全基准和 EOP 的基准ATP 的基线，设置 ATP，设置 EOP，配置 ATP，配置 EOP，安全配置
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 12/12/2019
@@ -14,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: d353c4bee8381074b845e0774e06f411d823549f
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: fd2b1fdbb0356cfc2cea080f15bf696d8073fc10
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021828"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598639"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 

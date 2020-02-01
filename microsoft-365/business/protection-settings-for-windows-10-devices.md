@@ -1,5 +1,7 @@
 ---
 title: 设置 Windows 10 设备的应用程序保护设置
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -25,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: 了解如何在 Windows 10 设备上创建应用管理策略并保护工作文件。
-ms.openlocfilehash: ca6d789e0242975a0395e6cf5653d3f43f819801
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 703f63fc1c90966eb8412886e82670af3e9d6f62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715244"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593528"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>设置 Windows 10 设备的应用程序保护设置
 

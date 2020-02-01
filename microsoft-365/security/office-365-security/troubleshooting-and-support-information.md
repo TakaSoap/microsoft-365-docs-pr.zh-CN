@@ -1,5 +1,7 @@
 ---
 title: 疑难解答信息和支持信息
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。
-ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: efb71aab852b76b2b898419444bfea4144728514
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971620"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598169"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑难解答信息和支持信息
 
@@ -84,7 +86,7 @@ ms.locfileid: "39971620"
 
 如果你需要有关加载项的安装、配置或卸载的帮助，请使用 Microsoft 365 管理中心中的 "支持" 页面上的 "新建服务请求" 链接联系技术支持。 有关其他选项，包括通过电话提交服务请求和自助支持选项，请参阅[Help and support FOR EOP](help-and-support-for-eop.md)。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>更多详细信息
 
 [启用报告消息加载项](enable-the-report-message-add-in.md)
 

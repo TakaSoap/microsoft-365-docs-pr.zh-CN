@@ -1,5 +1,7 @@
 ---
 title: 弃用 Office 365 邮件加密查看器应用
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 ms.date: 6/29/2018
@@ -14,12 +16,12 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: 在2018年8月15日，我们将从 Android 和 Apple 商店中删除 Office 365 邮件加密（OME）查看器移动应用。 Office 365 邮件加密查看器移动应用程序需要阅读使用 Apple 和 Android 手机上的早期版本的 OME 加密的电子邮件和附件。 除了删除 OME Viewer 应用程序，我们不会对早期版本的 OME 进行任何其他更改。
-ms.openlocfilehash: 3b5c92d4fa700a1ae8d7b104e33100301cf43506
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 791a882650cfa3ffd5caaafbb835c8f272f8665e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074157"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595267"
 ---
 # <a name="deprecating-office-365-message-encryption-viewer-app"></a>弃用 Office 365 邮件加密查看器应用
 

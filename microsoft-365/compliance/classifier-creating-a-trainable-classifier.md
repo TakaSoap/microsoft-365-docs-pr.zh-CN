@@ -1,5 +1,7 @@
 ---
 title: 创建 trainable 分类器（预览）
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 当 "准备就绪" 框中的一个可供使用时，使用 trainable 分类器将无法满足您的需求。 Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本主题介绍如何创建自定义分类器。
-ms.openlocfilehash: 6343635bb8e9dac12a8dde0867b3468347c2e84a
-ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
+ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39891083"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595909"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>创建 trainable 分类器（预览）
 

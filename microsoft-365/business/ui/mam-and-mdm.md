@@ -1,5 +1,7 @@
 ---
 title: 设备和应用程序管理之间的区别
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解移动设备管理与移动应用管理（MDM 和 MAM）之间的差异。
-ms.openlocfilehash: fff9fc40f9dbead58b456fb3449133c3eb8523d4
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 569bb54c6228bd678140e692763d5d0c73f1a4bf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38319970"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595027"
 ---
 # <a name="difference-between-mdm-and-mam"></a>MDM 与 MAM 之间的区别
 

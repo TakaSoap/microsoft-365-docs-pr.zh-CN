@@ -1,5 +1,7 @@
 ---
 title: 查看高级电子数据展示中的对话
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d03df51df3c6314dcec072b5c3b8573a36c279d0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074357"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595669"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>查看高级电子数据展示中的对话 
 
@@ -155,7 +157,7 @@ c. 其他选项
 
    - 将**导出的内容替换为编辑 pdf：** 如果在审阅过程中生成编辑对话文件，则这些文件在导出过程中可用。 您可以决定是仅导出本机文件（不选择此选项），还是将本机文件替换为本机文件的编辑版本（选择此选项），这些文件将导出为 PDF 文件。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 若要了解有关如何在高级电子数据展示中查看事例数据的详细信息，请参阅以下文章：
 

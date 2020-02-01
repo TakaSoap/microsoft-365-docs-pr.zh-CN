@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的电子数据展示
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 提供了许多不同的电子数据展示工具，可用于搜索和保存在不同位置（如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Office 365 组和 Skype for business 会话）中找到的内容。
-ms.openlocfilehash: 33d3ca2e86a1ee4a2c191e72198d80c4c52c69e9
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 2386fcc2115b7acb3c869d79d04987a88f10de26
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823754"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595117"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 中的电子数据展示
 

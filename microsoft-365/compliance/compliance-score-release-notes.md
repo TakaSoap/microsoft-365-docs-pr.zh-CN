@@ -1,5 +1,7 @@
 ---
 title: Microsoft 合规性分数发行说明
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数的发行说明和已知问题（预览版）（M365 合规性中心中的一项功能，可帮助简化和自动化风险评估）。
-ms.openlocfilehash: 370c714c927d09a16272f8ab265c7b0c4e36381a
-ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
+ms.openlocfilehash: a46a495e14187ed76926438bc3e28bd70d4f025e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41261866"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595759"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft 合规性分数（预览）发行说明
 

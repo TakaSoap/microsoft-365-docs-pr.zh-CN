@@ -1,5 +1,7 @@
 ---
 title: 启用 SharePoint 和 OneDrive 中 Office 文件的灵敏度标签
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: fea28683136ae72603b3e7a6954d7d6ecf0ffbe4
-ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
+ms.openlocfilehash: a1b42525984080d56a0f95018003cd251bff0122
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41263334"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597499"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
@@ -50,7 +52,7 @@ ms.locfileid: "41263334"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 这些功能仅适用于[敏感度标签](sensitivity-labels.md)。 如果你当前有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便可以为上传的新文件启用这些功能。 有关说明，请参阅[如何将 Azure 信息保护标签迁移到统一敏感度标签](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 

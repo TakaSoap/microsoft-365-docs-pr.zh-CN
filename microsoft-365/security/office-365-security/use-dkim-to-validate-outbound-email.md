@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 的自定义域中使用 DKIM 发送电子邮件，2048 位，1024 位，步骤，工作原理，SPF，DMARC
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: a6d45dbcb5015be1b688cad562a234c555d0ef66
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 27a2ba586b3c6d28129115513a3151d1e43903c2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572688"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598099"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 

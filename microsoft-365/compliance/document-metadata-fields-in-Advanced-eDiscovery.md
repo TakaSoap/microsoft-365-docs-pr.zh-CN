@@ -1,5 +1,7 @@
 ---
 title: 高级电子数据展示中的文档元数据字段
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文在 Microsoft 365 中的高级电子数据展示案例中的审阅集中定义文档的元数据字段。
-ms.openlocfilehash: 7a5a767d22c6f3a5251a11bd201846135cfcf130
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 399e89a577db68e0c31eceef921ef2ab1172352a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840151"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595187"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 

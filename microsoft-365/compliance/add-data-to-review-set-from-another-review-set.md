@@ -1,5 +1,7 @@
 ---
 title: 将数据从一个评审集添加到另一个评审集
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 62acfd2240801e59447209c7cb1e41912d3dcf4d
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 1c0f174b29d49ec1d07c128f709ee3279c1b53ef
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256749"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594045"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>从另一个评审集向评审集添加数据
 
@@ -27,7 +29,7 @@ ms.locfileid: "39256749"
 
 请遵循本文中的工作流，将内容从一个审阅集添加到另一个评审集。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在开始之前，您需要创建新的审阅集以将数据添加到。  可以在案例的 "**审阅集**" 选项卡上添加新的审阅集。 有关详细信息，请参阅[创建审阅集](managing-review-sets.md#create-a-review-set)。
 

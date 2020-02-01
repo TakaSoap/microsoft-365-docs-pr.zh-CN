@@ -1,5 +1,7 @@
 ---
 title: 将 PST 文件导入到 Office 365 时筛选数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 导入服务中的新智能导入功能可筛选实际导入到目标邮箱的项目。 智能导入使您可以主动决定要导入的数据和留下的内容。 智能导入还提供了有关要导入到 Office 365 中的数据的见解。 '
-ms.openlocfilehash: e070c32814e8f5a34a90a12dfcd4148199731d66
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 0ac3b23443c42a53efc94faccc99991f608185b5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967345"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594563"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 时筛选数据
 
@@ -108,7 +110,7 @@ ms.locfileid: "39967345"
     
     ![数据洞察力根据您的筛选器设置进行更新](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. 单击“**下一步**”。
+    d. 单击“下一步”。****
     
     将显示 "状态" 页，其中显示了筛选器设置。 同样，您可以编辑任何筛选设置。
     

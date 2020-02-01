@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的预计和实际电子数据展示搜索结果之间的差异
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。 '
-ms.openlocfilehash: dfa6895f464e1a10f30bd642ef6b11e0869a7e5d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074139"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595247"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中的预计和实际电子数据展示搜索结果之间的差异
 
@@ -59,7 +61,7 @@ ms.locfileid: "37074139"
     
     在安全 & 合规中心中使用内容搜索工具时，您可以选择在搜索估计中包含未编制索引的项目。 搜索返回的未编制索引的项目数与其他估计的搜索结果一起列在详细信息窗格中。 任何未编制索引的项目也将包含在估计的搜索结果的总大小中。 当您导出搜索结果时，您可以选择包括或不包含未编制索引的项目。 配置这些选项的方式可能会导致所下载的预计搜索结果与实际下载结果之间存在差异。 
     
-- **导出包含所有内容位置的内容搜索结果**-如果要从中导出结果的搜索是对组织中的所有内容位置的搜索，则仅搜索包含的内容位置中的未编制索引的项目将导出与搜索条件匹配的项目。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. 但是，来自所有内容位置（甚至不包含与搜索查询匹配项的项目）的未编制索引的项目将包含在估计的搜索结果中。 
+- **导出包含所有内容位置的内容搜索结果**-如果要从中导出结果的搜索是对组织中的所有内容位置的搜索，则仅导出内容位置中包含与搜索条件匹配的项目的未编制索引的项目。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. 但是，来自所有内容位置（甚至不包含与搜索查询匹配项的项目）的未编制索引的项目将包含在估计的搜索结果中。 
     
     或者，如果要从包含的特定内容位置导出的搜索结果，则将导出在搜索中指定的所有内容位置中的未编制索引的项目（不包括在搜索条件之外）。 在这种情况下，估计的未编制索引项目数和实际导出的未索引项目数应相同。
     

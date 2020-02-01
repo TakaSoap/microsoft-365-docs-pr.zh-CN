@@ -1,5 +1,7 @@
 ---
 title: 使用客户密钥控制 Office 365 中的数据
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 了解如何为 Exchange Online、Skype for Business、SharePoint Online 和 OneDrive for business 设置适用于 Office 365 的客户密钥。 使用 "客户密钥"，可以控制组织的加密密钥，然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。
-ms.openlocfilehash: 500adf03469833784228e13e26d8272716acc56c
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 6d8673443fd08edfbe6d9f8b320429a6424d2a30
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685219"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595689"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>使用客户密钥控制 Office 365 中的数据
 

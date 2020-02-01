@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 企业版测试环境的数据分类
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南可在 Microsoft 365 企业版测试环境中的文档上创建和使用 Office 365 保留标签。
-ms.openlocfilehash: dba98ca7a38291c9ce22e9a275585975e6b840ee
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3bda79236b2c6bc1022e9c590f50bc2bdaec2aea
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802047"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597049"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的数据分类
 
@@ -25,7 +27,7 @@ ms.locfileid: "40802047"
 
 使用本文中的说明，可以在 Microsoft 365 企业版测试环境中使用 Office 365 保留标签配置数据分类。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。

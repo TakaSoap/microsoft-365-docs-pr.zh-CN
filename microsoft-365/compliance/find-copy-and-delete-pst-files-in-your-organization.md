@@ -1,5 +1,7 @@
 ---
 title: 使用 PST 集合工具在您的组织中查找、复制和删除 PST 文件
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 收集工具搜索组织的网络，以获取分散在整个组织中的 PST 文件的清单。 查找 PST 文件后，可以使用 PST 集合工具将其复制到一个中心位置，以便可以将其导入 Office 365。
-ms.openlocfilehash: 703208b574a723eb4f91aad0a892d6ea4abf427b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685278"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594553"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具在您的组织中查找、复制和删除 PST 文件
 
@@ -43,7 +45,7 @@ ms.locfileid: "38685278"
     
 5. **[步骤5：删除在网络中找到的 pst 文件](#step-5-delete-the-pst-files-found-on-your-network)**-在 Office 365 中已将您找到和收集的 pst 文件导入到 Exchange Online 邮箱后，您可以使用 "pst 集合" 工具从第1步中找到的原始位置删除 pst 文件。 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 按照以下步骤将 PST 集合工具下载到本地计算机。 
     
@@ -217,7 +219,7 @@ ms.locfileid: "38685278"
   
 - [使用网络上载将 PST 文件导入到 Office 365](use-network-upload-to-import-pst-files.md)
     
-- [使用驱动器寄送，将 PST 文件导入到 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
+- [使用驱动器传送将 PST 文件导入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
 
 ## <a name="step-5-delete-the-pst-files-found-on-your-network"></a>步骤5：删除在网络中找到的 PST 文件

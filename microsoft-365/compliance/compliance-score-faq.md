@@ -1,5 +1,7 @@
 ---
 title: Microsoft 合规性分数常见问题解答
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 查找有关 Microsoft 合规性分数的常见问题的解答，这有助于组织简化和自动化风险评估。
-ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 81541c66f1bc1ec179faa0180b3135f9b623d319
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021978"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595769"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft 合规性分数（预览）常见问题解答
 
@@ -45,7 +47,7 @@ Microsoft 合规性分数是[microsoft 365 合规性中心](microsoft-365-compli
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果得分较高，这是否意味着我完全合规？
 
-否。 您的合规性分数可衡量您在完成建议的操作以帮助降低数据保护和法规标准方面的风险的过程。 它并不表示对任何特定的标准或法规的组织合规性的绝对度量。 不应以任何方式将合规性分数解释为保证。
+不是。 您的合规性分数可衡量您在完成建议的操作以帮助降低数据保护和法规标准方面的风险的过程。 它并不表示对任何特定的标准或法规的组织合规性的绝对度量。 不应以任何方式将合规性分数解释为保证。
 
 ## <a name="what-regulations-and-standards-does-compliance-score-monitor"></a>合规性分数监视的法规和标准是什么？
 

@@ -1,5 +1,7 @@
 ---
 title: 创建、报告和删除多个内容搜索
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,18 +17,18 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何在 Office 365 的安全 & 合规中心中通过 PowerShell 脚本自动执行内容搜索任务，如创建搜索和运行报告。
-ms.openlocfilehash: 43f6046521ef121f52b2a5abe26d2cd6a322d22c
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685304"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595569"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
  当你尝试了解基础数据以及搜索的丰富程度和质量时，快速创建和报告发现搜索通常是电子数据展示和调查中的重要步骤。 为帮助你执行此操作，安全 & 合规性中心 PowerShell 提供了一组用于自动执行耗时的内容搜索任务的 cmdlet。 这些脚本提供了创建大量搜索的快速、简便的方法，然后运行估计的搜索结果报告，这些报告可帮助您确定所讨论的数据量。 您还可以使用脚本来创建不同版本的搜索，以比较每个搜索结果所产生的结果。 这些脚本可帮助您快速高效地识别和挑选数据。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本主题中所述的脚本。 
     
@@ -68,7 +70,7 @@ ms.locfileid: "38685304"
    
 3. 将 Excel 文件作为 CSV 文件保存到本地计算机上的文件夹中。 您在步骤3中创建的脚本将使用此 CSV 文件中的信息来创建搜索。 
   
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤2：连接到安全 & 合规性中心 PowerShell
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤 2：连接到安全与合规中心 PowerShell
 
 下一步是连接到组织的安全 & 合规性中心 PowerShell。
   

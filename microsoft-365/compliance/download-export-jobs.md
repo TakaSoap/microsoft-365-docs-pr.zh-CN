@@ -1,5 +1,7 @@
 ---
 title: 下载导出作业
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 安装和使用 Azure 存储资源管理器下载从高级电子数据展示中的审阅集导出的文档。
-ms.openlocfilehash: 412ec48865c6cb7e511e3f6068fe02d87a99f831
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c92b92a91755ef641d7fd5f4ef0533065e1f8349
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685289"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595147"
 ---
 # <a name="download-export-jobs"></a>下载导出作业
 
@@ -63,7 +65,7 @@ ms.locfileid: "38685289"
 
     请注意，SAS URL 的一部分显示在 "**显示名称**" 框中。 这将在连接到存储位置后用作**存储帐户**下创建的容器的显示名称。 此名称由高级电子数据展示事例的 ID 和唯一标识符组成。 您可以保留默认的显示名称，也可以对其进行更改。 如果您更改它，则显示名称必须是唯一的。
 
-5.  单击“**下一步**”。
+5.  单击“下一步”。****
 
     将显示 "**连接摘要**" 页。
    

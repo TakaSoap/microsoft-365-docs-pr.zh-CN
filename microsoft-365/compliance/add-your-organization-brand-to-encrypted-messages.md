@@ -1,5 +1,7 @@
 ---
 title: 将组织品牌添加到加密邮件
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 作为 Office 365 全局管理员，你可以将组织的品牌化应用于组织的加密电子邮件和加密门户的内容。
-ms.openlocfilehash: 118bf93f7bdcb7dc522f95978eb5bb4456e90d5b
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: b4712edd86099b1c382ef02ca54520b68a54614e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256739"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594023"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>在加密的邮件中添加组织的品牌
 

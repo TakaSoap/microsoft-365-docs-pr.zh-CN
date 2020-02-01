@@ -1,5 +1,7 @@
 ---
 title: 威胁跟踪器 - 新增的和值得注意的威胁
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解有关威胁跟踪程序的信息，包括新的重要跟踪程序，以帮助您的组织保持安全方面的顾虑。
-ms.openlocfilehash: 084d3c6de104c675a2af47984a2fcbffcf89447e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076002"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598179"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
@@ -34,7 +36,7 @@ ms.locfileid: "37076002"
   
 ![显示恶意软件市场的威胁跟踪程序示例](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
-大多数跟踪器页面包括定期更新的趋势编号、小部件以帮助您了解哪些问题最大或增长最多，以及将您带到资源管理器的 "**操作**" 列中的快速链接，您可以在其中查看更详细的信息. 
+大多数跟踪器页面包括定期更新的趋势编号、小部件，可帮助您了解哪些问题最大或增长最多，以及将您带到资源管理器的 "**操作**" 列中的快速链接，您可以在其中查看更详细的信息。 
   
 ![资源管理器中的市场活动信息示例](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   

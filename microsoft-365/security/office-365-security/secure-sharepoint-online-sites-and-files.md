@@ -1,5 +1,7 @@
 ---
 title: 保护 SharePoint Online 网站和文件
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -19,12 +21,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 SharePoint Online 和 Office 365 中文件的配置建议。
-ms.openlocfilehash: c175e0e480670f9e5ce00a701704cedf1abeff26
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: de0091c4a3bc0d1b531689c9b1410f4801179a31
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572348"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598479"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 

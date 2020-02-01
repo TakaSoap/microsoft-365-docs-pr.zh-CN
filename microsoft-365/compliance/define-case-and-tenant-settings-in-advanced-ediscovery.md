@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 高级电子数据展示中定义大小写和租户设置
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: '了解您可以在 Office 365 高级电子数据展示中的事例级别定义的标签、跨模块和租户设置。  '
-ms.openlocfilehash: 19c653544173afe31b299b9ab5d2b4fc37415630
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2d482c7409c546042488ba4f0c7cc74571152e86
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806115"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595369"
 ---
 # <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中定义大小写和租户设置
 
@@ -50,7 +52,7 @@ ms.locfileid: "40806115"
     
   - **事例页**
     
-3. 单击 **“保存”**。
+3. 单击“**保存**”。
     
 ## <a name="tenant-settings"></a>租户设置
 

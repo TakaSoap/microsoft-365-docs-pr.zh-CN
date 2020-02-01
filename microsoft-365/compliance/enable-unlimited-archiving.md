@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中启用无限制存档—管理帮助
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 对于管理员：了解如何在 Office 365 中启用自动扩展存档，从而为用户提供对其 Exchange Online 邮箱的无限制存储。 您可以为整个组织或仅为特定用户启用自动扩展存档。
-ms.openlocfilehash: 4059e007039a62e415fd0b5847d1d8fa120a1570
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: d37243c65770ff7bbcce4cbe4cfd593b68b7a869
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850886"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593203"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>在 Office 365 中启用无限制存档—管理帮助
 
 您可以使用 Office 365 中的 Exchange Online 自动扩展存档功能为存档邮箱启用无限存储空间。 启用自动扩展存档后，会在用户的存档邮箱接近存储限制时自动向其添加额外的存储空间。 结果是邮箱存储容量无限制。 您可以为组织中的所有人或仅为特定用户启用自动扩展存档。 有关自动扩展存档的详细信息，请参阅[Office 365 中的无限制存档概述](unlimited-archiving.md)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Office 365 组织中的全局管理员或 Exchange Online 组织中 "组织管理" 角色组的成员，才能为您的整个组织或特定用户启用自动扩展存档。 或者，您必须是分配有 "邮件收件人" 角色的角色组的成员，才能为特定用户启用自动扩展存档。
     

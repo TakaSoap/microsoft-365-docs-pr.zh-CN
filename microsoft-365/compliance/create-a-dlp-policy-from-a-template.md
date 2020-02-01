@@ -1,5 +1,7 @@
 ---
 title: 从模板创建 DLP 策略
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+ms.openlocfilehash: b101714190879e4bdd1090b05f94f1f36e5d8729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38685058"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595659"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
@@ -140,13 +142,13 @@ OneDrive for Business 帐户使组织内的人员可以轻松协作和共享文�
     
      在创建 DLP 策略之前，您应考虑逐步部署策略，在完全强制执行策略之前评估其影响，并测试其有效性。 例如，您不希望新的 DLP 策略在无意中阻止对用户完成其工作所需的数千个文档的访问。 
     
-    如果您创建的 DLP 策略具有很大的潜在影响，我们建议按照以下顺序进行操作：
+    如果你创建的 DLP 策略具有较大的潜在影响，建议你按以下顺序执行操作：
     
 17. 在不使用策略提示的情况下启动测试模式，然后使用 DLP 报告评估影响。您可以使用 DLP 报告查看匹配策略的次数、位置、类型和严重性。根据结果，您可以在需要时微调规则。在测试模式下，DLP 策略不会影响您组织内的工作人员的工作效率。 
     
 18. 移动到使用通知和策略提示的测试模式，以便您可以开始向用户介绍合规性策略，让用户对将要应用的规则做好准备。在这一阶段，您还可以要求用户报告误报，便于您进一步优化规则。
     
-19. 启用这些策略，以便强制实施规则和保护内容。 继续监视 DLP 报告及任何事件报告或通知，确保结果是您所期望的。 
+19. 启用这些策略，以便强制实施规则和保护内容。 继续监视 DLP 报告及任何事件报告或通知，确保结果是你所期望的。 
     
     ![使用测试模式和启用策略的选项](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
@@ -184,7 +186,7 @@ OneDrive for Business 帐户使组织内的人员可以轻松协作和共享文�
 
 - [数据丢失防护策略概述](data-loss-prevention-policies.md)
     
-- [发送通知并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
+- [发送通知，并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
     
 - [创建 DLP 策略来保护具有 FCI 或其他属性的文档](protect-documents-that-have-fci-or-other-properties.md)
     

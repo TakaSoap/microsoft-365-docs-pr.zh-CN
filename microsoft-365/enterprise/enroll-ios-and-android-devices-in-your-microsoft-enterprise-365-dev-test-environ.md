@@ -1,5 +1,7 @@
 ---
 title: 在 Microsoft 365 企业版测试环境中注册 iOS 和 Android 设备
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在 Microsoft 365 测试环境中注册设备，并远程管理这些设备。
-ms.openlocfilehash: 98670e64045b36dcdafb46c6ff798b8be7fd6dc1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e2508e94cadb7f16f88991545756662292849158
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801867"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596989"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>在 Microsoft 365 企业版测试环境中注册 iOS 和 Android 设备
 
@@ -25,7 +27,7 @@ ms.locfileid: "40801867"
 
 按照本文中提供的说明操作，您将能够在 Microsoft 365 企业版测试环境中注册和测试适用于 iOS 和 Android 设备的基本移动设备管理功能。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。

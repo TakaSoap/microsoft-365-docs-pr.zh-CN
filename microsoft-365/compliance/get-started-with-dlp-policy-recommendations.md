@@ -1,5 +1,7 @@
 ---
 title: 开始使用 DLP 策略建议
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 此深入了解驱动的建议可帮助你的组织在 Office 365 中存储和共享敏感内容时保持安全，方法是在 DLP 策略覆盖范围中存在可能的差距时通知你。 如果您的文档包含任何最常用的五种类型&amp;的敏感信息，但不受 DLP 策略保护，您将在安全合规中心的主页上看到此建议。
-ms.openlocfilehash: 37292d1496fb9217b2c3d77fadff18ae002e14d7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3bbdbd230e9ae28136bcd89df46f0e9c10cb80fb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074789"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596349"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>开始使用 DLP 策略建议
 

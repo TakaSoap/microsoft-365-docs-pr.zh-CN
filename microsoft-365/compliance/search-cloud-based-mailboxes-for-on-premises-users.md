@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中搜索本地用户的基于云的邮箱
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据（称为1xN 聊天）。
-ms.openlocfilehash: 5c757ee16232cb0e70b8adf57ab6888fb972368e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: d59af2e39d91bf107567016428102a5aba9cb724
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676819"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597569"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
@@ -139,7 +141,7 @@ ms.locfileid: "39676819"
 
 - 电子数据展示保留的内容位置选取器显示本地用户，并允许您选择它们。 但是，如前面所述，保留将不会应用于内部部署用户。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
  **本地用户的基于云的邮箱位于何处？**
   
@@ -151,11 +153,11 @@ ms.locfileid: "39676819"
   
  **如果将用户的内部部署邮箱迁移到云，是否有丢失团队聊天数据的风险？**
   
-否。 当您将本地用户的主邮箱迁移到云时，该用户的团队聊天数据将迁移到其新的基于云的主邮箱。
+不是。 当您将本地用户的主邮箱迁移到云时，该用户的团队聊天数据将迁移到其新的基于云的主邮箱。
   
  **我可以将电子数据展示保留或 Office 365 保留策略应用于本地用户吗？**
   
-否。
+不是。
   
  **在我的组织提交请求以启用此功能之前，内容搜索是否可以查找本地用户的较早的团队聊天？**
   
@@ -163,4 +165,4 @@ Microsoft 开始在2018年1月31日存储本地用户的团队聊天数据。 �
 
  **本地用户是否需要许可证才能在基于云的邮箱中存储团队聊天数据？**
   
-是。 若要将本地用户的团队对话数据存储在基于云的邮箱中，必须在 Office 365 （或 Microsoft 365）中为该用户分配 Microsoft 团队许可证和 Exchange Online 计划许可证。
+可以。 若要将本地用户的团队对话数据存储在基于云的邮箱中，必须在 Office 365 （或 Microsoft 365）中为该用户分配 Microsoft 团队许可证和 Exchange Online 计划许可证。

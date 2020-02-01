@@ -1,5 +1,7 @@
 ---
 title: 帮助你的用户在 Windows 10 设备上安装 Office
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 帮助你的用户安装 Office 应用。
-ms.openlocfilehash: 73eb3ed9bb88dca4232865b2ecd9015441875c07
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831205"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593913"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>帮助你的用户在 Windows 10 设备上安装 Office
 
@@ -42,7 +44,7 @@ ms.locfileid: "39831205"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="manage-office-deployments"></a>管理 Office 部署
 
@@ -61,4 +63,4 @@ ms.locfileid: "39831205"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

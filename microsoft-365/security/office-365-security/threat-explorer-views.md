@@ -1,5 +1,7 @@
 ---
 title: 威胁资源管理器中的视图和实时检测
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,18 +14,18 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解在威胁资源管理器和实时检测中可用的各种视图类型。
-ms.openlocfilehash: 7c3d78c5b5d4b1708fc57adba6951b4e352f0eaa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7f506b77673e416aaecdc707e0659006e6089142
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076006"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598249"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
 ![威胁资源管理器](../media/ThreatExplorerFirstOpened.png)
 
-[威胁资源管理器](threat-explorer.md)（和实时检测报告）是一种强大的近实时工具，可帮助安全操作团队调查和响应安全&amp;合规性中心中的威胁。 资源管理器（和实时检测报告）显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息，以及组织中的其他安全威胁和风险。 
+[威胁浏览器](threat-explorer.md)（和实时检测报告）是一种强大的近实时工具，可帮助安全操作团队在安全&amp;合规中心中调查和响应威胁。 资源管理器（和实时检测报告）显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息，以及组织中的其他安全威胁和风险。 
 
 - 如果您有[Office 365 高级威胁防护](office-365-atp.md)（ATP）计划2，则您将拥有资源管理器。
 - 如果你有 Office 365 ATP 计划1，则会进行实时检测。

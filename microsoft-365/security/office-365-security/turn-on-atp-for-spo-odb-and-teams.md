@@ -1,5 +1,7 @@
 ---
 title: 打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP，包括如何为检测到的文件设置通知。
-ms.openlocfilehash: 49e29f838fa8fbcd4b0b6eea36e9bbe2d5547a7f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 601549db67d34460f4505941d4f2847a2c8f370b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806735"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598149"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
@@ -52,7 +54,7 @@ ms.locfileid: "40806735"
 
    ![为 SharePoint Online、OneDrive for Business 和 Microsoft 团队启用高级威胁防护](../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
 
-4. 单击 **“保存”**。
+4. 单击“**保存**”。
 
 5. 查看（并根据需要编辑）您组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
 
@@ -90,7 +92,7 @@ ms.locfileid: "40806735"
 
 6. 在 "**将此通知发送给 ...** " 部分，选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。
 
-7. 单击 **“保存”**。
+7. 单击“**保存**”。
 
 若要了解有关通知的详细信息，请参阅[在 Office 365 安全 & 合规中心中创建活动通知](../../compliance/create-activity-alerts.md)。
 

@@ -1,5 +1,7 @@
 ---
 title: 开始使用默认 DLP 策略
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: 在创建首个数据丢失防护（DLP）策略之前，DLP 将帮助使用默认策略保护您的敏感信息。 此默认策略及其建议（如下所示）有助于在组织外部的人员共享包含信用卡号的电子邮件或文档时通知你，以确保敏感内容的安全。
-ms.openlocfilehash: 32e5fef1cbfb8fe13928100dbfdae0d620e79762
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3ac2fef32c7ba20d906ec96e2510971c94ef2652
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074786"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596539"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>开始使用默认 DLP 策略
 

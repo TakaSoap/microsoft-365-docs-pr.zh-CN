@@ -1,5 +1,7 @@
 ---
 title: 使用驱动器发货以导入组织的 PST 文件
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '对于管理员：了解如何通过将 PST 文件复制到硬盘并将其发送到 Microsoft，来批量将组织的 PST 文件导入到 Office 365 邮箱。 '
-ms.openlocfilehash: 79fc1b6cf9ad90a4a059ef7c9e4a747c1beb54c5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5de4143f84a4c5beed0e408c302ce2ca1e39e17a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802337"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597359"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files-to-office-365"></a>使用驱动器传送将组织的 PST 文件导入到 Office 365
 
@@ -61,7 +63,7 @@ ms.locfileid: "40802337"
   - 必须是你的 Office365 组织中的全局管理员。
     
     > [!TIP]
-    > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
+    > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮箱导入导出”和“邮件收件人”角色分配给新角色组，然后添加成员。 
   
 - 您需要将要复制到硬盘中的 PST 文件存储在组织中的文件服务器或共享文件夹中。 在步骤2中，运行 Azure 导入导出工具（Waimportexport.exe），该工具将存储在此文件服务器或共享文件夹上的 PST 文件复制到硬盘上。
 
@@ -116,12 +118,12 @@ ms.locfileid: "40802337"
   
 1. 转到 [https://protection.office.com/](https://protection.office.com/)，然后使用你 Office365 组织中的管理员帐户的凭据进行登录。 
     
-2. 在安全性 & 合规性中心的左侧窗格中，单击 "**信息调控** \> **导** \>入**PST 文件**"。
+2. 在安全与合规中心的左窗格中，单击“**信息管理**”\>“**导入**”\>“**导入 PST 文件**”。
     
     > [!NOTE]
     > 如前所述，必须为您分配适当的权限，才能访问安全 & 合规性中心中的**导入**页面。 
   
-3. 在 "**导入 PST 文件**" 页![上，](media/ITPro-EAC-AddIcon.gif)单击 "添加图标" "**新建导入作业**"。
+3. 在“**导入 PST 文件**”页面上，单击 ![添加图标](media/ITPro-EAC-AddIcon.gif)“**新建导入作业**”。
     
 4. 在 "导入作业向导" 中，键入 PST 导入作业的名称，然后单击 "**下一步**"。 请使用小写字母、数字、连字符和下划线。 无法在名称中使用大写字母或包含空格。
     
@@ -149,7 +151,7 @@ ms.locfileid: "40802337"
 
 下一步是使用 WAImportExport.exe 工具将 PST 文件复制到硬盘驱动器。 此工具使用 BitLocker 加密硬盘驱动器，将 PST 复制到硬盘驱动器，并创建存储有关复制过程的信息的日志文件。 若要完成此步骤，PST 文件必须位于您的组织中的文件共享或文件服务器中。 这在下面的过程中称为“源目录”。 
 
- 如前所述，您复制到硬盘驱动器的每个 PST 文件不应大于 20 GB。 大于 20 GB 的 PST 文件可能会影响您在步骤6中启动的 PST 导入过程的性能。
+ 如前所述，您复制到硬盘驱动器的每个 PST 文件不应大于 20 GB。 大于 20 GB 的 PST 文件可能会影响在步骤 6 中启动的 PST 导入过程的性能。
   
 > [!IMPORTANT]
 > 对硬盘驱动器首次运行 WAImportExport.exe 工具后，之后您每次必须使用不同的语法。 此语法在此过程的步骤4中对将 PST 文件复制到硬盘驱动器的步骤4进行了说明。 
@@ -249,9 +251,9 @@ ms.locfileid: "40802337"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)，然后使用你 Office365 组织中的管理员帐户的凭据进行登录。 
     
-2. 在安全性 & 合规性中心的左侧窗格中，单击 "**信息调控** \> **导** \>入**PST 文件**"。
+2. 在安全与合规中心的左窗格中，单击“**信息管理**”\>“**导入**”\>“**导入 PST 文件**”。
     
-3. 在 "**导入 PST 文件**" 页![上，](media/ITPro-EAC-AddIcon.gif)单击 "添加图标" "**新建导入作业**"。
+3. 在“**导入 PST 文件**”页面上，单击 ![添加图标](media/ITPro-EAC-AddIcon.gif)“**新建导入作业**”。
     
     > [!NOTE]
     > 如前所述，必须为您分配适当的权限，才能访问安全 & 合规性中心中的**导入**页面。 
@@ -403,9 +405,9 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
 1. 转到 [https://protection.office.com/](https://protection.office.com/)，然后使用你 Office365 组织中的管理员帐户的凭据进行登录。 
     
-2. 在安全性 & 合规性中心的左侧窗格中，单击 "**信息管理" > 导入 "> 导入 PST 文件**"。
+2. 在安全性与合规中心的左窗格中，单击 **“信息管理”>“导入”>“导入 PST 文件”**。
     
-3. 在 "**导入 PST 文件**" 页![上，](media/ITPro-EAC-AddIcon.gif)单击 "添加图标" "**新建导入作业**"。
+3. 在“**导入 PST 文件**”页面上，单击 ![添加图标](media/ITPro-EAC-AddIcon.gif)“**新建导入作业**”。
     
 4. 在 "导入作业向导" 中，键入 PST 导入作业的名称，然后单击 "**下一步**"。 请使用小写字母、数字、连字符和下划线。 无法在名称中使用大写字母或包含空格。
     
@@ -498,13 +500,13 @@ Microsoft Azure 存储资源管理器处于预览阶段。
   WAImportExport.exe PrepImport /j:PSTHDD1.jrn /id:driveship2 /srcdir:"\\FILESERVER1\PSTs\SecondBatch" /dstdir:"ingestiondata/" /blobtype:BlockBlob
     ```
 
-- 如前所述，Office 365 导入服务在将 PST 文件导入邮箱后，将启用保留挂起设置（无限期）。 这意味着*RentionHoldEnabled*属性设置为`True` ，因此不会处理分配给邮箱的保留策略。 这样，邮箱所有者可以通过阻止删除或存档策略来删除或存档较旧的邮件，从而管理新导入的邮件的时间。 若要管理此保留挂起，可以执行以下步骤： 
+- 如前所述，在 PST 文件导入到邮箱之后，Office 365 导入服务将启用保留挂起设置（对于无限期）。 这意味着*RentionHoldEnabled*属性设置为`True` ，因此不会处理分配给邮箱的保留策略。 这样可以防止某条删除或存档策略将旧邮件删除或存档，让邮箱所有者有时间管理新导入的邮件。 可采用以下步骤来管理此保留挂起： 
     
-  - 在特定时间段后，可以通过运行`Set-Mailbox -RetentionHoldEnabled $false`命令关闭保留挂起。 有关说明，请参阅[将邮箱放在保留挂起](https://go.microsoft.com/fwlink/p/?LinkId=544749)中。
+  - 在特定时间段后，可以通过运行`Set-Mailbox -RetentionHoldEnabled $false`命令关闭保留挂起。 有关说明，请参阅[将邮箱置于保留挂起](https://go.microsoft.com/fwlink/p/?LinkId=544749)。
     
-  - 您可以配置保留挂起，使其在将来某个日期处于关闭状态。 可以通过运行`Set-Mailbox -EndDateForRetentionHold <date>`命令来执行此操作。 例如，假定今天的日期为2016年6月1日，并且您希望在30天内关闭保留挂起功能，请运行以下命令： `Set-Mailbox -EndDateForRetentionHold 7/1/2016`。 在这种情况下，您可以将*RentionHoldEnabled*属性设置为*True*。 有关详细信息，请参阅[设置邮箱](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
+  - 可配置保留挂起，使其在将来某一天关闭。 可以通过运行`Set-Mailbox -EndDateForRetentionHold <date>`命令来执行此操作。 例如，假定今天的日期为2016年6月1日，并且您希望在30天内关闭保留挂起功能，请运行以下命令： `Set-Mailbox -EndDateForRetentionHold 7/1/2016`。 在这种情况下，您可以将*RentionHoldEnabled*属性设置为*True*。 有关详细信息，请参阅 [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
     
-  - 您可以更改已分配给邮箱的保留策略的设置，以便不会立即删除导入的旧项目，也不会将其移动到用户的存档邮箱。 例如，您可以延长分配给邮箱的删除或存档策略的保留期限。 在这种情况下，您可以在更改保留策略的设置后关闭邮箱的保留挂起。 有关详细信息，请参阅为[Office 365 组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
+  - 可更改分配给邮箱的保留策略的设置，使导入的旧项目不会立即被删除或移到用户的存档邮箱。 例如，可以延长分配给邮箱的删除或存档策略的保留期。 在这种情况下，需要在更改保留策略的设置后关闭邮箱的保留挂起。 有关详细信息，请参阅[为 Office 365 组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
     
 
   

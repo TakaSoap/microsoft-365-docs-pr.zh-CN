@@ -1,5 +1,7 @@
 ---
 title: 使用脚本将用户添加到安全 & 合规性中心的电子数据展示事例中的保留项
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 运行脚本以将邮箱和 OneDrive for business 网站快速添加到与安全 & 合规中心中的电子数据展示事例关联的新保留中。
-ms.openlocfilehash: 7a7ea582391e2fbfcef8b63d331d64f52db4460c
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: f61c56beb17e31cf839d102a681b685a1e7fb046
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685315"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597289"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>使用脚本将用户添加到安全 & 合规性中心的电子数据展示事例中的保留项
 
@@ -37,7 +39,7 @@ Security & 合规性中心提供了大量 Windows PowerShell cmdlet，可让您�
   
 [步骤3：运行脚本以创建保留项并添加用户](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Security & 合规中心中的电子数据展示管理器角色组的成员，SharePoint Online 全局管理员才能在步骤3中运行该脚本。 有关详细信息，请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
     

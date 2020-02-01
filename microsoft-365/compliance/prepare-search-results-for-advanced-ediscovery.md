@@ -1,5 +1,7 @@
 ---
 title: 为 Office 365 高级电子数据展示准备搜索结果
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,18 +17,21 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何在 Office 365 的 Security & 合规性中心中准备内容搜索结果，以使用高级电子数据展示工具进行进一步分析。
-ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 115657a1ea8a603676ff168cce7653e56f5664ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075634"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597739"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>为 Office 365 高级电子数据展示准备搜索结果
 
-成功运行与安全 & 合规中心中的电子数据展示事例关联的搜索后，您可以使用 Office 365 高级电子数据展示为进一步分析准备搜索结果，以便分析大型的非结构化数据集和减少与法律案件相关的数据量。 高级电子数据展示功能包括：
+> [!IMPORTANT]
+> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布弃用 Office 365 高级电子数据展示（也称为*高级电子数据展示 v1.0 1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快转换为[高级电子数据展示2.0 版](overview-ediscovery-20.md)（也称为*Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示2.0 包含高级电子数据展示 v1.0 中的类似功能，但也提供了许多新功能，如保管人管理、通信管理和审查集。 若要详细了解高级电子数据展示1.0 版，请参阅[旧电子数据展示工具的退休](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
+
+成功运行与安全 & 合规中心中的电子数据展示事例关联的搜索后，您可以使用 Office 365 高级电子数据展示为进一步分析准备搜索结果，这样您可以分析大型的非结构化数据集，并减少与合法事例相关的数据量。 高级电子数据展示功能包括：
   
-- **光学字符识别**-为高级电子数据展示准备搜索结果时，光学字符识别（OCR）功能会自动从图像中提取文本，并将其包含在加载到中的搜索结果中。高级电子数据展示以进行分析。 稀疏文件、电子邮件附件和嵌入图像支持 OCR。 这使您可以将高级电子数据展示的文本分析功能（临近重复项、电子邮件线程、主题和预测编码）应用于图像文件中的文本内容。 高级电子数据展示 OCR 支持图像文件的以下格式：
+- **光学字符识别**-当您为高级电子数据展示准备搜索结果时，光学字符识别（OCR）功能会自动从图像中提取文本，并将其包含在加载到高级电子数据展示的搜索结果中进行分析。 稀疏文件、电子邮件附件和嵌入图像支持 OCR。 这使您可以将高级电子数据展示的文本分析功能（临近重复项、电子邮件线程、主题和预测编码）应用于图像文件中的文本内容。 高级电子数据展示 OCR 支持图像文件的以下格式：
 
     - GIF
     - JPEG
@@ -107,7 +112,7 @@ ms.locfileid: "37075634"
 
 将电子数据展示搜索的结果添加到事例之后，下一步是使用高级电子数据展示工具来分析数据，并确定对特定法律案例做出响应的内容。 有关使用高级电子数据展示的信息，请参阅[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 在准备高级电子数据展示中的分析时，搜索结果中包含的任何 RMS 加密的电子邮件都将被解密。 默认情况下，将为电子数据展示管理器角色组的成员启用此解密功能。 这是因为将 RMS 解密管理角色分配给此角色组。 请记住以下有关解密电子邮件的事项：
   

@@ -1,5 +1,7 @@
 ---
 title: 审核共享以查找与外部用户共享的资源
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核，以确定与组织外部的用户共享的资源。 '
-ms.openlocfilehash: 8d473a3e3fb1c8e5e8753265c3982b27271ed39c
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685227"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597279"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>审核共享以查找与外部用户共享的资源
 
@@ -99,7 +101,7 @@ ms.locfileid: "38685227"
     
 3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索**  > **审核日志搜索**"。
     
-    将显示 "**审核日志搜索**" 页。 
+    此时将显示“**审核日志搜索**”页面。 
     
 4. 在 "**活动**" 下，单击 "**共享和访问请求活动**" 以搜索与共享相关的事件。 
     

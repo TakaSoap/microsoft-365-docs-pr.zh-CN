@@ -1,5 +1,7 @@
 ---
 title: 发送电子邮件通知并显示 DLP 策略的策略提示
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项，以便它们不会被阻止，如果他们具有有效的业务需求，或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685225"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597349"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -285,4 +287,4 @@ Office 桌面程序将自动从 Office 365 中直接同步 DLP 策略，然后�
     
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
     
-- [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)
+- [使用敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)

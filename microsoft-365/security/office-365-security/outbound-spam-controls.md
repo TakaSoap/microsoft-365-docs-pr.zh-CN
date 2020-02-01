@@ -1,5 +1,7 @@
 ---
 title: 控制 Office 365 中的出站垃圾邮件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 如果您的组织发送大量垃圾邮件，并将其标记为垃圾邮件，则可能会阻止您使用 Office 365 发送电子邮件。 阅读本文，了解有关此操作的原因以及您可以执行的操作的详细信息。
-ms.openlocfilehash: 28677e2bbfad7f44595de1300e42b9c58ab99c2b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1b1e0f56398db774a9aabc56cdcde52ad17791a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031847"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598729"
 ---
 # <a name="control-outbound-spam-in-office-365"></a>控制 Office 365 中的出站垃圾邮件
 
@@ -62,7 +64,7 @@ ms.locfileid: "38031847"
 
 消息传递、移动、恶意软件反滥用工作组（MAAWG）将[在此处](https://www.maawg.org/about/roster)发布其成员名单。 列表中有多个批量电子邮件提供商，并且已知它们负责 Internet 公民。
 
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [发件人被阻止发送出站垃圾邮件时的示例通知](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 

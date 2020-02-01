@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 如果管理员为用户启用通知，则会收到一条通知消息，其中列出了发送到邮箱的邮件，并被标识为垃圾邮件、批量邮件或网络钓鱼邮件。 您可以在收到通知后释放或报告邮件。
-ms.openlocfilehash: fbe8a09f7da5df2df4b3b68bd524fa3ef2ed18b8
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: c9cd0849f826e66411695a3758f271ec70d24c9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572658"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598019"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
 

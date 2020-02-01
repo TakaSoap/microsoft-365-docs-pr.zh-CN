@@ -1,5 +1,7 @@
 ---
-title: Create a search
+title: 创建搜索
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1aa4ce6e406e4b3a3b72b9d93f651416b1fc65f9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ab57bcd3cd21d691e8c2dc669a55588dbcaa886b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074259"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595549"
 ---
-# <a name="create-a-search"></a>Create a search
+# <a name="create-a-search"></a>创建搜索
 
 在您的案例的 "**搜索**" 选项卡上，您可以通过单击 "**新建搜索**" 并按照向导创建新的搜索。
 

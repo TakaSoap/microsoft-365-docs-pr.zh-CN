@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 企业版底层基础结构部署策略
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/24/2019
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解部署 Microsoft 365 企业版底层基础结构阶段的一些方法。
-ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: ee244d2539c7406799cb030a407d3503f6ba278d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369433"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597039"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企业版底层基础结构部署策略
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企业版底层基础结构部署策略
 
-你可以通过多种方式部署 Microsoft 365 企业版[底层基础结构](deploy-foundation-infrastructure.md)的各个阶段，并向用户推出其功能、软件和服务。为了帮助你快速开始这项工作的项目管理（根据你的组织规模和现有基础结构，此工作可能十分庞大而复杂），请考虑以下部署策略：
+你可通过多种方式部署 Microsoft 365 企业版[底层基础结构](deploy-foundation-infrastructure.md)的各个阶段，并向用户推出其功能、软件和服务。为了帮助你快速开始这项工作的项目管理（根据你的组织规模和现有基础结构，此工作可能十分庞大而复杂），请考虑以下部署策略：
 
 - 串行部署
 - 并行部署与非重叠用户推出
 - 并行部署与重叠用户推出
 - 前端基础结构和端到端配置推出
 
-使用这些策略可以获得有关如何管理整个项目的思路，并更快实现 Microsoft 365 企业版带来的业务优势。
+使用这些策略可获得有关如何管理整个项目的思路，并更快实现 Microsoft 365 企业版带来的业务优势。
 
 >[!Note]
 >本文做了一些假设和简化，目的是使用一致的方式描述部署策略。这些部署策略是概括性的，并不暗示任何特定的时间范围，也不表示适用于所有组织和情况。
@@ -76,7 +78,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 以下甘特图显示了 Microsoft 365 企业版基础结构第 2-6 阶段的简化串行部署情况。
 
-![基础结构第 2-6 阶段的串行部署](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![底层基础结构第 2-6 阶段的串行部署](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 为了简化讨论和示意，假设每个阶段以及每个阶段中的部署细分段花费相同的时间量。
 
@@ -86,8 +88,8 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 下面的例子展示了简单的试点用户体验：
 
-- 12 月，我需要使用智能手机进行 MFA。 （身份识别）
-- 3 月，我在 Windows 8.1 台式机上安装了 Windows 10 企业版。（Windows 10 企业版）
+- 12 月，需要使用智能手机进行 MFA。（身份识别）
+- 3 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
 - 6 月，我安装了 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
 - 9 月，我进行设备注册并实施应用和设备策略。 （移动设备管理）
 - 12 月，我安装了 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
@@ -96,8 +98,8 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 下面的例子展示了简单的最终用户体验：
 
-- 1 月，我需要使用智能手机进行 MFA。 （身份识别）
-- 4 月，我在 Windows 8.1 台式机上安装了 Windows 10 企业版。（Windows 10 企业版）
+- 1 月，需要使用智能手机进行 MFA。（身份识别）
+- 4 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
 - 7 月，我安装了 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
 - 10 月，我进行设备注册并实施应用和设备策略。 （移动设备管理）
 - 明年 1 月，我安装了 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）

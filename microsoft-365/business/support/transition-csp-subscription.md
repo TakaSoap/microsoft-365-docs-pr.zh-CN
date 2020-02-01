@@ -2,6 +2,8 @@
 title: 转换 Microsoft 365 商业版云解决方案提供商订阅 
 description: 了解如何将 Microsoft 365 商业版云解决方案提供商订阅从预览转换为 GA。 
 author: jasongroce
+f1.keywords:
+- NOCSH
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -9,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 转换云解决方案提供商订阅
 ms.date: 11/01/2017
-ms.openlocfilehash: 72e620df69a425ca7e5c41c5a6651bc0f7f533de
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748333"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595037"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>转换 Microsoft 365 商业版云解决方案提供商订阅
 

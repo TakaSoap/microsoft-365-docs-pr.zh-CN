@@ -1,5 +1,7 @@
 ---
 title: 为置于保留状态的邮箱增加可恢复项目的配额
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '启用存档邮箱并打开自动扩展存档，以增加 Office 365 中的 "可恢复的项目" 文件夹的大小。 '
-ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685279"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597929"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 
@@ -61,7 +63,7 @@ ms.locfileid: "38685279"
 
 第一步是为 "可恢复的项目" 文件夹创建自定义保留标记（称为保留策略标记或 RPT）。 如前所述，此 RPT 将项目从用户主邮箱中的 "可恢复的项目" 文件夹移动到用户的存档邮箱中的 "可恢复的项目" 文件夹中。 您必须使用 PowerShell 为 "可恢复的项目" 文件夹创建 RPT。 不能使用 Exchange 管理中心 (EAC)。 
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. 运行以下命令，为 "可恢复的项目" 文件夹创建一个新的 RPT： 
     

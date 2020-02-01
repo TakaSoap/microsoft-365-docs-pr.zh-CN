@@ -1,5 +1,7 @@
 ---
 title: 高级电子数据展示中支持的文件类型
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 高级电子数据展示中支持的文件类型列表。 这包括高级电子数据展示中的 OCR 功能支持的图像文件类型的列表。
-ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191237"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597379"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
 
@@ -173,7 +175,7 @@ ms.locfileid: "39191237"
 | oasis 的应用程序/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | odt |
 ||||||||
 
-## <a name="other"></a>Other
+## <a name="other"></a>其他
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

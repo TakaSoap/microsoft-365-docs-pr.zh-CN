@@ -1,5 +1,7 @@
 ---
 title: 导出内容搜索报告
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 您可以导出搜索结果报告，而不是在 Office 365 的安全性 & 合规性中心中导出内容搜索的实际结果。 报告包含搜索结果摘要和文档，其中包含有关要导出的每个项目的详细信息。
-ms.openlocfilehash: 5146120afd9ea36845f5a0d19619da35379438d5
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: a46051210ae4d8b4254d0415668e3b9902bf5589
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676789"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595599"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 

@@ -1,5 +1,7 @@
 ---
 title: 创建和编辑 AutoPilot 配置文件
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 了解如何创建、编辑、删除或删除 AutoPilot 配置文件。
-ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 35967cb1f6e2cdeea9d7c42a529526410fa8b586
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320230"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593983"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>创建和编辑 AutoPilot 配置文件
 

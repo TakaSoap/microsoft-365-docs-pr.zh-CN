@@ -1,5 +1,7 @@
 ---
 title: 使用除名门户来将自己从 Office 365 阻止的发件人名单中删除
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: 当您尝试向其电子邮件地址位于 Office 365 中的收件人发送电子邮件时，是否收到一条错误消息？如果您认为不应该会收到错误消息，则可以使用除名门户将自己从 Office 365 阻止的发件人名单中删除。
-ms.openlocfilehash: da1c066c79acd6fb8b80796a0fc7f39d52337017
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: af528f7fed60130bec8ff53ad182df928d09faee
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238459"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598029"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用除名门户将自己从 Office 365 阻止的发件人名单中删除
 

@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37746548"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596949"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -231,7 +233,7 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 ||需要公司凭据才能访问|否||
 ||在一定时间后重新检查访问要求(分钟)|30||
 ||阻止屏幕捕获和 Android 助手|否|在 iOS 上，此选项不可用|
-|登录安全要求|最大 PIN 尝试次数|5|重置 Pin|
+|登录安全要求|最大 PIN 尝试次数|5 |重置 Pin|
 ||离线宽限期|720|阻止访问|
 ||擦除应用数据之前的脱机间隔时间（天）|90|擦除数据|
 ||已越狱/取得根的设备| |擦除数据|
@@ -305,13 +307,13 @@ iOS 和 Android 的应用保护策略选项略有不同。 以下策略专用于
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|Password|需要密码才能解锁移动设备|需要||
+|密码|需要密码才能解锁移动设备|需要||
 ||简单密码|阻止||
 ||密码类型|设备默认值||
 ||最短密码长度|6 ||
 ||在需要密码之前不活动的最长分钟数|15 |Android 版本4.0 及更高版本或 KNOX 4.0 及更高版本支持此设置。 对于 iOS 设备，支持 iOS 8.0 和更高版本|
 ||密码过期（天）|41||
-||用于防止重复使用的以前密码的数目|5||
+||用于防止重复使用的以前密码的数目|5 ||
 ||当设备从空闲状态（移动和全息）返回时需要密码|需要|适用于 Windows 10 及更高版本|
 |加密|设备上的数据存储加密|需要||
 |设备安全性|Firewall|需要||

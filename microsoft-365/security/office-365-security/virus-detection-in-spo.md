@@ -1,5 +1,7 @@
 ---
 title: SharePoint Online 中的病毒检测
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 通过检测用户上传到 SharePoint Online 的文件中的病毒，Office 365 可帮助保护您的环境免受恶意软件的攻击。 上载文件后，将对其进行病毒扫描。 如果发现文件感染了病毒，则会设置一个属性，以便用户无法下载或同步该文件。
-ms.openlocfilehash: fdf8fb61ab6923c20401bc8bf2a482ab7515568a
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 1a41c5bb00e7169878206be2db076af0b0745e30
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793686"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597999"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online 中的病毒检测
 

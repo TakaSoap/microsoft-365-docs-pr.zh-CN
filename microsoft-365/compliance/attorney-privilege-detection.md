@@ -1,5 +1,7 @@
 ---
 title: 在高级电子数据展示中设置律师-客户端特权检测
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 使用律师-客户端特权检测模型，在阅读高级电子数据展示事例中的内容时，使用基于机器学习的权限内容检测。
-ms.openlocfilehash: f4d5252a44183f5e2e38e4f4676c73d350befaf2
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: b60fe72cf476b9a6cbbd5cae3ed1a1e541d6b313
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233714"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595959"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在高级电子数据展示中设置律师-客户端特权检测
 

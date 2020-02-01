@@ -1,5 +1,7 @@
 ---
 title: 创建文档删除策略
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 为了体现合规性以及遵守法律或其他法规，组织通常必须在一定期限内保留文档。不过，如果文档的保留时间长于要求时间，则会给组织带来法律风险。
-ms.openlocfilehash: e007e26ff30931b605bca0ac432d3cf0ac8b18ac
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806555"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596229"
 ---
 # <a name="create-a-document-deletion-policy"></a>创建文档删除策略
 
@@ -132,7 +134,7 @@ ms.locfileid: "40806555"
     
 ![新建删除规则页](media/IP-New-deletion-rule.png)
   
-7. 单击 **“保存”**。
+7. 单击“**保存**”。
     
 8. 如果您希望站点所有者能够选择不同的规则应用于其站点，请创建其他规则。如果站点所有者没有执行任何操作，则系统会应用默认规则（如有）。
     
@@ -168,7 +170,7 @@ ms.locfileid: "40806555"
   
 ![显示 OneDrive 选项的“选择模板”页面](media/IP-Choose-a-template.png)
   
-5. 单击 **“保存”**。
+5. 单击“**保存**”。
     
     > [!NOTE]
     > 每个模板只能分配一组策略。 如果您看到一个错误，指出此模板已分配策略，请选择左侧导航栏\>中的 "**取消** \> **分配到网站集**"。选择一个网站集以查看和管理已分配的策略集。 
@@ -177,13 +179,13 @@ ms.locfileid: "40806555"
     
     ![“添加和管理策略”页面](media/IP-Add-and-manage-policies-page.png)
   
-7. 单击 **“保存”**。
+7. 单击“**保存**”。
     
 8. 若要在所有站点上强制应用此策略且不允许站点所有者取消应用，请单击“将策略标记为强制策略”****。如果您设置强制策略，那么只有这一个策略能够分配到网站集模板。此外，还必须将该策略标记为默认策略。
     
     如果此选项灰显，请单击“管理已分配的策略”****，并确保至少已分配一个策略并将其设置为默认策略。 
     
-9. 单击 **“保存”**。
+9. 单击“**保存**”。
     
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection"></a>将文档删除策略分配到网站集
 
@@ -210,13 +212,13 @@ ms.locfileid: "40806555"
     
     ![“添加和管理策略”页面](media/IP-Add-and-manage-policies-page.png)
   
-6. 单击 **“保存”**。
+6. 单击“**保存**”。
     
 7. 若要在所有站点上强制应用此策略且不允许站点所有者取消应用，请单击“将策略标记为强制策略”****。如果您设置强制策略，那么只有这一个策略能够分配到网站集。此外，还必须将该策略标记为默认策略。
     
     如果此选项灰显，请单击“管理已分配的策略”****，并确保至少已分配一个策略并将其设置为默认策略。 
     
-8. 单击 **“保存”**。
+8. 单击“**保存**”。
     
 ## <a name="delete-a-policy-assignment"></a>删除策略分配关系
 

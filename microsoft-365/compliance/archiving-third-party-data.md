@@ -1,5 +1,7 @@
 ---
 title: 存档第三方数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到 Microsoft 365 组织中的邮箱。 这样，你就可以在 Microsoft 365 中存档 Facebook、Twitter 和其他第三方数据源中的数据。 然后，您可以使用并应用 Microsoft 365 合规性功能（如法律封存、电子数据展示、就地存档和保留策略），以获取第三方数据。
-ms.openlocfilehash: b2931a018dedb6ac85d7896bef345654cb07ca5b
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: ac732110dac8d590ac30cfb062251d2e970bdd3d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247545"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595999"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 

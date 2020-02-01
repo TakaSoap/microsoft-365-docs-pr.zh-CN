@@ -5,6 +5,8 @@ author: brendacarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 101ebbe46b9f49a1a450c4cb22b5d5f67ce1b322
-ms.sourcegitcommit: bd487d36b04b8f8caf10900e8c5237f9ccf9e072
+ms.openlocfilehash: e8c2b10f3e1dd88703b15c326dedb164a686cfca
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37654021"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596729"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 

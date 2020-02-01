@@ -1,5 +1,7 @@
 ---
 title: 恢复 Office 365 中的非活动邮箱
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果以前的员工返回到您的组织，或者如果雇用新员工来承担 departed 员工的工作职责，则可以在 Office 365 中恢复非活动邮箱的内容。 恢复非活动邮箱时，会将其转换为新邮箱，其中包含非活动邮箱的内容。 '
-ms.openlocfilehash: 6589c8b75e7d17720848ed221e9625c77b867503
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 6d375467a4e04b21cf10905009b19fdf7b11a386
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803709"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597639"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>恢复 Office 365 中的非活动邮箱
 

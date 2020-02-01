@@ -1,5 +1,7 @@
 ---
 title: 垃圾邮件可信度
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: 当对电子邮件进行垃圾邮件筛选时，将为该邮件分配一个垃圾邮件得分。该得分将被映射到单个垃圾邮件可信度 (SCL) 分级，并标记在 X 标头中。此项服务将基于 SCL 分级的垃圾邮件可信度解释对邮件采取操作。下表显示了筛选器如何解释不同的 SCL 分级，以及为每个分级的入站邮件所采取的默认操作。
-ms.openlocfilehash: 93b3886e1128024f3f7f2a844e2ed603e27d9b2a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c40317833ea61424dab60ac858c2071f7891c4f8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076040"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598309"
 ---
 # <a name="spam-confidence-levels"></a>垃圾邮件可信度
 

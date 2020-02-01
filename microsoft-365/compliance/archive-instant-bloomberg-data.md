@@ -1,5 +1,7 @@
 ---
 title: 设置连接器以存档 Instant Bloomberg 数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从即时 Bloomberg 聊天工具导入 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 094a3687f16d0d7bcdb1dc6c8040eb73866f0461
-ms.sourcegitcommit: ca06ee52dec472d3827983d67b049847ec2fdfc1
+ms.openlocfilehash: 9711442e75e5a60540c8c7debea83d90c89e7893
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41256528"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596029"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 

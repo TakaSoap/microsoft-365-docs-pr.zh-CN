@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 中的数据调查（预览）发布说明
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的新数据调查（预览版）工具。
-ms.openlocfilehash: 200b1c6c08d0fdb1c4af5da59fa75836b4b1fab3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074197"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595409"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查（预览）发布说明
 
@@ -45,4 +47,4 @@ ms.locfileid: "37074197"
 
 - **作业**–跟踪长时间运行的进程的状态。
 
-- **硬删除邮箱项目**-在紧急情况下，您可能需要永久删除错放的项目。 为此，您可以在 Security & 合规性中心 PowerShell 中运行**new-compliancesearchaction-PurgeType HardDelete**命令，以永久删除邮箱中的项目。 有关详细信息，请参阅[new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction)。
+- **硬删除邮箱项目**-在紧急情况下，您可能需要永久删除错放的项目。 为此，您可以在 Security & 合规性中心 PowerShell 中运行**new-compliancesearchaction-PurgeType HardDelete**命令，以永久删除邮箱中的项目。 有关详细信息，请参阅 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction)。

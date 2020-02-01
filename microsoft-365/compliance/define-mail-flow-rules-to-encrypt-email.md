@@ -1,5 +1,7 @@
 ---
 title: 定义用于加密 Office 365 中的电子邮件的邮件流规则
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则（传输规则），以使用 Office 365 邮件加密对邮件进行加密和解密。
-ms.openlocfilehash: 54fc53d1e39208f42348b6def4afadf71092ff11
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: a2f37bff8fa3fd45999a44341cfdb077b4f43e62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748550"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595337"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
 
@@ -140,7 +142,7 @@ ms.locfileid: "38748550"
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **注意：**
+   **注意**：
 
    - 新规则的唯一名称是 "加密 Dr Toni Ramos" 的规则。
 
@@ -184,7 +186,7 @@ ms.locfileid: "38748550"
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **注意：**
+   **注意**：
 
    - 新规则的唯一名称是 "从传入邮件中删除加密"。
 

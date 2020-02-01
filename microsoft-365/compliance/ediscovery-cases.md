@@ -1,5 +1,7 @@
 ---
 title: 在安全与合规中心管理电子数据展示事例
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全 & 合规性中心在您的组织中创建和管理电子数据展示事例。 您可以向事例分配成员、将内容位置置于保留状态、运行与事例关联的内容搜索以及导出搜索结果。 您还可以为 Office 365 高级电子数据展示中的进一步分析准备事例数据。
-ms.openlocfilehash: 3d5e67edf30f1b1f78e6c4992760c18d1493e108
-ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
+ms.openlocfilehash: f687f405b6b721ec3f3f1d94e11091c1023d1aea
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41107911"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595137"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全与合规中心管理电子数据展示事例
 

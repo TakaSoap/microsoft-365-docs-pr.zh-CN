@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的特权访问管理
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关 Office 365 中的特权访问管理的详细信息
-ms.openlocfilehash: 9bc2aab9c9758daf35aa14a41d7997a0bff5764f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0c9d8ba22f57c7f6a576f1995e8df92be7478073
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685151"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597729"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的特权访问管理
 
@@ -71,7 +73,7 @@ Office 365 中的特权访问管理在**任务**级别进行定义和作用域�
 
 ![步骤4：访问处理](media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>哪些 Sku 可以使用 Office 365 中的特权访问？
 具有 Office 365 E5 和高级合规性 Sku 的客户可以使用 "特权访问管理"。
@@ -92,6 +94,6 @@ Office 365 中的特权访问管理在**任务**级别进行定义和作用域�
 
 开始[为您的组织配置特权访问管理](privileged-access-management-configuration.md)。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 [交互式指南：使用特权访问管理监视和控制管理员任务](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

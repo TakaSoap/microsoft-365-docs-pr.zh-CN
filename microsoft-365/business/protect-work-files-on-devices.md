@@ -1,5 +1,7 @@
 ---
 title: 保护设备上的工作文件
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -25,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: '了解默认配置和添加应用程序管理策略，以保护用户个人移动设备上的公司数据。 '
-ms.openlocfilehash: 6c4534f70ea7d8b8c93283e92278f1aa08ab94bf
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 838c218114938608c365cd632b5682df770f8308
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640741"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593568"
 ---
 # <a name="protect-work-files-on-devices"></a>保护设备上的工作文件
 

@@ -1,5 +1,7 @@
 ---
 title: 设置连接器以存档 LinkedIn 数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从 LinkedIn 公司页面导入到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的合规性。
-ms.openlocfilehash: 109d05b5bd2e4a361a92487f86198a07be124dfc
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: c8e39577a6eaba3ad865b1617683c2baa9260759
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269444"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596019"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>设置连接器以存档 LinkedIn 数据
 

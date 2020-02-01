@@ -1,5 +1,7 @@
 ---
 title: 检查内容搜索查询中是否有错误
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 在运行搜索之前，请检查关键字查询的内容搜索是否存在错误和拼写错误（如不受支持的字符和小写布尔运算符）。 如果发现错误，我们将建议已修改的查询。
-ms.openlocfilehash: 1d2c9a9f3e2204fa65fe29c9adaffe818d2f7a4c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633989"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595919"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>检查内容搜索查询中是否有错误
 

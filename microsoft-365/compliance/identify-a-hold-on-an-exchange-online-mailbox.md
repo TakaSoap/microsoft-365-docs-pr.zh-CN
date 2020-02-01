@@ -1,5 +1,7 @@
 ---
 title: 如何识别为 Exchange Online 邮箱设置的保留类型
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可在 Office 365 邮箱中放置的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Office 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户
-ms.openlocfilehash: dcdb79aa1c1cae83602a42e6c99136a2f85226a1
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: f45310547d41d8ec1092a3fecfaa0b50c4439559
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558009"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596499"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 

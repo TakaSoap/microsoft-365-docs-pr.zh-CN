@@ -1,5 +1,7 @@
 ---
 title: Microsoft 合规性管理器概述
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 97cbc676f9de070d1532d1e56c96db0efcce8bd0
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807331"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595789"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -109,7 +111,7 @@ ms.locfileid: "40807331"
 
 证书控制通常由一个人实施，并由另一个人测试。 例如，在最初分配给一个人员以实现实施后，会将这些操作项分配给下一个测试和上载证据的人员。 对控制分配具有足够权限的任何用户都可以分配和重新分配操作项目。 这样可以集中管理控制分配以及 implementors 和测试人员之间的操作项目的分散路由。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 合规性管理器使用基于角色的访问控制权限模型。 只有分配了用户角色的用户可访问合规性管理器，并且每位用户允许的操作受到角色类型的限制。 [查看](working-with-compliance-manager.md#permissions)显示每个权限允许执行的操作的表。
 

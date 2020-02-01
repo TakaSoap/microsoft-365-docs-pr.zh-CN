@@ -1,5 +1,7 @@
 ---
 title: 向列表或库应用信息权限管理（IRM）
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -18,18 +20,18 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 您可以使用信息权限管理（IRM）来帮助控制和保护从列表或库中下载的文件。
-ms.openlocfilehash: cd970f5e89a08de133511c99b8209b389f32cd87
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256809"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596079"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>向列表或库应用信息权限管理（IRM）
 
 您可以使用信息权限管理（IRM）来帮助控制和保护从列表或库中下载的文件。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - Azure Rights Management service （Azure RMS）（来自 Azure 信息保护）和本地等效项 Active Directory 权限管理服务（AD RMS），支持网站的信息权限管理。 不需要单独安装或其他安装。
     
@@ -135,7 +137,7 @@ IRM 保护应用于列表或库级别的文件。 对库启用 IRM 时，权限�
 |管理权限、管理网站  <br/> |**完全控制**（由客户端程序定义）：此权限通常允许用户读取、编辑、复制、保存和修改权限管理内容的权限。  <br/> |
 |编辑项目、管理列表、添加和自定义页面  <br/> |**编辑**、**复制**和**保存**：只有在列表或库的 "信息权限管理设置" 页上选中 "**允许用户打印文档**" 复选框时，用户才能打印文件。  <br/> |
 |查看项目  <br/> |**阅读**：用户可以读取文档，但无法复制或修改其内容。 只有在列表或库的 "信息权限管理设置" 页上选中了 "**允许用户打印文档**" 复选框时，用户才能打印。  <br/> |
-|Other  <br/> |没有直接对应于 IRM 权限的其他权限。  <br/> |
+|其他  <br/> |没有直接对应于 IRM 权限的其他权限。  <br/> |
    
 在 SharePoint Server 2013 中为列表或库启用 IRM 时，只能保护在所有前端 web 服务器上都安装了保护程序的列表或库中的文件类型。 保护程序是一种程序，用于控制特定文件格式的权限管理文件的加密和解密。 SharePoint 包含针对以下文件类型的保护程序：
   
