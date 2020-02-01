@@ -1,5 +1,7 @@
 ---
 title: 避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中出现无效字符
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,49 +15,49 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 为在反垃圾邮件配置中具有无效字符的管理员提供帮助，并在尝试使用安全&amp;合规性中心时遇到问题。
-ms.openlocfilehash: 5e6fa97a3f325b6fc6fdc449ba4a61282f67b644
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: f1841eb86583a48acecde0770f030b626323fa8e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866714"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599109"
 ---
-# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a><span data-ttu-id="2b098-103">避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中的无效字符</span><span class="sxs-lookup"><span data-stu-id="2b098-103">Avoid invalid characters in your spam filter rules and spam filter policy</span></span> 
+# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a><span data-ttu-id="ada3e-103">避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中的无效字符</span><span class="sxs-lookup"><span data-stu-id="ada3e-103">Avoid invalid characters in your spam filter rules and spam filter policy</span></span> 
 
-<span data-ttu-id="2b098-104">以前，Office 365 管理员使用 Exchange 管理中心（EAC）设置和配置了垃圾邮件筛选器规则和垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="2b098-104">Previously, Office 365 administrators set up and configured spam filter rules and the spam filter policy by using the Exchange admin center (EAC).</span></span> <span data-ttu-id="2b098-105">现在，您可以使用安全&amp;合规性中心管理您的反垃圾邮件配置。</span><span class="sxs-lookup"><span data-stu-id="2b098-105">Now, you use the Security &amp; Compliance Center to manage the your anti-spam configuration.</span></span> <span data-ttu-id="2b098-106">以下字符在 EAC 中受支持，但不支持在安全&amp;合规性中心中使用。</span><span class="sxs-lookup"><span data-stu-id="2b098-106">The following characters were supported in the EAC but are not supported for use in the Security &amp; Compliance Center.</span></span>  
+<span data-ttu-id="ada3e-104">以前，Office 365 管理员使用 Exchange 管理中心（EAC）设置和配置了垃圾邮件筛选器规则和垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="ada3e-104">Previously, Office 365 administrators set up and configured spam filter rules and the spam filter policy by using the Exchange admin center (EAC).</span></span> <span data-ttu-id="ada3e-105">现在，您可以使用安全&amp;合规性中心管理您的反垃圾邮件配置。</span><span class="sxs-lookup"><span data-stu-id="ada3e-105">Now, you use the Security &amp; Compliance Center to manage the your anti-spam configuration.</span></span> <span data-ttu-id="ada3e-106">以下字符在 EAC 中受支持，但不支持在安全&amp;合规性中心中使用。</span><span class="sxs-lookup"><span data-stu-id="ada3e-106">The following characters were supported in the EAC but are not supported for use in the Security &amp; Compliance Center.</span></span>  
 
-<span data-ttu-id="2b098-107">**无效字符：**</span><span class="sxs-lookup"><span data-stu-id="2b098-107">**Invalid characters:**</span></span>
+<span data-ttu-id="ada3e-107">**无效字符：**</span><span class="sxs-lookup"><span data-stu-id="ada3e-107">**Invalid characters:**</span></span>
   
 ```\ % & * + / = ? { } | < > ( ) ; : , [ ] "```
 
-<span data-ttu-id="2b098-108">如果垃圾邮件筛选器规则或垃圾邮件筛选器策略包含任何无效字符，则可能会遇到以下任何或所有问题：</span><span class="sxs-lookup"><span data-stu-id="2b098-108">If your spam filter rules or your spam filter policy contains any of the invalid characters, you might encounter any or all of these issues:</span></span>
-- <span data-ttu-id="2b098-109">您可能无法在安全&amp;合规中心中找到策略或规则。</span><span class="sxs-lookup"><span data-stu-id="2b098-109">You might be unable to find the policy or rules in the Security &amp; Compliance Center.</span></span>
-- <span data-ttu-id="2b098-110">尝试使用 Windows PowerShell 获取规则或策略时，可能会收到错误。</span><span class="sxs-lookup"><span data-stu-id="2b098-110">You might receive errors when trying to get the rules or policy by using Windows PowerShell.</span></span>
-- <span data-ttu-id="2b098-111">您可能会发现策略或设置未按预期方式运行或执行。</span><span class="sxs-lookup"><span data-stu-id="2b098-111">You might find that the policy or settings do not run or perform as expected.</span></span>
+<span data-ttu-id="ada3e-108">如果垃圾邮件筛选器规则或垃圾邮件筛选器策略包含任何无效字符，则可能会遇到以下任何或所有问题：</span><span class="sxs-lookup"><span data-stu-id="ada3e-108">If your spam filter rules or your spam filter policy contains any of the invalid characters, you might encounter any or all of these issues:</span></span>
+- <span data-ttu-id="ada3e-109">您可能无法在安全&amp;合规中心中找到策略或规则。</span><span class="sxs-lookup"><span data-stu-id="ada3e-109">You might be unable to find the policy or rules in the Security &amp; Compliance Center.</span></span>
+- <span data-ttu-id="ada3e-110">尝试使用 Windows PowerShell 获取规则或策略时，可能会收到错误。</span><span class="sxs-lookup"><span data-stu-id="ada3e-110">You might receive errors when trying to get the rules or policy by using Windows PowerShell.</span></span>
+- <span data-ttu-id="ada3e-111">您可能会发现策略或设置未按预期方式运行或执行。</span><span class="sxs-lookup"><span data-stu-id="ada3e-111">You might find that the policy or settings do not run or perform as expected.</span></span>
 
-## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a><span data-ttu-id="2b098-112">删除垃圾邮件筛选器策略和规则中的无效字符</span><span class="sxs-lookup"><span data-stu-id="2b098-112">Remove the invalid characters from the spam filter policy and rules</span></span>
+## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a><span data-ttu-id="ada3e-112">删除垃圾邮件筛选器策略和规则中的无效字符</span><span class="sxs-lookup"><span data-stu-id="ada3e-112">Remove the invalid characters from the spam filter policy and rules</span></span>
 
-<span data-ttu-id="2b098-113">在确定了包含无效字符的策略和规则后，可以使用 Windows PowerShell cmdlet 更改这些名称。</span><span class="sxs-lookup"><span data-stu-id="2b098-113">Once you have identified the policy and rules that contain invalid characters, you can change the names by using the Windows PowerShell cmdlets.</span></span> 
+<span data-ttu-id="ada3e-113">在确定了包含无效字符的策略和规则后，可以使用 Windows PowerShell cmdlet 更改这些名称。</span><span class="sxs-lookup"><span data-stu-id="ada3e-113">Once you have identified the policy and rules that contain invalid characters, you can change the names by using the Windows PowerShell cmdlets.</span></span> 
 
-1. <span data-ttu-id="2b098-114">[使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="2b098-114">[Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
+1. <span data-ttu-id="ada3e-114">[使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="ada3e-114">[Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
     
-2. <span data-ttu-id="2b098-115">若要更改垃圾邮件筛选器策略的名称，请运行 Set-hostedcontentfilterpolicy cmdlet，如下所示：</span><span class="sxs-lookup"><span data-stu-id="2b098-115">To change the name of the spam filter policy, run the Set-HostedContentFilterPolicy cmdlet as follows:</span></span>
+2. <span data-ttu-id="ada3e-115">若要更改垃圾邮件筛选器策略的名称，请运行 Set-hostedcontentfilterpolicy cmdlet，如下所示：</span><span class="sxs-lookup"><span data-stu-id="ada3e-115">To change the name of the spam filter policy, run the Set-HostedContentFilterPolicy cmdlet as follows:</span></span>
     
     ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
-3. <span data-ttu-id="2b098-116">若要更改垃圾邮件筛选器规则的名称，请运行 Disable-hostedcontentfilterrule cmdlet，如下所示：</span><span class="sxs-lookup"><span data-stu-id="2b098-116">To change the name of a spam filter rule, run the Set-HostedContentFilterRule cmdlet as follows:</span></span>
+3. <span data-ttu-id="ada3e-116">若要更改垃圾邮件筛选器规则的名称，请运行 Disable-hostedcontentfilterrule cmdlet，如下所示：</span><span class="sxs-lookup"><span data-stu-id="ada3e-116">To change the name of a spam filter rule, run the Set-HostedContentFilterRule cmdlet as follows:</span></span>
     
     ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 
   
- ## <a name="for-more-information"></a><span data-ttu-id="2b098-117">详细信息</span><span class="sxs-lookup"><span data-stu-id="2b098-117">For more information</span></span>
+ ## <a name="for-more-information"></a><span data-ttu-id="ada3e-117">更多详细信息</span><span class="sxs-lookup"><span data-stu-id="ada3e-117">For more information</span></span>
 
-[<span data-ttu-id="2b098-118">安全&amp;合规性中心中的威胁管理</span><span class="sxs-lookup"><span data-stu-id="2b098-118">Threat management in the Security &amp; Compliance Center</span></span>](protect-against-threats.md)
+[<span data-ttu-id="ada3e-118">安全&amp;合规性中心中的威胁管理</span><span class="sxs-lookup"><span data-stu-id="ada3e-118">Threat management in the Security &amp; Compliance Center</span></span>](protect-against-threats.md)
   
-[<span data-ttu-id="2b098-119">Set-hostedcontentfilterpolicy</span><span class="sxs-lookup"><span data-stu-id="2b098-119">Set-HostedContentFilterPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)
+[<span data-ttu-id="ada3e-119">Set-hostedcontentfilterpolicy</span><span class="sxs-lookup"><span data-stu-id="ada3e-119">Set-HostedContentFilterPolicy</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)
 
-[<span data-ttu-id="2b098-120">Disable-hostedcontentfilterrule</span><span class="sxs-lookup"><span data-stu-id="2b098-120">Set-HostedContentFilterRule</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule)
+[<span data-ttu-id="ada3e-120">Disable-hostedcontentfilterrule</span><span class="sxs-lookup"><span data-stu-id="ada3e-120">Set-HostedContentFilterRule</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule)
