@@ -3,6 +3,8 @@ title: 移动设备管理基础结构退出条件
 description: Microsoft 365 企业版包括使用 Microsoft Intune 的移动设备管理。 查看要求和先决条件、使用 Azure Active Directory 资源设置 Intune、注册 iOS、macOS、Android 和 Windows 设备、部署应用、创建配置配置文件、使用合规性策略，以及为移动启用条件访问Microsoft 365 企业版的设备管理。
 keywords: Microsoft 365，Microsoft 365 企业版，Microsoft 365 文档，移动设备管理，Intune
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/03/2019
@@ -13,31 +15,31 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: e8f8f53224b334f92142e2c03ed05eaa9e38787a
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: daf7bcf6525f30b7b52065e4f6bf2ff335f4ea4b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37385719"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600879"
 ---
-# <a name="mobile-device-management-infrastructure-exit-criteria"></a><span data-ttu-id="c66aa-105">移动设备管理基础结构退出条件</span><span class="sxs-lookup"><span data-stu-id="c66aa-105">Mobile device management infrastructure exit criteria</span></span>
+# <a name="mobile-device-management-infrastructure-exit-criteria"></a><span data-ttu-id="3aefd-105">移动设备管理基础结构退出条件</span><span class="sxs-lookup"><span data-stu-id="3aefd-105">Mobile device management infrastructure exit criteria</span></span>
 
-![第5阶段：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![阶段 5：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
-<span data-ttu-id="c66aa-107">*这适用于 Microsoft 365 企业版的 E3 和 E5 版本*</span><span class="sxs-lookup"><span data-stu-id="c66aa-107">*This applies to the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+<span data-ttu-id="3aefd-107">*这适用于 Microsoft 365 企业版的 E3 和 E5 版本*</span><span class="sxs-lookup"><span data-stu-id="3aefd-107">*This applies to the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
 
-<span data-ttu-id="c66aa-108">确保您的配置满足以下针对移动设备管理基础结构的要求。</span><span class="sxs-lookup"><span data-stu-id="c66aa-108">Ensure that your configuration meets the following requirements for mobile device management infrastructure.</span></span>
+<span data-ttu-id="3aefd-108">确保您的配置满足以下针对移动设备管理基础结构的要求。</span><span class="sxs-lookup"><span data-stu-id="3aefd-108">Ensure that your configuration meets the following requirements for mobile device management infrastructure.</span></span>
 
-- <span data-ttu-id="c66aa-109">安装 Intune，包括创建 Azure Active Directory （Azure AD）用户和组，以应用组织的设备规则。</span><span class="sxs-lookup"><span data-stu-id="c66aa-109">Intune is set up, including the creation of Azure Active Directory (Azure AD) users and groups to apply your organization's rules for devices.</span></span>
-- <span data-ttu-id="c66aa-110">在 Intune 中有已注册设备，这样设备便能收到你创建的策略。</span><span class="sxs-lookup"><span data-stu-id="c66aa-110">You have enrolled devices in Intune so that the devices can receive the policies you create.</span></span>
-- <span data-ttu-id="c66aa-111">向设备添加了应用，这样用户便能访问组织的 Microsoft 365 云服务（如 Exchange Online 和 SharePoint Online）。</span><span class="sxs-lookup"><span data-stu-id="c66aa-111">Apps are added to devices so your users get access to your organization's Microsoft 365 cloud services, such as Exchange Online and SharePoint Online.</span></span>
-- <span data-ttu-id="c66aa-112">已使用你创建的 Azure AD 用户和组来配置功能和设置，并将它们应用于设备，这可能包括启用防病毒功能和限制特定应用。</span><span class="sxs-lookup"><span data-stu-id="c66aa-112">Features and settings are configured and applied to your devices using the Azure AD users and groups you create, which might include enabling anti-virus and restricting specific apps.</span></span>
-- <span data-ttu-id="c66aa-113">合规性策略已准备好，需要在设备上使用防火墙或密码长度。</span><span class="sxs-lookup"><span data-stu-id="c66aa-113">Compliance policies are in place to require a firewall or a password length on a device.</span></span> <span data-ttu-id="c66aa-114">如果设备不合规，则条件访问会阻止对组织数据的访问。</span><span class="sxs-lookup"><span data-stu-id="c66aa-114">If devices aren't compliant, Conditional Access blocks access to your organization's data.</span></span>
+- <span data-ttu-id="3aefd-109">安装 Intune，包括创建 Azure Active Directory （Azure AD）用户和组，以应用组织的设备规则。</span><span class="sxs-lookup"><span data-stu-id="3aefd-109">Intune is set up, including the creation of Azure Active Directory (Azure AD) users and groups to apply your organization's rules for devices.</span></span>
+- <span data-ttu-id="3aefd-110">在 Intune 中有已注册设备，这样设备便能收到你创建的策略。</span><span class="sxs-lookup"><span data-stu-id="3aefd-110">You have enrolled devices in Intune so that the devices can receive the policies you create.</span></span>
+- <span data-ttu-id="3aefd-111">向设备添加了应用，这样用户便能访问组织的 Microsoft 365 云服务（如 Exchange Online 和 SharePoint Online）。</span><span class="sxs-lookup"><span data-stu-id="3aefd-111">Apps are added to devices so your users get access to your organization's Microsoft 365 cloud services, such as Exchange Online and SharePoint Online.</span></span>
+- <span data-ttu-id="3aefd-112">已使用你创建的 Azure AD 用户和组来配置功能和设置，并将它们应用于设备，这可能包括启用防病毒功能和限制特定应用。</span><span class="sxs-lookup"><span data-stu-id="3aefd-112">Features and settings are configured and applied to your devices using the Azure AD users and groups you create, which might include enabling anti-virus and restricting specific apps.</span></span>
+- <span data-ttu-id="3aefd-113">合规性策略已准备好，需要在设备上使用防火墙或密码长度。</span><span class="sxs-lookup"><span data-stu-id="3aefd-113">Compliance policies are in place to require a firewall or a password length on a device.</span></span> <span data-ttu-id="3aefd-114">如果设备不合规，则条件访问会阻止对组织数据的访问。</span><span class="sxs-lookup"><span data-stu-id="3aefd-114">If devices aren't compliant, Conditional Access blocks access to your organization's data.</span></span>
 
-## <a name="results-and-next-steps"></a><span data-ttu-id="c66aa-115">结果和后续步骤</span><span class="sxs-lookup"><span data-stu-id="c66aa-115">Results and next steps</span></span>
+## <a name="results-and-next-steps"></a><span data-ttu-id="3aefd-115">结果和后续步骤</span><span class="sxs-lookup"><span data-stu-id="3aefd-115">Results and next steps</span></span>
 
-<span data-ttu-id="c66aa-116">你的设备已在 Intune 中注册并配置了适当的策略。</span><span class="sxs-lookup"><span data-stu-id="c66aa-116">Your devices are enrolled in Intune and configured with the appropriate policies.</span></span>
+<span data-ttu-id="3aefd-116">你的设备已在 Intune 中注册并配置了适当的策略。</span><span class="sxs-lookup"><span data-stu-id="3aefd-116">Your devices are enrolled in Intune and configured with the appropriate policies.</span></span>
 
 |||
 |:-------|:-----|
-|![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| <span data-ttu-id="c66aa-118">如果你按照 Microsoft 365 企业版端到端部署的阶段执行，下一阶段是[信息保护](infoprotect-infrastructure.md)。</span><span class="sxs-lookup"><span data-stu-id="c66aa-118">If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md).</span></span> |
+|![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| <span data-ttu-id="3aefd-118">如果你按照 Microsoft 365 企业版端到端部署的阶段执行，下一阶段是[信息保护](infoprotect-infrastructure.md)。</span><span class="sxs-lookup"><span data-stu-id="3aefd-118">If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md).</span></span> |

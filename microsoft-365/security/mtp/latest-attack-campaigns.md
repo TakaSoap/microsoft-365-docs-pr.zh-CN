@@ -5,6 +5,8 @@ keywords: security、恶意软件、Microsoft 365、M365、security center、威
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -12,17 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: fca4a16c2b5526cf5fe004e0d836921a7d5c9b84
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: a3ae07818075b61e4c2c1695275614dafd66f738
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910533"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600199"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a><span data-ttu-id="88e9c-104">通过威胁分析了解最新的攻击活动和技术</span><span class="sxs-lookup"><span data-stu-id="88e9c-104">Understand the latest attack campaigns and techniques with threat analytics</span></span> 
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a><span data-ttu-id="eda91-104">通过威胁分析了解最新的攻击活动和技术</span><span class="sxs-lookup"><span data-stu-id="eda91-104">Understand the latest attack campaigns and techniques with threat analytics</span></span> 
 
-<span data-ttu-id="88e9c-105">网络威胁越来越频繁和复杂。</span><span class="sxs-lookup"><span data-stu-id="88e9c-105">Cyber threats are becoming more frequent and sophisticated.</span></span> <span data-ttu-id="88e9c-106">对于组织来说，快速评估其安全状况和针对特定的新兴威胁的恢复至关重要。</span><span class="sxs-lookup"><span data-stu-id="88e9c-106">It's critical for organizations to quickly assess their security posture and resilience against specific emerging threats.</span></span>
+<span data-ttu-id="eda91-105">网络威胁越来越频繁和复杂。</span><span class="sxs-lookup"><span data-stu-id="eda91-105">Cyber threats are becoming more frequent and sophisticated.</span></span> <span data-ttu-id="eda91-106">对于组织来说，快速评估其安全状况和针对特定的新兴威胁的恢复至关重要。</span><span class="sxs-lookup"><span data-stu-id="eda91-106">It's critical for organizations to quickly assess their security posture and resilience against specific emerging threats.</span></span>
 
-<span data-ttu-id="88e9c-107">**威胁分析**是一组已发布的交互式报告，一旦出现新的威胁，就会发现新技术、攻击活动和恶意软件发作。</span><span class="sxs-lookup"><span data-stu-id="88e9c-107">**Threat analytics** is a set of interactive reports published as soon as emerging threats — new techniques, attack campaigns, and malware outbreaks — are identified.</span></span> <span data-ttu-id="88e9c-108">这些报告可帮助您评估威胁对您的环境的影响，并提供建议的操作以包含、提高组织恢复能力并防止特定威胁。</span><span class="sxs-lookup"><span data-stu-id="88e9c-108">The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.</span></span>
+<span data-ttu-id="eda91-107">**威胁分析**是一组已发布的交互式报告，一旦出现新的威胁，就会发现新技术、攻击活动和恶意软件发作。</span><span class="sxs-lookup"><span data-stu-id="eda91-107">**Threat analytics** is a set of interactive reports published as soon as emerging threats — new techniques, attack campaigns, and malware outbreaks — are identified.</span></span> <span data-ttu-id="eda91-108">这些报告可帮助您评估威胁对您的环境的影响，并提供建议的操作以包含、提高组织恢复能力并防止特定威胁。</span><span class="sxs-lookup"><span data-stu-id="eda91-108">The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.</span></span>
 
-<span data-ttu-id="88e9c-109">[了解有关 Microsoft DEFENDER ATP 中的威胁分析的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。</span><span class="sxs-lookup"><span data-stu-id="88e9c-109">[Learn more about threat analytics in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).</span></span>  
+<span data-ttu-id="eda91-109">[了解有关 Microsoft DEFENDER ATP 中的威胁分析的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。</span><span class="sxs-lookup"><span data-stu-id="eda91-109">[Learn more about threat analytics in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).</span></span>  

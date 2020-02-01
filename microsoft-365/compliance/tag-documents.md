@@ -1,5 +1,7 @@
 ---
 title: 证据中的标记文档
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0996b91a44ec372cb8d1c3c377ef53fc8823dc8e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c77b842f5cbf5766fa3419fc692bc8d3cb0cd4a1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075298"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601409"
 ---
-# <a name="tag-documents-in-evidence"></a><span data-ttu-id="6656b-102">证据中的标记文档</span><span class="sxs-lookup"><span data-stu-id="6656b-102">Tag documents in evidence</span></span>
+# <a name="tag-documents-in-evidence"></a><span data-ttu-id="53ee5-102">证据中的标记文档</span><span class="sxs-lookup"><span data-stu-id="53ee5-102">Tag documents in evidence</span></span>
 
-<span data-ttu-id="6656b-103">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="6656b-103">Content coming soon.</span></span>
+<span data-ttu-id="53ee5-103">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="53ee5-103">Content coming soon.</span></span>
