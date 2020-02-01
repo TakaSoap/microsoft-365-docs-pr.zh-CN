@@ -1,5 +1,7 @@
 ---
 title: 创建和编辑 AutoPilot 配置文件
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,60 +25,60 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 了解如何创建、编辑、删除或删除 AutoPilot 配置文件。
-ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 35967cb1f6e2cdeea9d7c42a529526410fa8b586
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320230"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593983"
 ---
-# <a name="create-and-edit-autopilot-profiles"></a><span data-ttu-id="59ae5-103">创建和编辑 AutoPilot 配置文件</span><span class="sxs-lookup"><span data-stu-id="59ae5-103">Create and edit AutoPilot profiles</span></span>
+# <a name="create-and-edit-autopilot-profiles"></a><span data-ttu-id="e3bc2-103">创建和编辑 AutoPilot 配置文件</span><span class="sxs-lookup"><span data-stu-id="e3bc2-103">Create and edit AutoPilot profiles</span></span>
 
-## <a name="create-a-profile"></a><span data-ttu-id="59ae5-104">创建配置文件</span><span class="sxs-lookup"><span data-stu-id="59ae5-104">Create a profile</span></span>
+## <a name="create-a-profile"></a><span data-ttu-id="e3bc2-104">创建配置文件</span><span class="sxs-lookup"><span data-stu-id="e3bc2-104">Create a profile</span></span>
 
-<span data-ttu-id="59ae5-105">配置文件适用于单个设备或一组设备，</span><span class="sxs-lookup"><span data-stu-id="59ae5-105">A profile applies to a device, or a group of devices,</span></span>
+<span data-ttu-id="e3bc2-105">配置文件适用于单个设备或一组设备，</span><span class="sxs-lookup"><span data-stu-id="e3bc2-105">A profile applies to a device, or a group of devices,</span></span>
   
-1. <span data-ttu-id="59ae5-106">在 Microsoft 365 Business 管理中心中，选择 "**设备** \> " **AutoPilot**。</span><span class="sxs-lookup"><span data-stu-id="59ae5-106">In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.</span></span>
+1. <span data-ttu-id="e3bc2-106">在 Microsoft 365 Business 管理中心中，选择 "**设备** \> " **AutoPilot**。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-106">In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.</span></span>
   
-2. <span data-ttu-id="59ae5-107">在 " **AutoPilot** " 页上，选择 "**配置文件**" 选项卡\> **创建配置文件**。</span><span class="sxs-lookup"><span data-stu-id="59ae5-107">On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.</span></span>
+2. <span data-ttu-id="e3bc2-107">在 " **AutoPilot** " 页上，选择 "**配置文件**" 选项卡\> **创建配置文件**。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-107">On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.</span></span>
     
-3. <span data-ttu-id="59ae5-108">在 "**创建配置文件**" 页上，输入可帮助您识别它的配置文件的名称，例如 "营销"。</span><span class="sxs-lookup"><span data-stu-id="59ae5-108">On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing.</span></span> <span data-ttu-id="59ae5-109">打开所需的设置，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="59ae5-109">Turn on the setting you want, and then choose **Save**.</span></span> <span data-ttu-id="59ae5-110">有关 AutoPilot 配置文件设置的详细信息，请参阅[关于 AutoPilot 配置文件设置](autopilot-profile-settings.md)。</span><span class="sxs-lookup"><span data-stu-id="59ae5-110">For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](autopilot-profile-settings.md).</span></span>
+3. <span data-ttu-id="e3bc2-108">在 "**创建配置文件**" 页上，输入可帮助您识别它的配置文件的名称，例如 "营销"。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-108">On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing.</span></span> <span data-ttu-id="e3bc2-109">打开所需的设置，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-109">Turn on the setting you want, and then choose **Save**.</span></span> <span data-ttu-id="e3bc2-110">有关 AutoPilot 配置文件设置的详细信息，请参阅[关于 AutoPilot 配置文件设置](autopilot-profile-settings.md)。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-110">For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](autopilot-profile-settings.md).</span></span>
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
-### <a name="apply-profile-to-a-device"></a><span data-ttu-id="59ae5-112">对设备应用配置文件</span><span class="sxs-lookup"><span data-stu-id="59ae5-112">Apply profile to a device</span></span>
+### <a name="apply-profile-to-a-device"></a><span data-ttu-id="e3bc2-112">对设备应用配置文件</span><span class="sxs-lookup"><span data-stu-id="e3bc2-112">Apply profile to a device</span></span>
 
-<span data-ttu-id="59ae5-113">创建配置文件后，可以将其应用到一个或一组设备。</span><span class="sxs-lookup"><span data-stu-id="59ae5-113">After you create a profile, you can apply it to a device or a group of devices.</span></span> <span data-ttu-id="59ae5-114">您可以在分步[指南](add-autopilot-devices-and-profile.md)中选取现有配置文件，并将其应用于新设备，或替换某个设备或设备组的现有配置文件。</span><span class="sxs-lookup"><span data-stu-id="59ae5-114">You can pick an existing profile in the [step-by-step guide](add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices.</span></span> 
+<span data-ttu-id="e3bc2-113">创建配置文件后，可以将其应用到一个或一组设备。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-113">After you create a profile, you can apply it to a device or a group of devices.</span></span> <span data-ttu-id="e3bc2-114">您可以在分步[指南](add-autopilot-devices-and-profile.md)中选取现有配置文件，并将其应用于新设备，或替换某个设备或设备组的现有配置文件。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-114">You can pick an existing profile in the [step-by-step guide](add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices.</span></span> 
   
-1. <span data-ttu-id="59ae5-115">在" **准备 Windows**"页面上，选择" **设备**"选项卡。</span><span class="sxs-lookup"><span data-stu-id="59ae5-115">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
+1. <span data-ttu-id="e3bc2-115">在" **准备 Windows**"页面上，选择" **设备**"选项卡。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-115">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
     
-2. <span data-ttu-id="59ae5-116">选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "**分配的配置文件**" 下拉列表\> **中**选择一个配置文件。</span><span class="sxs-lookup"><span data-stu-id="59ae5-116">Select the check box next to a device name, and in the **Device** panel, choose a profile from the **Assigned profile** drop-down list \> **Save**.</span></span>
+2. <span data-ttu-id="e3bc2-116">选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "**分配的配置文件**" 下拉列表\> **中**选择一个配置文件。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-116">Select the check box next to a device name, and in the **Device** panel, choose a profile from the **Assigned profile** drop-down list \> **Save**.</span></span>
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
-## <a name="edit-delete-or-remove-a-profile"></a><span data-ttu-id="59ae5-118">编辑、删除或移除配置文件</span><span class="sxs-lookup"><span data-stu-id="59ae5-118">Edit, delete, or remove a profile</span></span>
+## <a name="edit-delete-or-remove-a-profile"></a><span data-ttu-id="e3bc2-118">编辑、删除或移除配置文件</span><span class="sxs-lookup"><span data-stu-id="e3bc2-118">Edit, delete, or remove a profile</span></span>
 
-<span data-ttu-id="59ae5-p103">将配置文件分配给一个设备后，便可以更新该文件，即使已将该设备提供给一个用户。如果设备连接了 internet，系统会在设置过程中下载最新版本的配置文件。如果用户将其设备恢复为出厂默认设置，设备将再次下载配置文件的最新更新。</span><span class="sxs-lookup"><span data-stu-id="59ae5-p103">Once you've assigned a profile to a device, you can update it, even if you've already given the device to a user. When the device connects to the internet, it downloads the latest version of your profile during the setup process. If the user restores their device to its factory default settings, the device will again download the latest updates to your profile.</span></span> 
+<span data-ttu-id="e3bc2-p103">将配置文件分配给一个设备后，便可以更新该文件，即使已将该设备提供给一个用户。如果设备连接了 internet，系统会在设置过程中下载最新版本的配置文件。如果用户将其设备恢复为出厂默认设置，设备将再次下载配置文件的最新更新。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-p103">Once you've assigned a profile to a device, you can update it, even if you've already given the device to a user. When the device connects to the internet, it downloads the latest version of your profile during the setup process. If the user restores their device to its factory default settings, the device will again download the latest updates to your profile.</span></span> 
   
-### <a name="edit-a-profile"></a><span data-ttu-id="59ae5-122">编辑配置文件</span><span class="sxs-lookup"><span data-stu-id="59ae5-122">Edit a profile</span></span>
+### <a name="edit-a-profile"></a><span data-ttu-id="e3bc2-122">编辑配置文件</span><span class="sxs-lookup"><span data-stu-id="e3bc2-122">Edit a profile</span></span>
 
-1. <span data-ttu-id="59ae5-123">在" **准备 Windows**"页面上，选择" **配置文件**"选项卡。</span><span class="sxs-lookup"><span data-stu-id="59ae5-123">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
+1. <span data-ttu-id="e3bc2-123">在" **准备 Windows**"页面上，选择" **配置文件**"选项卡。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-123">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
     
-2. <span data-ttu-id="59ae5-124">选中设备名称旁边的复选框，然后在 "**配置文件**" 面板中，更新任何可用设置\> **保存**。</span><span class="sxs-lookup"><span data-stu-id="59ae5-124">Select the check box next to a device name, and in the **Profile** panel, update any of the available settings \> **Save**.</span></span>
+2. <span data-ttu-id="e3bc2-124">选中设备名称旁边的复选框，然后在 "**配置文件**" 面板中，更新任何可用设置\> **保存**。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-124">Select the check box next to a device name, and in the **Profile** panel, update any of the available settings \> **Save**.</span></span>
     
-    <span data-ttu-id="59ae5-125">如果在用户将设备连接到 internet 之前执行此操作，配置文件会应用于设置过程。</span><span class="sxs-lookup"><span data-stu-id="59ae5-125">If you do this before a user connects the device to the internet, then the profile gets applied to the setup process.</span></span>
+    <span data-ttu-id="e3bc2-125">如果在用户将设备连接到 internet 之前执行此操作，配置文件会应用于设置过程。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-125">If you do this before a user connects the device to the internet, then the profile gets applied to the setup process.</span></span>
     
-### <a name="delete-a-profile"></a><span data-ttu-id="59ae5-126">删除配置文件</span><span class="sxs-lookup"><span data-stu-id="59ae5-126">Delete a profile</span></span>
+### <a name="delete-a-profile"></a><span data-ttu-id="e3bc2-126">删除配置文件</span><span class="sxs-lookup"><span data-stu-id="e3bc2-126">Delete a profile</span></span>
 
-1. <span data-ttu-id="59ae5-127">在" **准备 Windows**"页面上，选择" **配置文件**"选项卡。</span><span class="sxs-lookup"><span data-stu-id="59ae5-127">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
+1. <span data-ttu-id="e3bc2-127">在" **准备 Windows**"页面上，选择" **配置文件**"选项卡。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-127">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
     
-2. <span data-ttu-id="59ae5-128">选中设备名称旁边的复选框，然后在 "**配置文件**" 面板中选择 "**删除配置文件** \> **保存**"。</span><span class="sxs-lookup"><span data-stu-id="59ae5-128">Select the check box next to a device name, and in the **Profile** panel, select **Delete profile** \> **Save**.</span></span>
+2. <span data-ttu-id="e3bc2-128">选中设备名称旁边的复选框，然后在 "**配置文件**" 面板中选择 "**删除配置文件** \> **保存**"。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-128">Select the check box next to a device name, and in the **Profile** panel, select **Delete profile** \> **Save**.</span></span>
     
-    <span data-ttu-id="59ae5-129">如果删除了配置文件，该文件会从之前分配到的一个或一组设备中移除。</span><span class="sxs-lookup"><span data-stu-id="59ae5-129">When you delete a profile, it gets removed from a device or a group of devices it was assigned to.</span></span>
+    <span data-ttu-id="e3bc2-129">如果删除了配置文件，该文件会从之前分配到的一个或一组设备中移除。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-129">When you delete a profile, it gets removed from a device or a group of devices it was assigned to.</span></span>
     
-### <a name="remove-a-profile"></a><span data-ttu-id="59ae5-130">移除配置文件</span><span class="sxs-lookup"><span data-stu-id="59ae5-130">Remove a profile</span></span>
+### <a name="remove-a-profile"></a><span data-ttu-id="e3bc2-130">移除配置文件</span><span class="sxs-lookup"><span data-stu-id="e3bc2-130">Remove a profile</span></span>
 
-1. <span data-ttu-id="59ae5-131">在" **准备 Windows**"页面上，选择" **设备**"选项卡。</span><span class="sxs-lookup"><span data-stu-id="59ae5-131">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
+1. <span data-ttu-id="e3bc2-131">在" **准备 Windows**"页面上，选择" **设备**"选项卡。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-131">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
     
-2. <span data-ttu-id="59ae5-132">选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "分配的**配置文件**" \> **下拉列表中**选择 "**无**"。</span><span class="sxs-lookup"><span data-stu-id="59ae5-132">Select the check box next to a device name, and in the **Device** panel, choose **None** from the **Assigned profile** drop-down list \> **Save**.</span></span>
+2. <span data-ttu-id="e3bc2-132">选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "分配的**配置文件**" \> **下拉列表中**选择 "**无**"。</span><span class="sxs-lookup"><span data-stu-id="e3bc2-132">Select the check box next to a device name, and in the **Device** panel, choose **None** from the **Assigned profile** drop-down list \> **Save**.</span></span>
     

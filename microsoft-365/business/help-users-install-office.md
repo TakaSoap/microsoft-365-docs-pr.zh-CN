@@ -1,5 +1,7 @@
 ---
 title: 帮助你的用户在 Windows 10 设备上安装 Office
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,42 +25,42 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 帮助你的用户安装 Office 应用。
-ms.openlocfilehash: 73eb3ed9bb88dca4232865b2ecd9015441875c07
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831205"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593913"
 ---
-# <a name="help-your-users-install-office-on-windows-10-devices"></a><span data-ttu-id="51d8b-103">帮助你的用户在 Windows 10 设备上安装 Office</span><span class="sxs-lookup"><span data-stu-id="51d8b-103">Help your users install Office on Windows 10 devices</span></span>
+# <a name="help-your-users-install-office-on-windows-10-devices"></a><span data-ttu-id="7fc57-103">帮助你的用户在 Windows 10 设备上安装 Office</span><span class="sxs-lookup"><span data-stu-id="7fc57-103">Help your users install Office on Windows 10 devices</span></span>
 
-<span data-ttu-id="51d8b-104">[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="51d8b-104">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span></span>
+<span data-ttu-id="7fc57-104">[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="7fc57-104">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span></span>
 
-<span data-ttu-id="51d8b-105">你可以从 Microsoft 365 商业版管理中心快速轻松地在 Windows 10 电脑上安装 Office。</span><span class="sxs-lookup"><span data-stu-id="51d8b-105">You can quickly and easily install Office on Windows 10 PCs from the Microsoft 365 Business admin center.</span></span>
+<span data-ttu-id="7fc57-105">你可以从 Microsoft 365 商业版管理中心快速轻松地在 Windows 10 电脑上安装 Office。</span><span class="sxs-lookup"><span data-stu-id="7fc57-105">You can quickly and easily install Office on Windows 10 PCs from the Microsoft 365 Business admin center.</span></span>
   
-<span data-ttu-id="51d8b-106">若要了解这如何适用于以前安装的 Office 应用，请在开始之前阅读[准备 Office 客户端安装](prepare-for-office-client-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="51d8b-106">To understand how this works with previously installed Office apps, read [Prepare for Office client installation](prepare-for-office-client-deployment.md) before you get started.</span></span>
+<span data-ttu-id="7fc57-106">若要了解这如何适用于以前安装的 Office 应用，请在开始之前阅读[准备 Office 客户端安装](prepare-for-office-client-deployment.md)。</span><span class="sxs-lookup"><span data-stu-id="7fc57-106">To understand how this works with previously installed Office apps, read [Prepare for Office client installation](prepare-for-office-client-deployment.md) before you get started.</span></span>
 
-<span data-ttu-id="51d8b-107">观看有关安装 Office 应用程序的简短视频。</span><span class="sxs-lookup"><span data-stu-id="51d8b-107">Watch a short video about installing Office apps.</span></span><br><br>
+<span data-ttu-id="7fc57-107">观看有关安装 Office 应用程序的简短视频。</span><span class="sxs-lookup"><span data-stu-id="7fc57-107">Watch a short video about installing Office apps.</span></span><br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-<span data-ttu-id="51d8b-108">如果你发现此视频有帮助，请查看[适用于 Microsoft 365 的完整培训系列和小型企业](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)版。</span><span class="sxs-lookup"><span data-stu-id="51d8b-108">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="7fc57-108">如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。</span><span class="sxs-lookup"><span data-stu-id="7fc57-108">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
-## <a name="manage-office-deployments"></a><span data-ttu-id="51d8b-109">管理 Office 部署</span><span class="sxs-lookup"><span data-stu-id="51d8b-109">Manage Office deployments</span></span>
+## <a name="manage-office-deployments"></a><span data-ttu-id="7fc57-109">管理 Office 部署</span><span class="sxs-lookup"><span data-stu-id="7fc57-109">Manage Office deployments</span></span>
 
-1. <span data-ttu-id="51d8b-110">转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>，并使用全局管理员凭据登录。</span><span class="sxs-lookup"><span data-stu-id="51d8b-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>, and sign in with global admin credentials.</span></span> 
+1. <span data-ttu-id="7fc57-110">转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>，并使用全局管理员凭据登录。</span><span class="sxs-lookup"><span data-stu-id="7fc57-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>, and sign in with global admin credentials.</span></span> 
 
-2. <span data-ttu-id="51d8b-111">转到左侧导航窗格中的 "**设置**"，在 "**设置**" 页上，滚动到 "**应用程序和更新**"。</span><span class="sxs-lookup"><span data-stu-id="51d8b-111">Go to **Setup** in the left navigation pane, and on the **Setup** page, scroll to **Apps and updates**.</span></span>
+2. <span data-ttu-id="7fc57-111">转到左侧导航窗格中的 "**设置**"，在 "**设置**" 页上，滚动到 "**应用程序和更新**"。</span><span class="sxs-lookup"><span data-stu-id="7fc57-111">Go to **Setup** in the left navigation pane, and on the **Setup** page, scroll to **Apps and updates**.</span></span>
     > [!NOTE]
-    > <span data-ttu-id="51d8b-112">如果所有用户都安装了 Office 应用程序，则可能看不到此卡。</span><span class="sxs-lookup"><span data-stu-id="51d8b-112">You might not see this card if all of your  users have installed Office apps.</span></span>
+    > <span data-ttu-id="7fc57-112">如果所有用户都安装了 Office 应用程序，则可能看不到此卡。</span><span class="sxs-lookup"><span data-stu-id="7fc57-112">You might not see this card if all of your  users have installed Office apps.</span></span>
   
-3. <span data-ttu-id="51d8b-113">在 "**帮助用户安装其 Office 应用程序**卡" 中，选择 "**视图**"，然后**开始**。</span><span class="sxs-lookup"><span data-stu-id="51d8b-113">On the **Help users install their Office apps** card, choose **View**, and then **Get started**.</span></span>
+3. <span data-ttu-id="7fc57-113">在 "**帮助用户安装其 Office 应用程序**卡" 中，选择 "**视图**"，然后**开始**。</span><span class="sxs-lookup"><span data-stu-id="7fc57-113">On the **Help users install their Office apps** card, choose **View**, and then **Get started**.</span></span>
     
-4. <span data-ttu-id="51d8b-114">在**电子邮件用户上下载 "Office 面板" 的链接**中，选择要发送电子邮件的用户，然后**通过电子邮件发送选定用户**。</span><span class="sxs-lookup"><span data-stu-id="51d8b-114">On the **Email users a link to download Office** panel, select the users you want to email, and then **Email selected users**.</span></span>
+4. <span data-ttu-id="7fc57-114">在**电子邮件用户上下载 "Office 面板" 的链接**中，选择要发送电子邮件的用户，然后**通过电子邮件发送选定用户**。</span><span class="sxs-lookup"><span data-stu-id="7fc57-114">On the **Email users a link to download Office** panel, select the users you want to email, and then **Email selected users**.</span></span>
 
     
-      <span data-ttu-id="51d8b-115">:::image type="content" source="media/sendemailtousers.png" alt-text="选择 "用户"，通过 Office 下载链接发送电子邮件。":::</span><span class="sxs-lookup"><span data-stu-id="51d8b-115">:::image type="content" source="media/sendemailtousers.png" alt-text="Select users to send email with Office download link.":::</span></span>
+      :::image type="content" source="media/sendemailtousers.png" alt-text="选择 "用户"，通过 Office 下载链接发送电子邮件。":::
 
-## <a name="see-also"></a><span data-ttu-id="51d8b-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="51d8b-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7fc57-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7fc57-116">See also</span></span>
 
-[<span data-ttu-id="51d8b-117">Microsoft 365 商业培训视频</span><span class="sxs-lookup"><span data-stu-id="51d8b-117">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="7fc57-117">Microsoft 365 商业版培训视频</span><span class="sxs-lookup"><span data-stu-id="7fc57-117">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

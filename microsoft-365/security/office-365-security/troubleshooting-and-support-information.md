@@ -1,5 +1,7 @@
 ---
 title: 疑难解答信息和支持信息
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,78 +16,78 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。
-ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: efb71aab852b76b2b898419444bfea4144728514
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971620"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598169"
 ---
-# <a name="troubleshooting-and-support-information"></a><span data-ttu-id="1825e-103">疑难解答信息和支持信息</span><span class="sxs-lookup"><span data-stu-id="1825e-103">Troubleshooting and support information</span></span>
+# <a name="troubleshooting-and-support-information"></a><span data-ttu-id="f6830-103">疑难解答信息和支持信息</span><span class="sxs-lookup"><span data-stu-id="f6830-103">Troubleshooting and support information</span></span>
 
-<span data-ttu-id="1825e-104">本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。</span><span class="sxs-lookup"><span data-stu-id="1825e-104">This topic describes troubleshooting steps for end users and administrators, and provides information about how to contact technical support for assistance.</span></span>
+<span data-ttu-id="f6830-104">本主题介绍了针对最终用户和管理员的疑难解答步骤，并提供了有关如何联系技术支持以寻求帮助的信息。</span><span class="sxs-lookup"><span data-stu-id="f6830-104">This topic describes troubleshooting steps for end users and administrators, and provides information about how to contact technical support for assistance.</span></span>
 
-## <a name="troubleshooting-for-users"></a><span data-ttu-id="1825e-105">用户的疑难解答</span><span class="sxs-lookup"><span data-stu-id="1825e-105">Troubleshooting for Users</span></span>
+## <a name="troubleshooting-for-users"></a><span data-ttu-id="f6830-105">用户的疑难解答</span><span class="sxs-lookup"><span data-stu-id="f6830-105">Troubleshooting for Users</span></span>
 
-<span data-ttu-id="1825e-106">有时，添加垃圾电子邮件报告外接端后，Microsoft Outlook 可能会遇到问题。</span><span class="sxs-lookup"><span data-stu-id="1825e-106">Occasionally, you may experience trouble with Microsoft Outlook after adding the Junk Email Reporting Add-In.</span></span> <span data-ttu-id="1825e-107">以下是您可能遇到的问题以及解决这些问题的提示。</span><span class="sxs-lookup"><span data-stu-id="1825e-107">Following are problems that you may encounter, along with tips for resolving these issues.</span></span>
+<span data-ttu-id="f6830-106">有时，添加垃圾电子邮件报告外接端后，Microsoft Outlook 可能会遇到问题。</span><span class="sxs-lookup"><span data-stu-id="f6830-106">Occasionally, you may experience trouble with Microsoft Outlook after adding the Junk Email Reporting Add-In.</span></span> <span data-ttu-id="f6830-107">以下是您可能遇到的问题以及解决这些问题的提示。</span><span class="sxs-lookup"><span data-stu-id="f6830-107">Following are problems that you may encounter, along with tips for resolving these issues.</span></span>
 
-- <span data-ttu-id="1825e-108">Nothing happens when you click **Report Junk**</span><span class="sxs-lookup"><span data-stu-id="1825e-108">Nothing happens when you click **Report Junk**</span></span>
+- <span data-ttu-id="f6830-108">Nothing happens when you click **Report Junk**</span><span class="sxs-lookup"><span data-stu-id="f6830-108">Nothing happens when you click **Report Junk**</span></span>
 
-- <span data-ttu-id="1825e-109">当您选择一封电子邮件之后，Outlook 停止响应</span><span class="sxs-lookup"><span data-stu-id="1825e-109">Outlook stops responding after you select an email message</span></span>
+- <span data-ttu-id="f6830-109">当您选择一封电子邮件之后，Outlook 停止响应</span><span class="sxs-lookup"><span data-stu-id="f6830-109">Outlook stops responding after you select an email message</span></span>
 
-- <span data-ttu-id="1825e-110">由于收到"未送达"回复，报告的垃圾邮件无法传递</span><span class="sxs-lookup"><span data-stu-id="1825e-110">Reported junk mail cannot be delivered due to an "undeliverable" reply</span></span>
+- <span data-ttu-id="f6830-110">由于收到"未送达"回复，报告的垃圾邮件无法传递</span><span class="sxs-lookup"><span data-stu-id="f6830-110">Reported junk mail cannot be delivered due to an "undeliverable" reply</span></span>
 
-<span data-ttu-id="1825e-111">若要解决此问题，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="1825e-111">To fix this problem, do the following steps:</span></span>
+<span data-ttu-id="f6830-111">若要解决此问题，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="f6830-111">To fix this problem, do the following steps:</span></span>
 
-1. <span data-ttu-id="1825e-112">关闭并重新启动 Outlook。</span><span class="sxs-lookup"><span data-stu-id="1825e-112">Close and restart Outlook.</span></span>
+1. <span data-ttu-id="f6830-112">关闭并重新启动 Outlook。</span><span class="sxs-lookup"><span data-stu-id="f6830-112">Close and restart Outlook.</span></span>
 
-2. <span data-ttu-id="1825e-p102">验证您是否能够创建和发送测试邮件。要执行此操作，您可以发送一封测试邮件到另一个您负责的电子帐户，然后验证是否收到该电子邮件。</span><span class="sxs-lookup"><span data-stu-id="1825e-p102">Verify that you are able to create and send a test message. To do this, you can send a test message to another email account that you are responsible for, and then verify that the email message is received.</span></span>
+2. <span data-ttu-id="f6830-p102">验证您是否能够创建和发送测试邮件。要执行此操作，您可以发送一封测试邮件到另一个您负责的电子帐户，然后验证是否收到该电子邮件。</span><span class="sxs-lookup"><span data-stu-id="f6830-p102">Verify that you are able to create and send a test message. To do this, you can send a test message to another email account that you are responsible for, and then verify that the email message is received.</span></span>
 
-<span data-ttu-id="1825e-115">如果问题仍然存在，请与管理员联系。</span><span class="sxs-lookup"><span data-stu-id="1825e-115">If the problem persists, contact your admin.</span></span>
+<span data-ttu-id="f6830-115">如果问题仍然存在，请与管理员联系。</span><span class="sxs-lookup"><span data-stu-id="f6830-115">If the problem persists, contact your admin.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="1825e-116">您还可以将垃圾邮件直接提交给 Microsoft，电子邮件地址为 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)；或者将误报邮件提交至 [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com)。</span><span class="sxs-lookup"><span data-stu-id="1825e-116">You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive messages by using the [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) email address.</span></span> <span data-ttu-id="1825e-117">有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。</span><span class="sxs-lookup"><span data-stu-id="1825e-117">For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).</span></span>
+> <span data-ttu-id="f6830-116">您还可以将垃圾邮件直接提交给 Microsoft，电子邮件地址为 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)；或者将误报邮件提交至 [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com)。</span><span class="sxs-lookup"><span data-stu-id="f6830-116">You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive messages by using the [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) email address.</span></span> <span data-ttu-id="f6830-117">有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。</span><span class="sxs-lookup"><span data-stu-id="f6830-117">For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).</span></span>
 
-## <a name="troubleshooting-for-administrators"></a><span data-ttu-id="1825e-118">管理员的疑难解答</span><span class="sxs-lookup"><span data-stu-id="1825e-118">Troubleshooting for Administrators</span></span>
+## <a name="troubleshooting-for-administrators"></a><span data-ttu-id="f6830-118">管理员的疑难解答</span><span class="sxs-lookup"><span data-stu-id="f6830-118">Troubleshooting for Administrators</span></span>
 
-<span data-ttu-id="1825e-119">作为管理员，您可能会遇到使用 Outlook 的垃圾电子邮件报告外接程序的用户的问题。</span><span class="sxs-lookup"><span data-stu-id="1825e-119">As an administrator, you might experience issues with users using the Junk Email Reporting Add-in for Outlook.</span></span> <span data-ttu-id="1825e-120">以下是解决您可能遇到的问题的提示。</span><span class="sxs-lookup"><span data-stu-id="1825e-120">Following are some tips for resolving problems that you might encounter.</span></span>
+<span data-ttu-id="f6830-119">作为管理员，您可能会遇到使用 Outlook 的垃圾电子邮件报告外接程序的用户的问题。</span><span class="sxs-lookup"><span data-stu-id="f6830-119">As an administrator, you might experience issues with users using the Junk Email Reporting Add-in for Outlook.</span></span> <span data-ttu-id="f6830-120">以下是解决您可能遇到的问题的提示。</span><span class="sxs-lookup"><span data-stu-id="f6830-120">Following are some tips for resolving problems that you might encounter.</span></span>
 
-### <a name="problem-an-error-message-asking-users-to-contact-their-system-administrator-continually-appears"></a><span data-ttu-id="1825e-121">问题：会出现一条错误消息，询问用户是否持续联系其系统管理员</span><span class="sxs-lookup"><span data-stu-id="1825e-121">Problem: An error message asking users to contact their system administrator continually appears</span></span>
+### <a name="problem-an-error-message-asking-users-to-contact-their-system-administrator-continually-appears"></a><span data-ttu-id="f6830-121">问题：会出现一条错误消息，询问用户是否持续联系其系统管理员</span><span class="sxs-lookup"><span data-stu-id="f6830-121">Problem: An error message asking users to contact their system administrator continually appears</span></span>
 
-1. <span data-ttu-id="1825e-122">设置以下注册表项的值为"详细"：</span><span class="sxs-lookup"><span data-stu-id="1825e-122">Set the following registry key value to "Verbose":</span></span>
+1. <span data-ttu-id="f6830-122">设置以下注册表项的值为"详细"：</span><span class="sxs-lookup"><span data-stu-id="f6830-122">Set the following registry key value to "Verbose":</span></span>
 
-   - <span data-ttu-id="1825e-123">**32 位 Outlook 安装在32位操作系统上**：</span><span class="sxs-lookup"><span data-stu-id="1825e-123">**32 bit Outlook installed on a 32 bit operating system**:</span></span>
+   - <span data-ttu-id="f6830-123">**32 位 Outlook 安装在32位操作系统上**：</span><span class="sxs-lookup"><span data-stu-id="f6830-123">**32 bit Outlook installed on a 32 bit operating system**:</span></span>
 
      `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Junk Email Reporting\Addins\LoggingLevel`
 
-   - <span data-ttu-id="1825e-124">**32 位 Outlook 安装在64位操作系统上**：</span><span class="sxs-lookup"><span data-stu-id="1825e-124">**32 bit Outlook installed on a 64 bit operating system**:</span></span>
+   - <span data-ttu-id="f6830-124">**32 位 Outlook 安装在64位操作系统上**：</span><span class="sxs-lookup"><span data-stu-id="f6830-124">**32 bit Outlook installed on a 64 bit operating system**:</span></span>
 
      `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Junk Email Reporting\Addins\LoggingLevel`
 
-   - <span data-ttu-id="1825e-125">**64 位 Outlook （始终安装在64位操作系统上）**：</span><span class="sxs-lookup"><span data-stu-id="1825e-125">**64 bit Outlook (always installed on a 64 bit operating system)**:</span></span>
+   - <span data-ttu-id="f6830-125">**64 位 Outlook （始终安装在64位操作系统上）**：</span><span class="sxs-lookup"><span data-stu-id="f6830-125">**64 bit Outlook (always installed on a 64 bit operating system)**:</span></span>
 
      `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Junk Email Reporting\Addins\LoggingLevel`
 
-2. <span data-ttu-id="1825e-126">重新启动 Outlook 并要求用户在看到错误消息时报告回来。</span><span class="sxs-lookup"><span data-stu-id="1825e-126">Restart Outlook and ask users to report back when they see the error message.</span></span>
+2. <span data-ttu-id="f6830-126">重新启动 Outlook 并要求用户在看到错误消息时报告回来。</span><span class="sxs-lookup"><span data-stu-id="f6830-126">Restart Outlook and ask users to report back when they see the error message.</span></span>
 
-3. <span data-ttu-id="1825e-127">收集在以下位置找到的日志信息：</span><span class="sxs-lookup"><span data-stu-id="1825e-127">Collect the log information found at the following location:</span></span>
+3. <span data-ttu-id="f6830-127">收集在以下位置找到的日志信息：</span><span class="sxs-lookup"><span data-stu-id="f6830-127">Collect the log information found at the following location:</span></span>
 
    `%LOCALAPPDATA%\Microsoft\Junk Email Reporting Add-in\SpamReporterAddinLog.txt`
 
-4. <span data-ttu-id="1825e-128">联系 Exchange Online Protection 技术支持并向他们提供日志信息。</span><span class="sxs-lookup"><span data-stu-id="1825e-128">Contact Exchange Online Protection Technical Support and provide them with the log information.</span></span>
+4. <span data-ttu-id="f6830-128">联系 Exchange Online Protection 技术支持并向他们提供日志信息。</span><span class="sxs-lookup"><span data-stu-id="f6830-128">Contact Exchange Online Protection Technical Support and provide them with the log information.</span></span>
 
-### <a name="problem-users-choose-not-to-receive-a-confirmation-when-they-submit-an-email-as-junk-and-now-they-want-the-option-back"></a><span data-ttu-id="1825e-129">问题：当用户将电子邮件提交为垃圾邮件时，用户选择不接收确认，现在他们想要返回该选项</span><span class="sxs-lookup"><span data-stu-id="1825e-129">Problem: Users choose not to receive a confirmation when they submit an email as junk and now they want the option back</span></span>
+### <a name="problem-users-choose-not-to-receive-a-confirmation-when-they-submit-an-email-as-junk-and-now-they-want-the-option-back"></a><span data-ttu-id="f6830-129">问题：当用户将电子邮件提交为垃圾邮件时，用户选择不接收确认，现在他们想要返回该选项</span><span class="sxs-lookup"><span data-stu-id="f6830-129">Problem: Users choose not to receive a confirmation when they submit an email as junk and now they want the option back</span></span>
 
-1. <span data-ttu-id="1825e-130">将以下注册表项的值设置为 "True" `HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences\ConfirmReportJunk`：。</span><span class="sxs-lookup"><span data-stu-id="1825e-130">Set the following registry key value to "True": `HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences\ConfirmReportJunk`.</span></span>
+1. <span data-ttu-id="f6830-130">将以下注册表项的值设置为 "True" `HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences\ConfirmReportJunk`：。</span><span class="sxs-lookup"><span data-stu-id="f6830-130">Set the following registry key value to "True": `HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences\ConfirmReportJunk`.</span></span>
 
-2. <span data-ttu-id="1825e-131">重新启动 Outlook。</span><span class="sxs-lookup"><span data-stu-id="1825e-131">Restart Outlook.</span></span>
+2. <span data-ttu-id="f6830-131">重新启动 Outlook。</span><span class="sxs-lookup"><span data-stu-id="f6830-131">Restart Outlook.</span></span>
 
-## <a name="support-information"></a><span data-ttu-id="1825e-132">支持信息</span><span class="sxs-lookup"><span data-stu-id="1825e-132">Support Information</span></span>
+## <a name="support-information"></a><span data-ttu-id="f6830-132">支持信息</span><span class="sxs-lookup"><span data-stu-id="f6830-132">Support Information</span></span>
 
-<span data-ttu-id="1825e-133">如果你需要有关加载项的安装、配置或卸载的帮助，请使用 Microsoft 365 管理中心中的 "支持" 页面上的 "新建服务请求" 链接联系技术支持。</span><span class="sxs-lookup"><span data-stu-id="1825e-133">If you need help with the installation, configuration, or uninstallation of the add-in, please contact technical support using the new service request link on the support page in the Microsoft 365 admin center.</span></span> <span data-ttu-id="1825e-134">有关其他选项，包括通过电话提交服务请求和自助支持选项，请参阅[Help and support FOR EOP](help-and-support-for-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="1825e-134">For additional options including submitting a service request via the telephone and self-support options, see [Help and support for EOP](help-and-support-for-eop.md).</span></span>
+<span data-ttu-id="f6830-133">如果你需要有关加载项的安装、配置或卸载的帮助，请使用 Microsoft 365 管理中心中的 "支持" 页面上的 "新建服务请求" 链接联系技术支持。</span><span class="sxs-lookup"><span data-stu-id="f6830-133">If you need help with the installation, configuration, or uninstallation of the add-in, please contact technical support using the new service request link on the support page in the Microsoft 365 admin center.</span></span> <span data-ttu-id="f6830-134">有关其他选项，包括通过电话提交服务请求和自助支持选项，请参阅[Help and support FOR EOP](help-and-support-for-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="f6830-134">For additional options including submitting a service request via the telephone and self-support options, see [Help and support for EOP](help-and-support-for-eop.md).</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="1825e-135">更多信息</span><span class="sxs-lookup"><span data-stu-id="1825e-135">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="f6830-135">更多详细信息</span><span class="sxs-lookup"><span data-stu-id="f6830-135">For more information</span></span>
 
-[<span data-ttu-id="1825e-136">启用报告消息加载项</span><span class="sxs-lookup"><span data-stu-id="1825e-136">Enable the Report Message add-in</span></span>](enable-the-report-message-add-in.md)
+[<span data-ttu-id="f6830-136">启用报告消息加载项</span><span class="sxs-lookup"><span data-stu-id="f6830-136">Enable the Report Message add-in</span></span>](enable-the-report-message-add-in.md)
 
-[<span data-ttu-id="1825e-137">向 Microsoft 报告垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="1825e-137">Report junk email messages to Microsoft</span></span>](report-junk-email-messages-to-microsoft.md)
+[<span data-ttu-id="f6830-137">向 Microsoft 报告垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="f6830-137">Report junk email messages to Microsoft</span></span>](report-junk-email-messages-to-microsoft.md)
