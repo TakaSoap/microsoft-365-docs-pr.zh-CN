@@ -1,5 +1,7 @@
 ---
 title: 详细了解防欺骗智能
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 在 "反垃圾邮件设置&amp; " 页上的 "安全合规性中心" 中使用欺骗智能，以查看所有哄骗的发件人是组织中的域，还是哄骗外部域。 欺骗智能作为 Office 365 企业版 E5 的一部分或作为高级威胁防护和 Exchange Online Protection 的一部分单独提供。
-ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: 82b3759290e4cf0024aaf74a066354f46ea3a303
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989487"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599089"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>详细了解防欺骗智能
 

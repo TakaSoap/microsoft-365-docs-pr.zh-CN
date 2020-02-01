@@ -1,5 +1,7 @@
 ---
 title: EOP 帮助与支持
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: 3be67348b9522832a754e83e57e4a99e4f9147b3
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 3aef0cfa6209809f7a65e4179809d58d6f55aeb2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970418"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599239"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 

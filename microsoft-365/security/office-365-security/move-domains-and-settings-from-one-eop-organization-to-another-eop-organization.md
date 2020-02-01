@@ -1,5 +1,7 @@
 ---
 title: 将域和设置从一个 EOP 组织移动到另一个 EOP 组织
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。
-ms.openlocfilehash: 4081c5ec67dc88429fd748014534830c42a816f8
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: cfd83b8558ed4cec3a48b536437e0a0dbe75aeaa
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971600"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598769"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 

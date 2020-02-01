@@ -1,5 +1,7 @@
 ---
 title: Office 365 如何验证发件人地址以防止仿冒
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 为了帮助防止网络钓鱼，Office 365 和 Outlook.com 现在要求来自：地址的 RFC 合规性。
-ms.openlocfilehash: 5805ca41243603ef4f58bbf39c8ddb38e5a9aa01
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 6459faa22f29017568747b84bbd2935aad6763d1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871828"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599179"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何验证发件人地址以防止仿冒
 

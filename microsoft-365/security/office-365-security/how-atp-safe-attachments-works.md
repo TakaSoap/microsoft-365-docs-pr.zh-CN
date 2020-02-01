@@ -1,5 +1,7 @@
 ---
 title: Office 365 ATP 安全附件的工作原理
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -11,12 +13,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "\"安全附件\" 功能可提供电子邮件附件的单击时间验证。 使用安全附件保护组织免受用户在电子邮件中发送或接收的恶意文件的攻击。"
-ms.openlocfilehash: 78abf4aed7999e891907c981cddfea4e659d4285
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 951f9f0e50da6ef83135f1ca8f1ad109a8e66988
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305916"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599219"
 ---
 # <a name="how-office-365-atp-safe-attachments-works"></a>Office 365 ATP 安全附件的工作原理
 

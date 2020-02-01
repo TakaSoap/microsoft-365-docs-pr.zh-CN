@@ -1,5 +1,7 @@
 ---
 title: 出站邮件的高风险传递池
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: 当客户的电子邮件系统遭到恶意软件或恶意垃圾邮件攻击的威胁，并且通过托管筛选服务发送出站垃圾邮件时，这可能会导致第三方块上列出的 Office 365 数据中心服务器的 IP 地址列.
-ms.openlocfilehash: 5b9241dead5b40e9f216ecd3023d6f8b86fb0205
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 19987ae74b9c78a796ddb5f13cf8291a5ed269ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074650"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599229"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>出站邮件的高风险传递池
 
@@ -45,7 +47,7 @@ DSN 邮件激增的可能原因包括：
     
 所有这些问题都会导致该服务处理的 DSN 邮件数量的激增。在很多情况下，这些 DSN 邮件对其他电子邮件服务器和服务来说是垃圾邮件。
   
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)
   

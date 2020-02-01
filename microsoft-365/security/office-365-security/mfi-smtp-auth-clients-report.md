@@ -1,5 +1,7 @@
 ---
 title: SMTP 身份验证客户端报表
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的 SMTP 身份验证客户端报告。
-ms.openlocfilehash: a273da9e0ebe7987a22669c54f3ebfe103e5933c
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 7dee70de4000b23302348d964010801c8e097744
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306026"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598829"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP 身份验证客户端报表
 

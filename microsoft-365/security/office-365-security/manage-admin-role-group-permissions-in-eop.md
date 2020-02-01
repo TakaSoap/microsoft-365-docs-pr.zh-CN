@@ -1,5 +1,7 @@
 ---
 title: 管理 EOP 中的管理员角色组权限
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 管理员可以了解如何在 Exchange Online Protection 中分配或删除 Exchange 管理中心（EAC）中的权限。
-ms.openlocfilehash: 9b82836b5f9f28c3055e540890771def28382d2b
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: ab574e4d33d84774ef63f73297447ea66a74430b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306126"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599029"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>在 EOP 中管理管理员角色组权限
 

@@ -1,5 +1,7 @@
 ---
 title: 如何确保邮件不会标记为垃圾邮件
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
 description: 作为 Exchange Online 或 Exchange Online Protection (EOP) 管理员，你可以帮助确保通过服务传递的电子邮件不会被标记为垃圾邮件。 有关完成此操作的更新提示和过程，请参阅 使用安全列表或其他方法防止标记为垃圾邮件的误报电子邮件（使用安全列表或其他技术防止误报电子邮件被标记为垃圾邮件）。
-ms.openlocfilehash: d47c4c4dfdc9570ef12ce060c8b08969c6d43cec
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: cb84df8eddc8914c562118166294e8a8f4aac714
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238519"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599159"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>如何确保邮件不会标记为垃圾邮件
 

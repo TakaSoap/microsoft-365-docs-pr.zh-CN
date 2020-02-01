@@ -1,5 +1,7 @@
 ---
 title: 修复发件人域见解
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的 "邮件流" 仪表板中的 "修复发件人域的洞察力"。
-ms.openlocfilehash: bda6482b2c9264337db9e95f84ff41ce08582363
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306146"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598819"
 ---
 # <a name="fix-sender-domain-insight"></a>修复发件人域见解
 
@@ -32,7 +34,7 @@ Office 365 需要从内部本地电子邮件环境发送到 Office 365 的邮件
 
 不符合条件的邮件将不会被组织到组织中，并且可能会被拒绝。
 
-**Fix sender domain**真知灼见显示从本地环境中不符合条件的电子邮件，可帮助您识别本地电子邮件环境中可能受到危害的计算机和用户帐户，并帮助您采取修正操作。
+**Fix sender domain**真知灼见显示从本地环境中不符合条件的电子邮件，可帮助您识别本地电子邮件环境中可能受到危害的计算机和用户帐户，并帮助您采取补救措施。
 
 ![安全 & 合规性中心的邮件流仪表板中的修补发件人域洞察力](../media/sender-domain-insight-selected.png)
 

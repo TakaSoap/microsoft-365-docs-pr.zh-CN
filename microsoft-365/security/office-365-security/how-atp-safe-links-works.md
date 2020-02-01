@@ -1,5 +1,7 @@
 ---
 title: Office 365 ATP 安全链接的工作原理
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "\"安全链接\" 功能可提供对 Office 文档中的超链接和电子邮件中的超链接的单击时间验证。 阅读本文，了解 ATP 安全链接的工作原理。"
-ms.openlocfilehash: f8fcf6417dfb82a123307358f0fcd3e3cc8427e0
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 7b1c1368b274bbbb6dc7a5b760de4968575962fa
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233903"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599199"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 ATP 安全链接的工作原理
          

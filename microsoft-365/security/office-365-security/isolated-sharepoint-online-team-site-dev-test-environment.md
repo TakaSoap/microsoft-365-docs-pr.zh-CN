@@ -1,5 +1,7 @@
 ---
 title: 独立的 SharePoint Online 团队网站开发/测试环境
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。
-ms.openlocfilehash: ae76667a0c6c32dcf83b4fbd911a6e0b5db0c579
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 49443a5dd6b2c93e6bd7817c09747d49b163cabd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808107"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599119"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
@@ -168,7 +170,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 11. 单击列表中的“ProjectX 成员”****。
 
-12. 在“**人员和组**”页中，单击“**新建**”。
+12. 在“人员和组”页中，单击“新建”********。
 
 13. 在“共享”**** 对话框中，键入并选择“ProjectX-Members”****，然后单击“共享”****。
 

@@ -1,5 +1,7 @@
 ---
 title: 以 Office 365 中的管理员身份管理隔离的邮件和文件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '作为管理员，您可以在 Office 365 中查看、释放和报告误报的已隔离邮件。 您可以设置策略，以便 Office 365 筛选邮件并将其发送到隔离区，原因如下：因为它们被标识为垃圾邮件、批量、网络钓鱼和恶意软件，或者它们与邮件流规则匹配。 '
-ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 229c2fa859b537c366a02cb27d1e9a71cb9aa6b2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023326"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598969"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 中的管理员身份管理隔离的邮件和文件
 

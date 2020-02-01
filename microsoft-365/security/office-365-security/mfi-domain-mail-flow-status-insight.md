@@ -1,5 +1,7 @@
 ---
 title: 顶级域邮件流状态见解
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的顶层域邮件流状态洞察力。
-ms.openlocfilehash: b193eea87a76ad45e91c98511627b24b04d48fb5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1fb22ac1543c490dcbd316464803f5393003d503
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075561"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598879"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>顶级域邮件流状态见解
 

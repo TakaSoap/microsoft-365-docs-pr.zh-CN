@@ -1,5 +1,7 @@
 ---
 title: 避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中出现无效字符
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 为在反垃圾邮件配置中具有无效字符的管理员提供帮助，并在尝试使用安全&amp;合规性中心时遇到问题。
-ms.openlocfilehash: 5e6fa97a3f325b6fc6fdc449ba4a61282f67b644
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: f1841eb86583a48acecde0770f030b626323fa8e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866714"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599109"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中的无效字符 
 
@@ -52,7 +54,7 @@ ms.locfileid: "39866714"
     ```  
 
   
- ## <a name="for-more-information"></a>详细信息
+ ## <a name="for-more-information"></a>更多详细信息
 
 [安全&amp;合规性中心中的威胁管理](protect-against-threats.md)
   

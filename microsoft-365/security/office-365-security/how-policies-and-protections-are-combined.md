@@ -2,6 +2,8 @@
 title: 当邮件为红色标记时，如何组合策略和保护
 description: 介绍当电子邮件遇到多个保护且由多个检测形式进行扫描时，将应用哪些策略和保护。 当电子邮件标记为恶意软件、垃圾邮件、高可信度垃圾邮件、网络钓鱼，以及 EOP 和/或 ATP 时，将应用哪些策略以及要采取的操作。
 keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c6b3fcc931aa396187eb81d0db495f77877f667b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807981"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599169"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>在您的电子邮件上运行多个保护方法和检测扫描时应用什么策略
 
@@ -32,8 +34,8 @@ ms.locfileid: "40807981"
 |1     | 恶意软件      | MALW      | 恶意软件策略   |
 |双面     | 网络钓鱼     | PHSH     | 配置垃圾邮件筛选器策略     |
 |第三章     | 高可信度垃圾邮件      | HSPM        | 配置垃圾邮件筛选器策略        |
-|4     | 网络钓鱼        | SPOOF        | 反网络钓鱼策略、欺骗性智能        |
-|5     | 垃圾邮件         | SPM         | 配置垃圾邮件筛选器策略         |
+|4      | 网络钓鱼        | SPOOF        | 反网络钓鱼策略、欺骗性智能        |
+|5      | 垃圾邮件         | SPM         | 配置垃圾邮件筛选器策略         |
 |6      | 批量邮件         | BULK        | 配置垃圾邮件筛选器策略         |
 
 此外，这些策略适用于_具有 ATP 的组织_。

@@ -1,5 +1,7 @@
 ---
 title: 监视个人数据泄露
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -16,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: fbdae1222a8969b5f7bdd928e7baadfda70bb937
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572969"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598789"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 

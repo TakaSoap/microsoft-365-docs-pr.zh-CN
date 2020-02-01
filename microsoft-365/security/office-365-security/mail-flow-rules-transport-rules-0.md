@@ -1,5 +1,7 @@
 ---
 title: Exchange Online Protection 中的邮件流规则（传输规则）
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则（传输规则）识别通过 Office 365 组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 604e2c7cb0b2cc34021e6708ae9f08769e8e6e91
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 42b55893a9884b547a0d2d36e901169153d290d7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970338"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599019"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则（传输规则）
 
@@ -69,7 +71,7 @@ ms.locfileid: "39970338"
 
 下表显示了在规则中处理的多个条件、条件值、例外和操作。
 
-|**组件**|**逻辑**|**备注**|
+|**组件**|**逻辑**|**Comments**|
 |:-----|:-----|:-----|
 |注释|AND|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果要为带有附件的邮件和包含指定文本的邮件添加相同的免责声明，请为每个条件创建一个规则。在 EAC 中，你可以轻松地复制规则。|
 |邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。|或|一些条件允许你指定多个值。邮件必须匹配任一（并非全部）指定值。例如，如果电子邮件的主题为 Stock price information，并且 **主题包含这些词中的任一个**条件被配置为匹配单词 Contoso 或 stock，则符合该条件，因为主题中至少包含指定值中的一个。  |
@@ -120,7 +122,7 @@ All messages that flow through your organization are evaluated against the enabl
 
 - 在创建或修改邮件流规则后，最长可能需要30分钟才能将新的或更新的规则应用于邮件。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>更多详细信息
 
 [使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
