@@ -1,5 +1,7 @@
 ---
 title: 高级垃圾邮件筛选选项
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: 高级垃圾邮件筛选选项为管理员提供检查邮件的各种内容属性的功能。 邮件中存在的这些属性或者增加邮件的垃圾邮件得分（从而增加被标识为垃圾邮件的可能性），或者导致邮件被标记为垃圾邮件。 ASF 选项的目标是特定邮件属性，如垃圾邮件中常见的 HTML 标签和 URL 重定向。
-ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 07f2b32dac6ba4a04fbccac5f015be399f62e254
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793696"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599959"
 ---
 # <a name="advanced-spam-filtering-options"></a>高级垃圾邮件筛选选项
 

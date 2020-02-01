@@ -1,5 +1,7 @@
 ---
 title: 自动化 Microsoft 365 企业版测试环境的许可和组成员身份
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在 Microsoft 365 企业版测试环境中配置基于组的许可和动态组成员身份。
-ms.openlocfilehash: facff7eb556299c0312fa7488a35a96151bb1882
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0575f2aa763f85a0042e6d02f9cce65e69064973
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802117"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601179"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自动化 Microsoft 365 企业版测试环境的许可和组成员身份
 
@@ -31,7 +33,7 @@ ms.locfileid: "40802117"
 1. 创建 Microsoft 365 企业版测试环境。
 2. 配置和测试动态组成员身份和自动许可。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
@@ -61,7 +63,7 @@ ms.locfileid: "40802117"
    - 选择 "**部门**" 属性。
    - 选择 "**等于**" 运算符。
    - 键入**值**中的**销售额**。
-10. 单击 **“保存”**。
+10. 单击“**保存**”。
 11. 单击“**创建**”。
 
 接下来，配置 "销售" 组，以便自动向成员分配 Microsoft 365 E5 许可证。

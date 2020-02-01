@@ -1,5 +1,7 @@
 ---
 title: 为以前版本的 Office 365 邮件加密设置 Azure 权限管理
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 早期版本的 Office 365 邮件加密取决于 Microsoft Azure 权限管理（以前称为 "Windows Azure Active Directory 权限管理"）。
-ms.openlocfilehash: a6ba18982a65ff9687374b9e5dc370646817d96d
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: be0fad248465927ee7cc59b31a36e65ce5c053db
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38685166"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601479"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>为以前版本的 Office 365 邮件加密设置 Azure 权限管理
 

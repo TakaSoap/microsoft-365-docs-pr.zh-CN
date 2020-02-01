@@ -1,5 +1,7 @@
 ---
 title: 将非 Office 365 数据加载到证据中
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e05dc26159545e4daf7a8f4109268a1657fd62d6
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 3be5e4054e34cabb61505d48524feb2dbbfd0e44
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38685201"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600569"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>将非 Office 365 数据加载到证据中
 
@@ -28,7 +30,7 @@ ms.locfileid: "38685201"
 >[!Note]
 >数据调查需要 Office 365 E3 和您的组织的高级合规性加载项或 E5 订阅。 如果你没有该计划，并且想要尝试高级电子数据展示，可以注册 Office 365 企业版 E5 的试用版。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 如以下过程所述，使用 "上载非 Office 365" 功能需要具备以下条件：
 

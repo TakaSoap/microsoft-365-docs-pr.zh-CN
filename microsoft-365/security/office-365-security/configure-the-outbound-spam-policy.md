@@ -1,5 +1,7 @@
 ---
 title: 配置出站垃圾邮件策略
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。
-ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c17772db2a2961cade180a5c1e0403ae8450007f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808437"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599559"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>配置出站垃圾邮件策略
 
@@ -103,7 +105,7 @@ ms.locfileid: "40808437"
 
 8. 单击 "**保存**"
 
-## <a name="for-more-information"></a>详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [发送垃圾电子邮件后，从受限用户门户删除用户](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
 

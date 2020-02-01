@@ -3,6 +3,8 @@ title: 移动设备管理基础结构退出条件
 description: Microsoft 365 企业版包括使用 Microsoft Intune 的移动设备管理。 查看要求和先决条件、使用 Azure Active Directory 资源设置 Intune、注册 iOS、macOS、Android 和 Windows 设备、部署应用、创建配置配置文件、使用合规性策略，以及为移动启用条件访问Microsoft 365 企业版的设备管理。
 keywords: Microsoft 365，Microsoft 365 企业版，Microsoft 365 文档，移动设备管理，Intune
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/03/2019
@@ -13,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: e8f8f53224b334f92142e2c03ed05eaa9e38787a
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: daf7bcf6525f30b7b52065e4f6bf2ff335f4ea4b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37385719"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600879"
 ---
 # <a name="mobile-device-management-infrastructure-exit-criteria"></a>移动设备管理基础结构退出条件
 
-![第5阶段：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![阶段 5：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
 *这适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 

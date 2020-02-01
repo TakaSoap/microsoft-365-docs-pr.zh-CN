@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a402b880778a1644d63dfcdbe73ecc96f61f5be
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e8e46ba396d3900da52886815a6ef01243d8f24
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805535"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602689"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>澳大利亚 Prudential 法规颁发机构（APRA）
 
@@ -59,13 +61,13 @@ Microsoft 还解决了每个 APRA 风险管理的考虑事项：策略、治理�
 
 **金融机构在外包商业活动前是否需要 APRA 批准？**
 
-否。 但是，大多数管控的金融组织必须在 APRA 中输入用于外包商业活动的协议后通知或咨询 APRA，然后再将这些活动外包到澳大利亚之外。
+不是。 但是，大多数管控的金融组织必须在 APRA 中输入用于外包商业活动的协议后通知或咨询 APRA，然后再将这些活动外包到澳大利亚之外。
 
 此外，如果云服务被视为采用 APRA[信息白皮书](https://go.microsoft.com/fwlink/p/?linkid=2099080)中所述的 "提高固有风险"，则鼓励金融机构咨询 APRA，而不考虑是否在澳大利亚的内部或外部提供了该服务。
 
 **是否允许在澳大利亚之外传输数据？**
 
-是。 常规隐私法规（适用于所有部门，而不仅仅是金融机构）允许在特定条件下在澳大利亚之外进行转让。 Microsoft 同意以澳大利亚隐私原则签订合同条款，以便在使用 Microsoft 云服务时，允许在澳大利亚之外传输数据。 但是，我们的许多澳大利亚金融服务客户都利用了我们的澳大利亚数据中心提供的云服务，因此我们在澳大利亚地区进行了特定的合同承诺来存储这些数据的类别。 [合规性检查表](https://aka.ms/microsoftaprachecklistjun17)中进一步概述了这些项。
+可以。 常规隐私法规（适用于所有部门，而不仅仅是金融机构）允许在特定条件下在澳大利亚之外进行转让。 Microsoft 同意以澳大利亚隐私原则签订合同条款，以便在使用 Microsoft 云服务时，允许在澳大利亚之外传输数据。 但是，我们的许多澳大利亚金融服务客户都利用了我们的澳大利亚数据中心提供的云服务，因此我们在澳大利亚地区进行了特定的合同承诺来存储这些数据的类别。 [合规性检查表](https://aka.ms/microsoftaprachecklistjun17)中进一步概述了这些项。
 
 ## <a name="resources"></a>资源
 

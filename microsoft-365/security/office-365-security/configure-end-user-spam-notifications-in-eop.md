@@ -1,5 +1,7 @@
 ---
 title: 在 EOP 中配置最终用户垃圾邮件通知
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以针对默认的公司范围内内容筛选器策略或应用于域的自定义内容筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 0fd58d1d59217fb25d29a550fba7e313bd53799a
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 2bbeaf48fc0d17b2df97f794956b65e090a06e1d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572718"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599639"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中配置最终用户垃圾邮件通知
   
@@ -71,7 +73,7 @@ ms.locfileid: "41572718"
   
 ![测试最终用户垃圾邮件通知的传输规则](../media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)
   

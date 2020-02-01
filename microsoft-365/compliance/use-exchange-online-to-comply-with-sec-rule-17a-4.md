@@ -1,5 +1,7 @@
 ---
 title: 使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates 已验证，当 Exchange Online 和安全与合规中心按建议配置时，它们满足 CFTC 规则 1.31(c)-(d)、FINRA 规则 4511 和 SEC 规则 17a-4 的相关存储要求。可以下载评估报告。
-ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
-ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
+ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41122421"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628588"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4
 
@@ -67,6 +69,8 @@ Cohasset 验证了当 Exchange Online 和安全与合规中心按照建议进行
 
 目前，Exchange Online 有一些限制：
 
-- 项目级审核在 Office 365 组邮箱中不可用。
 - 线程通信不适用于 Teams 聊天和频道消息。
 - 不会为 Teams 聊天和频道消息保留赞。
+
+> [!NOTE]
+> 项目级审核现已在 Office 365 组邮箱中可用。 有关详细信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md)。

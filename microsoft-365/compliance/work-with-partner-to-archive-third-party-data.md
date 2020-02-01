@@ -1,5 +1,7 @@
 ---
 title: 与合作伙伴合作，以在 Office 365 中存档第三方数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用 Office 365 合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 9a1767baadb237196161032166f78c06dc7e099b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d17c79ed4d6fa662a3416e9952ac732a8d4d9d9f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685344"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601219"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作，以在 Office 365 中存档第三方数据
 

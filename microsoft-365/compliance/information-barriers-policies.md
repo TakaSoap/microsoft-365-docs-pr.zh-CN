@@ -1,5 +1,7 @@
 ---
 title: 定义信息屏障策略
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: 11195e588a983bb5617dd3f556734074bc0060b0
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 15b17dba38a8e34bebf8d128c669fb7fa1f0ebd1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970840"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600599"
 ---
 # <a name="define-policies-for-information-barriers"></a>定义信息障碍策略
 

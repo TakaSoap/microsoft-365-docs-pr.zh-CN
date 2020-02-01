@@ -1,5 +1,7 @@
 ---
 title: 管理 Office 365 邮件加密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 完成设置 Office 365 邮件加密（OME）后，您可以通过多种方式自定义部署的配置。 例如，您可以配置是否启用一次性传递代码，在 Outlook 网页版中显示 "保护" 按钮，等等。 本文中的任务介绍了如何。
-ms.openlocfilehash: 6222825872dc512918b512d0dfc1918dd8a0cbe3
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: fa328abc36ffa0d22bb2c96114b3bbb3dfa12ed3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813110"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600509"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 

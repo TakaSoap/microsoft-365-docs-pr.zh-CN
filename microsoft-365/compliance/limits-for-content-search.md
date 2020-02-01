@@ -1,5 +1,7 @@
 ---
 title: 安全 & 合规中心中的内容搜索限制
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: '了解 Office 365 的安全性 & 合规性中心中的内容搜索功能的限制，例如最大同时搜索数。 '
-ms.openlocfilehash: 0574908468b5c2c94f1feb78c0845bc0a0e2afff
-ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
+ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911460"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600549"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>安全 & 合规中心中的内容搜索限制
 
@@ -48,7 +50,7 @@ ms.locfileid: "40911460"
 |可以为搜索结果预览的公用邮箱的最大数量。 如果包含与搜索查询匹配的内容的公用文件夹邮箱多于500个，则预览中将仅具有最多搜索结果的前500个公用文件夹邮箱。  <br/> |500  <br/> |
 |搜索查询的最大字符数（包括运算符和条件），用于内容搜索。  <br/><br/> **注意：** 此限制在查询展开后生效，这意味着将针对每个关键字展开查询。 例如，如果搜索查询有15个关键字和其他参数和条件，则查询将展开15次，每个查询包含查询中的其他参数和条件。 因此，即使搜索查询中的字符数可能低于限制，它也可能导致超出此限制的扩展查询。  <br/> |**邮箱：** 10000  <br/> **网站：** 4000 搜索所有网站或2000时搜索20个网站<sup>1</sup> <br/> |
 |使用前缀通配符在搜索查询中搜索精确短语或使用前缀通配符和**NEAR**或**ONEAR**布尔运算符时返回的最大变体数。  <br/> |10000 <sup>2</sup> <br/> |
-|前缀通配符的最小字母字符数;例如`time*` `one*`、、或`set*`。  <br/> |3   <br/> |
+|前缀通配符的最小字母字符数;例如`time*` `one*`、、或`set*`。  <br/> |第三章  <br/> |
 |可通过执行 "搜索并清除" 操作（通过使用**new-compliancesearchaction-"清除**" 命令）在内容搜索中删除项目的最大邮箱数。 如果要对其执行清除操作的内容搜索的源邮箱数超过此限制，清除操作将失败。 有关搜索和清除的详细信息，请参阅[在 Office 365 组织中搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。  <br/> |50,000  <br/> |
    
 > [!NOTE]

@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e90609c2cb25f78345c7f4da2b7b2811dd104c16
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804175"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601969"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>美国 DoE 10 CFR Part 810
 
@@ -49,7 +51,7 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 
 **美国核法规委员会的 10 CFR Part 110 规章是否适用于 Azure 政府？**
 
-否。 [美国核法规委员会](https://www.nrc.gov/)（NRC）规定了核设施的[出口和进口](https://www.nrc.gov/about-nrc/ip/export-import.html)以及[10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)下的相关设备和材料。 NRC 不会控制与属于 DoE 司法辖区的这些项目相关的核技术和协助。 因此，NRC 10 CFR Part 110 规章不适用于 Azure 政府。
+不是。 [美国核法规委员会](https://www.nrc.gov/)（NRC）规定了核设施的[出口和进口](https://www.nrc.gov/about-nrc/ip/export-import.html)以及[10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)下的相关设备和材料。 NRC 不会控制与属于 DoE 司法辖区的这些项目相关的核技术和协助。 因此，NRC 10 CFR Part 110 规章不适用于 Azure 政府。
 
 **如何提供我遵守 DoE 10 CFR Part 810 的证据？**
 

@@ -1,5 +1,7 @@
 ---
 title: 配置连接筛选器策略、允许列表、阻止列表
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要确保从不受信任的人发送的电子邮件被阻止，可以使用连接筛选器策略创建您信任的 IP 地址的允许列表（也称为 "安全发件人列表"）。 您还可以创建阻止的发件人列表。
-ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 06915527af68df6a858ca8ed97612ab40178be84
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238419"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599589"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
 
@@ -149,7 +151,7 @@ ms.locfileid: "41238419"
 |:-----|
 |![LinkedIn Learning 短图标](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **刚开始接触 Office 365？** 发现 LinkedIn Learning 向 **Office 365 admins and IT pros**提供的免费视频课程。|
 
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [Exchange Online 中的安全发件人和阻止发件人列表](safe-sender-and-blocked-sender-lists-faq.md)
 

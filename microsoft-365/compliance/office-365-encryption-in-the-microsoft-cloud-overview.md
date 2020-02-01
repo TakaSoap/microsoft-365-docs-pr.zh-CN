@@ -1,5 +1,7 @@
 ---
 title: Microsoft 云中的加密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Microsoft 云中的加密概述。
-ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11cce463cf953bd9f8ea0df61e3fe97b356608eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690110"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601819"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft 云中的加密
 
@@ -40,8 +42,8 @@ FIPS 140-2 是一种标准，专门用于验证实施加密的产品模块，而
 Microsoft 通过每个新版本的 Windows 操作系统证明在云服务中使用的基础加密模块：
 
 - Azure 和 Azure 美国政府版
-- Dynamics 365 和 Dynamics 365 美国政府版
-- Office 365、Office 365 美国政府版和 Office 365 美国政府防御
+- Dynamics 365 和 Dynamics 365 美国政府
+- Office 365、Office 365 美国政府版和 Office 365 美国政府版防御
 
 Office 365 客户数据的加密由多个服务端技术提供，其中包括 BitLocker、DKM、Azure 存储服务加密和 Exchange Online 中的服务加密、Skype for business、OneDrive for business 和 SharePoint隐私声明. Office 365 服务加密包含一个选项，可使用存储在 Azure Key Vault 中的客户托管的加密密钥。 此客户管理的密钥选项称为[Office 365 Customer key](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)，可用于 Exchange Online、SharePoint Online、Skype for Business 和 OneDrive for business。
 

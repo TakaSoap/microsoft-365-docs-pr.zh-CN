@@ -1,5 +1,7 @@
 ---
 title: DLP 函数查找的内容
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 敏感信息类型查找特定模式，并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 本主题说明这些函数查找的内容，以帮助您了解预定义的敏感信息类型的工作原理。
-ms.openlocfilehash: c192a17c488e5a7252a3599204d2bdeda4d0637c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 86ce1c9d546f776e239fdaca76219129c24a73e8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075441"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601199"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 

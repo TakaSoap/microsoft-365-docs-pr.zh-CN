@@ -1,5 +1,7 @@
 ---
 title: 反垃圾邮件邮件头
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 详细了解由 Exchange Online Protection 添加到邮件的标头字段和值。
-ms.openlocfilehash: 7336d67d29976cf968b95b8f0d4157aef6682ba6
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: be6fdded548512f96a502fe04e50bde131f01986
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971980"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599879"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -52,8 +54,9 @@ Exchange Online Protection 扫描到入站电子邮件时，它会在每封邮�
 |SFV:SKI|与 SFV:SKN 类似，由于其他原因而导致邮件跳过筛选，例如该邮件是租户内的组织间电子邮件。|
 |SFV:SKQ|邮件从隔离区释放，并发送给目标收件人。|
 |SFV:NSPM|邮件被标记为非垃圾邮件并发送给预期收件人。|
-|H：\[helostring\]|连接邮件服务器的 HELO 或 EHLO 字符串。|
-|PTR：\[ReverseDNS\]|发送 IP 地址的 PTR 记录或指针记录，亦称为反向 DNS 地址。|
+|H:\[helostring\]|连接邮件服务器的 HELO 或 EHLO 字符串。|
+|PTR:\[ReverseDNS\]|发送 IP 地址的 PTR 记录或指针记录，亦称为反向 DNS 地址。|
+|ARC|ARC 协议有以下头： <br/>• AAR：记录来自 DMARC 的身份验证结果头的内容。 <br/>• AMS：此头包括邮件的加密签名。 <br/>• AS：包括邮件头的加密签名。 此头包含名为“cv=”的链验证的标记，其中包括值为 **none**、**pass** 或 **fail** 的链验证结果。|
 |CAT：|应用于邮件的保护策略类别： <br/>MALW：恶意软件 <br/>PHSH：网络钓鱼 <br/>HSPM：高可信度垃圾邮件 <br/>SPOOF：欺骗 <br/>SPM：垃圾邮件 <br/>BULK：批量邮件 <br/>DIMP：域模仿 <br/>UIMP：用户模拟 <br/>GIMP：邮箱智能<br/>一封传入的邮件可能被多种形式的保护和多个检测扫描标记。 策略具有不同的优先级，将应用优先级最高的策略。 请参阅 [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md)（在电子邮件上运行多个保护方法和检测扫描时应用哪种策略）。|
 |SFTY|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <br/>9.1：默认值。 邮件包含网络钓鱼 URL，可能包含其他网络钓鱼内容，或者可能已被其他邮件筛选器（例如 Exchange Server 的本地版本）在将其中继到 Office 365 之前标记为网络钓鱼。 <br/>9.11：邮件未通过反欺骗检查，其中“发件人:”标头中的发送域与接收域相同、与接收域匹配或者与接收域属于同一组织。 这表示将向邮件中添加组织内欺骗安全提示。 <br/>9.19：邮件未通过域模仿检查，其中发送域正在尝试模仿收件人拥有的域或受到反网络钓鱼策略保护的自定义域。 这表示将向邮件添加模拟安全提示（如果已通过反网络钓鱼策略启用）。 <br/>9.20：邮件未通过用户模拟检查，其中发送邮件的用户正在尝试模拟收件人组织中的用户或者受到反网络钓鱼策略保护的自定义用户。 这表示将向邮件添加模拟安全提示（如果已通过反网络钓鱼策略启用）。 <br/>9.21：邮件未通过反欺骗检查，并且“发件人:”标头中的发送域未进行身份验证且来自外部域。 与 CompAuth 结合使用（请参阅 Authentication-Results）。 <br/>9.22：与 9.21 相同，只是用户具有遭到覆盖的安全发件人。 <br/>9.23：与 9.22 相同，只是组织具有遭到覆盖的允许发件人或域。 <br/>9.24：与 9.23 相同，只是用户具有遭到覆盖的 Exchange 邮件流规则。|
 |X-CustomSpam：\[ASFOption\]|邮件匹配高级垃圾邮件筛选选项。 例如，**X-CustomSpam: Image links to remote sites** 表示匹配 **“到远程站点的图像链接”** ASF 选项。 若要找出为每个特定的 ASF 选项添加了哪个 X-header 文本，请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)。|

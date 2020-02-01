@@ -1,5 +1,7 @@
 ---
 title: 安全 & 合规中心中的服务保证
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核，了解 Microsoft 如何使客户数据安全，并了解在使用 Office 365 时如何遵守 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075962"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601519"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全 & 合规中心中的服务保证
 
@@ -47,9 +49,9 @@ ms.locfileid: "37075962"
  如果尚未在订阅中实现基于服务保证角色的访问权限，则**O365 订阅成员**在默认情况下可以访问 Office365 Protection Center 中的服务保证部分。 服务保证提供了报告和文档，这些报告和文档描述了 Microsoft 在 Office 365 中存储的客户数据的安全实践。 此外，它还提供了有关 Office 365 的独立第三方审核报告。 
   
 > [!NOTE]
-> 注意：如果贵公司在 Office 365 订阅中实施了基于服务保证角色的访问（可能是您的组织已提供对自定义报告的访问权限），并且您需要访问服务保证，但它不包含在左侧窗格中的安全 & 合规性中心，请求 Office 365 管理员将您添加到 "**权限**" 页上的 "服务保证" 用户角色组中。 有关详细信息，请参阅板载其他服务保证用户或组。 
+> 注意：如果贵公司在 Office 365 订阅中实施了基于服务保证角色的访问（可能是因为您的组织已提供对自定义报告的访问权限），而您需要访问服务保证，但它不包含在安全 & 合规性中心的左侧窗格中，请咨询您的 Office 365 管理员将您添加到 "**权限**" 页上的 "服务保证" 用户 有关详细信息，请参阅板载其他服务保证用户或组。 
   
- **基于服务保证角色的访问预配的用户**如果贵公司实施了基于服务保证角色的访问，则可以提供对所有安全和合规性人员的服务保证，包括信息安全性、风险管理、合规性、审核团队以及你的人员组织. 有关详细信息，请参阅[板载其他服务确定性用户或组](service-assurance.md#addother)。
+ **基于服务保证角色的访问预配的用户**如果贵公司实施了基于服务保证角色的访问，则可以提供对所有安全和合规性人员的服务保证，包括信息安全性、风险管理、合规性，以及组织内的审核团队和人员。 有关详细信息，请参阅[板载其他服务确定性用户或组](service-assurance.md#addother)。
   
 可以使用安全 & 合规性中心访问服务保证。 下面介绍了如何转到此处。
   
@@ -120,7 +122,7 @@ ms.locfileid: "37075962"
     
     ![服务保证用户-添加](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
-3. 在下一个对话框中，搜索并选择需要查看服务保证合规性报告和信任资源的个人或组，然后为所做的每个选择选择 "**添加**"，然后单击 "" 窗格右上角的 " **X** "已经完成。 
+3. 在下一个对话框中，搜索并选择需要查看服务保证合规性报告和信任资源的个人或组，然后为所做的每个选择选择 "**添加**"，并在完成后单击窗格右上角的 " **X** "。 
     
     ![服务保证用户-选择用户](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   

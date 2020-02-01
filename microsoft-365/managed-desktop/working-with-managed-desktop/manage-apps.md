@@ -4,16 +4,18 @@ description: 有关如何更新部署到 Microsoft 托管桌面设备的业务�
 keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7aca4713aae189e39133e08a1fbcad6fd75e6a70
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 1a6b91ab5b4523f4b980dab0c25af41a9d614189
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813852"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600679"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中管理业务线应用程序
 

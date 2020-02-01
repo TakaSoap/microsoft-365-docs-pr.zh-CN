@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的攻击模拟器
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员，你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971930"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599819"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
@@ -39,7 +41,7 @@ ms.locfileid: "39971930"
 
 若要访问攻击模拟器，请在&amp; "安全合规性中心" 中，选择 "**威胁管理** \> **攻击模拟器**"。
 
-## <a name="before-you-begin"></a>开始之前 .。。
+## <a name="before-you-begin"></a>开始之前...
 
 请确保您和您的组织满足以下攻击模拟器的要求：
 

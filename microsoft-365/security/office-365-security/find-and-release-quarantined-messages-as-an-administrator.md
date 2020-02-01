@@ -1,5 +1,7 @@
 ---
 title: 以管理员身份查找并释放隔离邮件
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。
-ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971750"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599389"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以管理员身份查找并释放隔离邮件
 
@@ -37,7 +39,7 @@ ms.locfileid: "39971750"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 你必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "隔离" 条目。
+- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "隔离" 条目。
 
 - 您可以在 "**隔离**" 页面上一次释放或报告多封邮件。 或者，您可以创建一个远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) cmdlet 搜索邮件，并使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet 释放邮件。
 
@@ -67,7 +69,7 @@ ms.locfileid: "39971750"
    6. **过期**：您可以选择在接下来的24小时内（"**今天**"），在接下来的48小时内（**接下来的2天**），在下一周内（接下来**7 天**），或者您可以选择将邮件从隔离区中删除的自定义时间间隔。
 
       > [!IMPORTANT]
-      > 默认情况下，垃圾邮件隔离的邮件会在30天内保留，而与邮件流规则匹配的隔离邮件将在隔离中保留最长30天，并根据您在默认内容筛选策略中设置的保留期。 7 天后，这些邮件将被 Office 365 删除并且不可检索。 与邮件流规则匹配的隔离邮件的保留期不可配置。 但是，垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件（天）** " 设置来降低。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
+      > 默认情况下，垃圾邮件隔离的邮件会在30天内保留，而与邮件流规则匹配的隔离邮件将在隔离中保留最长30天，并根据您在默认内容筛选策略中设置的保留期。 7 天后，这些邮件将被 Office 365 删除并且不可检索。 与邮件流规则匹配的隔离邮件的保留期不可配置。 但是，垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件（天）** " 设置来降低。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。
 
    7. **类型**您可以指定是否搜索已被标识为**垃圾**邮件的隔离邮件，或者是否搜索与邮件流规则匹配的邮件（**传输规则**）。
 
@@ -184,6 +186,6 @@ ms.locfileid: "39971750"
 
 如果单击 "**刷新**![刷新" 图标](../media/ITPro-EAC-RefreshIcon.gif)图标刷新数据，然后双击邮件，您应该会看到它已发布给预期的收件人。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>更多详细信息
 
 [隔离常见问题解答](quarantine-faq.md)

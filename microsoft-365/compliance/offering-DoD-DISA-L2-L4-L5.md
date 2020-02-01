@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0cd96d9b7d769f75d5b7f26bb364cf517844e29d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112496"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602519"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部（DoD）在影响级别2、4和5的临时授权
 
@@ -87,7 +89,7 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 
 **能否在我自己组织的认证过程中使用 Microsoft 的合规性认证？**
 
-是。 所有 DoD 机构都可能依赖 Microsoft 云服务的认证，作为需要 DoD 授权的任何计划或计划的基础。 （这也适用于支持 DoD 并需要云服务的其他组织。）但是，您需要在这些服务之外为自己的组件实现自己的授权。
+能。 所有 DoD 机构都可能依赖 Microsoft 云服务的认证，作为需要 DoD 授权的任何计划或计划的基础。 （这也适用于支持 DoD 并需要云服务的其他组织。）但是，您需要在这些服务之外为自己的组件实现自己的授权。
 
 **Microsoft DoD 认证是否符合 NIST 800 –171要求？**
 

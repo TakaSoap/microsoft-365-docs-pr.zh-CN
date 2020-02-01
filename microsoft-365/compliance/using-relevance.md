@@ -1,5 +1,7 @@
 ---
 title: 使用相关性模块分析高级电子数据展示中的数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: dc31dc560dd984259890094423873745c27ee4e2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ebf5490467ec041cb22c126ac75c90ae58deb942
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075521"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601269"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>使用相关性模块分析高级电子数据展示中的数据
 
@@ -132,7 +134,7 @@ ms.locfileid: "37075521"
 > [!NOTE]
 > 在解锁后，某些选项可能仍处于禁用状态，因为在此过程中不支持使用这些选项。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 [了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   

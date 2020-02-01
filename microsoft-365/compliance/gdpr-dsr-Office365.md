@@ -5,6 +5,8 @@ keywords: Office 365, DSR, Microsoft 365, Microsoft 365 教育版, Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 685e653d7f0b8d31990724c58eccafe9a25ae6a5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004927"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628118"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Office 365 数据主体请求
 
@@ -90,7 +92,7 @@ Office 365 组织可能包含由基于云的服务和本地服务器产品组合
 
 ## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>使用内容搜索电子数据展示工具响应 DSR
 
-在组织使用 Office 365 创建和存储的大量数据中查找个人数据时，首先可能需要考虑用户最常使用哪些应用程序来创作要查找的数据。Microsoft 估计 Office 365 中存储的组织数据有 90% 都是使用 Word、Excel、PowerPoint、OneNote 和 Outlook 创作的。使用这些 Office 应用程序创作的文档（即使是通过 Office 365 专业增强版或 Office 永久许可购买而得）很可能存储在 SharePoint Online 网站、用户的 OneDrive for Business 帐户或 Exchange Online 邮箱中。这意味着可使用内容搜索电子数据展示工具跨 SharePoint Online 网站、OneDrive for Business 帐户和 Exchange Online 邮箱（包括与 Office 365 组、Microsoft Teams、EDU Assignments 和 StaffHub 关联的网站和邮箱）进行搜索（和执行其他 DSR 相关操作），查找可能与正在调查的 DSR 相关的文档和邮箱项目。还可以使用内容搜索工具发现使用其他 Office 365 应用程序创作的客户数据。
+在组织使用 Office 365 创建和存储的大量数据中查找个人数据时，首先可能需要考虑用户最常使用哪些应用程序来创作要查找的数据。Microsoft 估计 Office 365 中存储的组织数据有 90% 都是使用 Word、Excel、PowerPoint、OneNote 和 Outlook 创作的。使用这些 Office 应用程序创作的文档（即使是通过 Office 365 专业增强版或 Office 永久许可购买而得）很可能存储在 SharePoint Online 网站、用户的 OneDrive for Business 帐户或 Exchange Online 邮箱中。这意味着可使用内容搜索电子数据展示工具跨 SharePoint Online 网站、OneDrive for Business 帐户和 Exchange Online 邮箱（包括与 Office 365 组、Microsoft Teams、EDU Assignments 关联的网站和邮箱）进行搜索（和执行其他 DSR 相关操作），查找可能与正在调查的 DSR 相关的文档和邮箱项目。还可以使用内容搜索工具发现使用其他 Office 365 应用程序创作的客户数据。
 
 下表列出了用户用于创建客户创作内容（可使用内容搜索工具发现）的 Office 365 应用程序。 DSR 指南的此部分提供了有关如何发现、访问、导出和删除使用这些 Office 365 应用程序创建的数据的指南。
 
@@ -631,9 +633,8 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 | ![Access 图标](media/o365-access-64x64.png) <br> [Access](#access) | ![Office 图标](media/O365-DSR-Doc_image22.png) <br> [Business App <br> for Office 365](#business-apps-for-office-365) | ![Office 图标](media/O365-DSR-Doc_image22.png) <br> [教育版](#education)|
 | ![Flow 图标](media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms 图标](media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala 图标](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
 | ![Planner 图标](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps 图标](media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI 图标](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project 图标](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher 图标](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![StaffHub 图标](media/o365-staffhub-64x64.png) <br> [StaffHub](#staffhub) |
-|![Stream 图标](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway 图标](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard 图标](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-||![Yammer 图标](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+|![Project 图标](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher 图标](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream 图标](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway 图标](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard 图标](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer 图标](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access
@@ -1164,33 +1165,6 @@ PowerApps 服务还包括 Common Data Service For Apps，可让用户在 Common 
 #### <a name="delete"></a>删除
 
 你可以从出版物中删除内容、删除整个页面，或者删除整个 Publisher 文件。 请参阅[添加或删除页面](https://support.office.com/article/add-or-delete-pages-daf71e39-86e0-4bbc-a186-d5ec70450b08)。
-
-### <a name="staffhub"></a>StaffHub
-
-以下各节介绍如何在 Microsoft StaffHub 中使用应用内功能查找、访问、导出和删除个人数据。
-
-#### <a name="discover"></a>发现
-
-StaffHub 内的大部分数据都可供所有 StaffHub 团队成员和管理者使用。要查看 StaffHub 中的数据，请让管理者或团队成员转到 <https://staffhub.office.com> 并查看可能与 DSR 请求相关的数据，或者请求他们将你添加为团队成员，以便你可以直接查看 StaffHub 信息中的潜在响应数据。
-
-#### <a name="access"></a>访问
-
-找到相关 StaffHub 内容后，可以查看要从应用程序内向数据主体提供的相关数据，并对这些数据进行屏幕截图，或下载该数据。
-
-- **计划信息：** StaffHub 中的“**计划**”选项卡中提供了“**人员视图**”和“**排班视图**”，可让你按团队成员或工作排班查看每天、每周和每月计划。 通过选择 StaffHub Web 应用程序左上角的三个点（省略号），然后单击“**导出计划**”，可打印这些视图，或将这些视图下载到 Excel。
-- **共享文件：** StaffHub 中的所有文件都存储在 SharePoint Online 上，因此可使用内容搜索发现、访问和导出，如上文所述。 也可从 StaffHub 内的“**文件**”选项卡下查看。
-- **消息：** 目前，可按照下一项目中有关访问用户特定的数据的步骤访问消息。 将来，StaffHub 中的所有消息都会存储在 Microsoft Teams 中，这意味着可使用内容搜索工具访问它们。
-- **用户特定的数据：** 用户特定的数据包括用户设置、用户活动源以及用户排班请求历史记录，团队成员或管理员无法查看任何此类数据。 要访问或导出用户特定的数据，请让数据主体登录其 StaffHub 帐户以获取该数据。 或者，如果数据主体已离开组织，可请求管理员重置该数据主体的用户密码，以便你或管理员使用该数据主体的帐户登录，从而获取此数据。
-- **Kronos** - StaffHub 支持连接到 [Kronos](https://www.kronos.com/)（一个第三方工作人员管理工具）。 StaffHub 和 Kronos 是独立的处理程序，可处理你与每一方签署的各条款下的组织数据。 如果 DSR 与由 Kronos 保留的数据相关，需要联系 Kronos 寻求 DSR 协助，反之亦然。
-
-#### <a name="delete"></a>删除
-
-- 在 StaffHub 中管控的大多数应用内数据内容都可由团队管理者从应用内直接删除。如前文 StaffHub 的发现部分中所述，可将自己添加为团队管理者，然后删除数据。
-- 如果永久删除了用户帐户，StaffHub 会在删除帐户后 30 天内修订用户的姓名、电话号码、电子邮件地址和个人资料图片。
-
-#### <a name="export"></a>导出
-
-请参阅 StaffHub 的[访问](#access-12)部分。
 
 ### <a name="stream"></a>Stream
 
@@ -1794,8 +1768,9 @@ IT 管理员可使用安全与合规中心的审核日志搜索工具识别用�
 |9/18/2018 | [Whiteboard](#whiteboard) |Whiteboard Preview 已经不再是预览版，而且已经正式发布以供正常使用。因此，将“Whiteboard Preview”部分重命名成了“适用于电脑、Surface Hub 和其他平台的 Whiteboard”；从此部分中删除了访问、导出和删除数据的过程，代之以指向 Whiteboard 支持文章的链接。|
 |11/08/2018 | [工作区分析](#workplace-analytics) |向“删除”部分添加了关于从工作区分析删除数据主体以及从工作区分析报表删除数据主体相关信息的分步指南。|
 |11/12/2018| 全部| 修复了受损坏的书签和指向外部主题的链接。|
-|2019 年 1 月 9 日|[StaffHub](#staffhub)|在“删除”部分，更新了永久删除用户帐户时所发生情况的描述。|
+|2019 年 1 月 9 日| StaffHub |在“删除”部分，更新了永久删除用户帐户时所发生情况的描述。|
 |2019 年 5 月 8 日| [Publisher](#publisher)|添加了有关为 Publisher 响应 DSR 的内容。|
 |2019 年 7 月 11 日| [MyAnalytics](#myanalytics)|管理员无法再使用 Office 365 安全与合规中心内的 DSR 事例工具导出 MyAnalytics 数据，因为所有用户现都可在 MyAnalytics 应用中查看自己的数据。 |
 |2019/11/6|[教育版](#education)|链接到有关使用 PowerShell 脚本的新主题以获取特定学生的课程列表，然后导出或删除其数据。|
+|2020 年 1 月 28 日| 全部 | 已从文档中删除 StaffHub，StaffHub 已停用。 |
 ||||

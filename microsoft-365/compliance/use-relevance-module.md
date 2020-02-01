@@ -1,5 +1,7 @@
 ---
 title: 使用相关性模块分析证据中的数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: adb807dc2f0ca7440b4d7c1405c0f8e15d346c10
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cf69f76fd461c718bccb560f91bf31c2e30aea39
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076086"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601289"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>使用相关性模块分析证据中的数据
 
@@ -126,7 +128,7 @@ ms.locfileid: "37076086"
 > [!NOTE]
 > 在解锁后，某些选项可能仍处于禁用状态，因为在此过程中不支持使用这些选项。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 [了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   

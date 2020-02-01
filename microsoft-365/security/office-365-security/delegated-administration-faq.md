@@ -1,5 +1,7 @@
 ---
 title: 委派管理常见问题解答
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: 本主题为希望执行委派 Office 365 管理任务（包括能够为其他租户（公司）管理 Exchange Online Protection (EOP)）的 Microsoft 合作伙伴和经销商提供常见问题解答。
-ms.openlocfilehash: 4e2548ebe52926e00269615a436662183ec5bd2a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2a237da685ae3c3d81c5a0912e15b5e7370e2118
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970748"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599479"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常见问题解答
 

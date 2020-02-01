@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的 ATP 防钓鱼功能
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
 description: ATP 反网络钓鱼是 Office 365 高级威胁防护的一部分。 ATP 反网络钓鱼对传入的邮件应用一组计算机学习模式以及模拟检测算法，以提供对商品和 spear 网络钓鱼攻击的保护。 所有邮件都服从一组专门培训的计算机学习模式，以检测网络钓鱼邮件，以及一组用于防止各种用户和域模拟攻击的高级算法。
-ms.openlocfilehash: b2ce20d64952ecf489c2ccdbd5b4cafd16b8f64f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eca12a1f75057aee94762a8a5eef0cceffe327d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075137"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599829"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 中的 ATP 防钓鱼功能
 
@@ -53,9 +55,9 @@ ATP 反网络钓鱼功能是[高级威胁防护](office-365-atp.md)的一部分;
   
 |**示例方案**|**在这种情况下，ATP 反网络钓鱼是否适用？**|
 |:-----|:-----|
-|Pat 的组织拥有 Office 365 企业版 E5，但没有人为 ATP 安全附件、ATP 安全链接或 ATP 高级网络钓鱼定义任何策略。|否。 虽然该功能可用，但必须至少定义一个 ATP 策略，才能使 ATP 机器学习模型能够正常工作。 对于模拟，ATP 反网络钓鱼策略也必须已准备就绪。|
-|先生为在 Contoso 的销售部门的员工。 先生/她的组织已实施了仅适用于财务员工的 ATP 反网络钓鱼策略。|否。 在这种情况下，ATP 反网络钓鱼（计算机模型和模拟保护）将应用于财务员工，但其他员工（包括销售部门）将不会。|
-|昨天，Jean 的组织中的 Office 365 管理员设置适用于所有员工的 ATP 反网络钓鱼策略。 在今天的早期，Jean 收到一封包含策略所涵盖的模拟的电子邮件。|是。 在此示例中，Jean 具有高级威胁防护的许可证，并且已定义包括 Jean 的 ATP 反网络钓鱼策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。|
+|Pat 的组织拥有 Office 365 企业版 E5，但没有人为 ATP 安全附件、ATP 安全链接或 ATP 高级网络钓鱼定义任何策略。|不是。 虽然该功能可用，但必须至少定义一个 ATP 策略，才能使 ATP 机器学习模型能够正常工作。 对于模拟，ATP 反网络钓鱼策略也必须已准备就绪。|
+|先生为在 Contoso 的销售部门的员工。 先生/她的组织已实施了仅适用于财务员工的 ATP 反网络钓鱼策略。|不是。 在这种情况下，ATP 反网络钓鱼（计算机模型和模拟保护）将应用于财务员工，但其他员工（包括销售部门）将不会。|
+|昨天，Jean 的组织中的 Office 365 管理员设置适用于所有员工的 ATP 反网络钓鱼策略。 在今天的早期，Jean 收到一封包含策略所涵盖的模拟的电子邮件。|可以。 在此示例中，Jean 具有高级威胁防护的许可证，并且已定义包括 Jean 的 ATP 反网络钓鱼策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。|
 
 ## <a name="related-topics"></a>相关主题
 

@@ -1,5 +1,7 @@
 ---
 title: 使用数据分类内容资源管理器（预览版）
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 8a795e0582599dc3160f896a6361b773caa6c4e4
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 71ec7b4e27a6f125754e693ecb5239c66404a9ad
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823794"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628072"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>使用数据分类内容资源管理器（预览版）
 
@@ -49,11 +51,11 @@ ms.locfileid: "40823794"
 
 有两个角色可授予对内容资源管理器的访问权限：
 
-- **内容资源管理器列表查看器**：此角色的成员资格允许你查看每个项目及其位置。
+- **内容资源管理器列表查看器**：此角色组的成员资格允许你查看每个项目及其位置。
 
-- **内容资源管理器内容查看器**：此角色的成员资格允许你查看列表中每个项目的内容。
+- **内容资源管理器内容查看器**：此角色组的成员资格允许你查看列表中每个项目的内容。
 
-用于访问内容资源管理器的帐户必须具有其中一个或两个角色。 这些角色是独立角色，不具有累积性。 例如，如果要向帐户授予仅查看项目及其位置的权限，则授予内容资源管理器列表查看器的权限。 如果你希望同一帐户也能够查看列表中项目的内容，另请授予内容资源管理器内容查看器权限。
+用于访问内容资源管理器的帐户必须具有其中一个或两个角色组。 这些角色组是独立角色组，不具有累积性。 例如，如果要向帐户授予仅查看项目及其位置的权限，则授予内容资源管理器列表查看器的权限。 如果你希望同一帐户也能够查看列表中项目的内容，另请授予内容资源管理器内容查看器权限。
 
 ### <a name="how-to-use-content-explorer"></a>如何使用内容资源管理器
 

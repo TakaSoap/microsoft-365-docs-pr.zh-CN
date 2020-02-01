@@ -1,5 +1,7 @@
 ---
 title: EOP 中的功能权限
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 执行管理 Microsoft Exchange Online Protection (EOP) 的任务所需的权限根据正在管理的功能的不同而不同。
-ms.openlocfilehash: dcf56a5295f7964b2271331deb2e7f8c1ba1635e
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2129df7faaa977d59f8af8082291520d33bc9cc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871848"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599309"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP 中的功能权限
 
@@ -33,7 +35,7 @@ ms.locfileid: "39871848"
 |反垃圾邮件|组织管理 <br/><br/> 安全管理|
 |邮件流规则|组织管理 <br/><br/> 记录管理|
 |域|组织管理 <br/><br/> 仅查看组织管理|
-|高级威胁防护（ATP）|组织管理 <br/><br/> 安全管理|
+|高级威胁防护 (ATP)|组织管理 <br/><br/> 安全管理|
 |Office 365 连接器|组织管理|
 |Message trace|组织管理 <br/><br/> 仅查看组织管理|
 |组织配置|组织管理|

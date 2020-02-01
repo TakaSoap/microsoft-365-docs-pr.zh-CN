@@ -1,5 +1,7 @@
 ---
 title: 为电子数据展示保存密件抄送和展开的通讯组收件人
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: 就地保留、诉讼保留和 Office 365 保留策略使您能够保留邮箱内容，以满足法规遵从性和电子数据展示要求。
-ms.openlocfilehash: 46ec9f39f4fe5629ca1854fab44304f30784dbf4
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 3d128016e89a5e1eadeae4e2c189588c4b2951a3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38685191"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601749"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>为电子数据展示保存密件抄送和展开的通讯组收件人
   
@@ -66,7 +68,7 @@ Exchange Online 和 Exchange Server 2013 （累积更新7及更高版本）保�
 |Jack 的邮箱  <br/> |收件人/抄送：John（直接或通过通讯组）  <br/> |是  <br/> |收件人/抄送信息包含在发送给所有收件人的邮件中。  <br/> |
 |Jack 的邮箱  <br/> |密件抄送：Jack（直接或通过通讯组）  <br/> |否  <br/> |密件抄送信息不存储在发送给收件人的邮件中。您必须搜索发件人的邮箱。  <br/> |
    
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
  **问：何时何地存储密件抄送收件人信息？**
   

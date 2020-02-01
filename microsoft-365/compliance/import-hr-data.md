@@ -1,5 +1,7 @@
 ---
 title: 设置连接器以导入 HR 数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将员工数据从组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: ba673f6328751a7eee10d5ab4097aa334c09f339
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247628"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600689"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
@@ -27,7 +29,7 @@ ms.locfileid: "41247628"
 
 - 必须在 Exchange Online 中为在步骤3中创建 HR 连接器的用户分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建新的角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
 
-- 您需要确定如何检索或导出组织的 HR 系统中的数据（定期），并添加步骤2中所述的 CSV 文件。 您在步骤4中运行的脚本会将 CSV 文件中的 HR 数据上传到 Microsoft 云。
+- 您需要确定如何检索或导出组织的 HR 系统中的数据（定期），并将其添加到步骤2中所述的 CSV 文件中。 您在步骤4中运行的脚本会将 CSV 文件中的 HR 数据上传到 Microsoft 云。
 
 - 您在步骤4中运行的示例脚本会将 HR 数据上载到 Microsoft 云，以便其他 Microsoft 工具（如内幕风险管理解决方案）可以使用它。 在任何 Microsoft standard 支持计划或服务下，不支持此示例脚本。 示例脚本按原样提供，而不提供任何种类的担保。 Microsoft 也不提供任何默示担保，包括但不仅限于对适销性或针对特定目的的适用性的默示担保。 因使用或性能示例脚本和文档而导致的全部风险都将保留给您。 对于因使用或无法使用示例脚本或文档产生的任何损害（包括但不仅限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者以及参与脚本创建、生成或交付的任何人均不承担任何责任，即使 Microsoft 已被告知此类损害的可能性也是如此。
 
@@ -64,7 +66,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 |**LastWorkingDate**|指定终止的员工的最后一天的工作。 必须使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`，即[ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 |||
 
-使用所需 HR 数据创建 CSV 文件后，可将其存储在在步骤4中运行脚本时可指定的本地计算机或网络位置。 您还应实现更新策略，以便 CSV 文件始终包含最新的信息，以便您运行脚本的任何操作都将上传到 Microsoft 云中的最新员工终止数据。
+创建具有所需 HR 数据的 CSV 文件后，将其存储在您在步骤4中运行脚本的本地计算机上。 您还应实现更新策略，以确保 CSV 文件始终包含最新信息，以便您运行脚本的任何操作都将上传到 Microsoft 云中的最新员工终止数据。
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤3：创建 HR 连接器
 
@@ -104,7 +106,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>步骤4：运行示例脚本以上传 HR 数据
 
-设置 HR 连接器的最后一步是运行一个示例脚本，将 CSV 文件（您在步骤2中创建的）中的 HR 数据上载到 Microsoft 云。 在运行该脚本之后，您在步骤3中创建的 HR 连接器可以访问并将数据导入到 Microsoft 365 组织中，以供其他合规性工具（如内幕风险管理解决方案）进行访问。 运行脚本后，请考虑计划任务每天定期自动运行，以便将最新的员工终止数据上载到 Microsoft 云。 请参阅[安排脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
+设置 HR 连接器的最后一步是运行一个示例脚本，将 CSV 文件（您在步骤2中创建的）中的 HR 数据上载到 Microsoft 云。 具体来说，该脚本会将数据上载到 HR 连接器。 运行该脚本后，您在步骤3中创建的 HR 连接器会将 HR 数据导入到 Microsoft 365 组织中，以供其他合规性工具（如内幕风险管理解决方案）进行访问。 运行脚本后，请考虑计划任务每天定期自动运行，以便将最新的员工终止数据上载到 Microsoft 云。 请参阅[安排脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
 
 1. 请转到[此 GitHub 网站](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)以访问示例脚本。
 
@@ -132,7 +134,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
    |`appId` |这是您在第1步中的 Azure AD 中创建的应用程序的 AAD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 | 
    |`appSecret`|这是您在第1步中的 Azure AD 中创建的应用程序的 AAD 应用程序密码。 这也用于身份验证。|
    |`jobId`|这是您在步骤3中创建的 HR 连接器的作业 Id。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器相关联。|
-   |`csvFilePath`|这是您在步骤2中创建的 CSV 文件的本地计算机（用于运行脚本的文件）的文件路径。 如果 CSV 文件位于共享网络位置，则必须指定该位置的完整文件路径。 请尝试避免在文件路径中包含空格;否则，请使用单引号。|
+   |`csvFilePath`|这是您在步骤2中创建的 CSV 文件的本地计算机（用于运行脚本的文件）的文件路径。 请尝试避免在文件路径中包含空格;否则，请使用单引号。|
    |||
    
    下面的示例展示了使用每个参数的实际值的 HR 连接器脚本的语法：

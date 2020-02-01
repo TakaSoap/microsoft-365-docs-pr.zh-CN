@@ -1,5 +1,7 @@
 ---
 title: 退信消息和 EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: 退信邮件是发送到伪造的电子邮件地址的自动退回邮件。 退信 DNSBL 标识发送退信邮件（可能包含许多合法的电子邮件源）的服务器。 由于它不是垃圾邮件制造者列表，因此我们不会尝试从退信 DNSBL 中删除自己。
-ms.openlocfilehash: f6e8398565837f7a380c8a6a5c4cd8de422cc215
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 3dc83c303e861c8762f2276de521e1b550ae2e59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840161"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599729"
 ---
 # <a name="backscatter-messages-and-eop"></a>退信式垃圾邮件和 EOP
 

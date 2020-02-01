@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中搜索内容
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用安全 & 合规中心中的内容搜索电子数据展示工具在 Exchange 邮箱、SharePoint 网站中的文档和 OneDrive 位置以及 Skype for Business 中的即时消息对话中快速查找电子邮件。
-ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075596"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601539"
 ---
 # <a name="search-for-content-in-office-365"></a>在 Office 365 中搜索内容
 
@@ -77,7 +79,7 @@ ms.locfileid: "37075596"
 
 有时，您必须执行更高级、复杂和重复的内容搜索任务。 在这些情况下，在安全 & 合规性中心中使用 PowerShell 命令更简单、更快捷。 为了简化此过程，我们已创建了许多安全 & 合规性中心 PowerShell 脚本，以帮助您完成复杂的内容搜索相关任务。
   
-- [搜索特定邮箱和站点文件夹](use-content-search-for-targeted-collections.md)（称为*目标集合*）当您确信项目的响应能力是否位于该文件夹中时， 
+- 当您确信项目的响应能力是否位于该文件夹中时，[搜索特定邮箱和站点文件夹](use-content-search-for-targeted-collections.md)（称为*目标集合*） 
     
 - [在邮箱和 OneDrive 位置搜索](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)用户列表 
     

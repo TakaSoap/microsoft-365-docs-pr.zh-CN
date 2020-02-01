@@ -1,5 +1,7 @@
 ---
 title: Office 365 高级电子数据展示中的标记和相关性培训
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: '了解在 Office 365 高级电子数据展示的相关培训阶段，要标记并使用40文件的培训示例的步骤。  '
-ms.openlocfilehash: e214e8a8edba7472f93274f3a4f7a06a09e2a801
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: fa690857fabb6a732d329dc8a75896d9e1aa195d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802695"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601419"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的标记和相关性培训
 

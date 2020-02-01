@@ -1,5 +1,7 @@
 ---
 title: 启用或禁用 Office 365 审核日志搜索
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 您可以在安全 & 合规性中心启用审核日志搜索功能。 如果你更改了想法，你可以随时关闭。 当 "审核日志搜索" 关闭时，管理员无法在组织中搜索用户和管理员活动的 Office 365 审核日志。
-ms.openlocfilehash: 4e382c9916a9460d2c837a336607734427416a1a
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: dfa637bfe6df0e4643d96a921a604ea5d0deba9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685316"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601362"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>启用或禁用 Office 365 审核日志搜索
 
 您（或另一个管理员）必须先启用审核日志记录，然后才能开始搜索 Office 365 审核日志。 如果启用了安全 & 合规中心中的审核日志搜索，则组织中的用户和管理员活动将记录在审核日志中，并在90天内保留。 但是，您的组织可能不想记录和保留审核日志数据。 或者，您可能使用第三方安全信息和事件管理（SIEM）应用程序访问您的审核数据。 在这些情况下，全局管理员可以在 Office 365 中关闭审核日志搜索。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须在 Exchange Online 中向您分配 "审核日志" 角色，才能在 Office 365 组织中打开或关闭审核日志搜索。 默认情况下，此角色在 Exchange 管理中心中的 "**权限**" 页上分配给合规性管理和组织管理角色组。 Office 365 中的全局管理员是 Exchange Online 中的 "组织管理" 角色组的成员。 
     

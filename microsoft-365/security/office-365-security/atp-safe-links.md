@@ -1,5 +1,7 @@
 ---
 title: Office 365 ATP 安全链接
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -22,12 +24,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: "\"安全链接\" 功能可提供对 Office 文档中的超链接和电子邮件中的超链接的单击时间验证。 使用安全链接保护组织免受网络钓鱼和其他攻击的攻击。"
-ms.openlocfilehash: fadec60dc25aad418480d7c26a06e92f5a2065dd
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 5834c3c49529f983d426084a50712c55de92fc63
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970908"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599789"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全链接
 
@@ -80,9 +82,9 @@ Office 365 ATP 安全链接（[高级威胁防护](office-365-atp.md)的一部�
   
 |**示例方案**|**在这种情况下 ATP 安全链接保护是否适用？**|
 |:-----|:-----|
-|Jean 是具有 ATP 安全链接策略的组的成员，其中包含电子邮件和 Office 文档中的 Url。 Jean 打开某人发送的 PowerPoint 演示文稿，然后单击演示文稿中的 URL。  <br/> |是。 定义的 ATP 安全链接策略适用于 Jean 的 group、Jean 的电子邮件以及 Jean 打开的 Word、Excel、PowerPoint 或 Visio 文档，只要 Jean 已登录并使用 Windows、iOS 或 Android 设备上的 Office 365 专业增强版。  <br/> |
-|在 Chris 的组织中，没有任何全局或安全管理员尚未定义任何 ATP 安全链接策略。 Chris 收到一个电子邮件，其中包含指向恶意网站的 URL。 丽丽不知道 URL 是恶意的并单击链接。  <br/> |否。 包含组织中每个人的 Url 的默认策略必须进行定义，以便保护生效。  <br/> |
-|在 Pat 的组织中，没有任何全局或安全管理员尚未定义或编辑任何 ATP 安全链接策略。 Pat 打开 Word 文档并单击文件中的 URL。  <br/> |否。 必须定义包含 Office 文档的策略，才能就地保护。 请参阅[在 Office 365 中设置 ATP 安全链接策略](set-up-atp-safe-links-policies.md)。  <br/> |
+|Jean 是具有 ATP 安全链接策略的组的成员，其中包含电子邮件和 Office 文档中的 Url。 Jean 打开某人发送的 PowerPoint 演示文稿，然后单击演示文稿中的 URL。  <br/> |可以。 定义的 ATP 安全链接策略适用于 Jean 的 group、Jean 的电子邮件以及 Jean 打开的 Word、Excel、PowerPoint 或 Visio 文档，只要 Jean 已登录并使用 Windows、iOS 或 Android 设备上的 Office 365 专业增强版。  <br/> |
+|在 Chris 的组织中，没有任何全局或安全管理员尚未定义任何 ATP 安全链接策略。 Chris 收到一个电子邮件，其中包含指向恶意网站的 URL。 丽丽不知道 URL 是恶意的并单击链接。  <br/> |不是。 包含组织中每个人的 Url 的默认策略必须进行定义，以便保护生效。  <br/> |
+|在 Pat 的组织中，没有任何全局或安全管理员尚未定义或编辑任何 ATP 安全链接策略。 Pat 打开 Word 文档并单击文件中的 URL。  <br/> |不是。 必须定义包含 Office 文档的策略，才能就地保护。 请参阅[在 Office 365 中设置 ATP 安全链接策略](set-up-atp-safe-links-policies.md)。  <br/> |
 |先生/她的组织具有一个列入 "已`https://tailspintoys.com`阻止" 网站的 ATP 安全链接策略。 先生/她收到一封包含的 URL 的`https://tailspintoys.com/aboutus/trythispage`电子邮件。 先生单击 URL。  <br/> |这取决于整个网站及其所有子页是否包含在阻止的 Url 列表中。 请参阅[使用 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)。  <br/> |
 |晓明（Jean 的同事）向 Jean 发送电子邮件，而不知道该电子邮件包含恶意 URL。  <br/> |这取决于是否为在组织内发送的电子邮件定义 ATP 安全链接策略。 请参阅[在 Office 365 中设置 ATP 安全链接策略](set-up-atp-safe-links-policies.md)。  <br/> |
 

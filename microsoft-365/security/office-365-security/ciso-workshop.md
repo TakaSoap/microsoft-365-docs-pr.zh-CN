@@ -1,5 +1,7 @@
 ---
 title: 首席信息安全监察官（CISO）研讨会
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7377eb0bedf86e69618a82a05a7f048cc9b1cde7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012417"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599649"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>首席信息安全监察官（CISO）研讨会培训
 
@@ -38,4 +40,4 @@ CISO 研讨会视频和 PDF/PowerPoint 下载内容是模块化的，因此您�
 
 - [模块4b：威胁防护策略，第 II 部分](ciso-workshop-module-4b.md)：本模块将检查安全操作中心（SOC）的演变和轨迹，并在 Microsoft 智能安全性图形中 trillions 信号。
 
-- [模块5：信息保护](ciso-workshop-module-5.md)：了解如何在任何位置使用自动分类来保护敏感信息、跨设备的持续加密以及跨移动设备、云服务和其他对数据的连续监视公司资产。
+- [模块5：信息保护](ciso-workshop-module-5.md)：了解如何在任何位置使用自动分类、跨设备的持续加密以及跨移动设备、云服务和其他公司资产连续监视数据，从而保护敏感信息。

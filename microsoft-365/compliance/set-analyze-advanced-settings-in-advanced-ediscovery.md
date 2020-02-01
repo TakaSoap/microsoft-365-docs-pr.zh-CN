@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 高级电子数据展示中设置分析高级设置
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '了解如何为 Office 365 高级电子数据展示中的分析过程配置高级设置，包括接近重复的电子邮件线程和主题。 '
-ms.openlocfilehash: 06ee57542bfdb87b8bea77b3e4271adf02490046
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2c2a104b834d8da9d0d10f93980b4f2cbb6294c8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802815"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601509"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析高级设置
 

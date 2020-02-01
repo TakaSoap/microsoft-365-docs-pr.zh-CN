@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中创建安全发件人列表
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -12,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要确保收到来自特定发件人的邮件，因为您信任这些邮件及其邮件，则可以在垃圾邮件筛选器策略中调整您的允许列表。
-ms.openlocfilehash: 02457a863445cf9544f75682aa2df3bf2b7e765a
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 4ac97192327cd9ced853ce63537375931f3f0ec3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572999"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599529"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 

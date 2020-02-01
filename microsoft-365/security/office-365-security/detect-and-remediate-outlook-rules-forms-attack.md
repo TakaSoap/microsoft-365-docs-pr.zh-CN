@@ -1,5 +1,7 @@
 ---
 title: 检测和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
-ms.openlocfilehash: d5f4a653463f4105df025bf29679465ca5335098
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970788"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599439"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
 
@@ -234,7 +236,7 @@ ms.locfileid: "39970788"
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
 
-你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用[Office 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 Microsoft 建议的保护 Office 365 租户的最佳做法。
+你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Office 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
 
 - 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
 

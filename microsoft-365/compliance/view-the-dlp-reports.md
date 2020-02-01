@@ -1,5 +1,7 @@
 ---
 title: 查看数据丢失防护报告
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 DLP 报告，您可以快速查看 DLP 策略匹配、覆盖或误报的数量;查看它们是按时间趋势上升还是下降;以不同的方式筛选报表;并在图表上的某一行上选择一个点，以查看其他详细信息。
-ms.openlocfilehash: 94569ef24814204263820fb5fdb7a8cb72da20e4
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 1605e2ebed9ada5903402ae5facdb40ce2f12c39
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685126"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601229"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
@@ -83,20 +85,20 @@ ms.locfileid: "38685126"
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>查找 DLP 报告的 cmdlet
 
-若要将大多数 cmdlet 用于安全&amp;合规性中心，您需要执行以下操作：
+若要使用安全 &amp; 合规中心的大多数 cmdlet，你需要执行以下操作：
   
-1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Office 365 安全 &amp; 合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 使用这些[Office 365 安全&amp;合规中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一个
     
-但是，DLP 报告需要跨 Office 365 请求获取数据，包括 Exchange Online。 因此，DLP 报告的 cmdlet 在 Exchange Online Powershell 中可用，而不在安全&amp;合规中心 powershell 中。 因此，若要使用 DLP 报告的 cmdlet，需要执行以下操作：
+但是，DLP 报告需要从 Office 365（包括 Exchange Online）提取数据。 因此，DLP 报告的 cmdlet 在 Exchange Online Powershell 中可用，而不在安全&amp;合规中心 powershell 中。 因此，若要使用适用于 DLP 报告的 cmdlet，你需要执行以下操作：
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
-2. 为 DLP 报告使用以下任一 cmdlet：
+2. 对 DLP 报告使用以下任意 cmdlet：
     
-      - [Get-dlpdetectionsreport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-DlpDetectionsReport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
-      - [Get-dlpdetailreport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+      - [Get-DlpDetailReport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 

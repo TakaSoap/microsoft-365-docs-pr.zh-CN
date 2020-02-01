@@ -1,5 +1,7 @@
 ---
 title: 在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件问题（阻止发送邮件的租户）。
-ms.openlocfilehash: 4e82df78cfb83865142defb14cec0841ab29ba95
-ms.sourcegitcommit: 55cb11c2475f40d0f1c64cf45446bf383d7d5f86
+ms.openlocfilehash: e8e134793db946ddfc3ef09d0adc19b2a04df30b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41002972"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599279"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>在 Exchange Online 中修复错误代码为 5.7.7 xx 的电子邮件传递问题
 
@@ -70,7 +72,7 @@ Office 365 允许租户通过 Exchange Online Protection （EOP）中继某些�
 
 7. 致电 Microsoft 支持部门，请求让租户解锁，以再次发送电子邮件。 错误代码很有帮助，但您需要证明您的环境已受到保护，并且无法发送垃圾邮件。 若要打开支持案例，请参阅[联系支持人员以获取商业产品-管理员帮助](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
 

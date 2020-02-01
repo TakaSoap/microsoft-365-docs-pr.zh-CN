@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a7967a4bd12f98f3654f2b5006568c868a7e134f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 070ec3977768d131e4e4d9c2f493e630a1a707c9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804015"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601889"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
@@ -59,7 +61,7 @@ NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准�
 
 **对于我的组织，我可以使用 Microsoft 合规性的 NIST SP 800 –171吗？**
 
-是。 Microsoft 客户可以使用来自 FedRAMP 标准的独立第三方评估组织（3PAO）的报告中所述的审核控件，作为其自己的 FedRAMP 和 NIST 风险分析和资格验证工作的一部分。 这些报告证明 Microsoft 已在其范围内的云服务中实现的控制措施的有效性。 客户负责确保其 CUI 工作负载符合 NIST SP 800 –171准则。
+可以。 Microsoft 客户可以使用来自 FedRAMP 标准的独立第三方评估组织（3PAO）的报告中所述的审核控件，作为其自己的 FedRAMP 和 NIST 风险分析和资格验证工作的一部分。 这些报告证明 Microsoft 已在其范围内的云服务中实现的控制措施的有效性。 客户负责确保其 CUI 工作负载符合 NIST SP 800 –171准则。
 
 ## <a name="resources"></a>资源
 

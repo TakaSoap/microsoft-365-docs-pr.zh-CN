@@ -1,7 +1,9 @@
 ---
 title: 使用保留标签管理存储在 SharePoint Online 中的产品文档的生命周期
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 此解决方案说明了如何使用 Office 365 保留标签管理存储在 SharePoint Online 中的产品相关文档的生命周期。 可通过使用文档元数据对内容进行分类来完成此操作，具体方法是自动应用 Office 365 保留标签并配置基于事件的保留。
-ms.openlocfilehash: 3c9afd05fd4f59a5136ab12dbd7558ade3073e43
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: ca3dd4699a608d2e3313efa3c10fc61b72f9b36e
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39637714"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628108"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留标签管理 SharePoint 文档的生命周期
 
@@ -278,82 +280,38 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 ![配置将触发事件的流程](media/SPRetention24.png)
 
-若要创建此流，请从 SharePoint 连接器开始，并选择“**创建或修改项目时**”触发器。 指定网站地址和列表名称，然后根据“**投入生产**”列表栏值是否设置为“**否**”（或在条件卡中等于“false”）来添加条件。 然后添加基于内置 HTTP 模板的操作。 使用下表中的值来配置 HTTP 操作。 可复制下表中的 URI 和正文属性值，然后将其粘贴到模板中。
+若要创建此流，请从 SharePoint 连接器开始，并选择“**创建或修改项目时**”触发器。 指定网站地址和列表名称，然后根据“**投入生产**”列表栏值是否设置为“**否**”（或在条件卡中等于“false”）来添加条件。 然后添加基于内置 HTTP 模板的操作。 使用以下部分中的值来配置 HTTP 操作。 可复制以下部分中的 URI 和正文属性值，然后将其粘贴到模板中。
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parameter</strong></th>
-<th><strong>值</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>方法</td>
-<td>POST</td>
-<tr class="even">
-<td>URI</td>
-<td><a href="https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>标头</td>
-<td>键 = Content-Type，值 = application/atom+xml</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>正文</td>
-<td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}&lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;Product Cessation&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}&quot;&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;d:EventDateTime&gt;@{formatDateTime(utcNow(),'yyyy-MM-dd')}&lt;/d:EventDateTime&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/content&gt;</p>
-<p>&lt;/entry&gt;</p></td>
-<td></td>
-</tr>
+- **方法**：POST
+- **URI**： https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **标头**：键 = Content-Type，值 = application/atom+xml
+- **正文**：
 
-</tbody>
-</table>
+```HTML
+<?xml version='1.0' encoding='utf-8' standalone='yes'>
+<entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
+<category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
+<updated>9/9/2017 10:50:00 PM</updated>
+<content type='application/xml'>
+<m:properties>
+<d:Name>Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}</d:Name>
+<d:EventType>Product Cessation&lt;</d:EventType>
+<d:SharePointAssetIdQuery>ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}<d:SharePointAssetIdQuery>
+<d:EventDateTime>@{formatDateTime(utcNow(),'yyyy-MM-dd')}</d:EventDateTime>
+</m:properties>
+</content&gt>
+</entry>
+```
 
-下表介绍必须专为此方案配置的操作正文属性内的参数。 
+以下部分介绍必须专为此方案配置的操作*正文*属性内的参数。
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parameter</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>名称</td>
-<td>此参数指定将在安全与合规中心内创建的事件的名称。 对于此方案，名称为“产品停产 xxx”，其中 xxx 是我们之前创建的 ProductName 托管属性的值。 </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EventType</td>
-<td>此参数的数值与将应用已创建事件的事件类型对应。 此事件类型是在创建保留标签时定义的。 对于此方案，事件类型为“产品停产”。</td>
-</tr>
-<tr class="even">
-<td>SharePointAssetIdQuery</td>
-<td>此参数定义事件的资产 ID。 基于事件的保留需要文档的唯一标识符。。 我们可以使用资产 ID 来标识特定事件适用的文档，或者像此方案一样，使用元数据栏（自己的产品名称）进行标识。 为此，我们必须创建一个名为 ProductName 的新托管属性，可在 KQL 查询中使用该属性（或我们可以使用 RefinableString00，而不是创建新的托管属性）。 我们还需要将此新托管属性映射到 ows_Product_x0020_Name 已爬网属性。 下面是此托管属性的屏幕截图。
+- **名称**：此参数指定将在安全与合规中心内创建的事件的名称。 对于此方案，名称为“产品停产 xxx”，其中 xxx 是我们之前创建的 ProductName 托管属性的值。
+- **EventType**：此参数的数值与将应用已创建事件的事件类型对应。 此事件类型是在创建保留标签时定义的。 对于此方案，事件类型为“产品停产”。
+- **SharePointAssetIdQuery**：此参数定义事件的资产 ID。 基于事件的保留需要文档的唯一标识符。。 我们可以使用资产 ID 来标识特定事件适用的文档，或者像此方案一样，使用元数据栏（自己的产品名称）进行标识。 为此，我们必须创建一个名为 ProductName 的新托管属性，可在 KQL 查询中使用该属性（或我们可以使用 RefinableString00，而不是创建新的托管属性）。 我们还需要将此新托管属性映射到 ows_Product_x0020_Name 已爬网属性。 下面是此托管属性的屏幕截图。
 
-<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
-</tr>
-<tr class="odd">
-<td>EventDateTime</td>
-<td>此参数定义事件发生的日期。 使用当前日期格式：<strong>formatDateTime(utcNow(),'yyyy-MM-dd'<strong>)</strong></td>
-</tr>
-</tbody>
-</table>
+    ![保留托管属性](media/SPRetention25.png)
+
+- **EventDateTime**：此参数定义事件发生的日期。 使用当前日期格式：*formatDateTime(utcNow(),'yyyy-MM-dd'*)
 
 ### <a name="putting-it-all-together"></a>汇总
 
@@ -393,6 +351,6 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 ## <a name="credits"></a>制作人员
 
-该方案的作者：
+该方案的作者： 
 
 Frederic Lapierre<br/>Microsoft 服务首席顾问

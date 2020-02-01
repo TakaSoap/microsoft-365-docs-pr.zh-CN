@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: adda0e14a5712a4943ee37e029b96aecb0cd7c58
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: fdde59b04c7f52f163028aa7ba4759e226fccb55
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805045"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602449"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和药品管理 CFR Title 21 第11部分
 
@@ -74,7 +76,7 @@ FDA CFR Title 21 第11部分适用于具有产品和服务的组织，这些组�
 
 **我可以在组织的认证过程中使用 Microsoft 合规性吗？**
 
-是。 IEC/ISO 27001、ISO/IEC 27018、SOC 1 和 SOC 2 标准的独立第三方合规性报告证明了 Microsoft 控件的有效性。 Microsoft 企业版云客户可以使用这些相关报告中所述的审核控件作为其自己的 CFR Title 的一部分21第11部分风险分析和资格努力。 构建和部署遵循 FDA 法规的应用程序的客户负责确保其应用程序满足 FDA 要求。
+可以。 IEC/ISO 27001、ISO/IEC 27018、SOC 1 和 SOC 2 标准的独立第三方合规性报告证明了 Microsoft 控件的有效性。 Microsoft 企业版云客户可以使用这些相关报告中所述的审核控件作为其自己的 CFR Title 的一部分21第11部分风险分析和资格努力。 构建和部署遵循 FDA 法规的应用程序的客户负责确保其应用程序满足 FDA 要求。
 
 **Microsoft 与此标准保持合规性的责任是什么？**
 

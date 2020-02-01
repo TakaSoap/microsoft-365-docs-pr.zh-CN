@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4be943b83d1b2286a01731de87dd2b0af34cb322
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3cbc0008841456e91dd2ffe6a9e5c78fba0ba43d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805475"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602669"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>澳大利亚政府信息安全注册评估员计划（IRAP）
 
@@ -74,7 +76,7 @@ IRAP 适用于所有使用云服务的澳大利亚联邦、州和本地政府机
 
 **我是否可以在组织的风险评估和审批过程中使用 Microsoft 合规性？**
 
-是。 如果您的组织要求或正在寻求批准在 ISM 中运行，则可以在风险评估中使用 Azure 和 Office 365 的 IRAP 安全评估。 你是;但是，负责接洽评估员以评估在 Microsoft 平台上部署的实施，以及您自己的组织中的控件和流程。
+可以。 如果您的组织要求或正在寻求批准在 ISM 中运行，则可以在风险评估中使用 Azure 和 Office 365 的 IRAP 安全评估。 你是;但是，负责接洽评估员以评估在 Microsoft 平台上部署的实施，以及您自己的组织中的控件和流程。
 
 **从哪里开始我的组织自己的风险评估和批准才能运行？**
 

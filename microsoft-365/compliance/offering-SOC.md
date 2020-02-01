@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f3abd3dae61866041de9ea229e38ed17c4502214
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804255"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602039"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -52,7 +54,8 @@ Microsoft 已获得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 报告。 通常，SOC
 - Dynamics 365 和 Dynamics 365 美国政府版[详细列表](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
-- Microsoft Flow 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Microsoft 托管桌面
+- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Office 365、Office 365 美国政府版和 Office 365 美国政府国防版[详细列表](https://go.microsoft.com/fwlink/p/?LinkID=2077751)；Yammer 已完成 SOC 1 Type 1 报告
 - Office 365 德国
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
@@ -66,6 +69,7 @@ Microsoft 已获得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 报告。 通常，SOC
 - 云应用安全
 - Graph
 - Intune
+- Microsoft 托管桌面
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI

@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112686"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602849"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步骤2：将现有设备的 Windows 10 企业版部署为就地升级
 
@@ -29,7 +31,7 @@ ms.locfileid: "41112686"
 
 按照这些步骤操作，使用 Microsoft 终结点配置管理器将 Windows 10 企业版映像配置和部署为就地升级。
 
-## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>使用 Configuration Manager 海报的 Windows 10 部署
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>使用 Configuration Manager 海报部署 Windows 10
 
 Configuration Manager 海报是横向模式（17x11）中的一页。 单击下面的图像以在浏览器中查看 PDF。 
 

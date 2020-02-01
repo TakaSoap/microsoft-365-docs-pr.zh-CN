@@ -1,5 +1,7 @@
 ---
 title: 使用 Office 365 邮件加密为组织创建敏感信息类型策略
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 摘要：敏感信息类型的 Office 365 邮件加密策略。
-ms.openlocfilehash: 8632a0419b443d2810afd3554da572ab2197ae2a
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: a3767fb0f9fe5e565c49db4f9da94d75a3cee8a7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38690102"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601789"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>使用 Office 365 邮件加密为组织创建敏感信息类型策略
 
@@ -32,7 +34,7 @@ ms.locfileid: "38690102"
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>使用 PowerShell 中的邮件流规则创建策略
 
-使用在 Office 365 组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。 使用 Get-irmconfiguration 和 New-transportrule cmdlet 创建策略。
+使用在 Office 365 组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。 使用 Get-irmconfiguration 和 New-transportrule cmdlet 创建策略。
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>使用 PowerShell 创建的邮件流规则示例
 

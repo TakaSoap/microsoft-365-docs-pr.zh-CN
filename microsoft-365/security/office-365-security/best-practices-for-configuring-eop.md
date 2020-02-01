@@ -1,5 +1,7 @@
 ---
 title: 配置 EOP 和 Office 365 ATP 的最佳实践
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
-ms.openlocfilehash: 3146cb9a5141dfe87e9f31791c107be296121126
-ms.sourcegitcommit: e27fe0d97b9c446b1cc80561f7190d08c12d9e0c
+ms.openlocfilehash: 053b5f551be528e7eedb3c218bb1e49ab6b8be91
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39262695"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599739"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>配置 EOP 和 Office 365 ATP 的最佳实践
 

@@ -1,5 +1,7 @@
 ---
 title: 步骤 6：配置电子邮件加密
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解并配置 Office 365 的特权访问管理。
-ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370429"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600919"
 ---
 # <a name="step-6-configure-email-encryption"></a>步骤 6：配置电子邮件加密
 
-** 此步骤是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本
+*此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第6阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Microsoft 365 中有三种类型的电子邮件加密。
 
@@ -79,4 +81,4 @@ S/MIME 可用于向 Microsoft 365 订阅中的其他邮箱或向外部用户发�
 
 |||
 |:-------|:-----|
-|![步骤7](./media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
+|![第 7 步](./media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|

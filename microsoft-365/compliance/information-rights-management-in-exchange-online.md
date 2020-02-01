@@ -1,5 +1,7 @@
 ---
 title: 带 AD RMS 的 Exchange Online 邮件加密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 如果需要，您可以将 Exchange Online IRM 配置为使用内部部署 Active Directory 权限管理服务（AD RMS），以满足您的组织的要求。 这并不常见。 如果您不需要使用 AD RMS，请改用 Office 邮件加密。
-ms.openlocfilehash: 1c3bdf02f31f57f1328f0244d539d0dc88e7ba89
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 24a86ad9b1a1f3bbd67e194143fa02cb4040a47e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685136"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600649"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>带 AD RMS 的 Exchange Online 邮件加密
 

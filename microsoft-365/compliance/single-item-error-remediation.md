@@ -1,5 +1,7 @@
 ---
 title: 单个项目错误更正
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可以修复高级电子数据展示中的审阅集中的文档中的处理错误，而无需遵循批量错误修正过程。
-ms.openlocfilehash: 922c0e4b0ab30bae6507fac7e97080a5951ea750
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: c049ce4b5d3f8fc12a015a61ea927b744ae76eb3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38685195"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601489"
 ---
 # <a name="single-item-error-remediation"></a>单个项目错误更正
 

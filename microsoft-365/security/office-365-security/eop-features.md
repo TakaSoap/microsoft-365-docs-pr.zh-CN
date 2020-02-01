@@ -1,5 +1,7 @@
 ---
 title: EOP 功能
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840171"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599369"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -36,10 +38,10 @@ ms.locfileid: "40840171"
 |防钓鱼保护|EOP 包括 750,000 个已知垃圾邮件制造者的域。|
 |**垃圾邮件管理**||
 |配置连接筛选器 IP 允许和 IP 阻止列表的能力|连接筛选器中指定的 IP 地址可以是单个 IP 地址和 CIDR IP 地址范围。 服务还支持 IPv6 地址。 有关详细信息，请参阅[配置连接筛选器策略](configure-the-connection-filter-policy.md)。|
-|按照用户、组或域来自定义内容筛选器策略的能力|更精确地讲，您可以创建自定义内容筛选策略，并将其应用到组织中的特定用户、组或域。 虽然自定义策略的优先级始终高于默认策略，但可以更改自定义策略的优先级（即运行顺序）。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。|
-|配置对内容经过筛选的邮件进行的操作的能力|有多个可配置的操作。 例如，您可以删除内容筛选的邮件或将其发送到"垃圾邮件"文件夹或隔离区。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。|
+|按照用户、组或域来自定义内容筛选器策略的能力|更精确地讲，您可以创建自定义内容筛选策略，并将其应用到组织中的特定用户、组或域。 虽然自定义策略的优先级始终高于默认策略，但可以更改自定义策略的优先级（即运行顺序）。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。|
+|配置对内容经过筛选的邮件进行的操作的能力|有多个可配置的操作。 例如，您可以删除内容筛选的邮件或将其发送到"垃圾邮件"文件夹或隔离区。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。|
 |配置高级选项以实现积极的垃圾邮件筛选的能力|有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)（即配置它们的位置）和[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)（提供有关每个选项所执行操作的具体详细信息）。|
-|国际垃圾邮件筛选|您可以将 EOP 配置为筛选以特定语言编写的邮件，或来自特定国家或地区的邮件。 您最多可以配置 86 种不同的语言和 250 种不同的区域。 该服务将针对高可信度垃圾邮件应用配置的操作。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。|
+|国际垃圾邮件筛选|您可以将 EOP 配置为筛选以特定语言编写的邮件，或来自特定国家或地区的邮件。 您最多可以配置 86 种不同的语言和 250 种不同的区域。 该服务将针对高可信度垃圾邮件应用配置的操作。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。|
 |通过 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）管理垃圾邮件|管理员和最终用户可以创建安全发件人列表和阻止发件人列表。 详细信息 <br/>• **Web 上的 Outlook**：请参阅[阻止或允许（垃圾邮件设置）](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)。  <br/>• **Outlook**：请参阅[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。 <br/><br/> 如果您使用 EOP 帮助保护本地邮箱，请务必使用目录同步来帮助确保这些设置已同步到服务。 有关如何设置目录同步的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"。|
 |通过 Microsoft Office Outlook 的垃圾邮件报告加载项的垃圾邮件提交|您可以将加载项下载到 Outlook，以允许您将垃圾邮件提交给 Microsoft 进行分析。 有关下载和使用此工具的详细信息，请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。 <br/><br/> 如果您使用的是 EOP 的 Exchange Server 2013 或更高版本，您还可以在 web 上的 Outlook 中右键单击以提交垃圾邮件，如在[outlook 网页中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中所述。|
 |通过电子邮件别名的垃圾邮件和垃圾邮件提交|您可以通过电子邮件将垃圾邮件和非垃圾邮件提交给 Microsoft。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。|

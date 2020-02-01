@@ -1,5 +1,7 @@
 ---
 title: 首席信息安全监察官（CISO）研讨会，模块5：信息保护
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 766993729b416b360d559a2d8cacf29a2a29c183
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 50e13b846d861a21c4b36ef25c579d592760edde
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517561"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599659"
 ---
 # <a name="ciso-workshop-module-5-information-protection"></a>CISO 研讨会模块5：信息保护
 

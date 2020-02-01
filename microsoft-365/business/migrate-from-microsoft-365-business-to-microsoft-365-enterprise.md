@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 企业移动到 Microsoft 365 E3。
-ms.openlocfilehash: 2515c2d56727b9a8be643dea76e150eeaadce5c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02adda0c2c59d2994b0c6197dd76c6cc893ad9f0
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593691"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627978"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>从 Microsoft 365 商业版迁移到 Microsoft 365 E3
 
@@ -56,7 +56,6 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 | Teams | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | OneDrive for Business | 每个用户 1 TB 存储限制   | 无限制 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| StaffHub  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
 | Outlook 客户管理器，MileIQ  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | | 
 | **威胁防护**     | | | 
 | 攻击面减少功能 | [查看此列表](#threat-protection) | Microsoft Edge 基于硬件的隔离的企业管理 | 

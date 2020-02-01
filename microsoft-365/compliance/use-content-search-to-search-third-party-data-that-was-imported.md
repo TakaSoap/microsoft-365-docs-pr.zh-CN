@@ -1,5 +1,7 @@
 ---
 title: 使用内容搜索来搜索第三方数据导入到 Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询以搜索所有导入的项，或创建查询以搜索特定的第三方数据类型。 本文列出了可在关键字查询中用于搜索可导入到 Office 365 的第三方数据类型的值。
-ms.openlocfilehash: 57a39049ae1df3707a96311c9138195b7cc4c83a
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 005290dc2dae203c4fddc1c78d3007306c613483
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685312"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601319"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>使用内容搜索来搜索第三方数据导入到 Office 365
 

@@ -1,5 +1,7 @@
 ---
 title: 在高级电子数据展示中与保管人合作
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 高级电子数据展示中的保管人管理工具使您可以管理工作流，以确定、保留和收集与法律案件相关人员相关的数据。
-ms.openlocfilehash: 5f112b5229e2a13b329559786ffe82bce798fa72
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fd796471ae4caeafbabc7b588dcf03b8cad80bc4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074973"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600489"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>在高级电子数据展示中与保管人合作
 

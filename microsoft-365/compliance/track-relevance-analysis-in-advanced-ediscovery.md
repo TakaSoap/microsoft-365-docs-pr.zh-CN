@@ -1,5 +1,7 @@
 ---
 title: 跟踪 Office 365 高级电子数据展示中的相关性分析
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: '了解如何查看和解释 Office 365 高级电子数据展示中的案例问题的相关性培训状态和结果。  '
-ms.openlocfilehash: 7b5d8777cdf54741f585fc6af587e9220a8daf0c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5fa9fe49f1a644f2a64321c1ec106b11c487c885
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802645"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601399"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>跟踪 Office 365 高级电子数据展示中的相关性分析
 

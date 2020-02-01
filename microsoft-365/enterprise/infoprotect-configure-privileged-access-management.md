@@ -1,5 +1,7 @@
 ---
 title: 步骤 7：配置 Office 365 的特权访问管理
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解并配置 Office 365 的特权访问管理。
-ms.openlocfilehash: e9c68e4fafb1e9537b403965b4360806938c6a6f
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: da047d21094854f15fdb39fc46fd046a1c4605ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370419"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600959"
 ---
 # <a name="step-7-configure-privileged-access-management-for-office-365"></a>步骤 7：配置 Office 365 的特权访问管理
 
 *此步骤是可选的，仅适用于 Microsoft 365 企业版的 E5 版和高级合规版*
 
-![第6阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Office 365 租户中的特权访问管理可通过配置相应策略来实现，这些策略会为基于任务的活动指定实时访问权限。这种管理可为组织提供保护，防止他人使用具有长期敏感数据访问权限或关键配置设置访问权限的现有特权访问帐户。例如，你可以配置一个特权访问管理策略，要求必须经过显示审批才能访问和更改 Office 365 租户中的组织邮箱设置。
 
@@ -42,7 +44,7 @@ Office 365 租户中的特权访问管理可通过配置相应策略来实现，
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在测试实验室环境中实践此配置，请参阅[特权访问管理测试实验室指南](privileged-access-microsoft-365-enterprise-dev-test-environment.md)。 |
+|![Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在测试实验室环境中练习此配置，请参阅[特权访问管理测试实验室指南](privileged-access-microsoft-365-enterprise-dev-test-environment.md)。 |
 |||
 
 作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step7)。

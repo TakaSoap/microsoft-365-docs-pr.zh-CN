@@ -1,5 +1,7 @@
 ---
 title: 在 Exchange Online 中配置最终用户垃圾邮件通知
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 您可以为适用于域的默认公司范围的垃圾邮件筛选器策略或自定义垃圾邮件筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: 7292d75afb07864fc50d4df30fa5f84691087820
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 3fc2d78e06d0b33793cab0fac3ba038720662f8a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41573009"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599619"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>在 Exchange Online 中配置最终用户垃圾邮件通知
 
@@ -90,7 +92,7 @@ ms.locfileid: "41573009"
     
    - 单击“**保存**”。 包含最终用户垃圾邮件通知设置的垃圾邮件筛选器策略设置摘要将显示在 "" 窗格中。
 
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>更多详细信息
 
 [配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)
   

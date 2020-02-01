@@ -1,5 +1,7 @@
 ---
 title: 为 Microsoft 365 企业版测试环境增加了 Microsoft 365 安全性
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境中的其他 Microsoft 365 安全设置。
-ms.openlocfilehash: 8e8e05f223faedd60ea53683b3531964b3220291
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7587a840a765a4dfb6f966f927314e63ac28fe85
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801687"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600979"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>为 Microsoft 365 企业版测试环境增加了 Microsoft 365 安全性
 
@@ -25,7 +27,7 @@ ms.locfileid: "40801687"
 
 使用本文中的说明，您可以配置其他 Microsoft 365 设置以提高 Microsoft 365 企业版测试环境的安全性。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
@@ -68,7 +70,7 @@ ms.locfileid: "40801687"
 
 3. 在 "**保护 SharePoint、OneDrive 和 Microsoft 团队中的文件**" 下。 选择 "**为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP**"。
 
-4. 单击 **“保存”**。
+4. 单击“**保存**”。
 
 
 ### <a name="enable-anti-malware"></a>启用反恶意软件

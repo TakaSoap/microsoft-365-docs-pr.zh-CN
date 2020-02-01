@@ -1,5 +1,7 @@
 ---
 title: 首席信息安全监察官（CISO）研讨会，模块4a：威胁防护策略
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: f136f8ccb12ac09048b0b6a9de22ebb37fcc40dd
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 2c08570165f893950dc2588ab33b45be36a3816d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517571"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599689"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO 研讨会模块4a：威胁防护策略
 

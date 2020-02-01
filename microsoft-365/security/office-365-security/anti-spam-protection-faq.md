@@ -1,5 +1,7 @@
 ---
 title: 反垃圾邮件保护常见问题解答
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: b782c58bc3694bd27024f9aa7cdb2316c6d2a48a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9be51b4967a558aec254262052d7c01446a7d643
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971961"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599869"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 

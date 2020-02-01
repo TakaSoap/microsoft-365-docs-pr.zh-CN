@@ -1,5 +1,7 @@
 ---
 title: Contoso Corporation 的高度机密数字资产的 SharePoint 网站
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为高度管控的数据实现 SharePoint 网站，以便在研究团队之间实现协作。
-ms.openlocfilehash: caad341c6a44b3270f2bdecd4ab4d8378c11db2c
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: c0b9e36f90e64e1d1c7f7ea2c4b1b4b65e60b95c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "38699704"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601129"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 的高度机密数字资产的 SharePoint 网站
 

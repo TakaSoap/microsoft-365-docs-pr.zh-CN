@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7d2d718aa8c502afedce0fe99d6f444f78735246
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5ec30692d5721c316c205cf8b561e59cd6e65e0b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804805"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602309"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任（HIPAA） & 高科技行为
 
@@ -57,7 +59,7 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 - Microsoft Stream
 - Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Office 365 中型企业客户的高级和本地支持。
 - [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
-- Microsoft Flow 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Intune
 - [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
@@ -82,7 +84,7 @@ Microsoft 为合格的公司或其供应商提供了涵盖在范围内的 Micros
 
 **与 Microsoft 进行 BAA 是否会确保我的组织符合 HIPAA 和高科技法案？**
 
-否。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
+不是。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
 
 **Microsoft 是否可以修改我的组织的 BAA？**
 

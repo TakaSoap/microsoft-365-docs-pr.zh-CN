@@ -1,5 +1,7 @@
 ---
 title: 使用 Office 365 高级电子数据展示中的相关性模块
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: '了解 Office 365 高级电子数据展示中的相关性模块，包括用于培训和文件审阅的工作流和指南以及步骤。  '
-ms.openlocfilehash: 3303a85742876934899517940d0a671e404dea92
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5151c94d2b0bd1824abb499f6cb27bbfbc7618b7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802277"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601299"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>使用 Office 365 高级电子数据展示中的相关性模块
 

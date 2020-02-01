@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f5627194ad21b73cae664c808d2bba9f4254d8b5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1b850db09306f3cb4664433fb5659e8b65b421ba
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805245"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602549"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>防御联邦收购法规补充（DFARS）
 
@@ -77,6 +79,6 @@ CDI 是控制的技术信息或其他信息（如 CUI 注册表中所述），�
 
 - [防御联邦收购法规补充（DFARS）](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
 - [Microsoft 政府云](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [在线服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [受控制的未分类信息（CUI）](https://www.archives.gov/cui/registry/category-list)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

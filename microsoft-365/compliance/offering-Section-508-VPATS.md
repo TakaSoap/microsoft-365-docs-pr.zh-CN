@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6d7bcb6beccc9059d3a7f75fc52b307648f314c2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d9d0c213fcca5b991b4912d5b9158e2d3836aff9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804225"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602019"
 ---
 # <a name="us-section-508"></a>美国508节
 
@@ -25,7 +27,7 @@ ms.locfileid: "40804225"
 
 美国国会修正了1998和2000中的康复法案，要求联邦代理商提供其电子和信息技术（EIT）产品，如软件、硬件、电子内容和支持文档，可供残障人士。 508美国劳动力康复法案1973（29 US Code §794d）（已修正）的规定，联邦机构以确保残障人士的方式获得、维护和使用 EIT 具有同等的访问和使用权限的方式。与其他联邦员工相关的数据和 EIT。
 
-Microsoft 是美国联邦政府和州政府的主要软件和云服务提供商。  为了协助政府客户做出采购决策，Microsoft 发布了可访问性一致性报告，这些报告描述了我们的产品和服务支持508节的标准的范围。  此信息可帮助 Microsoft 客户确定特定的产品或服务是否能满足其特定需求。
+Microsoft 是美国联邦政府和州政府的主要软件和云服务提供商。  为了协助政府客户做出采购决策，Microsoft 发布了可访问性一致性报告，这些报告描述了我们的产品和服务支持508节的标准的范围。  此信息可帮助 Microsoft 客户确定特定产品或服务是否能满足其特定需求。
 
 ## <a name="microsoft-and-us-section-508"></a>Microsoft 和美国508节
 
