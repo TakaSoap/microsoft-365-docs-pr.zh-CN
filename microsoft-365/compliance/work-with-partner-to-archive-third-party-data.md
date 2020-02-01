@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用 Office 365 合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: d17c79ed4d6fa662a3416e9952ac732a8d4d9d9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01188110b19dc4784920a5f18e673f92e064e034
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601219"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628600"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作，以在 Office 365 中存档第三方数据
 
@@ -533,7 +533,12 @@ ms.locfileid: "41601219"
 
 以下是访问和接受注册连接器的请求的步骤：
 
-1. 转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，并使用 Office 365 全局管理员的凭据登录。<br/><br/>将显示以下对话框。 您可以展开 carets 以查看将分配给连接器的权限。<br/><br/>![将显示 "权限请求" 对话框](media/O365-ThirdPartyDataConnector-OptIn1.png)
+1. 转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，并使用 Office 365 全局管理员的凭据登录。
+
+   将显示以下对话框。 您可以展开 carets 以查看将分配给连接器的权限。
+
+   ![将显示 "权限请求" 对话框](media/O365-ThirdPartyDataConnector-OptIn1.png)
+
 2. 单击“Accept”****。
 
 接受请求后，将显示[Azure 门户](https://portal.azure.com)。 若要查看您的组织的应用程序列表，请单击 " **Azure Active Directory** > **企业应用程序**"。 **企业应用程序**边栏上列出了 Office 365 第三方数据连接器。

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ec30692d5721c316c205cf8b561e59cd6e65e0b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602309"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628088"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任（HIPAA） & 高科技行为
 
@@ -70,7 +70,7 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 
 首先利用云针对运行状况数据解决方案与 Azure 安全性和合规性蓝图（HIPAA/HITRUST 运行状况数据和 AI）的优势。 此蓝图提供的工具和指南可帮助您立即开始构建 HIPAA/HITRUST 解决方案。
 
-[开始使用 Azure HIPAA/HITRUST 蓝图](https://aka.ms/healthblueprint)
+[开始使用 Azure HIPAA/HITRUST 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -84,7 +84,7 @@ Microsoft 为合格的公司或其供应商提供了涵盖在范围内的 Micros
 
 **与 Microsoft 进行 BAA 是否会确保我的组织符合 HIPAA 和高科技法案？**
 
-不是。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
+否。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
 
 **Microsoft 是否可以修改我的组织的 BAA？**
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: aa93ea90748f4beeb7a6d2ad6f537b098f19376c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 734621d9017c21822043ff8c1beb82044ec8c860
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602299"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628098"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康信息信任联盟（HITRUST）常见安全框架（CSF）
 
@@ -56,7 +56,7 @@ Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
 首先利用云针对运行状况数据解决方案与 Azure 安全性和合规性蓝图（HIPAA/HITRUST 运行状况数据和 AI）的优势。 此蓝图提供的工具和指南可帮助您立即开始构建 HIPAA/HITRUST 解决方案。
 
-[开始使用 Azure HIPAA/HITRUST 蓝图](https://go.microsoft.com/fwlink/p/?linkid=2100613)
+[开始使用 Azure HIPAA/HITRUST 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>使用 Office 365 时，提高您的 HIPAA/HITRUST 合规性
 
@@ -74,7 +74,7 @@ Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
 **我可以使用 Azure HITRUST 合规性来构建组织的认证过程吗？**
 
-可以。 如果企业需要对部署在 Microsoft 服务上的实施进行 HITRUST 认证，则可以在进行合规性评估时在 Azure HITRUST 合规性上构建。 不过，您需要负责评估您自己的组织中的 HITRUST 要求和控件。
+能。 如果企业需要对部署在 Microsoft 服务上的实施进行 HITRUST 认证，则可以在进行合规性评估时在 Azure HITRUST 合规性上构建。 不过，您需要负责评估您自己的组织中的 HITRUST 要求和控件。
 
 **如何获取 HITRUST 证书的副本？**
 
