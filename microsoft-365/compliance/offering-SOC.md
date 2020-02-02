@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f3abd3dae61866041de9ea229e38ed17c4502214
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602039"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662018"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -49,15 +49,14 @@ Microsoft 已获得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 报告。 通常，SOC
 
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>SOC 1 和 SOC 2 覆盖的服务
 
-- Azure、Azure 政府和 Azure 德国[详细列表](https://aka.ms/AzureCompliance)
+- [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
 - 云应用安全
-- Dynamics 365 和 Dynamics 365 美国政府版[详细列表](https://aka.ms/d365-compliance-list)
+- [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
 - Microsoft 托管桌面
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
-- Office 365、Office 365 美国政府版和 Office 365 美国政府国防版[详细列表](https://go.microsoft.com/fwlink/p/?LinkID=2077751)；Yammer 已完成 SOC 1 Type 1 报告
-- Office 365 德国
+- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 - Stream
@@ -65,13 +64,14 @@ Microsoft 已获得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 报告。 通常，SOC
 
 ### <a name="covered-services-for-soc-3"></a>SOC 3 涵盖的服务
 
-- Azure、Azure 政府和 Azure 德国[详细列表](https://aka.ms/AzureCompliance)
+- [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
 - 云应用安全
 - Graph
 - Intune
 - Microsoft 托管桌面
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- [Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
 - Stream
 
@@ -95,11 +95,13 @@ Microsoft 云服务会根据 SOC 1（SSAE18，ISAE 3402）和 SOC 2（AT 条例 
 
 #### <a name="office-365"></a>Office 365
 
-- [Office 365 SOC 1 SSAE 16 Type II 审核报告](https://aka.ms/office365soc1auditreport)
-- [Office 365 SOC 2 AT 101 Type II 审核报告](https://aka.ms/Office365SOC2AuditReport)
+- [Office 365 Core - SSAE 18 SOC 1 报告](https://aka.ms/o365SOC-1)
+- [Office 365 Core - SSAE 18 SOC 2 报告](https://aka.ms/o365SOC-2)
+- [Office 365 Core - SSAE 18 SOC 3 报告](https://aka.ms/o365SOC-3)
+- [Office 365 Microservices T1 – SSAE 18 SOC2 Type I 报告](https://aka.ms/o365-MS-SOC-2-type1)
 - [Office 365 客户密码箱 SOC 1 SSAE 16 审核报告](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
-- [Yammer SOC 2 AT 101 Type II 审核报告](https://aka.ms/YammerSOC2AuditReport)
 - [Yammer SOC 2 AT 101 Type I 审核报告](https://aka.ms/YammerSOC2Type1AuditReport)
+- [Yammer SOC 2 Type II 报告](https://aka.ms/yammerSOC-2)
 - [请参阅 Bridge Letter 和其他审核报告](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
@@ -129,15 +131,10 @@ Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stre
 
 ## <a name="resources"></a>资源
 
- - [使用 Microsoft 云服务更好地保护你的数据](https://www.microsoft.com/trustcenter/guidance/protect-data)
- - [Service Organization Control (SOC) 报告](https://aka.ms/mssocreports)
- - [SSAE 16 审核标准](https://www.ssae-16.com/)
- - [ISAE 3402 标准](https://isae3402.com/)
- - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
- - [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
- - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
- - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf)。
+- [使用 Microsoft 云服务更好地保护你的数据](https://www.microsoft.com/trustcenter/guidance/protect-data)
+- [Service Organization Control (SOC) 报告](https://aka.ms/mssocreports)
+- [SSAE 16 概述](http://ssae16.com/SSAE16_overview.html)
+- [ISAE 3402 概述](http://isae3402.com/ISAE3402_overview.html)
+- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
