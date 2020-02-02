@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的高级电子数据展示的新版本。
-ms.openlocfilehash: 0057b77b140d05093686029addc29e72e59cae11
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601769"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662008"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 
@@ -84,8 +84,11 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 使用 "**查看设置**" 选项卡可查看和分析从 live 系统中收集的内容并将其添加到审阅集。 *审阅集*是在电子数据展示工作流的前一阶段收集的 custodial 数据（如果适用、非 custodial 数据，则为数据的脱机副本）的静态集合。 将搜索结果添加到审阅集时，将触发一个过程，该过程会从容器中提取文件、提取元数据并提取文本。 完成此过程后，系统将为从保管人中收集的所有数据生成新索引，并将其添加到审阅集。 将数据添加到评审集后，可以运行更多查询来缩小事例数据、以文本形式或以本机文件格式查看数据，以及在审阅集中对文档添加批注、标记密文和标记文档。 您还可以执行高级分析，例如确定文档复制、电子邮件线程和主题。 将数据 culled 到与事例相关的内容后，可以直接下载文档，也可以将它们连同文件元数据、批注和任何标记一起导出。 有关详细信息，请参阅：
 
 - [查看审阅集中的文档](view-documents-in-review-set.md)
+
 - [查询审阅集中的数据](review-set-search.md)
+
 - [标记审阅集中的文档](tagging-documents.md)
+
 - [分析评审集中的数据](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>导出数据以供审阅和演示
@@ -99,3 +102,7 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 ## <a name="configuring-case-settings"></a>配置事例设置
 
 使用 "**设置**" 选项卡配置大小写设置。 这包括向事例添加成员、关闭或删除事例以及配置搜索和分析设置。
+
+## <a name="advanced-ediscovery-reports"></a>高级电子数据展示报告
+
+您可以使用主页上的高级电子数据展示报告帮助您的组织在所有高级电子数据展示案例中跟踪活动和状态。 高级电子数据展示报告功能聚合了有关事例、保管人、数据源和通信的信息。 您可以根据各种条件筛选报告数据，并将聚合信息导出到 CSV 文件，以供进一步分析。  有关详细信息，请参阅[高级电子数据展示报告](advanced-ediscovery-reports.md)。

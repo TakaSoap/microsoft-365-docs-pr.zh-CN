@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: 了解如何通过将邮箱转变成非活动邮箱来保留以前员工的邮箱内容。 为此，可以将邮箱置于诉讼保留状态，或将 Office 365 保留策略应用于邮箱，然后删除相应的 Office 365 帐户。
-ms.openlocfilehash: 7b60ce92382c0b8111dcf4c1b8d9fb4c793717c6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ede1ae199bdecfea2662a187c3965cc2b676d7
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597939"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661875"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Office 365 中的非活动邮箱概述
 
@@ -85,7 +85,7 @@ Office 365 中的标签可帮助您对组织中的电子邮件数据进行分类
   
 ## <a name="creating-an-inactive-mailbox"></a>创建非活动邮箱
 
-若要将邮箱设为非活动邮箱，必须为其分配一个 Exchange Online 计划2许可证（或 exchange online 计划1许可证和 Exchange Online 存档附加许可证），以便在该邮箱之前可以将诉讼保留或 Office 365 保留策略应用于该邮箱。已. 邮箱删除后，与之关联的任何 Exchange Online 许可证都可分配给新用户。 非活动邮箱不需要持续许可证。
+若要将邮箱设为非活动邮箱，必须为其分配一个 Exchange Online 计划2许可证（或 exchange online 计划1许可证和 Exchange Online 存档附加许可证），以便在该邮箱之前可以将诉讼保留或 Office 365 保留策略应用于该邮箱。已. 邮箱删除后，与之关联的任何 Exchange Online 许可证都可分配给新用户。
   
 下表总结了将非活动邮箱设为不同保留方案的过程。 有关详细信息，请参阅[在 Office 365 中管理非活动邮箱](create-and-manage-inactive-mailboxes.md)。
   

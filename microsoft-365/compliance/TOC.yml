@@ -36,15 +36,15 @@
           href: insider-risk-management-users.md
         - name: 创建内幕风险通知模板（预览）
           href: insider-risk-management-notices.md
-    - name: 通信合规性（预览）
+    - name: 沟通合规性
       items:
-        - name: 了解沟通合规性（预览版）
+        - name: 了解通信合规性
           href: communication-compliance.md
-        - name: 在 Microsoft 365 中配置通信合规性（预览版）
+        - name: 通信合规性入门
           href: communication-compliance-configure.md
-        - name: 调查和修正沟通合规性警报（预览版）
+        - name: 调查和修正通信合规性警报
           href: communication-compliance-investigate-remediate.md
-        - name: 沟通合规性功能参考（预览版）
+        - name: 有关通信合规性的功能参考
           href: communication-compliance-feature-reference.md
         - name: Office 365 中的监督策略
           href: supervision-policies.md
@@ -150,8 +150,6 @@
           href: document-fingerprinting.md
         - name: 敏感信息的 DLP 函数
           href: what-the-dlp-functions-look-for.md
-        - name: 观看自定义 DLP 的扩展概述
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
     - name: 电子邮件加密
       href: email-encryption.md
       items:
@@ -454,6 +452,8 @@
               href: tagging-documents.md
             - name: 设置律师-客户特权检测
               href: attorney-privilege-detection.md
+            - name: 使用审阅集仪表板（预览）
+              href: advanced-ediscovery-dashboard.md
         - name: 分析事例数据
           href: analyzing-data-in-review-set.md
           items:
@@ -494,6 +494,8 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: 对话审阅集
               href: conversation-review-sets.md
+            - name: 高级电子数据展示报告（预览）
+              href: advanced-ediscovery-reports.md
             - name: AzCopy 疑难解答
               href: troubleshooting-azcopy.md
     - name: 管理电子数据展示事例

@@ -1,5 +1,5 @@
 ---
-title: 通信合规性功能参考（预览）
+title: 通信合规性功能参考
 description: Microsoft 365 中的通信合规性的功能参考。 了解每个功能组件的详细信息和规格。
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b844003b2cf0da80588d9fe2622c3353a57d73b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ff765d309e3f01dbc1c2ef7fa75ed3287c8a5c0a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595829"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661958"
 ---
-# <a name="communication-compliance-feature-reference-preview"></a>通信合规性功能参考（预览）
+# <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
 ## <a name="policies"></a>策略
 
@@ -67,14 +67,14 @@ ms.locfileid: "41595829"
 
 - **Microsoft 团队**：可以扫描公共和私有 Microsoft 团队频道和个人聊天中的交流通信和相关附件。 团队聊天匹配通信合规性策略条件每24小时处理一次，并在通信合规性报告中可用。 使用以下组管理配置监督团队中的个人用户聊天和通道通信：
 
-    - **对于团队聊天通信：** 分配单个用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 这适用于一对一或一对多的用户/聊天关系。
+    - **对于团队聊天通信：** 分配单个用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 此设置适用于一对一或一对多的用户/聊天关系。
     - **对于团队渠道通信：** 分配要扫描的每个 Microsoft 团队频道或 Office 365 组，其中包含特定用户的通信合规性策略。 如果将同一用户添加到其他 Microsoft 团队频道或 Office 365 组，请确保将这些新的频道和组添加到通信合规性策略中。
 
 - **Exchange 电子邮件**：作为 Microsoft 365 或 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件扫描。 与通信合规性策略条件匹配的电子邮件和附件可立即在通信合规性报告中使用。 通信合规性支持的附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
 - **Skype For Business online**：可以监督 skype For business online 中的聊天通信和相关附件。 Skype for Business Online 聊天匹配通信合规性策略条件每24小时处理一次，然后在通信合规性报告中可用。 受监督聊天对话源于[以前在 Skype for Business Online 中保存的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置监督 Skype for Business Online 中的用户聊天通信：
 
-    - **对于 Skype For Business Online 聊天通信**：分配个人用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 这适用于一对一或一对多的用户/聊天关系。
+    - **对于 Skype For Business Online 聊天通信**：分配个人用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 此设置适用于一对一或一对多的用户/聊天关系。
 
 - **第三方来源**：可以扫描第三方源的通信，以获取导入到 Microsoft 365 组织中的邮箱的数据。 连接器支持以下第三方资源：
 
@@ -85,7 +85,7 @@ ms.locfileid: "41595829"
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [自定义数据连接器](archiving-third-party-data.md)
 
-您必须先为 Microsoft 365 组织配置第三方连接器，然后才能将连接器分配给通信合规性策略。 "通信合规性策略" 向导的 "**第三方源**" 部分仅显示当前配置的第三方连接器。
+您必须先为 Microsoft 365 组织配置第三方连接器，然后才能将连接器分配给通信合规性策略。 "通信合规性策略向导" 的 "**第三方源**" 部分仅显示当前配置的第三方连接器。
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>从 Office 365 中的监察转换
 
@@ -223,7 +223,7 @@ ms.locfileid: "41595829"
 | **File 类** | 基于邮件类型（*邮件*或*附件*）的邮件类。 |
 | **有附件** | 邮件中的附件状态。 |
 | **Item 类** | 基于邮件类型、电子邮件、Microsoft 团队聊天、Bloonmberg 等的邮件源。 |
-| **收件人域** | 向其发送邮件的域。 默认情况下，这通常是 Microsoft 365 订阅域。 |
+| **收件人域** | 向其发送邮件的域。 默认情况下，此域通常为 Microsoft 365 订阅域。 |
 | **收件人** | 向其发送邮件的用户。 |
 | **发件人** | 发送邮件的人员。 |
 | **发件人域** | 发送邮件的域。 |
@@ -270,19 +270,19 @@ ms.locfileid: "41595829"
 
 ## <a name="audit"></a>跟踪
 
-在某些情况下，您必须向法规或合规性审核人员提供信息，以证明员工活动和通信的监督。 这可能是与定义的组织策略相关联的所有活动的摘要，或任何与通信合规性策略更改相关的活动。 通信合规性策略具有内置审核跟踪，可以实现内部或外部审核的完整就绪状态。 您的通信策略将捕获每个创建、编辑和删除操作的详细审核历史记录，以提供监督过程的证明。
+在某些情况下，您必须向法规或合规性审核人员提供信息，以证明员工活动和通信的监督。 此信息可能是与定义的组织策略相关联的所有活动的摘要，也可能是与通信合规性策略的任何更改。 通信合规性策略具有内置审核跟踪，可以实现内部或外部审核的完整就绪状态。 您的通信策略将捕获每个创建、编辑和删除操作的详细审核历史记录，以提供监督过程的证明。
 
 >[!Important]
->必须为你的组织启用审核，然后才会记录通信合规性事件。 若要启用审核，请参阅[为通信合规性策略启用审核](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional)。
+>必须为你的组织启用审核，然后才会记录通信合规性事件。 若要启用审核，请参阅[为通信合规性策略启用审核](communication-compliance-configure.md#step-6-optional-enable-auditing-for-your-communication-compliance-policies)。
 
-若要查看通信合规性策略活动，请在主页上为任何策略选择 "**导出审阅活动**" 控件。 这将生成 .csv 格式的审核文件，其中包含以下信息：
+若要查看通信合规性策略活动，请在主页上为任何策略选择 "**导出审阅活动**" 控件。 此操作将生成 .csv 格式的审核文件，其中包含以下信息：
 
 |**Field**|**详细信息**|
 |:-----|:-----|
-| **CreationDate** | 在策略中执行活动时。 |
+| **CreationDate** | 在策略中执行活动的日期。 |
 | **UserIds** | 在策略中执行活动的用户。 |
 | **Operations** | 对策略执行的操作。 |
-| **AuditData** | 这是所有策略活动的主数据源字段。 将记录所有活动，并以逗号分隔符分隔。 |
+| **AuditData** | 此字段是所有策略活动的主要数据源。 将记录所有活动，并以逗号分隔符分隔。 |
 
 您还可以在统一审核日志中或使用[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet 查看审核活动。
 

@@ -1,5 +1,5 @@
 ---
-title: 通信合规性（预览）
+title: 沟通合规性
 description: 了解 Microsoft 365 中的通信合规性
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8aa7beeea621ccbb0014059766fe217c1a25e2a2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595809"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661938"
 ---
-# <a name="communication-compliance-in-microsoft-365-preview"></a>Microsoft 365 中的通信合规性（预览）
+# <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
 通信合规性是 Microsoft 365 中新的内幕风险解决方案集的一部分，可帮助您对组织中不适当的邮件进行检测、捕获和采取补救措施，从而帮助最大限度地减少通信风险。 通过预定义和自定义策略，可以扫描策略匹配的内部和外部通信，以便指定的审阅者可以对其进行检查。 审阅者可以调查组织中扫描的电子邮件、Microsoft 团队或第三方通信，并采取适当的补救措施以确保它们符合组织的邮件标准。
 
@@ -114,8 +114,8 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 在此工作流步骤中，您可以确定合规性要求并配置适用的通信合规性策略。 策略模板是一种很好的方法，不仅可以快速配置新的符合性策略，还可以在要求发生变化时快速修改和更新策略。 例如，在为组织中的所有用户配置策略之前，您可能需要为一小部分用户在通信中快速测试针对冒犯性语言和反骚扰的策略。
 
-> [!Important]
-> 默认情况下，全局管理员不具有对通信合规性功能的访问权限。 若要启用通信合规性功能的权限，请参阅[使通信合规性在组织中可用](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required)。
+>[!Important]
+>默认情况下，全局管理员不具有对通信合规性功能的访问权限。 若要启用通信合规性功能的权限，请参阅[使通信合规性在组织中可用](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
 
 您可以从 Microsoft 365 合规性中心的以下策略模板中进行选择：
 
@@ -143,6 +143,7 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 - **通知用户**：通常，用户意外或无意地违反通信合规性策略。 您可以使用通知功能向用户提供警告通知并解决问题。
 - **升级到另一个审阅者**：有时，问题的最初审阅者需要从其他审阅者处进行输入，以帮助解决事件。 您可以轻松地将邮件问题提升到组织其他区域中的审阅者，作为解决过程的一部分。
 - **标记为误报**：在符合性策略的匹配项中，错误地检测到邮件将偶尔遍历到审阅过程。 您可以将这些类型的警报标记为误报并自动解决问题。
+- **创建案例**：在最严重的情况下，可能需要与组织中的其他审阅者共享通信合规性信息。 通信合规性与其他 Microsoft 365 合规性功能紧密集成，可帮助您实现端到端风险解决方案。 升级案例以使您能够将案例的数据和管理转移到 Microsoft 365 中的高级电子数据展示。 高级电子数据展示提供了端到端工作流，以保留、收集、查看、分析和导出对组织内部和外部调查做出响应的内容。 它允许法律团队管理整个法律封存通知工作流。 若要了解有关高级电子数据展示事例的详细信息，请参阅[Microsoft 365 中的高级电子数据展示概述](overview-ediscovery-20.md)。
 
 ### <a name="monitor"></a>监视
 
