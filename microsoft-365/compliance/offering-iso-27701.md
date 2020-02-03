@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859372"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601909"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隐私信息管理系统 (PIMS)
 
@@ -63,6 +66,11 @@ ISO/IEC 27001 和 PIMS 的要点：
 ## <a name="what-should-your-organization-do-with-pims"></a>组织应如何使用 PIMS？
 
 无论你组织的规模如何，无论其是控制者还是处理者，你的组织都应该考虑为自己的组织获得认证，或者根据业务需求向供应商请求认证。 这尤其适用于处理敏感个人数据或大量个人数据的处理者、下层处理者和联合控制者。 无论是哪种情况，组织都应评估其业务需求，以确定自己的产品和服务的认证是否适合。
+
+## <a name="audits-reports-and-certificates"></a>审核、报告和证书
+
+- [Azure ISO/IEC 27701 认证](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure ISO/IEC 27701 评估报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 
 ## <a name="resources"></a>资源
 

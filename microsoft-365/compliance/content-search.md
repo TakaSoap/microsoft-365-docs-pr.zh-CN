@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的内容搜索
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合规中心内的内容搜索工具来搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Office 365 组、Yammer 组和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558399"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595719"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 

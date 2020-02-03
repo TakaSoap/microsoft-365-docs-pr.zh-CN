@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c0a84b577b1eab22fb0f1513c3a54ae763bece76
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: cab73521628a17704221ffa8e41fd2822cb9e97e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558650"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601949"
 ---
 # <a name="enisa-information-assurance-framework"></a>ENISA 信息保障框架
 
 ## <a name="about-the-enisa-information-assurance-framework"></a>关于 ENISA 信息保障框架
 
-[欧洲网络和信息安全局](https://www.enisa.europa.eu/) (ENISA) 是网络和信息专长中心。 它与欧盟成员国和私营部门密切合作，提供有关良好网络安全做法的建议。 ENISA 还支持制定和实现与国家信息安全相关的欧盟政策和法律。
+[欧洲网络和信息安全局](https://www.enisa.europa.eu/) (ENISA) 是网络和信息技术中心。 它与欧盟成员国和私营部门密切合作，提供有关良好网络安全做法的建议。 ENISA 还支持制定和实现与国家/地区信息安全相关的欧盟政策和法律。
 
 [信息保障框架](https://www.enisa.europa.eu/publications/cloud-computing-information-assurance-framework) (IAF) 是一组保障条件，组织可以通过云服务提供商审阅这些条件，以确保它们能够充分保护客户数据。 IAF 旨在帮助组织评估采用云服务的风险，更好地比较不同云服务中的产品/服务，并减少云服务提供商的保障负担。
 
@@ -39,7 +41,7 @@ CSA STAR 注册表中列出了 Azure 合规性，该注册表是一个免费的�
 
 由于这些自我评估报告是公开提供的，Azure 客户可以了解 Microsoft 安全实践，并采用同一基准比较各个 CSP。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 

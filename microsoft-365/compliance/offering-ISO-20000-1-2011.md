@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ae0df3ddc8eec28cc6f29bddd0a46a09d33b0dc
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: da23c71947e668ac3a401d68a35963fbc94a9afc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260040"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602269"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 信息技术服务管理
 
@@ -48,7 +50,7 @@ ISO 20000-1:2011 于 2005 年由 ISO/IEC 联合小组委员会发布，并于 20
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter 的 2017 ISO 20000-1 文档
+Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft 数据中心的 2017 ISO 20000-1 文档
 
 - [评估报告](https://go.microsoft.com/fwlink/p/?linkid=2077810)
 - [证书](https://go.microsoft.com/fwlink/p/?linkid=2077815)

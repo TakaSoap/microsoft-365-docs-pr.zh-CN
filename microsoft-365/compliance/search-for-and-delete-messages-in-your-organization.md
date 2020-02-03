@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 组织中搜索并删除电子邮件
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 的安全与合规中心内的搜索和清除功能在组织中的所有邮箱中搜索并删除电子邮件。
-ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259970"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601549"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>在 Office 365 组织中搜索并删除电子邮件
 
@@ -43,7 +45,7 @@ ms.locfileid: "41259970"
     
 - 你必须使用安全与合规中心 PowerShell 删除邮件。 有关如何连接的说明，请参阅[步骤 2](#step-2-connect-to-security--compliance-center-powershell)。
     
-- 一次最多可以删除每个邮箱的 10 封邮件。 因为搜索和删除邮件的功能是用作事件响应工具，所以此限制可帮助确保从邮箱中快速删除邮件。 此功能并不用于清理用户邮箱。 若要删除 10 个以上的项目，可以使用 Exchange Online PowerShell 中的 **Search-Mailbox -DeleteContent** 命令。 请参阅[搜索和删除邮件](search-for-and-delete-messagesadmin-help.md)。
+- 一次最多可以删除每个邮箱的 10 封邮件。 因为搜索和删除邮件的功能是用作事件响应工具，所以此限制可帮助确保从邮箱中快速删除邮件。 此功能并不用于清理用户邮箱。
     
 - 在内容搜索中，可通过搜索和清除操作删除其内项目的最大邮箱数为 50,000。 如果内容搜索（在[步骤 1](#step-1-create-a-content-search-to-find-the-message-to-delete) 中创建）具有超过 50,000 个源邮箱，则清除操作（在步骤 3 中创建）将失败。 请参阅[详细信息](#more-information)部分，以了解有关对超过 50,000 个邮箱执行搜索和清除操作的提示。 
     

@@ -1,5 +1,7 @@
 ---
 title: 保留策略概述
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 20992f6b28e0f7765724fb4d35febe19639de40e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558589"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597679"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
