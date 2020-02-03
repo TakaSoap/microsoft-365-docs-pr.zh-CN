@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: d64d9b98fe3cf24a14b3f3126ff3f38b1d84087d
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 0ead7cbabc87b7d852cf61fc414df65315c25e39
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41557979"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596329"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -100,8 +102,8 @@ GDPR 授予人们管理组织收集的个人数据的权限。 可通过数据�
 
 ### <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR 的责任就绪清单
 
-这些[清单](gdpr-arc.md)提供了一种方便的方法来访问使用 Microsoft 产品支持 GDPR 所需的信息。 可以使用 [Microsoft 合规性分数](compliance-score.md)来管理清单项目，具体方法是引用 GDPR 磁贴中的“客户托管控制”下的“控制 ID”和“控制标题”。
+这些[清单](gdpr-arc.md)提供了一种方便的方法来访问使用 Microsoft 产品支持 GDPR 所需的信息。 可以使用 [Microsoft 合规性分数](compliance-score.md)来管理清单项目，具体方法是引用 GDPR 磁贴中的“客户托管控件”下的控件 ID 和控件标题。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 - [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

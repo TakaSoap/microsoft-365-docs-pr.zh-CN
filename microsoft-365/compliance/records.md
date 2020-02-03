@@ -1,5 +1,7 @@
 ---
 title: 记录概述
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 要在 Office 365 或 Microsoft 组织中实现记录管理策略，请使用将内容声明为记录的保留标签。 然后发布或自动应用保留记录标签。
-ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803829"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601679"
 ---
 # <a name="overview-of-records"></a>记录概述
 
@@ -78,6 +80,10 @@ ms.locfileid: "40803829"
 
 3. 将保留标签[发布](labels.md#how-retention-labels-work-with-retention-label-policies)或[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)到 SharePoint 网站和/或 OneDrive 帐户。
 
+> [!NOTE]
+> 使用[保留标签](labels.md)将项目声明为记录需要 Office 365 企业版 E5 许可证，或对于有权编辑此位置中的内容的每位用户等效。 具有只读权限的用户不需要许可证。
+
+
 ### <a name="applying-a-retention-label-to-content"></a>对内容应用保留标签
 
 对于 Exchange，任何具有邮箱写入权限的用户均可对电子邮件应用记录标签。 对于 SharePoint 和 OneDrive 内容，默认“成员”组（“参与”权限级别）中的任何用户均可将记录标签应用于内容。 应用后，仅网站集管理员可删除或更改该记录标签。 如前所述，可以对内容自动应用将内容分类为记录的保留标签。
@@ -105,7 +111,7 @@ ms.locfileid: "40803829"
 ![标记为记录的文档上的记录状态属性](media/recordversioning8.png)
 
 > [!NOTE]
-> 记录版本控制需要 Office 365 Enterprise E5 许可证，以便有权限的用户可以编辑无法在 SharePoint 网站或 OneDrive 帐户中声明为记录的内容。 具有只读权限的用户不需要许可证。
+> 记录版本控制需要 Office 365 Enterprise E5 许可证，以便有权限的用户可以编辑无法在 SharePoint 网站或 OneDrive 帐户中声明为记录的内容。 具有只读权限的用户不需要此许可证。
 
 ### <a name="locking-and-unlocking-a-record"></a>锁定和解锁记录
 

@@ -1,5 +1,7 @@
 ---
 title: 在安全与合规中心搜索审核日志
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265890"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661998"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -122,6 +124,7 @@ ms.locfileid: "41265890"
   |Microsoft Project|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Power BI|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |安全与合规中心|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online 和 OneDrive for Business|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -335,7 +338,7 @@ ms.locfileid: "41265890"
 |(无)|FileModifiedExtended|这与“已修改文件”(FileModified) 活动相关。 如果一个用户长时间（至 3 小时）持续修改某一文件，则会记录下 FileModifiedExtended 事件。 <br/><br/> 记录 FileModifiedExtended 事件是为了减少持续修改文件时所记录的 FileModified 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileModified 记录的干扰，从而专注于初始（和更重要的）FileModified 事件。|
 |已移动文件|FileMoved|用户将文档从网站上的当前位置移动到新位置。|
 |(无)|FilePreviewed|用户在 SharePoint 或 OneDrive for Business 网站上预览文件。 这些事件通常发生在基于单个活动的高容量情形中，例如查看图库。|
-|已执行的搜索查询|SearchQueryPerformed|用户或系统帐户在 SharePoint 或 OneDrive for Business 中执行搜索。 部分服务帐户执行搜索查询的常见情形包括将电子数据展示挂起或保留策略应用到网站或 OneDrive 帐户，以及将保留或敏感度标签自动应用到网站内容。 在许多情况下，在审核记录的“用户”字段中登录的服务帐户名称为 **app@sharepoint**。 </br></br> **提示：** 已执行搜索查询活动的审核记录中的 ApplicationDisplayName 和 EventData 字段可以帮助你识别触发此事件的应用场景或服务。|
+|已执行的搜索查询|SearchQueryPerformed|用户或系统帐户在 SharePoint 或 OneDrive for Business 中执行搜索。 部分服务帐户执行搜索查询的常见情形包括将电子数据展示挂起或保留策略应用到网站或 OneDrive 帐户，以及将保留或敏感度标签自动应用到网站内容。 在许多情况下，在审核记录的“用户”字段中记录的服务帐户名称为 **app\@sharepoint**。 </br></br> **提示：** 已执行搜索查询活动的审核记录中的 ApplicationDisplayName 和 EventData 字段可以帮助你识别触发此事件的应用场景或服务。|
 |已回收文件的次要版本|FileVersionsAllMinorsRecycled|用户从文件版本历史记录中删除所有次要版本。 已删除的版本移动到网站的回收站。|
 |已回收所有版本的文件|FileVersionsAllRecycled|用户从文件版本历史记录中删除所有版本。 已删除的版本移动到网站的回收站。|
 |已回收文件版本|FileVersionRecycled|用户从文件版本历史记录中删除某个版本。 已删除的版本移动到网站的回收站。|

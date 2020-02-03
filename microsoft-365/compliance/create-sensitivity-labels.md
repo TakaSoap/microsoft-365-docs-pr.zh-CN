@@ -1,5 +1,7 @@
 ---
 title: 创建和发布敏感度标签
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 有关创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护的说明。
-ms.openlocfilehash: bef9841da49e24a99a038e9df906d523fe40e044
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 73df1928a89218a419a9d774a7830ecad4aceb6d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259288"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661858"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -43,7 +45,7 @@ ms.locfileid: "41259288"
 1. 在标签管理中心中，导航到“灵敏度”标签：
     
     - Microsoft 365 合规中心： 
-        - **解决方案** > **信息保护（预览版）**
+        - **解决方案** > **信息保护**
         
         如果看不到此选项，请先选择“**全部显示**”。 
     
@@ -69,6 +71,9 @@ ms.locfileid: "41259288"
 > 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，以便对相同用户提供所做的更改。 但是，可允许在 24 小时内将所做的更改复制到用户和服务。
 
 发布标签之前，无法在应用程序或服务中使用。 若要发布标签，必须将其[添加到标签策略](#publish-sensitivity-labels-by-creating-a-label-policy)。
+
+> [!IMPORTANT]
+> 在此“**标签**”选项卡上，不要选择“**发布标签**”选项卡（或在编辑标签时的“**发布标签**”按钮），除非你需要创建新的标签策略。 仅当用户需要不同的标签或不同的策略设置时，才需要多个标签策略。 旨在创建尽可能少的标签策略 - 组织只有一个标签策略的情况并不少见。
 
 ### <a name="additional-label-settings-with-office-365-security--compliance-center-powershell"></a>附加标签设置在 Office 365 安全与合规中心 PowerShell 中可用
 
@@ -113,7 +118,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 1. 在标签管理中心中，导航到“灵敏度”标签：
     
     - Microsoft 365 合规中心： 
-        - **解决方案** > **信息保护（预览版）**
+        - **解决方案** > **信息保护**
         
         如果看不到此选项，请先选择“**全部显示**”。 
     

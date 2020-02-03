@@ -1,8 +1,11 @@
 ---
 title: Office 365 高级电子数据展示快速设置
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: '了解如何从 Office 365 安全与合规中心访问 Office 365 高级电子数据展示，并查看使用高级电子数据展示的典型工作流。  '
-ms.openlocfilehash: 6b73177a0bd98dfb0d9e2f9127e682911f82703f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6df2d68639f2be9f6ba38ea7211654058bc73035
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075600"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597669"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示快速设置
 
+> [!IMPORTANT]
+> 当我们继续对较新版本的高级电子数据展示进行投资时，我们将宣布停用 Office 365 高级电子数据展示（也称为*高级电子数据展示 v1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
+
 阅读本设置部分，Microsoft 365 安全与合规中心电子数据展示管理员可了解如何开始使用高级电子数据展示。 若要更好地理解本部分，需要对这两种工具都有一定的了解。
-  
-> [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>访问高级电子数据展示中的案件集
 
-可以从安全与合规中心访问高级电子数据展示。必须是安全与合规中心内电子数据展示案件集的成员，才能访问高级电子数据展示中的案件集。若要了解如何分配电子数据展示案件集权限，以及如何将用户添加到电子数据展示案件集，请参阅[在 Office 365 中管理电子数据展示案件集](manage-ediscovery-cases.md)。 
+
+可以从安全与合规中心访问高级电子数据展示。必须是安全与合规中心内电子数据展示案件集的成员，才能访问高级电子数据展示中的案件集。若要了解如何分配电子数据展示案件集权限，以及如何将用户添加到电子数据展示案件集，请参阅[在 Office 365 中管理电子数据展示案件集](ediscovery-cases.md)。 
   
 若要转到高级电子数据展示中的案件集，请执行以下操作： 
   

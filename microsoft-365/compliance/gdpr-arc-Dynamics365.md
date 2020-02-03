@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ebe888f993f805621051e42503ae40b1b321dfc1
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: b0815a81e1131d45cda2e0cc267c5bedd366c75d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558029"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594513"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Dynamics 365 责任就绪清单
 
@@ -30,9 +32,9 @@ ms.locfileid: "41558029"
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) 安全技术要求。
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隐私管理要求。
 
-可以使用合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 来管理此清单中的项目，具体方法是引用 GDPR 磁贴中的“客户托管控制”** 下的“控制 ID”和“控制标题”。
+可以使用合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 来管理此清单中的项目，方法是引用 GDPR 磁贴中的“客户托管控件”** 下的控件 ID 和控件标题。
 
-此外，“5. 数据保护与安全”下的清单中的项引用了“服务信任”门户中的 “数据保护和安全”引用服务信任门户中[合规性分数](compliance-score.md)内列出的控制。 通过查看有关这些控件的 Microsoft 实施详细信息，你可以了解有关 Microsoft 满足清单项中客户考虑事项的方法的附加说明。
+此外，“5. 数据保护与安全”下的清单中的项引用了“服务信任”门户中的 “数据保护和安全”引用服务信任门户中[合规性分数](compliance-score.md)中列出的控件。 通过查看有关这些控件的 Microsoft 实施详细信息，你可以了解有关 Microsoft 满足清单项中客户考虑事项的方法的附加说明。
 
 此控件结构还将用于组织 Microsoft Dynamics365 用于支持 GDPR 所实施的内部控件的演示文稿（可从此处下载：[https://aka.ms/gdprcontrols](https://aka.ms/gdprcontrols)）。
 
@@ -103,7 +105,7 @@ ms.locfileid: "41558029"
 | ***管理可移动媒体 (6.5.2)*** | 客户应确定使用可移动媒体的内部策略，因为这涉及个人数据保护（例如，加密设备）。 | Microsoft 服务如何保护任何可移动媒体上的个人信息安全性。<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.5.2 管理可移动媒体” | (32)(1)(a)、(5)(1)(f) |
 | ***物理媒体传输 (6.5.3)*** | 客户应确定在传输物理媒体（如加密）时保护个人数据的内部策略。 | Microsoft 服务如何在物理媒体的任何传输中保护个人数据。<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.5.3 物理媒体传输” | (32)(1)(a)、(5)(1)(f) |
 |  ***用户访问管理 (6.6.1)*** | 客户应了解他们在使用的服务中对访问控制负有的职责，并使用可用工具管理相应职责。 | Microsoft 服务提供的工具，有助于你强制执行访问控制。<br>- Dynamics 365 — 发现内置安全功能 [[9](gdpr-arc-Dynamics365.md#9)]<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.6.1 用户访问管理” | (5)(1)(f) |
-| ***用户注册和注销 (6.6.2)*** | 客户应使用他们可用的工具来管理其所使用的服务中的用户注册和注销。 | Microsoft 服务提供的工具，有助于你强制执行访问控制。<br>- 合规性分数中的“6.6.2 用户注册和注销”<br>- Dynamics 365 — 发现内置安全功能 [[9](gdpr-arc-Dynamics365.md#9)] | (5)(1)(f) |
+| ***用户注册和注销 (6.6.2)*** | 客户应使用他们可用的工具来管理其所使用的服务中的用户注册和注销。 | Microsoft 服务提供的用于帮助强制执行访问控制的工具。<br>- 合规性分数中的“6.6.2 用户注册和注销”<br>- Dynamics 365 — 发现内置安全功能 [[9](gdpr-arc-Dynamics365.md#9)] | (5)(1)(f) |
 | ***用户访问权限预配 (6.6.3)*** | 客户应该使用他们可用的工具在其所使用的服务内管理用户配置文件，尤其是管理针对个人数据的授权访问。 | Microsoft 服务如何支持对个人数据执行正式访问控制，包括用户 ID、角色以及用户注册和注销。<br>- Dynamics 365 — 发现内置安全功能 [[9](gdpr-arc-Dynamics365.md#9)]<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.6.3 用户访问预配” | (5)(1)(f) |
 | ***特权访问管理 (6.6.4)*** | 客户应该使用他们可用的工具在其所使用的服务内管理用户 ID，以促进跟踪访问（尤其针对个人数据）。 | Microsoft 服务如何支持对个人数据执行正式访问控制，包括用户 ID、角色以及用户注册和注销。<br>- Dynamics 365 — 发现内置安全功能 [[9](gdpr-arc-Dynamics365.md#9)]<br>- 6.6.4 特权访问管理 [15]<br> | (5)(1)(f) |
 | ***安全登录过程 (6.6.5)*** | 客户应利用服务中提供的机制来确保必要时为其用户提供安全登录功能。 | Microsoft 服务如何支持与个人数据相关的内部访问控制策略。<br>- 谁可以访问你的数据和所依据的条款 [[10](gdpr-arc-Dynamics365.md#10)]<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.6.5 信息访问限制” | (5)(1)(f) |
@@ -123,7 +125,7 @@ ms.locfileid: "41558029"
 | ***责任和过程（在信息安全事件期间）(6.13.2)*** | 客户应在涉及个人数据的数据泄露或安全事件期间了解并记录他们的职责。职责包括通知各相关方、与处理者或其他第三方进行通信，以及在客户组织内的职责。 | 如果检测到安全事件或个人数据泄漏，如何通知 Microsoft 服务。<br>- GDPR 下的 Dynamics 365 泄露通知 [[12](gdpr-arc-Dynamics365.md#12)]<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.13.2 责任和过程” | (5)(1)(f)、(33)(1)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)、(34)(3)(a)、(34)(3)(b)、(34)(3)(c)、(34)(4) |
 | ***信息安全事件响应 (6.13.3)*** | 客户应具有确定何时发生个人数据泄露的流程。 | Microsoft 服务提供的信息说明，有助于你确定是否发生了个人数据泄露。<br>- GDPR 下的 Dynamics 365 泄露通知 [[12](gdpr-arc-Dynamics365.md#12)]<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.13.3 响应信息安全事件” | (33)(1)、(33)(2)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2) |
 | ***记录保护 (6.15.1)*** | 客户应了解与个人数据处理相关且需要维护的记录的相关要求。 | Microsoft 服务如何存储与处理个人数据相关的记录。<br>- Dynamics 365 中的审核与报告 [[3](gdpr-arc-Dynamics365.md#3)]<br>- Dynamics 365-ISO27001 适用性声明 [[5](gdpr-arc-Dynamics365.md#5)] 18.1 节<br>- Dynamics 365-ISO27018 适用性声明 [[6](gdpr-arc-Dynamics365.md#6)] 5.2 节 | (5)(2)、(24)(2) |
-| ***独立审查信息安全 (6.15.2)*** | 客户应了解对个人数据处理安全性评估的要求。这包括内部或外部审核或其他评估处理安全性的措施。如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。 | Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br>- Microsoft Online Services 条款、数据保护条款，请参阅“数据安全之审核合规性”[[1](gdpr-arc-Dynamics365.md#1)]<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.15.2 独立审阅信息安全” | (32)(1)(d)、(32)(2) |
+| ***独立审查信息安全 (6.15.2)*** | 客户应了解对个人数据处理安全性评估的要求。这包括内部或外部审核或其他评估处理安全性的措施。如果客户依赖其他第三方组织进行全部或部分处理，则应收集有关由他们执行的此类评估的信息。 | Microsoft 服务如何测试和评估技术和组织措施的有效性，以确保处理的安全性，包括第三方的任何审核。<br>- Microsoft 联机服务条款、数据保护条款，请参阅数据安全、审核合规性 [[1](gdpr-arc-Dynamics365.md#1)]<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.15.2 独立审阅信息安全” | (32)(1)(d)、(32)(2) |
 | ***技术符合性审查 (6.15.3)*** | 客户应了解测试和评估处理个人数据安全性的要求。这包括技术测试，如渗透测试。如果客户使用第三方系统或处理者，则他们应了解他们在保护和测试安全方面承担的责任（例如管理配置以保护数据，然后测试这些配置设置）。如果第三方负责安全性处理的全部或部分，则客户应该了解第三方为确保处理的安全性而进行的测试或评估。 | 如何基于标识的风险（包括由第三方发起的测试，以及技术测试类型和测试中任何可用的报表）对 Microsoft 服务测试安全性。<br>- Microsoft Online Services 条款、数据保护条款，请参阅“数据安全之审核合规性”[[1](gdpr-arc-Dynamics365.md#1)]<br>- 有关外部认证的列表，请参阅 *Microsoft 信任中心合规性产品[[13](gdpr-arc-Dynamics365.md#13)]*<br>- Dynamics 365 — 发现内置安全功能 [[9](gdpr-arc-Dynamics365.md#9)]<br>- Dynamics 365 渗透测试和安全评估报告 [[14](gdpr-arc-Dynamics365.md#14)]<br>- 合规性分数 [[15](gdpr-arc-Dynamics365.md#15)] 中的“6.15.3 技术合规性审阅” | (32)(1)(d)、(32)(2) |
 
 ## <a name="6-bibliography-of-resources-and-links"></a>6. 资源和链接参考文献
