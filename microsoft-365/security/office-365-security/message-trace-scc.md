@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 461193bf7278a07de9bec1e3879fecc8fb6d91ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598919"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678937"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -31,13 +31,9 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 
-1. 使用您的工作或学校帐户[登录 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 在上<https://protection.office.com>打开 "Office 365 安全性 & 合规性中心。
 
-2. 在左上角选择应用启动器图标 ![Office 365 应用启动器图标](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png)，然后选择" **管理**"。
-
-3. 在左下角导航中，展开 "**管理中心**"，然后选择 "**安全 & 合规性**"。
-
-4. 在打开的 "**安全性 & 合规性**" 页中，展开 "**邮件流**"，然后选择 "**邮件跟踪**"。
+2. 展开 "**邮件流**"，然后选择 "**邮件跟踪**"。
 
 ## <a name="message-trace-page"></a>邮件跟踪页
 
