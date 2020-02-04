@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 02/03/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 使用 Office 365 邮件加密，组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
-ms.openlocfilehash: 9da6084348a4bdc89f620eb894c9ffa113d64292
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76d3688fbc30923e204b9cba338b61bc955b8f95
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601779"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680091"
 ---
 # <a name="office-365-message-encryption"></a>Office 365 邮件加密
 
@@ -30,12 +30,38 @@ ms.locfileid: "41601779"
 
 使用 Office 365 邮件加密，组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 Office 365 邮件加密适用于 Outlook.com、Yahoo！、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
 
+## <a name="important-updates-to-ome-to-enhance-email-authenticity---action-required"></a>对 OME 的重要更新，以增强电子邮件真实性-必需的操作
+
+从2020年2月起，我们正在推出改进的 OME，可通过更改 OME 使用的发件人地址来增强 OME 电子邮件的邮件真实性。 如果没有这些改进，一些组织将拒绝来自 OME 的系统生成的邮件，例如一次性传递代码邮件和门户回复，因为发件人地址来自域 messaging.onmicrosoft.com。 进行此更改后，将从组织的自定义域（而不是 onmicrosoft.com）发送这些系统生成的邮件。 为了实现此改进，必须更新邮件流规则。
+
+对于 Exchange Online，需要更新每个邮件流规则，以查找旧的 OME 电子邮件地址或来自组织外部的任何地址，以查找新的 OME 地址。 由于新的 OME （一次性传递代码和门户答复）电子邮件来自自定义域，因此它们将不再符合来自组织外部的条件。
+
+如果使用的是与 Exchange 内部部署或 Exchange Online 一起使用的第三方解决方案，则需要更新所有旧的 OME 规则，以反映新的 OME 电子邮件地址。 例如，如果您已将以前的 OME 电子邮件地址列入白名单，则需要将新的电子邮件添加到白名单电子邮件列表中。
+
+### <a name="changes-to-ome-email-addresses"></a>对 OME 电子邮件地址的更改
+
+一次性传递代码发件人地址：
+
+- 旧地址：``onetimepasscode@messaging.onmicrosoft.com``
+
+- 新地址：``onetimepasscode@<yourdomain.com>``
+
+来自 OME 门户的 OME 答复：
+
+- 旧地址：``omeportal@messaging.onmicrosoft.com``
+
+- 新地址：``omeportal@<yourdomain.com>``
+
+### <a name="errors-routing-mail-from-exchange-online-through-exchange-on-premises-to-external-recipients"></a>从 Exchange online 将邮件路由到外部收件人的本地 Exchange 中的错误
+
+如果您将邮件从 Exchange Online 通过本地 Exchange 发送到组织外部的收件人，某些第三方系统将返回 DMARC 错误，而不是接受电子邮件。 例如，如果以这种方式路由邮件，gmail 将返回一个 DMARC 错误。 若要解决此问题，请直接将电子邮件从 Exchange Online 路由到外部收件人，从而绕过 Exchange 内部部署。
+
+## <a name="how-office-365-message-encryption-works"></a>Office 365 邮件加密的工作原理
+
 本文的其余部分适用于新的 OME 功能。
 
 > [!NOTE]
 > 拥有邮箱的完全访问权限的委派可以读取发送到邮箱的加密邮件。
-
-## <a name="how-office-365-message-encryption-works"></a>Office 365 邮件加密的工作原理
 
 Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构建的一种在线服务，它是 Azure 信息保护的一部分。 这包括加密、标识和授权策略，以帮助保护您的电子邮件。 您可以使用权限管理模板、"不[转发](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)" 和 "[仅加密" 选项](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)对邮件进行加密。
 
