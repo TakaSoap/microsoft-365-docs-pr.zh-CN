@@ -18,16 +18,16 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 如果管理员为用户启用通知，则会收到一条通知消息，其中列出了发送到邮箱的邮件，并被标识为垃圾邮件、批量邮件或网络钓鱼邮件。 您可以在收到通知后释放或报告邮件。
-ms.openlocfilehash: c9cd0849f826e66411695a3758f271ec70d24c9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598019"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722033"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
 
-如果您的管理员为用户启用了垃圾邮件通知，您将收到一条通知消息，其中列出发往您的邮箱的邮件，而不是被标识为垃圾邮件和隔离的邮件。
+如果您的管理员为用户启用了垃圾邮件通知，则您将收到一条通知消息，其中列出发往您的邮箱的邮件，而不是被标识为垃圾邮件、批量或网络钓鱼和隔离的邮件。
 
 > [!TIP]
 > 如果你是管理员，并且想要启用此功能，则可以在[修改默认反垃圾邮件策略](configure-your-spam-filter-policies.md)时选择此选项。
@@ -50,6 +50,6 @@ ms.locfileid: "41598019"
 
 请注意以下事项：
 
-- 由于与邮件流规则匹配而被隔离的邮件不会包括在用户隔离的邮件中。 只有垃圾邮件隔离邮件才会列出。
+- 如果用户垃圾邮件通知中不包含与邮件流规则匹配的恶意软件和高可信度邮件和邮件，则会将其隔离。 
 
 - 您可以释放邮件并将其报告为误报（非垃圾邮件），但只能执行一次。
