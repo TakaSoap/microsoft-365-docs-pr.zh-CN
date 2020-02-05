@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护（DLP）或保留策略中。
-ms.openlocfilehash: 4b4bfa996b1f68f9db8c206aaaec43878abf3f42
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595899"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722023"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>可训练分类器入门（预览）
 
@@ -49,6 +49,10 @@ ms.locfileid: "41595899"
 
 > [!IMPORTANT]
 > Trainable 类元仅适用于未加密且为英语的项目。
+
+### <a name="licensing-requirements"></a>许可要求
+
+Trainable 分类器是 Microsoft 365 E5 或 E5 合规性功能。 您必须拥有其中一种订阅才能使用它们。
 
 ## <a name="types-of-classifiers"></a>分类器的类型
 
