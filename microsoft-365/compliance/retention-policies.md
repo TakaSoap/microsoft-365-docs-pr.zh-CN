@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 20992f6b28e0f7765724fb4d35febe19639de40e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597679"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774218"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -56,7 +56,9 @@ ms.locfileid: "41597679"
 
 - [Microsoft 365 合规中心](https://compliance.microsoft.com/)内的“**策略**”页面。
 - [Office 365 安全&amp;合规中心](https://protection.office.com/)内“**信息管理**”下的“**保留**”页面。
-  
+
+**如果希望能够在永久删除内容之前对其进行审阅，** 考虑使用”[保留标签](labels.md)”，而不是保留策略。 创建保留标签时，可设置“[处置审阅](disposition-reviews.md)”，以便在保留期结束时查看内容。
+
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>保留策略如何处理留在原处的内容
 
 如果在保留策略中添加网站或邮箱等位置，内容仍留在原处。用户可以继续处理文档或邮件，就像什么都没改变一样。但若用户编辑或删除受保留策略约束的内容，将会保留在策略应用时存在的内容的副本。

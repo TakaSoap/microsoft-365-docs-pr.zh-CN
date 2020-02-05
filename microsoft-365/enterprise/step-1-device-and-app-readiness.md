@@ -1,5 +1,7 @@
 ---
 title: 步骤 1 - 设备和应用就绪情况
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的设备和应用就绪情况。
-ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112716"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774208"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步骤 1：设备和应用就绪情况
 
@@ -106,9 +108,9 @@ Configuration Manager 软件清单是为设备和应用就绪情况使用基于�
 有关更多信息，请参阅 [Configuration Manager 中的软件清单简介](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)和 [Configuration Manager 中的包和程序](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs)中的应用程序包的设置平台要求。
 
 
-## <a name="desktop-app-assure"></a>桌面应用保证
+## <a name="app-assure"></a>应用保证
 
-另一个帮助实现 Windows 10 和 Office 365 专业增强版应用兼容性的工具是[桌面应用保证](https://aka.ms/desktopappassure)程序，可通过 FastTrack 中心获取它。 通过桌面应用保证，如果发生有效应用程序问题，Microsoft 工程师将与你协作，帮助修正应用程序不兼容问题，并且无需额外费用。
+另一个帮助实现 Windows 10 和 Office 365 专业增强版应用兼容性的工具是[App Assure](https://aka.ms/appassure)程序，可通过 FastTrack 中心获取它。 如果发生有效应用程序问题，Microsoft 工程师将与你协作，通过App Assure ，帮助修正应用程序不兼容问题，并且无需额外费用。
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>继续使用诊断数据工具
 
