@@ -67,12 +67,6 @@
           href: privileged-access-management-overview.md
         - name: 配置特权访问管理
           href: privileged-access-management-configuration.md
-    - name: 客户密钥
-      items:
-        - name: 使用客户密钥控制 Office 365 中的数据
-          href: controlling-your-data-using-customer-key.md
-        - name: 有关使用 Office 365 客户密钥执行服务加密的常见问题解答
-          href: service-encryption-with-customer-key-faq.md
     - name: 保护用户和设备的访问权限
       href: protect-access-to-data-and-services.md
     - name: 客户密码箱
@@ -85,7 +79,7 @@
       items:
         - name: 创建和发布敏感度标签
           href: create-sensitivity-labels.md
-        - name: 使用敏感度标签中的加密限制对内容的访问
+        - name: 使用敏感度标签限制对内容的访问权限以应用加密
           href: encryption-sensitivity-labels.md
         - name: 将敏感度标签自动应用于内容
           href: apply-sensitivity-label-automatically.md
@@ -150,6 +144,18 @@
           href: document-fingerprinting.md
         - name: 敏感信息的 DLP 函数
           href: what-the-dlp-functions-look-for.md
+    - name: 客户密钥
+      items:
+        - name: Office 365 中的客户密钥的服务加密
+          href: customer-key-overview.md
+        - name: 设置适用于 Office 的客户密钥365
+          href: customer-key-set-up.md
+        - name: 管理 Office 365 的客户密钥
+          href: customer-key-manage.md
+        - name: 滚动或旋转客户密钥或可用性密钥
+          href: customer-key-availability-key-roll.md
+        - name: 了解 Office 365 客户密钥的可用性密钥
+          href: customer-key-availability-key-understand.md
     - name: 电子邮件加密
       href: email-encryption.md
       items:
@@ -309,7 +315,7 @@
               href: view-label-activity-for-documents.md
             - name: 查看数据管理报告
               href: view-the-data-governance-reports.md
-        - name: 活动
+        - name: 事件
           items:
             - name: 基于事件的保留
               href: event-driven-retention.md
