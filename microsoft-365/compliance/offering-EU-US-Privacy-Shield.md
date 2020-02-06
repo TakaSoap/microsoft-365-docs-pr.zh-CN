@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6e9aea06e6479a0aa4ec83d35d1fc8c7704e8b0f
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 1ed1703ac30a9c7c8392ad61ec0d126d1e17c17e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859902"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602469"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>欧盟-美国及瑞士-美国隐私保护框架
 
@@ -79,7 +82,7 @@ Azure 中的数据保护 — Azure 可为客户提供强大的数据安全性（
 
 **Microsoft 如何处理欧盟-美国及瑞士-美国隐私保护下的投诉？**
 
-如果你有与隐私保护有关的投诉，请使用 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)中[如何联系我们](https://privacy.microsoft.com/privacystatement#mainhowtocontactusmodule)部分的联系方式告知我们。 对于你无法直接通过 Microsoft 解决的任何投诉，我们将与欧盟 DPA 合作并遵守其提供的建议。 联系我们后，会将你引导至相关的 DPA 联系人。 正如[隐私保护原则](https://www.privacyshield.gov/article?id=Requirements-of-Participation)中进一步解释的那样，你可以利用有约束力的仲裁选项，通过其他方式解决无法决的投诉。
+如果你有与隐私保护有关的投诉，请使用 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)中[如何联系我们](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule)部分的联系方式告知我们。 对于你无法直接通过 Microsoft 解决的任何投诉，我们将与欧盟 DPA 合作并遵守其提供的建议。 联系我们后，会将你引导至相关的 DPA 联系人。 正如[隐私保护原则](https://www.privacyshield.gov/article?id=Requirements-of-Participation)中进一步解释的那样，你可以利用有约束力的仲裁选项，通过其他方式解决无法决的投诉。
 
 ## <a name="resources"></a>资源
 

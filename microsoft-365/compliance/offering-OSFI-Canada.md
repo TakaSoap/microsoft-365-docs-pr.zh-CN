@@ -5,26 +5,29 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9ca6323d5c5ffd019c7d79f283b98cb25816cf62
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: f4cb36cd208017881dd03a99d4e8c8adbbea65d4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859522"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602069"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>加拿大金融机构监理总署 (OSFI)
 
 ## <a name="about-the-osfi"></a>关于 OSFI
 
-[加拿大金融机构监理总署](http://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) 是加拿大政府的一个独立机构，负责对加拿大联邦监管的金融机构和养老金计划进行审慎监管。
+[加拿大金融机构监理总署](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) 是加拿大政府的一个独立机构，负责对加拿大联邦监管的金融机构和养老金计划进行审慎监管。
 
-根据其监管角色，OSFI 针对[业务活动、职能和流程外包](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)发布了 B-10 指南。 他们为联邦监管的金融机构制定了“稳妥的做法、过程或标准”，以评估和管理与将业务外包给服务提供商相关的风险。 后续的 OSFI 备忘录，[基于新技术的外包要求](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx)提醒这些机构 B-10 准则仍为现行标准，他们必须满足 OSFI 对重大外包任务的要求。
+根据其监管角色，OSFI 针对[业务活动、职能和流程外包](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)发布了 B-10 指南。 他们为联邦监管的金融机构制定了“稳妥的做法、过程或标准”，以评估和管理与将业务外包给服务提供商相关的风险。 后续的 OSFI 备忘录，[基于新技术的外包要求](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx)提醒这些机构 B-10 准则仍为现行标准，他们必须满足 OSFI 对重大外包任务的要求。
 
 此外，金融机构使用云服务必须遵守《[个人信息保护和电子文件法案](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)》(PIPEDA)，在某些情况下，还必须遵守省级数据隐私法律。
 
@@ -32,7 +35,7 @@ ms.locfileid: "39859522"
 
 为了给正在考虑将业务职能外包到云的加拿大金融机构提供指导，Microsoft 发布了[通往云的指导：一份针对加拿大金融机构的合规性清单](https://aka.ms/Azure-Canada-Compliance)。 通过查看和完成这份清单，金融组织可放心地采用 Microsoft 商业云服务，确保自己遵守适用的法规要求。
 
-当加拿大金融机构外包业务活动时，他们必须遵守由金融机构监督总署 (OSFI) 发布的针对[业务活动、职能和流程外包](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)的 B-10 指南，以及加拿大隐私法律，包括《[个人信息保护和电子文件法案](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)》(PIPEDA)。
+当加拿大金融机构外包业务活动时，他们必须遵守由金融机构监督总署 (OSFI) 发布的针对[业务活动、职能和流程外包](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)的 B-10 指南，以及加拿大隐私法律，包括《[个人信息保护和电子文件法案](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)》(PIPEDA)。
 
 Microsoft 清单可对正在就 Microsoft 商业云服务进行尽职调查评估的加拿大金融公司提供帮助，包括：
 
@@ -58,7 +61,7 @@ Microsoft 清单可对正在就 Microsoft 商业云服务进行尽职调查评�
 
 否。 不需要事先通知、咨询或征求批准。 允许使用公共云计算，但始终需遵循 OSFI 要求。
 
-[OSFI B-10 指南](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)指出，OSFI 期望金融机构设计一个适用于其所有其外包任务的风险管理计划，以及与相关风险对应的风险缓解措施。 但是，只有重大外包任务才需要通过书面合同进行记录，以解决指南中确定的保障措施。 [Microsoft 清单](https://aka.ms/Azure-Canada-Compliance)的第 2 部分（第 53 页）将这些要点与 Microsoft 合同文档中要解决的部分进行了对应。
+[OSFI B-10 指南](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)指出，OSFI 期望金融机构设计一个适用于其所有其外包任务的风险管理计划，以及与相关风险对应的风险缓解措施。 但是，只有重大外包任务才需要通过书面合同进行记录，以解决指南中确定的保障措施。 [Microsoft 清单](https://aka.ms/Azure-Canada-Compliance)的第 2 部分（第 53 页）将这些要点与 Microsoft 合同文档中要解决的部分进行了对应。
 
 **在与云服务提供商签订的合同中是否必须包含所有强制性条款？**
 

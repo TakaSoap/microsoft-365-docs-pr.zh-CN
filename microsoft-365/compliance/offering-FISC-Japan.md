@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 206dbd57f5fc5c41c4238e13d9dca3072ef7d121
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 546e4b29f26ffdee8c876032fe83254fb5643fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859812"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602379"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>金融行业信息系统中心 (FISC)
 
@@ -40,7 +43,7 @@ Microsoft 聘请了外部评估人员来验证 Microsoft Azure、Dynamics 365 �
 
 金融机构可以依赖对 Azure、Dynamics 365、Office 365 和 Microsoft 云应用安全的范围内基础结构和平台服务进行的这三方面的合规性评估。
 
-[详细了解外部评估人员的验证及评估人员网站链接（仅日语版）](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx)。
+[详细了解外部评估人员的验证及评估人员网站链接（仅日语版）](https://cloudblogs.microsoft.com/industry-blog/ja-jp/financial-services/2018/05/11/fisc_v9/)。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 

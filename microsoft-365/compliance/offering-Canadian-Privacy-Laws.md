@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 22703f7c9589a246464b16a3088036a858f59475
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a2957ed5782c9449a1715669a7e220940572a66
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859992"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602569"
 ---
 # <a name="canadian-privacy-laws"></a>加拿大隐私法
 
@@ -24,7 +27,7 @@ ms.locfileid: "39859992"
 
 加拿大制定了隐私法来保护个人隐私，并赋予他们访问所收集的有关其个人信息的权利。 [加拿大隐私署](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (OPCC) 负责监督对这些法律的遵守。
 
-《[隐私法](https://privacy.microsoft.com/zh-CN/#heading-0-0-2-1)》规定了联邦政府机构如何收集、使用和披露包括联邦雇员在内的个人身份信息。 《[个人信息保护和电子文档法](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)》(PIPEDA) 对商业营利性企业的商业活动，以及银行、航空公司和电信公司等受联邦监管企业的员工适用同样的规定。
+《[隐私法](https://privacy.microsoft.com/en-US/#heading-0-0-2-1)》规定了联邦政府机构如何收集、使用和披露包括联邦雇员在内的个人身份信息。 《[个人信息保护和电子文档法](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)》(PIPEDA) 对商业营利性企业的商业活动，以及银行、航空公司和电信公司等受联邦监管企业的员工适用同样的规定。
 
 PIPEDA 建立在 10 项[公平信息原则](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/)之上，如果员工遵守，则企业必须遵守。 例如，同意的基本原则导致 PIPEDA 要求组织必须获得个人的许可才能收集或使用其个人信息。 个人既有权访问该个人信息，也有权质疑其准确性（基于“个人访问”原则）。 “确定目的”原则导致一项规则，即个人信息只能用于商定的目的。
 

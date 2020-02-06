@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: df2c929523f651b7220fb0546928509dd8c0b6ad
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7a0dfc1b03099d52255f2e474ba8d99c2ea3a2cb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859582"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602149"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>新加坡多层云安全 (MTCS) 标准
 
