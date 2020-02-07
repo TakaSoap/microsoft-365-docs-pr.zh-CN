@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用于恢复丢失的 Office 365 客户密钥的可用性密钥。
-ms.openlocfilehash: b363d3b90c6ea783bd051bea6c44a94689b87ac1
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
+ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804755"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845361"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>了解 Office 365 客户密钥的可用性密钥
 
@@ -54,7 +54,7 @@ Microsoft 通过实例化可用性密钥并采取广泛的措施来保护数据�
 
 ### <a name="availability-key-secret-stores"></a>可用性密钥密钥存储
 
-Microsoft 保护受访问控制的内部密钥存储中的可用性密钥，这与面向客户的 Azure 密钥存储库类似。 我们实现了访问控制，以防止 Microsoft 管理员直接访问中包含的密码。 秘密存储操作，包括密钥轮换、删除和检索通过永不涉及直接访问可用性密钥的自动化命令进行。 调整这些命令的访问权限仅限于特定的工程师，并需要通过内部工具密码箱进行权限提升。 权限提升要求在授予前的经理批准和理由。 密码箱可确保在时间到期或工程师注销时，访问时间绑定到自动访问撤销。
+Microsoft 在受访问控制的内部密钥存储区（如面向客户的 Azure 密钥存储库）中保护可用性密钥。 我们实现了访问控制，以防止 Microsoft 管理员直接访问中包含的密码。 秘密存储操作，包括密钥轮换、删除和检索通过永不涉及直接访问可用性密钥的自动化命令进行。 调整这些命令的访问权限仅限于特定的工程师，并需要通过内部工具密码箱进行权限提升。 权限提升要求在授予前的经理批准和理由。 密码箱可确保在时间到期或工程师注销时，访问时间绑定到自动访问撤销。
 
 **Exchange Online 和 Skype for** business 可用性密钥存储在 Active Directory 机密存储区中。 Exchange Online Active Directory 由路由包含对象、标识和数据的流量和容量林的管理林组成。 容量林由帐户林和资源林组成。 帐户林具有彼此同步的多个容量域控制器。 可用性密钥安全存储在这些容量的域控制器中。 此安全存储位置是独立的，并与 SharePoint Online、OneDrive for Business 和团队文件机密存储区隔离。
 
@@ -62,9 +62,9 @@ Microsoft 保护受访问控制的内部密钥存储中的可用性密钥，这�
 
 ### <a name="defense-in-depth"></a>深层纵深防御
 
-Microsoft 采用纵深防御策略，以防止恶意参与者影响存储在 Microsoft 云中的客户数据的机密性、完整性或可用性。 实施特定的预防和侦探控制，以保护可用性密钥，作为总体安全策略的一部分。
+Microsoft 采用纵深防御策略，以防止恶意参与者影响存储在 Microsoft 云中的客户数据的机密性、完整性或可用性。 实施特定的预防和侦探控制，以保护机密存储和可用性密钥作为总体安全策略的一部分。
 
-Office 365 的构建旨在防止对可用性密钥的滥用。 应用程序层是可用于加密和解密数据的键（包括可用性密钥）的唯一方法。 只有 Office 365 服务代码能够解释和遍历加密和解密活动的关键层次结构。 如果恶意 Microsoft 管理员要绕过控件以从机密存储中提取可用性密钥，则密钥将无法访问客户数据。 客户密钥、可用性密钥、其他分层密钥和客户数据的存储位置之间存在逻辑隔离，这样可降低事件中的一个或多个位置受到危害的数据暴露风险。
+Office 365 的构建旨在防止对可用性密钥的滥用。 应用程序层是可用于加密和解密数据的键（包括可用性密钥）的唯一方法。 只有 Office 365 服务代码能够解释和遍历加密和解密活动的关键层次结构。 如果恶意 Microsoft 管理员要绕过控件以从机密存储中提取可用性密钥，则密钥将无法访问客户数据。 客户密钥、可用性密钥、其他分层密钥和客户数据的存储位置之间存在逻辑隔离。 这种隔离缓解了在一个或多个位置遭到破坏的情况中发生数据泄露的风险。 层次结构中的每个层都具有内置的全天候入侵检测功能，以保护数据和机密存储。
 
 实现访问控制可防止对内部系统进行未经授权的访问，包括可用性密钥机密存储。 Microsoft 工程师不能直接访问可用性密钥机密存储。 有关访问控制的更多详细信息，请参阅[Office 365 中的管理访问控制](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview)。
 
@@ -80,9 +80,11 @@ Office 365 的构建旨在防止对可用性密钥的滥用。 应用程序层�
 
 ### <a name="recovery-procedure-for-exchange-online-and-skype-for-business"></a>Exchange Online 和 Skype for business 的恢复过程
 
-如果您失去了对客户密钥的控制，则在恢复时，可用性密钥仍将向您提供对数据的访问权限。 若要使用新的客户密钥对数据进行加密，请在 Azure Key Vault 中创建新密钥，创建新的 DEP，将新的 DEP 与新的客户密钥关联，然后指示 DEP 对当前使用以前的 DEP 加密的邮箱进行加密，以使这些邮箱的密钥丢失或 compromised. 执行时，可用性密钥将对邮箱进行解密，然后使用新策略对邮箱进行加密。
+如果您失去了对客户密钥的控制，可用性密钥使您能够恢复数据，并将受影响的 Office 365 资源恢复为联机状态。 恢复时，可用性密钥将继续保护你的数据。从较高的层次来看，若要从密钥丢失完全恢复，您需要创建一个新的 DEP 并将受影响的资源移动到新策略。
 
-此过程最长可能需要72个小时，这是更改 DEP 时的标准持续时间。
+若要使用新的客户密钥对数据进行加密，请在 Azure Key Vault 中创建新密钥，使用新的客户密钥创建新的 DEP，然后将新的 DEP 分配给当前使用以前的 DEP 加密的邮箱，这些邮箱已丢失或损坏密钥。
+
+此重新加密过程最长可能需要72个小时。 这是更改 DEP 时的标准持续时间。
   
 ### <a name="recovery-procedure-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>SharePoint Online、OneDrive for Business 和团队文件的恢复过程
 
@@ -92,7 +94,7 @@ Office 365 的构建旨在防止对可用性密钥的滥用。 应用程序层�
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Exchange Online 和 Skype for business 如何使用可用性密钥
 
-当您使用客户密钥创建 DEP 时，Office 365 将生成与该 DEP 相关联的数据加密策略密钥（DEP 密钥）。 该服务将 DEP 密钥加密三次：每个客户密钥一次，并使用可用性密钥。 仅存储加密版本的 DEP 密钥，并且只能使用客户密钥或可用性密钥解密 DEP 密钥。 然后，使用 DEP 密钥来加密邮箱密钥，然后使用它对各个邮箱进行加密。 
+当您使用客户密钥创建 DEP 时，Office 365 将生成与该 DEP 相关联的数据加密策略密钥（DEP 密钥）。 该服务将 DEP 密钥加密三次：每个客户密钥一次，并使用可用性密钥。 仅存储加密版本的 DEP 密钥，并且只能使用客户密钥或可用性密钥解密 DEP 密钥。 然后，使用 DEP 密钥来加密邮箱密钥，然后使用它对各个邮箱进行加密。
   
 在客户使用该服务时，Office 365 将执行以下过程来解密和提供数据：
   

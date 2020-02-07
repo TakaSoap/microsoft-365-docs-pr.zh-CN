@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
+ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628118"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41779027"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Office 365 数据主体请求
 
@@ -47,7 +47,7 @@ ms.locfileid: "41628118"
 - **个人数据和数据主体：** 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识符等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
 - **处理者：** 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
 - **客户数据：** 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文字、声音、视频或图像文件以及软件。 客户数据包括 (1) 可识别的最终用户信息（例如，Azure Active Directory 中的用户名和联系信息）和客户上传至或在特定服务中创建的客户内容（例如，Word 或 Excel 文档中或者 Exchange Online 电子邮件文本中的客户内容；添加到 SharePoint Online 网站或保存至 OneDrive for Business 帐户的客户内容）。
-- **系统生成日志：** Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 系统生成日志主要包括化名数据，例如唯一标识符 — 这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。 系统生成日志还可能包含最终用户的身份信息，例如用户名。
+- **系统生成日志：** Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 系统生成日志主要包括化名数据，例如唯一标识符 - 这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。 系统生成日志还可能包含最终用户的身份信息，例如用户名。
 
 ### <a name="how-to-use-this-guide"></a>如何使用本指南
 
@@ -1581,61 +1581,18 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>访问和导出系统生成日志
 
-管理员可以访问与特定用户使用 Office 365 服务和应用程序的情况关联的系统生成日志。访问和导出系统生成日志：
+“数据可携带性权限”允许数据主体可请求为个人数据保存电子格式的副本（这是一种“结构化、常用、机器可读、可互操作的格式"），该副本可传输给另一个数据控制者。 Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此操作。
 
-1. 转到 [Microsoft 服务信任门户](https://servicetrust.microsoft.com/)并使用 Office 365 全局管理员的凭据登录。
+>[!IMPORTANT]
+>你必须是租户管理员才能从租户中导出用户数据。
 
-2. 在页面顶部的“**隐私**”下拉列表中，单击“**数据主体请求**”。
+#### <a name="azure-active-directory"></a>Azure Active Directory
 
-3. 在“**数据主体请求**”页面的“**系统生成日志**”下，单击“**数据日志导出**”。
+关于客户数据，Microsoft 提供了门户和产品内体验，让企业客户的租户管理员能够管理对一个最终用户的身份信息的导出请求。
 
-    “**数据日志导出**”随即显示。 将显示由你的组织提交的导出数据请求列表。
+#### <a name="service-specific-interfaces"></a>特定于服务的界面
 
-4. 要为用户创建请求，请单击“**创建导出数据请求**”。
-
-在创建新的请求后，它将列在“**数据日志导出**”页面上，在这里你可以跟踪其状态。 完成请求后，可以单击链接以访问系统生成日志，这些日志将在请求创建 30 天内导出到你组织的 Azure 存储位置。 数据将保存为常用的计算机可读文件格式，如 JSON 和 XML。 如果你还没有 Azure 帐户和 Azure 存储位置，需要为你的组织创建 Azure 帐户和/或 Azure 存储位置，以便数据日志导出工具可以导出系统生成日志。 有关详细信息，请参阅 [Azure 存储简介](https://docs.microsoft.com/azure/storage/common/storage-introduction)。
-
->[!NOTE]
->创建导出数据请求时，某些应用程序的系统生成数据不会通过数据日志导出工具导出。若要导出这些应用程序的数据，请参阅[导出系统生成日志数据所需的其他步骤](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data)。
-
-下面概述了如何使用数据日志导出工具访问和导出系统生成的日志：
-
-- **“Microsoft 数据日志导出”工具需要多长时间才能完成请求？**：这取决于若干因素。 通常，一到两天内可以完成，但最多可能需要 30 天。
-
-- **输出内容采用什么格式？**：输出内容是结构化的计算机可读文件（如 XML、CSV 或 JSON）。
-
-- **谁有权访问“数据日志导出”工具以提交对系统生成日志的访问请求？**：Office 365 全局管理员有权访问 GDPR 日志管理器实用工具。
-
-- **“数据日志导出”工具会返回哪些数据？**：“数据日志导出”工具会返回 Microsoft 存储的系统生成日志。 导出的数据将跨越各种 Microsoft 服务，包括 Office 365、Azure 和 Dynamics。
-
-- **如何向用户返回数据？**：数据将导出到你组织的 Azure 存储位置；由你组织的管理员来确定他们如何向用户显示/返回此数据。
-
-- **系统生成的日志中的数据看上去是怎样的？**：JSON 格式的系统生成日志记录示例：
-
-   ```JSON
-   [{
-            "DateTime": "2017-04-28T12:09:29-07:00",
-             "AppName": "SharePoint",
-             "Action": "OpenFile",
-             "IP": "154.192.13.131",
-             "DevicePlatform": "Windows 1.0.1607"
-   }]
-   ```
-
->[!NOTE]
->出于安全和审核目的，部分功能将禁止导出或删除包含个人信息的系统生成日志，以维护此类信息的完整性。
-
-还可通过在安全与合规中心搜索 Office 365 审核日志来检索一些最常用的 Microsoft 服务（如 Exchange Online、SharePoint Online、Skype for Business、Yammer 和 Office 365 组）的产品和服务使用情况。 有关详细信息，请参阅附录 A 中的[在 DSR 调查中使用 Office 365 审核日志搜索工具](#use-the-office-365-audit-log-search-tool-in-dsr-investigations)。你可能会对使用审核日志感兴趣，因为无法向组织中的其他人（例如合规部主管）分配搜索审核日志并访问此数据的权限。
-
-#### <a name="national-clouds"></a>国家云
-
-全局 IT 管理员需要执行以下操作以导出以下国家云中的系统生成日志数据：
-
-- Office 365 德国版 - [转到 Microsoft 服务信任门户（德国）](https://aka.ms/MicrosoftSTPGermany)，完成上述步骤。
-
-- Office 365 美国政府版： - [转到 Office 365 管理门户](https://portal.office365.us)，然后向 Microsoft 支持部门提交请求。
-
-- 由世纪互联运营的 Office 365（中国版） - [转到由世纪互联运营的 Office 365 的管理门户](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage)，然后转到“**商务**” > “**订阅**” > “**隐私**” > “**GDPR**”并输入所需的信息。
+Microsoft 让你能够直接通过特定服务的预先存在的应用程序编程接口 (API) 或用户界面 (UI) 发现客户数据。详细信息在各个服务的参考文档中进行了介绍，描述了适用的（创建、读取、更新、删除）操作。
 
 ### <a name="deleting-system-generated-logs"></a>删除系统生成日志
 
