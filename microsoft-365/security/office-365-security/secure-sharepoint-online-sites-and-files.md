@@ -21,12 +21,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 SharePoint Online 和 Office 365 中文件的配置建议。
-ms.openlocfilehash: de0091c4a3bc0d1b531689c9b1410f4801179a31
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598479"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830986"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
@@ -160,7 +160,7 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
 
 如果你的安全方案需要保护，则可以使用敏感度标签应用与文件如影随形的保护。 Microsoft 365 合规中心内的敏感度标签与 Azure 信息保护标签是相同的。 对于此解决方案，建议使用敏感度标签或高度机密敏感度标签的子标签来加密需要最高级别安全性保护的文件并授予相应权限。
 
-请注意，将敏感度标签加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。 共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。 DLP 策略只适用于元数据（包括保留标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
+如果你的组织未[启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)：请注意，将敏感度标签加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。 共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。 DLP 策略只适用于元数据（包括保留标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
 
 有关详细信息，请参阅[敏感度标签概述](../../compliance/sensitivity-labels.md)。
 

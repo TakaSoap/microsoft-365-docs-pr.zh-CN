@@ -1,5 +1,7 @@
 ---
 title: 使用精确数据匹配创建自定义敏感信息类型
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用基于精确数据匹配的分类创建自定义敏感信息类型。
-ms.openlocfilehash: 90fde2475529200ab53411b5cb0c6d3c64de2fee
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
+ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515663"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836722"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -72,10 +74,12 @@ ms.locfileid: "41515663"
 
 2. 在 .csv 文件中构造敏感数据，使第一行包含用于基于 EDM 的分类的字段名称。 在 .csv 文件中，你可能拥有“ssn”、“生日”、“名字”、“姓氏”等字段名称。 例如，我们的 .csv 文件称为  *PatientRecords.csv*，其列包含 *患者 ID*、 *MRN*、 *姓氏*、 *名字*、 *SSN* 等。
 
-3. 以 .xml 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 edm.xml 并对其进行配置，确保对于数据库中的每一列，都有一行使用语法 \<Field name="" searchable=""/\>。
+3. 以 .xml 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 **edm.xml**并对其进行配置，确保对于数据库中的每一列，都有一行使用语法： 
 
-      - 将列名用于 *字段名称*值。 
-      - 将 *searchable="true"* 用于可搜索的字段，最多 5 个字段。 必须至少将一个字段指定为可搜索。
+`\<Field name="" searchable=""/\>`（）。
+
+- 将列名用于 *字段名称*值。 
+- 将 *searchable="true"* 用于可搜索的字段，最多 5 个字段。 必须至少将一个字段指定为可搜索。
 
 例如，以下 .xml 文件定义患者记录数据库的架构，其中五个字段指定为可搜索字段： *患者 ID*、 *MRN*、 *SSN*、 *电话*和 *DOB*。
 
@@ -126,9 +130,9 @@ New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>编辑基于 EDM 的分类的架构
 
-如果想要更改 edm.xml 文件，例如更改要对基于 EDM 的分类使用的字段，请按照以下步骤操作：
+如果想要更改**edm.xml** 文件，例如更改要对基于 EDM 的分类使用的字段，请按照以下步骤操作：
 
-1. 编辑 edm.xml 文件（即本文的 [定义架构](#define-the-schema-for-your-database-of-sensitive-information)部分中讨论的文件）。 
+1. 编辑 **edm.xml** 文件（即本文的 [定义架构](#define-the-schema-for-your-database-of-sensitive-information) 部分中讨论的文件）。
 
 2. [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
@@ -184,7 +188,7 @@ Remove-DlpEdmSchema -Identity patientrecords
 
 1. 按 .xml 格式创建一个规则包（采用 Unicode 编码），如下例类似。 （可复制、修改和使用我们的示例。）
 
-设置规则包时，请确保正确引用 .csv 文件和 edm.xml 文件。 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
+设置规则包时，请确保正确引用 .csv 文件和 **edm.xml** 文件。 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
 
 - **RulePack id & ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 生成 GUID。
 
@@ -249,7 +253,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 此时，你已设置基于 EDM 的分类。 下一步是为敏感数据创建索引，然后上传索引数据。
 
-回想一下，在前面的过程中我们的 PatientRecords 架构将五个字段定义为可搜索： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和 *DOB*。 我们的示例规则包中有这些字段并引用数据库架构文件 (edm.xml)，其中每个可搜索的字段具有一个 *ExactMatch* 项目。 请考虑以下 ExactMatch 项目：
+回想一下，在前面的过程中我们的 PatientRecords 架构将五个字段定义为可搜索： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和 *DOB*。 我们的示例规则包中有这些字段并引用数据库架构文件 (**edm.xml**)，其中每个可搜索的字段具有一个 *ExactMatch* 项目。 请考虑以下 ExactMatch 项目：
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -287,18 +291,18 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
-1. 以全局管理员身份转到管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com/)) 并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)（名为 EDM\_DataUploaders）。 
+1. 以全局管理员身份转到管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com/)) 并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 名为  **EDM\_DataUploaders**。
 
-2. 将一个或多个用户添加到 *EDM\_DataUploaders* 安全组。 （这些用户将管理敏感信息的数据库。）
+2. 将一个或多个用户添加到 **EDM\_DataUploaders** 安全组。 （这些用户将管理敏感信息的数据库。）
 
 3. 确保负责管理敏感数据的每个用户都是装有 EDM 上载代理的计算机上的本地管理员。
 
 #### <a name="set-up-the-edm-upload-agent"></a>设置 EDM 上载代理
 
 >[!NOTE]
-> 在开始此过程之前，请确保你是  *EDM\_DataUploaders* 安全组的成员和计算机上的本地管理员。
+> 在开始此过程之前，请确保你是  **EDM\_DataUploaders** 安全组的成员和计算机上的本地管理员。
 
-1. 下载并安装[EDM 上载代理](https://go.microsoft.com/fwlink/?linkid=2088639)。 默认情况下，安装位置应为 C:\\Program Files\\Microsoft\\EdmUploadAgent。
+1. 下载并安装[EDM 上载代理](https://go.microsoft.com/fwlink/?linkid=2088639)。 默认情况下，安装位置应为 ** C:\\Program Files\\Microsoft\\EdmUploadAgent**。
 
 > [!TIP]
 > 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
@@ -313,7 +317,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 #### <a name="index-and-upload-the-sensitive-data"></a>创建索引并上传敏感数据
 
-将敏感数据文件（注意我们的示例为 *PatientRecords.csv*）保存到计算机上的本地驱动器。 （我们已将示例 *PatientRecords.csv* 文件保存到 C:\\Edm\\Data。）
+将敏感数据文件（注意我们的示例为 **PatientRecords.csv**）保存到计算机上的本地驱动器。 （我们已将示例 **PatientRecords.csv** 文件保存到 **C:\\Edm\\Data**。）
 
 若要为敏感数据创建索引并上传，请在 Windows 命令提示符中运行以下命令：
 
@@ -327,13 +331,17 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-示例：**EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+例如，
+
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
 若要上传索引数据，请在 Windows 命令提示符中运行以下命令：
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-示例：**EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+例如， 
+
+> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 若要验证是否已上传敏感数据，请在 Windows 命令提示符中运行以下命令：
 
