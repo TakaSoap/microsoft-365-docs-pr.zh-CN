@@ -1,5 +1,7 @@
 ---
 title: 查看文档的标签活动
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全与合规中心内的标签活动资源管理器，可快速搜索和查看过去 30 天内 SharePoint 和 OneDrive for Business 中所有内容的标签活动。此为实时数据，可便于你明确了解租户中发生了什么。
-ms.openlocfilehash: 9c34cde4d9dde96b8fb1251e9d2be449031cc58a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eebe1938195740565f064bbac20608255aa5ef73
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802227"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597229"
 ---
 # <a name="view-label-activity-for-documents"></a>查看文档的标签活动
 

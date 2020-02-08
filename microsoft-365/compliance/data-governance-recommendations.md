@@ -1,7 +1,9 @@
 ---
 title: 如何确定数据治理建议的内容
+f1.keywords:
+- NOCSH
 ms.author: brendonb
-author: laurawi
+author: cabailey
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 安全与合规中心根据你组织的当前设置提供数据治理建议，并允许你通过几次单击进行设置。其中一些建议会检测组织中的特定内容，然后提供管理该内容的建议步骤。例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后让你自动为这些项目应用保留标签，以确保根据需要对它们进行分类和保留。本主题列出了你可能会看到的数据治理建议，并介绍了为触发每条建议而检测的内容。
-ms.openlocfilehash: e860a41b616be2265904775a63454aba1a6040c1
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: af3c08f568bb0b44e8454ee345a84308b53cf01f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708040"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595429"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>如何确定数据治理建议的内容
 

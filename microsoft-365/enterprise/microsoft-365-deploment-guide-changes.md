@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 企业版部署内容的更改
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/18/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 查看 Microsoft 365 部署指南中的新增内容和对内容的更改。
-ms.openlocfilehash: 680b42c255053338d401e53b75ab7471a064c44d
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 73ce204352af92e1380b57b9a58e04323fb7a987
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111967"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855457"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Microsoft 365 企业版部署内容的更改
 
@@ -30,7 +32,6 @@ ms.locfileid: "41111967"
 
 ### <a name="updates-and-enhancements"></a>更新和增强功能
 
-- 使用敏感度标签[保护 SharePoint Online 网站和文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)
 -  对一组[测试实验室指南](m365-enterprise-test-lab-guides.md)的刷新 
 
 ## <a name="november-2019"></a>2019 年 11 月

@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 24217ed5782d14cc67277bc980e4a94b7bc904f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601979"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851839"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消费者隐私法案 (CCPA)
 
 ## <a name="ccpa-overview"></a>CCPA 概述
 
-加利福尼亚州的消费者隐私法案（CCPA）是美国的第一项全面隐私法律。 它为加利福尼亚消费者提供了各种隐私权限。  由 CCPA 管控的企业将对这些使用者有很多义务，包括披露、常规数据保护条例（GDPR）-如消费者数据主体权限（Dsr）、针对某些数据传输的 "退出" 和 "自愿加入"对未成年人的要求。
+加利福尼亚州的消费者隐私法案（CCPA）是美国的第一项全面隐私法律。 它为加利福尼亚消费者提供了各种隐私权限。  由 CCPA 管控的企业将对这些使用者有很多义务，包括披露、常规数据保护条例（GDPR）-如使用者数据主体权限（Dsr）、用于某些数据传输的 "自愿退出" 以及 "选择加入"对未成年人的要求。
 
 CCPA 仅适用于在加利福尼亚开展生意的公司，其中满足以下一个或多个条件：（1）的年收入超过 $25000000，或（2）从来自加利福尼亚消费者个人的销售收入中获取年收入超过50% 的公司。信息，或（3）每年购买或共享超过50000个加利福尼亚消费者的个人信息。
 
@@ -72,10 +72,10 @@ CCPA 对 Californians 的许多权限都与 GDPR 提供的权限相似，其中�
 
 - 透明度/泄露义务
 - 访问、删除和接收数据副本的使用者权限
-- "服务提供商" 的定义，类似于 GDPR 定义 "处理器" 的方式类似的合同义务，以及
-- 包含 "控制器" 的 GDPR 定义的 "企业" 的定义。
+- "服务提供商" 的定义，类似于 GDPR 如何定义具有类似合同义务的 "处理器"，以及
+- 包含 "控制器" 的 GDPR 定义的 "业务" 的定义。
 
-CCPA 中最大的差别是，准许选择不出售数据给第三方的这一核心要求（其中，“出售”广义定义为包含共享数据来换取有值对价的行为）。
+CCPA 中的最大区别是，允许从数据销售到第三方（使用 "销售" 广泛定义以包括共享数据以进行重要考虑）的核心要求。
 
 **根据 CCPA 的规定，公司必须落实哪些权利？**
 
@@ -92,6 +92,10 @@ CCPA 需要管控企业来收集、转移和销售个人信息，以及其他一
 
 - 针对未满 13 岁的儿童，CCPA 引入了与美国《儿童在线隐私保护法案》(COPPA) 相符的家长同意义务。
 - 对于13到16岁之间的儿童，CCPA 将强制实施新的义务，以从儿童获得自愿同意。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+
+[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[CCPA 模板](https://go.microsoft.com/fwlink/?linkid=2118004)来帮助您的组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

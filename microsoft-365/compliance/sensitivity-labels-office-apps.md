@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 4b81968c6f60377195afb2715a2a6aabdb9dea51
-ms.sourcegitcommit: 2436c983402157ed3d09682d78792783313a64f4
+ms.openlocfilehash: bbdc2ed7407104298e36e214dc3e532cc305c94d
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41787502"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855341"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>在 Office 应用中的敏感度标签
 
@@ -70,7 +70,7 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 |[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 预览：在向[Office 预览体验成员](https://office.com/insider)的回滚中            | 预览：在向[Office 预览体验成员](https://office.com/insider)的回滚中        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
+|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 预览：滚动到[Office 预览体验成员](https://office.com/insider)            | 预览：滚动到[Office 预览体验成员](https://office.com/insider)        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[查看标签使用情况标签分析](label-analytics.md)并为管理员发送数据                      | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[要求用户对其电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)   | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 预览：在[Office 预览体验成员](https://office.com/insider)                                  | 正在审阅 | 正在审阅 | 正在审阅 | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -90,7 +90,7 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 |[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[查看标签使用情况标签分析](label-analytics.md)并为管理员发送数据                      | 正在审阅                       | 正在审阅                    | 正在审阅           | 正在审阅               | 正在审阅               |
 |[要求用户对其电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)   | 正在审阅                       | 正在审阅                    | 正在审阅           | 正在审阅               | 正在审阅               |
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 正在审阅                       | 正在审阅                    | 正在审阅           | 正在审阅               | 预览：在向[目标发布](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)的回滚中 |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 预览：滚动到[Office 预览体验成员](https://office.com/insider)                       | 正在审阅                    | 正在审阅           | 正在审阅               | 是 |
 |
 
 ## <a name="about-the-office-built-in-labeling-client"></a>关于 Office 内置标签客户端

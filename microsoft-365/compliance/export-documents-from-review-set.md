@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0448082ce6dcbcd9d1cee52557a78b2d7913a034
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588352"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862072"
 ---
 # <a name="export-documents-from-a-review-set"></a>从审阅集中导出文档
 
@@ -45,7 +45,7 @@ ms.locfileid: "41588352"
 
 ### <a name="metadata-file"></a>元数据文件
 
-可以将其视为包含与导出的文件相关联的元数据的 "加载文件"。 有关元数据文件中可用字段的列表，请参阅\[链接\]。 此文件通常可由3个<sup>rd</sup>方引入的后续工具进行。
+可以将其视为包含与导出文件相关联的元数据的 "加载文件"。 有关元数据文件中可用的导出域的列表，请参阅[高级电子数据展示中的文档元数据字段](document-metadata-fields-in-Advanced-eDiscovery.md)。 此文件通常可由第三方工具引入。
 
 ### <a name="tag-data"></a>标记数据
 
@@ -53,11 +53,11 @@ ms.locfileid: "41588352"
 
 ### <a name="text-files"></a>文本文件
 
-可以为从评审集导出的每个文件生成文本文件。 通常，服务合作伙伴会将这些文件作为 ingesting 数据的一部分提供给3个<sup>rd</sup>方参与方工具。
+可以为从评审集导出的每个文件生成文本文件。 通常，服务合作伙伴将这些文件作为 ingesting 数据的一部分由第三方工具提供。
 
 ### <a name="redacted-files"></a>编辑文件
 
-如果在审阅过程中生成编辑 Pdf，则这些文件在导出过程中可用。 用户可以决定是仅导出本机文件，还是将具有密文的 natives 替换为 Pdf 中的刻录文件。
+如果在审阅过程中生成编辑 PDF 文件，则这些文件在导出过程中可用。 您可以决定是仅导出本机文件，还是将需要密文的本机文件替换为包含实际密文的 PDF 文件。
 
 ### <a name="export-location"></a>导出位置
 

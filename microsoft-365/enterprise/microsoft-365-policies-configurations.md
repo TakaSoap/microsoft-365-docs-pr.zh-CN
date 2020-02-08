@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: af68a8e81cdaab1bbbd8887a7d586fcaefff1041
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600889"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855381"
 ---
 # <a name="identity-and-device-access-configurations"></a>身份识别与设备访问配置
 
@@ -122,7 +122,7 @@ Azure AD 提供一套完整的标识管理功能。 为了确保访问安全，�
 
 - [配置 office 365 租户以提高安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)：这些建议适用于 Office 365 租户的基准安全性。
 - [Office 365 安全路线图：前30天、90天及以上的主要优先级](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)：这些建议包括日志记录、数据管理、管理员访问和威胁防护。
-- [保护 SharePoint Online 网站和文件](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)：此系列文章介绍了如何在适当的级别保护文件和网站，以实现基准、敏感和高度机密保护。
+
 
 ### <a name="windows-10-and-office-365-proplus"></a>Windows 10 和 Office 365 专业增强版
 

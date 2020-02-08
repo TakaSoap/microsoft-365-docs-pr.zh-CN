@@ -1,5 +1,7 @@
 ---
 title: 使用数据分类活动资源管理器
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: ab80de0e1be3a164da8414ef3791fb9717bcc190
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233693"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595469"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>查看关于标记的内容的活动（预览版）
 
@@ -47,7 +49,6 @@ ms.locfileid: "41233693"
 - Office 365 (E5)
 - 高级合规性（E5）加载项
 - 高级威胁智能（E5）加载项
-- 高级威胁防护（E5）加载项
 
 ## <a name="activity-type"></a>活动类型
 

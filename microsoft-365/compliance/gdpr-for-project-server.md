@@ -1,5 +1,8 @@
 ---
 title: 适用于 Project Server 的 GDPR
+description: 了解如何解决本地 Project Server 中的 GDPR 要求。
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,13 +10,13 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: 了解如何解决本地 Project Server 中的 GDPR 要求。
-ms.openlocfilehash: 8fb29c2d383c03c79d619d2c78df75cffb4eab27
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: a9fff9f085fd42f28801a82c3f83d6bdd1f74ff6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074787"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596409"
 ---
 # <a name="gdpr-for-project-server"></a>适用于 Project Server 的 GDPR
 

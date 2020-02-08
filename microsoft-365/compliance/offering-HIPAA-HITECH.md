@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: d6f6dc2cc8cb9a36816fa843fcea969d65c94dac
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628088"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851889"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任（HIPAA） & 高科技行为
 
@@ -62,7 +62,7 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Intune
 - [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务作为独立服务或包含在 Office 365 或 Dynamics 365 品牌的计划或套件中
 - Azure DevOps Services
 
@@ -101,6 +101,10 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 - 适用于[Azure](https://aka.ms/azurehipaaguidance)和[Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的*HIPAA/高科技法案实现指南*。 为隐私、安全性和合规性监察官以及其他负责 HIPAA 和高科技法案实施的人员，它们描述了组织为保持合规性应采取的具体步骤。
 - [使用 Microsoft Azure 设计安全运行状况解决方案的实践指南](https://aka.ms/azureindustrysecurity)可帮助您更好地了解以安全方式成功采用云服务所需的操作。
 - [解决 Microsoft 云中的 HIPAA 安全性和隐私要求](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)提供了管理法规要求的简短概述。 此外，它还详细分析了 Microsoft 云服务是如何使用映射到这些要求的方法构建的，并提供了有关如何构建合规性解决方案的指南。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+
+[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[HIPAA Office 365 模板](https://go.microsoft.com/fwlink/?linkid=2118005)和[HIPAA Intune 模板](https://go.microsoft.com/fwlink/?linkid=2118006)来帮助您的组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

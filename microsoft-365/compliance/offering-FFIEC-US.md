@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 74ce16a1cc98943ea808bbae08eccd54f8f21fad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602419"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851819"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>联邦金融机构检查委员会（FFIEC）
 
@@ -47,7 +47,7 @@ Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是为满足为金
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
+- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -58,6 +58,10 @@ Azure 和 Office 365 SOC 认证报告。
 **我能否使用有关 SOC 标准的 Microsoft 合规性来满足针对我的机构的 FFIEC 合规性义务？**
 
 为了帮助您满足这些义务，Microsoft 按照上述说明，提供了有关 SOC 标准的符合性的具体说明。 但是，最终需要确定我们的服务是否符合适用于你的机构的特定法律和法规。 此外，FFIEC 还建议 "审核报告或评论的用户不应仅依赖报告中包含的信息来验证 TSP 的内部控制环境。 他们应使用其他验证和监视过程，如 FFIEC IT 测验手册中的[外包技术手册](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)中更全面地讨论。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+
+[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[FFIEC Office 365 模板](https://go.microsoft.com/fwlink/?linkid=2117912)和[FFIEC Intune 模板](https://go.microsoft.com/fwlink/?linkid=2118101)来帮助您的组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

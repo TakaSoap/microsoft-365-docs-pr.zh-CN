@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用于恢复丢失的 Office 365 客户密钥的可用性密钥。
-ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
-ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
+ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845361"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862082"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>了解 Office 365 客户密钥的可用性密钥
 
@@ -94,7 +94,7 @@ Office 365 的构建旨在防止对可用性密钥的滥用。 应用程序层�
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Exchange Online 和 Skype for business 如何使用可用性密钥
 
-当您使用客户密钥创建 DEP 时，Office 365 将生成与该 DEP 相关联的数据加密策略密钥（DEP 密钥）。 该服务将 DEP 密钥加密三次：每个客户密钥一次，并使用可用性密钥。 仅存储加密版本的 DEP 密钥，并且只能使用客户密钥或可用性密钥解密 DEP 密钥。 然后，使用 DEP 密钥来加密邮箱密钥，然后使用它对各个邮箱进行加密。
+当您使用客户密钥创建 DEP 时，Office 365 将生成与该 DEP 相关联的数据加密策略密钥（DEP 密钥）。 该服务将 DEP 密钥加密三次：每个客户密钥一次，并使用可用性密钥。 仅存储加密版本的 DEP 密钥，并且只能使用客户密钥或可用性密钥解密 DEP 密钥。 然后，使用 DEP 密钥加密邮箱密钥，这些邮箱加密单个邮箱。
   
 在客户使用该服务时，Office 365 将执行以下过程来解密和提供数据：
   
@@ -171,7 +171,7 @@ Office 365 中的自动化系统处理所有数据在系统中流动，以提供
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online 和 Skype for business 可用性密钥日志记录
 
-Exchange Online 和 Skype for business 在暂时性错误期间自动使用可用性密钥。 当此回退发生时，Office 365 将发布从安全与合规中心可访问的客户可见日志。 每次这些服务切换为使用可用性密钥时，都会生成可用性密钥操作的审核日志记录。 名为 "Customer Key Service Encryption" 的新记录类型，活动类型为 "回退到可用性密钥"，允许管理员筛选[统一审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)搜索结果以查看可用性密钥记录。 仅当使用 Customer 密钥访问数据而不是 Microsoft 服务管理密钥时，才会生成可用性密钥记录。
+Exchange Online 和 Skype for business 在暂时性错误期间自动使用可用性密钥。 当此回退发生时，Office 365 将发布从安全与合规中心可访问的客户可见日志。 每次这些服务使用可用性密钥时，都会生成可用性密钥操作的审核日志记录。 名为 "Customer Key Service Encryption" 的新记录类型，活动类型为 "回退到可用性密钥"，允许管理员筛选[统一审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)搜索结果以查看可用性密钥记录。 仅当使用 Customer 密钥访问数据而不是 Microsoft 服务管理密钥时，才会生成可用性密钥记录。
 
 日志记录包括 "日期"、"时间"、"活动"、"组织 ID" 和 "数据加密策略 ID" 等属性。 该记录可作为 Office 365 统一的审核日志的一部分，并可从 Office 365 安全性和合规性中心审核日志搜索选项卡进行访问。
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2b7ad248299c12edfeed880ac731f2d23e9b1949
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71be1e70a04881b937ee1f75d5fda6f03efdbd5f
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602359"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851859"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>联邦风险和授权管理计划（FedRAMP）
 
@@ -72,7 +72,7 @@ Azure 在中等影响级别维护 ATO。 （Azure 是第一个具有基础结构
 - Intune
 - [Office 365 和 Office 365 US 政府计划](https://aka.ms/o365-compliance-framework)
 - Office 365 美国政府防御版
-- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
+- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
 - Microsoft Defender ATP
 
 > [!NOTE]
@@ -99,7 +99,7 @@ FISMA 是一种联邦法律，要求我们的联邦机构及其合作伙伴仅�
 
 **FedRAMP 适用于哪些人？**
 
-"FedRAMP 对于采用低风险和中等风险影响级别的联邦机构云部署和服务模型是必需的。 任何想要接洽 CSP 的联邦机构可能都需要满足 FedRAMP 规范。 此外，在联邦政府使用的产品或服务中使用云技术的公司可能需要获取 ATO。
+对于采用低风险和中等风险影响级别的联邦机构云部署和服务模型，"FedRAMP" 是必需的。 任何想要接洽 CSP 的联邦机构可能都需要满足 FedRAMP 规范。 此外，在联邦政府使用的产品或服务中使用云技术的公司可能需要获取 ATO。
 
 **我的机构在哪里启动其自己的合规性工作？**
 
@@ -107,7 +107,11 @@ FISMA 是一种联邦法律，要求我们的联邦机构及其合作伙伴仅�
 
 **我可以在代理的授权过程中使用 Microsoft 合规性吗？**
 
-可以。 您可以使用 Microsoft 云服务的认证，作为任何需要联邦政府机构 ATO 的计划或计划的基础。 但是，您需要在这些服务之外为自己的组件实现自己的授权。
+是。 您可以使用 Microsoft 云服务的认证，作为任何需要联邦政府机构 ATO 的计划或计划的基础。 但是，您需要在这些服务之外为自己的组件实现自己的授权。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+
+[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[FedRAMP 模板](https://go.microsoft.com/fwlink/?linkid=2118102)来帮助您的组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

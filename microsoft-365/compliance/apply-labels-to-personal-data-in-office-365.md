@@ -1,5 +1,7 @@
 ---
 title: 向 Office 365 中的个人数据应用标签
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -15,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为 GDPR 保护计划的一部分。
-ms.openlocfilehash: 023d6e2d3db1b6ec844801598df1925f3660217f
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 7561daccb400fd5364e8c1ed948924f7975af5a7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256909"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596089"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用标签
 

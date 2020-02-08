@@ -1,5 +1,7 @@
 ---
 title: 数据分类入门（预览）
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 775802f8aecf04668641c2e7d6b24e645a7c9f90
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823734"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595449"
 ---
 # <a name="data-classification-overview-preview"></a>数据分类概述（预览）
 

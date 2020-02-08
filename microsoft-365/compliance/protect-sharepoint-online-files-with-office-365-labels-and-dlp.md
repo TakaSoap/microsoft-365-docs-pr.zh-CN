@@ -1,5 +1,7 @@
 ---
 title: 使用保留标签和 DLP 保护 SharePoint Online 文件
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：为具有各种信息保护级别的 SharePoint Online 团队网站应用保留标签和数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: c40261df8203841e3627a0d7a0c09c7f88a02a6b
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: ad333007b2efdcf577f1c31afc716c525a7abf7e
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668870"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855371"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留标签和 DLP 保护 SharePoint Online 文件
 
@@ -221,8 +223,6 @@ ms.locfileid: "39668870"
     
 ## <a name="see-also"></a>另请参阅
 
-[保护 SharePoint Online 网站和文件](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

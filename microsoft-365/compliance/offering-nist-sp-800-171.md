@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 070ec3977768d131e4e4d9c2f493e630a1a707c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601889"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851779"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
@@ -40,7 +40,7 @@ NIST SP 800 –171最初是在2015年6月发布的，并且自那时起已更新
 
 NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准。 在 NIST SP 800 –171的附录 D 中，可将其 CUI 安全要求直接映射到 NIST SP 800-53 中的相关安全控件，该服务已在 FedRAMP 程序下评估并授权了此项范围内的云服务。
 
-处理或存储美国政府 CUI 的任何实体（研究机构、咨询公司、制造承包商）必须遵守 NIST SP 800 –171的严格要求。 此证明意味着 Microsoft 的范围内云服务可以适应希望部署 CUI 工作负荷的客户，并确保 Microsoft 处于完全遵从性。 例如，在信息系统中使用范围内的 Microsoft 云服务处理、存储或传输 "涉及的防御信息" 的所有 DoD 承包商都在其信息系统中满足美国国防部的 DFARS 条款要求遵守安全性NIST SP 800 –171的要求。
+处理或存储美国政府 CUI 的任何实体（研究机构、咨询公司、制造承包商）必须遵守 NIST SP 800 –171的严格要求。 此证明意味着 Microsoft 的范围内云服务可以适应希望部署 CUI 工作负荷的客户，并确保 Microsoft 处于完全遵从性。 例如，在其信息系统中使用范围内的 Microsoft 云服务处理、存储或传输 "覆盖的防御信息" 的所有 DoD 承包商都能满足要求遵守安全性的美国国防部 DFARS 条款。NIST SP 800 –171的要求。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -61,7 +61,11 @@ NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准�
 
 **对于我的组织，我可以使用 Microsoft 合规性的 NIST SP 800 –171吗？**
 
-可以。 Microsoft 客户可以使用来自 FedRAMP 标准的独立第三方评估组织（3PAO）的报告中所述的审核控件，作为其自己的 FedRAMP 和 NIST 风险分析和资格验证工作的一部分。 这些报告证明 Microsoft 已在其范围内的云服务中实现的控制措施的有效性。 客户负责确保其 CUI 工作负载符合 NIST SP 800 –171准则。
+是。 Microsoft 客户可以使用来自 FedRAMP 标准的独立第三方评估组织（3PAO）的报告中所述的审核控件，作为其自己的 FedRAMP 和 NIST 风险分析和资格验证工作的一部分。 这些报告证明 Microsoft 已在其范围内的云服务中实现的控制措施的有效性。 客户负责确保其 CUI 工作负载符合 NIST SP 800 –171准则。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+
+[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[NIST 800-171 模板](https://go.microsoft.com/fwlink/?linkid=2117526)来帮助您的组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

@@ -1,5 +1,7 @@
 ---
 title: 自定义或新建敏感信息类型
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -18,12 +20,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何修改或新建针对 GDPR 的 Office 365 敏感信息类型。
-ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708036"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595479"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自定义或新建敏感信息类型
 
@@ -141,9 +143,9 @@ ms.locfileid: "38708036"
 
 使用以下资源通过 KQL 构建和优化查询：
 
--   [关键字查询语言 (KQL) 语法参考 (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [关键字查询语言 (KQL) 语法参考 (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [运行内容搜索](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+- [运行内容搜索](content-search.md)
 
 内容搜索提供了可帮助开发 KQL 查询和敏感信息类型的其他资源 — 关键字。为什么要使用关键字列表？因为这样可以获取显示与各个关键字相匹配的项目数的统计信息。该信息有助于快速找到最有效（及最无效）的关键字。有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计信息](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
 

@@ -1,7 +1,9 @@
 ---
 title: 查看数据管理报告
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全与合规中心内的数据管理报告，可快速查看标签是否按预期应用于内容。
-ms.openlocfilehash: 6d761931cea171afb84e25fa0900bec7c3a2f3c2
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813902"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597209"
 ---
 # <a name="view-the-data-governance-reports"></a>查看数据管理报告
 

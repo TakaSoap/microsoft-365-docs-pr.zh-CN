@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8d4fc749faa340ceaca76983df03ccbc48c3126a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4aae95778a829203dc8d34fe1882528cf866b913
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601899"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851799"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
@@ -80,7 +80,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 **我是否可以使用 Microsoft 对我的组织的合规性？**
 
-可以。 对 FedRAMP 标准的独立第三方合规性报告证明 Microsoft 实施的控件的有效性，以维护 Microsoft 云服务的安全和隐私。 Microsoft 客户可以使用这些相关报告中所述的审核控件作为其自己的 FedRAMP 和 NIST FICIC 的风险分析和资格努力的一部分。
+是。 对 FedRAMP 标准的独立第三方合规性报告证明 Microsoft 实施的控件的有效性，以维护 Microsoft 云服务的安全和隐私。 Microsoft 客户可以使用这些相关报告中所述的审核控件作为其自己的 FedRAMP 和 NIST FICIC 的风险分析和资格努力的一部分。
 
 **美国政府认为哪些组织是关键基础结构？**
 
@@ -97,6 +97,10 @@ NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online
 
 与其他云服务提供商相比，Microsoft 提供了最全面的产品。 为了在各地区和行业中保持我们的广泛合规性产品，我们根据市场需求、客户反馈和产品生命周期，在我们的保证工作范围中加入服务。 如果某项服务未包含在特定合规性产品的当前范围内，则您的组织有责任根据您的合规性义务评估风险，并确定在该服务中处理数据的方式。 我们不断地收集来自客户的反馈，并与管理机构和审计员合作，以满足您的安全和合规性需求。
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+
+[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[NIST CSF 模板](https://go.microsoft.com/fwlink/?linkid=2117917)来帮助您的组织满足此法规的要求。
+
 ## <a name="resources"></a>资源
 
 - [Microsoft 云服务授权](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
@@ -104,7 +108,7 @@ NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online
 - [改进关键基础结构的框架 Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [总统执行官在加强 Cybersecurity 的联邦网络和关键基础结构方面的顺序](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [在线服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息

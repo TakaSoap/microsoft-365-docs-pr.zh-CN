@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将员工数据从组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600689"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862032"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
 您可以在 Microsoft 365 合规性中心中设置数据连接器，以导入人力资源（HR）数据，例如，员工提交其让步的日期以及员工最后一天的日期。 这样，Microsoft 信息保护解决方案（如新的[内幕风险管理解决方案](insider-risk-management.md)）可以使用这种 HR 数据来帮助您的组织防止恶意活动或组织内的数据被盗。 设置 HR 连接器包含在 Azure Active Directory 中创建一个用于按连接器进行身份验证的应用程序，创建包含 HR 数据的 CSV 映射文件，在合规性中心内创建一个数据连接器，然后运行脚本（在计划的基础）将 CSV 文件中的 HR 数据 ingests 到 Microsoft 云。 然后，使用数据连接器 Microsoft 合规性解决方案（如内幕风险管理）访问导入到 Microsoft 365 组织的 HR 数据。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全局管理员的凭据登录，然后接受该请求。 您必须完成此步骤，然后才能在步骤3中成功创建 HR 连接器。
 
@@ -211,6 +211,6 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    ![新任务将显示在任务计划程序库中](media/HRConnectorTaskSchedulerLibrary.png)
 
-   最后一次，将显示计划运行脚本的下次运行时间。 您可以双击该任务以对其进行编辑。
+   最后一次运行脚本并显示下一次计划运行时。 您可以双击该任务以对其进行编辑。
 
    您还可以验证在符合性中心中对应 HR 连接器的飞出页面上，脚本的上次运行时间。

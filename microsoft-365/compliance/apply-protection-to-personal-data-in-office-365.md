@@ -1,5 +1,7 @@
 ---
 title: 向 Office 365 中的个人数据应用保护
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -17,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用数据丢失防护 (DLP) 策略保护 Office 365 中的个人数据。
-ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256779"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596059"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用保护
 
@@ -249,9 +251,9 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 详细信息：
 
--   [了解 SharePoint 中的权限级别](https://support.office.com/zh-CN/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [了解 SharePoint 中的权限级别](https://support.office.com/en-US/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   [了解 SharePoint 组](https://support.office.com/zh-CN/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [了解 SharePoint 组](https://support.office.com/en-US/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>适用于 SharePoint 和 OneDrive for Business 库的外部共享策略
 
@@ -303,7 +305,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 -   [管理 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   [与组织外部的用户共享站点或文档](https://support.office.com/zh-CN/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [与组织外部的用户共享站点或文档](https://support.office.com/en-US/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>网站级别的设备访问策略
 

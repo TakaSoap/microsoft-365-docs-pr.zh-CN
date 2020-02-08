@@ -1,5 +1,7 @@
 ---
 title: 针对 GDPR 的 Office 365 信息保护
+f1.keywords:
+- CSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -15,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 此解决方案演示了如何保护 Office 365 服务中存储的敏感数据。
-ms.openlocfilehash: 9540eb41c6603a7ee09cb5499d09f464353d9fd9
-ms.sourcegitcommit: 4d9a075f4c890fa5bbd1751740a5540edbc1b999
+ms.openlocfilehash: a6bc231c82e65e7361cdcda7c2087bc48a55dcc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "38709990"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597839"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>针对 GDPR 的 Office 365 信息保护
 

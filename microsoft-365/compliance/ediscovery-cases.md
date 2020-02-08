@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全 & 合规性中心在您的组织中创建和管理电子数据展示事例。 您可以向事例分配成员、将内容位置置于保留状态、运行与事例关联的内容搜索以及导出搜索结果。 您还可以为 Office 365 高级电子数据展示中的进一步分析准备事例数据。
-ms.openlocfilehash: f687f405b6b721ec3f3f1d94e11091c1023d1aea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cc0cb0a709463be0e624162555dd221564b4dd3
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595137"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862102"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全与合规中心管理电子数据展示事例
 
@@ -182,7 +182,7 @@ ms.locfileid: "41595137"
   
 6. Optional在 "**说明**" 框中，添加保留的说明。 
     
-7. 单击“下一步”。****
+7. 单击“**下一步**”。
     
 8. 选择要置于保留状态的内容位置。 您可以将邮箱、网站和公用文件夹置于保留状态。
     
@@ -624,7 +624,5 @@ ms.locfileid: "41595137"
     
     > [!NOTE]
     > 为 Microsoft 团队或团队频道保留 Wiki 内容的功能（在将团队的 SharePoint 网站置于保留状态时）发布在2017年6月22日。 如果工作组网站处于保留状态，则会在该日期开始保留 Wiki 内容。 但是，如果工作组网站处于保留状态，并且在6月 22 2017 日之前删除了 Wiki 内容，则不会保留 Wiki 内容。 
-  
-  - 将保留置于 Microsoft 团队中时，保留不会应用于专用通道邮件。 仅保留标准频道中的邮件。 即将推出对保留私有频道消息的支持。
 
 - **如何查找 OneDrive for business 网站的 URL？** 若要收集组织中的 OneDrive for business 网站的 Url 列表，以便可以将其添加到与电子数据展示事例关联的保留或搜索，请参阅[创建组织中所有 OneDrive 位置的列表](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文中的脚本将创建包含所有 OneDrive 网站的文本文件。 若要运行此脚本，必须安装并使用 SharePoint Online Management Shell。 请务必将你组织的 MySite 域的 URL 附加到你想要搜索的每个 OneDrive 网站。 这是包含你所有的 OneDrive 的域；例如，`https://contoso-my.sharepoint.com`。 下面是用户的 OneDrive 网站的 URL 示例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。

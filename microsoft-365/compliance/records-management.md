@@ -1,7 +1,9 @@
 ---
-title: Microsoft 365 中的记录管理
-ms.author: laurawi
-author: laurawi
+title: 记录管理
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 通过 Microsoft 365 中的记录管理，你可以将组织的特定保留计划应用到文件计划中，以管理保留、记录声明和处置，从而支持完整的内容生命周期。
-ms.openlocfilehash: 3057b5ab061bc5107acbde3c67ecde8a9edaffd7
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: dcc3e5666bcd438a046d535cf9fce88910b85ad7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "39233205"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597649"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的记录管理
 
