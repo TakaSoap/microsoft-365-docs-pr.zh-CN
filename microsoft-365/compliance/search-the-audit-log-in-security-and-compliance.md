@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661998"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862122"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -77,17 +77,17 @@ ms.locfileid: "41661998"
   > [!IMPORTANT]
   > 如果在安全与合规中心中的“**权限**”页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索 Office 365 审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
 
-- 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的 Office 365 审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 订阅，具体而言是分配给特定用户的许可证类型。
+- 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的 Office 365 审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 或 Microsoft 365 订阅，具体而言是分配给特定用户的许可证类型。
 
-  - **Office 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
+  - **Office 365 E3 和 Microsoft 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
 
     > [!NOTE]
     > 即使启用了默认启用的邮箱审核，也可能会发现无法在安全与合规中心的审核日志搜索中找到某些用户的邮箱审核事件，也无法通过 Office 365 管理活动 API 找到这些事件。 有关详细信息，请参阅[有关邮箱审核日志记录的详细信息](enable-mailbox-auditing.md#more-information)。
 
-  - **Office 365 E5：** 审核记录也保留 90 天。 对于 E5 用户以及具有 E3 许可证和 Office 365 高级合规版附加许可证的用户，最终可将审核记录保留一年。
+  - **Office 365 或 Microsoft 365 E5 或拥有 Microsoft 365 E5 合规版附加许可证的用户：** Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
     > [!NOTE]
-    > 对于 E5 组织（或对于具有高级合规版附加许可证的 E3 组织内的用户），针对审核记录的一年保留期的个人预览版计划已对新注册关闭。 当公共预览版提供一年保留期或正式发布时，本文将更新。
+    > 如果组织参与了审计记录保留一年的个人预览版计划，则在正式发布日期之前产生的审核记录的保留期限不会被重置。
 
 - 如果希望为组织关闭 Office 365 中的审核日志搜索，可以在连接到 Exchange Online 组织的远程 PowerShell 中运行以下命令：
 
@@ -851,10 +851,6 @@ ms.locfileid: "41661998"
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**从哪里可以了解 Office 365 中的审核服务提供的功能？**
-
-有关 Office 365 中提供的审核和报告功能的详细信息，请参阅 [Office 365 中的审核和报告](https://docs.microsoft.com/Office365/Enterprise/office-365-auditing-and-reporting-overview)。
-
 **目前审核的各种 Office 365 服务有哪些？**
 
 已审核最常用的 Office 365 服务，例如 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Dynamics 365、高级威胁防护和 Power BI。 有关已审核的服务列表，请参阅[本文开头部分](search-the-audit-log-in-security-and-compliance.md)。
@@ -869,16 +865,13 @@ ms.locfileid: "41661998"
 
 **审核记录将保留多长时间？**
 
-如前文所述，审核记录的保留期取决于组织的 Office 365 订阅。
+如前文所述，审核记录的保留期取决于组织的 Office 365 或 Microsoft 订阅。
 
-- **Office 365 E3：** 审核记录可保留 90 天。
+  - **Office 365 E3 和 Microsoft 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
 
-- **Office 365 E5：** 审核记录也可保留 90 天。 对于 E5 用户以及具有 E3 许可证和 Office 365 高级合规版附加许可证的用户，最终可将审核记录保留一年。
+  - **Office 365 或 Microsoft 365 E5 或拥有 Microsoft 365 E5 合规版附加许可证的用户：** Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
-  > [!NOTE]
-  > 如上文所述，对于 E5 组织（或具有高级合规版附加许可证的 E3 组织），针对审核记录的一年保留期的个人预览版计划已对新注册关闭。 当公共预览版提供一年保留期或正式发布时，本文将更新。
-
-另请注意，审核记录的保留期限基于每位用户许可。 例如，如果为组织内的用户分配了 Office 365 E3 或 E5 许可证，则该用户执行的活动的审核记录将保留 90 天。
+另请注意，审核记录的保留期限基于每位用户许可。 例如，如果为组织内的用户分配了 Office 365 E3 许可证，则该用户执行的活动的审核记录将保留 90 天。
 
 **我是否可以通过编程方式访问审核数据？**
 
@@ -902,4 +895,6 @@ ms.locfileid: "41661998"
 
 **审核数据是否已加密？**
 
-审核数据存储在部署审核管道的同一区域内的 Exchange 邮箱中（静态数据）。 此数据未加密。 但是，传输中的数据始终是加密的。
+审核数据存储在部署统一审核管道的同一区域内的 Exchange 邮箱中（静态数据）。 Exchange 不会对邮箱静态数据加密。 但是，服务级加密将对所有邮箱数据进行加密，因为 Microsoft 数据中心内的 Exchange 服务器将通过 BitLocker 加密。 有关详细信息，请参阅 [Skype for Business、OneDrive for Business、SharePoint Online 和 Exchange Online 的 Office 365 加密](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md)。
+
+传输中的数据始终是加密的。

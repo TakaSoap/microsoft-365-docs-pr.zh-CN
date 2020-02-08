@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d88ef57ea9340d95073db7f5ddd4423d5275c840
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef99b36737627a9ea457e7d4235b42241f34248b
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602249"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851809"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 信息安全管理标准
 
@@ -141,6 +141,10 @@ ISO/IEC 27001 的国际接受度和适用性是 Microsoft 在实施和管理信�
 **能否在我所在组织的认证中使用 Microsoft 服务的 ISO/IEC 27001 合规性认证？**
 
 能。 如果你的企业需要对 Microsoft 服务中部署的实施流程进行 ISO/IEC 27001 认证，则可以在你的合规性评估中利用适用的认证。 但是，你需要负责聘请评估方来评估自己组织中的控制措施和流程，以及 ISO/IEC 27001 合规性的实施情况。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+
+[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，使用预配置的 [ISO 27001 模板](https://go.microsoft.com/fwlink/?linkid=2117914)帮助组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 016d0f9fdd0795ea709f168a0fc8ba027f029e8f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6791754e0d34ca2ca564a805269bb9fdc216d0ad
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602229"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851869"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保护云中个人数据的 ISO/IEC 27018 行为守则
 
@@ -102,7 +102,7 @@ Microsoft 和 ISO/IEC 27018
 
 该行为守则适用于根据合同处理其他组织的 PII 的 CSP。 在 Microsoft，它还适用于这些 CSP 的支持。
 
-**个人信息控制者”和“个人信息处理者”之间有何区别？**
+**“个人信息控制者”和“个人信息处理者”之间有何区别？**
 
 在 ISO/IEC 27018 背景下：
 
@@ -120,6 +120,10 @@ Microsoft 和 ISO/IEC 27018
 能。 如果符合 ISO/IEC 27018 对你的业务及在任何 Microsoft 范围内企业云服务上部署的实施非常重要，则可在合规性评估中使用 Microsoft 的 ISO/IEC 27018 合规性证明和 Microsoft 的 ISO/IEC 27001 合规性证书。
 
 但是，你需要负责聘请评估方来评估合规性政策的实施情况，以及所在组织中的控制措施和流程。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+
+[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，使用预配置的 [ISO 27018 模板](https://go.microsoft.com/fwlink/?linkid=2117523)帮助组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 
