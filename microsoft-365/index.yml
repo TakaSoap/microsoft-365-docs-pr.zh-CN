@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: ddf37ec091aace486b2e4f199cf31f3c720d93a1
-  ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+  ms.openlocfilehash: f55a1404a76b55aab6ed6c0b46874fcc80dbbf87
+  ms.sourcegitcommit: d718a3a3ad293ca533ba355047a461b3ab6d4aa3
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/14/2019
-  ms.locfileid: "38627058"
+  ms.lasthandoff: 02/10/2020
+  ms.locfileid: "41882877"
 highlightedContent:
   items:
   - title: 针对管理员和 IT 专业人员的培训
@@ -49,19 +49,19 @@ additionalContent:
       url: ./business/index.yml
     - title: Microsoft 365 Enterprise
       summary: 专为大型组织而设计。 保护您的业务并转换使用 Office 应用程序、Windows 10 和企业移动性 + 安全性的方式。
-      url: ./enterprise/index.md
+      url: ./enterprise/index.yml
     - title: Microsoft 365 教育版
       summary: 旨在为教育版提供创新、促进团队协作和为教育而打造的单个经济实惠的解决方案提供简单而安全的体验。
       url: https://docs.microsoft.com/education/
-    - title: Microsoft 365 合规性
+    - title: Microsoft 365 合规中心
       summary: 帮助您的组织管理信息、防止风险并遵守法律或法规标准。
       url: ./compliance/index.yml
-    - title: Microsoft 365 安全
+    - title: Microsoft 365 安全中心
       summary: 了解 Microsoft 365 安全中的强大安全解决方案和服务，以便您可以在受攻击的表面更好地保护组织。
       url: ./security/index.yml
     - title: Microsoft 365 for Campaigns
       summary: 使用 Microsoft 365 商业版的推荐配置来保证您的市场活动或业务数据和通信的安全。
       url: ./campaigns/index.md
-    - title: 新增— Microsoft 学习的 Microsoft 365 培训和认证
-      summary: 全新的学习途径，以提高您的 Microsoft 365 技能并获得认证。
-      url: https://docs.microsoft.com/learn/m365/
+    - title: Microsoft 托管桌面
+      summary: Microsoft 托管桌面将 microsoft 365 企业版、基于云的设备管理和安全监控结合在一起，使您能够腾出 IT 团队重点关注核心业务需求。
+      url: ./managed-desktop/index.yml
