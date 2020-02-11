@@ -202,6 +202,8 @@
           href: data-classification-content-explorer.md
         - name: 查看标签活动（预览）
           href: data-classification-activity-explorer.md
+        - name: 数据分类公共预览版发布说明（预览）
+          href: data-classification-pub-preview-relnotes.md
         - name: 可训练分类器入门（预览）
           href: classifier-getting-started-with.md
         - name: 使用就绪分类器（预览）
