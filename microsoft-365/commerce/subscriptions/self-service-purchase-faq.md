@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 1a8cea3b11ecdc6e3ac6d382dc8ffe92c84e187a
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661900"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932272"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
 > [!NOTE]
 > 本文中的信息仅适用于 Microsoft Power Platform （Power BI、Power Apps 和 Power 自动化）订阅。
 
-现在可在美国的 Power Platform 中购买自助服务购买。
+在美国、澳大利亚、加拿大和日本的 Power Platform 中，现在可以使用自助购买。
 
 ## <a name="general"></a>常规
 

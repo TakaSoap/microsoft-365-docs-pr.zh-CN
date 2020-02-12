@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aeae243b4e363f69729ccdbd2bc3fc465ec1449b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b37b8f0aaa225dec9e522964b59871047081be9d
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600169"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932302"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -74,9 +74,9 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 * 帮助台管理员
 * 用户管理员
 * 服务管理员
-* 安全读者
+* 安全读取者
 * 安全操作员
-* 全局读者
+* 全局读取者
 
 ### <a name="graph-api"></a>Graph API
 
@@ -134,6 +134,16 @@ Microsoft 安全分数不会跟踪标记为 [未评分] 的操作。 你仍可�
 
 Microsoft 安全分数是基于系统配置、用户行为和其他与安全相关的度量的安全状态的数字摘要;它并不是对系统或数据受到破坏的可能性的绝对度量。 相反，它表示您在 Microsoft 环境中已采用安全控制的程度，这有助于抵消受到破坏的风险。 无在线服务完全不受安全破坏，并且安全分数不应以任何方式解释为保证安全。
 
+## <a name="whats-new"></a>新增功能
+
+若要使 Microsoft 安全得分更好地代表安全状态，我们做出了一些更改。
+
+### <a name="removed-not-scored-improvement-actions"></a>删除了 "未评分" 的改进操作
+
+安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议都可以清楚地影响分数时，一条 Microsoft 安全分数才有意义。 不计分的提高操作不可度量。  
+
+出于这些原因，未评分的所有改进操作均已删除。 您的部件不需要执行任何操作。
+
 ## <a name="whats-coming"></a>接下来是什么？
 
 为了使 Microsoft 安全得分更好地代表安全状况并提高可用性，我们在不久的将来进行一些更改。 你的分数和可能的最大分数都将发生变化。 但是，这并不意味着您的安全状况发生了变化。
@@ -173,6 +183,11 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 - 发现有风险和不兼容的卷影 IT 应用程序
 - 查看权限 & 阻止连接到您的环境的有风险的 OAuth 应用程序
 - 在 SharePoint online 文档库中设置版本控制
+- 将用户文档存储在 OneDrive for Business 中
+- 不允许邮箱委派
+- 允许匿名来宾共享网站和文档的链接
+- 设置 Office 365 ATP 安全附件策略
+- 设置 Office 365 安全链接以验证 Url
 
 ### <a name="mfa-improvement-action-updates"></a>MFA 改进操作更新
 
@@ -191,11 +206,11 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 
  这些新的改进操作需要为你的用户或管理员在你的目录中注册多重身份验证（MFA），并建立符合你的组织需求的一组适当的策略。 主要目标具有灵活性，同时确保所有用户和管理员都可以通过多个因素或基于风险的身份验证提示进行身份验证。 这可以采用设置安全默认值的形式，让 Microsoft 决定何时对用户进行 MFA，或拥有多个应用范围决策的策略。
 
-### <a name="removing-not-scored-and-review-improvement-actions"></a>删除 "未评分" 和 "审阅" 改进操作
+### <a name="removing-review-improvement-actions"></a>删除 "审阅" 改进操作
 
-安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议都可以清楚地影响分数时，一条 Microsoft 安全分数才有意义。 不计分的提高操作不可度量，并且与其他改进操作相比，不会将 "改进" 操作评估为与相同标准。  
+安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议都可以清楚地影响分数时，一条 Microsoft 安全分数才有意义。 与其他改进操作相比，评审改进操作的计算方式不是相同标准。  
 
-出于这些原因，所有未评分或要求的改进操作将暂时删除。 您的部件不需要执行任何操作。
+出于这些原因，需要审阅节奏的所有改进操作都将暂时删除。 您的部件不需要执行任何操作。
 
 ### <a name="simplification-of-the-point-system"></a>简化了点系统
 

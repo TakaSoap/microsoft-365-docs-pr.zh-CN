@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 引导您完成影响 Office 365 环境安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
-ms.openlocfilehash: 01cf10818c83171fbbf30b5ec7f08871f0b9b328
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bf11ae0520ac6f715e3f84669c6d6f615deaf14
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598199"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932292"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>配置 Office 365 租户以提高安全性
 
@@ -67,7 +67,7 @@ Microsoft 365 安全中心包含可保护您的环境的功能。 它还包括�
 
 |区域 * * * *|包含默认策略 * * * *|建议 * * * *|
 |:-----|:-----|:-----|
-|**邮件流**（邮件流规则，也称为传输规则）|否|添加邮件流规则，以帮助抵御勒索软件的侵害。 请参阅本文中的 "如何使用 Exchange 传输规则跟踪或阻止由勒索软件使用的文件扩展名的电子邮件"。在此博客文章中：[如何处理勒索软件](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/)。 <br><br/> 请参阅以下主题： <br/>•抵御[勒索软件](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[Office 365 中的恶意软件和勒索软件防护](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection)<br/><br/>  创建邮件流规则，以阻止将电子邮件自动转发到外部域。 有关详细信息，请参阅[通过安全分数缓解客户端外部转发规则](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。 <br/><br/> 详细信息： [Exchange Online 中的邮件流规则（传输规则）](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**邮件流**（邮件流规则，也称为传输规则）|否|通过阻止包含宏的可执行文件类型和 Office 文件类型，添加邮件流规则，以帮助抵御勒索软件的侵害。 有关详细信息，请参阅[使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <br><br/> 请参阅以下附加主题： <br/>•抵御[勒索软件](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>• [Office 365 中的恶意软件和勒索软件防护](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>•[在 Office 365 中恢复勒索软件攻击](recover-from-ransomware.md) <br/><br/>  创建邮件流规则，以阻止将电子邮件自动转发到外部域。 有关详细信息，请参阅[通过安全分数缓解客户端外部转发规则](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。 <br/><br/> 详细信息： [Exchange Online 中的邮件流规则（传输规则）](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**启用新式验证**|否|Office 365 中的新式验证是使用多重身份验证（MFA）的先决条件。 建议使用 MFA 来保护对云资源（包括电子邮件）的访问。 <br/><br/> 请参阅以下主题：  <br/>•[在 Exchange Online 中启用或禁用新式验证](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>• [Skype For Business Online：为你的租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> 默认情况下，将为 Office 2016 客户端、SharePoint Online 和 OneDrive for business 启用新式验证。 <br/><br/> 详细信息：[新式验证对 office 2013 和 office 2016 客户端应用程序的工作方式](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>在 SharePoint 管理中心中配置租户范围内的共享策略
