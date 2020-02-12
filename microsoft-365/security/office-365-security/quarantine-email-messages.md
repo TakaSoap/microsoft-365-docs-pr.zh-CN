@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: 您可以在 Office 365 中为传入电子邮件设置隔离，在其中已被筛选为垃圾邮件、批量、网络钓鱼邮件和恶意软件的传入电子邮件可以保留下来供以后查看。
-ms.openlocfilehash: 253e1b9e03d395f67ff1290a527e035cbf8dfc3f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598669"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957427"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>在 Office 365 中隔离电子邮件
 
@@ -34,7 +34,7 @@ ms.locfileid: "41598669"
 用户和管理员都可以使用隔离邮件。 用户只能在隔离中处理自己的已筛选邮件。 管理员可以搜索和管理所有用户的隔离邮件。
 
 > [!NOTE]
-> 高可信度网络钓鱼邮件和通过邮件流规则操作隔离的邮件仅在管理员隔离区中可用。 用户可以访问自己的网络钓鱼邮件、垃圾邮件和批量邮件。 
+> 恶意软件、高可信度的网络钓鱼邮件和通过邮件流规则操作隔离的邮件仅在管理员隔离区中可用。 用户可以访问自己的网络钓鱼邮件、垃圾邮件和批量邮件。 
   
 了解有关使用隔离邮件的详细信息：
   

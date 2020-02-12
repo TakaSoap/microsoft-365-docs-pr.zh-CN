@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b37b8f0aaa225dec9e522964b59871047081be9d
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: ec659a939064d34d3e0cc078a90cd343e495ae58
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932302"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957367"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -38,7 +38,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。
 

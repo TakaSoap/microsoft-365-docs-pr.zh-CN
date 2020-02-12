@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员，你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599819"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957407"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
@@ -31,7 +31,9 @@ ms.locfileid: "41599819"
 
 目前提供三种攻击模拟：
 
-- [显示名称 spear 网络钓鱼攻击](#display-name-spear-phishing-attack)
+- [凭据收集 spear-网络钓鱼攻击](#credential-harvest-spear-phishing-attack)
+
+- [附件 spear-网络钓鱼攻击](#attachment-spear-phishing-attack)
 
 - [密码喷涂攻击](#password-spray-attack)
 
@@ -49,13 +51,15 @@ ms.locfileid: "41599819"
 
 - 您是 Office 365 全局管理员或安全管理员
 
+- 网络钓鱼活动将在30天内收集和处理事件，历史宣传活动数据将在市场活动启动后最长90天可用。
+
 - [多因素身份验证/条件访问](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)已打开，至少适用于将使用攻击模拟器的 Office 365 全局管理员帐户和安全管理员。 （理想情况下，为组织中的所有用户启用多重身份验证/条件访问。）
 
 - 您的组织[具有 Office 365 高级威胁防护计划 2](office-365-atp.md)，在&amp;安全合规性中心中显示攻击模拟器（转到**威胁管理** \> **攻击模拟器**）
 
     ![威胁管理-攻击模拟器](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>显示名称 spear 网络钓鱼攻击
+## <a name="credential-harvest-spear-phishing-attack"></a>凭据收集 spear-网络钓鱼攻击
 
 网络钓鱼是一种通用术语，用于作为社会工程手段攻击的广泛攻击组 classed。 此攻击主要针对 spear 网络钓鱼，这是一种更有针对性的攻击，面向一组特定的个人或组织。 通常，自定义攻击会执行某些侦测，并使用将在收件人中生成信任的显示名称，例如看起来像来自组织中的执行者的电子邮件。
 
@@ -103,11 +107,25 @@ ms.locfileid: "41599819"
 
 11. 选择 **"下一步"，** 然后单击 "**完成**" 以启动攻击。 将 spear 网络钓鱼电子邮件传递到目标收件人的邮箱。
 
+## <a name="attachment-spear-phishing-attack"></a>附件 spear-网络钓鱼攻击
+
+网络钓鱼是一种通用术语，用于作为社会工程手段攻击的广泛攻击组 classed。 此攻击重点关注附件 spear 网络钓鱼，这是一种更有针对性的攻击，面向一组特定的个人或组织。 通常，自定义攻击会执行某些侦测，并使用将在收件人中生成信任的显示名称，例如看起来像来自组织中的执行者的电子邮件。
+
+此攻击的重点在于通过更改显示名称和源地址，使您能够操作显示的发件人的来源，但这次是，我们提供了尝试获取 t 的附件，而不是提供用于尝试和引诱最终用户单击的 URL。最终用户打开。 
+
+### <a name="to-simulate-a-attachment-spear-phishing-attack"></a>模拟附件 spear 网络钓鱼攻击
+
+1. 按照上面的步骤操作，让此时间在登陆页面上单击 "**附件攻击**"。
+
+2. 在完成向导的过程中，您将看到两个要配置的选项。 **附件类型**，我们支持两种附件类型： **.docx**或 **.pdf**。 **附件名称**，请使用此字段为市场活动创建有意义的附件名称。
+
 ## <a name="password-spray-attack"></a>密码喷涂攻击
 
 对组织的密码喷涂攻击通常在损坏的主角成功从租户获取有效用户列表之后使用。 错误参与者知道用户使用的常见密码。 这是一种广泛使用的攻击，因为它是运行的廉价攻击，并且比强力方法更难检测。
 
 此攻击的重点是让您可以为用户的大型目标群体指定一个公用密码。
+
+**重要说明**针对已具有多重身份验证的最终用户帐户运行密码喷涂攻击，将导致在报告中对这些帐户执行不成功的尝试。 这是因为多重身份验证是主 mechanims 中的一个，可帮助防止出现密码喷涂攻击，因此应该这样做。
 
 ### <a name="to-simulate-a-password-spray-attack"></a>模拟密码喷涂攻击
 
@@ -125,6 +143,8 @@ ms.locfileid: "41599819"
 
 对组织的强力密码攻击通常在已损坏的主角成功从租户获取关键用户列表之后使用。 此攻击主要针对单个用户的帐户尝试使用一组密码。
 
+**重要说明**对已经具有多重身份验证的最终用户帐户运行强力密码攻击将导致对报告中这些帐户的尝试失败。 这是因为多重身份验证是主 mechanims 中的一个，可帮助防止强力密码攻击，因此应该这样做。
+
 ### <a name="to-simulate-a-brute-force-password-attack"></a>模拟强力密码攻击
 
 1. 在 "[安全&amp;合规性中心](https://protection.office.com)" 中，选择 "**威胁管理** \> **攻击模拟器**"。
@@ -137,19 +157,7 @@ ms.locfileid: "41599819"
 
 5. 选择 "**完成**" 以启动攻击。
 
-## <a name="new-features-in-attack-simulator"></a>攻击模拟器中的新功能
 
-最近已将新功能添加到攻击模拟器中。 具体包括：
-
-- 高级报告功能。 能够查看最快（或最慢）时间打开攻击模拟电子邮件的数据，以及单击邮件中的链接的速度最快（或最慢）的时间，以及更多的可视化效果。
-
-- 电子邮件模板编辑器。 创建可重用的自定义电子邮件模板的功能，可用于未来的攻击模拟。
-
-- CSV 收件人导入。 能够使用 .csv 文件导入目标收件人列表，而不是使用通讯簿选取器。
-
-即将推出更多新功能来攻击模拟器。 具体包括：
-
-- 附件有效网络钓鱼模拟。 可以使用附件作为网络钓鱼模拟的有效负载来代替 URL。
 
 请访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)以查看正在开发的内容、正在滚动的内容以及已启动的内容。
 

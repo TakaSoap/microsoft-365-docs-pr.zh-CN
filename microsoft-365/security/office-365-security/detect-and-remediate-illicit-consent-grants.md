@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599449"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957147"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
 
@@ -39,11 +39,13 @@ ms.locfileid: "41599449"
 
 1. 打开 Office 365 租户中的 "**安全与合规中心**"。
 
-2. 导航到 "**搜索 & 调查**" 节点，然后选择 "**审核日志**搜索"。
+2. 导航到 "**搜索**"，然后选择 "**审核日志搜索**"。
 
-3. 创建搜索（所有活动和所有用户）并筛选结果以同意应用程序，并添加 OAuth2PermissionGrant。
+3. 搜索（所有活动和所有用户）并输入开始日期和结束日期（如果需要），然后单击 "**搜索**"。 
 
-4. 检查扩展属性，并查看 IsAdminContent 是否设置为 True。
+4. 筛选结果以同意应用程序，并添加 OAuth2PermissionGrant。
+
+5. 单击结果以查看活动的详细信息。 若要获取活动的详细信息，请单击 "**详细信息**"。 查看 "IsAdminContent" 是否设置为 True。
 
 > [!NOTE]
 > •在事件发生后，可能需要长达30分钟或最长24小时才能在搜索结果中显示相应的审核日志条目。 <br/><br/> •审核日志中保留和搜索的审核记录的时间长度取决于您的 Office 365 订阅，以及分配给特定用户的许可证的类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。

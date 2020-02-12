@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解有关威胁跟踪程序的信息，包括新的重要跟踪程序，以帮助您的组织保持安全方面的顾虑。
-ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598179"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957357"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
@@ -55,7 +55,7 @@ ms.locfileid: "41598179"
   
 ### <a name="trending-trackers"></a>趋势跟踪跟踪
 
-趋势跟踪程序（以前称为市场活动）突出显示过去一周内组织的电子邮件中未看到的新威胁。
+趋势跟踪程序（以前称为市场活动）重点介绍在过去一周内组织的电子邮件中收到的新威胁。
   
 ![趋势恶意软件市场小部件的示例](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   

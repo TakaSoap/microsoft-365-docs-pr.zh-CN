@@ -14,24 +14,24 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要确保收到来自特定发件人的邮件，因为您信任这些邮件及其邮件，则可以在垃圾邮件筛选器策略中调整您的允许列表。
-ms.openlocfilehash: 4ac97192327cd9ced853ce63537375931f3f0ec3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599529"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957257"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 
 如果您想要确保用户收到来自特定发件人或发件人的电子邮件，因为您信任这些发件人或发件人的邮件，则可以从中选择多个可用方法。 这些选项包括 Exchange 邮件流规则（也称为传输规则）、Outlook 安全发件人、IP 允许列表、反垃圾邮件发件人/域允许列表。
 
 > [!IMPORTANT]
-> 虽然可以使用组织允许列表来解决误报，但应将其视为临时解决方案，并尽可能避免。 建议不要通过使用 "允许列表" 来管理误报，因为这可能会在无意中将组织打开为欺骗、模拟和其他攻击。 如果要使用允许列表实现此目的，则在准备就绪时，您将需要警惕并保留将[垃圾邮件、非垃圾邮件和网络钓鱼邮件提交给 Microsoft 进行分析](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)的文章。
+> 虽然可以使用组织允许列表来解决误报，但应将其视为临时解决方案，并尽可能避免。 建议不要通过使用 "允许列表" 来管理误报，因为这可能会在无意中将组织打开为欺骗、模拟和其他攻击。 如果要使用允许列表实现此目的，则在准备就绪时，您将需要警惕并保留将[垃圾邮件、非垃圾邮件和网络钓鱼邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)的文章。
 
 配置安全发件人列表的建议方法是使用邮件流规则，因为这会提供最大限度的灵活性来确保只允许正确的邮件。 *反垃圾邮件策略电子邮件地址*和*基于域的允许列表*不像*基于 IP 地址的列表*那样安全，因为域很容易被欺骗。 但是，基于反垃圾邮件策略的允许列表还显示了风险，因为它们将允许通过该 IP 发送的任何域绕过垃圾邮件筛选。 请务必小心，并谨慎监视所做的*任何*异常。
 
 > [!IMPORTANT]
-> 有关如何创建**被阻止的发件人列表**的信息在[这里](create-block-sender-lists-in-office-365.md)。
+> •有关如何创建**阻止的发件人列表**的信息，请单击[此处](create-block-sender-lists-in-office-365.md)。 <br/><br/> •若要允许发件人域发送未经身份验证的电子邮件（绕过反欺骗保护），但不绕过反垃圾邮件和反恶意软件检查，可以将其添加到[AllowedToSpoof 安全发件人列表](walkthrough-spoof-intelligence-insight.md)。
 
 ## <a name="options-from-most-to-least-recommended"></a>从最多到最小建议的选项
 
@@ -46,7 +46,7 @@ ms.locfileid: "41599529"
 
 若要确保仅允许组织中的合法邮件，条件应为以下项之一：
 
-- 使用发送域的发件人身份验证状态。 这是通过检查身份验证结果标头来确保它包含 "dmarc = pass" 或 "dmarc = bestguesspass" 来实现的。 这可确保发送域已通过身份验证，且未被欺骗。 单击以了解有关[SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、 [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)和[DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)电子邮件身份验证的详细信息。
+- 使用发送域的发件人身份验证状态。 这是通过检查身份验证结果标头来确保它包含 "dmarc = pass" 或 "dmarc = bestguesspass" 来实现的。 这可确保发送域已通过身份验证，且未被欺骗。 单击以了解有关[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和[DMARC](use-dmarc-to-validate-email.md)电子邮件身份验证的详细信息。
 
 - 或者，如果发送域没有身份验证，请使用发送域*和*发送 IP （或 IP 范围）。 确保尽可能地*限制*您的安全，目标是尽可能安全地执行此操作。 *不*建议使用大于/24 的 IP 范围。 避免添加属于消费者服务或共享基础结构的 IP 地址范围。
 
@@ -87,7 +87,7 @@ ms.locfileid: "41599529"
 
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>使用反垃圾邮件策略发件人/域允许列表
 
-最不理想的选择是通过发件人/域进行授权。 应*尽可能*避免此选项，因为它会完全绕过垃圾邮件/欺骗/网络钓鱼保护，并且不会评估发件人身份验证。 此方法可提高从错误的参与者接收邮件的风险，并且仅在测试时暂时和仅进行建议。 可在[配置垃圾邮件筛选器策略](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)文档中找到详细步骤。
+最不理想的选择是通过发件人/域进行授权。 应*尽可能*避免此选项，因为它会完全绕过垃圾邮件/欺骗/网络钓鱼保护，并且不会评估发件人身份验证。 此方法可提高从错误的参与者接收邮件的风险，并且仅在测试时暂时和仅进行建议。 详细步骤可在 "[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)" 主题中找到。
 
 这些列表的最大限制约为1000个条目;尽管只能将30个条目输入到门户中。 必须使用 PowerShell 添加30个以上的条目。
 

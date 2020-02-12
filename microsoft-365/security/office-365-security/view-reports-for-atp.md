@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/10/2020
+ms.date: 02/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
-ms.openlocfilehash: a1db932dda8b49d2d17805e605e11bc654c0e318
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a7ee065447c7351f02d1ff88239b1c41b7e874b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598069"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957377"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -143,6 +143,7 @@ ATP 报告包括以下内容：
 - 对于安全&amp;合规中心，您必须具有以下分配的角色之一：
     - 组织管理
     - 安全管理员（可在 Azure Active Directory 管理中心中分配（[https://aad.portal.azure.com](https://aad.portal.azure.com)））
+    - 安全操作员（可在 Azure Active Directory 管理中心中分配（[https://aad.portal.azure.com](https://aad.portal.azure.com)））
     - 安全读取者
 
 - 对于 Exchange Online，必须在 Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)）或 PowerShell cmdlet 中分配以下角色之一（请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）：
@@ -168,5 +169,7 @@ ATP 报告包括以下内容：
 [在安全&amp;合规中心中创建报表的日程安排](create-a-schedule-for-a-report.md)
   
 [在安全&amp;合规中心中设置和下载自定义报告](set-up-and-download-a-custom-report.md)
+
+[角色权限（Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
   
 

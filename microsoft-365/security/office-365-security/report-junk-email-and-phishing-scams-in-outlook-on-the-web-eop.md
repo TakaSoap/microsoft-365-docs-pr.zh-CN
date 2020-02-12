@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook 网页上的用户可以使用内置的电子邮件报告选项报告垃圾邮件和网络钓鱼诈骗。 如果一封电子邮件被错误地识别为垃圾邮件，您还可以让 Microsoft 了解这一情况。
-ms.openlocfilehash: e433a91d1152e1e87aa9f45b0ccfe94e8b39f0f9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598589"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957417"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>在 Outlook 网页版中报告垃圾电子邮件和钓鱼行为
 
@@ -38,7 +38,7 @@ ms.locfileid: "41598589"
    > [!NOTE]
    > 或者，右键单击邮件，显示一个菜单，然后单击“标记为垃圾邮件”****。
 
-   您可以从 **"收件箱**"、"**杂乱**邮件" 或 "**已删除邮件**" 文件夹报告垃圾邮件。
+   您可以从 **"收件箱"** 或 "**已删除邮件**" 文件夹报告垃圾邮件。
 
 2. 此时会打开一个对话框，询问是否要将垃圾邮件副本发送到 Microsoft 进行分析。 单击“报告”**** 将邮件发送至 Microsoft 垃圾邮件分析团队。 （可选）如果希望在不提示的情况下自动向 Microsoft 提交将来的垃圾邮件，请选中 "**不再显示此消息**" 复选框。
 
@@ -57,7 +57,7 @@ ms.locfileid: "41598589"
 
    或者，右键单击邮件，显示一个菜单，然后单击“标记为钓鱼邮件”****。
 
-   您可以从 **"收件箱**"、"**杂乱**邮件" 或 "**已删除邮件**" 文件夹中报告钓鱼诈骗邮件。
+   您可以从 **"收件箱" 或 "** **已删除邮件**" 文件夹中报告钓鱼诈骗邮件。
 
 2. 对于某些组织，此时会打开一个对话框，询问是否要将欺诈电子邮件副本发送到 Microsoft 进行分析。 单击“报告”**** 将邮件发送至 Microsoft 垃圾邮件分析团队。 此报告选项当前可供有限数量的组织使用；可能不会要求您向 Microsoft 报告欺诈邮件。
 
