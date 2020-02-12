@@ -15,30 +15,30 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: 0dd8b54d2c8153b4200336d8c0e439f278f7ae77
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598129"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957247"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
 > [!NOTE]
-> 这些更新现在即将推出，可能对所有用户不可用。 Enterprise outlook.com users 支持此功能。 它目前对消费者 outlook.com 不可用。
+> 这些更新现在即将推出，并且可能对所有用户不可用。 Enterprise Outlook.com and Enterprise Outlook Win32 desktop users 支持此功能。 它目前对消费者 Office 365 用户不可用。
 
-若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
+若要防止仿冒邮件到达您的邮箱，Office 365 将验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
 
 > [!IMPORTANT]
-> 将邮件标记为 "仿冒骗局" 时，Outlook.com 和 web 上的 Outlook 将在页面顶部显示警告，但仍可打开邮件中的任何链接。
+> 将邮件标记为 "仿冒欺诈" 时，Outlook 会在页面顶部显示一条警告，但仍可打开邮件中的任何链接。
 
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>如何在收件箱中识别可疑邮件？
 
-当邮件的发件人无法识别或其身份与 "发件人" 地址中所示的不同时，web 上的 Outlook.com 和 Outlook 显示指示器。
+当邮件的发件人无法识别或其标识与 "发件人" 地址中显示的内容不同时，Outlook 会显示指示器。
 
 ## <a name="you-see-a--in-the-sender-image"></a>您将在发件人图像中看到 "？"
 
-当 Outlook.com 和 Outlook 网页上的 Outlook 无法使用电子邮件身份验证技术验证发件人的身份时，它们将在发件人照片中显示 "？"。
+如果 Office 365 无法使用电子邮件身份验证技术验证发件人的身份，则会在发件人图像中显示 "？"。
 
 ![邮件未通过验证](../media/message-did-not-pass-verification.jpg)
 
@@ -58,25 +58,29 @@ ms.locfileid: "41598129"
 
   - 通过 Exchange Online PowerShell 中的**将 get-phishfilterpolicy** cmdlet 添加域对。 有关详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)和[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md)。
 
-此外，如果邮件通过邮件流规则（也称为传输规则）、安全域列表（反垃圾邮件策略）或安全发件人列表传递到收件箱，则不会应用未验证的发件人处理。
+此外，如果邮件通过邮件流规则（也称为传输规则）或安全域列表（反垃圾邮件策略）传递到收件箱，则不会应用未验证的发件人处理。
+
+## <a name="how-to-manage-the-via-tag"></a>如何管理 "via" 标记 
+
+如果你是 Office 365 客户，则可以通过 Office 365 安全性 & 合规性中心管理此功能，这与管理未验证的发件人处理的方法相同。 如果将发件人添加到欺骗智能欺骗允许列表中，将不会应用 "via" 处理。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Outlook.com 和 Outlook 在 web 上使用哪些条件来添加 '？ ' 和 ' via ' 属性？
+### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>Outlook.com 和 Outlook Win32 desktop 用于添加 "？" 和 "via" 属性的条件是什么？
 
 对于发件人图像中的 "？"： Outlook.com 要求邮件传递 SPF 或 DKIM 身份验证，并接收 dmarc pass 或来自 Office 365 欺骗智能的复合身份验证传递。 有关详细信息，请参阅[Set UP SPF In office 365，以帮助防止哄骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)和[使用 DKIM 验证从您的自定义域在 Office 365 中发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。
 
 对于 via 标记：如果 "发件人" 地址中的域不同于 DKIM 签名中的域，或者 SMTP 邮件来自，则 Outlook.com 将在这两个字段之一中显示域（首选 DKIM 签名）。
 
-### <a name="how-do-i-remove-the-"></a>如何删除 "？"
+### <a name="how-do-i-remove-the--without-utilizing-the-spoof-intelligence-spoof-allow-list"></a>如何在不利用欺骗智能欺骗允许列表的情况下删除 '？ '？
 
 对于发件人图像中的 '？ '，作为发件人，应使用 SPF 或 DKIM 对邮件进行身份验证。
 
 对于 via 标记：作为发件人，应确保 "DKIM" 签名中的域或 "发件人" 中的 "SMTP 邮件" 与 "发件人" 地址中的域相同，或者是的子域。
 
-### <a name="does-outlookcom-and-outlook-on-the-web-show-this-for-every-message-that-doesnt-pass-authentication"></a>Outlook.com 和 Outlook 网页版是否对未通过身份验证的每封邮件显示此功能？
+### <a name="do-outlookcom-and-outlook-win32-desktop-show-this-for-every-message-that-doesnt-pass-authentication"></a>是否对不通过身份验证的每封邮件显示此 Outlook.com 和 Outlook Win32 桌面？
 
-不一定。 Outlook.com 和 web 上的 Outlook 在邮件中的其他属性可能会对发件人进行身份验证。
+不一定。 Office 365 在邮件中可能有其他属性来对发件人进行身份验证。
 
 ## <a name="related-topics"></a>相关主题
 
