@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 组织中的信息工作人员每天会处理大量的敏感信息。 "文档指纹"可识别贵组织中使用的标准表单，以便于您保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建一个概念。
-ms.openlocfilehash: 6aea349495aa31eba8c9b57abffb92131d00864c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
+ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595197"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41892025"
 ---
 # <a name="document-fingerprinting"></a>文档指纹
 
@@ -25,25 +25,25 @@ ms.locfileid: "41595197"
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>文档指纹的基本方案
 
-文档指纹是一项数据丢失防护（DLP）功能，可将标准窗体转换为敏感信息类型，您可以在 DLP 策略的规则中使用。 例如，您可以基于空白父模板来创建文档指纹，然后创建 DLP 策略，用于检测和阻止所有包含敏感内容的传出父模板。 （可选）您可以设置[策略提示](use-notifications-and-policy-tips.md)以通知发件人他们可能发送敏感信息，并且发件人应验证收件人是否有资格接收专利。 此过程与组织中使用的任何基于文本的表单一起使用。 您可以上载的其他表单示例包括： 
+文档指纹是一项数据丢失防护（DLP）功能，可将标准窗体转换为敏感信息类型，您可以在 DLP 策略的规则中使用。 例如，您可以基于空白父模板来创建文档指纹，然后创建 DLP 策略，用于检测和阻止所有包含敏感内容的传出父模板。 （可选）您可以设置[策略提示](use-notifications-and-policy-tips.md)以通知发件人他们可能发送敏感信息，并且发件人应验证收件人是否有资格接收专利。 此过程与组织中使用的任何基于文本的表单一起使用。 您可以上载的其他表单示例包括：
   
 - 政府表单
-    
-- 符合《健康保险可携性与责任法案》 (HIPAA) 的表单
-    
+- 符合《健康保险可携性与责任法案》 (HIPAA) 的表单  
 - 人力资源部的员工信息表单
-    
 - 组织专门创建的自定义表单
-    
+
 理想情况下，贵组织已经创建使用特定表单传输敏感信息的业务实践。 在上载要转换为文档指纹的空表单并设置相应的策略后，DLP 将检测出出出出出站邮件中与该指纹匹配的任何文档。
-  
+
 ## <a name="how-document-fingerprinting-works"></a>文档指纹的工作原理
 
 您可能已经猜到，文档并非真的有指纹，只是"指纹"这个词可以表明其功能。 人的指纹各不相同，同理，文档的单词模式也各不相同。 上载文件时，DLP 将标识文档中的唯一单词模式，根据该模式创建文档指纹，并使用该文档指纹检测包含相同模式的出站文档。 这也是为什么上载表单或模板可以创建最有效的文档指纹的原因。 填写表单的每个人使用相同的单词集，然后在文档中添加自己的词句。 只要出站文档不受密码保护，并且包含原始表单中的所有文本，DLP 就可以确定文档是否与文档指纹相匹配。
-  
+
+> [!IMPORTANT]
+> 现在，DLP 可以仅将文档指纹用作 Exchange online 中的检测方法。
+
 下列示例说明了当您基于父模板创建文档指纹时发生了什么，但您可以使用任何表单作为基础来创建文档指纹。
   
-**与父模板的文档指纹匹配的父文档示例**
+### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>与父模板的文档指纹匹配的父文档示例
 
 ![Document-Fingerprinting-diagram](media/Document-Fingerprinting-diagram.png)
   
@@ -60,11 +60,9 @@ ms.locfileid: "41595197"
 在下列情况下，文档指纹不会检测敏感信息：
   
 - 密码保护的文件
-    
 - 仅包含图片的文件
-    
 - 不包含用于创建文档指纹的原始表单中所有文本的文档
-    
+
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>使用 PowerShell 创建基于文档指纹的分类规则包
 
 请注意，当前可以在安全&amp;合规中心中使用 PowerShell 创建文档指纹。 若要进行连接，请参阅[connect To Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。

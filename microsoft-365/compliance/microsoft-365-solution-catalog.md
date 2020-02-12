@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 解决方案目录概述
+title: Microsoft 365 解决方案目录
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,18 +11,16 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 57591d385ce05454151b9ed28c5d764096d9e95b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
+ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602739"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41891975"
 ---
-# <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Microsoft 365 解决方案目录概述（预览）
+# <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
-## <a name="overview"></a>概述
-
-您是否正在寻找一种在 Microsoft 365 中快速开始使用合规性任务的方法？ 查看新的[Microsoft 365 解决方案目录](https://compliance.microsoft.com/solutioncatalog)，以发现、学习并快速开始使用合规性和风险管理解决方案。
+您是否正在寻找一种在 Microsoft 365 中快速开始使用合规性任务的方法？ 查看[Microsoft 365 解决方案目录](https://compliance.microsoft.com/solutioncatalog)，以发现、学习并快速开始使用合规性和风险管理解决方案。
 
 Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮助您管理端到端的符合性方案。 解决方案的功能和工具可能包括策略、警报、报告等的组合。
 
@@ -79,19 +77,17 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 ## <a name="how-do-i-get-this"></a>如何获取此功能？
 
-- 如果你还没有新的 Microsoft 365 解决方案目录，你将很快拥有。 我们正在为增量部署中的所有 Microsoft 365 订阅启用解决方案目录。
-
-- 若要访问 Microsoft 365 解决方案目录，请转[https://compliance.microsoft.com](https://compliance.microsoft.com)到并以全局管理员、合规性管理员或合规性数据管理员身份登录。 在屏幕左侧的导航窗格中选择 "**目录**"，以打开 "目录主页"。
+若要访问 Microsoft 365 解决方案目录，请转[https://compliance.microsoft.com](https://compliance.microsoft.com)到并以全局管理员、合规性管理员或合规性数据管理员身份登录。 在屏幕左侧的导航窗格中选择 "**目录**"，以打开 "目录主页"。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**为什么我还看不到新的 Microsoft 365 解决方案目录？**
+**为什么我看不到 Microsoft 365 解决方案目录？**
 
-首先，请确保您具有适当的许可证和权限。 然后，以全局管理员[https://compliance.microsoft.com](https://compliance.microsoft.com) 、合规性管理员或合规性数据管理员身份登录。 如果仍未在左侧导航窗格中看到新的解决方案目录，你很快就会有。
+首先，请确保您具有适当的许可证和权限。 然后，以全局管理员[https://compliance.microsoft.com](https://compliance.microsoft.com) 、合规性管理员或合规性数据管理员身份登录。
 
 **"解决方案目录" 页上列出的某些合规性功能在 Microsoft 365 合规性中心中不可用。我该怎么办？**
 
-我们仍在向 Microsoft 365 合规性中心和解决方案目录中添加功能。 如果在导航区域中找不到特定的解决方案，则当解决方案在订阅中可用时，它将可供访问。
+我们一直在努力将新功能添加到 Microsoft 365 合规性中心和解决方案目录中。 如果在导航区域中找不到特定的解决方案，则当解决方案在订阅中可用时，它将可供访问。
 
 如果你正在寻找现有的合规性解决方案，但它在 Microsoft 365 合规性中心中不可用，则可以转到[https://protection.office.com](https://protection.office.com)，随时访问现有 Office 365 安全性和合规性中心中的解决方案。 或者，可以单击 Microsoft 365 合规性中心左侧导航栏中的 "**更多资源**" 选项卡，然后选择 "Office 365 安全性和合规性中心卡"。  
 
@@ -99,12 +95,12 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 - **查看 Microsoft 合规性分数**，这是一种个性化的基于风险的分数，可帮助您了解组织对主要标准和法规的遵从性状态。 它提供了可采取的建议措施，以增强您的总体合规性状况，并提供工作流功能以帮助您有效地执行这些操作。 若要了解详细信息，请参阅[合规性分数（预览）](compliance-score.md)。
 
-- **配置内幕风险管理策略**以帮助最大限度地减少内部风险，并使您能够检测、调查并对组织中的风险活动采取措施。 请参阅[内幕风险管理](insider-risk-management.md)。
+- **配置内幕风险管理策略**以帮助最大限度地减少内部风险，并使您能够检测、调查并对组织中的风险活动采取措施。 请参阅[内幕风险管理（预览）](insider-risk-management.md)。
+
+- **了解并创建通信合规性策略**，以快速确定和修正公司的行为准则策略违规。 请参阅[通信合规性](communication-compliance.md)。
 
 - **Microsoft 信息保护**，了解 microsoft 365 解决方案如何帮助您在任何生活或旅行时发现、分类和保护敏感信息。
     - **了解并设置 Microsoft 云应用安全性**。 请参阅[快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
     - **分类器入门**。 对内容进行分类，然后对其进行标记，以便可以对其进行保护和正确处理，这是信息保护训练科目的起始位置。 请参阅[trainable 分类](classifier-getting-started-with.md)器入门。
-
-- **了解并创建通信合规性策略**，以快速确定和修正公司的行为准则策略违规。 请参阅[Microsoft 365 中的通信合规性](communication-compliance.md)。
 
 - **请经常访问 Microsoft 365 解决方案目录**，并确保查看新的解决方案，以帮助满足合规性需求。 登录[https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后选择左侧导航窗格中的 "**目录**"。

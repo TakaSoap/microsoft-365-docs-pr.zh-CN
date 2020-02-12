@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 合规性中心概述
+title: Microsoft 365 合规中心
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 合规性中心，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62c70fc4e7ea8a491db23a4fc9695b2b11b283ac
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602779"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916927"
 ---
-# <a name="overview-of-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心概述
-
-## <a name="overview"></a>概述
+# <a name="microsoft-365-compliance-center"></a>Microsoft 365 合规中心
 
 如果你对组织的合规性状况感兴趣，你将喜欢[Microsoft 365 合规性中心](https://compliance.microsoft.com)。 Microsoft 365 合规性中心可轻松访问您需要管理的数据和工具，以满足您组织的合规性需求。
 
@@ -60,7 +58,7 @@ ms.locfileid: "41602779"
 
 ## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>轻松导航到更符合性特性和功能
 
-除了主页上的卡片中的链接，您还可以在屏幕左侧看到导航窗格，使您能够轻松访问您的[通知](../security/office-365-security/alerts.md)、[报告](reports-in-security-and-compliance.md)、[策略](alert-policies.md)、合规性解决方案等。
+除了主页上的卡片中的链接，您还可以在屏幕左侧看到导航窗格，使您能够轻松访问您的[通知](../security/office-365-security/alerts.md)、[报告](reports-in-security-and-compliance.md)、[策略](alert-policies.md)、合规性解决方案等。 若要添加或删除自定义导航窗格的选项，请使用导航窗格中的**自定义导航**控件。 这将打开 "**自定义导航窗格**" 设置，以便您可以配置在导航窗格中显示哪些项目。
 
 |  |  |
 |---------|---------|
