@@ -378,6 +378,8 @@
               href: ./office-365-security/office-365-air.md
             - name: 查找和调查投递的恶意电子邮件
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Office 365 ATP 中的安全文档
+              href: ./office-365-security/safe-docs.md
             - name: 威胁资源管理器（和实时检测）
               href: ./office-365-security/threat-explorer.md
               items:
