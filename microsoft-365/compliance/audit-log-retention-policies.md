@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 审核日志保留策略是 Microsoft 365 中的新高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: 99561fbb71a9d919a6275b79370394e85ec25c39
-ms.sourcegitcommit: 7f2a9927129f6c8a9c51f975ccf7fb5b40fbb8cd
+description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
+ms.openlocfilehash: 32bb9510d789b56bc48b133dee4abd948009e3a9
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "41867881"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960248"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
-可在安全与合规中心创建和管理审核日志保留策略。 审核日志保留策略是 Microsoft 365 中的新高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。 可将审核日志保留长达一年时间。 可以根据以下标准创建策略：
+可在安全与合规中心创建和管理审核日志保留策略。 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。 可将审核日志保留长达一年时间。 可以根据以下标准创建策略：
 
 - 一个或多个 Microsoft 365 服务中的所有活动
 
