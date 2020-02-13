@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: db05b598fb0dab3cac9420b33b0bd4e12b6b7e9a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602789"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957187"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>将旧式电子数据展示搜索和保留迁移到 Microsoft 365 合规性中心
 
@@ -28,7 +28,7 @@ Microsoft 365 合规性中心提供了改进的电子数据展示使用体验，
 > [!NOTE]
 > 由于存在许多不同的方案，本文提供了在 Microsoft 365 合规性中心中将搜索和保留转换为核心电子数据展示事例的一般指导。 不总是需要使用电子数据展示事例，而是通过允许您分配权限来控制对组织中的电子数据展示事例的访问权限，从而添加额外的安全层。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Office 365 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本文中所述的 PowerShell 命令。 此外，您还必须是 Exchange 管理中心中 "发现管理" 角色组的成员。
 
@@ -41,7 +41,7 @@ Microsoft 365 合规性中心提供了改进的电子数据展示使用体验，
 ```powershell
 $UserCredential = Get-Credential
 $sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session -AllowClobber -DisableNameChecking
+Import-PSSession $sccSession -DisableNameChecking
 $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
@@ -87,23 +87,19 @@ $search | FL
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
 
-![运行 Get-compliancecase 命令的示例](media/MigrateLegacyeDiscovery3.png)
-
 ## <a name="step-5-create-the-ediscovery-hold"></a>步骤5：创建电子数据展示保留
 
 创建案例后，可以创建保留并将其与在上一步骤中创建的事例相关联。 务必要记住，必须创建事例保留策略和事例保留规则。 如果创建事例保留策略后未创建事例保留规则，则不会创建电子数据展示保留，并且不会将任何内容置于保留状态。
 
-运行以下命令以重新创建要迁移的电子数据展示保留。 这些示例使用要迁移的步骤3中的就地保留中的属性。
+运行以下命令以重新创建要迁移的电子数据展示保留。 这些示例使用要迁移的步骤3中的就地保留中的属性。 第一个命令创建新的事例保留策略并将属性保存到变量中。 第二个命令创建对应的事例保留规则。
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
 ```
 
 ```powershell
-$rule = New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
+New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
-
-![使用 NewCaseHoldPolicy 和 NewCaseHoldRule cmdlet 的示例](media/MigrateLegacyeDiscovery4.png)
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>步骤6：验证电子数据展示保留
 
@@ -145,7 +141,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 如果您迁移就地电子数据展示搜索但不将其与电子数据展示事例关联，则它将列在 Microsoft 365 合规性中心的内容搜索页中。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 有关在 Exchange 管理中心中就地电子数据展示 & 保留的详细信息，请参阅：
   

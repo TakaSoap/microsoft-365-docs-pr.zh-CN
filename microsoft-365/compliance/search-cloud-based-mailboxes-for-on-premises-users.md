@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据（称为1xN 聊天）。
-ms.openlocfilehash: d59af2e39d91bf107567016428102a5aba9cb724
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597569"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957137"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
@@ -41,7 +41,7 @@ ms.locfileid: "41597569"
 > [!NOTE]
 > 团队频道对话始终存储在与团队相关联的基于云的邮箱中。 这意味着您可以使用内容搜索来搜索频道对话，而无需将其作为支持请求的文件。 有关搜索团队频道对话的详细信息，请参阅[搜索 Microsoft 团队和 Office 365 组](content-search.md#searching-microsoft-teams-and-office-365-groups)。
   
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 如果启用了 Microsoft 团队的用户具有本地邮箱，并且其用户帐户/标识已同步到云，Microsoft 将创建一个基于云的邮箱来存储1xN 团队聊天数据。 在将团队聊天数据存储在基于云的邮箱中之后，将为搜索编制索引。 这样，您就可以使用内容搜索（和与电子数据展示事例关联的搜索）来搜索、预览和导出本地用户的团队聊天数据。 您还可以使用** \*** Security & 合规性中心 PowerShell 中的 new-compliancesearch cmdlet 搜索本地用户的团队聊天数据。 
   
@@ -109,7 +109,7 @@ ms.locfileid: "41597569"
 
 您可以使用 Security & 合规性中心 PowerShell 中的**new-compliancesearch**和**new-compliancesearch** cmdlet 在基于云的邮箱中搜索本地用户。 如前所述，您无需提交支持请求即可使用 PowerShell 搜索本地用户的团队聊天数据。 
   
-1. [连接到安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 运行以下 PowerShell 命令，以创建搜索本地用户的基于云的邮箱的内容搜索。
 
@@ -137,9 +137,8 @@ ms.locfileid: "41597569"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，您只能在基于云的邮箱中搜索、预览和导出本地用户的内容。 不支持在与电子数据展示案例关联的保留中为本地用户放置基于云的邮箱，或将其分配给 Office 365 保留策略。 
+- 目前，您可以在基于云的邮箱中搜索、预览和导出本地用户的内容。 您还可以将基于云的邮箱放置在与电子数据展示事例相关联的保留中，并将团队聊天室或频道邮件的保留策略应用于本地用户的基于云的邮箱。 但目前，不能将其他内容位置（如 Exchange 邮箱和 SharePoint 网站）的保留策略应用于本地用户的基于云的邮箱。 
 
-- 电子数据展示保留的内容位置选取器显示本地用户，并允许您选择它们。 但是，如前面所述，保留将不会应用于内部部署用户。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -153,11 +152,11 @@ ms.locfileid: "41597569"
   
  **如果将用户的内部部署邮箱迁移到云，是否有丢失团队聊天数据的风险？**
   
-不是。 当您将本地用户的主邮箱迁移到云时，该用户的团队聊天数据将迁移到其新的基于云的主邮箱。
+否。 当您将本地用户的主邮箱迁移到云时，该用户的团队聊天数据将迁移到其新的基于云的主邮箱。
   
  **我可以将电子数据展示保留或 Office 365 保留策略应用于本地用户吗？**
   
-不是。
+是。 对于本地用户，您可以将电子数据展示保留或保留策略应用于团队聊天和频道邮件到基于云的邮箱。
   
  **在我的组织提交请求以启用此功能之前，内容搜索是否可以查找本地用户的较早的团队聊天？**
   
@@ -165,4 +164,4 @@ Microsoft 开始在2018年1月31日存储本地用户的团队聊天数据。 �
 
  **本地用户是否需要许可证才能在基于云的邮箱中存储团队聊天数据？**
   
-可以。 若要将本地用户的团队对话数据存储在基于云的邮箱中，必须在 Office 365 （或 Microsoft 365）中为该用户分配 Microsoft 团队许可证和 Exchange Online 计划许可证。
+是。 若要将本地用户的团队对话数据存储在基于云的邮箱中，必须在 Office 365 （或 Microsoft 365）中为该用户分配 Microsoft 团队许可证和 Exchange Online 计划许可证。

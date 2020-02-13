@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f829c6735bc8326a775a9d259da8b64aaa8b02ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600459"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960328"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>在高级电子数据展示中管理作业
 
@@ -55,6 +55,6 @@ ms.locfileid: "41600459"
 | 提交失败 | 作业提交失败。  您应尝试重新运行触发作业的操作。 |
 | 进行中 | 作业正在进行中，你可以在 "**作业**" 选项卡中监视作业的进度。 |
 | Rp | 作业已成功完成。 作业完成的日期和时间显示在 "**作业**" 选项卡上的 "**已完成**" 列中。 |
-| 部分成功 | 作业部分成功。 |
+| 部分成功 | 作业部分成功。 当作业未在某些保管人数据源中找到任何部分已编制索引的数据（也称为未加索引的*数据*）时，通常会返回此状态。  |
 | Failed | 作业失败。  您应尝试重新运行触发作业的操作。 如果作业第二次失败，我们建议您与 Microsoft 支持人员联系，并提供作业中的支持信息。 |
 |||
