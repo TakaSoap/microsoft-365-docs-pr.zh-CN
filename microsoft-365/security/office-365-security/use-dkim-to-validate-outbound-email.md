@@ -16,12 +16,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 27a2ba586b3c6d28129115513a3151d1e43903c2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 496089ff46d66df3382895626831023610c706be
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598099"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957157"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
 
@@ -116,7 +116,7 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 
 对于您要为其在 DNS 中添加 DKIM 签名的每个域，您需要发布两条 CNAME 记录。
 
-运行以下命令：
+运行以下命令以创建选择器目录：
 
 ```powershell
     New-DkimSigningConfig -DomainName <domain> -Enabled $false
@@ -128,8 +128,6 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
-
-DNS 中的 CNAME 记录将指向 Office 365 的 Microsoft DNS 服务器上的 DNS 中存在的已创建的 DKIM TXT 记录。
 
 Office 365 使用你创建的两条记录执行自动密钥轮替。如果在 Office 365 中除了初始域外你还预配了自定义域，必须为额外配置的每个域发布两条 CNAME 记录。因此，如果有两个域，就必须发布两条额外的 CNAME 记录，依此类推。
 
@@ -179,6 +177,9 @@ Host name:          selector2._domainkey
 Points to address or value: selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 ```
+
+> [!NOTE]
+> 创建第二条记录非常重要，但创建时仅可使用其中一个选择器。 实际上，第二个选择器可能指向尚未创建的地址。 我们仍然建议创建第二条 CNAME 记录，因为你的密钥轮替是无缝的，无需亲自执行任何手动步骤。
 
 ### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>在 Office 365 中为自定义域启用 DKIM 签名
 <a name="EnableDKIMinO365"> </a>

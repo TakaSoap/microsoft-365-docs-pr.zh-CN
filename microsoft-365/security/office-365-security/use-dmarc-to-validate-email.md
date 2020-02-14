@@ -15,17 +15,20 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从 Office 365 组织发送的邮件。
-ms.openlocfilehash: 88daf311c5c3bdad396044b78476a134f3c814cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598089"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957347"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 
 基于域的邮件身份验证、报告和一致性 ([DMARC](https://dmarc.org)) 与发件人策略框架 (SPF) 和域密钥识别邮件 (DKIM) 结合使用，以验证邮件发件人并确保目标电子邮件系统信任从你的域发送的邮件。 实现使用 SPF 和 DKIM 的 DMARC 可以针对欺骗和钓鱼电子邮件提供额外的保护。 DMARC 可帮助接收邮件系统确定如何处理从你的域发送且未通过 SPF 或 DKIM 检查的邮件。
-  
+
+> [!TIP]
+> 请访问 [Microsoft 智能安全协会 (MISA)](https://www.microsoft.com/misapartnercatalog) 目录，查看哪些第三方供应商提供 Office 365 的 DMARC 报告。 
+
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>SPF 和 DMARC 如何协同工作来保护 Office 365 中的电子邮件？
 <a name="SPFandDMARC"> </a>
 
@@ -79,7 +82,7 @@ Microsoft 的 DMARC TXT 记录如下所示：
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft 将其 DMARC 报告发送至 [Agari](https://agari.com)（第三方）。 Agari 收集并分析 DMARC 报告。 此外，Valimail 提供[面向 Office 365 的免费 DMARC 监控服务](https://go.valimail.com/microsoft.html)。
+Microsoft 将其 DMARC 报告发送至 [Agari](https://agari.com)（第三方）。 Agari 收集并分析 DMARC 报告。 请访问 [MISA 目录](https://www.microsoft.com/misapartnercatalog)，查看有哪些更多的第三方供应商提供 Office 365 的 DMARC 报告。
   
 ## <a name="implement-dmarc-for-inbound-mail"></a>为入站邮件实现 DMARC
 <a name="implementDMARCinbound"> </a>

@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 111bafdb5d95792e8fda08007bccd7cd274b8832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bb4056b90afc8805d4e56b9b73c0c7d118d6f08c
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594482"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916887"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>通过责任就绪清单支持 GDPR 计划
 
@@ -28,9 +28,7 @@ ms.locfileid: "41594482"
 
 ## <a name="accountability-readiness-checklists"></a>责任就绪清单
 
-责任就绪清单旨在方便访问在用户使用 Microsoft 产品和服务时支持 GDPR 所需的信息。 此清单列出了根据 GDPR 你可能要履行的义务，并指出了可用于支持组织合规性的信息。 <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+责任就绪清单旨在方便访问在用户使用 Microsoft 产品和服务时支持 GDPR 所需的信息。 此清单列出了根据 GDPR 你可能要履行的义务，并指出了可用于支持组织合规性的信息。
 
 有针对以下四个 Microsoft 产品和服务系列的具体指南：
 
@@ -66,6 +64,17 @@ ms.locfileid: "41594482"
     - 计划  
     - 信息安全策略
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="customer-agreements"></a>客户协议
+
+- **联机服务条款**：[在线服务条款](https://go.microsoft.com/fwlink/p/?linkid=2052208)中收录了关于 GDPR 的 Microsoft 合同承诺。
+- **Microsoft 产品条款**：Microsoft 将 [GDPR 条款承诺](https://go.microsoft.com/fwlink/p/?linkid=2052213)扩展到所有批量许可客户。
+- **数据保护附录**：Microsoft 服务[将承诺扩展](https://go.microsoft.com/fwlink/p/?linkid=2052215)到 Microsoft 咨询服务客户和其他客户。
+
+## <a name="gdpr-compliance-controls"></a>GDPR 合规性控制
+
+- **使用合规性分数**：使用[合规性分数](compliance-score.md)来审核并合并 Microsoft 为支持 GDPR 中规定的义务而采用的控制措施。
+- **GDPR 控制映射**：访问 Microsoft 控制到 GDPR 义务的[完整映射](https://go.microsoft.com/fwlink/p/?linkid=2052220)。
+
+## <a name="learn-more"></a>了解更多
 
 - [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

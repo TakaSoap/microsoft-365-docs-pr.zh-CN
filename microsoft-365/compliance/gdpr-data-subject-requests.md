@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR, CC
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,22 +14,19 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d2f9ac660c30b815d4ac381f347e1c1aa354ce0d
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39268428"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916907"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的数据主体请求
 
-一般数据保护条例 (GDPR) 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务的组织，或收集并分析欧盟居民相关数据的组织。无论你或你的企业位于何处，都要遵守这些新规定。 如需了解更多详情，可以参阅 [GDPR 摘要主题](gdpr.md)。
+一般数据保护条例 (GDPR) 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务的组织，或收集并分析欧盟居民相关数据的组织。无论你或你的企业位于何处，都要遵守这些新规定。 有关其他详细信息，请参阅 [GDPR 摘要主题](gdpr.md)。
 
-同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。  CCPA 还规定了某些披露，选择行使权时防止歧视以及针对分类为“销售”的特定数据传输的“选择退出/选择加入”要求。  <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
-
-本文档介绍了如何根据 GDPR 和 CCPA 使用 Microsoft 产品和服务来完成数据主体请求 (DSR)。
+同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，其中包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。  CCPA 还就某些披露规定了在选择行使权限时防止歧视的保障措施，并就分类为“销售”的特定数据传输提出了“选择退出/选择加入”要求。 本文档介绍了如何根据 GDPR 和 CCPA 使用 Microsoft 产品和服务来完成数据主体请求 (DSR)。
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -79,7 +78,7 @@ Microsoft 生成的日志和相关数据可能包含，根据 GDPR 的“个人�
 
 ### <a name="yammer-and-kaizala"></a>Yammer 和 Kaizala
 
-删除用户帐户将删除 Yammer 和 Kaizala 的系统生成日志。若要从这些应用程序中删除数据，请参阅以下文章之一：
+删除用户帐户将删除 Yammer 和 Kaizala 的系统生成日志。若要从这些应用程序中删除数据，请参阅以下资源之一：
 
 - [管理 Yammer Enterprise 中的 GDPR 数据主体请求](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [导出或删除用户在 Kaizala 中的组织数据](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
@@ -100,6 +99,12 @@ Microsoft 生成的日志和相关数据可能包含，根据 GDPR 的“个人�
 
 对于通过 Microsoft 帐户身份验证访问的第三方产品和服务，应将任何数据主体请求定向到相应的第三方。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="data-subject-request-admin-tools"></a>数据主体请求管理工具
+
+- **安全与合规中心**：使用[安全与合规性中心](https://aka.ms/stpsecurityandcompliance)或应用程序内部功能导出用户生成的数据。
+- **Azure AD 管理中心**：使用 [Azure AD 管理中心](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/)从 Azure Active Directory 和相关服务中删除数据主体。
+- **Microsoft 数据日志导出**：租户管理员可使用 [Microsoft 数据记录导出](https://aka.ms/MicrosoftGDPR)功能导出系统生成的日志。
+
+## <a name="learn-more"></a>了解更多
 
 - [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

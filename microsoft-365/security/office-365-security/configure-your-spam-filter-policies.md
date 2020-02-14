@@ -1,5 +1,7 @@
 ---
 title: 配置垃圾邮件筛选器策略
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。
-ms.openlocfilehash: 107b4cfa79a83ec5703edd3b47d00c59da81f4b6
-ms.sourcegitcommit: 8b619cc0587d180322d0799fdad813cdd929d9dc
+ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "40929788"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957197"
 ---
 # <a name="configure-your-spam-filter-policies"></a>配置垃圾邮件筛选器策略
 垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。 垃圾邮件筛选器策略设置仅适用于入站邮件，并且有两种类型：
@@ -138,7 +140,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>优化垃圾邮件筛选器策略，防止误报和漏报
 
-如果想采取更积极的方法进行垃圾邮件筛选，你可以启用高级垃圾邮件筛选技术。 有关适用于整个组织的常规垃圾邮件设置，请参阅[如何避免在 Office 365 中将有效的电子邮件标记为“垃圾邮件”](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)或[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)。 如果您拥有管理员级别控制，并且您想要防止误报或漏报问题，这些内容会很有帮助。
+如果想采取更积极的方法进行垃圾邮件筛选，你可以启用高级垃圾邮件筛选技术。 有关适用于整个组织的常规垃圾邮件设置，请参阅[如何避免在 Office 365 中将有效的电子邮件标记为“垃圾邮件”](prevent-email-from-being-marked-as-spam.md)或[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)。 如果您拥有管理员级别控制，并且您想要防止误报或漏报问题，这些内容会很有帮助。
 
 ## <a name="allowblock-lists"></a>允许/阻止列表
 
@@ -160,6 +162,9 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
    - 将不需要的发件人添加到发件人阻止列表。 单击“**编辑**”![添加图标](../media/ITPro-EAC-AddIcon.gif) ，然后在选择对话框中添加希望阻止的发件人地址。 你可以使用分号或通过换行分隔多个条目。 单击“**保存**”返回到“**阻止列表**”页面。
 
    - 将不需要的域添加到“域阻止列表”。 单击“**编辑**”![添加图标](../media/ITPro-EAC-AddIcon.gif)，然后在选择对话框中添加希望阻止的域。 你可以使用分号或通过换行分隔多个条目。 单击“**保存**”返回到“**阻止列表**”页面。
+   
+     > [!NOTE]
+     > 在垃圾邮件筛选器策略中，可阻止整个域或特定发件人，但不能使用通配符 (\*)。 
 
 > [!TIP]
 > 在某些情况下，组织可能会不同意服务提供的结论。 在这种情况下, 你可能希望永久保留“允许”或“阻止”列表。 但是，如果你想要将一个域放在“允许”列表中一段时间，则应告知发件人确保其域已通过验证，并将其设置为“DMARC 拒绝”（如果不是）。
@@ -171,7 +176,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 [隔离](quarantine.md)
 
-[如何避免在 Office 365 中将有效的电子邮件标记为“垃圾邮件”](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[如何避免在 Office 365 中将有效的电子邮件标记为“垃圾邮件”](prevent-email-from-being-marked-as-spam.md)
 
 [如何减少 Office 365 中的垃圾电子邮件](reduce-spam-email.md)
 

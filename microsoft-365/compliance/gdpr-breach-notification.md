@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ffd5bd81542e2d39a928789c8575178c1b9a7633
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e419dd362ec42f7f2acb8cda03688afe3ade37be
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594422"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916917"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 泄露通知
 
-一般数据保护条例 (GDPR) 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或收集并分析欧盟居民相关数据的组织。无论你或你的企业位于何处，都要遵守该规定。 有关其他详细信息，请参阅 [GDPR 摘要主题](gdpr.md)。<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
-
-本文档将提供相关信息，以帮助你完成使用 Microsoft 产品和服务的 GDPR 泄露通知。
+一般数据保护条例 (GDPR) 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或收集并分析欧盟居民相关数据的组织。无论你或你的企业位于何处，都要遵守该规定。 有关其他详细信息，请参阅 [GDPR 摘要主题](gdpr.md)。 本文档将提供相关信息，以帮助你完成使用 Microsoft 产品和服务的 GDPR 泄露通知。
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>根据 GDPR，什么构成了个人数据泄露行为？
 
@@ -47,9 +43,9 @@ ms.locfileid: "41594422"
 
 Microsoft 严格履行一般数据保护条例 (GDPR) 规定的义务。 安全事件/数据泄露是指，存储在 Microsoft 设备或 Microsoft 设施上的客户数据遭到非法访问或可能导致客户数据丢失、泄露或改动的未经授权的访问等事件。
 
-作为数据处理者，Microsoft 将确保服务客户作为数据控制者能够满足 GDPR 的泄露通知要求。 我们的通知提供了进行此评估所需的信息。 Microsoft 会将任何个人数据泄露通知给客户，除非确认个人数据难以被人理解（例如，已确认密钥完整性情况下的高度加密数据）。
+作为数据处理者，Microsoft 将确保服务客户作为数据控制者能够满足 GDPR 的泄露通知要求。 我们的通知提供了进行此评估所需的信息。 Microsoft 会向客户告知任何个人数据泄露，除非确认个人数据难以被人理解（例如，已确认密钥完整性情况下的加密数据）。
 
-数据控制者负责评估数据隐私风险并确定是否需要将某次泄露通知给客户的 DPA。 Microsoft 提供进行此评估所需的信息以及 GDPR 合规性策略。
+数据控制者负责评估数据隐私风险并确定违反是否需要通知客户的 DPA。 Microsoft 提供进行此评估所需的信息以及 GDPR 合规性策略。
 
 初始通知包括对泄露性质、大致的用户影响和缓解步骤（如果适用）的说明。 如果我们的调查在初始通知时还未完成，我们将说明后续的沟通步骤和时间表。 若要详细了解 Microsoft 如何检测和响应个人数据泄露，请参阅服务信任门户中的 [GDPR 数据泄露通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach)。
 
@@ -73,13 +69,17 @@ Microsoft 严格履行一般数据保护条例 (GDPR) 规定的义务。 安全�
     - *客户通知*：Microsoft Azure 会根据需要将数据泄露通知给客户和监管机构。 我们会在声明泄露之时起的 72 小时内送达客户通知，但以下情况除外：
 
         - Microsoft 认为通知操作将增加其他客户面临的风险。
-        - 72 小时时间线可能会留下一些可用的事件详细信息。 这些信息将在调查过程中提供给你。
+        - 72 小时时间线可能会留下一些可用的事件详细信息。 这些详细信息将在调查过程中提供给你。
 
         有关更多详细信息，请参阅[客户通知](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification)。
 
 3. **[Microsoft 支持和专业服务](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
     专业服务的性质意味着某些数据保护事件可能属于客户的责任范围。 当 Microsoft 专业服务识别出数据保护事件时，它会遵循[数据保护事件响应流程的范围和限制](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process)中所述的成文的行业标准响应计划。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="breach-notification-admin-tools"></a>泄露通知管理工具
+
+- **设置组织的隐私联系人**：租户管理员可以使用 [Azure Active Directory 管理门户](https://go.microsoft.com/fwlink/p/?linkid=2052736)来定义组织的隐私联系人，以供 Microsoft 在必要时联系。
+
+## <a name="learn-more"></a>了解更多
 
 - [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
