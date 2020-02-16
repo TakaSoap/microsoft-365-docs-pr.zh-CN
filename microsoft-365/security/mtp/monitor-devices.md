@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: cecc84c1df3ccba3eea75d29aa5f293909d5d51f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600159"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087757"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的设备监控和报告
 
@@ -35,7 +35,7 @@ ms.locfileid: "41600159"
 
 使用**设备警报严重级别**卡专门关注更严重且可能需要立即响应的警报。 在此卡片中，可以查看有关 Microsoft Defender 安全中心门户的详细信息。
 
-![设备警报严重级别卡片](../images/device-alerts-severity.png)
+![设备警报严重级别卡片](../../media/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>了解警报的来源
 
@@ -43,7 +43,7 @@ Microsoft Defender ATP 利用各种安全传感器和智能源中的数据来生
 
 **设备警报检测**源卡按来源显示警报的分布情况。 此卡片可帮助您跟踪与某些来源（尤其是自定义源）相关的活动。 您还可以使用此操作来重点关注来自未配置为自动阻止恶意活动或组件的传感器发出的警报。
 
-![设备警报检测源卡](../images/device-alert-detection-sources.png)
+![设备警报检测源卡](../../media/device-alert-detection-sources.png)
 
 在此卡片中，可以查看有关 Microsoft Defender 安全中心门户的详细信息。
 
@@ -53,13 +53,13 @@ Microsoft Defender ATP 将每个警报分类到一个类别，表示攻击链中
 
 **设备威胁类别**卡片显示了将警报分布到这些类别中的情况。 您可以使用此信息来确定与社会工程手段尝试相比可能具有更高影响的威胁活动（如凭据盗用尝试）。 您还可以使用此信息监视与勒索软件类似的潜在破坏性威胁。
 
-![设备威胁类别卡片](../images/device-threat-categories.png)
+![设备威胁类别卡片](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>监视活动警报
 
 **设备警报状态**卡指示尚未解决且可能需要注意的警报的数量。 在此卡片中，可以查看有关 Microsoft Defender 安全中心门户的详细信息。
 
-![设备警报状态卡片](../images/device-alert-status.png)
+![设备警报状态卡片](../../media/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>监视已解决警报的分类
 
@@ -72,7 +72,7 @@ Microsoft Defender ATP 将每个警报分类到一个类别，表示攻击链中
 
 注意：在某些情况下，分类信息对某些通知不可用。
 
-![设备警报分类卡](../images/device-alert-classification.png)
+![设备警报分类卡](../../media/device-alert-classification.png)
 
 ### <a name="monitor-determination-of-resolved-alerts"></a>监视已解决警报的确定
 
@@ -89,13 +89,13 @@ Microsoft Defender ATP 将每个警报分类到一个类别，表示攻击链中
 
 在此卡片中，可以查看 Microsoft Defender 安全中心中的详细信息。
 
-![设备警报确定卡](../images/device-alert-determination.png)
+![设备警报确定卡](../../media/device-alert-determination.png)
 
 ### <a name="understand-which-devices-are-at-risk"></a>了解哪些设备有风险
 
 **设备保护**显示设备的风险级别。 风险级别基于设备上的警报的类型和严重性等因素。
 
-![设备保护卡](../images/device-protection.png)
+![设备保护卡](../../media/device-protection.png)
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>监视和报告 Intune 管理的设备的状态
 
@@ -114,43 +114,43 @@ Intune 注册的设备数据包括：
 
 **设备符合性**显示在 Intune 中注册的设备数量符合配置策略。
 
-![设备合规性卡](../images/device-compliance.png)
+![设备合规性卡](../../media/device-compliance.png)
 
 ### <a name="discover-devices-with-malware-detections"></a>发现包含恶意软件检测的设备
 
 **设备恶意软件检测**提供了未完全解决的包含恶意软件的 Intune 注册设备的数量。 这可能是由于挂起的操作、重新启动、完全扫描、手动用户操作或更正操作未成功完成造成的。
 
-![设备恶意软件检测卡片](../images/device-malware-detections.png)
+![设备恶意软件检测卡片](../../media/device-malware-detections.png)
 
 ### <a name="understand-the-types-of-malware-detected"></a>了解检测到的恶意软件的类型
 
 **设备上的恶意软件类型**显示在 Intune 中注册的设备上检测到的不同类型的恶意软件。 您可以调查 Microsoft 365 安全中心中的每种类型。
 
-![设备卡上的恶意软件类型](../images/types-of-malware-on-devices.png)
+![设备卡上的恶意软件类型](../../media/types-of-malware-on-devices.png)
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>了解在你的设备上检测到的特定恶意软件
 
 **设备上的恶意软件**提供在设备上检测到的特定恶意软件的列表。
 
-![设备卡上的恶意软件](../images/malware-on-devices.png)
+![设备卡上的恶意软件](../../media/malware-on-devices.png)
 
 ### <a name="understand-which-devices-have-the-most-malware"></a>了解哪些设备具有最多的恶意软件
 
 **带有恶意软件检测的设备**显示哪些设备具有最多的恶意软件检测。 在 Microsoft 365 安全中心中，可以调查恶意软件是处于活动状态、使用设备的用户及其在 Intune 中的管理状态。
 
-![包含恶意软件检测卡片的设备](../images/devices-with-malware-detections.png)
+![包含恶意软件检测卡片的设备](../../media/devices-with-malware-detections.png)
 
 ### <a name="understand-which-users-have-devices-with-the-most-malware"></a>了解哪些用户具有最多恶意软件的设备
 
 **具有恶意软件检测的用户**显示具有最多恶意软件检测到的设备的用户。 在 Microsoft 365 安全中心中，可以查看为每个用户分配了多少个设备，以及有关每个设备和恶意软件类型的详细信息。
 
-![具有恶意软件检测卡片的用户](../images/users-with-malware-detections.png)
+![具有恶意软件检测卡片的用户](../../media/users-with-malware-detections.png)
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>监视和管理 ASR 规则部署和检测
 
 [攻击面减少（ASR）规则](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)可帮助阻止使用者查找恶意软件时通常使用的操作和应用程序感染设备。 这些规则控制何时以及如何运行可执行文件。 例如，可以阻止 JavaScript 或 VBScript 启动下载的可执行文件、阻止来自 Office 宏的 Win32 API 调用或阻止从 USB 驱动器运行的进程。
 
-![攻击面缩减卡片](../images/attack-surface-reduction-rules.png)
+![攻击面缩减卡片](../../media/attack-surface-reduction-rules.png)
 
 **攻击面减少规则**卡提供了跨设备部署规则的概述。
 
@@ -166,7 +166,7 @@ Intune 注册的设备数据包括：
 
 若要查看有关网络中的 ASR 规则检测的详细信息，请选择 "查看**受攻击面减少的规则**卡片上的**检测**"。 将打开 "详细报告" 页中的 "**检测**到" 选项卡。
 
-![检测项选项卡](../images/detections-tab.png)
+![检测项选项卡](../../media/detections-tab.png)
 
 页面顶部的图表显示了已被阻止或审核的时间堆栈检测中的检测项。 底部的表列出了最近检测到的内容。 使用表中的以下信息来了解检测项的性质：
 
@@ -179,7 +179,7 @@ Intune 注册的设备数据包括：
 
 在 "**攻击面降低规则**报告" 页上，转到 "**配置**" 选项卡以查看各个设备的规则设置。 选择一个设备，以获取有关每个规则是处于阻止模式、审核模式还是完全关闭状态的详细信息。
 
-!["配置" 选项卡](../images/configuration-tab.png)
+!["配置" 选项卡](../../media/configuration-tab.png)
 
 Microsoft Intune 为你的 ASR 规则提供管理功能。 如果要更新设置，请选择选项卡中的 "**配置设备**" 下的 "**启动**"，以在 Intune 上打开 "设备管理"。
 
@@ -192,7 +192,7 @@ Microsoft 365 security center 根据攻击面减少规则收集[您可能要](ht
 >[!NOTE]  
 >该工具将分析所有攻击面减少规则的检测项，但[只有某些规则支持排除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr)项。
 
-![添加排除选项卡](../images/add-exclusions-tab.png)
+![添加排除选项卡](../../media/add-exclusions-tab.png)
 
 该表列出了受攻击面减少规则检测到的所有文件名。 您可以选择文件以查看排除它们的影响：
 

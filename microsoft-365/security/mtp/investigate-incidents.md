@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: af061b50e92d2b7f00be3fab217a60855f0669c4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b12bf7b4bbda79a8699e01f31c97d0cfde330b5c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600229"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087337"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>调查 Microsoft 威胁防护中的事件
 
@@ -42,7 +42,7 @@ Microsoft 威胁防护将从所有设备、用户和邮箱聚合所有相关的�
 
 1. 从事件队列中选择一个事件。 <BR> 此操作将打开侧面板并显示重要信息（如状态、严重性、类别和受影响的实体）的预览。
 
-    ![事件侧面板的图像](../images/incident-side-panel.png)
+    ![事件侧面板的图像](../../media/incident-side-panel.png)
 
 2. 选择“**打开事件页面**”。 <BR> 此操作将打开 "事件" 页面，可在其中找到更多信息事件详情、批注和操作、选项卡（概述、警报、设备、用户、调查、证据）。
 
@@ -52,7 +52,7 @@ Microsoft 威胁防护将从所有设备、用户和邮箱聚合所有相关的�
 "概述" 页面提供有关事件的最需要注意事项的概览信息。
 
 
-!["事件概述" 页面图像](../images/incidents-overview.png)
+!["事件概述" 页面图像](../../media/incidents-overview.png)
 
 
 攻击类别提供了有关如何在攻击链中获得高级攻击进度的直观和数字视图。 与其他 Microsoft 安全产品一样，Microsoft 威胁防护与 [MITRE ATT & CK&trade;](https://attack.mitre.org/) 框架一致。  
@@ -69,7 +69,7 @@ Microsoft 威胁防护将从所有设备、用户和邮箱聚合所有相关的�
 ## <a name="alerts"></a>警报 
 可查看事件相关的所有警报和其他信息，如严重性、涉及警报的实体、警报来源（Azure ATP、Microsoft Defender ATP、Office  365 ATP）和关联原因。 
 
-![事件警报页面图像](../images/incident-alerts.png)
+![事件警报页面图像](../../media/incident-alerts.png)
 
 警报默认按时间顺序排序，可以首先查看攻击如何随时间推移。 点击各警报，将导航至相关警报页面，可在此对警报进行深入调查。 
 
@@ -78,7 +78,7 @@ Microsoft 威胁防护将从所有设备、用户和邮箱聚合所有相关的�
 
 单击执行攻击的计算机的名称，导航至计算机页面，可在其中查看触发的警报和有助于调查的相关事件。 
 
-![事件“计算机”选项卡图像](../images/incident-machines.png)
+![事件“计算机”选项卡图像](../../media/incident-machines.png)
 
 选择 "时间线" 选项卡，将能够在计算机时间线之间滚动，并按时间顺序查看计算机上观察到的所有事件和行为，并与引发的警报交错。 
 
@@ -89,18 +89,18 @@ Microsoft 威胁防护将从所有设备、用户和邮箱聚合所有相关的�
 单击用户名，将导航至用户的 Cloud App Security 页面，可在此进行进一步调查。
 
 
-![事件“用户”选项卡图像](../images/incident-users.png)
+![事件“用户”选项卡图像](../../media/incident-users.png)
 
 ## <a name="mailboxes"></a>邮箱
 调查标记为属于事件或与事件相关的邮箱。 若要执行进一步调查工作，选择邮件相关通知将 Office 365 打开高级威胁防护，可在此执行补救操作。
 
 
-![事件“邮箱”选项卡图像](../images/incident-mailboxes.png)
+![事件“邮箱”选项卡图像](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>调查
 选择“**调查**”，查看此事件中警报触发的自动调查。 调查将执行补救操作或等待分析员批准操作，具体取决于如何配置自动化调查，以在 Microsoft Defender ATP 和 Office 365 高级威胁防护中运行。
 
-![事件“调查”选项卡图像](../images/incident-investigations.png)
+![事件“调查”选项卡图像](../../media/incident-investigations.png)
 
 
 选择“调查”，以导航到调查详细信息页面，获取有关调查和修复状态的完整信息。 如果在调查过程中有任何待审批的操作，将在 "待定操作" 选项卡中显示。采取作为事件补救措施的操作。
@@ -109,7 +109,7 @@ Microsoft 威胁防护将从所有设备、用户和邮箱聚合所有相关的�
 ## <a name="evidence"></a>证据
 Microsoft 威胁防护自动调查警报中所有事件支持的事件和可疑实体，提供有关重要文件、流程、服务、电子邮件等的信息。 这有助于快速检测并阻止事件中的潜在威胁。 
 
-![事件“证据”选项卡图像](../images/incident-evidence.png)
+![事件“证据”选项卡图像](../../media/incident-evidence.png)
 
 每一被分析的实体都将标记有裁定（恶意、可疑和清除）以及修正状态。 这可有助于解整个事件的修正状态，以及执行进一步补救的后续步骤。
 

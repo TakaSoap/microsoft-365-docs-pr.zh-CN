@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 92c06eb01abd13df22ae33e72d9663084b05f7ef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ed9cce1c85dc924762be4408c670f13f318ca02
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600289"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087911"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
@@ -42,7 +42,7 @@ ms.locfileid: "41600289"
 | `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
 | `OSVersion` | string | 计算机上运行的操作系统版本 |
 | `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
-| `SoftwareVendor` | string | 基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别 |
+| `SoftwareVendor` | string | 软件供应商的名称 |
 | `SoftwareName` | string | 软件产品的名称 |
 | `SoftwareVersion` | string | 软件产品版本号 |
 | `CveId` | string | 通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符 |

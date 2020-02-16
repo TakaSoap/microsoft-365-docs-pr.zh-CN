@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e41d2ac66dea6640978435390bf3a8868c7cec7c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b9e1f0691d7bec1d8a17bb7f68a0e0941b3f6bd9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596529"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085951"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -210,7 +210,7 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 
 在 Microsoft 托管桌面[Azure 门户](https://aka.ms/mmdportal)中，在左侧导航窗格中选择 "**设备**"。 选择 **+ 注册设备**;将打开 "飞入"：
 
-[![选择注册设备后飞入，列出分配的用户的列设备、序列号、状态、上次查看日期和期限](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![选择注册设备后飞入，列出分配的用户的列设备、序列号、状态、上次查看日期和期限](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
 
 [//]: # (遗憾的是这不成立。我们可以删除此注释-但现在将其保留，直到我们有机会聊天它。)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 031fc4164307d9fa8c78f02c775b230f7eff5383
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600179"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087596"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft 威胁防护
 
@@ -48,13 +48,13 @@ Microsoft 威胁防护独特的跨产品层将各个套件组件扩充为：
 - 通过自动修正触发对受影响资产的自我修复来实现危害的自动化
 - 使安全团队能够跨终结点和 Office 数据执行详细和有效的威胁搜寻
 
-![事件概述页面的图像](../images/overview-incident.png) <br>
+![事件概述页面的图像](../../media/overview-incident.png) <br>
 交叉产品事件（概述）
 
-![警报队列的图像](../images/incident-list.png)<br>
+![警报队列的图像](../../media/incident-list.png)<br>
 通过将相关的套件产品结合在一起形成一个单一事件（警报视图）的所有相关警报
 
-![事件队列的图像](../images/advanced-hunting.png)<br>
+![事件队列的图像](../../media/advanced-hunting.png)<br>
 电子邮件和终结点原始数据顶部的基于查询的搜寻
 
 

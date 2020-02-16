@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f0f436e2b4e9a26f10ec134718796624c9496e81
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f7b3f2fcaac71eefa2579a0c3fd66666fe00f605
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600149"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087653"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的应用程序监控和报告
 
@@ -29,7 +29,7 @@ ms.locfileid: "41600149"
 
 **电子邮件保护**显示有风险的电子邮件帐户。 您可以单击某个帐户以在 Microsoft Defender 安全中心中进行进一步调查。
 
-![电子邮件保护卡](../images/email-protection.png)
+![电子邮件保护卡](../../media/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>监视用户授予的应用程序权限
 
@@ -37,25 +37,25 @@ ms.locfileid: "41600149"
 
 风险因素从一般信息（如应用程序发布者）开始，到安全措施和控件，例如应用程序是否支持在 rest 上进行加密或提供用户活动的审核日志。
 
-![云应用安全 OAuth 应用程序卡片](../images/cloud-app-security-oauth-apps.png)
+![云应用安全 OAuth 应用程序卡片](../../media/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>监视云应用程序用户帐户
 
 **适用于审阅的云应用帐户**列表可能需要注意的帐户。
 
-![审阅卡片的云应用程序帐户](../images/cloud-app-accounts-for-review.png)
+![审阅卡片的云应用程序帐户](../../media/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>了解使用的是哪些云应用程序
 
 已**发现的云应用程序（类别）** 显示在您的组织中使用的是哪些类型的应用程序，以及云发现仪表板在云应用安全中的链接。 有关详细信息，请参阅[快速入门：使用已发现的应用](https://docs.microsoft.com/cloud-app-security/discovered-apps)。  
 
-![发现的云应用类别卡片](../images/discovered-cloud-apps-categories.png)
+![发现的云应用类别卡片](../../media/discovered-cloud-apps-categories.png)
 
 ## <a name="monitor-where-users-access-cloud-apps"></a>监视用户访问云应用程序的位置
 
 **云应用活动位置**显示用户在访问云应用程序的位置。
 
-![云应用活动位置卡片](../images/cloud-app-activity-locations.png)
+![云应用活动位置卡片](../../media/cloud-app-activity-locations.png)
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>监视基础架构工作负载的运行状况
 
@@ -65,4 +65,4 @@ Azure 安全中心在内部部署和云工作负载中提供统一的安全管�
 
 有关详细信息，请参阅[Azure 安全中心文档](https://docs.microsoft.com/azure/security-center/)。
 
-![基础结构运行状况卡片](../images/infrastructure-health.png)
+![基础结构运行状况卡片](../../media/infrastructure-health.png)

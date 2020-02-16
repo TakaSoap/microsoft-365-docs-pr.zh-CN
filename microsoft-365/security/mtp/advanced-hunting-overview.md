@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7e96ca06a7b77a6bdc0cf4af55d519aebda833cd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f268c87da68c2badbfa885f0d9357a6a53d0a039
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600379"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087484"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>通过 Microsoft 威胁防护中的高级搜寻主动搜寻威胁
 
@@ -61,14 +61,14 @@ ms.locfileid: "41600379"
 - 从查询中排除选定值 (`!=`)
 - 获取用于将值添加到查询的更高级运算符，如 `contains`、`starts with` 和 `ends with` 
 
-![Microsoft Defender ATP 高级搜寻结果集的图像](../images/advanced-hunting-results-filter.png)
+![Microsoft Defender ATP 高级搜寻结果集的图像](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>筛选查询结果
 右侧显示的筛选器提供结果集的摘要。 每列都有其自己的部分，其中列出了该列找到的非重复值和实例数。
 
 选择要包括或排除的值上的“+”或“-”按钮，然后选择“运行查询”**** 来优化查询。
 
-![高级搜寻筛选器的图像](../images/advanced-hunting-filter.png)
+![高级搜寻筛选器的图像](../../media/advanced-hunting-filter.png)
 
 应用筛选器以修改查询并运行查询后，将相应更新结果。
 

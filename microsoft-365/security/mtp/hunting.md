@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9f647ba306215d20d6fb1d0c7dbfd8d3b96fb909
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7e41190d3cad9328e678ff47b0e0bf0d38adb7c9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600239"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087713"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>在 Microsoft 365 中寻找威胁
 
@@ -28,7 +28,7 @@ ms.locfileid: "41600239"
 - Microsoft Defender ATP-[寻找对设备的威胁](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)
 - Azure ATP —[寻找对标识的威胁](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)
 
-![搜寻页面](../images/hunt.png)
+![搜寻页面](../../media/hunt.png)
 
 
 ## <a name="hunt-with-microsoft-threat-protection"></a>使用 Microsoft 威胁防护进行查寻

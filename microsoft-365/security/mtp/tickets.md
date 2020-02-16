@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 26e227b4b1e8047ca962ca9e65b139bacae55e03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599989"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086915"
 ---
 # <a name="manage-tickets-through-servicenow"></a>通过 ServiceNow 管理票证
 
@@ -61,7 +61,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 导航到 Microsoft 365 安全中心主页以查看 ServiceNow 连接卡。
 
-![您是否使用 ServiceNow](../images/do-you-use-servicenow-250.png)
+![您是否使用 ServiceNow](../../media/do-you-use-servicenow-250.png)
 
 选择 "连接到 ServiceNow" 以转到 "ServiceNow 设置" 页。 按照说明授权 Microsoft 365 连接器应用。
 
@@ -74,7 +74,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 建立集成后，基于特定 Microsoft 安全得分改进操作创建 ServiceNow 任务。 转到 Microsoft 365 安全中心门户中安全得分的任何改进措施，并选择 "共享" 图标。 其中一个下拉选项是 ServiceNow。
 
-![安全分数中的 ServiceNow 共享](../images/servicenow-share.png)
+![安全分数中的 ServiceNow 共享](../../media/servicenow-share.png)
 
 将生成一个任务，您可以在其中设置优先级并编辑名称、说明或截止日期。 填写所有必填字段后，将该任务发送到 ServiceNow。
 
@@ -84,7 +84,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 一旦创建了 ServiceNow 更改管理和事件管理票证，它们就会显示在 Microsoft 365 安全中心主页上的卡片上。 通过这些卡，您可以创建一个票证、查看所有票证或管理 ServiceNow 配置。
 
-![ServiceNow 更改管理票证](../images/change-management-375.png)  ![ServiceNow 事件管理票证](../images/incident-management-375.png)
+![ServiceNow 更改管理票证](../../media/change-management-375.png)  ![ServiceNow 事件管理票证](../../media/incident-management-375.png)
 
 若要在 Microsoft 365 安全中心中重新设置或管理你的 ServiceNow 集成，请选择任一卡片上的 "**管理 servicenow 配置**"。 在此处，删除当前的 ServiceNow 连接并自定义票证状态名称。
 

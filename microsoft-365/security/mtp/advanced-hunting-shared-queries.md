@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6e5dd8d1d80d08ed808bc607fcc7aba8a390a9ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6f6468117f73d6cf7079ce50e8ea951422bfc073
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600309"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087417"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -33,7 +33,7 @@ ms.locfileid: "41600309"
 
 可以与同一个组织内的用户共享[高级搜寻](advanced-hunting-overview.md)查询。 还可以查找在 GitHub 上公开共享的查询。 借助这些查询，你可以快速追寻特定威胁搜寻方案，而无需从头开始编写查询。
 
-![共享查询的图像](../images/advanced-hunting-shared-queries.png)
+![共享查询的图像](../../media/advanced-hunting-shared-queries.png)
 
 ## <a name="save-modify-and-share-a-query"></a>保存、修改和共享查询
 可以保存新的或已有的查询，以便只有你可以访问它，或将它与组织内的其他用户共享。 
@@ -44,7 +44,7 @@ ms.locfileid: "41600309"
     
 3. 输入查询的名称。 
 
-   ![保存查询的图像](../images/advanced-hunting-save-query.png)
+   ![保存查询的图像](../../media/advanced-hunting-save-query.png)
 
 4. 选择要将查询保存到的文件夹。
     - **共享查询** — 与组织内的所有用户共享
@@ -55,7 +55,7 @@ ms.locfileid: "41600309"
 ## <a name="delete-or-rename-a-query"></a>删除或重命名查询
 1. 右键单击要重命名或删除的查询。
 
-    ![删除查询的图像](../images/advanced_hunting_delete_rename.png)
+    ![删除查询的图像](../../media/advanced_hunting_delete_rename.png)
 
 2. 选择“删除”，并确认删除。**** 或者选择“重命名”，并为查询提供新名称。****
 
