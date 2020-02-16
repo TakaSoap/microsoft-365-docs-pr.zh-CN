@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 07/01/2019
+ms.date: 02/14/2020
 audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以了解 Office 365 安全 & 合规性中心中提供的权限。
-ms.openlocfilehash: 209e871ee9df4bd40568bc647b4bae838ddace73
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2676115e9675bbfe184b4e0fbe43bdc03689c4d9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598709"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088285"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 安全与合规中心的权限
 
@@ -30,7 +30,7 @@ Office 365 Security & 合规性中心允许您向执行合规性任务（如设�
 
 安全 & 合规性中心中的权限基于基于角色的访问控制（RBAC）权限模型。 这与 Exchange 使用相同的权限模型，因此，如果您熟悉 Exchange，则在安全 & 合规中心中授予权限将非常相似。 但请务必记住，Exchange 角色组和安全性 & 合规性中心角色组不会共享成员身份或权限。 尽管二者都有一个组织管理角色组，但这两个角色组并不相同。 角色组授予的权限以及角色组的成员都有区别。 下面列出了安全 & 合规中心角色组。
 
-![Office 365 安全与合规中心的权限页](../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
+![Office 365 安全与合规中心的权限页](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>成员、角色和角色组之间的关系
 
@@ -40,7 +40,7 @@ Office 365 Security & 合规性中心允许您向执行合规性任务（如设�
 
 Security & 合规性中心包含为您向其分配人员所需的最常见任务和功能的默认角色组。 我们建议您只是将单个用户添加为默认角色组的**成员**。
 
-![显示角色组与角色和成员之间关系的图表](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![显示角色组与角色和成员之间关系的图表](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 您可以编辑或删除现有的角色组，但我们不建议这样做。 您可以复制和修改默认角色组，然后使用不同的名称进行保存，而不是对其进行编辑。
 
@@ -64,8 +64,8 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 |**记录管理**|成员可以管理和处置记录内容。|审核日志 <br/><br/> RecordManagement <br/><br/> 保留管理|
 |**Reviewer**|成员只能查看 Security & 合规性中心中 "电子数据展示事例" 页上的事例列表。 他们无法创建、打开或管理电子数据展示事例。 此角色组的主要用途是允许成员在[Office 365 高级电子数据展示](../../compliance/office-365-advanced-ediscovery.md)（也称为*高级电子数据展示 v1*）中查看和访问事例数据。 <br/><br/> 此角色组中与电子数据展示相关的权限最具限制性。<br/><br/>**注意：** 目前，作为审阅者角色组成员的用户无法在 Microsoft 365 （也称为*高级电子数据展示 v2*）中访问[高级电子数据展示中](../../compliance/overview-ediscovery-20.md)的数据。 若要在高级电子数据展示 v2 中向事例添加成员，以便他们能够查看事例数据，用户必须是电子数据展示管理器角色组的成员。|审阅|
 |**安全管理员**|此角色组的成员可能包括跨服务管理员以及外部合作伙伴组和 Microsoft 支持。 默认情况下，可能不会向该组分配任何角色。 但是，它将是 Azure Active Directory 中的安全管理员角色的成员，并将继承该角色的功能。 若要集中管理权限，请在 Azure Active Directory 管理中心中对此角色进行更改。 有关详细信息，请参阅[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 <br/><br/> 如果在安全 & 合规中心中编辑此角色组，这些更改仅适用于安全 & 合规性中心，而不是其他任何服务，而在 Azure Active Directory 管理中心中所做的更改会影响所有服务。 <br/><br/> 安全读者角色的所有只读权限，以及对相同服务的许多其他管理权限： Azure 信息保护、标识保护中心、特权身份管理、监视 Office 365 服务运行状况和 Office 365 安全性 & 合规性中心。|审核日志 <br/><br/> DLP 合规性管理 <br/><br/> 设备管理 <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> Quarantine <br/><br/> 安全管理员 <br/><br/> 敏感度标签管理员 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知|
-|**安全操作员**|成员可以管理安全警报，还可以查看安全功能的报告和设置。|合规性搜索 <br/><br/> 管理通知 <br/><br/> 安全读取者 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知|
-|**安全读取者**|成员具有对身份保护中心的许多安全功能的只读访问权限、特权身份管理、监视 Office 365 服务运行状况和 Office 365 安全性 & 合规性中心。 <br/><br/> 此角色组中的成员身份将跨服务同步并集中管理。 此角色组的成员可能包括跨服务管理员以及外部合作伙伴组和 Microsoft 支持。 默认情况下，可能不会向该组分配任何角色。 但是，它将是 Azure Active Directory 中的安全读取器角色的成员，并将继承该角色的功能。 若要集中管理权限，请在 Azure Active Directory 管理中心中对此角色进行更改-有关详细信息，请参阅[Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 如果在安全 & 合规中心中编辑此角色组，这些更改仅适用于安全 & 合规性中心，而不是其他任何服务，而在 Azure Active Directory 管理中心中所做的更改会影响所有服务|安全读取者 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知|
+|**Security 运算符**|成员可以管理安全警报，还可以查看安全功能的报告和设置。|合规性搜索 <br/><br/> 管理通知 <br/><br/> 安全读取者 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知|
+|**安全读者**|成员具有对身份保护中心的许多安全功能的只读访问权限、特权身份管理、监视 Office 365 服务运行状况和 Office 365 安全性 & 合规性中心。 <br/><br/> 此角色组中的成员身份将跨服务同步并集中管理。 此角色组的成员可能包括跨服务管理员以及外部合作伙伴组和 Microsoft 支持。 默认情况下，可能不会向该组分配任何角色。 但是，它将是 Azure Active Directory 中的安全读取器角色的成员，并将继承该角色的功能。 若要集中管理权限，请在 Azure Active Directory 管理中心中对此角色进行更改-有关详细信息，请参阅[Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 如果在安全 & 合规中心中编辑此角色组，这些更改仅适用于安全 & 合规性中心，而不是其他任何服务，而在 Azure Active Directory 管理中心中所做的更改会影响所有服务|安全读取者 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知|
 |**服务保证用户**|成员可以访问 Office 365 安全 & 合规性中心中的服务保证部分。 服务保证提供了报告和文档，这些报告和文档描述了 Microsoft 在 Office 365 中存储的客户数据的安全实践。 此外，它还提供了有关 Office 365 的独立第三方审核报告。 有关详细信息，请参阅[Office 365 Security & 合规中心中的服务保证](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)。|服务保证视图|
 |**监管审核**|成员可以创建和管理用于定义哪类通讯在组织中易受到审查的策略。 有关详细信息，请参阅为[您的组织配置通信合规性策略](../../compliance/communication-compliance-configure.md)。|监管审核管理员|
 
@@ -98,7 +98,6 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 |:-----|:-----|:-----|
 |**审核日志**|打开并配置 Office 365 组织的审核，查看组织的审核报告，然后将这些报告导出到文件中。|组织管理 <br/><br/> 记录管理 <br/><br/> 安全管理员|
 |**案例管理**|创建、编辑、删除和控制电子数据展示事例的访问。|合规性管理员 <br/><br/> 电子数据展示管理员 <br/><br/> 组织管理|
-|**数据调查人员**|对邮箱、SharePoint Online 网站和 OneDrive for business 位置执行搜索。|导出 <br/><br/> RMS 解密 <br/><br/> Custodian <br/><br/> 通信 <br/><br/> 审阅 <br/><br/> 预览 <br/><br/> 合规性搜索 <br/><br/> 数据调查管理|
 |**通信**|管理在高级电子数据展示事例中标识的保管人的所有通信。  创建保留通知、保留提醒和升级到管理。 跟踪保留通知的保管人确认并管理对由每个保管人使用的保管人门户使用的访问权限，以便在标识为管理员的情况下跟踪通信。|电子数据展示管理员|
 |**合规性管理员**|查看和编辑合规性功能的设置和报告。|合规性管理员 <br/><br/> 合规性数据管理员 <br/><br/> 组织管理|
 |**合规性搜索**|跨邮箱执行搜索并获取结果估计。|合规性管理员 <br/><br/> 合规性数据管理员 <br/><br/> 电子数据展示管理员 <br/><br/> 组织管理 <br/><br/> 安全操作员|
@@ -121,7 +120,7 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 |**角色管理**|管理角色组成员身份并创建或删除自定义角色组。|组织管理|
 |**搜索和清除**|允许人员批量删除与内容搜索条件相匹配的数据。|组织管理|
 |**安全管理员**|查看和编辑安全功能的配置和报告。|组织管理 <br/><br/> 安全管理员|
-|**安全读取者**|查看安全功能的配置和报告。|组织管理 <br/><br/> 安全操作员 <br/><br/> 安全读取者|
+|**安全读者**|查看安全功能的配置和报告。|组织管理 <br/><br/> 安全操作员 <br/><br/> 安全读取者|
 |**敏感度标签管理员**|查看、创建、修改和删除敏感度标签。|合规性数据管理员 <br/><br/> 组织管理 <br/><br/> 安全管理员|
 |**服务保证视图**|从 "服务保证" 部分下载可用文档。 内容包括独立的审核、合规性文档以及与信任相关的用于使用 Office 365 功能管理法规遵从性和安全风险的指南。|服务保证用户 <br/><br/> 组织管理|
 |**监管审核管理员**|管理监管审核策略，包括要查看哪些通信以及应执行检查的参与者。|监管审核|

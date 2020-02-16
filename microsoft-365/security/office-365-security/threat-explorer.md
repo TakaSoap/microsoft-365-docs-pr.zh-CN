@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: 21fc170fc820fa0187c03ac07ddc8b8c771f54ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598239"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082082"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -29,11 +29,11 @@ ms.locfileid: "41598239"
 
 |在 ATP 计划2中，您将看到：  |在 ATP 计划1中，您将看到：  |
 |---------|---------|
-|![威胁资源管理器](../media/threatmgmt-explorer.png)      |![实时检测](../media/threatmgmt-realtimedetections.png)         |
+|![威胁资源管理器](../../media/threatmgmt-explorer.png)      |![实时检测](../../media/threatmgmt-realtimedetections.png)         |
 
 使用浏览器（或实时检测）时，您将拥有一个功能强大的报告，使安全操作团队能够有效且高效地调查威胁并对其做出响应。 该报告类似于以下图像： 
 
-![转到 "威胁\>管理资源管理器"](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![转到 "威胁\>管理资源管理器"](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 使用此报告，可以执行以下操作：
 - [查看 Office 365 安全功能检测到的恶意软件](#see-malware-detected-in-email-by-technology)
@@ -105,7 +105,7 @@ ms.locfileid: "41598239"
 > [!TIP]
 > 当您通过网络邮件 ID 搜索浏览器或关联的第三方工具时，网络邮件 ID 会将单击映射回特定邮件。 在网络邮件 ID 中搜索将为管理员提供与单击结果关联的特定电子邮件。 在有导出功能的情况下，网络邮件 ID 的关联标识将使分析速度更快、更强大。
 
-![tp_ExportClickResultAndNetworkID .png](../../images/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID .png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看电子邮件中的技术检测到恶意软件
 
@@ -113,11 +113,11 @@ ms.locfileid: "41598239"
 
 1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **恶意软件**"。<br/>![浏览器的视图菜单](../media/ExplorerViewEmailMalwareMenu.png)<br/>
+2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **恶意软件**"。<br/>![浏览器的视图菜单](../../media/ExplorerViewEmailMalwareMenu.png)<br/>
 
-3. 单击 "**发件人**"，然后选择 "**基本** > **检测技术**"。<br/>您的检测技术现在可用作报告的筛选器。<br/>![恶意软件检测技术](../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+3. 单击 "**发件人**"，然后选择 "**基本** > **检测技术**"。<br/>您的检测技术现在可用作报告的筛选器。<br/>![恶意软件检测技术](../../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
 
-4. 选择一个选项，然后单击 "**刷新**" 按钮以应用该筛选器。<br/>![选定的检测技术](../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+4. 选择一个选项，然后单击 "**刷新**" 按钮以应用该筛选器。<br/>![选定的检测技术](../../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
 
 报告将刷新，以显示使用您选择的技术选项在电子邮件中检测到恶意软件的结果。 在这里，你可以进行进一步分析。
 
@@ -129,11 +129,11 @@ ms.locfileid: "41598239"
 
 1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **网络钓鱼**"。<br/>![浏览器的视图菜单](../media/ExplorerViewEmailPhishMenu.png)<br/>
+2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **网络钓鱼**"。<br/>![浏览器的视图菜单](../../media/ExplorerViewEmailPhishMenu.png)<br/>
 
 3. 单击 "**发件人**"，然后选择 " **url** > **" 单击 "判定"**。
 
-4. 选择一个或多个选项（如 "已**阻止**" 和 "**阻止被覆盖**"），然后单击与应用该筛选器的选项位于同一行中的 "**刷新**" 按钮。 （不要刷新浏览器窗口。）<br/>![Url 并单击 "verdicts"](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. 选择一个或多个选项（如 "已**阻止**" 和 "**阻止被覆盖**"），然后单击与应用该筛选器的选项位于同一行中的 "**刷新**" 按钮。 （不要刷新浏览器窗口。）<br/>![Url 并单击 "verdicts"](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
     报告将刷新，以在报告下的 "URL" 选项卡上显示两个不同的 URL 表：
 
@@ -143,7 +143,7 @@ ms.locfileid: "41598239"
    
    这两个 URL 表通过传递操作和位置显示网页仿冒电子邮件中的顶部 Url，并显示已阻止（或在出现警告的情况下访问）的 URL 单击，以便您可以了解用户收到的潜在的错误链接以及用户的交互情况。 在这里，你可以进行进一步分析。 例如，在图表下方，您可以看到在组织的环境中被阻止的电子邮件中的最高 Url。
    
-   ![阻止的资源管理器 Url](../media/ExplorerPhishClickVerdictURLs.png)
+   ![阻止的资源管理器 Url](../../media/ExplorerPhishClickVerdictURLs.png)
    
    选择一个 URL 以查看更详细的信息。 **注意**：在 "URL 飞出" 对话框中，将删除对电子邮件的筛选，以显示您的环境中 URL 公开的完整视图。 这样，您就可以在资源管理器中筛选出您关注的电子邮件，查找潜在威胁的特定 Url，然后展开您对环境中的 URL 公开的了解（通过 URL 详细信息对话框），而无需将 URL 筛选器添加到资源管理器视图本身。
 
@@ -153,11 +153,11 @@ ms.locfileid: "41598239"
 
 1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **提交**"。<br/>![浏览器的视图菜单](../media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **提交**"。<br/>![浏览器的视图菜单](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. 单击 "**发件人**"，然后选择 "**基本** > **报告类型**"。
 
-4. 选择一个选项，如 "**网络钓鱼**"，然后单击 "**刷新**" 按钮。 <br/>![用户报告的网络钓鱼](../media/EmailUserReportedReportType.png)<br/> 
+4. 选择一个选项，如 "**网络钓鱼**"，然后单击 "**刷新**" 按钮。 <br/>![用户报告的网络钓鱼](../../media/EmailUserReportedReportType.png)<br/> 
 
 报告将刷新，以显示组织中的人员已报告为网络钓鱼尝试的电子邮件的相关数据。 您可以使用此信息进行进一步分析，如有必要，调整您的[ATP 反网络钓鱼策略](set-up-anti-phishing-policies.md)。
 

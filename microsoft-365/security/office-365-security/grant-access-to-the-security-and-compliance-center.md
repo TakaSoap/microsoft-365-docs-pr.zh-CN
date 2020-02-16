@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Office 365 安全 & 合规性中心中分配权限，然后才能管理其任何安全或合规性功能。
-ms.openlocfilehash: 625fe036e8f8b00201abd0f5cb6a8f0003c597f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cccf44a64d20dc1304dbc5145d6ae50441cfacef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599249"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085962"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>向用户授予对 Office 365 安全与合规中心的访问权限
 
@@ -49,9 +49,9 @@ ms.locfileid: "41599249"
 
 3. 在安全 & 合规性中心中，转到 "**权限**"。
 
-4. 从列表中，选择要向其添加用户的角色组，然后单击 "**编辑** ![编辑图标](../media/O365-MDM-CreatePolicy-EditIcon.gif)"。
+4. 从列表中，选择要向其添加用户的角色组，然后单击 "**编辑** ![编辑图标](../../media/O365-MDM-CreatePolicy-EditIcon.gif)"。
 
-5. 在 "**成员**" 下的角色组的 "属性" 页中](../media/ITPro-EAC-AddIcon.gif) ，单击 "**添加**![" "添加" 图标，然后选择要添加的一个或一组用户的名称。
+5. 在 "**成员**" 下的角色组的 "属性" 页中](../../media/ITPro-EAC-AddIcon.gif) ，单击 "**添加**![" "添加" 图标，然后选择要添加的一个或一组用户的名称。
 
 6. 在选择了要添加到角色组的所有用户后，单击 "**添加\> ** "，然后单击 **"确定"**。
 
@@ -83,7 +83,7 @@ ms.locfileid: "41599249"
 
 有关语法和参数的详细信息，请参阅[外接程序 add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember)。
 
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证您是否已授予用户对安全 & 合规中心的访问权限，请使用**add-rolegroupmember** Cmdlet 查看组织管理角色组中的成员，如以下示例所示。
 

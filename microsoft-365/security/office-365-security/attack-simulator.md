@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 全局管理员，你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
-ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 93a2601322fd33024c1310e1df69ad1dea2f07b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957407"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083659"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻击模拟器
 
@@ -57,7 +57,7 @@ ms.locfileid: "41957407"
 
 - 您的组织[具有 Office 365 高级威胁防护计划 2](office-365-atp.md)，在&amp;安全合规性中心中显示攻击模拟器（转到**威胁管理** \> **攻击模拟器**）
 
-    ![威胁管理-攻击模拟器](../media/ThreatMgmt-AttackSimulator.png)
+    ![威胁管理-攻击模拟器](../../media/ThreatMgmt-AttackSimulator.png)
 
 ## <a name="credential-harvest-spear-phishing-attack"></a>凭据收集 spear-网络钓鱼攻击
 
@@ -67,7 +67,7 @@ ms.locfileid: "41957407"
 
 ### <a name="to-simulate-a-spear-phishing-attack"></a>模拟 spear 网络钓鱼攻击
 
-![撰写电子邮件正文](../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![撰写电子邮件正文](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
 您可以直接在**电子邮件正文**字段中手工创建丰富的 HTML 编辑器，或使用 HTML 源。
 
@@ -75,15 +75,15 @@ ms.locfileid: "41957407"
 
 2. 为攻击指定有意义的市场活动名称或选择一个模板。
 
-   ![网络钓鱼起始页](../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   ![网络钓鱼起始页](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
 3. 指定目标收件人。 它可以是组织中的个人或组。 每个目标收件人都必须具有 Exchange Online 邮箱，攻击才会成功。
 
-   ![收件人选择](../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+   ![收件人选择](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
 
 4. 配置网络钓鱼电子邮件详细信息。
 
-   ![配置电子邮件详细信息](../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+   ![配置电子邮件详细信息](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
 
    HTML 格式可以是复杂的，也可以是基本的活动需求。 由于电子邮件格式为 HTML，因此您可以插入图像和文本，以增强 believability。 您可以控制收到的邮件在接收电子邮件客户端中的显示形式。
 

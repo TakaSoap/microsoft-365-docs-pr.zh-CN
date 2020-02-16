@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 管理员可以了解如何在 Exchange Online Protection 中分配或删除 Exchange 管理中心（EAC）中的权限。
-ms.openlocfilehash: ab574e4d33d84774ef63f73297447ea66a74430b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01676fab3ed69120a35687d1c6939cb466b8d672
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599029"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082911"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>在 EOP 中管理管理员角色组权限
 
@@ -38,9 +38,9 @@ ms.locfileid: "41599029"
 
 ## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>使用 EAC 向管理员角色组分配成员
 
-1. 在 EAC 中，转到 "**权限** \> " "**管理员角色**"，单击要向其添加用户的角色组，然后单击 "**编辑** ![编辑图标](../media/ITPro-EAC-EditIcon.gif)"。
+1. 在 EAC 中，转到 "**权限** \> " "**管理员角色**"，单击要向其添加用户的角色组，然后单击 "**编辑** ![编辑图标](../../media/ITPro-EAC-EditIcon.gif)"。
 
-2. 在 "成员" **** ![下，单击](../media/ITPro-EAC-AddIcon.gif)"添加" "添加" 图标。 将显示"选择成员"窗口。
+2. 在 "成员" **** ![下，单击](../../media/ITPro-EAC-AddIcon.gif)"添加" "添加" 图标。 将显示"选择成员"窗口。
 
 3. 搜索您要添加的一个或多个用户，或从列表中选择。
 
@@ -53,9 +53,9 @@ ms.locfileid: "41599029"
 
 ## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>使用 EAC 从管理员角色组中删除成员
 
-1. 在 EAC 中，转到 "**权限** \> " "**管理员角色**"，单击要从中删除一个或一组用户的角色组，然后单击 "**编辑** ![编辑图标](../media/ITPro-EAC-EditIcon.gif)"。
+1. 在 EAC 中，转到 "**权限** \> " "**管理员角色**"，单击要从中删除一个或一组用户的角色组，然后单击 "**编辑** ![编辑图标](../../media/ITPro-EAC-EditIcon.gif)"。
 
-2. 在 "成员" 下，选择要删除的一个或一或一些**** ![用户，然后](../media/ITPro-EAC-RemoveIcon.gif)单击 "删除删除图标"。
+2. 在 "成员" 下，选择要删除的一个或一或一些**** ![用户，然后](../../media/ITPro-EAC-RemoveIcon.gif)单击 "删除删除图标"。
 
 3. 单击“保存”**** 将更改保存到角色组并返回“管理员角色”**** 页。 若要验证您已成功从管理员角色组删除用户，确保该用户不会再出现在选定角色组详细信息窗格中的"成员"下。
 

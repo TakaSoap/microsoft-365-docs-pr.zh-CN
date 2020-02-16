@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用 Exchange Online Protection 中的邮件流规则进行批量电子邮件筛选。
-ms.openlocfilehash: 5188ce077ce15ab7ad5d03e4aa2c172db6a80c37
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598039"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081812"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用邮件流规则在 Exchange Online Protection 中配置批量电子邮件筛选
 
@@ -35,11 +35,11 @@ ms.locfileid: "41598039"
 
 1. 在 Exchange 管理中心 (EAC) 中，转到 **“邮件流”**\>**“规则”**。
 
-2. 单击 "**添加** !["](../media/ITPro-EAC-AddIcon.gif) "添加" 图标，然后选择 "**创建新规则**"。
+2. 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.gif) "添加" 图标，然后选择 "**创建新规则**"。
 
 3. 指定规则名称。
 
-4. 单击 "**更多选项** !["](../media/ITPro-EAC-MoreOptionsIcon.png)图标。 在 "**应用此规则**" 下，选择 **"主题" 或 "正文** \> "**主题或正文与这些文本模式相匹配**。
+4. 单击 "**更多选项** !["](../../media/ITPro-EAC-MoreOptionsIcon.png)图标。 在 "**应用此规则**" 下，选择 **"主题" 或 "正文** \> "**主题或正文与这些文本模式相匹配**。
 
 5. 在 "**指定词语或短语**" 对话框中，添加以下通常在批量电子邮件中找到的正则表达式（一次一个），然后在完成后单击 **"确定"** ：
 
@@ -87,7 +87,7 @@ ms.locfileid: "41598039"
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. 单击 "**添加** !["](../media/ITPro-EAC-AddIcon.gif) "添加" 图标，然后选择 "**创建新规则**"。
+2. 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.gif) "添加" 图标，然后选择 "**创建新规则**"。
 
 3. 指定规则名称。
 

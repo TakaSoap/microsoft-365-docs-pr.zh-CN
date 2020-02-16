@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
-ms.openlocfilehash: 975c6d8a00e3e1cd8c30b2d417c74cde39b8cd5a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca4cf6033b843b92a2edceaae27f43d6eed8e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599799"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086775"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -36,9 +36,9 @@ ms.locfileid: "41599799"
 
 |阶段  |涉及的内容  |
 |---------|---------|
-|1     |一个[警报](#alerts)由 Office 事件触发，[安全行动手册](#security-playbooks)启动对选定警报的自动调查。 <br/><br/>或者，安全分析员可以手动从[浏览器](threat-explorer.md)的电子邮件[开始进行自动调查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。        |
-|双面     |自动调查运行时，它会收集有关电子邮件和与该电子邮件相关的实体的其他数据–文件、Url 和收件人。  由于触发了新的相关警报，调查的范围可能会增加。         |
-|第三章     |在自动调查期间和之后，可以查看[详细信息和结果](#investigation-graph)。 结果包括[建议的操作](#recommended-actions)，可采取这些操作来响应和修正发现的任何威胁。 此外，还可以使用[行动手册日志](#playbook-log)来跟踪所有调查活动。<br/><br/>如果您的组织使用的是自定义报告解决方案或第三方解决方案，则可以[使用 Office 365 管理活动 API](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions)来查看有关自动调查和威胁的信息。         |
+|1      |一个[警报](#alerts)由 Office 事件触发，[安全行动手册](#security-playbooks)启动对选定警报的自动调查。 <br/><br/>或者，安全分析员可以手动从[浏览器](threat-explorer.md)的电子邮件[开始进行自动调查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。        |
+|2      |自动调查运行时，它会收集有关电子邮件和与该电子邮件相关的实体的其他数据–文件、Url 和收件人。  由于触发了新的相关警报，调查的范围可能会增加。         |
+|3      |在自动调查期间和之后，可以查看[详细信息和结果](#investigation-graph)。 结果包括[建议的操作](#recommended-actions)，可采取这些操作来响应和修正发现的任何威胁。 此外，还可以使用[行动手册日志](#playbook-log)来跟踪所有调查活动。<br/><br/>如果您的组织使用的是自定义报告解决方案或第三方解决方案，则可以[使用 Office 365 管理活动 API](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions)来查看有关自动调查和威胁的信息。         |
 |4      |您的安全操作团队将检查调查结果和建议，并批准修正操作。 在 Office 365 中，仅在组织的安全团队批准时才采取更正措施。         |
 
 以下各节提供了有关空中的更多详细信息，包括有关警报、安全行动手册和调查详细信息的详细信息。 此外，本文还介绍了如何提供空中工作的两个示例。 若要开始使用 AIR，请参阅[在 Office 365 中自动调查和响应威胁](office-365-air.md)。
@@ -66,7 +66,7 @@ ms.locfileid: "41599799"
 
 如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理（SIEM）系统管理安全警报，则可以通过电子邮件通知或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)将 Office 365 警报发送到该系统。 通过电子邮件或 API 的调查通知通知包括访问安全 & 合规性中心中的警报的链接，使分配的安全管理员能够快速导航到调查。
 
-![链接到调查的警报](../media/air-alerts-page-details.png) 
+![链接到调查的警报](../../media/air-alerts-page-details.png) 
 
 ## <a name="security-playbooks"></a>安全行动手册
 
@@ -103,7 +103,7 @@ ms.locfileid: "41599799"
 
 "自动调查" 页面显示您的组织的调查及其当前状态。
 
-![空气的主要调查页面](../media/air-maininvestigationpage.png) 
+![空气的主要调查页面](../../media/air-maininvestigationpage.png) 
   
 可执行下列操作：
 - 直接导航到调查（选择**调查 ID**）。
@@ -132,7 +132,7 @@ ms.locfileid: "41599799"
 
 当您打开特定调查时，您将看到 "调查图形" 页。 此页面显示所有不同的实体：电子邮件、用户（及其活动）以及自动调查为触发的警报一部分的设备。
 
-![空中调查图形页面](../media/air-investigationgraphpage.png)
+![空中调查图形页面](../../media/air-investigationgraphpage.png)
 
 可执行下列操作：
 - 获取当前调查的直观概述。
@@ -144,7 +144,7 @@ ms.locfileid: "41599799"
 
 在调查的 "**通知**" 选项卡上，您可以查看与调查相关的警报。 详细信息包括触发调查的警报以及与调查相关的其他关联警报（如有风险的登录、DLP 策略冲突等）。 在此页面中，安全分析员还可以查看各个通知的其他详细信息。
 
-![空气警报页面](../media/air-investigationalertspage.png)
+![空气警报页面](../../media/air-investigationalertspage.png)
 
 可执行下列操作：
 - 获取当前触发警报和任何关联警报的直观概述。
@@ -177,14 +177,14 @@ ms.locfileid: "41599799"
 
 例如，请考虑以下方案。 三封电子邮件的第一个群集被认为是网络钓鱼。 找到具有相同 IP 和主题的类似邮件的另一个群集，并被视为恶意邮件，因为在初始检测过程中将其部分标识为网络钓鱼。 
 
-![空中电子邮件调查页面](../media/air-investigationemailpage.png)
+![空中电子邮件调查页面](../../media/air-investigationemailpage.png)
 
 可执行下列操作：
 - 获取当前群集结果和发现的威胁的直观概述。
 - 单击 "群集" 实体或威胁列表打开显示完整警报详细信息的弹出页面。
 - 单击 "电子邮件群集详细信息" 选项卡顶部的 "在资源管理器中打开" 链接进一步调查电子邮件群集
 
-![使用浮出控件详细信息的航空调查电子邮件](../media/air-investigationemailpageflyoutdetails.png)
+![使用浮出控件详细信息的航空调查电子邮件](../../media/air-investigationemailpageflyoutdetails.png)
 
 > [!NOTE]
 > 在电子邮件上下文中，您可能会在调查过程中看到一个卷异常威胁曲面。 卷异常表明调查事件时间与之前的时间框架相比，与调查事件的类似电子邮件中的峰值。 这种具有类似特征（例如，subject 和发件人域、正文相似性和发件人 IP）的电子邮件通信的峰值是电子邮件宣传活动或攻击的典型启动。 但是，批量、垃圾邮件和合法电子邮件活动通常共享这些特征。 由于使用反病毒引擎、沙箱或恶意信誉识别的恶意软件或网络钓鱼威胁相比，大量异常会带来潜在的威胁，因此可能会降低严重程度。
@@ -195,7 +195,7 @@ ms.locfileid: "41599799"
 
 例如，在下图中，空气根据创建的新收件箱规则确定了安全指标和异常情况。 可通过此选项卡中的详细视图查看调查的其他详细信息（证据）。损坏的迹象和异常也可能包含来自[Microsoft 云应用安全性](https://docs.microsoft.com/cloud-app-security)的异常检测。
 
-![空中调查用户页](../media/air-investigationuserspage.png)
+![空中调查用户页](../../media/air-investigationuserspage.png)
 
 可执行下列操作：
 - 获取已确定的用户结果和发现的风险的直观概述。
@@ -205,7 +205,7 @@ ms.locfileid: "41599799"
 
 在 "**计算机**" 选项卡上，您可以看到标识为调查的一部分的所有计算机。 
 
-![空中调查计算机页面](../media/air-investigationmachinepage.png)
+![空中调查计算机页面](../../media/air-investigationmachinepage.png)
 
 作为一些行动手册的一部分，空中将电子邮件威胁与设备（例如 Zapped 恶意软件）相关联。 例如，调查会将恶意文件哈希传递到[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 )以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。 
@@ -220,19 +220,19 @@ ms.locfileid: "41599799"
 
 在这里，您可以查看调查的实体和实体类型的详细信息，例如电子邮件、群集、IP 地址、用户等。 您还可以查看已分析的实体数以及与每个实体相关联的威胁。 
 
-!["航空调查实体" 页](../media/air-investigationentitiespage.png)
+!["航空调查实体" 页](../../media/air-investigationentitiespage.png)
 
 可执行下列操作：
 - 获取发现的调查实体和威胁的直观概述。
 - 选择一个实体以打开显示相关实体详细信息的飞出页面。
 
-![空中调查实体详细信息](../media/air-investigationsentitiespagedetails.png)
+![空中调查实体详细信息](../../media/air-investigationsentitiespagedetails.png)
 
 ### <a name="playbook-log"></a>行动手册日志
 
 在 "**日志**" 选项卡上，您可以查看调查过程中的所有操作手册步骤。 该日志将捕获由 Office 365 自动调查功能作为空气的一部分完成的所有分析器和操作的完整清单。 它提供了所执行的所有步骤的清晰视图，包括操作本身、说明以及实际 "开始到完成" 的持续时间。 
 
-![航空调查日志页](../media/air-investigationlogpage.png)
+![航空调查日志页](../../media/air-investigationlogpage.png)
 
 可执行下列操作：
 - 获取有关执行操作手册步骤的直观概述。
@@ -266,7 +266,7 @@ ms.locfileid: "41599799"
 
 操作会捕获 Microsoft 建议在调查结束时执行的步骤。 您可以通过选择一个或多个操作来采取补救措施。 单击 "**批准**" 可开始进行修正。 （需要适当的权限-需要 "搜索和清除" 角色才能从资源管理器和 AIR 运行操作）。 例如，安全读者可以查看操作但不能批准。 注意：无需批准每个操作。 如果您不同意建议的操作，或者您的组织未选择特定类型的操作，则可以选择**拒绝**这些操作，也可以仅忽略它们，不执行任何操作。 通过审核和/或拒绝所有操作，可以完全关闭调查（状态变为已修正），同时保留某些操作不完整将导致调查状态更改为 "部分修正" 状态。
 
-![航空调查操作页](../media/air-investigationactionspage.png)
+![航空调查操作页](../../media/air-investigationactionspage.png)
 
 可执行下列操作：
 - 获取对操作手册建议的操作的直观概述。
@@ -319,11 +319,11 @@ ms.locfileid: "41599799"
 
 例如，假设您正在查看资源管理器中有关用户报告的消息的数据。 您可以在结果列表中选择一个项目，然后从 "操作" 菜单中单击 "**调查**" （假设您有相应的修正权限）。
 
-![使用调查按钮的资源管理器中的用户报告的消息](../media/Explorer-UserReported-Investigate.png)
+![使用调查按钮的资源管理器中的用户报告的消息](../../media/Explorer-UserReported-Investigate.png)
 
 作为另一个示例，假设您要查看检测为包含恶意软件的电子邮件的数据，并且有几封电子邮件被检测为包含恶意软件。 您可以选择 "**电子邮件**" 选项卡，选择一个或多个电子邮件，然后在 "**操作**" 菜单上选择 "**调查**"。 
 
-![在资源管理器中开始调查恶意软件](../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![在资源管理器中开始调查恶意软件](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 与由警报触发的行动手册类似，通过资源管理器中的视图触发的自动调查包括根调查、标识和关联威胁的步骤以及缓解这些威胁的建议操作。
 

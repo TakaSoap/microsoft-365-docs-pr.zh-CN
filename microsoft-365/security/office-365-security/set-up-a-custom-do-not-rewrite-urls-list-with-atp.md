@@ -17,12 +17,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全链接策略时，可以包括 "不重写" 的 Url 列表，以使组织中的某些人能够访问包含在列表中的网站。
-ms.openlocfilehash: 3a2fd98adc1eee36a984ac09b80546ae6b98e31d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1983e0ff2ea85092af483d4f7a563681a6441152
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598369"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082203"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
 
@@ -54,7 +54,7 @@ ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "
 
 2. 在左侧导航中的 "**威胁管理** \> **策略** \> **安全链接**" 下。
 
-3. 在 "**适用于特定收件人的策略**" 部分，选择 "**新建**" （"新建" 按钮类似**+** 于加号（））以创建新策略。 （也可以编辑现有策略。）<br/>![选择 "新建" 为特定的电子邮件收件人添加安全链接策略](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. 在 "**适用于特定收件人的策略**" 部分，选择 "**新建**" （"新建" 按钮类似**+** 于加号（））以创建新策略。 （也可以编辑现有策略。）<br/>![选择 "新建" 为特定的电子邮件收件人添加安全链接策略](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. 为策略指定名称和说明。
 

@@ -15,12 +15,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 您可以为适用于域的默认公司范围的垃圾邮件筛选器策略或自定义垃圾邮件筛选器策略配置最终用户垃圾邮件通知。
-ms.openlocfilehash: f7ef916eea8d9c926f53ef073874dfb299cb92f8
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: cc3054715fdc5cbe72bc6655462b61eb8a9db5d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957387"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086461"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>在 Exchange Online 中配置最终用户垃圾邮件通知
 
@@ -63,14 +63,14 @@ ms.locfileid: "41957387"
     
    - **通知语言**使用下拉列表，选择为此策略编写最终用户垃圾邮件通知所使用的语言。 
     
-   - 单击“保存”****。 在右侧窗格中将显示垃圾邮件筛选器策略设置的摘要，包括您的最终用户垃圾邮件通知设置。
+   - 单击“**保存**”。 在右侧窗格中将显示垃圾邮件筛选器策略设置的摘要，包括您的最终用户垃圾邮件通知设置。
     
 > [!NOTE]
 >  最终用户垃圾邮件通知将仅适用于启用的垃圾邮件筛选器策略。 >  每天只发送一次最终用户垃圾邮件通知。 无法保证和配置任何特定客户的通知发送时间。 
   
  **提示：** 如果要在完全实现最终用户垃圾邮件通知之前将其发送给一组有限的用户，请创建自定义垃圾邮件筛选器策略，为用户驻留的域启用最终用户垃圾邮件通知。 然后，在 EAC 中的 "**邮件流\>规则**" 下，创建邮件流规则（也称为传输规则），以阻止来自 quarantine@messaging.microsoft.com （发送通知的电子邮件地址）的邮件，但要接收通知的用户例外。 下图是为 Contoso.com 域中的两个用户（SaraD 和 AlexD）创建一个异常的示例： 
   
-![测试最终用户垃圾邮件通知的传输规则](../media/EOP-ESN-testspecificusers.jpg)
+![测试最终用户垃圾邮件通知的传输规则](../../media/EOP-ESN-testspecificusers.jpg)
   
 ## <a name="use-the-scc-to-configure-end-user-spam-notifications"></a>使用 SCC 配置最终用户垃圾邮件通知
 
@@ -90,9 +90,9 @@ ms.locfileid: "41957387"
     
    - **通知语言**使用下拉列表，选择为此策略编写最终用户垃圾邮件通知所使用的语言。 
     
-   - 单击“保存”****。 包含最终用户垃圾邮件通知设置的垃圾邮件筛选器策略设置摘要将显示在 "" 窗格中。
+   - 单击“**保存**”。 包含最终用户垃圾邮件通知设置的垃圾邮件筛选器策略设置摘要将显示在 "" 窗格中。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>详细信息
 
 [配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)
   

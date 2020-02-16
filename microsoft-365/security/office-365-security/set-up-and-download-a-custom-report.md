@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: 了解如何在安全&amp;合规中心中设置和下载具有自定义日期范围和筛选器的报表。
-ms.openlocfilehash: 0de4b9bf2ac8d16c0e0ecc38fa69a3c9bf5e2774
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598379"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087985"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中设置和下载自定义报告
 
@@ -34,11 +34,11 @@ ms.locfileid: "41598379"
   
 1. 在 "[安全&amp;合规性中心](https://protection.office.com)" 中，转到 "**报告** \> "**仪表板**。
     
-2. 选择报告。 （在此示例中，我们将使用邮件处置报表。）<br/>![选择 "请求报告" 以下载报告](../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. 选择报告。 （在此示例中，我们将使用邮件处置报表。）<br/>![选择 "请求报告" 以下载报告](../../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
 3. 在报表的左上角，选择 "**请求报告**"。
     
-4. 在 "**请求报告**" 对话框中，指定报告的名称、开始日期和结束日期。 然后选择 "**下一步**"。<br/>![在 "安全&amp;合规性中心" 中\> ，选择 "报告报告以供下载"](../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. 在 "**请求报告**" 对话框中，指定报告的名称、开始日期和结束日期。 然后选择 "**下一步**"。<br/>![在 "安全&amp;合规性中心" 中\> ，选择 "报告报告以供下载"](../../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
 5. 指定要用于报表的任何筛选器。 （例如，您可以为邮件处置报告指定客户端 IP 地址。）然后选择 "**下一步**"。
     

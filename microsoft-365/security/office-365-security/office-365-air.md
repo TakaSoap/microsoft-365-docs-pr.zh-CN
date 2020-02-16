@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
-ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598759"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088311"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>在 Office 365 中自动调查和响应威胁
 
@@ -55,11 +55,11 @@ ms.locfileid: "41598759"
 
     每种方法都将转到调查列表。
 
-    ![空气的主要调查页面](../media/air-maininvestigationpage.png) 
+    ![空气的主要调查页面](../../media/air-maininvestigationpage.png) 
 
 3. 在调查列表中，选择 " **ID** " 列中的项目。 这将打开 "调查详细信息" 页，从视图中的调查图形开始。
 
-    ![空中调查图形页面](../media/air-investigationgraphpage.png)
+    ![空中调查图形页面](../../media/air-investigationgraphpage.png)
 
 4. 使用各种选项卡了解有关调查的详细信息。
 
@@ -107,7 +107,7 @@ ms.locfileid: "41598759"
 
 使用以下资源对此进行设置：
 
-|资源  |说明  |
+|Resource  |说明  |
 |---------|---------|
 |[Office 365 管理 API 概述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |使用 Office 365 管理活动 API，可从 Office 365 和 Azure Active Directory 活动日志中获取各个用户、管理员、系统以及策略操作和事件的相关信息。         |
 |[Office 365 管理 API 入门](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |Office 365 管理 API 使用 Azure AD 为应用程序提供用于访问 Office 365 数据的身份验证服务。 请按照本文中的步骤进行设置。          |

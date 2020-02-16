@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的 "邮件流" 仪表板中的 "修复发件人域的洞察力"。
-ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598819"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082554"
 ---
 # <a name="fix-sender-domain-insight"></a>修复发件人域见解
 
@@ -36,15 +36,15 @@ Office 365 需要从内部本地电子邮件环境发送到 Office 365 的邮件
 
 **Fix sender domain**真知灼见显示从本地环境中不符合条件的电子邮件，可帮助您识别本地电子邮件环境中可能受到危害的计算机和用户帐户，并帮助您采取补救措施。
 
-![安全 & 合规性中心的邮件流仪表板中的修补发件人域洞察力](../media/sender-domain-insight-selected.png)
+![安全 & 合规性中心的邮件流仪表板中的修补发件人域洞察力](../../media/sender-domain-insight-selected.png)
 
 当您单击 "**查看详细信息**" 时，会转到另一个小部件，其中包含更多详细信息，如下图中所示：
 
-![修复发件人域洞察力中的详细信息小部件](../media/sender-domain-view-details.png)
+![修复发件人域洞察力中的详细信息小部件](../../media/sender-domain-view-details.png)
 
 你将看到用于将邮件传递到 Office 365 的入站连接器。 您还可以单击 "**查看示例邮件 id** " 以查看从您的本地电子邮件环境中发送的邮件的详细信息。 由于这些邮件是由 Office 365 拒绝的，因此不能使用邮件跟踪，但可以使用示例邮件 id 来跟踪本地电子邮件环境中的邮件。
 
-![查看修补发件人域洞察力中的示例邮件 id](../media/sender-domain-view-sample-message-ids.png)
+![查看修补发件人域洞察力中的示例邮件 id](../../media/sender-domain-view-sample-message-ids.png)
 
 ## <a name="see-also"></a>另请参阅
 

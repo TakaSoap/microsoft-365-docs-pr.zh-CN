@@ -17,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 中的威胁智能功能。高级威胁防护可帮助您研究组织的威胁、响应恶意软件、网络钓鱼和 Office 365 已代表您检测到的其他攻击，并搜索威胁指示器.
-ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4bd23dcafeed2faf04979b2c757d5517073a210d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598749"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082470"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 威胁调查和响应
 
@@ -47,7 +47,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 使用 "威胁" 仪表板（也称为 "安全"[仪表板](security-dashboard.md)）快速查看已解决的威胁，并以直观方式向业务决策者报告 Office 365 服务如何保护您的业务。
   
-![威胁仪表板](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+![威胁仪表板](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 若要查看和使用此仪表板，请在 Office &amp; 365 安全合规中心中，转到 "**威胁管理** \> "**仪表板**。
   
@@ -55,7 +55,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 使用[威胁浏览器（和实时检测）](threat-explorer.md)来分析威胁，查看一段时间内的攻击量，并根据威胁系列、攻击者基础结构等对数据进行分析。 威胁资源管理器（也称为浏览器）是任何安全分析员的调查工作流的起始位置。
   
-![威胁资源管理器](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![威胁资源管理器](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
 若要查看和使用此报告，请在 Office 365 &amp;安全合规性中心中，转到 "**威胁管理** \> **资源管理器**"。
   
@@ -63,11 +63,11 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 使用 "事件" 列表（也称为 "调查"）查看飞行安全事件的列表。 事件用于跟踪可疑电子邮件等威胁，并进行进一步调查和修正。
   
-![Office 365 中的当前威胁事件列表](../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![Office 365 中的当前威胁事件列表](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
 若要查看您的组织的当前事件列表，请在安全&amp;合规性中心中，转到 "**威胁管理** \> **审核** \> **事件**"。
   
-![在 "安全&amp;合规性中心" 中， \>选择 "威胁管理审核"](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![在 "安全&amp;合规性中心" 中， \>选择 "威胁管理审核"](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### <a name="attack-simulator"></a>攻击模拟器
 
@@ -81,7 +81,7 @@ Office 365 中的威胁调查和响应功能[高级威胁防护](office-365-atp.
 
 作为 Office 365 高级威胁防护计划2产品的一部分，安全分析员可以查看已知威胁的详细信息。 这有助于确定是否存在可采取的更多预防措施/步骤，以确保用户安全。
   
-![显示有关最近威胁的信息的安全趋势](../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
+![显示有关最近威胁的信息的安全趋势](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
 ## <a name="how-do-we-get-these-capabilities"></a>如何获取这些功能？
 

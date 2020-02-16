@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4491504616eb4bb447f12d08dddb12c73c2a88ac
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962619"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085933"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 咨询服务
 
@@ -35,7 +35,7 @@ ms.locfileid: "39962619"
 
 通过将应用程序信息上载到 Microsoft 托管桌面门户来启动打包过程。 打包团队每星期四查看一次新的提交。 查看和打包后，打包后的应用程序将在下星期五提供。 可以将每周最长5个应用打包到开始，但服务可进行扩展以满足你的需求。
 
-![显示星期四（本例中为21）的应用程序流入量的日历（在此示例中为21）、下一天的媒体验证、在以下星期一打包（第25步）和应用程序交付（29号）](images/MCS-cal.png)
+![显示星期四（本例中为21）的应用程序流入量的日历（在此示例中为21）、下一天的媒体验证、在以下星期一打包（第25步）和应用程序交付（29号）](../../media/MCS-cal.png)
 
 一旦应用程序被传递，你将收到通知。 在这种情况下，你有21天的时间执行验收测试，并对 Microsoft 托管桌面门户中的工作进行签名。 如果在接受测试过程中发现应用程序出现问题，请在 Microsoft 托管桌面门户中拒绝应用程序，并通过电子邮件通过 MCS 包装程序进行连接，以了解并解决该问题。
 

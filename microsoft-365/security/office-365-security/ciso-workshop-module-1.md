@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: e90c26575db04afffd5e5c2722b75a1c7235523d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a527816ca701e2f2e9ab2e8d2b9b20cad1230a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599919"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086561"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO 研讨会模块1： Microsoft Cybersecurity 简报
 
 本模块概述了有关关键安全卫生、Microsoft cybersecurity 参考体系结构、cybersecurity 恢复能力、Internet 内容（IoT）和运营技术人员的概述。
 
-- 下载 PDF 摘要：[模块1： Microsoft Cybersecurity 简介](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- 下载 PDF 摘要：[模块1： Microsoft Cybersecurity 简介](../../media/ciso-workshop-1-cybersecurity-briefing.pdf)
 - 下载 PowerPoint 摘要：[模块1： Microsoft Cybersecurity 简介](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ## <a name="part-1-course-introduction-and-overview-913"></a>第1部分：课程简介和概述（9:13）

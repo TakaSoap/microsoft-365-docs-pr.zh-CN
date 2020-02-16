@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: faa0e904ef2a07ccd209ef91630ce6fc8205e347
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801191"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085703"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的管理员支持
 
@@ -57,7 +57,7 @@ ms.locfileid: "40801191"
 
 一旦票证处于 "已**缓解**" 或 "**已解决**" 状态，就可以共享有关您对该特定问题的体验的反馈。 若要执行此操作，请转到管理门户中的 "**支持请求**" 页。 选择特定的票证。 在显示在右侧的 "飞入" 中，选择 "**反馈**" 选项卡，并提供所需的信息。 请注意不要在反馈表单中包含任何个人信息。 有关隐私的详细信息，请参阅[Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。
 
-![反馈表单](images/feedback_form.png)
+![反馈表单](../../media/feedback_form.png)
 
 ## <a name="provide-administrator-rights-to-specific-users"></a>向特定用户提供管理员权限
 

@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解有关威胁跟踪程序的信息，包括新的重要跟踪程序，以帮助您的组织保持安全方面的顾虑。
-ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 50566abfa7bec55fb42465132361971113453a06
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957357"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084445"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
@@ -34,11 +34,11 @@ ms.locfileid: "41957357"
 
 威胁跟踪程序是信息小组件和视图，为您提供有关可能影响贵公司的不同 cybersecurity 问题的智能。 例如，您可以使用威胁跟踪程序查看有关趋势恶意软件活动的信息。
   
-![显示恶意软件市场的威胁跟踪程序示例](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![显示恶意软件市场的威胁跟踪程序示例](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
 大多数跟踪器页面包括定期更新的趋势编号、小部件，可帮助您了解哪些问题最大或增长最多，以及将您带到资源管理器的 "**操作**" 列中的快速链接，您可以在其中查看更详细的信息。 
   
-![资源管理器中的市场活动信息示例](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![资源管理器中的市场活动信息示例](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
 跟踪跟踪只是您在[Office 365 高级威胁防护计划 2](office-365-ti.md)中获得的众多强大功能中的少数几个。 威胁跟踪包括[Noteworth 跟踪](#noteworthy-trackers)跟踪、[趋势跟踪跟踪](#trending-trackers)、[跟踪的查询](#tracked-queries)和[已保存的查询](#saved-queries)。
   
@@ -57,7 +57,7 @@ ms.locfileid: "41957357"
 
 趋势跟踪程序（以前称为市场活动）重点介绍在过去一周内组织的电子邮件中收到的新威胁。
   
-![趋势恶意软件市场小部件的示例](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![趋势恶意软件市场小部件的示例](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
 趋势跟踪程序为您提供了新的威胁，您应查看这些威胁，以确保您的更广泛的公司环境对攻击进行了准备。
   
@@ -65,13 +65,13 @@ ms.locfileid: "41957357"
 
 跟踪的查询利用您保存的查询定期评估组织中的 Office 365 活动。 这为你提供了事件趋势，并增加了未来几个月的时间。 跟踪的查询将自动运行，为你提供最新信息，而无需记住重新运行你的查询。
   
-![选定了一个的跟踪查询的示例](../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![选定了一个的跟踪查询的示例](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### <a name="saved-queries"></a>已保存的查询
 
 已保存的查询也位于跟踪栏部分。 您可以使用保存的查询来存储要快速且重复的常见资源管理器搜索，而无需每次都重新创建搜索。
   
-![选定了一个的已保存查询的示例](../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![选定了一个的已保存查询的示例](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
 您可以使用资源管理器页面顶部的 "**保存查询**" 按钮，始终保存重要的跟踪器查询或您自己的任何资源管理器查询。 保存的任何内容将显示在 "跟踪程序" 页上的 "**已保存的查询**" 列表中。 
   
@@ -81,13 +81,13 @@ ms.locfileid: "41957357"
   
 请注意，您可以通过单击[Office 365 安全&amp;符合性中心概述](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)的右下角的 "**反馈**" 按钮，随时为我们提供有关此或其他 Office 365 安全功能的反馈。
   
-![Office 365 Security &amp; Compliance Center](../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>跟踪跟踪和 Office 365 高级威胁防护
 
 通过我们的 inaugural 值得注意的威胁，我们突出显示了[Office 365 ATP 安全附件](atp-safe-attachments.md)检测到的高级恶意软件威胁。 如果你是 Office 365 企业版 E5 客户，并且未使用[Office 365 高级威胁防护](office-365-atp.md)（ATP），则应为-它包含在你的订阅中。 即使您有其他安全工具筛选与 Office 365 服务的电子邮件流，ATP 也能提供值。 但是，当您的主要电子邮件安全解决方案是 Office 365 时，反垃圾邮件和[Office 365 ATP 安全链接](atp-safe-links.md)功能将发挥最佳效果。 
   
-![安全&amp;合规性中心中的 ATP](../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![安全&amp;合规性中心中的 ATP](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 在当今的威胁-riddled world 中，仅运行传统的反恶意软件扫描意味着您不能充分抵御攻击。 如今，更复杂的攻击者使用常用工具来创建不受传统签名的反恶意软件引擎识别的新的、模糊的或延迟的攻击。 ATP 安全附件功能会获取电子邮件附件，并将其 detonates 在虚拟环境中，以确定它们是安全的还是恶意的。 此沙箱进程在虚拟计算机环境中打开每个文件，然后观察在打开文件后会发生什么情况。 无论是 PDF、压缩文件还是 Office 文档，恶意代码都可以隐藏在文件中，只有在受害者在其计算机上打开它后才激活。 通过 detonating 和分析电子邮件流中的文件，Office 365 ATP 功能将根据行为、文件信誉和许多试探规则找到这些威胁。
   

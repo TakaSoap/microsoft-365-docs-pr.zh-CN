@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962199"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084983"
 ---
 # <a name="getting-help-for-end-users"></a>获取最终用户的帮助
 
@@ -24,7 +24,7 @@ ms.locfileid: "39962199"
 
 为您的用户提供支持的首选方法是**获取帮助**，这是最终用户设备中内置的易于使用的界面。  
 
-![获取帮助应用程序图标](images/get-help.png)
+![获取帮助应用程序图标](../../media/get-help.png)
 
 这是安装在所有 Microsoft 托管桌面设备上并固定到任务栏的应用程序。 
 

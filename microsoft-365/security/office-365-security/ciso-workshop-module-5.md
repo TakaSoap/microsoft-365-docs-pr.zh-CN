@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: 50e13b846d861a21c4b36ef25c579d592760edde
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f62c4e1f6e30e53d7aed8ac259f5422c0c170f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599659"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086471"
 ---
 # <a name="ciso-workshop-module-5-information-protection"></a>CISO 研讨会模块5：信息保护
 
 了解如何在任何位置使用自动分类和跨设备的永久性加密来保护敏感信息。 包括有关跨移动设备、云服务和其他公司资产连续监控数据的信息。
 
-- 下载 PDF 摘要：[模块5：信息保护](../media/ciso-workshop-5-information-protection-strategy.pdf)
+- 下载 PDF 摘要：[模块5：信息保护](../../media/ciso-workshop-5-information-protection-strategy.pdf)
 - 下载 PowerPoint 摘要：[模块5：信息保护](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-5-information-protection-strategy.pptx)
 
 ## <a name="introduction-information-protection-304"></a>简介：信息保护（3:04）

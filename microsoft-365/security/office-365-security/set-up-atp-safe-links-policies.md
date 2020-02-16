@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 4ae3b75ce13b783bc8a373202a0ae42bb14d7cfc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f06b2b895899973d071df384b53a090b766fd77f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598359"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082223"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -71,7 +71,7 @@ ms.locfileid: "41598359"
     
 2. 在左侧导航中的 "**威胁管理**" 下，选择 "**策略\> ** **安全链接**"。
     
-3. 在 "**适用于整个组织的策略**" 部分，选择 "**默认**"，然后选择 "**编辑**" （"编辑" 按钮类似于铅笔）。<br/>![单击 "编辑" 编辑安全链接保护的默认策略](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. 在 "**适用于整个组织的策略**" 部分，选择 "**默认**"，然后选择 "**编辑**" （"编辑" 按钮类似于铅笔）。<br/>![单击 "编辑" 编辑安全链接保护的默认策略](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. 在 "**阻止以下 url** " 部分中，指定要阻止组织中的用户访问的一个或多个 url。 （请参阅[使用 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)。）
     
@@ -89,7 +89,7 @@ ms.locfileid: "41598359"
     
 3. 选择 "**安全链接**"。
     
-4. 在 "**适用于特定收件人的策略**" 部分，选择 "**新建**" （"新建" 按钮类似**+** 于 "加号" （））。<br/>![选择 "新建" 为特定的电子邮件收件人添加安全链接策略](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. 在 "**适用于特定收件人的策略**" 部分，选择 "**新建**" （"新建" 按钮类似**+** 于 "加号" （））。<br/>![选择 "新建" 为特定的电子邮件收件人添加安全链接策略](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. 指定策略的名称、说明和设置。<br/>**示例：** 若要设置一个名为 "无直接单击" 的策略，且不允许组织中特定组中的用户在没有 ATP 安全链接保护的情况下单击特定网站，可以指定以下推荐设置： 
     

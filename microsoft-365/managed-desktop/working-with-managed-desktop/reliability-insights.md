@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1f642d2790af5f4ec83dd1bbe57a9be249d095d1
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: b7f56a64f1846676f458f7b3ddb210e84b9ca8f7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962329"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085663"
 ---
 # <a name="reliability-insights"></a>可靠性见解
 
 此视图为你提供托管设备的运行状况摘要。 若要查看可靠性数据，请选择 "**可靠性**" 选项卡。
 
 
-![可靠性窗格：左上角的设备之间的可靠性、右上角的时间图表的可靠性、顶级问题表在底部。 右下方的帮助和反馈按钮。](images/insights_reliability.png)
+![可靠性窗格：左上角的设备之间的可靠性、右上角的时间图表的可靠性、顶级问题表在底部。 右下方的帮助和反馈按钮。](../../media/insights_reliability.png)
 
 "**跨设备的可靠性**" 部分通过报告被视为 "正常" 的设备的百分比以及自上次报告失败后观测到的平均时间，在最近14天中提供了部署的快速运行状况摘要。 
 

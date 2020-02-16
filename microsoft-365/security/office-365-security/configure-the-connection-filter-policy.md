@@ -16,12 +16,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要确保从不受信任的人发送的电子邮件被阻止，可以使用连接筛选器策略创建您信任的 IP 地址的允许列表（也称为 "安全发件人列表"）。 您还可以创建阻止的发件人列表。
-ms.openlocfilehash: 06915527af68df6a858ca8ed97612ab40178be84
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db0d7acc6189f29b247c1dc4004311d2843d139b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599589"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086281"
 ---
 # <a name="configure-the-connection-filter-policy"></a>配置连接筛选器策略
 
@@ -60,7 +60,7 @@ ms.locfileid: "41599589"
 
 2. 单击“连接筛选”**** 菜单项目，然后创建所需列表：IP 允许列表和/或 IP 阻止列表。
 
-   若要创建这些列表， ![请单击](../media/ITPro-EAC-AddIcon.gif)"添加图标"。 重复此过程以添加其他地址。 （您还可以在添加完 IP 地址后编辑或删除它们。 ）
+   若要创建这些列表， ![请单击](../../media/ITPro-EAC-AddIcon.gif)"添加图标"。 重复此过程以添加其他地址。 （您还可以在添加完 IP 地址后编辑或删除它们。 ）
 
    以 nnn 的格式指定 IPV4 IP 地址。 nnn 为0到255之间的数字。 您也可以采用 nnn.nnn.nnn.nnn/rr 格式指定无类别域际路由选择 (CIDR) 的范围，其中 rr 代表 24 至 32 的任意数字。 若要指定从24至32范围之外的范围，请参阅下一节：[配置 IP 允许列表时的其他注意事项](#additional-considerations-when-configuring-ip-allow-lists)。
 
@@ -83,13 +83,13 @@ ms.locfileid: "41599589"
 
 1. 在 EAC 中，导航到 "**邮件流** \> "**规则**。
 
-2. 单击!["添加](../media/ITPro-EAC-AddIcon.gif)图标"，然后选择 "**创建新规则**"。
+2. 单击!["添加](../../media/ITPro-EAC-AddIcon.gif)图标"，然后选择 "**创建新规则**"。
 
 3. 为该规则命名，然后单击“更多选项”****。
 
 4. 在“应用此规则的条件”**** 下，选择“发件人”****，然后选择“IP 地址处于这些范围之内或准确匹配”****。
 
-5. 在 "**指定 ip 地址**" 中，指定 ip 地址范围， **** ![单击 "添加](../media/ITPro-EAC-AddIcon.gif)" "添加图标"，然后单击 **"确定"**。
+5. 在 "**指定 ip 地址**" 中，指定 ip 地址范围， **** ![单击 "添加](../../media/ITPro-EAC-AddIcon.gif)" "添加图标"，然后单击 **"确定"**。
 
 6. 在“执行以下操作”**** 框下，通过选择“修改邮件属性”**** 和“设置垃圾邮件可信度 (SCL)”**** 来设置操作。在“指定 SCL”**** 框中，选择“绕过垃圾邮件筛选”****，然后单击“确定”****。
 
@@ -109,19 +109,19 @@ ms.locfileid: "41599589"
 
 1. 在 EAC 中，导航到 "**邮件流** \> "**规则**。
 
-2. 单击!["添加](../media/ITPro-EAC-AddIcon.gif)图标"，然后选择 "**创建新规则**"。
+2. 单击!["添加](../../media/ITPro-EAC-AddIcon.gif)图标"，然后选择 "**创建新规则**"。
 
 3. 为该规则命名，然后单击“更多选项”****。
 
 4. 在“应用此规则的条件”**** 下，选择“发件人”****，然后选择“IP 地址处于这些范围之内或准确匹配”****。
 
-5. 在 "**指定 ip 地址**" 框中，指定在 ip 允许列表中输入的 ip 地址或 ip 地址范围， **** ![单击 "添加](../media/ITPro-EAC-AddIcon.gif)" "添加" 图标，然后单击 **"确定"**。
+5. 在 "**指定 ip 地址**" 框中，指定在 ip 允许列表中输入的 ip 地址或 ip 地址范围， **** ![单击 "添加](../../media/ITPro-EAC-AddIcon.gif)" "添加" 图标，然后单击 **"确定"**。
 
 6. 在 "**执行以下**操作" 下，通过选择 **"修改邮件属性**"，然后**设置垃圾邮件可信度（SCL）** 来设置操作。 在 "**指定 SCL** " 框中，选择 " **0**"，然后单击 **"确定"**。
 
 7. 单击 "**添加例外**"，并在 "**除非**" 下选择 **"发件人"** ，然后选择 "**域为**"。
 
-8. 在 "**指定域**" 框中，输入要绕过垃圾邮件筛选的域，例如**contosob.com**。 单击 "**添加** !["](../media/ITPro-EAC-AddIcon.gif)图标将其移动到短语列表。 如果要添加其他域作为例外，请重复此步骤，然后在完成时单击“确定”****。
+8. 在 "**指定域**" 框中，输入要绕过垃圾邮件筛选的域，例如**contosob.com**。 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.gif)图标将其移动到短语列表。 如果要添加其他域作为例外，请重复此步骤，然后在完成时单击“确定”****。
 
 9. 如果需要，您可以进行选择，在特定时间内审核规则、测试规则及激活规则，或者选择进行其他操作。 我们建议首先在一段时间内测试规则，然后再强制应用。 [Exchange Server 中的邮件流规则的过程](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)包含有关这些选择的详细信息。
 
@@ -149,9 +149,9 @@ ms.locfileid: "41599589"
 
 ||
 |:-----|
-|![LinkedIn Learning 短图标](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **刚开始接触 Office 365？** 发现 LinkedIn Learning 向 **Office 365 admins and IT pros**提供的免费视频课程。|
+|![LinkedIn Learning 短图标](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **刚开始接触 Office 365？** 发现 LinkedIn Learning 向 **Office 365 admins and IT pros**提供的免费视频课程。|
 
-## <a name="for-more-information"></a>更多详细信息
+## <a name="for-more-information"></a>详细信息
 
 [Exchange Online 中的安全发件人和阻止发件人列表](safe-sender-and-blocked-sender-lists-faq.md)
 

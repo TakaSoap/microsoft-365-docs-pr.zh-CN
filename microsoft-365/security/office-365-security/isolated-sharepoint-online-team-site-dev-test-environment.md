@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。
-ms.openlocfilehash: 49443a5dd6b2c93e6bd7817c09747d49b163cabd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599119"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082993"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
@@ -142,7 +142,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 **图1**
 
-![适用于独立 SharePoint Online 组网站的 Office 365 组及其成员资格](../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![适用于独立 SharePoint Online 组网站的 Office 365 组及其成员资格](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>第3阶段：创建新的 ProjectX SharePoint Online 团队网站并将其隔离
 
@@ -208,7 +208,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 **图2**
 
-![SharePoint Online 组及其针对独立 SharePoint Online 组网站的成员身份](../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![SharePoint Online 组及其针对独立 SharePoint Online 组网站的成员身份](../../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
 
 现在，让我们来演示如何使用主导 Designer 用户帐户进行访问：
 

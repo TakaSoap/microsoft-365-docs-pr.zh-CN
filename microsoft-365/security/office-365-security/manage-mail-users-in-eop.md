@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: 53d47452979c42273fd485fa89642eea881bb21a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598979"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088581"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -32,7 +32,7 @@ ms.locfileid: "41598979"
 > [!NOTE]
 > 你可以在 Microsoft 365 管理中心添加用户，但这些用户不能用作邮件收件人。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要打开 Exchange 管理中心，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
@@ -108,7 +108,7 @@ ms.locfileid: "41598979"
 
 ### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>使用 EAC 编辑或删除邮件用户
 
-- 在 EAC 中，转到 "**收件人** \> " "**联系人**"。 在用户列表中，单击要查看或更改的用户，然后选择 "**编辑** ![编辑" 图标](../media/ITPro-EAC-EditIcon.gif)以根据需要更新用户设置。 您可以更改用户名、别名或联系人信息，还可以记录有关组织中的用户角色的详细信息。 您还可以选择用户，然后选择 "**删除** ![删除"](../media/ITPro-EAC-RemoveIcon.gif)图标将其删除。
+- 在 EAC 中，转到 "**收件人** \> " "**联系人**"。 在用户列表中，单击要查看或更改的用户，然后选择 "**编辑** ![编辑" 图标](../../media/ITPro-EAC-EditIcon.gif)以根据需要更新用户设置。 您可以更改用户名、别名或联系人信息，还可以记录有关组织中的用户角色的详细信息。 您还可以选择用户，然后选择 "**删除** ![删除"](../../media/ITPro-EAC-RemoveIcon.gif)图标将其删除。
 
 ## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>使用 Exchange Online Protection PowerShell 管理邮件用户
 

@@ -16,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主题介绍了 Exchange Online 和 Exchange Online Protection (EOP) 管理员如何在 Exchange 管理中心 (EAC) 中查找、释放和报告隔离邮件。
-ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c46ff11b8d08c46c3000232c836af8148c58511
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599389"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083083"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以管理员身份查找并释放隔离邮件
 
@@ -39,7 +39,7 @@ ms.locfileid: "41599389"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 您必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "隔离" 条目。
+- 你必须先获得权限，然后才能执行此过程或多个过程。 若要查看所需的权限，请参阅[Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的 "隔离" 条目。
 
 - 您可以在 "**隔离**" 页面上一次释放或报告多封邮件。 或者，您可以创建一个远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) cmdlet 搜索邮件，并使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet 释放邮件。
 
@@ -137,7 +137,7 @@ ms.locfileid: "41599389"
 
 2. 单击邮件以将其选中，然后单击 "**释放邮件**" 图标，如下面的屏幕截图所示。
 
-   ![显示隔离页（包含突出显示的释放邮件图标和释放选项）](../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
+   ![显示隔离页（包含突出显示的释放邮件图标和释放选项）](../../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
 
    从下拉列表中单击 "**释放所选邮件并允许发件人**"。
 
@@ -157,7 +157,7 @@ ms.locfileid: "41599389"
 
 4. 单击“释放”****。
 
-如果单击 "**刷新** ![刷新"](../media/ITPro-EAC-RefreshIcon.gif)图标刷新数据，然后双击邮件，您应该会看到它已发布到预期收件人。
+如果单击 "**刷新** ![刷新"](../../media/ITPro-EAC-RefreshIcon.gif)图标刷新数据，然后双击邮件，您应该会看到它已发布到预期收件人。
 
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>将一个或多个隔离邮件释放给所有收件人
 
@@ -184,8 +184,8 @@ ms.locfileid: "41599389"
 > [!TIP]
 > 按照[如何确保邮件不会标记为垃圾邮件](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)中的步骤，确保邮件未标记为垃圾邮件。
 
-如果单击 "**刷新**![刷新" 图标](../media/ITPro-EAC-RefreshIcon.gif)图标刷新数据，然后双击邮件，您应该会看到它已发布给预期的收件人。
+如果单击 "**刷新**![刷新" 图标](../../media/ITPro-EAC-RefreshIcon.gif)图标刷新数据，然后双击邮件，您应该会看到它已发布给预期的收件人。
 
-## <a name="for-more-information"></a>更多详细信息
+## <a name="for-more-information"></a>详细信息
 
 [隔离常见问题解答](quarantine-faq.md)

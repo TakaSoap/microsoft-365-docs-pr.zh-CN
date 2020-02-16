@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。
-ms.openlocfilehash: 3a00b6b259c94e1446b6d6dc49b0f5daa9178cbd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599399"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083251"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 管理中心
 
@@ -41,7 +41,7 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 
 本部分将介绍 EAC 中的用户界面元素。
 
-![EOP-AdminCenter](../media/EOP-AdminCenter.png)
+![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>功能窗格
 
@@ -67,14 +67,14 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 
 |**图标**|**名称**|**Action**|
 |:-----|:-----|:-----|
-|![添加图标](../media/ITPro-EAC-AddIcon.gif)|添加、新建|使用此图标可创建一个新对象。其中一些图标有关联的向下箭头，单击该箭头会显示可以创建的其他对象。|
-|![编辑图标](../media/ITPro-EAC-EditIcon.gif)|编辑|使用此图标可编辑对象。|
-|![删除图标](../media/ITPro-EAC-DeleteIcon.gif)|删除|使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。|
-|![搜索图标](../media/ITPro-EAC-.gif)|搜索|使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。|
-|![刷新图标](../media/ITPro-EAC-RefreshIcon.gif)|刷新|使用此图标可刷新列表视图。|
-|![更多选项图标](../media/ITPro-EAC-MoreOptionsIcon.gif)|更多选项|使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如，在 "**收件人\> " 用户**单击此图标时，将显示用于执行**高级搜索**的选项。|
-|![向上键图标](../media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](../media/ITPro-EAC-DownArrowIcon.gif)|向上箭头和向下箭头|使用这些图标可以将对象的优先级上移或下移。|
-|![删除图标](../media/ITPro-EAC-RemoveIcon.gif)|删除|使用此图标可从列表中删除对象。|
+|![添加图标](../../media/ITPro-EAC-AddIcon.gif)|添加、新建|使用此图标可创建一个新对象。其中一些图标有关联的向下箭头，单击该箭头会显示可以创建的其他对象。|
+|![编辑图标](../../media/ITPro-EAC-EditIcon.gif)|编辑|使用此图标可编辑对象。|
+|![删除图标](../../media/ITPro-EAC-DeleteIcon.gif)|删除|使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。|
+|![搜索图标](../../media/ITPro-EAC-.gif)|搜索|使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。|
+|![刷新图标](../../media/ITPro-EAC-RefreshIcon.gif)|刷新|使用此图标可刷新列表视图。|
+|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多选项|使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如，在 "**收件人\> " 用户**单击此图标时，将显示用于执行**高级搜索**的选项。|
+|![向上键图标](../../media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](../../media/ITPro-EAC-DownArrowIcon.gif)|向上箭头和向下箭头|使用这些图标可以将对象的优先级上移或下移。|
+|![删除图标](../../media/ITPro-EAC-RemoveIcon.gif)|删除|使用此图标可从列表中删除对象。|
 
 ### <a name="list-view"></a>列表视图
 
@@ -86,9 +86,9 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 
 ### <a name="me-tile-and-help"></a>自有图块和帮助
 
-使用“自有”**** 图块可以注销 EAC，然后以其他用户身份登录。 从 "**帮助**![帮助"](../media/ITPro-EAC-HelpIcon.gif)图标下拉菜单中，可以执行下列操作：
+使用“自有”**** 图块可以注销 EAC，然后以其他用户身份登录。 从 "**帮助**![帮助"](../../media/ITPro-EAC-HelpIcon.gif)图标下拉菜单中，可以执行下列操作：
 
-1. **帮助**：单击!["帮助](../media/ITPro-EAC-HelpIcon.gif) " 图标可查看联机帮助内容。
+1. **帮助**：单击!["帮助](../../media/ITPro-EAC-HelpIcon.gif) " 图标可查看联机帮助内容。
 
 2. **禁用帮助气泡**：当您创建或编辑对象时，帮助气泡会显示字段的上下文帮助。 您可以关闭"帮助"气泡，如果已被禁用，也可以打开它。
 

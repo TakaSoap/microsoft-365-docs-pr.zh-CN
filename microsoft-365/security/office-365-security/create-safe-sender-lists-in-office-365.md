@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要确保收到来自特定发件人的邮件，因为您信任这些邮件及其邮件，则可以在垃圾邮件筛选器策略中调整您的允许列表。
-ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 727c0eec837627bdf7da05411f619f7705425fe7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957257"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083424"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 
@@ -63,12 +63,12 @@ ms.locfileid: "41957257"
 
 2. 添加 X 标头，以指示规则执行的操作。 在下面的示例中，您可以添加一个简单`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`的标头。 如果在此规则中有多个域，则可以根据需要更改标题文本。 **当邮件由于邮件流规则而跳过筛选时，它会在 X Forefront 垃圾邮件报告标头中标记 SFV： SKN** （**如果它位于 IP 允许列表中，它也会标记 IPV： CAL**）。 这将帮助进行故障排除。
 
-![用于绕过垃圾邮件筛选的 GUI。](../media/1-AllowList-SkipFilteringFromContoso.png)
+![用于绕过垃圾邮件筛选的 GUI。](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 > [!CAUTION]
 > 不要将邮件流规则配置为只使用*发件人域*作为跳过垃圾邮件筛选的条件。 此方法会显著增加垃圾邮件制造者可以欺骗发送域（或模拟完整电子邮件地址）。跳过所有垃圾邮件筛选、发件人身份验证检查，邮件将会在个人的 "收件箱" 中收到。
 
-![如何将 SCL 设置为减号-1。](../media/2-AllowList-SetsSCLMinus1.png)
+![如何将 SCL 设置为减号-1。](../../media/2-AllowList-SetsSCLMinus1.png)
 
 请勿将您拥有的域或受欢迎的域（例如`microsoft.com`）作为条件添加到邮件流规则。 这被认为是高风险，因为它会给不良参与者带来机会，以向您发送邮件，否则将被筛选掉。
 

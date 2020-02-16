@@ -16,12 +16,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: 通知 Office 365 和 EOP 管理员如何在电子邮件中启用和禁用安全提示。
-ms.openlocfilehash: 6b94d34b6cf8bebc0aa4032f255b874fb7d4affb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8a3bc9811aa54b0c5ae4cc8a0e2eb9aa80aef0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599409"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086237"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>启用或禁用 Office 365 中的安全提示
 
@@ -48,15 +48,15 @@ Office 365 默认为您的组织启用安全提示，我们建议您将其保持
 
 4. 在 "**策略**" 页上，选择 "**反垃圾邮件**"。
 
-    ![此屏幕截图显示如何获取安全&amp;合规性中心中的 "反垃圾邮件设置" 页。](../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
+    ![此屏幕截图显示如何获取安全&amp;合规性中心中的 "反垃圾邮件设置" 页。](../../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
 
 5. 在 "**反垃圾邮件设置**" 页上，选择 "**自定义**" 选项卡。
 
-    ![此屏幕截图显示 "安全&amp;合规中心" 的 "反垃圾邮件设置" 页上的 "自定义" 选项卡的位置。](../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
+    ![此屏幕截图显示 "安全&amp;合规中心" 的 "反垃圾邮件设置" 页上的 "自定义" 选项卡的位置。](../../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
 
 6. 如有必要，请选择 "**自定义设置**" 开关打开自定义设置。 如果自定义设置开关设置为 "**关闭**"，则无法修改垃圾邮件筛选器策略。
 
-    ![此屏幕截图显示自定义反垃圾邮件筛选器策略设置处于关闭状态。](../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
+    ![此屏幕截图显示自定义反垃圾邮件筛选器策略设置处于关闭状态。](../../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
 
 7. 展开要修改的垃圾邮件策略，然后选择 "**编辑策略**"。 例如，选择 "**默认垃圾邮件筛选器策略**" 旁边的向下箭头。 或者，如果需要，可以通过选择 "**添加策略**" 来创建新策略。
 

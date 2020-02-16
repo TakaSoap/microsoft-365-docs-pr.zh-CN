@@ -17,18 +17,18 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: 59090e53389b4e95d8987989819e71be6fce61e2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598109"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084538"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 
 [安全&amp;合规性中心](https://protection.office.com)中提供了多种报告，可帮助您了解电子邮件安全功能（如 Office 365 中的反垃圾邮件、反恶意软件和加密功能如何保护组织）。 如果您具有[所需的权限](#what-permissions-are-needed-to-view-these-reports)，则可以转到 "**报告** \> " &amp; **仪表板**，在安全合规中心中查看这些报告。
   
-![可在其中查看高级威胁防护的工作方式的仪表板](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![可在其中查看高级威胁防护的工作方式的仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 您的电子邮件安全报告包括以下内容：
 - [已泄露的用户报告（**新！**）](#compromised-users-report-new)
@@ -47,7 +47,7 @@ ms.locfileid: "41598109"
 
 此报告可供任何具有 Exchange Online Protection 的用户使用，并显示标记为可疑用户或受限制用户的用户帐户数。在帐户中，数据特别有用。输入指示用户帐户可能有问题的任何状态，甚至威胁. 通过频繁使用，已损坏的用户报告可以发现处于可疑或受限制状态的帐户中的峰值、甚至是趋势，从而提供证据可能存在安全和租户的 wellness 问题。
 
-![已泄露的用户会在 Office 365 中进行报告。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![已泄露的用户会在 Office 365 中进行报告。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="encryption-report"></a>加密报告
 
@@ -55,19 +55,19 @@ ms.locfileid: "41598109"
 
 若要查看此报告，请在安全 & 合规性中心中，转到 "**报告** \> **" 仪表板** \> **加密报告**。
 
-![加密报告](../media/encryptionreport-defaultview.png) 
+![加密报告](../../media/encryptionreport-defaultview.png) 
 
 当报告第一次打开时，您将看到有关过去七（7）天的电子邮件上使用的加密方法的数据。 通过单击屏幕右上角的 "**筛选器**"，可以更改报告中显示的日期范围和详细信息。
 
-![加密报告筛选器](../media/encryptionreport-filters.png)   
+![加密报告筛选器](../../media/encryptionreport-filters.png)   
 
 您还可以使用 "**向下分页**" 菜单查看通过加密模板（或方法）的数据。
 
-![加密方法或模板](../media/encryptionreport-breakdownby.png)
+![加密方法或模板](../../media/encryptionreport-breakdownby.png)
 
 您还可以使用 "**查看数据方式**" 菜单更改视图，以查看前五个收件人域的加密邮件数。
 
-![加密报告按菜单查看数据](../media/encryptionreport-viewdataby.png)
+![加密报告按菜单查看数据](../../media/encryptionreport-viewdataby.png)
 
 通过新的加密报告的灵活性，您可以查看趋势并采取适当的操作。 例如，如果您看到用户加密了大量的电子邮件，您可能希望添加加密策略以对某些用例自动进行加密。 （若要获取有关此的帮助，请参阅[定义邮件流规则以对 Office 365 中的电子邮件进行加密](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。）另一个示例是，如果有许多可用的加密模板，但没有用户正在使用它们，则可以考察用户是否需要针对该功能的培训。 
 
@@ -82,17 +82,17 @@ ms.locfileid: "41598109"
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **威胁防护状态**。
   
-![威胁防护状态](../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![威胁防护状态](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
 当您首次打开 "威胁 Protection 状态报告" 时，报告默认显示过去七天的数据;不过，您可以单击 "**筛选器**" 并将日期范围更改为最多90天的详细信息。 （如果使用的是试用订阅，则可能限制为30天的数据。）
 
 此报告对查看组织的[Exchange Online Protection 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)和长期趋势分析的有效性和影响非常有用。 
   
-![威胁防护状态报告筛选器](../media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
+![威胁防护状态报告筛选器](../../media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
 您还可以选择查看标识为恶意的电子邮件的数据、被标识为网络钓鱼尝试的电子邮件，或确定为包含恶意软件的电子邮件。
   
-![威胁防护状态报告视图选项](../media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
+![威胁防护状态报告视图选项](../../media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
   
 ## <a name="malware-detections-report"></a>恶意软件检测报告
 
@@ -100,7 +100,7 @@ ms.locfileid: "41598109"
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **恶意软件检测**。
   
-![恶意软件检测报告示例](../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
+![恶意软件检测报告示例](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
 与其他报告（如 "[威胁防护状态报告](#threat-protection-status-report)"）类似，报告默认显示过去七天的数据。 不过，您可以选择**筛选器**来更改日期范围。 
   
@@ -110,13 +110,13 @@ ms.locfileid: "41598109"
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> "**热门恶意软件**"。
   
-![SCC-EOP 主要恶意软件](../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+![SCC-EOP 主要恶意软件](../../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
 当您将鼠标指针悬停在饼图中时，您可以看到某种类型的恶意软件的名称以及检测到该恶意软件的邮件数。
   
 单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。
   
-![此报告显示为你的组织检测到的主要恶意软件](../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
+![此报告显示为你的组织检测到的主要恶意软件](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
   
 在图表下方，你将看到检测到的恶意软件的列表以及检测到该恶意软件的邮件数。
   
@@ -126,7 +126,7 @@ ms.locfileid: "41598109"
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **顶部的发件人和收件人**。
   
-![若要查看此报告，请在&amp;安全合规性中心中， \>转\>到 "报告" 仪表板主要发件人和收件人](../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
+![若要查看此报告，请在&amp;安全合规性中心中， \>转\>到 "报告" 仪表板主要发件人和收件人](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
 当您将鼠标指针悬停在饼图中时，您可以看到发送或接收的邮件数。
   
@@ -134,7 +134,7 @@ ms.locfileid: "41598109"
   
 使用 "**显示数据**" 列表选择是查看主要发件人、收件人、垃圾邮件收件人和恶意软件收件人的数据。 您还可以查看[Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop)检测到的恶意软件的接收人。 
   
-![使用 "显示数据" 列表查看特定信息](../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
+![使用 "显示数据" 列表查看特定信息](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
 在图表下方，你将看到首要的电子邮件发件人或收件人，以及在给定时间段内发送或接收的邮件数。
   
@@ -144,7 +144,7 @@ ms.locfileid: "41598109"
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **欺骗邮件**。
   
-![在安全&amp;合规性中心中，转到\> " \>报告" 仪表板欺骗邮件](../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![在安全&amp;合规性中心中，转到\> " \>报告" 仪表板欺骗邮件](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
 当您将鼠标指针悬停在图表中的某一天时，您可以看到通过的欺骗邮件的数量。
   
@@ -156,13 +156,13 @@ ms.locfileid: "41598109"
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **垃圾邮件检测**。
   
-![若要查看此报告，请在&amp;安全合规性中心中， \>转\>到 "报告" 仪表板 EOP 垃圾邮件检测](../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+![若要查看此报告，请在&amp;安全合规性中心中， \>转\>到 "报告" 仪表板 EOP 垃圾邮件检测](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
 当您将鼠标指针悬停在图表中的某一天时，您可以看到该日已被阻止的项目数，以及这些项目的分类方式。 例如，您可以查看筛选出的垃圾邮件的数量，以及来自阻止的 Internet 协议（IP）地址的项目数。
   
 单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。
   
-![垃圾邮件检测报告可告知您阻止或筛选出的垃圾邮件数](../media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
+![垃圾邮件检测报告可告知您阻止或筛选出的垃圾邮件数](../../media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
 在图表下方，你将看到检测到的垃圾邮件项目的列表。 选择一个项目以查看其他信息，例如垃圾邮件项目是否为入站或出站、其邮件 ID 及其收件人。 若要了解有关反垃圾邮件保护的详细信息，请参阅[Office 365 电子邮件反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)。
   
@@ -172,7 +172,7 @@ ms.locfileid: "41598109"
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **发送和接收电子邮件**。
   
-![若要查看此报告，请在&amp;安全合规性中心中， \>转\>到 "报告" 仪表板发送和接收电子邮件](../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
+![若要查看此报告，请在&amp;安全合规性中心中， \>转\>到 "报告" 仪表板发送和接收电子邮件](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
 当您将鼠标指针悬停在图表中的某一天时，可以看到传入的邮件数以及这些邮件的分类方式。 例如，您可以查看检测到包含恶意软件的邮件数，以及被标识为垃圾邮件的邮件数。
   
@@ -180,11 +180,11 @@ ms.locfileid: "41598109"
   
 您可以使用 "**分解依据**" 列表按类型或按方向（传入和传出）查看信息。 
   
-![使用 "分解依据" 列表按类型或方向查看信息](../media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
+![使用 "分解依据" 列表按类型或方向查看信息](../../media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
   
 在图表下方，您将看到一个电子邮件类别的列表，如**GoodMail**、 **SpamContentFiltered**等。 选择类别以查看其他信息，例如对恶意软件所执行的操作以及电子邮件是传入的还是传出的。
   
-![此报告告诉你有关反恶意软件、反垃圾邮件和其他邮件检测](../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
+![此报告告诉你有关反恶意软件、反垃圾邮件和其他邮件检测](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
 若要了解有关电子邮件智能的详细信息，请参阅[Office 365 中的邮件流智能](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)。
   
@@ -194,7 +194,7 @@ ms.locfileid: "41598109"
   
 详细信息可用于每封邮件，包括传递原因、为您的组织配置的垃圾邮件策略例外或邮件流规则。 若要查看详细信息，请在 "用户报告" 列表中选择一个项目，然后查看 "**摘要**" 和 "**详细信息**" 选项卡上的信息。 
   
-!["用户报告的邮件" 报告显示用户标记为垃圾邮件、非垃圾邮件或网络钓鱼尝试的邮件。](../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+!["用户报告的邮件" 报告显示用户标记为垃圾邮件、非垃圾邮件或网络钓鱼尝试的邮件。](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，执行以下操作之一：
   
@@ -202,7 +202,7 @@ ms.locfileid: "41598109"
     
 - 转到 "**威胁管理** \> "**查看** \> **用户报告的邮件**。
     
-![在 "安全&amp;合规性中心" 中， \>选择\> "威胁管理" 查看用户报告的消息](../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![在 "安全&amp;合规性中心" 中， \>选择\> "威胁管理" 查看用户报告的消息](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
 > 为了使用户报告的邮件报告正常工作，必须为您的 Office 365 环境**打开审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。 

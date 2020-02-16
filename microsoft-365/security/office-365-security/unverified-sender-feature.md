@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止仿冒邮件到达邮箱，Outlook.com 和 web 上的 Outlook 验证发件人是否是他们所说的人，并将可疑邮件标记为垃圾邮件。
-ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 513a45594dd41db56abe143ea6edca7074539d2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957247"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081994"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
@@ -40,7 +40,7 @@ ms.locfileid: "41957247"
 
 如果 Office 365 无法使用电子邮件身份验证技术验证发件人的身份，则会在发件人图像中显示 "？"。
 
-![邮件未通过验证](../media/message-did-not-pass-verification.jpg)
+![邮件未通过验证](../../media/message-did-not-pass-verification.jpg)
 
 并不是每个验证失败的邮件都是恶意的。 但是，如果您不识别发件人，则应注意与不进行身份验证的邮件进行交互。 或者，如果您识别的发件人在发件人图像中通常不包含 '？ '，但突然开始看到它，则可能是发件人哄骗的签名。
 
@@ -50,7 +50,7 @@ ms.locfileid: "41957247"
 
 - 在安全 & 合规性中心中，全局管理员或安全管理员可以通过反网络钓鱼策略下的反欺骗保护来打开或关闭该功能。 此外，还可以使用 Exchange Online PowerShell 中的**AntiPhishPolicy** cmdlet。 有关详细信息，请参阅[Office 365 中的反钓鱼防护](anti-phishing-protection.md)和 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)。
 
-    ![在图形界面中编辑未经身份验证的发件人。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+    ![在图形界面中编辑未经身份验证的发件人。](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - 如果管理员已识别误报，并且发件人不应接收未验证的发件人处理，则可以执行下列操作之一将发件人添加到欺骗智能欺骗允许列表中：
 

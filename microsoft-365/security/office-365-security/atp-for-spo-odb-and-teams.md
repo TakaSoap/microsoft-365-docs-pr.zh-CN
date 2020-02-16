@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 将 Office 365 高级威胁防护扩展到 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件，为您的组织启用更安全的协作。
-ms.openlocfilehash: a21654ed8045b9adb6c09a730ada3ae458cf1609
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3105a9443ddab483bc5ac4037e5260b354d64de9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599839"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086617"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
 
@@ -31,19 +31,19 @@ ms.locfileid: "41599839"
 
 用户定期共享文件，并使用 SharePoint、OneDrive 和 Microsoft 团队进行协作。 使用[Office 365 高级威胁防护](office-365-atp.md)（ATP），您的组织可以更安全地进行协作。 ATP 可帮助检测和阻止在工作组网站和文档库中被标识为恶意的文件。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 如果 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件被标识为恶意，ATP 将直接与文件存储集成以锁定该文件。 下图显示了在库中检测到的恶意文件的示例。
 
-![OneDrive for business 中一个检测为恶意的文件](../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![OneDrive for business 中一个检测为恶意的文件](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 尽管阻止的文件仍在文档库和 web、移动设备或桌面应用程序中列出，但无法打开、复制、移动或共享被阻止的文件。 但是，用户可以删除被阻止的文件。 下面的示例展示了在用户的移动设备上显示的内容：
 
-![从 OneDrive 移动应用程序中删除 OneDrive for business 中的阻止文件](../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![从 OneDrive 移动应用程序中删除 OneDrive for business 中的阻止文件](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 根据配置 Office 365 的方式，用户可能会或可能无法下载被阻止的文件。 下面介绍了如何在用户的移动设备上下载被阻止的文件：
 
-![在 OneDrive for Business 中下载阻止的文件](../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![在 OneDrive for Business 中下载阻止的文件](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 有关详细信息，请参阅[开启适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
 

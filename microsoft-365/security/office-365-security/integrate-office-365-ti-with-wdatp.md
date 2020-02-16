@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成，以查看更详细的威胁管理信息。
-ms.openlocfilehash: fc2db4c1a3e5b32206ee91cae9f5adbeae4875d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8096a950e66ed94d6e056f40b737d89d48cb811e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599129"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088745"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成
 
@@ -30,11 +30,11 @@ ms.locfileid: "41599129"
   
 下图显示了启用 Microsoft Defender ATP 集成时将看到的 "**设备**" 选项卡：
   
-![启用 Microsoft Defender ATP 后，你可以查看包含警报的计算机列表。](../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![启用 Microsoft Defender ATP 后，你可以查看包含警报的计算机列表。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
 在此示例中，您可以看到电子邮件的收件人有四台设备，并且有一个警报。 单击设备的链接将在 Microsoft Defender 安全中心中打开其页面。
   
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 - 您的组织必须具有 Office 365 ATP 计划2（或 Office 365 E5）和 Microsoft Defender ATP。
     
@@ -48,11 +48,11 @@ ms.locfileid: "41599129"
   
 1. 作为 Office 365 全局管理员或安全管理员，请转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 的工作或学校帐户登录。
     
-2. 选择 "**威胁管理** \> **资源管理器**"。<br>![威胁管理菜单中的资源管理器](../media/ThreatMgmt-Explorer-nav.png)<br>
+2. 选择 "**威胁管理** \> **资源管理器**"。<br>![威胁管理菜单中的资源管理器](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. 在屏幕的右上角，选择 " **WDATP 设置**"。
     
-4. 在 "Windows Defender ATP 连接" 对话框中，启用 "连接到 Windows ATP"。<br>![Microsoft Defender ATP 连接](../media/Explorer-WDATPConnection-dialog.png)<br>
+4. 在 "Windows Defender ATP 连接" 对话框中，启用 "连接到 Windows ATP"。<br>![Microsoft Defender ATP 连接](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. 在 Microsoft Defender 安全中心启用连接。
 

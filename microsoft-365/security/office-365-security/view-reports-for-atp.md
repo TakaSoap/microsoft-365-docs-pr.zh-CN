@@ -17,18 +17,18 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
-ms.openlocfilehash: 6a7ee065447c7351f02d1ff88239b1c41b7e874b
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 1531a70439ae1c093ee472923696895eda0bc644
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957377"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081849"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
 如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)（ATP），并且您具有[必要的权限](#what-permissions-are-needed-to-view-the-atp-reports)，则可以在安全&amp;合规中心中使用多个 ATP 报告。 （转到 "**报表** \> "**仪表板**。）
   
-![安全&amp;合规中心仪表板可帮助您了解高级威胁防护的工作情况](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![安全&amp;合规中心仪表板可帮助您了解高级威胁防护的工作情况](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 ATP 报告包括以下内容：
 - [威胁防护状态](#threat-protection-status-report)
@@ -57,11 +57,11 @@ ATP 报告包括以下内容：
 > [!TIP]
 > 电子邮件 > 网络钓鱼 |恶意软件视图对所示的检测技术有细微的细分，其中类别如*ATP 生成的文件信誉*、*文件沙箱*、 *URL 沙箱*、*反欺骗： DMARC 故障*，例如，有助于准确准确地查明组织要拦截威胁的功能 led。
 
-![显示 "分解依据" 的威胁 Protection 状态报告下拉列表。](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+![显示 "分解依据" 的威胁 Protection 状态报告下拉列表。](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
 这些视图为您提供了通过按钮单击（在电子邮件 > 网络钓鱼、电子邮件 > 恶意软件和内容 > 恶意软件视图）中导出的选项。 可以在 Excel 中打开导出到您的计算机上的聚合数据。
 
-![此图显示了导出为恶意软件视图菜单中的一个选项、"创建计划" 和 "请求报告"。](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+![此图显示了导出为恶意软件视图菜单中的一个选项、"创建计划" 和 "请求报告"。](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
 概述和电子邮件视图将在处理小时数（而不是24小时）内显示信息（请求重新）。 此处的提高速度是一个清晰的信号）！
 
@@ -70,19 +70,19 @@ ATP 报告包括以下内容：
   
 若要查看威胁防护状态报告，请在[安全&amp;合规性中心](https://protection.office.com)中转到 "**报告** \> "**仪表板** \> **威胁防护状态**。
   
-![ATP 威胁防护状态报告](../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
+![ATP 威胁防护状态报告](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
 若要获取一天的详细状态，请将鼠标悬停在关系图上。
   
-![一天的 ATP 威胁防护状态数据](../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
+![一天的 ATP 威胁防护状态数据](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
 默认情况下，威胁防护状态报告显示过去七天的数据。 不过，您可以选择 "**筛选器**" 并将日期范围更改为查看最多90天的数据。 （如果使用的是试用订阅，则可能限制为30天的数据。）
   
-![ATP 威胁防护状态筛选器](../media/4f703369-642b-402b-9758-b9c828283410.png)
+![ATP 威胁防护状态筛选器](../../media/4f703369-642b-402b-9758-b9c828283410.png)
   
 您还可以使用 "**查看数据依据**" 菜单来更改报表中显示的信息。 
   
-![查看 ATP 威胁保护状态报告的选项](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
+![查看 ATP 威胁保护状态报告的选项](../../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
 
 ## <a name="url-protection-status-report"></a>URL 保护状态报告
 
@@ -105,11 +105,11 @@ ATP 报告包括以下内容：
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **ATP 文件类型**。
   
-![ATP 文件类型报告](../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
+![ATP 文件类型报告](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
 当您将鼠标悬停在特定的一天时，您可以看到由 Office 365 中的[ATP 安全附件](atp-safe-attachments.md)和[ &amp;反垃圾邮件反恶意软件保护](anti-spam-and-anti-malware-protection.md)检测到的恶意文件的类型细目。
   
-![ATP 文件类型报告一天的数据](../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+![ATP 文件类型报告一天的数据](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
   
 ## <a name="atp-message-disposition-report"></a>ATP 邮件处置报告
 
@@ -117,11 +117,11 @@ ATP 报告包括以下内容：
   
 若要查看此报告，请[在&amp;安全合规性中心](https://protection.office.com)中，转到 "**报告** \> "**仪表板** \> **ATP 邮件处置**。
   
-![ATP 邮件处置报告](../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
+![ATP 邮件处置报告](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
 当您将鼠标悬停在图表中的某条上时，可以看到在那天中对检测到的电子邮件执行了哪些操作。
   
-![一天的 ATP 邮件处置报告数据](../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+![一天的 ATP 邮件处置报告数据](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
   
 ## <a name="additional-reports-to-view"></a>要查看的其他报告
 
