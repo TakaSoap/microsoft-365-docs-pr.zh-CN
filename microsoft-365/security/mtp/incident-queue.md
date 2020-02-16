@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ad616deb8717772a68b01147ed858f8e7f6ed7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600249"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087293"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>在 Microsoft 威胁防护中确定事件的优先级
 
@@ -39,7 +39,7 @@ Microsoft 威胁防护应用相关性分析，将来自不同产品的所有相�
 “事件队列”**** 显示在设备、用户和邮箱中标记的事件的集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。
 
 
-![事件队列的图像](../images/incidents-queue.png) 
+![事件队列的图像](../../media/incidents-queue.png) 
 
 默认情况下，Microsoft 365 安全中心中的队列显示最近 30 天看到的事件，最新事件显示在列表的顶部，方便用户首先查看最新事件。
 

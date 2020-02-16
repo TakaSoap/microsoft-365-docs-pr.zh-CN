@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ec659a939064d34d3e0cc078a90cd343e495ae58
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957367"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087254"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -97,7 +97,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 在 "Microsoft 安全分数概述" 页中，您可以看到在这些组之间如何拆分点以及哪些点可用。 [！注意] 概述页面也是获取总分和基准对比的安全分数的历史趋势的完整视图的位置，以及可采取的优先改进措施以提高成绩。
 
-![安全积分主页](../media/secure-score/homepage-original.png)
+![安全积分主页](../../media/secure-score/homepage-original.png)
 *图1： Microsoft 安全分数概述页面*
 
 ## <a name="take-action-to-improve-your-score"></a>采取行动以提高成绩
@@ -122,7 +122,7 @@ Microsoft 安全分数不会跟踪标记为 [未评分] 的操作。 你仍可�
 
 4. 选择 "**审阅**"，因为改进操作要求您定期查看环境的一部分以获取和保留点。 例如，应每周查看邮箱转发规则，以确保不会从您的网络中泄露数据。 您无需进行任何更改，但需要执行操作。 如果您定期查看规则，您将收到要点。 如果不是，则减少分数。
 
-![安全分数提高操作示例](../media/secure-score/secure-score1x450.png) ![安全分数评审改进操作示例](../media/secure-score/secure-score2x450.png)
+![安全分数提高操作示例](../../media/secure-score/secure-score1x450.png) ![安全分数评审改进操作示例](../../media/secure-score/secure-score2x450.png)
 
 *图 2 & 3：改进操作 flyouts*
 
@@ -140,7 +140,7 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 
 ### <a name="removed-not-scored-improvement-actions"></a>删除了 "未评分" 的改进操作
 
-安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议都可以清楚地影响分数时，一条 Microsoft 安全分数才有意义。 不计分的提高操作不可度量。  
+安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议可能对分数有明显影响时，Microsoft 安全分数才有意义。 不计分的提高操作不可度量。  
 
 出于这些原因，未评分的所有改进操作均已删除。 您的部件不需要执行任何操作。
 
@@ -210,11 +210,7 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 
 安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议都可以清楚地影响分数时，一条 Microsoft 安全分数才有意义。 与其他改进操作相比，评审改进操作的计算方式不是相同标准。  
 
-出于这些原因，需要审阅节奏的所有改进操作都将暂时删除。 您的部件不需要执行任何操作。
-
-### <a name="simplification-of-the-point-system"></a>简化了点系统
-
-若要在多个体验中标准化要点，每个安全分数改进操作点总数将更新为10磅或更少。 在我们目前所拥有的安全控制的广泛 breather 和将来将添加的安全控制中，必须更加一致。 虽然这是一项重大更改，并且你将在点汇总中看到一个拖放，但你的安全状态不会有任何变化。  
+出于这些原因，需要审阅节奏的所有改进操作都将暂时删除。 您的部件不需要执行任何操作。 
 
 ### <a name="preview-features"></a>预览功能
 
@@ -225,6 +221,7 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 * 更好地跟踪和监控分数回归
 * 筛选、标记、搜索和分组您的改进操作
 * 使用分数预测和计划操作来管理未来目标
+* 简化了要点系统
 * 更多！
 
 ## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信

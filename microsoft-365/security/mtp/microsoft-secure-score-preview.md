@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600189"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087563"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全评分（预览）
 
@@ -41,7 +41,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 为您提供配置推荐安全功能、执行与安全相关的任务或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。 如果不能或不希望执行其中一个改进操作，则可以选择接受风险或剩余风险。
 
@@ -77,9 +77,9 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 * 帮助台管理员
 * 用户管理员
 * 服务管理员
-* 安全读者
+* 安全读取者
 * 安全操作员
-* 全局读者
+* 全局读取者
 
 ### <a name="graph-api"></a>Graph API
 
@@ -100,7 +100,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 在 "Microsoft 安全分数概述" 页中，您可以看到在这些组之间如何拆分点以及哪些点可用。 [！注意] 概述页面也是获取总分和基准对比的安全分数的历史趋势的完整视图的位置，以及可采取的优先改进措施以提高成绩。
 
-![安全积分主页](../media/secure-score/secure-score-homepage.png)
+![安全积分主页](../../media/secure-score/secure-score-homepage.png)
 *图1： Microsoft 安全分数概述页面*
 
 ## <a name="take-action-to-improve-your-score"></a>采取行动以提高成绩
@@ -115,7 +115,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 选择特定的 "改进" 操作时，将显示完整的 "页面" 飞出控件。  
 
-![改进操作浮出](../media/secure-score/secure-score-improvement-action.png)
+![改进操作浮出](../../media/secure-score/secure-score-improvement-action.png)
 控件示例*图2：改进操作浮出控件示例*
 
 若要完成此操作，您有几个选项：
