@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 转换云解决方案提供商订阅
 ms.date: 11/01/2017
-ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d8e04a0136f86d3c4bb51208081fd1dcbecf59d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595037"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057153"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>转换 Microsoft 365 商业版云解决方案提供商订阅
 
@@ -29,33 +29,33 @@ ms.locfileid: "41595037"
 
     将列出该公司的订阅。
 
-    ![客户在合作伙伴中心的订阅](images/pc_customer_subscriptions_1.png)
+    ![客户在合作伙伴中心的订阅](../../media/pc_customer_subscriptions_1.png)
     
 3. 在 "公司**订阅**" 页上，选择 "**添加订阅**"。
 4. 在 "**新建订阅**" 页上，选择 "**小型企业**"，然后从列表中选择 " **Microsoft 365 business** "。
 5. 添加许可证号码，然后选择**下一步: 审查**以审查订阅，然后选择**提交**。
 
-    ![审查 Microsoft 365 商业版的新订阅](images/pc_customer_reviewnewsubscription.png)
+    ![审查 Microsoft 365 商业版的新订阅](../../media/pc_customer_reviewnewsubscription.png)
 
     The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. 您将在下一步挂起预览订阅。
 
 6. 选择 **Microsoft 365 商业版预览**。
 7. 在 " **Microsoft 365 商业版预览**" 页面上，选择 "已**挂起**" 以挂起预览订阅。
 
-    ![暂停 Microsoft 365 商业版预览订阅](images/pc_customer_m365bpreview_suspend.png)
+    ![暂停 Microsoft 365 商业版预览订阅](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. 选择**提交**进行确认。
 
     在 "**订阅**" 页上，确认**Microsoft 365 商业版预览**状态显示为 "已**挂起**"。
 
-    ![确认预览订阅状态为已暂停](images/pc_customer_m365bpreview_suspend_confirm.png)
+    ![确认预览订阅状态为已暂停](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. 或者，你也可以验证许可协议。 要实现这一点，请执行下列步骤：
     1. 从公司的**订阅**页面上选择**用户和许可证**。
     2. 在 "**用户和许可证**" 页上，选择一个用户。
     3. 在用户的页面上，检查 "**分配许可证**" 部分并确认它显示的是**Microsoft 365 业务**。
 
-        ![确认 Microsoft 365 商业版许可证已分配给用户](images/pc_customer_userslicenses_m365b_validate.png)
+        ![确认 Microsoft 365 商业版许可证已分配给用户](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## <a name="impact-to-customers-and-users-during-and-after-transition"></a>转换过程中和转换之后对客户和用户的影响
 

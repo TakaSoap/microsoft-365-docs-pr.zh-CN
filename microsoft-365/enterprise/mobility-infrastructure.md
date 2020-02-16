@@ -15,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 6ada378d63e9a04bd820808ea8a1d93cd7690ffb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596839"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066752"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>第5阶段： Microsoft 365 企业版的移动设备管理
 
-![阶段 5：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![阶段 5：移动设备管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *此功能适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
@@ -84,7 +84,7 @@ Intune 使用 Azure AD 中的许多功能，包括您的域、用户和组。 �
 
 |||
 |:-------|:-----|
-|![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南： iOS 和 Android 设备注册](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南： iOS 和 Android 设备注册](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -102,7 +102,7 @@ Intune 可以管理应用程序，包括添加应用程序、将其分配给不�
 
 |||
 |:-------|:-----|
-|![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：设备合规性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：设备合规性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>步骤6：启用合规性和条件访问
@@ -159,7 +159,7 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 
 了解 Contoso Corporation （一个虚构但具有代表性的多国企业）如何使用 Microsoft 365 云服务[部署其移动设备管理基础结构](contoso-mdm.md)。
 
-![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 

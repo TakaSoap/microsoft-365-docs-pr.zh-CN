@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: e5e3e4fb48a0eb2af1978cbd5a687c67c72bea0c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba5804d3065dcb01d85d457df7555a642d6f2839
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596639"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085591"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>步骤3：使用 Windows Autopilot 为新设备部署 Windows 10 企业版
 
 *本文适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![第 3 阶段：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 如果你有新的 Windows 10 电脑，则可以使用 Windows Autopilot 为你的组织自定义现成体验（OOBE），并部署具有已配置的应用程序和设置的新系统。 没有要部署的映像，没有要注入的驱动程序，没有要管理的基础结构。 用户可以独立完成部署过程，无需咨询其 IT 管理员。
 
@@ -33,7 +33,7 @@ ms.locfileid: "41596639"
 
 Windows Autopilot 海报是纵向模式（11x17）中的两页。 单击下面的图像以在浏览器中查看 PDF。 
 
-[![使用 Autopilot 海报部署 Windows 10](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
+[![使用 Autopilot 海报部署 Windows 10](../media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
 
 也可以下载 [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) 或 [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) 格式的海报。
 
@@ -114,4 +114,4 @@ Windows Autopilot 海报是纵向模式（11x17）中的两页。 单击下面�
 
 |||
 |:-------|:-----|
-|![第 4 步](./media/stepnumbers/Step4.png)| [监视设备运行状况和合规性](windows10-enable-windows-analytics.md) |
+|![第 4 步](../media/stepnumbers/Step4.png)| [监视设备运行状况和合规性](windows10-enable-windows-analytics.md) |

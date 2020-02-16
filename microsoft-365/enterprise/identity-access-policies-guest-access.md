@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca9b752f55ebe3fecec4f312bc89b45d99cf0d7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8276dcf85f6c5fd61e01e67deee4fea35c1a15c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601049"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067443"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>允许来宾和外部 B2B 访问的策略
 本文介绍如何调整建议的公共标识和设备访问策略，以允许 B2B 帐户访问（来宾和外部用户）。 本指南建立在[通用标识和设备访问策略](identity-access-policies.md)之上。
@@ -33,11 +33,11 @@ ms.locfileid: "41601049"
 
 下图说明了常见标识和设备访问策略，并指示（带有铅笔图标）要添加或更新的策略来保护来宾和外部访问。 
 
-![保护来宾访问的策略更新摘要](../images/identity-access-ruleset-guest.png)
+![保护来宾访问的策略更新摘要](../media/identity-access-ruleset-guest.png)
 
 下表列出了您需要更新或创建新的策略。 常见策略链接到[常见标识和设备访问策略](identity-access-policies.md)文章中相关的配置说明。
 
-|保护级别|策略|更多信息|
+|保护级别|策略|详细信息|
 |:---------------|:-------|:----------------|
 |**Baseline**|[要求为来宾和外部用户始终进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建此新规则并仅将其应用于来宾和外部用户。 在 "登录风险" 下，将所有选项保留为未选中状态，以始终强制执行 MFA。|
 |        |[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此规则以排除来宾和外部用户。|
@@ -45,9 +45,9 @@ ms.locfileid: "41601049"
 
 若要在条件访问规则中包括或排除来宾和外部用户，请单击 "包含" 或 "排除" 选项卡，并检查**所有来宾和外部用户**。
 
-![用于排除来宾的控件的屏幕捕获](../images/identity-access-exclude-guests-ui.png)
+![用于排除来宾的控件的屏幕捕获](../media/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 ### <a name="guests-vs-external-users"></a>来宾和外部用户
 在 Azure AD 中，来宾和外部用户是相同的。 这两个用户的用户类型为 "来宾"。 来宾用户是 B2B 用户。

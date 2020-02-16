@@ -12,16 +12,16 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: f854a4ec72c01f49f12774617188610d753e7b40
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5407370933c2a99781adf4ca58d3fa905328ed04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596629"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085571"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>步骤5：部署 Windows 10 企业版安全功能
 
-![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![第 3 阶段：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 提供了保护企业用户、停止威胁和防止数据丢失的安全功能。 
 

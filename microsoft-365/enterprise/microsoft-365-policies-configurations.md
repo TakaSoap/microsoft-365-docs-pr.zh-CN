@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855381"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066834"
 ---
 # <a name="identity-and-device-access-configurations"></a>身份识别与设备访问配置
 
@@ -59,25 +59,25 @@ Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你
 - **敏感保护**：某些客户具有必须在更高级别进行保护的数据子集，或者可能需要在更高级别保护所有数据。 可对 Office 365 环境中的所有或特定数据集应用增强的保护。 建议以与安全性相当的级别保护访问敏感数据的标识和设备。  
 - **高度管控**：某些组织可能具有少量的数据，这些数据高度保密、consititutes 商业秘密或受管制数据。 Microsoft 提供多种功能，帮助组织满足相关要求，包括为标识和设备添加保护。
 
-![安全圆锥-> 一些客户 > 特定客户的所有客户。 适用于特定应用程序的广泛应用程序](../images/M365-idquality-threetiers.png)
+![安全圆锥-> 一些客户 > 特定客户的所有客户。 适用于特定应用程序的广泛应用程序](../media/M365-idquality-threetiers.png)
 
 本指南向您介绍如何针对每种级别的保护对标识和设备实施保护。 使用此指南作为组织的起点，并调整策略以满足组织的特定要求。
 
 请务必在数据、标识和设备间使用一致的保护级别。 例如，如果您实施了本指南，请务必保护您的数据处于可比较的级别。 这些体系结构模型显示了可比较的功能。
 
 **Office 365 的标识和设备保护**<br/>
-![海报 "适用于 Office 365 的标识和设备保护" 的缩略图](../images/O365_Identity_device_protection_thumb.png)<br/>
+![海报 "适用于 Office 365 的标识和设备保护" 的缩略图](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **Office 365 中的文件保护解决方案**<br/>
-![海报 "Office 365 中的文件保护解决方案" 的缩略图](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
+![海报 "Office 365 中的文件保护解决方案" 的缩略图](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>安全性和生产力权衡
 
 实现任何安全策略都需要权衡安全性和生产率。 评估每个决策对安全性、功能和易用性的影响情况进行评估是有帮助的。
 
-![安全 triad 平衡安全性、功能和易用性。](media/policies-configurations/security-triad.png)
+![安全 triad 平衡安全性、功能和易用性。](../media/policies-configurations/security-triad.png)
 
 提供的建议基于以下原则：
 

@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600759"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084194"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保护 SharePoint 网站和文件的策略建议
 
@@ -35,7 +35,7 @@ ms.locfileid: "41600759"
 
 下图说明了用于保护 SharePoint Online 和 OneDrive for Business 中的文件的建议策略集。 它指示应更新或新创建的策略，以添加对 SharePoint Online 和 OneDrive for business 的保护。
 
-![SharePoint Online 和 OneDrive 的策略摘要](../images/identity-access-ruleset-sharepoint.png)
+![SharePoint Online 和 OneDrive 的策略摘要](../media/identity-access-ruleset-sharepoint.png)
 
 如果您在创建通用策略时加入了 SharePoint Online，则只需创建新策略。 配置条件访问规则时，SharePoint Online 包括 OneDrive for Business。
 
@@ -43,7 +43,7 @@ ms.locfileid: "41600759"
 
 下表列出了查看和更新或创建新的 SharePoint Online 所需的策略。 常见策略链接到[常见标识和设备访问策略](identity-access-policies.md)文章中相关的配置说明。
 
-|保护级别|策略|更多信息|
+|保护级别|策略|详细信息|
 |:---------------|:-------|:----------------|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 SharePoint Online|
 |        |[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括 SharePoint Online|
@@ -77,7 +77,7 @@ Microsoft 建议使用设备访问控制保护 SharePoint 网站中的内容与�
 
 下图提供了 SharePoint 设备访问策略如何保护对网站的访问的示例。
 
-![SharePoint 设备访问策略如何保护网站](../images/SharePoint-rules-scenario.png)
+![SharePoint 设备访问策略如何保护网站](../media/SharePoint-rules-scenario.png)
 
 在此图中：
 
