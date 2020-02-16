@@ -14,22 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b79625ba017bd30cc9d6b0153d101b16ec574e8c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fa959de5806eccf76b0e83103c0274d0eb86da0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600129"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084772"
 ---
-# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a><span data-ttu-id="bd4e0-104">Microsoft 365 安全中心中的数据监控和报告</span><span class="sxs-lookup"><span data-stu-id="bd4e0-104">Data monitoring and reporting in the Microsoft 365 security center</span></span>
+# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a><span data-ttu-id="dc278-104">Microsoft 365 安全中心中的数据监控和报告</span><span class="sxs-lookup"><span data-stu-id="dc278-104">Data monitoring and reporting in the Microsoft 365 security center</span></span>
 
-<span data-ttu-id="bd4e0-105">**数据**类别可帮助跟踪用户活动，从而导致未经授权的数据泄露。</span><span class="sxs-lookup"><span data-stu-id="bd4e0-105">The **Data** category helps track user activity that could lead to unauthorized data disclosure.</span></span> <span data-ttu-id="bd4e0-106">这些是现有 Office 365 DLP 策略报告和第三方 DLP 策略匹配报告的返工。</span><span class="sxs-lookup"><span data-stu-id="bd4e0-106">These are the rework of existing Office 365 DLP policy reports plus a third-party DLP policy match report.</span></span>
+<span data-ttu-id="dc278-105">**数据**类别可帮助跟踪用户活动，从而导致未经授权的数据泄露。</span><span class="sxs-lookup"><span data-stu-id="dc278-105">The **Data** category helps track user activity that could lead to unauthorized data disclosure.</span></span> <span data-ttu-id="dc278-106">这些是现有 Office 365 DLP 策略报告和第三方 DLP 策略匹配报告的返工。</span><span class="sxs-lookup"><span data-stu-id="dc278-106">These are the rework of existing Office 365 DLP policy reports plus a third-party DLP policy match report.</span></span>
 
-<span data-ttu-id="bd4e0-107">您可以看到：</span><span class="sxs-lookup"><span data-stu-id="bd4e0-107">You can see:</span></span>
+<span data-ttu-id="dc278-107">您可以看到：</span><span class="sxs-lookup"><span data-stu-id="dc278-107">You can see:</span></span>
 
-* <span data-ttu-id="bd4e0-108">共享云应用程序中的最多文件的用户</span><span class="sxs-lookup"><span data-stu-id="bd4e0-108">Users who share the most files from cloud apps</span></span>
-* <span data-ttu-id="bd4e0-109">已发生的 DLP 策略匹配的数量</span><span class="sxs-lookup"><span data-stu-id="bd4e0-109">How many DLP policy matches occurred</span></span>
-* <span data-ttu-id="bd4e0-110">报告的 DLP 策略覆盖数或误报数</span><span class="sxs-lookup"><span data-stu-id="bd4e0-110">How many DLP policies overrides or false positives are reported</span></span>
-* <span data-ttu-id="bd4e0-111">通过 Microsoft 云应用安全性在第三方云服务中发生的 DLP 策略匹配的数量</span><span class="sxs-lookup"><span data-stu-id="bd4e0-111">How many DLP policy matches happened in 3rd party cloud services via Microsoft Cloud App Security</span></span>
+* <span data-ttu-id="dc278-108">共享云应用程序中的最多文件的用户</span><span class="sxs-lookup"><span data-stu-id="dc278-108">Users who share the most files from cloud apps</span></span>
+* <span data-ttu-id="dc278-109">已发生的 DLP 策略匹配的数量</span><span class="sxs-lookup"><span data-stu-id="dc278-109">How many DLP policy matches occurred</span></span>
+* <span data-ttu-id="dc278-110">报告的 DLP 策略覆盖数或误报数</span><span class="sxs-lookup"><span data-stu-id="dc278-110">How many DLP policies overrides or false positives are reported</span></span>
+* <span data-ttu-id="dc278-111">通过 Microsoft 云应用安全性在第三方云服务中发生的 DLP 策略匹配的数量</span><span class="sxs-lookup"><span data-stu-id="dc278-111">How many DLP policy matches happened in 3rd party cloud services via Microsoft Cloud App Security</span></span>
 
-!["报表的数据类别" 页](../images/data.png)
+!["报表的数据类别" 页](../../media/data.png)

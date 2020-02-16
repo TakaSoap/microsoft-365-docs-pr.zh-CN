@@ -19,40 +19,40 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d3f24e8615f5b11b0853d7f1e36b49eb0cf2424f
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 7498f7a15578979a24a1524e94f307067eeeb893
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661918"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083601"
 ---
-# <a name="microsoft-threat-protection-prerequisites"></a><span data-ttu-id="386fb-104">Microsoft 威胁防护先决条件</span><span class="sxs-lookup"><span data-stu-id="386fb-104">Microsoft Threat Protection prerequisites</span></span>
+# <a name="microsoft-threat-protection-prerequisites"></a><span data-ttu-id="22b5a-104">Microsoft 威胁防护先决条件</span><span class="sxs-lookup"><span data-stu-id="22b5a-104">Microsoft Threat Protection prerequisites</span></span>
 
-<span data-ttu-id="386fb-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="386fb-105">**Applies to:**</span></span>
-- <span data-ttu-id="386fb-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="386fb-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="22b5a-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="22b5a-105">**Applies to:**</span></span>
+- <span data-ttu-id="22b5a-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="22b5a-106">Microsoft Threat Protection</span></span>
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-<span data-ttu-id="386fb-107">了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。</span><span class="sxs-lookup"><span data-stu-id="386fb-107">Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection.</span></span>
+<span data-ttu-id="22b5a-107">了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。</span><span class="sxs-lookup"><span data-stu-id="22b5a-107">Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection.</span></span>
 
-## <a name="licensing-requirements"></a><span data-ttu-id="386fb-108">许可要求</span><span class="sxs-lookup"><span data-stu-id="386fb-108">Licensing requirements</span></span>
-<span data-ttu-id="386fb-109">若要使用 Microsoft 威胁防护，您需要以下许可证或许可证组合之一：</span><span class="sxs-lookup"><span data-stu-id="386fb-109">To use Microsoft Threat Protection, you need one of the following licenses or combination of licenses:</span></span>
+## <a name="licensing-requirements"></a><span data-ttu-id="22b5a-108">许可要求</span><span class="sxs-lookup"><span data-stu-id="22b5a-108">Licensing requirements</span></span>
+<span data-ttu-id="22b5a-109">若要使用 Microsoft 威胁防护，您需要以下许可证或许可证组合之一：</span><span class="sxs-lookup"><span data-stu-id="22b5a-109">To use Microsoft Threat Protection, you need one of the following licenses or combination of licenses:</span></span>
 
-- <span data-ttu-id="386fb-110">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="386fb-110">Microsoft 365 E5</span></span>
-- <span data-ttu-id="386fb-111">Microsoft 365 E5 安全版</span><span class="sxs-lookup"><span data-stu-id="386fb-111">Microsoft 365 E5 Security</span></span>
-- <span data-ttu-id="386fb-112">Office 365 E5、企业移动性 + 安全性 E5 和 Windows E5</span><span class="sxs-lookup"><span data-stu-id="386fb-112">Office 365 E5, Enterprise Mobility + Security E5, and Windows E5</span></span>
+- <span data-ttu-id="22b5a-110">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="22b5a-110">Microsoft 365 E5</span></span>
+- <span data-ttu-id="22b5a-111">Microsoft 365 E5 安全版</span><span class="sxs-lookup"><span data-stu-id="22b5a-111">Microsoft 365 E5 Security</span></span>
+- <span data-ttu-id="22b5a-112">Office 365 E5、企业移动性 + 安全性 E5 和 Windows E5</span><span class="sxs-lookup"><span data-stu-id="22b5a-112">Office 365 E5, Enterprise Mobility + Security E5, and Windows E5</span></span>
 
-[<span data-ttu-id="386fb-113">查看 Microsoft 365 企业版服务计划</span><span class="sxs-lookup"><span data-stu-id="386fb-113">View Microsoft 365 Enterprise service plans</span></span>](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
+[<span data-ttu-id="22b5a-113">查看 Microsoft 365 企业版服务计划</span><span class="sxs-lookup"><span data-stu-id="22b5a-113">View Microsoft 365 Enterprise service plans</span></span>](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 
-### <a name="check-your-existing--licenses"></a><span data-ttu-id="386fb-114">检查现有许可证</span><span class="sxs-lookup"><span data-stu-id="386fb-114">Check your existing  licenses</span></span>
-<span data-ttu-id="386fb-115">转到 Microsoft 365 管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看现有许可证。</span><span class="sxs-lookup"><span data-stu-id="386fb-115">Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses.</span></span> <span data-ttu-id="386fb-116">在管理中心，转到“计费”\*\*\*\* > “许可证”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="386fb-116">In the admin center, go to **Billing** > **Licenses**.</span></span>
+### <a name="check-your-existing--licenses"></a><span data-ttu-id="22b5a-114">检查现有许可证</span><span class="sxs-lookup"><span data-stu-id="22b5a-114">Check your existing  licenses</span></span>
+<span data-ttu-id="22b5a-115">转到 Microsoft 365 管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看现有许可证。</span><span class="sxs-lookup"><span data-stu-id="22b5a-115">Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses.</span></span> <span data-ttu-id="22b5a-116">在管理中心，转到“计费”\*\*\*\* > “许可证”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="22b5a-116">In the admin center, go to **Billing** > **Licenses**.</span></span>
 
 >[!NOTE]
-> <span data-ttu-id="386fb-117">您需要在[AZURE AD 中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)为**帐单管理员**或**全局读者**角色分配，以便能够查看许可证信息。</span><span class="sxs-lookup"><span data-stu-id="386fb-117">You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information.</span></span> <span data-ttu-id="386fb-118">如果遇到访问问题，请联系全局管理员。</span><span class="sxs-lookup"><span data-stu-id="386fb-118">If you encounter access problems, contact a global admin.</span></span>
+> <span data-ttu-id="22b5a-117">您需要在[AZURE AD 中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)为**帐单管理员**或**全局读者**角色分配，以便能够查看许可证信息。</span><span class="sxs-lookup"><span data-stu-id="22b5a-117">You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information.</span></span> <span data-ttu-id="22b5a-118">如果遇到访问问题，请联系全局管理员。</span><span class="sxs-lookup"><span data-stu-id="22b5a-118">If you encounter access problems, contact a global admin.</span></span>
 
-## <a name="browser-requirements"></a><span data-ttu-id="386fb-119">浏览器要求</span><span class="sxs-lookup"><span data-stu-id="386fb-119">Browser requirements</span></span>
-<span data-ttu-id="386fb-120">使用 microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 的 web 浏览器访问 microsoft 365 安全中心中的 Microsoft 威胁防护。</span><span class="sxs-lookup"><span data-stu-id="386fb-120">Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.</span></span>
+## <a name="browser-requirements"></a><span data-ttu-id="22b5a-119">浏览器要求</span><span class="sxs-lookup"><span data-stu-id="22b5a-119">Browser requirements</span></span>
+<span data-ttu-id="22b5a-120">使用 microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 的 web 浏览器访问 microsoft 365 安全中心中的 Microsoft 威胁防护。</span><span class="sxs-lookup"><span data-stu-id="22b5a-120">Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="386fb-121">相关主题</span><span class="sxs-lookup"><span data-stu-id="386fb-121">Related topics</span></span>
-- [<span data-ttu-id="386fb-122">Microsoft 威胁防护概述</span><span class="sxs-lookup"><span data-stu-id="386fb-122">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
-- [<span data-ttu-id="386fb-123">打开 Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="386fb-123">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)
+## <a name="related-topics"></a><span data-ttu-id="22b5a-121">相关主题</span><span class="sxs-lookup"><span data-stu-id="22b5a-121">Related topics</span></span>
+- [<span data-ttu-id="22b5a-122">Microsoft 威胁防护概述</span><span class="sxs-lookup"><span data-stu-id="22b5a-122">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
+- [<span data-ttu-id="22b5a-123">打开 Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="22b5a-123">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)
