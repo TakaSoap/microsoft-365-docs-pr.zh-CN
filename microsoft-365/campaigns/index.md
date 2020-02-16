@@ -1,5 +1,7 @@
 ---
 title: 适用于市场活动的 Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 适用于市场活动的 Microsoft 365
-ms.openlocfilehash: d80e25aedaf3a0160fc6ed926222dd3c12cf7466
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 32437ccc0c110c0539cb3d24f036438d6a313921
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38029076"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056459"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns
 ===========================
@@ -43,7 +45,7 @@ ms.locfileid: "38029076"
 - 使用易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件 
 - 对用户帐户和标识应用额外保护 
 
-![Microsoft 365 商业版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和身份](media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 商业版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和身份](../media/M365-WhatIsIt-SecurityFocus.png)
 
 虽然美国的联邦选举活动符合 Microsoft 365 商业版的特殊定价，但具有此计划的任何组织都可以利用本指南来配置更高的安全性，并了解如何安全地进行协作。
 
@@ -92,7 +94,7 @@ ms.locfileid: "38029076"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
+                            <img src="../media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -110,7 +112,7 @@ ms.locfileid: "38029076"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/m365-democracy-teams-meetings.png" alt="an online meeting" />
+                            <img src="../media/m365-democracy-teams-meetings.png" alt="an online meeting" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -128,7 +130,7 @@ ms.locfileid: "38029076"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
+                            <img src="../media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +148,7 @@ ms.locfileid: "38029076"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
+                            <img src="../media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -164,7 +166,7 @@ ms.locfileid: "38029076"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
+                            <img src="../media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
                         </div>
                     </div>
                     <div class="cardText">
