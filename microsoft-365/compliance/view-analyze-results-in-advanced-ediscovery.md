@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: '了解在 Office 365 高级电子数据展示中查看分析过程结果的位置，包括所显示的任务选项的定义。  '
-ms.openlocfilehash: 9e06770135afd62a39115c9365a698df4493bd72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597249"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069173"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>查看 Office 365 高级电子数据展示中的分析结果
 
@@ -34,7 +34,7 @@ ms.locfileid: "41597249"
 
 在**准备\>分析\>结果\>任务状态**中，状态在分析流程执行期间和之后都会显示。 
   
-![分析任务状态](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![分析任务状态](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 根据所选的选项，显示的任务可能会有所不同。 
   
@@ -73,7 +73,7 @@ ms.locfileid: "41597249"
     
 **附件**结果将根据此类类型（唯一和重复）显示附件数。 
   
-![近似重复和电子邮件线程](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![近似重复和电子邮件线程](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>另请参阅
 

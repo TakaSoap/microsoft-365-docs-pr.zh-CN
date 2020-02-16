@@ -18,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 向欧盟公民（称为 "数据主体"）授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 DSR 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35ea4230680f567a702f8f2368f80986c473039f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582931"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072055"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
 
@@ -89,7 +89,7 @@ EU 常规数据保护条例（GDPR）是关于保护和启用欧盟（EU）内�
   
 1. 请转[https://protection.office.com](https://protection.office.com)到使用你的工作或学校帐户登录 Office 365。 
     
-2. 在安全 & 合规性中心中，单击 "**数据隐私** \> **数据主体请求**"， ![然后单击](media/ITPro-EAC-AddIcon.gif) "添加图标" "**新建 DSR 事例**"。
+2. 在安全 & 合规性中心中，单击 "**数据隐私** \> **数据主体请求**"， ![然后单击](../media/ITPro-EAC-AddIcon.gif) "添加图标" "**新建 DSR 事例**"。
     
 3. 在 "**新建 DSR 事例**" 弹出页面上，为事例指定名称，键入可选说明，然后单击 "**下一步**"。 事例名称在你的组织中必须保持唯一。
     
@@ -102,7 +102,7 @@ EU 常规数据保护条例（GDPR）是关于保护和启用欧盟（EU）内�
     
     将显示一页，确认已创建新的 DSR 事例。
     
-    ![启动搜索或关闭新的 DSR 事例页面](media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
+    ![启动搜索或关闭新的 DSR 事例页面](../media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
   
     在这种情况下，您可以执行以下两项操作之一：
     
@@ -195,11 +195,11 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 2. 单击页面顶部的 "**搜索**" 选项卡，然后单击创建 DSR 事例时创建的内置搜索旁边的复选框。 或单击其他搜索以从该搜索中导出数据。 
     
-3. 在 "搜索" 飞出页面![上，单击 "](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **更多**" "导出搜索结果" 图标，然后从下拉列表中选择 "**导出结果**"。 
+3. 在 "搜索" 飞出页面![上，单击 "](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **更多**" "导出搜索结果" 图标，然后从下拉列表中选择 "**导出结果**"。 
     
 4. 在 "**导出结果**" 页上，选择适用于 DSR 导出请求的以下推荐选项。 
     
-    ![配置导出设置](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
+    ![配置导出设置](../media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
     a. 在 "**输出选项**" 下，选择第一个选项（**所有项目（不包括具有不可识别格式的项目），加密或未根据其他原因对其编制索引，** 以仅导出已编制索引的项目。 您不希望从内置搜索中导出部分索引项目的原因是，其他用户的部分索引项目也将被导出。 若要仅导出数据主体的部分已编制索引的项目，我们建议您创建单独的搜索。 有关详细信息，请参阅 "使用 DSR case 工具的详细信息" 部分中的 "[导出部分索引的项目](#exporting-partially-indexed-items)" 部分。
     
@@ -219,7 +219,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 8. 在“**导出密钥**”下，单击“**复制到剪贴板**”。 您可以使用步骤11中的此项下载搜索结果。
     
-9. 单击!["导出弹出页面](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 顶部的 "导出搜索结果图标**下载结果**"。 
+9. 单击!["导出弹出页面](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 顶部的 "导出搜索结果图标**下载结果**"。 
     
 10. 在页面底部的弹出窗口中，单击 "**打开**" 以打开**Microsoft Office 365 电子数据展示导出工具**。 首次下载搜索结果时，将会安装**电子数据展示导出工具**。 
     
@@ -260,11 +260,11 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 2. 在搜索查询中的 "**位置**" 下，单击 "**特定位置**" 选项旁边的 "**修改**"。 
     
-    ![单击 "修改" 以更改内置搜索查询的内容位置](media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
+    ![单击 "修改" 以更改内置搜索查询的内容位置](../media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
   
     将显示 "**修改位置**" 浮出控件页。 以下是对内置搜索中的内容位置的说明，以及有关修改搜索位置的一些信息。 
     
-    !["修改位置" 飞出页面](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
+    !["修改位置" 飞出页面](../media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
     a. 在弹出页面顶部的 "选择所有在邮箱中**选择所有**内容" 部分下的切换将被选中，这表明已搜索所有邮箱。 若要缩小搜索范围，请单击 "切换" 以取消选择，然后单击 "**选择用户、组或团队**"，然后选择要搜索的特定邮箱。
     
@@ -304,13 +304,13 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 1. 在 "安全性 & 合规性中心" 中，单击 "**数据隐私** \> **数据主体请求**"，然后单击要为其导出使用率数据的数据主体在 DSR 事例旁边的 "**打开**"。 
     
-2. 单击页面顶部的 "**搜索**" 选项卡，然后单击!["添加图标](media/ITPro-EAC-AddIcon.gif) " "**导向搜索**"。
+2. 单击页面顶部的 "**搜索**" 选项卡，然后单击!["添加图标](../media/ITPro-EAC-AddIcon.gif) " "**导向搜索**"。
     
 3. 在 "**命名您的搜索**" 页上，单击 "**取消**"。 
     
 4. 在 "**搜索查询**" 下的 "**类型**条件" 中，选中 " **Office 漫游服务**" 旁边的复选框。 
     
-    ![选中 "Office 漫游服务" 复选框以导出使用率数据](media/O365_DSRCase_SDSDataExport1.png)
+    ![选中 "Office 漫游服务" 复选框以导出使用率数据](../media/O365_DSRCase_SDSDataExport1.png)
   
     **类型**条件（是电子邮件类）应为搜索查询中的唯一项。 您可以删除 "**关键字**" 框或将其保留为空。 
     
@@ -326,13 +326,13 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
  **若要导出 Office 漫游服务数据，请执行以下操作：**
   
-1. 在上一步中创建的搜索完成后，单击页面顶部的 "**搜索**" 选项卡，然后单击 "搜索" 旁边的复选框。 您可能需要单击 " ![刷新](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **刷新**" 以显示搜索。 
+1. 在上一步中创建的搜索完成后，单击页面顶部的 "**搜索**" 选项卡，然后单击 "搜索" 旁边的复选框。 您可能需要单击 " ![刷新](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **刷新**" 以显示搜索。 
     
-2. 在 "搜索" 飞出页面![上，单击 "](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **更多**" "导出搜索结果" 图标，然后从下拉列表中选择 "**导出结果**"。 
+2. 在 "搜索" 飞出页面![上，单击 "](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **更多**" "导出搜索结果" 图标，然后从下拉列表中选择 "**导出结果**"。 
     
 3. 在 "**导出结果**" 页上，选择用于导出使用率数据的推荐选项。 
     
-    ![导出 Office 漫游服务使用情况数据时的导出选项](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
+    ![导出 Office 漫游服务使用情况数据时的导出选项](../media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
     a. 在 "**输出选项**" 下，选择第一个选项（**所有项目（不包括具有不可识别格式的项目），加密或未根据其他原因对其编制索引，** 以仅导出已编制索引的项目。
     
@@ -350,7 +350,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 7. 在“**导出密钥**”下，单击“**复制到剪贴板**”。 您可以使用步骤10中的此键下载搜索结果。
     
-8. 单击!["导出弹出页面](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 顶部的 "导出搜索结果图标**下载结果**"。 
+8. 单击!["导出弹出页面](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 顶部的 "导出搜索结果图标**下载结果**"。 
     
 9. 在页面底部的弹出窗口中，单击 "**打开**" 以打开**Microsoft Office 365 电子数据展示导出工具**。 首次下载搜索结果时，将会安装**电子数据展示导出工具**。 
     

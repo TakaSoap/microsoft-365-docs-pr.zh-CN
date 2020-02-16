@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的高级电子数据展示的新版本。
-ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662008"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071043"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 
@@ -31,7 +31,7 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 高级电子数据展示的内置工作流与电子发现参考模型（EDRM）中列出的电子数据展示过程相一致。 
 
-![电子发现参考模型（EDRM）](media/EDRMv1.png)
+![电子发现参考模型（EDRM）](../media/EDRMv1.png)
 
 （图像源 edrm.net。 在 "创造性 Commons 归属 3.0 Unported" 许可证下提供了源映像。
 
@@ -57,7 +57,7 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 有关高级电子数据展示中的端到端工作流的详细信息，请参阅此[Microsoft 机械视频](https://go.microsoft.com/fwlink/?linkid=2066133)。 
 
-![高级电子数据展示中的选项卡遵循 EDRM 工作流](media/aedisco-homepage-1.png)
+![高级电子数据展示中的选项卡遵循 EDRM 工作流](../media/aedisco-homepage-1.png)
 
 ## <a name="managing-custodians"></a>管理保管人
 

@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则（传输规则），以使用 Office 365 邮件加密对邮件进行加密和解密。
-ms.openlocfilehash: a2f37bff8fa3fd45999a44341cfdb077b4f43e62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bdd479ec09f0ecefd2758e2b8012a1a7351d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595337"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075869"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
 
@@ -48,7 +48,7 @@ ms.locfileid: "41595337"
 
 3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
 
-4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "为 DrToniRamos@hotmail.com 加密邮件"。
 
@@ -82,7 +82,7 @@ ms.locfileid: "41595337"
 
 4. In the EAC, go to **Mail flow** \> **Rules**.
 
-5. 在邮件流规则的列表中，选择要修改的规则以使用新的 OME 功能，然后选择 "**编辑** ![" "编辑](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)" 图标。
+5. 在邮件流规则的列表中，选择要修改的规则以使用新的 OME 功能，然后选择 "**编辑** ![" "编辑](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)" 图标。
 
 6. 若要使用新的 OME 功能启用加密，请从**执行以下操作**，选择 "**修改邮件安全性"** ，然后选择 "**应用 Office 365 邮件加密和权限保护**"。 从列表中选择一个 RMS 模板，选择 "**保存**"，然后选择 **"确定"**。
 
@@ -106,7 +106,7 @@ ms.locfileid: "41595337"
 
 3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
 
-4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "为 DrToniRamos@hotmail.com 加密邮件"。
 
@@ -164,7 +164,7 @@ ms.locfileid: "41595337"
 
 3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
 
-4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "从传入邮件中删除加密"。
 

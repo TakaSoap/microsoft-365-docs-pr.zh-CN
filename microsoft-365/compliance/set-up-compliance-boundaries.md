@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: bd167246bc43cba20a444594a2309ac888c734fc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597469"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069725"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -31,7 +31,7 @@ ms.locfileid: "41597469"
   
 我们使用下图中的示例来说明合规性边界的工作原理。
   
-![合规性边界包含搜索权限筛选器，这些筛选器控制对对电子数据展示案例的访问进行控制的代理和管理员角色组的访问](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![合规性边界包含搜索权限筛选器，这些筛选器控制对对电子数据展示案例的访问进行控制的代理和管理员角色组的访问](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
 在此示例中，Contoso 有限公司是由两个子公司、第四个咖啡和 Coho Winery 组成的 Office 365 组织。 业务要求电子数据展示 mangers 和调查人员只能在其代理中搜索 Exchange 邮箱、OneDrive 帐户和 SharePoint 网站。 此外，电子数据展示管理者和调查人员只能查看其代理中的电子数据展示案例，并且只能访问他们所属的案例。 下面介绍了合规性边界如何满足这些要求。
   
@@ -162,9 +162,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     
 2. 在电子数据展示事例的列表中，单击您创建的事例的名称。
     
-3. 在 "**管理此案例**" 弹出页面的 "**管理角色组**" ![下，](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)单击 "添加图标" "**添加**"。
+3. 在 "**管理此案例**" 弹出页面的 "**管理角色组**" ![下，](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif)单击 "添加图标" "**添加**"。
     
-    ![将角色组添加为电子数据展示事例的成员](media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
+    ![将角色组添加为电子数据展示事例的成员](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. 在角色组列表中，选择您在步骤3中创建的角色组之一，然后单击 "**添加**"。
     
@@ -263,7 +263,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **电子数据展示管理器能否从两个单独的合规性边界中查看内容？**
   
-可以。 为此，可以将用户添加到对这两个机构都可见的角色组。
+是。 为此，可以将用户添加到对这两个机构都可见的角色组。
   
  **搜索权限筛选器是否适用于电子数据展示事例保留、Office 365 保留策略或 DLP？**
   

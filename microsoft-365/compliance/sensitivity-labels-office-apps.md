@@ -1,5 +1,5 @@
 ---
-title: 在 Office 应用中的敏感度标签
+title: 在 Office 应用中使用敏感度标签
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,23 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: bbdc2ed7407104298e36e214dc3e532cc305c94d
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+description: 了解用户如何使用适用于桌面的 Office 应用程序中的使用敏感度标签、适用于移动的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
+ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855341"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069859"
 ---
-# <a name="sensitivity-labels-in-office-apps"></a>在 Office 应用中的敏感度标签
+# <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
-本文内容：
+当您从 Microsoft 365 合规性中心或等效标签中心发布灵敏度标签时，它们将开始显示在 Office 应用程序中，以便用户可以在创建或编辑数据时对其进行分类和保护。
 
-- 对您的环境的要求，然后才能对电子邮件、文件和附件应用敏感标签。
-- 每个 Office 应用支持哪种敏感度标签功能。
-- 当您将灵敏度标签与 Office 应用程序使用的其他 Microsoft 安全和合规性技术相结合时，会发生什么情况。
-- 组织中的用户如何在使用适用于 Windows 的 Office 应用和 Office 相关 web 应用程序时使用敏感度标签。
-- 帮助组织中的人员开始使用敏感度标签的其他资源。
+使用本文中的信息可帮助您成功管理 Office 应用中的使用敏感度标签。 例如，需要支持内置标签的应用程序的最低版本、与 Azure 信息保护的交互统一标签客户端，以及与其他应用程序和服务的兼容性。
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>敏感度标签的订阅和许可要求
 
@@ -70,7 +66,7 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 |[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 预览：滚动到[Office 预览体验成员](https://office.com/insider)            | 预览：滚动到[Office 预览体验成员](https://office.com/insider)        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
+|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 预览：在[Office 预览体验成员](https://office.com/insider)            | 预览：在[Office 预览体验成员](https://office.com/insider)        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[查看标签使用情况标签分析](label-analytics.md)并为管理员发送数据                      | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[要求用户对其电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)   | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 预览：在[Office 预览体验成员](https://office.com/insider)                                  | 正在审阅 | 正在审阅 | 正在审阅 | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -93,7 +89,7 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 预览：滚动到[Office 预览体验成员](https://office.com/insider)                       | 正在审阅                    | 正在审阅           | 正在审阅               | 是 |
 |
 
-## <a name="about-the-office-built-in-labeling-client"></a>关于 Office 内置标签客户端
+## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 内置标签客户端和 Azure 信息保护客户端
 
 Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感度标签策略设置：
 
@@ -127,21 +123,24 @@ Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感�
 
 用户可以一次仅为每个文档或电子邮件应用一个标签。
 
-当您标记包含附件的电子邮件时，附件不会继承该标签。 如果附件具有标签，则会保留单独应用的标签。 如果附件不包含标签，则不会在不带标签的情况下保留附件。 但是，如果电子邮件标签应用了保护，则该保护将应用于 Office 附件。
+当您标记包含附件的电子邮件时，附件不会继承该标签：
+
+- 如果附件具有标签，则会保留单独应用的标签。
+- 如果附件不包含标签，则不会在不带标签的情况下保留附件。 但是，如果电子邮件标签应用了保护，则该保护将应用于 Office 附件。
 
 ## <a name="sensitivity-label-compatibility"></a>敏感度标签兼容性
 
-**使用 RMS-智能型应用**。 如果在不支持敏感度标签的[智能型应用程序](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)中打开了已标记_和加密_的文档或电子邮件，则应用仍强制实施加密和权限管理。
+**对于智能型应用**：如果在不支持敏感度标签的[RMS 智能型应用程序](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)中打开已标记和加密的文档或电子邮件，则应用仍强制实施加密和权限管理。
 
-**与 Azure 信息保护客户端**。 您可以使用 Azure 信息保护客户端和其他方法查看和更改应用于 Office 内置标记客户端的文档和电子邮件的敏感度标签。
+**使用 Azure 信息保护客户端**：您可以使用 Azure 信息保护客户端和其他方法查看和更改应用于 Office 内置标记客户端的文档和电子邮件的敏感度标签。
 
-**与其他版本的 Office**。 任何授权的用户都可以在其他版本的 Office 中打开带标签的文档和电子邮件。 但是，只能在受支持的 Office 版本或 Azure 信息保护客户端中查看或更改标签。 本文的表中列出了受支持的 Office 应用程序版本。
+**与其他版本的 office**：任何授权的用户都可以在其他版本的 office 中打开带标签的文档和电子邮件。 但是，只能在受支持的 Office 版本中或通过使用 Azure 信息保护客户端来查看或更改标签。 [上一节](#support-for-sensitivity-label-capabilities-in-apps)中列出了受支持的 Office 应用程序版本。
 
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>支持由敏感度标签保护的 SharePoint 和 OneDrive 文件
 
-若要在 web 上的 Office 中使用 Office 内置标签客户端，该文档必须位于 OneDrive for business 或 SharePoint Online 实例中，并已选择加入到在[SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
+若要对 OneDrive for Business 或 SharePoint Online 中的文档使用 Office 内置标签客户端与 web 上的文档，请确保已选择预览以在[SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>当 Office 365 对内容应用内容标记和加密时
+## <a name="when-office-365-applies-content-marking-and-encryption"></a>当 Office 365 应用内容标记和加密时
 
 Office 365 根据您使用的应用程序以不同的敏感度标签应用内容标记和加密。
 
@@ -152,7 +151,7 @@ Office 365 根据您使用的应用程序以不同的敏感度标签应用内容
 | 网页版、iOS 版和 Android 版 Outlook | Exchange Online 发送电子邮件后 | Exchange Online 发送电子邮件后 |
 |
 
-## <a name="more-resources"></a>更多资源
+## <a name="end-user-documentation"></a>最终用户文档
 
 - [将敏感度标签应用于 Office 文档和电子邮件](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 

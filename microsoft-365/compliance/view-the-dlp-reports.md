@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 DLP 报告，您可以快速查看 DLP 策略匹配、覆盖或误报的数量;查看它们是按时间趋势上升还是下降;以不同的方式筛选报表;并在图表上的某一行上选择一个点，以查看其他详细信息。
-ms.openlocfilehash: 1605e2ebed9ada5903402ae5facdb40ce2f12c39
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601229"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068743"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
@@ -59,19 +59,19 @@ ms.locfileid: "41601229"
   
 您&amp;可以在安全合规性中心\> **报告** \> **仪表板**中找到这些报告。
   
-![DLP 策略匹配报告](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP 策略匹配报告](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>查看用户为替代而提交的理由
 
 如果你的 DLP 策略允许用户覆盖它，则可以使用误报和覆盖报告查看用户在策略提示中提交的文本。
   
-![DLP 误报和重写报告详细信息中的调整字段](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![DLP 误报和重写报告详细信息中的调整字段](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>对见解和建议采取措施
 
 报告可以显示见解和建议，在其中可以单击红色警告图标以查看有关潜在问题的详细信息，并采取可能的补救措施。
   
-![单击见解图标可查看详细信息和要执行的操作](media/51782036-7299-4960-8175-75c2b1637159.png)
+![单击见解图标可查看详细信息和要执行的操作](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>DLP 报告的权限
 

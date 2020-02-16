@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '启用存档邮箱并打开自动扩展存档，以增加 Office 365 中的 "可恢复的项目" 文件夹的大小。 '
-ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597929"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072913"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 
@@ -96,15 +96,15 @@ ms.locfileid: "41597929"
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>使用 EAC 创建保留策略
   
-1. 在 EAC 中，转到 **"合规性管理** \> **保留策略**"，然后单击 "](media/ITPro-EAC-AddIcon.gif)**添加** ![" "添加" 图标。
+1. 在 EAC 中，转到 **"合规性管理** \> **保留策略**"，然后单击 "](../media/ITPro-EAC-AddIcon.gif)**添加** ![" "添加" 图标。
     
 2. 在 "**新建保留策略**" 页上的 "**名称**" 下，键入描述保留策略用途的名称;例如，处于**保留状态的邮箱的 MRM 策略**。 
     
-3. 在 **"保留标记**" 下，单击](media/ITPro-EAC-AddIcon.gif)"**添加** ![" "添加" 图标。
+3. 在 **"保留标记**" 下，单击](../media/ITPro-EAC-AddIcon.gif)"**添加** ![" "添加" 图标。
     
 4. 在 "保留标记" 列表中，选择您在步骤1中创建的 "可恢复的项目" RPT，然后单击 "**添加**"。
     
-    ![选择自定义的“可恢复的项目”保留标记](media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![选择自定义的“可恢复的项目”保留标记](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
 5. 选择要添加到保留策略中的其他保留标记。 例如，您可能希望添加默认 MRM 策略中包含的相同标记。
     
@@ -114,7 +114,7 @@ ms.locfileid: "41597929"
     
     请注意，链接到保留策略的保留标记将显示在详细信息窗格中。
     
-    ![在详细信息窗格中显示链接到保留策略的保留标记](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![在详细信息窗格中显示链接到保留策略的保留标记](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
 ### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>使用 Exchange Online PowerShell 创建保留策略
   
@@ -139,7 +139,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
   
 1. 转到" **收件人**"\>" **邮箱**"。
     
-2. 在列表视图中，选择要应用保留策略的邮箱，然后单击 "**编辑** ![编辑图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
+2. 在列表视图中，选择要应用保留策略的邮箱，然后单击 "**编辑** ![编辑图标](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
     
 3. 在 "**用户邮箱**" 页上，单击 "**邮箱功能**"。
     
@@ -223,7 +223,7 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 启用用户的存档邮箱后，请考虑告诉用户其邮箱中的其他项目（不仅仅是 "可恢复的项目" 文件夹中的项目）可能会被移至存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含一个保留标记（名为 "默认2年移动到存档"），该保留标记将项目移至存档邮箱，然后在邮件传递到邮箱或由 "创建时间"user. 有关详细信息，请参阅[Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     

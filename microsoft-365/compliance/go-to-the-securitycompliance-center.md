@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: 您必须具有正确的权限，然后才能使用安全 & 合规性中心。 必须为你的工作或学校帐户分配 Office 365 全局管理员角色，或将其分配给全局管理员的一个或多个安全 & 合规性中心角色组。
-ms.openlocfilehash: 0ac56ad7fb4123b8cd2bd11cdcca7ee90d8126b0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c141f7f9de5a47412dc009ae6c077404cd3f795d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596519"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073081"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>转到 Office 365 安全与合规中心
 
@@ -40,4 +40,4 @@ ms.locfileid: "41596519"
 
 2. 使用工作或学校帐户登录到 Office 365。
 
-![Office 365 安全 & 合规性中心主页](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
+![Office 365 安全 & 合规性中心主页](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

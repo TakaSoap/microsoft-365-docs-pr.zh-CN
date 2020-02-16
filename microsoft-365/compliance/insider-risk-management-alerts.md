@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 80c5bb701c7805f673280d24903935c2951046b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590793"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072879"
 ---
 # <a name="insider-risk-management-alerts-preview"></a>内幕风险管理警报（预览）
 
@@ -34,7 +34,7 @@ ms.locfileid: "41590793"
     - 解决中等严重性警报的平均时间，以小时、天或月为单位列出。
     - 解决低严重性警报的平均时间，以小时、天或月为单位列出。
 
-![内幕风险管理警报仪表板](media/insider-risk-alerts-dashboard.png)
+![内幕风险管理警报仪表板](../media/insider-risk-alerts-dashboard.png)
 
 ## <a name="alert-status-and-severity"></a>警报状态和严重性
 

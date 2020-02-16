@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 作为 Office 365 管理员，您可以吊销使用 Office 365 高级邮件加密进行加密的某些电子邮件。
-ms.openlocfilehash: 9d694c200df161c0a52884ded14d29908376a9b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597599"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070030"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>撤销使用 Office 365 高级邮件加密进行加密的电子邮件
 
@@ -41,7 +41,7 @@ ms.locfileid: "41597599"
 
 一旦电子邮件被吊销，收件人通过 Office 365 邮件加密门户访问加密的电子邮件时，会收到错误消息： "邮件已被发件人吊销"。
 
-![显示已吊销加密电子邮件的屏幕截图。](media/revoked-encrypted-email.png)
+![显示已吊销加密电子邮件的屏幕截图。](../media/revoked-encrypted-email.png)
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>如何撤销加密电子邮件
 

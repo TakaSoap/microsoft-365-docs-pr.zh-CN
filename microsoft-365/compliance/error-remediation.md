@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aac2dc742af4491be8c7f30ed6e78c549a924f3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 524378ecb7ec7cd8285e7d1ccda5667aa6081f30
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592813"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074407"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>处理调查数据时的错误修正
 
@@ -40,15 +40,15 @@ ms.locfileid: "41592813"
 
 3. 单击 " **+ 新错误修正**"。
 
-    ![错误修正](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![错误修正](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     错误修正会话开始，从准备阶段开始，其中将包含错误的文件复制到安全 Azure 位置，以便可以下载它们。
 
-    ![准备错误修正](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![准备错误修正](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. 准备完成后，单击 "**下一步：下载文件**" 以继续下载。
 
-    ![下载文件](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![下载文件](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. 若要下载文件，请指定**下载的目标路径**。 这是您的本地计算机上应下载文件的路径。  默认路径 "%USERPROFILE%\Downloads\errors" 指向已登录用户的 "下载" 文件夹;可以根据需要对此进行更改。
 
@@ -62,7 +62,7 @@ ms.locfileid: "41592813"
 
     将下载这些文件。
 
-    ![准备错误修正](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![准备错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > 如果您在运行此命令时遇到问题，请参阅[解决 AzCopy In 高级电子数据展示](troubleshooting-azcopy.md)问题。
@@ -74,13 +74,13 @@ ms.locfileid: "41592813"
 
 8. 现在，返回到 "数据调查（预览）"，然后单击 "**下一步：上传文件**"。  此操作将移至下一步，你现在可以在其中上传文件。
 
-    ![上传文件](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![上传文件](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. 在 "**文件的位置路径**" 文本框中指定修正的文件的位置，然后单击 "**复制到剪贴板**"。
 
 10. 将命令粘贴到 Windows 命令提示符中，然后按**enter**上传文件。
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. 最后，返回到 "数据调查（预览）"，然后单击 "**下一步：处理文件**"。
 

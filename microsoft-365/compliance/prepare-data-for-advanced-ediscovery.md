@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: '了解如何使用 Microsoft 365 安全&amp;合规中心来准备 office 365 数据，以便使用 Office 365 高级电子数据展示进行分析。 '
-ms.openlocfilehash: 6407b6f2a2bbe9bc69842057232ec01569ef64c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 028cdb48e5ece2509d175a363c19beb6c2fafa19
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597759"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071029"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>准备用于 Office 365 高级电子数据展示的数据
 
 本主题介绍如何将内容搜索的结果加载到高级电子数据展示的案例中。 
   
 > [!IMPORTANT]
-> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布弃用 Office 365 高级电子数据展示（也称为*高级电子数据展示 v1.0 1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快转换为[高级电子数据展示2.0 版](overview-ediscovery-20.md)（也称为*Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示2.0 包含高级电子数据展示 v1.0 中的类似功能，但也提供了许多新功能，如保管人管理、通信管理和审查集。 若要详细了解高级电子数据展示1.0 版，请参阅[旧电子数据展示工具的退休](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。  
+> 当我们继续对较新版本的高级电子数据展示进行投资时，我们将宣布停用 Office 365 高级电子数据展示（也称为*高级电子数据展示 v1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。  
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步骤1：为高级电子数据展示准备 Office 365 数据
 
@@ -53,11 +53,11 @@ ms.locfileid: "41597759"
     
 5. 在此案件集的“主页”**** 上，单击“高级电子数据展示”****。 
     
-    ![单击 "切换到高级电子数据展示" 以在高级电子数据展示中打开事例](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![单击 "切换到高级电子数据展示" 以在高级电子数据展示中打开事例](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
     将显示 "**连接到高级电子数据展示**进度栏"。 当您连接到高级电子数据展示时，会在 "设置" 页上显示一个容器列表。 
     
-    ![事例显示在高级电子数据展示](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![事例显示在高级电子数据展示](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
      这些容器代表您在步骤1中的高级电子数据展示中准备进行分析的搜索结果。 请注意，在安全&amp;合规中心的情况下，容器名称与内容搜索的名称相同。 列表中的容器是您准备的容器。 如果其他用户为高级电子数据展示准备了搜索结果，则相应的容器将不会包含在列表中。 
     

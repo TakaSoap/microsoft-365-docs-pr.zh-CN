@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: '了解在 Office 365 高级电子数据展示的相关培训阶段，要标记并使用40文件的培训示例的步骤。  '
-ms.openlocfilehash: fa690857fabb6a732d329dc8a75896d9e1aa195d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601419"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069555"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的标记和相关性培训
 
@@ -36,7 +36,7 @@ ms.locfileid: "41601419"
 
 1. 在 "**相关性\>标记**" 选项卡中，默认情况下将在左窗格中显示 "标记" 窗格，并显示示例文件（一次显示一个标记）。 
     
-    ![相关性标签面板](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![相关性标签面板](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     在 "**标签**" 选项卡中，显示文件的显示名称。 这可以是路径、电子邮件主题、标题或用户定义的名称。 可以通过右键单击文件路径来复制 ID、文件路径或文本路径。 
     
@@ -50,7 +50,7 @@ ms.locfileid: "41601419"
 |-----|-----|-----|-----|
 |R  <br/> |符合  <br/> |Z  <br/> |Shift + Z  <br/> |
 |FÜHRERSCHEIN-NR  <br/> |无关  <br/> |X  <br/> |Shift + X  <br/> |
-|过  <br/> |过  <br/> |C  <br/> |Shift + A  <br/> |
+|Skip  <br/> |Skip  <br/> |C  <br/> |Shift + A  <br/> |
    
   - 如果一个文件存在多个问题，则在标记一个问题后，所选内容将移至下一个问题（如果有）。 
     
@@ -58,7 +58,7 @@ ms.locfileid: "41601419"
     
     （可选）在 "**标记**" 选项卡中，单击 "**标记设置**" 以设置以下选项： 
     
-    ![相关性标签设置](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+    ![相关性标签设置](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
   - **批量标记**：使用此选项可以为文件分配多个问题，方法是选择 "**全部**" 以为所选文件设置所有问题（重写已标记的问题）的标记，或选择 **"rest** " 将该标记应用于其余的未加标签的问题。 选定的选项在此用户的所有情况下始终有效，直到该用户发生更改（针对所有用户案例为每个用户设置）。 
     
@@ -80,7 +80,7 @@ ms.locfileid: "41601419"
   
 1. 在 "**相关性\>标记**" 选项卡中，选择左窗格下拉列表中的示例文件。 示例文件在左窗格中列出。 
     
-    ![相关性标记示例文件列表](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![相关性标记示例文件列表](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. 通过在 "**示例**" 或 "**文件**" 框中输入或选择一个特定的采样或文件编号来选择它们。 
     

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 了解如何通过 Microsoft Azure Active Directory 权限管理服务（RMS）使用 SharePoint Online IRM 来保护 SharePoint 列表和文档库。
-ms.openlocfilehash: 47321ea6151b51ac3637b3c044af37fbbc032d56
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5aae2ba78997a8277989dcc3b5e68e00f0bfcb4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597439"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069601"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -38,7 +38,7 @@ ms.locfileid: "41597439"
   
 1. 以全局管理员或 SharePoint 管理员身份登录 Office 365。
     
-2. 依次选择左上角的应用启动器图标 ![Office 365 中的应用启动器图标](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) 和“管理员”****，以打开 Microsoft 365 管理中心。 （如果看不到“管理员”磁贴，表明你在组织中没有 Office 365 管理员权限。） 
+2. 依次选择左上角的应用启动器图标 ![Office 365 中的应用启动器图标](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) 和“管理员”****，以打开 Microsoft 365 管理中心。 （如果看不到“管理员”磁贴，表明你在组织中没有 Office 365 管理员权限。） 
     
 3. 在左窗格中，选择 "**管理中心** \> " " **SharePoint**"。
     

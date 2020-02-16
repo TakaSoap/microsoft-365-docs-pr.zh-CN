@@ -20,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核，以确定与组织外部的用户共享的资源。 '
-ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597279"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069231"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>审核共享以查找与外部用户共享的资源
 
@@ -99,13 +99,13 @@ ms.locfileid: "41597279"
     
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索**  > **审核日志搜索**"。
+3. 在安全与合规中心的左侧窗格中，单击“**搜索**”  > “**审核日志搜索**”。
     
     此时将显示“**审核日志搜索**”页面。 
     
 4. 在 "**活动**" 下，单击 "**共享和访问请求活动**" 以搜索与共享相关的事件。 
     
-    ![在 "活动" 下，选择 "共享和访问请求活动"](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![在 "活动" 下，选择 "共享和访问请求活动"](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  选择日期和时间范围以查找在该时间段内发生的共享事件。 
     

@@ -1,5 +1,7 @@
 ---
 title: 使用 Office 365 电子数据展示调查部分索引项
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分索引项目（也称为未编制索引项）是 SharePoint 和 OneDrive 网站上的 Exchange 邮箱项目和文档，由于某些原因未完全为内容搜索编制索引。 在本文中，您可以了解为什么无法将项目编入搜索，并作为部分索引项目返回，确定部分索引项目的搜索错误，以及使用 PowerShell 脚本确定组织的部分索引电子邮件的公开程度。items.
-ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b67b7d5cfedd37315a9f8bc9027e03b820598846
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685275"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072335"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>使用 Office 365 电子数据展示调查部分索引项
 
@@ -49,7 +51,7 @@ ms.locfileid: "38685275"
 
 若要了解组织对部分索引项目的暴露程度，可以对所有邮箱中的所有内容运行搜索（通过使用空白的关键字查询）。 在下面的示例中，有56208（4830 MB）的完全索引项和470（316 MB）部分索引项。
   
-![显示部分索引项目的搜索统计信息示例](media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![显示部分索引项目的搜索统计信息示例](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
   
 您可以使用以下计算来确定部分索引项目的百分比。
   
@@ -74,7 +76,7 @@ ms.locfileid: "38685275"
 
 在需要检查部分项目以验证它们不包含相关信息的情况下，您可以导出包含部分索引项目相关信息的[内容搜索报告](export-a-content-search-report.md)。 导出内容搜索报告时，请务必选择包含部分索引项目的导出选项之一。 
   
-![选择第二个或第三个选项以导出部分索引项目](media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![选择第二个或第三个选项以导出部分索引项目](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
 当您使用其中一个选项导出内容搜索结果或内容搜索报告时，导出将包含一个名为 "未编制索引的项目 .csv" 的报告。 此报告包含与 ResultsLog 文件相同的大部分信息;但是，未编制索引的项目 .csv 文件还包含与部分索引项目相关的两个字段：**错误标记**和**错误属性**。 这些字段包含有关每个部分索引项的索引错误的信息。 使用这两个字段中的信息可帮助您确定您的调查是否有特定影响的索引错误。 如果这样做，您可以执行目标内容搜索并检索和导出特定的电子邮件和 SharePoint 或 OneDrive 文档，以便您可以对其进行检查以确定它们是否与您的调查相关。 有关分步说明，请参阅[在 Office 365 中准备用于目标内容搜索的 CSV 文件](csv-file-for-an-id-list-content-search.md)。
   
@@ -164,7 +166,7 @@ ms.locfileid: "38685275"
   
 ```
 
-2. [连接到安全 & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
+2. [连接到安全与合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
     
 3. 在安全 & 合规性中心 PowerShell 中，转到在步骤1中保存脚本的文件夹，然后运行该脚本;例如：
 
@@ -174,7 +176,7 @@ ms.locfileid: "38685275"
 
 下面的示例展示了脚本返回的输出。
   
-![生成来自组织公开的报告的脚本的输出示例，以部分索引的电子邮件项目](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![生成来自组织公开的报告的脚本的输出示例，以部分索引的电子邮件项目](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
 请注意以下事项：
   

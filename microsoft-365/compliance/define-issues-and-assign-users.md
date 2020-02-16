@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: 了解如何在 Office 365 高级电子数据展示中添加或编辑问题，包括向用户分配用户或删除电子数据展示事例的问题。
-ms.openlocfilehash: 78f0b53c1f66adb9c1c8534bbf4b1e1915f6ba0d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595347"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075882"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>定义问题并在 Office 365 高级电子数据展示中分配用户
 
@@ -33,11 +33,11 @@ ms.locfileid: "41595347"
 
 1. 在 "**相关性\>关联设置**" \>选项卡中，选择 "**问题**"。
     
-    ![相关性设置问题](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
+    ![相关性设置问题](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
 2. 若要添加问题，请单击 * * + * * 图标。 将显示 "**添加问题**" 对话框。 
     
-    ![相关性设置添加问题](media/c8e94982-139a-472a-b85d-282f2d742046.png)
+    ![相关性设置添加问题](../media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
     若要编辑问题，请单击 "**编辑**" 图标。 
     

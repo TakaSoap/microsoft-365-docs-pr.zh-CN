@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何使用安全 & 合规性中心中的新数据调查（预览版）工具删除其原始位置中的项目。
-ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0232a822af0427fcfa669fa1e86558ca54996202
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595317"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075834"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>从原始位置删除项目（预览）
 
@@ -31,7 +31,7 @@ ms.locfileid: "41595317"
 
 使用数据调查，可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您拥有在证据集内保留的项目的副本以供进一步调查或保留为参考。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要删除项目，您必须在安全 & 合规性中心中为其分配**搜索和清除**角色。 默认情况下，此角色分配给内置的 "数据调查者" 角色组。
 
@@ -52,22 +52,22 @@ ms.locfileid: "41595317"
  
 2. 单击 "**操作**"，然后单击 "**从原始位置删除项目**"。
 
-   ![单击 "操作"，然后单击 "从原始位置删除项目"](media/DataInvestigationsDeleteItems1.png)
+   ![单击 "操作"，然后单击 "从原始位置删除项目"](../media/DataInvestigationsDeleteItems1.png)
 
 3. 在弹出页面上，验证要删除的项目和相关子文档的数目，然后单击 "**删除**"。
 
-   ![浮出控件页面显示选定要删除的项目数和所有附加的文档](media/DataInvestigationsDeleteItems2.png)
+   ![浮出控件页面显示选定要删除的项目数和所有附加的文档](../media/DataInvestigationsDeleteItems2.png)
 
    > [!NOTE]
    > 在上面的屏幕快照中，项目数指示选定要删除的项目数。 文档数指示包含附加到父项目的任何文件的项目总数。 例如，如果您选择一封电子邮件，并且该邮件包含附加的 Word 文档，则 "**选定的文档**" 下显示的项目数和文档数将为**1 个项目（2个文档）**。
 
 您可以在 "**作业**" 选项卡上跟踪 "**从原始位置删除项目**" 作业的进度。单击该作业以显示弹出页面。
 
-![用于从原始位置作业中删除项目的飞出页面](media/DataInvestigationsDeleteItems3.png)
+![用于从原始位置作业中删除项目的飞出页面](../media/DataInvestigationsDeleteItems3.png)
 
 删除作业中的项目时，作业状态将设置为 "**成功**"。 还会显示已完成作业的时间和日期。
 
-![已完成的 "删除项目" 作业](media/DataInvestigationsDeleteItems4.png)
+![已完成的 "删除项目" 作业](../media/DataInvestigationsDeleteItems4.png)
 
 > [!NOTE]
 > 您可能会收到**来自原始位置**作业的 "删除项目"**部分成功**的状态。 有很多情况会导致此作业状态。 有关详细信息，请参阅本文中的[部分成功删除](#partially-successful-deletions)部分。

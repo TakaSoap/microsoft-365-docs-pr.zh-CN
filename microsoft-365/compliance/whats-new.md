@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: 2ec046b6b5aa78e5eb44bbe6eebff222752f9c18
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: c3537657eb0bd3bf5b31f1b90c513c3e49eef000
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774198"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068677"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -32,11 +32,71 @@ ms.locfileid: "41774198"
 > 对其他管理中心中的内容有兴趣？ 查看以下文章：<br>[Microsoft 365 管理中心的新增功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 并访问[microsoft 365 路线图](https://www.microsoft.com/en-us/microsoft-365/roadmap)，了解已启动的 microsoft 365 功能、正在开发、已被取消或之前已发布的功能。
 
+## <a name="january-2020"></a>2020 年 1 月
+
+等待已结束。 我们很高兴宣布 Microsoft 365 合规性中心可供所有客户使用 Microsoft 365、Office 365、企业移动性 + 安全性（EMS）和 Windows 10 企业版计划。 在 Office 365 安全 & 合规中心中管理的任何数据或策略在合规性中心中均可用，因此无需来回跳转。
+
+> [!TIP]
+> 再次阅读上个月的更新，以了解最近预览的一些[新解决方案](#new-compliance-solutions)的复习，并提供了一个路线图，该[指南](#updated-compliance-solutions)展示了 Office 365 安全性 & 合规性中心在 Microsoft 365 中的活动。
+
+书签并将[https://compliance.microsoft.com](https://compliance.microsoft.com)其置于现在，以浏览您的一站式管理合规性，以跨整个组织 .。。或者[阅读本文](microsoft-365-compliance-center.md)以进一步深入研究。
+
+![Microsoft 365 合规性中心主页](../media/mcc-home-ga.png)
+
+我们也在本月发布了新的和更新的解决方案。 下面将快速浏览一下重点。
+
+### <a name="now-in-preview"></a>现在预览
+
+**内幕风险管理（预览）**
+
+我们很高兴宣布，我们的内幕风险管理解决方案现已处于公共预览版中。 简言之，内幕风险管理可帮助您的组织智能化地识别和采取对内幕风险的操作，方法是提供：
+
+- 可帮助确保用户隐私的匿名控件。
+- 智能策略模板，带有可识别内幕威胁的本机和第三方指示符，如数据泄露。
+- 跨 IT、HR 和法律团队的集成的端到端调查工作流。
+
+我们乐意听到你的想法。 在使用解决方案时，请将反馈留给我们，以确保我们在实现常规可用性时能够满足你的需求。
+
+[了解有关内幕风险管理的详细信息](insider-risk-management.md)
+
+### <a name="just-launched"></a>刚刚启动
+
+**沟通合规性**
+
+毕业从预览阶段到完整可用性，通信合规性是我们新的内幕风险解决方案集的关键组件。 此强健的解决方案可帮助最大限度地减少使用工作流对不符合组织标准的邮件进行检测、调查和采取补救措施的工作流的通信风险。
+
+在预览过程中，客户反馈很棒。 它产生了几项增强功能，包括首次运行体验，使您能够开始、调查和修正操作的改进等。
+
+[了解有关通信合规性的详细信息](communication-compliance.md)
+
+![Microsoft 365 合规性中心中的通信合规性页面，显示欢迎体验的第一张卡片](../media/mcc-communication-compliance-page-with-fre.png)
+
+**数据连接器**
+
+以前与 Office 365 安全 & 合规中心中的其他 "导入" 功能共享空间，数据连接器现在在 Microsoft 365 合规性中心拥有自己的主址。 使用新的 "数据连接器" 页面将组织的人力资源（HR）文件和各种第三方平台（如 Facebook、LinkedIn、Twitter 和即时 Bloomberg）中的数据导入和存档到 Microsoft 365 组织中的邮箱。 导入后，可以在几个合规性解决方案中管理此类数据，包括电子数据展示、内幕风险管理、通信合规性、审核、保留策略等。
+
+[了解有关数据连接器的详细信息](archiving-third-party-data.md)
+
+![Microsoft 365 合规性中心中的 "数据连接器" 页](../media/mcc-data-connectors-page.png)
+
+### <a name="noteworthy-updates"></a>值得注意的更新
+
+**针对合规性分数的新评估模板（预览）**
+
+始终致力于帮助您提前掌握日益发展的合规性，我们的合规性分数团队提供了一组新的模板，以帮助您评估组织对最新法规的合规性情况，并获取有关如何实施的指导更有效的控件。 你将看到以下内容的新模板：
+
+- ISO/IEC 27701:2019
+- 加州消费者隐私法案 (CCPA)
+- 巴西常规数据保护法律（Lei Geral de Proteção de Dados-LGPD）
+- SOC 1 类型2和 SOC 2 类型2
+
+[了解有关合规性分数模板的详细信息](compliance-score.md#templates)
+
 ## <a name="november--december-2019"></a>2019年11月 &
 
 在节日中，我们开始推出 Ignite 中演示的所有极好的合规性解决方案。 大多数情况下都处于预览状态，因此请将其测试出来，并确保通过打开合规性中心右侧右侧的反馈卡片来了解你的想法。
 
-![反馈](media/Feedback_card_MCC.JPG)
+![反馈](../media/Feedback_card_MCC.JPG)
 
 ### <a name="get-to-know-the-new-neighborhood"></a>了解新的邻居
 
@@ -52,7 +112,7 @@ ms.locfileid: "41774198"
 > 这些解决方案仅位于 Microsoft 365 合规性中心。 不能在 Office 365 安全 & 合规性中心中进行管理。
 <br/>
 
-|**新解决方案**|**Description**|**了解更多**|
+|**新解决方案**|**说明**|**了解更多**|
 |:-----|:-----|:-----|
 |Microsoft 合规性分数（预览） <br/>|根据[合规性管理器](compliance-manager-overview.md)，合规性分数是一项独立功能，可帮助您了解和改进组织的合规性状态，这是一个更简单、更易于用户友好的设计。 它将计算基于风险的分数，以衡量您在帮助降低数据保护和法规标准方面的风险的完成操作的进度。 <br/>|[Microsoft 合规性分数概述（预览）](compliance-score.md)|
 |解决方案目录（预览） <br/>|解决方案目录是用于发现、了解和快速开始使用合规性和风险管理解决方案的一站式业务。 目录分为三个符合性类别，每个类别都包含有关组成该类别的解决方案的详细信息。 类别包括信息保护 & 治理、内幕风险管理和发现 & 响应 <br/>|[解决方案目录概述（预览）](microsoft-365-solution-catalog.md)|
@@ -74,7 +134,7 @@ ms.locfileid: "41774198"
 |警报策略|警报 > 通知策略 <br/> https://protection.office.com/alertpolicies |目前，仅在 Office 365 安全性 & 合规性中心中管理警报策略。 |[安全与合规中心中的警报策略](alert-policies.md) |
 |警报|警报 > 查看警报 <br/> https://protection.office.com/viewalerts |警报 <br/> https://compliance.microsoft.com/compliancealerts |[查看警报](alert-policies.md#viewing-alerts)|
 |存档|信息治理 > 存档 <br/> https://protection.office.com/archiving |信息治理 > 存档 "选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[启用存档邮箱](enable-archive-mailboxes.md)|
-|审核日志搜索|搜索 > 审核日志搜索 <br/> https://protection.office.com/unifiedauditlog |目前，您只能从 Office 365 安全性 & 合规性中心搜索审核日志。| [在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)|
+|审核日志搜索|搜索 > 审核日志搜索 <br/> https://protection.office.com/unifiedauditlog |跟踪 <br/> https://compliance.microsoft.com/auditlogsearch| [在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)|
 |内容搜索|搜索 > 内容搜索 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | 内容搜索 <br/> https://compliance.microsoft.com/contentsearch |[在 Office 365 中搜索内容](search-for-content.md) |
 |数据连接器|信息治理 > 存档第三方数据 <br/> https://protection.office.com/nativeconnector | 数据连接器 <br/> https://compliance.microsoft.com/connectorlanding |[存档第三方数据](archiving-third-party-data.md)|
 |数据丢失防护|数据丢失防护 <br/> https://protection.office.com/datalossprevention |数据丢失防护 <br/> https://compliance.microsoft.com/datalossprevention |[数据丢失防护概述](data-loss-prevention-policies.md)|
@@ -87,7 +147,7 @@ ms.locfileid: "41774198"
 |保留标签和标签策略 |分类 > 保留标签 > 标签和标签策略选项卡 <br/> https://protection.office.com/retentionlabels |信息治理 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留标签概述](labels.md)|
 |保留策略|信息治理 > 保留 <br/> https://protection.office.com/retention |信息治理 > 保留选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[保留策略概述](retention-policies.md)|
 |敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)|
-|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[敏感度标签概述](sensitivity-labels.md) |
+|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度标签](sensitivity-labels.md) |
 |服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全 & 合规中心中的服务保证](service-assurance.md)|
 |监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |沟通合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通信合规性（预览）](communication-compliance.md) |
 
@@ -124,4 +184,4 @@ ms.locfileid: "41774198"
 
 不会再滚动浏览报告的海洋，以查找您需要的报告。 您现在可以搜索报告（基于其标题），并筛选类别（如 "标签" 和 "合规性"）以及 "Office 365" 和 "Microsoft 云应用安全" 等源。
 
-![包含已应用筛选器的报表的搜索和筛选按钮的屏幕捕获](media/mcc_report_filtering.png)
+![包含已应用筛选器的报表的搜索和筛选按钮的屏幕捕获](../media/mcc_report_filtering.png)

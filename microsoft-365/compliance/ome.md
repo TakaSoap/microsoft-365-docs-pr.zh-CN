@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 使用 Office 365 邮件加密，组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
-ms.openlocfilehash: a80086e64c7e7033141fcc84e0cd9145d64a22f6
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: ae0d8e831b872c898140612225de39a89f31ae6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862022"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071089"
 ---
 # <a name="office-365-message-encryption"></a>Office 365 邮件加密
 

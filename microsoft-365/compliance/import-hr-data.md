@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将员工数据从组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862032"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072998"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
@@ -86,7 +86,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 5. 在 "**文件映射**" 页上，键入三个列标题名称（也称为 "在第2步中在每个相应的框中创建的 CSV 文件中的*参数*）"。 名称不区分大小写。 如前面所述，在这些框中键入的名称必须与 CSV 文件中的参数名称相匹配。 例如，下面的屏幕截图显示了在第2步中显示的示例 CSV 文件示例中的参数名称。
 
-   ![列标题名称与 CSV 文件中的名称相匹配](media/HRConnectorWizard3.png)
+   ![列标题名称与 CSV 文件中的名称相匹配](../media/HRConnectorWizard3.png)
 
 6. 在 "**检查**" 页上，查看您的设置，然后单击 "**完成**" 以创建连接器。
 
@@ -98,7 +98,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 8. 单击刚创建的 HR 连接器以显示弹出页面，其中包含有关连接器的属性和其他信息。 
 
-   ![新 HR 连接器的飞出页面](media/HRConnectorWizard7.png)
+   ![新 HR 连接器的飞出页面](../media/HRConnectorWizard7.png)
 
    如果还未执行此操作，则可以复制**Azure 应用 id**和**连接器作业 ID**的值。 在下一步中，你将需要这些脚本来运行脚本。 您还可以从弹出页面下载该脚本（或在下一步中使用链接进行下载）。
 
@@ -153,11 +153,11 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 2. 单击 "**连接器**" 选项卡，然后选择 HR 连接器以显示弹出页面，其中包含有关连接器的属性和信息。
 
-   ![带有属性和状态的 HR 连接器浮出控件页](media/HRConnectorFlyout1.png)
+   ![带有属性和状态的 HR 连接器浮出控件页](../media/HRConnectorFlyout1.png)
 
 3. 在 "**进度**" 下，单击 "**下载日志**" 链接以打开（或保存）连接器的状态日志。 此日志包含有关每次脚本运行的信息，并将数据从 CSV 文件上载到 Microsoft 云。 
 
-   ![HR 连接器日志文件显示从 CSV 文件上载的编号行数](media/HRConnectorLogFile.png)
+   ![HR 连接器日志文件显示从 CSV 文件上载的编号行数](../media/HRConnectorLogFile.png)
 
    **RecordsSaved**字段指示上传的 CSV 文件中的行数。 例如，如果 CSV 文件包含4行，则如果脚本成功上传了 CSV 文件中的所有行，则**RecordsSaved**字段的值为4。
 
@@ -193,7 +193,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 7. 选择 "**操作**" 选项卡，单击 "**新建**"，然后执行以下操作：
 
-   ![为 HR 连接器脚本创建新的计划任务的操作设置](media/HRConnectorScheduleTask1.png)
+   ![为 HR 连接器脚本创建新的计划任务的操作设置](../media/HRConnectorScheduleTask1.png)
 
    a. 在 "**操作**" 下拉列表中，确保选择 "**启动程序**"。
 
@@ -209,7 +209,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    新任务将显示在 "任务计划程序库" 中。
 
-   ![新任务将显示在任务计划程序库中](media/HRConnectorTaskSchedulerLibrary.png)
+   ![新任务将显示在任务计划程序库中](../media/HRConnectorTaskSchedulerLibrary.png)
 
    最后一次运行脚本并显示下一次计划运行时。 您可以双击该任务以对其进行编辑。
 

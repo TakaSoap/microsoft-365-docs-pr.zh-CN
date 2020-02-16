@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3be5e4054e34cabb61505d48524feb2dbbfd0e44
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4db0b40d485c4c1107bdcb0d49616cadb15b1915
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600569"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072145"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>将非 Office 365 数据加载到证据中
 
@@ -30,7 +30,7 @@ ms.locfileid: "41600569"
 >[!Note]
 >数据调查需要 Office 365 E3 和您的组织的高级合规性加载项或 E5 订阅。 如果你没有该计划，并且想要尝试高级电子数据展示，可以注册 Office 365 企业版 E5 的试用版。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 如以下过程所述，使用 "上载非 Office 365" 功能需要具备以下条件：
 
@@ -52,11 +52,11 @@ ms.locfileid: "41600569"
 
 2. 单击 "**上载文件**" 按钮以启动 "非 Office 365 数据导入向导"。
 
-![上传文件](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+![上传文件](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
 3. 向导中的第一步是为要上载的文件准备一个安全的 Azure blob。  准备完成后，单击 "**下一步：上传文件**" 按钮。
 
-![准备非 Office 365 数据导入](media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+![准备非 Office 365 数据导入](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 4. 在 "**上载文件**" 步骤中，指定**文件位置的路径**，这是您计划导入的非 Office 365 数据所在的位置。  设置正确的位置可确保正确更新 AzCopy 命令。
 
@@ -65,11 +65,11 @@ ms.locfileid: "41600569"
 
 5. 通过单击 "**复制到剪贴板**" 链接复制预定义命令。 启动 windows 命令提示符，粘贴命令并按 enter。  将在下一步中将文件上载到安全 Azure blob 存储。
 
-![上载非 Office 365 数据导入的文件](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+![上载非 Office 365 数据导入的文件](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-![使用 AzCopy 导入非 Office 365 数据](media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+![使用 AzCopy 导入非 Office 365 数据](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
 6. 最后，返回到安全 & 合规性，然后单击 "**下一步：处理文件**" 按钮。  这将启动已上载文件的处理、文本提取和索引。  您可以在此处或在 "**作业**" 选项卡中跟踪处理进度。 完成后，新文件就会出现在证据集中。  处理完成后，可以关闭向导。
 
-![非 Office 365 导入过程文件](media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+![非 Office 365 导入过程文件](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 

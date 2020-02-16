@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 安装和使用 Azure 存储资源管理器下载从数据调查中的证据导出的文档。
-ms.openlocfilehash: a0e93d392e12ba548c8360a618abf909c89f2036
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1f528101140a97df0161638be14e503a05b18f2c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595157"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074929"
 ---
 # <a name="download-export-jobs"></a>下载导出作业
 
@@ -43,7 +43,7 @@ ms.locfileid: "41595157"
 
 3. 在弹出页面上的 "**位置**" 下，复制所显示的 SAS URL。 如有必要，可将其保存到文件中，以便您可以在第3步中访问它。
  
-   ![复制在 "位置" 下显示的 SAS URL](media/eDiscoExportJob.png)
+   ![复制在 "位置" 下显示的 SAS URL](../media/eDiscoExportJob.png)
 
 ## <a name="step-3-connect-to-the-azure-storage-location"></a>步骤3：连接到 Azure 存储位置
 
@@ -53,29 +53,29 @@ ms.locfileid: "41595157"
 
 2. 单击 "**添加帐户**" 图标。 或者，也可以右键单击 "**存储帐户**"。
 
-   ![单击 "添加帐户" 图标](media/AzureStorageConnect.png)
+   ![单击 "添加帐户" 图标](../media/AzureStorageConnect.png)
 
 3.  在 "**连接到 Azure 存储**" 页上，单击 "**使用共享访问签名（SA）" URI** ，然后单击 "**下一步**"。
 
-    ![单击 "使用共享访问签名（SA）" URI，然后单击 "下一步"](media/AzureStorageConnect2.png)
+    ![单击 "使用共享访问签名（SA）" URI，然后单击 "下一步"](../media/AzureStorageConnect2.png)
 
 4.  在 "**附加到 SAS uri** " 页上，在 "URI" 框中单击，然后粘贴您在步骤2中获取的 SAS URL。 
 
-    ![将 SAS URL 粘贴到 URI 框中](media/AzureStorageConnect3.png)
+    ![将 SAS URL 粘贴到 URI 框中](../media/AzureStorageConnect3.png)
 
     请注意，SAS URL 的一部分显示在 "**显示名称**" 框中。 这将在连接到存储位置后用作**存储帐户**下创建的容器的显示名称。 此名称由数据调查的 ID 和唯一标识符组成。 您可以保留默认的显示名称，也可以对其进行更改。 如果您更改它，则显示名称必须是唯一的。
 
-5.  单击“下一步”。****
+5.  单击“**下一步**”。
 
     将显示 "**连接摘要**" 页。
    
-    ![单击 "连接摘要" 页面上的 "连接" 以连接到 Azure 存储位置](media/AzureStorageConnect4.png)
+    ![单击 "连接摘要" 页面上的 "连接" 以连接到 Azure 存储位置](../media/AzureStorageConnect4.png)
 
 6. 在 "**连接摘要**" 页上，查看连接信息，然后单击 "**连接**"。 
 
     " **Blob 容器**" 节点（在 "**存储帐户** > **（附加容器）** \> " 下打开）。 
 
-    ![在 "Blob 容器" 节点中导出作业](media/AzureStorageConnect5.png)
+    ![在 "Blob 容器" 节点中导出作业](../media/AzureStorageConnect5.png)
 
     它包含使用步骤4中的显示名称命名的容器。 此容器包含您创建的每个导出作业的文件夹。 这些文件夹使用与导出作业的 ID 对应的 ID 进行命名。 您可以在弹出页面上的 "**支持信息**" 下找到这些导出 id （和导出的名称），在 "**作业**" 选项卡上列出的每个**为导出作业准备数据的每个准备数据**。
 
@@ -83,7 +83,7 @@ ms.locfileid: "41595157"
 
    将显示文件夹列表和导出报告。
    
-    ![导出文件夹包含导出的文件并导出报告](media/AzureStorageConnect6.png)
+    ![导出文件夹包含导出的文件并导出报告](../media/AzureStorageConnect6.png)
 
    "导出作业" 文件夹包含以下项目。 导出文件夹中的实际项目由创建导出作业时配置的导出选项决定。 有关详细信息，请参阅[从审阅集导出文档](export-documents-from-review-set.md)。
 
@@ -107,7 +107,7 @@ ms.locfileid: "41595157"
 
     Azure 存储资源管理器将启动导出过程。 下载导出项目的状态将显示在 "**活动**" 窗格中。 下载完成后，会显示一条消息。
 
-    ![下载完成时显示一条消息](media/AzureStorageConnect8.png)
+    ![下载完成时显示一条消息](../media/AzureStorageConnect8.png)
 
 > [!NOTE]
 > 您可以选择要下载的特定项目，而不是下载整个导出作业。 您可以双击项目进行查看，而无需下载项目。

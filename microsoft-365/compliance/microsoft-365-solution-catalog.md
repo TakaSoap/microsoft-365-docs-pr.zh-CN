@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41891975"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071328"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -30,17 +30,17 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 解决方案目录分成多个部分，其中包含 Microsoft 365 订阅中提供的每个合规性解决方案的信息卡片。 每个部分都包含按合规性区域分组的解决方案卡。
 
-![Microsoft 365 解决方案目录主页](media/m365-solution-catalog-home.png)
+![Microsoft 365 解决方案目录主页](../media/m365-solution-catalog-home.png)
 
 当您选择 "**查看**" 作为解决方案卡时，将会看到有关合规性解决方案以及如何入门的详细信息。 这些信息包括：概述、预配置要求、学习资源、允许您将名片固定到导航窗格的控件，以及将解决方案共享为链接、电子邮件或 Microsoft 团队消息的选项。
 
-![Microsoft 365 通信合规性解决方案](media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365 通信合规性解决方案](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>信息保护 & 治理部分
 
 **信息保护 & 调控**部分介绍了如何使用 Microsoft 365 合规性解决方案来保护和控制组织中的数据。
 
-![Microsoft 365 解决方案目录信息保护和调控部分](media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 解决方案目录信息保护和调控部分](../media/m365-solution-catalog-information-protection-governance.png)
 
 在这里，你将看到以下解决方案的卡片：
 
@@ -53,7 +53,7 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 主页上的 "**内幕风险管理**" 部分向您展示了您的组织可以如何识别、分析并对内部风险采取措施，然后才会造成危害。
 
-![Microsoft 365 解决方案目录内幕风险管理部分](media/m365-solution-catalog-insider-risk-management.png)
+![Microsoft 365 解决方案目录内幕风险管理部分](../media/m365-solution-catalog-insider-risk-management.png)
 
 在这里，你将看到以下解决方案的卡片：
 
@@ -64,7 +64,7 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 主页上的 "**发现 & 响应**" 部分显示了您的组织如何快速查找、调查和响应相关数据的合规性问题。
 
-![Microsoft 365 解决方案目录发现和响应部分](media/m365-solution-catalog-discovery-response.png)
+![Microsoft 365 解决方案目录发现和响应部分](../media/m365-solution-catalog-discovery-response.png)
 
 在这里，你将看到以下解决方案的卡片：
 

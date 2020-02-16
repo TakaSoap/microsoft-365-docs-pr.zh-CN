@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5ab54e84de7434a16bdf7eb7d04fad7b9af05440
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 将管理员添加到高级电子数据展示事例时，将会重新处理 Office 365 中被视为部分索引的任何内容，以使其完全可搜索。
+ms.openlocfilehash: 3c1bead5f853a39410a6a018f170ee637dfcf84e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600629"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072889"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>保管人数据的高级索引
 
@@ -30,22 +30,26 @@ ms.locfileid: "41600629"
 若要了解有关 Office 365 中的处理支持和部分索引项目的详细信息，请参阅：
 
 - [高级电子数据展示中支持的文件类型](supported-filetypes-ediscovery20.md)
+
 - [处理 Office 365 内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)
+
 - [由 Exchange 搜索编制索引的文件格式](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+
 - [SharePoint Server 中的默认爬网文件扩展名和分析文件类型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## <a name="viewing-advanced-indexing-results"></a>查看高级索引结果
 
-完成高级索引过程后，您可以了解重新处理的有效性。  在管理员索引视图中，图形列出了添加到*混合索引*中的所有项目。  混合索引是指高级电子数据展示将重新处理的内容存储在其中。
+完成高级索引过程后，您可以了解重新处理的有效性。  在事例的 "**处理**" 选项卡上的 "高级索引结果" 视图中，图表列出了添加到*混合索引*中的项目数。  混合索引是指高级电子数据展示将重新处理的内容存储在其中。
 
-该图还包括需要修正的项目数，以及按文件类型列出的错误的另一个关系图。 有关详细信息，请参阅：
+此视图还包括需要修正的项目数，以及按文件类型显示的错误的另一个图形。 有关详细信息，请参阅：
 
 - [修正处理数据时出现的错误](error-remediation.md)
+
 - [单个项目错误更正](single-item-error-remediation.md)
 
-## <a name="updating-advanced-indexes-for-custodians"></a>更新保管人的高级索引
+## <a name="updating-the-advanced-index-for-custodians"></a>更新保管人的高级索引
 
-将管理员添加到高级电子数据展示事例中时，将重新处理所有部分索引项。 但是，随着时间的推移，可以向用户的邮箱或 OneDrive 帐户中添加更多部分索引的项目。  如果需要，可以更新索引。
+将管理员添加到高级电子数据展示事例中时，将重新处理所有部分索引项。 但是，随着时间的推移，可以向用户的邮箱或 OneDrive 帐户中添加更多部分索引的项目。  如有必要，可以为特定的保管人更新索引。 有关详细信息，请参阅[在高级电子数据展示事例中管理保管人](manage-new-custodians.md#re-index-custodian-data)。 您还可以通过单击 "**处理**" 选项卡上的 "更新"**索引**来更新事例中所有保管人的索引。
 
 > [!NOTE]
-> 更新保管人索引是一个长时间运行的过程。 建议您在一种情况下每天不将索引更新一次以上。
+> 更新保管人索引是一个长时间运行的过程。 建议您在一种情况下每日更新索引不超过一次。

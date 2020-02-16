@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6776571f4abafaf8e050fa6c31311df452d90e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 在高级电子数据展示事例中管理保管人。
+ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582911"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071595"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>在高级电子数据展示事例中管理保管人
 
 高级电子数据展示中的保管人选项卡包含已添加到事例中的所有保管人的列表。 向事例添加保管人后，会自动从 Azure Active Directory 中收集每个保管人的详细信息，这些信息可在高级电子数据展示中查看。
 
-![管理保管人](media/CustodianDetails.PNG)
+![管理保管人](../media/CustodianDetails.PNG)
 
 ## <a name="view-custodian-details"></a>查看保管人详细信息
 
@@ -37,7 +37,7 @@ ms.locfileid: "41582911"
 
   - **显示名称**-在保管人的通讯簿中显示的名称。 这通常是保管人的名字、中间名首字母和姓氏的组合。
   
-   - **Mail/SMTP** -保管人的主 SMTP 地址，例如，brianj@contoso.onmicrosoft.com。 请注意，此外，还列出了保管人的用户主体名称（UPN）。
+   - **Mail/SMTP** -保管人的主 SMTP 地址，例如，brianj@contoso.onmicrosoft.com。 此外，还列出了保管人的用户主体名称（UPN）。
 
   - **Title** -保管人的职务。
 
@@ -82,7 +82,7 @@ ms.locfileid: "41582911"
   
 3. 从列表中选择一个管理员并单击弹出页面上的 "**编辑**"。
 
-    ![编辑数据源](media/EditCustodianDataSource.PNG)
+    ![编辑数据源](../media/EditCustodianDataSource.PNG)
   
 4. 单击 "**选择数据源**" 选项卡，更改管理员的 Exchange 邮箱和 OneDrive 帐户的设置，单击 "**选择数据源**"。
   
@@ -92,11 +92,11 @@ ms.locfileid: "41582911"
   
 6. 单击 "**将 custodial 保留**" 以启用或禁用保管人的保留。
 
-## <a name="resolve-custodian-processing-errors"></a>解决保管人处理错误
+## <a name="re-index-custodian-data"></a>重新索引保管人数据
 
 在用于法律调查的大多数电子数据展示工作流中，在将管理员添加到合法案例之后，将搜索保管人的数据的子集。 由于文件大小非常大或可能损坏，与管理员关联的数据源中的某些项可能会进行部分索引。 在高级电子数据展示中使用[高级索引](indexing-custodian-data.md)功能时，可以根据需要重新对这些项目重新编制索引，从而自动修正大多数部分索引的项目。
 
-将管理员添加到某个案例后，与保管人关联的数据源中的数据将自动重新编制索引（通过高级索引过程）。 这意味着您可以就地保留数据，而无需下载和更正数据，然后将其脱机搜索）。 但是，在法律案件的生命周期内，可能会将新数据源与保管人关联。 在这种情况下，您可以重新运行高级索引编制进程以修正任何部分已编制索引的项目，并更新保管人数据的索引，从而对保管人的数据重新编制索引。
+将管理员添加到某个案例后，与保管人关联的数据源中的数据将自动重新编制索引（通过高级索引过程）。 这意味着您可以就地保留数据，而无需下载和更正数据，然后将其脱机搜索）。 但是，在法律案件的生命周期内，可能会将新数据源与保管人关联。 在这种情况下，可以重新运行高级索引编制进程以修正任何部分已编制索引的项目，并更新保管人数据的索引，从而对保管人的数据重新编制索引。
 
 触发重新编制索引过程以处理部分索引项：
 
@@ -136,7 +136,7 @@ ms.locfileid: "41582911"
 
 5. 单击 **"是"** 确认要释放保管人。 
 
-    请注意，此用户在 "**保管人**" 选项卡上的状态设置为 "已**发布**"，并且飞出页面上的 "**保留" 状态**更改为**False**。 
+    将 "**保管人**" 选项卡上此用户的状态设置为 "已**发布**"，并且飞出页面上的 "**保留" 状态**更改为**False**。 
 
 > [!NOTE]
 > 在几种法律情况下，保管人可能同时涉及。 当管理员从某一案例发布时，在其他事务中的保留和通知将不会受到影响。
@@ -145,4 +145,4 @@ ms.locfileid: "41582911"
 
 您可以使用批量编辑器同时编辑多个保管人。 若要执行此操作，只需在 "**保管人**" 选项卡上选择两个或更多保管人以显示批量编辑器，然后单击其中一项任务。
 
-![用于编辑多个保管人的设置的飞出页面](media/AeDBulkEditCustodians.png)
+![用于编辑多个保管人的设置的飞出页面](../media/AeDBulkEditCustodians.png)

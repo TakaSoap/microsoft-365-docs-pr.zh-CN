@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: cde55f9dd3a1a9aacc48ba816cd0ef00472dad56
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5636e2e6186107bee3a0116d203910bc7b766990
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661738"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069004"
 ---
 # <a name="view-documents-in-a-review-set"></a>查看审阅集中的文档
 
@@ -36,14 +36,14 @@ ms.locfileid: "41661738"
 此面板可打开/关闭以显示与文档关联的各种元数据。 尽管可以自定义搜索结果网格以显示特定元数据，但在查看数据时，水平滚动的情况也很难。 "文件元数据" 面板允许用户在查看器中切换视图。
 
 ![文件元数据面板
-](media/Reviewimage2.png)
+](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>本机视图
 
 本机查看器显示文档的最丰富视图。 它支持数百种文件类型，旨在将 truest 显示为可能的本机体验。 对于 Microsoft Office 文件，查看器使用 Office 应用程序的 web 版本显示内容，如文档注释、Excel 公式、隐藏的行/列和 PowerPoint 备注。
 
 ![本机视图
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>文本视图
 
@@ -56,10 +56,10 @@ ms.locfileid: "41661738"
   - 比较视图提供了比较视图，可在查看临近重复文档时突出显示文本差异
 
 ![文本视图
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 ![比较视图
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>批注视图
 
@@ -86,7 +86,7 @@ ms.locfileid: "41661738"
   - 搜索–用户可以在文档中进行搜索，并导航到文档中的不同点击量
     
     ![批注视图
-    ](media/Reviewimage1.png)
+    ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>仪表板视图 
 通过仪表板视图，可以对搜索结果网格中的数据进行可视化和汇总。 在此视图中，您可以创建自定义小部件，以直观而轻松地对评审集进行分析和报告。 创建小部件后，您可以与它们进行交互以获取项目数或创建搜索。 

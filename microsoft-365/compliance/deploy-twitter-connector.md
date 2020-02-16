@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Twitter 数据导入和存档到 Microsoft 365。 将此数据导入 Microsoft 365 后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
-ms.openlocfilehash: 9951040335a2dcacc90ac4dc7a6f3e5079bf5692
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80c3ca71204b6050a1944250c20df4ff13bbd71e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595277"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075580"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署连接器以存档 Twitter 数据
 
@@ -28,46 +28,46 @@ ms.locfileid: "41595277"
 
 1. 转到<https://portal.azure.com>并使用 Office 365 全局管理员帐户的凭据登录。
 
-   ![登录到 Azure](media/TCimage01.png)
+   ![登录到 Azure](../media/TCimage01.png)
 
 2. 在左侧导航窗格中，单击 " **Azure Active Directory**"。
 
-   ![转到 Azure Active Directory](media/TCimage02.png)
+   ![转到 Azure Active Directory](../media/TCimage02.png)
 
 3. 在左侧导航窗格中，单击 "**应用程序注册（预览）** "，然后单击 "**新建注册**"。
 
-   ![创建新的应用注册](media/TCimage03.png)
+   ![创建新的应用注册](../media/TCimage03.png)
 
 4. 注册应用程序。 在 "**重定向 URI （可选）**" 下，选择 "应用程序类型" 下拉`https://portal.azure.com`列表中的 " **WEB** "，然后在 URI 框中键入 uri。
 
-   ![重https://portal.azure.com定向 URI 的类型 ](media/TCimage04.png)
+   ![重https://portal.azure.com定向 URI 的类型 ](../media/TCimage04.png)
 
 5. 复制**应用程序（客户端） id**和**目录（租户） id** ，并将其保存到文本文件或其他安全位置。 可在后续步骤中使用这些 Id。
 
-    ![复制并保存应用程序 Id 和目录 Id](media/TCimage05.png)
+    ![复制并保存应用程序 Id 和目录 Id](../media/TCimage05.png)
 
 6. 转到**证书 & 新应用程序的证书**，并在 "**客户端密码**" 下，单击 "**新建客户端密码**"。
 
-   ![创建新的客户端密码](media/TCimage06.png)
+   ![创建新的客户端密码](../media/TCimage06.png)
 
 7. 创建新的机密。 在 "说明" 框中，键入密码，然后选择一个过期时间段。 
 
-   ![键入密码并选择 "过期期限"](media/TCimage08.png)
+   ![键入密码并选择 "过期期限"](../media/TCimage08.png)
 
 8. 复制密码的值，并将其保存到文本文件或其他存储位置。 这是您在后续步骤中使用的 AAD 应用程序密码。
 
-   ![复制并保存密码](media/TCimage09.png)
+   ![复制并保存密码](../media/TCimage09.png)
 
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步骤2：将来自 GitHub 的连接器 web 服务部署到你的 Azure 帐户
 
 1. 转到[此 GitHub 网站](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)，然后单击 "**部署到 Azure**"。
 
-    ![转到 Azure 主页](media/FBCimage11.png)
+    ![转到 Azure 主页](../media/FBCimage11.png)
 
 2. 单击 "**部署到 Azure**" 后，您将被重定向到具有自定义模板页面的 Azure 门户。 填写 "**基础知识**" 和 "**设置**详细信息"，然后单击 "**购买**"。
 
-   ![单击 "创建资源并键入存储帐户"](media/FBCimage12.png)
+   ![单击 "创建资源并键入存储帐户"](../media/FBCimage12.png)
 
     - **订阅：** 选择要将 Twitter 连接器 web 服务部署到的 Azure 订阅。
     
@@ -83,38 +83,38 @@ ms.locfileid: "41595277"
 
 3. 部署成功后，页面外观将类似于以下屏幕截图：
 
-    ![单击 "存储"，然后单击 "存储帐户"](media/FBCimage13.png)
+    ![单击 "存储"，然后单击 "存储帐户"](../media/FBCimage13.png)
 
 ## <a name="step-3-create-the-twitter-app"></a>步骤3：创建 Twitter 应用
 
 1. 转到https://developer.twitter.com，使用组织的开发人员帐户的凭据登录，然后单击 "**应用**"。
 
-   ![转到https://developer.twitter.com并登录](media/TCimage25-5.png)
+   ![转到https://developer.twitter.com并登录](../media/TCimage25-5.png)
 2. 单击 "**创建应用程序**"。
    
-   ![转到 "应用程序" 页以创建应用程序](media/TCimage26.png)
+   ![转到 "应用程序" 页以创建应用程序](../media/TCimage26.png)
 
 3. 在 "**应用程序详细信息**" 下，添加有关应用程序的信息。
 
-   ![输入有关应用程序的信息](media/TCimage27.png)
+   ![输入有关应用程序的信息](../media/TCimage27.png)
 
 4. 在 Twitter 开发人员仪表板上，选择刚创建的应用程序，并复制显示的应用 ID 并将其保存到文本文件或其他存储位置。 然后单击 "**详细信息**"。
    
-   ![复制并保存应用程序 Id](media/TCimage28.png)
+   ![复制并保存应用程序 Id](../media/TCimage28.png)
 
 5. 在 "**密钥和标记**" 选项卡上的 "**使用者 api 密钥**" 下，复制 api 密钥并将其保存到文本文件或其他存储位置。 然后，单击 "**创建**" 以生成访问令牌和访问令牌机密，并将它们复制到文本文件或其他存储位置。
    
-   ![复制并保存到 API 密钥](media/TCimage29.png)
+   ![复制并保存到 API 密钥](../media/TCimage29.png)
 
    然后，单击 "**创建**" 以生成访问令牌和访问令牌机密，并将它们复制到文本文件或其他存储位置。
 
 6. 单击 "**权限**" 选项卡并配置权限，如以下屏幕截图所示：
 
-   ![配置权限](media/TCimage30.png)
+   ![配置权限](../media/TCimage30.png)
 
 7. 保存权限设置后，单击 "**应用程序详细信息**" 选项卡，然后单击 "编辑" > "编辑**详细信息**"。
 
-   ![编辑应用程序详细信息](media/TCimage31.png)
+   ![编辑应用程序详细信息](../media/TCimage31.png)
 
 8. 执行以下任务：
 
@@ -122,7 +122,7 @@ ms.locfileid: "41595277"
    
    - 使用以下格式添加 OAuth 重定向 Uri： ** \<connectorserviceuri>/views/twitteroauth**，其中*connectorserviceuri*的值为您的组织的 Azure 应用服务 URL;例如， https://twitterconnector.azurewebsites.net/Views/TwitterOAuth。
 
-    ![允许连接器应用登录到 Twitter 并添加 OAuth 重定向 Uri](media/TCimage32.png)
+    ![允许连接器应用登录到 Twitter 并添加 OAuth 重定向 Uri](../media/TCimage32.png)
 
 现在可以使用 Twitter 开发人员应用。
 
@@ -130,15 +130,15 @@ ms.locfileid: "41595277"
 
 1. 转到 https://\<AzureAppResourceName> azurewebsites.net （其中**AzureAppResourceName**是您在步骤4中命名的 Azure 应用程序资源的名称）。 例如，如果名称为**twitterconnector**，请转到https://twitterconnector.azurewebsites.net。 该应用程序的主页如以下屏幕截图所示：
 
-   ![转到 Azure 应用资源页](media/FBCimage41.png)
+   ![转到 Azure 应用资源页](../media/FBCimage41.png)
 
 2. 单击 "**配置**" 以显示登录页。
 
-   ![单击 "配置" 以显示登录页](media/FBCimage42.png)
+   ![单击 "配置" 以显示登录页](../media/FBCimage42.png)
 
 3. 在 "租户 Id" 框中，键入或粘贴您在步骤2中获取的租户 Id。 在 "密码" 框中，键入或粘贴 APISecretKey （您在步骤2中获取），然后单击 "**设置配置设置**" 以显示 "配置详细信息" 页。
 
-   ![使用租户 Id 和 API 密钥登录](media/TCimage35.png)
+   ![使用租户 Id 和 API 密钥登录](../media/TCimage35.png)
 
 4. 输入以下配置设置 
 
@@ -168,7 +168,7 @@ ms.locfileid: "41595277"
 
 5. 在 "**为连接器应用添加凭据**" 页上，输入以下信息，然后单击 "**验证连接**"。
 
-   ![输入连接器应用凭据](media/TCimage38.png)
+   ![输入连接器应用凭据](../media/TCimage38.png)
 
     - 在 "**名称**" 框中，键入连接器的名称，如**Twitter 帮助句柄**。
     
@@ -186,7 +186,7 @@ ms.locfileid: "41595277"
 
 9. 在 Twitter 登录页面上，使用您的组织的 Twitter 帐户的凭据进行登录。
 
-   ![登录到 Twitter 帐户](media/TCimage42.png)
+   ![登录到 Twitter 帐户](../media/TCimage42.png)
 
    登录后，Twitter 页面将显示以下消息： "已成功设置 Twitter 连接器作业"。
 

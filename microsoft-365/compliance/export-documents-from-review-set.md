@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 9a732258e787de3407731f0fdfc98ed07653df71
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862072"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074350"
 ---
 # <a name="export-documents-from-a-review-set"></a>从审阅集中导出文档
 
@@ -37,7 +37,7 @@ ms.locfileid: "41862072"
 
 若要从审阅集中下载内容，请先选择要下载的文件，然后选择 "操作" 菜单下的 "下载"。
 
-![自动生成的计算机说明的屏幕截图](media/eDiscoDownload.png)
+![自动生成的计算机说明的屏幕截图](../media/eDiscoDownload.png)
 
 ## <a name="export-documents-from-a-review-set"></a>从审阅集中导出文档
 

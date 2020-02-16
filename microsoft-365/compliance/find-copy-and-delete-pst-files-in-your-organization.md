@@ -13,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 收集工具搜索组织的网络，以获取分散在整个组织中的 PST 文件的清单。 查找 PST 文件后，可以使用 PST 集合工具将其复制到一个中心位置，以便可以将其导入 Office 365。
-ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 736e317318f860936450b7412bc465fc7c9d59e1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594553"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073913"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具在您的组织中查找、复制和删除 PST 文件
 
@@ -33,7 +33,7 @@ ms.locfileid: "41594553"
 
 以下是使用 PST 收集工具在组织中查找、控制、收集和删除 PST 文件的过程的快速概述。
   
-![PST 收集工具流程概述](media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
+![PST 收集工具流程概述](../media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
   
 1. **[步骤1：在您的网络上查找 pst 文件](#step-1-find-pst-files-on-your-network)**-当您运行该工具以查找 PST 文件时，请指定一个位置，如包含客户端和服务器计算机的 Active Directory 对象的组织单位。 您还可以搜索特定的计算机或网络文件共享。 运行该工具时，会在目标计算机上安装 "轻型" 集合代理。 此代理在目标计算机上搜索 PST 文件，然后将信息返回到 PST 收集工具，以了解找到的任何 PST 文件。 该工具将创建日志文件，其中包含有关在指定位置找到的 PST 文件的信息。 在后续步骤中运行此工具时，将使用这些文件。 
     
@@ -45,7 +45,7 @@ ms.locfileid: "41594553"
     
 5. **[步骤5：删除在网络中找到的 pst 文件](#step-5-delete-the-pst-files-found-on-your-network)**-在 Office 365 中已将您找到和收集的 pst 文件导入到 Exchange Online 邮箱后，您可以使用 "pst 集合" 工具从第1步中找到的原始位置删除 pst 文件。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 按照以下步骤将 PST 集合工具下载到本地计算机。 
     
@@ -240,7 +240,7 @@ ms.locfileid: "41594553"
     
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
-    | `DataSource` <br/> |指定要搜索的数据的类型。 目前，您可以使用 "PST 集合" 工具搜索 PST 文件。 ![定位](media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
+    | `DataSource` <br/> |指定要搜索的数据的类型。 目前，您可以使用 "PST 集合" 工具搜索 PST 文件。 ![定位](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |指定工具将执行的操作的类型。 使用此值`Delete`可以删除在 "查找" 模式下运行到该工具时找到的 PST 文件。  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |指定现有 PST 集合作业的名称。 您必须使用在 "查找" 模式下运行该工具时使用的相同作业名称，以及步骤1和步骤3中的收集模式。 此外，还会将此作业名称添加到在删除模式下运行该工具时创建的日志文件的名称。  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |指定包含在收集模式下运行该工具时创建的 .xml 配置文件的文件夹。 使用您在步骤3中用于此参数的相同值。  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 18d67983d4e5e934e606944c1502dd76331812a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dffbc68714470e65557c58ded710ae53d64a3868
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597629"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070079"
 ---
 # <a name="review-the-data-in-evidence"></a>查看证据中的数据
 
@@ -48,14 +48,14 @@ ms.locfileid: "41597629"
 
 下面的示例展示了文档的文件元数据。 有关元数据字段的详细信息，请参阅 "[数据调查（预览）中的文档元数据字段](document-metadata-fields.md)"。
 
-![文件元数据面板](media/Reviewimage2.png)
+![文件元数据面板](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>本机视图
 
 本机查看器以文档的本机格式显示最准确的文档视图。 数以百计的文件类型支持本机视图，这是为了在可能的 truest 本机体验中显示文档。 对于 Microsoft Office 文件，本机查看器使用 Office 应用程序的 web 版本。 这使您可以在 Excel 中查看不同的 Office 文档、公式和隐藏的行/列中的注释，以及 PowerPoint 中的备注视图等内容。
 
 ![本机视图
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>文本视图
 
@@ -70,12 +70,12 @@ ms.locfileid: "41597629"
 **文本和滚动条中的行计数器和搜索词突出显示示例**
 
 ![文本视图
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 **比较视图示例**
 
 ![比较视图
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>批注视图
 
@@ -101,7 +101,7 @@ ms.locfileid: "41597629"
 
 **批注视图示例**
 
-![批注视图](media/Reviewimage1.png)
+![批注视图](../media/Reviewimage1.png)
 
 > [!NOTE]
 > 批注应用于已添加到证据集的文档副本。 Live service 中的原始文档未进行批注。

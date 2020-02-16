@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 此深入了解驱动的建议可帮助你的组织在 Office 365 中存储和共享敏感内容时保持安全，方法是在 DLP 策略覆盖范围中存在可能的差距时通知你。 如果您的文档包含任何最常用的五种类型&amp;的敏感信息，但不受 DLP 策略保护，您将在安全合规中心的主页上看到此建议。
-ms.openlocfilehash: 3bbdbd230e9ae28136bcd89df46f0e9c10cb80fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596349"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073195"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>开始使用 DLP 策略建议
 
@@ -26,7 +26,7 @@ ms.locfileid: "41596349"
   
 您可以使用此小组件快速创建自定义的 DLP 策略，只需单击一次或两次，然后在创建此 DLP 策略后，即可完全自定义。 请注意，如果最初看不到建议，请尝试在 "**建议为你**" 部分的底部单击 " **+ 更多**"。 
   
-![名为不受保护的敏感信息的小部件](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![名为不受保护的敏感信息的小部件](../media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
 ## <a name="create-the-recommended-dlp-policy"></a>创建建议的 DLP 策略
 
@@ -48,7 +48,7 @@ ms.locfileid: "41596349"
     
 如果以后要更改这些选项，您可以在创建 DLP 策略后对其进行编辑。 例如，即使阻止用户在第一处共享包含敏感信息的内容，也可以使策略更具限制性-请参阅下一节。
   
-![名为不受保护的敏感信息的小部件的设置](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![名为不受保护的敏感信息的小部件的设置](../media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
 ## <a name="edit-the-recommended-dlp-policy"></a>编辑建议的 DLP 策略
 
@@ -56,7 +56,7 @@ ms.locfileid: "41596349"
   
 默认情况下，该策略被命名为 "**系统建议" 策略以共享敏感信息**。 此策略可完全自定义，与你从头开始创建的任何 DLP 策略相同。 例如，如果您决定在使用小组件时不启用事件报告和策略提示，则可以随时编辑策略并启用这些选项。
   
-![系统建议的共享敏感信息的策略](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![系统建议的共享敏感信息的策略](../media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>小组件何时出现且不显示
 

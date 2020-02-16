@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: '了解如何查找在 Office 365 高级电子数据展示中运行的进程模块的结果，包括任务状态和过程摘要。  '
-ms.openlocfilehash: 2c492b9c8dfa2b6851620c434f1a5b4bbddc2e4e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597219"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068825"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中查看流程模块结果
 
@@ -34,7 +34,7 @@ ms.locfileid: "41597219"
 
 在**准备** \> **过程** \> **结果**中，页面显示当前状态（如果当前正在运行进程）或最后一个进程状态任务的状态，如下面的示例所示。
   
-![进程模块任务状态](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
+![进程模块任务状态](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 根据所选的流程选项，显示的任务可能会有所不同。 
   
@@ -82,7 +82,7 @@ ms.locfileid: "41597219"
     
     如果**预先加标签**的文件的标记失败，也会注明。 
     
-![进程模块摘要](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
+![进程模块摘要](../media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
 ## <a name="process-summary-accumulated-and-last-charts"></a>流程摘要和最后一个图表
 
@@ -106,7 +106,7 @@ ms.locfileid: "41597219"
 
 在准备\>过程\>结果\>中，上次处理错误时，将显示上一次会话或执行的操作中的错误详细信息。
   
-![进程模块错误](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
+![进程模块错误](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>另请参阅
 

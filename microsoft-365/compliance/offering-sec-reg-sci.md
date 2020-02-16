@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601859"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071219"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>有价证券和 Exchange 佣金：法规系统合规性和完整性（SCI）
 
@@ -43,7 +43,7 @@ SCI 规则适用于 SCI 实体，其中包括此类自助式组织（SROs）作�
 
 本文档提供了关键法规 SCI 焦点领域的完整清单。 此检查表可帮助金融组织了解如何采用 Azure 来帮助确保其机构、客户和领导能够遵守适用的法规要求。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 

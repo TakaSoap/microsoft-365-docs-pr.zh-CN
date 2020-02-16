@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 由于合规性、法律或其他业务要求，你的组织可能需要将文档保留一段时间。 但是，如果您的组织保留的文档比所需时间长，则会带来不必要的法律风险。 使用文档删除策略，您可以通过在特定时间段后删除网站中的文档来主动降低风险，例如，在创建文档五年后，可以在用户的 OneDrive for Business 网站中删除文档。
-ms.openlocfilehash: ac2bdfcd262a673af1078b2ed0a274fcd0b9d3b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595207"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075189"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文档删除策略概述
 
@@ -40,7 +40,7 @@ ms.locfileid: "41595207"
     
 您可以使用文档删除策略中心来创建和管理文档删除策略。 或者，您可以通过[创建网站集](https://go.microsoft.com/fwlink/p/?LinkID=404342)并在 "**企业**" 选项卡上选择 "**合规性策略中心**" 来手动创建策略中心。每个租户只能有一个文档删除策略中心。 
   
-![文档删除策略中心首页](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![文档删除策略中心首页](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="when-to-use-document-deletion-policies"></a>使用文件删除策略的情况
 
@@ -56,7 +56,7 @@ ms.locfileid: "41595207"
   
 文档删除策略不会替换记录管理或信息管理策略，这最适用于结构化数据和内容类型。 相反，当您需要全面管理对非结构化数据（如 OneDrive for Business 网站或团队网站）的自动删除时，应使用文件删除策略。
   
-![显示网站内容的保留选项的图表](media/IP-Retention-policies-for-site-content.png)
+![显示网站内容的保留选项的图表](../media/IP-Retention-policies-for-site-content.png)
   
 如果文件删除策略所应用的网站已使用内容类型策略或针对列表或库的信息管理策略，则这些策略会在文件删除策略生效时被忽略。 这表示您应该对网站进行规划，以仅使用针对结构化内容或非结构化内容的策略，而非同时使用。 有关文件删除策略如何覆盖其他策略的详细信息，请参阅[Apply or remove a document deletion policy for a site](apply-or-remove-a-document-deletion-policy-for-a-site.md)。
   
@@ -74,13 +74,13 @@ ms.locfileid: "41595207"
     
 如果一个策略包含多个规则，网站所有者可以选择最适合其内容的规则。
   
-![新建删除规则页](media/IP-New-deletion-rule.png)
+![新建删除规则页](../media/IP-New-deletion-rule.png)
   
 ## <a name="policies-and-assignments"></a>策略和分配
 
 创建文档删除策略后，可以将其分配到网站集模板，例如，可以将策略分配到 OneDrive for business 模板，以便它包含每个用户的 OneDrive 网站。 将策略分配到网站集模板时，这会应用于已使用该模板创建的所有网站集，以及以后使用该模板创建的任何网站集。
   
-![显示 OneDrive 选项的“选择模板”页面](media/IP-Choose-a-template.png)
+![显示 OneDrive 选项的“选择模板”页面](../media/IP-Choose-a-template.png)
   
 您还可以向特定网站集分配策略，这将覆盖已分配给该网站集模板的所有策略。例如，您可以将策略分配给团队网站模板，但之后对使用该模板创建的特定网站集应用另一组策略，以覆盖之前的策略。
   
@@ -106,7 +106,7 @@ ms.locfileid: "41595207"
   
 可对网站集或网站集模板分配一个或多个策略，其中每个策略可以有一个或多个规则。 但是，每个站点只能有一个处于活动状态的策略，并且网站中的库在任何时候都只能有一个活动的删除规则。
   
-![显示策略之间关系的图表](media/IP-Two-policies-four-rules.png)
+![显示策略之间关系的图表](../media/IP-Two-policies-four-rules.png)
   
 ## <a name="document-deletion-policies-are-inherited"></a>文件删除策略具有继承性
 

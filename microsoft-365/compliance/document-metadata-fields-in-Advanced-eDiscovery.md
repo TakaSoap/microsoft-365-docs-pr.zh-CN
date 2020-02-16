@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文在 Microsoft 365 中的高级电子数据展示案例中的审阅集中定义文档的元数据字段。
-ms.openlocfilehash: 399e89a577db68e0c31eceef921ef2ab1172352a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae268c1368933c729177d6083294e7e7a8735958
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595187"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074919"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 

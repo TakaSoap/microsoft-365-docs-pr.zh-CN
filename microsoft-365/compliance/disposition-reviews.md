@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留 Microsoft 365 中的内容的保留标签时，可以选择在保留期结束时触发处置评审。
-ms.openlocfilehash: d308dcc58bbacf118374bbabdebf27c35ad2d73a
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836712"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075370"
 ---
 # <a name="overview-of-disposition-reviews"></a>处置评审概述
 
@@ -56,20 +56,20 @@ ms.locfileid: "41836712"
   
 处置评审可以包含 Exchange 邮箱、SharePoint 网站、OneDrive 帐户和 Office 365 组中的内容。 在这些位置中等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。
   
-![安全与合规中心中的处置页](media/Retention-Dispositions-v2-page.png)
+![安全与合规中心中的处置页](../media/Retention-Dispositions-v2-page.png)
 
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>通过创建保留标签设置处置评审
 
 这是用于设置处置评审的基本工作流。 请注意，此流显示正在发布的保留标签，然后由用户手动应用;或者，可以将触发处置评审的保留标签自动应用于内容。
   
-![显示处置的工作流的图表](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![显示处置的工作流的图表](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
 当您在 Office 365 中创建保留标签时，可以选择进行处置评审。 此选项在保留策略中不可用，但只能在配置为保留内容的保留标签中使用。
   
 有关保留标签的详细信息，请参阅[保留标签概述](labels.md)。
   
-![标签的保留设置](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+![标签的保留设置](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
 > 当您指定选项 "在**有准备好查看的项目时通知这些人**" 时，请指定用户。 此选项不支持 Office 365 组。
@@ -80,7 +80,7 @@ ms.locfileid: "41836712"
 
 选择保留标签后，下一个页面显示该标签的所有待处理的处置。
 
-![处置选项](media/Retention-Disposition-options-v2.png)
+![处置选项](../media/Retention-Disposition-options-v2.png)
 
 然后，审阅者可以执行以下操作： 
   
@@ -128,18 +128,18 @@ ms.locfileid: "41836712"
     
 - "已**释放的项目**" 选项卡显示已被永久删除的项目已通过处置评审。 它们显示在这里，因为永久删除过程可能需要几天时间，如上一节中所述。 应用了不同保留标签或在审阅过程中延长保留期的项目将不会显示在此处。
 
-![处置选项卡](media/Retention-Disposition-tabs.png)
+![处置选项卡](../media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>筛选处置视图
 
 您可以按保留标签或时间范围筛选这些视图。 对于挂起的处置，时间范围基于到期日期。 对于已释放的项目，时间范围基于删除日期。
   
-![处置筛选器选项](media/Retention-filter-options.png)
+![处置筛选器选项](../media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>导出处置项
 
 此外，还可以将其中一个视图中的项导出为可在 Excel 中打开的 .csv 文件。
   
-![Excel 中的已导出处置数据](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Excel 中的已导出处置数据](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

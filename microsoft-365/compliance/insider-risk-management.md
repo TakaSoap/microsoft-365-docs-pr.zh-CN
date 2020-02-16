@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0da96fe4148ffc30ac8e2f7854157675786cd321
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582871"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072725"
 ---
 # <a name="insider-risk-management-in-microsoft-365-preview"></a>Microsoft 365 中的内幕风险管理（预览）
 
@@ -56,7 +56,7 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 
 使用以下工作流确定和解决 Microsoft 365 中的内幕风险管理的内部风险活动和合规性问题：
 
-![内幕风险管理工作流](media/insider-risk-workflow.png)
+![内幕风险管理工作流](../media/insider-risk-workflow.png)
 
 ### <a name="policies"></a>策略
 
@@ -70,21 +70,21 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 
 有关详细信息，请参阅[内幕风险管理策略](insider-risk-management-policies.md)。
 
-![内幕风险管理策略仪表板](media/insider-risk-policy-dashboard.png)
+![内幕风险管理策略仪表板](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>警报
 
 警报由符合策略条件并显示在 "**通知" 仪表板**中的风险指示器自动生成。 通过此仪表板，可以快速查看需要查看的所有警报、一段时间内打开的警报以及组织的警报统计信息。 将显示所有策略警报，其中包含相关信息，以帮助您快速识别现有通知的当前状态和需要采取操作的新警报：
 
 - 状态
-- 严重性
+- Severity
 - 检测时间
 - 情况
 - 案例状态
 
 有关详细信息，请参阅[内幕风险管理警报](insider-risk-management-alerts.md)。
 
-![内幕风险管理警报仪表板](media/insider-risk-alerts-dashboard.png)
+![内幕风险管理警报仪表板](../media/insider-risk-alerts-dashboard.png)
 
 ### <a name="triage"></a>诊断
 
@@ -92,7 +92,7 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 
 通过打开新事例、将警报分配给现有事例或消除警报来解决警报。 使用警报筛选器，可以轻松地根据状态、严重性或时间来识别警报。 作为会审过程的一部分，审阅者可以查看策略匹配的警报详细信息、查看与匹配项关联的用户活动、查看警报的严重性并查看用户配置文件信息。
 
-![内幕风险管理会审](media/insider-risk-triage.png)
+![内幕风险管理会审](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>调查
 
@@ -106,7 +106,7 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 
 有关详细信息，请参阅[内幕风险管理案例](insider-risk-management-cases.md)。
 
-![内幕风险管理调查](media/insider-risk-investigate.png)
+![内幕风险管理调查](../media/insider-risk-investigate.png)
 
 ### <a name="action"></a>Action
 

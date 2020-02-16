@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全 & 合规中心中的内容搜索工具在 Exchange 混合部署中搜索和导出本地用户的 MicrosoftTeams 聊天数据（称为1xN 聊天）。
-ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 40439c338e00e7ae94ff82ec4be1af78a250acd6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957137"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070003"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户的基于云的邮箱
 
@@ -47,7 +47,7 @@ ms.locfileid: "41957137"
   
 下图显示了团队如何聊天本地用户数据的工作流，以供搜索、预览和导出。
   
-![Microsoft 团队中的本地用户的基于云的存储](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Microsoft 团队中的本地用户的基于云的存储](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
 除了这一新功能之外，您仍可以使用内容搜索在基于云的 SharePoint 网站和与每个 Microsoft 团队关联的 Exchange 邮箱中的 Exchange 邮箱中搜索、预览和导出团队内容，以及1xN 团队与 Exchange Online 邮箱中的数据进行聊天。基于云的用户。
 
@@ -71,7 +71,7 @@ ms.locfileid: "41957137"
   
 - "为**本地用户添加 Office 应用内容**" 复选框将添加到内容搜索中的**位置**下。 
     
-    !["为本地用户添加 Office 应用内容" 复选框已添加到内容搜索 UI](media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    !["为本地用户添加 Office 应用内容" 复选框已添加到内容搜索 UI](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - 内部部署用户将显示在用于选择要搜索的用户邮箱的内容位置选取器中。 
 
@@ -81,7 +81,7 @@ ms.locfileid: "41957137"
   
 1. 在安全 & 合规性中心中，转到**搜索** \> **内容搜索**
     
-2. 在 "**搜索**" 页上![，单击](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) "添加图标" "**新建搜索**"。
+2. 在 "**搜索**" 页上![，单击](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) "添加图标" "**新建搜索**"。
     
     如前所述，"为**本地用户添加 Office 应用内容**" 复选框将显示在 "**位置**" 下。 默认情况下已选中它。
     

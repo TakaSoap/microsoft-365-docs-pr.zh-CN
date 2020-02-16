@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解 Office 365 中的自动扩展存档，该存档为 Exchange Online 邮箱提供无限制的存档存储。
-ms.openlocfilehash: e7d004c7ef92fbcb331191432a70114f36dabc07
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 42318bf2ff102e6197800b2d6cba8b5c9132bcf9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601360"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069423"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 中的无限制存档概述
 
@@ -41,7 +41,7 @@ Office 365 中的无限制存档功能（称为*自动扩展存档*）在存档�
 
 以下是此过程的快速概述。
 
-![自动扩展存档过程概述](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![自动扩展存档过程概述](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
 1. 对用户邮箱或共享邮箱启用存档。 将创建一个具有 100 GB 存储空间的存档邮箱，并将存档邮箱的警告配额设置为 90 GB。
 
@@ -67,11 +67,11 @@ Office 365 中的无限制存档功能（称为*自动扩展存档*）在存档�
 
  **添加额外的存储之前**
 
-![预配自动扩展存档之前的存档邮箱的文件夹列表](media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![预配自动扩展存档之前的存档邮箱的文件夹列表](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
 
  **添加额外的存储后**
 
-![预配自动扩展存档后存档邮箱的文件夹列表](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![预配自动扩展存档后存档邮箱的文件夹列表](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
 > 如前面所述，Office 365 将项目移至子文件夹（并使用上述命名约定对其进行命名），以帮助将内容分发到辅助存档。 但将项目移动到子文件夹可能并非总是如此。 有时可能会将整个文件夹移动到辅助存档中。 在这种情况下，文件夹将保留其原始名称。  在 Outlook 的文件夹列表中，该文件夹已移动到辅助存档中并不明显。
@@ -110,6 +110,6 @@ Office 365 中的无限制存档功能（称为*自动扩展存档*）在存档�
 
 - **导入服务：** 您可以使用 Office 365 导入服务将 PST 文件导入到用户的自动扩展存档中。 你可以将 PST 文件中的最大为 100 GB 的数据导入用户的存档邮箱。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 有关自动扩展存档的更多技术详细信息，请参阅[Office 365：自动扩展存档常见问题解答](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)。

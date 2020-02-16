@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: 如果您尚未将 Office 365 组织移动到新的 OME 功能，但您已经部署了 OME，则本文中的信息适用于您的组织。 Microsoft 建议您制定一个计划，尽快移动到新的 OME 功能，因为它对您的组织合理。 有关说明，请参阅设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能。 如果您想要详细了解新功能的工作方式，请参阅 Office 365 邮件加密。 本文的其余部分是在发布新的 OME 功能之前的 OME 行为。
-ms.openlocfilehash: cb5315c99b586f250ecd2e5ee51ee6f4534e8bff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29bebb89bf8fcfed25e5348789d80d244a044b6f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585721"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072223"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 邮件加密的旧信息
 
@@ -53,7 +53,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
 下方的图表总结了电子邮件是如何通过加密和解密过程的。
   
-![显示加密电子邮件路径的图表](media/O365-Office365MessageEncryption-Concept.png)
+![显示加密电子邮件路径的图表](../media/O365-Office365MessageEncryption-Concept.png)
   
 有关详细信息，请参阅[早期版本的 Office 365 邮件加密的服务信息，然后再发布新的 OME 功能](legacy-information-for-message-encryption.md#LegacyServiceInfo)。
   
@@ -87,7 +87,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
 以下示例显示电子邮件附件中的 ContosoPharma 的自定义徽标：
   
-![查看加密消息页面的示例](media/TA-OME-3attachment2.jpg)
+![查看加密消息页面的示例](../media/TA-OME-3attachment2.jpg)
   
  **自定义加密电子邮件以及与组织品牌的加密门户**
   
@@ -153,7 +153,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
  **问：能否使用我的品牌自定义加密电子邮件？**
   
-可以。 您可以使用 Windows PowerShell cmdlet 自定义在加密的电子邮件顶部显示的默认文本、免责声明文本以及要用于电子邮件和加密门户的徽标。 有关详细信息，请参阅[将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
+是。 您可以使用 Windows PowerShell cmdlet 自定义在加密的电子邮件顶部显示的默认文本、免责声明文本以及要用于电子邮件和加密门户的徽标。 有关详细信息，请参阅[将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
   
  **问：该服务是否要求我的组织中的每个用户都有许可证？**
   
@@ -203,7 +203,7 @@ Office 365 邮件加密使用 Rights Management Services （RMS）作为其加�
   
  **问：我是否需要在组织的防火墙中打开任何 Url、IP 地址或端口以支持 Office 365 邮件加密？**
   
-可以。 您必须将 Exchange Online 的 Url 添加到组织的允许列表，以便为通过 Office 365 邮件加密加密的邮件启用身份验证。 有关 Exchange Online Url 的列表，请参阅[Office 365 url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
+是。 您必须将 Exchange Online 的 Url 添加到组织的允许列表，以便为通过 Office 365 邮件加密加密的邮件启用身份验证。 有关 Exchange Online Url 的列表，请参阅[Office 365 url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
   
  **问：我可以向多少个收件人发送 Office 365 加密邮件？**
   
@@ -211,7 +211,7 @@ Office 365 邮件加密使用 Rights Management Services （RMS）作为其加�
   
  **问：是否可以取消发送给特定收件人的邮件？**
   
-不是。 发送邮件后，不能向该用户撤销邮件。
+否。 发送邮件后，不能向该用户撤销邮件。
   
  **问：是否可以查看已接收和阅读的加密邮件报告吗？**
   

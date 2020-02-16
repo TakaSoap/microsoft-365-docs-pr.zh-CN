@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b05eb190621dd0829c992cf5b47e8fbe8bcf99a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590623"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072800"
 ---
 # <a name="insider-risk-management-notice-templates-preview"></a>内幕风险管理通知模板（预览）
 
@@ -29,7 +29,7 @@ ms.locfileid: "41590623"
 
 "**通知模板" 仪表板**显示已配置的通知模板的列表，并允许您创建新的通知模板。 通知模板按相反的日期顺序列出，最新的声明模板最先列出。
 
-![内幕风险管理通知模板仪表板](media/insider-risk-notices-dashboard.png)
+![内幕风险管理通知模板仪表板](../media/insider-risk-notices-dashboard.png)
 
 ## <a name="html-for-notices"></a>用于通知的 HTML
 

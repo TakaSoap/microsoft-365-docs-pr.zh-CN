@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fdde59b04c7f52f163028aa7ba4759e226fccb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602449"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071279"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和药品管理 CFR Title 21 第11部分
 
@@ -45,14 +45,15 @@ Microsoft 企业云服务经历了常规独立的第三方 SOC 1 类型2和 SOC 
 
 了解如何加速 FDA CFR Title 21 部署：[下载 AZURE FDA 21 资格指南](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 尽管没有用于遵守 CFR 标题21第11部分的认证，但以下 Microsoft 企业云服务已完成独立的第三方审核，这可能有助于客户实现法规遵从性工作。 这些服务包括：
 
 - Azure：云服务、存储、流量管理器、虚拟机和虚拟网络
+- Azure DevOps
 - Intune
 - [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
-- [Office 365 和 Office 365 US 政府计划](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 和 Office 365 US 政府计划
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -72,11 +73,11 @@ FDA CFR Title 21 第11部分适用于具有产品和服务的组织，这些组�
 
 **如何获取审计员的报告的副本？**
 
-[服务信任门户](https://aka.ms/stphelp)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
+该[服务信任门户](https://aka.ms/stphelp)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
 
 **我可以在组织的认证过程中使用 Microsoft 合规性吗？**
 
-可以。 IEC/ISO 27001、ISO/IEC 27018、SOC 1 和 SOC 2 标准的独立第三方合规性报告证明了 Microsoft 控件的有效性。 Microsoft 企业版云客户可以使用这些相关报告中所述的审核控件作为其自己的 CFR Title 的一部分21第11部分风险分析和资格努力。 构建和部署遵循 FDA 法规的应用程序的客户负责确保其应用程序满足 FDA 要求。
+是。 IEC/ISO 27001、ISO/IEC 27018、SOC 1 和 SOC 2 标准的独立第三方合规性报告证明了 Microsoft 控件的有效性。 Microsoft 企业版云客户可以使用这些相关报告中所述的审核控件作为其自己的 CFR Title 的一部分21第11部分风险分析和资格努力。 构建和部署遵循 FDA 法规的应用程序的客户负责确保其应用程序满足 FDA 要求。
 
 **Microsoft 与此标准保持合规性的责任是什么？**
 

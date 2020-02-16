@@ -1,5 +1,7 @@
 ---
 title: 在 Microsoft 365 中管理数据外泄事件
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了如何使用安全 & 合规中心中的新数据调查（预览版）工具管理数据外泄事件。
-ms.openlocfilehash: 53193d3bd915562037a6409766e9be9d42d272c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37075019"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072021"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>在 Microsoft 365 中管理数据外泄事件
 
@@ -32,7 +34,7 @@ ms.locfileid: "37075019"
 > [!NOTE]
 > 删除位于 SharePoint 或 OneDrive for business 网站中的项目时，它们将在从其原始位置删除它们的时间内保留93天。
 
-## <a name="scenario"></a>应用场景
+## <a name="scenario"></a>方案
 
 您会收到一条数据外泄事件，其中员工在不知情的情况下通过电子邮件与多个人共享高度机密文档。 您希望快速评估在您的组织内部和外部收到此文档的用户。 在调查事件之后，您计划与其他调查人员共享您的发现以进行查看，然后从 Office 365 组织中永久删除溢出的数据。 调查完成后，您想要删除所有证据。 
 
@@ -54,7 +56,7 @@ ms.locfileid: "37075019"
 5.  关闭或删除调查。
 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要创建数据调查、搜索内容和删除溢出的数据，您必须是 Security & 合规性中心中的 "数据调查员" 角色组的成员。
 
@@ -125,7 +127,7 @@ ms.locfileid: "37075019"
  
 2. 单击 "**操作**"，然后单击 "**从原始位置删除项目**"。
 
-   ![单击 "操作"，然后单击 "从原始位置删除项目"](media/DataInvestigationsDeleteItems1.png)
+   ![单击 "操作"，然后单击 "从原始位置删除项目"](../media/DataInvestigationsDeleteItems1.png)
 
 3. 在弹出页面上，验证要删除的项目和相关子文档的数目，然后单击 "**删除**"。
 

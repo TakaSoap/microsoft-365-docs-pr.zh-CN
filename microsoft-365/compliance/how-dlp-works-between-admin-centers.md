@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解安全 & 合规中心中的 DLP 如何与 Exchange 管理中心中的 DLP 和邮件流规则（传输规则）结合使用。
-ms.openlocfilehash: a491317727cce571f0f9e1c527557595f6adf7b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82b3d371303b647488c08416c5392d006c81e479
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596509"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073060"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
 
@@ -34,7 +34,7 @@ ms.locfileid: "41596509"
     
 在这些管理中心创建的 DLP 策略并排工作-本主题说明了如何操作。
   
-![安全与合规中心和 Exchange 管理中心中的 DLP 页面](media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![安全与合规中心和 Exchange 管理中心中的 DLP 页面](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
 ## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>安全 & 合规中心中的 DLP 如何在 Exchange 管理中心中处理 DLP 和邮件流规则
 

@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+description: 高级电子数据展示作业可帮助您跟踪与执行各种高级电子数据展示任务相关的长时间运行的过程的状态。
+ms.openlocfilehash: eca2eff32b54f783c6c983a8a20237db2faf2240
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960328"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071569"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>在高级电子数据展示中管理作业
 
@@ -40,7 +40,7 @@ ms.locfileid: "41960328"
 |准备数据以供导出 | 用户从审阅集导出文档。 导出过程完成后，可以将导出的数据下载到本地计算机。 有关详细信息，请参阅[导出事例数据](exporting-data-ediscover20.md)。 | 
 |为错误解决做准备 |当用户在事例的 "**处理**" 选项卡上的 "错误" 视图中选择文件并创建新的错误修正时，该过程中的第一步是将具有处理错误的文件上传到 Microsoft 云中的 Azure 存储位置。 此作业跟踪上载过程的进度。 有关错误修正工作流的详细信息，请参阅[处理数据时的错误修正](error-remediation.md)。 | 
 |准备搜索预览 | 在用户创建并运行新的搜索（或重新运行现有搜索）后，搜索工具将准备可预览的项的示例子集（与搜索查询匹配）。 预览搜索结果可帮助您确定搜索的有效性。  有关详细信息，请参阅为[事例收集数据](collecting-data-for-ediscovery.md#view-search-results-and-statistics)。 | 
-|对保管人数据重新编制索引 | 向事例添加保管人时，保管人的所选数据源中的所有部分索引项目都将由名为 "*高级索引*" 的过程编制索引。 如果在事例的 "**处理**" 选项卡上单击 "索引视图" 中的 "**更新索引**"，也会触发此作业。 有关详细信息，请参阅[高级索引的保管人数据](indexing-custodian-data.md)。
+|对保管人数据重新编制索引 | 向事例添加保管人时，保管人的所选数据源中的所有部分索引项目都将由名为 "*高级索引*" 的过程编制索引。 当您在事例的 "**处理**" 选项卡上单击 "**更新索引**" 时，以及在为 "保管人属性" 弹出页面上的特定保管人更新索引时，也会触发此作业。 有关详细信息，请参阅[高级索引的保管人数据](indexing-custodian-data.md)。
 |运行分析 | 用户通过运行高级电子数据展示分析工具（如近期重复检测、电子邮件线程分析和主题分析）来分析评审集中的数据。 有关详细信息，请参阅[在审阅集中分析数据](analyzing-data-in-review-set.md)。 | 
 |标记文档 | 当用户在审阅集中审阅文档时，当用户单击 "**标记" 面板**中的 "**开始标记作业**" 时，将触发此作业。 用户可以在审阅集中对文档进行标记，然后在 "查看文档" 面板中批量选择这些文档，从而启动此作业。 有关详细信息，请参阅[标记文档在审阅集中](tagging-documents.md)。 | 
 |||

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 46dffe5c388f247604bc67dc24916206452745da
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3371587513b16703fa1ead1170f599c406cb6fd2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597259"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069065"
 ---
 # <a name="view-custodian-audit-activity"></a>查看保管人审核活动
 
 需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 高级电子数据展示现在与安全 & 合规中心中现有的审核日志搜索工具集成在一起。 使用此嵌入的体验，您可以使用高级电子数据展示保管人管理工具来促进您的调查，并在您的案例中轻松访问和搜索保管人的活动。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索 Office 365 审核日志。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 若要使用户能够使用最低级别的权限搜索高级电子数据展示审核日志，您可以在 Exchange Online 中创建自定义角色组，添加仅查看审核日志或审核日志角色，然后将该用户添加为新角色组的成员。 有关详细信息，请参阅在 Exchange Online 中管理角色组。
 
@@ -44,19 +44,19 @@ ms.locfileid: "41597259"
 
     将显示 "保管人活动" 搜索页。 注释在上一步中选择的管理员将显示在 "**保管人**" 下拉框中。 您可以在下拉框中选择不同的保管人，但一次只能搜索一个保管人的活动。
 
-    ![保管人活动搜索页](media/AeDCustodianActivities1.png)
+    ![保管人活动搜索页](../media/AeDCustodianActivities1.png)
    
 4. 配置以下搜索条件：
       
    a. **活动**-单击下拉列表以显示可以搜索的活动。 运行搜索后，仅显示所选活动的审核记录。 选择 "**显示所有活动的结果**" 将显示与其他搜索条件相匹配的管理员执行的所有活动的结果。
 
-      ![活动列表](media/CustodianActivityAudit.PNG)
+      ![活动列表](../media/CustodianActivityAudit.PNG)
       
       b. "**开始日期" 和 "结束日期**"-选择要显示在该时间段内发生的事件的日期和时间范围。 默认情况下，选择最后七天。 日期和时间将以协调世界时 (UTC) 格式显示。 您可以指定的最大日期范围为一年。
       
       c. **保管人**-在此框中单击，然后选择要显示其搜索结果的特定管理员。 您在此框中选择的用户执行的选定活动的审核记录将显示在结果列表中。
       
-   5. 单击"   ![搜索按钮](media/SearchButton.PNG)  使用搜索条件运行搜索。 搜索结果已加载，并在几分钟后，它们将显示在 "保管人活动搜索" 页的 "结果" 下。 
+   5. 单击"   ![搜索按钮](../media/SearchButton.PNG)  使用搜索条件运行搜索。 搜索结果已加载，并在几分钟后，它们将显示在 "保管人活动搜索" 页的 "结果" 下。 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>步骤2：查看审核日志搜索结果
 

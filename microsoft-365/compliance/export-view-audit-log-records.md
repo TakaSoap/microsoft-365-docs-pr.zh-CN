@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 将 Office 365 审核日志搜索的结果导出并下载到 CSV 文件后，可以使用 Excel 中 Power Query 编辑器中的 JSON 转换功能将 AuditData 列中的 JSON 对象中的每个属性拆分为自己的列。 这可以帮助您快速找到要查找的特定审核数据。
-ms.openlocfilehash: de116db76597c6eb7966541c3cc0f34f91c06c70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594603"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074058"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>导出、配置和查看审核日志记录
 
@@ -36,7 +36,7 @@ ms.locfileid: "41594603"
     
 2. 单击 "**导出结果**"，然后选择 "**下载所有结果**"。 
     
-   ![单击 "下载所有结果"](media/ExportAuditSearchResults.png)
+   ![单击 "下载所有结果"](../media/ExportAuditSearchResults.png)
 
    此选项可从您在步骤1中运行的审核日志搜索中导出所有审核记录，并将该审核日志中的原始数据下载到 CSV 文件中。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "41594603"
 
 3. 单击 "**保存 > 另存为**"，然后将 CSV 文件保存到本地计算机。 下载多个搜索结果需要一段时间。 在搜索所有活动或广泛的日期范围时，通常会出现这种情况。 当 CSV 文件下载完成时，将在窗口底部显示一条消息。
  
-   ![CSV 文件下载完成时显示的消息](media/ExportAuditSearchResultsFinish.png)
+   ![CSV 文件下载完成时显示的消息](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
   > 你可以将最多 50,000 个条目从单个审核日志搜索中下载到 CSV 文件。 如果下载了 50,000 个条目到 CSV 文件，则可以假定可能存在超过 50,000 个符合搜索条件的事件。 若要导出超过此限制，请尝试使用日期范围来减少审核日志记录的数量。 你可能需要使用更小日期范围运行多个搜索来导出超过 50,000 个条目。
@@ -57,29 +57,29 @@ ms.locfileid: "41594603"
     
 2.  在 "**数据**" 选项卡上的 "**获取 & 转换数据**" 功能区组中，单击 "**发件人文本/CSV**"。
 
-    ![在 "数据" 选项卡上，单击 "发件人文本/CSV"](media/JSONTransformOpenCSVFile.png)
+    ![在 "数据" 选项卡上，单击 "发件人文本/CSV"](../media/JSONTransformOpenCSVFile.png)
 
 3. 打开您在步骤1中下载的 CSV 文件。
     
 4. 在显示的窗口中，单击 "**转换数据**"。
 
-   ![单击 "转换数据"](media/JSONOpenPowerQuery.png)
+   ![单击 "转换数据"](../media/JSONOpenPowerQuery.png)
 
 CSV 文件将在**查询编辑器**中打开。 共有四列： **CreationDate**、 **UserIds**、 **Operations**和**AuditData**。 **AuditData**列是一个包含多个属性的 JSON 对象。 下一步是为 JSON 对象中的每个属性创建一个列。
     
 5. 右键单击 " **AuditData** " 列中的标题，单击 "**转换**"，然后单击 " **JSON**"。 
  
-   ![右键单击 "AuditData" 列，单击 "转换"，然后选择 "JSON"。](media/JSONTransform.png)
+   ![右键单击 "AuditData" 列，单击 "转换"，然后选择 "JSON"。](../media/JSONTransform.png)
 
 6. 在 " **AuditData** " 列的右上角，单击 "展开" 图标。
     
-   ![在 "AuditData" 列中，单击展开图标](media/JSONTransformExpandIcon.png)
+   ![在 "AuditData" 列中，单击展开图标](../media/JSONTransformExpandIcon.png)
 
    将显示**AuditData**列中 JSON 对象中的属性的部分列表。
 
 7. 单击 "**加载更多**" 以在**AuditData**列中的 JSON 对象中显示所有属性。
 
-   ![单击 "加载更多" 以显示 JSON 对象中的所有属性](media/JSONTransformLoadJSONProperties.png)
+   ![单击 "加载更多" 以显示 JSON 对象中的所有属性](../media/JSONTransformLoadJSONProperties.png)
 
    您可以取消选中任何您不想包含的属性旁边的复选框。 删除对调查不有用的列是减少审核日志中显示的数据量的好方法。 
 
@@ -92,7 +92,7 @@ CSV 文件将在**查询编辑器**中打开。 共有四列： **CreationDate**
     
    - 将 "**使用原始列名称作为前缀**" 复选框保留为选中状态，以将 AuditData 前缀添加到列名称中;例如，RecordType 或**AuditData**。 **AuditData** 。
 
-9. 单击“**确定**”。
+9. 单击“确定”。
     
     **AuditData**列拆分为多个列。 每个新列对应于 AuditData JSON 对象中的一个属性。 该列中的每一行都包含属性的值。 如果属性不包含值，则显示*null*值。 在 Excel 中，空值的单元格为空。
   

@@ -14,12 +14,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 对于 Office 365、Azure 和 Dynamics 365 Online 规章合规性报告，若要查看第三方审核，请了解 Microsoft 如何使客户数据安全，以及如何在使用这些在线服务时兼容 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP。
-ms.openlocfilehash: d8347a20543664a1de86001709f068bf39b1cb5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596339"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073143"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -56,7 +56,7 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 可从主菜单访问服务信任门户的功能和内容。
   
-![服务信任门户菜单](media/STPMenus1.png)
+![服务信任门户菜单](../media/STPMenus1.png)
 
 以下各节介绍主菜单中的每一项。
   
@@ -126,13 +126,13 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 单击 "服务信任门户" 页面右上角的放大镜以展开该框，输入搜索词，然后按**enter**。 将显示**搜索**页面，搜索词显示在 "搜索" 框和下面列出的搜索结果中。
   
-![服务信任门户 - 搜索文档（应用了筛选器）](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![服务信任门户 - 搜索文档（应用了筛选器）](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 默认情况下，第 i 个搜索将返回文档结果。 您可以使用下拉列表筛选结果，以优化显示的文档列表。 您可以使用多个筛选器缩小文档列表。 筛选器包括特定云服务、合规性类别或安全措施、地区和行业。 单击文档名称链接以下载该文档。
   
 若要在与搜索词相关的合规性管理器中列出评估，请单击 "**合规性管理器**"。 搜索结果显示了评估的创建日期、评估分组的名称、适用的 Microsoft 云服务，以及该控件是 Microsoft 还是客户托管。 单击控件的名称以查看合规性管理器中的评估中的控件。
   
-![服务信任门户 - 搜索合规性管理器控制措施](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![服务信任门户 - 搜索合规性管理器控制措施](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > 服务信任门户报告和文档可在发布后至少12个月内下载，或者直到新版本的文档可用。
@@ -161,7 +161,7 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 服务信任门户使您能够以不同的语言查看页面内容。 若要更改页面语言，只需单击页面左下角的 "地球" 图标，然后选择您选择的语言。 
   
-![服务信任门户 - 本地化内容选项](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![服务信任门户 - 本地化内容选项](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>反馈
 
@@ -169,4 +169,4 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
   
 您的反馈对我们意义重大。 单击页面底部的 "反馈" 按钮，向我们发送有关您所做的操作或不喜欢的内容，或者您可能需要改进我们的产品或产品功能的建议。
   
-![你有什么类型的反馈](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![你有什么类型的反馈](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
