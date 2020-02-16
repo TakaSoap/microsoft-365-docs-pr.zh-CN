@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 了解如何从 Microsoft 合作伙伴中心购买 Microsoft 365 商业版。
-ms.openlocfilehash: 18af5b0aee378784199e91c8254b50fd1104172b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba6aa806e3e628e8c3478abb57c4529e4f5692bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593943"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065792"
 ---
 # <a name="get-microsoft-365-business"></a>获取 Microsoft 365 商业版
 
@@ -46,13 +46,13 @@ ms.locfileid: "41593943"
     
 2. 在 "合作伙伴仪表板" 中，选择 "**客户**"，然后选择您的客户或添加新客户，然后再获取 Microsoft 365 商业版。
     
-    ![在 Microsoft 合作伙伴中心中，添加客户。](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![在 Microsoft 合作伙伴中心中，添加客户。](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
 3. 在 "客户**订阅**" 页上，选择 "**添加订阅**"，选择 "目录" 下的 "小型企业" 选项，然后选择 " **Microsoft 365 business**"。
     
     选择所需的许可证数（不超过 300 个）。 如果用户数超过300，请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 。 
     
-    ![在 "新建订阅" 页上，选择 "小型企业"。](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![在 "新建订阅" 页上，选择 "小型企业"。](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
     完成添加新客户（包括公司名称）的其余步骤。
     

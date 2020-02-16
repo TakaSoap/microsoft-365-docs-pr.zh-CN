@@ -1,5 +1,7 @@
 ---
 title: 从设备中删除公司数据
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: '了解如何使用 Microsoft 365 商业版删除用户设备或 Windows 电脑中的公司数据。 '
-ms.openlocfilehash: 59e94a08e149a5cb119aabbbe816ccd2f4a9f9fb
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 338ce030cb37a6cbd4a1f63c33dc6866bef93c24
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715224"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064888"
 ---
 # <a name="remove-company-data-from-devices"></a>从设备中删除公司数据
 
-[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>删除公司数据
 
@@ -43,7 +45,7 @@ ms.locfileid: "38715224"
     
 4. 在下一个窗格中，从 "**设备**" 列表中选择一个或多个设备。 在打开的设备窗格中，可以选择将设备重置为出厂设置或删除公司数据，具体取决于设备类型。 
     
-    ![在 "删除公司数据" 窗格中，选择要从中删除数据的设备。](media/resetorremove.png)
+    ![在 "删除公司数据" 窗格中，选择要从中删除数据的设备。](../media/resetorremove.png)
   
 5. 在 "确认" 窗格中，选择 "**确认** \> **关闭**"。
     

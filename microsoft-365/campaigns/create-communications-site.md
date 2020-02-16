@@ -1,5 +1,7 @@
 ---
 title: 创建通信网站
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为您的市场活动创建一个通信网站。
-ms.openlocfilehash: e8f7730d1ec407bf24a819df7366d9bedd78d390
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 5c6590ae8e8fbe0dd1cc024c53f3a2a109aa918c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748273"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056365"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>为市场活动创建通信网站
 
@@ -42,12 +44,12 @@ ms.locfileid: "38748273"
 4. 将市场活动事件添加到**事件 web 部件**，以便每个人都可以看到即将推出的内容。
 5. 添加用户可以使用或共享到**图像库 web 部件**的照片。
 
-![包含市场活动所需的常见元素空间的 SharePoint 通信页面的关系图](media/m365-democracy-comms-site.png)
+![包含市场活动所需的常见元素空间的 SharePoint 通信页面的关系图](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>信息图：创建通信网站信息图 
 以下适用于 PowerPoint 和 PDF 的链接可以下载和打印为 tabloid 格式（也称为分类账、11 x 17 或 A3）。
 
-[![通信网站信息图的图像](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![通信网站信息图的图像](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)
 

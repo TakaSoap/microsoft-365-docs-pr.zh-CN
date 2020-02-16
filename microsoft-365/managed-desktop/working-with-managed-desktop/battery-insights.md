@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269383"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085723"
 ---
 # <a name="battery-insights"></a>电池洞察力
 此视图提供 Microsoft 托管桌面设备的电源、电池和应用使用指标。 出于这些目的，如果应用程序正在运行且处于焦点，则会被视为 "正在使用中"。
 
 若要查看使用率数据，请选择 "**电池**" 选项卡。
 
-![电池窗格：左上角的每设备型号预测电池使用寿命（按应用）在底部右侧的 insights 表格中。 右上部的文档链接。](images/insights_battery.png)
+![电池窗格：左上角的每设备型号预测电池使用寿命（按应用）在底部右侧的 insights 表格中。 右上部的文档链接。](../../media/insights_battery.png)
 
 ## <a name="predicted-battery-life"></a>预测电池寿命
 

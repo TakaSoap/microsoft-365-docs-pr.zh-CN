@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 企业移动到 Microsoft 365 E3。
-ms.openlocfilehash: 02adda0c2c59d2994b0c6197dd76c6cc893ad9f0
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: cd6b9b14e9bc1ed03635be12873fb90592efe527
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627978"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065314"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>从 Microsoft 365 商业版迁移到 Microsoft 365 E3
 
@@ -53,35 +53,35 @@ Microsoft 365 商业版为小型企业提供了所需的一切，将同类最佳
 | Office 应用程序 *  | [Office 365 商业版](#office-365-business)   | Office 365 专业增强版 | 
 | **云生产力应用程序**       | | | 
 | Exchange Online 和 Outlook   | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档   | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
-| Teams | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
+| Teams | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | OneDrive for Business | 每个用户 1 TB 存储限制   | 无限制 | 
-| Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| Outlook 客户管理器，MileIQ  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | | 
+| Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| Outlook 客户管理器，MileIQ  | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | | 
 | **威胁防护**     | | | 
 | 攻击面减少功能 | [查看此列表](#threat-protection) | Microsoft Edge 基于硬件的隔离的企业管理 | 
-| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)  | 不包括在内，但可以添加到 | 
+| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业版中](../media/check-mark.png) | 不包括在内，但可以添加到 | 
 | **身份管理**       | | | 
-| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|    ![包含在 Microsoft 365 商业版中](./media/check-mark.png) | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| 云应用发现、Azure AD Connect Health  |   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| Azure AD Office 365 应用单一登录（SSO）：每个用户10个应用程序（库 SaaS 应用程序，如 Salesforce） * | ![包含在 Microsoft 365 商业版中](./media/check-mark.png) | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| Azure AD Premium 1 SSO：无限制（通过使用自助式应用集成模板的 Azure AD 应用程序代理和非库应用的内部部署应用）  |   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
+| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|    ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 云应用发现、Azure AD Connect Health  |   | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| Azure AD Office 365 应用单一登录（SSO）：每个用户10个应用程序（库 SaaS 应用程序，如 Salesforce） * | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| Azure AD Premium 1 SSO：无限制（通过使用自助式应用集成模板的 Azure AD 应用程序代理和非库应用的内部部署应用）  |   | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | **设备和应用程序管理**     | | | 
-| Microsoft Intune、Windows Autopilot|  ![包含在 Microsoft 365 商业版中](./media/check-mark.png) | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-|虚拟桌面访问（VDA）   |  |    ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-|Windows 虚拟桌面（WVD）  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png) |     ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-|共享计算机激活（SCA）   | ![包含在 Microsoft 365 商业版中](./media/check-mark.png) |     ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| Microsoft 桌面优化包    | |     ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
+| Microsoft Intune、Windows Autopilot|  ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+|虚拟桌面访问（VDA）   |  |    ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+|Windows 虚拟桌面（WVD）  | ![包含在 Microsoft 365 商业版中](../media/check-mark.png) |    ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+|共享计算机激活（SCA）   | ![包含在 Microsoft 365 商业版中](../media/check-mark.png) |    ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| Microsoft 桌面优化包    | |     ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | **信息保护**        | | | 
-| Office 365 数据丢失防护，Azure 信息保护计划1  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| Endpoint DLP 的窗口信息保护    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
+| Office 365 数据丢失防护，Azure 信息保护计划1  | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| Endpoint DLP 的窗口信息保护    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | **客户端访问许可证（CAL 权限）**    | | |   
-| 企业 CAL 套件（Exchange、SharePoint、Skype、Windows、Microsoft 终结点配置管理器、Windows 权限管理）| |       ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
+| 企业 CAL 套件（Exchange、SharePoint、Skype、Windows、Microsoft 终结点配置管理器、Windows 权限管理）| |       ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | **Compliance**        | | | 
-| 无限制的电子邮件存档 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| 合规性分数/合规性管理器   | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| 电子数据展示    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| 就地保留和诉讼保留 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
-| 邮件记录管理（MRM）保留标记和保留策略  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Microsoft 365 E3 中](./media/check-mark.png) | 
+| 无限制的电子邮件存档 | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 合规性分数/合规性管理器   | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 电子数据展示    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 就地保留和诉讼保留 | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 邮件记录管理（MRM）保留标记和保留策略  | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 ||||
 
 \*分配了对 SaaS 应用程序的访问权限的用户可以获取最大10个应用程序的 SSO 访问权限。 管理员可以配置 SSO 并更改用户对不同 SaaS 应用程序的访问权限，但每次仅允许对每个用户的10个应用程序进行 SSO 访问。 所有 Office 365 应用程序均计为一个应用程序。

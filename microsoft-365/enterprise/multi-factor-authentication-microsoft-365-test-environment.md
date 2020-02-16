@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用发送到 Microsoft 365 企业版测试环境中的智能手机的短信配置多重身份验证。
-ms.openlocfilehash: d99e22cdbd8b08f4752a953b63c2d5215a78ec6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea2041a463b224781df101251dab0f4d9f0e8753
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596829"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066729"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的多重身份验证
 
@@ -40,10 +40,10 @@ ms.locfileid: "41596829"
 
 3. 使用条件访问策略启用和测试多重身份验证（可选）。
 
-![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -60,7 +60,7 @@ ms.locfileid: "41596829"
   
 1. 打开浏览器的单独私有实例，转到 Microsoft 365 管理中心（[https://portal.microsoft.com](https://portal.microsoft.com)），然后使用全局管理员帐户登录。
     
-2. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
+2. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
 3. 在 "活动用户" 窗格中，单击 "**多因素身份验证**"。
     
@@ -82,7 +82,7 @@ ms.locfileid: "41596829"
     
 2. 转到 Office 365 门户（[https://portal.office.com](https://portal.office.com)），并使用用户2帐户名称和密码登录。
     
-3. 登录后，系统会提示您设置帐户以获取详细信息。 单击“下一步”。****
+3. 登录后，系统会提示您设置帐户以获取详细信息。 单击“**下一步**”。
     
 4. 在“其他安全性验证”**** 页上： 
     
@@ -92,7 +92,7 @@ ms.locfileid: "41596829"
     
    - 在**方法**中，单击 "**通过短信向我发送代码**"。
     
-5. 单击“下一步”。****
+5. 单击“**下一步**”。
     
 6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     

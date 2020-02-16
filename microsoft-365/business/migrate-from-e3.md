@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何通过 Office 365 E3 将企业移动到 Microsoft 365 商业版。
-ms.openlocfilehash: 210f3ebf76da49349dfb6d61d0b8ce88d15d3734
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593701"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065576"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>从 Office 365 E3 迁移到 Microsoft 365 业务 
 
@@ -44,25 +44,25 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 | Office 应用程序<sup>1</sup>   | Office 365 商业版   | Office 365 专业增强订阅版 | 
 | **云生产力应用程序**       | | | 
 | Exchange Online 和 Outlook   | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档   | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
-| Teams | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Office 365 E3 中](./media/check-mark.png) | 
+| Teams | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
 | OneDrive for Business | 每个用户 1 TB 存储限制   | 无限制 | 
-| Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Office 365 E3 中](./media/check-mark.png) | 
-| StaffHub  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | ![包含在 Office 365 E3 中](./media/check-mark.png) | 
-| Outlook 客户管理器，MileIQ  | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)   | | 
+| Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| StaffHub  | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| Outlook 客户管理器，MileIQ  | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | | 
 | **威胁防护**     | | | 
-| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业版中](./media/check-mark.png)  | 不包括在内，但可以添加到 | 
+| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业版中](../media/check-mark.png) | 不包括在内，但可以添加到 | 
 | **身份管理**       | | | 
-| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|    ![包含在 Microsoft 365 商业版中](./media/check-mark.png) |  | 
+| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|    ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  | 
 | **设备和应用程序管理**     | | |
-| Microsoft Intune、Windows AutoPilot|  ![包含在 Microsoft 365 商业版中](./media/check-mark.png) |  |
-| 共享计算机激活|   ![包含在 Microsoft 365 商业版中](./media/check-mark.png) | ![包含在 Office 365 E3 中](./media/check-mark.png)| 
-| 从 Win 7/8.1 Pro 许可证升级到 Windows 10 专业版的权限|     ![包含在 Microsoft 365 商业版中](./media/check-mark.png) || 
+| Microsoft Intune、Windows AutoPilot|  ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  |
+| 共享计算机激活|   ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png)| 
+| 从 Win 7/8.1 Pro 许可证升级到 Windows 10 专业版的权限|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    || 
 | **信息保护**        | | |
-|Office 365 数据丢失防护|   ![包含在 Microsoft 365 商业版中](./media/check-mark.png)|![包含在 Office 365 E3 中](./media/check-mark.png)|
-|Azure 信息保护计划1，Bitlocker 强制|![包含在 Microsoft 365 商业版中](./media/check-mark.png)||
-|Azure 信息保护计划1，敏感度标签|![包含在 Microsoft 365 商业版中](./media/check-mark.png)||
+|Office 365 数据丢失防护|   ![包含在 Microsoft 365 商业版中](../media/check-mark.png)|![包含在 Office 365 E3 中](../media/check-mark.png)|
+|Azure 信息保护计划1，Bitlocker 强制|![包含在 Microsoft 365 商业版中](../media/check-mark.png)||
+|Azure 信息保护计划1，敏感度标签|![包含在 Microsoft 365 商业版中](../media/check-mark.png)||
 |**客户端访问许可证（CAL 权限）**|||
-|企业 CAL 套件（Exchange、SharePoint、Skype）||![包含在 Office 365 E3 中](./media/check-mark.png)|
+|企业 CAL 套件（Exchange、SharePoint、Skype）||![包含在 Office 365 E3 中](../media/check-mark.png)|
 
 <sup>1</sup> Microsoft 365 商业版的 Office 应用程序不包括通过组策略、应用遥测、更新控件、电子表格比较和查询或商业智能等批量激活。
 

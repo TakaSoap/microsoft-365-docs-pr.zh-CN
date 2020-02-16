@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为 Microsoft 365 市场活动设置条件访问策略。
-ms.openlocfilehash: 335fbd7e771b1595e1846529daed76e5ddd3a8f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593377"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064594"
 ---
 # <a name="set-up-conditional-access-policies"></a>设置条件访问策略
 
@@ -52,7 +52,7 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
 1. 转到 " [azure 门户](https://portal.azure.com)"，然后导航到 " **azure Active Directory** \> **条件访问**"。
     
     页面上列出了基准策略。 <br/> <br/>
-    ![列出用于条件访问的基准策略的页面。](media/baslinepolicies.png)
+    ![列出用于条件访问的基准策略的页面。](../media/baslinepolicies.png)
 1. 请参阅以下针对每个策略的特定说明：
 
   - [要求对管理员进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

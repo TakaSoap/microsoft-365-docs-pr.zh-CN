@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: 通过全局管理员凭据登录 Microsoft 365 商业版，以查看设备策略和操作。
-ms.openlocfilehash: 9664a72d85cf6eed9993937299d38a84b9a8f0d2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac8ea8a5b484fe6401e72fd0eaab4d79515f3aac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595579"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056546"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>查看和管理策略和设备
 
-[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="view-and-edit-device-policies"></a>查看和编辑设备策略
 
@@ -40,7 +40,7 @@ ms.locfileid: "41595579"
 
     在此页面上，您可以创建、编辑、更改目标组或删除策略。
 
-    ![Screenshot of the Policies page](media/devicepolicies.png)
+    ![Screenshot of the Policies page](../media/devicepolicies.png)
   
 ## <a name="view-and-manage-devices"></a>查看和管理设备
 
@@ -48,5 +48,5 @@ ms.locfileid: "41595579"
     
     在此页面上，您可以选择一个或多个设备并删除公司数据。 对于设置了设备保护设置的 Windows 10 设备，还可以选择将设备重置为出厂设置。
   
-   !["管理设备" 页](media/devicesmanage.png)
+   !["管理设备" 页](../media/devicesmanage.png)
 

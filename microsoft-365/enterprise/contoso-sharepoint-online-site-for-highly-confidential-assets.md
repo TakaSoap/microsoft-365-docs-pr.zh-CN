@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为高度管控的数据实现 SharePoint 网站，以便在研究团队之间实现协作。
-ms.openlocfilehash: c0b9e36f90e64e1d1c7f7ea2c4b1b4b65e60b95c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601129"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068262"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 的高度机密数字资产的 SharePoint 网站
 
@@ -67,7 +67,7 @@ Contoso admins 创建了一个新的 Office 365 灵敏度选项，其中的 "**�
 
 以下是针对高度机密资产的**研究**团队网站的结果配置。
 
-![针对高度机密资产的研究团队网站的结果配置](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![针对高度机密资产的研究团队网站的结果配置](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 **搜索**网站的文件夹中的文件受以下保护：
 
@@ -77,7 +77,7 @@ Contoso admins 创建了一个新的 Office 365 灵敏度选项，其中的 "**�
 
 下面的示例展示了一个存储在**研究**网站中的文件，其中包含已分配的**研究团队**敏感度选项。
 
-![针对高度机密资产的研究团队网站的结果配置](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
+![针对高度机密资产的研究团队网站的结果配置](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
 ## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>步骤4：迁移了本地 SharePoint 研究数据

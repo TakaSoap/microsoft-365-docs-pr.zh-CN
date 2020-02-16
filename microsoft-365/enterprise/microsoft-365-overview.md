@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供对适用于企业的 Microsoft 365 的组件、计划和部署路径的介绍。
-ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596849"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066881"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>适用于企业的 Microsoft 365 概述
 
@@ -59,7 +59,7 @@ ms.locfileid: "41596849"
 
 ## <a name="get-the-big-picture"></a>获取大图
 
-[Microsoft 365 for enterprise 海报](media/m365-poster/Microsoft365Enterprise.pdf)是查看的中心位置：
+[Microsoft 365 for enterprise 海报](../media/m365-poster/Microsoft365Enterprise.pdf)是查看的中心位置：
 
 - Microsoft 365 for 企业以及应用和服务如何映射到其价值的优势
 - 适用于企业计划的 Microsoft 365 以及它们包含的组件 
@@ -67,16 +67,16 @@ ms.locfileid: "41596849"
 - 适用于一些常见组织部门的[Microsoft 365 生产率库](https://www.microsoft.com/microsoft-365/success/)和代表性方案
 - 采用指南重点介绍了 Microsoft 365 企业版[部署指南](deploy-microsoft-365-enterprise.md)
 
-[![Microsoft 365 企业版海报图像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Microsoft 365 企业版海报图像](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 要下载海报副本，请单击[此处](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-若要更好地了解如何将整个组织移动到 Microsoft 365 for enterprise 中的产品和服务，请下载[转换海报](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要更好地了解如何将整个组织移动到 Microsoft 365 for enterprise 中的产品和服务，请下载[转换海报](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
-[![转移到 Microsoft 365 海报图像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![转移到 Microsoft 365 海报图像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 
@@ -94,9 +94,9 @@ ms.locfileid: "41596849"
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-有关这些产品的升级、迁移和移动到云选项的直观摘要，请参阅[停止提供支持海报](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
+有关这些产品的升级、迁移和移动到云选项的直观摘要，请参阅[停止提供支持海报](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
 
-[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 这一页的海报是一种快速了解您可以采取的各种途径，以防止 Windows 7 和 Office 2010 客户端和服务器产品到达支持的末尾，并在 Microsoft 365 中突出显示了针对企业的首选路径和支持。
 
@@ -142,7 +142,7 @@ ms.locfileid: "41596849"
 
 |||
 |:-------|:-----|
-![Microsoft 365 基础知识培训](./media/m365-poster/m365-fundamentals.svg)| 向自己培训并努力处理 Microsoft 365 认证。 <BR> 从[Microsoft 365 基础](https://docs.microsoft.com/learn/paths/m365-fundamentals/)开始。
+![Microsoft 365 基础知识培训](../media/m365-poster/m365-fundamentals.svg)| 向自己培训并努力处理 Microsoft 365 认证。 <BR> 从[Microsoft 365 基础](https://docs.microsoft.com/learn/paths/m365-fundamentals/)开始。
 |||
 
 

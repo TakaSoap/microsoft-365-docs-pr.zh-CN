@@ -16,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解并配置 Office 365 的特权访问管理。
-ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d678c109f42901be2413c2b33e362d6796be96b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600919"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067172"
 ---
 # <a name="step-6-configure-email-encryption"></a>步骤 6：配置电子邮件加密
 
 *此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Microsoft 365 中有三种类型的电子邮件加密。
 
@@ -42,7 +42,7 @@ Microsoft 365 中有三种类型的电子邮件加密。
 
 通过 OME，您的组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 OME 适用于 Outlook.com、Yahoo！、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有预期的收件人可以查看邮件。
 
-![电子邮件的 OME 加密](./media/infoprotect-email-encryption/ome-encryption.png)
+![电子邮件的 OME 加密](../media/infoprotect-email-encryption/ome-encryption.png)
 
 您设置用于定义加密条件的传输规则。 当用户发送的邮件与规则匹配时，则自动应用加密。
 
@@ -56,7 +56,7 @@ Microsoft 365 中的 IRM 可帮助您通过其他加密保护信息，并通过�
 
 IRM 策略在 Microsoft 365 中配置，并可应用于 SharePoint Online 和电子邮件中的文档。 受 IRM 保护的电子邮件包含应用的应用的策略设置并与之一起移动。 
 
-![电子邮件的 IRM 保护](./media/infoprotect-email-encryption/irm-protection.png)
+![电子邮件的 IRM 保护](../media/infoprotect-email-encryption/irm-protection.png)
 
 当收件人使用包含的策略打开电子邮件时，策略设置将用于解密邮件，并确定收件人可对邮件执行的操作。 
 
@@ -66,7 +66,7 @@ IRM 策略在 Microsoft 365 中配置，并可应用于 SharePoint Online 和电
 
 S/MIME 是基于数字证书的基于电子邮件的保护解决方案，使您可以对邮件进行加密和数字签名。 邮件加密有助于确保只有预期收件人可以打开并阅读该邮件。 数字签名可帮助收件人验证发件人的身份，并确定只有发件人可以发送它。
 
-![电子邮件的 S/MIME 保护](./media/infoprotect-email-encryption/smime-protection.png)
+![电子邮件的 S/MIME 保护](../media/infoprotect-email-encryption/smime-protection.png)
 
 S/MIME 可用于向 Microsoft 365 订阅中的其他邮箱或向外部用户发送电子邮件。
 通过使用包含用于加密或解密邮件的公钥和私钥的数字证书以及创建和验证数字签名，可以进行邮件加密和数字签名。
@@ -81,4 +81,4 @@ S/MIME 可用于向 Microsoft 365 订阅中的其他邮箱或向外部用户发�
 
 |||
 |:-------|:-----|
-|![第 7 步](./media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|
+|![第 7 步](../media/stepnumbers/Step7.png)|[配置 Office 365 Privileged Access Management](infoprotect-configure-privileged-access-management.md)|

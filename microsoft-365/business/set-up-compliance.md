@@ -1,5 +1,7 @@
 ---
 title: 为 Microsoft 365 商业版增加威胁防护
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能，以防止数据丢失并为敏感数据添加标签。
-ms.openlocfilehash: 6fae95e8c5e6d133e3163dbdfd3c09cfede11382
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: d569ff8d84faf82881035f0ed54e5d175605776f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715114"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064689"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
@@ -68,6 +70,6 @@ DLP 提供了许多不同区域设置的多种可供使用的策略模板。 例
 1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载**AzinfoProtection_UL** 。
  
 2. 您可以通过查看 Word 文档，并确保 "**开始**" 选项卡上的 "**敏感度**" 选项可用来验证安装是否正常进行。
-<br/>![Word 文档中的 "保护" 选项卡下拉箭头。](media/word-sensitivity.png)
+<br/>![Word 文档中的 "保护" 选项卡下拉箭头。](../media/word-sensitivity.png)
 
 有关详细信息，请参阅[安装客户端](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)。

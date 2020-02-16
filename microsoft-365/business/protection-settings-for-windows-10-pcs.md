@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解 Microsoft 365 商业版中提供的默认设置和其他设置，以保护 Windows 10 设备。
-ms.openlocfilehash: b286eb417a8e723b01838c16286ceb612d497c7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1b424fe6a85ad23b2914ea29f47d1dc16b333c94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593508"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064948"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>设置 Windows 10 电脑的设备保护设置
 
@@ -49,7 +49,7 @@ ms.locfileid: "41593508"
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
-    ![Add policy pane with Windows 10 Device configuration selected](media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
+    ![Add policy pane with Windows 10 Device configuration selected](../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
     
@@ -63,7 +63,7 @@ ms.locfileid: "41593508"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |说明  <br/> |
+|设置  <br/> |说明  <br/> |
 |使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁  <br/> |需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。  <br/> |
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |
 |使用减少设备攻击面的规则  <br/> |启用此规则后，攻击面减少有助于阻止通常被恶意软件用来感染设备的操作和应用。仅当 Windows Defender 防病毒设置为"开启"时，此设置才可用。请参阅[减少攻击面](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)以了解详细信息。  <br/> |

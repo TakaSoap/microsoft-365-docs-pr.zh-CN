@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何设置 Microsoft 365 商业版。
-ms.openlocfilehash: a353e39b824bae702fa015b0c7d3dd7e6416454c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5491486c2bf8da1ee38fcd986d5ecd682d57c82e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593713"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065595"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Microsoft 365 Business 入门
 
@@ -57,7 +57,7 @@ Microsoft 365 商业版适用于最高300的许可证。 如果你需要更多�
   
 下图介绍了管理员如何设置 Microsoft 365 商业版。 还介绍为 Microsoft 365 商业版 准备 Windows 电脑的步骤。 您还可以使用[Windows AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 商业版管理中心添加新设备。 您可以使用 AutoPilot 设置和预配置新设备，以便用户可以在用户使用其 Microsoft 365 业务凭据登录后立即进行生产。
   
-![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
 观看此视频，了解 Microsoft 365 Business 安装程序的概述。<br><br>
 

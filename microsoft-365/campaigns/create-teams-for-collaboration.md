@@ -1,5 +1,7 @@
 ---
 title: 创建协作团队
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 团队为你的团队创建协作空间。
-ms.openlocfilehash: 9b501daa61998b0b2daedd84c333552b42e5338f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031347"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056344"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>在 Microsoft 团队中创建协作团队
 
@@ -42,7 +44,7 @@ Microsoft 团队是一种协作应用程序，可帮助你的员工在任何设�
 
 您还可以为特定项目创建团队，并根据应包括的用户应用适当的保护量。 
 
-![Microsoft 团队窗口的关系图，其中包含三个单独的团队，以允许进行安全通信和协作](media/m365-democracy-teams-collab.png)
+![Microsoft 团队窗口的关系图，其中包含三个单独的团队，以允许进行安全通信和协作](../media/m365-democracy-teams-collab.png)
 
 创建团队时，将创建其他内容：
 

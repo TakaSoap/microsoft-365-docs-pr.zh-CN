@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 帮助你的用户安装 Office 应用。
-ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593913"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065708"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>帮助你的用户在 Windows 10 设备上安装 Office
 
-[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 你可以从 Microsoft 365 商业版管理中心快速轻松地在 Windows 10 电脑上安装 Office。
   
@@ -59,7 +59,7 @@ ms.locfileid: "41593913"
 4. 在**电子邮件用户上下载 "Office 面板" 的链接**中，选择要发送电子邮件的用户，然后**通过电子邮件发送选定用户**。
 
     
-      :::image type="content" source="media/sendemailtousers.png" alt-text="选择 "用户"，通过 Office 下载链接发送电子邮件。":::
+      :::image type="content" source="../media/sendemailtousers.png" alt-text="选择 "用户"，通过 Office 下载链接发送电子邮件。":::
 
 ## <a name="see-also"></a>另请参阅
 

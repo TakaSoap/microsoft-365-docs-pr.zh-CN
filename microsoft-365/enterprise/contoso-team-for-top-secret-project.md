@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为首要项目的高管控数据使用团队开发一套新的产品和服务。
-ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597069"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068020"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的最高机密项目团队
 
@@ -68,7 +68,7 @@ Contoso admins 创建了一个名为**Project 2x**的新 Office 365 敏感度标
 
 下面是项目2组的结果配置。
 
-![项目2组的结果配置](./media/contoso-team-for-highly-confidential-assets/final-config.png)
+![项目2组的结果配置](../media/contoso-team-for-highly-confidential-assets/final-config.png)
  
 受以下条件保护的基础 Project 2X SharePoint 网站的 "文档" 部分中的文件：
 
@@ -79,7 +79,7 @@ Contoso admins 创建了一个名为**Project 2x**的新 Office 365 敏感度标
 
 下面的示例展示了存储在基础项目2X 网站中的文件，该文件具有高度管控的保留标签和分配的 Project 2/2 敏感度标签。
 
-![存储在基础项目2X 网站中的文件的示例](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
+![存储在基础项目2X 网站中的文件的示例](../media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
  
 ## <a name="step-4-trained-project-2x-team-members"></a>步骤4：训练有素的项目2组成员
 

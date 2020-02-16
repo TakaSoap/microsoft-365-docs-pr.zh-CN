@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 了解如何在 Windows 10 计算机上自动安装32位 Office 应用并将其更新。
-ms.openlocfilehash: fa5b2ce1852ebdb1e76c1fa844793fee56af3d68
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0f8cd7df49ad627b190fad6737ec95a6d64d99d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593611"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065090"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>准备通过 Microsoft 365 Business 部署 Office 客户端
 
@@ -44,7 +44,7 @@ ms.locfileid: "41593611"
     
 若要确定是否拥有即点即用版本的 Office，请在任何 Office 应用中，转到" **文件**"\>" **帐户**"（如 Outlook 中的 **Office 帐户**。 如果看到如下图所示的**Office 更新**，则说明安装是通过即点即用完成的。 
   
-![Screenshot of Office updates in Office app Account](media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
+![Screenshot of Office updates in Office app Account](../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
  **拥有此功能的好处**
   

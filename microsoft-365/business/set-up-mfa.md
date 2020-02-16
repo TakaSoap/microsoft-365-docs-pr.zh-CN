@@ -1,5 +1,7 @@
 ---
 title: 设置多重身份验证
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 为 Microsoft 365 商业版设置多重身份验证。
-ms.openlocfilehash: 59a3ff7a9494ccfc44fa701c6f605a9bd9eeafcf
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 4a201680172653fe5beffe7855fd35d1d395359e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715054"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064524"
 ---
 # <a name="multi-factor-authentication"></a>多重身份验证
 
@@ -31,13 +33,13 @@ ms.locfileid: "38715054"
 
 ## <a name="set-up-mfa-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中设置 MFA
 
-[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 1. 使用全局管理员凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。 
 2. 在左侧导航中，选择 "**设置**"。
 3. 在 "安装程序" 页上，选择 "**启用多重身份验证（MFA）** " 卡上的 "**查看**"。
 4. 在 "**启用 mfa** " 页上，选择 "**开始**"，或 "**管理**" （如果你已设置 MFA 并想要进行更改）。 
 
-  :::image type="content" source="media/turnonmfa.png" alt-text="启用 MFA 页面的屏幕截图。":::
+  :::image type="content" source="../media/turnonmfa.png" alt-text="启用 MFA 页面的屏幕截图。":::
 
 5. 在 "**加强登录安全**" 面板上，选中 "**需要管理员的多因素身份验证**" 或 "**创建策略**"。

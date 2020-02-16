@@ -1,5 +1,7 @@
 ---
 title: 验证 Windows 10 电脑上的应用保护设置
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何在 Windows 10 设备中验证 Microsoft 365 商业应用保护设置。
-ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 577921f7f33eafbbe652dcf825a145d89f1ff556
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721852"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057166"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的应用保护设置
 
@@ -36,11 +38,11 @@ ms.locfileid: "38721852"
   
 1. 按[为 Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)所述，使用 Microsoft 365 商业版凭据登录并连接到 Azure AD 后，请转到" **Windows 设置**"\>" **帐户**"\>" **访问工作或学校帐户**"。选择" **连接到 \<租户名称\> Azure AD**"，然后选择" **信息**"。
     
-    ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
+    ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
 2. 在 "**管理者** \<租户名称\> " 页上，您可以看到包含**管理服务器地址**的**连接信息**，如下图中所示。 
     
-    ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
+    ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
  **确认无法将公司数据粘贴到非托管应用中**
   
@@ -52,7 +54,7 @@ ms.locfileid: "38721852"
     
     你将收到一条错误，指出应用无法访问内容。
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     但是，可以将相同的内容粘贴到 Word 2016。
     
@@ -68,11 +70,11 @@ ms.locfileid: "38721852"
     
 4. 在" **访问工作或学校帐户**"页面，选择" **工作或学校帐户**"，然后选择" **信息**"。
     
-    ![单击或点击 "工作或学校帐户" 对话框上的 "信息"。](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![单击或点击 "工作或学校帐户" 对话框上的 "信息"。](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
 5. 在 "**访问工作或学校**" 页面上，您可以看到包含**管理服务器地址**的**连接信息**，如下图中所示，并在中包括 " *wip* " 和 " *mam* " 一词。 
     
-    ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
+    ![Managed by page shows connection info URL that includes the words mam and wpi.](../media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
  **确认无法将公司数据粘贴到非托管应用中**
   
@@ -84,7 +86,7 @@ ms.locfileid: "38721852"
     
     您将收到一条错误，说明应用程序无法访问内容。
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     但是，可以将相同的内容粘贴到 Word 2016。
     

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 将你的企业从 Office 365 商业高级升级到 Microsoft 365 业务的步骤。
-ms.openlocfilehash: 0732f76e5bd8540e5954bd7ea7b88061326901b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e17ac2658c7276ba4a77de371847343866815c42
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593671"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065255"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>从 Office 365 商业高级版升级到 Microsoft 365 商业版
 
@@ -51,11 +51,11 @@ ms.locfileid: "41593671"
 1. 登录到管理员中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。
 2. 转到导航窗格，然后选择 "**计费** \> **产品 & 服务**"。 查找你的 Office 365 订阅并将其选中以查看详细信息。 
 
-    ![屏幕截图显示如何在管理中心查找和选择订阅。](media/FindYourSubscription.png)
+    ![屏幕截图显示如何在管理中心查找和选择订阅。](../media/FindYourSubscription.png)
 
 3. 在下一个页面上，选择 "**升级**"。 
 
-      ![屏幕截图显示在管理中心中选择 "升级" 的位置。](media/SelectUpgrade.png)
+      ![屏幕截图显示在管理中心中选择 "升级" 的位置。](../media/SelectUpgrade.png)
 
   > [!NOTE]
   > 如果您看到一条消息，指出**在 Azure Active Directory 中不支持将订阅升级到基于组的许可证**，则可以安全地忽略此消息，除非您的组织非常大。 已选择此选项的组织将知道他们使用的是基于组的许可。

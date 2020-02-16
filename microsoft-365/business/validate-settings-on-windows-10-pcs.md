@@ -1,5 +1,7 @@
 ---
 title: 验证 Windows 10 电脑上的应用保护设置
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何在 Windows 10 设备上验证 Microsoft 365 商业应用保护设置。
-ms.openlocfilehash: b8793ab7f77bbc7f608f237e2455f6fd12c3bb26
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 1762382aec00a80e006cf38b66c28d02c0c25989
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721792"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056627"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的设备保护设置
 
@@ -37,23 +39,23 @@ ms.locfileid: "38721792"
   
 1. 转到 "**设置** \> " " ** &amp;更新安全** **** \> \> Windows 更新**重新启动选项**"，并确认所有设置均显示为灰色。 
     
-    ![所有重新启动选项都将灰显。](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![所有重新启动选项都将灰显。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
 2. 转到 "**设置** \> " "**更新&amp;安全** **** \> \> Windows 更新**高级选项**"，并确认所有设置均显示为灰色。 
     
-    ![Windows 高级更新选项全部显示为灰色。](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows 高级更新选项全部显示为灰色。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. 转到**设置** \> **更新&amp;安全** \> **Windows 更新** \> **高级选项** \> **选择如何传递更新**。
     
     确认您可以看到某些设置已被组织隐藏或管理的邮件（红色），所有选项都将灰显。
     
-    ![选择如何传递更新页面指示你的组织隐藏或管理的设置。](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![选择如何传递更新页面指示你的组织隐藏或管理的设置。](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
 4. 若要打开 windows defender 安全中心，请转到**设置** \> **更新&amp;安全** \> \> **Windows defender**单击**打开 windows defender 安全中心** \> **病毒&amp;线程防护** \> ** &amp;病毒防护设置**。 
     
 5. 验证所有选项是否都显示为灰色。 
     
-    ![病毒和威胁防护设置显示为灰色。](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![病毒和威胁防护设置显示为灰色。](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
 ## <a name="related-topics"></a>相关主题
 

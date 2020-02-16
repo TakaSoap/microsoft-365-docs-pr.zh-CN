@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: '了解如何使用 Microsoft 365 商业版恢复 Windows 10 设备的出厂设置。 '
-ms.openlocfilehash: b5039693640a17e531296d019117a9f40bf98a7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4350b208341a51447153b415d2cb225697a11e1b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593468"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064824"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>将 Windows 10 设备重置为其出厂设置
 
-[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 "恢复出厂设置"会将设备恢复为购买设备时的原始设置。这将删除购买设备后安装的所有应用和数据。可使用 Microsoft 365 商业版 将托管的 Windows 10 设备恢复为出厂设置。
   
