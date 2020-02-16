@@ -1,5 +1,7 @@
 ---
 title: 信息图：帮助保护你的市场活动
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,16 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以采取什么操作来帮助保护您的市场活动免受数字攻击。
-ms.openlocfilehash: ed41ecdbf1fb6284f79cda0468bc50dbba086e63
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 214637afe53280e51dbc4bde9e8766e7091b2fd6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39909278"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080540"
 ---
-# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a><span data-ttu-id="8c5f7-103">信息图：帮助保护你自己和你的市场活动免受数字威胁</span><span class="sxs-lookup"><span data-stu-id="8c5f7-103">Infographic: Help protect yourself and your campaign from digital threats</span></span> 
-<span data-ttu-id="8c5f7-104">以下适用于 PowerPoint 和 PDF 的链接可以下载和打印为 tabloid 格式（也称为分类账、11 x 17 或 A3）。</span><span class="sxs-lookup"><span data-stu-id="8c5f7-104">The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a><span data-ttu-id="b21a6-103">信息图：帮助保护你自己和你的市场活动免受数字威胁</span><span class="sxs-lookup"><span data-stu-id="b21a6-103">Infographic: Help protect yourself and your campaign from digital threats</span></span> 
+<span data-ttu-id="b21a6-104">以下适用于 PowerPoint 和 PDF 的链接可以下载和打印为 tabloid 格式（也称为分类账、11 x 17 或 A3）。</span><span class="sxs-lookup"><span data-stu-id="b21a6-104">The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
 
-<span data-ttu-id="8c5f7-105">[![帮助保护您的市场活动信息的图像安全图](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span><span class="sxs-lookup"><span data-stu-id="8c5f7-105">[![Image for secure your help protect your campaign info graphic](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span></span>
+<span data-ttu-id="b21a6-105">[![帮助保护您的市场活动信息的图像安全图](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span><span class="sxs-lookup"><span data-stu-id="b21a6-105">[![Image for secure your help protect your campaign info graphic](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span></span>
 
-<span data-ttu-id="8c5f7-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span><span class="sxs-lookup"><span data-stu-id="8c5f7-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span></span>
+<span data-ttu-id="b21a6-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span><span class="sxs-lookup"><span data-stu-id="b21a6-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span></span>
