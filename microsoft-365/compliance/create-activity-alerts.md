@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: 在安全与合规中心中添加和管理活动警报，以便 Office 365 会在用户在 Office 365 中执行特定活动时向您发送电子邮件通知。
-ms.openlocfilehash: 31807199345f4cf2ed6a4226fc407cb10c856c23
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b83dec740b8b37d3c8a4132f114ee76178b2dd86
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596179"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077663"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>在 Office 365 中创建活动通知
 
@@ -33,7 +33,7 @@ ms.locfileid: "41596179"
 > [!NOTE]
 > 我们建议您开始使用安全与合规中心中的通知策略，而不是创建新的活动通知。 警报策略提供了一些附加功能，如创建在任何用户执行指定活动时触发警报的通知策略，以及在安全与合规中心的 "**查看通知**" 页上显示警报的功能。 有关详细信息，请参阅[警报策略](alert-policies.md)。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须在安全 & 合规中心中向您分配 "组织配置" 角色，以管理活动通知。 默认情况下，此角色分配给合规性管理员和组织管理角色组。 有关向角色组添加成员的详细信息，请参阅[为用户提供对安全 & 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
     
@@ -49,12 +49,12 @@ ms.locfileid: "41596179"
     
 2. 使用工作或学校帐户登录到 Office 365。
     
-3. 在 "**活动通知**" 页面上![，单击](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) "**新建**图标"。
+3. 在 "**活动通知**" 页面上![，单击](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) "**新建**图标"。
 
    将显示用于创建活动通知的飞出页面。
 
     
-    ![创建活动通知](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
+    ![创建活动通知](../media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
   
 4. 填写以下字段以创建活动通知：
     
@@ -76,7 +76,7 @@ ms.locfileid: "41596179"
     
     新通知将显示在 "**活动通知**" 页面上的列表中。 
     
-    !["活动通知" 页面上显示一个警报列表](media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
+    !["活动通知" 页面上显示一个警报列表](../media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
   
     通知的状态设置为 **"开**"。 请注意，还会列出接收通知时接收电子邮件通知的收件人。 
   
@@ -96,11 +96,11 @@ ms.locfileid: "41596179"
     
 若要重新打开活动通知，只需重复这些步骤，然后单击 "**关闭**" 切换开关，将状态更改为 **"开启**"。
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 下面的示例展示了如何向安全 & 合规中心中的 "发送到此通知的用户" 字段（并在 "**活动通知**" 页面上的 "**收件人**" 下列出）中指定的用户发送电子邮件通知。 
     
-    ![为活动通知发送的电子邮件 notifcation 的示例通知](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
+    ![为活动通知发送的电子邮件 notifcation 的示例通知](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
   
 - 下面是您可以为其创建活动通知的一些常见文档和电子邮件活动。 这些表介绍了活动、要为其创建通知的活动的名称，以及**活动下拉列表中 "活动**" 下列出的活动组的名称。 若要查看您可以为其创建活动通知的活动的完整列表，请参阅[Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities)中的 "已审核的活动" 一节。
     

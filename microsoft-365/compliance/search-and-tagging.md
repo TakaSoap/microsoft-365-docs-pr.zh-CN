@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 在高级电子数据展示中，搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。 目前，此模块在 beta 版中。
-ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601709"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081391"
 ---
 # <a name="search-and-tagging"></a>搜索和标记
 
@@ -69,7 +69,7 @@ ms.locfileid: "41601709"
 
 或者，您可以使用高级电子数据展示搜索工具中的条件卡向搜索查询添加条件（对于选定的属性）。 下面的屏幕截图显示了可以添加到查询中的条件。 "**组**" 列指示属性是应用于电子邮件、网站文档还是两者（由*常见*值表示）。 此列还标识了在运行相关性模块后可用的可搜索属性。
 
-![高级电子数据展示搜索工具中的搜索条件](media/AeDSearchConditions.png)
+![高级电子数据展示搜索工具中的搜索条件](../media/AeDSearchConditions.png)
 
 有关可搜索属性的详细信息，请参阅[关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   

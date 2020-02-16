@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何登录、设置权限以及了解 Microsoft 合规性分数的仪表板，这有助于简化和自动化风险评估。
-ms.openlocfilehash: a97fa1c0598fcab1660d71581fed2be8dafe8911
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595749"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078609"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合规性分数（预览）设置
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您的组织的 Microsoft 365 全局管理员可能是第一个访问合规性分数的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性得分时所述。
 
@@ -50,7 +50,7 @@ ms.locfileid: "41595749"
 | 用户可以： | Microsoft 365 合规性中心角色 | 合规性管理器角色 | 
 | :------------- | :-------------: | :------------: |
 | **读取但不编辑数据**| Azure AD 全局读取器  | Azure AD 全局读取器 | 
-| **读取但不编辑数据**| 安全读者 | 合规性管理器阅读器  | 
+| **读取但不编辑数据**| 安全读取者 | 合规性管理器阅读器  | 
 | **编辑数据**| 合规性管理员 | 合规性管理器参与者 | 
 | **编辑测试结果**| 合规性管理员 | 合规性管理器评估员 | 
 | **管理评估、模板和租户数据**| 合规性管理员<br>合规性数据管理员<br>安全管理员 | 合规性管理器管理员 | 
@@ -102,7 +102,7 @@ ms.locfileid: "41595749"
 
 合规性分数仪表板旨在向您提供当前合规性状况的一览视图。
 
-![合规性分数-仪表板](media/compliance-score-dashboard.png "合规性分数仪表板")
+![合规性分数-仪表板](../media/compliance-score-dashboard.png "合规性分数仪表板")
 
 ### <a name="overall-compliance-score"></a>总体合规性分数
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: '查看在 Office 365 高级电子数据展示中执行关联性培训之前，将导入的文件添加到文件的最后一个已定义负载或批处理的步骤。  '
-ms.openlocfilehash: 6778666e1ef0e5900a2afcc2949bdc9579c21fd1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601459"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081090"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>设置加载以在 Office 365 高级电子数据展示中添加导入的文件
 
@@ -42,7 +42,7 @@ ms.locfileid: "41601459"
   
 1. 在 "**相关性\>关联设置**" 选项卡中，选择 "**加载**"。
     
-    ![相关性设置加载选项卡](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![相关性设置加载选项卡](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **包含文件**：选择要包含的文件的选项。 默认情况下，将文件添加到当前负载时基于 "所有文件" 填充。
     
@@ -53,7 +53,7 @@ ms.locfileid: "41601459"
     
 4. 单击 "**添加文件**"。 将文件添加到加载中，并显示一条确认消息。 
     
-5. 单击“**确定**”。
+5. 单击“确定”。
     
 现在，可以在高级电子数据展示的相关性中处理文件以用于培训文件。
   

@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: efd5d2f8003bd79620118a6a058576e5593699b1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 517ff6ae711d61b783e837aebeeb991dfaa53daa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601209"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084331"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -6116,92 +6116,40 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_ssn 找到与该模式匹配的内容。
 - 找到 Keyword_ssn 中的一个关键字。
-- 函数 Func_us_date 找到正确日期格式的日期。
-- 函数 Func_us_address 找到正确格式的地址。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_unformatted_ssn 查找与该模式匹配的内容。
 - 找到 Keyword_ssn 中的一个关键字。
-- 函数 Func_us_date 找到正确日期格式的日期。
-- 函数 Func_us_address 找到正确格式的地址。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
 - 函数 Func_randomized_formatted_ssn 找到与该模式匹配的内容。
 - 找到 Keyword_ssn 中的一个关键字。
-- 函数 Func_us_date 找到正确日期格式的日期。
-- 函数 Func_us_address 找到正确格式的地址。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 55% 确信它检测到这种类型的敏感信息：
 - 函数 Func_randomized_unformatted_ssn 找到与该模式匹配的内容。
 - 找到 Keyword_ssn 中的一个关键字。
-- 函数 Func_us_date 找到正确日期格式的日期。
-- 函数 Func_us_address 找到正确格式的地址。
 
-如果 DLP 策略在300个字符的邻近度内检测到此类型的敏感信息，则 DLP 策略40% 确信它检测到这种类型的敏感信息：
-- 函数 Func_ssn 找到与该模式匹配的内容。
-- 函数 Func_unformatted_ssn 未找到与该模式匹配的内容。
-- 函数 Func_randomized_unformatted_ssn 找不到与该模式匹配的内容。
-- 找不到 Keyword_ssn 中的关键字。
- 
-或
-
-- 函数 Func_randomized_formatted_ssn 找到与该模式匹配的内容。
-- 函数 Func_unformatted_ssn 未找到与该模式匹配的内容。
-- 函数 Func_randomized_unformatted_ssn 找不到与该模式匹配的内容。
-- 找不到 Keyword_ssn 中的关键字。
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
   <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_ssn" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
+        <Match idRef="Keyword_ssn" />
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
       </Pattern>
       <Pattern confidenceLevel="65">
         <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_ssn" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
+        <Match idRef="Keyword_ssn" />
       </Pattern>
       <Pattern confidenceLevel="55">
         <IdMatch idRef="Func_randomized_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
-        <Any minMatches="1">
-          <Match idRef="Func_us_date" />
-          <Match idRef="Func_us_address" />
-        </Any>
       </Pattern>
-      <Pattern confidenceLevel="40">
-        <IdMatch idRef="Func_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_unformatted_ssn" />
-          <Match idRef="Func_randomized_unformatted_ssn" />
-          <Match idRef="Keyword_ssn" />
-        </Any>
-      </Pattern>
-      <Pattern confidenceLevel="40">
-        <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_unformatted_ssn" />
-          <Match idRef="Func_randomized_unformatted_ssn" />
-          <Match idRef="Keyword_ssn" />
-        </Any>
-      </Pattern>
-    </Entity>
+  </Entity>
 ```
 
 ### <a name="keywords"></a>关键字

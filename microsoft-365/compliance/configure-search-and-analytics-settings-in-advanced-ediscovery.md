@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 配置适用于案例中所有审阅集的高级电子数据展示设置。 这包括分析和 OCR 的设置。
-ms.openlocfilehash: 93e638dc29ec935f86fc2e078d8206b1f20ab14d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595709"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078313"
 ---
 # <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
 
@@ -45,7 +45,7 @@ ms.locfileid: "41595709"
 
    将显示 "事例设置" 页。 这些设置适用于所有审阅集。
 
-   ![为高级电子数据展示事例配置分析和搜索设置](media/AeDCaseSettings.png)
+   ![为高级电子数据展示事例配置分析和搜索设置](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>临近重复项和电子邮件线程
 
@@ -73,7 +73,7 @@ ms.locfileid: "41595709"
 
 如果选中了 "**自动创建用于查看已保存搜索的分析**" 复选框，则高级电子数据展示 autogenerates 审核集查询名**为 "审阅"。** 
 
-![For 审阅自动生成查询](media/AeDForReviewQuery.png)
+![For 审阅自动生成查询](../media/AeDForReviewQuery.png)
 
 此查询基本上筛选出评审集的重复项。 这使您可以查看评审集中的唯一项。 仅当在案例中运行评审集的分析时，才会创建此查询。 有关详细信息，请参阅关于查看集查询的详细信息，请参阅[在审阅集中查询数据](review-set-search.md)。
 

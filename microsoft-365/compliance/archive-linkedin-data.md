@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从 LinkedIn 公司页面导入到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的合规性。
-ms.openlocfilehash: c8e39577a6eaba3ad865b1617683c2baa9260759
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b42584efb0c99b97c14059ed7d860013f085262c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596019"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079623"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>设置连接器以存档 LinkedIn 数据
 
@@ -45,13 +45,13 @@ ms.locfileid: "41596019"
 
    将显示 "LinkedIn 登录" 页面。
 
-   ![LinkedIn 登录页](media/LinkedInSigninPage.png)
+   ![LinkedIn 登录页](../media/LinkedInSigninPage.png)
 
 5. 在 "LinkedIn 登录" 页面上，输入与要存档的 "公司" 页面相关联的 LinkedIn 帐户的电子邮件地址（或电话号码）和密码，然后单击 "**登录**"。
 
    将显示一个向导页，其中包含与您登录的帐户关联的所有 LinkedIn 公司页面的列表。 仅可为一个公司页面配置连接器。 如果您的组织具有多个 LinkedIn 公司页面，则必须为每个公司创建一个连接器。
 
-   ![将显示一个包含 "LinkedIn 公司" 页面列表的页面](media/LinkedInSelectCompanyPage.png)
+   ![将显示一个包含 "LinkedIn 公司" 页面列表的页面](../media/LinkedInSelectCompanyPage.png)
 
 6. 选择要存档其项目的公司页面，然后单击 "**下一步**"。
 
@@ -67,6 +67,6 @@ ms.locfileid: "41596019"
 
 若要查看更多详细信息，请选择 "**数据连接器**" 页上的列表中的连接器以显示弹出页面。 在 "**状态**" 下，显示的日期范围表示创建连接器时选择的年龄筛选器。 
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 LinkedIn 项将导入到 Microsoft 365 中存储邮箱的 "LinkedIn" 子文件夹中。 它们显示为电子邮件。

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 您必须启用 ClickOnce 支持，才能使用 Microsoft Edge 在安全与合规中心中导出内容搜索和电子数据展示中的搜索结果。
-ms.openlocfilehash: 896d39d81fa56b3a118b2bee450476e422ac3921
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db70b4cdbc57f519db3b6b962eb8aa43585ba335
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595729"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078549"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>在 Microsoft Edge 中使用 Office 365 电子数据展示导出工具
 
@@ -30,29 +30,29 @@ ms.locfileid: "41595729"
 
 2. 如果在下拉列表中将现有值设置为 "**默认**" 或 "**禁用**"，请将其更改为 "**启用**"。
     
-   ![](media/ClickOnceimage1.png)
+   ![](../media/ClickOnceimage1.png)
 
 3. 向下滚动到浏览器窗口的底部，然后单击 "**重新启动**" 以重新启动边缘。
 
-   ![](media/ClickOnceimage2.png)
+   ![](../media/ClickOnceimage2.png)
 
 **注意：** 组织可以使用组策略禁用 ClickOnce 支持。 若要检查是否存在 ClickOnce 支持的组织策略，请导航到**edge://policy**。 下面的屏幕截图显示在整个组织中启用 ClickOnce。 如果将此策略值设置为**false**，则需要与组织中的管理员联系。
 
-![](media/ClickOnceimage3.png)
+![](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a>安装和运行 Office 365 电子数据展示导出工具
 
 1. 单击 "在内容搜索中导出" 的飞出页面或电子数据展示事例中的 "**下载结果**"。
 
-   ![单击弹出页面上的 "下载结果" 以下载搜索结果](media/ClickOnceExport1.png)
+   ![单击弹出页面上的 "下载结果" 以下载搜索结果](../media/ClickOnceExport1.png)
 
 2. 系统将提示您确认启动该工具，请单击 "**打开**"。
 
-   ![单击 "打开" 以启动电子数据展示导出工具](media/ClickOnceimage4.png)
+   ![单击 "打开" 以启动电子数据展示导出工具](../media/ClickOnceimage4.png)
 
    如果未安装 Microsoft Office 365 电子数据展示导出工具，则系统会提示您提供安全警告， 
 
-   ![单击 "安装" 以安装电子数据展示导出工具](media/ClickOnceimage5.png)
+   ![单击 "安装" 以安装电子数据展示导出工具](../media/ClickOnceimage5.png)
 
 3. 单击“**安装**”。 安装完成后，"导出" 工具将自动启动。
 

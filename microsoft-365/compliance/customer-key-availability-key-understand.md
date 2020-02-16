@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用于恢复丢失的 Office 365 客户密钥的可用性密钥。
-ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 86f602a59f436a6ce42df583c88c0403eb17e5ae
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862082"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076941"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>了解 Office 365 客户密钥的可用性密钥
 
@@ -175,11 +175,11 @@ Exchange Online 和 Skype for business 在暂时性错误期间自动使用可�
 
 日志记录包括 "日期"、"时间"、"活动"、"组织 ID" 和 "数据加密策略 ID" 等属性。 该记录可作为 Office 365 统一的审核日志的一部分，并可从 Office 365 安全性和合规性中心审核日志搜索选项卡进行访问。
 
-![审核日志搜索可用性密钥事件](media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![审核日志搜索可用性密钥事件](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 Exchange Online 和 Skype for business 可用性密钥记录使用 Office 365 管理活动[常见架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)和添加的自定义参数： Policy Id、作用域密钥版本 Id 和请求 Id。
 
-![可用性密钥自定义参数](media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![可用性密钥自定义参数](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint Online、OneDrive for Business 和团队文件可用性密钥日志记录
 
@@ -195,11 +195,11 @@ Office 365 使用可用性密钥包装在为客户密钥服务加密建立的密
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>用于加密 Exchange Online 和 Skype for business 的密钥的加密密码
 
-![Exchange Online 客户密钥的加密密码](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Exchange Online 客户密钥的加密密码](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>用于对 SharePoint Online 和 OneDrive for Business 的密钥进行加密的加密密码
 
-![SharePoint Online 客户密钥的加密密码](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![SharePoint Online 客户密钥的加密密码](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>相关文章
 

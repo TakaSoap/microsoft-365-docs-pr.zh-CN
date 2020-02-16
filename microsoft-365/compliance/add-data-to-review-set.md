@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 添加与高级电子数据展示事例相关的搜索结果。 将项目从其原始位置复制并复制到 Microsoft 提供的 Azure 存储位置。 此外，还会重新编制项索引，高级电子数据展示将对图像文件执行光学字符识别（OCR），并上传图像文本以供审阅和分析。
-ms.openlocfilehash: 748de7f3cb3fec5a37cb205e0d480701b4cded2e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594633"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080142"
 ---
 # <a name="add-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
 
@@ -37,11 +37,11 @@ ms.locfileid: "41594633"
 
 若要将数据添加到审阅集，请单击 "**搜索**" 选项卡上的搜索，然后单击浮出控件页面上的 "**将结果添加到审阅集**"。
 
-![向评审集添加数据](media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+![向评审集添加数据](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
 
 您可以添加到现有的审阅集，也可以创建新的审阅集。  如果添加到新的审阅集，请指定名称，然后单击 "**添加**"。
 
-![选择评审集](media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+![选择评审集](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
 向评审集添加数据是一个长期运行的过程。 此过程包括从 Office 365 中的原始数据源（例如，从邮箱和网站）中收集项目，将它们复制到 Azure 存储位置（此复制过程也称为 "*摄取*"），然后对项目重新编制索引。 您可以在 "**作业**" 选项卡或 "**搜索**" 选项卡上通过监视 "添加的**数据到评审集**" 列中的状态来跟踪进度。 完成审阅集处理后，单击该事例中的 "**查看集**" 选项卡，然后单击 "检查设置" 以启动筛选、查看、标记和导出评审集中数据的过程。
 

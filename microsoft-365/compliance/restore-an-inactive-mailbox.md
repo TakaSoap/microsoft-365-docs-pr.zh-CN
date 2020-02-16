@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 如果新员工或其他用户需要访问 Office 365 中非活动邮箱的内容，则可以将非活动邮箱的内容还原（或合并）到现有邮箱。
-ms.openlocfilehash: 7a12d34c175340a51ddaf39cdfffc945a0add203
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1fdf86c17d557ef27373001cb63f710168269a19
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601629"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081592"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>还原 Office 365 中的非活动邮箱
 
@@ -33,7 +33,7 @@ ms.locfileid: "41601629"
 
 有关还原和恢复非活动邮箱之间的差异的更多详细信息，请参阅本文中的**详细信息**一节。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须使用 Exchange Online PowerShell 来还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
 
@@ -125,8 +125,8 @@ ms.locfileid: "41601629"
 
     **不使用 TargetRootFolder 参数时目标邮箱中的文件夹层次结构**
 
-    ![不使用 TargetRootFolder 参数时的屏幕截图](media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+    ![不使用 TargetRootFolder 参数时的屏幕截图](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
   
     **使用 TargetRootFolder 参数时目标邮箱中的文件夹层次结构**
 
-    ![使用 TargetRootFolder 参数时的屏幕截图](media/300da592-7323-48db-b8a4-07012259d113.png)
+    ![使用 TargetRootFolder 参数时的屏幕截图](../media/300da592-7323-48db-b8a4-07012259d113.png)

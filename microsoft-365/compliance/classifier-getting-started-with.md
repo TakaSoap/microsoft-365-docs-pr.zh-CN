@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护（DLP）或保留策略中。
-ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722023"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078802"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>可训练分类器入门（预览）
 
@@ -74,7 +74,7 @@ Microsoft 365 附带6个可供使用的分类器：
 
 这些显示在**Microsoft 365 合规中心** > **数据分类（预览版）** > **Trainable 类元**视图中，状态为`Ready to use`。
 
-![分类器-可供使用的类元](media/classifiers-ready-to-use-classifiers.png)
+![分类器-可供使用的类元](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > 请注意，冒犯性语言、骚扰、猥亵和威胁分类器仅适用于可搜索文本不详尽或完整。  此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留在决定时更新这些分类器的权利。 虽然分类程序可以帮助组织监视攻击性和其他使用的语言，但分类程序不会解决此类语言的后果，也不打算提供组织的唯一方法来监视或响应使用此类语言。 您的组织（而不是 Microsoft 或其子公司）仍负责与监控、强制执行、阻止、删除和保留预先培训的分类器所标识的任何内容相关的所有决策。
@@ -83,7 +83,7 @@ Microsoft 365 附带6个可供使用的分类器：
 
 准备好使用类元不需要接受培训，但您需要确认他们能够在合规性解决方案中使用它们之前确定所需的内容类型。 测试预先培训的类元将遵循此流程。
 
-![处理预先培训的分类器的过程流](media/classifier-pre-trained-classifier-flow.png)
+![处理预先培训的分类器的过程流](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>了解 trainable 类元
 
@@ -96,7 +96,7 @@ Microsoft 365 附带6个可供使用的分类器：
 
 创建和发布在合规性解决方案（如保留策略和通信监督）中使用的 trainable 分类程序遵循此流程。 有关创建 trainable 类元的更多详细信息，请参阅[创建 trainable 分类器](classifier-creating-a-trainable-classifier.md)。
 
-![process flow trainable 类元](media/classifier-trainable-classifier-flow.png)
+![process flow trainable 类元](../media/classifier-trainable-classifier-flow.png)
 
 ## <a name="see-also"></a>另请参阅
 

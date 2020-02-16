@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: d0bd5411e99471ff326906f65747ec7a6f841545
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 230d363c8150899fdc5fd5f46aa1cb2576382267
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596199"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078289"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中配置监督策略
 
 >[!IMPORTANT]
->本主题适用于在 Office 365 订阅中配置监督策略。 如果要为 Microsoft 365 订阅配置通信合规性，请参阅[在 microsoft 365 中配置通信合规性（预览）](communication-compliance-configure.md)。
+>本主题适用于在 Office 365 订阅中配置监督策略。 如果要为 Microsoft 365 订阅配置通信合规性，请参阅[在 microsoft 365 中配置通信合规性](communication-compliance-configure.md)。
 
 使用监督策略来捕获由内部或外部审阅者进行检查的员工通信。 有关监察策略如何帮助您监视组织中的通信的详细信息，请参阅[Office 365 中的监察策略](supervision-policies.md)。
 
@@ -68,7 +68,7 @@ ms.locfileid: "41596199"
 | **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
 |受监督用户 <br> 非监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
-| Reviewers | 启用邮件功能的安全组  | 通讯组 <br> 动态通讯组 |
+| Reviewers | 启用邮件的安全组  | 通讯组 <br> 动态通讯组 |
   
 当您为受监督的用户选择 Office 365 组时，该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
 

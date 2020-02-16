@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用 Office 365 合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: d17c79ed4d6fa662a3416e9952ac732a8d4d9d9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6104381b842b9a4d76de7278c0b7280ec2f11222
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601219"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085005"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作，以在 Office 365 中存档第三方数据
 
@@ -39,7 +39,7 @@ ms.locfileid: "41601219"
 
 下图和说明介绍了在使用合作伙伴时第三方数据导入过程的工作原理。
   
-![第三方数据导入过程的工作原理](media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
+![第三方数据导入过程的工作原理](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
 1. 客户可以通过其选择的合作伙伴来配置将从第三方数据源提取项目的连接器，然后将这些项目导入到 Office 365。
     
@@ -533,7 +533,12 @@ ms.locfileid: "41601219"
 
 以下是访问和接受注册连接器的请求的步骤：
 
-1. 转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，并使用 Office 365 全局管理员的凭据登录。<br/><br/>将显示以下对话框。 您可以展开 carets 以查看将分配给连接器的权限。<br/><br/>![将显示 "权限请求" 对话框](media/O365-ThirdPartyDataConnector-OptIn1.png)
+1. 转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，并使用 Office 365 全局管理员的凭据登录。
+
+   将显示以下对话框。 您可以展开 carets 以查看将分配给连接器的权限。
+
+   ![将显示 "权限请求" 对话框](../media/O365-ThirdPartyDataConnector-OptIn1.png)
+
 2. 单击“Accept”****。
 
 接受请求后，将显示[Azure 门户](https://portal.azure.com)。 若要查看您的组织的应用程序列表，请单击 " **Azure Active Directory** > **企业应用程序**"。 **企业应用程序**边栏上列出了 Office 365 第三方数据连接器。
@@ -547,7 +552,7 @@ ms.locfileid: "41601219"
 
 若要撤销第三方数据连接器的同意，可以使用 Azure 门户中的 "**企业应用程序**" 边栏或使用 Office 365 PowerShell 中的[new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal)删除应用程序（通过删除相应的服务主体）从 azure Active Directory 中删除该应用程序。 您还可以在 Azure Active Directory PowerShell 中使用[AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某项缺少强制属性，则不会将其导入 Office 365。 导入过程将返回一条错误消息，说明无法导入项目的原因和缺少的属性。
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: '了解如何使用 Office 365 高级电子数据展示中的批量计算之后的 "测试" 选项卡来测试、比较和验证总体处理质量。  '
-ms.openlocfilehash: 0931e0ea6aabfb9fbeca04973f17395d4f245f41
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e07d02a0eff1e07cacbce5debd27d4057fe40db2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597369"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080923"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中测试相关性分析
 
@@ -46,7 +46,7 @@ ms.locfileid: "41597369"
     
 2. 在 "**测试**" 选项卡中，单击 "**新建测试**"。 将显示 "**创建测试**" 对话框，如下面的示例所示。 
     
-    ![相关性测试其余结果](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![相关性测试其余结果](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. 在 "**测试名称**" 和 "**说明**" 中，键入名称和说明。
     
@@ -66,7 +66,7 @@ ms.locfileid: "41597369"
     
 11. 在 "测试" 选项卡中，可以单击 "**查看结果**" 以查看测试结果。 下图中显示了一个示例。 
     
-    ![测试其余结果](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![测试其余结果](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 在上面的图中，表的 "**示例参数**" 部分包含有关专家标记的示例中的文件数的详细信息，以及该示例中找到的相关文件数。 
   

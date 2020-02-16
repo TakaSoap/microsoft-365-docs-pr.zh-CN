@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: '了解 Office 365 高级电子数据展示中的相关性模块，包括用于培训和文件审阅的工作流和指南以及步骤。  '
-ms.openlocfilehash: 5151c94d2b0bd1824abb499f6cb27bbfbc7618b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601299"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080709"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>使用 Office 365 高级电子数据展示中的相关性模块
 
@@ -30,7 +30,7 @@ ms.locfileid: "41601299"
   
 在高级电子数据展示中，相关性模块包含与案例相关的相关文件的相关性培训和审核。 相关性工作流如下所示，如下所示：
   
-![相关性工作流](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![相关性工作流](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **评估和跟踪周期**：
     

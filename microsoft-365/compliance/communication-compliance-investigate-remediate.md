@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661948"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078714"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>调查和修正通信合规性警报
 
@@ -66,7 +66,7 @@ ms.locfileid: "41661948"
 
 8. 如果要将选定的筛选器另存为筛选器查询，请在配置了至少一个筛选器值后，选择 **"保存查询控件"** 。 输入筛选器查询的名称，然后选择 "**保存**"。 此筛选器仅可用于此策略，并在 "**筛选器**详细信息" 页的 "**已保存的筛选器查询**" 部分中列出。
 
-    ![通信合规性筛选器详细信息控件](media/communication-compliance-filter-detail-controls.png)
+    ![通信合规性筛选器详细信息控件](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>使用接近和完全重复的分析
 
@@ -90,7 +90,7 @@ ms.locfileid: "41661948"
 
 8. 完成对邮件的修正操作后，选择 "**关闭**"。
 
-    ![通信合规性精确复制控件](media/communication-compliance-duplicates-controls.png)
+    ![通信合规性精确复制控件](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>修正警报
 
@@ -98,7 +98,7 @@ ms.locfileid: "41661948"
 
 1. **检查邮件基础知识**：有时，可以直接修正邮件的来源或主题。 可能是邮件是虚假的或与策略不正确匹配，应将其解析为误报。 选择**误报**控件以立即解析警报，并从挂起的警报队列中删除。 在源或发件人信息中，您可能已经知道在这些情况下应如何路由或处理邮件。 请考虑使用**标记作为**或**升级**控件将标记分配给适用的邮件，或将邮件发送给指定的审阅者。
 
-    ![通信合规性修正控制](media/communication-compliance-remediation-controls.png)
+    ![通信合规性修正控制](../media/communication-compliance-remediation-controls.png)
 
 2. **检查邮件详细信息**：查看邮件基础知识后，可以打开邮件检查详细信息并确定进一步的修正操作。 选择一封邮件以查看完整的邮件头和正文信息。 有几种不同的视图可用于帮助您确定正确的操作过程：
 
@@ -107,7 +107,7 @@ ms.locfileid: "41661948"
     - **批注视图**：通过此视图，审阅者可以直接在保存到邮件视图中的邮件上添加批注。
     - **用户历史记录**：用户历史记录视图显示发送邮件的用户的任何通信合规性策略生成的所有其他警报。
 
-    ![通信合规性邮件视图控件](media/communication-compliance-message-views.png)
+    ![通信合规性邮件视图控件](../media/communication-compliance-message-views.png)
 
 3. **确定修正操作**：现在您已经查看了警报消息的详细信息，您可以选择多个修正操作：
 

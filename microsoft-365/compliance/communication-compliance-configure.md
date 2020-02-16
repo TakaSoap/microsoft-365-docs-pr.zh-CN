@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784689"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078771"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>在 Microsoft 365 中配置通信合规性
 
@@ -53,13 +53,13 @@ ms.locfileid: "41784689"
 
 2. 在 Microsoft Office 365 安全与合规中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
-3. 选择“**创建**”。
+3. 选择“创建”****。
 
 4. 在 "**名称**" 字段中，为新角色组指定一个友好名称。 选择“下一步”****。
 
 5. 选择 "**选择角色**"，然后选择 "**添加**"。 选中 "**监察审核管理员**、**案例管理**和**审阅**" 复选框，然后选择 "**添加**并**完成**"。 选择“下一步”****。
 
-    ![满足通信合规性角色组](media/communication-compliance-role-groups.png)
+    ![满足通信合规性角色组](../media/communication-compliance-role-groups.png)
 
 6. 选择 "**选择成员**"，然后选择 "**添加**"。 选中您想要创建策略的所有用户和组的复选框，并使用策略匹配来管理邮件，然后选择 "**添加**并**完成**"。 选择“下一步”****。
 
@@ -83,7 +83,7 @@ ms.locfileid: "41784689"
 | **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
 |受监督用户 <br> 非监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
-| Reviewers | 启用邮件功能的安全组  | 通讯组 <br> 动态通讯组 |
+| Reviewers | 启用邮件的安全组  | 通讯组 <br> 动态通讯组 |
   
 当您为受监督的用户选择 Office 365 组时，该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
 

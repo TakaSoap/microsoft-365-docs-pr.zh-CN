@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 为了体现合规性以及遵守法律或其他法规，组织通常必须在一定期限内保留文档。不过，如果文档的保留时间长于要求时间，则会给组织带来法律风险。
-ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596229"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077870"
 ---
 # <a name="create-a-document-deletion-policy"></a>创建文档删除策略
 
@@ -32,19 +32,19 @@ ms.locfileid: "41596229"
   
 创建文档删除策略后，您便可以将它分配到网站集模板，这样便可以将它应用于使用此模板创建的所有网站集。您还可以将策略分配到特定的网站集，这样会覆盖可能已分配到该网站集模板的任何策略。
   
-![文档删除策略中心首页](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![文档删除策略中心首页](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="policy-templates"></a>策略模板
 
 您可以从头开始创建文档删除策略，也可以使用示例策略之一。合规性策略中心中包括了您可以原样使用的示例策略，您还可以将其作为起点，然后进行重命名或修改。
   
-![示例文档删除策略](media/IP-Sample-deletion-policies.png)
+![示例文档删除策略](../media/IP-Sample-deletion-policies.png)
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>示例
 
 可以向网站集或网站集模板分配一个或多个策略，每个策略都可以包含一个或多个规则。 但是，每个站点只能有一个处于活动状态的策略，并且网站中的库在任何时候都只能有一个活动的删除规则。
   
-![显示策略之间关系的图表](media/IP-Two-policies-four-rules.png)
+![显示策略之间关系的图表](../media/IP-Two-policies-four-rules.png)
   
 此外，您还可以选择一个策略作为强制策略或默认策略，并选择一个删除规则作为默认规则： 
   
@@ -68,7 +68,7 @@ ms.locfileid: "41596229"
     
 在本示例中，默认删除规则会应用于使用此模板创建的所有网站集中的全部库，且站点所有者无法选择取消应用该策略。这是广泛、严格地强制应用文档删除策略的最简单方法。
   
-![显示单个强制策略的图表](media/IP-Example-1-doc-deletion-policies.png)
+![显示单个强制策略的图表](../media/IP-Example-1-doc-deletion-policies.png)
   
 ### <a name="example-2-apply-a-single-policy-with-several-rules-to-a-site-collection-template"></a>示例2：将具有多个规则的单个策略应用于网站集模板
 
@@ -84,7 +84,7 @@ ms.locfileid: "41596229"
     
 站点所有者可以从备用删除规则中选择一个、选择取消应用此策略，也可以不执行任何操作而采用默认策略和规则。
   
-![显示具有多个规则的单个策略的图表](media/IP-Example-2-doc-deletion-policies.png)
+![显示具有多个规则的单个策略的图表](../media/IP-Example-2-doc-deletion-policies.png)
   
 ### <a name="example-3-apply-several-policies-with-one-or-more-rules-to-a-site-collection"></a>示例 3：将多个包含一个或多个规则的策略应用于网站集
 
@@ -104,7 +104,7 @@ ms.locfileid: "41596229"
     
 此外，还可以为特定的网站集定制这些策略和规则，在这种情况下，站点所有者可以通过选择最适用于其站点的策略和规则来中断继承。
   
-![显示多个策略和规则的图表](media/IP-Example-3-doc-deletion-policies.png)
+![显示多个策略和规则的图表](../media/IP-Example-3-doc-deletion-policies.png)
   
 ## <a name="create-a-document-deletion-policy"></a>创建文档删除策略
 
@@ -114,7 +114,7 @@ ms.locfileid: "41596229"
     
 2. 选择 "**删除策略**"。
     
-    ![删除策略选项](media/IP-Deletion-Policies-option.png)
+    ![删除策略选项](../media/IP-Deletion-Policies-option.png)
   
 3. 单击“新建项目”****。
     
@@ -132,7 +132,7 @@ ms.locfileid: "41596229"
     
   - 选择是否将此规则设置为默认规则。系统自动将您创建的第一个规则设置为默认规则。默认规则会自动应用于使用此策略的站点中的所有库。
     
-![新建删除规则页](media/IP-New-deletion-rule.png)
+![新建删除规则页](../media/IP-New-deletion-rule.png)
   
 7. 单击“**保存**”。
     
@@ -143,7 +143,7 @@ ms.locfileid: "41596229"
     > [!NOTE]
     > 如果您删除某个规则，并且该策略不包含默认规则，则该策略的规则将不起作用，也就是说，将不会删除任何文档。 
   
-![确认从策略消息中删除规则](media/IP-Remove-rule-from-policy-message.png)
+![确认从策略消息中删除规则](../media/IP-Remove-rule-from-policy-message.png)
   
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection-template"></a>将文档删除策略分配到网站集模板
 
@@ -155,7 +155,7 @@ ms.locfileid: "41596229"
     
 2. 选择“模板的策略分配”****。
     
-    ![模板的策略分配选项](media/IP-Policy-Assignments-for-Templates-option.png)
+    ![模板的策略分配选项](../media/IP-Policy-Assignments-for-Templates-option.png)
   
 3. 单击“新建项目”****。
     
@@ -168,7 +168,7 @@ ms.locfileid: "41596229"
     > [!NOTE]
     > 如果您将策略分配到网站集模板，则此策略可应用于使用该模板创建的现有网站集和今后创建的网站集。 
   
-![显示 OneDrive 选项的“选择模板”页面](media/IP-Choose-a-template.png)
+![显示 OneDrive 选项的“选择模板”页面](../media/IP-Choose-a-template.png)
   
 5. 单击“**保存**”。
     
@@ -177,7 +177,7 @@ ms.locfileid: "41596229"
   
 6. 单击“管理已分配的策略”****，选择要分配的策略，然后选择是否将其中一个策略设置为默认策略。 如果您设置默认策略，那么在所分配到的全部站点上，此策略会自动处于活动状态，无需站点所有者执行任何操作。
     
-    ![“添加和管理策略”页面](media/IP-Add-and-manage-policies-page.png)
+    ![“添加和管理策略”页面](../media/IP-Add-and-manage-policies-page.png)
   
 7. 单击“**保存**”。
     
@@ -197,7 +197,7 @@ ms.locfileid: "41596229"
     
 2. 选择“网站集的策略分配”****。
     
-    ![网站集的策略分配选项](media/IP-Policy-Assignments-for-Site-Collections-option.png)
+    ![网站集的策略分配选项](../media/IP-Policy-Assignments-for-Site-Collections-option.png)
   
 3. 单击“新建项目”****。
     
@@ -206,11 +206,11 @@ ms.locfileid: "41596229"
     > [!NOTE]
     > 每个网站集只能分配一组策略。 如果您看到一个错误，指出此网站集已分配了策略，请选择 "**取消** \> **分配到网站集**"，然后选择一个网站集以查看和管理已分配的策略集。 
   
-![“选择网站集”页面](media/IP-Choose-a-site-collection-page.png)
+![“选择网站集”页面](../media/IP-Choose-a-site-collection-page.png)
   
 5. 单击“管理已分配的策略”****，选择要分配的策略，然后选择是否将其中一个策略设置为默认策略。 如果您设置默认策略，那么在所分配到的全部站点上，此策略会自动处于活动状态，无需站点所有者执行任何操作。
     
-    ![“添加和管理策略”页面](media/IP-Add-and-manage-policies-page.png)
+    ![“添加和管理策略”页面](../media/IP-Add-and-manage-policies-page.png)
   
 6. 单击“**保存**”。
     
@@ -230,7 +230,7 @@ ms.locfileid: "41596229"
     
 3. 选择工作分配项目，然后单击 "**删除项目**"。
     
-    ![策略分配的“删除项目”命令](media/IP-Delete-policy-assignment.png)
+    ![策略分配的“删除项目”命令](../media/IP-Delete-policy-assignment.png)
   
 ## <a name="delete-a-policy"></a>删除策略
 
@@ -240,17 +240,17 @@ ms.locfileid: "41596229"
     
 2. 选择 "* * 删除策略" * *。
     
-    ![删除策略选项](media/IP-Deletion-Policies-option.png)
+    ![删除策略选项](../media/IP-Deletion-Policies-option.png)
   
 3. 选择策略。
     
 4. 在 "功能\>区**项目**" 选项卡\>上**删除策略**。
     
-    ![功能区上的“删除策略”按钮](media/IP-Remove-Policy-button-on-Ribbon.png)
+    ![功能区上的“删除策略”按钮](../media/IP-Remove-Policy-button-on-Ribbon.png)
   
 5. 如果正在使用该策略，则系统会询问您是否要从使用该策略的所有网站集中删除该策略。 如果确定，请选择 **"确定"**。
     
-    ![删除策略确认消息](media/IP-Delete-policy-confirmation.png)
+    ![删除策略确认消息](../media/IP-Delete-policy-confirmation.png)
   
 ## <a name="see-also"></a>另请参阅
 

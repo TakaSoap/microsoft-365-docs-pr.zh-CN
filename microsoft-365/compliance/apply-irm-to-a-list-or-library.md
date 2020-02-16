@@ -20,18 +20,18 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 您可以使用信息权限管理（IRM）来帮助控制和保护从列表或库中下载的文件。
-ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596079"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079891"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>向列表或库应用信息权限管理（IRM）
 
 您可以使用信息权限管理（IRM）来帮助控制和保护从列表或库中下载的文件。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - Azure Rights Management service （Azure RMS）（来自 Azure 信息保护）和本地等效项 Active Directory 权限管理服务（AD RMS），支持网站的信息权限管理。 不需要单独安装或其他安装。
     
@@ -47,13 +47,13 @@ ms.locfileid: "41596079"
 ## <a name="apply-irm-to-a-list-or-library"></a>将 IRM 应用于列表或库
 <a name="__toc256598179"> </a>
 
-![信息权限管理设置](media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![信息权限管理设置](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. 转到要为其配置 IRM 的列表或库。
     
 2. 在功能区上，单击 "**库**" 选项卡，然后单击 "**库设置**"。 （如果使用的是列表，请单击 "**列表**" 选项卡，然后单击 "**列表设置**"）。
     
-    ![功能区上的 SharePoint 库设置按钮](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![功能区上的 SharePoint 库设置按钮](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. 在 "**权限和管理**" 下，单击 "**信息权限管理**"。 如果未显示信息权限管理链接，则可能尚未为您的网站启用 IRM。 请与您的服务器管理员联系，以查看是否可以为您的网站启用 IRM。 不会对图片库显示 "信息权限管理" 链接。
     

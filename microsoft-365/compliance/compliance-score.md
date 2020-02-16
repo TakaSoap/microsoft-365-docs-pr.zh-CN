@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: c1f912deacd9e7a9b30cbc4665a259177aeebf65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595739"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078511"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合规性分数（预览）
 
@@ -39,7 +39,7 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 主合规性分数页面是自定义仪表板。 它显示了你当前的成绩，可帮助你查看需要注意的事项，并指导你提高成绩的操作。 您的合规性分数仪表板将如下所示：
 
-![合规性分数-仪表板](media/compliance-score-dashboard.png "合规性分数仪表板")
+![合规性分数-仪表板](../media/compliance-score-dashboard.png "合规性分数仪表板")
 
 ### <a name="simplified-compliance-management"></a>简化了合规性管理
 
@@ -75,7 +75,7 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 合规性分数使用多个组件来帮助您管理合规性活动。 在使用合规性分数分配、测试和监视合规性活动时，有必要对这些关键组件有一个基本的了解。 此图显示了它们之间的关系：
 
-![合规性管理器版本3中的关系](media/compliance-manager-relationships.png "合规性分数组件")
+![合规性管理器版本3中的关系](../media/compliance-manager-relationships.png "合规性分数组件")
 
 ### <a name="controls"></a>控件
 

@@ -16,12 +16,12 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: 本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。
-ms.openlocfilehash: 9af8de571285843a994c943ef33baa2f5966b328
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9d1dee8ca0992f1e2f9cb344baba4f245d3ca37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596249"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078491"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>将 IRM 配置为使用本地 AD RMS 服务器
   
@@ -167,4 +167,4 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
   
 - 使用**get-irmconfiguration** CMDLET 测试 IRM 功能。 有关详细信息，请参阅 [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx) 中的"示例 1"。
 
-- 在 Outlook 网页网站中撰写新邮件并通过从扩展菜单（ !["更多选项" 图标](media/ITPro-EAC-MoreOptionsIcon.gif)）中选择 "**设置权限**" 选项来对其进行 IRM 保护。
+- 在 Outlook 网页网站中撰写新邮件并通过从扩展菜单（ !["更多选项" 图标](../media/ITPro-EAC-MoreOptionsIcon.gif)）中选择 "**设置权限**" 选项来对其进行 IRM 保护。

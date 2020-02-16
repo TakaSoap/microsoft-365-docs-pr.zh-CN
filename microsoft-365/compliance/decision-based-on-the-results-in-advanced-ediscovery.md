@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解 Office 365 高级电子数据展示中的 "确定" 选项卡如何提供可帮助您确定检查事例文件集的正确大小的数据。 '
-ms.openlocfilehash: e60aff12e20a4f8accfbcda958c2d087fd732e88
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b0dd68c294b4555bcf7c9b2cb1c6db455af32e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595379"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076240"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>基于 Office 365 高级电子数据展示中的结果的决策
 
@@ -31,7 +31,7 @@ ms.locfileid: "41595379"
   
 ## <a name="using-the-decide-tab"></a>使用 "决定" 选项卡
 
-![相关性决定](media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![相关性决定](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 此选项卡包含以下内容：
   

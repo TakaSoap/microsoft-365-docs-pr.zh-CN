@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 提供了许多现成的可供使用的机器学习分类器，可用于在整个组织中标识和标记内容。 本主题介绍如何准备好使用类元的准备工作。
-ms.openlocfilehash: c6659bc32131948c57ad0bf7c8e3a30fbce125d9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f3df8e7851bf453add162df4088e11dc7745cee
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595889"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078789"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>使用就绪分类器（预览）
 
@@ -61,7 +61,7 @@ Microsoft 已通过大量的示例数据集进行了培训和测试了大量分�
 
 9. 选择`Apply label to content that matches a trainable classifier`。
 
-![选择类元作为条件](media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+![选择类元作为条件](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
 
 10. 从列表中选择分类程序，在此示例中`Source Code`
 

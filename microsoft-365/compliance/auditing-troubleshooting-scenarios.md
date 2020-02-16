@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以使用 Office 365 审核日志搜索工具来帮助您解决常见问题，例如调查已损坏的帐户、找出设置邮箱的电子邮件转发的用户或确定外部用户成功登录组织的原因。
-ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595969"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079133"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>搜索 Office 365 审核日志，以调查常见的支持问题
 
@@ -49,7 +49,7 @@ ms.locfileid: "41595969"
     
     此时将显示“**审核日志搜索**”页面。 
     
-    ![配置条件，然后选择 "搜索" 以运行搜索](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![配置条件，然后选择 "搜索" 以运行搜索](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. 您可以配置以下搜索条件。 本文中的每个故障排除方案都建议了有关配置这些字段的具体指导。
     
@@ -106,11 +106,11 @@ ms.locfileid: "41595969"
 
 运行搜索后，选择 "搜索结果" 页上的 "**筛选结果**"。 在 "**活动**" 列标题下的框中，键入 "**设置"-"邮箱**"，以便只显示与 "**设置邮箱**" cmdlet 相关的审核记录。
 
-![筛选审核日志搜索的结果](media/emailforwarding1.png)
+![筛选审核日志搜索的结果](../media/emailforwarding1.png)
 
 在这种情况下，您必须查看每个审核记录的详细信息，以确定该活动是否与电子邮件转发相关。 选择 "审核记录" 以显示 "**详细**信息" 弹出页面，然后选择 "**详细信息**"。 下面的屏幕截图和说明突出显示了指示邮箱上设置了电子邮件转发的信息。
 
-![审核记录中的详细信息](media/emailforwarding2.png)
+![审核记录中的详细信息](../media/emailforwarding2.png)
 
 a. 在 " **ObjectId** " 字段中，将显示设置了电子邮件转发的邮箱的别名。 此邮箱也会显示在搜索结果页中的**项目**列上。
 
@@ -152,11 +152,11 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 **软删除项的 AffectedItems 字段的示例**
 
-![软删除项的审核记录](media/softdeleteditem.png)
+![软删除项的审核记录](../media/softdeleteditem.png)
 
 **硬删除项的 AffectedItems 字段的示例**
 
-![硬删除的电子邮件项目的审核记录](media/harddeleteditem.png)
+![硬删除的电子邮件项目的审核记录](../media/harddeleteditem.png)
 
 ### <a name="recover-deleted-email-items"></a>恢复已删除的电子邮件项目
 
@@ -186,7 +186,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 运行搜索后，此活动的所有审核记录都会显示在搜索结果中。 选择要显示 "**详细**信息" 弹出页面的审核记录，然后选择 "**详细信息**"。 有关收件箱规则设置的信息将显示在 "**参数**" 字段中。 下面的屏幕截图和说明突出显示了有关收件箱规则的信息。
 
-![新收件箱规则的审核记录](media/NewInboxRuleRecord.png)
+![新收件箱规则的审核记录](../media/NewInboxRuleRecord.png)
 
 a. 在 " **ObjectId** " 字段中，将显示收件箱规则的完整名称。 此名称包括用户邮箱的别名（例如，SaraD）和收件箱规则的名称（例如，"移动来自管理员的邮件"）。
 
@@ -207,7 +207,7 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
 下面是一个**登录**事件的审核记录中的相关属性的示例和说明，该事件是通过身份验证的结果。 选择 "审核记录" 以显示 "**详细**信息" 弹出页面，然后选择 "**详细信息**"。
 
-![成功传递身份验证的审核记录示例](media/PassThroughAuth1.png)
+![成功传递身份验证的审核记录示例](../media/PassThroughAuth1.png)
 
    a. 此字段指示在组织的 Azure AD 中找不到试图访问组织中的资源的用户。
 
@@ -232,7 +232,7 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
 - 在审核日志中搜索由外部用户在 "**已登录**的审核记录" 中标识的活动执行的活动。 在 "**用户**" 框中键入外部用户的 UPN，并使用与您的方案相关的日期范围。 例如，您可以使用以下搜索条件创建搜索：
 
-   ![搜索外部用户执行的所有活动](media/PassThroughAuth2.png)
+   ![搜索外部用户执行的所有活动](../media/PassThroughAuth2.png)
 
     除了**用户登录**的活动之外，还可以返回其他审核记录，如表明组织中的用户与外部用户共享的资源，以及外部用户是否访问、修改或下载了与它们共享的文档。
 

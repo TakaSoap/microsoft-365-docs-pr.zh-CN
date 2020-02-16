@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 665ffe5fea6fa6996b405198524ef7dfb51e162f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601739"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081362"
 ---
 # <a name="search-statistics"></a>搜索统计信息
 
 在调查数据事件时，验证搜索结果的有效方法是查看有关搜索结果的统计信息，以确保它们符合您的预期。 当搜索运行完毕时，将在 "搜索详细信息" 弹出页面上的 "**状态**" 下显示以下高级统计信息：
 
-![在 "搜索详细信息" 弹出页面上搜索 statisics](media/SearchDetailsFlyout.png)
+![在 "搜索详细信息" 弹出页面上搜索 statisics](../media/SearchDetailsFlyout.png)
 
 - 与搜索条件匹配的项目的估计数量和大小。
 
@@ -37,7 +37,7 @@ ms.locfileid: "41601739"
 
 若要查看更多详细统计信息，请单击 "搜索详细信息" 弹出页面上的 "**统计** 在 "**搜索统计信息**" 页上，您可以查看搜索摘要、包含与搜索结果匹配的项目的顶部位置以及有关搜索查询的详细统计信息。
 
-![搜索统计信息下拉列表](media/SearchStatisticsDropDownList.png)
+![搜索统计信息下拉列表](../media/SearchStatisticsDropDownList.png)
 
 ## <a name="summary"></a>摘要
 

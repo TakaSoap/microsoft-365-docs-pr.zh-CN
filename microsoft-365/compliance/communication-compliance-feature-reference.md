@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 02534cf9dcd342f0872e755aec622f8028b235f8
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 5861348bb7c447c878f7f203acfd39fdf4c0a5f8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784669"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078759"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -147,7 +147,7 @@ ms.locfileid: "41784669"
 
 下表对每个条件进行了详细说明。
   
-|**Condition**|**如何使用此条件**|
+|**条件**|**如何使用此条件**|
 |:-----|:-----|
 | **内容与这些分类器中的任何类元匹配** | 在邮件中包含或排除任何分类器时，应用于该策略。 某些分类器在租户中预定义，必须单独配置自定义分类器，然后才可用于此条件。 只能将一个分类器定义为策略中的条件。 有关配置分类器的详细信息，请参阅[分类](classifier-getting-started-with.md)器。 |
 | **内容包含这些敏感信息类型中的任何一种** | 在邮件中包含或排除任何敏感信息类型时，应用于该策略。 有些分类器是在租户中预定义的，可以单独配置自定义分类程序，也可以将其作为条件分配过程的一部分进行配置。 您选择的每种敏感信息类型都是单独应用的，只有其中一种敏感信息类型必须适用于该策略应用于邮件。 有关自定义敏感信息类型的详细信息，请参阅[自定义敏感信息类型](custom-sensitive-info-types.md)。 |
@@ -300,4 +300,4 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 for a microsoft 365 组织（预览）](communication-compliance-configure.md)。
+若要为 Microsoft 365 组织配置通信合规性，请参阅[配置 microsoft 365 组织的通信合规性](communication-compliance-configure.md)。

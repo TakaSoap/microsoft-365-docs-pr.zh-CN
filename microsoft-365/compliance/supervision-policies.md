@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: a57fd1f1e079424f1494acc4b8944534c30359b2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: dafc745d985c93e4665db469442b0b6dc2eda070
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661868"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081069"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
 
@@ -42,7 +42,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 若要了解有关即将推出的监察功能改进和可用性的详细信息，请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
-想要在 Microsoft 365 中尝试新的通信合规性体验吗？ 查看[Microsoft 365 （预览）中的通信合规性](communication-compliance.md)中提供的新增和改进功能。
+想要在 Microsoft 365 中尝试新的通信合规性体验吗？ 查看[Microsoft 365 中的通信合规性](communication-compliance.md)提供的新增和改进功能。
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>从 Office 365 中的监察转换
 

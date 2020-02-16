@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: '了解在使用 Office 365 高级电子数据展示中的分析和处理模块时，如何定义要忽略特定文本的规则。  '
-ms.openlocfilehash: 7bda497f961ed762b1b077ad0631a0a6a94cdcc8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 440393061fef9b5a3c946322307fcafd034be81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601499"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081121"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>设置用于在 Office 365 高级电子数据展示中进行分析的 "忽略文本" 选项
 
@@ -107,7 +107,7 @@ ms.locfileid: "41601499"
     
 2. 在 "**添加忽略文本**" 对话框的 "**名称**" 字段中，为 "忽略文本" 规则键入一个名称。 
     
-    ![添加忽略的文本](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
+    ![添加忽略的文本](../media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
 3. 在 "**文本**" 框中，键入要忽略的文本。 文本字段允许不受限制的字符数。 
     
@@ -122,7 +122,7 @@ ms.locfileid: "41601499"
     
 7. 单击 **"确定"** 以保存 "忽略" 文本规则。 将显示 "定义的忽略文本" 规则。 
     
-    ![设置被忽略的文本名称](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
+    ![设置被忽略的文本名称](../media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
 ## <a name="see-also"></a>另请参阅
 

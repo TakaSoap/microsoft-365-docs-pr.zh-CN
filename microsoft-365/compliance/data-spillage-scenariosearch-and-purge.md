@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 Office 365 电子数据展示和搜索工具来管理和响应组织中的数据外泄事件。
-ms.openlocfilehash: 3efeb183ca0629ea642eb21f14e31401d8618eea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c143095ecd26d2a9c8f2271b9d28f75b1c71502c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595399"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076297"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： Data 外泄方案-搜索和清除
 
@@ -37,7 +37,7 @@ ms.locfileid: "41595399"
 
 下面介绍了如何管理数据外泄事件：
 
-![用于管理数据外泄事件的8步工作流](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![用于管理数据外泄事件的8步工作流](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [Optional第1步：管理可访问事例和设置合规性边界的人士](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [步骤2：创建电子数据展示事例](#step-2-create-an-ediscovery-case)<br/>
@@ -56,7 +56,7 @@ ms.locfileid: "41595399"
     
 - 若要创建案例，您必须是电子数据展示管理器角色组的成员，或者是分配有案例管理角色的自定义角色组的成员。 如果你不是成员，请让 Office 365 管理员[将你添加到电子数据展示管理器角色组](assign-ediscovery-permissions.md)。
     
-- 若要创建并运行内容搜索，您必须是电子数据展示管理员角色组的成员，或者分配有“合规性搜索”管理角色。 若要删除邮件，您必须是组织管理角色组的成员或分配有“搜索并清除”管理角色。 有关向角色组添加用户的信息，请参阅[在安全 & 合规性中心中分配电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
+- 若要创建并运行内容搜索，您必须是电子数据展示管理员角色组的成员，或者分配有“合规性搜索”管理角色。 若要删除邮件，您必须是组织管理角色组的成员或分配有“搜索并清除”管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
     
 - 若要在步骤8中搜索 Office 365 审核日志电子数据展示活动，必须为您的组织启用审核。 您可以搜索在过去的90天内执行的活动。 若要了解有关如何启用和使用审核的详细信息，请参阅步骤8中的 "[审核数据外泄调查过程](#auditing-the-data-spillage-investigation-process)" 一节。 
     
@@ -100,7 +100,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
  
       将显示 "导出报告" 页。
 
-    ![选择搜索，然后单击弹出页面上的 "更多 > 导出报告"。](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![选择搜索，然后单击弹出页面上的 "更多 > 导出报告"。](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. 选择**所有项目，包括不可识别格式的项目、加密的项目或未针对其他原因编制索引的项目**，然后单击 "**生成报告**"。
 
@@ -108,7 +108,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
 
 5. 单击 "导出" 作业，然后单击弹出页面上的 "**下载**报告"。
  
-    ![在 "导出" 页上，单击 "导出"，然后单击 "下载报告"](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![在 "导出" 页上，单击 "导出"，然后单击 "下载报告"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 "**导出摘要**" 报告包含找到的位置数以及搜索结果的大小。 您可以使用它来与删除后生成的报告进行比较，并作为删除证明提供。 **结果**报告包含搜索结果的更详细摘要，包括主题、发件人、收件人、电子邮件的阅读时间、日期以及每封邮件的大小。 如果此报告中的任何详细信息包含实际溢出的数据，请务必在调查完成后永久删除结果 .csv 文件。
 
@@ -142,7 +142,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
     
 4. 在 "**类型**" 下拉列表中，单击 "**顶部位置**"。
     
-    ![获取搜索统计信息的 "顶部位置" 页上包含搜索结果的邮箱的列表](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![获取搜索统计信息的 "顶部位置" 页上包含搜索结果的邮箱的列表](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     将显示包含搜索结果的邮箱的列表。 同时显示与搜索查询匹配的每个邮箱中的项目数。
     
@@ -170,7 +170,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>步骤7：永久删除溢出的数据
 
-使用您在步骤6中收集和准备的邮箱位置以及在步骤3中创建并完善的搜索查询中的步骤3，以查找包含溢出数据的电子邮件，您现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是 "组织管理" 角色组的成员，或者分配有 "搜索和清除" 管理角色。 有关向角色组添加用户的信息，请参阅[在安全 & 合规性中心中分配电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
+使用您在步骤6中收集和准备的邮箱位置以及在步骤3中创建并完善的搜索查询中的步骤3，以查找包含溢出数据的电子邮件，您现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是 "组织管理" 角色组的成员，或者分配有 "搜索和清除" 管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
 
 若要删除溢出的邮件，请参阅 "[搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)" 中的步骤 2 & 3
   
@@ -190,7 +190,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
     
 2. 在弹出页面上，单击 "**删除**"。
 
-    ![选择搜索，然后单击弹出页面上的 "删除"。](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![选择搜索，然后单击弹出页面上的 "删除"。](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据外泄调查过程
 

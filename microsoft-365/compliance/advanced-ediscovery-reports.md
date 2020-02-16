@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 736117f62877bd0b33ae1007f00d5a32680963fb
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662186"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079943"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>高级电子数据展示报告（预览）
 
@@ -51,11 +51,11 @@ ms.locfileid: "41662186"
   
    在**高级电子数据展示**主页上，将在页面顶部显示事例、保管人、数据源和通信报告选项卡。 
   
-   ![主页上的高级电子数据展示报告](media/report-home.png)
+   ![主页上的高级电子数据展示报告](../media/report-home.png)
 
 5. 若要查看报告，请单击 "报告" 选项卡，然后，如果需要，可以执行下列操作之一：
 
-   ![您可以筛选或下载报告数据](media/AeDReportsFilterDownload.png)
+   ![您可以筛选或下载报告数据](../media/AeDReportsFilterDownload.png)
 
    a. 单击 "**筛选**" 以缩小报告数据。 您可以对每个报告的不同属性进行筛选。
   

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661938"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078683"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
@@ -61,7 +61,7 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 - 灵活的补救工作流
 - 可操作的见解
 
-![通信合规性主页](media/communication-compliance-home.png)
+![通信合规性主页](../media/communication-compliance-home.png)
 
 ### <a name="intelligent-customizable-templates"></a>智能可自定义模板
 
@@ -108,7 +108,7 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 通过 Microsoft 365 中的通信合规性确定和解决合规性问题，请使用以下工作流：
 
-![通信合规性工作流](media/communication-compliance-workflow.png)
+![通信合规性工作流](../media/communication-compliance-workflow.png)
 
 ### <a name="configure"></a>配置
 
@@ -153,4 +153,4 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 For microsoft 365 （预览）](communication-compliance-configure.md)。
+若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 For microsoft 365](communication-compliance-configure.md)。

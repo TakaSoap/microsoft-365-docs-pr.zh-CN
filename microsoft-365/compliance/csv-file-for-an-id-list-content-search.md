@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 使用来自现有内容搜索的结果 .csv 或未编制索引的项目 .csv 文件来创建一个可返回特定电子邮件的 ID 列表搜索。 ID 列表搜索通常用于返回部分索引的邮箱项目。
-ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595519"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077005"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>为 Office 365 中的 ID 列表内容搜索准备 CSV 文件
 
@@ -65,7 +65,7 @@ ms.locfileid: "41595519"
 
     下面的示例展示了一个为 ID 列表内容搜索准备提交的 CSV 文件。
 
-    ![目标内容搜索的 CSV 文件的示例](media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
+    ![目标内容搜索的 CSV 文件的示例](../media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
 
 6. 保存 CSV 文件或使用 "**另存为**" 将文件保存为其他文件名。 在这两种情况下，请务必使用 CSV 格式保存文件。
 
@@ -78,9 +78,9 @@ ms.locfileid: "41595519"
 
 1. 在 "安全性 & 合规性中心中，转到"**搜索** \> **内容搜索**"。
 
-2. 在 "**搜索**" 页上，单击 " ![添加图标](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **新搜索**" 旁边的箭头，然后单击 "**按 ID 列表搜索**"。
+2. 在 "**搜索**" 页上，单击 " ![添加图标](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **新搜索**" 旁边的箭头，然后单击 "**按 ID 列表搜索**"。
 
-    ![单击 "新建搜索" 下拉列表中的 "按 ID 列表搜索"](media/e65f9942-09b2-4127-865e-e64029a590df.png)
+    ![单击 "新建搜索" 下拉列表中的 "按 ID 列表搜索"](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 
 3. 在 "**按标识号搜索" 列表**中，命名搜索（并根据需要对其进行描述），然后单击 "**浏览**" 并选择在上一步中准备的 CSV 文件。
 
@@ -90,7 +90,7 @@ ms.locfileid: "41595519"
 
     下面的示例展示了估计的搜索结果和为 ID 列表搜索生成的查询。
 
-    ![详细信息窗格中的目标内容搜索的搜索查询](media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
+    ![详细信息窗格中的目标内容搜索的搜索查询](../media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
 
     请注意，ID 搜索的统计信息中显示的估计项目数应与您在 CSV 文件中选择的项目数相匹配。
 

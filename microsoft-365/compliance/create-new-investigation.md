@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ef84380e17757f96bdf66307595c92d85a335930
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596159"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077461"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>在数据调查中创建新调查（预览）
 
@@ -49,4 +49,4 @@ ms.locfileid: "41596159"
 
     将显示调查的 "**主页**" 选项卡。 例如，以下是一个名为 "*关键：税务 document" 和 "财务数据泄露*" 的新调查。
 
-    !["主页" 选项卡，用于调查数据调查中的新调查](media/NewDataInvestigations.png)
+    !["主页" 选项卡，用于调查数据调查中的新调查](../media/NewDataInvestigations.png)

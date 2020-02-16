@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 智能标记允许您在阅读高级电子数据展示事例中的内容时应用机器学习功能。 使用智能标记组来显示机器学习检测模型的结果，如律师-客户端权限模型。
-ms.openlocfilehash: 9b3e1310baa06f53a3ee1dab5c371fb67d6ab95c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3d3852a13410a3aa57932e19031cc5d00ce52a96
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597399"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081079"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>在高级电子数据展示中设置智能标记
 

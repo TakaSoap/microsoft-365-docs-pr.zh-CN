@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: '查看 "文档相似性" 值（两个文件的最小 resemblance 级别，将其视为邻近的重复项）在 Office 365 高级电子数据展示中起作用。 '
-ms.openlocfilehash: c11359681de4d1e078cde8ebf603396c9a71e3b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597329"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080761"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>了解 Office 365 高级电子数据展示中的文档相似性
 
@@ -44,11 +44,11 @@ ms.locfileid: "41597329"
   
 Resemblance 的级别如下所示：
   
-![文档相似性](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
+![文档相似性](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
 假定现在已插入另一个文档 X1。 X1 和 E3 之间的 resemblance 为87%。 同样，X1 和 F1 之间的 resemblance 为92%。 因此，EquiSet-1、EquiSet-2 和 X1 现已组合到一个 ND 集中。
   
-![文档相似性](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
+![文档相似性](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
 > 如果将任意两个文档分配给一个 ND 集，它们将保持在相同的 ND 集中，即使其他文档添加到了该集或者合并了这些集也是如此。 

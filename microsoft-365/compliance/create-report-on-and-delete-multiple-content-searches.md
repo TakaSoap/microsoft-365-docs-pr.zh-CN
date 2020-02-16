@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何在 Office 365 的安全 & 合规中心中通过 PowerShell 脚本自动执行内容搜索任务，如创建搜索和运行报告。
-ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 915ea910eebba8f6f39ceb41d9475769a6403729
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595569"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077173"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
  当你尝试了解基础数据以及搜索的丰富程度和质量时，快速创建和报告发现搜索通常是电子数据展示和调查中的重要步骤。 为帮助你执行此操作，安全 & 合规性中心 PowerShell 提供了一组用于自动执行耗时的内容搜索任务的 cmdlet。 这些脚本提供了创建大量搜索的快速、简便的方法，然后运行估计的搜索结果报告，这些报告可帮助您确定所讨论的数据量。 您还可以使用脚本来创建不同版本的搜索，以比较每个搜索结果所产生的结果。 这些脚本可帮助您快速高效地识别和挑选数据。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本主题中所述的脚本。 
     
@@ -191,7 +191,7 @@ ms.locfileid: "41595569"
     
     该脚本将显示创建和运行搜索的进度。 脚本完成后，将返回到提示窗口。 
     
-    ![运行该脚本以创建多个合规性搜索的示例输出](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+    ![运行该脚本以创建多个合规性搜索的示例输出](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>步骤4：运行脚本以报告搜索估计值
 
@@ -266,7 +266,7 @@ ms.locfileid: "41595569"
     
     该脚本将显示创建和运行搜索的进度。 脚本完成后，将显示报告。 
     
-    ![运行搜索报告以显示对搜索组的估计](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+    ![运行搜索报告以显示对搜索组的估计](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
 > 如果在搜索组中的多个搜索中将相同的邮箱或网站指定为内容位置，则在报告中估计的总结果（对于项目数和总大小）可能包含相同项目的结果。 这是因为，如果与搜索组中的不同搜索的查询相匹配，则相同的电子邮件或文档将被多次计数。 
@@ -301,4 +301,4 @@ ms.locfileid: "41595569"
     
     该脚本显示删除的每个搜索的名称。
     
-    ![运行该脚本以删除搜索组中的搜索](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+    ![运行该脚本以删除搜索组中的搜索](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

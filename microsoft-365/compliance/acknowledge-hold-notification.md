@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可能需要通知保管人在法律调查过程中保留以电子方式存储的信息的义务。 利用高级电子数据展示，可以轻松管理保留通知过程。
-ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594065"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080270"
 ---
 # <a name="acknowledge-a-hold-notification"></a>确认保留通知
 
@@ -52,4 +52,4 @@ ms.locfileid: "41594065"
 
 除电子邮件通知外，每个保管人都将有权访问唯一的合规性门户。 通过门户，每个管理员都可以查看、访问和确认其活动保留通知。
 
-![对保管人的合规性门户](media/CustodianPortal.jpg)
+![对保管人的合规性门户](../media/CustodianPortal.jpg)

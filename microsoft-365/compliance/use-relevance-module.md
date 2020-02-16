@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cf69f76fd461c718bccb560f91bf31c2e30aea39
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601289"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080609"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>使用相关性模块分析证据中的数据
 
 在数据调查（预览版）中，相关性模块包括与调查相关的相关文件的相关性培训和审核。 相关性工作流如下所示，如下所示：
   
-![相关性工作流](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![相关性工作流](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **评估和跟踪周期**：
     
@@ -128,7 +128,7 @@ ms.locfileid: "41601289"
 > [!NOTE]
 > 在解锁后，某些选项可能仍处于禁用状态，因为在此过程中不支持使用这些选项。 
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 [了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   

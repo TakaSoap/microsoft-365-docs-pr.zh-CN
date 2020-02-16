@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7d507730e3e5301446889e52e4bbd5d85660da36
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 44bebc777b729984e9436ed7677e3da60145ac02
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596109"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077480"
 ---
 # <a name="create-a-new-case-in-advanced-ediscovery"></a>在高级电子数据展示中创建新事例  
 
@@ -49,4 +49,4 @@ ms.locfileid: "41596109"
 
     将显示事例的 "**主页**" 选项卡。 例如，下面是一个名为*Contoso 调查*的新事例。
 
-    ![高级电子数据展示中的新事例的 "主页" 选项卡](media/newAeDcase.png)
+    ![高级电子数据展示中的新事例的 "主页" 选项卡](../media/newAeDcase.png)

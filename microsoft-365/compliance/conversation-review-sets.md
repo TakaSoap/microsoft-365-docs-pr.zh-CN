@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595669"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078109"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>查看高级电子数据展示中的对话 
 
@@ -47,7 +47,7 @@ ms.locfileid: "41595669"
 
 - **对话：** 代表一个或多个邮件的分组。 在不同的应用程序中，对话可能以不同的方式表示。 在某些应用程序中，通过答复现有邮件产生的显式操作。 对话是作为此用户操作的结果而显式形成的。 例如，下面是 Microsoft 团队中的频道对话的屏幕截图。
 
-   ![Microsoft 团队频道对话](media/threadedchat.png)
+   ![Microsoft 团队频道对话](../media/threadedchat.png)
 
    在其他应用程序（例如，工作组中的1xN 聊天邮件）中，没有正式的答复链，而是在单个线程中显示为 "简单消息化的邮件"。 在这些类型的应用程序中，将从在特定时间内发生的一组邮件中推断对话。 邮件的这种 "软分组" （而不是 "回复链"）表示有关特定主题的 "前后" 讨论。 
 
@@ -71,7 +71,7 @@ ms.locfileid: "41595669"
 
 将数据从对话添加到审阅集时，可以使用对话检索选项来扩展搜索并包含上下文相关邮件。 设置对话检索选项后，可能会发生以下情况：
 
-  ![对话检索](media/messagesandconversations.png)
+  ![对话检索](../media/messagesandconversations.png)
   
 1. 使用关键字和日期范围查询，搜索会在*邮件 3*上返回一个命中。 此邮件是更大的对话的一部分，如*CRC1*所示。 
   
@@ -99,13 +99,13 @@ ms.locfileid: "41595669"
 
 在标准审阅集中，邮件将作为单个项目进行处理和显示，就像它们存储在邮箱文件夹中的方式一样。 在此工作流中，每封邮件都作为一个单独的项目处理。 因此，"线程摘要" 和 "导出" 选项在标准审阅集中不可用。 
 
-  ![标准审阅集](media/standardrs.PNG)
+  ![标准审阅集](../media/standardrs.PNG)
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>查看对话审阅集中的对话
 
 在对话审阅集中，各个邮件将串接在一起，并显示为对话。 这将允许您查看和导出上下文对话。 
 
-  ![对话评审集](media/ConversationRSOptions.PNG)
+  ![对话评审集](../media/ConversationRSOptions.PNG)
 
 以下各节介绍了如何在对话评审集中审阅和导出对话。
 
@@ -134,7 +134,7 @@ ms.locfileid: "41595669"
 
 在对话审阅集中，您可以设置以下选项以导出对话：
 
-![导出](media/export.png)
+![导出](../media/export.png)
 
 a. 元数据选项
 
@@ -157,7 +157,7 @@ c. 其他选项
 
    - 将**导出的内容替换为编辑 pdf：** 如果在审阅过程中生成编辑对话文件，则这些文件在导出过程中可用。 您可以决定是仅导出本机文件（不选择此选项），还是将本机文件替换为本机文件的编辑版本（选择此选项），这些文件将导出为 PDF 文件。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 若要了解有关如何在高级电子数据展示中查看事例数据的详细信息，请参阅以下文章：
 

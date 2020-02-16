@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 使用 "客户密钥"，可以控制组织的加密密钥，然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。
-ms.openlocfilehash: ee62065542ea50091d73362dd8d05f2e4e7dc337
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 6fd7167dd46f3a44d97a493830aef19e40f062e8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804757"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076913"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Office 365 中的客户密钥的服务加密
 
@@ -71,11 +71,11 @@ Office 365 提供了通过 BitLocker 和分布式密钥管理器（DKM）启用�
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>用于加密 Exchange Online 和 Skype for business 的密钥的加密密码
 
-![Exchange Online 客户密钥的加密密码](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Exchange Online 客户密钥的加密密码](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>用于加密 SharePoint Online、OneDrive for Business 和团队文件的密钥的加密密码
 
-![SharePoint Online 客户密钥的加密密码](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![SharePoint Online 客户密钥的加密密码](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>相关文章
 

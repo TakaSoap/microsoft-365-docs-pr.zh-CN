@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '了解如何为 Office 365 高级电子数据展示中的分析过程配置高级设置，包括接近重复的电子邮件线程和主题。 '
-ms.openlocfilehash: 2c2a104b834d8da9d0d10f93980b4f2cbb6294c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601509"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081261"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析高级设置
 
@@ -32,7 +32,7 @@ ms.locfileid: "41601509"
   
 1. 在 "**准备\>分析\>设置**" 选项卡上，单击页面底部的 "**高级设置**"。 将显示以下面板。 
     
-    ![设置分析高级设置](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![设置分析高级设置](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. 在 "**临近副本" 和 "电子邮件线程" 参数**中，根据需要选择以下值：
     

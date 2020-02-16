@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: be4c86a5df7e0964744f6b5d7551382916e7ed2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cd622430df4a636a9529a4d10ddc90057548a810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597409"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080954"
 ---
 # <a name="tag-documents-in-a-review-set"></a>标记审阅集中的文档
 
@@ -47,11 +47,11 @@ ms.locfileid: "41597409"
 
 除了标记类型之外，标记面板中的标记组织方式的结构也可用于使标签文档更加直观。 标记按节分组。 查看 "设置搜索支持按标记和按标记搜索" 部分的功能。 这意味着您可以创建审阅集搜索，以检索标记为某一节中的任何标记的文档。
 
-![标记面板中的标记部分](media/Tagtypes.png)
+![标记面板中的标记部分](../media/Tagtypes.png)
 
 可以通过在节中嵌套标记来进一步对标记进行组织。 例如，如果目的是标识和标记特权内容，则可以使用嵌套来清楚地表明用户可以将文档标记为 "特权"，并通过检查适当的嵌套标记来选择特权类型。
 
-![标记部分中的嵌套标记](media/Nestingtags.png)
+![标记部分中的嵌套标记](../media/Nestingtags.png)
 
 ## <a name="applying-tags"></a>应用标记
 
@@ -61,7 +61,7 @@ ms.locfileid: "41597409"
 
 在审阅集中查看文档时，可以通过单击 "**编码" 面板**显示审阅可使用的标记。
 
-![单击 "标记面板" 以显示标记面板](media/Singledoctag.png)
+![单击 "标记面板" 以显示标记面板](../media/Singledoctag.png)
 
 这将使您能够对显示在查看器中的文档应用标记。
 
@@ -69,7 +69,7 @@ ms.locfileid: "41597409"
 
 可以通过在结果网格中选择多个文件，然后在**编码面板**中使用类似于单个文档的标记，来完成批量标记。 可以通过选择两次标记来完成批量取消标记操作;第一次单击将应用标记，第二个选择将确保清除所有选定文件的标记。
 
-![自动生成的蜂窝电话说明的屏幕截图](media/Bulktag.png)
+![自动生成的蜂窝电话说明的屏幕截图](../media/Bulktag.png)
 
 > [!NOTE]
 > 批量标记时，加标签面板将显示为面板中的每个标记标记的文件数。
@@ -88,4 +88,4 @@ ms.locfileid: "41597409"
 
 3. 若要标记所有文档，请选择 "**文档" 系列**面板中的 "所有文档"，单击 "**代码文档**"，然后选择要应用于整个文档系列的标记。
 
-![自动生成的社交媒体帖子说明的屏幕截图](media/Relatedtag.png)
+![自动生成的社交媒体帖子说明的屏幕截图](../media/Relatedtag.png)

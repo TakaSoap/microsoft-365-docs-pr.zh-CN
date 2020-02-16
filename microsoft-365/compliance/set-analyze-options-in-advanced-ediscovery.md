@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '查看为 Office 365 高级电子数据展示中的分析过程设置选项的步骤，包括临近重复项、电子邮件线索和主题。  '
-ms.openlocfilehash: e9acb30d991bd2ee0acba5a9ddde619272788ceb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597459"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081150"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析选项
 
@@ -34,7 +34,7 @@ ms.locfileid: "41597459"
 
 打开**准备\>分析** \> **设置**。 将显示以下窗口。
   
-![设置分析选项](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![设置分析选项](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **临近的重复和电子邮件线索**如果要运行分析，请选中此框。 默认情况下选中此选项。 
   
@@ -51,11 +51,11 @@ ms.locfileid: "41597459"
     
     例如，如果建议的单词是 "computer"，并且您将 "2" 指定为 "最大主题数"，高级电子数据展示将尝试生成与 "computer" 一词相关的两个主题。 例如，这两个主题可能是 "计算机软件" 和 "计算机硬件"。 
     
-    ![添加建议的主题](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![添加建议的主题](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
 1. 若要查看、添加或编辑建议的主题，请单击 "**修改**"。
     
-2. 在 "**建议的主题**" 面板中，单击 "](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **添加** ![" "添加图标" 图标以添加主题。 在 "**添加建议的主题**" 面板中，添加单词，并以逗号分隔。 
+2. 在 "**建议的主题**" 面板中，单击 "](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **添加** ![" "添加图标" 图标以添加主题。 在 "**添加建议的主题**" 面板中，添加单词，并以逗号分隔。 
     
 3. 在 "**主题数量**" 中，选择一个值以确定高级电子数据展示将尝试为这些单词生成的主题数（默认为1主题）。
     

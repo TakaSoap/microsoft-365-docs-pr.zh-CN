@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: dbcddd57fcf2d1471b4a4aa4b715dcae22dbc40c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596189"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077721"
 ---
 # <a name="create-a-litigation-hold"></a>创建诉讼保留
 
@@ -33,7 +33,7 @@ ms.locfileid: "41596189"
     
 - 用户主和存档邮箱中的项目将保留
     
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要在诉讼保留中放置 Exchange Online 邮箱，必须为其分配 Exchange Online 计划2许可证。 如果向某个邮箱分配了 Exchange Online 计划1许可证，则必须为其分配一个单独的 Exchange Online 存档许可证以将其置于保留状态。
     
@@ -86,7 +86,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 
 下图显示了"可恢复的项目"文件夹中的子文件夹和保留工作流程。
 
-![诉讼保留生命周期](media/LitigationHoldLifeCycle.png)
+![诉讼保留生命周期](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > 如果将与电子数据展示事例关联的保留放在邮箱中，清除的项目将从 "删除" 子文件夹移动到 "DiscoveryHolds" 子文件夹，并在邮箱从电子数据展示保留中释放之前保留。
