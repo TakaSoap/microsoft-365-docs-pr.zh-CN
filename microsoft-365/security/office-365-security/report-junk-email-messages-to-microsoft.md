@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供多种报告垃圾邮件的方式：
-ms.openlocfilehash: a2a427f13c329c4c72f718bb19ecc0dce06f8f91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598569"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088237"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 报告垃圾邮件
 
@@ -47,10 +47,10 @@ Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供�
 1. 右键单击要报告为垃圾邮件的邮件。
 
 2. 选择“垃圾邮件”****，然后单击“报告垃圾邮件”****。
-    ![从收件箱报告垃圾邮件](../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
+    ![从收件箱报告垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
 
 3. 打开“Microsoft 垃圾邮件报告外接程序”**** 对话框。 如果您确定要将所选邮件提交为垃圾邮件，请单击 **"是"**。
-    ![确认报告为垃圾邮件](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![确认报告为垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > 如果您在提交垃圾邮件时不想收到此确认消息，请选中 "**不再显示此消息**"。
@@ -59,10 +59,10 @@ Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供�
 
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>从打开的邮件中报告垃圾邮件
 
-1. 在打开的邮件内部，单击邮件功能区上的“报告垃圾邮件”**** 按钮。 例如，单击 "**垃圾** \> **报告垃圾** ![邮件"。从邮件中报告垃圾邮件](../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+1. 在打开的邮件内部，单击邮件功能区上的“报告垃圾邮件”**** 按钮。 例如，单击 "**垃圾** \> **报告垃圾** ![邮件"。从邮件中报告垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
 
 2. 打开“Microsoft 垃圾邮件报告外接程序”**** 对话框。 如果您确定要将所选邮件提交为垃圾邮件，请单击 **"是"**。
-    ![确认报告为垃圾邮件](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![确认报告为垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > 如果您在提交垃圾邮件时不想收到此确认消息，请选中 "**不再显示此消息**"。

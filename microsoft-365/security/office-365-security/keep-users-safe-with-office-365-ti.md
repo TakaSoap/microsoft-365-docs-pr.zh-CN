@@ -16,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威胁调查和响应功能如何帮助您的组织检测入侵和威胁，并快速缓解和恢复威胁。
-ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6734903198fa29cdd7ac4295feb6313479ecab50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599099"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088663"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>使用 Office 365 威胁调查和响应功能保持组织安全
 
@@ -35,7 +35,7 @@ Office 365 中的[威胁调查和响应](office-365-ti.md)功能包含在 Office
 
 资源管理器还可帮助管理员导航用户和邮件之间的关系。 知道有误的特定邮件吗？ 搜索它以查看哪些用户收到了邮件，然后按照一系列事件进行操作，并查看这些用户接下来的操作。
 
-![Office 365 中的威胁资源管理器的屏幕截图，由恶意软件系列进行颜色编码](../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Office 365 中的威胁资源管理器的屏幕截图，由恶意软件系列进行颜色编码](../../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
 
 ## <a name="quickly-mitigate-and-recover-from-threats"></a>快速缓解威胁并从威胁中恢复
 
@@ -43,7 +43,7 @@ Office 365 中的[威胁调查和响应](office-365-ti.md)功能包含在 Office
 
  **更新：** 已添加了直接从事件框架中删除（软删除或硬删除）电子邮件的功能。 以前的管理员只能将邮件移动到用户的垃圾邮件文件夹，用户可以在那里恢复项目。 使用新的已发布的删除功能，现在可以确保永久删除恶意或不需要的邮件。
 
-![事件修正的电子邮件列表的屏幕截图](../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![事件修正的电子邮件列表的屏幕截图](../../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
 
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>利用 Microsoft 的威胁遥测
 

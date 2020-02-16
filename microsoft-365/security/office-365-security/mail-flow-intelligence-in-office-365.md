@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解与使用 Office 365 中的连接器（也称为 "邮件流智能"）关联的邮件传递的错误代码。
-ms.openlocfilehash: ea4fb56f0e303d243af02edf01e5d85b957a6368
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 849493cefecb3344eaf7b6db73be3930138c236c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599049"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088651"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 中的邮件流智能
 
@@ -72,9 +72,9 @@ ms.locfileid: "41599049"
 
     2. 选择 "**发件人**" 值为 " **Office 365** " 的连接器，然后选择 "**到**" 值**您组织的电子邮件服务器**，然后执行以下步骤之一：
 
-       - 通过单击 "**删除** ![删除" 图标删除连接器](../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - 通过单击 "**删除** ![删除" 图标删除连接器](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - 通过单击 "**编辑** ![编辑图标](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) " 和 "取消选中" 禁用连接器以将**其关闭**。
+       - 通过单击 "**编辑** ![编辑图标](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) " 和 "取消选中" 禁用连接器以将**其关闭**。
 
   - 将与本地电子邮件环境关联的 Office 365 中的 "接受域" 从 "**内部中继**" 更改为 "**权威**"。 有关说明，请参阅[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 

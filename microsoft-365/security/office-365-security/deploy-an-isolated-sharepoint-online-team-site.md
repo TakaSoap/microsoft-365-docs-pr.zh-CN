@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要：使用这些分步说明部署一个新的独立 SharePoint Online 团队网站。
-ms.openlocfilehash: c49b8d2d0c69f76f284061e21c8be31ee2204a54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 39cf33ce3314e2eb0cd313ff0382f50d7cb8487a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599519"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088784"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
@@ -89,7 +89,7 @@ ms.locfileid: "41599519"
   
 下面是具有三个网站访问组的结果配置。
   
-![用于部署独立 SharePoint Online 网站的三个访问组。](../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
+![用于部署独立 SharePoint Online 网站的三个访问组。](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
 ### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>第 5 步： 将用户帐户添加到访问组
 
@@ -151,7 +151,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 下面是通过使用用户帐户或组填充的三个网站访问组生成的配置。
   
-![三个使用用户帐户填充的访问组。](../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
+![三个使用用户帐户填充的访问组。](../../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>阶段2：创建和配置独立的团队网站
 
@@ -221,7 +221,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 下面是配置了三个 SharePoint 组的网站的结果配置，该网站配置为使用三个访问组，其中填充了用户帐户或 Azure AD 组。
   
-![使用访问组和用户帐户的独立 SharePoint Online 网站的最终配置。](../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![使用访问组和用户帐户的独立 SharePoint Online 网站的最终配置。](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
   
 您和网站成员（通过其中一个访问组中的组成员身份）现在可以使用网站的资源进行协作。
   

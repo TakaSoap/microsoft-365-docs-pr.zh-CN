@@ -17,12 +17,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: 获取安全&amp;合规性中心中的报告和真知灼见 avialable 的概述。
-ms.openlocfilehash: edbc4cd53b5cd830996220c875a1b48565a96c13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3c205350ef57514c434ac75fae21c104a2c1706e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598559"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088141"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Office 365 安全&amp;合规中心中的智能报告和见解
 
@@ -32,7 +32,7 @@ ms.locfileid: "41598559"
 
 Office 365 安全&amp;合规性中心中提供的监视功能包括智能报告和见解，使您的安全和合规性管理员能够重点关注高优先级问题，如安全攻击或更高的可疑活动。 在仪表板中，智能报告和见解类似于以下图像：
   
-![在 "安全&amp;合规性中心" 中\> ，选择 "报告" 仪表板](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![在 "安全&amp;合规性中心" 中\> ，选择 "报告" 仪表板](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 除了突出显示问题区域之外，智能报告和见解还包括用于查看和浏览数据的建议和链接，同时还采取快速操作。 例如，如果您的组织突然有大量的电子邮件被最终用户标记为垃圾邮件，则可能建议您重新访问反垃圾邮件策略以确保适当级别的保护已就绪。
   

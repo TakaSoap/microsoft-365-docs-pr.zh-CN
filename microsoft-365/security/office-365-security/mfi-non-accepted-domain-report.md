@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解不接受的域报告。
-ms.openlocfilehash: 7872f454f10c8f8b7bb2f79fd62671e200463f7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b4573d6a43c811e919f3f5c6f281c8f31e61d6a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599209"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088457"
 ---
 # <a name="non-accepted-domain-report"></a>非接受域报告
 
@@ -24,15 +24,15 @@ ms.locfileid: "41599209"
 
 如果我们有数据来证明这些邮件的目的是恶意的，则 Office 365 可能会限制这些邮件。 因此，重要的是要了解所发生的情况并解决问题。
 
-![安全 & 合规性中心的邮件流仪表板中的不可接受的域报告](../media/non-accepted-domain-report-selected.png)
+![安全 & 合规性中心的邮件流仪表板中的不可接受的域报告](../../media/non-accepted-domain-report-selected.png)
 
 当您单击小组件时，将转到完整报告。 在完整报告中，您可以单击 "**查看详细信息**" 以查看表中的信息，如下图所示：
 
-![不接受的域中的查看详细信息表报告](../media/non-accepted-domain-report-view-details.png)
+![不接受的域中的查看详细信息表报告](../../media/non-accepted-domain-report-view-details.png)
 
 当您选择表中的一行时，飞出的内容将显示更多详细信息。 您可以单击 "**查看示例消息**" 来查看一些已确定的邮件。
 
-![在 "不接受的域" 报告的详细信息表中选择一行。](../media/non-accepted-domain-report-select-row-in-table.png)
+![在 "不接受的域" 报告的详细信息表中选择一行。](../../media/non-accepted-domain-report-select-row-in-table.png)
 
 ## <a name="see-also"></a>另请参阅
 
