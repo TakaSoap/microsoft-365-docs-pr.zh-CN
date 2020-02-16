@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 272e8a76cdb3a1555f561bd56e63422f14394904
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596949"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067397"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -31,7 +31,7 @@ ms.locfileid: "41596949"
 
 下图说明了建议的一组策略。 它显示了每个策略应用于哪一层的保护，以及这些策略是应用于 Pc、电话和平板电脑，还是适用于这两种类别的设备。 它还指示这些策略的配置位置。
 
-![用于配置标识和设备访问的常见策略](../images/Identity_device_access_policies_byplan.png)
+![用于配置标识和设备访问的常见策略](../media/Identity_device_access_policies_byplan.png)
 
 
 本文的其余部分介绍了如何配置这些策略。 
@@ -41,7 +41,7 @@ ms.locfileid: "41596949"
 为了让你有时间完成这些任务，我们建议你按照此表中所列的顺序实施基准策略。 但是，敏感和高度管控保护的 MFA 策略可在任何时候实施。
 
 
-|保护级别|策略|更多信息|
+|保护级别|策略|详细信息|
 |:---------------|:-------|:----------------|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](#require-mfa-based-on-sign-in-risk)| |
 |        |[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)|不使用新式身份验证的客户端可以绕过条件访问规则，因此，请务必阻止这些|
@@ -62,13 +62,13 @@ ms.locfileid: "41596949"
 
 下图提供了用户分配和排除的示例。
 
-![用于 MFA 规则的用户分配和排除示例](../images/identity-access-policies-assignment.png)
+![用于 MFA 规则的用户分配和排除示例](../media/identity-access-policies-assignment.png)
 
 在图中，"Top secret project X team" 分配了一个需要*始终*进行 MFA 的条件访问策略。 对用户应用更高级别的保护时要合理。 此项目团队的成员将需要在每次登录时提供两种形式的身份验证，即使他们没有查看高度管控的内容也是如此。  
 
 作为这些建议的一部分创建的所有 Azure AD 组都必须创建为 Office 365 组。 在 SharePoint Online 中保护文档时，这一点对于部署 Azure 信息保护 (AIP) 尤为重要。
 
-![用于创建 Office 365 组的屏幕捕获](../images/identity-device-AAD-groups.png)
+![用于创建 Office 365 组的屏幕捕获](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>需要基于登录风险进行 MFA
@@ -84,7 +84,7 @@ ms.locfileid: "41596949"
 
 4. 选择“新策略”。
 
-![基线 CA 策略](./media/secure-email/CA-EXO-policy-1.png)
+![基线 CA 策略](../media/secure-email/CA-EXO-policy-1.png)
 
  下表介绍了要为此策略实现的条件访问策略设置。
 

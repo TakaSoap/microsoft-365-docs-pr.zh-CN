@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 258e116e2d51a5fde9f6e9c3273824994b9dcfa6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c72e340092bbd366277114a56aae7574d43dab5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596659"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085075"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保护团队聊天、组和文件的策略建议
 
@@ -45,7 +45,7 @@ ms.locfileid: "41596659"
 
 下图说明了用于保护团队中的聊天、组和内容的建议策略集。 铅笔图标指示需要重设的策略，以确保在分配云应用程序中包含团队和相关服务。
 
-![演示如何在各种设备上使用 Microsoft 团队的图表。](../images/identity-access-ruleset-teams.png)
+![演示如何在各种设备上使用 Microsoft 团队的图表。](../media/identity-access-ruleset-teams.png)
 
 以下是要在团队的云应用程序分配中包括的相关服务：
 
@@ -76,7 +76,7 @@ ms.locfileid: "41596659"
 
 为了供参考，下图演示了服务团队所依赖的。 有关详细信息和其他说明，请参阅 microsoft[团队和 microsoft 365 中相关的工作效率服务（针对 IT 架构师](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)）。
 
-![该图显示了 SharePoint Online、OneDrive for Business 和 Exchange 上的团队相关性。](../images/identity-access-logical-architecture-teams.png)
+![该图显示了 SharePoint Online、OneDrive for Business 和 Exchange 上的团队相关性。](../media/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>为团队启用来宾和外部访问
 

@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602849"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085581"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步骤2：将现有设备的 Windows 10 企业版部署为就地升级
 
 *本文适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![第 3 阶段：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 将当前运行 Windows 7 或 Windows 8.1 的电脑升级到 Windows 10 的最简单途径是通过就地升级。 您可以使用配置管理器（配置管理器）任务序列来完全自动执行该过程。 
 
@@ -35,7 +35,7 @@ ms.locfileid: "41602849"
 
 Configuration Manager 海报是横向模式（17x11）中的一页。 单击下面的图像以在浏览器中查看 PDF。 
 
-[![使用配置管理器海报部署 Windows 10](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+[![使用配置管理器海报部署 Windows 10](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
 也可以下载 [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) 或 [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) 格式的海报。
 
@@ -151,4 +151,4 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
 
 |||
 |:-------|:-----|
-|![第 3 步](./media/stepnumbers/Step3.png)| [使用 Windows Autopilot 为新设备部署 Windows 10 企业版](windows10-deploy-autopilot.md) |
+|![第 3 步](../media/stepnumbers/Step3.png)| [使用 Windows Autopilot 为新设备部署 Windows 10 企业版](windows10-deploy-autopilot.md) |

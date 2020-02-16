@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 1a8cea3b11ecdc6e3ac6d382dc8ffe92c84e187a
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: a9e49f5b9b518711f72c9b9a29e690c55acf3861
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932272"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080301"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
@@ -85,7 +85,7 @@ Microsoft 已为美国的客户启动了针对 Power Platform （Power BI、Powe
 
 **面向自助服务购买的有限 Microsoft 365 管理中心的视图：**
 
-![Microsoft 365 管理中心屏幕截图。](../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
+![Microsoft 365 管理中心屏幕截图。](../../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
 
 ## <a name="pricing"></a>定价
 

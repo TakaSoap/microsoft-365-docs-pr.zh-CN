@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a0b86240e09838ff290bb9c3b4b53f5cce3e2995
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600119"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083773"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>转到操作中心以查看修正操作
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600119"
 
 ## <a name="a-single-pane-of-glass-experience"></a>“单窗格”体验
 
-![操作中心](../images/air-actioncenter.png)
+![操作中心](../../media/air-actioncenter.png)
 
 使用操作中心查看组织设备和邮箱中的当前和过去调查的结果。 根据威胁的类型和[最终结论](mtp-autoir-results.md#remediation-actions-following-automated-investigation)，自动执行修正操作，或者在组织的安全运营团队批准后执行修正操作。 所有修正操作（无论是待批准还是已批准的操作）都合并在操作中心内。 
 
@@ -65,9 +65,9 @@ ms.locfileid: "41600119"
 
     - “**历史记录**”选项卡列出了自动执行的过去调查和修正操作。 可查看过去一天、一周、一个月或六个月的数据。
 
-4. 若要仅显示想要查看的列，请选择“**自定义列**”。<br/>![Microsoft 威胁防护中的操作中心](../images/mtp-action-center.png)
+4. 若要仅显示想要查看的列，请选择“**自定义列**”。<br/>![Microsoft 威胁防护中的操作中心](../../media/mtp-action-center.png)
 
-5. 在列表中选择一个项目以查看有关调查的更多详细信息。 此时将打开调查详细信息视图。<br/>![调查详细信息](../images/mtp-air-investdetails.png)
+5. 在列表中选择一个项目以查看有关调查的更多详细信息。 此时将打开调查详细信息视图。<br/>![调查详细信息](../../media/mtp-air-investdetails.png)
 
     - 如果调查与电子邮件内容有关（例如，实体是邮箱），则将在 Office 365 安全与合规中心 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)) 中打开调查详细信息。 
 

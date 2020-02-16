@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a85680e323c7a8fba6f2d74d5cc00c58c2013d23
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 8f966060ebc9a30166647b397b93f2b45356df74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662048"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083715"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
@@ -45,7 +45,7 @@ Microsoft 威胁防护从各种集成服务中聚合数据。 它将集中处理
 
 在你打开服务之前，Microsoft 365 安全中心（[security.microsoft.com](https://security.microsoft.com)）不会在导航窗格中显示**事件**和**操作中心**选项。
 
-![未安装 microsoft 威胁防护功能](../images/mtp-off.png)
+![未安装 microsoft 威胁防护功能](../../media/mtp-off.png)
 的 microsoft 365 安全中心导航窗格的图像关闭 microsoft*365 安全中心，并关闭 microsoft 威胁防护*
 
 若要打开 Microsoft 威胁防护，请在导航窗格中选择 "**设置**"。 在 "**[设置" 页](https://security.microsoft.com/settings)** 中，转到 " **Microsoft 威胁防护** > **" 自愿加入/自愿退出**。
@@ -65,7 +65,7 @@ Microsoft 威胁防护从各种集成服务中聚合数据。 它将集中处理
 - 用于管理[自动调查和响应](mtp-autoir.md)的操作中心
 - [高级搜寻](advanced-hunting-overview.md)功能（添加到现有**搜寻**页面）
 
-![Microsoft 365 security center 导航窗格的图像与 microsoft 威胁防护功能](../images/mtp-on.png)
+![Microsoft 365 security center 导航窗格的图像与 microsoft 威胁防护功能](../../media/mtp-on.png)
 *microsoft 365 security center with 事件管理和其他 Microsoft 威胁防护功能*
 
 ### <a name="getting-azure-atp-data"></a>获取 Azure ATP 数据

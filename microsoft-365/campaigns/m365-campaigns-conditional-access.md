@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何要求进行 MFA 并为 Microsoft 365 商业版设置条件访问策略。
-ms.openlocfilehash: b65cccf9931da4701157f26ffece7a7c90689094
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594857"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056399"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重身份验证并设置条件访问策略
 
@@ -58,13 +58,13 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
 2. 在 "安装程序" 页上，选择 "**创建登录更安全**的卡片" 中的 "**查看**"。
 
 
-    ![制作登录更安全的卡。](media/setupmfa.png)
+    ![制作登录更安全的卡。](../media/setupmfa.png)
 3. 在 "使登录更安全" 页上，选择 "**已启动**"。
  
 4. 在 "加强登录安全" 窗格中，选中 "**要求对管理员启用多重身份验证**" 旁边的复选框，并**要求用户注册多重身份验证，并在检测到风险时阻止访问**。
     确保在 "**查找用户**" 框中排除了来自 MFA 要求的[紧急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)或 "中断玻璃" 管理帐户。
     
-    ![增强 "在安全中的安全" 页。](media/requiremfa.png)
+    ![增强 "在安全中的安全" 页。](../media/requiremfa.png)
 
 5. 在页面底部选择 "**创建策略**"。
 
@@ -74,7 +74,7 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
     
     基准策略在页面上列出，您可以看到，在完成 "[需要 mfa](#require-mfa)" 中的步骤后，"**需要对管理员**和**最终用户**进行 mfa" 功能已启用。
 
-    ![列出用于条件访问的基准策略的页面。](media/casettings.png)
+    ![列出用于条件访问的基准策略的页面。](../media/casettings.png)
 2. 请参阅以下针对每个策略的特定说明：
 
     - [要求对管理员进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

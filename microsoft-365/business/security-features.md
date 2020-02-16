@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业版附带的安全功能。
-ms.openlocfilehash: 0e1823374ec1843b6caa3f080393ca013302bf72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5f67d70c5a8f22e95b60a229d68ae12574d0036
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593417"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064786"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
 
@@ -35,7 +35,7 @@ Microsoft 365 商业版提供了简化的安全功能，以帮助保护电脑、
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 商业管理员中心安全功能
 
-[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 您可以在管理中心管理许多 Microsoft 365 商业安全功能，这为您提供了一种简单的方法来打开或关闭这些功能。 在管理中心，您可以执行以下操作：
   
@@ -123,6 +123,6 @@ Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的
     
 2. 在左侧导航中，找到**管理中心**并展开它。 
     
-    ![在 Microsoft 365 管理中心的左侧导航中，选择 "管理中心"。](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![在 Microsoft 365 管理中心的左侧导航中，选择 "管理中心"。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. 选择 **" &amp;安全合规性**" 以&amp;转到 "安全合规中心"。

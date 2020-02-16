@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取有关在 Microsoft 365 商业版中提高保护级别的帮助
-ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594847"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080629"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -48,7 +48,7 @@ ms.locfileid: "41594847"
     
 3. 双击默认策略以编辑此公司范围的策略。
     
-4. 单击 "**设置**"。
+4. 单击“**设置**”。
     
 5. 在 "**常用附件类型筛选器**" 下，选择 **"启用"**。 被阻止的文件类型在此控件正下方的窗口中列出。  请确保添加以下 filetypes：
    - ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、.hlp、超线程、hta、inf、jse、mdz、作业、js、、.lnk、mda、mdb、mde、、msc、msi、msp、mst、vb、vbe、scr、pcd、shs、wsh、  <br/> 如果需要，您可以稍后添加或删除文件类型。
@@ -160,24 +160,24 @@ ms.locfileid: "41594847"
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>针对具有高级威胁防护（ATP）的恶意附件、文件和链接提供保护
 
-![指向的标题https://aka.ms/aboutM365preview。](../business/media/m365admincenterchanging.png)
+![指向的标题https://aka.ms/aboutM365preview。](../media/m365admincenterchanging.png)
 
 首先，请确保在管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>中打开了新的管理中心预览。 打开**新管理中心**的文本旁边的切换。
 
-   ![上的新管理中心预览。](media/previewon.png)
+   ![上的新管理中心预览。](../media/previewon.png)
 
 如果你的租户中未显示 "**设置**" 页面，请参阅如何在 Office 365 安全&amp;合规中心中完成这些步骤。 请参阅[在安全 & 合规性中心中设置 atp 安全附件](#set-up-atp-safe-attachments-in-the-security--compliance-center)，并[在安全 & 合规性中心中设置 atp 安全链接](#set-up-atp-safe-links-in-the-security--compliance-center)。
 
 1.  在左侧导航中，选择 "**设置**"。
 2. 在 "**安装程序**" 页上，选择 "**增强来自高级威胁的保护**" 卡片上的 "**查看**"。</br></br>
-    ![选择 "从高级威胁提高保护" 上的 "查看"。](media/startatp.png) 
+    ![选择 "从高级威胁提高保护" 上的 "查看"。](../media/startatp.png) 
 
 3. 在 "**提高来自高级威胁的保护**" 页上，选择 "**已启动**"。
 4. 在打开的窗格中，选中 "电子邮件中的**链接和附件**" 旁边的复选框、"在**SharePoint、OneDrive 和团队中扫描文件**" 和 "扫描项目中的 office **Online 应用程序**" 中的链接，**以查找恶意内容**。
 
       - **在 "电子邮件中的链接和附件**" 下，键入所有用户或要扫描其电子邮件的特定用户。
 
-    ![选中 "增强对来自高级威胁的保护" 中的所有复选框。](media/setatp.png)
+    ![选中 "增强对来自高级威胁的保护" 中的所有复选框。](../media/setatp.png)
 5. 选择 "**创建策略**" 以打开 ATP 安全附件和 atp 安全链接。
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>在安全 & 合规中心中设置 ATP 安全附件
@@ -263,7 +263,7 @@ ms.locfileid: "41594847"
 1. 若要启用审核日志搜索，请转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然后在左侧导航中的 "**管理中心**" 下选择 "**合规性**"。 
 2. 在 " **Microsoft 365 合规性**" 页面上，选择 "**更多资源**"，然后**打开**" **Office 365 安全&amp;中心**卡"。
 
-    ![在 Office 365 安全 & 合规性轿车上选择 "打开"。](media/gotosecandcomp.png)
+    ![在 Office 365 安全 & 合规性轿车上选择 "打开"。](../media/gotosecandcomp.png)
 3. 在 "安全性和合规性" 页上，依次选择 "**搜索**" 和 "**审核日志搜索**"。
 1. 在 "**审核日志搜索**" 页的顶部，选择 "**启用审核**"。
 
@@ -276,14 +276,14 @@ ms.locfileid: "41594847"
 2. 在 SharePoint 管理中心中，转到 "**策略** \> **共享**"。
 3. 在 "**共享**" 页面的 "**文件和文件夹链接**" 下，选择 "**特定人员**"，在 **"任何人" 链接的 "高级设置**" 下，选择 "**这些链接必须在此天数内过期**"，并键入 "14" （或希望限制链接生存期的其他天数）。
 
-    ![选择 "特定人员"，并将 "链接过期" 设置为14天。](media/anyonelinks.png)
+    ![选择 "特定人员"，并将 "链接过期" 设置为14天。](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>活动通知
 
 您可以使用活动警报跟踪管理员和用户活动，并检测组织中的恶意软件和数据丢失防护事件。 你的订阅包含一组默认策略，但你也可以创建自定义策略。 有关详细信息，请参阅[警报策略](https://docs.microsoft.com/office365/securitycompliance/alert-policies)。 例如，如果您在 SharePoint 中存储不希望任何人在外部共享的重要文件，则可以创建通知，以便在用户确实共享时通知您。
 
 下图显示了 Microsoft 365 商业版中包含的默认策略。 <br/><br/>
-    ![Microsoft 365 商业版中包含的默认通知策略。](media/alertpolicies.png)
+    ![Microsoft 365 商业版中包含的默认通知策略。](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>禁用或管理日历共享
 
@@ -296,10 +296,10 @@ ms.locfileid: "41594847"
 3. 在页面底部选择 "**保存更改**"。
 
     下图显示了不允许的日历共享。 </br></br>
-    ![显示不允许的外部日历共享的屏幕截图。](media/nocalendarsharing.png)
+    ![显示不允许的外部日历共享的屏幕截图。](../media/nocalendarsharing.png)
 
     下图显示了允许使用仅忙/闲信息的电子邮件链接进行日历共享时的设置。
 
-   ![与任何人共享日历忙/闲信息的屏幕截图。](media/sharefreebusy.png)
+   ![与任何人共享日历忙/闲信息的屏幕截图。](../media/sharefreebusy.png)
 
 如果允许您的用户共享其日历，请参阅[这些说明](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5)了解如何从 web 上的 Outlook 共享。

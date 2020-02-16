@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 的市场活动对用户有何影响。
-ms.openlocfilehash: 7c510de861758da3da2c86a6804a58de6d4e8030
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594753"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080500"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 的市场活动对用户有何影响
 
 Microsoft 365 的市场活动使黑客更难获取对环境的访问权限。 要权衡的是，您的用户需要了解如何在此更安全的环境中工作。 我们还需要进行一些额外的耐心等待，但值得将组织保持在受保护的状态。
 
-![对 Iphone、Android 设备、Mac、Windows 10、共享和关键员工的以下要点进行汇总的插图](media/M365-democracy-Users_700px.png)
+![对 Iphone、Android 设备、Mac、Windows 10、共享和关键员工的以下要点进行汇总的插图](../media/M365-democracy-Users_700px.png)
 
 ## <a name="use-secure-email-practices"></a>使用安全电子邮件活动
 所有用户都应了解并使用这些电子邮件做法，以确保电子邮件的安全：

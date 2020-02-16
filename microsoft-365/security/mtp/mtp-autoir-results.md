@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 208cbb49afc2f4520fa44a4ef283194bcaff22be
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600089"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083745"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>查看自动调查的详细信息和结果
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600089"
 
 在 Microsoft 威胁防护中进行自动调查时，有关该调查的详细信息在自动调查过程的过程中和之后都是可用的。 如果您具有[所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)，则可以在调查详细信息视图中查看这些详细信息。 调查详细信息视图为您提供了最新状态，并能够批准任何挂起的操作。 
 
-![调查详细信息](../images/mtp-air-investdetails.png)
+![调查详细信息](../../media/mtp-air-investdetails.png)
 
 ## <a name="open-the-investigation-details-view"></a>打开调查详细信息视图
 
@@ -60,7 +60,7 @@ ms.locfileid: "41600089"
 
 2. 在导航窗格中，选择 "**事件**"。 
 
-3. 在列表中选择一个项目以打开 "事件详细信息" 视图。<br/>![事件详细信息](../images/mtp-incidentdetails-tabs.png)
+3. 在列表中选择一个项目以打开 "事件详细信息" 视图。<br/>![事件详细信息](../../media/mtp-incidentdetails-tabs.png)
 
 4. 在 "**调查**" 选项卡上，选择列表中的调查。
 
@@ -68,7 +68,7 @@ ms.locfileid: "41600089"
 
 使用调查详细信息视图查看与调查相关的过去、当前和待定活动。 调查详细信息视图类似于以下图像：
 
-![调查详细信息](../images/mtp-air-investdetails.png)
+![调查详细信息](../../media/mtp-air-investdetails.png)
 
 在调查详细信息视图中，您可以查看下表中所述的有关**调查图**、**警报**、**设备**、**标识**、**关键发现**、**实体**、**日志**和**待定操作**选项卡的信息。
 

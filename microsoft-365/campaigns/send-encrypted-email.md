@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何使用 Outlook 发送加密电子邮件。
-ms.openlocfilehash: 1a450a9891d47a136798432fdb919349fb82e097
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594733"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080451"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或标记敏感电子邮件
 
@@ -43,7 +43,7 @@ ms.locfileid: "41594733"
 - **加密：** 您可以加密您的电子邮件以保护电子邮件中的信息的隐私。 加密电子邮件时，会将其从可读纯文本转换为已编码的 cypher 文本。 只有具有与用于加密邮件的公钥相匹配的私钥的收件人才能解密邮件以进行读取。 但是，如果没有对应私钥的任何收件人，则会看到无法破译的文本。 您的管理员可以定义规则以自动对满足特定条件的邮件进行加密。 例如，您的管理员可以创建一个规则来加密在组织外部发送的所有邮件或提及特定字词或短语的所有邮件。 将自动应用任何加密规则。
 - **敏感度标签：** 你的市场活动还可以设置可应用于文件和电子邮件的敏感度标签，以使其符合你的市场活动的信息保护策略。 在设置标签时，标签会随电子邮件一起保留，即使发送时也是如此，例如，通过在邮件中显示为标头。
 
-![包含标签和加密标注的电子邮件的关系图](media/m365-campaign-email-encrypt.png)
+![包含标签和加密标注的电子邮件的关系图](../media/m365-campaign-email-encrypt.png)
 
 
 ## <a name="set-it-up"></a>设置

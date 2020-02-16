@@ -12,16 +12,16 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: a709971786dd85ff0f086c5c9d57c2d807391c65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596619"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085532"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>第 3 阶段：Windows 10 企业版
 
-![第 3 阶段：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![第 3 阶段：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更多和保持安全保护的工具。 Windows 10 企业版：
 
@@ -80,10 +80,10 @@ Windows 10 提供了一些功能，可帮助保护抵御威胁、帮助保护设
 
 请参阅 Contoso Corporation，它是一个虚构但具有代表性的多国企业，[部署了 Windows 10 企业版](contoso-win10.md)。
 
-![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 
 |||
 |:-------|:-----|
-|![第 1 步](./media/stepnumbers/Step1.png)| [为 Windows 10 企业版准备组织](windows10-prepare-your-org.md) |
+|![第 1 步](../media/stepnumbers/Step1.png)| [为 Windows 10 企业版准备组织](windows10-prepare-your-org.md) |
