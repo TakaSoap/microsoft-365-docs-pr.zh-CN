@@ -16,12 +16,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection 中设置邮件的 SCL。
-ms.openlocfilehash: 4befc3c371118416b6d07f151eb2c346f8520608
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598050"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081972"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
 
@@ -39,14 +39,14 @@ ms.locfileid: "41598050"
 
 1. 在 Exchange 管理中心（EAC）中，选择 "**邮件流** \> **规则**"。
 
-2. 选择 "**新建**!["](../media/ITPro-EAC-AddIcon.gif)"添加" 图标，然后选择 "**创建新规则**"。
+2. 选择 "**新建**!["](../../media/ITPro-EAC-AddIcon.gif)"添加" 图标，然后选择 "**创建新规则**"。
 
 3. 指定规则名称。
 
 4. 选择 "**更多选项**"，然后在 "在**以下情况应用此规则**" 下，指定将触发要为此规则设置的操作（即设置 SCL 值）的条件。
 
    例如，您可以将**发件人** \> **设置为 "内部/外部**"，然后在 "**选择发件人位置**" 对话框中，选择**组织内部**，然后选择 **"确定"**。<br/>
-   ![选择发件人位置](../media/EOP-ETR-SetSCL-1.jpg)
+   ![选择发件人位置](../../media/EOP-ETR-SetSCL-1.jpg)
 
 5. 在 "**执行以下操作**" 下，选择 "**修改邮件属性** \> **" "设置垃圾邮件可信度（SCL）"**。
 

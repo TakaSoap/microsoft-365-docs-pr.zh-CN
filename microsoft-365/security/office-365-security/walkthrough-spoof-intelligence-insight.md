@@ -17,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 了解新的欺骗智能洞察力的工作原理。
-ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 940203bc86339e4cc749565be355d717be9e914d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598009"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084345"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>演练：欺骗性的智能洞察力
 
@@ -50,7 +50,7 @@ ms.locfileid: "41598009"
 
 仪表板上的洞察力显示如下所示的信息。
   
-![欺骗性智能洞察力的屏幕截图](../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![欺骗性智能洞察力的屏幕截图](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
 此洞察力有两种模式：
   
@@ -82,7 +82,7 @@ ms.locfileid: "41598009"
     
 2. 在表中选择一个项目以打开详细信息窗格，其中包含有关域对的丰富信息，其中包括我们捕获此内容的原因、您需要执行的操作、域摘要、域摘要、WhoIs 有关发件人的数据以及我们在你的租户中从相同的发件人处看到的类似电子邮件。 在这里，您还可以选择在**AllowedToSpoof**安全发件人列表中添加或删除域对。 
   
-![欺骗智能洞察力详细信息窗格中的域的屏幕截图](../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![欺骗智能洞察力详细信息窗格中的域的屏幕截图](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
 ## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>在 AllowedToSpoof 安全发件人列表中添加或删除域
 

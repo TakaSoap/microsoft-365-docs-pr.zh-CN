@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: 了解如何在 Microsoft 365 商业版中添加新用户、保护其设备以及分配角色。
-ms.openlocfilehash: 932b969d089dd223426e35c5bea4efde4409ad48
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a7893a8b070b37b7643a4d4e7de3e8ef2ec704f2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593285"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068571"
 ---
 # <a name="add-more-users-to-microsoft-365-business"></a>向 Microsoft 365 Business 添加更多用户
 
@@ -51,11 +51,11 @@ ms.locfileid: "41593285"
   
     您可以在 "**联系人信息**" 下输入详细信息，选择 "**密码**设置" 下的设置密码，并在 "**角色**" 下分配角色。
       
-    ![在新用户卡片中输入用户信息](media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
+    ![在新用户卡片中输入用户信息](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
     在 "产品许可证" 部分，将 " **Microsoft 365 商业**版产品许可证设置" 设置为 **"开**"。
       
-    ![将许可证设置设置为 "开" 位置](media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
+    ![将许可证设置设置为 "开" 位置](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   
 有关添加用户的详细信息，请参阅[单独添加用户或批量添加用户](https://docs.microsoft.com/office365/admin/add-users/add-users)。
   

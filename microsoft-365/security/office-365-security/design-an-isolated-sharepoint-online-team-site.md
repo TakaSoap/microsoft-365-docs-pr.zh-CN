@@ -16,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 摘要：逐步完成独立的 SharePoint Online 团队网站的设计过程。
-ms.openlocfilehash: 345a5fa5dcdcf2a3e61fdd6f1f346d46afe3fd5f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f03df1f99650f458dd9df2c9e561decf491c3011
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599469"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083198"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>设计独立的 SharePoint Online 团队网站
 
@@ -53,7 +53,7 @@ ms.locfileid: "41599469"
   
 下面是默认的 SharePoint 组和权限级别。
   
-![SharePoint Online 网站的默认 SharePoint 组和权限级别。](../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![SharePoint Online 网站的默认 SharePoint 组和权限级别。](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>第2阶段：将权限分配给具有访问组的用户
 
@@ -93,7 +93,7 @@ Office 365 的 Azure AD 组与 Office 365 组不同。 Azure AD 组显示在 Mic
   
 下面是配置为使用基于 Azure AD 的访问组的默认 SharePoint 组。
   
-![使用访问组作为默认 SharePoint Online 网站组的成员。](../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![使用访问组作为默认 SharePoint Online 网站组的成员。](../../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 在设计三个访问组时，请记住以下几点：
   
@@ -103,7 +103,7 @@ Office 365 的 Azure AD 组与 Office 365 组不同。 Azure AD 组显示在 Mic
     
 下面的示例展示了名为 ProjectX 的独立网站的 SharePoint 组和访问组。
   
-![使用名为 ProjectX 的 SharePoint Online 网站的访问组的示例。](../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![使用名为 ProjectX 的 SharePoint Online 网站的访问组的示例。](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>第3阶段：使用嵌套的 Azure AD 组
 
@@ -126,7 +126,7 @@ Office 365 的 Azure AD 组与 Office 365 组不同。 Azure AD 组显示在 Mic
   
 下面是 ProjectX 成员访问组的嵌套 Azure AD 组的示例。
   
-![对 ProjectX 网站的成员访问组使用嵌套访问组的示例。](../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![对 ProjectX 网站的成员访问组使用嵌套访问组的示例。](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 由于研究、工程和项目领导团队中的所有用户帐户都打算成为网站成员，因此将其 Azure AD 组添加到 ProjectX 成员访问组中会更加简单。
   

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260100"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085683"
 ---
 # <a name="work-with-insights"></a>使用见解
 
@@ -26,7 +26,7 @@ Microsoft 托管桌面提供了许多仪表板，在你的租户中，IT 管理�
 
 若要从 Microsoft 365 管理中心访问这些视图，请在 "**报告**" 区域中选择 "**查看详细信息**"：
 
-![右上角带有 "报告" 区域，其中包含设备报告卡和 "查看详细信息" 链接。](images/insights_overview.png)
+![右上角带有 "报告" 区域，其中包含设备报告卡和 "查看详细信息" 链接。](../../media/insights_overview.png)
 
 
 

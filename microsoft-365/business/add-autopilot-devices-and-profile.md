@@ -1,5 +1,7 @@
 ---
 title: 使用分步指南添加 Autopilot 设备和配置文件
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为你的企业设置新的 Windows 10 设备。
-ms.openlocfilehash: 5f40dac57285b83da57d4506bac58e562475522c
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: e5774b1e2079a5249e0f6e9e7142de19268253b5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38323087"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068513"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
@@ -42,7 +44,7 @@ ms.locfileid: "38323087"
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用设置指南创建设备和配置文件
 
-[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 如果尚未创建设备组或配置文件，最好的入门方式是使用分步指南。 您还可以[添加设备](create-and-edit-autopilot-devices.md)并[将配置文件分配](create-and-edit-autopilot-profiles.md)给它们，而无需使用指南。 
   
@@ -50,11 +52,11 @@ ms.locfileid: "38323087"
 
 2. 在左侧导航窗格中，选择 "**设备** \> " " **AutoPilot**"。
 
-    ![在管理中心中，选择 "设备"，然后选择 "AutoPilot"。](media/AutoPilot.png)
+    ![在管理中心中，选择 "设备"，然后选择 "AutoPilot"。](../media/AutoPilot.png)
   
 2. 在 " **AutoPilot** " 页上，单击或点击 "**启动指南**"。
     
-    ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
 3. 在 "**使用设备列表上载 .csv 文件**" 页上，浏览到已准备就绪的位置。CSV 文件，然后**打开** \> "**下一步**"。 该文件必须具有三个标头：
     

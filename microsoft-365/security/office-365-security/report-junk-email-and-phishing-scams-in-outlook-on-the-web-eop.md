@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook 网页上的用户可以使用内置的电子邮件报告选项报告垃圾邮件和网络钓鱼诈骗。 如果一封电子邮件被错误地识别为垃圾邮件，您还可以让 Microsoft 了解这一情况。
-ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 58973e59644b2e20853cfe053a18586efa5211bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957417"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082387"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>在 Outlook 网页版中报告垃圾电子邮件和钓鱼行为
 
@@ -33,7 +33,7 @@ ms.locfileid: "41957417"
 
 1. 在垃圾邮件上单击，然后在工具栏上单击“垃圾邮件”****。这会将邮件移至“垃圾邮件”文件夹，并将发件人添加到阻止的发件人列表。 
 
-   ![表示电子邮件是 Web 上 Outlook 中的垃圾邮件](../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+   ![表示电子邮件是 Web 上 Outlook 中的垃圾邮件](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
 
    > [!NOTE]
    > 或者，右键单击邮件，显示一个菜单，然后单击“标记为垃圾邮件”****。
@@ -42,7 +42,7 @@ ms.locfileid: "41957417"
 
 2. 此时会打开一个对话框，询问是否要将垃圾邮件副本发送到 Microsoft 进行分析。 单击“报告”**** 将邮件发送至 Microsoft 垃圾邮件分析团队。 （可选）如果希望在不提示的情况下自动向 Microsoft 提交将来的垃圾邮件，请选中 "**不再显示此消息**" 复选框。
 
-   ![从 Web 上的 Outlook 向 Microsoft 报告垃圾邮件](../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+   ![从 Web 上的 Outlook 向 Microsoft 报告垃圾邮件](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
 
    > [!TIP]
    > 即使选中了 "**不再显示此信息**" 复选框，以后也可以通过访问 web 上的 Outlook 中的显示设置来更改报告垃圾邮件的首选项。 （您可以通过登录名旁边的齿轮菜单访问这些设置）。
@@ -53,7 +53,7 @@ ms.locfileid: "41957417"
 
 1. 在欺诈邮件上单击，然后依次单击“垃圾邮件”**** 旁边的向下箭头和工具栏上的“钓鱼邮件”****。 Office 365 不会阻止发件人，因为欺诈邮件的发件人通常会模拟合法发件人。 如果愿意，请按照 " [Outlook 网页中的邮件和垃圾邮件](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)" 主题中的说明，将发件人添加到阻止发件人列表中。
 
-   ![表示电子邮件是 Web 上 Outlook 中的仿冒邮件](../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+   ![表示电子邮件是 Web 上 Outlook 中的仿冒邮件](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
 
    或者，右键单击邮件，显示一个菜单，然后单击“标记为钓鱼邮件”****。
 

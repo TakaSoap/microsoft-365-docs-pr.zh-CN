@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何设置和保护管理员帐户。
-ms.openlocfilehash: 6160f7458dc9a4c343c48f07d87776529c4f1326
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594817"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080565"
 ---
 # <a name="protect-your-administrator-accounts"></a>保护您的管理员帐户
 
@@ -48,18 +48,18 @@ ms.locfileid: "41594817"
 
  1. 转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>"，然后选择左侧导航中的 "**用户** \> **活动用户**"。
 
-    ![选择左侧导航中的 "用户" 和 "活动用户"](media/Activeusers.png)
+    ![选择左侧导航中的 "用户" 和 "活动用户"](../media/Activeusers.png)
 
 2. 在 "**活动用户**" 页上，选择页面顶部的 "**添加用户**"，并在新的 "**用户**" 面板上输入名称和其他信息。
 3. 展开 "**角色**" 部分，然后选择 "**全局管理员**" 以向此用户授予全局管理员访问权限。 您还可以选择 "**自定义管理员**" 并选择显示的任意角色。
 
     在 "**备选电子邮件地址**" 文本框中输入备用电子邮件。 如果您被锁定，可以使用此地址来恢复您的密码信息。对于全局管理员，还将向此地址发送帐单声明。
 
-    ![选择管理员角色](media/adminroles.png)
+    ![选择管理员角色](../media/adminroles.png)
     
 4. 在 "**产品许可证**" 部分，将 " **Microsoft 365 业务**" 的选择器移到 "**关闭**"，并将 "**创建不含产品许可证的用户** **" 设为**
 
-    ![选择产品许可证](media/productlicense.png)
+    ![选择产品许可证](../media/productlicense.png)
 
 ## <a name="create-an-emergency-admin-account"></a>创建紧急管理员帐户
 

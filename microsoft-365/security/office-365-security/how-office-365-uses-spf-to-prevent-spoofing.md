@@ -16,12 +16,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了 Office 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。 这适用于从 Office 365 发送的出站邮件。 从 Office 365 发送给 Office 365 收件人的邮件始终可通过 SPF。
-ms.openlocfilehash: f02219b19af592f9ad27ea963cb07a260c09327f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599189"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085985"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用发件人策略框架 (SPF) 来防止欺骗
 
@@ -78,7 +78,7 @@ v=spf1 \<IP 地址 #1\> \<IP 地址 #2\> \<IP 地址 #3\> \<强制规则\>
 
 SPF 最适用于从发件人到收件人的路径是直接路径的情况，例如：
 
-![关系图显示 SPF 如何在将电子邮件直接从服务器发送到服务器时对其进行身份验证。](../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
+![关系图显示 SPF 如何在将电子邮件直接从服务器发送到服务器时对其进行身份验证。](../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
 
 Woodgrovebank.com 接收邮件时，如果 IP 地址 #1 在 contoso.com 的 SPF TXT 记录中，则消息通过 SPF 检查并进行身份验证。
 
@@ -87,7 +87,7 @@ Woodgrovebank.com 接收邮件时，如果 IP 地址 #1 在 contoso.com 的 SPF 
 
 假设欺诈者找到办法欺骗 contoso.com：
 
-![关系图显示 SPF 如何在欺骗服务器发送电子邮件时对其进行身份验证。](../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
+![关系图显示 SPF 如何在欺骗服务器发送电子邮件时对其进行身份验证。](../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
 
 由于 IP 地址 #12 不在 contoso.com 的 SPF TXT 记录中，邮件无法通过 SPF 检查，收件人可以选择将其标记为垃圾邮件。
 
@@ -96,7 +96,7 @@ Woodgrovebank.com 接收邮件时，如果 IP 地址 #1 在 contoso.com 的 SPF 
 
 SPF 的一个缺点是它对转发的电子邮件不起作用。例如，假设 woodgrovebank.com 的用户已经设置了转发规则将所有电子邮件发送到 outlook.com 帐户：
 
-![关系图显示转发邮件时，SPF 如何无法对电子邮件进行身份验证。](../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
+![关系图显示转发邮件时，SPF 如何无法对电子邮件进行身份验证。](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
 
 此邮件最初可以通过 woodgrovebank.com 的 SPF 检查，但无法通过 outlook.com 的 SPF 检查，因为 IP #25 不在 contoso.com 的 SPF TXT 记录中。Outlook.com 则可能将邮件标记为垃圾邮件。若要解决此问题，请结合使用 SPF 和其他电子邮件身份验证方法（如 DKIM 和 DMARC）。
 

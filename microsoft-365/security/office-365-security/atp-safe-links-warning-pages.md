@@ -16,12 +16,12 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 获取在 Office 365 高级威胁防护工作时可能看到的警告页面的概述。
-ms.openlocfilehash: c7c3db68cfb0bc8205c5796bda7ee46d5b0604dd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef2f0fd59c7d5f8e62b0f562097fafd01d669459
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599849"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086661"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全链接警告页
 
@@ -38,37 +38,37 @@ ms.locfileid: "41599849"
 
 通过 ATP 安全链接扫描 URL。 您可能需要等待几分钟才能再次尝试链接。
 
-![ATP 正在扫描链接](../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+![ATP 正在扫描链接](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
 ### <a name="a-url-is-in-a-suspicious-email-message"></a>可疑电子邮件中的 URL
 
 该 URL 在类似于其他电子邮件的电子邮件中，类似于其他被视为可疑的电子邮件。 建议您先仔细检查电子邮件，然后再继续转到网站。
 
-![此 URL 位于可疑的电子邮件中](../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+![此 URL 位于可疑的电子邮件中](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
 ### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a>URL 位于标识为网络钓鱼尝试的邮件中
 
 该 URL 位于已标识为 "网络钓鱼" 攻击的电子邮件中。 因此，电子邮件中的所有 Url 都将被阻止。 我们建议您不要继续转到网站。
 
-![此 URL 位于标识为网络钓鱼尝试的邮件中](../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+![此 URL 位于标识为网络钓鱼尝试的邮件中](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
 ### <a name="a-site-has-been-identified-as-malicious"></a>已将网站标识为恶意
 
 该 URL 指向已被标识为恶意的网站。  <br/> 我们建议您不要继续转到网站。
 
-![此网站已被标识为恶意网站](../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+![此网站已被标识为恶意网站](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
 ### <a name="a-site-is-blocked"></a>网站被阻止
 
 为您的组织阻止该 URL。 可能会阻止 URL 的原因有多种。 我们建议您与组织的 Office 365 管理员联系。
 
-![阻止此网站](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![阻止此网站](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
 ### <a name="an-error-has-occurred"></a>出现错误
 
 出现了某种类型的错误，无法打开该 URL。
 
-![出现错误](../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+![出现错误](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
 
 ## <a name="recent-updates-to-warning-pages"></a>最近对警告页的更新
 
@@ -78,39 +78,39 @@ ms.locfileid: "41599849"
 
 原始警告页面：
 
-![有关正在进行的 URL 扫描的原始警告页面](../media/04368763-763f-43d6-94a4-a48291d36893.png)
+![有关正在进行的 URL 扫描的原始警告页面](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
 
 更新的警告页面：
 
-![ATP 正在扫描链接](../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+![ATP 正在扫描链接](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
 ### <a name="malicious-site-warning"></a>恶意网站警告
 
 原始警告页面：
 
-![关于恶意网站的原始警告页](../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+![关于恶意网站的原始警告页](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
 
 更新的警告页面：
 
-![此网站已被标识为恶意网站](../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+![此网站已被标识为恶意网站](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
 ### <a name="blocked-url-warning"></a>阻止的 URL 警告
 
 原始警告页面：
 
-![有关被阻止的 URL 的原始警告页](../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+![有关被阻止的 URL 的原始警告页](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
 
 更新的警告页面：
 
-![阻止此网站](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![阻止此网站](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
 ### <a name="error-occurred-warning-page"></a>"发生错误" 警告页
 
 原始警告页面：
 
-![原始 "发生错误" 警告页](../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+![原始 "发生错误" 警告页](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
 
 更新的警告页面：
 
-![出现错误](../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+![出现错误](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    

@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 了解有关贵组织中的新式化安全性的安全原则和建议的详细信息。
-ms.openlocfilehash: ebe1797e0a6a4b7f8bafa28b57feedbd96324093
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1b31445e431bb0a709d1f48c3db1a39fe5d464c1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599709"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086551"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>CISO 研讨会模块2：安全管理 
 
 了解如何通过集成的指导、自动化的策略实施和监控来提高对混合企业版的可视性和控制能力。
 
-- 下载 PDF 摘要：[模块2：安全管理](../media/ciso-workshop-2-security-management.pdf)
+- 下载 PDF 摘要：[模块2：安全管理](../../media/ciso-workshop-2-security-management.pdf)
 - 下载 PowerPoint 摘要：[模块2：安全管理](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-2-security-management.pptx)
 
 ## <a name="introduction-security-management-125"></a>简介：安全管理（1:25）

@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 您可以创建 Exchange 邮件流规则，以防止用户将电子邮件发送给 Microsoft 进行分析并在自己的安全过程中使用它们。
-ms.openlocfilehash: 530cc12fd83650f319da3f65e961c925a1de7409
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8655416840dc326344e2c2aea7c67486389492
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598053"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084371"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用邮件流规则来查看用户向 Microsoft 报告的内容
 
@@ -38,7 +38,7 @@ ms.locfileid: "41598053"
 
 1. 在 EAC 中，导航到 "**邮件流** \> "**规则**。
 
-2. 单击!["添加](../media/ITPro-EAC-AddIcon.gif)图标"，然后选择 "**创建新规则**"。
+2. 单击!["添加](../../media/ITPro-EAC-AddIcon.gif)图标"，然后选择 "**创建新规则**"。
 
 3. 为该规则命名，然后单击“更多选项”****。
 
@@ -46,13 +46,13 @@ ms.locfileid: "41598053"
 
 5. 在 "**指定字词或短语**" 框中，执行下列步骤：
 
-   - 类型`abuse@messaging.microsoft.com`，单击 "**添加** !["](../media/ITPro-EAC-AddIcon.gif)"添加`junk@office365.microsoft.com` " 图标，键入，然后](../media/ITPro-EAC-AddIcon.gif)单击 "**添加** ![" "添加" 图标。 这些电子邮件地址用于向 Microsoft 提交假负邮件。
+   - 类型`abuse@messaging.microsoft.com`，单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.gif)"添加`junk@office365.microsoft.com` " 图标，键入，然后](../../media/ITPro-EAC-AddIcon.gif)单击 "**添加** ![" "添加" 图标。 这些电子邮件地址用于向 Microsoft 提交假负邮件。
 
-   - 键入`phish@office365.microsoft.com` ，然后单击 "**添加** !["](../media/ITPro-EAC-AddIcon.gif)"添加" 图标。 此电子邮件地址用于将错过的网络钓鱼邮件提交给 Microsoft。
+   - 键入`phish@office365.microsoft.com` ，然后单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.gif)"添加" 图标。 此电子邮件地址用于将错过的网络钓鱼邮件提交给 Microsoft。
 
-   - 类型`false_positive@messaging.microsoft.com`，单击 **"添加** !["](../media/ITPro-EAC-AddIcon.gif)"添加`not_junk@office365.microsoft.com`" 图标，键入，然后单击](../media/ITPro-EAC-AddIcon.gif)"**添加** ![" "添加" 图标。 这些电子邮件地址用于向 Microsoft 提交误报邮件。
+   - 类型`false_positive@messaging.microsoft.com`，单击 **"添加** !["](../../media/ITPro-EAC-AddIcon.gif)"添加`not_junk@office365.microsoft.com`" 图标，键入，然后单击](../../media/ITPro-EAC-AddIcon.gif)"**添加** ![" "添加" 图标。 这些电子邮件地址用于向 Microsoft 提交误报邮件。
 
-   - 单击“**确定**”。
+   - 单击“确定”。
 
 6. 在 "**执行以下操作**" 下，选择 **"将邮件密件抄送给 ...** "，然后选择您想要在其中接收邮件的邮箱。
 

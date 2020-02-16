@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a2be9f588c2fa6d1106d0f4efa523adb304d68ca
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 8b12ec5f3b7d33f171790224a22ab55b33382187
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012444"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085861"
 ---
 # <a name="assign-licenses"></a>分配许可证
 

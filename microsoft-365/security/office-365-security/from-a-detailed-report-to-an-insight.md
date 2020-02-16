@@ -17,12 +17,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: 了解如何从详细报告移动到安全&amp;合规性中心中推荐的操作的洞察力。
-ms.openlocfilehash: 9385f7bc8bc8c2277df5e3f774015081b39f37a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599259"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086194"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>演练 - 从详细报表到见解
 
@@ -34,13 +34,13 @@ ms.locfileid: "41599259"
 
 我们来看看从详细报告到真知灼见和操作的流程。 （这是一个简短的[反垃圾邮件和反恶意软件](anti-spam-and-anti-malware-protection.md)示例。） 
   
-1. 我们从[ &amp;安全合规中心](https://protection.office.com)报告开始。 （转到 "**报表** \> "**仪表板**。） <br/>![在安全&amp;合规性中心中，转到\> "报告" 仪表板](../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. 我们从[ &amp;安全合规中心](https://protection.office.com)报告开始。 （转到 "**报表** \> "**仪表板**。） <br/>![在安全&amp;合规性中心中，转到\> "报告" 仪表板](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. 我们选择报告以获取更详细的视图。 （选择报告，如 "**威胁防护状态**报告"。）<br/>![显示见解的威胁防护状态报告](../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. 我们选择报告以获取更详细的视图。 （选择报告，如 "**威胁防护状态**报告"。）<br/>![显示见解的威胁防护状态报告](../../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. 我们注意到图表中和报告下方的见解指示器。 将鼠标指针置于 insights 标志处可提供一些其他详细信息。 （将鼠标悬停在 insights 标记上以查看其他详细信息。）
     
-4. 单击图表中的 insights 标记或有关该图表下方恶意软件的见解小组件将打开详细信息窗格。 （在图表下方，选择 "insights" 小组件。）<br/>![有关恶意软件的见解的详细信息](../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>详细信息窗格提供了要考虑的信息和建议，包括审阅策略、执行进一步的浏览和编辑状态。 （[了解有关 Office 365 中的反垃圾邮件和反恶意软件保护的详细信息](anti-spam-and-anti-malware-protection.md)。）
+4. 单击图表中的 insights 标记或有关该图表下方恶意软件的见解小组件将打开详细信息窗格。 （在图表下方，选择 "insights" 小组件。）<br/>![有关恶意软件的见解的详细信息](../../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>详细信息窗格提供了要考虑的信息和建议，包括审阅策略、执行进一步的浏览和编辑状态。 （[了解有关 Office 365 中的反垃圾邮件和反恶意软件保护的详细信息](anti-spam-and-anti-malware-protection.md)。）
     
 通过这种方式，我们可以从详细报告移动到真知灼见和推荐的操作。 
   

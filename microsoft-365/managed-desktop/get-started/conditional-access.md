@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1b91186837ad558965d675f82d013a7081c7c7ec
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 1bc5d937616cba60c5af43fe22a7c4dccf89a55e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012445"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085802"
 ---
 # <a name="adjust-conditional-access"></a>调整条件访问
 

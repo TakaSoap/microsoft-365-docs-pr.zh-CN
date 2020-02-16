@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: 了解如何为安全&amp;合规中心中的报告设置计划。
-ms.openlocfilehash: 743bb0cd71fb4a5c6ce9b875c797ad3ca54d0485
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599549"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083455"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中创建报表的日程安排
 
@@ -55,7 +55,7 @@ ms.locfileid: "41599549"
     
 3. 在报表的左上角，选择 " **+ 创建计划**"。 
     
-    ![创建计划](../media/atpfiletypes-createschedule.png)
+    ![创建计划](../../media/atpfiletypes-createschedule.png)
 
     （注意：并非所有报表都有 "**创建计划**" 按钮。）
   
@@ -63,7 +63,7 @@ ms.locfileid: "41599549"
     
 4. 保留默认设置并选择 "**创建计划**"，或选择 "**自定义计划**"。
     
-    ![您可以使用默认设置或自定义报告日程安排](../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![您可以使用默认设置或自定义报告日程安排](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
     如果选择自定义报告计划，则可以指定报告的频率、发件人的电子邮件地址和收件人的电子邮件地址。 
     

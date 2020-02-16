@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何确定仿冒邮件的原因以及在将来阻止更多的网络钓鱼邮件的原因。
-ms.openlocfilehash: b7ce09ff85c0341ea8cb901942e87dbe10ba0435
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598139"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082021"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>优化 Office 365 中的反网络钓鱼保护
 

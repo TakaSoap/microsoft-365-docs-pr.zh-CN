@@ -16,12 +16,12 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: 为了帮助保护你的信息的初始步骤，从2018年7月起，所有 Azure 信息保护符合条件的租户在默认情况下将启用 Azure 信息保护中的保护功能。 Azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。 如果你的组织具有 Office E3 服务计划或更高的服务计划，你现在将通过 Azure 信息保护在我们推出这些功能时获取一个头开始保护信息。
-ms.openlocfilehash: 6ff4ecb4dc9b0e2b0a4e8dd7a2d9573326afc6a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de3b233d4baac380608d3a209c2ffea274c20d5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599769"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083564"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Azure 信息保护中的保护功能向现有 Office 365 租户推出
 
@@ -41,7 +41,7 @@ ms.locfileid: "41599769"
 
 租户管理员可以在 Office 365 管理员门户中检查保护状态。
 
-![显示已激活 Office 365 中的权限管理的屏幕截图。](../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
+![显示已激活 Office 365 中的权限管理的屏幕截图。](../../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
 
 ## <a name="why-are-we-making-this-change"></a>为什么要进行此更改？
 
@@ -55,7 +55,7 @@ Office 365 邮件加密利用了 Azure 信息保护中的保护功能。 在对 
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>是否可以将 Azure 信息保护用于 Active Directory 权限管理服务（AD RMS）？
 
-不是。 这不是一种受支持的部署方案。 在不考虑其他自愿退出步骤的情况下，某些计算机可能会自动开始使用 Azure 权限管理服务，同时还会连接到 AD RMS 群集。 此方案不受支持且具有不可靠的结果，因此，在接下来的30天内，在我们推出这些新功能之前，请务必选择退出此更改。 有关如何选择退出的信息，请参阅 "我使用 AD RMS，如何选择退出？" ”中所述的过程安装本地化文件。 如果你更喜欢迁移，请参阅[从 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+否。 这不是一种受支持的部署方案。 在不考虑其他自愿退出步骤的情况下，某些计算机可能会自动开始使用 Azure 权限管理服务，同时还会连接到 AD RMS 群集。 此方案不受支持且具有不可靠的结果，因此，在接下来的30天内，在我们推出这些新功能之前，请务必选择退出此更改。 有关如何选择退出的信息，请参阅 "我使用 AD RMS，如何选择退出？" ”中所述的过程安装本地化文件。 如果你更喜欢迁移，请参阅[从 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>如何知道我是否在使用 AD RMS？
 
@@ -85,6 +85,6 @@ Office 365 邮件加密利用了 Azure 信息保护中的保护功能。 在对 
 
 启用此功能后，如果你未选择，则可以开始使用[Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)中宣布推出的新版本的 Office 365 邮件加密，并利用 Azure 信息保护的加密和保护功能。
 
-![在 Outlook 网页版中显示 OME 保护邮件的屏幕截图。](../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
+![在 Outlook 网页版中显示 OME 保护邮件的屏幕截图。](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
 有关新的增强功能的详细信息，请参阅[Office 365 邮件加密](../../compliance/ome.md)。

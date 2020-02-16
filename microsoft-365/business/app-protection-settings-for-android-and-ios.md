@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: c0c8883fb120db90d81e57fbb80206d6ce4eccbf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f4366230805c50fe82183431e3bd2bdfa9fddd68
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593305"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068631"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
-![指向的标题https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
+![指向的标题https://aka.ms/aboutM365preview。](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>创建应用管理策略
 
@@ -49,7 +49,7 @@ ms.locfileid: "41593305"
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
-    ![Screenshot of Create a policy with Application management for Android selected](media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
+    ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
 6. Next decide **Who will get these settings?** 如果不想使用默认的 "**所有用户**" 安全组，请选择 "**更改**" \> **，选择获取这些设置的**安全组。
     
@@ -83,7 +83,7 @@ ms.locfileid: "41593305"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |说明  <br/> |
+|设置  <br/> |说明  <br/> |
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备未用于您在此处指定的天数，则将自动删除存储在该设备上的所有工作文件。  <br/> |
 |强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开**"，则工作文件的唯一可用保存位置是 OneDrive for business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。 即使设备丢失或被盗，也没有人能够读取您的公司数据。  <br/> |
@@ -94,7 +94,7 @@ ms.locfileid: "41593305"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |说明  <br/> |
+|设置  <br/> |说明  <br/> |
 |需要 PIN 或指纹才能访问 Office 应用  <br/> |如果此设置为 **，则用户必须**提供另一种形式的身份验证，以及其用户名和密码，然后才能在其移动设备上使用 Office 应用。<br/> |
 |登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |
 |要求用户在 Office 应用空闲以下时间后重新登录  <br/> |此设置确定用户在提示用户重新登录之前可以处于空闲状态的时间。  <br/> |

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 针对市场活动的 Microsoft 365 的分步注册。 保护您的活动从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: fefba1ddbf5feead873e0367502bbe2bcc530efb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594763"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080521"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>注册 Microsoft 365 以获取市场活动 
 
@@ -79,7 +79,7 @@ ms.locfileid: "41594763"
 1. 在您对 Microsoft 365 市场活动电子邮件的邀请中，选择 "**注册您的组织 >**"。 这会将你带到 Microsoft 365 注册。
 2. 在 "**欢迎，让我们了解你**的信息" 页上，单击或点击 "**要将其添加到现有订阅中？"。登录**。
     
-    ![选择右上角的 "登录"。](media/addtoexisting.png)
+    ![选择右上角的 "登录"。](../media/addtoexisting.png)
 3. 在 "登录" 页面上，输入现有订阅的管理员别名，例如*<span></span>Alice@VoteContoso. org*，选择 "**下一步**"，输入您的密码，然后选择 **"登录**"。
 4. **如何查找？** 输入您拥有的用户数并选择 "**下一步**"。 您无需在此处输入促销代码，因为它已包含在邀请 URL 中。
 5. 在 "**您想要如何支付？** " 页面上，输入您的付款方式，然后选择 "**下订单**"。

@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962339"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085819"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft 托管桌面产品生命周期
 
@@ -33,7 +33,7 @@ Microsoft 托管桌面优势最终用户确保他们始终使用提供最佳性�
 
 本图中描述了整个序列：
 
-![生命周期日程表：从产品的常规可用性开始，"主要可用性" 持续两年。 在这段时间内，证书窗口将结束，有时设备是载入。 在主可用性结束时，产品将进行存档，三年的 "宽限期" 将开始。 如果设备为载入，则在设备被从管理中删除之前，使用了3年期。 在宽限期结束时，我们会将产品从目录中删除。](images/non-dark1-edits.PNG)
+![生命周期日程表：从产品的常规可用性开始，"主要可用性" 持续两年。 在这段时间内，证书窗口将结束，有时设备是载入。 在主可用性结束时，产品将进行存档，三年的 "宽限期" 将开始。 如果设备为载入，则在设备被从管理中删除之前，使用了3年期。 在宽限期结束时，我们会将产品从目录中删除。](../../media/non-dark1-edits.PNG)
 
 产品保留在最多24个月的目录中，但<em>设备</em>在管理下的时间将根据其各自的注册日期保留3年。 实际上，每个产品都有三个重要日期，但每个设备只有一个。 对于产品，这三个日期都是根据<em>审批日期</em>计算得出的，因此，我们会在批准时发布这些日期，以便您始终能够提前查看并规划产品的整个生命周期。
 
@@ -58,7 +58,7 @@ Microsoft 托管桌面优势最终用户确保他们始终使用提供最佳性�
 
 产品生命周期在制造商公开发布产品时启动：
 
-![显示发布和评估期的生命周期时间线](images/non-dark3-edits.PNG)
+![显示发布和评估期的生命周期时间线](../../media/non-dark3-edits.PNG)
 
 在此阶段中，Microsoft 托管桌面工程团队将对产品进行评估和认证。 团队使用 Windows、市场看法、库存和通道准备情况评估诸如可靠性和性能等方面的内容，以及其他一些内容。 此过程通常大约需要6周。
   
@@ -71,7 +71,7 @@ Microsoft 托管桌面将仅在其前6个月的可用性范围内评估用于认
 
 此时间段是产品可用性的核心：
 
-![显示主要 availibility 的生命周期日程表](images/non-dark4-edits.PNG)
+![显示主要 availibility 的生命周期日程表](../../media/non-dark4-edits.PNG)
 
 在此期间内注册的任何设备都将从 Microsoft 托管桌面接收全部三年的支持（如蓝色时间线所示）。 此时段一直持续到结束日期设置为从一般可用性日期起的24个月。
 
@@ -84,7 +84,7 @@ Microsoft 托管桌面将仅在其前6个月的可用性范围内评估用于认
 如果你最近在注册 Microsoft 托管桌面之前购买了大量经批准的设备，你仍然可以注册，但你将不会收到全部三年的管理。 相反，它们将因退休日期而不符合要求，无论他们何时注册都是如此。 在幕后，Microsoft 托管桌面会将这些设备视为在主可用性的最后一天进行了注册。 在此图中，你可以通过注意蓝色和绿色设备在同一天结束，而不考虑其在注册中的年差异，来查看这一方案：
 
 
-![显示宽限期的生命周期时间线](images/non-dark2-edits.PNG)
+![显示宽限期的生命周期时间线](../../media/non-dark2-edits.PNG)
 
 上表中的 Fabrikam 便携式计算机示例说明了这种情况： 
 

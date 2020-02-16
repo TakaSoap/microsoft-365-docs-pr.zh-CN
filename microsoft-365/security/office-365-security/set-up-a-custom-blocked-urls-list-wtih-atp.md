@@ -17,12 +17,12 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用 Office 365 高级威胁防护为您的组织设置阻止的 Url 的列表。 阻止的 Url 将根据 ATP 安全链接策略应用于电子邮件和 Office 文档。
-ms.openlocfilehash: bb5eb8572aee11be1c4264863b572f014b281985
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598399"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088083"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义已阻止 Url 列表
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598399"
 
 使用[Office 365 高级威胁防护](office-365-atp.md)（ATP），您的组织可以拥有已阻止的网站地址（url）的自定义列表。 在阻止 URL 的情况下，单击指向被阻止 URL 的链接的用户将被带到类似于以下图像的[警告页面](atp-safe-links-warning-pages.md)： 
   
-![阻止此网站](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![阻止此网站](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
 "阻止的 Url" 列表由组织的 Office 365 安全团队定义，该列表适用于组织中由 Office 365 ATP 安全链接策略涵盖的所有人。 
   
@@ -58,7 +58,7 @@ ms.locfileid: "41598399"
     
 2. 在左侧导航中的 "**威胁管理**" 下，选择 "**策略** \> **安全链接**"。
     
-3. 在 "**适用于整个组织的策略**" 部分，选择 "**默认**"，然后选择 "**编辑**" （"编辑" 按钮类似于铅笔）。<br/>![单击 "编辑" 编辑安全链接保护的默认策略](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>这使您可以查看已阻止 Url 的列表。 首先，你可能没有在此处列出的任何 Url。<br/>!["默认安全链接策略" 中的 "阻止的 Url" 列表](../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. 在 "**适用于整个组织的策略**" 部分，选择 "**默认**"，然后选择 "**编辑**" （"编辑" 按钮类似于铅笔）。<br/>![单击 "编辑" 编辑安全链接保护的默认策略](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>这使您可以查看已阻止 Url 的列表。 首先，你可能没有在此处列出的任何 Url。<br/>!["默认安全链接策略" 中的 "阻止的 Url" 列表](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. 选择 "**输入一个有效的 url** " 框，键入 URL，然后选择加号（**+**）。 
 

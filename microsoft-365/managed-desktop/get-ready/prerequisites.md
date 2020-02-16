@@ -1,19 +1,19 @@
 ---
-title: Microsoft 托管桌面的先决条件
+title: Microsoft 托管桌面的系统必备
 description: ''
 keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6595b6496c8fb2e71542b6aae9f35e4f40c08aa4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b729712a188c105fdf8a38e208124c2ef4c27a33
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981713"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085871"
 ---
-# <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的先决条件
+# <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的系统必备
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
 <!--from Prerequisites -->
@@ -45,7 +45,7 @@ Microsoft 托管桌面需要特定的许可证选项才能正常运行。 这些
 
 |许可证选项 |适用于这些许可证产品中的*任何*一种 |Microsoft 托管桌面如何使用它|
 |-------------|-------------|-------------|
-|Azure Active Directory 高级 P1     |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5*安全加载项<br>-企业移动性 + 安全性 E5<br>-企业移动性 + 安全 E3<br>-Azure Active Directory 高级 P1|  提供对 Microsoft 云服务的访问权限;允许 AutoPilot 注册设备      |
+|Azure Active Directory Premium P1     |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5*安全加载项<br>-企业移动性 + 安全性 E5<br>-企业移动性 + 安全 E3<br>-Azure Active Directory 高级 P1|  提供对 Microsoft 云服务的访问权限;允许 AutoPilot 注册设备      |
 |Microsoft Intune | -Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5*安全加载项<br>-企业移动性 + 安全性 E5<br>-企业移动性 + 安全 E3<br>-Microsoft Intune  |  注册设备、部署更新和管理设备的必要       |
 |Windows 10 企业版  |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5*安全加载项<br>-Windows 10 企业版 E3<br>-Windows 10 企业版 E5 | 提供 Windows 10 的企业版功能       |
 |Microsoft Defender 高级威胁防护 | -Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5*安全加载项<br>-Windows 10 企业版 E5<br>-Microsoft Defender 高级威胁防护   |  提供对威胁的检测、监控、警报和响应  |

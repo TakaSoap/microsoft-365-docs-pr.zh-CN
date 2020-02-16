@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 针对市场活动的 Microsoft 365 的安装程序概述
-ms.openlocfilehash: cca8866241a3759c022a362d39f7b208dff72580
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d2dac24488e5d29b0e888ba09f5359cba6b1f614
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594170"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080473"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>为市场活动设置 Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "41594170"
 ## <a name="admins-set-up-microsoft-365-for-campaigns"></a>管理员：为市场活动设置 Microsoft 365
 下图介绍了管理员如何为市场活动设置 Microsoft 365。
 
-![为市场活动设置 Microsoft 365 的步骤](media/M365-democracy-SetUpProcess.png)
+![为市场活动设置 Microsoft 365 的步骤](../media/M365-democracy-SetUpProcess.png)
 
 对于符合特殊定价的市场活动，请[从 microsoft 请求邀请](https://m365forcampaigns.microsoft.com/)开始，然后[注册 microsoft 365 以获得市场活动](m365-campaigns-sign-up.md)。 若要完成安装程序，请[运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)配置核心设置。
 
@@ -51,7 +51,7 @@ ms.locfileid: "41594170"
  
 用户需要花费几分钟的时间设置设备以与此环境配合使用。 对于关键用户（黑客的最高价值目标），您可以设置和预配置新设备。 这有助于他们在使用 Microsoft 365 凭据登录时开始使用。 
 
-![用户设备设置过程](media/m365-democracy-user-device-setup.png)
+![用户设备设置过程](../media/m365-democracy-user-device-setup.png)
   
 设置用户设备的步骤： 
 1. 每个用户[设置其移动设备](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)。 
