@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595469"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076752"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>查看关于标记的内容的活动（预览版）
 
 数据分类概述和内容浏览器选项卡使你可以查看已发现和已标记的内容以及该内容的位置。 活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。 活动资源管理器提供历史视图。
 
-![占位符屏幕截图概述活动资源管理器](media/data-classification-activity-explorer-1.png)
+![占位符屏幕截图概述活动资源管理器](../media/data-classification-activity-explorer-1.png)
 
 可通过以下方式筛选数据：
 
@@ -71,11 +71,11 @@ Microsoft 365 监视和报告跨 SharePoint Online、OneDrive 和终结点的 12
 
 设置筛选器后，可以执行以下操作：
 
-- 将鼠标悬停在条形图的某一部分，可查看属于该类别“![鼠标悬停在的活动资源管理器](media/data-classification-activity-explorer-hover-over-2.png)”的项目数。
+- 将鼠标悬停在条形图的某一部分，可查看属于该类别“![鼠标悬停在的活动资源管理器](../media/data-classification-activity-explorer-hover-over-2.png)”的项目数。
 - 导出数据
 - 从列表中选择任何给定项，并在弹出菜单中查看操作的详细信息
 
-![活动资源管理器详细信息弹出菜单](media/data-classification-activity-explorer-fly-out-3.png)
+![活动资源管理器详细信息弹出菜单](../media/data-classification-activity-explorer-fly-out-3.png)
 
 ## <a name="see-also"></a>另请参阅
 - [敏感度标签](sensitivity-labels.md)

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: eba95bdb0bf442e143a3f7f3b701e8f46d641655
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 05f43149485bb368f1082180031913293be6d8e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595679"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078172"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 
@@ -135,7 +135,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
 
 下面来看看最简单方案：假设你希望 DLP 策略标识的内容包含采用九位数格式的组织员工 ID。因此，模式是指规则中用于标识九位数的正则表达式。任何包含九位数的内容都符合模式。
   
-![包含一个模式的实体的关系图](media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![包含一个模式的实体的关系图](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 虽然简单，但此模式可能会标识许多误报内容，因为包含任何九位数的匹配内容不一定是员工 ID。
   
@@ -145,7 +145,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
   
 例如，若要更有胜算地标识包含员工 ID 的内容，除了九位数外，还可以定义另一种模式来标识聘用日期，并再定义一种模式来标识聘用日期和关键字（如“员工 ID”）。
   
-![包含多个模式的实体的关系图](media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![包含多个模式的实体的关系图](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 对于此结构，请务必注意以下几点：
   
@@ -162,7 +162,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
   
 接下来，生成实体 GUID。虽然生成 GUID 的方法有很多，但可通过在 PowerShell 中键入 [guid]::NewGuid() 轻松完成。稍后，也将把实体 GUID 添加到本地化字符串部分。
   
-![显示 Rule 和 Entity 元素的 XML 标记](media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![显示 Rule 和 Entity 元素的 XML 标记](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>要匹配什么模式？[Pattern 元素、IdMatch 元素、Regex 元素]
 
@@ -170,11 +170,11 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
   
 以下所有模式的共同点是，全都引用同一个正则表达式，以查找两边是空格 (\s) ... (\s) 的九位数 (\d{9})。此正则表达式由 IdMatch 元素引用，同时也是所有查找“员工 ID”实体的模式的通用要求。IdMatch 是模式尝试匹配的标识符，如员工 ID、信用卡号或身份证号。每个 Pattern 元素只能有一个 IdMatch 元素。
   
-![显示引用一个 Regex 元素的多个 Pattern 元素的 XML 标记](media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![显示引用一个 Regex 元素的多个 Pattern 元素的 XML 标记](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
 若符合，模式返回可用于 DLP 策略中条件的计数和可信度。向 DLP 策略添加用于检测敏感信息类型的条件时，可编辑计数和可信度，如下所示。本主题稍后将介绍可信度（亦称为“匹配准确度”）。
   
-![“实例计数”和“匹配准确度”选项](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![“实例计数”和“匹配准确度”选项](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 创建正则表达式时，请注意一些潜在问题。例如，如果编写并上传的正则表达式标识过多内容，这可能会影响性能。若要详细了解这些潜在问题，请参阅后面的[要注意的潜在验证问题](#potential-validation-issues-to-be-aware-of)部分。
   
@@ -186,7 +186,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
   
 可选的 minCount 特性可用于指定，必须为每个 Match 元素找到多少个匹配实例。例如，可指定至少必须找到关键字列表中的两个关键字时，才算符合模式。
   
-![显示包含 minCount 特性的 Match 元素的 XML 标记](media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![显示包含 minCount 特性的 Match 元素的 XML 标记](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>关键字 [Keyword、Group 和 Term 元素，matchStyle 和 caseSensitive 特性]
 
@@ -200,7 +200,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
     
 最后，可使用 Term 元素的 caseSensitive 特性，以指定内容必须与关键字完全匹配，包括字母大小写。
   
-![显示引用关键字的 Match 元素的 XML 标记](media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![显示引用关键字的 Match 元素的 XML 标记](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
   
 ### <a name="regular-expressions-regex-element"></a>正则表达式 [Regex 元素]
 
@@ -214,7 +214,7 @@ Office 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型]
   
 有关详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md)。
   
-![显示引用内置函数的 Match 元素的 XML 标记](media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![显示引用内置函数的 Match 元素的 XML 标记](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>不同证据组合 [Any 元素、minMatches 和 maxMatches 特性]
 
@@ -276,15 +276,15 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
 
 敏感信息类型要查找表示员工 ID 的模式，此模式还查找确证性证据，如“ID”等关键字。很明显，此证据越接近，模式就越有可能是实际员工 ID。可使用 Entity 元素的必需特性 patternsProximity，确定模式中的另一证据必须与实体有多接近。
   
-![显示 patternsProximity 特性的 XML 标记](media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![显示 patternsProximity 特性的 XML 标记](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
   
 对于实体中的每种模式，patternsProximity 特性值都定义针对相应模式指定的其他所有 Match 与 IdMatch 位置的距离（以 Unicode 字符数为单位）。接近度窗口以 IdMatch 位置为关键主体，向 IdMatch 左右延伸。
   
-![接近度窗口关系图](media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![接近度窗口关系图](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
   
 下面的示例展示了接近度窗口如何影响模式匹配，其中“员工 ID”自定义实体的 IdMatch 元素要求至少必须有一个关键字或日期确证性匹配。仅 ID1 匹配，因为对于 ID2 和 ID3，在接近度窗口中找不到任何确证性证据或只找到部分确证性证据。
   
-![确证性证据和接近度窗口的关系图](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![确证性证据和接近度窗口的关系图](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
   
 请注意，对于电子邮件，邮件正文和每个附件均被视为独立项。也就是说，接近度窗口不会超越各项末端。对于每一项（附件或正文），idMatch 和确证性证据都必须驻留在相应项中。
   
@@ -294,7 +294,7 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
   
 Pattern 元素有必需特性 confidenceLevel。可将 confidenceLevel 值（介于 1 和 100 之间的整数）视为实体中每个模式的唯一 ID，必须向实体中的模式分配不同的可信度。整数值是否精确并不重要，只需选取对合规性团队有意义的数字即可。上传自定义敏感信息类型和创建 DLP 策略后，可以在创建的规则条件中引用这些可信度。
   
-![显示包含不同 confidenceLevel 特性值的 Pattern 元素的 XML 标记](media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
+![显示包含不同 confidenceLevel 特性值的 Pattern 元素的 XML 标记](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 除了每个 Pattern 的 confidenceLevel 之外，Entity 还有 recommendedConfidence 特性。recommendedConfidence 特性可被视为规则的默认可信度。如果你在 DLP 策略中创建规则时未指定规则要使用的可信度，规则就会根据实体的建议可信度来执行匹配。
   
@@ -302,11 +302,11 @@ Pattern 元素有必需特性 confidenceLevel。可将 confidenceLevel 值（介
 
 如果合规性团队使用 Office 365 安全与合规中心创建不同区域设置和不同语言的 DLP 策略，你可以提供自定义敏感信息类型的名称和说明的本地化版本。这样，如果合规性团队在使用 Office 365 时采用你所支持的语言，就会在 UI 中看到本地化名称。
   
-![“实例计数”和“匹配准确度”选项](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![“实例计数”和“匹配准确度”选项](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Rule 元素必须包含 LocalizedStrings 元素，因为其中包含引用自定义实体 GUID 的 Resource 元素。相应地，每个 Resource 元素都包含一个或多个 Name 和 Description 元素，这些元素使用 langcode 特性来提供特定语言的本地化字符串。
   
-![显示 LocalizedStrings 元素内容的 XML 标记](media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![显示 LocalizedStrings 元素内容的 XML 标记](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
 请注意，本地化字符串只能用于指定自定义敏感信息类型在安全与合规中心 UI 中的显示方式。不能使用本地化字符串来提供不同本地化版本的关键字列表或正则表达式。
   
@@ -342,7 +342,7 @@ Version 元素也很重要。当你首次上传规则包时，Office 365 会记�
 
 完成后，RulePack 元素应如下所示。
   
-![显示 RulePack 元素的 XML 标记](media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![显示 RulePack 元素的 XML 标记](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
   
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 

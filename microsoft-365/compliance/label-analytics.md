@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和敏感度标签后，你将希望了解它们如何在租户中使用。 借助 Microsoft 365 合规中心和 Microsoft 365 安全中心中的标签分析，你可以快速查看最常用的标签以及它们的应用位置。
-ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600579"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072262"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>使用标签分析查看标签使用情况
 
@@ -36,7 +36,7 @@ ms.locfileid: "41600579"
 
 可以在 [Microsoft 365 合规中心](https://compliance.microsoft.com/labelanalytics)或 [Microsoft 365 安全中心](https://security.microsoft.com/labelanalytics) > “**分类**” > “**标签分析**”中找到标签分析。
 
-![“标签分析”页](media/label-analytics-page.png)
+![“标签分析”页](../media/label-analytics-page.png)
 
 ## <a name="sensitivity-label-usage"></a>敏感度标签使用情况
 
@@ -50,7 +50,7 @@ ms.locfileid: "41600579"
 - 若要查看每个顶部标签的计数，请指向条形图，然后阅读显示的工具提示。
 - 该报告显示每个应用应用敏感度标签的位置（而每个位置都显示保留标签）。
 
-![敏感度标签使用情况报告](media/sensitivity-label-usage-report.png)
+![敏感度标签使用情况报告](../media/sensitivity-label-usage-report.png)
 
 ## <a name="retention-label-usage"></a>保留标签使用情况
 
@@ -63,7 +63,7 @@ ms.locfileid: "41600579"
 - 该报告显示每个位置应用保留标签的位置（而每个应用都显示敏感度标签）。
 - 对于保留标签，这是租户中所有时间数据的汇总；它没有筛选到特定的日期范围。 相比之下，[标签活动资源管理器](view-label-activity-for-documents.md)仅显示过去 30 天的数据。
 
-![保留标签使用情况报告](media/retention-label-usage-report.png)
+![保留标签使用情况报告](../media/retention-label-usage-report.png)
 
 ## <a name="view-all-content-with-a-specific-retention-label"></a>查看具有特定保留标签的所有内容
 
@@ -71,15 +71,15 @@ ms.locfileid: "41600579"
 
 首先，选择报告底部的“**查看详细信息**”。
 
-![保留标签使用情况报告底部的“查看详细信息”选项](media/retention-label-usage-view-details.png)
+![保留标签使用情况报告底部的“查看详细信息”选项](../media/retention-label-usage-view-details.png)
 
 然后在右侧窗格中选择保留标签 >“**查看项目**”。
 
-![右侧窗格中的“查看项目”选项](media/retention-label-usage-explore-items.png)
+![右侧窗格中的“查看项目”选项](../media/retention-label-usage-explore-items.png)
 
 对于该标签，可以选择“**活动**”选项卡以按位置查看具有该标签的项目数。
 
-![保留标签的“活动”选项卡](media/retention-label-usage-activity-tab.png)
+![保留标签的“活动”选项卡](../media/retention-label-usage-activity-tab.png)
 
 也可以选择“**具有此标签的项目**”选项卡。然后可以深入了解特定位置：
 
@@ -88,7 +88,7 @@ ms.locfileid: "41600579"
 
 选择邮箱或站点集时，可以在该位置中查看具有该保留标签的项目的列表。
 
-![具有此标签的项目，显示具有该保留标签的所有项目](media/retention-label-usage-content-explorer.png)
+![具有此标签的项目，显示具有该保留标签的所有项目](../media/retention-label-usage-content-explorer.png)
 
 ## <a name="permissions"></a>权限
 

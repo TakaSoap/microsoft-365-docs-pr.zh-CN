@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
-ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 726f21416a3e83a9c3024d810c4335ea263b3c20
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596209"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078008"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全与合规中心内创建自定义敏感信息类型
@@ -69,7 +69,7 @@ ms.locfileid: "41596209"
 
 1. 在安全与合规中心内，依次转到“分类”****\>“敏感信息类型”****，再单击“创建”****。
 
-    ![“敏感信息类型”和“创建”按钮的位置](media/scc-cust-sens-info-type-new.png)
+    ![“敏感信息类型”和“创建”按钮的位置](../media/scc-cust-sens-info-type-new.png)
 
 2. 在随即打开的“选择名称和说明”**** 页中，输入以下值：
 
@@ -77,7 +77,7 @@ ms.locfileid: "41596209"
 
   - **说明**：检测 9 位数 Contoso 员工 ID 号。
 
-    ![名称和说明页](media/scc-cust-sens-info-type-new-name-desc.png)
+    ![名称和说明页](../media/scc-cust-sens-info-type-new-name-desc.png)
 
     完成后，单击“下一步”****。
 
@@ -101,17 +101,17 @@ ms.locfileid: "41596209"
 
     - 保留“字符临近度”**** 默认值 300。
 
-    ![匹配页面要求](media/scc-cust-sens-info-type-new-reqs.png)
+    ![匹配页面要求](../media/scc-cust-sens-info-type-new-reqs.png)
 
     完成后，单击“下一步”****。
 
 4. 在随即打开的“检查并最终确定”**** 页中，检查设置并单击“完成”****。
 
-    ![检查并完成页面](media/scc-cust-sens-info-type-new-review.png)
+    ![检查并完成页面](../media/scc-cust-sens-info-type-new-review.png)
 
 5. 下一页建议通过单击“是”**** 测试新自定义敏感信息类型。有关详细信息，请参阅[在安全与合规中心内测试自定义敏感信息类型](#test-custom-sensitive-information-types-in-the-security--compliance-center)。若要稍后测试规则，请单击“否”****。
 
-    ![测试建议页](media/scc-cust-sens-info-type-new-test.png)
+    ![测试建议页](../media/scc-cust-sens-info-type-new-test.png)
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
@@ -131,7 +131,7 @@ ms.locfileid: "41596209"
 
 在安全与合规中心内，依次转到“分类”****\>“敏感信息类型”****，选择要修改的自定义敏感信息类型，然后单击“编辑”****。
 
-  ![“敏感信息类型”和“编辑”按钮的位置](media/scc-cust-sens-info-type-edit.png)
+  ![“敏感信息类型”和“编辑”按钮的位置](../media/scc-cust-sens-info-type-edit.png)
 
 随后看到的选项与在安全与合规中心内创建自定义敏感信息类型时相同。有关详细信息，请参阅[在安全与合规中心内创建自定义敏感信息类型](#create-custom-sensitive-information-types-in-the-security--compliance-center)。
 
@@ -155,7 +155,7 @@ ms.locfileid: "41596209"
 
 2. 在随即打开的弹出窗口中，单击“删除”****（或“删除多个敏感信息类型”****，如果选择了多个类型的话）。
 
-    ![“敏感信息类型”和“删除”按钮的位置](media/scc-cust-sens-info-type-delete.png)
+    ![“敏感信息类型”和“删除”按钮的位置](../media/scc-cust-sens-info-type-delete.png)
 
 3. 在随即显示的警告消息中，单击“是”****。
 
@@ -169,14 +169,14 @@ ms.locfileid: "41596209"
 
 2. 选择要测试的一个或多个自定义敏感信息类型。在随即打开的弹出窗口中，单击“测试类型”****（或“测试多个敏感信息类型”****，如果选择了多个类型的话）。
 
-    ![“敏感信息类型”和“测试类型”按钮的位置](media/scc-cust-sens-info-type-test.png)
+    ![“敏感信息类型”和“测试类型”按钮的位置](../media/scc-cust-sens-info-type-test.png)
 
 3. 在随即打开的“上传测试文件”**** 页面上，拖放文件或单击“浏览”**** 并选择文件，以上传要测试的文档。
 
-    ![“上传测试文件”页](media/scc-cust-sens-info-type-test-upload.png)
+    ![“上传测试文件”页](../media/scc-cust-sens-info-type-test-upload.png)
 
 4. 单击“测试”**** 按钮，以测试文档的模式匹配情况。
 
 5. 在“匹配结果”**** 页上，单击“完成”****。
 
-    ![匹配结果](media/scc-cust-sens-info-type-test-results.png)
+    ![匹配结果](../media/scc-cust-sens-info-type-test-results.png)

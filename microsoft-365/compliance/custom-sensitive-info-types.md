@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 获取 DLP 自定义敏感信息类型概述。
-ms.openlocfilehash: a1afaeb3359ae9705909ff6c23c1f951804aa4c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b95501c08c2ac53eed6101abfa9f4b814c49f940
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595509"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076971"
 ---
 # <a name="custom-sensitive-information-types"></a>自定义敏感信息类型
 
@@ -39,13 +39,13 @@ Office 365 包括许多你可直接在组织中使用的内置敏感信息类型
 
 - **字符临近度**：主要模式和支持性证据越临近，检测到的内容就越有可能是要查找的内容。可指定主要模式和支持性证据之间的字符距离（亦称为_临近度窗口_），如下图所示：
 
-    ![确证性证据和临近度窗口的关系图](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+    ![确证性证据和临近度窗口的关系图](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 - **可信度**：支持性证据越多，匹配结果就越有可能包含要查找的敏感信息。可以为使用更多证据检测到的匹配结果指定更高可信度。
 
   如果符合，模式会返回可用于 DLP 策略条件的计数和可信度。向 DLP 策略添加用于检测敏感信息类型的条件时，可编辑计数和可信度，如下图所示：
 
-    ![“实例计数”和“匹配准确度”选项](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+    ![“实例计数”和“匹配准确度”选项](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
 ## <a name="creating-custom-sensitive-information-types"></a>创建自定义敏感信息类型
 

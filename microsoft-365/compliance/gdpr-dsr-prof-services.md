@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 88dc03613a6a2b77ed9cb440d8c8d80c7cfbae2b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596489"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073320"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft 支持和专业服务与 GDPR 和 CCPA 数据主体请求
 
@@ -132,7 +132,7 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 若要识别特定服务活动，客户需在其所有服务活动中进行搜索。对于顶级客户，客户的合同服务经理（简称“CSM”）能够查看在合同日程安排下创建的所有支持请求 (SR)。对于非顶级客户，也有同等的支持服务活动门户，如通过 Online Services 支持区域。
 
-![Search in SMC](media/Prof-Serv-DSR-Doc-Final_image3.png)CSM 可以转到在 Support.Microsoft.Com（[https://support.microsoft.com/\<local语言代码\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)）（简称“SMC”）上的门户，选择并查看“支持请求”。 （请注意：在 URL 中，请替换为你的本地语言代码）。
+![Search in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)CSM 可以转到在 Support.Microsoft.Com（[https://support.microsoft.com/\<local语言代码\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)）（简称“SMC”）上的门户，选择并查看“支持请求”。 （请注意：在 URL 中，请替换为你的本地语言代码）。
 
 >[!IMPORTANT]
 >除了 SMC 中的案例历史记录之外，客户还在 Microsoft 在支持服务活动期间收集的文件中包含最终用户的个人数据（或者，在客户的许可下从 Online Service 中移除）。 相关示例包括，客户的 Exchange 邮箱、Azure 虚拟机或数据库的副本。 此个人数据可能有也可能没有在特定服务活动（即票证）的案例历史记录中提及。 若要查看该数据，客户联系人必须是特定的经过身份验证（通过 AAD 或 MSA）的支持请求联系人，并且已收到 Microsoft 支持数据传输和管理工具 (DTM) 中工作区的 URL。 客户联系人将有权访问这些文件，但不能进行全局查看，且 SMC 不会指出文件是否存在。

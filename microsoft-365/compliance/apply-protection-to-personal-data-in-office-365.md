@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用数据丢失防护 (DLP) 策略保护 Office 365 中的个人数据。
-ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596059"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079736"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用保护
 
@@ -46,7 +46,7 @@ ms.locfileid: "41596059"
 
 有关详细信息，请参阅[数据丢失防护策略概述](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
-![用于创建数据丢失防护策略的选项](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
+![用于创建数据丢失防护策略的选项](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
 此图显示了用于创建 DLP 策略的选项。
 
@@ -172,7 +172,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 下图详细说明了为保护个人数据访问可以应用的其他保护。
 
-![用于保护个人数据访问的其他保护](Media/Apply-protection-to-personal-data-in-Office-365-image2.png)
+![用于保护个人数据访问的其他保护](../media/Apply-protection-to-personal-data-in-Office-365-image2.png)
 
 为便于访问，下表提供了上图中的相同信息。
 
@@ -222,7 +222,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 使用 SharePoint 中的权限提供或限制用户对网站或其内容的访问权限。向默认的 SharePoint 组中添加单个用户或 Azure Active Directory 组。或者，创建自定义组并进行更细化的控制。
 
-![从“完全控制”到“仅查看”的权限级别](Media/Apply-protection-to-personal-data-in-Office-365-image3.png)
+![从“完全控制”到“仅查看”的权限级别](../media/Apply-protection-to-personal-data-in-Office-365-image3.png)
 
 此图绘制了从“完全控制”到“仅查看”的权限级别。下表包含相同的信息。
 
@@ -368,7 +368,7 @@ Microsoft 建议为访问服务的标识和设备配置保护。用于保护 Off
 
 下图说明了云服务（SaaS、PaaS）、帐户类型（租户域帐户与 B2B 帐户）和服务访问功能之间的关联。请务必注意哪些功能可用于 B2B 帐户。
 
-![云服务、帐户类型和访问功能](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
+![云服务、帐户类型和访问功能](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
 为便于访问，本节的剩余部分对此图进行了说明。
 

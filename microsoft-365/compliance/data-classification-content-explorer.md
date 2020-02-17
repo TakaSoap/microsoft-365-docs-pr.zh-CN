@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661899"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076421"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>使用数据分类内容资源管理器（预览版）
 
@@ -45,7 +45,7 @@ ms.locfileid: "41661899"
 
 [保留标签](labels.md)可用于定义带标记的项目将保留多长时间以及删除项目前要采取哪些操作。 这些标签可手动应用，也可通过策略自动应用。 它们在帮助组织持续遵守法律法规要求方面发挥着作用。
 
-![内容资源管理器折叠的屏幕截图](media/data-classification-content-explorer-1.png)
+![内容资源管理器折叠的屏幕截图](../media/data-classification-content-explorer-1.png)
 
 ### <a name="permissions"></a>权限
 

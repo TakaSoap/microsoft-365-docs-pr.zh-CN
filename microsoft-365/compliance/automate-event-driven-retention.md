@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主题介绍如何使用 Microsoft 365 REST API 设置业务流程以通过事件自动执行保留。
-ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 692671ca5e7d956cb168ac0de2e409e7023cfd04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596319"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079060"
 ---
 # <a name="automate-event-based-retention"></a>自动执行基于事件的保留
 
@@ -121,13 +121,13 @@ Rest API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 下图显示如何将多个标签与单个事件关联。 在此处，员工薪酬标签下的所有文件和员工福利标签下的所有文件都与单个事件相关联，即员工离开组织。 每个不同的文件都有不同的保留期。 因此，当员工离开组织时，每个标签中的这些文件都会经历不同的保留期。 为每个员工的每种文件类型或标签触发所有这些不同的保留期是一项极具挑战的任务。 想象一下，为多名员工做这件事将会如何。
 
-![事件类型、事件和标签的关系图](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
+![事件类型、事件和标签的关系图](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 为多个员工触发这些不同保留期的自动化流程将节省时间、无错误且极为高效。
 
 **为此场景配置基于事件的自动保留：**
 
-![针对员工离开组织的场景的角色和操作关系图](media/automate-event-driven-retention-employee-termination-diagram.png)
+![针对员工离开组织的场景的角色和操作关系图](../media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - 管理员为文档集创建员工文件夹，如 Jane Doe、John Smith。
 
@@ -151,9 +151,9 @@ Rest API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 步骤 1 - 使用 Microsoft 365 REST API 创建用于创建事件的流
 
-![使用流创建事件](media/automate-event-driven-retention-flow-1.png)
+![使用流创建事件](../media/automate-event-driven-retention-flow-1.png)
 
-![使用流调用 REST API](media/automate-event-driven-retention-flow-2.png)
+![使用流调用 REST API](../media/automate-event-driven-retention-flow-2.png)
 
 ##### <a name="create-an-event"></a>创建事件
 
@@ -423,7 +423,7 @@ Rest API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 **为此场景配置基于事件的自动保留：**
 
-![针对合同到期场景的角色和任务关系图](media/automate-event-driven-retention-contract-expiration.png)
+![针对合同到期场景的角色和任务关系图](../media/automate-event-driven-retention-contract-expiration.png)
 
   - 管理员为每种合同类型创建一个包含各种文件夹的 SharePoint 库。
 
@@ -451,7 +451,7 @@ Rest API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 **为此场景配置基于事件的自动保留：**
 
-![产品生命周期场景的角色和任务关系图](media/automate-event-driven-retention-product-lifecycle-expiration.png)
+![产品生命周期场景的角色和任务关系图](../media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
   - 管理员在文档集中创建产品文件夹，如产品 1、产品 2 等。
 

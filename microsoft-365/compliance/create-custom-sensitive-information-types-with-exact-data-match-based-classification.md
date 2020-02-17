@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用基于精确数据匹配的分类创建自定义敏感信息类型。
-ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: 044801416c7db4ddec8936a496862c432a63acde
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836722"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077592"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "41836722"
 - 更安全地处理敏感信息以及
 - 与多种 Microsoft 云服务一起使用。
 
-![基于 EDM 的分类](media/EDMClassification.png)
+![基于 EDM 的分类](../media/EDMClassification.png)
 
 基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天或每周刷新一次，最多可包含 1000 万行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如 [数据丢失防护策略](data-loss-prevention-policies.md) (DLP) 或 [Microsoft Cloud App Security 文件策略](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
 
@@ -473,7 +473,7 @@ Office 365 DLP for Exchange Online（电子邮件）、OneDrive for Business（�
 
 9. 在“名称”部分中，指定规则的名称和说明。 **** 
 
-10. 在“条件”部分的“+ 添加条件”列表中，选择“内容包含敏感类型”。 ****  ****  ****<br/>![内容包含敏感信息类型](media/edm-dlp-newrule-conditions.png)<br/>
+10. 在“条件”部分的“+ 添加条件”列表中，选择“内容包含敏感类型”。 ****  ****  ****<br/>![内容包含敏感信息类型](../media/edm-dlp-newrule-conditions.png)<br/>
 
 11. 搜索你在设置规则包时创建的敏感信息类型，然后选择“+ 添加”。 ****  
     然后选择“完成”。 ****

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774218"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070126"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -87,7 +87,7 @@ ms.locfileid: "41774218"
   
 向 OneDrive 帐户或 SharePoint 网站分配保留策略后，内容有两条路可走：
 
-![SharePoint 和 OneDrive 中的内容生命周期关系图](media/Retention_Diagram_of_retention_flow_in_sites.png)
+![SharePoint 和 OneDrive 中的内容生命周期关系图](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. **如果内容在保持期内遭修改或删除**：则会在保留库中创建在分配保留策略时存在的原始内容的副本。 此时，计时器作业会定期运行，并发现保持期已到期的项，并将这些项移到第二阶段回收站（其中的项在第 93 天结束时永久删除）。 第二阶段回收站对最终用户不可见（仅第一阶段回收站可见），但网站集管理员可以在其中查看和还原内容。
 
@@ -110,7 +110,7 @@ ms.locfileid: "41774218"
   
 向邮箱或公用文件夹分配保留策略后，内容有两条路可走：
 
-![电子邮件和公用文件夹中的保留流关系图](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![电子邮件和公用文件夹中的保留流关系图](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **如果用户在保留期内修改或永久删除项**（按 SHIFT+DELETE 或从“已删除项”文件夹中删除）：项移至（如果用户编辑项，则项复制到）“可恢复项”文件夹中。随后，有一个流程会定期运行，并确定保留期到期的项，这些项在保留期到期后的 14 天内被永久删除。请注意，默认设置为 14 天，但也可最多配置为 30 天。
     
@@ -139,7 +139,7 @@ ms.locfileid: "41774218"
   
 可以选择是否想在保留期限结束后永久删除内容。 保留策略也可直接删除旧内容而不进行保留。 请参阅下一部分。
   
-![用于设置内容保留的页](media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![用于设置内容保留的页](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
   
 ## <a name="deleting-content-thats-older-than-a-specific-age"></a>删除超过特定年限的内容
 
@@ -147,19 +147,19 @@ ms.locfileid: "41774218"
   
 如果保留策略删除内容，请务必了解为保留策略指定的时间期限是从文件创建或修改时开始计算，而不是从策略分配时开始计算。
   
-![内容删除设置](media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
+![内容删除设置](../media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
   
 例如，假设创建的保留策略删除年限超过 3 年的内容，且保留策略分配给所有 OneDrive 帐户，其中包含许多在四五年前创建的内容。在此示例中，许多内容会在保留策略首次分配后很快就被删除。因此，**删除内容的保留策略可能会对内容产生相当大的影响**。 
   
 因此，首次将保留策略分配到网站集之前，应先考虑现有内容的年限，以及保留策略可能会对此内容产生的影响。我们还建议在分配策略前向用户传达新策略，让用户有时间评估策略可能会产生的影响。请注意，在创建保留策略前检查策略设置时会看到以下警告。
   
-![内容删除警告](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
+![内容删除警告](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
 ## <a name="advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions"></a>将保留策略只应用于满足特定条件的内容的高级设置
 
 保留策略可应用于其中所含位置上的全部内容，你也可以选择将保留策略只应用于包含特定关键字或[特定类型敏感信息](what-the-sensitive-information-types-look-for.md)的内容。
   
-![高级保留选项](media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
+![高级保留选项](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
   
 ### <a name="retain-content-that-contains-specific-keywords"></a>保留包含特定关键字的内容
 
@@ -169,13 +169,13 @@ ms.locfileid: "41774218"
   
 基于查询的保留策略使用搜索索引来标识内容。
   
-![查询编辑器](media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
+![查询编辑器](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
   
 ### <a name="retain-content-that-contains-sensitive-information"></a>保留包含敏感信息的内容
 
 此外，还可以将保留策略只应用于包含[特定类型敏感信息](what-the-sensitive-information-types-look-for.md)的内容。例如，可选择将唯一保留要求只应用于包含个人身份信息（PII，如纳税人标识号、身份证号或护照号）的内容。
   
-![用于选择敏感信息类型的页](media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
+![用于选择敏感信息类型的页](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
 注意：
   
@@ -201,7 +201,7 @@ ms.locfileid: "41774218"
     
 - Exchange 公用文件夹
     
-![用于选择所有位置的选项](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![用于选择所有位置的选项](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
   
 组织范围保留策略的其他重要功能包括：
   
@@ -215,7 +215,7 @@ ms.locfileid: "41774218"
   
 与组织范围策略一样，如果策略应用于任意组合的位置整体，策略可包含任意多个邮箱或网站。例如，如果策略包含所有 Exchange 电子邮件和所有 SharePoint 网站，那么全部网站和邮箱都会包含在内，无论有多少个。对于 Exchange，在保留策略应用后新建的任何邮箱都会自动继承策略。
  
-![“选择位置”页](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
+![“选择位置”页](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>包含或排除特定位置、用户或组的策略
 
@@ -235,7 +235,7 @@ ms.locfileid: "41774218"
   
 选择 Skype for Business 用户时，选择列标题中的“**名称**”框可快速包含所有用户。 但是，请务必了解每个用户在策略中都被算作一个特定的包含内容。 因此，当包括的用户超过 1,000 位时，会应用上一部分中所述的限制。 这里所说的选择所有 Skype 用户不同于组织范围的策略在默认情况下包含所有 Skype 用户。 
   
-![用于选择 Skype 用户的页](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
+![用于选择 Skype 用户的页](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
 请注意，Outlook 中的“对话历史记录”**** 文件夹是一项与 Skype 存档无关的功能。“对话历史记录”**** 可以由最终用户禁用，但 Skype 存档是通过将 Skype 对话副本存储在用户无法访问但电子数据展示可访问的隐藏文件夹中而完成。
 
@@ -250,7 +250,7 @@ Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中�
   
 为团队分配保留策略后，聊天和频道消息可以遵循以下两种路径之一：
 
-![Teams 聊天和频道消息的保留流关系图](media/TeamsRetentionLifecycle.png)
+![Teams 聊天和频道消息的保留流关系图](../media/TeamsRetentionLifecycle.png)
 
 1. **如果在保留期内用户修改或删除了聊天或频道消息**，则该消息将移动（或在编辑的情况下复制）到 SubstrateHolds 文件夹（它是每个用户或组邮箱中的隐藏文件夹），并保留在该文件夹中，直到保留期到期。 在保留期到期之日，该消息将被永久删除。
 
@@ -278,7 +278,7 @@ Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中�
   
 应用于 Teams 的保留策略可使用[保留锁定](#locking-a-retention-policy)。
   
-![聊天和信道消息的 Teams 位置](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
+![聊天和信道消息的 Teams 位置](../media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 > [!NOTE]
 > 如果为组织中的 Skype 或 Teams 位置创建保留策略，则当用户在 Outlook 桌面客户端中查看邮箱文件夹的属性时，这些策略中的某个策略将显示为默认文件夹策略。 这是 Outlook 中的错误显示问题，也是一个[已知问题](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 应作为默认文件夹策略显示的是应用于该文件夹的邮箱保留策略。 Skype 或 Teams 保留策略不适用于用户的邮箱。  
@@ -309,23 +309,23 @@ Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中�
 
 其次，若要查看保留策略列表并找到要锁定的策略的名称，请运行 `Get-RetentionCompliancePolicy`。
 
-![PowerShell 中的保留策略列表](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+![PowerShell 中的保留策略列表](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 第三，若要在保留策略上启用保留锁定，请运行 `Set-RetentionCompliancePolicy` 并将 `RestrictiveRetention` 参数设置为 true。 例如：
 
 `Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
 
-![PowerShell 中的 RestrictiveRetention 参数](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+![PowerShell 中的 RestrictiveRetention 参数](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
 运行该 cmdlet 后，你将看到确认提示。选择“**全是**”。
 
-![用于确认你要在 PowerShell 中锁定保留策略的提示](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+![用于确认你要在 PowerShell 中锁定保留策略的提示](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 现在，为保留策略提供了“保留锁定”功能。 如果运行 `Get-RetentionCompliancePolicy`，则 `RestrictiveRetention` 参数将设置为 true。 例如：
 
 `Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
 
-![已在 PowerShell 中显示所有参数的锁定策略](media/retention-policy-preservation-lock-locked-policy.PNG)
+![已在 PowerShell 中显示所有参数的锁定策略](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="releasing-a-retention-policy"></a>解除保留策略
 
@@ -337,7 +337,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 
 内容可能或甚至很有可能有多个应用的保留策略，每个策略的操作（保留、删除或先保留再删除）和保留期都不同。优先级是什么？最高优先级是，一个策略保留的内容一定不得被另一个策略永久删除。
   
-![保留原则关系图](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![保留原则关系图](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 若要了解不同保留策略是如何应用于内容的，请注意下面这些保留原则：
   

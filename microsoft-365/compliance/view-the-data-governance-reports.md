@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全与合规中心内的数据管理报告，可快速查看标签是否按预期应用于内容。
-ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597209"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068783"
 ---
 # <a name="view-the-data-governance-reports"></a>查看数据管理报告
 
@@ -38,10 +38,10 @@ ms.locfileid: "41597209"
   
 这些报告可在安全 &amp; 合规中心 \> **信息治理** \> **仪表板**中找到。
   
-![显示过去 90 天内标签趋势的图表](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
+![显示过去 90 天内标签趋势的图表](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
 可以按日期（最多 90 天）和位置（Exchange、SharePoint 和 OneDrive for Business）筛选数据管理报告。最新数据最长可能需要 24 小时，才能显示在报告中。
   
-![数据管理报告的筛选器](media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
+![数据管理报告的筛选器](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
 

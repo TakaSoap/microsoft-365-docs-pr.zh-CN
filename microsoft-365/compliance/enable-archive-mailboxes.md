@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的安全 & 合规性中心来启用存档邮箱, 以便支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: dfbbb3fa238f7b04fab6742f3eb0c041f39c72d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 36a5f2003232d55fd82965773b38a26c4fa29b33
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593255"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074720"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全与合规中心中启用存档邮箱
   
@@ -49,7 +49,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
 4. 在邮箱的列表中，选择要启用存档邮箱的用户。
     
-    ![单击细节窗格中的“启用”，为选定用户启用存档邮箱](media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
+    ![单击细节窗格中的“启用”，为选定用户启用存档邮箱](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
   
 5. 在所选用户的详细信息窗格中, 单击**启用**。 
     
@@ -57,7 +57,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
 6. 单击“是”启用存档邮箱。 
     
-    可能需要一些时间才会创建存档邮箱。 创建后，所选用户的详细信息窗格中将显示**存档邮箱：已启用**。 可能需要单击**刷新** ![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)才能更新详细信息窗格中的信息。 
+    可能需要一些时间才会创建存档邮箱。 创建后，所选用户的详细信息窗格中将显示**存档邮箱：已启用**。 可能需要单击**刷新** ![刷新图标](../media/O365-MDM-Policy-RefreshIcon.gif)才能更新详细信息窗格中的信息。 
     
 > [!TIP]
 > 您也可以通过选择多个禁用存档邮箱的用户（使用 Shift 或 Ctrl 键）批量启用存档邮箱。选择多个邮箱后，在详细信息窗格中，单击“启用”****。 
@@ -86,7 +86,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
 6. 单击“是”以禁用存档邮箱。 
     
-    可能需要一些时间才会禁用存档邮箱。 禁用后，所选用户的详细信息窗格中将显示**存档邮箱：已禁用**。 可能需要单击**刷新** ![刷新图标](media/O365-MDM-Policy-RefreshIcon.gif)才能更新详细信息窗格中的信息。 
+    可能需要一些时间才会禁用存档邮箱。 禁用后，所选用户的详细信息窗格中将显示**存档邮箱：已禁用**。 可能需要单击**刷新** ![刷新图标](../media/O365-MDM-Policy-RefreshIcon.gif)才能更新详细信息窗格中的信息。 
     
 > [!TIP]
 > 您也可以通过选择多个启用存档邮箱的用户（使用 Shift 或 Ctrl 键）批量禁用存档邮箱。选择多个邮箱后，在详细信息窗格中，单击“禁用”****。 

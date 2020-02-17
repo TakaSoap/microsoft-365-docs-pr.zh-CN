@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全与合规中心内的标签活动资源管理器，可快速搜索和查看过去 30 天内 SharePoint 和 OneDrive for Business 中所有内容的标签活动。此为实时数据，可便于你明确了解租户中发生了什么。
-ms.openlocfilehash: eebe1938195740565f064bbac20608255aa5ef73
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597229"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068867"
 ---
 # <a name="view-label-activity-for-documents"></a>查看文档的标签活动
 
@@ -44,7 +44,7 @@ ms.locfileid: "41597229"
   
 请注意，必须有 Office 365 企业版 E5 订阅，才能使用标签活动资源管理器。
   
-![标签活动资源管理器](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![标签活动资源管理器](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## <a name="view-label-activities-for-files-or-folders"></a>查看文件或文件夹的标签活动
 
@@ -52,7 +52,7 @@ ms.locfileid: "41597229"
   
 建议查看文件夹的标签活动，因为文件夹中的所有文件都会继承文件夹的标签（已显式应用有标签的文件除外）。因此，标记文件夹可能会影响大量文件。有关详细信息，请参阅[向 SharePoint 库、文件夹或文档集中的所有内容应用默认保留标签](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
   
-![用于显示文件和文件夹的标签活动的下拉菜单](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
+![用于显示文件和文件夹的标签活动的下拉菜单](../media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   
 ### <a name="label-activities"></a>标签活动
 
@@ -62,12 +62,12 @@ ms.locfileid: "41597229"
 
  “标签更改”**** 包括可能存在风险的标签**删除**或**更改**操作。使用此视图，可快速查看这类存在风险的操作，以及谁执行了这些操作。在图表下面的活动列表中，可选择一个文件，再单击此文件在右侧细节窗格中的链接。 
   
-![标签活动的细节窗格](media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
+![标签活动的细节窗格](../media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
   
 ## <a name="filter-label-activity"></a>筛选标签活动
 
 可快速筛选数据，以查看特定标签、文件或用户的所有标签活动。也可以按位置（SharePoint 还是 OneDrive for Business）以及标签是手动应用还是自动应用来筛选标签活动。
   
-![标签活动筛选器](media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
+![标签活动筛选器](../media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
   
 

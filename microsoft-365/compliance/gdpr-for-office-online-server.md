@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 747959fcdf8840644e4b7de4de02eb250d062423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e16f206c858d35dd2894b44d398e375c0a59fde5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596449"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073251"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>用于 Office Web Apps Server 和 Office Online Server 的 GDPR
 
@@ -24,7 +24,7 @@ Office Online Server 和 Office Web Apps Server 遥测数据以 ULS 日志的形
 
 每个日志行都包含一个 CorrelationID。相关的日志行使用相同的 CorrelationID。每个 CorrelationID 都与一个 SessionID 绑定，并且一个 SessionID 可能与许多 CorrelationID 相关。每个 SessionID 可能与单 个UserID 相关，但某些会话可能是匿名的，因此没有关联的 UserID。因此，为了确定哪些数据与特定用户相关联，可以从单个 UserID 映射到与该用户相关联的 SessionID，从那些 SessionID 映射到相关联的 CorrelationID，以及从 CorrelationID 映射到这些相关性中的所有日志。请参阅下图了解不同 ID 之间的关系。
 
-![](media/gdpr-for-office-online-server-image1.jpg)
+![](../media/gdpr-for-office-online-server-image1.jpg)
 
 ## <a name="gathering-logs"></a>收集日志
 

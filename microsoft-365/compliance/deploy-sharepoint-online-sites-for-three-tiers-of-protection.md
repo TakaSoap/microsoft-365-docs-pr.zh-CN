@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：为各种级别的信息保护创建和配置 SharePoint Online 团队网站。
-ms.openlocfilehash: 1f67dd1956059162902aefdb194e5e514d063778
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 1827c4a19cfd31a236dfbd58e454c610cae14477
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075506"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署具有三层保护的 SharePoint Online 网站
 
@@ -41,7 +41,7 @@ ms.locfileid: "41855251"
 
 下面是生成的配置。
   
-![适用于公共 SharePoint Online 团队网站的基线级保护。](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![适用于公共 SharePoint Online 团队网站的基线级保护。](../media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>私人
 
@@ -49,7 +49,7 @@ ms.locfileid: "41855251"
   
 下面是生成的配置。
   
-![适用于专用 SharePoint Online 团队网站的基线级保护。](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![适用于专用 SharePoint Online 团队网站的基线级保护。](../media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>敏感 SharePoint Online 团队网站
 
@@ -70,7 +70,7 @@ ms.locfileid: "41855251"
 
 下面是生成的配置。
   
-![适用于独立 SharePoint Online 团队网站的敏感级保护。](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![适用于独立 SharePoint Online 团队网站的敏感级保护。](../media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 通过其中一个访问组的组成员身份，网站成员现可对网站资源进行安全协作。
   
@@ -94,7 +94,7 @@ ms.locfileid: "41855251"
 
 下面是生成的配置。
   
-![适用于独立 SharePoint Online 团队网站的高度机密级保护。](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![适用于独立 SharePoint Online 团队网站的高度机密级保护。](../media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 通过其中一个访问组的组成员身份，网站成员现可对网站资源进行安全协作。
   

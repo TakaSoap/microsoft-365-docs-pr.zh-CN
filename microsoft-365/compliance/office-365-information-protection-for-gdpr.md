@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 此解决方案演示了如何保护 Office 365 服务中存储的敏感数据。
-ms.openlocfilehash: a6bc231c82e65e7361cdcda7c2087bc48a55dcc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e930b0397e071a9270556041aa396ccfe5c17228
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597839"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071120"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>针对 GDPR 的 Office 365 信息保护
 
@@ -30,7 +30,7 @@ ms.locfileid: "41597839"
   
 此解决方案包括针对发现、分类、保护和监视个人数据的指导性建议。该解决方案以一般数据保护条例 (GDPR) 为例，但用户可以采用同一流程实现对许多其他条例的符合性。
 
-[![针对 GDPR 的 Office 365 信息保护海报的缩略图。](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
+[![针对 GDPR 的 Office 365 信息保护海报的缩略图。](../media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
 
 [PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
   

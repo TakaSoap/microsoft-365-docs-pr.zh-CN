@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: d54867ad5a469fb429d3edbe012aab9288d76e0f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 53cf720694a52ea18e73a49817418abb489d8c72
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594341"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073398"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的 Azure 数据主体请求
 
@@ -95,15 +95,15 @@ Microsoft 让你能够通过 Azure 门户访问、删除和导出某些客户数
 
 2. 选择“**Azure Active Directory**”。
 
-     ![选择“所有服务”](media/gdpr-azure-dsr-azure-portal.png)
+     ![选择“所有服务”](../media/gdpr-azure-dsr-azure-portal.png)
 
 3. 选择“**用户**”。
 
-     ![选择用户](media/gdpr-azure-dsr-azure-all-users.png)
+     ![选择用户](../media/gdpr-azure-dsr-azure-all-users.png)
 
 4. 在“**所有用户**”边栏选项卡上，从列表中选择用户，然后在所选用户的边栏选项卡上，选择“**配置文件**”以查看可能包含个人数据的用户配置文件信息。
 
-    ![选择配置文件](media/gdpr-azure-dsr-azure-user-profile.png)
+    ![选择配置文件](../media/gdpr-azure-dsr-azure-user-profile.png)
 
 5. 如果需要添加或更改用户配置文件信息，可以在命令栏中选择“**编辑**”，然后在做出更改后选择“**保存**”。
 
@@ -143,19 +143,19 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 2. 选择“**Azure Active Directory**”。
 
-    ![选择“所有服务”](media/gdpr-azure-dsr-azure-portal.png)
+    ![选择“所有服务”](../media/gdpr-azure-dsr-azure-portal.png)
 
 3. 选择“**用户**”。
 
-    ![选择用户](media/gdpr-azure-dsr-azure-all-users.png)
+    ![选择用户](../media/gdpr-azure-dsr-azure-all-users.png)
 
 4. 在“**所有用户**”边栏选项卡上，从列表中选择用户，然后在所选用户的边栏选项卡上，选择“**配置文件**”以查看需要更正或更新的用户配置文件信息。
 
-    ![选择配置文件](media/gdpr-azure-dsr-azure-user-profile.png)
+    ![选择配置文件](../media/gdpr-azure-dsr-azure-user-profile.png)
 
 5. 通过在命令栏中选择“**编辑**”，然后在做出更改后选择“ **保存**”，可更正或更新包括工作信息在内的用户配置文件信息。
 
-    ![选择配置文件](media/gdpr-azure-dsr-azure-edit-user-profile.png)
+    ![选择配置文件](../media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### <a name="service-specific-interfaces"></a>特定于服务的界面
 
@@ -192,26 +192,26 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 2. 选择“**Azure Active Directory**”。
 
-    ![选择“所有服务”](media/gdpr-azure-dsr-azure-portal.png)
+    ![选择“所有服务”](../media/gdpr-azure-dsr-azure-portal.png)
 
 3. 选择“**用户**”。
 
-    ![选择用户](media/gdpr-azure-dsr-azure-all-users.png)
+    ![选择用户](../media/gdpr-azure-dsr-azure-all-users.png)
 
 4. 选中想要删除的用户旁边的框，选择“删除用户”****，然后在询问你是否要删除用户时在框中选择“是”****。
 
-    ![用户管理](media/gdpr-azure-dsr-azure-selected-user.png)
+    ![用户管理](../media/gdpr-azure-dsr-azure-selected-user.png)
 
 5. 在“ **所有用户**” 边栏选项卡上，选择“ **已删除的用户**”。
 
-    ![查看用户配置文件](media/gdpr-azure-dsr-azure-deleted-user.png)
+    ![查看用户配置文件](../media/gdpr-azure-dsr-azure-deleted-user.png)
 
 4. 再次选择同一用户，在命令栏中选择“ **永久删除**”，然后在询问你是否确定时在框中选择“ **是**” 。
 
 >[!IMPORTANT]  
 >请注意，通过单击“是”，**** 将永久且不可挽回地删除用户和所有关联的数据及系统生成日志。如果错误地执行了该操作，必须手动将用户添加回租户。关联的数据和系统生成日志是不可恢复的。
 
-   ![查看用户工作信息](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
+   ![查看用户工作信息](../media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### <a name="service-specific-interfaces"></a>特定于服务的界面
 
@@ -287,15 +287,15 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 1. 打开 Azure 门户，选择“所有服务”****，在筛选器中键入“策略”**，然后选择“策略”****。
 
-     ![“所有服务”筛选器 ](media/gdpr-azure-dsr-azure-policy.png)
+     ![“所有服务”筛选器 ](../media/gdpr-azure-dsr-azure-policy.png)
 
 2. 在“策略”边栏选项卡中，**** 依次选择“用户策略”****、“管理用户请求”**** 和“添加导出请求”****。
 
-    ![添加导出请求 ](media/gdpr-azure-dsr-azure-add-export-request.png)
+    ![添加导出请求 ](../media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. 完成“导出数据请求”****：
 
-    ![新建导出数据请求](media/gdpr-azure-dsr-azure-export-data-request.png)
+    ![新建导出数据请求](../media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **用户。** 键入请求导出的 Azure Active Directory 用户的电子邮件地址。
 - **订阅。** 选择要用于报告资源使用情况和为服务开具帐单的帐户。这也是 Azure 存储帐户所在的位置。

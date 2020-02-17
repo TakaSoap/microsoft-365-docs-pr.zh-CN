@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
-ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
+ms.openlocfilehash: c7b945ea464cbb18ae19eaa9f9e4a8df0313b0c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41779027"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073532"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Office 365 数据主体请求
 
@@ -100,14 +100,14 @@ Office 365 组织可能包含由基于云的服务和本地服务器产品组合
 
 | | |
 | :---: | :---:|
-![日历图标](media/O365-DSR-Doc-Final_image3.png) <br> 日历 | ![SharePoint 图标](media/o365-sharepoint-64x64.png) <br> SharePoint  |
-| ![Excel 图标](media/o365-excel-64x64.png) <br> Excel | ![Skype for Business 图标](media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
-| ![Office Lens 图标](media/o365-lens-64x64.png) <br> Office Lens | ![任务图标](media/O365-DSR-Doc-Final_image8.png) <br> 任务 |
-| ![OneDrive 图标](media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams 图标](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote 图标](media/o365-onenote-64x64.png) <br> OneNote| ![待办操作图标](media/o365-todo-64x64.png) <br> 待办事项 |
-| ![Outlook 图标](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![视频图标](media/O365-DSR-Doc-Final_image14.png) <br> 视频 |
-| ![人员图标](media/O365-DSR-Doc-Final_image15.png) <br> 人员 | ![Visio 图标](media/o365-visio-64x64.png) <br> Visio |
-| ![PowerPoint 图标](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word 图标](media/o365-word-64x64.png) <br> Word
+![日历图标](../media/O365-DSR-Doc-Final_image3.png) <br> 日历 | ![SharePoint 图标](../media/o365-sharepoint-64x64.png) <br> SharePoint  |
+| ![Excel 图标](../media/o365-excel-64x64.png) <br> Excel | ![Skype for Business 图标](../media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
+| ![Office Lens 图标](../media/o365-lens-64x64.png) <br> Office Lens | ![任务图标](../media/O365-DSR-Doc-Final_image8.png) <br> 任务 |
+| ![OneDrive 图标](../media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams 图标](../media/o365-teams-64x64.png) <br> Teams |
+| ![OneNote 图标](../media/o365-onenote-64x64.png) <br> OneNote| ![待办操作图标](../media/o365-todo-64x64.png) <br> 待办事项 |
+| ![Outlook 图标](../media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![视频图标](../media/O365-DSR-Doc-Final_image14.png) <br> 视频 |
+| ![人员图标](../media/O365-DSR-Doc-Final_image15.png) <br> 人员 | ![Visio 图标](../media/o365-visio-64x64.png) <br> Visio |
+| ![PowerPoint 图标](../media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word 图标](../media/o365-word-64x64.png) <br> Word
 ||
 
 >[!NOTE]
@@ -196,7 +196,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![关键字对话框](media/O365-DSR-Doc_image18.png)
+![关键字对话框](../media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>示例 2
 
@@ -206,7 +206,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![关键字对话框](media/O365-DSR-Doc_image19.png)
+![关键字对话框](../media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>示例 3
 
@@ -218,7 +218,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![关键字对话框](media/O365-DSR-Doc_image20.png)
+![关键字对话框](../media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>处理内容搜索中的部分索引项
 
@@ -435,13 +435,13 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 导出和下载项目：
 
 1. 在安全与合规中心打开内容搜索。
-2. 在搜索飞出页面上，单击![下载图标](media/o365-dsr_image21.png)“**更多**”，然后单击“**导出结果**”。 你还可导出报告。
+2. 在搜索飞出页面上，单击![下载图标](../media/o365-dsr_image21.png)“**更多**”，然后单击“**导出结果**”。 你还可导出报告。
 3. 完成“**导出结果**”飞出页面上的各个部分。请务必使用滚动条查看所有导出选项。
 4. 返回安全与合规中心的内容搜索页面，并单击“**导出**”选项卡。
 5. 单击“**刷新**”更新页面。
 6. 在“**名称**”列中，单击刚刚创建的导出作业。 导出作业的名称为内容搜索名称追加 **\_Export**。
 7. 在导出飞出页面上，单击“**导出密钥**”下的“**复制到剪贴板**”。 在步骤 10 中，将使用此密钥下载搜索结果
-8. 在飞出页面顶部，单击![下载图标](media/o365-dsr_image21.png)“**下载结果**”。
+8. 在飞出页面顶部，单击![下载图标](../media/o365-dsr_image21.png)“**下载结果**”。
 9. 如果系统提示安装 **Microsoft Office 365 电子数据展示导出工具**，请单击“**安装**”。
 10. 在“**电子数据展示导出工具**”中，将在步骤 7 中复制的导出密钥粘贴在相应的框中。
 11. 单击“**浏览**”指定要下载搜索结果文件的位置。
@@ -630,11 +630,11 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 
 ||||
 |:-----:|:-----:|:-----:|:-----:|
-| ![Access 图标](media/o365-access-64x64.png) <br> [Access](#access) | ![Office 图标](media/O365-DSR-Doc_image22.png) <br> [Business App <br> for Office 365](#business-apps-for-office-365) | ![Office 图标](media/O365-DSR-Doc_image22.png) <br> [教育版](#education)|
-| ![Flow 图标](media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms 图标](media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala 图标](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
-| ![Planner 图标](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps 图标](media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI 图标](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project 图标](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher 图标](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream 图标](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway 图标](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard 图标](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-|![Yammer 图标](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+| ![Access 图标](../media/o365-access-64x64.png) <br> [Access](#access) | ![Office 图标](../media/O365-DSR-Doc_image22.png) <br> [Business App <br> for Office 365](#business-apps-for-office-365) | ![Office 图标](../media/O365-DSR-Doc_image22.png) <br> [教育版](#education)|
+| ![Flow 图标](../media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms 图标](../media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala 图标](../media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
+| ![Planner 图标](../media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps 图标](../media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI 图标](../media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
+|![Project 图标](../media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher 图标](../media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream 图标](../media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway 图标](../media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard 图标](../media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer 图标](../media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access

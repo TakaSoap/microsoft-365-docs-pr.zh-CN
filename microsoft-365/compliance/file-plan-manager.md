@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594573"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074126"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
@@ -29,7 +29,7 @@ ms.locfileid: "41594573"
 
 若要访问安全与合规中心中的文件计划管理器，请转到“**记录管理**” > “**文件计划**”。
 
-![文件计划页面](media/file-plan-page.png)
+![文件计划页面](../media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>访问文件计划管理器
 
@@ -89,7 +89,7 @@ ms.locfileid: "41594573"
     - 自动删除
     - 需要评审(亦称为“处置评审”)
 
-![文件计划中的“标签设置”](media/file-plan-label-columns.png)
+![文件计划中的“标签设置”](../media/file-plan-label-columns.png)
 
 ### <a name="retention-label-file-plan-descriptors-columns"></a>保留标签文件计划描述符列
 
@@ -99,11 +99,11 @@ ms.locfileid: "41594573"
 
 下图展示了创建或编辑保留标签时有关文件计划描述符的步骤。
 
-![文件计划描述符](media/file-plan-descriptors.png)
+![文件计划描述符](../media/file-plan-descriptors.png)
 
 下图展示了文件计划管理器的“**标签**”选项卡上的文件计划描述符列。
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>导出所有现有保留标签以分析和/或执行离线评审
 
@@ -111,11 +111,11 @@ ms.locfileid: "41594573"
 
 若要导出所有保留标签，请在“**文件计划**”页面上，依次选择“**文件计划操作**”\>“**导出标签**”。
 
-![文件计划导出选项](media/file-plan-export-labels-option.png)
+![文件计划导出选项](../media/file-plan-export-labels-option.png)
 
 此时，包含所有现有保留标签的 *.csv 文件打开。
 
-![包含所有保留标签的 CSV 文件](media/file-plan-csv-file.png)
+![包含所有保留标签的 CSV 文件](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>向文件计划导入保留标签
 
@@ -125,13 +125,13 @@ ms.locfileid: "41594573"
 
 1. 在“**文件计划**”页面上，转到“**文件计划操作**” > “**导入标签**”。
 
-   ![文件计划导入选项](media/file-plan-import-labels-option.png)
+   ![文件计划导入选项](../media/file-plan-import-labels-option.png)
 
-   ![空白文件计划模板下载选项](media/file-plan-blank-template-option.png)
+   ![空白文件计划模板下载选项](../media/file-plan-blank-template-option.png)
 
 2. 下载空白模板以导入新的保留标签。 或者，你也可以从导出组织中的现有保留标签时导出的 .csv 文件开始。
 
-   ![在 Excel 中打开的空白文件计划模板](media/file-plan-blank-template.png)
+   ![在 Excel 中打开的空白文件计划模板](../media/file-plan-blank-template.png)
 
 3. 填写模板。 下文介绍了文件计划模板中每个属性的属性和有效值。<br/>
 
@@ -159,16 +159,16 @@ ms.locfileid: "41594573"
 
    下面是包含有关保留标签的信息的模板示例。
 
-   ![填写了信息的文件计划模板](media/file-plan-filled-out-template.png)
+   ![填写了信息的文件计划模板](../media/file-plan-filled-out-template.png)
 
 4. 在“导入文件计划向导”页面的“步骤 3”下，单击“**浏览文件**”以上传已填写的模板。 
 
    文件计划管理器会验证条目，并显示导入统计信息。
 
-   ![文件计划导入统计信息](media/file-plan-import-statistics.png)
+   ![文件计划导入统计信息](../media/file-plan-import-statistics.png)
 
    如果出现验证错误，文件计划导入将继续验证导入文件中的每个条目，并显示导入文件中引用行/行编号的所有错误，复制显示的错误结果，以便能够轻松返回导入文件并更正错误。
 
 5. 导入完成后，返回到文件计划管理器，以将新保留标签与新的或现有的保留标签策略相关联。
 
-   ![“发布标签”选项](media/file-plan-publish-labels-option.png)
+   ![“发布标签”选项](../media/file-plan-publish-labels-option.png)

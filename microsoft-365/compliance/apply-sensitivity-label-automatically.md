@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: ff4a236a56fc2e8259204e7a0202d67176d44964
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b2b78c6b028dc34040019f5087f1f8773eed768d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596049"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079674"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -39,7 +39,7 @@ ms.locfileid: "41596049"
 
 在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的“分类”**** > “敏感度标签”**** 下创建敏感度标签时，可使用自动标签设置。
 
-![灵敏度标签的自动标签选项](media/Sensitivity-labels-Auto-labeling-options.png)
+![灵敏度标签的自动标签选项](../media/Sensitivity-labels-Auto-labeling-options.png)
 
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>根据条件自动应用敏感度标签
 
@@ -47,7 +47,7 @@ ms.locfileid: "41596049"
 
 当内容包含特定类型的敏感信息时，可以选择自动将敏感度标签应用于该内容。配置要自动应用的敏感度标签时，你会看到与创建数据丢失防护 (DLP) 策略时相同的敏感信息类型列表。因此，可以自动将“高度机密”标签应用于包含客户个人身份信息 (PII)（例如信用卡号或社会安全号码）的任何内容。
 
-![实例计数和匹配准确度的选项](media/Sensitivity-labels-instance-count-match-accuracy.png)
+![实例计数和匹配准确度的选项](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
 选择敏感信息类型后，可通过更改实例计数或匹配准确度来优化条件。 有关详细信息，请参阅[调整规则以使其更容易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "41596049"
 
 当自动应用敏感度标签时，用户会在其 Office 应用中看到通知。他们可以选择“**确定**”以关闭通知。
 
-![指出文档自动应用了标签的通知](media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![指出文档自动应用了标签的通知](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>建议用户应用敏感度标签
 
@@ -63,11 +63,11 @@ ms.locfileid: "41596049"
 
 建议的标签在 Word、PowerPoint 和 Excel 中受支持（需要安装 Azure 信息保护统一标记客户端）。
 
-![用于向用户建议敏感度标签的选项](media/Sensitivity-labels-Recommended-label-option.png)
+![用于向用户建议敏感度标签的选项](../media/Sensitivity-labels-Recommended-label-option.png)
 
 以下示例是配置条件来将标签应用为建议操作时的提示以及自定义策略提示。你可以选择策略提示中显示的文本。
 
-![关于应用建议标签的提示](media/Sensitivity-label-Prompt-for-required-label.png)
+![关于应用建议标签的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何应用自动标签或建议标签
 
