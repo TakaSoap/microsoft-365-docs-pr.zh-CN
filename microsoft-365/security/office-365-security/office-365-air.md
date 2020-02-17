@@ -107,7 +107,7 @@ ms.locfileid: "42088311"
 
 使用以下资源对此进行设置：
 
-|Resource  |说明  |
+|Resource  |描述  |
 |---------|---------|
 |[Office 365 管理 API 概述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |使用 Office 365 管理活动 API，可从 Office 365 和 Azure Active Directory 活动日志中获取各个用户、管理员、系统以及策略操作和事件的相关信息。         |
 |[Office 365 管理 API 入门](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |Office 365 管理 API 使用 Azure AD 为应用程序提供用于访问 Office 365 数据的身份验证服务。 请按照本文中的步骤进行设置。          |

@@ -32,7 +32,7 @@ ms.locfileid: "42088581"
 > [!NOTE]
 > 你可以在 Microsoft 365 管理中心添加用户，但这些用户不能用作邮件收件人。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要打开 Exchange 管理中心，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 

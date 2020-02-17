@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590673"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072833"
 ---
 # <a name="insider-risk-management-cases-preview"></a>内幕风险管理案例（预览）
 
@@ -41,7 +41,7 @@ ms.locfileid: "41590673"
 - **上次更新**时间：自已添加事例备注或在案例状态发生更改后经过的时间。
 - **上次更新者**：上次更新案例的内幕风险管理分析员或调查者的姓名。
 
-![内幕风险管理案例仪表板](media/insider-risk-cases-dashboard.png)
+![内幕风险管理案例仪表板](../media/insider-risk-cases-dashboard.png)
 
 使用**搜索**控件搜索特定文本的事例名称，并使用 case 筛选器按以下属性对事例进行排序：
 
@@ -67,14 +67,14 @@ ms.locfileid: "41590673"
 - 已**确认的警报**：针对案例确认的用户的通知列表。
 - **存在风险的内容**：内容列表，按内容源和类型排序。 例如，对于 SharePoint Online 中的案例通知内容，可能会看到列出的文件夹或文件名与案例中的警报的风险活动相关联。
 
-![内幕风险管理案例详细信息](media/insider-risk-case-details.png)
+![内幕风险管理案例详细信息](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>警报
 
 "**通知**" 选项卡汇总了案例中包含的当前警报。 可以将新警报添加到现有事例中，并将其添加到已分配的**警报**队列中。 队列中列出了以下警报属性：
 
 - 状态
-- 严重性
+- Severity
 - 检测时间
 
 从队列中选择一个警报以显示**警报详细信息**页。
@@ -82,14 +82,14 @@ ms.locfileid: "41590673"
 使用搜索控件搜索特定文本的警报名称，并使用警报筛选器按以下属性对事例进行排序：
 
 - 状态
-- 严重性
+- Severity
 - 检测到的时间、开始日期和结束日期
 
 ### <a name="user-activity"></a>用户活动
 
 "**用户活动**" 选项卡是对内幕风险管理解决方案中的案例进行内部风险分析和调查的最强大工具之一。 此选项卡的结构可用于快速审阅事例，包括所有警报的历史日程表、所有警报详细信息、案例中用户的当前风险分数以及用于采取措施以在案例中包含风险的控件。
 
-![内幕风险管理用户活动](media/insider-risk-user-activities.png)
+![内幕风险管理用户活动](../media/insider-risk-user-activities.png)
 
 1. **日期和时段筛选器**：默认情况下，在事例中确认的最后六个月的警报显示在用户活动图中。 您可以使用图表窗口两端的滑块控件轻松筛选图表视图，也可以在图表筛选控件中定义特定的开始日期和结束日期。
 2. **风险警报活动和详细信息**：风险活动在用户活动图中直观显示为彩色气泡。 为不同类别的风险和气泡大小创建气泡与类别的风险活动数成正比。 选择一个气泡以显示每个风险活动的详细信息。 详细信息包括：
@@ -107,7 +107,7 @@ ms.locfileid: "41590673"
 
 内容资源管理器是一个功能强大的工具，具有基本和高级的搜索和筛选功能。 若要了解有关使用内容资源管理器的详细信息，请参阅[内幕风险管理内容浏览器](insider-risk-management-content-explorer.md)。
 
-![内幕风险管理案例内容浏览器](media/insider-risk-content-explorer.png)
+![内幕风险管理案例内容浏览器](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>案例备注
 
