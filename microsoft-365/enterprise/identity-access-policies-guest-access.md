@@ -37,7 +37,7 @@ ms.locfileid: "42067443"
 
 下表列出了您需要更新或创建新的策略。 常见策略链接到[常见标识和设备访问策略](identity-access-policies.md)文章中相关的配置说明。
 
-|保护级别|策略|详细信息|
+|保护级别|策略|更多信息|
 |:---------------|:-------|:----------------|
 |**Baseline**|[要求为来宾和外部用户始终进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建此新规则并仅将其应用于来宾和外部用户。 在 "登录风险" 下，将所有选项保留为未选中状态，以始终强制执行 MFA。|
 |        |[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此规则以排除来宾和外部用户。|
@@ -47,7 +47,7 @@ ms.locfileid: "42067443"
 
 ![用于排除来宾的控件的屏幕捕获](../media/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 ### <a name="guests-vs-external-users"></a>来宾和外部用户
 在 Azure AD 中，来宾和外部用户是相同的。 这两个用户的用户类型为 "来宾"。 来宾用户是 B2B 用户。

@@ -25,7 +25,7 @@ ms.locfileid: "42082191"
 ---
 #  <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>与 Microsoft 365 服务和应用程序的安全信息和事件管理（SIEM）服务器集成
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>总结
 
 您的组织是使用还是计划获取安全信息和事件管理（SIEM）服务器？ 您可能想知道它是如何与 Microsoft 365 或 Office 365 集成的。 本文提供了可用于将 SIEM 服务器与 Microsoft 365 服务和应用程序相集成的资源的列表。
 
