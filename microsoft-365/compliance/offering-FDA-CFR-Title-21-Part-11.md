@@ -45,7 +45,7 @@ Microsoft 企业云服务经历了常规独立的第三方 SOC 1 类型2和 SOC 
 
 了解如何加速 FDA CFR Title 21 部署：[下载 AZURE FDA 21 资格指南](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 尽管没有用于遵守 CFR 标题21第11部分的认证，但以下 Microsoft 企业云服务已完成独立的第三方审核，这可能有助于客户实现法规遵从性工作。 这些服务包括：
 

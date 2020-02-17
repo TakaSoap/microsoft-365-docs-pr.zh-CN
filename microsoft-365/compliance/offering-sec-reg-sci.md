@@ -43,7 +43,7 @@ SCI 规则适用于 SCI 实体，其中包括此类自助式组织（SROs）作�
 
 本文档提供了关键法规 SCI 焦点领域的完整清单。 此检查表可帮助金融组织了解如何采用 Azure 来帮助确保其机构、客户和领导能够遵守适用的法规要求。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 
