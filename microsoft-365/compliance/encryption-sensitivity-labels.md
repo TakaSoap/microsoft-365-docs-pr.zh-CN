@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830946"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074596"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -63,7 +63,7 @@ ms.locfileid: "41830946"
 
 配置加密选项：
 
-![用于加密的敏感度标签选项](media/encrytion-options-sensitivity-label.png)
+![用于加密的敏感度标签选项](../media/encrytion-options-sensitivity-label.png)
 
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>应用标签后，现有加密会发生什么情况
@@ -111,7 +111,7 @@ ms.locfileid: "41830946"
 
 选择是要立即分配权限还是允许用户分配权限： 
 
-![用于添加用户或管理员定义的权限的选项](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![用于添加用户或管理员定义的权限的选项](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## <a name="assign-permissions-now"></a>立即分配权限
@@ -124,7 +124,7 @@ ms.locfileid: "41830946"
 
 加密内容的访问控制设置：
 
-![有关管理员定义的权限的设置](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![有关管理员定义的权限的设置](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>针对脱机访问的 Rights Management 使用许可证
 
@@ -146,7 +146,7 @@ ms.locfileid: "41830946"
 
 分配权限：
 
-![向用户分配权限的选项](media/Sensitivity-Assign-permissions-settings.png)
+![向用户分配权限的选项](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>添加用户或组
 
@@ -179,13 +179,13 @@ ms.locfileid: "41830946"
 
 有关每个特定权限的详细信息，请参阅[使用权限和说明](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
-![选择预设权限或自定义权限的选项。](media/Sensitivity-Choose-permissions-settings.png)
+![选择预设权限或自定义权限的选项。](../media/Sensitivity-Choose-permissions-settings.png)
 
 请注意，同一标签可向不同用户授予不同的权限。例如，一个标签可将某些用户分配为审阅者，并可将其他用户分配为共同创作，如下所示。
 
 为此，添加用户或组、向其分配权限并保存这些设置。然后重复这些步骤，添加用户并向其分配权限、每次保存设置。可以根据需要经常重复此配置，以便为不同用户定义不同权限。
 
-![具有不同权限的不同用户](media/Sensitivity-Multiple-users-permissions.png)
+![具有不同权限的不同用户](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management 颁发者（应用敏感度标签的用户）始终具有完全控制
 
@@ -207,7 +207,9 @@ ms.locfileid: "41830946"
 
 - 在 Word、PowerPoint 和 Excel 中，系统会提示用户为特定用户、组或组织选择他们自己的权限。 
     > [!NOTE]
-    > Azure 信息保护统一标记客户端支持对 Word、PowerPoint 和 Excel 使用此选项。 对于使用内置标签的应用，当前正[以预览版形式向 Windows 和 Mac 推出](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)此项支持。 如果选择了此选项，但某用户的应用不支持它，则不对该用户显示该标签。
+    > Azure 信息保护统一标记客户端支持对 Word、PowerPoint 和 Excel 使用此选项。 对于使用内置标签的应用，当前正[以预览版形式向 Windows 和 Mac 提供](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)此项支持。 
+    > 
+    > 如果已选中此选项，但用户的应用不支持这一选项，则该标签不会向用户显示，或者（当前正以预览版形式向 iOS 和 Android 推出）会显示标签以确保一致性，但无法随说明消息一起应用到用户。
 
 在这些选择受到支持时，请使用以下标签确定用户何时回看到敏感度标签：
 
@@ -222,13 +224,13 @@ ms.locfileid: "41830946"
 
 配置用户分配的权限：
 
-![有关用户定义的权限的加密设置](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![有关用户定义的权限的加密设置](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Outlook 限制
 
 在 Outlook 中，当用户向邮件应用允许其分配权限的敏感度标签时，需遵守的限制与“请勿转发”选项相同。 用户将在邮件顶部看到标签名称和说明，这表示正在保护该内容。 与 Word、PowerPoint 和 Excel 不同（详见[下一部分](#word-powerpoint-and-excel-permissions)），系统不会提示用户选择特定权限。
 
-![应用于 Outlook 中的邮件的敏感度标签](media/sensitivity-label-outlook-protection-applied.png)
+![应用于 Outlook 中的邮件的敏感度标签](../media/sensitivity-label-outlook-protection-applied.png)
 
 向电子邮件应用“请勿转发”选项时，电子邮件将被加密，且收件人必须通过身份验证。 其次，收件人不得转发、打印和复制该邮件。 例如，在 Outlook 客户端中，“转发”按钮不可用，“另存为”和“打印”菜单选项也不可用，并且你不可在“收件人”、“抄送”和“密件抄送”框中添加或更改收件人。
 
@@ -244,7 +246,7 @@ ms.locfileid: "41830946"
 - 选择用户、组或组织。 这可包括你所在组织内部或外部的人员。
 - 设置到期日期，所选用户在该日期后不可访问内容。 有关详细信息，请参阅上一部分：[针对脱机访问的 Rights Management 使用许可证](#rights-management-use-license-for-offline-access)。
 
-![供用户通过自定义权限进行保护的选项](media/sensitivity-aip-custom-permissions-dialog.png)
+![供用户通过自定义权限进行保护的选项](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 对于内置标签，用户在选择以下项时也会看到此对话框：
 

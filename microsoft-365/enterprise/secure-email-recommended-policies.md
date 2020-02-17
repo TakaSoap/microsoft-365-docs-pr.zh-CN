@@ -38,7 +38,7 @@ ms.locfileid: "42084303"
 
 如果在设置 Exchange Online 和 Outlook 时将其包含在策略范围中，则只需创建新策略来阻止 ActiveSync 客户端。 查看下表中列出的策略，并执行建议的添加项，或者确认是否已包含这些策略。 每个规则都链接到[通用标识和设备访问策略](identity-access-policies.md)文章中相关的配置说明。
 
-|保护级别|策略|详细信息|
+|保护级别|策略|更多信息|
 |:---------------|:-------|:----------------|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 Exchange Online|
 |        |[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括 Exchange Online|

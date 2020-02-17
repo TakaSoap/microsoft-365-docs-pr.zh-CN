@@ -21,12 +21,13 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 SharePoint Online 和 Office 365 中文件的配置建议。
-ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830986"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082285"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保护 SharePoint Online 网站和文件
 
@@ -50,7 +51,7 @@ ms.locfileid: "41830986"
 
 针对各种 Microsoft 365 功能的 SharePoint Online 团队网站绘制的建议。 下图显示了针对四个 SharePoint Online 团队网站的建议配置。
 
-![适用于 SharePoint 网站的推荐配置](../media/SharePoint-site-configurations.png)
+![适用于 SharePoint 网站的推荐配置](../../media/SharePoint-site-configurations.png)
 
 如图所示：
 
@@ -140,7 +141,7 @@ SharePoint Online 和 OneDrive for Business 的设备访问设置可确定是否
 
 - 组织中的用户可手动将标签应用于 Outlook 网页版、Outlook 2010 及更高版本、OneDrive for Business、SharePoint Online 以及 Office 365 组。用户通常都很了解他们处理的内容类型，以便可以对其进行分类并应用相应的 DLP 策略。
 
-![适用于 SharePoint 网站的推荐配置](../media/7fed0126-ab4a-4480-922c-681970642339.png)
+![适用于 SharePoint 网站的推荐配置](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 
 如图所示，此解决方案包括创建以下保留标签：
 

@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 Microsoft Teams 中文件的配置建议。
-ms.openlocfilehash: d06b3b196b11804c8c06d3b63469b2c0a9aa2fcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598469"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088122"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>保护 Microsoft Teams 中的文件
 
@@ -49,7 +49,7 @@ ms.locfileid: "41598469"
 
 针对各种 Microsoft 365 功能的受保护团队网站绘制的建议。 下图显示了建议配置。
 
-![适用于团队的推荐配置](../media/secure-team-configurations.png)
+![适用于团队的推荐配置](../../media/secure-team-configurations.png)
 
 如图所示：
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76c1199fa3842428900db197f15728c116f778b9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595449"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076377"
 ---
 # <a name="data-classification-overview-preview"></a>数据分类概述（预览）
 
@@ -41,11 +41,11 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 敏感信息类型卡片显示了在整个组织中找到并标记的最常用敏感信息类型。
 
-![最常用敏感信息类型](media/data-classification-sens-info-types-card.png)
+![最常用敏感信息类型](../media/data-classification-sens-info-types-card.png)
 
 若要了解任何给定分类类别中的项目数量，请将鼠标悬停在该类别的栏上。
 
-![最常用敏感信息类型悬停详细信息](media/data-classification-sens-info-types-hover.png)
+![最常用敏感信息类型悬停详细信息](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
 > 如果卡片上显示消息“找不到包含敏感信息的数据”。 这表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。 要开始使用标签，请参阅：
@@ -58,15 +58,15 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 通过 Microsoft 365 或 Azure 信息保护 (AIP) 将敏感度标签应用于项目时，会出现两种情况：
 
 - 指示项目对组织的价值的标记已嵌入到文档中，可随时随地进行跟踪
-- 标记的存在将实现各种保护行为，例如强制性水印或加密。 如果已启用终结点保护，你甚至可以阻止项目脱离组织控制。
+- 标记的存在将实现各种保护行为，例如强制性水印或加密。 如果启用了终结点保护，你甚至还可阻止项目脱离组织控制。
 
-有关敏感度标签的详细信息，请参阅[敏感度标签概述](sensitivity-labels.md)。
+有关敏感度标签的详细信息，请参阅[了解敏感度标签](sensitivity-labels.md)。
 
 必须为 SharePoint 和 OneDrive 中的文件启用灵敏度标签，以使相应的数据出现在数据分类页面中。 有关详细信息，请参阅[启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
 
 敏感度标签卡片按敏感度级别显示项目（电子邮件或文档）的数量。
 
-![按敏感度标签分类占位符屏幕快照对内容进行细分](media/data-classification-top-sensitivity-labels-applied.png)
+![按敏感度标签分类占位符屏幕快照对内容进行细分](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > 如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。 要开始使用标签，请参阅：
@@ -78,7 +78,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 “应用最多的保留标签”卡片显示具有给定保留标签的项目数量。
 
-![应用最多的保留标签占位符屏幕快照](media/data-classification-top-retention-labels-applied.png)
+![应用最多的保留标签占位符屏幕快照](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > 如果此卡片显示消息“未检测到任何保留标签”，则表示尚未创建或发布任何保留标签，或者任何内容均未应用保留标签。 要开始使用保留标签，请参阅：

@@ -1,5 +1,7 @@
 ---
 title: 部署适用于三层文件保护的团队
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 通过 Microsoft Teams 创建和配置团队，以实现对文件的多级别信息保护。
-ms.openlocfilehash: 3b90a1b084f7cd7e56d1d6448d74a7d2c2469a4d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971820"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083319"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>部署适用于三层文件保护的团队
 
@@ -38,7 +40,7 @@ ms.locfileid: "39971820"
 
 下面是生成的配置。
 
-![面向公共团队的基准级别保护。](../media/baseline-public-team.png)
+![面向公共团队的基准级别保护。](../../media/baseline-public-team.png)
 
 ### <a name="private"></a>Private
 
@@ -46,7 +48,7 @@ ms.locfileid: "39971820"
 
 下面是生成的配置。
 
-![面向私人团队的基准级别保护。](../media/baseline-private-team.png)
+![面向私人团队的基准级别保护。](../../media/baseline-private-team.png)
 
 ## <a name="sensitive-teams"></a>敏感团队
 
@@ -66,7 +68,7 @@ ms.locfileid: "39971820"
 
 下面是生成的配置。
 
-![团队的敏感保护。](../media/sensitive-team.png)
+![团队的敏感保护。](../../media/sensitive-team.png)
 
 ## <a name="highly-confidential-teams"></a>高度机密团队
 
@@ -88,7 +90,7 @@ ms.locfileid: "39971820"
 
 下面是生成的配置。
 
-![团队的高度机密保护。](../media/highly-confidential-team.png)
+![团队的高度机密保护。](../../media/highly-confidential-team.png)
 
 ## <a name="next-step"></a>后续步骤
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862122"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069905"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -113,25 +113,25 @@ ms.locfileid: "41862122"
 
   |**Office 365 服务**|**30 分钟**|**24 小时**|
   |:-----|:-----:|:-----:|
-  |高级威胁防护和威胁智能|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory（用户登录事件）||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory（管理员事件）||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |数据丢失防护|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |电子数据展示|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Project|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power BI|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |安全与合规中心|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |SharePoint Online 和 OneDrive for Business|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |工作区分析|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![复选标记](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |高级威胁防护和威胁智能|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Azure Active Directory（用户登录事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Azure Active Directory（管理员事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |数据丢失防护|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |电子数据展示|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Exchange Online|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Project|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Stream|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Teams|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power BI|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |安全与合规中心|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |SharePoint Online 和 OneDrive for Business|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sway||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |工作区分析|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Yammer||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   ||||
 
 - Azure Active Directory (Azure AD) 是 Office 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 Microsoft 365 管理中心或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
@@ -163,7 +163,7 @@ ms.locfileid: "41862122"
 
     此时将显示“**审核日志搜索**”页面。
 
-    ![配置条件，然后单击“搜索”以运行报告](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![配置条件，然后单击“搜索”以运行报告](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
 
     > [!NOTE]
     > 必须首先打开审核日志记录，然后才能运行审核日志搜索。 如果显示“**开始记录用户和管理员活动**”链接，请单击该链接以打开审核。 如果未看到此链接，则已为你的组织开启审核。
@@ -195,13 +195,13 @@ ms.locfileid: "41862122"
 
    此时将加载搜索结果，片刻后将显示在“**结果**”下。 完成搜索后会显示找到的结果数。 “**结果**”窗格中最多可显示 5,000 个事件（每次加载 150 个）。 如果超过 5,000 个事件满足搜索条件，则将显示最近的 5,000 个事件。
 
-   ![完成搜索后会显示结果数。](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![完成搜索后会显示结果数。](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>有关搜索审核日志的提示
 
 - 可以通过单击活动名称选择要搜索的特定活动。 或者可以通过单击组名搜索该组中的所有活动（例如“**文件和文件夹活动**”）。 如果选择了活动，可以单击该活动以取消选择。 还可以使用搜索框显示包含所键入关键字的活动。
 
-  ![单击活动组名称以选择所有活动](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![单击活动组名称以选择所有活动](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - 必须选择“**活动**”列表中的“**显示所有活动的结果**”才能显示 Exchange 管理员审核日志中的条目。 此审核日志中的事件将在结果的“**活动**”列中显示 cmdlet 名称（例如 **Set-Mailbox**）。 有关详细信息，请单击本主题中的“**已审核的活动**”选项卡，然后单击“**Exchange 管理员活动**”。
 
@@ -239,7 +239,7 @@ ms.locfileid: "41862122"
 
 可以通过单击搜索结果列表中的事件记录查看有关事件的更多详细信息。 此时将显示包含事件记录的详细属性的“**详细信息**”页。 显示的属性取决于事件发生于的 Office 365 服务。 若要显示这些详细信息，请单击“**更多信息**”。 有关说明，请参阅 [Office 365 审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
 
-![单击“详细信息”，查看审核日志事件记录的详细属性](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![单击“详细信息”，查看审核日志事件记录的详细属性](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
 ### <a name="step-3-filter-the-search-results"></a>步骤 3：筛选搜索结果
 
@@ -255,7 +255,7 @@ ms.locfileid: "41862122"
 
 3. 根据要筛选的列，单击列标题下的其中一个框并键入字词。 结果将动态重新调整以显示符合筛选条件的事件。
 
-   ![在筛选器中键入一个单词，以显示匹配筛选的事件](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
+   ![在筛选器中键入一个单词，以显示匹配筛选的事件](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
 4. 若要清除筛选器，请单击筛选器框中的“**X**”，或单击“**隐藏筛选**”。
 
@@ -330,7 +330,7 @@ ms.locfileid: "41862122"
 |从回收站删除文件|FileDeletedFirstStageRecycleBin|用户从网站的回收站中删除文件。|
 |从第二阶段回收站删除文件|FileDeletedSecondStageRecycleBin|用户从网站的第二阶段回收站中删除文件。|
 |已删除记录合规性策略标签|ComplianceRecordDelete|已删除归类为记录的文档。 当将内容分类为记录的保留标签应用于文档时，该文档被视为记录。|
-|检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户上传使用敏感度标签分类的文档，该标签的优先级高于将文档上传到的网站所应用的敏感度标签。 <br/><br/> 如果应用于网站的敏感度标签优先级高于上传到网站的文档所应用的敏感度标签，则不会触发此事件。 有关敏感度标签优先级的详细信息，请参阅[敏感度标签概述](sensitivity-labels.md#label-priority-order-matters)中的“标签优先级”部分。|
+|检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户上传使用敏感度标签分类的文档，该标签的优先级高于将文档上传到的网站所应用的敏感度标签。 <br/><br/> 如果应用于网站的敏感度标签优先级高于上传到网站的文档所应用的敏感度标签，则不会触发此事件。 有关敏感度标签优先级的详细信息，请参阅[了解敏感度标签](sensitivity-labels.md#label-priority-order-matters)中的“标签优先级”部分。|
 |在文件中检测到恶意软件|FileMalwareDetected|SharePoint 防病毒引擎在文件中检测到恶意软件。|
 |已放弃文件签出|FileCheckOutDiscarded|用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的更改，而不将其保存到文档库中的文档版本。|
 |已下载的文件|FileDownloaded|用户从网站下载文档。|
@@ -744,7 +744,7 @@ ms.locfileid: "41862122"
 
 如果你的组织正在使用 Microsoft Teams 中的[患者应用程序](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview)，你可以在审核日志中搜索与使用患者应用相关的活动。 如果你的环境配置为支持患者应用，则可在“活动”**** 选择器列表中找到这些活动的附加活动组。
 
-![“活动”选取器列表中的 Microsoft Teams 医疗保健活动](media/TeamsHealthcareAuditActivities.png)
+![“活动”选取器列表中的 Microsoft Teams 医疗保健活动](../media/TeamsHealthcareAuditActivities.png)
 
 有关患者应用活动的说明，请参阅[患者应用的审核日志](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)。
 
@@ -835,7 +835,7 @@ ms.locfileid: "41862122"
 
 - 若要显示 Exchange 管理员审核日志中的事件，请筛选搜索结果并在“**活动**”筛选器框中键入 **-**（破折号）。 这将在 Exchange 管理员事件的“**活动**”列中显示 cmdlet 名称。 然后你便可按字母顺序对 cmdlet 名称进行排序。
 
-  ![在“活动”框中键入一个破折号以筛选 Exchange 管理事件](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![在“活动”框中键入一个破折号以筛选 Exchange 管理事件](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - 若要获取有关已运行的 cmdlet、已使用的参数和参数值以及受影响对象的信息，可以导出搜索结果并选择“**下载所有结果**”选项。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
 

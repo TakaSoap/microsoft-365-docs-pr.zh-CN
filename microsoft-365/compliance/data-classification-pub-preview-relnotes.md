@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 数据分类公共预览版的发行说明。
-ms.openlocfilehash: fecf643d12cf544c16570c173b15bb1e0dc043f0
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887331"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076359"
 ---
 # <a name="data-classification-public-preview-release-notes-preview"></a>数据分类公共预览版的发行说明（预览版）
 
@@ -40,7 +40,7 @@ ms.locfileid: "41887331"
 
 ## <a name="seeing-guids-instead-of-label-names"></a>查看 GUID 而不是标签名称
 
-私人预览版客户显示了删除已标记内容的标签的情况，其中标记名称的结果是在内容资源管理器和活动资源管理器中解析为 32 位 GUID 而不是标签名称。 
+私人预览版客户遇到过的一些情况是，已迁移的标签或者在删除内容中带有内容标记的标签时，会导致标签名称在内容资源管理器和活动资源管理器中解析为 32 位 GUID，而不是标签名称。 
 
 ## <a name="rendering-of-encrypted-documents"></a>加密文档的呈现
 
