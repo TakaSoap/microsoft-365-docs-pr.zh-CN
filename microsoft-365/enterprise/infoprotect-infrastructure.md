@@ -1,5 +1,7 @@
 ---
 title: 第 6 阶段：信息保护
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,55 +15,55 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版信息保护基础结构。
-ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 418506927885948cd917061d99bb69163b1e44a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030847"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067125"
 ---
-# <a name="phase-6-information-protection"></a><span data-ttu-id="e71a8-103">阶段 6：信息保护</span><span class="sxs-lookup"><span data-stu-id="e71a8-103">Phase 6: Information protection</span></span>
+# <a name="phase-6-information-protection"></a><span data-ttu-id="3106b-103">阶段 6：信息保护</span><span class="sxs-lookup"><span data-stu-id="3106b-103">Phase 6: Information protection</span></span>
 
-![阶段 6：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![阶段 6：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-<span data-ttu-id="e71a8-p101">信息保护是一组策略和技术，定义了如何传输、存储和处理敏感信息。在第 6 阶段逐步介绍了 Microsoft 365 企业版的信息保护设置和功能，有助于用户保护基于云的工作负载和方案的数据安全。</span><span class="sxs-lookup"><span data-stu-id="e71a8-p101">Information protection is a set of policies and technologies that define how you transmit, store, and process sensitive information. In Phase 6, you step through information protection settings and features of Microsoft 365 Enterprise that help you secure data for your cloud-based workloads and scenarios.</span></span>
+<span data-ttu-id="3106b-p101">信息保护是一组策略和技术，定义了如何传输、存储和处理敏感信息。在第 6 阶段逐步介绍了 Microsoft 365 企业版的信息保护设置和功能，有助于用户保护基于云的工作负载和方案的数据安全。</span><span class="sxs-lookup"><span data-stu-id="3106b-p101">Information protection is a set of policies and technologies that define how you transmit, store, and process sensitive information. In Phase 6, you step through information protection settings and features of Microsoft 365 Enterprise that help you secure data for your cloud-based workloads and scenarios.</span></span>
 
 >[!Note]
-><span data-ttu-id="e71a8-107">如果已部署信息保护，请查看这一阶段的[退出条件](infoprotect-exit-criteria.md)，以确保其满足 Microsoft 365 企业版的必备条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="e71a8-107">If you already have already deployed information protection, please see the [exit criteria](infoprotect-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+><span data-ttu-id="3106b-107">如果已部署信息保护，请查看这一阶段的[退出条件](infoprotect-exit-criteria.md)，以确保其满足 Microsoft 365 企业版的必备条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="3106b-107">If you already have already deployed information protection, please see the [exit criteria](infoprotect-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.</span></span>
 >
 
-## <a name="plan-and-deploy-your-microsoft-365-enterprise-information-protection-infrastructure"></a><span data-ttu-id="e71a8-108">计划和部署 Microsoft 365 企业版信息保护基础结构</span><span class="sxs-lookup"><span data-stu-id="e71a8-108">Plan and deploy your Microsoft 365 Enterprise information protection infrastructure</span></span> 
+## <a name="plan-and-deploy-your-microsoft-365-enterprise-information-protection-infrastructure"></a><span data-ttu-id="3106b-108">计划和部署 Microsoft 365 企业版信息保护基础结构</span><span class="sxs-lookup"><span data-stu-id="3106b-108">Plan and deploy your Microsoft 365 Enterprise information protection infrastructure</span></span> 
 
-<span data-ttu-id="e71a8-p102">与法律和合规团队协作以确定组织是否需要符合 HIPPA、CJIS 或 GDPR 等合规标准，这一点很重要。此外，还应与安全组协作，以确定组织和需要额外安全性的部门或组的信息保护目标。</span><span class="sxs-lookup"><span data-stu-id="e71a8-p102">It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection for your organization and for departments or groups that require additional security.</span></span>
+<span data-ttu-id="3106b-p102">与法律和合规团队协作以确定组织是否需要符合 HIPPA、CJIS 或 GDPR 等合规标准，这一点很重要。此外，还应与安全组协作，以确定组织和需要额外安全性的部门或组的信息保护目标。</span><span class="sxs-lookup"><span data-stu-id="3106b-p102">It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection for your organization and for departments or groups that require additional security.</span></span>
 
-<span data-ttu-id="e71a8-111">接下来，使用以下步骤来构建 Microsoft 365 企业版的信息保护。</span><span class="sxs-lookup"><span data-stu-id="e71a8-111">Next, use the following steps to build out information protection for Microsoft 365 Enterprise.</span></span>
-
-|||
-|:-------|:-----|
-|![第 1 步](./media/stepnumbers/Step1.png)|[<span data-ttu-id="e71a8-113">定义安全和信息保护级别</span><span class="sxs-lookup"><span data-stu-id="e71a8-113">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
-|![第 2 步](./media/stepnumbers/Step2.png)|[<span data-ttu-id="e71a8-115">配置环境分类</span><span class="sxs-lookup"><span data-stu-id="e71a8-115">Configure classification for your environment</span></span>](infoprotect-configure-classification.md)|
-|![第 3 步](./media/stepnumbers/Step3.png)|[<span data-ttu-id="e71a8-117">为 Microsoft 365 配置提升的安全性</span><span class="sxs-lookup"><span data-stu-id="e71a8-117">Configure increased security for Microsoft 365</span></span>](infoprotect-configure-increased-security-office-365.md)|
-|![第 4 步](./media/stepnumbers/Step4.png)|[<span data-ttu-id="e71a8-119">配置 Windows 信息保护</span><span class="sxs-lookup"><span data-stu-id="e71a8-119">Configure Windows Information Protection</span></span>](infoprotect-deploy-windows-information-protection.md)|
-|![第 5 步](./media/stepnumbers/Step5.png)|[<span data-ttu-id="e71a8-121">配置 Office 365 数据丢失防护</span><span class="sxs-lookup"><span data-stu-id="e71a8-121">Configure Office 365 Data Loss Prevention</span></span>](infoprotect-data-loss-prevention.md)|
-|![第 6 步](./media/stepnumbers/Step6.png)|[<span data-ttu-id="e71a8-123">配置电子邮件加密</span><span class="sxs-lookup"><span data-stu-id="e71a8-123">Configure email encryption</span></span>](infoprotect-email-encryption.md)|
-|![第 7 步](./media/stepnumbers/Step7.png)|[<span data-ttu-id="e71a8-125">配置 Office 365 Privileged Access Management</span><span class="sxs-lookup"><span data-stu-id="e71a8-125">Configure privileged access management for Office 365</span></span>](infoprotect-configure-privileged-access-management.md)|
-|||
-
-<span data-ttu-id="e71a8-126">在完成这些步骤后，请转到这一阶段的[退出条件](infoprotect-exit-criteria.md)，以确保满足 Microsoft 365 企业版的必备条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="e71a8-126">When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
-
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="e71a8-127">Microsoft 如何对 Microsoft 365 企业版执行操作</span><span class="sxs-lookup"><span data-stu-id="e71a8-127">How Microsoft does Microsoft 365 Enterprise</span></span>
-
-<span data-ttu-id="e71a8-128">了解 Microsoft 的 IT 专家如何使用 [Azure 信息保护和保护数据](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9)。</span><span class="sxs-lookup"><span data-stu-id="e71a8-128">Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).</span></span>
-
-## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="e71a8-129">Contoso 是如何使用 Microsoft 365 企业版的</span><span class="sxs-lookup"><span data-stu-id="e71a8-129">How Contoso did Microsoft 365 Enterprise</span></span>
-
-<span data-ttu-id="e71a8-130">了解 Contoso Corporation（虚构但具代表性的跨国企业）如何使用 Microsoft 365 云服务[实现信息保护](contoso-info-protect.md)。</span><span class="sxs-lookup"><span data-stu-id="e71a8-130">See how the Contoso Corporation, a fictional but representative multi-national business, [implemented information protection](contoso-info-protect.md) with Microsoft 365 cloud services.</span></span>
-
-![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
-
-## <a name="next-step"></a><span data-ttu-id="e71a8-132">后续步骤</span><span class="sxs-lookup"><span data-stu-id="e71a8-132">Next step</span></span>
+<span data-ttu-id="3106b-111">接下来，使用以下步骤来构建 Microsoft 365 企业版的信息保护。</span><span class="sxs-lookup"><span data-stu-id="3106b-111">Next, use the following steps to build out information protection for Microsoft 365 Enterprise.</span></span>
 
 |||
 |:-------|:-----|
-|![第 1 步](./media/stepnumbers/Step1.png)|[<span data-ttu-id="e71a8-134">定义安全和信息保护级别</span><span class="sxs-lookup"><span data-stu-id="e71a8-134">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
+|![第 1 步](../media/stepnumbers/Step1.png)|[<span data-ttu-id="3106b-113">定义安全和信息保护级别</span><span class="sxs-lookup"><span data-stu-id="3106b-113">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
+|![第 2 步](../media/stepnumbers/Step2.png)|[<span data-ttu-id="3106b-115">配置环境分类</span><span class="sxs-lookup"><span data-stu-id="3106b-115">Configure classification for your environment</span></span>](infoprotect-configure-classification.md)|
+|![第 3 步](../media/stepnumbers/Step3.png)|[<span data-ttu-id="3106b-117">为 Microsoft 365 配置提升的安全性</span><span class="sxs-lookup"><span data-stu-id="3106b-117">Configure increased security for Microsoft 365</span></span>](infoprotect-configure-increased-security-office-365.md)|
+|![第 4 步](../media/stepnumbers/Step4.png)|[<span data-ttu-id="3106b-119">配置 Windows 信息保护</span><span class="sxs-lookup"><span data-stu-id="3106b-119">Configure Windows Information Protection</span></span>](infoprotect-deploy-windows-information-protection.md)|
+|![第 5 步](../media/stepnumbers/Step5.png)|[<span data-ttu-id="3106b-121">配置 Office 365 数据丢失防护</span><span class="sxs-lookup"><span data-stu-id="3106b-121">Configure Office 365 Data Loss Prevention</span></span>](infoprotect-data-loss-prevention.md)|
+|![第 6 步](../media/stepnumbers/Step6.png)|[<span data-ttu-id="3106b-123">配置电子邮件加密</span><span class="sxs-lookup"><span data-stu-id="3106b-123">Configure email encryption</span></span>](infoprotect-email-encryption.md)|
+|![第 7 步](../media/stepnumbers/Step7.png)|[<span data-ttu-id="3106b-125">配置 Office 365 Privileged Access Management</span><span class="sxs-lookup"><span data-stu-id="3106b-125">Configure privileged access management for Office 365</span></span>](infoprotect-configure-privileged-access-management.md)|
+|||
+
+<span data-ttu-id="3106b-126">在完成这些步骤后，请转到这一阶段的[退出条件](infoprotect-exit-criteria.md)，以确保满足 Microsoft 365 企业版的必备条件和可选条件。</span><span class="sxs-lookup"><span data-stu-id="3106b-126">When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.</span></span>
+
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="3106b-127">Microsoft 如何对 Microsoft 365 企业版执行操作</span><span class="sxs-lookup"><span data-stu-id="3106b-127">How Microsoft does Microsoft 365 Enterprise</span></span>
+
+<span data-ttu-id="3106b-128">了解 Microsoft 的 IT 专家如何使用 [Azure 信息保护和保护数据](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9)。</span><span class="sxs-lookup"><span data-stu-id="3106b-128">Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).</span></span>
+
+## <a name="how-contoso-did-microsoft-365-enterprise"></a><span data-ttu-id="3106b-129">Contoso 是如何使用 Microsoft 365 企业版的</span><span class="sxs-lookup"><span data-stu-id="3106b-129">How Contoso did Microsoft 365 Enterprise</span></span>
+
+<span data-ttu-id="3106b-130">了解 Contoso Corporation（虚构但具代表性的跨国企业）如何使用 Microsoft 365 云服务[实现信息保护](contoso-info-protect.md)。</span><span class="sxs-lookup"><span data-stu-id="3106b-130">See how the Contoso Corporation, a fictional but representative multi-national business, [implemented information protection](contoso-info-protect.md) with Microsoft 365 cloud services.</span></span>
+
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+
+## <a name="next-step"></a><span data-ttu-id="3106b-132">后续步骤</span><span class="sxs-lookup"><span data-stu-id="3106b-132">Next step</span></span>
+
+|||
+|:-------|:-----|
+|![第 1 步](../media/stepnumbers/Step1.png)|[<span data-ttu-id="3106b-134">定义安全和信息保护级别</span><span class="sxs-lookup"><span data-stu-id="3106b-134">Define security and information protection levels</span></span>](infoprotect-define-sec-infoprotect-levels.md)|
 
