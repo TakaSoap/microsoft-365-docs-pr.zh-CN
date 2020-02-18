@@ -30,7 +30,7 @@ ms.locfileid: "42078931"
 > [!IMPORTANT]
 > 随着我们继续投资保留邮箱内容的不同方式，我们宣布在 Exchange 管理中心中停用就地保留。 这意味着，应使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 从2020年4月1日开始，你将无法在 Exchange Online 中创建新的就地保留。 但您仍可以更改非活动邮箱上设置的就地保留的保留持续时间。 不过，从2020年6月1日开始，你将无法更改保留期。 你将只能通过删除就地保留来删除非活动邮箱。 在删除保留之前，就地保留中的现有非活动邮箱仍将保留。 有关停用就地保留的详细信息，请参阅[旧版电子数据展示工具的退休](legacy-ediscovery-retirement.md)。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须使用 Exchange Online PowerShell 更改非活动邮箱上的诉讼保留的保留期。 不能使用 Exchange 管理中心 (EAC)。 但您可以使用 Exchange Online PowerShell 或 EAC 更改就地保留的保留期。 您可以使用安全与合规中心或 Security & 合规性中心 PowerShell 更改 Office 365 保留策略的保留期。
     

@@ -31,7 +31,7 @@ ms.locfileid: "42079891"
 
 您可以使用信息权限管理（IRM）来帮助控制和保护从列表或库中下载的文件。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - Azure Rights Management service （Azure RMS）（来自 Azure 信息保护）和本地等效项 Active Directory 权限管理服务（AD RMS），支持网站的信息权限管理。 不需要单独安装或其他安装。
     

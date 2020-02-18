@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解部署 Microsoft 365 企业版底层基础结构阶段的一些方法。
-ms.openlocfilehash: ee244d2539c7406799cb030a407d3503f6ba278d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597039"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067784"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企业版底层基础结构部署策略
 
@@ -53,7 +53,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 本文使用以下图形来描述这些定义： 
 
-![描述试点推出和用户推出定义的图形](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![描述试点推出和用户推出定义的图形](../media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 在用户推出图形中，阴影表示在整个组织内使用结构化或有条理的方法（如组、部门或区域）从 0% 到 100% 的百分比。
 
@@ -78,7 +78,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 以下甘特图显示了 Microsoft 365 企业版基础结构第 2-6 阶段的简化串行部署情况。
 
-![底层基础结构第 2-6 阶段的串行部署](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![底层基础结构第 2-6 阶段的串行部署](../media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 为了简化讨论和示意，假设每个阶段以及每个阶段中的部署细分段花费相同的时间量。
 
@@ -112,7 +112,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 对于此部署策略，你将在当前阶段的用户推出的最后一部分期间开始下一阶段的试点推出。以下是前一阶段的用户推出即将结束期间执行试点推出时的第 2-6 阶段的部署。
 
-![第 2-6 阶段的并行部署与非重叠用户推出](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![第 2-6 阶段的并行部署与非重叠用户推出](../media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 最终结果是，当前阶段的用户推出将在整个组织中完成，然后启动下一个阶段。不在试点推出中的用户不会同时处理多个阶段的推出，但试点推出与用户推出并行完成。
 
@@ -147,7 +147,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 下面是不同部署策略之间的简化比较。
 
-![第 2-6 阶段的并行部署与重叠用户推出](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![第 2-6 阶段的并行部署与重叠用户推出](../media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 最终结果是：
 
@@ -180,7 +180,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 对于能够将第 2-6 阶段压缩到单个部署细分段的小型组织，部署结果如下所示：
  
-![前端基础结构和端到端配置推出](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![前端基础结构和端到端配置推出](../media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 IT 部门针对第 2-6 阶段配置基础结构，然后推出给试点用户以检查端到端功能。例如，试点用户同时获得所有以下功能：
 

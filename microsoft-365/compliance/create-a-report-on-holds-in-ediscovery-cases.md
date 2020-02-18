@@ -29,7 +29,7 @@ ms.locfileid: "42077701"
 
 有关报告中包含的信息的详细说明，请参阅[详细信息](#more-information)部分。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要生成组织中所有电子数据展示事例的报告，您必须是组织中的电子数据展示管理员。 如果您是电子数据展示管理器，则报告将仅包含有关您可以访问的事例的信息。 有关电子数据展示权限的详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -178,7 +178,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     ![运行 CaseHoldsReport 脚本后的输出](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 事例包含运行本文中的脚本时创建的报告，其中包含有关每个保留的以下信息。 如前面所述，您必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关案例保留的详细信息，请参阅[电子数据展示事例](ediscovery-cases.md)。
   

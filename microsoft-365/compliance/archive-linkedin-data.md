@@ -67,6 +67,6 @@ ms.locfileid: "42079623"
 
 若要查看更多详细信息，请选择 "**数据连接器**" 页上的列表中的连接器以显示弹出页面。 在 "**状态**" 下，显示的日期范围表示创建连接器时选择的年龄筛选器。 
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 LinkedIn 项将导入到 Microsoft 365 中存储邮箱的 "LinkedIn" 子文件夹中。 它们显示为电子邮件。

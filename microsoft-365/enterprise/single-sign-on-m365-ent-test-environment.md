@@ -1,5 +1,7 @@
 ---
 title: 适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录。
-ms.openlocfilehash: f263ab507e392c1172d28b5d6ef111d8d9f40682
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: d2b17acb2b57e379fe204e3ea4402b3f00ef7d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202233"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083801"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录
 
@@ -36,16 +38,16 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
 1.  创建采用密码哈希同步的 Microsoft 365 模拟企业测试环境。
 2.  为 APP1 上的 Azure AD Connect 配置 Azure AD 无缝 SSO。
     
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
 按照 [Microsoft 365 的密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。下面是生成的配置。
   
-![使用密码哈希同步测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![使用密码哈希同步测试环境的模拟企业配置](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 此配置包括： 
   
@@ -101,7 +103,7 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
 
 下面是生成的配置：
 
-![使用传递身份验证测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![使用传递身份验证测试环境的模拟企业配置](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
  
 此配置包括：

@@ -1,5 +1,7 @@
 ---
 title: 阶段 3：Windows 10 企业版基础结构退出条件
+f1.keywords:
+- NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对 Windows 10 企业版的条件。
-ms.openlocfilehash: d51392572c78edb1a21f5edc3229057b9af3f514
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 42d8ec912a70aecef49672682c25f5e42c4bbe21
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801217"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085551"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>阶段 3：Windows 10 企业版基础结构退出条件
 
-![阶段 3：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![阶段 3：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 确保你的 Windows 10 企业版基础结构符合以下必需条件，以及你认为可选的那些条件。
 
@@ -125,4 +127,4 @@ Windows Autopilot 配置设备并将其连接到 Azure AD。
 
 |||
 |:-------|:-----|
-|![阶段 4：Office 365 专业增强版](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是 [Office 365 专业增强版](office365proplus-infrastructure.md)。 |
+|![阶段 4：Office 365 专业增强版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是 [Office 365 专业增强版](office365proplus-infrastructure.md)。 |

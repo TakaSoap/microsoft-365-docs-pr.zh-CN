@@ -1,5 +1,7 @@
 ---
 title: 用于 Microsoft 365 测试环境的联合身份
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Microsoft 365 测试环境配置联合身份验证。
-ms.openlocfilehash: 1158109a4d42a7434a1d66750b2182f940d511b9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4796f8f2a7dc6757ccbcb3d608d72ad789d34e40
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801847"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067612"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>用于 Microsoft 365 测试环境的联合身份
 
@@ -33,7 +35,7 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
   
 本文介绍了如何为 Microsoft 365 或 Office 365 测试环境配置联合身份验证，从而实现以下配置：
 
-![Microsoft 365 测试环境的联合身份验证](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
+![Microsoft 365 测试环境的联合身份验证](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 此配置包括： 
   
@@ -60,7 +62,7 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
 
 按照 [Microsoft 365 的密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。下面是生成的配置。
   
-![使用密码哈希同步测试环境的模拟企业配置](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase1.png)
+![使用密码哈希同步测试环境的模拟企业配置](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase1.png)
   
 此配置包括： 
   
@@ -109,7 +111,7 @@ Restart-Computer
 
 下面是生成的配置。
   
-![添加到用于 Microsoft 365 测试环境的 DirSync 的 AD FS 服务器](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase2.png)
+![添加到用于 Microsoft 365 测试环境的 DirSync 的 AD FS 服务器](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## <a name="phase-3-create-the-web-proxy-server"></a>阶段 3：创建 Web 代理服务器
 
@@ -176,7 +178,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateA
   
 下面是生成的配置。
   
-![添加到用于 Microsoft 365 测试环境的 DirSync 的 Web 应用程序代理服务器](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
+![添加到用于 Microsoft 365 测试环境的 DirSync 的 Web 应用程序代理服务器](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a>阶段 4：创建自签名证书并配置 ADFS1 和 PROXY1
 

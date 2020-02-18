@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 当 "准备就绪" 框中的一个可供使用时，使用 trainable 分类器将无法满足您的需求。 Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本主题介绍如何创建自定义分类器。
-ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595909"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078848"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>创建 trainable 分类器（预览）
 
@@ -29,7 +29,7 @@ ms.locfileid: "41595909"
 
 此时间线反映了一个示例部署。
 
-![trainable-分类轴](media/trainable-classifier-deployment-timeline_border.png)
+![trainable-分类轴](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > 第一次需要 trainable 分类器时，自愿加入是必需的。 Microsoft 365 需要在12天内完成组织内容的基准评估。 请与全局管理员联系以启动自愿加入过程。
@@ -80,7 +80,7 @@ ms.locfileid: "41595909"
 10. 您现在可以通过选择分类器查看详细信息页。
 
 
-![trainable 分类器准备好进行测试](media/classifier-trainable-ready-to-test-detail.png)
+![trainable 分类器准备好进行测试](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. 至少收集200个测试内容项。 Microsoft 建议10000以获得最佳效果。 这些项目应混合成强阳性的项目，而这些项目的性质不是很明显。 有关受支持的文件类型，请参阅[SharePoint Server 中的默认已爬网文件扩展名和分析文件类型](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
@@ -100,13 +100,13 @@ ms.locfileid: "41595909"
 
 16. 当 trainable 分类器处理完测试文件后，"详细信息" 页上的状态将更改`Ready to review`为。 如果需要增加测试样本大小，请选择`Add items to test`并允许 trainable 分类器处理其他项。
 
-![准备查看屏幕截图](media/classifier-trainable-ready-to-review-detail.png)
+![准备查看屏幕截图](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. 选择`Tested items to review` "选项卡" 以查看项目。
 
 18. Microsoft 365 将一次显示30个项目。 查看它们，然后在`We predict this item is "Relevant". Do you agree?`框中选择`Yes` " `No`或`Not sure, skip to next item`" 或 "" 或 ""。 模型准确性在每30个项目后自动更新。
 
-!["查看项目" 框](media/classifier-trainable-review-detail.png)
+!["查看项目" 框](../media/classifier-trainable-review-detail.png)
 
 19. 查看*至少200个*项目。
 
@@ -114,7 +114,7 @@ ms.locfileid: "41595909"
 
 20. 继续查看，直到准确性达到至少70%， `Publish the classifier`状态为。 `Ready to use`
 
-![准确性并准备好发布](media/classifier-trainable-review-ready-to-publish.png)
+![准确性并准备好发布](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. 发布分类器。
 

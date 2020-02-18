@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595789"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078661"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -45,7 +45,7 @@ ms.locfileid: "41595789"
 
 图中显示了合规性管理器的主要组件之间的关系：
 
-![合规性管理器版本3中的关系](media/compliance-manager-relationships.png)
+![合规性管理器版本3中的关系](../media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>组
 
@@ -77,7 +77,7 @@ ms.locfileid: "41595789"
 - **文章 ID**：此字段仅用于 GDPR 评估，并指定相应的 GDPR 文章编号。
 - **说明**：来自相应证书或法规的控制文本。 由于版权限制，针对 ISO 标准列出了相关信息的链接。
 
-![合规性管理器版本3中的控件](media/compliance-manager-controls.png)
+![合规性管理器版本3中的控件](../media/compliance-manager-controls.png)
 
 合规性管理器、 **Microsoft 托管控件**、**客户托管控件**和**共享管理控件**中有三种类型的控件
 

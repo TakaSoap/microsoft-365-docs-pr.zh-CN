@@ -56,7 +56,7 @@ ms.locfileid: "42072021"
 5.  关闭或删除调查。
 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要创建数据调查、搜索内容和删除溢出的数据，您必须是 Security & 合规性中心中的 "数据调查员" 角色组的成员。
 

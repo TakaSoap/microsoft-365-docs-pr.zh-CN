@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4005b1e379b138f4eb22bb5c11e1f278185dc65e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c1acdb515e278c40ca25d47e2d9fd24c23d51f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597609"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070051"
 ---
 # <a name="query-the-data-in-a-review-set"></a>查询审阅集中的数据
 
@@ -31,7 +31,7 @@ ms.locfileid: "41597609"
 
 若要在审阅集中对文档创建和运行查询，请单击 "审阅集" 中的 "**新建查询**"。 命名查询并定义条件后，单击 "**保存**" 以保存并运行查询。 若要运行以前保存的查询，请单击已保存的查询。
 
-![查看集查询](media/AeDReviewSetQueries.png)
+![查看集查询](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>生成审阅集查询
 
@@ -59,7 +59,7 @@ ms.locfileid: "41597609"
 
 除了可以保存的查询之外，还可以使用审阅设置筛选器将其他条件快速应用于审阅集查询。 这可帮助您进一步优化由审阅集查询显示的结果。
 
-![查看设置筛选器](media/AeDReviewSetFilters.png)
+![查看设置筛选器](../media/AeDReviewSetFilters.png)
 
 筛选器与查询的区别在于以下两个重要方式：
 

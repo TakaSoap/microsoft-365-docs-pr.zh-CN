@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，可以集中管理与安全或合规性相关的所有任务的权限。
-ms.openlocfilehash: 53695bb412c760c769692dfe7fb40324f495d356
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6553020c215b3ffad0707a699414a6939ef368ca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598699"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082425"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "41598699"
 
 在全局管理员分配这些管理员角色后，这些管理员可以访问跨 Microsoft 365 中所有服务（例如，Microsoft 365 安全中心、Microsoft 365 合规中心、Azure、Office 365 和企业移动性 + 安全性）的功能和数据。
 
-![Microsoft 365 安全中心“权限”页](../media/m365-security-permissions-page.png)
+![Microsoft 365 安全中心“权限”页](../../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Microsoft 365 角色是什么
 
@@ -130,13 +130,13 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 
 有关详细信息，请参阅[查看和分配 Azure Active Directory 中的管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal)。
 
-![链接以管理 Azure Active Directory 中的权限](../media/permissions-manage-in-azure-ad-link.png)
+![链接以管理 Azure Active Directory 中的权限](../../media/permissions-manage-in-azure-ad-link.png)
 
 ## <a name="managing-roles-in-a-service-instead-of-azure-active-directory"></a>管理服务中的角色，而不是 Azure Active Directory 中的角色
 
 Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色也会显示在他们拥有权限的服务中。 例如，可以在 Office 365 安全与合规中心中看到这些角色。
 
-![Office 365 安全与合规中心中的角色](../media/m365-roles-in-o365-scc.png)
+![Office 365 安全与合规中心中的角色](../../media/m365-roles-in-o365-scc.png)
 
 ### <a name="breaking-inheritance"></a>中断继承
 

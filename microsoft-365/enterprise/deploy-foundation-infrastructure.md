@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 企业版底层基础结构
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解组织中部署 Microsoft 365 企业版底层基础结构（也称为核心部署）的主要阶段。
-ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 26f95b9e7fb951910b983defb8b80162f39c37a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801957"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067970"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
 
@@ -28,12 +30,12 @@ ms.locfileid: "40801957"
 
 | | 阶段 | 结果 |
 |:-------|:-----|:-----|
-|![阶段 1：网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[阶段 1：网络](networking-infrastructure.md)| 网络已经过优化，以便访问 Microsoft 365 基于云的服务。 |
-|![阶段 2：标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[阶段 2：标识](identity-infrastructure.md)| 管理员帐户受到保护，用户和组经过同步，并且采用强用户身份验证。 |
-|![阶段 3：Windows 10 企业版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[阶段 3：Windows 10 企业版](windows10-infrastructure.md)| 现有基于 Windows 的计算机可以升级至 Windows 10 企业版，并且新设备已安装了 Windows 10 企业版。 |
-|![阶段 4：Office 365 专业增强版](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[阶段 4：Office 365 专业增强版](office365proplus-infrastructure.md)| 现有 Microsoft Office 用户可以升级到 Office 365 专业增强版。 |
-|![阶段 5：移动设备管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[阶段 5：移动设备管理](mobility-infrastructure.md)| 可以注册和管理你的设备。 |
-|![阶段 6：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[阶段 6：信息保护](infoprotect-infrastructure.md)| Office 365 安全功能已启用，你的标签和策略已准备好保护文档和电子邮件。 |
+|![阶段 1：网络](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[阶段 1：网络](networking-infrastructure.md)| 网络已经过优化，以便访问 Microsoft 365 基于云的服务。 |
+|![阶段 2：标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[阶段 2：标识](identity-infrastructure.md)| 管理员帐户受到保护，用户和组经过同步，并且采用强用户身份验证。 |
+|![阶段 3：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[阶段 3：Windows 10 企业版](windows10-infrastructure.md)| 现有基于 Windows 的计算机可以升级至 Windows 10 企业版，并且新设备已安装了 Windows 10 企业版。 |
+|![阶段 4：Office 365 专业增强版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[阶段 4：Office 365 专业增强版](office365proplus-infrastructure.md)| 现有 Microsoft Office 用户可以升级到 Office 365 专业增强版。 |
+|![阶段 5：移动设备管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[阶段 5：移动设备管理](mobility-infrastructure.md)| 可以注册和管理你的设备。 |
+|![阶段 6：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[阶段 6：信息保护](infoprotect-infrastructure.md)| Office 365 安全功能已启用，你的标签和策略已准备好保护文档和电子邮件。 |
 
 将从最基本的阶段（网络和标识）开始，然后创建基础结构设置和组层，以：
 
@@ -56,11 +58,11 @@ ms.locfileid: "40801957"
 
 以下是 Microsoft 365 企业版整体部署指南中的底层基础结构：
 
-![Microsoft 365 企业版整体部署指南中的底层基础结构](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![Microsoft 365 企业版整体部署指南中的底层基础结构](../media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>概览
 
-[Microsoft 365 企业版底层基础结构海报](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)是一个可查看各阶段相关情况的中心位置：
+[Microsoft 365 企业版底层基础结构海报](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)是一个可查看各阶段相关情况的中心位置：
 
 - 所处阶段对管理员和用户的整体目标
 - 服务、功能和工具
@@ -69,7 +71,7 @@ ms.locfileid: "40801957"
 - 新用户的载入进度
 - 监视和更新方式
 
-[![Microsoft 365 企业版基础结构海报图像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Microsoft 365 企业版基础结构海报图像](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 要下载海报副本，请单击[此处](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)。
 

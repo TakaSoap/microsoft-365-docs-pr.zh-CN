@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。 '
-ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595247"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075446"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中的预计和实际电子数据展示搜索结果之间的差异
 
@@ -35,21 +35,21 @@ ms.locfileid: "41595247"
    
 当您运行电子数据展示搜索时，所使用的工具将返回符合搜索条件的项目数（及其总大小）的估计值。 例如，当您在安全 & 合规中心运行搜索时，所选搜索的详细信息窗格中将显示估计的搜索结果。
   
-![显示在选定搜索的详细信息窗格中的预估结果](media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
+![显示在选定搜索的详细信息窗格中的预估结果](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
 当您将结果导出到本地计算机，并在随搜索结果下载的导出摘要报告中时，这与在电子数据展示导出工具中显示的总大小和项目数的估计值相同。
   
 **电子数据展示导出工具中的估计结果**
 
-![电子数据展示导出工具的预估结果](media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![电子数据展示导出工具的预估结果](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **导出摘要报告中的估计结果**
 
-![导出摘要报告包含预估搜索结果](media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![导出摘要报告包含预估搜索结果](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 但是，正如您在导出摘要报告的前一屏幕截图中所看到的，实际下载的实际搜索结果的大小和数量不同于估计的搜索结果的大小和数量。 
   
-![预估的和下载的搜索结果之间的差异](media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![预估的和下载的搜索结果之间的差异](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 以下是这些区别的一些原因：
   

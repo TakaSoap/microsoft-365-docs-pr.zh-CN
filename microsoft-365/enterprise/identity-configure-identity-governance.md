@@ -1,5 +1,7 @@
 ---
 title: 步骤 7：配置标识治理
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置 Azure AD 租户的标识治理。
-ms.openlocfilehash: d9a9a63f46230a07b35052a3b02231f7b5315d9e
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302919"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067349"
 ---
 # <a name="step-6-configure-identity-governance"></a>步骤 6：配置标识治理
 
-![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 标识治理的功能就是保护、监视和审核对关键资产的访问，同时确保员工高效工作。 例如，借助标识治理，可以确保相应的用户有权访问正确的资源，并确定该访问权限是否随时间而变化。
 

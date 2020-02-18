@@ -33,7 +33,7 @@ ms.locfileid: "42077721"
     
 - 用户主和存档邮箱中的项目将保留
     
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要在诉讼保留中放置 Exchange Online 邮箱，必须为其分配 Exchange Online 计划2许可证。 如果向某个邮箱分配了 Exchange Online 计划1许可证，则必须为其分配一个单独的 Exchange Online 存档许可证以将其置于保留状态。
     

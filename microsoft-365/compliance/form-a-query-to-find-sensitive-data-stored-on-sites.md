@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 SharePoint Online 中的数据丢失防护（DLP），您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后，可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
-ms.openlocfilehash: e3750ee69a197de5e7e5c0ac9346124568b8d5f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c0b17ef8f1e6a10d095f4533867a108b937a56a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594543"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073891"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -35,7 +35,7 @@ ms.locfileid: "41594543"
 
 基本的 DLP 查询包括三个部分：SensitiveType、计数范围和置信区间。 如下图所示， **SensitiveType： "\<\>type"** 是必需的，并且**|\<计数范围\> **和**|\<可信度范围\> **都是可选的。 
   
-![示例查询分为必需和可选两种](media/DLP-query-example-text.png)
+![示例查询分为必需和可选两种](../media/DLP-query-example-text.png)
   
 ### <a name="sensitive-type---required"></a>敏感类型 - 必填
 

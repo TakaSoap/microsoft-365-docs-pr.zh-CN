@@ -1,5 +1,7 @@
 ---
 title: 步骤1：创建和保护全局管理员帐户
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 全局管理员帐户需要特殊对待，以确保其免受凭据泄露的影响。
-ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801827"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067339"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步骤 1：创建和保护全局管理员帐户
 
-![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>保护全局管理员帐户
@@ -57,7 +59,7 @@ ms.locfileid: "40801827"
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在测试实验室环境中练习此配置，请参阅[保护全局管理员帐户测试实验室指南](protect-global-administrator-accounts-microsoft-365-test-environment.md)。 |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在测试实验室环境中练习此配置，请参阅[保护全局管理员帐户测试实验室指南](protect-global-administrator-accounts-microsoft-365-test-environment.md)。 |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-global-admin)。
@@ -101,7 +103,7 @@ Office 365 租户中的特权访问管理可通过配置相应策略来实现，
 
 |||
 |:-------|:-----|
-|![Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在测试实验室环境中练习此配置，请参阅[特权访问管理测试实验室指南](privileged-access-microsoft-365-enterprise-dev-test-environment.md)。 |
+|![Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在测试实验室环境中练习此配置，请参阅[特权访问管理测试实验室指南](privileged-access-microsoft-365-enterprise-dev-test-environment.md)。 |
 |||
 
 作为临时检查点，请查看对应于此步骤的[退出条件](identity-exit-criteria.md#crit-identity-pam)。
@@ -110,5 +112,5 @@ Office 365 租户中的特权访问管理可通过配置相应策略来实现，
 
 |||
 |:-------|:-----|
-|![第 2 步](./media/stepnumbers/Step2.png)| [保护密码安全](identity-secure-your-passwords.md) |
+|![第 2 步](../media/stepnumbers/Step2.png)| [保护密码安全](identity-secure-your-passwords.md) |
 

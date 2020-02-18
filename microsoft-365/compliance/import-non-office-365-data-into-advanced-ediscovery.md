@@ -32,7 +32,7 @@ ms.locfileid: "42072979"
 > [!NOTE]
 > 您可以购买适用于非 Office 365 内容的 Office 365 高级电子数据展示数据存储附加订阅。 这仅适用于要使用高级电子数据展示进行分析的内容。 按照 "为[商业版购买或编辑和添加 office 365](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) " 中的步骤操作，购买 Office 365 高级电子数据展示存储加载项。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 如以下过程所述，使用 "上载非 Office 365" 功能需要具备以下条件：
   

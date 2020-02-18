@@ -13,18 +13,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 在运行搜索之前，请检查关键字查询的内容搜索是否存在错误和拼写错误（如不受支持的字符和小写布尔运算符）。 如果发现错误，我们将建议已修改的查询。
-ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595919"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078902"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>检查内容搜索查询中是否有错误
 
 当您创建或编辑内容搜索时，可以使用 Office 365 检查您对不受支持的字符和小写 Boolean 运算符的查询。 如何操作？ 只需在内容搜索的 "查询" 页上单击 "**检查查询以查找打字错误**"。 
   
-![单击 "检查查询是否输入拼写" 以检查不受支持的字符的搜索查询](media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
+![单击 "检查查询是否输入拼写" 以检查不受支持的字符的搜索查询](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
 下面列出了我们检查的不受支持的字符。 不受支持的字符通常是隐藏的，它们通常会导致搜索错误或返回意外的结果。
   
@@ -40,7 +40,7 @@ ms.locfileid: "41595919"
 
 如果在查询中找到不受支持的字符，则会显示一条警告消息，指出找到了不受支持的字符，并提出了替代方法。 然后，您可以选择保留原始查询或将其替换为建议的修订后的查询。 下面的示例展示了在上一屏幕截图中单击搜索查询的 "**检查查询是否录入**" 后显示的警告消息。 请注意，原始查询包含智能引号和小写布尔运算符。 
   
-![将显示一条警告消息，其中包含查询的建议修订](media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![将显示一条警告消息，其中包含查询的建议修订](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>如何在搜索查询中阻止不受支持的字符
 

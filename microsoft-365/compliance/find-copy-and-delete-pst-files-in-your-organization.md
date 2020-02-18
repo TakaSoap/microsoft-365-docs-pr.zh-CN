@@ -45,7 +45,7 @@ ms.locfileid: "42073913"
     
 5. **[步骤5：删除在网络中找到的 pst 文件](#step-5-delete-the-pst-files-found-on-your-network)**-在 Office 365 中已将您找到和收集的 pst 文件导入到 Exchange Online 邮箱后，您可以使用 "pst 集合" 工具从第1步中找到的原始位置删除 pst 文件。 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 按照以下步骤将 PST 集合工具下载到本地计算机。 
     

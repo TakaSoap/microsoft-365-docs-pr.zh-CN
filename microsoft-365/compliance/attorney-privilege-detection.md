@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 使用律师-客户端特权检测模型，在阅读高级电子数据展示事例中的内容时，使用基于机器学习的权限内容检测。
-ms.openlocfilehash: b60fe72cf476b9a6cbbd5cae3ed1a1e541d6b313
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fb635e429af2ae4d796e9c847a34d949d8dd6d9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595959"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079236"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在高级电子数据展示中设置律师-客户端特权检测
 
@@ -46,7 +46,7 @@ ms.locfileid: "41595959"
 
 这些属性（及其对应的值）将添加到审阅集中文档的文件元数据中，如以下屏幕截图所示：
 
-![律师-文件元数据中显示的客户端权限属性](media/AeDAttorneyClientPrivilegeMetadata.png)
+![律师-文件元数据中显示的客户端权限属性](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
 这三个属性也可在审阅集中进行搜索。 有关详细信息，请参阅[在审阅集中查询数据](review-set-search.md)。
 
@@ -62,7 +62,7 @@ ms.locfileid: "41595959"
 
 2. 在**高级电子数据展示**主页上的 "**设置**" 磁贴中，单击 "**配置全局分析设置**"。
 
-   ![选择 "配置实验功能"](media/AeDExperimentalFeatures.png)
+   ![选择 "配置实验功能"](../media/AeDExperimentalFeatures.png)
 
 3. 在 "**分析设置**" 选项卡上，选择 "**管理律师-客户端权限设置**"。
 
@@ -80,7 +80,7 @@ ms.locfileid: "41595959"
 
    将显示 "**律师-客户端权限**" 页，并且启用了 "**律师-客户端权限检测**" 切换功能。
 
-   ![律师-客户端权限飞出页面](media/AeDUploadAttorneyList.png)
+   ![律师-客户端权限飞出页面](../media/AeDUploadAttorneyList.png)
 
 3. 选择 "**浏览**"，然后查找并选择您在步骤1中创建的 .csv 文件。
 
@@ -98,13 +98,13 @@ ms.locfileid: "41595959"
  
 2. 在 "**标记**" 下，选择 "**添加组**" 旁边的下拉箭头，然后选择 "**添加智能标记组**"。
 
-   ![选择 "添加智能标记组"](media/AeDCreateSmartTag.png)
+   ![选择 "添加智能标记组"](../media/AeDCreateSmartTag.png)
 
 3. 在 "**选择智能标记的模型**" 页上，选择 "在**律师-客户端权限**下**选择**"。
 
    将显示名为 "**律师-客户端" 权限**的标记组。 它包含两个名为**正数**和**负数**的子标记，它们对应于由模型生成的可能结果。
 
-   ![律师-客户端权限智能标记组](media/AeDAttorneyClientSmartTagGroup.png)
+   ![律师-客户端权限智能标记组](../media/AeDAttorneyClientSmartTagGroup.png)
 
 3. 根据需要，重命名标记组和标记以进行查看。 例如，可以将**肯定**重命名为**特权**，将**否定**重命名为 "**无权限**"。
 
@@ -126,8 +126,8 @@ ms.locfileid: "41595959"
 
 例如，下面的屏幕截图显示了两个文档。 第一个包含的内容在性质上是合法的，并且在律师列表中找到了参与者。 第二个不包含，因此不显示任何标签。
 
-![包含律师和法律内容标签的文档](media/AeDTaggingPanelLegalContentAttorney.png)
+![包含律师和法律内容标签的文档](../media/AeDTaggingPanelLegalContentAttorney.png)
 
-![不带任何标签的文档](media/AeDTaggingPanelNegative.png)
+![不带任何标签的文档](../media/AeDTaggingPanelNegative.png)
 
 查看文档以查看其是否包含特权内容之后，可以使用相应的标记对文档进行标记。

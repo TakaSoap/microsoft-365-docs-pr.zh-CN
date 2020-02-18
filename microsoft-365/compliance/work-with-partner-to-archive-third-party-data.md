@@ -552,7 +552,7 @@ ms.locfileid: "42085005"
 
 若要撤销第三方数据连接器的同意，可以使用 Azure 门户中的 "**企业应用程序**" 边栏或使用 Office 365 PowerShell 中的[new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal)删除应用程序（通过删除相应的服务主体）从 azure Active Directory 中删除该应用程序。 您还可以在 Azure Active Directory PowerShell 中使用[AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某项缺少强制属性，则不会将其导入 Office 365。 导入过程将返回一条错误消息，说明无法导入项目的原因和缺少的属性。
     

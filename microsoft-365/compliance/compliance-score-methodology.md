@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合规性分数如何根据为解决风险而采取的措施计算个性化分数，并提高您的合规性状况。
-ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca8615f8c15264104faa71d155d2656cd788bd53
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596239"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078629"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft 合规性分数（预览）计算
 
@@ -82,8 +82,8 @@ ms.locfileid: "41596239"
 |:-----|:-----|
 | 预防性强制 | 27 |
 | 预防自由 | 9  |
-| 侦探必备 | 第三章 |
-| 侦探自由 | 1 |
-| 强制纠正 | 第三章 |
-| 随机纠正 | 1 |
+| 侦探必备 | 3  |
+| 侦探自由 | 1  |
+| 强制纠正 | 3  |
+| 随机纠正 | 1  |
   

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和团队文件设置适用于 Office 365 的客户密钥。
-ms.openlocfilehash: a57fb5ee7eea1746a50ec0fb1e2c3e84495b4f2c
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: a360c2c7a6876669ce5d2ae6b52a730a3c7f45a5
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804759"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091285"
 ---
 # <a name="set-up-customer-key-for-office-365"></a>设置适用于 Office 的客户密钥365
 
@@ -124,7 +124,7 @@ SharePoint Online 和 OneDrive for Business：
 
 临时或永久丢失根加密密钥可能会非常中断，甚至会导致服务操作发生故障，并可能导致数据丢失。 出于此原因，使用客户密钥的资源需要加强保护。 与客户密钥结合使用的所有 Azure 资源在默认配置之外提供保护机制。 可以通过阻止即时和不可撤销取消的方式对 Azure 订阅进行标记或注册。 这称为注册强制保留期。 为强制保留期注册 Azure 订阅所需的步骤需要与 Office 365 团队进行协作。 此过程可能需要一至五个工作日。 以前，这有时称为 "不取消"。
   
-在联系 Office 365 团队之前，必须为每个用于客户密钥的 Azure 订阅执行以下步骤。 请确保已安装 Azure PowerShell Az 模块，然后再继续（https://docs.microsoft.com/powershell/azure/new-azureps-module-az。
+在联系 Office 365 团队之前，必须为每个用于客户密钥的 Azure 订阅执行以下步骤。 在开始之前，请确保已安装[Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az)模块。
   
 1. 使用 Azure PowerShell 登录。 有关说明，请参阅[使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
 
@@ -132,7 +132,7 @@ SharePoint Online 和 OneDrive for Business：
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
+   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.KeyVault
    ```
 
 3. 请与 Microsoft 联系以完成此过程。 对于 SharePoint 和 OneDrive for Business 团队，请联系[spock@microsoft.com](mailto:spock@microsoft.com)。 对于 Exchange Online 和 Skype for Business，请联系[exock@microsoft.com](mailto:exock@microsoft.com)。 在您的电子邮件中包括以下内容：
@@ -144,18 +144,18 @@ SharePoint Online 和 OneDrive for Business：
 
    完成此过程所需的服务级别协议（SLA）是在 Microsoft 经过通知（并验证）后，注册了你的订阅以使用强制保留期后，此过程的服务级别协议（SLA）就是5个工作日。
 
-4. 收到 Microsoft 注册已完成的通知后，通过运行 AzProviderFeature cmdlet 验证注册的状态，如下所示。 对每个订阅执行此操作。
+4. 收到 Microsoft 注册已完成的通知后，通过运行 AzProviderFeature 命令来验证注册的状态，如下所示。 如果经过验证，AzProviderFeature 命令将返回注册**状态**属性的**注册**值。 对每个订阅执行此操作。
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
    ```
 
-5. 验证 AzProviderFeature cmdlet 中的**注册状态**属性是否返回**已注册**的值后，请运行以下命令来完成此过程。 对每个订阅执行此操作。
+5. 若要完成此过程，请运行 AzResourceProvider 命令。 对每个订阅执行此操作。
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Register-AzResourceProvider -ProviderNamespace "Microsoft.KeyVault"
+   Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>在每个订阅中创建高级 Azure 密钥保管库

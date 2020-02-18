@@ -1,5 +1,7 @@
 ---
 title: 步骤 8 - 用户通信和培训
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何使用通信和培训让最终用户为 Windows 10 和 Office 365 专业增强版做好准备。
-ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033657"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085105"
 ---
 # <a name="step-8-user-communications-and-training"></a>步骤 8：用户通信和培训
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>步骤 8：用户通信和培训</strong></p>
 <p>在将你的电脑切换至 Windows 10 和 Office 365 专业增强版后，确保你的用户了解新体验和新的工作方式。请了解如何利用用户采用帮助（通过 Microsoft FastTrack）、培训材料和通信模板，以及如何通过新方法来监控用户的接受和使用情况。</p></td>
-<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -47,7 +49,7 @@ ms.locfileid: "38033657"
 
 为这些应用和其他本地或基于浏览器的应用（例如 Teams 和 Planner）提供了详细的通信和培训模板。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
 
 我们还提供有关新的应用内功能的指南，例如，在 Outlook 中附加 OneDrive 链接文件，或使用 PowerPoint 中的新平滑幻灯片切换和设计器功能。
 
@@ -77,7 +79,7 @@ ms.locfileid: "38033657"
 
 在创建部署圈时，最好是与业务部门及其管理人员一起协作。你需要了解在部署或进行更改时应避免的关键日期和时间。如果没有精心的规划和来自利益干系人的认可，将很难让用户参与体验以及习惯即将推出的更改。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### <a name="phase-1-the-it-team-and-early-adopter-insiders"></a>第 1 阶段：IT 团队和早期采用者预览体验成员 
 
@@ -117,7 +119,7 @@ Microsoft 的 IT 展示系列是与 Windows 10 部署相关的内容的另一个
 
 随着你的试点的扩展，你将希望记录和发布常见问题解答和自助服务内容，以帮助主动减少支持票证和支持人员活动。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>第 3 阶段和之后：广泛的产品部署 
 

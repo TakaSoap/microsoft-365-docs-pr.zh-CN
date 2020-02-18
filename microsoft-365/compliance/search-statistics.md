@@ -39,7 +39,7 @@ ms.locfileid: "42081362"
 
 ![搜索统计信息下拉列表](../media/SearchStatisticsDropDownList.png)
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>总结
 
 在**摘要**视图中，你可以看到按位置类型划分的搜索结果（例如，位置包括 Exchange 邮箱和 SharePoint 网站）。 将为每个位置类型显示以下信息：
 

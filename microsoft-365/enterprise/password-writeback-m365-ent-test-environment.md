@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 测试环境的密码写回
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
-ms.openlocfilehash: fe91232d4c5a07035e6daff9f1bf88a1426ee6ad
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 8ff6c8c7d2eae735a2572bae1c437502602cfd0b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631272"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066048"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
@@ -36,16 +38,16 @@ ms.locfileid: "39631272"
 1.  创建采用密码哈希同步的 Microsoft 365 模拟企业测试环境。
 2.  为 TESTLAB AD DS 域启用密码写回。
     
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
 首先，按照[密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。下面是生成的配置。
   
-![使用密码哈希同步测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![使用密码哈希同步测试环境的模拟企业配置](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 此配置包括： 
   
@@ -122,7 +124,7 @@ ms.locfileid: "39631272"
 
 下面是生成的配置：
 
-![使用传递身份验证测试环境的模拟企业配置](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![使用传递身份验证测试环境的模拟企业配置](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 此配置包括：
 

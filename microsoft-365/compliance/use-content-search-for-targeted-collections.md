@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在安全 & 合规中心中使用内容搜索来执行目标集合。 目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。 使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
-ms.openlocfilehash: 66929911cdb1692ea1ee2a8920dad349d50ec156
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8afe9e65aa65c697d9c5cefbeaf89638c1782d4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597299"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080793"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>将 Office 365 中的内容搜索用于目标集合
 
@@ -201,7 +201,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   
 下面的示例展示了邮箱文件夹的脚本返回的输出。
   
-![脚本返回的邮箱文件夹和文件夹 Id 列表的示例](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![脚本返回的邮箱文件夹和文件夹 Id 列表的示例](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 步骤2中的示例显示了用于在用户的 "可恢复的项目" 文件夹中搜索 "清除" 子文件夹的查询。
   
@@ -211,7 +211,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   
 下面的示例展示了网站文件夹的脚本返回的输出。
   
-![脚本返回的网站文件夹的 documentlink 名称列表示例](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![脚本返回的网站文件夹的 documentlink 名称列表示例](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>步骤2：使用文件夹 ID 或 documentlink 执行目标集合
 
@@ -221,7 +221,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
 2. 使用在步骤1中运行脚本时使用的帐户和凭据登录 Office 365。
     
-3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索** \> **内容搜索**"，然后单击 "**新建** ![添加图标](media/O365-MDM-CreatePolicy-AddIcon.gif)"。
+3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索** \> **内容搜索**"，然后单击 "**新建** ![添加图标](../media/O365-MDM-CreatePolicy-AddIcon.gif)"。
     
 4. 在“新建搜索”**** 页上，键入内容搜索的名称。 此名称在组织中必须是唯一的。 
     
@@ -233,13 +233,13 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
     - 单击 "**选择要搜索的特定网站**" 搜索，然后添加在步骤1中运行脚本时指定的相同网站 URL。 
     
-6. 单击“下一步”。****
+6. 单击“**下一步**”。
     
 7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框`folderid:<folderid>`中`documentlink:<path>` ，粘贴步骤1中的脚本返回的 or 值。 
     
     例如，下面的屏幕截图中的查询将搜索用户的 "可恢复项目" 文件夹中的 "清除" 子文件夹中的任何项目`folderid` （"清除" 子文件夹的属性值显示在步骤1中的屏幕截图中）：
     
-    ![将 folderid 或 documentlink 粘贴到搜索查询的关键字框中](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![将 folderid 或 documentlink 粘贴到搜索查询的关键字框中](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. 单击 "**搜索**" 以启动目标集合搜索。 
   

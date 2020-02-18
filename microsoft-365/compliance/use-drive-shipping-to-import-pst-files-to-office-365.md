@@ -449,7 +449,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     > [!NOTE]
     > 若要帮助您对 PST 导入 CSV 映射文件进行故障排除，请使用[Azure 存储资源管理器](#view-a-list-of-the-pst-files-uploaded-to-office-365)工具在**ingestiondata**容器中查看已上载到 Azure 存储区域的硬驱中的 PST 文件的文件夹结构。 映射文件错误通常是由于 FilePath 参数中的值不正确而导致的。 此参数指定 PST 文件在 Azure 存储区域中的位置。 请参阅[第3步](#step-3-create-the-pst-import-mapping-file)中表中的 FilePath 参数的说明。 如前所述，当您在`/dstdir:` [步骤 2](#step-2-copy-the-pst-files-to-the-hard-drive)中运行 waimportexport.exe 工具时，由参数指定在 AZURE 存储区域中 PST 文件的位置。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 驱动器运输是一种将大量存档邮件数据导入到 Office 365 以利用对您的组织可用的合规性功能的有效方法。 将存档数据导入到用户邮箱后，可以执行以下操作：
     

@@ -1,5 +1,7 @@
 ---
 title: 阶段 4：Office 365 专业增强版
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: f41990055a97a2853622529e7cc28ccf096eef69
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 2b3ac311863249720a2dc1fba00ead9ebf6ac8e5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831893"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066436"
 ---
 # <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
 
-![阶段 4：Office 365 专业增强版](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![阶段 4：Office 365 专业增强版](../media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 ** 这适用于 Microsoft 365 企业版和 Microsoft 365 教育版的 E3 和 E5 版本
 
@@ -63,7 +65,7 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅�
 
 许多组织将针对不同用户使用这些选项组合。例如，组织可能使用配置管理器对大部分用户部署 Office，但对不经常连接到内部网络的一小组工作人员启用自助安装。 
 
-如果组织使用配置管理器，建议升级到 Current Branch 并更新到当前版本。有关详细信息，请参阅[应使用配置管理器的哪个分支？](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use)
+如果组织使用配置管理器，建议升级到 Current Branch 并更新到当前版本。有关详细信息，请参阅[应使用配置管理器的哪个分支？](https://docs.microsoft.com/configmgr/core/understand/which-branch-should-i-use)
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
@@ -73,7 +75,7 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅�
 
 了解 Contoso Corporation（虚构但具代表性的跨国企业）是如何[部署 Office 365 专业增强版](contoso-o365pp.md)的。
 
-![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 
