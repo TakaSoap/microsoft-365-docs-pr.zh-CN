@@ -1,6 +1,8 @@
 ---
 title: 为远程工作者提供强大功能
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/24/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 配置基础结构和安全性，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 2544820b577b81062550a8c0a84513f2a8c28668
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b86071b7e5a6101c328b43177e965856f74995d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831963"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067700"
 ---
 # <a name="empower-remote-workers"></a>为远程工作者提供强大功能
 
@@ -70,9 +72,9 @@ ms.locfileid: "39831963"
 
 以下阶段将指导你部署 Microsoft 365 企业版功能以实现远程访问并推动远程工作者的采用。 如果你已部署这些阶段的元素，请确保在移到下一个元素之前满足规定的要求。
 
-<a name="poster"></a>有关此方案的 1 页摘要，请参阅[“为远程工作者提供强大功能”海报](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)。
+<a name="poster"></a>有关此方案的 1 页摘要，请参阅[“为远程工作者提供强大功能”海报](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)。
 
-[![“为远程工作者提供强大功能”海报](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+[![“为远程工作者提供强大功能”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
 还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) 格式的海报，并按 letter、legal 或 tabloid (11 x 17) 大小的纸张打印。
 
@@ -94,7 +96,7 @@ ms.locfileid: "39831963"
 
 下面是最终配置，其中突出显示了标识元素。
 
-![远程工作者的标识元素](./media/empower-people-to-work-remotely/remote-workers-id-phase.png)
+![远程工作者的标识元素](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
 对于[阶段 3：Windows 10 企业版](windows10-infrastructure.md)，请部署：
 
@@ -103,13 +105,13 @@ ms.locfileid: "39831963"
 
 下面是 Windows 10 企业版设备的最终配置。
 
-![远程工作者的 Windows 10 企业版元素](./media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
+![远程工作者的 Windows 10 企业版元素](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
 对于[阶段 4：Office 365 专业增强版](office365proplus-infrastructure.md)，请部署基础结构以安装 Office 365 专业增强版，或者在组织设备上将当前安装的 Office 套件（如 Office 2010 或 Office 2013）升级到 Office 365 专业增强版。 这将为用户提供最佳的安全性和协作体验。
 
 下面是设备上安装的 Office 365 专业增强版的最终配置。
 
-![远程工作者的 Office 365 专业增强版元素](./media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![远程工作者的 Office 365 专业增强版元素](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 对于[阶段 5：移动设备管理](mobility-infrastructure.md)，请部署 Intune 设备和应用管理以：
 
@@ -119,7 +121,7 @@ ms.locfileid: "39831963"
 
 下面是已注册 Intune 的设备的最终配置，其中突出显示了策略。
 
-![远程工作者的移动设备管理元素](./media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
+![远程工作者的移动设备管理元素](../media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
  
 对于[阶段 6：信息保护](infoprotect-infrastructure.md)，通过以下方法为你的数字资产设计和配置保护：
 
@@ -128,13 +130,13 @@ ms.locfileid: "39831963"
 
 以下是包含 DLP 策略并突出显示了敏感度标签的最终配置。
 
-![远程工作者的信息保护元素](./media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
+![远程工作者的信息保护元素](../media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
  
 若要访问本地应用，可以使用需要混合标识环境的 [Azure AD 应用程序代理](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
 
 下面是最终配置，其中突出显示了应用程序代理组件。
 
-![远程工作者的应用程序代理元素](./media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
+![远程工作者的应用程序代理元素](../media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
  
 ### <a name="step-2-workloads-for-remote-workers"></a>步骤 2：远程工作者的工作负载
 
@@ -146,7 +148,7 @@ ms.locfileid: "39831963"
 
 下面是最终配置，其中突出显示了工作负载。
 
-![远程工作者的 Microsoft 365 工作负载](./media/empower-people-to-work-remotely/remote-workers-workloads.png)
+![远程工作者的 Microsoft 365 工作负载](../media/empower-people-to-work-remotely/remote-workers-workloads.png)
  
 ### <a name="deployment-results"></a>部署结果
 
@@ -165,11 +167,11 @@ ms.locfileid: "39831963"
 
 下面是使用混合标识时为组织的远程工作者生成的配置。
 
-![具有混合标识的组织的最终配置](./media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
+![具有混合标识的组织的最终配置](../media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
  
 下面是使用仅限云标识时为组织的远程工作者生成的配置。
 
-![具有仅限云标识的组织的最终配置](./media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
+![具有仅限云标识的组织的最终配置](../media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
 
 ## <a name="phase-2-drive-user-adoption-for-remote-workers"></a>阶段 2：推动远程工作者的用户采用
 

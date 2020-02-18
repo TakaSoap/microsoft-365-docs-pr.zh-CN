@@ -1,6 +1,8 @@
 ---
 title: Contoso 的 Office 365 专业增强版部署
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Office 365 专业增强版。
-ms.openlocfilehash: 7649a4a5c77c7f743e3339db6f91b7afc3b1343f
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 45c9933ea04632b255acfa1062ae7ecaf9810030
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831983"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068311"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Contoso 的 Office 365 专业增强版部署
 
@@ -73,7 +75,7 @@ Contoso 使用了与部署 Office 时相同的两阶段功能更新方法：试�
 
 下面是 Contoso 的 Office 365 专业增强版安装和持续更新部署体系结构。
 
-![Contoso 的 Office 365 专业增强版部署基础结构](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+![Contoso 的 Office 365 专业增强版部署基础结构](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## <a name="next-step"></a>后续步骤
 

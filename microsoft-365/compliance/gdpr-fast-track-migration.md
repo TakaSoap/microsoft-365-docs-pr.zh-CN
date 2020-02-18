@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 89ddb00045e2a17821ef2e841ad9a9b4c38d2219
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c5b79c29c6946ae66e53073189376e858e3d978b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596459"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073285"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>用于提交删除请求的 FastTrack 迁移工具集
 
@@ -49,9 +49,9 @@ Microsoft 支持 Windows 平台和 PowerShell 控制台中此工具集的初始�
 
 PowerShell 控制台应用程序上的 PowerShell 库中提供此工具集。若要查找和加载此 cmdlet 模块，首先在管理员模式下打开 PowerShell，以使其具有安装模块的相应权限。如果以前未使用过 PowerShell，请转到 Windows 任务栏，并在搜索框中键入“PowerShell”。右键单击并选择控制台应用，然后选择“以管理员身份运行”****，单击“是”**** 运行 Windows PowerShell。
 
-![PowerShell - 以管理员身份运行](media/fasttrack-powershell_image.png)
+![PowerShell - 以管理员身份运行](../media/fasttrack-powershell_image.png)
 
-![PowerShell - 允许应用进行更改](media/fasttrack-run-powershell_image.png)
+![PowerShell - 允许应用进行更改](../media/fasttrack-run-powershell_image.png)
 
 打开控制台后，需要设置用于脚本执行的权限。键入以下命令以允许脚本运行：“Set-ExecutionPolicy - ExecutionPolicy: Bypass - Scope:Process”
 
@@ -59,7 +59,7 @@ PowerShell 控制台应用程序上的 PowerShell 库中提供此工具集。若
 
 ***设置执行策略***
 
-![在 PowerShell 中设置执行策略更改](media/powershell-set-execution-policy_image.png)
+![在 PowerShell 中设置执行策略更改](../media/powershell-set-execution-policy_image.png)
 
 现在，已将控制台设置为允许脚本，运行下一个命令以安装模块：
 

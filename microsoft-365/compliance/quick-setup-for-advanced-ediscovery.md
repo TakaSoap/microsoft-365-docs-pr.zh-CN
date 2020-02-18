@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: '了解如何从 Office 365 安全与合规中心访问 Office 365 高级电子数据展示，并查看使用高级电子数据展示的典型工作流。  '
-ms.openlocfilehash: 6df2d68639f2be9f6ba38ea7211654058bc73035
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e1af09caf57509bf472a766c9d9124ea969acc4e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597669"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070291"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示快速设置
 
@@ -51,7 +51,7 @@ ms.locfileid: "41597669"
 
 下图展示了在安全与合规中心和高级电子数据展示中管理和使用电子数据展示案件集的常用工作流。 
   
-![图中显示了包含四个设置阶段的 Office 365 高级电子数据展示工作流，包括设置用户和案件集、标识案件集数据、导出和处理，然后是分析和导出到本地计算机这两个阶段。](media/76589ccc-789d-4581-b3a8-98d339b05979.png)
+![图中显示了包含四个设置阶段的 Office 365 高级电子数据展示工作流，包括设置用户和案件集、标识案件集数据、导出和处理，然后是分析和导出到本地计算机这两个阶段。](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
 本设置部分展示了工作流中的前四步。若要了解工作流中的其他步骤，请参阅以下内容。
   

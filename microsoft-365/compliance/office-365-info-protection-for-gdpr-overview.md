@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 概览针对 GDPR 的 Office 365 信息保护。了解如何发现、分类、保护和监视个人数据。
-ms.openlocfilehash: 079ff7b7dab099f289bbd0366bba00d5ecf55b80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597859"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071154"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>针对 GDPR 的 Office 365 信息保护概述
 
@@ -47,7 +47,7 @@ GDPR 对个人数据的收集、存储、处理和共享进行了规范化。个
 
 合规性分数提供用于跟踪、实现和管理审核控制的工具，有助于组织符合各种标准（包括 GDPR）。
 
-![使用合规性分数和合规性管理器查看要求并跟踪进度](Media/Overview-image1.png)
+![使用合规性分数和合规性管理器查看要求并跟踪进度](../media/Overview-image1.png)
 
 有关详细信息，请参阅[合规性分数](compliance-score.md)。
 
@@ -59,7 +59,7 @@ GDPR 对个人数据的收集、存储、处理和共享进行了规范化。个
 
 - 优化敏感数据类型及其他查询，查找环境中的所有个人数据。
 
-![使用内容搜索和敏感信息类型查找个人数据](Media/Overview-image2.png)
+![使用内容搜索和敏感信息类型查找个人数据](../media/Overview-image2.png)
 
 敏感信息类型定义了自动进程识别特定信息类型（例如卫生服务号码和信用卡号码）的方式。本文附带了一组敏感信息类型，可以从这些类型入手。即将推出适用于欧盟国家/地区的个人数据的更多敏感信息类型。
 
@@ -69,7 +69,7 @@ GDPR 对个人数据的收集、存储、处理和共享进行了规范化。个
 
 用于 Office 365 信息保护的一些功能也可用于保护其他 SaaS 应用程序中的敏感数据。
 
-![分类、保护和监视个人数据](Media/Overview-image3.png)
+![分类、保护和监视个人数据](../media/Overview-image3.png)
 
 本节的剩余部分（步骤 3-5）对此图进行了说明。
 

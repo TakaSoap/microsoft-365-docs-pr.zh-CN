@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可将标签应用于 Microsoft Teams、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: 7fd19d9d8f84bd6463d61aec68dbd86c4fc627c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 297ccd3e17f6c5a747e18a46747e6f2c23311df0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601559"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069768"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
@@ -54,9 +54,9 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 例如：
 
-![从 SharePoint 中创建团队网站时使用的敏感度标签](media/sensitivity-label-new-team-site.png)
+![从 SharePoint 中创建团队网站时使用的敏感度标签](../media/sensitivity-label-new-team-site.png)
 
-![Word 桌面应用程序中显示的敏感度标签](media/sensitivity-label-word.png)
+![Word 桌面应用程序中显示的敏感度标签](../media/sensitivity-label-word.png)
 
 ## <a name="enable-this-preview"></a>启用此预览
 
@@ -124,7 +124,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
     - 来宾访问：控制是否可以将来宾添加到组中。 [了解如何管理 Office 365 组中的来宾访问](/office365/admin/create-groups/manage-guest-access-in-groups)
     - 非托管设备：通过此设置，可阻止或限制未加入混合 AD 或在 Intune 中不兼容的设备访问 SharePoint 内容。 如果选择“非托管设备”，则必须转到 Azure AD 以完成策略设置。 有关信息，请参阅[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。
     
-    ![网站和组设置选项卡](media/edit-sensitivity-label-site-group.png)
+    ![网站和组设置选项卡](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > 将标签应用于团队、组或网站时，只有网站和组设置会生效。 其他设置（例如加密和内容标记）不适用于团队、组或网站中的所有内容。
@@ -184,11 +184,11 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 [了解有关 Teams 的敏感度标签的详细信息](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
-![创建新团队时使用的隐私设置](media/privacy-setting-new-team.png)
+![创建新团队时使用的隐私设置](../media/privacy-setting-new-team.png)
 
 创建团队后，敏感度标签将显示在所有频道的右上角。
 
-![敏感度标签将显示在团队上](media/privacy-setting-teams.png)
+![敏感度标签将显示在团队上](../media/privacy-setting-teams.png)
 
 该服务会自动将相同的敏感度标签应用于 Office 365 组和连接的 SharePoint 团队网站。
 
@@ -196,7 +196,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 在 Outlook 网页版中，新的“**敏感度**”框包含已发布的标签。 如果用户需要更多信息，则可以单击帮助图标以阅读有关可用标签和关联策略的详细信息。
 
-![创建组并选择“敏感度”下的选项](media/sensitivity-label-new-group.png)
+![创建组并选择“敏感度”下的选项](../media/sensitivity-label-new-group.png)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-site"></a>为新网站应用敏感度标签
 
@@ -206,17 +206,17 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 当用户创建新式团队和通信网站时，默认情况下已选择敏感度标签。 用户可以选择帮助图标，以了解有关标签的详细信息。
 
-![创建网站并选择“敏感度”下的选项](media/sensitivity-label-new-communication-site.png)
+![创建网站并选择“敏感度”下的选项](../media/sensitivity-label-new-communication-site.png)
 
 当用户浏览网站时，可以查看标签的名称和应用的策略。
 
-![已应用敏感度标签的网站](media/sensitivity-label-site.png)
+![已应用敏感度标签的网站](../media/sensitivity-label-site.png)
 
 ## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 管理中心中管理敏感度标签
 
 若要查看和编辑标签，请使用新 SharePoint 管理中心中的“活动网站”页面。
 
-![“活动网站”页面上的“敏感度”列](media/manage-site-sensitivity-labels.png)
+![“活动网站”页面上的“敏感度”列](../media/manage-site-sensitivity-labels.png)
 
 [了解有关在新 SharePoint 管理中心中管理网站的详细信息](/sharepoint/manage-sites-in-new-admin-center)。
 

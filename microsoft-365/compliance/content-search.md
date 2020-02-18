@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合规中心内的内容搜索工具来搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Office 365 组、Yammer 组和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9fdf5359538209d0793211632979fae1b332d13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595719"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078359"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
 
@@ -52,9 +52,9 @@ ms.locfileid: "41595719"
     
 2. 单击“**搜索**”\>“**内容搜索**”。
     
-3. 在“**搜索**”页面，单击“![添加](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)”图标“**新建搜索**”旁边的箭头。 
+3. 在“**搜索**”页面，单击“![添加](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif)”图标“**新建搜索**”旁边的箭头。 
     
-    ![“新建搜索”下拉列表](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+    ![“新建搜索”下拉列表](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     可以选择以下选项之一：
     
@@ -70,7 +70,7 @@ ms.locfileid: "41595719"
     
 5. 在“**搜索查询**”下，指定以下内容：
     
-    ![指定要搜索的关键字、条件和位置](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![指定要搜索的关键字、条件和位置](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **要搜索的关键字：** 在“**关键字**”框中键入搜索查询。 您可以指定关键字、邮件属性（例如发送和接收日期）或文档属性（例如文件名或上次更改文档的日期）。 可以使用采用布尔运算符的更复杂查询，例如 **AND**、**OR**、**NOT** 和 **NEAR**。 还可以搜索文档中的敏感信息（如社会保险号），或者搜索已外部共享的文档。 如果将关键字框留空，则指定内容位置中的所有内容都将包括在搜索结果中。
     
@@ -89,7 +89,7 @@ ms.locfileid: "41595719"
     
       - **特定位置：** 使用此选项搜索特定内容位置。 可以搜索特定 Office 365 服务的所有内容位置（如搜索所有 Exchange 邮箱或搜索所有 SharePoint 网站），也可以搜索任何已显示 Office 365 服务的特定位置中的内容。 
     
-        ![用于选择要搜索的内容位置的用户界面](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![用于选择要搜索的内容位置的用户界面](../media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
          还可以将通讯组添加至要搜索的 Exchange 邮箱列表中。 对于通讯组，将搜索组成员的邮箱。 不支持动态通讯组。
     
@@ -106,13 +106,13 @@ ms.locfileid: "41595719"
     
 若要再次访问此内容搜索或者访问“**内容搜索**”页面上列出的其他内容搜索，请选择搜索，然后单击“**打开**”。 
   
-若要清除结果或者创建其他搜索，请单击“![添加图标](media/O365-MDM-CreatePolicy-AddIcon.gif)”“**新建搜索**”。 
+若要清除结果或者创建其他搜索，请单击“![添加图标](../media/O365-MDM-CreatePolicy-AddIcon.gif)”“**新建搜索**”。 
   
 ## <a name="preview-search-results"></a>预览搜索结果
 
 具有两种预览搜索结果配置设置。 运行新搜索或者打开现有搜索之后，请单击**单独的结果**以查看以下预览设置： 
   
-![预览搜索结果设置](media/83519477-1c85-4442-8886-481f186fd758.png)
+![预览搜索结果设置](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
 1. **自动预览结果：** 此设置将在运行搜索之后显示搜索结果。
     
@@ -157,7 +157,7 @@ ms.locfileid: "41595719"
   
 1. 在“**内容搜索**”页面上，单击想要导出其搜索结果的搜索。 
     
-2. 在浮出页面上，单击“![导出搜索结果](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)”图标“**更多**”，然后单击“**导出结果**”。 还可以导出搜索结果报告。
+2. 在浮出页面上，单击“![导出搜索结果](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)”图标“**更多**”，然后单击“**导出结果**”。 还可以导出搜索结果报告。
     
 3. 完成“**导出结果**”浮出页面上的部分。 请务必使用滚动条查看所有导出选项。 
     
@@ -217,21 +217,21 @@ ms.locfileid: "41595719"
     
     **错误**
     
-    ![设置关键字列表格式的不正确方式（通过将列表粘贴至关键字框）](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![设置关键字列表格式的不正确方式（通过将列表粘贴至关键字框）](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **正确**
     
-    ![设置关键字列表格式的正确方式（在选中复选框后粘贴列表）](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![设置关键字列表格式的正确方式（在选中复选框后粘贴列表）](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - 还可以在 Excel 文件或纯文本文件中准备关键字或关键字短语列表，然后将你的列表复制粘贴至关键字列表。 若要执行此操作，你必须选中“**显示关键字列表**”复选框。 然后，单击关键字列表中的第一行并粘贴你的列表。 Excel 或文本文件中的每一行均会粘贴至关键字列表中的单独行中。 
     
 - 使用关键字列表创建查询后，最好验证搜索查询语法，确保搜索查询适合你的需求。 在详细信息窗格的“**查询**”下显示的搜索查询中，关键字将以文本 **(c:s)** 分隔。 这表示关键字由功能类似于 **OR** 运算符的逻辑运算符连接。 同样，如果搜索查询中包含条件，则关键字和条件将以 **(c:c)** 分隔。 这表示关键字由功能类似于 **AND** 运算符的逻辑运算符连接到条件。 以下是使用关键字列表和条件时创建的搜索查询（显示在详细信息窗格中）示例。 
     
-    ![使用关键字列表和条件时创建的查询示例](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![使用关键字列表和条件时创建的查询示例](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
 - 运行内容搜索时，Office 365 将会自动检查搜索查询中是否存在不受支持的字符以及未大写的布尔运算符。 不受支持的字符往往会被隐藏，并且通常会引发搜索错误或者返回意外结果。 有关检查到的不受支持字符的详细信息，请参阅[检查内容搜索查询中是否存在错误](check-your-content-search-query-for-errors.md)。
     
-- 如果搜索查询中包含非英语字符（例如中文字符）关键字，则可以单击“**查询语言-国家/地区**”“![内容搜索中的查询语言-国家/地区](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)”并为该搜索选择语言-国家/地区文化代码值。 默认语言/区域是中性的。 如何判断是否需要更改内容搜索的语言设置？ 如果确定内容位置中包含所搜索的非英语字符，但搜索没有返回结果，则可能是语言设置的原因。 
+- 如果搜索查询中包含非英语字符（例如中文字符）关键字，则可以单击“**查询语言-国家/地区**”“![内容搜索中的查询语言-国家/地区](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)”并为该搜索选择语言-国家/地区文化代码值。 默认语言/区域是中性的。 如何判断是否需要更改内容搜索的语言设置？ 如果确定内容位置中包含所搜索的非英语字符，但搜索没有返回结果，则可能是语言设置的原因。 
   
 ### <a name="searching-onedrive-accounts"></a>搜索 OneDrive 帐户
 
@@ -299,17 +299,17 @@ ms.locfileid: "41595719"
 
   在搜索结果中，会议摘要在“**类型字段**”将标识为“**会议**”，呼叫摘要将标识为“**呼叫**”。 此外，属于 Teams 渠道和 1xN 聊天的对话在“**类型**”字段将标识为 **IM**。
   
-  ![Teams 会议、呼叫和 1xN 聊天将在“类型”字段中标识](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Teams 会议、呼叫和 1xN 聊天将在“类型”字段中标识](../media/O365-ContentSearch-Teams-MessageKind.png)
 
 - 可以使用“**类型**”电子邮件属性或“**邮件类型**”搜索条件来搜索 Teams 中的特定内容。 
   
   - 若要将“**类型**”属性用作关键字搜索查询的一部分，请在搜索查询的“**关键字**”框中键入 `kind:microsoftteams`。
 
-    ![在“关键字”框中使用 kind:microsoftteams](media/O365-ContentSearch-Teams-Keywords.png)
+    ![在“关键字”框中使用 kind:microsoftteams](../media/O365-ContentSearch-Teams-Keywords.png)
   
   - 若要使用搜索条件，请添加“**邮件类型**”条件并使用值 `microsoftteams`。 
 
-    ![搭配使用“邮件类型”条件和值 microsoftteams。](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![搭配使用“邮件类型”条件和值 microsoftteams。](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 条件将通过 **AND** 运算符在逻辑上连接至关键字查询。 这意味着项必须与关键字查询和搜索条件匹配才能在搜索结果中返回。 有关详细信息，请参阅[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)中的“使用条件指南”一节。
   
@@ -326,15 +326,15 @@ ms.locfileid: "41595719"
   
     例如，可以使用下面的搜索查询来返回 Yammer 消息和 Yammer 表扬项：
 
-    ![使用 ItemClass 属性搜索 Yammer 项](media/YammerContentSearch1.png)
+    ![使用 ItemClass 属性搜索 Yammer 项](../media/YammerContentSearch1.png)
   
   - 也可以使用 **Type** 电子邮件条件，并选择“Yammer 消息”****，以返回 Yammer 项。 例如，下面的搜索查询返回所有包含关键字“保密”的 Yammer 对话项。 
 
-    ![使用 Type 条件卡搜索 Yammer 对话项](media/YammerContentSearch2.png)
+    ![使用 Type 条件卡搜索 Yammer 对话项](../media/YammerContentSearch2.png)
 
 ### <a name="searching-inactive-mailboxes"></a>搜索非活动邮箱
 
-可以在内容搜索中搜索非活动邮箱。 若要获取组织中的非活动邮箱列表，请在 Exchange Online PowerShell 中运行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，你可以转至安全与合规中心中的“**信息管理**”\>“**保留**”，然后单击“**更多**”![导航栏省略号](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>“**非活动邮箱**”。
+可以在内容搜索中搜索非活动邮箱。 若要获取组织中的非活动邮箱列表，请在 Exchange Online PowerShell 中运行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，你可以转至安全与合规中心中的“**信息管理**”\>“**保留**”，然后单击“**更多**”![导航栏省略号](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>“**非活动邮箱**”。
   
 以下是在搜索非活动邮箱时应记住的一些事项。
 

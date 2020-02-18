@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的使用敏感度标签、适用于移动的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069859"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101232"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
-当您从 Microsoft 365 合规性中心或等效标签中心发布灵敏度标签时，它们将开始显示在 Office 应用程序中，以便用户可以在创建或编辑数据时对其进行分类和保护。
+当您从 Microsoft 365 合规性中心或等效标签中心[发布](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)灵敏度标签时，它们将开始显示在 Office 应用程序中，以便用户可以在创建或编辑数据时对其进行分类和保护。
 
-使用本文中的信息可帮助您成功管理 Office 应用中的使用敏感度标签。 例如，需要支持内置标签的应用程序的最低版本、与 Azure 信息保护的交互统一标签客户端，以及与其他应用程序和服务的兼容性。
+使用本文中的信息可帮助您在 Office 应用程序中成功管理敏感度标签。 例如，确定需要支持内置标签的应用程序的最低版本，并了解与其他应用程序和服务的 Azure 信息保护统一标签客户端和兼容性的交互。
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>敏感度标签的订阅和许可要求
 

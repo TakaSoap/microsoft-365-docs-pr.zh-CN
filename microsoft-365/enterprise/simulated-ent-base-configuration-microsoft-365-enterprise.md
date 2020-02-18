@@ -1,5 +1,7 @@
 ---
 title: 适用于 Microsoft 365 的模拟企业基础配置
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用本测试实验室指南，创建针对 Microsoft 365 企业版的模拟企业测试环境。
-ms.openlocfilehash: d279ea4eaea1e167b18f48db3c7484885ed48fea
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 66d62677843843476baffac3f295e41eda71be69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831695"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084105"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 
@@ -31,14 +33,14 @@ ms.locfileid: "39831695"
 - Microsoft 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化组织 Intranet，包含 Azure 虚拟网络中的三个虚拟机（DC1、APP1 和 CLIENT1）。
  
-![模拟企业基础配置](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![模拟企业基础配置](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 利用生成的环境，可以通过额外的[测试实验室指南](m365-enterprise-test-lab-guides.md)或自行测试 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>第 1 阶段：创建模拟 Intranet
 
@@ -63,7 +65,7 @@ ms.locfileid: "39831695"
 
 模板完成后，会生成以下配置。
 
-![Azure 基础结构服务中的模拟 Intranet](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Azure 基础结构服务中的模拟 Intranet](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>方法 2：使用 Azure PowerShell 构建模拟 Intranet
 
@@ -230,7 +232,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 当前配置如下。
   
-![模拟企业基础配置的步骤 1](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![模拟企业基础配置的步骤 1](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### <a name="step-2-configure-app1"></a>步骤 2：配置 APP1
 
@@ -285,7 +287,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 当前配置如下。
   
-![模拟企业基础配置的步骤 2](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![模拟企业基础配置的步骤 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### <a name="step-3-configure-client1"></a>步骤 3：配置 CLIENT1
 
@@ -349,7 +351,7 @@ Restart-Computer
     
 当前配置如下。
   
-![模拟企业基础配置的步骤 3](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![模拟企业基础配置的步骤 3](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>第 2 阶段：创建 Microsoft 365 E5 订阅
@@ -393,7 +395,7 @@ Restart-Computer
     
 最终配置如下。
   
-![模拟企业基础配置的第 2 阶段](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![模拟企业基础配置的第 2 阶段](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 现在可以试验 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   

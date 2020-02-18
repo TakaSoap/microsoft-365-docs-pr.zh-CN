@@ -1,5 +1,7 @@
 ---
 title: 事件驱动保留概述
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签，能让保留期以特定类型事件发生的时间为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: da5e10735e8980199a829ac50d096052abe93d14
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989567"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074485"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -47,9 +49,9 @@ ms.locfileid: "40989567"
 
 为了成功使用事件驱动保留，请务必了解事件类型、标签、事件和资产 ID 之间的关系，如下所示。关系图后面紧跟着就是说明。
   
-![事件类型、标签、事件和资产 ID 的关系图](media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![事件类型、标签、事件和资产 ID 的关系图](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![事件类型、标签、事件和资产 ID 的关系图](media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![事件类型、标签、事件和资产 ID 的关系图](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
 1. 为不同类型的内容创建标签，再将标签与事件类型相关联。例如，不同类型的产品文件和记录的标签与“产品生存期”事件类型相关联，因为必须将这些记录自产品生存期结束起保留 10 年。
     
@@ -73,7 +75,7 @@ ms.locfileid: "40989567"
 
 下面是事件驱动保留的简要工作流，后面紧跟着是更详细的步骤。
   
-![事件驱动保留的设置工作流的关系图](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
+![事件驱动保留的设置工作流的关系图](../media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
 > [!TIP]
 > 有关使用 SharePont 中的托管属性来自动应用保留标签并实施事件驱动保留的详细方案，请参阅[使用保留标签管理 SharePoint 文档的生命周期](auto-apply-retention-labels-scenario.md)。
@@ -92,7 +94,7 @@ ms.locfileid: "40989567"
     
 - 在保留期到期时自动删除内容或触发处置评审。
     
-![让标签基于事件的选项](media/a4902281-5196-4194-9737-f30231d95861.png)
+![让标签基于事件的选项](../media/a4902281-5196-4194-9737-f30231d95861.png)
   
 ### <a name="step-2-choose-an-event-type-for-that-label"></a>第 2 步：选择与此标签关联的事件类型
 
@@ -102,13 +104,13 @@ ms.locfileid: "40989567"
   
 请注意，一旦选择事件类型和创建标签后，便无法再更改事件类型。
   
-![用于创建或选择事件类型的选项](media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
+![用于创建或选择事件类型的选项](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>第 3 步：发布或自动应用标签
 
 与任何标签类似，需要发布或自动应用基于事件的标签，以便将其手动或自动应用到内容。 可在“**分类**” > “**保留标签**”页面执行此操作。
   
-![用于发布或自动应用保留标签的选项](media/options-to-publish-auto-apply-retention-label.png)
+![用于发布或自动应用保留标签的选项](../media/options-to-publish-auto-apply-retention-label.png)
 
 ### <a name="step-4-enter-an-asset-id"></a>第 4 步：输入资产 ID
 
@@ -122,7 +124,7 @@ ms.locfileid: "40989567"
     
 请注意，“资产 ID”就是 SharePoint 和 OneDrive for Business 中的另一文档属性。组织可能已使用其他文档属性和 ID 来分类内容。如果是这样，也可以在创建事件时使用这些属性和值（请参阅下面的第 6 步）。重要的是，组织必须在文档属性中使用一些属性:值组合，以便关联相应项和事件类型。
   
-![用于输入资产 ID 的文本框](media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![用于输入资产 ID 的文本框](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>第 5 步：创建事件
 
@@ -132,7 +134,7 @@ ms.locfileid: "40989567"
 
 创建事件后，选择第 2 步中标签使用的相同事件类型（例如，“产品生存期”）。只有包含与相应事件类型关联的标签，内容的保留期才会被触发。
   
-![“事件设置”中用于选择事件类型的选项](media/11663591-5628-419e-9537-61eb8f5c741f.png)
+![“事件设置”中用于选择事件类型的选项](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>第 7 步：输入关键字或资产 ID
 
@@ -146,7 +148,7 @@ ms.locfileid: "40989567"
   
 最后，选择事件发生日期。此日期用作保留期的开始日期。在你创建事件后，事件日期会同步到包含与相应事件类型关联的标签、资产 ID 和关键字的所有内容。与任何标签一样，此同步最长可能需要 7 天才能完成。
   
-![“事件设置”页](media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![“事件设置”页](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>使用内容搜索来查找所有包含特定标签或资产 ID 的内容
 

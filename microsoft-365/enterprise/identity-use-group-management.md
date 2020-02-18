@@ -1,5 +1,7 @@
 ---
 title: 步骤 5：使用组进行管理
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 可以使用组来自动管理某些管理任务。
-ms.openlocfilehash: 49cdb0c3d394cb423d0565d7093f1b32b6661158
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801707"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067269"
 ---
 # <a name="step-5-use-groups-for-management"></a>步骤 5：使用组进行管理
 
-![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>允许用户创建和管理自己的组
@@ -66,7 +68,7 @@ ms.locfileid: "40801707"
 
 |||
 |:-------|:-----|
-|![Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：自动化许可和组成员身份](automate-licenses-group-membership-microsoft-365-test-environment.md) |
+|![Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：自动化许可和组成员身份](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-dyn-groups)。
@@ -97,11 +99,11 @@ ms.locfileid: "40801707"
 
 |||
 |:-------|:-----|
-|![Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：自动化许可和组成员身份](automate-licenses-group-membership-microsoft-365-test-environment.md) |
+|![Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：自动化许可和组成员身份](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-group-license)。
 
 |||
 |:-------|:-----|
-|![第 6 步](./media/stepnumbers/Step6.png)| [配置标识治理](identity-configure-identity-governance.md) |
+|![第 6 步](../media/stepnumbers/Step6.png)| [配置标识治理](identity-configure-identity-governance.md) |

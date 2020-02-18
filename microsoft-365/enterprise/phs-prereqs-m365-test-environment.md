@@ -1,9 +1,11 @@
 ---
 title: Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建 Microsoft 365 环境以测试标识和设备访问，含密码哈希同步身份验证的先决条件。
-ms.openlocfilehash: d5feddd7ddddd0ad8891873a654627a0e7ba4fa3
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 125d8c6e1e954a05edd630c8f4d55848fa3314b3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673348"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066026"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 
@@ -44,7 +46,7 @@ ms.locfileid: "38673348"
 按照[密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。
 下面是生成的配置。
 
-![使用密码哈希同步测试环境的模拟企业配置](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![使用密码哈希同步测试环境的模拟企业配置](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
  
 ## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>阶段 2：配置 Azure AD 无缝单一登录
 
@@ -86,7 +88,7 @@ ms.locfileid: "38673348"
 
 ## <a name="phase-7-enable-azure-ad-identity-protection"></a>阶段 7：启用 Azure AD Identity Protection
 
-按照[“Azure AD Identity Protection”测试实验室指南的阶段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection) 中的说明操作。 
+按照[“Azure AD Identity Protection”测试实验室指南的阶段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的说明操作。 
 
 ## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>阶段 8：启用 Exchange Online 和 Skype for Business Online 的新式身份验证
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: d10b47ccf85493f22d9ef5bdfa0e36e4e954c8a7
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957167"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072469"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -69,11 +69,11 @@ ms.locfileid: "41957167"
 
 使组织中的人员可使用保留标签，便于其按两步操作进行内容分类：首先创建保留标签，然后将其发布到所选位置。 发布保留标签时，将创建保留标签策略。
   
-![标签角色和任务的关系图](media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
+![标签角色和任务的关系图](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
   
 保留标签是独立且可重复使用的构建基块，其包含在一个或多个保留标签策略中。 保留标签策略的主要目的是对一组保留标签进行分组，并指定要显示标签的位置。
   
-![标签、标签策略和位置的关系图](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
+![标签、标签策略和位置的关系图](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
 1. 发布保留标签时，它们将包含在保留标签策略中。 请注意，保留标签名称是不可变的，创建后将无法编辑。
 
@@ -112,13 +112,13 @@ ms.locfileid: "41957167"
 
 如果将保留标签发布到 SharePoint 或 OneDrive，可能需要等待 1 天时间，这些保留标签才会向最终用户显示。此外，如果向 Exchange 发布保留标签，可能需要等待 7 天，这些保留标签才会向最终用户显示，并且邮箱至少必须包含 10MB 数据。
   
-![手动标签生效时间关系图](media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
+![手动标签生效时间关系图](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 ### <a name="auto-apply-retention-labels"></a>自动应用保留标签
 
 如果将保留标签自动应用于符合特定条件的内容，可能需要等待 7 天，才能将保留标签应用于与条件匹配的所有现有内容。
   
-![自动应用标签生效时间关系图](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![自动应用标签生效时间关系图](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何检查发布到 Exchange 的保留标签的状态
 
@@ -168,7 +168,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 - 保留期从内容分配有标签时开始计算，而不是根据内容年限或上次修改时间计算。 此选项仅适用于 SharePoint 网站和 OneDrive 帐户中的内容。 对于 Exchange 电子邮件，保留期限始终基于发送或接收邮件的日期，无论此处选择哪个选项，都是如此。
     
-![包含标签专用选项的保留设置](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+![包含标签专用选项的保留设置](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>在哪些位置上发布的保留标签可向最终用户显示
 
@@ -190,11 +190,11 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 若要在 Outlook 网页版中标记项，请右键单击项，单击“分配策略”****，再选择保留标签。 
   
-![Outlook 网页版中的“分配策略”菜单](media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
+![Outlook 网页版中的“分配策略”菜单](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
 在保留标签应用后，可在项顶部查看此保留标签及其执行的操作。如果电子邮件已分类且有关联的保留期，电子邮件的到期时间便一目了然。
   
-![分配给 Outlook 网页版中电子邮件的标签](media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
+![分配给 Outlook 网页版中电子邮件的标签](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
 还可将保留标签应用于文件夹，在这种情况下：
   
@@ -210,7 +210,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 若要在 Outlook 桌面客户端中标记项目，请选择该项目。 在功能区上的“**开始**”选项卡上，单击“**分配策略**”，然后选择保留标签。 
   
-![“分配策略”按钮](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
+![“分配策略”按钮](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
 也可以右键单击项目，在上下文菜单中单击“**分配策略**”，然后选择保留标签。 
 
@@ -220,19 +220,19 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 ### <a name="onedrive-and-sharepoint"></a>OneDrive 和 SharePoint
 
-若要在 OneDrive 或 SharePoint 中标记文档（包括 OneNote 文件），请选择项 \> 在右上角选择“**打开细节窗格**”![信息窗格图标](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \>“**应用保留标签**”\> 选择保留标签。 
+若要在 OneDrive 或 SharePoint 中标记文档（包括 OneNote 文件），请选择项 \> 在右上角选择“**打开细节窗格**”![信息窗格图标](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \>“**应用保留标签**”\> 选择保留标签。 
   
 还可将保留标签应用于文件夹或文档集，并能为文档库设置默认保留标签。 有关详细信息，请参阅下面的部分。
   
-![SharePoint 中项的“应用标签”列表](media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
+![SharePoint 中项的“应用标签”列表](../media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
   
 在保留标签应用于项后，可在选择项后在细节窗格中查看保留标签。
   
-![细节窗格中显示的已应用标签](media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
+![细节窗格中显示的已应用标签](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 还可创建包含“标签”**** 列或“项是记录”**** 列的库的视图，这样分配给所有项的保留标签以及哪些项是记录便一目了然。不过，请注意，无法按“项是记录”**** 列筛选视图。 
   
-![库自定义视图中显示的“标签”列](media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
+![库自定义视图中显示的“标签”列](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
 ### <a name="office-365-groups"></a>Office 365 组
 
@@ -246,7 +246,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 保留标签最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Office 365 会代为操作。
   
-![自动应用标签的角色和任务关系图](media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![自动应用标签的角色和任务关系图](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
 自动应用保留标签的功能非常强大，这是因为：
   
@@ -262,7 +262,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 - 与所创建的查询匹配的特定关键字。
     
-![自动应用标签的“选择条件”页](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+![自动应用标签的“选择条件”页](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 
 自动应用保留标签需要 Office 365 企业版 E5 订阅，最长可能需要 7 天，才能将自动应用保留标签应用于符合条件的所有内容（如上所述）。
@@ -274,7 +274,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 为敏感信息创建自动应用保留标签时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 预配置每个策略模板以查找特定类型的敏感信息。 例如，此处显示的模板用于查找美国 ITIN、SSN 和护照号码。 若要深入了解 DLP，请参阅[数据丢失防护策略概述](data-loss-prevention-policies.md)。
   
-![包含敏感信息类型的策略模板](media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![包含敏感信息类型的策略模板](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
 选择策略模板后，既可以添加或删除任意类型敏感信息，也可以更改实例计数和匹配准确度。在下面的示例中，保留标签仅在以下情况下自动应用：
   
@@ -284,7 +284,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 要详细了解这些选项，请参阅[微调规则以增加或降低匹配的难度](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
     
-![用于确定敏感信息类型的选项](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
+![用于确定敏感信息类型的选项](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
 ### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
 
@@ -308,7 +308,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
     - contenttype:contract
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
-![查询编辑器](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+![查询编辑器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容
 
@@ -318,7 +318,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 例如，若有“营销材料”标记，并且确定特定文档库仅包含这种类型内容，可将“营销材料”标记设置为此库中所有文档的默认标签。
   
-![库“设置”页上的“应用标签”选项](media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
+![库“设置”页上的“应用标签”选项](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
 如果将默认保留标签应用于库、文件夹或文档集中的现有项：
   
@@ -340,7 +340,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 若要创建规则，请右键单击项，依次单击“规则”****、“创建规则”****、“高级选项”**** 和“规则向导”****，再选中“应用保留策略”****。
   
-![包含“应用保留策略”选项的“规则向导”](media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
+![包含“应用保留策略”选项的“规则向导”](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
   
 ## <a name="classifying-content-without-applying-any-actions"></a>对内容分类但不执行任何操作
 
@@ -348,7 +348,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 例如，可创建不含任何操作的“稍后审阅”保留标签，再将此保留标签自动应用于包含敏感信息类型的内容或已查询内容。
   
-![已禁用“保留”的“标签设置”页](media/17ce863b-a823-426e-aaad-83718465f762.png)
+![已禁用“保留”的“标签设置”页](../media/17ce863b-a823-426e-aaad-83718465f762.png)
   
 ## <a name="using-retention-labels-for-records-management"></a>使用保留标签实现记录管理
     
@@ -370,7 +370,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 - **数据管理报告**。使用这些报告，可快速查看过去 90 天内 Exchange、SharePoint 和 OneDrive for Business 中所有内容的保留标签趋势和活动。有关详细信息，请参阅[查看数据管理报告](view-the-data-governance-reports.md)。
     
-![标签活动资源管理器](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![标签活动资源管理器](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>使用内容搜索来查找所有已应用有特定保留标签的内容
 
@@ -378,13 +378,13 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 创建内容搜索时，请选择“合规性标记”**** 条件，再输入完整或部分标签名称，并使用通配符。有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
-![“合规性标记”条件](media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![“合规性标记”条件](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>保留原则或优先级
 
 内容可能或甚至很有可能有多个应用的保留策略，每个策略的操作（保留、删除或先保留再删除）和保留期都不同。优先级是什么？最高优先级是，一个策略保留的内容一定不得被另一个策略永久删除。
   
-![保留原则关系图](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![保留原则关系图](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 若要了解包含保留操作的不同标签是如何应用于内容的，请注意下面这些保留原则：
   

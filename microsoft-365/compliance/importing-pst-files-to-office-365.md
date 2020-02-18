@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 对于管理员：了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到 Exchange Online 的用户邮箱中。 本主题提供了常见问题解答并解释了 PST 导入流程的工作原理。
-ms.openlocfilehash: eb916ef3f06cc8d58c962b5b05ea4524e9469e4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600669"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072945"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>将组织的 PST 文件导入到 Office 365 的概述
 
@@ -32,9 +32,9 @@ ms.locfileid: "41600669"
 
 可以使用安全与合规中心的导入服务将 PST 文件快速批量导入到 Office 365 组织中的 Exchange Online 邮箱中。 可通过两种方法将 PST 文件导入到 Office 365 中：
 
-- **网络上传** ![云上传](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - 通过网络将 PST 文件上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Office 365 导入服务将 PST 数据导入到 Office 365 组织的邮箱中。 
+- **网络上传** ![云上传](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - 通过网络将 PST 文件上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Office 365 导入服务将 PST 数据导入到 Office 365 组织的邮箱中。 
 
-- **驱动器寄送** ![硬盘](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - 将 PST 文件复制到 BitLocker 加密的硬盘中，然后将驱动器实际寄到 Microsoft。 Microsoft 收到硬盘后，数据中心工作人员会将数据上传到 Microsoft 云中的临时 Azure 存储位置。 然后，你可以使用 Office 365 导入服务将 PST 数据导入到 Office 365 组织中的邮箱。
+- **驱动器寄送** ![硬盘](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - 将 PST 文件复制到 BitLocker 加密的硬盘中，然后将驱动器实际寄到 Microsoft。 Microsoft 收到硬盘后，数据中心工作人员会将数据上传到 Microsoft 云中的临时 Azure 存储位置。 然后，你可以使用 Office 365 导入服务将 PST 数据导入到 Office 365 组织中的邮箱。
 
 ## <a name="step-by-step-instructions"></a>分步说明
   
@@ -48,7 +48,7 @@ ms.locfileid: "41600669"
 
 以下是完整 PST 流程的图示和说明。 该图示显示了主要工作流程并突出显示了网络上传和驱动器寄送方法之间的差别。
   
-![PST 导入流程的工作流](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
+![PST 导入流程的工作流](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
   
 1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置** - 第一步是下载用于上传 PST 文件或将其复制到硬盘的工具和访问密钥。 需要从安全与合规中心的“导入”**** 页获取工具和密钥。 密钥为你（如果是驱动器寄送，则是 Microsoft 数据中心人员）提供所需的权限用于将 PST 文件上传到安全的专用 Azure 存储位置。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 将 PST 文件导入到 Office 365 不需要你的组织拥有单独的 Azure 订阅。 
     

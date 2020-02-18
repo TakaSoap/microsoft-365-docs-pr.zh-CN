@@ -1,5 +1,7 @@
 ---
 title: 步骤 3 - Office 和 LOB 应用交付
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何交付 Office 和 LOB 应用。
-ms.openlocfilehash: a4bc1a765edf6938ad37d91d8bf94950b6672bfe
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112578"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085310"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>步骤 3：Office 和 LOB 应用交付
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>步骤 3：Office 和 LOB 应用交付</strong></p>
 <p>确保应用已打包，且可进行自动安装。了解如何使用 Office 365 专业增强版的即点即用打包，通过新方法来配置、交付和持续更新 Office 应用。</p></td>
-<td><a href="https://aka.ms/ddev3" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -51,13 +53,13 @@ ms.locfileid: "41112578"
 
 像 Microsoft Endpoint Configuration Manager 和 Microsoft Intune 这样的软件部署工具也会被优化以交付 MSI 打包的应用。一旦在 Windows 10 上验证了应用，就可以使用 Microsoft Endpoint Configuration Manager（当前分支版本）来交付应用。如果使用 Microsoft Intune 的公司门户，可以扩展可供组织使用的 IT 认可的应用选择，以包括最新应用程序，并且用户可以自行选择他们需要的应用。
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
 
 ## <a name="pc-imaging"></a>电脑成像
 
 应用交付另一个热门方法是电脑成像。 在这种情况下，应用程序可以通过任务序列安装或在样本 PC 上手动安装，然后在预先安装必选应用程序的情况下捕获系统映像。 构建和捕获的成像方法可以在配置新 PC 时节省时间，但请记住图像中的操作系统和应用程序可能会很快变得陈旧。 Windows 10 和 Office 365 专业增强版中的累积更新模型可帮助解决此问题，但并未完全消除此问题。 这就是为什么我们建议使用精简映像方法，这样可以在部署时间从映像外部安装应用程序。
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
 如果你想在映像中包含 Office 365 专业增强版，请记住，此操作使用基于用户的激活；系统管理员不能预先将其激活。使用 Office 部署工具在正在成像的设备上预安装 Office，并跳过用户登录。 部署映像后，最终用户可以使用其 Office 365 凭据登录并激活 Office 365 专业增强版。
 
@@ -73,11 +75,11 @@ ms.locfileid: "41112578"
 
 Microsoft 建议使用 [Office 自定义工具](https://config.office.com/)自定义部署设置并创建配置 XML 文件。 通过 Office 自定义工具，你可以设置要安装的应用程序和语言、应用程序的更新方式、应用程序首选项以及安装体验设置。
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
 如果使用 Configuration Manager，仍然可以使用它来广泛部署 Office 365 专业增强版。Configuration Manager（当前分支版本）为更新的 Office 自定义工具、安装时的即点即用包自定义，以及软件更新管理后安装提供本机支持。
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
+![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
 [Office 365 专业增强版部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 

@@ -1,5 +1,7 @@
 ---
 title: 步骤 3：保护和管理用户登录
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你可以让用户更安全地登录到 Windows 设备和 Microsoft 365。
-ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c541f5b74fe3ea6e94b002212f21ec8645e8e87e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801727"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067289"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>步骤 3：保护和管理用户登录
 
-![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -53,7 +55,7 @@ Windows 10 企业版中的 Windows Hello 企业版在 Windows 设备上签名时
 
 |||
 |:-------|:-----|
-|![Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：Azure 多因素身份验证](multi-factor-authentication-microsoft-365-test-environment.md) |
+|![Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：Azure 多因素身份验证](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-mfa)。
@@ -85,11 +87,11 @@ Windows 10 企业版中的 Windows Hello 企业版在 Windows 设备上签名时
 
 |||
 |:-------|:-----|
-|![Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|![Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-ident-prot)。
 
 |||
 |:-------|:-----|
-|![第 4 步](./media/stepnumbers/Step4.png)| [添加用户帐户](identity-add-user-accounts.md) |
+|![第 4 步](../media/stepnumbers/Step4.png)| [添加用户帐户](identity-add-user-accounts.md) |

@@ -1,5 +1,7 @@
 ---
 title: 第 4 步：配置流量旁路
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置 Web 浏览器和边缘设备，以便流量绕过受信任的 Office 365 位置。
-ms.openlocfilehash: 32aa2216856d5a519fddb55701be745a9dacbd87
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 71f62c5e245962f3514c49477e3cdeda17cb6397
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370139"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066680"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>第 4 步：配置流量旁路
 
 *此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第 1 阶段 - 网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![第 1 阶段 - 网络](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 由于一般的 Internet 流量可能存在风险，因此典型组织网络通过代理服务器、SSL 中断和检查、数据包检查设备和数据丢失防护系统等边缘设备实施安全性。 了解有关[使用第三方网络设备或 Office 365 流量解决方案](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)的网络侦听设备的一些问题。
 
@@ -46,7 +48,7 @@ Microsoft 建议：
 
 下面是在网络基础结构中的建议。
 
-![关于优化本地通信的建议](./media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
+![关于优化本地通信的建议](../media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
 
 边缘设备包括防火墙、SSL 中断和检查、包检查设备和数据丢失防护系统。 若要配置和更新边缘设备的配置，可使用脚本或 REST 调用，从 Office 365 终结点 Web 服务中使用终结点的结构化列表。 有关详细信息，请参阅 [Office 365 IP 地址和 URL Web 服务](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)。
 
@@ -59,7 +61,7 @@ Microsoft 建议：
 
 |||
 |:-------|:-----|
-|![第 5 步](./media/stepnumbers/Step5.png)|[优化客户端和 Office 365 服务性能](networking-optimize-tcp-performance.md) |
+|![第 5 步](../media/stepnumbers/Step5.png)|[优化客户端和 Office 365 服务性能](networking-optimize-tcp-performance.md) |
 
 
 
