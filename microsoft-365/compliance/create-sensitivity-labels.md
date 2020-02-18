@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 有关创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护的说明。
-ms.openlocfilehash: 73df1928a89218a419a9d774a7830ecad4aceb6d
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 8018c18e976d0e6f9904923471bb07c8bb3cbc40
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661858"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091295"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -34,9 +34,9 @@ ms.locfileid: "41661858"
 
 将要创建敏感度标签的合规团队成员需要 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心的访问权限。 
 
-默认情况下，你的租户管理员有权访问这些管理中心，并且可以向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。要获得这一委派的受限管理员访问权限，请转到其中一个管理中心的“**权限**”页面，然后将成员添加到**合规性数据管理员**、**合规性管理员**或**安全管理员**角色组。
+默认情况下，你的租户管理员有权访问这些管理中心，并且可以向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。要获得这一委派的受限管理员访问权限，请转到其中一个管理中心的“权限”**** 页面，然后将成员添加到**合规性数据管理员**、**合规性管理员**或**安全管理员**角色组。
 
-有关说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+如果不使用角色，可以创建新的角色组，然后将“**敏感度标签管理员**”或“**组织配置**”角色添加到此组。 有关说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
 只有在创建和配置灵敏度标签及其标签策略时才需要这些权限。 在应用或服务中应用标这些签时不需要这些权限。
 
@@ -68,7 +68,7 @@ ms.locfileid: "41661858"
 若要编辑现有标签，请将其选中，然后选择“**编辑标签**”。 这将启动“**编辑敏感度标签**”向导，可用于更改步骤 3 中的所有标签设置。 
 
 > [!NOTE]
-> 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，以便对相同用户提供所做的更改。 但是，可允许在 24 小时内将所做的更改复制到用户和服务。
+> 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，即可对相同用户提供所做的更改。 但是，可允许在 24 小时内将所做的更改复制到用户和服务。
 
 发布标签之前，无法在应用程序或服务中使用。 若要发布标签，必须将其[添加到标签策略](#publish-sensitivity-labels-by-creating-a-label-policy)。
 

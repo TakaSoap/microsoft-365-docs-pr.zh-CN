@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069905"
+ms.locfileid: "42091365"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -109,7 +109,7 @@ ms.locfileid: "42069905"
 
 - 若想以编程方式从 Office 365 审核日志下载数据，建议使用 Office 365 管理活动 API，而不是使用 PowerShell 脚本。 Office 365 管理活动 API 是一项 REST Web 服务，可用于为组织制定操作、安全和合规性监视解决方案。 有关详细信息，请参阅 [Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
 
-- 发生事件后，最多需要 30 分钟到 24 小时就可搜索结果中显示相应的审核日志条目。 下表显示了 Office 365 中不同服务所花费的时间。
+- 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Office 365 中不同服务所花费的时间。
 
   |**Office 365 服务**|**30 分钟**|**24 小时**|
   |:-----|:-----:|:-----:|
@@ -117,14 +117,14 @@ ms.locfileid: "42069905"
   |Azure Active Directory（用户登录事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory（管理员事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |数据丢失防护|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |电子数据展示|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Microsoft Project|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |安全与合规中心|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online 和 OneDrive for Business|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
