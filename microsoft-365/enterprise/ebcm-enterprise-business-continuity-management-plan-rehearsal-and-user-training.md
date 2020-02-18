@@ -1,6 +1,8 @@
 ---
 title: 企业业务连续性管理计划预演和用户培训
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解定期培训和实践业务连续性计划的好处。
-ms.openlocfilehash: 8c73b76d6efda4545b3a4ca5f1dc7bac71c3f2bc
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: d7d3aa3309f4a79d3a759008fe97710ee31507a3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122322"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597009"
 ---
 # <a name="train-your-organization"></a>培训组织
 

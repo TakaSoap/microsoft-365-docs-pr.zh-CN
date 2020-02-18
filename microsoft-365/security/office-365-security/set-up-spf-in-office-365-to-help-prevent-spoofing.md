@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中设置 SPF 以防止欺骗
+f1.keywords:
+- CSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 和自定义域。 SPF 有助于验证从自定义域发送的出站电子邮件。
-ms.openlocfilehash: 218334385308a86d25309503924d2f64111f731b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0480e23d00671f0fdfc4795f3844047e02a69122
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971370"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598329"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>在 Office 365 中设置 SPF 以防止欺骗
 
@@ -64,7 +66,7 @@ ms.locfileid: "39971370"
    |3|Exchange Online 专用|不常见|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
    |4|仅 Office 365 Germany、Microsoft Cloud Germany|不常见|include:spf.protection.outlook.de|
    |5|第三方电子邮件系统|不常见|include:\<域名\>  <br/> 其中域名是第三方电子邮件系统的域名。|
-   |6|本地邮件系统。例如，Exchange Online Protection 和另一个邮件系统|不常见| 为每个附加的邮件系统使用以下其中一个：  <br/>  ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include：\<_域名_\>  <br/>  其中 \<_IP address_\>的值是其他邮件系统的 IP 地址，\<_domain name_\> 是另一个代表您的域发送邮件的邮件系统的 IP 地址。|
+   |6|本地邮件系统。例如，Exchange Online Protection 和另一个邮件系统|不常见| 为每个附加的邮件系统使用以下其中一个： <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include：\<_域名_\>  <br/>  其中 \<_IP address_\>的值是其他邮件系统的 IP 地址，\<_domain name_\> 是另一个代表您的域发送邮件的邮件系统的 IP 地址。|
    |7|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值结尾|\<_强制规则_\>  <br/> 这可以是多个值之一。我们建议您使用 **-all**。|
 
 2. 如果尚未创建 SPF TXT 记录，请使用该表中的语法执行此操作：
@@ -81,7 +83,7 @@ ms.locfileid: "39971370"
 
    如果你已在 Office 365 中进行部署并已为自定义域设置 SPF TXT 记录，而当前正在向 Office 365 Germany 迁移，则需要更新 SPF TXT 记录。 为此，请将 include:spf.protection.outlook.com**** 更改为 include.spf.protection.outlook.de****。
 
-3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 只能为域使用一个 SPF TXT 记录。 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)然后单击 DNS 主机的链接。
+3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 只能为域使用一个 SPF TXT 记录。 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)然后单击 DNS 主机的链接。
 
 4. 测试 SPF TXT 记录。
 

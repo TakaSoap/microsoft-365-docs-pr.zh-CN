@@ -1,5 +1,7 @@
 ---
 title: Office 365 高级威胁防护
+f1.keywords:
+- CSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 0f7ba86208746909470063e406226545bf1a006d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 7210cc2cfbb060ee6afe9042a5c8934ff6f53576
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970348"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598739"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 

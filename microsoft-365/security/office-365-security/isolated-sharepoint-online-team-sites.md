@@ -1,5 +1,7 @@
 ---
 title: 单独的 SharePoint Online 团队网站
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 摘要：了解有关单独的 SharePoint Online 团队网站的用法。
-ms.openlocfilehash: 07f4d84493cdc7c0e153186164824fe8aa1e36bc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5750db2206211b6bb231ea01a12d7426a1d731a9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074611"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599079"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>单独的 SharePoint Online 团队网站
 

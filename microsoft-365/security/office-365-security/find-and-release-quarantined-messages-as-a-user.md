@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中以用户的身份查找并释放隔离的邮件。
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 用户，你可以通过以下两种方式自行管理隔离的垃圾邮件：对直接发送给你的垃圾邮件通知作出响应（如果管理员已设置此功能），或使用安全&amp;合规中心的垃圾邮件隔离功能。
-ms.openlocfilehash: bcc9b7ed52af0e9920506aa667e51daad7f82c80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 277af18d2061e8bd13386ab96e37d982d68e0b52
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807997"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599289"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>在 Office 365 中以用户的身份查找并释放隔离的邮件。
 

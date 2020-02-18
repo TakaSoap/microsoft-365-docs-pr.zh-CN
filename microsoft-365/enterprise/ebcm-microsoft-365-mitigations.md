@@ -1,6 +1,8 @@
 ---
 title: Microsoft 365 企业版业务连续性管理缓解措施
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 服务事件情景的一些缓解措施示例。
-ms.openlocfilehash: c2eaa51bd6980893780f6e0534f33cac636ad716
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: ea9804d4f22a11ea9ffcda9d9939d70574c2e87e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831973"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601059"
 ---
 # <a name="service-incident-mitigation-strategies"></a>服务事件缓解策略
 

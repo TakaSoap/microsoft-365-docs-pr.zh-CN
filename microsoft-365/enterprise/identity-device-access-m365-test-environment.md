@@ -1,6 +1,8 @@
 ---
 title: 针对 Microsoft 365 的标识和设备访问测试环境
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 04/23/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况。
-ms.openlocfilehash: e86ff814f0b2b986de7eb26e7de362f17cd355e9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: e43483afc9e17de9582b2998867b53cfff7d8492
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672588"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600999"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>针对 Microsoft 365 的标识和设备访问测试环境
 

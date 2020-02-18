@@ -1,5 +1,7 @@
 ---
 title: 发送垃圾电子邮件后，从受限用户门户删除用户
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果用户从 Office 365 连续发送被归类为垃圾邮件的电子邮件，这些用户将被限制发送任何其他电子邮件。
-ms.openlocfilehash: e942cd9012c3eba226db58808031ac200fbdfeca
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 6fad4b9d3554228bdbf474bce2b4b2d0f29f7e2b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558629"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598579"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>发送垃圾电子邮件后，从受限用户门户删除用户
 

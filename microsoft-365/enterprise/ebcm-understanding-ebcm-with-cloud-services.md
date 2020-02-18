@@ -1,6 +1,8 @@
 ---
 title: 了解企业业务连续性管理和云服务
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解当云服务成为你的 IT 产品的一部分时，规划和实施业务连续性的外观会如何不同。
-ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831833"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596999"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>企业业务连续性管理 (EBCM) 和云服务
 
