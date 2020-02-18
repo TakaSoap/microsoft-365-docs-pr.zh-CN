@@ -1,6 +1,8 @@
 ---
 title: Contoso Corporation 的信息保护
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/02/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的信息保护功能来保护其在云中的数字资产。
-ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831675"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068403"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -85,7 +87,7 @@ Contoso 使用以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
 此处是 Contoso 最终得到的信息保护策略集。
 
-![设备、Exchange Online 和 SharePoint 条件访问策略](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![设备、Exchange Online 和 SharePoint 条件访问策略](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >此外，Contoso 还配置了针对标识和登录的其他条件访问策略。 请参阅 [Contoso Corporation 的标识](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)。
@@ -113,7 +115,7 @@ Contoso 使用以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
 此处是 Contoso 最终得到的信息保护配置。
 
-![Contoso 最终得到的信息保护配置](./media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Contoso 最终得到的信息保护配置](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>后续步骤
 

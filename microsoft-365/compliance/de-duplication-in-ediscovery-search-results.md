@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您可以选择执行已导出的电子数据展示搜索结果，以便即使在不同邮箱中找到同一邮件的多个实例，也只导出电子邮件的一个副本。
-ms.openlocfilehash: bfd810d358a85c0cdfacab50fb512a8d2a9c8828
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892035"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076262"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>电子数据展示搜索结果中的重复数据删除
 
@@ -45,11 +45,11 @@ Office 365 电子数据展示工具使用以下电子邮件属性的组合来确
   
  ### <a name="resultscsv-report-viewed-in-excel"></a>结果 .csv 报告（在 Excel 中查看）
   
-![查看有关结果 .csv 报告中的重复项的信息](media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![查看有关结果 .csv 报告中的重复项的信息](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### <a name="manifestxml-report-viewed-in-excel"></a>清单 .xml 报告（在 Excel 中查看）
   
-![查看有关清单 .xml 报告中的重复项的信息](media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![查看有关清单 .xml 报告中的重复项的信息](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 此外，还会在导出报告中包含重复邮件中的其他属性。 这包括重复邮件所在的邮箱、邮件是否已发送到通讯组，以及邮件是否为 "抄送" 或 "密件抄送" 给其他用户。
   
@@ -64,7 +64,7 @@ Office 365 电子数据展示工具使用以下电子邮件属性的组合来确
 > [!IMPORTANT]
 > 如果重复数据消除算法的限制可能会影响您的搜索结果的质量，则在导出项目时不应启用重复数据删除。 如果此部分中所述的情况不可能是搜索结果中的因素，并且您想要减少最有可能重复的项目数，则应考虑启用重复数据删除。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 本文中的信息适用于使用以下电子数据展示工具之一导出搜索结果：
 

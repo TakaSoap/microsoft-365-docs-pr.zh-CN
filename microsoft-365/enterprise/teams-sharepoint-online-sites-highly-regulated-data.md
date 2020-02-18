@@ -1,6 +1,8 @@
 ---
 title: 用于高度管控数据的 SharePoint 网站
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/31/2019
@@ -11,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: ''
 description: 创建安全的 SharePoint 团队网站来存储最有价值和敏感的文件。
-ms.openlocfilehash: f8ccda85256e1f590f80a9302897e2950c59d154
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: c74a2bc59a6ef9d16ecd0dfbed06d577bd98649b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699742"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085053"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>用于高度管控数据的 SharePoint 网站
 
@@ -59,7 +62,7 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 以下是安全的 SharePoint 网站的示例配置。
 
-![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![用于高度管控数据场景的 SharePoint 网站](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 此方案要求已经部署：
 
@@ -68,9 +71,9 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 以下各阶段将指导你完成用于高度管控数据的 SharePoint 网站的设计、配置和驱动采用。
 
-<a name="poster"></a> 有关这种情况的 1 页摘要，请参阅[针对高度管控数据海报的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)。
+<a name="poster"></a> 有关这种情况的 1 页摘要，请参阅[针对高度管控数据海报的 SharePoint 网站](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)。
 
-[![针于高度管控数据海报的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+[![针于高度管控数据海报的 SharePoint 网站](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
 还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) 格式的海报，并按 letter、legal 或 tabloid (11 x 17) 大小的纸张打印。
 
@@ -170,11 +173,11 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 下面是使用高管控标签的子标签生成的配置。
 
-![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![用于高度管控数据场景的 SharePoint 网站](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 下面是对网站中存储的文件应用了子标签的用户示例。
 
-![用于高度管控数据场景的 SharePoint 网站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
+![用于高度管控数据场景的 SharePoint 网站](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
 
 ## <a name="phase-3-drive-user-adoption"></a>第 3 阶段：驱动用户采用

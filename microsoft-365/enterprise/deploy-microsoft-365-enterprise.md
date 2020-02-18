@@ -1,6 +1,8 @@
 ---
 title: 部署 Microsoft 365 企业版
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801917"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067951"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -65,7 +67,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 以下是底层基础架构与工作负载与应用场景之间的关系。
 
-![底层基础架构与工作负载与应用场景之间的关系](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![底层基础架构与工作负载与应用场景之间的关系](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 工作负载和应用场景在底层基础架构上面运行。 但是，无需构建所有底层基础架构即可开始使用工作负载，以提高生产力和协作。
 
@@ -83,13 +85,13 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 有关详细信息，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[将你的组织转移到 Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) 海报。
+要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[将你的组织转移到 Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) 海报。
 
-[![将你的组织转移到 Microsoft 365 海报](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![将你的组织转移到 Microsoft 365 海报](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 

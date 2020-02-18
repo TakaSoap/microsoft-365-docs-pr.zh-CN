@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从即时 Bloomberg 聊天工具导入 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 9711442e75e5a60540c8c7debea83d90c89e7893
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e93802eaf3197139fe8b8384bc1ec3ee16b2d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596029"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079651"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
@@ -29,7 +29,7 @@ ms.locfileid: "41596029"
 
 以下概述说明了使用连接器在 Microsoft 365 中存档即时 Bloomberg 聊天数据的过程。 
 
-![即时 Bloomberg 导入和存档过程](media/InstantBloombergDataArchiving.png)
+![即时 Bloomberg 导入和存档过程](../media/InstantBloombergDataArchiving.png)
 
 1. 您的组织与 Bloomberg 配合使用来设置 Bloomberg SFTP 站点。 您还将使用 Bloomberg 将 "即时 Bloomberg" 配置为将聊天邮件复制到 Bloomberg SFTP 站点。
 

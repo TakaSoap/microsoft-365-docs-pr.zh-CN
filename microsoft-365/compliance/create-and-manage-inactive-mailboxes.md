@@ -32,7 +32,7 @@ Office 365 使您可以保留已删除邮箱的内容。 此功能称为“非�
 > [!IMPORTANT]
 > 随着我们继续投资保留邮箱内容的不同方式，我们宣布在 Exchange 管理中心中停用就地保留。 这意味着，应使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 从2020年4月1日开始，你将无法在 Exchange Online 中创建新的就地保留。 但您仍可以更改非活动邮箱上设置的就地保留的保留持续时间。 不过，从2020年6月1日开始，你将无法更改保留期。 你将只能通过删除就地保留来删除非活动邮箱。 在删除保留之前，就地保留中的现有非活动邮箱仍将保留。 有关停用就地保留的详细信息，请参阅[旧版电子数据展示工具的退休](legacy-ediscovery-retirement.md)。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要将邮箱设为非活动邮箱，必须为其分配一个 Exchange Online 计划2许可证，以便在删除邮箱之前可以将诉讼保留或 Office 365 保留策略应用于该邮箱。 Exchange Online 计划2许可证是 Office 365 企业版 E3 和 E5 订阅的一部分。 如果为邮箱分配了 Exchange Online 计划1或 Exchange Online 展台许可证（分别是 Office 365 E1 和 F1 订阅的一部分），则必须为其分配一个单独的 Exchange Online 存档许可证，以便可以将保留应用于邮箱 before 它已被删除。 有关详细信息，请参阅 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)。
 

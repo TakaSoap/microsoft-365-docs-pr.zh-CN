@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 测试环境的密码哈希同步
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和展示 Microsoft 365 测试环境的密码哈希同步和登录。
-ms.openlocfilehash: ef08fcf59602d7812875015971d00a34526576d6
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: a0a498aea84bacb61de257150801328834724981
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202453"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066380"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
@@ -29,7 +31,7 @@ ms.locfileid: "39202453"
 
 许多组织使用 Azure AD Connect 和密码哈希同步来同步他们内部部署的 Active Directory 域服务 (AD DS) 林帐户集与 Microsoft 365 或 Office 365 订阅的 Azure AD 租户帐户集。 本文介绍了如何添加密码哈希同步至 Microsoft 365 测试环境，从而生成以下配置：
   
-![使用密码哈希同步测试环境的模拟企业配置](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![使用密码哈希同步测试环境的模拟企业配置](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 此测试环境的设置分为以下两个阶段：
   
@@ -37,13 +39,13 @@ ms.locfileid: "39202453"
 2. 在 APP1 上安装和配置 Azure AD Connect。
     
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>第 1 阶段：创建 Microsoft 365 模拟企业测试环境
 
 请按照[适用于 Microsoft 365 的模拟企业基础配置](simulated-ent-base-configuration-microsoft-365-enterprise.md)中的说明操作。生成的配置如下。
   
-![模拟企业基础配置](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![模拟企业基础配置](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 此配置包括： 
   
@@ -60,7 +62,7 @@ ms.locfileid: "39202453"
 
 下面是生成的配置。
   
-![注册 testlab 域名](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![注册 testlab 域名](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 此配置包括：
 
@@ -127,7 +129,7 @@ ms.locfileid: "39202453"
 
 下面是生成的配置。
 
-![使用密码哈希同步的测试环境的模拟企业配置](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![使用密码哈希同步的测试环境的模拟企业配置](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 此配置包括： 
   

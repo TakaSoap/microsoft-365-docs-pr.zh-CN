@@ -1,6 +1,8 @@
 ---
 title: Contoso Corporation 网络
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 网络基础结构以及如何使用其 SD-WAN 技术为 Microsoft 365 企业版云服务提供最佳网络性能。
-ms.openlocfilehash: 87584660805608c45b36e13804ca1dab6b8e7d17
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673168"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068331"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 
@@ -42,7 +44,7 @@ ms.locfileid: "38673168"
 
 图 1 显示 Contoso 的网络基础结构及其 Internet 连接。
 
-![Contoso 网络](./media/contoso-networking/contoso-networking-fig1.png)
+![Contoso 网络](../media/contoso-networking/contoso-networking-fig1.png)
  
 **图 1：Contoso 网络**
 
@@ -75,7 +77,7 @@ Contoso 针对以下方案构建了业务线应用程序和服务器 Intranet �
 
 图 2 展示了跨 Contoso Intranet 访问服务器时的网络流量百分比。
 
-![Contoso 内部应用程序的基础结构](./media/contoso-networking/contoso-networking-fig2.png)
+![Contoso 内部应用程序的基础结构](../media/contoso-networking/contoso-networking-fig2.png)
  
 **图 2：Contoso 内部应用程序的基础结构**
 

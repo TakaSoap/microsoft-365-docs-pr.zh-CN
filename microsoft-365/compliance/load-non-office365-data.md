@@ -30,7 +30,7 @@ ms.locfileid: "42072145"
 >[!Note]
 >数据调查需要 Office 365 E3 和您的组织的高级合规性加载项或 E5 订阅。 如果你没有该计划，并且想要尝试高级电子数据展示，可以注册 Office 365 企业版 E5 的试用版。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 如以下过程所述，使用 "上载非 Office 365" 功能需要具备以下条件：
 

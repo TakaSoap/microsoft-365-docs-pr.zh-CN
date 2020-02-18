@@ -1,5 +1,7 @@
 ---
 title: 入门 - 桌面部署
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署过程简介。
-ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112526"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067473"
 ---
 # <a name="getting-started---desktop-deployment"></a>入门 - 桌面部署
 
-![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
+![](../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>入门：人员、流程和技术指导</strong></p>
 <p>了解 Windows 10 和 Office 365 专业增强版的好处、相比之前的部署的主要变化和注意事项以及最佳做法，以确保顺利过渡到 Windows 10 和 Office 365 专业增强版。</p></td>
-<td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -111,7 +113,7 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 **[步骤 7：Windows 和 Office 即服务](https://aka.ms/mdd7)** 这标志着维护用户桌面资产的方式发生了重大转变。 通过迁移到 Windows 10 和 Office 365 专业增强版，可以将 Windows 和 Office 作为服务来管理。 每隔几年，技术就会发生巨大的变化，你将不断为用户带来新功能、体验和保护。 半年度功能更新在每年的秋季和春季提供新功能，而每月累积质量更新将包含安全性、可靠性和 bug 修复。 虽然可以选择部署 Office 2019 客户端，但我们强烈建议你移至 Office 365 专业增强版。 此做法遵循类似于 Windows 的服务计划，因此用户也会定期收到 Office 应用更新。
 
-![](media/getting-started-media/getting-started-media-2.png)
+![](../media/getting-started-media/getting-started-media-2.png)
 
 [Windows 即服务概述](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [Office 即服务概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 对于管理员：了解如何在 Office 365 中启用自动扩展存档，从而为用户提供对其 Exchange Online 邮箱的无限制存储。 您可以为整个组织或仅为特定用户启用自动扩展存档。
-ms.openlocfilehash: d37243c65770ff7bbcce4cbe4cfd593b68b7a869
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0ca31372d99f0727a6da48be4d8276a533fbe3f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593203"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074681"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>在 Office 365 中启用无限制存档—管理帮助
 
@@ -102,7 +102,7 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
     
 - 同样，在启用自动扩展存档时， *ArchiveQuota*和*ArchiveWarningQuota*邮箱属性的值不会更改。 实际上，如果为用户邮箱启用自动扩展存档，并且*AutoExpandingArchiveEnabled*属性设置为`True`，则*ArchiveQuota*和*ArchiveWarningQuota*属性将被忽略。 以下是在为用户邮箱启用自动扩展存档后，这些邮箱属性的示例。 
     
-    ![启用自动扩展存档后，ArchiveQuota 和 ArchiveWarningQuota 属性将被忽略](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![启用自动扩展存档后，ArchiveQuota 和 ArchiveWarningQuota 属性将被忽略](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
 ## <a name="more-information"></a>更多信息

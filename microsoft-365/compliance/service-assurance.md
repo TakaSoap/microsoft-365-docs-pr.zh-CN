@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核，了解 Microsoft 如何使客户数据安全，并了解在使用 Office 365 时如何遵守 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601519"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081286"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全 & 合规中心中的服务保证
 
@@ -71,7 +71,7 @@ ms.locfileid: "41601519"
   
 1. 在访问服务保证后，选择 "**设置**"，"区域和行业设置" 页将显示，如以下屏幕截图中所示。 
     
-    ![显示保护中心设置页。](media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
+    ![显示保护中心设置页。](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
 2. 在 "**设置**" 页上，选择 "**区域**" 旁边的向下箭头，然后检查您的组织的相应区域。 
     
@@ -86,15 +86,15 @@ ms.locfileid: "41601519"
   
 - **合规性报告**，以查看 Office 365 和其他 Microsoft 云服务的独立审核和评估，如以下屏幕截图所示。 
     
-    ![显示服务保证页面：服务合规性报告。](media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
+    ![显示服务保证页面：服务合规性报告。](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
 - **信任文档**以查看有关 Microsoft 如何操作 Office 365 的信息，如以下屏幕截图所示。 
     
-    ![显示服务保证页面：信任 Microsoft 提供的文档](media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![显示服务保证页面：信任 Microsoft 提供的文档](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **经审核的控件**查看有关 Office 365 控件如何满足安全性、合规性和隐私要求的信息，如以下屏幕截图所示。 
     
-    ![显示 "服务保证已审核的控件" 屏幕。](media/4baf252b-603d-45e0-af12-32616154df65.png)
+    ![显示 "服务保证已审核的控件" 屏幕。](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
 选择要下载的报告，然后选择 "**保存**" 以将其下载到您的计算机。 对于已审核的控件，选择所需的报告，然后选择 "**下载**"。 下表介绍了可以在每个服务保证页上找到的报告。 
   
@@ -116,15 +116,15 @@ ms.locfileid: "41601519"
   
 1. 在安全 & 合规性中心中，选择左窗格中的**权限**，如下面的屏幕截图中所示。 
     
-    ![安全&amp;合规性权限菜单](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
+    ![安全&amp;合规性权限菜单](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
 2. 在右侧窗格中，选择 "**服务保证用户**"，然后选择 "**编辑角色组**"，在 "**成员**" 部分下，选择 "**编辑**" 以将成员添加到服务保证用户角色中，如下面的屏幕截图中所示。 
     
-    ![服务保证用户-添加](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
+    ![服务保证用户-添加](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
 3. 在下一个对话框中，搜索并选择需要查看服务保证合规性报告和信任资源的个人或组，然后为所做的每个选择选择 "**添加**"，并在完成后单击窗格右上角的 " **X** "。 
     
-    ![服务保证用户-选择用户](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
+    ![服务保证用户-选择用户](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
 4. 您添加到服务保证用户角色中的每个用户或组现在都可以在 Security & 合规性中心中查找服务保证并下载报告和其他文档。
     

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 Microsoft 365 中的数据调查搜索数据时，使用关键字和条件缩小搜索范围。
-ms.openlocfilehash: 84ce9acf91ec3e8cc325d06ccd5a1e97d3fb2b2a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6769d662f843622a537a5ce93c1c5331b00fc3f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596299"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079013"
 ---
 # <a name="build-search-queries"></a>生成搜索查询
 
 在构建搜索查询时，可以使用关键字来查找特定内容和条件，以缩小搜索范围，以返回与调查最相关的项目。
 
-![使用关键字和条件缩小搜索结果范围](media/SearchQueryBox.png)
+![使用关键字和条件缩小搜索结果范围](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>关键字搜索
 
@@ -35,7 +35,7 @@ ms.locfileid: "41596299"
     
 或者，也可以选中 "**显示关键字列表**" 复选框，然后在每行中键入关键字或关键字短语。 如果执行此操作，则每行中的关键字都将通过逻辑运算符（表示为*c:s*）连接到创建的搜索查询中的**OR**运算符的功能相似。 这意味着搜索结果中包含任何行中包含任意关键字的项。
 
-![使用关键字列表获取查询中每个关键字的统计信息](media/KeywordListSearch.png)
+![使用关键字列表获取查询中每个关键字的统计信息](../media/KeywordListSearch.png)
 
 为什么使用关键字列表？ 您可以获取统计信息，以显示与关键字列表中的每个关键字匹配的项目数。 这可帮助您快速识别最有效（最少）的关键字。 您还可以在关键字列表的行中使用关键字短语（括在括号中）。 有关搜索统计信息的详细信息，请参阅[搜索统计](search-statistics.md)信息。
 

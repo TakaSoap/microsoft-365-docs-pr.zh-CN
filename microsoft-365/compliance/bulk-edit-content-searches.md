@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用 Office 365 或 Microsoft 365 中的安全与合规中心中的批量搜索编辑器快速更改一个或多个内容搜索的查询和内容位置。
-ms.openlocfilehash: 40d3a6c04a57f368a4f53ae0bbc543b049b26d52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5d1fd8a877ffb6c2012567583e46e561fb09836f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596269"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078967"
 ---
 # <a name="bulk-edit-content-searches"></a>批量编辑内容搜索
 
@@ -30,13 +30,13 @@ ms.locfileid: "41596269"
 
 1. 转到[https://protection.office.com](https://protection.office.com)，然后选择 "**搜索** \> **内容搜索**"。
     
-2. 在搜索列表中，选择一个或多个搜索，然后选择 "**批量搜索编辑器** ![批量搜索编辑器"](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)按钮。
+2. 在搜索列表中，选择一个或多个搜索，然后选择 "**批量搜索编辑器** ![批量搜索编辑器"](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)按钮。
     
-    ![选择一个或多个搜索，然后选择 "批量搜索编辑器"](media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
+    ![选择一个或多个搜索，然后选择 "批量搜索编辑器"](../media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
   
     以下信息显示在批量搜索编辑器的 "**查询**" 页上。 
     
-    !["批量搜索编辑器" 页将显示所选搜索的查询](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
+    !["批量搜索编辑器" 页将显示所选搜索的查询](../media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
     a. "**搜索**" 列显示内容搜索的名称。 如前面所述，您可以编辑查询以查找多个搜索。 
     
@@ -71,7 +71,7 @@ ms.locfileid: "41596269"
     
     在批量搜索编辑器的 "**位置**" 页上显示以下信息。 
     
-    ![选择 "启用批量位置编辑器"，然后选择 "位置" 以添加或删除内容位置](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
+    ![选择 "启用批量位置编辑器"，然后选择 "位置" 以添加或删除内容位置](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
     a. **要搜索的邮箱**此部分显示每个选定的内容搜索的列以及搜索中包含的每个邮箱的行。 复选标记表示该邮箱包含在搜索中。 您可以通过在空白行中键入邮箱的电子邮件地址，然后选中要将其添加到的内容搜索的复选框，将邮箱添加到搜索中。 或者，您可以通过清除复选框从搜索中删除邮箱。
     

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使您能够跟踪、分配和验证与 Microsoft 产品相关的法规遵从性活动。
-ms.openlocfilehash: 645d2bca907d81e32d8262051fd159dd52ba3039
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597199"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083832"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -50,7 +50,7 @@ ms.locfileid: "41597199"
 
 每个合规性管理器角色都具有略有不同的权限。 您可以查看分配给每个角色的权限，查看哪些用户是哪些角色，以及通过服务信任门户在该角色中添加或删除用户。 选择 "**管理**" 菜单项，然后选择 "要查看的**设置**"。
   
-![STP 管理菜单：选择的设置](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![STP 管理菜单：选择的设置](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 若要在合规性管理器角色中添加或删除用户，请执行以下操作。
   
@@ -66,11 +66,11 @@ ms.locfileid: "41597199"
 
 6. 若要将用户添加到此角色，请选择 "**添加**"。 在 "**添加用户**" 对话框中，选择 "用户" 字段。 您可以在可用用户列表中滚动，也可以开始键入用户名，以根据您的搜索词筛选列表。 选择要将该帐户添加到使用该角色预配的 "**添加用户**" 列表中的用户。 如果要同时添加多个用户，请开始键入用户名以筛选列表，然后选择要添加到列表中的用户。 选择 "**保存**" 将所选角色设置给这些用户。 
 
-    ![合规性管理器-添加用户](media/compliance-manager-add-users.png)
+    ![合规性管理器-添加用户](../media/compliance-manager-add-users.png)
   
 7. 若要从此角色中删除用户，请选择 "用户"，然后选择 "**删除**"。
 
-    ![合规性管理器-删除用户](media/compliance-manager-delete-users.png)
+    ![合规性管理器-删除用户](../media/compliance-manager-delete-users.png)
 
 ### <a name="controlling-automatic-secure-score-updates"></a>控制自动安全得分更新
 
@@ -178,7 +178,7 @@ ms.locfileid: "41597199"
 
 "客户操作" 区域显示合规性管理器中所有模板和评估的所有客户操作（预览）。
 
-![合规性管理器-添加用户](media/compliance-manager-customer-actions.png "合规性管理器客户操作")
+![合规性管理器-添加用户](../media/compliance-manager-customer-actions.png "合规性管理器客户操作")
 
 您可以一目了然地看到操作的标题、所有者、类别、强制和分数，并确定它是否与安全得分集成。 您可以展开操作并选择 "**读取更多**"，以读取操作说明并访问说明中的任何链接。 您还可以使用此接口基于每个操作启用和禁用安全得分集成，并添加自定义操作。 具有安全得分集成功能的操作旁边有一个省略号（...）（请注意，自定义操作旁边还有一个省略号）。
 
@@ -266,15 +266,15 @@ ms.locfileid: "41597199"
 
 下面的示例展示了 Office 365 和 ISO 27001 的评估。 第一个视图演示合规性管理器（预览版）中的新操作项视图。
 
-![合规性管理器操作项目视图](media/compliance-manager-action-items.png)
+![合规性管理器操作项目视图](../media/compliance-manager-action-items.png)
 
 操作按字母顺序列出，并为每个操作分配一个分数和一个所有者。 选择 "**阅读更多**" 链接以阅读每个操作的详细信息。 
 
-![合规性管理器操作项目视图](media/compliance-manager-actions-read-more.png)
+![合规性管理器操作项目视图](../media/compliance-manager-actions-read-more.png)
 
 选择 "**查看**" 链接以管理、分配、实现和测试操作。 下面是一个操作示例。
 
-![合规性管理器操作视图](media/compliance-manager-action.png)
+![合规性管理器操作视图](../media/compliance-manager-action.png)
 
 在早期版本的合规性管理器中，实现要求的工作流是在控件级别执行的。 合规性监察官会将控件分配给某人以实现该控件。 这有两个缺点：
 
@@ -295,7 +295,7 @@ ms.locfileid: "41597199"
 
 合规性管理器（预览版）还包括在早期版本中找到的基于控件的数据透视。 选择 "**控件信息**" 仪表板以查看它。 您可以在评估和模板级别查看控件的信息。 下面是用于评估的控件信息仪表板的一个示例。
 
-![合规性管理器控制信息视图](media/compliance-manager-controls-info.png)
+![合规性管理器控制信息视图](../media/compliance-manager-controls-info.png)
 
 对于评估，"控件信息" 仪表板将显示：
 
@@ -311,7 +311,7 @@ ms.locfileid: "41597199"
     - **您的操作**将显示您可以执行以满足部分或全部控件要求的客户操作。 许多控件具有与之关联的多个操作，并且与控件关联的所有操作都显示在此处。 此处的操作与操作仪表板中列出的 UI 相同。
     - **Microsoft 操作**显示 microsoft 内部框架中应用于所选证书控制的控件列表。 对于每个内部控件，选择 "已**实施**" 以查看 Microsoft 的实施和测试详细信息，以及测试结果和测试日期，如下所示。
 
-![合规性管理器 Microsoft 操作视图](media/compliance-manager-microsoft-action.png)
+![合规性管理器 Microsoft 操作视图](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="export-an-assessment"></a>导出评估
 
@@ -329,7 +329,7 @@ ms.locfileid: "41597199"
 
 当您完成模板或评估且不再出于合规性目的而需要时，您可以将其从视图中隐藏。 如果模板或评估处于隐藏状态，则会将其从默认视图中删除，并且必须选中 "**包含隐藏**的" 复选框以显示它。
 
-![合规性管理器隐藏的模板视图](media/compliance-manager-hidden-template.png "合规性管理器隐藏模板")
+![合规性管理器隐藏的模板视图](../media/compliance-manager-hidden-template.png "合规性管理器隐藏模板")
 
 > [!IMPORTANT]
 > 隐藏的评估不会保留其到已上载证据文档的链接。 强烈建议您先导出评估，然后再将其隐藏，以保留指向报告中的证据文档的链接。
@@ -367,7 +367,7 @@ ms.locfileid: "41597199"
 
 可以从 "控件信息" 仪表板查看控件。 控件表示标准、认证、法规或框架中的要求。 若要跨多个标准、法规等满足这些要求，并将它们与操作相关联，则所有内容都被视为控制框架。 例如，像控制框架一样，法规（如 HIPAA）已按节细分，合规性管理器中的 HIPAA 控件使用与这些节相同的编号方案，如下所示：
 
-![合规性管理器 Microsoft 控件详细信息](media/compliance-manager-control-details.png)
+![合规性管理器 Microsoft 控件详细信息](../media/compliance-manager-control-details.png)
 
 有三种类型的控件：
 
@@ -403,7 +403,7 @@ ms.locfileid: "41597199"
 
 模板是合规性管理器（预览）中与产品和证书（例如，标准、法规、控制框架等）相关联的基本对象。 可以从 "模板" 仪表板中查看和添加模板。
 
-![合规性管理器 Microsoft 模板仪表板](media/compliance-manager-template-dashboard.png)
+![合规性管理器 Microsoft 模板仪表板](../media/compliance-manager-template-dashboard.png)
  
 仪表板将显示每个模板以及与模板关联的证书和产品、创建模板的日期和上次修改的日期、客户和 Microsoft 托管控件的数量以及最大符合性分数模板，以及模板的状态（例如，"已批准"、"待定审批"、"已导入"）。
 
@@ -594,7 +594,7 @@ Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 2. 在下拉菜单中选择要导出的评估的组和评估。
 3. 选择 "导出"。 将评估导出作为 Excel 文件下载。
 
-![合规性管理器评估 Excel 报告](media/compliance-manager-assessment-report.png)
+![合规性管理器评估 Excel 报告](../media/compliance-manager-assessment-report.png)
 
 ## <a name="permissions"></a>权限
 

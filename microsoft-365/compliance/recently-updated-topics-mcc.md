@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 我们将不断创建新文章，更新现有文章，并根据你的反馈进行更改。 了解本月新增和更新的内容。
-ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601649"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081620"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -117,13 +117,13 @@ ms.locfileid: "41601649"
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
-[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)（已更新）<br>删除了有关即将推出的建议标签在 Outlook 中支持的信息。 删除了重复的许可信息。 现在，指向[Office 应用中的敏感度标签](sensitivity-labels-office-apps.md)中的权威信息。
+[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)（已更新）<br>删除了有关即将推出的建议标签在 Outlook 中支持的信息。 删除了重复的许可信息。 现在，指向[Office 应用中的使用敏感度标签](sensitivity-labels-office-apps.md)中的权威信息。
 
 [在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签（"公共预览"）](sensitivity-labels-sharepoint-onedrive-files.md) （新）<br>有关如何为存储在这些位置的内容准备 SharePoint 和 OneDrive 以将敏感标签应用程序的指南。
 
 [敏感度标签概述](sensitivity-labels.md)（已更新）<br>增加了有关 SharePoint 和 OneDrive 中对 web、Microsoft 团队、Office 365 组、SharePoint 网站和 Office 文件的 Office 应用程序支持的更多详细信息。
 
-[Office 应用中的敏感度标签](sensitivity-labels-office-apps.md)（更新）<br>多个更新，包括有关新的受支持的应用程序、订阅和许可要求的详细信息，以及管理员定义的模板（如 Office 365 邮件加密和敏感度标签中的组件）之间的交互。
+[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)（已更新）<br>多个更新，包括有关新的受支持的应用程序、订阅和许可要求的详细信息，以及管理员定义的模板（如 Office 365 邮件加密和敏感度标签中的组件）之间的交互。
 
 [结合使用敏感度标签和 Microsoft 团队、Office 365 组和 SharePoint 网站（公用预览）](sensitivity-labels-teams-groups-sites.md) （新）<br>有关设置和应用 Microsoft 团队、Office 365 组和 SharePoint 网站中的敏感度标签的详细信息。
 

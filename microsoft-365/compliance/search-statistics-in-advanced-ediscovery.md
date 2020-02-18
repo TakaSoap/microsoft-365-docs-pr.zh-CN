@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: df5ad2ce1d40421e43cdd5e8c3fd4dd5efe1c6f7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b7975f5d288348177cbb6edec8002b4ed49de327
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597539"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069869"
 ---
 # <a name="search-statistics"></a>搜索统计信息
 
@@ -31,7 +31,7 @@ ms.locfileid: "41597539"
 - 搜索的邮箱和位置的数量。
 若要查看更详细的统计信息，请单击 "搜索详细信息" 浮出控件中的 "统计信息"。
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>总结
 
 在摘要视图中，你可以看到按位置类型（如 Exchange）细分的搜索结果。 对于每个位置类型，您可以查看以下内容：
 - 包含符合搜索条件的项目的位置数

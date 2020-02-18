@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594055"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080205"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>向高级电子数据展示案例中添加保管人
 
@@ -29,7 +29,7 @@ ms.locfileid: "41594055"
 
 使用以下工作流在高级电子数据展示事例中添加和管理保管人。 
 
-![保管人管理选项卡](media/CustodianMgtPage.png)
+![保管人管理选项卡](../media/CustodianMgtPage.png)
 
 ## <a name="before-you-begin"></a>开始之前
 
@@ -46,7 +46,7 @@ ms.locfileid: "41594055"
 
 3. 查找要添加到该事例的保管人。 键入人员姓名的第一部分，以显示组织的 Azure Active Directory 中的用户。 找到正确的人员后，单击其名称以将其添加到列表中。
 
-   ![确定潜在保管人](media/AddCustodianStep1.png)
+   ![确定潜在保管人](../media/AddCustodianStep1.png)
  
 4. 添加所有相关保管人后，单击 "**下一步**" 以选择保管人的主数据源。
   
@@ -58,7 +58,7 @@ ms.locfileid: "41594055"
 
 1. 若要选择所有保管人的 Exchange 邮箱，请选中列顶部的 " **exchange** " 复选框。 然后，可以清除任何特定保管人的复选框以将邮箱删除为 custodial 位置。 或者，也可以将 " **Exchange** " 复选框保留为未选中状态，然后选中各个保管人的复选框。 
  
-   ![选择 Custodial 数据源](media/AddCustodianStep2.png)
+   ![选择 Custodial 数据源](../media/AddCustodianStep2.png)
  
 2. 对保管人的 OneDrive 帐户重复相同的操作。 
 
@@ -74,7 +74,7 @@ ms.locfileid: "41594055"
 
 1. 在 "**选择其他数据源**" 页上，在特定保管人的行中单击 "**添加**"。 
   
-   ![映射其他数据源](media/AddCustodianStep3.PNG)
+   ![映射其他数据源](../media/AddCustodianStep3.PNG)
 
 2. 在飞出页面上，您可以指定以下任一 Office 365 服务中的数据源：
   
@@ -87,7 +87,7 @@ ms.locfileid: "41594055"
      
      - **团队**–单击 "**选择团队**"，然后再次单击 "**选择团队**" 以显示保管人当前为其成员的 Microsoft 团队列表。 选择您想要添加到您的管理员的团队。 选择后，系统将自动识别 & 选择与该 Microsoft 团队相关联的关联 SharePoint 网站和组邮箱。 单击 "**选择**"，然后单击 "**完成**"。
 
-       ![映射数据源](media/AddCustodianStep4.PNG)
+       ![映射数据源](../media/AddCustodianStep4.PNG)
         
       > [!NOTE]
       > 若要将其他团队与管理员关联，您必须使用**Exchange 邮件**和**SharePoint 网站**位置，单独添加与团队关联的邮箱和网站。
@@ -102,7 +102,7 @@ ms.locfileid: "41594055"
 
 1. 在 "**将所选保管人置于保留**状态" 页上，选中列顶部的 "**保留**" 复选框以将所有保管人置于保留状态。 然后，可以清除任何特定保管人的复选框以将其从保留中删除。 或者，也可以在未选中的列顶部保留 "**保留**" 复选框，然后选中各个保管人对应的复选框。 
  
-   ![就地保留](media/AddCustodianStep5.PNG)
+   ![就地保留](../media/AddCustodianStep5.PNG)
 
 2. 验证保管人保留选择，然后单击 "**完成**"。
 

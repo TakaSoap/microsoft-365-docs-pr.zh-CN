@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 组织中的信息工作人员每天会处理大量的敏感信息。 "文档指纹"可识别贵组织中使用的标准表单，以便于您保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建一个概念。
-ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892025"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074941"
 ---
 # <a name="document-fingerprinting"></a>文档指纹
 
@@ -45,7 +45,7 @@ ms.locfileid: "41892025"
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>与父模板的文档指纹匹配的父文档示例
 
-![Document-Fingerprinting-diagram](media/Document-Fingerprinting-diagram.png)
+![Document-Fingerprinting-diagram](../media/Document-Fingerprinting-diagram.png)
   
 专利模板包含空字段 "专利权 title"、"Inventors" 和 "Description" 以及每个字段的说明，即 word 模式。 上载原始专利模板时，它采用受支持的文件类型之一和纯文本格式。 DLP 将此 word 模式转换为文档指纹，这是一个包含代表原始文本的唯一哈希值的小型 Unicode XML 文件，并且指纹在 Active Directory 中保存为数据分类。 （作为一种安全措施，原始文档本身不存储在服务上; 仅存储哈希值，并且无法从哈希值重新构造原始文档。）专利指纹将成为可与 DLP 策略关联的敏感信息类型。 将指纹与 DLP 策略相关联后，DLP 将检测任何包含符合专利指纹的文档的出站电子邮件，并根据您的组织的策略对其进行处理。 
 

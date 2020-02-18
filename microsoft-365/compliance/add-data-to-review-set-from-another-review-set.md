@@ -29,7 +29,7 @@ ms.locfileid: "42080172"
 
 请遵循本文中的工作流，将内容从一个审阅集添加到另一个评审集。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在开始之前，您需要创建新的审阅集以将数据添加到。  可以在案例的 "**审阅集**" 选项卡上添加新的审阅集。 有关详细信息，请参阅[创建审阅集](managing-review-sets.md#create-a-review-set)。
 

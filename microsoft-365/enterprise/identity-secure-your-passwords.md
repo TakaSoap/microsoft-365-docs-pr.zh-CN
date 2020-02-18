@@ -1,5 +1,7 @@
 ---
 title: 步骤2：保护密码安全
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你需要确保你的密码在整个组织中都强大并易于管理。
-ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801737"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067279"
 ---
 # <a name="step-2-secure-your-passwords"></a>第 2 步：保护密码安全
 
-![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>防止密码错误
@@ -54,7 +56,7 @@ ms.locfileid: "40801737"
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：密码重置](password-reset-m365-ent-test-environment.md) |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：密码重置](password-reset-m365-ent-test-environment.md) |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-pw-reset)。
@@ -73,7 +75,7 @@ ms.locfileid: "40801737"
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：Azure AD 无缝单一登录](single-sign-on-m365-ent-test-environment.md) |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：Azure AD 无缝单一登录](single-sign-on-m365-ent-test-environment.md) |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-sso)。
@@ -98,4 +100,4 @@ ms.locfileid: "40801737"
 
 |||
 |:-------|:-----|
-|![第 3 步](./media/stepnumbers/Step3.png)| [保护和管理用户登录](identity-secure-user-sign-ins.md) |
+|![第 3 步](../media/stepnumbers/Step3.png)| [保护和管理用户登录](identity-secure-user-sign-ins.md) |

@@ -223,7 +223,7 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 启用用户的存档邮箱后，请考虑告诉用户其邮箱中的其他项目（不仅仅是 "可恢复的项目" 文件夹中的项目）可能会被移至存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含一个保留标记（名为 "默认2年移动到存档"），该保留标记将项目移至存档邮箱，然后在邮件传递到邮箱或由 "创建时间"user. 有关详细信息，请参阅[Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     

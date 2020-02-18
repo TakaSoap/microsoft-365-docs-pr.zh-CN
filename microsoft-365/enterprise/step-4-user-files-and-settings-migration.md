@@ -1,5 +1,7 @@
 ---
 title: 步骤 4 - 用户文件和设置迁移
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何迁移用户文件和设置。
-ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112566"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085282"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步骤 4：用户文件和设置迁移
 
 将用户文件和设置移至新机或刷新后的电脑的流程最为关键；只能成功，不能失败。 你可以对每台电脑进行手动迁移，也可以选择几种方法之一来自动执行该流程。 无论选择哪种迁移方法，都需要解决以下三个问题：用户文件传输、文件设置，以及管理 Windows 10 的“开始”和任务栏布局。
 
-![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
+![](../media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>步骤 4：用户文件和设置</strong></p>
 <p>刷新或更换电脑时，可以通过自动执行用户状态备份和还原来节省时间。针对云文件同步的新选项使你能够将每个用户的桌面、文档和图片文件夹强制同步到 OneDrive，以便从新 Windows 安装上无缝访问文件。</p></td>
-<td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev4" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595619"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077534"
 ---
 # <a name="create-a-legal-hold-notice"></a>创建合法保留通知
 
 通过使用高级电子数据展示保管人通信，组织可以在与保管人通信的周围管理其工作流。 通过通信工具，法律团队可以系统地发送、收集和跟踪合法保留通知。 灵活的创建过程还允许团队自定义保留通知工作流以及发送给保管人的通知中的内容。 
 
-![通信页面](media/CommunicationPage.PNG)
+![通信页面](../media/CommunicationPage.PNG)
 
 本文概述了保留通知工作流中的步骤。
 
@@ -35,7 +35,7 @@ ms.locfileid: "41595619"
 
 第一步是为合法保留通知或其他保管人通信指定相应的详细信息。 
 
-![名称通信页](media/NameCommunication.PNG)
+![名称通信页](../media/NameCommunication.PNG)
 
 1. 在安全 & 合规性中心中，转到**电子数据展示 > 高级电子数据展示**以显示您的组织中的案例列表。
    
@@ -47,13 +47,13 @@ ms.locfileid: "41595619"
     
     - **签发专员**：下拉列表显示事例成员的列表。 发送给保管人的每个通知将代表指定的颁发官发送。
 
-4. 单击“下一步”。****
+4. 单击“**下一步**”。
 
 ## <a name="step-2-define-the-portal-content"></a>步骤2：定义门户内容
 
 接下来，您可以创建和添加保留通知的内容。 在 "**创建通信**向导" 中的 "**定义门户内容**" 页上，指定保留通知的内容。 此内容将自动追加到发布、重新发布、提醒和上报通知中。 此外，此内容将显示在保管人的合规性门户中。 
 
-![门户内容页](media/PortalContent.PNG)
+![门户内容页](../media/PortalContent.PNG)
 
 若要创建门户内容，请执行以下操作：
 
@@ -61,7 +61,7 @@ ms.locfileid: "41595619"
 
 2. 将合并变量插入到通知中，以自定义通知并共享保管人合规性门户。
 
-3. 单击“下一步”。****
+3. 单击“**下一步**”。
 
   >[!Tip]
   >若要了解有关如何自定义门户内容的内容和格式的详细信息，请参阅[使用通信编辑器](using-communications-editor.md)。
@@ -127,7 +127,7 @@ ms.locfileid: "41595619"
 
 （可选）您可以通过创建和安排自动提醒和上报通知来简化与未响应的保管人进行后续工作的工作流。
 
-![提醒/升级页面](media/ReminderEscalations.PNG)
+![提醒/升级页面](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>提醒
 
@@ -173,7 +173,7 @@ ms.locfileid: "41595619"
 
 完成通知的内容后，选择要发送通知的保管人。 
 
-![选择保管人页面](media/SelectCustodians.PNG)
+![选择保管人页面](../media/SelectCustodians.PNG)
 
 若要添加保管人：
 

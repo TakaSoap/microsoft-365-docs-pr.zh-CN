@@ -99,6 +99,6 @@ Office 365 中的特权访问管理在**任务**级别进行定义和作用域�
 
 开始[为您的组织配置特权访问管理](privileged-access-management-configuration.md)。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 [交互式指南：使用特权访问管理监视和控制管理员任务](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 将非 Office 365 数据导入到高级电子数据展示事例中的审阅集。
-ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585681"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072201"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>将非 Office 365 数据加载到审阅集
 
@@ -52,7 +52,7 @@ ms.locfileid: "41585681"
 
    其中，abraham.mcmahon@contoso.com、jewell.gordon@contoso.com 和 staci.gonzalez@contoso.com 是在这种情况下的保管人的 SMTP 地址。
 
-   ![非 Office 365 数据上传文件夹结构](media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![非 Office 365 数据上传文件夹结构](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - 分配给电子数据展示管理器角色组（并作为电子数据展示管理员添加）的帐户。
 
@@ -69,17 +69,17 @@ ms.locfileid: "41585681"
 
 4. 单击 "**上载文件**" 以启动 "非 Office 365 数据导入向导"。
 
-   ![上传文件](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![上传文件](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    向导中的第一步是准备 Microsoft 提供的安全的 Azure 存储位置，以将文件上传到。  准备完成后，"**下一步：上传文件**" 按钮将变为活动状态。
 
-   ![非 Office 365 导入：准备](media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![非 Office 365 导入：准备](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. 单击 "**下一步：上传文件**"。
 
 6. 在 "**上载文件**" 页上，执行以下操作：
 
-   ![非 Office 365 导入：上传文件](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![非 Office 365 导入：上传文件](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
    a. 在 "**文件的位置路径**" 框中，验证或键入您要上载的非 Office 365 数据所在的根文件夹的位置。 例如，对于 "**开始之前" 部分**中显示的示例文件的位置，应键入 **%USERPROFILE\Downloads\nonO365**。 提供正确的位置可确保正确更新路径中 "AzCopy" 命令中显示的框。
 
@@ -87,7 +87,7 @@ ms.locfileid: "41585681"
 
 7. 启动 Windows 命令提示符，粘贴您在上一步中复制的命令，然后按**enter**以启动 AzCopy 命令。  启动该命令后，非 Office 365 文件将被上载到在步骤4中准备的 Azure 存储位置。
 
-   ![非 Office 365 导入： AzCopy](media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![非 Office 365 导入： AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > 如前所述，必须使用 AzCopy 中的 "**上载文件**" 页上提供的命令，才能成功使用。 如果提供的 AzCopy 命令失败，请参阅[高级电子数据展示中的疑难解答 AzCopy](troubleshooting-azcopy.md)。
@@ -96,6 +96,6 @@ ms.locfileid: "41585681"
 
 9. 通过查看名为 "向**审阅集添加非 office 365 数据**" 的作业来跟踪处理 "**进程文件**" 页或 "**作业**" 选项卡上的非 office 365 文件的进度。  作业完成后，新文件将在审阅集中可用。
 
-   ![非 Office 365 导入：处理文件](media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![非 Office 365 导入：处理文件](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. 处理完成后，可以关闭向导。

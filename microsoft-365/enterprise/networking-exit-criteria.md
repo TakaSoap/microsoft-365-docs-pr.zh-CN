@@ -1,5 +1,7 @@
 ---
 title: 第 1 阶段：网络基础结构退出条件
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对网络基础结构的条件。
-ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831943"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066616"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第 1 阶段：网络基础结构退出条件
 
-![第 1 阶段 - 网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![第 1 阶段 - 网络](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 确保你的网络基础结构符合以下必需条件，以及你认为可选的那些条件。
 
@@ -38,7 +40,7 @@ ms.locfileid: "39831943"
 <a name="crit-networking-step2"></a>
 ## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>必需：本地办公室具有本地 Internet 连接和名称解析
 
-通过本地 ISP（其 DNS 服务器使用在 Internet 上标识其位置的本地公用 IP 地址）来配置具有 Internet 访问权限的每个本地办公室。 这可确保访问 Microsoft 365 云服务的用户获得最佳性能。
+通过本地 ISP（其 DNS 服务器使用在 Internet 上标识其位置的本地公用 IP 地址）来配置每个本地办公室的 Internet 访问。这可确保访问 Microsoft 365 云服务尽可能地获得最佳性能。
 
 如果每个分支机构不使用本地 ISP，则性能可能会受到影响，因为网络通信必须遍历组织的主干线或由远程前端服务器提供服务的数据请求。
 
@@ -83,4 +85,4 @@ ms.locfileid: "39831943"
 
 |||
 |:-------|:-----|
-|![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是[标识](identity-infrastructure.md)。 |
+|![第 2 阶段 - 标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是[标识](identity-infrastructure.md)。 |

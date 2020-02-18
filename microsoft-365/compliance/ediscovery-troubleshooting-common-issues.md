@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: ''
 description: 调查、解决 Office 365 电子数据展示中的常见问题和解决问题。
 siblings_only: true
-ms.openlocfilehash: c8eb4a330ab565900a685959ab1291990a6119bb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595127"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074802"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、解决和解决常见的电子数据展示问题
 
@@ -60,7 +60,7 @@ ms.locfileid: "41595127"
 电子数据展示或内容搜索可能会产生以下错误：
 >此搜索已完成（#）错误。  是否要对失败的位置重试搜索？
 
-![搜索特定位置发生错误屏幕截图]( media/edisc-tshoot-specific-location-search-fails.png)
+![搜索特定位置发生错误屏幕截图](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>分辨率
 
@@ -136,7 +136,7 @@ ms.locfileid: "41595127"
 
 在运行电子数据展示搜索时，如果搜索持续失败，并出现类似 "内部服务器错误（500）" 的错误，则可能需要仅在特定邮箱位置上重新运行搜索。
 
-![内部服务器错误500屏幕截图](media/edisc-tshoot-error-500.png)
+![内部服务器错误500屏幕截图](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>分辨率
 

@@ -1,5 +1,7 @@
 ---
 title: 第 2 步：配置每个办公室的本地 Internet 连接
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 理解并配置 DNS 解析，以获得更好的性能。
-ms.openlocfilehash: b47131b9a5f854c630f5d54bd4d3b4738ed953b3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370299"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066651"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>第 2 步：配置每个办公室的本地 Internet 连接
 
 *此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![阶段 1：网络](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![阶段 1：网络](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 在第 2 步中，确保每个办公室都具有本地 Internet 连接并使用本地 DNS 服务器。要求这两个元素均降低连接延迟，并确保本地客户端计算机与 Microsoft 365 基于云的服务的最近入口点建立连接。
 
@@ -32,13 +34,13 @@ ms.locfileid: "37370299"
 
 Microsoft 全局网络包括*分布式服务前端*基础结构，后者是具有异地分布位置的高可用性和可扩展网络边缘。 它将终止前端服务器上的最终用户连接，并高效地在 Microsoft 全局网络中路由最终用户流量。
 
-![Microsoft 全局网络](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+![Microsoft 全局网络](../media/networking-dns-resolution-same-location/microsoft-global-network.png)
 
 为了获得最佳性能，本地客户端应访问地理位置最靠近它们的前端位置，而不是通过网络主干网发送流量并将流量发送到最靠近组织中央 Internet 连接的前端。
 
 下面是一个示例。
 
-![使用 Microsoft 全局网络的示例](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+![使用 Microsoft 全局网络的示例](../media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
 
 当巴黎分支机构中的用户想要访问 SharePoint Online 网站时：
 
@@ -61,4 +63,4 @@ Microsoft 全局网络包括*分布式服务前端*基础结构，后者是具�
 
 |||
 |:-------|:-----|
-|![第 3 步](./media/stepnumbers/Step3.png)|[避免网络回流](networking-avoid-network-hairpins.md)|
+|![第 3 步](../media/stepnumbers/Step3.png)|[避免网络回流](networking-avoid-network-hairpins.md)|

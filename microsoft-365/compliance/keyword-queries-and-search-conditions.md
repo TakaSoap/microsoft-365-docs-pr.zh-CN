@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: e8a0da1815b7ddda889217d027a3aabae4420c56
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585911"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072377"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -95,7 +95,7 @@ ms.locfileid: "41585911"
 |ModifiedBy|上次更改项目的人员。 请务必对此属性使用用户的显示名称。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
 |Path|SharePoint 或 OneDrive for Business 网站中特定网站的路径（URL）。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目，您必须添加/\*到指定网站的 URL;例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用该`Path`属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站（和网站中的文件夹）中的文档，其中包含文件名中的 "保密" 一词。|
 |SharedWithUsersOWSUser|与指定用户共享并显示在用户的 OneDrive for business 网站中的 "**与我共享**" 页上的文档。 这些文档已与组织中的其他人员明确与指定的用户共享。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档将从与指定用户共享文档的人员的原始内容位置导出。 有关详细信息，请参阅[搜索组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都将返回所有已与 Garth Fort 显式共享且显示在 Garth Fort 的 OneDrive for business 帐户中的 "**与我共享**" 页上的内部文档。|
-|Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
+|站点|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
 |标题|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
 |||||
@@ -271,9 +271,9 @@ ms.locfileid: "41585911"
     
 - 同前面所述一样，某些条件属性允许您输入多个值。 各个值在逻辑上使用 **OR** 运算符相连。 这会导致出现使用相同逻辑表示有相同条件的多个实例，而每个实例都有一个值。 下图显示了包含多个值的单个条件的示例，以及一个值为多个条件的示例（同一属性）。 这两个示例都将产生相同的查询：`(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
     
-    ![邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。](media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+    ![邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
-    ![同一属性的多个搜索条件](media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
+    ![同一属性的多个搜索条件](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
 > 如果条件接受多个值，则建议您使用一个条件，并指定多个值（用逗号或分号分隔）。这有助于确保所应用的查询逻辑就是您想要的。 
@@ -288,7 +288,7 @@ ms.locfileid: "41585911"
   
  **GUI**
   
-![第一个搜索条件示例](media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![第一个搜索条件示例](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
   
  **搜索查询语法**
   
@@ -304,7 +304,7 @@ ms.locfileid: "41585911"
   
  **GUI**
   
-![第二个搜索条件示例](media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![第二个搜索条件示例](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
   
  **搜索查询语法**
   
@@ -320,7 +320,7 @@ ms.locfileid: "41585911"
   
  **GUI**
   
-![搜索条件示例三](media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![搜索条件示例三](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
   
  **搜索查询语法**
   
@@ -379,7 +379,7 @@ ms.locfileid: "41585911"
   
 使用`SharedWithUsersOWSUser`属性时，必须与特定用户显式共享文档以在搜索结果中返回。 例如，当某个人在其 OneDrive 帐户中共享文档时，可以选择与任何人（在组织内部或外部）共享它，也可以与组织内的用户共享它，或与特定人员共享该文档。 以下是 OneDrive 中的 "**共享**" 窗口的屏幕截图，其中显示了三个共享选项。 
   
-![使用 SharedWithUsersOWSUser 属性的搜索查询将仅返回与特定人员共享的文件](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![使用 SharedWithUsersOWSUser 属性的搜索查询将仅返回与特定人员共享的文件](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
 使用`SharedWithUsersOWSUser`属性的搜索查询将仅返回使用第三个选项共享的文档（与**特定人员**共享）。 
 

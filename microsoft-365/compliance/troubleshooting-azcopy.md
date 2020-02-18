@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a012ec742d99a5b2ba35800c90e8614b503b93c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3153fc92cfae6e2feba122cc895e787c9b573ef7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597319"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080891"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>解决高级电子数据展示中的 AzCopy
 
 加载非 Office 365 数据或文档以在高级电子数据展示中进行错误修正时，用户界面提供了一个 Azure AzCopy 命令，其中包含参数以及要上载的文件的位置和 Azure 存储文件将上载到的位置。 若要上传文档，请复制此命令，然后在本地计算机上的命令提示符处运行它。  下面的屏幕截图显示了 AzCopy 命令的示例：
 
-![上传非 Office 365 文件](media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![上传非 Office 365 文件](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 在运行时，通常提供的命令是有效的。 但是，在某些情况下，所显示的命令将无法成功运行。 以下是几个可能的原因。
 

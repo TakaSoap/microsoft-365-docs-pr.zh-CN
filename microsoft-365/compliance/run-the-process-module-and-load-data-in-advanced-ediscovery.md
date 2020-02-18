@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: '了解如何使用 Office 365 安全&amp;合规中心访问 Office 365 高级电子数据展示，并运行 Process module for a case。  '
-ms.openlocfilehash: e99071246e6c63292bf3ca1fbca0a0fd25eab5a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601589"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081513"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中运行 Process module 和 load data
 
@@ -49,7 +49,7 @@ ms.locfileid: "41601589"
     
 4. 在 "**准备** \> **过程** \> **安装**" 中，从可用容器列表中选择一个容器。
     
-    ![单击 "处理" 以将搜索结果添加到案例](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![单击 "处理" 以将搜索结果添加到案例](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
 5. 如果要将容器添加为 seed 文件或预先加标签的文件，请单击 "**高级设置"。** 
     
@@ -57,7 +57,7 @@ ms.locfileid: "41601589"
     
     使用预先加标签的文件以自动进行相关性培训。 应标记至少1500个文件，并将与非相关文件相关的比例与添加到相关性的集合中的比例保持一致。 应手动标记这些文件，并且您应该自信标记质量。
     
-    ![用于处理批处理文件的 "高级设置" 页的屏幕截图](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![用于处理批处理文件的 "高级设置" 页的屏幕截图](../media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - 在 "**种子**" 部分中： 
     

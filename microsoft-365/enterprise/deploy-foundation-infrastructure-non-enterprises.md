@@ -1,6 +1,8 @@
 ---
 title: 适用于非企业组织的 Microsoft 365 企业版基础结构
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/08/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成适用于非企业组织的 Microsoft 365 企业版基础结构的简化部署阶段。
-ms.openlocfilehash: ce673222c08823c99c7e9851fced46a90a72b892
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802027"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068064"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>适用于非企业组织的 Microsoft 365 企业版基础结构
 
@@ -55,7 +57,7 @@ Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://ww
 
 以下是突出显示第 1 阶段元素的可视化摘要。 **你的组织**可能拥有多个办公室，每个办公室都与使用区域性本地 DNS 服务器的 ISP 建立了本地 Internet 连接。 通过 ISP，每个办公室的用户都可以访问最近的 Microsoft 365 网络位置和 Microsoft 365 订阅的资源。
 
-![“网络”阶段之后的组织](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
+![“网络”阶段之后的组织](../media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
 ## <a name="phase-2-identity"></a>阶段 2：标识
 
@@ -150,30 +152,30 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 以下是混合标识的标识阶段的可视化摘要，其中突出显示了现有元素和新元素。
 
-![混合标识的“标识”阶段之后的组织](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
+![混合标识的“标识”阶段之后的组织](../media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
 新的和突出显示的混合标识元素包括：
  
 |||
 |:------:|:-----|
-| ![具有用户帐户和组的本地 AD DS 域](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | 具有用户帐户和组的本地 AD DS 域。 |
-| ![运行 Azure AD Connect 的基于 Windows 的服务器](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | 运行 Azure AD Connect 的基于 Windows 的服务器。 |
-| ![Azure AD 中的 AD DS 用户帐户和组的同步集](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Azure AD 中的 AD DS 用户帐户和组的同步集。 |
-| ![用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置。 |
-| ![Azure AD 条件访问策略](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件访问策略。 |
+| ![具有用户帐户和组的本地 AD DS 域](../media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | 具有用户帐户和组的本地 AD DS 域。 |
+| ![运行 Azure AD Connect 的基于 Windows 的服务器](../media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | 运行 Azure AD Connect 的基于 Windows 的服务器。 |
+| ![Azure AD 中的 AD DS 用户帐户和组的同步集](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Azure AD 中的 AD DS 用户帐户和组的同步集。 |
+| ![用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置。 |
+| ![Azure AD 条件访问策略](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件访问策略。 |
 |||
 
 以下是仅限云标识的标识阶段的可视化摘要，其中突出显示了新元素。
 
-![仅限云的“标识”阶段之后的组织](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+![仅限云的“标识”阶段之后的组织](../media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
  
 新的和突出显示的仅限云标识元素包括：
  
 |||
 |:------:|:-----|
-| ![Azure AD 中的用户帐户和组](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Azure AD 中的用户帐户和组。 |
-| ![用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置。 |
-| ![Azure AD 条件访问策略](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件访问策略。 |
+| ![Azure AD 中的用户帐户和组](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Azure AD 中的用户帐户和组。 |
+| ![用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用于身份验证、保护全局帐户以及更轻松地管理组和许可证的 Azure AD 设置。 |
+| ![Azure AD 条件访问策略](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 条件访问策略。 |
 |||
 
 ## <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
@@ -201,14 +203,14 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 以下是 Windows 10 企业版阶段的可视化摘要，其中突出显示了新元素。
 
-![“Windows 10 企业版”阶段之后的组织](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
+![“Windows 10 企业版”阶段之后的组织](../media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
  
 新的和突出显示的 Windows 10 企业版元素包括：
 
 |||
 |:------:|:-----|
-| ![Windows 设备上安装的 Windows 10 企业版](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 设备上安装的 Windows 10 企业版，以本地笔记本电脑为例。 |
-| ![批量许可服务中心](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 批量许可服务中心（它为新安装的 Windows 10 企业版提供映像）和 Windows Update for Business 服务（它提供最新的更新）。 |
+| ![Windows 设备上安装的 Windows 10 企业版](../media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 设备上安装的 Windows 10 企业版，以本地笔记本电脑为例。 |
+| ![批量许可服务中心](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 批量许可服务中心（它为新安装的 Windows 10 企业版提供映像）和 Windows Update for Business 服务（它提供最新的更新）。 |
 |||
 
 ## <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
@@ -225,14 +227,14 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Microsoft Office 
 
 以下是 Office 365 专业增强版阶段的可视化摘要，其中突出显示了新元素。
 
-![“Office 365 专业增强版”阶段之后的组织](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![“Office 365 专业增强版”阶段之后的组织](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
 新的和突出显示的 Office 365 专业增强版元素包括：
  
 |||
 |:------:|:-----|
-| ![设备上安装的 Office 365 专业增强版](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | 设备上安装的 Office 365 专业增强版，以本地笔记本电脑为例。 |
-| ![Office 365 专业增强版的 Office 内容交付网络 (CDN)](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 专业增强版的 Office 内容交付网络 (CDN)，设备可以通过它访问 Office 365 专业增强版更新。 |
+| ![设备上安装的 Office 365 专业增强版](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | 设备上安装的 Office 365 专业增强版，以本地笔记本电脑为例。 |
+| ![Office 365 专业增强版的 Office 内容交付网络 (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 专业增强版的 Office 内容交付网络 (CDN)，设备可以通过它访问 Office 365 专业增强版更新。 |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>阶段 5：移动设备管理
@@ -264,14 +266,14 @@ Intune 策略可以强制执行设备合规性和应用保护。 以下是要创
 
 以下是移动设备管理阶段的可视化摘要，其中突出显示了新元素。
 
-![“移动设备管理”阶段之后的组织](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
+![“移动设备管理”阶段之后的组织](../media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
  
 新的和突出显示的移动设备管理元素包括：
 
 |||
 |:------:|:-----|
-| ![在 Intune 中注册的设备](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | 在 Intune 中注册的设备，显示正运行 Windows 10 企业版的本地笔记本电脑为例。 |
-| ![Intune 的设备合规性和应用保护策略](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Intune 的设备合规性和应用保护策略。 |
+| ![在 Intune 中注册的设备](../media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | 在 Intune 中注册的设备，显示正运行 Windows 10 企业版的本地笔记本电脑为例。 |
+| ![Intune 的设备合规性和应用保护策略](../media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Intune 的设备合规性和应用保护策略。 |
 |||
 
 ## <a name="phase-6-information-protection"></a>阶段 6：信息保护
@@ -330,13 +332,13 @@ Microsoft 365 企业版具有许多信息保护功能，让你能够通过应用
 
 以下是信息保护阶段的可视化摘要，其中突出显示了新元素。
 
-![“信息保护”阶段之后的组织](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
+![“信息保护”阶段之后的组织](../media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
  
 新的和突出显示的信息保护元素包括：
  
 |||
 |:------:|:-----|
-| ![三个安全级别的敏感度标签](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | 用户可以应用于文档和电子邮件的三个安全级别的敏感度标签。 |
+| ![三个安全级别的敏感度标签](../media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | 用户可以应用于文档和电子邮件的三个安全级别的敏感度标签。 |
 |||
 
 未显示客户信息类型和保留标签。
@@ -412,11 +414,11 @@ Microsoft 365 企业版具有许多信息保护功能，让你能够通过应用
 
 以下是当组织使用混合标识时基础结构的可视化摘要，它包含 AD DS 域、Azure AD Connect 服务器以及同步的 AD DS 用户和组。
 
-![当组织使用混合标识时基础结构的摘要](./media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
+![当组织使用混合标识时基础结构的摘要](../media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
  
 以下是当组织使用仅限云标识时基础结构的可视化摘要。
  
-![当组织使用仅限云标识时基础结构的摘要](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
+![当组织使用仅限云标识时基础结构的摘要](../media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
 
 ### <a name="employee-results"></a>员工结果
 

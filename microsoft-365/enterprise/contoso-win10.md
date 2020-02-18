@@ -1,6 +1,8 @@
 ---
 title: Contoso Windows 10 企业版部署
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Windows 10 企业版的就地升级。
-ms.openlocfilehash: 2080562aeb2f6359aa2a4f836de3406e4ca2439c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5dc58a9090dd6976d7c521f7552181a10f22f5b2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672698"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068000"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso Windows 10 企业版部署
 
@@ -77,7 +79,7 @@ Contoso 具有一个现有的 Configuration Manager (Current Branch) 基础结�
 
 下面是 Contoso 的就地升级和持续更新部署体系结构。
 
-![Contoso 的 Windows 10 企业版部署基础结构](./media/contoso-win10/contoso-win10-fig1.png)
+![Contoso 的 Windows 10 企业版部署基础结构](../media/contoso-win10/contoso-win10-fig1.png)
 
 此基础结构的组成部分：
 

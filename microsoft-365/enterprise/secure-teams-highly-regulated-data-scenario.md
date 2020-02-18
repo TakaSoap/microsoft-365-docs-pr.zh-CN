@@ -1,6 +1,8 @@
 ---
 title: 用于高度管控数据的 Teams
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/13/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全团队来存储最有价值的敏感文件。
-ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e2499c6e9061704846f4649ade43f74bd5632e8b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801417"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084232"
 ---
 # <a name="teams-for-highly-regulated-data"></a>用于高度管控数据的 Teams
 
@@ -42,15 +44,15 @@ ms.locfileid: "40801417"
 
 下面是使用敏感度标签生成的配置。
 
-![安全团队方案配置](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![安全团队方案配置](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 要快速概览，请观看此简短视频。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> 有关这种情况的 1 页摘要，请参阅[针对高度管控数据海报的 Teams](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)。
+<a name="poster"></a> 有关这种情况的 1 页摘要，请参阅[针对高度管控数据海报的 Teams](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)。
 
-[![针对高度管控数据海报的 Teams](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+[![针对高度管控数据海报的 Teams](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) 格式的海报，并按 letter、legal 或 tabloid (11 x 17) 大小的纸张打印。
 
@@ -84,7 +86,7 @@ ms.locfileid: "40801417"
 
 下面是团队网站的默认权限。
 
-![团队网站的默认权限](./media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
+![团队网站的默认权限](../media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
  
 >[!Note]
 >如果查看“编辑”权限级别的\<团队名称 > 所有者 SharePoint 组，则不会显示\<团队名称 > 所有者。
@@ -99,7 +101,7 @@ ms.locfileid: "40801417"
 
 下面是到目前为止生成的配置。
 
-![安全团队方案配置的步骤 2](./media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
+![安全团队方案配置的步骤 2](../media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
  
 ### <a name="step-3-configure-the-underlying-sharepoint-site-for-additional-security"></a>步骤 3：配置基础 SharePoint 网站的其他安全性
 
@@ -114,7 +116,7 @@ ms.locfileid: "40801417"
 
 下面是到目前为止生成的配置。
 
-![安全团队方案配置的步骤 3](./media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
+![安全团队方案配置的步骤 3](../media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
 
  
 ### <a name="step-4-create-a-retention-label-and-dlp-policy"></a>步骤 4：创建保留标签和 DLP 策略
@@ -127,7 +129,7 @@ ms.locfileid: "40801417"
 
 下面是到目前为止生成的配置。
 
-![安全团队方案配置的步骤 4](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
+![安全团队方案配置的步骤 4](../media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
 ### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>步骤 5：创建敏感度标签或高度管控敏感度标签的子标签
 
@@ -148,11 +150,11 @@ ms.locfileid: "40801417"
 
 下面是使用新标签生成的配置。
 
-![安全团队方案配置的步骤 5](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![安全团队方案配置的步骤 5](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 下面是敏感度标签与团队组之间的关系。
 
-![团队组与标签权限之间的关系](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
+![团队组与标签权限之间的关系](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
 
 
 >[!Note]
@@ -178,7 +180,7 @@ ms.locfileid: "40801417"
 
 下面是标签上生成的权限。
 
-![用于查看带标签的文件的自定义权限示例](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
+![用于查看带标签的文件的自定义权限示例](../media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
 网站访问者将能够直接访问团队网站，并查看已应用子标签的文件内容。 但是，由于它们不是团队组的成员，因此不能访问团队或其任何资源。
 
@@ -191,7 +193,7 @@ ms.locfileid: "40801417"
 
 团队组成员可以访问团队及其所有资源，包括聊天、会议和其他应用。 使用频道的“**文件**”部分中的文件时，团队组成员必须将敏感度标签或子标签分配给为安全团队创建的文件。 下面是一个示例。
 
-![将标签应用于安全团队中的文件的示例](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+![将标签应用于安全团队中的文件的示例](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
  
 将标签应用于受保护的文件时。 团队组成员可以在 Teams 中打开它并进行实时协作。 它已加密，并且包含为团队组成员提供的共同创作权限集。 如果文件离开网站并转发给恶意用户，则他们必须提供作为团队组成员的用户帐户的凭据，这样才能打开文件并查看其内容。 
 
@@ -222,7 +224,7 @@ ms.locfileid: "40801417"
 
 若要构建自己的测试环境以测试团队的敏感和高度机密文件，请参阅[这些说明](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment)。 
 
-![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Contoso Corporation 如何对最高机密项目使用安全团队
 

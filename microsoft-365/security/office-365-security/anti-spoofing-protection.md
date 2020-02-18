@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的反欺骗保护
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文介绍 Office 365 如何缓解使用伪造发件人域（即欺骗性域）的网络钓鱼攻击。 通过分析邮件并阻止无法使用标准电子邮件身份验证方法或其他发件人信誉技术进行身份验证的邮件，它可以实现这一目标。 实施此更改是为了减少 Office 365 中的组织所面临的网络钓鱼攻击的数量。
-ms.openlocfilehash: cb978dd39e9645b8179490d498713137ab79af46
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233893"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087021"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的反欺骗保护
 
@@ -41,13 +43,13 @@ Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅
 
 首先，欺骗性邮件可能会欺骗用户点击链接并放弃使用其凭据、下载恶意软件或回复具有敏感内容的邮件（后者称为商务电子邮件入侵）。 例如，以下是一封具有伪造发件人 msoutlook94@service.outlook.com 的网络钓鱼邮件：
 
-![冒充 service.outlook.com 的网络钓鱼邮件](../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![冒充 service.outlook.com 的网络钓鱼邮件](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
 上述邮件实际上并非来自 service.outlook.com，而是被网络钓鱼者伪造成这样。 它试图欺骗用户点击邮件中的链接。
 
 下一个示例是欺骗性的 contoso.com：
 
-![网络钓鱼邮件 - 商务电子邮件入侵](../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![网络钓鱼邮件 - 商务电子邮件入侵](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
 该邮件看似合法，但实际上是一封欺骗性邮件。 此网络钓鱼邮件是一种商务电子邮件入侵，它是网络钓鱼的子类别。
 
@@ -55,7 +57,7 @@ Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅
 
 其次，欺骗性邮件为了解网络钓鱼邮件的用户带来了不确定性，使其无法区分真实邮件和欺骗性邮件。 例如，以下是从 Microsoft 安全帐户电子邮件地址重置实际密码的示例：
 
-![Microsoft 合法密码重置](../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Microsoft 合法密码重置](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
 上述邮件确实来自 Microsoft，但与此同时，用户习惯于获取可能诱使其点击链接并放弃使用其凭据、下载恶意软件或回复包含敏感内容的邮件的网络钓鱼邮件。 由于很难区分真实密码重置和虚假密码重置，因此许多用户会忽略这些邮件，将其报告为垃圾邮件，或者不必要地将该邮件作为遗漏的网络钓鱼欺骗邮件报告给 Microsoft。
 
@@ -63,7 +65,7 @@ Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅
 
 但问题在于电子邮件身份验证记录是可选的，而不是必需的。 因此，具有强身份验证策略（如 microsoft.com 和 skype.com）的域可以防止欺骗，而发布较弱身份验证策略或根本没有策略的域则是欺骗活动攻击的目标。 截至 2018 年 3 月，在财富 500 强企业中，只有 9% 的域发布了强电子邮件身份验证策略。 剩余 91％ 的域可能被网络钓鱼者冒充，除非电子邮件筛选器使用其他策略检测到这些欺骗活动，否则可能会将其传递给最终用户并误导他们：
 
-![财富 500 强企业的 DMARC 策略](../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![财富 500 强企业的 DMARC 策略](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 未跻身财富 500 强的已发布强大电子邮件身份验证策略的中小型公司所占比例较小，而对于北美和西欧以外的域，发布强大策略的比例仍较小。
 
@@ -149,7 +151,7 @@ SFTY 表示邮件的安全级别，第一个数字 (9) 表示该邮件是网络�
 
 在这两种情况下，邮件中都会标记以下红色安全提示，或者根据收件人邮箱的语言提供自定义等效提示：
 
-![红色安全提示 - 欺诈检测](../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![红色安全提示 - 欺诈检测](../../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
 
 只有通过查看“发件人: 地址”并了解收件人电子邮件的内容，或者通过检查电子邮件标头，你才能区分组织内欺骗和跨域欺骗。
 
@@ -221,7 +223,7 @@ To: receiver @ contoso.com
 
 在电子邮件客户端（Outlook、Outlook 网页版或任何其他电子邮件客户端）中，仅显示“发件人:”域，而不显示 SPF 或 DKIM 中的域，这可能误导用户认为该邮件来自 fabrikam.com，但它实际上来自 maliciousDomain.com。
 
-![已对邮件进行身份验证，但“发件人:”域与通过 SPF 或 DKIM 验证的域不一致。](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![已对邮件进行身份验证，但“发件人:”域与通过 SPF 或 DKIM 验证的域不一致。](../../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 因此，Office 365 要求“发件人: 地址”中的域与 SPF 或 DKIM 签名中的域保持一致，如果不一致，则需要包含一些其他内部信号，以指明该邮件是合法邮件。 否则，该邮件将为 compauth 失败状态。
 
@@ -259,17 +261,17 @@ To: someone@fabrikam.com
 
 若要创建或更新（跨域）反欺骗设置，请导航到安全 &amp;合规中心的“威胁管理”\>“策略”选项卡下的“反网络钓鱼”\>“反欺骗设置”。 如果你从未创建任何反网络钓鱼设置，则需要创建一个：
 
-![反网络钓鱼 - 创建新策略](../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![反网络钓鱼 - 创建新策略](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
 如果你已创建一个，则可以选择它以进行修改：
 
-![反网络钓鱼 - 修改现有策略](../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![反网络钓鱼 - 修改现有策略](../../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
 
 选择你刚刚创建的策略，然后按照[详细了解反欺骗智能保护](learn-about-spoof-intelligence.md)中所述的步骤执行操作。
 
-![启用或禁用反欺骗](../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![启用或禁用反欺骗](../../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
 
-![启用或禁用反欺骗安全提示](../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
+![启用或禁用反欺骗安全提示](../../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
 
 使用 PowerShell 创建新策略：
 
@@ -295,11 +297,11 @@ Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 
 在 2018 年晚些时候，你不必创建一个默认策略，系统将为组织内的所有收件人创建一个默认策略，因此你不必手动指定它（在最终实施之前，以下屏幕截图可能会发生变更）。
 
-![反网络钓鱼的默认策略](../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![反网络钓鱼的默认策略](../../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
 
 与你创建的策略不同，你无法删除默认策略、修改其优先级或选择该策略适用的用户、域或组。
 
-![反网络钓鱼默认策略详细信息](../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![反网络钓鱼默认策略详细信息](../../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
 
 使用 PowerShell 设置默认保护：
 
@@ -338,7 +340,7 @@ Office 365 会跟踪向贵组织发送未经身份验证的电子邮件的人员
 
 若要允许此发件人发送未经身份验证的电子邮件，请将“**否**”更改为“**是**”。
 
-![设置反欺骗允许的发件人](../media/d4334921-d820-4334-8217-788279701e94.jpg)
+![设置反欺骗允许的发件人](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 你还可以使用 PowerShell 允许特定发件人将邮件发送到你所在的域：
 
@@ -347,13 +349,13 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![通过 Powershell 获取冒充的发件人](../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![通过 Powershell 获取冒充的发件人](../../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
 
 在上一张图片中，添加了额外的换行符以使此屏幕截图适合查看。 通常情况下，将在单行上显示所有值。
 
 编辑文件并查找与 outlook.com 和 bing.com 对应的行，并将 AllowedToSpoof 条目从“否”更改为“是”：
 
-![在 Powershell 中将欺骗允许设置为“是”](../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![在 Powershell 中将欺骗允许设置为“是”](../../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
 
 保存该文件，然后运行：
 
@@ -380,7 +382,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 启用反欺骗策略后，你可以使用威胁调查和响应功能来获取标记为网络钓鱼的邮件数量。 若要执行此操作，请进入“威胁管理”\>“资源管理器”下的安全 &amp; 合规中心 (SCC)，将视图设置为“网络钓鱼”，并按发件人域或保护状态进行分组：
 
-![查看标记为网络钓鱼的邮件数量](../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![查看标记为网络钓鱼的邮件数量](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 你可以与各种报表进行交互，以查看有多少邮件标记为网络钓鱼，包括标记为“SPOOF”的邮件。 有关详细信息，请参阅[开始使用 Office 365 威胁调查和响应](office-365-ti.md)。
 
@@ -388,7 +390,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 以下屏幕截图是关于数据外观的建议，但在发布时可能会发生改变：
 
-![按检测类型查看网络钓鱼报表](../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![按检测类型查看网络钓鱼报表](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
 对于非 ATP 和 E5 客户，这些报表将在后面的威胁防护状态 (TPS) 报表中提供，但会延迟至少 24 小时。 此页面将在集成到安全 &amp; 合规中心时进行更新。
 
@@ -398,9 +400,9 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 此功能目前正在开发中。 随着定义更多详细信息，此页面将使用安全与合规性中心的屏幕截图和 PowerShell 示例进行更新。
 
-![用于启用反欺骗的“假设”报表](../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![用于启用反欺骗的“假设”报表](../../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
 
-![允许冒充发件人的可能 UX](../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![允许冒充发件人的可能 UX](../../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
 
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>禁用反欺骗的合法情景
 
@@ -410,23 +412,23 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 但是，有一种应禁用反欺骗的合法情景，即在邮件路由中有其他邮件筛选产品，而 Office 365 不是电子邮件路径中的第一个跃点：
 
-![客户 MX 记录未指向 Office 365](../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
+![客户 MX 记录未指向 Office 365](../../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
 
 另一台服务器可能是 Exchange 本地邮件服务器、邮件筛选设备（如 Ironport）或其他云托管服务。
 
 如果收件人域的 MX 记录未指向 Office 365，则无需禁用反欺骗，因为 Office 365 会查找你的接收域的 MX 记录，并在其指向其他服务时禁止反欺骗。 如果你不知道域前面是否还有其他服务器，则可以使用 MX Toolbox 等网站查找 MX 记录。 它可能显示如下信息：
 
-![MX 记录指明域未指向 Office 365](../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![MX 记录指明域未指向 Office 365](../../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
 
 此域具有未指向 Office 365 的 MX 记录，因此 Office 365 不会应用反欺骗执行。
 
 但是，如果收件人域的 MX 记录*指向* Office 365，即使 Office 365 前面有其他服务，也应禁用反欺骗。 最常见的示例是使用收件人重写：
 
-![收件人重写的路由图](../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![收件人重写的路由图](../../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
 
 域 contoso.com 的 MX 记录指向本地服务器，而域 @office365.contoso.net 的 MX 记录则指向 Office 365，因为它在 MX 记录中包含 \*.protection.outlook.com 或 \*.eo.outlook.com：
 
-![MX 记录指向 Office 365，因此可能是收件人重写](../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![MX 记录指向 Office 365，因此可能是收件人重写](../../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
 
 确保区分收件人域的 MX 记录何时未指向 Office 365，以及何时进行了收件人重写。 区分这两种情况非常重要。
 
@@ -452,11 +454,11 @@ Authentication-Results: spf=fail (sender IP is 1.2.3.4)
 
 对于此特定示例，以下内容表示 contoso.com 域（看起来像收件人，因为它是“收件人:”标头）具有指向本地服务器的 MX 记录点：
 
-![MX 记录指向本地服务器](../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
+![MX 记录指向本地服务器](../../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
 
 但是，实际的收件人是 office365.contoso.net，其 MX 记录指向 Office 365：
 
-![MX 指向 Office 365，必须是收件人重写](../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![MX 指向 Office 365，必须是收件人重写](../../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
 
 因此，此邮件可能进行了收件人重写。
 

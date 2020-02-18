@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 365 中的信息管理。
-ms.openlocfilehash: b592223d532a67964b595cb7d402a05d0197be59
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc8477cdaa268ede659d9bea8e05f20939726ed6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585591"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072129"
 ---
 # <a name="manage-information-governance"></a>管理信息治理
 

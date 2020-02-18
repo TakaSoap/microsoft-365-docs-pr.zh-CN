@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可以修复高级电子数据展示中的审阅集中的文档中的处理错误，而无需遵循批量错误修正过程。
-ms.openlocfilehash: c049ce4b5d3f8fc12a015a61ea927b744ae76eb3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3c50f9dcd1448ee36edd0e82e5b2c2879c11d6b5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601489"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069637"
 ---
 # <a name="single-item-error-remediation"></a>单个项目错误更正
 
@@ -31,21 +31,21 @@ ms.locfileid: "41601489"
 
 在审阅集中有处理错误的文档现在标识为（带有横幅）。 您可以修正或忽略该错误。 下面的屏幕截图显示了 Word 文档在受密码保护的审阅集中的处理错误横幅。 此外，还请注意，您可以查看包含处理错误的文档的文件元数据。
 
-![显示有处理错误的文档的横幅](media/SIERimage1.png)
+![显示有处理错误的文档的横幅](../media/SIERimage1.png)
 
 您还可以通过在[审阅集中查询文档](review-set-search.md)时使用**处理状态**条件来搜索具有处理错误的文档。
 
-![使用处理状态条件搜索错误文档](media/SIERimage2.png)
+![使用处理状态条件搜索错误文档](../media/SIERimage2.png)
 
 ### <a name="ignore-errors"></a>忽略错误
 
 您可以通过单击处理错误标题中的 "**忽略**" 忽略处理错误。 当您忽略错误时，文档将从[批量错误修正工作流](error-remediation-when-processing-data-in-advanced-ediscovery.md)中删除。 错误被忽略后，文档标题将更改颜色并指示处理错误已被忽略。 您可以随时单击 "**还原**"，恢复决定忽略错误。
 
-![单击 "忽略" 忽略处理错误](media/SIERimage3.png)
+![单击 "忽略" 忽略处理错误](../media/SIERimage3.png)
 
 您还可以搜索在审阅集中查询文档时使用 "*忽略的处理错误*" 条件忽略的处理错误的所有文档。
 
-![使用 "忽略的处理错误" 条件搜索忽略的错误文档](media/SIERimage4.png)
+![使用 "忽略的处理错误" 条件搜索忽略的错误文档](../media/SIERimage4.png)
 
 ## <a name="remediate-a-document-with-errors"></a>修正有错误的文档
 
@@ -55,26 +55,26 @@ ms.locfileid: "41601489"
 
 1. 单击 "**下载** > **原始**版本" 将该文件的副本下载到本地计算机。
 
-   ![下载包含处理错误的文档](media/SIERimage5.png)
+   ![下载包含处理错误的文档](../media/SIERimage5.png)
 
 2. 脱机更正文件中的错误。 对于需要解密软件的加密文件，若要删除密码保护，请提供密码并保存该文件，或使用密码破解程序。 修正文件后，请转到下一步。
 
 3. 在审阅集中，选择包含修正的处理错误的文件，然后单击 "**修正**"。
 
-   ![在包含处理错误的文档的标题中单击 "修正"](media/SIERimage6.png)
+   ![在包含处理错误的文档的标题中单击 "修正"](../media/SIERimage6.png)
 
 
 4. 单击 "**浏览**"，转到您的本地计算机上已修正文件的位置，然后选择该文件。
 
-   ![单击 "浏览" 并选择本地计算机上的修正文件](media/SIERimage7.png)
+   ![单击 "浏览" 并选择本地计算机上的修正文件](../media/SIERimage7.png)
 
     选择修正的文件后，会自动将其上载到审阅集。 您可以跟踪文件的处理状态。
 
-    ![将显示修正过程的状态](media/SIERimage8.png)
+    ![将显示修正过程的状态](../media/SIERimage8.png)
 
    处理完成后，您可以查看修正的文档。
 
-    ![您可以在审阅集中以本机格式查看修正的文件](media/SIERimage9.png)
+    ![您可以在审阅集中以本机格式查看修正的文件](../media/SIERimage9.png)
 
 有关修正文档时所发生情况的详细信息，请参阅[当修正文件时会发生什么情况](error-remediation.md#what-happens-when-files-are-remediated)。
 

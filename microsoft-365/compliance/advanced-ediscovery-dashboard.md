@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 127e2c9a04977bf6e902a1ce669fa9e4248e3ef2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662178"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080066"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>审阅集的高级电子数据展示仪表板（预览）
 
@@ -37,15 +37,15 @@ ms.locfileid: "41662178"
   
 4. 在 "**单个结果**" 下拉列表中，单击 "**搜索配置文件视图**"。 
 
-   ![DashbordPivot](media/dashboardpivot.png)
+   ![DashbordPivot](../media/dashboardpivot.png)
 
    将显示 "**搜索配置文件视图**" 页;第一次显示此页时，将显示三个默认小部件。
 
-   ![仪表板](media/dashboardonly.png)
+   ![仪表板](../media/dashboardonly.png)
   
 5. 单击**新的小组件**，然后选择以下项目之一：
 
-   !["新建小组件" 下拉列表](media/NewWidgetDropdownBox.png)
+   !["新建小组件" 下拉列表](../media/NewWidgetDropdownBox.png)
 
    - **从库中选择：** 显示小部件的默认库。 单击一个小组件，然后单击 "**添加**" 将其添加到 "**搜索配置文件视图**" 页面上的小部件。
   
@@ -53,7 +53,7 @@ ms.locfileid: "41662178"
 
 6. 若要创建自定义小组件，请在 "**添加小组件**" 飞出页面上执行以下操作：
 
-   ![创建小组件](media/addwidget.png)
+   ![创建小组件](../media/addwidget.png)
 
     a. 键入小部件的名称，它将显示在小部件标题栏中。 命名小组件是必需的，但它有助于标识小部件数据。
 
@@ -67,17 +67,17 @@ ms.locfileid: "41662178"
 
 1. 单击小组件标题栏中的 " **...** "，然后单击 "**应用条件**"。
 
-   ![仪表板](media/searchprofilehome.png)
+   ![仪表板](../media/searchprofilehome.png)
 
 2. 在弹出页面上，单击 "小部件键" 或 "小部件" 图表上的元素以创建筛选器。
 
-   ![CreateFilter](media/applyconditionfilter.png)
+   ![CreateFilter](../media/applyconditionfilter.png)
 
 3. 对其他小部件（多个小部件）重复步骤1-2。 
 
 4. 完成后，单击 "**另存为查询**" 将您的条件保存为审阅集的新搜索查询。
 
-   ![查询](media/savequery.png)
+   ![查询](../media/savequery.png)
 
 5. 关闭**搜索配置文件视图**以返回到 "搜索结果" 视图。
 

@@ -34,7 +34,7 @@ ms.locfileid: "42074389"
   
 导出报表时，会将其下载到与内容搜索同名的文件夹中，但附加 *_ReportsOnly*。 例如，如果内容搜索名为*ContosoCase0815*，则会将该报告下载到名为*ContosoCase0815_ReportsOnly*的文件夹中。 有关报告中包含的文档的列表，请参阅[报告中包含的内容](#whats-included-in-the-report)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要导出内容搜索报告，您必须在安全 & 合规性中心中分配合规性搜索管理角色。 此角色分配给内置电子数据展示管理器和组织管理角色组。 它没有默认分配至组织管理角色组。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     

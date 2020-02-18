@@ -1,5 +1,7 @@
 ---
 title: 为开发/测试环境中的文件提供安全的团队
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在 Microsoft Teams 中，为开发/测试环境中的文件创建敏感和高度机密团队。
-ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202293"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082247"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>为开发/测试环境中的文件提供安全的团队
 
 本文提供了创建开发/测试环境的分步说明，包括为[保护 Microsoft Teams 中的文件](secure-files-in-teams.md)解决方案提供敏感和高度机密团队。
   
-![在 Microsoft Teams 中，为文件创建敏感和高度机密团队。](../media/sensitive-highly-confidential-teams-dev-test.png)
+![在 Microsoft Teams 中，为文件创建敏感和高度机密团队。](../../media/sensitive-highly-confidential-teams-dev-test.png)
   
 在生产中部署这些类型的团队前，可使用此开发/测试环境试验和微调设置以满足你的特定需求。
   
@@ -86,7 +88,7 @@ ms.locfileid: "39202293"
   
 填写组织名称、位置和公用密码并从 PowerShell 命令提示符或集成脚本环境 (ISE) 中运行以下命令，创建用户帐户并将其添加到相应的组：
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -167,7 +169,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 为市场营销组成员创建敏感级别团队以共同协作处理持续市场营销活动：
 
-1. 使用名称“市场营销活动”[创建新的私人团队](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b)****。
+1. 使用名称“市场营销活动”[创建新的私人团队](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b)****。
 2. 打开“市场营销活动”团队****。
 3.  在团队的工具栏中，单击“文件”****。
 4.  单击省略号，然后单击“在 SharePoint 中打开”****。
@@ -226,13 +228,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 下面是市场营销活动团队的配置结果。
 
-![市场营销活动团队的配置。](../media/sensitive-team-config-dev-test.png)
+![市场营销活动团队的配置。](../../media/sensitive-team-config-dev-test.png)
   
 ### <a name="company-strategy-team-site"></a>公司战略团队网站
 
 若要为高级领导团队成员创建高度机密级别的团队以便协作处理公司战略，请执行以下操作：
 
-1. 使用名称“公司战略”[创建新的私人团队](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b)****。
+1. 使用名称“公司战略”[创建新的私人团队](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b)****。
 2. 打开“公司战略”团队****。
 3.  在团队的工具栏中，单击“文件”****。
 4.  单击省略号，然后单击“在 SharePoint 中打开”****。
@@ -300,7 +302,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 下面是公司战略团队的配置结果。
 
-![公司战略团队的配置。](../media/highlyconfidential-team-config-dev-test.png) 
+![公司战略团队的配置。](../../media/highlyconfidential-team-config-dev-test.png) 
 
 基础公司战略 SharePoint 网站的“文档”部分中的文件被分配有高度机密保留标签，并遵循配置的 DLP 策略。 还可以为文件分配“公司战略”敏感度标签。    
   

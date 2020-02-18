@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95c45034204e04a0b7fe6e0be5a9b3315c821b6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 06dc88e395ea31d40a4163565d7894a2720cb469
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582731"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081773"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>在高级电子数据展示中管理审阅集
 
@@ -41,15 +41,15 @@ ms.locfileid: "41582731"
 
 通过单击 " **+ 添加审阅集**" 可在 "**查看集**" 选项卡上创建审阅集。
 
-![添加审阅集](media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![添加审阅集](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
 在 "**添加审阅集**" 弹出页面上，键入评审集的名称，然后单击 "**保存**"。 新的审阅集将显示在 "**查看设置**" 选项卡上的列表中。
 
-![查看 "设置" 选项卡上列出的新审阅集](media/AeDnewreviewset.png)
+![查看 "设置" 选项卡上列出的新审阅集](../media/AeDnewreviewset.png)
 
 在高级电子数据展示事例中，有三种不同的方法可以将数据添加到评审集。
 
-![添加到评审集的三种方法](media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![添加到评审集的三种方法](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [将搜索结果添加到审阅集](add-data-to-review-set.md)
 

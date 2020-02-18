@@ -1,5 +1,7 @@
 ---
 title: 步骤 4：添加用户帐户
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 直接在云中或通过与本地目录同步来添加用户帐户和组。
-ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801837"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067362"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步骤 4：添加用户帐户
 
-![第 2 阶段 - 标识](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 阶段 - 标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## <a name="create-your-user-accounts-for-cloud-only-identity"></a>为仅限云的标识创建用户帐户
@@ -42,7 +44,7 @@ ms.locfileid: "40801837"
 
 Azure AD Connect 是受支持的 Microsoft 工具，可引导你只将真正需要的身份从单林或多林 AD DS 环境同步到 Azure AD 租户。 下图显示了 Azure AD Connect 同步的基本流程。
 
-![Azure AD Connect 如何将本地目录同步到 Azure AD](./media/identity-add-user-accounts/azure-ad-connect.png)
+![Azure AD Connect 如何将本地目录同步到 Azure AD](../media/identity-add-user-accounts/azure-ad-connect.png)
 
 1. 服务器上运行的 Azure AD Connect 将轮询 AD DS，以了解帐户、组和联系人是否发生了更改。
 2. Azure AD Connect 将更改发送至 Microsoft 365 订阅的 Azure AD 租户。
@@ -74,7 +76,7 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：密码哈希同步](password-hash-sync-m365-ent-test-environment.md)<br> [测试实验室指南：传递身份验证](pass-through-auth-m365-ent-test-environment.md) |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：密码哈希同步](password-hash-sync-m365-ent-test-environment.md)<br> [测试实验室指南：传递身份验证](pass-through-auth-m365-ent-test-environment.md) |
 |||
 
 作为临时检查点，请查看对应于此部分的[退出条件](identity-exit-criteria.md#crit-identity-sync)。
@@ -86,7 +88,7 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 
 在此部分中，将在每个本地 AD DS 域控制器上安装 Azure AD Connect Health 代理，以监控由 Azure AD Connect 提供的标识基础架构和同步服务。 Azure AD Connect Health 门户提供了监控信息，可以从中查看警报、性能监控、使用情况分析和其他信息。
 
-![Azure AD Connect Health 组件](./media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
+![Azure AD Connect Health 组件](../media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
 
 如何使用 Azure AD Connect Health 的关键设计决策是基于使用 Azure AD Connect 的方式：
 
@@ -119,11 +121,11 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：密码写回](password-writeback-m365-ent-test-environment.md) |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：密码写回](password-writeback-m365-ent-test-environment.md) |
 |||
 
 作为临时检查点，可查看这部分的[退出条件](identity-exit-criteria.md#crit-identity-pw-writeback)。
 
 |||
 |:-------|:-----|
-|![第 5 步](./media/stepnumbers/Step5.png)| [使用组进行管理](identity-use-group-management.md) |
+|![第 5 步](../media/stepnumbers/Step5.png)| [使用组进行管理](identity-use-group-management.md) |

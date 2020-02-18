@@ -1,5 +1,7 @@
 ---
 title: 轻型基本配置
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 根据本测试实验室指南，可以创建轻型测试环境来测试 Microsoft 365 企业版。
-ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e90cc01cb37664f3084daf7295e9d59052809af
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801647"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067074"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
@@ -28,14 +30,14 @@ ms.locfileid: "40801647"
 
 本文分步说明了如何使用 Microsoft 365 E5 订阅和运行 Windows 10 企业版的计算机创建简化的环境。 
 
-![轻量级 Microsoft 365 企业版测试环境](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![轻量级 Microsoft 365 企业版测试环境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 使用生成的环境来测试 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
 
-![适用于 Microsoft 云的测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 单击[此处](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
 
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>第 1 阶段：创建 Office 365 E5 订阅
 
@@ -43,13 +45,13 @@ ms.locfileid: "40801647"
 
 要启动 Office 365 E5 试用订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
-1. 我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称： ![折线图](./media/Common-Images/TableLine.png)
+1. 我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称： ![折线图](../media/Common-Images/TableLine.png)
     
 2. 要注册新的 Microsoft 帐户，请转到 [https://outlook.com](https://outlook.com)，然后使用新的电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。
     
-  - 在此记录新帐户的名字和姓氏： ![折线图](./media/Common-Images/TableLine.png)
+  - 在此记录新帐户的名字和姓氏： ![折线图](../media/Common-Images/TableLine.png)
     
-  - 在此记录新的电子邮件帐户地址： ![折线图](./media/Common-Images/TableLine.png)@outlook.com
+  - 在此记录新的电子邮件帐户地址： ![折线图](../media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>注册 Office 365 E5 试用订阅
 
@@ -58,8 +60,8 @@ ms.locfileid: "40801647"
 2. 在“感谢选择 Office 365 E5”**** 页面上，指定第 1 步中的新电子邮件帐户地址。
 3. 在跟踪订阅过程的第 2 步中，键入请求的信息，然后执行验证。
 4. 在第 3 步中，依次键入组织名称和将成为该订阅的全局管理员的帐户名称。 
-5. 在第 4 步中，在此记录登录页面（选择并复制）： ![折线图](./media/Common-Images/TableLine.png) 
-6. 在此记录用户 ID：![Line](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. 在第 4 步中，在此记录登录页面（选择并复制）： ![折线图](../media/Common-Images/TableLine.png) 
+6. 在此记录用户 ID：![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
    将你键入的密码记录在安全的位置。
    此值将被称为“Office 365 全局管理员名称”****。
 8. 选择“转到设置”****。
@@ -119,11 +121,11 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 请记录以下值：
   
-- Office 365 全局管理员名称：  ![折线图](./media/Common-Images/TableLine.png).onmicrosoft.com（在第 1 阶段的第 6 步中）
+- Office 365 全局管理员名称：  ![折线图](../media/Common-Images/TableLine.png).onmicrosoft.com（在第 1 阶段的第 6 步中）
     
     此外，还应将此帐户的密码记录在安全位置。
     
-- 试用订阅组织名称： ![折线图](./media/Common-Images/TableLine.png) （在第 1 阶段的第 4 步中）
+- 试用订阅组织名称： ![折线图](../media/Common-Images/TableLine.png) （在第 1 阶段的第 4 步中）
     
 - 要列出 User 2、User 3、User 4 和 User 5 的帐户，从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：
     
@@ -133,13 +135,13 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
     在此记录帐户名称：
     
-  - 用户 2 帐户名：user2@![折线图](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - 用户 2 帐户名：user2@![折线图](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 用户 3 帐户名：user3@![折线图](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - 用户 3 帐户名：user3@![折线图](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 用户 4 帐户名：user4@![折线图](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - 用户 4 帐户名：user4@![折线图](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 用户 5 帐户名：user5@![折线图](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - 用户 5 帐户名：user5@![折线图](../media/Common-Images/TableLine.png).onmicrosoft.com
     
     此外，在安全位置记录这些帐户的公用密码。
    
@@ -190,7 +192,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
     
 下面是所得到的配置，它添加了 Microsoft 365 E5，还同时包含了 Office 365 和企业安全性 + 管理 (EMS)。
   
-![Microsoft 365 企业版测试环境的第 3 阶段](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Microsoft 365 企业版测试环境的第 3 阶段](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## <a name="phase-4-create-a-windows-10-enterprise-computer"></a>第 4 阶段：创建 Windows 10 企业版计算机
 
@@ -301,7 +303,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 下面是生成的环境。
 
-![Microsoft 365 企业版测试环境的第 5 阶段](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Microsoft 365 企业版测试环境的第 5 阶段](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 这包括符合以下条件的 WIN10 计算机：
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 组织通常受法规、法律或其他规定的制约，要求其将文件保留特定时间段。但是，将文件保留超过所要求的时间可能使组织面临法律风险。因此，您的组织可能已为您的网站创建文件删除策略。例如，一般的商务文件可能需要在其创建 5 年后删除。
-ms.openlocfilehash: 67bbe3339b492e5199799a21e5b3b249a3a98c08
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596069"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079824"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>应用或删除网站的文件删除策略
 
@@ -64,7 +64,7 @@ ms.locfileid: "41596069"
     
 该列表只能查看，供网站集所有者查看所有可用的策略和规则。若要应用策略，请参阅下一节。
   
-![分配给网站集的文档删除策略的视图](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
+![分配给网站集的文档删除策略的视图](../media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
   
 ## <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>应用或删除网站的文件删除策略
 
@@ -83,13 +83,13 @@ ms.locfileid: "41596069"
     
     网站中同时只能有一个策略和一个规则处于活动状态。您的组织可能提供多个策略和规则以供选择，或者仅提供一个策略或规则。
     
-    ![选择策略选项](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![选择策略选项](../media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
   - **退出策略**选择**退出： Do Note Delete** \> **Save**。
     
     作为网站所有者，如果确定策略不适用于网站中的内容，则可以选择退出文档删除策略。 但是，不能选择退出已标记为**强制**的策略。
     
-    ![选择退出选项](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![选择退出选项](../media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## <a name="document-deletion-policies-override-other-policies"></a>文件删除策略覆盖其他策略
 
@@ -113,7 +113,7 @@ ms.locfileid: "41596069"
     
 2. 在 "**网站管理** \> **内容类型策略模板**" 下。
     
-    ![有关正在使用文档删除策略的网站上的警告](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![有关正在使用文档删除策略的网站上的警告](../media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>确定信息管理策略是否被忽略
 
@@ -121,7 +121,7 @@ ms.locfileid: "41596069"
   
 - 对于\>列表或库，请在 "**权限和管理** \> **信息管理策略设置**" 下的 "功能区**库**" 选项卡\> **库设置** \> 。
     
-    ![有关正在使用文档删除策略的网站上的警告](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![有关正在使用文档删除策略的网站上的警告](../media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
 ## <a name="see-also"></a>另请参阅
 

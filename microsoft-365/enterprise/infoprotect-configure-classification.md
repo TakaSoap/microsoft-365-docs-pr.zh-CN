@@ -1,5 +1,7 @@
 ---
 title: 第 2 步：配置环境分类
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置对组织中的数据进行分类的各种方法。
-ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370409"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067249"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>第 2 步：配置环境分类
 
 *此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 在步骤此中，配合法律和合规性团队来定义组织数据的分类方案。
 
@@ -100,7 +102,7 @@ Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：数据分类](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：数据分类](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step2)。
@@ -109,5 +111,5 @@ Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）
 
 |||
 |:-------|:-----|
-|![第 3 步](./media/stepnumbers/Step3.png)|[为 Office 365 配置提高的安全性](infoprotect-configure-increased-security-office-365.md)|
+|![第 3 步](../media/stepnumbers/Step3.png)|[为 Office 365 配置提高的安全性](infoprotect-configure-increased-security-office-365.md)|
 

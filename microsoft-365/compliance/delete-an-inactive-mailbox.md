@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: 当不再需要保留 Office 365 非活动邮箱的内容时，可以通过删除保留永久删除非活动邮箱。 删除保留后，非活动邮箱将标记为删除，并在处理后被永久删除。
-ms.openlocfilehash: 21df7f34d6f07a413b860b1b918eb1dbdf26e946
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 412d7ec60fea758c67719271e1be8dbca98611e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595327"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075803"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>删除 Office 365 中的非活动邮箱
 
@@ -107,11 +107,11 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. 在 EAC 中，转到"合规管理"****"就地电子数据展示和保留"。
     
-3. 选择要删除的就地保留，然后单击 "**编辑** ![编辑图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
+3. 选择要删除的就地保留，然后单击 "**编辑** ![编辑图标](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
     
 4. 在 "**就地电子数据展示&amp;保留**属性" 页上，单击 "**就地保留**"，取消选中 "**将与所选邮箱中的搜索查询匹配的内容置于保留**状态" 框中，然后单击 "**保存**"。
     
-5. 在 "**就地电子数据展示&amp;保留**" 页上，再次选择就地保留，然后单击 "**删除**![删除图标](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)"。
+5. 在 "**就地电子数据展示&amp;保留**" 页上，再次选择就地保留，然后单击 "**删除**![删除图标](../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)"。
     
 6. 在警告框中，单击“是”**** 删除该就地保留。 
     
@@ -145,11 +145,11 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. 在 EAC 中，转到"合规管理"****"就地电子数据展示和保留"。
     
-3. 选择非活动邮箱上放置的就地保留，然后单击 "**编辑** ![编辑图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
+3. 选择非活动邮箱上放置的就地保留，然后单击 "**编辑** ![编辑图标](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
     
 4. 在 "**就地电子数据展示&amp;保留**属性" 页上，单击 "**源**"。
     
-5. 在源邮箱列表中，单击要删除的非活动邮箱的名称，然后单击 "**删除**![删除图标](media/adf01106-cc79-475c-8673-065371c1897b.gif)"。
+5. 在源邮箱列表中，单击要删除的非活动邮箱的名称，然后单击 "**删除**![删除图标](../media/adf01106-cc79-475c-8673-065371c1897b.gif)"。
     
 6. 单击“保存”**** 以保存所做的更改。 这将显示一条消息，提示已成功完成该操作。 
     

@@ -337,7 +337,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 如果值**为 True** ，则表示对用户绕过邮箱审核日志记录。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 虽然默认情况下已对所有组织启用邮箱审核日志记录功能，但只有拥有 E5 许可证的用户才会在[安全 & 合规性中心中](search-the-audit-log-in-security-and-compliance.md)或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)在审核日志搜索中返回邮箱审核日志事件（**默认情况下**）。
 

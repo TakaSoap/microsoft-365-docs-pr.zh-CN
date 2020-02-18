@@ -35,7 +35,7 @@ ms.locfileid: "42079943"
 
 - 在我的组织中有多少个活动和已关闭的事例？
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要访问高级电子数据展示报告，您必须是电子数据展示管理员角色组的成员。 作为此角色组的成员，将为你提供查看、筛选和导出报告中的数据所需的权限。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 

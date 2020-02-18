@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2cf0bafa45e96960b8d957d1b8905124223173ce
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9dc6f92ffdc5a676bd6f8895fe884b5493724963
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595539"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077059"
 ---
 # <a name="create-tag-groups"></a>创建标记组
 
@@ -31,17 +31,17 @@ ms.locfileid: "41595539"
 
 1.  在审阅集中，单击 "**管理审阅集**"。
 
-    ![单击 "管理审阅集"](media/ED-managews.png)
+    ![单击 "管理审阅集"](../media/ED-managews.png)
 
 2.  在 "**标签**" 磁贴中，单击 "**管理标记**"。
 
-    ![单击 "标签" 磁贴中的 "管理标签"](media/ED-managetags.png)
+    ![单击 "标签" 磁贴中的 "管理标签"](../media/ED-managetags.png)
 
 在标记管理中，可以创建标记以满足您的情况的要求。 您可以从创建标记组开始。
 
 1.  单击 "**添加节**"。
 
-    ![添加标记组](media/ED-addtagsection.png)
+    ![添加标记组](../media/ED-addtagsection.png)
 
     预览屏幕将在您保存时进行更新，以便您可以预览标签面板，而无需关闭标记管理屏幕并返回到工作集。
 
@@ -49,7 +49,7 @@ ms.locfileid: "41595539"
 
 3. 若要在该组中创建一个标记，请单击新标记组上的省略号以在该新节中创建标记。
     
-    ![在标记组中创建标记](media/ED-createtag.png)
+    ![在标记组中创建标记](../media/ED-createtag.png)
 
    - **选项标记**将强制用户从一组标记中选择一个标记。
    
@@ -59,5 +59,5 @@ ms.locfileid: "41595539"
 
 若要嵌套标记，请单击标记旁边的省略号，然后选择要添加的新标记。
 
-![嵌套标记](media/ED-tagnesting.png)
+![嵌套标记](../media/ED-tagnesting.png)
 

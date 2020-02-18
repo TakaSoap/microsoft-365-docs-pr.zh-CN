@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
-ms.openlocfilehash: b1bd09777bd934cccf7f1247ed72201bcc4a081f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588192"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074023"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -267,11 +267,11 @@ ms.locfileid: "41588192"
     
     若要从搜索的所有内容位置导出部分索引的项目，请将搜索配置为返回所有项目（通过删除搜索查询中的任何关键字），然后在导出搜索结果时仅导出部分索引项目。
     
-    ![使用第三个导出选项仅导出未编制索引的项目](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![使用第三个导出选项仅导出未编制索引的项目](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - 从 SharePoint 或 OneDrive for Business 网站导出搜索结果时，导出未编制索引的项目的功能还取决于您选择的导出选项以及所搜索的网站是否包含与搜索条件匹配的索引项。 例如，如果您搜索特定的 SharePoint 或 OneDrive for Business 网站，并且未找到任何搜索结果，则如果选择 "第二个导出" 选项以导出已编制索引和未编制索引的项目，则不会导出这些网站中未索引的项目。 如果网站中的某个索引项与搜索条件匹配，则在导出索引项目和未编制索引的项目时，将导出该网站中的所有未编制索引的项目。 下图介绍了基于网站是否包含与搜索条件匹配的索引项的导出选项。
     
-    ![根据网站是否包含与搜索条件匹配的索引项，选择 "导出" 选项](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![根据网站是否包含与搜索条件匹配的索引项，选择 "导出" 选项](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
     a. 仅导出与搜索条件匹配的索引项。 不会导出任何部分索引的项目。

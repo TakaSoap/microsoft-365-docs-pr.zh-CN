@@ -1,6 +1,8 @@
 ---
 title: 客户和云合作伙伴在企业业务连续性方面的责任
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 在服务事件期间采取了哪些措施来让你能够更好地准备业务连续性计划。
-ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831863"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067661"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>客户和云合作伙伴在企业业务连续性方面的责任
 
@@ -53,7 +55,7 @@ Microsoft 维持了多个渠道可供客户用来获取服务状态通知。
  
 你的组织与 Microsoft 之间建立了合作关系，让你能够提供对 Microsoft 365 联机服务的访问权限。 下图总结了服务事件和定期操作期间 Microsoft 与客户之间责任的平衡。
 
-![客户与 Microsoft 责任间的平衡](media/ebcm/responsibilities.png)
+![客户与 Microsoft 责任间的平衡](../media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>你的环境 - 服务连续性
 考虑连续性计划时，请注意可能影响你的组织的事件以及其整体通知能力。 概括来讲，有三个因素可能会影响你的业务。
@@ -69,6 +71,6 @@ Microsoft 发布了[网络连接原则](https://docs.microsoft.com/office365/ent
 很多协作解决方案都依赖于系统，例如公司广域网 (WAN)。 当这些系统不可用时，你的组织会如何应对？
 下图展示了可能影响多个方面的问题。 随附的表格提供了要考虑的示例
 
-![维恩图](media/ebcm/venn-diagram.png)
+![维恩图](../media/ebcm/venn-diagram.png)
 
 你的连续性计划应将上述每个方面都考虑在内。 例如，如果你需要用户访问公司网络，但当地下暴风雪了，那么这些用户如果能够访问关键资源呢？ 如果大雪让用户没法抵达办公室，而服务工程师必须连接到公司网络，有没有策略批准他们在家中持有公司笔记本电脑呢？

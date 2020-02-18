@@ -33,7 +33,7 @@ ms.locfileid: "42081592"
 
 有关还原和恢复非活动邮箱之间的差异的更多详细信息，请参阅本文中的**详细信息**一节。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须使用 Exchange Online PowerShell 来还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
 

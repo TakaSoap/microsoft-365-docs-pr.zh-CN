@@ -1,5 +1,7 @@
 ---
 title: '步骤 3：为 Microsoft 365 配置提升的安全性:'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 为 Microsoft 365 了解和配置提升的安全性。
-ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eabf0d60f3cfb61b7fffcc688a080ba99f83293e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801677"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067239"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>步骤 3：为 Microsoft 365 配置提升的安全性:
 
 *此步骤是必需的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第 6 阶段：信息保护](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 阶段：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 若要确保 Microsoft 365 订阅及其数据启用，并保持安全免遭恶意威胁的侵害，请配置以下各项：
 
@@ -47,7 +49,7 @@ Office 365 ATP 仅在 Microsoft 365 E5 中提供。
 
 |||
 |:-------|:-----|
-|![Microsoft 云测试实验室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：配置更高的 Microsoft 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：配置更高的 Microsoft 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 作为临时检查点，请查看对应于此步骤的[退出条件](infoprotect-exit-criteria.md#crit-infoprotect-step3)。
@@ -57,6 +59,6 @@ Office 365 ATP 仅在 Microsoft 365 E5 中提供。
 
 |||
 |:-------|:-----|
-|![第 4 步](./media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
+|![第 4 步](../media/stepnumbers/Step4.png)|[配置 Windows 信息保护](infoprotect-deploy-windows-information-protection.md)|
 
 

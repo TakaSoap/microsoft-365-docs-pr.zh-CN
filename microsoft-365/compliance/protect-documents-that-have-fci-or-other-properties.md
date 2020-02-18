@@ -96,7 +96,7 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
   
 有关这些 cmdlet 的详细信息，请参阅[Office 365 &amp;安全合规中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)。
   
-1. [使用远程 PowerShell 连接到 Office 365 安全 &amp; 合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 使用`New-DlpCompliancePolicy`创建策略。
 

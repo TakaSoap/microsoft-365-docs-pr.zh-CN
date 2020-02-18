@@ -1,5 +1,7 @@
 ---
 title: 在独立 EOP 中阻止垃圾邮件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
@@ -16,12 +18,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 用于帮助阻止垃圾邮件误报的独立 EOP 管理员文档
-ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 6261c183d39b84435110616491f5bd0b2f3f891b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971900"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086575"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>为 Office 365 反垃圾邮件筛选器自定义这些设置
 
@@ -41,7 +43,7 @@ ms.locfileid: "39971900"
 
 垃圾邮件主要是大量邮件（例如，新闻稿或促销邮件）吗？可以在[使用邮件流规则配置批量电子邮件筛选](use-transport-rules-to-configure-bulk-email-filtering.md)的情况下自定义 Office 365 垃圾邮件筛选器，也可以启用垃圾邮件筛选器[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)中的“**大量邮件**”设置。在 Exchange 管理中心内，首先依次单击“**保护**”\>“**内容筛选器**”，再双击要调整的筛选器策略。单击“**垃圾邮件和大量邮件操作**”以调整设置，如下所示。
 
-![在 Exchange Online 中设置大量邮件筛选器](../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
+![在 Exchange Online 中设置大量邮件筛选器](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>使用垃圾邮件筛选器阻止列表阻止垃圾邮件
 
@@ -51,7 +53,7 @@ ms.locfileid: "39971900"
 
 如果让用户在 [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) 或 [Outlook 网页版](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)中将垃圾邮件发件人地址添加到阻止的发件人名单中，将有助于 Office 365 反垃圾邮件筛选器避免漏报并阻止垃圾邮件。在 Outlook 网页版中，首先依次单击“**设置**”\>“**选项**”\>“**阻止或允许**”，再将地址添加到“**阻止的发件人**”名单中，如下所示。
 
-![在 Outlook 网页版中阻止发件人](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![在 Outlook 网页版中阻止发件人](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
 > [!NOTE]
 > 若要详细了解允许列表，请参阅 [Exchange Online 中的允许列表和阻止的发件人名单](safe-sender-and-blocked-sender-lists-faq.md)。
@@ -87,4 +89,4 @@ EOP 旨在使用用户的允许列表和阻止的发件人名单，前提是此�
 
 [Office 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)
 
-[使用安全列表或其他技术避免出现标记为“垃圾邮件”的误报电子邮件](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[使用安全列表或其他技术避免出现标记为“垃圾邮件”的误报电子邮件](prevent-email-from-being-marked-as-spam.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: '了解如何运行报告，然后在 Office 365 高级电子数据展示中下载其 .csv 文件。  '
-ms.openlocfilehash: 9d459065878eceaf9f0fc8b6ebacb749ff4c4830
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: badc657e100961ba89de6a49349b7016ae790b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597589"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069981"
 ---
 # <a name="run-reports-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中运行报告
 
@@ -36,7 +36,7 @@ ms.locfileid: "41597589"
   
 1. 在 "**报表**" 选项卡中，从 "**报告名称**" 列表中选择一个选项。 从三个**报告名称**选项中选择：**相关性决定**、**主题列表**或**标记文件**。
     
-    ![电子数据展示分析报告](media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
+    ![电子数据展示分析报告](../media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
   
 2. 可以设置可用参数以及排序和筛选选项，具体取决于所选的报表。 
     

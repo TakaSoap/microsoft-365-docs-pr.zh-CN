@@ -134,7 +134,7 @@ ms.locfileid: "42069151"
 > [!NOTE]
 > 在解锁后，某些选项可能仍处于禁用状态，因为在此过程中不支持使用这些选项。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 [了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   
