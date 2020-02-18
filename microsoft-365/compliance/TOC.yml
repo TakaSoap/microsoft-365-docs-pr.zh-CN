@@ -75,8 +75,11 @@
   href: protect-information.md
   items:
     - name: 敏感度标签
-      href: sensitivity-labels.md
       items:
+        - name: 了解敏感度标签
+          href: sensitivity-labels.md
+        - name: 开始使用敏感度标签
+          href: get-started-with-sensitivity-labels.md
         - name: 创建和发布敏感度标签
           href: create-sensitivity-labels.md
         - name: 通过敏感度标签应用加密，从而限制对内容的访问
@@ -89,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: 启用 SharePoint 和 OneDrive 中 Office 文件的灵敏度标签
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: 在 Office 应用中的敏感度标签
+        - name: 在 Office 应用中使用敏感度标签
           href: sensitivity-labels-office-apps.md
     - name: 数据丢失防护 (DLP)
       href: data-loss-prevention-policies.md
