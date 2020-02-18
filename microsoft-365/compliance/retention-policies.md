@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070126"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093433"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -201,8 +201,9 @@ ms.locfileid: "42070126"
     
 - Exchange 公用文件夹
     
+
 ![用于选择所有位置的选项](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
-  
+
 组织范围保留策略的其他重要功能包括：
   
 - 策略可包含任意多个邮箱或网站。
