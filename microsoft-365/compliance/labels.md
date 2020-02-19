@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072469"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093451"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -44,9 +44,11 @@ ms.locfileid: "42072469"
     
 - **将保留标签自动应用于**符合特定条件的内容，如内容包含： 
     
-  - 特定类型敏感信息。
+    - 特定类型敏感信息。
     
-  - 与所创建的查询匹配的特定关键字。
+    - 与所创建的查询匹配的特定关键字。
+    
+    - 可训练分类器的模式匹配。
     
   能否将保留标签自动应用于内容非常重要，这是因为：
     
@@ -57,13 +59,13 @@ ms.locfileid: "42072469"
    - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
 
   > [!NOTE]
-  > 自动应用标签的功能需要为有权在为自动标记选定的网站或邮箱中编辑已自动标记的内容的每个用户提供一个 Office 365 企业版 E5 许可证。只有内容或标签电子邮件回复只读访问权限的用户不需要许可证。
+  > 对于有权编辑已在站点中自动标记的内容或其邮箱已被选中进行自动标记的每位用户，他们需要至少具有 Office 365 企业版 E5 许可证才可自动应用标签。 你对内容具有只读权限或仅答复带标记的电子邮件的用户不需要此许可证。
       
 - **在 Office 365 中实现记录管理**，包括电子邮件和文档。可使用保留标签将内容分类为记录。如果这样做，既无法更改或删除保留标签，也无法编辑或删除内容。 
 
 - **将默认保留标签应用于 SharePoint 中的文档库、文件夹或文档集**，以让到达该位置的所有文档都继承默认保留标签。  
     
-在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，创建保留标签。 在左侧导航栏中，选择“分类”**** > “保留标签”**** > “创建标签”****。
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，创建保留标签。
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>如何结合使用保留标签和保留标签策略
 
@@ -258,14 +260,17 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 可选择将保留标签自动应用于包含以下各项的内容：
   
-- 特定类型敏感信息。
+- [特定类型敏感信息](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
     
-- 与所创建的查询匹配的特定关键字。
+- [与你创建的查询匹配的特定关键字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![自动应用标签的“选择条件”页](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
+需要具备 Office 365 企业版 E5 订阅，才可自动应用已配置为前两个选项的保留标签。 如果你选择可训练分类器的选项，则此功能还有[额外的许可要求](classifier-getting-started-with.md#licensing-requirements)。
 
-自动应用保留标签需要 Office 365 企业版 E5 订阅，最长可能需要 7 天，才能将自动应用保留标签应用于符合条件的所有内容（如上所述）。
+自动应用保留标签最多可能需要 7 天才会应用到与你配置的条件相匹配的所有内容。
   
 > [!TIP]
 > 有关使用 SharePont 中的托管属性来自动应用保留标签并实施事件驱动保留的详细方案，请参阅[使用保留标签管理 SharePoint 文档的生命周期](auto-apply-retention-labels-scenario.md)。
@@ -309,6 +314,17 @@ Exchange 公用文件夹和 Skype 不支持标签。
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
 ![查询编辑器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>使用可训练分类器向内容自动应用标签
+
+选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含**冒犯性语言**、**简历****源代码**、**骚扰**、**侮辱**和**威胁**。
+
+要通过此选项自动应用标签，SharePoint Online 网站和邮箱必须至少有 10 MB 的数据。
+
+有关可训练分类器的详细信息，请参阅[可训练分类器（预览版）入门](classifier-getting-started-with.md)。
+
+有关示例配置，请参阅[如何做好准备并使用已就绪的分类器](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier)。
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容
 

@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: dc781d9f800b3db938b253775b31df118c21fd03
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.date: 01/28/2020
+ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784699"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106845"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -33,15 +34,27 @@ ms.locfileid: "41784699"
 > [!TIP]
 > 尚不具有 Office 365 ATP？ [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
+## <a name="januaryfebruary-2020"></a>1月/2 月2020
+
+- 对[威胁浏览器](threat-explorer.md)的增强功能，使安全操作团队能够在[调查电子邮件](investigate-malicious-email-that-was-delivered.md)时搜索和筛选多个字段：
+    - 送达位置和特殊操作
+    - 方向性（入站、出站或组织内部）
+    - 替代（用户阻止或允许）
+    - URL 威胁（恶意软件、网络钓鱼诈骗、垃圾邮件或无）
+    - 高级不筛选（这些是高级筛选选项，其中包括不包含、不包含等）
+    - 粒度时间筛选器（日、小时、半小时） 
+
+- **事件**小组件现在是**操作中心**小组件。 （若要查看安全小部件，请在 "Office 365 安全 & 合规性中心" 中，转到 "**威胁管理** > **评审**"。）
+
 ## <a name="december-2019"></a>2019 年 12 月
 
 - [导出 URL 单击数据以进行脱机分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)（OFFICE 365 ATP 计划1或计划2）
 
-- [Office 365 ATP 中的市场活动视图 ATP （**预览**）](campaigns.md)
+- [使用 Office 365 ATP 中的市场活动视图（**预览**）](campaigns.md)
 
 ## <a name="november-2019"></a>2019 年 11 月
 
-- [查看新的已损坏用户检测和响应功能（**预览**）](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) （Office 365 ATP 计划2）
+- [查看新的已损坏用户检测和响应功能](address-compromised-users-quickly.md)（**预览**）（Office 365 ATP 计划2）
 
 ## <a name="september-2019"></a>2019 年 9 月
 
