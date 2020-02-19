@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: c3537657eb0bd3bf5b31f1b90c513c3e49eef000
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2140b2b529ccec9a4d081a2e7b6ea1fdb7fb900f
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068677"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106805"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -134,7 +134,7 @@ ms.locfileid: "42068677"
 |警报策略|警报 > 通知策略 <br/> https://protection.office.com/alertpolicies |目前，仅在 Office 365 安全性 & 合规性中心中管理警报策略。 |[安全与合规中心中的警报策略](alert-policies.md) |
 |警报|警报 > 查看警报 <br/> https://protection.office.com/viewalerts |警报 <br/> https://compliance.microsoft.com/compliancealerts |[查看警报](alert-policies.md#viewing-alerts)|
 |存档|信息治理 > 存档 <br/> https://protection.office.com/archiving |信息治理 > 存档 "选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[启用存档邮箱](enable-archive-mailboxes.md)|
-|审核日志搜索|搜索 > 审核日志搜索 <br/> https://protection.office.com/unifiedauditlog |跟踪 <br/> https://compliance.microsoft.com/auditlogsearch| [在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)|
+|审核日志搜索|搜索 > 审核日志搜索 <br/> https://protection.office.com/unifiedauditlog |跟踪 <br/> https://compliance.microsoft.com/auditlogsearch | [在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)|
 |内容搜索|搜索 > 内容搜索 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | 内容搜索 <br/> https://compliance.microsoft.com/contentsearch |[在 Office 365 中搜索内容](search-for-content.md) |
 |数据连接器|信息治理 > 存档第三方数据 <br/> https://protection.office.com/nativeconnector | 数据连接器 <br/> https://compliance.microsoft.com/connectorlanding |[存档第三方数据](archiving-third-party-data.md)|
 |数据丢失防护|数据丢失防护 <br/> https://protection.office.com/datalossprevention |数据丢失防护 <br/> https://compliance.microsoft.com/datalossprevention |[数据丢失防护概述](data-loss-prevention-policies.md)|
@@ -146,7 +146,7 @@ ms.locfileid: "42068677"
 |标签活动资源管理器|信息治理 > 标签活动资源管理器 <br/> https://protection.office.com/labelexplorer |"数据分类 > 活动资源管理器" 选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[查看关于标记的内容的活动（预览版）](data-classification-activity-explorer.md)|
 |保留标签和标签策略 |分类 > 保留标签 > 标签和标签策略选项卡 <br/> https://protection.office.com/retentionlabels |信息治理 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留标签概述](labels.md)|
 |保留策略|信息治理 > 保留 <br/> https://protection.office.com/retention |信息治理 > 保留选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[保留策略概述](retention-policies.md)|
-|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)|
+|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[使用敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)|
 |敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度标签](sensitivity-labels.md) |
 |服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全 & 合规中心中的服务保证](service-assurance.md)|
 |监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |沟通合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通信合规性（预览）](communication-compliance.md) |

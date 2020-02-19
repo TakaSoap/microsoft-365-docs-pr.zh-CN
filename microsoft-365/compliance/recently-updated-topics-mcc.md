@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 我们将不断创建新文章，更新现有文章，并根据你的反馈进行更改。 了解本月新增和更新的内容。
-ms.openlocfilehash: 36edcbc7106710ff62bc1a176fb76a17fd7076a6
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: ad9b6865b0afe5b49c2b02d3ee9adba4d62ef9eb
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101242"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106815"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -108,7 +108,7 @@ ms.locfileid: "42101242"
 
 ### <a name="mrm-in-exchange-online"></a>Exchange Online 中的 MRM
 
-[将邮箱置于保留挂起状态](https://docs.microsoft.com/en-us/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled)（已更新）<br>新增了比较 ElcProcessingDisabled 和 RetentionHoldEnabled 邮箱属性以及它们如何影响托管文件夹助理处理的新节。
+[将邮箱置于保留挂起状态](https://docs.microsoft.com/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled)（已更新）<br>新增了比较 ElcProcessingDisabled 和 RetentionHoldEnabled 邮箱属性以及它们如何影响托管文件夹助理处理的新节。
 
 ### <a name="records-management"></a>记录管理
 
@@ -310,7 +310,7 @@ ms.locfileid: "42101242"
 
 [在 Microsoft 365 中管理数据外泄事件](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data)（已更新）<br>添加了有关使用新的 "删除其原始位置的项目" 功能的详细信息，以删除溢出的数据。
 
-### <a name="permissions"></a>权限
+### <a name="permissions"></a>Permissions
 
 [Microsoft 365 合规性中心和 microsoft 365 安全中心中的权限](../security/office-365-security/permissions-microsoft-365-compliance-security.md)（新）<br>已将新的 Azure Active Directory 角色组发布到公共预览版。
 
