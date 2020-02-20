@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: a9e49f5b9b518711f72c9b9a29e690c55acf3861
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5289f4c9b7ea8c723dab8bf4bf97b83fef5b34c
+ms.sourcegitcommit: 290d95f9ba118336cb136f34313de265b97e869e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080301"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155621"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
 > [!NOTE]
 > 本文中的信息仅适用于 Microsoft Power Platform （Power BI、Power Apps 和 Power 自动化）订阅。
 
-在美国、澳大利亚、加拿大和日本的 Power Platform 中，现在可以使用自助购买。
+在多个国家/地区的电源平台现可使用自助服务购买。
 
 ## <a name="general"></a>常规
 
@@ -146,3 +146,9 @@ IT 部门和合作伙伴不希望为通过自助购买购买的产品提供支�
 ### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>在自助服务购买中，Microsoft 合作伙伴的角色是什么？
 
 拥有委派管理权限的合作伙伴可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中查看自助购买，就像管理员一样。合作伙伴可以帮助您支持要通过自助购买来集中购买产品的组织。 此外，合作伙伴可以提供用于扩展自助购买功能的解决方案。
+
+## <a name="country-availability"></a>国家/地区可用性
+
+### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>我可以在哪些国家/地区购买自助服务？
+
+以下国家/地区提供了自助服务购买：澳大利亚、加拿大、日本和美国。

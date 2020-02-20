@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
-ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
+ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42093433"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106870"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -189,7 +189,7 @@ ms.locfileid: "42093433"
   
 ### <a name="org-wide-policy"></a>组织范围策略
 
-保留策略的最强大功能之一是，它默认应用于 Office 365 中的所有位置，包括：
+保留策略的最强大功能之一是，它可以应用于 Office 365 中的所有位置，包括：
   
 - Exchange 电子邮件
     
@@ -202,7 +202,7 @@ ms.locfileid: "42093433"
 - Exchange 公用文件夹
     
 
-![用于选择所有位置的选项](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![用于选择所有位置的选项](../media/retention-policies-all-locations.png)
 
 组织范围保留策略的其他重要功能包括：
   
@@ -215,9 +215,7 @@ ms.locfileid: "42093433"
 选择位置时，可以轻松包含或排除整体位置，例如 Exchange 电子邮件或 OneDrive 帐户。 若要执行此操作，将该位置的“**状态**”切换为开或者关。 
   
 与组织范围策略一样，如果策略应用于任意组合的位置整体，策略可包含任意多个邮箱或网站。例如，如果策略包含所有 Exchange 电子邮件和所有 SharePoint 网站，那么全部网站和邮箱都会包含在内，无论有多少个。对于 Exchange，在保留策略应用后新建的任何邮箱都会自动继承策略。
- 
-![“选择位置”页](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
-  
+
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>包含或排除特定位置、用户或组的策略
 
 还可将保留策略应用于特定用户、Office 365 组或网站。为此，请先将相应位置的“**状态**”切换为“开”，再使用链接来添加或排除特定用户、Office 365 组或网站。 
@@ -232,9 +230,11 @@ ms.locfileid: "42093433"
   
 ### <a name="skype-locations"></a>Skype 位置
 
-与 Exchange 电子邮件不同，将 Skype 位置的状态切换为“开”并不能添加所有用户，而是要先启用相应位置，再手动选择要保留哪些用户的对话。
+与 Exchange 电子邮件不同，将 Skype 位置的状态切换为“开”并不能添加所有用户，但启用相应位置后，就可以手动选择要保留哪些用户的对话：
+
+![选择用于保留策略的 Skype 位置](../media/skype-location-retention-policies.png)
   
-选择 Skype for Business 用户时，选择列标题中的“**名称**”框可快速包含所有用户。 但是，请务必了解每个用户在策略中都被算作一个特定的包含内容。 因此，当包括的用户超过 1,000 位时，会应用上一部分中所述的限制。 这里所说的选择所有 Skype 用户不同于组织范围的策略在默认情况下包含所有 Skype 用户。 
+选择“选择用户”时，选择列标题中的“名称”**** 框可快速包含所有用户****。 但是，请务必了解每个用户在策略中都被算作一个特定的包含内容。 因此，当包括的用户超过 1,000 位时，会应用上一部分中所述的限制。 这里所说的选择所有 Skype 用户不同于组织范围的策略在默认情况下包含所有 Skype 用户。 
   
 ![用于选择 Skype 用户的页](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
