@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085723"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170592"
 ---
 # <a name="battery-insights"></a>电池洞察力
 此视图提供 Microsoft 托管桌面设备的电源、电池和应用使用指标。 出于这些目的，如果应用程序正在运行且处于焦点，则会被视为 "正在使用中"。

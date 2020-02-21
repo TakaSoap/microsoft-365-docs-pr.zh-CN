@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: b135a9dc2c5ad8fbf190b38f9fe10161b95a7531
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598529"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170492"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 
@@ -39,15 +39,15 @@ S/MIME （安全/多用途 Internet 邮件扩展）是发送经过数字签名�
 
 为每个终结点设置 S/MIME 所遵循的步骤略有不同。 通常，您需要执行以下步骤：
 
-- 安装基于 WIndows 的证书颁发机构，并设置公钥基础结构以颁发 S/MIME 证书。 此外，还支持第三方证书提供商颁发的证书。 有关详细信息，请参阅 [Active Directory 证书服务概述](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
+1. 安装基于 WIndows 的证书颁发机构，并设置公钥基础结构以颁发 S/MIME 证书。 此外，还支持第三方证书提供商颁发的证书。 有关详细信息，请参阅 [Active Directory 证书服务概述](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
 
-- 在**UserSMIMECertificate**和/或**UserCertificate**属性中的本地 AD DS 帐户中发布用户证书。
+2. 在**UserSMIMECertificate**和/或**UserCertificate**属性中的本地 AD DS 帐户中发布用户证书。
 
-- 对于 Exchange Online 组织，使用相应版本的 DirSync 将用户证书从 AD DS 同步到 Azure Active Directory。 然后，这些证书将从 Azure Active Directory 同步到 Exchange Online 目录，并将在将邮件加密给收件人时使用。
+3. 对于 Exchange Online 组织，使用相应版本的 Azure AD Connect 将用户证书从 AD DS 同步到 Azure Active Directory。 然后，这些证书将从 Azure Active Directory 同步到 Exchange Online 目录，并将在将邮件加密给收件人时使用。
 
-- 设置虚拟证书集合以验证 S/MIME。此信息供 Web 上的 Outlook 用于验证电子邮件的签名并确保它是由可信证书签名的。
+4. 设置虚拟证书集合以验证 S/MIME。此信息供 Web 上的 Outlook 用于验证电子邮件的签名并确保它是由可信证书签名的。
 
-- 将 Outlook 或 EAS 终结点设置为使用 S/MIME。
+5. 将 Outlook 或 EAS 终结点设置为使用 S/MIME。
 
 > [!NOTE]
 > 无法在 Mac、iOS、Android 或其他非 Windows 设备上的 web 上的 Outlook 中安装 S/MIME 控件。 有关详细信息，请参阅[web 上的在 Outlook 中使用 S/MIME 加密邮件](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)。

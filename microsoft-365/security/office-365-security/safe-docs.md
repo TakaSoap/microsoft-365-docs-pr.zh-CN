@@ -15,18 +15,24 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 ATP 中的安全文档。
-ms.openlocfilehash: c76ae2c776c31cf798c21d7330bce488ad1e7cc6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3980746eb2f48e77c22f5139827bead5640dad61
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082362"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170472"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 中的安全文档高级威胁防护
 
 安全文档是 Office 365 高级威胁防护（ATP）中的一项功能，它使用[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)来扫描在[受保护视图](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中打开的文档和文件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+
+- 此功能仅适用于使用 Microsoft 365 E5 或 Microsoft 365 E5 安全许可证的用户。
+
+- 安全文档当前可供公共预览使用，在 "每月频道（定向）" 上的[Office 预览体验计划](https://insider.office.com/en-us/join)中，用户可使用 office 版本2002（12527.20092）或更高版本的用户。 此功能在默认情况下处于禁用状态，将需要由安全管理员启用。
+
+- 仅支持美国区域的兼容文件处理（所有文件都将传送到美国区域进行扫描）。 对英国/欧盟地区的支持计划在将来的更新中。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 

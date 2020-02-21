@@ -67,9 +67,11 @@
               items:
                 - name: 空气概述
                   href: mtp/mtp-autoir.md
-                - name: 转到操作中心
+                - name: 查看修正操作
+                  href: mtp/mtp-remediation-actions.md
+                - name: 访问操作中心
                   href: mtp/mtp-action-center.md
-                - name: 查看空中成果
+                - name: 查看调查结果
                   href: mtp/mtp-autoir-results.md
                 - name: 批准或拒绝挂起的操作
                   href: mtp/mtp-autoir-actions.md
@@ -364,6 +366,20 @@
               href: ./office-365-security/campaigns.md
             - name: 了解使用威胁分析的最新攻击
               href: ./mtp/latest-attack-campaigns.md
+            - name: 自动调查和响应
+              items:
+                - name: 空中概述
+                  href: ./office-365-security/office-365-air.md
+                - name: 查看调查的详细信息和结果
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: 查看和批准修正操作
+                  href: ./office-365-security/air-remediation-actions.md
+                - name: 将空中与自定义或第三方报告解决方案集成
+                  href: ./office-365-security/air-custom-reporting.md
+            - name: 快速检测和解决已泄露的用户帐户
+              href: ./office-365-security/address-compromised-users-quickly.md
+            - name: 调查和修正恶意电子邮件
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: 查看和阅读 ATP 报告
               href: ./office-365-security/view-reports-for-atp.md
             - name: ATP 安全链接警告页是指什么
@@ -372,12 +388,6 @@
               href: ./office-365-security/threat-trackers.md
             - name: 在 Office 365 中使用攻击模拟器
               href: ./office-365-security/attack-simulator.md
-            - name: 通过威胁调查和响应保障用户安全
-              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
-            - name: 在 Office 365 中自动调查和响应威胁
-              href: ./office-365-security/office-365-air.md
-            - name: 查找和调查投递的恶意电子邮件
-              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Office 365 ATP 中的安全文档
               href: ./office-365-security/safe-docs.md
             - name: 威胁资源管理器（和实时检测）
@@ -393,6 +403,8 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: ATP 的工作原理
               items:
+                - name: 自动化调查和响应的工作方式
+                  href: ./office-365-security/automated-investigation-response-office.md
                 - name: ATP 安全链接的工作原理
                   href: ./office-365-security/how-atp-safe-links-works.md
                 - name: ATP 安全附件的工作原理
@@ -403,8 +415,6 @@
                   href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: 威胁调查和响应的工作原理
                   href: ./office-365-security/office-365-ti.md
-                - name: 自动调查和响应的工作原理
-                  href: ./office-365-security/automated-investigation-response-office.md
         - name: 安全事件管理
           items:
             - name: Office 365 安全事件响应

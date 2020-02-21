@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083773"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175705"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>转到操作中心以查看修正操作
 
 **适用于：**
 - Microsoft 威胁防护
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="a-single-pane-of-glass-experience"></a>“单窗格”体验
 
@@ -47,11 +45,6 @@ ms.locfileid: "42083773"
 
 ## <a name="remediation-actions"></a>修正操作
 
-下表列出了操作中心当前支持的修正操作： 
-
-|终结点修正操作  |电子邮件修正操作  |
-|---------|---------|
-|隔离<br/>删除注册表项<br/>终止进程 <br/>停止服务 <br/>删除注册表项 <br/>禁用驱动程序 <br/>删除计划任务      |软删除电子邮件或群集<br/>阻止 URL（单击时）<br/>关闭外部邮件转发          |
 
 ## <a name="go-to-the-action-center"></a>转到操作中心
 

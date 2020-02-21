@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 062dd86de49eb3dfe47566aa8d7269780cf9995c
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083745"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175715"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>查看自动调查的详细信息和结果
 
 **适用于：**
 - Microsoft 威胁防护
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 在 Microsoft 威胁防护中进行自动调查时，有关该调查的详细信息在自动调查过程的过程中和之后都是可用的。 如果您具有[所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)，则可以在调查详细信息视图中查看这些详细信息。 调查详细信息视图为您提供了最新状态，并能够批准任何挂起的操作。 
 
@@ -72,7 +70,7 @@ ms.locfileid: "42083745"
 
 在调查详细信息视图中，您可以查看下表中所述的有关**调查图**、**警报**、**设备**、**标识**、**关键发现**、**实体**、**日志**和**待定操作**选项卡的信息。
 
-|Tab    |描述 |
+|Tab    |Description |
 |--------|--------|
 |调查图形    |提供调查的直观表示形式。 描述实体并列出发现的威胁以及警报以及是否有任何操作正在等待审批。<br/>您可以单击关系图上的某一项以查看更多详细信息。 例如，单击 "**发现威胁**" 图标将转到 "**关键调查结果**" 选项卡。 |
 |警报 |列出与调查相关的警报。 警报可以来自用户计算机上的威胁防护功能、Office 应用程序、云应用安全和其他 Microsoft 365 威胁防护功能。|
