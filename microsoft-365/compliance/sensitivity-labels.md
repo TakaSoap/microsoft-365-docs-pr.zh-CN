@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用敏感度标签，可以对敏感内容进行分类和保护，同时确保组织内人员的工作效率和协作能力不受阻碍。敏感度标签可用于对已标记内容应用包括加密或水印在内的保护设置。
-ms.openlocfilehash: fa04fdc2713cbba090ec56972cd87e6cbdc4387b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 使用 Microsoft 信息保护框架中的灵敏度标签，对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受影响。 这些标签可应用包含加密视觉标记（如页脚和水印）的保护设置。
+ms.openlocfilehash: 92bfb768cf044b6a4837e5dab6936c2d77424a25
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081420"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106825"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
 组织内人员需要与组织内外的其他人员协作，才能完成工作。也就是说，内容不再一直停留在防火墙后面，而是可跨设备、应用和服务到处漫游。你希望内容的漫游方式不仅安全、受保护，还符合组织的业务和合规性策略。
 
-使用敏感度标签，可以对组织的数据进行分类和保护，而组织内人员的工作效率和协作能力丝毫不受影响。
+通过 Microsoft 信息保护框架中的灵敏度标签，可以对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受影响。
 
 示例显示了 Excel 中功能区 **Home** 选项卡上可用的灵敏度标签。 在此示例中，状态栏上将显示已应用的标签：
 
@@ -100,7 +100,11 @@ ms.locfileid: "42081420"
     
     有关创建或编辑敏感度标签时的“**终结点数据丢失防护**”设置的详细信息（包括重要先决条件），请参阅 [Windows 信息保护如何使用敏感度标签保护文件](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。
 
-- **将标签自动应用于包含敏感信息的内容。** 你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
+- 选择加入预览以****[将灵敏度标签用于 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）](sensitivity-labels-teams-groups-sites.md)时，可保护网站和组等容器中的内容。
+    
+    在你选择预览之前，不会显示“网站和组设置”的配置选项。**** 请注意，此标签配置不会导致自动标记文档，而是通过控制对存储文档的容器的访问来保护内容。 这些设置包括隐私级别、Office 365 组所有者可否向组中添加来宾，以及授予非托管设备的访问权限级别。
+
+- 在 Office 应用中自动应用标签，或推荐标签。**** 你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
     
     ![提示分配所需的标签](../media/Sensitivity-label-Prompt-for-required-label.png)
     

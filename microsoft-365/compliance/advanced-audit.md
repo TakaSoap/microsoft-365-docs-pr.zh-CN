@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960238"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170512"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
 Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-compliance.md)功能可让组织深入了解 Microsoft 365 众多服务中的不同类型审核活动。 现在通过发布 Microsoft 365 高级审核，我们增加了新的审核功能，可帮助你的组织进行法庭与合规调查。
 
 > [!NOTE]
-> 高级审核适用于具有 Office 365 或 Microsoft 365 企业版 E5 订阅的组织。 另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和高价值审核事件就是这种情况），可将 Microsoft 365 E5 合规加载项订阅分配至用户。
+> 高级审核适用于具有 Office 365 或 Microsoft 365 企业版 E5 订阅的组织。 另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和访问关键事件进行调查就是这种情况），可将 Microsoft 365 E5 合规加载项订阅分配至用户。
 
 本文提供了这些高级审核功能的概览信息。
 
@@ -49,9 +49,9 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 还可以指定与策略和优先级匹配的审核记录时长，从而使指定的策略优先于其它策略。 另外注意，如果组织中的部分或全部用户需要保留 Exchange、SharePoint 或 Azure Active Directory 审核记录，则所有自定义审核日志保留策略将优先于默认的审核保留策略。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
-## <a name="high-value-audit-events"></a>高价值审核事件
+## <a name="access-to-crucial-events-for-investigations"></a>访问关键事件进行调查
 
-高值安全和合规性相关审核事件，可帮助你调查可能的违规或其他与法庭有关的调查。 我们发布的第一个此类高价值事件是 *MailItemsAccessed* 邮箱审核事件。 邮件协议和客户端存取邮件数据时，触发此事件。 MailItemsAccessed 事件可帮助调查人员识别数据泄露并确定已泄露的邮件的可能范围。 如果攻击者获得了对电子邮件的访问权限，MailItemsAccessed 事件将被触发，即使邮件实际上未被读取也是如此（即通过“绑定”或“同步” 记录到审核记录中的访问类型）。
+关键安全和合规性相关审核事件可帮助你调查可能的违规或其他与法庭有关的调查。 我们发布的第一个此类关键事件是 *MailItemsAccessed* 邮箱审核事件。 邮件协议和客户端存取邮件数据时，触发此事件。 MailItemsAccessed 事件可帮助调查人员识别数据泄露并确定已泄露的邮件的可能范围。 如果攻击者获得了对电子邮件的访问权限，MailItemsAccessed 事件将被触发，即使邮件实际上未被读取也是如此（即通过“绑定”或“同步” 记录到审核记录中的访问类型）。
 
 新的 MailItemsAccessed 邮箱操作替代 Exchange Online 邮箱审核日志中的 MessageBind ，同时提供下列改进：
 

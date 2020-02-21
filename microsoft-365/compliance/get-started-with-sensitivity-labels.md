@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 9ffe0f52adf108ba03a41b2dba7261d21171bbba
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 6c461cd049cb89a2de0dbfc4cb1a5f8ea28c3ea6
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101252"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106855"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -61,7 +61,7 @@ ms.locfileid: "42101252"
 |我想...|文档|
 |----------------|---------------|
 |创建并发布有助于保护组织数据的敏感度标签|[创建和配置敏感度标签及其策略](create-sensitivity-labels.md)|
-|使用敏感度标签加密文档和电子邮件，并限制可访问它的人员及其使用该内容的方式 |[通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md)|
+|使用敏感度标签加密文档和电子邮件，并限制谁可以访问该内容以及可以如何使用它 |[通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md)|
 |为标记为加密的文档启用 SharePoint（和 OneDrive）中的协作功能 | [启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
 |管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 |[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)|
 |创建内容时，自动对用户应用敏感度标签或建议标签 | [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)|

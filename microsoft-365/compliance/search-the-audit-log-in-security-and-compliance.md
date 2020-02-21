@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091365"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219183"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -63,7 +63,9 @@ ms.locfileid: "42091365"
 
 - Microsoft Forms 中的用户和管理员活动
 
-## <a name="before-you-begin"></a>开始之前
+- 使用 SharePoint Online 或 Microsoft Teams 的网站的敏感度标签的用户和管理员活动
+
+## <a name="before-you-begin"></a>准备工作
 
 在开始搜索 Office 365 审核日志之前，请务必阅读以下各项。
 
@@ -309,7 +311,7 @@ ms.locfileid: "42091365"
 |[高级电子数据展示活动](#advanced-ediscovery-activities)|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Yammer 活动](#yammer-activities)|
 |[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|[Microsoft Stream 活动](#microsoft-stream-activities)|
-|[Microsoft Forms 活动](#microsoft-forms-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|||
+|[Microsoft Forms 活动](#microsoft-forms-activities)|[敏感度标签活动](#sensitivity-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -330,7 +332,7 @@ ms.locfileid: "42091365"
 |从回收站删除文件|FileDeletedFirstStageRecycleBin|用户从网站的回收站中删除文件。|
 |从第二阶段回收站删除文件|FileDeletedSecondStageRecycleBin|用户从网站的第二阶段回收站中删除文件。|
 |已删除记录合规性策略标签|ComplianceRecordDelete|已删除归类为记录的文档。 当将内容分类为记录的保留标签应用于文档时，该文档被视为记录。|
-|检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户上传使用敏感度标签分类的文档，该标签的优先级高于将文档上传到的网站所应用的敏感度标签。 <br/><br/> 如果应用于网站的敏感度标签优先级高于上传到网站的文档所应用的敏感度标签，则不会触发此事件。 有关敏感度标签优先级的详细信息，请参阅[了解敏感度标签](sensitivity-labels.md#label-priority-order-matters)中的“标签优先级”部分。|
+|检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签级别比网站的低。 <br/><br/> 如果应用于网站的敏感度标签优先级高于上传到网站的文档所应用的敏感度标签，则不会触发此事件。 有关敏感度标签优先级的详细信息，请参阅[标签优先级（顺序）](sensitivity-labels.md#label-priority-order-matters)。|
 |在文件中检测到恶意软件|FileMalwareDetected|SharePoint 防病毒引擎在文件中检测到恶意软件。|
 |已放弃文件签出|FileCheckOutDiscarded|用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的更改，而不将其保存到文档库中的文档版本。|
 |已下载的文件|FileDownloaded|用户从网站下载文档。|
@@ -350,6 +352,7 @@ ms.locfileid: "42091365"
 |按客户端查看信号|ClientViewSignaled|用户的客户端（例如网站或移动应用）已发出信号，表明用户已查看指示的页面。 此活动通常在页面的 PagePrefetched 事件后记录。 <br/><br/>**注意**：由于 ClientViewSignaled 事件由客户端而非服务器发出信号，因此服务器可能不会记录该事件，从而导致该事件可能未显示在审核日志中。 审核记录中的信息也可能不可信。 但是，由于用户身份由用于创建信号的令牌验证，因此相应审核记录中列出的用户身份是准确的。 |
 |(无)|PagePrefetched|用户的客户端（例如网站或移动应用）已请求指示的页面，以帮助提高用户浏览时的性能。 记录此事件以指示页面内容已服务于用户的客户端。 此事件未明确指示用户导航到页面。 <br/><br/> 当客户端（根据用户请求）呈现页面内容时，应生成 ClientViewSignaled 事件。 并非所有客户端都支持指示预提取，因此一些预提取的活动可能会被记录为 PageViewed 事件。|
 ||||
+
 
 ### <a name="folder-activities"></a>文件夹活动
 
@@ -822,6 +825,18 @@ ms.locfileid: "42091365"
 |已提交响应|SubmitResponse|用户提交对表单的响应。 <br><br>属性 IsInternalForm:boolean 表示响应者是否与表单所有者位于同一组织中。|
 ||||
 
+### <a name="sensitivity-label-activities"></a>敏感度标签活动 
+
+下表列出了因标记 SharePoint Online 和 Teams 网站的活动而产生的事件。
+
+|**友好名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+|已向网站应用敏感度标签|SensitivityLabelApplied|已向 SharePoint 或 Teams 网站应用敏感度标签。|
+|已从网站中删除敏感度标签|SensitivityLabelRemoved|已从 SharePoint 或 Teams 网站中删除敏感度标签。|
+|已向文件应用敏感度标签|FileSensitivityLabelApplied|已使用 Office 网页版向文档应用敏感度标签。|
+|已更改应用于文件的敏感度标签|FileSensitivityLabelChanged|已使用 Office 网页版向文档应用其他敏感度标签。|
+|已从文件除敏感度标签|FileSensitivityLabelRemoved|已使用 Office 网页版从文档中删除敏感度标签。|
+
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志
 
 管理员（或已分配到管理权限的用户）在 Exchange Online 组织中做出更改时，Exchange 管理员审核日志记录（Office 365 中默认启用此功能）将在 Office 365 审核日志中记录事件。 通过使用 Exchange 管理中心所做的更改或通过运行 Exchange Online PowerShell 中的某个 cmdlet 所做的更改会记录在 Exchange 管理员审核日志中。 以动词 **Get-**、**Search-** 或 **Test-** 开头的 Cmdlet 未记录在 Office 365 审核日志中。 有关 Exchange 中管理员审核日志记录的更多详细信息，请参阅[管理员审核日志记录](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
@@ -848,6 +863,7 @@ ms.locfileid: "42091365"
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
    请记住，Exchange 管理员审核日志和 Office 365 审核日志中记录了相同的 Exchange 管理员活动。
+
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
