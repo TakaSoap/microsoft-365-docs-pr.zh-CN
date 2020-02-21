@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175705"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219173"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>转到操作中心以查看修正操作
 
@@ -42,9 +42,6 @@ ms.locfileid: "42175705"
 - 查看已完成的修正操作。
 
 你的安全运营团队可以更有效地进行运营，因为操作中心提供了工作中的 Microsoft 威胁防护的全面视图。
-
-## <a name="remediation-actions"></a>修正操作
-
 
 ## <a name="go-to-the-action-center"></a>转到操作中心
 

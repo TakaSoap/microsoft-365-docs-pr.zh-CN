@@ -1,5 +1,5 @@
 ---
-title: 内幕风险管理内容浏览器（预览）
+title: 内幕风险管理内容浏览器
 description: 了解 Microsoft 365 中的内部人员风险管理内容浏览器
 keywords: Microsoft 365，内幕风险管理，风险管理，合规性
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8c1c77bdfa3236ce8f2222fd21a7fba0535f149
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 68a472e4e6b7556fc1b738a49b3c82dcf4804842
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590643"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179073"
 ---
-# <a name="insider-risk-management-content-explorer-preview"></a>内幕风险管理内容浏览器（预览）
+# <a name="insider-risk-management-content-explorer"></a>内幕风险管理内容浏览器
 
 内幕风险管理内容浏览器允许风险分析师和调查人员检查警报中捕获的通信的上下文和详细信息。 对于所有警报，数据和邮件文件的副本将作为项目的时间快照存档，同时保留存储源中的原始文件和邮件。 数据和邮件的复制对与通知相关联的员工和内容所有者是透明的。 对于复制的内容和邮件以及风险分析师和调查人员，如果需要打开和查看文件，则会为其保留对数据的权限设置和访问权限。 在内幕风险管理案例中，会自动为每个文件和邮件分配一个唯一的文件 ID，以实现管理目的。
 
@@ -56,14 +56,14 @@ ms.locfileid: "41590643"
 | **Received** | 收件人接收电子邮件的日期。 此属性与“Received”电子邮件属性相同。 |
 | **收件人** | 电子邮件中的所有收件人字段。 这些字段分别为 "收件人"、"抄送" 和 "密件抄送"。 |
 | **代表 ID** | 每个精确副本集的数字标识符。 |
-| **发件人** | 电子邮件的发件人。 |
+| **Sender** | 电子邮件的发件人。 |
 | **发件人/作者** | 对于电子邮件而言，是指发送邮件的人。 对于文档而言，是指从 Office 文档的作者字段中引用的人员。 你可以键入多个名称，用逗号分隔。 通过 OR 运算符在逻辑上连接两个或多个值。 |
 | **Sent** | 发件人发送电子邮件的日期。 此属性与“Sent”电子邮件属性相同。 |
 | **Size** | 对于电子邮件和文档而言，是项目的大小（以字节为单位）。 |
 | **Subject** | 电子邮件主题行中的文本。 |
 | **主题/职务** | 对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如上文所述，Title 属性是在 Microsoft Office 文档中指定的元数据。 您可以键入多个主题/标题的名称，以逗号分隔。 通过 OR 运算符在逻辑上连接两个或多个值。 |
 | **主题列表** | 为分析而计算的主题列表。 |
-| **Title** | 文档的标题。 Title 属性是 Office 文档中指定的元数据。 它与文档的文件名不同。 |
+| **标题** | 文档的标题。 Title 属性是 Office 文档中指定的元数据。 它与文档的文件名不同。 |
 | **To** | "收件人" 字段中的电子邮件的收件人。 |
 
 ## <a name="advanced-search-conditions"></a>高级搜索条件
@@ -125,7 +125,7 @@ ms.locfileid: "41590643"
 | **参与者** | 电子邮件中的所有人员字段。 这些字段分别为 "收件人"、"收件人" 和 "密件抄送"。 |
 | **Received** | 收件人接收电子邮件的日期。 |
 | **收件人域** | 邮件的收件人的所有域的列表。 |
-| **发件人** | 邮件类型的发件人（发件人）域。  格式为**DisplayName \<SmtpAddress>**。 |
+| **Sender** | 邮件类型的发件人（发件人）域。  格式为**DisplayName \<SmtpAddress>**。 |
 | **发件人域** | 发件人的域。 |
 | **Subject** | 电子邮件主题行中的文本。  <br/> **注意：** 在查询中使用 Subject 属性时，搜索将返回主题行中包含您要搜索的文本的所有邮件。 换言之，查询不会仅返回那些具有完全匹配的邮件。 例如，如果您搜索`subject:"Quarterly Financials"`，则结果将包含主题为 "季度财务 2018" 的邮件。 |
 | **To** | 电子邮件的“收件人”字段。 |
@@ -168,6 +168,6 @@ ms.locfileid: "41590643"
 | **代表 ID** | 每个精确副本集的数字标识符。 |
 | **Tags** | 在审阅集中应用的标记。 |
 | **主题列表** | 为分析而计算的主题列表。 |
-| **Title** | 文档的标题。 Title 属性是 Office 文档中指定的元数据。 它与文档的文件名不同。 |
+| **标题** | 文档的标题。 Title 属性是 Office 文档中指定的元数据。 它与文档的文件名不同。 |
 | **已修正** | 如果项目已修正，则为 True，否则为 False。 |
 | **字数统计** | 文件中的单词数。 |

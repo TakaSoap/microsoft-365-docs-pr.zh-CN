@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071328"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179143"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -95,7 +95,7 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 - **查看 Microsoft 合规性分数**，这是一种个性化的基于风险的分数，可帮助您了解组织对主要标准和法规的遵从性状态。 它提供了可采取的建议措施，以增强您的总体合规性状况，并提供工作流功能以帮助您有效地执行这些操作。 若要了解详细信息，请参阅[合规性分数（预览）](compliance-score.md)。
 
-- **配置内幕风险管理策略**以帮助最大限度地减少内部风险，并使您能够检测、调查并对组织中的风险活动采取措施。 请参阅[内幕风险管理（预览）](insider-risk-management.md)。
+- **配置内幕风险管理策略**以帮助最大限度地减少内部风险，并使您能够检测、调查并对组织中的风险活动采取措施。 请参阅[内幕风险管理](insider-risk-management.md)。
 
 - **了解并创建通信合规性策略**，以快速确定和修正公司的行为准则策略违规。 请参阅[通信合规性](communication-compliance.md)。
 

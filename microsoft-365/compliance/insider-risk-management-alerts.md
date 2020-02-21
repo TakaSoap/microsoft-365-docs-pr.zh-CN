@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072879"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179213"
 ---
-# <a name="insider-risk-management-alerts-preview"></a>内幕风险管理警报（预览）
+# <a name="insider-risk-management-alerts"></a>内幕风险管理警报
 
 内幕风险管理警报由内幕风险管理策略中定义的风险指示器自动生成。 这些警报向合规性分析员和调查人员提供了当前风险状态的一个详细视图，让您的组织可以对发现的风险进行会审并采取措施。
 

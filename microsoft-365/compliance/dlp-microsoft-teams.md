@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在，你可以将 DLP 策略应用于 Microsoft 团队聊天和频道。 阅读本文，了解详细了解它的工作原理。
-ms.openlocfilehash: 30436659b8b1bd336823e8dc6be06c8fbc8e08e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075259"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170552"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft 团队
 
@@ -31,7 +31,12 @@ ms.locfileid: "42075259"
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>适用于 Microsoft 团队的 DLP 概述
 
-最近，[数据丢失防护](data-loss-prevention-policies.md)（DLP）功能进行了扩展，以包括 Microsoft 团队聊天和频道消息。 如果你的组织拥有 DLP，你现在可以定义策略，以防止用户在 Microsoft 团队频道或聊天会话中共享敏感信息。 下面是有关此保护工作方式的一些示例：
+最近，[数据丢失防护](data-loss-prevention-policies.md)（DLP）功能进行了扩展，以包括 Microsoft 团队聊天和频道消息。
+
+> [!NOTE]
+> 目前，不支持 DLP 专用频道消息。
+
+如果你的组织拥有 DLP，你现在可以定义策略，以防止用户在 Microsoft 团队频道或聊天会话中共享敏感信息。 下面是有关此保护工作方式的一些示例：
 
 - **示例1：保护邮件中的敏感信息**。 假定有人尝试在团队聊天或频道中与来宾（外部用户）共享敏感信息。 如果您定义了一个 DLP 策略来防止出现这种情况，则会删除包含发送给外部用户的敏感信息的邮件。 这将根据您的 DLP 策略的配置方式在几秒内自动发生。
 
@@ -50,7 +55,7 @@ ms.locfileid: "42075259"
 
 ![用于解析阻止的邮件的选项](../media/dlp-teams-blockedmessage-possibleactions.png)
 
-在您的组织中，您可以选择允许用户替代 DLP 策略。 在配置 DLP 策略时，您可以使用默认策略提示，也可以为您的组织[自定义策略提示](#to-customize-policy-tips)。 
+在您的组织中，您可以选择允许用户替代 DLP 策略。 在配置 DLP 策略时，您可以使用默认策略提示，也可以为您的组织[自定义策略提示](#to-customize-policy-tips)。
 
 返回到我们的示例，其中发件人在团队频道中共享社会安全号码，以下是收件人看到的内容：
 
@@ -64,7 +69,7 @@ ms.locfileid: "42075259"
 
 1. 转到 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
 
-2. 选择 "**数据丢失防护** > **策略**"。 
+2. 选择 "**数据丢失防护** > **策略**"。
 
 3. 选择一个策略，然后在 "**策略设置**" 旁边，选择 "**编辑**"。
 
@@ -72,7 +77,7 @@ ms.locfileid: "42075259"
 
 5. 在 "**用户通知**" 选项卡上，选择 "**自定义电子邮件文本"** 和/或 **"自定义策略提示文本"** 选项。<br/>![自定义用户通知和策略提示](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
-6. 指定要用于电子邮件通知和/或策略提示的文本，然后选择 "**保存**"。 
+6. 指定要用于电子邮件通知和/或策略提示的文本，然后选择 "**保存**"。
 
 7. 在 "**策略设置**" 选项卡上，选择 "**保存**"。
 
@@ -84,7 +89,7 @@ ms.locfileid: "42075259"
 
 1. 转到 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
 
-2. 选择 "**数据丢失防护** > **策略**"。 
+2. 选择 "**数据丢失防护** > **策略**"。
 
 3. 选择一个策略，并查看 "**位置**" 下的值。 如果你看到**团队聊天和频道消息**，一切都已设置。 如果不是，请单击 "**编辑**"。<br/>![现有策略的位置](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -102,11 +107,11 @@ ms.locfileid: "42075259"
 
 1. 转到 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
 
-2. 选择 "**数据丢失防护** > **策略** > **+ 创建策略**"。 
+2. 选择 "**数据丢失防护** > **策略** > **+ 创建策略**"。
 
 3. 选择一个[模板](data-loss-prevention-policies.md#dlp-policy-templates)，然后选择 "**下一步**"。<br/>在我们的示例中，我们选择美国的 "个人身份信息" 数据模板。<br/>![DLP 策略的隐私模板](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
-4. 在 "**命名策略**" 选项卡上，指定策略的名称和说明，然后选择 "**下一步**"。 
+4. 在 "**命名策略**" 选项卡上，指定策略的名称和说明，然后选择 "**下一步**"。
 
 5. 在 "**选择位置**" 选项卡上，保留 "所有位置" 的默认设置，或选择 "**让我选择特定位置**"，然后选择 "**下一步**"。<br/>如果您选择了特定位置，请为您的 DLP 策略选择它们，然后选择 "**下一步**"。<br/>![DLP 策略位置](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
@@ -120,7 +125,7 @@ ms.locfileid: "42075259"
 
 8. 在 "**策略设置**" 选项卡上，在 "**是否要打开策略或先进行测试？**" 下，选择是要将策略打开、[先测试](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)还是将其保持关闭状态，然后选择 "**下一步**"。<br/>![指定是否要启用策略](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
-9. 在 "**查看您的设置**" 选项卡上，查看新策略的设置。 选择 "**编辑**" 以进行更改。 完成后，选择 "**创建**"。 
+9. 在 "**查看您的设置**" 选项卡上，查看新策略的设置。 选择 "**编辑**" 以进行更改。 完成后，选择 "**创建**"。
 
 为新策略留出约一小时的时间，以便通过数据中心并同步到用户帐户。
 

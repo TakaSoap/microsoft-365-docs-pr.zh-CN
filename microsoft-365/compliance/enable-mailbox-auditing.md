@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 默认情况下，邮箱审核日志记录在 Office 365 中处于打开状态（也称为默认邮箱审核或邮箱审核，默认情况下）。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中，在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: 1c1d9996ef72c686a6a543a30bcb34e265cc79cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 28823c3b2b43261d18352cb939c36f1cfc0b2c7c
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074709"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170572"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -111,7 +111,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**默认**||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|已访问某个邮箱文件夹。 当管理员或委派打开邮箱时，也会记录此操作。 <br/><br/> **注意**：代理执行的文件夹绑定操作的审核记录已合并。 在24小时内为单个文件夹访问生成一个审核记录。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|已将某个邮件从"已恢复邮件"文件夹中清除。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MailItemsAccessed**|邮件数据由邮件协议和客户端访问。 此值仅适用于 E5 或 E5 合规性附加订阅用户。 有关详细信息，请参阅[高价值审核事件](https://docs.microsoft.com/microsoft-365/compliance/advanced-audit#high-value-audit-events)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**MailItemsAccessed**|邮件数据由邮件协议和客户端访问。 此值仅适用于 E5 或 E5 合规性附加订阅用户。 有关详细信息，请参阅[对调查的关键事件的访问权限](advanced-audit.md#access-to-crucial-events-for-investigations)。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MailboxLogin**|用户已登录到其邮箱。 |||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MessageBind**|在预览窗格中查看或由管理员打开邮件。**注意**：虽然此值被接受为邮箱操作，但不再记录这些操作。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**注意**：虽然此值被接受为邮箱操作，但它已包含在**UpdateFolderPermissions**操作中，并且不会单独审核。 换言之，请勿使用此值。||||

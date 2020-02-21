@@ -1,5 +1,5 @@
 ---
-title: 内幕风险管理案例（预览）
+title: 内幕风险管理案例
 description: 了解 Microsoft 365 中的内部人员风险管理案例
 keywords: Microsoft 365，内幕风险管理，风险管理，合规性
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072833"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179173"
 ---
-# <a name="insider-risk-management-cases-preview"></a>内幕风险管理案例（预览）
+# <a name="insider-risk-management-cases"></a>内幕风险管理案例
 
 事例是内幕风险管理的核心，允许您深入调查并对策略中定义的风险指示器生成的问题采取措施。 在需要执行进一步操作以解决员工的符合性相关问题的情况下，将从警报中手动创建案例。 每个案例的范围限定为单个员工，并且可以将员工的多个通知添加到现有事例或新案例。 在调查事例的详细信息后，您可以通过向员工发送通知、解决案例是否为良性或升级到数据或员工调查来采取行动。
 
@@ -96,7 +96,7 @@ ms.locfileid: "42072833"
     - 风险活动的**日期**。
     - **风险活动类别**。 例如，*电子邮件中的附件发送到**从 SharePoint Online 下载*的组织或文件之外。
     - 警报的**风险分数**。 此分数是警报风险严重级别的数值分数。
-    - 与通知关联的**文件**或**电子邮件**的数量。 此外，还提供了指向与风险活动相关联的每个文件或电子邮件的链接。
+    - 与警报关联的事件数。 此外，还提供了指向与风险活动相关联的每个文件或电子邮件的链接。
 3. **风险活动图例**：在用户活动图的底部，通过颜色编码的图例可帮助您快速确定每个通知的风险类别。
 4. **风险活动 chronology**：列出了与事例关联的所有风险警报的完整 chronology，其中包括相应警报气泡图中提供的所有详细信息。
 5. **Case 操作**：用于解决事例的选项位于 "案例操作" 工具栏上。 您可以解决案例，向员工发送电子邮件通知，或升级数据或员工调查的案例。

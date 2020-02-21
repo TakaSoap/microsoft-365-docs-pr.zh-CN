@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078683"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179233"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
@@ -36,6 +36,8 @@ Microsoft 365 中的通信合规性策略可帮助您解决与合规性、内部
 - 法规实施和罚款风险
 
 在某些组织中，IT 支持与合规性管理组之间可能存在的职责分离。 Microsoft 365 支持通信合规性配置和扫描通信策略配置的分离。 例如，组织的 IT 组可能负责设置角色权限和组，以支持由组织的合规性团队配置和管理的通信合规性策略。
+
+有关通信合规性的快速概述，请参阅[Microsoft 机械通道](https://www.youtube.com/user/OfficeGarageSeries)上的 "[检测工作区骚扰" 和 "使用 microsoft 365 视频中的通信合规性进行响应](https://youtu.be/z33ji7a7Zho)"。
 
 ## <a name="scenarios-for-communication-compliance"></a>通信合规性方案
 

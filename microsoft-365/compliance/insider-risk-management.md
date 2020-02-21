@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072725"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179183"
 ---
-# <a name="insider-risk-management-in-microsoft-365-preview"></a>Microsoft 365 中的内幕风险管理（预览）
+# <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的内幕风险管理
 
-内幕风险管理是 Microsoft 365 中的一个内部风险解决方案，它通过使您能够检测、调查和对组织中的危险活动采取措施来帮助最大限度地减少内部风险。 自定义策略允许您检测组织中的恶意和意外风险活动并采取措施，包括在需要时向其他 Microsoft 365 调查解决方案升级案例。 组织中的风险分析师可以快速采取适当的措施，以确保用户符合组织的合规性标准。
+内幕风险管理是 Microsoft 365 中的一种解决方案，可帮助您检测、调查并对组织中的危险活动采取措施，从而帮助最大限度地减少内部风险。 自定义策略允许您检测组织中的恶意和意外风险活动并采取措施，包括在需要时向 Microsoft 高级电子数据展示上报案例。 组织中的风险分析师可以快速采取适当的措施，以确保用户符合组织的合规性标准。
 
 观看以下视频，了解内幕风险管理如何帮助您的组织防止、检测和包含风险，同时确定组织价值、文化和员工体验的优先级：
 <br>
@@ -66,7 +66,7 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 
 - 脱离员工数据失窃
 - 数据泄露
-- 通信中的冒犯性语言
+- 电子邮件中的冒犯性语言
 
 有关详细信息，请参阅[内幕风险管理策略](insider-risk-management-policies.md)。
 

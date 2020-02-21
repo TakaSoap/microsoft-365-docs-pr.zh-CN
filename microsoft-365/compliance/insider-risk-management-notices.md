@@ -1,5 +1,5 @@
 ---
-title: 内幕风险管理通知模板（预览）
+title: 内幕风险管理通知模板
 description: 了解 Microsoft 365 中的内部人员风险管理通知模板
 keywords: Microsoft 365，内幕风险管理，风险管理，合规性
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072800"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179083"
 ---
-# <a name="insider-risk-management-notice-templates-preview"></a>内幕风险管理通知模板（预览）
+# <a name="insider-risk-management-notice-templates"></a>内幕风险管理通知模板
 
 内幕风险管理通知模板允许你在其活动生成策略匹配和警报时向员工发送电子邮件。 在大多数情况下，生成警报的员工操作在没有正确意图的情况下产生错误或无意活动。 通知为员工提供更小心的简单提醒，或者提供有关刷新器培训或公司策略资源的链接或信息。 通知可能是内部合规性培训计划的重要组成部分，可帮助为具有定期风险活动的员工创建记录的审核跟踪。
 

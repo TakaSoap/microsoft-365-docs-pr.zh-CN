@@ -15,13 +15,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: '有关使用 Office 365 导入服务将 organizaiton 的 PST 文件导入到 Office 365 邮箱的管理员的常见问题。 '
-ms.openlocfilehash: dcbc496273a08ea133cc11bacbb62f55eee58917
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: '有关使用 Office 365 导入服务将组织的 PST 文件导入到 Office 365 邮箱的管理员的常见问题。 '
+ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594583"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170482"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 的常见问题解答
 
@@ -46,11 +46,14 @@ ms.locfileid: "41594583"
 - 必须是你的 Office365 组织中的全局管理员。
     
 > [!TIP]
-> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮箱导入导出”和“邮件收件人”角色分配给新角色组，然后添加成员。 
+> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
   
  **网络上传在哪些地区提供？**
   
-网络上传目前适用于美国、加拿大、巴西、英国、法国、欧洲、印度、东亚、东南亚、日本、朝鲜共和国和澳大利亚。 Network upload will be available in more regions soon.
+目前，这些地区提供了网络上传：美国、加拿大、巴西、英国、法国、欧洲、印度、东亚、东南亚、日本、韩国和澳大利亚。 Network upload will be available in more regions soon.
+
+> [!NOTE]
+> 目前，PST 文件的网络上载在德国和瑞士不可用。 当这些国家/地区提供网络上载时，将更新此 FAQ。
   
  **使用网络上传导入 PST 文件的定价如何？**
   
@@ -78,7 +81,7 @@ Using network upload to import PST files is free.
   
  **导入 PST 文件时是否有邮件大小限制？**
   
-可以。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
   
  **PST 文件导入到 Office365 邮箱时，是否会保留邮件发送时间或接收时间、收件人和其他属性等邮件属性？**
   
@@ -122,6 +125,9 @@ Using network upload to import PST files is free.
  **哪些地区提供驱动器寄送服务？**
   
 当前，美国、加拿大、巴西、英国、欧洲、印度、东亚地址、东南亚、日本、韩国和澳大利亚已推出驱动器传送。 不久之后，还会有更多地区推出驱动器传送。
+
+> [!NOTE]
+> 目前，用于导入 PST 文件的驱动器运送在德国和瑞士不可用。 在这些国家/地区提供驱动器发货时，将更新此 FAQ。
   
  **哪些商业许可协议支持驱动器发运？**
   
@@ -148,7 +154,7 @@ Using network upload to import PST files is free.
   
  **硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST文件上传到 Azure？**
   
-Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PST 文件上传到你组织的 Microsoft Azure 存储区域。 PST 文件将被上传到名为**ingestiondata**的 Azure blob 容器中。 
+在 Microsoft 数据中心收到硬盘驱动器后，需要7到10个工作日才能将 PST 文件上传到组织的 Azure 存储区。 PST 文件将被上传到名为**ingestiondata**的 Azure blob 容器中。 
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
@@ -158,7 +164,7 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
   
  **Microsoft 将 PST 文件上传到 Azure 后，这些文件在删除前可在 Azure 中保留多长时间？**
   
-在安全 & 合规中心的 "**导入 PST 文件**" 页上创建最近的导入作业之后30天内，将删除您的组织的 Azure 存储位置中的所有 PST 文件（在 blob 容器中名为**ingestiondata** ）。 
+在安全 & 合规中心的 "**导入 PST 文件**" 页上创建最近的导入作业之后30天内，将删除您的组织的 Azure 存储位置中的所有 PST 文件（在 blob 容器中名为**ingestiondata**）。 
   
 这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
   
@@ -170,11 +176,11 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
   
  **导入 PST 文件时是否有邮件大小限制？**
   
-可以。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
   
  **PST 文件导入到 Office365 邮箱时，是否会保留邮件发送时间或接收时间、收件人和其他属性等邮件属性？**
   
-可以。 导入过程中不会更改原始邮件的元数据
+是。 导入过程中不会更改原始邮件的元数据
   
  **我想要导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？**
   

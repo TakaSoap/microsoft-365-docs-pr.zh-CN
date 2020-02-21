@@ -1,5 +1,5 @@
 ---
-title: 内幕风险管理用户（预览）
+title: 内幕风险管理用户
 description: 了解 Microsoft 365 中的内部人员风险管理用户
 keywords: Microsoft 365，内幕风险管理，风险管理，合规性
 localization_priority: Normal
@@ -12,19 +12,19 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072781"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179103"
 ---
-# <a name="insider-risk-management-users-preview"></a>内幕风险管理用户（预览）
+# <a name="insider-risk-management-users"></a>内幕风险管理用户
 
 内幕风险管理用户是组织中包含在一个或多个内幕风险管理策略中的员工。 使用**用户仪表板**快速查看有关员工的风险信息，并将员工添加到现有的内幕风险管理策略中。 内幕风险管理策略中包含的每个用户在**用户仪表板**上显示以下信息：
 
 - **Users**：用户的用户名。
-- **风险级别**： 
+- **风险级别**：用户的当前计算的风险级别。 此分数每24小时计算一次，并使用与该用户关联的所有活动警报中的警报风险分数。
 - **主动警报**：针对所有策略的活动警报数。
 - 已**确认冲突**：针对用户确认的已*确认策略冲突*的案例数。
 - **案例**：用户的当前活动事例。
@@ -54,5 +54,5 @@ ms.locfileid: "42072781"
 2. 选择 "在工具栏上**向策略添加用户**"。
 3. 在 "**添加新用户**" 对话框中，开始在 "**用户**" 字段中键入用户名。 选择要添加到策略中的用户。
 4. 选择 "**策略**" 字段的下拉箭头以显示配置的 "内幕风险管理策略"。 选择要将用户添加到的策略。
-5. 使用 "**监视窗口**" 滑块控件定义 .。。"监视" 窗口的范围是5到30天。
+5. 使用**激活窗口**滑块控件可定义策略对此用户处于活动状态的时间长度，并在用户执行与策略匹配的第一个活动时触发。 "监视" 窗口的范围是5到30天。
 6. 选择 "**添加**"，然后**确认**将该用户添加到策略中。
