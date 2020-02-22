@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的使用敏感度标签、适用于移动的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101232"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225500"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -123,10 +123,15 @@ Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感�
 
 用户可以一次仅为每个文档或电子邮件应用一个标签。
 
-当您标记包含附件的电子邮件时，附件不会继承该标签：
+当您标记包含附件的电子邮件时，附件不会继承标签，但有一个例外：
 
-- 如果附件具有标签，则会保留单独应用的标签。
-- 如果附件不包含标签，则不会在不带标签的情况下保留附件。 但是，如果电子邮件标签应用了保护，则该保护将应用于 Office 附件。
+- 附件是标签不适用的 Office 文档，并且应用于电子邮件的标签将应用加密。 在这种情况下，电子邮件的 Office 文档会将电子邮件的标签继承为其加密设置。
+
+或者： 
+
+- 如果附件具有标签，则保留其最初应用的标签。
+- 如果在没有标签的情况下加密附件，则会保留加密但不会对其进行标记。
+- 如果附件没有标签，它们将保持未标记。
 
 ## <a name="sensitivity-label-compatibility"></a>敏感度标签兼容性
 

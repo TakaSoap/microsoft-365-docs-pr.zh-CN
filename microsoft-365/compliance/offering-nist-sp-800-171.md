@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851779"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42221994"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
@@ -65,7 +65,7 @@ NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准�
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[NIST 800-171 模板](https://go.microsoft.com/fwlink/?linkid=2117526)来帮助您的组织满足此法规的要求。
+[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[NIST 800-171 模板](https://go.microsoft.com/fwlink/?linkid=2117526)，以帮助您的组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

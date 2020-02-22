@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 87bb8faa13f34fbe299b6de82bdd9099eaaff5aa
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 98b669a216b5c3a875cb1a42fd0cc97fb6112f1b
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851849"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222104"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>澳大利亚政府信息安全注册评估员计划（IRAP）
 
@@ -88,7 +88,7 @@ IRAP 适用于所有使用云服务的澳大利亚联邦、州和本地政府机
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[IRAP 模板](https://go.microsoft.com/fwlink/?linkid=2117913)来帮助您的组织满足此法规的要求。
+[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[IRAP 模板](https://go.microsoft.com/fwlink/?linkid=2117913)，以帮助组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

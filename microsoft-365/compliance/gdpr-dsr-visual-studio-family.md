@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 08c6bfbcfc571103939d0b824d5fda0fcb789bb6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596479"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225505"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Visual Studio 系列数据主体请求
 
@@ -47,7 +47,7 @@ ms.locfileid: "41596479"
 
 根据 GDPR，Microsoft 作为数据处理者 从用户那里收集我们所需的数据，在提供对 Visual Studio 和 Visual Studio for Mac，以及对它们和 Visual Studio Code 的 Microsoft 扩展的使用体验的同时，提升使用体验。数据分为两类：客户数据和系统生成的日志。客户数据包括这些产品执行其提供的服务时所需的用户可识别事务和交互数据。例如，为了向用户提供漫游设置等个性化体验，我们需要收集用户帐户信息和设置数据。系统生成的日志是用于帮助标识和排查问题并改进我们的产品和服务的使用情况数据或诊断数据，可能也包含有关最终用户的可识别信息（例如，用户名）。系统生成的日志的保留期不超过 18 个月。例如，针对产品每天的使用情况聚合系统生成的日志，并包含使用日期、使用的产品（例如，“Visual Studio 2017”）、执行的操作（例如，“vs/core/packagecostsummary/solutionload”）以及执行操作的次数，如此示例中所示：
 
-```
+```Log
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
 "DevicePlatform":"Windows 10 Enterprise","IP":null,"InputMethod":null,
 "SearchTerm":null,"SearchResult":null}

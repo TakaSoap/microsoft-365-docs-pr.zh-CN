@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: de9fcad3b1d54247114974ce4432068c136fdb2a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851839"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222024"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消费者隐私法案 (CCPA)
 
@@ -95,7 +95,7 @@ CCPA 需要管控企业来收集、转移和销售个人信息，以及其他一
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[CCPA 模板](https://go.microsoft.com/fwlink/?linkid=2118004)来帮助您的组织满足此法规的要求。
+[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[CCPA 模板](https://go.microsoft.com/fwlink/?linkid=2118004)，以帮助组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

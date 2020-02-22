@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851819"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222065"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>联邦金融机构检查委员会（FFIEC）
 
@@ -47,7 +47,7 @@ Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是为满足为金
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -61,7 +61,7 @@ Azure 和 Office 365 SOC 认证报告。
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，请使用预配置的[FFIEC Office 365 模板](https://go.microsoft.com/fwlink/?linkid=2117912)和[FFIEC Intune 模板](https://go.microsoft.com/fwlink/?linkid=2118101)来帮助您的组织满足此法规的要求。
+[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[FFIEC Office 365 模板](https://go.microsoft.com/fwlink/?linkid=2117912)和 " [FFIEC Intune" 模板](https://go.microsoft.com/fwlink/?linkid=2118101)，以帮助您的组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 
