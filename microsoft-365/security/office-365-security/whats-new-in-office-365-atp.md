@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2020
-ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.date: 02/21/2020
+ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106845"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42230065"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -45,6 +45,8 @@ ms.locfileid: "42106845"
     - 粒度时间筛选器（日、小时、半小时） 
 
 - **事件**小组件现在是**操作中心**小组件。 （若要查看安全小部件，请在 "Office 365 安全 & 合规性中心" 中，转到 "**威胁管理** > **评审**"。）
+
+- [Office 365 中的安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **（预览）**
 
 ## <a name="december-2019"></a>2019 年 12 月
 

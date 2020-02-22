@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
-ms.openlocfilehash: 8f781687047f39d4d038e293e50c9caad83d051a
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 436d70934e32f8609d35532188ac71cbd590c345
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179243"
+ms.locfileid: "42228578"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -132,28 +132,6 @@ ms.locfileid: "42179243"
 ![在资源管理器中开始调查恶意软件](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 与由警报触发的行动手册类似，通过资源管理器中的视图触发的自动调查包括根调查、标识和关联威胁的步骤以及缓解这些威胁的建议操作。
-
-## <a name="how-to-get-air"></a>如何获取空中
-
-Office 365 AIR 包含在以下订阅中：
-
-- Microsoft 365 E5
-- Office 365 E5
-- Microsoft 威胁防护
-- Office 365 高级威胁防护（计划 2）
-
-如果你没有这些订阅，请[启动免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)。
-
-若要了解有关功能可用性的详细信息，请访问[跨高级威胁防护（ATP）计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
-
-## <a name="required-permissions-to-use-air-capabilities"></a>使用空中功能所需的权限
-
-通过某些角色（如下表中所述的角色）授予权限： 
-
-|任务 |需要 #a0 个角色 |
-|--|--|
-|设置空中功能 |以下角色之一： <br/>- **全局管理员**<br/>- **安全管理员** <br/>可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或在[Office 365 安全 & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配这些角色。 |
-|批准或拒绝建议的操作|在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或在[Office 365 安全 & 合规中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配的以下角色之一：<br/>- **全局管理员** <br/>- **安全管理员**<br/>- **安全读者** <br/>--- 和 ---<br/>- **搜索和清除**（此角色仅在[Office 365 安全 & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配。 您可能需要在其中创建新的角色组，并将搜索和清除角色添加到该新角色组。
 
 ## <a name="next-steps"></a>后续步骤
 

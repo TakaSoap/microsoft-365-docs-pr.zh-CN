@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: 1a39ffb5bf57e0f4ffa38a210c299480d3081345
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: e75ef1523247cbddcf6cb28d69a889db1de8e42f
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175905"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228528"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 中的自动调查遵循的补救措施
 
@@ -42,14 +42,13 @@ Office 365 中的[自动化调查和响应功能](https://docs.microsoft.com/mic
 在查看[调查的详细信息](air-view-investigation-results.md)时，您可以批准或拒绝任何待定的修正操作。 我们建议您尽快执行此操作，以便您的自动调查能够完成。
 
 > [!IMPORTANT]
-> 批准或拒绝修正操作需要适当的权限。 查看[使用空中功能所需的权限](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities)。
+> 批准或拒绝修正操作需要适当的权限。 查看[使用空中功能所需的权限](office-365-air.md#required-permissions-to-use-air-capabilities)。
 
 1. 选择 "**操作**" 选项卡。
 
 2. 选择列表项。 （这将激活 "批准" 和 "拒绝" 按钮。）
 
 3. 查看您选择的项目的可用信息，然后批准或拒绝该操作。 
-
  - **批准**可开始进行修正。
  - **拒绝**无需进一步操作
 
