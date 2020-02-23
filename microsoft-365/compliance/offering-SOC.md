@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851879"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222044"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -131,7 +131,7 @@ Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stre
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，使用预配置的 [SOC 1 模板](https://go.microsoft.com/fwlink/?linkid=2117918)和 [SOC 2 模板](https://go.microsoft.com/fwlink/?linkid=2117919)帮助组织满足此法规的要求。
+[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，从“**模板**”下拉菜单中选择预配置的“[SOC 1 模板](https://go.microsoft.com/fwlink/?linkid=2117918)”和“[SOC 2 模板](https://go.microsoft.com/fwlink/?linkid=2117919)”帮助组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

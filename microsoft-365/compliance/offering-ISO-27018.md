@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6791754e0d34ca2ca564a805269bb9fdc216d0ad
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e2a26b91de38c876145b9b5b1c7765058b4b25a3
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851869"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222054"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保护云中个人数据的 ISO/IEC 27018 行为守则
 
@@ -123,7 +123,7 @@ Microsoft 和 ISO/IEC 27018
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，使用预配置的 [ISO 27018 模板](https://go.microsoft.com/fwlink/?linkid=2117523)帮助组织满足此法规的要求。
+[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，从“**模板**”下拉菜单中选择预配置的“[ISO 27018 模板](https://go.microsoft.com/fwlink/?linkid=2117523)”帮助组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 
