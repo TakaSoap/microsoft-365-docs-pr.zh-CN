@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 1eeed6c1dfef1765089a5998200c93be595a719a
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722013"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225520"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Dynamics 365 数据主体请求
 
@@ -82,10 +82,9 @@ Dynamics 365 是一个提供多项数据处理功能的联机服务，采用软�
 
 Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，从而访问客户数据。但是，你需要负责确保找到个人数据并适当分类。
 
-***Dynamics 365 for Customer Engagement*** 提供了多种方法在记录中搜索个人数据：高级查找搜索、相关性搜索和搜索记录。 所有这些功能都可以用来识别（查找）个人数据。
+***Dynamics 365 for Customer Engagement*** 提供了多种方法在记录中搜索个人数据：高级查找搜索、搜索记录。 所有这些功能都可以用来识别（查找）个人数据。
 
 - [高级查找搜索](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)
-- [相关性搜索](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results)，可以使用仪表板相关性搜索保存以供将来参考
 - [搜索记录](https://docs.microsoft.com/dynamics365/customer-engagement/basics/search-records)，跨多个记录类型
 
 在 Dynamics 365 for Marketing 中，还有以下其他功能：
