@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 02/24/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 712fdf6935fa69bfb2079858d6384eee270776e6
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106835"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261029"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -39,7 +39,7 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 - **[威胁调查和响应功能](#use-threat-investigation-and-response-capabilities)**：使用前沿工具调查、理解、模拟和阻止威胁。
 
-- **[自动调查和响应功能](#save-time-with-automated-investigation-and-response)**：节省时间和精力来调查和缓解威胁。
+- **[自动调查和响应功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**：节省时间和精力来调查和缓解威胁。
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 计划 1 和计划 2
 
@@ -47,7 +47,7 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 |Office 365 ATP 计划 1 |Office 365 ATP 计划 2|
 |---------|---------|
-|配置、保护和检测功能：<br/>- [安全附件](atp-safe-attachments.md)<br/>- [安全链接](atp-safe-links.md)<br/>- [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>- [高级反钓鱼保护](atp-anti-phishing.md)<br/>- [实时检测](threat-explorer.md)     |Office 365 ATP 计划 1 功能<br/>--- + ---<br/>自动化、调查、补救措施和教育功能：<br/>- [威胁跟踪器](threat-trackers.md)<br/>- [威胁资源管理器](threat-explorer.md)<br/>- [自动调查和响应](automated-investigation-response-office.md)<br/>- [攻击模拟器](attack-simulator.md)|
+|配置、保护和检测功能：<br/>- [安全附件](atp-safe-attachments.md)<br/>- [安全链接](atp-safe-links.md)<br/>- [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>- [高级反钓鱼保护](atp-anti-phishing.md)<br/>- [实时检测](threat-explorer.md)     |Office 365 ATP 计划 1 功能<br/>--- + ---<br/>自动化、调查、补救措施和教育功能：<br/>- [威胁跟踪器](threat-trackers.md)<br/>- [威胁资源管理器](threat-explorer.md)<br/>- [自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [攻击模拟器](attack-simulator.md)|
 
 - Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中包含 Office 365 ATP 计划 2。
 
@@ -56,9 +56,6 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 - Office 365 ATP 计划 1 和 Office 365 ATP 计划 2 可各自用作特定订阅的加载项。 要了解详细信息，请参阅[跨高级威胁防护 (ATP) 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 - 如果你当前的订阅不包括 Office 365 ATP，请[与销售人员联系以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，并查看 ATP 如何为你的组织所用。
-
-> [!TIP]
-> 你的 Microsoft 365 E5 或 Microsoft 365 E3 是否具有身份和威胁防护？ 考虑尝试使用 [Microsoft 威胁防护](../mtp/microsoft-threat-protection.md)。
 
 ## <a name="configure-atp-policies"></a>配置 ATP 策略
 
@@ -105,7 +102,7 @@ Office 365 ATP 计划 2 包括同类最佳的[威胁调查和响应工具](offic
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>节省自动调查和响应的时间
 
-（**新增！**）调查可能的网络攻击时，时间至关重要。 越快地识别和缓解威胁，贵公司的状况就越好。 [自动调查和响应](automated-investigation-response-office.md) (AIR) 功能包括一套可自动启动（例如触发预警时）或手动启动（例如从资源管理器中的视图启动）的安全手册。 AIR 可以有效且高效地节省安全操作团队缓解威胁的时间和精力。 要了解详细信息，请参阅 [Office 365 中的 AIR](automated-investigation-response-office.md)。
+（**新增！**）调查可能的网络攻击时，时间至关重要。 越快地识别和缓解威胁，贵公司的状况就越好。 [自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) 功能包括一套可自动启动（例如触发预警时）或手动启动（例如从资源管理器中的视图启动）的安全手册。 AIR 可以有效且高效地节省安全操作团队缓解威胁的时间和精力。 要了解详细信息，请参阅 [Office 365 中的 AIR](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。
 
 ## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的权限
 

@@ -1,0 +1,84 @@
+---
+title: 比较 Office 365 中的组
+ms.reviewer: arvaradh
+f1.keywords:
+- CSH
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Priority
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
+description: 了解可在 Office 365 中使用的组类型。
+ms.openlocfilehash: 5b8a3a7859a510a07b579f3b1da255e555d6ae1f
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42238086"
+---
+# <a name="compare-groups"></a>比较组
+
+在 Microsoft 365 管理中心的 **组** 部分中，可创建和管理以下类型的组： 
+
+- **Office 365 组** 用于公司内部和外部用户之间的协作。
+- **通讯组** 用于向一组人员发送通知。
+- **安全组** 用于授予对 SharePoint 资源的访问权限。
+- **已启用邮件的安全组** 用于授予 SharePoint 资源的访问权限，并向这些用户发送电子邮件通知。
+- 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址）时，将使用**共享邮箱**。
+
+## <a name="office-365-groups"></a>Office 365 组
+
+Office 365 组用于公司内部和外部用户之间的协作。 对于每个 Office 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Planner。
+
+只要[管理员启用](manage-guest-access-in-groups.md)了此功能，就可以将公司外部的用户添加到组中。 还可以允许外部发件人向组电子邮件地址发送电子邮件。
+
+可[为 Azure Active Directory中的动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)配置 Office 365 组，以便根据部门、位置、职衔等等用户属性自动添加或删除组成员。
+
+可通过移动应用（如 Outlook for iOS 和 Outlook for Android）访问 Office 365 组。
+
+如果[管理员启用了](allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，则组成员可以作为组或代表组发送电子邮件地址。
+
+## <a name="distribution-groups"></a>通讯组
+
+[通讯组](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) 用于向一组人员发送通知。 如果管理员启用，则可以接收外部电子邮件。
+
+通讯组最适用于需要将信息广播给一组人员的情况，例如 "构建 A 中的人" 或 "Contoso 中的每个人"。
+
+## <a name="security-groups"></a>安全组
+
+[安全组](../email/create-edit-or-delete-a-security-group.md) 用于授予对 Office 365 资源（如 SharePoint）的访问权限。 它们可以简化管理，因为只需管理组，而不是单独将用户添加到每个资源。
+
+安全组可以包含用户或设备。 可将创建设备安全组用于移动设备管理服务（如 Intune）。
+
+可为[ Azure Active Directory 中的动态成员身份配置](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)安全组，以便根据部门、位置或职衔等用户属性自动添加或删除组成员或设备；或设备属性（如操作系统版本）。
+
+## <a name="mail-enabled-security-groups"></a>启用邮件的安全组
+
+启用邮件的安全组的功能与常规安全组相同，不同之处在于它们无法通过 Azure Active Directory 动态管理，并且不能包含设备。
+
+它们包括向组中的所有成员发送邮件的功能。
+
+## <a name="shared-mailboxes"></a>共享邮箱
+
+当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址、接待台或其他可能由多个用户共享的其他功能）时，将使用[共享邮箱](../email/create-a-shared-mailbox.md)。
+
+如果管理员已启用共享邮箱，则共享邮箱可以接收外部电子邮件。
+
+如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
+
+目前不能将共享邮箱迁移到 Office 365 组。 所需内容是什么？ 请告知我们。 **[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)**
+
+## <a name="related-articles"></a>相关文章
+
+[了解 Office 365 组](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
