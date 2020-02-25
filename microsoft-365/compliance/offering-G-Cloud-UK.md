@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ecd8a362b0e77df846f486b0a424425f012ee68b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602349"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236882"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云（G-云）
 
@@ -41,7 +41,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 了解如何使用我们的 Azure 安全性和合规性蓝图加快英国 G-云 v6 部署：[下载 Azure 蓝图 UK G-云原则实现指南](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - 云应用安全
@@ -64,17 +64,17 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
-- [Dynamics 365 UK G 云风险环境](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+- [Dynamics 365 UK G 云风险环境](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ### <a name="intune"></a>Intune
 
-- [Intune UK G 云风险环境](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+- [Intune UK G 云风险环境](https://go.microsoft.com/fwlink/?linkid=2099702)
 - [Intune UK G 云残留风险](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Azure UK G 云安全评估摘要](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 英国 G 云风险环境](https://aka.ms/Office365UKGCloudRiskEnvironment)
+- [Office 365 英国 G 云风险环境](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ## <a name="accelerate-your-deployment-of-uk-g-cloud-solutions-on-azure"></a>加速在 Azure 上部署英国 G 云解决方案
 
@@ -105,7 +105,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 **如何获取审计员的报告的副本？**
 
-[服务信任门户](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便审计员能够将 Microsoft 结果与您自己的法律和法规要求进行比较。
+该[服务信任门户](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便审计员能够将 Microsoft 结果与您自己的法律和法规要求进行比较。
 
 ## <a name="resources"></a>资源
 

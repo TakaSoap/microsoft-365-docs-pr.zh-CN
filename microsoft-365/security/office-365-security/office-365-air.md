@@ -1,5 +1,5 @@
 ---
-title: Office 365 自动调查和响应
+title: Office 365 中的自动化调查和响应（空气）
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
 f1.keywords:
 - NOCSH
@@ -15,16 +15,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
-ms.openlocfilehash: 7bfa07880a302f77769ee15e9108db21dac2519c
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228561"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262009"
 ---
-# <a name="office-365-automated-investigation-and-response"></a>Office 365 自动调查和响应
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
 [Office 365 高级威胁防护](office-365-atp.md)计划2包括功能强大的自动化调查和响应（空气）功能，可节省安全运营团队的时间和精力。 当触发某些警报时，一个或多个安全行动手册将启动，并且自动调查过程开始。 这使安全操作团队能够将重点放在高优先级的任务上，而不会失去触发警报的可见性。 
+
+## <a name="the-overall-flow-of-air"></a>空气的整体流动
 
 从较高的层次来看，空气流的工作原理如下所示：
 

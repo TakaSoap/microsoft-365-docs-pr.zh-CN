@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 当 "准备就绪" 框中的一个可供使用时，使用 trainable 分类器将无法满足您的需求。 Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本主题介绍如何创建自定义分类器。
-ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 如果其中一个内置的类元无法满足您的需求，则使用 trainable 分类程序。 Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本主题介绍如何创建自定义分类器。
+ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078848"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266891"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>创建 trainable 分类器（预览）
 

@@ -1,5 +1,5 @@
 ---
-title: 批准或拒绝自动调查后的挂起操作
+title: 在自动调查后批准或拒绝待处理的操作
 description: 使用操作中心管理与自动调查和响应相关的操作
 keywords: 操作, 中心, autoair, 自动化, 调查, 响应, 修正
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5118f7fddaee0fa768675597dee862eb75e4ed96
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225490"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261979"
 ---
-# <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>批准或拒绝自动调查的挂起操作
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>在自动调查后批准或拒绝待处理的操作
 
 **适用于：**
 - Microsoft 威胁防护
@@ -35,9 +35,7 @@ ms.locfileid: "42225490"
 > [!TIP]
 > 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅[如何在 Microsoft 威胁防护中报告误报/负面的自动调查和响应（空中）功能](mtp-autoir-report-false-positives-negatives.md)。
 
-可以使用以下几种方法之一来查看和批准挂起的操作：
-- [使用操作中心](#review-a-pending-action-in-the-action-center)
-- [使用“调查详细信息”视图](#review-a-pending-action-in-the-investigation-details-view)
+可以使用[操作中心](#review-a-pending-action-in-the-action-center)或[调查详细信息视图](#review-a-pending-action-in-the-investigation-details-view)来审阅和批准挂起的操作。
 
 > [!NOTE]
 > 必须具有[相应的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)才能批准或拒绝修正操作。
@@ -65,5 +63,7 @@ ms.locfileid: "42225490"
 ## <a name="next-steps"></a>后续步骤
 
 - [详细了解操作中心](mtp-action-center.md)
+
 - [详细了解事件](incidents-overview.md)
+
 - [详细了解搜寻](advanced-hunting-overview.md)

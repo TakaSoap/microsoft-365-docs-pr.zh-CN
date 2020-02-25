@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 46904323a1ec8f969355931f8b69a3ed0ebf4519
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600209"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235081"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>管理 Microsoft 威胁防护中的事件
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 管理事件对于确保控制和解决威胁至关重要。 在 Microsoft 威胁防护中，你有权管理设备、用户和邮箱相关事件。 
 

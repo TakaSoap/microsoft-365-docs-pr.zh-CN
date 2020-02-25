@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b12bf7b4bbda79a8699e01f31c97d0cfde330b5c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7e0e98c94f66e2cac9300a65d0000b4447ec6d2b
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087337"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235101"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>调查 Microsoft 威胁防护中的事件
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 
 Microsoft 威胁防护将从所有设备、用户和邮箱聚合所有相关的警报、资产、调查和证据，让你全面了解完整的攻击范围。 

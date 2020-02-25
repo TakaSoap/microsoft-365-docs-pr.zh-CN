@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d8ec204a0483edc6df6a5803659f33a5ed9ea146
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e3f51cfbe19a7b487f7382f0d2534b4a5efaab95
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600449"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235051"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 `DeviceImageLoadEvents` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关 DLL 加载事件的信息。 使用此参考来构建从此表返回信息的查询。
 

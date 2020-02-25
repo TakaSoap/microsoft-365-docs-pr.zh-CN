@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602749"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250472"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 托管桌面中处理更新
 
@@ -23,7 +23,7 @@ ms.locfileid: "41602749"
 
 <!--Update management -->
 
-Microsoft 托管桌面将所有设备连接到基于云的新式基础结构。 将 Windows、Office、驱动程序、固件和 Microsoft Store for Business 应用程序保持为最新是速度和稳定性的平衡。 将使用部署组来确保操作系统更新和策略以安全的方式进行分发。 
+Microsoft 托管桌面将所有设备连接到基于云的新式基础结构。 将 Windows、Office、驱动程序、固件和 Microsoft Store for Business 应用程序保持为最新是速度和稳定性的平衡。 将使用部署组来确保操作系统更新和策略以安全的方式进行分发。 有关此操作的详细信息，请参阅视频[Microsoft 托管桌面更改和发布过程](https://www.microsoft.com/videoplayer/embed/RE4mWqP)。
 
 由 Microsoft 发布的更新是累积的，并被分类为质量或功能更新。
 有关详细信息，请参阅[Windows update For Business：更新类型](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 

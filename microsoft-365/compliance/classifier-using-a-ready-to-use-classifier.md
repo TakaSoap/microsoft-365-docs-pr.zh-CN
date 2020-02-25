@@ -1,5 +1,5 @@
 ---
-title: 使用就绪分类器（预览）
+title: 使用内置分类器（预览）
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,15 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 提供了许多现成的可供使用的机器学习分类器，可用于在整个组织中标识和标记内容。 本主题介绍如何准备好使用类元的准备工作。
-ms.openlocfilehash: 8f3df8e7851bf453add162df4088e11dc7745cee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 附带了大量内置分类器，可用于在组织中标识和标记内容。 本主题介绍如何准备使用这些分类器。
+ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078789"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266728"
 ---
-# <a name="using-a-ready-to-use-classifier-preview"></a>使用就绪分类器（预览）
+# <a name="using-a-built-in-classifier-preview"></a>使用内置分类器（预览）
 
 Microsoft 已通过大量的示例数据集进行了培训和测试了大量分类程序，这有助于确定特定的内容类别。 请参阅[trainable 分类器的入门（预览）](classifier-getting-started-with.md)。 默认情况下， `Ready to use`这些分类器显示在组中。
 
@@ -33,14 +33,14 @@ Microsoft 已通过大量的示例数据集进行了培训和测试了大量分�
 - **威胁**：检测与威胁相关的冒犯性语言文本项的特定类别，以提交暴力或对人员或财产造成物理伤害或损坏。
 
 > [!NOTE]
-> 在使用准备就绪以在分类和标记工作流中使用分类器之前，应根据您认为适合类别的组织内容示例对其进行测试，以验证其分类预测是否符合您的预期。
+> 在分类和标记工作流中使用内置分类器之前，应根据您认为适合类别的组织内容示例对其进行测试，以验证其分类预测是否符合您的预期。
 
 > [!IMPORTANT]
 > 请注意，冒犯性语言、骚扰、猥亵和威胁分类器仅适用于可搜索文本不详尽或完整。 此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留在决定时更新这些分类器的权利。 虽然分类程序可以帮助组织监视攻击性和其他使用的语言，但分类程序不会解决此类语言的后果，也不打算提供组织的唯一方法来监视或响应使用此类语言。 您的组织（而不是 Microsoft 或其子公司）仍负责与监控、强制执行、阻止、删除和保留预先培训的分类器所标识的任何内容相关的所有决策。
 
-## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>如何准备和使用分类器准备就绪
+## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>如何准备和使用内置类元
 
-1. 收集您认为属于已准备好使用分类器的类别（正匹配）和您要测试的类别中不应包括的（负匹配）的 "可释放测试内容" 项。
+1. 收集您认为属于内置分类符的类别（正匹配）和您要测试的类别中不应包括的（负匹配）的 "可释放测试内容" 项。
 
 > [!IMPORTANT]
 > 示例项目不能加密且必须为英语。
@@ -65,7 +65,7 @@ Microsoft 已通过大量的示例数据集进行了培训和测试了大量分�
 
 10. 从列表中选择分类程序，在此示例中`Source Code`
 
-11. 对策略进行命名，例如 "源代码已准备好使用分类程序测试"。
+11. 为策略命名，例如 "源代码内置分类器测试"。
 
 12. 选择`Let me choose specific locations`。
 

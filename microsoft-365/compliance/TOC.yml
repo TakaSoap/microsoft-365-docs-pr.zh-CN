@@ -209,7 +209,7 @@
           href: data-classification-pub-preview-relnotes.md
         - name: 可训练分类器入门（预览）
           href: classifier-getting-started-with.md
-        - name: 使用就绪分类器（预览）
+        - name: 使用内置分类器（预览）
           href: classifier-using-a-ready-to-use-classifier.md
         - name: 创建和训练分类器（预览）
           href: classifier-creating-a-trainable-classifier.md

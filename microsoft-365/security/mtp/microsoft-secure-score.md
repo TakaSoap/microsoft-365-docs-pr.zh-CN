@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8bcfd7229a6e27b2e68523754c2b29c1bb9c3cdc
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087254"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266098"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -38,7 +38,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。
 
@@ -138,79 +138,13 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 
 若要使 Microsoft 安全得分更好地代表安全状态，我们做出了一些更改。
 
+若要了解计划的更改，请参阅[Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
+
 ### <a name="removed-not-scored-improvement-actions"></a>删除了 "未评分" 的改进操作
 
 安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议可能对分数有明显影响时，Microsoft 安全分数才有意义。 不计分的提高操作不可度量。  
 
 出于这些原因，未评分的所有改进操作均已删除。 您的部件不需要执行任何操作。
-
-## <a name="whats-coming"></a>接下来是什么？
-
-为了使 Microsoft 安全得分更好地代表安全状况并提高可用性，我们在不久的将来进行一些更改。 你的分数和可能的最大分数都将发生变化。 但是，这并不意味着您的安全状况发生了变化。
-
-### <a name="removing-improvement-actions-from-intune"></a>从 Intune 删除改进操作
-
-评估了 Intune 提供的 Microsoft 安全得分改进操作后，它决定了它们不提供组织中设备的安全状态的有用表示形式。 我们正在努力引入可直接评估设备配置状态的安全控制，而不是重点关注策略。
-
-将删除以下 Intune 改进操作：
-
-- 启用 Microsoft Intune 移动设备管理
-- 创建适用于 Android 的 Microsoft Intune 合规性策略
-- 创建适用于 Android 的 Microsoft Intune 合规性策略
-- 创建适用于 Android 的 Microsoft Intune 应用保护策略
-- 创建适用于 iOS 的 Microsoft Intune 应用保护策略
-- 标记不符合 Microsoft Intune 合规性策略的设备（未分配为不合规）
-- 创建适用于 iOS 的 Microsoft Intune 合规性策略
-- 为 macOS 创建 Microsoft Intune 合规性策略
-- 创建适用于 Windows 的 Microsoft Intune 合规性策略
-- 创建适用于 Android 的 Microsoft Intune 配置配置文件
-- 为适用于 Android 的工作创建 Microsoft Intune 配置配置文件
-- 为 macOS 创建 Microsoft Intune 配置文件
-- 为 iOS 创建 Microsoft Intune 配置文件
-- 为 Windows 创建 Microsoft Intune 配置文件
-- 在 Microsoft Intune 中启用增强型 jailbreak 检测
-- 要求对所有设备进行修补，并启用防病毒和防火墙
-- 启用 Microsoft Intune 中的 Windows Defender ATP 集成
-- 创建 Microsoft Intune Windows 信息保护策略
-- 要求所有设备都具有高级安全配置
-- 每周查看阻止的设备报告
-
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>删除不符合可靠测量预期的改进措施
-
-为了确保 Microsoft 安全分数是有意义的，并且每个改进操作都是可衡量和可靠的，我们将删除以下改进操作。
-
-- 启用审核数据记录
-- 发现有风险和不兼容的卷影 IT 应用程序
-- 查看权限 & 阻止连接到您的环境的有风险的 OAuth 应用程序
-- 在 SharePoint online 文档库中设置版本控制
-- 将用户文档存储在 OneDrive for Business 中
-- 不允许邮箱委派
-- 允许匿名来宾共享网站和文档的链接
-- 设置 Office 365 ATP 安全附件策略
-- 设置 Office 365 安全链接以验证 Url
-
-### <a name="mfa-improvement-action-updates"></a>MFA 改进操作更新
-
-为了反映企业在应用使用其业务的策略时确保 upmost 安全性的需求，Microsoft 安全记分将删除围绕多重身份验证的三个改进操作，并添加两个。
-
-将删除的三个：
-
-- 为多因素身份验证注册所有用户
-- 要求对所有用户进行 MFA
-- 需要对 Azure AD 特权角色进行 MFA
-
-添加了新的改进操作：
-
-- 确保所有用户都可以完成多重身份验证以实现安全访问
-- 需要对管理角色进行 MFA
-
- 这些新的改进操作需要为你的用户或管理员在你的目录中注册多重身份验证（MFA），并建立符合你的组织需求的一组适当的策略。 主要目标具有灵活性，同时确保所有用户和管理员都可以通过多个因素或基于风险的身份验证提示进行身份验证。 这可以采用设置安全默认值的形式，让 Microsoft 决定何时对用户进行 MFA，或拥有多个应用范围决策的策略。
-
-### <a name="removing-review-improvement-actions"></a>删除 "审阅" 改进操作
-
-安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议都可以清楚地影响分数时，一条 Microsoft 安全分数才有意义。 与其他改进操作相比，评审改进操作的计算方式不是相同标准。  
-
-出于这些原因，需要审阅节奏的所有改进操作都将暂时删除。 您的部件不需要执行任何操作。 
 
 ### <a name="preview-features"></a>预览功能
 

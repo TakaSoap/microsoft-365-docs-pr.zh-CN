@@ -1,5 +1,5 @@
 ---
-title: Microsoft 威胁防护中的自动调查和响应
+title: Microsoft 威胁防护中的自动化调查和响应功能
 description: 简要了解 Microsoft 威胁防护中的自动调查和响应功能
 keywords: 自动化, 调查, 警报, 触发器, 操作, 修正
 search.appverid: met150
@@ -18,23 +18,21 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: da7216aa94455a4b431e540b976f8a1662378a58
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f54ec3c0b318acaf6c81d26f32cfde5e87585a13
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600069"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261989"
 ---
-# <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的自动调查和响应 (AIR)
+# <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的自动化调查和响应（空气）功能
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+触发安全警报后，安全运营团队将负责调查这些警报并采取措施以保护你的组织。 对警报进行优先级划分和调查可能会非常耗时，如果在调查期间不断发出新警报，则尤为如此。 安全运营团队可能对必须监视和防范的大量威胁感到不知所措。 Microsoft 威胁防护中的自动化调查和响应（空中）功能可能会有所帮助。 AIR 就像是在安全运营中心中拥有虚拟分析员。
 
 ## <a name="your-virtual-analyst"></a>你的虚拟分析师
-
-触发安全警报后，安全运营团队将负责调查这些警报并采取措施以保护你的组织。 对警报进行优先级划分和调查可能会非常耗时，如果在调查期间不断发出新警报，则尤为如此。 安全运营团队可能对必须监视和防范的大量威胁感到不知所措。 
 
 想象一下，你的第 1 层/第 2 层安全运营团队中有一名虚拟分析师。 虚拟分析师模仿安全运营团队调查和修正威胁所采取的理想步骤。 虚拟助手可以全天候工作，且容量无限制，它承担大量的调查和威胁修正工作。 这样的虚拟助手可以大大减少响应时间，让你的安全运营团队腾出时间来进行其他重要的战略项目。 这种情况听起来像科幻小说？绝不是！ 这种虚拟分析师是 Microsoft 威胁防护套件的一部分，它的名称是“自动调查和响应”** (AIR)。
 
@@ -73,6 +71,7 @@ AIR 使你的安全运营团队能够极大地提高组织处理安全警报和�
 |订阅要求 |- 已启用标识和威胁防护的 Microsoft 365 E5 或 Microsoft 365 E3<br/>- 请参阅 [Microsoft 365 计划](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans)|
 |网络要求 |- 已启用 [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)<br/>- 已配置 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS)<br/>- [与 Azure ATP 集成的 MCAS](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
 |Windows 计算机要求 |- 已安装 Windows 10 版本 1709 或更高版本（请参阅 [Windows 10 发行信息](https://docs.microsoft.com/windows/release-information/)）<br/>- 已配置 [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- 已配置 [Windows Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
+|对电子邮件内容和 Office 文件的保护 |配置了[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 |权限 |- 若要*配置* AIR，必须在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配****“全局管理员”或“安全管理员”**** 角色。<br/><br/>- 若要*使用* AIR 功能，请参阅[操作中心任务所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)。 |
 
 ## <a name="next-steps"></a>后续步骤

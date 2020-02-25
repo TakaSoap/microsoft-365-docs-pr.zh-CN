@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ef68143d185b6b716b8b5c8213b1e4f3ea1a5abd
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087596"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235071"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft 威胁防护
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Microsoft 威胁防护是一种统一的前期和 post 违规企业防护套件，它固有集成在终结点、标识、电子邮件和应用程序上，以检测、阻止、调查和自动响应复杂的攻击。  
 

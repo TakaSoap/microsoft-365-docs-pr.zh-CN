@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219173"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262019"
 ---
-# <a name="go-to-the-action-center-to-view-remediation-actions"></a>转到操作中心以查看修正操作
+# <a name="the-action-center"></a>操作中心
 
 **适用于：**
 - Microsoft 威胁防护
 
-## <a name="a-single-pane-of-glass-experience"></a>“单窗格”体验
+使用操作中心查看组织设备和邮箱中的当前和过去调查的结果。 根据威胁的类型和得到的结论，将自动执行[更正操作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)，或在组织的安全操作团队批准时执行。 所有修正操作（无论是待批准还是已批准的操作）都合并在操作中心内。 
 
 ![操作中心](../../media/air-actioncenter.png)
 
-使用操作中心查看组织设备和邮箱中的当前和过去调查的结果。 根据威胁的类型和[最终结论](mtp-autoir-results.md#remediation-actions-following-automated-investigation)，自动执行修正操作，或者在组织的安全运营团队批准后执行修正操作。 所有修正操作（无论是待批准还是已批准的操作）都合并在操作中心内。 
+## <a name="a-single-pane-of-glass-experience"></a>“单窗格”体验
 
 操作中心提供任务的“单窗格”体验，例如：
 - 批准挂起的修正操作；
@@ -63,7 +63,6 @@ ms.locfileid: "42219173"
 
     - 如果调查涉及设备，则将在安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 中打开调查详细信息。 
 
-
 > [!TIP]
 > 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅[如何在 Microsoft 威胁防护中报告误报/负面的自动调查和响应（空中）功能](mtp-autoir-report-false-positives-negatives.md)。
 
@@ -82,6 +81,8 @@ ms.locfileid: "42219173"
 ## <a name="next-steps"></a>后续步骤 
 
 - [深入了解 Microsoft 威胁防护中的事件](incidents-overview.md)
+
 - [查看自动调查的结果](mtp-autoir-results.md)
+
 - [了解 Microsoft 威胁防护中的搜寻](advanced-hunting-overview.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 如何在 Microsoft 威胁防护中报告空气中的误报或虚假否定
+title: 在 Microsoft 威胁防护中处理空中误报或漏报
 description: 无线在 Microsoft 威胁防护中是否已错过或错误地检测到了什么？ 了解如何向 Microsoft 提交误报或漏报以进行分析。
 keywords: 自动化、调查、警报、触发器、操作、修正、误报、假负
 search.appverid: met150
@@ -19,23 +19,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 1177f552652e728928a2b1d322b4ce0217415509
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774188"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261999"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何报告自动调查和响应功能中的误报/否定
+# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>处理自动调查和响应功能中的误报/否定
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 在 Microsoft 威胁防护中是否进行了[自动化调查和响应功能](mtp-autoir.md)丢失或错误地检测到了什么？ 您可以采取一些步骤来修复它。 可执行下列操作：
+
 - [向 Microsoft 报告误报/负数，](#report-a-false-positivenegative-to-microsoft-for-analysis)或者
+
 - [调整通知](#adjust-an-alert-to-prevent-false-positives-from-recurring)（如果需要）;并 
+
 - [撤消对设备所执行的修正操作](#undo-a-remediation-action-that-was-taken-on-a-device)。 
 
 将本文用作指南。 
@@ -81,5 +82,7 @@ ms.locfileid: "41774188"
 ## <a name="related-articles"></a>相关文章
 
 - [批准或拒绝与自动调查和响应相关的操作](mtp-autoir-actions.md)
+
 - [详细了解操作中心](mtp-action-center.md)
+
 - [通过 Microsoft 威胁防护中的高级搜寻主动搜寻威胁](advanced-hunting-overview.md)

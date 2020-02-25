@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 34401bde5af594899f88b93f8ca76695ce3c7132
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602759"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235041"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [高级搜寻](advanced-hunting-overview.md)架构中的`DeviceEvents` "杂项设备事件" 或 "表" 包含有关各种事件类型的信息，包括由安全控制触发的事件，如 Windows Defender 防病毒和利用漏洞保护。 使用此参考来构建从此表返回信息的查询。
 

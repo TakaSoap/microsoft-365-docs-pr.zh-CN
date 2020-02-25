@@ -1,0 +1,42 @@
+---
+title: 匈牙利的支持信息
+author: cmcatee-MSFT
+f1.keywords:
+- NOCSH
+ms.author: cmcatee
+manager: mnirkhe
+audience: Admin
+ms.topic: reference
+ms.service: o365-administration
+ms.collection: Adm_Support
+localization_priority: Normal
+description: 了解如何联系你所在国家或地区的支持人员。
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 546d61ec55f6c0076aa9e33b315ddd239d23221d
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42252138"
+---
+# <a name="contact-support-for-hungary"></a>联系匈牙利支持
+
+[查找其他国家或地区](../contact-support-for-business-products.md)。
+
+## <a name="phone-number"></a>电话号码
++ 36 80 983 899
+
+## <a name="hours"></a>工作时间
+### <a name="billing-support"></a>帐单支持：
+
+英语：周一至周五上午9点-下午5点
+
+### <a name="technical-support"></a>技术支持：
+
+匈牙利语：周一至周五上午9点-6 点（下午6点）
+
+英语：每天24小时，每周7天
+
+备选电话号码： + 36 1 778 9292
+
+本地呼叫费用适用

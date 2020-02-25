@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: e75ef1523247cbddcf6cb28d69a889db1de8e42f
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 433813ed1a801117a88da696392030db5091b54b
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228528"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261049"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 中的自动调查遵循的补救措施
 
-## <a name="remediation-actions-overview"></a>修正操作概述
+## <a name="remediation-actions"></a>修正操作
 
 Office 365 中的[自动化调查和响应功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)高级威胁防护包括某些修正操作。 当自动调查运行或完成时，您通常会看到一个或多个需要安全操作团队批准才能继续执行的修正操作。 下表汇总了 Office 365 高级威胁防护中当前可用的补救措施。 
 
@@ -52,6 +52,8 @@ Office 365 中的[自动化调查和响应功能](https://docs.microsoft.com/mic
  - **批准**可开始进行修正。
  - **拒绝**无需进一步操作
 
-## <a name="related-articles"></a>相关文章
+## <a name="next-steps"></a>后续步骤
 
-[了解 Microsoft 威胁防护中的自动化调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [了解已损坏的用户安全行动手册](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly)
+
+- [查看你的 ATP 报告](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)

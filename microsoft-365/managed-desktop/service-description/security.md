@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 6b18b0c681950c2bce75045aef70dd3d021b0fb9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774228"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250432"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的安全性
 
@@ -26,7 +26,7 @@ Microsoft 托管桌面使用几种 Microsoft 技术来帮助保护受管理的�
 - [信息安全性](#information-security)–可选的可用服务以进一步保护敏感信息 
 
 
-
+有关 Microsoft 托管桌面的安全操作团队以及它们如何为你的设备提供安全性的详细信息，请参阅视频[Microsoft 托管桌面安全操作](https://www.microsoft.com/videoplayer/embed/RE4q6nP)。 
 
 ## <a name="device-security"></a>设备安全性
 
@@ -64,7 +64,7 @@ VPN | 客户拥有自己的 VPN 基础结构，以确保有限的公司资源可
 
 ## <a name="information-security"></a>信息安全
 
-客户可以配置这些可选的服务，以帮助保护公司的高价值资产。 
+您可以配置这些可选的服务，以帮助保护公司的高价值资产。 
 
 服务 | 说明
 --- | ---

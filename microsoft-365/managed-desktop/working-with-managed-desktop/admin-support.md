@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085703"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266088"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的管理员支持
 
@@ -59,12 +59,7 @@ ms.locfileid: "42085703"
 
 ![反馈表单](../../media/feedback_form.png)
 
-## <a name="provide-administrator-rights-to-specific-users"></a>向特定用户提供管理员权限
 
-在与支持人员合作的过程中，您可能需要向设备上的用户提供本地管理员权限，以协助进行故障排除。 若要执行此操作，您必须已在 Microsoft Intune 中具有全局管理员或设备管理员权限，才能获取自己的帐户。 按照以下任一步骤操作，具体取决于您的情况：
-
-- 如果你的用户是从本地 Active Directory 帐户同步的，请从提升的命令提示符运行**net localgroup administrators/add "Contoso\username"** 。
-- 如果你的用户是在 Azure Active Directory 中创建的，请从提升的命令提示符运行**net localgroup administrators/add "AzureAD\UserUpn"** 。
 
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面的最终用户支持](end-user-support.md)。 

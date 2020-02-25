@@ -1,5 +1,5 @@
 ---
-title: 查看自动调查的详细信息和结果
+title: 自动调查的详细信息和结果
 description: 在自动调查期间和之后，您可以查看结果和主要发现
 keywords: 自动化、调查、结果、分析、详细信息、修正、autoair
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 062dd86de49eb3dfe47566aa8d7269780cf9995c
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 6b3bc068e5da99e02a64463891e32d137c448d64
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175715"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261059"
 ---
-# <a name="view-the-details-and-results-of-an-automated-investigation"></a>查看自动调查的详细信息和结果
+# <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
 **适用于：**
 - Microsoft 威胁防护
@@ -70,7 +70,7 @@ ms.locfileid: "42175715"
 
 在调查详细信息视图中，您可以查看下表中所述的有关**调查图**、**警报**、**设备**、**标识**、**关键发现**、**实体**、**日志**和**待定操作**选项卡的信息。
 
-|Tab    |Description |
+|Tab    |说明 |
 |--------|--------|
 |调查图形    |提供调查的直观表示形式。 描述实体并列出发现的威胁以及警报以及是否有任何操作正在等待审批。<br/>您可以单击关系图上的某一项以查看更多详细信息。 例如，单击 "**发现威胁**" 图标将转到 "**关键调查结果**" 选项卡。 |
 |警报 |列出与调查相关的警报。 警报可以来自用户计算机上的威胁防护功能、Office 应用程序、云应用安全和其他 Microsoft 365 威胁防护功能。|
@@ -80,24 +80,9 @@ ms.locfileid: "42175715"
 |Log    |提供调查过程中执行的所有步骤的详细视图以及状态。|
 |挂起的操作    |列出需要审批才能继续的项目。|
 
-## <a name="remediation-actions-following-automated-investigation"></a>自动调查后的补救措施
-
-当自动调查完成时，将达到涉及的每条证据的结论，并确定修正操作。 在某些情况下，将自动执行更正操作;在其他情况下，补救措施等待审批。 下表列出了可能的 verdicts 和结果：
-
-|Verdict    |区域   |结果|
-|------|------|------|
-|恶意  |设备（终结点）    |将自动执行更正操作|
-|恶意  |电子邮件内容（Url 或附件） | 建议的修正操作处于待审批状态|
-|引入 |设备或电子邮件内容 |建议的修正操作处于待审批状态|
-|清理  |设备或电子邮件内容   |不需要任何修正操作|
-
-[在操作中心中查看挂起的操作](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
-
-> [!TIP]
-> 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅[如何在 Microsoft 威胁防护中报告误报/负面的自动调查和响应（空中）功能](mtp-autoir-report-false-positives-negatives.md)。
-
 ## <a name="next-steps"></a>后续步骤
 
 - [获取操作中心权限的概述](mtp-action-center.md#required-permissions-for-action-center-tasks)
+
 - [批准或拒绝与自动调查和响应相关的操作](mtp-autoir-actions.md)
 

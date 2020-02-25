@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f9d170ff16ccba4ef37231b37123f6818a2ae74
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f303ea37e67077c2a55c4fd94766b34671b78e5d
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600019"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235231"
 ---
 # <a name="whats-new-in-microsoft-365-security"></a>Microsoft 365 安全中心新增功能
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 本主题将介绍最新发布的 Microsoft 365 安全产品（GA）提供的功能。 
 

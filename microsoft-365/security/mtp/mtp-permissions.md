@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1b6411d04c2ecc8c646072e4da61dea1c470db5a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 110bbe6fe48932217c9bdc009d175161fe9226cd
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086971"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235191"
 ---
 # <a name="manage-access-to-microsoft-threat-protection"></a>管理对 Microsoft 威胁防护的访问权限
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 分配了以下 Azure Active Directory (AD) 角色的帐户可以访问 Microsoft 威胁防护功能和数据：
 - 全局管理员
