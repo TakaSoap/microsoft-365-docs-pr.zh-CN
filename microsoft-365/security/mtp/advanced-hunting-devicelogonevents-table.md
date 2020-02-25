@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 708e55db1c39d85501b1c42f9a46821bbc2eff9e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c7f1bba23379b25ccecc427b2aa866a1105396d
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600429"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235011"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 `DeviceLogonEvents` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关用户登录和其他身份验证事件的信息。 使用此参考来构建从此表返回信息的查询。
 

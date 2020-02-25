@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c4b3687fa3cf2ba65fabf11ee9ae18d5c0be5ca5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087511"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234781"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [高级搜寻](advanced-hunting-overview.md)架构中的 `EmailEvents` 表包含涉及 Office 365 ATP 处理电子邮件的事件的信息。 使用此参考来构建从此表返回信息的查询。
 
