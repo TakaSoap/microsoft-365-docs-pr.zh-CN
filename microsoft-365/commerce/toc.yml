@@ -1,16 +1,16 @@
-- name: 管理商业购买和帐单
+- name: 管理商业购买和计费
   href: index.md
   expanded: true
   items:
     - name: 管理订阅
       items:
-        - name: 管理第三方应用程序
+        - name: 管理第三方应用
           href: manage-saas-apps.md
         - name: 升级订阅
           href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
-        - name: 管理自助服务购买（用户）
+        - name: 管理自助购买（用户）
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
-        - name: 管理自助服务购买（管理员）
+        - name: 管理自助购买（管理员）
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
     - name: 管理许可证
       items:
@@ -18,7 +18,7 @@
           href: /microsoft-365/commerce/licenses/buy-licenses
         - name: 分配许可证
           href: /microsoft-365/admin/manage/assign-licenses-to-users
-        - name: 未分配许可证
+        - name: 取消分配许可证
           href: /microsoft-365/admin/manage/remove-licenses-from-users
         - name: 从订阅中删除许可证
           href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
@@ -26,17 +26,17 @@
       items:
         - name: 了解发票
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
-        - name: 管理付款方式
+        - name: 管理支付方式
           href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
         - name: 管理计费配置文件
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: 付款服务指令2和强客户身份验证
+        - name: 付款服务指令 2 和强客户身份验证
           href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: 计费帐户
       items:
-        - name: 管理帐单帐户
+        - name: 管理计费帐户
           href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
-        - name: 将租户与我的计费帐户关联
+        - name: 将租户与我的计费帐户相关联
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: 管理与我的合作伙伴的关系
       href: manage-partners.md
