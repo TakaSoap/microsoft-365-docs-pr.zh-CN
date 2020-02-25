@@ -1,88 +1,88 @@
-- name: 适用于企业的 Microsoft 365 文档和资源
+- name: Microsoft 365 企业版文档和资源
   href: index.yml
-- name: 适用于企业的 Microsoft 365 概述
+- name: Microsoft 365 企业版概述
   href: microsoft-365-overview.md
-- name: 部署适用于企业的 Microsoft 365
+- name: 部署 Microsoft 365 企业版
   href: deploy-microsoft-365-enterprise.md
   items:
     - name: 部署基础架构
       href: deploy-foundation-infrastructure.md
       items:
-        - name: 第1阶段-网络
+        - name: 阶段 1 - 网络
           href: networking-infrastructure.md
           items:
-            - name: 第1步-为 Microsoft 365 准备网络
+            - name: 第 1 步 - 准备用于 Microsoft 365 的网络
               href: networking-provide-bandwidth-cloud-services.md
-            - name: 步骤 2-为每个办公室配置本地 Internet 连接
+            - name: 第 2 步 - 配置每个办公室的本地 Internet 连接
               href: networking-dns-resolution-same-location.md
-            - name: 步骤 3-避免网络回流
+            - name: 第 3 步 - 避免网络回流
               href: networking-avoid-network-hairpins.md
-            - name: 第4步-配置流量旁路
+            - name: 第 4 步 - 配置流量旁路
               href: networking-configure-proxies-firewalls.md
-            - name: 第5步-优化客户端和 Office 365 服务性能
+            - name: 步骤 5 - 优化客户端和 Office 365 服务性能
               href: networking-optimize-tcp-performance.md
             - name: 网络阶段退出条件
               href: networking-exit-criteria.md
-        - name: 阶段 2-标识
+        - name: 阶段 2 - 标识
           href: identity-infrastructure.md
           items:
-            - name: 步骤 1-创建和保护全局管理员帐户
+            - name: 步骤 1 - 创建和保护全局管理员帐户
               href: identity-create-protect-global-admins.md
-            - name: 第2步-保护密码
+            - name: 第 2 步 - 保护密码安全
               href: identity-secure-your-passwords.md
-            - name: 步骤 3-保护和管理用户登录
+            - name: 步骤 3 - 保护和管理用户登录
               href: identity-secure-user-sign-ins.md
-            - name: 步骤 4-添加用户帐户
+            - name: 步骤 4 - 添加用户帐户
               href: identity-add-user-accounts.md
-            - name: 第5步-使用组进行管理
+            - name: 步骤 5 - 使用组进行管理
               href: identity-use-group-management.md
-            - name: 步骤 6-配置身份治理
+            - name: 步骤 6 - 配置标识治理
               href: identity-configure-identity-governance.md
             - name: “标识”阶段退出条件
               href: identity-exit-criteria.md
-        - name: 第3阶段-Windows 10 企业版
+        - name: 阶段 3 - Windows 10 企业版
           href: windows10-infrastructure.md
           items:
-            - name: 第1步-准备组织
+            - name: 第 1 步 - 让组织做好准备
               href: windows10-prepare-your-org.md
-            - name: 步骤 2-部署为就地升级
+            - name: 第 2 步 - 部署为就地升级
               href: windows10-deploy-inplaceupgrade.md
-            - name: 步骤 3-部署新设备
+            - name: 第 3 步 - 为新设备部署
               href: windows10-deploy-autopilot.md
-            - name: 步骤 4-监视设备运行状况和合规性
+            - name: 第 4 步 - 监视设备运行状况和合规性
               href: windows10-enable-windows-analytics.md
-            - name: 第5步-部署安全功能
+            - name: 第 5 步 - 部署安全功能
               href: windows10-enable-security-features.md
             - name: Windows 10 企业版阶段退出条件
               href: windows10-exit-criteria.md
-        - name: 第4阶段-Office 365 专业增强版
+        - name: 阶段 4 - Office 365 专业增强版
           href: office365proplus-infrastructure.md
           items:
             - name: Office 365 专业增强版阶段退出条件
               href: office365proplus-exit-criteria.md
-        - name: 第5阶段-移动设备管理
+        - name: 阶段 5 - 移动设备管理
           href: mobility-infrastructure.md
           items:
             - name: 移动设备管理阶段退出条件
               href: mobility-infrastructure-exit-criteria.md
-        - name: 第6阶段-信息保护
+        - name: 阶段 6 - 信息保护
           href: infoprotect-infrastructure.md
           items:
-            - name: 步骤 1-定义安全和信息保护级别
+            - name: 步骤 1 - 定义安全和信息保护级别
               href: infoprotect-define-sec-infoprotect-levels.md
-            - name: 步骤 2-为您的环境配置分类
+            - name: 第 2 步 - 配置环境分类
               href: infoprotect-configure-classification.md
-            - name: 第3步-为 Microsoft 365 配置增强的安全性
+            - name: '步骤 3 - 为 Microsoft 365 配置提升的安全性:'
               href: infoprotect-configure-increased-security-office-365.md
-            - name: 步骤 4-配置 Windows 信息保护
+            - name: 步骤 4 - 配置 Windows 信息保护
               href: infoprotect-deploy-windows-information-protection.md
-            - name: 第5步-配置 Office 365 数据丢失防护
+            - name: 步骤 5 - 配置 Office 365 数据丢失防护
               href: infoprotect-data-loss-prevention.md
-            - name: 步骤 6-配置电子邮件加密
+            - name: 步骤 6 - 配置电子邮件加密
               href: infoprotect-email-encryption.md
-            - name: 第7步-配置 Office 365 的特权访问管理
+            - name: 步骤 7 - 配置 Office 365 的特权访问管理
               href: infoprotect-configure-privileged-access-management.md
-            - name: “信息保护”阶段退出条件
+            - name: 信息保护阶段退出条件
               href: infoprotect-exit-criteria.md
         - name: 部署策略
           href: deployment-strategies-microsoft-365-enterprise.md
@@ -134,7 +134,7 @@
               href: password-writeback-m365-ent-test-environment.md
             - name: 密码重置
               href: password-reset-m365-ent-test-environment.md
-            - name: 自动授权和组成员身份
+            - name: 自动许可和组成员身份
               href: automate-licenses-group-membership-microsoft-365-test-environment.md
             - name: Azure AD Identity Protection
               href: azure-ad-identity-protection-microsoft-365-test-environment.md
@@ -186,12 +186,12 @@
           href: contoso-team-for-top-secret-project.md
         - name: 针对高度管控数据的 SharePoint 网站
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: 对适用于企业部署内容的 Microsoft 365 的更改
+    - name: Microsoft 365 企业版部署内容的更改
       href: microsoft-365-deploment-guide-changes.md
 - name: 桌面部署中心
   href: desktop-deployment-center-home.md
   items:
-    - name: 入门-人员、流程和技术指南
+    - name: 入门 - 人员、流程和技术指导
       href: getting-started.md
     - name: 步骤 1 - 设备和应用就绪情况
       href: step-1-device-and-app-readiness.md
@@ -217,11 +217,11 @@
       href: modern-desktop-deployment-and-management-lab.md
     - name: 查找有关部署的帮助
       href: find-help-for-modern-desktop-deployment.md
-- name: Microsoft 365 合规性
+- name: Microsoft 365 合规中心
   href: ../compliance/index.yml
 - name: Microsoft 365 安全
   href: ../security/index.yml
-- name: 使用云服务的企业业务连续性管理（EBCM）
+- name: 企业业务连续性管理 (EBCM) 和云服务
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
     - name: 客户和云合作伙伴 EBCM 职责
