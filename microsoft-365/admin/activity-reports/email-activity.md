@@ -1,0 +1,62 @@
+---
+title: Microsoft 365 管理中心内的报告-电子邮件活动
+ms.author: kwekua
+author: kwekua
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+- GEA150
+ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
+description: 了解如何在 Microsoft 365 管理中心使用 Microsoft 365 报告仪表板获取电子邮件活动报告。
+ms.openlocfilehash: db5deeecf5ff06620658d5731b65bf022a572184
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42238044"
+---
+# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a><span data-ttu-id="3623b-103">Microsoft 365 管理中心内的报告-电子邮件活动</span><span class="sxs-lookup"><span data-stu-id="3623b-103">Microsoft 365 Reports in the admin center - Email activity</span></span>
+
+<span data-ttu-id="3623b-104">Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。</span><span class="sxs-lookup"><span data-stu-id="3623b-104">The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization.</span></span> <span data-ttu-id="3623b-105">它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。</span><span class="sxs-lookup"><span data-stu-id="3623b-105">It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product.</span></span> <span data-ttu-id="3623b-106">请查看[报表概述主题](activity-reports.md)。</span><span class="sxs-lookup"><span data-stu-id="3623b-106">Check out [the Reports overview topic](activity-reports.md).</span></span>
+  
+<span data-ttu-id="3623b-107">例如，可从"报表"页获取有关组织内电子邮件流量的高级视图，然后可钻取"电子邮件"活动小组件，了解组织内电子邮件活动趋势和按用户的详细信息。</span><span class="sxs-lookup"><span data-stu-id="3623b-107">For example, you can get a high level view of email traffic within your organization from the Reports page, and then you can drill into the Email activity widget to understand the trends and per user level details of the email activity within your organization.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="3623b-108">您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。</span><span class="sxs-lookup"><span data-stu-id="3623b-108">You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports.</span></span> 
+
+## <a name="how-to-get-to-the-email-activity-report"></a><span data-ttu-id="3623b-109">如何访问电子邮件活动报表</span><span class="sxs-lookup"><span data-stu-id="3623b-109">How to get to the email activity report</span></span>
+
+1. <span data-ttu-id="3623b-110">在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。</span><span class="sxs-lookup"><span data-stu-id="3623b-110">In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.</span></span>
+
+    
+2. <span data-ttu-id="3623b-111">从 "**选择报告**" 下拉下，选择 " **Exchange** \> **电子邮件活动**"。</span><span class="sxs-lookup"><span data-stu-id="3623b-111">From the **Select a report** drop-down, select **Exchange** \> **Email activity**.</span></span>
+  
+## <a name="interpret-the-email-activity-report"></a><span data-ttu-id="3623b-112">解读电子邮件活动报表</span><span class="sxs-lookup"><span data-stu-id="3623b-112">Interpret the email activity report</span></span>
+
+<span data-ttu-id="3623b-113">可通过查看" **活动**"和" **用户**"图表，了解用户电子邮件活动。</span><span class="sxs-lookup"><span data-stu-id="3623b-113">You can get a view into your user's email activity by looking at the **Activity** and **Users** charts.</span></span> 
+  
+![电子邮件活动报告](../media/21c1e082-317e-4b5e-b736-661ca5744def.png)
+  
+|||
+|:-----|:-----|
+|<span data-ttu-id="3623b-115">1.</span><span class="sxs-lookup"><span data-stu-id="3623b-115">1.</span></span>  <br/> |<span data-ttu-id="3623b-116">可查看" **电子邮件活动**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。</span><span class="sxs-lookup"><span data-stu-id="3623b-116">The **Email activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days.</span></span> <span data-ttu-id="3623b-117">但是，如果您在报告中选择某一天，该表（7）将显示从当前日期起的最长28天的数据（而不是报告生成的日期）。</span><span class="sxs-lookup"><span data-stu-id="3623b-117">However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).</span></span>  <br/> |
+|<span data-ttu-id="3623b-118">2.</span><span class="sxs-lookup"><span data-stu-id="3623b-118">2.</span></span>  <br/> |<span data-ttu-id="3623b-119">每个报告中的数据通常最长为过去24到48小时。</span><span class="sxs-lookup"><span data-stu-id="3623b-119">The data in each report usually covers up to the last 24 to 48 hours.</span></span>  <br/> |
+|<span data-ttu-id="3623b-120">3.</span><span class="sxs-lookup"><span data-stu-id="3623b-120">3.</span></span>  <br/> |<span data-ttu-id="3623b-p103">通过" **活动**"图表可了解组织内进行的电子邮件活动的数量变化趋势。可了解有关电子邮件发送、阅读或接收活动的分布情况。  </span><span class="sxs-lookup"><span data-stu-id="3623b-p103">The **Activity** chart enables you to understand the trend of the amount of email activity going on in your organization. You can understand the split of email send or read or received activities.  </span></span><br/> |
+|<span data-ttu-id="3623b-123">4.</span><span class="sxs-lookup"><span data-stu-id="3623b-123">4.</span></span>  <br/> |<span data-ttu-id="3623b-p104">通过" **用户**"图表可了解生成电子邮件活动的唯一用户数的变化趋势。可查看进行电子邮件发送、阅读或接收活动的用户的变化趋势。  </span><span class="sxs-lookup"><span data-stu-id="3623b-p104">The **User** chart enables you to understand the trend of the amount of unique users who are generating the email activities. You can look at the trend of users performing send, reading or receiving email activities.  </span></span><br/> |
+|<span data-ttu-id="3623b-126">5.</span><span class="sxs-lookup"><span data-stu-id="3623b-126">5.</span></span>  <br/> | <span data-ttu-id="3623b-127">在" **活动**"图表中，Y 轴表示电子邮件发送、接收和阅读活动数。</span><span class="sxs-lookup"><span data-stu-id="3623b-127">On the **Activity** chart, the Y axis is the count of activity of the type email sent, email received and email read.</span></span>  <br/>  <span data-ttu-id="3623b-128">在" **用户**"活动图表中，Y 轴表示进行电子邮件发送、接收和阅读活动的用户。</span><span class="sxs-lookup"><span data-stu-id="3623b-128">On the **Users** activity chart, the Y axis is the user's performing activity of the type email sent, email received and email read.</span></span>  <br/>  <span data-ttu-id="3623b-129">这两个图表的 X 轴都表示此特定报表的所选日期范围。</span><span class="sxs-lookup"><span data-stu-id="3623b-129">The X axis on both charts is the selected date range for this specific report.</span></span>  <br/> |
+|<span data-ttu-id="3623b-130">6.</span><span class="sxs-lookup"><span data-stu-id="3623b-130">6.</span></span>  <br/> |<span data-ttu-id="3623b-131">您可以通过选择图例中的项目来筛选您在图表上看到的系列。</span><span class="sxs-lookup"><span data-stu-id="3623b-131">You can filter the series you see on the chart by selecting an item in the legend.</span></span> <span data-ttu-id="3623b-132">例如，在 "**活动**" 图表上，为特定的相关数据选择 "**已发送**"、"](../media/a3a9cb3d-b8b1-4c6a-9f6f-18aebf74c3a0.png) **已接收**" 或 "**阅读** ![筛选器图表"，仅查看与每个相关数据相关的信息。</span><span class="sxs-lookup"><span data-stu-id="3623b-132">For example, on the **Activity** chart, select **Sent**, **Received**, or **Read** ![Filter charts for specific related data](../media/a3a9cb3d-b8b1-4c6a-9f6f-18aebf74c3a0.png) to see only the info related to each one.</span></span> <span data-ttu-id="3623b-133">更改选择不会更改网格表中的信息。</span><span class="sxs-lookup"><span data-stu-id="3623b-133">Changing this selection doesn't change the info in the grid table.</span></span>  <br/> |
+|<span data-ttu-id="3623b-134">7.</span><span class="sxs-lookup"><span data-stu-id="3623b-134">7.</span></span>  <br/> | <span data-ttu-id="3623b-135">下表详细显示了按用户的电子邮件活动。</span><span class="sxs-lookup"><span data-stu-id="3623b-135">The table shows you a breakdown of the email activities at the per-user level.</span></span> <span data-ttu-id="3623b-136">表格显示了所有分配有 Exchange 产品的用户及其电子邮件活动。</span><span class="sxs-lookup"><span data-stu-id="3623b-136">This shows all users that have an Exchange product assigned to them and their email activities.</span></span> <br/> <br/> <span data-ttu-id="3623b-137">" **用户名**"是用户的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="3623b-137">**Username** is the email address of the user.</span></span>  <br/> <span data-ttu-id="3623b-138">如果用户为 "**显示名称**"，则为完整名称。</span><span class="sxs-lookup"><span data-stu-id="3623b-138">**Display name** is the full name if the user.</span></span>  <br/> <span data-ttu-id="3623b-139">**已删除**是指当前状态为已删除，但在报告的某个时间段处于活动状态的用户。</span><span class="sxs-lookup"><span data-stu-id="3623b-139">**Deleted** refers to the user whose current state is deleted, but was active during some part of the reporting period of the report.</span></span>  <br/> <span data-ttu-id="3623b-140">**删除日期**是指删除用户的日期。</span><span class="sxs-lookup"><span data-stu-id="3623b-140">**Deleted date** is the date the user was deleted.</span></span>  <br/> <span data-ttu-id="3623b-141">**上次活动日期**表示用户上次执行电子邮件阅读、发送活动的日期。</span><span class="sxs-lookup"><span data-stu-id="3623b-141">**Last activity date** refers to the last time the user performed a read or send email activity.</span></span>  <br/> <span data-ttu-id="3623b-142">" **发送操作**"是为用户记录的电子邮件发送操作的次数。</span><span class="sxs-lookup"><span data-stu-id="3623b-142">**Send actions** is the number of times an email send action was recorded for the user.</span></span>  <br/> <span data-ttu-id="3623b-143">" **接收操作**"是为用户记录的电子邮件接收操作的次数。</span><span class="sxs-lookup"><span data-stu-id="3623b-143">**Receive actions** is the number of times an email received action was recorded for the user.</span></span>  <br/> <span data-ttu-id="3623b-144">" **读取操作**"是为用户记录的电子邮件读取操作的次数。</span><span class="sxs-lookup"><span data-stu-id="3623b-144">**Read actions** is the number of times an email read action was recorded for the user.</span></span>  <br/> <span data-ttu-id="3623b-145">已**分配的产品**是分配给此用户的产品。</span><span class="sxs-lookup"><span data-stu-id="3623b-145">**Product assigned** is the products that are assigned to this user.</span></span>  <br/>  <span data-ttu-id="3623b-146">如果组织的策略阻止你查看显示了可识别用户信息的报表，可更改所有这些报表的隐私设置。</span><span class="sxs-lookup"><span data-stu-id="3623b-146">If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports.</span></span> <span data-ttu-id="3623b-147">请查看[Microsoft 365 管理中心的活动报告](activity-reports.md)中的 "**如何隐藏用户级别详细信息？** " 一节。</span><span class="sxs-lookup"><span data-stu-id="3623b-147">Check out the **How do I hide user level details?** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md).</span></span>  <br/> |
+|<span data-ttu-id="3623b-148">8.</span><span class="sxs-lookup"><span data-stu-id="3623b-148">8.</span></span>  <br/> |<span data-ttu-id="3623b-149">您还可以通过选择 "**导出** ![" "导出" 按钮](../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG)链接将报告数据导出到 Excel .csv 文件中。</span><span class="sxs-lookup"><span data-stu-id="3623b-149">You can also export the report data into an Excel .csv file, by selecting the **Export** ![Export button](../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) link.</span></span> <span data-ttu-id="3623b-150">此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。</span><span class="sxs-lookup"><span data-stu-id="3623b-150">This exports data of all users and enables you to do simple sorting and filtering for further analysis.</span></span> <span data-ttu-id="3623b-151">如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。</span><span class="sxs-lookup"><span data-stu-id="3623b-151">If you have less than 2000 users, you can sort and filter within the table in the report itself.</span></span> <span data-ttu-id="3623b-152">如果用户数超过 2000，则需要导出数据才能进行排序和筛选。</span><span class="sxs-lookup"><span data-stu-id="3623b-152">If you have more than 2000 users, in order to filter and sort, you will need to export the data.</span></span>  <br/> |
+|||
+   
+<span data-ttu-id="3623b-153">注意： "电子邮件活动" 报告仅适用于与拥有许可证的用户相关联的邮箱。</span><span class="sxs-lookup"><span data-stu-id="3623b-153">Note: The Email activity report is only available for mailboxes that are associated with users who have licenses.</span></span>
