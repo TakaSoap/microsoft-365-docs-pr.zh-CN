@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护（DLP）或保留策略中。
-ms.openlocfilehash: 7ebd991fe70401b91c14673bcff8aabbdabbda6a
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 877001784f30f4b51e0e8c9fdb15091ea6308bf5
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266874"
+ms.locfileid: "42277199"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>可训练分类器入门（预览）
 
@@ -44,10 +44,8 @@ ms.locfileid: "42266874"
 
 此分类方法尤其适合于手动或自动模式匹配方法无法轻松识别的内容。 此分类方法详细介绍了如何培训分类器，以根据项目的具体内容（而不是项目中的元素）来标识项目（模式匹配）。 分类器了解如何通过查看您感兴趣的内容的数百个示例来标识内容类型。 首先，我们对类别中明确的示例进行了介绍。 处理这些程序后，通过为匹配和不匹配的示例提供组合来对其进行测试。 然后，分类器将对任何给定项是否属于您要生成的类别进行预测。 然后，确认其结果，并对误报、负、误报和漏报进行排序，以帮助提高预测的准确性。 在发布训练有素的分类器时，它会通过 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。
 
-<!-- add link in the below note to sensitivity label topic when carolb provides -->
-
 > [!IMPORTANT]
-> 这两种类型的分类器都可作为基于条件和[通信合规性](communication-compliance.md)的[自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)的条件。
+> 这两种类型的分类器都可作为基于条件和[通信合规性](communication-compliance.md)的[自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)的条件。 敏感度标签只能将内置分类器用作条件，请参阅[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)。
 
 > [!IMPORTANT]
 > Trainable 类元仅适用于未加密且为英语的项目。

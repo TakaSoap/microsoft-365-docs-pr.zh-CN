@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/20/2020
+ms.date: 02/25/2020
 description: 了解如何通过 Office 365 高级威胁防护计划2中的自动调查和响应功能，来加快检测和解决受攻击的用户帐户的过程。
-ms.openlocfilehash: 7dfa1db02e777e3fdb546ebf948ebc297f1caad5
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228559"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280210"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>使用自动调查和响应解决已损坏的用户帐户
 
-[Office 365 高级威胁防护计划 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2)包括功能强大的[自动化调查和响应](office-365-air.md)（空气）功能。 此类功能可以将安全操作团队保存大量时间和处理威胁的工作。 Microsoft 继续改进安全功能。 最近，空中功能已得到增强，包括已损坏的用户安全行动手册（当前处于预览阶段）。 阅读本文，了解有关已损坏用户安全行动手册的详细信息。 [使用 Office 365 ATP 查看和响应用户泄露和限制泄露作用域](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)的详细信息，并查看博客文章加快了工作时间和限制
+[Office 365 高级威胁防护计划 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2)包括功能强大的[自动化调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)（空气）功能。 此类功能可以将安全操作团队保存大量时间和处理威胁的工作。 Microsoft 继续改进安全功能。 最近，空中功能已得到增强，包括已损坏的用户安全行动手册（当前处于预览阶段）。 阅读本文，了解有关已损坏用户安全行动手册的详细信息。 [使用 Office 365 ATP 查看和响应用户泄露和限制泄露作用域](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)的详细信息，并查看博客文章加快了工作时间和限制
 
 ![对受损用户的自动调查](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -56,7 +56,7 @@ ms.locfileid: "42228559"
 - [查看有关自动调查的详细信息](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> 您必须具有适当的权限才能执行以下任务。 查看[使用空中功能所需的权限](office-365-air.md#required-permissions-to-use-air-capabilities)。
+> 您必须具有适当的权限才能执行以下任务。 查看[使用空中功能所需的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)。
 
 ### <a name="view-and-investigate-restricted-users"></a>查看和调查受限制的用户
 
@@ -70,13 +70,13 @@ ms.locfileid: "42228559"
    ![其他通知小组件](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
    这将打开受限制的用户的列表。<br/>![Office 365 中的受限用户](/microsoft-365/media/office365atp-restrictedusers.jpg) 
 
-4. 选择列表中的用户帐户以查看详细信息并执行操作，例如，[释放受限制的用户](removing-user-from-restricted-users-portal-after-spam.md)。 
+4. 选择列表中的用户帐户以查看详细信息并执行操作，例如，[释放受限制的用户](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam)。 
 
 ### <a name="view-details-about-automated-investigations"></a>查看有关自动调查的详细信息
 
 自动调查开始后，您可以在 Office 365 安全 & 合规性中心中看到其详细信息和结果。 转到 "**威胁管理** > **调查**"，然后选择调查以查看其详细信息。
 
-若要了解详细信息，请参阅[查看调查的详细信息](air-view-investigation-results.md#view-details-of-an-investigation)。
+若要了解详细信息，请参阅[查看调查的详细信息](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)。
 
 ## <a name="keep-the-following-points-in-mind"></a>请记住以下几点
 
@@ -88,9 +88,9 @@ ms.locfileid: "42228559"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [查看使用 AIR 功能所需的权限](office-365-air.md#required-permissions-to-use-air-capabilities)
+- [查看使用 AIR 功能所需的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)
 
-- [查找和调查 Office 365 中的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
+- [查找和调查 Office 365 中的恶意电子邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
 
 - [了解 Microsoft Defender ATP 中的空气](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

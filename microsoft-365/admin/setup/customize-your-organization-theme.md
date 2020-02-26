@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何更改 Office 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
-ms.openlocfilehash: b59efa21195c0c7bed12c98b9d360d84451b3d35
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240245"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280180"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>自定义您的组织的 Office 365 主题
 
@@ -43,7 +43,7 @@ ms.locfileid: "42240245"
   - **使用自定义徽标图像**：选择是使用 URL 中的图像还是上载图像。 如果使用 URL，请确保该 URL 使用 HTTPS，其格式为 200 x 30 像素，任意大小的任意格式。 您可以在 10 KB 下上传一个徽标为 200 x 30 像素（JPG、PNG、GIF 或 SVG 格式）。
 
     > [!NOTE]
-    > 若要在 SharePoint 移动应用程序中显示徽标，请仅使用 SVG 图像。 以任何其他格式上载的图像不会显示在应用程序中。 
+    > 若要在 SharePoint 移动应用程序中显示徽标，请仅使用 SVG 图像。 以任何其他格式上载的图像不会显示在应用程序中。 在 SharePoint 移动应用程序中，徽标不可单击。
     
   - **使徽标可单击**：您可以将导航栏中的徽标用作指向任何公司资源的链接。 您可以在此处输入徽标的 URL，从 http://或 https://开始。 这是可选的。
     
