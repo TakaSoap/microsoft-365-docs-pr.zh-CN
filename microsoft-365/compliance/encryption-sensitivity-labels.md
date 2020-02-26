@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: 102d1da2ec5f49e26a634611f4f640a083d167ff
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101262"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278768"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -85,7 +85,7 @@ ms.locfileid: "42101262"
 |**具有管理员定义的权限的标签**|删除原有加密|应用新的标签加密|删除原有加密|
 
 请注意，如果应用了新的标签加密或删除了原有加密，则仅在应用标签的用户具有支持此操作的使用权限或角色时才会发生此情况：
-- “导出”或“完全控制”[使用权限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions)。
+- “导出”或“完全控制”[使用权限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
 - [权限管理颁发者/权限管理所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)或[超级用户](https://docs.microsoft.com/azure/information-protection/configure-super-users)角色。
 
 如果用户没有上述权限或角色之一，则无法应用标签，因此原有加密将保留。 用户会看到以下消息：**你无权对敏感度标签进行此更改。请联系内容所有者。**

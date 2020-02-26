@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: fe91f43d088242336d7e77e5422093979d34193b
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228588"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266738"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -332,7 +332,7 @@ ms.locfileid: "42228588"
 |从回收站删除文件|FileDeletedFirstStageRecycleBin|用户从网站的回收站中删除文件。|
 |从第二阶段回收站删除文件|FileDeletedSecondStageRecycleBin|用户从网站的第二阶段回收站中删除文件。|
 |已删除记录合规性策略标签|ComplianceRecordDelete|已删除归类为记录的文档。 当将内容分类为记录的保留标签应用于文档时，该文档被视为记录。|
-|检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签级别比网站的低。 <br/><br/> 如果应用于网站的敏感度标签优先级高于上传到网站的文档所应用的敏感度标签，则不会触发此事件。 有关敏感度标签优先级的详细信息，请参阅[标签优先级（顺序）](sensitivity-labels.md#label-priority-order-matters)。|
+|检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签的优先级比该网站应用的敏感度标签高。 例如，标有“机密”的文档上传到标有“常规”的网站上。 <br/><br/> 如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不触发此事件。 例如，标有“常规”的文档上传到标有“机密”的网站上。 有关敏感度标签优先级的详细信息，请参阅[标签优先级（顺序）](sensitivity-labels.md#label-priority-order-matters)。|
 |在文件中检测到恶意软件|FileMalwareDetected|SharePoint 防病毒引擎在文件中检测到恶意软件。|
 |已放弃文件签出|FileCheckOutDiscarded|用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的更改，而不将其保存到文档库中的文档版本。|
 |已下载的文件|FileDownloaded|用户从网站下载文档。|
@@ -519,6 +519,7 @@ ms.locfileid: "42228588"
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
+|访问的邮箱项目|MailItemsAccessed|已在邮箱中读取或访问邮件。 此活动的审核记录通过下面两种方式之一触发：当邮箱客户端（如 Outlook）对邮件执行绑定操作时，或者当邮箱客户端（如 Exchange ActiveSync 或 IMAP）同步邮箱文件夹中的项目时。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 调查被盗用的电子邮件帐户时，分析此活动的审核记录非常有用。 有关详细信息，请参阅 [高级审核](advanced-audit.md#access-to-crucial-events-for-investigations)中的“访问关键事件进行调查”部分。 |
 |已添加代理邮箱权限|AddMailboxPermissions|管理员已将一位用户（称为“代理”）的 FullAccess 邮箱权限分配给另一用户邮箱。 FullAccess 权限允许代理打开他人的邮箱，查看和管理邮箱内容。|
 |已添加或删除具有日历文件夹代理访问权限的用户|UpdateCalendarDelegation|已在其他用户邮箱的日历中添加或删除具有代理身份的用户。 日历代理为同一组织内的其他人授予管理邮箱所有者日历的权限。|
 |已向文件夹添加权限|AddFolderPermissions|已添加文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
@@ -725,7 +726,7 @@ ms.locfileid: "42228588"
 |已向团队添加自动程序|BotAddedToTeam|用户将自动程序添加到团队。|
 |已添加频道|ChannelAdded|用户将频道添加到团队。|
 |已添加连接器|ConnectorAdded|用户将连接器添加到频道。|
-|已添加成员|MemberAdded|团队所有者将成员添加到团队或群组聊天中。|
+|已添加成员|MemberAdded|团队所有者将成员添加到团队、频道或群组聊天中。|
 |已添加选项卡|TabAdded|用户将选项卡添加到频道。|
 |已更改的频道设置|ChannelSettingChanged|团队成员执行以下活动时将记录 ChannelSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 更改团队频道的名称（“**频道名称**”）。 <br/><br/>• 更改团队频道的说明（“**频道说明**”）。|
 |已更改组织设置|TeamsTenantSettingChanged|当全局管理员（使用 Microsoft 365 管理中心）执行以下活动时，将记录 TeamsTenantSettingChanged 操作；请注意，这些活动会影响整个组织的 Microsoft Teams 设置。 有关详细信息，请参阅 [Microsoft Teams 的管理员设置](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 为组织启用或禁用 Microsoft Teams（“**Microsoft Teams**”）。 <br/><br/>• 为组织启用或禁用 Microsoft Teams 和 Skype for Business 之间的互操作性（“**Skype for Business 互操作性**”）。 <br/><br/>• 在 Microsoft Teams 客户端中启用或禁用组织结构图视图（“组织结构图视图 **”）。<br/><br/>• 允许或禁止团队成员安排私人会议（“** 私人会议安排 **”）。<br/><br/>• 允许或禁止团队成员安排频道会议（“频道会议安排**”）。 <br/><br/>• 启用或禁用 Teams 会议中的视频呼叫（“**Skype 会议视频通话”）。<br/><br/>• 为组织启用或禁用 Microsoft Teams 聚会中的屏幕共享（“** Skype 会议屏幕共享 **”）。<br/><br/>• 允许或禁止将动画图像（称为 Giphys）添加到 Teams 对话（“动画图像**”）。 <br/><br/>• 更改组织的内容评级设置（“**内容评级**”）。 内容评级限制了可在对话中显示的动画图像的类型。 <br/><br/>• 允许或禁止团队成员将来自 Internet 的可自定义图像（称为自定义 Meme）添加到团队对话（“来自 Internet 的可自定义图像 **”）。<br/><br/>• 允许或禁止团队成员将可编辑图像（称为贴纸）添加到团队对话（“** 可编辑图像 **”）。<br/><br/>• 允许或禁止团队成员在 Microsoft Teams 聊天和频道中使用机器人（“组织范围内的机器人**”）。 <br/><br/>• 为 Microsoft Teams 启用特定的机器人。 这不包括 T-Bot，即组织启用机器人时可用的 Teams 帮助机器人（“**单个机器人**”）。 <br/><br/>• 允许或禁止团队成员添加扩展或选项卡（“**扩展或选项卡**”）。 <br/><br/>• 启用或禁用 Microsoft Teams 专有自动程序旁加载（“**自动程序旁加载**”）。 <br/><br/>• 允许或禁止用户向 Microsoft Teams 频道发送电子邮件（“**频道电子邮件**”）。|
@@ -736,7 +737,7 @@ ms.locfileid: "42228588"
 |已删除团队|TeamDeleted|团队所有者删除了团队。|
 |已从团队中删除自动程序|BotRemovedFromTeam|用户从团队中删除自动程序。|
 |已删除连接器|ConnectorRemoved|用户从频道删除连接器。|
-|已删除的成员|MemberRemoved|团队所有者从团队或群组聊天中删除成员。|
+|已删除的成员|MemberRemoved|团队所有者从团队、频道或群组聊天中删除成员。|
 |已删除选项卡|TabRemoved|用户从频道中删除选项卡。|
 |已更新连接器|ConnectorUpdated|用户修改了频道中的连接器。|
 |已更新选项卡|TabUpdated|用户修改了频道中的选项卡。|

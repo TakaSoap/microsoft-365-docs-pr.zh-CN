@@ -6,7 +6,7 @@
       href: microsoft-365-business-overview.md
     - name: 获取 Microsoft 365 商业版
       href: sign-up.md
-    - name: 数据保护先决条件
+    - name: 数据保护的先决条件
       href: pre-requisites-for-data-protection.md
     - name: 设置
       items:
@@ -34,7 +34,7 @@
           href: set-up-mobile-devices.md
         - name: 设置 Windows 设备
           href: set-up-windows-devices.md
-    - name: 保护业务
+    - name: 保护你的企业
       href: security-features.md
       items:
         - name: 设置 MFA
@@ -79,7 +79,7 @@
           href: migrate-from-e3.md
         - name: 迁移到 Microsoft 365 企业版
           href: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
-    - name: 帐单
+    - name: 计费
       items:
         - name: 你的账单
           href: /Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
@@ -99,7 +99,7 @@
           href: autopilot-profile-settings.md
         - name: 设备状态
           href: device-states.md
-    - name: Microsoft 365 商业版常见问题解答
+    - name: Microsoft 365 商业版常见问题
       href: support/microsoft-365-business-faqs.md
 - name: Office 365 企业版
   href: 'https://docs.microsoft.com/office365/enterprise'
