@@ -698,27 +698,30 @@
           href: manage-jobs.md
 - name: 管理审核和警报策略
   items:
-    - name: 搜索审核日志
-      href: search-the-audit-log-in-security-and-compliance.md
+    - name: 统一审核
+      items:
+        - name: 搜索审核日志
+          href: search-the-audit-log-in-security-and-compliance.md
+        - name: 启用或禁用审核日志搜索
+          href: turn-audit-log-search-on-or-off.md
+        - name: 审核日志中的详细属性
+          href: detailed-properties-in-the-office-365-audit-log.md
+        - name: 导出、配置和查看审核日志记录
+          href: export-view-audit-log-records.md
+        - name: 使用审核日志调查常见问题
+          href: auditing-troubleshooting-scenarios.md
+        - name: 在审核日志中使用共享审核
+          href: use-sharing-auditing.md
+        - name: 在审核日志中搜索电子数据展示活动
+          href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: 邮箱审核
+      href: enable-mailbox-auditing.md
     - name: 高级审核
       href: advanced-audit.md
-    - name: 启用或禁用审核日志搜索
-      href: turn-audit-log-search-on-or-off.md
-    - name: 管理邮箱审核
-      href: enable-mailbox-auditing.md
-    - name: 管理审核日志保留策略
-      href: audit-log-retention-policies.md
-    - name: 审核日志中的详细属性
-      href: detailed-properties-in-the-office-365-audit-log.md
-    - name: 导出、配置和查看审核日志记录
-      href: export-view-audit-log-records.md
-    - name: 使用审核日志调查常见问题
-      href: auditing-troubleshooting-scenarios.md
-    - name: 在审核日志中使用共享审核
-      href: use-sharing-auditing.md
-    - name: 在审核日志中搜索电子数据展示活动
-      href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: 管理警报策略
+      items:
+        - name: 管理审核日志保留策略
+          href: audit-log-retention-policies.md
+    - name: 警报策略
       href: alert-policies.md
 - name: 管理合规性风险
   items:
