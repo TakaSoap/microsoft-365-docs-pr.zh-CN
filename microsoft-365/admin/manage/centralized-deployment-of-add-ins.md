@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的 Office 365 租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: 4351658f2637b86c9b3233f55916d8e0ac0f8cfb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251132"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278758"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -32,7 +32,7 @@ ms.locfileid: "42251132"
 集中部署支持 Windows、Mac、iOS、Android 和 Online Office 应用。
 加载项最长可能需要12个小时才能为所有用户显示客户端。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 集中部署加载项需要用户使用 Office 365 专业增强版（并使用其组织 ID 登录到 Office），并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录目录必须处于或联合到 Azure Active Directory。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用[office 365 集中部署兼容性检查器](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)。
@@ -82,9 +82,9 @@ ms.locfileid: "42251132"
 有关 Office 365 专业增强订阅版 的帮助，请参阅 [Office 365 ProPlus 疑难解答提示](https://go.microsoft.com/fwlink/p/?linkid=846339)。
 
 
-### <a name="exchange-requirements"></a>Exchange 要求
+### <a name="exchange-online-requirements"></a>Exchange Online 要求
 
-Microsoft Exchange 存储组织的租户中的加载项清单。部署加载项的管理员和接收这些加载项的用户必须使用支持 OAuth 身份验证的 Exchange Server 版本。默认情况下，Exchange 多租户和专用 VNext 部署支持 OAuth。可将 Exchange 专用旧版和混合本地部署配置为支持 OAuth；但它不是默认配置。
+Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程序的管理员和接收这些外接程序的用户必须是支持 OAuth 身份验证的 Exchange Online 版本。 默认情况下，Exchange 多租户和专用 VNext 部署支持 OAuth。 
   
 请与组织的 Exchange 管理员联系，了解正在使用哪个配置。可使用 [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet 验证每个用户的 OAuth 连接。 
 

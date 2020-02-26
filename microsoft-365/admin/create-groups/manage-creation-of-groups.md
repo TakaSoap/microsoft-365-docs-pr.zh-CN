@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Office 365 组。
-ms.openlocfilehash: 1f0d3109d1102c740a9be0b670e618eac982e6e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a211cb3b69348a4d4a401a3c318fe019d8fd257f
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238074"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42277189"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>管理可创建 Office 365 组的人员
 
@@ -120,14 +120,20 @@ ms.locfileid: "42238074"
 2. 右键单击 **Windows PowerShell**，然后选择" **以管理员身份运行**"。
     
     ![通过'以管理员身份运行'打开 PowerShell。](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
+    
+3. 使用[ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)将策略设置为 RemoteSigned。
+    
+    ```
+    Set-ExecutionPolicy RemoteSigned
+    ```
   
-2. 检查已安装的模块：
+4. 检查已安装的模块：
     
     ```
     Get-InstalledModule -Name "AzureAD*"
     ```
 
-3. 3.要卸载早期版本的 AzureADPreview 或 AzureAD，请运行以下命令：
+5. 3.要卸载早期版本的 AzureADPreview 或 AzureAD，请运行以下命令：
   
     ```
     Uninstall-Module AzureADPreview
@@ -139,7 +145,7 @@ ms.locfileid: "42238074"
     Uninstall-Module AzureAD
     ```
 
-4. To install the latest version of AzureADPreview, run this command:
+6. To install the latest version of AzureADPreview, run this command:
   
     ```
     Install-Module AzureADPreview
