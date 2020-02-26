@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: 适用于管理员和 IT 专业人员的 Microsoft 365 帮助中心
+title: 面向管理员和 IT 专业人员的 Microsoft 365 帮助中心
 summary: 浏览 Microsoft 365 帮助和培训资源。
 brand: m365
 metadata:
-  title: 适用于管理员和 IT 专业人员的 Microsoft 365 帮助中心
-  description: 设置、部署和管理 Microsoft 365 以支持组织、小型企业、市场活动或教师和学生
+  title: 面向管理员和 IT 专业人员的 Microsoft 365 帮助中心
+  description: 设置、部署和管理 Microsoft 365 以支持你的组织、小型企业、市场活动或教师和学生
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.topic: hub-page
@@ -15,22 +15,22 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 0575321bf9ed7953389e5a6a8be6b8c21479326a
   ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 02/24/2020
   ms.locfileid: "42250462"
 highlightedContent:
   items:
-  - title: 针对管理员和 IT 专业人员的培训
+  - title: 管理员和 IT 专业人员培训
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
   - title: 面向最终用户的培训
     itemType: learn
     url: https://support.office.com/modernworkplace
-  - title: 在云中设置你的业务
+  - title: 在云中设置业务
     itemType: learn
     url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
-  - title: 适用于 IT 专业人员的测试实验室指南
+  - title: 面向 IT 专业人员的测试实验室指南
     itemType: how-to-guide
     url: ./enterprise/m365-enterprise-test-lab-guides.md
   - title: Microsoft 365 技术社区
@@ -41,30 +41,30 @@ highlightedContent:
     url: https://developer.microsoft.com/microsoft-365
 additionalContent:
   sections:
-  - title: 获取 Microsoft 365 的帮助
-    summary: 选择一个卡片以了解有关 Microsoft 365 的详细信息。
+  - title: 获取有关 Microsoft 365 的帮助
+    summary: 选择一个卡片，了解有关 Microsoft 365 的详细信息。
     items:
     - title: Microsoft 365 管理中心
-      summary: 设置和管理 Office 365 和 Microsoft 365 for business and 企业 subspcriptions。
+      summary: 设置和管理 Office 365 和 Microsoft 365 商业版和企业版订阅。
       url: ./admin/admin-home.md
     - title: Microsoft 365 商业版
-      summary: 专为中小型企业而设计。 使用最新版本的 Windows 和 Office 应用程序（如 Excel 和 Outlook）运行你的企业。 充分利用扩展到所有业务设备的数据保护和安全性。
+      summary: 专为中小型企业设计。 使用最新版的 Windows 和 Office（如 Excel 和 Outlook）运营业务。 充分利用可扩展到所有业务设备的数据保护和安全性。
       url: ./business/index.yml
-    - title: Microsoft 365 Enterprise
-      summary: 专为大型组织而设计。 保护您的业务并转换使用 Office 应用程序、Windows 10 和企业移动性 + 安全性的方式。
+    - title: Microsoft 365 企业版
+      summary: 专为大型组织设计。 保护你的企业并转换你使用 Office 应用、Windows 10 和企业移动性 + 安全性的方式。
       url: ./enterprise/index.yml
     - title: Microsoft 365 教育版
-      summary: 旨在为教育版提供创新、促进团队协作和为教育而打造的单个经济实惠的解决方案提供简单而安全的体验。
+      summary: 专为教育工作者设计，通过为教育版构建单一、价格合理的解决方案，使其可以充分发挥创造力、提升团队合作，并提供安全易用的用户体验。
       url: https://docs.microsoft.com/education/
-    - title: Microsoft 365 合规性
-      summary: 帮助您的组织管理信息、防止风险并遵守法律或法规标准。
+    - title: Microsoft 365 合规中心
+      summary: 帮助你的组织管理信息、防止风险并遵守法律或法规标准。
       url: ./compliance/index.yml
-    - title: Microsoft 365 安全
-      summary: 了解 Microsoft 365 安全中的强大安全解决方案和服务，以便您可以在受攻击的表面更好地保护组织。
+    - title: Microsoft 365 安全中心
+      summary: 了解 Microsoft 365 安全性中强大的安全解决方案和服务，以便你可以更好地跨攻击面保护组织。
       url: ./security/index.yml
     - title: Microsoft 365 for Campaigns
-      summary: 使用 Microsoft 365 商业版的推荐配置来保证您的市场活动或业务数据和通信的安全。
+      summary: 使用 Microsoft 365 商业版推荐的配置，让你的活动或业务数据和通信保持安全。
       url: ./campaigns/index.md
     - title: Microsoft 托管桌面
-      summary: Microsoft 托管桌面将 microsoft 365 企业版、基于云的设备管理和安全监控结合在一起，使您能够腾出 IT 团队重点关注核心业务需求。
+      summary: Microsoft 托管桌面将 Microsoft 365 企业版、Microsoft 基于云的设备管理和安全监控结合在一起，使你可以腾出 IT 团队以专注于核心业务需求。
       url: ./managed-desktop/index.yml
