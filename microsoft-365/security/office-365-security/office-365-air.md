@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
-ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.custom: air
+ms.openlocfilehash: c06874ea5d55334d9049d6c5d9d5c55a499dae06
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262009"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288470"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -28,7 +29,9 @@ ms.locfileid: "42262009"
 
 ## <a name="the-overall-flow-of-air"></a>空气的整体流动
 
-从较高的层次来看，空气流的工作原理如下所示：
+将触发警报，并启动安全行动手册，这将启动自动调查。 或者，安全分析员在使用威胁资源管理器时触发自动调查。 自动调查将运行，并且通常会确定某些修正操作。 这些操作由安全操作团队进行审阅和批准，并且调查完成。 
+
+下表逐步介绍了空气的整体流动，具体步骤如下：
 
 |步骤  |发生的情况  |
 |---------|---------|

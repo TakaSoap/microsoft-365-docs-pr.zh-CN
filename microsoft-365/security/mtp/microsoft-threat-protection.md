@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ef68143d185b6b716b8b5c8213b1e4f3ea1a5abd
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 62901a08b8e040266a94967170674336eb1035c8
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235071"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288590"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft 威胁防护
 
@@ -34,6 +34,17 @@ ms.locfileid: "42235071"
 Microsoft 威胁防护是一种统一的前期和 post 违规企业防护套件，它固有集成在终结点、标识、电子邮件和应用程序上，以检测、阻止、调查和自动响应复杂的攻击。  
 
 使用集成的 Microsoft 威胁防护解决方案，安全专业人员可以将威胁信号与这些产品中的每个产品一起接收并确定威胁的完整作用域和影响，并将它们结合起来。如何进入环境、受影响的内容以及当前对组织的影响。 Microsoft 威胁防护采用自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户身份。  
+
+
+<center><h2>Microsoft 威胁 Protection 服务</center></h2>
+<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender 高级威胁防护</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 高级威胁防护</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure 高级威胁防护</b></a></center></td>
+<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft 云应用安全</b></a></center></td>
+</tr>
+</table>
+<br>
+
 
 
 Microsoft 威胁防护套件保护： 
@@ -65,17 +76,8 @@ Microsoft 威胁防护跨产品功能包括：
 - **对受损设备、用户标识和邮箱的自我修复**-Microsoft 威胁防护使用通过 AI 的自动操作和行动手册将受影响的资产恢复为安全状态。 Microsoft 威胁防护利用套件产品的自动修正功能，以确保与事件相关的所有受影响的资产在可能的情况下会自动修正。
 - **跨产品威胁搜寻**-安全团队可以通过使用各种保护产品收集的原始数据创建自己的自定义查询，从而利用其独特的组织知识来寻找危害的迹象。 Microsoft 威胁防护提供了对30天的历史原始信号的基于查询的访问，并在终结点和 Office 365 ATP 数据中通知数据。 
 
-<center><h2>Microsoft 威胁 Protection 服务</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender 高级威胁防护</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 高级威胁防护</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure 高级威胁防护</b></a></center></td>
-<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft 云应用安全</b></a></center></td>
-</tr>
-</table>
-<br>
-
 
 ## <a name="get-started"></a>入门
-拥有 Microsoft 365 E5 或等效许可证的客户可以使用 Microsoft 威胁防护。 若要开始，请在 Microsoft 365 安全中心的[security.microsoft.com](https://security.microsoft.com)中启用该服务。 有关详细信息，请参阅：
+必须满足 microsoft 威胁防护许可要求，然后才能在[security.microsoft.com](https://security.microsoft.com)中启用 microsoft 365 安全中心中的服务。 有关详细信息，请参阅：
 - [授权要求](prerequisites.md#licensing-requirements)
 - [打开 Microsoft 威胁防护](mtp-enable.md)

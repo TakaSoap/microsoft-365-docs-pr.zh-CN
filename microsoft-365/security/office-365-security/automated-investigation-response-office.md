@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
-ms.openlocfilehash: 49b7e95e1669c106ee7f7bf9191ff8e73ae4802f
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.custom: air
+ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261969"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288500"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
 随着安全警报的触发，安全操作团队可查看这些警报并采取措施来保护您的组织。 有时，安全操作团队可能会受到触发的警报量的感觉的不知所措。 Office 365 中的自动化调查和响应（空中）功能可以帮助。 通过 AIR，您的安全操作团队可以更高效地运行。 空中功能包括自动调查过程，以响应目前存在的已知威胁。 适当的补救措施等待批准，使安全操作团队能够响应检测到的威胁。 
 
-本文提供了空气及其组件的概述。 当您准备好开始使用 AIR 时，请参阅在[Office 365 中自动调查和响应威胁](office-365-air.md)。
+本文提供了空中的概述。 当您准备好开始使用 AIR 时，请参阅在[Office 365 中自动调查和响应威胁](office-365-air.md)。
 
 ## <a name="at-a-high-level"></a>高级别
 

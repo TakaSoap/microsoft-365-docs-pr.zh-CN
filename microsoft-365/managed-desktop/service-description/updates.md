@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250472"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284373"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 托管桌面中处理更新
 
@@ -32,7 +32,7 @@ Microsoft 托管桌面将所有设备连接到基于云的新式基础结构。 
 
 Microsoft 托管桌面使用四个 Azure AD 组管理更新：
 
-- **测试**：用于验证 Microsoft 托管桌面策略更改、操作系统更新、功能更新以及推送到租户的其他更改。 测试组中不应放置任何最终用户。 测试组免除了任何已建立的服务级别协议和最终用户支持。 此组可用于验证应用程序与新策略或操作系统 hanges 的兼容性。  
+- **测试**：用于验证 Microsoft 托管桌面策略更改、操作系统更新、功能更新以及推送到租户的其他更改。 测试组中不应放置任何最终用户。 测试组免除了任何已建立的服务级别协议和最终用户支持。 此组可用于验证应用程序与新策略或操作系统更改的兼容性。  
 - **First**：包含早期的软件采用者和设备，它们可能受预发布更新的制约。 如果存在测试环中测试期间未涵盖的方案，则此组中的设备可能会遇到中断。
 - **Fast**：按稳定性对速度进行优先级划分。 用于在向广泛组提供质量问题之前检测质量问题。 此组可用作验证的下一层，但通常比测试和第一组更稳定。 
 - **广泛**：最后一个组具有可用的功能和质量更新。 此组包含租户中的大多数用户，因此在部署过程中比速度更有利于稳定性。 应在此完成应用程序的测试，因为环境最稳定。 

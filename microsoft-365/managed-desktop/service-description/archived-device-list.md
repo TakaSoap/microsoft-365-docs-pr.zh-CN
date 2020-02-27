@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085781"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284363"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
 
@@ -35,9 +35,12 @@ ms.locfileid: "42085781"
 
 | 模型  | 最低规范  | 其他要求   | 退休日期 |
 |---------|---------|---------|---------|
+| Dell Latitude 5490| 256 GB/Intel i5/8 GB RAM | 需要 IR 相机 | **2023年1月9日** |
+| Dell Latitude 7390 7390 2-in-1/7490 | 256 GB/Intel i5/8 GB RAM   | 需要 IR 相机 | **2023年1月9日** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU  | **2023年2月15日** |
 |HP 精英 x2 1013 G3| 256 GB/Intel i5/8 GB RAM | 带有5VS03AV 的 SKU，需要 IR 相机 |**5月14日，2023** |
 |HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 |**5月14日，2023** |
+|HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | **10月23日，2023** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | 无 | **2022年11月16日** |
 |Surface 膝上型电脑| 256 GB/Intel i5/8 GB RAM | 无 | **5月20日2022** |
 |Surface Pro| 256 GB/Intel i5/8 GB RAM | 无 | **2022年6月15日** |
@@ -47,7 +50,7 @@ ms.locfileid: "42085781"
 
 - 拥有由 Microsoft 托管桌面批准的图像。 对设备进行排序时，请确保指定它们与 Microsoft 托管桌面配合使用。
 - 尚未完成 Windows 首次运行体验。
-- 使用[设备注册](https://aka.ms/mmddrhelp)功能向 Microsoft 托管 Destkop 注册
+- 使用[设备注册](https://aka.ms/mmddrhelp)功能向 Microsoft 托管桌面注册
 
 #### <a name="additional-help"></a>其他帮助
 

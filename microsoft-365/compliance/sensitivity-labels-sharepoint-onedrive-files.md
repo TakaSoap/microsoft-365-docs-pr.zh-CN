@@ -17,32 +17,36 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: 5946fc193b0f96501a2f8168eef0d3e694d9cfcb
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 5d9b5a493b44ef4453906f1601481a6aa89c3884
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830976"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288530"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
-在此预览之前，当您将包含加密的敏感度标签应用于存储在 SharePoint 和 OneDrive 中的 Office 文件时，该服务无法处理这些文件的内容。 在这些情况下，合著、电子数据丢失、数据丢失防护、搜索、Delve 和其他协作功能不起作用。 此预览可在使用基于云的密钥应用加密时启用这些功能：
+在此预览之前，当您将包含加密的敏感度标签应用于存储在 SharePoint 和 OneDrive 中的 Office 文件时，该服务无法处理这些文件的内容。 在这些情况下，合著、电子数据丢失、数据丢失防护、搜索、Delve 和其他协作功能不起作用。 此预览对应用了敏感度标签的新文件和更改的文件启用了这些功能，其中包括基于云的密钥的加密：
 
-- SharePoint 识别应用于 SharePoint 和 OneDrive 中的 Word、Excel 和 PowerPoint 文件的敏感度标签。 SharePoint 还强制实施与每个标签对应的设置。
+- SharePoint 可识别应用于 SharePoint 和 OneDrive 中的 Word、Excel 和 PowerPoint 文件的敏感度标签。当文件存储在 SharePoint 中时，将删除来自 Azure 信息保护的加密，以便可以处理文件内容，并然后，在下载文件时，将重新应用标签中的加密设置。 有关在下载文档之前如何保护文档的信息，请参阅[OneDrive For business 和 SharePoint Online 中的数据加密](data-encryption-in-odb-and-spo.md)。
+ 
+- 若要使 SharePoint 在上载时对文件进行解密，上载已标记和已加密文件的用户必须至少具有查看该文件的使用权限。 SharePoint 不会对用户无法在 SharePoint 外部打开的文件进行解密。
 
-- 从 SharePoint 或 OneDrive 下载文件时，敏感度标签与文件一起移动，并且设置仍将强制实施。
+- 当您从 SharePoint 或 OneDrive 下载或访问文件时，敏感度标签和任何加密设置将随文件一起重新应用，并且在保存文件的任何位置都将强制执行这些设置。
 
-- 将敏感度标签应用于 Office 文件，并使用 Word、Excel 和 PowerPoint 的 web 版本打开和编辑已应用灵敏度标签的文件（如果标签的权限允许）。 在 web 上使用 Word 时，您还可以在编辑文档时使用自动标签。
+- 使用 web 上的 Office （Word、Excel、PowerPoint）打开和编辑具有应用加密的敏感度标签的 Office 文件。 将强制实施通过加密分配的权限。 在 web 上使用 Word 时，您还可以在编辑这些文档时使用自动标签。
 
-- Office 365 电子数据展示支持在应用了灵敏度标签的文件中进行全文搜索。 数据丢失防护（DLP）策略涵盖这些文件中的内容。
+- Office 365 电子数据展示支持对这些文件进行全文搜索。 数据丢失防护（DLP）策略涵盖这些文件中的内容。
 
-- 有三个新的审核事件可用于监视敏感度标签：
-  - FileSensitivityApplied
-  - FileSensitivityLabelChanged
-  - FileSensitivityLabelRemoved
+- 有三个新的[审核事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)可用于监视使用 web 上的 Office 应用的敏感度标签：
+  - **已向文件应用敏感度标签**
+  - **已更改应用于文件的敏感度标签**
+  - **已从文件除敏感度标签**
 
 > [!NOTE]
-> 如果加密尚未应用于基于云的密钥，而是本地密钥，则密钥管理拓扑通常称为 "保留自己的密钥" （HYOK），SharePoint 行为在此预览中不会更改。 
+> 如果加密尚未应用于基于云的密钥，而是本地密钥，则密钥管理拓扑通常称为 "保留自己的密钥" （HYOK），SharePoint 行为在此预览中不会更改。
+>
+> 在启用预览之前，sharepoint 行为也不会对 SharePoint 中的现有标记和加密文件进行更改。 为了让这些文件受益于新功能，必须下载和上载这些文件，或在启用预览后再对其进行编辑。 例如，它们将在搜索和电子数据展示结果中返回。
 
 现在，您还可以将灵敏度标签应用于 Microsoft 团队、Office 365 组和 SharePoint 网站。 有关此单独预览的详细信息，请参阅[使用敏感度标签与 Microsoft 团队、Office 365 组和 SharePoint 网站（公共预览版）](sensitivity-labels-teams-groups-sites.md)。
 
@@ -52,7 +56,7 @@ ms.locfileid: "41830976"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 这些功能仅适用于[敏感度标签](sensitivity-labels.md)。 如果你当前有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便可以为上传的新文件启用这些功能。 有关说明，请参阅[如何将 Azure 信息保护标签迁移到统一敏感度标签](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
@@ -66,7 +70,7 @@ ms.locfileid: "41830976"
     - 若要应用标签，请使用 Office 应用的 web 版本。
     - 在应用标签后关闭文件，然后重新打开该文件以进行其他更改。
 
-- SharePoint 不会自动将新标签应用于已使用 Azure 信息保护标签加密的现有文件。 若要在启用此预览后获取要运行的功能，请完成以下任务：
+- SharePoint 不会自动将灵敏度标签应用于已使用 Azure 信息保护标签加密的现有文件。 若要在启用此预览后获取要运行的功能，请完成以下任务：
     
     1. 确保已将 Azure 信息保护标签迁移到了敏感度标签，并已将其从 Microsoft 365 合规性中心或等效的标签管理中心进行了发布。
     
@@ -89,6 +93,8 @@ ms.locfileid: "41830976"
 - 以下列方式加密的文档无法在 web 上的 Office 中打开：
     - 使用本地密钥的加密（"保留自己的密钥" 或 HYOK）
     - 独立于标签（例如，通过直接应用权限管理保护模板）应用的加密。
+
+- 如果您删除了应用于 SharePoint 文档的标签，而不是从适用的标签策略中删除标签，则下载的文档不会被标记或加密。 相比之下，如果标记的文档存储在 SharePoint 外部，则在删除该标签时，该文档仍保持加密。 请注意，尽管您可以在测试阶段删除标签，但很少在生产环境中删除标签。
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>为预览准备 SharePoint Online 命令行管理程序
 

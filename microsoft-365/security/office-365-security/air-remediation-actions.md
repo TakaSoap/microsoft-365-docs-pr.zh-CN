@@ -15,18 +15,20 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: 433813ed1a801117a88da696392030db5091b54b
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: 0db49a28fb90bcddcdd874ac54216957e4be5fa1
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261049"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288510"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 中的自动调查遵循的补救措施
 
 ## <a name="remediation-actions"></a>修正操作
 
-Office 365 中的[自动化调查和响应功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)高级威胁防护包括某些修正操作。 当自动调查运行或完成时，您通常会看到一个或多个需要安全操作团队批准才能继续执行的修正操作。 下表汇总了 Office 365 高级威胁防护中当前可用的补救措施。 
+Office 365 中的[自动化调查和响应功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)高级威胁防护包括某些修正操作。 当自动调查运行或完成时，您通常会看到一个或多个需要安全操作团队批准才能继续执行的修正操作。 
+
+下表汇总了[Office 365 高级威胁防护](office-365-atp.md)中当前可用的补救措施。 
 
 |操作 | 说明 |
 |-----|-----|

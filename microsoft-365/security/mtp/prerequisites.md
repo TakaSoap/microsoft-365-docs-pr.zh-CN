@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ba50572405da05359594fea85fdba2d28f3b141b
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235221"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288540"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 
@@ -36,11 +36,11 @@ ms.locfileid: "42235221"
 了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。
 
 ## <a name="licensing-requirements"></a>许可要求
-若要使用 Microsoft 威胁防护，您需要以下许可证或许可证组合之一：
+若要使用 Microsoft 威胁防护，您需要以下许可证或许可证组合*之一*：
 
 - Microsoft 365 E5
 - Microsoft 365 E5 安全版
-- Office 365 E5、企业移动性 + 安全性 E5 和 Windows E5
+- Office 365 E5 和 "企业移动性 + 安全性 E5 （EMS E5）" 和 Windows E5
 
 [查看 Microsoft 365 企业版服务计划](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 

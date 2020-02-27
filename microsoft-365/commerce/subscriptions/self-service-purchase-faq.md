@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: b94a09757cf6e7126a6b7cc73ac5cc0930d1ea2e
-ms.sourcegitcommit: 08f9af6cd98e2de4bb634b90f5630e6a66676497
+ms.openlocfilehash: b385e5cae1f78f300655dd5c3a0dbf584dc69256
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42157374"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288490"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
@@ -151,4 +151,4 @@ IT 部门和合作伙伴不希望为通过自助购买购买的产品提供支�
 
 ### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>我可以在哪些国家/地区购买自助服务？
 
-可在以下国家/地区购买自助服务购买：澳大利亚、加拿大、法国、德国、日本、英国和美国。
+自助服务购买适用于以下国家/地区：澳大利亚、奥地利、比利时、保加利亚、加拿大、克罗地亚、塞浦路斯、捷克共和国、丹麦、爱沙尼亚、芬兰、法国、德国、希腊、拉脱维亚、冰岛、爱尔兰、意大利、日本、拉脱维亚立陶宛、卢森堡、马耳他、荷兰、挪威、波兰、葡萄牙、罗马尼亚、斯洛伐克、斯洛文尼亚、西班牙、瑞典、瑞士、英国和美国。

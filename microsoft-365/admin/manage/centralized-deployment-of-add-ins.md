@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的 Office 365 租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278758"
+ms.locfileid: "42284383"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -84,7 +84,7 @@ ms.locfileid: "42278758"
 
 ### <a name="exchange-online-requirements"></a>Exchange Online 要求
 
-Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程序的管理员和接收这些外接程序的用户必须是支持 OAuth 身份验证的 Exchange Online 版本。 默认情况下，Exchange 多租户和专用 VNext 部署支持 OAuth。 
+Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程序的管理员和接收这些外接程序的用户必须是支持 OAuth 身份验证的 Exchange Online 版本。
   
 请与组织的 Exchange 管理员联系，了解正在使用哪个配置。可使用 [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet 验证每个用户的 OAuth 连接。 
 
