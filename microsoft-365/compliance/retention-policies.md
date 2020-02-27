@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 9ecc74610c0d150dd511a8e24fb66037768587a4
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106870"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280200"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -275,7 +275,7 @@ Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中�
    > [!NOTE]
    > 过去的情况是，保留策略无法删除短于 30 天的 Teams 内容，但是我们已经删除了此限制。 现在，Teams 内容的保留期可以是你选择的任意天数，它可以短至 1 天。 如果保留期为一天，则在保留期到期后的最多三天内将永久删除消息。
     
-在团队中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 上传到频道的文件存储在团队的 SharePoint 网站中。 因此，要保留或删除团队中的文件，需要创建专门适用于 SharePoint 和 OneDrive 位置的保留策略。 如果希望仅将策略应用于特定团队的文件，可选择该团队的 SharePoint 网站以及该团队中用户的 OneDrive 帐户。
+在 Teams 中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 上传到通道的文件存储在团队的 SharePoint 站点中。 因此，若要在 Teams 中保留或删除文件，必须创建适用于 OneDrive 和 Office 365 组位置的保留策略。 若要将策略应用于仅由特定用户或团队在 Teams 中共享的文件，可以选择 OneDrive 或 Office 365 组位置，并添加特定用户或团队。
   
 应用于 Teams 的保留策略可使用[保留锁定](#locking-a-retention-policy)。
   
@@ -402,7 +402,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 
 负责创建保留策略的合规性团队成员必须有权访问[安全&amp;合规中心](https://protection.office.com/)。 默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对[安全&amp;合规中心](https://protection.office.com/)的访问权限，而不授予租户管理员的所有权限。为此，建议转到[安全&amp;合规中心](https://protection.office.com/)内的“**权限**”页，编辑“**合规性管理员**”角色组，再向此角色组添加成员。 
   
-有关详细信息，请参阅[授予用户访问 Office 365 安全与合规中心的权限](/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 
+有关详细信息，请参阅[授予用户访问 Office 365 安全与合规中心的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 
 
 只有在创建和应用保留策略时才需要这些权限。策略执行不需要访问此内容。
   

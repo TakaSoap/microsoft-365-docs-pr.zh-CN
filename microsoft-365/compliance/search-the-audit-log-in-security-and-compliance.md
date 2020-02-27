@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266738"
+ms.locfileid: "42277219"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -795,6 +795,9 @@ ms.locfileid: "42266738"
 
 在下面的说明中可以看到，一些操作包含其他活动参数。
 
+> [!NOTE]
+> 如果 Forms 活动由共同创作者或匿名响应者执行，则记录方式会稍有不同。 有关详细信息，请参阅[共同创作者和匿名响应者执行的 Forms 活动](#forms-activities-performed-by-co-authors-and-anonymous-responders)部分。
+
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
 |已创建批注|CreateComment|表单所有者向测验添加批注或分数。|
@@ -826,7 +829,23 @@ ms.locfileid: "42266738"
 |已提交响应|SubmitResponse|用户提交对表单的响应。 <br><br>属性 IsInternalForm:boolean 表示响应者是否与表单所有者位于同一组织中。|
 ||||
 
-### <a name="sensitivity-label-activities"></a>敏感度标签活动 
+#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>共同创作者和匿名响应者执行的 Forms 活动
+
+Forms 支持在设计表单时和分析响应时进行协作。 表单协作者被称为*共同创作者*。 共同创作者可执行表单所有者可执行的所有操作，但删除或移动表单除外。 Forms 还允许你创建可以匿名响应的表单。 这意味着响应者无需登录到组织即可响应表单。 
+
+下表介绍了共同创作者和匿名响应者执行的活动的审核记录中的审核活动和信息。
+
+|**活动类型**|**内部或外部用户**|**记录的用户 ID**|**登录到的组织**|**Forms 用户类型**|
+|:-----|:-----|:-----|:-----|:-----|
+|共同创作活动|内部|UPN|表单所有者的组织|共同创作者|
+|共同创作活动|外部|UPN<br>|共同创作者的组织<br>|共同创作者|
+|共同创作活动|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>（ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织<br>|共同创作者|
+|响应活动|外部|UPN<br>|响应者的组织<br>|响应者|
+|响应活动|外部|`urn:forms:external#a0b1c2d3@forms.office.com`<br>（用户 ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织|响应者|
+|响应活动|匿名|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>（用户 ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织|响应者|
+||||
+
+### <a name="sensitivity-label-activities"></a>敏感度标签活动
 
 下表列出了因标记 SharePoint Online 和 Teams 网站的活动而产生的事件。
 
