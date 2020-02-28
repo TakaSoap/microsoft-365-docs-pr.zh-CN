@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可将标签应用于 Microsoft Teams、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: 611876b7e403c8d877c602d21967675adef2d061
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 350e1906e4d645c444d772b1ade9a2ff9c850992
+ms.sourcegitcommit: 1b1425142ae06deae3da10a7d30dce4db029d6d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288555"
+ms.locfileid: "42313797"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
@@ -54,7 +54,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 2. 在 PowerShell 会话中，通过使用拥有全局管理员权限的工作或学校帐户，立即连接到安全与合规中心。 有关说明，请参阅[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
-3. 运行以下命令将标签同步到 Azure AD，使其可与 Office 365 组一起使用：
+3. 运行以下命令以将标签同步到 Azure AD，以便它们可与 Office 365 组一起使用：
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -78,7 +78,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 - **外部用户访问**：控制组所有者是否可[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-- **非管理的设备**：对于[非管理的设备](/sharepoint/control-access-from-unmanaged-devices)，允许完全访问、仅限 Web 的访问或完全阻止访问 
+- **未托管的设备**：对于[未托管的设备](/sharepoint/control-access-from-unmanaged-devices)，允许完全访问、仅限 Web 的访问或完全阻止访问。 
 
 ![网站和组设置选项卡](../media/edit-sensitivity-label-site-group.png)
 
@@ -128,7 +128,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 -  [为 Azure 门户中的现有组分配标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
--  [从 Azure 门户中的现有组中删除标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal)
+-  [从 Azure 门户中的现有组中删除标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal)。
 
 ## <a name="apply-a-sensitivity-label-to-a-new-team"></a>为新团队应用敏感度标签
 
@@ -164,7 +164,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 ## <a name="view-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 管理中心中查看敏感度标签
 
-若要查看应用的敏感度标签，请使用新 SharePoint 管理中心中的“**活动网站**”页面。 可能需要先添加“**敏感度**”列：
+若要查看应用的敏感度标签，请使用新 SharePoint 管理中心中的“**活动网站**”页面。 可能需要首先添加“**敏感度**”列：
 
 ![“活动网站”页面上的“敏感度”列](../media/manage-site-sensitivity-labels.png)
 
@@ -205,7 +205,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 ## <a name="support-for-the-sensitivity-labels"></a>敏感度标签支持
 
-可将为网站和组设置配置的敏感度标签用于以下应用和服务：
+可通过以下应用和服务使用为网站和组设置配置的敏感度标签：
 
 - SharePoint Online
 - Teams
@@ -256,7 +256,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 虽然无法阻止用户在尚不支持敏感度标签的应用和服务中创建新组，但可运行定期 PowerShell 标签来查看用户已使用旧分类创建的新组，并转换这些分类以使用敏感度标签。 
 
-#### <a name="use-powershell-to-convert-classifications-for-office-365-groups-to-sensitivity-labels"></a>使用 PowerShell 将 Office 365 组的分类转换为灵敏度标签
+#### <a name="use-powershell-to-convert-classifications-for-office-365-groups-to-sensitivity-labels"></a>使用 PowerShell 将 Office 365 组的分类转换为敏感度标签
 
 1. 确保你正在运行 SharePoint Online 命令行管理程序版本 16.0.19418.12000 或更高版本。 如果已有最新版本，跳至第 4 步。
 
@@ -266,7 +266,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
-3. 如果从 Microsoft 下载中心安装了早期版本的 SharePoint Online 命令行管理程序，请转到“**添加或删除程序**”并卸载 SharePoint Online 命令行管理程序。 然后，从“[下载中心](https://go.microsoft.com/fwlink/p/?LinkId=255251)”安装最新版本的 SharePoint Online 命令行管理程序。
+3. 如果从 Microsoft 下载中心安装了早期版本的 SharePoint Online 命令行管理程序，请转到“**添加或删除程序**”并卸载“SharePoint Online 命令行管理程序”。 然后，从“[下载中心](https://go.microsoft.com/fwlink/p/?LinkId=255251)”安装最新版本的 “SharePoint Online 命令行管理程序”。
 
 4. 使用在 Office 365 中拥有全局管理员或 SharePoint 管理员权限的工作或学校帐户，连接到 SharePoint Online 命令行管理程序。 若要了解具体操作步骤，请参阅 [SharePoint Online 命令行管理程序入门](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
@@ -301,7 +301,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 虽然此操作未被阻止，但它会经过审核，因此你可识别存在这种标签优先级不一致情况的文档，并在必要时采取措施。 例如，从网站中删除或移动已上传的文档。 
 
-如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则没有安全隐患。 例如，标有“**常规**”的文档上传到标有“**机密**”的网站上。 在这种情况中，不生成审核事件。
+如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不会出现安全问题。 例如，标有“**常规**”的文档上传到标有“**机密**”的网站上。 在这种情况中，不生成审核事件。
 
 要搜索此事件的审核日志，请从“**文件和页面活动**”类别中查找“**检测到文档敏感度不匹配**”。 
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 5a9ebf1cb2333f4aa7ca98ce36171ad5fce8dad2
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278768"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328116"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -155,7 +155,10 @@ ms.locfileid: "42278768"
 - 组织中的任何人（所有租户成员）。此设置不包括来宾帐户。
 - 所有经过身份验证的用户。 选择前，请确保你了解此设置的相关[要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
 - 任何特定用户或启用了电子邮件的安全组、通讯组、Office 365 组或动态通讯组。 
-- 组织外部的任何电子邮件地址或域，例如 gmail.com、hotmail.com 或 outlook.com。 
+- 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com**或 **outlook.com**。
+
+> [!NOTE]
+> 如果从使用 Azure AD 的组织中指定一个域，则无法将访问权限局限于该特定域。 转而对于拥有你指定的域名的租户来说，会自动包含 Azure AD 中已经过验证的所有域。
 
 选择所有租户成员或浏览目录时，用户或组必须具有电子邮件地址。
 
@@ -163,7 +166,7 @@ ms.locfileid: "42278768"
 
 ##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>有关**添加任何经过身份验证的用户**的要求和限制
 
-此设置不会限制谁可访问标签加密的内容，但仍会加密内容并向你提供用来限制内容使用方式（权限）和访问方式（过期和脱机访问）的选项。 但是，打开加密内容的应用程序必须能够支持正在使用的身份验证。 由此，联合社交提供商（如 Google）和一次性密码身份验证仅适用于电子邮件，且仅在你使用 Exchange Online 以及 Office 365 邮件加密中的新功能时才适用。 Microsoft 帐户可与 Office 365 应用和 [Azure 信息保护查看器](https://portal.azurerms.com/#/download)一起使用。
+此设置不会限制谁可访问标签加密的内容，但仍会加密内容并向你提供用来限制内容使用方式（权限）和访问方式（过期和脱机访问）的选项。 但是，打开加密内容的应用程序必须能够支持正在使用的身份验证。 由此，联合社交提供商（如 Google）和一次性密码身份验证仅适用于电子邮件，且仅在你使用 Exchange Online 时才适用。 Microsoft 帐户可与 Office 365 应用和 [Azure 信息保护查看器](https://portal.azurerms.com/#/download)一起使用。
 
 “所有经过身份验证的用户”设置的一些典型场景：
 - 你不在乎谁会查看内容，但你想要限制内容使用方式。 例如，你不希望内容遭到编辑、复制或打印。
@@ -175,9 +178,9 @@ ms.locfileid: "42278768"
 选择允许为这些用户或组使用哪些权限时，可以选择：
 
 - 具有预设权限组的[预定义权限级别](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，例如共同创作或审阅者。
-- 自定义权限组，可选择想要允许使用的任何权限。
+- 自定义权限，可在其中选择一个或多个使用权限。
 
-有关每个特定权限的详细信息，请参阅[使用权限和说明](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
+有关帮助你选择适当权限的详细信息，请参阅[使用权限和说明](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
 ![选择预设权限或自定义权限的选项。](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -255,6 +258,97 @@ ms.locfileid: "42278768"
 - MacOS：“**查看**”选项卡 >“**保护**” > “**权限**” > “**受限访问**”
 
 
+## <a name="example-configurations-for-the-encryption-settings"></a>加密设置的配置示例
+
+对于后面的每个示例，请在[创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)时通过“**加密**”页面进行配置。 首先，请确保“**加密**”设置为“**应用**”：
+
+![应用敏感度标签向导中的加密选项](../media/apply-encryption-option.png)
+
+### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>示例 1：应用“请勿转发”以将加密的电子邮件发送至 Gmail 帐户的标签
+
+此标签仅适用于 Outlook 和 Outlook 网页版，且你必须使用 Exchange Online。 在用户需要向使用 Gmail 帐户（或你组织外部的任何其他电子邮件帐户）的人员发送加密电子邮件时，指示这些用户选择此标签。 
+
+用户需在“**收件人**”框中键入 Gmail 电子邮件地址。  然后选中该标签，“请勿转发”选项会自动添加到电子邮件中。 这样的话，收件人就无法转发、打印或复制该电子邮件，也不能使用“**另存为**”选项在其邮箱之外保存该电子邮件。 
+
+1. 在“**加密**”页面上：对于“**立即分配权限还是让用户决定?**”，选择“**允许用户在应用标签时自行分配权限**”。
+
+3. 选择复选框：**在 Outlook 中，强制实施与“请勿转发”选项等效的限制**。
+
+4. 如果选中，请清除复选框：**在 Word、PowerPoint 和 Excel 中提示用户指定权限**。
+
+5. 选择“**下一步**”并完成向导。
+
+
+### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>示例 2：将只读权限局限于另一组织中的所有用户的标签
+
+此标签适用于以只读形式共享非常敏感的文档，文档始终需要 Internet 连接才能查看。
+
+此标签不适用于电子邮件。
+
+1. 在“**加密**”页面上：对于“**立即分配权限还是让用户决定?**”，选择“**立即分配权限**”。
+
+3. 对于“**允许脱机访问**”，选择“**从不**”。
+
+4. 选择“**分配权限**”。
+
+3. 在“**分配权限**”窗格上，选择“**添加以下电子邮件地址或域**”。
+
+4. 在文本框中，输入另一组织中的域的名称，例如 **fabrikam.com**。 然后，选择“**添加**”。
+
+5. 选择“**从当前选择权限或自定义**”。
+
+6. 在“**从当前选择权限或自定义**”窗格中，选择下拉框，选择“**查看者**”，然后选择“**保存**”。
+
+6. 返回到“**分配权限**”窗格中，选择“**保存**”。
+
+7. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
+
+
+### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>示例 3：将外部用户添加到加密内容的现有标签
+
+添加的新用户将能够打开已使用此标签保护的文档和电子邮件。 授予这些用户的权限可能与现有用户拥有的权限不同。
+
+1. 在“**加密**”页面上：对于“**立即分配权限还是让用户决定?**”，确保选中“**立即分配权限**”。
+
+2. 选择“**分配权限**”。
+
+3. 在“**分配权限**”窗格上，选择“**添加以下电子邮件地址或域**”。
+
+4. 在文本框中，输入要添加的第一名用户（或组）的电子邮件地址，然后选择“**添加**”。
+
+5. 选择“**从当前选择权限或自定义**”。
+
+6. 在“**从当前选择权限或自定义**”窗格中，选择此用户（或组）的权限，然后选择“**保存**”。
+
+7. 返回到“**分配权限**”窗格，对要添加到此标签的每位用户（或组）重复步骤 3 到步骤 6。 然后单击“**保存**”。
+
+8. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
+
+
+### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>示例 4：对内容进行加密但不限制可访问的人员的标签
+
+此配置的优势在于，你无需指定用户、组或域即可加密电子邮件或文档。 内容仍将被加密，但你仍可指定使用权限、过期日期和脱机访问权限。 
+
+仅在无需限制谁可打开受保护的文档或电子邮件时才使用此配置。 [有关此设置的详细信息](#requirements-and-limitations-for-add-any-authenticated-users)
+
+1. 在“**加密**”页面上：对于“**立即分配权限还是让用户决定?**”，确保选中“**立即分配权限**”。
+
+2. 根据需要配置“**用户访问内容的权限过期**”和“**允许脱机访问**”。
+
+3. 选择“**分配权限**”。
+
+4. 在“**分配权限**”窗格中，选择“**添加任何经过身份验证的用户**”。 
+    
+    对于“**用户和组**”，你将看到 **AuthenticatedUsers** 已自动添加。 无法更改此值，只能将其删除，但这会取消选择“**添加任何经过身份验证的用户**”。
+
+5. 选择“**从当前选择权限或自定义**”。
+
+6. 在“**从当前选择权限或自定义**”窗格中，选择下拉框，选择所需的“**查看者**”权限，然后选择“**保存**”。
+
+7. 返回到“**分配权限**”窗格中，选择“**保存**”。
+
+8. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
+
 ## <a name="considerations-for-encrypted-content"></a>有关加密内容的注意事项
 
 加密最敏感的文档和电子邮件有助于确保只有授权人员可访问此数据。 但是，需要考虑以下注意事项：
@@ -291,9 +385,9 @@ ms.locfileid: "42278768"
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>配置用于 Azure 信息保护的 Exchange
 
-在用户能够在 Outlook 中应用标签以保护其电子邮件前，无需对 Exchange 进行配置以用于 Azure 信息保护。但是，如果没有针对 Azure 信息保护对 Exchange 进行配置，你将无法在 Exchange 中获取使用 Azure Rights Management 的完整功能。
+无需针对 Azure 信息保护进行配置，用户即可在 Outlook 中应用标签来加密其电子邮件。 但是，除非已针对 Azure 信息保护进行了配置，否则无法通过 Exchange 获得使用 Azure 权限管理保护的完整功能。
  
-例如，用户无法查看移动电话或 Outlook 网页版上受保护的电子邮件，无法索引受保护的电子邮件以用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。 
+例如，用户无法查看移动电话或 Outlook 网页版上机密的电子邮件，无法索引加密的电子邮件用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。 
 
 为确保 Exchange 可以支持这些其他应用场景，请参阅以下内容：
 
