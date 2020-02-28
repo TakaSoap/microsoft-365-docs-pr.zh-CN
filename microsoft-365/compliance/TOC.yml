@@ -65,7 +65,7 @@
       items:
         - name: 了解特权访问管理
           href: privileged-access-management-overview.md
-        - name: 配置特权访问管理
+        - name: 特权访问管理入门
           href: privileged-access-management-configuration.md
     - name: 保护用户和设备的访问权限
       href: protect-access-to-data-and-services.md
@@ -621,14 +621,15 @@
         - name: 保存密件抄送和展开的通讯组收件人
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 管理数据调查
-  href: overview-data-investigations.md
   items:
+    - name: 数据调查概述
+      href: overview-data-investigations.md
     - name: 管理数据泄漏事件
       href: manage-data-spillage-incidents.md
+    - name: 为数据调查分配权限
+      href: data-investigations-permissions.md
     - name: 创建新调查
       href: create-new-investigation.md
-    - name: 为数据调查分配权限
-      href: permissions.md
     - name: 在调查中搜索数据
       href: search-for-data.md
       items:
