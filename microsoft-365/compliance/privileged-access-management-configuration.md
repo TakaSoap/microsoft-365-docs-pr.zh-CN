@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中配置特权访问管理
+title: 特权访问管理入门
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: 使用本主题可了解有关在 Office 365 中配置特权访问管理的详细信息
-ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 使用本主题可了解有关配置特权访问管理的详细信息。
+ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601729"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322522"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中配置特权访问管理
+# <a name="get-started-with-privileged-access-management"></a>特权访问管理入门
 
 >[!IMPORTANT]
 >本主题介绍了 Office 365 E5 和高级合规 Sku 中目前仅提供的功能的部署和配置指南。
@@ -279,7 +279,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 5. 选择要删除的策略，然后选择 "**删除策略**"。
 
-6. 选择“关闭”****。
+6. 选择“**关闭**”。
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell 中
 

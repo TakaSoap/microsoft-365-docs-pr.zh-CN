@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7c2a19a58dd616e2516ea70492f4f65ab211441
-ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
+ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41916877"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322551"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -56,15 +56,11 @@ GDPR 授予人们管理组织收集的个人数据的权限。 可通过数据�
 
 如上所述，GDPR 的建议操作计划和责任就绪清单提供了使用 Microsoft 产品和服务实施或评估 GDPR 一致性的指南。
 
-## <a name="the-gdpr-in-action"></a>现行的 GDPR
-
-本节提供了完成上述 GDPR 任务的大纲和思路。 这些任务的完成情况可能因 Microsoft 配置而异。
-
-### <a name="data-subject-request-dsr"></a>数据主体请求 (DSR)
+## <a name="data-subject-request-dsr"></a>数据主体请求 (DSR)
 
 GDPR 授予个人（或数据主体）与处理个人数据相关的某些权限，包括有权更正不准确数据、清除数据或限制数据处理、接收数据，以及满足将数据传输给另一个控制者的请求。 控制者负责提供及时的 GDPR 一致回复。 有关技术详细信息，请参阅[数据主体请求](gdpr-data-subject-requests.md)。  
 
-#### <a name="dsr-faqs"></a>DSR 常见问题解答
+### <a name="dsr-faqs"></a>DSR 常见问题解答
 
 **完成 DSR 将需要采取哪些操作？**
 
@@ -105,11 +101,11 @@ GDPR 要求控制者能够：
 
 联机服务提供了许多功能，以助力控制者响应数据主体请求。 Microsoft 企业联机服务和管理控件有助于你对个人数据执行操作，以响应数据主体权利请求，同时还便于你发现、访问、纠正、限制、删除和导出 Microsoft 云中存储的控制者托管数据内驻留的个人数据。 联机服务还可以根据需要提供计算机可读形式的数据。
 
-### <a name="data-protection-impact-assessment"></a>数据保护影响评估
+## <a name="data-protection-impact-assessment"></a>数据保护影响评估
 
 根据 GDPR，数据控制者需要为“可能对自然人的权限和自由造成高风险”的处理操作准备[数据保护影响评估](gdpr-data-protection-impact-assessments.md) (DPIA)。 Microsoft 产品和服务不需要创建 DPIA。 相反，它取决于 Microsoft 配置的详细信息。 可在 [DPIA 内容](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia)中找到必须在 Office 中考虑的详细信息列表
 
-#### <a name="dpia-faqs"></a>DPIA 常见问题解答
+### <a name="dpia-faqs"></a>DPIA 常见问题解答
 
 **何时应该执行 DPIA？**
 
@@ -142,11 +138,11 @@ GDPR 还规定，如果无法确定充足的流程来最大限度地降低数据
 
 作为处理者，Microsoft 有责任协助控制者确保符合 GDPR 中规定的 DPIA 要求。 为了向客户提供支持，我们生成了 Microsoft DPIA 相关部分的摘要，并将在日后更新中通过这一部分提供此类摘要，以便控制者能够依赖 Microsoft 服务来利用摘要创建自己的 DPIA。
 
-### <a name="breach-notification"></a>泄露通知
+## <a name="breach-notification"></a>泄露通知
 
 GDPR 强制要求数据控制者和处理者针对个人数据泄露发出通知。 作为数据处理者，Microsoft 确保客户能够满足 GDPR 的违反通知要求。 数据控制者负责评估数据隐私风险并确定违反是否需要通知客户的 DPA。 Microsoft 提供进行评估所需的信息。 有关 Microsoft 如何检测和响应 [GDPR 下的数据违反通知](gdpr-breach-notification.md)中的违反个人数据的详细信息。
 
-#### <a name="breach-notification-faqs"></a>泄露通知常见问题解答
+### <a name="breach-notification-faqs"></a>泄露通知常见问题解答
 
 **根据 GDPR，什么构成了个人数据泄露行为？**
 
@@ -178,7 +174,7 @@ GDPR 要求我们在获悉个人数据泄露发生后，毫无不当拖延地通
 
 Microsoft 已制定用于及时通知你的策略和过程。 为了让你能够根据要求通知 DPA，我们会介绍为了确定是否发生个人数据泄露所采用的流程、数据泄露性质，以及为了缓解数据泄露所采取的措施。
 
-### <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR 的责任就绪清单
+## <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR 的责任就绪清单
 
 这些[清单](gdpr-arc.md)提供了一种方便的方法来访问使用 Microsoft 产品支持 GDPR 所需的信息。 可以使用 [Microsoft 合规性分数](compliance-score.md)来管理清单项目，具体方法是引用 GDPR 磁贴中的“客户托管控件”下的控件 ID 和控件标题。
 

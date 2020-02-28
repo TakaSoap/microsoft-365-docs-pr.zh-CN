@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ca08e84bf27a64ba7515b6f4c0307c94621601c
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 01c580cd671a84ef68c18b114e133f046a3e5b3b
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280100"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328064"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用程序要求
 
@@ -59,5 +59,5 @@ Microsoft 托管桌面设备上不允许某些应用程序类型：
 
 Microsoft 托管桌面仅支持通过 Microsoft 托管设备在 Windows 更新或已安装的收件箱中提供的设备驱动程序。 
 
-如果应用程序需要特定驱动程序来运行它，则会将其视为受限制的应用程序，并且需要将其部署到 Microsoft 托管桌面。 
+如果应用程序需要特定驱动程序来运行它，则会将其视为受限制的应用程序，并在将其部署到 Microsoft 托管桌面之前需要异常。 
 

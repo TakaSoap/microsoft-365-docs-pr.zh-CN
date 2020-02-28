@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的新数据调查（预览版）工具。
-ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071071"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328074"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查（预览）概述
 
@@ -29,9 +29,9 @@ ms.locfileid: "42071071"
 
 本文介绍了如何使用新的数据调查（预览）工具中的功能来解决 Data 外泄方案。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-若要访问和进行数据调查，您需要是数据调查员角色组的成员。 有关详细信息，请参阅[为数据调查分配权限](permissions.md)。
+若要访问和进行数据调查，您需要是数据调查员角色组的成员。 有关详细信息，请参阅[为数据调查分配权限](data-investigations-permissions.md)。
 
 ## <a name="data-investigations-preview-workflow"></a>数据调查（预览）工作流 
 

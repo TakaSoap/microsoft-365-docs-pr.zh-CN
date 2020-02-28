@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b20c3b3be7c4582c7adbfae183698c2725de4e7f
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982483"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328084"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft 托管桌面设备服务
 
@@ -26,7 +26,7 @@ Microsoft 将为 Microsoft 托管桌面设备提供这些服务。 有关 Micros
  --- | ---
 支持 | 支持代理将回答与设备功能直接相关的问题，并可诊断设备问题。
 清查 | 在 Microsoft 托管桌面管理门户中跟踪所有设备的清单和状态跟踪。
-固件/驱动程序更新 | 默认情况下，Microsoft 托管桌面设备接收来自 Windows Update 的固件和驱动程序更新。 并非所有硬件合作伙伴都通过 Windows 更新部署更新;可以单独请求这些更新。
+固件/驱动程序更新 | 默认情况下，Microsoft 托管桌面设备接收来自 Windows Update 的固件和驱动程序更新。 并非所有硬件合作伙伴都通过 Windows 更新部署其更新。 不作为自动发布的更新需要异常，且必须由客户部署。
 设施 | 随设备本身提供的附件由与设备本身相同的服务所涵盖，但保修条款可能有所不同。 请参阅选择设备时选择的保修条款。 
 设备设置    | 将使用 Windows 的当前版本预配置设备，并通过云接收其应用和配置。 
 

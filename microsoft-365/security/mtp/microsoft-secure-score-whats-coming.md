@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55c7cb34c5484eaf8f6693be0ce439e33a82550f
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 4d445d4c917a46b12592308f599570725ace8e9d
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266961"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322561"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft 安全分数中的情况如何？
 
@@ -59,7 +59,7 @@ ms.locfileid: "42266961"
 - 要求所有设备都具有高级安全配置
 - 每周查看阻止的设备报告
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>删除不符合可靠测量预期的改进措施
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>删除不符合可靠测量预期的改进措施 
 
 为了确保 Microsoft 安全分数是有意义的，并且每个改进操作都是可衡量和可靠的，我们将删除以下改进操作。
 
@@ -93,7 +93,7 @@ ms.locfileid: "42266961"
 
 ## <a name="march-16th-2020"></a>3月16日2020
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>删除不符合可靠测量预期的改进措施
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>删除不符合可靠测量预期的改进操作或不提供安全状态的有用表示形式
 
 为了确保 Microsoft 安全分数是有意义的，并且每个改进操作都是可衡量和可靠的，我们将删除以下改进操作。
 
@@ -102,6 +102,7 @@ ms.locfileid: "42266961"
 - 设置 Office 365 安全链接以验证 Url
 - 不允许邮箱委派
 - 允许匿名来宾共享网站和文档的链接
+- 启用云应用安全控制台
 
 ### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>支持 Azure AD 改进操作的安全默认值
 
