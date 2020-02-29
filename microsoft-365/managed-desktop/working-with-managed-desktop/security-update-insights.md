@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 600491fbdd70315385587eb8cb443a1696c3bee6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252551"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341260"
 ---
 # <a name="windows-security-update-insights"></a>Windows 安全更新见解
 此视图概述了 Microsoft 托管桌面设备的安全更新状态。 
@@ -28,7 +28,7 @@ ms.locfileid: "42252551"
 
 - <strong>Active：</strong>满足最少使用条件（6小时、两个连续）的设备，适用于最新安全更新版本，并已在 Microsoft Intune 中至少每五天签入一次
 - 已<strong>同步：</strong>在最近28天内使用 Intune 签入的设备
-- 不<strong>同步</strong>–最近28天内<i>未</i>使用 Intune 签入的设备
+- 不<strong>同步：</strong>最近28天内<i>未</i>使用 Intune 签入的设备
 
 
 

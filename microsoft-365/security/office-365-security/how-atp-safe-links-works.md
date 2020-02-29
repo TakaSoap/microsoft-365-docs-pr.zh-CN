@@ -14,14 +14,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "\"安全链接\" 功能可提供对 Office 文档中的超链接和电子邮件中的超链接的单击时间验证。 阅读本文，了解 ATP 安全链接的工作原理。"
-ms.openlocfilehash: 7b1c1368b274bbbb6dc7a5b760de4968575962fa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c87eef2afbb3a694d9906de0c6c43bfeb576782b
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599199"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333679"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 ATP 安全链接的工作原理
+> [!IMPORTANT] 
+> 为了使 Office 365 ATP 安全链接正常运行，所有 Office 365 服务都必须在同一版本中。
          
 ## <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP 安全链接如何处理电子邮件中的 Url
 

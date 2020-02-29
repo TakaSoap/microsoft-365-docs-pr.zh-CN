@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: 了解如何在 Microsoft 365 管理中心中管理你的支付方式。
-ms.openlocfilehash: 7e217f5fcb7f93e91ec0ed3ab6d4a806597fbfb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238420"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341232"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>添加、更新或删除支付方式
 
@@ -42,6 +42,8 @@ ms.locfileid: "42238420"
 > 在某些国家或地区不提供用银行帐户付款的选项。
 >
 > 您必须使用从与您的租户相同的国家/地区颁发的信用卡。
+
+**您看到的界面与本文中所述的界面不匹配吗？** 如果是这样，请参阅[管理支付方式](manage-payment-methods.md)。
 
 ## <a name="add-a-payment-method"></a>添加付款方法
 

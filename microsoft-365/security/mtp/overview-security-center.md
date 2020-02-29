@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7be52ae276fa00b8bad6f03b27c88ebba0f02880
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eb341e3f27ade163c6d646f759efed7504dad342
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086601"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333689"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
@@ -63,3 +63,6 @@ Microsoft 365 安全中心包括：
 - [报告](monitoring-and-reporting.md)你的标识、数据、设备、应用程序和基础结构的状态
 - 主动查找影响您的电子邮件、数据、设备和帐户的入侵尝试和破坏性活动[的威胁](advanced-hunting-overview.md)
 - 通过威胁分析[了解最新的攻击活动](latest-attack-campaigns.md)和技术
+
+## <a name="related-topics"></a>相关主题
+- [Microsoft 365 安全门户](portals.md)

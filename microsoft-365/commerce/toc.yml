@@ -1,5 +1,5 @@
-- name: 管理商业购买和计费
-  href: index.md
+- name: 管理商业版订阅
+  href: index.yml
   expanded: true
   items:
     - name: 试用或购买
@@ -20,12 +20,12 @@
       items:
         - name: 升级订阅
           href: subscriptions/upgrade-to-different-plan.md
-        - name: 取消订阅
-          href: subscriptions/cancel-your-subscription.md
-        - name: 重新激活订阅
-          href: subscriptions/reactivate-your-subscription.md
         - name: 续订订阅
           href: subscriptions/renew-your-subscription.md
+        - name: 重新激活订阅
+          href: subscriptions/reactivate-your-subscription.md
+        - name: 取消订阅
+          href: subscriptions/cancel-your-subscription.md
         - name: 如果我的订阅到期，该怎么办？
           href: subscriptions/what-if-my-subscription-expires.md
         - name: 管理第三方应用
@@ -38,12 +38,12 @@
       items:
         - name: 购买许可证
           href: licenses/buy-licenses.md
-        - name: 分配许可证
-          href: ../admin/manage/assign-licenses-to-users.md
-        - name: 取消分配许可证
-          href: ../admin/manage/remove-licenses-from-users.md
         - name: 从订阅中删除许可证
           href: licenses/remove-licenses-from-subscription.md
+        - name: 向用户分配许可证
+          href: ../admin/manage/assign-licenses-to-users.md
+        - name: 取消分配用户许可证
+          href: ../admin/manage/remove-licenses-from-users.md
         - name: 了解订阅和许可证
           href: licenses/subscriptions-and-licenses.md
     - name: 帐单和付款
@@ -76,3 +76,5 @@
       href: manage-partners.md
     - name: 关闭你的帐户
       href: close-your-account.md
+    - name: 联系支持人员
+      href: ../admin/contact-support-for-business-products.md

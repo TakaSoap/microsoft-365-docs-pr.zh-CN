@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性默认值为 Office 365 用户设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: bc906299e42929dd4dd09b94502a6d463a5971b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cb2205e5f5b7df4f6e7d8f7263a91fb2f0f4d3e2
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252423"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341246"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -88,11 +88,11 @@ ms.locfileid: "42252423"
 
 2. 在 "**活动用户**" 部分，单击 "**多重身份验证**"。
 
-3. 在 "**多重身份验证**" 页上，如果要为一个用户启用此项，请选择 "**用户**"，或者您可以执行**批量更新**。
+3. 在 "**多重身份验证**" 页上，如果要为一个用户启用此项，请选择 "**用户**"，或者选择 "**批量更新**" 以启用多个用户。
 
 4. 单击 "**快速步骤**" 下的 "**启用**"。
 
-5. 在弹出窗口中，CLickc**启用多因素身份验证**。
+5. 在弹出窗口中，单击 "**启用多重身份验证**"。
 
 为你的组织设置多重身份验证后，你的用户将需要在其设备上设置双重验证。 有关详细信息，请参阅[为 Office 365 设置双重验证](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。
     

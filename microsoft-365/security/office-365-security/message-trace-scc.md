@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: ce0919a1190da06279081089810221e55a8f59b7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088600"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341273"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -342,8 +342,8 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 |`DI=SQ`|邮件已隔离。|
 |`DI=SD`|邮件已删除。|
 |`DI=SJ`|邮件已发送至收件人的"垃圾邮件"文件夹。|
-|`DI=SN`|邮件已通过高风险传送池路由。 有关详细信息，请参阅[出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)。|
-|`DI=SO`|邮件已通过正常出站传送池路由。|
+|`DI=SN`|邮件已通过正常出站传送池路由。|
+|`DI=SO`|邮件已通过高风险传送池路由。 有关详细信息，请参阅[出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)。|
 |`SFS=[a]|SFS=[b]`|说明匹配此垃圾邮件规则。|
 |`IPV=CAL`|邮件已获得垃圾邮件筛选器的允许，因为 IP 地址已在连接筛选器的 IP 允许列表中指定。|
 |`H=<EHLOstring>`|连接电子邮件服务器的 HELO 或 EHLO 字符串。|
