@@ -49,6 +49,8 @@
               href: mtp/prerequisites.md
             - name: 数据和隐私
               href: mtp/data-privacy.md
+            - name: Microsoft 安全门户
+              href: mtp/portals.md
             - name: 解决问题
               href: ./mtp/troubleshoot.md
         - name: 操作指南

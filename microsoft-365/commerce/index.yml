@@ -1,0 +1,73 @@
+### YamlMime:Landing
+title: 业务订阅和帐单文档
+summary: 了解如何通过 Microsoft 购买和管理业务订阅、执行许可证管理任务以及管理企业帐户的记帐和付款。
+metadata:
+  title: 业务订阅和帐单文档
+  description: 了解如何通过 Microsoft 购买和管理业务订阅、执行许可证管理任务以及管理企业帐户的记帐和付款。
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection: commerce
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  ms.date: 02/27/2020
+  localization_priority: Normal
+  search.appverid: MET150
+  ms.openlocfilehash: 76f86bcd65fe1d5894777d8263f8c48f5fc5493b
+  ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/29/2020
+  ms.locfileid: "42341565"
+landingContent:
+- title: 管理帐单和付款
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 查看帐单
+      url: billing-and-payments/view-your-bill-or-invoice.md
+    - text: 管理支付方式
+      url: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+    - text: 了解发票
+      url: billing-and-payments/understand-your-invoice.md
+    - text: 管理计费对象信息
+      url: billing-and-payments/manage-billing-profiles.md
+    - text: 管理计费帐户
+      url: manage-billing-accounts.md
+- title: 管理许可证
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 向用户分配许可证
+      url: ../admin/manage/assign-licenses-to-users.md
+    - text: 了解订阅和许可证
+      url: licenses/subscriptions-and-licenses.md
+    - text: 购买订阅的许可证
+      url: licenses/buy-licenses.md
+    - text: 从订阅中删除许可证
+      url: licenses/remove-licenses-from-subscription.md
+- title: 升级、续订或取消
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 升级到其他计划
+      url: subscriptions/upgrade-to-different-plan.md
+    - text: 续订订阅
+      url: subscriptions/renew-your-subscription.md
+    - text: 取消订阅
+      url: subscriptions/cancel-your-subscription.md
+    - text: 重新激活订阅
+      url: subscriptions/reactivate-your-subscription.md
+    - text: 关闭你的帐户
+      url: close-your-account.md
+- title: 试用或购买
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 试用或购买 Microsoft 365
+      url: try-or-buy-microsoft-365.md
+    - text: 从免费试用版购买订阅
+      url: buy-a-subscription-from-your-free-trial.md
+    - text: 延长试用期
+      url: extend-your-trial.md
+    - text: 购买域名
+      url: ../admin/get-help-with-domains/buy-a-domain-name.md
