@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4f456b44ed0d7b3fb83a20d9c66ab49ff8af4946
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078771"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333660"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>在 Microsoft 365 中配置通信合规性
 
@@ -32,7 +32,7 @@ ms.locfileid: "42078771"
 
 使用通信合规性策略，以捕获内部或外部审阅者进行检查的员工通信。 有关通信合规性策略如何帮助您监视组织中的通信的详细信息，请参阅[Microsoft 365 中的通信合规性策略](communication-compliance.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始进行通信合规性之前，应确认你的 Microsoft 365 订阅。 通信合规性策略中包含的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Microsoft 365 E5 订阅中。
 
@@ -45,7 +45,7 @@ ms.locfileid: "42078771"
 >[!Important]
 >默认情况下，全局管理员不具有对通信合规性功能的访问权限。 在此步骤中分配的角色在所有通信合规性功能都可访问之前是必需的。
 
-若要在 Microsoft 365 合规性中心中将**通信合规性**用作菜单选项，您必须分配有**监管审核管理员**角色。 您必须为具有**监管审核管理员**、**案例管理**和**审阅**角色的审阅者创建新的角色组，以使用策略匹配来调查和修正邮件。
+若要在 Microsoft 365 合规性中心中将**通信合规性**用作菜单选项，您必须分配有**监管审核管理员**角色。 您必须为具有**监管审核管理员**、**案例管理**、**合规性管理员**和**审阅**角色的审阅者创建新的角色组，以使用策略匹配来调查和修正邮件。
 
 ### <a name="create-a-new-role-group"></a>创建新的角色组
 
@@ -53,13 +53,13 @@ ms.locfileid: "42078771"
 
 2. 在 Microsoft Office 365 安全与合规中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
-3. 选择“创建”****。
+3. 选择“**创建**”。
 
 4. 在 "**名称**" 字段中，为新角色组指定一个友好名称。 选择“下一步”****。
 
-5. 选择 "**选择角色**"，然后选择 "**添加**"。 选中 "**监察审核管理员**、**案例管理**和**审阅**" 复选框，然后选择 "**添加**并**完成**"。 选择“下一步”****。
+5. 选择 "**选择角色**"，然后选择 "**添加**"。 选中 "**监察审核管理员**、**案例管理**、**合规性管理员**和**审阅**" 复选框，然后选择 "**添加**并**完成**"。 选择“下一步”****。
 
-    ![满足通信合规性角色组](../media/communication-compliance-role-groups.png)
+    ![满足通信合规性角色组](../media/communication-compliance-role-groups-1.png)
 
 6. 选择 "**选择成员**"，然后选择 "**添加**"。 选中您想要创建策略的所有用户和组的复选框，并使用策略匹配来管理邮件，然后选择 "**添加**并**完成**"。 选择“下一步”****。
 

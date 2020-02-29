@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: 5d9b5a493b44ef4453906f1601481a6aa89c3884
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 89925858ac749ac6f50b7a049a372cf2f7912698
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288530"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341239"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
@@ -56,7 +56,7 @@ ms.locfileid: "42288530"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 这些功能仅适用于[敏感度标签](sensitivity-labels.md)。 如果你当前有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便可以为上传的新文件启用这些功能。 有关说明，请参阅[如何将 Azure 信息保护标签迁移到统一敏感度标签](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
@@ -74,11 +74,13 @@ ms.locfileid: "42288530"
     
     1. 确保已将 Azure 信息保护标签迁移到了敏感度标签，并已将其从 Microsoft 365 合规性中心或等效的标签管理中心进行了发布。
     
-    2. 下载文件并将其上载到 SharePoint。
+    2. 下载这些文件，然后将其上传到 SharePoint。
 
 - 当应用了加密的标签具有以下加密配置之一时，SharePoint 将无法处理加密文件：
-    - **允许用户在应用标签**和**Word、PowerPoint 和 Excel 中分配权限，提示用户指定权限**
+    - **允许用户在应用标签时分配权限**，并在**Word、PowerPoint 和 Excel 中对复选框进行提示，并在 Word、PowerPoint 和 Excel 中选中 "提示用户指定权限**"。 此设置有时称为 "用户定义的权限"。
     - **用户对内容的访问权限**设置为**永不**过期的值。
+    
+    对于具有上述任一加密配置的标签，web 上的 Office 用户不会看到这些标签。 此外，此预览中的新功能不能用于已有这些加密设置的已标记文档。 例如，这些文档不会在搜索结果中返回，即使它们已更新也是如此。
 
 - 对于向用户授予编辑权限的加密文档，不能在 Office 应用程序的 web 版本中阻止复制。
 
@@ -100,7 +102,7 @@ ms.locfileid: "42288530"
 
 在启用预览之前，请确保您运行的是 SharePoint Online 命令行管理程序版本16.0.19418.12000 或更高版本。 如果已有最新版本，可以继续并启用预览。
 
-1. 如果已从 PowerShell 库安装了早期版本的 SharePoint Online 命令行管理程序，则可以通过运行以下 cmdlet 来更新模块。
+1. 如果已从 PowerShell 库安装早期版本的 SharePoint Online 命令行管理程序，可通过运行以下 cmdlet 来更新模块。
 
     ```PowerShell
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell

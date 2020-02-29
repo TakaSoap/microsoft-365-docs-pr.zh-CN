@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 使用 "客户密钥"，可以控制组织的加密密钥，然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。
-ms.openlocfilehash: 6fd7167dd46f3a44d97a493830aef19e40f062e8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0910374051073cb67ee4d2a4fac0a88871a2fd73
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076913"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333649"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Office 365 中的客户密钥的服务加密
 

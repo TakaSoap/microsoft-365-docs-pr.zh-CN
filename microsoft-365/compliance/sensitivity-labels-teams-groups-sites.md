@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可将标签应用于 Microsoft Teams、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: 350e1906e4d645c444d772b1ade9a2ff9c850992
-ms.sourcegitcommit: 1b1425142ae06deae3da10a7d30dce4db029d6d3
+ms.openlocfilehash: 477b168435d36170a1506adff021ee4cb5ab5162
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42313797"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333709"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
 
@@ -54,7 +54,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 2. 在 PowerShell 会话中，通过使用拥有全局管理员权限的工作或学校帐户，立即连接到安全与合规中心。 有关说明，请参阅[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
-3. 运行以下命令以将标签同步到 Azure AD，以便它们可与 Office 365 组一起使用：
+3. 运行以下命令将标签同步到 Azure AD，使其可与 Office 365 组一起使用：
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -87,7 +87,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 > 
 > 同样，如果你已创建标签并且未打开这些网站和组设置，则当用户创建团队、组和网站时，该标签仍可用，但将仅应用标签名称。
 
-如果尚未发布标签，现可通过[将其添加到标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)进行发布。
+如果尚未发布敏感度标签，现可通过[将其添加到敏感度标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)进行发布。 分配有含有此标签的敏感度标签策略的用户，将能够为网站和组选择。
 
 ## <a name="sensitivity-label-management"></a>敏感度标签管理
 
@@ -164,7 +164,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 ## <a name="view-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 管理中心中查看敏感度标签
 
-若要查看应用的敏感度标签，请使用新 SharePoint 管理中心中的“**活动网站**”页面。 可能需要首先添加“**敏感度**”列：
+若要查看应用的敏感度标签，请使用新 SharePoint 管理中心中的“**活动网站**”页面。 可能需要先添加“**敏感度**”列：
 
 ![“活动网站”页面上的“敏感度”列](../media/manage-site-sensitivity-labels.png)
 
@@ -205,7 +205,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 ## <a name="support-for-the-sensitivity-labels"></a>敏感度标签支持
 
-可通过以下应用和服务使用为网站和组设置配置的敏感度标签：
+可将为网站和组设置配置的敏感度标签用于以下应用和服务：
 
 - SharePoint Online
 - Teams
@@ -266,7 +266,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
-3. 如果从 Microsoft 下载中心安装了早期版本的 SharePoint Online 命令行管理程序，请转到“**添加或删除程序**”并卸载“SharePoint Online 命令行管理程序”。 然后，从“[下载中心](https://go.microsoft.com/fwlink/p/?LinkId=255251)”安装最新版本的 “SharePoint Online 命令行管理程序”。
+3. 如果从 Microsoft 下载中心安装了早期版本的 SharePoint Online 命令行管理程序，请转到“**添加或删除程序**”并卸载 SharePoint Online 命令行管理程序。 然后，从“[下载中心](https://go.microsoft.com/fwlink/p/?LinkId=255251)”安装最新版本的 SharePoint Online 命令行管理程序。
 
 4. 使用在 Office 365 中拥有全局管理员或 SharePoint 管理员权限的工作或学校帐户，连接到 SharePoint Online 命令行管理程序。 若要了解具体操作步骤，请参阅 [SharePoint Online 命令行管理程序入门](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 

@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/8/2019
+ms.date: 02/28/2020
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: 作为 Office 365 管理员，您可以吊销使用 Office 365 高级邮件加密进行加密的某些电子邮件。
-ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0e3ef031e61ed8bc7dd450e7ef61b6b7f41152c6
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070030"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333699"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>撤销使用 Office 365 高级邮件加密进行加密的电子邮件
 
@@ -29,11 +29,11 @@ ms.locfileid: "42070030"
 
 本文是有关[Office 365 邮件加密](ome.md)的更多系列文章的一部分。
 
-如果使用 Office 365 高级邮件加密对邮件进行了加密，并且您是 Office 365 管理员，则可以在特定条件下吊销邮件。 本文介绍了可以进行吊销的情况以及执行操作的方法。
+如果使用 Office 365 高级邮件加密对邮件进行了加密，并且您是 Office 365 管理员，则可以在特定条件下撤销邮件。 本文介绍了可以进行吊销的情况以及执行操作的方法。
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>您可以撤销的加密电子邮件
 
-如果收件人收到基于链接的、品牌加密的电子邮件，则可以撤销加密的电子邮件。 如果收件人在受支持的 Outlook 客户端中收到本机内嵌体验，则无法撤消这些电子邮件。
+如果收件人收到基于链接的、品牌加密的电子邮件，则可以撤销加密的电子邮件。 如果收件人在受支持的 Outlook 客户端中收到了本机内嵌体验，则无法撤销这些。
 
 收件人是否收到基于链接的体验或内嵌体验取决于收件人标识类型： Office 365 和 Microsoft 帐户收件人（例如，outlook.com 用户）在支持的 Outlook 客户端中获取内嵌体验。 所有其他收件人类型（如 Gmail 收件人）都获得了基于链接的体验。
 
@@ -45,9 +45,17 @@ ms.locfileid: "42070030"
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>如何撤销加密电子邮件
 
+Office 365 管理员按照以下常规步骤撤销符合条件的加密电子邮件：
+
+- 获取电子邮件的邮件 ID。
+- 验证您是否可以撤消邮件。
+- 吊销邮件。
+
+有关吊销过程中每个步骤的详细说明，请继续阅读。
+
 ### <a name="step-1-obtain-the-message-id-of-the-email"></a>第 1 步： 获取电子邮件的邮件 ID
 
-在撤销加密邮件之前，您可以收集邮件的邮件 ID。 MessageId 的格式通常为：
+在您可以撤销加密邮件之前，请先收集邮件的邮件 ID。 MessageId 的格式通常为：
 
 `<xxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.xxxx.prod.outlook.com>`  
 
@@ -71,7 +79,7 @@ ms.locfileid: "42070030"
 
 若要验证是否可以撤消邮件，请检查安全&amp;合规性中心的**详细信息**表中的加密报告中是否显示 "吊销状态" 字段。
 
-若要验证是否可以使用 Windows Powershell 撤消特定的电子邮件，请完成以下步骤。
+若要验证是否可以使用 Windows PowerShell 撤消特定的电子邮件，请完成以下步骤。
 
 1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
@@ -81,25 +89,27 @@ ms.locfileid: "42070030"
      Get-OMEMessageStatus -MessageId "<message id>" | ft -a  Subject, IsRevocable
      ```
 
-   这将返回邮件的主题以及邮件是否是不可吊销的。 For example,
+   此命令返回邮件的主题以及邮件是否是不可吊销的。 For example,
 
      ```text
-     Subject IsRevocable
-     ------- -----------
-     “Test message”  True
+     Subject        IsRevocable
+     -------        -----------
+     “Test message” True
      ```
 
 ### <a name="step-3-revoke-the-mail"></a>第 3 步： 撤销邮件
 
-一旦您知道要吊销的电子邮件的邮件 ID，并且已验证该邮件是可吊销的，则可以使用安全&amp;合规性中心或 Windows Powershell 吊销该电子邮件。
+一旦您知道要吊销的电子邮件的邮件 ID，并且已验证该邮件是可吊销的，则可以使用安全&amp;合规性中心或 Windows PowerShell 吊销该电子邮件。
 
 使用安全&amp;合规中心撤销邮件
 
-若要在安全&amp;合规中心中撤销电子邮件，请在加密报告中的邮件的**详细信息**表中，选择 "**撤消邮件**"。
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，连接到安全 & 合规性中心。
 
-您可以使用 Windows Powershell 吊销电子邮件，方法是使用 OMEMessageRevocation cmdlet。
+2. 在**加密报告**中，在邮件的**详细信息**表中，选择 "**撤消邮件**"。
 
-1. [连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+若要使用 Windows PowerShell 吊销电子邮件，请使用 OMEMessageRevocation cmdlet。
+
+1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 运行 OMEMessageRevocation cmdlet，如下所示：
 

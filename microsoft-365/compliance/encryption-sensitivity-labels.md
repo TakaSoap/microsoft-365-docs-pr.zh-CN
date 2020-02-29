@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: 5a9ebf1cb2333f4aa7ca98ce36171ad5fce8dad2
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328116"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341279"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -266,7 +266,7 @@ ms.locfileid: "42328116"
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>示例 1：应用“请勿转发”以将加密的电子邮件发送至 Gmail 帐户的标签
 
-此标签仅适用于 Outlook 和 Outlook 网页版，且你必须使用 Exchange Online。 在用户需要向使用 Gmail 帐户（或你组织外部的任何其他电子邮件帐户）的人员发送加密电子邮件时，指示这些用户选择此标签。 
+此标签仅显示 Outlook 和 Outlook 网页版，且你必须使用 Exchange Online。 在用户需要向使用 Gmail 帐户（或你组织外部的任何其他电子邮件帐户）的人员发送加密电子邮件时，指示这些用户选择此标签。 
 
 用户需在“**收件人**”框中键入 Gmail 电子邮件地址。  然后选中该标签，“请勿转发”选项会自动添加到电子邮件中。 这样的话，收件人就无法转发、打印或复制该电子邮件，也不能使用“**另存为**”选项在其邮箱之外保存该电子邮件。 
 
