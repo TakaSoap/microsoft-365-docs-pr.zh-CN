@@ -55,6 +55,8 @@
               href: ./mtp/troubleshoot.md
         - name: 操作指南
           items:
+            - name: 部署支持的服务
+              href: mtp/deploy-supported-services.md
             - name: 打开 Microsoft 威胁防护
               href: mtp/mtp-enable.md
             - name: 事件
