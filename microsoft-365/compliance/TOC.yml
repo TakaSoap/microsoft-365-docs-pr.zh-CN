@@ -69,7 +69,7 @@
           href: privileged-access-management-configuration.md
     - name: 保护用户和设备的访问权限
       href: protect-access-to-data-and-services.md
-    - name: 客户密码箱
+    - name: 客户锁箱
       href: customer-lockbox-requests.md
 - name: 管理信息保护
   href: protect-information.md
@@ -218,8 +218,9 @@
     - name: 管理信息治理
       href: manage-information-governance.md
     - name: 导入数据
-      href: importing-pst-files-to-office-365.md
       items:
+        - name: 导入 PST 文件概述
+          href: importing-pst-files-to-office-365.md
         - name: 使用网络上传导入 PST 文件
           href: use-network-upload-to-import-pst-files.md
         - name: 使用驱动器传送导入 PST 文件
@@ -231,8 +232,9 @@
         - name: 有关导入 PST 文件的常见问题解答
           href: faqimporting-pst-files-to-office-365.md
     - name: 存档第三方数据
-      href: archiving-third-party-data.md
       items:
+        - name: 存档第三方数据概述
+          href: archiving-third-party-data.md
         - name: 设置连接器以存档 Facebook 数据
           href: archive-facebook-data-with-sample-connector.md
         - name: 设置连接器以存档 Twitter 数据
@@ -276,8 +278,9 @@
     - name: 释放数据
       href: disposition-reviews.md
     - name: 管理非活动邮箱
-      href: inactive-mailboxes-in-office-365.md
       items:
+        - name: 非活动邮箱概述
+          href: inactive-mailboxes-in-office-365.md
         - name: 创建和管理非活动邮箱
           href: create-and-manage-inactive-mailboxes.md
         - name: 更改非活动邮箱的保留期
@@ -718,10 +721,13 @@
     - name: 邮箱审核
       href: enable-mailbox-auditing.md
     - name: 高级审核
-      href: advanced-audit.md
       items:
+        - name: 高级审核概述
+          href: advanced-audit.md
         - name: 管理审核日志保留策略
           href: audit-log-retention-policies.md
+        - name: 使用高级审核调查已损坏的帐户
+          href: mailitemsaccessed-forensics-investigations.md
     - name: 警报策略
       href: alert-policies.md
 - name: 管理合规性风险
@@ -1159,5 +1165,5 @@
   href: 'https://docs.microsoft.com/Office365/Enterprise'
 - name: Office 365 商业版
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
-- name: Microsoft 365 安全
+- name: Microsoft 365 安全中心
   href: 'https://docs.microsoft.com/microsoft-365/security/'

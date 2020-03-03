@@ -16,216 +16,216 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。
-ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083251"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372490"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a><span data-ttu-id="06456-103">Exchange Online Protection 中的 Exchange 管理中心</span><span class="sxs-lookup"><span data-stu-id="06456-103">Exchange admin center in Exchange Online Protection</span></span>
+# <a name="exchange-admin-center-in-exchange-online-protection"></a><span data-ttu-id="8d329-103">Exchange Online Protection 中的 Exchange 管理中心</span><span class="sxs-lookup"><span data-stu-id="8d329-103">Exchange admin center in Exchange Online Protection</span></span>
 
-<span data-ttu-id="06456-104">Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。</span><span class="sxs-lookup"><span data-stu-id="06456-104">The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP).</span></span>
+<span data-ttu-id="8d329-104">Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。</span><span class="sxs-lookup"><span data-stu-id="8d329-104">The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP).</span></span>
 
-<span data-ttu-id="06456-105">是否正在寻找此主题的 Exchange Server 版本？</span><span class="sxs-lookup"><span data-stu-id="06456-105">Looking for the Exchange Server version of this topic?</span></span> <span data-ttu-id="06456-106">请参阅 exchange [admin center In Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="06456-106">See [Exchange admin center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).</span></span>
+<span data-ttu-id="8d329-105">是否正在寻找此主题的 Exchange Server 版本？</span><span class="sxs-lookup"><span data-stu-id="8d329-105">Looking for the Exchange Server version of this topic?</span></span> <span data-ttu-id="8d329-106">请参阅 exchange [admin center In Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="8d329-106">See [Exchange admin center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).</span></span>
 
-<span data-ttu-id="06456-107">正在查找此主题的 Exchange Online 版本？</span><span class="sxs-lookup"><span data-stu-id="06456-107">Looking for the Exchange Online version of this topic?</span></span> <span data-ttu-id="06456-108">请参阅 [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="06456-108">See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).</span></span>
+<span data-ttu-id="8d329-107">正在查找此主题的 Exchange Online 版本？</span><span class="sxs-lookup"><span data-stu-id="8d329-107">Looking for the Exchange Online version of this topic?</span></span> <span data-ttu-id="8d329-108">请参阅 [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="8d329-108">See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).</span></span>
 
-## <a name="accessing-the-eac"></a><span data-ttu-id="06456-109">访问 EAC</span><span class="sxs-lookup"><span data-stu-id="06456-109">Accessing the EAC</span></span>
+## <a name="accessing-the-eac"></a><span data-ttu-id="8d329-109">访问 EAC</span><span class="sxs-lookup"><span data-stu-id="8d329-109">Accessing the EAC</span></span>
 
-<span data-ttu-id="06456-110">在大多数情况下，EOP 客户将通过 Microsoft 365 管理中心访问 EAC。</span><span class="sxs-lookup"><span data-stu-id="06456-110">In most cases, EOP customers will access the EAC through the Microsoft 365 admin center.</span></span> <span data-ttu-id="06456-111">可以在“**自有**”磁贴旁的“**管理**”磁贴中的下拉菜单中找到指向 EOP 的链接。</span><span class="sxs-lookup"><span data-stu-id="06456-111">You can find a link to EOP in the drop-down menu in the **Admin** tile, which is next to the **Me** tile.</span></span> <span data-ttu-id="06456-112">单击“**管理**”磁贴，从下拉菜单中选择“**Exchange Online Protection**”以进入 EAC。</span><span class="sxs-lookup"><span data-stu-id="06456-112">Click the **Admin** tile and select **Exchange Online Protection** from the drop down menu to be taken to the EAC.</span></span>
+<span data-ttu-id="8d329-110">在大多数情况下，EOP 客户将通过 Microsoft 365 管理中心访问 EAC。</span><span class="sxs-lookup"><span data-stu-id="8d329-110">In most cases, EOP customers will access the EAC through the Microsoft 365 admin center.</span></span> <span data-ttu-id="8d329-111">可以在“**自有**”磁贴旁的“**管理**”磁贴中的下拉菜单中找到指向 EOP 的链接。</span><span class="sxs-lookup"><span data-stu-id="8d329-111">You can find a link to EOP in the drop-down menu in the **Admin** tile, which is next to the **Me** tile.</span></span> <span data-ttu-id="8d329-112">单击 "**管理**" 磁贴，然后从下拉菜单中选择 " **Exchange Online Protection** " 以进入 EAC。</span><span class="sxs-lookup"><span data-stu-id="8d329-112">Click the **Admin** tile and select **Exchange Online Protection** from the drop-down menu to be taken to the EAC.</span></span>
 
-<span data-ttu-id="06456-p104">您也可以通过以下 URL 直接访问 EAC 登录页面：`https://admin.protection.outlook.com/ecp/<companydomain>`。例如 `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`。指定用户凭据后，您将直接进入 EAC。</span><span class="sxs-lookup"><span data-stu-id="06456-p104">You can also access the EAC sign in page directly via the following URL: `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. After specifying your user credentials you will be taken directly into the EAC.</span></span>
+<span data-ttu-id="8d329-p104">您也可以通过以下 URL 直接访问 EAC 登录页面：`https://admin.protection.outlook.com/ecp/<companydomain>`。例如 `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`。指定用户凭据后，您将直接进入 EAC。</span><span class="sxs-lookup"><span data-stu-id="8d329-p104">You can also access the EAC sign in page directly via the following URL: `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. After specifying your user credentials you will be taken directly into the EAC.</span></span>
 
-## <a name="common-user-interface-elements-in-the-eac"></a><span data-ttu-id="06456-116">EAC 中常用的用户界面元素</span><span class="sxs-lookup"><span data-stu-id="06456-116">Common user interface elements in the EAC</span></span>
+## <a name="common-user-interface-elements-in-the-eac"></a><span data-ttu-id="8d329-116">EAC 中常用的用户界面元素</span><span class="sxs-lookup"><span data-stu-id="8d329-116">Common user interface elements in the EAC</span></span>
 
-<span data-ttu-id="06456-117">本部分将介绍 EAC 中的用户界面元素。</span><span class="sxs-lookup"><span data-stu-id="06456-117">This section describes the user interface elements that are found in the EAC.</span></span>
+<span data-ttu-id="8d329-117">本部分将介绍 EAC 中的用户界面元素。</span><span class="sxs-lookup"><span data-stu-id="8d329-117">This section describes the user interface elements that are found in the EAC.</span></span>
 
 ![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
 
-### <a name="feature-pane"></a><span data-ttu-id="06456-119">功能窗格</span><span class="sxs-lookup"><span data-stu-id="06456-119">Feature Pane</span></span>
+### <a name="feature-pane"></a><span data-ttu-id="8d329-119">功能窗格</span><span class="sxs-lookup"><span data-stu-id="8d329-119">Feature Pane</span></span>
 
-<span data-ttu-id="06456-p105">这是您要在 EAC 中执行的大部分任务的第一级导航。功能窗格按功能区域组织。</span><span class="sxs-lookup"><span data-stu-id="06456-p105">This is the first level of navigation for most of the tasks you'll perform in the EAC. The feature pane is organized by feature areas.</span></span>
+<span data-ttu-id="8d329-p105">这是您要在 EAC 中执行的大部分任务的第一级导航。功能窗格按功能区域组织。</span><span class="sxs-lookup"><span data-stu-id="8d329-p105">This is the first level of navigation for most of the tasks you'll perform in the EAC. The feature pane is organized by feature areas.</span></span>
 
-1. <span data-ttu-id="06456-122">**收件人**：你可以在此处查看内部用户和外部联系人。</span><span class="sxs-lookup"><span data-stu-id="06456-122">**Recipients**: This is where you'll view internal users and external contacts.</span></span>
+1. <span data-ttu-id="8d329-122">**收件人**：你可以在此处查看内部用户和外部联系人。</span><span class="sxs-lookup"><span data-stu-id="8d329-122">**Recipients**: This is where you'll view internal users and external contacts.</span></span>
 
-2. <span data-ttu-id="06456-123">**权限**：这将管理管理员角色。</span><span class="sxs-lookup"><span data-stu-id="06456-123">**Permissions**: This where you'll manage administrator roles.</span></span>
+2. <span data-ttu-id="8d329-123">**权限**：这将管理管理员角色。</span><span class="sxs-lookup"><span data-stu-id="8d329-123">**Permissions**: This where you'll manage administrator roles.</span></span>
 
-3. <span data-ttu-id="06456-124">**合规性管理**：在此，你可以找到审核日志和报告，如管理员角色组报告。</span><span class="sxs-lookup"><span data-stu-id="06456-124">**Compliance Management**: This is where you'll find audit logs and reports, such as the administrator role group report.</span></span>
+3. <span data-ttu-id="8d329-124">**合规性管理**：在此，你可以找到审核日志和报告，如管理员角色组报告。</span><span class="sxs-lookup"><span data-stu-id="8d329-124">**Compliance Management**: This is where you'll find audit logs and reports, such as the administrator role group report.</span></span>
 
-4. <span data-ttu-id="06456-125">**保护**：您可以在此处管理组织的反恶意软件和反垃圾邮件保护，以及管理隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="06456-125">**Protection**: This is where you'll manage anti-malware and anti-spam protection for your organization, as well as manage messages in quarantine.</span></span>
+4. <span data-ttu-id="8d329-125">**保护**：您可以在此处管理组织的反恶意软件和反垃圾邮件保护，以及管理隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="8d329-125">**Protection**: This is where you'll manage anti-malware and anti-spam protection for your organization, as well as manage messages in quarantine.</span></span>
 
-5. <span data-ttu-id="06456-126">**邮件流**：这是用于管理规则、接受域和连接器以及将在其中执行邮件跟踪的位置。</span><span class="sxs-lookup"><span data-stu-id="06456-126">**Mail Flow**: This is where you'll manage rules, accepted domains, and connectors, as well as where you'll go to perform message trace.</span></span>
+5. <span data-ttu-id="8d329-126">**邮件流**：这是用于管理规则、接受域和连接器以及将在其中执行邮件跟踪的位置。</span><span class="sxs-lookup"><span data-stu-id="8d329-126">**Mail Flow**: This is where you'll manage rules, accepted domains, and connectors, as well as where you'll go to perform message trace.</span></span>
 
-### <a name="tabs"></a><span data-ttu-id="06456-127">选项卡</span><span class="sxs-lookup"><span data-stu-id="06456-127">Tabs</span></span>
+### <a name="tabs"></a><span data-ttu-id="8d329-127">选项卡</span><span class="sxs-lookup"><span data-stu-id="8d329-127">Tabs</span></span>
 
-<span data-ttu-id="06456-p106">选项卡是导航的第二级。每个功能区都包含各种选项卡，每种选项卡代表一项功能。</span><span class="sxs-lookup"><span data-stu-id="06456-p106">The tabs are your second level of navigation. Each of the feature areas contains various tabs, each representing a feature.</span></span>
+<span data-ttu-id="8d329-p106">选项卡是导航的第二级。每个功能区都包含各种选项卡，每种选项卡代表一项功能。</span><span class="sxs-lookup"><span data-stu-id="8d329-p106">The tabs are your second level of navigation. Each of the feature areas contains various tabs, each representing a feature.</span></span>
 
-### <a name="toolbar"></a><span data-ttu-id="06456-130">工具栏</span><span class="sxs-lookup"><span data-stu-id="06456-130">Toolbar</span></span>
+### <a name="toolbar"></a><span data-ttu-id="8d329-130">工具栏</span><span class="sxs-lookup"><span data-stu-id="8d329-130">Toolbar</span></span>
 
-<span data-ttu-id="06456-p107">单击大多数选项卡时，将看到一个工具栏。工具栏包含执行特定操作的图标。下表介绍图标及其操作。</span><span class="sxs-lookup"><span data-stu-id="06456-p107">When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the icons and their actions.</span></span>
+<span data-ttu-id="8d329-p107">单击大多数选项卡时，将看到一个工具栏。工具栏包含执行特定操作的图标。下表介绍图标及其操作。</span><span class="sxs-lookup"><span data-stu-id="8d329-p107">When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the icons and their actions.</span></span>
 
-|<span data-ttu-id="06456-134">**图标**</span><span class="sxs-lookup"><span data-stu-id="06456-134">**Icon**</span></span>|<span data-ttu-id="06456-135">**名称**</span><span class="sxs-lookup"><span data-stu-id="06456-135">**Name**</span></span>|<span data-ttu-id="06456-136">**Action**</span><span class="sxs-lookup"><span data-stu-id="06456-136">**Action**</span></span>|
+|<span data-ttu-id="8d329-134">**图标**</span><span class="sxs-lookup"><span data-stu-id="8d329-134">**Icon**</span></span>|<span data-ttu-id="8d329-135">**名称**</span><span class="sxs-lookup"><span data-stu-id="8d329-135">**Name**</span></span>|<span data-ttu-id="8d329-136">**Action**</span><span class="sxs-lookup"><span data-stu-id="8d329-136">**Action**</span></span>|
 |:-----|:-----|:-----|
-|![添加图标](../../media/ITPro-EAC-AddIcon.gif)|<span data-ttu-id="06456-138">添加、新建</span><span class="sxs-lookup"><span data-stu-id="06456-138">Add, New</span></span>|<span data-ttu-id="06456-p108">使用此图标可创建一个新对象。其中一些图标有关联的向下箭头，单击该箭头会显示可以创建的其他对象。</span><span class="sxs-lookup"><span data-stu-id="06456-p108">Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.</span></span>|
-|![编辑图标](../../media/ITPro-EAC-EditIcon.gif)|<span data-ttu-id="06456-142">编辑</span><span class="sxs-lookup"><span data-stu-id="06456-142">Edit</span></span>|<span data-ttu-id="06456-143">使用此图标可编辑对象。</span><span class="sxs-lookup"><span data-stu-id="06456-143">Use this icon to edit an object.</span></span>|
-|![删除图标](../../media/ITPro-EAC-DeleteIcon.gif)|<span data-ttu-id="06456-145">删除</span><span class="sxs-lookup"><span data-stu-id="06456-145">Delete</span></span>|<span data-ttu-id="06456-p109">使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。</span><span class="sxs-lookup"><span data-stu-id="06456-p109">Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.</span></span>|
-|![搜索图标](../../media/ITPro-EAC-.gif)|<span data-ttu-id="06456-149">搜索</span><span class="sxs-lookup"><span data-stu-id="06456-149">Search</span></span>|<span data-ttu-id="06456-150">使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。</span><span class="sxs-lookup"><span data-stu-id="06456-150">Use this icon to open a search box in which you can type the search phrase for an object you want to find.</span></span>|
-|![刷新图标](../../media/ITPro-EAC-RefreshIcon.gif)|<span data-ttu-id="06456-152">刷新</span><span class="sxs-lookup"><span data-stu-id="06456-152">Refresh</span></span>|<span data-ttu-id="06456-153">使用此图标可刷新列表视图。</span><span class="sxs-lookup"><span data-stu-id="06456-153">Use this icon to refresh the list view.</span></span>|
-|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|<span data-ttu-id="06456-155">更多选项</span><span class="sxs-lookup"><span data-stu-id="06456-155">More options</span></span>|<span data-ttu-id="06456-156">使用此图标可以查看可对该选项卡的对象执行的更多操作。</span><span class="sxs-lookup"><span data-stu-id="06456-156">Use this icon to view more actions you can perform for that tab's objects.</span></span> <span data-ttu-id="06456-157">例如，在 "**收件人\> " 用户**单击此图标时，将显示用于执行**高级搜索**的选项。</span><span class="sxs-lookup"><span data-stu-id="06456-157">For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.</span></span>|
-|![向上键图标](../../media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](../../media/ITPro-EAC-DownArrowIcon.gif)|<span data-ttu-id="06456-160">向上箭头和向下箭头</span><span class="sxs-lookup"><span data-stu-id="06456-160">Up arrow and down arrow</span></span>|<span data-ttu-id="06456-161">使用这些图标可以将对象的优先级上移或下移。</span><span class="sxs-lookup"><span data-stu-id="06456-161">Use these icons to move an object's priority up or down.</span></span>|
-|![删除图标](../../media/ITPro-EAC-RemoveIcon.gif)|<span data-ttu-id="06456-163">删除</span><span class="sxs-lookup"><span data-stu-id="06456-163">Remove</span></span>|<span data-ttu-id="06456-164">使用此图标可从列表中删除对象。</span><span class="sxs-lookup"><span data-stu-id="06456-164">Use this icon to remove objects from a list.</span></span>|
+|![添加图标](../../media/ITPro-EAC-AddIcon.gif)|<span data-ttu-id="8d329-138">添加、新建</span><span class="sxs-lookup"><span data-stu-id="8d329-138">Add, New</span></span>|<span data-ttu-id="8d329-p108">使用此图标可创建一个新对象。其中一些图标有关联的向下箭头，单击该箭头会显示可以创建的其他对象。</span><span class="sxs-lookup"><span data-stu-id="8d329-p108">Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.</span></span>|
+|![编辑图标](../../media/ITPro-EAC-EditIcon.gif)|<span data-ttu-id="8d329-142">编辑</span><span class="sxs-lookup"><span data-stu-id="8d329-142">Edit</span></span>|<span data-ttu-id="8d329-143">使用此图标可编辑对象。</span><span class="sxs-lookup"><span data-stu-id="8d329-143">Use this icon to edit an object.</span></span>|
+|![删除图标](../../media/ITPro-EAC-DeleteIcon.gif)|<span data-ttu-id="8d329-145">删除</span><span class="sxs-lookup"><span data-stu-id="8d329-145">Delete</span></span>|<span data-ttu-id="8d329-p109">使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。</span><span class="sxs-lookup"><span data-stu-id="8d329-p109">Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.</span></span>|
+|![搜索图标](../../media/ITPro-EAC-.gif)|<span data-ttu-id="8d329-149">搜索</span><span class="sxs-lookup"><span data-stu-id="8d329-149">Search</span></span>|<span data-ttu-id="8d329-150">使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。</span><span class="sxs-lookup"><span data-stu-id="8d329-150">Use this icon to open a search box in which you can type the search phrase for an object you want to find.</span></span>|
+|![刷新图标](../../media/ITPro-EAC-RefreshIcon.gif)|<span data-ttu-id="8d329-152">刷新</span><span class="sxs-lookup"><span data-stu-id="8d329-152">Refresh</span></span>|<span data-ttu-id="8d329-153">使用此图标可刷新列表视图。</span><span class="sxs-lookup"><span data-stu-id="8d329-153">Use this icon to refresh the list view.</span></span>|
+|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|<span data-ttu-id="8d329-155">更多选项</span><span class="sxs-lookup"><span data-stu-id="8d329-155">More options</span></span>|<span data-ttu-id="8d329-156">使用此图标可以查看可对该选项卡的对象执行的更多操作。</span><span class="sxs-lookup"><span data-stu-id="8d329-156">Use this icon to view more actions you can perform for that tab's objects.</span></span> <span data-ttu-id="8d329-157">例如，在 "**收件人\> " 用户**单击此图标时，将显示用于执行**高级搜索**的选项。</span><span class="sxs-lookup"><span data-stu-id="8d329-157">For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.</span></span>|
+|![向上键图标](../../media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](../../media/ITPro-EAC-DownArrowIcon.gif)|<span data-ttu-id="8d329-160">向上箭头和向下箭头</span><span class="sxs-lookup"><span data-stu-id="8d329-160">Up arrow and down arrow</span></span>|<span data-ttu-id="8d329-161">使用这些图标可以将对象的优先级上移或下移。</span><span class="sxs-lookup"><span data-stu-id="8d329-161">Use these icons to move an object's priority up or down.</span></span>|
+|![删除图标](../../media/ITPro-EAC-RemoveIcon.gif)|<span data-ttu-id="8d329-163">删除</span><span class="sxs-lookup"><span data-stu-id="8d329-163">Remove</span></span>|<span data-ttu-id="8d329-164">使用此图标可从列表中删除对象。</span><span class="sxs-lookup"><span data-stu-id="8d329-164">Use this icon to remove objects from a list.</span></span>|
 
-### <a name="list-view"></a><span data-ttu-id="06456-165">列表视图</span><span class="sxs-lookup"><span data-stu-id="06456-165">List View</span></span>
+### <a name="list-view"></a><span data-ttu-id="8d329-165">列表视图</span><span class="sxs-lookup"><span data-stu-id="8d329-165">List View</span></span>
 
-<span data-ttu-id="06456-p111">选择某个选项卡时，在大多数情况下，将会看到一个列表视图。EAC 列表视图的可查看限制大约为 10,000 个对象。此外还包括了分页功能，因此可以对结果进行分页。</span><span class="sxs-lookup"><span data-stu-id="06456-p111">When you select a tab, in most cases you'll see a list view. The viewable limit with the EAC list view is approximately 10,000 objects. In addition, paging is included so that you can page to results.</span></span>
+<span data-ttu-id="8d329-p111">选择某个选项卡时，在大多数情况下，将会看到一个列表视图。EAC 列表视图的可查看限制大约为 10,000 个对象。此外还包括了分页功能，因此可以对结果进行分页。</span><span class="sxs-lookup"><span data-stu-id="8d329-p111">When you select a tab, in most cases you'll see a list view. The viewable limit with the EAC list view is approximately 10,000 objects. In addition, paging is included so that you can page to results.</span></span>
 
-### <a name="details-pane"></a><span data-ttu-id="06456-169">详细信息窗格</span><span class="sxs-lookup"><span data-stu-id="06456-169">Details Pane</span></span>
+### <a name="details-pane"></a><span data-ttu-id="8d329-169">详细信息窗格</span><span class="sxs-lookup"><span data-stu-id="8d329-169">Details Pane</span></span>
 
-<span data-ttu-id="06456-p112">从列表视图中选择对象时，有关该对象的信息将在详细信息窗格中显示。在某些情况下，详细信息窗格包括管理任务。</span><span class="sxs-lookup"><span data-stu-id="06456-p112">When you select an object from the list view, information about that object is displayed in the details pane. In some cases the details pane includes management tasks.</span></span>
+<span data-ttu-id="8d329-p112">从列表视图中选择对象时，有关该对象的信息将在详细信息窗格中显示。在某些情况下，详细信息窗格包括管理任务。</span><span class="sxs-lookup"><span data-stu-id="8d329-p112">When you select an object from the list view, information about that object is displayed in the details pane. In some cases the details pane includes management tasks.</span></span>
 
-### <a name="me-tile-and-help"></a><span data-ttu-id="06456-172">自有图块和帮助</span><span class="sxs-lookup"><span data-stu-id="06456-172">Me tile and Help</span></span>
+### <a name="me-tile-and-help"></a><span data-ttu-id="8d329-172">自有图块和帮助</span><span class="sxs-lookup"><span data-stu-id="8d329-172">Me tile and Help</span></span>
 
-<span data-ttu-id="06456-173">使用“自有”\*\*\*\* 图块可以注销 EAC，然后以其他用户身份登录。</span><span class="sxs-lookup"><span data-stu-id="06456-173">The **Me** tile allows you to sign out the EAC and sign in as a different user.</span></span> <span data-ttu-id="06456-174">从 "**帮助**![帮助"](../../media/ITPro-EAC-HelpIcon.gif)图标下拉菜单中，可以执行下列操作：</span><span class="sxs-lookup"><span data-stu-id="06456-174">From the **Help**![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can perform the following actions:</span></span>
+<span data-ttu-id="8d329-173">使用“自有”\*\*\*\* 图块可以注销 EAC，然后以其他用户身份登录。</span><span class="sxs-lookup"><span data-stu-id="8d329-173">The **Me** tile allows you to sign out the EAC and sign in as a different user.</span></span> <span data-ttu-id="8d329-174">从 "**帮助**![帮助"](../../media/ITPro-EAC-HelpIcon.gif)图标下拉菜单中，可以执行下列操作：</span><span class="sxs-lookup"><span data-stu-id="8d329-174">From the **Help**![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can perform the following actions:</span></span>
 
-1. <span data-ttu-id="06456-175">**帮助**：单击!["帮助](../../media/ITPro-EAC-HelpIcon.gif) " 图标可查看联机帮助内容。</span><span class="sxs-lookup"><span data-stu-id="06456-175">**Help**: Click ![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) to view the online help content.</span></span>
+1. <span data-ttu-id="8d329-175">**帮助**：单击!["帮助](../../media/ITPro-EAC-HelpIcon.gif) " 图标可查看联机帮助内容。</span><span class="sxs-lookup"><span data-stu-id="8d329-175">**Help**: Click ![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) to view the online help content.</span></span>
 
-2. <span data-ttu-id="06456-176">**禁用帮助气泡**：当您创建或编辑对象时，帮助气泡会显示字段的上下文帮助。</span><span class="sxs-lookup"><span data-stu-id="06456-176">**Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object.</span></span> <span data-ttu-id="06456-177">您可以关闭"帮助"气泡，如果已被禁用，也可以打开它。</span><span class="sxs-lookup"><span data-stu-id="06456-177">You can turn off the Help bubble or turn it on if it has been disabled.</span></span>
+2. <span data-ttu-id="8d329-176">**禁用帮助气泡**：当您创建或编辑对象时，帮助气泡会显示字段的上下文帮助。</span><span class="sxs-lookup"><span data-stu-id="8d329-176">**Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object.</span></span> <span data-ttu-id="8d329-177">您可以关闭"帮助"气泡，如果已被禁用，也可以打开它。</span><span class="sxs-lookup"><span data-stu-id="8d329-177">You can turn off the Help bubble or turn it on if it has been disabled.</span></span>
 
-3. <span data-ttu-id="06456-178">**版权**：单击此链接可阅读适用于 Exchange Online Protection 的版权通知。</span><span class="sxs-lookup"><span data-stu-id="06456-178">**Copyright**: Click this link to read the copyright notice for Exchange Online Protection.</span></span>
+3. <span data-ttu-id="8d329-178">**版权**：单击此链接可阅读适用于 Exchange Online Protection 的版权通知。</span><span class="sxs-lookup"><span data-stu-id="8d329-178">**Copyright**: Click this link to read the copyright notice for Exchange Online Protection.</span></span>
 
-4. <span data-ttu-id="06456-179">**隐私**：单击以阅读 Exchange Online Protection 的隐私策略。</span><span class="sxs-lookup"><span data-stu-id="06456-179">**Privacy**: Click to read the privacy policy for Exchange Online Protection.</span></span>
+4. <span data-ttu-id="8d329-179">**隐私**：单击以阅读 Exchange Online Protection 的隐私策略。</span><span class="sxs-lookup"><span data-stu-id="8d329-179">**Privacy**: Click to read the privacy policy for Exchange Online Protection.</span></span>
 
-## <a name="supported-browsers"></a><span data-ttu-id="06456-180">支持的浏览器</span><span class="sxs-lookup"><span data-stu-id="06456-180">Supported Browsers</span></span>
+## <a name="supported-browsers"></a><span data-ttu-id="8d329-180">支持的浏览器</span><span class="sxs-lookup"><span data-stu-id="8d329-180">Supported Browsers</span></span>
 
-<span data-ttu-id="06456-181">若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。</span><span class="sxs-lookup"><span data-stu-id="06456-181">For the best experience using the EAC, we recommend that you always use the latest browsers, Office clients, and apps.</span></span> <span data-ttu-id="06456-182">我们还建议您安装可用的软件更新。</span><span class="sxs-lookup"><span data-stu-id="06456-182">We also recommend that you install software updates when they become available.</span></span> <span data-ttu-id="06456-183">有关支持的服务的浏览器和系统要求的详细信息，请参阅[Office 的系统要求](https://products.office.com/office-system-requirements)。</span><span class="sxs-lookup"><span data-stu-id="06456-183">For more information about the supported browsers and system requirements for the service, see [System requirements for Office](https://products.office.com/office-system-requirements).</span></span>
+<span data-ttu-id="8d329-181">若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。</span><span class="sxs-lookup"><span data-stu-id="8d329-181">For the best experience using the EAC, we recommend that you always use the latest browsers, Office clients, and apps.</span></span> <span data-ttu-id="8d329-182">我们还建议您安装可用的软件更新。</span><span class="sxs-lookup"><span data-stu-id="8d329-182">We also recommend that you install software updates when they become available.</span></span> <span data-ttu-id="8d329-183">有关支持的服务的浏览器和系统要求的详细信息，请参阅[Office 的系统要求](https://products.office.com/office-system-requirements)。</span><span class="sxs-lookup"><span data-stu-id="8d329-183">For more information about the supported browsers and system requirements for the service, see [System requirements for Office](https://products.office.com/office-system-requirements).</span></span>
 
-## <a name="supported-languages-in-eop"></a><span data-ttu-id="06456-184">EOP 中支持的语言</span><span class="sxs-lookup"><span data-stu-id="06456-184">Supported languages in EOP</span></span>
+## <a name="supported-languages-in-eop"></a><span data-ttu-id="8d329-184">EOP 中支持的语言</span><span class="sxs-lookup"><span data-stu-id="8d329-184">Supported languages in EOP</span></span>
 
-<span data-ttu-id="06456-185">Exchange Online Protection 支持并提供以下语言。</span><span class="sxs-lookup"><span data-stu-id="06456-185">The following languages are supported and available for Exchange Online Protection.</span></span>
+<span data-ttu-id="8d329-185">Exchange Online Protection 支持并提供以下语言。</span><span class="sxs-lookup"><span data-stu-id="8d329-185">The following languages are supported and available for Exchange Online Protection.</span></span>
 
-- <span data-ttu-id="06456-186">阿姆哈拉语</span><span class="sxs-lookup"><span data-stu-id="06456-186">Amharic</span></span>
+- <span data-ttu-id="8d329-186">阿姆哈拉语</span><span class="sxs-lookup"><span data-stu-id="8d329-186">Amharic</span></span>
 
-- <span data-ttu-id="06456-187">阿拉伯语</span><span class="sxs-lookup"><span data-stu-id="06456-187">Arabic</span></span>
+- <span data-ttu-id="8d329-187">阿拉伯语</span><span class="sxs-lookup"><span data-stu-id="8d329-187">Arabic</span></span>
 
-- <span data-ttu-id="06456-188">巴斯克语（巴斯克）</span><span class="sxs-lookup"><span data-stu-id="06456-188">Basque (Basque)</span></span>
+- <span data-ttu-id="8d329-188">巴斯克语（巴斯克）</span><span class="sxs-lookup"><span data-stu-id="8d329-188">Basque (Basque)</span></span>
 
-- <span data-ttu-id="06456-189">孟加拉语（印度）</span><span class="sxs-lookup"><span data-stu-id="06456-189">Bengali (India)</span></span>
+- <span data-ttu-id="8d329-189">孟加拉语（印度）</span><span class="sxs-lookup"><span data-stu-id="8d329-189">Bengali (India)</span></span>
 
-- <span data-ttu-id="06456-190">保加利亚语</span><span class="sxs-lookup"><span data-stu-id="06456-190">Bulgarian</span></span>
+- <span data-ttu-id="8d329-190">保加利亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-190">Bulgarian</span></span>
 
-- <span data-ttu-id="06456-191">加泰罗尼亚语</span><span class="sxs-lookup"><span data-stu-id="06456-191">Catalan</span></span>
+- <span data-ttu-id="8d329-191">加泰罗尼亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-191">Catalan</span></span>
 
-- <span data-ttu-id="06456-192">中文（简体）</span><span class="sxs-lookup"><span data-stu-id="06456-192">Chinese (Simplified)</span></span>
+- <span data-ttu-id="8d329-192">中文（简体）</span><span class="sxs-lookup"><span data-stu-id="8d329-192">Chinese (Simplified)</span></span>
 
-- <span data-ttu-id="06456-193">中文（繁体）</span><span class="sxs-lookup"><span data-stu-id="06456-193">Chinese (Traditional)</span></span>
+- <span data-ttu-id="8d329-193">中文（繁体）</span><span class="sxs-lookup"><span data-stu-id="8d329-193">Chinese (Traditional)</span></span>
 
-- <span data-ttu-id="06456-194">克罗地亚语</span><span class="sxs-lookup"><span data-stu-id="06456-194">Croatian</span></span>
+- <span data-ttu-id="8d329-194">克罗地亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-194">Croatian</span></span>
 
-- <span data-ttu-id="06456-195">捷克语</span><span class="sxs-lookup"><span data-stu-id="06456-195">Czech</span></span>
+- <span data-ttu-id="8d329-195">捷克语</span><span class="sxs-lookup"><span data-stu-id="8d329-195">Czech</span></span>
 
-- <span data-ttu-id="06456-196">丹麦语</span><span class="sxs-lookup"><span data-stu-id="06456-196">Danish</span></span>
+- <span data-ttu-id="8d329-196">丹麦语</span><span class="sxs-lookup"><span data-stu-id="8d329-196">Danish</span></span>
 
-- <span data-ttu-id="06456-197">荷兰语</span><span class="sxs-lookup"><span data-stu-id="06456-197">Dutch</span></span>
+- <span data-ttu-id="8d329-197">荷兰语</span><span class="sxs-lookup"><span data-stu-id="8d329-197">Dutch</span></span>
 
-- <span data-ttu-id="06456-198">荷兰语</span><span class="sxs-lookup"><span data-stu-id="06456-198">Dutch</span></span>
+- <span data-ttu-id="8d329-198">荷兰语</span><span class="sxs-lookup"><span data-stu-id="8d329-198">Dutch</span></span>
 
-- <span data-ttu-id="06456-199">英语</span><span class="sxs-lookup"><span data-stu-id="06456-199">English</span></span>
+- <span data-ttu-id="8d329-199">英语</span><span class="sxs-lookup"><span data-stu-id="8d329-199">English</span></span>
 
-- <span data-ttu-id="06456-200">爱沙尼亚语</span><span class="sxs-lookup"><span data-stu-id="06456-200">Estonian</span></span>
+- <span data-ttu-id="8d329-200">爱沙尼亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-200">Estonian</span></span>
 
-- <span data-ttu-id="06456-201">菲律宾语（菲律宾）</span><span class="sxs-lookup"><span data-stu-id="06456-201">Filipino (Philippines)</span></span>
+- <span data-ttu-id="8d329-201">菲律宾语（菲律宾）</span><span class="sxs-lookup"><span data-stu-id="8d329-201">Filipino (Philippines)</span></span>
 
-- <span data-ttu-id="06456-202">芬兰语</span><span class="sxs-lookup"><span data-stu-id="06456-202">Finnish</span></span>
+- <span data-ttu-id="8d329-202">芬兰语</span><span class="sxs-lookup"><span data-stu-id="8d329-202">Finnish</span></span>
 
-- <span data-ttu-id="06456-203">法语</span><span class="sxs-lookup"><span data-stu-id="06456-203">French</span></span>
+- <span data-ttu-id="8d329-203">法语</span><span class="sxs-lookup"><span data-stu-id="8d329-203">French</span></span>
 
-- <span data-ttu-id="06456-204">加利西亚语</span><span class="sxs-lookup"><span data-stu-id="06456-204">Galician</span></span>
+- <span data-ttu-id="8d329-204">加利西亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-204">Galician</span></span>
 
-- <span data-ttu-id="06456-205">德语</span><span class="sxs-lookup"><span data-stu-id="06456-205">German</span></span>
+- <span data-ttu-id="8d329-205">德语</span><span class="sxs-lookup"><span data-stu-id="8d329-205">German</span></span>
 
-- <span data-ttu-id="06456-206">希腊语</span><span class="sxs-lookup"><span data-stu-id="06456-206">Greek</span></span>
+- <span data-ttu-id="8d329-206">希腊语</span><span class="sxs-lookup"><span data-stu-id="8d329-206">Greek</span></span>
 
-- <span data-ttu-id="06456-207">古吉拉特语</span><span class="sxs-lookup"><span data-stu-id="06456-207">Gujarati</span></span>
+- <span data-ttu-id="8d329-207">古吉拉特语</span><span class="sxs-lookup"><span data-stu-id="8d329-207">Gujarati</span></span>
 
-- <span data-ttu-id="06456-208">希伯来语</span><span class="sxs-lookup"><span data-stu-id="06456-208">Hebrew</span></span>
+- <span data-ttu-id="8d329-208">希伯来语</span><span class="sxs-lookup"><span data-stu-id="8d329-208">Hebrew</span></span>
 
-- <span data-ttu-id="06456-209">印地语</span><span class="sxs-lookup"><span data-stu-id="06456-209">Hindi</span></span>
+- <span data-ttu-id="8d329-209">印地语</span><span class="sxs-lookup"><span data-stu-id="8d329-209">Hindi</span></span>
 
-- <span data-ttu-id="06456-210">匈牙利语</span><span class="sxs-lookup"><span data-stu-id="06456-210">Hungarian</span></span>
+- <span data-ttu-id="8d329-210">匈牙利语</span><span class="sxs-lookup"><span data-stu-id="8d329-210">Hungarian</span></span>
 
-- <span data-ttu-id="06456-211">冰岛语</span><span class="sxs-lookup"><span data-stu-id="06456-211">Icelandic</span></span>
+- <span data-ttu-id="8d329-211">冰岛语</span><span class="sxs-lookup"><span data-stu-id="8d329-211">Icelandic</span></span>
 
-- <span data-ttu-id="06456-212">印度尼西亚语</span><span class="sxs-lookup"><span data-stu-id="06456-212">Indonesian</span></span>
+- <span data-ttu-id="8d329-212">印度尼西亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-212">Indonesian</span></span>
 
-- <span data-ttu-id="06456-213">意大利语</span><span class="sxs-lookup"><span data-stu-id="06456-213">Italian</span></span>
+- <span data-ttu-id="8d329-213">意大利语</span><span class="sxs-lookup"><span data-stu-id="8d329-213">Italian</span></span>
 
-- <span data-ttu-id="06456-214">日语</span><span class="sxs-lookup"><span data-stu-id="06456-214">Japanese</span></span>
+- <span data-ttu-id="8d329-214">日语</span><span class="sxs-lookup"><span data-stu-id="8d329-214">Japanese</span></span>
 
-- <span data-ttu-id="06456-215">卡纳达语</span><span class="sxs-lookup"><span data-stu-id="06456-215">Kannada</span></span>
+- <span data-ttu-id="8d329-215">卡纳达语</span><span class="sxs-lookup"><span data-stu-id="8d329-215">Kannada</span></span>
 
-- <span data-ttu-id="06456-216">哈萨克斯坦语</span><span class="sxs-lookup"><span data-stu-id="06456-216">Kazakh</span></span>
+- <span data-ttu-id="8d329-216">哈萨克斯坦语</span><span class="sxs-lookup"><span data-stu-id="8d329-216">Kazakh</span></span>
 
-- <span data-ttu-id="06456-217">斯瓦希里语</span><span class="sxs-lookup"><span data-stu-id="06456-217">Kiswahili</span></span>
+- <span data-ttu-id="8d329-217">斯瓦希里语</span><span class="sxs-lookup"><span data-stu-id="8d329-217">Kiswahili</span></span>
 
-- <span data-ttu-id="06456-218">朝鲜语</span><span class="sxs-lookup"><span data-stu-id="06456-218">Korean</span></span>
+- <span data-ttu-id="8d329-218">朝鲜语</span><span class="sxs-lookup"><span data-stu-id="8d329-218">Korean</span></span>
 
-- <span data-ttu-id="06456-219">拉脱维亚语</span><span class="sxs-lookup"><span data-stu-id="06456-219">Latvian</span></span>
+- <span data-ttu-id="8d329-219">拉脱维亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-219">Latvian</span></span>
 
-- <span data-ttu-id="06456-220">立陶宛语</span><span class="sxs-lookup"><span data-stu-id="06456-220">Lithuanian</span></span>
+- <span data-ttu-id="8d329-220">立陶宛语</span><span class="sxs-lookup"><span data-stu-id="8d329-220">Lithuanian</span></span>
 
-- <span data-ttu-id="06456-221">马来语（文莱达鲁萨兰国）</span><span class="sxs-lookup"><span data-stu-id="06456-221">Malay (Brunei Darussalam)</span></span>
+- <span data-ttu-id="8d329-221">马来语（文莱达鲁萨兰国）</span><span class="sxs-lookup"><span data-stu-id="8d329-221">Malay (Brunei Darussalam)</span></span>
 
-- <span data-ttu-id="06456-222">马来语（马来西亚）</span><span class="sxs-lookup"><span data-stu-id="06456-222">Malay (Malaysia)</span></span>
+- <span data-ttu-id="8d329-222">马来语（马来西亚）</span><span class="sxs-lookup"><span data-stu-id="8d329-222">Malay (Malaysia)</span></span>
 
-- <span data-ttu-id="06456-223">马拉雅拉姆语</span><span class="sxs-lookup"><span data-stu-id="06456-223">Malayalam</span></span>
+- <span data-ttu-id="8d329-223">马拉雅拉姆语</span><span class="sxs-lookup"><span data-stu-id="8d329-223">Malayalam</span></span>
 
-- <span data-ttu-id="06456-224">马拉地语</span><span class="sxs-lookup"><span data-stu-id="06456-224">Marathi</span></span>
+- <span data-ttu-id="8d329-224">马拉地语</span><span class="sxs-lookup"><span data-stu-id="8d329-224">Marathi</span></span>
 
-- <span data-ttu-id="06456-225">挪威语（博克马尔）</span><span class="sxs-lookup"><span data-stu-id="06456-225">Norwegian (Bokmål)</span></span>
+- <span data-ttu-id="8d329-225">挪威语（博克马尔）</span><span class="sxs-lookup"><span data-stu-id="8d329-225">Norwegian (Bokmål)</span></span>
 
-- <span data-ttu-id="06456-226">挪威语（尼诺斯克语）</span><span class="sxs-lookup"><span data-stu-id="06456-226">Norwegian (Nynorsk)</span></span>
+- <span data-ttu-id="8d329-226">挪威语（尼诺斯克语）</span><span class="sxs-lookup"><span data-stu-id="8d329-226">Norwegian (Nynorsk)</span></span>
 
-- <span data-ttu-id="06456-227">奥里雅语</span><span class="sxs-lookup"><span data-stu-id="06456-227">Oriya</span></span>
+- <span data-ttu-id="8d329-227">奥里雅语</span><span class="sxs-lookup"><span data-stu-id="8d329-227">Oriya</span></span>
 
-- <span data-ttu-id="06456-228">波斯语</span><span class="sxs-lookup"><span data-stu-id="06456-228">Persian</span></span>
+- <span data-ttu-id="8d329-228">波斯语</span><span class="sxs-lookup"><span data-stu-id="8d329-228">Persian</span></span>
 
-- <span data-ttu-id="06456-229">波兰语</span><span class="sxs-lookup"><span data-stu-id="06456-229">Polish</span></span>
+- <span data-ttu-id="8d329-229">波兰语</span><span class="sxs-lookup"><span data-stu-id="8d329-229">Polish</span></span>
 
-- <span data-ttu-id="06456-230">葡萄牙语（巴西）</span><span class="sxs-lookup"><span data-stu-id="06456-230">Portuguese (Brazil)</span></span>
+- <span data-ttu-id="8d329-230">葡萄牙语（巴西）</span><span class="sxs-lookup"><span data-stu-id="8d329-230">Portuguese (Brazil)</span></span>
 
-- <span data-ttu-id="06456-231">葡萄牙语（葡萄牙）</span><span class="sxs-lookup"><span data-stu-id="06456-231">Portuguese (Portugal)</span></span>
+- <span data-ttu-id="8d329-231">葡萄牙语（葡萄牙）</span><span class="sxs-lookup"><span data-stu-id="8d329-231">Portuguese (Portugal)</span></span>
 
-- <span data-ttu-id="06456-232">罗马尼亚语</span><span class="sxs-lookup"><span data-stu-id="06456-232">Romanian</span></span>
+- <span data-ttu-id="8d329-232">罗马尼亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-232">Romanian</span></span>
 
-- <span data-ttu-id="06456-233">俄语</span><span class="sxs-lookup"><span data-stu-id="06456-233">Russian</span></span>
+- <span data-ttu-id="8d329-233">俄语</span><span class="sxs-lookup"><span data-stu-id="8d329-233">Russian</span></span>
 
-- <span data-ttu-id="06456-234">塞尔维亚语（西里尔文，塞尔维亚）</span><span class="sxs-lookup"><span data-stu-id="06456-234">Serbian (Cyrillic, Serbia)</span></span>
+- <span data-ttu-id="8d329-234">塞尔维亚语（西里尔文，塞尔维亚）</span><span class="sxs-lookup"><span data-stu-id="8d329-234">Serbian (Cyrillic, Serbia)</span></span>
 
-- <span data-ttu-id="06456-235">塞尔维亚语（拉丁文）</span><span class="sxs-lookup"><span data-stu-id="06456-235">Serbian (Latin)</span></span>
+- <span data-ttu-id="8d329-235">塞尔维亚语（拉丁文）</span><span class="sxs-lookup"><span data-stu-id="8d329-235">Serbian (Latin)</span></span>
 
-- <span data-ttu-id="06456-236">斯洛伐克语</span><span class="sxs-lookup"><span data-stu-id="06456-236">Slovak</span></span>
+- <span data-ttu-id="8d329-236">斯洛伐克语</span><span class="sxs-lookup"><span data-stu-id="8d329-236">Slovak</span></span>
 
-- <span data-ttu-id="06456-237">斯洛文尼亚语</span><span class="sxs-lookup"><span data-stu-id="06456-237">Slovenian</span></span>
+- <span data-ttu-id="8d329-237">斯洛文尼亚语</span><span class="sxs-lookup"><span data-stu-id="8d329-237">Slovenian</span></span>
 
-- <span data-ttu-id="06456-238">西班牙语</span><span class="sxs-lookup"><span data-stu-id="06456-238">Spanish</span></span>
+- <span data-ttu-id="8d329-238">西班牙语</span><span class="sxs-lookup"><span data-stu-id="8d329-238">Spanish</span></span>
 
-- <span data-ttu-id="06456-239">瑞典语</span><span class="sxs-lookup"><span data-stu-id="06456-239">Swedish</span></span>
+- <span data-ttu-id="8d329-239">瑞典语</span><span class="sxs-lookup"><span data-stu-id="8d329-239">Swedish</span></span>
 
-- <span data-ttu-id="06456-240">泰米尔语</span><span class="sxs-lookup"><span data-stu-id="06456-240">Tamil</span></span>
+- <span data-ttu-id="8d329-240">泰米尔语</span><span class="sxs-lookup"><span data-stu-id="8d329-240">Tamil</span></span>
 
-- <span data-ttu-id="06456-241">泰卢固语</span><span class="sxs-lookup"><span data-stu-id="06456-241">Telugu</span></span>
+- <span data-ttu-id="8d329-241">泰卢固语</span><span class="sxs-lookup"><span data-stu-id="8d329-241">Telugu</span></span>
 
-- <span data-ttu-id="06456-242">泰语</span><span class="sxs-lookup"><span data-stu-id="06456-242">Thai</span></span>
+- <span data-ttu-id="8d329-242">泰语</span><span class="sxs-lookup"><span data-stu-id="8d329-242">Thai</span></span>
 
-- <span data-ttu-id="06456-243">土耳其语</span><span class="sxs-lookup"><span data-stu-id="06456-243">Turkish</span></span>
+- <span data-ttu-id="8d329-243">土耳其语</span><span class="sxs-lookup"><span data-stu-id="8d329-243">Turkish</span></span>
 
-- <span data-ttu-id="06456-244">乌克兰语</span><span class="sxs-lookup"><span data-stu-id="06456-244">Ukrainian</span></span>
+- <span data-ttu-id="8d329-244">乌克兰语</span><span class="sxs-lookup"><span data-stu-id="8d329-244">Ukrainian</span></span>
 
-- <span data-ttu-id="06456-245">乌尔都语</span><span class="sxs-lookup"><span data-stu-id="06456-245">Urdu</span></span>
+- <span data-ttu-id="8d329-245">乌尔都语</span><span class="sxs-lookup"><span data-stu-id="8d329-245">Urdu</span></span>
 
-- <span data-ttu-id="06456-246">越南语</span><span class="sxs-lookup"><span data-stu-id="06456-246">Vietnamese</span></span>
+- <span data-ttu-id="8d329-246">越南语</span><span class="sxs-lookup"><span data-stu-id="8d329-246">Vietnamese</span></span>
 
-- <span data-ttu-id="06456-247">威尔士语</span><span class="sxs-lookup"><span data-stu-id="06456-247">Welsh</span></span>
+- <span data-ttu-id="8d329-247">威尔士语</span><span class="sxs-lookup"><span data-stu-id="8d329-247">Welsh</span></span>
 
 

@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3fd62591e3e816e6ae4aaec8c3bb048f5f9ecaab
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e08e60153a60c66f13f80c2046b8d4f22f77049a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252281"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359793"
 ---
-# <a name="contact-support-for-bonaire"></a><span data-ttu-id="b49ba-103">联系 Bonaire 的支持人员</span><span class="sxs-lookup"><span data-stu-id="b49ba-103">Contact support for Bonaire</span></span>
+# <a name="contact-support-for-bonaire"></a><span data-ttu-id="462f7-103">联系 Bonaire 的支持人员</span><span class="sxs-lookup"><span data-stu-id="462f7-103">Contact support for Bonaire</span></span>
 
-<span data-ttu-id="b49ba-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="b49ba-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="462f7-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="462f7-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b49ba-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="b49ba-105">Phone number</span></span>
-<span data-ttu-id="b49ba-106">+ 1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="b49ba-106">+1 312 843 5146</span></span>
+## <a name="phone-number"></a><span data-ttu-id="462f7-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="462f7-105">Phone number</span></span>
+<span data-ttu-id="462f7-106">+ 1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="462f7-106">+1 312 843 5146</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b49ba-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="b49ba-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b49ba-108">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="b49ba-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="462f7-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="462f7-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="462f7-108">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="462f7-108">Billing Support:</span></span>
 
-<span data-ttu-id="b49ba-109">荷兰语：周一至周五上午4点-中午</span><span class="sxs-lookup"><span data-stu-id="b49ba-109">Dutch: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="462f7-109">荷兰语：周一至周五上午4点-中午</span><span class="sxs-lookup"><span data-stu-id="462f7-109">Dutch: Mon-Fri 4 AM-noon</span></span>
 
-<span data-ttu-id="b49ba-110">英语：周一至周五上午4点-中午</span><span class="sxs-lookup"><span data-stu-id="b49ba-110">English: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="462f7-110">英语：周一至周五上午4点-中午</span><span class="sxs-lookup"><span data-stu-id="462f7-110">English: Mon-Fri 4 AM-noon</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b49ba-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="b49ba-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="462f7-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="462f7-111">Technical Support:</span></span>
 
-<span data-ttu-id="b49ba-112">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="b49ba-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="462f7-112">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="462f7-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b49ba-113">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="b49ba-113">International call charges apply</span></span>
+<span data-ttu-id="462f7-113">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="462f7-113">International call charges apply</span></span>
