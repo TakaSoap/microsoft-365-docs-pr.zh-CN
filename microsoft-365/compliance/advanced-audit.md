@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 4812f81140bc80a1437c13b7bce38a7ed101592d
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280152"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370481"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -61,7 +61,7 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 - 访问同一封电子邮件时，MessageBind 操作会触发多个审核记录的创建过程，从而导致审核干扰。 相反，MailItemsAccessed 事件聚合在较少的审核记录中。
 
-有关邮箱审核日志的详细信息，参见“[管理邮箱审核](enable-mailbox-auditing.md)”。
+有关 MailItemsAccessed 活动的审核记录的详细信息，请参阅[使用高级审核来调查被泄漏的帐户](mailitemsaccessed-forensics-investigations.md)。
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>搜索 MailItemsAccessed 审核记录
 
