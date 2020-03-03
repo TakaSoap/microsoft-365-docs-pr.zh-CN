@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1fa93464528c650c204d917cefc38c5ffd232f20
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 20c39bac17778df30e2aad7f2bb1db32cc504967
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240128"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359463"
 ---
-# <a name="contact-support-for-christmas-island"></a><span data-ttu-id="e7c33-103">与圣诞节岛联系支持</span><span class="sxs-lookup"><span data-stu-id="e7c33-103">Contact support for Christmas Island</span></span>
+# <a name="contact-support-for-christmas-island"></a><span data-ttu-id="8d33c-103">与圣诞节岛联系支持</span><span class="sxs-lookup"><span data-stu-id="8d33c-103">Contact support for Christmas Island</span></span>
 
-<span data-ttu-id="e7c33-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="e7c33-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="8d33c-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="8d33c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="e7c33-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="e7c33-105">Phone number</span></span>
-<span data-ttu-id="e7c33-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="e7c33-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="8d33c-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="8d33c-105">Phone number</span></span>
+<span data-ttu-id="8d33c-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="8d33c-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="e7c33-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="e7c33-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="e7c33-108">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="e7c33-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="8d33c-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="8d33c-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="8d33c-108">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="8d33c-108">Billing Support:</span></span>
 
-<span data-ttu-id="e7c33-109">英语：周一至周五上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="e7c33-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="8d33c-109">英语：周一至周五上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="8d33c-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="e7c33-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="e7c33-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="8d33c-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="8d33c-110">Technical Support:</span></span>
 
-<span data-ttu-id="e7c33-111">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="e7c33-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="8d33c-111">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="8d33c-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="e7c33-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="e7c33-112">International call charges apply</span></span>
+<span data-ttu-id="8d33c-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="8d33c-112">International call charges apply</span></span>

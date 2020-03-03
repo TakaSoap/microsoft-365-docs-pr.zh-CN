@@ -12,37 +12,37 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a391ea34812969a7f01279139308c5b102cec2e4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 48eb25991656a1fcea3494d3caa95f01c7b3a6a1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238740"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359063"
 ---
-# <a name="contact-support-for-eritrea"></a><span data-ttu-id="511ba-103">为厄立特里亚联系支持</span><span class="sxs-lookup"><span data-stu-id="511ba-103">Contact support for Eritrea</span></span>
+# <a name="contact-support-for-eritrea"></a><span data-ttu-id="89653-103">为厄立特里亚联系支持</span><span class="sxs-lookup"><span data-stu-id="89653-103">Contact support for Eritrea</span></span>
 
-<span data-ttu-id="511ba-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="511ba-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="89653-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="89653-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="511ba-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="511ba-105">Phone number</span></span>
-<span data-ttu-id="511ba-106">+ 974 44 119418</span><span class="sxs-lookup"><span data-stu-id="511ba-106">+974 44 119418</span></span>
+## <a name="phone-number"></a><span data-ttu-id="89653-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="89653-105">Phone number</span></span>
+<span data-ttu-id="89653-106">+ 974 44 119418</span><span class="sxs-lookup"><span data-stu-id="89653-106">+974 44 119418</span></span>
 
-<span data-ttu-id="511ba-107">选择选项2</span><span class="sxs-lookup"><span data-stu-id="511ba-107">Select option 2</span></span>
+<span data-ttu-id="89653-107">选择选项2</span><span class="sxs-lookup"><span data-stu-id="89653-107">Select option 2</span></span>
 
-<span data-ttu-id="511ba-108">选择选项9</span><span class="sxs-lookup"><span data-stu-id="511ba-108">Select option 9</span></span>
+<span data-ttu-id="89653-108">选择选项9</span><span class="sxs-lookup"><span data-stu-id="89653-108">Select option 9</span></span>
 
-<span data-ttu-id="511ba-109">输入代码7700</span><span class="sxs-lookup"><span data-stu-id="511ba-109">Enter code 7700</span></span>
+<span data-ttu-id="89653-109">输入代码7700</span><span class="sxs-lookup"><span data-stu-id="89653-109">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="511ba-110">工作时间</span><span class="sxs-lookup"><span data-stu-id="511ba-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="511ba-111">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="511ba-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="89653-110">工作时间</span><span class="sxs-lookup"><span data-stu-id="89653-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="89653-111">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="89653-111">Billing Support:</span></span>
 
-<span data-ttu-id="511ba-112">阿拉伯语： Sun-星期四上午10点-下午6点</span><span class="sxs-lookup"><span data-stu-id="511ba-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="89653-112">阿拉伯语： Sun-星期四上午10点-下午6点</span><span class="sxs-lookup"><span data-stu-id="89653-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="511ba-113">英语：周一至周五上午10点-下午6点</span><span class="sxs-lookup"><span data-stu-id="511ba-113">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="89653-113">英语：周一至周五上午10点-下午6点</span><span class="sxs-lookup"><span data-stu-id="89653-113">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="511ba-114">技术支持：</span><span class="sxs-lookup"><span data-stu-id="511ba-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="89653-114">技术支持：</span><span class="sxs-lookup"><span data-stu-id="89653-114">Technical Support:</span></span>
 
-<span data-ttu-id="511ba-115">阿拉伯语： Sun-星期四上午10点-下午6点</span><span class="sxs-lookup"><span data-stu-id="511ba-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="89653-115">阿拉伯语： Sun-星期四上午10点-下午6点</span><span class="sxs-lookup"><span data-stu-id="89653-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="511ba-116">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="511ba-116">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="89653-116">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="89653-116">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="511ba-117">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="511ba-117">International call charges apply</span></span>
+<span data-ttu-id="89653-117">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="89653-117">International call charges apply</span></span>
