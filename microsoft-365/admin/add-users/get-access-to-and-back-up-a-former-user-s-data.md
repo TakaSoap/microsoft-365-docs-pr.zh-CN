@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 了解当某人离开你的组织时，如何保留员工的文件和电子邮件。
-ms.openlocfilehash: 92e863e3b849f6a89e6d67d805fdb5024879999f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238162"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353193"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>访问并备份以往用户的数据的访问
 
@@ -46,7 +46,7 @@ ms.locfileid: "42238162"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
     
 2. 选择一个用户。
 
@@ -62,7 +62,7 @@ ms.locfileid: "42238162"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
 
 2. 选择一个用户。
 
@@ -78,7 +78,7 @@ ms.locfileid: "42238162"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
 2. 选择一个用户。
 
@@ -143,15 +143,15 @@ ms.locfileid: "42238162"
     
 2. 在 Outlook 中，选择 "**文件**"。
     
-    ![这就是功能区在 Outlook 2016 中的外观。](../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
+    ![这就是功能区在 Outlook 2016 中的外观。](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
 3. 选择 **" &amp;打开导出** \> **导入/导出**"。
     
-    ![Backstage 视图中的导入/导出命令](../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Backstage 视图中的导入/导出命令](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. 选择 "**导出到文件**"，然后选择 "**下一步**"。
     
-    !["导入和导出向导" 中的 "导出到文件" 选项](../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    !["导入和导出向导" 中的 "导出到文件" 选项](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. 选择 " **Outlook 数据文件（.pst）**"，然后选择 "**下一步**"。
     
@@ -160,7 +160,7 @@ ms.locfileid: "42238162"
     > [!NOTE]
     > 您可以一次导出一个帐户。 如果要在导出一个帐户后导出多个帐户，请重复这些步骤。 
   
-    !["导出 Outlook 数据文件" 对话框，其中选中了 top 文件夹并包含选中的子文件夹](../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    !["导出 Outlook 数据文件" 对话框，其中选中了 top 文件夹并包含选中的子文件夹](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. 选择“下一步”****。
     
@@ -195,7 +195,7 @@ ms.locfileid: "42238162"
     
 2. 选择 "**从另一程序或文件导入**"，然后选择 "**下一步**"。
     
-    ![导入和导出向导](../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![导入和导出向导](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. 选择 " **Outlook 数据文件（.pst）**"，然后选择 "**下一步**"。
     

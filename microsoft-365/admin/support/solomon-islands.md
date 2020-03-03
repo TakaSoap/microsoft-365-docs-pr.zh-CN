@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 98c7bd5bef12ef1ab11cf2c725b8c246cf7d171a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c2899ad033b05d5bec3c3cedfbe2ff4f78558306
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240512"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356333"
 ---
 # <a name="contact-support-for-solomon-islands"></a>针对所罗门群岛的联系支持
 

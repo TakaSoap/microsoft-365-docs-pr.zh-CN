@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 03ec603daed4e73a70a2724a08c600488a9a7609
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 559568031a5ccfd35af9d6c93e640fe13ddcbebe
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251921"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356093"
 ---
 # <a name="contact-support-for-taiwan"></a>联系中国的支持人员
 

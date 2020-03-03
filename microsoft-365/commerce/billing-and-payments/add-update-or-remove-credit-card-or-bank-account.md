@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: 了解如何在 Microsoft 365 管理中心中管理你的支付方式。
-ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 894b1cbf9033521c6978f54d0483fe61c3d6114d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341232"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354933"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>添加、更新或删除支付方式
 
@@ -172,11 +172,11 @@ ms.locfileid: "42341232"
 
 2. 选择要用新信用卡或银行帐户付款的订阅，然后选择 "**更新付款详细信息**"。
 
-    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. 选择 "**添加或选择付款方式**" 下的下拉箭头，然后选择 "**新建信用卡**或**新银行帐户**"。
 
-    ![显示新信用卡和新银行帐户选项的下拉菜单。](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![显示新信用卡和新银行帐户选项的下拉菜单。](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. 输入新信用卡或银行帐户的信息，然后选择 "**提交**"。
 
@@ -203,11 +203,11 @@ ms.locfileid: "42341232"
 
 2. 选择要用新信用卡或银行帐户付款的订阅，然后选择 "**更新付款详细信息**"。
 
-    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. 选择 "**添加或选择付款方式**" 下的下拉箭头，然后选择 "**新建信用卡**或**新银行帐户**"。
 
-    ![显示新信用卡和新银行帐户选项的下拉菜单。](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![显示新信用卡和新银行帐户选项的下拉菜单。](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. 输入新信用卡或银行帐户的信息，然后选择 "**提交**"。
 
@@ -230,17 +230,17 @@ ms.locfileid: "42341232"
     > [!NOTE]
     > 如果其他管理员购买了该订阅，则无法更新它的信用卡或银行帐户信息。 如果信用卡即将过期，而其他管理员不能更新它，则可以在为订阅添加不同的信用卡或新银行帐户时防止服务中断。
   
-    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. 选择 "**添加或选择付款方式**" 下的下拉箭头。 选择要更新的信用卡或银行帐户，然后选择 "**编辑详细信息**"。
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. 更新信用卡或银行帐户信息（信用卡或银行帐户上的姓名、帐单地址。 电话号码或到期日期）根据需要，然后选择 "**提交**"。
 
 5. 显示一条确认消息。 如果没有显示，请参阅[信用卡和银行帐户疑难解答](#troubleshooting-credit-cards-and-bank-accounts)。
 
-    ![确认消息： "您的付款方式已成功更新。"](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![确认消息： "您的付款方式已成功更新。"](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -258,17 +258,17 @@ ms.locfileid: "42341232"
     > [!NOTE]
     > 如果其他管理员购买了该订阅，则无法更新它的信用卡或银行帐户信息。 如果信用卡即将过期，而其他管理员不能更新它，则可以在为订阅添加不同的信用卡或新银行帐户时防止服务中断。
   
-    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. 选择 "**添加或选择付款方式**" 下的下拉箭头。 选择要更新的信用卡或银行帐户，然后选择 "**编辑详细信息**"。
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. 更新信用卡或银行帐户信息（信用卡或银行帐户上的姓名、帐单地址。 电话号码或到期日期）根据需要，然后选择 "**提交**"。
 
 5. 显示一条确认消息。 如果没有显示，请参阅[信用卡和银行帐户疑难解答](#troubleshooting-credit-cards-and-bank-accounts)。
 
-    ![确认消息： "您的付款方式已成功更新。"](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![确认消息： "您的付款方式已成功更新。"](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -279,20 +279,20 @@ ms.locfileid: "42341232"
 
 2. 选取任何订阅，然后选择 "**更新付款详细信息**"。
 
-    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. 选择 "**添加或选择付款方式**" 下的下拉箭头。
 
 4. 选择信用卡或银行帐户，然后选择 "**删除**"。
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 5. 再次选择 "**删除**" 以删除信用卡或银行帐户。
 
-    !["删除" 和 "取消" 按钮。](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    !["删除" 和 "取消" 按钮。](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > 如果信用卡或银行帐户当前用于支付订阅费用，则不能删除该帐户。 如果尝试，您会看到如下一条消息： ![当您尝试删除当前用于支付活动订阅的付款方式时显示的错误消息。](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > 如果信用卡或银行帐户当前用于支付订阅费用，则不能删除该帐户。 如果尝试，您会看到如下一条消息： ![当您尝试删除当前用于支付活动订阅的付款方式时显示的错误消息。](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > 若要删除信用卡或银行帐户，请选择 "**上一步**"，然后按照本文中的步骤操作，以更改用于支付订阅的信用卡或银行帐户。 然后再次尝试删除该信用卡或银行帐户。
 
 ::: moniker-end
@@ -304,20 +304,20 @@ ms.locfileid: "42341232"
 
 2. 选取任何订阅，然后选择 "**更新付款详细信息**"。
 
-    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. 选择 "**添加或选择付款方式**" 下的下拉箭头。
 
 4. 选择信用卡或银行帐户，然后选择 "**删除**"。
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
 
 5. 再次选择 "**删除**" 以删除信用卡或银行帐户。
 
-    !["删除" 和 "取消" 按钮。](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    !["删除" 和 "取消" 按钮。](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > 如果信用卡或银行帐户当前用于支付订阅费用，则不能删除该帐户。 如果尝试，您会看到如下一条消息： ![当您尝试删除当前用于支付活动订阅的付款方式时显示的错误消息。](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > 如果信用卡或银行帐户当前用于支付订阅费用，则不能删除该帐户。 如果尝试，您会看到如下一条消息： ![当您尝试删除当前用于支付活动订阅的付款方式时显示的错误消息。](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > 若要删除信用卡或银行帐户，请选择 "**上一步**"，然后按照本文中的步骤操作，以更改用于支付订阅的信用卡或银行帐户。 然后再次尝试删除该信用卡或银行帐户。
 
 ::: moniker-end
@@ -329,11 +329,11 @@ ms.locfileid: "42341232"
 
 2. 选择要用新信用卡或银行帐户付款的订阅，然后选择 "**更新付款详细信息**"。
 
-    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. 选择 "**添加或选择付款方式**" 下的下拉箭头，然后选择要使用的信用卡或银行帐户。
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. 选择 "**提交**"。 如果尚未列出您要使用的信用卡或银行帐户，请选择**新信用卡**或**新银行帐户**以添加它。
 
@@ -346,11 +346,11 @@ ms.locfileid: "42341232"
 
 2. 选择要用新信用卡或银行帐户付款的订阅，然后选择 "**更新付款详细信息**"。
 
-    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![显示 "更新付款详细信息" 链接的 "订阅" 页面的 "付款方式" 部分。](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. 选择 "**添加或选择付款方式**" 下的下拉箭头，然后选择要使用的信用卡或银行帐户。
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. 选择 "**提交**"。 如果尚未列出您要使用的信用卡或银行帐户，请选择**新信用卡**或**新银行帐户**以添加它。
 

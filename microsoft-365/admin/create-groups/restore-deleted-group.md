@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: '了解如何使用 Exchange 管理中心还原已删除的 Office 365 组。 '
-ms.openlocfilehash: 98eb00d90f5b607a58cd32728ce43cb4a1de1ff5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c88f10df27e5f3a0af79c93c7d0e347c5646abc9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238438"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352433"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>还原已删除的 Office 365 组
 
@@ -77,9 +77,9 @@ ms.locfileid: "42238438"
       
 4. 选择要还原的组，然后选择 "还原" 图标。
     
-    ![选择要还原的组，然后选择 "还原" 图标。](../media/restore-group.png)
+    ![选择要还原的组，然后选择 "还原" 图标。](../../media/restore-group.png)
   
-5. 选择 "刷新" !['刷新'图标](../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) 以更新页面上的信息。 组将显示为活动状态。 与您的组关联的任何窗体和窗体数据也将还原。
+5. 选择 "刷新" !['刷新'图标](../../media/6464df90-2a91-4c1f-92a6-9a38c7696ac3.gif) 以更新页面上的信息。 组将显示为活动状态。 与您的组关联的任何窗体和窗体数据也将还原。
     
 ## <a name="restore-an-office-365-group-using-powershell"></a>使用 PowerShell 还原 Office 365 组
 

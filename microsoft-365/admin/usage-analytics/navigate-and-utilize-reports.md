@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 了解如何使用导航选项卡和筛选器查看报告。
-ms.openlocfilehash: abd3cdf478f5a17d11af99428ec71bddd7eb339a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251222"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355103"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用情况分析中导航和利用报告
 
@@ -34,35 +34,35 @@ ms.locfileid: "42251222"
 
 - 使用 "**执行摘要**" 页上左侧的导航选项卡或相关指标，以导航到每个顶级报表。
 
-    ![在左侧显示导航选项卡](../media/navigate-usage-analytics1.png)
+    ![在左侧显示导航选项卡](../../media/navigate-usage-analytics1.png)
 
 - 使用每个顶级报表顶部的导航选项卡导航到该级别中的不同报表。
 
-    ![显示每个报表顶部的导航选项卡](../media/navigate-usage-analytics2.png)
+    ![显示每个报表顶部的导航选项卡](../../media/navigate-usage-analytics2.png)
 
 - 许多报表包含一个切片器，您可以在其中筛选要查看的产品、AAD 属性或活动。 这些值可以是单选的，也可以是多项选择。
 
-    ![显示切片器](../media/navigate-usage-analytics3.png)
+    ![显示切片器](../../media/navigate-usage-analytics3.png)
 
-    ![显示切片器](../media/navigate-usage-analytics4.png)
+    ![显示切片器](../../media/navigate-usage-analytics4.png)
 
 
 - 将鼠标悬停在数据点上，以查看包含详细信息的标注。
 
-    ![显示悬停示例](../media/navigate-usage-analytics6.png)
+    ![显示悬停示例](../../media/navigate-usage-analytics6.png)
 
 已实例化模板应用程序的用户将能够根据自己的需求自定义报告。 自定义模板应用程序：
 
 - 在报表顶部选择 "**编辑报表**"。
 
-    ![显示编辑报告](../media/navigate-usage-analytics7.png)
+    ![显示编辑报告](../../media/navigate-usage-analytics7.png)
 
 
 - 使用基础[数据集](usage-analytics-data-model.md)创建自己的视觉对象。
 
 - 使用 PowerBI Desktop 引入自己的数据源。
 
-若要共享报表，只需选择 "共享" 按钮 ![Power BI Share icon](../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 页面顶部。
+若要共享报表，只需选择 "共享" 按钮 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 页面顶部。
 
 若要了解如何自定义报告，请参阅[在 Microsoft 365 使用情况分析中自定义报告](customize-reports.md)。
 

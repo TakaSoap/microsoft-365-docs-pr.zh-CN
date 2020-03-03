@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 29185abe328ba469129181492cabef2226dc56dc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 99f2a57b0b3c33ae190ae8d8f820ff94a02cde0c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238747"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359141"
 ---
 # <a name="contact-support-for-dominican-republic"></a>联系支持（多米尼加共和国）
 

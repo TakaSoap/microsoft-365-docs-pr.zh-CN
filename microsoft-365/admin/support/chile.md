@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d68501e5b7500d85f32216d05c47e0fa8d25e259
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 939bf0107e633aced23451eb120117db4f57c8bf
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240137"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359513"
 ---
 # <a name="contact-support-for-chile"></a>联系智利支持人员
 

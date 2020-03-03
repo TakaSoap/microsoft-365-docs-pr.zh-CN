@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e74893a725133ba6f5efc00681019f81547f6b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6bbb432b468031c43f4e516fec1e61d54bbc24fb
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238727"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358733"
 ---
 # <a name="contact-support-for-ghana"></a>对加纳的联系支持
 

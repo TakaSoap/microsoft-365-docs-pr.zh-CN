@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 了解如何在 Freenom for Office 365 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: a1396964c7dc9c279589a6020e0c741fd0cb29d5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 16348eb03a6507e15d31d5c183bd91125d0236f6
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240796"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42350663"
 ---
 # <a name="create-dns-records-at-freenom-for-office-365"></a>在 Freenom 上为 Office 365 创建 DNS 记录
 
@@ -51,102 +51,102 @@ ms.locfileid: "42240796"
   
 1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
-    ![Freenom 登录名](../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
+    ![Freenom 登录名](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
 2. 选择 "**服务**"，然后选择 **"我的域**"。
     
-    ![Freenom 选择服务和我的域](../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
+    ![Freenom 选择服务和我的域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
 3. 对于要编辑的域，选择 "**管理域**"。
     
-    ![Freenom 选择管理域](../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
+    ![Freenom 选择管理域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
 4. 选择 "**管理 FREENOM DNS**"。
     
-    ![Freenom 管理 Freenom DNS](../media/9854a511-27e3-4658-8903-34b3d425096d.png)
+    ![Freenom 管理 Freenom DNS](../../media/9854a511-27e3-4658-8903-34b3d425096d.png)
   
 5. 在 "**添加记录**" 下的 "**类型**" 列中，从菜单中选择 " **TXT** "。 
     
-    ![Freenom 添加记录类型 TXT](../media/7f0e85e7-844f-4962-815e-5d80d9e6efa0.png)
+    ![Freenom 添加记录类型 TXT](../../media/7f0e85e7-844f-4962-815e-5d80d9e6efa0.png)
   
-6. In the boxes for the new record, type or copy and paste the values from the following table. 
+6. 在新记录的框中，键入或复制并粘贴下表中的值。 
     
-    |**名称**|**Type**|**TTL**|**Target**|
+    |**名称**|**Type**|**TTL**|**目标**|
     |:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |MS = msXXXXXXXX  <br/> **注意：** 这是一个示例。 在这里使用来自 Office 365 中的表的特定" **目标或指向的地址**"值。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |
+    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |MS = msXXXXXXXX  <br/> **注意：** 此为示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![用于验证的 Freenom TXT 值](../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
+    ![用于验证的 Freenom TXT 值](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
 7. 选择 "**保存更改**"。
     
-    ![Freenom TXT 记录保存更改](../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
+    ![Freenom TXT 记录保存更改](../../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
   
 8. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
-1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
 
     
-2. 在 "**域**" 页上，选择要验证的域。 
+2. 在“**域**”页面上，选择要验证的域。 
     
     
   
-3. 在 "**设置**" 页上，选择 "**启动安装程序**"。
+3. 在“**设置**”页面上，选择“**开始设置**”。
     
     
   
-4. 在 "**验证域**" 页上，选择 "**验证**"。
+4. 在“**验证域**”页面上，选择“**验证**”。
     
     
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>添加一条 MX 记录，确保发往您的域的电子邮件发送到 Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>添加一条 MX 记录，确保发往你的域的电子邮件发送到 Office 365
 <a name="bkmk_mx"> </a>
 
 1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
-    ![Freenom 登录名](../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
+    ![Freenom 登录名](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
 2. 选择 "**服务**"，然后选择 **"我的域**"。
     
-    ![Freenom 选择服务和我的域](../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
+    ![Freenom 选择服务和我的域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
 3. 对于要编辑的域，选择 "**管理域**"。
     
-    ![Freenom 选择管理域](../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
+    ![Freenom 选择管理域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
 4. 将您的域的名称设置为默认的 Freenom 名称服务器。 选择 "**管理工具**"，然后选择 "**名称服务器**"。
     
-    ![Freenom 名称服务器设置](../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
+    ![Freenom 名称服务器设置](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
 5. 请确保已选择 "**使用默认名称服务器**"，然后选择 "**更改名称服务器**"。
     
-    ![Freenom 更改名称服务器](../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
+    ![Freenom 更改名称服务器](../../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
   
 6. 选择 "**管理 FREENOM DNS**"。
     
-    ![Freenom select Manage Freenom DNS](../media/f55a8053-2411-45da-a357-776c6699f721.png)
+    ![Freenom select Manage Freenom DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
   
 7. 在 "**添加记录**" 下的 "**类型**" 列中，从菜单中选择 " **MX** "。 
     
-    ![Freenom 添加记录类型 MX](../media/c728c6ee-786c-4f6a-8ad5-1d9914a5bfcf.png)
+    ![Freenom 添加记录类型 MX](../../media/c728c6ee-786c-4f6a-8ad5-1d9914a5bfcf.png)
   
 8. 在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    |**名称**|**Type**|**TTL**|**Target**|**Priority**|
+    |**名称**|**Type**|**TTL**|**目标**|**优先级**|
     |:-----|:-----|:-----|:-----|:-----|
     |（保留为空白）  <br/> |MX （邮件交换器）  <br/> |3600（秒）  <br/> |\<域密钥\>. mail.protection.outlook.com  <br/> **注意：** 从 Office 365 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
    
-   ![Freenom MX 记录](../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
+   ![Freenom MX 记录](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
 9. 选择 "**保存更改**"。
     
-    ![Freenom MX 记录保存更改](../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
+    ![Freenom MX 记录保存更改](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
   
 10. 如果有任何其他 MX 记录，请将它们全部删除。 对于每个记录，选择 "**删除**"。 当**您确实要删除此条目时？** 出现时，选择 **"确定"**。
     
@@ -155,27 +155,27 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
-    ![Freenom 登录名](../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
+    ![Freenom 登录名](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
 2. 选择 "**服务**"，然后选择 **"我的域**"。
     
-    ![Freenom 选择服务和我的域](../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
+    ![Freenom 选择服务和我的域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
 3. 对于要编辑的域，选择 "**管理域**"。
     
-    ![Freenom 选择管理域](../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
+    ![Freenom 选择管理域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
 4. 选择 "**管理 FREENOM DNS**"。
     
-    ![Freenom select Manage Freenom DNS](../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
+    ![Freenom select Manage Freenom DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
   
 5. 在 "**添加记录**" 下的 "**类型**" 列中，从菜单中选择 " **CNAME** "。 
     
-    ![Freenom 添加记录类型 CNAME](../media/9b204755-ca2a-46d2-bce2-030d82fd1f9e.png)
+    ![Freenom 添加记录类型 CNAME](../../media/9b204755-ca2a-46d2-bce2-030d82fd1f9e.png)
   
 6. 创建第一个 CNAME 记录。 在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    |**名称**|**记录类型**|**TTL**|**Target**|
+    |**名称**|**记录类型**|**TTL**|**目标**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600（秒）  <br/> |sipdir.online.lync.com  <br/> |
@@ -183,11 +183,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |CNAME  <br/> |3600（秒）  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |3600（秒）  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![Freenom CNAME 值](../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
+    ![Freenom CNAME 值](../../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
   
 7. 选择 "**保存更改**"。
     
-    ![Freenom CNAME 保存更改](../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
+    ![Freenom CNAME 保存更改](../../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
   
 8. 重复前面的步骤以创建其他五个 CNAME 记录。 
     
@@ -197,38 +197,38 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. 改为将所需的 Office 365 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 If you already have an SPF record for your domain, don't create a new one for Office 365. 可以将所需的 Office 365 添加到当前记录，这样就拥有包含两组值的*单个*SPF 记录。 
 
 1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
-    ![Freenom 登录名](../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
+    ![Freenom 登录名](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
 2. 选择 "**服务**"，然后选择 **"我的域**"。
     
-    ![Freenom 选择服务和我的域](../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
+    ![Freenom 选择服务和我的域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
 3. 对于要编辑的域，选择 "**管理域**"。
     
-    ![Freenom 选择管理域](../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
+    ![Freenom 选择管理域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
 4. 选择 "**管理 FREENOM DNS**"。
     
-    ![Freenom select Manage Freenom DNS](../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
+    ![Freenom select Manage Freenom DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
   
 5. 在 "**添加记录**" 下的 "**类型**" 列中，从菜单中选择 " **TXT** "。 
     
-    ![Freenom 添加记录类型 TXT](../media/d8854285-c4ae-416c-a072-72a11ba1cd9a.png)
+    ![Freenom 添加记录类型 TXT](../../media/d8854285-c4ae-416c-a072-72a11ba1cd9a.png)
   
 6. In the boxes for the new record, type or copy and paste the following values. 
     
-    |**名称**|**记录类型**|**TTL**|**Target**|
+    |**名称**|**记录类型**|**TTL**|**目标**|
     |:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 我们建议您复制并粘贴此条目，以确保所有的间距保持正确。           |
+    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
    
-    ![SPF 的 Freenom TXT 值](../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
+    ![SPF 的 Freenom TXT 值](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   
 7. 选择 "**保存更改**"。
     
-    ![SPF 保存更改的 Freenom TXT 记录](../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
+    ![SPF 保存更改的 Freenom TXT 记录](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
   
 

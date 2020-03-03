@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Office 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: 98777792237a9143e89d8b4d20cd8a5ab3136789
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 02a951b1fbf43c22f12a89663a0aee279b191088
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238062"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352613"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>在 Office 365 组中管理来宾访问
 
@@ -109,7 +109,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 验证如下所示：
     
-![显示 "来宾组访问已设置为 false" 的 PowerShell 窗口的屏幕截图。](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
+![显示 "来宾组访问已设置为 false" 的 PowerShell 窗口的屏幕截图。](../../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
   
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>根据其域允许或阻止来宾访问
 

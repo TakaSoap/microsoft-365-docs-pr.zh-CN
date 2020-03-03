@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: 获取 Microsoft 365 管理应用程序，并了解如何通过手机或平板电脑管理你的在线组织。
-ms.openlocfilehash: 6f81da66ff8d60f1adc249c1e21542b0174050d6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238136"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353033"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>关于 Microsoft 365 管理移动应用
 
 您是否是一个通常在旅途中的管理员？ 然后，查看[Microsoft 365 管理应用程序](https://go.microsoft.com/fwlink/?LinkID=627216)。 您可以使用该应用从您的手机或平板电脑管理您的在线组织。 你可以从 Apple Store 和 Google Play 中获取应用。 <br> 
 
-![管理移动应用程序主页的屏幕捕获，显示搜索、邮件、运行状况和快速链接。](../media/admin-mobile-app-darkbg.png)
+![管理移动应用程序主页的屏幕捕获，显示搜索、邮件、运行状况和快速链接。](../../media/admin-mobile-app-darkbg.png)
 
 管理应用程序是一种功能丰富的应用程序，具有超过80的功能，可帮助您在无法访问计算机时管理您的组织。 下面列出了可以从应用程序中执行的几个任务：
 

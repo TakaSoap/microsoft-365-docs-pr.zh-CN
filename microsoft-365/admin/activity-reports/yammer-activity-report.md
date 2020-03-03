@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: 获取 Yammer 活动报告，并了解有关使用 Yammer 发布、类似或阅读邮件的用户数的详细信息。
-ms.openlocfilehash: 0b6e7feb1d80ddc56c9ea172fa3c7e91ea0903b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238201"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353513"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>管理中心内的 Office 365 报告-Yammer 活动报告
 
@@ -44,7 +44,7 @@ ms.locfileid: "42238201"
 
 可通过查看"活动"和"用户"图表，了解用户的 Yammer 活动。
   
-![Yammer 活动报告](../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
+![Yammer 活动报告](../../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
   
 活动报表包含以下信息。
   
@@ -54,13 +54,13 @@ ms.locfileid: "42238201"
     
 - 可以查看" **活动** "图表以了解组织内进行的 Yammer 活动的数量变化趋势。可以分别了解已发布、已读或已点赞的消息。 
     
-    ![Yammer 活动报告中的 "活动" 视图](../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
+    ![Yammer 活动报告中的 "活动" 视图](../../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
   
   - 在" **活动** "图表上，Y 轴表示已发布消息、已读消息或已点赞消息的活动数。 
     
 - 可以查看" **用户** "图表以了解生成 Yammer 活动的唯一用户数的变化趋势。可以查看发布、阅读或点赞 Yammer 消息的用户的变化趋势。 
     
-    ![Yammer 活动报告中的用户视图](../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
+    ![Yammer 活动报告中的用户视图](../../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
   
   - 在" **用户** "活动图表上，Y 轴表示用户发布、阅读或点赞 Yammer 消息。 
     
@@ -68,7 +68,7 @@ ms.locfileid: "42238201"
     
 - 您可以通过选择图例中的项目来筛选您在图表上看到的系列。 例如，在 "**活动**" 图表上，选择 "**已发布**"、"已**阅读**" 或 "已**赞**" 以仅查看与每个相关的信息。 
     
-    ![已发布、已阅读和已赞的选项](../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
+    ![已发布、已阅读和已赞的选项](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
   
     选择此选项不会更改网格表中的信息。
     
@@ -76,7 +76,7 @@ ms.locfileid: "42238201"
     
     可以使用此菜单对数据进行筛选和排序。
     
-    ![Yammer 报告的菜单选项](../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
+    ![Yammer 报告的菜单选项](../../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
   
     也可以添加和删除列。 可用列是：
     

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: '如果您希望 Office 365 管理您的 DNS 记录，请了解如何设置带网络解决方案的 Office 365 自定义域。 '
-ms.openlocfilehash: c9465da507e6b4dea35f9ead50b5bc7c14a1b38f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5eae7561baa6e0efb4436e6758d3fd972a2700cc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238442"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351753"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-network-solutions"></a>更改名称服务器以使用 Network Solutions 设置 Office 365
 
@@ -48,61 +48,61 @@ ms.locfileid: "42238442"
     > [!IMPORTANT]
     > 在选择 "**登录**" 按钮之前，先在 "**登录到：** " 下拉列表中选择 **"管理我的域名**"。
   
-    ![选择'管理我的域名'并登录到 Network Solutions](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. 选择要修改的域名称旁边的复选框。
     
-    ![选择域的复选框](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![选择域的复选框](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. 选择 "**编辑 DNS**"。
     
-    ![选择 "编辑 DNS"](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![选择 "编辑 DNS"](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. 选择 "**管理高级 DNS 记录**"。
     
     (You may have to scroll down.)
     
-    ![选择 "管理高级 DNS 记录"](../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![选择 "管理高级 DNS 记录"](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. 向下滚动到 "**文本（TXT 记录）** " 部分，然后选择 "**编辑 TXT 记录**"。
     
-    ![选择 "编辑 TXT 记录"](../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![选择 "编辑 TXT 记录"](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. 在新记录的框中，键入或复制并粘贴下表中的值。
     
 |**主机**|**TTL**|**文本**|
 |:-----|:-----|:-----|
-|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **注意**：这是一个示例。 在这里使用来自 Office 365 中的表的特定" **目标或指向的地址**"值。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)
+|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **注意**：这是一个示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)
    
     
-   ![在新记录的框中键入或粘贴值](../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+   ![在新记录的框中键入或粘贴值](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
 7. 选择 "**继续**"。
     
-    ![选择 "继续"](../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![选择 "继续"](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
 8. 选择 "**保存更改**"。
     
-    ![选择 "保存更改"](../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+    ![选择 "保存更改"](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
 9. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
-1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
 
     
-2. 在 "**域**" 页上，选择要验证的域。 
+2. 在“**域**”页面上，选择要验证的域。 
     
     
   
-3. 在 "**设置**" 页上，选择 "**启动安装程序**"。
+3. 在“**设置**”页面上，选择“**开始设置**”。
     
     
   
-4. 在 "**验证域**" 页上，选择 "**验证**"。
+4. 在“**验证域**”页面上，选择“**验证**”。
     
     
   
@@ -126,19 +126,19 @@ When Office 365 finds the correct TXT record, your domain is verified.
     > [!IMPORTANT]
     > 在选择 "**登录**" 按钮之前，先在 "**登录到：** " 下拉列表中选择 **"管理我的域名**"。 
   
-    ![选择'管理我的域名'并登录到 Network Solutions](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. 选择要修改的域名称旁边的复选框。
     
-    ![选择域的复选框](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![选择域的复选框](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. 选择 "**编辑 DNS**"。
     
-    ![选择 "编辑 DNS"](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![选择 "编辑 DNS"](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. 选择 "**移动 DNS**"。
     
-    ![NetworkSolutionsBP-委派-1-1](../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
+    ![NetworkSolutionsBP-委派-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
   
 5. 根据现在显示的页面上是否已列出名称服务器，继续执行以下两个过程之一：
     
@@ -150,7 +150,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. 在 "**域**" 页上的 "**指定域名服务器**" 部分，选择 "**添加更多名称服务器**"。
     
-    ![NetworkSolutionsBP-委派-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-委派-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 2. 在" **域名**"页面中，键入或复制并粘贴下表中的名称服务器值。 
     
@@ -162,15 +162,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |**名称服务器 2** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-委派-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-委派-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 3. 选择 "**移动 DNS**"。
     
-    ![NetworkSolutionsBP-委派-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-委派-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 4. 选择 "**保存更改**"。
     
-    ![NetworkSolutionsBP-委派-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-委派-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。然后，你的 Office 365 电子邮件和其他服务将全部设置为使用你的域。 
@@ -182,11 +182,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 1. 如果列有任何其他名称服务器，选择服务器，然后按键盘上的 **Delete** 键，将其删除。
     
-    ![NetworkSolutions-委派-1-5](../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
+    ![NetworkSolutions-委派-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
 2. 选择 "**添加更多名称服务器**"。
     
-    ![NetworkSolutionsBP-委派-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-委派-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 3. 在" **域名**"页面中，键入或复制并粘贴下表中的名称服务器值。
  
@@ -199,15 +199,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |**名称服务器 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-委派-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-委派-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 4. 选择 "**移动 DNS**"。
     
-    ![NetworkSolutionsBP-委派-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-委派-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 5. 选择 "**保存更改"。**
     
-    ![NetworkSolutionsBP-委派-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-委派-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。然后，你的 Office 365 电子邮件和其他服务将全部设置为使用你的域。

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 275c7eabbe26b1952d2b6b6ab82bd17e4c6aced9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 25a291601a4c688e43ca6392833ba34c72056178
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252217"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359253"
 ---
 # <a name="contact-support-for-cyprus"></a>联系支持的塞浦路斯
 

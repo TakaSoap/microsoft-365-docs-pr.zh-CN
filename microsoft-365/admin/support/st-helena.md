@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4f7bb7f6eccae0a280288a3670d9f9933e8512f9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ee0f11f2fd3e8a2ab9af83ec6a821f67f9f9e62f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251929"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356203"
 ---
 # <a name="contact-support-for-st-helena"></a>为圣赫勒拿部门提供支持
 

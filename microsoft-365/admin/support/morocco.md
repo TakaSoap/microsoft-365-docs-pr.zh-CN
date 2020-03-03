@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c99013604bcef127bf451bfcf60ba7297d388deb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b1b9708f4e3335e8ecf474fa877624691a587a6b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240628"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357493"
 ---
 # <a name="contact-support-for-morocco"></a>对摩洛哥的联系支持
 

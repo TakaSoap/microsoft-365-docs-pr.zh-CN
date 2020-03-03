@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f954642054953e909e9e6287610fb068f11713b5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a458e93166fd785098a11beea918f6df9c5bb3d5
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252154"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358463"
 ---
 # <a name="contact-support-for-honduras"></a>联系人对洪都拉斯的支持
 

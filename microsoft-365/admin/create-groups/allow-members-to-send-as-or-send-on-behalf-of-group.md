@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 了解如何允许成员以 Office 365 组的形式发送电子邮件，或代表 Office 365 组发送电子邮件。
-ms.openlocfilehash: c0dca3a3bbed6617874d9dfbca06a4ec5d6b4ebc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238092"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352753"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员作为组发送或代表组发送
 
@@ -47,17 +47,17 @@ ms.locfileid: "42238092"
   
 1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>中，转到 "**收件人** \> **组**"。
     
-2. 选择要允许用户以](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)其身份发送的组上的 "**编辑**![编辑组" 图标。   
+2. 选择要允许用户以](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)其身份发送的组上的 "**编辑**![编辑组" 图标。   
     
 3. 选择 "**组委派**"。
     
 4. 在 "**代理发送**" 部分中， **+** 选择用于添加要作为组发送的用户的符号。 
     
-    ![选择加号以添加要作为 Office 365 组发送的用户。](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![选择加号以添加要作为 Office 365 组发送的用户。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. 键入从列表中搜索或选取用户。 选择 **"确定"** ，然后单击 "**保存**"。
     
-    ![从列表中搜索或选取用户的类型](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![从列表中搜索或选取用户的类型](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>允许成员代表组发送电子邮件
 
@@ -65,17 +65,17 @@ ms.locfileid: "42238092"
   
 1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>中，转到 "**收件人** \> **组**"。
     
-2. 在要允许用户发送](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)的组中选择 "**编辑** ![编辑组" 图标。 
+2. 在要允许用户发送](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)的组中选择 "**编辑** ![编辑组" 图标。 
     
 3. 选择 "**组委派**"。
     
 4. 在 "代表发送" 部分中，选择**+** 用于添加要作为组发送的用户的符号。 
     
-    ![选择加号以添加要作为 Office 365 组发送的用户。](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![选择加号以添加要作为 Office 365 组发送的用户。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. 键入从列表中搜索或选取用户。 选择 **"确定"** ，然后单击 "**保存**"。
     
-    ![从列表中搜索或选取用户的类型](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![从列表中搜索或选取用户的类型](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>相关文章
 

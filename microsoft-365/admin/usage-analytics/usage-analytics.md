@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 概述贵组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: ce55d8374c4fd927914ae3fb63edbdf1f7df4089
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251894"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355273"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 ---
@@ -49,7 +49,7 @@ Microsoft 365 使用情况分析包含以下各节中详细介绍的一些报告
 
 此摘要可让您快速了解 Office 中的使用模式以及员工的协作方式和位置。
 
-![Microsoft 365 使用率执行摘要的图像。](../media/office365usage-exec-summary.png)
+![Microsoft 365 使用率执行摘要的图像。](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>概述
 

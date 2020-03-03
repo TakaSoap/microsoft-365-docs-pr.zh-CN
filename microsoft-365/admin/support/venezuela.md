@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7fda7fcb470124b77dfc88af8ec6c1c0b068b5ad
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c6949fe19785be20e165a7cbeff44ec860efcee5
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240433"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355563"
 ---
 # <a name="contact-support-for-venezuela"></a>获取委内瑞拉的联系支持
 

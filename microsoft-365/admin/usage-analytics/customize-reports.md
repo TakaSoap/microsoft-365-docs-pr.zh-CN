@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 了解如何在浏览器和 Power BI Desktop 中自定义报告。
-ms.openlocfilehash: 5fc3b399638b2f1e9b1b2726fbf58e22eda33e01
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240425"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355153"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用情况分析中自定义报告
 
@@ -42,19 +42,19 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
 1. 在**激活/许可**报告中，单击 "**激活**" 选项卡。
     
-2. 通过单击 "Power BI ![](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)中的其他页面" 按钮上的 "**编辑**" 按钮，进入编辑模式。 
+2. 通过单击 "Power BI ![](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)中的其他页面" 按钮上的 "**编辑**" 按钮，进入编辑模式。 
     
-    ![Click Edit report on the top right navigation](../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
 3. 在右上部，单击 "**复制此页面**"。
     
-    ![Choose Duplicate this page](../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+    ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
 4. 在右下角，单击显示根据 OS （如 Android、iOS、Mac 等 OS 激活的用户计数）的任意条形图。
     
 5. 在右侧的**可视化**区域中，若要从 visual 中删除**Mac 计数**，请单击它旁边的**X** 。
 
-    ![删除 Mac 计数](../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
+    ![删除 Mac 计数](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
 ### <a name="create-a-new-visual"></a>创建新的视觉对象
 
@@ -62,13 +62,13 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
 1. 使用左侧导航转到 "**产品使用情况**" 报表，然后单击 " **Yammer** " 选项卡。
     
-2. 单击 Power BI ![](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)和**edit**中的 "更多页面" 按钮，切换到编辑模式。 
+2. 单击 Power BI ![](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)和**edit**中的 "更多页面" 按钮，切换到编辑模式。 
     
-3. 在页面底部，单击 "" ![Power BI 中的 "添加页面" 按钮](../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
+3. 在页面底部，单击 "" ![Power BI 中的 "添加页面" 按钮](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
   
 4. 在右侧的**可视化**区域中，单击**堆积条形图**（顶部行，先于左侧）。
 
-    ![选择条形图](../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![选择条形图](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
 5. 单击可视化效果的右下方，然后拖动以使其变大。
 
@@ -76,7 +76,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
 7. 将" **MonthName**"拖动到字段区域，该区域位于" **可视化效果**"区域中" **坐标轴**"标题的正下方。
  
-    ![拖动月份名称](../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![拖动月份名称](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
 8. 在右侧的" **字段**"区域中，展开" **TenantProductUsage**"表。
 
@@ -86,9 +86,9 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
 11. 在出现的" **筛选器类型**"区域中，选中" **Yammer**"复选框。
 
-    ![选择 Yammer 复选框](../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![选择 Yammer 复选框](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 在可视化效果列表的正下方，单击**** Power BI ![Visualizaions](../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)中的 "格式" 图标格式图标。
+12. 在可视化效果列表的正下方，单击**** Power BI ![Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)中的 "格式" 图标格式图标。
 
 13. 展开标题并将" **标题文本**"值更改为" **每月首次使用 Yammer 的用户**"。
     
@@ -112,7 +112,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
     
     **注意：** 报告 Api 处于预览阶段，可能会发生更改，直到它们投入生产。 
   
-    ![OData feed URL for Power BI desktop](../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
 3. 在收到提示时，输入 Microsoft 365 （组织或学校）管理员凭据以向 Microsoft 365 进行身份验证。
     
@@ -124,7 +124,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
     
     这会将数据下载到 Power BI Desktop。保存该文件，然后可以开始创建所需报表。
     
-    ![报告 API 中可用的 ODATA 值](../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![报告 API 中可用的 ODATA 值](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用 Microsoft 365 使用情况分析模板
 
@@ -136,7 +136,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
     
 2. 在对话框中输入租户 ID 值。
     
-    ![Enter your tenant ID to open the pbit file](../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
 3. 收到提示时，输入您的管理员凭据以向 Microsoft 365 进行身份验证。
     

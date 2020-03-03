@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何在 Office 365 for business 发票上解释费用、帐单和付款信息，以及如何更改采购订单编号。
-ms.openlocfilehash: 2cb95b49136c186158d3b8ba3fe868d2c863e0de
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238395"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354683"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>了解 Office 365 商业版发票
 
@@ -37,11 +37,11 @@ ms.locfileid: "42238395"
   
 你的发票包含两页。第 1 页是发票摘要，包含有关发票、订单、到期金额、付款方式和联系支持人员的方式等一般信息。
   
-![Page 1 of a sample invoice.](../../admin/media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
+![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
 第 2 页包含有关每个订阅的帐单活动的详细信息。
   
-![Page 2 of a sample invoice.](../../admin/media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
+![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
   
 有关发票中所含字段和术语的说明，请参阅本文稍后部分中的[发票字段术语](#invoice-field-glossary)。
   

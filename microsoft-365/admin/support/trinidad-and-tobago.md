@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bc0d81e63a9a90dc9114adfd36a93de3c0e20944
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e50734f4eba003567cbc63294dd17a68d85ff681
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252503"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355923"
 ---
 # <a name="contact-support-for-trinidad-amp-tobago"></a>联系特立尼达&amp;多巴哥的支持人员
 

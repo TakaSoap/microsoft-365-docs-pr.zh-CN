@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '了解如何使用产品密钥续订 Office 365 for business 订阅，并打开或关闭定期记帐。 '
-ms.openlocfilehash: f9b80fa6cc28edbea955575016824532239ec2f9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252479"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354573"
 ---
 # <a name="renew-office-365-for-business"></a>续订 Office 365 for business
 
@@ -80,7 +80,7 @@ ms.locfileid: "42252479"
  
 3. 若要启用**定期计费**，请将切换切换到 **"开**"。
 
-    ![已启用定期付费的订阅卡的特写。](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![已启用定期付费的订阅卡的特写。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     您可以通过将切换切换为 "**关闭**" 来关闭**定期记帐**。
 
@@ -103,7 +103,7 @@ ms.locfileid: "42252479"
  
 3. 若要启用**定期计费**，请将切换切换到 **"开**"。
 
-    ![已启用定期付费的订阅卡的特写。](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![已启用定期付费的订阅卡的特写。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     您可以通过将切换切换为 "**关闭**" 来关闭**定期记帐**。
 

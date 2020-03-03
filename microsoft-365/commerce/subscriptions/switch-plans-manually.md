@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态，手动切换 Office 365 for business 订阅。
-ms.openlocfilehash: 5fe50cbc0a11c4fe9976be07bfb0ab752bae5bba
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252476"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354704"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>手动切换 Office 365 商业版计划
 
@@ -74,7 +74,7 @@ ms.locfileid: "42252476"
 
    **使用可用许可证的新 Office 365 for business 订阅**
 
-    ![显示新订阅的许可证数量的 "订阅" 页。](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![显示新订阅的许可证数量的 "订阅" 页。](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **检查是否有针对每个用户的足够许可证**
 
@@ -100,7 +100,7 @@ ms.locfileid: "42252476"
 
 ### <a name="reassign-a-license-for-one-user"></a>为一个用户重新分配许可证
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
     如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>页。
 
@@ -115,7 +115,7 @@ ms.locfileid: "42252476"
     > [!TIP]
     > 若要限制哪些服务对用户可用，请将您要为该用户删除的服务的切换切换到 "**关**" 位置。 例如，如果您希望用户能够访问除 Skype for Business Online 之外的所有可用服务，则可以将 Skype for business Online 服务的切换切换到 "**关**" 位置。
   
-    ![为用户设置许可证分配。](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![为用户设置许可证分配。](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. 将此用户不再需要的许可证的开关切换到 "**关闭**" 位置。
 
@@ -141,7 +141,7 @@ ms.locfileid: "42252476"
     > - 若要限制哪些服务对用户可用，请切换到要为该用户删除的服务的**关闭**位置。 例如，如果您希望用户能够访问除 Skype for Business Online 之外的所有可用服务，则可以将 Skype for business Online 服务的切换切换到 "**关**" 位置。
     > - 这将删除所选用户之前的所有许可证分配。
   
-    ![为用户设置许可证分配。](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![为用户设置许可证分配。](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. 在“**替换现有产品**”窗格底部，选择“**替换**”\>“**关闭**”。
 

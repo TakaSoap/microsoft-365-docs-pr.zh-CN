@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6ac4ffdb801f6b66fb96dc4a97fca26da6af3dfe
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 18102f7c49c0412279e646304aceff923e4bbf37
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251993"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357073"
 ---
 # <a name="contact-support-for-palau"></a>联系 Palau 的支持人员
 

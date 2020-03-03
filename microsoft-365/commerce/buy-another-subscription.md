@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: '了解如何为你的组织购买其他 Office 365 for business 订阅（如果你已拥有订阅）。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 5f134d69c83e3c3fbb62dbb794e40e22d544ad1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238388"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354643"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>购买另一个 Office 365 商业版订阅
 
@@ -66,11 +66,11 @@ ms.locfileid: "42238388"
 
     你将看到对你的组织可用的订阅。 你已购买的任何订阅都将按如下方式进行标识。
 
-    ![显示已为此组织购买订阅的横幅。](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![显示已为此组织购买订阅的横幅。](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. 将鼠标悬停或点击要购买的订阅，然后选择 "**立即购买**"。
 
-    ![Microsoft 365 管理中心的 "购买服务" 页上的 "立即购买" 链接。](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Microsoft 365 管理中心的 "购买服务" 页上的 "立即购买" 链接。](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. 输入所需的用户许可证数，选择是每月支付还是整年，然后选择 "**添加到购物车**"。
 
@@ -92,11 +92,11 @@ ms.locfileid: "42238388"
 
     你将看到对你的组织可用的订阅。 你已购买的任何订阅都将按如下方式进行标识。
 
-    ![显示已为此组织购买订阅的横幅。](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![显示已为此组织购买订阅的横幅。](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. 将鼠标悬停或点击要购买的订阅，然后选择 "**立即购买**"。
 
-    ![Microsoft 365 管理中心的 "购买服务" 页上的 "立即购买" 链接。](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Microsoft 365 管理中心的 "购买服务" 页上的 "立即购买" 链接。](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. 输入所需的用户许可证数，选择是每月支付还是整年，然后选择 "**添加到购物车**"。
 

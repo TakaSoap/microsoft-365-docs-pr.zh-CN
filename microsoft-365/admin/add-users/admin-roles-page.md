@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
-ms.openlocfilehash: 40660f8f04c51c61aeec2144f4e7f3da8fa39fd9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238177"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353263"
 ---
 # <a name="get-started-with-the-roles-page"></a>"角色" 页面入门
 
 在 "角色" 页上，可以向用户授予在管理员中心执行任务的权限。 这可帮助您的组织将任务传播给适当的人员，并帮助保护数据的安全。
 
-:::image type="content" source="../media/roles-main-page.png" alt-text="显示管理员角色的图":::
+:::image type="content" source="../../media/roles-main-page.png" alt-text="显示管理员角色的图":::
 
 > [!TIP]
 > 是否在查找详细的角色说明？ 查看[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)和[关于管理员角色的相关信息](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
@@ -38,7 +38,7 @@ ms.locfileid: "42238177"
 
 您可以导出管理列表以及按角色搜索和筛选。
 
-:::image type="content" source="../media/admin-role-page-options.png" alt-text="筛选或导入管理员角色":::
+:::image type="content" source="../../media/admin-role-page-options.png" alt-text="筛选或导入管理员角色":::
 
 |||
 |:-----|:-----|
@@ -95,6 +95,6 @@ ms.locfileid: "42238177"
 
 - 最大选择3个角色，并选择 "**比较角色**" 以查看每个角色具有的权限。
 
-:::image type="content" source="../media/compare-roles-list.png" alt-text="显示管理员角色比较的图":::
+:::image type="content" source="../../media/compare-roles-list.png" alt-text="显示管理员角色比较的图":::
 
 ::: moniker-end

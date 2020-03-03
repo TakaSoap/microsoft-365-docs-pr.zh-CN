@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5c9e0a7c4f11ce552c99ea6a00a397fb67d09d82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8ec91f0e9c0f61a03aff0faca4df3be5078afa79
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252516"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358513"
 ---
 # <a name="contact-support-for-guinea"></a>与几内亚比绍联系支持
 

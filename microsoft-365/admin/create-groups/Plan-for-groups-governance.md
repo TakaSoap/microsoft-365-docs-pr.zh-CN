@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - BSA160
 description: 了解如何规划 Office 365 组治理。
-ms.openlocfilehash: 33c6562e85e98570e9f04e7b7ccb6d0fa882669d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b79da69995446aa7e61eea4d836e322743a7d2bb
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238101"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352903"
 ---
 # <a name="plan-for-governance-in-office-365-groups"></a>计划 Office 365 组中的内容管理
 
 Office 365 组提供了一组丰富的工具来实施您的组织可能需要的任何管理功能。 本文指导 IT 专业人员提出正确的问题，以确定他们的治理要求以及如何根据组织的配置文件来满足这些要求。
 
 ## <a name="why-office-365-groups"></a>为什么选择 Office 365 组？
-![图像 desc](../media/01.png)
+![图像 desc](../../media/01.png)
 
 我们知道，目前的组织使用不同的工具集。 拥有团队聊天的开发人员团队、负责发送电子邮件的开发人员以及通过企业社会进行连接的整个组织。 由于每个组都是唯一的，并且拥有自己的功能需求和工作方式，因此使用多个协作工具。 有些将仅使用电子邮件，而其他人将主要驻留在聊天中。 
 
@@ -71,7 +71,7 @@ Office 365 组支持三种主要通信形式。 可以在这些体验中创建�
 ## <a name="where-to-start-a-conversation"></a>开始对话的位置
 Office 365 中有多个位置在对话中。 了解从何处开始对话可帮助组织定义通信策略。
 
-![图像 desc](../media/02.png)
+![图像 desc](../../media/02.png)
 
 - 团队：基于聊天的工作区（高速度协作）–内部循环
    - 为与每天合作的人员进行协作而构建
@@ -92,7 +92,7 @@ Office 365 中有多个位置在对话中。 了解从何处开始对话可帮�
   - 共享内容、创建自定义页面和创作新闻
   - [将](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview)现有 SharePoint 团队网站连接到新的 Office 365 组
 
-![图像 desc](../media/03.png)
+![图像 desc](../../media/03.png)
 
 ##  <a name="managing-and-governing-office-365-at-scale"></a>在规模扩展时管理和管理 Office 365
 
@@ -111,7 +111,7 @@ Office 365 组提供了一组丰富的工具来实施您的组织可能需要的
 ### <a name="control-who-can-create-office-365-groups"></a>控制可以创建 Office 365 组的用户
 最终用户可以从多个终结点（包括 Outlook、SharePoint、Microsoft 团队和其他环境）创建组。
 
-![图像 desc](../media/04.png)
+![图像 desc](../../media/04.png)
 > [!Tip]
 >- 强烈考虑自助式，以便为组所有者做准备。
 >- 记录并传达如何请求组。
@@ -131,8 +131,8 @@ Office 365 组提供了一组丰富的工具来实施您的组织可能需要的
 
 |         |         |         |
 |---------|---------|---------|
-|![图像 desc](../media/decision_point.png)|决策点|<ul><li>哪种设置模型适合您的组织要求？</li><li>您的组织是否需要将组创建限制为管理员？</li><li>您的组织是否需要将组创建限制为安全组成员？</li><li>您的组织是否需要根据用户属性（如部门）动态创建某些组？</li></ul>|
-|![图像 desc](../media/next_steps.png)|后续步骤|<ul><li>记录组织对组和团队创建的要求。</li><li>计划在你的组部署过程中实施这些要求。</li><li>交流并发布策略以通知用户他们可能会想到的行为</li><li>计划在适用的情况下实施动态成员资格。</li></ul>|
+|![图像 desc](../../media/decision_point.png)|决策点|<ul><li>哪种设置模型适合您的组织要求？</li><li>您的组织是否需要将组创建限制为管理员？</li><li>您的组织是否需要将组创建限制为安全组成员？</li><li>您的组织是否需要根据用户属性（如部门）动态创建某些组？</li></ul>|
+|![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>记录组织对组和团队创建的要求。</li><li>计划在你的组部署过程中实施这些要求。</li><li>交流并发布策略以通知用户他们可能会想到的行为</li><li>计划在适用的情况下实施动态成员资格。</li></ul>|
 
 > [!Important]
 > 限制组和团队创建会降低用户工作效率，因为许多 Office 365 服务都需要创建组才能使服务正常工作。 若要了解详细信息，请参阅[为什么控制谁创建了 Office 365 组？](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)
@@ -153,8 +153,8 @@ Office 365 组提供了一组丰富的工具来实施您的组织可能需要的
 
 |         |         |         |
 |---------|---------|---------|
-|![图像 desc](../media/decision_point.png)|决策点|<ul><li>您是否需要将某些资产存档以用于长期存储？</li><li>您的组织是否有一定的保留要求？</li></ul>|
-|![图像 desc](../media/next_steps.png)|后续步骤|<ul><li>传递和发布删除和还原策略，以通知用户他们可能会想到的行为 </li><li> 记录监视已删除组的组织需求。</li><li>计划在你的组部署过程中实施这些要求。</li></ul>|
+|![图像 desc](../../media/decision_point.png)|决策点|<ul><li>您是否需要将某些资产存档以用于长期存储？</li><li>您的组织是否有一定的保留要求？</li></ul>|
+|![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>传递和发布删除和还原策略，以通知用户他们可能会想到的行为 </li><li> 记录监视已删除组的组织需求。</li><li>计划在你的组部署过程中实施这些要求。</li></ul>|
 
 > [!Important]
 >在"软删除"过程中，如果用户尝试访问该网站，将显示 403 禁止访问消息。 该过程结束后，如果用户尝试访问该网站，将显示 404 未找到消息。
@@ -176,8 +176,8 @@ Office 365 组提供了一组丰富的工具来实施您的组织可能需要的
 
 |         |         |         |
 |---------|---------|---------|
-|![图像 desc](../media/decision_point.png)|决策点|<ul><li>您的组织是否需要特定的组命名约定？</li><li>您的组织是否需要跨所有工作负载的命名约定？</li><li>您的组织是否有您想要阻止用户使用的特定词语？</li></ul>|
-|![图像 desc](../media/next_steps.png)|后续步骤|<ul><li>记录组织命名组的要求。 </li><li> 计划在你的组部署过程中实施这些要求。</li><li> 交流并发布命名策略和标准，以通知用户。</li></ul>|
+|![图像 desc](../../media/decision_point.png)|决策点|<ul><li>您的组织是否需要特定的组命名约定？</li><li>您的组织是否需要跨所有工作负载的命名约定？</li><li>您的组织是否有您想要阻止用户使用的特定词语？</li></ul>|
+|![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>记录组织命名组的要求。 </li><li> 计划在你的组部署过程中实施这些要求。</li><li> 交流并发布命名策略和标准，以通知用户。</li></ul>|
 
 > [!Important]
 >命名策略适用于跨所有组工作负荷（如 Outlook、Microsoft 团队、SharePoint、Planner、Yammer 等）创建的组。 它将应用于组名称和组别名。 当用户创建组时，或者在编辑现有组的组名称或别名时，将应用此方法。
@@ -206,8 +206,8 @@ Office 365 组提供了一组丰富的工具来实施您的组织可能需要的
 
 |         |         |         |
 |---------|---------|---------|
-|![图像 desc](../media/decision_point.png)|决策点|<ul><li>您的组织是否需要为团队指定到期日期？</li><li>确定处理孤立组的策略？</li></ul>|
-|![图像 desc](../media/next_steps.png)|后续步骤|<ul><li>记录组织对组过期、数据保留和存档的要求。</li><li>计划在你的组部署过程中实施这些要求。</li><li>计划实施自定义作业，以报告拥有单个所有者或 ownerless 的组。 </li></ul>|
+|![图像 desc](../../media/decision_point.png)|决策点|<ul><li>您的组织是否需要为团队指定到期日期？</li><li>确定处理孤立组的策略？</li></ul>|
+|![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>记录组织对组过期、数据保留和存档的要求。</li><li>计划在你的组部署过程中实施这些要求。</li><li>计划实施自定义作业，以报告拥有单个所有者或 ownerless 的组。 </li></ul>|
 
 > [!Important]
 >当您更改过期策略时，服务将重新计算每个组的到期日期。 它始终从创建组的日期开始计数，然后应用新的过期策略。
@@ -225,8 +225,8 @@ Office 365 组提供了一组丰富的工具来实施您的组织可能需要的
 
 |         |         |         |
 |---------|---------|---------|
-|![图像 desc](../media/decision_point.png)|决策点|<ul><li>是否需要限制以每组为单位向团队添加来宾的能力？</li><li> 您的组织是否需要为法律或合规性要求提供相关免责声明？</li><li>您的组织是否需要减少添加和删除用户的管理工作？</li><li>您的组织是否需要来宾/外部访问的审核控件？</li></ul>|
-|![图像 desc](../media/next_steps.png)|后续步骤|<ul><li>对某些分类组（包括保留期和匹配项）的来宾/外部访问的文档要求。</li><li>记录组织对哪些组需要使用条款和访问权限评审的要求。 </li><li>执行检查以有效管理内部和来宾用户的组成员身份。</li></ul>|
+|![图像 desc](../../media/decision_point.png)|决策点|<ul><li>是否需要限制以每组为单位向团队添加来宾的能力？</li><li> 您的组织是否需要为法律或合规性要求提供相关免责声明？</li><li>您的组织是否需要减少添加和删除用户的管理工作？</li><li>您的组织是否需要来宾/外部访问的审核控件？</li></ul>|
+|![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>对某些分类组（包括保留期和匹配项）的来宾/外部访问的文档要求。</li><li>记录组织对哪些组需要使用条款和访问权限评审的要求。 </li><li>执行检查以有效管理内部和来宾用户的组成员身份。</li></ul>|
 
 
 #### <a name="resources"></a>*资源*
@@ -248,8 +248,8 @@ Office 365 组构建在 Office 365 的高级安全和合规功能之上，并支
 
 |         |         |         |
 |---------|---------|---------|
-|![图像 desc](../media/decision_point.png)|决策点|<ul><li>您的组织是否有需要向所有用户传递的特定使用要求？</li><li>您的组织是否需要所有内容的分类？</li><li>您的组织是否要求在特定时间段内保留内容？</li><li>您的组织是否需要将 plied 到组的特定数据保留策略？</li><li>您的组织是否希望能够将非活动组存档以保留内容？</li><li>组创建者是否需要能够将组织特定的分类分配给团队？</li></ul>|
-|![图像 desc](../media/next_steps.png)|后续步骤|<ul><li>记录组织的组使用指南</li><li>记录组织对分类的要求。</li><li>根据分类（如敏感度、保留、来宾访问）确定要强制实施的策略</li><li>为您的组织定义敏感度标签以及要关联的保护设置。</li><li>定义一个标签策略来控制哪些用户和组可以查看这些标签。</li><li>配置[组敏感度标签预览](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)，并开始对组织中的组进行分类。</li><li>计划在你的组部署过程中实施这些要求。</li></ul>|
+|![图像 desc](../../media/decision_point.png)|决策点|<ul><li>您的组织是否有需要向所有用户传递的特定使用要求？</li><li>您的组织是否需要所有内容的分类？</li><li>您的组织是否要求在特定时间段内保留内容？</li><li>您的组织是否需要将 plied 到组的特定数据保留策略？</li><li>您的组织是否希望能够将非活动组存档以保留内容？</li><li>组创建者是否需要能够将组织特定的分类分配给团队？</li></ul>|
+|![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>记录组织的组使用指南</li><li>记录组织对分类的要求。</li><li>根据分类（如敏感度、保留、来宾访问）确定要强制实施的策略</li><li>为您的组织定义敏感度标签以及要关联的保护设置。</li><li>定义一个标签策略来控制哪些用户和组可以查看这些标签。</li><li>配置[组敏感度标签预览](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)，并开始对组织中的组进行分类。</li><li>计划在你的组部署过程中实施这些要求。</li></ul>|
 
 
 #### <a name="resources"></a>*资源*
@@ -274,8 +274,8 @@ Office 365 组构建在 Office 365 的高级安全和合规功能之上，并支
 
 |         |         |         |
 |---------|---------|---------|
-|![图像 desc](../media/decision_point.png)|决策点|<ul><li>您的组织是否有[不符合升级条件](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade)的通讯组列表？<li>确定哪种类型的通讯组列表最适合迁移到？</li></ul>|
-|![图像 desc](../media/next_steps.png)|后续步骤|<ul><li>确定哪些通讯组列表将成为升级到 Office 365 组的首选。</li><li>分析现有的 SharePoint 团队网站，以查看哪些网站已准备好进行组连接。</li><li>让您的公司中的其他团队知道您是否已升级通讯组以及为成功而采取的步骤！</li></ul>|
+|![图像 desc](../../media/decision_point.png)|决策点|<ul><li>您的组织是否有[不符合升级条件](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade)的通讯组列表？<li>确定哪种类型的通讯组列表最适合迁移到？</li></ul>|
+|![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>确定哪些通讯组列表将成为升级到 Office 365 组的首选。</li><li>分析现有的 SharePoint 团队网站，以查看哪些网站已准备好进行组连接。</li><li>让您的公司中的其他团队知道您是否已升级通讯组以及为成功而采取的步骤！</li></ul>|
 
 
 #### <a name="resources"></a>*资源*
@@ -299,8 +299,8 @@ Office 365" 报表 "仪表板显示组织中各 Office 365 产品的活动概述
 
 |         |         |         |
 |---------|---------|---------|
-|![图像 desc](../media/decision_point.png)|决策点|<ul><li>您的组织是否需要常规报告以了解 Office 365 组的使用情况？<li>您的组织是否需要对具有外部成员的所有组进行报告？</li></ul>|
-|![图像 desc](../media/next_steps.png)|后续步骤|<ul><li>记录组织对定期查看组活动报告的要求。</li></ul>|
+|![图像 desc](../../media/decision_point.png)|决策点|<ul><li>您的组织是否需要常规报告以了解 Office 365 组的使用情况？<li>您的组织是否需要对具有外部成员的所有组进行报告？</li></ul>|
+|![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>记录组织对定期查看组活动报告的要求。</li></ul>|
 
 
 #### <a name="resources"></a>*资源*

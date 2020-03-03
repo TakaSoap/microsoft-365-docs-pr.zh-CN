@@ -28,12 +28,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: 了解如何在 Office 365 订阅中添加和减少文件存储。 使用额外的文件存储，可以在 SharePoint Online 和 OneDrive 中存储更多内容。
-ms.openlocfilehash: 9bf87715cb5acbcc5c6dd34ccd023d5aa5ce6c2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 64e98ff830b592b12e25620e4c2e89e09a161a3e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238426"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354843"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为你的订阅添加存储空间
 
@@ -118,14 +118,14 @@ ms.locfileid: "42238426"
 
 2. 在 "**订阅**" 页上，选择要向其添加存储空间的订阅，然后选择 "**加载项**"。
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > 如果您看不到**加载项**，并且订阅是通过合作伙伴购买的，请选择 "**批量许可服务中心（VLSC）**"。
   
 3. 选择 "**购买加载项**"。
 
-    ![在管理中心的 "订阅" 页上购买加载项链接。](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![在管理中心的 "订阅" 页上购买加载项链接。](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. 在 "**购买服务**" 页上，鼠标移过或点击 " **Office 365 额外文件存储**"，然后选择 "**立即购买**"。
   
@@ -143,14 +143,14 @@ ms.locfileid: "42238426"
 
 2. 在 "**订阅**" 页上，选择要向其添加存储空间的订阅，然后选择 "**加载项**"。
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > 如果您看不到**加载项**，并且订阅是通过合作伙伴购买的，请选择 "**批量许可服务中心（VLSC）**"。
   
 3. 选择 "**购买加载项**"。
 
-    ![在管理中心的 "订阅" 页上购买加载项链接。](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![在管理中心的 "订阅" 页上购买加载项链接。](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. 在 "**购买服务**" 页上，鼠标移过或点击 " **Office 365 额外文件存储**"，然后选择 "**立即购买**"。
   
@@ -189,20 +189,20 @@ ms.locfileid: "42238426"
 
 2. 在 "**订阅**" 页上，选择 "**加载项**"。
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > 如果您看不到**加载项**，并且订阅是通过合作伙伴购买的，请选择 "**批量许可服务中心（VLSC）**"。
   
 3. 在 " **Office 365 额外文件存储**" 下，选择 "**更改数量**"。
 
-    !['更改数量'链接。](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    !['更改数量'链接。](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. 在右侧窗格中，输入所需的 gb 的总数，然后选择 "**提交**"。
 
     例如，如果你目前拥有 200 GB 的额外文件存储空间，但你只需要 100 GB，则可以在框中输入" **100**"。
 
-5. 选择“关闭”****。
+5. 选择“**关闭**”。
 
 ::: moniker-end
 
@@ -212,20 +212,20 @@ ms.locfileid: "42238426"
 
 2. 在 "**订阅**" 页上，选择 "**加载项**"。
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > 如果您看不到**加载项**，并且订阅是通过合作伙伴购买的，请选择 "**批量许可服务中心（VLSC）**"。
   
 3. 在 " **Office 365 额外文件存储**" 下，选择 "**更改数量**"。
 
-    !['更改数量'链接。](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    !['更改数量'链接。](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. 在右侧窗格中，输入所需的 gb 的总数，然后选择 "**提交**"。
 
     例如，如果你目前拥有 200 GB 的额外文件存储空间，但你只需要 100 GB，则可以在框中输入" **100**"。
 
-5. 选择“关闭”****。
+5. 选择“**关闭**”。
 
 ::: moniker-end
 

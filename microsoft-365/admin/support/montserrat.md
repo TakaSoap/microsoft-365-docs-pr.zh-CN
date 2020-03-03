@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2e6bcf2023b44ca01ff926a5e97f28857e47ef9f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: feb7c4c057db48e9a2e0bf749874e9c909cbca1a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252018"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357713"
 ---
 # <a name="contact-support-for-montserrat"></a>联系 Montserrat 的支持人员
 

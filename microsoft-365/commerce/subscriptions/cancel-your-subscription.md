@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Office 365 for business 或 Microsoft 365 试用版或付费订阅。
-ms.openlocfilehash: d3590f224757265af3107566023413d276443c46
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238250"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354593"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -64,7 +64,7 @@ ms.locfileid: "42238250"
 
 3. 从 "**其他操作**" 菜单中，选择 "**取消订阅**"。
 
-    ![关闭 "更多操作" 菜单。](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![关闭 "更多操作" 菜单。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. 查看重要日期，提供有关您要取消的原因的反馈，然后选择 "**取消订阅**"。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42238250"
 
 3. 从 "**其他操作**" 菜单中，选择 "**取消订阅**"。
 
-    ![关闭 "更多操作" 菜单。](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![关闭 "更多操作" 菜单。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. 查看重要日期，提供有关您要取消的原因的反馈，然后选择 "**取消订阅**"。
 

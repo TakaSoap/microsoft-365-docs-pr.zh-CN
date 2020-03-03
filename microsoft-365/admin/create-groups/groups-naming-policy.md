@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 了解如何创建 Office 365 组的命名策略。
-ms.openlocfilehash: 50ea076e22680a444cb9acf04466a7e7d052bb7a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e2907462d325e4ad421914ae5a0deb5013e695
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238082"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352713"
 ---
 # <a name="office-365-groups-naming-policy"></a>Office 365 组命名策略
 
@@ -125,7 +125,7 @@ ms.locfileid: "42238082"
 5. 在每个行的**属性**和**字符串**中进行选择，然后指定属性或字符串。
 6. 添加所需的前缀和后缀后，单击 "**保存**"。
 
-![Azure Active Directory 中的组命名策略设置的屏幕截图](../media/groups-naming-policy-azure.png)
+![Azure Active Directory 中的组命名策略设置的屏幕截图](../../media/groups-naming-policy-azure.png)
 
 ## <a name="naming-policy-experiences-across-office-365-apps"></a>跨 Office 365 应用程序命名策略体验
 
@@ -135,7 +135,7 @@ Office 365 应用程序已更新，以在用户键入组名称和别名时显示
 
 Web 上的 Outlook （以前称为 Outlook Web App 或 OWA）在用户键入组名称或组别名时显示命名策略修饰的名称。 当用户输入一个自定义阻止的 word 时，将在 UI 中显示一条错误消息以及阻止的 word，以便用户可以将其删除。 Web 体验快照中的 Outlook 如下所示。
 
-![Office 365 组中的组命名策略的并排视图](../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
+![Office 365 组中的组命名策略的并排视图](../../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
 
 ## <a name="outlook-desktop"></a>Outlook 桌面
 
@@ -145,19 +145,19 @@ Web 上的 Outlook （以前称为 Outlook Web App 或 OWA）在用户键入组�
 
 Microsoft 团队显示当用户键入团队名称时的命名策略修饰名。 当用户输入一个已阻止的自定义单词时，将显示一条错误消息和被阻止的 word，以便用户可以将其删除。
 
-![Microsoft 团队中的组命名策略阻止的示例](../media/7c904546-5853-4642-949a-a55dbb004eca.png)
+![Microsoft 团队中的组命名策略阻止的示例](../../media/7c904546-5853-4642-949a-a55dbb004eca.png)
 
 ## <a name="sharepoint"></a>SharePoint
 
 当用户键入站点名称或组电子邮件地址时，SharePoint 将显示命名策略名称。 当用户输入一个已阻止的自定义单词时，将显示一条错误消息以及被阻止的单词，以便用户可以将其删除。
 
-![组命名策略-SharePoint 网站阻止名称](../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
+![组命名策略-SharePoint 网站阻止名称](../../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
 Microsoft Stream 显示用户键入组名称或组电子邮件别名时的命名策略修饰名。 当用户输入一个已阻止的自定义单词时，将显示一条错误消息，其中包含被阻止的 word，以便用户可以将其删除。
 
-![Microsoft Stream 的组命名策略阻止示例](../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
+![Microsoft Stream 的组命名策略阻止示例](../../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
 
 ## <a name="outlook-ios-and-android-app"></a>Outlook iOS 和 Android 应用
 
@@ -167,13 +167,13 @@ Microsoft Stream 显示用户键入组名称或组电子邮件别名时的命名
 
 Planner 与命名策略兼容。 Planner 显示在输入计划名称时的命名策略预览。 当用户输入一个已阻止的自定义单词时，将在创建计划时显示一条错误消息，以便用户可以删除被阻止的单词。
 
-![组命名策略-创建新的计划阻止的示例](../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
+![组命名策略-创建新的计划阻止的示例](../../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
 
 ## <a name="dynamics-365-for-customer-engagement"></a>用于客户接洽的 Dynamics 365
 
 用于客户接洽的 Dynamics 365 符合命名策略。 Dynamics 365 显示用户键入组名称或组电子邮件别名时的命名策略修饰名。 当用户输入一个已阻止的自定义单词时，将显示一条错误消息，其中包含被阻止的 word，以便用户可以将其删除。
 
-![Dynamics 365](../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
+![Dynamics 365](../../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
 
 ## <a name="school-data-sync-sds"></a>学校数据同步（SDS）
 

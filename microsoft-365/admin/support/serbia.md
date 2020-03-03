@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b35de2a1f8161909e30bbecbbf74d5c181fbdd4b
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4153ff84de6926deca46b578242072fc5e5d3f50
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251961"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356533"
 ---
 # <a name="contact-support-for-serbia"></a>对塞尔维亚的联系支持
 

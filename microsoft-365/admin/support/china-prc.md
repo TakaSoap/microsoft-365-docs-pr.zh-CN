@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6184dc81d3a8c0c2b09bef94cc4e95e48337a9b9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f9ab7cfa33781f5227831b9809a2099bc8eea2b9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252242"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359483"
 ---
 # <a name="contact-support-for-china-prc"></a>联系中国的支持人员（中国）
 
@@ -42,7 +42,7 @@ ms.locfileid: "42252242"
 备选电话号码： 400 920 0365 （移动电话）
 
 ## <a name="follow-us-on-wechat"></a>在微信上关注我们
-![WeChat QR 代码](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![WeChat QR 代码](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>仅与由世纪互联运营的 Office 365 联系支持人员
 ## <a name="phone-number"></a>电话号码

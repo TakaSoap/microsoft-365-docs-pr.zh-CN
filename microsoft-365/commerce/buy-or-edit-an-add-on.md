@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: 了解如何购买外接程序，以将其他功能添加到 Office 365 for business 订阅中。 您还可以更新和删除加载项。
 ms.custom: okr_SMB
-ms.openlocfilehash: 717290306eb981018739604d9491da9ab3372d70
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238381"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354803"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>购买或编辑 Office 365 商业版加载项
 
@@ -69,7 +69,7 @@ ms.locfileid: "42238381"
 
 3. 在订阅详细信息的左下角，选择 "**加载项** \> **购买加载项**"。
 
-    ![在 Microsoft 365 管理中心的 "订阅" 页上购买加载项链接。](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![在 Microsoft 365 管理中心的 "订阅" 页上购买加载项链接。](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. 在 "**购买服务**" 页上，鼠标悬停或点击要购买的附加订阅，然后选择 "**立即购买**"。
 
@@ -91,7 +91,7 @@ ms.locfileid: "42238381"
 
 3. 在订阅详细信息的左下角，选择 "**加载项** \> **购买加载项**"。
 
-    ![在 Microsoft 365 管理中心的 "订阅" 页上购买加载项链接。](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![在 Microsoft 365 管理中心的 "订阅" 页上购买加载项链接。](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. 在 "**购买服务**" 页上，鼠标悬停或点击要购买的附加订阅，然后选择 "**立即购买**"。
 
@@ -143,14 +143,14 @@ ms.locfileid: "42238381"
 
 4. 选择要更新的加载项的 "**更改数量**" 链接。 
 
-    !['外接程序'链接和'更改数量'链接。](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    !['外接程序'链接和'更改数量'链接。](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. 在框中输入所需的用户许可证数，然后选择 "**提交**"。
 
     > [!TIP]
     > 可以使用向上键和向下键更改用户许可证数量，也可以在对话框中直接输入所需数量。
   
-    !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -166,14 +166,14 @@ ms.locfileid: "42238381"
 
 4. 选择要更新的加载项的 "**更改数量**" 链接。 
 
-    !['外接程序'链接和'更改数量'链接。](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    !['外接程序'链接和'更改数量'链接。](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. 在框中输入所需的用户许可证数，然后选择 "**提交**"。
 
     > [!TIP]
     > 可以使用向上键和向下键更改用户许可证数量，也可以在对话框中直接输入所需数量。
   
-    !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 
 ::: moniker-end
@@ -201,7 +201,7 @@ ms.locfileid: "42238381"
     > [!TIP]
     > 您还可以使用向上箭头和向下箭头更改许可证数量，或者只需在框中输入所需的号码。
   
-    !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ ms.locfileid: "42238381"
     > [!TIP]
     > 您还可以使用向上箭头和向下箭头更改许可证数量，或者只需在框中输入所需的号码。
   
-    !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 

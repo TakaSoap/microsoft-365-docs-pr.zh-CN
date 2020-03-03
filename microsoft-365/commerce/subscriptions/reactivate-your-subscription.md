@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: 了解如何在 Office 365 订阅过期后重新激活它，或者如果 Microsoft 禁用它，或者在中间将其取消。
-ms.openlocfilehash: 7b902e210e39f41f6753958c5b6453c85a242f6c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238247"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354603"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
@@ -67,7 +67,7 @@ ms.locfileid: "42238247"
 
 2. 找到要重新激活的订阅，然后选择 "**重新激活**"。
 
-    ![使用 "重新激活" 按钮显示禁用和缩减功能的订阅卡的特写。](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![使用 "重新激活" 按钮显示禁用和缩减功能的订阅卡的特写。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     如果你未看到 "**重新激活**" 作为可用操作，请[致电支持人员](../../admin/contact-support-for-business-products.md)重新激活你的订阅。
 
@@ -88,7 +88,7 @@ ms.locfileid: "42238247"
 
 2. 找到要重新激活的订阅，然后选择 "**重新激活**"。
 
-    ![使用 "重新激活" 按钮显示禁用和缩减功能的订阅卡的特写。](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![使用 "重新激活" 按钮显示禁用和缩减功能的订阅卡的特写。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     如果你未看到 "**重新激活**" 作为可用操作，请[致电支持人员](../../admin/contact-support-for-business-products.md)重新激活你的订阅。
 
