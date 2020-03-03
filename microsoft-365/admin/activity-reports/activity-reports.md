@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Office 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: 6962d8ed9632ae2e819f1ea1d0e0950d82ef7ad7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238012"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353963"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的活动报表
 
@@ -58,7 +58,7 @@ ms.locfileid: "42238012"
 ::: moniker-end
 
    
-2. 在仪表板上方选择“**选择报表**”，从所有可用报表列表中进行选择。 或者，选择服务（电子邮件、OneDrive 等）的一览活动小部件，查看详细信息。 <br/>![Office 365 使用情况仪表板](../media/usage-report-dashboard.png)
+2. 在仪表板上方选择“**选择报表**”，从所有可用报表列表中进行选择。 或者，选择服务（电子邮件、OneDrive 等）的一览活动小部件，查看详细信息。 <br/>![Office 365 使用情况仪表板](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>谁可查看报表
 
@@ -164,7 +164,7 @@ ms.locfileid: "42238012"
   
 你的用户列表将如下所示：
   
-![Office 365 报告 - 匿名用户列表](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Office 365 报告 - 匿名用户列表](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 这些更改将在几分钟之后在报表仪表板中的报表上生效。此设置也适用于报表 API。
   

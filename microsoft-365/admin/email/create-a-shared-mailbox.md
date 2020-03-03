@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 270894da77d9ddf2b35187d8409cd2fd878b0e6d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2ceec37928eafab0c4f02382dd24aa3fa91aa9cd
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251183"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362297"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -64,17 +64,17 @@ ms.locfileid: "42251183"
     
 3. 在“**共享邮箱**”页面上，选择“**+添加邮箱**”。 输入共享邮箱的名称。 然后向导会选择电子邮件地址，但你也可以编辑电子邮件地址。
     
-    ![为共享邮箱命名。](../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![为共享邮箱命名。](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. 选择“**添加**”。 可能需要几分钟时间，才可以添加成员。
 
 5. 在“**后续步骤**”下，选择“**将成员添加到此邮箱**”。 成员能够查看此共享邮箱收到的邮件及发出的答复。
 
-   ![选择“添加成员”。](../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![选择“添加成员”。](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. 选择“**+添加成员**”按钮。 在希望其使用共享邮箱的人员旁添加一个复选标记，然后选择“**保存**”。
 
-   ![向共享邮箱分配成员。](../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![向共享邮箱分配成员。](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. 选择“**关闭**”。
 
@@ -95,7 +95,7 @@ ms.locfileid: "42251183"
 
 2. 在用户帐户列表中，找到共享邮箱的帐户（例如，将筛选器更改为“**未经授权的用户**”）。
 
-3. 选择该用户以打开其属性窗格，然后 选择“**阻止此用户**”图标 ![“阻止此用户”图标的屏幕截图](../media/block-user-icon.png)。
+3. 选择该用户以打开其属性窗格，然后 选择“**阻止此用户**”图标 ![“阻止此用户”图标的屏幕截图](../../media/block-user-icon.png)。
 
    **注意**：如果已阻止该帐户，则将在顶部显示“**已阻止登录**”，并且图标将显示“**取消阻止此用户**”。
 

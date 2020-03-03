@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '了解如何为组织的所有或特定用户配置重点收件箱。 '
-ms.openlocfilehash: 6762bf4e81254e962171ddc80027273542288f34
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 29f412b82121b8955c2ddabb5d152bbe6b2255e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252399"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360873"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>为组织中的每个人配置重点收件箱
 
@@ -52,7 +52,7 @@ Get-OrganizationConfig
 
 4. 查找 **FocusedInboxOn** 以查看其当前设置： 
     
-    ![来自 PowerShell 的重点收件箱状态响应。](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![来自 PowerShell 的重点收件箱状态响应。](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. 运行以下 cmdlet 来关闭重点收件箱。
     
@@ -74,11 +74,11 @@ Get-OrganizationConfig
 
 用户关闭并重启 Outlook​​ 后才可看到“重点”视图。重启 Outlook​​ 后，用户会在 Outlook​​ 用户界面中看到一条提示，其中含有使用新“重点收件箱”的选项。
   
-![用户首次打开 Outlook 网页版时重点收件箱的外观图像。](../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
+![用户首次打开 Outlook 网页版时重点收件箱的外观图像。](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
 如果从待筛选邮件切换到重点收件箱，用户可决定启用（"试用"）或关闭该功能。如果用户拥有多个（受支持的）客户端，可在每个客户端上单独启用/禁用重点收件箱。将出现如下所示的提示：
   
-![显示“重点收件箱”外观的图像，此时“重点收件箱”向你的用户推出且 Outlook 重新打开。](../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
+![显示“重点收件箱”外观的图像，此时“重点收件箱”向你的用户推出且 Outlook 重新打开。](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
 用户决定开始使用重点收件箱后，将自动禁用待筛选邮件。“待筛选邮件”文件夹转换成标准文件夹，用户可以重命名或将其删除。
   
@@ -98,7 +98,7 @@ Get-OrganizationConfig
 
 4. 查找 FocusedInboxOn 以查看其当前设置：
     
-    ![来自 PowerShell 的重点收件箱状态响应。](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![来自 PowerShell 的重点收件箱状态响应。](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. 运行以下 cmdlet 来关闭重点收件箱：
     
@@ -116,13 +116,13 @@ Get-OrganizationConfig
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
     
-2. 导航到**邮件流** \> **规则**。 选择“![EAC 添加图标](../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)”，然后选择“**新建规则...**”。 
+2. 导航到**邮件流** \> **规则**。 选择“![EAC 添加图标](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)”，然后选择“**新建规则...**”。 
     
 3. 创建新规则完成后，选择 **“保存”** 启动该规则。 
     
     下图介绍了一个示例，其中来自"工资单管理部门"的所有邮件均被定向到了重点收件箱。
     
-    ![Focusedinbox 工资单](../media/focusedinbox-transport-rule.PNG)
+    ![Focusedinbox 工资单](../../media/focusedinbox-transport-rule.PNG)
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 创建传输规则，将电子邮件定向到所有用户的“重点”视图
 

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用针对你所在地区或区域设置列出的电话号码、联机提交服务请求或访问 Microsoft Store，以获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: 72644e1e55f3432fd9027a5964022f4d989a05da
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238111"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352943"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>联系商业版产品的支持人员 - 管理员帮助
 
@@ -230,7 +230,7 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 扫描此 QR 码在微信上关注我们，获取由世纪互联运营的 Office 365 的最新动态。
 
-![扫描 QR 码，获取由世纪互联运营的 Office 365 的最新动态](media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![扫描 QR 码，获取由世纪互联运营的 Office 365 的最新动态](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

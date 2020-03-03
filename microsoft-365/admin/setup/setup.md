@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何设置 Office 365 商业高级版、Office 365 商业协作版、Office 365 商业版或 Office 365 教育版订阅。
-ms.openlocfilehash: 28847b1b2773a0f725a5ac1a99dfc2a807f66b82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 303e736bb3296eba5ddb7ca7e9da8f86ebdc0217
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240228"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360443"
 ---
 # <a name="set-up-office-365-for-business"></a>设置 Office 365 商业版
 
@@ -168,7 +168,7 @@ Office 365 不提供适用于公司的公共网站。 如需设置一个公共�
 
 1. 选择“**邮件**”。
 
-2. 在 Outlook 导航栏上，选择“**设置**”![设置：更新配置文件，安装软件和将其连接到云](../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png)\>“**选项**”。
+2. 在 Outlook 导航栏上，选择“**设置**”![设置：更新配置文件，安装软件和将其连接到云](../../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png)\>“**选项**”。
 
 3. 在左窗格中，选择“**邮件**”，然后在“**帐户**”之下选择“**已连接帐户**”。
 

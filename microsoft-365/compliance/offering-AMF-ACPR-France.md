@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cfd0c127b7cea626d6e2ed571f8ed1913370c1db
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 04b14f913a9b513ee5235223315daa2611395854
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602709"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363028"
 ---
 # <a name="financial-authority-amf-and-prudential-authority-acpr-france"></a>法国金融机构 (AMF) 和审慎监管管理局 (ACPR)
 
 ## <a name="about-the-amf-and-acpr"></a>关于 AMF 和 ACPR
 
-[金融机构](https://www.amf-france.org/en_US/?langSwitch=true) ([Autorité des Marchés Financiers, AMF](https://amf-france.org/)) 和[审慎监管管理局](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([Autorité de Contrôle Prudentiel et de Résolution, ACPR](https://acpr.banque-france.fr/)) 是法国的主要金融监管机构。 AMF 作为证券市场监管机构，负责监管金融市场和投资公司。 ACPR 是法国央行 ([Banque de France](https://www.banque-france.fr/)) 下属的一个独立行政机构，负责监管银行业和保险业部门。  
+[金融机构](https://www.amf-france.org/en) ([Autorité des Marchés Financiers, AMF](https://www.amf-france.org/)) 和[审慎监管管理局](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([Autorité de Contrôle Prudentiel et de Résolution, ACPR](https://acpr.banque-france.fr/)) 是法国的主要金融监管机构。 AMF 作为证券市场监管机构，负责监管金融市场和投资公司。 ACPR 是法国央行 ([Banque de France](https://www.banque-france.fr/)) 下属的一个独立行政机构，负责监管银行业和保险业部门。  
   
 AMF 和 ACPR 与欧洲银行管理局 (EBA) 协同行动，“欧洲银行管理局是欧盟的一家独立机构，致力于确保在整个欧洲银行业进行高效且一致的审慎监管”。 为实现这一目的，EBA 就欧盟境内金融机构使用云计算提出了一个综合方法：[Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf )（对外包给云服务提供商的建议）。  
   
