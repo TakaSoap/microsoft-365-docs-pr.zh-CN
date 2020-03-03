@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 了解 Power BI 以及组织中的用户可以如何使用此业务分析服务。
-ms.openlocfilehash: 56a6dd1c90b8dcb810e74c36b5e7f93ab6a0eb2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4d89594812486d06629d614ab0c59fba09dcdad8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252445"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361333"
 ---
 # <a name="power-bi-in-your-organization"></a>您的组织中的 Power BI
 
@@ -102,7 +102,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
     
 4. 选择左上角的应用启动器图标，然后选择“**管理员**”。
     
-    ![The Office 365 app launcher with the Admin app highlighted](../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. 阅读 "**成为管理"** 页面上的说明，然后选择 **"是，我想要成为管理员"**。
     
@@ -174,20 +174,20 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
 2. 查找要删除其许可证的用户，然后选择其名称。
     
 3. 在 "**许可证和应用**" 选项卡上，清除 " **Microsoft Power BI** " 复选框。
     
-4. 选择 "**保存更改**"。
+4. 选择“**保存更改**”。
 
 ::: moniker-end
 
   
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 查找要删除其许可证的用户，然后选择其名称。
     

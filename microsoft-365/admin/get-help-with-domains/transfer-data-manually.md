@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 了解在更改计划或公司名称或将多个订阅组合到一个中时，如何在两个 Office 365 帐户之间手动传输数据。
-ms.openlocfilehash: 004dd586c207678157afdb418e54f3c3b5353304
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 91f9d7b17a0296931393a89ff95d70628400c61a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251137"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362147"
 ---
 # <a name="transfer-data-manually-between-two-office-365-accounts"></a>在两个 Office 365 帐户之间手动传输数据
 
@@ -59,7 +59,7 @@ ms.locfileid: "42251137"
   
 对于 Office 365 企业版和 Office 365 中型企业版：
   
-|**Location**|**用途**|
+|**位置**|**用途**|
 |:-----|:-----|
 |**管理** \> **Office 365** \> **服务设置** <br/> |选择每个选项卡，以获取邮件、网站、Lync、用户软件、密码、社区、权限管理和移动的设置。  <br/> |
 |**管理员** \> **Exchange** <br/> | Exchange Online 设置  <br/> |
@@ -68,7 +68,7 @@ ms.locfileid: "42251137"
 
 对于 Office 365 小型企业版
   
-|**Location**|**用途**|
+|**位置**|**用途**|
 |:-----|:-----|
 |**管理员** \> **管理组织范围的设置** <br/> |管理设置  <br/> |
 

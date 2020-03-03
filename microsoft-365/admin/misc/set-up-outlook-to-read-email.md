@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: 了解如何在 Outlook 中为 Windows 和 Mac 设置电子邮件帐户，以及如何安装 Office 应用和在线访问电子邮件。
-ms.openlocfilehash: 87a1bd45f763b4a802b083eb4936d67c50a92df3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252440"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361233"
 ---
 # <a name="set-up-outlook-to-read-email"></a>将 Outlook 设置为阅读电子邮件
 
@@ -44,7 +44,7 @@ ms.locfileid: "42252440"
 
 1. 转到[admin.microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx)。
     
-2. 使用你的工作或学校帐户登录
+2. 使用你的工作或学校帐户登录。
     
 3. 在 "管理安装" 中，选择 "**安装**"。
     
@@ -64,7 +64,7 @@ ms.locfileid: "42252440"
 
 登录到 Office 365 后，选择 " **Outlook**"。
   
-![突出显示 Outlook 应用程序的 Office 365 主页](../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![突出显示 Outlook 应用程序的 Office 365 主页](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
 找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。 
   

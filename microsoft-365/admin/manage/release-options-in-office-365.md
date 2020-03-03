@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 了解如何为 Microsoft 365 管理中心中的新产品和功能更新设置发布选项。
-ms.openlocfilehash: 2d4940003c791e50926eff46aaf6a299e60fb9aa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251101"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361797"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>在 Office 365 中设置标准发布或定向发布选项
 
@@ -39,7 +39,7 @@ ms.locfileid: "42251101"
 
 任何新版本都会先由功能团队进行测试和验证，然后由整个 Office 365 功能团队进行测试，然后再访问所有 Microsoft。 内部测试和验证后，下一步是向选择加入的客户" **定向发布**"（以前称为首次发布）。 在每个发布环节，Microsoft 都会收集反馈，通过监视关键的使用情况指标验证质量。 采取逐步进行的一系列验证，确保全球范围内发布的版本尽可能的稳定。 发布环节如下图所示。 
   
-![Office 365 的发布验证环](../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Office 365 的发布验证环](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 对于重要更新，Office 客户最初由[Microsoft 365 路线图](https://products.office.com/business/office-365-roadmap)通知。 随着更新越接近，将通过[Office 365 消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)进行传递。
 
@@ -110,6 +110,6 @@ ms.locfileid: "42251101"
 
 若要安装 Office 的定向发布版本，[请按这些步骤进行操作](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead)。这可以让你率先访问 Windows 桌面版 Office 2016 的新功能。
   
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 了解如何管理[Office 365 消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)中的[邮件](https://docs.microsoft.com/office365/admin/manage/message-center)，以获取有关即将推出的 Office 365 更新和版本的通知。

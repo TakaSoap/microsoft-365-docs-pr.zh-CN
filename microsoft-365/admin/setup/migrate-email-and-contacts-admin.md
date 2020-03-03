@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: '了解如何将联系人、日历、来自 Gmail 的电子邮件或其他电子邮件提供程序导入 Office 365。 '
-ms.openlocfilehash: 6281e3b48249a67d3cf2754ebcfcaa9bc1789ef6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2b2f4441772a9d373316ff14f06bcdeb61e5840d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240237"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360703"
 ---
 # <a name="migrate-email-and-contacts-to-office-365"></a>将电子邮件和联系人迁移到 Office 365
 
@@ -69,7 +69,7 @@ ms.locfileid: "42240237"
     
 若要启动该过程，请打开 Outlook，然后选择 "**文件** \> ** &amp;打开导出** \> **导入/导出**"。
   
-![Outlook 2016 中的 "文件" 菜单](../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![在&amp; Outlook 2016 中打开 "导出" 命令](../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 中的 "导入/导出" 按钮](../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Outlook 2016 中的 "文件" 菜单](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![在&amp; Outlook 2016 中打开 "导出" 命令](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 中的 "导入/导出" 按钮](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>在 Outlook 中查看其他电子邮件帐户
 
@@ -83,7 +83,7 @@ ms.locfileid: "42240237"
     
 是否需要更详细的步骤？ 请参阅[添加帐户](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   
-[![显示 backstage 视图中的 "Outlook 帐户信息" 页面的屏幕截图。](../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![显示 backstage 视图中的 "Outlook 帐户信息" 页面的屏幕截图。](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-office-365"></a>多个邮箱：管理员可将电子邮件、联系人和日历批量导入 Office 365
 

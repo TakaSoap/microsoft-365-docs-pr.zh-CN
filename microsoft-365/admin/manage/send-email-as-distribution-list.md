@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: 了解如何在 Office 365 中以通讯组列表的身份发送电子邮件。
-ms.openlocfilehash: f165279cf6cfbedda4f122f453c2321c16f412d3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251082"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361737"
 ---
 # <a name="send-email-as-a-distribution-list-in-office-365"></a>以 Office 365 中的通讯组列表形式发送电子邮件
 
@@ -43,10 +43,10 @@ ms.locfileid: "42251082"
     
 3. 选择 "**答复**"。 
     
-4. 在邮件底部，选择 "**更多** \> **显示来自**"。<br/> ![选择 "更多"，然后选择 "显示来源"](../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. 在邮件底部，选择 "**更多** \> **显示来自**"。<br/> ![选择 "更多"，然后选择 "显示来源"](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. 右键单击 "发件人地址-例如`Ina@weewalter.me` -"，然后选择 "**删除**"。<br/> ![删除 FROM 别名](../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. 右键单击 "发件人地址-例如`Ina@weewalter.me` -"，然后选择 "**删除**"。<br/> ![删除 FROM 别名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. 然后键入通讯组列表地址，如 support@contoso.com，并发送邮件。 下次从通讯组列表中答复时，其地址将显示为 "**发件**人" 列表中的一个选项。<br/>![共享邮箱的别名显示](../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. 然后键入通讯组列表地址，如 support@contoso.com，并发送邮件。 下次从通讯组列表中答复时，其地址将显示为 "**发件**人" 列表中的一个选项。<br/>![共享邮箱的别名显示](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   
 

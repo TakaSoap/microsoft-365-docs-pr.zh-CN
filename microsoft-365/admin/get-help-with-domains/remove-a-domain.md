@@ -21,16 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从 Office 365 中删除旧域，并将用户和组移动到另一个域。
-ms.openlocfilehash: 9c960b5f18f3892c57f7dc9907e580a02fce39d4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c012d7a8484026d04bbe216ff28715e9df0de15c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251139"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362207"
 ---
 # <a name="remove-a-domain-from-office-365"></a>从 Office 365 中删除域
 
-撰稿人：[![Peter Baumgartner](../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
+撰稿人：[![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)** 。 
   
@@ -154,7 +154,7 @@ ms.locfileid: "42251139"
 
 3. 使用下拉列表选择其他域。
 
-4. 依次选择 "**保存**" 和 "**关闭**"。 对与要删除的域关联的任何组或通讯组列表重复此过程。
+4. 依次选择“**保存**”和“**关闭**”。 对与要删除的域关联的任何组或通讯组列表重复此过程。
 
 ::: moniker-end
 
@@ -166,7 +166,7 @@ ms.locfileid: "42251139"
 
 3. 使用下拉列表选择其他域。
 
-4. 依次选择 "**保存**" 和 "**关闭**"。 对与要删除的域关联的任何组或通讯组列表重复此过程。
+4. 依次选择“**保存**”和“**关闭**”。 对与要删除的域关联的任何组或通讯组列表重复此过程。
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ ms.locfileid: "42251139"
 
 3. 使用下拉列表选择其他域。
 
-4. 依次选择 "**保存**" 和 "**关闭**"。 对与要删除的域关联的任何组或通讯组列表重复此过程。
+4. 依次选择“**保存**”和“**关闭**”。 对与要删除的域关联的任何组或通讯组列表重复此过程。
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ ms.locfileid: "42251139"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
 
 ::: moniker-end
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: 了解如何在中国使用由世纪互联运营的现有 Office 365 帐户，试用 Office 365 订阅或立即将其购买、添加订阅或获取加载项。
 monikerRange: o365-21vianet
-ms.openlocfilehash: b08a26752a5195208d562067ab8e26e4aa8cb2f8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0781430eaf2ccfeed7c31665029d514be9cc5f2e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240288"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360833"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>购买或尝试由世纪互联运营的 Office 365 订阅
 
@@ -48,11 +48,11 @@ ms.locfileid: "42240288"
 
 2. 如果尚未进入起始页，请在左上角中选择" **Office 365**"。
 
-    ![可导航到 Office 365 开始页面的按钮](../media/2fc597ab-ae33-4e5a-aec1-e60e48beac62.png)
+    ![可导航到 Office 365 开始页面的按钮](../../media/2fc597ab-ae33-4e5a-aec1-e60e48beac62.png)
 
 3. 在页面右上角的导航栏下，选择" **购买**"。
 
-    ![购买你的 Office 365 试用版的按钮](../media/73fba4ad-6879-460b-8ef1-f2efb2ee4104.png)
+    ![购买你的 Office 365 试用版的按钮](../../media/73fba4ad-6879-460b-8ef1-f2efb2ee4104.png)
 
 4. 在" **购买订阅**"页面中，你将看到可以购买的不同计划。 你已经在试用的计划带有" **试用中**"横幅标记。
 

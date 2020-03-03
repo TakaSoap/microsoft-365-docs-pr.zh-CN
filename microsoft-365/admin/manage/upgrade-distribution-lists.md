@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Outlook 中的 Office 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: 9e6867a5ccdb97586e3d58784a49312e078ae659
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7337d450cf1e9b249b2b9dc2ab66f32f5b1577e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251072"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361707"
 ---
 # <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>将通讯组列表升级到 Outlook 中的 Office 365 组
 
@@ -38,11 +38,11 @@ ms.locfileid: "42251072"
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
 
-2. 在 Exchange 管理中心中，转到 "**收件人** \> **组**"。<br/>你将看到一则通知，指示你有符合升级到 Office 365 组的通讯组列表（也称为**通讯组**）。<br/> ![选择 "开始入门" 按钮](../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. 在 Exchange 管理中心中，转到 "**收件人** \> **组**"。<br/>你将看到一则通知，指示你有符合升级到 Office 365 组的通讯组列表（也称为**通讯组**）。<br/> ![选择 "开始入门" 按钮](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-3. 从 "**组**" 页面中选择一个或多个通讯组列表（也称为**通讯组**）。<br/>![选择通讯组](../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+3. 从 "**组**" 页面中选择一个或多个通讯组列表（也称为**通讯组**）。<br/>![选择通讯组](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. 选择 "升级" 图标。<br/>!["升级到 Office 365 组" 图标](../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. 选择 "升级" 图标。<br/>!["升级到 Office 365 组" 图标](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. 在 "信息" 对话框中，选择 **"是"** 以确认升级。 该过程将立即开始。 此过程可能需要几分钟或几小时，具体取决于您要升级的 Dl 的大小和数量。<br/>如果无法升级通讯组列表，则会显示一个对话框。 查看[哪些通讯组列表无法升级？](#which-distribution-lists-cannot-be-upgraded)。
 
@@ -122,7 +122,7 @@ Get-DistributionGroup| Foreach-Object{
 
 您只能升级云管理、简单、非嵌套的通讯组列表。 下表列出了**无法**升级的通讯组列表。
 
-|**Property**|**退税?**|
+|**属性**|**退税?**|
 |:-----|:-----|
 |内部部署管理通讯组列表。  <br/> |否  <br/> |
 |嵌套的通讯组列表。 通讯组列表具有子组或是另一个组的成员。  <br/> |否  <br/> |

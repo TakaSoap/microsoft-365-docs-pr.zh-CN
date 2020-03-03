@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 了解如何向进入或离开组织的所有电子邮件添加电子邮件签名、法律免责声明或泄露声明。
-ms.openlocfilehash: 3d95e92c4994a99ab3426133580d70453a2f83eb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252385"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360663"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围的签名和免责声明
 
@@ -62,7 +62,7 @@ ms.locfileid: "42252385"
 
 ::: moniker-end
 
-1. 选择 Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)中![的应用启动器图标，然后选择 "**管理员**"。
+1. 选择 Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)中![的应用启动器图标，然后选择 "**管理员**"。
    
     找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。 
     

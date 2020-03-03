@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 了解集成的应用程序，以及如何将其打开以允许第三方应用访问用户的 Office 365 信息。
-ms.openlocfilehash: 932a99ec2c65b14e903ccffb86d291dac20ddfcf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3c7c92e16b375fc374563e87ea2f6166c7384a29
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240344"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361383"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>打开或关闭集成应用
 
@@ -48,11 +48,11 @@ ms.locfileid: "42240344"
 
 在 Office 365 中使用集成应用时有两种类型的权限可以使用：用户权限和管理员权限。 例如，当您的组织已启用集成应用并且某个用户使用第三方应用时，该应用可能会请求用户的权限来读取其用户配置文件详细信息、编辑或删除其文件、读取网站集中包含的项目以及以该用户身份发送电子邮件。
 
-![集成应用用户权限](../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
+![集成应用用户权限](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 
 如果管理员为组织中的所有用户注册应用程序，他/她将被要求有权让该应用访问组织中的信息和资源。 之后，当组织中的其他用户使用该应用时，则不会要求他们具有权限。 当管理员注册某个应用时，该管理员必须确保他们信任该应用的发布者。 有关注册应用的详细信息，请参阅[添加、更新和删除应用程序](https://go.microsoft.com/fwlink/p/?LinkID=518600)。
 
-![集成应用管理员权限](../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
+![集成应用管理员权限](../../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
 
 如果集成应用已关闭，则已安装并有权访问信息的应用不会卸载，权限也不会被删除。 即使集成应用处于关闭状态，管理员仍然可以注册应用来使其对用户可用，并允许这些应用访问用户的信息。 有关删除已注册的应用程序及其权限的详细信息，请参阅[添加、更新和删除应用程序](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409)。
 

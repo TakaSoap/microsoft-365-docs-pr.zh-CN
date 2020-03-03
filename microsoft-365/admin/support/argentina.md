@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f9d5ad740cfca013ff8512a6e0b8bb6b9e9edb0d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9b79ffcc02c142586506a01305e53a2276f4edd4
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252318"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360203"
 ---
 # <a name="contact-support-for-argentina"></a>联系阿根廷支持
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: f499cacd0ec63f9a192e2773b3604473d2153545
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179103"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370491"
 ---
 # <a name="insider-risk-management-users"></a>内幕风险管理用户
 
@@ -30,6 +30,9 @@ ms.locfileid: "42179103"
 - **案例**：用户的当前活动事例。
 
 ![内幕风险管理用户仪表板](../media/insider-risk-users-dashboard.png)
+
+>[!NOTE]
+>在某些情况下，在用户仪表板上显示的用户数量可能会受到限制，具体取决于活动警报和匹配策略的数量。 在生成警报时显示具有活动警报的用户，在达到显示的最大用户数的情况下，可能会发生极少的情况。 如果发生这种情况，则在对现有用户通知进行会审时，将不显示活动警报的用户添加到用户仪表板。
 
 ## <a name="view-user-details"></a>查看用户详细信息
 

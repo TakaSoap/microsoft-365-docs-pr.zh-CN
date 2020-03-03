@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: 了解如何将流量路由到在 Office 365 外部托管的现有公共网站（如果已将 Office 365 设置为管理自定义域的 DNS 记录）。
-ms.openlocfilehash: de95818eea729cb11972faf986c9be40bb6e76da
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b92e778fb2fe0353a0d1d6bf83a4c617ab4541e2
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251208"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362407"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 记录以便利用当前的托管提供商继续托管网站
 
@@ -34,7 +34,7 @@ ms.locfileid: "42251208"
  **如果由 Office 365 管理 DNS 记录** ，那么要若将流量路由至在 Office 365 外部托管的现有公共网站，请在将域添加到 Office 365 后，执行下列操作： 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新 Microsoft 365 管理中心中的 DNS 记录
-1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
 
 2. 在" **域** "页面上的域列表中，选择要用于你的网站的域，然后在管理窗格中选择" **DNS 设置** "。 
     

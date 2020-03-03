@@ -2,9 +2,9 @@
 title: 检测和修正 Office 365 中的非法授权
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957147"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363048"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
 
@@ -79,7 +79,7 @@ ms.locfileid: "41957147"
 
 5. 选择 "**应用程序**"。
 
-这将向您显示分配给用户的应用程序以及 applcations 具有的权限。
+这将显示分配给用户的应用程序以及应用程序具有的权限。
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>让用户枚举其应用程序访问权限的步骤
 
@@ -102,7 +102,7 @@ ms.locfileid: "41957147"
 
 1. 使用本地管理员权限登录到您将运行脚本的计算机。
 
-2. 将[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)脚本从 GitHub 下载或复制到将从中运行 scruipt 的文件夹。 这将是将写入输出 "权限 .csv" 文件的文件夹。
+2. 将[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)脚本从 GitHub 下载或复制到一个要从中运行脚本的文件夹中。 这将是将写入输出 "权限 .csv" 文件的文件夹。
 
 3. 以管理员身份打开 PowerShell 实例，并打开将脚本保存到的文件夹。
 

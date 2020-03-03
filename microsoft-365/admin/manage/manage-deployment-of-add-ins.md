@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: acb6febf03e40b37b167113666b3577e0b9fb61e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251110"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361947"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心管理 Office 365 加载项的部署
 
@@ -250,7 +250,7 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
   
 如果加载项支持加载项命令，则 Office 功能区上会显示命令。在以下示例中，显示" **引文** "加载项的" **搜索引文** "命令。 
 
-![带有搜索引文的 Office 功能区](../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![带有搜索引文的 Office 功能区](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 如果部署的外接程序不支持外接程序命令，或者如果您想要查看所有部署的加载项，可以通过**我的外接**程序查看它们。 
   
@@ -260,11 +260,11 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
     
 2. 选择 Office 加载项窗口中的" **由管理员管理** "选项卡。 
     
-3. 双击先前部署的加载项（在本例中是" **引文** "）。 <br/>!["Office 外接程序" 页的 "管理托管" 选项卡](../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. 双击先前部署的加载项（在本例中是" **引文** "）。 <br/>!["Office 外接程序" 页的 "管理托管" 选项卡](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>在 Outlook 中
 
-1. 在 "**主页**" 功能区上，选择 "**获取外接程序**"。<br/>![Outlook 中的'应用商店'按钮](../media/getaddinsicon.png)
+1. 在 "**主页**" 功能区上，选择 "**获取外接程序**"。<br/>![Outlook 中的'应用商店'按钮](../../media/getaddinsicon.png)
   
 2. 在左侧导航中选择 "**管理员管理**"。
 
@@ -279,7 +279,7 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
 3. 单击 "**删除加载项**"。 移除右下角的外接端按钮。
 4. 验证您的选择，然后选择 "**删除外接程序**"。
   
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 深入了解如何创建和构建 [Office 加载项](https://go.microsoft.com/fwlink/p/?linkid=846362)。
   

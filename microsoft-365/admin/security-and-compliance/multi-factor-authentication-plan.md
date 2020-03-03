@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Office 365 中的多重身份验证，以及对其进行设置时需要遵循的步骤。
-ms.openlocfilehash: c3d5e83b951e4fd4a05cb18408ecb3d26e397cf9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2e2cbc9d6d966a9858fafb62f08d26893c9f4353
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252426"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361173"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Office 365 部署的多重身份验证计划
 
@@ -77,7 +77,7 @@ Office 365 使用多重身份验证来帮助提供额外的安全性，并通过
     
 下图对此进行了详细说明：
   
-![Office 2013 设备应用的现代身份验证。](../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
+![Office 2013 设备应用的现代身份验证。](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
   
 ## <a name="software-requirements"></a>软件要求
 
@@ -91,7 +91,7 @@ Office 365 使用多重身份验证来帮助提供额外的安全性，并通过
     
 3. 对于 Outlook 2013 即点即用安装，将显示" **更新选项**"项。对于基于 MSI 的安装，将不会显示" **更新选项**"项。 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
   
 ### <a name="click-to-run-based-installations"></a>基于即点即用的安装
 

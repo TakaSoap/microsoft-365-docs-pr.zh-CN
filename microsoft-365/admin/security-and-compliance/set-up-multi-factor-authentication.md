@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性默认值为 Office 365 用户设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: cb2205e5f5b7df4f6e7d8f7263a91fb2f0f4d3e2
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 4dc52c25c3a9351be1a9f4d094d664bc4ed527f9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341246"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361043"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -80,7 +80,7 @@ ms.locfileid: "42341246"
 
 2. 选中“**新式验证**”面板中的“**启用新式验证**”框。 
 
-    ![在“新式验证”面板中已选中启用复选框。](../media/enablemodernauth.png)
+    ![在“新式验证”面板中已选中启用复选框。](../../media/enablemodernauth.png)
     
 ## <a name="enable-multi-factor-authentication-for-your-organization"></a>为组织启用多重身份验证
     

@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 了解如何在中国由世纪互联运营的 Office 365 中付款后，向世纪发票管理系统提交发票请求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4f2c83239dddcf5ddff91f0f603c6504b596ae05
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fece5448ecd72ad3d0aceabde76d6519bafa917d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252420"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360953"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的发票
 
 你可以在付费后大约三天向世纪发票管理系统提交发票请求。 提交发票请求后，将在两天内进行处理。
   
-![显示发票应用程序进程的流程图。](../media/bf14884a-53f9-4c53-971c-b9b8ad6ec8d3.png)
+![显示发票应用程序进程的流程图。](../../media/bf14884a-53f9-4c53-971c-b9b8ad6ec8d3.png)
   
 ## <a name="step-1-apply-for-a-fapiao"></a>步骤1：适用于发票
 
@@ -43,7 +43,7 @@ ms.locfileid: "42252420"
     
 2. 您可以从<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>申请发票。
     
-    ![Microsoft 365 管理中心中的 "帐单" 页。](../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
+    ![Microsoft 365 管理中心中的 "帐单" 页。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>步骤2：在世纪互联运营管理系统中注册发票
 
@@ -54,7 +54,7 @@ ms.locfileid: "42252420"
     
 2. 在 "注册" 表单中，输入订单编号、电子邮件地址和密码，然后选择 "**注册**"。
     
-    !["世纪 Fapioa 管理系统注册" 页。](../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
+    !["世纪 Fapioa 管理系统注册" 页。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
 3. 注册完成后，系统会将激活电子邮件发送到您的电子邮件地址。 打开电子邮件并选择用于激活您的帐户的链接。
     
@@ -67,11 +67,11 @@ ms.locfileid: "42252420"
     > [!NOTE]
     > 付款系统位于第三方平台上，并需要三天来同步订单和付款记录。 
   
-    ![显示最近订单的发票管理系统页面。](../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
+    ![显示最近订单的发票管理系统页面。](../../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
   
 3. 选择 "发票" 类型，输入所需的信息，然后选择 "**下一步**"。
     
-    ![您在其中选择 "发票" 类型的 "发票请求" 表单。](../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
+    ![您在其中选择 "发票" 类型的 "发票请求" 表单。](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
   
     > [!NOTE]
     > - 对于普通 VAT 发票，只需输入买方的名称即可。
@@ -81,7 +81,7 @@ ms.locfileid: "42252420"
     
 4. 选择发货方式并输入邮寄信息。 您可以选择 "Yunda" 或 "SF" （货运收集）。 您还可以转到 "世纪上海" 分支机构以获取发票。 选择 "**下一步**"。
     
-    ![显示邮寄信息的发票请求窗体。](../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
+    ![显示邮寄信息的发票请求窗体。](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
   
     **世纪上海分公司地址：**
 
@@ -93,7 +93,7 @@ ms.locfileid: "42252420"
    
 5. 验证信息正确无误，然后选择 "**确认**"。
     
-    ![发票请求表单的 "确认" 页。](../media/18706d9d-defc-4285-8fd3-990448b44a18.png)
+    ![发票请求表单的 "确认" 页。](../../media/18706d9d-defc-4285-8fd3-990448b44a18.png)
   
 ## <a name="step-4-check-application-progress"></a>步骤4：检查应用程序进度
 
@@ -101,11 +101,11 @@ ms.locfileid: "42252420"
   
 提交应用程序后，您可以随时检查进度。 我们将使用 "已**发出**" 或 "已**发送邮件**" 等注释更新应用程序的状态。
   
-![显示请求状态的 "世纪发票管理系统" 页面。](../media/6cd696ec-d630-4fce-9f27-935a0d5f0ebe.png)
+![显示请求状态的 "世纪发票管理系统" 页面。](../../media/6cd696ec-d630-4fce-9f27-935a0d5f0ebe.png)
   
 当发票不使用时，系统将显示一个通知，并将指示发出发票的预期时间。
   
-![在使用世纪发票管理系统时显示的错误消息。](../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
+![在使用世纪发票管理系统时显示的错误消息。](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
 ## <a name="faqs"></a>常见问题解答
 
@@ -115,17 +115,17 @@ ms.locfileid: "42252420"
   
 如果要更改发票标题，请将发票返回给我们，我们将重新发出发票。 您可以通过<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">管理中心</a>提交请求。
   
-![管理中心支持窗体用于向后发送发票以请求标题更改。](../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
+![管理中心支持窗体用于向后发送发票以请求标题更改。](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
 ### <a name="how-do-i-change-my-login-email-address-and-password"></a>如何更改我的登录电子邮件地址和密码？
 
 1. 登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">发票管理系统</a>，然后选择 "**更改电子邮件地址**"。
     
-    ![用户登录到世纪发票管理系统后的下拉菜单。](../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
+    ![用户登录到世纪发票管理系统后的下拉菜单。](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
 2. 如果您忘记了登录密码，可以使用您的登录电子邮件地址重置密码。 发票管理系统将向您的电子邮件地址发送新密码。 您可以使用新密码进行登录。
     
-    ![显示如何在世纪发票管理系统中重置密码的连续图像。](../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
+    ![显示如何在世纪发票管理系统中重置密码的连续图像。](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   
 3. 如果您忘记了登录电子邮件地址，请联系世纪互联客户服务（86）400-089-0365。
     
@@ -144,6 +144,6 @@ ms.locfileid: "42252420"
 
 如果您在注册后的24小时内未收到帐户激活电子邮件，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世纪发票信息管理系统</a>"，输入您的电子邮件地址，然后选择 **"重新发送激活电子邮件"**。 系统会将帐户激活电子邮件重新发送到注册的电子邮件地址。
   
-!["世纪 Fapioa 管理系统注册" 页。](../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
+!["世纪 Fapioa 管理系统注册" 页。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
 如果仍未收到激活电子邮件，请联系世纪互联客户服务（86）400-089-0365。

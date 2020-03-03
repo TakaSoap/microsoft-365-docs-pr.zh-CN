@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站进行文件存储和共享。
-ms.openlocfilehash: ec55e54fb15113589d7c9b68add511d2cfa9bc97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: be3c845710fdf5531b1a3d91b9579c55cdc4d203
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252353"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360493"
 ---
 # <a name="set-up-office-365-file-storage-and-sharing"></a>设置 Office 365 文件存储和共享
 
@@ -52,7 +52,7 @@ ms.locfileid: "42252353"
 
 OneDrive 和团队网站为你和你的员工提供随处访问。
   
-![显示 Office 365 产品如何使用 OneDrive 或工作组网站的图表](../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![显示 Office 365 产品如何使用 OneDrive 或工作组网站的图表](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 下面是在将 OneDrive 和工作组网站一起使用时，在每个位置中存储的内容的建议：
   
@@ -81,7 +81,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
 3. 在 OneDrive 中，工作组成员可以存储自己的与业务相关的文件。 您可以共享单个文件，也可以共享整个文件夹。 选择一个文件或文件夹，单击鼠标右键，然后选择 "**共享**"。
 
-    ![共享文件夹](../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![共享文件夹](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. 在 "**发送链接**" 页上，保留**具有链接的任何人都可以查看和编辑**的默认选择。
 
@@ -89,15 +89,15 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
     如果您想要发送的电子邮件副本，请将您的电子邮件地址添加到列表中。
 
-    !["共享链接" 对话框，其中显示键入内容并选择名称。](../media/877e6587-db9d-4903-a87b-11e570eee926.png)
+    !["共享链接" 对话框，其中显示键入内容并选择名称。](../../media/877e6587-db9d-4903-a87b-11e570eee926.png)
   
 5. 输入要与其共享的用户后，请选择 "**发送**"。 该电子邮件会立即发送给受邀人员。
 
-    ![共享链接，显示名称列表](../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![共享链接，显示名称列表](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. 此电子邮件的外观如下所示。 
 
-    ![包含共享 OneDrive 文件夹的链接的电子邮件](../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![包含共享 OneDrive 文件夹的链接的电子邮件](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>将文件上载到团队网站以进行联机协作
 
@@ -138,15 +138,15 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
   
 4. 如果你随后收到了**设置 OneDrive**提示，请使用你的工作或学校帐户登录。
 
-    ![OneDrive 安装程序屏幕](../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![OneDrive 安装程序屏幕](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. 如果尚未同步 OneDrive，则可能会看到 "**这是 onedrive 文件夹**" 屏幕。 检查**OneDrive 文件夹**下的路径是否在此处。 如果要使用其他路径，请选择 "**更改位置**"，然后选择 "**下一步**"。
 
-    ![在此屏幕上更改本地文件夹](../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![在此屏幕上更改本地文件夹](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. 工作组网站中的文件将显示在 "文件资源管理器" 的左侧窗格中组织的名称下。 OneDrive 中的文件将显示在 "OneDrive- \<组织\>名称" 下。
 
-    ![查看您的本地文件夹中的同步内容](../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![查看您的本地文件夹中的同步内容](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. 通过打开计算机上团队文件夹中的文件来测试同步。 进行更改，然后选择" **保存**"。
 

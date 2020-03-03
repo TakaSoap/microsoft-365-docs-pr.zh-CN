@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 857b6df8c10d155b444e5a184293653b7229a67a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 69e46e8b4c29a51a66dd88bdf5a778ed14f15895
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240201"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360223"
 ---
 # <a name="contact-support-for-antigua-and-barbuda"></a>联系支持部门的安提瓜和巴布达
 

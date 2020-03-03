@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '了解如何成为组织的管理员并获取 Office 365 订阅。 '
-ms.openlocfilehash: 6fd85f79b32d0a51a5069cfbb55ca58e7cdb1b36
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252465"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361547"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>成为管理员并为组织购买 Office 365
 
@@ -55,16 +55,16 @@ ms.locfileid: "42252465"
   
 ## <a name="overview-of-the-steps"></a>步骤概述
 
-![成为管理员和购买 Office 365 涉及的阶段的高级视图。](../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
+![成为管理员和购买 Office 365 涉及的阶段的高级视图。](../../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
   
 可查看向导完成过程，各步骤的摘要如下。
   
 |||
 |:-----|:-----|
-|![粉色圆圈中的数字 1](../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**注册** 必须先使用工作电子邮件地址注册 Skype 会议，才能成为管理员。  <br/> |
-|![粉色圆圈中的数字 2。](../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**运行向导** 注册后，通过执行下列某项操作运行向导：  <br/>  运行在应用启动器中选择 "**管理员**" 后显示的 **"管理员向导"** 。  <br/>  或  <br/>  选择升级到 Skype 会议中的**office 365** ，然后选择您想要升级到的 office 365 订阅。  <br/> |
-|![粉色圆圈中的数字 3。](../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**验证域所有权** 接下来，要向 Office 365 验证你拥有或管理与组织电子邮件地址关联的域名（如 contoso.com）。只有域名的所有者有权执行此操作。  <br/> |
-|![粉色圆圈中的数字 4。](../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**购买许可证** 在向导的最后一步，为组织内使用工作电子邮件注册 Skype 会议 的所有人购买 Office 365 许可证。  <br/> 例如，如果两名用户使用工作电子邮件注册了 Skype 会议，则需购买两个许可证，每人一个。  <br/> > [!NOTE]> 购买许可证后才能管理 Office 365。           |
+|![粉色圆圈中的数字 1](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**注册** 必须先使用工作电子邮件地址注册 Skype 会议，才能成为管理员。  <br/> |
+|![粉色圆圈中的数字 2。](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**运行向导** 注册后，通过执行下列某项操作运行向导：  <br/>  运行在应用启动器中选择 "**管理员**" 后显示的 **"管理员向导"** 。  <br/>  或  <br/>  选择升级到 Skype 会议中的**office 365** ，然后选择您想要升级到的 office 365 订阅。  <br/> |
+|![粉色圆圈中的数字 3。](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**验证域所有权** 接下来，要向 Office 365 验证你拥有或管理与组织电子邮件地址关联的域名（如 contoso.com）。只有域名的所有者有权执行此操作。  <br/> |
+|![粉色圆圈中的数字 4。](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**购买许可证** 在向导的最后一步，为组织内使用工作电子邮件注册 Skype 会议 的所有人购买 Office 365 许可证。  <br/> 例如，如果两名用户使用工作电子邮件注册了 Skype 会议，则需购买两个许可证，每人一个。  <br/> > [!NOTE]> 购买许可证后才能管理 Office 365。           |
 
 ## <a name="your-office-365-subscription"></a>Office 365 订阅
 

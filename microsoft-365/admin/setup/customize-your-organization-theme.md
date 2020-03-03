@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何更改 Office 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
-ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 9d83abb919cfb9f6ea3c804d9c5d934614f35285
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280180"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360633"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>自定义您的组织的 Office 365 主题
 
 了解如何在 Microsoft 365 管理中心中自定义你的主题。 作为 Office 365 商业版 订阅的管理员，可为组织中的每个用户更改顶部导航栏中显示的默认主题。 您可以添加公司徽标并更改颜色，使其与品牌的其余部分相匹配。 您甚至可以添加目标链接，以便用户在选择您的徽标时导航到该链接。 你可以在此处查看 Office 365 中的默认主题和自定义主题结果。
   
-![默认 Office 365 主题和自定义 Office 365 主题](../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![默认 Office 365 主题和自定义 Office 365 主题](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>在管理中心中自定义您的主题
 
@@ -62,7 +62,7 @@ ms.locfileid: "42280180"
       
   - **显示用户名**：选择是否在用户登录时，在页面右上角的 "客户" 的入口点显示用户的完整名称。 默认情况下，如果尚未上载照片，则用户将看到照片或姓名的缩写。
     
-4. 选择 "**保存更改**"。
+4. 选择“**保存更改**”。
     
 你将立即在管理中心中看到你的新主题，在短暂延迟之后，你将在 Office 365 中看到它，包括 Outlook 和 SharePoint 页面。 可随时删除自定义图标或自定义颜色。 只需返回主题页面，然后选择 "**删除自定义主题**"。
   

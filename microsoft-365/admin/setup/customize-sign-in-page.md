@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: 使用 Azure Active Directory 自定义 Office 365 登录页。 您可以向登录页面添加插图、徽标和文本。
-ms.openlocfilehash: 7db1271cd3d009bdbf1a26166f95a99d44087421
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 97d1d1c7dcb5a31395c98295a250913bb8ab69f5
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240252"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360643"
 ---
 # <a name="add-your-company-branding-to-office-365-sign-in-page"></a>向 Office 365 登录页面添加公司的品牌标识
 
@@ -36,7 +36,7 @@ ms.locfileid: "42240252"
   
 下图显示了可以在 Azure 中修改登录页面的哪些部分。
   
-![您可以自定义的 Office 365 登录页面的区域。](../media/screenshotbranding.png)
+![您可以自定义的 Office 365 登录页面的区域。](../../media/screenshotbranding.png)
   
 1. 大插图和/或背景色
     

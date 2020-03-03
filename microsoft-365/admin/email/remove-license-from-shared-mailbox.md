@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '删除共享邮箱中的许可证以将其分配给其他用户。 '
-ms.openlocfilehash: 7b708c7877a307e2d51b97848a3780c5586d7d2a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 90ec29681aa5b15dd04895df2b48b2b1619b521d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251166"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362217"
 ---
-# <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
+# <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱删除许可证
 
 除非邮箱拥有超过50GB 的数据，否则共享邮箱不需要许可证。 按照这些说明操作，从共享邮箱中删除许可证，以便可以将其分配给用户或返回许可证，以便您无需支付许可证。
   
@@ -39,7 +39,7 @@ ms.locfileid: "42251166"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
    > [!NOTE]
    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。 
@@ -48,7 +48,7 @@ ms.locfileid: "42251166"
 
 3. 一个 "**许可证和应用**" 选项卡，展开 "**许可证**" 并取消选中要删除的许可证对应的复选框。
 
-4. 选择 "**保存更改**"。
+4. 选择“**保存更改**”。
 
 5. 当您返回到 "**活动用户**" 页面时，共享邮箱的状态将为 "**未经许可**"。
 
@@ -58,7 +58,7 @@ ms.locfileid: "42251166"
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
    > [!NOTE]
    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。
@@ -77,7 +77,7 @@ ms.locfileid: "42251166"
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
    > [!NOTE]
    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: '了解如何使用 Cortana 与 Office 365 集成。 你可以在管理中心关闭 Cortana 以限制其对你组织的数据的访问。 '
-ms.openlocfilehash: 21de80d127498dd40db932923a8d650b87b8a24c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8f20c9b96ee57dcdf5da99dc08ffeb72465bc515
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252469"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361433"
 ---
 # <a name="cortana-in-office-365"></a>Office 365 中的 Cortana
 
@@ -46,7 +46,7 @@ Cortana 服务分为两个数据类别、**合规**和**可选的已连接服务
 
 4. 选中 "**允许 cortana 可选连接体验" 复选框，以使用组织的 Microsoft 托管数据**来启用或禁用 Cortana 连接体验。
 
-5. 选择 "**保存更改**"。
+5. 选择“**保存更改**”。
 
 ## <a name="turn-off-cortana-ost-experiences"></a>关闭 Cortana OST 体验
 

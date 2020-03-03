@@ -1,7 +1,7 @@
 ---
 title: Microsoft 威胁防护先决条件
 description: 了解有关 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置
-keywords: 要求、先决条件、硬件、软件、浏览器、MTP、M365、许可证
+keywords: 要求、先决条件、硬件、软件、浏览器、MTP、M365、许可证、E5、A5、EMS、purchase
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,19 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: ef26a2ebc25d7f55e7dc22347d85767dab970536
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288540"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372050"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 
 **适用于：**
 - Microsoft 威胁防护
-
-
 
 了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。
 
@@ -41,8 +39,13 @@ ms.locfileid: "42288540"
 - Microsoft 365 E5
 - Microsoft 365 E5 安全版
 - Office 365 E5 和 "企业移动性 + 安全性 E5 （EMS E5）" 和 Windows E5
+- Microsoft 365 A5
+- Microsoft 365 A5 安全性
+- Office 365 A5 和 "Enterprise 可移动性 + Security A5 （EMS A5）" 和 Windows A5
 
-[查看 Microsoft 365 企业版服务计划](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
+有关详细信息，请[查看 Microsoft 365 企业版服务计划](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
+
+> 还没有许可证？ [试用或购买 Microsoft 365 订阅](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>检查现有许可证
 转到 Microsoft 365 管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看现有许可证。 在管理中心，转到“计费”**** > “许可证”****。

@@ -19,36 +19,39 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73f76dee8a59229138f906e593a84220c7f70aee
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 73c4c9864713432d318b0b3cec9fbaf395deff45
+ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235211"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42374140"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
 **适用于：**
 - Microsoft 威胁防护
 
-
-
 Microsoft 威胁防护通过集成 Microsoft Defender 高级威胁防护 (ATP)、Office 365 ATP、Microsoft Cloud App Security 和 Azure ATP 的关键功能来统一事件响应流程。 这种统一的体验增加了可在 Microsoft 365 安全中心访问的强大功能。
 
-## <a name="check-license-eligibility-and-required-permissions"></a>检查许可证资格和必需权限
-Microsoft 365 E5、Microsoft 365 E5 安全或等效的许可证组合的客户可以使用 Microsoft 威胁防护。 有关更多信息，请[阅读许可要求](prerequisites.md#licensing-requirements)。
+若要获得最佳保护并优化 Microsoft 威胁防护，建议在网络上部署所有适用的受支持的服务。 有关详细信息，请[参阅部署支持的服务](deploy-supported-services.md)。
 
-您必须是**全局管理员**或[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的**安全管理员**才能打开 Microsoft 威胁防护。
+## <a name="check-license-eligibility-and-required-permissions"></a>检查许可证资格和必需权限
+Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证组合提供了对受支持的服务的访问权限，并允许您在 Microsoft 365 安全中心中使用 Microsoft 威胁防护。
+
+有关许可的详细信息，请[阅读许可要求](prerequisites.md#licensing-requirements)。
+
+### <a name="check-your-role"></a>检查你的角色
+您必须是**全局管理员**或 Azure Active Directory 中的**安全管理员**才能打开 Microsoft 威胁防护。 [在 Azure AD 中查看你的角色](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>开始使用服务
 Microsoft 威胁防护从各种集成服务中聚合数据。 它将集中处理和存储数据，以确定新的见解并使集中响应工作流成为可能。
 
-在你打开服务之前，Microsoft 365 安全中心（[security.microsoft.com](https://security.microsoft.com)）不会在导航窗格中显示**事件**和**操作中心**选项。
+在你打开服务之前，Microsoft 365 安全中心（[security.microsoft.com](https://security.microsoft.com)）会在你选择 "**事件**"、"**操作中心**" 或 "导航窗格" 中的 "**搜寻**" 时显示 microsoft 威胁防护欢迎页面。 如果你不符合使用 Microsoft 威胁防护的条件，则不会显示这些导航选项。
 
-![未安装 microsoft 威胁防护功能](../../media/mtp-off.png)
-的 microsoft 365 安全中心导航窗格的图像关闭 microsoft*365 安全中心，并关闭 microsoft 威胁防护*
+![Microsoft](../../media/mtp-welcome.png)
+*365 安全中心中*未打开 microsoft 威胁防护欢迎页面时显示的 microsoft 威胁防护欢迎页面的图像
 
-若要打开 Microsoft 威胁防护，请在导航窗格中选择 "**设置**"。 在 "**[设置" 页](https://security.microsoft.com/settings)** 中，转到 " **Microsoft 威胁防护** > **" 自愿加入/自愿退出**。
+若要打开 Microsoft 威胁防护，只需从欢迎页面完成此过程即可。 您还可以通过在导航窗格中访问**设置**（[security.microsoft.com/settings](https://security.microsoft.com/settings)）并选择 " **microsoft 威胁防护**" 来打开 microsoft 威胁防护。
 
 >[!NOTE]
 >如果在导航窗格中看不到**设置**或无法访问页面，请检查您的权限和许可证。
@@ -63,7 +66,7 @@ Microsoft 威胁防护从各种集成服务中聚合数据。 它将集中处理
 
 - [事件管理](incidents-overview.md)
 - 用于管理[自动调查和响应](mtp-autoir.md)的操作中心
-- [高级搜寻](advanced-hunting-overview.md)功能（添加到现有**搜寻**页面）
+- [高级搜寻](advanced-hunting-overview.md)功能
 
 ![Microsoft 365 security center 导航窗格的图像与 microsoft 威胁防护功能](../../media/mtp-on.png)
 *microsoft 365 security center with 事件管理和其他 Microsoft 威胁防护功能*
@@ -75,7 +78,7 @@ Microsoft 威胁防护从各种集成服务中聚合数据。 它将集中处理
 ## <a name="turn-off-microsoft-threat-protection"></a>关闭 Microsoft 威胁防护
 要停止使用 Microsoft 威胁防护，请转到 Microsoft 365 安全中心中的“**设置**” > “**Microsoft 威胁防护**” > “**选择加入/选择退出**”。 取消选择**打开 Microsoft 威胁防护**并保存更改。
 
-将永久删除数据，并将从 Microsoft 365 安全中心删除相应的功能。
+将从 Microsoft 365 安全中心删除相应的功能。
 
 ## <a name="get-assistance"></a>获取帮助
 
@@ -85,6 +88,7 @@ Microsoft 支持人员可帮助设置或取消设置或取消设置租户上的�
 
 - [Microsoft 威胁防护概述](microsoft-threat-protection.md)
 - [许可要求和其他先决条件](prerequisites.md)
+- [部署支持的服务](deploy-supported-services.md)
 - [Microsoft Defender ATP 概述](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Office 365 ATP 概述](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security 概述](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)

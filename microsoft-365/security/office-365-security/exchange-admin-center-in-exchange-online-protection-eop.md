@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protection (EOP) 的管理控制台。
-ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083251"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372490"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 管理中心
 
@@ -33,7 +33,7 @@ Exchange 管理中心 (EAC) 是基于 Web 的 Microsoft Exchange Online Protecti
 
 ## <a name="accessing-the-eac"></a>访问 EAC
 
-在大多数情况下，EOP 客户将通过 Microsoft 365 管理中心访问 EAC。 可以在“**自有**”磁贴旁的“**管理**”磁贴中的下拉菜单中找到指向 EOP 的链接。 单击“**管理**”磁贴，从下拉菜单中选择“**Exchange Online Protection**”以进入 EAC。
+在大多数情况下，EOP 客户将通过 Microsoft 365 管理中心访问 EAC。 可以在“**自有**”磁贴旁的“**管理**”磁贴中的下拉菜单中找到指向 EOP 的链接。 单击 "**管理**" 磁贴，然后从下拉菜单中选择 " **Exchange Online Protection** " 以进入 EAC。
 
 您也可以通过以下 URL 直接访问 EAC 登录页面：`https://admin.protection.outlook.com/ecp/<companydomain>`。例如 `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`。指定用户凭据后，您将直接进入 EAC。
 

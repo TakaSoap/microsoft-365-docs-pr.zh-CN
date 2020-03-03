@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 74e84fc00e5fe633f0d70315cea9ad1329e2f639
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179213"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372010"
 ---
 # <a name="insider-risk-management-alerts"></a>内幕风险管理警报
 
@@ -35,6 +35,9 @@ ms.locfileid: "42179213"
     - 解决低严重性警报的平均时间，以小时、天或月为单位列出。
 
 ![内幕风险管理警报仪表板](../media/insider-risk-alerts-dashboard.png)
+
+>[!NOTE]
+>内幕风险管理使用内置警报限制来帮助保护和优化风险调查和审查体验。 此限制可防止可能导致策略警报过载的问题，例如，配置不当的数据连接器或 DLP 策略。 因此，显示用户的新通知可能会有延迟。
 
 ## <a name="alert-status-and-severity"></a>警报状态和严重性
 

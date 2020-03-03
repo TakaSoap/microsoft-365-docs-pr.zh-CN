@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的 Office 365 租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284383"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362127"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -32,7 +32,7 @@ ms.locfileid: "42284383"
 集中部署支持 Windows、Mac、iOS、Android 和 Online Office 应用。
 加载项最长可能需要12个小时才能为所有用户显示客户端。
   
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 集中部署加载项需要用户使用 Office 365 专业增强版（并使用其组织 ID 登录到 Office），并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录目录必须处于或联合到 Azure Active Directory。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用[office 365 集中部署兼容性检查器](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)。
@@ -77,7 +77,7 @@ ms.locfileid: "42284383"
   
 如果不想使用激活报告，可以让用户在其计算机上打开 Office 应用程序（如 Word），然后选择 "**文件** \> **帐户**"。 在" **产品信息**"下，应看到" **订阅产品**"和" **Microsoft Office 365 专业增强订阅版**"，如下图所示。
 
-![Office 应用程序中的产品信息](../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
+![Office 应用程序中的产品信息](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
 有关 Office 365 专业增强订阅版 的帮助，请参阅 [Office 365 ProPlus 疑难解答提示](https://go.microsoft.com/fwlink/p/?linkid=846339)。
 
@@ -140,18 +140,18 @@ Invoke-CompatibilityCheck
    
 请查看以下示例，在这里，柏隼、康霓以及销售部门组被分配了加载项。由于西海岸销售部门是嵌套组，赵强和熊飞未被分配加载项。
   
-![销售部门的关系图](../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![销售部门的关系图](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
    
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>找出一个组是否包含嵌套组
 
 若要找出一个组是否包含嵌套组，最简单的方法是查看 Outlook 内的组联系人卡片。 如果您在电子邮件的 " **To** " 字段中输入组名称，然后在解析时选择组名称，将显示它是否包含用户或嵌套组。 在以下示例中，测试组 Outlook 联系人卡片的" **成员**"选项卡显示没有用户且只有两个子组。 
   
-![Outlook 联系人卡片的 "成员" 选项卡](../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Outlook 联系人卡片的 "成员" 选项卡](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
 可以解析某个组，查看该组是否是任何组的成员，从而进行反向查询。在以下示例中，可以在 Outlook 联系人卡片的" **成员身份**"选项卡下看到子组 1 是测试组的成员。 
   
-![Outlook 联系人卡片的 "成员资格" 选项卡](../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Outlook 联系人卡片的 "成员资格" 选项卡](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
 或者，可以使用 Azure Active Directory 图形 API 运行查询，查找组内的组列表。有关详细信息，请参阅 [Operations on groups | Graph API reference](https://go.microsoft.com/fwlink/p/?linkid=846342)（组操作 | 图形 API 参考）。
   

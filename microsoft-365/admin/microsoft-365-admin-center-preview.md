@@ -18,12 +18,12 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 了解新的 Microsoft 365 管理中心。
-ms.openlocfilehash: 1506dc63c2ba1e7e8926985b3c5e1cd7d6a11b52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252468"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361597"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>关于新的 Microsoft 365 管理中心
 
@@ -50,9 +50,9 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的通用入口点，
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>切换到新的管理中心并再次切换回来
 
-- 当新的 Microsoft 365 管理中心可供您使用时，您可以选择在主页顶部的 "**尝试新管理中心**" 切换（位于主页顶部）选择 ""。 如果你注销管理中心，我们会记住你的选择，你将重新登录到新的管理中心。 <br/><br/>![新管理中心从旧管理中心切换](media/admin-center-toggle-off.png) 
+- 当新的 Microsoft 365 管理中心可供您使用时，您可以选择在主页顶部的 "**尝试新管理中心**" 切换（位于主页顶部）选择 ""。 如果你注销管理中心，我们会记住你的选择，你将重新登录到新的管理中心。 <br/><br/>![新管理中心从旧管理中心切换](../media/admin-center-toggle-off.png) 
   
-- 通过将切换关闭到 "**关闭**"，从主页切换回旧管理中心。 <br/><br/>![新管理中心切换功能打开](media/admin-center-toggle-on.png)
+- 通过将切换关闭到 "**关闭**"，从主页切换回旧管理中心。 <br/><br/>![新管理中心切换功能打开](../media/admin-center-toggle-on.png)
 
 在新管理中心内，您可以在每个页面底部的 "**需要帮助"** 按钮旁选择 "**提供反馈**"，从而为 Microsoft 提供有关您的体验的反馈。 请告诉我们你喜欢的内容以及我们能做些什么。 此外，您还可以通过及时了解你的整体印象或新发布的特定体验来获取弹出调查。 您还可以在本文结束时提供反馈，具体方法是选择**此信息是否有用？**
   

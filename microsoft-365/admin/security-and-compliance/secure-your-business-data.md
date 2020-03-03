@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: d3abaa4fef1a50ab5aad4762e688efe451d0a4cf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 68e5061b7238d456ee0397a50eff37f07214d13f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240301"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361113"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>确保 Office 365 和 Microsoft 365 商业版计划安全的十大方法
 
@@ -35,20 +35,20 @@ Microsoft 建议您完成下表中列出的适用于您的服务计划的任务�
   
 ||**任务**|**Office 365 商业高级版**|**Microsoft 365 商业版**|
 |:-----|:-----|:-----|:-----|
-|1  <br/> |[设置多重身份验证](secure-your-business-data.md#setup) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|双面  <br/> |[培训用户](secure-your-business-data.md#train) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|第三章  <br/> |[使用专用管理员帐户](secure-your-business-data.md#admin) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|4  <br/> |[提高针对邮件中的恶意软件的保护级别](secure-your-business-data.md#malware) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|5  <br/> |[防御勒索软件](secure-your-business-data.md#ransomware) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|6   <br/> |[停止电子邮件的自动转发](secure-your-business-data.md#forwarding) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|7   <br/> |[使用 Office 邮件加密](secure-your-business-data.md#encryption) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|8   <br/> |[保护你的电子邮件免受网络钓鱼攻击](secure-your-business-data.md#phishing) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|9   <br/> |[使用 ATP 安全附件防止恶意附件和文件](secure-your-business-data.md#atp) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10   <br/> |[使用 ATP 安全链接防御网络钓鱼攻击](secure-your-business-data.md#phishingatp) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1  <br/> |[设置多重身份验证](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|双面  <br/> |[培训用户](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|第三章  <br/> |[使用专用管理员帐户](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|4  <br/> |[提高针对邮件中的恶意软件的保护级别](secure-your-business-data.md#malware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|5  <br/> |[防御勒索软件](secure-your-business-data.md#ransomware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|型  <br/> |[停止电子邮件的自动转发](secure-your-business-data.md#forwarding) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|步  <br/> |[使用 Office 邮件加密](secure-your-business-data.md#encryption) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|utf-8  <br/> |[保护你的电子邮件免受网络钓鱼攻击](secure-your-business-data.md#phishing) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|第  <br/> |[使用 ATP 安全附件防止恶意附件和文件](secure-your-business-data.md#atp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10   <br/> |[使用 ATP 安全链接防御网络钓鱼攻击](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 在开始之前，请在 Microsoft 365 安全中心检查[microsoft 365 安全分数](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。 通过集中式仪表板，可以监视和提高 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。 为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决建议的相关积分。 通过其他见解并更好地了解更广泛的一组 Microsoft 产品和服务，您可以放心地报告您的组织的安全运行状况。
   
-![Microsoft 安全分数的屏幕截图](../media/secure-score.png)
+![Microsoft 安全分数的屏幕截图](../../media/secure-score.png)
   
 ## <a name="1-set-up-multi-factor-authentication"></a>1：设置多重身份验证
 <a name="setup"> </a>
@@ -151,7 +151,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|**阻止可能包含勒索软件或其他恶意代码的文件类型**|
 |:-----|:-----|:-----|
-|名称  <br/> |反勒索软件规则：警告用户  <br/> |反勒索软件规则：阻止文件类型  <br/> |
+|Name  <br/> |反勒索软件规则：警告用户  <br/> |反勒索软件规则：阻止文件类型  <br/> |
 |在以下情况应用此规则。 . .  <br/> |任何附件。 . . 文件扩展名匹配。 . .  <br/> |任何附件。 . . 文件扩展名匹配。 . .  <br/> |
 |指定字词或短语  <br/> |添加以下文件类型：  <br/> normal.dotm、.docm、xlsm、sltm、xlodbc.xla 加载、.xlam、xll、.pptm、potm、.ppam、ppsm、sldm  <br/> |添加以下文件类型：  <br/> ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、.hlp、超线程、hta、inf、jse、mdz、作业、js、、.lnk、mda、mdb、mde、、msc、msi、msp、mst、vb、vbe、scr、pcd、shs、wsh、  <br/> |
 |执行以下操作。 . .  <br/> |使用邮件通知收件人  <br/> |阻止邮件。 . . 拒绝邮件并提供说明  <br/> |
@@ -187,7 +187,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|
 |:-----|:-----|
-|名称  <br/> |阻止电子邮件自动转发到外部域  <br/> |
+|Name  <br/> |阻止电子邮件自动转发到外部域  <br/> |
 |在以下情况应用此规则 .。。  <br/> |发件人。 . . 为外部/内部。 . . 组织内部  <br/> |
 |添加条件  <br/> |邮件属性。 . . 包含邮件类型。 . . 自动转发  <br/> |
 |执行以下操作 .。。  <br/> |阻止邮件。 . . 拒绝邮件并提供说明。  <br/> |
@@ -210,11 +210,11 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 
 在 "Outlook for PC" 中，选择 "电子邮件中的**选项**"，然后选择 "**权限**"。 
   
-![Outlook 中的电子邮件加密](../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
+![Outlook 中的电子邮件加密](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
   
 在 Outlook.com 中，选择 "在电子邮件中**保护**"。 默认保护不是**转发**。 若要将此更改为 "加密"，请选择 "**更改权限** \> **加密**"。 
   
-![Outlook.com 中的电子邮件加密](../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
+![Outlook.com 中的电子邮件加密](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
   
 ### <a name="to-receive-encrypted-email"></a>接收加密电子邮件
 
@@ -231,7 +231,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
   
 我们建议您通过创建策略来保护最重要的用户和您的自定义域，以此来开始保护。 
   
-![创建 ATP 反网络钓鱼策略](../media/security-and-compliance-center.png)
+![创建 ATP 反网络钓鱼策略](../../media/security-and-compliance-center.png)
   
 若要创建 ATP 反网络钓鱼策略，请查看[简短的培训视频](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
   

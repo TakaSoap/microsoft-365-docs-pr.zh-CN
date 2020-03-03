@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 详细了解由世纪互联运营的 Office 365，旨在满足中国安全、可靠和可伸缩云服务的需要。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3c211421db74bc6ff916682d0670570d1de98568
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c473dacee7fe6f2e779960711a87368e261c3448
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240276"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360793"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -41,7 +41,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
   
 扫描此 QR 码在微信上关注我们，获取由世纪互联运营的 Office 365 的最新动态。
   
-![扫描此 QR 码以在 WeChat 上关注我们](../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+![扫描此 QR 码以在 WeChat 上关注我们](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
  **关于由世纪互联运营的 Office 365 中的服务**
   
@@ -73,7 +73,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |||
 |:-----|:-----|
-|通过电子邮件与组织外部的某个人共享文档、库或网站  <br/> |此功能可用，但默认情况下，使用它可能会使共享文件在您所在的国家/地区之外进行访问。 Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. 尝试与组织外部的某个人共享的用户也会收到警告。 有关详细信息，请参阅[在 Office 365 中共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)。  <br/> |
+|通过电子邮件与组织外部的某个人共享文档、库或网站  <br/> |此功能可用，但默认情况下，使用它可能会使共享文件在您所在的国家/地区之外进行访问。 管理员确实能够将其打开，但会收到一条警告消息，表明它可以使共享文件在你所在的国家/地区之外获得访问。 尝试与组织外部的某个人共享的用户也会收到警告。 有关详细信息，请参阅[在 Office 365 中共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)。  <br/> |
 |Access Services  <br/> |支持 Access 2013，但添加新的 Access 应用程序可能不可用，因为此功能将从 Office 365 和 SharePoint Online 中停用。 在365和 SharePoint Online 中创建新的基于 Access 的 web 应用程序和 Access web 数据库将在6月2017和任何剩余的 web 应用程序和 web 数据库中停止启动，4月2018。 此外，Access 2010 功能不受支持，尝试使用 Access 2010 数据库将导致错误和可能的数据丢失。  <br/> |
 |Microsoft PowerApps  <br/> |即将推出。  <br/> |
 |信息权限管理 (IRM)  <br/> |即将推出为组织将 IRM 功能设置为适用于 SharePoint 的功能。  <br/> |
@@ -128,11 +128,11 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 | 2013 SP1  <br/> | 2013 SP1  <br/> | 是  <br/> | 所有  <br/> |
 | 混合 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | 是  <br/> | 所有，除了就地电子数据展示/存档之外，OWA 访问（请参阅下表）  <br/> |
 | 混合 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | 是  <br/> | 仅手动配置的忙/闲  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | 否  <br/> | None  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | 否  <br/> | 无  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | 是  <br/> | 仅忙/闲  <br/> |
 | 2007  <br/> | 2013 SP1 或 2010 SP3No  <br/> | 不适用  <br/> | 不支持  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | 不适用  <br/> | 不支持  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | 否  <br/> | None  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | 否  <br/> | 无  <br/> |
 
    
 > [!IMPORTANT]

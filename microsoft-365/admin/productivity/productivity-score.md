@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 863d644a2dc3b7f756c61b8a9c3063a8545c1fb0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252429"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361313"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft 工作效率分数（预览）
 
@@ -39,7 +39,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 - **技术经验**（即将推出）：帮助你优化设备体验，例如主动修复常见的帮助台问题，并改善电脑启动时间和网络，以确保你的应用程序能够正常运行。  
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 ### <a name="areas-of-scoring"></a>记分区域 
 
@@ -84,7 +84,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 他的工作效率分数主页以百分比为单位提供当前分数和历史记录，通过基准补充的每个分数类别中的区域的主要见解。 
 
-![工作效率分数主页](../media/pslanding.png)
+![工作效率分数主页](../../media/pslanding.png)
 
 1.**工作效率分数**按百分比和<numerator> / <denominator>格式列出，因此您还可以看到绝对积分（分子）和最大可能分数  
 1. 此数据透视允许您选择要重点关注的分数类别。 在预览中，您只能查看**员工体验**，但所选内容将很快扩展以包括**技术经验**。 
@@ -113,7 +113,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 ### <a name="area-detail-page--collaborating-on-content"></a>区域详细信息页面–协作处理内容 
 
-![内容页上的 Collaborationg。](../media/pscollab.png)
+![内容页上的 Collaborationg。](../../media/pscollab.png)
 
 "在内容中进行协作" 页面包含来自工作效率分数主页的主要洞察力。 它具有以下组件：
 
@@ -134,7 +134,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 ### <a name="area-detail-page--working-anywhere"></a>区域详细信息页面–随时随地工作 
 
-!["任意位置工作" 页。](../media/psflexibility.png)
+!["任意位置工作" 页。](../../media/psflexibility.png)
 
 "正在工作的随处" 页对在两个或更多平台（桌面、移动和 web）中使用至少一个工作效率应用的用户进行了量化。 在使用更多的应用和平台时，用户将获得更高的评分。 被视为的应用程序包括 Outlook、团队、Word、Excel、PowerPoint、OneNote、Yammer、Skype。 真知灼见的基础是为 Office 365 专业增强版、Exchange、Yammer、Skype 或工作组启用的用户。
 
@@ -147,7 +147,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 为了提升 actionability，每个支持性洞察力都包含可帮助你转换你的员工体验的在线操作，其中一些可能是配置更改或知晓意识活动。 单击 "这些呼叫" 将在您可能考虑的推荐动作面板选项中打开。 目前启用了对**内容进行协作**的操作。
 
-!["在 Office 文档中协作" 页面。](../media/psactions1.png)
+!["在 Office 文档中协作" 页面。](../../media/psactions1.png)
 
 1. **查看操作**将转到一个窗格，其中列出了与协作处理内容相关的所有操作。
 1. **鼓励用户进行协作**，以使用共同创作的教学视频列表，如共同创作和 @mentions 主题。 
@@ -156,7 +156,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 选择任何动作按钮将打开右侧的 "**建议操作**" 窗格，其中包含每个操作的摘要和指向文档页面的链接。
 
-![建议的操作窗格。](../media/psacttions2.png)
+![建议的操作窗格。](../../media/psacttions2.png)
 
 
 ## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信 

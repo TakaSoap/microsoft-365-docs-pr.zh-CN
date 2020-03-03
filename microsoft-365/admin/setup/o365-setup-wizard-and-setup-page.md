@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解 Office 365 安装向导与设置页面之间的区别。
-ms.openlocfilehash: 3aecfc14071bda7948c24a2e161461558f8efd8d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0873e37b849785feb7c70271b97b148f3cea8bd9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252366"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360453"
 ---
 # <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Office 365 安装向导与设置页之间的区别
 
@@ -39,7 +39,7 @@ Office 365 提供了两种安装体验：
 
 若要设置你的帐户，请转到[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)，在左侧导航窗格中选择 "**设置**"，然后选择 "**设置**" 页上的 "**引导安装程序**"。
 
-![启动 Office 365 业务设置向导](../media/o365b-guided-setup.png)
+![启动 Office 365 业务设置向导](../../media/o365b-guided-setup.png)
 
 安装向导将指导您完成以下步骤：
 
@@ -57,7 +57,7 @@ Office 365 提供了两种安装体验：
 
 你将看到以逻辑类别排列的安装任务的完整列表，其中包括您在安装向导中完成的任务。
 
-![Office 365 商业版设置页](../media/o365b-setup-page.png)
+![Office 365 商业版设置页](../../media/o365b-setup-page.png)
 
 选择 "**查看**任何任务" 以获取一览信息，例如任务说明、用户影响、先决条件、实施投入和安全和采用统计信息，以帮助您在继续操作之前了解后果和影响。
 
@@ -67,4 +67,4 @@ Office 365 提供了两种安装体验：
 
 当您准备好完成某一任务时，请选择 "**入门**" 以遍历配置过程。 完成任务后，"**开始**使用" 按钮将更改为 "**管理**" 按钮，这样您就可以根据需要管理任务。
 
-![显示一览信息的任务视图](../media/o365b-at-a-glance.png)
+![显示一览信息的任务视图](../../media/o365b-at-a-glance.png)

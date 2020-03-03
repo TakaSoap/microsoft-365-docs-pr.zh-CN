@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 26b431a65035f2546bb44af2ecf31bfd327e53b6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f51c21261a83e1a0034a67f9f1580dd297a3d583
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251179"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362277"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建、编辑或删除安全组
 
@@ -135,7 +135,7 @@ ms.locfileid: "42251179"
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Exchange Online 和 SharePoint Online 中的组
 
-如果要创建用户组，以便可以同时向其发送电子邮件，您可以通过转到 "**管理员** \> **Exchange** \> **收件人** \> **组**" 在 Exchange 管理中心中执行此操作。 接下来， ****![选择 "](../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)新建添加"，然后选择要创建的组类型： 
+如果要创建用户组，以便可以同时向其发送电子邮件，您可以通过转到 "**管理员** \> **Exchange** \> **收件人** \> **组**" 在 Exchange 管理中心中执行此操作。 接下来， ****![选择 "](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)新建添加"，然后选择要创建的组类型： 
   
 - **通讯组**：用于将邮件分发给一组用户。 它也称为*启用邮件的通讯组*，或者在 Office 365 中为*通讯组列表*。 有关详细信息，请参阅[管理通讯组](https://technet.microsoft.com/library/bb124513.aspx)。
     
