@@ -16,16 +16,25 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076421"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409687"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>使用数据分类内容资源管理器（预览版）
 
 数据分类内容资源管理器可以在本机查看“概述”页上汇总的项目。
+
+## <a name="prerequisites"></a>先决条件
+
+访问和使用活动资源管理器的每个帐户，都必须拥有从以下之一订阅向其分配的许可证：
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- 高级合规性（E5）加载项
+- 高级威胁智能（E5）加载项
 
 ## <a name="content-explorer"></a>内容资源管理器
 
@@ -58,6 +67,8 @@ ms.locfileid: "42076421"
 用于访问内容资源管理器的帐户必须具有其中一个或两个角色组。 这些角色组是独立角色组，不具有累积性。 例如，如果要向帐户授予仅查看项目及其位置的权限，则授予内容资源管理器列表查看器的权限。 如果你希望同一帐户也能够查看列表中项目的内容，另请授予内容资源管理器内容查看器权限。
 
 你还可以将任一个角色或全部两个角色都分配到自定义角色组，以便对内容资源管理器的访问权限进行量身定制。
+
+全局管理员、合规性管理员或数据管理员可以分配必要的  内容资源管理器列表查看器  和  内容资源管理器内容查看器  角色组成员身份。
 
 ### <a name="how-to-use-content-explorer"></a>如何使用内容资源管理器
 

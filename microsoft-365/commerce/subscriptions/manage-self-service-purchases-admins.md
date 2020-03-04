@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理员可以了解如何管理组织中的用户所做的自我服务购买。
-ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080329"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409627"
 ---
-# <a name="manage-self-service-purchases-admin"></a>管理自助服务购买（管理员）
+# <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
 作为管理员，你可以查看组织中的人员进行的自助购买。 您可以查看产品、购买者名称、购买订阅、到期日期、购买价格和分配给每种自助服务购买的用户。 如果你的组织需要，你可以通过 PowerShell 基于每个产品禁用自助购买。 你的数据管理和访问策略与通过自助服务购买或集中购买的产品相同。
 
@@ -76,12 +76,12 @@ ms.locfileid: "42080329"
 
 5. 按照查看在第6步中要引用的用户列表中[查看拥有自助购买订阅的许可证](#view-who-has-licenses-for-a-self-service-purchase-subscription)的步骤中的步骤操作。
 
-6. 将许可证分配给在其他订阅中具有许可证的每个人。 有关完整步骤，请参阅向[用户分配许可证](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+6. 将许可证分配给在其他订阅中具有许可证的每个人。 有关完整步骤，请参阅向[用户分配许可证](../../admin/manage/assign-licenses-to-users.md)。
 
 7. 请与购买自助服务购买订阅的人员联系，让他们取消该订阅。
 
-## <a name="need-help-contact-us"></a>需要帮助? 联系我们。
+## <a name="need-help-contact-us"></a>是否需要帮助？ 联系我们。
 
 有关自助购买的常见问题，请参阅[自助服务购买 FAQ](self-service-purchase-faq.md)。
 
-如果你有任何疑问或需要有关自助购买的帮助，请[联系支持人员](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+如果你有任何疑问或需要有关自助购买的帮助，请[联系支持人员](../../admin/contact-support-for-business-products.md)。

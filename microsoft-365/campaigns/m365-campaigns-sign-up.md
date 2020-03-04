@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 针对市场活动的 Microsoft 365 的分步注册。 保护您的活动从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080521"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409657"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>注册 Microsoft 365 以获取市场活动 
 
@@ -84,13 +84,10 @@ ms.locfileid: "42080521"
 4. **如何查找？** 输入您拥有的用户数并选择 "**下一步**"。 您无需在此处输入促销代码，因为它已包含在邀请 URL 中。
 5. 在 "**您想要如何支付？** " 页面上，输入您的付款方式，然后选择 "**下订单**"。
 
-完成这些步骤后，即可[将新许可证分配](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)给您的市场活动员工。 
+完成这些步骤后，即可[将新许可证分配](../admin/manage/assign-licenses-to-users.md)给您的市场活动员工。
 
 
 ## <a name="whats-next"></a>未来会有哪些更新？
 - [设置 microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)以完成 microsoft 365 的市场活动设置。 
 - [向计划中添加用户](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)。 包括市场活动候选人、所有高级市场活动人员以及将有权访问敏感市场活动或参与方信息的任何人。
 - [为你的市场活动增大保护](m365-campaigns-security-overview.md)
-
-
-

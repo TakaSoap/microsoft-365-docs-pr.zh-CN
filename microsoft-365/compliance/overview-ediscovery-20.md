@@ -16,16 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的高级电子数据展示的新版本。
-ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a9c7811d9ad0660105f7063e674a54c01707ea58
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071043"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400940"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 
 Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中现有的电子数据展示和分析功能之上。 这一新的解决方案称为*高级电子数据展示*，它提供了一个端到端工作流，用于保留、收集、查看、分析和导出对组织的内部和外部调查做出响应的内容。 它还允许法律团队管理整个法律封存通知工作流，以便与案例中所涉及的保管人进行通信。 
+
+> [!NOTE]
+> 高级电子数据展示需要 Office 365 或 Microsoft 365 E5 企业版订阅。 有关高级电子数据展示许可的更多详细信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery)。
 
 ## <a name="alignment-with-edrm"></a>与 EDRM 的对齐方式
 

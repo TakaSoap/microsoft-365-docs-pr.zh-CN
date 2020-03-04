@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的发票。
 keywords: 帐单帐户、组织信息、发票
-ms.openlocfilehash: bf6f26b2f3bbeb3ac22273eca98b223383b88924
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594693"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409707"
 ---
 # <a name="understand-your-invoice"></a>了解发票
 
 发票提供了您的费用摘要和付款说明。 你可以在 Microsoft 365 管理中心[查看你的联机发票](#view-your-online-invoice)。 您还可以将其下载为可移植文档格式（.pdf）以通过电子邮件发送。
 
-如果你只有 Office 365 订阅，请参阅[查看 office 365 for business 的发票](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice)。
+如果你只有 Office 365 订阅，请参阅[查看 office 365 for business 的发票](view-your-bill-or-invoice.md)。
 
 ## <a name="understand-the-invoice-header"></a>了解发票抬头
 
@@ -102,14 +102,14 @@ ms.locfileid: "41594693"
 
 ### <a name="to-view-your-online-invoice"></a>查看联机发票
 
-1. 在 "管理中心" 中，转到 "**计费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单 & 付款</a>" 页。
+1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
 
 2. 若要下载发票的 .pdf 版本，请选择要查看的发票所在行中的 "**下载发票 pdf** "。
 
 3. 若要查看你的联机发票，请从列表中选择一个发票。 您还可以从 "发票详细信息" 页下载 .pdf 文件。
 
-## <a name="need-help-contact-support"></a>需要帮助? 请联系支持人员。
+## <a name="need-help-contact-support"></a>是否需要帮助？ 请联系支持人员。
 
 如果你在使用 Azure 信用时遇到疑问或需要帮助，请<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">创建支持 azure 支持的支持请求</a>。
 
-如果你在 Microsoft 365 管理中心中对发票有任何疑问或需要帮助，请[联系业务产品支持人员](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+如果你在 Microsoft 365 管理中心中对发票有任何疑问或需要帮助，请[联系业务产品支持人员](../../admin/contact-support-for-business-products.md)。

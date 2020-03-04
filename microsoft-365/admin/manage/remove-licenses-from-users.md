@@ -1,5 +1,5 @@
 ---
-title: 取消分配用户许可证
+title: 取消分配给用户的许可证
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: 了解如何从用户帐户中删除许可证。
-ms.openlocfilehash: bd14b7c62672d08e608b476e9c5982ac4b5ce070
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251089"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400929"
 ---
-# <a name="unassign-licenses-from-users"></a>取消分配用户许可证
+# <a name="unassign-licenses-from-users"></a>取消分配给用户的许可证
 
 ::: moniker range="o365-worldwide"
 您可以从 "**活动用户**" 页面或 "**许可证**" 页上的用户中删除或取消分配许可证。 使用哪种方法取决于您要从特定用户中取消分配产品许可证，还是从特定产品中取消分配用户许可证。
@@ -55,7 +55,7 @@ ms.locfileid: "42251089"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要为其取消分配许可证的用户所在的行。
 
@@ -67,7 +67,7 @@ ms.locfileid: "42251089"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配许可证的用户。
 
@@ -100,7 +100,7 @@ ms.locfileid: "42251089"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配许可证的用户的名称旁边的圆圈。
 
@@ -114,7 +114,7 @@ ms.locfileid: "42251089"
 
 ::: moniker range="o365-germany"
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配所有许可证的用户的名称旁边的框。
 
@@ -128,7 +128,7 @@ ms.locfileid: "42251089"
 
 ::: moniker range="o365-21vianet"
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配所有许可证的用户的名称旁边的框。
 
@@ -148,9 +148,11 @@ ms.locfileid: "42251089"
 
 - 还可[删除向其分配了许可证的用户帐户](../add-users/delete-a-user.md)，方便其他用户使用其许可证。删除用户帐户时，其许可证会立即可分配给其他用户。
 
-- 从用户中删除许可证后，与该帐户关联的数据将保留30天。 30天宽限期后，数据将被删除，并且无法恢复。 在 OneDrive 或 SharePoint Online 中保存的文件不会被删除。 有关详细信息，请参阅[OneDrive 保留和删除](https://docs.microsoft.com/onedrive/retention-and-deletion)
+- 从用户中删除许可证后，与该帐户关联的数据将保留30天。 30天宽限期后，数据将被删除，并且无法恢复。
 
-   此外，在删除许可证时，用户的邮箱将无法再通过使用电子数据展示工具（如内容搜索或高级电子数据展示）来进行搜索。 有关详细信息，请参阅[Office 365 中的内容搜索](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes)中的 "搜索断开连接或已取消授权的邮箱" 部分。
+- 请注意，在 OneDrive for Business 中保存的文件不会被删除，除非用户已从 Microsoft 365 管理中心中删除或通过 Active Directory 同步删除。 有关详细信息，请参阅[OneDrive 保留和删除](https://docs.microsoft.com/onedrive/retention-and-deletion)。
+
+- 此外，在删除许可证时，用户的邮箱将无法再通过使用电子数据展示工具（如内容搜索或高级电子数据展示）来进行搜索。 有关详细信息，请参阅[Office 365 中的内容搜索](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes)中的 "搜索断开连接或已取消授权的邮箱" 部分。
 
 - 如果您拥有企业订阅（如 Office 365 企业版 E3），Exchange Online 允许您使用[非活动邮箱](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)保留已删除用户帐户的邮箱数据。 有关详细信息，请参阅[在 Exchange Online 中创建和管理非活动邮箱](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes)。
 

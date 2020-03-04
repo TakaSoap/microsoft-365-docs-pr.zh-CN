@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项，以便它们不会被阻止，如果他们具有有效的业务需求，或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083965"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409577"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -50,7 +50,7 @@ ms.locfileid: "42083965"
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>向 DLP 策略添加用户通知
 
-创建 DLP 策略时，电子邮件通知和策略提示都是 "**用户通知**" 部分的一部分。 
+创建 DLP 策略时，可以启用**用户通知**。 启用后，Microsoft 365 将同时发送电子邮件通知和策略提示。 您可以自定义向其发送通知电子邮件的发件用户、电子邮件文本和策略提示文本。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     

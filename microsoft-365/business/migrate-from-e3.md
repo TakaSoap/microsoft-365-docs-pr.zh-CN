@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何通过 Office 365 E3 将企业移动到 Microsoft 365 商业版。
-ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065576"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409677"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>从 Office 365 E3 迁移到 Microsoft 365 业务 
 
@@ -38,27 +38,27 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 
 此表显示了 Microsoft 365 商业版和 Office 365 E3 之间的差异。
 
-| 功能   | Microsoft 365 商业版中的支持 | Office 365 E3 中的支持 | 
+| 功能    | Microsoft 365 商业版中的支持    | Office 365 E3 中的支持 | 
 |:-------|:-----|:-----|
-| **本地**       | | | 
-| Office 应用程序<sup>1</sup>   | Office 365 商业版   | Office 365 专业增强订阅版 | 
-| **云生产力应用程序**       | | | 
-| Exchange Online 和 Outlook   | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档   | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
-| Teams | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
-| OneDrive for Business | 每个用户 1 TB 存储限制   | 无限制 | 
-| Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
-| StaffHub  | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
-| Outlook 客户管理器，MileIQ  | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)  | | 
-| **威胁防护**     | | | 
-| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业版中](../media/check-mark.png) | 不包括在内，但可以添加到 | 
-| **身份管理**       | | | 
-| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|    ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  | 
-| **设备和应用程序管理**     | | |
-| Microsoft Intune、Windows AutoPilot|  ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  |
-| 共享计算机激活|   ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png)| 
+| **本地**        | | | 
+| Office 应用程序<sup>1</sup>    | Office 365 商业版    | Office 365 专业增强订阅版 | 
+| **云生产力应用程序**        | | | 
+| Exchange Online 和 Outlook    | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档    | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
+| Teams    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| OneDrive for Business    | 每个用户 1 TB 存储限制    | 无限制 | 
+| Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| StaffHub    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| Outlook 客户管理器，MileIQ    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | | 
+| **威胁防护**        | | | 
+| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
+| **身份管理**        | | | 
+| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  | 
+| **设备和应用程序管理**        | | |
+| Microsoft Intune、Windows AutoPilot|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  |
+| 共享计算机激活|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png)| 
 | 从 Win 7/8.1 Pro 许可证升级到 Windows 10 专业版的权限|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    || 
 | **信息保护**        | | |
-|Office 365 数据丢失防护|   ![包含在 Microsoft 365 商业版中](../media/check-mark.png)|![包含在 Office 365 E3 中](../media/check-mark.png)|
+|Office 365 数据丢失防护|    ![包含在 Microsoft 365 商业版中](../media/check-mark.png)|![包含在 Office 365 E3 中](../media/check-mark.png)|
 |Azure 信息保护计划1，Bitlocker 强制|![包含在 Microsoft 365 商业版中](../media/check-mark.png)||
 |Azure 信息保护计划1，敏感度标签|![包含在 Microsoft 365 商业版中](../media/check-mark.png)||
 |**客户端访问许可证（CAL 权限）**|||
@@ -68,7 +68,7 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 
 ## <a name="migration"></a>迁移
 
-若要迁移订阅，请参阅[手动切换到不同的计划](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually)，以获取有关仅将少数用户移动到 Microsoft 365 业务的说明。 您还可以[自动升级每个人](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)，或与合作伙伴合作将您的 E3 订阅和许可证移动到 Microsoft 365 业务订阅。
+若要迁移你的订阅，请参阅[手动更改计划](../commerce/subscriptions/change-plans-manually.md)以了解有关如何仅将少数用户移动到 Microsoft 365 业务的说明。 您还可以[自动升级每个人](../commerce/subscriptions/upgrade-to-different-plan.md)，或与合作伙伴合作，将您的 E3 订阅和许可证移到 Microsoft 365 业务订阅。
 以下各节介绍了需要进行的更改（如果有），以及迁移后可以执行的操作。
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 订阅配置和数据

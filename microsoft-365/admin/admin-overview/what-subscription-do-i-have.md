@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 了解如何通过转到 "订阅" 页来验证您的组织拥有哪些订阅。
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a63b0b17333ad12846ba8bac2c83b2d8dfc67a8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352823"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409497"
 ---
 # <a name="what-subscription-do-i-have"></a>我订阅了哪些产品？
 
@@ -86,4 +86,4 @@ ms.locfileid: "42352823"
 
 ## <a name="related-articles"></a>相关文章
   
-[订阅和计费](../../commerce/subscriptions-and-billing.md)
+[订阅和计费](../../commerce/index.yml)

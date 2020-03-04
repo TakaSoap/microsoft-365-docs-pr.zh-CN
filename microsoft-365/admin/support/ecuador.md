@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c3cd10bcaaf8cad10e13fd8703a0f5255bf89899
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b58ee6d782a87d676fb99c61126ad69565cc7124
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252205"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359133"
 ---
 # <a name="contact-support-for-ecuador"></a>对厄瓜多尔的支持联系
 

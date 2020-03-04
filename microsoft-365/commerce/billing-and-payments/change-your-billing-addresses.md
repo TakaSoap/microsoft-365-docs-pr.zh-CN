@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 了解如何更新 Office 365 for business 的帐单邮寄地址。 您还可以更新用于接收帐单通知的电子邮件地址。
 ms.custom: okr_SMB
-ms.openlocfilehash: 8cf7a8a8ac3414e8c40a1642b33e36f9b5cdf1a9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354749"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409637"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>更改 Office 365 商业版的帐单邮寄地址
 
@@ -195,5 +195,4 @@ ms.locfileid: "42354749"
 
 [付款 yoursubscription](pay-for-your-subscription.md)
 
-[订阅和帐单-管理员帮助](../subscriptions-and-billing.md)
-
+[订阅和帐单-管理员帮助](../index.yml)

@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 517ff6ae711d61b783e837aebeeb991dfaa53daa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 368ccef9e5213a7494140d2c305ddafe1e0c3f79
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084331"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409507"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -1968,7 +1968,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="format"></a>Format
 
-16个数字，可以是格式化或无格式（dddddddddddddddd），并且必须通过 Luhn 测试。
+14到16个数字，可以是格式化或无格式（dddddddddddddddd），并且必须通过 Luhn 测试。
 
 ### <a name="pattern"></a>模式
 
@@ -6165,4 +6165,3 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - SS# 
 - SSID 
    
-

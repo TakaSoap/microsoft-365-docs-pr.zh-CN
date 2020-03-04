@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 5fe9e06a582d72b46c4f90f13aee283050a06253
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1cb7c418e9c4ae5f2223748d512e8718f81b010c
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088697"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409747"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>调查并修正在 Office 365 中提供的恶意电子邮件
 
@@ -32,7 +32,7 @@ ms.locfileid: "42088697"
 
 请确保满足以下要求：
   
-- 您的组织具有[Office 365 高级威胁防护](office-365-atp.md)，并将[许可证分配给用户](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+- 您的组织具有[Office 365 高级威胁防护](office-365-atp.md)，并将[许可证分配给用户](../../admin/manage/assign-licenses-to-users.md)。
     
 - 为你的组织启用了[Office 365 审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md)。 
     
