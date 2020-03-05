@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: '了解用于保护 Windows 10 设备的默认设置和其他设置。 '
-ms.openlocfilehash: 9560bb4e299dba8f92d435a64670261b0e7e0290
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解如何配置 Windows 10 设备在登录到其工作或学校帐户时将接收的默认设备策略的设置。
+ms.openlocfilehash: 6c9dcd308db2fa41bad5f907b3c5a35577ac61f1
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593437"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417238"
 ---
 # <a name="secure-windows-10-devices"></a>保护 Windows 10 设备
 
@@ -42,7 +43,7 @@ ms.locfileid: "41593437"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |说明  <br/> |
+|设置  <br/> |说明  <br/> |
 |使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁  <br/> |需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。  <br/> |
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |
 |在空闲此时长后关闭设备屏幕  <br/> |确保用户处于空闲时，公司数据受到保护。用户可能会在咖啡店等公共场所工作，短暂离开或心不在焉，其设备有被随意瞥视的风险。借助此设置，可以控制用户处于空闲状态多长时间后关闭屏幕。  <br/> |

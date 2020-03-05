@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: '了解如何使用 Microsoft 365 商业版删除用户设备或 Windows 电脑中的公司数据。 '
-ms.openlocfilehash: 338ce030cb37a6cbd4a1f63c33dc6866bef93c24
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何使用 Microsoft 365 商业版删除你的用户在其设备或 Windows 电脑上拥有的公司数据。
+ms.openlocfilehash: 81b6e16f3824863fcc87003cf9d07ad33e5f2873
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064888"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417348"
 ---
 # <a name="remove-company-data-from-devices"></a>从设备中删除公司数据
 

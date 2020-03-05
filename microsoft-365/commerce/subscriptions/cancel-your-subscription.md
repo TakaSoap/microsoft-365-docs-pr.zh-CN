@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Office 365 for business 或 Microsoft 365 试用版或付费订阅。
-ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
+ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354593"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42415647"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -88,6 +88,19 @@ ms.locfileid: "42354593"
 
 ::: moniker-end
 
+## <a name="what-happens-when-you-cancel-a-subscription"></a>取消订阅时会发生什么情况
+
+如果在您的期限结束之前取消订阅，订阅将直接移到禁用状态。 在大多数国家和地区，大多数订阅的禁用状态会持续 90 天。 订阅处于禁用状态时，管理员仍然可以访问和备份其组织的数据，但我们建议管理员在取消订阅之前[备份其数据](back-up-data-before-switching-plans.md)，尤其是在该订阅是其唯一订阅的情况下。 将会在取消订阅的 90 天之后、180 天之前删除遗留的任何数据。
+
+### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>取消订阅对你和你的用户的影响。
+  
+- **管理员访问**管理员仍可以登录并访问管理中心，并根据需要购买其他订阅。 作为全局或帐单管理员，你有90天的时间来[重新激活订阅](reactivate-your-subscription.md)的所有数据都完好无损。 
+    
+- **用户访问**你的用户将无法使用 OneDrive for business 等服务，也无法在团队网站上访问客户数据（如电子邮件或文档）。 Word 和 Excel 等 Office 应用程序最终将进入只读的缩减功能模式，并显示 [未经授权的产品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
+    
+ **重要提示** 如果要在典型的禁用期结束之前删除订阅数据，可以请求快速解除配置。 如果请求快速解除配置，则订阅数据将在取消后的 3 天内删除。 若要使用加速解除，请[致电支持人员](../../admin/contact-support-for-business-products.md)。
+  
+若要了解详细信息，请参阅我的[订阅结束后我的数据和访问会发生什么？](what-if-my-subscription-expires.md)
 
 ## <a name="other-steps-you-might-have-to-take"></a>您可能需要执行的其他步骤
 
@@ -132,5 +145,3 @@ ms.locfileid: "42354593"
 [续订订阅](renew-your-subscription.md)
 
 [重新激活订阅](reactivate-your-subscription.md)
-
-[切换到其他计划或订阅](switch-to-a-different-plan.md)

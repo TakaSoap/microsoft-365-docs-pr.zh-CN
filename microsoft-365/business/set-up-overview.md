@@ -20,17 +20,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Microsoft 365 商业版的安装步骤概述。
-ms.openlocfilehash: 07cbd4fd187f78474783db848ac9b69068d2b44a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解 Microsoft 365 商业版的安装步骤、订阅、添加域和用户、设置安全策略等。
+ms.openlocfilehash: 75ef784a886de754e7550d9e86af1242209346dd
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595057"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417218"
 ---
 # <a name="overview-of-setup"></a>设置概述
 

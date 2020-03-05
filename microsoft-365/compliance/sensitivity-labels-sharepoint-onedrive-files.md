@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: 89925858ac749ac6f50b7a049a372cf2f7912698
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 0f7c2c59327874d279872d4fd9bb7d0b9d6eb863
+ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341239"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42410029"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
@@ -87,8 +87,6 @@ ms.locfileid: "42341239"
 - 不支持 Azure 信息保护文档跟踪网站。
 
 - Office 桌面应用程序和移动应用程序不支持共同创作。 相反，这些应用将继续以独占编辑模式打开文件。
-
-- 如果标签包括加密，Microsoft 云应用安全性无法读取 SharePoint 中文件的标签信息。
 
 - 如果将带标签的文档上载到 SharePoint，并使用服务主体名称中的帐户来应用加密，则无法在 web 上的 Office 中打开该文档。 示例方案包括 Microsoft 云应用安全和通过电子邮件发送给团队的文件。
 

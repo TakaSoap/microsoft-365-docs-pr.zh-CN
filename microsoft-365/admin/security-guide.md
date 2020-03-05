@@ -11,16 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom:
 - SMB_SuccessCenter
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
-description: 了解从安全威胁中保护小型企业的简单方法。
-ms.openlocfilehash: a3923731e93962d1976d0cd163db4f97a07aaed2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 了解你的业务面临的安全威胁以及你和你的员工可以保护你的数据、帐户和设备的简单方法。
+ms.openlocfilehash: 0997f6bab379ccc5ff68d5bf890419772fd4aaaf
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360773"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417278"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>适用于小型企业的安全信息图形
 
