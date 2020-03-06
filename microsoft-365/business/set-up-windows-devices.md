@@ -19,21 +19,22 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: '了解如何设置运行 Windows 10 Pro for Microsoft 365 商业用户的 Windows 设备。 '
-ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何设置运行 Windows 10 Pro for Microsoft 365 商业用户的 Windows 设备，从而实现集中管理和安全控制。
+ms.openlocfilehash: 62d909b1e5658131f9381d1a800a70fad6e16cab
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42090614"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550009"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 商业版用户设置 Windows 设备
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 商业用户设置 Windows 设备的先决条件
 
 在为 Microsoft 365 商业版用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版 1703（创意者更新）。Windows 10 专业版是部署 Windows 10 商业版的先决条件，Windows 10 商业版是一组补充 Windows 10 专业版的云服务和设备管理功能，可实现 Microsoft 365 商业版的集中管理和安全控制。
   
@@ -125,6 +126,6 @@ ms.locfileid: "42090614"
 
 若要设置移动设备，请参阅[为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。若要设置设备保护或应用保护策略，请参阅[管理 Microsoft 365 商业版](manage.md)。
   
-## <a name="see-also"></a>另请参阅
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>有关设置和使用 Microsoft 365 业务的详细信息
 
 [Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

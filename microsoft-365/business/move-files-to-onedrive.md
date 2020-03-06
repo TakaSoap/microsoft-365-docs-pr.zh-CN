@@ -17,17 +17,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: 了解如何将文件移动到 OneDrive。
-ms.openlocfilehash: 85ff7ad2ecab3646eeb196a380f85983b1403f7a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何通过几个简单的步骤将个人工作文件和敏感公司文件移动到 OneDrive for business。
+ms.openlocfilehash: 837ec8bb01ed78e7a13ee802afaf845c80544f5d
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065195"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550259"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>将文件移动到 OneDrive for Business
 
@@ -50,6 +51,6 @@ ms.locfileid: "42065195"
     
 若要转移用户个人资料和重要的文件，可使用第三方工具（例如 ForensiT）。还需上传 OneDrive for Business 中生成的文件。
   
-## <a name="see-also"></a>另请参阅
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>有关设置和使用 Microsoft 365 业务的详细信息
 
 [Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -19,18 +19,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: 了解可帮助安全访问移动设备上的 Office 应用的保护策略。
-ms.openlocfilehash: 39d28a3a78fb06d0020c484b1782b544f6a8c656
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解允许您管理用户如何从移动设备访问 Office 应用程序和工作文件的保护策略。
+ms.openlocfilehash: 21e83114664d06aaeb27b08d9f4e2153eea02030
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593813"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550309"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>管理用户访问移动设备上的 Office 文档的方式
 
@@ -42,7 +43,7 @@ ms.locfileid: "41593813"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |说明  <br/> |
+|设置  <br/> |说明  <br/> |
 |需要 PIN 或指纹才能访问 Office 应用  <br/> |如果**启用**此设置，用户必须提供另一种形式的身份验证，以及其用户名和密码，然后才能在其移动设备上使用 Office 应用。  <br/> |
 |登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |
 |要求用户在 Office 应用空闲以下时间后重新登录  <br/> |此设置确定用户在提示用户重新登录之前可以处于空闲状态的时间。  <br/> |

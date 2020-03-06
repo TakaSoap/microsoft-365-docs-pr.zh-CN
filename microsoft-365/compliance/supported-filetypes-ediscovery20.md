@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft 365 高级电子数据展示中支持的文件类型列表。 这包括高级电子数据展示中的 OCR 功能支持的图像文件类型的列表。
 ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597379"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543711"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
 

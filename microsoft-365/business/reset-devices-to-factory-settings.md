@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: '了解如何使用 Microsoft 365 商业版恢复 Windows 10 设备的出厂设置。 '
-ms.openlocfilehash: 4350b208341a51447153b415d2cb225697a11e1b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何使用 Microsoft 365 Business 出厂时重置 Windows 10 设备（您管理的设备），并在购买时将其恢复为原始设置。
+ms.openlocfilehash: bbdd5c4a4ba2d7deb11c4171db68bdb052546a17
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064824"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547783"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>将 Windows 10 设备重置为其出厂设置
 

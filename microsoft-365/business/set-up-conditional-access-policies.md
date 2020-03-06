@@ -18,17 +18,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何为 Microsoft 365 市场活动设置条件访问策略。
-ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何设置 Microsoft 365 活动的条件访问策略，以增加额外的安全性。
+ms.openlocfilehash: be3ca0da3d27e3ec49f1227e4482cfd7fcaae8cb
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064594"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550069"
 ---
 # <a name="set-up-conditional-access-policies"></a>设置条件访问策略
 

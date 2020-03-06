@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 description: 详细了解由世纪互联运营的 Office 365 的适用于 Android 的 Microsoft Office 应用，以及如何为中国的客户下载它。
 monikerRange: o365-21vianet
-ms.openlocfilehash: b9dbc09affeba6f1d3588ed3ab81bb4ba2e32f0a
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: 3ccf9d25d7b9ac6c036b83fdaf084a95c72b4d62
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410050"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547673"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>由世纪互联运营的适用于 Office 365 的适用于 Android 的 office 应用程序
 
-适用于 Android 的 Microsoft Office 应用将 Word、Excel 和 PowerPoint 移动应用组合到单个应用程序中，以供 Android 电话和平板电脑下载。 使用适用于 Android 的 Office 应用程序，您可以连接到 Office 365，就像使用 Word、Excel 和 PowerPoint 移动应用一样。 适用于 Android 的 Office 应用程序下载不会影响任何现有的 Word、Excel 和 PowerPoint 安装。
+适用于 Android 的 Microsoft Office 应用将 Word、Excel 和 PowerPoint 移动应用合并到一个可供 Android 电话下载的单个应用中。 使用适用于 Android 的 Office 应用程序，您可以连接到 Office 365，就像使用 Word、Excel 和 PowerPoint 移动应用一样。 适用于 Android 的 Office 应用程序下载不会影响任何现有的 Word、Excel 和 PowerPoint 安装。
 
 适用于 Android 的 office 相关功能的一些 Office 应用程序不适用于由世纪互联客户运营的 Office 365：
 
@@ -43,13 +43,17 @@ ms.locfileid: "42410050"
 
 ## <a name="download-the-office-app-for-android"></a>下载适用于 Android 的 Office 应用程序
 
-- 从以下任一商店下载适用于 Android 手机和平板电脑的 Office 应用：
-- Huawei
-- Xiaomi
-- Lenovo
-- Baidu
-- OppO
-- Wandujia
+从以下任何中国商店下载 Android 手机的 Office 应用程序：
+- [Baidu](https://shouji.baidu.com/software/26842919.html)
+- [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
+- [Huawei](https://appstore.huawei.com/app/C10888510)
+- [Lenovo](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
+- [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
+- [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
+- [wandoujia](https://www.wandoujia.com/apps/1502895)
+
+> [!NOTE]
+> 适用于 Android 的 Office 应用程序目前仅适用于电话。 将在以后添加对平板电脑的支持。 
 
 
 ## <a name="security-considerations"></a>安全考虑事项

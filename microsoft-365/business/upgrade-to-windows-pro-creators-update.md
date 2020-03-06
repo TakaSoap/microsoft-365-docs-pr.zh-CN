@@ -1,5 +1,7 @@
 ---
 title: 将 Windows 设备升级到 Windows 10 专业版
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: '了解如何将 Windows 设备升级到 Windows 10 专业版。 '
-ms.openlocfilehash: 3457b35c5f9e313e176664ca088e64ce5dd4f881
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+description: 探索将 Windows 设备升级到 Windows 10 专业版以利用更高级安全性和商业网络功能的方法。
+ms.openlocfilehash: 541169571fb9f58c7f75f610546ec250ffd40afb
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265850"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549929"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>将 Windows 设备升级到 Windows 10 专业版
 
@@ -56,6 +59,6 @@ ms.locfileid: "41265850"
   
 请参阅[为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)，以完成 Android 和 iOS 设备的设置。 
   
-## <a name="see-also"></a>另请参阅
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>有关设置和使用 Microsoft 365 业务的详细信息
 
 [Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

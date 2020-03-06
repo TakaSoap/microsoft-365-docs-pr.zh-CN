@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: 了解 Microsoft 365 商业版附带的安全功能。
-ms.openlocfilehash: e5f67d70c5a8f22e95b60a229d68ae12574d0036
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解 Microsoft 365 商业版随附的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
+ms.openlocfilehash: eb92131cc937875615342b2b0d39c78d51a8a99f
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064786"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550029"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
 
@@ -111,7 +112,7 @@ Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的
 您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将被添加到 Microsoft 365 Business 管理中心。
   
     
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能在所有市场中是否可用？
   

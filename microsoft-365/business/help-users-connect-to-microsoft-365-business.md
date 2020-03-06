@@ -1,5 +1,7 @@
 ---
 title: 帮助用户连接到 Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -18,18 +20,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: 了解在完成业务云套件安装程序后应执行的操作。
-ms.openlocfilehash: d19438d6e085ba27ec3fb0308005a9bf473383e1
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+description: 了解在完成企业云套件安装程序后以及你的默认设备策略已就绪并准备好应用的情况。
+ms.openlocfilehash: 7ec5a5e7e1f3fadbcdb8422ae041544436c185ed
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320180"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547683"
 ---
 # <a name="help-users-connect-to-microsoft-365-business"></a>帮助用户连接到 Microsoft 365 Business
 

@@ -22,23 +22,24 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: 了解有关 Microsoft 365 业务的详细信息。
-ms.openlocfilehash: bfda6801bee526084ad11ead819fcd04787d17ce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解 Microsoft 365 商业版，包括 Office 365 的订阅服务，以及针对网络威胁的业务的高级保护。
+ms.openlocfilehash: 508262daa9367ebd3b973a7a519fbb953d719fb1
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065635"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547843"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Microsoft 365 业务概述
 
 ## <a name="what-is-microsoft-365-business"></a>什么是 Microsoft 365 业务
 
-Microsoft 365 Business 是一款订阅服务，其中包括 Office 365 生产率工具和高级功能，以帮助保护您的业务不受威胁、保护您的数据和管理设备。
+Microsoft 365 Business 是一款订阅服务，其中包括 Office 365 生产力工具和高级功能，可帮助保护您的业务免受网络威胁、保护数据和管理设备。
 
 观看此视频，了解 Microsoft 365 商业版的快速概述。<br><br>
 

@@ -18,18 +18,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: 了解在用户设备丢失或被盗时可用于保护工作文件的设置。
-ms.openlocfilehash: 5f137354b51a0151e57e5e109b1ebbb043c68f60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解 Microsoft 365 企业版中提供的设置，以在用户设备丢失或被盗时保护工作文件。
+ms.openlocfilehash: 244e4773f1efa9548dd2126e03a007aefb840b40
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593548"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550159"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>在移动设备丢失或被盗时保护工作文件
 
@@ -41,7 +42,7 @@ ms.locfileid: "41593548"
   
 |||
 |:-----|:-----|
-|Setting  <br/> |说明  <br/> |
+|设置  <br/> |说明  <br/> |
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备未用于您在此处指定的天数，则将自动删除存储在该设备上的所有工作文件。  <br/> |
 |强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开**"，则工作文件的唯一可用保存位置是 OneDrive for business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。 即使设备丢失或被盗，也没有人能够读取您的公司数据。  <br/> |

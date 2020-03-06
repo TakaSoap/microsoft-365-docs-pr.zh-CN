@@ -20,16 +20,19 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何注册试用版 Office 365 for business 订阅。
-ms.openlocfilehash: 422957bc29c7f5b047665c9e9698e0d9ef47050a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d9944d01676573e08d52279d47cc61527e7d4862
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252484"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549789"
 ---
 # <a name="sign-up-for-an-office-365-trial-subscription"></a>注册 Office 365 试用订阅
 
 你可以免费注册试用版 Office 365 业务订阅。 你可以试用30天。
+
+> [!NOTE]
+> 注册试用版时，如果你的公司当前位于美国、日本、加拿大和澳大利亚，你将需要一个信用卡。 在免费试用期结束后，试用版订阅将自动转换为付费订阅。 在试用期结束前，将不会向你的信用卡收费。
 
 ## <a name="sign-up-for-an-office-365-business-premium-trial-subscription"></a>注册 Office 365 商业高级版试用版订阅
 
@@ -42,6 +45,10 @@ ms.locfileid: "42252484"
 4. 注册过程可能需要几分钟时间才能完成。 完成后，你将获得有关如何开始使用你的订阅的详细信息。
 
 有关设置帐户的详细信息，请参阅[设置 Office 365 for business](../admin/setup/setup.md)。
+
+## <a name="cancel-my-trial-subscription"></a>取消我的试用订阅
+
+如果您决定在免费试用期结束之前取消试用，请转到 Microsoft 管理中心，并在付款和帐单区域中关闭自动续订选项。 试用期将在你的月结束时自动过期，并且你的信用卡将不会收费。
 
 ## <a name="see-also"></a>另请参阅
 

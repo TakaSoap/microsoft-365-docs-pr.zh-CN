@@ -16,20 +16,21 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: 设置合规性功能，以防止数据丢失并为敏感数据添加标签。
-ms.openlocfilehash: d569ff8d84faf82881035f0ed54e5d175605776f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 设置合规性功能以防止数据丢失，并帮助保护您的客户和客户的敏感信息。
+ms.openlocfilehash: 4c8efc4ca96f2db7bc4d1592ad3fdc85dfb6b3b5
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064689"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550049"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
-你的 Microsoft 365 业务提供了保护数据和设备的功能，并帮助您保护您的用户和客户的敏感信息。
+您的 Microsoft 365 业务提供了保护数据和设备的功能，帮助您保护您的客户和客户的敏感信息。
 
 ## <a name="set-up-dlp-features"></a>设置 DLP 功能
 

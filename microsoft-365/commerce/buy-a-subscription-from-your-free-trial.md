@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: 购买 Office 365 for business 订阅。 您可以购买您尝试的相同类型的订阅，也可以购买不同的计划。
-ms.openlocfilehash: fcd38783082f9b86c4e1b99b1eec06d948e8e4b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238389"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549799"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>了解如何购买 Office 365 商业版的试用版
 
@@ -41,14 +41,14 @@ ms.locfileid: "42238389"
 - [购买与试用版相同的计划](#buy-the-same-plan-as-your-trial)
 - [购买与试用版不同的计划](#buy-a-different-plan-than-your-trial)
 
+> [!NOTE]
+> 在免费试用期结束后，试用版订阅将自动转换为付费订阅。 付费订阅将默认为当前注册的计划。 您仍可通过执行 "购买其他计划中的步骤，[而不是您的试用版](#buy-a-different-plan-than-your-trial)" 一节中的步骤来购买不同的计划。
+
 ## <a name="buy-the-same-plan-as-your-trial"></a>购买与试用版相同的计划
 
 非常简单，并且购买与试用版相同类型的计划时，不必担心丢失数据、帐户和配置。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
@@ -94,7 +94,7 @@ ms.locfileid: "42238389"
 
 ## <a name="buy-a-different-plan-than-your-trial"></a>购买与试用版不同的计划
 
-如果购买的订阅类型与试用版不同，则需要从试用计划中向新计划重新分配用户许可证（在试用计划过期后的 90 天宽限期结束之前），以便保留你的数据、帐户和配置。
+如果购买了与试用版不同的订阅类型，则必须将您的用户许可证从试用计划重新分配给新计划（在90天的宽限期结束后，才会在试用计划到期后结束），以便保留数据、帐户和配置。
 
 ::: moniker range="o365-worldwide"
 
