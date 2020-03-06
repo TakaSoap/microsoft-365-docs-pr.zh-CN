@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 信息保护框架中的灵敏度标签，对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受影响。 这些标签可应用包含加密视觉标记（如页脚和水印）的保护设置。
-ms.openlocfilehash: 92bfb768cf044b6a4837e5dab6936c2d77424a25
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 3b8e5e39ef6e2cb2e452fbf1764d53bd51ad24d8
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106825"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543132"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -146,9 +146,9 @@ ms.locfileid: "42106825"
 
 - **选择可查看标签的用户和组。** 可以将标签发布到任意启用电子邮件的安全组、Office 365 组或动态通讯组。
 
-- **将默认标签**应用于标签策略中包含的用户和组创建的所有新文档和电子邮件。 考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 
+- **将默认标签**应用于标签策略中包含的用户和组创建的所有新文档和电子邮件。 如果已[为 Microsoft Teams、Office 365 组和 SharePoint 网站启用了灵敏度标签](sensitivity-labels-teams-groups-sites.md)，则此选项也适用于容器。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 
 
-- **要求提供更改标签的理由。** 如果内容标记为“机密”，并且用户希望删除该标签或将其替换为较低的分类，例如名为“公共”的标签，则可以要求用户在执行此操作时提供理由。 目前，未将理由原因发送到[标签分析](label-analytics.md)供管理员查看。 但是，[Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)将此信息发送到 [Azure 信息保护分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
+- **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 目前，未将理由原因发送到[标签分析](label-analytics.md)供管理员查看。 但是，[Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)将此信息发送到 [Azure 信息保护分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
     ![提示用户输入理由的页面](../media/Sensitivity-label-justification-required.png)
 

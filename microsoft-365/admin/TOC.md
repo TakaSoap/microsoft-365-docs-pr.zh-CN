@@ -130,6 +130,7 @@
 ## 由世纪互联运营的 Office 365
 ### [关于由世纪互联运营的 Office 365](services-in-china/services-in-china.md)
 ### [购买或试用订阅](services-in-china/buy-or-try-subscriptions.md)
+### [下载由世纪互联运营的 Android 版 Office 365 的 Office 应用](services-in-china/download-office-app-for-Android.md)
 ### [下载由世纪互联运营的 iOS 版 Office 365 的 Office 应用](services-in-china/download-office-app-for-iOS.md)
 ### [查看帐单或获取发票](services-in-china/view-your-bill-or-get-a-fapiao.md)
 ### [申请发票](services-in-china/apply-for-a-fapiao.md)

@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
 ms.openlocfilehash: 6c461cd049cb89a2de0dbfc4cb1a5f8ea28c3ea6
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106855"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543118"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
