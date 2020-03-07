@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
-ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
+ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42370481"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551819"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
 Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-compliance.md)功能可让组织深入了解 Microsoft 365 众多服务中的不同类型审核活动。 现在通过发布 Microsoft 365 高级审核，我们增加了新的审核功能，可帮助你的组织进行法庭与合规调查。
 
 > [!NOTE]
-> 高级审核适用于具有 Office 365 或 Microsoft 365 企业版 E5 订阅的组织。 另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和访问关键事件进行调查就是这种情况），可将 Microsoft 365 E5 合规加载项订阅分配至用户。
+> 高级审核适用于具有 Office 365 E5 或 Microsoft 365 企业版 E5 订阅的组织。 另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和访问关键事件进行调查就是这种情况），可将 Microsoft 365 E5 合规加载项许可证分配至用户。
 
 本文提供了这些高级审核功能的概览信息。
 

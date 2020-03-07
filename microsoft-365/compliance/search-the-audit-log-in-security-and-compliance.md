@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: 2c69cc6f7e5b332819061e3bf92b9ab02a1dc8db
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277219"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551820"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -79,14 +79,14 @@ ms.locfileid: "42277219"
   > [!IMPORTANT]
   > 如果在安全与合规中心中的“**权限**”页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索 Office 365 审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
 
-- 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的 Office 365 审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 或 Microsoft 365 订阅，具体而言是分配给特定用户的许可证类型。
+- 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的 Office 365 审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 或 Microsoft 365 企业版订阅，具体而言是分配给特定用户的许可证类型。
 
-  - **Office 365 E3 和 Microsoft 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
+  - **Office 365 E3 或 Microsoft 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
 
     > [!NOTE]
     > 即使启用了默认启用的邮箱审核，也可能会发现无法在安全与合规中心的审核日志搜索中找到某些用户的邮箱审核事件，也无法通过 Office 365 管理活动 API 找到这些事件。 有关详细信息，请参阅[有关邮箱审核日志记录的详细信息](enable-mailbox-auditing.md#more-information)。
 
-  - **Office 365 或 Microsoft 365 E5 或拥有 Microsoft 365 E5 合规版附加许可证的用户：** Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
+  - **Office 365 E5 或 Microsoft 365 E5 或拥有 Microsoft 365 E5 合规版附加许可证的用户：** Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
     > [!NOTE]
     > 如果组织参与了审计记录保留一年的个人预览版计划，则在正式发布日期之前产生的审核记录的保留期限不会被重置。
@@ -728,10 +728,10 @@ ms.locfileid: "42277219"
 |已添加连接器|ConnectorAdded|用户将连接器添加到频道。|
 |已添加成员|MemberAdded|团队所有者将成员添加到团队、频道或群组聊天中。|
 |已添加选项卡|TabAdded|用户将选项卡添加到频道。|
-|已更改的频道设置|ChannelSettingChanged|团队成员执行以下活动时将记录 ChannelSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 更改团队频道的名称（“**频道名称**”）。 <br/><br/>• 更改团队频道的说明（“**频道说明**”）。|
-|已更改组织设置|TeamsTenantSettingChanged|当全局管理员（使用 Microsoft 365 管理中心）执行以下活动时，将记录 TeamsTenantSettingChanged 操作；请注意，这些活动会影响整个组织的 Microsoft Teams 设置。 有关详细信息，请参阅 [Microsoft Teams 的管理员设置](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 为组织启用或禁用 Microsoft Teams（“**Microsoft Teams**”）。 <br/><br/>• 为组织启用或禁用 Microsoft Teams 和 Skype for Business 之间的互操作性（“**Skype for Business 互操作性**”）。 <br/><br/>• 在 Microsoft Teams 客户端中启用或禁用组织结构图视图（“组织结构图视图 **”）。<br/><br/>• 允许或禁止团队成员安排私人会议（“** 私人会议安排 **”）。<br/><br/>• 允许或禁止团队成员安排频道会议（“频道会议安排**”）。 <br/><br/>• 启用或禁用 Teams 会议中的视频呼叫（“**Skype 会议视频通话”）。<br/><br/>• 为组织启用或禁用 Microsoft Teams 聚会中的屏幕共享（“** Skype 会议屏幕共享 **”）。<br/><br/>• 允许或禁止将动画图像（称为 Giphys）添加到 Teams 对话（“动画图像**”）。 <br/><br/>• 更改组织的内容评级设置（“**内容评级**”）。 内容评级限制了可在对话中显示的动画图像的类型。 <br/><br/>• 允许或禁止团队成员将来自 Internet 的可自定义图像（称为自定义 Meme）添加到团队对话（“来自 Internet 的可自定义图像 **”）。<br/><br/>• 允许或禁止团队成员将可编辑图像（称为贴纸）添加到团队对话（“** 可编辑图像 **”）。<br/><br/>• 允许或禁止团队成员在 Microsoft Teams 聊天和频道中使用机器人（“组织范围内的机器人**”）。 <br/><br/>• 为 Microsoft Teams 启用特定的机器人。 这不包括 T-Bot，即组织启用机器人时可用的 Teams 帮助机器人（“**单个机器人**”）。 <br/><br/>• 允许或禁止团队成员添加扩展或选项卡（“**扩展或选项卡**”）。 <br/><br/>• 启用或禁用 Microsoft Teams 专有自动程序旁加载（“**自动程序旁加载**”）。 <br/><br/>• 允许或禁止用户向 Microsoft Teams 频道发送电子邮件（“**频道电子邮件**”）。|
+|已更改的频道设置|ChannelSettingChanged|团队成员执行以下活动时将记录 ChannelSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 更改团队频道的名称（“**频道名称**”）。 <br/><br/>* 更改团队频道的说明（“**频道说明**”）。|
+|已更改组织设置|TeamsTenantSettingChanged|当全局管理员（使用 Microsoft 365 管理中心）执行以下活动时，将记录 TeamsTenantSettingChanged 操作；请注意，这些活动会影响整个组织的 Microsoft Teams 设置。 有关详细信息，请参阅 [Microsoft Teams 的管理员设置](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 为组织启用或禁用 Microsoft Teams（“**Microsoft Teams**”）。 <br/><br/>* 为组织启用或禁用 Microsoft Teams 和 Skype for Business 之间的互操作性（“**Skype for Business 互操作性**”）。 <br/><br/>* 在 Microsoft Teams 客户端中启用或禁用组织结构图视图（“组织结构图视图**”）。<br/><br/>* 允许或禁止团队成员安排私人会议（“**私人会议安排**”）。<br/><br/>* 允许或禁止团队成员安排频道会议（“频道会议安排**”）。<br/><br/>* 启用或禁用 Teams 会议中的视频呼叫（“Skype 会议视频通话”）。<br/><br/>* 启用或禁用在 Microsoft Teams 聚会中屏幕共享（“**Skype 会议屏幕共享**”）。 <br/><br/>允许或禁止将动画图像（称为 Giphy）添加到 Teams 对话（动画图像 **）。<br/><br/>* 更改组织的内容评级设置（**内容评级**）。内容评级限制了可在对话中显示的动画图像的类型。<br/><br/>* 允许或禁止团队成员将来自 Internet 的可自定义图像（称为自定义 Meme）添加到团队对话（来自 Internet 的可自定义图像 **）。<br/><br/>* 允许或禁止团队成员将可编辑图像（称为贴纸）添加到团队对话（**可编辑图像**）。<br/><br/>* 允许或禁止团队成员在 Microsoft Teams 使用机器人（组织范围内的机器人 **）。<br/><br/>* 为 Microsoft Teams 启用特定的机器人；这不包括 T-Bot，即组织启用机器人时可用的 Teams 帮助机器人（**单个机器人**）。<br/><br/>* 允许或禁止团队成员添加扩展或选项卡（**扩展或选项卡**）。 <br/><br/>* 启用或禁用 Microsoft Teams 专有自动程序旁加载（“**自动程序旁加载**”）。 <br/><br/>* 允许或禁止用户向 Microsoft Teams 频道发送电子邮件（“**频道电子邮件**”）。|
 |已更改团队成员的角色|MemberRoleChanged|团队所有者更改团队中成员的角色。 以下值表示分配给用户的角色类型。 <br/><br/> **1** - 表示“所有者”角色。<br/>**2** - 表示“成员”角色。 <br/>**3** - 表示“来宾”角色。 <br/><br/> 成员属性还包括组织的名称和成员的电子邮件地址。|
-|已更改的团队设置|TeamSettingChanged|团队所有者执行以下活动时将记录 TeamSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 更改团队的访问权限类型。 可将团队设置为“专用​​”或“公用”（“**团队访问权限类型**”）。 当团队为专用（默认设置）时，用户只能通过邀请访问该团队。 当团队为公用时，任何人都可以发现它。 <br/><br/>• 更改团队的信息分类（“**团队分类**”）。 <br/> 例如，可将团队数据分类为高业务影响、中等业务影响或低业务影响。<br/><br/>• 更改团队的名称（“**团队名称**”）。 <br/><br/>• 更改团队说明（“团队说明”**）。 <br/><br/>• 更改任何团队设置。 团队所有者可通过右键单击某个团队，单击“**管理团队**”，然后单击“**设置**”选项卡在 Teams 客户端中访问这些设置。对于这些活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的名称。|
+|已更改的团队设置|TeamSettingChanged|团队所有者执行以下活动时将记录 TeamSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 更改团队的访问权限类型。 可将团队设置为“专用​​”或“公用”（“**团队访问权限类型**”）。 当团队为专用（默认设置）时，用户只能通过邀请访问该团队。 当团队为公用时，任何人都可以发现它。 <br/><br/>* 更改团队的信息分类（“**团队分类**”）。 <br/> 例如，可将团队数据分类为高业务影响、中等业务影响或低业务影响。<br/><br/>* 更改团队的名称（“**团队名称**”）。 <br/><br/>* 更改团队说明（团队说明**）。 <br/><br/>* 更改任何团队设置。 团队所有者可通过右键单击某个团队，单击“**管理团队**”，然后单击“**设置**”选项卡在 Teams 客户端中访问这些设置。对于这些活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的名称。|
 |已创建团队|TeamCreated|用户创建团队。|
 |已删除频道|ChannelDeleted|用户从团队中删除频道。|
 |已删除团队|TeamDeleted|团队所有者删除了团队。|
@@ -902,11 +902,11 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **审核记录将保留多长时间？**
 
-如前文所述，审核记录的保留期取决于组织的 Office 365 或 Microsoft 订阅。
+如前文所述，审核记录的保留期取决于组织的 Office 365 或 Microsoft 365 企业版订阅。
 
-  - **Office 365 E3 和 Microsoft 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
+  - **Office 365 E3 和 icrosoft 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
 
-  - **Office 365 或 Microsoft 365 E5 或拥有 Microsoft 365 E5 合规版附加许可证的用户：** Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
+  - **Office 365 E5 和 icrosoft 365 E5 或拥有 Microsoft 365 E5 合规版附加许可证的用户：** Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
 另请注意，审核记录的保留期限基于每位用户许可。 例如，如果为组织内的用户分配了 Office 365 E3 许可证，则该用户执行的活动的审核记录将保留 90 天。
 
