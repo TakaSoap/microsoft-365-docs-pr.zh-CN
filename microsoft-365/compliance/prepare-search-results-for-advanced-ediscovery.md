@@ -17,17 +17,17 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何在 Office 365 的 Security & 合规性中心中准备内容搜索结果，以使用高级电子数据展示工具进行进一步分析。
-ms.openlocfilehash: 3ba115cf45aa3be7b9cb43b3a261687e073edba2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 01a09da78198c31ff88b0e539ae9b149b2fbdd02
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071003"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557852"
 ---
-# <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>为 Office 365 高级电子数据展示准备搜索结果
+# <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>准备高级电子数据展示的搜索结果（经典）
 
 > [!IMPORTANT]
-> 当我们继续对较新版本的高级电子数据展示进行投资时，我们将宣布停用 Office 365 高级电子数据展示（也称为*高级电子数据展示 v1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
+> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布退出 Office 365 高级电子数据展示，也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0 1.0*。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
 
 成功运行与安全 & 合规中心中的电子数据展示事例关联的搜索后，您可以使用 Office 365 高级电子数据展示为进一步分析准备搜索结果，这样您可以分析大型的非结构化数据集，并减少与合法事例相关的数据量。 高级电子数据展示功能包括：
   
@@ -49,7 +49,7 @@ ms.locfileid: "42071003"
     
 - **导出数据以供审阅应用程序**-在完成分析并减小数据集后，您可以从高级电子数据展示和 Office 365 导出数据。 导出包包含一个 CSV 文件，其中包含导出的内容和分析元数据中的属性。 然后，可以将此导出包导入到电子数据展示审阅应用程序中。 
     
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要使用高级电子数据展示分析用户的数据，必须为用户（数据管理员）分配 Office 365 E5 许可证。 或者，可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。 分配给案例并使用高级电子数据展示分析数据的管理员和合规性监察官不需要 E5 许可证。 
     
@@ -110,7 +110,7 @@ ms.locfileid: "42071003"
     
 ## <a name="next-steps"></a>后续步骤
 
-将电子数据展示搜索的结果添加到事例之后，下一步是使用高级电子数据展示工具来分析数据，并确定对特定法律案例做出响应的内容。 有关使用高级电子数据展示的信息，请参阅[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)。
+将电子数据展示搜索的结果添加到事例之后，下一步是使用高级电子数据展示工具来分析数据，并确定对特定法律案例做出响应的内容。 有关使用高级电子数据展示的信息，请参阅[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)。
   
 ## <a name="more-information"></a>更多信息
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 了解 Microsoft 365 商业版如何帮助您使用常规数据保护法规（GDPR）过程。
-ms.openlocfilehash: 1d3b3485625996c0840a630c1b903c866bd01dbe
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a2df3fb52536cd2caca247332bc1c54fbdbe668
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252427"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556960"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR 简化：适用于小型企业的指南
 
@@ -157,7 +157,8 @@ Microsoft 365 商业版可通过以下方式帮助您使用 GDPR 过程：
   
 ## <a name="additional-resources"></a>其他资源
 
-[Microsoft 信任中心 GDPR 概述](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft 信任中心 GDPR 概述](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)
   
 官方 Microsoft 博客： [microsoft 对 GDPR 的承诺](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
   

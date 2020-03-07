@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: '了解您可以在 Office 365 高级电子数据展示中的事例级别定义的标签、跨模块和租户设置。  '
-ms.openlocfilehash: 2d482c7409c546042488ba4f0c7cc74571152e86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f206feaa48f13db48552fb7d1be1445609edeae
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595369"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556940"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中定义大小写和租户设置
+# <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>在高级电子数据展示中定义大小写和租户设置（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -90,7 +90,7 @@ ms.locfileid: "41595369"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [使用实用程序](use-advanced-ediscovery-utilities.md)
 

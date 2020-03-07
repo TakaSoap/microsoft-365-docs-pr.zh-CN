@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: 了解如何运行 Office 365 高级电子数据展示的快速分析模式
-ms.openlocfilehash: 49e8f04b893f0a15563cf091c728352a97c4141f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d4b8e1fa5e8251f5ede2d9a3003c756decac3b45
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080723"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557640"
 ---
-# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中使用快速分析
+# <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>在高级电子数据展示中使用快速分析（经典） 
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -104,7 +104,7 @@ ms.locfileid: "42080723"
     
   - 若要导出添加到现有事例中的新文件的结果，请继续使用当前批处理。 若要在批处理中创建会话，请选择同一批次号码并单击 "**创建导出会话**" 可以使用此选项以增量方式导出与上一批次相同的参数。 
     
-  - 若要导出到新批次， **** ![请单击 "](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击“确定”。
+  - 若要导出到新批次， **** ![请单击 "](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击 **“确定”**。
     
   - 若要编辑批次名称或说明，请在 "**导出批次**" **** ![中选择名称](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，单击 "编辑编辑图标"，然后修改字段。
     
@@ -132,5 +132,5 @@ ms.locfileid: "42080723"
 ## <a name="see-also"></a>另请参阅
 <a name="BK_AdvancedSettings"> </a>
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
 

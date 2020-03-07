@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '查看为 Office 365 高级电子数据展示中的分析过程设置选项的步骤，包括临近重复项、电子邮件线索和主题。  '
-ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8897099d7531b48f7c6618c106eeb6f051dac546
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081150"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557782"
 ---
-# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析选项
+# <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>在高级电子数据展示中设置分析选项（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -78,7 +78,7 @@ ms.locfileid: "42081150"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [了解文档相似性](understand-document-similarity-in-advanced-ediscovery.md)
   

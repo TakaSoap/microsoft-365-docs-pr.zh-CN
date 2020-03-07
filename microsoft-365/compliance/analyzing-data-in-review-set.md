@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fbc2ad99433e2bf296e2891b6f3e85e22b6af6df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0f9cb386ce57d6581ade5caa05e029511100d9b3
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079929"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556780"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>在高级电子数据展示中分析评审集中的数据
 
@@ -57,12 +57,18 @@ ms.locfileid: "42079929"
 
 3. 单击 "**查看报告**"。
 
-此报告包含来自分析的四个组件：
+此报告包含来自分析的七个组件：
 
-- **细目**-在审阅集中发现了多少封电子邮件、附件和松散文档。
+- **目标填充：** 在审阅集中找到的电子邮件、附件和松散文档的数量。
 
-- **文档（不包括附件）** -对多个松散文档进行透视、在数据透视的重复的情况下是唯一的，或者是另一个文档的完全相同。
+- **文档（不包括附件）：** 要进行透视的松散文档的数量、数据透视表的重复的唯一性或另一个文档的完全相同的数量。
 
-- **电子**邮件-有多少封电子邮件是 inclusives、包含的副本、包含的 minuses 或以上都不是。
+- **电子邮件：** Inclusives 的电子邮件数、包含的副本、包含的 minuses 或以上任何内容。
 
-- **附件**-审阅集中另一个电子邮件附件的电子邮件附件数是唯一的或重复的。
+- **附件：** 审阅集中其他电子邮件附件的唯一或重复的电子邮件附件数。
+
+- **按类型的文件数：** 由文件扩展名标识的文件数。
+
+- **按源的文档：** 按其原始数据源的内容摘要。
+
+- **按进程聚合的文档：** 按评审过程集的内容摘要。 

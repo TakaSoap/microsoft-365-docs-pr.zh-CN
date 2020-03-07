@@ -1,7 +1,7 @@
 ---
 title: Microsoft 安全门户和管理中心
 description: 查找 Microsoft 管理中心或门户，以管理与 Microsoft 365 安全相关的各种服务
-keywords: security、门户、Microsoft 365、M365、security center、administration center、URL、link、MTP、Azure ATP、Office 365 ATP、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、OATP、AATP
+keywords: security、门户、Microsoft 365、M365、security center、administration center、URL、link、MTP、Microsoft Defender ATP、Microsoft Defender Security Center、Azure ATP、Office 365 ATP、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、OATP、AATP、Cloud App Security、Azure AD、security & 合规中心
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24bfd07b4b7baf9082ef99691fb1048e1f0b655e
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 98bfa8da792bfc5b75d1a2532492c2de6071f1b1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42336909"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558233"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全门户和管理中心
-虽然[Microsoft 365 安全中心](overview-security-center.md)是用于监视和管理您的标识、数据、设备、应用程序的安全的新家，但您需要访问各种门户以实现某些特定的任务。
+虽然[Microsoft 365 安全中心](overview-security-center.md)是用于监视和管理您的标识、数据、设备和应用程序的安全的新家，但您需要访问各种门户以实现某些特定的任务。
 
 > [!TIP] 
 > 若要从 Microsoft 365 安全中心访问各种相关门户，请在导航窗格中选择 "**更多资源**"。

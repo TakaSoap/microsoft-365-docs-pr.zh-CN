@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: '了解使用 office 365 高级电子数据展示为分析准备 Office 365 数据的大小写文件的指南。  '
-ms.openlocfilehash: 779f9ae4f93933063139b2d7d65deb2500b263e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eb608eeac33e0d5d06dce9d0c35cd86f4e0bc280
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597579"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557812"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中运行流程模块
+# <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>在高级电子数据展示中运行流程模块（经典）
 
 在**准备** \> **过程**中，将事例文件加载到高级电子数据展示中。 
   
@@ -74,7 +74,7 @@ ms.locfileid: "41597579"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [运行进程模块并加载数据](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

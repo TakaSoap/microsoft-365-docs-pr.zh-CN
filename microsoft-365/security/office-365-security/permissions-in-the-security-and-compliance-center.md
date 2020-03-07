@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以了解 Office 365 安全 & 合规性中心中提供的权限。
-ms.openlocfilehash: 2676115e9675bbfe184b4e0fbe43bdc03689c4d9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 28221d27231621149520ab1746fb084d0e072bf5
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088285"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558223"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 安全与合规中心的权限
 
@@ -56,13 +56,13 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 |:-----|:-----|:-----|
 |**合规性管理员**<sup>1</sup>|成员可以管理设备管理、数据丢失防护、报告和保留的设置。|案例管理 <br/><br/> 合规性管理员 <br/><br/> 合规性搜索 <br/><br/> DLP 合规性管理 <br/><br/> 设备管理 <br/><br/> 处置管理 <br/><br/> Hold <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> 组织配置 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看保留管理 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看收件人 <br/><br/> 仅查看记录管理|
 |**合规性数据管理员**|成员可以管理设备管理、数据保护、数据丢失防护、报告和保留的设置。|合规性管理员 <br/><br/> 合规性搜索 <br/><br/> DLP 合规性管理 <br/><br/> 设备管理 <br/><br/> 处置管理 <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> 组织配置 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 敏感度标签管理员 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看收件人 <br/><br/> 仅查看记录管理 <br/><br/> 仅查看保留管理|
-|**数据调查人员**|成员可以对邮箱、SharePoint 网站和 OneDrive 帐户执行搜索。|通信 <br/><br/> 合规性搜索 <br/><br/> Custodian <br/><br/> 数据调查管理 <br/><br/> 导出<br/><br/> 预览 <br/><br/> RMS 解密 <br/><br/> 审阅<br/><br/> 搜索和清除|
-|**电子数据展示管理员**|成员可以执行搜索并将邮箱、SharePoint Online 网站和 OneDrive for Business 位置置于保留状态。 成员还可以创建和管理电子数据展示事例，在案例中添加和删除成员，创建和编辑与事例关联的内容搜索，以及 Office 365 高级电子数据展示中的访问大小写数据。 <br/><br/> 电子数据展示管理员是电子数据展示管理员角色组的成员，该成员已分配有其他权限。 除了电子数据展示管理器可以执行的任务外，电子数据展示管理员还可以执行以下操作： <br/>•查看组织中的所有电子数据展示案例。 <br/>•在将自己添加为事例的成员之后管理任何电子数据展示事例。 <br/><br/> 电子数据展示管理器和电子数据展示管理员的主要区别在于，电子数据展示管理员可以访问安全 & 合规中心中的 "**电子数据展示事例**" 页面上列出的所有事例。 电子数据展示管理器只能访问他们创建的案例或其成员的情况。 有关使用户成为电子数据展示管理员的详细信息，请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](../../compliance/assign-ediscovery-permissions.md)。|案例管理 <br/><br/> 通信 <br/><br/> 合规性搜索 <br/><br/> Custodian <br/><br/> 导出 <br/><br/> Hold <br/><br/> 预览 <br/><br/> RMS 解密 <br/><br/> 审阅|
+|**数据调查人员**|成员可以对邮箱、SharePoint 网站和 OneDrive 帐户执行搜索。|通信 <br/><br/> 合规性搜索 <br/><br/> Custodian <br/><br/> 数据调查管理 <br/><br/> 导出<br/><br/> 预览 <br/><br/> RMS 解密 <br/><br/> Review<br/><br/> 搜索和清除|
+|**电子数据展示管理员**|成员可以执行搜索并将邮箱、SharePoint Online 网站和 OneDrive for Business 位置置于保留状态。 成员还可以创建和管理电子数据展示事例，在案例中添加和删除成员，创建和编辑与事例关联的内容搜索，以及 Office 365 高级电子数据展示中的访问大小写数据。 <br/><br/> 电子数据展示管理员是电子数据展示管理员角色组的成员，该成员已分配有其他权限。 除了电子数据展示管理器可以执行的任务外，电子数据展示管理员还可以执行以下操作： <br/>•查看组织中的所有电子数据展示案例。 <br/>•在将自己添加为事例的成员之后管理任何电子数据展示事例。 <br/><br/> 电子数据展示管理器和电子数据展示管理员的主要区别在于，电子数据展示管理员可以访问安全 & 合规中心中的 "**电子数据展示事例**" 页面上列出的所有事例。 电子数据展示管理器只能访问他们创建的案例或其成员的情况。 有关使用户成为电子数据展示管理员的详细信息，请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](../../compliance/assign-ediscovery-permissions.md)。|案例管理 <br/><br/> 通信 <br/><br/> 合规性搜索 <br/><br/> Custodian <br/><br/> 导出 <br/><br/> Hold <br/><br/> 预览 <br/><br/> RMS 解密 <br/><br/> Review|
 |**邮件流管理员**|成员可以监视和查看安全 & 合规性中心中的邮件流见解和报告。 全局管理员可以向此组添加普通用户，但是，如果该用户不是 Exchange 管理员组的成员，则该用户将无法访问 Exchange 管理员相关的任务。|仅查看收件人|
 |**组织管理**<sup>1</sup>|成员可以控制访问安全 & 合规性中心中的功能的权限，还可以管理设备管理、数据丢失防护、报告和保留的设置。 <br/><br/> 请注意，若要使非全局管理员的用户能够查看由 MDM for Office 365 管理的设备的列表，并对这些设备执行操作（例如，从 MDM for Office 365 中注销设备），则该用户必须是 Exchange 管理员。 <br/><br/> Office 365 全局管理员将自动添加为此角色组的成员。|审核日志 <br/><br/> 案例管理 <br/><br/> 合规性管理员 <br/><br/> 合规性搜索 <br/><br/> DLP 合规性管理 <br/><br/> 设备管理 <br/><br/> 处置管理 <br/><br/> Hold <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> 组织配置 <br/><br/> Quarantine <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 角色管理 <br/><br/> 搜索和清除 <br/><br/> 安全管理员 <br/><br/> 安全读取者 <br/><br/> 敏感度标签管理员 <br/><br/> 服务保证视图 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看收件人 <br/><br/> 仅查看记录管理 <br/><br/> 仅查看保留管理|
 |**隔离管理员**|成员可以访问所有隔离操作。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)|Quarantine|
 |**记录管理**|成员可以管理和处置记录内容。|审核日志 <br/><br/> RecordManagement <br/><br/> 保留管理|
-|**Reviewer**|成员只能查看 Security & 合规性中心中 "电子数据展示事例" 页上的事例列表。 他们无法创建、打开或管理电子数据展示事例。 此角色组的主要用途是允许成员在[Office 365 高级电子数据展示](../../compliance/office-365-advanced-ediscovery.md)（也称为*高级电子数据展示 v1*）中查看和访问事例数据。 <br/><br/> 此角色组中与电子数据展示相关的权限最具限制性。<br/><br/>**注意：** 目前，作为审阅者角色组成员的用户无法在 Microsoft 365 （也称为*高级电子数据展示 v2*）中访问[高级电子数据展示中](../../compliance/overview-ediscovery-20.md)的数据。 若要在高级电子数据展示 v2 中向事例添加成员，以便他们能够查看事例数据，用户必须是电子数据展示管理器角色组的成员。|审阅|
+|**Reviewer**|成员只能查看 Security & 合规性中心中 "电子数据展示事例" 页上的事例列表。 他们无法创建、打开或管理电子数据展示事例。 此角色组的主要用途是允许成员在[高级电子数据展示（经典）](../../compliance/office-365-advanced-ediscovery.md) （也称为*高级电子数据展示 v1*）中查看和访问事例数据。 <br/><br/> 此角色组中与电子数据展示相关的权限最具限制性。<br/><br/>**注意：** 目前，作为审阅者角色组成员的用户无法在 Microsoft 365 （也称为*高级电子数据展示 v2*）中访问[高级电子数据展示中](../../compliance/overview-ediscovery-20.md)的数据。 若要在高级电子数据展示 v2 中向事例添加成员，以便他们能够查看事例数据，用户必须是电子数据展示管理器角色组的成员。|Review|
 |**安全管理员**|此角色组的成员可能包括跨服务管理员以及外部合作伙伴组和 Microsoft 支持。 默认情况下，可能不会向该组分配任何角色。 但是，它将是 Azure Active Directory 中的安全管理员角色的成员，并将继承该角色的功能。 若要集中管理权限，请在 Azure Active Directory 管理中心中对此角色进行更改。 有关详细信息，请参阅[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 <br/><br/> 如果在安全 & 合规中心中编辑此角色组，这些更改仅适用于安全 & 合规性中心，而不是其他任何服务，而在 Azure Active Directory 管理中心中所做的更改会影响所有服务。 <br/><br/> 安全读者角色的所有只读权限，以及对相同服务的许多其他管理权限： Azure 信息保护、标识保护中心、特权身份管理、监视 Office 365 服务运行状况和 Office 365 安全性 & 合规性中心。|审核日志 <br/><br/> DLP 合规性管理 <br/><br/> 设备管理 <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> Quarantine <br/><br/> 安全管理员 <br/><br/> 敏感度标签管理员 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知|
 |**Security 运算符**|成员可以管理安全警报，还可以查看安全功能的报告和设置。|合规性搜索 <br/><br/> 管理通知 <br/><br/> 安全读取者 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知|
 |**安全读者**|成员具有对身份保护中心的许多安全功能的只读访问权限、特权身份管理、监视 Office 365 服务运行状况和 Office 365 安全性 & 合规性中心。 <br/><br/> 此角色组中的成员身份将跨服务同步并集中管理。 此角色组的成员可能包括跨服务管理员以及外部合作伙伴组和 Microsoft 支持。 默认情况下，可能不会向该组分配任何角色。 但是，它将是 Azure Active Directory 中的安全读取器角色的成员，并将继承该角色的功能。 若要集中管理权限，请在 Azure Active Directory 管理中心中对此角色进行更改-有关详细信息，请参阅[Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 如果在安全 & 合规中心中编辑此角色组，这些更改仅适用于安全 & 合规性中心，而不是其他任何服务，而在 Azure Active Directory 管理中心中所做的更改会影响所有服务|安全读取者 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知|
@@ -88,7 +88,7 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 
 - 预览
 
-- 审阅
+- Review
 
 - RMS 解密
 

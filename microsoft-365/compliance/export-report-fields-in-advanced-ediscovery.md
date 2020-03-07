@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 介绍了用于高级电子数据展示的导出报告中包含的所有字段。
-ms.openlocfilehash: facd93422bbe41a9dc8c5f252cf08eab7fb308f2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594613"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558203"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中导出报告字段
+# <a name="export-report-fields-in-advanced-ediscovery-classic"></a>在高级电子数据展示中导出报告字段（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -47,7 +47,7 @@ ms.locfileid: "41594613"
 |Marked_as_pivot  <br/> |临近重复项  <br/> |指示文件是否为透视。  <br/> |是  <br/> |是  <br/> |
 |Similarity_percent  <br/> |临近重复项  <br/> |相对于数据透视的相似性百分比。  <br/> |是  <br/> |是  <br/> |
 |Duplicate_subset  <br/> |临近重复项  <br/> |重复子集的唯一标识符。 指示文件是否有精确的文本重复。  <br/> |是  <br/> |是  <br/> |
-|日期  <br/> |常规  <br/> |文件日期（取决于文件类型-电子邮件：发送日期; 文档：修改日期）。  <br/> |是  <br/> |是  <br/> |
+|Date  <br/> |常规  <br/> |文件日期（取决于文件类型-电子邮件：发送日期; 文档：修改日期）。  <br/> |是  <br/> |是  <br/> |
 |Dominant_theme  <br/> |分析  <br/> |文件的主要主题。  <br/> |是  <br/> |是  <br/> |
 |Themes_list  <br/> |主题  <br/> |主题名称的列表。  <br/> |是  <br/> |是  <br/> |
 |ND_set  <br/> |EquiSet  <br/> |Nearduplicate 集的唯一数字标识符。  <br/> |是  <br/> |是  <br/> |
@@ -137,7 +137,7 @@ ms.locfileid: "41594613"
    
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [使用高级电子数据展示导出事例数据](export-case-data-in-advanced-ediscovery.md)
   

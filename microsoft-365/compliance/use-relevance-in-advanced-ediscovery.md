@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: '了解 Office 365 高级电子数据展示中的相关性模块，包括用于培训和文件审阅的工作流和指南以及步骤。  '
-ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080709"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557630"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>使用 Office 365 高级电子数据展示中的相关性模块
+# <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>在高级电子数据展示中使用相关性模块（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -133,7 +133,7 @@ ms.locfileid: "42080709"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   

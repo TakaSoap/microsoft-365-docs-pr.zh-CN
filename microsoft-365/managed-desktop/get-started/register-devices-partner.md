@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a9a2a0ccb1e0830d674f4b1b1ef5495fafb38ca3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc446281e8a791b59a9ac97592ff6a53dcde310c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596549"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557560"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>合作伙伴注册设备的步骤
 
@@ -27,7 +27,7 @@ ms.locfileid: "41596549"
 若要完成对客户的注册，请首先创建 CSV 文件。
 
 >[!NOTE]
->为方便起见，可以为此*合作伙伴版本*下载一个[示例 CSV 文件](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv)。
+>为方便起见，可以为此*合作伙伴版本*下载一个[示例 CSV 文件](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)。
 
 您的文件需要包含与示例1（制造商、模型等）**完全相同的列标题**，但您自己的数据用于其他行。 如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，仅在第2行和更低的行中输入数据。 
     
@@ -79,7 +79,7 @@ ms.locfileid: "41596549"
 
 
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 | 错误消息 | 详细信息 |
 |---------------|-------------|

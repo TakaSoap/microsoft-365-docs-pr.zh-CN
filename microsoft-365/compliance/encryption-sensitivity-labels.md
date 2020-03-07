@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
 ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341279"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543821"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 

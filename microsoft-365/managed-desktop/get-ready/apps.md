@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112656"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557570"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的应用程序
 
@@ -23,7 +23,7 @@ ms.locfileid: "41112656"
 
 Microsoft 包括一些关键应用，以及 Microsoft 365 E3 或 E5 许可证需要参与 Microsoft 托管桌面。 但是，即使我们提供这些应用，仍需要完成一些责任和操作。
 
-您还可以通过公司门户或所需的后台安装将其他非 Microsoft 应用程序部署到最终用户，以使用 Microsoft Intune 的部署管道进行自助服务。 如果你有专业技能，你可以自己迁移你需要的应用程序;如果不是 Microsoft 咨询服务（MCS）或非 Microsoft 供应商将很乐意帮助你进行打包和迁移项目。 有关使用 MCS 的详细信息，请参阅使用[Microsoft 咨询服务](apps-MCS.md)。
+您还可以通过公司门户或所需的后台安装将其他非 Microsoft 应用程序部署到最终用户，以使用 Microsoft Intune 的部署管道进行自助服务。 如果你有专业技能，你可以自行迁移你需要的应用程序;或者，Microsoft 咨询服务（MCS）或非 Microsoft 供应商将非常乐意帮助你进行打包和迁移项目。 有关使用 MCS 的详细信息，请参阅使用[Microsoft 咨询服务](apps-MCS.md)。
 
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft 提供的应用程序
@@ -44,7 +44,7 @@ Microsoft 将为包含的 Office 365 专业增强版应用程序提供完整的�
 
 ## <a name="apps-you-provide"></a>你提供的应用
 
-当然，您可能需要许多其他应用程序来实现业务运营。 只能使用 Microsoft Intune 的部署管道将这些可部署到 Microsoft 托管桌面设备。 如果应用程序需要，可以让供应商打包它们（可能是非 Microsoft 供应商或 Microsoft 咨询服务（MCS）），或者如果你有这种方法，则可以自行打包。 然后，将这些程序包添加到 Microsoft 托管桌面门户，并将其分配给 Azure Active Directory 组以触发部署。 
+当然，您可能需要许多其他应用程序来实现业务运营。 仅可使用 Microsoft Intune 的部署管道将这些这些部署到 Microsoft 托管桌面设备。 如果应用程序需要，可以让供应商打包它们（可能是非 Microsoft 供应商或 Microsoft 咨询服务（MCS）），或者如果你有这种方法，则可以自行打包。 然后，将这些程序包添加到 Microsoft 托管桌面门户，并将其分配给 Azure Active Directory 组以触发部署。 
 
 如果你当前使用 Microsoft 终结点配置管理器部署应用，Microsoft 托管桌面可以向你提供一个查询来评估你的应用程序，并发现哪些应用程序可以迁移到 Microsoft Intune，以及哪些可能需要一些调.
 

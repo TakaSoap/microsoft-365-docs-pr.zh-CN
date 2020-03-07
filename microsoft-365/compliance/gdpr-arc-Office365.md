@@ -5,6 +5,8 @@ keywords: GDPR 责任准备情况, 责任准备情况清单, Microsoft 365, Micr
 localization_priority: Priority
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 49933990388688ad5f683b13c68447be4d6ce50f
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 26c7e15eab3d66f3daee180f213bf5d66cad15ff
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558079"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558143"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>适用于 Microsoft Office 365 的责任准备情况清单
 
@@ -152,5 +154,5 @@ ms.locfileid: "41558079"
 
 ## <a name="learn-more"></a>了解更多
 
-- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [服务信任门户](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)

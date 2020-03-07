@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: '了解如何查找在 Office 365 高级电子数据展示中运行的进程模块的结果，包括任务状态和过程摘要。  '
-ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068825"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557600"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中查看流程模块结果
+# <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>在高级电子数据展示中查看进程模块结果（经典）
 
 启动**准备** \> **过程**后，可以查看进度和结果。 
   
@@ -110,7 +110,7 @@ ms.locfileid: "42068825"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [运行进程模块并加载数据](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

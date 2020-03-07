@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: '了解在 Office 365 高级电子数据展示的相关培训阶段，要标记并使用40文件的培训示例的步骤。  '
-ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6362aef6f4e0e17b39429dfeebca796d58d2d13e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069555"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557712"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的标记和相关性培训
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>高级电子数据展示中的标记和相关性培训（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -50,7 +50,7 @@ ms.locfileid: "42069555"
 |-----|-----|-----|-----|
 |R  <br/> |符合  <br/> |Z  <br/> |Shift + Z  <br/> |
 |FÜHRERSCHEIN-NR  <br/> |无关  <br/> |X  <br/> |Shift + X  <br/> |
-|Skip  <br/> |Skip  <br/> |C  <br/> |Shift + A  <br/> |
+|过  <br/> |过  <br/> |C  <br/> |Shift + A  <br/> |
    
   - 如果一个文件存在多个问题，则在标记一个问题后，所选内容将移至下一个问题（如果有）。 
     
@@ -100,7 +100,7 @@ ms.locfileid: "42069555"
     
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   

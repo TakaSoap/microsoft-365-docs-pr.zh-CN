@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 高级电子数据展示中导出事例数据
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: '了解如何使用 Office 365 高级电子数据展示中的导出过程导出电子数据展示事例数据和要查看的结果的指南。  '
-ms.openlocfilehash: 22713d38bf93f32a59646d6b0105f6c0cece69bd
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ced09e872ab1cf7f3f5a798a916357cb8016b797
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805805"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558213"
 ---
-# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中导出事例数据
+# <a name="export-case-data-in-advanced-ediscovery-classic"></a>在高级电子数据展示中导出事例数据（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -37,7 +39,7 @@ ms.locfileid: "40805805"
     
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [导出结果](export-results-in-advanced-ediscovery.md)
   

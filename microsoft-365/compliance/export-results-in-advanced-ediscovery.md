@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定义用于从 Office 365 高级电子数据展示中导出结果的选项，包括为导出批处理指定参数的过程。 '
-ms.openlocfilehash: 9194bc9dc44587fb03798c2107c408d2afb2ae70
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e439753b427a4e4a90e219912f8d3c1fcf4cfff3
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074275"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558193"
 ---
-# <a name="export-results-in-office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示中的导出结果
+# <a name="export-results-in-advanced-ediscovery-classic"></a>在高级电子数据展示中导出结果（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -68,7 +68,7 @@ ms.locfileid: "42074275"
     
     - 若要导出添加到现有事例中的新文件的结果，请继续使用当前批处理。 若要在批处理中创建会话，请选择同一批次号码并单击 "**创建导出会话**" 可以使用此选项以增量方式导出与上一批次相同的参数。 
     
-    - 若要导出到新批次， **** ![请单击 "](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击“确定”。
+    - 若要导出到新批次， **** ![请单击 "](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击 **“确定”**。
     
     - 若要编辑批次名称或说明，请在 "**导出批次**" **** ![中选择名称](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，单击 "编辑编辑图标"，然后修改字段。
     
@@ -194,7 +194,7 @@ ms.locfileid: "42074275"
    
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [查看批次历史记录和导出过去的结果](view-batch-history-and-export-past-results.md)
   

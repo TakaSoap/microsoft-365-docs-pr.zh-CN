@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e18db2e5c180bd896e82d98506e8a65831550bce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b50722d7f37b54b38bac259b7c42d3bd782dfb3d
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073231"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557952"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>用于本地 Office 服务器的 GDPR
 
@@ -34,7 +34,8 @@ ms.locfileid: "42073231"
 
 -   [本地文件共享](gdpr-for-on-premises-file-shares.md)
 
-有关 GDPR 以及 Microsoft 如何为你提供帮助的详细信息，请参阅 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)。
+有关 GDPR 以及 Microsoft 如何为你提供帮助的详细信息，请参阅 [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)。
 
 在开展有关本地数据的任何工作之前，请咨询你的法律和合规性团队以寻求指导并了解现有分类架构和处理个人数据的方法。Microsoft 提供了有关在 Microsoft GDPR 数据发现工具包（位于 [https://aka.ms/gdprpartners](<https://aka.ms/gdprpartners>)）中开发和扩展分类架构的建议。此工具包还介绍了将本地数据移动到云的方法，可以使用更复杂的数据治理功能（如果需要）。该部分中的文章提供了有关保留在本地的数据的建议。
 

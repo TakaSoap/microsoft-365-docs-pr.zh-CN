@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的高级电子数据展示的新版本。
 ms.openlocfilehash: a9c7811d9ad0660105f7063e674a54c01707ea58
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400940"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557906"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 

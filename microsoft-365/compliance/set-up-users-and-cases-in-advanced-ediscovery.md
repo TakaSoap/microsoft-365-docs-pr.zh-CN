@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: '了解如何配置用户角色、创建案例，以及如何将用户分配到 Office 365 高级电子数据展示中的案例。  '
-ms.openlocfilehash: 754cc7d73fc3325c2525e3101d1378d55afea4de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76d5e6ab503cc053e31811cc06ac12545a9eeb7e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601449"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557736"
 ---
-# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置用户和案例
+# <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>在高级电子数据展示中设置用户和案例（经典）
 
-本主题介绍如何为 Office 365 高级电子数据展示设置用户和案例。
+本主题介绍如何为高级电子数据展示（经典）设置用户和案例。
   
 > [!IMPORTANT]
-> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布弃用 Office 365 高级电子数据展示（也称为*高级电子数据展示 v1.0 1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快转换为[高级电子数据展示2.0 版](overview-ediscovery-20.md)（也称为*Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示2.0 包含高级电子数据展示 v1.0 中的类似功能，但也提供了许多新功能，如保管人管理、通信管理和审查集。 若要详细了解高级电子数据展示1.0 版，请参阅[旧电子数据展示工具的退休](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
+> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布退出 Office 365 高级电子数据展示，也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0 1.0*。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
   
 ## <a name="prerequisites"></a>先决条件
 
@@ -61,7 +61,7 @@ ms.locfileid: "41601449"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [准备数据](prepare-data-for-advanced-ediscovery.md)
  

@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069725"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557735"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
+
+在使用核心电子数据展示或高级电子数据展示管理调查时，可以应用本文中的指南。
 
 合规性边界在 Office 365 组织中创建逻辑边界，以控制电子数据展示管理者可以搜索的用户内容位置（如邮箱、SharePoint 网站和 OneDrive 帐户）。 此外，合规性边界控制谁可以访问电子数据展示用例，以管理组织中的法律、人力资源或其他调查。 对于必须遵守地理位置 boarders 和管理法规以及政府的政府（通常分为不同的机构）的多国公司来说，需求是合规性边界所必需的。 在 Office 365 中，合规性边界可帮助您在执行内容搜索和使用电子数据展示案例管理调查时满足这些要求。
   
@@ -157,29 +159,29 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 - 当分配给某个案例的角色组成员运行与该事例相关联的搜索时，他们将只能搜索其代理（由您在步骤4中创建的搜索权限筛选器定义）中的内容位置。
 
 若要创建事例并分配成员，请执行以下操作：
-    
-1. 转到 Security & 合规中心中的**电子数据展示**页面，并创建一个案例。 
-    
+
+1. 转到 Security & 合规性中心中的**电子数据展示**或**高级电子数据展示**页面，并创建一个事例。 
+
 2. 在电子数据展示事例的列表中，单击您创建的事例的名称。
-    
+
 3. 在 "**管理此案例**" 弹出页面的 "**管理角色组**" ![下，](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif)单击 "添加图标" "**添加**"。
-    
+
     ![将角色组添加为电子数据展示事例的成员](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. 在角色组列表中，选择您在步骤3中创建的角色组之一，然后单击 "**添加**"。
-    
+
 5. 单击 "**管理此案例**" 弹出控件上的 "**保存**" 以保存更改。 
 
 ## <a name="compliance-boundary-limitations"></a>合规性边界限制
 
 在管理使用合规性边界的电子数据展示案例和调查时，请牢记以下限制。
   
-- 在创建和运行内容搜索时，您可以选择代理外部的内容位置。 但是，由于搜索权限筛选器，搜索结果中不包含这些位置的内容。
-    
+- 在创建和运行搜索时，可以选择代理外部的内容位置。 但是，由于搜索权限筛选器，搜索结果中不包含这些位置的内容。
+
 - 合规性边界不适用于电子数据展示事例中的保留。 这意味着一个机构中的电子数据展示管理器可以将用户置于处于保留状态的不同代理人中。 但是，如果电子数据展示管理器搜索置于保留状态的用户的内容位置，则将强制实施合规性边界。 这意味着，电子数据展示管理器将无法搜索用户的内容位置，即使他们能够将用户置于保留状态。
-    
+
     此外，保留统计信息将仅适用于代理中的内容位置。
-    
+
 - 搜索权限筛选器不适用于 Exchange 公用文件夹。
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>在多地理位置环境中搜索和导出内容
@@ -263,7 +265,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **电子数据展示管理器能否从两个单独的合规性边界中查看内容？**
   
-是。 为此，可以将用户添加到对这两个机构都可见的角色组。
+是的。 为此，可以将用户添加到对这两个机构都可见的角色组。
   
  **搜索权限筛选器是否适用于电子数据展示事例保留、Office 365 保留策略或 DLP？**
   

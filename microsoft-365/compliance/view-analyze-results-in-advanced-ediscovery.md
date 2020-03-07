@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: '了解在 Office 365 高级电子数据展示中查看分析过程结果的位置，包括所显示的任务选项的定义。  '
-ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adee00d2b7826827cc14f4ca945952f4892511a1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069173"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557620"
 ---
-# <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>查看 Office 365 高级电子数据展示中的分析结果
+# <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>查看高级电子数据展示中的分析结果（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -77,7 +77,7 @@ ms.locfileid: "42069173"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [了解文档相似性](understand-document-similarity-in-advanced-ediscovery.md)
   

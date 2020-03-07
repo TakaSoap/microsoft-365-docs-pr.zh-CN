@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: '了解如何使用 Office 365 安全&amp;合规中心访问 Office 365 高级电子数据展示，并运行 Process module for a case。  '
-ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081513"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557822"
 ---
-# <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中运行 Process module 和 load data
+# <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>在高级电子数据展示（经典）中运行 Process module 和 load data
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -83,7 +83,7 @@ ms.locfileid: "42081513"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [查看流程模块结果](view-process-module-results-in-advanced-ediscovery.md)
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 在高级电子数据展示中，搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。 目前，此模块在 beta 版中。
-ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 012154e117e0d2b800f0e1077d43f2e1c1d10b0e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081391"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557802"
 ---
 # <a name="search-and-tagging"></a>搜索和标记
 
@@ -75,7 +75,7 @@ ms.locfileid: "42081391"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   

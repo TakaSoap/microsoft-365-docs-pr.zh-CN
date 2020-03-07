@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: '查看 "文档相似性" 值（两个文件的最小 resemblance 级别，将其视为邻近的重复项）在 Office 365 高级电子数据展示中起作用。 '
-ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080761"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557662"
 ---
-# <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>了解 Office 365 高级电子数据展示中的文档相似性
+# <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>了解高级电子数据展示中的文档相似性（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -57,7 +57,7 @@ Resemblance 的级别如下所示：
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [设置分析选项](set-analyze-options-in-advanced-ediscovery.md)
   

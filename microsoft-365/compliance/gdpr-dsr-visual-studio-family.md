@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 81dfd4b0c0724e2ab40113c1d134e0932c215c8f
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225505"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557982"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Visual Studio 系列数据主体请求
 
@@ -217,7 +217,7 @@ Xamarin 论坛由第三方 Vanilla 论坛托管。若要请求删除你的个人
 ## <a name="learn-more"></a>了解更多
 
 - [Microsoft 对我们公开发布的企业软件产品的客户的 GDPR 义务](https://docs.microsoft.com/legal/gdpr)
-- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [服务信任门户](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft 隐私仪表板](https://account.microsoft.com/privacy)
 - [Microsoft 隐私响应中心](https://aka.ms/userprivacysite)

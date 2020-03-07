@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080205"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543601"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>向高级电子数据展示案例中添加保管人
 
@@ -31,7 +31,7 @@ ms.locfileid: "42080205"
 
 ![保管人管理选项卡](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 若要将保管人添加到案例，您必须是电子数据展示管理器角色组的成员。 这将为您提供将保管人添加到事例的必要权限，并在 custodial 数据源上放置保留。
 

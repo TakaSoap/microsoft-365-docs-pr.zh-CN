@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552030"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557582"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -36,7 +36,7 @@ ms.locfileid: "42552030"
 
 ### <a name="insider-risk-management-is-officially-released"></a>正式发布的内幕风险管理
 
-鼓总纸，请 .。。内幕风险管理现在可供具有以下订阅的组织使用：
+鼓总纸，请 .。。<br>内幕风险管理现在可供具有以下订阅的组织使用：
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) （付费或试用版）
 - Microsoft [E5 合规性加载](https://go.microsoft.com/fwlink/?linkid=2120432)项的 Microsoft 365 企业版 E3 订阅
@@ -47,7 +47,7 @@ ms.locfileid: "42552030"
 
 ### <a name="records-management"></a>记录管理
 
-此新解决方案将所有记录管理功能都集成到一个伞中。 重点包括引入了 SharePoint 和 OneDrive 的记录版本控制以及记录的处置证明。
+这一新的解决方案将所有记录管理功能都引入到一个伞中。 重点包括引入了 SharePoint 和 OneDrive 的记录版本控制以及记录的处置证明。
 
 ![Microsoft 365 合规性中心中的 "记录管理" 页](../media/mcc-records-management-page.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "42552030"
 
 ### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>解决方案焦点： Facebook 和 Twitter 的数据连接器
 
-[上个月发布](#just-launched)的数据连接器，我们正在测试以下连接器以验证其是否按预期方式工作，这是你的帮助。
+[上个月发布](#just-launched)的数据连接器，我们将在测试以下连接器时查找您的帮助。
 
 - [Facebook 商业页面](archive-facebook-data-with-sample-connector.md)。 将 Facebook 商业页面中的数据导入和存档到 Microsoft 365。 对法规遵从性解决方案（如记录管理和电子数据展示）有益。
 - [Twitter](archive-twitter-data-with-sample-connector.md)。 将 Twitter 中的数据导入和存档到 Microsoft 365。 对法规遵从性解决方案（如记录管理和电子数据展示）有益。

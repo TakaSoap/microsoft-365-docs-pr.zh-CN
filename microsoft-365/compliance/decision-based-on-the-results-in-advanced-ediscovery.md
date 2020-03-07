@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解 Office 365 高级电子数据展示中的 "确定" 选项卡如何提供可帮助您确定检查事例文件集的正确大小的数据。 '
-ms.openlocfilehash: b0dd68c294b4555bcf7c9b2cb1c6db455af32e7d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6d515305b01b0273bb2acffaad19c497fc5c82d2
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076240"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557540"
 ---
-# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>基于 Office 365 高级电子数据展示中的结果的决策
+# <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>基于高级电子数据展示中的结果的决策（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -55,7 +55,7 @@ ms.locfileid: "42076240"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [了解相关性方面的评估](assessment-in-relevance-in-advanced-ediscovery.md)
   

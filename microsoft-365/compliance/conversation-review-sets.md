@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ca8389bf6a7622d4db98bdf7422aea85942e8978
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078109"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556770"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>查看高级电子数据展示中的对话 
 
@@ -79,8 +79,6 @@ ms.locfileid: "42078109"
   
 3. 将项目添加到审阅集后，可以查看*CRC1*中的所有单个邮件。 
 
-
-
 启用对话检索：
   
 1. 在高级电子数据展示事例的 "**搜索**" 选项卡上，选择一个搜索，然后单击弹出页面上的 "**添加到审阅集**"。
@@ -91,7 +89,7 @@ ms.locfileid: "42078109"
   
 4. 完成 "**作业**" 选项卡上的 "**添加到审阅集**" 作业后，即可开始查看对话。
 
-## <a name="step-4-review-conversations-in-the-review-set"></a>步骤4：查看评审集中的对话
+## <a name="step-4-review-and-export-conversations-in-a-review-set"></a>步骤4：在审阅集中查看和导出对话
 
 在处理完内容并将其添加到审阅集后，即可开始查看评审集中的数据。 审阅功能会有所不同，具体取决于内容是添加到标准审阅集还是对话评审集。 
 
@@ -129,7 +127,6 @@ ms.locfileid: "42078109"
 
 - **重新运行对话转换：** 将邮件添加到对话评审集时，将自动运行转换作业以创建带线索的摘要和批注视图。 如果会话重建作业失败，您可以通过单击 "操作" > "在审阅集中**创建对话 pdf** " 来重新运行此作业。
 
-
 #### <a name="exporting-conversations"></a>导出对话
 
 在对话审阅集中，您可以设置以下选项以导出对话：
@@ -161,7 +158,7 @@ c. 其他选项
 
 若要了解有关如何在高级电子数据展示中查看事例数据的详细信息，请参阅以下文章：
 
-- [查看事例数据](view-documents-in-review-set.md) 
+- [查看事例数据](view-documents-in-review-set.md)
 
 - [分析事例数据](analyzing-data-in-review-set.md)
 

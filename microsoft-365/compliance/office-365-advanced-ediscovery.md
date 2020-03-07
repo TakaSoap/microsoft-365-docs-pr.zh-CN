@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: 了解 Office 365 高级电子数据展示如何帮助您分析 Office 365 中的数据、优化文档审阅，并做出高效电子数据展示的决策。
-ms.openlocfilehash: a3a6291459005d60defe61a8bca40ce382b6d052
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e84ada8c6ca004c0f3c50a79fa6908148770955
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597889"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557872"
 ---
-# <a name="office-365-advanced-ediscovery"></a>Office 365 高级电子数据展示
+# <a name="advanced-ediscovery-classic"></a>高级电子数据展示（经典）
 
 > [!IMPORTANT]
-> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布弃用 Office 365 高级电子数据展示（也称为*高级电子数据展示 v1.0 1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快转换为[高级电子数据展示2.0 版](overview-ediscovery-20.md)（也称为*Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示2.0 包含高级电子数据展示 v1.0 中的类似功能，但也提供了许多新功能，如保管人管理、通信管理和审查集。 若要详细了解高级电子数据展示1.0 版，请参阅[旧电子数据展示工具的退休](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
+> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布退出 Office 365 高级电子数据展示，也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0 1.0*。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
   
 使用高级电子数据展示，可以更好地了解 Office 365 数据并减少电子数据展示成本。 高级电子数据展示可帮助您分析 Office 365 中的非结构化数据，执行更高效的文档审阅，并做出决定，以减少电子数据展示的数据。 您可以使用存储在 Exchange Online、SharePoint Online、OneDrive for Business、Skype for Business、Office 365 组和 Microsoft 团队中的数据。 您可以在 "安全与合规中心" 中执行电子数据展示搜索，以搜索组、单个邮箱和网站中的内容，然后使用高级电子数据展示分析搜索结果。 当您准备高级电子数据展示中的分析搜索结果时，光学字符识别允许从图像中提取文本。 此功能允许将高级电子数据展示的强大文本分析功能应用于图像文件。
   

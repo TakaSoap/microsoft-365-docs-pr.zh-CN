@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: '了解如何运行报告，然后在 Office 365 高级电子数据展示中下载其 .csv 文件。  '
-ms.openlocfilehash: badc657e100961ba89de6a49349b7016ae790b09
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1ca01fc0ab77ec0a727029c3f8ef680a56f9c5c6
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069981"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557832"
 ---
-# <a name="run-reports-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中运行报告
+# <a name="run-reports-in-advanced-ediscovery-classic"></a>在高级电子数据展示中运行报告（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -44,5 +44,4 @@ ms.locfileid: "42069981"
     
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
-
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)

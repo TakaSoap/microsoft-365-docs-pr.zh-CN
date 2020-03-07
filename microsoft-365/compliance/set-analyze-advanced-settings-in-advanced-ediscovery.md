@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '了解如何为 Office 365 高级电子数据展示中的分析过程配置高级设置，包括接近重复的电子邮件线程和主题。 '
-ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081261"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557792"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析高级设置
 
@@ -48,7 +48,7 @@ ms.locfileid: "42081261"
     
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [了解文档相似性](understand-document-similarity-in-advanced-ediscovery.md)
   

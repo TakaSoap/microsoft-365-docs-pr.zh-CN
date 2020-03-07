@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: '查看在 Office 365 高级电子数据展示中执行关联性培训之前，将导入的文件添加到文件的最后一个已定义负载或批处理的步骤。  '
-ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081090"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557762"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>设置加载以在 Office 365 高级电子数据展示中添加导入的文件
+# <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>在高级电子数据展示中设置加载以添加导入的文件（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -53,7 +53,7 @@ ms.locfileid: "42081090"
     
 4. 单击 "**添加文件**"。 将文件添加到加载中，并显示一条确认消息。 
     
-5. 单击“确定”。
+5. 单击 **“确定”**。
     
 现在，可以在高级电子数据展示的相关性中处理文件以用于培训文件。
   
@@ -138,7 +138,7 @@ ms.locfileid: "42081090"
     
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [定义问题和分配用户](define-issues-and-assign-users.md)
   

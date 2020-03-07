@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e41003a7137b864b52f823debcd72c72ca55045d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1d4ca01e7b791dafc952b62a5f5dd59263b31546
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085032"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557550"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
@@ -72,7 +72,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集数据，则该文件应具有正确的格式;如果从供应商获取文件，则可能需要调整格式。
 
 >[!NOTE]
->为方便起见，可以下载[示例 CSV 文件](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)。
+>为方便起见，可以下载[示例 CSV 文件](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv)。
 
 您的文件需要包含与示例1（制造商、模型等）**完全相同的列标题**，但您自己的数据用于其他行。 如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，仅在第2行和更低的行中输入数据。 
     
@@ -107,7 +107,7 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 
 你可以在主**Microsoft 托管台式机-设备**页面上监视设备注册的进度。 可能报告的状态包括：
 
-| 状态 | 描述 |
+| 状态 | 说明 |
 |---------------|-------------|
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](#troubleshooting-device-registration)。 |
