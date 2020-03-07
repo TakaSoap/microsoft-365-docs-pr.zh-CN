@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 6c461cd049cb89a2de0dbfc4cb1a5f8ea28c3ea6
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: eea03384b77dbcea29196c9f8142f748af0bf5be
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543118"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557581"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -35,6 +35,8 @@ ms.locfileid: "42543118"
 如果已准备好使用敏感度标签来开始保护组织的数据：
 
 1. **创建应用程序。** 根据组织的分类法为不同敏感度级别的内容创建和命名敏感度标签。 使用对用户有意义的常用名称或术语。 如果尚未建立分类，请考虑以“个人”、“公共”、“常规”、“机密”和“高度机密”等标签名称开头。 可以使用子标签按类别对类似标签进行分组。 创建标签时，可使用工具提示文本帮助用户选择相应的标签。
+    
+    有关定义分类法的更多深入指南，请从“[服务信任门户](https://aka.ms/DataClassificationWhitepaper)”下载白皮书“数据分类和敏感度标签分类”。
 
 2. **定义每个标签的用途。** 配置要与每个标签关联的保护设置。 例如，你可能希望较低灵敏度的内容（例如“常规”标签）仅应用页眉或页脚，而较高灵敏度的内容（例如“机密”标签）应该应用水印、加密和端点保护。
 
