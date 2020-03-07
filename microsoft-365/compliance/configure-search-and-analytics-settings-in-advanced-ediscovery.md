@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: 配置适用于案例中所有审阅集的高级电子数据展示设置。 这包括分析和 OCR 的设置。
 ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550452"
+ms.locfileid: "42552059"
 ---
 # <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
 

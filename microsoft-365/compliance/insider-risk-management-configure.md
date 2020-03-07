@@ -13,11 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: 4b8bd0f8d540434410d9ebc2365789a669f455e1
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179163"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42552032"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内幕风险管理入门
 
@@ -28,7 +28,7 @@ ms.locfileid: "42179163"
 
 有关内幕风险策略如何帮助您管理组织中的风险的详细信息，请参阅[Microsoft 365 中的内幕风险管理](insider-risk-management.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始使用 "内幕风险管理" 之前，应确认[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。 若要访问和使用内幕风险管理，您的组织必须具有以下订阅之一：
 
