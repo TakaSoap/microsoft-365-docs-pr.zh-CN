@@ -20,18 +20,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 帮助您的用户在 Windows 10 设备上安装 Office 应用程序，并在 Microsoft 365 商业版管理中心轻松地从 Windows 10 电脑上安装 Office。
-ms.openlocfilehash: 5df9a1a8236942a34031daf06e38acbe923339e4
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: a33121f5c5b3532ea376a2bf7a6d7f51d4291a47
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550369"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561622"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>帮助你的用户在 Windows 10 设备上安装 Office
 

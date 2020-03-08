@@ -19,19 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 了解如何创建 AutoPilot 配置文件并将其应用到设备，以及编辑或删除配置文件或从设备中删除配置文件。
-ms.openlocfilehash: 6a8057969242d839ebbb4cbef8d26dd3f1858c59
-ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
+ms.openlocfilehash: 58c16b68c66dce7541a02ecd0d2466babe8cc338
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417328"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560712"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>创建和编辑 AutoPilot 配置文件
 

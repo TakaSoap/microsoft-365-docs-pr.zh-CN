@@ -19,18 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 探索将 Windows 设备升级到 Windows 10 专业版以利用更高级安全性和商业网络功能的方法。
-ms.openlocfilehash: 541169571fb9f58c7f75f610546ec250ffd40afb
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 3901754d9ef269ae74dbf1893cb62b1ba810919d
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549929"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560652"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>将 Windows 设备升级到 Windows 10 专业版
 

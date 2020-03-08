@@ -20,17 +20,17 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 description: 了解 Microsoft 365 业务包含的内容，并获取注册 Microsoft 365 商业版的分步指南。
-ms.openlocfilehash: 003bf332a9183a5e062a294297a30c9b7d19fdb9
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 85e9ff3585e1e4bbadc6c34699f75d77486f58ea
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547823"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560734"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>注册 Microsoft 365 商业版
 

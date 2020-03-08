@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何开始在 Microsoft 365 中使用高级电子数据展示。 完成几个快速的步骤之后，高级电子数据展示工具即可供使用。 第一步是创建一个事例，然后开始使用高级电子数据展示功能和功能。
-ms.openlocfilehash: b351524f1bcaa54360d9f7422c0955c5c4a35254
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 2819fdd2f3b98ca82535aa0f08830bb37744c3f7
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557904"
+ms.locfileid: "42561662"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>高级电子数据展示入门
 
@@ -94,7 +94,7 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>步骤3：为高级电子数据展示配置全局设置
 
-在贵组织中的人员开始创建和用例之前，要完成的最后一步是配置适用于组织中的所有案例的全局设置。 目前，唯一可用的全局设置是*律师-客户端权限检测*（将来将提供更多全局设置）。 此设置使律师-客户端权限模型能够在您分析评审集内的数据时运行。 模型使用机器学习确定文档包含性质合法的内容的可能性。 它还将文档的参与者与律师列表（在设置模型时提交）进行比较，以确定文档是否至少有一个作为律师的参与者。
+在贵组织中的人员开始创建和用例之前，要完成的最后一步是配置适用于组织中的所有案例的全局设置。 目前，唯一的全局设置是*律师-客户端特权检测*（将来将提供更多全局设置）。 此设置使律师-客户端权限模型能够在您分析评审集内的数据时运行。 模型使用机器学习确定文档包含性质合法的内容的可能性。 它还将文档的参与者与律师列表（在设置模型时提交）进行比较，以确定文档是否至少有一个作为律师的参与者。
 
 有关设置和使用律师-客户端权限检测模型的详细信息，请参阅[在高级电子数据展示中设置律师-客户端权限检测](attorney-privilege-detection.md)。
 

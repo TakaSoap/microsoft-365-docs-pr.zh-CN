@@ -18,18 +18,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 了解购买 Microsoft 365 商业版的选项，以及从 Microsoft 合作伙伴中心购买的分步说明。
-ms.openlocfilehash: decfd3b99ebd0134715d721287057b7131a8f066
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: ccbdb928c0f1268fb7019793b6246eef386daa45
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547803"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560733"
 ---
 # <a name="get-microsoft-365-business"></a>获取 Microsoft 365 商业版
 

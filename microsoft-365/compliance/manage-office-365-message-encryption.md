@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 完成设置 Office 365 邮件加密（OME）后，您可以通过多种方式自定义部署的配置。 例如，您可以配置是否启用一次性传递代码，在 Outlook 网页版中显示 "保护" 按钮，等等。 本文中的任务介绍了如何。
-ms.openlocfilehash: fa328abc36ffa0d22bb2c96114b3bbb3dfa12ed3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 102d57681e049bf803b377fea97cc0fdb11affb2
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600509"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562000"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
@@ -173,27 +173,15 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only"></a>确保所有外部收件人都使用 OME 门户来阅读加密邮件（仅适用于 Office 365 高级邮件加密）
+## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>确保所有外部收件人使用 OME 门户阅读加密邮件
 
-如果您使用的是 Office 365 高级邮件加密，则可以使用自定义品牌打造模板来强制收件人收到包装邮件，以使收件人能够在 OME 门户中读取加密电子邮件，而不是使用 Outlook 或 web 上的 Outlook。 如果您使用希望更好地控制收件人如何使用其接收的邮件，则可能需要执行此操作。 例如，如果外部收件人在 web 门户中查看电子邮件，您可以为电子邮件设置到期日期，并且可以撤销电子邮件。 仅在 OME 门户中支持这些功能。 创建邮件流规则时，可以使用 "加密" 选项和 "不转发" 选项。
+您可以使用自定义品牌打造模板来强制收件人接收到一个包装邮件，以使收件人能够在 OME 门户中阅读加密电子邮件，而不是使用 Outlook 或 web 上的 Outlook。 如果您使用希望更好地控制收件人如何使用其接收的邮件，则可能需要执行此操作。 例如，如果外部收件人在 web 门户中查看电子邮件，您可以为电子邮件设置到期日期，并且可以撤销电子邮件。 仅在 OME 门户中支持这些功能。 创建邮件流规则时，可以使用 "加密" 选项和 "不转发" 选项。
 
-### <a name="create-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email-to-be-revocable-and-expire-in-7-days"></a>创建自定义模板以强制所有外部收件人使用 OME 门户，并将加密电子邮件的加密电子邮件设为可吊销并在7天后过期
+### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>使用自定义模板强制所有外部收件人使用 OME 门户和加密电子邮件
 
 1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，并启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
-2. 运行 Set-omeconfiguration cmdlet：
-
-   ```powershell
-   New-OMEConfiguration -Identity "<template name>" -ExternalMailExpiryInDays 7
-   ```
-
-   其中`template name` ，是要用于 Office 365 邮件加密自定义品牌模板的名称。 For example,
-
-   ```powershell
-   New-OMEConfiguration -Identity "<One week expiration>" -ExternalMailExpiryInDays 7
-   ```
-
-3. 运行 New-transportrule cmdlet：
+2. 运行 New-transportrule cmdlet：
 
    ```powershell
    New-TransportRule -name "<mail flow rule name>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "<option name>" -ApplyRightsProtectionCustomizationTemplate "<template name>"
@@ -205,18 +193,18 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
 
    - `option name`可以`Encrypt`是或`Do Not Forward`。
 
-   - `template name`是您赋予自定义品牌打造模板的名称，例如`One week expiration`。
+   - `template name`是您赋予自定义品牌打造模板的名称，例如`OME Configuration`。
 
-   若要使用 "一个星期过期" 模板对所有外部电子邮件进行加密，并应用 "仅加密" 选项，请执行以下操作：
+   若要使用 "一周销售" 模板对所有外部电子邮件进行加密并应用仅加密选项，请执行以下操作：
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
-   若要使用 "一个星期过期" 模板对所有外部电子邮件进行加密，并应用 "不转发" 选项，请执行以下操作：
+   若要使用 "OME Configuration" 模板对所有外部电子邮件进行加密并应用 "不转发" 选项，请执行以下操作：
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>自定义电子邮件和 OME 门户的外观

@@ -16,18 +16,18 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 在 Windows 10 设备上验证 Microsoft 365 商业应用保护设置，并验证用户不能将公司数据复制到个人文件或非托管应用。
-ms.openlocfilehash: 4d3d7e950311ac32606e700ebb35bf026ae091cc
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 5b798e0335188543fc308553f71085bcde8b7752
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549989"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560832"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的应用保护设置
 
