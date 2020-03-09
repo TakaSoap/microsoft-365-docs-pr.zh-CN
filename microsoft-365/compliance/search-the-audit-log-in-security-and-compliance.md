@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 2c69cc6f7e5b332819061e3bf92b9ab02a1dc8db
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551820"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562033"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -340,7 +340,7 @@ ms.locfileid: "42551820"
 |(无)|FileModifiedExtended|这与“已修改文件”(FileModified) 活动相关。 如果一个用户长时间（至 3 小时）持续修改某一文件，则会记录下 FileModifiedExtended 事件。 <br/><br/> 记录 FileModifiedExtended 事件是为了减少持续修改文件时所记录的 FileModified 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileModified 记录的干扰，从而专注于初始（和更重要的）FileModified 事件。|
 |已移动文件|FileMoved|用户将文档从网站上的当前位置移动到新位置。|
 |(无)|FilePreviewed|用户在 SharePoint 或 OneDrive for Business 网站上预览文件。 这些事件通常发生在基于单个活动的高容量情形中，例如查看图库。|
-|已执行的搜索查询|SearchQueryPerformed|用户或系统帐户在 SharePoint 或 OneDrive for Business 中执行搜索。 部分服务帐户执行搜索查询的常见情形包括将电子数据展示挂起或保留策略应用到网站或 OneDrive 帐户，以及将保留或敏感度标签自动应用到网站内容。 在许多情况下，在审核记录的“用户”字段中记录的服务帐户名称为 **app\@sharepoint**。 </br></br> **提示：** 已执行搜索查询活动的审核记录中的 ApplicationDisplayName 和 EventData 字段可以帮助你识别触发此事件的应用场景或服务。|
+|已执行的搜索查询|SearchQueryPerformed|用户或系统帐户在 SharePoint 或 OneDrive for Business 中执行搜索。 部分服务帐户执行搜索查询的常见情形包括将电子数据展示挂起和保留策略应用到网站或 OneDrive 帐户，以及将保留或敏感度标签自动应用到网站内容。|
 |已回收文件的次要版本|FileVersionsAllMinorsRecycled|用户从文件版本历史记录中删除所有次要版本。 已删除的版本移动到网站的回收站。|
 |已回收所有版本的文件|FileVersionsAllRecycled|用户从文件版本历史记录中删除所有版本。 已删除的版本移动到网站的回收站。|
 |已回收文件版本|FileVersionRecycled|用户从文件版本历史记录中删除某个版本。 已删除的版本移动到网站的回收站。|
@@ -353,10 +353,25 @@ ms.locfileid: "42551820"
 |(无)|PagePrefetched|用户的客户端（例如网站或移动应用）已请求指示的页面，以帮助提高用户浏览时的性能。 记录此事件以指示页面内容已服务于用户的客户端。 此事件未明确指示用户导航到页面。 <br/><br/> 当客户端（根据用户请求）呈现页面内容时，应生成 ClientViewSignaled 事件。 并非所有客户端都支持指示预提取，因此一些预提取的活动可能会被记录为 PageViewed 事件。|
 ||||
 
+#### <a name="the-appsharepoint-user-in-audit-records"></a>审核记录中的 app\@sharepoint 用户
+
+在某些文件活动（和其他 SharePoint 相关活动）的审核记录中，你可能会注意到执行该活动的用户（在“用户”和“用户 ID”字段中识别）是 app@sharepoint。 这表示执行活动的“用户”是一个应用程序。 在这种情况下，该应用程序被授予 SharePoint 中代表用户、管理员或服务执行组织范围内操作（例如，搜索 SharePoint 网站或 OneDrive 帐户）的权限。 授予应用程序权限的过程被称为“*仅限 SharePoint 应用*”访问权限。 这表明提供给 SharePoint 执行操作的身份验证是由应用程序而不是用户做出的。 这就是为什么在某些审核记录中标识 app@sharepoint 用户的原因。 有关详细信息，请参阅[通过仅限 SharePoint 应用授予访问权限](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs)。
+
+例如，app@sharepoint 通常被标识为“已执行搜索查询”和“已访问文件”事件的用户。 这是因为在将保留策略应用到网站和 OneDrive 帐户时，组织中具有仅限 SharePoint 应用访问权限的应用程序会执行搜索查询和访问文件。
+
+以下是一些其他情形，其中审核记录中的 app@sharepoint 可能被标识为执行活动的用户：
+
+- Office 365 组。 用户或管理员创建新组时，会生成审核记录，用于创建网站集、更新列表以及将成员添加到 SharePoint 组。 应用程序将代表创建组的用户执行这些任务。
+
+- Microsoft Teams。 与 Office 365 组类似，也会生成审核记录，用于创建网站集、更新列表以及在创建团队时将成员添加到 SharePoint 组。
+
+- 合规性功能。 管理员实现合规性功能（如保留策略、电子数据展示保留和自动应用敏感度标签）时。
+
+在这些和其他情形下，你还会注意到，以 app@sharepoint 作为指定用户的多个审核记录是在非常短的时间范围内创建的，通常彼此之间只有几秒。 这也表明它们可能由同一个用户启动的任务触发。 而且，审核记录中的 ApplicationDisplayName 和 EventData 字段可以帮助你识别触发此事件的应用场景或应用程序。
 
 ### <a name="folder-activities"></a>文件夹活动
 
-下表介绍了 SharePoint Online 和 OneDrive for Business 中的文件夹活动。
+下表介绍了 SharePoint Online 和 OneDrive for Business 中的文件夹活动。 如前所述，某些 SharePoint 活动的审核记录将表明 app@sharepoint 用户代表启动操作的用户或管理员执行了该活动。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](#the-appsharepoint-user-in-audit-records)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -373,7 +388,7 @@ ms.locfileid: "42551820"
 
 ### <a name="sharepoint-list-activities"></a>SharePoint 列表活动
 
-下表介绍了当用户与 SharePoint Online 中的列表和列表项进行交互时执行的相关活动。
+下表介绍了当用户与 SharePoint Online 中的列表和列表项进行交互时执行的相关活动。 如前所述，某些 SharePoint 活动的审核记录将表明 app@sharepoint 用户代表启动操作的用户或管理员执行了该活动。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](#the-appsharepoint-user-in-audit-records)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -451,7 +466,7 @@ ms.locfileid: "42551820"
 
 ### <a name="site-permissions-activities"></a>网站权限活动
 
-下表列出了与在 SharePoint 中分配权限以及使用组授予（和撤销）网站访问权限相关的事件。
+下表列出了与在 SharePoint 中分配权限以及使用组授予（和撤销）网站访问权限相关的事件。 如前所述，某些 SharePoint 活动的审核记录将表明 app@sharepoint 用户代表启动操作的用户或管理员执行了该活动。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](#the-appsharepoint-user-in-audit-records)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -475,7 +490,7 @@ ms.locfileid: "42551820"
 
 ### <a name="site-administration-activities"></a>网站管理活动
 
-下表列出了 SharePoint Online 中的网站管理任务所产生的事件。
+下表列出了 SharePoint Online 中的网站管理任务所产生的事件。 如前所述，某些 SharePoint 活动的审核记录将表明 app@sharepoint 用户代表启动操作的用户或管理员执行了该活动。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](#the-appsharepoint-user-in-audit-records)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
