@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: 获取有关在 Office 365 高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
-ms.openlocfilehash: 1a88d554d06b575f3efb0d01534008b6c35032e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 49c7614eb1fec4e61fb374fb637093fd6e860619
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600499"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557882"
 ---
-# <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>管理 Office 365 高级电子数据展示中的相关性设置
+# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>管理高级电子数据展示（经典）中的相关性设置
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -73,7 +73,7 @@ ms.locfileid: "41600499"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [定义问题和分配用户](define-issues-and-assign-users.md)
   
