@@ -16,29 +16,29 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 可将标签应用于 Microsoft Teams、Office 365 组和 SharePoint 网站。
-ms.openlocfilehash: 1e08df688a62d6c15ef0100b5379e62482ed7b50
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Office 365 组中的内容。
+ms.openlocfilehash: 934999f3c1b55c738ebc30eb9b87c65c5cc08376
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372030"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550419"
 ---
-# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用
+# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度标签保护 Microsoft Teams 网站、Office 365 组和 SharePoint 网站中的内容（公共预览版）
 
-在 [Microsoft 365 合规中心](https://protection.office.com/)创建敏感度标签时，现可将其应用于以下容器：Microsoft Teams、Office 365 组和 SharePoint 网站。 使用标签设置来控制这些容器的以下选项：
+现在，在 [Microsoft 365 合规中心](https://protection.office.com/)内创建敏感度标签时，可以将它们应用于以下容器：Microsoft Teams 网站、Office 365 组和 SharePoint 网站。 使用以下标签设置来帮助保护这些容器中的内容：
 
 - 与 Office 365 组连接的团队网站的隐私（公共或专用）
 - 外部用户访问
 - 非托管设备的访问 
 
-将此标签应用于受支持的容器之一时，标签会自动向连接的 SharePoint 网站或团队网站应用所配置的选项。 
+如果你将此标签应用于受支持的容器，此标签会自动向连接的网站或组应用所配置的选项。 
 
-但是，这些容器中的内容不会为设置继承标签，例如标签名称、视觉标记或加密。 要在 SharePoint 网站或团队网站中标记文件，请参阅[启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
+但是，这些容器中的内容不会为设置继承标签，例如标签名称、视觉标记或加密。 这样，用户可以标记 SharePoint 网站或团队网站中的文档（请参阅[为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)）。
 
 ## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>关于 Microsoft Teams、Office 365 组和 SharePoint 网站的公共预览版
 
-Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步向租户推出，并且在最终发布之前可能会发生更改。 此公共预览版不适用于 Office 365 内容交付网络 (CDN)。
+适用于 Microsoft Teams 网站、Office 365 组和 SharePoint 网站的敏感度标签正在逐步向租户推出，在最终发布之前可能会有所改变。 此公共预览版不适用于 Office 365 内容交付网络 (CDN)。
 
 在你为新设置启用此预览版和配置敏感度标签之前，用户可在其应用中查看和应用敏感度标签。 例如，在 Word 中：
 
@@ -77,9 +77,11 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 在这个新的“**网站和组设置**”页面中，配置以下设置：
 
-- **连接 Office 365 组的团队网站的隐私**：自动选择默认设置“**公共**”，它意味着你组织中的每个人都可访问应用了此标签的团队网站。 如果仅希望组织中获得批准的成员访问组的团队网站，请选择“**专用**”。 
+- **与 Office 365 组连接的团队网站的隐私**：默认设置“无 - 让用户选择谁可以访问网站”**** 目前正在逐步向租户推出。 如果需要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，请保留此默认设置。
     
-    所选设置会替代之前可能已为组配置的隐私设置，并锁定隐私值，使其仅可通过先从团队网站或组中删除敏感度标签来进行更改。 删除敏感度标签后，该标签中的隐私设置仍保留，且你现可在必要时更改它。
+    选择“公共”**** 或“私有”**** 可以设置和锁定将此标签应用于容器时的隐私设置。 如果希望组织中的任何人都可以访问应用了此标签的团队网站或组，请选择“公共”****；如果希望仅限组织中已批准的成员访问，请选择“私有”****。 
+    
+    “公共”**** 或“私有”**** 设置替换之前可能已为团队或组配置的任何隐私设置，并锁定隐私值，因此只有先从容器中删除敏感度标签才能更改它。 在你删除敏感度标签后，标签中的隐私设置仍保留，用户现在可以再次更改它。
 
 - **外部用户访问**：控制组所有者是否可[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
@@ -90,9 +92,11 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 > [!IMPORTANT]
 > 将标签应用于团队、组或网站时，只有这些网站和组设置会生效。 其他标签设置（例如加密和内容标记）不适用于团队、组或网站中的内容。
 > 
-> 同样，如果你已创建标签并且未打开这些网站和组设置，则当用户创建团队、组和网站时，该标签仍可用，但将仅应用标签名称。
+> 正在逐步向租户推出：当用户创建团队、组和网站时，只有带有网站和组设置的标签才可供选择。 如果当前可以向容器应用未启用网站和组设置的标签，只有标签名称会应用于容器。
 
 如果尚未发布敏感度标签，现可通过[将其添加到敏感度标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)进行发布。 分配有含有此标签的敏感度标签策略的用户，将能够为网站和组选择。
+
+根据标签策略，在向容器应用此标签时，只有策略设置“默认将此标签应用于文档和电子邮件”**** 适用。 其他策略设置都不会应用，包括强制标记、需要用户理由和自定义帮助页面链接。
 
 ## <a name="sensitivity-label-management"></a>敏感度标签管理
 
@@ -115,7 +119,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 **修改和删除已发布的标签：**
 
-如果修改或删除一个或多个标签策略中包含的敏感度标签，则这些操作可能会导致所有团队、组和网站的创建失败。 若要避免这种情况，请使用以下指南：
+如果修改或删除的敏感度标签已启用网站和组设置，且包含在一个或多个标签策略中，这些操作可能会导致所有团队、组和网站的创建失败。 若要避免这种情况，请使用以下指南：
 
 1. 从包含敏感度标签的所有标签策略中删除该标签。
 
@@ -137,7 +141,7 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 ## <a name="apply-a-sensitivity-label-to-a-new-team"></a>为新团队应用敏感度标签
 
-在 Microsoft Teams 中创建新团队时，用户可以选择敏感度标签。 当他们选择敏感度级别时，隐私设置会根据需要进行更改。 根据为标签选择的外部用户访问设置，用户可以或不能将组织外部人员添加到团队中。
+在 Microsoft Teams 中创建新团队时，用户可以选择敏感度标签。 如果用户从“敏感度”**** 下拉列表中选择标签，隐私设置可能会更改，以反映标签配置。 根据为标签选择的外部用户访问设置，用户可以或不能将组织外部人员添加到团队中。
 
 [了解有关 Teams 的敏感度标签的详细信息](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
@@ -157,13 +161,13 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 
 ## <a name="apply-a-sensitivity-label-to-a-new-site"></a>为新网站应用敏感度标签
 
-管理员和最终用户可在[创建新式团队网站和通信网站时](/sharepoint/create-site-collection)选择敏感度标签。
+管理员和最终用户可以在[创建新式团队网站和通信网站时](/sharepoint/create-site-collection)选择敏感度标签，并展开“高级设置”****：
 
-当用户创建新式团队和通信网站时，默认情况下已选择敏感度标签。 用户可以选择帮助图标，以了解有关标签的详细信息。
+![创建网站并在“敏感度”下选择一个选项](../media/sensitivity-label-new-communication-site.png)
 
-![创建网站并选择“敏感度”下的选项](../media/sensitivity-label-new-communication-site.png)
+下拉列表框显示选择的标签名称，帮助图标显示所有标签名称及其工具提示，这可帮助用户确定要应用的正确标签。
 
-当用户浏览网站时，可以查看标签的名称和应用的策略。
+在标签应用后，当用户浏览网站时，可以看到标签名称和所应用的策略。 例如，此网站标记为“机密”****，且隐私设置设为“私有”****：
 
 ![已应用敏感度标签的网站](../media/sensitivity-label-site.png)
 
@@ -319,14 +323,10 @@ Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签将逐步
 对 Microsoft Teams、Office 365 组和 SharePoint 网站的敏感度标签有疑问？ 检查以下内容：
 
 ### <a name="labels-not-visible-after-publishing"></a>发布后标签不可见
-如果在启用这些设置或修改敏感度标签的说明后创建团队或 Office 365 组时遇到问题，请在保存标签后等待几小时，然后再次尝试创建团队或组。 有关信息，请参阅[计划在创建或更改敏感度标签后推出](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)。
+如果在启用这些设置或修改敏感度标签的名称或工具提示后无法创建网站或 Office 365 组，请在保存标签后等待几小时，然后再次尝试创建团队或组。 有关信息，请参阅[计划在创建或更改敏感度标签后推出](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)。
 
-如果仍无法在 SharePoint Online 中看到新的敏感度标签，请与 [Microsoft 支持部门](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)联系。
+如果仍无法在 SharePoint Online 中看到新的敏感度标签，请联系 [Microsoft 支持部门](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
 ### <a name="team-group-or-sharepoint-site-creation-errors"></a>团队、组或 SharePoint 网站创建错误
-如果在公共预览期间遇到创建错误，则你有两个选择：
-
-- 确保敏感度标签对任何用户都不是强制性的。
-
-- 你可按照[在 PowerShell 中启用敏感度标签支持](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)中的相同说明，为 Microsoft Teams、Office 365 组和 SharePoint 网站关闭敏感度标签。 但是如果要禁用预览，在第 5 步 中使用 `$setting["EnableMIPLabels"] = "False"` 禁用此功能。
+如果在公共预览版期间遇到创建错误，可按照[在 PowerShell 中启用敏感度标签支持](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)中的相同说明操作，为 Microsoft Teams 网站、Office 365 组和 SharePoint 网站禁用敏感度标签。 但是如果要禁用预览，在第 5 步 中使用 `$setting["EnableMIPLabels"] = "False"` 禁用此功能。
 
