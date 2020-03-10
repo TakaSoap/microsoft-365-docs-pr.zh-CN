@@ -1,7 +1,7 @@
 ---
 title: 了解 Microsoft 威胁防护中的高级搜寻查询语言
 description: 创建你的第一个威胁搜寻查询，并了解高级搜寻查询语言的常见运算符和其他方面
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、语言、学习、第一个查询、遥测、事件、遥测、自定义检测、架构、kusto、运算符、数据类型
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、语言、学习、第一个查询、遥测、事件、遥测、自定义检测、架构、kusto、运算符、数据类型、powershell下载，查询示例
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,83 +17,96 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eda9b893057afd54a644f0091bf4e1b421bd5439
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 7f2cf7f62060774343354467d27b76456f6581fc
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234691"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "42567023"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
 **适用于：**
 - Microsoft 威胁防护
 
-
-
 高级搜寻基于 [Kusto 查询语言](https://docs.microsoft.com/azure/kusto/query/)。 你可以使用 Kusto 语法和运算符来构建查询，该查询可以在专为高级搜寻构造的[架构](advanced-hunting-schema-tables.md)中查找信息。 若要更好地了解这些概念，请运行你的第一个查询。
 
 ## <a name="try-your-first-query"></a>尝试你的第一个查询
 
-在 Microsoft 365 安全中心，转到“**搜寻**”以运行你的第一个查询。 使用以下示例：
+在 Microsoft 365 安全中心中，转到 "**搜寻**" 以运行第一个查询。 使用以下示例：
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents 
+// Finds PowerShell execution events that could involve a download
+union DeviceProcessEvents, DeviceNetworkEvents
 | where Timestamp > ago(7d)
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
 这是它在高级搜寻中的显示效果。
 
-![Microsoft Defender ATP 高级搜寻查询的图像](../../media/advanced-hunting-query-example.png)
+![Microsoft 威胁防护高级搜寻查询的图像](../../media/advanced-hunting-query-example.png)
 
-查询将从描述其用途的简短批注开始。 如果你以后决定保存查询并与组织中的其他人共享，这将很有用。
+已将简短注释添加到查询的开头，以描述它的用途。 如果你后来决定保存查询并与组织中的其他人共享它，这将会帮助。 
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents
+// Finds PowerShell execution events that could involve a download
 ```
 
-查询本身通常以表名称开头，后跟一系列由管道 (`|`) 开头的元素。 在此示例中，我们首先添加表名称 `DeviceProcessEvents`，然后根据需要添加管道元素。
+查询本身通常以表名称开头，后跟一系列由管道 (`|`) 开头的元素。 在此示例中，我们首先创建两个表的联合， `DeviceProcessEvents`并`DeviceNetworkEvents`根据需要添加管道元素。
 
-第一个管道元素是范围为前 7 天的时间筛选器。 尽可能缩小时间范围可以确保查询运行良好、返回易于管理的结果并且不会超时。
+```kusto
+union DeviceProcessEvents, DeviceNetworkEvents
+```
+第一个管道元素是范围为前七天的时间筛选器。 尽可能缩小时间范围可以确保查询运行良好、返回易于管理的结果并且不会超时。
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
-时间范围后紧跟表示 PowerShell 应用程序的文件搜索。
+时间范围紧跟在搜索代表 PowerShell 应用程序的进程文件名称后。
 
-```kusto
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
+```
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
-之后，查询将查找通常与 PowerShell 一起使用以下载文件的命令行。
+随后，查询将在命令行中查找通常用于使用 PowerShell 下载文件的字符串。
 
 ```kusto
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
 ```
-
-现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project` 将返回特定列，并且 `top` 将限制结果数量，以使结果格式良好、大小合理且易于处理。
+现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project`返回特定列并`top`限制结果数，以确保结果格式良好且相当大且易于处理。
 
 ```kusto
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-单击“**运行查询**”以查看结果。 你可以展开屏幕视图，以便专注于你的搜寻查询和结果。
+单击“**运行查询**”以查看结果。 选择查询编辑器右上角的展开图标以重点关注您的搜索查询和结果。
+
+![高级搜寻查询编辑器中的展开控件的图像](../../media/advanced-hunting-expand.png)
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>了解高级搜寻的常见查询运算符
 
@@ -142,6 +155,6 @@ DeviceProcessEvents
 ## <a name="related-topics"></a>相关主题
 - [主动搜寻威胁](advanced-hunting-overview.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [在设备和电子邮件中搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

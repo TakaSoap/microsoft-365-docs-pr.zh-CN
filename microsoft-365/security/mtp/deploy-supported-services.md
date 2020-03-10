@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19907517f94cc8b6dbf041cccf56f1d8e232f2f
-ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
+ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374200"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569038"
 ---
 # <a name="deploy-supported-services"></a>部署支持的服务
 
@@ -36,7 +36,7 @@ ms.locfileid: "42374200"
 [Microsoft 威胁防护](microsoft-threat-protection.md)集成了各种 Microsoft 安全服务，以提供针对复杂攻击的集中式检测、预防和调查功能。 本文介绍了受支持的服务、其许可要求、与部署一个或多个服务相关的优势和限制，以及如何单独完全部署它们的链接。
 
 ## <a name="supported-services"></a>支持的服务
-[Microsoft 365 e5、E5 security、a5 或 A5 安全或有效的许可证组合](prerequisites.md#licensing-requirements)可提供对以下受支持服务的访问权限，并使您能够在 microsoft 365 安全中心中使用 Microsoft 威胁防护。
+[Microsoft 365 e5、E5 Security 或 A5 许可证或有效的许可证组合](prerequisites.md#licensing-requirements)可提供对以下受支持服务的访问权限，并使您能够在 microsoft 365 安全中心中使用 Microsoft 威胁防护。
 
 | 支持的服务 | 说明 |
 | ------ | ------ |

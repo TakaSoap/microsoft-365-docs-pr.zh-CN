@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73c4c9864713432d318b0b3cec9fbaf395deff45
-ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
+ms.openlocfilehash: fa970b28939ad43bf6a2717e603013277bc9130f
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374140"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569161"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
@@ -36,7 +36,7 @@ Microsoft 威胁防护通过集成 Microsoft Defender 高级威胁防护 (ATP)�
 若要获得最佳保护并优化 Microsoft 威胁防护，建议在网络上部署所有适用的受支持的服务。 有关详细信息，请[参阅部署支持的服务](deploy-supported-services.md)。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>检查许可证资格和必需权限
-Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证组合提供了对受支持的服务的访问权限，并允许您在 Microsoft 365 安全中心中使用 Microsoft 威胁防护。
+Microsoft 365 E5、E5 Security 或 A5 许可证或有效的许可证组合提供了对受支持的服务的访问权限，并允许您在 Microsoft 365 安全中心中使用 Microsoft 威胁防护。
 
 有关许可的详细信息，请[阅读许可要求](prerequisites.md#licensing-requirements)。
 

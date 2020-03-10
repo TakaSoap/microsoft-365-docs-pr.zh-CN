@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ef26a2ebc25d7f55e7dc22347d85767dab970536
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 3e18759387525ec600c24f74c96d6cddf206fc82
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372050"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569037"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 
@@ -40,8 +40,6 @@ ms.locfileid: "42372050"
 - Microsoft 365 E5 安全版
 - Office 365 E5 和 "企业移动性 + 安全性 E5 （EMS E5）" 和 Windows E5
 - Microsoft 365 A5
-- Microsoft 365 A5 安全性
-- Office 365 A5 和 "Enterprise 可移动性 + Security A5 （EMS A5）" 和 Windows A5
 
 有关详细信息，请[查看 Microsoft 365 企业版服务计划](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 
