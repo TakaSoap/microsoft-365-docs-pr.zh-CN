@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: 3/05/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: eea03384b77dbcea29196c9f8142f748af0bf5be
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 3e9dd5c02b3502eab2d3abfe5d65b5baebe18cda
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557581"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "42569178"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
