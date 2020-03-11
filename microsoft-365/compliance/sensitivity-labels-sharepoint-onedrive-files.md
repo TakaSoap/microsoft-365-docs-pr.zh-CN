@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: 0f7c2c59327874d279872d4fd9bb7d0b9d6eb863
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: ba65624d0c7a67eb4a5be55a7f3e08c217039e83
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410029"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583139"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
 在此预览之前，当您将包含加密的敏感度标签应用于存储在 SharePoint 和 OneDrive 中的 Office 文件时，该服务无法处理这些文件的内容。 在这些情况下，合著、电子数据丢失、数据丢失防护、搜索、Delve 和其他协作功能不起作用。 此预览对应用了敏感度标签的新文件和更改的文件启用了这些功能，其中包括基于云的密钥的加密：
 
-- SharePoint 可识别应用于 SharePoint 和 OneDrive 中的 Word、Excel 和 PowerPoint 文件的敏感度标签。当文件存储在 SharePoint 中时，将删除来自 Azure 信息保护的加密，以便可以处理文件内容，并然后，在下载文件时，将重新应用标签中的加密设置。 有关在下载文档之前如何保护文档的信息，请参阅[OneDrive For business 和 SharePoint Online 中的数据加密](data-encryption-in-odb-and-spo.md)。
- 
-- 若要使 SharePoint 在上载时对文件进行解密，上载已标记和已加密文件的用户必须至少具有查看该文件的使用权限。 SharePoint 不会对用户无法在 SharePoint 外部打开的文件进行解密。
+- SharePoint 可识别应用于 SharePoint 和 OneDrive 中的 Word、Excel 和 PowerPoint 文件的敏感度标签。当文件存储在 SharePoint 中时，将删除来自 Azure 信息保护的加密，以便可以对文件内容进行处理。 有关在将文档存储在 SharePoint 中时如何保护文档的信息，请参阅[OneDrive For business 和 SharePoint Online 中的数据加密](data-encryption-in-odb-and-spo.md)。
 
-- 当您从 SharePoint 或 OneDrive 下载或访问文件时，敏感度标签和任何加密设置将随文件一起重新应用，并且在保存文件的任何位置都将强制执行这些设置。
+- 从 SharePoint 或 OneDrive 下载或访问此文件时，标签中的敏感度标签和任何加密设置都会重新应用于该文件，并且在保存文件的任何位置都将强制执行这些设置。 由于这种行为，请确保提供用户指导以独占方式使用标签来保护文档。 有关详细信息，请参阅[信息权限管理（边缘）选项和敏感度标签](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)。
+
+- 为了使 SharePoint 能够在上载时从文件中删除加密，上载已标记和已加密文件的用户必须至少具有查看该文件的使用权限。 如果用户无法在 SharePoint 外部打开加密，则 SharePoint 不会从文件中删除加密。
 
 - 使用 web 上的 Office （Word、Excel、PowerPoint）打开和编辑具有应用加密的敏感度标签的 Office 文件。 将强制实施通过加密分配的权限。 在 web 上使用 Word 时，您还可以在编辑这些文档时使用自动标签。
 
@@ -89,6 +89,8 @@ ms.locfileid: "42410029"
 - Office 桌面应用程序和移动应用程序不支持共同创作。 相反，这些应用将继续以独占编辑模式打开文件。
 
 - 如果将带标签的文档上载到 SharePoint，并使用服务主体名称中的帐户来应用加密，则无法在 web 上的 Office 中打开该文档。 示例方案包括 Microsoft 云应用安全和通过电子邮件发送给团队的文件。
+
+- 用户可以在脱机或进入睡眠模式后遇到保存问题，而不是在使用 Office 的情况下使用 Word、Excel 或 PowerPoint 的桌面和移动应用程序。 对于这些用户，当他们恢复 Office 应用程序会话并尝试保存更改时，他们会看到 "上载失败" 消息，其中包含一个用于保存副本而不是保存原始文件的选项。 
 
 - 以下列方式加密的文档无法在 web 上的 Office 中打开：
     - 使用本地密钥的加密（"保留自己的密钥" 或 HYOK）

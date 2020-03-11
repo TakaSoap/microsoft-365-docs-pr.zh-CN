@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
-ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
+ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678920"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42587303"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -62,8 +62,8 @@ ms.locfileid: "41678920"
 |MarkAsSpamBulkMail|打开|打开|此设置仅在 PowerShell 中可用|
 
 在被称为高级垃圾邮件筛选器（ASF）的反垃圾邮件策略中，有几个其他参数处于弃用的过程中。 有关这些功能的折旧时间线的详细信息，将在本主题之外进行传递。
- 
- 我们建议您为标准和严格**级别关闭这些**设置：
+
+我们建议您为标准和严格**级别关闭这些**设置：
 
 |安全功能名称|备注|
 |---------|---------|
@@ -145,10 +145,9 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |启用反欺骗保护|打开|打开||
 |启用未经身份验证的发件人（标记）|打开|打开||
 |如果电子邮件由不允许欺骗您的域的人发送|将邮件移到收件人的 "垃圾邮件" 文件夹|隔离邮件||
-|EnableAuthenticationSafetyTip|True|True|此设置仅在 PowerShell 中可用|
-|EnableAuthenticationSoftPassSafetyTip|False|True|此设置仅在 PowerShell 中可用|
 |EnableSuspiciousSafetyTip|False|True|此设置仅在 PowerShell 中可用|
 |TreatSoftPassAsAuthenticated|True|False|此设置仅在 PowerShell 中可用|
+
 
 |高级设置安全功能名称|标准|全|评论|
 |---------|---------|---------|---------|

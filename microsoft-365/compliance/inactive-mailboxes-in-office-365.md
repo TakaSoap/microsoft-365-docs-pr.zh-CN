@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: 了解如何通过将邮箱转变成非活动邮箱来保留以前员工的邮箱内容。 为此，可以将邮箱置于诉讼保留状态，或将 Office 365 保留策略应用于邮箱，然后删除相应的 Office 365 帐户。
-ms.openlocfilehash: b5c6730a30ac0efba8f00abc01c0b2c26bf9e562
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 958572fc922f3bef140773369124b1c45147ad16
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072899"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583039"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Office 365 中的非活动邮箱概述
 
@@ -70,13 +70,21 @@ ms.locfileid: "42072899"
 如果与安全 & 合规中心中的电子数据展示事例相关联的保留在邮箱上，然后邮箱或用户的 Office 365 帐户被删除，则该邮箱将成为非活动邮箱。 但是，我们建议您不要使用电子数据展示事例保留以将邮箱设为非活动状态。 这是因为电子数据展示事例适用于与法律问题相关的特定的与时间绑定的情况。 有时，法律案例可能会结束，与事例关联的保留将被删除，并且电子数据展示事例将关闭。 实际上，如果放置在非活动邮箱的保留与电子数据展示事例相关联，然后释放保留或电子数据展示事例关闭（或删除），则非活动邮箱将被永久删除。 此外，不能创建基于时间的电子数据展示保留。 这意味着将永久保留非活动邮箱中的内容，或直到删除保留和删除非活动邮箱。 因此，我们建议对非活动邮箱使用诉讼保留或 Office 365 保留策略。
   
 有关电子数据展示案例和保留的详细信息，请参阅[电子数据展示事例](ediscovery-cases.md)。
-  
+
 ## <a name="inactive-mailboxes-and-office-365-labels"></a>非活动邮箱和 Office 365 标签
 
 Office 365 中的标签可帮助您对组织中的电子邮件数据进行分类以进行管理，并根据该分类强制实施保留规则。 标签可由用户手动或由管理员自动应用于电子邮件项目，并且电子邮件项目只能分配有一个标签。 如果用户邮箱中的单个电子邮件项目已分配标签（并已将其配置为保留或保留，然后删除项目），邮箱或用户的 Office 365 帐户将被删除，则该邮箱将成为非活动邮箱。 与电子数据展示事例保留类似，我们不建议使用标签将邮箱设为非活动状态。 相反，我们建议使用诉讼保留或 Office 365 保留策略。 在标签的情况下，您可能不知道已将某个标签应用于电子邮件项目，然后在删除用户帐户时不小心发出非活动邮箱。 
   
 有关标签的详细信息，请参阅[Office 365 中的标签概述](labels.md)。
   
+## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>非活动邮箱和自动扩展存档
+
+无法恢复或还原配置为自动扩展存档的非活动邮箱。 如果需要从自动扩展存档中恢复非活动邮箱中的数据，建议您使用内容搜索工具导出邮箱中的数据，然后将其导入到其他邮箱。 有关搜索非活动邮箱和导出搜索结果的分步说明，请参阅：
+
+- [Office 365 中的内容搜索](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+
+- [导出内容搜索结果](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)
+
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>非活动邮箱和 Exchange MRM 保留策略
 
 如果 Exchange 保留策略（Exchange Online 中的 "邮件记录管理" 或 "MRM" 功能）在邮箱变为非活动状态时应用于邮箱，则任何删除策略（是使用**删除**保留操作配置的保留标记）将继续在非活动邮箱上进行处理。 也就是说，在保留期过期时，标记有删除策略的项目会移到"可恢复的项目"文件夹中。 在保留期过期时，这些项目会从非活动邮箱中清除。 如果未为非活动邮箱指定保留持续时间，则 "恢复项目" 文件夹中的项目将无限期保留。 
