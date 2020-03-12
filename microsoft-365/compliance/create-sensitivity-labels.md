@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护。
-ms.openlocfilehash: d2300a54583c0b2d12de86e3dbb5f3116daf6460
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: b3f998ec7f52403c4b3676fb08976aacdc1f7d0f
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543128"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583129"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -154,6 +154,23 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 
 此外，还可使用此 cmdlet 在标签策略中添加和删除标签。
 
+## <a name="removing-and-deleting-labels"></a>移除和删除标签
+
+在生产环境中，不太可能需要从标签策略中移除敏感度标签，也不太可能需要删除敏感度标签。 更有可能是在初始测试阶段需要执行这两项操作之一。 请务必了解执行这两项操作之一时所发生的情况。
+
+从标签策略中移除标签比删除标签的风险要小；如果需要，稍后始终可以将标签添加回标签策略中：
+
+- 如果从标签策略中移除标签，让标签不再发布给最初指定的用户，那么当标签策略下次刷新时，标签就不再可供这些用户在 Office 应用程序中选择。 不过，如果已将标签应用于文档或电子邮件，那么标签不会从此类内容中移除。 由标签应用的任何加密都会保留，且基础保护模板也会保持已发布状态不变。 
+
+- 对于已移除但以前应用于内容的标签，在 Word、Excel 和 PowerPoint 中使用内置标签的用户仍会在状态栏中看到已应用标签名称。 同样，已移除但以前应用于 SharePoint 网站的标签仍会在“敏感度”**** 列中显示标签名称。
+
+相比之下，如果删除标签：
+
+- 如果标签应用了加密，则会存档基础保护模板，这样以前受保护的内容就仍能打开。 因为有此已存档保护模板，所以无法创建同名的新标签。 虽然可以使用 [PowerShell](https://docs.microsoft.com/powershell/module/aipservice/remove-aipservicetemplate) 删除保护模板，但请不要这样做，除非你确定无需打开使用已存档模板加密的内容。
+
+- 对于桌面应用程序：元数据中的标签信息会保留，但由于无法再进行标签 ID 到名称的映射，导致用户看不到显示的已应用标签名称（例如，在状态栏中），因此用户会假定内容未标记。 如果标签应用了加密，则会保留加密，且用户仍会在内容打开时看到当前已存档保护模板的名称和说明。
+
+- 对于 Office 网页版：用户在状态栏或“敏感度”**** 列中看不到标签名称。 元数据中的标签信息仅在标签未应用加密的情况下保留。 如果标签应用了加密，且你已[为 SharePoint 和 Onedrive 启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)，那么元数据中的标签信息就会遭移除，且加密也会遭撤消。 
 
 ## <a name="next-steps"></a>后续步骤
 
