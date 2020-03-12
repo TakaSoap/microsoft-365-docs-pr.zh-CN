@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 要在 Office 365 或 Microsoft 组织中实现记录管理策略，请使用将内容声明为记录的保留标签。 然后发布或自动应用保留记录标签。
-ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081644"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42586720"
 ---
 # <a name="overview-of-records"></a>记录概述
 
@@ -70,7 +70,7 @@ ms.locfileid: "42081644"
 
 ## <a name="using-retention-labels-to-declare-records"></a>使用保留标签声明记录
 
-创建保留标签时，可视需要使用保留标签将内容分类为记录。 要将内容声明为记录，你需要执行下列操作：
+创建保留标签时，可视需要使用保留标签将内容分类为记录。 若要将内容声明为记录，请按照下列步骤操作：
 
 1. 创建保留标签。 在 Microsoft 365 合规性中心，转到“记录管理”****\>“文件计划”****。 在“文件计划”**** 页面上，单击“创建标签”****。
 
@@ -115,7 +115,7 @@ ms.locfileid: "42081644"
 
 ### <a name="locking-and-unlocking-a-record"></a>锁定和解锁记录
 
-记录标签分配到文档后，默认成员组（“参与”权限级别）中的任何用户均可将记录解锁或者锁定已解锁的记录。
+记录标签分配到文档后，任何有参与权限或更窄权限水平的用户可解锁记录或锁定未解锁的记录。
 <br/><br/>
 
 ![记录状态显示记录文档已解锁](../media/recordversioning9.png)
