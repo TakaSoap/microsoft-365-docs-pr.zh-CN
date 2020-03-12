@@ -16,12 +16,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: 本文提供了发件人尝试向 Office 365 中的收件箱发送邮件时遇到的问题的故障排除信息，以及向 Office 365 客户群发邮件的最佳做法。
-ms.openlocfilehash: 5a672eacacafdb1d9660c2218aa54ac1947acb32
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 72dd0360038e58c2501728d9032fef95f81d90c2
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598159"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604059"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>向 Office 365 发送故障排除邮件
 
@@ -170,7 +170,7 @@ ms.locfileid: "41598159"
 
   `unsubscribe.bulkmailer.com`
 
-  `profiles.excite.com`
+  `profile.excite.com`
 
   `options.yahoo.com`
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5861348bb7c447c878f7f203acfd39fdf4c0a5f8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 733abf925c80f90527b67660b84aea3e0482e906
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078759"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543751"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -65,14 +65,14 @@ ms.locfileid: "42078759"
 
 通过通信合规性策略，您可以选择将以下一个或多个通信平台中的邮件作为组或独立的源进行扫描。 默认情况下，跨这些平台捕获的通信每个策略保留7年，即使用户离开组织并删除了其邮箱也是如此。
 
-- **Microsoft 团队**：可以扫描公共和私有 Microsoft 团队频道和个人聊天中的交流通信和相关附件。 团队聊天匹配通信合规性策略条件每24小时处理一次，并在通信合规性报告中可用。 使用以下组管理配置监督团队中的个人用户聊天和通道通信：
+- **Microsoft 团队**：可以扫描公共和私有 Microsoft 团队频道和个人聊天中的交流通信和相关附件。 团队聊天和附件匹配通信合规性策略条件可能需要长达24小时才能完成处理。 使用以下组管理配置监督团队中的个人用户聊天和通道通信：
 
     - **对于团队聊天通信：** 分配单个用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 此设置适用于一对一或一对多的用户/聊天关系。
     - **对于团队渠道通信：** 分配要扫描的每个 Microsoft 团队频道或 Office 365 组，其中包含特定用户的通信合规性策略。 如果将同一用户添加到其他 Microsoft 团队频道或 Office 365 组，请确保将这些新的频道和组添加到通信合规性策略中。
 
-- **Exchange 电子邮件**：作为 Microsoft 365 或 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件扫描。 与通信合规性策略条件匹配的电子邮件和附件可立即在通信合规性报告中使用。 通信合规性支持的附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
+- **Exchange 电子邮件**：作为 Microsoft 365 或 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件扫描。 Exchange 电子邮件和与通信合规性策略条件匹配的附件可能需要长达24小时才能完成处理。 通信合规性支持的附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
-- **Skype For Business online**：可以监督 skype For business online 中的聊天通信和相关附件。 Skype for Business Online 聊天匹配通信合规性策略条件每24小时处理一次，然后在通信合规性报告中可用。 受监督聊天对话源于[以前在 Skype for Business Online 中保存的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置监督 Skype for Business Online 中的用户聊天通信：
+- **Skype For Business online**：可以监督 skype For business online 中的聊天通信和相关附件。 符合通信合规性策略条件的 Skype for Business Online 聊天可能需要长达24小时才能完成处理。 受监督聊天对话源于[以前在 Skype for Business Online 中保存的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置监督 Skype for Business Online 中的用户聊天通信：
 
     - **对于 Skype For Business Online 聊天通信**：分配个人用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 此设置适用于一对一或一对多的用户/聊天关系。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42078759"
 
     - [即时 Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
-    - [LinkedIn](archive-linkedin-data.md)
+    - [领英](archive-linkedin-data.md)
     - SAP SuccessFactors
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [自定义数据连接器](archiving-third-party-data.md)
@@ -165,7 +165,7 @@ ms.locfileid: "42078759"
 
 您输入的每个单词将单独应用（必须只有一个词适用于策略条件应用于电子邮件或附件）。 例如，我们将使用条件，**邮件包含这些词语中的任何词语**，关键字 "银行家" 和 "内幕交易" 由逗号（银行家，内幕交易）分隔。 该策略适用于任何包含 "银行家" 或短语 "内幕交易" 的邮件。 只有出现其中一个字词或短语，才能应用此策略条件。 邮件或附件中的单词必须与您输入的内容完全匹配。
 
-若要扫描相同关键字的电子邮件和附件，请为您希望在邮件中扫描的术语创建一个包含[自定义关键字词典](create-a-keyword-dictionary.md)的[数据丢失防护策略](create-test-tune-dlp-policy.md)。 此策略配置标识在电子邮件**或**电子邮件附件中显示的已定义关键字。 使用标准条件策略设置（*邮件包含以下任何词语*和*附件包含这些词语中的*任意词语）标识邮件中和附件中的术语时，需要在邮件和附件**** 中显示这些术语。
+若要扫描相同关键字的电子邮件和附件，请为您希望在邮件中扫描的术语创建一个包含[自定义关键字词典](create-a-keyword-dictionary.md)的[数据丢失防护策略](create-test-tune-dlp-policy.md)。 此策略配置标识在电子邮件**或**电子邮件附件中显示的已定义关键字。 使用标准条件策略设置（*邮件包含以下任何词语*和*附件包含这些词语中的*任意词语）标识邮件中和附件中的术语时，需要在邮件和附件**BOTH**中显示这些术语。
   
 #### <a name="enter-multiple-conditions"></a>输入多个条件
 
@@ -286,16 +286,16 @@ ms.locfileid: "42078759"
 
 您还可以在统一审核日志中或使用[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet 查看审核活动。
 
-例如，以下示例返回所有监管审核活动（策略和规则）的活动，并列出每个活动的详细信息：
+例如，下面的示例返回所有监管审核活动（策略和规则）的活动：
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -Operations SupervisoryReviewTag
 ```
 
 本示例返回您的通信合规性策略的更新活动：
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？

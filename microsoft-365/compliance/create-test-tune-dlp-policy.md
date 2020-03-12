@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: 818a0db46d0c2a763c1c90b585a6d7a0fd403b94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077158"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604179"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -38,7 +38,7 @@ DLP 使用内容分析引擎检查电子邮件和文件的内容，查找敏感�
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>DLP 如何检测敏感信息
 
-敏感信息由正则表达式（RegEx）模式匹配标识，并与其他指示符（如特定关键字与匹配模式的接近程度）相结合。 这是信用卡号的一个示例。 签证信用卡号有16位数字。 但是，可以用不同的方式（例如，1111-1111-1111-1111、1111 1111 1111 1111 或1111111111111111）编写这些数字。
+敏感信息通过正则表达式（RegEx）模式匹配来标识，并与其他指示符（如特定关键字与匹配模式的接近程度）相结合。 这是信用卡号的一个示例。 签证信用卡号有16位数字。 但是，可以用不同的方式（例如，1111-1111-1111-1111、1111 1111 1111 1111 或1111111111111111）编写这些数字。
 
 任何16个数字字符串不一定是信用卡号，它可以是来自技术支持系统的票证号，也可以是一段硬件的序列号。 若要说明信用卡号和无害的16位字符串之间的区别，请执行计算（校验和），以确认这些号码与各种信用卡品牌中的已知模式相匹配。
 

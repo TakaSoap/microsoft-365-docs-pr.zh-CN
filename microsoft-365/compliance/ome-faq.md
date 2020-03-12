@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关 Office 365 中的新邮件保护功能如何工作的问题？ 在此处查找答案。
-ms.openlocfilehash: 032aa1dacc89aea63cf15080efb80de61e9a6f22
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8d0b65ad60365154f8a35c5afe0b71b5a50d29a8
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597809"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605289"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 邮件加密 FAQ
 
@@ -61,7 +61,7 @@ OME 将电子邮件加密和权限管理功能结合在一起。 权限管理功
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 信息保护执行 OME 和 BYOK 更改 Microsoft 对第三方数据请求（如 subpoenas）的方法？
 
-不是。 OME 以及提供和控制您自己的加密密钥（称为 BYOK）的选项不是为了响应执法 subpoenas 而设计的。 OME，BYOK for Azure 信息保护是针对以法规为重点的客户而设计的。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。 （请阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们会定期发布我们收到的请求的详细信息。 有关第三方数据请求的详细信息，请参阅对[政府和执法版强制请求的响应，以访问](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)Microsoft 信任中心上的客户数据。 此外，请参阅[在线服务条款（OST）](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的 "客户数据泄露"。
+否。 OME 以及提供和控制您自己的加密密钥（称为 BYOK）的选项不是为了响应执法 subpoenas 而设计的。 OME，BYOK for Azure 信息保护是针对以法规为重点的客户而设计的。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。 （请阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们会定期发布我们收到的请求的详细信息。 有关第三方数据请求的详细信息，请参阅对[政府和执法版强制请求的响应，以访问](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)Microsoft 信任中心上的客户数据。 此外，请参阅[在线服务条款（OST）](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的 "客户数据泄露"。
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>此功能与旧版 Office 365 邮件加密（OME）和信息权限管理（IRM）功能有何关系？
 
@@ -87,7 +87,7 @@ Office 365 邮件加密的新功能是现有 IRM 和旧版 OME 解决方案的�
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>我的组织使用 Active Directory 权限管理，我是否可以使用此功能？
 
-不是。 如果您使用的是 Active Directory 权限管理服务（AD RMS）的 Exchange Online，则不能立即启用这些新功能。 相反，您需要先将[AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。
+否。 如果您使用的是 Active Directory 权限管理服务（AD RMS）的 Exchange Online，则不能立即启用这些新功能。 相反，您需要先将[AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的组织具有 Exchange 混合部署。 我是否可以使用此功能？
 
@@ -115,7 +115,8 @@ Office 365 用户可以从 Outlook for Windows 和 Mac （2013和2016）、Outlo
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-PDF 加密使您能够通过安全通信或安全协作来保护敏感 PDF 文档。 邮件继承 Exchange Online 中的数据丢失防护（DLP）策略或邮件流规则的 OME 保护。 如果 Outlook 或 Outlook 网页用户将一个不受保护的 PDF 附件附加到受保护的邮件中，邮件将继承邮件的保护。 用户只能在支持受保护的 Pdf 的应用程序中打开加密附件（例如，OME 门户和 Azure 信息保护查看器）。
+PDF 加密使您能够通过安全通信或安全协作来保护敏感 PDF 文档。 对于所有 Outlook 客户端，邮件和未受保护的 PDF 附件都会继承 Exchange Online 中的数据丢失防护（DLP）策略或邮件流规则的 OME 保护。 此外，如果 web 用户上的 Outlook 附加了一个不受保护的 PDF 文档，并对邮件应用保护，邮件将继承邮件的保护。 用户只能在支持受保护的 Pdf 的应用程序中打开加密附件（例如，OME 门户和 Azure 信息保护查看器）。
+
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>OneDrive for business 附件是否受支持？
 
@@ -123,11 +124,11 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
   
 ## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>哪些电子邮件客户端支持在受保护的电子邮件中预览加密附件？
 
-当使用受保护的邮件保护附件时，Outlook 客户端可以提供对文档直接预览的功能。 Outlook 支持预览 Office 文档（.Docx、.xlsx、.pptx、doc、xls、ppt）。 Web 上的 Outlook 支持 Office 文档（.docx、.xlsx、.pptx）和 PDF 的预览。  
+当使用受保护的邮件保护附件时，Outlook 客户端可以提供对文档直接预览的功能。 Outlook 支持预览 Office 文档（.docx、.xlsx、.pptx、doc、xls、ppt）。 Web 上的 Outlook 支持 Office 文档（.docx、.xlsx、.pptx）和 PDF 的预览。  
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>是否可以通过设置策略自动加密邮件？
 
-可以。 使用 Exchange Online 中的邮件流规则，根据特定条件自动加密邮件。 例如，您可以创建基于收件人 ID、收件人域或邮件正文或主题中的内容的策略。 请参阅[定义邮件流规则以对 Office 365 中的电子邮件进行加密](define-mail-flow-rules-to-encrypt-email.md)。
+是。 使用 Exchange Online 中的邮件流规则，根据特定条件自动加密邮件。 例如，您可以创建基于收件人 ID、收件人域或邮件正文或主题中的内容的策略。 请参阅[定义邮件流规则以对 Office 365 中的电子邮件进行加密](define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>是否可以自动删除传入和传出邮件的加密？
 
@@ -147,7 +148,7 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>是否可以对合规性功能（如电子数据展示）使用邮件加密？
 
-可以。 所有加密的电子邮件都可通过 Office 365 合规性功能发现。
+是。 所有加密的电子邮件都可通过 Office 365 合规性功能发现。
 
 ## <a name="can-i-remove-encryption-from-email"></a>是否可以从电子邮件中删除加密？
 
@@ -161,7 +162,7 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
 
 是的！ 共享邮箱支持加密邮件。
 
-- 用户可以在共享 mMailbox 中打开受保护的邮件，其中共享邮箱作为通讯组的一部分收到受保护的邮件。
+- 用户可以在共享邮箱中打开受保护的邮件，其中共享邮箱作为通讯组的一部分收到受保护的邮件。
 
 - 当用户使用 Outlook for Windows、Outlook for Mac 和 Outlook 网页版时，用户可以查看从电子邮件继承保护的附件。
 

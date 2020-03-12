@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 41d4231b163d85b55ed0cd68ffb551f67d30827a
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 858d2be23dcb3c3f2b0794e735ed8ca61d67b74d
+ms.sourcegitcommit: 794f2f416a258157cb44d962b5be6a348ee20fea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583149"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42594001"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -136,7 +136,7 @@ Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感�
 
 如果已标记文档或电子邮件，则用户可以执行这些操作中的任何操作（如果内容尚未加密），或者具有[使用权限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)导出或完全控制。 
 
-若要获得具有有意义的报告的更一致的标签体验，请提供适当的标签和指导，以供用户以独占方式应用标签。 例如：
+若要获得具有有意义的报告的更一致的标签体验，请提供适当的标签和指导，以供用户仅应用标签来保护文档。 例如：
 
 - 对于用户必须分配其自己的权限的例外情况，请提供[允许用户分配其自己的权限](encryption-sensitivity-labels.md#let-users-assign-permissions)的标签。 
 

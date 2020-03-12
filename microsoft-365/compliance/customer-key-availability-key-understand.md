@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用于恢复丢失的 Office 365 客户密钥的可用性密钥。
-ms.openlocfilehash: 86f602a59f436a6ce42df583c88c0403eb17e5ae
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cb5284f46245db1d00506ab0e178244aac53a21f
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076941"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604169"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>了解 Office 365 客户密钥的可用性密钥
 
-可用性密钥是在创建数据加密策略时自动生成和设置的根密钥。 Office 365 存储和保护可用性密钥。 可用性密钥的功能类似于为使用客户密钥的服务加密提供的两个根键。 可用性密钥会将键层次结构中的键向下封装一层。 与在 Azure Key Vault 中提供和管理的密钥不同，您不能直接访问可用性密钥。 Office 365 自动化服务使用 PowerShell cmdlet 管理可用性密钥。 这些 cmdlet 会启动自动化操作，这些操作永远不会涉及直接访问可用性密钥。
+可用性密钥是在创建数据加密策略时自动生成和设置的根密钥。 Office 365 存储和保护可用性密钥。 可用性密钥的功能类似于为使用客户密钥的服务加密提供的两个根键。 可用性密钥会将键层次结构中的键向下封装一层。 与在 Azure Key Vault 中提供和管理的密钥不同，您不能直接访问可用性密钥。 Office 365 自动化服务以编程方式管理可用性密钥。 这些服务启动的自动操作永远不会涉及直接访问可用性密钥。
 
 可用性密钥的主要用途是通过所管理的根密钥的意外丢失来提供恢复功能。 丢失可能是 mismanagement 或恶意操作的结果。 如果你丢失了对根密钥的控制，请联系 Microsoft 支持部门，Microsoft 将为你提供使用可用性密钥进行恢复的过程。 你将使用可用性密钥迁移到新的数据加密策略，并使用你预配的新根密钥。
 
@@ -54,9 +54,9 @@ Microsoft 通过实例化可用性密钥并采取广泛的措施来保护数据�
 
 ### <a name="availability-key-secret-stores"></a>可用性密钥密钥存储
 
-Microsoft 在受访问控制的内部密钥存储区（如面向客户的 Azure 密钥存储库）中保护可用性密钥。 我们实现了访问控制，以防止 Microsoft 管理员直接访问中包含的密码。 秘密存储操作，包括密钥轮换、删除和检索通过永不涉及直接访问可用性密钥的自动化命令进行。 调整这些命令的访问权限仅限于特定的工程师，并需要通过内部工具密码箱进行权限提升。 权限提升要求在授予前的经理批准和理由。 密码箱可确保在时间到期或工程师注销时，访问时间绑定到自动访问撤销。
+Microsoft 在受访问控制的内部密钥存储区（如面向客户的 Azure 密钥存储库）中保护可用性密钥。 我们实现了访问控制，以防止 Microsoft 管理员直接访问中包含的密码。 秘密存储操作（包括密钥轮替和删除）通过永远不涉及直接访问可用性密钥的自动命令进行。 机密存储管理操作仅限于特定的工程师，并需要通过内部工具密码箱进行权限提升。 权限提升要求在授予前的经理批准和理由。 密码箱可确保在时间到期或工程师注销时，访问时间绑定到自动访问撤销。
 
-**Exchange Online 和 Skype for** business 可用性密钥存储在 Active Directory 机密存储区中。 Exchange Online Active Directory 由路由包含对象、标识和数据的流量和容量林的管理林组成。 容量林由帐户林和资源林组成。 帐户林具有彼此同步的多个容量域控制器。 可用性密钥安全存储在这些容量的域控制器中。 此安全存储位置是独立的，并与 SharePoint Online、OneDrive for Business 和团队文件机密存储区隔离。
+**Exchange online 和 Skype for** business 可用性密钥存储在 Exchange Online Active Directory 机密存储中。 可用性密钥在 Active Directory 域控制器内安全存储在特定于租户的容器中。 此安全存储位置是独立的，并与 SharePoint Online、OneDrive for Business 和团队文件机密存储区隔离。
 
 **SharePoint Online、OneDrive For business 和团队文件**可用性密钥存储在由服务团队管理的内部机密存储区中。 此安全的机密存储服务具有前端服务器和应用程序终结点，并将 SQL 数据库作为后端。 可用性密钥存储在 SQL 数据库中，并通过使用 AES-256 和 HMAC 组合来加密 rest 上的可用密钥的机密存储加密密钥进行包装（加密）。 机密存储加密密钥存储在同一 SQL 数据库的逻辑隔离组件中，并使用 Microsoft 证书颁发机构（CA）管理的证书中包含的 RSA-2048 密钥进一步加密。 这些证书存储在对数据库执行操作的机密存储前端服务器中。
 
@@ -64,7 +64,7 @@ Microsoft 在受访问控制的内部密钥存储区（如面向客户的 Azure 
 
 Microsoft 采用纵深防御策略，以防止恶意参与者影响存储在 Microsoft 云中的客户数据的机密性、完整性或可用性。 实施特定的预防和侦探控制，以保护机密存储和可用性密钥作为总体安全策略的一部分。
 
-Office 365 的构建旨在防止对可用性密钥的滥用。 应用程序层是可用于加密和解密数据的键（包括可用性密钥）的唯一方法。 只有 Office 365 服务代码能够解释和遍历加密和解密活动的关键层次结构。 如果恶意 Microsoft 管理员要绕过控件以从机密存储中提取可用性密钥，则密钥将无法访问客户数据。 客户密钥、可用性密钥、其他分层密钥和客户数据的存储位置之间存在逻辑隔离。 这种隔离缓解了在一个或多个位置遭到破坏的情况中发生数据泄露的风险。 层次结构中的每个层都具有内置的全天候入侵检测功能，以保护数据和机密存储。
+Office 365 的构建旨在防止对可用性密钥的滥用。 应用程序层是可用于加密和解密数据的键（包括可用性密钥）的唯一方法。 只有 Office 365 服务代码能够解释和遍历加密和解密活动的关键层次结构。 客户密钥、可用性密钥、其他分层密钥和客户数据的存储位置之间存在逻辑隔离。 这种隔离缓解了在一个或多个位置遭到破坏的情况中发生数据泄露的风险。 层次结构中的每个层都具有内置的全天候入侵检测功能，以保护存储的数据和密码。
 
 实现访问控制可防止对内部系统进行未经授权的访问，包括可用性密钥机密存储。 Microsoft 工程师不能直接访问可用性密钥机密存储。 有关访问控制的更多详细信息，请参阅[Office 365 中的管理访问控制](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview)。
 
@@ -103,8 +103,6 @@ Office 365 的构建旨在防止对可用性密钥的滥用。 应用程序层�
 2. 使用解密的 DEP 密钥对邮箱密钥进行解密。
 
 3. 使用解密邮箱密钥对邮箱本身进行解密，从而允许您访问邮箱中的数据。
-
-Office 365 通过向 Azure Key Vault 发出两个解密请求来解密 DEP 密钥，其中包含轻微偏移量。 第一个要完成的提供结果，取消了另一个请求。
 
 ## <a name="how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key"></a>SharePoint Online、OneDrive for Business 和团队文件如何使用可用性密钥
 
@@ -156,7 +154,7 @@ Office 365 仅在特定情况下触发可用性密钥。 这些情况因服务�
 
        - 这意味着已采取了故意、无意或恶意操作来呈现客户密钥不可用（例如，在离开服务的过程中，在数据清除过程中）。
 
-       - 在这种情况下，将不会使用可用性密钥，用户请求将失败，并且用户会收到一条错误消息。
+       - 在这种情况下，可用性密钥将仅用于系统操作，而不适用于用户操作，用户请求将失败，并且用户将收到一条错误消息。
 
 >[!IMPORTANT]
 >Office 365 服务代码始终具有有效的登录令牌，用于推理客户数据以提供增值云服务。 因此，在删除可用性密钥之前，可将其用作 Exchange Online 和 Skype for business （如搜索索引创建或移动邮箱）启动的操作的回退。 这适用于暂时性错误和访问 Azure Key Vault 拒绝的请求。
@@ -171,7 +169,7 @@ Office 365 中的自动化系统处理所有数据在系统中流动，以提供
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online 和 Skype for business 可用性密钥日志记录
 
-Exchange Online 和 Skype for business 在暂时性错误期间自动使用可用性密钥。 当此回退发生时，Office 365 将发布从安全与合规中心可访问的客户可见日志。 每次这些服务使用可用性密钥时，都会生成可用性密钥操作的审核日志记录。 名为 "Customer Key Service Encryption" 的新记录类型，活动类型为 "回退到可用性密钥"，允许管理员筛选[统一审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)搜索结果以查看可用性密钥记录。 仅当使用 Customer 密钥访问数据而不是 Microsoft 服务管理密钥时，才会生成可用性密钥记录。
+当 Exchange Online 和 Skype for Business 访问可用性密钥以提供服务时，office 365 将发布从安全与合规中心可访问的客户可见日志。 每次服务使用可用性密钥时，都会生成可用性密钥操作的审核日志记录。 名为 "Customer Key Service Encryption" 的新记录类型，活动类型为 "回退到可用性密钥"，允许管理员筛选[统一审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)搜索结果以查看可用性密钥记录。
 
 日志记录包括 "日期"、"时间"、"活动"、"组织 ID" 和 "数据加密策略 ID" 等属性。 该记录可作为 Office 365 统一的审核日志的一部分，并可从 Office 365 安全性和合规性中心审核日志搜索选项卡进行访问。
 

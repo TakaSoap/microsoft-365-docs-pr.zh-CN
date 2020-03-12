@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e3f16339d25c8cc592e937e30a446ed7e7cd333
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 69b3bbbbca98c3ef9e16f1cca4d67122ae14af3f
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42542536"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604199"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>在 Microsoft 365 中配置通信合规性
 
@@ -34,7 +34,7 @@ ms.locfileid: "42542536"
 
 ## <a name="before-you-begin"></a>准备工作
 
-在开始进行通信合规性之前，应确认你的 Microsoft 365 订阅。 通信合规性策略中包含的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Microsoft 365 E5 订阅中。
+在开始进行通信合规性之前，应确认你的 Microsoft 365 订阅。 通信合规性策略中包含的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或者包含在 Office 365 企业版 E5 订阅中，或包含在 Microsoft365 E5 订阅。
 
 如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅中，或注册 Microsoft 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
   
@@ -53,7 +53,7 @@ ms.locfileid: "42542536"
 
 2. 在 Microsoft Office 365 安全与合规中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
-3. 选择“**创建**”。
+3. 选择“创建”****。
 
 4. 在 "**名称**" 字段中，为新角色组指定一个友好名称。 选择“下一步”****。
 

@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 摘要：对 Skype、OneDrive、SharePoint 和 Exchange Online 加密的说明。
-ms.openlocfilehash: cffaab87049f466794706ad6537e663e43d5de91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601839"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604159"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>适用于 Skype for business、OneDrive for Business、SharePoint Online 和 Exchange Online 的 Office 365 加密
 
@@ -76,7 +76,7 @@ Office 365 中的多个工作负荷在 SharePoint Online 中存储数据，包�
 
 在 OneDrive for Business 和 SharePoint Online 中，有两种数据进入和退出数据中心的方案。
 
-- **与服务器通信的客户端与**Internet 上的 OneDrive for BUSINESS 使用 SSL/TLS 连接。 所有 SSL 连接都是使用 2048 位密钥建立而成。
+- **通过 Internet 与服务器通信的客户端与**SharePoint Online 和 OneDrive for business 之间的通信使用 TLS 连接。
 - **数据中心之间的数据移动**-在数据中心之间移动数据的主要原因是为了实现灾难恢复。 例如，SQL Server 事务日志和 blob 存储增量沿着此管道传输。 虽然已使用专用网络传输此数据，但还将进一步使用一流加密技术来保护此数据。
 
 ## <a name="exchange-online"></a>Exchange Online
