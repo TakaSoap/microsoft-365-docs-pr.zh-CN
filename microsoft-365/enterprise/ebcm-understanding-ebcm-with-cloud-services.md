@@ -15,16 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解当云服务成为你的 IT 产品的一部分时，规划和实施业务连续性的外观会如何不同。
-ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2236304647275f5e2b7ddde3af1804ba749254b0
+ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596999"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42588715"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>企业业务连续性管理 (EBCM) 和云服务
 
-作为组织数字化转型的一部分，需要重新访问和更新灾难恢复和业务连续性计划，以说明依赖 Microsoft 365 云服务的业务流程。 Microsoft 365 云服务（如 Exchange Online、SharePoint Online 和 OneDrive for Business）的设计和操作具有很大 的恢复能力。 即使具有这种恢复能力，也会发生服务事件。 执行此操作后，应准备好组织和定义明确的业务连续性策略。
+作为组织数字化转型的一部分，需要重新访问和更新灾难恢复和业务连续性计划，以说明依赖 Microsoft 365 云服务的业务流程。 Microsoft 365 云服务（如 Exchange Online、SharePoint Online 和 OneDrive for Business）的设计和操作具有很大 的恢复能力。
+
+> [!NOTE]
+> 可在“ [企业业务连续性管理计划白皮书](https://go.microsoft.com/fwlink/?linkid=2121521)”中更多了解 Microsoft 的 EBCM 计划。 需要登录。
+
+即使具有这种恢复能力，也会发生服务事件。 执行此操作后，应准备好组织和定义明确的业务连续性策略。
 
 如果尚未更新计划，则此系列主题可帮助你规划策略，以便服务可能无法回到已知状态。 这些话题突出显示了改善连续性准备情况的关键注意事项。
 
