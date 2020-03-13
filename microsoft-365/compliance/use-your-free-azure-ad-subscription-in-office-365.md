@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何访问组织已购买 Office 365 付费订阅中包含的 Azure Active Directory。
-ms.openlocfilehash: b8487b245001ffc73b975ed8f756b83e7093b1e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fe3829d349e5721ebdcf0688c1f5b2bd3c9f7f45
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069211"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604089"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>使用 Office 365 中的免费 Azure Active Directory 订阅
 
@@ -29,7 +29,7 @@ ms.locfileid: "42069211"
 
 ## <a name="before-you-begin"></a>准备工作
 
-使用专用浏览会话（而不是常规会话）访问 Azure 门户（即下面的第 1 步），因为这会阻止将当前登录所用的凭据传递到 Azure。若要在 Internet Explorer 中打开 InPrivate 浏览会话，或在 Mozilla FireFox 中打开专用浏览会话，只需按 CTRL+SHIFT+P 即可。若要在 Google Chrome 中打开专用浏览会话（称为“隐身窗口”），请按 CTRL+SHIFT+N。
+使用专用浏览会话（而不是常规会话）访问 Azure 门户（即下面的第 1 步），因为这会阻止将当前登录所用的凭据传递到 Azure。若要在 Microsoft Edge、 Internet Explorer、Mozilla FireFox 中打开 InPrivate 浏览会话，只需按 CTRL+SHIFT+P 即可。若要在 Google Chrome 中打开专用浏览会话（称为“隐身窗口”），请按 CTRL+SHIFT+N。
 
 ## <a name="access-azure-active-directory"></a>访问 Azure Active Directory
 

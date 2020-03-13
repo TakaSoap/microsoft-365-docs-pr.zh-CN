@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Office 365 中的高级邮件加密通过使管理员能够更好地使用受保护的邮件来帮助组织满足其合规性义务。
-ms.openlocfilehash: 580803d7b15608ebb0852896cdbd9a43ee5a2ff4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 99dacc928c8549157ff0d9d1d9a7c07fc33c2600
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601799"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610599"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Office 365 高级邮件加密
 
@@ -45,4 +45,4 @@ Office 365 中的高级邮件加密帮助客户满足法规遵从性义务，这
 
 [撤消由 Office 365 高级邮件加密加密的电子邮件](revoke-ome-encrypted-mail.md)。 控制在组织外共享的敏感电子邮件，并通过将访问安全的 web 门户转到加密电子邮件来增强保护。  
 
-使用 Office 365 高级邮件加密时，无论您何时应用自定义品牌打造模板，Office 365 都会对适合您应用该模板的邮件流规则的电子邮件应用包装。 您只能撤消邮件并将到期日期应用到用户通过门户接收的邮件。 也就是说，应用了自定义品牌打造模板的电子邮件。 有关详细信息和示例，请参阅[确保所有外部收件人使用 OME 门户阅读加密邮件的指南（仅适用于 Office 365 高级邮件加密）](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only)。
+使用 Office 365 高级邮件加密时，无论您何时应用自定义品牌打造模板，Office 365 都会对适合您应用该模板的邮件流规则的电子邮件应用包装。 您只能撤消邮件并将到期日期应用到用户通过门户接收的邮件。 也就是说，应用了自定义品牌打造模板的电子邮件。 有关详细信息和示例，请参阅[确保所有外部收件人使用 OME 门户阅读加密邮件](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail)中的指南。

@@ -1,7 +1,6 @@
 ---
 title: 在外部共享网站和文件
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
 manager: scotv
@@ -21,20 +20,20 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '了解如何与组织外部的人员共享网站和文件。 '
-ms.openlocfilehash: 83b111153389bf75a92bcc32af9563bf7432bf8a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603989"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610569"
 ---
 # <a name="share-sites-and-files-externally"></a>在外部共享网站和文件
 
 若要与组织外部的人员进行协作，可以在外部共享整个网站或特定文件。 如果你想要直接设置共享，请选择要启用的方案：
 
-- [在文档中与来宾协作](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [在网站中与来宾协作](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
-- [在团队中与来宾协作](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
+- [在文档中与来宾协作](../../solutions/collaborate-on-documents.md)
+- [在网站中与来宾协作](../../solutions/collaborate-in-site.md)
+- [在团队中与来宾协作](../../solutions/collaborate-as-team.md)
   
 ## <a name="deciding-how-to-share-your-content"></a>决定如何共享你的内容
 

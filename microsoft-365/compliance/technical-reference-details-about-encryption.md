@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: 查看有关 Office 365 中的 encyption 的技术详细信息。
-ms.openlocfilehash: a1eaa10f35a70688bc26967b7344cd90b2ad8343
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 查看有关 Office 365 中的加密技术的详细信息。
+ms.openlocfilehash: afd02ba6480e692bf16bf6dd94f192a5889590ee
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601389"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610579"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>有关 Office 365 加密的技术参考详情
 
@@ -53,6 +53,8 @@ Office 365 支持的所有密码套件使用 FIPS 140-2 可接受的算法。 Of
 - TLS 版本 1.0 (TLS 1.0)
     
  TLS 1.0 和 TLS 1.1 支持将于年10月 2018 31 日被弃用。 有关[TLS 1.0 和 1.1](technical-reference-details-about-encryption.md#TLS11and12deprecation)的详细信息，请参阅弃用支持。 
+ 
+ TLS 版本1.3 （TLS 1.3）目前不受支持。
   
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>弃用支持 TLS 1.0 和1.1 以及这对您的含义
 <a name="TLS11and12deprecation"> </a>
@@ -65,7 +67,10 @@ TLS 1.0 和 TLS 1.1 将在以下日期正式弃用：
 - 在全球和 GCC 环境中，客户6月1日，2020。
 - 在2020年1月15日，适用于 GCC 高和 DoD sovereign 环境中的客户。 
 
+应确保所有客户端服务器和浏览器的组合都使用 TLS 1.2 和新式密码适合维护与 Office 365 服务的安全连接。 您可能需要更新某些客户端服务器和浏览器-服务器的组合。 有关这对你有何影响的信息，请参阅在[Office 365 中强制使用 TLS 1.2 的准备工作](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)。
+
 应确保所有客户端服务器和浏览器的组合均使用 TLS 1.2 （或更高版本），以保持与 Office 365 服务的连接。 您可能需要更新某些客户端服务器和浏览器-服务器的组合。 有关这对你有何影响的信息，请参阅在[Office 365 中强制使用 TLS 1.2 的准备工作](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
+
   
 ## <a name="deprecating-support-for-3des"></a>对3DES 的弃用支持
 <a name="TLS11and12deprecation"> </a>
@@ -83,7 +88,7 @@ TLS 1.0 和 TLS 1.1 将在以下日期正式弃用：
 密码套件是 TLS 用于建立安全连接的加密算法集合。 Office 365 支持的密码套件在下表中按强度顺序列出，最强密码套件排在前面。 当 Office 365 收到一个连接请求时，Office 365 首先会尝试使用最上面的密码套件进行连接，如果不成功，则会尝试使用列表中的第二个密码套件，以此类推。 当 Office 365 发送连接请求至其他服务器或客户端时，由接收服务器或客户端决定是选择密码套件还是使用 TLS。
 
 > [!IMPORTANT]
-> 请注意，TLS 版本弃用，如果有更新的版本，则*不应使用*此版本。 换句话说，支持 TLS 1.0、1.1 和1.2 的任何位置，选择*最新*版本（TLS 1.2）。
+> 请注意，TLS 版本弃用，如果有更新的版本，则*不应使用*此版本。 换句话说，支持 TLS 1.0、1.1 和1.2 的任何位置，选择*最新*的受支持版本（TLS 1.2）。 TLS 目前不受支持。 如果您的旧服务不需要 TLS 1.0 或1.1，则应考虑禁用它们。 
   
 |**协议**|**密码套件名称**|**密钥交换算法/强度**|**完全向前保密支持**|**身份验证算法/强度**|**密码/强度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -99,7 +104,7 @@ TLS 1.0 和 TLS 1.1 将在以下日期正式弃用：
 |TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/128  <br/> |
    
 ## <a name="related-topics"></a>相关主题
-[Windows 10 v1607 中的 TLS 密码套件](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
+[Windows 10 v1903 中的 TLS 密码套件](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Office 365 中的加密](encryption.md)
   
@@ -109,4 +114,5 @@ TLS 1.0 和 TLS 1.1 将在以下日期正式弃用：
   
 [TLS/SSL 加密增强功能（Windows IT 中心）](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
+ [在 Office 365 和 Office 365 GCC 中准备 TLS 1。2](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
 

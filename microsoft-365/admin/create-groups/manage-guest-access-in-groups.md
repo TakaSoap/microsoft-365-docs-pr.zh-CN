@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Office 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: e4d71919fa5ebfb97a6bab8013fc6bc54ac071a4
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603999"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610609"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>在 Office 365 组中管理来宾访问
 
@@ -43,8 +43,8 @@ ms.locfileid: "42603999"
 
 组中的来宾访问通常用作包括 SharePoint 或团队的更广泛方案的一部分。 这些服务具有自己的来宾共享设置。 有关在组、SharePoint 和团队中设置来宾共享的完整说明，请参阅：
 
-- [在网站中与来宾协作](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
-- [在团队中与来宾协作](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
+- [在网站中与来宾协作](../../solutions/collaborate-in-site.md)
+- [在团队中与来宾协作](../../solutions/collaborate-as-team.md)
 
 ## <a name="manage-groups-guest-access"></a>管理组来宾访问
 
