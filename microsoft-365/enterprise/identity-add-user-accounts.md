@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 直接在云中或通过与本地目录同步来添加用户帐户和组。
 ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067362"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544001"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步骤 4：添加用户帐户
 
