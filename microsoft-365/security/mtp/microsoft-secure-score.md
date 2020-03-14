@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372020"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633990"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -89,11 +89,11 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 为了帮助您更快地了解所需的信息，Microsoft 改善操作将组织成组：
 
-* Identity （Azure AD 帐户 & 角色，即将推出 Azure ATP）
+* Identity （Azure AD 帐户 & 角色）
 * 数据（Microsoft 信息保护）
-* 设备（Microsoft Defender ATP 设备，即将推出）
+* 设备（现在无改进操作）
 * 应用（电子邮件和云应用，包括 Office 365 和 Microsoft 云应用安全性）
-* 基础结构（Azure 资源）
+* 基础结构（暂时不提供改进操作）
 
 在 "Microsoft 安全分数概述" 页中，您可以看到在这些组之间如何拆分点以及哪些点可用。 [！注意] 概述页面也是获取总分和基准对比的安全分数的历史趋势的完整视图的位置，以及可采取的优先改进措施以提高成绩。
 

@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '了解如何使用产品密钥续订 Office 365 for business 订阅，并打开或关闭定期记帐。 '
 ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354573"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633700"
 ---
 # <a name="renew-office-365-for-business"></a>续订 Office 365 for business
 

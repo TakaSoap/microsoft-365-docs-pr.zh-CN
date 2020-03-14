@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 概述贵组织如何采用 Microsoft 365 服务进行通信和协作。
 ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355273"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633420"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 ---
@@ -83,7 +83,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 用户活动报告可用于某些单独的服务。 这些报告提供了与 Active Directory 属性联接的用户级详细使用率数据。 此外，"部门采用情况" 报告允许您通过 Active Directory 属性进行切片，以便您可以在所有单个服务中查看活动用户。 所有指标都聚合为最新的完整月份。
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>此模板应用是否可通过购买或免费使用？
 

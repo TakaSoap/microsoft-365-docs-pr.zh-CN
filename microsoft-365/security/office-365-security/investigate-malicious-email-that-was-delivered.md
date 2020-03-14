@@ -1,5 +1,5 @@
 ---
-title: '查找并调查 Office 365 中提供的恶意电子邮件、补救措施、补救措施、修正 '
+title: 查找并调查 Office 365 中提供的恶意电子邮件、补救措施、补救措施、修正、威胁防护、威胁浏览器、保护
 keywords: TIMailData-Inline，安全事件，事件，ATP PowerShell，电子邮件恶意软件，已损坏的用户，电子邮件网络钓鱼诈骗，电子邮件恶意软件，读取电子邮件头，读取邮件头，打开电子邮件头
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 1cb7c418e9c4ae5f2223748d512e8718f81b010c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 178bdbfd97bea654959cf71da560a80e686a5fde
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409747"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632913"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>调查并修正在 Office 365 中提供的恶意电子邮件
 
@@ -56,6 +56,9 @@ ms.locfileid: "42409747"
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>查找并删除已传递的可疑电子邮件
 
 威胁资源管理器是一种功能强大的报告，可用于多种用途，如查找和删除邮件、标识恶意电子邮件发件人的 IP 地址或启动事件以进行进一步调查。 下面的过程重点介绍如何使用资源管理器查找和删除收件人邮箱中的恶意电子邮件。
+
+> [!NOTE]
+> 资源管理器中的默认搜索当前不包含 Zapped 项目。  这适用于所有视图，例如恶意软件或网络钓鱼视图。 若要包含 Zapped 项，需要将 "传递操作" 设置为 "已删除的由 ZAP 删除"。 如果包含所有选项，您将看到所有传递操作结果，包括 Zapped 项目。
 
 1. **导航到 "威胁资源管理器**"：转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 的工作或学校帐户登录并登录。 这会将您带到&amp;安全合规中心。
 

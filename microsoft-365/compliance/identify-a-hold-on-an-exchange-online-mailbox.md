@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可在 Office 365 邮箱中放置的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Office 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户
 ms.openlocfilehash: f45310547d41d8ec1092a3fecfaa0b50c4439559
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596499"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634860"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -68,7 +68,7 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 > [!TIP]
 > 如果 InPlaceHolds 属性中的值过多，并且不是全部显示，则可以运行`Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds`命令将每个 GUID 显示在单独的行上。
 
-下表介绍在运行 InPlaceHolds **cmdlet 时**，如何根据** 属性中的值标识不同类型的保留。
+下表介绍在运行 InPlaceHolds **cmdlet 时**，如何根据*InPlaceHolds*属性中的值标识不同类型的保留。
 
 
 |保留类型  |示例值  |如何识别保留  |

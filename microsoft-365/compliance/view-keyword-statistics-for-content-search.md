@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 使用 "搜索统计信息" 功能在安全性 & 合规性中心中显示和比较多个内容搜索的统计信息。 您还可以在创建或编辑搜索查询时配置关键字列表，以获取增强的统计信息，以显示与每个关键字或关键字短语匹配的项目数。
 ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068923"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634120"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>查看内容搜索结果的关键字统计信息
 
@@ -109,7 +109,7 @@ ms.locfileid: "42068923"
   
 1. 在 "安全性 & 合规性中心中，转到"**搜索** \> **内容搜索**"。
     
-2. 在内容搜索列表中，单击 "" 和 "搜索"，然后**** ![单击 "编辑](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)编辑图标"。
+2. 在内容搜索列表中，单击 "" 和 "搜索"，然后**Edit** ![单击 "编辑](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)编辑图标"。
     
 3. 单击 "**查询**"，然后执行以下操作： 
     

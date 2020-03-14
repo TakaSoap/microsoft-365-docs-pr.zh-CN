@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 创建保留 Microsoft 365 中的内容的保留标签时，可以选择在保留期结束时触发处置评审。
 ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075370"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634970"
 ---
 # <a name="overview-of-disposition-reviews"></a>处置评审概述
 
@@ -39,7 +39,7 @@ ms.locfileid: "42075370"
   
 - 您选择的人会收到一封电子邮件通知，告知他们有要审阅的内容。 请注意，每周会发送通知。
     
-- 审阅者转到安全**** &amp;合规中心中的 "处置" 页面，以查看内容。 审阅者可以查看每个保留标签的项目数正在等待处置，然后选择保留标签以查看具有该标签的所有内容。
+- 审阅者转到安全**Disposition** &amp;合规中心中的 "处置" 页面，以查看内容。 审阅者可以查看每个保留标签的项目数正在等待处置，然后选择保留标签以查看具有该标签的所有内容。
     
 - 对于每个文档或电子邮件，审阅者可以执行以下操作：
     

@@ -17,13 +17,13 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066834"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633260"
 ---
-# <a name="identity-and-device-access-configurations"></a>身份识别与设备访问配置
+# <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
 本系列文章介绍了如何配置通过企业移动性 + 安全性（EMS）产品的对云服务的安全访问，具体方法是实施建议的环境和配置，包括一组规定的条件访问策略和相关功能。 EMS 是 Microsoft 365 的核心组件。 您可以使用本指南来保护与 Azure Active Directory 集成的所有服务（包括 Office 365 服务、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序）的访问权限。 
 

@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 使用内容搜索权限筛选使电子数据展示管理器仅搜索您的 Office 365 组织中的一部分邮箱和网站。
 ms.openlocfilehash: 670dd2e5d0c88c520234cd7e71805cfa97ad9ec9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601759"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634260"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>配置内容搜索的权限筛选
 
@@ -273,6 +273,6 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
     
 - **搜索权限筛选是否适用于非活动邮箱？** 是的，您可以使用邮箱和邮箱内容筛选器来限制谁可以搜索组织中的非活动邮箱。 与常规邮箱一样，非活动邮箱必须使用用于创建权限筛选器的收件人属性进行配置。 如有必要，可以使用**InactiveMailboxOnly**命令来显示非活动邮箱的属性。 有关详细信息，请参阅[在 Office 365 中创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)。
     
-- **搜索权限筛选是否适用于公用文件夹？** 不是。 如上文所述，不能使用搜索权限筛选来限制可以在 Exchange 中搜索公用文件夹的成员身份。 例如，无法通过权限筛选器从搜索结果中排除公用文件夹位置中的项目。 
+- **搜索权限筛选是否适用于公用文件夹？** 否。 如上文所述，不能使用搜索权限筛选来限制可以在 Exchange 中搜索公用文件夹的成员身份。 例如，无法通过权限筛选器从搜索结果中排除公用文件夹位置中的项目。 
     
-- **允许用户搜索特定服务中的所有内容位置也会阻止他们搜索不同服务中的内容位置吗？** 不是。 如前所述，您必须创建搜索权限筛选器，以明确阻止用户搜索特定 Office 365 服务中的内容位置（例如，阻止用户搜索任何 Exchange 邮箱或任何 SharePoint 网站）。 换言之，创建搜索权限筛选器，允许用户搜索组织中的所有 SharePoint 网站并不会阻止该用户搜索邮箱。 例如，若要允许 SharePoint 管理员仅搜索 SharePoint 网站，您必须创建一个阻止他们搜索邮箱的筛选器。 同样，若要仅允许 Exchange 管理员搜索邮箱，您必须创建筛选器以防止他们搜索网站。
+- **允许用户搜索特定服务中的所有内容位置也会阻止他们搜索不同服务中的内容位置吗？** 否。 如前所述，您必须创建搜索权限筛选器，以明确阻止用户搜索特定 Office 365 服务中的内容位置（例如，阻止用户搜索任何 Exchange 邮箱或任何 SharePoint 网站）。 换言之，创建搜索权限筛选器，允许用户搜索组织中的所有 SharePoint 网站并不会阻止该用户搜索邮箱。 例如，若要允许 SharePoint 管理员仅搜索 SharePoint 网站，您必须创建一个阻止他们搜索邮箱的筛选器。 同样，若要仅允许 Exchange 管理员搜索邮箱，您必须创建筛选器以防止他们搜索网站。

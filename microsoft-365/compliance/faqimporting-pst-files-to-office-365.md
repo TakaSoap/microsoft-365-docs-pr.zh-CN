@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '有关使用 Office 365 导入服务将组织的 PST 文件导入到 Office 365 邮箱的管理员的常见问题。 '
 ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170482"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634430"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 的常见问题解答
 
@@ -53,7 +53,7 @@ ms.locfileid: "42170482"
 目前，这些地区提供了网络上传：美国、加拿大、巴西、英国、法国、欧洲、印度、东亚、东南亚、日本、韩国和澳大利亚。 Network upload will be available in more regions soon.
 
 > [!NOTE]
-> 目前，PST 文件的网络上载在德国和瑞士不可用。 当这些国家/地区提供网络上载时，将更新此 FAQ。
+> 目前，不可在德国和瑞士使用 PST 文件的网络上传功能。 当这些国家/地区提供网络上传功能后，此常见问题解答将更新。
   
  **使用网络上传导入 PST 文件的定价如何？**
   
@@ -127,7 +127,7 @@ Using network upload to import PST files is free.
 当前，美国、加拿大、巴西、英国、欧洲、印度、东亚地址、东南亚、日本、韩国和澳大利亚已推出驱动器传送。 不久之后，还会有更多地区推出驱动器传送。
 
 > [!NOTE]
-> 目前，用于导入 PST 文件的驱动器运送在德国和瑞士不可用。 在这些国家/地区提供驱动器发货时，将更新此 FAQ。
+> 目前，不可在德国和瑞士使用驱动器发运导入 PST 文件。 当这些国家/地区提供驱动器发运功能后，此常见问题解答将更新。
   
  **哪些商业许可协议支持驱动器发运？**
   

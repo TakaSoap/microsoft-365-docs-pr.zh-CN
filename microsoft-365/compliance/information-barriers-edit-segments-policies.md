@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: None
 description: 了解如何编辑或删除信息障碍策略。
 ms.openlocfilehash: ef534f49c92abf1500b72b0d490ab9f22a48a680
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600609"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634840"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>编辑（或删除）信息屏障策略
 

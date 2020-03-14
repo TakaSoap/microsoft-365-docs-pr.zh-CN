@@ -16,18 +16,18 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 使用攻击模拟器在 Office 365 E5 或 ATP Plan 2 组织中运行模拟网络钓鱼和密码攻击，这有助于您在真正的攻击击中业务之前识别易受攻击的用户。
-ms.openlocfilehash: 5e924ebe43a6d7fd1af460b304e862207baffb61
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612632"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637335"
 ---
 # <a name="attack-simulator-in-office-365-atp"></a>Office 365 ATP 中的攻击模拟器
 
 Office 365 中的攻击模拟器高级威胁防护计划2（ATP 计划2）允许您在组织中运行真实的、模拟的网络钓鱼和密码攻击活动。 您可以使用市场活动的结果来识别和培训易受攻击的用户。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
 - 若要打开 Office 365 安全 & 合规性中心，请<https://protection.office.com/>转到。 攻击模拟器在**威胁管理** \> **攻击模拟器**中可用。
 
@@ -186,7 +186,7 @@ Office 365 中的攻击模拟器高级威胁防护计划2（ATP 计划2）允许
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>所有 Url 都是有意的 http，而不是 https。</li><li>URL 信誉服务可能会将这些 Url 中的一个或多个标识为不安全。 在网络仿冒活动中使用 URL 之前，请先检查受支持的 web 浏览器中的 URL 是否可用。</li><li>您需要选择一个 URL。 对于**Spear 仿冒（附件）** 市场活动，您可以在下一步中删除邮件正文中的链接（否则，邮件将同时包含链接**和**附件）。</li></ul>
+     > <ul><li>所有 Url 都是有意的 http，而不是 https。</li><li>URL 信誉服务可能会将这些 Url 中的一个或多个标识为不安全。 在网络仿冒活动中使用 URL 之前，请先检查受支持的 web 浏览器中的 URL 是否可用。</li><li>您需要选择一个 URL。 对于<b>Spear 仿冒（附件）</b>市场活动，您可以在下一步中删除邮件正文中的链接（否则，邮件将同时包含链接<b>和</b>附件）。</li></ul>
 
    - **附件类型**：此设置仅在**Spear 仿冒（附件）** 市场活动中可用。 单击下拉箭头，然后选择 "" **。.DOCX**或 **。PDF**中的列表。
 
@@ -220,7 +220,7 @@ Office 365 中的攻击模拟器高级威胁防护计划2（ATP 计划2）允许
 
 在攻击模拟器中，可以使用两种不同类型的密码攻击活动来测试用户密码的复杂性：
 
-- **强力密码（字典攻击）**：*强力** 或*字典*攻击在用户帐户上使用密码的大型字典文件，希望其中一个密码可以使用（针对一个帐户的多个密码）。 不正确的密码锁定帮助阻止强力密码攻击。
+- **强力密码（字典攻击）**：*强力*攻击或*字典*攻击在用户帐户上使用密码的大型字典文件，希望其中一个密码可以使用（针对一个帐户的多个密码）。 不正确的密码锁定帮助阻止强力密码攻击。
 
   对于字典攻击，可以指定要尝试的一个或多个密码（手动输入或在上载的文件中），并且可以指定一个或多个用户。
 

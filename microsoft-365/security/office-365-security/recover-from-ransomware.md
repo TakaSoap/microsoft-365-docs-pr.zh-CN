@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Office 365 管理员可以了解如何从勒索软件攻击中恢复。
-ms.openlocfilehash: 04cfd2f2417b0c2e084a88f9ee156521339b18c4
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932365"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640014"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>在 Office 365 中恢复勒索软件攻击
 
@@ -74,11 +74,7 @@ ms.locfileid: "41932365"
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤5：在 OneDrive for Business 中恢复文件
 
-OneDrive for Business 将允许你恢复存储在其中的任何文件。 方法有以下两种：
-
-- 使用[OneDrive 网站](https://support.office.com/article/159cad6d-d76e-4981-88ef-de6e96c93893)。
-
-- 如果受影响的文件数量很多，则可以为 "网站集还原" 创建支持请求。 此请求最长可从过去14天还原文件。
+通过 OneDrive for Business 还原文件，可以在过去的30天内将整个 OneDrive 还原到以前的时间点。 有关详细信息，请参阅[还原 OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
 ## <a name="step-6-recover-deleted-email"></a>步骤6：恢复已删除的电子邮件
 

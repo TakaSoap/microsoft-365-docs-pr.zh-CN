@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 了解并配置 Azure AD 租户的标识治理。
 ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543991"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633580"
 ---
 # <a name="step-6-configure-identity-governance"></a>步骤 6：配置标识治理
 

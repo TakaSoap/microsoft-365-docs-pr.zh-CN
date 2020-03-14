@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 了解并配置对组织中的数据进行分类的各种方法。
 ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544181"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633470"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>第 2 步：配置环境分类
 

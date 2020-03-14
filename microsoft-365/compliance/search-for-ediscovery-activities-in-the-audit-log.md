@@ -15,11 +15,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何在 Office 365 审核日志中搜索符合性管理员在安全 & 合规中心中执行内容搜索和电子数据展示事例任务时记录的事件。
 ms.openlocfilehash: ef9c40debb8c28f0d017423d29016ca4f52b7a17
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601529"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634150"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>在 Office 365 审核日志中搜索电子数据展示活动
 
@@ -172,7 +172,7 @@ ms.locfileid: "41601529"
 |NonPIIParameters  <br/> |与 Operation 属性中标识的 cmdlet 一起使用的参数（不含任何值）的列表。 此属性中列出的参数与 Parameters 属性中列出的参数相同。  <br/> |
 |ObjectId  <br/> |由 Operation 属性中列出的活动创建、更改或删除的对象的 GUID 或名称（例如，内容搜索或电子数据展示事例）。 此外，还会在审核日志搜索结果的项列中标识此对象。  <br/> |
 |ObjectType  <br/> |用户创建、删除或修改的电子数据展示对象的类型;例如，内容搜索操作（预览、导出或清除）、电子数据展示案例或内容搜索。  <br/> |
-|操作  <br/> |与所执行的电子数据展示活动相对应的操作的名称。  <br/> |
+|Operation  <br/> |与所执行的电子数据展示活动相对应的操作的名称。  <br/> |
 |OrganizationId  <br/> |Office 365 组织的 GUID。  <br/> |
 |参数  <br/> |与对应的 cmdlet 一起使用的参数的名称和值。  <br/> |
 |PublicFolderLocations  <br/> |Exchange Online 中包含在内容搜索中的公用文件夹位置，或在电子数据展示事例中置于保留状态。  <br/> |

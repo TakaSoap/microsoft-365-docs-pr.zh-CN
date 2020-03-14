@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 定义安全附件策略以保护您的组织免受电子邮件中的恶意文件的攻击。
-ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: c5001823979c19ec68cd15a10bf7c2d7e54cae1d
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957177"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637315"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -45,11 +45,13 @@ ms.locfileid: "41957177"
 
 - 请确保您具有必要的权限。 若要定义（或编辑） ATP 策略，您必须分配有 Exchange Online 组织管理角色（默认情况下为 Office 365 全局管理员分配了此角色）或 Exchange Online 卫生管理和安全管理员角色。 有关更多详细信息，请参阅下表：
 
-  |Role|分配的位置/方式|
-  |---------|---------|
+  |||
+  |---|---|
+  |**角色**|**分配的位置/方式**|
   |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）|
   |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
   |Exchange Online 组织管理、Exchange Online 清洁管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）|
+  |
 
   若要了解有关角色和权限的详细信息，请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -87,15 +89,17 @@ ms.locfileid: "41957177"
 
 设置 ATP 安全附件策略时，可以从多种选项（包括监视器、阻止、替换、动态传递等）中进行选择。 如果您想了解这些选项的功能，下表总结了每个选项及其效果。
 
+||||
+|---|---|---|
 |**选项**|**Effect**|**在需要执行以下操作时使用：**|
-|:-----|:-----|:-----|
-|**关闭**|不扫描附件中的恶意软件  <br/> 不延迟邮件传递|对内部发件人、扫描仪、传真或仅发送已知、良好附件的智能主机关闭扫描  <br/> 避免路由内部邮件中不必要的延迟  <br/> **对于大多数用户，不建议使用此选项。它使您能够为一小组内部发件人关闭 ATP 安全附件扫描。**|
+|**关闭**|不扫描附件中的恶意软件  <br/> 不延迟邮件传递|对仅发送已知、良好附件的扫描仪、传真或智能主机关闭扫描  <br/> 避免路由内部邮件中不必要的延迟。  <br/> **我们不建议大多数用户选择此选项。您只应使用此选项来禁用一小部分受信任发件人的 ATP 安全附件扫描。**|
 |**监视器**|传递包含附件的邮件，然后跟踪检测到的恶意软件所发生的情况|查看检测到的恶意软件在您的组织中的位置|
 |**阻止**|阻止包含检测到的恶意软件附件的邮件继续  <br/> 将带有检测到的恶意软件的邮件发送到[Office 365 中的隔离](manage-quarantined-messages-and-files.md)，安全管理员或分析师可以在其中查看并释放（或删除）这些邮件  <br/> 自动阻止将来的邮件和附件|使用相同的恶意软件附件保护贵组织免受重复攻击|
 |**Replace**|删除检测到的恶意软件附件  <br/> 通知收件人已删除附件  <br/> 将带有检测到的恶意软件的邮件发送到[Office 365 中的隔离](manage-quarantined-messages-and-files.md)，安全管理员或分析师可以在其中查看并释放（或删除）这些邮件|对收件人可见由于检测到的恶意软件，附件已被删除|
 |**动态传递**|立即传递邮件  <br/> 在扫描完成之前将附件替换为占位符文件，然后在未检测到恶意软件的情况下将附件。  <br/> 包括扫描过程中大多数 Pdf 和 Office 文件的附件预览功能  <br/> 将带有检测到的恶意软件的邮件发送到隔离，安全管理员或分析师可以在其中查看并释放（或删除）这些邮件  <br/> [了解有关使用 ATP 安全附件的动态传递和预览](dynamic-delivery-and-previewing.md) <br/> |避免邮件延迟，同时防止收件人受到恶意文件的攻击  <br/> 允许收件人在扫描发生时以安全模式预览附件|
 |**启用重定向**|当选择 "监视器"、"阻止" 或 "替换" 选项时应用  <br/> 将附件发送到安全管理员或分析师可以调查的指定电子邮件地址|使安全管理员和分析师能够研究可疑附件|
 |**如果恶意软件扫描附件超时或发生错误，则应用上述选择**|将为 unasfe 附件配置的操作应用于无法扫描的附件（由于超时或错误）|
+|
 
 ## <a name="next-steps"></a>后续步骤
 

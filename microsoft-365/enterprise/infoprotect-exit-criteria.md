@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 检查基于信息保护的服务和基础结构的条件，确保你的配置满足 Microsoft 365 企业版的要求。
 ms.openlocfilehash: 28eff02ea870dcfca7e2e32580ed6a3a9e8a9484
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544161"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633350"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>信息保护基础结构退出条件
 

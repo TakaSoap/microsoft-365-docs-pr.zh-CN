@@ -13,15 +13,15 @@ f1.keywords:
 - NOCSH
 ms.author: greglin
 ms.openlocfilehash: 5407370933c2a99781adf4ca58d3fa905328ed04
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085571"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633000"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>步骤5：部署 Windows 10 企业版安全功能
 
-![第 3 阶段：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![阶段 3：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 提供了保护企业用户、停止威胁和防止数据丢失的安全功能。 
 
@@ -65,7 +65,7 @@ Windows Defender 防病毒（AV）是内置到 Windows 10 中的反恶意软件�
 * [Windows Defender AV 保护报告](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
 * [Microsoft Defender ATP 门户概述](https://go.microsoft.com/fwlink/?linkid=861596)
 
-### <a name="troubleshooting"></a>故障排除
+### <a name="troubleshooting"></a>疑难解答
 有关错误和事件代码的基本故障排除的信息，请参阅[查看事件日志和错误代码，以解决 Windows DEFENDER AV 的问题](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus)。
 
 您还可以使用 Windows Defender 安全智能提交系统提交问题（如误报）。 若要了解如何操作，请参阅[将问题提交给 Microsoft](https://www.microsoft.com/wdsi/filesubmission)。
@@ -88,7 +88,7 @@ Windows Defender 攻击防护是一组新的 Windows 10 主机入侵防护功能
 * [查看 Windows Defender 攻击防护事件](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard)
 * [Microsoft Defender ATP 门户概述](https://go.microsoft.com/fwlink/?linkid=861596)
 
-### <a name="troubleshooting"></a>故障排除
+### <a name="troubleshooting"></a>疑难解答
 您可以使用 Windows Defender 安全智能提交系统执行基本的故障排除或提供 Microsoft with .cab 文件，并提交问题（如误报）。 若要了解如何操作，请参阅[将问题提交给 Microsoft](https://www.microsoft.com/wdsi/filesubmission)。
 
 
@@ -125,7 +125,7 @@ Microsoft Defender ATP 集成并支持各种其他产品和工具，以扩展其
 * [使用 Api](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection)
 * [构建 Power BI 报表](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/powerbi-reports-windows-defender-advanced-threat-protection)
 
-### <a name="troubleshooting"></a>故障排除
+### <a name="troubleshooting"></a>疑难解答
 在载入或使用产品的过程中，可能会遇到问题。 有关如何解决问题的详细信息，请参阅：
 * [解决载入问题](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
 * [Microsoft Defender ATP 故障排除](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection)

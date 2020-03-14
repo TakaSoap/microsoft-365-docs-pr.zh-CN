@@ -16,11 +16,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 在 Office 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
 ms.openlocfilehash: 638559efe5f7028a647b466c030a339c677601ce
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179253"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633840"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 中的自动调查的详细信息和结果
 
@@ -96,7 +96,7 @@ ms.locfileid: "42179253"
 |已修正 | 调查已完成且已完全修正（已批准所有操作） |
 |部分修正 | 调查已完成，某些建议的操作已获得批准 |
 |已由用户终止 | 管理员终止了调查 |
-|Failed | 调查过程中发生错误，阻止它达到威胁的结论 |
+|已失败 | 调查过程中发生错误，阻止它达到威胁的结论 |
 |按限制排队 | 由于系统处理限制，调查正在等待分析（以保护服务性能） |
 |已通过限制终止 | 由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来 retrigger 调查。 |
 
@@ -211,7 +211,7 @@ ms.locfileid: "42179253"
 - 将结果导出到 CSV 文件。
 - 筛选视图。
 
-|工具 | Description |
+|工具 | 说明 |
 |-----|-----|
 |DLP 违规调查 |调查[Office 365 数据丢失防护](../../compliance/data-loss-prevention-policies.md)（DLP）检测到的任何冲突 |
 |电子邮件指示器提取 |从要调查的电子邮件的标题、正文和内容中提取指示器 |

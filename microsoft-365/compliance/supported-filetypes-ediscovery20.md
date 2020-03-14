@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft 365 高级电子数据展示中支持的文件类型列表。 这包括高级电子数据展示中的 OCR 功能支持的图像文件类型的列表。
 ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543711"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634630"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
 
@@ -130,7 +130,7 @@ ms.locfileid: "42543711"
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/vnd.ms-excel ms-project | 是 | 是 | 是 | 否 | 可访问 | mpp |
+| application/vnd.ms-excel ms-project | 是 | 是 | 是 | 否 | 必需 | mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher

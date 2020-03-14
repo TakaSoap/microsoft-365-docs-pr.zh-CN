@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
 ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42587303"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632940"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -65,7 +65,7 @@ ms.locfileid: "42587303"
 
 我们建议您为标准和严格**级别关闭这些**设置：
 
-|安全功能名称|备注|
+|安全功能名称|注释|
 |---------|---------|
 |IncreaseScoreWithImageLinks||
 |IncreaseScoreWithNumericIps||

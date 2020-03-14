@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 你可以让用户更安全地登录到 Windows 设备和 Microsoft 365。
 ms.openlocfilehash: c541f5b74fe3ea6e94b002212f21ec8645e8e87e
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544011"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633510"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>步骤 3：保护和管理用户登录
 

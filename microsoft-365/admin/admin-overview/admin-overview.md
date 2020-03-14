@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 了解 Microsoft 365 管理中心：如何登录，你的管理员是谁，以及观看有关它的视频介绍。
 ms.openlocfilehash: 5f2727b582fcae2b4e001be1ec355747c96e9084
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238133"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633460"
 ---
 # <a name="office-365-admin-overview"></a>Office 365 管理员概述 
 

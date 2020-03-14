@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft 合规性分数可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
 ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078511"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635110"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合规性分数（预览）
 

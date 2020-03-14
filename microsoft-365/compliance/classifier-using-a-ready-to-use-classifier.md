@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft 365 附带了大量内置分类器，可用于在组织中标识和标记内容。 本主题介绍如何准备使用这些分类器。
 ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266728"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634460"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>使用内置分类器（预览）
 

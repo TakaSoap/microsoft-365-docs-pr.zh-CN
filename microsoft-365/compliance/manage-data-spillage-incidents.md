@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: 本文介绍了如何使用安全 & 合规中心中的新数据调查（预览版）工具管理数据外泄事件。
 ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543363"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634290"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>在 Microsoft 365 中管理数据外泄事件
 

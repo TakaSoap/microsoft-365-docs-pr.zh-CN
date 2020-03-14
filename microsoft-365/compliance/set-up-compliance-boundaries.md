@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
 ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557735"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634140"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
 
@@ -61,7 +61,7 @@ ms.locfileid: "42557735"
   
 以下是可用于合规性边界的 Azure Active Directory 用户属性的列表：
   
-- Company
+- 公司
     
 - CustomAttribute1 — CustomAttribute15
     
@@ -249,7 +249,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
  **谁可以创建和管理搜索权限筛选器（使用 New-compliancesecurityfilter 和 New-compliancesecurityfilter cmdlet）？**
   
@@ -265,7 +265,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **电子数据展示管理器能否从两个单独的合规性边界中查看内容？**
   
-是的。 为此，可以将用户添加到对这两个机构都可见的角色组。
+是。 为此，可以将用户添加到对这两个机构都可见的角色组。
   
  **搜索权限筛选器是否适用于电子数据展示事例保留、Office 365 保留策略或 DLP？**
   

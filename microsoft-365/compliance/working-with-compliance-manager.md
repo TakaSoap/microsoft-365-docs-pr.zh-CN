@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使您能够跟踪、分配和验证与 Microsoft 产品相关的法规遵从性活动。
 ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083832"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634130"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -596,7 +596,7 @@ Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 
 ![合规性管理器评估 Excel 报告](../media/compliance-manager-assessment-report.png)
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 下表介绍了每个合规性管理器权限及其允许用户执行的操作。 该表还指示分配了每个权限的角色。
 

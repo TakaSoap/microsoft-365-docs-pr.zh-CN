@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
 ms.custom: air
 ms.openlocfilehash: c06874ea5d55334d9049d6c5d9d5c55a499dae06
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288470"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634020"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -38,7 +38,7 @@ ms.locfileid: "42288470"
 |1     |一个警报由 Office 事件触发，[安全行动手册](automated-investigation-response-office.md#security-playbooks)启动对选定警报的自动调查。 <br/><br/>或者，安全分析员可以在使用[威胁资源管理器](threat-explorer.md)[的同时触发自动调查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。        |
 |双面     |自动调查运行时，它会收集有关电子邮件和与该电子邮件相关的实体的其他数据–文件、Url 和收件人。  由于触发了新的相关警报，调查的范围可能会增加。         |
 |第三章     |在自动调查期间和之后，可以查看[详细信息和结果](air-view-investigation-results.md)。 结果包括[建议的操作](air-remediation-actions.md)，可采取这些操作来响应和修正发现的任何威胁。 此外，还可以使用[行动手册日志](air-view-investigation-results.md#playbook-log)来跟踪所有调查活动。<br/><br/>如果您的组织使用的是自定义报告解决方案或第三方解决方案，则可以[使用 Office 365 管理活动 API](air-custom-reporting.md)来查看有关自动调查和威胁的信息。         |
-|4     |您的安全操作团队将检查[调查结果和建议](air-view-investigation-results.md)，并[批准修正操作](air-remediation-actions.md#approve-or-reject-pending-actions)。 在 Office 365 中，不会自动执行任何操作。 仅在组织的安全团队进行审批时才采取更正措施。         |
+|4      |您的安全操作团队将检查[调查结果和建议](air-view-investigation-results.md)，并[批准修正操作](air-remediation-actions.md#approve-or-reject-pending-actions)。 在 Office 365 中，不会自动执行任何操作。 仅在组织的安全团队进行审批时才采取更正措施。         |
 
 在自动调查过程期间和之后，安全团队可以执行以下操作：
 

@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: 了解如何设置和保护管理员帐户。
 ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080565"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633750"
 ---
 # <a name="protect-your-administrator-accounts"></a>保护您的管理员帐户
 

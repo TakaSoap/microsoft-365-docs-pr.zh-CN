@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
 ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074023"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634930"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -36,7 +36,7 @@ ms.locfileid: "42074023"
   
 导出内容搜索结果包括准备结果，然后将其下载到本地计算机。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要导出搜索结果，您必须在安全 & 合规性中心中分配有导出管理角色。 此角色分配给内置电子数据展示管理员角色组。 它没有默认分配至组织管理角色组。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -68,7 +68,7 @@ ms.locfileid: "42074023"
     
   - **64 位：**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
-    将以下行添加到位于`<configuration>`和`</configuration>`标记之间的 machine.config 文件中。 ** 请务必将和`ProxyServer` `Port`替换为你的组织的正确值;例如， `proxy01.contoso.com:80` 。 
+    将以下行添加到位于`<configuration>`和`</configuration>`标记之间的 machine.config 文件中。 *machine.config* 请务必将和`ProxyServer` `Port`替换为你的组织的正确值;例如， `proxy01.contoso.com:80` 。 
     
     ```text
     <system.net>
@@ -212,7 +212,7 @@ ms.locfileid: "42074023"
     
 - 默认情况下，可以导出的 PST 文件的最大大小为 10 GB。 这意味着，如果用户邮箱中的搜索结果大于 10 GB，则邮箱的搜索结果将导出到两个（或更多）单独的 PST 文件中。 如果选择在单个 PST 文件中导出所有搜索结果，则在搜索结果的总大小大于 10 GB 时，PST 文件将 spilt 到其他 PST 文件中。 如果要更改此默认大小，可以在用于导出搜索结果的计算机上编辑 Windows 注册表。 请参阅[在导出电子数据展示搜索结果时更改 PST 文件的大小](change-the-size-of-pst-files-when-exporting-results.md)。
     
-    此外，特定邮箱中的搜索结果不会在多个 PST 文件中划分，除非单个邮箱中的内容大于 10 GB。 如果您选择将搜索结果导出到一个包含单个文件夹中的所有邮件的一个 PST 文件中，并且搜索结果大于 10 GB，则这些项目仍按时间顺序进行组织，因此这些项目将根据已发送的 d 文件 spilt 到其他 PST 文件中。ate.
+    此外，特定邮箱中的搜索结果不会在多个 PST 文件中划分，除非单个邮箱中的内容大于 10 GB。 如果您选择将搜索结果导出到一个包含单个文件夹中的所有邮件的一个 PST 文件中，并且搜索结果大于 10 GB，则这些项目仍按时间顺序进行组织，因此它们将 spilt 到其他 PST 文件中，具体取决于发送的结束.
      
  ### <a name="export-reports"></a>导出报告
   

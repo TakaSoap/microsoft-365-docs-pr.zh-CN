@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: 了解可帮助您阻止 Exchange Online 和 Office 365 中的垃圾邮件的反垃圾邮件设置和筛选器。 在 Office 365 中获取过多垃圾邮件？ 您可以自定义垃圾邮件筛选器和反垃圾邮件策略设置。
 ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599859"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633830"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 电子邮件反垃圾邮件保护
 
@@ -69,7 +69,7 @@ ms.locfileid: "41599859"
 
  **最终用户托管设置**：如果你正在寻找最终用户如何管理自己的垃圾邮件设置的信息，请查看[垃圾邮件筛选器的概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)（针对 Microsoft Outlook 用户）或[了解垃圾邮件和网络钓鱼](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)（针对 web 用户的 Outlook）。 如果您使用 EOP 来保护本地邮箱，请务必使用目录同步来确保这些设置已同步到服务。 有关如何设置目录同步的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"。
 
-## <a name="for-more-information"></a>更多详细信息
+## <a name="for-more-information"></a>有关详细信息
 
 [博客：垃圾邮件和仿冒网站如何通过 Office 365？](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 
