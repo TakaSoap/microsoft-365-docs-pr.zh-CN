@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 信息保护框架中的灵敏度标签，对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受影响。 这些标签可应用包含加密视觉标记（如页脚和水印）的保护设置。
-ms.openlocfilehash: 3b8e5e39ef6e2cb2e452fbf1764d53bd51ad24d8
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 7593774b4cb0786cc82988442bbca522ce534cc8
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543132"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634640"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -190,6 +190,9 @@ ms.locfileid: "42543132"
 如果已使用 Azure 信息保护部署了标签，则在开始使用灵敏度标签之前，请参考以下各节的指导。
 
 ### <a name="azure-information-protection-labels"></a>Azure 信息保护标签
+
+> [!NOTE]
+> Azure 门户中的 Azure 信息保护标签的标签管理将于 **2021 年 3 月 31 日**弃用。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
 
 如果由于租户尚未使用[统一标签平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)而使用 Azure 信息保护标签，则建议你避免创建敏感度标签，直到激活统一标签。 在此方案中，Azure 门户中看到的标签是 Azure 信息保护标签，而不是敏感度标签。 这些标签可由 Windows 计算机上的 Azure 信息保护客户端（经典）使用，但无法由运行 macOS、iOS 或 Android 的设备使用。 若要解决此问题，请 [将这些标签迁移](/azure/information-protection/configure-policy-migrate-labels) 到灵敏度标签。 
 

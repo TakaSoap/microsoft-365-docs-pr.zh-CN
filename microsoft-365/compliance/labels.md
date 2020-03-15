@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: 5dcd97400067645c48f02a31061721644bae553c
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: 4052cf691e9123e3d840d5fa6759ff7f032b67c2
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277439"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634300"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -58,9 +58,6 @@ ms.locfileid: "42277439"
     
    - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
 
-  > [!NOTE]
-  > 对于有权编辑已在站点中自动标记的内容或其邮箱已被选中进行自动标记的每位用户，他们需要至少具有 Office 365 企业版 E5 许可证才可自动应用标签。 你对内容具有只读权限或仅答复带标记的电子邮件的用户不需要此许可证。
-      
 - **在 Office 365 中实现记录管理**，包括电子邮件和文档。可使用保留标签将内容分类为记录。如果这样做，既无法更改或删除保留标签，也无法编辑或删除内容。 
 
 - **将默认保留标签应用于 SharePoint 中的文档库、文件夹或文档集**，以让到达该位置的所有文档都继承默认保留标签。  
@@ -268,8 +265,6 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 ![自动应用标签的“选择条件”页](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-需要具备 Office 365 企业版 E5 订阅，才可自动应用已配置为前两个选项的保留标签。 如果你选择可训练分类器的选项，则此功能还有[额外的许可要求](classifier-getting-started-with.md#licensing-requirements)。
-
 自动应用保留标签最多可能需要 7 天才会应用到与你配置的条件相匹配的所有内容。
   
 > [!TIP]
@@ -318,7 +313,9 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 ### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>使用可训练分类器向内容自动应用标签
 
-选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含**冒犯性语言**、**简历****源代码**、**骚扰**、**侮辱**和**威胁**。
+选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含**冒犯性语言**、**简历**、**源代码**、**有针对性的骚扰**、**侮辱**和**威胁**：
+
+![选择可训练分类器](../media/retention-label-classifers.png)
 
 要通过此选项自动应用标签，SharePoint Online 网站和邮箱必须至少有 10 MB 的数据。
 
@@ -328,7 +325,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容
 
-除了能让人员将保留标签应用于各个文档之外，还能将默认保留标签应用于 SharePoint 库、文件夹或文档集，这样这些位置上的所有文档都会获得默认保留标签（默认标签为 E5 功能）。
+除了能让人员将保留标签应用于各个文档之外，还能将默认保留标签应用于 SharePoint 库、文件夹或文档集，这样这些位置上的所有文档都会获得默认保留标签。
   
 对于文档库，此操作在文档库的“**库设置**”页上完成。 选择默认保留标签时，还可选择将其应用到库中的现有项目。 
   

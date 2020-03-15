@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对基于身份的服务和基础结构的条件。
-ms.openlocfilehash: 3fd4d0a1df50d55cb7a21668b609341d0c01aa35
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544061"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637285"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>阶段 2：身份基础结构退出条件
 
@@ -118,7 +118,7 @@ ms.locfileid: "42544061"
 
 1.  创建一个测试用户帐户并对其分配许可证。 
 2.  通过用于真实用户帐户的其他验证方法为测试用户帐户配置 Azure 多重身份验证，如向手机发送消息。 
-3.  通过测试用户帐户登录到 Office 365 门户。
+3.  使用测试用户帐户登录到 Office 365 门户。
 4.  确保 MFA 提示你输入其他验证信息且身份验证成功。 
 5.  删除该测试用户帐户。
 
