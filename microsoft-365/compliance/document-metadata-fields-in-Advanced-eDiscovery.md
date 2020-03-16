@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文在 Microsoft 365 中的高级电子数据展示案例中的审阅集中定义文档的元数据字段。
-ms.openlocfilehash: ae268c1368933c729177d6083294e7e7a8735958
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
+ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074919"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "42651836"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
 下表列出了高级电子数据展示中的审阅集内的文档的元数据字段。 该表提供以下信息：
 
-- **字段名称**和**显示字段名称：** 元数据字段的名称，以及在审阅集中查看所选文档的文件元数据时显示的字段的名称。 请注意，在查看文档的文件元数据时，不会包含一些元数据字段。 这些字段突出显示时带有星号（*）。
+- **字段名称**和**显示字段名称：** 元数据字段的名称，以及在审阅集中查看所选文档的文件元数据时显示的字段的名称。 查看文档的文件元数据时，不包含一些元数据字段。 这些字段突出显示时带有星号（*）。
 
 - 可**搜索字段名称：** 运行[审阅集查询](review-set-search.md)时可搜索的属性的名称。 空白单元格表示无法在审阅集查询中搜索该字段。
 
--  **导出的域名称：** 导出文档时包含的元数据字段的名称。  空白单元格表示该字段不包含在导出的元数据中。
+- **导出的域名称：** 导出文档时包含的元数据字段的名称。  空白单元格表示该字段不包含在导出的元数据中。
 
 - **说明：** 元数据字段的说明。
 
@@ -54,7 +54,7 @@ ms.locfileid: "42074919"
 |对话密文刻录时间|ConversationRedactionBurnTime||为聊天创建会话的 PDF 版本的日期。|
 |文档创建日期|CreatedTime|Doc_date_created|从文档元数据创建日期。|
 |Custodian|Custodian|Custodian|与项目关联的保管人的名称。|
-|日期|日期|日期|Date 是一个根据文件类型的计算字段。<br /><br />电子邮件：发送日期<br />电子邮件附件：文档的上次修改日期; 如果不可用，则为父级的发送日期<br />嵌入文档：文档的上次修改日期;如果不可用，则为父级的上次修改日期<br />SPO 文档（包括新式附件）： SharePoint 上次修改日期;如果不可用，则文档的上次修改日期<br />非 Office 365 文档：上次修改日期<br />会议：会议开始日期<br />语音邮件：发送日期<br />IM：发送日期|
+|Date|Date|Date|Date 是一个根据文件类型的计算字段。<br /><br />电子邮件：发送日期<br />电子邮件附件：文档的上次修改日期; 如果不可用，则为父级的发送日期<br />嵌入文档：文档的上次修改日期;如果不可用，则为父级的上次修改日期<br />SPO 文档（包括新式附件）： SharePoint 上次修改日期;如果不可用，则文档的上次修改日期<br />非 Office 365 文档：上次修改日期<br />会议：会议开始日期<br />语音邮件：发送日期<br />IM：发送日期|
 |其他路径|Dedupedcompoundpath|Deduped_compound_path|完全重复的文档的复合路径列表（电子邮件：基于内容、文档：基于哈希）。|
 |其他保管人|DedupedCustodians|Deduped_custodians|完全重复的文档的保管人列表（基于内容的电子邮件，基于内容的电子邮件; 基于哈希的文档）。|
 |其他文件 Id|DedupedFileIds|Deduped_file_IDs|完全重复的文档的文件 Id 列表（基于内容的电子邮件，基于内容的电子邮件; 基于哈希的文档）。|
@@ -77,7 +77,7 @@ ms.locfileid: "42074919"
 |电子邮件安全性|EmailSecurity|Email_security|邮件的安全设置： **0** -无;**1** -签名;**2** -已加密;**3** -加密和签名。|
 |电子邮件敏感度|EmailSensitivity|email_sensitivity|邮件的敏感度设置： **0** -无;**1**个人;**2** -专用;**3** -CompanyConfidential。|
 |电子邮件集|EmailSet|Email_set|同一电子邮件集中所有邮件的组 ID。|
-|EmailThread*||Email_thread|邮件在电子邮件集中的位置;由从根到当前邮件的节点 Id 组成;，以句点分隔。|
+|EmailThread*||Email_thread|邮件在电子邮件集中的位置;由从根到当前邮件的节点 Id 组成，并由句点（.）分隔。|
 |提取的内容类型||Extracted_content_type|提取的内容类型，格式为 mime 类型;例如， **image/jpeg**|
 |ExtractedTextLength*||Extracted_text_length|提取的文本中的字符数。|
 |系列相关性分数事例问题 1 *||Family_relevance_score_case_issue_1|系列相关性分数事例问题1的相关性。|
@@ -93,7 +93,7 @@ ms.locfileid: "42074919"
 |有附件|HasAttachment|Email_has_attachment|指示邮件是否包含附件。|
 |拥有律师|HasAttorney||如果在律师列表中至少找到一个参与者，则**为 True** ; 否则为 false。否则，该值为**False**。|
 |HasText||Has_text|指示项目是否有文本;可能的值为**True**和**False**。|
-|不可变 ID|ImmutableId|Immutable_ID|存储在 Office 365 中的不可变 Id。|
+|不可变 ID||Immutable_ID|此 Id 用于在审阅集中唯一标识文档。 此字段不能在审阅集搜索中使用，并且 Id 不能用于在文档的本地位置访问文档。|
 |包含类型|InclusiveType|Inclusive_type|为分析计算的非独占类型： **0** -不包含;**1** -包含;**2**个包含项减号;**3**个包含副本。|
 |答复 Id 中||In_reply_to_ID|邮件中的 "回复 Id"。|
 |代表|IsRepresentative|Is_representative|每组精确副本中的一个文档被标记为代表。|
@@ -111,8 +111,8 @@ ms.locfileid: "42074919"
 |本机扩展|NativeExtension|Native_extension|项目的本机扩展。|
 |本机文件名|NativeFileName|Native_file_name|项目的本机文件名。|
 |NativeMD5||Native_MD5|文件流的 MD5 哈希值。|
-|ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|将电子邮件集和 ND 的串联设置为在审阅时有效排序;将**D**添加为 ND 集的前缀，并将**E**添加到电子邮件集。|
-|ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|将电子邮件集和 ND 的串联设置为在审阅时有效排序;将**D**添加为 ND 集的前缀，并将**E**添加到电子邮件集。 电子邮件集内的每封电子邮件后面都有相应的附件。|
+|ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|电子邮件线程（ET）集和接近重复（ND）集的串联。 此字段用于在审阅时进行有效排序。 **D**的前缀为 ND 集， **E**的前缀设置为 ET。|
+|ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|电子邮件线程（ET）集和接近重复（ND）集的串联。 此字段用于在审阅时进行有效排序。 **D**的前缀为 ND 集， **E**的前缀设置为 ET。 ET 集内的每个电子邮件项的后面都有相应的附件。|
 |标准化相关性分数事例问题1||Normalized_relevance_score_case_issue_1|来自相关性的标准化相关性分数事例问题1。|
 |O365 作者||O365_authors|来自 SharePoint 的作者。|
 |O365 创建者||O365_created_by|由 SharePoint 创建。|
@@ -149,7 +149,7 @@ ms.locfileid: "42074919"
 |Subject|Subject|Email_subject|邮件的主题。|
 |主题/职务|SubjectTitle||由项目的主题或标题组成的计算字段。|
 |标记的案例问题1||Tagged_by_Case_issue_1|将此文档标记为相关问题1的用户。|
-|标签|标签|标签|在审阅集中应用的标记。|
+|标记|标记|标记|在审阅集中应用的标记。|
 |主题列表|ThemesList|Themes_list|为分析而计算的主题列表。|
 |标题|标题|Doc_title|文档元数据中的标题。|
 |To|To|Email_to|邮件类型的 "To" 字段。 Format 为**DisplayName\<SmtpAddress>**|
