@@ -69,7 +69,7 @@
           href: privileged-access-management-configuration.md
     - name: 保护用户和设备的访问权限
       href: protect-access-to-data-and-services.md
-    - name: 客户锁箱
+    - name: 客户密码箱
       href: customer-lockbox-requests.md
 - name: 管理信息保护
   href: protect-information.md
@@ -352,6 +352,8 @@
               href: export-search-results.md
             - name: 导出搜索报告
               href: export-a-content-search-report.md
+            - name: 使用 Microsoft Edge 下载搜索结果
+              href: configure-edge-to-export-search-results.md
             - name: 搜索和删除电子邮件
               href: search-for-and-delete-messages-in-your-organization.md
             - name: 搜索本地用户的基于云的邮箱
@@ -428,6 +430,8 @@
               href: ediscovery-troubleshooting-common-issues.md
             - name: 重试失败的搜索
               href: retry-failed-content-search.md
+            - name: 使用 Microsoft Edge 下载搜索结果
+              href: configure-edge-to-export-search-results.md
     - name: 高级电子数据展示
       items:
         - name: 高级电子数据展示概述
@@ -1186,5 +1190,5 @@
   href: 'https://docs.microsoft.com/Office365/Enterprise'
 - name: Office 365 商业版
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
-- name: Microsoft 365 安全中心
+- name: Microsoft 365 安全
   href: 'https://docs.microsoft.com/microsoft-365/security/'
