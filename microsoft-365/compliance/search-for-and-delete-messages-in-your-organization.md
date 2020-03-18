@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 的安全与合规中心内的搜索和清除功能在组织中的所有邮箱中搜索并删除电子邮件。
-ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634160"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710511"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>在 Office 365 组织中搜索并删除电子邮件
+# <a name="search-for-and-delete-email-messages"></a>搜索和删除电子邮件
 
 **本文适用于管理员。你是否尝试在邮箱中查找要删除的项目？请参阅[使用“即时搜索”查找邮件或项目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
 你可以使用 Office365 中的内容搜索功能在组织中的所有邮箱中搜索并删除电子邮件。 这可以帮助你查找并删除可能有害或高风险的电子邮件，例如：
   
 - 包含危险附件或病毒的邮件
-    
+
 - 网络仿冒邮件
-    
+
 - 包含敏感数据的邮件
-    
+
 > [!CAUTION]
-> 搜索和清除是一项强大的功能，允许分配有必要权限的任意用户从组织的邮箱中删除电子邮件。 
+> 搜索和清除是一项强大的功能，允许分配有必要权限的任意用户从组织的邮箱中删除电子邮件。
   
 ## <a name="before-you-begin"></a>准备工作
 
