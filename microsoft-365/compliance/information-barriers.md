@@ -1,5 +1,5 @@
 ---
-title: 信息障碍概述
+title: 了解信息障碍
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
-ms.openlocfilehash: 95d3268830fe506000416e2281a49325fb95efec
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600659"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692649"
 ---
-# <a name="information-barriers"></a>信息屏障
+# <a name="learn-about-information-barriers"></a>了解信息障碍
 
 ## <a name="overview"></a>概述
 
@@ -36,7 +36,7 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 对于所有这些示例方案（及更多），可以将信息屏障策略定义为阻止或允许在 Microsoft 团队中进行通信。 此类策略可以阻止用户不应对其进行呼叫或聊天，或使用户只能与 Microsoft 团队中的特定组进行通信。 在信息屏障策略生效时，只要这些策略涵盖的用户尝试与 Microsoft 团队中的其他人通信，就会执行检查以阻止（或允许）通信（由信息屏障策略定义）。 若要了解有关信息障碍的用户体验方面的详细信息，请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
 > [!IMPORTANT]
-> 目前，信息障碍不适用于电子邮件通信或通过 SharePoint Online 或 OneDrive 进行文件共享。 此外，信息障碍独立于[合规性边界](tagging-and-assessment-in-advanced-ediscovery.md)。<p>在定义和应用信息屏障策略之前，请确保您的组织没有有效的[Exchange 通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies)。 （信息障碍基于通讯簿策略。） 
+> 目前，信息障碍不适用于电子邮件通信或通过 SharePoint Online 或 OneDrive 进行文件共享。 此外，信息障碍独立于[合规性边界](set-up-compliance-boundaries.md)。<p>在定义和应用信息屏障策略之前，请确保您的组织没有有效的[Exchange 通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies)。 （信息障碍基于通讯簿策略。） 
 
 ## <a name="what-happens-with-information-barriers"></a>信息障碍发生的情况
 

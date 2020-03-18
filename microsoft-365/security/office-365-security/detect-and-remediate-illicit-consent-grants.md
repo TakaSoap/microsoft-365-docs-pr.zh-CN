@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363048"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710521"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
 
@@ -29,7 +29,12 @@ ms.locfileid: "42363048"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什么是 Office 365 中的非法同意授权攻击？
 
-在违法许可授予攻击中，攻击者将创建一个 Azure 注册的应用程序，该应用程序请求对联系人信息、电子邮件或文档等数据的访问权限。 然后，攻击者向最终用户授予权限，允许该应用程序通过网络钓鱼攻击或将非法代码注入到受信任的网站来访问其数据。 在违法应用程序被授予同意后，它将具有对数据的帐户级别访问权限，而无需组织帐户。 常规修正步骤（如重置已违例帐户的密码或要求对帐户进行多重身份验证（MFA））不会对此类型的攻击有效，因为它们是第三方应用程序，并且是组织外部的。 这些攻击利用交互模型，该模型假定调用信息的实体是自动化的，而不是人工。
+在违法许可授予攻击中，攻击者将创建一个 Azure 注册的应用程序，该应用程序请求对联系人信息、电子邮件或文档等数据的访问权限。 然后，攻击者向最终用户授予权限，允许该应用程序通过网络钓鱼攻击或将非法代码注入到受信任的网站来访问其数据。 在违法应用程序被授予同意后，它将具有对数据的帐户级别访问权限，而无需组织帐户。 常规修正步骤（如重置已违例帐户的密码或要求对帐户进行多重身份验证（MFA））不会对此类型的攻击有效，因为它们是第三方应用程序，并且是组织外部的。 
+
+这些攻击利用交互模型，该模型假定调用信息的实体是自动化的，而不是人工。
+
+> [!IMPORTANT]
+> 您是否怀疑在违法许可的情况下遇到问题-从应用程序中立即授予权限？ Microsoft 云应用安全性（MCAS）具有用于检测、调查和修正 OAuth 应用程序的工具。 本 MCAS 文章中有一个教程，概述了如何[调查有风险的 OAuth 应用程序](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 您还可以设置[OAuth 应用策略](https://docs.microsoft.com/cloud-app-security/app-permission-policy)以调查应用程序请求的权限，这些权限是用户授权这些应用程序，并广泛批准或禁止这些权限请求。
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>非法同意在 Office 365 中授予攻击外观？
 
@@ -48,7 +53,7 @@ ms.locfileid: "42363048"
 5. 单击结果以查看活动的详细信息。 若要获取活动的详细信息，请单击 "**详细信息**"。 查看 "IsAdminContent" 是否设置为 True。
 
 > [!NOTE]
-> •在事件发生后，可能需要长达30分钟或最长24小时才能在搜索结果中显示相应的审核日志条目。 <br/><br/> •审核日志中保留和搜索的审核记录的时间长度取决于您的 Office 365 订阅，以及分配给特定用户的许可证的类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> * 在事件发生后，在搜索结果中显示相应的审核日志条目可能需要30分钟到24小时的时间。 <br/><br/> 审核记录在审核日志中保留和搜索的时间长度取决于您的 Office 365 订阅，以及分配给特定用户的许可证类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 如果此值为 true，则表示具有全局管理员访问权限的人员可能已授予对数据的广泛访问权限。 如果这是意外情况，请执行相应的步骤来[确认攻击](#how-to-confirm-an-attack)。
 
 ## <a name="how-to-confirm-an-attack"></a>如何确认攻击
@@ -98,7 +103,7 @@ ms.locfileid: "42363048"
 - 将运行脚本的计算机上的本地管理员。
 
 > [!IMPORTANT]
-> 强烈建议您在管理帐户上要求进行多重身份验证。 此脚本支持 MFA 身份验证。
+> ***强烈建议***您在管理帐户上要求进行多重身份验证。 此脚本支持 MFA 身份验证。
 
 1. 使用本地管理员权限登录到您将运行脚本的计算机。
 

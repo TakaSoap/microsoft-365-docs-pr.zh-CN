@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对信息障碍进行故障排除的指导。
-ms.openlocfilehash: b4c9bb46bc1e3c13cdc8b46a95733558714a44df
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600589"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692659"
 ---
 # <a name="troubleshooting-information-barriers"></a>信息屏障疑难解答
 
@@ -171,11 +171,46 @@ ms.locfileid: "41600589"
 
 3. [查看用户帐户、段、策略或策略应用程序的状态](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)。
 
+## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>问题：信息屏障策略未应用于所有指定用户
+
+定义了分段、定义的信息屏障策略并尝试应用这些策略后，您可能会发现策略应用于某些收件人，而不是应用于其他收件人。
+运行`Get-InformationBarrierPoliciesApplicationStatus` cmdlet 时，请按如下所示搜索输出中的文本。
+
+> 窃取`<application guid>`
+>
+> 收件人总数：81527
+>
+> 失败的收件人：2
+>
+> 失败类别：无
+>
+> 状态：完成
+
+### <a name="what-to-do"></a>需执行的操作
+
+1. 在审核日志中搜索`<application guid>`。 您可以复制此 PowerShell 代码并对变量进行修改。
+
+```powershell
+$DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
+```
+
+2. 检查 "" `"UserId"`和`"ErrorDetails"` "" 字段的值的审核日志中的详细输出。 这将为您提供失败的原因。 您可以复制此 PowerShell 代码并对变量进行修改。
+
+```powershell
+   $DetailedLogs[1] |fl
+```
+ 例如：
+
+> "UserId"： User1
+> 
+>"ErrorDetails"： "Status： IBPolicyConflict。 错误： IB 段 "segment id1" 和 IB 段 "segment id2" 发生冲突，无法将其分配给收件人。 
+
+3. 通常情况下，您会发现某个用户已包含在多个段中。 您可以通过更新中`-UserGroupFilter` `OrganizationSegments`的值来解决此问题。
+
+4. 使用这些过程[信息障碍策略](information-barriers-policies.md#part-3-apply-information-barrier-policies)重新应用信息屏障策略。
+
 ## <a name="related-topics"></a>相关主题
 
 [在 Microsoft 团队中定义信息障碍策略](information-barriers-policies.md)
 
 [信息屏障](information-barriers.md)
-
-
-

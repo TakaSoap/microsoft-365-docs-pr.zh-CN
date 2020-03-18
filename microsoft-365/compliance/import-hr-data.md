@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将员工数据从组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c1a44ad1e27d2d1002680faee56ae88e3e0921
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072998"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710541"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
 您可以在 Microsoft 365 合规性中心中设置数据连接器，以导入人力资源（HR）数据，例如，员工提交其让步的日期以及员工最后一天的日期。 这样，Microsoft 信息保护解决方案（如新的[内幕风险管理解决方案](insider-risk-management.md)）可以使用这种 HR 数据来帮助您的组织防止恶意活动或组织内的数据被盗。 设置 HR 连接器包含在 Azure Active Directory 中创建一个用于按连接器进行身份验证的应用程序，创建包含 HR 数据的 CSV 映射文件，在合规性中心内创建一个数据连接器，然后运行脚本（在计划的基础）将 CSV 文件中的 HR 数据 ingests 到 Microsoft 云。 然后，使用数据连接器 Microsoft 合规性解决方案（如内幕风险管理）访问导入到 Microsoft 365 组织的 HR 数据。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全局管理员的凭据登录，然后接受该请求。 您必须完成此步骤，然后才能在步骤3中成功创建 HR 连接器。
 
@@ -35,7 +35,7 @@ ms.locfileid: "42072998"
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤1：在 Azure Active Directory 中创建应用程序
 
-第一步是在 Azure Active Directory （AAD）中创建和注册新应用程序。 应用将与您在步骤3中创建的 HR 连接器相对应。  创建此应用程序将允许 AAD 在运行 HR 连接器时对其进行身份验证，并尝试访问你的组织。 此应用程序还将用于对您在步骤4中运行的脚本进行身份验证，以将 HR 数据上传到 Microsoft 云。 在创建此 AAD 应用过程中，请务必保存以下信息。 这些值将在后续步骤中用于此过程。
+第一步是在 Azure Active Directory （AAD）中创建和注册新应用程序。 应用将与您在步骤3中创建的 HR 连接器相对应。 创建此应用程序将允许 AAD 在运行 HR 连接器时对其进行身份验证，并尝试访问你的组织。 此应用程序还将用于对您在步骤4中运行的脚本进行身份验证，以将 HR 数据上传到 Microsoft 云。 在创建此 AAD 应用过程中，请务必保存以下信息。 这些值将在后续步骤中使用。
 
 - AAD 应用程序 ID （也称为 "*应用 id* " 或 "*客户端 id*"）
 
@@ -43,7 +43,7 @@ ms.locfileid: "42072998"
 
 - 租户 Id （也称为*目录 id*）
 
-有关在 AAD 中创建应用程序的分步说明，请参阅[创建 Aad 应用程序](https://docs.microsoft.com/azure/kusto/management/access-control/how-to-provision-aad-app)
+有关在 AAD 中创建应用程序的分步说明，请参阅[向 Microsoft identity Platform 注册应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>步骤2：使用 HR 数据准备 CSV 文件
 
@@ -92,7 +92,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    将显示 "状态" 页，确认已创建连接器。 此页面还包含作业 ID。 在下一步中，你将需要此作业 ID 来运行脚本。 您可以从此页面或连接线的飞出页面复制它。
 
-7. 单击“完成”****。
+7. 单击“**完成**”。
    
    新的连接器将显示在 "**连接器**" 选项卡上的列表中。 
 
@@ -159,13 +159,13 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    ![HR 连接器日志文件显示从 CSV 文件上载的编号行数](../media/HRConnectorLogFile.png)
 
-   **RecordsSaved**字段指示上传的 CSV 文件中的行数。 例如，如果 CSV 文件包含4行，则如果脚本成功上传了 CSV 文件中的所有行，则**RecordsSaved**字段的值为4。
+   **RecordsSaved**字段指示上传的 CSV 文件中的行数。 例如，如果 CSV 文件包含四行，则**RecordsSaved**字段的值为4，如果脚本成功上传了 CSV 文件中的所有行。
 
 如果您没有在步骤4中运行该脚本，则在 "**上次导入**" 下将显示下载该脚本的链接。 您可以下载该脚本，然后按照步骤4中的步骤运行它。
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Optional步骤6：安排脚本自动运行
 
-为了确保您的组织中的最新 HR 数据对类似于内幕风险管理解决方案的工具可用，我们建议您安排脚本定期（例如一天一次）自动运行。 这还要求将 CSV 文件中的 HR 数据更新为类似的（如果不相同）计划，以使其包含有关离开组织的员工的最新信息。 目标是上载最新的 HR 数据，以便 HR 连接器可以将其提供给内幕风险管理解决方案。
+若要确保组织中的最新 HR 数据对类似于内幕风险管理解决方案的工具可用，我们建议您安排脚本定期（例如一天一次）自动运行。 这还要求将 CSV 文件中的 HR 数据更新为类似的（如果不相同）计划，以使其包含有关离开组织的员工的最新信息。 目标是上载最新的 HR 数据，以便 HR 连接器可以将其提供给内幕风险管理解决方案。
 
 您可以在 Windows 中将 "任务计划程序" 应用程序用户每天自动运行该脚本。
 

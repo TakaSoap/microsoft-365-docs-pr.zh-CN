@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: 15b17dba38a8e34bebf8d128c669fb7fa1f0ebd1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600599"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710501"
 ---
-# <a name="define-policies-for-information-barriers"></a>定义信息障碍策略
+# <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
 ## <a name="overview"></a>概述
 
@@ -35,15 +35,15 @@ ms.locfileid: "41600599"
 
 在定义信息障碍策略时，您将使用用户帐户属性、分段、"阻止" 和/或 "允许" 策略以及策略应用程序。
 
-- **用户帐户属性**是在 Azure Active Directory （或 Exchange Online）中定义的。 这些属性可以包括部门、职务、位置、团队名称和其他作业配置文件详细信息。 
+- 用户帐户属性是在 Azure Active Directory （或 Exchange Online）中定义的。 这些属性可以包括部门、职务、位置、团队名称和其他作业配置文件详细信息。 
 
-- **分段**是在 Office 365 安全 & 合规性中心中使用选定的**用户帐户属性**定义的用户集。 （请参阅[支持的属性列表](information-barriers-attributes.md)。） 
+- 分段是在 Office 365 安全 & 合规性中心中使用选定的**用户帐户属性**定义的用户集。 （请参阅[支持的属性列表](information-barriers-attributes.md)。） 
 
-- **信息屏障策略**决定了通信限制或限制。 在定义信息障碍策略时，可以从以下两种策略中进行选择：
+- 信息屏障策略决定了通信限制或限制。 在定义信息障碍策略时，可以从以下两种策略中进行选择：
     - "块" 策略防止一个分段与另一个网段通信。
     - "允许" 策略允许一段仅与某些其他段进行通信。
 
-- **策略应用程序**在定义所有信息屏障策略之后完成，并准备好在您的组织中应用它们。
+- 策略应用程序在定义所有信息屏障策略之后完成，并准备好在您的组织中应用它们。
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概览
 
@@ -60,22 +60,22 @@ ms.locfileid: "41600599"
 
 除了[所需的许可证和权限](information-barriers.md#required-licenses-and-permissions)之外，请确保满足以下要求： 
      
-- **目录数据**。 确保您的组织的结构已反映在目录数据中。 为此，请确保在 Azure Active Directory （或 Exchange Online）中正确填充了用户帐户属性，如组成员身份、部门名称等。 若要了解详细信息，请参阅以下资源：
+- Directory data-确保您的组织的结构反映在目录数据中。 为此，请确保在 Azure Active Directory （或 Exchange Online）中正确填充了用户帐户属性，如组成员身份、部门名称等。 若要了解详细信息，请参阅以下资源：
   - [信息屏障策略的属性](information-barriers-attributes.md)
   - [使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [使用 Office 365 PowerShell 配置用户帐户的属性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
-- **作用域的目录搜索**。 在定义组织的第一个信息屏障策略之前，必须先[在 Microsoft 团队中启用范围目录搜索](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)。 在设置或定义信息屏障策略之前，请先等待至少24小时后，再启用范围目录搜索。
+- 作用域目录搜索-在定义组织的第一个信息屏障策略之前，必须[在 Microsoft 团队中启用范围目录搜索](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)。 在设置或定义信息屏障策略之前，请先等待至少24小时后，再启用范围目录搜索。
 
-- **审核日志记录**。 为了查找策略应用程序的状态，审核日志记录必须处于打开状态。 我们建议您在开始定义段或策略之前执行此操作。 若要了解详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
+- 审核日志记录-为了查找策略应用程序的状态，审核日志记录必须处于打开状态。 我们建议您在开始定义段或策略之前执行此操作。 若要了解详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- **无通讯簿策略**。 在定义和应用信息屏障策略之前，请确保没有适当的 Exchange 通讯簿策略。 （信息障碍基于通讯簿策略，但两种类型的策略不可互换。）如果您具有此类策略，请务必先[删除您的通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。
+- 无通讯簿策略-在定义和应用信息屏障策略之前，请确保没有适当的 Exchange 通讯簿策略。 信息障碍基于通讯簿策略，但这两种类型的策略不兼容。 如果您具有此类策略，请务必先[删除您的通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。 在信息屏障策略启用并启用了分层通讯簿后，***不包含***在信息屏障段中的所有用户都将在 Exchange online 中看到[分层通讯簿](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
-- **PowerShell**。 目前，信息屏障策略在 Office 365 Security & 合规性中心（使用 PowerShell cmdlet）中进行定义和管理。 虽然本文中提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 您还将需要 AzureRM 模块。
+- 目前使用 powershell cmdlet 在 Office 365 安全 & 合规中心中定义和管理信息屏障策略。 虽然本文中提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 您还将需要 AzureRM 模块。
     - [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [安装 Azure PowerShell 模块](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- **Microsoft 团队中的信息障碍的管理员同意**。 如果你的策略已准备就绪，则信息障碍可以从聊天会话中删除那些不应处于其中的人。 这有助于确保您的组织遵守策略和管理法规。 使用以下过程可使信息障碍策略在 Microsoft 团队中按预期方式工作。 
+- Microsoft 团队中的信息障碍的管理员同意-当你的策略准备就绪后，信息障碍可以从聊天会话中删除他们不应参与的人员。 这有助于确保您的组织遵守策略和管理法规。 使用以下过程可使信息障碍策略在 Microsoft 团队中按预期方式工作。 
 
    1. 运行以下 PowerShell cmdlet：
 
@@ -122,7 +122,7 @@ ms.locfileid: "41600599"
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定义段
 
-定义段不会对用户产生影响;它只是设置要定义并应用的信息屏障策略的阶段。
+定义段不会影响用户;它只是设置要定义并应用的信息屏障策略的阶段。
 
 1. 使用**OrganizationSegment** Cmdlet 和**UserGroupFilter**参数，该参数对应于要使用的[属性](information-barriers-attributes.md)。
 
@@ -153,16 +153,21 @@ ms.locfileid: "41600599"
 
 |语法  |示例  |
 |---------|---------|
-|`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>在此示例中，我们定义了一个名为*NotSales*的字段，其中包括不在*销售*中的所有人。 Cmdlet 的 **-ne**部分引用 "不等于"。  |
+|`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`   | <p>在此示例中，我们定义了一个名为*NotSales*的字段，其中包括不在*销售*中的所有人。 Cmdlet 的 **-ne**部分引用 "不等于"。  |
 
-除了使用 "等于" 或 "不等于" 定义段之外，您还可以使用 "等于" 和 "不等于" 参数定义一个段。
+除了使用 "等于" 或 "不等于" 定义段之外，您还可以使用 "等于" 和 "不等于" 参数定义一个段。 您还可以使用逻辑*AND*和*OR*运算符定义复杂的组筛选器。
 
-|示例  |
-|---------|
-|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"` <p>在此示例中，我们定义了一个名为 " *LocalFTE* " 的字段，其中包括本地定位且其位置未列为*临时*的用户。    |
+
+|语法    |示例  |
+|---------|---------|
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>在此示例中，我们定义了一个名为 " *LocalFTE* " 的字段，其中包括位于本地且其位置未列为*临时*的人员。    |
+ |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>在此示例中，我们定义了一个名为*Segment1*的字段，其中包括属于 group1@contoso.com 成员的人员，而不是 group3@contoso.com 的成员。
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | 在此示例中，我们定义了一个名为*Segment2*的字段，其中包括属于 group2@contoso.com 成员的人员，而不是 group3@contoso.com 的成员。
+|`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  在此示例中，我们定义了一个名为*Segment1and2*的字段，其中包括 group1@contoso.com 和 group2@contoso.com 的人员成员，而不是 group3@contoso.com 的成员。
+
 
 > [!TIP]
-> 如果可能，请使用包含 "-eq" 或 "-ne" 的段定义。 尽量不要定义复杂的段定义。 
+> 如果可能，请使用包含 "-eq" 或 "-ne" 的段定义。 尽量不要定义复杂的段定义。
 
 ## <a name="part-2-define-information-barrier-policies"></a>第2部分：定义信息屏障策略
 
@@ -256,6 +261,8 @@ ms.locfileid: "41600599"
 |最新的信息屏障策略应用程序     | 使用**InformationBarrierPoliciesApplicationStatus** cmdlet。 <p>语法`Get-InformationBarrierPoliciesApplicationStatus`<p>    这将显示有关策略应用程序是已完成、失败还是正在进行的信息。       |
 |所有信息屏障策略应用程序|改用`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>这将显示有关策略应用程序是已完成、失败还是正在进行的信息。|
 
+<!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
+
 ## <a name="what-if-i-need-to-remove-or-change-policies"></a>如果我需要删除或更改策略，该怎么办？
 
 资源可用于帮助您管理信息障碍策略。
@@ -309,7 +316,7 @@ Contoso 将使用 Azure Active Directory 中的 "部门" 属性来定义段，�
 
 Contoso 定义了三种策略，如下表所述：
 
-|Policy  |策略定义  |
+|策略  |策略定义  |
 |---------|---------|
 |策略1：防止销售与信息检索通信     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*销售-研究*"。 当此策略处于活动状态且已应用时，它将有助于阻止销售部门中的用户与研究网段中的用户进行通信。 这是单向策略;它不会阻止研究与销售通信。 为此，需要策略2。      |
 |策略2：防止与销售通信的研究     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*研究-销售*"。 当此策略处于活动状态且已应用时，它将有助于防止在研究网段中的用户与销售部门中的用户进行通信。       |
