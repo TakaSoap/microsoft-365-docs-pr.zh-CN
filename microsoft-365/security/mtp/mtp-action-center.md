@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a42646c423c08298a619e8bd559cd819ba3c47db
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633980"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857459"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -47,9 +47,9 @@ ms.locfileid: "42633980"
 
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
 
-2. 在导航窗格中，选择“**操作中心**”。 
+2. 在“导航”窗格中，选择“操作中心”****。 
 
-3. 在操作中心，你将看到两个选项卡：“**挂起**”和 **“历史记录**”。
+3. 在操作中心中，您将看到两个选项卡：**挂起**和**历史记录**。
 
     - “**挂起**”选项卡列出了需要由安全运营团队中的人员进行审查和批准才能继续的调查。 确保对此处看到的挂起项目进行审查并采取操作。
 
@@ -72,11 +72,11 @@ ms.locfileid: "42633980"
 
 |修正操作 |所需角色和权限 |
 |--|----|
-|Microsoft Defender ATP 修正（设备） |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的**安全管理员**角色<br/>--- 或 ---<br/>在 Microsoft Defender ATP 中分配的**主动修正操作**角色 <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [为基于角色的访问控制创建和管理角色 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Office 365 ATP 修正（Office 内容和电子邮件）  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的**安全管理员**角色<br/>--- 和 --- <br/>在 Office 365 安全与合规中心 ([https://protection.office.com](https://protection.office.com)) 中分配的**搜索和清除**角色 <br/><br/>**重要提示**：如果仅在 Office 365 安全与合规中心中分配了安全管理员角色，则将无法访问操作中心或 Microsoft 威胁防护功能。 必须在 Azure Active Directory 或 Microsoft 365 管理中心中分配安全管理员角色。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Office 365 安全与合规中心的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender ATP 修正（设备） |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的安全管理员角色<br/>--- 或 ---<br/>在 Microsoft Defender ATP 中分配的主动修正操作角色 <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [为基于角色的访问控制创建和管理角色 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Office 365 ATP 修正（Office 内容和电子邮件）  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的安全管理员角色<br/>--- 和 --- <br/>在 Office 365 安全与合规中心 ([https://protection.office.com](https://protection.office.com)) 中分配的搜索和清除角色 <br/><br/>**重要提示**：如果仅在 Office 365 安全与合规中心中分配了安全管理员角色，则将无法访问操作中心或 Microsoft 威胁防护功能。 必须在 Azure Active Directory 或 Microsoft 365 管理中心中分配安全管理员角色。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Office 365 安全与合规中心的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
-> 在 Azure Active Directory 中分配了**全局管理员**角色的用户可以批准或拒绝操作中心中挂起的任何操作。 但是，作为最佳做法，你的组织应该限制分配全局管理员角色的人数。 对于操作中心权限，我们建议使用上面列出的**安全管理员**、**主动修正操作**以及**搜索和清除**角色。
+> 在 Azure Active Directory 中分配了全局管理员角色的用户可以批准或拒绝操作中心中挂起的任何操作。 但是，作为最佳做法，你的组织应该限制分配全局管理员角色的人数。 对于操作中心权限，我们建议使用上面列出的安全管理员、主动修正操作以及搜索和清除角色。
 
 ## <a name="next-steps"></a>后续步骤 
 

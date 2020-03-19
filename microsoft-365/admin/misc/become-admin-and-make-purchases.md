@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '了解如何成为组织的管理员并获取 Office 365 订阅。 '
-ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361547"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857411"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>成为管理员并为组织购买 Office 365
 
@@ -87,7 +87,7 @@ ms.locfileid: "42361547"
 |添加或删除许可证  <br/> |您可以为未使用 Office 365 的用户[添加更多许可证](../../commerce/licenses/buy-licenses.md)，也可以删除不需要使用组织的 office 365 订阅的[用户的许可证](../manage/remove-licenses-from-users.md)。  <br/> |
 |联系已注册的其他人  <br/> |联系其他用户，让其知道你正在管理他们的 Office 365 订阅并其已升级。[请按照下列步骤](../add-users/add-users.md)，查看" **活动用户**"及其电子邮件地址的列表。<br/> |
 |开始使用 Office 365  <br/> |请访问 [Office 365 学习中心](https://support.office.com/learn/office365-for-business)，了解如何登录、检查电子邮件和共享文档等。你和用户都可使用该网站实现 Office 365 入门。  <br/> |
-|管理 Office 365 订阅  <br/> |访问[Office 365 管理员帮助中心](../admin-home.md)并了解常见管理任务，如添加和删除用户、重置密码和设置移动设备。  <br/> |
+|管理 Office 365 订阅  <br/> |访问[Office 365 管理员帮助中心](../admin-home.yml)并了解常见管理任务，如添加和删除用户、重置密码和设置移动设备。  <br/> |
 
 ## <a name="still-need-help"></a>是否仍需要帮助？
 

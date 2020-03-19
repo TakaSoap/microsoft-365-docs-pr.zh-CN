@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Office 365 中购买域名。
 ms.custom: okr_smb
-ms.openlocfilehash: 8b2b23e2e699723d54ecb7ca2807296641178664
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1982ac054ca64f2442e108b457553a58ebcb234c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251160"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857435"
 ---
 # <a name="buy-a-domain-name-in-office-365"></a>在 Office 365 中购买域名
 
@@ -37,7 +37,7 @@ ms.locfileid: "42251160"
   
 ### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登录并转到设置\>域\>购买域
 
-1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
     
 3. 在 "**域**" 页上，选择 "**购买域**"。
     
@@ -121,4 +121,4 @@ ms.locfileid: "42251160"
 
 [关于域的常见问题](../setup/domains-faq.md)
 
-[获取 Office 365 域的帮助](get-help-with-domains.md)
+[获取 Office 365 域的帮助](get-help-with-domains.yml)
