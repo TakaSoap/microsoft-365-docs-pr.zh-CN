@@ -47,12 +47,14 @@
           href: get-ready/prerequisites.md
         - name: 准备网络
           href: get-ready/network.md
-        - name: 为 Microsoft 托管桌面准备本地资源访问权限
+        - name: 准备本地资源访问
           href: get-ready/authentication.md
-        - name: 为 Microsoft 托管桌面准备映射的驱动器
+        - name: 准备映射的驱动器
           href: get-ready/mapped-drives.md
-        - name: 为 Microsoft 托管桌面准备证书和网络配置文件
+        - name: 准备证书和网络配置文件
           href: get-ready/certs-wifi-lan.md
+        - name: 准备打印资源
+          href: get-ready/printing.md
         - name: 准备应用
           href: get-ready/apps.md
           items:
