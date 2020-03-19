@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 了解如何验证您的电子邮件和域所有权，以接管 Office 365 中的非托管租户
-ms.openlocfilehash: e3c89e122264808e2a8631c07269ea263c87fdaa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0f7932b9ba727db62f81ac15b99a5f5ca276f09f
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240360"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857399"
 ---
 # <a name="perform-an-internal-admin-takeover-in-office-365"></a>在 Office 365 中执行内部管理员接管
 
@@ -71,7 +71,7 @@ YouTube：[接管 Power BI 和 Office 365 IT 管理员角色的 3 个步骤](htt
 
 [Azure AD 中的管理员接管](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[获取 Office 365 域的帮助](../get-help-with-domains/get-help-with-domains.md)
+[获取 Office 365 域的帮助](../get-help-with-domains/get-help-with-domains.yml)
 
 [在你的组织中使用自助服务注册](self-service-sign-up.md)
   

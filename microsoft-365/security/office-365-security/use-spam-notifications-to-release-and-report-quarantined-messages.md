@@ -1,11 +1,11 @@
 ---
-title: 在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
+title: Office 36 中的最终用户垃圾邮件通知
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: 如果管理员为用户启用通知，则会收到一条通知消息，其中列出了发送到邮箱的邮件，并被标识为垃圾邮件、批量邮件或网络钓鱼邮件。 您可以在收到通知后释放或报告邮件。
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: 当管理员在反垃圾邮件策略中启用最终用户垃圾邮件通知后，邮件收件人将收到有关其隔离邮件的定期通知。
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722033"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857140"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
+# <a name="end-user-spam-notifications-in-office-365"></a>Office 365 中的最终用户垃圾邮件通知
 
-如果您的管理员为用户启用了垃圾邮件通知，则您将收到一条通知消息，其中列出发往您的邮箱的邮件，而不是被标识为垃圾邮件、批量或网络钓鱼和隔离的邮件。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）组织中，隔离会在 Office 365 组织中保留可能有害或不需要的邮件。 有关详细信息，请参阅[Office 365 中的隔离](quarantine-email-messages.md)。
 
-> [!TIP]
-> 如果你是管理员，并且想要启用此功能，则可以在[修改默认反垃圾邮件策略](configure-your-spam-filter-policies.md)时选择此选项。
+默认情况下，在反垃圾邮件策略中禁用最终用户垃圾邮件通知。 当管理员[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md)后，邮件收件人将收到有关被隔离为垃圾邮件、批量电子邮件或（截止到4月，2020）的网络钓鱼的邮件的定期通知。
 
-您收到的邮件包括您拥有的垃圾邮件隔离邮件的数量，以及列表中最后一条消息的日期和时间（以通用协调时间或 UTC 为单位）。 此列表包含每个邮件的以下内容：
+> [!NOTE]
+> 在10月2019，我们删除了直接从最终用户的垃圾邮件通知中释放隔离邮件的功能。 相反，用户现在可以转到 Office 365 安全 & 合规中心来释放隔离邮件（直接或通过单击通知中的 "**查看**"）。 有关详细信息，请参阅[在 Office 365 中查找并以用户的方式释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。 <br/><br/> 被隔离为高可信度网络钓鱼、恶意软件或通过邮件流规则（也称为传输规则）的邮件仅适用于管理员。 有关详细信息，请参阅[在 Office 365 中以管理员身份查找和释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)。
 
-- **发件人**隔离邮件的发送名称和电子邮件地址。
+最终用户垃圾邮件通知包含每个隔离邮件的以下信息：
 
-- **主题** 隔离邮件的主题行文本。
+- **发件人**：隔离邮件的发送名称和电子邮件地址。
 
-- **日期** 邮件隔离的日期和时间 (UTC)。
+- **Subject**：隔离邮件的主题行文本。
 
-以下是您可以使用隔离邮件执行的操作：
+- **日期**：邮件被隔离的日期和时间（以 UTC 为单位）。
 
-- 如果希望 Office 365 将发件人添加到阻止发件人列表，请**阻止发件人**。
+- **阻止发件人**：单击此链接可将发件人添加到阻止发件人列表。
 
-- 如果邮件不是垃圾邮件，并且您希望 Office 365 将邮件发送到您的邮箱，则**释放**。
+- **查看**：单击此链接可转到 Security & 合规性中心中的隔离，您可以在其中释放、删除或报告隔离邮件。
 
-- 如果要执行其他操作，如预览或发布，请**查看**以导航到安全与合规中心内的隔离门户。
-
-请注意以下事项：
-
-- 如果用户垃圾邮件通知中不包含与邮件流规则匹配的恶意软件和高可信度邮件和邮件，则会将其隔离。 
-
-- 您可以释放邮件并将其报告为误报（非垃圾邮件），但只能执行一次。
+![最终用户垃圾邮件通知示例](../../media/end-user-spam-notification.png)

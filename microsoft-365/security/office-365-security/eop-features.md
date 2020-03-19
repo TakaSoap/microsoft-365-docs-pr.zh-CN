@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 505487e079ea198c6575fd76e2e59a60ead19940
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599369"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857341"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -48,9 +48,9 @@ ms.locfileid: "41599369"
 |通过 web 上的 Outlook 进行的垃圾邮件和非垃圾邮件提交垃圾邮件报告|您可以通过 web 上的 Outlook 垃圾邮件报告将垃圾邮件和非垃圾邮件提交给 Microsoft。 有关详细信息，请参阅 [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。  <br/><br/> 此功能当前可供 Outlook 在其 Exchange Server 2013 SP1 或更高版本的邮箱正在通过 EOP 筛选的 web 客户上使用。 Web 上的 Exchange Online Outlook 客户在不久的将来也将具有此功能。|
 |最终用户垃圾邮件隔离通知|最终用户可以释放自己的垃圾邮件隔离邮件，并选择通过最终用户垃圾邮件通知邮件将其报告为非垃圾邮件。 必须由管理员配置和启用这些通知电子邮件，如在[Exchange Online 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-exchange-online.md)或[在 EOP 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-eop.md)中所述。|
 |最终用户垃圾邮件隔离通知频率|默认情况下此频率为 3 天，可配置为 1 到 15 天。|
-|管理员配置最终用户垃圾邮件隔离通知的语言的能力|对最终用户和管理员可用。 有关详细信息，请参阅[以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)，或[查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|
-|通过网页访问和管理隔离中的邮件|对最终用户和管理员可用。 有关详细信息，请参阅[以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)，或[查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|
-|可以搜索隔离邮箱|管理员和最终用户均可搜索隔离邮箱，以查找特定的垃圾邮件。 有关详细信息，请参阅[以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)，或[查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|
+|管理员配置最终用户垃圾邮件隔离通知的语言的能力|对最终用户和管理员可用。 有关详细信息，请参阅[在 Office 365 中将隔离的邮件和文件作为管理员进行管理](manage-quarantined-messages-and-files.md)，或[查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|
+|通过网页访问和管理隔离中的邮件|对最终用户和管理员可用。 有关详细信息，请参阅[在 Office 365 中将隔离的邮件和文件作为管理员进行管理](manage-quarantined-messages-and-files.md)，或[查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|
+|可以搜索隔离邮箱|管理员和最终用户均可搜索隔离邮箱，以查找特定的垃圾邮件。 有关详细信息，请参阅[在 Office 365 中将隔离的邮件和文件作为管理员进行管理](manage-quarantined-messages-and-files.md)，或[查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|
 |从 Exchange 管理中心查看作为垃圾邮件隔离的邮件头|在隔离中查看邮件头后，您还可以复制邮件头文本并将其粘贴到[邮件头分析器](https://testconnectivity.microsoft.com/?tabid=mha)中，其中介绍了邮件发生了什么。|
 |**反恶意软件保护**||
 |多引擎反恶意软件保护|多引擎反恶意软件保护可始终自动保护我们的客户。|

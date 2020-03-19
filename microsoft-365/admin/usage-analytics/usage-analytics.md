@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 概述贵组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: 8770d3f49c50ffcab46c1aba302320a49cff8312
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 0481f894a4841488b20af90cd7c00619d2ad5c98
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633420"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826377"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 ---
-Microsoft 365 美国政府社区也提供 microsoft 365 的使用情况分析。
+Microsoft 365 的使用情况分析尚不可用于 Microsoft 365 美国政府社区版。
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析概述
 

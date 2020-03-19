@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Microsoft 365 管理员 documation
+summary: 了解 Microsoft 365 管理员可使用的资源。
+metadata:
+  title: Microsoft 365 管理员 documation
+  description: 了解 Microsoft 365 管理员可使用的资源。
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/05/2020
+  ms.openlocfilehash: 9baffa7688223c57c5ef863d9d39beed7bc38f62
+  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/19/2020
+  ms.locfileid: "42857518"
+landingContent:
+- title: 关于管理中心
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是管理员中心
+      url: admin-overview/admin-overview.md
+  - linkListType: whats-new
+    links:
+    - text: 获取新功能
+      url: manage/stay-on-top-of-updates.md
+- title: 开始使用
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 规划你的设置
+      url: setup/plan-your-setup.md
+    - text: 设置 Office 365
+      url: setup/setup.md
+    - text: 将域添加到 Office 365
+      url: setup/add-domain.md
+    - text: 将电子邮件和联系人迁移到 Office 365
+      url: setup/migrate-email-and-contacts-admin.md
+    - text: 设置 Office 365 文件存储和共享
+      url: setup/set-up-file-storage-and-sharing.md
+    - text: 添加用户
+      url: add-users/add-users.md
+    - text: 设置多重身份验证
+      url: security-and-compliance/set-up-multi-factor-authentication.md
+- title: 疑难解答
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 修复 Office 安装问题
+      url: https://support.office.com/article/troubleshoot-installing-office-35ff2def-e0b2-4dac-9784-4cf212c1f6c2
+    - text: 使用 Microsoft 支持和恢复助手修复 Outlook 和 Office 365 问题
+      url: https://support.office.com/article/about-the-microsoft-support-and-recovery-assistant-e90bb691-c2a7-4697-a94f-88836856c72f
+    - text: 修复电子邮件问题
+      url: https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues
+    - text: 修复 OneDrive for Business 同步问题
+      url: https://go.microsoft.com/fwlink/?linkid=866431
+- title: 订阅
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 从免费试用版购买订阅
+      url: https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial
+    - text: 取消订阅
+      url: https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription?
+- title: 了解详细信息
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Microsoft Teams 文档
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: Office 365 企业版文档
+      url: https://docs.microsoft.com/Office365/Enterprise
+    - text: Office 365 培训中心
+      url: https://support.office.com/office-training-center
+    - text: Microsoft 365 入门
+      url: https://docs.microsoft.com/en-us/learn/m365/

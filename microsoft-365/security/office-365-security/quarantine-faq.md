@@ -2,8 +2,8 @@
 title: 隔离常见问题解答
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -15,62 +15,62 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: 本主题提供了关于托管隔离的常见问题及解答。
-ms.openlocfilehash: b4112bf785a6ee2f4c833ab08d2c199388585093
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 有关 Office 365 中的隔离的常见问题的解答。
+ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598659"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856901"
 ---
-# <a name="quarantine-faq"></a>隔离常见问题解答
+# <a name="quarantine-faq-in-office-365"></a>Office 365 中的隔离 FAQ
 
-本主题提供了关于托管隔离的常见问题及解答。解答适用于 Microsoft Exchange Online 和 Exchange Online Protection 客户。
+本主题提供了在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）客户中具有邮箱的 Office 365 客户的隔离的常见问题和解答。
 
- **问：如何在隔离中管理恶意软件隔离的邮件？**
+## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>问：如何管理已隔离的恶意邮件？
 
-您需要使用安全 & 合规性中心，以便查看和处理发送到隔离的邮件，因为它们包含恶意软件。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](quarantine-email-messages.md)。
+只有管理员可以管理隔离的恶意邮件。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
 
- **问：如何将该服务配置为将垃圾邮件隔离的邮件发送到隔离邮箱？**
+## <a name="q-how-do-i-quarantine-spam"></a>问：如何隔离垃圾邮件？
 
-答：默认情况下，经过内容筛选的邮件将发送到收件人的垃圾邮件文件夹。但是，管理员可以将内容筛选器策略配置为将垃圾邮件隔离邮件转为发送到隔离邮箱。有关可以对内容筛选邮件执行的不同操作的详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。
+A. 默认情况下，通过垃圾邮件筛选功能分类为垃圾邮件或批量电子邮件的邮件将被传递到用户的邮箱，并移动到 "垃圾邮件" 文件夹。 但您可以创建并配置反垃圾邮件策略以隔离垃圾邮件或批量电子邮件。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
- **问：该服务具有对垃圾邮件隔离消息的管理员和最终用户管理吗？**
+## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>问：如何向用户授予对隔离的访问权限？
 
-A. 作为管理员，你可以在安全与合规中心（SCC）中搜索和查看有关所有隔离电子邮件的详细信息。 在查找邮件之后，您可以将其发布到特定用户，并根据需要将其报告为 Microsoft 垃圾邮件分析团队的误报（非垃圾邮件）。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
+A. 用户必须具有有效的帐户才能访问其自己的隔离邮件。 独立 EOP 要求用户在 EOP 中表示为邮件用户（手动创建或通过目录同步创建）。 有关在独立 EOP 环境中管理用户的详细信息，请参阅[Manage mail users IN EOP](manage-mail-users-in-eop.md)。
 
-作为最终用户，您可以通过以下方式管理自己的垃圾邮件隔离邮件：
+## <a name="q-what-messages-can-end-users-access-in-quarantine"></a>问：最终用户可以访问隔离区中的哪些邮件？
 
-- 垃圾邮件隔离用户界面。 有关详细信息，请参阅[在 Office 365 中查找并以用户的方式释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。
+A. 用户可以访问垃圾邮件、批量电子邮件，以及在他们是收件人的网络钓鱼邮件（如4月，2020）。 最终用户无法访问隔离的恶意软件、高可信度的网络钓鱼或因将邮件传递到邮件流规则中**的托管隔离**操作（也称为传输规则）而被隔离的邮件。 有关访问隔离邮件的用户的详细信息，请参阅[在 Office 365 中查找并以用户的形式发布隔离邮件](find-and-release-quarantined-messages-as-a-user.md)。
 
- **问：如何向最终用户授予对隔离的访问权限？**
+## <a name="q-how-long-are-messages-kept-in-the-quarantine"></a>问：邮件在隔离中保存了多长时间？
 
-A. 若要访问最终用户垃圾邮件隔离邮箱，最终用户必须具有有效 Office 365 用户 ID 和密码。 保护本地邮箱的 EOP 客户必须是通过目录同步或 EAC 创建的有效电子邮件用户。 有关管理用户的详细信息，EOP 管理员可以参阅[Manage mail users IN EOP](manage-mail-users-in-eop.md)。 对于 EOP 独立客户，建议使用目录同步并启用基于目录的边缘阻止，有关详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
+A. 您可以使用反垃圾邮件策略配置在隔离中保存垃圾邮件、网络钓鱼和批量电子邮件的时间长度。 默认值为30天，也是最大值。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)
 
- **问：最终用户可以访问隔离区中的哪些邮件？**
+对于由邮件流规则操作隔离的邮件，会将**邮件传递到托管隔离**，并将邮件保留30天。 您不能配置此持续时间。
 
-A. 最终用户可以访问自己的网络钓鱼、垃圾邮件和批量邮件。 最终用户无法访问其自己的恶意软件、高可信度网络钓鱼或与邮件流规则匹配的邮件（也称为传输规则）;这些仅在管理员隔离区中可用。 
+时段到期后，邮件将被删除且不可恢复。
 
- **问：邮件将在隔离邮箱中保留多长时间？**
+## <a name="q-can-i-release-or-report-more-than-one-quarantined-message-at-a-time"></a>问：我是否可以一次释放或报告多个隔离邮件？
 
-A. 默认情况下，垃圾邮件隔离的邮件在隔离中保留30天，而与邮件流规则匹配的隔离邮件将在隔离中保留最长30天（基于默认内容筛选策略中设置的保留期）。 在此时间段后，邮件将被删除且不可检索。 与邮件流规则匹配的隔离邮件的保留期不可配置。 但是，垃圾邮件隔离邮件的保留期可以通过内容筛选器策略中的 "**保留垃圾邮件（天）** " 设置来降低。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。
+A. 在安全 & 合规性中心中，可以一次选择并发布最高100个邮件。
 
- **问：可以一次释放或报告多个被隔离的邮件吗？**
+管理员可以使用 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中的[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)和[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet 来批量查找和释放隔离的邮件，并批量报告误报。
 
-A. 是的，在隔离门户中一次最多可以释放100封邮件。 此外，管理员还可以创建远程 Windows PowerShell 脚本来完成此任务。 使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) cmdlet 搜索邮件，并使用[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet 释放邮件。
+## <a name="q-are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>问：搜索隔离邮件时是否支持通配符？ 是否可以搜索特定域的隔离邮件？
 
- **问：搜索被隔离邮件时是否支持通配符？是否可以搜索特定域的隔离邮件？**
+A. 安全性 & 合规性中心不支持通配符。 例如，在搜索发件人时，您需要指定完整的电子邮件地址。 不过，您可以在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中使用通配符。
 
-答：在 Exchange 管理员中心指定搜索条件时，不支持通配符。例如，在搜索某个发件人时，必须指定完整的电子邮件地址。
-
-通过远程 Windows PowerShell，管理员可以指定 [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) cmdlet 以搜索特定域的隔离邮件（例如 contoso.com）：
+例如，运行以下命令以查找来自域 contoso.com 中的所有发件人的垃圾邮件隔离邮件：
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
 ```
 
-可将结果传递给 [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet。包括 -ReleaseToAll 参数以将邮件释放给所有收件人。邮件释放后，无法再次释放该邮件。
+然后，运行以下命令，将这些邮件释放到所有原始收件人：
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
 ```
+
+释放邮件后，您将无法再次将其释放。

@@ -17,31 +17,30 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: 您可以在 Office 365 中为传入电子邮件设置隔离，在其中已被筛选为垃圾邮件、批量、网络钓鱼邮件和恶意软件的传入电子邮件可以保留下来供以后查看。
-ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+description: Office 365 中的隔离会保留可能有害或不需要的邮件。 管理员和最终用户可以访问隔离。
+ms.openlocfilehash: 9c82ba9821c42fe6c3dd78dbcecf63327d176e93
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957427"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857305"
 ---
-# <a name="quarantine-email-messages-in-office-365"></a>在 Office 365 中隔离电子邮件
+# <a name="quarantine-in-office-365"></a>Office 365 中的隔离
 
-您可以在 Office 365 中为传入电子邮件设置隔离，其中已被筛选为垃圾邮件的邮件、批量邮件、网络钓鱼邮件、包含恶意软件的邮件以及与指定的邮件流规则匹配的邮件（也称为 trasport 规则）可供以后保留概述.
-  
-默认情况下，为网络钓鱼、恶意软件和邮件流规则筛选的邮件将被发送到隔离，而被筛选为垃圾邮件和批量邮件的邮件将被发送到收件人的 "垃圾邮件" 文件夹。 作为管理员，您可以设置垃圾邮件筛选器策略（也称为 "内容筛选器策略"），以便改为将垃圾邮件和批量邮件发送到隔离。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。
-  
-用户和管理员都可以使用隔离邮件。 用户只能在隔离中处理自己的已筛选邮件。 管理员可以搜索和管理所有用户的隔离邮件。
+如果您是在 Exchange Online 中有邮箱或独立 Exchange Online Protection （EOP）客户但没有 Exchange Online 邮箱的 Office 365 客户，则可以使用隔离来保存可能有害的邮件。
 
-> [!NOTE]
-> 恶意软件、高可信度的网络钓鱼邮件和通过邮件流规则操作隔离的邮件仅在管理员隔离区中可用。 用户可以访问自己的网络钓鱼邮件、垃圾邮件和批量邮件。 
-  
-了解有关使用隔离邮件的详细信息：
-  
-- [以管理员身份管理隔离邮件](manage-quarantined-messages-and-files.md)
+如果发现*任何*附件包含恶意软件，反恶意软件策略将自动隔离邮件。 有关详细信息，请参阅[在 Office 365 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 
-- [以用户身份查找并释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)
+默认情况下，反垃圾邮件策略隔离网络钓鱼邮件，并将垃圾邮件和批量电子邮件传递到用户的 "垃圾邮件" 文件夹。 不过，您还可以创建和自定义反垃圾邮件策略以隔离垃圾邮件和批量电子邮件。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-- [使用用户垃圾邮件通知释放和报告垃圾邮件隔离邮件](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+用户和管理员都可以使用隔离邮件：
 
-- [隔离常见问题解答](quarantine-faq.md)
+- 管理员可对所有用户使用所有类型的已隔离邮件。 只有管理员可以处理被隔离为恶意软件、高可信度网络钓鱼的邮件或邮件流规则（也称为传输规则）的结果。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
+
+- 如果邮件被隔离为垃圾邮件、批量电子邮件或（从2020年4月，）的网络钓鱼，则用户可以使用它们作为收件人的隔离邮件。 有关详细信息，请参阅[在 Office 365 中查找并以用户的方式释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。
+
+  为了防止用户管理自己的隔离网络钓鱼邮件，管理员可以为反垃圾邮件策略中的**网络钓鱼电子邮件**筛选判定功能配置不同的操作。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+
+- 管理员和用户可以向在隔离中的 Microsoft 报告误报。
+
+有关隔离的详细信息，请参阅[隔离 FAQ](quarantine-faq.md)。

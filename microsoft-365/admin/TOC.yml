@@ -1,5 +1,5 @@
 - name: 管理员主页
-  href: admin-home.md
+  href: admin-home.yml
   items:
     - name: 概述
       items:
@@ -8,7 +8,7 @@
         - name: 注册 Office 365
           href: admin-overview/sign-up-for-office-365.md
         - name: 视频培训
-          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)'
+          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
         - name: 关于管理中心
           href: admin-overview/about-the-admin-center.md
         - name: 我订阅了哪些产品？
@@ -86,7 +86,7 @@
     - name: 电子邮件
       items:
         - name: Office 365 中的电子邮件
-          href: email/email.md
+          href: email/email.yml
         - name: Office 365 用户电子邮件设置
           href: email/office-365-user-email-settings.md
         - name: 添加用户的其他电子邮件别名
@@ -154,7 +154,7 @@
     - name: 管理
       items:
         - name: 管理 Office 365
-          href: manage/manage.md
+          href: manage/manage.yml
         - name: 更改联系人首选项
           href: manage/change-contact-preferences.md
         - name: 更改地址、联系人及其他信息
@@ -186,9 +186,9 @@
         - name: 取消分配给用户的许可证
           href: manage/remove-licenses-from-users.md
         - name: 解决许可证冲突
-          href: manage/resolve-license-conflicts.md)
+          href: manage/resolve-license-conflicts.md
         - name: 管理邮件中心中的邮件
-          href: manage/manage-messages.md)
+          href: manage/manage-messages.md
     - name: 订阅和计费
       items:
         - name: 管理订阅
@@ -202,7 +202,7 @@
     - name: 域
       items:
         - name: Office 365 中的域
-          href: get-help-with-domains/get-help-with-domains.md
+          href: get-help-with-domains/get-help-with-domains.yml
         - name: 什么是域？
           href: get-help-with-domains/what-is-a-domain.md
         - name: 购买域名

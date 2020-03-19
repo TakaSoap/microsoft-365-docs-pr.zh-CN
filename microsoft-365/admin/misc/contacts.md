@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 了解如何在管理中心中创建联系人并管理全局地址列表。
-ms.openlocfilehash: e1bb5c71a15c8e278b087339e469dcba50003795
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240357"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857387"
 ---
 # <a name="quick-help-contacts"></a>快速帮助：联系人
 
@@ -61,4 +61,4 @@ ms.locfileid: "42240357"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>如果以上内容仍未解决问题，怎么办？
 
-请访问[管理员帮助](../admin-home.md)的其余部分，或在下面提供反馈。
+请访问[管理员帮助](../admin-home.yml)的其余部分，或在下面提供反馈。

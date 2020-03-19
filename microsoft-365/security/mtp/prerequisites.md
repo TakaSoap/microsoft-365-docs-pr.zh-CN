@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b653575e9e79ffe3448f622ca5be2cef37999dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c482e46cf51cbf11960c02663221df0c136b067c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633950"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857175"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 
@@ -34,12 +34,20 @@ ms.locfileid: "42633950"
 了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。
 
 ## <a name="licensing-requirements"></a>许可要求
-若要使用 Microsoft 威胁防护，您需要以下许可证或许可证组合*之一*：
+若要使用 Microsoft 威胁防护，您需要一个许可证或许可证组合。
 
-- Microsoft 365 E5
-- Microsoft 365 E5 安全版
-- Office 365 E5 和 "企业移动性 + 安全性 E5 （EMS E5）" 和 Windows E5
-- Microsoft 365 A5
+### <a name="single-license"></a>单一许可证
+您可以使用以下许可证*之一*：
+
+- Microsoft 365 E5 或 A5
+- Microsoft 365 E5 Security or A5 Security
+
+### <a name="combination-of-licenses"></a>许可证组合
+您还可以将用于 E5 或 A5 订阅的许可证组合用于 Office 365、*企业移动性 + 安全性（EMS）* 和 Windows。 许可证组合必须包含以下*所有*许可证：
+
+- Office 365 E5 或 A5
+- *企业移动性 + 安全性（EMS）* E5 或 A5
+- Windows E5 或 A5
 
 有关详细信息，请[查看 Microsoft 365 企业版服务计划](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 

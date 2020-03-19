@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
 ms.custom: air
-ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633820"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826399"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -30,7 +30,7 @@ ms.locfileid: "42633820"
 
 ## <a name="at-a-high-level"></a>高级别
 
-随着警报的触发，安全行动手册将生效。 根据具体情况，可以开始执行[自动调查过程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在进行自动调查的过程中和之后，建议采取[补救措施](air-remediation-actions.md)。 在 Office 365 高级威胁防护中不会自动执行任何操作。 您的安全操作团队将进行审核，然后[批准或拒绝每个更正操作](air-remediation-actions.md#approve-or-reject-pending-actions)，完成后，每个调查完成。 所有这些活动都会在 Office 365 安全 & 合规性中心中进行跟踪和查看（请参阅[查看调查的详细信息](air-view-investigation-results.md#view-details-of-an-investigation)）。
+随着警报的触发，安全行动手册将生效。 根据具体情况，可以开始执行[自动调查过程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在进行自动调查的过程中和之后，建议采取[补救措施](air-remediation-actions.md)。 在 Office 365 高级威胁防护中不会自动执行任何操作。 您的安全操作团队将进行审核，然后[批准或拒绝每个更正操作](air-review-approve-pending-completed-actions.md)，完成后，每个调查完成。 所有这些活动都会在 Office 365 安全 & 合规性中心中进行跟踪和查看（请参阅[查看调查的详细信息](air-view-investigation-results.md#view-details-of-an-investigation)）。
 
 以下各节提供了有关警报、安全行动手册和操作中的示例的更多详细信息。
 

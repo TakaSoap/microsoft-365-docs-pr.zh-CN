@@ -16,12 +16,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online 和 Exchange Online Protection 的托管隔离。
-ms.openlocfilehash: bcbd0db1c05834882c464fa28012b82a13929d7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea803a4681a12647f57cf17839d26fb391222364
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598649"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856877"
 ---
 # <a name="quarantine"></a>Quarantine
 
@@ -29,7 +29,7 @@ ms.locfileid: "41598649"
 
 - [隔离常见问题解答](quarantine-faq.md) - 提供有关管理员和最终用户的隔离邮箱的常见问题和解答。
 
-- [以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)：介绍了管理员如何在 Exchange 管理中心（EAC）中查找和释放驻留在隔离区中的任何邮件，并可选择将其报告为误报（非垃圾邮件）到 Microsoft。
+- [以 365 Office 中的管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)：介绍了管理员如何在 Exchange 管理中心（EAC）中查找和释放驻留在隔离区中的任何邮件，并可选择将其报告为误报（非垃圾邮件）到 Microsoft。
 
 - [以 Office 365 中的用户的形式查找和释放隔离邮件](find-and-release-quarantined-messages-as-a-user.md)：介绍最终用户如何在垃圾邮件隔离用户界面中查找和释放自己的垃圾邮件隔离邮件，并将其报告为非垃圾邮件到 Microsoft。
 

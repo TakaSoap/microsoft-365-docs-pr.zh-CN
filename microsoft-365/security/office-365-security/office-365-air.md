@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
 ms.custom: air
-ms.openlocfilehash: 8871329d254057a0f9d6f10d3ae7acc10139832e
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 45a2bc0e581916493a0170a5f86c152d02403efe
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710531"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826345"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -47,7 +47,7 @@ ms.locfileid: "42710531"
 
     如果您的组织使用的是自定义报告解决方案或第三方解决方案，则可以[使用 Office 365 管理活动 API](air-custom-reporting.md)来查看有关自动调查和威胁的信息。
 
-4. 您的安全操作团队将检查[调查结果和建议](air-view-investigation-results.md)，并[批准或拒绝修正操作](air-remediation-actions.md#approve-or-reject-pending-actions)。 
+4. 您的安全操作团队将检查[调查结果和建议](air-view-investigation-results.md)，并[批准或拒绝修正操作](air-review-approve-pending-completed-actions.md)。 
 
     在批准（或拒绝）挂起的补救措施时，自动调查完成。
 
@@ -60,7 +60,7 @@ ms.locfileid: "42710531"
 
 - [查看调查的结果详细信息](air-view-investigation-results.md#view-details-of-an-investigation)
 
-- [查看和批准作为调查结果的操作](air-remediation-actions.md#approve-or-reject-pending-actions)
+- [查看和批准作为调查结果的操作](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
 > 有关更多详细信息，请参阅[AIR 的工作原理](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)。

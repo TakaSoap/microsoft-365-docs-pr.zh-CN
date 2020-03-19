@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
+ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086915"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42836876"
 ---
 # <a name="manage-tickets-through-servicenow"></a>通过 ServiceNow 管理票证
 
@@ -90,7 +90,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 借助 Microsoft 365 security center 中显示的 ServiceNow 票证，你的任务可以在某个位置进行跟踪，并在你的其他安全仪表板项目旁边进行操作。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>您在安装清单（OAuth 创建）的第一步中收到错误
 
@@ -141,6 +141,10 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 1. 在 Azure Active Directory 中创建具有安全管理员权限的用户。 用户需要与您在安装清单中创建的集成用户具有相同的名称和电子邮件地址。 登录和连接完成后，可以删除安全管理员角色。
 2. 作为此用户登录到 Microsoft 365 安全中心，并按照安装步骤进行操作。
+
+### <a name="ip-filtering"></a>IP 筛选
+
+如果已启用 IP 筛选，则可能需要显式允许 IP 地址。 有关如何允许 ServiceNow 中的 IP 范围的信息，请参阅[IP 地址访问控制](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html)。 有关允许的 IP 地址列表，请参阅[AZURE IP 范围和服务标记-公共云](https://www.microsoft.com/en-us/download/details.aspx?id=56519)。
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>安装已完成，但看不到票证且无法共享
 

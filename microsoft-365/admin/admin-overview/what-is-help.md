@@ -3,10 +3,8 @@ title: 如何在 Microsoft 365 管理中心中获取帮助
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +18,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: 了解你可以使用 Microsoft 365 管理中心获取帮助的所有方法。
-ms.openlocfilehash: 2d75add5b34a760358523de6e6f10553c1984abe
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5fa5a664b41f6e6e35a0443b5e909a5d930a146d
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352973"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857115"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -33,68 +31,6 @@ ms.locfileid: "42352973"
 
 如果你是管理员， [admin.microsoft.com](https://admin.microsoft.com)即为你提供管理和充分利用 microsoft 365 订阅的场所。 有时，您可能找不到正确的任务，在任务流上踏之前需要更多的上下文，或者只是不知道您的操作是管理员的作用域和影响。为此，我们可以通过以下方式在 Microsoft 365 管理中心内提供新式帮助和智能协助：
  
-
-
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#integrated-help">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>集成帮助</h3>
-                            <p>管理员中心的帮助</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>智能协助</h3>
-                            <p>由 AI 提供的自助支持</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>指南和文章</h3>
-                            <p>Web 上的全面内容</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
-
 ## <a name="integrated-help"></a>集成帮助
 帮助是在整个管理中心内集成的，因此在需要时可以在这里进行。 在许多页面的顶部，您将找到内嵌帮助文本，这些文本提供有关手头任务的信息概述，以及指向一些文章的链接，这些文章可让您快速查找正式文档以进行更深入的学习。
 

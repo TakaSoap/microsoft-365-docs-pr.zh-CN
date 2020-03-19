@@ -372,15 +372,15 @@
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: 市场活动视图
               href: ./office-365-security/campaigns.md
-            - name: 通过威胁分析了解最新的攻击
-              href: ./mtp/latest-attack-campaigns.md
             - name: 自动调查和响应
               items:
                 - name: AIR 述
                   href: ./office-365-security/office-365-air.md
-                - name: 查看自动调查详细信息和结果
+                - name: 修正操作
+                  href: ./office-365-security/air-remediation-actions.md
+                - name: 查看自动调查的详细信息和结果
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: 批准或拒绝挂起的操作
+                - name: 审查并批准（或拒绝）挂起的操作
                   href: ./office-365-security/air-remediation-actions.md
                 - name: 将 AIR 与自定义解决方案或第三方解决方案集成
                   href: ./office-365-security/air-custom-reporting.md
@@ -390,11 +390,13 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: 查看和阅读 ATP 报告
               href: ./office-365-security/view-reports-for-atp.md
+            - name: 通过威胁分析了解最新的攻击
+              href: ./mtp/latest-attack-campaigns.md
             - name: ATP 安全链接警告页是指什么
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: 使用威胁跟踪器
               href: ./office-365-security/threat-trackers.md
-            - name: 在 Office 365 中使用攻击模拟器
+            - name: Office 365 ATP 中的攻击模拟器
               href: ./office-365-security/attack-simulator.md
             - name: Office 365 ATP 中的安全文档
               href: ./office-365-security/safe-docs.md

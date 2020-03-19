@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护（DLP）或保留策略中。
-ms.openlocfilehash: 159f0935a2191c668c317fac17096a9427a0f889
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6706fe25194191d57ffd91f07f13d22fe5ec6cfd
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409717"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826253"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>可训练分类器入门（预览）
 
@@ -36,7 +36,7 @@ ms.locfileid: "42409717"
 - 关键字或元数据值（关键字查询语言）
 - 使用以前确定的敏感信息模式，如社会安全性、信用卡或银行帐户号码[（敏感信息类型）](what-the-sensitive-information-types-look-for.md)
 - 识别项目，因为它是模板的变体[（文档指纹打印）](document-fingerprinting.md)
-- 使用完全字符串的状态[（精确数据匹配）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
+- 使用确切的字符串[（精确数据匹配）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的状态。
 
 然后，可以自动应用敏感度和保留标签，以使内容可用于[数据丢失防护（DLP）](data-loss-prevention-policies.md)和[保留策略](retention-policies.md)。
 
@@ -67,7 +67,17 @@ Microsoft 365 附带了六个内置分类器：
 
 - **冒犯性语言**：检测包含 profanities、slurs、taunts 和伪装的表达式的文本项（这是与更具冒犯性的术语具有相同意义的表达式）。
 - **恢复**：检测作为申请人个人、教育、专业资格、工作经验以及其他个人标识信息的文本帐户的项目。
-- **SourceCode**：检测包含一组用广泛使用的计算机编程语言编写的指令和语句的项。
+- **源代码**：检测包含一组由 GitHub 上的前25个使用的计算机编程语言编写的指令和语句的项。
+
+|语言名称|||||
+|---------|---------|---------|---------|---------|
+|ActionScript|C        |C#       |C     |Clojure  |
+|CoffeeScript|CSS     |转到       |Haskell |HTML     |
+|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+|编写     |PHP      |Python   |R        |Ruby     |
+|Scala    |命令行管理程序    |反应    |Tex      |Vim 脚本|
+
+
 - **骚扰**：根据以下特性，检测与针对一个或多个用户的攻击性行为相关的冒犯性语言文本项的特定类别：种族、ethnicity、宗教、民族、性别、色情方向、年龄、残疾。
 - **猥亵**语言：检测包含 embarrass 大多数人的表达式的冒犯性语言文本项的特定类别。
 - **威胁**：检测与威胁相关的攻击性语言文本项的特定类别，以提交暴力或对个人或属性造成物理伤害或损坏。

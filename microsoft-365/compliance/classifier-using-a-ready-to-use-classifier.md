@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 附带了大量内置分类器，可用于在组织中标识和标记内容。 本主题介绍如何准备使用这些分类器。
-ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b8e4b51300bee86682924245bbf530e1e954b483
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634460"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826243"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>使用内置分类器（预览）
 
@@ -27,7 +27,16 @@ Microsoft 已通过大量的示例数据集进行了培训和测试了大量分�
 
 - **冒犯性语言**：检测包含 profanities、slurs、taunts 和伪装的表达式的文本项（这是与更具冒犯性的术语具有相同意义的表达式）。
 - **恢复**：检测作为申请人个人、教育、专业资格、工作经验以及其他个人标识信息的文本帐户的项目。
-- **SourceCode**：检测包含一组用广泛使用的计算机编程语言编写的指令和语句的项。
+- **源代码**：检测包含一组由 GitHub 上的前25个使用的计算机编程语言编写的指令和语句的项。
+
+|语言名称|||||
+|---------|---------|---------|---------|---------|
+|ActionScript|C        |C#       |C     |Clojure  |
+|CoffeeScript|CSS     |转到       |Haskell |HTML     |
+|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+|编写     |PHP      |Python   |R        |Ruby     |
+|Scala    |命令行管理程序    |反应    |Tex      |Vim 脚本|
+
 - **骚扰**：根据以下特性，检测与针对一个或多个用户的攻击性行为相关的冒犯性语言文本项的特定类别：种族、ethnicity、宗教、民族、性别、色情方向、年龄、残疾。
 - **猥亵**语言：检测包含 embarrass 大多数人的表达式的冒犯性语言文本项的特定类别。
 - **威胁**：检测与威胁相关的冒犯性语言文本项的特定类别，以提交暴力或对人员或财产造成物理伤害或损坏。

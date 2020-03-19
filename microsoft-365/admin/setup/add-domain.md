@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 通过在 DNS 主机上添加 DNS 记录，将您的域添加到 Microsoft 365 管理中心中的 Office 365。 安装向导将引导您完成该过程。
-ms.openlocfilehash: 4170fd74ae734a6fda9e535c17086997b1db6f6b
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 86ca8f986624ad37f780961cb58923ea0a1b2308
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240269"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857375"
 ---
 # <a name="add-a-domain-to-office-365"></a>将域添加到 Office 365
 
@@ -112,4 +112,4 @@ ms.locfileid: "42240269"
 
 [设置域（主机特定的操作说明）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[获取 Office 365 域的帮助](../get-help-with-domains/get-help-with-domains.md)
+[获取 Office 365 域的帮助](../get-help-with-domains/get-help-with-domains.yml)
