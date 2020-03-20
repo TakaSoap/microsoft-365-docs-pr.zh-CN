@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3f59a6038da8600923f5fcc0d18f1de5ab5dc06c
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634910"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826233"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -59,7 +59,7 @@ ms.locfileid: "42634910"
 - **删除**：如果文档或电子邮件已加密，则删除加密。
 
 > [!NOTE]
-> 只有 Azure 信息保护统一标记客户端支持“**删除**”选项。 使用内置标签时，Office 应用中显示了具有此选项的标签；如果选中，则加密行为与“**无**”选项的行为相同。
+> 只有 Azure 信息保护统一标记客户端支持“**删除**”选项。 使用内置标签时，Office 应用和服务中显示了具有此选项的标签；如果选中，则加密行为与“**无**”选项的行为相同。
 
 配置加密选项：
 

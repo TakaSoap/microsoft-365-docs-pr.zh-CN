@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 通过安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
-ms.openlocfilehash: 722afcb7bdebb6004d9a7ab365ac6038fe1d31a4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635090"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826287"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -179,6 +179,8 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Offic
 当项目与规则相匹配时，可向合规负责人（或所选的任何人员）发送包含事件详情的事件报告。 此报告中的信息包括，匹配的项目的信息、与规则匹配的实际内容以及上次修改内容的人员的姓名。 对于电子邮件，报告还将与 DLP 策略匹配的原始邮件包含为附件。
   
 ![用于配置事件报告的页面](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+
+DLP 扫描电子邮件的方式与 SharePoint Online 或 OneDrive for Business 中的项目不同。 在 SharePoint Online 和 OneDrive for business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会***扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
   
 ## <a name="grouping-and-logical-operators"></a>分组和逻辑运算符
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
 ms.custom: okr_smb
-ms.openlocfilehash: b0aa799112fb2b714f369237958b583dfb8e8baa
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 446af9ad49649487f4df1982613f8e84fdf39910
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632970"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857187"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -81,7 +81,7 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 |Office 应用管理员    |   为需要执行以下操作的用户分配 Office 应用管理员角色： <br> - 使用 Office 云策略服务为 Office 创建和管理基于云的策略 <br> - 创建和管理服务请求 <br> - 管理用户在 Office 应用中看到的新增内容   <br> - 监视服务运行状况  |
 |服务管理员    |   将服务管理员角色作为附加角色分配给其角色不包括以下内容，但仍需要执行以下操作的管理员或用户： <br> - 打开和管理服务请求 <br> - 查看和共享消息中心帖子   |
 |SharePoint 管理员    |   为需要访问和管理 SharePoint Online 管理中心的用户分配 SharePoint 管理员角色。 <br><br>SharePoint 管理员还可以： <br> - 创建和删除网站 <br> - 管理网站集和全局 SharePoint 设置   |
-|Teams 管理员    |   为需要访问和管理 Teams 管理中心的用户分配 Teams 管理员角色。 <br><br>Teams 管理员还可以： <br> - 管理会议 <br> - 管理会议网桥 <br> - 管理所有组织范围内的设置，包括联合身份验证、Teams 升级和 Teams 客户端设置   |
+|Teams 服务管理员    |   为需要访问和管理 Teams 服务管理中心的用户分配 Teams 管理员角色。 <br><br>Teams 服务管理员还可以： <br> - 管理会议 <br> - 管理会议网桥 <br> - 管理所有组织范围内的设置，包括联合身份验证、Teams 升级和 Teams 客户端设置   |
 |用户管理员     |    为需要对所有用户执行以下操作的用户分配用户管理员角色： <br> - 添加用户和组 <br> - 分配许可证 <br> - 管理大多数用户属性 <br> - 创建和管理用户视图 <br> - 更新密码过期策略 <br> - 管理服务请求 <br> - 监视服务运行状况 <br><br>  用户管理员还可以对非管理员和分配有以下角色的用户执行以下操作：目录读取者、来宾邀请者、支持管理员、消息中心读取者和报表阅读人员： <br> - 管理用户名<br> - 删除和还原用户<br> - 重置密码 <br> - 强制用户注销 <br> - 更新 (FIDO) 设备密钥   |
 
 ### <a name="all-roles"></a>所有角色

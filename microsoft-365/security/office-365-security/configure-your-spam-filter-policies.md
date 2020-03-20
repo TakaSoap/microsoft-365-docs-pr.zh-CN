@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。
-ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa597887a75ff71d768d4df0b1ac4f17fe9ef13
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086271"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857353"
 ---
 # <a name="configure-your-spam-filter-policies"></a>配置垃圾邮件筛选器策略
 垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。 垃圾邮件筛选器策略设置仅适用于入站邮件，并且有两种类型：
@@ -83,7 +83,7 @@ ms.locfileid: "42086271"
    - **隔离邮件：** 发送邮件至隔离邮件而不是目标收件人。 这是适用于钓鱼邮件的默认操作。 （它将在该时间结束后自动删除。 （它将在该时间结束后自动删除。 默认值为 30 天（最大值）。 最小值为 1 天。）
 
      > [!TIP]
-     > 有关管理员如何管理隔离电子邮件的信息，请参阅[隔离](quarantine.md)和[以管理员身份查找并释放隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)。 <br/><br/> 有关如何配置用户垃圾邮件通知消息的信息，请参阅[在 EOP 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-eop.md)或[在 Exchange Online 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-exchange-online.md)。
+     > 有关管理员如何管理隔离电子邮件的信息，请参阅[隔离](quarantine.md)和[在 Office 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。  <br/><br/> 有关如何配置用户垃圾邮件通知消息的信息，请参阅[在 EOP 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-eop.md)或[在 Exchange Online 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-exchange-online.md)。
 
    - 配置“**选择阈值**”，以根据邮件的批量投诉级别 (BCL) 确定希望如何将批量电子邮件视为垃圾邮件。 可以从 1 - 9 中选择一个阈值设置，其中 1 将大部分批量电子邮件指明为垃圾邮件，9 允许传递大部分批量电子邮件。 服务随后将执行配置的操作，例如将邮件发送到收件人的“垃圾邮件”文件夹。 有关更多详细信息，请参阅[批量投诉级别值](bulk-complaint-level-values.md)和[垃圾邮件和批量电子邮件有何不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
