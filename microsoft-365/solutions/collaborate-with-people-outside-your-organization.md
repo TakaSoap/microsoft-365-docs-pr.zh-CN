@@ -10,14 +10,23 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何配置 Microsoft 365 以与组织外部的人员进行协作。
-ms.openlocfilehash: eb6bbdc4dd0520f240edbdebde6851ec917cd0d9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604380"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894949"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
+
+Microsoft 365 中的外部共享功能为组织中的人员与合作伙伴、供应商、客户和其他在你的目录中没有帐户的人进行协作提供了机会。 您可以与组织外部的人员或仅与单个文件共享整个团队或网站。
+
+与组织外部的人员进行协作包含以下两个主要组件：
+
+- **启用共享**-在 Azure Active Directory、团队、Office 365 组和 SharePoint 之间共享共享控件，以允许您的组织所需的共享级别。
+- **启用其他安全性**-尽管可以将基本共享功能配置为要求组织外部的人员进行身份验证，但 Microsoft 365 提供了许多额外的安全性和合规性功能，可帮助您在外部共享时保护数据并维护您的管理策略。
+
+## <a name="enable-sharing"></a>启用共享
 
 默认情况下，在 Microsoft 365 中，与组织外部的人员共享启用 SharePoint 和 OneDrive，但对团队禁用。 许多 SharePoint 和 OneDrive 外部共享方案的工作方式不需要进一步配置。 若要确认您正在使用的方案的设置，或启用新的设置，请从以下选项中进行选择：
 
@@ -27,7 +36,7 @@ ms.locfileid: "42604380"
 
 有关跨 Microsoft 365 提供的来宾共享设置的全面查看，请参阅[microsoft 365 来宾共享设置参考](microsoft-365-guest-settings.md)。
 
-## <a name="secure-your-environment"></a>保护环境
+## <a name="enable-additional-security"></a>启用其他安全性
 
 启用了要用于与组织外部的人员共享的方案后，请考虑其他保护措施，以防止无意或有意的不恰当的共享中保护您的内容。
 

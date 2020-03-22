@@ -1,9 +1,8 @@
 ---
 title: 面向管理员的 Office 365 组概述
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
-ms.author: v-teflor
+f1.keywords: NOCSH
+ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
@@ -19,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Office 365 组。
-ms.openlocfilehash: e7a65c41d4ecdbc91e163d9a84241ae549a2f9ec
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2257af16106e47b490beebd6d48e566bb3c07ca6
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238056"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894487"
 ---
 # <a name="overview-of-office-365-groups-for-administrators"></a>面向管理员的 Office 365 组概述
 
@@ -39,17 +38,17 @@ Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资
 - 团队（如果组是从团队创建的）
 - 路线图（如果您有适用于 web 的项目）
 
-对于 Office 365 组，您无需手动分配对每个资源的权限，因为向组添加成员会自动向他们授予对组所提供的工具所需的权限。
+对于 Office 365 组，您无需手动分配对每个资源的权限，因为向该组添加人员会自动向他们授予对组所提供的工具所需的权限。
 
-任何 Office 365 用户都可以创建一个组，除非您将[组创建限制为一组特定的人员](manage-creation-of-groups.md)。 请注意，如果限制组创建，无法创建组的用户将无法创建 SharePoint 网站、规划者或团队。 这些服务需要能够使用用户上下文创建组。 用户仍可以参与组活动，例如，在计划程序中创建任务或响应 Outlook 中的对话，前提是该组的成员。
+任何 Office 365 用户都可以创建一个组，除非您将[组创建限制为一组特定的人员](manage-creation-of-groups.md)。 请注意，如果限制组创建，无法创建组的用户将无法创建 SharePoint 网站、规划者或团队。 这些服务要求创建组的人员能够创建组。 用户仍可以参与组活动，例如，在 Planner 中创建任务或使用团队聊天，前提是该组的成员。
 
 组具有以下角色：
 
 - **所有者**-组所有者可以添加或删除成员，并具有独特的权限，如从共享收件箱中删除对话的功能或更改有关组的不同设置。 组所有者可以重命名组、更新说明或图片等。
-- **成员**-成员可以访问组中的所有内容，但不能更改组设置。
-- **来宾**组来宾是来自组织外部的成员。 默认情况下，组成员可以邀请来宾加入你的组，但你可以[控制该设置](manage-guest-access-in-groups.md)。
+- **成员**-成员可以访问组中的所有内容，但不能更改组设置。 默认情况下，组成员可以邀请来宾加入你的组，但你可以[控制该设置](manage-guest-access-in-groups.md)。
+- **来宾**组来宾是来自组织外部的成员。
 
-只有全局管理员和用户管理管理员才能创建和管理管理中心中的组。 你不能是委派管理员（例如代表管理员的顾问）。
+只有全局管理员、用户管理员和组管理员才能在 Microsoft 365 管理中心中创建和管理组。 你不能是委派管理员（例如代表管理员的顾问）。
 
 作为管理员，您可以执行以下操作：
 
@@ -59,7 +58,7 @@ Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资
 - [管理对组的来宾访问](manage-guest-access-in-groups.md)
 - [恢复已删除的组](restore-deleted-group.md)（在删除后的30天内）
 
-如果您更喜欢管理 Office 365 组生命周期的一种更自动化的方法，您可以使用过期策略在特定时间间隔内使组过期。 组的所有者将在组过期前收到一封电子邮件，以允许他们轻松地续订组（如果仍需要）。 请参阅： [Office 365 组过期策略](office-365-groups-expiration-policy.md)。
+如果您更喜欢管理 Office 365 组生命周期的一种更自动化的方法，则可以使用过期策略在特定时间间隔内使组过期。 组的所有者将在组过期前收到一封电子邮件，以允许他们轻松地续订组（如果仍需要）。 请参阅： [Office 365 组过期策略](office-365-groups-expiration-policy.md)。
 
 你可以从 Microsoft 365 管理中心或[使用 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)管理你的组。
 
@@ -79,7 +78,7 @@ Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资
 |文件存储|每个订阅用户 1 tb + 10 GB + 购买的任何附加存储空间。 您可以购买无限量的额外存储空间。|
 |组邮箱大小|50 GB|
 
-虽然目前 Office 365 组织可拥有的默认最大 Office 365 组数量为 500,000，但是如果申请，数量可以增加。 有关 Office 365 组限制的详细信息，请参阅[office 365 组-管理员帮助](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+Office 365 组织可以拥有的默认最大 Office 365 组数为500000，但可以按请求增加。 有关 Office 365 组限制的详细信息，请参阅[office 365 组-管理员帮助](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)。
 
 当您具有有关组使用情况的可操作信息时，管理 Office 365 组会更有效。 Microsoft 365 管理中心有一个报告工具，可让你查看存储使用情况、拥有的活动组数以及你的用户使用组的数量。 有关详细信息，请参阅： [admin center 中的 Office 365 报告](../activity-reports/office-365-groups.md)。
 
@@ -88,7 +87,7 @@ Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资
 任何具有 Exchange Online 和 SharePoint Online 的 Office 365 订阅都将支持组。 其中包括业务重点和业务高级计划，以及企业版 E1、E3 和 E5 计划。 该组将接受创建组的人员（也称为组的 "组织者"）的许可。 只要组织者具有对您希望组拥有的任何功能的正确许可证，该许可证就会传递到组。
 
 > [!NOTE]
-> 有关 Office 365 服务系列和计划的更多详细信息，请检查[office 365 计划选项](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> 有关 Office 365 服务系列和计划的更多详细信息，请参阅[office 365 计划选项](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 如果您具有仅 Exchange 计划，您仍可以在 Outlook 中获取组的共享收件箱和共享日历功能，但不会获取文档库、计划程序或任何其他功能。
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: efb75f26d66258880c9defa94869f27e18685052
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372000"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895437"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft 安全分数中的情况如何？
 
@@ -30,26 +30,31 @@ ms.locfileid: "42372000"
 
 若要了解最近所做的更改，请参阅[Microsoft 安全分数中的新增功能？](microsoft-secure-score.md#whats-new)
 
-## <a name="march-16th-2020"></a>3月16日2020
+## <a name="april-21st-2020"></a>2020年4月21日
 
 ### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>删除不符合可靠测量预期的改进操作或不提供安全状态的有用表示形式
 
 为了确保 Microsoft 安全分数是有意义的，并且每个改进操作都是可衡量和可靠的，我们将删除以下改进操作。
 
-- 将用户文档存储在 OneDrive for Business 中
-- 设置 Office 365 ATP 安全附件策略
-- 设置 Office 365 安全链接以验证 Url
-- 不允许邮箱委派
-- 允许匿名来宾共享网站和文档的链接
-- 启用云应用安全控制台
-- 为外部共享链接配置过期时间
+- 删除/阻止在过去30天内未使用的帐户
+- 指定少于5个全局管理员
+- 将 IRM 保护应用于文档
+- 应用数据丢失防护策略
 
-### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>支持 Azure AD 改进操作的安全默认值
+### <a name="adding-additional-control-support-in-the-preview-version"></a>在预览版本中添加其他控件支持
+- 不允许用户向非托管应用程序授予许可（当前在已发布版本中可用）
 
-Microsoft 安全分数将更新改进操作以支持[AZURE AD 中的安全默认](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)设置，这使组织可以更轻松地使用预配置的常见攻击安全设置来保护组织。
+#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>支持其他 Microsoft 云应用安全改进操作
+- 在域控制器上禁用打印后台处理程序服务
+- 修改不安全的 Kerberos 委派以阻止模拟
+- 使用 Microsoft LAPS 保护和管理本地管理员密码
+- 降低横向移动路径对敏感实体的风险
+- 删除敏感组中的非活动帐户
+- 从实体中删除不安全的 SID 历史记录属性
+- 解决不安全帐户属性
+- 停止明文凭据公开
+- 停止旧协议通信
+- 停止弱密码使用
 
-这将影响以下改进操作：
-
-- 确保所有用户都可以完成多重身份验证以实现安全访问
-- 需要对管理角色进行 MFA
-- 启用策略以阻止旧版身份验证
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>对 Microsoft Defender ATP 威胁的支持 & 漏洞管理（TVM）安全建议
+- TVM 提供的所有已发布的安全建议现在也将在 Microsoft 安全分数中提供。

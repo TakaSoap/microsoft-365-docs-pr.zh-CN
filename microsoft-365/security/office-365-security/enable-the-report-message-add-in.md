@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086308"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893750"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
@@ -32,20 +32,20 @@ ms.locfileid: "42086308"
 
 Outlook 和 web 上的 Outlook 的报告邮件外接程序（以前称为 Outlook Web App）使用户能够轻松地向 Microsoft 及其子公司报告 misclassified 电子邮件（无论是安全还是恶意）。 Microsoft 使用这些提交改进电子邮件保护技术的有效性。 此外，如果您的组织使用的是[Office 365 高级威胁防护计划 1](office-365-atp.md)或[计划 2](office-365-ti.md)，则报告消息外接程序会为您组织的安全团队提供可用于查看和更新安全策略的有用信息。
 
-例如，假设有人将大量邮件报告为网络钓鱼。 [安全仪表板](security-dashboard.md)和其他报告中的此信息图面。 组织的安全团队可以使用此信息指示可能需要更新的反网络钓鱼策略。 或者，如果用户使用报告邮件外接程序报告大量被标记为垃圾邮件的邮件，则组织的安全团队可能需要调整[反垃圾邮件策略](configure-the-anti-spam-policies.md)。
+例如，假设有人将大量邮件报告为网络钓鱼。 [安全仪表板](security-dashboard.md)和其他报告中的此信息图面。 组织的安全团队可以使用此信息指示可能需要更新的反网络钓鱼策略。 或者，如果用户使用报告邮件外接程序报告大量被标记为垃圾邮件的邮件，则组织的安全团队可能需要调整[反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 报告邮件加载项适用于大多数 Office 365 订阅和以下产品：
 
- - Outlook 网页版
- - Outlook 2013 SP1
- - Outlook 2016
- - Outlook 2016 for Mac
- - Outlook 包含在 Office 365 专业增强版中
+- Outlook 网页版
+- Outlook 2013 SP1
+- Outlook 2016
+- Outlook 2016 for Mac
+- Outlook 包含在 Office 365 专业增强版中
 
 报告邮件外接程序目前不可用于：
 
- - 内部部署 Exchange 组织中的邮箱
- - GCC、GCC 高或 DoD 订阅
+- 内部部署 Exchange 组织中的邮箱
+- GCC、GCC 高或 DoD 订阅
 
 您的现有 web 浏览器应该能够满足报告消息外接程序的需要。但是，如果您注意到加载项不可用或无法按预期工作，请尝试使用不同的浏览器。
 

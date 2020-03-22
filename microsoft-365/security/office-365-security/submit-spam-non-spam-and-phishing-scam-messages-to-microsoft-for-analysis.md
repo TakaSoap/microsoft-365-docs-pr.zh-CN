@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 7b53f74be78bc1203189815c6a7adf3337decd21
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856865"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893642"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
 
@@ -36,7 +36,7 @@ ms.locfileid: "42856865"
 
 如果您收到一封通过垃圾邮件筛选器传递且应归类为垃圾邮件或钓鱼诈骗的邮件，则可以根据需要将 "假负" 邮件提交到 Microsoft 垃圾邮件分析和 Microsoft 仿冒分析团队。 分析师将检查邮件并将其添加到服务范围的筛选器中（如果它满足分类条件）。
 
-有关适用于整个组织的详细垃圾邮件设置，请参阅[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)。 本文包含有助于防止漏报的提示。
+有关适用于整个组织的更多垃圾邮件设置，请参阅[Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。 本文包含有助于防止漏报的提示。
 
 您可以通过下列方式提交垃圾邮件：
 
@@ -59,16 +59,16 @@ ms.locfileid: "42856865"
 3. 将垃圾邮件或钓鱼诈骗邮件复制并粘贴为附件形式的新邮件。
 
    > [!NOTE]
-   > •您可以在新邮件中附加多封邮件。 确保所有邮件都属于同一类型： "仿冒欺诈邮件" 或 "垃圾邮件"。 <br/><br/>•将新邮件的正文保留为空。 <br/><br/>•对于附加的邮件，请使用 .msg （默认 Outlook 格式）或 .eml （默认 Outlook 网页格式）格式。
+   > * 您可以在新邮件中附加多封邮件。 确保所有邮件都属于同一类型： "仿冒欺诈邮件" 或 "垃圾邮件"。 <br/><br/>* 将新邮件的正文保留为空。 <br/><br/>* 对附加的邮件使用 .msg （默认 Outlook 格式）或 .eml （默认 Outlook 网页格式）格式。
 
 4. 单击“发送”****。
 
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>提交被标记为垃圾邮件但应允许通过的邮件
 
 如果邮件被错误地标识为垃圾邮件，您可以将 "误报" 邮件提交给 Microsoft 垃圾邮件分析团队。 分析师将评估并分析邮件。 根据分析结果的不同，可能会调整服务范围内的垃圾邮件内容筛选规则，以允许发送该邮件。
-  
-管理员可以查看更多垃圾邮件设置信息，这些信息适用于整个组织。 请参阅[如何帮助确保邮件不会被标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)。 如果你拥有管理员级别控制，并且你想要阻止误报，此信息会很有帮助。
-  
+
+管理员可以查看更多垃圾邮件设置信息，这些信息适用于整个组织。 请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。 如果你拥有管理员级别控制，并且你想要阻止误报，此信息会很有帮助。
+
 您可以通过下列方式提交非垃圾邮件：
 
 - 如果您在配置内容筛选器时使用 "**将邮件移动到垃圾邮件文件夹**" 操作（这是默认操作），则用户可以在其 outlook 或 web 上的 outlook （以前称为 "Outlook web App"） "垃圾邮件" 文件夹中释放假正邮件。
@@ -114,14 +114,3 @@ ms.locfileid: "42856865"
 [Microsoft Exchange 垃圾邮件团队视频](https://youtu.be/-TpX_-GMC7o?hd=1)
 
 垃圾邮件评估是一个无论原始语言或字符集如何都适用的持续过程。由于垃圾邮件可能是模糊的，甚至在主题或邮件正文中缺少文本，垃圾邮件团队需要依靠其他邮件特征执行筛选。这表示垃圾邮件团队将一个给定的邮件标记为垃圾邮件并根据其规则做必要更改后，未来该邮件将被阻止，直到其特征进行了修改并足以避开筛选器。不断部署新垃圾邮件规则。关于单个提交的规则的时间段根据提交的数量和质量而有所不同。因为新垃圾邮件规则是为全球所有客户设置的，所以并非所有的单个垃圾邮件提交都将产生新的垃圾邮件规则。
-
-## <a name="for-more-information"></a>详细信息
-
-[反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
-  
-[如何帮助确保邮件不会标记为垃圾邮件](prevent-email-from-being-marked-as-spam.md)
-  
-[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)
-  
-
-[使用 Office 365 垃圾邮件筛选器阻止垃圾电子邮件，以防止出现漏报问题](reduce-spam-email.md)

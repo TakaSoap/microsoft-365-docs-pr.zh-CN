@@ -1,7 +1,6 @@
 ---
 title: 管理可创建 Office 365 组的人员
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
 author: MikePlumleyMSFT
@@ -22,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Office 365 组。
-ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 0da8aded4b7a55975a9327cc4f29ff8679b3ccf2
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352633"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894547"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>管理可创建 Office 365 组的人员
 
   
 由于用户可以很轻松地创建 Office 365 组，因此你不会收到代表其他人创建这些组的请求。 但是，根据您的业务，您可能希望控制谁能够创建组。
   
-本文介绍如何 **在所有使用组的 Office 365 服务中** 禁用组创建权限： 
+本文介绍如何禁用在所有使用组的 Office 365 服务中创建组的功能，其中包括：
   
 - Outlook
     
@@ -92,7 +91,7 @@ ms.locfileid: "42352633"
 上面列出的角色中的管理员不需要是该组的成员：它们保留了其创建组的能力。
 
 > [!IMPORTANT]
-> 请务必使用**安全组**来限制可以创建组的用户。 如果尝试使用 Office 365 组，则成员无法通过 SharePoint 创建组，因为它会检查是否存在安全组。 
+> 请务必使用**安全组**来限制可以创建组的用户。 如果您尝试使用 Office 365 组，则成员将无法从 SharePoint 创建组，因为它会检查安全组。 
     
 1. 在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
 
@@ -103,59 +102,18 @@ ms.locfileid: "42352633"
 4. 完成设置安全组，添加你希望能够在你的组织中创建组的人员或其他安全组。
     
 有关详细说明，请参阅[在 Microsoft 365 管理中心中创建、编辑或删除安全组](../email/create-edit-or-delete-a-security-group.md)。
-  
-## <a name="step-2-install-the-preview-version-of-the-azure-active-directory-powershell-for-graph"></a>步骤2：为 Graph 安装 Azure Active Directory PowerShell 的预览版本
+ 
+## <a name="step-2-run-powershell-commands"></a>步骤 2：运行 PowerShell 命令
 
-这些过程需要 Azure Active Directory PowerShell 的预览版本的图形。 GA 版本将不起作用。
+您必须使用预览版本的[Azure Active Directory PowerShell For Graph （AzureAD）](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) （模块名称**AzureADPreview**）更改组级别的来宾访问设置：
+
+- 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)并按照说明安装公共预览版。
+
+- 如果已安装 Azure AD PowerShell 模块 (AzureAD) 的 2.0 正式发布版本，则必须通过在 PowerShell 会话中运行 `Uninstall-Module AzureAD` 来卸载它，然后通过运行 `Install-Module AzureADPreview` 来安装预览版。
+
+- 如果已安装预览版，请运行 `Install-Module AzureADPreview`，确保它是此模块的最新版本。
 
 
-> [!IMPORTANT]
-> 无法同时在同一台计算机上安装预览版本和 GA 版本。 你可以在 windows 10 Windows Server 2016 上安装该模块。
-
-  
-建议的最佳做法是 *始终*  保持最新：先卸载旧的 AzureADPreview 或 AzureAD 版本，然后再获取最新版本。 
-  
-1. 在搜索栏中，键入 Windows PowerShell。
-    
-2. 右键单击 **Windows PowerShell**，然后选择" **以管理员身份运行**"。
-    
-    ![通过'以管理员身份运行'打开 PowerShell。](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
-    
-3. 使用[ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)将策略设置为 RemoteSigned。
-    
-    ```
-    Set-ExecutionPolicy RemoteSigned
-    ```
-  
-4. 检查已安装的模块：
-    
-    ```
-    Get-InstalledModule -Name "AzureAD*"
-    ```
-
-5. 3.要卸载早期版本的 AzureADPreview 或 AzureAD，请运行以下命令：
-  
-    ```
-    Uninstall-Module AzureADPreview
-    ```
-
-    或者
-  
-    ```
-    Uninstall-Module AzureAD
-    ```
-
-6. To install the latest version of AzureADPreview, run this command:
-  
-    ```
-    Install-Module AzureADPreview
-    ```
-
-    At the message about an untrusted repository, type **Y**. It will take a minute or so for the new module to install. 
-
-在下面的步骤3中，让 PowerShell 窗口保持打开状态。
-  
-## <a name="step-3-run-powershell-commands"></a>步骤3：运行 PowerShell 命令
 
 将下面的脚本复制到文本编辑器（如记事本）或[Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)中。
 

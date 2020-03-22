@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: f4366230805c50fe82183431e3bd2bdfa9fddd68
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0adb103ac3bef72e340c1f5daf54a6b8a184d85c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068631"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894272"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
@@ -99,4 +99,4 @@ ms.locfileid: "42068631"
 |登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |
 |要求用户在 Office 应用空闲以下时间后重新登录  <br/> |此设置确定用户在提示用户重新登录之前可以处于空闲状态的时间。  <br/> |
 |在已越狱或取得 root 权限的设备上拒绝对工作文件的访问  <br/> |一些聪明的用户的设备可能已越狱或取得 root 权限。这意味着用户可以修改操作系统，从而导致设备更易受到恶意软件的攻击。如果此设置为" **打开**"，会阻止这些设备。  <br/> |
-|允许用户从 Office 应用将内容复制到个人应用  <br/> |默认允许此设置，但如果设置为" **开**"，用户可将工作文件中的信息复制到个人文件。 如果设置为" **关** "，用户无法将工作帐户中的信息复制到个人应用或个人帐户。  <br/> |
+|不允许用户将 Office 应用程序中的内容复制到个人应用  <br/> |默认允许此设置，但如果设置为" **开**"，用户可将工作文件中的信息复制到个人文件。 如果设置为" **关** "，用户无法将工作帐户中的信息复制到个人应用或个人帐户。  <br/> |

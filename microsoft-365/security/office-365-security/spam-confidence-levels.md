@@ -2,10 +2,10 @@
 title: 垃圾邮件可信度
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/02/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,30 +15,35 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: 当对电子邮件进行垃圾邮件筛选时，将为该邮件分配一个垃圾邮件得分。该得分将被映射到单个垃圾邮件可信度 (SCL) 分级，并标记在 X 标头中。此项服务将基于 SCL 分级的垃圾邮件可信度解释对邮件采取操作。下表显示了筛选器如何解释不同的 SCL 分级，以及为每个分级的入站邮件所采取的默认操作。
-ms.openlocfilehash: 65b6f51199e6d8f6ce17a05b28c5bad15d9d1760
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 管理员可以了解垃圾邮件可信度（SCL）如何确定邮件是垃圾邮件的可能性和可能性，以及垃圾邮件筛选对基于 SCL 的邮件所采取的默认操作。
+ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084753"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893690"
 ---
-# <a name="spam-confidence-levels"></a>垃圾邮件可信度
+# <a name="spam-confidence-level-scl-in-office-365"></a>Office 365 中的垃圾邮件可信度（SCL）
 
-当对电子邮件进行垃圾邮件筛选时，将为该邮件分配一个垃圾邮件得分。该得分将被映射到单个垃圾邮件可信度 (SCL) 分级，并标记在 X 标头中。此项服务将基于 SCL 分级的垃圾邮件可信度解释对邮件采取操作。下表显示了筛选器如何解释不同的 SCL 分级，以及为每个分级的入站邮件所采取的默认操作。
-  
-|**SCL 分级**|**垃圾邮件可信度解释**|**默认操作**|
-|:-----|:-----|:-----|
-|-1|来自安全发件人、安全收件人或安全列表 IP 地址（受信任合作伙伴）的非垃圾邮件。|将邮件传递到收件人的收件箱。|
-|0, 1|非垃圾邮件，因为邮件已被扫描并确定为干净。|将邮件传递到收件人的收件箱。|
-|5, 6|垃圾邮件|将邮件传递到收件人的垃圾邮件文件夹。|
-|7、8、9|可信度高的垃圾邮件|将邮件传递到收件人的垃圾邮件文件夹。|
-   
-> [!TIP]
-> 该服务不设置 SCL 等级2、3、4、7和8。 SCL 分级为 5 或 6 的邮件被认为是可疑垃圾邮件，比 SCL 分级为 9 的无疑邮件更难以确定是垃圾邮件。 可在 Exchange 管理中心通过内容筛选器策略为垃圾邮件和高可信度垃圾邮件配置不同的操作。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。 您还可以使用邮件流规则（也称为传输规则）来设置符合特定条件的邮件的 SCL 分级，如[使用邮件流规则在邮件中设置垃圾邮件可信度（SCL）](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)中所述。 如果使用邮件流规则将 SCL 设置为7、8或9，则邮件将被视为高可信度垃圾邮件。 
-  
+当 Office 365 （Exchange Online 或独立 Exchange Online Protection （EOP），而不是 Exchange Online 邮箱）收到入站电子邮件时，邮件将通过垃圾邮件筛选，并为其分配一个垃圾邮件分数。 该分数映射到在 X 标头中添加到邮件的单个垃圾邮件可信度（SCL）。 SCL 较高表示邮件更有可能是垃圾邮件。 该服务将根据 SCL 对邮件采取操作。
+
+下表描述了 SCL 的含义以及对邮件所执行的默认操作。 有关可以对基于垃圾邮件筛选判定的邮件执行的操作的详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+
+||||
+|:---:|---|---|
+|**SCL**|**定义**|**默认操作**|
+|-1|邮件跳过垃圾邮件筛选。 例如，邮件来自安全发件人，发送到安全收件人，或者来自 IP 允许列表中的电子邮件源服务器。 有关详细信息，请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。|将邮件传递到收件人的收件箱。|
+|0, 1|垃圾邮件筛选已确定邮件不是垃圾邮件。|将邮件传递到收件人的收件箱。|
+|5, 6|垃圾邮件筛选功能已将邮件标记为**垃圾**邮件|将邮件传递到收件人的垃圾邮件文件夹。|
+|9 |垃圾邮件筛选功能已将邮件标记为**高可信度垃圾邮件**|将邮件传递到收件人的垃圾邮件文件夹。|
+|
+
+您会注意到，垃圾邮件筛选不会使用 SCL 2、3、4、7和8。
+
+您可以使用邮件流规则（也称为传输规则）在邮件上标记 SCL。 如果使用邮件流规则设置 SCL，则值5或6将触发垃圾邮件的垃圾邮件筛选操作，值7、8或9将触发垃圾邮件筛选**操作，以**实现**高可信度垃圾邮件**。 有关详细信息，请参阅[使用邮件流规则在邮件中设置垃圾邮件可信度级别（SCL）](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+
+与 SCL 类似，批量投诉级别（BCL）标识错误的批量电子邮件（也称为_灰色邮件_）。 较高的 BCL 表明批量邮件更有可能生成投诉（因此更可能是垃圾邮件）。 在反垃圾邮件策略中配置 BCL 阈值。 有关详细信息，请参阅[在 office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)、 [office 365 中的批量投诉级别（BCL）](bulk-complaint-level-values.md)，以及[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+
 ||
 |:-----|
 |![LinkedIn Learning 短图标](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **刚开始接触 Office 365？**         发现 LinkedIn Learning 向 **Office 365 admins and IT pros**提供的免费视频课程。|
-   
-

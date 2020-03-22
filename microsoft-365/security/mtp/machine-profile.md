@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7ab3f63008c65fca1a99128cc6f11f83bc86b2b4
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1dfb567c8e6b8573397d503ae27c0aceb447c916
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857551"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895459"
 ---
-# <a name="machine-profile-page"></a>计算机配置文件页
+# <a name="machine-profile-page"></a>机器配置文件页
 
 Microsoft 365 安全门户为你提供了计算机配置文件页面，因此你可以评估网络上设备的运行状况和状态。 每个计算机配置文件页包含有关设备的大量信息。
 
@@ -29,9 +29,7 @@ Microsoft 365 安全门户为你提供了计算机配置文件页面，因此你
 
 ## <a name="navigating-the-machine-profile-page"></a>导航计算机配置文件页
 
-可以通过直接选择 "计算机" 列表中的设备名称或通过在 "计算机列表" 浮出控件中选择 "**打开计算机" 页面**来访问计算机配置文件页。
-
-打开页面后，您会发现它分为三个部分。
+计算机配置文件页分为三个部分。
 
 ![带有（1）选项卡区域（2）侧栏和（3）操作以红色突出显示的计算机配置文件页的图像](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 默认情况下，邮箱审核日志记录在 Office 365 中处于打开状态（也称为默认邮箱审核或邮箱审核，默认情况下）。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中，在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: 6a1c435ca3be16ef2f4926cce56afe180c576f15
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2b69d63e63e049566c9827f08d2ead592b918684
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634960"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894917"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -107,7 +107,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**AddFolderPermissions**|**注意**：虽然此值被接受为邮箱操作，但它已包含在**UpdateFolderPermissions**操作中，并且不会单独审核。 换言之，请勿使用此值。||||
 |**ApplyRecord**|项目标记为记录。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**复制**|已将某个邮件复制到另一个文件夹。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**创建**|在邮箱中的 "日历"、"联系人"、"便笺" 或 "任务" 文件夹中创建了一个项目（例如，创建了一个新的会议请求）。 请注意，不会审核创建、发送或接收邮件。 也不会审核邮箱文件夹的创建。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**创建**|在邮箱中的 "日历"、"联系人"、"便笺" 或 "任务" 文件夹中创建了一个项目（例如，创建了一个新的会议请求）。 不会审核邮件的创建、发送或接收。 也不会审核邮箱文件夹的创建。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**默认**||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|已访问某个邮箱文件夹。 当管理员或委派打开邮箱时，也会记录此操作。 <br/><br/> **注意**：代理执行的文件夹绑定操作的审核记录已合并。 在24小时内为单个文件夹访问生成一个审核记录。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|已将某个邮件从"已恢复邮件"文件夹中清除。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -141,7 +141,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 |**邮箱操作**|**说明**|**管理员**|**委派用户**|**所有者**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**创建**|创建日历项目。 请注意，不会审核创建、发送或接收邮件。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**创建**|创建日历项目。 不会审核邮件的创建、发送或接收。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**HardDelete**|已将某个邮件从"已恢复邮件"文件夹中清除。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|已删除邮件，并已将其移动到“已删除邮件”文件夹。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|已使用“发送方式”权限发送邮件。|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
@@ -167,7 +167,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 该值`Admin, Delegate, Owner`指示：
 
-- 审核所有三种登录类型的默认邮箱操作。 请注意，这是你将在 Office 365 组邮箱中看到的唯一值。
+- 审核所有三种登录类型的默认邮箱操作。 这是你在 Office 365 组邮箱中看到的唯一值。
 
 - *管理员尚未*更改用户邮箱或共享邮箱上任何登录类型的已审核邮箱操作。 注释默认情况下，这是在组织中最初启用邮箱审核之后的默认状态。
 
@@ -343,8 +343,11 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
   若要检索没有 E5 许可证的用户的邮箱审核日志条目，可以执行以下操作：
 
-  - 在手动启用了对单个邮箱的邮箱审核**后**，在 Security & 合规中心或通过 Office 365 管理活动 API 使用审核日志搜索。
-
+  - 手动启用单个邮箱的邮箱审核（运行命令`Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`）。 执行此操作后，您可以在安全 & 合规性中心中或通过 Office 365 管理活动 API 使用审核日志搜索。
+  
+    > [!NOTE]
+    > 如果邮箱审核在邮箱上似乎已启用，但您的搜索未返回任何结果，请将_AuditEnabled_参数的值更改为`$false` ，然后再更改`$true`回。
+  
   - 在 Exchange Online PowerShell 中使用以下 cmdlet：
 
     - [搜索-search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)以搜索特定用户的邮箱审核日志。
@@ -361,7 +364,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
   如果增加期限，则需要使用 Exchange Online PowerShell 中的[search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) cmdlet 在用户的邮箱审核日志中搜索早于90天的记录。
 
-- 如果您已在邮箱审核之前对邮箱的*AuditLogAgeLimit*属性进行了更改，则该邮箱的现有审核日志期限不会发生更改。 换言之，默认情况下邮箱审核不会影响邮箱审核记录的当前期限。
+- 如果您已在邮箱审核之前对邮箱的*AuditLogAgeLimit*属性进行了更改，则该邮箱的现有审核日志期限不会发生更改。 也就是说，默认情况下邮箱审核不会影响邮箱审核记录的当前期限。
 
 - 若要更改 Office 365 组邮箱上的*AuditLogAgeLimit*值，需要将该`-GroupMailbox`开关包含在 "**设置邮箱**" 命令中。
 
@@ -387,3 +390,5 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
     - 您不能直接访问 "可恢复的项目" 文件夹中的审核日志记录;相反，您可以使用**search-mailboxauditlog** cmdlet 或搜索 Office 365 审核日志来查找和查看邮箱审核记录。
 
 - 如果将邮箱置于保留或分配到合规中心中的保留策略，则在邮箱的*AuditLogAgeLimit*属性定义的持续时间内仍会保留审核日志记录（默认情况下为90天）。 若要延长保留邮箱的审核日志记录，您需要增加邮箱的*AuditLogAgeLimit*值。
+
+- 在多地理位置环境中，不支持跨地区邮箱审核。 例如，如果向某个用户分配了访问其他地理位置中的共享邮箱的权限，则该用户执行的邮箱操作不会记录在共享邮箱的邮箱审核日志中。

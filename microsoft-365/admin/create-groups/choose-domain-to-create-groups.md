@@ -1,8 +1,7 @@
 ---
 title: 选择创建 Office 365 组时要使用的域
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: '了解如何在使用 PowerShell 配置电子邮件地址策略时选择要在创建 Office 365 组时使用的域。 '
-ms.openlocfilehash: 55fc99cd201e66166e7da164777cfba2f763609c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238087"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894641"
 ---
 # <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>选择创建 Office 365 组时要使用的域
 
@@ -113,7 +112,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
     
 - 管理员和用户也可以在创建组时修改域。
     
-- 用户组是使用已有的标准查询（用户属性）确定的。 对于受支持的可筛选 pproperties，请查看[-RecipientFilter 参数的可筛选属性](https://go.microsoft.com/fwlink/p/?LinkId=785918)。 
+- 用户组是使用已有的标准查询（用户属性）确定的。 对于受支持的可筛选属性，请查看[-RecipientFilter 参数的可筛选属性](https://go.microsoft.com/fwlink/p/?LinkId=785918)。 
     
 - 如果没有为组配置任何 EAPs，则选择 "创建组的默认接受域"。
     

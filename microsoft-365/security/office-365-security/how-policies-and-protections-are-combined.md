@@ -1,64 +1,71 @@
 ---
-title: 当邮件为红色标记时，如何组合策略和保护
-description: 介绍当电子邮件遇到多个保护且由多个检测形式进行扫描时，将应用哪些策略和保护。 当电子邮件标记为恶意软件、垃圾邮件、高可信度垃圾邮件、网络钓鱼，以及 EOP 和/或 ATP 时，将应用哪些策略以及要采取的操作。
+title: Office 365 中的电子邮件保护的顺序和优先级
 keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/26/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: c6b3fcc931aa396187eb81d0db495f77877f667b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 介绍 Office 365 保护的应用程序顺序，以及保护策略中的优先级值如何确定应用的策略。
+ms.openlocfilehash: 9f2033b1ec066c1f8501ce019b8f8c7f3748fd15
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599169"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895331"
 ---
-# <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>在您的电子邮件上运行多个保护方法和检测扫描时应用什么策略
+# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Office 365 中的电子邮件保护的顺序和优先级
 
-您的传入邮件可能会被多个保护形式（例如 *，EOP 和*ATP）标记，以及多个检测扫描（例如垃圾邮件*和*网络钓鱼）。 这是因为 ATP 客户有 ATP 反网络钓鱼策略，并为 EOP 客户提供了 EOP 反网络钓鱼策略。 这也意味着邮件可能会针对恶意软件、网络钓鱼和用户模拟浏览多个检测扫描。 对于所有此活动，可能会对应用的策略产生一些困惑。
+作为 Office 365 用户，您的入站电子邮件可能会被多种保护形式标记。 例如，可用于所有 Office 365 客户的内置 EOP 反网络钓鱼策略，以及 Office 365 高级威胁防护客户也可以使用的更强健的 ATP 反网络钓鱼策略。 邮件还会通过多个检测扫描，针对恶意软件、垃圾邮件、网络钓鱼等。在所有此活动中，可能会对应用的策略产生一些混淆。
 
-通常情况下，应用于邮件的策略在**CAT （Category）** 属性的**X-Forefront-反垃圾邮件报告**标头中进行标识。 如果您有多个反网络钓鱼策略，则会应用最高优先级的策略。
+通常情况下，应用于邮件的策略在**CAT （Category）** 属性的**X-Forefront-反垃圾邮件报告**标头中标识。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
-以下策略适用于_所有组织_。
+有两个主要因素可用于确定将哪个策略应用于邮件：
 
-|优先级 |Policy  |类别  |托管 |
-|---------|---------|---------|---------|
-|1     | 恶意软件      | MALW      | 恶意软件策略   |
-|双面     | 网络钓鱼     | PHSH     | 配置垃圾邮件筛选器策略     |
-|第三章     | 高可信度垃圾邮件      | HSPM        | 配置垃圾邮件筛选器策略        |
-|4      | 网络钓鱼        | SPOOF        | 反网络钓鱼策略、欺骗性智能        |
-|5      | 垃圾邮件         | SPM         | 配置垃圾邮件筛选器策略         |
-|6      | 批量邮件         | BULK        | 配置垃圾邮件筛选器策略         |
+- **电子邮件保护类型的优先级**：此顺序不可配置，如下表所述：
 
-此外，这些策略适用于_具有 ATP 的组织_。
+  |||||
+  |---|---|---|---|
+  |**Priority**|**电子邮件保护**|**类别**|**管理位置**|
+  |1|恶意软件|CAT： MALW|[在 Office 365 中配置反恶意软件策略](configure-anti-malware-policies.md)|
+  |双面|网络钓鱼|CAT： PHSH|[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |第三章|高可信度垃圾邮件|CAT： HSPM|[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |4 |网络钓鱼|分类程序：欺骗|[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md) <Br/><br/> [详细了解防欺骗智能](learn-about-spoof-intelligence.md)|
+  |5 |垃圾邮件|CAT： SPM|[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |6 |批量邮件|分类程序：批量|[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |步<sup>\*</sup>|域模拟|DIMP|[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md)|
+  |utf-8<sup>\*</sup>|用户模拟|UIMP|[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md)|
+  |
 
-|优先级 |Policy  |类别  |托管 |
-|---------|---------|---------|---------|
-|7      | 域模拟         | DIMP         | 设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略        |
-|8      | 用户模拟        | UIMP         | 设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略         |
+  <sup>\*</sup>这些功能仅在 ATP 中可用。
 
-例如，如果您有两个策略及其各自的优先级：
+- **策略的优先级**：对于每种保护类型（反垃圾邮件、反恶意软件、反网络钓鱼等），都有一个适用于每个人的默认策略，但您可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略在中的应用顺序。 默认策略总是最后应用。
 
-|Policy  |优先级  |用户/域模拟  |反欺骗  |
-|---------|---------|---------|---------|
-|A     | 1        | 开        |关闭         |
-|B     | 双面        | 关        | 开        |
+  如果用户是在多个自定义策略中定义的，则仅对其应用具有最高优先级的策略。 不会为用户评估任何剩余的策略（包括默认策略）。
 
-如果一封邮件被标识为_用户模拟_和_欺骗_（请参阅上表中的反欺骗），并且范围限定为策略 a 的同一组用户的范围为策略 B，则邮件会被标记并被视为_欺骗_邮件。 但是，不会应用任何操作，因为尽管欺骗以更高的优先级（4）而不是用户模拟（8）运行，但反欺骗已关闭。
+例如，请考虑以下**适用于相同用户**的反网络钓鱼策略，以及同时标识为用户模拟和哄骗的邮件：
 
-请记住，管理员可以创建策略的优先级列表（请参阅上面的 "优先级" 字段），但只有一个策略将运行并应用其操作。 这意味着，策略 A 和 B 中的用户将具有更高优先级的策略（A 是 #1），并且邮件不会通过任何进一步的策略进行筛选。 如果反 spoofiing 处于关闭状态，则不会运行任何操作。
+  |||||
+  |---|---|---|---|
+  |**反垃圾邮件策略**|**Priority**|**用户模拟（ATP）**|**反欺骗（EOP）**|
+  |策略 A|1|开|关闭|
+  |Policy B|双面|关|开|
+  |
 
-由于许多策略中可能有许多用户组，因此它可能 behoove 管理员考虑使用更少的策略和更多的功能。 一定要确保所有用户都受全面策略的覆盖。
+1. 邮件被标记为欺骗，因为哄骗具有更高的优先级（4），而不是用户模拟（8）。
+2. 策略 A 应用于用户，因为它的优先级高于优先级 B。
+3. 根据策略 A 中的设置，不会对邮件执行任何操作，因为在策略中禁用了反欺骗功能。
+4. 反垃圾邮件策略处理停止，因此策略 B 永远不会应用到用户。
 
-若要应用其他类型的网络钓鱼策略，您将需要调整应用不同策略的用户的设置。
+由于有多个用户在同一类型的多个自定义策略中存在，因此请考虑针对自定义策略的以下设计准则：
 
-
-
+- 为适用于少数用户的策略分配更高的优先级，并为应用于大量用户的策略分配较低的优先级。 请记住，默认策略总是最后应用。
+- 配置更高优先级的策略，使其具有比低优先级策略更严格或更多的专用设置。
+- 请考虑使用较少的自定义策略（仅对需要更严格或更多的 specialize 设置的用户使用自定义策略）。

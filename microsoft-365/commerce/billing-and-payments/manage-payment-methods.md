@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何在 Microsoft 365 管理中心中管理你的支付方式。
-ms.openlocfilehash: 61c6d0b4fb21762eaeee96d8923eda7702fc70bb
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341568"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894837"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 
@@ -35,6 +35,15 @@ ms.locfileid: "42341568"
 > 在某些国家或地区不提供用银行帐户付款的选项。
 >
 > 您必须使用与您的租户从同一国家/地区颁发的付款方式。
+
+## <a name="add-a-payment-method"></a>添加付款方法
+
+添加付款方法不会将任何订阅关联。 若要将单个订阅分配给付款方法，请参阅[更改单个订阅的付款方式](#change-a-payment-method-for-a-single-subscription)。 若要将使用其他付款方式的所有订阅替换为新的，请参阅[替换付款方法](#replace-a-payment-method)。
+
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+2. 选择“**添加付款方式**”。
+3. 在“**付款方式**”页面上，从下拉菜单中选择一种付款方式。
+4. 输入新卡或银行帐户的信息，然后选择 "**添加**"。
 
 ## <a name="update-payment-method-details"></a>更新付款方式详细信息
 
@@ -97,7 +106,7 @@ ms.locfileid: "42341568"
 5. 若要添加新的付款方式，请选择 "**添加支付方式**"。
 6. 选择要添加的付款方式类型，输入帐户信息，然后选择 "**保存**"。
 7. 已在下拉列表中选择新的付款方式。 选择“下一步”****。
-8. 选择 "**删除**"。
+8. 选择“删除”****。
 
 ## <a name="troubleshoot-payment-methods"></a>支付方法故障排除
 

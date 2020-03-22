@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: 介绍 EOP 和 Office 365 垃圾邮件筛选器筛选出的电子邮件的安全提示。
-ms.openlocfilehash: 1fddb38be711a9d43e85adea34fe14eb9e7a85ef
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082319"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895187"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 中电子邮件中的安全提示
 
@@ -58,11 +58,6 @@ Exchange Online Protection （EOP）和 Office 365 针对垃圾邮件、网络�
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 
-始终为 web 上的 Outlook 启用安全提示，即使每封邮件都将收到一个。 Office 365 管理员可以关闭其他电子邮件客户端（如 Outlook）的安全提示。 有关详细信息，请参阅[在 Office 365 中启用或禁用安全提示](enable-or-disable-safety-tips.md)。
+始终为 web 上的 Outlook 启用安全提示，即使每封邮件都将收到一个。 Office 365 管理员可以关闭其他电子邮件客户端（如 Outlook）的安全提示。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 如果您不同意 Office 365 和 EOP 如何对邮件进行分类（即，它不是垃圾邮件或不合法），您可以提交邮件进行分析以帮助提高您的体验。 有关详细信息，请参阅 [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。 您还可以单击安全提示中的 "反馈" 链接以将评论直接提交给 Microsoft，以帮助我们改进。
-
-## <a name="see-also"></a>另请参阅
-
-[启用或禁用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)
-

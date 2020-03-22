@@ -15,30 +15,29 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: 了解 Office 365 中的批量投诉级别（BCL）值。
-ms.openlocfilehash: b0eb922323421834eae77b8c5430f1bd8f48c8ee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解有关 Office 365 中的批量 bomplain 级别（BCL）值的信息。
+ms.openlocfilehash: 6b90064db7dd9b27fdc729b65fb798dfbe756da7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599719"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895389"
 ---
-# <a name="bulk-complaint-level-values"></a>批量投诉级别值
+# <a name="bulk-complaint-level-bcl-in-office-365"></a>Office 365 中的大宗投诉级别（BCL）
 
-批量邮件群发程序因其发送模式、内容创建以及列表获取做法的不同而不同。 一些是合理的批量邮件群发程序，可以将所需的邮件和相关内容发送到它们的订阅者。 这些邮件使收件人产生少量抱怨。 其他批量邮件群发程序发送与垃圾邮件极其相似的未经请求的邮件，并且使收件人产生许多抱怨。
+批量收件人因其发送模式、内容创建和收件人获取实践而异。 有些是极大批量邮件程序，可向订阅者发送带有相关内容的所需邮件。 这些邮件使收件人产生少量抱怨。 其他批量邮件群发程序发送与垃圾邮件极其相似的未经请求的邮件，并且使收件人产生许多抱怨。 来自批量邮件散播邮件的邮件称为 "批量邮件" 或 "灰色邮件"。
 
-为了区分这些类型的批量邮件群发程序，会为批量邮件群发程序中的邮件分配批量投诉级别 (BCL) 评级。 BCL 评级范围介于 1 到 9 之间，这取决于批量邮件群发程序产生抱怨的可能性大小。 BCL 评级为 9 的发件人可能使收件人产生许多抱怨，而 BCL 评级为 3 的发件人产生许多抱怨的可能性较小。 Microsoft 使用内部和第三方源识别批量邮件，并确定适当的 BCL。 有关此邮件头的详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
+若要区分来自不同类型的批量邮件的邮件，从批量邮件发件人到 Office 365 （Exchange Online 或独立 Exchange Online Protection （EOP），而不是 Exchange Online 邮箱）的入站电子邮件被分配了一个添加到的批量投诉级别（BCL）X 标头中的邮件。 BCL 类似于用于将邮件标识为垃圾邮件的[垃圾邮件信任级别（SCL）](spam-confidence-levels.md) 。 较高的 BCL 指示批量邮件更有可能生成投诉（因此更可能是垃圾邮件）。 Microsoft 使用内部和第三方源来标识批量邮件，并确定相应的 BCL。
 
-由于分级为9的批量邮件可能会生成投诉，因此默认 BCL 为7。 这意味着将接受批量邮件，直到达到7和邮件的投诉级别之后才接受。 分级越低，接受的垃圾邮件越少。 如果你的用户是，并且他们的工作是对批量邮件敏感，并且你的 BCL 设置为4，则将不接受具有高于4的 BCL 的批量邮件。
+ 垃圾邮件筛选将邮件标记为基于 BCL 阈值（默认值或指定值）的**批量电子邮件**，并对邮件执行指定的操作（默认操作是将邮件传递到收件人的 "垃圾邮件" 文件夹）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)以及[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
-通过按照[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中的步骤操作，您可以使用 BCL 值设置您组织所需的批量筛选级别。
-
-下表介绍当前正在使用的 BCL 值。
+下表描述了 BCL 阈值。
 
 |||
-|:-----|:-----|
-|**BCL 值**|**说明**|
+|:---:|---|
+|**BCL**|**说明**|
 |0|邮件不是由批量发件人发送。|
 |1, 2, 3|邮件来自于产生少量抱怨的批量发件人。|
 |4, 5, 6, 7|邮件来自于产生各种各样的抱怨的批量发件人。|
 |8, 9|邮件来自批量发件人，生成大量投诉。|
+|

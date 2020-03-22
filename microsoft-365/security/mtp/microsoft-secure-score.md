@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5fe9be7e85288e720b2ba3e5854cf34ec2263ee7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633990"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895425"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -38,7 +38,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。
 
@@ -140,13 +140,41 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 
 若要了解计划的更改，请参阅[Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
 
-### <a name="removed-not-scored-improvement-actions"></a>删除了 "未评分" 的改进操作
+### <a name="march-2020"></a>2020 年 3 月
+
+#### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>支持 Azure AD 改进操作的安全默认值
+
+Microsoft 安全分数将更新改进操作以支持[AZURE AD 中的安全默认](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)设置，这使组织可以更轻松地使用预配置的常见攻击安全设置来保护组织。
+
+这将影响以下改进操作：
+
+- 确保所有用户都可以完成多重身份验证以实现安全访问
+- 需要对管理角色进行 MFA
+- 启用策略以阻止旧版身份验证
+
+#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>删除了不符合可靠测量预期的改进操作，或者不提供安全状态的有用表示形式
+
+为了确保 Microsoft 安全分数是有意义的，并且每个改进操作都是可衡量和可靠的，我们将删除以下改进操作。
+
+- 将用户文档存储在 OneDrive for Business 中
+- 设置 Office 365 ATP 安全附件策略
+- 设置 Office 365 安全链接以验证 Url
+- 不允许邮箱委派
+- 允许匿名来宾共享网站和文档的链接
+- 启用云应用安全控制台
+- 为外部共享链接配置过期时间
+- 启用审核数据记录
+- 发现有风险和不兼容的卷影 IT 应用程序
+- 查看权限 & 阻止连接到您的环境的有风险的 OAuth 应用程序
+- 在 SharePoint online 文档库中设置版本控制
+
+#### <a name="removed-not-scored-improvement-actions"></a>删除了 "未评分" 的改进操作
 
 安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议可能对分数有明显影响时，Microsoft 安全分数才有意义。 不计分的提高操作不可度量。  
 
 出于这些原因，未评分的所有改进操作均已删除。 您的部件不需要执行任何操作。
 
-### <a name="removed-device-improvement-actions"></a>删除了设备改进操作
+#### <a name="removed-device-improvement-actions"></a>删除了设备改进操作
 
 评估 Microsoft 安全得分设备类别的改进操作后，确定这些操作当前评估策略状态，而不是设备的配置状态。 由于配置直接与安全状态相关联，因此已确定现有的设备操作未完全代表组织的状况。  我们将删除设备类别中的当前操作，因为我们将提供一组直接使用诊断数据以更完整地表示设备安全状态的建议。
 
@@ -173,16 +201,7 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 - 要求所有设备都具有高级安全配置
 - 每周查看阻止的设备报告
 
-### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>删除了不符合可靠测量预期的改进措施
-
-为了确保 Microsoft 安全分数是有意义的，并且每个改进操作都是可衡量和可靠的，我们删除了以下改进操作：
-
-- 启用审核数据记录
-- 发现有风险和不兼容的卷影 IT 应用程序
-- 查看权限 & 阻止连接到您的环境的有风险的 OAuth 应用程序
-- 在 SharePoint online 文档库中设置版本控制
-
-### <a name="mfa-improvement-action-updates"></a>MFA 改进操作更新
+#### <a name="mfa-improvement-action-updates"></a>MFA 改进操作更新
 
 为了反映企业在应用使用其业务的策略时确保 upmost 安全性的需求，Microsoft 安全分数已删除了围绕多重身份验证的三个改进操作，并添加了两个操作。
 
@@ -199,7 +218,7 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 
  这些新的改进操作需要为你的用户或管理员在你的目录中注册多重身份验证（MFA），并建立符合你的组织需求的一组适当的策略。 主要目标具有灵活性，同时确保所有用户和管理员都可以通过多个因素或基于风险的身份验证提示进行身份验证。 这可以采用具有多个策略的形式，这些策略将应用范围决定，或者设置安全默认值（即将3月16日），让 Microsoft 决定何时对用户进行 MFA 质询。
 
-### <a name="removed-review-improvement-actions"></a>删除了 "审阅" 改进操作
+#### <a name="removed-review-improvement-actions"></a>删除了 "审阅" 改进操作
 
 安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议都可以清楚地影响分数时，一条 Microsoft 安全分数才有意义。 与其他改进操作相比，评审改进操作的计算方式不是相同标准。  
 

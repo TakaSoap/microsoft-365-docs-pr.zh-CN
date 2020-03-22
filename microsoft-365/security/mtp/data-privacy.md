@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b715cd2dcbc41e2aa5a4ae829677dfe250394346
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235131"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894260"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft 威胁防护数据安全性和隐私
 
@@ -33,12 +33,9 @@ ms.locfileid: "42235131"
 
 
 
-使用 Microsoft 威胁防护预览版，视为同意以下条款：
+通过使用 Microsoft 威胁防护，同意以下条款：
 
-适用的客户数据（如联机服务条款（"OST"））将从其他微软服务传输至 Microsoft 威胁防护并从 Microsoft 威胁防护重新回传至适用的微软服务。 在预览版期间，使用 Microsoft 威胁防护中的客户数据将遵循 Microsoft Defender 高级威胁防护（Microsoft Defender ATP）的数据处理标准和承诺。 确认此类承诺与传输自客户数据中的服务不同。 另外，存储在 Microsoft 威胁防护中的客户数据将静态存储至选定用于存储Microsoft Defender ATP 客户数据的地域中，可能与选定用于连接其他服务的地域不同。 微软不会传输客户数据至此地域之外，除非在 [Microsoft 信任中心](https://www.microsoft.com/trust-center) 中通过Microsoft 信任中心的“数据位置”部分另外注明。
-
-此外，确定哪些用户有权访问 Microsoft 威胁防护，Microsoft 威胁防护目前不允许基于角色的访问控制（“RBAC”）。 确认，Microsoft 威胁防护从支持 RBAC 的 Microsoft 服务中接收数据，该服务中的访问级别不会应用于 Microsoft 威胁防护。
-
+通过启用 Microsoft 威胁防护（MTP），你同意以下条款。 在线服务条款（OST）中定义的适用客户数据将从其他 Microsoft 服务传输到 MTP。 在 MTP 中使用客户数据将遵循 Microsoft Defender 高级威胁防护（Microsoft Defender ATP）的数据处理标准和承诺。 确认此类承诺与传输自客户数据中的服务不同。 此外，在 MTP 中存储的客户数据将存储在你选择用于存储 MDATP 客户数据的 Geo 中，这可能与你在其他服务中所选的地理位置不同。 除了[Microsoft 信任中心](https://www.microsoft.com/trust-center)的 "数据位置" 部分中所述之外，microsoft 不会在此类地域之外转移客户数据。
 
 有关特定产品的数据存储和隐私信息的详细信息，请参阅：
 - [Microsoft Defender ATP 数据存储和隐私](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

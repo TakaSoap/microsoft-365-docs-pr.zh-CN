@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 027189a10e34687833e6a266d5fe4382a1e14e3a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5f105912c5163b69368683cd4c6eaebf96250e3c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632893"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894827"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>在 Microsoft 365 中配置通信合规性
 
@@ -83,7 +83,7 @@ ms.locfileid: "42632893"
 | **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
 |受监督用户 <br> 非监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
-| Reviewers | 启用邮件的安全组  | 通讯组 <br> 动态通讯组 |
+| Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
   
 当您为受监督的用户选择 Office 365 组时，该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
 

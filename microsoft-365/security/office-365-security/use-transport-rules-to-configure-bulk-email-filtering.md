@@ -1,9 +1,9 @@
 ---
-title: 使用邮件流规则在 Exchange Online Protection 中配置批量电子邮件筛选
+title: 使用邮件流规则在 Office 365 中筛选批量电子邮件
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -15,132 +15,161 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用 Exchange Online Protection 中的邮件流规则进行批量电子邮件筛选。
-ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081812"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895043"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用邮件流规则在 Exchange Online Protection 中配置批量电子邮件筛选
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>使用邮件流规则在 Office 365 中筛选批量电子邮件
 
-您可以使用默认的垃圾邮件内容筛选器策略针对垃圾邮件和批量电子设置公司范围的内容筛选器。请查看[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)和 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) 以了解如何设置内容筛选器策略。
+如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则 EOP 使用反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）进行扫描垃圾邮件和批量邮件的入站邮件（也称为 "灰色邮件"）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-如果您想要更多的选项筛选批量邮件，则可以创建邮件流规则（也称为传输规则），以搜索批量电子邮件中经常找到的文本模式或短语。 任何包含这些特征的邮件将被标记为垃圾邮件。 使用这些规则有助于减少组织收到的垃圾批量电子邮件数量。
+如果您希望更多的选项筛选批量邮件，可以创建邮件流规则（也称为传输规则），以搜索批量邮件中经常找到的文本模式或短语，并将这些邮件标记为垃圾邮件。 有关批量邮件的详细信息，请参阅 Office 365 中的[垃圾邮件和批量电子邮件之间的区别是什么？](what-s-the-difference-between-junk-email-and-bulk-email.md)和[批量投诉级别（BCL）](bulk-complaint-level-values.md)。
 
-> [!IMPORTANT]
-> 在创建已记录的邮件流规则之前，我们建议您先阅读[垃圾邮件和批量电子邮件之间的区别](what-s-the-difference-between-junk-email-and-bulk-email.md)和[批量投诉级别值](bulk-complaint-level-values.md)之间的区别。<br>下面的步骤为您的整个组织将邮件标记为垃圾邮件。但是，您可以添加其他条件，以仅将这些规则应用于组织中的特定收件人。通过这种方式，主动批量电子邮件筛选设置可应用于具有高度针对性的一些用户，同时又不影响其余用户（主要接收其注册的批量电子邮件）。
+本主题介绍如何在 Exchange 管理中心（EAC）和 PowerShell （Office 365 客户的 Exchange Online PowerShell 中创建这些邮件流规则;适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
 
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>创建邮件流规则，以根据文本模式筛选批量电子邮件
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-1. 在 Exchange 管理中心 (EAC) 中，转到 **“邮件流”**\>**“规则”**。
+- 您需要先在 Exchange Online 中分配权限，然后才能执行这些过程。 具体来说，您需要分配 "**传输规则**" 角色，默认情况下会将其分配给 "**组织管理**"、"**合规性管理**" 和 "**记录管理**" 角色。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
-2. 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.gif) "添加" 图标，然后选择 "**创建新规则**"。
+- 若要在 Exchange Online 中打开 EAC，请参阅 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)。
 
-3. 指定规则名称。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-4. 单击 "**更多选项** !["](../../media/ITPro-EAC-MoreOptionsIcon.png)图标。 在 "**应用此规则**" 下，选择 **"主题" 或 "正文** \> "**主题或正文与这些文本模式相匹配**。
+- 有关 Exchange Online 和独立 EOP 中的邮件流规则的详细信息，请参阅下列主题：
 
-5. 在 "**指定词语或短语**" 对话框中，添加以下通常在批量电子邮件中找到的正则表达式（一次一个），然后在完成后单击 **"确定"** ：
+  - [Exchange Online 中的邮件流规则（传输规则）](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-   - `If you are unable to view the content of this email\, please`
+  - [Exchange Online 中的邮件流规则条件和例外（谓词）](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-   - `\>(safe )?unsubscribe( here)?\</a\>`
+  - [Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-   - `If you do not wish to receive further communications like this\, please`
+- 用于标识示例中的批量邮件的单词和文本模式列表不详尽;您可以根据需要添加和删除条目。 但是，它们是一个很棒的起点。
 
-   - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
+- 在邮件已通过 MIME 内容传输编码方法（用于以 ACSII 文本方式在 SMTP 服务器之间传输二进制消息）解码*后*，搜索邮件中主题或其他头字段中的字词或文本模式。不能使用条件或例外来搜索邮件中主题或其他头字段的原始（通常为 Base64）编码值。
 
-   - `To stop receiving these+emails\:http\://`
+- 下面的过程将批量邮件标记为您的整个组织的垃圾邮件。 但是，您可以添加另一个条件，以便仅将这些规则应用于特定的收件人，以便您可以对一些高度目标的用户使用严格筛选，而其余用户（大多数人都会收到其注册的批量电子邮件）不会受到影响。
 
-   - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
-
-   - `no longer (wish )?(to )?(be sent|receive) w+ email`
-
-   - `If you are unable to view the content of this email\, please click here`
-
-   - `To ensure you receive (your daily deals|our e-?mails)\, add`
-
-   - `If you no longer wish to receive these emails`
-
-   - `to change your (subscription preferences|preferences or unsubscribe)`
-
-   - `click (here to|the) unsubscribe`
-
-   上述列表不是批量电子邮件中找到的一组详尽的正则表达式;可以根据需要添加或删除更多内容。 但是，它是一个很好的起点。
-
-   在邮件已通过 MIME 内容传输编码方法（用于以 ACSII 文本方式在 SMTP 服务器之间传输二进制消息）解码*后*，搜索邮件中主题或其他头字段中的字词或文本模式。不能使用条件或例外来搜索邮件中主题或其他头字段的原始（通常为 Base64）编码值。
-
-6. 在 "**执行以下操作**" 下，选择 "**修改邮件属性** \> **" "设置垃圾邮件可信度（SCL）"**。
-
-7. 在“指定 SCL”**** 对话框中，将 SCL 设置为“5”****、“6”**** 或“9”****，然后单击“确定”****。
-
-   将 SCL 设置为 5 或 6 会执行“垃圾邮件”**** 操作，而将 SCL 设置为 9 会执行“高可信度垃圾邮件”**** 操作，如内容筛选策略中所配置。 该服务将执行内容筛选策略中设置的操作。 默认操作是将邮件传递到收件人的垃圾邮件文件夹，但是可能会配置不同的操作，如[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中所述。
-
-   如果配置的操作是隔离邮件，而不是将其发送到收件人的 "垃圾邮件" 文件夹，则邮件将作为邮件流规则的匹配项发送到管理员隔离区，并且不会在最终用户垃圾邮件隔离中或通过最终用户使用垃圾邮件通知。
-
-   有关服务中 SCL 值的详细信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。
-
-8. 保存规则。
-
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>创建邮件流规则以根据短语筛选批量电子邮件
+## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>使用 EAC 创建筛选批量电子邮件的邮件流规则
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.gif) "添加" 图标，然后选择 "**创建新规则**"。
+2. 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.png) "添加" 图标，然后选择 "**创建新规则**"。
 
-3. 指定规则名称。
+3. 在打开的" **新规则**"窗口中，配置以下设置：
 
-4. 单击“更多选项”****。 在 "在**以下情况应用此规则**" 下，选择 **"主题" 或 "正文** \> "**主题或正文包含以下任何词语**。
+   - **名称**：输入规则的唯一描述性名称。
 
-5. 在 "**指定词语或短语**" 对话框中，添加以下在批量电子邮件中常用的短语，一次添加一个，然后在完成后单击 **"确定"** ：
+   - 单击“其他选项”****。
 
-   - `to change your preferences or unsubscribe`
+   - **在以下情况下应用此规则**：配置以下设置之一，以使用正则表达式（RegEx）或字词或短语查找邮件中的内容：
 
-   - `Modify email preferences or unsubscribe`
+     - **主题** \>或正文**主题或正文与这些文本模式匹配**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.png)"添加" 图标，然后根据需要重复任意次数。
 
-   - `This is a promotional email`
+       - `If you are unable to view the content of this email\, please`
 
-   - `You are receiving this email because you requested a subscription`
+       - `\>(safe )?unsubscribe( here)?\</a\>`
 
-   - `click here to unsubscribe`
+       - `If you do not wish to receive further communications like this\, please`
 
-   - `You have received this email because you are subscribed`
+       - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
 
-   - `If you no longer wish to receive our email newsletter`
+       - `To stop receiving these+emails\:http\://`
 
-   - `to unsubscribe from this newsletter`
+       - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
 
-   - `If you have trouble viewing this email`
+       - `no longer (wish )?(to )?(be sent|receive) w+ email`
 
-   - `This is an advertisement`
+       - `If you are unable to view the content of this email\, please click here`
 
-   - `you would like to unsubscribe or change your`
+       - `To ensure you receive (your daily deals|our e-?mails)\, add`
 
-   - `view this email as a webpage`
+       - `If you no longer wish to receive these emails`
 
-   - `You are receiving this email because you are subscribed`
+       - `to change your (subscription preferences|preferences or unsubscribe)`
 
-   此列表不是批量电子邮件中找到的一组详尽的短语。可以根据需要添加或删除更多内容。 但是，它是一个很好的起点。
+       - `click (here to|the) unsubscribe`
 
-6. 在 "**执行以下操作**" 下，选择 "**修改邮件属性** \> **" "设置垃圾邮件可信度（SCL）"**。
+      若要编辑条目，请选择该条目**Edit** ![，然后单击](../../media/ITPro-EAC-EditIcon.png)"编辑" "编辑" 图标。 若要删除条目，请将其选中**Remove** ![，然后单击](../../media/ITPro-EAC-DeleteIcon.png)"删除删除图标"。
 
-7. 在“指定 SCL”**** 对话框中，将 SCL 设置为“5”****、“6”**** 或“9”****，然后单击“确定”****。
+       完成后，请单击 **"确定"**。
 
-   将 SCL 设置为 5 或 6 会执行“垃圾邮件”**** 操作，而将 SCL 设置为 9 会执行“高可信度垃圾邮件”**** 操作，如内容筛选策略中所配置。 该服务将执行内容筛选策略中设置的操作。 默认操作是将邮件传递到收件人的垃圾邮件文件夹，但是可能会配置不同的操作，如[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中所述。
+     - **主题** \>或正文**主题或正文包含以下任何词语**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** ![" "添加](../../media/ITPro-EAC-AddIcon.png)" 图标，然后根据需要重复任意次数。
 
-   如果配置的操作是隔离邮件，而不是将其发送到收件人的 "垃圾邮件" 文件夹，则邮件将作为邮件流规则的匹配项发送到管理员隔离区，并且不会在最终用户垃圾邮件隔离中或通过最终用户使用垃圾邮件通知。
+       - `to change your preferences or unsubscribe`
 
-   有关服务中 SCL 值的详细信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。
+       - `Modify email preferences or unsubscribe`
 
-8. 保存规则。
+       - `This is a promotional email`
 
-## <a name="for-more-information"></a>详细信息
+       - `You are receiving this email because you requested a subscription`
 
-[垃圾邮件和批量邮件之间有什么差异？](what-s-the-difference-between-junk-email-and-bulk-email.md)
+       - `click here to unsubscribe`
 
-[批量投诉级别值](bulk-complaint-level-values.md)
+       - `You have received this email because you are subscribed`
 
-[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)
+       - `If you no longer wish to receive our email newsletter`
 
-[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)
+       - `to unsubscribe from this newsletter`
+
+       - `If you have trouble viewing this email`
+
+       - `This is an advertisement`
+
+       - `you would like to unsubscribe or change your`
+
+       - `view this email as a webpage`
+
+       - `You are receiving this email because you are subscribed`
+
+      若要编辑条目，请选择该条目**Edit** ![，然后单击](../../media/ITPro-EAC-EditIcon.png)"编辑" "编辑" 图标。 若要删除条目，请将其选中**Remove** ![，然后单击](../../media/ITPro-EAC-DeleteIcon.png)"删除删除图标"。
+
+       完成后，请单击 **"确定"**。
+
+   - **执行以下**操作：选择 "**修改邮件属性** \> **" 设置垃圾邮件可信度（SCL）**。 在出现的 "**指定 SCL** " 对话框中，配置以下设置之一：
+
+     - 若要将邮件标记为**垃圾**邮件，请选择 " **6**"。 您为反垃圾邮件策略中的**垃圾**邮件筛选 verdicts 配置的操作将应用于邮件（默认值为 "**将邮件移动到垃圾邮件" 文件夹**）。
+
+     - 若要将邮件标记为**高可信度垃圾邮件**，请选择**9**。 您为**高可信度垃圾**邮件筛选 verdicts 配置的操作将应用于这些邮件（默认值为 "**将邮件移动到垃圾邮件" 文件夹**）。
+
+    有关 SCL 值的详细信息，请参阅[Office 365 中的垃圾邮件可信度（SCL）](spam-confidence-levels.md)。
+
+   完成后，请单击 "**保存**"
+
+## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a>使用 PowerShell 创建筛选批量电子邮件的邮件流规则
+
+使用以下语法创建一个或两个邮件流规则（正则表达式与词）：
+
+```powershell
+New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPrhase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
+```
+
+本示例创建一个名为 "批量电子邮件筛选-RegEx" 的新规则，该规则使用本主题前面的相同列表中的正则表达式将邮件设置为**垃圾**邮件。
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? sr\c=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
+```
+
+本示例将创建一个名为 "批量电子邮件筛选-词" 的新规则，该规则使用主题中前面的相同单词列表将邮件设置为**高可信度垃圾**邮件。
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
+```
+
+有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)。
+
+## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+
+若要验证是否已配置邮件流规则以筛选批量电子邮件，请执行以下任一步骤：
+
+- 在 EAC 中，转到 **"邮件流** \> **规则** \> "。 \>选择该规则，](../../media/ITPro-EAC-EditIcon.png)然后单击 "**编辑** ![编辑" 图标，并验证设置。
+
+- 在 PowerShell 中， \<将规则\>名称替换为规则名称，然后运行以下命令来验证设置：
+
+  ```powershell
+  Get-TransportRule -Identity "<Rule Name>" | Format-List
+  ```
+
+- 从外部帐户向受影响的收件人发送一封测试邮件，其中包含一个短语或文本模式，并验证结果。

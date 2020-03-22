@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全 & 合规性中心在您的组织中创建和管理电子数据展示事例。 您可以向事例分配成员、将内容位置置于保留状态、运行与事例关联的内容搜索以及导出搜索结果。 您还可以为 Office 365 高级电子数据展示中的进一步分析准备事例数据。
-ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634950"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894961"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全与合规中心管理电子数据展示事例
 
@@ -551,7 +551,14 @@ ms.locfileid: "42634950"
   |组织的最大事例保留数  <br/> |10,000  <br/> |
   |单个事例保留中的最大邮箱数  <br/> |1,000  <br/> |
   |单个事例保留中的 SharePoint 和 OneDrive for business 网站的最大数量  <br/> |100  <br/> |
-   
+  |在电子数据展示主页上显示的最大事例数，以及在某个事例中的保留、搜索和导出选项卡上显示的最大项目数。 <sup>1</sup> |1,000|
+  |||
+
+   > [!NOTE]
+   > <sup>1</sup>若要查看超过1000个事例、保留、搜索或导出的列表，您可以使用相应的 Office 365 安全性 & 合规性 PowerShell cmdlet：<br/> [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+
+
+
 - **在高级电子数据展示中的案例管理页面上创建的案例是什么？** 您可以通过单击 "安全性 & 合规性中心中"**电子数据展示**"页面底部的链接来访问较旧的高级电子数据展示事例的列表。 但是，若要在较旧的情况下执行任何工作，您必须联系 Office 365 支持部门，并请求将该事例移到安全 & 合规性中心中的新电子数据展示事例。 
     
 - **为什么要创建电子数据展示管理员？** 如前所述，电子数据展示管理员是电子数据展示管理员角色组的成员，可以查看和访问您组织中的所有电子数据展示事例。 访问所有电子数据展示事例这一功能有两个重要用途：

@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 368ccef9e5213a7494140d2c305ddafe1e0c3f79
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409507"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894295"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -5876,6 +5876,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - 未找到 Keyword_us_drivers_license 中的关键字。
 
 ```xml
+<Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">
     <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
@@ -5889,6 +5890,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
           <Match idRef="Keyword_us_drivers_license" />
         </Any>
     </Pattern>
+</Entity>
 ```
 
 ### <a name="keywords"></a>关键字

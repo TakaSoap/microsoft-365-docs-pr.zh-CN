@@ -1,67 +1,70 @@
 ---
-title: 在 Office 365 中创建阻止发件人列表
+title: 在 Office 365 中创建阻止的发件人列表
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/6/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: 阻止发件人列表选项包括 Outlook 阻止的发件人、反垃圾邮件发件人/域阻止列表、IP 阻止列表和 Exchange 邮件流规则（传输规则）。
-ms.openlocfilehash: fb5228bca7ac0c98a2aafd9d7b582e370698649a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 管理员可以了解 Office 365 和 EOP 中的可用选项来阻止入站邮件。
+ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599539"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893858"
 ---
-# <a name="create-block-sender-lists-in-office-365"></a>在 Office 365 中创建阻止发件人列表
+# <a name="create-blocked-sender-lists-in-office-365"></a>在 Office 365 中创建阻止的发件人列表
 
-有时，有必要阻止发件人发来的不需要的电子邮件。 有几种方法可供选择。 这些选项包括 Outlook 阻止的发件人、反垃圾邮件发件人/域阻止列表、IP 阻止列表和 Exchange 邮件流规则（也称为传输规则）。
+如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则 EOP 提供多种阻止来自不需要的发件人的电子邮件的方法。 这些选项包括 Outlook 阻止的发件人、阻止的发件人列表或反垃圾邮件策略中阻止的域列表、Exchange 邮件流规则（也称为传输规则）和 IP 阻止列表（连接筛选）。 你可以将这些选项统称为阻止的_发件人列表_。
+
+阻止发件人的最佳方法因影响范围而异。 对于单个用户，正确的解决方案可能是 Outlook 阻止的发件人。 对于很多用户而言，其他选项中的一种更合适。 下面的选项按影响范围和广度进行排序。 列表从窄到范围，但阅读完整建议的*细节*。
+
+1. Outlook 阻止的发件人（存储在每个邮箱中的阻止发件人列表）
+
+2. 阻止的发件人列表或阻止的域列表（反垃圾邮件策略）
+
+3. Mai 流规则
+
+4. IP 阻止列表（连接筛选）
 
 > [!NOTE]
-> 虽然可以使用组织阻止列表来解决漏报（丢失的垃圾邮件），但还应将那些候选人提交给 Microsoft 进行分析。 使用阻止列表管理漏报会显著增加管理开销。 如果要使用阻止列表来实现此目的，则在准备好时，还需要保留将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)的文章。
+> 虽然您可以使用组织范围内的阻止设置来解决漏报（丢失的垃圾邮件），但还应将这些邮件提交给 Microsoft 进行分析。 使用阻止列表管理漏报会显著增加管理开销。 如果使用阻止列表转移丢失的垃圾邮件，则需要在准备时保留将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)的主题。
 
-配置被阻止的发件人列表的适当方法取决于影响的范围。 对于单用户影响，正确的解决方案可以是使用 Outlook 阻止的发件人，但如果多个用户或所有用户受到影响，则其他选项之一更合适。
-
-## <a name="options-from-least-to-broadest-scope"></a>从最小到最广泛的范围的选项
-
-创建阻止列表时，一定要根据影响的范围（将影响多少人）选择适当的方法，以使其与阻止方法的广度相匹配。 下面列出的选项按作用域和广度进行排序。 列表从窄到范围，但阅读完整建议的*细节*。
-
-- Outlook 阻止的发件人
-- 反垃圾邮件策略：发件人/域阻止列表
-- Exchange 邮件流规则
-- 反垃圾邮件策略： IP 阻止列表
+相比之下，您还可以使用多个选项始终允许使用_安全发件人列表_从特定来源发送电子邮件。 有关详细信息，请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
 ## <a name="use-outlook-blocked-senders"></a>使用 Outlook 阻止的发件人
 
-如果只有少量用户受到影响，则应使用 Outlook 阻止的发件人，因为这只会影响向其发送邮件。
+当只有少量用户收到不需要的电子邮件时，用户或管理员可以将发件人电子邮件地址添加到邮箱中阻止的发件人列表中。 有关说明，请参阅在[Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+
+当邮件由于用户的阻止发件人列表而成功被阻止时， **X-Forefront-反垃圾邮件报告**的标头字段`SFV:BLK`将包含该值。
+
+> [!NOTE]
+> 如果不需要的邮件是来自可信且可识别的来源的新闻快递，则取消对该电子邮件的订阅是阻止用户接收邮件的另一种方法。
+
+## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>使用阻止的发件人列表或阻止的域列表
+
+当多个用户受到影响时，范围将变宽，因此下一个最佳选项是在反垃圾邮件策略中阻止发件人列表或阻止的域列表。 来自列表中发件人的邮件被标记为**垃圾**邮件，而您为**垃圾邮件**筛选器判定配置的操作将在邮件上执行。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+
+这些列表的最大限制约为1000个条目;尽管只能将30个条目输入到门户中。 您需要使用 PowerShell 来添加30个以上的条目。
+
+## <a name="use-mail-flow-rules"></a>使用邮件流规则
+
+如果需要阻止发送到特定用户或整个组织中的邮件，则可以使用邮件流规则。 邮件流规则比阻止发件人列表或阻止的发件人域列表更灵活，因为它们还可以查找不需要的邮件中的关键字或其他属性。
+
+无论您用于标识邮件的条件或例外情况如何，都可以将操作配置为将邮件的垃圾邮件可信度（SCL）设置为9，这会将邮件标记为**高可信度垃圾**邮件。 有关详细信息，请参阅[使用邮件流规则设置邮件中的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
 
 > [!IMPORTANT]
-> 如果不需要的邮件是来自可信且可识别的来源的新闻快递，则取消订阅该电子邮件是另一个选项，阻止用户将来收到该电子邮件。
+> 很容易创建规则*过于*积极的规则，因此，只需使用非常具体的条件来确定要阻止的邮件，这一点非常重要。 此外，请务必对规则启用审核并测试规则的结果，以确保一切按预期工作。
 
-[在 web 上的 outlook](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)和[outlook 客户端](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)上设置此设置的步骤有所不同。 **当邮件由于被阻止的发件人而成功被阻止时，您将在 X Forefront-反垃圾邮件中看到 SFV： BLK** ，这表明该邮件已被阻止。
+## <a name="use-the-ip-block-list"></a>使用 IP 阻止列表
 
-## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>使用反垃圾邮件策略发件人/域阻止列表
+如果不能使用其他选项之一来阻止发件人，则*只有*在连接筛选器策略中使用 IP 阻止列表。 有关详细信息，请参阅[配置连接筛选器策略](configure-the-connection-filter-policy.md)。 一定要将阻止的 Ip 的数量保持为最小值，以便*不*建议阻止整个 IP 地址范围。
 
-当多个用户受到影响时，范围将变宽，您需要使用公司范围内的发件人/域阻止列表反垃圾邮件策略。 可在[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)中找到详细步骤。 通过此方法阻止的任何邮件都将遵循策略中配置的垃圾邮件操作。
-
-这些列表的最大限制约为1000个条目;尽管只能将30个条目输入到门户中。 必须使用 PowerShell 添加30个以上的条目。
-
-## <a name="use-exchange-mail-flow-rules-specific-senders"></a>使用 Exchange 邮件流规则特定发件人
-
-如果需要阻止将邮件发送到特定用户或整个组织中的邮件，则可以使用邮件流规则。 邮件流规则更灵活，因为它们可以触发发件人电子邮件地址或域，以及邮件中的关键词语和其他属性。 这种灵活性使您能够创建部分到完整的块。 有关邮件流规则的详细信息，请参阅[使用邮件流规则在邮件中设置 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
-
-> [!IMPORTANT]
-> 创建的规则非常简单，因为这*会导致*所使用的条件尽可能具体，这一点非常重要。 此外，请确保对所创建的规则启用审核并进行测试，以确保一切按预期工作。
-
-## <a name="use-anti-spam-policy-ip-block-lists"></a>使用反垃圾邮件策略 IP 阻止列表
-
-如果不能使用其他选项之一阻止发件人，*则*可以使用反垃圾邮件策略 IP 阻止列表。 有关详细信息，请参阅[配置连接筛选器策略](configure-the-connection-filter-policy.md)。 一定要将阻止的 Ip 的数量保持为最小值，以便*不*建议阻止整个 IP 地址范围。
-
-您应该*特别*避免添加属于消费者服务或共享基础结构的 ip 地址范围，还应确保在定期维护过程中查看允许的 ip 地址列表。 **由于允许条目可以打开用于攻击的路由，因此您必须仔细管理此列表，并定期删除不再需要的允许条目。** 此外，如果您将允许在安全发件人列表中使用，请务必阅读并了解在*[Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)* 中的风险和注意事项。
+您应该*特别*避免添加属于消费者服务（例如，outlook.com）或共享基础结构的 ip 地址范围，还应确保在定期维护过程中查看被阻止的 IP 地址的列表。

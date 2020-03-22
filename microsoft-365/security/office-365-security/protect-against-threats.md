@@ -17,12 +17,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: 现在，请使用本文作为指南来配置您的威胁防护功能。
-ms.openlocfilehash: 96d5c85a5511ec67991283fbc164bb07d2ab34e9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: da920083b521e905633473efbabc5930ad7a6770
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598679"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895307"
 ---
 # <a name="protect-against-threats-in-office-365"></a>防御 Office 365 中的威胁
 
@@ -31,7 +31,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 > [!IMPORTANT]
 > **为每种策略提供了初始推荐设置; 但是，有许多可用选项，您可以调整设置以满足特定组织的需求**。 为你的策略或更改允许大约30分钟，以在你的数据中心中工作。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>订阅
 
@@ -189,7 +189,7 @@ Office 365 包括各种威胁防护功能。 以下是可用作检查表的快�
 
 4. 单击“**保存**”。
 
-若要了解有关反垃圾邮件策略选项的详细信息，请参阅[配置反垃圾邮件策略](configure-the-anti-spam-policies.md)。
+若要了解有关反垃圾邮件策略选项的详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="part-5---additional-settings-to-configure"></a>第5部分-要配置的其他设置
 

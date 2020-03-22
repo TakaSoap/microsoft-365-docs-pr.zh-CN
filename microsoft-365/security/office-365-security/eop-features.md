@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: 505487e079ea198c6575fd76e2e59a60ead19940
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 857c2c4dd62f036cda78cd9fee61e2ce464d35cc
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857341"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893702"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -30,23 +30,23 @@ ms.locfileid: "42857341"
 |:-----|:-----|
 |**功能**|**说明**|
 |**反垃圾邮件保护**||
-|入站垃圾邮件检测|入站反垃圾邮件保护始终处于启用状态，不能禁用。您可以通过连接筛选器和内容筛选器策略配置自定义设置。  <br/><br/> 对于 EOP 独立客户：默认情况下，EOP 内容筛选器将检测到的垃圾邮件发送到每个收件人的 "垃圾邮件" 文件夹。 但是，为了帮助确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱，您必须在您的本地服务器上配置两个 Exchange 邮件流规则（也称为传输规则），以检测由 EOP 添加的垃圾邮件头。 有关详细信息，请参阅[确保垃圾邮件已路由到每个用户的"垃圾邮件"文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。|
+|入站垃圾邮件检测|入站反垃圾邮件保护始终处于启用状态，不能禁用。您可以通过连接筛选器和内容筛选器策略配置自定义设置。  <br/><br/> 对于 EOP 独立客户：默认情况下，EOP 内容筛选器将检测到的垃圾邮件发送到每个收件人的 "垃圾邮件" 文件夹。 但是，为了帮助确保 "**将邮件移动到垃圾邮件文件夹**" 操作可用于内部部署邮箱，您必须在您的本地服务器上配置两个 Exchange 邮件流规则（也称为传输规则），以检测由 EOP 添加的垃圾邮件头。 有关详细信息，请参阅[Configure 独立 EOP 以将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。|
 |出站垃圾邮件检测|如果您使用出站反垃圾邮件保护来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。 与入站筛选一样，出站垃圾邮件筛选由连接筛选和内容筛选组成。 出站垃圾邮件筛选设置不可配置，但您可以使用某些出站垃圾邮件策略设置来配置针对可疑和被阻止出站邮件的管理员通知。 有关详细信息，请参阅[配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)。|
-|NDR 退信保护|有关 NDR 退信的详细信息，请参阅[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)中的 ndr 退信设置以及[退信邮件和 EOP](backscatter-messages-and-eop.md)。|
+|NDR 退信保护|有关 NDR 退信的详细信息，请参阅[Office 365 中高级垃圾邮件筛选器（ASF）设置](advanced-spam-filtering-asf-options.md)中的 ndr 退信设置以及[退信邮件和 EOP](backscatter-messages-and-eop.md)。|
 |批量邮件筛选|EOP 具有识别批量电子邮件的增强检测方法。 您可以将服务配置为通过用户界面标记批量电子邮件。 您还可以通过搜索批量邮件邮件头标记来创建邮件流规则，以更严格地筛选批量邮件。 有关批量电子邮件的详细信息，请参阅[垃圾邮件和批量电子邮件之间的区别是什么？](what-s-the-difference-between-junk-email-and-bulk-email.md)及其关联的副标题。|
 |恶意 URL 阻止列表|EOP 使用多个 URL 阻止列表，帮助检测邮件中的已知恶意链接。|
 |防钓鱼保护|EOP 包括 750,000 个已知垃圾邮件制造者的域。|
 |**垃圾邮件管理**||
 |配置连接筛选器 IP 允许和 IP 阻止列表的能力|连接筛选器中指定的 IP 地址可以是单个 IP 地址和 CIDR IP 地址范围。 服务还支持 IPv6 地址。 有关详细信息，请参阅[配置连接筛选器策略](configure-the-connection-filter-policy.md)。|
-|按照用户、组或域来自定义内容筛选器策略的能力|更精确地讲，您可以创建自定义内容筛选策略，并将其应用到组织中的特定用户、组或域。 虽然自定义策略的优先级始终高于默认策略，但可以更改自定义策略的优先级（即运行顺序）。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。|
-|配置对内容经过筛选的邮件进行的操作的能力|有多个可配置的操作。 例如，您可以删除内容筛选的邮件或将其发送到"垃圾邮件"文件夹或隔离区。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。|
-|配置高级选项以实现积极的垃圾邮件筛选的能力|有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)（即配置它们的位置）和[高级垃圾邮件筛选选项](advanced-spam-filtering-asf-options.md)（提供有关每个选项所执行操作的具体详细信息）。|
-|国际垃圾邮件筛选|您可以将 EOP 配置为筛选以特定语言编写的邮件，或来自特定国家或地区的邮件。 您最多可以配置 86 种不同的语言和 250 种不同的区域。 该服务将针对高可信度垃圾邮件应用配置的操作。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。|
-|通过 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）管理垃圾邮件|管理员和最终用户可以创建安全发件人列表和阻止发件人列表。 详细信息 <br/>• **Web 上的 Outlook**：请参阅[阻止或允许（垃圾邮件设置）](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)。  <br/>• **Outlook**：请参阅[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。 <br/><br/> 如果您使用 EOP 帮助保护本地邮箱，请务必使用目录同步来帮助确保这些设置已同步到服务。 有关如何设置目录同步的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"。|
+|按照用户、组或域来自定义内容筛选器策略的能力|更精确地讲，您可以创建自定义内容筛选策略，并将其应用到组织中的特定用户、组或域。 虽然自定义策略的优先级始终高于默认策略，但可以更改自定义策略的优先级（即运行顺序）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
+|配置对内容经过筛选的邮件进行的操作的能力|有多个可配置的操作。 例如，您可以删除内容筛选的邮件或将其发送到"垃圾邮件"文件夹或隔离区。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
+|配置高级选项以实现积极的垃圾邮件筛选的能力|有关详细信息，请参阅在 office 365 （在其中配置它们）和[高级垃圾邮件筛选器（ASF）设置中](advanced-spam-filtering-asf-options.md)的 "在 office 365 中[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)" （提供了有关每个选项所执行操作的具体详细信息）。|
+|国际垃圾邮件筛选|您可以将 EOP 配置为筛选以特定语言编写的邮件，或来自特定国家或地区的邮件。 您最多可以配置 86 种不同的语言和 250 种不同的区域。 该服务将针对高可信度垃圾邮件应用配置的操作。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
+|通过 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）管理垃圾邮件|管理员和最终用户可以创建安全发件人列表和阻止发件人列表。 详细信息 <br/>* **Outlook 网页**：请参阅[阻止或允许（垃圾邮件设置）](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)。  <br/>* **Outlook**：请参阅[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。 <br/><br/> 如果您使用 EOP 帮助保护本地邮箱，请务必使用目录同步来帮助确保这些设置已同步到服务。 有关如何设置目录同步的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"。|
 |通过 Microsoft Office Outlook 的垃圾邮件报告加载项的垃圾邮件提交|您可以将加载项下载到 Outlook，以允许您将垃圾邮件提交给 Microsoft 进行分析。 有关下载和使用此工具的详细信息，请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。 <br/><br/> 如果您使用的是 EOP 的 Exchange Server 2013 或更高版本，您还可以在 web 上的 Outlook 中右键单击以提交垃圾邮件，如在[outlook 网页中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中所述。|
 |通过电子邮件别名的垃圾邮件和垃圾邮件提交|您可以通过电子邮件将垃圾邮件和非垃圾邮件提交给 Microsoft。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。|
 |通过 web 上的 Outlook 进行的垃圾邮件和非垃圾邮件提交垃圾邮件报告|您可以通过 web 上的 Outlook 垃圾邮件报告将垃圾邮件和非垃圾邮件提交给 Microsoft。 有关详细信息，请参阅 [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。  <br/><br/> 此功能当前可供 Outlook 在其 Exchange Server 2013 SP1 或更高版本的邮箱正在通过 EOP 筛选的 web 客户上使用。 Web 上的 Exchange Online Outlook 客户在不久的将来也将具有此功能。|
-|最终用户垃圾邮件隔离通知|最终用户可以释放自己的垃圾邮件隔离邮件，并选择通过最终用户垃圾邮件通知邮件将其报告为非垃圾邮件。 必须由管理员配置和启用这些通知电子邮件，如在[Exchange Online 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-exchange-online.md)或[在 EOP 中配置最终用户垃圾邮件通知](configure-end-user-spam-notifications-in-eop.md)中所述。|
+|最终用户垃圾邮件隔离通知|有关详细信息，请参阅[Office 365 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。|
 |最终用户垃圾邮件隔离通知频率|默认情况下此频率为 3 天，可配置为 1 到 15 天。|
 |管理员配置最终用户垃圾邮件隔离通知的语言的能力|对最终用户和管理员可用。 有关详细信息，请参阅[在 Office 365 中将隔离的邮件和文件作为管理员进行管理](manage-quarantined-messages-and-files.md)，或[查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|
 |通过网页访问和管理隔离中的邮件|对最终用户和管理员可用。 有关详细信息，请参阅[在 Office 365 中将隔离的邮件和文件作为管理员进行管理](manage-quarantined-messages-and-files.md)，或[查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|

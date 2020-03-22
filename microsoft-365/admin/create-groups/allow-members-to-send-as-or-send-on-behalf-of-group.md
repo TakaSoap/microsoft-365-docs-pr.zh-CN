@@ -1,8 +1,7 @@
 ---
 title: 允许成员作为组发送或代表组发送
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 了解如何允许成员以 Office 365 组的形式发送电子邮件，或代表 Office 365 组发送电子邮件。
-ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 41e8bd34ed7ba28cdaa736bf8f4c88433f56a47e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633780"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894653"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员作为组发送或代表组发送
 
-已被授予 "**代理发送**" 或 **"代表发送"** 权限的 Office 365 组的成员现在可以作为组或代表组发送电子邮件。 本主题介绍管理员如何设置这些权限。
+已被授予 "**代理发送**" 或 **"代表发送"** 权限的 Office 365 组的成员可以作为组或代表组发送电子邮件。 本主题介绍管理员如何设置这些权限。
   
 例如，如果 Megan Bowen 是**培训**Office 365 组的一部分，并且对该组具有 "**代理发送**" 权限，则如果她将电子邮件作为组发送，则它看起来就像是发送了该电子邮件的**培训**组。 
   
@@ -39,7 +38,7 @@ ms.locfileid: "42633780"
 > 您可以为给定用户配置 "**代理发送**" 或 **"代表发送**"，但不能同时配置两者。 如果同时配置两者，则默认为 "**代理发送**"。
 
 > [!TIP]
-> 请查看 "[从或代表 Office 365 组发送电子邮件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)" 中的步骤，以了解如何使用 Outlook 和 Web 上的 Outlook 从组发送电子邮件。
+> 若要了解如何使用 Outlook 和 Web 上的 Outlook 从组发送电子邮件，请参阅[通过或代表 Office 365 组发送电子邮件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允许成员以组的形式发送电子邮件
 

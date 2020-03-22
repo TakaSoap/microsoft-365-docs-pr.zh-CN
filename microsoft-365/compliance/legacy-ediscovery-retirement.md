@@ -10,14 +10,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和 Office 365 高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: 761378f848c358f2234576ac87507b91c55f4ccf
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857365"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894849"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧电子数据展示工具的退休
 
@@ -46,11 +45,13 @@ ms.locfileid: "42857365"
 
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
+   - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
+   
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
    
-   - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
+
 
 - [Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)v1.0，它是高级电子数据展示的第一个版本，可通过 Office 365 安全性 & 合规性中心中的电子数据展示事例进行访问。
 
@@ -212,7 +213,7 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 </tr>
 <tr class="odd">
 <td>将搜索结果复制到发现邮箱</td>
-<td>None</td>
+<td>无</td>
 <td>此功能没有直接替代，因为它不提供对所有 Microsoft 365 服务的访问权限。 有关其他解决方案，请参阅下面的 FAQ。</td>
 </tr>
 </tbody>
@@ -294,9 +295,9 @@ Exchange Online PowerShell 中的**搜索邮箱**cmdlet 将被停用，因为最
 </tbody>
 </table>
 
-## <a name="getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api"></a>EWS API 中的 GetSearchableMailboxes、SetHoldOnMailboxes 和 GetHoldOnMailboxes 操作
+## <a name="exchange-web-services-api-operations"></a>Exchange Web 服务 API 操作
 
-Exchange 管理中心中的 "就地电子数据展示 & 保留" 功能和 exchange Online PowerShell 中的相应** \*new-mailboxsearch** cmdlet 使用这三个 Exchange Web Services api。 在停用其他旧的电子数据展示工具时，它们也会被停用。
+Exchange Web Services API 中的这些操作由 exchange 管理中心中的 "就地电子数据展示 & 保留" 功能使用，并** \*** 在 exchange Online PowerShell 中使用 new-mailboxsearch cmdlet。 在停用其他旧的电子数据展示工具时，它们也会被停用。
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
 
@@ -310,7 +311,7 @@ Exchange 管理中心中的 "就地电子数据展示 & 保留" 功能和 exchan
 
 ### <a name="timeline"></a>日程表
 
-- 2020年4月1日： GetSearchableMailboxes、SetHoldOnMailboxes 和 GetHoldOnMailboxes 操作将不再可用，Microsoft 支持将不再提供协助。
+- 2020年4月1日： GetSearchableMailboxes、SearchMailboxes、SetHoldOnMailboxes 和 GetHoldOnMailboxes 操作将不再可用，Microsoft 支持将不再提供协助。
 
 ## <a name="advanced-ediscovery-v10"></a>高级电子数据展示1.0 版
 

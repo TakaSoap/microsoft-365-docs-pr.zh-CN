@@ -1,8 +1,7 @@
 ---
 title: Office 365 组过期策略
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -19,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Office 365 组过期策略。
-ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352583"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894511"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 组过期策略
 
 随着 Office 365 组的使用提高，管理员和用户需要一种方法来清除未使用的组。 过期策略可帮助从系统中删除非活动组并使其更整洁。
 
-当一个组过期时，它的所有关联服务（邮箱、Planner、SharePoint 网站等）也将被删除。
+当组过期时，也将删除其所有关联的服务（邮箱、Planner、SharePoint 网站、团队等）。
 
 当组过期时，它会被 "软删除"，这意味着它仍可恢复最长30天。
 
@@ -44,7 +43,7 @@ ms.locfileid: "42352583"
 > [!IMPORTANT]
 > 当您更改过期策略时，服务将重新计算每个组的到期日期。 它始终从创建组的日期开始计数，然后应用新的过期策略。
 
-请务必了解默认情况下禁用过期功能。 如果管理员想要使用它，则必须为其租户启用它。
+请务必了解默认情况下禁用过期功能。 如果管理员想要使用它，则必须为其组织启用它。
 
 > [!NOTE]
 > 配置和使用 Office 365 组的过期策略要求您拥有（但不一定）为应用了过期策略的所有组的成员分配 Azure AD Premium 许可证。 有关详细信息，请参阅[Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)入门。
@@ -62,7 +61,7 @@ ms.locfileid: "42352583"
 
 组生存期以天为单位指定，可设置为180、365或指定的自定义值。 自定义值必须至少为30天。
 
-如果组没有所有者，则过期电子邮件将转到指定管理员。
+如果组没有所有者，到期电子邮件将转到指定的管理员。
 
 您可以设置所有组的策略、仅选定的组或通过选择 "**无**" 将其完全关闭。 请注意，对于不同的组，当前不能有不同的策略。
 

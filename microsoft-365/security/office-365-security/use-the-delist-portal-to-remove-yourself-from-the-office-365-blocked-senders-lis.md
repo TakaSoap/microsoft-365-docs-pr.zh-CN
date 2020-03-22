@@ -16,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: 当您尝试向其电子邮件地址位于 Office 365 中的收件人发送电子邮件时，是否收到一条错误消息？如果您认为不应该会收到错误消息，则可以使用除名门户将自己从 Office 365 阻止的发件人名单中删除。
-ms.openlocfilehash: 3e131addb391ecbf90d74ad4fdfa65b802c5e1ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081953"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895079"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用除名门户将自己从 Office 365 阻止的发件人名单中删除
 
@@ -58,4 +58,4 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
     > [!NOTE]
     > 在删除限制之前，可能需要长达24小时或结果相差很大。
 
-阅读有关[如何防止在 office 365 中将真实电子邮件标记为垃圾](prevent-email-from-being-marked-as-spam.md )邮件并[控制 office 365 中的出站垃圾](outbound-spam-controls.md)邮件的信息，以防止 IP 被列入黑名单。
+请参阅[在 office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)和[office 365 中的出站垃圾邮件保护](outbound-spam-controls.md)以防止 IP 被列入黑名单。

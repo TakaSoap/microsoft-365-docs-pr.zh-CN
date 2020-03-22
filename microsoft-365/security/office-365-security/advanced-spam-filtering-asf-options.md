@@ -1,11 +1,11 @@
 ---
-title: 高级垃圾邮件筛选选项
+title: Office 365 中的 ASF 设置
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,46 +15,83 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: 高级垃圾邮件筛选选项为管理员提供检查邮件的各种内容属性的功能。 邮件中存在的这些属性或者增加邮件的垃圾邮件得分（从而增加被标识为垃圾邮件的可能性），或者导致邮件被标记为垃圾邮件。 ASF 选项的目标是特定邮件属性，如垃圾邮件中常见的 HTML 标签和 URL 重定向。
-ms.openlocfilehash: 07f2b32dac6ba4a04fbccac5f015be399f62e254
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）中的高级垃圾邮件筛选器（ASF）设置允许管理员识别包含在垃圾邮件中通常使用的特定邮件属性的邮件。 ASF 检测会将邮件标记为垃圾邮件或高可信度垃圾邮件，具体取决于属性。
+ms.openlocfilehash: e35279092e9d77b18eadd2af33909eda90bdd80b
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599959"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894248"
 ---
-# <a name="advanced-spam-filtering-options"></a>高级垃圾邮件筛选选项
+# <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Office 365 中的高级垃圾邮件筛选器（ASF）设置
 
 > [!NOTE]
-> 反垃圾邮件策略的高级垃圾邮件筛选器设置当前已被弃用。 我们推荐的设置是**将其关闭**。 高级垃圾邮件筛选器中可用的功能被合并到筛选堆栈的其他部分中。
+> 反垃圾邮件策略中当前可用的 ASF 设置处于弃用过程中。 我们建议您不要在反垃圾邮件策略中使用这些设置。 这些 ASF 设置的功能将并入筛选堆栈的其他部分。 有关详细信息，请参阅[EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
-高级垃圾邮件筛选选项为管理员提供检查邮件的各种内容属性的功能。 邮件中存在的这些属性或者增加邮件的垃圾邮件得分（从而增加被标识为垃圾邮件的可能性），或者导致邮件被标记为垃圾邮件。 ASF 选项的目标是特定邮件属性，如垃圾邮件中常见的 HTML 标签和 URL 重定向。
-  
-启用 ASF 选项是进行垃圾邮件筛选的主动方法，同时任何被这些选项筛选的邮件将无法报告为误报。这些邮件可以通过定期最终用户垃圾邮件通知进行标识，并从垃圾邮件隔离中抢救出来。还可以通过特定于每个 ASF 选项，且显示在邮件（匹配 ASF 选项）的 Internet 标题中的 X 标头文本，对它们进行标识。有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
-  
-编辑内容筛选器策略时，可以设置 ASF 选项为打开、关闭或测试。 有关详细信息，请参阅[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)。 测试模式对“**NDR 退信**”、“**SPF 记录: 硬失败**”、“**条件发件人 ID 筛选: 硬失败**”和“**批量邮件**”选项不可用。 
-  
-下表介绍了每个高级垃圾邮件筛选选项。
-  
+反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）中的高级垃圾邮件筛选器（ASF）设置允许管理员根据特定邮件属性将邮件标记为垃圾邮件。 ASF 专门针对这些属性，因为它们通常位于垃圾邮件中。 ASF 检测会将邮件标记为**垃圾**邮件或**高可信度垃圾邮件**，具体取决于属性。
+
+> [!NOTE]
+> 启用一个或多个 ASF 设置是一种严格的垃圾邮件筛选方法。 您不能报告由 ASF 筛选为误报的邮件。 您可以通过以下方式识别通过 ASF 筛选的邮件： <ul><li>定期的最终用户垃圾邮件隔离通知。</li><li>隔离中的已筛选邮件的存在情况。</li><li>将添加`X-CustomSpam:`到邮件中的特定 X 标头字段，如本主题中所述。</li></ul>
+
+以下各节介绍了 Office 365 安全 & 合规性中心和 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell （[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy)和[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)）中的反垃圾邮件策略中提供的 ASF 设置和选项。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+
+## <a name="enable-disable-or-test-asf-settings"></a>启用、禁用或测试 ASF 设置
+
+对于每个 ASF 设置，反垃圾邮件策略中提供了以下选项：
+
+- **打开**： ASF 将对应的 X 标头字段添加到邮件中，并将邮件标记为**垃圾**邮件（scl 5 或6用于[增加垃圾邮件得分设置](#increase-spam-score-settings)）或**高可信度垃圾邮件**（Scl[标记为垃圾邮件设置](#mark-as-spam-settings)）或高可信度垃圾邮件（scl 9）。
+
+- **Off**：禁用 ASF 设置。 这是默认值，我们建议您不要更改它。
+
+- **测试**： ASF 将对应的 X 标头字段添加到邮件中。 "**测试模式选项**" （*TestModeAction*）值决定了邮件所发生的情况：
+
+  - **None**：邮件路由和传递不受 ASF 检测的影响。 邮件仍服从其他类型的筛选和 EOP 中的规则。
+
+  - **添加默认的 X 标头文本（*AddXHeader*）**：将 X 标值`X-CustomSpam: This message was filtered by the custom spam filter option`添加到邮件中。 您可以使用收件箱规则或邮件流规则（也称为传输规则）中的此值来影响邮件的路由和传递。
+
+  - **发送密件抄送邮件（*BccMessage*）**：在邮件的 "密件抄送" 字段中，指定的电子邮件地址（PowerShell 中的*TestModeBccToRecipients*参数值）被添加到邮件的 "密件抄送" 字段中，并将邮件传递给密件抄送收件人。 在 Office 365 安全 & 合规性中心中，可以用分号（;）分隔多个电子邮件地址。 在 PowerShell 中，可以用逗号分隔多个电子邮件地址。
+
+  **注意**：
+
+  - 测试模式对以下 ASF 设置不可用：
+
+    - **条件发件人 ID 筛选：硬故障**（*MarkAsSpamFromAddressAuthFail*）
+
+    - **NDR 退信**（*MarkAsSpamNdrBackscatter*）
+
+    - **SPF 记录：硬故障**（*MarkAsSpamSpfRecordHardFail*）
+
+  - 将相同的测试模式操作应用于*所有*设置为**测试**的 ASF 设置。 您不能为不同的 ASF 设置配置不同的测试模式操作。
+
+## <a name="increase-spam-score-settings"></a>增加垃圾邮件得分设置
+
+以下 ASF 设置将检测到的邮件的垃圾邮件可信度（SCL）设置为5或6，这与**垃圾**邮件筛选器判定和反垃圾邮件策略中的相应操作相对应。
+
 ||||
 |:-----|:-----|:-----|
-|**高级垃圾邮件筛选选项** <br/> |**说明** <br/> |**X 标头文本** <br/> |
-|**增加垃圾邮件得分部分** <br/> |启用后，这些选项将匹配邮件的垃圾邮件可信度 (SCL) 设置为 5 或 6，即被认为是可疑垃圾邮件。对邮件执行的操作将匹配内容筛选器策略中的“垃圾邮件”**** 设置。<br/> ||
-|到远程站点的图像链接  <br/> |如果启用此设置，含有 HTML 内容（其中的 IMG 标记可实现远程链接，如使用 http）的所有消息的垃圾邮件分数都将提高。  <br/> |X-CustomSpam：到远程站点的图像链接  <br/> |
-|URL 中的数字 IP 地址  <br/> |启用此设置后，所有具有数字 URL（经常采用 IP 地址的格式）的邮件将获得额外的垃圾邮件得分。  <br/> |X-CustomSpam：URL 中的数字 IP  <br/> |
-|URL 重定向到其他端口  <br/> |启用此设置后，所有包含将用户重定向到 80（常用 HTTP 协议端口）、8080（HTTP 替代端口）或 443（HTTPS 端口）之外的其他端口的超链接的邮件将获得额外的垃圾邮件得分。  <br/> |X-CustomSpam：URL 重定向到其他端口  <br/> |
-|至 .biz 或 .info 网站的 URL  <br/> |启用此设置后，所有在邮件正文中包含 .biz 或 .info 扩展名的邮件将获得额外的垃圾邮件得分。  <br/> |X-CustomSpam：至 .biz 或 .info 网站的 URL  <br/> |
-|**标记为垃圾邮件部分** <br/> |启用后，这些选项将匹配邮件的垃圾邮件可信度 (SCL) 设置为 9，即被认为是确定垃圾邮件。对邮件执行的操作将匹配内容筛选器策略中的“高可信度垃圾邮件”**** 设置。<br/> ||
-|空邮件  <br/> |启用此设置后，所有正文和主题行为空且没有附件的邮件都将被标记为垃圾邮件。  <br/> |X-CustomSpam：空邮件  <br/> |
-|HTML 格式 的 JavaScript 或 VBScript  <br/> |启用此设置后，任何使用 HTML 格式的 JavaScript 或 Visual Basic Script Edition 的邮件将被标记为垃圾邮件。在 HTML 邮件内使用这两种脚本语言将自动导致出现特定操作。浏览器将解析并连同文件其他部分一起处理脚本。  <br/> |X-CustomSpam：HTML 格式 的 Javascript 或 VBscript 标记  <br/> |
-|HTML 格式的 Frame 或 IFrame 标签  <br/> |启用此设置后，任何包含 \<Frame\> 或 \<IFrame\> HTML 标签的邮件将被标记为垃圾邮件。这些标签用于网站或 HTML 邮件，以格式化显示文本或图形的页面。  <br/> |X-CustomSpam：HTML 格式 的 IFRAME 或 FRAME  <br/> |
-|HTML 格式的对象标记  <br/> |启用此设置后，任何包含 \<Object\> HTML 标签的邮件将被标记为垃圾邮件。该 HTML 标记允许在 HTML 窗口中运行插件或应用程序。  <br/> |X-CustomSpam：HTML 格式的对象标记  <br/> |
-|HTML 格式的嵌入式标记  <br/> |启用此设置后，任何包含 \<Embed\> HTML 标签的邮件将被标记为垃圾邮件。该 HTML 标记允许嵌入各种数据类型的不同文档类型到 HTML 文档。示例包括声音、电影或图片。  <br/> |X-CustomSpam：HTML 格式的嵌入式标记  <br/> |
-|HTML 格式的表单标记  <br/> |启用此设置后，任何包含 \<Form\> HTML 标签的邮件将被标记为垃圾邮件。此 HTML 标记用于创建网站表单。电子邮件广告经常包含该标记，以获取收件人的信息。  <br/> |X-CustomSpam：HTML 格式的表单标记  <br/> |
-|HTML 格式的网络臭虫  <br/> |启用此设置后，任何包含网络臭虫的邮件将被标记为垃圾邮件。网络臭虫是一个图形，用于确定是否已读取网页或电子邮件。网络臭虫经常对收件人不可见，因为它们通常作为小至一像素乘一像素大小的图形添加到邮件。合法新闻稿也会使用该技术，尽管许多人认为这侵犯了隐私。  <br/> |X-CustomSpam：网络臭虫  <br/> |
-|应用敏感词列表  <br/> |启用此设置后，任何包含来自敏感词列表单词的邮件将被标记为垃圾邮件。使用敏感词列表可轻松阻止与潜在冒犯性邮件关联的单词。其中一些词区分大小写。作为管理员，您无法编辑此列表。使用敏感词列表筛选同时适用于邮件的主题和邮件正文。  <br/> |X-CustomSpam：主题/正文中的敏感词  <br/> |
-|SPF 记录：硬失败|启用此设置时，未通过 SPF 检查的邮件（即从未在 SPF 记录中指定的 IP 地址发送的邮件）将被标记为垃圾邮件。建议为关注收到网络钓鱼邮件的组织启用该设置。  <br/> <br/> 测试模式对此选项不可用。  <br/> |X-CustomSpam：SPF 记录失败  <br/> |
-|有条件发件人 ID 筛选：硬失败  <br/> |启用此设置后，任何未通过有条件发件人 ID 检查的邮件将被标记为垃圾邮件。该选项组合了 SPF 检查与发件人 ID 检查，以提供保护，防止包含伪造发件人的邮件标题。  <br/> <br/> 测试模式对此选项不可用。  <br/> |X-CustomSpam：SPF 发件人记录失败  <br/> |
-|NDR 退信  <br/> |如果正在使用 EOP 保护本地邮箱，则启用本设置后，所有合法的未送达报告 (NDR) 邮件将传递到原始发件人，所有退信（不合法 NDR）邮件将被标记为垃圾邮件。如果不启用此设置，所有 NDR 仍将进行垃圾邮件筛选。在这种情况下，大部分合法邮件将传递到原始发件人，部分（不是全部）退信将被标记为垃圾邮件。然而，由于退信将传递到具有欺骗性质的发件人，因此未标记为垃圾邮件的退信将不会传递到原始发件人。  <br/> <br/> 如果您使用此服务来保护 Exchange Online 云托管邮箱，则不需要配置此设置。  <br/><br/> 对于这两种方案（内部部署和云托管邮箱），也无需为通过该服务发送的出站邮件启用此设置，因为会自动检测到合法退回邮件并将其传递给原始发件人的 Ndr。. >  测试模式对此选项不可用。           <br/><br/>提示：有关退信消息和 EOP 的详细信息，请参阅[退信 messages AND EOP](backscatter-messages-and-eop.md)。           |X-CustomSpam：退信消息 NDR  <br/> |
-|批量邮件|批量电子邮件的高级垃圾邮件筛选功能已停用，并替换为批量和电子邮件阈值设置。查看[垃圾邮件和批量邮件之间有什么差异？](what-s-the-difference-between-junk-email-and-bulk-email.md)和[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)，了解详细信息以及如何配置这些设置。  |X-X-customspam：批量邮件 | 批量邮件  <br/> |
+|**反垃圾邮件策略设置**|**说明**|**添加了 X 标头**|
+|**到远程站点的图像链接** <br/><br/> *IncreaseScoreWithImageLinks*|包含`<Img>`指向远程网站的 HTML 标记链接（例如，使用 http）的邮件被标记为垃圾邮件。|`X-CustomSpam: Image links to remote sites`|
+|**URL 重定向到其他端口** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|包含重定向到80（HTTP）以外的 TCP 端口、8080（备用 HTTP）或443（HTTPS）的超链接的邮件被标记为垃圾邮件。|`X-CustomSpam: URL redirect to other port`|
+|**URL 中的数字 IP 地址** <br/><br/> *IncreaseScoreWithNumericIps*|包含基于数字的 Url 的邮件（通常为 IP 地址）被标记为垃圾邮件。|`X-CustomSpam: Numeric IP in URL`|
+|**至 .biz 或 .info 网站的 URL** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|邮件正文中包含. .biz 或. info 链接的邮件被标记为垃圾邮件。|`X-CustomSpam: URL to .biz or .info websites`|
+|
+
+## <a name="mark-as-spam-settings"></a>标记为垃圾邮件设置
+
+以下 ASF 设置将检测到的邮件的 SCL 设置为9，这对应于**高可信度垃圾邮件**筛选程序判定和反垃圾邮件策略中的相应操作。
+
+||||
+|:-----|:-----|:-----|
+|**反垃圾邮件策略设置**|**说明**|**添加了 X 标头**|
+|**空邮件** <br/><br/> *MarkAsSpamEmptyMessages*|没有主题的邮件、邮件正文中没有内容，并且不会将任何附件标记为高可信度垃圾邮件。|`X-CustomSpam: Empty Message`|
+|**HTML 格式 的 JavaScript 或 VBScript** <br/><br/> *MarkAsSpamJavaScriptInHtml*|在 HTML 中使用 JavaScript 或 Visual Basic Script Edition 的邮件被标记为高可信度垃圾邮件。 <br/><br/> 这些脚本语言在电子邮件中用于导致特定操作自动发生。|`X-CustomSpam: Javascript or VBscript tags in HTML`|
+|**HTML 格式的 Frame 或 IFrame 标签** <br><br/> *MarkAsSpamFramesInHtml*|包含`<frame>`或`<iframe>` HTML 标记的邮件被标记为高可信度垃圾邮件。 <br/><br/> 这些标记在电子邮件中使用，以设置用于显示文本或图形的页面的格式。|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**HTML 格式的对象标记** <br><br/> *MarkAsSpamObjectTagsInHtml*|包含`<object>` HTML 标记的邮件被标记为高可信度垃圾邮件。 <br/><br/> 此标记允许插件或应用程序在 HTML 窗口中运行。|`X-CustomSpam: Object tag in html`|
+|**HTML 格式的嵌入式标记** <br><br/> *MarkAsSpamEmbedTagsInHtml*|包含`<embed>` HTML 标记的邮件被标记为高可信度垃圾邮件。 <br/><br/> 此标记允许在 HTML 文档中嵌入不同类型的不同类型的文档（例如，声音、电影或图片）。|`X-CustomSpam: Embed tag in html`|
+|**HTML 格式的表单标记** <br><br/> *MarkAsSpamFormTagsInHtml*|包含`<form>` HTML 标记的邮件被标记为高可信度垃圾邮件。 <br/><br/> 此标记用于创建网站表单。 电子邮件广告经常包含该标记，以获取收件人的信息。|`X-CustomSpam: Form tag in html`|
+|**HTML 格式的网络臭虫** <br><br/> *MarkAsSpamWebBugsInHtml*|*Web 错误*（也称为 " *web 信标*"）是电子邮件中使用的一个图形元素（通常是一个像素），用于确定邮件是否已阅读。 <br/><br/> 包含 web bug 的邮件被标记为高可信度垃圾邮件。 <br/><br/> 合法的新闻稿可能会使用 web 臭虫，尽管许多人认为这是 invasion 的隐私。 |`X-CustomSpam: Web bug`|
+|**应用敏感词列表** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft 维护一个动态但不可编辑的、与潜在攻击性邮件关联的单词列表。 <br/><br/> 包含主题或邮件正文中的敏感单词列表中的单词的邮件被标记为高可信度垃圾邮件。|`X-CustomSpam: Sensitive word in subject/body`|
+|**SPF 记录：硬失败** <br><br/> *MarkAsSpamSpfRecordHardFail*|从不在源电子邮件域的 DNS 中的 SPF 发件人策略框架（SPF）记录中指定的 IP 地址发送的邮件将被标记为高可信度垃圾邮件。 <br/><br/> 测试模式对此设置不可用。|`X-CustomSpam: SPF Record Fail`|
+|**有条件发件人 ID 筛选：硬失败** <br><br/> *MarkAsSpamFromAddressAuthFail*|硬失败的邮件条件发件人 ID 检查被标记为垃圾邮件。 <br/><br/> 此设置将 SPF 检查与发件人 ID 检查组合在一起，以帮助防止包含伪造发件人的邮件头。 <br/><br/> 测试模式对此设置不可用。|`X-CustomSpam: SPF From Record Fail`|
+|**NDR 退信** <br><br/> *MarkAsSpamNdrBackscatter*|*退信*是非送达报告（也称为 "ndr" 或 "退回邮件"），由电子邮件中的伪造发件人引起。 有关详细信息，请参阅[退信 messages AND EOP](backscatter-messages-and-eop.md)。 <br/><br/> 您无需在以下环境中配置此设置，因为会传递合法 Ndr，并且退信会被标记为垃圾邮件： <ul><li>使用 Exchange Online 邮箱的 Office 365 组织。</li><li>通过 EOP 路由*出站*电子邮件的内部部署电子邮件组织。</li></ul><br/> 在将入站电子邮件保护到本地邮箱的独立 EOP 环境中，打开或关闭此设置的结果如下： <ul><li> **打开**：将传递合法 ndr，并将退信标记为垃圾邮件。</li><li>**Off**：合法的 ndr 和退信通过正常的垃圾邮件筛选。 大多数合法的 Ndr 将传递给原始邮件发件人。 某些（而非全部）退信被标记为高可信度垃圾邮件。 根据定义，退信只能传递给欺骗性发件人，而不能传递给原始发件人。</li></ul><br/> 测试模式对此设置不可用。|`X-CustomSpam: Backscatter NDR`|
 |

@@ -19,12 +19,12 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: 即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection （EOP）保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅在由世纪互联运营的 Office 365 中分配管理员角色。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。
-ms.openlocfilehash: 714b5267bf89370885697701fc2b857d71224aa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8ff2e28100a748e34b8f079292d937cc9b3857e8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598800"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895283"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保护本地邮箱
 
@@ -61,9 +61,9 @@ ms.locfileid: "41598800"
 > [!TIP]
 > 将 SMTP 服务器上的设置配置 60 秒的连接时间。此设置在大多数情况下都可接受，例如，在发送带有很大附件的邮件时允许有些延迟。
 
-## <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>步骤 5：使用命令行管理程序确保垃圾邮件被路由到每个用户的垃圾邮件文件夹
+## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>第5步：确保垃圾邮件已路由到每个用户的 "垃圾邮件" 文件夹
 
-若要确保垃圾邮件被正确路由到每个用户的 "垃圾邮件" 文件夹，您必须执行几个配置步骤。 提供的步骤可[确保将垃圾邮件路由到每个用户的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 如果您不想将邮件移至每个用户的垃圾电子邮件文件夹，可以选择其他操作，方法是在 Exchange 管理中心编辑内容筛选策略。 有关详细信息，请参阅“[配置垃圾邮件筛选器策略](configure-your-spam-filter-policies.md)”。
+若要确保垃圾邮件被正确路由到每个用户的 "垃圾邮件" 文件夹，您必须执行几个配置步骤。 [配置独立 EOP 将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)中提供了这些步骤。 如果您不想将邮件移至每个用户的垃圾电子邮件文件夹，可以选择其他操作，方法是在 Exchange 管理中心编辑内容筛选策略。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步骤6：使用 Microsoft 365 管理中心将 MX 记录指向 EOP
 

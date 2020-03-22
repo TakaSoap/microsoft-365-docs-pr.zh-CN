@@ -1,12 +1,10 @@
 ---
 title: 在 Office 365 组中管理来宾访问
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Office 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610609"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894499"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>在 Office 365 组中管理来宾访问
 
@@ -50,11 +48,9 @@ ms.locfileid: "42610609"
 
 如果要启用或禁用组中的来宾访问，可以在 Microsoft 365 管理中心中执行此操作。
 
-1. 在 "管理中心" 中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务" & "加载项</a>" 页面。
-
-2. 选择 " **Office 365 组**"。
+1. 在管理中心中，转到 "**设置** \> "**设置**并选择 " **Office 365 组**"。
   
-3. 在 " **Office 365 组**" 页上，选择是否要让组织外部的用户访问组资源，或允许组所有者将组织外部的人员添加到组中。
+2. 在 " **Office 365 组**" 页上，选择是否要让组织外部的用户访问组资源，或允许组所有者将组织外部的人员添加到组中。
 
 ## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>从管理中心向 Office 365 组添加来宾
 
@@ -62,7 +58,7 @@ ms.locfileid: "42610609"
   
 1. 在 "管理中心" 中，转到 "**组** > **组**" 页面。
   
-2. 选择要向其添加来宾的组，然后选择 "**成员**" 选项卡上的 "**查看全部和管理成员**"。 
+2. 单击要向其添加来宾的组，然后选择 "**成员**" 选项卡上的 "**查看全部和管理成员**"。 
   
 4. 选择 "**添加成员**"，然后选择要添加的来宾的名称。
     
@@ -76,7 +72,7 @@ ms.locfileid: "42610609"
 
 如果要允许来宾访问大多数组，但要阻止来宾访问，则可以使用 Microsoft PowerShell 阻止对各个组的来宾访问。
 
-您必须使用预览版本的[Azure Active Directory PowerShell For Graph （AzureAD）](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) （模块名称**AzureADPreview**）更改组级别的来宾访问设置：
+您必须使用预览版本的[Azure Active Directory PowerShell For Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) （模块名称**AzureADPreview**）更改组级别的来宾访问设置：
 
 - 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)并按照说明安装公共预览版。
 
