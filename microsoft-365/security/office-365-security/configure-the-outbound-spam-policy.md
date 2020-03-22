@@ -1,11 +1,11 @@
 ---
-title: 配置出站垃圾邮件策略
+title: 配置出站垃圾邮件筛选
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/02/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,102 +16,484 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。
-ms.openlocfilehash: 0fa5ec23eee6144864f16b52d452d02f38b554d7
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: e788310ae8fd3c0da7f1a39fbba2dc0d6e369d30
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957337"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893878"
 ---
-# <a name="configure-the-outbound-spam-policy"></a><span data-ttu-id="0806e-103">配置出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="0806e-103">Configure the outbound spam policy</span></span>
+# <a name="configure-outbound-spam-filtering-in-office-365"></a><span data-ttu-id="d4c35-103">在 Office 365 中配置出站垃圾邮件筛选</span><span class="sxs-lookup"><span data-stu-id="d4c35-103">Configure outbound spam filtering in Office 365</span></span>
 
-<span data-ttu-id="0806e-104">如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。</span><span class="sxs-lookup"><span data-stu-id="0806e-104">Outbound spam filtering is always enabled if you use the service for sending outbound email, thereby protecting organizations using the service and their intended recipients.</span></span> <span data-ttu-id="0806e-105">与入站筛选类似，出站垃圾邮件筛选由连接筛选和内容筛选组成，并允许某些特定的控件处理出站邮件。</span><span class="sxs-lookup"><span data-stu-id="0806e-105">Similar to inbound filtering, outbound spam filtering is comprised of connection filtering and content filtering and allows some specific controls to handle outbound messages.</span></span> <span data-ttu-id="0806e-106">出站垃圾邮件筛选器策略设置类型：</span><span class="sxs-lookup"><span data-stu-id="0806e-106">Outbound spam filter policy settings types:</span></span>
+<span data-ttu-id="d4c35-104">如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，通过 EOP 发送的出站电子邮件将自动检查垃圾邮件和异常发送活动。</span><span class="sxs-lookup"><span data-stu-id="d4c35-104">If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, outbound email messages that are sent through EOP are automatically checked for spam and unusual sending activity.</span></span>
 
-- <span data-ttu-id="0806e-107">默认：使用默认出站垃圾邮件筛选器策略配置公司范围的出站垃圾邮件筛选器设置。</span><span class="sxs-lookup"><span data-stu-id="0806e-107">Default: The default outbound spam filter policy is used to configure company-wide outbound spam filter settings.</span></span> <span data-ttu-id="0806e-108">无法重命名此策略，并且其始终启用。</span><span class="sxs-lookup"><span data-stu-id="0806e-108">This policy can not be renamed and is always on.</span></span>
+<span data-ttu-id="d4c35-105">您组织中的用户的出站垃圾邮件通常表示已损坏的帐户。</span><span class="sxs-lookup"><span data-stu-id="d4c35-105">Outbound spam from a user in your organization typically indicates a compromised account.</span></span> <span data-ttu-id="d4c35-106">可疑的出站邮件被标记为垃圾邮件（无论垃圾邮件可信度或 SCL），并通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)进行路由，以帮助保护服务的声誉（即，将 Office 365 源电子邮件服务器从 IP 阻止列表中去除）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-106">Suspicious outbound messages are marked as spam (regardless of the spam confidence level or SCL) and are routed through the [high-risk delivery pool](high-risk-delivery-pool-for-outbound-messages.md) to help protect the reputation of the service (that is, keep Office 365 source email servers off of IP block lists).</span></span> <span data-ttu-id="d4c35-107">系统会自动通知管理员可疑的出站电子邮件活动，并通过[通知策略](../../compliance/alert-policies.md)阻止用户。</span><span class="sxs-lookup"><span data-stu-id="d4c35-107">Admins are automatically notified of suspicious outbound email activity and blocked users via [alert policies](../../compliance/alert-policies.md).</span></span>
 
-- <span data-ttu-id="0806e-109">自定义：自定义出站垃圾邮件筛选器策略可以精细并应用于组织中的特定用户、组或域。</span><span class="sxs-lookup"><span data-stu-id="0806e-109">Custom: Custom outbound spam filter policies can be granular and applied to specific users, groups, or domains in your organization.</span></span> <span data-ttu-id="0806e-110">自定义策略的优先级始终高于默认策略。</span><span class="sxs-lookup"><span data-stu-id="0806e-110">Custom policies always take precedence over the default policy.</span></span> <span data-ttu-id="0806e-111">您可以通过更改每个自定义策略的优先级来更改自定义策略的运行顺序;但是，如果用户匹配多个策略，则只有最高优先级（即最接近0的数字）策略适用。</span><span class="sxs-lookup"><span data-stu-id="0806e-111">You can change the order in which your custom policies run by changing the priority of each custom policy; however, only the highest priority (i.e. number closest to 0) policy will apply if the user matches multiple policies.</span></span>
+<span data-ttu-id="d4c35-108">EOP 使用出站垃圾邮件策略作为组织的整体防御垃圾邮件的一部分。</span><span class="sxs-lookup"><span data-stu-id="d4c35-108">EOP uses outbound spam policies as part of your organization's overall defense against spam.</span></span> <span data-ttu-id="d4c35-109">有关详细信息，请参阅[Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-109">For more information, see [Anti-spam protection in Office 365](anti-spam-protection.md).</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="0806e-112">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="0806e-112">What do you need to know before you begin?</span></span>
-<span data-ttu-id="0806e-113"><a name="sectionSection0"> </a></span><span class="sxs-lookup"><span data-stu-id="0806e-113"><a name="sectionSection0"> </a></span></span>
+<span data-ttu-id="d4c35-110">管理员可以查看、编辑和配置（但不能删除）默认的出站垃圾邮件策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-110">Admins can view, edit, and configure (but not delete) the default outbound spam policy.</span></span> <span data-ttu-id="d4c35-111">为了更细致，您还可以创建适用于组织中的特定用户、组或域的自定义出站垃圾邮件策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-111">For greater granularity, you can also create custom outbound spam policies that apply to specific users, groups, or domains in your organization.</span></span> <span data-ttu-id="d4c35-112">自定义策略的优先级通常高于默认策略，但您可以更改自定义策略的优先级（运行顺序）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-112">Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.</span></span>
 
-- <span data-ttu-id="0806e-114">估计完成时间：5 分钟</span><span class="sxs-lookup"><span data-stu-id="0806e-114">Estimated time to complete: 5 minutes</span></span>
+<span data-ttu-id="d4c35-113">您可以在 Office 365 安全 & 合规性中心或 PowerShell （Office 365 客户的 Exchange Online PowerShell 中配置出站垃圾邮件策略;适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-113">You can configure outbound spam policies in the Office 365 Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).</span></span>
 
-- <span data-ttu-id="0806e-115">您必须先获得权限，然后才能执行此过程或多个过程。</span><span class="sxs-lookup"><span data-stu-id="0806e-115">You need to be assigned permissions before you can perform this procedure or procedures.</span></span> <span data-ttu-id="0806e-116">若要查看所需的权限，请参阅 [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主题中的“反垃圾邮件”条目。</span><span class="sxs-lookup"><span data-stu-id="0806e-116">To see what permissions you need, see the "Anti-spam entry in the [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) topic.</span></span>
+## <a name="outbound-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a><span data-ttu-id="d4c35-114">Office 365 安全 & 合规性中心与 Exchange online PowerShell 或 Exchange Online Protection PowerShell 中的出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-114">Outbound spam policies in the Office 365 Security & Compliance Center vs Exchange Online PowerShell or Exchange Online Protection PowerShell</span></span>
 
-- <span data-ttu-id="0806e-117">您还可以在远程 PowerShell 中执行本主题中的过程。</span><span class="sxs-lookup"><span data-stu-id="0806e-117">You can also do the procedures in this topic in remote PowerShell.</span></span> <span data-ttu-id="0806e-118">使用[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) cmdlet 可查看您的设置，以及用于编辑出站垃圾邮件策略设置的[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) 。</span><span class="sxs-lookup"><span data-stu-id="0806e-118">Use the [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) cmdlet to review your settings, and the [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) to edit your outbound spam policy settings.</span></span>
+<span data-ttu-id="d4c35-115">EOP 中的出站垃圾邮件策略的基本元素为：</span><span class="sxs-lookup"><span data-stu-id="d4c35-115">The basic elements of an outbound spam policy in EOP are:</span></span>
 
-  <span data-ttu-id="0806e-119">若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="0806e-119">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="0806e-120">若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="0806e-120">To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
+- <span data-ttu-id="d4c35-116">**出站垃圾邮件筛选器策略**：指定出站垃圾邮件筛选 verdicts 和通知选项的操作。</span><span class="sxs-lookup"><span data-stu-id="d4c35-116">**The outbound spam filter policy**: Specifies the actions for outbound spam filtering verdicts and the notification options.</span></span>
 
-## <a name="use-the-security--compliance-center-scc-to-edit-the-default-outbound-spam-policy"></a><span data-ttu-id="0806e-121">使用安全 & 合规性中心（SCC）编辑默认的出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="0806e-121">Use the Security & Compliance Center (SCC) to edit the default outbound spam policy</span></span>
+- <span data-ttu-id="d4c35-117">**出站垃圾邮件筛选器规则**：指定出站垃圾邮件筛选器策略的优先级和收件人筛选器（策略应用于的人）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-117">**The outbound spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a outbound spam filter policy.</span></span>
 
-<span data-ttu-id="0806e-122">使用以下步骤编辑默认出站垃圾邮件策略：</span><span class="sxs-lookup"><span data-stu-id="0806e-122">Use the following procedure to edit the default outbound spam policy:</span></span>
+<span data-ttu-id="d4c35-118">在安全 & 合规中心中管理出站垃圾邮件策略时，这两个元素之间的差异并不明显：</span><span class="sxs-lookup"><span data-stu-id="d4c35-118">The difference between these two elements isn't obvious when you manage outbound spam polices in the Security & Compliance Center:</span></span>
 
-### <a name="to-configure-the-default-outbound-spam-policy"></a><span data-ttu-id="0806e-123">要配置默认出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="0806e-123">To configure the default outbound spam policy</span></span>
+- <span data-ttu-id="d4c35-119">在安全 & 合规中心创建出站垃圾邮件策略时，实际上是创建出站垃圾邮件筛选器规则，同时为两者使用相同的名称创建相关联的出站垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-119">When you create an outbound spam policy in the Security & Compliance Center, you're actually creating a outbound spam filter rule and the associated outbound spam filter policy at the same time using the same name for both.</span></span>
 
-1. <span data-ttu-id="0806e-124">在 SCC 中，导航到 "**威胁管理** \> **策略** \> **反垃圾邮件**"</span><span class="sxs-lookup"><span data-stu-id="0806e-124">In the SCC, navigate to **Threat Management** \> **Policy** \> **Anti-spam**</span></span>
+- <span data-ttu-id="d4c35-120">在安全 & 合规中心中修改出站垃圾邮件策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改出站垃圾邮件筛选规则。</span><span class="sxs-lookup"><span data-stu-id="d4c35-120">When you modify an outbound spam policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the outbound spam filter rule.</span></span> <span data-ttu-id="d4c35-121">所有其他设置修改关联的出站垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-121">All other settings modify the associated outbound spam filter policy.</span></span>
 
-2. <span data-ttu-id="0806e-125">展开 "**出站垃圾邮件筛选器策略（永不打开）** " 部分，然后单击 "**编辑策略**"。</span><span class="sxs-lookup"><span data-stu-id="0806e-125">Expand the **Outbound spam filter policy (always ON)** section and click **Edit policy**.</span></span>
+- <span data-ttu-id="d4c35-122">从安全 & 合规中心删除出站垃圾邮件策略时，将删除出站垃圾邮件筛选器规则和关联的出站垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-122">When you remove an outbound spam policy from the Security & Compliance Center, the outbound spam filter rule and the associated outbound spam filter policy are removed.</span></span>
 
-3. <span data-ttu-id="0806e-126">展开 "**通知**" 部分，选择以下与出站邮件相关的复选框，然后选择 "**添加人员**"，在附带的对话框中添加关联的电子邮件地址或地址。</span><span class="sxs-lookup"><span data-stu-id="0806e-126">Expand the **Notifications** section and select the following check boxes pertaining to outbound messages, then select **Add people** to add an associated email address or addresses in the accompanying dialog box.</span></span> <span data-ttu-id="0806e-127">（如果它们解析为有效的 SMTP 目标，它们可以是通讯组列表）：</span><span class="sxs-lookup"><span data-stu-id="0806e-127">(these can be distribution lists if they resolve as valid SMTP destinations):</span></span>
+<span data-ttu-id="d4c35-123">在 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中，出站垃圾邮件筛选器策略和出站垃圾邮件筛选器规则之间的差异很明显。</span><span class="sxs-lookup"><span data-stu-id="d4c35-123">In Exchange Online PowerShell or standalone Exchange Online Protection PowerShell, the difference between outbound spam filter policies and outbound spam filter rules is apparent.</span></span> <span data-ttu-id="d4c35-124">您可以使用\*\* \*-set-hostedcontentfilterpolicy\*\* cmdlet 管理出站垃圾邮件筛选器策略，还可以使用\*\* \*-disable-hostedcontentfilterrule\*\* cmdlet 管理出站垃圾邮件筛选器规则。</span><span class="sxs-lookup"><span data-stu-id="d4c35-124">You manage outbound spam filter policies by using the **\*-HostedContentFilterPolicy** cmdlets, and you manage outbound spam filter rules by using the **\*-HostedContentFilterRule** cmdlets.</span></span>
 
-   - <span data-ttu-id="0806e-128">将**所有可疑的出站电子邮件的副本发送到以下电子邮件地址或地址**：这些邮件被筛选器标记为垃圾邮件（无论 SCL 分级如何）。</span><span class="sxs-lookup"><span data-stu-id="0806e-128">**Send a copy of all suspicious outbound email messages to the following email address or addresses**: These are messages that are marked as spam by the filter (regardless of the SCL rating).</span></span> <span data-ttu-id="0806e-129">它们未被筛选器拒绝，但是将通过高风险传输工具路由。</span><span class="sxs-lookup"><span data-stu-id="0806e-129">They are not rejected by the filter but are routed through the higher risk delivery pool.</span></span> <span data-ttu-id="0806e-130">用分号分隔多个地址。</span><span class="sxs-lookup"><span data-stu-id="0806e-130">Separate multiple addresses with a semicolon.</span></span> <span data-ttu-id="0806e-131">请注意，指定的收件人将作为密件抄送 (Bcc) 地址接收邮件（"发件人"和"收件人"字段是原始的发件人和收件人）。</span><span class="sxs-lookup"><span data-stu-id="0806e-131">Note that the recipients specified will receive the messages as a Blind carbon copy (Bcc) address (the From and To fields are the original sender and recipient).</span></span>
+- <span data-ttu-id="d4c35-125">在 PowerShell 中，先创建出站垃圾邮件筛选器策略，然后创建出站垃圾邮件筛选器规则，以标识应用该规则的策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-125">In PowerShell, you create the outbound spam filter policy first, then you create the outbound spam filter rule that identifies the policy that the rule applies to.</span></span>
 
-   - <span data-ttu-id="0806e-132">**当发件人被阻止发送出站垃圾邮件时，向以下电子邮件地址发送通知**：使用分号分隔多个地址。</span><span class="sxs-lookup"><span data-stu-id="0806e-132">**Send a notification to the following email address when a sender is blocked sending outbound spam**: Separate multiple addresses with a semicolon.</span></span>
+- <span data-ttu-id="d4c35-126">在 PowerShell 中，可以单独修改出站垃圾邮件筛选器策略和出站垃圾邮件筛选器规则中的设置。</span><span class="sxs-lookup"><span data-stu-id="d4c35-126">In PowerShell, you modify the settings in the outbound spam filter policy and the outbound spam filter rule separately.</span></span>
 
-   <span data-ttu-id="0806e-133">当从特定用户检测到大量垃圾邮件或其他发送异常时，将限制该用户发送电子邮件，并将通知发送到指定的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="0806e-133">When a significant amount of spam or other sending anomalies are detected from a particular user, the user is restricted from sending email messages and a notification is sent to the email addresses specified.</span></span>
+- <span data-ttu-id="d4c35-127">从 PowerShell 删除出站垃圾邮件筛选器策略时，不会自动删除相应的出站垃圾邮件筛选器规则，反之亦然。</span><span class="sxs-lookup"><span data-stu-id="d4c35-127">When you remove a outbound spam filter policy from PowerShell, the corresponding outbound spam filter rule isn't automatically removed, and vice versa.</span></span>
 
-   <span data-ttu-id="0806e-134">使用该设置指定的域管理员将收到该用户的出站邮件被阻止的通知。</span><span class="sxs-lookup"><span data-stu-id="0806e-134">The administrator for the domain, who is specified using this setting, will be informed that outbound messages are blocked for this user.</span></span>  <span data-ttu-id="0806e-135">若要查看此通知的样式，请参阅[发件人被阻止发送出站垃圾邮件时的示例通知](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)。</span><span class="sxs-lookup"><span data-stu-id="0806e-135">To see what this notification looks like, see [Sample notification when a sender is blocked sending outbound spam](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).</span></span>
+### <a name="default-outbound-spam-policy"></a><span data-ttu-id="d4c35-128">默认出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-128">Default outbound spam policy</span></span>
 
-   > [!NOTE]
-   > <span data-ttu-id="0806e-136">还会生成一个系统警报，指示用户已受到限制。</span><span class="sxs-lookup"><span data-stu-id="0806e-136">A system alert is also generated indicating the user has been restricted.</span></span> <span data-ttu-id="0806e-137">若要了解有关警报以及如何恢复用户的详细信息，请参阅[发送垃圾电子邮件后，从受限用户门户中删除用户](removing-user-from-restricted-users-portal-after-spam.md)。</span><span class="sxs-lookup"><span data-stu-id="0806e-137">To learn more about the alert and how to recover the user, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).</span></span>
+<span data-ttu-id="d4c35-129">每个组织都有一个名为 Default 的内置出站垃圾邮件策略，其中包含以下属性：</span><span class="sxs-lookup"><span data-stu-id="d4c35-129">Every organization has a built-in outbound spam policy named Default that has these properties:</span></span>
 
-4. <span data-ttu-id="0806e-138">展开 "**收件人限制**" 部分，指定用户可以向其发送的最大收件人数、内部和外部收件人的每小时收件人数以及每天的最大数量。</span><span class="sxs-lookup"><span data-stu-id="0806e-138">Expand the **Recipient limits** section to specify the maximum number of recipients that a user can send to, per hour for internal and external recipients together with the maximum number per day.</span></span>
+- <span data-ttu-id="d4c35-130">名为 "默认" 的出站垃圾邮件筛选器策略将应用于组织中的所有收件人，即使没有与该策略关联的出站垃圾邮件筛选器规则（收件人筛选器）也是如此。</span><span class="sxs-lookup"><span data-stu-id="d4c35-130">The outbound spam filter policy named Default is applied to all recipients in the organization, even though there's no outbound spam filter rule (recipient filters) associated with the policy.</span></span>
 
-   > [!NOTE]
-   > <span data-ttu-id="0806e-139">任何输入的最大数量为10000。</span><span class="sxs-lookup"><span data-stu-id="0806e-139">The maximum number for any input is 10000.</span></span> <span data-ttu-id="0806e-140">有关详细信息，请参阅[Exchange online 中的接收和发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)</span><span class="sxs-lookup"><span data-stu-id="0806e-140">For more information see [receiving and sending limits within Exchange online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)</span></span>
+- <span data-ttu-id="d4c35-131">名为 "默认" 的策略的自定义优先级值为 "**最低**"，您不能修改（该策略总是最后应用）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-131">The policy named Default has the custom priority value **Lowest** that you can't modify (the policy is always applied last).</span></span> <span data-ttu-id="d4c35-132">您创建的任何自定义策略的优先级始终高于名为 "默认" 的策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-132">Any custom policies that you create always have a higher priority than the policy named Default.</span></span>
 
-7. <span data-ttu-id="0806e-141">指定当用户超过指定限制时要执行的**操作**。</span><span class="sxs-lookup"><span data-stu-id="0806e-141">Specify the **action** to take when a user exceeds the specified limits.</span></span>  <span data-ttu-id="0806e-142">可能的操作如下所示：</span><span class="sxs-lookup"><span data-stu-id="0806e-142">The actions that are possible are as follows:</span></span>
+- <span data-ttu-id="d4c35-133">名为 Default 的策略是默认策略（ **IsDefault**属性具有值`True`），不能删除默认策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-133">The policy named Default is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.</span></span>
 
-   - <span data-ttu-id="0806e-143">**限制用户在以下日期之前发送邮件**。</span><span class="sxs-lookup"><span data-stu-id="0806e-143">**Restrict the user from sending mail till the following day**.</span></span>  <span data-ttu-id="0806e-144">一旦超出任何发送限制（内部、外部或每日），将为管理员生成一个警报，并且用户将无法在下一天（基于 UTC 时间）发送任何后续电子邮件。</span><span class="sxs-lookup"><span data-stu-id="0806e-144">Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the following day, based on UTC time.</span></span> <span data-ttu-id="0806e-145">管理员无法替代此块。</span><span class="sxs-lookup"><span data-stu-id="0806e-145">There is no way for the administrator to override this block.</span></span>
+<span data-ttu-id="d4c35-134">若要提高出站垃圾邮件筛选的有效性，可以使用应用于特定用户或用户组的更严格的设置来创建自定义出站垃圾邮件策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-134">To increase the effectiveness of outbound spam filtering, you can create custom outbound spam policies with stricter settings that are applied to specific users or groups of users.</span></span>
 
-   - <span data-ttu-id="0806e-146">**限制用户发送邮件**。</span><span class="sxs-lookup"><span data-stu-id="0806e-146">**Restrict the user from sending mail**.</span></span>  <span data-ttu-id="0806e-147">一旦超出任何发送限制（内部、外部或每日），将为管理员生成一个警报，并且在管理员删除此限制之前，用户将无法再发送任何电子邮件。</span><span class="sxs-lookup"><span data-stu-id="0806e-147">Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the administrator removes the restriction.</span></span>  <span data-ttu-id="0806e-148">在这些情况下，将在 "[受限用户" 页](removing-user-from-restricted-users-portal-after-spam.md)上列出用户。</span><span class="sxs-lookup"><span data-stu-id="0806e-148">In these cases the user will be listed on the [Restricted Users page](removing-user-from-restricted-users-portal-after-spam.md).</span></span>  <span data-ttu-id="0806e-149">从列表中删除后，将不会在那天再次限制用户。</span><span class="sxs-lookup"><span data-stu-id="0806e-149">Once removed from the list the user will not be restricted again for that day.</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="d4c35-135">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="d4c35-135">What do you need to know before you begin?</span></span>
 
-   - <span data-ttu-id="0806e-150">**不执行任何操作/警报**。</span><span class="sxs-lookup"><span data-stu-id="0806e-150">**No Action/Alert only**.</span></span> <span data-ttu-id="0806e-151">一旦超出任何发送限制（内部、外部或每日），将为管理员生成警报，但不会执行任何操作来限制用户。</span><span class="sxs-lookup"><span data-stu-id="0806e-151">Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin but no action will be taken to restrict the user.</span></span>
+- <span data-ttu-id="d4c35-136">你可以在上<https://protection.office.com/>打开安全 & 合规性中心。</span><span class="sxs-lookup"><span data-stu-id="d4c35-136">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="d4c35-137">若要直接转到**反垃圾邮件设置**页，请<https://protection.office.com/antispam>使用。</span><span class="sxs-lookup"><span data-stu-id="d4c35-137">To go directly to the **Anti-spam settings** page, use <https://protection.office.com/antispam>.</span></span>
 
-6. <span data-ttu-id="0806e-152">展开 "**应用**于" 部分，然后创建基于条件的规则，以指定要向其应用此策略的用户、组和域。</span><span class="sxs-lookup"><span data-stu-id="0806e-152">Expand the **Applies to** section and then create a condition-based rule to specify the users, groups, and domains to which to apply this policy.</span></span> <span data-ttu-id="0806e-153">可以创建多个唯一性条件。</span><span class="sxs-lookup"><span data-stu-id="0806e-153">You can create multiple conditions, if they are unique.</span></span>  <span data-ttu-id="0806e-154">注意：如果指定了多个条件，则用户必须满足所有条件。</span><span class="sxs-lookup"><span data-stu-id="0806e-154">Note: that users must meet all the conditions when multiple conditions are specified.</span></span>  
+- <span data-ttu-id="d4c35-138">若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-138">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="d4c35-139">若要连接到独立的 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-139">To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
 
-   - <span data-ttu-id="0806e-155">若要选择用户，请选择 **"发件人为"**。</span><span class="sxs-lookup"><span data-stu-id="0806e-155">To select users, select **The sender is**.</span></span> <span data-ttu-id="0806e-156">在随后的对话框中，从用户选取器列表中选择一个或多个公司的发件人，然后单击“添加”。</span><span class="sxs-lookup"><span data-stu-id="0806e-156">In the subsequent dialog box, select one or more senders from your company from the user picker list, and then click add.</span></span> <span data-ttu-id="0806e-157">若要添加列表中没有的发件人，请键入他们的电子邮件地址，并单击“检查姓名”。</span><span class="sxs-lookup"><span data-stu-id="0806e-157">To add senders who aren't on the list, type their email addresses, and then click Check names.</span></span> <span data-ttu-id="0806e-158">完成选择后，单击“确定”返回主屏幕。</span><span class="sxs-lookup"><span data-stu-id="0806e-158">When you are done making your selections, click ok to return to the main screen.</span></span>
+- <span data-ttu-id="d4c35-140">您需要先分配权限，然后才能执行这些过程。</span><span class="sxs-lookup"><span data-stu-id="d4c35-140">You need to be assigned permissions before you can perform these procedures.</span></span> <span data-ttu-id="d4c35-141">若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="d4c35-141">To add, modify, and delete outbound spam policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.</span></span> <span data-ttu-id="d4c35-142">若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="d4c35-142">For read-only access to outbound spam policies, you need to be a member of the **Security Reader** role group.</span></span> <span data-ttu-id="d4c35-143">有关安全 & 合规中心中的角色组的详细信息，请参阅[Office 365 安全 & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-143">For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-   - <span data-ttu-id="0806e-159">若要选择组，请选择 **"发件人是" 的成员**。</span><span class="sxs-lookup"><span data-stu-id="0806e-159">To select groups, select **The sender is a member of**.</span></span> <span data-ttu-id="0806e-160">然后，在随后出现的对话框中选择或指定组。</span><span class="sxs-lookup"><span data-stu-id="0806e-160">Then, in the subsequent dialog box, select or specify the groups.</span></span> <span data-ttu-id="0806e-161">单击"确定"返回到主屏幕。</span><span class="sxs-lookup"><span data-stu-id="0806e-161">Click ok to return to the main screen.</span></span>
+- <span data-ttu-id="d4c35-144">有关出站垃圾邮件策略的建议设置，请参阅[EOP 出站垃圾邮件筛选器策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-144">For our recommended settings for outbound spam policies, see [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).</span></span>
 
-   - <span data-ttu-id="0806e-162">若要选择域，请选择 **"发件人域为"**。</span><span class="sxs-lookup"><span data-stu-id="0806e-162">To select domains, select **The sender domain is**.</span></span> <span data-ttu-id="0806e-163">然后，在随后出现的对话框中添加域。</span><span class="sxs-lookup"><span data-stu-id="0806e-163">Then, in the subsequent dialog box, add the domains.</span></span> <span data-ttu-id="0806e-164">单击"确定"返回到主屏幕。</span><span class="sxs-lookup"><span data-stu-id="0806e-164">Click ok to return to the main screen.</span></span>
+- <span data-ttu-id="d4c35-145">已**超过电子邮件发送限制**的默认[警报策略](../../compliance/alert-policies.md)，**检测到可疑的电子邮件发送模式**，并且**限制发送电子邮件的用户**已将电子邮件通知发送给**TenantAdmins** （**全局管理员**）组的成员，这是关于异常出站电子邮件活动和由于出站垃圾邮件而阻止的用户。</span><span class="sxs-lookup"><span data-stu-id="d4c35-145">The default [alert policies](../../compliance/alert-policies.md) named **Email sending limit exceeded**, **Suspicious email sending patterns detected**, and **User restricted from sending email** already send email notifications to members of the **TenantAdmins** (**Global admins**) group about unusual outbound email activity and blocked users due to outbound spam.</span></span> <span data-ttu-id="d4c35-146">有关详细信息，请参阅[验证受限制用户的通知设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-146">For more information, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).</span></span> <span data-ttu-id="d4c35-147">我们建议您使用这些通知策略，而不是在出站垃圾邮件策略中的通知选项。</span><span class="sxs-lookup"><span data-stu-id="d4c35-147">We recommend that you use these alert policies instead of the the notification options in outbound spam policies.</span></span>
 
-   <span data-ttu-id="0806e-165">可以在规则中创建例外。</span><span class="sxs-lookup"><span data-stu-id="0806e-165">You can create exceptions within the rule.</span></span> <span data-ttu-id="0806e-166">例如，可以筛选来自除某个域之外的所有域的邮件。</span><span class="sxs-lookup"><span data-stu-id="0806e-166">For example, you can filter messages from all domains except for a certain domain.</span></span> <span data-ttu-id="0806e-167">单击“添加例外”，然后创建例外条件，此过程与创建其他条件的方法类似。</span><span class="sxs-lookup"><span data-stu-id="0806e-167">Click add exception, and then create your exception conditions similar to the way that you created the other conditions.</span></span>
+## <a name="use-the-security--compliance-center-to-create-outbound-spam-policies"></a><span data-ttu-id="d4c35-148">使用安全 & 合规性中心创建出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-148">Use the Security & Compliance Center to create outbound spam policies</span></span>
 
-   <span data-ttu-id="0806e-168">仅支持启用邮件的安全组将出站垃圾邮件策略应用于组。</span><span class="sxs-lookup"><span data-stu-id="0806e-168">Applying an outbound spam policy to a group is supported only for Mail Enabled Security Groups.</span></span>
+<span data-ttu-id="d4c35-149">在安全 & 合规中心中创建自定义出站垃圾邮件策略将同时为两者创建垃圾邮件筛选器规则和关联的垃圾邮件筛选器策略，同时使用相同的名称。</span><span class="sxs-lookup"><span data-stu-id="d4c35-149">Creating a custom outbound spam policy in the Security & Compliance Center creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.</span></span>
 
-7. <span data-ttu-id="0806e-169">单击“保存”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="0806e-169">Click **save**.</span></span>
+1. <span data-ttu-id="d4c35-150">在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **反垃圾邮件**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-150">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.</span></span>
 
-## <a name="to-create-a-custom-policy-for-a-specific-set-of-users"></a><span data-ttu-id="0806e-170">为一组特定用户创建自定义策略</span><span class="sxs-lookup"><span data-stu-id="0806e-170">To create a custom policy for a specific set of users</span></span>
+2. <span data-ttu-id="d4c35-151">在 "**反垃圾邮件设置**" 页上，单击 "**创建出站策略**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-151">On the **Anti-spam settings** page, click **Create an outbound policy**.</span></span>
 
-1. <span data-ttu-id="0806e-171">在 SCC 中，导航到 "**威胁管理** \> **策略** \> **反垃圾邮件**"</span><span class="sxs-lookup"><span data-stu-id="0806e-171">In the SCC, navigate to **Threat Management** \> **Policy** \> **Anti-spam**</span></span>
+3. <span data-ttu-id="d4c35-152">在打开的**出站垃圾邮件筛选器策略**飞出后，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="d4c35-152">In the **Outbound spam filter policy** fly out that opens, configure the following settings:</span></span>
 
-2. <span data-ttu-id="0806e-172">单击 "**创建出站策略**" 按钮。</span><span class="sxs-lookup"><span data-stu-id="0806e-172">Click on the **Create an outbound policy** button.</span></span>
+   - <span data-ttu-id="d4c35-153">**名称**：输入策略的唯一描述性名称。</span><span class="sxs-lookup"><span data-stu-id="d4c35-153">**Name**: Enter a unique, descriptive name for the policy.</span></span>
 
-3. <span data-ttu-id="0806e-173">展开 "**通知**" 部分，选择以下与出站邮件相关的复选框，然后选择 "**添加人员**"，在附带的对话框中添加关联的电子邮件地址或地址。</span><span class="sxs-lookup"><span data-stu-id="0806e-173">Expand the **Notifications** section and select the following check boxes pertaining to outbound messages, then select **Add people** to add an associated email address or addresses in the accompanying dialog box.</span></span>
+   - <span data-ttu-id="d4c35-154">**说明**：输入策略的可选说明。</span><span class="sxs-lookup"><span data-stu-id="d4c35-154">**Description**: Enter an optional description for the policy.</span></span>
 
-4. <span data-ttu-id="0806e-174">展开 "**收件人限制**" 部分，指定用户可以向其发送的收件人的最大数量、内部和外部收件人的每小时以及每日最大数量。</span><span class="sxs-lookup"><span data-stu-id="0806e-174">Expand the **Recipient limits** section to specify the maximum number of recipients that a user can send to, per hour for internal and external recipients and maximum number per day.</span></span>
+4. <span data-ttu-id="d4c35-155">Optional展开 "**通知**" 部分，配置应接收可疑出站电子邮件的副本和通知的其他用户：</span><span class="sxs-lookup"><span data-stu-id="d4c35-155">(Optional) Expand the **Notifications** section to configure additional users who should receive copies and notifications of suspicious outbound email messages:</span></span>
 
-7. <span data-ttu-id="0806e-175">指定当用户超过指定限制时要执行的**操作**。</span><span class="sxs-lookup"><span data-stu-id="0806e-175">Specify the **action** to take when a user exceeds the specified limits.</span></span>
+   - <span data-ttu-id="d4c35-156">向**特定人员发送可疑的出站电子邮件的副本**：此设置将指定的用户添加为可疑的出站邮件的密件抄送收件人。</span><span class="sxs-lookup"><span data-stu-id="d4c35-156">**Send a copy of suspicious outbound email messages to specific people**: This setting adds the specified users as Bcc recipients to the suspicious outbound messages.</span></span> <span data-ttu-id="d4c35-157">要启用此设置，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="d4c35-157">To enable this setting:</span></span>
 
-6. <span data-ttu-id="0806e-176">展开 "**应用**于" 部分并创建基于条件的规则，以指定要向其应用此策略的用户、组和域。</span><span class="sxs-lookup"><span data-stu-id="0806e-176">Expand the **Applies to** section and create a condition-based rule to specify the users, groups, and domains to which to apply this policy.</span></span> <span data-ttu-id="0806e-177">可以创建多个唯一性条件。</span><span class="sxs-lookup"><span data-stu-id="0806e-177">You can create multiple conditions, if they are unique.</span></span>  
+     <span data-ttu-id="d4c35-158">a.</span><span class="sxs-lookup"><span data-stu-id="d4c35-158">a.</span></span> <span data-ttu-id="d4c35-159">选中该复选框以启用该设置。</span><span class="sxs-lookup"><span data-stu-id="d4c35-159">Select the check box to enable the setting.</span></span>
 
-8. <span data-ttu-id="0806e-178">单击 "**保存**"</span><span class="sxs-lookup"><span data-stu-id="0806e-178">Click **save**</span></span>
+     <span data-ttu-id="d4c35-160">b.</span><span class="sxs-lookup"><span data-stu-id="d4c35-160">b.</span></span> <span data-ttu-id="d4c35-161">单击 "**添加人员**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-161">Click **Add people**.</span></span> <span data-ttu-id="d4c35-162">在显示的 "**添加或删除收件人**" 浮出控件中：</span><span class="sxs-lookup"><span data-stu-id="d4c35-162">In the **Add or remove recipients** flyout that appears:</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="0806e-179">更多信息</span><span class="sxs-lookup"><span data-stu-id="0806e-179">For more information</span></span>
+     <span data-ttu-id="d4c35-163">c.</span><span class="sxs-lookup"><span data-stu-id="d4c35-163">c.</span></span> <span data-ttu-id="d4c35-164">输入发件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="d4c35-164">Enter the sender's email address.</span></span> <span data-ttu-id="d4c35-165">可以指定用分号分隔的多个电子邮件地址（;)或每行一个收件人。</span><span class="sxs-lookup"><span data-stu-id="d4c35-165">You can specify multiple email addresses separated by semicolons (;) or one recipient per line.</span></span>
 
-[<span data-ttu-id="0806e-180">发送垃圾电子邮件后，从受限用户门户删除用户</span><span class="sxs-lookup"><span data-stu-id="0806e-180">Removing a user from the Restricted Users portal after sending spam email</span></span>](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+     <span data-ttu-id="d4c35-166">d.</span><span class="sxs-lookup"><span data-stu-id="d4c35-166">d.</span></span> <span data-ttu-id="d4c35-167">单击</span><span class="sxs-lookup"><span data-stu-id="d4c35-167">Click</span></span> ![添加图标](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) <span data-ttu-id="d4c35-169">添加收件人。</span><span class="sxs-lookup"><span data-stu-id="d4c35-169">to add the recipients.</span></span>
 
-[<span data-ttu-id="0806e-181">出站邮件的高风险传递池</span><span class="sxs-lookup"><span data-stu-id="0806e-181">High-risk delivery pool for outbound messages</span></span>](high-risk-delivery-pool-for-outbound-messages.md)
+        <span data-ttu-id="d4c35-170">根据需要重复这些步骤多次。</span><span class="sxs-lookup"><span data-stu-id="d4c35-170">Repeat these steps as many times as necessary.</span></span>
 
-[<span data-ttu-id="0806e-182">反垃圾邮件保护常见问题</span><span class="sxs-lookup"><span data-stu-id="0806e-182">Anti-spam protection FAQ</span></span>](anti-spam-protection-faq.md)
+        <span data-ttu-id="d4c35-171">您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。</span><span class="sxs-lookup"><span data-stu-id="d4c35-171">The recipients you added appear in the **Recipient list** section on the flyout.</span></span> <span data-ttu-id="d4c35-172">若要删除收件人，请![单击 "](../../media/scc-remove-icon.png)删除" 按钮。</span><span class="sxs-lookup"><span data-stu-id="d4c35-172">To delete a recipient, click ![Remove button](../../media/scc-remove-icon.png).</span></span>
+
+     <span data-ttu-id="d4c35-173">e.</span><span class="sxs-lookup"><span data-stu-id="d4c35-173">e.</span></span> <span data-ttu-id="d4c35-174">完成后，单击“保存”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d4c35-174">When you're finished, click **Save**.</span></span>
+
+     <span data-ttu-id="d4c35-175">若要禁用此设置，请清除该复选框。</span><span class="sxs-lookup"><span data-stu-id="d4c35-175">To disable this setting, clear the check box.</span></span>
+
+   - <span data-ttu-id="d4c35-176">**如果发件人因发送出站垃圾邮件而被阻止，请通知特定人员**：</span><span class="sxs-lookup"><span data-stu-id="d4c35-176">**Notify specific people if a sender is blocked due to sending outbound spam**:</span></span>
+
+     > [!NOTE]
+     > <span data-ttu-id="d4c35-177">当用户因超出 "**收件人限制**" 部分中的限制而被阻止时，名为 "**用户限制发往发送电子邮件**" 的默认[通知策略](../../compliance/alert-policies.md)将已向**TenantAdmins** （**全局管理员**）组的成员发送电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="d4c35-177">The default [alert policy](../../compliance/alert-policies.md) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section.</span></span> <span data-ttu-id="d4c35-178">我们建议您在出站垃圾邮件策略中使用通知策略而不是此设置来通知管理员和其他用户。</span><span class="sxs-lookup"><span data-stu-id="d4c35-178">We recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users.</span></span> <span data-ttu-id="d4c35-179">有关说明，请参阅[验证受限制用户的通知设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-179">For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).</span></span>
+
+     <span data-ttu-id="d4c35-180">要启用此设置，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="d4c35-180">To enable this setting:</span></span>
+
+     <span data-ttu-id="d4c35-181">a.</span><span class="sxs-lookup"><span data-stu-id="d4c35-181">a.</span></span> <span data-ttu-id="d4c35-182">选中该复选框以启用该设置。</span><span class="sxs-lookup"><span data-stu-id="d4c35-182">Select the check box to enable the setting.</span></span>
+
+     <span data-ttu-id="d4c35-183">b.</span><span class="sxs-lookup"><span data-stu-id="d4c35-183">b.</span></span> <span data-ttu-id="d4c35-184">单击 "**添加人员**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-184">Click **Add people**.</span></span> <span data-ttu-id="d4c35-185">在显示的 "**添加或删除收件人**" 浮出控件中：</span><span class="sxs-lookup"><span data-stu-id="d4c35-185">In the **Add or remove recipients** flyout that appears:</span></span>
+
+     <span data-ttu-id="d4c35-186">c.</span><span class="sxs-lookup"><span data-stu-id="d4c35-186">c.</span></span> <span data-ttu-id="d4c35-187">输入发件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="d4c35-187">Enter the sender's email address.</span></span> <span data-ttu-id="d4c35-188">可以指定用分号分隔的多个电子邮件地址（;)或每行一个收件人。</span><span class="sxs-lookup"><span data-stu-id="d4c35-188">You can specify multiple email addresses separated by semicolons (;) or one recipient per line.</span></span>
+
+     <span data-ttu-id="d4c35-189">d.</span><span class="sxs-lookup"><span data-stu-id="d4c35-189">d.</span></span> <span data-ttu-id="d4c35-190">单击</span><span class="sxs-lookup"><span data-stu-id="d4c35-190">Click</span></span> ![添加图标](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) <span data-ttu-id="d4c35-192">添加收件人。</span><span class="sxs-lookup"><span data-stu-id="d4c35-192">to add the recipients.</span></span>
+
+        <span data-ttu-id="d4c35-193">根据需要重复这些步骤多次。</span><span class="sxs-lookup"><span data-stu-id="d4c35-193">Repeat these steps as many times as necessary.</span></span>
+
+        <span data-ttu-id="d4c35-194">您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。</span><span class="sxs-lookup"><span data-stu-id="d4c35-194">The recipients you added appear in the **Recipient list** section on the flyout.</span></span> <span data-ttu-id="d4c35-195">若要删除收件人，请![单击 "](../../media/scc-remove-icon.png)删除" 按钮。</span><span class="sxs-lookup"><span data-stu-id="d4c35-195">To delete a recipient, click ![Remove button](../../media/scc-remove-icon.png).</span></span>
+
+     <span data-ttu-id="d4c35-196">e.</span><span class="sxs-lookup"><span data-stu-id="d4c35-196">e.</span></span> <span data-ttu-id="d4c35-197">完成后，单击“保存”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d4c35-197">When you're finished, click **Save**.</span></span>
+
+     <span data-ttu-id="d4c35-198">若要禁用此设置，请清除该复选框。</span><span class="sxs-lookup"><span data-stu-id="d4c35-198">To disable this setting, clear the check box.</span></span>
+
+5. <span data-ttu-id="d4c35-199">Optional展开 "**收件人限制**" 部分，为可疑的出站电子邮件配置限制和操作：</span><span class="sxs-lookup"><span data-stu-id="d4c35-199">(Optional) Expand the **Recipient Limits** section to configure the limits and actions for suspicious outbound email messages: ]</span></span>
+   - <span data-ttu-id="d4c35-200">**每个用户的最大收件人数**</span><span class="sxs-lookup"><span data-stu-id="d4c35-200">**Maximum number of recipients per user**</span></span>
+
+     <span data-ttu-id="d4c35-201">有效的值为0到10000。</span><span class="sxs-lookup"><span data-stu-id="d4c35-201">A valid value is 0 to 10000.</span></span> <span data-ttu-id="d4c35-202">默认值为0，表示使用服务默认值。</span><span class="sxs-lookup"><span data-stu-id="d4c35-202">The default value is 0, which means the service defaults are used.</span></span> <span data-ttu-id="d4c35-203">有关详细信息，请参阅[跨 Office 365 选项发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-203">For more information, see [Sending limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).</span></span>
+
+     - <span data-ttu-id="d4c35-204">**外部小时限制**：每个小时的最大外部收件人数。</span><span class="sxs-lookup"><span data-stu-id="d4c35-204">**External hourly limit**: The maximum number of external recipients per hour.</span></span>
+
+     - <span data-ttu-id="d4c35-205">**内部每小时限制**：每小时最大内部收件人数。</span><span class="sxs-lookup"><span data-stu-id="d4c35-205">**Internal hourly limit**: The maximum number of internal recipients per hour.</span></span>
+
+     - <span data-ttu-id="d4c35-206">**每日限制**：每天的最大收件人总数。</span><span class="sxs-lookup"><span data-stu-id="d4c35-206">**Daily limit**: The maximum total number of recipients per day.</span></span>
+
+   - <span data-ttu-id="d4c35-207">**当用户超过以上限制时的操作**：配置超出任何一个**收件人限制**时要执行的操作。</span><span class="sxs-lookup"><span data-stu-id="d4c35-207">**Action when a user exceeds the limits above**: Configure the action to take when any one of the **Recipient Limits** are exceeded.</span></span> <span data-ttu-id="d4c35-208">对于所有操作，用户在 "**限制发送电子邮件**通知策略" （如果在出站垃圾邮件策略中发送出站垃圾邮件通知，由于在出站垃圾邮件通知中**发送出站垃圾**邮件设置而被阻止）中指定的收件人不会发送电子邮件通知策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-208">For all actions, the recipients specified in the **User restricted from sending email** alert policy (and in the now redundant **Notify specific people if a sender is blocked due to sending outbound spam** setting in the outbound spam policy receive email notifications.</span></span>
+
+     - <span data-ttu-id="d4c35-209">**限制用户在以下日期之前发送邮件**：这是默认值。</span><span class="sxs-lookup"><span data-stu-id="d4c35-209">**Restrict the user from sending mail till the following day**: This is the default value.</span></span> <span data-ttu-id="d4c35-210">发送电子邮件通知，用户在下一天（基于 UTC 时间）之前，将无法发送更多的邮件。</span><span class="sxs-lookup"><span data-stu-id="d4c35-210">Email notifications are sent, and the user will be unable to send any more messages until the following day, based on UTC time.</span></span> <span data-ttu-id="d4c35-211">管理员无法替代此块。</span><span class="sxs-lookup"><span data-stu-id="d4c35-211">There is no way for the admin to override this block.</span></span>
+
+       - <span data-ttu-id="d4c35-212">名为**用户限制为 "发送电子邮件**的活动通知" 通知管理员（通过电子邮件和**查看 "通知**" 页面）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-212">The activity alert named **User restricted from sending email** notifies admins (via email and on the **View alerts** page).</span></span>
+
+       - <span data-ttu-id="d4c35-213">**如果发件人因在策略中发送出站垃圾邮件设置而被阻止**，则在 "通知特定人员" 中指定的任何收件人也会收到通知。</span><span class="sxs-lookup"><span data-stu-id="d4c35-213">Any recipients specified in the **Notify specific people if a sender is blocked due to sending outbound spam** setting in the policy are also notified.</span></span>
+
+       - <span data-ttu-id="d4c35-214">在下一天，用户将不能再根据 UTC 时间发送更多的邮件。</span><span class="sxs-lookup"><span data-stu-id="d4c35-214">The user will be unable to send any more messages until the following day, based on UTC time.</span></span> <span data-ttu-id="d4c35-215">管理员无法替代此块。</span><span class="sxs-lookup"><span data-stu-id="d4c35-215">There is no way for the admin to override this block.</span></span>
+
+     - <span data-ttu-id="d4c35-216">**限制用户发送邮件**：发送电子邮件通知，则会将用户添加到 Security & 合规性中心中的 **[受限用户]<https://sip.protection.office.com/restrictedusers> **门户中，并且在管理员将邮件从**受限制的用户**门户中删除之前，用户将无法发送电子邮件。管理员将用户从列表中删除后，该用户将不会再次限制该用户这一天。</span><span class="sxs-lookup"><span data-stu-id="d4c35-216">**Restrict the user from sending mail**: Email notifications are sent, the user is added to the **[Restricted Users]<https://sip.protection.office.com/restrictedusers>** portal in the Security & Compliance Center, and the user can't send email until they're removed from the **Restricted Users** portal by an admin. After an admin removes the user from the list, the user won't be restricted again for that day.</span></span> <span data-ttu-id="d4c35-217">有关说明，请参阅[发送垃圾电子邮件后，从受限用户门户中删除用户](removing-user-from-restricted-users-portal-after-spam.md)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-217">For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).</span></span>
+
+     - <span data-ttu-id="d4c35-218">**不执行任何操作，仅通知**：发送电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="d4c35-218">**No action, alert only**: Email notifications are sent.</span></span>
+
+6. <span data-ttu-id="d4c35-219">需要展开 "**应用于**" 部分，以标识应用该策略的内部发件人。</span><span class="sxs-lookup"><span data-stu-id="d4c35-219">(Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.</span></span>
+
+    <span data-ttu-id="d4c35-220">只能使用条件或例外一次，但可以为条件或例外指定多个值。</span><span class="sxs-lookup"><span data-stu-id="d4c35-220">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="d4c35-221">同一条件或异常的多个值使用或逻辑（例如， _ \<sender1\> _或_ \<sender2\>_）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-221">Multiple values of the same condition or exception use OR logic (for example, _\<sender1\>_ or _\<sender2\>_).</span></span> <span data-ttu-id="d4c35-222">不同的条件或例外使用和逻辑（例如， _ \<sender1\> _和_ \<group 1\>的 member_）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-222">Different conditions or exceptions use AND logic (for example, _\<sender1\>_ and _\<member of group 1\>_).</span></span>
+
+    <span data-ttu-id="d4c35-223">最简单的方法是单击 "**添加条件**" 三次，以查看所有可用条件。</span><span class="sxs-lookup"><span data-stu-id="d4c35-223">It's easiest to click **Add a condition** three times to see all of the available conditions.</span></span> <span data-ttu-id="d4c35-224">您可以单击!["删除](../../media/scc-remove-icon.png) " 按钮以删除不希望配置的条件。</span><span class="sxs-lookup"><span data-stu-id="d4c35-224">You can click ![Remove button](../../media/scc-remove-icon.png) to remove conditions that you don't want to configure.</span></span>
+
+    - <span data-ttu-id="d4c35-225">**发件人域为**：在 Office 365 中的一个或多个已配置的接受域中指定发件人。</span><span class="sxs-lookup"><span data-stu-id="d4c35-225">**The sender domain is**: Specifies senders in one or more of the configured accepted domains in Office 365.</span></span> <span data-ttu-id="d4c35-226">在 "**添加标记**" 框中单击以查看并选择域。</span><span class="sxs-lookup"><span data-stu-id="d4c35-226">Click in the **Add a tag** box to see and select a domain.</span></span> <span data-ttu-id="d4c35-227">再次单击 "**添加标记**" 框以选择其他域（如果有多个域可用）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-227">Click again the **Add a tag** box to select additional domains if more than one domain is available.</span></span>
+
+    - <span data-ttu-id="d4c35-228">**发件人为**：指定组织中的一个或多个用户。</span><span class="sxs-lookup"><span data-stu-id="d4c35-228">**Sender is**: Specifies one or more users in your organization.</span></span> <span data-ttu-id="d4c35-229">单击 "**添加标记**"，然后开始键入以筛选列表。</span><span class="sxs-lookup"><span data-stu-id="d4c35-229">Click in the **Add a tag** and start typing to filter the list.</span></span> <span data-ttu-id="d4c35-230">再次单击 "**添加标记**" 框以选择 "其他发件人"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-230">Click again the **Add a tag** box to select additional senders.</span></span>
+
+    - <span data-ttu-id="d4c35-231">**发件人是以下成员**：指定组织中的一个或多个组。</span><span class="sxs-lookup"><span data-stu-id="d4c35-231">**Sender is a member of**: Specifies one or more groups in your organization.</span></span> <span data-ttu-id="d4c35-232">单击 "**添加标记**"，然后开始键入以筛选列表。</span><span class="sxs-lookup"><span data-stu-id="d4c35-232">Click in the **Add a tag** and start typing to filter the list.</span></span> <span data-ttu-id="d4c35-233">再次单击 "**添加标记**" 框以选择 "其他发件人"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-233">Click again the **Add a tag** box to select additional senders.</span></span>
+
+    - <span data-ttu-id="d4c35-234">**除非**：若要为规则添加例外，请单击 "**添加条件**" 三次，以查看所有可用的异常。</span><span class="sxs-lookup"><span data-stu-id="d4c35-234">**Except if**: To add exceptions for the rule, click **Add a condition** three times to see all of the available exceptions.</span></span> <span data-ttu-id="d4c35-235">设置和行为与条件完全一样。</span><span class="sxs-lookup"><span data-stu-id="d4c35-235">The settings and behavior are exactly like the conditions.</span></span>
+
+7. <span data-ttu-id="d4c35-236">完成后，单击“保存”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d4c35-236">When you're finished, click **Save**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a><span data-ttu-id="d4c35-237">使用安全 & 合规性中心查看出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-237">Use the Security & Compliance Center to view outbound spam policies</span></span>
+
+1. <span data-ttu-id="d4c35-238">在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **反垃圾邮件**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-238">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.</span></span>
+
+2. <span data-ttu-id="d4c35-239">在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开出站垃圾邮件策略：</span><span class="sxs-lookup"><span data-stu-id="d4c35-239">On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an outbound spam policy:</span></span>
+
+   - <span data-ttu-id="d4c35-240">名为 "**出站垃圾邮件筛选器策略**" 的默认策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-240">The default policy named **Outbound spam filter policy**.</span></span>
+
+   - <span data-ttu-id="d4c35-241">您创建的自定义策略，在该策略中，"**类型**" 列中的值是**自定义出站垃圾邮件策略**。</span><span class="sxs-lookup"><span data-stu-id="d4c35-241">A custom policy that you created where the value in the **Type** column is **Custom outbound spam policy**.</span></span>
+
+3. <span data-ttu-id="d4c35-242">策略设置将显示在显示的展开策略详细信息中，也可以单击 "**编辑策略**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-242">The policy settings are displayed in the expanded policy details that appear, or you can click **Edit policy**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-modify-outbound-spam-policies"></a><span data-ttu-id="d4c35-243">使用安全 & 合规性中心修改出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-243">Use the Security & Compliance Center to modify outbound spam policies</span></span>
+
+1. <span data-ttu-id="d4c35-244">在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **反垃圾邮件**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-244">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.</span></span>
+
+2. <span data-ttu-id="d4c35-245">在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开出站垃圾邮件策略：</span><span class="sxs-lookup"><span data-stu-id="d4c35-245">On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand an outbound spam policy:</span></span>
+
+   - <span data-ttu-id="d4c35-246">名为 "**出站垃圾邮件筛选器策略**" 的默认策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-246">The default policy named **Outbound spam filter policy**.</span></span>
+
+   - <span data-ttu-id="d4c35-247">您创建的自定义策略，在该策略中，"**类型**" 列中的值是**自定义出站垃圾邮件策略**。</span><span class="sxs-lookup"><span data-stu-id="d4c35-247">A custom policy that you created where the value in the **Type** column is **Custom outbound spam policy**.</span></span>
+
+3. <span data-ttu-id="d4c35-248">单击 "**编辑策略**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-248">Click **Edit policy**.</span></span>
+
+<span data-ttu-id="d4c35-249">对于自定义出站垃圾邮件策略，显示的浮出控件中的可用设置与[使用 Security & 合规中心创建出站垃圾邮件策略](#use-the-security--compliance-center-to-create-outbound-spam-policies)部分中所述的相同。</span><span class="sxs-lookup"><span data-stu-id="d4c35-249">For custom outbound spam policies, the available settings in the flyout that appears are identical to those described in the [Use the Security & Compliance Center to create outbound spam policies](#use-the-security--compliance-center-to-create-outbound-spam-policies) section.</span></span>
+
+<span data-ttu-id="d4c35-250">对于名为 "**出站垃圾邮件筛选器策略**" 的默认出站垃圾邮件策略，"**应用**于" 部分不可用（策略适用于每个人），无法重命名策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-250">For the default outbound spam policy named **Outbound spam filter policy**, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.</span></span>
+
+<span data-ttu-id="d4c35-251">若要启用或禁用策略、设置策略优先级顺序或配置最终用户隔离通知，请参阅以下各节。</span><span class="sxs-lookup"><span data-stu-id="d4c35-251">To enable or disable a policy, set the policy priority order, or configure the end-user quarantine notifications, see the following sections.</span></span>
+
+### <a name="enable-or-disable-outbound-spam-policies"></a><span data-ttu-id="d4c35-252">启用或禁用出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-252">Enable or disable outbound spam policies</span></span>
+
+1. <span data-ttu-id="d4c35-253">在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **反垃圾邮件**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-253">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.</span></span>
+
+2. <span data-ttu-id="d4c35-254">在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开您创建的自定义策略（"**类型**" 列中的值是 "**自定义出站垃圾邮件策略**"）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-254">On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand a custom policy that you created (the value in the **Type** column is **Custom outbound spam policy**).</span></span>
+
+3. <span data-ttu-id="d4c35-255">在出现的展开策略详细信息中，请注意**On**列中的值。</span><span class="sxs-lookup"><span data-stu-id="d4c35-255">In the expanded policy details that appear, notice the value in the **On** column.</span></span>
+
+   <span data-ttu-id="d4c35-256">将切换移到左侧以禁用策略：</span><span class="sxs-lookup"><span data-stu-id="d4c35-256">Move the toggle to the left to disable the policy:</span></span> ![关闭](../../media/scc-toggle-off.png)
+
+   <span data-ttu-id="d4c35-258">将切换向右移动以启用策略：</span><span class="sxs-lookup"><span data-stu-id="d4c35-258">Move the toggle to the right to enable the policy:</span></span> ![打开](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+
+<span data-ttu-id="d4c35-260">您不能禁用默认出站垃圾邮件策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-260">You can't disable the default outbound spam policy.</span></span>
+
+### <a name="set-the-priority-of-custom-outbound-spam-policies"></a><span data-ttu-id="d4c35-261">设置自定义出站垃圾邮件策略的优先级</span><span class="sxs-lookup"><span data-stu-id="d4c35-261">Set the priority of custom outbound spam policies</span></span>
+
+<span data-ttu-id="d4c35-262">默认情况下，会为出站垃圾邮件策略指定优先级，这取决于它们的创建顺序（较旧的策略相比，较新的策略优先级较低）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-262">By default, outbound spam policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies).</span></span> <span data-ttu-id="d4c35-263">优先级越低，策略的优先级就越高（0表示最高），策略按优先级顺序处理（优先级较高的策略在优先级较低的策略之前处理）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-263">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="d4c35-264">任何两个策略都不能具有相同的优先级。</span><span class="sxs-lookup"><span data-stu-id="d4c35-264">No two policies can have the same priority.</span></span>
+
+<span data-ttu-id="d4c35-265">自定义出站垃圾邮件策略按其处理顺序显示（第一个策略的**优先级**值为0）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-265">Custom outbound spam policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span> <span data-ttu-id="d4c35-266">名为 "**出站垃圾邮件筛选器策略**" 的默认出站垃圾邮件策略的优先级值为**最低**，无法进行更改。</span><span class="sxs-lookup"><span data-stu-id="d4c35-266">The default outbound spam policy named **Outbound spam filter policy** has the priority value **Lowest**, and you can't change it.</span></span>
+
+<span data-ttu-id="d4c35-267">若要更改策略的优先级，请在列表中向上或向下移动策略（不能直接在安全 & 合规中心中修改**优先级**号码）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-267">To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span>
+
+1. <span data-ttu-id="d4c35-268">在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **反垃圾邮件**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-268">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.</span></span>
+
+2. <span data-ttu-id="d4c35-269">在 "**反垃圾邮件设置**" 页上，找到 "**类型**" 列中的值为 "**自定义出站垃圾邮件策略**" 的策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-269">On the **Anti-spam settings** page, find the policies where the value in the **Type** column is **Custom outbound spam policy**.</span></span> <span data-ttu-id="d4c35-270">请注意 "**优先级**" 列中的值：</span><span class="sxs-lookup"><span data-stu-id="d4c35-270">Notice the values in the **Priority** column:</span></span>
+
+   - <span data-ttu-id="d4c35-271">具有最高优先级的自定义出站垃圾邮件策略![的值为](../../media/ITPro-EAC-DownArrowIcon.png)向下箭头图标**0**。</span><span class="sxs-lookup"><span data-stu-id="d4c35-271">The custom outbound spam policy with the highest priority has the value ![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **0**.</span></span>
+
+   - <span data-ttu-id="d4c35-272">优先级最低的自定义出站垃圾邮件策略具有值![向上箭头图标](../../media/ITPro-EAC-UpArrowIcon.png) **n** （例如， ![向上箭头图标](../../media/ITPro-EAC-UpArrowIcon.png) **3**）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-272">The custom outbound spam policy with the lowest priority has the value ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) **n** (for example, ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) **3**).</span></span>
+
+   - <span data-ttu-id="d4c35-273">如果有三个或更多自定义出站垃圾邮件策略，则在最高和最低![优先级之间的](../../media/ITPro-EAC-UpArrowIcon.png)![策略具有值](../../media/ITPro-EAC-DownArrowIcon.png)向上箭头图标向下![箭头图标**n** （例如，向上箭头图标](../../media/ITPro-EAC-UpArrowIcon.png)![向下箭头图标](../../media/ITPro-EAC-DownArrowIcon.png) **2**）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-273">If you have three or more custom outbound spam policies, the policies between the highest and lowest priority have values ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png)![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **n** (for example, ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png)![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **2**).</span></span>
+
+3. <span data-ttu-id="d4c35-274">单击"</span><span class="sxs-lookup"><span data-stu-id="d4c35-274">Click</span></span> ![向上箭头图标](../../media/ITPro-EAC-UpArrowIcon.png) <span data-ttu-id="d4c35-276">或</span><span class="sxs-lookup"><span data-stu-id="d4c35-276">or</span></span> ![向下箭头图标](../../media/ITPro-EAC-DownArrowIcon.png) <span data-ttu-id="d4c35-278">在 "优先级" 列表中向上或向下移动自定义出站垃圾邮件策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-278">to move the custom outbound spam policy up or down in the priority list.</span></span>
+
+## <a name="use-the-security--compliance-center-to-remove-outbound-spam-policies"></a><span data-ttu-id="d4c35-279">使用安全 & 合规性中心删除出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-279">Use the Security & Compliance Center to remove outbound spam policies</span></span>
+
+1. <span data-ttu-id="d4c35-280">在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **反垃圾邮件**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-280">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.</span></span>
+
+2. <span data-ttu-id="d4c35-281">在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开要删除的自定义策略（"**类型**" 列是 "**自定义出站垃圾邮件策略**"）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-281">On the **Anti-spam settings** page, click ![Expand icon](../../media/scc-expand-icon.png) to expand the custom policy that you want to delete (the **Type** column is **Custom outbound spam policy**).</span></span>
+
+3. <span data-ttu-id="d4c35-282">在出现的展开策略详细信息中，单击 "**删除策略**"。</span><span class="sxs-lookup"><span data-stu-id="d4c35-282">In the expanded policy details that appear, click **Delete policy**.</span></span>
+
+4. <span data-ttu-id="d4c35-283">在出现的警告对话框中，单击 **"是"** 。</span><span class="sxs-lookup"><span data-stu-id="d4c35-283">Click **Yes** in the warning dialog that appears.</span></span>
+
+<span data-ttu-id="d4c35-284">您不能删除默认策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-284">You can't remove the default policy.</span></span>
+
+## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-outbound-spam-policies"></a><span data-ttu-id="d4c35-285">使用 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 配置出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-285">Use Exchange Online PowerShell or Exchange Online Protection PowerShell to configure outbound spam policies</span></span>
+
+### <a name="use-powershell-to-create-outbound-spam-policies"></a><span data-ttu-id="d4c35-286">使用 PowerShell 创建出站垃圾邮件策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-286">Use PowerShell to create outbound spam policies</span></span>
+
+<span data-ttu-id="d4c35-287">在 PowerShell 中创建出站垃圾邮件策略的过程分为两个步骤：</span><span class="sxs-lookup"><span data-stu-id="d4c35-287">Creating an outbound spam policy in PowerShell is a two-step process:</span></span>
+
+1. <span data-ttu-id="d4c35-288">创建出站垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-288">Create the outbound spam filter policy.</span></span>
+
+2. <span data-ttu-id="d4c35-289">创建用于指定应用规则的出站垃圾邮件筛选器策略的出站垃圾邮件筛选器规则。</span><span class="sxs-lookup"><span data-stu-id="d4c35-289">Create the outbound spam filter rule that specifies the outbound spam filter policy that the rule applies to.</span></span>
+
+ <span data-ttu-id="d4c35-290">**注意**：</span><span class="sxs-lookup"><span data-stu-id="d4c35-290">**Notes**:</span></span>
+
+- <span data-ttu-id="d4c35-291">您可以创建新的出站垃圾邮件筛选器规则，并向其分配现有的未关联的出站垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-291">You can create a new outbound spam filter rule and assign an existing, unassociated outbound spam filter policy to it.</span></span> <span data-ttu-id="d4c35-292">一个出站垃圾邮件筛选器规则不能与多个出站垃圾邮件筛选器策略相关联。</span><span class="sxs-lookup"><span data-stu-id="d4c35-292">An outbound spam filter rule can't be associated with more than one outbound spam filter policy.</span></span>
+
+- <span data-ttu-id="d4c35-293">您可以在 PowerShell 中的新出站垃圾邮件筛选器策略中配置以下设置，这些设置在安全 & 合规性中心中不可用，直到您创建了策略：</span><span class="sxs-lookup"><span data-stu-id="d4c35-293">You can configure the following settings on new outbound spam filter policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
+
+  - <span data-ttu-id="d4c35-294">将新策略创建为禁用（在**HostedOutboundSpamFilterRule** cmdlet 上_启用_ `$false` ）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-294">Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedOutboundSpamFilterRule** cmdlet).</span></span>
+
+  - <span data-ttu-id="d4c35-295">在**HostedOutboundSpamFilterRule** cmdlet 上创建（_优先级_ _ \<编号\>_）过程中设置策略的优先级。</span><span class="sxs-lookup"><span data-stu-id="d4c35-295">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedOutboundSpamFilterRule** cmdlet).</span></span>
+
+- <span data-ttu-id="d4c35-296">在 PowerShell 中创建的新的出站垃圾邮件筛选器策略在安全 & 合规性中心中不可见，除非您将策略分配给垃圾邮件筛选器规则。</span><span class="sxs-lookup"><span data-stu-id="d4c35-296">A new outbound spam filter policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a spam filter rule.</span></span>
+
+#### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a><span data-ttu-id="d4c35-297">步骤1：使用 PowerShell 创建出站垃圾邮件筛选器策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-297">Step 1: Use PowerShell to create an outbound spam filter policy</span></span>
+
+<span data-ttu-id="d4c35-298">若要创建出站垃圾邮件筛选器策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-298">To create an outbound spam filter policy, use this syntax:</span></span>
+
+```PowerShell
+New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
+```
+
+<span data-ttu-id="d4c35-299">本示例将使用以下设置创建名为 Contoso 行政主管的新出站垃圾邮件筛选器策略：</span><span class="sxs-lookup"><span data-stu-id="d4c35-299">This example creates a new outbound spam filter policy named Contoso Executives with the following settings:</span></span>
+
+- <span data-ttu-id="d4c35-300">收件人速率限制限制为默认值的较小值。</span><span class="sxs-lookup"><span data-stu-id="d4c35-300">The recipient rate limits are restricted to smaller values that the defaults.</span></span> <span data-ttu-id="d4c35-301">有关详细信息，请参阅[跨 Office 365 选项发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-301">For more information, see [Sending limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).</span></span>
+
+- <span data-ttu-id="d4c35-302">达到其中一个限制后，用户将被阻止发送邮件。</span><span class="sxs-lookup"><span data-stu-id="d4c35-302">After one of the limits is reached, the user is prevented from sending messages.</span></span>
+
+```PowerShell
+New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
+```
+
+<span data-ttu-id="d4c35-303">有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-303">For detailed syntax and parameter information, see [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy).</span></span>
+
+#### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a><span data-ttu-id="d4c35-304">步骤2：使用 PowerShell 创建出站垃圾邮件筛选器规则</span><span class="sxs-lookup"><span data-stu-id="d4c35-304">Step 2: Use PowerShell to create an outbound spam filter rule</span></span>
+
+<span data-ttu-id="d4c35-305">若要创建出站垃圾邮件筛选器规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-305">To create an outbound spam filter rule, use this syntax:</span></span>
+
+```PowerShell
+New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
+```
+
+<span data-ttu-id="d4c35-306">本示例使用以下设置创建名为 Contoso 行政主管的新出站垃圾邮件筛选器规则：</span><span class="sxs-lookup"><span data-stu-id="d4c35-306">This example creates a new outbound spam filter rule named Contoso Executives with these settings:</span></span>
+
+- <span data-ttu-id="d4c35-307">名为 "Contoso 行政主管" 的出站垃圾邮件筛选器策略与规则相关联。</span><span class="sxs-lookup"><span data-stu-id="d4c35-307">The outbound spam filter policy named Contoso Executives is associated with the rule.</span></span>
+
+- <span data-ttu-id="d4c35-308">该规则应用于名为 "Contoso 行政主管" 组的组成员。</span><span class="sxs-lookup"><span data-stu-id="d4c35-308">The rule applies to members of the group named Contoso Executives Group.</span></span>
+
+```PowerShell
+New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
+```
+
+<span data-ttu-id="d4c35-309">有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterrule)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-309">For detailed syntax and parameter information, see [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterrule).</span></span>
+
+### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a><span data-ttu-id="d4c35-310">使用 PowerShell 查看出站垃圾邮件筛选器策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-310">Use PowerShell to view outbound spam filter policies</span></span>
+
+<span data-ttu-id="d4c35-311">若要返回所有出站垃圾邮件筛选器策略的摘要列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="d4c35-311">To return a summary list of all outbound spam filter policies, run this command:</span></span>
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy
+```
+
+<span data-ttu-id="d4c35-312">若要返回有关特定出站垃圾邮件筛选器策略的详细信息，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-312">To return detailed information about a specific outbound spam filter policy, use the this syntax:</span></span>
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" | Format-List [<Specific properties to view>]
+```
+
+<span data-ttu-id="d4c35-313">本示例将返回名为 "主管" 的出站垃圾邮件筛选器策略的所有属性值。</span><span class="sxs-lookup"><span data-stu-id="d4c35-313">This example returns all the property values for the outbound spam filter policy named Executives.</span></span>
+
+```PowerShell
+Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
+```
+
+<span data-ttu-id="d4c35-314">有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-314">For detailed syntax and parameter information, see [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy).</span></span>
+
+### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a><span data-ttu-id="d4c35-315">使用 PowerShell 查看出站垃圾邮件筛选器规则</span><span class="sxs-lookup"><span data-stu-id="d4c35-315">Use PowerShell to view outbound spam filter rules</span></span>
+
+<span data-ttu-id="d4c35-316">若要查看现有的出站垃圾邮件筛选器规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-316">To view existing outbound spam filter rules, use the following syntax:</span></span>
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+```
+
+<span data-ttu-id="d4c35-317">若要返回所有出站垃圾邮件筛选器规则的摘要列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="d4c35-317">To return a summary list of all outbound spam filter rules, run this command:</span></span>
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule
+```
+
+<span data-ttu-id="d4c35-318">若要按启用或禁用规则筛选列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="d4c35-318">To filter the list by enabled or disabled rules, run the following commands:</span></span>
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -State Disabled
+```
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -State Enabled
+```
+
+<span data-ttu-id="d4c35-319">若要返回有关特定出站垃圾邮件筛选器规则的详细信息，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-319">To return detailed information about a specific outbound spam filter rule, use this syntax:</span></span>
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -Identity "<RuleName>" | Format-List [<Specific properties to view>]
+```
+
+<span data-ttu-id="d4c35-320">本示例将返回名为 Contoso 行政主管的出站垃圾邮件筛选器规则的所有属性值。</span><span class="sxs-lookup"><span data-stu-id="d4c35-320">This example returns all the property values for the outbound spam filter rule named Contoso Executives.</span></span>
+
+```PowerShell
+Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
+```
+
+<span data-ttu-id="d4c35-321">有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterrule)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-321">For detailed syntax and parameter information, see [Get-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterrule).</span></span>
+
+### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a><span data-ttu-id="d4c35-322">使用 PowerShell 修改出站垃圾邮件筛选器策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-322">Use PowerShell to modify outbound spam filter policies</span></span>
+
+<span data-ttu-id="d4c35-323">按照本主题前面的 "[步骤1：使用 PowerShell 创建出站垃圾邮件筛选器策略](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy)" 一节中所述，在 PowerShell 中修改恶意软件筛选器策略时，可以使用相同的设置。</span><span class="sxs-lookup"><span data-stu-id="d4c35-323">The same settings are available when you modify a malware filter policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an outbound spam filter policy](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) section earlier in this topic.</span></span>
+
+<span data-ttu-id="d4c35-324">**注意**：不能重命名出站垃圾邮件筛选器策略（ **HostedOutboundSpamFilterPolicy** cmdlet 没有_Name_参数）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-324">**Note**: You can't rename an outbound spam filter policy (the **Set-HostedOutboundSpamFilterPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="d4c35-325">当您在安全 & 合规中心中重命名出站垃圾邮件策略时，您只是重命名出站垃圾邮件筛选器_规则_。</span><span class="sxs-lookup"><span data-stu-id="d4c35-325">When you rename an outbound spam policy in the Security & Compliance Center, you're only renaming the outbound spam filter _rule_.</span></span>
+
+<span data-ttu-id="d4c35-326">若要修改出站垃圾邮件筛选器策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-326">To modify an outbound spam filter policy, use this syntax:</span></span>
+
+```PowerShell
+Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
+```
+
+<span data-ttu-id="d4c35-327">有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-327">For detailed syntax and parameter information, see [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy).</span></span>
+
+### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a><span data-ttu-id="d4c35-328">使用 PowerShell 修改出站垃圾邮件筛选器规则</span><span class="sxs-lookup"><span data-stu-id="d4c35-328">Use PowerShell to modify outbound spam filter rules</span></span>
+
+<span data-ttu-id="d4c35-329">在 PowerShell 中修改出站垃圾邮件筛选器规则时，唯一不可用的设置是允许您创建已禁用规则的_启用_参数。</span><span class="sxs-lookup"><span data-stu-id="d4c35-329">The only setting that isn't available when you modify an outbound spam filter rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="d4c35-330">若要启用或禁用现有的出站垃圾邮件筛选器规则，请参阅下一节。</span><span class="sxs-lookup"><span data-stu-id="d4c35-330">To enable or disable existing outbound spam filter rules, see the next section.</span></span>
+
+<span data-ttu-id="d4c35-331">否则，在 PowerShell 中修改出站垃圾邮件筛选器规则时，没有其他设置可用。</span><span class="sxs-lookup"><span data-stu-id="d4c35-331">Otherwise, no additional settings are available when you modify an outbound spam filter rule in PowerShell.</span></span> <span data-ttu-id="d4c35-332">按照本主题前面的 "[步骤2：使用 PowerShell 创建出站垃圾邮件筛选器规则](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule)" 一节中所述，创建规则时，可以使用相同的设置。</span><span class="sxs-lookup"><span data-stu-id="d4c35-332">The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an outbound spam filter rule](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) section earlier in this topic.</span></span>
+
+<span data-ttu-id="d4c35-333">若要修改出站垃圾邮件筛选器规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-333">To modify an outbound spam filter rule, use this syntax:</span></span>
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
+```
+
+<span data-ttu-id="d4c35-334">有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterrule)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-334">For detailed syntax and parameter information, see [Set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterrule).</span></span>
+
+### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a><span data-ttu-id="d4c35-335">使用 PowerShell 启用或禁用出站垃圾邮件筛选器规则</span><span class="sxs-lookup"><span data-stu-id="d4c35-335">Use PowerShell to enable or disable outbound spam filter rules</span></span>
+
+<span data-ttu-id="d4c35-336">启用或禁用 PowerShell 中的出站垃圾邮件筛选器规则可启用或禁用整个出站垃圾邮件策略（出站垃圾邮件筛选器规则和分配的出站垃圾邮件筛选器策略）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-336">Enabling or disabling an outbound spam filter rule in PowerShell enables or disables the whole outbound spam policy (the outbound spam filter rule and the assigned outbound spam filter policy).</span></span> <span data-ttu-id="d4c35-337">您不能启用或禁用默认出站垃圾邮件策略（始终应用于所有收件人）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-337">You can't enable or disable the default outbound spam policy (it's always always applied to all recipients).</span></span>
+
+<span data-ttu-id="d4c35-338">若要在 PowerShell 中启用或禁用出站垃圾邮件筛选器规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-338">To enable or disable an outbound spam filter rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+<Enable-HostedOutboundSpamFilterRule | Disable-HostedOutboundSpamFilterRule> -Identity "<RuleName>"
+```
+
+<span data-ttu-id="d4c35-339">本示例禁用名为 "Marketing 部门" 的出站垃圾邮件筛选器规则。</span><span class="sxs-lookup"><span data-stu-id="d4c35-339">This example disables the outbound spam filter rule named Marketing Department.</span></span>
+
+```PowerShell
+Disable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="d4c35-340">本示例启用相同的规则。</span><span class="sxs-lookup"><span data-stu-id="d4c35-340">This example enables same rule.</span></span>
+
+```PowerShell
+Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="d4c35-341">有关语法和参数的详细信息，请参阅[Enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedoutboundspamfilterrule)和[Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedoutboundspamfilterrule)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-341">For detailed syntax and parameter information, see [Enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedoutboundspamfilterrule) and [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedoutboundspamfilterrule).</span></span>
+
+### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a><span data-ttu-id="d4c35-342">使用 PowerShell 设置出站垃圾邮件筛选器规则的优先级</span><span class="sxs-lookup"><span data-stu-id="d4c35-342">Use PowerShell to set the priority of outbound spam filter rules</span></span>
+
+<span data-ttu-id="d4c35-343">可以设置的规则最高优先级值是 0。</span><span class="sxs-lookup"><span data-stu-id="d4c35-343">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="d4c35-344">可以设置的最小优先级值取决于规则的数量。</span><span class="sxs-lookup"><span data-stu-id="d4c35-344">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="d4c35-345">例如，如果有五个规则，则可以使用的优先级值为 0 到 4。</span><span class="sxs-lookup"><span data-stu-id="d4c35-345">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="d4c35-346">更改现有规则的优先级可对其他规则产生级联效应。</span><span class="sxs-lookup"><span data-stu-id="d4c35-346">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="d4c35-347">例如，如果有五个自定义规则（优先级为0到4），并且将规则的优先级更改为2，则优先级为2的现有规则将更改为优先级3，优先级为3的规则更改为优先级4。</span><span class="sxs-lookup"><span data-stu-id="d4c35-347">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
+
+<span data-ttu-id="d4c35-348">若要在 PowerShell 中设置出站垃圾邮件筛选器规则的优先级，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-348">To set the priority of an outbound spam filter rule in PowerShell, use the following syntax:</span></span>
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" -Priority <Number>
+```
+
+<span data-ttu-id="d4c35-349">本示例将名为 "市场部" 的规则的优先级设置为2。</span><span class="sxs-lookup"><span data-stu-id="d4c35-349">This example sets the priority of the rule named Marketing Department to 2.</span></span> <span data-ttu-id="d4c35-350">所有优先级均小于或等于2的现有规则将减1（其优先级数增加1）。</span><span class="sxs-lookup"><span data-stu-id="d4c35-350">All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
+
+```PowerShell
+Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
+```
+
+<span data-ttu-id="d4c35-351">**注意**：</span><span class="sxs-lookup"><span data-stu-id="d4c35-351">**Notes**:</span></span>
+
+- <span data-ttu-id="d4c35-352">若要在创建时设置新规则的优先级，请改用**HostedOutboundSpamFilterRule** cmdlet 上的_priority_参数。</span><span class="sxs-lookup"><span data-stu-id="d4c35-352">To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-HostedOutboundSpamFilterRule** cmdlet instead.</span></span>
+
+- <span data-ttu-id="d4c35-353">出站默认垃圾邮件筛选器策略不具有相应的垃圾邮件筛选器规则，它始终具有不可修改的优先级值**下限**。</span><span class="sxs-lookup"><span data-stu-id="d4c35-353">The outbound default spam filter policy doesn't have a corresponding spam filter rule, and it always has the unmodifiable priority value **Lowest**.</span></span>
+
+### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a><span data-ttu-id="d4c35-354">使用 PowerShell 删除出站垃圾邮件筛选器策略</span><span class="sxs-lookup"><span data-stu-id="d4c35-354">Use PowerShell to remove outbound spam filter policies</span></span>
+
+<span data-ttu-id="d4c35-355">当您使用 PowerShell 删除出站垃圾邮件筛选器策略时，不会删除相应的出站垃圾邮件筛选器规则。</span><span class="sxs-lookup"><span data-stu-id="d4c35-355">When you use PowerShell to remove an outbound spam filter policy, the corresponding outbound spam filter rule isn't removed.</span></span>
+
+<span data-ttu-id="d4c35-356">若要删除 PowerShell 中的出站垃圾邮件筛选器策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-356">To remove an outbound spam filter policy in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="d4c35-357">本示例删除名为 "Marketing 部门" 的出站垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-357">This example removes the outbound spam filter policy named Marketing Department.</span></span>
+
+```PowerShell
+Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
+```
+
+<span data-ttu-id="d4c35-358">有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterpolicy)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-358">For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterpolicy).</span></span>
+
+### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a><span data-ttu-id="d4c35-359">使用 PowerShell 删除出站垃圾邮件筛选器规则</span><span class="sxs-lookup"><span data-stu-id="d4c35-359">Use PowerShell to remove outbound spam filter rules</span></span>
+
+<span data-ttu-id="d4c35-360">当您使用 PowerShell 删除出站垃圾邮件筛选器规则时，将不会删除相应的出站垃圾邮件筛选器策略。</span><span class="sxs-lookup"><span data-stu-id="d4c35-360">When you use PowerShell to remove an outbound spam filter rule, the corresponding outbound spam filter policy isn't removed.</span></span>
+
+<span data-ttu-id="d4c35-361">若要删除 PowerShell 中的出站垃圾邮件筛选器规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="d4c35-361">To remove an outbound spam filter rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-HostedOutboundSpamFilterRule -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="d4c35-362">本示例删除名为 "Marketing 部门" 的出站垃圾邮件筛选器规则。</span><span class="sxs-lookup"><span data-stu-id="d4c35-362">This example removes the outbound spam filter rule named Marketing Department.</span></span>
+
+```PowerShell
+Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="d4c35-363">有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule)。</span><span class="sxs-lookup"><span data-stu-id="d4c35-363">For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule).</span></span>
+
+
+## <a name="for-more-information"></a><span data-ttu-id="d4c35-364">有关详细信息</span><span class="sxs-lookup"><span data-stu-id="d4c35-364">For more information</span></span>
+
+[<span data-ttu-id="d4c35-365">发送垃圾电子邮件后，从受限用户门户删除用户</span><span class="sxs-lookup"><span data-stu-id="d4c35-365">Removing a user from the Restricted Users portal after sending spam email</span></span>](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+
+[<span data-ttu-id="d4c35-366">出站邮件的高风险传递池</span><span class="sxs-lookup"><span data-stu-id="d4c35-366">High-risk delivery pool for outbound messages</span></span>](high-risk-delivery-pool-for-outbound-messages.md)
+
+[<span data-ttu-id="d4c35-367">反垃圾邮件保护常见问题</span><span class="sxs-lookup"><span data-stu-id="d4c35-367">Anti-spam protection FAQ</span></span>](anti-spam-protection-faq.md)
