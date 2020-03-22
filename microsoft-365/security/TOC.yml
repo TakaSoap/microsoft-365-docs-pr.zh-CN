@@ -199,70 +199,58 @@
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: SharePoint Online 中的病毒检测
                       href: ./office-365-security/virus-detection-in-spo.md
-                - name: 高级垃圾邮件筛选选项
-                  href: ./office-365-security/advanced-spam-filtering-asf-options.md
-                - name: 出站邮件的高风险传递池
-                  href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: 反垃圾邮件保护常见问题解答
-                  href: ./office-365-security/anti-spam-protection-faq.md
-                - name: 避免垃圾邮件筛选器规则和垃圾邮件筛选器策略中出现无效字符
-                  href: ./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md
-                - name: Exchange Online 中的安全发件人和阻止发件人列表
-                  href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
-                - name: Office 365 中电子邮件中的安全提示
-                  href: ./office-365-security/safety-tips-in-office-365.md
-                - name: 发件人被阻止发送出站垃圾邮件时的示例通知
-                  href: ./office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md
-                - name: 使用最终用户垃圾邮件通知释放和报告垃圾邮件隔离邮件
-                  href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
-                - name: 抵制发送到 Office 365 的垃圾邮件
-                  href: ./office-365-security/fighting-junk-email.md
-                - name: Office 365 电子邮件反垃圾邮件保护
+                - name: 反垃圾邮件保护
                   href: ./office-365-security/anti-spam-protection.md
+                  items:
+                    - name: 反垃圾邮件保护常见问题解答
+                      href: ./office-365-security/anti-spam-protection-faq.md
+                    - name: 配置反垃圾邮件策略
+                      href: ./office-365-security/configure-your-spam-filter-policies.md
+                    - name: 配置连接筛选器策略
+                      href: ./office-365-security/configure-the-connection-filter-policy.md
+                    - name: 创建阻止发件人列表
+                      href: ./office-365-security/Create-block-sender-lists-in-office-365.md
+                    - name: 创建安全发件人列表
+                      href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
+                    - name: 垃圾邮件可信度 (SCL)
+                      href: ./office-365-security/spam-confidence-levels.md
+                    - name: 批量投诉级别(SCL)
+                      href: ./office-365-security/bulk-complaint-level-values.md
+                    - name: 在 Exchange Online 邮箱上配置垃圾邮件设置
+                      href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
+                    - name: 最终用户垃圾邮件通知
+                      href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
+                    - name: 使用邮件流规则设置邮件中的垃圾邮件可信度
+                      href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+                    - name: 高级垃圾邮件筛选器（ASF）设置
+                      href: ./office-365-security/advanced-spam-filtering-asf-options.md
+                    - name: 配置独立 EOP，以向“垃圾邮件”文件夹传递垃圾邮件
+                      href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: 配置垃圾邮件保护
+                  href: ./office-365-security/outbound-spam-controls.md
+                  items:
+                    - name: 配置出站垃圾邮件筛选
+                      href: ./office-365-security/configure-the-outbound-spam-policy.md
+                    - name: 出站邮件的高风险传递池
+                      href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
+                    - name: 从受限用户门户中删除阻止的用户
+                      href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+                - name: 反垃圾邮件邮件头
+                  href: ./office-365-security/anti-spam-message-headers.md
                 - name: 如何将策略和保护组合在一起
                   href: ./office-365-security/how-policies-and-protections-are-combined.md
-                - name: 如何减少 Office 365 中的垃圾邮件
-                  href: ./office-365-security/reduce-spam-email.md
-                - name: 控制 Office 365 中的出站垃圾邮件
-                  href: ./office-365-security/outbound-spam-controls.md
-                - name: 使用 Office 365 垃圾邮件筛选器阻止垃圾邮件以避免出现漏报问题
-                  href: ./office-365-security/reduce-spam-email.md
                 - name: 零时差自动清除 - 防范垃圾邮件和恶意软件
                   href: ./office-365-security/zero-hour-auto-purge.md
-                - name: 确保垃圾邮件已路由到每个用户的“垃圾邮件”文件夹
-                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: 电子邮件中的安全提示
+                  href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 向 Microsoft 报告垃圾邮件
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
-                - name: 管理邮件群发程序的安全发件人列表
-                  href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-                - name: 配置反垃圾邮件策略
-                  href: ./office-365-security/configure-the-anti-spam-policies.md
-                - name: Create-block-sender-lists-in-office-365
-                  href: ./office-365-security/Create-block-sender-lists-in-office-365.md
-                - name: Create-safe-sender-lists-in-office-365
-                  href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
-                - name: 配置垃圾邮件筛选器策略
-                  href: ./office-365-security/configure-your-spam-filter-policies.md
-                - name: 配置连接筛选器策略
-                  href: ./office-365-security/configure-the-connection-filter-policy.md
-                - name: 配置出站垃圾邮件策略
-                  href: ./office-365-security/configure-the-outbound-spam-policy.md
-                - name: 发送垃圾电子邮件后，从受限用户门户删除用户
-                  href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
-                - name: 垃圾邮件可信度
-                  href: ./office-365-security/spam-confidence-levels.md
-                - name: 修复 Exchange Online 中的错误代码 5.7.7 xx
-                  href: ./office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md
-                - name: 使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
-                  href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
                 - name: 将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                 - name: Office 365 中的管理员提交
                   href: ./office-365-security/admin-submission.md
                 - name: 使用除名门户将自己从 Office 365 阻止的发件人名单中删除
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: 反垃圾邮件邮件头
-                  href: ./office-365-security/anti-spam-message-headers.md
             - name: Office 365 中的防钓鱼保护
               href: ./office-365-security/anti-phishing-protection.md
               items:
@@ -290,10 +278,6 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: 在独立 EOP 中阻止垃圾邮件
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: 在 EOP 中配置最终用户垃圾邮件通知
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: 在 Exchange Online 中配置最终用户垃圾邮件通知
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: 在 Outlook 网页版中报告垃圾电子邮件和钓鱼行为
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: 使用 Exchange Online Protection 保护本地邮箱
@@ -304,17 +288,15 @@
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
                 - name: 垃圾邮件和批量邮件之间有什么差异？
                   href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-            - name: 在 Office 365 中隔离电子邮件
+            - name: 隔离
               href: ./office-365-security/quarantine-email-messages.md
               items:
+                - name: 隔离常见问题解答
+                  href: ./office-365-security/quarantine-faq.md
                 - name: 以管理员身份管理隔离的邮件和文件
                   href: ./office-365-security/manage-quarantined-messages-and-files.md
                 - name: 以用户身份查找并释放隔离的邮件
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
-                - name: Office 365 的隔离常见问题解答
-                  href: ./office-365-security/quarantine-faq.md
-                - name: 在 Office 365 中使用用户垃圾邮件通知来发布和报告已隔离邮件
-                  href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: 电子邮件验证和身份验证
               items:
                 - name: Office 365 如何使用 SPF 来防止欺骗
@@ -347,8 +329,6 @@
                       href: ./office-365-security/set-up-and-download-a-custom-report.md
                     - name: 下载现有报表
                       href: ./office-365-security/download-existing-reports.md
-                - name: 启用或禁用 Office 365 中的安全提示
-                  href: ./office-365-security/enable-or-disable-safety-tips.md
                 - name: 查看恶意文件的相关信息
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: 高级威胁防护
@@ -556,8 +536,6 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Office 365 中的邮件流智能
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Quarantine
-                  href: ./office-365-security/quarantine.md
                 - name: 疑难解答信息和支持信息
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items:
