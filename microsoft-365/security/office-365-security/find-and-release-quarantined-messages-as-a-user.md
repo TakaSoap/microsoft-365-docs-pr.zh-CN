@@ -2,10 +2,10 @@
 title: 在 Office 365 中以用户的身份查找并释放隔离的邮件。
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 05/19/2018
+ms.date: ''
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,104 +16,164 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 作为 Office 365 用户，你可以通过以下两种方式自行管理隔离的垃圾邮件：对直接发送给你的垃圾邮件通知作出响应（如果管理员已设置此功能），或使用安全&amp;合规中心的垃圾邮件隔离功能。
-ms.openlocfilehash: 277af18d2061e8bd13386ab96e37d982d68e0b52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 作为 Office 365 用户，你可以查看、释放和删除已隔离邮件，即你是收件人但被垃圾邮件筛选功能隔离为垃圾邮件或大量电子邮件的邮件。 在安全与合规中心内，查看和管理已隔离邮件。
+ms.openlocfilehash: e74358d57b96c8655fbf6a3f7f0b6eedb5e65ede
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599289"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857329"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a><span data-ttu-id="ce86a-103">在 Office 365 中以用户的身份查找并释放隔离的邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-103">Find and release quarantined messages as a user in Office 365</span></span>
+# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a><span data-ttu-id="7f1ea-104">在 Office 365 中以用户身份查找和释放已隔离邮件</span><span class="sxs-lookup"><span data-stu-id="7f1ea-104">Find and release quarantined messages as a user in Office 365</span></span>
 
-<span data-ttu-id="ce86a-104">作为 Office 365 用户，你可以通过以下两种方式管理发送到隔离区而非发送给你的邮件：[对直接发送给你的垃圾邮件通知作出响应](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已设置此功能），或使用安全&amp;合规中心。</span><span class="sxs-lookup"><span data-stu-id="ce86a-104">As an Office 365 user, you can manage messages that were sent to quarantine instead of sent to you in one of two ways: by [responding to spam notifications sent to you directly](use-spam-notifications-to-release-and-report-quarantined-messages.md) (if your admin has set this up), or by using the Security &amp; Compliance Center.</span></span>
+<span data-ttu-id="7f1ea-105">无论是在有 Exchange Online 邮箱的 Office 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-105">Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.</span></span> <span data-ttu-id="7f1ea-106">有关详细信息，请参阅 [Office 365 中的隔离功能](quarantine-email-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-106">For more information, see [Quarantine in Office 365](quarantine-email-messages.md).</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="ce86a-105">管理员则可以为组织中的其他人[管理隔离邮件](manage-quarantined-messages-and-files.md)。</span><span class="sxs-lookup"><span data-stu-id="ce86a-105">If you're an admin, you can [manage quarantined messages](manage-quarantined-messages-and-files.md) for other people in your organization.</span></span>
+<span data-ttu-id="7f1ea-107">作为用户，你可以查看、释放和删除已隔离邮件，即你是收件人但被隔离为垃圾邮件、大量电子邮件或（自 2020 年 4 月起）钓鱼电子邮件的邮件。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-107">As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing.</span></span> <span data-ttu-id="7f1ea-108">用户还可以向 Microsoft 报告误报。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-108">You can also report false positives to Microsoft.</span></span>
 
-## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a><span data-ttu-id="ce86a-106">查看发送到隔离区而非发送给你的邮件</span><span class="sxs-lookup"><span data-stu-id="ce86a-106">View messages that were sent to quarantine instead of to you</span></span>
+<span data-ttu-id="7f1ea-109">在安全与合规中心内，查看和管理已隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-109">You view and manage your quarantined messages in the Security & Compliance Center.</span></span>
 
-1. <span data-ttu-id="ce86a-107">使用工作或学校帐户登录 Office 365 并[转到安全与合规中心](../../compliance/go-to-the-securitycompliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="ce86a-107">Sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) using your work or school account.</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="7f1ea-110">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="7f1ea-110">What do you need to know before you begin?</span></span>
 
-2. <span data-ttu-id="ce86a-108">在左侧，展开“**威胁管理**”，选择“**审阅**”，然后选择“**隔离区**”。</span><span class="sxs-lookup"><span data-stu-id="ce86a-108">On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.</span></span>
+- <span data-ttu-id="7f1ea-111">若要打开 Office 365 安全与合规中心，请转到 <https://protection.office.com>。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-111">To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>.</span></span> <span data-ttu-id="7f1ea-112">若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-112">To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.</span></span>
 
-    > [!TIP]
-    > <span data-ttu-id="ce86a-109">要直接转到安全与合规中心的“**隔离区**”页面，请使用此 URL：[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)&amp;</span><span class="sxs-lookup"><span data-stu-id="ce86a-109">To go directly to the **Quarantine** page in the Security &amp; Compliance Center, use this URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)</span></span>
+- <span data-ttu-id="7f1ea-113">管理员可以配置邮件在永久删除前的隔离期限（反垃圾邮件策略）。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-113">Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies).</span></span> <span data-ttu-id="7f1ea-114">隔离到期的邮件不可恢复。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-114">Messages that have expired from quarantine are unrecoverable.</span></span> <span data-ttu-id="7f1ea-115">有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-115">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="ce86a-110">默认情况下，安全&amp;合规中心显示所有已隔离为垃圾邮件的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-110">By default, the Security &amp; Compliance Center displays all email messages that have been quarantined as spam.</span></span> <span data-ttu-id="ce86a-111">邮件根据接收“**日期**”按从最新到最早的顺序排序。</span><span class="sxs-lookup"><span data-stu-id="ce86a-111">The messages are sorted from newest to oldest based on the **Date** the message was received.</span></span> <span data-ttu-id="ce86a-112">还显示每封邮件的“**发件人**”、“**主题**”和到期日期（位于“**到期**”下）。</span><span class="sxs-lookup"><span data-stu-id="ce86a-112">**Sender**, **Subject**, and the expiration date (under **Expires** ) are also displayed for each message.</span></span> <span data-ttu-id="ce86a-113">通过单击相应的列标题可按字段排序；再次单击列标题可反向排序。</span><span class="sxs-lookup"><span data-stu-id="ce86a-113">You can sort on a field by clicking the corresponding column header; click a column header a second time to reverse the sort order.</span></span>
+- <span data-ttu-id="7f1ea-116">此外，管理员还可以在反垃圾邮件策略中[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-116">Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md) in anti-spam policies.</span></span> <span data-ttu-id="7f1ea-117">自 2019 年 10 月起，你无法再直接通过这些通知来释放已隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-117">As of October 2019, you can no longer release quarantined messages directly from these notifications.</span></span> <span data-ttu-id="7f1ea-118">可以单击通知中的“审阅”\*\*\*\*，这会定向到安全与合规中心内的“隔离”。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-118">You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center.</span></span> <span data-ttu-id="7f1ea-119">有关详细信息，请参阅 [Office 365 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-119">For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).</span></span>
 
-<span data-ttu-id="ce86a-114">可以查看所有隔离邮件列表，或者可以通过筛选搜索特定邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-114">You can view a list of all quarantined messages, or you can search for specific messages by filtering.</span></span> <span data-ttu-id="ce86a-115">最多只能对 100 项执行批量操作，因此如果结果集超过 100 项，筛选功能还可以帮助减小结果集。</span><span class="sxs-lookup"><span data-stu-id="ce86a-115">You can only do bulk operations on up to 100 items, so filtering can also help reduce your result set if you have more than that.</span></span> <span data-ttu-id="ce86a-116">通过从下拉列表选择一个选项，可以针对单个隔离原因快速筛选邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-116">You can quickly filter messages for a single quarantine reason by choosing an option from the drop-down list.</span></span> <span data-ttu-id="ce86a-117">选项包括：</span><span class="sxs-lookup"><span data-stu-id="ce86a-117">Options include:</span></span>
+- <span data-ttu-id="7f1ea-120">只有管理员才能访问因为是高可信度钓鱼电子邮件、恶意软件或根据邮件流规则（亦称为“传输规则”）被隔离的邮件。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-120">Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins.</span></span> <span data-ttu-id="7f1ea-121">有关详细信息，请参阅[在 Office 365 中以管理员身份查找和释放已隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-121">For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).</span></span>
 
-- <span data-ttu-id="ce86a-118">标识为垃圾邮件的邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-118">Mail identified as spam.</span></span> <span data-ttu-id="ce86a-119">默认显示的隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-119">These quarantined messages are shown by default.</span></span>
+- <span data-ttu-id="7f1ea-122">可以释放邮件，并将它报告为误报（非垃圾邮件），但只能执行一次。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-122">You can only release a message and report it as a false positive (not junk) once.</span></span>
 
-- <span data-ttu-id="ce86a-120">标识为批量邮件的邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-120">Mail identified as bulk mail.</span></span>
+## <a name="view-your-quarantined-messages"></a><span data-ttu-id="7f1ea-123">查看已隔离邮件</span><span class="sxs-lookup"><span data-stu-id="7f1ea-123">View your quarantined messages</span></span>
 
-<span data-ttu-id="ce86a-121">找到特定的隔离邮件后，单击该邮件可查看其详细信息并执行操作。</span><span class="sxs-lookup"><span data-stu-id="ce86a-121">After you find a specific quarantined message, click the message to view details about it, and take actions.</span></span> <span data-ttu-id="ce86a-122">可以将邮件释放到邮箱，预览邮件，下载邮件，或立即从隔离区删除邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-122">You can release the message to your mailbox, preview the message, download the message, or delete the message from quarantine immediately.</span></span>
+1. <span data-ttu-id="7f1ea-124">在安全与合规中心内，依次转到“威胁管理”\*\*\*\*\>“审阅”\*\*\*\*\>“隔离”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-124">In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="ce86a-123">必须具有 Office 365 的管理员权限，才能处理发送给其他用户的隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-123">You must have admin permissions in Office 365 to work with quarantined messages that were sent to other users.</span></span>
+2. <span data-ttu-id="7f1ea-125">若要对结果进行排序，可以单击可用列标题。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-125">You can sort the results by clicking on an available column header.</span></span> <span data-ttu-id="7f1ea-126">单击“修改列”\*\*\*\* 最多可显示七列。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-126">Click **Modify columns** to show a maximum of seven columns.</span></span> <span data-ttu-id="7f1ea-127">默认值标有星号 (<sup>\*</sup>)：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-127">The default values are marked with an asterisk (<sup>\*</sup>):</span></span>
 
-## <a name="to-filter-and-find-quarantined-messages"></a><span data-ttu-id="ce86a-124">筛选并查找隔离邮件</span><span class="sxs-lookup"><span data-stu-id="ce86a-124">To filter and find quarantined messages</span></span>
+   - <span data-ttu-id="7f1ea-128">**接收时间**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="7f1ea-128">**Received**<sup>\*</sup></span></span>
 
-<span data-ttu-id="ce86a-125">如有大量隔离邮件，可通过筛选将其数量减少到可管理的规模。</span><span class="sxs-lookup"><span data-stu-id="ce86a-125">If you have a lot of quarantined items, you can reduce the number to a manageable set by filtering them.</span></span>
+   - <span data-ttu-id="7f1ea-129">**发件人**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="7f1ea-129">**Sender**<sup>\*</sup></span></span>
 
-1. <span data-ttu-id="ce86a-126">在“**隔离区**”页面上，选择是否要查看“**垃圾邮件**”或“**批量**”隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-126">On the **Quarantine** page, choose whether you want to view **spam** or **bulk** quarantined messages.</span></span>
+   - <span data-ttu-id="7f1ea-130">**主题**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="7f1ea-130">**Subject**<sup>\*</sup></span></span>
 
-2. <span data-ttu-id="ce86a-127">在“**结果排序依据**”下，通过设置相应的一个或多个筛选器，选择任意条件组合（此时不能使用通配符）。</span><span class="sxs-lookup"><span data-stu-id="ce86a-127">Under **Sort results by**, choose any combination of conditions by setting the appropriate filter or filters (you can't use wildcards at this time).</span></span> <span data-ttu-id="ce86a-128">多个条件可供选择，其中包括：</span><span class="sxs-lookup"><span data-stu-id="ce86a-128">There are several conditions you can choose, including the following:</span></span>
+   - <span data-ttu-id="7f1ea-131">**隔离原因**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="7f1ea-131">**Quarantine reason**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="ce86a-129">**邮件 ID**：知道邮件 ID 时，使用此条件可选择特定邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-129">**Message ID**: Use this to select a specific message when you know the message ID.</span></span>
+   - <span data-ttu-id="7f1ea-132">**释放?**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="7f1ea-132">**Released?**<sup>\*</sup></span></span>
 
-     <span data-ttu-id="ce86a-130">例如，如果特定邮件由贵组织的用户发送，或准备发送给贵组织的用户，但是未抵达目标收件人，则可以使用邮件跟踪功能（请参阅[安全与合规中心内的邮件跟踪](message-trace-scc.md)）搜索邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-130">For example, if a specific message is sent by, or intended for, a user in your organization, but it never reached its destination, you can search for the message by using a message trace (see [Message trace in the Security & Compliance Center](message-trace-scc.md)).</span></span> <span data-ttu-id="ce86a-131">如果你发现邮件被发送到隔离区，可能是因为它符合邮件流规则或被标识为垃圾邮件，则可以通过指定其邮件 ID，在隔离区中轻松找到此邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-131">If you discover that the message was sent to quarantine, perhaps because it matched a mail flow rule or was identified as spam, you can then easily find this message in quarantine by specifying its Message ID.</span></span> <span data-ttu-id="ce86a-132">请务必记包含完整邮件 ID 字符串。</span><span class="sxs-lookup"><span data-stu-id="ce86a-132">Be sure to include the full Message ID string.</span></span> <span data-ttu-id="ce86a-133">这可能包括尖括号 (\<\>)，例如：</span><span class="sxs-lookup"><span data-stu-id="ce86a-133">This might include angle brackets (\<\>), for example:</span></span>
+   - <span data-ttu-id="7f1ea-133">**策略类型**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="7f1ea-133">**Policy type**<sup>\*</sup></span></span>
 
-     `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
+   - <span data-ttu-id="7f1ea-134">**到期时间**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="7f1ea-134">**Expires**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="ce86a-134">**发件人电子邮件地址**：选择此项可按发件人电子邮件地址进行筛选。</span><span class="sxs-lookup"><span data-stu-id="ce86a-134">**Sender email address**: Choose to filter by a single sender email address.</span></span>
+   - <span data-ttu-id="7f1ea-135">**收件人**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-135">**Recipient**</span></span>
 
-   - <span data-ttu-id="ce86a-135">**收件人电子邮件地址**：选择此项可按收件人电子邮件地址进行筛选。</span><span class="sxs-lookup"><span data-stu-id="ce86a-135">**Recipient email address**: Choose to filter by a single recipient email address.</span></span>
+   - <span data-ttu-id="7f1ea-136">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-136">**Message ID**</span></span>
 
-   - <span data-ttu-id="ce86a-136">**主题**：输入要查找的电子邮件地址的主题。</span><span class="sxs-lookup"><span data-stu-id="ce86a-136">**Subject**: Enter the subject of an email address you want to find.</span></span>
+   - <span data-ttu-id="7f1ea-137">**策略名称**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-137">**Policy name**</span></span>
 
-   - <span data-ttu-id="ce86a-137">**日期范围**：选择此项可按邮件发送到隔离区的日期进行筛选。</span><span class="sxs-lookup"><span data-stu-id="ce86a-137">**Date range**: You can choose to filter by the date the message was sent to quarantine.</span></span> <span data-ttu-id="ce86a-138">可指定日期或日期范围，包括时间。</span><span class="sxs-lookup"><span data-stu-id="ce86a-138">You can specify the date or a date range, including the time.</span></span>
+   - <span data-ttu-id="7f1ea-138">**大小**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-138">**Size**</span></span>
 
-   - <span data-ttu-id="ce86a-139">**到期日期**：要按到期日期搜索，请选择“**高级筛选器**”。</span><span class="sxs-lookup"><span data-stu-id="ce86a-139">**Expiration date**: To filter by expiration date, choose **Advanced filter**.</span></span> <span data-ttu-id="ce86a-140">可选择将在接下来的 24 小时内（“**今天**”）、未来 48 小时内（“**未来 2 天**”）、未来一周内（“**未来 7 天**”）从隔离区中删除的邮件，或者可选择一个自定义的时间间隔。</span><span class="sxs-lookup"><span data-stu-id="ce86a-140">You can select messages that will be deleted from quarantine within the next 24 hours ( **Today**), within the next 48 hours ( **Next 2 days**), within the next week ( **Next 7 days**), or you can select a custom time interval.</span></span>
+   - <span data-ttu-id="7f1ea-139">**方向**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-139">**Direction**</span></span>
 
-     > [!IMPORTANT]
-     > <span data-ttu-id="ce86a-141">垃圾邮件和批量邮件默认在隔离区中保存 30 天。</span><span class="sxs-lookup"><span data-stu-id="ce86a-141">By default, spam and bulk messages are kept in quarantine for 30 days.</span></span> <span data-ttu-id="ce86a-142">但是此时间段是可配置的，管理员可能已设置不同的隔离区保留期。</span><span class="sxs-lookup"><span data-stu-id="ce86a-142">However, this time period is configurable and your admin might have set a different quarantine retention period.</span></span> <span data-ttu-id="ce86a-143">Office 365 从隔离区删除邮件后，你无法将其恢复。</span><span class="sxs-lookup"><span data-stu-id="ce86a-143">When Office 365 deletes a message from quarantine, you can't get it back.</span></span>
+   <span data-ttu-id="7f1ea-140">完成后，单击“保存”\*\*\*\* 单击“设置为默认设置”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-140">When you're finished, click **Save**, or click **Set to default**.</span></span>
 
-## <a name="view-details-for-a-specific-message"></a><span data-ttu-id="ce86a-144">查看特定邮件的详细信息</span><span class="sxs-lookup"><span data-stu-id="ce86a-144">View details for a specific message</span></span>
+3. <span data-ttu-id="7f1ea-141">若要筛选结果，请单击“筛选器”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-141">To filter the results, click **Filter**.</span></span> <span data-ttu-id="7f1ea-142">以下筛选器可用：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-142">The available filters are:</span></span>
 
-<span data-ttu-id="ce86a-145">选择邮件后，页面右侧的窗格会显示邮件属性摘要。</span><span class="sxs-lookup"><span data-stu-id="ce86a-145">After you select a message, you'll see a summary of the message properties in a pane on the right side of the page.</span></span>
+   - <span data-ttu-id="7f1ea-143">**到期时间**：按邮件的隔离到期时间筛选：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-143">**Expires time**: Filter messages by when they will expire from quarantine:</span></span>
 
-- <span data-ttu-id="ce86a-146">**邮件 ID**：邮件的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="ce86a-146">**Message ID**: The unique identifier for the message.</span></span>
+     - <span data-ttu-id="7f1ea-144">**今天**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-144">**Today**</span></span>
 
-- <span data-ttu-id="ce86a-147">**发件人地址**：邮件发送者。</span><span class="sxs-lookup"><span data-stu-id="ce86a-147">**Sender Address**: Who sent the message.</span></span>
+     - <span data-ttu-id="7f1ea-145">**未来 2 天**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-145">**Next 2 days**</span></span>
 
-- <span data-ttu-id="ce86a-148">**接收时间**：接收邮件的日期。</span><span class="sxs-lookup"><span data-stu-id="ce86a-148">**Received**: The date the message was received.</span></span>
+     - <span data-ttu-id="7f1ea-146">**未来 7 天**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-146">**Next 7 days**</span></span>
 
-- <span data-ttu-id="ce86a-149">**主题**：邮件主题行的文本。</span><span class="sxs-lookup"><span data-stu-id="ce86a-149">**Subject**: The text of the Subject line in the message.</span></span>
+     - <span data-ttu-id="7f1ea-147">**自定义**：输入“开始日期”\*\*\*\* 和“结束日期”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-147">**Custom**: Enter a **Start date** and **End date**.</span></span>
 
-- <span data-ttu-id="ce86a-150">**隔离原因**：显示邮件是否被标识为“**垃圾邮件**”或“**批量邮件**”。</span><span class="sxs-lookup"><span data-stu-id="ce86a-150">**Quarantine reason**: Shows if a message has been identified as **Spam** or **Bulk**.</span></span>
+   - <span data-ttu-id="7f1ea-148">**接收时间**：输入“开始日期”\*\*\*\* 和“结束日期”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-148">**Received time**: Enter a **Start date** and **End date**.</span></span>
 
-- <span data-ttu-id="ce86a-151">**过期**：从隔离区删除邮件的日期。</span><span class="sxs-lookup"><span data-stu-id="ce86a-151">**Expires**: The date when the message will be deleted from quarantine.</span></span>
+   - <span data-ttu-id="7f1ea-149">**隔离原因**：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-149">**Quarantine reason**:</span></span>
 
-- <span data-ttu-id="ce86a-152">**释放位置**：邮件已释放到其中的所有电子邮件地址（如有）。</span><span class="sxs-lookup"><span data-stu-id="ce86a-152">**Released to**: All email addresses (if any) to which the message has been released.</span></span>
+     - <span data-ttu-id="7f1ea-150">**大量邮件**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-150">**Bulk**</span></span>
 
-- <span data-ttu-id="ce86a-153">**尚未释放到其中的位置**：邮件尚未释放到其中的所有电子邮件地址（如有）。</span><span class="sxs-lookup"><span data-stu-id="ce86a-153">**Not yet released to**: All email addresses (if any) to which the message has not been released.</span></span> <span data-ttu-id="ce86a-154">要将邮件释放到邮箱（下一节介绍有关释放邮件的详细信息），可以选择“**释放**”。</span><span class="sxs-lookup"><span data-stu-id="ce86a-154">You can choose **Release** if you want to release the message to your mailbox (more about releasing messages in the next section).</span></span>
+     - <span data-ttu-id="7f1ea-151">**垃圾邮件**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-151">**Spam**</span></span>
 
-<span data-ttu-id="ce86a-155">通过选择以下选项之一，可获得有关邮件的更多详细信息：</span><span class="sxs-lookup"><span data-stu-id="ce86a-155">You can get even more details about the message by choosing one of the following options:</span></span>
+     - <span data-ttu-id="7f1ea-152">**钓鱼邮件**（自 2020 年 4 月起）</span><span class="sxs-lookup"><span data-stu-id="7f1ea-152">**Phish** (As of April, 2020)</span></span>
 
-- <span data-ttu-id="ce86a-156">**查看邮件头**：选择此选项可查看邮件头文本。</span><span class="sxs-lookup"><span data-stu-id="ce86a-156">**View message header**: Choose this to see the message header text.</span></span> <span data-ttu-id="ce86a-157">要深入分析邮件头，请将邮件头文本复制到剪贴板，然后选择“**Microsoft 邮件头分析器**”，即可转到远程连接分析器（如果希望在不离开 Office 365 的情况下完成这项任务，右键单击并选择“在新选项卡中打开”）。</span><span class="sxs-lookup"><span data-stu-id="ce86a-157">To analyze the header in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose Open in a new tab if you don't want to leave Office 365 to complete this task).</span></span> <span data-ttu-id="ce86a-158">将邮件头粘贴到邮件头分析器部分的页面中，然后选择“分析邮件头”。</span><span class="sxs-lookup"><span data-stu-id="ce86a-158">Paste the message header onto the page in the Message Header Analyzer section, and choose Analyze headers.</span></span>
+   <span data-ttu-id="7f1ea-153">若要清除筛选器，请单击“清除”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-153">To clear the filter, click **Clear**.</span></span> <span data-ttu-id="7f1ea-154">若要隐藏筛选器浮出控件，请再次单击“筛选器”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-154">To hide the filter flyout, click **Filter** again.</span></span>
 
-- <span data-ttu-id="ce86a-159">**预览邮件**：选择此选项可以查看邮件正文文本的原始版本或 HTML 版本。</span><span class="sxs-lookup"><span data-stu-id="ce86a-159">**Preview message**: Lets you see raw or HTML versions of the message body text.</span></span> <span data-ttu-id="ce86a-160">在 HTML 视图中，禁用链接。</span><span class="sxs-lookup"><span data-stu-id="ce86a-160">In the HTML view, links are disabled.</span></span>
+4. <span data-ttu-id="7f1ea-155">使用“结果排序依据”\*\*\*\*（默认为“邮件 ID”\*\*\*\* 按钮）和相应值查找特定邮件。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-155">Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages.</span></span> <span data-ttu-id="7f1ea-156">不支持通配符。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-156">Wildcards aren't supported.</span></span> <span data-ttu-id="7f1ea-157">可以按下面的值搜索：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-157">You can search by the following values:</span></span>
 
-## <a name="manage-your-quarantined-messages"></a><span data-ttu-id="ce86a-161">管理隔离邮件</span><span class="sxs-lookup"><span data-stu-id="ce86a-161">Manage your quarantined messages</span></span>
+   - <span data-ttu-id="7f1ea-158">**邮件 ID**：邮件的全局唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-158">**Message ID**: The globally unique identifier of the message.</span></span> <span data-ttu-id="7f1ea-159">在你选择列表中的邮件后，“详细信息”\*\*\*\* 浮出控件窗格随即显示，其中包含“邮件 ID”\*\*\*\* 值。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-159">If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears.</span></span> <span data-ttu-id="7f1ea-160">管理员可以使用[邮件跟踪](message-trace-scc.md)来查找邮件及其相应“邮件 ID”值。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-160">Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.</span></span>
 
-<span data-ttu-id="ce86a-162">选择邮件或邮件组后，有多个选项可用于管理隔离区的邮件。</span><span class="sxs-lookup"><span data-stu-id="ce86a-162">After you select a message or group of messages, you have several options for managing messages in quarantine.</span></span>
+   - <span data-ttu-id="7f1ea-161">**发件人电子邮件地址**：单个发件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-161">**Sender email address**: A single sender's email address.</span></span>
 
-- <span data-ttu-id="ce86a-163">不执行任何操作。</span><span class="sxs-lookup"><span data-stu-id="ce86a-163">Do nothing.</span></span> <span data-ttu-id="ce86a-164">如果选择不执行任何操作，邮件到期后，将由 Office 365 自动删除。</span><span class="sxs-lookup"><span data-stu-id="ce86a-164">If you choose to do nothing, the message will be deleted by Office 365 automatically upon expiration.</span></span> <span data-ttu-id="ce86a-165">请记住，Office 365 从隔离区删除邮件后，你无法将其恢复。</span><span class="sxs-lookup"><span data-stu-id="ce86a-165">Remember, when Office 365 deletes a message from quarantine, you can't get it back.</span></span>
+   - <span data-ttu-id="7f1ea-162">**收件人电子邮件地址**：单个收件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-162">**Recipient email address**: A single recipient's email address.</span></span>
 
-- <span data-ttu-id="ce86a-166">**释放邮件**：释放隔离邮件（或邮件组），使邮件发送到邮箱。</span><span class="sxs-lookup"><span data-stu-id="ce86a-166">**Release message**: Release a quarantined message (or set of messages) so that the message is sent to your mailbox.</span></span> <span data-ttu-id="ce86a-167">释放邮件后，可选择将邮件报告给 Microsoft 进行分析。</span><span class="sxs-lookup"><span data-stu-id="ce86a-167">When you release a message, you have the option to report the message to Microsoft for analysis.</span></span>
+   - <span data-ttu-id="7f1ea-163">**主题**：使用邮件的整个主题。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-163">**Subject**: Use the entire subject of the message.</span></span> <span data-ttu-id="7f1ea-164">搜索不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-164">The search is not case-sensitive.</span></span>
 
-    <span data-ttu-id="ce86a-168">选择报告邮件（也称为报告邮件为误报）时，邮件会报告给 Microsoft 垃圾邮件分析团队。</span><span class="sxs-lookup"><span data-stu-id="ce86a-168">When you choose to report a message, also called reporting a message as a false positive, the message is reported to the Microsoft Spam Analysis Team.</span></span> <span data-ttu-id="ce86a-169">该团队对误报邮件进行评估和分析，根据分析结果，可能会调整服务范围内的垃圾邮件内容筛选规则，以允许这些邮件通过筛选。</span><span class="sxs-lookup"><span data-stu-id="ce86a-169">The team evaluates and analyzes false positive messages, and, depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow these messages through.</span></span>
+   <span data-ttu-id="7f1ea-165">输入搜索条件后，单击“刷新”\*\*\*\* ![“刷新”按钮](../media/scc-quarantine-refresh.png) 来筛选结果。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-165">After you've entered the search criteria, click ![Refresh button](../media/scc-quarantine-refresh.png) **Refresh** to filter the results.</span></span>
 
-- <span data-ttu-id="ce86a-170">**从隔离区删除**：立即从隔离区删除邮件，不将邮件释放到邮箱。</span><span class="sxs-lookup"><span data-stu-id="ce86a-170">**Remove from quarantine**: Deletes the message immediately from quarantine without releasing the message to your mailbox.</span></span>
+<span data-ttu-id="7f1ea-166">找到特定的已隔离邮件后，选择此邮件即可查看它的详细信息，并对它执行操作（例如，查看、释放、下载或删除邮件）。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-166">After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).</span></span>
+
+### <a name="export-message-results"></a><span data-ttu-id="7f1ea-167">导出邮件结果</span><span class="sxs-lookup"><span data-stu-id="7f1ea-167">Export message results</span></span>
+
+1. <span data-ttu-id="7f1ea-168">选择你有意访问的邮件，然后单击“导出结果”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-168">Select the messages you're interested in, and click **Export results**.</span></span>
+
+2. <span data-ttu-id="7f1ea-169">在警告你不要关闭浏览器窗口的确认消息中，单击“是”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-169">Click **Yes** in the confirmation message that warns you to keep the browser window open.</span></span>
+
+3. <span data-ttu-id="7f1ea-170">在导出结果准备就绪后，可以为 .csv 文件命令并选择下载位置。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-170">When your export is ready, you can name and choose the download location for the .csv file.</span></span>
+
+### <a name="view-quarantined-message-details"></a><span data-ttu-id="7f1ea-171">查看已隔离邮件的详细信息</span><span class="sxs-lookup"><span data-stu-id="7f1ea-171">View quarantined message details</span></span>
+
+<span data-ttu-id="7f1ea-172">选择列表中的电子邮件后，可以在“详细信息”\*\*\*\* 浮出控件窗格中看到以下邮件详细信息：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-172">When you select an email message in the list, the following message details appear in the **Details** flyout pane:</span></span>
+
+- <span data-ttu-id="7f1ea-173">**邮件 ID**：邮件的全局唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-173">**Message ID**: The globally unique identifier for the message.</span></span>
+
+- <span data-ttu-id="7f1ea-174">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-174">**Sender address**</span></span>
+
+- <span data-ttu-id="7f1ea-175">**接收时间**：收到邮件的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-175">**Received**: The date/time when the message was received.</span></span>
+
+- <span data-ttu-id="7f1ea-176">**主题**</span><span class="sxs-lookup"><span data-stu-id="7f1ea-176">**Subject**</span></span>
+
+- <span data-ttu-id="7f1ea-177">**隔离原因**：显示邮件是被标识为“垃圾邮件”\*\*\*\*、“大量邮件”\*\*\*\* 还是（自 2020 年 4 月起）“钓鱼邮件”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-177">**Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or (as of April, 2020) **Phish**.</span></span>
+
+- <span data-ttu-id="7f1ea-178">**收件人**：如果邮件有多个收件人，需要单击“预览邮件”\*\*\*\* 或“查看邮件头”\*\*\*\*，以查看完整的收件人列表。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-178">**Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.</span></span>
+
+- <span data-ttu-id="7f1ea-179">**到期时间**：邮件自动从隔离中永久删除的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-179">**Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.</span></span>
+
+- <span data-ttu-id="7f1ea-180">**已释放到的位置**：邮件已释放到的所有电子邮件地址（若有）。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-180">**Released to**: All email addresses (if any) to which the message has been released.</span></span>
+
+- <span data-ttu-id="7f1ea-181">**尚未释放到的位置**：邮件尚未释放到的所有电子邮件地址（若有）。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-181">**Not yet released to**: All email addresses (if any) to which the message has not yet been released.</span></span>
+
+### <a name="take-action-on-quarantined-email"></a><span data-ttu-id="7f1ea-182">对已隔离电子邮件执行操作</span><span class="sxs-lookup"><span data-stu-id="7f1ea-182">Take action on quarantined email</span></span>
+
+<span data-ttu-id="7f1ea-183">选择电子邮件后，可以在“详细信息”\*\*\*\* 浮出控件窗格中选择要对邮件执行的操作：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-183">After you select a message, you have options for what to do with the messages in the **Details** flyout pane:</span></span>
+
+- <span data-ttu-id="7f1ea-184">**释放邮件**：在显示的浮出控件窗格中，选择是否选中“将邮件报告给 Microsoft 进行分析”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-184">**Release message**: In the flyout pane that appears, choose whether to **Report messages to Microsoft for analysis**.</span></span> <span data-ttu-id="7f1ea-185">此选项默认处于选中状态，并将已错误隔离的邮件作为误报报告给 Microsoft。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-185">This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive.</span></span>
+
+  <span data-ttu-id="7f1ea-186">完成后，单击“释放邮件”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-186">When you're finished, click **Release messages**.</span></span>
+
+- <span data-ttu-id="7f1ea-187">**查看邮件头**：选择此链接可查看邮件头文本。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-187">**View message header**: Choose this link to see the message header text.</span></span> <span data-ttu-id="7f1ea-188">若要深入分析邮件头字段和值，请将邮件头文本复制到剪贴板，然后选择“Microsoft 邮件头分析器\*\*\*\*”，即可转到远程连接分析器（如果希望在不离开 Office 365 的情况下完成这项任务，请右键单击并选择“在新标签页中打开”\*\*\*\*）。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-188">To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task).</span></span> <span data-ttu-id="7f1ea-189">将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”\*\*\*\*：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-189">Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:</span></span>
+
+- <span data-ttu-id="7f1ea-190">**预览邮件**：在显示的浮出控件窗格中，选择以下选项之一：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-190">**Preview message**: In the flyout pane that appears, choose one of the following options:</span></span>
+
+  - <span data-ttu-id="7f1ea-191">**源视图**：显示禁用所有链接的 HTML 版邮件正文。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-191">**Source view**: Shows the HTML version of the message body with all links disabled.</span></span>
+  
+  - <span data-ttu-id="7f1ea-192">**文本视图**：以纯文本格式显示邮件正文。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-192">**Text view**: Shows the message body in plain text.</span></span>
+
+- <span data-ttu-id="7f1ea-193">**下载邮件**：在显示的浮出控件窗格中，选择“我了解下载此邮件所面临的风险”\*\*\*\*，以使用 .eml 格式保存邮件的本地副本。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-193">**Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.</span></span>
+
+- <span data-ttu-id="7f1ea-194">**从隔离中删除**：当你在显示的警告中单击“是”\*\*\*\* 后，邮件会立即删除。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-194">**Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.</span></span>
+
+<span data-ttu-id="7f1ea-195">完成后，单击“关闭”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-195">When you're finished, click **Close**.</span></span>
+
+<span data-ttu-id="7f1ea-196">如果你没有释放或删除邮件，它会在默认隔离保持期到期后删除。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-196">If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.</span></span>
+
+#### <a name="take-action-on-multiple-quarantined-email-messages"></a><span data-ttu-id="7f1ea-197">对多封已隔离电子邮件执行操作</span><span class="sxs-lookup"><span data-stu-id="7f1ea-197">Take action on multiple quarantined email messages</span></span>
+
+<span data-ttu-id="7f1ea-198">在你选择列表中的多封已隔离邮件（最多 100 封）后，“批量操作”\*\*\*\* 浮出控件窗格随即显示，你可以在其中执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="7f1ea-198">When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:</span></span>
+
+- <span data-ttu-id="7f1ea-199">**释放邮件**：除了无法选择“将邮件释放给特定收件人”\*\*\*\* 之外，可以选择的选项与释放一封邮件时相同，即只能选择“将邮件释放给所有收件人”\*\*\*\* 或“将邮件释放给其他用户”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-199">**Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.</span></span>
+
+- <span data-ttu-id="7f1ea-200">**删除邮件**：当你在显示的警告中单击“是”\*\*\*\* 后，邮件会立即删除，而不会发送给原始收件人。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-200">**Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.</span></span>
+
+<span data-ttu-id="7f1ea-201">完成后，单击“关闭”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="7f1ea-201">When you're finished, click **Close**.</span></span>
