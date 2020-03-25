@@ -2,8 +2,8 @@
 title: Office 365 中的反欺骗保护
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTtracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文介绍 Office 365 如何缓解使用伪造发件人域（即欺骗性域）的网络钓鱼攻击。 通过分析邮件并阻止无法使用标准电子邮件身份验证方法或其他发件人信誉技术进行身份验证的邮件，它可以实现这一目标。 实施此更改是为了减少 Office 365 中的组织所面临的网络钓鱼攻击的数量。
-ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9e1a4cf31c2565eeb6be53b5c43bda0154f9ea6f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087021"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894134"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的反欺骗保护
 
@@ -89,10 +89,9 @@ Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅
 
 虽然 SPF、DKIM 和 DMARC 本身都很有用，但如果邮件没有明确的身份验证记录，它们就无法传递充足的身份验证状态。 为此，Microsoft 开发了一种算法，可将多个信号组合成一个称为复合身份验证（或简称为“compauth”）的单一值。 Office 365 中的客户可以在邮件头的“*Authentication-Results*”标头中标记 compauth 值。
 
-```
+```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
-
 ```
 
 |**CompAuth 结果**|**说明**|
@@ -259,7 +258,7 @@ To: someone@fabrikam.com
 
 ### <a name="changing-your-anti-spoofing-settings"></a>更改反欺骗设置
 
-若要创建或更新（跨域）反欺骗设置，请导航到安全 &amp;合规中心的“威胁管理”\>“策略”选项卡下的“反网络钓鱼”\>“反欺骗设置”。 如果你从未创建任何反网络钓鱼设置，则需要创建一个：
+若要创建或更新（跨域）防欺骗设置，请转到安全与合规中心的“威胁管理”\>“策略”选项卡下的“防钓鱼”\>“防欺骗”设置。 如果你从未创建任何反网络钓鱼设置，则需要创建一个：
 
 ![反网络钓鱼 - 创建新策略](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
@@ -380,19 +379,19 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 ### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>查看有关多少邮件被标记为欺骗邮件的报表
 
-启用反欺骗策略后，你可以使用威胁调查和响应功能来获取标记为网络钓鱼的邮件数量。 若要执行此操作，请进入“威胁管理”\>“资源管理器”下的安全 &amp; 合规中心 (SCC)，将视图设置为“网络钓鱼”，并按发件人域或保护状态进行分组：
+启用反欺骗策略后，你可以使用威胁调查和响应功能来获取标记为网络钓鱼的邮件数量。 为此，请转到安全与合规中心 (SCC) 的“威胁管理”\>“资源管理器”下，将“视图”设置为“钓鱼”，并按“发件人域”或“保护状态”进行分组：
 
 ![查看标记为网络钓鱼的邮件数量](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 你可以与各种报表进行交互，以查看有多少邮件标记为网络钓鱼，包括标记为“SPOOF”的邮件。 有关详细信息，请参阅[开始使用 Office 365 威胁调查和响应](office-365-ti.md)。
 
-由于是欺骗而不是其他类型的网络钓鱼（一般网络钓鱼、域或用户模拟等），你无法拆分已标记的邮件。 但是，稍后你可以通过安全 &amp; 合规中心执行此操作。 完成后，你可以将此报表用作起点，以识别由于身份验证失败而被标记为欺骗邮件的可能合法的发送域。
+由于是欺骗而不是其他类型的网络钓鱼（一般网络钓鱼、域或用户模拟等），你无法拆分已标记的邮件。 不过，稍后将能通过安全与合规中心执行此操作。 完成后，你可以将此报表用作起点，以识别由于身份验证失败而被标记为欺骗邮件的可能合法的发送域。
 
 以下屏幕截图是关于数据外观的建议，但在发布时可能会发生改变：
 
 ![按检测类型查看网络钓鱼报表](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
-对于非 ATP 和 E5 客户，这些报表将在后面的威胁防护状态 (TPS) 报表中提供，但会延迟至少 24 小时。 此页面将在集成到安全 &amp; 合规中心时进行更新。
+对于非 ATP 和 E5 客户，这些报表将在后面的威胁防护状态 (TPS) 报表中提供，但会延迟至少 24 小时。 此页面将在集成到安全与合规中心时进行更新。
 
 ### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>预测将标记为欺骗邮件的邮件数量
 
@@ -503,7 +502,7 @@ New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 ```
 
-只能通过 cmdlet（稍后将在安全 &amp; 合规中心提供）来禁用反欺骗。 如果你无权访问 PowerShell，请创建支持票证。
+只能通过 cmdlet 禁用防欺骗（稍后将能在安全与合规中心内禁用）。 如果你无权访问 PowerShell，请创建支持票证。
 
 请记住，这仅适用于发送到 Office 365 时经历间接路由的域。 抵制由于某些误报而禁用反欺骗的诱惑，从长远来看，启用它们会更好。
 
@@ -650,9 +649,11 @@ Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅
 
 几乎所有大型电子邮件接收器都实施了传统的 SPF、DKIM 和 DMARC。 某些接收器拥有比这些标准更为严格的其他检查，但很少有接收器会像 Office 365 那样阻止未经身份验证的电子邮件并将其视为欺骗邮件。 但是，对于这种特定类型的电子邮件，大多数行业正变得越来越严格，特别是对于网络钓鱼问题。
 
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>如果启用反欺骗，是否仍需要为“SPF 硬失败”启用高级垃圾邮件筛选选项？
+### <a name="do-i-still-need-to-enable-the-advanced-spam-filter-asf-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>如果我已启用防欺骗，是否仍需要启用高级垃圾邮件筛选 (ASF) 设置“SPF 记录:硬故障”(_MarkAsSpamSpfRecordHardFail_)？
 
-否，不再需要此选项，因为反欺骗功能不仅考虑 SPF 硬失败，而且会考虑更广泛的标准。 如果已启用反欺骗并且启用了“SPF 硬失败”选项，则可能会出现更多误报。 我们建议禁用此功能，因为它几乎不会额外捕获垃圾邮件或网络钓鱼，而是会产生大多数误报。
+否，不再需要此选项，因为反欺骗功能不仅考虑 SPF 硬失败，而且会考虑更广泛的标准。 如果已启用防欺骗和“SPF 记录:硬故障”****(_MarkAsSpamSpfRecordHardFail_)，可能会收到更多误报。
+
+建议禁用此功能，因为它几乎不会额外捕获垃圾邮件或钓鱼邮件，而只会生成大部分误报。 有关详细信息，请参阅 [Office 365 中的高级垃圾邮件筛选 (ASF) 设置](advanced-spam-filtering-asf-options.md)。
 
 ### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>发件人重写方案 (SRS) 是否有助于修复转发的电子邮件？
 

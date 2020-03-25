@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 作为 Office 365 用户，你可以查看、释放和删除已隔离邮件，即你是收件人但被垃圾邮件筛选功能隔离为垃圾邮件或大量电子邮件的邮件。 在安全与合规中心内，查看和管理已隔离邮件。
-ms.openlocfilehash: e74358d57b96c8655fbf6a3f7f0b6eedb5e65ede
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 04f04cfddb123bf176f3c71568789c77d225a601
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857329"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893666"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>在 Office 365 中以用户身份查找和释放已隔离邮件
 
@@ -38,9 +38,9 @@ ms.locfileid: "42857329"
 
 - 管理员可以配置邮件在永久删除前的隔离期限（反垃圾邮件策略）。 隔离到期的邮件不可恢复。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-- 此外，管理员还可以在反垃圾邮件策略中[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md)。 自 2019 年 10 月起，你无法再直接通过这些通知来释放已隔离邮件。 可以单击通知中的“审阅”****，这会定向到安全与合规中心内的“隔离”。 有关详细信息，请参阅 [Office 365 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
+- 此外，管理员还可以在反垃圾邮件策略中[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 自 2019 年 10 月起，你无法再直接通过这些通知来释放已隔离邮件。 可以单击通知中的“审阅”****，这会定向到安全与合规中心内的“隔离”。 若要详细了解这些通知，请参阅 [Office 365 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-- 只有管理员才能访问因为是高可信度钓鱼电子邮件、恶意软件或根据邮件流规则（亦称为“传输规则”）被隔离的邮件。 有关详细信息，请参阅[在 Office 365 中以管理员身份查找和释放已隔离邮件](find-and-release-quarantined-messages-as-an-administrator.md)。
+- 只有管理员才能访问因为是高可信度钓鱼电子邮件、恶意软件或根据邮件流规则（亦称为“传输规则”）被隔离的邮件。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
 
 - 可以释放邮件，并将它报告为误报（非垃圾邮件），但只能执行一次。
 

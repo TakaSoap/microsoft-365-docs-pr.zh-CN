@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634750"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894393"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -311,7 +311,8 @@ ms.locfileid: "42634750"
 |[高级电子数据展示活动](#advanced-ediscovery-activities)|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Yammer 活动](#yammer-activities)|
 |[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|[Microsoft Stream 活动](#microsoft-stream-activities)|
-|[Microsoft Forms 活动](#microsoft-forms-activities)|[敏感度标签活动](#sensitivity-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)||
+|[内容浏览器活动](#content-explorer-activities)|[Microsoft Forms 活动](#microsoft-forms-activities)|[敏感度标签活动](#sensitivity-label-activities)|
+|[Exchange 管理员活动](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -802,7 +803,16 @@ ms.locfileid: "42634750"
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream 活动
 
-可以在审核日志中搜索 Microsoft Stream 内的活动。 这些活动包括用户执行的视频活动、组频道活动和管理员活动，例如管理用户、管理组织设置和导出报告。 有关这些活动的说明，请参阅 [Microsoft Stream 中的审核日志](https://docs.microsoft.com/stream/audit-logs)的“Microsoft Stream 中记录的活动”部分。
+可以在审核日志中搜索 Microsoft Stream 内的活动。 这些活动包括用户执行的视频活动、组频道活动和管理员活动，例如管理用户、管理组织设置和导出报告。 有关这些活动的说明，请参阅 [Microsoft Stream 中的审核日志](https://docs.microsoft.com/stream/audit-logs#actions-logged-in-stream)的“Stream 中记录的活动”部分。
+
+### <a name="content-explorer-activities"></a>内容浏览器活动
+
+下表列出了 Office 365 审核日志中记录的内容浏览器活动。 内容浏览器，可以在 Microsoft 365 合规中心的数据分类工具上访问。 有关详细信息，请参阅[使用数据分类内容浏览器](data-classification-content-explorer.md)。
+
+|**友好名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+|访问的项|AccessedItem|管理员（或是作为内容浏览器内容查看器角色组成员的用户）使用内容浏览器来查看电子邮件或 SharePoint/OneDrive 文档。|
+||||
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Forms 活动
 

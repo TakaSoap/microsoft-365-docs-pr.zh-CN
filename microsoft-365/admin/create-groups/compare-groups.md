@@ -1,8 +1,7 @@
 ---
 title: 比较 Office 365 中的组
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解可在 Office 365 中使用的组类型。
-ms.openlocfilehash: 5b8a3a7859a510a07b579f3b1da255e555d6ae1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7d0a18606918884381b0bf7863cfac6cafb29c29
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238086"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894595"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -33,15 +32,15 @@ ms.locfileid: "42238086"
 
 - **Office 365 组** 用于公司内部和外部用户之间的协作。
 - **通讯组** 用于向一组人员发送通知。
-- **安全组** 用于授予对 SharePoint 资源的访问权限。
-- **已启用邮件的安全组** 用于授予 SharePoint 资源的访问权限，并向这些用户发送电子邮件通知。
+- **安全组**用于授予对资源（如 SharePoint 网站）的访问权限。
+- **启用邮件的安全组**用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
 - 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址）时，将使用**共享邮箱**。
 
 ## <a name="office-365-groups"></a>Office 365 组
 
 Office 365 组用于公司内部和外部用户之间的协作。 对于每个 Office 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Planner。
 
-只要[管理员启用](manage-guest-access-in-groups.md)了此功能，就可以将公司外部的用户添加到组中。 还可以允许外部发件人向组电子邮件地址发送电子邮件。
+只要[管理员启用](manage-guest-access-in-groups.md)了此功能，你就可以将组织外部的人员添加到组中。 还可以允许外部发件人向组电子邮件地址发送电子邮件。
 
 可[为 Azure Active Directory中的动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)配置 Office 365 组，以便根据部门、位置、职衔等等用户属性自动添加或删除组成员。
 
@@ -77,7 +76,7 @@ Office 365 组用于公司内部和外部用户之间的协作。 对于每个 O
 
 如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
 
-目前不能将共享邮箱迁移到 Office 365 组。 所需内容是什么？ 请告知我们。 **[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)**
+暂无法将共享邮箱迁移到 Office 365 组中。 所需内容是什么？ 请告知我们。 **[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)**。
 
 ## <a name="related-articles"></a>相关文章
 

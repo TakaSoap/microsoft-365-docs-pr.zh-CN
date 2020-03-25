@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 通过安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
-ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826287"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894883"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -87,7 +87,10 @@ DLP 策略包含以下基本内容：
 
 如果你选择包含或排除特定的 SharePoint 网站或 OneDrive 帐户，则 DLP 策略可包含不超过 100 个此类包含和排除项。 尽管存在此限制，你可应用组织范围策略或位置整体策略来超出此限制。
   
-### <a name="rules"></a>规则
+### <a name="rules"></a>Rules
+
+> [!NOTE]
+> 当未配置警报时，DLP 策略的默认行为是，不发出警报或不触发事件。 这仅适用于默认信息类型。 对于自定义信息类型，即使策略中未定义任何操作，系统也会发出警报。
 
 规则用于对组织的内容强制执行业务要求。 策略包含一条或多条规则，每条规则由多个条件和操作组成。 对于每条规则，只要满足了条件，就会自动执行操作。 规则按顺序执行，从每个策略中优先级最高的规则开始。
   
@@ -423,16 +426,16 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 2. **移动到使用通知和策略提示的测试模式**，以便您可以开始向用户介绍合规性策略，让用户对将要应用的规则做好准备。在这一阶段，您还可以要求用户报告误报，便于您进一步优化规则。 
     
 3. **开始完全强制执行策略**，以便应用规则中的操作，并保护内容。 继续监视 DLP 报告及任何事件报告或通知，确保结果是你所期望的。 
-    
-![使用测试模式和启用策略的选项](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
-  
-你可以随时关闭 DLP 策略，这将影响此策略中的所有规则。 但是，也可以通过在规则编辑器中切换其状态来单独关闭每个规则。
-  
-![关闭策略中的规则的选项](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-你还可以更改策略中的多个规则的优先级。 若要执行此操作，请打开要编辑的策略。 在规则行中，选择省略号 (**...**)，然后选择一个选项，例如“**下移**”或“**移到最后**”。
+    ![使用测试模式和启用策略的选项](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-![设置规则优先级](../media/dlp-set-rule-priority.png)
+    你可以随时关闭 DLP 策略，这将影响此策略中的所有规则。 但是，也可以通过在规则编辑器中切换其状态来单独关闭每个规则。
+
+    ![关闭策略中的规则的选项](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+    你还可以更改策略中的多个规则的优先级。 若要执行此操作，请打开要编辑的策略。 在规则行中，选择省略号 (**...**)，然后选择一个选项，例如“**下移**”或“**移到最后**”。
+
+    ![设置规则优先级](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP 报告
 
@@ -534,9 +537,9 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
     
 2. 对 DLP 报告使用以下任意 cmdlet：
     
-  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
-    
-  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>更多信息
 
@@ -554,4 +557,3 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
     
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
     
-
