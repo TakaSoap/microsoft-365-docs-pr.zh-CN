@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2e7999fef43adb372947d9edf92b84ac67f347fe
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235001"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929036"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -46,7 +46,7 @@ ms.locfileid: "42235001"
 | `RemoteUrl` | string | 连接到的 URL 或完全限定域名 (FQDN) |
 | `LocalIP` | string | 分配给在通信期间使用的本地计算机的 IP 地址 |
 | `LocalPort` | int | 通信期间使用的本地计算机上的 TCP 端口 |
-| `Protocol` | string | 使用的 IP 协议，无论是 TCP 还是 UDP |
+| `Protocol` | string | 通信过程中使用的协议 |
 | `LocalIPType` | string | IP 地址的类型，例如 Public、Private、Reserved、环回、Teredo、FourToSixMapping 和广播 |
 | `RemoteIPType` | string | IP 地址的类型，例如 Public、Private、Reserved、环回、Teredo、FourToSixMapping 和广播 |
 | `InitiatingProcessSHA1` | string | 启动事件的过程（图像文件）的 SHA-1 |

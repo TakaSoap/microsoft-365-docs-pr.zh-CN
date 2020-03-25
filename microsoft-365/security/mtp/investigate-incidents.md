@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 82069224a3f38357e52c2772c984d20d6597342d
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1883f61f50dad9b601329369bf180ddecba70138
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857483"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928958"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>调查 Microsoft 威胁防护中的事件
 
@@ -115,4 +115,4 @@ Microsoft 威胁防护自动调查警报中所有事件支持的事件和可疑�
 - [事件概述](incidents-overview.md)
 - [确定事件优先级](incident-queue.md)
 - [管理事件](manage-incidents.md)
-- [查看特定计算机上的事件和警报](machine-profile.md)
+

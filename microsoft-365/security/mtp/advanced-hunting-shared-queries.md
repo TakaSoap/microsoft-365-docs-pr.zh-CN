@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7ff46226e2535ed9826a61afa857e38b03c06ce1
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 38eb3c39c5473d0a729b12771b61e965dbc81931
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234671"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929476"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -66,8 +66,9 @@ Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://
 >此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 将这些查询作为 Microsoft Defender 安全中心[威胁分析](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)报告的一部分提供。
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
+- [处理查询结果](advanced-hunting-query-results.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

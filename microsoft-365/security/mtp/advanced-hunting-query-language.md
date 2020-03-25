@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7f2cf7f62060774343354467d27b76456f6581fc
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: e093bd9c5a76b44cf66591b4212f37014189186e
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "42567023"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928992"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -153,7 +153,8 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 有关 Kusto 查询语言和受支持运算符的详细信息，请参阅 [Kusto 查询语言文档](https://docs.microsoft.com/azure/kusto/query/)。
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
+- [处理查询结果](advanced-hunting-query-results.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
