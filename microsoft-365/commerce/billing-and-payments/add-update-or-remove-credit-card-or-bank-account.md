@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: 了解如何在 Microsoft 365 管理中心中管理你的支付方式。
-ms.openlocfilehash: 49f1c0847ef53bea9a16a6aedb20f7d3a96d6e2c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409697"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952002"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>添加、更新或删除支付方式
 
@@ -107,7 +107,7 @@ ms.locfileid: "42409697"
 6. 从下拉列表中选择新的支付方式，然后选择 "**更改**"。
     > [!WARNING]
     > 此方法将移动对新付款方式的所有订阅。
-7. 选择 "**删除**"。
+7. 选择“删除”****。
 
 ### <a name="change-the-payment-method-used-to-pay-for-subscriptions"></a>更改用于付款订阅的付款方式
 
@@ -120,7 +120,7 @@ ms.locfileid: "42409697"
 5. 从下拉列表中选择另一种付款方式，然后选择 "**更改**"。
     > [!WARNING]
     > 此方法将移动所有订阅的备用付款方式。
-6. 选择 "**删除**"。
+6. 选择“删除”****。
 
 ### <a name="change-the-payment-method-for-a-billing-profile"></a>更改记帐配置文件的付款方式
 
@@ -158,9 +158,7 @@ ms.locfileid: "42409697"
 只有全局管理员或帐单管理员才能执行本文所述任务。
   
  **不是管理员？** 请与 IT 管理员联系以寻求帮助。[在我的公司中谁拥有管理员权限？](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **对于 Office 365 家庭版或个人**版，请参阅[更改链接到您的 Microsoft 帐户的付款方式或信用卡](https://support.microsoft.com/help/4026594)。
-  
+
 > [!NOTE]
 > 在某些国家或地区不提供用银行帐户付款的选项。
 >
@@ -168,7 +166,7 @@ ms.locfileid: "42409697"
 
 ## <a name="add-a-credit-card-or-bank-account"></a>添加信用卡或银行帐户
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选择要用新信用卡或银行帐户付款的订阅，然后选择 "**更新付款详细信息**"。
 
@@ -181,7 +179,7 @@ ms.locfileid: "42409697"
 4. 输入新信用卡或银行帐户的信息，然后选择 "**提交**"。
 
     > [!NOTE]
-    > 新信用卡或银行帐户将仅用于您在步骤2中选择的 Office 365 订阅。 如果有想要使用新信用卡或新银行帐户的其他订阅，请按照本文中的步骤为每个订阅更改用来支付的信用卡或银行帐户。
+    > 新信用卡或银行帐户将仅用于您在步骤2中选择的订阅。 如果有想要使用新信用卡或新银行帐户的其他订阅，请按照本文中的步骤为每个订阅更改用来支付的信用卡或银行帐户。
 
 ::: moniker-end
 
@@ -192,14 +190,12 @@ ms.locfileid: "42409697"
   
  **不是管理员？** 请联系 IT 管理员获取帮助。 [我的公司中谁拥有管理员权限？](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
   
- **对于 Office 365 家庭版或个人**版，请参阅[更改链接到您的 Microsoft 帐户的付款方式或信用卡](https://support.microsoft.com/help/4026594)。
-  
 > [!NOTE]
 > 在某些国家或地区不提供用银行帐户付款的选项。
 >
 > 您必须使用从与您的租户相同的国家/地区颁发的信用卡。
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择要用新信用卡或银行帐户付款的订阅，然后选择 "**更新付款详细信息**"。
 
@@ -212,7 +208,7 @@ ms.locfileid: "42409697"
 4. 输入新信用卡或银行帐户的信息，然后选择 "**提交**"。
 
     > [!NOTE]
-    > 新信用卡或银行帐户将仅用于您在步骤2中选择的 Office 365 订阅。 如果有想要使用新信用卡或新银行帐户的其他订阅，请按照本文中的步骤为每个订阅更改用来支付的信用卡或银行帐户。
+    > 新信用卡或银行帐户将仅用于您在步骤2中选择的订阅。 如果有想要使用新信用卡或新银行帐户的其他订阅，请按照本文中的步骤为每个订阅更改用来支付的信用卡或银行帐户。
 
 ::: moniker-end
 
@@ -223,7 +219,7 @@ ms.locfileid: "42409697"
 > 不能更改现有信用卡卡号或银行帐户帐号。 如果信用卡或银行帐号已更改，请将其添加为新的信用卡或银行帐户。 接下来，将其作为订阅的付款选项进行选择，然后删除现有信用卡或银行帐户。
 > 您必须使用从与您的租户相同的国家/地区颁发的信用卡。
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选择您要更新的信用卡银行帐户所购买的订阅，然后选择 "**更新付款详细信息**"。
 
@@ -251,7 +247,7 @@ ms.locfileid: "42409697"
 > 不能更改现有信用卡卡号或银行帐户帐号。 如果信用卡或银行帐号已更改，请将其添加为新的信用卡或银行帐户。 接下来，将其作为订阅的付款选项进行选择，然后删除现有信用卡或银行帐户。
 > 您必须使用从与您的租户相同的国家/地区颁发的信用卡。
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择您要更新的信用卡银行帐户所购买的订阅，然后选择 "**更新付款详细信息**"。
 
@@ -275,7 +271,7 @@ ms.locfileid: "42409697"
 ::: moniker range="o365-21vianet"
 ## <a name="remove-a-credit-card-or-bank-account"></a>删除信用卡或银行帐户
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选取任何订阅，然后选择 "**更新付款详细信息**"。
 
@@ -300,7 +296,7 @@ ms.locfileid: "42409697"
 ::: moniker range="o365-germany"
 ## <a name="remove-a-credit-card-or-bank-account"></a>删除信用卡或银行帐户
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选取任何订阅，然后选择 "**更新付款详细信息**"。
 
@@ -325,7 +321,7 @@ ms.locfileid: "42409697"
 ::: moniker range="o365-21vianet"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>更改用于支付订阅的信用卡或银行帐户
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选择要用新信用卡或银行帐户付款的订阅，然后选择 "**更新付款详细信息**"。
 
@@ -342,7 +338,7 @@ ms.locfileid: "42409697"
 ::: moniker range="o365-germany"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>更改用于支付订阅的信用卡或银行帐户
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择要用新信用卡或银行帐户付款的订阅，然后选择 "**更新付款详细信息**"。
 

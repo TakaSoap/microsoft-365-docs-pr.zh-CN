@@ -2,8 +2,8 @@
 title: 威胁资源管理器和实时检测、新增的威胁资源管理器、威胁资源管理器的更改、Office 365 的新增功能、安全性、云安全性、ATP 中的新安全性、新的 ATP 功能
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 47dd871a385613c08ad5b4c02a7be8701e4b93a8
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082082"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955599"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -139,7 +139,7 @@ ms.locfileid: "42082082"
 
    - **上面的 url**是您已筛选出的邮件中包含的 url，并且每个 URL 的电子邮件传递操作都会计数。 在网络钓鱼电子邮件视图中，此列表通常包含合法的 Url。 攻击者在其邮件中加入了好和坏的 Url，以尝试传递它们，但它们会使用户更有趣地单击恶意链接。 Url 表按总电子邮件计数进行排序（注意：此列不显示为简化视图）。
 
-   - 单击 "**上**一条" 可将已单击的安全链接包装的 url 按总点击次数排序（此列也不显示为简化视图）。 "总计计数依据" 列指示安全链接单击每个单击的 URL 的 "已判定计数"。 在网络钓鱼电子邮件视图中，这通常是可疑或恶意的 Url，但可能包含网络钓鱼邮件中的干净 Url。 URL 单击未打开的链接将不会显示在此处。
+   - 单击 "**上**一条" 可将已单击的安全链接包装的 url 按总点击次数排序（此列也不显示为简化视图）。 "总计计数依据" 列指示安全链接单击每个单击的 URL 的 "已判定计数"。 在网络钓鱼电子邮件视图中，这些 Url 更常见或恶意 Url，但可能包括不是威胁但位于网络钓鱼邮件中的 Url。 URL 单击未打开的链接将不会显示在此处。
    
    这两个 URL 表通过传递操作和位置显示网页仿冒电子邮件中的顶部 Url，并显示已阻止（或在出现警告的情况下访问）的 URL 单击，以便您可以了解用户收到的潜在的错误链接以及用户的交互情况。 在这里，你可以进行进一步分析。 例如，在图表下方，您可以看到在组织的环境中被阻止的电子邮件中的最高 Url。
    

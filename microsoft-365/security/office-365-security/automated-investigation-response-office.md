@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
 ms.custom: air
-ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826399"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955564"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -92,7 +92,7 @@ ms.locfileid: "42826399"
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>示例：用户报告的网络钓鱼邮件启动调查行动手册
 
-当您的组织中的用户提交电子邮件并使用[outlook 或 Outlook Web App 的报告邮件加载项](enable-the-report-message-add-in.md)将其报告给 Microsoft 时，该报告也会发送到您的系统，并在用户报告的视图中显示在资源管理器中。 此用户报告的消息现在会触发基于系统的信息警报，这将自动启动调查行动手册。
+假定组织中的某个用户收到电子邮件，而他们认为是网络钓鱼尝试。 训练有素的用户报告此类邮件，使用[outlook 或 Outlook Web App 的报告邮件加载项](enable-the-report-message-add-in.md)将其发送到 Microsoft 进行分析。 提交也会发送到您的系统，并在 "**提交**" 视图中显示在资源管理器中（以前称为**用户报告**的视图）。 此外，用户报告的消息现在会触发基于系统的信息警报，这将自动启动调查行动手册。
 
 在根调查阶段，会评估电子邮件的各个方面。 具体包括：
 - 确定它可能属于哪种类型的威胁;
@@ -121,13 +121,13 @@ ms.locfileid: "42826399"
 
 除了由警报触发的自动调查之外，组织的安全操作团队可以通过[威胁资源管理器](threat-explorer.md)中的视图触发自动调查。
 
-例如，假设您正在查看资源管理器中有关用户报告的消息的数据。 您可以在结果列表中选择一个项目，然后从 "操作" 菜单中单击 "**调查**" （假设您有相应的修正权限）。
+例如，假设您使用威胁资源管理器中的**恶意软件**视图。 使用图表下方的选项卡，选择 "**电子邮件**" 选项卡。如果选择列表中的一个或多个项目，则 " **+ 动作**" 按钮将激活。 
 
-![使用调查按钮的资源管理器中的用户报告的消息](../../media/Explorer-UserReported-Investigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="包含所选邮件的资源管理器":::
 
-作为另一个示例，假设您要查看检测为包含恶意软件的电子邮件的数据，并且有几封电子邮件被检测为包含恶意软件。 您可以选择 "**电子邮件**" 选项卡，选择一个或多个电子邮件，然后在 "**操作**" 菜单上选择 "**调查**"。 
+使用 "**操作**" 菜单，可以选择**触发调查**。
 
-![在资源管理器中开始调查恶意软件](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="选定邮件的 "操作" 菜单":::
 
 与由警报触发的行动手册类似，通过资源管理器中的视图触发的自动调查包括根调查、标识和关联威胁的步骤以及缓解这些威胁的建议操作。
 

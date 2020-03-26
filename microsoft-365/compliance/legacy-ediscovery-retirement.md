@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和 Office 365 高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894849"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955541"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧电子数据展示工具的退休
 
@@ -135,7 +135,13 @@ ms.locfileid: "42894849"
 <p>
 <p>或者，可以将搜索结果导出到 PST 文件，然后使用 Microsoft 365 导入服务将 Pst 导入到发现邮箱。 有关分步说明，请参阅<a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">使用网络上载将 PST 文件导入到 Office 365</a>。
 </tr>
-<tr class="even">
+<tr class=even>
+  <td>将邮件从一个邮箱复制到另一个邮箱</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">将权限分配给邮箱</a></td>
+  <td>若要让用户访问另一个用户的电子邮件（例如，当员工离开你的组织，并且需要向其他人授予对以前员工的电子邮件的访问权限）时，建议您分配该用户的权限以访问以前的员工的信箱. 因此，不是将邮箱项目复制到另一个用户邮箱或共享邮箱，只需分配一个用户访问源邮箱的权限。</td>
+  
+  </tr>
+<tr class="odd">
 <td>还原 "可恢复的项目" 文件夹中的项目</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>您可以还原邮箱中永久删除的项目（也称为<i>软删除</i>的项目），只要项目的已删除邮件保留期尚未过期。 有关详细信息，请参阅<a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Exchange Online 中的 "可恢复的项目" 文件夹</a>。</td>
@@ -213,9 +219,16 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 </tr>
 <tr class="odd">
 <td>将搜索结果复制到发现邮箱</td>
-<td>无</td>
+<td>None</td>
 <td>此功能没有直接替代，因为它不提供对所有 Microsoft 365 服务的访问权限。 有关其他解决方案，请参阅下面的 FAQ。</td>
 </tr>
+  <tr class=even>
+  <td>将邮件从一个邮箱复制到另一个邮箱</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">将权限分配给邮箱</a></td>
+  <td>若要让用户访问另一个用户的电子邮件（例如，当员工离开你的组织，并且需要向其他人授予对以前员工的电子邮件的访问权限）时，建议您分配该用户的权限以访问以前的员工的信箱. 因此，不是将邮箱项目复制到另一个用户邮箱或共享邮箱，只需分配一个用户访问源邮箱的权限。</td>
+  
+  </tr>
+
 </tbody>
 </table>
 

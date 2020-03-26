@@ -23,20 +23,20 @@ search.appverid:
 - BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: 了解如何将许可证添加到 Office 365 订阅。
-ms.openlocfilehash: 93c2929ae575282716cad7b6f64519f5974e3158
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 了解如何向订阅添加许可证。
+ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238375"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951942"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>将许可证添加到或扩展使用产品密钥支付的订阅
 
 预付许可证以25个字符的字母数字代码颁发给您。 购买所需的许可证后，可以将其添加到订阅中。 您还可以使用产品密钥来延长订阅的到期日期。
 
 > [!NOTE]
-> 如果您不想购买新的产品密钥，您始终可以选择将信用卡或银行帐户添加到订阅中，以支付更多许可证或延长订阅到期日期。 有关详细信息，请参阅[续订 Office 365 for business](../subscriptions/renew-your-subscription.md)。
+> 如果您不想购买新的产品密钥，您始终可以选择将信用卡或银行帐户添加到订阅中，以支付更多许可证或延长订阅到期日期。 有关详细信息，请参阅[续订订阅](../subscriptions/renew-your-subscription.md)。
   
 ## <a name="add-licenses-to-your-subscription"></a>将许可证添加到订阅
 

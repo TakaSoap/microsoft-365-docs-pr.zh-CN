@@ -2,8 +2,8 @@
 title: 查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: 了解在何处可以查看有关在 SharePoint、OneDrive 或团队中检测到的恶意文件的信息，以及如何对这些文件执行操作。
-ms.openlocfilehash: 49c7e1668602a63b8b82339ad0cc7823146212a4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599009"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955551"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息
 
@@ -53,13 +53,13 @@ ms.locfileid: "41599009"
     
 4. 选择可用操作。
     
-  - 选择 "**释放文件**" 以取消阻止该文件。 
-    
-    选择 "**将报告发送给 microsoft** " 以将该文件报告为 "误报到 microsoft"。 
-    
-  - 选择 "**下载文件**" 以进一步调查文件。 
-    
-  - 选择 "**从隔离区删除**" 以从隔离项目列表中删除该文件。 如果选择此选项，则还必须在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中从其各自的库中删除文件。 此选项不会取消阻止打开或共享文件。 
+    - 选择 "**释放文件**" 以取消阻止该文件。 
+
+      选择 "**将报告发送给 microsoft** " 以将该文件报告为 "误报到 microsoft"。 
+
+    - 选择 "**下载文件**" 以进一步调查文件。 
+
+    - 选择 "**从隔离区删除**" 以从隔离项目列表中删除该文件。 如果选择此选项，则还必须在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中从其各自的库中删除文件。 此选项不会取消阻止打开或共享文件。 
     
 5. 选择 "**关闭**" 以关闭所选项目的详细信息。 
   

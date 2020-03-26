@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '了解如何使用产品密钥续订 Office 365 for business 订阅，并打开或关闭定期记帐。 '
-ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633700"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959212"
 ---
 # <a name="renew-office-365-for-business"></a>续订 Office 365 for business
 
 本文适用于最具付费的 Office 365 for business 订阅。
   
-若要使用从零售商店或 Office 365 合作伙伴购买的产品密钥进行续订，请参阅[EFind 并输入产品密钥](../enter-your-product-key.md)。
+若要使用从零售商店或 Office 365 合作伙伴购买的产品密钥进行续订，请参阅[查找和输入产品密钥](../enter-your-product-key.md)。
 
 > [!NOTE]
 > 在某些国家或地区不提供按银行帐户付款。
@@ -70,7 +70,7 @@ ms.locfileid: "42633700"
 
 ::: moniker range="o365-germany"
   
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
 
     如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
 
@@ -93,7 +93,7 @@ ms.locfileid: "42633700"
 
 ::: moniker range="o365-21vianet"
   
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
 
     如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
 
@@ -109,7 +109,7 @@ ms.locfileid: "42633700"
 
     > [!NOTE]
     > - 您只能更改活动订阅的**定期记帐**设置。 如果你的订阅已过期或已禁用，你将需要[重新激活它](reactivate-your-subscription.md)，然后才能打开或关闭**定期记帐**。
-    > - 当**定期记帐**关闭时，将不会立即取消订阅。 它在过期之前仍处于活动状态。 您可以查看订阅卡片上的到期日期
+    > - 当**定期记帐**关闭时，将不会立即取消订阅。 它在过期之前仍处于活动状态。 您可以查看订阅卡片上的到期日期。
     > - 若要了解如何立即取消订阅，请参阅[取消我的订阅](cancel-your-subscription.md)。
 
 ::: moniker-end
@@ -120,7 +120,7 @@ ms.locfileid: "42633700"
   
 [添加、更新或删除信用卡或银行帐户](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[Mysubscription 结束时我的数据和访问会发生什么情况？](what-if-my-subscription-expires.md)
+[我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
 
 [添加、更新或删除支付方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 

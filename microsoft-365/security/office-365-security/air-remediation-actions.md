@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: 2efe0124304a9f9dcfdc92b548c850882ad507a0
-ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
+ms.openlocfilehash: 1dff52fe1bdab364e03bc42afc84c9b54696ccf5
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42836854"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955529"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 中的自动调查遵循的补救措施
 
@@ -45,3 +45,9 @@ Office 365 中的[自动化调查和响应功能](https://docs.microsoft.com/mic
 - [查看 Office 365 中的自动调查后的挂起或已完成的修正操作](air-review-approve-pending-completed-actions.md)
 
 - [Office 365 中的自动调查的详细信息和结果](air-view-investigation-results.md)
+
+## <a name="related-articles"></a>相关文章
+
+- [Microsoft Defender 高级威胁防护中的自动调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+
+- [Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)

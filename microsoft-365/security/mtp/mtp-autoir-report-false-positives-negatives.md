@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261999"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955657"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>处理自动调查和响应功能中的误报/否定
 
@@ -50,7 +50,7 @@ ms.locfileid: "42261999"
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>调整警报以防止定期误报
 
-|方案 |服务 |需执行的操作 |
+|应用场景 |服务 |需执行的操作 |
 |--------|--------|--------|
 |-警报由合法使用触发 <br/>-警报不准确    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> 或 <br/>[Azure 高级威胁检测](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[在云应用安全门户中管理通知](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
 |即使是安全的，文件、IP 地址、URL 或域也会在设备上被视为恶意软件|[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection) |[创建具有 "允许" 操作的自定义指示器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
@@ -58,7 +58,7 @@ ms.locfileid: "42261999"
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>撤消对设备执行的修正操作
 
-如果对设备（如 Windows 10 设备）执行了修正操作，并且该项目实际上是干净的，则安全操作团队可以撤消[操作中心](mtp-action-center.md)中的修正操作。
+如果对设备（如 Windows 10 设备）执行了修正操作，而该项目实际上并不是威胁，则安全操作团队可以撤消[操作中心](mtp-action-center.md)中的修正操作。
 
 > [!IMPORTANT]
 > 在尝试执行以下任务之前，请确保您具有[所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)。

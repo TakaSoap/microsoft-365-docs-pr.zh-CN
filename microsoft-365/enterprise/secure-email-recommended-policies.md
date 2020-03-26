@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8370744d244ce424fa21e496e8dfd4f470de88e6
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084303"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959178"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
@@ -43,7 +43,7 @@ ms.locfileid: "42084303"
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 Exchange Online|
 |        |[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括 Exchange Online|
 |        |[定义应用保护策略](identity-access-policies.md#high-risk-users-must-change-password)|确保 Outlook 包含在应用程序列表中。 确保为每个平台（iOS、Android、Windows）更新策略|
-|        |[需要批准的应用程序](identity-access-policies.md#require-approved-apps)|在云应用列表中包括 Exchange Online|
+|        |[需要支持 Intune 应用保护策略的应用程序](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|在云应用列表中包括 Exchange Online|
 |        |[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在云应用列表中加入 Exchange Online|
 |        |[阻止 ActiveSync 客户端](#block-activesync-clients)|添加此新策略| 
 |**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 在云应用的分配中包括 Exchange Online|
@@ -52,31 +52,9 @@ ms.locfileid: "42084303"
 
 ## <a name="block-activesync-clients"></a>阻止 ActiveSync 客户端
 
-此策略将阻止 ActiveSync 客户端绕过其他条件访问规则。 规则配置仅适用于 ActiveSync 客户端。 通过选择 "**需要批准的客户端应用程序**"，此策略将阻止 ActiveSync 客户端。 配置此策略：
+此策略将阻止 ActiveSync 客户端绕过其他条件访问规则。 规则配置仅适用于 ActiveSync 客户端。 通过选择 "**[需要应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**"，此策略将阻止 ActiveSync 客户端。 有关创建此策略的详细信息，请参阅[需要使用条件访问的云应用访问的应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)。
 
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，您将看到 "Azure 仪表板"。
-
-2. 从左侧菜单中选择“Azure Active Directory”。
-
-3. 在“安全”部分之下，选择“条件访问”。
-
-4. 选择“新策略”。
-
-5. 输入策略名称，然后选择要应用策略的“用户和组”。
-
-6. 选择“云应用”。
-
-7. 选择 "**选择应用程序**"，选择 " **Office 365 Exchange Online**"。 选择 "**选择**并**完成**"。
-
-8. 选择 "**条件**"，然后选择 "**客户端应用**"。
-
-9. 对于 "**配置**"，选择 **"是"**。 仅检查以下内容：**移动应用和桌面客户端**和**Exchange ActiveSync 客户端**。 选择“完成”****。
-
-10. 从“访问控制”部分选择“授予”。
-
-11. 选择 "**授予访问权限**"，选择 "**需要批准的客户端应用**"。  对于多个控件，选择 "**需要选定的控件**"，然后选择 "**选择**"。
-
-12. 选择“**创建**”。
+1. 在[方案1： Office 365 应用程序需要经批准的应用程序中使用应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)，以防止 exchange ActiveSync 客户端利用基本身份验证连接到 Exchange online，遵循 "步骤2：在 exchange online 中为 Exchange Online 配置 Azure AD 条件访问策略" （EAS）。
 
 ## <a name="setup-office-365-message-encryption"></a>设置 Office 365 邮件加密
 

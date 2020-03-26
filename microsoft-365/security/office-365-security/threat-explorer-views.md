@@ -2,8 +2,8 @@
 title: 威胁资源管理器中的视图和实时检测
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 08/07/2019
 audience: ITPro
@@ -14,12 +14,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解在威胁资源管理器和实时检测中可用的各种视图类型。
-ms.openlocfilehash: 9e2d6ce0c51c6a43596885d9ccb529dc1464a052
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7b05ec1346df3bfa428c384a4236a8758e22da28
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084815"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955635"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -94,7 +94,7 @@ ms.locfileid: "42084815"
 
 ## <a name="email--all-email"></a>电子邮件 > 所有电子邮件
 
-若要查看此报告，请在资源管理器中选择 "**查看** > **** > **全部邮件**"。 此视图显示电子邮件活动的一个全视图方式，包括因网络钓鱼或恶意软件而被标识为恶意的电子邮件，以及所有非恶意邮件（普通电子邮件、垃圾邮件和批量邮件）。 
+若要查看此报告，请在资源管理器中选择 "**查看** > **Email** > **全部邮件**"。 此视图显示电子邮件活动的一个全视图方式，包括因网络钓鱼或恶意软件而被标识为恶意的电子邮件，以及所有非恶意邮件（普通电子邮件、垃圾邮件和批量邮件）。 
 
 > [!NOTE]
 > 如果收到一条错误，指示**要显示的数据过多**，请添加筛选器，并在必要时缩小正在查看的日期范围。 

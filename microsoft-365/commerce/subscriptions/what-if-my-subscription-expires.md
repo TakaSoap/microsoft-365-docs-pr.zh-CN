@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解当您的 Office 365 订阅过期、被禁用或取消时，数据会发生什么情况。
-ms.openlocfilehash: 717beff94255fe669f9ce9bc733300679ffc3d53
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252519"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955669"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Office 365 for business 订阅结束时我的数据和访问会发生什么情况？
 
@@ -44,7 +44,7 @@ ms.locfileid: "42252519"
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *所有可访问的数据*                                               | *所有可访问的数据*                                                     | *仅供管理员访问的数据*                                             | **删除了<br/>数据删除的 Azure Active Directory （如果未被其他服务使用）** |
 | 用户具有对 Office 365、数据和 Office 应用程序的正常访问权限  | 用户具有对 Office 365、文件和应用程序的常规访问权限              | 用户不能访问 Office 365、文件或应用程序                        | 用户不能访问 Office 365、文件或应用程序                                     |
-| 管理员拥有对 Office 365、数据和 Office 应用程序的正常访问权限 | 管理员可以访问管理中心                                           | 管理员可以访问管理中心，但不能向用户分配许可证       | 管理员可以访问管理中心来购买和管理其他订阅             |
+| 管理员拥有对 Office 365、数据和 Office 应用程序的正常访问权限 | 管理员可以访问管理中心，但不能向用户分配许可证   | 管理员可以访问管理中心，但不能向用户分配许可证       | 管理员可以访问管理中心来购买和管理其他订阅             |
 |                                                                        | 全局管理员或帐单管理员可以在管理中心重新激活订阅 | 全局管理员或帐单管理员可以在管理中心重新激活订阅 |                                                                                           |
 
 * 在大多数国家和地区，大多数产品提供。
@@ -66,7 +66,7 @@ ms.locfileid: "42252519"
 
   - 如果使用预付卡购买了 Office 365 商业版，则可以为订阅[启用定期记帐](renew-your-subscription.md)。
 
-  - 如果你是一位预付一年期免费订阅的批量许可客户，请联系你的合作伙伴购买新的产品密钥。 你将通过电子邮件收到说明，以在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活你的密钥。 若要了解如何查找新合作伙伴或以前使用过的合作伙伴，请参阅[查找 Office 365 合作伙伴或经销商](../../admin/manage/find-your-partner-or-reseller.md)。
+  - 如果你是一位预付一年期免费订阅的批量许可客户，请联系你的合作伙伴购买新的产品密钥。 你将通过电子邮件收到说明，以在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活你的密钥。 若要了解如何查找新合作伙伴或以前使用过的合作伙伴，请参阅[查找合作伙伴或经销商](../../admin/manage/find-your-partner-or-reseller.md)。
 
   - 如果您有 Office 365 商业版，请参阅[管理订阅的定期帐单](renew-your-subscription.md)。
 
@@ -90,9 +90,9 @@ ms.locfileid: "42252519"
 
   - 如果使用预付卡购买了 Office 365 商业版，则可以为订阅[启用定期记帐](renew-your-subscription.md)。
 
-  - 如果你是一位预付一年期免费订阅的批量许可客户，请联系你的合作伙伴购买新的产品密钥。 你将通过电子邮件收到说明，以在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活你的密钥。 若要了解如何查找新合作伙伴或以前使用过的合作伙伴，请参阅[查找 Office 365 合作伙伴或经销商](../../admin/manage/find-your-partner-or-reseller.md)。
+  - 如果你是一位预付一年期免费订阅的批量许可客户，请联系你的合作伙伴购买新的产品密钥。 你将通过电子邮件收到说明，以在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活你的密钥。 若要了解如何查找新合作伙伴或以前使用过的合作伙伴，请参阅[查找合作伙伴或经销商](../../admin/manage/find-your-partner-or-reseller.md)。
 
-  - 如果你有 Office 365 商业版，请参阅[续订 Office 365 for Business](renew-your-subscription.md)。
+  - 如果您有 Office 365 商业版，请参阅[续订订阅](renew-your-subscription.md)。
 
 - **允许订阅过期。**
 
@@ -143,7 +143,7 @@ ms.locfileid: "42252519"
 
 在此状态下，用户具有对 Office 365 门户、Office 应用程序和服务（如电子邮件和 SharePoint Online）的正常访问权限。
   
-作为管理员，你仍然可以访问管理中心。 别担心，全局或帐单管理员可以[重新激活订阅](reactivate-your-subscription.md)并继续使用 Office 365。 如果不重新激活，请务必[备份你的数据](back-up-data-before-switching-plans.md)。
+作为管理员，你仍然可以访问管理中心，但不能向用户分配许可证。 全局管理员或帐单管理员可以[重新激活订阅](reactivate-your-subscription.md)，并继续使用 Office 365。 如果不重新激活，请务必[备份你的数据](back-up-data-before-switching-plans.md)。
   
 ### <a name="state-disabled"></a>状态：已禁用
   

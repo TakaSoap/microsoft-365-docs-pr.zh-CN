@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 76a4fe678ce0106c7345dd3bdf504673733b63b6
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266048"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955587"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的自动调查遵循的补救措施
 
@@ -43,16 +43,16 @@ ms.locfileid: "42266048"
 
 在[操作中心](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)中，可以查看更正操作（无论是等待审批还是已完成）。
 
-## <a name="verdicts-and-outcomes-following-automated-investigations"></a>自动化调查遵循的 Verdicts 和成果
+## <a name="remediation-actions-follow-automated-investigations"></a>补救措施遵循自动调查
 
 当自动调查完成时，将达到涉及的每条证据的结论，并确定修正操作。 在某些情况下，将自动执行更正操作;在其他情况下，补救措施等待审批。 下表列出了可能的 verdicts 和结果：
 
-|Verdict    |区域   |结果|
+|Verdict    |区域    |结果|
 |------|------|------|
-|恶意  |设备（终结点）    |将自动执行更正操作|
-|恶意  |电子邮件内容（Url 或附件） | 建议的修正操作处于待审批状态|
-|引入 |设备或电子邮件内容 |建议的修正操作处于待审批状态|
-|清理  |设备或电子邮件内容   |不需要任何修正操作|
+|恶意    |设备（终结点）    |将自动执行更正操作|
+|恶意    |电子邮件内容（Url 或附件） | 建议的修正操作处于待审批状态|
+|引入    |设备或电子邮件内容 |建议的修正操作处于待审批状态|
+|未发现威胁    |设备或电子邮件内容    |不需要任何修正操作|
 
 [在操作中心中查看挂起的操作](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 
