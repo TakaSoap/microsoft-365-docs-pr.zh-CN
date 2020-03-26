@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
 ms.custom: okr_smb
-ms.openlocfilehash: 446af9ad49649487f4df1982613f8e84fdf39910
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 22693bbf8acdf8872b621ae214dd8d7a62b98b40
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857187"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929546"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -119,6 +119,7 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 |Power BI 管理员    |   可完全访问 Power Bl 管理任务、管理服务请求和监视服务运行状况。   |
 |Power 平台管理员     |    可完全访问 Microsoft Dynamics 365、PowerApps、数据丢失防护策略和 Microsoft Flow。     |
 |特权角色管理员     |    管理角色分配和 Privileged Identity Management 的所有访问控制功能。     |
+|特权身份验证管理员     |    重置密码、更新非密码凭据、强制使用注销、监视服务运行状况和管理服务请求。     |
 |报表阅读人员     |   可读取来自报告仪表板、Power BI 采用内容包、登录报告和 Microsoft Graph 报告 API 的使用情况报告数据。      |
 |搜索管理员     |    可完全访问 Microsoft 搜索、分配搜索管理员和搜索编辑者角色、管理编辑内容、监视服务运行状况和创建服务请求。     |
 |搜索编辑者     |    只能创建、编辑和删除 Microsoft 搜索的内容，例如书签、问答和位置。     |
