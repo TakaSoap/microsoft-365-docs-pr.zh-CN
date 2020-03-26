@@ -1,5 +1,5 @@
 ---
-title: 使用数据分类活动资源管理器
+title: 活动资源管理器（预览版）入门
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 68304bc75d33c993db52895828ec49e3b5203a4c
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076752"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929456"
 ---
-# <a name="view-activity-on-your-labeled-content-preview"></a>查看关于标记的内容的活动（预览版）
+# <a name="get-started-with-activity-explorer-preview"></a>活动资源管理器（预览版）入门
 
 数据分类概述和内容浏览器选项卡使你可以查看已发现和已标记的内容以及该内容的位置。 活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。 活动资源管理器提供历史视图。
 

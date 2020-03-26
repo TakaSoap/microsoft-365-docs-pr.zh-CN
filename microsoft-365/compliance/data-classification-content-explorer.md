@@ -1,5 +1,5 @@
 ---
-title: 使用数据分类内容资源管理器（预览版）
+title: 内容资源管理器（预览版）入门
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 91246a701e1c5a030f4c9c53e25e56c137e7569b
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409687"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929404"
 ---
-# <a name="using-data-classification-content-explorer-preview"></a>使用数据分类内容资源管理器（预览版）
+# <a name="get-started-with-content-explorer-preview"></a>内容资源管理器（预览版）入门
 
 数据分类内容资源管理器可以在本机查看“概述”页上汇总的项目。
 
