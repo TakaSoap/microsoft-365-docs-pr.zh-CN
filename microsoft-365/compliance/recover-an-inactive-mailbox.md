@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '如果以前的员工返回到您的组织，或者如果雇用新员工来承担 departed 员工的工作职责，则可以在 Office 365 中恢复非活动邮箱的内容。 恢复非活动邮箱时，会将其转换为新邮箱，其中包含非活动邮箱的内容。 '
-ms.openlocfilehash: f7e7b36a1f1a3258cac18b84c3c8881355ecbb43
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5048df8c17f4f44c1bbed33753da51dac53c7789
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070089"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978142"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>恢复 Office 365 中的非活动邮箱
 
@@ -31,10 +31,7 @@ ms.locfileid: "42070089"
     
 - **还原非活动邮箱**如果其他员工承担前一个员工的工作职责，或者如果其他用户需要访问非活动邮箱的内容，则可以将非活动邮箱的内容还原（或合并）到现有邮箱。 您还可以从非活动邮箱还原存档。 有关此方法的过程，请参阅[还原 Office 365 中的非活动邮箱](restore-an-inactive-mailbox.md)。
     
-有关恢复和还原非活动邮箱之间的差异的详细信息，以及恢复非活动邮箱后所发生情况的描述，请参阅[详细信息](#more-information)部分。
-  
-> [!NOTE]
-> 我们推迟了创建新的就地保留的截止时间，以使邮箱处于非活动状态。 但在将来的某一时刻，你将无法在 Exchange Online 中创建新的就地保留。 在这段时间，仅可使用诉讼保留和 Office 365 保留策略来创建非活动邮箱。 不过，处于就地保留的现有非活动邮箱仍受支持，可以继续管理这些非活动邮箱的就地保留。 这包括更改就地保留的持续时间，以及通过删除就地保留来永久删除非活动邮箱。 
+有关恢复和还原非活动邮箱之间的差异的详细信息，以及恢复非活动邮箱后所发生情况的描述，请参阅[More information](#more-information)部分。
   
 ## <a name="before-you-begin"></a>开始之前
 
@@ -87,7 +84,7 @@ ms.locfileid: "42070089"
     
   - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着，分配给新邮箱的默认 Exchange 保留策略和任何组织范围或 Exchange 范围的 Office 365 保留策略将不会被处理30天。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则，Exchange 或 Office 365 保留策略可能会删除旧邮箱项目（或根据为 Exchange 或 Office 365 保留策略配置的设置，将项目移至存档邮箱（如果已启用）。 30天后，保留挂起会过期， **RetentionHoldEnabled**邮箱属性设置为**False**，并且托管文件夹助理将开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300)。
     
-- **如果您需要保留非活动邮箱的原始状态，请将恢复的邮箱置于保留状态。** 若要防止新邮箱所有者或保留策略从已恢复的非活动邮箱中永久删除任何邮件，可以将邮箱置于诉讼保留中。有关详细信息，请参阅[将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/?linkid=856286)。
+- **如果您需要保留非活动邮箱的原始状态，请将恢复的邮箱置于保留状态。** 若要防止新邮箱所有者或保留策略从已恢复的非活动邮箱中永久删除任何邮件，您可以将邮箱置于诉讼保留状态。 有关详细信息，请参阅 [将邮箱放到诉讼保留中](https://go.microsoft.com/fwlink/?linkid=856286)。
     
 - **恢复非活动邮箱时可以使用哪些用户 ID？** 恢复非活动邮箱时，为*MicrosoftOnlineServicesID*参数指定的值可能与与非活动邮箱关联的原始值不同。 您还可以使用原始用户 ID。 但如前面所述，在恢复非活动邮箱时，请确保用于*Name*和*MicrosoftOnlineServicesID*的值在组织内是唯一的。 
     

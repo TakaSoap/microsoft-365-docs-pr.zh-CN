@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e093bd9c5a76b44cf66591b4212f37014189186e
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 5715baaccd95d975f7d15196906a6326177bbc2e
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928992"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982002"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -57,8 +57,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 这是它在高级搜寻中的显示效果。
 
-![Microsoft 威胁防护高级搜寻查询的图像](../../media/advanced-hunting-query-example.png)
+![Microsoft 威胁防护高级搜寻查询的图像](../../media/advanced-hunting-query-example-2.png)
 
+### <a name="describe-the-query-and-specify-the-tables-to-search"></a>描述查询并指定要搜索的表
 已将简短注释添加到查询的开头，以描述它的用途。 如果你后来决定保存查询并与组织中的其他人共享它，这将会帮助。 
 
 ```kusto
@@ -70,12 +71,14 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+### <a name="set-the-time-range"></a>设置时间范围
 第一个管道元素是范围为前七天的时间筛选器。 尽可能缩小时间范围可以确保查询运行良好、返回易于管理的结果并且不会超时。
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
+### <a name="check-specific-processes"></a>检查特定进程
 时间范围紧跟在搜索代表 PowerShell 应用程序的进程文件名称后。
 
 ```
@@ -83,20 +86,23 @@ union DeviceProcessEvents, DeviceNetworkEvents
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
+### <a name="search-for-specific-command-strings"></a>搜索特定的命令字符串
 随后，查询将在命令行中查找通常用于使用 PowerShell 下载文件的字符串。
 
 ```kusto
 // Suspicious commands
 | where ProcessCommandLine has_any("WebClient",
- "DownloadFile",
- "DownloadData",
- "DownloadString",
-"WebRequest",
-"Shellcode",
-"http",
-"https")
+    "DownloadFile",
+    "DownloadData",
+    "DownloadString",
+    "WebRequest",
+    "Shellcode",
+    "http",
+    "https")
 ```
-现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project`返回特定列并`top`限制结果数，以确保结果格式良好且相当大且易于处理。
+
+### <a name="customize-result-columns-and-length"></a>自定义结果列和长度 
+现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project`返回特定的列， `top`并限制结果数。 这些运算符有助于确保结果格式良好且相当大且易于处理。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -104,9 +110,12 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-单击“**运行查询**”以查看结果。 选择查询编辑器右上角的展开图标以重点关注您的搜索查询和结果。
+单击“**运行查询**”以查看结果。 选择查询编辑器右上角的展开图标以重点关注您的搜索查询和结果。 
 
 ![高级搜寻查询编辑器中的展开控件的图像](../../media/advanced-hunting-expand.png)
+
+>[!TIP]
+>您可以查看图表中的查询结果，并快速调整筛选器。 有关指南，请[阅读使用查询结果](advanced-hunting-query-results.md)
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>了解高级搜寻的常见查询运算符
 

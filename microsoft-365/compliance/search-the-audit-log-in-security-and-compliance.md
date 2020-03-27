@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894393"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955681"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -311,8 +311,8 @@ ms.locfileid: "42894393"
 |[高级电子数据展示活动](#advanced-ediscovery-activities)|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Yammer 活动](#yammer-activities)|
 |[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|[Microsoft Stream 活动](#microsoft-stream-activities)|
-|[内容浏览器活动](#content-explorer-activities)|[Microsoft Forms 活动](#microsoft-forms-activities)|[敏感度标签活动](#sensitivity-label-activities)|
-|[Exchange 管理员活动](#exchange-admin-audit-log)||
+|[内容浏览器活动](#content-explorer-activities)|[隔离活动](#quarantine-activities)|[Microsoft Forms 活动](#microsoft-forms-activities)
+|[敏感度标签活动](#sensitivity-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -811,7 +811,20 @@ ms.locfileid: "42894393"
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
-|访问的项|AccessedItem|管理员（或是作为内容浏览器内容查看器角色组成员的用户）使用内容浏览器来查看电子邮件或 SharePoint/OneDrive 文档。|
+|访问的项|LabelContentExplorerAccessedItem|管理员（或是作为内容浏览器内容查看器角色组成员的用户）使用内容浏览器来查看电子邮件或 SharePoint/OneDrive 文档。|
+||||
+
+### <a name="quarantine-activities"></a>隔离活动
+
+下表列出了可在审核日志中搜索的隔离活动。 有关隔离详细信息，请参阅 [Office 365 中的已隔离电子邮件](../security/office-365-security/quarantine-email-messages.md)。
+
+|**友好名称**|**操作**|**说明**|
+|:-----|:-----|:-----|
+|已删除隔离邮件|QuarantineDelete|用户删除了被视为有害的电子邮件。|
+|已导出隔离邮件|QuarantineExport|用户导出了被视为有害的电子邮件。|
+|已预览隔离邮件|QuarantinePreview|用户预览了被视为有害的电子邮件。|
+|已发布隔离邮件|QuarantineRelease|用户发布了来自被视为有害的隔离区的电子邮件。|
+|已查看隔离邮件的标题|QuarantineViewHeader|用户查看了被视为有害的电子邮件的标题。|
 ||||
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Forms 活动

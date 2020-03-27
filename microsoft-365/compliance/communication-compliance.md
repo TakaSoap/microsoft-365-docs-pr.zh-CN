@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179233"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982045"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
@@ -53,7 +53,7 @@ Microsoft 365 中的通信合规性策略可帮助您解决与合规性、内部
 
 - **合规性**
 
-    大多数组织必须符合其正常操作过程中的某些类型的法规遵从性标准。 这些法规通常要求组织为适合其行业的邮件服务实施某种类型的监督或监督过程。 金融行业规章颁发机构（FINRA）规则3110是一个很好的示例，它是组织实施监督过程以扫描员工通信以及它所参与的企业类型的一个很好的示例。 另一个示例可能是查看组织中的经纪人通信以防止潜在的金钱 laundering、内幕交易、collusion 或 bribery 活动的需要。 通过提供扫描和报告公司通信的过程，通信合规性策略可以帮助您的组织满足这些要求。
+    大多数组织必须符合其正常操作过程中的某些类型的法规遵从性标准。 这些法规通常要求组织为适合其行业的邮件服务实施某种类型的监督或监督过程。 金融行业规章颁发机构（FINRA）规则3110是一个很好的示例，它是组织实施监督过程以扫描员工通信以及它所参与的企业类型的一个很好的示例。 另一个示例可能是查看组织中的经纪人通信以防止潜在的金钱 laundering、内幕交易、collusion 或 bribery 活动的需要。 通过提供扫描和报告公司通信的过程，通信合规性策略可以帮助您的组织满足这些要求。 有关对金融组织的支持的详细信息，请参阅[美国银行和资金市场的关键合规性和安全注意事项](../solutions/financial-services-secure-collaboration.md)。
 
 ## <a name="new-enhancements"></a>新的增强功能
 
@@ -155,4 +155,4 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 For microsoft 365](communication-compliance-configure.md)。
+若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 For microsoft 365](communication-compliance-configure.md)或查看[Contoso 的个案研究](communication-compliance-case-study.md)，以及如何快速配置通信合规性策略以监视 Microsoft 团队和 Exchange Online 通信中的攻击性语言。

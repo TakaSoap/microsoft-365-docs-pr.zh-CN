@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和 Office 365 高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955541"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978162"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧电子数据展示工具的退休
+
+> [!IMPORTANT]
+> Microsoft 已评估公共运行状况，我们了解这对客户造成的影响。 我们希望成为强大的合作伙伴和负责的全球公民。 为了减轻您面临的众多负担之一，我们将为下面列出的旧版电子数据展示工具延迟三个月的计划停用。 **更新后的退休日期将反映如下。**
 
 多年以来，Microsoft 提供了电子数据展示工具，可让你搜索、预览和导出来自 Exchange Online 的电子邮件内容。 但是，这些工具不再提供在其他 Office 365 服务（如 SharePoint Online 和 Office 365 组）中搜索非 Exchange 内容的有效方法。 为解决此类情况，Microsoft 提供了其他电子数据展示工具，可帮助您搜索各种各样的 Office 365 内容。 我们在[Microsoft 365 合规性中心](https://compliance.microsoft.com)中努力将最新和强大的电子数据展示功能结合在一起。 这使组织能够对多个 Office 365 服务（包括 Exchange Online）中的内容进行法律、内部和其他文档请求的响应。
 
@@ -78,9 +81,9 @@ ms.locfileid: "42955541"
 
 ### <a name="timeline-for-retirement"></a>停用的日程表
 
-- 2020年4月1日：您将无法创建新的搜索和保留，但您仍可以自行承担运行、编辑和删除现有搜索。 Microsoft 支持将不再将 EAC 中的电子数据展示 & 保留。
+- 2020年7月1日：您将无法创建新的搜索和保留，但您仍可以自行承担运行、编辑和删除现有搜索。 Microsoft 支持将不再将 EAC 中的电子数据展示 & 保留。
 
-- 2020年7月1日：就地电子数据展示 & 保留 EAC 中的功能将被置于只读模式下。 这意味着您将只能删除现有的搜索和保留。
+- 2020年10月1日：就地电子数据展示 & 保留 EAC 中的功能将被置于只读模式。 这意味着您将只能删除现有的搜索和保留。
 
 ### <a name="alternative-tools"></a>替代工具
 
@@ -181,9 +184,9 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 
 ### <a name="timeline"></a>日程表
 
-- 2020年4月1日：您将无法使用**new-mailboxsearch**创建新的就地电子数据展示搜索和就地保留，但您仍可以使用 cmdlet 来运行、编辑和删除现有搜索并保留自己的风险。 Microsoft 支持将不再为这些类型的搜索和保留提供帮助。
+- 2020年7月1日：您将无法使用**new-mailboxsearch**来创建新的就地电子数据展示搜索和就地保留，但您仍可以使用 cmdlet 来运行、编辑和删除现有的搜索并保留自己的风险。 Microsoft 支持将不再为这些类型的搜索和保留提供帮助。
 
-- 2020年7月1日：如前所述，就地电子数据展示 & 保留 EAC 中的功能将被置于只读模式下。 这也意味着您不能使用**new-mailboxsearch**、 **Start-new-mailboxsearch**或**new-mailboxsearch** cmdlet。 你将只能获取和删除现有搜索和保留。
+- 2020年10月1日：如前所述，就地电子数据展示 & 保留 EAC 中的功能将被置于只读模式。 这也意味着您不能使用**new-mailboxsearch**、 **Start-new-mailboxsearch**或**new-mailboxsearch** cmdlet。 你将只能获取和删除现有搜索和保留。
 
 ### <a name="alternative-tools"></a>替代工具
 
@@ -262,7 +265,7 @@ Exchange Online PowerShell 中的**搜索邮箱**cmdlet 将被停用，因为最
 
 ### <a name="timeline"></a>日程表
 
--  2020年4月1日：将不再提供**搜索邮箱**Cmdlet，Microsoft 支持将不再提供帮助。
+-  2020年7月1日：将不再提供**搜索邮箱**Cmdlet，Microsoft 支持将不再提供帮助。
 
 ### <a name="alternative-tools"></a>替代工具
 
@@ -324,7 +327,7 @@ Exchange Web Services API 中的这些操作由 exchange 管理中心中的 "就
 
 ### <a name="timeline"></a>日程表
 
-- 2020年4月1日： GetSearchableMailboxes、SearchMailboxes、SetHoldOnMailboxes 和 GetHoldOnMailboxes 操作将不再可用，Microsoft 支持将不再提供协助。
+- 2020年7月1日： GetSearchableMailboxes、SearchMailboxes、SetHoldOnMailboxes 和 GetHoldOnMailboxes 操作将不再可用，Microsoft 支持将不再提供协助。
 
 ## <a name="advanced-ediscovery-v10"></a>高级电子数据展示1.0 版
 
@@ -332,7 +335,7 @@ Exchange Web Services API 中的这些操作由 exchange 管理中心中的 "就
 
 Microsoft 365 中新的高级电子数据展示解决方案（也称为*高级电子数据展示 2.0 2.0*）提供了原始解决方案的所有功能，但现在提供了一种基于保管人的方法，可识别其他 Microsoft 365 服务中的内容，收集该内容，然后将其添加到审阅集中，以便审阅者可以利用 fast search 查询、标记和分析功能来帮助挑选相关文档。 高级电子数据展示现在为 Microsoft 和非 Microsoft 文件类型提供了改进的处理和本机查看器[，此处提供](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20)了文件类型的完整列表以及支持[的元数据字段。](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery) 此外，新的高级电子数据展示解决方案提供了强大的保管人保留功能，允许您将保留应用于不同服务中的内容、通知用户保留和在高级电子数据展示事例中跟踪保管人响应。
 
-此时，我们建议您开始将电子数据展示工作流转换为新的高级电子数据展示功能。 尽管您仍可以在现有情况下访问高级电子数据展示 v1.0，但 Microsoft 支持不会在2020年7月1日之后提供支持。 有关详细信息，请参阅以下日程表。
+此时，我们建议您开始将电子数据展示工作流转换为新的高级电子数据展示功能。 尽管您仍可以在现有情况下访问高级电子数据展示 v1.0，但 Microsoft 支持不会在2020年10月1日之后提供支持。 有关详细信息，请参阅以下日程表。
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
     
@@ -344,9 +347,9 @@ Microsoft 365 中新的高级电子数据展示解决方案（也称为*高级�
 
 ### <a name="timeline"></a>日程表
 
-- 2020年4月1日：你将无法创建新的高级电子数据展示 v1.0 事例。
+- 2020年7月1日：你将无法创建新的高级电子数据展示 v1.0 事例。
 
-- 2020年7月1日：无法将新数据（为高级电子数据展示准备搜索结果）添加到任何情况。 你将能够继续使用现有案例中的数据，风险自负。 Microsoft 支持将不再提供协助。 
+- 2020年10月1日：您将无法添加新数据（为高级电子数据展示准备搜索结果）到任何情况。 你将能够继续使用现有案例中的数据，风险自负。 Microsoft 支持将不再提供协助。 
 
 ### <a name="alternative-tools"></a>替代工具
 

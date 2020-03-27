@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 772c4c5785115995593a4946bfbac49312ad15f3
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959224"
+ms.locfileid: "42978262"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -217,7 +217,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
    > [!NOTE]
    > 此策略可确保移动用户可以使用适用的应用程序访问所有 Office 终结点。
 
-2. 如果启用对 Exchange Online 的移动访问，请实施 [阻止 ActiveSync 客户端] （安全-建议的电子邮件-"md # 阻止-ActiveSync-客户端）"，这将阻止 Exchange ActiveSync 客户端利用基本身份验证连接到 Exchange Online。
+2. 如果启用对 Exchange Online 的移动访问，请实施[阻止 ActiveSync 客户端](secure-email-recommended-policies.md#block-activesync-clients)，这将阻止 exchange activesync 客户端利用基本身份验证连接到 exchange online。
 
    上面的策略利用了授予权限控制[请求批准的客户端应用程序](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)并[需要应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
 

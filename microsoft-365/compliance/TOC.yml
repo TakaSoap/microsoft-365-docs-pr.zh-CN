@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: 有关通信合规性的功能参考
           href: communication-compliance-feature-reference.md
+        - name: 案例研究-Contoso 快速配置冒犯性语言策略
+          href: communication-compliance-case-study.md
         - name: Office 365 中的监督策略
           href: supervision-policies.md
         - name: 配置 Office 365 的监督策略
@@ -201,9 +203,9 @@
     - name: 了解数据分类（预览）
       href: data-classification-overview.md
       items:
-        - name: 内容资源管理器入门（预览）
+        - name: 内容资源管理器（预览版）入门
           href: data-classification-content-explorer.md
-        - name: 活动资源管理器入门（预览）
+        - name: 活动资源管理器（预览版）入门
           href: data-classification-activity-explorer.md
         - name: 数据分类公共预览版的发行说明（预览版）
           href: data-classification-pub-preview-relnotes.md
@@ -638,6 +640,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: 运行报告
               href: run-reports-in-advanced-ediscovery.md
+    - name: 旧电子数据展示工具的退休
+      href: legacy-ediscovery-retirement.md
 - name: 管理数据调查
   items:
     - name: 数据调查概述
