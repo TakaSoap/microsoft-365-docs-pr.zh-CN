@@ -2,7 +2,7 @@
 title: Office 365 ATP 安全链接，适用于团队、safelinks、安全链接、阻止恶意链接、office 365 ATP、团队安全链接、阻止用户单击 "不良链接"、"恶意链接"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 02/28/2020
 ms.topic: overview
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 团队现在可以在你单击时访问安全链接。 无论您是否在使用聊天1开/1 聊天、组之间或频道以及选项卡，如果您有 Office 365 ATP 的订阅，您都可以启用和使用此安全功能。
-ms.openlocfilehash: ba7ef2ae63b788ec94fbbb15c3c00312177a59d5
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341571"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030132"
 ---
 <!--06/21/2019-->
 
@@ -30,7 +30,7 @@ ms.locfileid: "42341571"
 
 Microsoft 团队（用于管理工作的 Office 365 基于云的应用程序）已经使用安全附件（针对 Office 365），但在您单击时，它现在可以访问安全链接。 无论您是否在使用聊天1开/1 聊天、在组之间或在频道中以及在选项卡上，如果您有 Office 365 ATP 的订阅，您将能够启用和使用此安全措施。
 
-下面介绍了它的工作原理： 
+以下是相应的工作方式： 
 
 1. 当您启动团队应用程序时，Office 365 将进行检查以确保用户属于具有 Office 365 ATP 的组织，并且该用户是已为 Microsoft 团队启用了保护的活动安全链接策略的一部分。
 

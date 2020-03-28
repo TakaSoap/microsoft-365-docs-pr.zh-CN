@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 8/23/2019
 audience: ITPro
 ms.topic: article
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: 了解有关 Office 365 中的批量 bomplain 级别（BCL）值的信息。
-ms.openlocfilehash: 6b90064db7dd9b27fdc729b65fb798dfbe756da7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 了解 Office 365 中的 "批量合规性级别（BCL）" 值。
+ms.openlocfilehash: aa839fc1bcab141fe71c76e7f27b4f6bb23048b2
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895389"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030145"
 ---
 # <a name="bulk-complaint-level-bcl-in-office-365"></a>Office 365 中的大宗投诉级别（BCL）
 
@@ -29,7 +29,7 @@ ms.locfileid: "42895389"
 
 若要区分来自不同类型的批量邮件的邮件，从批量邮件发件人到 Office 365 （Exchange Online 或独立 Exchange Online Protection （EOP），而不是 Exchange Online 邮箱）的入站电子邮件被分配了一个添加到的批量投诉级别（BCL）X 标头中的邮件。 BCL 类似于用于将邮件标识为垃圾邮件的[垃圾邮件信任级别（SCL）](spam-confidence-levels.md) 。 较高的 BCL 指示批量邮件更有可能生成投诉（因此更可能是垃圾邮件）。 Microsoft 使用内部和第三方源来标识批量邮件，并确定相应的 BCL。
 
- 垃圾邮件筛选将邮件标记为基于 BCL 阈值（默认值或指定值）的**批量电子邮件**，并对邮件执行指定的操作（默认操作是将邮件传递到收件人的 "垃圾邮件" 文件夹）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)以及[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+ 垃圾邮件筛选将邮件标记为基于 BCL 阈值（默认值或指定值）的**批量电子邮件**，并对邮件执行指定的操作（默认操作是将邮件传递到收件人的 "垃圾邮件" 文件夹）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)以及[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 下表描述了 BCL 阈值。
 
