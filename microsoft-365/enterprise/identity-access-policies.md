@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
-ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
+ms.openlocfilehash: eb06db140e4e3c9c245b7689edecf4b0cb86b674
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43022917"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035133"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -31,8 +31,8 @@ ms.locfileid: "43022917"
 
 下图说明了建议的一组策略。 它显示了每个策略应用于哪一层的保护，以及这些策略是应用于 Pc、电话和平板电脑，还是适用于这两种类别的设备。 它还指示这些策略的配置位置。
 
-![用于配置标识和设备访问的常见策略](../media/Identity_device_access_policies_byplan.png)
-
+[![用于配置标识和设备访问](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[的常见策略请参阅此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 本文的其余部分介绍了如何配置这些策略。 
 
@@ -46,8 +46,8 @@ ms.locfileid: "43022917"
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](#require-mfa-based-on-sign-in-risk)| |
 |        |[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)|不使用新式身份验证的客户端可以绕过条件访问规则，因此，请务必阻止这些|
 |        |[高风险用户必须更改密码](#high-risk-users-must-change-password)|如果为帐户检测到高风险活动，则强制用户在登录时更改其密码|
-|        |[定义应用保护策略](#define-app-protection-policies)|每个平台（iOS、Android、Windows）一个策略。|
-|        |[需要支持 Intune 应用保护策略的应用程序](#require-apps-that-support-intune-app-protection-policies)|为电话和平板电脑强制实施移动应用保护|
+|        |[应用应用数据保护策略](#apply-app-data-protection-policies)|每个平台（iOS、Android、Windows）一个策略。 Intune 应用保护策略（应用）是一组预定义的保护，从1级到3级。|
+|        |[需要经批准的应用和应用保护](#require-approved-apps-and-app-protection)|为电话和平板电脑强制实施移动应用保护|
 |        |[定义设备合规性策略](#define-device-compliance-policies)|每个平台一个策略|
 |        |[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|强制对电脑进行 Intune 管理|
 |**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](#require-mfa-based-on-sign-in-risk)| |
@@ -186,14 +186,14 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 > [!NOTE]
 > 请务必启用此策略，方法是选择 **"打开"**。 此外，请考虑使用[if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)工具来测试策略
 
-## <a name="define-app-protection-policies"></a>定义应用保护策略
+## <a name="apply-app-data-protection-policies"></a>应用应用数据保护策略
 应用程序保护策略（应用）定义允许哪些应用，以及可以对组织的数据执行的操作。 应用程序中提供的选项使组织能够根据其特定需求调整保护。 在某些情况下，实现完整方案可能不太清楚需要哪些策略设置。 为了帮助组织确定移动客户端终结点强化的优先级，Microsoft 为 iOS 和 Android 移动应用管理的应用程序数据保护框架引入了分类。 
 
 应用程序数据保护框架分为三个不同的配置级别，每个级别都建立了上一个级别： 
 
-- 企业基本数据保护确保应用程序受到 PIN 保护并进行加密，并执行选择性擦除操作。 对于 Android 设备，此级别验证 Android 设备证明。 这是一种入门级配置，它在 Exchange Online 邮箱策略中提供了类似的数据保护控制，并介绍了它和用户对应用程序的人口。 
-- 企业增强型数据保护引入了应用程序数据泄露预防机制和最低操作系统要求。 这是适用于大多数移动用户访问工作或学校数据的配置。 
-- 企业高数据保护引入了高级数据保护机制、增强的 PIN 配置和应用程序移动威胁防御。 访问高风险数据的用户需要此配置。 
+- **企业基本数据保护**（级别1）确保使用 PIN 对应用程序进行保护并进行加密，并执行选择性擦除操作。 对于 Android 设备，此级别验证 Android 设备证明。 这是一种入门级配置，它在 Exchange Online 邮箱策略中提供了类似的数据保护控制，并介绍了它和用户对应用程序的人口。 
+- **企业增强数据保护**（级别2）引入了应用程序数据泄露预防机制和最低操作系统要求。 这是适用于大多数移动用户访问工作或学校数据的配置。 
+- **企业高数据保护**（级别3）引入了高级数据保护机制、增强的 PIN 配置和应用程序移动威胁防御。 访问高风险数据的用户需要此配置。 
 
 若要查看每个配置级别和必须受保护的最小应用程序的特定建议，请查看[使用应用保护策略的 Data protection framework](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)。 
 
@@ -206,22 +206,39 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 |高度管控     | [3级企业高数据保护](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | 在级别3中强制实施的策略设置包括为级别1和2建议的所有策略设置，并且仅添加或更新以下策略设置，以实现更多控件和级别2的更复杂的配置。        |
 
 若要使用数据保护框架设置为 Microsoft 终结点管理器中的每个平台（iOS 和 Android）创建新的应用保护策略，管理员可以执行以下操作：
-1. 按照[如何使用 Microsoft Intune 创建和部署应用保护策略](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)中的步骤手动创建策略。
+1. 按照[如何使用 Microsoft Intune 创建和部署应用保护策略](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)中的步骤手动创建策略。 
 2. 使用[intune 的 PowerShell 脚本](https://github.com/microsoftgraph/powershell-intune-samples)导入示例[Intune 应用保护策略配置框架 JSON 模板](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies)。
 
-## <a name="require-apps-that-support-intune-app-protection-policies"></a>需要支持 Intune 应用保护策略的应用程序
-通过条件访问，组织可以限制对已批准（支持新式身份验证）的 iOS 和 Android 客户端应用的访问（Intune 应用保护策略应用于这些应用）。 需要多个条件访问策略，每个策略面向所有潜在的用户。 有关创建这些策略的详细信息，请参阅[需要使用条件访问的云应用访问的应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)。
+## <a name="require-approved-apps-and-app-protection"></a>需要经批准的应用和应用保护
+若要强制实施在 Intune 中应用的应用保护策略，您必须创建一个条件访问规则，以要求已批准的客户端应用程序和应用程序保护策略中设置的条件。 
 
-1. 在[方案1： office 365 应用程序需要批准的应用](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)程序中的 "步骤1：为 Office 365 配置 Azure AD 条件访问策略" 中，这将允许 Outlook for IOS 和 Android，但阻止支持 OAuth 的 exchange ActiveSync 客户端连接到 Exchange Online。
+强制应用保护策略要求中所述的一组策略需要[具有条件访问权限的云应用访问权限的应用程序保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)。 这两个策略都包含在此建议的一组标识和访问配置策略中。
+
+若要创建需要经批准的应用程序和应用程序保护的条件访问规则，请按照[方案1： office 365 应用程序需要经批准的应用程序和应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)（它允许 Outlook for IOS 和 Outlook for Android，但阻止支持 OAuth 的 exchange ActiveSync 客户端连接到 Exchange Online）中的 "步骤1：为 Office 365 配置 Azure AD 条件访问策略"。
 
    > [!NOTE]
    > 此策略可确保移动用户可以使用适用的应用程序访问所有 Office 终结点。
 
-2. 如果启用对 Exchange Online 的移动访问，请实施[阻止 ActiveSync 客户端](secure-email-recommended-policies.md#block-activesync-clients)，这将阻止 exchange activesync 客户端利用基本身份验证连接到 exchange online。
+如果要启用对 Exchange Online 的移动访问，请实施[阻止 ActiveSync 客户端](secure-email-recommended-policies.md#block-activesync-clients)，这将阻止 exchange activesync 客户端利用基本身份验证连接到 exchange online。 本文顶部的插图中未对此策略进行图示。 在[保护电子邮件的策略建议中对](secure-email-recommended-policies.md)其进行了描述和图示。
 
-   上面的策略利用了授予权限控制[请求批准的客户端应用程序](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)并[需要应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
+ 这些策略利用授予权限控制[请求批准的客户端应用程序](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)并[需要应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
 
-3. 为 iOS 和 Android 设备上的其他客户端应用禁用旧版身份验证。 有关详细信息，请参阅[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)。
+最后，为 iOS 和 Android 设备上的其他客户端应用程序阻止旧版身份验证，以确保这些客户端无法绕过条件访问规则。 如果你按照本文中的指导进行，你已配置[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)。
+
+<!---
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+
+   > [!NOTE]
+   > This policy ensures mobile users can access all Office endpoints using the applicable apps.
+
+2. If enabling mobile access to Exchange Online, implement [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
+
+   The above policies leverage the grant controls [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
+
+3. Disable legacy authentication for other client apps on iOS and Android devices. For more information, see [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
+-->
 
 ## <a name="define-device-compliance-policies"></a>定义设备合规性策略
 

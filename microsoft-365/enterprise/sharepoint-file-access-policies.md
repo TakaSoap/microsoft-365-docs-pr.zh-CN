@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084194"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035119"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保护 SharePoint 网站和文件的策略建议
 
@@ -47,7 +47,7 @@ ms.locfileid: "42084194"
 |:---------------|:-------|:----------------|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 SharePoint Online|
 |        |[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括 SharePoint Online|
-|        |[定义应用保护策略](identity-access-policies.md#define-app-protection-policies)|请确保所有建议的应用均包含在应用程序列表中。 确保为每个平台（iOS、Android、Windows）更新策略|
+|        |[应用应用数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|请确保所有建议的应用均包含在应用程序列表中。 确保为每个平台（iOS、Android、Windows）更新策略|
 |        |[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在云应用列表中加入 SharePoint Online|
 |        |[在 SharePoint Online 中使用应用强制实施限制](#use-app-enforced-restrictions-in-sharepoint-online)|添加此新策略。 这将告知 Azure AD 使用 SharePoint Online 中指定的设置。 此规则适用于所有用户，但仅影响对 SharePoint Online 访问策略中包括的网站的访问权限|
 |**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的工作分配中加入 SharePoint Online|
