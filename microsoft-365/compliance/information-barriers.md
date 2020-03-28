@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
-ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692649"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029836"
 ---
 # <a name="learn-about-information-barriers"></a>了解信息障碍
 
@@ -28,10 +28,13 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 
 现在，信息障碍即将推出，从 Microsoft 团队开始。 假定你的[订阅](#required-licenses-and-permissions)包括信息障碍，合规性管理员或信息屏障管理员可以定义策略以允许或阻止 Microsoft 团队中的用户组之间的通信。 信息屏障策略可用于以下情况：
 
-- 一天 trader 无法对市场营销团队中的人员进行呼叫
-- 从事机密公司信息的财务人员无法从其组织内的某些组接收呼叫。
-- 具有贸易秘密材料的内部团队无法与组织内特定组中的人员进行在线呼叫或聊天
-- 研究团队只能与产品开发团队进行在线通话或聊天
+- 第一天的用户 trader 组不应与市场营销团队进行通信
+- 从事机密公司信息的财务人员不应与组织内的特定组进行通信
+- 具有贸易秘密材料的内部团队不应与组织内特定组中的人员进行呼叫或联机聊天
+- 研究团队应仅与产品开发团队进行在线通话或聊天
+
+> [!IMPORTANT]
+> 信息障碍***仅支持***双向限制。 一种方法限制（如 "营销"）可以与日贸易贸易通信，但***不支持将***day 商贸与营销进行通信。
 
 对于所有这些示例方案（及更多），可以将信息屏障策略定义为阻止或允许在 Microsoft 团队中进行通信。 此类策略可以阻止用户不应对其进行呼叫或聊天，或使用户只能与 Microsoft 团队中的特定组进行通信。 在信息屏障策略生效时，只要这些策略涵盖的用户尝试与 Microsoft 团队中的其他人通信，就会执行检查以阻止（或允许）通信（由信息屏障策略定义）。 若要了解有关信息障碍的用户体验方面的详细信息，请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 

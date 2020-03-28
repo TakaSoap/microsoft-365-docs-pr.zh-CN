@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 管理员可以了解 Office 365 和 EOP 中的可用选项，这些选项允许入站邮件跳过垃圾邮件筛选。
-ms.openlocfilehash: 2b7463165bb376655fd7f63ac0bdd79a8eccb617
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f9178dae93f8eb33996d05034d27fceed66edd39
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893846"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033406"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
 
@@ -38,7 +38,7 @@ ms.locfileid: "42893846"
 邮件流规则允许最大限度地确保只允许使用正确的邮件。 反垃圾邮件策略中允许的发件人和允许的域列表与 IP 允许列表相比不安全，因为发件人的电子邮件域很容易被欺骗。 但是，IP 允许列表也会带来风险，因为从该 IP 地址发送的_任何_域发送的电子邮件将绕过垃圾邮件筛选。
 
 > [!IMPORTANT]
-> <ul><li>请注意，并监视使用安全发件人列表的垃圾邮件筛选的*任何*例外。</li><li>虽然您可以使用安全发件人列表帮助误报（电子邮件被标记为垃圾邮件），但您应考虑使用安全发件人列表作为临时解决方案（如果可能，应尽可能避免）。 我们不建议使用安全发件人列表管理误报，因为垃圾邮件筛选例外可以将组织打开为哄骗和其他攻击。 如果您坚持使用安全发件人列表来管理误报，您需要小心，并保留将[垃圾邮件、非垃圾邮件和网络钓鱼邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)的主题。</li><li>若要允许域发送未经身份验证的电子邮件（绕过反欺骗保护），但不绕过反垃圾邮件和反恶意软件检查，可以将其添加到[AllowedToSpoof 安全发件人列表](walkthrough-spoof-intelligence-insight.md)</li><li>EOP 和 Outlook 检查不同的邮件属性以确定邮件的发件人。 有关详细信息，请参阅本主题后面的 "[批量电子邮件的注意事项](#considerations-for-bulk-email)" 一节。</li></ul>
+> <ul><li>请注意，并监视使用安全发件人列表的垃圾邮件筛选的*任何*例外。</li><li>虽然您可以使用安全发件人列表帮助误报（电子邮件被标记为垃圾邮件），但您应考虑使用安全发件人列表作为临时解决方案（如果可能，应尽可能避免）。 我们不建议使用安全发件人列表管理误报，因为垃圾邮件筛选例外可以将组织打开为哄骗和其他攻击。 如果您坚持使用安全发件人列表来管理误报，您需要时刻小心，并在准备好时让主题[报告邮件和文件到 Microsoft](report-junk-email-messages-to-microsoft.md) 。</li><li>若要允许域发送未经身份验证的电子邮件（绕过反欺骗保护），但不绕过反垃圾邮件和反恶意软件检查，可以将其添加到[AllowedToSpoof 安全发件人列表](walkthrough-spoof-intelligence-insight.md)</li><li>EOP 和 Outlook 检查不同的邮件属性以确定邮件的发件人。 有关详细信息，请参阅本主题后面的 "[批量电子邮件的注意事项](#considerations-for-bulk-email)" 一节。</li></ul>
 
 相比之下，您还可以使用_阻止发件人列表_的多个选项阻止来自特定来源的电子邮件。 有关详细信息，请参阅[在 Office 365 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
 

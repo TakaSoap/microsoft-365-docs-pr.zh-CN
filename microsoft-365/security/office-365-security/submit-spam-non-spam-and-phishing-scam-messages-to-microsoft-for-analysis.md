@@ -1,5 +1,5 @@
 ---
-title: 将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
+title: 手动将邮件提交给 Microsoft 进行分析
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,101 +16,138 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '你和你的用户可以将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析。 '
-ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 13b2e42f749b54e0c2b71fe095c077992560ea8c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893642"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032800"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>将垃圾邮件、非垃圾邮件和网络欺诈邮件提交给 Microsoft 进行分析
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 
-当组织中的用户收到其收件箱中的垃圾邮件（垃圾邮件）或仿冒骗局邮件时，或者如果邮件被标记为垃圾邮件，则可能会令人沮丧。 我们不断调整垃圾邮件筛选器，使其更加准确。 您和您的用户可以通过将虚假的负垃圾邮件和假肯定垃圾邮件提交给 Microsoft 进行分析来帮助此过程。 "假负" 是一种垃圾邮件，它应已被标识为垃圾邮件，但未被标识为垃圾邮件。 "误报" 是合法的电子邮件，被错误地标识为垃圾邮件。
+> [!NOTE]
+> 如果您是使用 Exchange Online 邮箱的 Office 365 组织中的管理员，我们建议您在 Office 365 安全性 & 合规性中心中使用提交门户。 有关详细信息，请参阅[使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。
+
+如果组织中的用户在其收件箱中收到垃圾邮件（垃圾邮件）或网络钓鱼邮件，或者如果邮件被标记为垃圾邮件，则可能会令人沮丧。 我们不断调整垃圾邮件筛选器，使其更加准确。
+
+您和您的用户可以通过将误报（好的电子邮件标记为 "坏"）、"漏报（允许错误邮件）" 和 "网络钓鱼邮件" 提交给 Microsoft 进行分析来帮助此过程。
 
 > [!NOTE]
 > 由于我们收到的提交量很大，我们可能无法应答所有分析请求。
 
-管理员可以向 Microsoft 发送电子邮件、url 和附件，以供审阅。 请参阅[Office 365 ATP 中的管理员提交](admin-submission.md)。
+## <a name="submit-false-negatives-to-microsoft"></a>将漏报提交给 Microsoft
 
-## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>提交通过垃圾邮件筛选器的垃圾邮件或网络钓鱼邮件
+> [!TIP]
+> Outlook 和 web 上的 Outlook （以前称为 Outlook Web App）中的用户可以使用 Microsoft Outlook 的报告消息外接程序，而不是使用以下过程来报告漏报。 有关如何安装和使用此工具的信息，请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。
 
-如果您收到一封通过垃圾邮件筛选器传递且应归类为垃圾邮件或钓鱼诈骗的邮件，则可以根据需要将 "假负" 邮件提交到 Microsoft 垃圾邮件分析和 Microsoft 仿冒分析团队。 分析师将检查邮件并将其添加到服务范围的筛选器中（如果它满足分类条件）。
+如果您收到一封邮件，该邮件将通过应标识为垃圾邮件或网络钓鱼的垃圾邮件筛选传递，则可以根据需要将邮件提交到 Microsoft 垃圾邮件分析和 Microsoft 仿冒分析团队。 分析师将检查邮件并将其添加到服务范围的筛选器中（如果它满足分类条件）。
 
-有关适用于整个组织的更多垃圾邮件设置，请参阅[Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。 本文包含有助于防止漏报的提示。
+1. 使用以下收件人之一创建一个新的空白电子邮件：
 
-您可以通过下列方式提交垃圾邮件：
+   - **垃圾邮件**：`junk@office365.microsoft.com`
 
-- 对于 Outlook 和 web 用户上的 Outlook，请使用 Microsoft Outlook 的报告消息外接程序。 有关如何安装和使用此工具的信息，请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。
+   - **网络钓鱼**：`phish@office365.microsoft.com`
 
-- 您还可以使用电子邮件将邮件提交到 Microsoft，并将其分类为垃圾邮件或网络钓鱼诈骗，如以下过程所述。
-
-### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>使用电子邮件将垃圾邮件或欺诈邮件提交给 Microsoft 
-
-将垃圾邮件或欺诈邮件提交给 Microsoft：
-
-1. 创建空白电子邮件。
-
-2. 将邮件地址发送给 Microsoft 团队以审阅邮件，如下所示：
-
-   - 对于垃圾邮件： junk@office365.microsoft.com
-
-   - 对于仿冒欺诈邮件： phish@office365.microsoft.com
-
-3. 将垃圾邮件或钓鱼诈骗邮件复制并粘贴为附件形式的新邮件。
+2. 将垃圾邮件或仿冒邮件拖放到新邮件中。 这会将垃圾邮件或仿冒邮件保存为新邮件中的附件。 请勿复制和粘贴邮件的内容或转发邮件（我们需要原始邮件，以便我们可以检查邮件头）。
 
    > [!NOTE]
-   > * 您可以在新邮件中附加多封邮件。 确保所有邮件都属于同一类型： "仿冒欺诈邮件" 或 "垃圾邮件"。 <br/><br/>* 将新邮件的正文保留为空。 <br/><br/>* 对附加的邮件使用 .msg （默认 Outlook 格式）或 .eml （默认 Outlook 网页格式）格式。
+   > <ul><li>您可以在新邮件中附加多封邮件。 确保所有邮件都属于同一类型： "仿冒欺诈邮件" 或 "垃圾邮件"。</li><li>保留新的邮件正文空白。<li></li>对于附加的邮件，请使用 .msg （默认 Outlook 格式）或 .eml （默认 Outlook 网页格式）格式。</li></ul>
 
-4. 单击“发送”****。
+3. 完成后，请单击 "**发送**"。
 
-## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>提交被标记为垃圾邮件但应允许通过的邮件
+> [!TIP]
+> 管理员有几种不同的方法来阻止被 misidentified 为垃圾邮件的特定邮件。 有关详细信息，请参阅[在 Office 365 中创建阻止的发件人列表](create-block-sender-lists-in-office-365.md)。
 
-如果邮件被错误地标识为垃圾邮件，您可以将 "误报" 邮件提交给 Microsoft 垃圾邮件分析团队。 分析师将评估并分析邮件。 根据分析结果的不同，可能会调整服务范围内的垃圾邮件内容筛选规则，以允许发送该邮件。
+## <a name="submit-false-positives-to-microsoft"></a>向 Microsoft 提交误报
 
-管理员可以查看更多垃圾邮件设置信息，这些信息适用于整个组织。 请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。 如果你拥有管理员级别控制，并且你想要阻止误报，此信息会很有帮助。
+> [!TIP]
+> Outlook 和 Outlook 网页版中的用户可以使用 Microsoft Outlook 的报告消息外接程序，而不是使用以下过程报告误报。 有关如何安装和使用此工具的信息，请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。
 
-您可以通过下列方式提交非垃圾邮件：
+如果邮件被错误地标识为垃圾邮件，您可以将邮件提交给 Microsoft 垃圾邮件分析团队。 分析师将评估邮件，并且（取决于分析结果）可以调整服务范围的筛选器以允许邮件通过。
 
-- 如果您在配置内容筛选器时使用 "**将邮件移动到垃圾邮件文件夹**" 操作（这是默认操作），则用户可以在其 outlook 或 web 上的 outlook （以前称为 "Outlook web App"） "垃圾邮件" 文件夹中释放假正邮件。
+1. 创建一个新的空白电子邮件， `not_junk@office365.microsoft.com`作为收件人：
 
-  - Outlook 用户可以通过使用**非垃圾**邮件的右键单击菜单选项来释放误报邮件。 但是，他们必须通过电子邮件将邮件提交给 Microsoft，如本文中的过程所示。
+2. 将 misidentified 邮件拖放到新邮件中。 这会将 misidentified 邮件另存为新邮件中的附件。 请勿复制和粘贴邮件的内容或转发邮件（我们需要原始邮件，以便我们可以检查邮件头）。
 
-  - Web 上的 Outlook 用户可以发布误报邮件，并将其提交给 Microsoft 进行分析，以使用 "**标记为非垃圾**邮件" 操作。 有关如何执行此操作的详细信息，请参阅[在 Outlook 网页版中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。
+   > [!NOTE]
+   > <ul><li>您可以在新邮件中附加多封邮件。 确保所有邮件都属于同一类型： "仿冒欺诈邮件" 或 "垃圾邮件"。</li><li>保留新的邮件正文空白。<li></li>对于附加的邮件，请使用 .msg （默认 Outlook 格式）或 .eml （默认 Outlook 网页格式）格式。</li></ul>
 
-- 如果您在配置内容筛选器时使用 "**隔离邮件**" 操作而不是 "**将邮件移动到垃圾邮件文件夹**" 操作，请执行以下操作：
+3. 完成后，请单击 "**发送**"。
 
-  - 管理员可以释放隔离的垃圾邮件并从 Exchange 管理中心将其报告为误报。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
+> [!TIP]
+> 管理员有几种不同的方法允许特定邮件跳过垃圾邮件筛选。 有关详细信息，请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
-  - 用户可以释放自己的垃圾邮件隔离邮件，并通过以下频道将其报告为误报：
+## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>创建邮件流规则以接收报告给 Microsoft 的邮件副本
 
-  - Exchange 管理中心 (EAC) 用户界面。 有关详细信息，请参阅[Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md)。
+您可以创建邮件流规则（也称为传输规则），以查找通过使用本主题中所述的方法报告给 Microsoft 的电子邮件，并且您可以配置密件抄送收件人以接收这些报告的邮件的副本。
 
-  - 最终用户垃圾邮件通知邮件（如果已由管理员启用）。
+您可以在 Exchange 管理中心（EAC）和 PowerShell （Office 365 客户的 Exchange Online PowerShell 中创建邮件流规则;适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
 
-- 您还可以使用电子邮件将不应被归类为垃圾邮件的邮件提交给 Microsoft。 执行此操作时，请确保使用以下过程中的步骤。
+### <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
-### <a name="use-email-to-submit-false-positive-messages"></a>使用电子邮件提交误报邮件
+- 您需要先在 Exchange Online 中分配权限，然后才能执行这些过程。 具体来说，您需要分配 "**传输规则**" 角色，默认情况下会将其分配给 "**组织管理**"、"**合规性管理**" 和 "**记录管理**" 角色。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
-使用与 "[使用电子邮件将垃圾邮件或钓鱼诈骗邮件提交给 Microsoft](#use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft) " 部分中所述的相同过程，但将邮件发送到 not_junk@office365.microsoft.com。
+- 若要在 Exchange Online 中打开 EAC，请参阅 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)。
 
-## <a name="spam-evaluation-and-rules-deployment"></a>垃圾邮件评估和规则部署
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-垃圾邮件分析团队会检查您提交的邮件，并调整垃圾邮件筛选器以防止今后的垃圾邮件。 因此，Office 365 垃圾邮件筛选器 areconstantly 完善。 任何提交的项目都在全网络层面评估。 将检查并评估误报提交的规则，以允许今后通过垃圾邮件筛选器访问邮件。 因此，通知误报和漏报（未筛选的垃圾邮件）的服务对于您和使用全局网络的所有客户来说都是有益的。 垃圾邮件团队检查每个提交的邮件中的指示符，如下所示：
+- 有关 Exchange Online 和独立 EOP 中的邮件流规则的详细信息，请参阅下列主题：
 
-- 发件人地址
+  - [Exchange Online 中的邮件流规则（传输规则）](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-- 发送 IP 地址
+  - [Exchange Online 中的邮件流规则条件和例外（谓词）](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-- 关键字
+  - [Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- 短语
+### <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 EAC 创建邮件流规则以接收报告的邮件的副本
 
-- 传输频率
+1. In the EAC, go to **Mail flow** \> **Rules**.
 
-- 其他趋势和模式
+2. 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.png) "添加" 图标，然后选择 "**创建新规则**"。
 
-查看此信息后，垃圾邮件团队可能会对服务的垃圾邮件筛选层进行更改。 有关垃圾邮件团队的详细信息，您可以观看以下仅英语的视频：
+3. 在打开的" **新规则**"窗口中，配置以下设置：
 
-[Microsoft Exchange 垃圾邮件团队视频](https://youtu.be/-TpX_-GMC7o?hd=1)
+   - **名称**：输入规则的唯一描述性名称。 例如，向 Microsoft 报告的密件抄送邮件。
 
-垃圾邮件评估是一个无论原始语言或字符集如何都适用的持续过程。由于垃圾邮件可能是模糊的，甚至在主题或邮件正文中缺少文本，垃圾邮件团队需要依靠其他邮件特征执行筛选。这表示垃圾邮件团队将一个给定的邮件标记为垃圾邮件并根据其规则做必要更改后，未来该邮件将被阻止，直到其特征进行了修改并足以避开筛选器。不断部署新垃圾邮件规则。关于单个提交的规则的时间段根据提交的数量和质量而有所不同。因为新垃圾邮件规则是为全球所有客户设置的，所以并非所有的单个垃圾邮件提交都将产生新的垃圾邮件规则。
+   - 单击“其他选项”****。
+
+   - **在以下情况下应用此规则**：选择**收件人** \> **地址包括以下任何词语**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一， **Add** ![单击 "添加](../../media/ITPro-EAC-AddIcon.png)" "添加" 图标，然后重复此步骤，直到您输入所有值为止。
+
+     - `junk@office365.microsoft.com`
+     - `abuse@messaging.microsoft.com`
+     - `phish@office365.microsoft.com`
+     - `false_positive@messaging.microsoft.com`
+
+     若要编辑条目，请选择该条目**Edit** ![，然后单击](../../media/ITPro-EAC-EditIcon.png)"编辑" "编辑" 图标。 若要删除条目，请将其选中**Remove** ![，然后单击](../../media/ITPro-EAC-DeleteIcon.png)"删除删除图标"。
+
+     完成后，请单击 **"确定"**。
+
+   - **执行下列**操作：选择 "**将收件人** \>添加**到密件抄送" 框**。 在出现的对话框中，查找并选择要添加的收件人。 完成后，请单击 **"确定"**。
+
+4. 您可以进行其他选择来审核规则、测试规则、在特定时间段内激活规则，以及其他设置。 建议在强制执行规则之前对其进行测试。
+
+5. 完成时，请单击“保存”****。
+
+### <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 PowerShell 创建邮件流规则以接收报告的邮件的副本
+
+本示例将新建一个名为 "密件抄送给 Microsoft" 的邮件流规则，该规则将查找通过使用本主题中所述方法报告给 Microsoft 的电子邮件，并将用户 laura@contoso.com 和 julia@contoso.com 添加为密件抄送收件人。
+
+```powershell
+New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
+```
+
+有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)。
+
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+
+若要验证是否已将邮件流规则配置为接收报告的邮件的副本，请执行以下任一步骤：
+
+- 在 EAC 中，转到 **"邮件流** \> **规则** \> "。 \>选择该规则，](../../media/ITPro-EAC-EditIcon.png)然后单击 "**编辑** ![编辑" 图标，并验证设置。
+
+- 在 PowerShell 中，运行以下命令来验证设置：
+
+  ```powershell
+  Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
+  ```
+
+- 将测试邮件发送到其中一个报告电子邮件地址，并验证结果。

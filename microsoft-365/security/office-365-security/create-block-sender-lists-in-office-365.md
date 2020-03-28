@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 管理员可以了解 Office 365 和 EOP 中的可用选项来阻止入站邮件。
-ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893858"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033418"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>在 Office 365 中创建阻止的发件人列表
 
@@ -30,12 +30,12 @@ ms.locfileid: "42893858"
 
 2. 阻止的发件人列表或阻止的域列表（反垃圾邮件策略）
 
-3. Mai 流规则
+3. 邮件流规则
 
 4. IP 阻止列表（连接筛选）
 
 > [!NOTE]
-> 虽然您可以使用组织范围内的阻止设置来解决漏报（丢失的垃圾邮件），但还应将这些邮件提交给 Microsoft 进行分析。 使用阻止列表管理漏报会显著增加管理开销。 如果使用阻止列表转移丢失的垃圾邮件，则需要在准备时保留将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)的主题。
+> 虽然您可以使用组织范围内的阻止设置来解决漏报（丢失的垃圾邮件），但还应将这些邮件提交给 Microsoft 进行分析。 使用阻止列表管理漏报会显著增加管理开销。 如果使用阻止列表转移丢失的垃圾邮件，则需要将主题[报告邮件和文件](report-junk-email-messages-to-microsoft.md)保留在 Microsoft 准备就绪。
 
 相比之下，您还可以使用多个选项始终允许使用_安全发件人列表_从特定来源发送电子邮件。 有关详细信息，请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 8c37ea146447a7b38b10224db94f9995fd985e6e
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 2b77d273cdc589409506dc709669536fcea6c006
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826172"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030115"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -68,7 +68,7 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 |[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 预览：在[每月频道中（定向）](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)            | 预览：在[Office 预览体验成员](https://office.com/insider)        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
+|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 滚动到[每月频道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)（2003 +） | 滚动到[每月频道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)（16.35 +）   | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[查看标签使用情况标签分析](label-analytics.md)并为管理员发送数据                      | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[要求用户对其电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)   | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 预览：在[Office 预览体验成员](https://office.com/insider)                                  | 正在审阅 | 正在审阅 | 正在审阅 | [预览](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -91,7 +91,7 @@ Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签�
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 预览：滚动到[Office 预览体验成员](https://office.com/insider)                       | 正在审阅                    | 正在审阅           | 正在审阅               | 是 |
 |
 
-## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 内置标签客户端和 Azure 信息保护客户端
+## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 内置标签客户端和其他标记解决方案
 
 Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感度标签策略设置：
 
@@ -99,19 +99,25 @@ Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感�
 - Microsoft 365 安全中心
 - Office 365 安全与合规中心
 
-若要使用 Office 内置标签客户端，必须向用户发布一个或多个从列出的管理中心[发布的标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
+若要使用 Office 内置标签客户端，必须向用户发布一个或多个从列出的管理中心和[受支持的 Office 版本](#support-for-sensitivity-label-capabilities-in-apps)[发布的标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
 
-但是，如果用户安装了其中一个 Azure 信息保护客户端（[统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或[经典客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)），则默认情况下，在其 Office 应用中关闭内置的标记客户端。 若要使用内置标签而不是 Azure 信息保护客户端 Office 应用程序，请禁用或卸载 Office 外接程序以获取 Azure 信息保护：
+如果满足这两个条件，但需要关闭 Office 内置标签客户端，请使用以下组策略设置：
 
-1. 完成以下选项之一：
-    
-    - **对于多台计算机：** 配置在 **Office 中使用敏感度功能以应用并查看敏感度标签**组策略设置。 在 "**用户配置/管理模板/Microsoft Office 2016/安全设置**" 下找到此设置。 通过组策略或使用[Office 云策略服务](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)部署此设置。
-    
-    - **对于单个计算机：** 有关如何在一台计算机上[永久禁用或删除](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)Azure 信息保护外接程序的信息，请参阅 "查看、管理和安装 Office 程序中的外接程序"。
+1. 导航到 "**用户配置/管理模板/Microsoft Office 2016/安全设置**"
 
-2. 重新启动所有 Office 应用程序。
+2. Set**使用 Office 中的灵敏度功能将敏感度标签应用于** **0**并将其查看。 
+ 
+通过使用组策略或使用[Office 云策略服务](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)部署此设置。 该设置将在 Office 应用程序重新启动时生效。
 
-当您禁用或卸载此 Office 加载项时，将保持安装的 Azure 信息保护客户端，以便您可以继续标记 Office 应用外部的文件。 例如，通过使用文件资源管理器或 PowerShell。
+### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 内置标签客户端和 Azure 信息保护客户端
+
+如果用户安装了其中一个 Azure 信息保护客户端（[统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或[经典客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)），默认情况下，内置标签客户端在其 Office 应用中处于关闭状态。 
+
+若要使用内置标签而不是 Azure 信息保护客户端的 Office 应用，请使用上一节中的说明，但设置组策略设置**使用 Office 中的敏感度功能将敏感度标签应用并查看**为**1**。 
+
+或者，禁用或删除 Office 加载项 " **Azure 信息保护**"。 此方法适用于一台计算机和临时测试。 有关说明，请参阅[在 Office 程序中查看、管理和安装加载项](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
+
+当您禁用或删除此 Office 加载项时，将保持安装的 Azure 信息保护客户端，以便您可以继续标记 Office 应用外部的文件。 例如，通过使用文件资源管理器或 PowerShell。
 
 有关 Azure 信息保护客户端和 Office 内置标签客户端支持的功能的信息，请参阅从 Azure 信息保护文档中[选择用于 Windows 计算机的标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)。
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710501"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029878"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -247,7 +247,7 @@ ms.locfileid: "42710501"
 
     语法`Start-InformationBarrierPoliciesApplication`
 
-    大约半小时后，策略将应用于您的组织的用户。 如果您的组织规模较大，则可能需要24小时（或更多）才能完成此过程。 （一般原则是，处理5000用户帐户需要大约一小时的时间。）
+    在运行`Start-InformationBarrierPoliciesApplication`等待30分钟后，系统开始应用策略。 系统对用户应用策略用户。 通常，系统进程每小时大约5000个用户帐户。
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>查看用户帐户、段、策略或策略应用程序的状态
 

@@ -1,5 +1,5 @@
 ---
-title: 向 Microsoft 报告垃圾邮件
+title: 将垃圾邮件、非垃圾邮件和网络钓鱼邮件报告给 Microsoft
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,55 +16,25 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供多种报告垃圾邮件的方式：
-ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b7e7ed56f171ee3b74b36ed7c10c46286fb1e570
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895175"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033658"
 ---
-# <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 报告垃圾邮件
+# <a name="report-messages-and-files-to-microsoft"></a>将邮件和文件报告给 Microsoft
 
-Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供多种报告垃圾邮件的方式：
+Office 365 中的用户和管理员使用 Exchange Online 中的邮箱的组织，或独立 Exchange Online Protection （EOP）组织（没有 Exchange Online 邮箱）来提交电子邮件。有几种不同的方法可用于报告邮件和文件到 Microsoft。
 
-- 从 Outlook 功能区
+|||
+|---|---|
+|**方法**|**说明**|
+|[使用管理员提交将可疑的垃圾邮件、网络钓鱼诈骗、Url 和文件提交给 Microsoft](admin-submission.md)|对于具有 Exchange Online 邮箱的组织中的管理员，建议使用此报告方法（在独立 EOP 中不可用）。|
+|[在 Office 365 中启用报告邮件加载项](enable-the-report-message-add-in.md)|适用于 Outlook、Outlook for Mac 和 web 上的 Outlook。 这是推荐的加载项。 <br/><br/> 根据你的许可证，报告的邮件在[自动调查和响应（空中）结果](air-view-investigation-results.md)（[用户报告的邮件报告](view-email-security-reports.md#user-reported-messages-report)和[威胁浏览器](threat-explorer-views.md#email--submissions)）中可用。|
+|[在 Office 365 中安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序](junk-email-reporting-add-in-for-microsoft-outlook.md)|仅在 Outlook 中有效。|
+|[在 Office 365 中的 Outlook 网页上报告垃圾邮件和网络钓鱼电子邮件](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|对于具有 Exchange Online 邮箱的组织，请在 web 上的 Outlook 中使用内置功能（在独立 EOP 中不可用）。|
+|[将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全智能网站提交附件和其他文件。|
+|
 
-- 从您的收件箱
-
-- 从打开的电子邮件内部
-
-垃圾邮件报告加载项可帮助您将报告提交至 Microsoft Exchange Online Protection (EOP) 服务。 如果您的邮箱未受该服务保护，提交垃圾邮件报告将不会影响您的垃圾邮件筛选器。 管理员可以了解在[office 365 中的 "创建安全发件人列表"](create-safe-sender-lists-in-office-365.md)和["在 Office 365 中创建阻止的发件人列表"](create-block-sender-lists-in-office-365.md)中适用于整个组织的更多垃圾邮件设置。 如果您拥有管理员级别控制，并且您想要防止误报或漏报问题，这些内容会很有帮助。
-
-> [!TIP]
-> 您还可以通过使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)电子邮件地址和误报（非垃圾邮件）邮件将垃圾邮件直接提交给 Microsoft，方法是使用[not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)电子邮件地址。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
-
-### <a name="to-report-junk-email-messages-from-outlook"></a>报告来自 Outlook 的垃圾电子邮件
-
-[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-### <a name="to-report-junk-email-messages-from-your-inbox"></a>从收件箱报告垃圾邮件
-
-1. 右键单击要报告为垃圾邮件的邮件。
-
-2. 选择“垃圾邮件”****，然后单击“报告垃圾邮件”****。
-    ![从收件箱报告垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
-
-3. 打开“Microsoft 垃圾邮件报告外接程序”**** 对话框。 如果您确定要将所选邮件提交为垃圾邮件，请单击 **"是"**。
-    ![确认报告为垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > 如果您在提交垃圾邮件时不想收到此确认消息，请选中 "**不再显示此消息**"。
-
-选定的邮件会被发送至 Microsoft 以供分析，并移动至垃圾邮件文件夹。若要确认已提交的邮件，请打开您的“已发送邮件”**** 文件夹查看已提交的邮件。
-
-### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>从打开的邮件中报告垃圾邮件
-
-1. 在打开的邮件内部，单击邮件功能区上的“报告垃圾邮件”**** 按钮。 例如，单击 "**垃圾** \> **报告垃圾** ![邮件"。从邮件中报告垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
-
-2. 打开“Microsoft 垃圾邮件报告外接程序”**** 对话框。 如果您确定要将所选邮件提交为垃圾邮件，请单击 **"是"**。
-    ![确认报告为垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > 如果您在提交垃圾邮件时不想收到此确认消息，请选中 "**不再显示此消息**"。
-
-选定的邮件会被发送至 Microsoft 以供分析，并移动至垃圾邮件文件夹。若要确认已提交的邮件，请打开您的“已发送邮件”**** 文件夹查看已提交的邮件。
+如果已隔离垃圾邮件或网络钓鱼邮件，而不是进行传递，则用户可以从 Office 365 Security & 合规性中心中的隔离门户向 Microsoft 报告邮件。 有关详细信息，请参阅[在 Office 365 中查找并以用户的方式释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。

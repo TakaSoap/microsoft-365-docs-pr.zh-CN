@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何确定仿冒邮件的原因以及在将来阻止更多的网络钓鱼邮件的原因。
-ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082021"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033646"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>优化 Office 365 中的反网络钓鱼保护
 
@@ -39,11 +39,7 @@ ms.locfileid: "42082021"
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>向 Microsoft 报告网络钓鱼邮件
 
-在调整用于保护 Office 365 中所有客户的筛选器时，报告网络钓鱼邮件非常有帮助。
-
-将仿冒邮件作为新的（否则为空邮件）的_附件_发送到**phish@office365.microsoft.com**。 不要直接转发原始邮件;否则，我们无法检查原始邮件头。 或者，您可以在 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）中使用[报告邮件](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in)加载项。
-
-有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+在调整用于保护 Office 365 中所有客户的筛选器时，报告网络钓鱼邮件非常有帮助。 有关说明，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="inspect-the-message-headers"></a>检查邮件头
 

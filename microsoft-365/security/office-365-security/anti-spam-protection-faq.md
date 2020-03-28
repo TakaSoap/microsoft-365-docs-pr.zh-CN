@@ -16,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: daabb84115f1f993fd01891bcef74c23f0391bb4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894054"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033490"
 ---
 # <a name="anti-spam-protection-in-office-365-faq"></a>Office 365 中的反垃圾邮件保护常见问题解答
 
@@ -42,7 +42,9 @@ A. **对于入站邮件：** 大多数垃圾邮件是通过连接筛选删除的
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>增长率. 什么是零天垃圾邮件变种以及服务如何处理？
 
-A. 零天垃圾邮件变种是指第一代未知的垃圾邮件，即从未捕获或分析的垃圾邮件，因此我们的反垃圾邮件筛选器还没有可用于检测到它的任何信息。 由垃圾邮件分析员捕获并分析零天的垃圾邮件示例后，如果它符合垃圾邮件分类标准，我们的反垃圾邮件筛选器将进行更新以检测它，并且不再被视为 "零天"。 （**注意：** 如果收到的邮件可能是零天垃圾邮件变种，为了帮助我们改进服务，请使用将[垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)中所述的方法之一提交给 microsoft 进行分析。）
+A. 零天垃圾邮件变种是指第一代未知的垃圾邮件，即从未捕获或分析的垃圾邮件，因此我们的反垃圾邮件筛选器还没有可用于检测到它的任何信息。 由垃圾邮件分析员捕获并分析零天的垃圾邮件示例后，如果它符合垃圾邮件分类标准，我们的反垃圾邮件筛选器将进行更新以检测它，并且不再被视为 "零天"。
+
+**注意：** 如果您收到一封电子邮件，该邮件可能是零天垃圾邮件变种，为了帮助我们改进服务，请使用[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)中所述的方法之一将邮件提交给 microsoft。
 
 ## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>增长率. 我是否需要将服务配置为提供反垃圾邮件保护？
 
@@ -72,7 +74,7 @@ A. 是的，该服务有一个 URL 筛选器，用于检查邮件中的 Url。 �
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>增长率. 客户如何使用服务向 Microsoft 发送假否定（垃圾邮件）和误报（非垃圾邮件）邮件？
 
-A. 可以通过几种方式将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+A. 可以通过几种方式将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析。 有关详细信息，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="q-can-i-get-spam-reports"></a>增长率. 我是否可以获取垃圾邮件报告？
 

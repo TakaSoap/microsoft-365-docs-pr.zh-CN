@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978262"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022917"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -225,18 +225,22 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 ## <a name="define-device-compliance-policies"></a>定义设备合规性策略
 
-设备合规性策略定义设备必须遵循的要求才能标记为合规。 从 Azure 门户中创建 Intune 设备合规性策略。 
+设备合规性策略定义设备必须遵循的要求才能标记为合规。 从 Microsoft 终结点管理器管理中心中创建 Intune 设备合规性策略。
 
 为每个平台创建一个策略：
-- Android
+- Android 设备管理员
 - Android 企业版
-- iOS
+- iOS/iPadOS
 - macOS
 - 此设置在以下类型的设备上可用：
 - Windows 8.1 及更高版本
 - Windows 10 及更高版本
 
-若要创建设备合规性策略，请使用你的管理凭据登录到 Microsoft Azure 门户，然后导航到**Intune > 设备合规性**。 选择“**创建策略**”。
+若要创建设备合规性策略，请使用你的管理凭据登录[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然后导航到 "**设备** > **合规性策略** > "**策略**。 选择 "**创建策略**"。
+
+对于要部署的设备合规性策略，必须将其分配给用户组。 您在创建并保存策略后分配该策略。 在管理中心中，选择策略，然后选择 "**分配**"。 选择要接收策略的组后，选择 "**保存**" 以保存该组分配并部署该策略。
+
+有关在 Intune 中创建合规性策略的分步指南，请参阅 Intune 文档中的在[Microsoft Intune 中创建合规性策略](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)。
 
 建议将以下设置用于 Windows 10。
 
@@ -255,8 +259,6 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 |:---|:---------|:-----|:----|
 |操作系统版本|全部|未配置||
 
-要将上述所有策略视为已部署，这些策略必须面向用户组。 为此，可以通过在 "**策略**" 部分中选择 "**管理部署**" （与 "添加" 相同级别）来创建策略（在保存时）或更高版本。
-
 系统安全
 
 |类型|属性|值|注意|
@@ -273,9 +275,9 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 |设备安全性|Firewall|需要||
 ||防病毒|需要||
 ||间谍|需要|此设置需要在 Windows 安全中心中注册的反间谍软件解决方案|
-|Defender|Windows Defender 反恶意软件|需要||
-||Windows Defender 反恶意软件最低版本||仅支持 Windows 10 桌面版。 Microsoft 建议版本的背后不超过最新版本五个|
-||最新的 Windows Defender 反恶意软件签名|需要||
+|Defender|Microsoft Defender 反恶意软件|需要||
+||Microsoft Defender 反恶意软件最低版本||仅支持 Windows 10 桌面版。 Microsoft 建议版本的背后不超过最新版本五个|
+||最新的 Microsoft Defender 反恶意软件签名|需要||
 ||实时保护|需要|仅支持 Windows 10 桌面版|
 
 **Microsoft Defender ATP**
@@ -283,6 +285,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
 |Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|中等||
+
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>需要符合要求的电脑（但不符合兼容电话和平板电脑）
 在将策略添加到需要兼容的电脑之前，请务必在 Intune 中注册设备进行管理。 建议在将设备注册到 Intune 中之前使用多重身份验证，以确保设备已占有目标用户。 

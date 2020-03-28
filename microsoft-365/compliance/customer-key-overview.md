@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 使用 "客户密钥"，可以控制组织的加密密钥，然后配置 Office 365 以使用它们在 Microsoft 数据中心中对静态数据进行加密。
-ms.openlocfilehash: 0910374051073cb67ee4d2a4fac0a88871a2fd73
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: df47f0df0f30de3529982099cb59efe2a741cd34
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333649"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029868"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Office 365 中的客户密钥的服务加密
 
@@ -49,7 +49,7 @@ Office 365 提供了通过 BitLocker 和分布式密钥管理器（DKM）启用�
 
 ## <a name="about-the-data-encryption-policy-dep"></a>关于数据加密策略（DEP）
 
-数据加密策略定义加密层次结构，以使用您提供的每个密钥以及由 Microsoft 保护的可用性密钥来加密数据。 使用 PowerShell cmdlet 创建 DEPs，这些 cmdlet 因每个服务而异，并将其分配给加密应用程序数据。 例如：
+数据加密策略定义加密层次结构，以使用您提供的每个密钥以及由 Microsoft 保护的可用性密钥来加密数据。 您使用 PowerShell cmdlet 创建 DEPs，这些 cmdlet 因每个服务而异，并将这些 DEPs 分配给加密应用程序数据。 例如：
 
 **Exchange Online 和 Skype For business**最高可为每个租户创建 50 DEPs。 将 DEPs 关联到 Azure Key Vault 中的客户密钥，然后将 DEPs 分配给各个邮箱。 将 DEP 分配到邮箱时：
 

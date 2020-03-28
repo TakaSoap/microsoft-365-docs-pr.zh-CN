@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用 Exchange Online Protection 中的邮件流规则进行批量电子邮件筛选。
-ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b08edfdd88f6f522d3bf212b209ee4b293d7198a
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895043"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033634"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>使用邮件流规则在 Office 365 中筛选批量电子邮件
 
@@ -30,7 +30,7 @@ ms.locfileid: "42895043"
 
 本主题介绍如何在 Exchange 管理中心（EAC）和 PowerShell （Office 365 客户的 Exchange Online PowerShell 中创建这些邮件流规则;适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
 - 您需要先在 Exchange Online 中分配权限，然后才能执行这些过程。 具体来说，您需要分配 "**传输规则**" 角色，默认情况下会将其分配给 "**组织管理**"、"**合规性管理**" 和 "**记录管理**" 角色。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "42895043"
 
    - **在以下情况下应用此规则**：配置以下设置之一，以使用正则表达式（RegEx）或字词或短语查找邮件中的内容：
 
-     - **主题** \>或正文**主题或正文与这些文本模式匹配**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.png)"添加" 图标，然后根据需要重复任意次数。
+     - **主题** \>或正文**主题或正文与这些文本模式匹配**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.png)"添加" 图标，然后重复此步骤，直到您输入了所有值。
 
        - `If you are unable to view the content of this email\, please`
 
@@ -96,7 +96,7 @@ ms.locfileid: "42895043"
 
        完成后，请单击 **"确定"**。
 
-     - **主题** \>或正文**主题或正文包含以下任何词语**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** ![" "添加](../../media/ITPro-EAC-AddIcon.png)" 图标，然后根据需要重复任意次数。
+     - **主题** \>或正文**主题或正文包含以下任何词语**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** ![" "添加](../../media/ITPro-EAC-AddIcon.png)" 图标，然后重复此步骤，直到您输入所有值。
 
        - `to change your preferences or unsubscribe`
 
@@ -138,7 +138,7 @@ ms.locfileid: "42895043"
 
    完成后，请单击 "**保存**"
 
-## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a>使用 PowerShell 创建筛选批量电子邮件的邮件流规则
+## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>使用 PowerShell 创建筛选批量电子邮件的邮件流规则
 
 使用以下语法创建一个或两个邮件流规则（正则表达式与词）：
 

@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895223"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032848"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -190,12 +190,11 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |在检测时重定向附件|已启用|已启用|重定向到安全管理员的电子邮件地址，该管理员知道如何确定附件是否为恶意软件|
 |如果恶意软件扫描附件超时或发生错误，则 ATP 安全附件响应|已启用|已启用||
 
-
 ## <a name="related-topics"></a>相关主题
 
 - 您是否正在寻找与**Exchange 邮件流/Exchange 传输规则**有关的最佳实践？ 有关详细信息，请参阅[本文](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop)。
 
-- 将可疑邮件、可疑垃圾邮件、网络钓鱼或 Url 发送给 Microsoft 进行扫描。 请按照[本文](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)中的**管理提交**说明进行操作。
+- 管理员和用户可以将误报（好的电子邮件标记为坏）和漏报（允许的错误电子邮件）提交给 Microsoft 进行分析。 有关详细信息，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 - 使用这些链接可获取有关如何**设置** [EOP 服务](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的信息，以及**配置** [Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 （请不要忘记在 "防御[Office 365 中的威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)" 中了解有用的说明。）
 

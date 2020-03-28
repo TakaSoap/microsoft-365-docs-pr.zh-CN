@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: 在开始使用 EOP 之前，应注意以下几点。
-ms.openlocfilehash: 9c027d6c1ded10becd7c73dc3468270ff50edb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599339"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032860"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,12 +63,8 @@ ms.locfileid: "41599339"
 
 协助 EOP 最终用户管理垃圾邮件的帮助内容包含下列主题：
 
-- [以用户的形式查找和释放隔离邮件](find-and-release-quarantined-messages-as-a-user.md)：介绍最终用户如何在垃圾邮件隔离用户界面中查找和释放自己的垃圾邮件隔离邮件，并可选择将其报告为非垃圾邮件到 Microsoft。
+- [将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)
 
-- [将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)：介绍最终用户可以将垃圾邮件（垃圾邮件）和非垃圾邮件（非垃圾邮件）提交给 microsoft 的不同方法。 本主题包括指向 Microsoft Outlook 和 web 上的 Outlook （以前称为 Outlook Web App）中提供的报告工具的链接。
-
-- [将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)：介绍最终用户如何提交经过筛选器的恶意软件，或者提交被错误识别为恶意软件的文件。
-
-- 最终用户可以通过在 Outlook 或 web 上的 Outlook 中配置其垃圾邮件设置，将特定用户或域添加到安全发件人列表或阻止的发件人列表中。 请注意，从阻止的发件人发送的邮件被标记为垃圾邮件，而不是被拒绝，这意味着可以从 "垃圾邮件" 文件夹或隔离区中检索邮件（具体取决于管理员已将该服务配置为发送垃圾邮件的位置）。有关详细信息，请参阅[使用报告邮件外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+- 最终用户可以在 Outlook 或 web 上的 Outlook 中向自己的安全发件人列表或阻止发件人列表中添加发件人。 管理员还可以修改用户邮箱中的这些列表。 有关详细信息，请参阅[关于 Outlook 中的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)。
 
 - [EOP 帮助与支持](help-and-support-for-eop.md) 提供有关获取帮助和技术支持的信息。

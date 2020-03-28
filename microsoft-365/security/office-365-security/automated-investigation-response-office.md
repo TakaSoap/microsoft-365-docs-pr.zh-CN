@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
 ms.custom: air
-ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955564"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033442"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -92,7 +92,7 @@ ms.locfileid: "42955564"
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>示例：用户报告的网络钓鱼邮件启动调查行动手册
 
-假定组织中的某个用户收到电子邮件，而他们认为是网络钓鱼尝试。 训练有素的用户报告此类邮件，使用[outlook 或 Outlook Web App 的报告邮件加载项](enable-the-report-message-add-in.md)将其发送到 Microsoft 进行分析。 提交也会发送到您的系统，并在 "**提交**" 视图中显示在资源管理器中（以前称为**用户报告**的视图）。 此外，用户报告的消息现在会触发基于系统的信息警报，这将自动启动调查行动手册。
+假定组织中的某个用户收到电子邮件，而他们认为是网络钓鱼尝试。 经过培训的用户报告此类邮件，使用[报告邮件加载项](enable-the-report-message-add-in.md)将其发送到 Microsoft 进行分析。 提交也会发送到您的系统，并在 "**提交**" 视图中显示在资源管理器中（以前称为**用户报告**的视图）。 此外，用户报告的消息现在会触发基于系统的信息警报，这将自动启动调查行动手册。
 
 在根调查阶段，会评估电子邮件的各个方面。 具体包括：
 - 确定它可能属于哪种类型的威胁;

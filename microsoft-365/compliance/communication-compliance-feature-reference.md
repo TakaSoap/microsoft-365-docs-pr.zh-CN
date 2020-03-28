@@ -18,16 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c1279b0258047ed4653e0bb3d4d95333b28af643
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894817"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029846"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
 ## <a name="policies"></a>策略
+
+>[!Important]
+>不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用[Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview)中的策略管理控件。
 
 在 Microsoft 365 合规性中心为 Microsoft 365 组织创建通信合规性策略。 如果你拥有 Office 365 组织，你将在 Office 365 安全 & 合规性中心中[配置监督策略](configure-supervision-policies.md)。 通信合规性策略定义哪些通信和用户将在组织中进行审阅，定义通信必须满足的自定义条件，并指定应进行审核的用户。 **监管审核管理员**角色组中包括的用户可以设置策略，并且分配了此角色的任何人都可以访问 Microsoft 365 合规性中心中的**通信合规性**页面。 如果需要，您可以将对策略所做修改的历史记录导出到 .csv 文件中，该文件还包括待审阅的通知、已升级的项目和已解决的项目的状态。 策略不能重命名，在不再需要时可删除。
 
@@ -196,7 +199,7 @@ ms.locfileid: "42894817"
 |**模板名称** | 是 | "通知" 模板的友好名称，您将在修正期间的 "通知" 工作流中选择，支持文本字符。 |
 | **发件人地址** | 是 | 将邮件发送给具有策略匹配的员工的一个或多个用户或组的地址，该用户或组是从 Active Directory 中为订阅选择的一个或多个用户或组。 |
 | **抄送和密件抄送地址** | 否 | 从 Active Directory 为你的订阅选择的策略匹配通知的可选用户或组。 |
-| **Subject** | 是 | 显示在邮件主题行中的信息支持文本字符。 |
+| **主题** | 是 | 显示在邮件主题行中的信息支持文本字符。 |
 | **邮件正文** | 是 | 显示在邮件正文中的信息支持文本或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>用于通知的 HTML
@@ -233,7 +236,7 @@ ms.locfileid: "42894817"
 | **收件人** | 向其发送邮件的用户。 |
 | **Sender** | 发送邮件的人员。 |
 | **发件人域** | 发送邮件的域。 |
-| **Size** | 邮件的大小，以 KB 为单位。 |
+| **大小** | 邮件的大小，以 KB 为单位。 |
 | **主题/职务** | 邮件主题或聊天标题。 |
 | **Tags** | 分配给邮件的标记，无论是*可疑*的*还是**不兼容*的。 |
 | **升级到** | 作为邮件升级操作的一部分包含的人员的用户名。 |

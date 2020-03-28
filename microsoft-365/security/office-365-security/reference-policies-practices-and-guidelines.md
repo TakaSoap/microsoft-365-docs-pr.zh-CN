@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 制定了各种策略和过程，并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
-ms.openlocfilehash: e6e5565b032af656b2204ce448581014595013de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598609"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033742"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
@@ -89,7 +89,7 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
 
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 
-若要报告非法、滥用、不受欢迎或恶意的电子邮件，请[在 web 上的 Outlook 中报告垃圾电子邮件和网络钓鱼诈骗](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。 发送这些类型的通信将违反 Microsoft 策略，我们将对已确认的报告采取适当措施。
+若要报告非法、滥用、不受欢迎或恶意的电子邮件，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信会违反 Microsoft 策略，并将对已确认的报告执行相应的操作。
 
 ## <a name="law-enforcement"></a>法律执行
 

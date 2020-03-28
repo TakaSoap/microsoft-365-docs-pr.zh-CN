@@ -2,10 +2,10 @@
 title: 垃圾邮件和批量邮件之间有什么差异？
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 1/7/2015
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,35 +15,36 @@ search.appverid:
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
-description: 客户有时 askwhat 是垃圾邮件和批量电子邮件之间的区别？本主题旨在说明不同之处，并提供有关 Exchange Online 和 Exchange Online Protection （EOP）中可用的不同选项的信息。
-ms.openlocfilehash: 55924ac5e83ca109fd66d1723cdb7c5f43f20df6
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 本主题说明了垃圾邮件（垃圾邮件）和批量电子邮件之间的区别以及 Office 365 中的相关控件。
+ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895031"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033622"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾邮件和批量邮件之间有什么差异？
 
-客户有时会询问"垃圾邮件和批量邮件之间有什么差异？"本主题的目地是说明差异，并提供关于适用于 Exchange Online 和 Exchange Online Protection (EOP) 的不同选项的信息。
-  
- **什么是垃圾邮件？**
-  
-垃圾邮件是经服务筛选的未经请求的（并且通常是不必要的）电子邮件。默认情况下，服务根据发送 IP 地址的信誉拒绝垃圾邮件。但是，如果邮件通过 IP 检查，但内容筛选器将其归为垃圾邮件，那么该邮件将会被发送到预期收件人的"垃圾邮件"文件夹。 
-  
-> [!NOTE]
-> 对内容筛选邮件执行的操作可通过 Exchange 管理中心（EAC）中的内容筛选器策略进行配置，如[Office 365 中的配置反垃圾邮件策略](configure-your-spam-filter-policies.md)中所述。 此外，如果您不同意垃圾邮件分类，您可以通过几种方式报告您认为是垃圾邮件或非垃圾邮件的邮件，如[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交到 microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)中所述。 
-  
- **什么是批量邮件？**
-  
-批量邮件也称为灰色邮件，是一种更难分类的电子邮件。垃圾邮件是一种持续性的威胁，而批量邮件通常包含广告或营销信息，不太可能重复向您发送。某些用户希望接收批量邮件，并且他们实际上可能是有意注册以接收这些邮件，而其他用户则可能会将这些类型的邮件视为垃圾邮件。例如，某些用户希望接收来自 Contoso Corporation 的广告电子邮件或参加即将举行的网络安全相关会议的邀请，而其他用户则将此类电子邮件视为垃圾邮件。
-  
+Office 365 客户，其中邮箱位于 Exchange Online 或独立 Exchange Online Protection （EOP）中没有 Exchange Online 邮箱的客户有时会问： "垃圾邮件和批量电子邮件的区别是什么？" 本主题介绍 EOP 中可用的控件的区别和说明。
+
+- **垃圾邮件**是垃圾邮件，它是未经请求和普遍不需要的邮件（如果正确标识了）。 默认情况下，EOP 会根据源电子邮件服务器的信誉拒绝垃圾邮件。 如果邮件通过源 IP 检查，则会将其发送到垃圾邮件筛选。 如果通过垃圾邮件筛选功能将邮件分类为垃圾邮件，则邮件将被传递到预期收件人并移动到其 "垃圾邮件" 文件夹。
+
+  - 您可以配置要对垃圾邮件筛选 verdicts 执行的操作。 有关说明，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+
+  - 如果您不同意垃圾邮件筛选结论，可以通过多种方式报告您认为是垃圾邮件或非垃圾邮件的邮件，如[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)中所述。
+
+- **批量电子邮件**（也称为 "_灰色邮件_"）是更难分类的。 垃圾邮件是一种恒定的威胁，而批量电子邮件通常是一次性广告或市场营销邮件。 某些用户需要批量电子邮件（事实上，他们已特意注册接收它们），而其他用户认为批量电子邮件是垃圾邮件。 例如，某些用户希望接收来自 Contoso Corporation 的广告邮件或对即将到来的会议的网络安全的邀请，而其他用户认为这些邮件是垃圾邮件。
+
+  有关标识批量电子邮件的详细信息，请参阅[Office 365 中的大宗投诉级别（BCL）](bulk-complaint-level-values.md)。
+
 ## <a name="how-to-manage-bulk-email"></a>如何管理批量邮件
 
-确定如何管理批量邮件并非轻而易举之事，因为如果将批量邮件归为垃圾邮件，那么希望接收这类邮件的用户可能会提出投诉，并将其提交为错误标记为垃圾邮件的误报（非垃圾邮件）邮件。另一方面，如果允许发送所有批量邮件，那么不希望接收这类邮件的用户可能会提出投诉，并将其提交为错误发送到其收件箱的漏报垃圾邮件（假负）。
-  
-### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>在内容筛选器策略中启用批量邮件敏感度控件
+由于批量电子邮件的混合反应，没有适用于每个组织的通用指南。
 
-根据您公司有关批量电子邮件的策略，管理员可以选择分配批量电子邮件的阈值。 可通过 EAC 中的内容筛选器策略配置该设置。 有关步骤，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。 您可以从1-9 中选择一个阈值设置，其中1将最大批量电子邮件标记为垃圾邮件，9允许传递大多数批量电子邮件。 然后，服务执行配置的操作，如将邮件发送到收件人的"垃圾邮件"文件夹。 
-  
+反垃圾邮件策略具有用于将批量电子邮件标识为垃圾邮件的默认 BCL 阈值。 管理员可以增加或减少阈值。 有关详细信息，请参阅下列主题：
 
+- [在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+
+- [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+
+易于忽略的另一个选项：如果用户 complains 接收批量电子邮件，但邮件来自传递 EOP 中的垃圾邮件筛选的著名发件人，请让用户在批量电子邮件中检查是否有 "取消订阅" 选项。

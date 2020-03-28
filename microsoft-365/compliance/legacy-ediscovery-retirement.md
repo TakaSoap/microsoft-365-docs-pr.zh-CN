@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和 Office 365 高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978162"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024352"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧电子数据展示工具的退休
 
 > [!IMPORTANT]
-> Microsoft 已评估公共运行状况，我们了解这对客户造成的影响。 我们希望成为强大的合作伙伴和负责的全球公民。 为了减轻您面临的众多负担之一，我们将为下面列出的旧版电子数据展示工具延迟三个月的计划停用。 **更新后的退休日期将反映如下。**
+> Microsoft 已评估公共运行状况，我们了解这对客户造成的影响。 我们希望成为强大的合作伙伴和负责的全球公民。 为了减轻你面临的众多负担之一，我们将在三个月内将本文中介绍的旧电子数据展示工具的计划停用时间延迟。 **更新后的退休日期将反映如下。**
 
 多年以来，Microsoft 提供了电子数据展示工具，可让你搜索、预览和导出来自 Exchange Online 的电子邮件内容。 但是，这些工具不再提供在其他 Office 365 服务（如 SharePoint Online 和 Office 365 组）中搜索非 Exchange 内容的有效方法。 为解决此类情况，Microsoft 提供了其他电子数据展示工具，可帮助您搜索各种各样的 Office 365 内容。 我们在[Microsoft 365 合规性中心](https://compliance.microsoft.com)中努力将最新和强大的电子数据展示功能结合在一起。 这使组织能够对多个 Office 365 服务（包括 Exchange Online）中的内容进行法律、内部和其他文档请求的响应。
 
@@ -222,7 +222,7 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 </tr>
 <tr class="odd">
 <td>将搜索结果复制到发现邮箱</td>
-<td>None</td>
+<td>无</td>
 <td>此功能没有直接替代，因为它不提供对所有 Microsoft 365 服务的访问权限。 有关其他解决方案，请参阅下面的 FAQ。</td>
 </tr>
   <tr class=even>

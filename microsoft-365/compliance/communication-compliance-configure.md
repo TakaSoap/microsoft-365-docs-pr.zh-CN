@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a179a3ccfc28b16aaa500d9222f69660bbc4c4df
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982035"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029888"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>在 Microsoft 365 中配置通信合规性
 
@@ -73,7 +73,6 @@ ms.locfileid: "42982035"
 
 有关启用审核的分步说明，请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。 启用审核后，会显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 有关使用审核日志的详细信息，请参阅[Search the audit log](search-the-audit-log-in-security-and-compliance.md)。
 
-
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步骤3（可选）：设置组以实现通信合规性
 
  创建通信合规性策略时，您需要定义哪些用户已查看其通信，以及谁执行了评论。 在策略中，您将使用电子邮件地址来标识个人或用户组。 为简化您的设置，您可以为已查看其通信的用户创建组，并为查看这些通信的用户分组。 如果使用的是组，可能需要多个。 例如，如果要监视两个不同的人员组之间的通信，或者要指定不受监督的组。
@@ -83,18 +82,20 @@ ms.locfileid: "42982035"
 | **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
 |受监督用户 <br> 非监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
-| Reviewers | None | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
+| Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
   
 当您为受监督的用户选择 Office 365 组时，该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
 
 有关设置组的详细信息，请参阅：
 
 - [创建和管理通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [管理启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Office 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-4-required-create-a-communication-compliance-policy"></a>步骤4（必需）：创建通信合规性策略
   
+>[!Important]
+>不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用[Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview)中的策略管理控件。
+
 1. 在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。
 
 2. 在 Microsoft 365 合规性中心中，选择 "**通信合规性**"。
@@ -107,14 +108,14 @@ ms.locfileid: "42982035"
 
     - 确认或更新策略名称。 一旦创建了策略，便无法更改策略名称。
     - 选择要监督的用户或组，包括选择要排除的用户或组。
-    - 选择策略的审阅者。 审阅者可以是单个用户，也可以是[启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。 所有审阅者都必须在 Exchange Online 上托管邮箱。 在这里添加的审阅者是在调查和修正工作流中上报通知时可供选择的审阅者。
+    - 选择策略的审阅者。 审阅者是单个用户，并且所有审阅者都必须在 Exchange Online 上托管邮箱。 在这里添加的审阅者是在调查和修正工作流中上报通知时可供选择的审阅者。
     - 选择 "受限条件" 字段，通常是要应用于策略的敏感信息类型或关键字词典。
 
     如果您选择使用策略向导创建自定义策略，您将：
 
     - 为策略指定名称和说明。 一旦创建了策略，便无法更改策略名称。
     - 选择要监督的用户或组，包括组织中的所有用户、特定用户和组，或者要排除的其他用户和组。
-    - 选择策略的审阅者。 审阅者可以是单个用户，也可以是[启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。 所有审阅者都必须在 Exchange Online 上托管邮箱。
+    - 选择策略的审阅者。 审阅者是单个用户，并且所有审阅者都必须在 Exchange Online 上托管邮箱。
     - 选择要扫描的通信通道，包括 Exchange、Microsoft 团队或 Skype for Business。 如果您在 Microsoft 365 中配置了连接器，您还将选择扫描第三方源。
     - 选择要监视的通信方向，包括入站、出站或内部通信。
     - 定义通信合规性策略[条件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以从 "消息地址"、"关键字"、"文件类型" 和 "大小匹配条件" 中进行选择。

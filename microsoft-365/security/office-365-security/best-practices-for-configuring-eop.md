@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
-ms.openlocfilehash: b4b1f02e3b034b7e89d605a2164b6add3f20dae5
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887299"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033430"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>配置 EOP 和 Office 365 ATP 的最佳实践
 
@@ -57,15 +57,13 @@ ms.locfileid: "41887299"
 |基于目录的边缘阻止（DBEB）|已启用|已启用|域类型 = 权威|
 |[为所有管理员帐户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|已启用|已启用||
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 使用管理中心中的报告解决一般问题和趋势。 使用消息跟踪工具来查找有关邮件的单点数据。 有关报告的详细信息，请参阅 [Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)。 有关详细信息，请参阅[安全性 & 合规性中心中的邮件跟踪中](message-trace-scc.md)的邮件跟踪工具。
 
-## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>向 Microsoft 报告误报和假负整数
+## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>向 Microsoft 报告误报和漏报
 
-管理员应通过我们的管理员提交门户将漏报（垃圾邮件）和误报（非垃圾邮件）提交给 Microsoft。 可以提交电子邮件、文件和 Url，以帮助管理员确定我们为什么传递或未将邮件传递给最终用户。 有关详细信息，请参阅[如何将可疑垃圾邮件、网络钓鱼、url 和文件提交到 Microsoft For Office 365 扫描](admin-submission.md)。
-
-最终用户还可以直接将漏报（垃圾邮件）和误报（非垃圾邮件）报告给 Microsoft，以便在 verdicts 时对其进行不同意的分析。 有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+若要帮助提高每个人的服务中的垃圾邮件筛选功能，应将误报（正确的电子邮件标记为坏）和漏报（允许的错误电子邮件）报告给 Microsoft 进行分析。 有关详细信息，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="create-mail-flow-rules"></a>创建邮件流规则
 

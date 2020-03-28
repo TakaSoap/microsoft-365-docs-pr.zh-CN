@@ -17,12 +17,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: "\"安全附件\" 功能可提供电子邮件附件的单击时间验证。 使用安全附件保护组织免受用户在电子邮件中发送或接收的恶意文件的攻击。"
-ms.openlocfilehash: c95287b3dd05cce28bad6761ca7e69ce9cc2f914
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60a5a95af846fe6dbe8c2c7aa6dced9deaae1a2d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599809"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033454"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 
@@ -58,9 +58,9 @@ ATP 安全附件（和[ATP 安全链接](atp-safe-links.md)）是[Office 365 高
 
 |**示例方案**|**在这种情况下 ATP 安全附件保护是否适用？**|
 |:-----|:-----|
-|Pat 的组织具有 Office 365 E5，但尚未为 ATP 安全附件定义任何策略。|不是。 虽然功能可用，但必须至少定义一个 ATP 安全附件策略，才能将 ATP 安全附件保护到位。|
-|先生为在 Contoso 的销售部门的员工。 先生/她的组织有一个仅适用于财务员工的 ATP 安全附件策略。|不是。 在这种情况下，财务员工将具有 ATP 安全附件保护，但在定义包含这些组的策略之前，其他员工（包括销售部门）将不会。|
-|昨天，Jean 的组织中的 Office 365 管理员设置适用于所有员工的 ATP 安全附件策略。 在今天的早期，Jean 收到包含附件的电子邮件。|可以。 在此示例中，Jean 具有高级威胁防护的许可证，并且已定义了包含 Jean 的 ATP 安全附件策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。|
+|Pat 的组织具有 Office 365 E5，但尚未为 ATP 安全附件定义任何策略。|否。 虽然功能可用，但必须至少定义一个 ATP 安全附件策略，才能将 ATP 安全附件保护到位。|
+|先生为在 Contoso 的销售部门的员工。 先生/她的组织有一个仅适用于财务员工的 ATP 安全附件策略。|否。 在这种情况下，财务员工将具有 ATP 安全附件保护，但在定义包含这些组的策略之前，其他员工（包括销售部门）将不会。|
+|昨天，Jean 的组织中的 Office 365 管理员设置适用于所有员工的 ATP 安全附件策略。 在今天的早期，Jean 收到包含附件的电子邮件。|是。 在此示例中，Jean 具有高级威胁防护的许可证，并且已定义了包含 Jean 的 ATP 安全附件策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。|
 |丽丽的组织有 Office 365 E5，其中的 ATP 安全附件策略适用于组织中的所有人。 Chris 收到包含附件的电子邮件，并将邮件转发给组织外部的其他人。|对于 Chris 收到的邮件，ATP 安全附件保护已就绪。 如果收件人的组织还设置了 ATP 安全附件策略，则 Chris 转发的邮件将在转发的邮件到达时服从这些策略。|
 |晓明的组织已准备好 ATP 安全附件策略，并且已打开[SharePoint、OneDrive 和 Microsoft 团队的 atp](atp-for-spo-odb-and-teams.md) 。 晓明假定已扫描 SharePoint Online 中的每个文件，并且可以安全地打开或下载。|根据定义的策略，ATP 安全附件保护已就绪;但是，这并不意味着会扫描 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的每个文件。 （若要了解详细信息，请参阅[适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)。）|
 
@@ -68,4 +68,4 @@ ATP 安全附件（和[ATP 安全链接](atp-safe-links.md)）是[Office 365 高
 
 - 如果您收到要请求 Microsoft 进行分析的文件，请访问[提交文件以进行恶意软件分析](https://aka.ms/wdsi/submit)。
 
-- 如果您收到一封要提交给 Microsoft 进行分析的电子邮件（包含或不带附件），请使用[报告消息外接程序](enable-the-report-message-add-in.md)。
+- 如果您收到一封要提交给 Microsoft 进行分析的电子邮件（包含或不带附件），请参阅[将邮件和文件报告给 microsoft](report-junk-email-messages-to-microsoft.md)。
