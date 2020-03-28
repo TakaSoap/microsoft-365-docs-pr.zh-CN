@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Office 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353963"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029856"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的活动报表
 
@@ -74,7 +74,11 @@ ms.locfileid: "42353963"
 
 - 全局读取者
     
-- 报表读取者
+- 报表阅读人员
+
+- Teams 服务管理员
+
+- Teams 通信管理员
     
 要了解详细信息，请参阅[关于管理员角色](../add-users/about-admin-roles.md)和[分配管理员角色](../add-users/assign-admin-roles.md)。
   
