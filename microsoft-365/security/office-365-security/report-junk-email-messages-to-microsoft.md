@@ -1,5 +1,5 @@
 ---
-title: 向 Microsoft 报告垃圾邮件
+title: 将垃圾邮件、非垃圾邮件和网络钓鱼邮件报告给 Microsoft
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,55 +16,25 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供多种报告垃圾邮件的方式：
-ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b7e7ed56f171ee3b74b36ed7c10c46286fb1e570
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895175"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033658"
 ---
-# <a name="report-junk-email-messages-to-microsoft"></a><span data-ttu-id="8cabd-103">向 Microsoft 报告垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="8cabd-103">Report junk email messages to Microsoft</span></span>
+# <a name="report-messages-and-files-to-microsoft"></a><span data-ttu-id="46d74-103">将邮件和文件报告给 Microsoft</span><span class="sxs-lookup"><span data-stu-id="46d74-103">Report messages and files to Microsoft</span></span>
 
-<span data-ttu-id="8cabd-104">Microsoft Office Outlook 的 Microsoft 垃圾邮件报告加载项可以提供多种报告垃圾邮件的方式：</span><span class="sxs-lookup"><span data-stu-id="8cabd-104">The Microsoft Junk Email Reporting Add-in for Microsoft Office Outlook offers several ways for you to report junk email messages:</span></span>
+<span data-ttu-id="46d74-104">Office 365 中的用户和管理员使用 Exchange Online 中的邮箱的组织，或独立 Exchange Online Protection （EOP）组织（没有 Exchange Online 邮箱）来提交电子邮件。有几种不同的方法可用于报告邮件和文件到 Microsoft。</span><span class="sxs-lookup"><span data-stu-id="46d74-104">Users and admins in Office 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes to submit email messages have several different methods for reporting messages and files to Microsoft.</span></span>
 
-- <span data-ttu-id="8cabd-105">从 Outlook 功能区</span><span class="sxs-lookup"><span data-stu-id="8cabd-105">From the Outlook ribbon</span></span>
+|||
+|---|---|
+|<span data-ttu-id="46d74-105">**方法**</span><span class="sxs-lookup"><span data-stu-id="46d74-105">**Method**</span></span>|<span data-ttu-id="46d74-106">**说明**</span><span class="sxs-lookup"><span data-stu-id="46d74-106">**Description**</span></span>|
+|[<span data-ttu-id="46d74-107">使用管理员提交将可疑的垃圾邮件、网络钓鱼诈骗、Url 和文件提交给 Microsoft</span><span class="sxs-lookup"><span data-stu-id="46d74-107">Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft</span></span>](admin-submission.md)|<span data-ttu-id="46d74-108">对于具有 Exchange Online 邮箱的组织中的管理员，建议使用此报告方法（在独立 EOP 中不可用）。</span><span class="sxs-lookup"><span data-stu-id="46d74-108">This is the recommended reporting method for admins in organizations with Exchange Online mailboxes (not available in standalone EOP).</span></span>|
+|[<span data-ttu-id="46d74-109">在 Office 365 中启用报告邮件加载项</span><span class="sxs-lookup"><span data-stu-id="46d74-109">Enable the Report Message add-in in Office 365</span></span>](enable-the-report-message-add-in.md)|<span data-ttu-id="46d74-110">适用于 Outlook、Outlook for Mac 和 web 上的 Outlook。</span><span class="sxs-lookup"><span data-stu-id="46d74-110">Works with Outlook, Outlook for Mac, and Outlook on the web.</span></span> <span data-ttu-id="46d74-111">这是推荐的加载项。</span><span class="sxs-lookup"><span data-stu-id="46d74-111">This is the recommended add-in.</span></span> <br/><br/> <span data-ttu-id="46d74-112">根据你的许可证，报告的邮件在[自动调查和响应（空中）结果](air-view-investigation-results.md)（[用户报告的邮件报告](view-email-security-reports.md#user-reported-messages-report)和[威胁浏览器](threat-explorer-views.md#email--submissions)）中可用。</span><span class="sxs-lookup"><span data-stu-id="46d74-112">Depending on your license, the reported messages are available in [Automated investigation and response (AIR) results](air-view-investigation-results.md), the [User-reported messages report](view-email-security-reports.md#user-reported-messages-report) and [Threat Explorer](threat-explorer-views.md#email--submissions).</span></span>|
+|[<span data-ttu-id="46d74-113">在 Office 365 中安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序</span><span class="sxs-lookup"><span data-stu-id="46d74-113">Install and use the Junk Email Reporting add-in for Microsoft Outlook in Office 365</span></span>](junk-email-reporting-add-in-for-microsoft-outlook.md)|<span data-ttu-id="46d74-114">仅在 Outlook 中有效。</span><span class="sxs-lookup"><span data-stu-id="46d74-114">Only works in Outlook.</span></span>|
+|[<span data-ttu-id="46d74-115">在 Office 365 中的 Outlook 网页上报告垃圾邮件和网络钓鱼电子邮件</span><span class="sxs-lookup"><span data-stu-id="46d74-115">Report junk and phishing email in Outlook on the web in Office 365</span></span>](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|<span data-ttu-id="46d74-116">对于具有 Exchange Online 邮箱的组织，请在 web 上的 Outlook 中使用内置功能（在独立 EOP 中不可用）。</span><span class="sxs-lookup"><span data-stu-id="46d74-116">Use the built-in capabilities in Outlook on the web for organizations with Exchange Online mailboxes (not available in standalone EOP).</span></span>|
+|[<span data-ttu-id="46d74-117">将恶意软件和非恶意软件提交给 Microsoft 进行分析</span><span class="sxs-lookup"><span data-stu-id="46d74-117">Submit malware and non-malware to Microsoft for analysis</span></span>](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|<span data-ttu-id="46d74-118">使用 Microsoft 安全智能网站提交附件和其他文件。</span><span class="sxs-lookup"><span data-stu-id="46d74-118">Use the Microsoft Security Intelligence site to submit attachments and other files.</span></span>|
+|
 
-- <span data-ttu-id="8cabd-106">从您的收件箱</span><span class="sxs-lookup"><span data-stu-id="8cabd-106">From your Inbox</span></span>
-
-- <span data-ttu-id="8cabd-107">从打开的电子邮件内部</span><span class="sxs-lookup"><span data-stu-id="8cabd-107">From within an opened email message</span></span>
-
-<span data-ttu-id="8cabd-108">垃圾邮件报告加载项可帮助您将报告提交至 Microsoft Exchange Online Protection (EOP) 服务。</span><span class="sxs-lookup"><span data-stu-id="8cabd-108">The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchange Online Protection (EOP) service.</span></span> <span data-ttu-id="8cabd-109">如果您的邮箱未受该服务保护，提交垃圾邮件报告将不会影响您的垃圾邮件筛选器。</span><span class="sxs-lookup"><span data-stu-id="8cabd-109">If your mailbox is not protected by the service, your junk email report submission will not affect your spam filters.</span></span> <span data-ttu-id="8cabd-110">管理员可以了解在[office 365 中的 "创建安全发件人列表"](create-safe-sender-lists-in-office-365.md)和["在 Office 365 中创建阻止的发件人列表"](create-block-sender-lists-in-office-365.md)中适用于整个组织的更多垃圾邮件设置。</span><span class="sxs-lookup"><span data-stu-id="8cabd-110">Administrators can learn about more spam settings that apply to a whole organization at [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md).</span></span> <span data-ttu-id="8cabd-111">如果您拥有管理员级别控制，并且您想要防止误报或漏报问题，这些内容会很有帮助。</span><span class="sxs-lookup"><span data-stu-id="8cabd-111">These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.</span></span>
-
-> [!TIP]
-> <span data-ttu-id="8cabd-112">您还可以通过使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)电子邮件地址和误报（非垃圾邮件）邮件将垃圾邮件直接提交给 Microsoft，方法是使用[not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="8cabd-112">You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive (non-spam) messages by using the [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) email address.</span></span> <span data-ttu-id="8cabd-113">有关详细信息，请参阅[将垃圾邮件、非垃圾邮件和网络钓鱼诈骗邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。</span><span class="sxs-lookup"><span data-stu-id="8cabd-113">For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).</span></span>
-
-### <a name="to-report-junk-email-messages-from-outlook"></a><span data-ttu-id="8cabd-114">报告来自 Outlook 的垃圾电子邮件</span><span class="sxs-lookup"><span data-stu-id="8cabd-114">To report junk email messages from Outlook</span></span>
-
-[<span data-ttu-id="8cabd-115">使用报告邮件加载项</span><span class="sxs-lookup"><span data-stu-id="8cabd-115">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-### <a name="to-report-junk-email-messages-from-your-inbox"></a><span data-ttu-id="8cabd-116">从收件箱报告垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="8cabd-116">To report junk email messages from your Inbox</span></span>
-
-1. <span data-ttu-id="8cabd-117">右键单击要报告为垃圾邮件的邮件。</span><span class="sxs-lookup"><span data-stu-id="8cabd-117">Right-click the message or messages that you want to report as junk.</span></span>
-
-2. <span data-ttu-id="8cabd-118">选择“垃圾邮件”\*\*\*\*，然后单击“报告垃圾邮件”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="8cabd-118">Select **Junk** and then click **Report Junk**.</span></span>
-    <span data-ttu-id="8cabd-119">![从收件箱报告垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)</span><span class="sxs-lookup"><span data-stu-id="8cabd-119">![Report junk messages from your Inbox](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)</span></span>
-
-3. <span data-ttu-id="8cabd-120">打开“Microsoft 垃圾邮件报告外接程序”\*\*\*\* 对话框。</span><span class="sxs-lookup"><span data-stu-id="8cabd-120">The **Microsoft Junk E-mail Reporting Add-in** dialog box opens.</span></span> <span data-ttu-id="8cabd-121">如果您确定要将所选邮件提交为垃圾邮件，请单击 **"是"**。</span><span class="sxs-lookup"><span data-stu-id="8cabd-121">If you're sure that you want to submit the messages you selected as junk, click **Yes**.</span></span>
-    <span data-ttu-id="8cabd-122">![确认报告为垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)</span><span class="sxs-lookup"><span data-stu-id="8cabd-122">![Confirm report as junk](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="8cabd-123">如果您在提交垃圾邮件时不想收到此确认消息，请选中 "**不再显示此消息**"。</span><span class="sxs-lookup"><span data-stu-id="8cabd-123">If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.</span></span>
-
-<span data-ttu-id="8cabd-p105">选定的邮件会被发送至 Microsoft 以供分析，并移动至垃圾邮件文件夹。若要确认已提交的邮件，请打开您的“已发送邮件”\*\*\*\* 文件夹查看已提交的邮件。</span><span class="sxs-lookup"><span data-stu-id="8cabd-p105">The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.</span></span>
-
-### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a><span data-ttu-id="8cabd-126">从打开的邮件中报告垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="8cabd-126">To report a junk email message from within an opened message</span></span>
-
-1. <span data-ttu-id="8cabd-127">在打开的邮件内部，单击邮件功能区上的“报告垃圾邮件”\*\*\*\* 按钮。</span><span class="sxs-lookup"><span data-stu-id="8cabd-127">From within an opened message, click the **Report Junk** button on the message ribbon.</span></span> <span data-ttu-id="8cabd-128">例如，单击 "**垃圾** \> **报告垃圾** ![邮件"。从邮件中报告垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)</span><span class="sxs-lookup"><span data-stu-id="8cabd-128">For example, click **Junk** \> **Report Junk** ![Report a junk email from within a message](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)</span></span>
-
-2. <span data-ttu-id="8cabd-129">打开“Microsoft 垃圾邮件报告外接程序”\*\*\*\* 对话框。</span><span class="sxs-lookup"><span data-stu-id="8cabd-129">The **Microsoft Junk E-mail Reporting Add-in** dialog box opens.</span></span> <span data-ttu-id="8cabd-130">如果您确定要将所选邮件提交为垃圾邮件，请单击 **"是"**。</span><span class="sxs-lookup"><span data-stu-id="8cabd-130">If you're sure that you want to submit the message you selected as junk, click **Yes**.</span></span>
-    <span data-ttu-id="8cabd-131">![确认报告为垃圾邮件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)</span><span class="sxs-lookup"><span data-stu-id="8cabd-131">![Confirm report as junk](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="8cabd-132">如果您在提交垃圾邮件时不想收到此确认消息，请选中 "**不再显示此消息**"。</span><span class="sxs-lookup"><span data-stu-id="8cabd-132">If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.</span></span>
-
-<span data-ttu-id="8cabd-p108">选定的邮件会被发送至 Microsoft 以供分析，并移动至垃圾邮件文件夹。若要确认已提交的邮件，请打开您的“已发送邮件”\*\*\*\* 文件夹查看已提交的邮件。</span><span class="sxs-lookup"><span data-stu-id="8cabd-p108">The selected message will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the message has been submitted, open your **Sent Items** folder to view the submitted message.</span></span>
+<span data-ttu-id="46d74-119">如果已隔离垃圾邮件或网络钓鱼邮件，而不是进行传递，则用户可以从 Office 365 Security & 合规性中心中的隔离门户向 Microsoft 报告邮件。</span><span class="sxs-lookup"><span data-stu-id="46d74-119">If the spam or phishing messages were quarantined instead of delivered, users can report the messages to Microsoft from the Quarantine portal in the Office 365 Security & Compliance Center.</span></span> <span data-ttu-id="46d74-120">有关详细信息，请参阅[在 Office 365 中查找并以用户的方式释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。</span><span class="sxs-lookup"><span data-stu-id="46d74-120">For details, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).</span></span>

@@ -245,8 +245,6 @@
           href: archive-linkedin-data.md
         - name: 设置连接器以存档 Instant Bloomberg 数据
           href: archive-instant-bloomberg-data.md
-        - name: 设置连接器以存档 ICE 聊天数据（预览）
-          href: archive-icechat-data.md
         - name: 设置连接器以导入 HR 数据
           href: import-hr-data.md
         - name: 与合作伙伴联系以存档第三方数据
