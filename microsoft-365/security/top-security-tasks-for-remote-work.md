@@ -1,5 +1,5 @@
 ---
-title: 用于安全团队的前12个任务来支持在家工作
+title: 用于安全团队的前12个任务以支持在家中工作
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: 73f2ae19a7424d392bb365d7a24a83532a1950bf
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
+ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036378"
+ms.locfileid: "43037472"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>用于安全团队的前12个任务以支持在家中工作
 
@@ -116,7 +116,7 @@ Office 365 ATP：
 现在，你已配置了 Office 365 ATP 和 Azure ATP，你可以在一个仪表板中查看这些功能中的组合信号。 [Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)（MTP）将警报、事件、自动调查和响应以及跨工作负载（Azure ATP、OFFICE 365 ATP、MICROSOFT Defender ATP 和 Microsoft 云应用安全）的高级调查引入到[security.microsoft.com](https://security.microsoft.com)中的单个窗格中。 
 <br>
 
-![MTP 仪表板图示](../media/top-10-security-remote-work-mtp-dashboard.png)
+![MTP 仪表板图示](../media/top-ten-security-remote-work-mtp-dashboard.png)
 <br><br>
 配置了一个或多个高级威胁防护服务后，打开 MTP。 向 MTP 持续添加了新功能;考虑选择接收预览功能。
 
@@ -128,7 +128,7 @@ Office 365 ATP：
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6：为电话和平板电脑配置 Intune 移动应用保护
 
 Microsoft Intune 移动应用管理（MAM）允许你管理和保护你的组织在手机和平板电脑上的数据，而无需管理这些设备。 以下是相应的工作方式：
-- 您可以创建应用程序保护策略（应用程序），以确定设备上的哪些应用程序被管理以及允许哪些行为（例如，阻止将数据从托管应用程序复制到非托管应用）。 为每个 platorm （iOS、Android）创建一个策略。
+- 您创建了一个应用程序保护策略（应用），用于确定设备上的哪些应用程序被管理以及允许哪些行为（例如，阻止将来自托管应用程序的数据复制到非托管应用程序）。 为每个 platorm （iOS、Android）创建一个策略。
 - 创建应用保护策略后，通过在 Azure AD 中创建条件访问规则来强制实施这些策略，以要求获得批准的应用和应用数据保护。
 
 应用保护策略包括许多设置。 幸运的是，您无需了解每个设置并权衡选项。 通过推荐起始点，Microsoft 可以轻松地应用设置的配置。 [使用应用保护策略的数据保护框架](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)包括三个可供选择的级别。 
