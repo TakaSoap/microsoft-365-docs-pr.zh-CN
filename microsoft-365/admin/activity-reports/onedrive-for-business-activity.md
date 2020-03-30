@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: 获取贵组织的 OneDrive 使用率报告，并了解每个 OneDrive 用户的活动、共享的文件数和存储使用率。
-ms.openlocfilehash: b51071fe8c91b0064d6680b628b58df1f370c73d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b94e5e34f7599cc372b506c2c365503ea1334685
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353583"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047081"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>管理员中心的 Microsoft 365 报告-OneDrive for Business 活动
 
@@ -40,7 +40,7 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
 如果想要了解每个 OneDrive 帐户中正在进行的活动量和存储使用情况，可以查看 [OneDrive 使用情况报表](onedrive-for-business-usage.md)
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。  
  
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>如何获取 OneDrive 活动报表？
 

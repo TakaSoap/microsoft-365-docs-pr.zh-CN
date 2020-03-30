@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: 了解如何获取电子邮件应用使用情况报告，以了解连接到 Exchange Online 的电子邮件应用和使用的 Outlook 版本。
-ms.openlocfilehash: bb75b28e41de37d4f21acedd4705db71f6c2c303
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5bdd62d150cf103cd3c3520cf5a0c593dceb8e66
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353783"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046851"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>管理中心中的 Microsoft 365 报表-电子邮件应用程序使用情况
 
 Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在电子邮件应用使用情况报告中，可以看到有多少电子邮件应用程序连接到 Exchange Online。 还可以查看用户当前使用的 Outlook 应用的版本信息，这样便可跟进使用不受支持的版本安装支持版本的 Outlook 的用户。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。  
  
 ## <a name="how-to-get-to-the-email-apps-report"></a>如何访问电子邮件应用报告
 

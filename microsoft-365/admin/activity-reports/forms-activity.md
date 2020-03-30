@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: 了解如何使用 microsoft 365 管理中心中的 Microsoft 365 报告仪表板获取 Microsoft Forms 活动报告。
-ms.openlocfilehash: 601e110719e4d69a647cfd55ecd4ae6db2568947
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42402310"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046935"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>"管理中心" 中的 Microsoft 365 报表-表单活动
 
@@ -32,7 +32,7 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
 例如，您可以通过查看用户与表单的交互信息来了解使用 Microsoft 表单的每个用户的活动。 它还可帮助您了解所创建的窗体的数量和用户响应的窗体数量，以了解协作级别。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。 
 
 ## <a name="how-to-get-to-the-forms-activity-report"></a>如何访问表单活动报告
 

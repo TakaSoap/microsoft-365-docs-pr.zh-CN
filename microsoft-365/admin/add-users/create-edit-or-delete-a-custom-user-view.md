@@ -2,8 +2,8 @@
 title: 在 Office 365 中创建、编辑或删除自定义用户视图
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 了解如何使用筛选器在 Office 365 中创建、编辑或删除自定义用户视图。
-ms.openlocfilehash: ba03d3da3e8bfdc4f2a661d1dc59845a8a22609f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632950"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047055"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>在 Office 365 中创建、编辑或删除自定义用户视图
 
@@ -89,6 +89,13 @@ ms.locfileid: "42632950"
 - **未经许可的用户**选中此框以查找尚未分配许可证的所有用户。 此视图的结果还包括拥有 Exchange 邮箱但没有许可证的用户。 若要专门跟踪这些用户，请使用**Exchange 邮箱或存档的 "筛选未经授权的用户**"。 此视图的结果还包括具有 Exchange 存档的用户，但没有许可证。
     
 - **拥有 Exchange 邮箱或存档的未授权用户**选择此框以显示在 Exchange Online 中创建并拥有 Exchange 邮箱，但未分配 Office 365 许可证的用户帐户。 此筛选器的结果包括拥有或分配了 Exchange 存档的用户。 
+
+> [!NOTE]
+> **具有 Exchange 邮箱的未授权用户**在以下情况运行：
+1. 邮箱最近已从**共享**用户转换为**用户**，并且没有许可证。
+2. 邮箱最近已迁移到 Office 365，但尚未分配许可证。
+3. 邮箱已使用 PowerShell 创建，但尚未分配许可证。
+4. 已使用 New-remotemailbox cmdlet 创建的新邮箱已为该用户设置。
     
 > [!TIP]
 > 如果创建的自定义视图返回的用户多于2000个，则不会对生成的用户列表进行排序。 在这种情况下，请使用搜索框查找用户或编辑自定义视图以优化搜索。 
@@ -170,4 +177,3 @@ ms.locfileid: "42632950"
 
 
      
-

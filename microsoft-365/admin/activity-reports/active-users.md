@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: 了解如何使用 Microsoft 365 管理中心的 Microsoft 365 报告仪表板获取活动用户报告，并了解使用了多少产品许可证。
-ms.openlocfilehash: 6ac56f17e1d106eaa4d1c3a46ff603631532075f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e865fa1ed68e7e68c103bf6abc66816b844d7b2d
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353953"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046839"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365 在管理中心内报告-活动用户
 
@@ -32,7 +32,7 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
 例如，可使用" **活动用户**"报表来了解组织中个人正在使用的产品许可证数量，并深入了解哪些用户正在使用哪些许可证。此报表可帮助管理员确定未被充分利用的产品或是可能需要其他培训或信息的用户。 
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>如何获取活动用户报表
 

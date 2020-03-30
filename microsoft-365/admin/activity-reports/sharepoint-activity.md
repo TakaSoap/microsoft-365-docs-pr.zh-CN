@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: 获取 SharePoint 活动使用率报告，以了解每个 SharePoint 用户的活动、共享的文件数以及存储利用率。
-ms.openlocfilehash: df025d41a2c570761fd59e228eebb277c922e06e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a3c8d73707ef09c3702450ebddab6e43c159638c
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353423"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047043"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>"管理中心" 中的 Microsoft 365 报表-SharePoint 活动
 
@@ -39,7 +39,7 @@ ms.locfileid: "42353423"
 如果想要了解每个 SharePoint 网站中正在进行的活动量和存储使用情况，用户可以查看 [SharePoint 网站使用情况报表](sharepoint-site-usage.md)。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。  
  
 ## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>如何访问 SharePoint 活动报表？
 

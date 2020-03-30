@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: 了解如何获取邮箱使用情况报告，以了解用户使用用户邮箱的活动。
-ms.openlocfilehash: d7d36359801fe72ac1c3ffc210c7795030f0b2e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238053"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046923"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>"管理中心" 中的 Microsoft 365 报表-邮箱使用情况
 
 **邮箱使用情况报告**根据电子邮件发送、阅读、创建约会、发送会议、接受会议、谢绝会议和取消会议活动，提供具有用户邮箱和活动级别的用户的信息。 它还显示每个用户邮箱占用了多少存储空间以及其中多少用户即将达到存储配额。 
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>如何访问邮箱使用情况报告
 

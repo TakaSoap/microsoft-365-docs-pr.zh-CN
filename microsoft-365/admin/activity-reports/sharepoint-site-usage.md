@@ -20,18 +20,19 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: '获取 SharePoint 网站使用情况报表，了解用户在 SharePoint 网站中存储的文件数、要使用的文件数以及使用的总存储空间。 '
-ms.openlocfilehash: c60d33ce299d63edafc4ce996bb4ba07ce9b7fa0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 92ff9c4dbfcc7fcd9f9fdc511584400273030f21
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353463"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047115"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>管理中心中的 Microsoft 365 报表-SharePoint 网站使用情况
 
 作为 Microsoft 365 管理员，"**报表**" 仪表板显示组织中各个产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 例如，可以获得有关从 SharePoint 获取的值的高级视图，其中包括用户存储在 SharePoint 网站的总文件数、频繁使用的文件数以及所有这些网站中已使用的存储。 然后，可深入研究 SharePoint 网站使用情况报表，了解所有网站的趋势和其中每个网站的详细信息。 
   
-> 注意：您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> [!NOTE]
+> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。 
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>如何访问 SharePoint 网站使用情况报表
 

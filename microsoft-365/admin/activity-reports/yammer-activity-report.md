@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: 获取 Yammer 活动报告，并了解有关使用 Yammer 发布、类似或阅读邮件的用户数的详细信息。
-ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353513"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047019"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>管理中心内的 Office 365 报告-Yammer 活动报告
 
 作为 Microsoft 365 管理员，"**报告**" 仪表板显示有关您组织中的产品使用情况的数据。 查看[管理中心中的活动报表](activity-reports.md)。 使用" **Yammer 活动报表** "，可以通过查看使用 Yammer 发布、点赞或阅读消息的唯一用户数以及组织中生成的活动数来了解使用 Yammer 的组织的参与级别。 
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint 或 Skype for Business 管理员的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。 
  
 ## <a name="how-to-get-to-the-yammer-activity-report"></a>如何获取 Yammer 活动报表
 
