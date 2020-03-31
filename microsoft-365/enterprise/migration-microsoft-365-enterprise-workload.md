@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成将 Microsoft Office、Office 服务器和 Windows 的版本迁移到组织中的 Microsoft 365 企业版的过程。
-ms.openlocfilehash: 3a501ec7919972e5b8b289bbddb3bf7e6ae9a8f0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952014"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053079"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>迁移到 Microsoft 365 企业版
 
@@ -30,7 +30,7 @@ ms.locfileid: "42952014"
 - 设备上 Windows 7 和 Windows 8.1 迁移到 Windows 10 企业版
 
 >[!Note]
->将于 **2020 年 1 月 14 日**结束对 Windows 7 的支持。 有关详细信息，请单击[此处](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
+>已于 **2020 年 1 月 14 日**结束了对 Windows 7 的支持。 有关详细信息，请单击[此处](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
 >
 
 随着时间的推移，完成所有这些迁移使你的组织更接近[新式工作区](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，这是一种安全且集成的环境，可释放组织中的团队合作精神和创造力，所有这些都由 Microsoft 365 企业版启用和授权。 
@@ -145,7 +145,7 @@ Microsoft 365 企业版包含 Office 365，后者包含 Office 服务基于云�
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 和 8.1 迁移
 
-将于 **2020 年 1 月 14 日**结束对 Windows 7 的支持。 要迁移运行 Windows 7 或 Windows 8.1 的设备，可以执行[就地升级](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)。 
+已于 **2020 年 1 月 14 日**结束了对 Windows 7 的支持。 要迁移运行 Windows 7 或 Windows 8.1 的设备，可以执行[就地升级](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)。 
 
 有关其他方法，请参阅 [Windows 10 部署方案](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。 也可以自行[计划 Windows 10 部署](https://aka.ms/planforwin10deployment)。
 
