@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供对适用于企业的 Microsoft 365 的组件、计划和部署路径的介绍。
-ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951990"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053091"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -84,11 +84,11 @@ ms.locfileid: "42951990"
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>避免对 Windows 7 和 Office 2010 客户端和服务器的支持终止
 
-下面的产品在**2020 年1月 14**日到达支持的末尾：
+以下产品已在**2020 年1月 14**日到达支持的结尾：
 
 - [Windows 7](https://aka.ms/win7upgrade)
 
-以下产品在**2020 年10月13日**到达支持的末尾：
+以下产品将在**2020 年10月13日**到达支持结束：
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)

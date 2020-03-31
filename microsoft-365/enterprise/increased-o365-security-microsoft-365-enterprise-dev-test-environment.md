@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境中的其他 Microsoft 365 安全设置。
-ms.openlocfilehash: 465e9df40e8dfe9883a81d352eabff17151df8f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067259"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058877"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>为 Microsoft 365 企业版测试环境增加了 Microsoft 365 安全性
 
@@ -27,10 +27,10 @@ ms.locfileid: "42067259"
 
 使用本文中的说明，您可以配置其他 Microsoft 365 设置以提高 Microsoft 365 企业版测试环境的安全性。
 
-![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -56,7 +56,7 @@ ms.locfileid: "42067259"
   - 如果使用的是模拟企业 Microsoft 365 测试环境，请使用[Azure 门户](https://portal.azure.com)连接到 CLIENT1 虚拟机，然后从 CLIENT1 登录。
  
 2. 在 "新建**Microsoft 365 管理中心**" 选项卡上的左侧导航窗格中的 "**管理中心**" 下，单击 " **SharePoint**"。
-3. 在 "新建**SharePoint 管理中心**" 选项卡上，单击 "**访问控制**"。
+3. 在 "新建**SharePoint 管理中心**" 选项卡上，单击 "**策略 > 访问控制**"。
 4. 单击 "**不支持新式身份验证的应用**"，选择 "**阻止访问**"，然后单击 "**保存**"。
 
 

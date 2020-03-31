@@ -13,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
+- remotework
 ms.custom: ''
 description: 配置基础结构和安全性，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: cfbabfbe0c239ca837356b585171778d40daaa93
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952050"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053103"
 ---
 # <a name="empower-remote-workers"></a>为远程工作者提供强大功能
 

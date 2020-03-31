@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3f60c40ecd1810d630a4607d6b0915d6f3089a99
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372040"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058901"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
@@ -45,7 +45,7 @@ Microsoft 365 安全中心包括：
 
 * **主页**–快速查看你的组织的整体安全运行状况。
 * **事件**-通过将针对实体的各个警报上看到的点连接起来，了解攻击的更广泛的故事。 你将确切知道攻击的启动位置、受影响的设备、受影响的设备以及威胁已消失的位置。
-* **警报**–更好地了解 microsoft 356 环境中的所有警报，包括来自 Microsoft 云应用安全性、OFFICE 365 Atp、azure AD、azure Atp 和 MICROSOFT Defender atp 的警报。 对 E3 和 E5 客户可用。  
+* **警报**–更好地了解 microsoft 365 环境中的所有警报，包括来自 Microsoft 云应用安全性、OFFICE 365 Atp、azure AD、azure Atp 和 MICROSOFT Defender atp 的警报。 对 E3 和 E5 客户可用。  
 * **操作中心**-减少安全团队必须手动处理的警报量，使安全操作团队能够将重点放在更复杂的威胁和其他高价值计划上。
 * **报告**-获取更好地保护用户、设备、应用程序等所需的详细信息和信息。
 * **安全分数**–通过 Microsoft 安全分数改善总体安全状态。 此页面提供了已启用的不同安全特性和功能的汇总摘要，并提供了针对要改进的区域的建议。
@@ -54,7 +54,7 @@ Microsoft 365 安全中心包括：
 * **策略**-设置管理设备、防止威胁以及接收有关你的组织中的各种活动的警报的策略。
 * **权限**-管理组织中的哪些用户有权访问 Microsoft 365 安全中心以查看内容和执行任务。 您还可以在 Azure AD 门户中分配 Microsoft 365 权限。
 
-## <a name="learn-more"></a>了解更多 
+## <a name="learn-more"></a>了解详细信息 
 
 浏览以下有关监视、查看和响应安全需求的主题：
 - 通过[事件](incident-queue.md)连接警报上的点
