@@ -16,16 +16,46 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: 了解可供 Microsoft 365 管理员使用的资源。
 ms.custom: okr_smb
-ms.openlocfilehash: baeaa78d7af889366b0a981ee3d0d684c6396bc7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: cafb63d53178a2cc21448643ba9fd78773265aa8
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897031"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046911"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 管理帮助中心
 
 了解可供管理员使用的资源。
+
+<ul class="panelContent cardsJ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new megaphone symbol" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Office 365 将变为 Microsoft 365</h3>
+                        <p>我们正在更改一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 Microsoft 365 管理中心中自动更新，且帐单会在 2020 年 4 月 21 日当天或之后更新</p>
+                        <ul>
+                            <li><p>Office 365 商业协作版现为 Microsoft 365 商业基础版</p></li>
+                            <li><p>Office 365 商业高级版现为 Microsoft 365 商业标准版</p></li>
+                            <li><p>Microsoft 365 商业版现为 Microsoft 365 商业高级版</p></li>
+                            <li><p>Office 365 商业版现为 Microsoft 365 应用商业版</p></li>
+                            <li><p>Office 365 专业增强版现为 Microsoft 365 应用企业版</p></li>
+                        </ul>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">了解更多</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+---
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -35,7 +65,7 @@ ms.locfileid: "42897031"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/sign-up.svg" alt="Buy Office" />
+                            <img src="https://docs.microsoft.com/office/media/icons/sign-up-blue.svg" alt="Buy Office" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -53,7 +83,7 @@ ms.locfileid: "42897031"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/get-started.svg" alt="Setup" />
+                            <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Setup" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -71,7 +101,7 @@ ms.locfileid: "42897031"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/headset.svg" alt="Contact support" />
+                            <img src="https://docs.microsoft.com/office/media/icons/headset-blue.svg" alt="Contact support" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -89,7 +119,7 @@ ms.locfileid: "42897031"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/radar.svg" alt="Get new features" />
+                            <img src="https://docs.microsoft.com/office/media/icons/radar-blue.svg" alt="Get new features" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -147,7 +177,7 @@ ms.locfileid: "42897031"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/small-business.svg" alt="Small business" />
+                            <img src="https://docs.microsoft.com/office/media/icons/small-business-blue.svg" alt="Small business" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -164,7 +194,7 @@ ms.locfileid: "42897031"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/on-premises.svg" alt="Enterprise" />
+                            <img src="https://docs.microsoft.com/office/media/icons/on-premises-blue.svg" alt="Enterprise" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -181,7 +211,7 @@ ms.locfileid: "42897031"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial.svg" alt="Training" />
+                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Training" />
                         </div>
                     </div>
                     <div class="cardText">
