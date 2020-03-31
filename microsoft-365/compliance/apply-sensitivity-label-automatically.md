@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: a1ea81bf8c65d3f54d26b19eae3b590f11283c30
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: 7edfa83648ecb86ab23a898299edb63df851d123
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277209"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022929"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -43,7 +43,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>如何配置 Office 应用的自动标签
 
-敏感度标签最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用敏感度标签 - Office 365 会代为操作。
+敏感度标签最强大的功能之一是，能够自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用敏感度标签 - Office 365 会代为操作。
 
 当内容包含特定类型的敏感信息时，可选择自动将敏感度标签应用于内容。 从敏感信息类型或分类器列表中选择：
 
@@ -52,7 +52,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 > [!NOTE]
 > 目前，“**分类器**”选项处于有限预览状态，要求你向 Microsoft 提交表单，以便为你的租户启用此功能。 有关详细信息，请参阅博客文章[宣布在 Office 应用中推出使用内置分类器的自动标签 - 有限预览](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)。
 
-当自动应用此敏感度标签时，用户会在其 Office 应用中看到通知。 他们可以选择“**确定**”以关闭通知。
+当自动应用此敏感度标签时，用户会在其 Office 应用中看到通知。 例如：
 
 ![指出文档自动应用了标签的通知](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
@@ -93,23 +93,35 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 如果愿意，可建议你的用户应用此标签。 通过此选项，你的用户可接受分类及任何相关保护，也可在标签不适合其内容时关闭建议。
 
-Word、PowerPoint 和 Excel 支持建议标签。
-
 ![用于向用户建议敏感度标签的选项](../media/Sensitivity-labels-Recommended-label-option.png)
 
-以下示例是配置条件来将标签应用为建议操作时的提示以及自定义策略提示。你可以选择策略提示中显示的文本。
+下面的示例展示了 Azure 信息保护统一标记客户端在你配置条件以将标签作为建议操作应用时提供的提示，以及自定义策略提示。 可以选择在策略提示中显示什么文本。
 
 ![关于应用建议标签的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何应用自动标签或建议标签
 
-- 自动标记在你保存文档时应用于 Word、Excel 和 PowerPoint，在你发送电子邮件时应用于 Outlook。 这些条件会检测文档和电子邮件的正文文本和页眉页脚中是否有敏感信息，但不检测电子邮件的主题行或附件。
+在 Office 应用中，自动标签和建议标签的实现取决于你使用的是内置于 Office 的标签，还是 Azure 信息保护统一标记客户端。 不过，在这两种情况下：
 
 - 不可对之前已手动标记或者之前已自动标记有更高敏感度的文档和电子邮件使用自动标签。 请记住，除了一个保留标签，另外仅可向文档或电子邮件应用一个敏感度标签。
 
-- 在保存文档时，建议标签会应用于 Word、Excel 和 PowerPoint。
+- 都不能对之前有更高敏感度标签的文档或电子邮件使用建议标签。 如果内容已有更高敏感度标签，用户就看不到建议操作提示和策略提示。
 
-- 不可对之前标记有更高敏感度的文档使用建议标签。 如果内容已标记有更高敏感度，则用户不会看到带有建议和策略提醒的提示。
+特定于内置标签的注意事项：
+
+- 并非所有 Office 应用都支持自动（和建议）标签。 有关详细信息，请参阅[应用中的敏感度标签功能支持](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
+
+- 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
+
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+
+特定于 Azure 信息保护统一标记客户端的注意事项：
+
+-  自动标签和建议标签在你保存文档时应用于 Word、Excel 和 PowerPoint，并在你发送电子邮件时应用于 Outlook。
+
+- 为了让 Outlook 支持建议标签，必须先配置[高级策略设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook)。
+
+- 敏感信息可以在文档和电子邮件的正文文本和页眉、页脚中检测到，但不能在电子邮件的主题行或附件中检测到。
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>在多个条件适用于多个标签时如何评估这些条件
 
