@@ -2,8 +2,8 @@
 title: 启用报表消息加载项
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -16,185 +16,143 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
+ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893750"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061721"
 ---
-# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="674c8-103">启用报表消息加载项</span><span class="sxs-lookup"><span data-stu-id="674c8-103">Enable the Report Message add-in</span></span>
+# <a name="enable-the-report-message-add-in-in-office-365"></a><span data-ttu-id="e5e48-103">在 Office 365 中启用报告邮件加载项</span><span class="sxs-lookup"><span data-stu-id="e5e48-103">Enable the Report Message add-in in Office 365</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="674c8-104">Outlook 和 web 上的 Outlook 的报告邮件外接程序与[Outlook 垃圾邮件筛选器](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)并不完全相同，但这两者都可用于将电子邮件标记为垃圾邮件、非垃圾邮件或网络钓鱼尝试。</span><span class="sxs-lookup"><span data-stu-id="674c8-104">The Report Message add-in for Outlook and Outlook on the web is not exactly the same thing as the [Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), although both can be used to mark email as junk, not junk, or a phishing attempt.</span></span> <span data-ttu-id="674c8-105">不同之处在于，Outlook 和 web 上的 Outlook 的报告邮件外接程序会通知 Microsoft misclassified 电子邮件，而 Outlook 垃圾邮件筛选器用于组织用户邮箱中的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="674c8-105">The difference is, the Report Message add-in for Outlook and Outlook on the web notifies Microsoft about misclassified email, whereas the Outlook Junk Email Filter is used to organize email messages in a user's mailbox.</span></span>
+> <span data-ttu-id="e5e48-104">如果您是使用 Exchange Online 邮箱的 Office 365 组织中的管理员，我们建议您在 Office 365 安全性 & 合规性中心中使用提交门户。</span><span class="sxs-lookup"><span data-stu-id="e5e48-104">If you're an admin in an Office 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center.</span></span> <span data-ttu-id="e5e48-105">有关详细信息，请参阅[使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。</span><span class="sxs-lookup"><span data-stu-id="e5e48-105">For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).</span></span>
 
-## <a name="overview"></a><span data-ttu-id="674c8-106">概述</span><span class="sxs-lookup"><span data-stu-id="674c8-106">Overview</span></span>
+<span data-ttu-id="e5e48-106">Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮件外接程序使用户能够轻松地将误报（电子邮件被标记为 "坏"）或 "漏报（允许错误电子邮件"）报告给 Microsoft 及其子公司进行分析。</span><span class="sxs-lookup"><span data-stu-id="e5e48-106">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="e5e48-107">Microsoft 使用这些提交改进电子邮件保护技术的有效性。</span><span class="sxs-lookup"><span data-stu-id="e5e48-107">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span>
 
-<span data-ttu-id="674c8-107">Outlook 和 web 上的 Outlook 的报告邮件外接程序（以前称为 Outlook Web App）使用户能够轻松地向 Microsoft 及其子公司报告 misclassified 电子邮件（无论是安全还是恶意）。</span><span class="sxs-lookup"><span data-stu-id="674c8-107">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report misclassified email, whether safe or malicious, to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="674c8-108">Microsoft 使用这些提交改进电子邮件保护技术的有效性。</span><span class="sxs-lookup"><span data-stu-id="674c8-108">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="674c8-109">此外，如果您的组织使用的是[Office 365 高级威胁防护计划 1](office-365-atp.md)或[计划 2](office-365-ti.md)，则报告消息外接程序会为您组织的安全团队提供可用于查看和更新安全策略的有用信息。</span><span class="sxs-lookup"><span data-stu-id="674c8-109">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
+<span data-ttu-id="e5e48-108">例如，假设有人将大量邮件报告为网络钓鱼。</span><span class="sxs-lookup"><span data-stu-id="e5e48-108">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="e5e48-109">[安全仪表板](security-dashboard.md)和其他报告中的此信息图面。</span><span class="sxs-lookup"><span data-stu-id="e5e48-109">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="e5e48-110">组织的安全团队可以使用此信息指示可能需要更新的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="e5e48-110">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="e5e48-111">或者，如果用户使用报告邮件外接程序报告大量被标记为垃圾邮件的邮件，则组织的安全团队可能需要调整[反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="e5e48-111">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="674c8-110">例如，假设有人将大量邮件报告为网络钓鱼。</span><span class="sxs-lookup"><span data-stu-id="674c8-110">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="674c8-111">[安全仪表板](security-dashboard.md)和其他报告中的此信息图面。</span><span class="sxs-lookup"><span data-stu-id="674c8-111">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="674c8-112">组织的安全团队可以使用此信息指示可能需要更新的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="674c8-112">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="674c8-113">或者，如果用户使用报告邮件外接程序报告大量被标记为垃圾邮件的邮件，则组织的安全团队可能需要调整[反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="674c8-113">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="e5e48-112">此外，如果您的组织使用的是[Office 365 高级威胁防护计划 1](office-365-atp.md)或[计划 2](office-365-ti.md)，则报告消息外接程序会为您组织的安全团队提供可用于查看和更新安全策略的有用信息。</span><span class="sxs-lookup"><span data-stu-id="e5e48-112">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
 
-<span data-ttu-id="674c8-114">报告邮件加载项适用于大多数 Office 365 订阅和以下产品：</span><span class="sxs-lookup"><span data-stu-id="674c8-114">The Report Message add-in works with most Office 365 subscriptions and the following products:</span></span>
+<span data-ttu-id="e5e48-113">管理员可以为组织启用报告邮件外接程序，单个用户可以自行安装。</span><span class="sxs-lookup"><span data-stu-id="e5e48-113">Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.</span></span>
 
-- <span data-ttu-id="674c8-115">Outlook 网页版</span><span class="sxs-lookup"><span data-stu-id="674c8-115">Outlook on the web</span></span>
-- <span data-ttu-id="674c8-116">Outlook 2013 SP1</span><span class="sxs-lookup"><span data-stu-id="674c8-116">Outlook 2013 SP1</span></span>
-- <span data-ttu-id="674c8-117">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="674c8-117">Outlook 2016</span></span>
-- <span data-ttu-id="674c8-118">Outlook 2016 for Mac</span><span class="sxs-lookup"><span data-stu-id="674c8-118">Outlook 2016 for Mac</span></span>
-- <span data-ttu-id="674c8-119">Outlook 包含在 Office 365 专业增强版中</span><span class="sxs-lookup"><span data-stu-id="674c8-119">Outlook included with Office 365 ProPlus</span></span>
+<span data-ttu-id="e5e48-114">如果您是单个用户，则可以[为自己启用报告邮件加载项](#get-the-report-message-add-in-for-yourself)。</span><span class="sxs-lookup"><span data-stu-id="e5e48-114">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
 
-<span data-ttu-id="674c8-120">报告邮件外接程序目前不可用于：</span><span class="sxs-lookup"><span data-stu-id="674c8-120">The Report Message add-in is currently not available for:</span></span>
+<span data-ttu-id="e5e48-115">如果您是 Office 365 全局管理员或 Exchange Online 管理员，并且将 Exchange 配置为使用 OAuth 身份验证，则可以[为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。</span><span class="sxs-lookup"><span data-stu-id="e5e48-115">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="e5e48-116">现在，可以通过[集中部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)使用报告消息加载项。</span><span class="sxs-lookup"><span data-stu-id="e5e48-116">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
 
-- <span data-ttu-id="674c8-121">内部部署 Exchange 组织中的邮箱</span><span class="sxs-lookup"><span data-stu-id="674c8-121">Mailboxes in on-premises Exchange organizations</span></span>
-- <span data-ttu-id="674c8-122">GCC、GCC 高或 DoD 订阅</span><span class="sxs-lookup"><span data-stu-id="674c8-122">GCC, GCC HIGH, or DoD subscriptions</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="e5e48-117">开始前，需要知道什么？</span><span class="sxs-lookup"><span data-stu-id="e5e48-117">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="674c8-123">您的现有 web 浏览器应该能够满足报告消息外接程序的需要。但是，如果您注意到加载项不可用或无法按预期工作，请尝试使用不同的浏览器。</span><span class="sxs-lookup"><span data-stu-id="674c8-123">Your existing web browser should suffice for the Report Message add-in to work; however, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
+- <span data-ttu-id="e5e48-118">报告邮件加载项适用于大多数 Office 365 订阅和以下产品：</span><span class="sxs-lookup"><span data-stu-id="e5e48-118">The Report Message add-in works with most Office 365 subscriptions and the following products:</span></span>
 
-<span data-ttu-id="674c8-124">如果您是单个用户，则可以[为自己启用报告邮件加载项](#get-the-report-message-add-in-for-yourself)。</span><span class="sxs-lookup"><span data-stu-id="674c8-124">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
+  - <span data-ttu-id="e5e48-119">Outlook 网页版</span><span class="sxs-lookup"><span data-stu-id="e5e48-119">Outlook on the web</span></span>
+  - <span data-ttu-id="e5e48-120">Outlook 2013 SP1 或更高版本</span><span class="sxs-lookup"><span data-stu-id="e5e48-120">Outlook 2013 SP1 or later</span></span>
+  - <span data-ttu-id="e5e48-121">Outlook 2016 for Mac</span><span class="sxs-lookup"><span data-stu-id="e5e48-121">Outlook 2016 for Mac</span></span>
+  - <span data-ttu-id="e5e48-122">Outlook 包含在 Office 365 专业增强版中</span><span class="sxs-lookup"><span data-stu-id="e5e48-122">Outlook included with Office 365 ProPlus</span></span>
 
-<span data-ttu-id="674c8-125">如果您是 Office 365 全局管理员或 Exchange Online 管理员，并且将 Exchange 配置为使用 OAuth 身份验证，则可以[为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。</span><span class="sxs-lookup"><span data-stu-id="674c8-125">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="674c8-126">现在，可以通过[集中部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)使用报告消息加载项。</span><span class="sxs-lookup"><span data-stu-id="674c8-126">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
+- <span data-ttu-id="e5e48-123">报告邮件外接程序目前不可用于：</span><span class="sxs-lookup"><span data-stu-id="e5e48-123">The Report Message add-in is currently not available for:</span></span>
 
-## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="674c8-127">获取自己的报告邮件外接程序</span><span class="sxs-lookup"><span data-stu-id="674c8-127">Get the Report Message add-in for yourself</span></span>
+  - <span data-ttu-id="e5e48-124">内部部署 Exchange 组织中的邮箱</span><span class="sxs-lookup"><span data-stu-id="e5e48-124">Mailboxes in on-premises Exchange organizations</span></span>
+  - <span data-ttu-id="e5e48-125">GCC、GCC 高或 DoD 订阅</span><span class="sxs-lookup"><span data-stu-id="e5e48-125">GCC, GCC HIGH, or DoD subscriptions</span></span>
 
-1. <span data-ttu-id="674c8-128">在[Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps)中，搜索[报告邮件外接程序](https://appsource.microsoft.com/product/office/wa104381180)。</span><span class="sxs-lookup"><span data-stu-id="674c8-128">In [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), search for the [Report Message add-in](https://appsource.microsoft.com/product/office/wa104381180).</span></span>
+- <span data-ttu-id="e5e48-126">您的现有 web 浏览器应与报告邮件外接程序一起使用。</span><span class="sxs-lookup"><span data-stu-id="e5e48-126">Your existing web browser should work with the Report Message add-in.</span></span> <span data-ttu-id="e5e48-127">但是，如果您注意到加载项不可用或无法按预期工作，请尝试使用不同的浏览器。</span><span class="sxs-lookup"><span data-stu-id="e5e48-127">But, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
 
-2. <span data-ttu-id="674c8-129">选择 "**立即获取**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-129">Choose **GET IT NOW**.</span></span>
+- <span data-ttu-id="e5e48-128">对于组织安装，需要将组织配置为使用 OAuth 身份验证。</span><span class="sxs-lookup"><span data-stu-id="e5e48-128">For organizational installs, the organization needs to be configured to use OAuth authentication.</span></span> <span data-ttu-id="e5e48-129">有关详细信息，请参阅[确定加载项的集中部署是否适用于你的组织](../../admin/manage/centralized-deployment-of-add-ins.md)。</span><span class="sxs-lookup"><span data-stu-id="e5e48-129">For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
+
+- <span data-ttu-id="e5e48-130">管理员需要是全局管理员角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="e5e48-130">Admins need to be a member of the Global admins role group.</span></span> <span data-ttu-id="e5e48-131">有关详细信息，请参阅[Office 365 Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="e5e48-131">For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+
+## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="e5e48-132">获取自己的报告邮件外接程序</span><span class="sxs-lookup"><span data-stu-id="e5e48-132">Get the Report Message add-in for yourself</span></span>
+
+1. <span data-ttu-id="e5e48-133">转到 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，并搜索报告邮件外接程序。</span><span class="sxs-lookup"><span data-stu-id="e5e48-133">Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in.</span></span> <span data-ttu-id="e5e48-134">若要直接转到报告邮件加载项，请转到<https://appsource.microsoft.com/product/office/wa104381180>。</span><span class="sxs-lookup"><span data-stu-id="e5e48-134">To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.</span></span>
+
+2. <span data-ttu-id="e5e48-135">单击 "**立即获取**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-135">Click **GET IT NOW**.</span></span>
 
    ![报告消息-立即获取](../../media/ReportMessageGETITNOW.png)
 
-3. <span data-ttu-id="674c8-131">查看使用条款和隐私策略。</span><span class="sxs-lookup"><span data-stu-id="674c8-131">Review the terms of use and privacy policy.</span></span> <span data-ttu-id="674c8-132">然后选择" **继续**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-132">Then choose **Continue**.</span></span>
+3. <span data-ttu-id="e5e48-137">在显示的对话框中，查看使用条款和隐私策略，然后单击 "**继续**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-137">In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.</span></span>
 
-4. <span data-ttu-id="674c8-133">使用你的工作或学校帐户（用于商业用途）或你的 Microsoft 帐户（供个人使用）登录 Office 365。</span><span class="sxs-lookup"><span data-stu-id="674c8-133">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
+4. <span data-ttu-id="e5e48-138">使用你的工作或学校帐户（用于商业用途）或你的 Microsoft 帐户（供个人使用）登录 Office 365。</span><span class="sxs-lookup"><span data-stu-id="e5e48-138">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
 
-<span data-ttu-id="674c8-134">安装并启用加载项后，您将看到以下图标：</span><span class="sxs-lookup"><span data-stu-id="674c8-134">After the add-in is installed and enabled, you'll see the following icons:</span></span>
+<span data-ttu-id="e5e48-139">安装并启用加载项后，您将看到以下图标：</span><span class="sxs-lookup"><span data-stu-id="e5e48-139">After the add-in is installed and enabled, you'll see the following icons:</span></span>
 
-- <span data-ttu-id="674c8-135">在 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="674c8-135">In Outlook, the icon looks like this:</span></span>
-
-  ![报告邮件外接程序图标（适用于 Outlook）](../../media/OutlookReportMessageIcon.png)
-
-- <span data-ttu-id="674c8-137">在 web 上的 Outlook （以前称为 Outlook Web App）中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="674c8-137">In Outlook on the web (formerly known as Outlook Web App), the icon looks like this:</span></span>
-
-  ![Outlook 网页报告邮件加载项图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
-
-> [!TIP]
-> <span data-ttu-id="674c8-139">作为下一步，了解如何[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="674c8-139">As a next step, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
-
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="674c8-140">为您的组织获取并启用报告邮件外接程序</span><span class="sxs-lookup"><span data-stu-id="674c8-140">Get and enable the Report Message add-in for your organization</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="674c8-141">若要完成此任务，您必须是 Office 365 全局管理员或 Exchange Online 管理员。</span><span class="sxs-lookup"><span data-stu-id="674c8-141">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span> <span data-ttu-id="674c8-142">此外，必须将 Exchange 配置为使用 OAuth 身份验证以了解详细信息，请参阅[exchange 要求（加载项的集中部署）](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)。</span><span class="sxs-lookup"><span data-stu-id="674c8-142">In addition, Exchange must be configured to use OAuth authentication To learn more, see [Exchange requirements (Centralized Deployment of add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
-
-1. <span data-ttu-id="674c8-143">转到 Microsoft 365 管理中心中的 "[服务 & 外接程序" 页面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。</span><span class="sxs-lookup"><span data-stu-id="674c8-143">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
-
-   ![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
-
-2. <span data-ttu-id="674c8-145">选择 " **+ 部署外接端"**。</span><span class="sxs-lookup"><span data-stu-id="674c8-145">Choose **+ Deploy Add-in**.</span></span>
-
-   ![选择 "部署加载项"](../../media/ServicesAddIns-ChooseDeployAddIn.png)
-
-3. <span data-ttu-id="674c8-147">在 "**新建外接端**" 屏幕中，查看信息，然后选择 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-147">In the **New Add-In** screen, review the information, and then choose **Next**.</span></span>
-
-   ![新加载项详细信息](../../media/NewAddInScreen1.png)
-
-4. <span data-ttu-id="674c8-149">选择 **"我想从 Office 应用商店添加外接程序**"，然后选择 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-149">Select **I want to add an Add-In from the Office Store**, and then choose **Next**.</span></span>
-
-   ![我想要添加新的外接程序](../../media/NewAddInScreen2.png)
-
-5. <span data-ttu-id="674c8-151">搜索**报告消息**，并在结果列表中的**报告邮件外接程序**旁边，选择 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-151">Search for **Report Message**, and in the list of results, next to the **Report Message Add-In**, choose **Add**.</span></span>
-
-   ![搜索报告消息，然后选择 "添加"](../../media/NewAddInScreen3.png)
-
-6. <span data-ttu-id="674c8-153">在 "**报告邮件**" 屏幕上，查看信息，然后选择 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-153">On the **Report Message** screen, review the information, and then choose **Next**.</span></span>
-
-   ![报告消息详细信息](../../media/ReportMessageAdd-InNewScreen4.png)
-
-7. <span data-ttu-id="674c8-155">指定 Outlook 的用户默认设置，然后选择 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-155">Specify the user default settings for Outlook, and  then choose **Next**.</span></span>
-
-   ![为 Outlook 报告邮件的默认设置](../../media/ReportMessageOptionsScreen5.png)
-
-8. <span data-ttu-id="674c8-157">指定要获取报告邮件加载项的收件人，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-157">Specify who gets the Report Message Add-in, and then choose **Save**.</span></span>
-
-   ![谁可以获取报告邮件加载项](../../media/ReportMessageOptionsScreen6.png)
-
-> [!TIP]
-> <span data-ttu-id="674c8-159">建议[设置一个规则，以获取用户报告的电子](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)邮件的副本。</span><span class="sxs-lookup"><span data-stu-id="674c8-159">We recommend [setting up a rule to get a copy of email messages reported by your users](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span></span>
-
-<span data-ttu-id="674c8-160">根据您在设置加载项时选择的内容（上面的步骤7-8），贵组织中的人员将会看到[报告消息外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="674c8-160">Depending on what you selected when you set up the add-in (steps 7-8 above), people in your organization will have the [Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) available.</span></span> <span data-ttu-id="674c8-161">你组织中的人员将看到以下图标：</span><span class="sxs-lookup"><span data-stu-id="674c8-161">People in your organization will see the following icons:</span></span>
-
-- <span data-ttu-id="674c8-162">在 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="674c8-162">In Outlook, the icon looks like this:</span></span>
+- <span data-ttu-id="e5e48-140">在 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="e5e48-140">In Outlook, the icon looks like this:</span></span>
 
   ![报告邮件外接程序图标（适用于 Outlook）](../../media/OutlookReportMessageIcon.png)
 
-- <span data-ttu-id="674c8-164">在 web 上的 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="674c8-164">In Outlook on the web, the icon looks like this:</span></span>
+- <span data-ttu-id="e5e48-142">在 web 上的 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="e5e48-142">In Outlook on the web, the icon looks like this:</span></span>
 
   ![Outlook 网页报告邮件加载项图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-> [!TIP]
-> <span data-ttu-id="674c8-166">当您通知用户有关报告邮件加载项时，请包含[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的链接。</span><span class="sxs-lookup"><span data-stu-id="674c8-166">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+<span data-ttu-id="e5e48-144">若要了解如何使用加载项，请参阅[使用报告消息加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="e5e48-144">To learn how to use the add-in, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a><span data-ttu-id="674c8-167">设置一个规则，以获取用户报告的电子邮件的副本</span><span class="sxs-lookup"><span data-stu-id="674c8-167">Set up a rule to get a copy of email messages reported by your users</span></span>
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="e5e48-145">为您的组织获取并启用报告邮件外接程序</span><span class="sxs-lookup"><span data-stu-id="e5e48-145">Get and enable the Report Message add-in for your organization</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="674c8-168">您必须是 Exchange Online 管理员才能执行此任务。</span><span class="sxs-lookup"><span data-stu-id="674c8-168">You must be an Exchange Online Administrator to perform this task.</span></span>
+> [!NOTE]
+> <span data-ttu-id="e5e48-146">最长可能需要12个小时，外接程序才会显示在您的组织中。</span><span class="sxs-lookup"><span data-stu-id="e5e48-146">It could take up to 12 hours for the add-in to appear in your organization.</span></span>
 
-<span data-ttu-id="674c8-169">您可以设置一个规则，以获取由组织中的用户报告的电子邮件的副本。</span><span class="sxs-lookup"><span data-stu-id="674c8-169">You can set up a rule to get a copy of email messages reported by users in your organization.</span></span> <span data-ttu-id="674c8-170">为组织下载并启用报告邮件外接程序后，可以执行此操作。</span><span class="sxs-lookup"><span data-stu-id="674c8-170">You do this after you have downloaded and enabled the Report Message add-in for your organization.</span></span>
+1. <span data-ttu-id="e5e48-147">在 Microsoft 365 管理中心，转到 "服务" **& "外接程序**" 页<https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>，然后单击 "**部署外接程序**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-147">In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, and then click **Deploy Add-In**.</span></span>
 
-1. <span data-ttu-id="674c8-171">在 Exchange 管理中心中，选择 "**邮件流** \> **规则**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-171">In the Exchange admin center, choose **mail flow** \> **rules**.</span></span>
+   ![Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. <span data-ttu-id="674c8-172">选择**+** \> "**创建新规则**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-172">Choose **+** \> **Create a new rule**.</span></span>
+2. <span data-ttu-id="e5e48-149">在 "**部署新的外接程序**" 弹出对话框中，查看信息，然后单击 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-149">In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.</span></span>
 
-3. <span data-ttu-id="674c8-173">在 "**名称**" 框中，键入一个名称，如 "提交"。</span><span class="sxs-lookup"><span data-stu-id="674c8-173">In the **Name** box, type a name, such as Submissions.</span></span>
+3. <span data-ttu-id="e5e48-150">在下一页上，单击 **"从存储区中选择"**。</span><span class="sxs-lookup"><span data-stu-id="e5e48-150">On the next page, click **Choose from the Store**.</span></span>
 
-4. <span data-ttu-id="674c8-174">在 "在**以下情况应用此规则**" 列表中，选择**收件人地址包括 ...**。</span><span class="sxs-lookup"><span data-stu-id="674c8-174">In the **Apply this rule if** list, choose **The recipient address includes...**.</span></span>
+   ![部署新的加载项页面](../../media/NewAddInScreen2.png)
 
-5. <span data-ttu-id="674c8-175">在 "**指定字词或短语**" 屏幕中`junk@office365.microsoft.com` ， `phish@office365.microsoft.com`添加和，然后选择 **"确定"**。</span><span class="sxs-lookup"><span data-stu-id="674c8-175">In the **specify words or phrases** screen, add `junk@office365.microsoft.com` and `phish@office365.microsoft.com`, and then choose **OK**.</span></span>
+4. <span data-ttu-id="e5e48-152">在出现的 "**选择外接程序**" 页中，单击 "**搜索**" 框，输入**报告消息**，然后单击 "**搜索** ![搜索" 图标](../../media/search-icon.png)。</span><span class="sxs-lookup"><span data-stu-id="e5e48-152">In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png).</span></span> <span data-ttu-id="e5e48-153">在结果列表中，找到 "**报告消息**"，然后单击 "**添加**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-153">In the list of results, find **Report Message** and then click **Add**.</span></span>
 
-   ![指定规则的垃圾邮件和网络钓鱼电子邮件地址](../../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
+   ![选择加载项搜索结果](../../media/NewAddInScreen3.png)
 
-6. <span data-ttu-id="674c8-177">在 "**执行以下操作 ...** " 列表中，选择 **"将邮件密件抄送给 ...**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-177">In the **Do the following...** list, choose **Bcc the message to...**.</span></span>
+5. <span data-ttu-id="e5e48-155">在出现的对话框中，查看许可和隐私信息，然后单击 "**继续**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-155">In the dialog that appears, review the licensing and privacy information, and then click **Continue**.</span></span>
 
-7. <span data-ttu-id="674c8-178">添加全局管理员、安全管理员和/或安全阅读者，这些读者应收到用户报告给 Microsoft 的每封电子邮件的副本，然后选择 **"确定"**。</span><span class="sxs-lookup"><span data-stu-id="674c8-178">Add a global administrator, security administrator, and/or security reader who should receive a copy of each email message that people report to Microsoft, and then choose **OK**.</span></span>
+6. <span data-ttu-id="e5e48-156">在出现的 "**配置外接程序**" 页中，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="e5e48-156">In the **Configure add-in** page that appears, configure the following settings:</span></span>
 
-   ![添加全局或安全管理员以接收每个报告的邮件的副本](../../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
+   - <span data-ttu-id="e5e48-157">**分配的用户**：选择下列值之一：</span><span class="sxs-lookup"><span data-stu-id="e5e48-157">**Assigned users**: Select one of the following values:</span></span>
 
-8. <span data-ttu-id="674c8-180">选择 "**使用严重性级别审核此规则**"，然后选择 "**中**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-180">Select **Audit this rule with severity level**, and choose **Medium**.</span></span>
+     - <span data-ttu-id="e5e48-158">**所有人**（默认）</span><span class="sxs-lookup"><span data-stu-id="e5e48-158">**Everyone** (default)</span></span>
+     - <span data-ttu-id="e5e48-159">**特定用户/组**</span><span class="sxs-lookup"><span data-stu-id="e5e48-159">**Specific users / groups**</span></span>
+     - <span data-ttu-id="e5e48-160">**就我自己**</span><span class="sxs-lookup"><span data-stu-id="e5e48-160">**Just me**</span></span>
 
-9. <span data-ttu-id="674c8-181">在 "**为此规则选择模式**" 下，选择 "**强制**"。</span><span class="sxs-lookup"><span data-stu-id="674c8-181">Under **Choose a mode for this rule**, choose **Enforce**.</span></span>
+   - <span data-ttu-id="e5e48-161">**部署方法**：选择下列值之一：</span><span class="sxs-lookup"><span data-stu-id="e5e48-161">**Deployment method**: Select one of the following values:</span></span>
 
-   ![设置一个规则以获取每个报告的邮件的副本](../../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+     - <span data-ttu-id="e5e48-162">**固定（默认值）**：加载项将自动部署到指定的用户，并且无法将其删除。</span><span class="sxs-lookup"><span data-stu-id="e5e48-162">**Fixed (Default)**: The add-in is automatically deployed to the specified users and they can't remove it.</span></span>
+     - <span data-ttu-id="e5e48-163">**可用**：用户可以在**家庭** \> **Get add-ins** \>版中安装外接程序**管理员管理**。</span><span class="sxs-lookup"><span data-stu-id="e5e48-163">**Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.</span></span>
+     - <span data-ttu-id="e5e48-164">**可选**：将加载项自动部署到指定的用户，但可以选择将其删除。</span><span class="sxs-lookup"><span data-stu-id="e5e48-164">**Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.</span></span>
 
-10. <span data-ttu-id="674c8-183">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="674c8-183">Choose **Save**.</span></span>
+   ![配置加载项页面](../../media/configure-add-in.png)
 
-<span data-ttu-id="674c8-184">在适当的情况下，当组织中的某人使用报告邮件加载项报告电子邮件时，全局管理员、安全管理员和/或安全读者将收到该邮件的副本。</span><span class="sxs-lookup"><span data-stu-id="674c8-184">With this rule in place, whenever someone in your organization reports an email message using the Report Message add-in, your global administrator, security administrator, and/or security reader will receive a copy of that message.</span></span> <span data-ttu-id="674c8-185">此信息可以让你设置或调整策略，如[Office 365 ATP 安全链接](atp-safe-links.md)策略或[反垃圾邮件](anti-spam-protection.md)设置。</span><span class="sxs-lookup"><span data-stu-id="674c8-185">This information can enable you to set up or adjust policies, such as [Office 365 ATP Safe Links](atp-safe-links.md) policies, or your [anti-spam](anti-spam-protection.md) settings.</span></span>
+   <span data-ttu-id="e5e48-166">完成后，请单击 "**部署**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-166">When you're finished, click **Deploy**.</span></span>
 
-## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="674c8-186">了解如何使用报告邮件加载项</span><span class="sxs-lookup"><span data-stu-id="674c8-186">Learn how to use the Report Message add-in</span></span>
+7. <span data-ttu-id="e5e48-167">在出现的 "**部署报告邮件**" 页中，您将看到一个进度报告，随后将会看到已部署加载项的确认信息。</span><span class="sxs-lookup"><span data-stu-id="e5e48-167">In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed.</span></span> <span data-ttu-id="e5e48-168">阅读信息后，单击 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-168">After you read the information, click **Next**.</span></span>
 
-<span data-ttu-id="674c8-187">请参阅[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="674c8-187">See [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+   !["部署报告邮件" 页](../../media/deploy-report-message-page.png)
 
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="674c8-188">查看或编辑报告邮件外接程序的设置</span><span class="sxs-lookup"><span data-stu-id="674c8-188">Review or edit settings for the Report Message add-in</span></span>
+8. <span data-ttu-id="e5e48-170">在出现的 "**通知外接程序**" 页上，查看信息，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="e5e48-170">On the **Announce add-in** page that appears, review the information, and then click **Close**.</span></span>
 
-<span data-ttu-id="674c8-189">您可以在 "[服务" & "外接程序" 页](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)上查看和编辑报告邮件外接程序的默认设置。</span><span class="sxs-lookup"><span data-stu-id="674c8-189">You can review and edit the default settings for the Report Message add-in on the [Services & Add-Ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span></span>
+   ![通知加载项页面](../../media/announce-add-in-page.png)
 
-> [!IMPORTANT]
-> <span data-ttu-id="674c8-190">若要完成此任务，您必须是 Office 365 全局管理员或 Exchange Online 管理员。</span><span class="sxs-lookup"><span data-stu-id="674c8-190">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span>
+### <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="e5e48-172">了解如何使用报告邮件加载项</span><span class="sxs-lookup"><span data-stu-id="e5e48-172">Learn how to use the Report Message add-in</span></span>
 
-1. <span data-ttu-id="674c8-191">转到 Microsoft 365 管理中心中的 "[服务 & 外接程序" 页面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。</span><span class="sxs-lookup"><span data-stu-id="674c8-191">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="e5e48-173">为其分配了加载项的人员将看到以下图标：</span><span class="sxs-lookup"><span data-stu-id="e5e48-173">People who have the add-in assigned to them will see the following icons:</span></span>
+
+- <span data-ttu-id="e5e48-174">在 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="e5e48-174">In Outlook, the icon looks like this:</span></span>
+
+  ![报告邮件外接程序图标（适用于 Outlook）](../../media/OutlookReportMessageIcon.png)
+
+- <span data-ttu-id="e5e48-176">在 web 上的 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="e5e48-176">In Outlook on the web, the icon looks like this:</span></span>
+
+  ![Outlook 网页报告邮件加载项图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+
+<span data-ttu-id="e5e48-178">当您通知用户有关报告邮件加载项时，请包含[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的链接。</span><span class="sxs-lookup"><span data-stu-id="e5e48-178">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+
+### <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="e5e48-179">查看或编辑报告邮件外接程序的设置</span><span class="sxs-lookup"><span data-stu-id="e5e48-179">Review or edit settings for the Report Message add-in</span></span>
+
+1. <span data-ttu-id="e5e48-180">在 Microsoft 365 管理中心，转到上<https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>的 "**服务" & "外接程序**" 页。</span><span class="sxs-lookup"><span data-stu-id="e5e48-180">In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.</span></span>
 
    ![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. <span data-ttu-id="674c8-193">查找并选择报告邮件加载项。</span><span class="sxs-lookup"><span data-stu-id="674c8-193">Find and select the Report Message add-in.</span></span>
+2. <span data-ttu-id="e5e48-182">查找并选择**报告邮件**加载项。</span><span class="sxs-lookup"><span data-stu-id="e5e48-182">Find and select the **Report Message** add-in.</span></span>
 
-   ![查找并选择报告邮件加载项](../../media/FindReportMessageAddIn.png)
-
-3. <span data-ttu-id="674c8-195">在 "报告邮件" 屏幕上，查看并编辑适用于您的组织的设置。</span><span class="sxs-lookup"><span data-stu-id="674c8-195">On the Report Message screen, review and edit settings as appropriate for your organization.</span></span>
+3. <span data-ttu-id="e5e48-183">在显示的 "**编辑报告消息**" 浮出控件中，查看并编辑组织的相应设置。</span><span class="sxs-lookup"><span data-stu-id="e5e48-183">In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization.</span></span> <span data-ttu-id="e5e48-184">完成时，请单击“保存”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="e5e48-184">When you're finished, click **Save**.</span></span>
 
    ![报告邮件外接程序的设置](../../media/EditReportMessageAddIn.png)
-
-## <a name="related-topics"></a><span data-ttu-id="674c8-197">相关主题</span><span class="sxs-lookup"><span data-stu-id="674c8-197">Related topics</span></span>
-
-[<span data-ttu-id="674c8-198">使用报告邮件加载项</span><span class="sxs-lookup"><span data-stu-id="674c8-198">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-[<span data-ttu-id="674c8-199">查看安全&amp;合规性中心中的电子邮件安全报告</span><span class="sxs-lookup"><span data-stu-id="674c8-199">View email security reports in the Security &amp; Compliance Center</span></span>](view-email-security-reports.md)
-
-[<span data-ttu-id="674c8-200">查看 Office 365 高级威胁防护报告</span><span class="sxs-lookup"><span data-stu-id="674c8-200">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
-
-[<span data-ttu-id="674c8-201">在安全&amp;合规中心中使用资源管理器</span><span class="sxs-lookup"><span data-stu-id="674c8-201">Use Explorer in the Security &amp; Compliance Center</span></span>](threat-explorer.md)
