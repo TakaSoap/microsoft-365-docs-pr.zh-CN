@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '有关使用 Office 365 导入服务将组织的 PST 文件导入到 Office 365 邮箱的管理员的常见问题。 '
-ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 439a321c3890d85f7ca0f7da0074af80f6b7fed5
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634430"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058913"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 的常见问题解答
 
@@ -46,7 +46,7 @@ ms.locfileid: "42634430"
 - 必须是你的 Office365 组织中的全局管理员。
     
 > [!TIP]
-> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
+> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮箱导入导出”和“邮件收件人”角色分配给新角色组，然后添加成员。 
   
  **网络上传在哪些地区提供？**
   
@@ -79,6 +79,10 @@ Using network upload to import PST files is free.
   
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
   
+ **PST 导入过程如何处理重复的电子邮件项目？**
+
+PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标文件夹中存在匹配项，则不会将项目从 PST 文件复制到邮箱或存档。 如果您重新导入同一个 PST 文件并指定不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），则 PST 文件中的所有项目都将为 reimported。
+
  **导入 PST 文件时是否有邮件大小限制？**
   
 是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
@@ -178,6 +182,10 @@ Using network upload to import PST files is free.
   
 是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
   
+  **PST 导入过程如何处理重复的电子邮件项目？**
+
+PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标文件夹中存在匹配项，则不会将项目从 PST 文件复制到邮箱或存档。 如果您重新导入同一个 PST 文件并指定不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），则 PST 文件中的所有项目都将为 reimported。
+ 
  **PST 文件导入到 Office365 邮箱时，是否会保留邮件发送时间或接收时间、收件人和其他属性等邮件属性？**
   
 是。 导入过程中不会更改原始邮件的元数据
