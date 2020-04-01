@@ -15,117 +15,107 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 44335889432d1c5998b76836c9d8f0201a62dc67
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e0942f88605e1b11cdbc83155ebc43b5fdb1bea1
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066739"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081276"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
-这些可下载的实操实验室着重于 Windows 10 部署和 Office 365 部署，以及相关的配置和管理注意事项后期部署。强烈建议正在为 Windows 7 生命周期的结束做准备的组织进行此培训，但该培训同样适用于当前使用 Windows 10 和 Office 365 增强版或 Office 2019 的用户。其中包含有关 Windows 10、Office 365 专业增强版、企业移动性 + 安全性和相关产品和服务的指南。
-
 这些实验室旨在帮助您规划、 测试和验证运行 Windows 10 企业版和 Office 365 专业增强版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
-作为 Windows 10 和 Office 365 专业增强版的[桌面部署](https://www.aka.ms/howtoshift)过程的一部分，在开始探索部署工具更新和测试与部署相关的自动化时，建议首先生成沙盒或隔离的实验室环境。
+强烈建议准备停用 Windows 7 的组织使用此培训，同时也适用于使用 Windows 10 和 Office 365 Plus 或 Office 2019 的用户。 此外，作为独立环境，该实验室是探索部署工具更新和测试与部署相关的自动化的理想选择。
 
-实验室工具包可免费下载，并使用试用版软件。
+[下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下载 Windows 和 Office 部署实验室工具包**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+## <a name="a-complete-lab-environment"></a>完整的实验室环境
 
-## <a name="a-complete-lab-environment"></a>**完整的实验室环境**
+实验室为你提供了自动预配的虚拟实验室环境，其中包括域加入桌面客户端、域控制器、Internet 网关和完全配置的配置管理器实例。 实验室包含以下产品的最新评估版：
 
-实验室为你提供了自动预配的虚拟实验室环境，其中包括域加入桌面客户端、域控制器、Internet 网关和完全配置的 ConfigMgr 实例。实验室包含以下产品的评估版本：
-
-  - Windows 10 企业版，版本 1909
+  - Windows 10 企业版
   - Windows 7 企业版
-  - Microsoft Endpoint Configuration Manager，版本 1902
-  - 适用于 Windows 10 的 Windows 评估和部署工具包，版本 1903
+  - Microsoft Endpoint Configuration Manager
+  - 适用于 Windows 10 的 Windows 评估和部署工具包
   - Microsoft Deployment Toolkit
-  - Microsoft Application Virtualization (App-V) 5.1
-  - Microsoft BitLocker 管理和监视 2.5 SP1
-  - Windows Server 2019
-  - Microsoft SQL Server 2017
+  - Microsoft Application Virtualization (App-V)
+  - Microsoft BitLocker 管理和监视 
+  - Windows Server 
+  - Microsoft SQL Server 
 
 此外，该实验室旨在与以下试用版连接： 
 
-  - Microsoft 365 E5
-
-或
+  - Microsoft 365 E5、或
   - Office 365 企业版 E5
   - 企业移动性 + 安全性
 
-## <a name="step-by-step-labs"></a>**分步实验室**
+## <a name="step-by-step-labs"></a>分步实验室
 
-详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和配置管理器（版本 1910）的最新版本进行了更新。  
+详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和配置管理器（版本 1910）的最新版本进行了更新。 
 
-### <a name="device-and-app-readiness"></a>**设备和应用就绪情况**
+### <a name="device-and-app-readiness"></a>设备和应用就绪情况
 
   - 桌面分析
-  - Internet Explorer 的企业模式和企业模式网站列表
+  - 新增内容！ 部署和更新新版 Microsoft Edge 
+  - Internet Explorer 模式 
+  - 应用程序防护 
 
-### <a name="directory-and-network-readiness"></a>**目录和网络就绪情况**
+### <a name="directory-and-network-readiness"></a>目录和网络就绪情况
 
-  - Azure Active Directory 和 Microsoft 365 的基本设置
-  - 使用传递优化、ConfigMgr 中的对等缓存和 LEDBAT 来进行网络优化
-  - ConfigMgr 和 Microsoft Intune 共同管理
+  - 新增内容！ 优化 Windows 10 更新传递 
+  - 配置管理器和 Microsoft Intune 共同管理
   - 远程访问 (VPN)
 
-### <a name="office-and-lob-app-delivery"></a>**Office 和 LOB 应用交付**
+### <a name="office-and-lob-app-delivery"></a>Office 和 LOB 应用交付
 
-  - 使用 Microsoft Endpoint Configuration Manager 部署 Office 365 专业增强版
-  - 使用 Microsoft Intune 进行 Office 365 专业增强版部署
+  - Office 365 专业增强版部署 
+  - 使用配置管理器和 Microsoft Intune 进行企业托管部署
   - 使用 Microsoft Intune 进行应用部署和管理
   - 使用适用于企业的 Microsoft Store 进行应用部署和自助式安装
-  - 桌面桥应用程序转换为 UWP
-  - Windows 应用认证工具包
-  - 使用适用于 IE 的企业模式进行浏览器兼容性修正
 
-### <a name="user-file-and-settings-migration"></a>**用户文件和设置迁移**
+### <a name="user-file-and-settings-migration"></a>用户文件和设置迁移
 
-  - 用户状态迁移工具，作为 ConfigMgr 和 MDT 中电脑刷新和替换任务序列的一部分
-  - OneDrive 已知文件夹移动
+  - 已知文件夹文件迁移 
+  - 用户状态迁移工具 
   - 企业状态漫游
+  - 开始菜单自定义和 UWP 应用删除 
+  - 用户体验虚拟化（UE-V） 
 
-### <a name="security-and-compliance"></a>**安全性和符合性**
+### <a name="security-and-compliance"></a>安全性和合规性
 
   - BitLocker 设备加密
   - Windows Defender 防病毒
   - Windows Hello 企业版
-  - BIOS 转换为 UEFI 作为基于虚拟化的安全性的启用程序
-  - Windows Defender Credential Guard
+  - BIOS 到 UEFI 转换
   - Windows Defender 应用程序防护
   - Windows Defender 攻击防护
   - Windows Defender 应用程序控制
-  - Microsoft Defender 高级威胁防护
+  - Windows Defender 高级威胁防护
 
-### <a name="os-deployment-and-feature-updates"></a>**OS 部署和功能更新**
+### <a name="os-deployment-and-feature-updates"></a>OS 部署和功能更新
 
   - OS 映像创建
-  - ConfigMgr 中的 OS 部署任务序列
-      - 裸机
-      - 刷新
-      - 替换
-      - 升级
+  - 配置管理器中的 OS 部署任务序列 
   - MDT 中的 OS 部署任务序列
-  - 使用 ConfigMgr 中的升级任务序列进行功能更新
   - Windows Autopilot
+  - 预配包 
 
-### <a name="windows-and-office-servicing"></a>**Windows 和 Office 服务**
+### <a name="windows-and-office-as-a-service"></a>Windows 和 Office 即服务
+  - 使用组策略管理 Windows 更新
+  - 使用配置管理器和 Intune 服务 Windows 10
+  - 使用配置管理器服务 Office 365 专业增强版
 
-  - 使用 Configuration Manager 进行软件更新管理
-  - Configuration Manager 中的 Office 365 专业增强版更新管理
-  - 使用 Microsoft Intune 向 Windows 10 应用移动设备管理
-
-### <a name="new-windows-virtual-desktop"></a>**新！Windows 虚拟桌面**
+### <a name="new-windows-virtual-desktop"></a>新增内容！ Windows 虚拟桌面
   - Windows 虚拟桌面：准备、部署、优化 
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下载 Windows 和 Office 部署实验室工具包**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+### <a name="download-the-windows-and-office-deployment-lab-kit"></a>下载 Windows 和 Office 部署实验室工具包
+
+[下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
 *请使用高带宽下载此内容，以增强下载体验并留出 30-45 分钟进行自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 4 月 18 日过期。新版本将于旧版本到期前发布。*
 
-## <a name="additional-guidance"></a>**其他指南**
+## <a name="additional-guidance"></a>其他指南
 
   - [桌面部署中心](https://www.aka.ms/howtoshift)
 
@@ -139,7 +129,7 @@ ms.locfileid: "42066739"
 
   - [<span class="underline">Intune 入门</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-## <a name="related-resources"></a>**相关资源**
+## <a name="related-resources"></a>相关资源
 
   - [<span class="underline">Microsoft 365 简介</span>](https://www.microsoft.com/microsoft-365/default.aspx)
 

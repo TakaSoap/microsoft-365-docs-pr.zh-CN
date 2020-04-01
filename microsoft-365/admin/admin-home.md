@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: 了解可供 Microsoft 365 管理员使用的资源。
 ms.custom: okr_smb
-ms.openlocfilehash: cafb63d53178a2cc21448643ba9fd78773265aa8
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: e38c15d0e68e908bada941443b019e9f243c7f11
+ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046911"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43075592"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 管理帮助中心
 
@@ -39,13 +39,13 @@ ms.locfileid: "43046911"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 将变为 Microsoft 365</h3>
-                        <p>我们正在更改一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 Microsoft 365 管理中心中自动更新，且帐单会在 2020 年 4 月 21 日当天或之后更新</p>
+                        <p>我们正在更改一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 Microsoft 365 管理中心中自动更新，且帐单会在 2020 年 4 月 21 日当天或之后更新。</p>
                         <ul>
-                            <li><p>Office 365 商业协作版现为 Microsoft 365 商业基础版</p></li>
-                            <li><p>Office 365 商业高级版现为 Microsoft 365 商业标准版</p></li>
-                            <li><p>Microsoft 365 商业版现为 Microsoft 365 商业高级版</p></li>
-                            <li><p>Office 365 商业版现为 Microsoft 365 应用商业版</p></li>
-                            <li><p>Office 365 专业增强版现为 Microsoft 365 应用企业版</p></li>
+                            <li><p><b>Office 365 商业协作版</b>现为 <b>Microsoft 365 商业基础版</b>。</p></li>
+                            <li><p><b>Office 365 商业高级版</b>现为 <b>Microsoft 365 商业标准版</b>。</p></li>
+                            <li><p><b>Microsoft 365 商业版</b>现为 <b>Microsoft 365 商业高级版</b>。</p></li>
+                            <li><p><b>Office 365 商业版</b>现为 <b>Microsoft 365 应用商业版</b>。</p></li>
+                            <li><p><b>Office 365 专业增强版</b>现为 <b>Microsoft 365 应用企业版</b>。</p></li>
                         </ul>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">了解更多</a></p>
                     </div>
