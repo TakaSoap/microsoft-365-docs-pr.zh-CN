@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 对于管理员：了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到 Exchange Online 的用户邮箱中。 本主题提供了常见问题解答并解释了 PST 导入流程的工作原理。
-ms.openlocfilehash: 94681af376d7c9ae32bdd2cbbb2a28da464712c1
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 2d28889f6cba782b5b9ee70b0fb17cff6ca911a2
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170542"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058935"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>将组织的 PST 文件导入到 Office 365 的概述
 
@@ -174,6 +174,10 @@ Using network upload to import PST files is free.
   
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
   
+ **PST 导入进程如何处理重复的电子邮件项？**
+
+如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
+ 
  **导入 PST 文件时是否有邮件大小限制？**
   
 是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
@@ -271,6 +275,10 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
   
 是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
   
+  **PST 导入进程如何处理重复的电子邮件项？**
+
+如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
+ 
  **PST 文件导入到 Office365 邮箱时，是否会保留邮件发送时间或接收时间、收件人和其他属性等邮件属性？**
   
 是。 导入过程中不会更改原始邮件的元数据

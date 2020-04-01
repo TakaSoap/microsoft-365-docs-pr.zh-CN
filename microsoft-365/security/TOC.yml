@@ -255,12 +255,14 @@
                 - name: 向 Microsoft 报告邮件和文件
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                   items:
-                    - name: 使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
+                    - name: 使用管理员提交
                       href: ./office-365-security/admin-submission.md
                     - name: 启用报表消息加载项
                       href: ./office-365-security/enable-the-report-message-add-in.md
-                    - name: 安装和垃圾电子邮件报告加载项
+                    - name: 安装和使用垃圾邮件报告加载项
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+                    - name: 在 Outlook 网页版中举报垃圾电子邮件和钓鱼行为
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                     - name: 手动提交邮件至 Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: 将恶意软件和非恶意软件提交给 Microsoft
