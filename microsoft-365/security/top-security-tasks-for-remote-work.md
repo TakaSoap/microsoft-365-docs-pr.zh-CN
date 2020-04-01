@@ -11,13 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- remotework
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
-ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
+ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43037472"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081300"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>用于安全团队的前12个任务以支持在家中工作
 
@@ -165,8 +166,8 @@ Microsoft Intune 移动应用管理（MAM）允许你管理和保护你的组织
 - [在 Apple Business Manager （ABM）中使用 Apple 的公司设备注册功能在 Intune 中注册 iOS/iPadOS 设备](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 注册设备后，请使用[常见标识和设备访问策略](../enterprise/identity-access-policies.md)中的指导来创建以下策略：
-- [定义设备合规性策略](../enterprise/identity-access-policies.md#define-device-compliance-policies)
-- [要求合规的电脑](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)（条件访问规则）
+- [定义设备合规性策略](../enterprise/identity-access-policies.md#define-device-compliance-policies)—推荐用于 Windows 10 的设置，包括需要进行病毒防护。 如果你有 Microsoft 365 E5，请使用 Microsoft Defender 高级威胁防护来监视员工设备的运行状况。 请确保其他操作系统的合规性策略包括防病毒保护和终结点保护软件。 
+- [需要符合](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)要求的电脑—这是 Azure AD 中强制实施设备合规性策略的条件访问规则。
 
 只有一个组织可以管理设备，因此请务必从 Azure AD 中的条件访问规则中排除来宾帐户。 如果不从需要设备符合性的策略中排除来宾和外部用户，则这些策略将阻止这些用户。 有关详细信息，请参阅[更新通用策略以允许和保护来宾和外部访问](../enterprise/identity-access-policies-guest-access.md)。
 
@@ -174,7 +175,7 @@ Microsoft Intune 移动应用管理（MAM）允许你管理和保护你的组织
 
 如果要快速使大部分员工在家中工作，这种连接模式的突然转换可能会对企业网络基础结构产生重大影响。 许多网络在采用云服务之前进行了扩展和设计。 在许多情况下，网络具有远程工作人员的容错性，但不能同时供所有用户远程使用。
 
-网络元素（如 VPN 集中式）、中央网络出口设备（如代理和数据丢失防护设备）、中心 internet 带宽、backhaul MPLS 电路、NAT 功能等，突然由于负载过重而受到巨大压力的影响。使用它们的整个业务。 最终结果是，性能和工作效率差加在适应在家中工作的用户的用户体验方面较差。
+网络元素（如 VPN 集中式）、中央网络出口设备（如代理和数据丢失防护设备）、中心 internet 带宽、backhaul MPLS 电路、NAT 功能等，突然由于使用它们的整个业务负载造成的压力而受到巨大压力的影响。 最终结果是，性能和工作效率差加在适应在家中工作的用户的用户体验方面较差。
 
 由您的用户访问的云应用提供传统上通过公司网络提供的一些保护。 如果你已在本文中完成这一步，你已为 Microsoft 365 服务和数据实施了一组完善的云安全控制。 使用这些控制措施后，您可以准备将远程用户的流量直接路由到 Office 365。 如果仍需要 VPN 链接访问其他应用程序，可以通过实施拆分隧道来大大提高性能和用户体验。 在您的组织中实现协议后，可通过协调好的网络团队在一天内完成此工作。
 

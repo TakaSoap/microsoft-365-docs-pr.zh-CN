@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何确定仿冒邮件的原因以及在将来阻止更多的网络钓鱼邮件的原因。
-ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033646"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081204"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>优化 Office 365 中的反网络钓鱼保护
 
@@ -45,7 +45,7 @@ ms.locfileid: "43033646"
 
 您可以检查网络钓鱼邮件的标头，以查看是否有任何可以执行的操作，以防止更多的网络钓鱼邮件进入。 换句话说，检查邮件头可以帮助您确定组织中负责允许网络钓鱼邮件的任何设置。
 
-具体来说，应检查邮件头中的**X-Forefront-反垃圾邮件报告**标头字段，以了解垃圾邮件筛选判定（SFV）值中跳过的垃圾邮件或网络钓鱼筛选的指示。 跳过筛选的邮件将具有一个条目`SCL:-1`，这意味着您的设置允许此邮件通过覆盖由该服务确定的垃圾邮件或网络钓鱼 verdicts。 有关如何获取邮件头以及所有可用的反垃圾邮件和反网络钓鱼邮件头的完整列表的详细信息，请参阅[反垃圾邮件邮件头](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-message-headers)。
+具体来说，应检查邮件头中的**X-Forefront-反垃圾邮件报告**标头字段，以了解垃圾邮件筛选判定（SFV）值中跳过的垃圾邮件或网络钓鱼筛选的指示。 跳过筛选的邮件将具有一个条目`SCL:-1`，这意味着您的设置允许此邮件通过覆盖由该服务确定的垃圾邮件或网络钓鱼 verdicts。 有关如何获取邮件头以及所有可用反垃圾邮件和反网络钓鱼邮件头的完整列表的详细信息，请参阅[Office 365 中的反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
 ## <a name="best-practices-to-stay-protected"></a>保持受保护状态的最佳做法
 
@@ -61,7 +61,7 @@ ms.locfileid: "43033646"
 
   - 验证您的 SPF 记录是否标识了您的域中的发件人的_所有_电子邮件源（不要忘记第三方服务！）。
 
-  - 使用硬故障（\-）以确保配置为这样做的电子邮件系统拒绝未经授权的发件人。 您可以使用[欺骗智能](https://docs.microsoft.com/office365/securitycompliance/learn-about-spoof-intelligence)来帮助标识使用您的域的发件人，以便您可以在 SPF 记录中包括授权的第三方发件人。
+  - 使用硬故障（\-）以确保配置为这样做的电子邮件系统拒绝未经授权的发件人。 您可以使用[欺骗智能](learn-about-spoof-intelligence.md)来帮助标识使用您的域的发件人，以便您可以在 SPF 记录中包括授权的第三方发件人。
 
   有关配置说明，请参阅：
   
@@ -71,8 +71,8 @@ ms.locfileid: "43033646"
 
   - [使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)
 
-- 如果可能，我们建议您将您的域的电子邮件直接传递到 Office 365。 换言之，将您的 Office 365 域的 MX 记录指向 Office 365。 Exchange Online Protection （EOP）能够在将其邮件直接传递到 Office 365 时为你的云用户提供最佳保护。 如果您必须在 EOP 前使用第三方电子邮件清洁系统，请确保已按照[此处](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)的指导进行。
+- 如果可能，我们建议您将您的域的电子邮件直接传递到 Office 365。 换言之，将您的 Office 365 域的 MX 记录指向 Office 365。 Exchange Online Protection （EOP）能够在将其邮件直接传递到 Office 365 时为你的云用户提供最佳保护。 如果必须在 EOP 前面使用第三方电子邮件清洁系统，请对连接器使用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-- 多重因素身份验证（MFA）是防止受损帐户的一种非常好的方法。 强烈考虑为所有用户启用 MFA。 对于分阶段的方法，先在为每个人启用 MFA 之前为最敏感的用户（管理员、高级管理人员等）启用 MFA。 有关说明，请参阅[设置多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+- 多重因素身份验证（MFA）是防止受损帐户的一种非常好的方法。 强烈考虑为所有用户启用 MFA。 对于分阶段的方法，先在为每个人启用 MFA 之前为最敏感的用户（管理员、高级管理人员等）启用 MFA。 有关说明，请参阅[设置多因素身份验证](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
 - 将规则转发给外部收件人通常由攻击者用来提取数据。 使用 "审阅[Microsoft 安全分数](../mtp/microsoft-secure-score.md)中的**邮箱转发规则**" 信息查找甚至阻止外部收件人的转发规则。 有关详细信息，请参阅[通过安全分数缓解客户端外部转发规则](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 本主题介绍了如何设置 Microsoft Exchange Online Protection (EOP)。 如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。 若要详细了解如何配置连接器，请参阅Configure mail flow using connectors in Office 365。
-ms.openlocfilehash: 5a28bc606b22b044515e737bf1ddf8250452f250
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895139"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081228"
 ---
 # <a name="set-up-your-eop-service"></a>设置 EOP 服务
 
@@ -62,8 +62,7 @@ ms.locfileid: "42895139"
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步骤 4：允许入站端口 25 SMTP 访问
 
-配置连接器后，请等待 72 小时，允许准备 DNS 记录更新。在此之后，限制防火墙或邮件服务器上的入站端口-25 SMTP 通信，以仅接受来自 EOP 数据中心的邮件，特别是来自 [Exchange Online Protection IP 地址](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges
-)中列出的 IP 地址的邮件。此操作将通过限制可以接收的入站邮件范围，保护内部部署环境。此外，如果邮件服务器上的设置控制了允许为邮件中继连接的 IP 地址，也要更新这些设置。
+配置连接器后，请等待 72 小时，允许准备 DNS 记录更新。在此之后，限制防火墙或邮件服务器上的入站端口-25 SMTP 通信，以仅接受来自 EOP 数据中心的邮件，特别是来自 [Exchange Online Protection IP 地址](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)中列出的 IP 地址的邮件。此操作将通过限制可以接收的入站邮件范围，保护内部部署环境。此外，如果邮件服务器上的设置控制了允许为邮件中继连接的 IP 地址，也要更新这些设置。
 
 > [!TIP]
 > 将 SMTP 服务器上的设置配置 60 秒的连接时间。 在大多数情况下，此设置是可接受的，例如，在使用大型附件发送邮件时，会发生一定的延迟。

@@ -16,14 +16,14 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 获取与 Microsoft 365 云服务和应用程序的安全信息和事件管理（SIEM）服务器集成的概述
-ms.openlocfilehash: d5adf0a72ac78475cb47f06732375ce01c0d72be
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a4ef144d02ebf0481481861c3dfa60a43b4f3ace
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082191"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081216"
 ---
-#  <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>与 Microsoft 365 服务和应用程序的安全信息和事件管理（SIEM）服务器集成
+# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>与 Microsoft 365 服务和应用程序的安全信息和事件管理（SIEM）服务器集成
 
 ## <a name="summary"></a>总结
 
@@ -36,31 +36,33 @@ ms.locfileid: "42082191"
 
 您是否需要 SIEM 服务器取决于多个因素，例如组织的安全要求和数据所在的位置。 Microsoft 365 包括各种安全功能，这些功能可满足许多组织的安全需要，而无需其他服务器（如 SIEM 服务器）。 某些组织具有需要使用 SIEM 服务器的特殊情况。 下面是一些示例：
 
-- *Fabrikam*在本地有一些内容和应用程序，而有些在云中（它们具有混合云部署）。 若要在其所有内容和应用程序中获取安全报告，Fabrikam 已实现 SIEM 服务器。 
+- *Fabrikam*在本地有一些内容和应用程序，而有些在云中（它们具有混合云部署）。 若要在其所有内容和应用程序中获取安全报告，Fabrikam 已实现 SIEM 服务器。
 
 - *Contoso*是一种具有特别严格的安全要求的金融服务组织。 他们已将 SIEM 服务器添加到其环境中，以充分利用他们所需的额外安全保护。
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM server 与 Microsoft 365 的集成
 
-SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数据。 下表列出了几个 Microsoft 365 服务和应用程序，以及 SIEM 服务器输入和资源，以了解详细信息。 
+SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数据。 下表列出了几个 Microsoft 365 服务和应用程序，以及 SIEM 服务器输入和资源，以了解详细信息。
 
-| Microsoft 365 服务或应用程序 | SIEM 服务器输入/方法 | 了解详细信息的资源 |
-| --- | --- | --- |
-| [Office 365 高级威胁防护](office-365-atp.md)  | 审核日志 | [SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md) |
-| [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/) | Azure 中托管的 HTTPS 终结点 <br/>REST API| [将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
-| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | 日志集成 | [SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem) |
+||||
+|---|---|---|
+|**Microsoft 365 服务或应用程序**|**SIEM 服务器输入/方法**|**了解详细信息的资源**|
+|[Office 365 高级威胁防护](office-365-atp.md)|审核日志|[SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/)|Azure 中托管的 HTTPS 终结点 <br/>REST API|[将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|日志集成|[SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem)|
+|
 
 > [!TIP]
 > 请看一下[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)。 Azure Sentinel 附带有 Microsoft 解决方案连接器。 这些连接器可用于 "开箱即用" 并提供实时集成。 您可以将 Azure Sentinel 与 Microsoft 威胁防护解决方案和 Microsoft 365 服务（包括 Office 365、Azure AD、Azure ATP、Microsoft 云应用安全性等）结合使用。
 
 ### <a name="audit-logging-must-be-turned-on"></a>必须打开审核日志记录
 
-在配置 SIEM server 集成之前，请确保已启用审核日志记录。 
+在配置 SIEM server 集成之前，请确保已启用审核日志记录。
 
-- 对于 SharePoint Online、OneDrive for business 和 Azure Active Directory，[审核日志记录在安全 & 合规性中心中打开](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)。
+- 对于 SharePoint Online、OneDrive for business 和 Azure Active Directory，[审核日志记录在安全 & 合规性中心中打开](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-- 对于 Exchange Online，[审核日志记录是使用 Windows PowerShell 打开](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing)的。
- 
+- 有关 Exchange Online，请参阅[管理邮箱审核](../../compliance/enable-mailbox-auditing.md)。
+
 ## <a name="more-resources"></a>更多资源
 
 [在 Azure 安全中心集成安全解决方案](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则（传输规则）识别通过 Office 365 组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 42b55893a9884b547a0d2d36e901169153d290d7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599019"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081420"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则（传输规则）
 
@@ -122,10 +122,10 @@ All messages that flow through your organization are evaluated against the enabl
 
 - 在创建或修改邮件流规则后，最长可能需要30分钟才能将新的或更新的规则应用于邮件。
 
-## <a name="for-more-information"></a>更多详细信息
+## <a name="for-more-information"></a>有关详细信息
 
 [使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
-[Office 365 中的电子邮件加密](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
+[Office 365 中的电子邮件加密](../../compliance/email-encryption.md)
 
 [日记、传输和收件箱规则限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

@@ -16,16 +16,16 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。
-ms.openlocfilehash: e788310ae8fd3c0da7f1a39fbba2dc0d6e369d30
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3800134855d42870992105e66313100ee0d77cd5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893878"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081468"
 ---
 # <a name="configure-outbound-spam-filtering-in-office-365"></a>在 Office 365 中配置出站垃圾邮件筛选
 
-如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，通过 EOP 发送的出站电子邮件将自动检查垃圾邮件和异常发送活动。
+如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则会自动检查通过 EOP 发送的出站电子邮件是否包含垃圾邮件和异常发送活动。
 
 您组织中的用户的出站垃圾邮件通常表示已损坏的帐户。 可疑的出站邮件被标记为垃圾邮件（无论垃圾邮件可信度或 SCL），并通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)进行路由，以帮助保护服务的声誉（即，将 Office 365 源电子邮件服务器从 IP 阻止列表中去除）。 系统会自动通知管理员可疑的出站电子邮件活动，并通过[通知策略](../../compliance/alert-policies.md)阻止用户。
 
@@ -73,11 +73,11 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 你可以在上<https://protection.office.com/>打开安全 & 合规性中心。 若要直接转到**反垃圾邮件设置**页，请<https://protection.office.com/antispam>使用。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到**反垃圾邮件设置**页，请<https://protection.office.com/antispam>使用。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 您需要先分配权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[Office 365 安全 & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅 [Office 365 安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 有关出站垃圾邮件策略的建议设置，请参阅[EOP 出站垃圾邮件筛选器策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。
 
@@ -113,7 +113,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请![单击 "](../../media/scc-remove-icon.png)删除" 按钮。
 
-     e. 完成后，单击“保存”****。
+     e. 完成时，请单击“保存”****。
 
      若要禁用此设置，请清除该复选框。
 
@@ -136,7 +136,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请![单击 "](../../media/scc-remove-icon.png)删除" 按钮。
 
-     e. 完成后，单击“保存”****。
+     e. 完成时，请单击“保存”****。
 
      若要禁用此设置，请清除该复选框。
 
@@ -179,7 +179,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
     - **除非**：若要为规则添加例外，请单击 "**添加条件**" 三次，以查看所有可用的异常。 设置和行为与条件完全一样。
 
-7. 完成后，单击“保存”****。
+7. 完成时，请单击“保存”****。
 
 ## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>使用安全 & 合规性中心查看出站垃圾邮件策略
 
@@ -489,10 +489,9 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule)。
 
-
 ## <a name="for-more-information"></a>有关详细信息
 
-[发送垃圾电子邮件后，从受限用户门户删除用户](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+[在 Office 365 中从“受限的用户”门户中删除被阻止的用户](removing-user-from-restricted-users-portal-after-spam.md)
 
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)
 

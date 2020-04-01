@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 在 "反垃圾邮件设置&amp; " 页上的 "安全合规性中心" 中使用欺骗智能，以查看所有哄骗的发件人是组织中的域，还是哄骗外部域。 欺骗智能作为 Office 365 企业版 E5 的一部分或作为高级威胁防护和 Exchange Online Protection 的一部分单独提供。
-ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a58f98852f321791615c5f0064b69e8510aadbe5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082946"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081456"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>详细了解防欺骗智能
 
@@ -101,7 +101,7 @@ ms.locfileid: "42082946"
 
 6. 选择 "**保存**" 以保存所做的更改。
 
-如果您使用的是 Office 365 企业版 E5 订阅或单独购买了高级威胁防护作为加载项，则还可以管理通过[欺骗性智能洞察力](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight)欺骗您的域的发件人。
+如果您使用的是 Office 365 企业版 E5 订阅或单独购买了高级威胁防护作为加载项，则还可以管理通过[欺骗性智能洞察力](walkthrough-spoof-intelligence-insight.md)欺骗您的域的发件人。
 
 ## <a name="configuring-the-anti-spoofing-policy"></a>配置反欺骗策略
 <a name="Managespooflist"> </a>
@@ -137,7 +137,7 @@ Office 365 包括始终运行的默认反欺骗保护。 此默认保护在安�
 
 请这有关哄骗和网络钓鱼防护的信息。 下面是检查发件人欺骗你的域并帮助防止其损坏组织的相关方法：
 
-- 在例程中检查 Exchange Online Protection 欺骗邮件报告。 您可以经常使用此报告查看和帮助管理欺骗性发件人。 有关详细信息，请参阅[使用 Office 365 中的邮件保护报告欺骗邮件报告查看有关恶意软件、垃圾邮件和规则检测的数据](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。 ****
+- 在例程中检查 Exchange Online Protection 欺骗邮件报告。 您可以经常使用此报告查看和帮助管理欺骗性发件人。 有关详细信息，请参阅[使用 Office 365 中的邮件保护报告欺骗邮件报告查看有关恶意软件、垃圾邮件和规则检测的数据](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。 **Spoof mail report**
 
 对于更高级的 Office 365 管理员，您还可以完成以下检查：
 

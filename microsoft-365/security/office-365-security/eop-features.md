@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: f8a9165cd377549d355a72da5428b777e7c1a505
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1bab584c62114c74c0eb4d9937acef4f17b89073
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032884"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081444"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -91,4 +91,4 @@ ms.locfileid: "43032884"
 |**其他功能**||
 |服务器的地理位置冗余全局网络|EOP 在数据中心的全球网络中运行，旨在提供最好的可用性。有关详细信息，请参阅 [Exchange Online Protection 概述](exchange-online-protection-overview.md)中的"EOP 数据中心"一节。  |
 |内部部署服务器无法接受邮件时的邮件队列|延期的邮件在队列中保留一天。 重试发送邮件的依据为从收件人的邮件系统返回的错误。 邮件一般每 5 分钟重试发送一次。 有关详细信息，请参阅 [EOP 排队、延迟以及退回邮件的常见问题](eop-queued-deferred-and-bounced-messages-faq.md)。|
-|Office 365 邮件加密可作为附加服务使用|有关详细信息，请参阅 [Office 365 中的加密](https://docs.microsoft.com/office365/securitycompliance/encryption)。|
+|Office 365 邮件加密可作为附加服务使用|有关详细信息，请参阅 [Office 365 中的加密](../../compliance/encryption.md)。|

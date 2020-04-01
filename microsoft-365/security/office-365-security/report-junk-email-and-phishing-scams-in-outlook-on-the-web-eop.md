@@ -16,16 +16,16 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Office 365 具有 Exchange Online 邮箱的用户可以使用 web 上的 Outlook （Outlook Web App）将垃圾邮件、非垃圾邮件和网络钓鱼邮件提交给 Microsoft 进行分析。
-ms.openlocfilehash: c6aba9a701b23be4bbbe508825a55c6438461928
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: b58e3ae5be9bf2a473b655287ad9bb1cb8ef2c78
+ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033675"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43075616"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-office-365"></a>在 Office 365 中的 Outlook 网页上报告垃圾邮件和网络钓鱼电子邮件
 
-如果你是使用 Exchange Online 邮箱的 Office 365 客户，则可以使用 web 上的 Outlook （以前称为 Outlook Web App）中的内置报告选项来提交误报（好的电子邮件被标记为垃圾邮件）、漏报（允许使用错误的电子邮件）和到 Exchange Online Protection （EOP）的网络钓鱼邮件。
+如果您是使用 Exchange Online 邮箱的 Office 365 客户，则可以使用 web 上的 Outlook （以前称为 Outlook Web App）中的内置报告选项来提交误报（好的电子邮件被标记为垃圾邮件）、漏报（允许错误的电子邮件）和网络钓鱼邮件到 Exchange Online Protection （EOP）。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
@@ -73,13 +73,19 @@ ms.locfileid: "43033675"
 
 ## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>在 web 上的 Outlook 中禁用或启用垃圾电子邮件报告
 
-默认情况下，用户可以在 web 上的 Outlook 中将垃圾邮件误报、漏报和网络钓鱼邮件报告给 Microsoft 进行分析。 管理员可以使用 Exchange Online 中的 web 邮箱策略上的 Outlook 来禁用或启用此功能，但只能在 Exchange Online PowerShell 中使用。
+默认情况下，用户可以在 web 上的 Outlook 中将垃圾邮件误报、漏报和网络钓鱼邮件报告给 Microsoft 进行分析。 管理员可以在 Exchange Online PowerShell 中对 web 邮箱策略配置 Outlook，以防止用户向 Microsoft 报告垃圾邮件误报和垃圾邮件漏报。 您无法禁用用户将网络钓鱼邮件报告给 Microsoft 的功能。
+
+### <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 - 必须先分配有权限，然后才能执行这些过程。 特别是，您需要 Exchange Online 中的**收件人策略**或**邮件收件人**角色，默认情况下，这些角色分配给**组织管理**角色组和**收件人管理**角色组。 有关 Exchange Online 中的角色组的详细信息，请参阅[Modify role groups In Exchange online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)。
 
 - 每个组织都有一个名为 "Set-owamailboxpolicy" 的默认策略-默认值，但您可以创建自定义策略。 在默认策略之前，自定义策略将应用于作用域内的用户。 有关 Outlook 网页版邮箱策略的详细信息，请参阅[Exchange Online 中的 "outlook on web 邮箱策略"](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)。
+
+- 禁用垃圾邮件报告不会删除在 web 上的 Outlook 中将邮件标记为垃圾邮件或非垃圾邮件的功能。 在 "垃圾邮件" 文件夹中选择一封邮件，并单击 "**非垃圾** \>邮件" 并不是**垃圾**邮件仍将邮件移回收件箱。 选择任何其他电子邮件文件夹中的邮件并单击 "**垃圾** \> **邮件" 仍会**将邮件移至 "垃圾邮件" 文件夹。 不再可用的选项是将邮件报告给 Microsoft 的选项。
+
+### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>使用 Exchange Online PowerShell 在 web 上的 Outlook 中禁用或启用垃圾电子邮件报告
 
 1. 若要在 web 邮箱策略和 "垃圾邮件报告" 状态中查找您的现有 Outlook，请运行以下命令：
 
@@ -99,7 +105,7 @@ ms.locfileid: "43033675"
    Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
    ```
 
-   本示例在名为 Contoso 经理的自定义策略中启用了垃圾邮件报告。
+   本示例在名为 Contoso 管理员的自定义策略中启用垃圾邮件报告。
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
@@ -117,4 +123,13 @@ ms.locfileid: "43033675"
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- 在 Outlook 网页版中打开受影响用户的邮箱，并验证用于报告垃圾邮件、非垃圾邮件和网络钓鱼邮件的选项是否可用。 请注意，用户仍可以将邮件标记为垃圾邮件、网络钓鱼邮件和非垃圾邮件，但用户无法将其报告给 Microsoft。
+- 在 Outlook 网页上打开受影响用户的邮箱，在 "收件箱" 中选择一封邮件，单击 "**垃圾** \> **邮件"，并验证**提示将邮件报告给 Microsoft 是不显示。<sup>\*</sup>
+
+- 在 Outlook 网页上打开一个受影响的用户的邮箱，在 "垃圾邮件" 文件夹中选择一封邮件，单击 "**垃圾** \> **邮件"，并验证**提示将该邮件报告给 Microsoft 是不显示。<sup>\*</sup>
+
+<sup>\*</sup>用户可以在仍报告邮件的同时隐藏报告邮件的提示。 若要在 Outlook 网页网络中检查此设置，请执行以下操作：
+
+1. 单击 **"设置** ![outlook on the web 设置](../../media/owa-settings-icon.png) \> " 图标**查看所有 Outlook 设置** \> **垃圾邮件**。
+2. 在 "**报告**" 部分，验证值： "**发送报告前询问我**"。
+
+   ![Outlook 网页上的 Outlook 垃圾邮件报告设置](../../media/owa-junk-email-reporting-options.png)
