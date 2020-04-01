@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0cd96d9b7d769f75d5b7f26bb364cf517844e29d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bfcad9829c32a7a4f91e4d7dee7dec922059cd18
+ms.sourcegitcommit: 397b22cea138cadef026128d878650f8f609a329
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602519"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068570"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部（DoD）在影响级别2、4和5的临时授权
 
@@ -35,8 +35,8 @@ DoD 云服务支持定义策略、安全控制和 SRG 中的其他要求，这�
 
 Microsoft 的政府云服务可满足美国国防部的苛刻要求，从影响级别2到5，使美国国防部能够从 Microsoft 云的成本节约和严格安全中获益。 通过部署受保护的服务（包括 Azure 政府、Office 365 美国政府版和 Dynamics 365 政府），防御机构可以使用一系列符合标准的服务。
 
-- 了解 Microsoft 云上 DoD DISA L2、L4 和 L5 的优势：[下载美国国防部 DISA Backgrounder](https://aka.ms/disa-backgrounder)
-- 了解如何使用我们的 Azure 安全性和合规性蓝图加快 DoD DISA L2、L4 和 L5 部署：[下载 Azure DoD 第5级安全控制实施](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
+- 了解 Microsoft 云上 DoD DISA L2 （L4）的优势：下载美国[国防部 DISA Backgrounder](https://aka.ms/disa-backgrounder)
+- 了解如何使用我们的[Azure Dod 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)加快 DoD DISA L2 和 L4 部署
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>DoD 影响级别5临时授权
 
@@ -83,17 +83,17 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>快速跟踪在 Azure 上部署 DoD 解决方案
 
-开始使用在政府中利用云的优势与防御蓝图的 Azure 安全性和合规性部门的优势。 此蓝图提供的工具和指南可帮助你立即开始构建符合 DoD 的解决方案。 [开始使用 Azure DoD 蓝图](https://aka.ms/Azure-Blueprint-DoD-NIST)。
+开始使用在政府中利用云的优势与防御蓝图的 Azure 安全性和合规性部门的优势。 此蓝图提供的工具和指南可帮助你立即开始构建符合 DoD 的解决方案。 [开始使用 Azure DoD 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
-**能否在我自己组织的认证过程中使用 Microsoft 的合规性认证？**
+**我可以在组织的认证过程中使用 Microsoft 合规性吗？**
 
-能。 所有 DoD 机构都可能依赖 Microsoft 云服务的认证，作为需要 DoD 授权的任何计划或计划的基础。 （这也适用于支持 DoD 并需要云服务的其他组织。）但是，您需要在这些服务之外为自己的组件实现自己的授权。
+是。 所有 DoD 机构都可能依赖 Microsoft 云服务的认证，作为需要 DoD 授权的任何计划或计划的基础。 （这也适用于支持 DoD 并需要云服务的其他组织。）但是，您需要在这些服务之外为自己的组件实现自己的授权。
 
 **Microsoft DoD 认证是否符合 NIST 800 –171要求？**
 
-在10月2016，美国国防部（DoD） promulgated 最终规则实施防御联邦收购条例（DFARS）子句，这些条款适用于处理、存储或传输 "受防护的防御信息" 的所有 DoD 承包商。其信息系统。 该规则指出，此类系统必须满足 NIST SP 800 –171中规定的安全要求，[保护 nonfederal 信息系统和组织中的受控制的未分类信息](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)，或由 DoD 合同专员批准的 "备用但有效的安全措施"。 此外，DoD 承包商使用外部云服务提供商来处理、存储或传输涵盖的防御信息，此类提供程序必须满足与 FedRAMP 中等比较基准等效的安全要求。
+在10月2016，美国国防部（DoD） promulgated 最终规则实施防御联邦获取法规补充（DFARS）条款，这些条款适用于处理、存储或传输 "受防护信息" 的所有 DoD 承包商。 该规则指出，此类系统必须满足 NIST SP 800 –171中规定的安全要求，[保护 nonfederal 信息系统和组织中的受控制的未分类信息](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)，或由 DoD 合同专员批准的 "备用但有效的安全措施"。 此外，DoD 承包商使用外部云服务提供商来处理、存储或传输涵盖的防御信息，此类提供程序必须满足与 FedRAMP 中等比较基准等效的安全要求。
 
 以下 Microsoft 云服务已收到 FedRAMP 中级授权： Azure、Azure 政府、Dynamics 365 美国政府版、Office 365 MT、Office 365 美国政府和 Office 365 美国政府防御。
 

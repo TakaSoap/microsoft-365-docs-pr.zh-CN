@@ -1,10 +1,10 @@
 ---
-title: 支持通过 IPv6 发送的匿名入站电子邮件
+title: 添加对通过 IPv6 的匿名入站电子邮件的支持
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+manager: chrisda
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,36 +14,48 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
-description: 了解如何为 Exchange Online Protection 和 Exchange Online 配置来自 IPv6 源的匿名邮件支持。
-ms.openlocfilehash: 1cd38798aa644b79c8f1d6362edd17a515b5c98d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 管理员可以了解如何在 Exchange Online 和 Exchange Online Protection 中配置来自 IPv6 源的匿名入站电子邮件支持。
+ms.openlocfilehash: 67e839249d41381be22bbccf6b09d1616c387c66
+ms.sourcegitcommit: 748bc3484b7ccbd65b558f495b6fa42196c3c571
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598229"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43083637"
 ---
-# <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>支持通过 IPv6 发送的匿名入站电子邮件
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a>在 Office 365 中添加对通过 IPv6 的匿名入站电子邮件的支持
 
-Exchange Online Protection (EOP) 和 Exchange Online 支持通过 IPv6 通信，从并非通过传输层安全 (TLS) 发送邮件的发件人接收匿名入站电子邮件。 您可以通过在[https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home)microsoft 支持中打开 microsoft 365 管理中心，单击 "**支持**"，然后单击 "**新建服务请求**"，选择通过以下方式在 IPv6 上接收邮件。 如果您未选择加入 IPv6，将继续通过 IPv4 接收邮件。
-  
-通过 IPv6 将邮件传输到服务的发件人必须符合以下两个要求：
-  
-1. 发件人的 IPv6 地址必须具有有效的 PTR 记录（发件人 IPv6 地址的[反向 DNS 记录](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)）。 
-    
-2. 发件人必须通过 SPF 验证（在 [RFC 7208](https://tools.ietf.org/html/rfc7208) 中定义）或 [DKIM 验证](https://dkim.org/)（在 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) 中定义）。
-    
-无论您在选择 IPv6 之前进行了怎样的配置，都必须满足这些要求。 如果满足这两个要求，邮件将通过服务提供的正常电子邮件筛选。 如果不满足其中的一个或多个，将使用以下450响应之一拒绝邮件：
-  
--  `450 4.7.25 Service unavailable, sending IPv6 address [2a01:111:f200:2004::240] must have reverse DNS record.`
-    
--  `450 4.7.26 Service unavailable, message sent over IPv6 [2a01:111:f200:2004::240] must pass either SPF or DKIM validation.`
-    
-如果您未选择通过 IPv6 接收邮件，且发件人通过手动连接到邮件服务器，尝试强制通过 IPv6 发送邮件，邮件将被拒绝并返回如下所示的 550 响应：
-  
- `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
-  
-## <a name="for-more-information"></a>更多详细信息
+Office 365 具有 Exchange Online 邮箱和独立 Exchange Online Protection （EOP）的组织（不含 Exchange Online 邮箱的组织支持通过 IPv6 的匿名入站电子邮件）。 源 IPv6 电子邮件服务器必须满足以下两项要求：
+
+- 源 IPv6 地址必须具有有效的反向 DNS 查找（PTR）记录，允许目标从 IPv6 地址中查找域名。
+
+- 发件人必须通过 SPF 验证（在 [RFC 7208](https://tools.ietf.org/html/rfc7208) 中定义）或 [DKIM 验证](https://dkim.org/)（在 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) 中定义）。
+
+在您的组织可以通过 IPv6 接收匿名入站电子邮件之前，管理员需要联系 Microsoft 支持部门并要求提供以下信息：
+
+1. 打开 "Microsoft 365 管理中心" <https://admin.microsoft.com/adminportal/home> ，然后单击 "**帮助**" （？）。
+
+2. 在显示的 "**需要帮助"** 中，在搜索框中键入一些描述性内容（例如，"请求匿名入站 IPv6 电子邮件"），然后按 enter。
+
+3. 在页面底部，单击 "**联系人支持**"。
+
+4. 在出现的**联系人支持**页面中，填写并验证信息（必要时向下滚动），然后单击 "**联系我**"。
+
+在组织中启用匿名入站 IPv6 邮件支持后，邮件将通过服务提供的常规邮件筛选功能。
+
+## <a name="troubleshooting"></a>疑难解答
+
+- 如果源电子邮件服务器没有 IPv6 反向 DNS 查找记录，则邮件将被拒绝，并出现以下错误：
+
+  > 450 4.7.25 服务不可用，发送 IPv6 地址 [2a01：111： f200：2004：： 240] 必须有反向 DNS 记录。
+
+- 如果发件人未通过 SPF 或 DKIM 验证，则邮件将被拒绝，并出现以下错误：
+
+  > 450 4.7.26 服务不可用，通过 IPv6 发送的邮件 [2a01：111： f200：2004：： 240] 必须通过 SPF 或 DKIM 验证。
+
+- 如果您在选择加入之前尝试接收匿名 IPv6 邮件，则邮件将被拒绝，并显示以下错误：
+
+  > 550 5.2.1 服务不可用，[contoso.com] 不接受通过 IPv6 的电子邮件。
+
+## <a name="for-more-information"></a>有关详细信息
 
 [支持 DKIM 签名邮件验证](support-for-validation-of-dkim-signed-messages.md)
-  
-
