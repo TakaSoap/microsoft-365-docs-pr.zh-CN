@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '通过将自定义磁贴添加到应用启动器中，创建指向您的电子邮件、文档、应用程序、SharePoint 网站、外部网站和其他资源的快速链接。 '
-ms.openlocfilehash: 65c8da7aa0cdb68f4bf32a52b21140413a38a69a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e52bad5cdd1809e8aa0d97c681b69daa5143d3fd
+ms.sourcegitcommit: 4b73f070747a66874c03fdf670ffdf16f736585a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361977"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43103071"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
@@ -69,7 +69,7 @@ ms.locfileid: "42361977"
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. 在管理中心中，转到 "**设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">组织配置文件</a>" 页。
+1. 在管理中心中，转到 "**设置** > **Settings** > " "设置" "<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">组织配置文件</a>" 选项卡。
     
 2. 在 "**组织配置文件**" 页上的 "为**您的组织添加自定义磁贴**" 旁边，选择 "**编辑**"。
 

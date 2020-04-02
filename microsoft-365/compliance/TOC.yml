@@ -18,7 +18,7 @@
       href: plan-for-security-and-compliance.md
 - name: 管理内幕风险
   items:
-    - name: 内幕风险管理
+    - name: 内部风险管理
       items:
         - name: 了解内幕风险管理
           href: insider-risk-management.md
@@ -36,7 +36,7 @@
           href: insider-risk-management-users.md
         - name: 创建内幕风险通知模板
           href: insider-risk-management-notices.md
-    - name: 沟通合规性
+    - name: 通信合规性
       items:
         - name: 了解通信合规性
           href: communication-compliance.md
@@ -495,14 +495,14 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: 审阅事例数据
           items:
+            - name: 使用审阅集仪表板（预览）
+              href: advanced-ediscovery-dashboard.md
             - name: 查看审阅集中的文档
               href: view-documents-in-review-set.md
             - name: 查询审阅集中的数据
               href: review-set-search.md
             - name: 标记审阅集中的文档
               href: tagging-documents.md
-            - name: 使用审阅集仪表板（预览）
-              href: advanced-ediscovery-dashboard.md
         - name: 分析事例数据
           href: analyzing-data-in-review-set.md
           items:

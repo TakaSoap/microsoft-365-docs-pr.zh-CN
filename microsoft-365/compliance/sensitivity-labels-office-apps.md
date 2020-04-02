@@ -15,38 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 2b77d273cdc589409506dc709669536fcea6c006
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 595381984390321ed810af61f6234428f31551f3
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030115"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106088"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
+
+>*[适用于安全 & 合规性的 Microsoft 365 许可指南](https://aka.ms/ComplianceSD)。*
 
 当您从 Microsoft 365 合规性中心或等效标签中心[发布](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)灵敏度标签时，它们将开始显示在 Office 应用程序中，以便用户可以在创建或编辑数据时对其进行分类和保护。
 
 使用本文中的信息可帮助您在 Office 应用程序中成功管理敏感度标签。 例如，确定需要支持内置标签的应用程序的最低版本，并了解与其他应用程序和服务的 Azure 信息保护统一标签客户端和兼容性的交互。
-
-## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>敏感度标签的订阅和许可要求
-
-用户必须至少已分配以下许可证之一：
-
-- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)或更高版本
-
-- [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software)或更高版本
-
-- [Azure 信息保护高级 P1](https://azure.microsoft.com/pricing/details/information-protection/)或更高版本
-
-Office 内置标签客户端支持具有 Office 订阅版本的敏感度标签。 此标签客户端不支持独立版本的 Office，如 Office 2016 或 Office 2019。 若要在 Windows 计算机上将敏感度标签与这些版本的 Office 配合使用，请安装 Azure 信息保护统一标记客户端。
-
-若要使用自动或建议的敏感度标记，用户需要以下许可证之一：
-
-- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)或更高版本
-
-- [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software)或更高版本
-
-- [Azure 信息保护高级版 P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支持应用程序中的敏感度标签功能
 

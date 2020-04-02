@@ -16,25 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 将非 Office 365 数据导入到高级电子数据展示事例中的审阅集。
-ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 816519fcaa8dc5172dbb5c369a3ec191585d3647
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072201"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097225"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>将非 Office 365 数据加载到审阅集
 
 并非所有需要在高级电子数据展示中进行分析的文档都位于 Office 365 中。 使用高级电子数据展示中的非 Office 365 数据导入功能，可以将不在 Office 365 中的文档上传到审阅集。 本文介绍如何将非 Office 365 文档转换为高级电子数据展示以进行分析。
 
->[!Note]
->高级电子数据展示需要针对你的组织的 Microsoft 365 或 Office 365 E5 订阅或具有高级合规性附加订阅的 E3 订阅。 如果你没有该计划，并且想要尝试高级电子数据展示，可以注册 Office 365 企业版 E5 的试用版。
-
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 若要使用本文中介绍的 "上载非 Office 365" 功能，您需要具备以下条件：
 
-- 要将非 Office 365 内容与之关联的所有保管人都必须分配有一个 E5 许可证，或具有高级合规性附加许可证的 E3 许可证。
+- 您要将非 Office 365 内容关联到的所有保管人必须分配有相应的许可证。 有关详细信息，请参阅[高级电子数据展示入门](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
 
 - 现有的高级电子数据展示事例。
 
@@ -61,7 +58,7 @@ ms.locfileid: "42072201"
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>将非 Office 365 内容上载到高级电子数据展示
 
-1. 作为电子数据展示管理器或电子数据展示管理员，打开高级电子数据展示，然后将非 Office 365 数据上载到的情况。  
+1. 作为电子数据展示管理器或电子数据展示管理员，打开高级电子数据展示，并转到将上传到非 Office 365 数据的情况。  
 
 2. 单击 "**查看集**"，然后选择要将非 Office 365 数据上传到的审阅集。  如果你没有评审集，可以创建一个。 
  

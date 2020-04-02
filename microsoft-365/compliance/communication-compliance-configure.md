@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029888"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100875"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>在 Microsoft 365 中配置通信合规性
 
@@ -34,11 +34,23 @@ ms.locfileid: "43029888"
 
 ## <a name="before-you-begin"></a>准备工作
 
-在开始进行通信合规性之前，应确认你的 Microsoft 365 订阅。 通信合规性策略中包含的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或者包含在 Office 365 企业版 E5 订阅中，或包含在 Microsoft365 E5 订阅。
+在开始进行通信合规性之前，应确认你的[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用通信合规性，您的组织必须具有以下订阅或加载项之一：
+
+- Microsoft 365 E5 订阅（付费或试用版）
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 内幕人士风险管理加载项
+- Microsoft 365 A5 订阅（付费或试用版）
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 内幕成员风险管理加载项
+- Office 365 企业版 E5 订阅（付费或试用版）
+- Office 365 企业版 E3 订阅 + Office 365 高级合规性附加
+
+必须为通信合规性策略中包含的用户分配上述许可证之一。
+
+>[!IMPORTANT]
+>Office 365 高级合规性不再作为独立订阅销售。 当当前订阅过期时，客户应转换为上述订阅之一，其中包含相同或更多的合规性功能。
 
 如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅中，或注册 Microsoft 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
-  
-完成以下步骤以设置和使用 Microsoft 365 组织中的通信合规性：
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤1（必需）：启用通信合规性的权限
 

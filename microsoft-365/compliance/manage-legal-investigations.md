@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中管理法律调查
+title: 在 Microsoft 365 中管理法律调查
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: 在 Office 365 的安全性 & 合规性中心中使用电子数据展示案例来管理组织的法律调查。 如果你拥有 E5 订阅，则可以使用高级电子数据展示的文本分析、机器学习和预测编码功能进一步分析事例数据。
-ms.openlocfilehash: f3d51fbd0df6d4bf4c88f5efef53a3c7f11e190c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 使用 Microsoft 365 合规性中心中的电子数据展示案例来管理您的组织的法律调查。 如果你拥有 E5 订阅，则可以使用高级电子数据展示的文本分析、机器学习和预测编码功能进一步分析事例数据。
+ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600529"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097188"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>在 Office 365 中管理法律调查
+# <a name="manage-legal-investigations-in-microsoft-365"></a>在 Microsoft 365 中管理法律调查
 
 组织有许多理由来响应与组织中的特定执行官或其他员工有关的法律案件。 这可能包括快速查找和保留电子邮件、文档、即时消息对话以及人员在日常工作任务中使用的其他内容位置中特定于调查的信息。 您可以使用安全与合规中心中的电子数据展示案例工具执行这些和许多其他类似活动。
   
@@ -52,9 +52,9 @@ ms.locfileid: "41600529"
 
 Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中现有的电子数据展示和分析功能之上。 这一新的解决方案称为*高级电子数据展示*，它提供了一个端到端工作流，用于保留、收集、查看、分析和导出对组织的内部和外部调查做出响应的内容。 它还允许法律团队管理整个法律封存通知工作流，以便与案例中所涉及的保管人进行通信。
 
-高级电子数据展示需要一个用于 Office 365 或 Microsoft 365 组织的 E5 订阅。 或者，使用 E3 许可证的用户需要高级合规性附加订阅，以便在高级电子数据展示案例中将其作为保管人进行管理。
+高级电子数据展示需要一个用于 Microsoft 365 或 Office 365 组织的 E5 订阅。 有关许可的详细信息，请参阅[高级电子数据展示入门](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
 
-以下是高级电子数据展示中的内置工作流的快速概述。 有关详细信息，请参阅 [Microsoft 365 中的高级电子数据展示解决方案概述](overview-ediscovery-20.md)。
+以下是高级电子数据展示中的内置工作流的快速概述。 有关详细信息，请参阅[探究高级电子数据展示工作流](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow)。
 
 - [创建入门案例](create-new-ediscovery-case.md)
 

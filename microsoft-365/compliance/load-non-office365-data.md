@@ -16,27 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4db0b40d485c4c1107bdcb0d49616cadb15b1915
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7d2f4fe685e17690b76124517468e0eceec8b414
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072145"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097215"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>将非 Office 365 数据加载到证据中
 
 并非所有可能需要在数据调查中进行分析的文档都位于 Office 365 中。 使用非 Office 365 内容导入功能，可以将不在 Office 365 中的文档上载到证据中，以便可以在数据调查中对其进行分析。
 
->[!Note]
->数据调查需要 Office 365 E3 和您的组织的高级合规性加载项或 E5 订阅。 如果你没有该计划，并且想要尝试高级电子数据展示，可以注册 Office 365 企业版 E5 的试用版。
-
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 如以下过程所述，使用 "上载非 Office 365" 功能需要具备以下条件：
 
-- 具有高级合规性外接程序或 E5 订阅的 Office 365 E3。
+- Microsoft 365 或 Office 365 E5 订阅。
 
-- 将上载其非 Office 365 内容的所有保管人必须具有具有高级合规性附加或 E5 许可证的 E3。
+- 将上载其非 Office 365 内容的所有感兴趣的人都必须具有相应的 E5 或 E5 附加许可证。
 
 - 现有电子数据展示事例。
 
@@ -48,7 +45,7 @@ ms.locfileid: "42072145"
 
 ## <a name="upload-non-office-365-content-in-to-a-data-investigation"></a>将非 Office 365 内容上传到数据调查
 
-1. 打开 * * * * 数据调查 * *，然后将非 Office 365 数据上传到的调查。  单击 "**证据**" 选项卡，然后选择要将非 Office 365 数据加载到的证据集。  如果尚未创建证据集，现在可以执行此操作。  最后，单击 "**管理证据**"，然后查看 "非 Office 365 数据" 部分中的 "**上载**"。
+1. 打开**数据调查**，并转到要将非 Office 365 数据上载到的调查。  单击 "**证据**" 选项卡，然后选择要将非 Office 365 数据加载到的证据集。  如果尚未创建证据集，现在可以执行此操作。  最后，单击 "**管理证据**"，然后查看 "非 Office 365 数据" 部分中的 "**上载**"。
 
 2. 单击 "**上载文件**" 按钮以启动 "非 Office 365 数据导入向导"。
 

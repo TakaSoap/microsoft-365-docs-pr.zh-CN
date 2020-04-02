@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 86a74051b4febbf469449a35cd14620f3e78932c
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288601"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100895"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -43,12 +43,16 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 
 打开预览体验设置，使其在第一次尝试即将推出的功能中。
 
-1. 在导航窗格中，选择 "**设置** > **预览功能**"。
+1. 在导航窗格中，选择 "**设置**"。
 
-2. 选择 **"打开预览功能"**。 
+2. 选择 " **Microsoft 威胁防护**"。
+
+
+3. 选择 "**预览功能** > **" "打开预览功能"**。 
 
 3. 选择“**保存**”。
 
 
 ## <a name="preview-features"></a>预览功能
 此部分将包含预览中的功能的列表，这些功能可供您尝试。 
+

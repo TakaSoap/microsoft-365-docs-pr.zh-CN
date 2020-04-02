@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留 Microsoft 365 中的内容的保留标签时，可以选择在保留期结束时触发处置评审。
-ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634970"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105659"
 ---
 # <a name="overview-of-disposition-reviews"></a>处置评审概述
+
+>*[适用于安全 & 合规性的 Microsoft 365 许可指南](https://aka.ms/ComplianceSD)。*
 
 当内容到达其保留期结束时，您可能需要查看内容以决定是否可以安全地删除（"已释放"），这有几个原因。 例如，您可能需要执行以下操作：
   
@@ -51,9 +53,6 @@ ms.locfileid: "42634970"
     
 - 审阅者可以查看挂起或已完成的处置，并将该列表导出为 .csv 文件。
 
-> [!NOTE]
-> 处置评审需要 Office 365 企业版 E5 订阅。
-  
 处置评审可以包含 Exchange 邮箱、SharePoint 网站、OneDrive 帐户和 Office 365 组中的内容。 在这些位置中等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。
   
 ![安全与合规中心中的处置页](../media/Retention-Dispositions-v2-page.png)

@@ -12,30 +12,32 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4b8bd0f8d540434410d9ebc2365789a669f455e1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634770"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097186"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内幕风险管理入门
 
-使用内幕风险管理策略确定危险的活动和管理工具，以对组织中的风险警报采取措施。 完成以下步骤以设置系统必备并配置内幕风险管理策略。
+使用内部风险管理策略确定风险的活动和管理工具，以便对组织中的风险警报执行操作。 完成以下步骤以设置系统必备并配置内幕风险管理策略。
 
 >[!IMPORTANT]
->Microsoft 365 内幕风险管理解决方案提供了租户级选项，可帮助客户在用户级别促进内部治理。 租户级别管理员可以设置权限，以便为组织成员提供对此解决方案的访问权限，并在 Microsoft 365 合规性中心内设置数据连接器，以支持用户级别标识，以支持可能的数据有风险的活动。 客户确认与与雇用相关的各个用户的行为、字符或性能相关的见解可由管理员进行计算，并可供组织中的其他人使用。
+>Microsoft 365 内幕风险管理解决方案提供了租户级选项，可帮助客户在用户级别促进内部治理。 租户级别管理员可以设置权限，以便为组织成员提供对此解决方案的访问权限，并在 Microsoft 365 合规性中心内设置数据连接器，以支持用户级别的可能有风险的活动的用户级别标识。 客户确认与与雇用相关的各个用户的行为、字符或性能相关的见解可由管理员进行计算，并可供组织中的其他人使用。
 
 有关内幕风险策略如何帮助您管理组织中的风险的详细信息，请参阅[Microsoft 365 中的内幕风险管理](insider-risk-management.md)。
 
 ## <a name="before-you-begin"></a>准备工作
 
-在开始使用 "内幕风险管理" 之前，应确认[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。 若要访问和使用内幕风险管理，您的组织必须具有以下订阅之一：
+在开始使用 "内幕风险管理" 之前，应确认你的[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用内幕风险管理，您的组织必须具有以下订阅或加载项之一：
 
 - Microsoft 365 E5 订阅（付费或试用版）
-- Microsoft [E5 合规性加载](https://signup.microsoft.com/signup/?offerid=57806d24-4357-4eff-b0a3-4054ebdf2abe&DL=INFORMATION_PROTECTION_COMPLIANCE&ali=1)项的 Microsoft 365 企业版 E3 订阅
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
+- Microsoft 365 A5 订阅（付费或试用版）
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
 
-内幕风险管理策略中包括的用户必须具有 Microsoft 365 E5 合规性许可证或包含在 Microsoft 365 E5 订阅中。
+必须为内幕风险管理策略中包括的用户分配上述许可证之一。
 
 如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅中，或注册 Microsoft 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
@@ -56,7 +58,7 @@ ms.locfileid: "42634770"
 
 完成以下步骤以将用户添加到 "内幕风险管理" 角色组：
 
-1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 组织中使用管理员帐户的凭据进行登录。
+1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 组织中登录使用管理员帐户凭据。 "" "" "" ""
 
 2. 在 Microsoft Office 365 安全与合规中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
@@ -87,17 +89,17 @@ ms.locfileid: "42634770"
 有关为您的组织配置 Microsoft 365 HR 连接器的分步指南，请参阅[设置连接器以导入 HR 数据](import-hr-data.md)主题。 配置 HR 连接器后，请返回到这些配置步骤。
 
 >[!IMPORTANT]
->如果使用 "*传出员工数据失窃*" 模板配置策略，则需要将 HR 连接器配置为使用策略模板的 "完全信号检测" 功能。 如果您为您的组织配置了多个 HR 连接器，内幕风险管理将自动从所有 HR 连接器中提取指示器。
+>如果使用 "*传出 emplo'ee 数据失窃*" 模板配置 p'licy，则需要将 HR 连接器配置为使用策略模板的 "完全信号检测" 功能。 如果您为您的组织配置了多个 HR 连接器，内幕风险管理将自动从所有 HR 连接器中提取指示器。
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>配置数据丢失防护（DLP）策略
 
-内幕风险管理支持使用 DLP 策略来帮助将敏感信息有意或无意暴露给不需要的团体。 使用*数据泄露*模板配置内幕风险管理策略时，必须向策略分配特定的 DLP 策略。 此策略可帮助将敏感信息的警报指示器驱动为在组织中配置完全风险管理覆盖范围的重要部分。
+内幕风险 man'gement 支持使用 DLP 策略来帮助将敏感信息的有意或无意暴露给不需要的方。 使用*数据泄露*模板配置内幕风险管理策略时，必须向策略分配特定的 DLP 策略。 此策略可帮助将敏感信息的警报指示器驱动为在组织中配置完全风险管理覆盖范围的重要部分。
 
-有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。 配置 DLP 策略后，请返回到这些配置步骤。
+有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。 配置 DLP 策略后，返回到这些配置 "ration 步骤"。 "" "" "" "" "" "" "
 
 >[!IMPORTANT]
 >如果使用*数据泄露*模板配置策略，则需要至少将一个 DLP 策略配置为使用策略模板的完全信号检测功能。 如果您为您的组织配置了多个 DLP 策略，则需要为每个 DLP 策略分配一个内幕风险管理策略。
-
+""""""""
 ## <a name="step-4-required-configure-insider-risk-settings"></a>步骤4（必需）：配置内幕风险设置
 
 [内幕风险设置](insider-risk-management-policies.md#policy-settings)适用于所有内幕风险管理策略，而不管您在创建策略时选择的模板如何。 设置是使用位于所有内幕风险管理选项卡顶部的 "**内幕风险设置**" 控件配置的。 这些设置控制隐私、指示器、监视窗口和智能检测。
