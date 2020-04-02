@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '将您的初始电子邮件地址更改为友好的电子邮件地址，如 tom@fourthcoffee.com。 若要执行此操作，您需要购买域名，并将其添加到 Office 365。 '
-ms.openlocfilehash: 3e01f0bfb97fbef762fbd7162944ca25d882f142
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1c3c77f9626cdf292e0fb9400070cef3df05a9d6
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251198"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115966"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
@@ -77,7 +77,7 @@ Office 365 德国的初始电子邮件地址包括 onmicrosoft.de，如 tom@four
 
 ::: moniker-end 
 
-2. 转到 "**设置** > **域**" 页面。 
+2. 转到 "**安装** > **域**" 页。 
 
 3. 在 "**域**" 页上，选择 "**添加域**"。
     
