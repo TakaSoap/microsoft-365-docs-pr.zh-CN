@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 了解当某人离开你的组织时，如何保留员工的文件和电子邮件。
-ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2b608b51060e746d0b69fd887882b51735578496
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353193"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105755"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>访问并备份以往用户的数据的访问
 
@@ -102,11 +102,15 @@ ms.locfileid: "42353193"
 
 1. 以全局管理员或 SharePoint 管理员身份登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理员中心</a>。 
 
+    如果您收到一条消息，表明您没有访问管理中心的权限，则您的组织中没有管理员权限。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. 以全局管理员或 SharePoint 管理员身份登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理员中心</a>。
+
+    如果您收到一条消息，表明您没有访问管理中心的权限，则您的组织中没有管理员权限。
 
 ::: moniker-end
 
@@ -114,9 +118,9 @@ ms.locfileid: "42353193"
 
 1. 以全局管理员或 SharePoint 管理员身份登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理员中心</a>。
 
-::: moniker-end
+    如果您收到一条消息，表明您没有访问管理中心的权限，则您的组织中没有管理员权限。
 
-   如果您收到一条消息，表明您没有访问管理中心的权限，则您的组织中没有管理员权限。
+::: moniker-end
 
 2. 在左窗格中，选择 "**管理中心** \> " " **SharePoint**"。 （你可能需要选择“**全部显示**”以查看管理中心列表）。
 
@@ -181,6 +185,10 @@ ms.locfileid: "42353193"
     
 请参阅如何在 Outlook 2010 中[将电子邮件、联系人和日历导出或备份到 outlook .pst 文件](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。 
   
+  
+  > [!NOTE]
+  > 默认情况下，你的电子邮件在12个月内可脱机使用。 如果需要，请参阅如何[增加可脱机使用的数据](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized)。
+ 
 ## <a name="give-another-user-access-to-a-former-users-email"></a>向另一个用户授予对以前用户的电子邮件的访问权限 
 
 若要将前一个员工的电子邮件、日历、任务和联系人的访问权限授予另一个员工，请将该信息导入到另一个员工的 Outlook 收件箱。
@@ -210,6 +218,9 @@ ms.locfileid: "42353193"
 8. 设置用于导入项目的选项。 通常不需要更改默认设置。
     
 9. 选择“完成”****。
+
+> [!NOTE]
+> 访问现有用户的 OneDrive 和电子邮件数据的步骤保持相同。
     
 > [!TIP]
 > 如果只想导入或还原 Outlook 数据文件（.pst）中的几个项目，则可以打开 Outlook 数据文件。 然后，在导航窗格中，将 "Outlook 数据文件" 文件夹中的项目拖到现有的 Outlook 文件夹中。 
@@ -224,4 +235,3 @@ ms.locfileid: "42353193"
   
 [OneDrive 保留和删除](/onedrive/retention-and-deletion)
   
-

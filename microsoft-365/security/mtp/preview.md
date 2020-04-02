@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
-ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
+ms.openlocfilehash: f04d2e587a55a680a65425b34a88896466e09be3
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43100895"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113455"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -51,6 +51,9 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 3. 选择 "**预览功能** > **" "打开预览功能"**。 
 
 3. 选择“**保存**”。
+
+当您看到 "**打开预览功能**" 复选框处于选中状态时，您将知道已经打开了预览功能。 
+
 
 
 ## <a name="preview-features"></a>预览功能

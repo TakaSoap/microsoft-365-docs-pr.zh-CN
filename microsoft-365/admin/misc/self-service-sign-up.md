@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: 了解有关金融的 Office 365 自助注册和可用自助服务程序，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365。
 ms.custom: okr_SMB
-ms.openlocfilehash: 24a300540237dc1cb7810ca712ead5ef7d4bea83
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: fa7e6dcb4c40a7a41599b7c1a81fa596868d8e2d
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058889"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106108"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>在你的组织中使用自助服务注册
 
@@ -56,7 +56,6 @@ ms.locfileid: "43058889"
 |**Power BI** <br/> |Power BI 使用户能够以直观的新方式可视化数据、共享发现和进行协作。 <br/> 如果你的组织已订阅 Office 365，你可能还会看到 "Power BI Pro 个人用户试用版" 的许可证，它为用户提供了对高级功能的有限、免费访问权限。  <br/> |[组织中的 Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**权限管理服务 (RMS)** <br/> |RMS 适用于组织中已发送了受 Azure 权限管理（Azure RMS）保护的敏感文件的用户的免费自助订阅，但其 IT 部门尚未实现 Azure 权限管理（Azure RMS）或 Active Directory 权限管理服务（AD RMS）。  <br/> |[适用于个人和 Azure 权限管理的 RMS](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft 权限管理门户](https://portal.azure.com/)，以便您可以检查是否可以打开给定的受权限保护的文档。  <br/> |
 |**Microsoft Power Apps** <br/> |在 PowerApps 中，可以通过运行您创建的应用程序或其他人创建并与您共享的应用程序来管理组织数据。 在手机等移动设备上运行的应用程序，也可以通过打开 Dynamics 365 在浏览器中运行这些应用程序。 您可以创建无限多个应用程序-所有这些都不学习 c # 等编程语言。  <br/> |[为 PowerApps 注册自助服务](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
-|**Microsoft Flow** <br/> |Microsoft Flow 是一种产品，可帮助您在收藏的应用程序和服务之间设置自动工作流，以同步文件、获取通知、收集数据等。  <br/> |[注册并登录 Microsoft Flow](https://go.microsoft.com/fwlink/p/?linkid=841468) <br/> |[Microsoft Flow](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**适用于财务的 Dynamics 365** <br/> |为中小型企业获取完整的业务和财务管理解决方案。 Dynamics 365 for 金融使排序、销售、开票和报告变得更加轻松—从第一天开始。  <br/> |[适用于财务的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[适用于财务的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**适用于操作的 Microsoft Dynamics 365** <br/> |提高开展业务的速度。 Dynamics 365 for Operations 中的完整 ERP 工具提供了全球可扩展性和数字智能，可帮助你在你的步调中发展。  <br/> |[适用于操作的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[适用于操作的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
 |**Microsoft AppSource** <br/> |Microsoft AppSource 是基于 Microsoft 云平台构建的软件即服务业务应用程序的目标。 AppSource 功能可扩展 Microsoft 产品（如 Azure、Dynamics 365、Office 365 和 Power BI）功能的数百个应用、加载项和内容包。  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
@@ -65,4 +64,5 @@ ms.locfileid: "43058889"
 |**Microsoft 批量许可证服务中心** <br/> |Microsoft 批量许可证服务中心显示了在企业、选择、教育（校园或学校）、开放价值、开放许可证和 ISV 版税协议下购买的许可证。  <br/> |[VLSC 培训和资源](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft 教育版** <br/> |通过使用 Minecraft 作为学习的平台，教师可以鼓励和鼓舞每个学生以实现更多，并 ignite 为学习提供热情。 加入一社区教师学习，了解如何使用 Minecraft 解锁学生潜力。  <br/> |[Minecraft 教育版](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft 教育版](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |在组织中上载并共享视频，以改进通信、参与和学习。  <br/> |[注册&amp;第0天的体验](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
+|**电源自动化** <br/> |电力自动化是一种产品，可帮助您在收藏的应用程序和服务之间设置自动工作流，以同步文件、获取通知、收集数据等。  <br/> |[注册并登录以实现自动完成功能](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[电源自动化](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**电源虚拟代理** <br/> |使用高级虚拟代理，团队可以使用无需数据科学家或开发人员，轻松创建功能强大的 bot，而无需使用引导式无代码图形界面。 电源虚拟代理解决了当今行业中的 bot 组装中的许多主要问题。 它消除了行业专家和构建 bot 的开发团队之间的缺口，以及识别问题和更新机器人以解决问题的团队之间的持续时间延迟。  <br/> |[许可和访问详细信息](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[注册 Power Virtual 代理](https://aka.ms/TryPVA) <br/> |

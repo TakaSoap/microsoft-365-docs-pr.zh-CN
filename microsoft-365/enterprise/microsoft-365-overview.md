@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供对适用于企业的 Microsoft 365 的组件、计划和部署路径的介绍。
-ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053091"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113513"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -74,7 +74,7 @@ ms.locfileid: "43053091"
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-若要更好地了解如何将整个组织移动到 Microsoft 365 for enterprise 中的产品和服务，请下载[转换海报](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要更好地了解如何将整个组织移动到 Microsoft 365 for enterprise 中的产品和服务，请参阅[转换海报](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
 [![转移到 Microsoft 365 海报图像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用针对你所在地区或区域设置列出的电话号码、联机提交服务请求或访问 Microsoft Store，以获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352943"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106056"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>联系商业版产品的支持人员 - 管理员帮助
 
@@ -95,7 +95,7 @@ ms.locfileid: "42352943"
 
 ### <a name="community-and-self-service-support-options"></a>社区和自助服务支持选项
 
-自助服务支持适用于所有由世纪互联运营的 Office 365 的用户，支持包括 [Office 365 社区](https://go.microsoft.com/fwlink/p/?linkid=842838)中的疑难解答工具与视频、帮助文章和视频以及论坛和 wiki。有关自助服务支持资源的详细信息，请参阅[了解由世纪互联运营的 Office 365](/services-in-china/services-in-china.md)。
+自助服务支持适用于所有由世纪互联运营的 Office 365 的用户，支持包括 [Office 365 社区](https://go.microsoft.com/fwlink/p/?linkid=842838)中的疑难解答工具与视频、帮助文章和视频以及论坛和 wiki。有关自助服务支持资源的详细信息，请参阅[了解由世纪互联运营的 Office 365](services-in-china/services-in-china.md)。
 
 ### <a name="pre-sales-support"></a>售前支持
 

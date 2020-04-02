@@ -15,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
-ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42230065"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106180"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -36,6 +35,7 @@ ms.locfileid: "42230065"
 
 ## <a name="januaryfebruary-2020"></a>1月/2 月2020
 
+- [Office 365 ATP 中的市场活动视图的正式可用性](campaigns.md)
 - 对[威胁浏览器](threat-explorer.md)的增强功能，使安全操作团队能够在[调查电子邮件](investigate-malicious-email-that-was-delivered.md)时搜索和筛选多个字段：
     - 送达位置和特殊操作
     - 方向性（入站、出站或组织内部）
