@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 要在 Office 365 或 Microsoft 组织中实现记录管理策略，请使用将内容声明为记录的保留标签。 然后发布或自动应用保留记录标签。
-ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42586720"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106140"
 ---
 # <a name="overview-of-records"></a>记录概述
+
+>*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 在 Microsoft 365 中管理记录可帮助组织遵守公司策略、法律和法规义务，同时降低风险和法律责任。
 
@@ -79,10 +81,6 @@ ms.locfileid: "42586720"
    ![选中“使用标签将内容分类为‘记录’”复选框](../media/recordversioning6.png)
 
 3. 将保留标签[发布](labels.md#how-retention-labels-work-with-retention-label-policies)或[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)到 SharePoint 网站和/或 OneDrive 帐户。
-
-> [!NOTE]
-> 使用[保留标签](labels.md)将项目声明为记录需要 Office 365 企业版 E5 许可证，或对于有权编辑此位置中的内容的每位用户等效。 具有只读权限的用户不需要许可证。
-
 
 ### <a name="applying-a-retention-label-to-content"></a>对内容应用保留标签
 

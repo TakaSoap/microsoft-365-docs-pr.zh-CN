@@ -12,12 +12,12 @@ ms.collection:
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助金融服务迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
-ms.openlocfilehash: 41417013e3d199e4fb1d4f8ac4004cd837cf66ed
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: 4dc2c25001bb817dcf31927d2c15b1246cc52901
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959395"
+ms.locfileid: "42978274"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -64,7 +64,7 @@ Teams 从金融服务中获益的一个常见场景是在运行内部项目或�
 
 Teams 可提供一个协作空间来安全地存储敏感的客户端数据，并在可能讨论敏感主题的团队成员之间进行对话。 团队中的多个成员可以同时编辑或协作处理单个文档。 计划所有者或协调员可以配置为团队所有者，然后根据需要添加和删除成员。
 
-另一种常见的方案是将 Teams 用作“虚拟数据室”来安全地协作、存储和管理文档。 投资银行、资产管理或私募股权公司内的团队成员和财团可安全地进行交易或投资协作。 跨职能团队通常会参与规划和完成此类交易，并且能够安全地共享数据和执行对话是一项核心要求。 与外部投资者安全共享相关文档也是关键要求。 Teams 提供安全且完全可审核的位置，可从中集中存储、保护和共享投资数据。
+另一种常见的方案是将 Teams 用作“虚拟数据室”来安全地协作，包括存储和管理文档。 投资银行、资产管理或私募股权公司内的团队成员和财团可安全地进行交易或投资协作。 跨职能团队通常会参与规划和完成此类交易，并且能够安全地共享数据和执行对话是一项核心要求。 与外部投资者安全共享相关文档也是关键要求。 Teams 提供安全且完全可审核的位置，可从中集中存储、保护和共享投资数据。
 
 :::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="一群办公室职员在会议上讨论大屏幕上的图像。":::
  
