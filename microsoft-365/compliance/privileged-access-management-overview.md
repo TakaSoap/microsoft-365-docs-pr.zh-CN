@@ -17,17 +17,14 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关 Office 365 中的特权访问管理的详细信息
-ms.openlocfilehash: 8d1b6bbda57cbe51167c87a29e140e6b5f871bca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 547f3f3179252c767d56b45d4ad64d67b3c82b7d
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070949"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116022"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 中的特权访问管理
-
-> [!IMPORTANT]
-> 本主题介绍了 Office 365 E5 和高级合规 Sku 中目前仅提供的功能的部署和配置指南。
 
 特权访问管理允许对 Office 365 中的特权管理任务进行精确的访问控制。 它可帮助保护您的组织免受使用现有特权管理员帐户的破坏，以访问敏感数据或访问关键配置设置。 特权访问管理要求用户通过一个高度范围和时间限制的审批工作流请求实时访问，以完成提升的特权和特权任务。 此配置为用户提供足够的访问权限，以便在不影响敏感数据或关键配置设置的情况下执行任务。 启用 Office 365 中的 "特权访问管理" 使组织能够以零为依据的权限运行，并提供了抵御受影响的管理访问漏洞的防御层。
 
@@ -73,11 +70,11 @@ Office 365 中的特权访问管理在**任务**级别进行定义和作用域�
 
 ![步骤4：访问处理](../media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>哪些 Sku 可以使用 Office 365 中的特权访问？
 
-具有 Office 365 E5 和高级合规性 Sku 的客户可以使用 "特权访问管理"。
+客户可通过多种选择的 Microsoft 365 和 Office 365 订阅和加载项提供特权访问管理。 有关详细信息，请参阅[具有特权访问管理的入门](privileged-access-management-configuration.md)信息。
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>何时将权限访问支持 Exchange 之外的 Office 365 工作负荷？
 

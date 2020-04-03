@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
-ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
+ms.openlocfilehash: 31444d677e7cd775f5364796c6821cb82b6dc654
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43100875"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113569"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>在 Microsoft 365 中配置通信合规性
 
@@ -42,8 +42,11 @@ ms.locfileid: "43100875"
 - Microsoft 365 A5 订阅（付费或试用版）
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 内幕成员风险管理加载项
+- Microsoft 365 G5 订阅（付费或试用版）
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规性附加
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 内幕版风险管理加载项
 - Office 365 企业版 E5 订阅（付费或试用版）
-- Office 365 企业版 E3 订阅 + Office 365 高级合规性附加
+- Office 365 企业版 E3 订阅 + Office 365 高级合规性外接程序（不再适用于新订阅，请参阅注意）
 
 必须为通信合规性策略中包含的用户分配上述许可证之一。
 

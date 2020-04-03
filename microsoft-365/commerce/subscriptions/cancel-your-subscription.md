@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Office 365 for business 或 Microsoft 365 试用版或付费订阅。
-ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
+ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415647"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117940"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -58,7 +58,7 @@ ms.locfileid: "42415647"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择订阅。
 
@@ -74,7 +74,7 @@ ms.locfileid: "42415647"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择订阅。
 
@@ -94,13 +94,14 @@ ms.locfileid: "42415647"
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>取消订阅对你和你的用户的影响。
   
-- **管理员访问**管理员仍可以登录并访问管理中心，并根据需要购买其他订阅。 作为全局或帐单管理员，你有90天的时间来[重新激活订阅](reactivate-your-subscription.md)的所有数据都完好无损。 
-    
+- **管理员访问**管理员仍可以登录并访问管理中心，并根据需要购买其他订阅。 作为全局或帐单管理员，你有90天的时间来[重新激活订阅](reactivate-your-subscription.md)的所有数据都完好无损。
+
 - **用户访问**你的用户将无法使用 OneDrive for business 等服务，也无法在团队网站上访问客户数据（如电子邮件或文档）。 Word 和 Excel 等 Office 应用程序最终将进入只读的缩减功能模式，并显示 [未经授权的产品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
-    
- **重要提示** 如果要在典型的禁用期结束之前删除订阅数据，可以请求快速解除配置。 如果请求快速解除配置，则订阅数据将在取消后的 3 天内删除。 若要使用加速解除，请[致电支持人员](../../admin/contact-support-for-business-products.md)。
-  
+
 若要了解详细信息，请参阅我的[订阅结束后我的数据和访问会发生什么？](what-if-my-subscription-expires.md)
+
+> [!IMPORTANT]
+> 如果您希望在典型禁用的时段之前删除订阅数据，则可以[关闭您的帐户](../close-your-account.md)。
 
 ## <a name="other-steps-you-might-have-to-take"></a>您可能需要执行的其他步骤
 

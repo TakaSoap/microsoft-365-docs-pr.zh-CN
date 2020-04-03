@@ -17,19 +17,36 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关配置特权访问管理的详细信息。
-ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322522"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115988"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特权访问管理入门
 
->[!IMPORTANT]
->本主题介绍了 Office 365 E5 和高级合规 Sku 中目前仅提供的功能的部署和配置指南。
+本主题指导您在 Office 365 组织中启用和配置特权访问管理。 您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。
 
-本主题指导您在 Office 365 组织中启用和配置特权访问管理。 您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。 
+## <a name="before-you-begin"></a>准备工作
+
+在开始使用特权访问管理之前，应确认你的[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用特权访问管理，您的组织必须具有以下订阅或加载项之一：
+
+- Microsoft 365 E5 订阅（付费或试用版）
+- Microsoft 365 E3 订阅（或 Office 365 E3 订阅 + 企业移动和安全 E3 订阅） + Microsoft 365 E5 合规性附加项
+- 任何 Microsoft 365、Office 365、Exchange、SharePoint 或 OneDrive for business 订阅 + Microsoft 365 E5 内幕版风险管理加载项  
+- Microsoft 365 A5 订阅（付费或试用版）
+- Microsoft 365 A3 订阅（或 Office 365 A3 订阅 + 企业移动和安全性 A3 订阅） + Microsoft A5 合规性加载项
+- 任何 Microsoft 365、Office 365、Exchange、SharePoint 或 OneDrive for 教育版订阅 + Microsoft 365 A5 内幕会员风险管理加载项
+- Office 365 企业版 E5 订阅（付费或试用版）
+- Office 365 企业版 E3 订阅 + Office 365 高级合规性外接程序（不再适用于新订阅，请参阅注意）
+
+必须为用户提交和响应特权访问管理请求分配上述许可证之一。
+
+>[!IMPORTANT]
+>Office 365 高级合规性不再作为独立订阅销售。 当当前订阅过期时，客户应转换为上述订阅之一，其中包含相同或更多的合规性功能。
+
+如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试进行特权访问管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅中，或注册 Microsoft 365 企业[版](https://www.microsoft.com/microsoft-365/enterprise)e5。
 
 ## <a name="enable-and-configure-privileged-access-management"></a>启用和配置特权访问管理
 
@@ -103,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 ```
 
 >[!NOTE]
->系统帐户功能可用于确保组织内的某些自动脚本可以正常工作，而无需对特权访问进行依赖性，但建议将此类排除条件设为例外，并且应批准和审核这些排除条件保持.
+>系统帐户功能可用于确保组织内的某些自动脚本可以正常工作，而无需对特权访问进行依赖性，但建议将此类排除条件设为例外，应定期批准和审核这些排除项。
 
 <a name="step3"> </a>
 

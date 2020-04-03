@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: e6e13ef14ed9ed3e60f2918df0c25c0601d0225e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d0496a194cc734304f8ba6f09e6497c8d4f233bc
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106098"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126019"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
->*[适用于安全 & 合规性的 Microsoft 365 许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-在此预览之前，当您将包含加密的敏感度标签应用于存储在 SharePoint 和 OneDrive 中的 Office 文件时，该服务无法处理这些文件的内容。 在这些情况下，合著、电子数据丢失、数据丢失防护、搜索、Delve 和其他协作功能不起作用。 此预览对应用了敏感度标签的新文件和更改的文件启用了这些功能，其中包括基于云的密钥的加密：
+在此预览之前，您无法将您的[灵敏度标签](sensitivity-labels.md)应用于 web 上的 Office。 您没有在功能区上看到 "**敏感度**" 选项，或者状态栏上的 "应用的标签名称"。 此外，如果您使用桌面应用程序标记文件，然后将其保存在 SharePoint 或 Onedrive 中，则该服务无法处理这些文件的内容（如果标签应用了加密）。 在这些情况下，合著、电子数据丢失、数据丢失防护、搜索、Delve 和其他协作功能不起作用。 
+
+此预览启用了所有这些功能。 除了向用户显示敏感度标签之外，对于应用了敏感标签的新文件和已更改文件，包括使用基于云的密钥进行加密：
 
 - SharePoint 可识别应用于 SharePoint 和 OneDrive 中的 Word、Excel 和 PowerPoint 文件的敏感度标签。当文件存储在 SharePoint 中时，将删除来自 Azure 信息保护的加密，以便可以对文件内容进行处理。 有关在将文档存储在 SharePoint 中时如何保护文档的信息，请参阅[OneDrive For business 和 SharePoint Online 中的数据加密](data-encryption-in-odb-and-spo.md)。
 
@@ -36,27 +38,25 @@ ms.locfileid: "43106098"
 
 - 为了使 SharePoint 能够在上载时从文件中删除加密，上载已标记和已加密文件的用户必须至少具有查看该文件的使用权限。 如果用户无法在 SharePoint 外部打开加密，则 SharePoint 不会从文件中删除加密。
 
-- 使用 web 上的 Office （Word、Excel、PowerPoint）打开和编辑具有应用加密的敏感度标签的 Office 文件。 将强制实施通过加密分配的权限。 在 web 上使用 Word 时，您还可以在编辑这些文档时使用自动标签。
+- 使用 web 上的 Office （Word、Excel、PowerPoint）打开和编辑具有应用加密的敏感度标签的 Office 文件。 将强制实施通过加密分配的权限。 在 web 上使用 Word 时，您还可以在编辑这些文档时使用自动标记。
 
 - Office 365 电子数据展示支持对这些文件进行全文搜索。 数据丢失防护（DLP）策略涵盖这些文件中的内容。
 
-- 有三个新的[审核事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)可用于监视使用 web 上的 Office 应用的敏感度标签：
-  - **已向文件应用敏感度标签**
-  - **已更改应用于文件的敏感度标签**
-  - **已从文件除敏感度标签**
-
 > [!NOTE]
-> 如果加密尚未应用于基于云的密钥，而是本地密钥，则密钥管理拓扑通常称为 "保留自己的密钥" （HYOK），SharePoint 行为在此预览中不会更改。
+> 如果加密尚未应用于基于云的密钥，而是本地密钥，则密钥管理拓扑通常称为 "保留自己的密钥" （HYOK），用于处理文件内容的 SharePoint 行为在此预览中不会发生变化。
 >
 > 在启用预览之前，sharepoint 行为也不会对 SharePoint 中的现有标记和加密文件进行更改。 为了让这些文件受益于新功能，必须下载和上载这些文件，或在启用预览后再对其进行编辑。 例如，它们将在搜索和电子数据展示结果中返回。
 
-现在，您还可以将灵敏度标签应用于 Microsoft 团队、Office 365 组和 SharePoint 网站。 有关此单独预览的详细信息，请参阅[使用敏感度标签与 Microsoft 团队、Office 365 组和 SharePoint 网站（公共预览版）](sensitivity-labels-teams-groups-sites.md)。
-
-你随时都可以选择退出此预览。
+启用此预览时，可以使用以下三个新的[审核事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)来监视在 web 上使用 Office 应用的敏感度标签：
+- **已向文件应用敏感度标签**
+- **已更改应用于文件的敏感度标签**
+- **已从文件除敏感度标签**
 
 观看以下视频（无音频）以查看这些新功能的操作：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
+
+你随时都可以选择退出此预览。
 
 ## <a name="requirements"></a>Requirements
 
@@ -66,7 +66,9 @@ ms.locfileid: "43106098"
 
 ## <a name="limitations"></a>限制
 
-- 如果启用此预览，则在 OneDrive 同步文件夹中更改文件上的标签的用户可能无法保存对该文件所做的其他更改。  用户看到一个[带有白色交叉图标错误的红色圆圈](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，并要求他们将新的更改另存为一个单独副本。  除了用户启动的标签更改之外，如果管理员更改已应用于下载到用户同步客户端的文件的已发布标签的设置，也会发生相同的行为。
+- 如果启用此预览，则在 OneDrive 同步文件夹中更改文件上的标签的用户可能无法保存对该文件所做的其他更改。 此方案适用于使用加密标记的文件，以及当标签更改来自未对其应用加密的标签的标签时。 用户看到一个[带有白色交叉图标错误的红色圆圈](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，并要求他们将新的更改另存为一个单独副本。  
+    
+    除了用户启动的标签更改之外，如果管理员更改已应用于下载到用户同步客户端的文件的已发布标签的设置，也会发生相同的行为。
     
     若要避免在这些情况下丢失工作，请执行以下操作之一：
     - 若要应用标签，请使用 Office 应用的 web 版本。
@@ -88,7 +90,7 @@ ms.locfileid: "43106098"
 
 - 不支持 Azure 信息保护文档跟踪网站。
 
-- Office 桌面应用程序和移动应用程序不支持共同创作。 相反，这些应用将继续以独占编辑模式打开文件。
+- 对于标记为加密的文件，Office 桌面应用程序和移动应用程序不支持共同创作。 这些应用将继续以独占编辑模式打开带标签和加密的文件。
 
 - 如果将带标签的文档上载到 SharePoint，并使用服务主体名称中的帐户来应用加密，则无法在 web 上的 Office 中打开该文档。 示例方案包括 Microsoft 云应用安全和通过电子邮件发送给团队的文件。
 

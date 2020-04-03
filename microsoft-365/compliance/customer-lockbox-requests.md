@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客户密码箱请求，使您可以控制 Microsoft 支持工程师在遇到问题时如何访问数据。
-ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076808"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113559"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客户密码箱
 
-本文提供了当前仅适用于具有 Microsoft 365 E5、Office 365 E5、信息保护和合规性或高级合规性附加订阅的组织的功能的部署和配置指南。 客户密码箱支持访问 Exchange Online、SharePoint Online 和 OneDrive for Business 中的数据的请求。 若要建议支持其他 Office 365 服务，请提交[Office 365 UserVoice](https://office365.uservoice.com/)的请求。
+本文提供了客户密码箱的部署和配置指南。 客户密码箱支持访问 Exchange Online、SharePoint Online 和 OneDrive for Business 中的数据的请求。 若要建议支持其他 Office 365 服务，请提交[Office 365 UserVoice](https://office365.uservoice.com/)的请求。
+
+若要查看授权你的用户从 Microsoft 365 合规性产品（包括此服务）中获益的选项（包括2020此服务），请参阅 [microsoft 365 许可指南以了解安全 & 合规性](https://aka.ms/ComplianceSD)。
 
 客户密码箱可确保 Microsoft 无法访问你的内容以执行服务操作，而无需你的明确批准。 客户密码箱将你带到审批工作流，以获取访问内容的请求。
 
@@ -152,7 +154,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 | IP 地址 | 审批者用于批准或拒绝请求的计算机的 IP 地址。 |
 | 用户       | 服务帐户 BOXServiceAccount@\[customerforest\]。 prod.outlook.com。            |
 | 活动   | AccessToCustomerDataRequest;这是您批准或拒绝客户密码箱请求时记录的审核活动。                                |
-| 项目       | 客户密码箱请求的 Guid                             |
+| Item       | 客户密码箱请求的 Guid                             |
 
 下面的屏幕截图显示了与批准的客户密码箱请求对应的审核日志记录的示例。 如果客户密码箱请求被拒绝，则**ApprovalDecision**参数的值将为**Deny**。
 
@@ -171,9 +173,9 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 | IP 地址 | Microsoft 工程师使用的计算机的 IP 地址。 |
 | 用户       | Microsoft 运算符;此值指示此记录与客户密码箱请求相关。                                  |
 | 活动   | Microsoft 工程师执行的活动的名称。|
-| 项目       | \<empty\>                                             |
+| Item       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 #### <a name="which-office-365-services-does-customer-lockbox-apply-to"></a>客户密码箱适用的 Office 365 服务是什么？
 
@@ -257,7 +259,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>客户密码箱是否防止来自法律强制机构或其他第三方的数据请求？
 
-否。 Microsoft 会认真为客户数据提供第三方请求。 作为云服务提供商，Microsoft 始终支持客户数据的隐私。 在我们收到传唤的情况下，Microsoft 将始终尝试将第三方重定向到客户以获取信息。 （阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们将定期发布有关 Microsoft 收到的法律强制请求的[详细信息](https://www.microsoft.com/corporate-responsibility/lerr)。
+不是。 Microsoft 会认真为客户数据提供第三方请求。 作为云服务提供商，Microsoft 始终支持客户数据的隐私。 在我们收到传唤的情况下，Microsoft 将始终尝试将第三方重定向到客户以获取信息。 （阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们将定期发布有关 Microsoft 收到的法律强制请求的[详细信息](https://www.microsoft.com/corporate-responsibility/lerr)。
 
 有关详细信息，请参阅有关第三方数据请求的[Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)和[在线服务条款](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的 "客户数据泄露" 部分。
 
