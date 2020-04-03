@@ -235,9 +235,9 @@
                       href: ./office-365-security/spam-confidence-levels.md
                     - name: 批量投诉级别(SCL)
                       href: ./office-365-security/bulk-complaint-level-values.md
-                    - name: 垃圾邮件和批量邮件之间有什么差异？
+                    - name: 垃圾邮件和群发电子邮件有何区别？
                       href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-                    - name: 在 Exchange Online 邮箱上配置垃圾邮件设置
+                    - name: 配置 Exchange Online 邮箱上的垃圾邮件设置
                       href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
                     - name: 使用邮件流规则设置邮件中的垃圾邮件可信度
                       href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
@@ -345,13 +345,11 @@
             - name: 什么是 EOP？
               href: ./office-365-security/what-is-eop.md
               items:
-                - name: 支持通过 IPv6 发送的匿名入站电子邮件
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: 在独立 EOP 中阻止垃圾邮件
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: 使用 Exchange Online Protection 保护本地邮箱
                   href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: 配置独立 EOP，以向“垃圾邮件”文件夹传递垃圾邮件
+                - name: 将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: 高级威胁防护
           href: ./office-365-security/office-365-atp.md
@@ -445,6 +443,8 @@
           items:
             - name: 安全与合规中心内的消息跟踪
               href: ./office-365-security/message-trace-scc.md
+            - name: 现已开始支持通过 IPv6 发送的匿名入站电子邮件
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: 查看安全与合规中心内的电子邮件安全报告
               href: ./office-365-security/view-email-security-reports.md
             - name: 安全与合规中心内的邮件流见解

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: 3bcaee41ab178ae79b1f2ef46871dadb107f3f5b
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: e41c71a1f8bc0175b179ecd760dac7098551bc91
+ms.sourcegitcommit: 6b7eecad7162c065af80721204fbabdd2e31e42b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929446"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43065638"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -74,7 +74,7 @@ ms.locfileid: "42929446"
   
 ![标签、标签策略和位置的关系图](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. 发布保留标签时，它们将包含在保留标签策略中。 请注意，保留标签名称是不可变的，创建后将无法编辑。
+1. 发布保留标签时，它们将包含在保留标签策略中。 保留标签名称不可变；也就是说，它们一旦创建就无法编辑了。
 
 
 2. 一个保留标签可以包含在多个保留标签策略中。
@@ -97,7 +97,7 @@ ms.locfileid: "42929446"
     
 手动分配标签是显式分配标签；自动应用标签是隐式分配标签；显式保留标签优先于隐式标签。有关详细信息，请参阅下面的[保留原则或优先级](#the-principles-of-retention-or-what-takes-precedence)部分。
 
-此部分中的所有信息仅适用于保留标签。请注意，除了一个保留标签之外，内容项还可以再应用有一个敏感度标签。
+此部分中的所有信息只适用于保留标签。请注意，除了一个保留标签之外，还可以再向内容项应用一个敏感度标签。
   
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留标签需要多长时间才能生效
 
@@ -183,7 +183,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 - Office 365 组（Outlook 网页版中的组网站和组邮箱）
     
-下面各部分介绍了标签如何在不同的应用程序中向组织用户显示。
+接下来的各部分介绍了标签是如何在不同应用程序中向组织用户显示的。
   
 ### <a name="outlook-on-the-web"></a>Outlook 网页版
 
@@ -416,7 +416,19 @@ Exchange 公用文件夹和 Skype 不支持标签。
 请注意，保留原则就像是自上而下打破平局的流：如果所有策略或标签应用的规则在一个级别上是相同的，流就会向下移至下一个级别，以确定优先应用哪个规则。
   
 最后，保留策略或标签无法永久删除任何保留用于电子数据展示的内容。在此类保留释放后，内容便再次符合上文所述清理流程的条件。
-  
+
+### <a name="precedence-for-auto-labeling-with-trainable-classifiers"></a>优先使用可训练的分类器进行自动标记
+
+所有为可训练的分类器配置的保留标签都同时接受评估。 如果一个项被多个可训练的分类器检测到，则根据以下条件来确定应用哪个保留标签：
+
+1. 配置为“仅保留”或“保留后删除”的保留标签比配置为“仅删除”的保留标签的优先级高。
+
+2. 对于配置为“仅保留”或“保留后删除”的保留标签，配置最长保持期的保留标签胜出。
+
+3. 对于配置为“仅删除”的保留标签，配置最短保持期的保留标签胜出。
+
+4. 对于操作和保持期都相同的保留标签，保留标签的选择是不确定的。
+
 ## <a name="use-retention-labels-instead-of-these-features"></a>使用保留标签代替类似功能
 
 可将保留标签轻松应用于整个组织，及其在 Office 365（包括 Exchange、SharePoint、OneDrive 和 Office 365 组）中的内容。建议使用保留标签在 Office 365 中的任意位置上对内容进行分类或管理记录。
