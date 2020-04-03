@@ -185,6 +185,8 @@
                   href: mtp/mtp-permissions.md
                 - name: 设置时区
                   href: mtp/mtp-time-zone.md
+            - name: 提供反馈
+              href: mtp/feedback.md
             - name: 通过 ServiceNow 管理票证
               href: ./mtp/tickets.md
     - name: Office 365 安全中心
@@ -443,7 +445,7 @@
           items:
             - name: 安全与合规中心内的消息跟踪
               href: ./office-365-security/message-trace-scc.md
-            - name: 现已开始支持通过 IPv6 发送的匿名入站电子邮件
+            - name: 添加对通过 IPv6 发送的匿名入站电子邮件的支持
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: 查看安全与合规中心内的电子邮件安全报告
               href: ./office-365-security/view-email-security-reports.md
