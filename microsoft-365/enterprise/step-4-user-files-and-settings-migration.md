@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何迁移用户文件和设置。
-ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085282"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113537"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步骤 4：用户文件和设置迁移
 
@@ -49,7 +49,7 @@ ms.locfileid: "42085282"
 
 这是否是组织中的选项将取决于规划的迁移规模。很明显，它仅限于与用户直接合作、理解他们的需求、将文件复制到他们的新电脑或最新更新电脑所涉及的时间和物理。
 
-如果选择手动迁移，可能需要评估是否能够在 Windows 7 支持期截止的 2020 年 1 月之前完成任务。如果不确定，请查看使用以下自动化选项之一，或请求更多人员的帮助。
+如果选择手动迁移，请使用下面的自动选项之一查看，或者向更多人寻求帮助。
 
 ## <a name="automated-migration-using-usmt"></a>使用 USMT 自动化迁移 
 
@@ -89,8 +89,8 @@ OneDrive 旨在同步和保护文件和文件夹；它不同步应用程序或 W
 
 ## <a name="next-step"></a>后续步骤
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[步骤 5：安全性和合规性注意事项](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[步骤 5：安全性和合规性注意事项](https://aka.ms/mdd5)
 
 ## <a name="previous-step"></a>上一步
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[步骤 3：Office 和 LOB 应用交付](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[步骤 3：Office 和 LOB 应用交付](https://aka.ms/mdd3)

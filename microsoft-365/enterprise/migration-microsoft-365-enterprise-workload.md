@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成将 Microsoft Office、Office 服务器和 Windows 的版本迁移到组织中的 Microsoft 365 企业版的过程。
-ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053079"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113490"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>迁移到 Microsoft 365 企业版
 
@@ -171,7 +171,7 @@ Microsoft 365 企业版包含 Office 365，后者包含 Office 服务基于云�
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请下载[转换海报](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，参见[转换海报](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
 [![转移到 Microsoft 365 海报图像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 

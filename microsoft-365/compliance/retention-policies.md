@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: c012f3ddea19edb9ff22dd4e8353a0de1f3b3812
-ms.sourcegitcommit: 748bc3484b7ccbd65b558f495b6fa42196c3c571
+ms.openlocfilehash: dc06a8c2cd893bb93ef826c6900531240a138efb
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43083649"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126029"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
+
+>*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 对于大多数组织，数据量和数据复杂性每天都在增加 — 包括电子邮件、文档、即时消息等。有效管理或管理此类信息非常重要，因为要：
   
@@ -52,9 +54,9 @@ ms.locfileid: "43083649"
   
 最后，一些组织必须遵守法规，如美国证券交易委员会 (SEC) 法规 17a-4，这条法规要求在启用保留策略后，不得禁用保留策略或削弱它的限制性。为了遵守这项要求，可以使用保留锁定。保留策略一旦锁定，任何人（包括管理员）都无法禁用保留策略或削弱它的限制性。
   
-可以在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)内创建和管理保留策略：依次转到“策略”**** > “数据”**** > “保留”****
+可以在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)内创建和管理保留策略：依次转到“**策略**” > “**数据**” > “**保留**”
 
-也可以使用“解决方案”**** > “信息治理”**** > “保留”**** 选项卡转到 Microsoft 365 合规中心内的相同位置。 
+也可以使用“**解决方案**” > “**信息治理**” > “**保留**”选项卡转到 Microsoft 365 合规中心内的相同位置。 
 
 **如果你希望能够在永久删除内容之前审阅它，** 不妨使用[保留标签](labels.md)，而不是保留策略。 创建保留标签时，可设置“[处置审阅](disposition-reviews.md)”，以便在保留期结束时查看内容。
 
@@ -291,6 +293,9 @@ ms.locfileid: "43083649"
 
 ### <a name="teams-locations"></a>Teams 位置
 
+> [!NOTE]
+> 我们尚不支持配置保留私人频道消息。 支持保留在私人渠道中共享的文件。
+
 保留策略可用于保留 Teams 中的聊天和信道消息。Teams 聊天存储在聊天中每位用户的邮箱的隐藏文件夹中，而 Teams 信道消息则存储在团队的组邮箱的类似隐藏文件夹中。不过，请务必了解 Teams 使用的是 Azure 助力聊天服务，这项服务也存储此类数据，且默认永久存储数据。因此，强烈建议使用 Teams 位置来保留和删除 Teams 数据。使用 Teams 位置将从 Exchange 邮箱和 Azure 助力基础聊天服务中永久删除数据。有关详细信息，请参阅 [Microsoft Teams 中的安全与合规概述](https://go.microsoft.com/fwlink/?linkid=871258)。
   
 Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中用户或组邮箱的保留策略的影响。 即使 Teams 聊天和频道消息存储在 Exchange 中，它们也仅受到应用于 Teams 位置的保留策略的影响。
@@ -446,7 +451,31 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 ## <a name="what-happened-to-preservation-policies"></a>旧保留策略有何变化？
 
 如果之前在使用保存策略，则保存策略已自动转换为保留策略 — 只会保留内容，而不会删除内容。 保存策略会继续处理和保存内容，而无需任何改动。 有关这些策略，可查看 [Microsoft 365 合规中心](https://compliance.microsoft.com/)的“**策略**”页面，或者[安全&amp;合规中心](https://protection.office.com/)内“**信息管理**”下的“**保留**”页面。 可以编辑保存策略，以更改保存期限，但是无法进行添加或移动位置等其他更改。 
+
+## <a name="find-the-powershell-cmdlets-for-retention-policies"></a>查找保留策略的 PowerShell cmdlet
+
+使用“保留策略” cmdlet：
   
+1. [连接到 Office 365 安全与合规中心 Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+    
+2. 使用这些 Office 365 安全与合规中心 cmdlet：
+    
+    - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
+    
+    - [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)
+    
+    - [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancepolicy)
+    
+    - [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy)
+    
+    - [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule)
+    
+    - [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)
+    
+    - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule)
+    
+    - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)
+
 ## <a name="permissions"></a>权限
 
 负责创建保留策略的合规性团队成员必须有权访问[安全&amp;合规中心](https://protection.office.com/)。 默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对[安全&amp;合规中心](https://protection.office.com/)的访问权限，而不授予租户管理员的所有权限。为此，建议转到[安全&amp;合规中心](https://protection.office.com/)内的“**权限**”页，编辑“**合规性管理员**”角色组，再向此角色组添加成员。 
@@ -457,6 +486,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 
 ## <a name="more-information"></a>更多信息
 
+- [Microsoft Teams 中的保留策略](/microsoftteams/retention-policies#using-powershell )
 - [标签概述](labels.md)
 - [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Microsoft Teams 的限制和规范](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
