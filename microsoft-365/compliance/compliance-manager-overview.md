@@ -14,23 +14,29 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635150"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141609"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
 > [!IMPORTANT]
 > 由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。
 
-[Microsoft 合规性管理器（预览版）](https://servicetrust.microsoft.com/ComplianceManager)是一个基于工作流的免费风险评估工具，可让您跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。 您的 Microsoft 365、Office 365 或 Azure Active Directory 订阅的一部分，合规性管理器可帮助您管理 Microsoft 云服务的共享职责模型中的法规遵从性。 合规性管理器提供了一个集中的仪表板，用于查看 Microsoft service 评估的标准、法规和控制实施详细信息和测试结果。 它还包括允许您管理特定于您的组织的自定义控件实现和合规性跟踪的工具。
+**本文**内容：阅读本文，了解什么是合规性管理器并了解其主要组件。
+
+**了解更新**：我们在四月份2020公开预览版中发布了几个更新。 访问[合规性管理器发行说明](compliance-manager-release-notes.md)，查看新增功能和已知问题。
+
+## <a name="what-is-compliance-manager"></a>什么是合规性管理器
+
+[Microsoft 合规性管理器（预览版）](https://servicetrust.microsoft.com/ComplianceManager)是 Microsoft 服务信任门户中基于工作流的免费风险评估工具，用于管理与 Microsoft 云服务相关的法规遵从性活动。 您的 Microsoft 365、Office 365 或 Azure Active Directory 订阅的一部分，合规性管理器可帮助您管理 Microsoft 云服务的共享职责模型中的法规遵从性。
 
 使用合规性管理器，您的组织可以：
   
-- 结合了 Microsoft 为审计员和管理机构提供的详细合规性信息，以及有关适用于您的组织的标准和规章的合规性自我评估的云服务。 其中包括国际标准化组织（ISO）、美国国家标准和技术协会（NIST）、健康保险便携性和责任法案（HIPAA）中列出的标准和法规（常规数据）保护规章（GDPR）和其他许多。
+- 结合了 Microsoft 为审计员和管理机构提供的详细合规性信息，以及有关适用于您的组织的标准和规章的合规性自我评估的云服务。 其中包括国际标准化组织（ISO）、美国国家标准和技术协会（NIST）、健康保险可移植性和责任法案（HIPAA）、常规数据保护规章（GDPR）以及其他许多方面概括的标准和法规。
 - 使您能够分配、跟踪和记录符合性和与评估相关的活动，这些活动可帮助您的组织跨团队障碍实现合规性目标。
 - 提供符合性分数以帮助您跟踪进度并设置审核控件的优先级，以帮助减少组织对风险的暴露程度。
 - 为您提供一个安全存储库，以便上载和管理与合规性活动相关的证据和其他项目。
@@ -39,7 +45,16 @@ ms.locfileid: "42635150"
 > [!NOTE]
 > 合规性管理器中提供的客户操作是建议;在实现之前，你的组织可以评估这些建议在其各自的法规环境中的有效性。 在合规性管理器中找到的建议不应解释为合规性保证。
 
-## <a name="compliance-manager-relationships"></a>合规性管理器关系
+## <a name="relationship-to-compliance-score"></a>与合规性分数的关系
+
+[Microsoft 合规性分数（预览版）](compliance-score.md)是 microsoft 365 合规性中心中的一项功能，可提供组织的合规性状况的顶级视图。 它将计算基于风险的分数，以衡量您在帮助降低数据保护和法规标准方面的风险的完成操作的进度。 了解您的总体合规性分数可帮助您的组织了解和管理合规性。 了解[如何计算合规性分数](compliance-score-methodology.md)。
+
+合规性管理器与合规性分数共享相同的后端。 在这两种工具的公共预览阶段，合规性管理器是管理评估和自定义控制实施的地方。 了解有关[合规性分数和合规性管理器之间关系](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)的详细信息。
+  
+> [!IMPORTANT]
+> 合规性分数不表示对任何特定标准或法规的组织合规性的绝对衡量。 它表示您已采用的控制程度，可降低个人数据和个人隐私的风险。 任何服务都不能保证您符合标准或法规，并且不应以任何方式将合规性分数解释为保证。
+
+## <a name="compliance-manager-components"></a>合规性管理器组件
 
 合规性管理器使用多个组件来帮助你实现合规性管理活动。 这些组件协同工作，为审计员提供完整的管理工作流和无障碍的合规性报告。
 
@@ -47,7 +62,7 @@ ms.locfileid: "42635150"
 
 ![合规性管理器版本3中的关系](../media/compliance-manager-relationships.png)
 
-## <a name="groups"></a>组
+## <a name="groups"></a>Groups
 
 [组](working-with-compliance-manager.md#groups)是允许您组织评估的容器，并在评估之间共享具有相同或相关的客户托管控件的常见信息和工作流任务。 当同一个组中的两个不同评估共享客户托管控件时，该控件的实现详细信息、测试和状态的完成将自动同步到组中任何其他评估中的相同控件。 这将统一分配给组中每个控件的已分配操作项并减少重复工作。 您还可以选择使用组进行组织。 按年、区域、合规性标准或其他分组进行评估，以帮助组织合规性工作。
 
@@ -61,11 +76,11 @@ ms.locfileid: "42635150"
 - Office 365 NIST 800-53
 - Office 365 GDPR
 
-评估包括以下几个组件：
+评估具有以下几个组件：
   
 - **范围内的服务**：每个评估适用于一组特定的 Microsoft 服务。
 - **Microsoft 托管控件**：对于每个云服务，microsoft 实施并管理一组适用标准和管理法规的合规性控制。
-- **客户管理的控件**：这是您对每个控件执行操作时由您的组织实现的控件的集合。
+- **客户管理的控件**：当您对每个控件执行操作时，这些控件由您的组织实现。
 - **评估分数**：评估中客户管理的控件的总可能分数的百分比。 这可帮助您跟踪分配给每个控件的操作的实现。
 
 ## <a name="controls"></a>控件
@@ -79,7 +94,7 @@ ms.locfileid: "42635150"
 
 ![合规性管理器版本3中的控件](../media/compliance-manager-controls.png)
 
-合规性管理器、 **Microsoft 托管控件**、**客户托管控件**和**共享管理控件**中有三种类型的控件
+合规性管理器、 **Microsoft 托管控件**、**客户托管控件**和**共享管理控件**中有三种类型的控件。
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 托管控件
 
@@ -87,7 +102,7 @@ ms.locfileid: "42635150"
 
 ### <a name="customer-managed-controls"></a>客户管理的控件
 
-这是由您的组织管理的控件的集合。 您的组织负责客户托管的控制实施，作为给定标准或法规的合规性流程的一部分。 将客户管理的控件组织为相应的证书或法规的控制系列。 使用客户托管的控件来实施 Microsoft 建议的建议操作，作为合规性活动的一部分。 您的组织可以使用每个客户托管控件中的规范性指南和建议的客户操作来管理该控件的实施和评估过程。
+客户管理的控件由您的组织管理。 您的组织负责客户托管的控制实施，作为给定标准或法规的合规性流程的一部分。 将客户管理的控件组织为相应的证书或法规的控制系列。 使用客户托管的控件来实施 Microsoft 建议的建议操作，作为合规性活动的一部分。 您的组织可以使用每个客户托管控件中的规范性指南和建议的客户操作来管理该控件的实施和评估过程。
 
 评估中的客户管理的控件还具有内置工作流管理功能，可用于管理和跟踪评估完成的进展情况。 使用此工作流功能，可以执行以下操作：
 
@@ -109,9 +124,11 @@ ms.locfileid: "42635150"
 
 组织中的人员可以使用合规性管理器从其分配的所有评估中查看客户托管的控件。 用户登录合规性管理器并打开“**操作项目**”仪表板时，会显示分配给他们的操作项目列表。 根据分配给用户的合规性管理器角色，他们可以提供实施或测试详细信息，更新状态或分配操作项目。
 
-证书控制通常由一个人实施，并由另一个人测试。 例如，在最初分配给一个人员以实现实施后，会将这些操作项分配给下一个测试和上载证据的人员。 对控制分配具有足够权限的任何用户都可以分配和重新分配操作项目。 这样可以集中管理控制分配以及 implementors 和测试人员之间的操作项目的分散路由。
+证书控制通常由一个人实现，并由另一个人测试。 例如，在最初分配给一个人员以实现实施后，会将这些操作项分配给下一个测试和上载证据的人员。 对控制分配具有足够权限的任何用户都可以分配和重新分配操作项目。 这样可以集中管理控制分配以及 implementors 和测试人员之间的操作项目的分散路由。
 
-## <a name="permissions"></a>Permissions
+请注意，合规性分数中的**改进操作**等效于合规性管理器中的**操作项**。
+
+## <a name="permissions"></a>权限
 
 合规性管理器使用基于角色的访问控制权限模型。 只有分配了用户角色的用户可访问合规性管理器，并且每位用户允许的操作受到角色类型的限制。 [查看](working-with-compliance-manager.md#permissions)显示每个权限允许执行的操作的表。
 
@@ -120,7 +137,7 @@ ms.locfileid: "42635150"
 1. 从 "最**多**" 下拉菜单中依次选择 "**管理员**" 和 "**设置**"。
 2. 在此处，选择要分配的角色，然后添加要分配给该角色的员工。 然后，用户将能够执行某些操作。
 
-此外，在[Azure Active Directory （AZURE AD）中分配了全局读者角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的用户拥有访问合规性管理器的只读权限。 但是，他们无法在合规性管理器中编辑数据或执行任何操作。
+[在 Azure Active Directory （AZURE AD）中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)向其分配了全局读者角色的用户拥有访问合规性管理器的只读权限。 但是，他们无法在合规性管理器中编辑数据或执行任何操作。
 
 不再存在默认**来宾访问**角色。 必须为每位用户分配一个角色，使其可访问合规性管理器并在其中工作。
   
@@ -148,13 +165,6 @@ ms.locfileid: "42635150"
 12. [加利福尼亚州消费者隐私法案（CCPA）](https://go.microsoft.com/fwlink/?linkid=2108871) （预览）
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳大利亚政府版 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （预览）
 14. [Microsoft 365 数据保护基准](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-
-## <a name="compliance-score"></a>合规性分数
-
-[Microsoft 合规性分数（预览版）](compliance-score.md)是 microsoft 365 合规性中心中的一项功能，可帮助您了解组织的合规性状况。 它将计算基于风险的分数，以衡量您在帮助降低数据保护和法规标准方面的风险的完成操作的进度。 了解您的总体合规性分数可帮助您的组织了解和管理合规性。 了解[如何计算合规性分数](compliance-score-methodology.md)。
-  
-> [!IMPORTANT]
-> 合规性分数不表示对任何特定标准或法规的组织合规性的绝对衡量。 它表示您已采用的控制程度，可降低个人数据和个人隐私的风险。 任何服务都不能保证您符合标准或法规，并且不应以任何方式将合规性分数解释为保证。
 
 ## <a name="secure-score-integration"></a>安全分数集成
 

@@ -13,24 +13,26 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何登录、设置权限以及了解 Microsoft 合规性分数的仪表板，这有助于简化和自动化风险评估。
-ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 了解如何设置和开始使用 Microsoft 合规性分数，这有助于简化和自动化风险评估。
+ms.openlocfilehash: 334eb47ebf5057bfa1c426715e8f404979ceaf5b
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635120"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141517"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合规性分数（预览）设置
 
 ## <a name="before-you-begin"></a>准备工作
 
-您的组织的 Microsoft 365 全局管理员可能是第一个访问合规性分数的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性得分时所述。
+您的组织的 Microsoft 365 全局管理员可能是第一个访问合规性分数的用户。 如果首次访问合规性分数，我们建议全局管理员登录并设置以下所述的用户权限。
 
 ## <a name="sign-in"></a>登录
 
 1. 请转到[microsoft 365 合规性中心](https://compliance.microsoft.com/)并使用 microsoft 365 全局管理员帐户**登录**。
 2. 在左侧导航窗格中选择 "**合规性分数**"。 然后，您应看到[符合性分数仪表板与您的分数](#understand-the-compliance-score-dashboard)。
+
+访问合规性分数的直接链接为： [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore)。
 
 ## <a name="set-user-permissions-and-assign-roles"></a>设置用户权限并分配角色
 
@@ -38,9 +40,9 @@ ms.locfileid: "42635120"
 
 ### <a name="where-to-set-permissions"></a>设置权限的位置
 
-您的组织的全局管理员可以在 Microsoft 365 合规性中心或 Azure Active Directory （Azure AD）中设置用户权限。 一旦在这两个位置中设置了角色，用户就能够访问合规性分数（以及合规性管理器）。
+您的组织的全局管理员可以在 Microsoft 365 合规性中心或 Azure Active Directory （Azure AD）中设置用户权限。 一旦在这两个位置中设置了角色，用户就可以访问合规性分数以及合规性管理器。
 
-请注意，现有合规性管理器角色**不会**转移到合规性分数。  这意味着，如果之前在合规性管理器中分配了一个角色，该角色将不会向您授予对合规性分数的访问权限。 全局管理员需要在 Microsoft 365 合规性中心或 Azure AD 中为你设置权限和角色，以便你可以访问合规性分数。
+请注意，现有合规性管理器角色**不会**转移到合规性分数。 如果您在合规性管理器中有角色且对合规性分数是新的，则合规性管理器角色不会授予您对合规分数的访问权限。 全局管理员需要在 Microsoft 365 合规性中心或 Azure AD 中为你设置权限和角色，以便你可以访问合规性分数。
 
 ### <a name="role-types"></a>角色类型
 
@@ -68,11 +70,11 @@ ms.locfileid: "42635120"
 
 ## <a name="configure-automatic-secure-score-updates"></a>配置自动安全得分更新
 
-默认情况下，所有新租户都启用了[安全分数](../security/mtp/microsoft-secure-score.md)自动更新。 这意味着，安全得分监控的所有操作将自动更新合规性分数中相同操作的状态。
+默认情况下，所有新租户都启用了[安全分数](../security/mtp/microsoft-secure-score.md)自动更新。 安全分数监控的所有操作将自动更新合规性分数中相同操作的状态。
 
 全局管理员可以管理此设置，以关闭所有操作的自动更新，或者分别设置各个操作的更新。
 
-在公共预览过程中，需要转到 Microsoft 服务信任门户（其中合规性管理器位于其中）以管理安全分数更新。
+在公共预览过程中，需要转到 Microsoft 服务信任门户（其中合规性管理器位于其中）以管理安全得分更新。
 
 若要管理自动安全得分更新，请按照以下步骤操作：
 
@@ -84,7 +86,7 @@ ms.locfileid: "42635120"
 
 如果选择 **"每个操作设置"，请**执行以下额外步骤，为单个操作打开安全得分更新：
 
-4. 从顶部菜单中选择 "**合规性管理器**" （注意：不要选择 "合规性管理器（经典）"）。
+4. 从顶部菜单中选择 "**合规性管理器**" （不要选择 "合规性管理器（经典）"，这是旧产品）。
 
 5. 选择屏幕右上角的 "**租户管理**"。
 
@@ -106,7 +108,7 @@ ms.locfileid: "42635120"
 
 ### <a name="overall-compliance-score"></a>总体合规性分数
 
-你的合规性分数，在顶部突出重点，显示了根据完成提高操作（解决关键数据保护标准和法规）实现的积分的百分比。
+你的合规性分数在顶部一目了然。 它显示的百分比取决于完成解决关键数据保护标准和法规的提高操作所能实现的积分。
 
 首次遇到合规性得分时，最初的分数基于内置的 Microsoft 365 数据保护基准，这是一组包含常见行业法规和标准的控件。 由于合规性分数会扫描您的现有 Microsoft 365 解决方案的系统，因此它会根据您的组织当前启用的隐私和安全设置对合规性状态进行初始评估。
 
@@ -114,11 +116,11 @@ ms.locfileid: "42635120"
 
 ### <a name="key-improvement-actions"></a>关键改进操作
 
-此部分列出了您现在可以执行的首要改进操作，以对您的总体合规性分数产生最大的积极影响。 它列出了未完成或因具有高风险的评估而失败的操作。
+此部分列出了您现在可以执行的首要改进操作，以对您的总体合规性分数产生最大的积极影响。
 
 ### <a name="solutions-that-affect-your-score"></a>影响你的成绩的解决方案
 
-此部分显示哪些解决方案包含的操作具有最大的积极影响得分的机会，以及每个解决方案中有多少未解决的改进操作。
+本部分介绍了一些解决方案，其中包含的操作具有最大的积极影响得分的机会，以及每个解决方案中未完成的改进操作的数量。
 
 ### <a name="compliance-score-breakdown"></a>合规性分数细分
 
@@ -134,9 +136,9 @@ ms.locfileid: "42635120"
 应用筛选器：
 
 1. 选择仪表板右上侧的 "**筛选器**"。
-2. 从飞出的 "**筛选**器" 窗格中选择筛选条件，然后选择 "**应用**"。
+2. 从 "**筛选器**" 浮出控件窗格中选择筛选条件，然后选择 "**应用**"。
 
-应用筛选器后，您将看到实时调整的分数。 合规性分数百分比和细目信息以及改进操作和解决方案现在仅适用于您的筛选器条件所覆盖的数据。 如果你注销合规性分数，则在重新登录时将保留你的筛选视图。
+在应用筛选器之后，你将看到实时调整的分数。 合规性分数百分比和细目信息以及改进操作和解决方案现在仅适用于您的筛选器条件所覆盖的数据。 如果你注销合规性分数，则在重新登录时将保留你的筛选视图。
 
 若要删除筛选器：
 

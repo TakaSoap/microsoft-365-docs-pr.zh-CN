@@ -21,17 +21,14 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态来手动更改订阅。
-ms.openlocfilehash: 0042e0fd2fa5ac10be512246c252bc1d0f679709
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238248"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142147"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
-
-> [!NOTE]
-> 本文适用于新的管理中心。 新管理中心可供所有 Microsoft 365 管理员使用，您可以选择在主页顶部的 **"尝试新管理中心"** 切换（位于主页顶部）选择 ""。 有关详细信息，请参阅[关于新 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。 若要查看有关旧管理中心的文章，请参阅[手动切换 Office 365 for business 计划](switch-plans-manually.md)。
 
 ## <a name="step-1-decide-how-to-change-plans"></a>步骤1：决定如何更改计划
 
@@ -52,7 +49,7 @@ ms.locfileid: "42238248"
 
 **已购买？** 如果您已有要将用户移动到的订阅，请跳过此步骤并转到本主题中的[步骤3：检查您的新订阅和许可证](#step-3-check-your-new-subscription-and-licenses)。
 
-或
+OR
 
 **购买新的订阅和许可证：** 按照 "[购买其他 Office 365 for business 订阅](../buy-another-subscription.md)" 中的步骤购买新订阅。
 
@@ -86,7 +83,7 @@ ms.locfileid: "42238248"
 
 ### <a name="reassign-a-license-for-one-user"></a>为一个用户重新分配许可证
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要为其分配许可证的用户。
 
@@ -94,7 +91,7 @@ ms.locfileid: "42238248"
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次为多个用户重新分配许可证
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其替换现有许可证的用户的名称旁边的圆圈。
 
@@ -117,4 +114,5 @@ If you moved all users from one subscription to another, and you no longer need 
 如果仅将一些用户移动到其他订阅，请[删除](../licenses/remove-licenses-from-subscription.md)不再需要的许可证。
 
 ## <a name="call-support-to-help-you-change-plans"></a>致电支持部门以帮助你更改计划
+
 [致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)

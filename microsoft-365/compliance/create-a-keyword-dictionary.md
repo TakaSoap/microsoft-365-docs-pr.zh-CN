@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 标识敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）或不当/露骨语言时。虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小受限，且必须修改 XML 才能创建或编辑它们。借助关键字词典，可以更大规模地轻松管理关键字（每个词典最多支持 100,000 个关键字）。
-ms.openlocfilehash: 3677fc01ef226b57b7b33c630e79ea12f9fb0a5a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ae63a9bf10ee43b3f761d8c60652c7c2a5e8b5f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595649"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141507"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字词典
 
-Office 365 中的数据丢失防护（DLP）可以识别、监视和保护您的敏感信息。识别敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）时，或者不恰当或明确的语言。虽然您可以在敏感信息类型中创建关键字列表，但关键字列表的大小受到限制，并需要修改 XML 以创建或编辑它们。关键字字典提供了更简单的关键字管理和更大的规模，支持每个字典最多为100000个术语。
+Office 365 中的数据丢失防护（DLP）可以识别、监视和保护您的敏感信息。识别敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）时，或者不恰当或明确的语言。虽然您可以在敏感信息类型中创建关键字列表，但关键字列表的大小受到限制，并需要修改 XML 以创建或编辑它们。关键字字典提供了更简单的关键字管理和更大的规模，支持每个字典最多100KB 的术语。
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>创建关键字词典的基本步骤
 

@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何在 Office 365 for business 发票上解释费用、帐单和付款信息，以及如何更改采购订单编号。
-ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354683"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142295"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>了解 Office 365 商业版发票
 
@@ -64,7 +64,7 @@ ms.locfileid: "42354683"
 下表介绍了发票上可能显示的字段。此处列出的某些字段可能未在发票中显示，具体取决于是通过发票还是通过信用卡或银行帐户付款。
   
 > [!NOTE]
-> 在某些国家或地区不提供按银行帐户付款。
+> 某些国家或地区不支持银行帐户支付。
   
 |**名称**|**说明**|
 |:-----|:-----|
@@ -104,8 +104,6 @@ ms.locfileid: "42354683"
 
 ::: moniker range="o365-worldwide"
 
-### <a name="use-the-new-admin-center-to-change-your-purchase-order-number"></a>使用新管理中心更改你的采购订单编号
-
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
 2. 如果处于**表格**视图中，请选择 "**卡片**" 切换视图。
@@ -116,21 +114,11 @@ ms.locfileid: "42354683"
 
 5. 在 "**编辑付款详细信息**" 窗格的底部，输入您的订单编号，然后选择 "**保存**"。
 
-### <a name="use-the-old-admin-center-to-change-your-purchase-order-number"></a>使用旧管理中心更改采购订单编号
-
-1. 在管理中心中，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
-
-2. 选择要更改的订阅，在 "**付款方式**" 部分，选择 "**更新付款详细信息**"。
-
-3. 在 "**更新付款详细信息**" 窗格中，选择 "**不感谢**"。
-
-4. 在 "**更新付款详细信息**" 窗格的底部，输入您的 PO 号码，选择 "**提交**"，然后单击 "**关闭**"。
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择要更改的订阅，并在 "**付款方式**" 部分，选择 "**更改付款详细信息**"。
 
@@ -140,7 +128,7 @@ ms.locfileid: "42354683"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选择要更改的订阅，并在 "**付款方式**" 部分，选择 "**更改付款详细信息**"。
 

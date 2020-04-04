@@ -14,35 +14,54 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: de69d4c7e5938d8bfd3fed74b9ae44288e48019c
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635140"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141537"
 ---
-# <a name="release-notes-for-compliance-manager-preview"></a>合规性管理器的发行说明（预览）
+# <a name="microsoft-compliance-manager-preview-release-notes"></a>Microsoft 合规性管理器（预览）发行说明
 
-合规性管理器的公共预览版为您提供早期访问即将推出的功能和更新。
+合规性管理器的公共预览版为您提供早期访问即将推出的功能和更新。 此页面包含有关当前版本的新功能、改进功能和已知问题的更新。
 
-您可以使用[服务信任门户](https://servicetrust.microsoft.com)上的更新的[合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)工具来跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
+您可以使用[服务信任门户](https://servicetrust.microsoft.com)上的[合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)工具来跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
 
-## <a name="whats-new-in-compliance-manager-preview"></a>合规性管理器中的新增功能（预览）
+## <a name="improved-template-creation-and-update-process"></a>改进的模板创建和更新过程
 
-- **基于角色的对合规性管理器的访问：** 已删除默认的**来宾访问**角色。 为使用户能够访问合规性管理器，全局管理员必须为[每个用户分配一个权限](compliance-manager-overview.md#permissions)。
+我们已经更新了导入、导出和修改用于评估的模板的过程。 全新的简化体验使您能够更轻松地将自己的评估引入工作流并将其更新。
 
-- **更新的合规性分数**：合规性分数现在包括 Microsoft 管理的操作的分数。 因此，你的分数将增加。
+### <a name="the-old-process"></a>旧进程
 
-- **Actions 项：** 操作项现在是单个项目，并且许多包含来自 Microsoft 安全分数图形 API 的遥测集合。 在可能的情况下，技术操作建议现在有指向 Office 365 服务中适用配置页面的链接。
+在合规性管理器中创建模板的方法有两种。 您可以复制现有模板，或将模板数据从 Excel 电子表格导入到新模板中。 在 "**模板**" 页上，选择 " **+ 添加模板**" 以创建新模板，方法是输入名称，选择 "维度"，然后上传具有特定格式和架构的 Excel 文件。 或者，您可以选中 "**从现有模板复制**" 框，选择要复制的模板，然后验证维度。 设计自定义模板需要一个多步骤过程，该过程是在创建模板后选择 "**添加自定义控件**" 开始执行的。
 
-- **租户管理：** 用于管理合规性管理器中的新数据元素的新界面（预览）：
-    - **维：** 查看、添加和自定义模板、评估和操作项的元数据，以允许您为筛选器创建自定义透视。
-    - **所有者：** 为每个即席项目指定一个所有者。
-    - **客户操作：** 管理合规性管理器（预览版）中包含的操作项的完整列表，并启用/禁用与安全得分集成的操作项的安全分数监视。
+### <a name="the-new-process"></a>新进程
+
+我们使您能够更轻松地创建新模板。 在单步**扩展**过程中，可以将包含操作和控件的电子表格添加到现有的 Microsoft 模板中，以生成自己的自定义版本。 在合规性管理器的 "**模板**" 页上，选择 " **+ 添加模板**"。 在 "**模板**" 浮出控件窗格中，选中 "**从全局模板创建扩展**" 复选框。 您可以使用比以前更复杂的新 Excel 格式添加自定义项。 此新进程将替换**现有模板中**的前一副本并**添加自定义控件**函数。
+
+每次通过以下概述的版本控制过程更新最初的评估时，您的自定义评估将继承这些更新并保留您的自定义控件。
+
+此外，还可以更轻松地修改您自己的现有模板。 您可以导出模板，在同一工作簿中进行更改，然后在保存编辑内容后将其导入。
+
+查看有关使用此新过程[创建模板](working-with-compliance-manager.md#templates)的详细说明。
+
+## <a name="versioning-notice-and-control"></a>版本控制通知和控制
+
+您的组织在2020年4月发布的合规性管理器中收到更新的评估，以帮助您与认证和法规更新保持一致。 向前发展，我们将为你提供一个清楚的方法，以便你了解并接受通过**版本控制警报**的所有未来更新。
+
+只要有更新可用于评估模板或改进操作，警报图标都会通知您更新已准备就绪。 当您单击该图标时，将弹出一个窗口，说明更新并提示您接受。 选择警报图标可显示一个弹出窗格，该窗口说明更新并提示您接受。 了解有关[接受评估更新](working-with-compliance-manager.md#versioning-alerts-for-assessment-updates)的详细信息。
+
+## <a name="common-actions-will-synch-status-across-groups"></a>常见操作将同步组之间的状态
+
+如果您的组织具有多个评估组，**技术**操作（即影响整个组织的操作）的行为已发生更改。 跨组的任何重复操作都已合并到一个单一操作中。 该单个操作包含所有已上载的笔记和来自重复版本的证据。 进行此更改后，技术操作现在的行为与它们属于同一组时的行为相同。 现在，在一个组或评估中对操作所做的任何更改都将反映在所有实例中。 **实现状态**、**实现日期**、**测试状态**和**测试日期**将反映最新的更新。
+
+## <a name="language-support"></a>语言支持
+
+合规性管理器现已提供以下语言版本，除了英语：简体中文、中文（繁体）、法语、德语、意大利语、日语、朝鲜语、葡萄牙语（巴西）、俄语和西班牙语。
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>合规性管理器中的已知问题（预览）
 
-以下各节介绍了即将在即将发布的合规性管理器中解决的已知问题。
+以下部分介绍了当前版本的合规性管理器中的已知问题。
 
 ### <a name="compliance-score"></a>合规性分数
 
@@ -58,26 +77,6 @@ ms.locfileid: "42635140"
 - 在创建新的评估时，分数将自动包含 Microsoft 托管的控制得分和安全得分集成。
 - 安全分数集成不支持的任何操作都可以手动实现。 手动实现将考虑该操作的组的分数。
 
-### <a name="microsoft-managed-controls"></a>Microsoft 托管控件
-
-- Microsoft 托管控件的测试日期不会显示在 UI 中，即使在评估中也不会如此。 若要查看测试日期信息，必须导出该评估。
-
-### <a name="customization"></a>自定义
-
-- 通过添加自定义控件，可以向现有控件系列添加新控件，但不允许您添加新的控件系列。
-- 此版本不支持链接操作项，也不能向评估添加操作项或控件。
-- 如果创建自定义操作，则不能对其进行编辑或将其删除。
-
-### <a name="control-families-not-shown-in-assessments"></a>控制系列未在评估中显示
-
-- 导入模板时，基于该模板的所有评估都会反映属于该模板的所有控制系列。 但是，如果向模板中添加新的控制系列，则任何现有评估都不会反映这些更改。 仅由更新后的模板创建的新评估将反映所做的更改。
-
-### <a name="templates"></a>模板
-
-- 创建模板时，您必须包括**产品**和**证书**的维度，以确保您的模板在合规性分数中显示。
-- 存档的模板是可编辑的，不应是可编辑的。
-- 锁定的模板允许在不应进行评估时创建评估。 锁定模板旨在防止它用于创建评估。
-
 ### <a name="export"></a>导出
 
 - 将模板状态设置为 "已**导入**" 或 "**待审批**" 时，模板导出到 JSON 失败。
@@ -92,7 +91,3 @@ ms.locfileid: "42635140"
 ### <a name="session-timeout"></a>会话超时
 
 - 会话超时时，可能会出现 "发生错误" 错误。 若要解决此问题，请转到[合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)，然后重新登录。
- 
-### <a name="language-support"></a>语言支持
-
-- 并非所有网页都支持所有语言。 如果本地语言不受支持，请在美国英语中查看。

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用针对你所在地区或区域设置列出的电话号码、联机提交服务请求或访问 Microsoft Store，以获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4bb35f6d8c2895ec7adf37c6b4e149962fb616bc
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106056"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142547"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>联系商业版产品的支持人员 - 管理员帮助
 
@@ -39,9 +39,6 @@ ms.locfileid: "43106056"
 ## <a name="online-support"></a>[联机支持](#tab/online)
 
 通过在线发起服务请求节省时间。我们将帮助你找到解决方案，或请专家通过电子邮件或电话与你联系。[了解初始支持响应时间](https://go.microsoft.com/fwlink/p/?LinkId=518251)。
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果收到消息，显示你无权访问此页或执行此操作，那么你应该不是管理员。[谁在我的公司中拥有管理员权限？](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
@@ -80,8 +77,6 @@ ms.locfileid: "43106056"
 2. 输入你的位置并进行搜索，以查找附近的 Microsoft Store。
 
 3. 选择商店，然后选择“**立即安排服务约会**”。
-
----
 
 ::: moniker-end
 

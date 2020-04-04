@@ -22,18 +22,20 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态，手动切换 Office 365 for business 订阅。
-ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354704"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142099"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>手动切换 Office 365 商业版计划
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> 本文适用于旧管理中心。 若要查看有关新管理中心的文章，请参阅[手动更改计划](change-plans-manually.md)。 新管理中心可供所有 Microsoft 365 管理员使用，您可以选择在主页顶部的 "**尝试新管理中心**" 切换（位于主页顶部）选择 ""。 有关详细信息，请参阅[关于新 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
+> 本文适用于旧管理中心。 若要查看有关新管理中心的文章，请参阅[手动更改计划](change-plans-manually.md)。 新的管理中心可供所有 Microsoft 365 管理员使用。 有关详细信息，请参阅[关于新 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
+
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>步骤1：确定如何切换计划
@@ -62,7 +64,7 @@ ms.locfileid: "42354704"
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤3：检查新的订阅和许可证
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
 
     如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
 

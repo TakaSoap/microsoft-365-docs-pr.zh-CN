@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '了解如何使用产品密钥续订 Office 365 for business 订阅，并打开或关闭定期记帐。 '
-ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959212"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142111"
 ---
 # <a name="renew-office-365-for-business"></a>续订 Office 365 for business
 
@@ -47,9 +47,6 @@ ms.locfileid: "42959212"
 如果你使用产品密钥预付订阅，你的订阅将在订阅期限结束时过期。 您可以打开**定期付费**，并提供信用卡或银行帐户信息，以便您的订阅将在您订阅的一天内每年继续计费。 您还可以选择每月支付一次，也可以提前支付全年费用。 您的信用卡或银行帐户在初始订阅期限到期之前不会得到支付。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
@@ -117,9 +114,7 @@ ms.locfileid: "42959212"
 ## <a name="related-articles"></a>相关文章
 
 [重新激活订阅](reactivate-your-subscription.md)
-  
-[添加、更新或删除信用卡或银行帐户](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
+
 [我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
 
 [添加、更新或删除支付方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 了解如何更新 Office 365 for business 的帐单邮寄地址。 您还可以更新用于接收帐单通知的电子邮件地址。
 ms.custom: okr_SMB
-ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409637"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142307"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>更改 Office 365 商业版的帐单邮寄地址
 
@@ -62,9 +62,6 @@ ms.locfileid: "42409637"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
 ::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>更改售达地址
@@ -91,7 +88,7 @@ ms.locfileid: "42409637"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择要更改的订阅，然后选择 "**更改付款详细信息**"。
 
@@ -111,7 +108,7 @@ ms.locfileid: "42409637"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选择要更改的订阅，然后选择 "**更改付款详细信息**"。
 
@@ -137,7 +134,7 @@ ms.locfileid: "42409637"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择要更改的订阅，选择 "**更多操作**"，然后选择 "**编辑服务使用地址**"。
 
@@ -149,7 +146,7 @@ ms.locfileid: "42409637"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选择要更改的订阅，选择 "**更多操作**"，然后选择 "**编辑服务使用地址**"。
 
@@ -176,12 +173,24 @@ ms.locfileid: "42409637"
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>更改其他管理员的备用电子邮件地址
 
 还可以更改组织中其他全局管理员和帐单管理员的备用电子邮件地址。
-  
-1. 在 "管理中心" 中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帐单通知</a>" 页面。
 
-    如果你使用的是 Office 365 德国，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">帐单通知</a>页。
+::: moniker range="o365-worldwide"
 
-    如果你正在使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">帐单通知</a>页。
+1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">账单通知</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 "管理中心" 中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">帐单通知</a>" 页面。
+
+::: moniker-end
 
 2. 在 "**计费通知**" 页面上，选择要更改的管理员。
 
@@ -193,6 +202,4 @@ ms.locfileid: "42409637"
 
 [了解发票](understand-your-invoice2.md)
 
-[付款 yoursubscription](pay-for-your-subscription.md)
-
-[订阅和帐单-管理员帮助](../index.yml)
+[为订阅付款](pay-for-your-subscription.md)

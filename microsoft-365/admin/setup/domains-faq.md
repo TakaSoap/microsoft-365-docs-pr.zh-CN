@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 通过在 FAQ 中查找问题的答案，了解有关 Office 365 中的域的详细信息。
 ms.custom: okr_smb
-ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633180"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142499"
 ---
 # <a name="domains-faq"></a>关于域的常见问题
 
@@ -230,7 +230,7 @@ ms.locfileid: "42633180"
     
 2. 在 "**域**" 页上，选择要将其设置为新电子邮件地址的默认域的域。 
     
-3. 选择 "**设为默认值**"。
+3. 选择“**设为默认值**”。
     
 ::: moniker range="o365-worldwide"
 
@@ -285,9 +285,9 @@ ms.locfileid: "42633180"
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>为什么我有 "onmicrosoft.com" 域？
 
-当您注册服务时，Office 365 将为您创建一个域，如*contoso.onmicrosoft.com*。 注册时创建的用户 ID 包括域，如*alan@contoso.onmicrosoft.com*。 
+当您注册服务时，Office 365 将为您创建一个域，如_contoso.onmicrosoft.com_。 注册时创建的用户 ID 包括域，如_alan\@contoso.onmicrosoft.com_。 
   
- **如果您想让您的电子邮件看起来像*alan\@contoso.com*：** [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Office 365](add-domain.md)中的步骤" 中的步骤，如果您已拥有它。 
+ __如果您想让您的电子邮件看起来像_alan\@contoso.com_：__ [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Office 365](add-domain.md)中的步骤" 中的步骤，如果您已拥有它。 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.com"，则不能将其更改为 "fabrikam.onmicrosoft.com"。 若要使用不同的 onmicrosoft.com 域，必须启动一个使用 Office 365 的新订阅。 
     
@@ -300,11 +300,12 @@ ms.locfileid: "42633180"
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>为什么我有 "onmicrosoft.de" 域？
 
-当您注册服务时，Office 365 将为您创建一个域，如*contoso.onmicrosoft.de*。 注册时创建的用户 ID 包括域，如*alan@contoso.onmicrosoft.de*。 
+当您注册服务时，Office 365 将为您创建一个域，如*contoso.onmicrosoft.de*。 注册时创建的用户 ID 包括域，如 "alan@contoso.onmicrosoft.de"。 
   
- **如果您想让您的电子邮件看起来像*alan@contoso.de*：** [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照[将用户和域添加到 Office 365](add-domain.md)中的步骤（如果您已拥有它）。 
+如果您想让您的电子邮件看起来像 "alan@contoso.de"：[购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Office 365](add-domain.md)中的步骤" 中的步骤进行操作。如果你已拥有它 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.de"，则不能将其更改为 "fabrikam.onmicrosoft.de"。 若要使用不同的 onmicrosoft.de 域，必须启动一个使用 Office 365 的新订阅。 
     
@@ -444,7 +445,7 @@ ms.locfileid: "42633180"
         
     4. 将电子邮件测试给其他电子邮件系统上的人。 例如，将电子邮件发送到用户 C。应将此电子邮件传递到原始邮件服务器上的用户 C 邮箱。
         
-    5. 从外部帐户或从其他电子邮件系统上的员工电子邮件帐户中，验证是否在其他电子邮件系统上正确设置了转发。 例如，在用户 C 的 origninal 服务器帐户或 Hotmail 帐户中，向用户发送一封电子邮件，并验证它是否到达用户 A 的 Office 365 邮箱。
+    5. 从外部帐户或从其他电子邮件系统上的员工电子邮件帐户中，验证是否在其他电子邮件系统上正确设置了转发。 例如，在用户 C 的原始服务器帐户或 Hotmail 帐户中，向用户发送一封电子邮件，并验证它是否到达用户 A 的 Office 365 邮箱。
         
 9. 移动邮箱内容
     

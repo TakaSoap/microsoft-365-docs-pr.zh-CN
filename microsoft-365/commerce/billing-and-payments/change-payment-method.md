@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 了解如何更改业务订阅的付款方式。
-ms.openlocfilehash: c3833b656eb00eeb5a8c5e78fbdb7ae4ff9c2321
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 8b9ae2a8396ff984b8468cf364c1112cb2ef6b13
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633410"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142593"
 ---
 # <a name="change-your-payment-method"></a>更改付款方式
 
@@ -75,7 +75,7 @@ ms.locfileid: "42633410"
 如果要从*信用卡或银行帐户移动到发票*，则任何未完成的余额都会转移到下一张发票。
   
 > [!NOTE]
-> 如果通过信用卡支付，并且信用卡被拒绝，将收到一封电子邮件，告知无法处理该付款。 可更新信用卡信息并使用" **订阅**"页上的" **立即支付**"按钮立即提交付款。 有关详细信息，请参阅[如果我的信用卡被拒绝且付款过期，该怎么办？](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
+> 如果通过信用卡支付，且信用卡被拒，将收到一封电子邮件，告知无法处理该付款。 可更新信用卡信息并使用" **订阅**"页上的" **立即支付**"按钮立即提交付款。 有关详细信息，请参阅[如果我的信用卡被拒绝且付款过期，该怎么办？](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
   
 ::: moniker-end
 
@@ -86,8 +86,6 @@ ms.locfileid: "42633410"
 > 以下步骤仅适用于单个订阅。如果你的组织中有多个订阅，则为每个你希望进行更改的订阅完成这些步骤。
   
 当您从发票付款更改为支付信用卡或银行帐户时，我们会自动为您创建一个新的订阅，将用户移动到新订阅，然后禁用旧订阅。 不要担心，你的用户将不会看到服务中断，并且所有信息都将通过新订阅提供。
-
-### <a name="use-the-new-admin-center-to-change-from-invoice-to-credit-card-or-bank-account"></a>使用新管理中心将发票更改为信用卡或银行帐户
 
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
@@ -102,28 +100,6 @@ ms.locfileid: "42633410"
 6. 如果添加付款方法，请输入信用卡或帐户详细信息，然后选择 "**保存**"。
   
 7. 确认所选的支付方式正确，然后选择 "**保存**"。
-
-### <a name="use-the-old-admin-center-to-change-from-invoice-to-credit-card-or-bank-account"></a>使用旧管理中心将发票更改为信用卡或银行帐户
-
-1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
-
-2. 查找要更改的订阅。 在 "**付款详细信息**" 部分，选择 "**更改付款详细信息**"。
-  
-3. 在 "**更改付款详细信息**" 窗格中，选择 "**更改付款方式**"。
-  
-4. 在 "**更改付款方法**" 对话框中，选择 "**继续**"。
-  
-5. 在 "**如何实现这一外观？** " 页面上，您可以根据需要增加此订阅的许可证数量。 若要继续，请选择 "**下一步**"。
-
-6. 某些订阅提供包月和包年两种选项。如果在" **要如何支付？**"页面上看到按年或按月支付的选项，请选择所需的支付频率。
-  
-7. 在 "**付款方式**" 列表中，选择 "**现有卡**号"、"**新信用卡**" 或 "**新银行帐户**"。
-  
-8. 如果你选择 "**新建信用卡**或**新银行帐户**" 选项，请填写你的付款信息的其余部分。
-
-9. 填写完表单后，选择 "**下订单**"。
-
-返回到" **订阅**"页面时，你将看到标记为" **已禁用**"的旧订阅以及标记为" **活动**"的新订阅。你可以让旧订阅过期。
 
 ::: moniker-end
 
@@ -164,8 +140,6 @@ ms.locfileid: "42633410"
 
 如果您的订单数量过高，可能需要进行信用检查。 如果是这样，您会看到 "不符合更改为发票的消息" 消息。 您的订单需要进行信用检查。 在这种情况下，您将改为手动按发票付款。 使用以下步骤完成手动更改。
 
-如果不需要进行信用检查，请使用[新管理中心的步骤将信用卡或银行帐户更改为发票](#use-the-new-admin-center-to-change-from-credit-card-or-bank-account-to-invoice)。
-
 1. 转到<a href="https://Office365.com" target="_blank">Office365.com</a>并购买与您当前拥有的订阅相同的订阅。 在 "签出" 中，选择选项 "按发票付款"。
 
 > [!IMPORTANT]
@@ -173,7 +147,7 @@ ms.locfileid: "42633410"
 
 2. 购买完成后，取消原始订阅。 您的用户将自动移到新订阅。
 
-### <a name="use-the-new-admin-center-to-change-from-credit-card-or-bank-account-to-invoice"></a>使用新管理中心将信用卡或银行帐户更改为发票
+如果不需要进行信用检查，请使用以下步骤更改为 "按发票付款"。
 
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
@@ -190,23 +164,6 @@ ms.locfileid: "42633410"
 7. 完成后，请选择 "**保存**"。
 
 8. 确认所选的支付方式正确，然后选择 "**保存**"。
-
-### <a name="use-the-old-admin-center-to-change-from-credit-card-or-bank-account-to-invoice"></a>使用旧管理中心将信用卡或银行帐户更改为发票
-
-1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
-
-2. 查找要更改的订阅。 在 "**付款方法**" 部分，选择 "**更改付款详细信息**"。
-
-    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
-  
-3. 在 "**更改付款详细信息**" 窗格中，选择 "**更改付款方式**"。
-
-    > [!TIP]
-    > 如果未显示 "**更改付款方式**" 链接，则表示无法将信用卡或银行帐户更改为发票，因为订阅不符合通过发票付款所需的最低成本金额。 最小成本金额因地理位置而异。
-  
-4. 在 "**更改付款方法**" 对话框中，选择 "**继续**"。
-  
-5. 选择 **"确定"** 返回到管理中心。
 
 ::: moniker-end
 
@@ -236,20 +193,9 @@ ms.locfileid: "42633410"
 
 可随时使用以下步骤来验证为订阅配置的付款方式。
 
-> [!NOTE]
-> 如果当前未使用新的 Microsoft 365 管理中心，则必须先将其打开。 若要打开它，请选择位于主页顶部的 "**尝试新管理中心"** 切换。
-
-### <a name="use-the-new-admin-center-to-verify-which-payment-method-is-configured"></a>使用新管理中心确认配置了哪种付款方式
-
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
 2. 查找要验证的订阅。 为订阅配置的付款方式将显示在 "**帐单**" 部分中。
-
-### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>使用旧管理中心确认配置了哪种付款方式
-
-1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
-
-2. 查找要验证的订阅。 为订阅配置的付款方式将显示在 "**付款方式**" 下。
 
 ::: moniker-end
 

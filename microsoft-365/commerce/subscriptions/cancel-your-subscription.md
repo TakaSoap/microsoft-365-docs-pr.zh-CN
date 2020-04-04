@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Office 365 for business 或 Microsoft 365 试用版或付费订阅。
-ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
-ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
+ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117940"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142159"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -42,9 +42,6 @@ ms.locfileid: "43117940"
 如果您添加了自己的域名以与订阅一起使用，则必须在取消订阅之前删除该域。 有关详细信息，请参阅[从 Office 365 中删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 

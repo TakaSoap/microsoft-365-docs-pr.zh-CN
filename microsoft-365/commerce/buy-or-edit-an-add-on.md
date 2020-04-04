@@ -22,24 +22,16 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: 了解如何购买外接程序，以将其他功能添加到 Office 365 for business 订阅中。 您还可以更新和删除加载项。
 ms.custom: okr_SMB
-ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3bd7648d2db9af262df6540c8133871d3736790e
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354803"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142271"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>购买或编辑 Office 365 商业版加载项
 
 多个 Office 365 商业版 计划都有可为订阅购买的加载项。为订阅购买了加载项后，加载项可为其提供其他功能。
-
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-::: moniker-end 
 
 ## <a name="buy-an-add-on"></a>购买加载项
 
@@ -63,7 +55,7 @@ ms.locfileid: "42354803"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要为其购买加载项的订阅。
 
@@ -85,7 +77,7 @@ ms.locfileid: "42354803"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要为其购买加载项的订阅。
 
@@ -105,14 +97,13 @@ ms.locfileid: "42354803"
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>更新加载项
 
-用于更新加载项的步骤取决于该加载项是传统加载项还是独立加载项，或者是独立加载项。 
+用于更新加载项的步骤取决于该加载项是传统加载项还是独立加载项，或者是独立加载项。
 
 将*传统加载项*链接到特定订阅。 如果取消订阅，则关联的加载项也会被取消。
   
-*独立加载项*未链接到特定订阅。 独立加载项在 "**订阅**" 页上显示为单独的订阅（或在新管理中心中的 "**产品 & 服务**" 页上），并拥有自己的到期日期。 管理独立加载项的方式与管理任何其他订阅的方式相同。
+*独立加载项*未链接到特定订阅。 独立加载项在 "**产品" & "服务**" 页上显示为单独的订阅，并拥有自己的过期日期。 管理独立加载项的方式与管理任何其他订阅的方式相同。
   
 ### <a name="update-a-traditional-add-on"></a>更新传统加载项
 
@@ -130,10 +121,9 @@ ms.locfileid: "42354803"
 
 ::: moniker-end
 
-
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要为其更新加载项的订阅。
 
@@ -156,7 +146,7 @@ ms.locfileid: "42354803"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要为其更新加载项的订阅。
 
@@ -174,7 +164,6 @@ ms.locfileid: "42354803"
     > 可以使用向上键和向下键更改用户许可证数量，也可以在对话框中直接输入所需数量。
   
     !['添加或删除许可证'对话框上的'许可证总数'框和'"提交'按钮。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
 
 ::: moniker-end
 
@@ -192,7 +181,7 @@ ms.locfileid: "42354803"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要更新的附加订阅，然后选择 "**添加/删除许可证**"。
 
@@ -207,7 +196,7 @@ ms.locfileid: "42354803"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要更新的附加订阅，然后选择 "**添加/删除许可证**"。
 
@@ -220,7 +209,6 @@ ms.locfileid: "42354803"
 
 ::: moniker-end
 
-
 ## <a name="remove-an-add-on"></a>删除加载项
 
 您可以取消独立的加载项，就像[取消订阅](subscriptions/cancel-your-subscription.md)一样。 或者，您可以使用上面的步骤将独立加载项的**定期记帐**设置为 "关闭"。 但是，不能在购买传统加载项后将其删除。 如果需要删除传统加载项，请[联系支持人员寻求帮助](../admin/contact-support-for-business-products.md)。
@@ -231,8 +219,6 @@ ms.locfileid: "42354803"
   
 有关 Skype for Business 加载项的详细信息，请参阅 [Skype for Business 和 Microsoft Teams 加载项许可](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)。
   
-****
-
 |**加载项**|**可用于以下订阅**|
 |:-----|:-----|
 |客户密码箱  <br/> | Office 365 企业版 E1  <br/>  Office 365 企业版 E3  <br/>  Office 365 企业版 E4  <br/> |

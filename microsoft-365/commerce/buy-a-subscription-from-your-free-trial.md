@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: 购买 Office 365 for business 订阅。 您可以购买您尝试的相同类型的订阅，也可以购买不同的计划。
-ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549799"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142283"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>了解如何购买 Office 365 商业版的试用版
 
@@ -66,7 +66,7 @@ ms.locfileid: "42549799"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在" **订阅**"页面上，选择要购买的试用版订阅的" **立即购买**"按钮。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42549799"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在" **订阅**"页面上，选择要购买的试用版订阅的" **立即购买**"按钮。
 
@@ -94,12 +94,9 @@ ms.locfileid: "42549799"
 
 ## <a name="buy-a-different-plan-than-your-trial"></a>购买与试用版不同的计划
 
-如果购买了与试用版不同的订阅类型，则必须将您的用户许可证从试用计划重新分配给新计划（在90天的宽限期结束后，才会在试用计划到期后结束），以便保留数据、帐户和配置。
+如果购买与试用版不同的订阅类型，则必须将您的用户许可证从试用计划重新分配给新计划（在90天的宽限期结束后，才能保留您的数据、帐户和配置）。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 在 "管理中心" 中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>" 页。
 
@@ -117,7 +114,7 @@ ms.locfileid: "42549799"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**添加订阅**"。
 
@@ -139,8 +136,7 @@ ms.locfileid: "42549799"
 
 ::: moniker range="o365-21vianet"
 
-
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**添加订阅**"。
 
@@ -159,7 +155,6 @@ ms.locfileid: "42549799"
 8. 在 "确认" 页上，选择 "**转到管理员主页**"。
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>相关文章
 

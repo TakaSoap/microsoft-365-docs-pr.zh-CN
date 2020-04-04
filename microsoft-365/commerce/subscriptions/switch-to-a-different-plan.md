@@ -24,34 +24,37 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 了解如何切换到新的 Office 365 for business 订阅。
-ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633400"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142087"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>切换到其他 Office 365 商业版计划
 
 当您的业务发生变化，或者您需要更多功能时，您可以切换计划。  
 
-切换计划的最简单方法是使用管理中心的 "**切换计划**" 按钮。 但是，在所有情况下都不支持使用 "**切换计划**" 按钮。 在某些情况下，您可能能够手动切换计划。
+切换计划最简单的方法是使用管理中心的“**切换计划**”按钮。 但是，在所有情况下都不支持使用 "**切换计划**" 按钮。 在某些情况下，您可能能够手动切换计划。
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> 本文适用于旧管理中心。 若要查看有关新管理中心的文章，请参阅[升级到其他计划](upgrade-to-different-plan.md)。 新管理中心可供所有 Microsoft 365 管理员使用，您可以选择在主页顶部的 "**尝试新管理中心**" 切换（位于主页顶部）选择 ""。 有关详细信息，请参阅[关于新的 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md) 
+> 本文适用于旧管理中心。 若要查看有关新管理中心的文章，请参阅[升级到其他计划](upgrade-to-different-plan.md)。 新的管理中心可供所有 Microsoft 365 管理员使用。 有关详细信息，请参阅[关于新的 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
+
 ::: moniker-end
 
 **需要其他内容吗？**
+
 - [取消订阅](cancel-your-subscription.md)
 - [将适用于家庭的 Office 365 升级到业务订阅](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>使用 "切换计划" 按钮
 
-使用 "**切换计划**" 按钮时，可以通过购买新计划（您可以将当前计划切换到该计划）的过程，在新计划中自动为所有用户分配许可证，并为您取消旧计划。 
+使用 "**切换计划**" 按钮时，可以通过购买新计划（您可以将当前计划切换到该计划）的过程，在新计划中自动为所有用户分配许可证，并为您取消旧计划。
   
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
 
     如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
 
@@ -95,4 +98,4 @@ ms.locfileid: "42633400"
   
 ## <a name="call-support-to-help-you-switch-plans"></a>致电支持部门，获取切换计划的支持
 
-![电话](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [呼叫支持](../../admin/contact-support-for-business-products.md)
+[致电支持人员](../../admin/contact-support-for-business-products.md)

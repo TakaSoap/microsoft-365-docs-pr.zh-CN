@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204231"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142679"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
@@ -67,13 +67,14 @@ Microsoft 托管桌面承担管理注册设备及其使用的 Microsoft 软件�
 ## <a name="need-more-details"></a>需要更多详细信息？
 有关 Microsoft 托管桌面的值（包括客户情景）的详细信息，请参阅[Microsoft 托管桌面](https://aka.ms/mmd)。 了解更多入门的更多方面是[路线图](https://aka.ms/AA6jiam)和可下载的单页[摘要](https://aka.ms/AA6ob3h)。 你可以在 Microsoft 托管桌面[博客](https://aka.ms/AA6l2dd)中找到最新的新闻。
 
-如果 Microsoft 托管桌面似乎适用于你的组织，你可以深入了解其他文档，这些文档详细说明了服务、如何准备您的组织以进行注册、如何开始使用服务，以及此后的日常操作。包括你和你的最终用户如何在需要时轻松获取帮助。 如果你已准备好参加主板，请首先联系你的[当地帐户团队](https://pages.email.office.com/contactmmd/)。
+如果 Microsoft 托管桌面似乎适用于你的组织，则可以深入了解其他文档，这些文档详细说明了服务、如何准备您的组织以进行注册、如何开始使用服务以及后续操作，包括您和最终用户如何在需要时轻松获取帮助。 如果你已准备好参加主板，请首先联系你的[当地帐户团队](https://pages.email.office.com/contactmmd/)。
 
 **更多概述和背景**这些主题主要针对技术和业务决策者，这些主题详细介绍了贵组织和 Microsoft 之间的角色和职责，以及 Microsoft 托管桌面中使用的技术的详细信息，以及该服务如何作为 ITIL 框架的一部分来适应更广泛的策略。
 
 - [Microsoft 托管桌面角色和职责](roles-and-responsibilities.md)
 - [Microsoft 托管桌面技术](technologies.md)
 - [Microsoft 托管桌面和 ITIL](../MMD-and-ITSM.md)
+- [Compliance](compliance.md)
 - [Microsoft 托管桌面服务说明](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **准备好进行注册**这些主题介绍在您的组织准备注册时需要执行的步骤，包括检查您的环境是否满足关键先决条件、配置网络、设置证书以及准备应用。

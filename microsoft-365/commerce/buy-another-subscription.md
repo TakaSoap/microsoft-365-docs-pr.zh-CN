@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: '了解如何为你的组织购买其他 Office 365 for business 订阅（如果你已拥有订阅）。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354643"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142259"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>购买另一个 Office 365 商业版订阅
 
@@ -40,9 +40,6 @@ ms.locfileid: "42354643"
 ## <a name="buy-another-subscription"></a>购买另一个订阅
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 在 "管理中心" 中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>" 页。
 
@@ -60,7 +57,7 @@ ms.locfileid: "42354643"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**添加订阅**"。
 
@@ -86,7 +83,7 @@ ms.locfileid: "42354643"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**添加订阅**"。
 
@@ -109,7 +106,6 @@ ms.locfileid: "42354643"
 8. 在 "确认" 页上，选择 "**转到管理员主页**"。
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>相关文章
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/19/2019
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,18 +17,19 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 查看 Office 365 中的根证书和证书颁发机构（Ca）的完整列表。
-ms.openlocfilehash: 7b3aeb4012f510b8ccd3d7e608a9aa9be04b01ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593193"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131505"
 ---
 # <a name="office-365-encryption-chains"></a>Office 365 加密链
 
 Office 365 利用了许多不同的证书提供程序。 下面介绍了客户在访问 Office 365 时可能遇到的已知 Office 365 根证书的完整列表。 有关您可能需要在自己的基础结构中安装的证书的信息，请参阅[Plan for 第三方 SSL 证书（适用于 Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates)）。 以下证书信息适用于 Office 365 的所有全球云实例和国家/地区。
 
-**ITAR customers （防卫 & GCC 高）：** 请联系云 TAM 或 SDM 以获取正确的 P7b 包。
+>[!NOTE]
+>有关适用于**DOD 和 GCC 高级**客户的证书信息，请参阅[Office 365 加密链-DOD 和 gcc high](encryption-office-365-certificate-chains-itar.md)。
 
 | **证书类型** | **P7b 下载** | **CRL 终结点** | **OCSP 终结点** | **AIA 终结点** |
 | --- | --- | --- | --- | --- |
@@ -41,7 +42,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **Subject** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
+| **主题** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | --- | --- |
 | **序列号** | 02：00：00： B9 |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -55,7 +56,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="cnnic-root"></a>**CNNIC 根**
 
-| **Subject** | CN = CNNIC ROOT<br>O = CNNIC<br>C = CN |
+| **主题** | CN = CNNIC ROOT<br>O = CNNIC<br>C = CN |
 | --- | --- |
 | **序列号** | 49:33:00:01 |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -70,7 +71,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="digicert-global-root-ca"></a>**DigiCert 全局根 CA**
 
-| **Subject** | CN = DigiCert 全局根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
+| **主题** | CN = DigiCert 全局根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **序列号** | 08：3B： E0：56：90：42：46： B1： A1：75：6A：59：59：91： C7：4A |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -85,7 +86,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert 高确定性 EV 根 CA**
 
-| **Subject** | CN = DigiCert 高确定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
+| **主题** | CN = DigiCert 高确定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **序列号** | 02： AC：5C：26：40：9B：40：40：40：：8F：0B： |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -100,7 +101,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="d-trust-root-class-3-ca-2-2009"></a>**D-信任根类 3 CA 2 2009**
 
-| **Subject** | CN = D-信任根类 3 CA 2 2009<br>O = D-信任 GmbH<br>C = DE |
+| **主题** | CN = D-信任根类 3 CA 2 2009<br>O = D-信任 GmbH<br>C = DE |
 | --- | --- |
 | **序列号** | 09：83： F3 |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -115,7 +116,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-信任根类 3 CA 2 EV 2009**
 
-| **Subject** | CN = D-信任根类 3 CA 2 EV 2009<br>O = D-信任 GmbH<br>C = DE |
+| **主题** | CN = D-信任根类 3 CA 2 EV 2009<br>O = D-信任 GmbH<br>C = DE |
 | --- | --- |
 | **序列号** | 09：83： F4 |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -130,7 +131,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="dst-root-ca-x3"></a>**DST 根 CA X3**
 
-| **Subject** | CN = DST 根 CA X3<br>O = 数字签名信任 Co。 |
+| **主题** | CN = DST 根 CA X3<br>O = 数字签名信任 Co。 |
 | --- | --- |
 | **序列号** | 44： AF：80：80：7：//：：///D6： A3：27：？ BA：89：30：39：，86：2E： F8：40：6B |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -144,7 +145,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entrust 根证书颁发机构-G2**
 
-| **Subject** | CN = Entrust 根证书颁发机构-G2<br>OU =&quot;（c） 2009 Entrust （inc.）仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O =&quot;Entrust，inc.。&quot;<br>C = 美国 |
+| **主题** | CN = Entrust 根证书颁发机构-G2<br>OU =&quot;（c） 2009 Entrust （inc.）仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O =&quot;Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **序列号** | 4A：53：8C：28 |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -158,7 +159,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Subject** | CN = Entrust 证书颁发机构（2048）<br>OU = （c） 1999 Entrust.net 限制<br>OU = entrust/CPS\_2048 合并。 by ref。（限制 s liab。）<br>O = Entrust |
+| **主题** | CN = Entrust 证书颁发机构（2048）<br>OU = （c） 1999 Entrust.net 限制<br>OU = entrust/CPS\_2048 合并。 by ref。（限制 s liab。）<br>O = Entrust |
 | --- | --- |
 | **序列号** | 38：63： DE： F8 |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -172,7 +173,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="globalsign"></a>**GlobalSign**
 
-| **Subject** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 根 CA-R2 |
+| **主题** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 根 CA-R2 |
 | --- | --- |
 | **序列号** | 04：00：00：00：01：01：0F：86：26： E6：0D |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -188,7 +189,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="globalsign-root-ca"></a>**GlobalSign Root CA**
 
-| **Subject** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
+| **主题** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **序列号** | 04：00：00：00：01：01：15：4B：5A： C3：94 |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -202,7 +203,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="thawte-primary-root-ca---g3"></a>**thawte 主根 CA-G3**
 
-| **Subject** | CN = thawte Primary Root CA-G3<br>OU =&quot;（c） 2008 Thawte （inc.）仅供授权使用&quot;<br>OU = 证书服务部门<br>O =&quot;Thawte，inc.。&quot;<br>C = 美国 |
+| **主题** | CN = thawte Primary Root CA-G3<br>OU =&quot;（c） 2008 Thawte （inc.）仅供授权使用&quot;<br>OU = 证书服务部门<br>O =&quot;Thawte，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **序列号** | 60：01：97： B7：46： A7： EA：9A： B4：： D6：4B： |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -216,7 +217,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign 类3公共主证书颁发机构-G5**
 
-| **Subject** | CN = VeriSign Class 3 公共主证书颁发机构-G5<br>OU =&quot;（c） 2006 VeriSign，inc.-仅供授权使用&quot;<br>OU = VeriSign 信任网络<br>O =&quot;VeriSign，inc.。&quot;<br>C = 美国 |
+| **主题** | CN = VeriSign Class 3 公共主证书颁发机构-G5<br>OU =&quot;（c） 2006 VeriSign，inc.-仅供授权使用&quot;<br>OU = VeriSign 信任网络<br>O =&quot;VeriSign，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **序列号** | 18： DA： D1：：9E：26：7D： E8： BB：：21：58： CD： CC：6B：3B：4A |
 | **公用密钥长度** | RSA 2048 位（e 65537） |
@@ -232,7 +233,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="cnnic-sha256-ssl"></a>**CNNIC SHA256 SSL**
 
-| **Subject** | CN = CNNIC SHA256 SSL <br>O = CNNIC SHA256 SSL <br>C = CN |
+| **主题** | CN = CNNIC SHA256 SSL <br>O = CNNIC SHA256 SSL <br>C = CN |
 | --- | --- |
 | **颁发者** | CN = CNNIC ROOT <br>O = CNNIC <br>C = CN |
 | **序列号** | 49：33：00：7C |
@@ -251,7 +252,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-信任 SSL 类 3 CA 1 2009**
 
-| **Subject** | CN = D-信任 SSL 类 3 CA 1 2009<br>O = D-信任 GmbH<br>C = DE |
+| **主题** | CN = D-信任 SSL 类 3 CA 1 2009<br>O = D-信任 GmbH<br>C = DE |
 | --- | --- |
 | **颁发者** | CN = D-信任根类 3 CA 2 2009<br>O = D-信任 GmbH<br>C = DE |
 | **使用者可选名称** | /RFC822 Name=info@d-trust.net<br>URL =http://www.d-trust.net |
@@ -270,7 +271,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-信任 SSL 类 3 CA 1 EV 2009**
 
-| **Subject** | CN = D-信任 SSL 类 3 CA 1 EV 2009<br>O = D-信任 GmbH<br>C = DE |
+| **主题** | CN = D-信任 SSL 类 3 CA 1 EV 2009<br>O = D-信任 GmbH<br>C = DE |
 | --- | --- |
 | **颁发者** | CN = D-信任根类 3 CA 2 EV 2009<br>O = D-信任 GmbH<br>C = DE |
 | **使用者可选名称** | /RFC822 Name=info@d-trust.net<br>URL =http://www.d-trust.net |
@@ -289,7 +290,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 云服务 CA-1**
 
-| **Subject** | CN = DigiCert 云服务 CA-1<br>O = DigiCert Inc。<br>C = 美国 |
+| **主题** | CN = DigiCert 云服务 CA-1<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = DigiCert 全局根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | **序列号** | 01：9E： C1： C6： BD：3F：59：7B： B2：0C：33：38： E5：51： D8：77：77 |
@@ -307,7 +308,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="digicert-sha2-high-assurance-server-ca"></a>**DigiCert SHA2 高确定性服务器 CA**
 
-| **Subject** | CN = DigiCert SHA2 高确定性服务器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
+| **主题** | CN = DigiCert SHA2 高确定性服务器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = DigiCert 高确定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | **序列号** | 04： E1： E7： A4： DC：6D：5C： F2： F2： F2： F3：： C0：2B： B8： |
@@ -325,7 +326,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 安全服务器 CA**
 
-| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C = 美国 |
+| **主题** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = DigiCert 全局根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | **序列号** | 01： FD： A3： EB：6E： CA：1： C8：88：43：8B：72：4B：： BC：91 |
@@ -343,7 +344,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="entrust-certification-authority---l1c"></a>**Entrust 证书颁发机构-L1C**
 
-| **Subject** | CN = Entrust 证书颁发机构-L1C<br>OU =&quot;（c） 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是通过引用并入的<br>O =&quot;Entrust，inc.。&quot;<br>C = 美国 |
+| **主题** | CN = Entrust 证书颁发机构-L1C<br>OU =&quot;（c） 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是通过引用并入的<br>O =&quot;Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = Entrust 证书颁发机构（2048）<br>OU = （c） 1999 Entrust.net 限制<br>OU = entrust/CPS\_2048 合并。 by ref. （限制 liab。）<br>O = Entrust |
 | **序列号** | 4C：0E：8C：39 |
@@ -361,7 +362,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="entrust-certification-authority---l1k"></a>**Entrust 证书颁发机构-L1K**
 
-| **Subject** | CN = Entrust 证书颁发机构-L1K<br>OU =&quot;（c） 2012 Entrust （inc.）仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O =&quot;Entrust，inc.。&quot;<br>C = 美国 |
+| **主题** | CN = Entrust 证书颁发机构-L1K<br>OU =&quot;（c） 2012 Entrust （inc.）仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O =&quot;Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = Entrust 根证书颁发机构-G2<br>OU =&quot;（c） 2009 Entrust （inc.）仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O =&quot;Entrust，inc.。&quot;<br>C = 美国 |
 | **序列号** | 0E： E9：4C： C3：：00：00：00：00：00：00：00：51： |
@@ -379,7 +380,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="globalsign"></a>**GlobalSign**
 
-| **Subject** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 根 CA-R3 |
+| **主题** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 根 CA-R3 |
 | --- | --- |
 | **颁发者** | CN = GlobalSign 根 CA<br>OU = 根 CAO = GlobalSign nv-sa<br>C = 是 |
 | **序列号** | 04：00：00：00：1：01：25：07：1D： F9： AF |
@@ -397,7 +398,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign 扩展验证 CA-SHA256-G2**
 
-| **Subject** | CN = GlobalSign 扩展验证 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **主题** | CN = GlobalSign 扩展验证 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **颁发者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 根 CA-R2 |
 | **序列号** | 04：00：00：00：01：01：44：4E： F0：4A： 1-55 |
@@ -415,7 +416,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="globalsign-extended-validation-ca---sha256---g3"></a>**GlobalSign 扩展验证 CA-SHA256-G3**
 
-| **Subject** | CN = GlobalSign 扩展验证 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
+| **主题** | CN = GlobalSign 扩展验证 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **颁发者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 根 CA-R3 |
 | **序列号** | 48： A4：02： DD：27：92：0D： A2：08：34：9D： D1：99：7B |
@@ -433,7 +434,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 组织验证 CA-SHA256-G2**
 
-| **Subject** | CN = GlobalSign 组织验证 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **主题** | CN = GlobalSign 组织验证 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **颁发者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 根 CA-R3 |
 | **序列号** | 04：00：00：00：01：01：31：89： C6：44： C9 |
@@ -451,7 +452,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 组织验证 CA-SHA256-G2**
 
-| **Subject** | CN = GlobalSign 组织验证 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **主题** | CN = GlobalSign 组织验证 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **颁发者** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
 | **序列号** | 04：00：00：00：01：01：44：4E： F0：42：47 |
@@ -469,7 +470,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 组织验证 CA-SHA256-G2**
 
-| **Subject** | CN = GlobalSign 组织验证 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **主题** | CN = GlobalSign 组织验证 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **颁发者** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
 | **序列号** | 04：00：00：00：01：01：44：4E： F0：42：47 |
@@ -487,7 +488,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="lets-encrypt-authority-x3"></a>**让我们对加密颁发机构 X3**
 
-| **Subject** | CN = Let 加密颁发机构 X3<br>O = 让我们进行加密<br>C = 美国 |
+| **主题** | CN = Let 加密颁发机构 X3<br>O = 让我们进行加密<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = DST 根 CA X3<br>O = 数字签名信任 Co。 |
 | **序列号** | 0A：01：41：42：00：00：01：01：85：73：6A：0B：：85：1：00：00：1：00：08 |
@@ -506,7 +507,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="microsoft-it-ssl-sha2"></a>**Microsoft IT SSL SHA2**
 
-| **Subject** | CN = Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **主题** | CN = Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 07：27：9A： A9 |
@@ -523,7 +524,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="microsoft-it-ssl-sha2"></a>**Microsoft IT SSL SHA2**
 
-| **Subject** | CN = Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **主题** | CN = Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 07：27： AA：47 |
@@ -541,7 +542,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **Subject** | CN = Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **主题** | CN = Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 08： B8：7A：50：1B：1B：9C： DA：2D：16：4D：3E：39：51： BF：55 |
@@ -559,7 +560,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **Subject** | CN = Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **主题** | CN = Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 0F：2C：10： B8：7F：：：49：49：3E：：85：69： |
@@ -577,7 +578,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **Subject** | CN = Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **主题** | CN = Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 0B：6A： B3：3E： B1： B1： B1： F6： C4：60：92：6A： A8： CD： FE： B3 |
@@ -595,7 +596,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **Subject** | CN = Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **主题** | CN = Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 08：88： CD：52：5F：19：19：19：19：24：44：4D：78：82： |
@@ -613,7 +614,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="symantec-class-3-ev-ssl-ca---g3"></a>**Symantec Class 3 EV SSL CA-G3**
 
-| **Subject** | CN = Symantec Class 3 EV SSL CA-G3<br>OU = Symantec 信任网络<br>O = Symantec Corporation<br>C = 美国 |
+| **主题** | CN = Symantec Class 3 EV SSL CA-G3<br>OU = Symantec 信任网络<br>O = Symantec Corporation<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = VeriSign Class 3 公共主证书颁发机构-G5<br>OU =&quot;（c） 2006 VeriSign，inc.-仅供授权使用&quot;<br>OU = VeriSign 信任网络<br>O =&quot;VeriSign，inc.。&quot;<br>C = 美国 |
 | **使用者可选名称** | 目录地址： CN = SymantecPKI-1-533 |
@@ -632,7 +633,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="symantec-class-3-secure-server-ca---g4"></a>**Symantec 第3类安全服务器 CA-G4**
 
-| **Subject** | CN = Symantec Class 3 Secure Server CA-G4<br>OU = Symantec 信任网络<br>O = Symantec Corporation<br>C = 美国 |
+| **主题** | CN = Symantec Class 3 Secure Server CA-G4<br>OU = Symantec 信任网络<br>O = Symantec Corporation<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = VeriSign Class 3 公共主证书颁发机构-G5<br>OU =&quot;（c） 2006 VeriSign，inc.-仅供授权使用&quot;<br>OU = VeriSign 信任网络<br>O =&quot;VeriSign，inc.。&quot;<br>C = 美国 |
 | **使用者可选名称** | 目录地址： CN = SymantecPKI-1-534 |
@@ -651,7 +652,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="thawte-sha256-ssl-ca"></a>**thawte SHA256 SSL CA**
 
-| **Subject** | CN = thawte SHA256 SSL CA<br>O =&quot;Thawte，inc.。&quot;<br>C = 美国 |
+| **主题** | CN = thawte SHA256 SSL CA<br>O =&quot;Thawte，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = thawte Primary Root CA-G3<br>OU =&quot;（c） 2008 Thawte （inc.）仅供授权使用&quot;<br>OU = 证书服务部门<br>O =&quot;Thawte，inc.。&quot;<br>C = 美国 |
 | **使用者可选名称** | 目录地址： CN = VeriSignMPKI-2-415 |
@@ -670,7 +671,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了客户�
 
 ### <a name="verizon-akamai-sureserver-ca-g14-sha2"></a>**Verizon Akamai SureServer CA G14-SHA2**
 
-| **Subject** | CN = Verizon Akamai SureServer CA G14-SHA2<br>OU = Cybertrust<br>O = Verizon 企业解决方案<br>L = 阿姆斯特丹<br>C = NL-NL |
+| **主题** | CN = Verizon Akamai SureServer CA G14-SHA2<br>OU = Cybertrust<br>O = Verizon 企业解决方案<br>L = 阿姆斯特丹<br>C = NL-NL |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 07：27： A4：6B |

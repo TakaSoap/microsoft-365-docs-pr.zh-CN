@@ -1,5 +1,5 @@
 ---
-title: 管理订阅许可证
+title: 管理订阅许可
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -25,23 +25,20 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: 了解如何添加和删除 Office 365 for business 订阅的许可证。
-ms.openlocfilehash: 2f9c6b58a478b18fa1844c33689a8a4974a5917a
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410039"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142171"
 ---
-# <a name="manage-subscription-licenses"></a>管理订阅许可证
+# <a name="manage-subscription-licenses"></a>管理订阅许可
 
 您可以使用这些步骤在订阅中添加或删除许可证。
 
 不能删除订阅中已分配给用户的许可证。 如果要删除当前分配给某人的许可证，则需要先[删除用户的许可证](../../admin/manage/remove-licenses-from-users.md)，然后才能从订阅中删除该许可证。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>你需要了解的有关为你的业务订阅购买许可证的相关信息
 
@@ -59,7 +56,7 @@ ms.locfileid: "42410039"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要向其添加或删除许可证的订阅，然后选择 "**添加/删除许可证**"。
 
@@ -73,7 +70,7 @@ ms.locfileid: "42410039"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要向其添加或删除许可证的订阅，然后选择 "**添加/删除许可证**"。
 
@@ -87,7 +84,7 @@ ms.locfileid: "42410039"
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>如果看不到"添加/删除"链接，该怎么办？
 
-此表介绍 "**添加/删除许可证**" 链接不可用的原因，以及您可以执行的操作。 
+此表介绍 "**添加/删除许可证**" 链接不可用的原因，以及您可以执行的操作。
 
 |Reason  |说明  |解决方案  |
 |---------|---------|---------|
@@ -109,7 +106,7 @@ ms.locfileid: "42410039"
 - 如果通过信用卡或银行账户为订阅付费，则你购买的任何新许可证都将在收到订单确认后立即提供给你。 如果通过发票支付，可能必须等待完成信用检查才能使用新许可证。
 
   > [!NOTE]
-  > 在某些国家或地区不提供按银行帐户付款。
+  > 某些国家或地区不支持银行帐户支付。
 
 - 如果你使用产品密钥预付订阅，你可以添加更多许可证，方法是添加信用卡或银行帐户，以涵盖新许可证的额外费用。 你购买新的许可证后，我们会添加第二个订阅，该订阅具有你刚才添加的新许可证的数量。 例如，如果你有一个订阅，该订阅具有 5 个许可证，然后你再购买了 10 个许可证，则会列出两个订阅：一个订阅具有 5 个预付的许可证，一个订阅具有 10 个新的许可证。
 
