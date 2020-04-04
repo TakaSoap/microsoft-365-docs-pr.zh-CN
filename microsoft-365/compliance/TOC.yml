@@ -149,6 +149,8 @@
           href: document-fingerprinting.md
         - name: 敏感信息的 DLP 函数
           href: what-the-dlp-functions-look-for.md
+    - name: M365 中的加密
+      href: encryption.md
     - name: 客户密钥
       items:
         - name: Office 365 中的客户密钥的服务加密
@@ -200,6 +202,8 @@
               href: legacy-information-for-message-encryption.md
             - name: 为以前版本的 Office 365 邮件加密设置 Azure 权限管理
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: 在 SharePoint 管理中心中设置 IRM
+      href: set-up-irm-in-sp-admin-center.md
     - name: 了解数据分类（预览）
       href: data-classification-overview.md
       items:
@@ -325,7 +329,7 @@
               href: view-label-activity-for-documents.md
             - name: 查看数据管理报告
               href: view-the-data-governance-reports.md
-        - name: 活动
+        - name: 事件
           items:
             - name: 基于事件的保留
               href: event-driven-retention.md
@@ -765,24 +769,24 @@
       href: get-started-with-service-trust-portal.md
     - name: 合规性分数 – 合规性管理器
       items:
-        - name: 合规性分数（预览版）
+        - name: 合规性分数（预览）
           href: compliance-score.md
-        - name: 设置合规性分数（预览版）
+        - name: 设置合规性分数（预览）
           href: compliance-score-setup.md
-        - name: 使用合规性分数（预览版）
+        - name: 使用合规性分数（预览）
           href: working-with-compliance-score.md
-        - name: 合规性分数计算（预览版）
+        - name: 合规性分数计算（预览）
           href: compliance-score-methodology.md
-        - name: 合规性分数发行说明（预览版）
+        - name: 合规性分数发行说明（预览）
           href: compliance-score-release-notes.md
         - name: 合规性分数常见问题（预览）
           href: compliance-score-faq.md
-        - name: 合规性管理器（预览版）
+        - name: 合规性管理器（预览）
           href: compliance-manager-overview.md
           items:
-            - name: 合规性管理器（预览版）新增功能
+            - name: 合规性管理器（预览）发行说明
               href: compliance-manager-release-notes.md
-            - name: 使用合规性管理器（预览版）
+            - name: 使用合规性管理器（预览）
               href: working-with-compliance-manager.md
             - name: 合规性管理器（经典）
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
