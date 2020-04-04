@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b6c4e737d0bcc9f7373a669e8dcd20661733b294
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634060"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142702"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>查看安全&amp;合规性中心中的电子邮件安全报告
 
@@ -31,7 +31,8 @@ ms.locfileid: "42634060"
 ![可在其中查看高级威胁防护的工作方式的仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 您的电子邮件安全报告包括以下内容：
-- [已泄露的用户报告（**新！**）](#compromised-users-report-new)
+- [URL 威胁防护报告](#url-threat-protection-report-new)（**新！**）
+- [已泄露用户报告](#compromised-users-report)
 - [加密报告](#encryption-report)
 - [威胁防护状态](#threat-protection-status-report) 
 - [恶意软件检测报告](#malware-detections-report) 
@@ -43,9 +44,30 @@ ms.locfileid: "42634060"
 - [用户报告的邮件报告](#user-reported-messages-report)
 
 
-## <a name="compromised-users-report-new"></a>已泄露的用户报告（**新！**） 
+## <a name="url-threat-protection-report-new"></a>URL 威胁防护报告（**新！**）
 
-此报告可供任何具有 Exchange Online Protection 的用户使用，并显示标记为可疑用户或受限制用户的用户帐户数。在帐户中，数据特别有用。输入指示用户帐户可能有问题的任何状态，甚至威胁. 通过频繁使用，已损坏的用户报告可以发现处于可疑或受限制状态的帐户中的峰值、甚至是趋势，从而提供证据可能存在安全和租户的 wellness 问题。
+任何人都可以使用 URL 威胁防护报告：
+
+- Exchange Online Protection*和*高级威胁防护外接程序（计划 1*或*计划2） 
+- Microsoft 365 E5 订阅
+
+这是一个具有两个聚合视图的 "单击中心" 报告。
+ 
+1. 第一个视图是*URL 单击保护操作*，它重点显示由租户中的用户单击的 URL 的数目，以及单击的结果。 A 单击此处指示用户已通过阻止页面单击到恶意网站（可由管理员在安全链接策略中禁用）。
+ 
+2. 第二个视图是*URL 单击 "按应用程序*"，它显示了在当今支持安全链接的不同应用程序（如在电子邮件客户端或 Microsoft Word 中）单击的 url 的数目。 两个聚合视图中的数据每4小时刷新一次。
+
+URL 威胁防护报告的详细信息表提供了在租户内发生的所有点击的近实时视图，其中包括诸如*username*、 *URL*、*网络邮件 ID* （如果从电子邮件中单击该 URL）的调查信息，以及有关调查和分析的其他有用信息。  
+
+默认情况下，报告仅显示通过安全链接阻止的 Url 单击时的数据，但也可以查看筛选器中的 "通过选择*允许的 url* " 复选框的所有 URL 单击的信息。  
+
+如果应用了 "安全链接策略" 的用户已选中 "不*跟踪用户单击*" 选项，则此报告将不会有单击的数据。
+
+![操作中的 URL 威胁防护报告的图形。](../../media/tp-URLThreatProRpt1.PNG)
+
+## <a name="compromised-users-report"></a>已泄露用户报告 
+
+此报告可供任何具有 Exchange Online Protection 的用户使用，并显示标记为可疑用户或受限制用户的用户帐户数。在帐户中，数据尤其有用的是表明用户帐户可能有问题或甚至已泄露的状态。 通过频繁使用，已损坏的用户报告可以发现处于可疑或受限制状态的帐户中的峰值、甚至是趋势，从而提供证据可能存在安全和租户的 wellness 问题。
 
 ![已泄露的用户会在 Office 365 中进行报告。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
@@ -205,7 +227,7 @@ ms.locfileid: "42634060"
 ![在 "安全&amp;合规性中心" 中， \>选择\> "威胁管理" 查看用户报告的消息](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> 为了使用户报告的邮件报告正常工作，必须为您的 Office 365 环境**打开审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。 
+> 为了使用户报告的邮件报告正常工作，必须为您的 Office 365 环境**打开审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[启用或禁用 Office 365 审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告所需的权限是什么？
 

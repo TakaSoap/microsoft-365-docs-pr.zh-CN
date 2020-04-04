@@ -1,5 +1,5 @@
 ---
-title: 添加对通过 IPv6 的匿名入站电子邮件的支持
+title: 添加对通过 IPv6 发送的匿名入站电子邮件的支持
 f1.keywords:
 - NOCSH
 author: chrisda
@@ -15,12 +15,12 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 和 Exchange Online Protection 中配置来自 IPv6 源的匿名入站电子邮件支持。
-ms.openlocfilehash: 67e839249d41381be22bbccf6b09d1616c387c66
-ms.sourcegitcommit: 748bc3484b7ccbd65b558f495b6fa42196c3c571
+ms.openlocfilehash: 414c10f3387138ed7e62f2de4e8549e45d128d2e
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43083637"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131515"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a>在 Office 365 中添加对通过 IPv6 的匿名入站电子邮件的支持
 
@@ -30,15 +30,7 @@ Office 365 具有 Exchange Online 邮箱和独立 Exchange Online Protection （
 
 - 发件人必须通过 SPF 验证（在 [RFC 7208](https://tools.ietf.org/html/rfc7208) 中定义）或 [DKIM 验证](https://dkim.org/)（在 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) 中定义）。
 
-在您的组织可以通过 IPv6 接收匿名入站电子邮件之前，管理员需要联系 Microsoft 支持部门并要求提供以下信息：
-
-1. 打开 "Microsoft 365 管理中心" <https://admin.microsoft.com/adminportal/home> ，然后单击 "**帮助**" （？）。
-
-2. 在显示的 "**需要帮助"** 中，在搜索框中键入一些描述性内容（例如，"请求匿名入站 IPv6 电子邮件"），然后按 enter。
-
-3. 在页面底部，单击 "**联系人支持**"。
-
-4. 在出现的**联系人支持**页面中，填写并验证信息（必要时向下滚动），然后单击 "**联系我**"。
+在您的组织可以通过 IPv6 接收匿名入站电子邮件之前，管理员需要联系 Microsoft 支持部门并要求提供此电子邮件。 有关如何打开支持请求的说明，请参阅[联系支持人员以获取商业产品-管理员帮助](../../admin/contact-support-for-business-products.md)。
 
 在组织中启用匿名入站 IPv6 邮件支持后，邮件将通过服务提供的常规邮件筛选功能。
 
