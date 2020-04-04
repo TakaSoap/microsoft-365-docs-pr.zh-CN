@@ -10,6 +10,8 @@
           href: intro/technologies.md
         - name: Microsoft 托管桌面和 ITIL
           href: MMD-and-ITSM.md
+        - name: 合规性
+          href: intro/compliance.md
     - name: Microsoft 托管桌面服务说明
       href: service-description/index.md
       items:
