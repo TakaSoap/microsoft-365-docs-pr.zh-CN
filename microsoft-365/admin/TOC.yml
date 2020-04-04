@@ -1,5 +1,5 @@
 - name: 管理员主页
-  href: admin-home.yml
+  href: admin-home.md
   items:
     - name: 概述
       items:
@@ -86,7 +86,7 @@
     - name: 电子邮件
       items:
         - name: Office 365 中的电子邮件
-          href: email/email.yml
+          href: email/email.md
         - name: Office 365 用户电子邮件设置
           href: email/office-365-user-email-settings.md
         - name: 添加用户的其他电子邮件别名
@@ -154,7 +154,7 @@
     - name: 管理
       items:
         - name: 管理 Office 365
-          href: manage/manage.yml
+          href: manage/manage.md
         - name: 更改联系人首选项
           href: manage/change-contact-preferences.md
         - name: 更改地址、联系人及其他信息
@@ -187,8 +187,8 @@
           href: manage/remove-licenses-from-users.md
         - name: 解决许可证冲突
           href: manage/resolve-license-conflicts.md
-        - name: 管理邮件中心中的邮件
-          href: manage/manage-messages.md
+        - name: 使用新增功能管理显示或隐藏新功能
+          href: manage/show-hide-new-features.md
     - name: 订阅和计费
       items:
         - name: 管理订阅
@@ -202,7 +202,7 @@
     - name: 域
       items:
         - name: Office 365 中的域
-          href: get-help-with-domains/get-help-with-domains.yml
+          href: get-help-with-domains/get-help-with-domains.md
         - name: 什么是域？
           href: get-help-with-domains/what-is-a-domain.md
         - name: 购买域名
@@ -227,7 +227,7 @@
           href: get-help-with-domains/remove-a-domain.md
         - name: 手动转移数据
           href: get-help-with-domains/transfer-data-manually.md
-    - name: 组
+    - name: Groups
       items:
         - name: 组概述
           href: create-groups/office-365-groups.md

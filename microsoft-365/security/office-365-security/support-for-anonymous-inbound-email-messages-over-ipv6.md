@@ -1,5 +1,5 @@
 ---
-title: 添加对通过 IPv6 的匿名入站电子邮件的支持
+title: 添加对通过 IPv6 发送的匿名入站电子邮件的支持
 f1.keywords:
 - NOCSH
 author: chrisda
@@ -15,47 +15,39 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 和 Exchange Online Protection 中配置来自 IPv6 源的匿名入站电子邮件支持。
-ms.openlocfilehash: 67e839249d41381be22bbccf6b09d1616c387c66
-ms.sourcegitcommit: 748bc3484b7ccbd65b558f495b6fa42196c3c571
+ms.openlocfilehash: 414c10f3387138ed7e62f2de4e8549e45d128d2e
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43083637"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131515"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a><span data-ttu-id="6a0fb-103">在 Office 365 中添加对通过 IPv6 的匿名入站电子邮件的支持</span><span class="sxs-lookup"><span data-stu-id="6a0fb-103">Add support for anonymous inbound email over IPv6 in Office 365</span></span>
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a><span data-ttu-id="906dd-103">在 Office 365 中添加对通过 IPv6 的匿名入站电子邮件的支持</span><span class="sxs-lookup"><span data-stu-id="906dd-103">Add support for anonymous inbound email over IPv6 in Office 365</span></span>
 
-<span data-ttu-id="6a0fb-104">Office 365 具有 Exchange Online 邮箱和独立 Exchange Online Protection （EOP）的组织（不含 Exchange Online 邮箱的组织支持通过 IPv6 的匿名入站电子邮件）。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-104">Office 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support anonymous inbound email over IPv6.</span></span> <span data-ttu-id="6a0fb-105">源 IPv6 电子邮件服务器必须满足以下两项要求：</span><span class="sxs-lookup"><span data-stu-id="6a0fb-105">The source IPv6 email server must meet both of the following requirements:</span></span>
+<span data-ttu-id="906dd-104">Office 365 具有 Exchange Online 邮箱和独立 Exchange Online Protection （EOP）的组织（不含 Exchange Online 邮箱的组织支持通过 IPv6 的匿名入站电子邮件）。</span><span class="sxs-lookup"><span data-stu-id="906dd-104">Office 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support anonymous inbound email over IPv6.</span></span> <span data-ttu-id="906dd-105">源 IPv6 电子邮件服务器必须满足以下两项要求：</span><span class="sxs-lookup"><span data-stu-id="906dd-105">The source IPv6 email server must meet both of the following requirements:</span></span>
 
-- <span data-ttu-id="6a0fb-106">源 IPv6 地址必须具有有效的反向 DNS 查找（PTR）记录，允许目标从 IPv6 地址中查找域名。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-106">The source IPv6 address must have a valid reverse DNS lookup (PTR) record that allows the destination to find the domain name from the IPv6 address.</span></span>
+- <span data-ttu-id="906dd-106">源 IPv6 地址必须具有有效的反向 DNS 查找（PTR）记录，允许目标从 IPv6 地址中查找域名。</span><span class="sxs-lookup"><span data-stu-id="906dd-106">The source IPv6 address must have a valid reverse DNS lookup (PTR) record that allows the destination to find the domain name from the IPv6 address.</span></span>
 
-- <span data-ttu-id="6a0fb-107">发件人必须通过 SPF 验证（在 [RFC 7208](https://tools.ietf.org/html/rfc7208) 中定义）或 [DKIM 验证](https://dkim.org/)（在 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) 中定义）。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-107">The sender must pass either SPF verification (defined in [RFC 7208](https://tools.ietf.org/html/rfc7208)) or [DKIM verification](https://dkim.org/) (defined in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).</span></span>
+- <span data-ttu-id="906dd-107">发件人必须通过 SPF 验证（在 [RFC 7208](https://tools.ietf.org/html/rfc7208) 中定义）或 [DKIM 验证](https://dkim.org/)（在 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) 中定义）。</span><span class="sxs-lookup"><span data-stu-id="906dd-107">The sender must pass either SPF verification (defined in [RFC 7208](https://tools.ietf.org/html/rfc7208)) or [DKIM verification](https://dkim.org/) (defined in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).</span></span>
 
-<span data-ttu-id="6a0fb-108">在您的组织可以通过 IPv6 接收匿名入站电子邮件之前，管理员需要联系 Microsoft 支持部门并要求提供以下信息：</span><span class="sxs-lookup"><span data-stu-id="6a0fb-108">Before your organization can receive anonymous inbound email over IPv6, an admin needs to contact Microsoft support and ask for it:</span></span>
+<span data-ttu-id="906dd-108">在您的组织可以通过 IPv6 接收匿名入站电子邮件之前，管理员需要联系 Microsoft 支持部门并要求提供此电子邮件。</span><span class="sxs-lookup"><span data-stu-id="906dd-108">Before your organization can receive anonymous inbound email over IPv6, an admin needs to contact Microsoft support and ask for it.</span></span> <span data-ttu-id="906dd-109">有关如何打开支持请求的说明，请参阅[联系支持人员以获取商业产品-管理员帮助](../../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="906dd-109">For instructions about how to open a support request, see [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).</span></span>
 
-1. <span data-ttu-id="6a0fb-109">打开 "Microsoft 365 管理中心" <https://admin.microsoft.com/adminportal/home> ，然后单击 "**帮助**" （？）。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-109">Open the Microsoft 365 admin center at <https://admin.microsoft.com/adminportal/home> and click **Help** (?).</span></span>
+<span data-ttu-id="906dd-110">在组织中启用匿名入站 IPv6 邮件支持后，邮件将通过服务提供的常规邮件筛选功能。</span><span class="sxs-lookup"><span data-stu-id="906dd-110">After anonymous inbound IPv6 message support is enabled in your organization, the message will go through the normal message filtering that's provided by the service.</span></span>
 
-2. <span data-ttu-id="6a0fb-110">在显示的 "**需要帮助"** 中，在搜索框中键入一些描述性内容（例如，"请求匿名入站 IPv6 电子邮件"），然后按 enter。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-110">In the **Need help?** flyout that appears, type something descriptive in the search box (for example, "request anonymous inbound IPv6 email"), and then press ENTER.</span></span>
+## <a name="troubleshooting"></a><span data-ttu-id="906dd-111">疑难解答</span><span class="sxs-lookup"><span data-stu-id="906dd-111">Troubleshooting</span></span>
 
-3. <span data-ttu-id="6a0fb-111">在页面底部，单击 "**联系人支持**"。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-111">At the bottom of the page, click **Contact support**.</span></span>
+- <span data-ttu-id="906dd-112">如果源电子邮件服务器没有 IPv6 反向 DNS 查找记录，则邮件将被拒绝，并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="906dd-112">If the source email server doesn't have an IPv6 reverse DNS lookup record, the messages will be rejected with the following error:</span></span>
 
-4. <span data-ttu-id="6a0fb-112">在出现的**联系人支持**页面中，填写并验证信息（必要时向下滚动），然后单击 "**联系我**"。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-112">In the **Contact support** page that appears, fill out and verify the information (scroll down as necessary), and then click **Contact me**.</span></span>
+  > <span data-ttu-id="906dd-113">450 4.7.25 服务不可用，发送 IPv6 地址 [2a01：111： f200：2004：： 240] 必须有反向 DNS 记录。</span><span class="sxs-lookup"><span data-stu-id="906dd-113">450 4.7.25 Service unavailable, sending IPv6 address [2a01:111:f200:2004::240] must have reverse DNS record.</span></span>
 
-<span data-ttu-id="6a0fb-113">在组织中启用匿名入站 IPv6 邮件支持后，邮件将通过服务提供的常规邮件筛选功能。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-113">After anonymous inbound IPv6 message support is enabled in your organization, the message will go through the normal message filtering that's provided by the service.</span></span>
+- <span data-ttu-id="906dd-114">如果发件人未通过 SPF 或 DKIM 验证，则邮件将被拒绝，并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="906dd-114">If the sender doesn't pass SPF or DKIM validation, the messages will be rejected with the following error:</span></span>
 
-## <a name="troubleshooting"></a><span data-ttu-id="6a0fb-114">疑难解答</span><span class="sxs-lookup"><span data-stu-id="6a0fb-114">Troubleshooting</span></span>
+  > <span data-ttu-id="906dd-115">450 4.7.26 服务不可用，通过 IPv6 发送的邮件 [2a01：111： f200：2004：： 240] 必须通过 SPF 或 DKIM 验证。</span><span class="sxs-lookup"><span data-stu-id="906dd-115">450 4.7.26 Service unavailable, message sent over IPv6 [2a01:111:f200:2004::240] must pass either SPF or DKIM validation.</span></span>
 
-- <span data-ttu-id="6a0fb-115">如果源电子邮件服务器没有 IPv6 反向 DNS 查找记录，则邮件将被拒绝，并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="6a0fb-115">If the source email server doesn't have an IPv6 reverse DNS lookup record, the messages will be rejected with the following error:</span></span>
+- <span data-ttu-id="906dd-116">如果您在选择加入之前尝试接收匿名 IPv6 邮件，则邮件将被拒绝，并显示以下错误：</span><span class="sxs-lookup"><span data-stu-id="906dd-116">If you try to receive anonymous IPv6 messages before you've opted in, the message will be rejected with the following error:</span></span>
 
-  > <span data-ttu-id="6a0fb-116">450 4.7.25 服务不可用，发送 IPv6 地址 [2a01：111： f200：2004：： 240] 必须有反向 DNS 记录。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-116">450 4.7.25 Service unavailable, sending IPv6 address [2a01:111:f200:2004::240] must have reverse DNS record.</span></span>
+  > <span data-ttu-id="906dd-117">550 5.2.1 服务不可用，[contoso.com] 不接受通过 IPv6 的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="906dd-117">550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.</span></span>
 
-- <span data-ttu-id="6a0fb-117">如果发件人未通过 SPF 或 DKIM 验证，则邮件将被拒绝，并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="6a0fb-117">If the sender doesn't pass SPF or DKIM validation, the messages will be rejected with the following error:</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="906dd-118">有关详细信息</span><span class="sxs-lookup"><span data-stu-id="906dd-118">For more information</span></span>
 
-  > <span data-ttu-id="6a0fb-118">450 4.7.26 服务不可用，通过 IPv6 发送的邮件 [2a01：111： f200：2004：： 240] 必须通过 SPF 或 DKIM 验证。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-118">450 4.7.26 Service unavailable, message sent over IPv6 [2a01:111:f200:2004::240] must pass either SPF or DKIM validation.</span></span>
-
-- <span data-ttu-id="6a0fb-119">如果您在选择加入之前尝试接收匿名 IPv6 邮件，则邮件将被拒绝，并显示以下错误：</span><span class="sxs-lookup"><span data-stu-id="6a0fb-119">If you try to receive anonymous IPv6 messages before you've opted in, the message will be rejected with the following error:</span></span>
-
-  > <span data-ttu-id="6a0fb-120">550 5.2.1 服务不可用，[contoso.com] 不接受通过 IPv6 的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="6a0fb-120">550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.</span></span>
-
-## <a name="for-more-information"></a><span data-ttu-id="6a0fb-121">有关详细信息</span><span class="sxs-lookup"><span data-stu-id="6a0fb-121">For more information</span></span>
-
-[<span data-ttu-id="6a0fb-122">支持 DKIM 签名邮件验证</span><span class="sxs-lookup"><span data-stu-id="6a0fb-122">Support for validation of DKIM signed messages</span></span>](support-for-validation-of-dkim-signed-messages.md)
+[<span data-ttu-id="906dd-119">支持 DKIM 签名邮件验证</span><span class="sxs-lookup"><span data-stu-id="906dd-119">Support for validation of DKIM signed messages</span></span>](support-for-validation-of-dkim-signed-messages.md)
