@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：应用 Azure 信息保护来保护高度机密的 SharePoint Online 团队网站中的文件。
-ms.openlocfilehash: 32b87ec71ef0d1cde6f790f7e571b05b759ccf2a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0a2a1e790711bf15db82068c00da5d614b498c4
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597689"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855447"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>使用 Azure 信息保护来保护 SharePoint Online 文件
 
@@ -113,8 +113,6 @@ ms.locfileid: "41597689"
 
 ## <a name="see-also"></a>另请参阅
 
-[保护 SharePoint Online 网站和文件](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
