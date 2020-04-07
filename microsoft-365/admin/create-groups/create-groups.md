@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何创建和删除 Office 365 组、添加和删除组成员以及自定义组的工作方式。
-ms.openlocfilehash: 59a7cec5fb6822ecb622bf4abe4cebd859b6f206
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 8b9580fd37581de96d3dc35170a1a61640cc697d
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894607"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153540"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心创建 Office 365 组
   
-虽然用户可以从 Outlook 或其他应用程序创建 Office 365 组，作为管理员，您可能需要创建或删除组、添加或移除成员，并自定义它们的工作方式。 Microsoft 365 管理中心是执行此操作的地方。 
+虽然用户可以从 Outlook 或其他应用程序创建 Office 365 组，作为管理员，您可能需要创建或删除组、添加或移除成员，并自定义它们的工作方式。 如果您是全局管理员或组管理员，则可以在 Microsoft 365 管理中心中执行此操作。 
 
 > [!TIP]
 > 必须在 Yammer 中创建与 office 365 相连的 Yammer 组，但可以在 Microsoft 365 管理中心（如其他 Office 365 组）中进行管理。 若要了解详细信息，请参阅[Yammer 和 Office 365 组](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)。 
@@ -115,7 +115,7 @@ ms.locfileid: "42894607"
 
 ## <a name="next-step-manage-your-group"></a>下一步：管理您的组
 
-创建新组并添加成员后，可以进一步配置组，例如编辑组名称或说明、更改所有者或成员，以及指定外部发件人是否可以通过电子邮件发送组以及是否发送组的副本到成员的对话。 有关信息，请参阅[管理 Office 365 组](manage-groups.md)。
+创建新组并添加成员后，可以进一步配置组，例如编辑组名称或说明、更改所有者或成员，以及指定外部发件人是否可以通过电子邮件发送组以及是否将组对话的副本发送到成员。 有关信息，请参阅[管理 Office 365 组](manage-groups.md)。
 
 ## <a name="related-articles"></a>相关文章
 

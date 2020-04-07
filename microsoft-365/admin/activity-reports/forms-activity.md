@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: 了解如何使用 microsoft 365 管理中心中的 Microsoft 365 报告仪表板获取 Microsoft Forms 活动报告。
-ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 28520bf931df9f909a933be19800ee45fd863cd6
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046935"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151413"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>"管理中心" 中的 Microsoft 365 报表-表单活动
 
@@ -41,9 +41,9 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
     
 2. 从 "**选择报表**" 下拉下，选择 "**表单** \> **活动**"。
 
-## <a name="interpret-the-email-activity-report"></a>解读电子邮件活动报表
+## <a name="interpret-the-forms-activity-report"></a>解释表单活动报告
 
-可通过查看" **活动**"和" **用户**"图表，了解用户电子邮件活动。 
+您可以通过查看 "**活动**" 和 "**用户**" 图表，获取用户的表单活动的视图。 
 
 ![表单活动报告](../../media/adminformsactivity.png)
 

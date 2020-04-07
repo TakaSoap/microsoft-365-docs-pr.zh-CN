@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: edb6476b7711bd17a1dd926d93bdf27d734ea9a9
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594220"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153610"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商业常见问题
 
@@ -37,7 +37,7 @@ Microsoft 365 是一个集成的解决方案，可为中小型企业提供同类
 -  使用 Exchange Online 存档帮助保护、保留和备份数据。  
 -   适用于 Office 的应用程序保护和其他具有 Intune 应用保护的移动应用。 
 -  使用 Intune 设备管理的 Windows 10 电脑、MacOS 和移动设备的设备管理。 
--  具有多重身份验证、自助密码重置和条件访问的身份保护。
+-  具有多重身份验证（MFA）、自助密码重置和条件访问的身份保护。
 -  跨设备&mdash;保护公司数据跨设备的一致性安全配置;Windows Defender，它始终处于打开和最新状态。 
  
  
@@ -67,7 +67,7 @@ Microsoft 365 Business 与 Office 365 完全集成，为你提供熟悉的管理
 ### <a name="is-there-a-cap-to-how-many-microsoft-365-business-seats-a-customer-can-have"></a>客户可以拥有的 Microsoft 365 商业版席位的数量是否存在上限？ 
 Microsoft 365 商业版专为具有低到中型 IT 复杂性要求的中小型企业而设计。 客户最高可以为其组织购买300个 Microsoft 365 业务许可证。 客户可以混合和匹配云订阅。 因此，根据其 IT 需求，客户可以将 Microsoft 365 企业版许可证添加到同一个帐户。 
  
-当客户考虑由多个订阅类型组成的环境时，他们应与受信任的 IT 顾问合作，以确定在 Microsoft 365 商业版和 Microsoft 365 企业版使用中如何更好地管理和保护各种订阅保护和管理应用程序和数据的不同功能。
+当客户考虑由多个订阅类型组成的环境时，他们应与受信任的 IT 顾问一起使用，以确定在 Microsoft 365 商业版和 Microsoft 365 企业版中如何更好地管理和保护各种订阅，以保护和管理应用程序和数据。
 
 ### <a name="can-i-combine-microsoft-365-business-with-other-microsoft-subscription-offerings"></a>能否将 Microsoft 365 商业版与其他 Microsoft 订阅产品/服务相结合？ 
 能，客户可以将其 Microsoft 365 商业版订阅与 Azure、Dynamics 365、企业移动性 + 安全性和 Office 365 的计划和加载项相结合。
@@ -127,7 +127,7 @@ Microsoft 365 商业版可供所有合作伙伴和客户使用，其中提供了
 ### <a name="what-should-customers-and-partners-know-before-running-microsoft-365-business-within-their-organization"></a>在组织内运行 Microsoft 365 商业版之前，客户和合作伙伴应该了解哪些内容？ 
 希望体验 Microsoft 365 商业版的完整功能的客户必须在其现有桌面上运行 Windows 7、8.1 或 10 Pro<sup>[2](#footnote2)</sup> 。 现有的 Windows 10 专业版电脑应该运行创意者更新（如果还没有运行）。 
 
-## <a name="deployment"></a>部署
+## <a name="deployment"></a>Deployment
 
 ### <a name="what-should-customers-consider-when-planning-a-microsoft-365-business-deployment"></a>客户在规划 Microsoft 365 商业版部署时应该考虑什么？ 
 成功部署 Microsoft 365 商业版的最直接途径是与 Microsoft 合作伙伴交流。 他们参加过与各种客户方案相关的大量培训并有丰富的相关经验，最能够了解你的环境和需求。 具有经验丰富的 IT 在职人员的客户可以使用 <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 商业版入门</a>，以帮助他们部署 Microsoft 365 商业版。 
@@ -136,8 +136,8 @@ Microsoft 365 商业版可供所有合作伙伴和客户使用，其中提供了
 是的，已授权 Microsoft 365 商业订阅者使用适用于 iOS、Android、MacOS 和其他跨平台设备管理的完整 Intune 功能。 在 Microsoft 365 商业版的简化管理控制台中不可用的功能，如第三方应用管理和 WiFi 配置文件的配置（VPN 证书）可以在完整 Intune 控制台中进行管理。 
   
 
-### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory 高级 P1 是否带有 Microsoft 365 商业版？ 
-Microsoft 365 业务包括选择 Azure AD 高级 P1 （AADP P1）功能，如使用 AD 写回、Azure MFA 和条件访问的自助服务密码重置。 它不包括 AADP P1 的全部。 有关详细信息，请参阅[Microsoft 365 业务服务说明](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148)。
+### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory （Azure AD）高级 P1 是否带 Microsoft 365 商业版？ 
+Microsoft 365 Business 包括选择 Azure AD 高级 P1 功能，如使用 Azure AD 写回的自助密码重置、Azure 多重身份验证和条件访问等功能。 它不包括完整的 Azure AD 高级 P1。 有关详细信息，请参阅[Microsoft 365 业务服务说明](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148)。
  
  
 ### <a name="does-microsoft-365-business-allow-customers-to-manage-macs"></a>Microsoft 365 商业版是否允许客户管理 Mac？ 
@@ -146,7 +146,7 @@ Intune 可帮助您安全地管理 iOS、Android、Windows 和 MacOS 设备。
 ### <a name="what-is-windows-autopilot"></a>什么是 Windows AutoPilot？ 
 Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最终用户首次&mdash;登录 Microsoft 365 业务时，可以执行此过程，而无需通过利用 Microsoft 365 商业版&mdash;的集中管理控制来接触设备。 你也可以对运行 Windows 10 专业版创意者更新（或更高版本）并且已恢复出厂设置的现有电脑使用 Windows AutoPilot。 有关 Windows AutoPilot 的详细信息，请参阅<a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">6 月2017博客文章</a>。
 
-## <a name="compatibility"></a>Compatibility
+## <a name="compatibility"></a>兼容性
 
 ### <a name="can-i-add-office-365-add-ons-to-microsoft-365-business"></a>能否将 Office 365 加载项添加到 Microsoft 365 商业版中？ 
 所有可以添加到 Office 365 商业高级版的加载项都可以添加到 Microsoft 365 商业版中。 这意味着您可以购买 Office 365 云应用安全性、高级合规性、威胁情报、MyAnalytics、PowerBI Pro 和音频会议。 
@@ -163,7 +163,7 @@ Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最�
 还不是 Microsoft 合作伙伴的 IT 服务提供商可以在 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business) 了解有关 Microsoft 云解决方案提供商计划的详细信息。
 
 ### <a name="where-can-i-learn-how-to-sell-microsoft-365-business"></a>在哪里可以了解如何销售 Microsoft 365 商业版？ 
-现在销售 Office 365 的合作伙伴可以使用相同的顾问式销售方法销售 Microsoft 365 商业版。 此外，我们还为销售团队引入了更多的资源和培训，以了解客户现有的桌面环境、Active Directory 依赖项、移动性和安全性需求，以有效地传达 Microsoft 365 的全部价值。以与客户相关的方式进行业务。 请在 Office 合作伙伴门户 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business) 中查找这些资源。 
+现在销售 Office 365 的合作伙伴可以使用相同的顾问式销售方法销售 Microsoft 365 商业版。 此外，我们还为销售团队引入了更多的资源和培训，以了解客户现有的桌面环境、Active Directory 依赖项、移动性和安全性需求，以与客户相关的方式有效地传达 Microsoft 365 业务的全部价值。 请在 Office 合作伙伴门户 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business) 中查找这些资源。 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Microsoft 365 商业版如何帮助合作伙伴提高盈利能力？ 
 Microsoft 365 商业版将通过提高运营效率来帮助合作伙伴降低成本，并通过出售额外的服务来增加收入。 Forrester Research，Microsoft 365 商业版总体经济影响 (TEI) 研究，2017 年 6 月 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI)，表明 Microsoft 365 商业版将对合作伙伴盈利能力产生积极影响。 
@@ -183,13 +183,13 @@ Microsoft 365 商业版允许合作伙伴通过创建一个可靠的安全平台
 使用 Microsoft 365 商业版中包含的新 Windows AutoPilot 功能，如果合作伙伴因部署后勤和成本而不愿意出售新的 windows 设备，则会发现此机会更具吸引力。 如果客户确信自己的内部部署和移动设备的安全性，也更有可能在更多的服务（如 Dynamics 365）上投资。 
  
 ### <a name="should-partners-sell-microsoft-365-business-over-other-plans-from-microsoft"></a>合作伙伴是否应该通过 Microsoft 的其他计划来销售 Microsoft 365 商业版？ 
-Microsoft 云解决方案提供商始终应该销售最适合其客户业务需求和预算的计划。 例如，如果客户必须遵守隐私和安全管理法规，则 CSP 可能会向 Microsoft 365 业务加提供任何附加信息，以帮助客户满足其需求，或者可能建议由 Microsoft 365 商业版提供的高级安全性和管理。Enterprise Sku。 
+Microsoft 云解决方案提供商始终应该销售最适合其客户业务需求和预算的计划。 例如，如果客户必须遵守隐私和安全管理法规，则 CSP 可能会销售 Microsoft 365 业务和任何可帮助客户满足其要求的加载项，或者可能建议由 Microsoft 365 商业版 Sku 提供的高级安全性和管理。 
  
 ### <a name="some-of-my-customers-have-devices-that-arent-genuine-will-microsoft-365-business-make-these-devices-genuine"></a>我的一些客户具有不是正版的设备;Microsoft 365 商业版是否会使这些设备成为正版？ 
 Microsoft 365 业务不会以其他非正版版本的 Windows （正版）方式发出。 Microsoft 365 Business 提供了升级权益，允许运行正版 Windows 7、8或 8.1 Pro 的客户升级到 Windows 10 专业版的最新正版版本。 
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-help-customers-with-their-compliance-obligations"></a>什么是 GDPR，Microsoft 365 商业版如何帮助客户履行合规义务？
-一般数据保护条例 (GDPR) 是一项全面的新隐私法，使欧盟 (EU) 居民能够更好地控制其“个人资料”，并要求组织保持个人资料的完整性。 GDPR 要求控制或处理与欧盟居民相关的个人数据的组织仅使用符合个人数据处理的 GDPR 要求的第三方数据处理器。 2017 年 3 月，Microsoft 提供了合同规定的担保以提供这些保证。 有关 Microsoft 如何帮助他们满足其额外的 GDPR 义务的客户应了解 Microsoft 365 企业中提供的高级合规性和安全功能（例如，Azure 信息保护、数据丢失预防措施、高级威胁防护等）和其他套件（例如，Microsoft 365 企业版 E5）。 若要了解详细信息，请访问 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr)。
+一般数据保护条例 (GDPR) 是一项全面的新隐私法，使欧盟 (EU) 居民能够更好地控制其“个人资料”，并要求组织保持个人资料的完整性。 GDPR 要求控制或处理与欧盟居民相关的个人数据的组织仅使用符合个人数据处理的 GDPR 要求的第三方数据处理器。 2017 年 3 月，Microsoft 提供了合同规定的担保以提供这些保证。 有关 Microsoft 如何帮助他们满足其额外 GDPR 义务的客户应了解 Microsoft 365 企业中提供的高级合规性和安全功能（例如，Azure 信息保护、数据丢失防护、高级威胁防护等）以及其他套件（例如，Microsoft 365 企业版 E5）。 若要了解详细信息，请访问 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr)。
 
 
 ## <a name="footnotes"></a>脚注

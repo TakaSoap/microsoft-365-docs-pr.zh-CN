@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何通过 Office 365 E3 将企业移动到 Microsoft 365 商业版。
-ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: cff6166529df2e56ba948a9bd3ea4594fb295b08
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409677"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153528"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>从 Office 365 E3 迁移到 Microsoft 365 业务 
 
@@ -52,7 +52,7 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 | **威胁防护**        | | | 
 | Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
 | **身份管理**        | | | 
-| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  | 
+| 混合 Azure Active Directory （Azure AD）帐户的自助密码重置、Azure 多重身份验证、条件访问、本地标识的密码写回|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  | 
 | **设备和应用程序管理**        | | |
 | Microsoft Intune、Windows AutoPilot|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  |
 | 共享计算机激活|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png)| 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 要在 Office 365 或 Microsoft 组织中实现记录管理策略，请使用将内容声明为记录的保留标签。 然后发布或自动应用保留记录标签。
-ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106140"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153830"
 ---
 # <a name="overview-of-records"></a>记录概述
 
@@ -107,9 +107,6 @@ ms.locfileid: "43106140"
 <br/><br/>
 
 ![标记为记录的文档上的记录状态属性](../media/recordversioning8.png)
-
-> [!NOTE]
-> 记录版本控制需要 Office 365 Enterprise E5 许可证，以便有权限的用户可以编辑无法在 SharePoint 网站或 OneDrive 帐户中声明为记录的内容。 具有只读权限的用户不需要此许可证。
 
 ### <a name="locking-and-unlocking-a-record"></a>锁定和解锁记录
 

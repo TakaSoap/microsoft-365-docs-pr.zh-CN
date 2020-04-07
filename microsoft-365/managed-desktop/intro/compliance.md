@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6ffe912cd9926585181af54cc85c144aef4ce866
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f44d7cd5b919fb06ffb10c39e632956005231e01
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142667"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153746"
 ---
 # <a name="compliance"></a>合规性
 
@@ -33,7 +33,7 @@ Microsoft 托管桌面已实现以下认证：
 - [服务组织控制（SOC）1、2、3](../../compliance/offering-SOC.md)
 - [支付卡行业 (PCI) 数据安全标准 (DSS)](../../compliance/offering-PCI-DSS.md)
 
-## <a name="auditor-reports-and-client-certificates"></a>审计员报告和客户端证书
+## <a name="auditor-reports-and-compliance-certificates"></a>审核员报告和合规性证书
 
 您可以在[服务信任门户（STP）](https://servicetrust.microsoft.com/)中查找相关信息，包括控制和技术要求，其中中央存储库提供有关 Microsoft 云服务产品的此类信息。 您可以从 STP 的 "[审核报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)" 部分下载审核员报告、合规性证书等更多。
 

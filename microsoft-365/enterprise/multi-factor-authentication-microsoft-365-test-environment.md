@@ -15,18 +15,18 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用发送到 Microsoft 365 企业版测试环境中的智能手机的短信配置多重身份验证。
-ms.openlocfilehash: ea2041a463b224781df101251dab0f4d9f0e8753
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b17c6b3b39bebaff2737ea5e9bb198beef00844c
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633190"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153876"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的多重身份验证
 
 *此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
-若要使用其他级别的安全来登录 Microsoft 365 或使用 Azure AD 租户订阅订阅的任何服务或应用程序，可以启用 Azure 多重身份验证，它需要的用户名和密码不只需要用户名和密码才能验证上级. 
+若要使用其他级别的安全来登录 Microsoft 365 或使用 Azure AD 租户订阅订阅的任何服务或应用程序，您可以启用 Azure 多重身份验证，它需要的用户和密码不只需要用户名和密码即可验证帐户。 
 
 使用多重身份验证时，用户需要确认电话呼叫、在短信中键入验证代码，或者在正确输入密码后在智能手机上指定应用密码。 仅在满足第二个身份验证因素时才能登录。 
   
@@ -82,7 +82,7 @@ ms.locfileid: "42633190"
     
 2. 转到 Office 365 门户（[https://portal.office.com](https://portal.office.com)），并使用用户2帐户名称和密码登录。
     
-3. 登录后，系统会提示您设置帐户以获取详细信息。 单击“下一步”****。
+3. 登录后，系统会提示您设置帐户以获取详细信息。 单击“**下一步**”。
     
 4. 在“其他安全性验证”**** 页上： 
     
@@ -92,7 +92,7 @@ ms.locfileid: "42633190"
     
    - 在**方法**中，单击 "**通过短信向我发送代码**"。
     
-5. 单击“下一步”****。
+5. 单击“**下一步**”。
     
 6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     

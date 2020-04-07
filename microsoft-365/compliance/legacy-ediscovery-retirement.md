@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和 Office 365 高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
+ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024352"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43158433"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧电子数据展示工具的退休
 
@@ -53,10 +53,8 @@ ms.locfileid: "43024352"
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
-   
 
-
-- [Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)v1.0，它是高级电子数据展示的第一个版本，可通过 Office 365 安全性 & 合规性中心中的电子数据展示事例进行访问。
+- [Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)v1.0，它是高级电子数据展示的第一个版本，可通过 Office 365 安全性 & 合规性中心中的核心电子数据展示事例进行访问。 高级电子数据展示 v1.0 的退休不会影响您创建和管理核心电子数据展示事例的能力。
 
 > [!NOTE]
 > 要废弃的电子数据展示功能仅适用于基于云的 Microsoft 365 和 Office 365 版本。 在 Exchange 和 SharePoint 的本地版本中，电子数据展示功能将仍受支持，直至进一步通知。
@@ -141,7 +139,7 @@ ms.locfileid: "43024352"
 <tr class=even>
   <td>将邮件从一个邮箱复制到另一个邮箱</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">将权限分配给邮箱</a></td>
-  <td>若要让用户访问另一个用户的电子邮件（例如，当员工离开你的组织，并且需要向其他人授予对以前员工的电子邮件的访问权限）时，建议您分配该用户的权限以访问以前的员工的信箱. 因此，不是将邮箱项目复制到另一个用户邮箱或共享邮箱，只需分配一个用户访问源邮箱的权限。</td>
+  <td>若要让用户访问另一个用户的电子邮件（例如，当员工离开你的组织，并且需要向其他人授予对以前员工的电子邮件的访问权限）时，建议您分配该用户访问以前员工的邮箱的权限。 因此，不是将邮箱项目复制到另一个用户邮箱或共享邮箱，只需分配一个用户访问源邮箱的权限。</td>
   
   </tr>
 <tr class="odd">
@@ -228,7 +226,7 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
   <tr class=even>
   <td>将邮件从一个邮箱复制到另一个邮箱</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">将权限分配给邮箱</a></td>
-  <td>若要让用户访问另一个用户的电子邮件（例如，当员工离开你的组织，并且需要向其他人授予对以前员工的电子邮件的访问权限）时，建议您分配该用户的权限以访问以前的员工的信箱. 因此，不是将邮箱项目复制到另一个用户邮箱或共享邮箱，只需分配一个用户访问源邮箱的权限。</td>
+  <td>若要让用户访问另一个用户的电子邮件（例如，当员工离开你的组织，并且需要向其他人授予对以前员工的电子邮件的访问权限）时，建议您分配该用户访问以前员工的邮箱的权限。 因此，不是将邮箱项目复制到另一个用户邮箱或共享邮箱，只需分配一个用户访问源邮箱的权限。</td>
   
   </tr>
 
@@ -331,14 +329,28 @@ Exchange Web Services API 中的这些操作由 exchange 管理中心中的 "就
 
 ## <a name="advanced-ediscovery-v10"></a>高级电子数据展示1.0 版
 
-高级电子数据展示 v1.0，即在电子数据展示事例中，通过单击 "**切换到高级电子数据展示**" 将停用的高级电子数据展示的版本。 其功能已在 Microsoft 365 合规性中心中的新[高级电子数据展示解决方案](https://aka.ms/edisco)中取代。
+高级电子数据展示 v1.0 （通过单击 "**切换到高级电子数据展示**"，可在核心电子数据展示案例中使用的高级电子数据展示的版本将被停用）。 其功能已在 Microsoft 365 合规性中心中的新[高级电子数据展示解决方案](https://aka.ms/edisco)中取代。
+
+若要确定您的组织是否正在使用高级电子数据展示1.0：
+
+1. 转到 " [Office 365 安全 & 合规中心](https://protection.office.com)"。
+
+2. 在安全性 & 合规性中心的左侧导航窗格中，单击 "**电子数据展示 > 电子数据**展示"，然后打开 "核心电子数据展示事例"。
+
+3. 如果您看到 "**切换到高级电子数据展示**" 按钮，则单击它将转到1.0 版本的高级电子数据展示（即将停用）。 在核心电子数据展示中创建和管理案例的能力将不受影响。 仅在将停用在高级电子数据展示 v1.0 中添加和分析事例数据的功能（通过单击 "**切换到高级电子数据展示**"）。
 
 Microsoft 365 中新的高级电子数据展示解决方案（也称为*高级电子数据展示 2.0 2.0*）提供了原始解决方案的所有功能，但现在提供了一种基于保管人的方法，可识别其他 Microsoft 365 服务中的内容，收集该内容，然后将其添加到审阅集中，以便审阅者可以利用 fast search 查询、标记和分析功能来帮助挑选相关文档。 高级电子数据展示现在为 Microsoft 和非 Microsoft 文件类型提供了改进的处理和本机查看器[，此处提供](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20)了文件类型的完整列表以及支持[的元数据字段。](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery) 此外，新的高级电子数据展示解决方案提供了强大的保管人保留功能，允许您将保留应用于不同服务中的内容、通知用户保留和在高级电子数据展示事例中跟踪保管人响应。
+
+若要访问高级电子数据展示2.0：
+
+1. 转到[Microsoft 365 合规性中心](https://compliance.microsoft.com)。
+
+2. 在 Microsoft 365 合规性中心的左侧导航窗格中，单击 "**全部显示**"，然后单击 "**电子数据展示 > 高级**"。
 
 此时，我们建议您开始将电子数据展示工作流转换为新的高级电子数据展示功能。 尽管您仍可以在现有情况下访问高级电子数据展示 v1.0，但 Microsoft 支持不会在2020年10月1日之后提供支持。 有关详细信息，请参阅以下日程表。
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
-    
+
 - Office 365 和 Microsoft 365 企业组织
 
 - Office 365 和 Microsoft 365 教育组织

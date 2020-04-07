@@ -1,6 +1,6 @@
 ---
-title: 第5阶段-移动设备管理
-description: Microsoft 365 企业版包括使用 Microsoft Intune 的移动设备管理。 查看要求和先决条件、使用 Azure Active Directory 资源设置 Intune、注册 iOS、macOS、Android 和 Windows 设备、部署应用、创建配置配置文件、使用合规性策略，以及为移动启用条件访问Microsoft 365 企业版的设备管理。
+title: 阶段 5 - 移动设备管理
+description: Microsoft 365 企业版包括使用 Microsoft Intune 的移动设备管理。 查看要求和先决条件、使用 Azure Active Directory 资源设置 Intune、注册 iOS、macOS、Android 和 Windows 设备、部署应用、创建配置配置文件、使用合规性策略，以及为使用 Microsoft 365 企业的移动设备管理启用条件访问。
 keywords: Microsoft 365，Microsoft 365 企业版，Microsoft 365 文档，移动设备管理，Intune
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066752"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153888"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>第5阶段： Microsoft 365 企业版的移动设备管理
 
@@ -60,7 +60,7 @@ Intune 使用 Azure AD 中的许多功能，包括您的域、用户和组。 �
 
 1. **[确认设备是否受支持](https://docs.microsoft.com/intune/supported-devices-browsers)**。 确认 Intune 支持你的 iOS、macOS、Android、Galaxy 和 Windows 设备。 如果您的组织包括不受支持的设备，则这些策略不会应用于这些设备。
 
-2. **[自定义您的域名](https://docs.microsoft.com/intune/custom-domain-name-configure)**。 默认情况下，在 Azure AD 中会自动创建一个名为 your-domain.onmicrosoft.com 的域，如 " **** "。 可以为您的组织自定义**onmicrosoft.com** 。 自定义时，它还会在连接到 Intune 和使用资源时向用户提供熟悉的域。
+2. **[自定义您的域名](https://docs.microsoft.com/intune/custom-domain-name-configure)**。 默认情况下，在 Azure AD 中会自动创建一个名为 your-domain.onmicrosoft.com 的域，如 " **your-domain.onmicrosoft.com** "。 可以为您的组织自定义**onmicrosoft.com** 。 自定义时，它还会在连接到 Intune 和使用资源时向用户提供熟悉的域。
 
 3. **[登录到 Intune](https://docs.microsoft.com/intune/account-sign-up)**。 登录后，可能会提示您输入您的组织的相关信息。 Intune 包含在 Microsoft 365 中，可以直接从[microsoft 365 管理中心](https://admin.microsoft.com)打开。 您还可以直接从[Azure 门户](https://portal.azure.com)打开 Intune。
 
@@ -84,7 +84,7 @@ Intune 使用 Azure AD 中的许多功能，包括您的域、用户和组。 �
 
 |||
 |:-------|:-----|
-|![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南： iOS 和 Android 设备注册](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南： iOS 和 Android 设备注册](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -102,7 +102,7 @@ Intune 可以管理应用程序，包括添加应用程序、将其分配给不�
 
 |||
 |:-------|:-----|
-|![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：设备合规性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [测试实验室指南：设备合规性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>步骤6：启用合规性和条件访问

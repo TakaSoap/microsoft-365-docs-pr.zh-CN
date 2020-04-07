@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Office 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029856"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151425"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的活动报表
 
@@ -180,6 +180,6 @@ ms.locfileid: "43029856"
   
 ## <a name="related-articles"></a>相关文章
 
-[安全与合规中心中的报表](https://support.office.com/article/7acd33ce-1ec8-49fb-b625-43bac7b58c5a)
+[安全与合规中心中的报表](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
 

@@ -1,11 +1,11 @@
 ---
-title: 在 Office 365 审核日志中搜索电子数据展示活动
+title: 在审核日志中搜索电子数据展示活动
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/24/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,27 +14,27 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解如何在 Office 365 审核日志中搜索符合性管理员在安全 & 合规中心中执行内容搜索和电子数据展示事例任务时记录的事件。
-ms.openlocfilehash: ef9c40debb8c28f0d017423d29016ca4f52b7a17
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 21a7304abae594557c5ae8fcdc33ca8c88bc2dea
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634150"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151447"
 ---
-# <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>在 Office 365 审核日志中搜索电子数据展示活动
+# <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在审核日志中搜索电子数据展示活动
 
-在安全 & 合规性中心中或通过运行相应的 Windows PowerShell cmdlet 在 Office 365 审核日志中执行的内容搜索和电子数据展示相关的活动将被记录下来。 当管理员或合规性管理员（或任何已分配电子数据展示权限的用户）在安全 & 合规中心中执行以下内容搜索和与电子数据展示相关的任务时，将记录事件：
+在安全 & 合规性中心中或通过运行相应的 PowerShell cmdlet 在 Office 365 审核日志中执行的内容搜索和电子数据展示相关的活动将被记录下来。 当管理员或电子数据展示管理者（或任何用户分配的电子数据展示权限）在安全 & 合规性中心中执行以下内容搜索和核心电子数据展示任务时，将记录事件：
   
 - 创建和管理电子数据展示事例
-    
+
 - 创建、启动和编辑“内容搜索”
-    
+
 - 执行“内容搜索”操作，如预览、导出和删除搜索结果
-    
+
 - 为“内容搜索”配置权限筛选
-    
+
 - 管理电子数据展示管理员角色
-    
+
 > [!IMPORTANT]
 > 本文中所述的活动只是使用安全 & 合规中心执行的电子数据展示任务的结果。 不包括使用 Exchange Online 中的就地电子数据展示工具或 SharePoint Online 中的电子数据展示中心执行的电子数据展示任务。 
   
@@ -67,10 +67,9 @@ ms.locfileid: "42634150"
     
     将显示 "弹出**详细信息**" 页，其中包含事件记录中的详细属性。 若要显示其他详细信息，请单击 "**详细信息**"。 有关这些属性的说明，请参阅 "[电子数据展示活动的详细属性](#detailed-properties-for-ediscovery-activities)" 部分。 
 
-  
 ## <a name="ediscovery-activities"></a>电子数据展示活动
 
-下表介绍了当管理员或用户使用安全 & 合规性中心或在连接到组织的安全 & 合规中心的远程 PowerShell 中运行相应的 cmdlet 时，将记录的内容搜索和与电子数据展示相关的活动。 
+下表介绍了在管理员或电子数据展示管理器使用安全 & 合规中心或在 Office 365 安全 & 合规中心 PowerShell 中运行相应的 cmdlet 时记录的内容搜索和核心电子数据展示活动。 
   
 > [!NOTE]
 > 本节中介绍的电子数据展示活动提供了与下一节中所述的电子数据展示 cmdlet 活动类似的信息。 我们建议您使用本节中介绍的电子数据展示活动，因为这些活动将在30分钟内显示在审核日志搜索结果中。 在审核日志搜索结果中显示电子数据展示 cmdlet 活动需要长达24小时。 
@@ -94,10 +93,10 @@ ms.locfileid: "42634150"
 |为电子数据展示事例保留创建搜索查询  <br/> |HoldCreated  <br/> |新 New-caseholdrule  <br/> |已创建与电子数据展示事例相关联的基于查询的保留。  <br/> |
 |已删除内容搜索  <br/> |SearchRemoved  <br/> |Remove-ComplianceSearch  <br/> |已删除现有内容搜索。  <br/> |
 |删除的电子数据展示管理员  <br/> |CaseAdminRemoved  <br/> |EDiscoveryCaseAdmin  <br/> |从你的组织中删除了电子数据展示管理员。  <br/> |
-|删除的电子数据展示事例  <br/> |CaseRemoved  <br/> |Get-compliancecase  <br/> |已删除电子数据展示事例。 请注意，必须删除与事例关联的所有保留，然后才能删除案例。  <br/> |
+|删除的电子数据展示事例  <br/> |CaseRemoved  <br/> |Get-compliancecase  <br/> |已删除电子数据展示事例。 必须删除与事例关联的所有保留，然后才能删除案例。  <br/> |
 |已删除搜索权限筛选器  <br/> |SearchPermissionRemoved  <br/> |New-compliancesecurityfilter  <br/> |已删除搜索权限筛选器。  <br/> |
-|已删除的针对电子数据展示事例保留的搜索查询  <br/> |HoldRemoved  <br/> |New-caseholdrule  <br/> |删除了与电子数据展示事例相关联的基于查询的保留。 删除保留中的查询通常是删除保留的结果。 在删除保留或保留查询时，将释放保留的内容位置。  <br/> |
-|已下载内容搜索的导出  <br/> |SearchExportDownloaded  <br/> |不适用  <br/> |用户将内容搜索的结果下载到本地计算机。 请注意，必须先启动**内容搜索活动的已导出导出**，然后才能下载搜索结果。  <br/> |
+|已删除的针对电子数据展示事例保留的搜索查询  <br/> |HoldRemoved  <br/> |New-caseholdrule  <br/> |删除了与电子数据展示事例相关联的基于查询的保留。 删除保留中的查询通常是删除保留的结果。 当删除保留或保留查询时，将释放保留的内容位置。  <br/> |
+|已下载内容搜索的导出  <br/> |SearchExportDownloaded  <br/> |不适用  <br/> |用户将内容搜索的结果下载到本地计算机。 必须先启动 "**内容搜索**" 活动的 "导出"，然后才能下载搜索结果。  <br/> |
 |预览内容搜索的结果  <br/> |SearchPreviewed  <br/> |不适用  <br/> |用户预览内容搜索的结果。  <br/> |
 |内容搜索的已清除结果  <br/> |SearchResultsPurged  <br/> |新 New-compliancesearchaction  <br/> |用户通过运行 New-compliancesearchaction 清除的 "**清除**" 命令清除了内容搜索的结果。  <br/> |
 |删除了内容搜索的分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |New-compliancesearchaction  <br/> |已删除内容搜索准备操作（为 Office 365 高级电子数据展示准备搜索结果）。 如果准备操作的时间不是两周，则为高级电子数据展示准备的搜索结果将从 Microsoft Azure 存储区域中删除。 如果准备操作的时间已超过2周，则此事件指示仅删除了相应的准备操作。  <br/> |
@@ -111,10 +110,15 @@ ms.locfileid: "42634150"
 |已开始导出内容搜索  <br/> |SearchExported  <br/> |新 New-compliancesearchaction  <br/> |用户导出内容搜索的结果。  <br/> |
 |已启动导出报告  <br/> |SearchReport  <br/> |新 New-compliancesearchaction  <br/> |用户导出了内容搜索报告。  <br/> |
 |已停止内容搜索  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |用户停止了内容搜索。  <br/> |
+|(无)|CaseViewed|Get-compliancecase|用户在 "安全与合规中心" 中或通过运行 cmdlet 查看了**电子数据展示**页面上的案例列表。|
+|(无)|SearchViewed|Get-ComplianceSearch|用户在 "安全与合规中心" 中或通过运行 cmdlet 查看了内容搜索（在 "**搜索**" 选项卡上列出）上的列表。 当用户查看与电子数据展示事例关联的内容搜索列表时（通过单击事例中的 "**搜索**" 选项卡）或运行**new-compliancesearch-case**命令时，也会记录此活动。|
+|(无)|ViewedSearchExported|New-compliancesearchaction-导出|用户查看了 "安全和合规中心" 中的内容搜索导出作业列表（在 "**导出**" 选项卡上列出）或通过运行 cmdlet。 当用户在电子数据展示事例中查看导出作业列表时（在事例的 "**导出**" 选项卡上列出）或通过运行**New-compliancesearchaction-case 导出**命令，也会记录此活动。|
+|(无)|ViewedSearchPreviewed|New-compliancesearchaction 预览|用户在 "安全与合规中心" 中或通过运行 cmdlet 预览内容搜索的结果。|
+|||||
   
 ## <a name="ediscovery-cmdlet-activities"></a>电子数据展示 cmdlet 活动
 
-下表列出了管理员或用户使用安全 & 合规性中心或通过在与组织的安全 & 合规中心连接的远程 PowerShell 中运行相应的 cmdlet 来执行的与电子数据展示相关的活动时记录的 cmdlet 审核日志记录。 请注意，在此表中列出的 cmdlet 活动和上一节中介绍的电子数据展示活动中，审核日志记录中的详细信息是不同的。 
+下表列出了管理员或用户使用安全 & 合规性中心或通过在与组织的安全 & 合规中心连接的远程 PowerShell 中运行相应的 cmdlet 来执行的与电子数据展示相关的活动时记录的 cmdlet 审核日志记录。 对于此表中列出的 cmdlet 活动以及上一节中介绍的电子数据展示活动，审核日志记录中的详细信息是不同的。 
   
 如前所述，电子数据展示 cmdlet 活动最长需要24小时才会显示在审核日志搜索结果中。
   
@@ -127,10 +131,10 @@ ms.locfileid: "42634150"
 |从电子数据展示案例中删除了保留  <br/> |[CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823814) <br/> |删除了与电子数据展示事例相关联的保留。 删除保留将释放保留中的所有内容位置。 删除保留也会导致删除与保留相关的事例保留规则（请参阅下面的**new-caseholdrule** ）。  <br/> |
 |在电子数据展示事例中更改了保留  <br/> |[CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823815) <br/> |已更改与电子数据展示相关联的保留。 可能的更改包括添加或删除内容位置或关闭（禁用）保留。  <br/> |
 |为电子数据展示事例保留创建搜索查询  <br/> |[新 New-caseholdrule](https://go.microsoft.com/fwlink/p/?LinkId=823816) <br/> |已创建与电子数据展示事例相关联的基于查询的保留。  <br/> |
-|已删除的针对电子数据展示事例保留的搜索查询  <br/> |[New-caseholdrule](https://go.microsoft.com/fwlink/p/?LinkId=823820) <br/> |删除了与电子数据展示事例相关联的基于查询的保留。 删除保留中的查询通常是删除保留的结果。 在删除保留或保留查询时，将释放保留的内容位置。  <br/> |
+|已删除的针对电子数据展示事例保留的搜索查询  <br/> |[New-caseholdrule](https://go.microsoft.com/fwlink/p/?LinkId=823820) <br/> |删除了与电子数据展示事例相关联的基于查询的保留。 删除保留中的查询通常是删除保留的结果。 当删除保留或保留查询时，将释放保留的内容位置。  <br/> |
 |更改了电子数据展示事例保留的搜索查询  <br/> |[New-caseholdrule](https://go.microsoft.com/fwlink/p/?LinkId=823819) <br/> |与电子数据展示事例关联的基于查询的保留已更改。 可能的更改包括编辑基于查询的保留的查询或日期范围。  <br/> |
 |创建的电子数据展示事例  <br/> |[新 Get-compliancecase](https://go.microsoft.com/fwlink/p/?LinkId=823842) <br/> |创建了电子数据展示事例。 创建事例时，只需为其指定一个名称。 其他与案例相关的任务，如添加成员、创建保留和创建与事例关联的内容搜索将导致其他事件被记录。  <br/> |
-|删除的电子数据展示事例  <br/> |[Get-compliancecase](https://go.microsoft.com/fwlink/p/?LinkId=823844) <br/> |已删除电子数据展示事例。 请注意，必须删除与事例关联的所有保留，然后才能删除案例。  <br/> |
+|删除的电子数据展示事例  <br/> |[Get-compliancecase](https://go.microsoft.com/fwlink/p/?LinkId=823844) <br/> |已删除电子数据展示事例。 必须删除与事例关联的所有保留，然后才能删除案例。  <br/> |
 |更改后的电子数据展示案例  <br/> |[Get-compliancecase](https://go.microsoft.com/fwlink/p/?LinkId=823846) <br/> |更改了电子数据展示事例。 更改包括关闭打开的事例或重新打开已关闭的案例。  <br/> |
 |向电子数据展示事例添加了成员  <br/> |[外接 ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823848) <br/> |将用户添加为电子数据展示事例的成员。 作为案例的成员，用户可以执行各种与事例相关的任务，具体取决于是否已为其分配了必要的权限。  <br/> |
 |从电子数据展示案例中删除了成员  <br/> |[ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823849) <br/> |以电子数据展示事例的成员身份删除了用户。  <br/> |
@@ -151,7 +155,7 @@ ms.locfileid: "42634150"
    
 ## <a name="detailed-properties-for-ediscovery-activities"></a>电子数据展示活动的详细属性
 
-下表介绍在搜索结果中列出的电子数据展示活动的**详细**信息页上单击 "**详细信息**" 页上包含的属性。 当您导出审核日志搜索结果时，这些属性也包含在 CSV 文件中。 请注意，电子数据展示活动的审核日志记录不会包含下面列出的每个详细属性。 
+下表介绍在搜索结果中列出的电子数据展示活动的**详细**信息页上单击 "**详细信息**" 页上包含的属性。 当您导出审核日志搜索结果时，这些属性也包含在 CSV 文件中。 电子数据展示活动的审核日志记录不会包含下面列出的每个详细属性。 
   
 > [!TIP]
 > 当您导出搜索结果时，CSV 文件包含一个名为**Detail**的列，其中包含多值属性中下表中所述的详细属性。 您可以使用 Excel 中的 Power Query 功能将此列拆分为多个列，这样每个属性都将拥有自己的列。 这将允许您对其中一个或多个属性进行排序和筛选。 有关详细信息，请参阅[search the audit log](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)中的 "将搜索结果导出到文件" 部分。 
@@ -171,10 +175,10 @@ ms.locfileid: "42634150"
 |Id  <br/> |报告条目的 ID。 ID 唯一标识审核日志条目。  <br/> |
 |NonPIIParameters  <br/> |与 Operation 属性中标识的 cmdlet 一起使用的参数（不含任何值）的列表。 此属性中列出的参数与 Parameters 属性中列出的参数相同。  <br/> |
 |ObjectId  <br/> |由 Operation 属性中列出的活动创建、更改或删除的对象的 GUID 或名称（例如，内容搜索或电子数据展示事例）。 此外，还会在审核日志搜索结果的项列中标识此对象。  <br/> |
-|ObjectType  <br/> |用户创建、删除或修改的电子数据展示对象的类型;例如，内容搜索操作（预览、导出或清除）、电子数据展示案例或内容搜索。  <br/> |
-|Operation  <br/> |与所执行的电子数据展示活动相对应的操作的名称。  <br/> |
+|ObjectType  <br/> |用户创建、删除或修改的电子数据展示对象的类型;例如，内容搜索操作（预览、导出或清除）、电子数据展示事例或内容搜索。  <br/> |
+|操作  <br/> |与所执行的电子数据展示活动相对应的操作的名称。  <br/> |
 |OrganizationId  <br/> |Office 365 组织的 GUID。  <br/> |
-|参数  <br/> |与对应的 cmdlet 一起使用的参数的名称和值。  <br/> |
+|Parameters  <br/> |与对应的 cmdlet 一起使用的参数的名称和值。  <br/> |
 |PublicFolderLocations  <br/> |Exchange Online 中包含在内容搜索中的公用文件夹位置，或在电子数据展示事例中置于保留状态。  <br/> |
 |查询  <br/> |与活动相关联的搜索查询，例如内容搜索或基于查询的保留。  <br/> |
 |RecordType  <br/> |记录指示的操作类型。 值**18**表示与[电子数据展示 cmdlet 活动](#ediscovery-cmdlet-activities)部分中列出的活动相关的事件。 值为**24**表示与 "[如何搜索并查看电子数据展示活动](#how-to-search-for-and-view-ediscovery-activities)" 一节中列出的活动相关的事件。  <br/> |
@@ -182,7 +186,7 @@ ms.locfileid: "42634150"
 |SecurityComplianceCenterEventType  <br/> |指示活动是安全 & 合规中心事件。 所有电子数据展示活动的值都为此属性的值为**0** 。  <br/> |
 |SharepointLocations  <br/> |内容搜索中包含的 SharePoint Online 网站或在电子数据展示事例中置于保留状态。  <br/> |
 |StartTime  <br/> |启动电子数据展示活动时的日期和时间（采用协调通用时间（UTC））。  <br/> |
-|UserID  <br/> |执行了导致记录记录的活动（在操作属性中指定）的用户。 请注意，由系统帐户（如 NT AUTHORITY\SYSTEM）执行的电子数据展示活动的记录也包含在审核日志中。  <br/> |
+|UserID  <br/> |执行了导致记录记录的活动（在操作属性中指定）的用户。 由系统帐户（如 NT AUTHORITY\SYSTEM）执行的电子数据展示活动的记录也包含在审核日志中。  <br/> |
 |UserKey  <br/> |UserID 属性中标识的用户的备选 ID。 对于电子数据展示活动，此属性的值通常与 UserId 属性相同。  <br/> |
 |UserServicePlan  <br/> |您的组织使用的 Office 365 订阅。 对于电子数据展示活动，此属性通常为空。  <br/> |
 |UserType  <br/> |执行操作的用户类型。 以下值指示用户类型。  <br/> 0一个常规用户。 2 Office 365 组织中的管理员。 3 A Microsoft 数据中心管理员或数据中心系统帐户。 4系统帐户。 5应用程序。 6 A 服务主体。 |
