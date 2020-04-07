@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: 26c34d40359d00b540b30e0f6e3ddf3878e80f9a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634420"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151457"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
+
+>*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。 
 
@@ -33,15 +35,11 @@ ms.locfileid: "42634420"
 
 ## <a name="accessing-file-plan-manager"></a>访问文件计划管理器
 
-若要访问文件计划管理器，需要满足以下两项要求：
-
-- 拥有 Office 365 企业版 E5 订阅。
-
-- 在安全与合规中心，已为用户分配了以下角色之一：
+要访问文件计划管理器，您必须具有以下管理员角色之一：
     
-    - 保留管理者
-    
-    - 仅拥有查看权限的保留管理者
+- 保留管理者
+
+- 仅拥有查看权限的保留管理者
 
 ## <a name="default-retention-labels-and-label-policy"></a>默认保留标签和标签策略
 

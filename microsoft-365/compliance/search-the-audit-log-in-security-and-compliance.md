@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955681"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151437"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -588,7 +588,7 @@ ms.locfileid: "42955681"
 |:-----|:-----|:-----|
 |已添加用户|添加用户|已创建 Office 365 用户帐户。|
 |已更改用户许可证|更改用户许可证|分配给用户的许可证有所更改。 若要查看已更改的许可证，请参阅相应的“**已更新用户**”活动。|
-|已更改用户密码|更改用户密码|管理员更改了用户的密码。|
+|已更改用户密码|更改用户密码|用户更改了自己的密码。 必须为组织中的所有用户或选定的用户启用自助密码重置，以允许用户重置其密码。 还可以在 Azure Active Directory 中跟踪自助服务密码重置活动。 有关详细信息，请参阅 [Azure AD 密码管理报告选项](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting)。
 |已删除用户|删除用户|已删除 Office 365 用户帐户。|
 |重置用户密码|重置用户密码|管理员重置了用户的密码。|
 |已设置强制用户更改密码的属性|设置强制更改用户密码|管理员设置了强制用户在下次登录到 Office 365 时更改密码的属性。|
