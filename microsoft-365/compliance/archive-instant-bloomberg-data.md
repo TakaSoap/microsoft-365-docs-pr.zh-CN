@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将数据从即时 Bloomberg 聊天工具导入 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 81cfa29bf3db101a87a0827985fb59af187d985e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 6d267959f9086830282e9d1f018e4e58f90bc830
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632865"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941254"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
 使用 Microsoft 365 合规性中心的本机连接器从 "[即时 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)协作" 工具导入和存档金融 services 聊天数据。 在设置和配置连接器后，它每天连接到组织的 Bloomberg 安全 FTP 站点（SFTP），将聊天消息的内容转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的邮箱中。
 
-在将即时 Bloomberg 数据存储在用户邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和 Microsoft 365 保留策略）应用于即时Bloomberg 数据。 例如，您可以使用内容搜索来搜索即时 Bloomberg 聊天邮件，或将包含即时 Bloomberg 数据的邮箱与高级电子数据展示事例中的管理员关联起来。 使用即时 Bloomberg 连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
+在将即时 Bloomberg 数据存储在用户邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和 Microsoft 365 保留策略）应用于即时 Bloomberg 数据。 例如，您可以使用内容搜索来搜索即时 Bloomberg 聊天邮件，或将包含即时 Bloomberg 数据的邮箱与高级电子数据展示事例中的管理员关联起来。 使用即时 Bloomberg 连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>存档即时 Bloomberg 数据概述
 
@@ -37,7 +37,7 @@ ms.locfileid: "42632865"
     
 3. 您在 Microsoft 365 合规性中心中创建的即时 Bloomberg 连接器每天连接到 Bloomberg SFTP 站点，并将聊天消息从以前的24小时传输到 Microsoft 云中的安全 Azure 存储区域。 连接器还将聊天 massage 的内容转换为电子邮件格式。
     
-4. 连接器将聊天邮件项目导入到特定用户的邮箱中。 将在特定用户的邮箱中创建一个名为 InstantBloomberg 的新文件夹，然后将这些项目导入该文件夹中。 连接器通过使用*CorporateEmailAddress*属性的值来执行。 每个聊天邮件都包含此属性，该属性由聊天消息的每个参与者的电子邮件地址填充。 除了使用*CorporateEmailAddress*属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含每个用户的 Bloomberg UUID 和相应的 Microsoft 365 邮箱地址。 如果为每个聊天项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的 Bloomberg UUID 对应的有效 Microsoft 365 用户，连接器将使用聊天项目的*CorporateEmailAddress*属性。 如果连接器在自定义映射文件或聊天项目的*CorporateEmailAddress*属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
+4. 连接器将聊天邮件项目导入到特定用户的邮箱中。 将在特定用户的邮箱中创建一个名为 InstantBloomberg 的新文件夹，然后将这些项目导入该文件夹中。 连接器通过使用*CorporateEmailAddress*属性的值实现此功能。 每个聊天邮件都包含此属性，该属性由聊天消息的每个参与者的电子邮件地址填充。 除了使用*CorporateEmailAddress*属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含每个用户的 Bloomberg UUID 和相应的 Microsoft 365 邮箱地址。 如果为每个聊天项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的 Bloomberg UUID 对应的有效 Microsoft 365 用户，连接器将使用聊天项目的*CorporateEmailAddress*属性。 如果连接器在自定义映射文件或聊天项目的*CorporateEmailAddress*属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
 
 ## <a name="before-you-begin"></a>准备工作
 

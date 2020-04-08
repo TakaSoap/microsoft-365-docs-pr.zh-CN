@@ -1,5 +1,7 @@
 ---
 title: 欧盟社会安全号码或等效 ID
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟社会保险号码或等效 ID 敏感信息类型时，将会查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 0666818dc892070f5c2f0c34abd8ca33d1253e33
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1f2d1d9c61f27fb47b0c7ac0ce544b17175d4254
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805925"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41591223"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>欧盟社会安全号码或等效 ID
 

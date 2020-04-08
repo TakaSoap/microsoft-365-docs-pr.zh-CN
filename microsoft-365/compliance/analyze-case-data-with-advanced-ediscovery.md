@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: '概述了 "Office 365 高级电子数据展示" 中的分析过程，该过程允许您设置参数、运行选项和查看结果。 '
-ms.openlocfilehash: ff26d0ce28d725cb922c228ff4b6ddf9ab174757
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596119"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42556800"
 ---
-# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>使用 Office 365 高级电子数据展示分析事例数据
+# <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>使用高级电子数据展示分析事例数据（经典）
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -45,7 +45,7 @@ ms.locfileid: "41596119"
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [了解文档相似性](understand-document-similarity-in-advanced-ediscovery.md)
   

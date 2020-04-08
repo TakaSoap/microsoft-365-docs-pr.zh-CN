@@ -1,5 +1,7 @@
 ---
 title: EU 护照号码
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟护照号敏感信息类型时，应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 4afcf7b764eb8976e0588464515256f7cb1bdb8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0032d3e50d7dab0b696d9000242e70956469052e
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805945"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41592113"
 ---
 # <a name="eu-passport-number"></a>EU 护照号码
 
@@ -105,7 +107,7 @@ ms.locfileid: "40805945"
 |:-----|
 |passport number  <br/> 比利时护照号码  <br/> 护照号  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
    
-## <a name="bulgaria"></a>保加利亚语
+## <a name="bulgaria"></a>保加利亚
 
 ### <a name="format"></a>Format
 

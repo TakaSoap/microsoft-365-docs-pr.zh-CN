@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: '了解如何将用户定义的关键字添加到相关性，以帮助在 Office 365 高级电子数据展示中标记时识别相关文件，并指定成本参数。  '
-ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bec34867e7dfdb86848fd1fd2126d5cf96129802
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075914"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42556760"
 ---
-# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中定义突出显示的关键字和高级选项
+# <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>在高级电子数据展示（经典）中定义突出显示的关键字和高级选项
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -74,7 +74,7 @@ ms.locfileid: "42075914"
     
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 高级电子数据展示](office-365-advanced-ediscovery.md)
+[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   
 [定义问题和分配用户](define-issues-and-assign-users.md)
   

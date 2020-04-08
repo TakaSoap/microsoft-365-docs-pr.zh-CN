@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文在 Microsoft 365 中的高级电子数据展示案例中的审阅集中定义文档的元数据字段。
-ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
-ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
+ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "42651836"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941234"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -34,6 +34,9 @@ ms.locfileid: "42651836"
 - **导出的域名称：** 导出文档时包含的元数据字段的名称。  空白单元格表示该字段不包含在导出的元数据中。
 
 - **说明：** 元数据字段的说明。
+
+> [!NOTE]
+> [查看设置搜索](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)中的**关键字**字段使用关键字查询语言（KQL）。 可以在 "可**搜索字段名称**" 列中列出的字段在审阅集搜索中的 "**关键字**" 字段中使用，以形成复杂查询，而无需使用查询生成器。 有关 KQL 的详细信息，请参阅[关键字查询语言语法参考](https://go.microsoft.com/fwlink/?LinkId=269603)。
 
 |**字段名称**和**显示字段名称**|**可搜索字段名称**|**导出的域名称**|**说明**|
 |:-----|:-----|:-----|:-----|
@@ -54,7 +57,7 @@ ms.locfileid: "42651836"
 |对话密文刻录时间|ConversationRedactionBurnTime||为聊天创建会话的 PDF 版本的日期。|
 |文档创建日期|CreatedTime|Doc_date_created|从文档元数据创建日期。|
 |Custodian|Custodian|Custodian|与项目关联的保管人的名称。|
-|Date|Date|Date|Date 是一个根据文件类型的计算字段。<br /><br />电子邮件：发送日期<br />电子邮件附件：文档的上次修改日期; 如果不可用，则为父级的发送日期<br />嵌入文档：文档的上次修改日期;如果不可用，则为父级的上次修改日期<br />SPO 文档（包括新式附件）： SharePoint 上次修改日期;如果不可用，则文档的上次修改日期<br />非 Office 365 文档：上次修改日期<br />会议：会议开始日期<br />语音邮件：发送日期<br />IM：发送日期|
+|日期|日期|日期|Date 是一个根据文件类型的计算字段。<br /><br />电子邮件：发送日期<br />电子邮件附件：文档的上次修改日期; 如果不可用，则为父级的发送日期<br />嵌入文档：文档的上次修改日期;如果不可用，则为父级的上次修改日期<br />SPO 文档（包括新式附件）： SharePoint 上次修改日期;如果不可用，则文档的上次修改日期<br />非 Office 365 文档：上次修改日期<br />会议：会议开始日期<br />语音邮件：发送日期<br />IM：发送日期|
 |其他路径|Dedupedcompoundpath|Deduped_compound_path|完全重复的文档的复合路径列表（电子邮件：基于内容、文档：基于哈希）。|
 |其他保管人|DedupedCustodians|Deduped_custodians|完全重复的文档的保管人列表（基于内容的电子邮件，基于内容的电子邮件; 基于哈希的文档）。|
 |其他文件 Id|DedupedFileIds|Deduped_file_IDs|完全重复的文档的文件 Id 列表（基于内容的电子邮件，基于内容的电子邮件; 基于哈希的文档）。|

@@ -1,5 +1,7 @@
 ---
 title: Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解 Exchange Online 和 Office 365 如何使用传输层安全性（TLS）和转发保密（FS）来保护电子邮件通信。 此外，还可获取 Microsoft 为 Exchange Online 颁发的证书的相关信息。
-ms.openlocfilehash: 34667714840e23be5d19aed8f47a539ea1474ab4
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: fe6f9dcb7cbad2e4b32ad386802158fc437740a6
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685118"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41590493"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接
 

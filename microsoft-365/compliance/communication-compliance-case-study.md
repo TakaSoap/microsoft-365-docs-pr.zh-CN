@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053069"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165931"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>案例研究-Contoso 为 Microsoft 团队和 Exchange 通信快速配置冒犯性语言策略
 
@@ -41,7 +41,7 @@ Contoso Corporation 是一个虚构的组织，需要快速配置一个策略来
 
 ## <a name="step-1---planning-for-communication-compliance"></a>第1步-规划通信合规性
 
-Contoso IT 管理员和合规性专家在 Microsoft 365 中参加了有关合规性解决方案的在线网络研讨会，并确定通信合规性策略将帮助他们满足更新的公司策略要求以减少工作区骚扰. 它们共同开发了一个计划，用于创建和启用通信合规性策略，该策略将监视在 Exchange Online 中发送的电子邮件的 Microsoft 团队中发送的用于聊天的攻击性语言。 其计划包括标识：
+Contoso IT 管理员和合规性专家在 Microsoft 365 中参加了有关合规性解决方案的在线网络研讨会，并确定通信合规性策略将帮助他们满足针对减少工作区骚扰的更新的公司策略要求。 它们共同开发了一个计划，用于创建和启用通信合规性策略，该策略将监视在 Exchange Online 中发送的电子邮件的 Microsoft 团队中发送的用于聊天的攻击性语言。 其计划包括标识：
 
 - 需要访问通信合规性功能的 IT 管理员。
 - 需要创建和管理通信策略的合规性专家。
@@ -53,10 +53,21 @@ Contoso IT 管理员和合规性专家在 Microsoft 365 中参加了有关合规
 第一步是确认 Contoso 的 Microsoft 365 许可包括对通信合规性解决方案的支持。 若要访问和使用通信合规性，Contoso IT 管理员需要验证 Contoso 是否具有以下各项之一：
 
 - Microsoft 365 E5 订阅（付费或试用版）
-- 具有 "高级合规性" 加载项的 Office 365 企业版 E3 许可证
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 内幕人士风险管理加载项
+- Microsoft 365 A5 订阅（付费或试用版）
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 内幕成员风险管理加载项
+- Microsoft 365 G5 订阅（付费或试用版）
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规性附加
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 内幕版风险管理加载项
 - Office 365 企业版 E5 订阅（付费或试用版）
+- Office 365 企业版 E3 订阅 + Office 365 高级合规性外接程序（不再适用于新订阅，请参阅注意）
 
-他们还必须确认必须将通信合规性策略中包含的用户分配给上面列出的许可证之一。
+他们还必须确认必须为通信合规性策略中包括的用户分配上述许可证之一。
+
+>[!IMPORTANT]
+>Office 365 高级合规性不再作为独立订阅销售。 当当前订阅过期时，客户应转换为上述订阅之一，其中包含相同或更多的合规性功能。
 
 Contoso IT 管理员需要执行以下步骤来验证 Contoso 的许可支持：
 

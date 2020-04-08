@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222004"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170904"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
@@ -37,7 +37,7 @@ NIST Cybersecurity Framework （CSF）是一个自愿的框架，其中包含用
 
 了解如何使用合规性分数和我们的 Azure 安全性和合规性蓝图加快您的 NIST Cybersecurity Framework 部署：
 
-- [下载 Azure 安全性和合规性蓝图-NIST CSF 风险评估清单](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [下载 Azure 安全性和合规性蓝图-NIST CSF 风险评估清单](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
 - [在合规性分数中了解有关适用于 Office 365 的 NIST CSF 评估的详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
@@ -64,11 +64,11 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 - [开始使用合规性分数](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **是否有独立的评估员验证了 Azure 政府、Dynamics 365 和 Office 365 是否支持 NIST CSF 要求？**
 
-是的，第三方评估组织具有证明，Azure 政府云服务提供了符合 NIST Cybersecurity Framework （CSF）风险管理实践（如在改进关键基础结构的框架中定义）Cybersecurity，版本1.0，日期为12月12日，2014。 NIST CSF 映射到 FedRAMP 中等控制框架，而独立评估员已针对 FedRAMP 中等比较基准评估了 Dynamics 365。 此外，Office 365 在6月2018的 HITRUST 中获得[了 NIST CSF 信函的认证](https://aka.ms/O365NISTCSFcertification)。
+是的，第三方评估组织具有证明，Azure 政府云服务提供了符合 NIST Cybersecurity Framework （CSF）风险管理惯例（如在改进关键基础结构 Cybersecurity 1.0 年2月 12 2014 日发布的版本的框架中定义）。 NIST CSF 映射到 FedRAMP 中等控制框架，而独立评估员已针对 FedRAMP 中等比较基准评估了 Dynamics 365。 此外，Office 365 在6月2018的 HITRUST 中获得[了 NIST CSF 信函的认证](https://aka.ms/O365NISTCSFcertification)。
 
 **Microsoft 云服务如何证明符合框架？**
 
@@ -88,7 +88,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 **Office 365 的范围内服务有哪些？**
 
-NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online Protection、Exchange Online、Skype for Business、管理中心、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、MicrosoftOffice 365 多租户云和 Office 365 GCC 中的团队、Office 专业增强版。
+NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online Protection、Exchange Online、Skype for business、管理中心、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 团队、Office 专业增强版 in Office 365 多租户和 Office 365 GCC。
 
 > [!NOTE]
 > Office 365 专业增强版支持对各种云服务（如漫游设置、许可和 OneDrive 消费者云存储）的访问，并可能在将来能够访问其他云服务。 漫游设置和许可支持 HITRUST 的标准。 OneDrive 消费者云存储不支持，并且其他可通过 Office 365 专业增强版访问的云服务以及 Microsoft 将来可能会提供的云服务也可能不支持这些标准。 *

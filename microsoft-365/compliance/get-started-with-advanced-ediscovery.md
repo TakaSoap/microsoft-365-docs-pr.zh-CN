@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何开始在 Microsoft 365 中使用高级电子数据展示。 完成几个快速的步骤之后，高级电子数据展示工具即可供使用。 第一步是创建一个事例，然后开始使用高级电子数据展示功能和功能。
-ms.openlocfilehash: 2819fdd2f3b98ca82535aa0f08830bb37744c3f7
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561662"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43100865"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>高级电子数据展示入门
 
@@ -37,17 +37,17 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
   - Microsoft 365 E5 或 Office 365 E5 订阅
   
-  - 带有 E5 合规性加载项的 Microsoft 365 E3 订阅
-  
-  - 具有高级合规性加载项的 Office 365 E3 订阅
+  - 具有 E5 合规性附加设备的 Microsoft 365 E3 订阅
+
+  - 使用 E5 电子数据展示和审核附加版的 Microsoft 365 E3 订阅
 
   如果你没有现有的 Microsoft 365 E5 计划，并且想要尝试高级电子数据展示，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅，或者注册 Microsoft 365 E5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 - **每用户许可：** 若要在提前电子数据展示事例中将用户添加为保管人，则必须为该用户分配以下许可证之一，具体取决于您的组织订阅：
 
-  - Microsoft 365：必须为用户分配 Microsoft 365 E5 许可证或 E5 合规性附加许可证。
+  - Microsoft 365：必须为用户分配 Microsoft 365 E5 许可证、E5 合规性附加许可证或 E5 电子数据展示和审核附加许可证。
 
-  - Office 365：必须为用户分配 Office 365 E5 许可证或高级合规性附加许可证。
+  - Office 365：必须为用户分配 Office 365 E5 许可证。
 
    有关如何分配许可证的信息，请参阅向[用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
 
@@ -56,7 +56,7 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步骤2：分配电子数据展示权限
 
-若要访问高级电子数据展示或添加为高级电子数据展示事例的成员，则必须为用户分配适当的权限。 具体来说，用户必须作为 "Office 365 安全 & 合规中心" 中的 "电子数据展示管理器" 角色组的成员进行添加。 此角色组的成员可以创建和管理高级电子数据展示事例。 他们可以添加和删除成员，将保管人和内容位置置于保留状态，管理合法保留通知，创建和编辑与案例关联的搜索，将搜索结果添加到审阅集，分析审阅集中的数据，以及从高级策略中导出和下载电子数据展示事例。
+若要访问高级电子数据展示或添加为高级电子数据展示事例的成员，则必须为用户分配适当的权限。 具体来说，用户必须作为 "Office 365 安全 & 合规中心" 中的 "电子数据展示管理器" 角色组的成员进行添加。 此角色组的成员可以创建和管理高级电子数据展示事例。 他们可以添加和删除成员，将保管人和内容位置置于保留状态，管理法律封存通知，创建和编辑与案例关联的搜索，将搜索结果添加到审阅集，分析审阅集中的数据，以及从高级电子数据展示事例中导出和下载。
 
 完成以下步骤以将用户添加到电子数据展示管理器角色组：
 
