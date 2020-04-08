@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: 938a6d58c8781fcc04f6b86e15db88b5de523cdf
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: d271e0351f784e1616e81e0f0124e65c3526ab91
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142511"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170960"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>确保 Office 365 和 Microsoft 365 商业版计划安全的十大方法
 
@@ -190,6 +190,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 |:-----|:-----|
 |名称  <br/> |阻止电子邮件自动转发到外部域  <br/> |
 |在以下情况应用此规则 .。。  <br/> |发件人。 . . 为外部/内部。 . . 组织内部  <br/> |
+|添加条件  <br/> |收件人。 . . 为外部/内部。 . . 组织外部  <br/> |
 |添加条件  <br/> |邮件属性。 . . 包含邮件类型。 . . 自动转发  <br/> |
 |执行以下操作 .。。  <br/> |阻止邮件。 . . 拒绝邮件并提供说明。  <br/> |
 |提供邮件文本  <br/> |出于安全考虑，将阻止此组织外部的自动转发电子邮件。  <br/> |

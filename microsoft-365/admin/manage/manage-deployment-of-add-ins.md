@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361947"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165919"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心管理 Office 365 加载项的部署
 
@@ -60,7 +60,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
 开始之前，请参阅[确定加载项集中部署是否适用于你的 Office 365 组织](centralized-deployment-of-add-ins.md)。
 
   
-1. 在管理中心中，转到 "**设置** \> **外接程序**" 页。
+1. 在 Microsoft 365 管理中心，转到 "**设置** > **外接程序**" 页。
     
 2. 在页面顶部选择 "**部署加载项**"。 在 "概述" 页上，选择 "**下一步**"。
     
@@ -101,12 +101,19 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
   
 ### <a name="add-in-states"></a>加载项状态
 
-外接程序可以处于 "**打开**" 或 "**关闭**" 状态。
-  
+管理员可以打开或关闭他们为 Microsoft 365 管理中心内的所有用户部署的外接程序。
+
+1.    在管理中心中，转到 " **设置** > **外接程序**" 页。 
+2.    选择部署的加载项。 
+3.    单击**状态**切换以打开或**关闭****外接端**。 
+4.    保存所做的更改。  
+
+此外，还可以使用三种加载项状态之一。
+ 
 |**状态**|**状态出现的原因**|**影响**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |管理员上载了加载项，并将其分配给用户或组。  <br/> |分配了加载项的用户和组可在相关客户端中看到它。  <br/> |
-|**已禁用**  <br/> |管理员已禁用加载项。  <br/> |分配了外接程序的用户和组无法再访问它。  <br/> 如果外接程序的状态更改为"可用"，则用户和组将再次有权访问它。  <br/> |
+|**已禁用**  <br/> |管理员已禁用加载项。  <br/> |分配了外接程序的用户和组无法再访问它。  <br/> 如果加载项状态更改为 "**活动**"，则用户和组将再次对其进行访问。  <br/> |
 |**已删除**  <br/> |管理员已删除加载项。  <br/> |分配了加载项的用户和组无法再访问它。  <br/> |
    
 如果没有人再使用加载项，请考虑删除外接程序。 如果仅在一年的特定时间段使用加载项，那么可以选择关闭加载项。
@@ -172,7 +179,6 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
     
   - Office
     
-  - iOS （仅限 iPad）
     
 - 从**AppSource**中开始的收购
     
@@ -217,7 +223,6 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|适用于 iOS 的 Office 2016 （仅限 ipad）  <br/> |2.12.18032600  <br/> |
 |Office 网页版  <br/> |不适用  <br/> |
    
  **对于 Outlook**： 
@@ -279,7 +284,7 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
 3. 单击 "**删除加载项**"。 移除右下角的外接端按钮。
 4. 验证您的选择，然后选择 "**删除外接程序**"。
   
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 深入了解如何创建和构建 [Office 加载项](https://go.microsoft.com/fwlink/p/?linkid=846362)。
   
