@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: '了解如何查找创建适用于 Office 365 的 DNS 记录所需的值/信息。 '
 ms.custom: okr_smb
-ms.openlocfilehash: 7b995aedc21305367e4a6621781e138d0d60efd1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6093dd8a7e8d901be7b172a31dcd0e56c549ab3
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251141"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189000"
 ---
 # <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>收集创建 Office 365 DNS 记录所需的信息
 
@@ -36,10 +36,18 @@ ms.locfileid: "42251141"
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>步骤1：查找 TXT 记录值并验证
 
 1. 在 Microsoft 365 管理中心，转到 "**安装** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
-    
-    如果使用的是 Office 365 德国，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。 
-    
-    如果您正在使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>" 页。
+
+::: moniker-end
     
 2. 在 "**域**" 页上，选择您的域，然后选择 "**启动安装程序**"。 你将返回域设置向导，查看需要添加的特定值。
     
@@ -57,9 +65,17 @@ ms.locfileid: "42251141"
 
 1. 在 Microsoft 365 管理中心，转到 "**安装** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
     
-    如果使用的是 Office 365 德国，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。 
-    
-    如果您正在使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>" 页。
+
+::: moniker-end
     
 2. 在" **域**"页面上，选择你的域。 
     

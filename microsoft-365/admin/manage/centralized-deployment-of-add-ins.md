@@ -19,20 +19,20 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的 Office 365 租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362127"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189019"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
 对于大多数客户来说，集中部署是为 Office 365 组织中的用户和组部署 Office 加载项值得推荐且功能最丰富的方式。 如果你是管理员，请使用本指南来确定你的租户和用户是否符合要求，以便你可以使用集中部署。
 集中部署支持 Windows、Mac、iOS、Android 和 Online Office 应用。
-加载项最长可能需要12个小时才能为所有用户显示客户端。
+加载项最长可能需要24小时才能为所有用户显示客户端。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 集中部署加载项需要用户使用 Office 365 专业增强版（并使用其组织 ID 登录到 Office），并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录目录必须处于或联合到 Azure Active Directory。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用[office 365 集中部署兼容性检查器](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)。
@@ -56,7 +56,7 @@ ms.locfileid: "42362127"
 - 对于 Word、Excel 和 PowerPoint 外接程序，您的用户必须使用下列项之一：
   - 在 Windows 设备上，版本1704或更高版本的 Office 365 专业增强版。
   - 在 Mac 上，版本15.34 或更高版本。
-      - 在 iOS （仅限 iPad）上，版本2.9.18010804 或更高版本。
+
 - 对于 Outlook，您的用户必须使用以下各项之一： 
   - Office 365 专业增强版的版本1701或更高版本。
   - Office Professional Plus 2019 或 Office Standard 2019 的版本1808或更高版本。

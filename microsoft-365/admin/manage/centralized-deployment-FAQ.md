@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 查看有关从 Microsoft 365 管理中心进行集中部署的常见问题解答。
-ms.openlocfilehash: d63158f70e3f905b0ee1acf994cbef207f1ab4f1
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 313e1dd7481ccdd8bbf7531d5b7433f8bbd54e38
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166483"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188970"
 ---
 # <a name="centralized-deployment-faq"></a>集中部署常见问题
 
@@ -33,7 +33,7 @@ ms.locfileid: "43166483"
 
 集中部署加载项需要用户使用 Office 365 专业增强版（并使用组织的登录凭据登录到 Office）并拥有 Exchange Online 邮箱。 你的订阅目录必须在 Azure Active Directory 中或联合到 Azure Active Directory。  
  
-仅 Outlook Online 邮箱支持集中部署。 它不支持部署到本地 Exchange 邮箱。
+仅联机邮箱支持集中部署。 它不支持部署到本地 Exchange 邮箱。
  
 您可以使用[Office 365 集中部署兼容性检查器](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) 来确定您的订阅是否符合条件。 
   
@@ -47,7 +47,7 @@ ms.locfileid: "43166483"
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>为所有用户显示外接程序需要多长时间？  
 
-加载项最长可能需要12个小时才能显示给所有用户。 加载项更新、打开或关闭更改或外接程序的更改可能需要相同的时间量。 
+加载项最长可能需要24小时才能显示给所有用户。 加载项更新、打开或关闭更改或外接程序的更改可能需要相同的时间量。 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>作为管理员，如何管理用户对我的组织的外接程序的访问？
 
