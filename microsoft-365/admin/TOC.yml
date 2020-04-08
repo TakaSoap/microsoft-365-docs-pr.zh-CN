@@ -169,6 +169,8 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: 使用集中式部署来部署加载项
           href: manage/manage-deployment-of-add-ins.md
+        - name: 集中部署常见问题
+          href: manage/centralized-deployment-FAQ.md
         - name: 查找合作伙伴或经销商
           href: manage/find-your-partner-or-reseller.md
         - name: 会议室和设备邮箱
@@ -227,7 +229,7 @@
           href: get-help-with-domains/remove-a-domain.md
         - name: 手动转移数据
           href: get-help-with-domains/transfer-data-manually.md
-    - name: Groups
+    - name: 组
       items:
         - name: 组概述
           href: create-groups/office-365-groups.md
