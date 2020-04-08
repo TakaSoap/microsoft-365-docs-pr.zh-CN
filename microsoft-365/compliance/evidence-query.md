@@ -1,5 +1,7 @@
 ---
 title: 查询证据中的数据
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,26 +16,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d2c4fa5a4fbb46508962e1c6237c17b95b071b0c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dbb08031504059adffc652c1c66ce710eac2ead3
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37074859"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41590713"
 ---
-# <a name="query-the-data-in-evidence"></a><span data-ttu-id="d1337-102">查询证据中的数据</span><span class="sxs-lookup"><span data-stu-id="d1337-102">Query the data in evidence</span></span>
+# <a name="query-the-data-in-evidence"></a><span data-ttu-id="c33e4-102">查询证据中的数据</span><span class="sxs-lookup"><span data-stu-id="c33e4-102">Query the data in evidence</span></span>
 
-<span data-ttu-id="d1337-103">在大多数情况下，能够深入了解证据中存在的内容，并对其进行组织以更有效地进行查看，这将非常有用。</span><span class="sxs-lookup"><span data-stu-id="d1337-103">In most cases, it will be useful to be able to dig deeper into what is there in a evidence and organize them to review more efficiently.</span></span> <span data-ttu-id="d1337-104">通过使用证据中的查询，您可以将重点放在符合您一次定义的条件的文档子集上，从而实现此目的。</span><span class="sxs-lookup"><span data-stu-id="d1337-104">Queries within a evidence enables you to do so by letting you focus on a subset of documents that meet the criteria defined by you at once.</span></span>
+<span data-ttu-id="c33e4-103">在大多数情况下，能够深入了解证据中存在的内容，并对其进行组织以更有效地进行查看，这将非常有用。</span><span class="sxs-lookup"><span data-stu-id="c33e4-103">In most cases, it will be useful to be able to dig deeper into what is there in a evidence and organize them to review more efficiently.</span></span> <span data-ttu-id="c33e4-104">通过使用证据中的查询，您可以将重点放在符合您一次定义的条件的文档子集上，从而实现此目的。</span><span class="sxs-lookup"><span data-stu-id="c33e4-104">Queries within a evidence enables you to do so by letting you focus on a subset of documents that meet the criteria defined by you at once.</span></span>
 
-## <a name="creating-and-running-a-query-within-a-evidence"></a><span data-ttu-id="d1337-105">在证据中创建和运行查询</span><span class="sxs-lookup"><span data-stu-id="d1337-105">Creating and running a query within a evidence</span></span>
+## <a name="creating-and-running-a-query-within-a-evidence"></a><span data-ttu-id="c33e4-105">在证据中创建和运行查询</span><span class="sxs-lookup"><span data-stu-id="c33e4-105">Creating and running a query within a evidence</span></span>
 
-<span data-ttu-id="d1337-106">为了在证据中创建和运行查询，请单击证据中的 "新建查询"。</span><span class="sxs-lookup"><span data-stu-id="d1337-106">In order to create and run a query within your evidence, click on "New Query" in your evidence.</span></span> <span data-ttu-id="d1337-107">命名查询并定义条件后，请单击 "保存" 以运行查询。</span><span class="sxs-lookup"><span data-stu-id="d1337-107">After you name your query and define the conditions, click "Save" to run the query.</span></span> <span data-ttu-id="d1337-108">若要运行以前保存的查询，只需单击已保存的查询即可。</span><span class="sxs-lookup"><span data-stu-id="d1337-108">To run a query that has been previously saved, simply click on the saved query.</span></span>
+<span data-ttu-id="c33e4-106">为了在证据中创建和运行查询，请单击证据中的 "新建查询"。</span><span class="sxs-lookup"><span data-stu-id="c33e4-106">In order to create and run a query within your evidence, click on "New Query" in your evidence.</span></span> <span data-ttu-id="c33e4-107">命名查询并定义条件后，请单击 "保存" 以运行查询。</span><span class="sxs-lookup"><span data-stu-id="c33e4-107">After you name your query and define the conditions, click "Save" to run the query.</span></span> <span data-ttu-id="c33e4-108">若要运行以前保存的查询，只需单击已保存的查询即可。</span><span class="sxs-lookup"><span data-stu-id="c33e4-108">To run a query that has been previously saved, simply click on the saved query.</span></span>
 
-## <a name="conditions"></a><span data-ttu-id="d1337-109">条件</span><span class="sxs-lookup"><span data-stu-id="d1337-109">Conditions</span></span>
+## <a name="conditions"></a><span data-ttu-id="c33e4-109">条件</span><span class="sxs-lookup"><span data-stu-id="c33e4-109">Conditions</span></span>
 
-<span data-ttu-id="d1337-110">您可以使用多个条件来定义查询。</span><span class="sxs-lookup"><span data-stu-id="d1337-110">You can use a number of conditions to define your queries.</span></span> <span data-ttu-id="d1337-111">它们的范围从诸如发送日期和参与者等元数据到分析结果，如包容类型和主要主题。</span><span class="sxs-lookup"><span data-stu-id="d1337-111">They range from metadata such as sent date and participants to analytics results, such as inclusive types and dominant themes.</span></span> <span data-ttu-id="d1337-112">在将分析结果用作条件之前，必须先分析证据。</span><span class="sxs-lookup"><span data-stu-id="d1337-112">You must first analyze your evidence before using analytics results as conditions.</span></span> <span data-ttu-id="d1337-113">条件可以是 OR'ed 或 AND'ed;为了混合使用连接器，可以使用条件组。</span><span class="sxs-lookup"><span data-stu-id="d1337-113">The conditions can be OR'ed or AND'ed; in order to mix connectors, you can use condition groups.</span></span>
+<span data-ttu-id="c33e4-110">您可以使用多个条件来定义查询。</span><span class="sxs-lookup"><span data-stu-id="c33e4-110">You can use a number of conditions to define your queries.</span></span> <span data-ttu-id="c33e4-111">它们的范围从诸如发送日期和参与者等元数据到分析结果，如包容类型和主要主题。</span><span class="sxs-lookup"><span data-stu-id="c33e4-111">They range from metadata such as sent date and participants to analytics results, such as inclusive types and dominant themes.</span></span> <span data-ttu-id="c33e4-112">在将分析结果用作条件之前，必须先分析证据。</span><span class="sxs-lookup"><span data-stu-id="c33e4-112">You must first analyze your evidence before using analytics results as conditions.</span></span> <span data-ttu-id="c33e4-113">条件可以是 OR'ed 或 AND'ed;为了混合使用连接器，可以使用条件组。</span><span class="sxs-lookup"><span data-stu-id="c33e4-113">The conditions can be OR'ed or AND'ed; in order to mix connectors, you can use condition groups.</span></span>
 
-## <a name="filters"></a><span data-ttu-id="d1337-114">筛选器</span><span class="sxs-lookup"><span data-stu-id="d1337-114">Filters</span></span>
-<span data-ttu-id="d1337-115">筛选器在查询中充当查询;您可以对搜索条件筛选条件过度。</span><span class="sxs-lookup"><span data-stu-id="d1337-115">Filters act as querying within a query; You can overly filter conditions on your search condition.</span></span>
+## <a name="filters"></a><span data-ttu-id="c33e4-114">筛选器</span><span class="sxs-lookup"><span data-stu-id="c33e4-114">Filters</span></span>
+<span data-ttu-id="c33e4-115">筛选器在查询中充当查询;您可以对搜索条件筛选条件过度。</span><span class="sxs-lookup"><span data-stu-id="c33e4-115">Filters act as querying within a query; You can overly filter conditions on your search condition.</span></span>
 
 
