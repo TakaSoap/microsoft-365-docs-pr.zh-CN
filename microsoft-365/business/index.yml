@@ -4,19 +4,34 @@ summary: Microsoft 365 Business 是一款订阅服务，其中包括 Office 365 
 brand: m365
 metadata:
   title: Microsoft 365 业务资源
-  description: 说明
+  description: description
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 238c4cd0c74854def600af876f93c52e6480ebb5
-  ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+  ms.openlocfilehash: 9741932fcde29d2b64156c600f1bad1b309d5f66
+  ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/18/2020
-  ms.locfileid: "41233663"
+  ms.lasthandoff: 04/07/2020
+  ms.locfileid: "43165907"
+productDirectory:
+  title: 使用 Microsoft 365 商业版保护远程工作
+  items:
+  - title: 新增功能
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 即将推出 Microsoft 365 商业版！
+    url: https://aka.ms/aadp1smbblog
+  - title: 观看合作伙伴网络研讨会
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: 在你的 SMB 客户处理 COVID-19 时对其进行保护。
+    url: https://aka.ms/M365v253PAL-Register
+  - title: 产品
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: 单击链接以购买或联系你的合作伙伴。
+    url: https://aka.ms/m365bweb
 conceptualContent:
   items:
   - title: 什么是 Microsoft 365 商业版？
@@ -35,7 +50,7 @@ conceptualContent:
       text: 服务说明
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
-      text: 常见问题解答
+      text: 常见问题
   - title: 设置 Microsoft 365 商业版
     links:
     - url: set-up.md

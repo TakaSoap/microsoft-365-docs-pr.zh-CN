@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '了解如何使用产品密钥续订 Office 365 for business 订阅，并打开或关闭定期记帐。 '
-ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142111"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175198"
 ---
 # <a name="renew-office-365-for-business"></a>续订 Office 365 for business
 
@@ -50,7 +50,7 @@ ms.locfileid: "43142111"
 
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
-2. 选择要为其管理定期计费的订阅。
+2. 选择想要为其管理定期计费的订阅。
  
 3. 在 "**帐单**" 下的 "**续订打开**" 或 "**到期**日" 旁边，选择 "**编辑**"。
 
@@ -67,13 +67,9 @@ ms.locfileid: "43142111"
 
 ::: moniker range="o365-germany"
   
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
-
-    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>页。
-
-2. 选择要为其管理定期计费的订阅。
+2. 选择想要为其管理定期计费的订阅。
  
 3. 若要启用**定期计费**，请将切换切换到 **"开**"。
 
@@ -90,13 +86,9 @@ ms.locfileid: "43142111"
 
 ::: moniker range="o365-21vianet"
   
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
-
-    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>页。
-
-2. 选择要为其管理定期计费的订阅。
+2. 选择想要为其管理定期计费的订阅。
  
 3. 若要启用**定期计费**，请将切换切换到 **"开**"。
 
