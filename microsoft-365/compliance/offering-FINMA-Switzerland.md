@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99d4b1b07c86989bce0da08324014bda7a8a7d5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 728208960932ea8d642ad1604d45ba321f021735
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602409"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313757"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>瑞士金融市场监督管理局 (FINMA)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602409"
 
 [金融市场监督管理局](https://www.finma.ch/en) ([Eidgenössische Finanzmarktaufsicht](https://www.finma.ch/de/), FINMA) 是瑞士各个金融市场的监管机构，负责确保瑞士金融市场高效运作。 它负责审慎监管银行、保险公司、交易所、证券交易商和其他金融机构。
 
-FINMA 发布了 [Circular 2018/3 Outsourcing–banks and insurers](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2018-03.pdf?la=en)（2018/3 号通告：外包业务 – 银行和保险公司），规定了银行、证券交易商和保险公司在将对公司业务活动至关重要的任何职能外包给服务提供商时必须遵守的要求。 外包业务活动的任何公司都需要对 FINMA 负责，就像其自己执行外包职能一样。
+FINMA 发布了 [Circular 2018/3 Outsourcing–banks and insurers](https://www.finma.ch/en/~/media/finma/dokumente/rundschreiben-archiv/2018/rs-18-03/finma-rs-2018-03---20170921.pdf?la=en)（2018/3 号通告：外包业务 – 银行和保险公司），规定了银行、证券交易商和保险公司在将对公司业务活动至关重要的任何职能外包给服务提供商时必须遵守的要求。 外包业务活动的任何公司都需要对 FINMA 负责，就像其自己执行外包职能一样。
 
 ## <a name="microsoft-and-finma"></a>Microsoft 和 FINMA
 
