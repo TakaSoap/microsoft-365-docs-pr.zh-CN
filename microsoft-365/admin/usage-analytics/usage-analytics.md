@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 概述贵组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: 0481f894a4841488b20af90cd7c00619d2ad5c98
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: c9e2b9e6b814ac9245222f5da670862e308d1ab4
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826377"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170914"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
----
-Microsoft 365 的使用情况分析尚不可用于 Microsoft 365 美国政府社区版。
+
+Microsoft 365 使用率分析目前不可用于 Power BI 政府客户。
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析概述
 
@@ -83,7 +83,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 用户活动报告可用于某些单独的服务。 这些报告提供了与 Active Directory 属性联接的用户级详细使用率数据。 此外，"部门采用情况" 报告允许您通过 Active Directory 属性进行切片，以便您可以在所有单个服务中查看活动用户。 所有指标都聚合为最新的完整月份。
 
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>此模板应用是否可通过购买或免费使用？
 

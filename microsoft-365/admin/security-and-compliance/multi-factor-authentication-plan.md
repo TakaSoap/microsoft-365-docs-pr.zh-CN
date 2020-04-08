@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Office 365 中的多重身份验证，以及对其进行设置时需要遵循的步骤。
-ms.openlocfilehash: e3886387740fe904b9c9458f7b1abf736c3ef83f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: be3b355f4487e2df5c2e20c9911c3bb421d5f7e1
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153564"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170936"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Office 365 部署的多重身份验证计划
 
@@ -65,7 +65,7 @@ Office 365 使用多重身份验证来帮助提供额外的安全性，并通过
 |本地托管的混合设置  <br/> | 如果在本地管理用户身份，有以下几种选择：  <br/>  物理或虚拟智能卡（使用 AD FS 时）  <br/> [Azure 多因素身份验证](https://go.microsoft.com/fwlink/p/?LinkId=526677)（AD FS 模块）  <br/>  Azure Active Directory （Azure AD）多重身份验证  <br/> |
    
   
-下图演示更新的 Office 2013 设备应用（用于 Windows）如何使用户能够使用 MFA 登录。Office2013 设备应用通过使用 [Active Directory 身份验证库 (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684) 支持多重身份验证。Azure AD 托管用户可登录的网页。标识提供程序可以是 Azure AD 或联合身份提供程序，如 AD FS。联合用户的身份验证执行以下步骤：
+下图演示更新的 Office 2013 设备应用（用于 Windows）如何使用户能够使用 MFA 登录。 Office 2013 设备应用程序通过使用[Active Directory 身份验证库（ADAL）](https://go.microsoft.com/fwlink/p/?LinkId=526684)支持多因素身份验证。 Azure AD 托管用户可登录的网页。 标识提供程序可以是 Azure AD 或联合身份提供程序，如 AD FS。 联合用户的身份验证执行以下步骤：
   
 1. Azure AD 将用户重定向到由 Office 365 租户的记录的标识提供程序托管的登录网页。标识提供程序由用户登录名中指定的域来确定。
     

@@ -2,8 +2,8 @@
 title: Office 365 中的隔离
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Office 365 中的隔离会保留可能有害或不需要的邮件。 管理员和最终用户可以访问隔离。
-ms.openlocfilehash: 29f9fcbed83e9019118bb8b37c19cad1199c4c45
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: a11b4a0d86cfc5f74636d3a9f89cf598320d1ebf
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895295"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42940953"
 ---
 # <a name="quarantine-in-office-365"></a>Office 365 中的隔离
 
@@ -35,7 +35,7 @@ ms.locfileid: "42895295"
 
 用户和管理员都可以使用隔离邮件：
 
-- 管理员可对所有用户使用所有类型的已隔离邮件。 只有管理员可以处理被隔离为恶意软件、高可信度网络钓鱼的邮件或邮件流规则（也称为传输规则）的结果。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
+- 管理员可对所有用户使用所有类型的已隔离邮件。 只有管理员可以处理被隔离为恶意软件、高可信度网络钓鱼的邮件或邮件流规则（也称为传输规则）的结果。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
 
 - 如果邮件被隔离为垃圾邮件、批量电子邮件或（从2020年4月，）的网络钓鱼，则用户可以使用它们作为收件人的隔离邮件。 有关详细信息，请参阅[在 Office 365 中查找并以用户的方式释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。
 

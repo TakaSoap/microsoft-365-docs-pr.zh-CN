@@ -6,15 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "37595588"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>做好注册 Microsoft 托管桌面的准备
 
-这些主题介绍在您的组织准备注册时需要执行的步骤，包括检查您的环境是否满足关键先决条件、配置网络、设置证书以及准备您的应用程序以包含在服务台.
+这些主题介绍在您的组织准备注册时需要执行的步骤，包括检查您的环境是否满足关键先决条件、配置网络、设置证书以及准备您的应用程序以包含在服务中。
 
 - [Microsoft 托管桌面的系统必备](prerequisites.md)
 - [Microsoft 托管桌面的网络配置](network.md)

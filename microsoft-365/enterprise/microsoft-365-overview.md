@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供对适用于企业的 Microsoft 365 的组件、计划和部署路径的介绍。
-ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113513"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175186"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -45,7 +45,7 @@ ms.locfileid: "43113513"
 |:-------|:-----|
 | E3 | 访问 Microsoft 365 中的核心产品和功能，以提高工作效率和促进创新和安全。 |
 | E5 | 访问 Microsoft 365 中的最新产品和功能，包括高级威胁防护、安全和协作工具。。 包括所有 E3's 功能，以及高级安全性、语音和数据分析工具。 |
-| F1 | 通过专门构建的工具和资源与您的 Firstline 工作人员联系，让他们能够完成其最佳工作。 |
+| F3 | 通过专门构建的工具和资源与您的 Firstline 工作人员联系，让他们能够完成其最佳工作。 |
 |||
 
 如果你拥有 Microsoft 365 E3，还可以获取以下[产品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
@@ -55,7 +55,7 @@ ms.locfileid: "43113513"
 
 这些产品包含 Microsoft 365 E5 附带的其他功能。
 
-有关详细信息，请参阅[每个计划的特性和功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
+有关每个计划中包含的内容的详细信息，请参阅[将企业转换为 Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)。
 
 ## <a name="get-the-big-picture"></a>获取大图
 
@@ -146,7 +146,7 @@ ms.locfileid: "43113513"
 |||
 
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 如果你要自己部署，请启动[Microsoft 365 以进行企业部署旅程](deploy-microsoft-365-enterprise.md)。
 

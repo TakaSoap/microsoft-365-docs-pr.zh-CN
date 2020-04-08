@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Office 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
-ms.openlocfilehash: 104be669dcb6d22cba00974075418e2d14ed629c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894224"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163906"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 中的自动调查的详细信息和结果
 
@@ -87,18 +87,16 @@ ms.locfileid: "42894224"
 
 |状态  |含义  |
 |---------|---------|
-|即将开始 | 调查已排入队列，以便尽快开始 |
-|正在运行 | 调查已开始，正在进行分析 |
-|找不到威胁 | 调查已完成其分析，未发现任何威胁 |
-|已由系统终止 | 调查未关闭并在7天后过期 |
-|挂起的操作 | 调查发现了与建议的操作有关的威胁。  调查在发现最初的威胁和推荐的操作后继续运行，因此您应该在批准操作之前检查日志，以查看分析器是否仍在进行中。 |
-|发现威胁 | 调查发现威胁，但威胁没有在空中可用的操作。  这些是无方向无线操作的用户操作。 |
-|已修正 | 调查已完成且已完全修正（已批准所有操作） |
-|部分修正 | 调查已完成，某些建议的操作已获得批准 |
-|已由用户终止 | 管理员终止了调查 |
-|已失败 | 调查过程中发生错误，阻止它达到威胁的结论 |
-|按限制排队 | 由于系统处理限制，调查正在等待分析（以保护服务性能） |
-|已通过限制终止 | 由于调查卷和系统处理限制，无法在足够的时间内完成调查。 您可以通过在资源管理器中选择电子邮件并选择调查操作来 retrigger 调查。 |
+|即将开始 | 调查已触发并等待开始运行。 这是第一步。  |
+|正在运行 | 调查过程已开始，正在进行中。 在审批[挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)时，也会发生此状态。 |
+|找不到威胁 | 调查已完成，并且未标识任何威胁（用户帐户、电子邮件、URL 或文件）。 <br/><br/>**提示**：如果你怀疑缺少某些内容（如 false），则可以使用[威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)执行操作。 |
+|已由系统终止 | 调查已停止。 这可能因多种原因导致出现这种情况。 以下是两个最常见的原因：<br/>-调查的待处理操作已过期。 等待为期一周的批准后，待处理的操作超时。 <br/>-操作过多。 例如，如果单击恶意 Url 的用户过多，则可能会超过调查运行所有分析器的能力，因此调查将暂停。 <br/><br/>**提示**：如果调查在执行操作之前停止，请尝试使用[威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)查找和解决威胁。  |
+|挂起的操作 | 调查发现威胁，如恶意电子邮件、恶意 URL 或有风险的邮箱设置，以及用于补救威胁正在等待[批准](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)的操作。<br/><br/>如果发现任何具有相应操作的威胁，则会触发挂起操作状态;但是，请注意，调查可能尚未完全完成。  检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)以查看其他项目是否仍处于待完成状态。 |
+|已修正 | 调查已完成，并批准了所有操作（完全修正）。<br/><br/>**注意**：批准的修正操作可能会出现错误，从而导致无法执行操作。 这不会更改调查状态。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)中的详细结果。 |
+|部分修正 | 调查导致了补救措施，有些已批准并已完成。 其他操作仍[处于挂起状态](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)。 |
+|失败 | 至少一个调查分析器遇到无法正确完成的问题。 <br/><br/>**注意**：如果在批准了修正操作后调查失败，则修正操作可能仍为 "成功"。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)中的详细结果。 |
+|按限制排队 | 在队列中保留调查。 当其他调查完成时，将开始排队调查。 这有助于避免较差的服务性能。 <br/><br/>**提示**：挂起的操作可能会限制可运行的新调查数。 请务必[批准（或拒绝）挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)。 |
+|已通过限制终止 | 如果队列中的调查时间过长，将停止。 <br/><br/>**提示**：您可以[从威胁资源管理器开始调查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。 |
 
 ### <a name="investigation-graph"></a>调查图形
 

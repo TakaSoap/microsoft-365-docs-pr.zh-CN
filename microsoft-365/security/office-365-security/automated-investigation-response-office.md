@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
 ms.custom: air
-ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033442"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170948"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
 
@@ -75,7 +75,7 @@ ms.locfileid: "43033442"
 
 第1阶段还包括对管理员触发的电子邮件调查（使用[威胁资源管理器](threat-explorer.md)）的支持。
 
-第2阶段现在与**公共预览版**中的以下行动手册结合在一起，为操作和 aiding 安全管理员提供调查问题的建议：
+第2阶段现在正在进行**公共预览版**中的以下行动手册，为操作和 aiding 安全管理员提供有关调查问题的建议：
 - 用户报告为 "已损坏" （公用预览）
 
 在完成后，将立即发布后续行动手册。 访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)以查看计划和即将推出的其他内容。
