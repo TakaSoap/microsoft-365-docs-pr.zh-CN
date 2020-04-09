@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 6707a61ae2fd9f7dddb7aa63927a53f1795b5127
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 40747d2ee66d4a873f83247278f04377ccfa8eaf
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634450"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163852"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
+
+>*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 如需了解什么是敏感度标签以及该标签如何帮助你保护组织数据，请参阅[了解敏感度标签](sensitivity-labels.md)。
 
@@ -45,6 +47,12 @@ ms.locfileid: "42634450"
 部署和应用敏感度标签的基本流程如下：
 
 ![敏感度标签工作流关系图](../media/Sensitivity-label-flow.png)
+
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>灵敏度标签的订阅和许可要求
+
+许多不同的订阅都支持灵敏度标签，并且用户的许可要求取决于你使用的功能。
+
+若要查看授权用户从自 2020 年 4 月 1 日起发布的 Microsoft 365 合规性功能中受益的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。 有关敏感度标签，请参阅[信息保护](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)部分和相关 PDF 下载。
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>创建和管理敏感度标签所需的权限
 
@@ -69,7 +77,7 @@ ms.locfileid: "42634450"
 |使用敏感度标签加密文档和电子邮件，并限制谁可以访问该内容以及可以如何使用它 |[通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md)|
 |为标记为加密的文档启用 SharePoint（和 OneDrive）中的协作功能 | [启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
 |管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 |[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)|
-|创建内容时，自动对用户应用敏感度标签或建议标签 | [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)|
+|自动将敏感度标签应用于文档和电子邮件 | [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)|
 |使用敏感度标签来保护 Teams和 SharePoint 中的内容 |[将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用](sensitivity-labels-teams-groups-sites.md)|
 |发现、标记和保护本地数据存储中存储的文件 |[部署 Azure 信息保护扫描程序以自动分类和保护文件](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |发现、标记和保护云端数据存储中存储的文件|[发现、分类、标记和保护存储在云中的管控和敏感数据](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|

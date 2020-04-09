@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 通过安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
-ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894883"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189078"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -112,7 +112,7 @@ DLP 策略包含以下基本内容：
   
 - 包含某种敏感信息的内容。
     
-- 包含标签的内容。 有关详细信息，请参阅下方的[在 DLP 策略中使用标签作为条件](#using-a-label-as-a-condition-in-a-dlp-policy)部分。
+- 包含标签的内容。 有关详细信息，请参阅下方的[将保留标签用作 DLP 策略中的条件](#using-a-retention-label-as-a-condition-in-a-dlp-policy)部分。
     
 - 内容是与贵组织的外部还是内部人员共享。
 
@@ -327,35 +327,23 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
     
 - 任何中间置信水平范围通常为略高于置信水平下限，略低于置信水平上限。
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>将标签用作 DLP 策略中的条件
+## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>将保留标签用作 DLP 策略中的条件
 
-可创建一个标签，再执行以下操作：
-<!-- what kind of label? -->
-  
-- **发布**标签，让最终用户可看到此标签并可在内容中手动应用它。 
-    
-- 对匹配所选条件的内容**自动应用**标签。 
-    
-若要详细了解标签，请参阅[保留标签概述](labels.md)。
-  
-创建标签后，即可在 DLP 策略中将该标签用作条件。 
+将以前创建和发布的[保留标签](labels.md)用作 DLP 策略中的条件时，请注意以下事项：
+
+- 在尝试将保留标签用作 DLP 策略中的条件之前，你以前必须已创建、发布和应用了该标签。
+- 创建并发布保留标签后，它们可能需要长达一天的时间来同步，并且最多需要 7 天来自动应用。 有关详细信息，请参阅[保留标签需要多长时间才能生效](labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
+- ***仅支持 SharePoint Online 和 OneDrive for Business 中的项目***在策略中使用保留标签。
+
 
 ![用作条件的标签](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-例如，可能需要基于以下原因执行此操作：
-  
-- 发布了名为“**机密**”的标签，使组织内部人员可在机密电子邮件和文档中手动应用该标签。 通过在 DLP 策略中使用此标签作为条件，可限制与组织外部人员共享标记为“**机密**”的内容。 
-    
-- 为名为“**Alpine House**”的项目创建了一个带此名称的标签，然后将此标签自动应用到包含关键字“Alpine House”的内容中。 通过在 DLP 策略中使用此标签作为条件，在最终用户要与组织外部人员共享此内容时，可向其显示一条策略提示。 
-    
-- 发布了名为“**税务记录**”的标签，使记录管理人员能够对需归类为记录的内容手动应用此标签。 通过在 DLP 策略中使用此标签作为条件，可查找带有此标签并包含其他类型敏感信息（例如 ITIN 或 SSN）的内容；对标记有“**税务记录**”的内容应用保护操作；并根据 DLP 报告和审核日志数据获取有关 DLP 策略的详细活动报告。 
-    
-- 对一组管理人员的 Exchange 邮箱和 OneDrive 帐户发布了名为“**高层管理团队 - 敏感**”的标签。 通过在 DLP 策略中使用此标签作为条件，可对同一部分内容和用户执行保留和保护操作。 
-    
-在 DLP 规则中将标签用作条件后，可选择性地对一组特定内容、位置或用户执行保护操作。 
+如果你有项目处于保留和处置状态，并且还希望为其应用其他控件，则可能需要在 DLP 策略中使用保留标签，例如：
 
-> [!NOTE]
-> 如果在 DLP 策略中将保留标签指定为条件，而且你还包含 Exchange 和/或 Teams 作为位置，则你将收到以下错误：“不支持保护电子邮件和团队消息中带标签的内容。 请删除下述标签或取消将 Exchange 和 Teams 设为位置。” 这是因为 Exchange 传输在消息提交和传递过程中不会评估标签元数据。 
+- 你发布了一个名为“**2018 纳税年度**”的保留标签，当它应用于存储在 SharePoint 中的 2018 年税务文档后，系统会将其保留 10 年，并在此期限后处置它们。 你也不希望在组织外部共享这些项目，你可以使用 DLP 策略来完成此操作。
+
+> [!IMPORTANT]
+> 如果在 DLP 策略中将保留标签指定为条件，而且你还包含 Exchange 和/或 Teams 作为位置，则你将收到以下错误：**“不支持保护电子邮件和团队消息中带标签的内容。请删除下述标签或取消将 Exchange 和 Teams 设为位置。”** 这是因为 Exchange 传输在消息提交和传递过程中不会评估标签元数据。 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>即将推出对敏感度标签的支持
 

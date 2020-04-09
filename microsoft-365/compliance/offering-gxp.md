@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a3379043108340391764781f52b6a1bc3e05cf3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b4699ca9fda4f8d5364dff0fdabd868b886540b3
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601929"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165897"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>良好的临床、实验室和生产实践 (GxP)
 
@@ -40,7 +40,7 @@ Microsoft 可帮助从事生命科学产品和服务研究、临床研究、维�
 
 尽管这些标准和最佳实践未特别关注 GxP 法规合规性，但其目的和目标是相似的，有助于确保在 Microsoft 云服务中所存储数据的机密性、完整性和可用性。
 
-Microsoft 聘请 [Montrium](https://www.montrium.com/) 为其执行 GxP 资格审查，Montrium 是一个独立组织，专门负责生命科学行业的质量保证和 GxP 法规合规性。 最终形成的资格准则（[Azure](https://aka.ms/gxpcompliance) 和 [Office 365](https://aka.ms/o365-qualification-guideline)）适用于计划使用这些云服务来托管和支持 GxP 监管计算机化系统的生命科学组织。 这些准则确定了 Microsoft 及其客户在满足 GxP 要求方面的共同责任，并推荐了使用 Microsoft 范围内云服务的客户可以建立的活动和控制措施，以保持对 GxP 计算机化系统的控制。
+Microsoft 聘请 [Montrium](https://www.montrium.com/) 为其执行 GxP 资格审查，Montrium 是一个独立组织，专门负责生命科学行业的质量保证和 GxP 法规合规性。 最终形成的资格准则（[Azure](https://aka.ms/gxpcompliance) 和 [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)）适用于计划使用这些云服务来托管和支持 GxP 监管计算机化系统的生命科学组织。 这些准则确定了 Microsoft 及其客户在满足 GxP 要求方面的共同责任，并推荐了使用 Microsoft 范围内云服务的客户可以建立的活动和控制措施，以保持对 GxP 计算机化系统的控制。
 
 在 Azure 和 Office 365 上构建 GxP 解决方案的生命科学组织可以充分利用云的效率，同时还可保护患者数据的安全、产品质量和数据完整性。 此外，客户还可从多层安全和管理技术、运营实践以及合规性策略中受益，这些策略可在特定级别实施数据隐私和完整性。
 
@@ -53,9 +53,9 @@ Microsoft 聘请 [Montrium](https://www.montrium.com/) 为其执行 GxP 资格�
 
 - [Azure GxP 准则](https://aka.ms/gxpcompliance)：使用 Azure 且同时遵守 GxP 最佳做法和法规的综合性工具集。
 - [将 Azure 与 GxP 系统配合使用](https://aka.ms/GXP-Azure-Strategies)：帮助生命科学组织制定关于构建 GxP 应用的策略。
-- FDA CFR 标题 21 第 11 部分指南：获得有关建立符合 FDA 电子记录准则的 [Azure](https://aka.ms/Azure-FDA-Guidelines) 和 [Office 365](https://aka.ms/o365-qualification-guideline) 资格认证策略的帮助。
+- FDA CFR 标题 21 第 11 部分指南：获得有关建立符合 FDA 电子记录准则的 [Azure](https://aka.ms/Azure-FDA-Guidelines) 和 [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf) 资格认证策略的帮助。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **能否在我组织的 GxP 合规性工作中使用 Microsoft 的 GxP 合规性？**
 
