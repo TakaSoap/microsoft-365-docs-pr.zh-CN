@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: 2db16773b305e2e5f929e96fb3ca0e7bfe541990
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: e882f89a0020cacd30cb6d85917e78a965ad5cde
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081264"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198379"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -173,7 +173,7 @@ ms.locfileid: "43081264"
 
 1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **提交**"。
+2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **提交**"。 （以前称为 "**用户报告**"。）
 
    ![浏览器的视图菜单](../../media/ExplorerViewMenuEmailUserReported.png)
 
@@ -234,3 +234,7 @@ ms.locfileid: "43081264"
 
 - Office 365 ATP 计划1中提供了**实时检测**报告，而**威胁浏览器**在 office 365 atp 计划2中可用。
 - **实时检测**报告允许你实时查看检测。 **威胁资源管理器**也会执行此功能，但也允许您查看给定攻击的其他详细信息。
+- "**所有电子邮件**" 视图在**威胁资源管理器**中可用（而不在**实时检测**报告中）。
+- **威胁资源管理器**中包含更多筛选功能和可用操作。
+
+有关更多详细信息，请参阅[Office 365 ATP 服务说明：跨高级威胁防护（ATP）计划的功能可用性](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)

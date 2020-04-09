@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 5d30073d611edf60ced4d926fdae0708d555cb6f
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170904"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188989"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
@@ -35,10 +35,7 @@ FICIC 引用了全球公认的标准，包括 nist SP 800-53 在 NIST 框架的�
 
 NIST Cybersecurity Framework （CSF）是一个自愿的框架，其中包含用于管理与 Cybersecurity 相关的风险的标准、指南和最佳做法。 Microsoft 云服务已经历独立的第三方 FedRAMP 中等和高基准审核，并根据 FedRAMP 标准进行了认证。 此外，通过由 HITRUST 执行的经过验证的评估（主要安全和隐私标准开发和资格鉴定组织），Office 365 经过了 NIST CSF 中指定的目标的认证。
 
-了解如何使用合规性分数和我们的 Azure 安全性和合规性蓝图加快您的 NIST Cybersecurity Framework 部署：
-
-- [下载 Azure 安全性和合规性蓝图-NIST CSF 风险评估清单](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
-- [在合规性分数中了解有关适用于 Office 365 的 NIST CSF 评估的详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+[了解如何](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)使用合规性分数加快 NIST Cybersecurity Framework 部署：
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -54,9 +51,10 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 ## <a name="quickly-build-nist-csf-solutions-on-azure"></a>在 Azure 上快速构建 NIST CSF 解决方案
 
-在云中，NIST Cybersecurity Framework （CSF）标准可能是一项挑战。 幸运的是，使用 Azure，你将拥有一个总部的入门 Azure Security and 合规性 NIST CSF 蓝图。 此蓝图提供的工具和指南可帮助您立即开始构建 NIST CSF 兼容的解决方案。
+在云中，NIST Cybersecurity Framework （CSF）标准可能是一项挑战。 目前，您可以使用 FedRAMP 中等或 FedRAMP 高的新蓝图示例来帮助您入门。 将从这些 FedRAMP 基线中的控件开发新的 NIST CSF 控件。
 
-- [开始使用 Azure NIST CSF 蓝图](https://aka.ms/Azure-Blueprint-DoD-NIST)
+- [FedRAMP 中等蓝图示例](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-m/)
+- [FedRAMP 高蓝图示例](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-h/)
 
 ## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>在合规性分数中使用 NIST CSF 执行 Office 365 上的风险评估
 
@@ -64,7 +62,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 - [开始使用合规性分数](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **是否有独立的评估员验证了 Azure 政府、Dynamics 365 和 Office 365 是否支持 NIST CSF 要求？**
 
@@ -99,7 +97,7 @@ NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[NIST CSF 模板](https://go.microsoft.com/fwlink/?linkid=2117917)，以帮助您的组织满足此法规的要求。
+[Microsoft 合规性分数](compliance-score.md)是[microsoft 365 合规性中心](microsoft-365-compliance-center.md)中的一项预览功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[NIST CSF 模板](https://go.microsoft.com/fwlink/?linkid=2117917)，以帮助您的组织满足此法规的要求。
 
 ## <a name="resources"></a>资源
 

@@ -1,5 +1,5 @@
 ---
-title: 沟通合规性
+title: 通信合规性
 description: 了解 Microsoft 365 中的通信合规性
 f1.keywords:
 - NOCSH
@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982045"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193468"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
@@ -121,10 +121,10 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 您可以从 Microsoft 365 合规性中心的以下策略模板中进行选择：
 
-- **冒犯性语言和反骚扰**：使用此模板可以快速创建使用内置分类器的策略，以自动检测可能被视为滥用或攻击性的内容。
+- **冒犯性语言和反骚扰**：使用此模板可以快速创建使用内置威胁、猥亵和骚扰分类程序的策略，以自动检测可能被视为滥用或攻击性的内容。
 - **敏感信息**：使用此模板创建用于扫描包含定义的敏感信息类型或关键字的通信的策略，以帮助确保重要数据不与不应访问的用户共享。
 - **法规遵从性**：使用此模板创建策略以扫描通信，以查找与法规标准相关联的标准财务术语的参考。
-- **自定义策略**：使用此模板可配置特定通信通道、各个检测条件以及在组织中要查看的内容量。
+- **自定义策略**：使用此模板可配置特定通信通道、分类程序、各个检测条件以及在组织中要查看的内容量。
 
 ### <a name="investigate"></a>调查
 

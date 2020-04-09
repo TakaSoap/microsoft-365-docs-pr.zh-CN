@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfcad9829c32a7a4f91e4d7dee7dec922059cd18
-ms.sourcegitcommit: 397b22cea138cadef026128d878650f8f609a329
+ms.openlocfilehash: c68e51fd0efe415458942736a8d19ae1c12adc3c
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068570"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189084"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部（DoD）在影响级别2、4和5的临时授权
 
@@ -36,7 +36,7 @@ DoD 云服务支持定义策略、安全控制和 SRG 中的其他要求，这�
 Microsoft 的政府云服务可满足美国国防部的苛刻要求，从影响级别2到5，使美国国防部能够从 Microsoft 云的成本节约和严格安全中获益。 通过部署受保护的服务（包括 Azure 政府、Office 365 美国政府版和 Dynamics 365 政府），防御机构可以使用一系列符合标准的服务。
 
 - 了解 Microsoft 云上 DoD DISA L2 （L4）的优势：下载美国[国防部 DISA Backgrounder](https://aka.ms/disa-backgrounder)
-- 了解如何使用我们的[Azure Dod 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)加快 DoD DISA L2 和 L4 部署
+- 了解如何使用我们的[Azure DoD 蓝图](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy)加快 DoD DISA L2 和 L4 部署
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>DoD 影响级别5临时授权
 
@@ -83,9 +83,9 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>快速跟踪在 Azure 上部署 DoD 解决方案
 
-开始使用在政府中利用云的优势与防御蓝图的 Azure 安全性和合规性部门的优势。 此蓝图提供的工具和指南可帮助你立即开始构建符合 DoD 的解决方案。 [开始使用 Azure DoD 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)。
+开始利用在政府中使用云的优势和适用于国防部的蓝图示例的入门优势。 此蓝图提供的工具和指南可帮助你立即开始构建符合 DoD 的解决方案。 [开始使用适用于 DoD L4 的 Azure 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **我可以在组织的认证过程中使用 Microsoft 合规性吗？**
 

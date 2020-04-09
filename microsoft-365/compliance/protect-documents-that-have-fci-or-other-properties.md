@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 许多组织已拥有一个使用 Windows Server 文件分类基础结构 (FCI)、SharePoint 中的文档属性或由第三方系统应用的文档属性识别和分类敏感信息的流程。 如果您的组织就是这样，则可以在 Office 365 中创建一个 DLP 策略，来识别已由 Windows Server FCI 或其他系统应用到文档的属性，从而在带有特定 FCI 或其他属性值的 Office 文档上强制应用该 DLP 策略。
-ms.openlocfilehash: bfcbc30af3a3dac304dc57551e6246ec9e6554c0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32d40c110ca67e15c1be3443999c75c0e36d323e
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070599"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193490"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>创建 DLP 策略来保护具有 FCI 或其他属性的文档
 
@@ -34,7 +34,7 @@ ms.locfileid: "42070599"
   
 DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属性，只要该属性具有 SharePoint 搜索的相应托管属性。例如，SharePoint 网站集可能使用名为“行程报告”**** 的内容类型，包含名为“客户”**** 的必填字段。只要有人创建行程报告，就必须输入客户名称。此属性名称/值对还可在 DLP 策略中使用 — 例如，当“客户”**** 字段包含“Contoso”**** 时，您希望有一个规则可以阻止外部用户访问此文档。
   
-请注意，如果您想要将 DLP 策略应用于具有特定 Office 365 标签的内容，则不应遵循此处的步骤。 请改为了解如何将[标签用作 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy)。
+请注意，如果您想要将 DLP 策略应用于具有特定 Office 365 标签的内容，则不应遵循此处的步骤。 而是了解如何[使用保留标签作为 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
   
 ## <a name="before-you-create-the-dlp-policy"></a>在创建 DLP 策略之前
 
@@ -96,7 +96,7 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
   
 有关这些 cmdlet 的详细信息，请参阅[Office 365 &amp;安全合规中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)。
   
-1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接到 Office 365 安全 &amp; 合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 使用`New-DlpCompliancePolicy`创建策略。
 
@@ -124,7 +124,7 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
   
 ## <a name="after-you-create-the-dlp-policy"></a>创建 DLP 策略之后
 
-执行前面各节中的步骤将创建一个 DLP 策略，该策略将使用该属性快速检测内容，但前提是该内容是新上载的（以便内容已编制索引），或者该内容是旧的，但只是进行了编辑（以便重新编制内容索引）.
+执行前面各节中的步骤将创建一个 DLP 策略，该策略将使用该属性快速检测内容，但前提是该内容是新上传的（以便对内容编制索引），或者该内容是旧的，但只是进行了编辑（以便对内容重新编制索引）。
   
 若要在任意位置检测包含该属性的内容，您可能需要手动请求对您的库、网站或网站集重新编制索引，以便 DLP 策略识别包含该属性的所有内容。在 SharePoint Online 中，内容基于已定义的爬网计划进行自动爬网。爬网程序选取自上次爬网以来已更改的内容，并更新索引。如果您需要在下一次计划的爬网之前，让您的 DLP 策略保护内容，您可以执行下列步骤。
   

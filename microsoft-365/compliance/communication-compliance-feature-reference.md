@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 40e8be29c585c0490b93e81c27728085d59c5146
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029846"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193448"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -43,7 +43,7 @@ ms.locfileid: "43029846"
 
 |**区域**|**策略模板**|**Details**|
 |:-----|:-----|:-----|
-| **冒犯性语言和反骚扰** | 监视攻击性语言的通信 | -位置： Exchange、团队、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：100% <br> -条件：冒犯性语言分类符 |
+| **冒犯性语言和反骚扰** | 监视攻击性语言的通信 | -位置： Exchange、团队、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：100% <br> -条件：威胁、猥亵和骚扰语言分类符 |
 | **敏感信息** | 监视敏感信息的通信 | -位置： Exchange、团队、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：10% <br> -条件：敏感信息、现成的内容模式和类型、自定义词典选项、大于 1 MB 的附件 |
 | **合规性** | 监视与金融合规性相关的信息的通信 | -位置： Exchange、团队、Skype for Business <br> -方向：入站、出站 <br> -审阅百分比：10% <br> -条件：自定义词典选项，附件大于 1 MB |
 
@@ -133,7 +133,7 @@ ms.locfileid: "43029846"
 
 内置分类程序在组织中的所有通信通道中扫描发送或接收的邮件，以解决不同类型的合规性问题。 分类器使用人工智能和关键字的组合来确定邮件中可能违反反骚扰策略的语言。 内置的分类器目前仅支持在邮件中提供英语关键字。
 
-通信合规性内置分类程序针对以下语言类型扫描术语和看法的通信：
+通信合规性使用内置的分类程序针对以下类型的语言扫描术语和看法的通信：
 
 - **威胁**：扫描对人员或属性的暴力或物理伤害的威胁。
 - **骚扰**：扫描针对竞争、颜色、宗教、国家/地区的相关人员的攻击性行为。

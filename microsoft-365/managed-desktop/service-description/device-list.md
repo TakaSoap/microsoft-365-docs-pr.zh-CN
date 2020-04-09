@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c781d86c13165ac51dfee57b1c2cf3e9e536d3d5
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284353"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198357"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
@@ -46,10 +46,11 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 | [HP EliteBook x360 830 G6 笔记本电脑](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | 需要使用5VS01AV、红外照相机或指纹传感器的 SKU | 2020年11月30日 | 2023年11月30日 |
 | **\*[HP 精英 x2 G4 平板电脑](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB/Intel i5/8 GB RAM | 带有5VS03AV 的 SKU | 2021年7月31日 | 2024年7月31日 |
 | **\*[HP EliteBook x360 1030 G4 笔记本电脑](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc)** | 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU | 2021年2月28日 | 2024年2月28日 |
-| **\*[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040)** | 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU，需要 IR 相机 | 2020年11月30日 | 2023年11月30日 |
+|[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040) | 256 GB/Intel i5/8 GB RAM | 带有5VS01AV 的 SKU| 2020年11月30日 | 2023年11月30日 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 带有5VS04AV 的 SKU | 2020年07月18日 | 2023年07月18日 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 带有5VS04AV 的 SKU | 2020年07月18日 | 2023年07月18日 |
 | [AIO 中的 HP EliteOne 800 G4 23。8](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 带有5VS04AV 的 SKU | 2020年07月18日 | 2023年07月18日 |
+| **\*[HP 精英 DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html--1#!&tab=features)** | 256 GB/Intel i5/8 GB RAM | 带有9MZ21AV 的 SKU | 2020年12月31日 | 2023年12月31日 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 需要5VS04AV、红外照相机或指纹读取器的 SKU | 2020年6月6日 | 2023年6月6日 |
 | [HP Z2 微型 G4 工作站](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB RAM | 带有8QR48AV 的 SKU| 2021年1月31日 | 2024年1月31日 |
 |[HP ZBook 14u/15u G6 移动工作站](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB RAM | 带有5VS02AV 的 SKU，需要 IR 相机 | 2020年11月30日 | 2023年11月30日 |
