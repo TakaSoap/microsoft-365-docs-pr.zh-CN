@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 适用于大型组织的 windows 7 到 Windows 10 自动升级
-ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085613"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113477"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>适用于大型组织的 windows 7 到 Windows 10 自动就地升级
 
-从2020年1月14日开始, 将不再为运行 Windows 7 的电脑提供安全更新或支持。 从 Windows 7 升级至 Windows 10 仅一个月之遥, 部署升级有多种方法，IT 社区中的一个常见问题是, "从 Windows 7 升级到 Windows 10 最快的方法是什么？" 简单的回答是, 对现有电脑进行就地升级, 因为这样的话，你在桌面部署过程中就不必面面俱到。
+自 2020 年 1 月 14 日开始，将不再为运行 Windows 7 的电脑提供安全更新或支持。 从 Windows 7 升级至 Windows 10，部署升级有多种方法，IT 社区中的一个常见问题是, "从 Windows 7 升级到 Windows 10 最快的方法是什么？" 简单的回答是, 对现有电脑进行就地升级, 因为这样的话，你在桌面部署过程中就不必面面俱到。
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -38,7 +38,7 @@ ms.locfileid: "42085613"
 
 ## <a name="in-place-upgrade-reliability-safeguards-and-scale"></a>就地升级的可靠性、安全措施和规模
 
-就地升级到 Windows 10 是一种可靠的方法, 可将运行 Windows 7 或更高版本的现有设备升级到 Windows 10, 而无需文件迁移或应用程序重新安装。 就地升级后, 用户的文件、设置和可用的应用与先前的 Windows 7 安装是一致的。 你可能希望利用此机会来清理现有应用或设置, 但实际上，越是接近 2020 年 1 月 Windows 7 的支持结束日，你越是没有时间做升级以外的事。 类似体系结构（32 位到 32 位或 64 位到 64 位）和类似版本的 Windows（专业版到专业版或企业版到企业版）之间的升级也可以。
+就地升级到 Windows 10 是一种可靠的方法, 可将运行 Windows 7 或更高版本的现有设备升级到 Windows 10, 而无需文件迁移或应用程序重新安装。 就地升级后, 用户的文件、设置和可用的应用与先前的 Windows 7 安装是一致的。 类似体系结构（32 位到 32 位或 64 位到 64 位）和类似版本的 Windows（专业版到专业版或企业版到企业版）之间的升级也可以。
 
 默认情况下, 升级过程会备份以前的 Windows 安装, 以便在升级失败时或者设备或应用程序升级后不能正常运行时, 计算机可以回滚到 Windows 7。 默认情况下, 已升级的电脑有10天的时间可在必要时手动回滚到 Windows 7。
 
