@@ -64,6 +64,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: 付款服务指令 2 和强客户身份验证
       href: billing-and-payments/psd2.md
+    - name: 税务信息
+      href: billing-and-payments/tax-information.md
 - name: 计费帐户
   items:
     - name: 管理计费帐户
