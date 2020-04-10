@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：了解 Microsoft Office 365 中服务层的数据加密。
-ms.openlocfilehash: a8faded033ade013924eeeab269aa213840430b4
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: fb6bf87fbd51bcb4383e9eb595ef11f081989d86
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193458"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211939"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 服务加密
 
 除了将 BitLocker 用于卷级加密之外，Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和团队也使用服务加密来加密客户数据。 服务加密允许两个密钥管理选项：
 
-- Microsoft 管理所有加密密钥。 此选项目前在 SharePoint Online、OneDrive for business、Skype for business 和团队聊天版中可用。 默认情况下，使用 Microsoft 托管密钥对数据进行加密。
+- Microsoft 管理所有加密密钥。 此选项目前在 SharePoint Online、OneDrive for business、Skype for business 和团队聊天版中可用。 默认情况下，使用 Microsoft 管理的密钥对数据进行加密。
 
-- 您的组织提供根键。 您可以使用 Azure Key Vault 管理这些密钥。 此选项称为 "客户密钥"。 目前，客户密钥可用于 Exchange Online、SharePoint Online、OneDrive for business、Skype for business 和团队文件。 如果使用客户密钥，这些密钥将替换 Microsoft 托管密钥以加密数据。
+- 您的组织提供根键。 您可以使用 Azure Key Vault 管理这些密钥。 此选项称为 "客户密钥"。 目前，客户密钥可用于 Exchange Online、SharePoint Online、OneDrive for business、Skype for business 和团队文件。 如果使用客户密钥，这些密钥将替换 Microsoft 管理的密钥以加密数据。
 
-无论选择哪个选项，服务加密都会提供多种好处：
+无论选择哪种选项，服务加密都会提供多种好处：
 
 - 强制执行用户身份验证以检索和解密授权用户请求的数据。
 

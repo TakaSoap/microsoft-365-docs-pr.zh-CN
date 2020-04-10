@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 了解如何验证您的域并为 Office 365 的基于 Windows 的 DNS 中的电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: ddea5cb95a7f2abef8b68b37de473f936ee08eb5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d33a2f79111f8951c3ec31ca5680877ad2e7d570
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240965"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210560"
 ---
 # <a name="create-dns-records-for-office-365-using-windows-based-dns"></a>使用基于 Windows 的 DNS 为 Office 365 创建 DNS 记录
 
@@ -38,7 +38,7 @@ ms.locfileid: "42240965"
 添加 DNS 记录后出现邮件流或其他问题的问题，请参阅[在更改域名或 DNS 记录后解决问题](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>在基于 Windows 的 DNS 中查找 DNS 记录
-<a name="BKMK_find_your_dns_1"></a>转到包含您的域的 DNS 记录的页面。 如果是在 Windows Server 2008 中工作，请转到 "**开始** > " "**运行**"。 如果使用的是 Windows Server 2012，请按 Windows 键和**r**键。 键入 " **Dnsmgmnt**"，然后选择 **"确定"**。 在 dns 管理器中，展开** \<"\> \> DNS 服务器名称" 正向查找区域  **"。 选择域。 现在已准备好创建 DNS 记录。
+<a name="BKMK_find_your_dns_1"> </a>转到包含您的域的 DNS 记录的页面。 如果是在 Windows Server 2008 中工作，请转到 "**开始** > " "**运行**"。 如果使用的是 Windows Server 2012，请按 Windows 键和**r**键。 键入 " **Dnsmgmnt**"，然后选择 **"确定"**。 在 dns 管理器中，展开** \<"\> \> DNS 服务器名称" 正向查找区域  **"。 选择域。 现在已准备好创建 DNS 记录。
    
 ## <a name="add-mx-record"></a>添加 MX 记录
 <a name="BKMK_add_MX"> </a>
@@ -60,7 +60,7 @@ ms.locfileid: "42240965"
 添加 Office 365 所需的 CNAME 记录。 如果 Office 365 中列出了其他 CNAME 记录，则按照此处所示的相同常规步骤进行添加。
   
 > [!IMPORTANT]
-> 如果你有适用于 Office 365 的移动设备管理（MDM），则必须创建两个附加的 CNAME 记录。 Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. （如果没有 MDM，则可以跳过此步骤。） 
+> 如果您有 Office 365 的 Mobile Device Manager (MDM)，则必须创建另外两个 CNAME 记录。 创建流程与你用于其他四个 CNAME 记录的流程一样，但需提供下表中的值。 （如果没有 MDM，则可以跳过此步骤。） 
 
 - 在域的 "DNS 管理器" 页上，转到 "**操作** > **CNAME （cname）**"。
 - 在 "**新建资源记录**" 对话框中，确保字段已设置为 "正好为以下值"：  
@@ -75,19 +75,19 @@ ms.locfileid: "42240965"
     - 主机名： sip
     - 类型： CNAME
     - 地址： sipdir.online.lync.com
-- 选择“**确定**”。
+- 选择“确定”****。
 
 添加 Skype for Business Online 自动发现 CNAME 记录。  
 - 在域的 "DNS 管理器" 页上，转到 "**操作** \> **CNAME （cname）**"。 在 "**新建资源记录**" 对话框中，确保字段已设置为 "正好为以下值"：  
     - 主机名： lyncdiscover。
     - 类型： CNAME
     - 地址： webdir.online.lync.com
-- 选择“**确定**”。
+- 选择“确定”****。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>为适用于 Office 365 的移动设备管理 (MDM) 添加两个 CNAME 记录
 
 > [!IMPORTANT]
-> 如果你有适用于 Office 365 的移动设备管理（MDM），则必须创建两个附加的 CNAME 记录。 Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. > （如果没有 MDM，可以跳过此步骤。） 
+> 如果您有 Office 365 的 Mobile Device Manager (MDM)，则必须创建另外两个 CNAME 记录。 创建流程与你用于其他四个 CNAME 记录的流程一样，但需提供下表中的值。 > （如果没有 MDM，可以跳过此步骤。） 
   
 
 添加 MDM Enterpriseregistration CNAME 记录。  
@@ -96,7 +96,7 @@ ms.locfileid: "42240965"
 - 主机名： enterpriseregistration
 - 类型： CNAME
 - 地址： enterpriseregistration.windows.net
-- 选择“**确定**”。 
+- 选择“确定”****。 
 
 添加 MDM Enterpriseenrollment CNAME 记录。 
 -  在域的 "DNS 管理器" 页上，转到 "**操作** \> **CNAME （cname）**"。 
@@ -104,13 +104,13 @@ ms.locfileid: "42240965"
     - 主机名： enterpriseenrollment
     - 类型： CNAME
     - 地址： enterpriseenrollment-s.manage.microsoft.com
-- 选择“**确定**”。
+- 选择“确定”****。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. 改为将所需的 Office 365 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 If you already have an SPF record for your domain, don't create a new one for Office 365. 可以将所需的 Office 365 添加到当前记录，这样就拥有包含两组值的*单个*SPF 记录。 
   
 为您的域添加 SPF TXT 记录以帮助防止垃圾邮件。
   
@@ -124,7 +124,7 @@ ms.locfileid: "42240965"
 -  记录类型： TXT
 -  Address： v = spf1 包括 include spf.protection.outlook.com-all 
          
--  选择“**确定**”。
+-  选择“确定”****。
    
 ## <a name="add-srv-records"></a>添加 SRV 记录
 <a name="BKMK_add_SRV"> </a>
@@ -141,7 +141,7 @@ ms.locfileid: "42240965"
     -  权重： 1
     -  端口： 443
     -  目标（Hostname）： sipdir.online.lync.com
--  选择“**确定**”。 
+-  选择“确定”****。 
 
 
 为 Skype for Business Online 联盟添加 SIP SRV 记录。  
@@ -154,7 +154,7 @@ ms.locfileid: "42240965"
     -  权重： 1
     -  端口： 5061
     -  目标（Hostname）： sipfed.online.lync.com
--  选择“**确定**”。 
+-  选择“确定”****。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>添加记录以验证您拥有该域（如果尚未验证）
 <a name="BKMK_verify"> </a>
@@ -166,7 +166,7 @@ ms.locfileid: "42240965"
   
 
 1. 从 Office 365 收集信息。  <br/> 
-2. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。 
+2. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。 
 3. 在 "**域**" 页上，在要验证的域的 "**操作**" 列中，选择 "**启动安装程序**"。 
 4. 在 "**将域添加到 Office 365** " 页上，选择 "**开始步骤 1**"。 
 5. 在 "**确认您是否拥有**您的域" 页上的 "**请参阅有关使用此步骤执行此步骤的说明**" 下拉列表中，选择 "**常规说明**"。 

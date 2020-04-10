@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 审核日志记录中包含的其他属性的说明。
-ms.openlocfilehash: af91acfbdc94439df04ccf5ecd4fd6a01112f442
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 28056cc6f21d0fbb4a90a455211c3fc368e3cd5e
+ms.sourcegitcommit: 8959701cf009068b40da2757b4a61da61d5c166b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978232"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43207171"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 审核日志中的属性详细信息
 
@@ -54,7 +54,7 @@ ms.locfileid: "42978232"
 |EventSource|识别在 SharePoint 中发生的事件。 可能的值为**SharePoint**和**ObjectModel**。|SharePoint|
 |ExternalAccess|对于 Exchange 管理员活动，指定是由组织中的用户、Microsoft 数据中心人员或数据中心服务帐户还是由委派的管理员运行 cmdlet。 值 **False** 表示 cmdlet 由组织中的某人运行。 值 **True** 表示 cmdlet 由数据中心人员、数据中心服务帐户或委托的管理员运行。  <br/> 对于 "Exchange 邮箱活动"，指定是否由组织外部的用户访问邮箱。|Exchange|
 |ExtendedProperties|Azure Active Directory 事件的扩展属性。|Azure Active Directory|
-|ID|报告条目的 ID。 ID 唯一标识报告条目。|全部|
+|ID|审核记录条目的 ID。 ID 唯一标识审核日志中的记录。<sup>1</sup>|全部|
 |InternalLogonType|仅供内部使用。|Exchange （邮箱活动）|
 |ItemType|访问或修改的对象类型。 可能的值包括**文件**、**文件夹**、 **Web**、**网站**、**租户**和**DocumentLibrary**。|SharePoint|
 |LoginStatus|标识可能已发生的登录失败。|Azure Active Directory|
@@ -64,7 +64,7 @@ ms.locfileid: "42978232"
 |Members|列出已在团队中添加或删除的用户。 以下值表示分配给用户的角色类型。  <br/><br/> **1** -指示所有者角色。<br/> **2** - 表示“成员”角色。<br/> **3** - 表示“来宾”角色。 <br/><br/>成员属性还包括组织的名称和成员的电子邮件地址。|Microsoft Teams|
 |ModifiedProperties （Name、NewValue、OldValue）|属性包含在管理员事件中，例如将用户添加为网站或网站集管理组的成员。 该属性包括已修改的属性的名称（例如，网站管理员组）已修改属性的新值（如添加为网站管理员的用户，以及已修改对象的以前的值）。|全部（管理活动）|
 |ObjectId|对于 Exchange 管理员审核日志，通过 cmdlet 修改的对象的名称。  <br/> 对于 SharePoint 活动，是由用户访问的文件或文件夹的完整 URL 路径名称。  <br/> 对于 Azure AD 活动，为已修改的用户帐户的名称。|全部|
-|操作|用户或管理员活动的名称。 此属性的值对应于在 "**活动**" 下拉列表中选择的值。 如果选择了 "**显示所有活动的结果**"，则报告将包含所有服务的所有用户和管理员活动的条目。 有关在 Office 365 审核日志中记录的操作/活动的说明，请参阅在[office 365 中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)中的**审核的活动**选项卡。  <br/> 对于 Exchange 管理员活动，此属性标识已运行的 cmdlet 名称。|全部|
+|Operation|用户或管理员活动的名称。 此属性的值对应于在 "**活动**" 下拉列表中选择的值。 如果选择了 "**显示所有活动的结果**"，则报告将包含所有服务的所有用户和管理员活动的条目。 有关在 Office 365 审核日志中记录的操作/活动的说明，请参阅在[office 365 中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)中的**审核的活动**选项卡。  <br/> 对于 Exchange 管理员活动，此属性标识已运行的 cmdlet 名称。|全部|
 |OrganizationId|Office 365 组织的 GUID。|全部|
 |Path|访问的邮件所在的邮箱文件夹的名称。 此属性还标识在其中创建或复制/移动邮件的文件夹。|Exchange （邮箱活动）|
 |参数|对于 Exchange 管理员活动，与在 Operation 属性中标识的 cmdlet 一起使用的所有参数的名称和值。|Exchange （管理员活动）|
@@ -72,7 +72,7 @@ ms.locfileid: "42978232"
 |ResultStatus|指示操作（在**Operation**属性中指定）是否成功。  <br/> 对于 Exchange 管理员活动，值可以为**True** （成功）或**False** （失败）。|全部  <br/>|
 |SecurityComplianceCenterEventType|指示活动是安全 & 合规中心事件。 所有安全 & 合规性中心活动的值都为此属性的值为**0** 。|安全与合规中心|
 |SharingType|分配给用户的共享权限类型，该用户是与资源共享的。 此用户在**UserSharedWith**属性中进行标识。|SharePoint|
-|Site|用户访问的文件或文件夹所在网站的 GUID。|SharePoint|
+|站点|用户访问的文件或文件夹所在网站的 GUID。|SharePoint|
 |SiteUrl|用户访问的文件或文件夹所在网站的 URL。|SharePoint|
 |SourceFileExtension|用户访问的文件的文件扩展名。 如果访问对象是一个文件夹，则此属性为空。|SharePoint|
 |SourceFileName|用户访问的文件或文件夹名称。|SharePoint|
@@ -87,13 +87,13 @@ ms.locfileid: "42978232"
 |UserID|执行操作（在**Operation**属性中指定）导致记录记录的用户。 审核日志中还包含由系统帐户（如 SHAREPOINT\system 或 NT AUTHORITY\SYSTEM）执行的活动的审核记录。 UserId 属性的另一个常见值为 app@sharepoint。 这表明执行活动的“用户”是在 SharePoint 中拥有必要权限的应用程序，代表用户、管理员或服务执行组织范围内操作（例如，搜索 SharePoint 网站或 OneDrive 帐户）。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)。 |全部|
 |UserKey|在**UserID**属性中标识的用户的替代 ID。 例如，此属性填充 SharePoint 中用户执行的事件的 passport 唯一 ID （PUID）。 此属性还可能指定与其他服务和系统帐户执行的事件中发生的事件的**UserID**属性相同的值。|全部|
 |UserSharedWith|与之共享资源的用户。 如果**Operation**属性的值为**SharingSet**，则包含此属性。 此用户也在报告中的 "**共享与**" 列中列出。|SharePoint|
-|UserType|执行操作的用户类型。 以下值指示用户类型。 <br/> <br/> **0** -常规用户。 <br/>**2** -Office 365 组织中的管理员。<sup>1</sup> <br/>**3** -Microsoft 数据中心管理员或数据中心系统帐户。 <br/>**4** -系统帐户。 <br/>**5** -应用程序。 <br/>**6** -服务主体。<br/>**7** -自定义策略。<br/>**8** -系统策略。|全部|
+|UserType|执行操作的用户类型。 以下值指示用户类型。 <br/> <br/> **0** -常规用户。 <br/>**2** -Office 365 组织中的管理员。<sup>2</sup> <br/>**3** -Microsoft 数据中心管理员或数据中心系统帐户。 <br/>**4** -系统帐户。 <br/>**5** -应用程序。 <br/>**6** -服务主体。<br/>**7** -自定义策略。<br/>**8** -系统策略。|全部|
 |版本|指示已记录的活动的版本号（由**操作**属性标识）。|全部|
 |Workload|其中发生活动的 Office 365 服务。|全部|
 ||||
 
 > [!NOTE]
-><sup>1</sup>对于与 Azure Active Directory 相关的事件，审核记录中不使用管理员的值。 审核由管理员执行的活动的记录将指示常规用户（例如， **UserType： 0**）执行了该活动。 **UserID**属性将标识执行活动的人员（常规用户或管理员）。<br/>
+><sup>1</sup>审核日志中可能会出现1个重复的审核记录（ **ID**属性的值相同）。 这是设计为避免丢失审核事件的错误纠正方法。<br/><br/><sup>2</sup>对于与 Azure Active Directory 相关的事件，审核记录中不使用管理员的值。 审核由管理员执行的活动的记录将指示常规用户（例如， **UserType： 0**）执行了该活动。 **UserID**属性将标识执行活动的人员（常规用户或管理员）。
 
 当您查看特定事件的详细信息时，还会显示上述属性（如果您单击 "**详细信息**"）。
   

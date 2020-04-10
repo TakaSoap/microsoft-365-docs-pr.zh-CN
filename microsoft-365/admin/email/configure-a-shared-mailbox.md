@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 创建共享邮箱后，您需要为其用户配置一些设置，如电子邮件转发和自动答复。 稍后，您可能需要更改其他设置，例如邮箱名称或成员。
-ms.openlocfilehash: edea829a8578387459afe3ce4889dfa620f95956
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251195"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212017"
 ---
 # <a name="configure-a-shared-mailbox"></a>配置共享邮箱
 
@@ -35,19 +35,19 @@ ms.locfileid: "42251195"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到 "**组** \> " "<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>" 页面。
+1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ ms.locfileid: "42251195"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到 "**组** \> " "<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>" 页面。
+1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
@@ -89,19 +89,19 @@ ms.locfileid: "42251195"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到 "**组** \> " "<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>" 页面。
+1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
@@ -126,19 +126,19 @@ ms.locfileid: "42251195"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到 "**组** \> " "<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>" 页面。
+1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
@@ -155,19 +155,19 @@ ms.locfileid: "42251195"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到 "**组** \> " "<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>" 页面。
+1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
@@ -184,19 +184,19 @@ ms.locfileid: "42251195"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到 "**组** \> " "<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>" 页面。
+1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
@@ -212,19 +212,19 @@ ms.locfileid: "42251195"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到 "**组** \> " "<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>" 页面。
+1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
@@ -244,19 +244,19 @@ ms.locfileid: "42251195"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到 "**组** \> " "<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>" 页面。
+1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 "**组** > " "**共享邮箱**" 页面。 
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。 
 
 ::: moniker-end
 
@@ -277,6 +277,6 @@ ms.locfileid: "42251195"
 
 [将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)
 
-[从共享邮箱中删除许可证](remove-license-from-shared-mailbox.md)
+[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
 
 [解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)

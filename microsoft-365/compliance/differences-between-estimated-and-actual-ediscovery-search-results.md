@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/13/2017
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。 '
-ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198369"
+ms.locfileid: "43204064"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中的预计和实际电子数据展示搜索结果之间的差异
 
 本主题适用于您可以使用以下 Microsoft 电子数据展示工具之一运行的搜索： 
 
 - 安全 & 合规中心中的内容搜索  <br/>  
+- 与核心电子数据展示事例相关的搜索
 - Exchange 管理中心（EAC）中的就地电子数据展示  <br/>  
 - SharePoint Online 中的电子数据展示中心  <br/> 
    
@@ -83,5 +84,3 @@ ms.locfileid: "43198369"
   
 > [!NOTE]
 > 如果您在导出搜索结果或仅下载报告时未选择 "**包括已加密的项目" 或**"不可识别的格式" 选项，则会下载索引错误报告，但不包含任何条目。 这并不意味着没有任何索引错误。 这只意味着导出中不包含未编制索引的项目。 
-  
-

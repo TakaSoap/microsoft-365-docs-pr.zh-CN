@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何开始在 Microsoft 365 中使用高级电子数据展示。 完成几个快速的步骤之后，高级电子数据展示工具即可供使用。 第一步是创建一个事例，然后开始使用高级电子数据展示功能和功能。
-ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: a43bfd94fcf0a2563a184a3a87d96c64bd8eb619
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43100865"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204042"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>高级电子数据展示入门
 
@@ -173,4 +173,4 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
    - [分析事例数据](analyzing-data-in-review-set.md)。 高级电子数据展示中的分析功能非常强大。 在对评审设置中的数据运行分析之后，我们会执行分析，如接近重复检测、电子邮件线程和主题，可帮助减少必须查看的文档量。 我们还会生成汇总运行分析结果的分析报告。 如前所述，运行分析还运行[律师-客户端特权检测模型](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
 
-5. **导出和下载事例数据**。 收集、查看和分析事例数据的最后一步是将其导出到高级电子数据展示中，以供外部审阅或调查团队之外的人员进行审阅。 导出数据的过程分为两个步骤。 第一步是将评审集[导出](export-documents-from-review-set.md)到不同的 Azure 存储位置（由 Microsoft 提供，或由组织管理的存储位置）。 然后，使用 Azure 存储资源管理器将数据[下载](download-export-jobs.md)到本地计算机。 除了导出的数据文件之外，导出包的包含还包含导出报告、摘要报告和错误报告。
+5. **导出和下载事例数据**。 收集、查看和分析事例数据的最后一步是将其导出到高级电子数据展示中，以供外部审阅或调查团队之外的人员进行审阅。 导出数据的过程分为两个步骤。 第一步是将数据[导出](export-documents-from-review-set.md)到审阅集，并将其复制到不同的 Azure 存储位置（由 Microsoft 提供或由组织管理的位置）。 然后，使用 Azure 存储资源管理器将数据[下载](download-export-jobs.md)到本地计算机。 除了导出的数据文件之外，导出包的包含还包含导出报告、摘要报告和错误报告。

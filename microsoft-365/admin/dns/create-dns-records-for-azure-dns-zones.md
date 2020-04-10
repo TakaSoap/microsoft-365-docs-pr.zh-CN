@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: 了解如何验证您的域并为 Office 365 的 Azure DNS 区域中的电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 30e54da8ffd51165b1cc0d2eb82d9d02eefdaf4d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1c9ac04f74b205fa4a099fca634a41207e8083ba
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362737"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211046"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>为 Azure DNS 区域创建 DNS 记录
 
@@ -113,7 +113,7 @@ ms.locfileid: "42362737"
    
     ![Azure-最佳验证-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
-5. 选择“**确定**”。
+5. 选择“确定”****。
   
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
@@ -163,7 +163,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
    
     ![Azure-BP-配置-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
-5. 选择“**确定**”。
+5. 选择“确定”****。
     
     ![Azure-BP-配置-2-2](../../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
   
@@ -215,7 +215,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
    
     ![Azure-BP-配置-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
   
-5. 选择“**确定**”。
+5. 选择“确定”****。
     
     ![Azure-BP-配置-3-2](../../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
   
@@ -295,7 +295,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
 
     ![Azure-BP-配置-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
-5. 选择“**确定**”。
+5. 选择“确定”****。
     
     ![Azure-BP-配置-5-2](../../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
   

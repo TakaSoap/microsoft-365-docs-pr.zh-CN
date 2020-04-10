@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: 了解如何在 OVH for Office 365 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 4857addd7dfd096c1ddd6e59f1f17ace76b75a9e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3ba4e61c875f74a0a6cf76c8b7cd82ea88e0221b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354343"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211106"
 ---
 # <a name="create-dns-records-at-ovh-for-office-365"></a>在 OVH 上为 Office 365 创建 DNS 记录
 
@@ -141,13 +141,13 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     > [!NOTE]
     > 默认情况下，OVH 对目标使用相对表示法，这会将域名添加到目标记录的末尾。 若要改为使用绝对表示法，请在目标记录中添加一个点，如下表所示。 
   
-    |**记录类型**|**子域**|**TTL**|**优先级**|**目标**|
+    |**记录类型**|**子域**|**TTL**|**Priority**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |（保留为空白）  <br/> |3600（秒）  <br/> |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<\>mail.protection.outlook.com。  <br/> **注意：** 从 Office 365 帐户中获取你* \<的域密钥\> * 。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![邮件的 OVH MX 记录](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
     ![OVH MX 记录选择 "下一步"](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
   
@@ -198,7 +198,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
    
     ![OVH CNAME 记录](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
     ![OVH 添加 CNAME 值并选择 "下一步"](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
@@ -240,7 +240,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
    
     ![OVH 为 SPF 添加 TXT 记录](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
     ![OVH 为 SPF 添加 TXT 记录，然后选择 "下一步"](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
@@ -282,7 +282,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
        
     ![OVH SRV 记录](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
     ![OVH SRV 记录选择 "下一步"](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
   

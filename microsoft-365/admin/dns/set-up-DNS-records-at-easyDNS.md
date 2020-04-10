@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: 了解如何在 easyDNS for Office 365 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: f55f39f36b8abaee2d500c87ccf1e0089caecc9d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251212"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210548"
 ---
 # <a name="create-dns-records-at-easydns-for-office-365"></a>在 easyDNS 上为 Office 365 创建 DNS 记录
 
@@ -44,7 +44,7 @@ ms.locfileid: "42251212"
     
 4. 在 "文本" 字段中输入以下记录：
     
-    |**主机**|**Text**|
+    |**Host**|**Text**|
     |:-----|:-----|
     |@  <br/> |MS = msXXXXXXXX （在管理中心域页面上使用提供给你的值）  <br/> |
    
@@ -54,15 +54,15 @@ ms.locfileid: "42251212"
     
 7. 在继续之前，请等待几分钟，以便您刚刚创建的记录可以通过 Internet 传播并在 Office 365 中检测到。
     
-8. Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+8. 现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
     
-9. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+9. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
     
-10. 在 "**域**" 页上，选择要验证的域。 
+10. 在“**域**”页面上，选择要验证的域。 
     
 11. 在 "**设置**" 页上，选择 "**启动安装程序"。**
     
-12. 在 "**验证域**" 页上，选择 "**验证**"。 
+12. 在“**验证域**”页面上，选择“**验证**”。 
     
 ## <a name="add-an-mx-record-to-route-email-to-office-365"></a>添加 MX 记录以将电子邮件路由到 Office 365
 
@@ -117,7 +117,7 @@ ms.locfileid: "42251212"
     
 4. 在 "文本" 字段中输入以下记录：
     
-    |**主机**|**Text**|
+    |**Host**|**Text**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    

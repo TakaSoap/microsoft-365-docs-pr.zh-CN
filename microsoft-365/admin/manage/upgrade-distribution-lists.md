@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Outlook 中的 Office 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: 7337d450cf1e9b249b2b9dc2ab66f32f5b1577e0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: c3acf1d47a37d79d666b1b951bea704c273ccf09
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361707"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212277"
 ---
 # <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>将通讯组列表升级到 Outlook 中的 Office 365 组
 
@@ -122,7 +122,7 @@ Get-DistributionGroup| Foreach-Object{
 
 您只能升级云管理、简单、非嵌套的通讯组列表。 下表列出了**无法**升级的通讯组列表。
 
-|**属性**|**退税?**|
+|**Property**|**退税?**|
 |:-----|:-----|
 |内部部署管理通讯组列表。  <br/> |否  <br/> |
 |嵌套的通讯组列表。 通讯组列表具有子组或是另一个组的成员。  <br/> |否  <br/> |
@@ -159,7 +159,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组成员是否可在其收件箱中获取欢迎电子邮件？
 
-否。 默认情况下，启用欢迎邮件的设置设置为 false。 此设置会影响在迁移完成后可能加入的现有和新组成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在其收件箱中收到欢迎电子邮件。 来宾成员可以继续使用该组。
+不是。 默认情况下，启用欢迎邮件的设置设置为 false。 此设置会影响在迁移完成后可能加入的现有和新组成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在其收件箱中收到欢迎电子邮件。 来宾成员可以继续使用该组。
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>如果一个或多个 Dl 未升级，该怎么办？
 

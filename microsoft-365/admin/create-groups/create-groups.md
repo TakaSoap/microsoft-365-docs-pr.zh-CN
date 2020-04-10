@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何创建和删除 Office 365 组、添加和删除组成员以及自定义组的工作方式。
-ms.openlocfilehash: 8b9580fd37581de96d3dc35170a1a61640cc697d
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 088ef54531bc42cf563659c460cbf7d2e64c4cfe
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153540"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212089"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心创建 Office 365 组
   
@@ -41,11 +41,11 @@ ms.locfileid: "43153540"
   
 3. 在 "**选择组类型**" 页上，选择 " **Office 365**"，然后选择 "**下一步**"。
 
-4. 在 "**基本**" 页上，键入组的名称，也可以选择 "说明"。 选择“下一步”****。
+4. 在 "**基本**" 页上，键入组的名称，也可以选择 "说明"。 选择“**下一步**”。
     
 5. 在 "**编辑设置**" 页上，为组键入一个唯一的电子邮件地址，选择 "隐私" 选项以及是否要添加 Microsoft 团队，然后选择 "**下一步**"。
     
-6. 在 "**所有者**" 中，选择一个或多个将被指定为管理该组的人员的名称。 任何一个组所有者都可以从"组"收件箱中删除电子邮件。 其他成员将无法从"组"收件箱中删除电子邮件。 选择“下一步”****。
+6. 在 "**所有者**" 中，选择一个或多个将被指定为管理该组的人员的名称。 任何一个组所有者都可以从"组"收件箱中删除电子邮件。 其他成员将无法从"组"收件箱中删除电子邮件。 选择“**下一步**”。
     
 7. 检查设置并进行任何更改后，选择 "**创建组**"。
 
@@ -124,3 +124,4 @@ ms.locfileid: "43153540"
 [选择创建 Office 365 组时要使用的域](choose-domain-to-create-groups.md)
 
 [将通讯组列表升级到 Office 365 组](../manage/upgrade-distribution-lists.md)
+        

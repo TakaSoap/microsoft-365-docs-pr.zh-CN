@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: '了解如何将联系人、日历、来自 Gmail 的电子邮件或其他电子邮件提供程序导入 Office 365。 '
-ms.openlocfilehash: 2b2f4441772a9d373316ff14f06bcdeb61e5840d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6decee3fd45d11ed1e71e71e0cf7191ccec6aa3d
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360703"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212181"
 ---
 # <a name="migrate-email-and-contacts-to-office-365"></a>将电子邮件和联系人迁移到 Office 365
 
@@ -53,9 +53,9 @@ ms.locfileid: "42360703"
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-from-outlook-desktop"></a>从 Outlook 导入（桌面）
+### <a name="import-from-outlook-desktop"></a>从 Outlook （桌面） "导入"
 
-按照以下步骤将电子邮件、联系人和日历从 Outlook 导出到 .pst 文件，然后将该文件导入到带 Office 365 的 Outlook 中：
+Fol'ow 这些步骤将电子邮件、联系人和日历从 Outlook 导出到 .pst 文件，然后将该文件导入到带 Office 365 的 Outlook 中：
   
 1. [导出电子邮件、联系人和日历](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: 了解如何验证你的域并为电子邮件、Skype for Business Online 和 Yahoo！中的其他服务设置 DNS 记录 适用于 Office 365 的小型企业版。
-ms.openlocfilehash: c178afeb309fba9515e01155a43d5e6b97d1136f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7b0d0b25a2895101e2f9a259a82fb18e9447441f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362637"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211034"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-office-365"></a>在 Yahoo! Small Business 处为 Office 365 创建 DNS 记录
 

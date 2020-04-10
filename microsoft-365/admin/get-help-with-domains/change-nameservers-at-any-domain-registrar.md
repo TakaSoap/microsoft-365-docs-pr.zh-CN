@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Office 365 中添加和设置域，以便您的服务（如电子邮件和 Skype for Business Online）使用您自己的域名。
 ms.custom: okr_smb
-ms.openlocfilehash: 3030fc33a6d528fd6cb4e97c27cdbb7c251e9a97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 838025002443ec35787ea91775c60d3829545af4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251158"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210488"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-any-domain-registrar"></a>更改名称服务器以使用任意域名注册机构设置 Office 365
 
@@ -57,7 +57,7 @@ ms.locfileid: "42251158"
 
 1. 登录到您的 DNS 托管提供商的网站。
     
-2. 选择你的域。
+2. 选择您的域。
     
 3. 查找您可以在其中编辑您的域的 DNS 记录的页面。
     
@@ -69,7 +69,7 @@ ms.locfileid: "42251158"
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**记录类型** <br/> |**别名** 或 **主机名称** <br/> |**值** <br/> |**TTL** <br/> |
+|**记录类型** <br/> |**别名**或**主机名称** <br/> |**值** <br/> |**TTL** <br/> |
 |TXT  <br/> |执行下列操作之一：键入 **@** ，将该字段留空或键入你的域名。  <br/> > [!NOTE]> 此字段对不同的 DNS 主机有不同的要求。           
 |MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 这是一个示例。 在这里使用来自 Office 365 中的表的特定" **目标或指向的地址**"值。          [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。  <br/> |
    
@@ -77,26 +77,26 @@ ms.locfileid: "42251158"
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**记录类型**|**别名** 或 **主机名称**|**值**|**优先级**|**TTL**|
-|MX|键入" **@** "或你的域名。 |MS=ms *XXXXXXXX* > [!NOTE]> 这是一个示例。 在这里使用来自 Office 365 中的表的特定" **目标或指向的地址**"值。          [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |为了**避免**与用于邮件流的 MX 记录发生冲突，请使用比任何现有 MX 记录的优先级更低的优先级。 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.md#what-is-mx-priority) |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。 |
+|**记录类型**|**别名**或**主机名称**|**值**|**优先级**|**TTL**|
+|MX|键入" **@** "或你的域名。 |MS=ms *XXXXXXXX* > [!NOTE]> 这是一个示例。 在这里使用来自 Office 365 中的表的特定" **目标或指向的地址**"值。          [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |对于“**优先级**”，为避免与用于邮件流的 MX 记录发生冲突，请使用比任何现有 MX 记录的优先级要低的优先级。 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.md#what-is-mx-priority) |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。 |
    
 ### <a name="save-the-record"></a>保存记录
 
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
 
-1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
     
-2. 在 "**域**" 页上，选择要验证的域。 
+2. 在“**域**”页面上，选择要验证的域。 
     
   
-3. 在 "**设置**" 页上，选择 "**启动安装程序**"。
+3. 在“**设置**”页面上，选择“**开始设置**”。
  
     
   
-4. 在 "**验证域**" 页上，选择 "**验证**"。
+4. 在“**验证域**”页面上，选择“**验证**”。
     
     
   
@@ -158,7 +158,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 - 希望添加当前用于网站地址的域，如 www.fourthcoffee.com？ 你可以在以下步骤中添加域，以在网站托管的位置保持网站托管，以便用户在将域的 NS 记录更改为指向 Office 365 后仍可访问网站。
 
-1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
 
 3. 在" 域"页面上选择域。
 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: 了解如何验证域名和在任何 DNS 托管提供商处为 Office 365 创建 DNS 记录。
 ms.custom: okr_smb
-ms.openlocfilehash: 2d3c726f70ffb4588f7ae2fc8b53bf8f0c60e258
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 28df13d0ebe78d055df556d71c7a753d3434b030
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251159"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210476"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider-for-office-365"></a>在任何 DNS 托管提供商处为 Office 365 创建 DNS 记录
 
@@ -74,7 +74,7 @@ ms.locfileid: "42251159"
 |||||
 |:-----|:-----|:-----|:-----|
 |**记录类型**|**别名**或**主机名称**|**值**|**TTL**|
-|TXT|执行下列操作之一：键入 **@** ，将该字段留空或键入你的域名。  <br/> **注意：** 此字段对不同的 DNS 主机有不同的要求。 |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。  <br/>        [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)     <br/>     |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。  |
+|TXT|执行下列操作之一：键入 **@** ，将该字段留空或键入你的域名。  <br/> **注意：** 此字段对不同的 DNS 主机有不同的要求。 |MS=ms *XXXXXXXX*  <br/> **注意：** 此为示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。  <br/>        [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)     <br/>     |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。  |
    
   - **如果您创建 MX 记录，请使用这些值：**
     
@@ -89,7 +89,7 @@ ms.locfileid: "42251159"
   
 Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
-1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
     
 2. 在“**域**”页面上，选择要验证的域。 
   

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: 了解如何在 Bluehost for Office 365 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 0e64ed8787dca9822e71a63c57de7a7a3e2b3fe4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8d8217aa3b87e103f37063248899467d79b6cf18
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42350953"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211831"
 ---
 # <a name="create-dns-records-at-bluehost-for-office-365"></a>在 Bluehost 上为 Office 365 创建 DNS 记录
 
@@ -100,7 +100,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host Record**|**TTL**|**类型**|**指向**|**优先级**|
+    |**Host Record**|**TTL**|**类型**|**指向**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |14400  <br/> |MX  <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/>**注意：** 从 Office 365 帐户获取 \<*域密钥*\>。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
@@ -140,7 +140,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
     ![选择 "删除"](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
-5. 选择“**确定**”。
+5. 选择“确定”****。
     
     ![选择 "确定"](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   

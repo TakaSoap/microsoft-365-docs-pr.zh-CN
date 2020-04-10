@@ -6,23 +6,23 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Microsoft 365 管理中心的集成应用门户中，查找、测试和部署组织中的用户和组的 Microsoft 和 Microsoft 合作伙伴应用程序。
-ms.openlocfilehash: 4cd8c71b521c80f8a3043cf13427132b3ec3e750
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363060"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212265"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心内测试和部署 Microsoft 365 应用
 
-Microsoft 365 管理中心为你提供了从单个位置部署 Microsoft 和 Microsoft 合作伙伴应用的灵活性。 从集成应用门户中查找、测试和完全部署已购买和已授权的应用程序的功能，可提供组织在定期更新和运行业务服务时所需的便利和好处高.  
+Microsoft 365 管理中心为你提供了从单个位置部署 Microsoft 和 Microsoft 合作伙伴应用的灵活性。 从集成应用门户中查找、测试和完全部署购买和许可的应用程序和 Microsoft 合作伙伴的功能，可提供贵组织所需的便利和好处，使业务服务能够定期更新并有效地运行。  
 
 有关为您的组织购买和授权 Microsoft 365 应用程序的详细信息，请参阅博客文章["microsoft 365 管理中心" 中的 "管理和部署 microsoft 365 应用"](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324)。
   

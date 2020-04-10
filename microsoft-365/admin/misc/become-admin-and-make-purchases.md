@@ -7,7 +7,7 @@ author: pebaum
 manager: mnirkhe
 ms.date: 2/14/2018
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '了解如何成为组织的管理员并获取 Office 365 订阅。 '
-ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: de7528d79353ec5e674c349e328dd81c32725669
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857411"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212253"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>成为管理员并为组织购买 Office 365
 
@@ -62,7 +62,7 @@ ms.locfileid: "42857411"
 |||
 |:-----|:-----|
 |![粉色圆圈中的数字 1](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**注册** 必须先使用工作电子邮件地址注册 Skype 会议，才能成为管理员。  <br/> |
-|![粉色圆圈中的数字 2。](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**运行向导** 注册后，通过执行下列某项操作运行向导：  <br/>  运行在应用启动器中选择 "**管理员**" 后显示的 **"管理员向导"** 。  <br/>  或  <br/>  选择升级到 Skype 会议中的**office 365** ，然后选择您想要升级到的 office 365 订阅。  <br/> |
+|![粉色圆圈中的数字 2。](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**运行向导** 注册后，通过执行下列某项操作运行向导：  <br/>  运行在应用启动器中选择 "**管理员**" 后显示的 **"管理员向导"** 。  <br/>  OR  <br/>  选择升级到 Skype 会议中的**office 365** ，然后选择您想要升级到的 office 365 订阅。  <br/> |
 |![粉色圆圈中的数字 3。](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**验证域所有权** 接下来，要向 Office 365 验证你拥有或管理与组织电子邮件地址关联的域名（如 contoso.com）。只有域名的所有者有权执行此操作。  <br/> |
 |![粉色圆圈中的数字 4。](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**购买许可证** 在向导的最后一步，为组织内使用工作电子邮件注册 Skype 会议 的所有人购买 Office 365 许可证。  <br/> 例如，如果两名用户使用工作电子邮件注册了 Skype 会议，则需购买两个许可证，每人一个。  <br/> > [!NOTE]> 购买许可证后才能管理 Office 365。           |
 
@@ -87,7 +87,7 @@ ms.locfileid: "42857411"
 |添加或删除许可证  <br/> |您可以为未使用 Office 365 的用户[添加更多许可证](../../commerce/licenses/buy-licenses.md)，也可以删除不需要使用组织的 office 365 订阅的[用户的许可证](../manage/remove-licenses-from-users.md)。  <br/> |
 |联系已注册的其他人  <br/> |联系其他用户，让其知道你正在管理他们的 Office 365 订阅并其已升级。[请按照下列步骤](../add-users/add-users.md)，查看" **活动用户**"及其电子邮件地址的列表。<br/> |
 |开始使用 Office 365  <br/> |请访问 [Office 365 学习中心](https://support.office.com/learn/office365-for-business)，了解如何登录、检查电子邮件和共享文档等。你和用户都可使用该网站实现 Office 365 入门。  <br/> |
-|管理 Office 365 订阅  <br/> |访问[Office 365 管理员帮助中心](../admin-home.yml)并了解常见管理任务，如添加和删除用户、重置密码和设置移动设备。  <br/> |
+|管理 Office 365 订阅  <br/> |访问[Office 365 管理员帮助中心](../admin-home.md)并了解常见管理任务，如添加和删除用户、重置密码和设置移动设备。  <br/> |
 
 ## <a name="still-need-help"></a>是否仍需要帮助？
 

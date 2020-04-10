@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: 了解如何在 Namecheap for Office 365 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 26b8b6586c71636d97c423106e4799105a076a54
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 29b1130b75af592594e2a963dbb6fa8d3f08ab30
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42348393"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211675"
 ---
 # <a name="create-dns-records-at-namecheap-for-office-365"></a>在 Namecheap 上为 Office 365 创建 DNS 记录
 
@@ -150,7 +150,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     |**类型**|**主机**|**值**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX 记录  <br/> |@  <br/> |\<**\>mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注意：** 从 Office 365 帐户中获取你* \<的域密钥\> * 。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |30分钟  <br/> |
+    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注意：** 从 Office 365 帐户中获取你* \<的域密钥\> * 。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |30分钟  <br/> |
        
     ![Namecheap-配置-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   

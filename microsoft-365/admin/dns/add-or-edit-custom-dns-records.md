@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
 description: '了解如何在 Office 365 中编辑或添加自定义 DNS 记录。 '
-ms.openlocfilehash: 4cdfe98a38dd870dcf5d745438e8d81afa1fc934
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857103"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212517"
 ---
 # <a name="add-or-edit-custom-dns-records-in-office-365"></a>在 Office 365 中添加或编辑自定义 DNS 记录
 
@@ -50,6 +50,6 @@ ms.locfileid: "42857103"
 
 [DNS 基础知识](../get-help-with-domains/dns-basics.md)
 
-[获取 Office 365 域的帮助](../get-help-with-domains/get-help-with-domains.yml)
+[获取 Office 365 域的帮助](../get-help-with-domains/get-help-with-domains.md)
 
 

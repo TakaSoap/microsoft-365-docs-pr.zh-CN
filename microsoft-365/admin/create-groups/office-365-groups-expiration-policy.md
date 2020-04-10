@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Office 365 组过期策略。
-ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894511"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212053"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 组过期策略
 
@@ -38,7 +38,7 @@ ms.locfileid: "42894511"
 正在使用的组将自动续订。 以下任一操作将自动续订组：
 - SharePoint-查看、编辑、下载、移动、共享或上传文件。
 - Outlook-加入组、读取或写入组中的组邮件，以及类似于邮件（Outlook 网页网站）。
-- 团队-访问团队频道。
+- 团队-访问团队 channe '。
 
 > [!IMPORTANT]
 > 当您更改过期策略时，服务将重新计算每个组的到期日期。 它始终从创建组的日期开始计数，然后应用新的过期策略。
@@ -53,7 +53,7 @@ ms.locfileid: "42894511"
 |Role|可以执行的操作|
 |---------|---------|
 |Office 365 全局管理员（在 Azure、公司管理员）、用户管理员|创建、读取、更新或删除 Office 365 组过期策略设置。|
-|用户|续订或[还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)自己拥有的 Office 365 组|
+|User|续订或[还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)自己拥有的 Office 365 组|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何设置过期策略
 
@@ -85,4 +85,4 @@ ms.locfileid: "42894511"
 
 [向孤立组分配新的所有者](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[配置 Office 365 组过期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[配置 Office 365 组过期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

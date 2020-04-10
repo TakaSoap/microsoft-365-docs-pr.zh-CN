@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如果您在使用共享邮箱时遇到问题，请尝试这些解决方案。
-ms.openlocfilehash: b45c2eefa8cb4fb5fa34808223efbc1f0023161d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 138bcee155652e84ab6ee16cf6a9acab310edde9
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251161"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210512"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>解决共享邮箱问题
 
@@ -58,7 +58,7 @@ ms.locfileid: "42251161"
 
 [将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)
 
-[从共享邮箱中删除许可证](remove-license-from-shared-mailbox.md)
+[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
 
 
     

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: 了解如何验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 1&1 IONOS for Office 365 的 DNS 记录。
-ms.openlocfilehash: d4ff6bea0d96402c34b1d1ae302510a6e718c38d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e31c9d9d08e29156ff6197c030de6b0f4169b5f4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352053"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211867"
 ---
 # <a name="create-dns-records-at-11-ionos-for-office-365"></a>在 1&1 IONOS 处创建适用于 Office 365 的 DNS 记录
 
@@ -115,7 +115,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
 7. 在 " **MX 1** " 记录的框中，键入或复制并粘贴下表中的值。 
     
-    |**MX 1**|**优先级**|
+    |**MX 1**|**Priority**|
     |:-----|:-----|
     | *\<域密钥\>*  .mail.protection.outlook.com  <br/>  注意：从 Office \<365 帐户中\>获取你的域密钥。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | 
     

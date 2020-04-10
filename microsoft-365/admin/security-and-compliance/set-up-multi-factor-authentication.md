@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性默认值为 Office 365 用户设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153552"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204018"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -68,11 +68,11 @@ ms.locfileid: "43153552"
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>从基线策略改为安全性默认值
 
-1. 在[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)中，选择“**设置**”。
+1. 在[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)中，选择 "**全部显示**"，然后选择 "**管理中心**" 下的 " **Azure Active Directory** "。
 
-2. 在“**登录和安全**”旁边，**使登录更安全**下，选择“**查看**”。
+2. 在**azure active directory 管理中心**选择 " **azure active directory** > **安全性**"。
 
-3. 在“**使登录更安全**”下，选择“**管理**”。 
+3. 在 "**安全性" | ""入门" 页上**，选择 "**条件访问**"。 
 
 4. 在“** 门户条件访问 - 策略**”页面上，选择已**启用**的每项基线策略并将其设置为“**关**”。
 5. 转到 [Azure Active Directory 属性](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)页面。

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: 了解如何在 Wix for Office 365 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 43d2f2417153dd0c848c33736733237b1681c02c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8487c49e989bf2db345ae9e6d0e2970c5eb40cb6
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238551"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211058"
 ---
 # <a name="create-dns-records-at-wix-for-office-365"></a>在 Wix 上为 Office 365 创建 DNS 记录
 
@@ -58,7 +58,7 @@ ms.locfileid: "42238551"
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
   
-1. 若要开始，请使用[此链接](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)转到 Wix 上的 "域" 页面。 You'll be prompted to log in first.
+1. 若要开始，请使用[此链接](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)转到 Wix 上的 "域" 页面。 系统将会提示您先登录。
     
 2. 在 "**我的域**" 页面上的 "**高级**" 区域中，选择 "**编辑 DNS** " 按钮。 
     
@@ -68,36 +68,36 @@ ms.locfileid: "42238551"
     
 ||||
 |:-----|:-----|:-----|
-|**Host Name** <br/> |**TXT Value** <br/> |**TTL** <br/> |
-|自动填充  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用来自 Office 365 中的表的特定" **目标或指向的地址**"值。  [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)|1 小时 <br/> |          |
+|**Host Name** <br/> |**TXT 值** <br/> |**TTL** <br/> |
+|自动填充  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 此为示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)|1 小时 <br/> |          |
    
 5. 选择 DNS 编辑器顶部的 "**保存 DNS** " 按钮。 
     
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
-1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
     
-2. 在 "**域**" 页上，选择要验证的域。 
+2. 在“**域**”页面上，选择要验证的域。 
   
   
-3. 在 "**设置**" 页上，选择 "**启动安装程序**"。
+3. 在“**设置**”页面上，选择“**开始设置**”。
    
   
-4. 在 "**验证域**" 页上，选择 "**验证**"。
+4. 在“**验证域**”页面上，选择“**验证**”。
     
     
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>添加一条 MX 记录，确保发往您的域的电子邮件发送到 Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>添加一条 MX 记录，确保发往你的域的电子邮件发送到 Office 365
 <a name="BKMK_mx"> </a>
 
-1. 若要开始，请使用[此链接](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)转到 Wix 上的 "域" 页面。 You'll be prompted to log in first.
+1. 若要开始，请使用[此链接](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)转到 Wix 上的 "域" 页面。 系统将会提示您先登录。
     
 2. 在 "**我的域**" 页面上的 "**邮箱**" 区域中，选择 "**配置您的 MX 记录**" 链接。 
     
@@ -107,13 +107,13 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 5. 在新记录的框中，键入或复制并粘贴下表中的值：
     
-|**Host Name**|**Points to **|**优先级**|**TTL**|
+|**Host Name**|**指向**|**优先级**|**TTL**|
 |:-----|:-----|:-----|:-----|
 |自动填充 <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从 Office 365 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/What-is-MX-priority-2784cc4d-95be-443d-b5f7-bb5dd867ba83) | 1 Hour|
    
 6. 如果列出了任何其他 MX 记录，请将其删除。 
     
-7. 选择“**确定**”。
+7. 选择“确定”****。
     
 8. 在确认对话框中，选择 **"确定"**。
     
@@ -128,9 +128,9 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 4. 在新记录的框中，键入或复制并粘贴下表中的值：
     
-|**Host Name**|**Points to **|**TTL**|
+|**Host Name**|**指向**|**TTL**|
 |:-----|:-----|:-----|
-|autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 Hour  <br/> |
+|自动发现  <br/> |autodiscover.outlook.com  <br/> |1 Hour  <br/> |
 |sip  <br/> |sipdir.online.lync.com  <br/> |1 Hour <br/> |
 |lyncdiscover  <br/> |webdir.online.lync.com   <br/> |1 Hour  <br/> |
 |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 Hour <br/> |
@@ -138,15 +138,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
    
 5. 选择 DNS 编辑器顶部的 "**保存 DNS** " 按钮。 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. 改为将所需的 Office 365 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。  
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 If you already have an SPF record for your domain, don't create a new one for Office 365. 可以将所需的 Office 365 添加到当前记录，这样就拥有包含两组值的*单个*SPF 记录。  
   
-1. 若要开始，请使用[此链接](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)转到 Wix 上的 "域" 页面。 You'll be prompted to log in first.
+1. 若要开始，请使用[此链接](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)转到 Wix 上的 "域" 页面。 系统将会提示您先登录。
     
 2. 在 "**我的域**" 页面上的 "**高级**" 区域中，选择 "**编辑 DNS** " 按钮。 
     
@@ -154,18 +154,18 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 4. 在新记录的框中，键入或复制并粘贴下表中的值：
     
-|**Host Name**|**TXT Value**|**TTL**|
+|**Host Name**|**TXT 值**|**TTL**|
 |:-----|:-----|:-----|
-|[保留此空白]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 我们建议您复制并粘贴此条目，以确保所有的间距保持正确。<br/> |TXT  <br/> | 1 Hour |
+|[保留此空白]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。<br/> |TXT  <br/> | 1 Hour |
    
 5. 选择 DNS 编辑器顶部的 "**保存 DNS** " 按钮。 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>添加 Office 365 所需的两条 SRV 记录
 <a name="BKMK_srv"> </a>
 
-1. 若要开始，请使用[此链接](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)转到 Wix 上的 "域" 页面。 You'll be prompted to log in first.
+1. 若要开始，请使用[此链接](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account)转到 Wix 上的 "域" 页面。 系统将会提示您先登录。
     
 2. 在 "**我的域**" 页面上的 "**高级**" 区域中，选择 "**编辑 DNS** " 按钮。 
     
@@ -180,7 +180,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
    
 5. 选择 DNS 编辑器顶部的 "**保存 DNS** " 按钮。 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 

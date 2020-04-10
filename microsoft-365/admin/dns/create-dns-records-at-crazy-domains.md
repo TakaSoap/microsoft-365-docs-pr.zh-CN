@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: 了解如何验证您的域并为 Office 365 的电子邮件、Skype for Business Online 和古怪域中的其他服务设置 DNS 记录。
-ms.openlocfilehash: 157c33a52403efbefe673bf11465de525ffb4f33
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 74c9a940f8d6f52c31712357557ea8cfda76e6bb
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351153"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211819"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-office-365"></a>在适用于 Office 365 的古怪域中创建 DNS 记录
 
@@ -147,7 +147,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     （从下拉列表中选择 "**优先级**" 值。） 
     
-    |**区域邮件**|**优先级**|**分配给服务器**|
+    |**区域邮件**|**Priority**|**分配给服务器**|
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从 Office 365 帐户中获取你* \<的域密钥\> * 。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
        
@@ -161,7 +161,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     ![CrazyDomains-配置-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
-11. 选择 "**删除**"。
+11. 选择“删除”****。
     
     ![CrazyDomains-配置-2-6](../../media/50b0e263-6f21-41b3-8fa0-7dd55dbe6c2e.png)
   

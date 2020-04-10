@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '将您的初始电子邮件地址更改为友好的电子邮件地址，如 tom@fourthcoffee.com。 若要执行此操作，您需要购买域名，并将其添加到 Office 365。 '
-ms.openlocfilehash: 1c3c77f9626cdf292e0fb9400070cef3df05a9d6
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: dc0ab64003b48eec50bf34e60d8a6df463b4fe89
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43115966"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212029"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 

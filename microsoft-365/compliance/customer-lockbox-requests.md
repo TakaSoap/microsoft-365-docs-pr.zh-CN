@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客户密码箱请求，使您可以控制 Microsoft 支持工程师在遇到问题时如何访问数据。
-ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: f909d67383c248ab42c469f850de0e42cc41eede
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113559"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211949"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客户密码箱
 
@@ -152,7 +152,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 |:---------- |:----------|
 | 日期       | 批准或拒绝客户密码箱请求的日期和时间。
 | IP 地址 | 审批者用于批准或拒绝请求的计算机的 IP 地址。 |
-| 用户       | 服务帐户 BOXServiceAccount@\[customerforest\]。 prod.outlook.com。            |
+| User       | 服务帐户 BOXServiceAccount@\[customerforest\]。 prod.outlook.com。            |
 | 活动   | AccessToCustomerDataRequest;这是您批准或拒绝客户密码箱请求时记录的审核活动。                                |
 | Item       | 客户密码箱请求的 Guid                             |
 
@@ -171,7 +171,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 |:---------- |:----------|
 | 日期       | 执行操作的日期时间。 请注意，执行此操作的时间将不超过客户密码箱请求批准的4个小时。              |
 | IP 地址 | Microsoft 工程师使用的计算机的 IP 地址。 |
-| 用户       | Microsoft 运算符;此值指示此记录与客户密码箱请求相关。                                  |
+| User       | Microsoft 运算符;此值指示此记录与客户密码箱请求相关。                                  |
 | 活动   | Microsoft 工程师执行的活动的名称。|
 | Item       | \<empty\>                                             |
 
