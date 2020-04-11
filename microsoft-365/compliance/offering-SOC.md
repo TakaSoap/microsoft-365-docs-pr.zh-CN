@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222044"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225905"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
 ## <a name="soc-1-2-and-3-reports-overview"></a>SOC 1、2 和 3 报告概述
 
-企业越来越多地将基本功能（例如数据存储和应用程序的访问权）外包给云服务提供商 (CSP) 和其他服务组织。 为此，美国注册会计师协会 (AICPA) 开发出了 Service Organization Controls (SOC) 框架，这是一种用于保护云中存储和处理的信息机密性和隐私性的控制措施标准。 该标准符合 International Standard on Assurance Engagements (ISAE)，后者是一种针对国际服务组织的报告标准。
+企业越来越多地将基本功能（例如数据存储和应用程序的访问权）外包给云服务提供商 (CSP) 和其他服务组织。 为此，美国注册会计师协会 (AICPA) 开发出了 Service Organization Controls (SOC) 框架，这是一种用于保护云中存储和处理的信息机密性和隐私性的控制措施标准。 该框架符合 International Standard on Assurance Engagements (ISAE)，后者是一种针对国际服务组织的报告标准。
 
-基于 SOC 框架的服务审核分为两类：SOC 1 和 SOC 2，适用于范围内 Microsoft 云服务。
+基于 SOC 框架的服务审核分为两类：SOC 1 和 SOC 2 类别，适用于范围内 Microsoft 云服务。
 
 SOC 1 审核针对审计财务报表的 CPA 事务所，可评估 CSP 内部控制措施的有效性，这些内部控制措施会影响使用提供商云服务的客户的财务报告。 《鉴证业务准则公告》(SSAE 18) 和《鉴证业务国际准则 第 3402 号》(ISAE 3402) 是进行审核的标准，也是 SOC 1 报告的基础。
 
@@ -115,15 +115,15 @@ Microsoft 云服务会根据 SOC 1（SSAE18，ISAE 3402）和 SOC 2（AT 条例 
 
 **Azure SOC 报告多久发布一次？**
 
-Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream 和 Microsoft 数据中心的 SOC 报告基于滚动的 12 个月运行时间窗（审计期），且每半年（周期结束日期是 3 月 31 日和 9 月 30 日）发布一次新报告。 Bridge Letter 将在 1 月（涵盖 10/1 – 12/31 这段时间）和 7 月（涵盖 4/1 – 6/30 这段时间）发布。 客户可从服务信任门户[下载](https://aka.ms/stp)最新报告。
+Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream 和 Microsoft 数据中心的 SOC 报告基于滚动的 12 个月运行时间窗（审计期），且每半年（周期结束日期是 3 月 31 日和 9 月 30 日）发布一次新报告。 Bridge letters 每季度发布一次，通常是在每个季度结束后每月的第一周。 客户可从服务信任门户[下载](https://aka.ms/stp)最新报告。
 
 **是否需要对 Microsoft 数据中心执行我自己的审核流程？**
 
 否。 Microsoft 会与客户共享独立的审核报告与认证，以便客户能够检验 Microsoft 是否符合自己的安全承诺。
 
-**能否在我自己组织的认证过程中使用 Microsoft 的合规性认证？**
+**能否在我组织的认证过程中使用 Microsoft 的合规性认证？**
 
-是。 当您将应用程序和数据迁移到所覆盖的 Microsoft 云服务时，您可以把 Microsoft 所持有的审核与认证作为构建基础。 独立报告可证实 Microsoft 已实施用于维护您数据的安全性和隐私的控制措施的有效性。
+正确。 当您将应用程序和数据迁移到所覆盖的 Microsoft 云服务时，您可以把 Microsoft 所持有的审核与认证作为构建基础。 独立报告可证实 Microsoft 已实施用于维护您数据的安全性和隐私的控制措施的有效性。
 
 **从何处着手开展我自己组织的合规工作？**
 

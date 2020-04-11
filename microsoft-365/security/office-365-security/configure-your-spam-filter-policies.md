@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。
-ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204096"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216919"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>在 Office 365 中配置反垃圾邮件策略
 
@@ -280,7 +280,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
 3. 单击 **“编辑策略”**。
 
-对于自定义反垃圾邮件策略，随即显示的浮出控件中的可配置设置与[使用安全与合规中心创建反垃圾邮件策略](#use-the-security--compliance-center-to-create-anti-spam-policies)部分中介绍的设置完全相同。
+浮出控件中的设置与[使用安全与合规中心创建反垃圾邮件策略](#use-the-security--compliance-center-to-create-anti-spam-policies)部分中提供的设置完全相同。
 
 对于名为 **“默认垃圾邮件筛选策略”** 的默认反垃圾邮件策略，没有 **“应用于”** 部分（此策略应用于所有人），且无法重命名此策略。
 
@@ -460,7 +460,7 @@ Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 若要查看现有垃圾邮件筛选规则，请使用以下语法：
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
 ```
 
 若要返回所有垃圾邮件筛选规则的摘要列表，请运行以下命令：
