@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Office 365 组过期策略。
-ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212053"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225915"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 组过期策略
 
@@ -38,7 +38,7 @@ ms.locfileid: "43212053"
 正在使用的组将自动续订。 以下任一操作将自动续订组：
 - SharePoint-查看、编辑、下载、移动、共享或上传文件。
 - Outlook-加入组、读取或写入组中的组邮件，以及类似于邮件（Outlook 网页网站）。
-- 团队-访问团队 channe '。
+- 团队-访问团队频道。
 
 > [!IMPORTANT]
 > 当您更改过期策略时，服务将重新计算每个组的到期日期。 它始终从创建组的日期开始计数，然后应用新的过期策略。
