@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5aee7c835643fab94cc7e233ea005c3f3a1b921c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1cd620206f559e6870c6706fc0e40f4b7e45bc84
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602799"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225893"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 托管桌面操作和监视
 
@@ -67,7 +67,7 @@ Responsibility | Microsoft 托管桌面服务 | Microsoft 365 客户端软件 | 
 **更改类型** | -功能更新<br>-新功能或应用程序<br>-弃用的功能 | 针对问题的客户端修补程序 | 安全修补程序
 **预先通知** | 5天通知需要操作的更改 |    否，这些都包含在每月发布中   | 否，这些都包含在每月发布中 
 **信道** | -消息中心<br>-电子邮件通知 | -消息中心<br>-电子邮件通知 | -消息中心<br>-电子邮件通知
-**需要租户管理操作** | 有时 |  很少 |    很少 
+**需要全局管理员操作** | 有时 |  很少 |    很少 
 **操作类型** | 更改设置 | 将更改传达给用户 | 更改管理员设置     
 **需要测试** | 检查业务应用程序，包括远程访问服务 |  有时 - 针对流程或自定义项测试修补程序 |   很少 
 **更改示例** | -功能更新： IT 管理员门户简化了支持票证提交和审核<br>-新功能或应用程序： Windows 10 功能更新的半年发布 | 基于客户报告的 bug 的修补程序 |  
@@ -98,22 +98,22 @@ Microsoft 托管桌面操作团队可在需要时执行在服务中注册的设�
 
 有几个要求：
 
-- 客户的租户管理员必须提交服务请求
-- 我们需要设备的计算机名称
-- 在重置之前，用户帐户必须在 Azure AD 中
+- 全局管理员必须提交服务请求。
+- 在请求中包含设备的计算机名称。
+- 在重置设备之前，用户帐户必须在 Azure AD 中。
 
-托管桌面操作团队将：
+托管桌面操作团队将执行以下操作：
 
 - 在 Intune 中查找设备名称
 - 将出厂重置命令发送到设备
 
 >[!NOTE]
->在恢复出厂设置之前，请勿从 Azure AD 中删除用户帐户。 如果用户不在 Azure AD 中，Intune 将无法将出厂重置命令发送到设备。 
+>请勿在重置设备之前从 Azure AD 中删除用户帐户。 如果用户不在 Azure AD 中，Intune 将无法将出厂重置命令发送到设备。 
 
-设备将引导进入 OOBE，并将再次应用所有预安装的应用程序和设置。 设备用户需要提供初始设置信息。 
+设备将启动进入 "开箱即用体验"，并将再次应用所有预安装的应用程序和设置。 设备的用户需要再次提供初始安装信息。 
 
 重置设备后，可以将其提供给组织中的其他人。 以前的用户数据或企业数据将不在设备上。 下一个用户将完成与上一个用户使用新的 Microsoft 托管桌面设备所做的相同的过程。
 
-BitLocker 是此过程中数据安全的关键组成部分。 在 Microsoft 托管桌面设备上使用 BitLocker 加密时，即使在将出厂重置应用于设备之后，驱动器上的数据仍然是安全的。 驱动器上的所有数据将对该设备的下一个用户不可用。 有关详细信息，请参阅[BitLocker 概述](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)。
+BitLocker 是此过程中数据安全的关键组成部分。 在 Microsoft 托管桌面设备上使用 BitLocker 加密时，即使在设备出厂重置后，驱动器上的数据仍然是安全的。 驱动器上的所有数据将对该设备的下一个用户不可用。 有关详细信息，请参阅[BitLocker 概述](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)。
 
 有关详细信息，请参阅[Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)。 

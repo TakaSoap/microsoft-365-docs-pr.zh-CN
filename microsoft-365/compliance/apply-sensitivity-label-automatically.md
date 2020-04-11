@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: a37e1ec6b342e8003427c0e90c2493ffa2952fe4
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189097"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216883"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -57,8 +57,8 @@ ms.locfileid: "43189097"
     有关配置说明，请参阅此页面上的[如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
     
     特定于 SharePoint 和 OneDrive 的自动标记：
-    - 租户中每天的最多 25,000 个文件(Word、PowerPoint 或 Excel)
-        - 每天每个许可用户最多 5 个文件
+    - 租户中每天最多自动标记 25,000 个文件（Word、PowerPoint 或 Excel）
+        - 每个许可用户每日自动标记的文件最多 5 个
     - 所有策略中最多 10 个网站集
     - 租户中最多 10 个策略
 

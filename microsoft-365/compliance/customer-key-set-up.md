@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和团队文件设置适用于 Office 365 的客户密钥。
-ms.openlocfilehash: a360c2c7a6876669ce5d2ae6b52a730a3c7f45a5
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: af3ade4ed411a390d1501d3f3fe15ba3111e14d3
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091285"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225939"
 ---
 # <a name="set-up-customer-key-for-office-365"></a>设置适用于 Office 的客户密钥365
 
@@ -31,7 +31,9 @@ ms.locfileid: "42091285"
   
 ## <a name="before-you-set-up-customer-key"></a>设置客户密钥之前
 
-在开始之前，请确保您有适合您的组织的许可。 Office 365 中的客户密钥在 Office 365 E5 或高级合规性 SKU 中提供。 若要了解本主题中的概念和过程，请参阅[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)文档。 此外，还应熟悉 Azure 中使用的术语（例如[租户](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100))）。
+在开始之前，请确保您有适合您的组织的许可。 2006年4月1日，2020，Office 365 中的客户密钥在 Office 365 E5、M365 E5、M365 E5 合规性和 M365 E5 信息保护 & 调控 Sku 中提供。 Office 365 高级合规性 SKU 不再可用于采购新的许可证。 现有 Office 365 高级合规性许可证将继续受支持。
+
+若要了解本主题中的概念和过程，请参阅[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)文档。 此外，还应熟悉 Azure 中使用的术语（例如， [AZURE AD 租户](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)）。
 
 FastTrack 仅用于收集用于注册客户密钥所需的租户和服务配置信息。 客户密钥提供通过 FastTrack 发布，以便您和我们的合作伙伴可以使用相同的方法提交所需的信息。 FastTrack 还使您可以轻松地将提供的数据存档。
   
@@ -176,7 +178,7 @@ SharePoint Online 和 OneDrive for Business：
 创建密钥存储库还需要创建 Azure 资源组，因为密钥存储库需要存储容量（尽管非常小）和密钥存储库日志记录（如果启用）也会生成存储的数据。 作为一种最佳做法，Microsoft 建议使用单独的管理员来管理每个资源组，并将管理与将管理所有相关客户密钥资源的一组管理员相一致。
   
 > [!IMPORTANT]
-> 若要最大限度地提高可用性，关键电子仓库应位于与 Office 365 服务接近的区域。 例如，如果您的 Exchange Online 组织在北美，请将您的密钥电子仓库放在北美。 如果你的 Exchange Online 组织在欧洲，请将你的密钥电子仓库放在欧洲。<br/>对密钥存储库使用公用前缀，并包含密钥保管库和密钥的使用和作用域的缩写（例如，对于将在北美使用电子仓库的 Contoso SharePoint 服务，可能的姓名对是 Contoso-O365SP-VaultA1，Contoso-O365SP-NA-VaultA2。 保管库名称在 Azure 中是全局唯一的字符串，因此，如果所需名称已由其他 Azure 客户声明，则可能需要尝试其他名称的变体。 从7月2017电子仓库名称无法更改，因此最佳做法是为设置编写计划，并使用第二个人验证是否正确执行了计划。<br/>如果可能，请在非配对区域中创建您的电子仓库。 配对的 Azure 区域在服务故障域之间提供高可用性。 因此，可以将区域对视为彼此的备份区域。 这意味着，放置在一个区域中的 Azure 资源将自动获得配对区域的容错能力。 出于此原因，在区域为成对的数据加密策略中使用的两个存储库的区域选择区域意味着仅有两个可用性区域处于使用状态。 大多数地理位置仅有两个区域，因此尚不能选择非配对区域。 如果可能，请为用于数据加密策略的两个电子仓库选择两个非配对区域。 这从总共四个可用区域获益。 有关详细信息，请参阅[业务连续性和灾难恢复（BCDR）：](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)当前区域对列表的 Azure 配对区域。
+> 若要最大限度地提高可用性，关键电子仓库应位于与 Office 365 服务接近的区域。 例如，如果您的 Exchange Online 组织在北美，请将您的密钥电子仓库放在北美。 如果你的 Exchange Online 组织在欧洲，请将你的密钥电子仓库放在欧洲。<br/>对密钥存储库使用公用前缀，并包含密钥保管库和密钥的使用和作用域的缩写（例如，对于将在北美使用电子仓库的 Contoso SharePoint 服务，可能的一对 O365SP-VaultA1 和 Contoso-O365SP-VaultA2。 保管库名称在 Azure 中是全局唯一的字符串，因此，如果所需名称已由其他 Azure 客户声明，则可能需要尝试其他名称的变体。 从7月2017电子仓库名称无法更改，因此最佳做法是为设置编写计划，并使用第二个人验证是否正确执行了计划。<br/>如果可能，请在非配对区域中创建您的电子仓库。 配对的 Azure 区域在服务故障域之间提供高可用性。 因此，可以将区域对视为彼此的备份区域。 这意味着，放置在一个区域中的 Azure 资源将自动获得配对区域的容错能力。 出于此原因，在区域为成对的数据加密策略中使用的两个存储库的区域选择区域意味着仅有两个可用性区域处于使用状态。 大多数地理位置仅有两个区域，因此尚不能选择非配对区域。 如果可能，请为用于数据加密策略的两个电子仓库选择两个非配对区域。 这从总共四个可用区域获益。 有关详细信息，请参阅[业务连续性和灾难恢复（BCDR）：](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)当前区域对列表的 Azure 配对区域。
   
 ### <a name="assign-permissions-to-each-key-vault"></a>将权限分配给每个密钥存储库
 
@@ -235,7 +237,7 @@ SharePoint Online 和 OneDrive for Business：
   
 若要在密钥保管库上启用软删除，请完成以下步骤：
   
-1. 使用 Windows Powershell 登录到你的 Azure 订阅。 有关说明，请参阅[使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+1. 使用 Windows PowerShell 登录到你的 Azure 订阅。 有关说明，请参阅[使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
 
 2. 运行[AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet。 在此示例中，*保管库名称*是要为其启用软删除的密钥保管库的名称：
 
