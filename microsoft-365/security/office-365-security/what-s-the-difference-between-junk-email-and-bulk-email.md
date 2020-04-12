@@ -16,14 +16,14 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: 本主题说明了垃圾邮件（垃圾邮件）和批量电子邮件之间的区别以及 Office 365 中的相关控件。
-ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033622"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230952"
 ---
-# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾邮件和批量邮件之间有什么差异？
+# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾邮件和群发电子邮件有何区别？
 
 Office 365 客户，其中邮箱位于 Exchange Online 或独立 Exchange Online Protection （EOP）中没有 Exchange Online 邮箱的客户有时会问： "垃圾邮件和批量电子邮件的区别是什么？" 本主题介绍 EOP 中可用的控件的区别和说明。
 

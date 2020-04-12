@@ -331,7 +331,7 @@
               href: view-label-activity-for-documents.md
             - name: 查看数据管理报告
               href: view-the-data-governance-reports.md
-        - name: 事件
+        - name: 活动
           items:
             - name: 基于事件的保留
               href: event-driven-retention.md
@@ -830,6 +830,8 @@
       items:
         - name: 金融服务安全性和合规性
           href: ../solutions/financial-services-secure-collaboration.md
+        - name: 能源服务安全性和合规性
+          href: ../solutions/energy-secure-collaboration.md
 - name: 法规合规性行动计划
   items:
     - name: ISO - 建议行动计划
