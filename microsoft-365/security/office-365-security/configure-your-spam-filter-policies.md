@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: 基本垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。
-ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: 管理员可以了解如何在 Exchange Online 和独立 Exchange Online Protection（EOP）中创建、修改和删除反垃圾邮件策略。
+ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216919"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43231012"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>在 Office 365 中配置反垃圾邮件策略
 
@@ -495,7 +495,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>使用 PowerShell 修改垃圾邮件筛选策略
 
-除了以下几项之外，在 PowerShell 中修改恶意软件筛选策略时可用的设置，与本主题前面的[第 1 步：使用 PowerShell 创建垃圾邮件筛选策略](#step-1-use-powershell-to-create-a-spam-filter-policy)部分中介绍的可用于创建策略的设置相同。
+除了以下几项之外，在 PowerShell 中修改垃圾邮件筛选策略时可用的设置，与本主题前面的[第 1 步：使用 PowerShell 创建垃圾邮件筛选策略](#step-1-use-powershell-to-create-a-spam-filter-policy)部分中介绍的可用于创建策略的设置相同。
 
 - 只有在 PowerShell 中修改垃圾邮件筛选策略时，才能使用 _MakeDefault_ 开关，它可将指定策略转换为默认策略（应用于所有人，优先级值始终为 **“最低”**，且无法删除）。
 
