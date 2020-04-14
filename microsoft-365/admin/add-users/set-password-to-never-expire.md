@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 了解如何使用 Windows PowerShell 将某些个人用户密码设置为永不过期。
-ms.openlocfilehash: 275fedf7bf4e52320b769689516ad39a31c63ea1
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 04fb2b0c17f695c41df2f8b1277c7918054ae9fe
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105731"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240231"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>将个人用户密码设置为永不过期
 
@@ -38,14 +38,19 @@ ms.locfileid: "43105731"
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>为单个用户设置密码过期策略
 
-Microsoft 云服务的全局管理员可以使用 Windows PowerShell 的 Microsoft Azure AD 模块将密码设置为对特定用户不过期。 您还可以使用 Windows PowerShell cmdlet 删除永不过期的配置，或查看设置为永不过期的用户密码。
+Microsoft 云服务的全局管理员可以使用 Azure Active Directory PowerShell for Graph 将密码设置为不会对特定用户过期。 您还可以使用 AzureAD cmdlet 删除永不过期的配置，或查看设置为永不过期的用户密码。
 
 本指南适用于其他提供商，如 Intune 和 Office 365，后者还依赖 Azure AD 进行标识和目录服务。 密码过期是策略中唯一可以更改的部分。
+
+有关用于图形的 Azure AD PowerShell 的详细信息，请参阅[Azure Active Directory powershell For graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)。
 
 > [!NOTE]
 > 只能将未通过目录同步同步的用户帐户的密码配置为永不过期。 有关目录同步的详细信息，请参阅[CONNECT ad With AZURE AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)。
 
 ### <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何检查密码的过期策略
+
+有关 AzureAD 模块中的 AzureADUser 命令的详细信息，请参阅参考文章[Get AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
+
 运行以下命令之一：
 
 - 若要查看是否将单个用户的密码设置为永不过期，请使用 UPN （例如， *user@contoso.onmicrosoft.com*）或要检查的用户的用户 ID 运行以下 cmdlet：

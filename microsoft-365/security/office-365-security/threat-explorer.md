@@ -16,16 +16,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: e882f89a0020cacd30cb6d85917e78a965ad5cde
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: c854021eaf6c5d252f36961fde427c5532ba1ef6
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198379"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284245"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
-如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)（OFFICE 365 ATP），并且您拥有[必要的权限](#required-licenses-and-permissions)，则您可以使用**资源管理器**或**实时检测**（以前的*实时报告*）[查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！ 在安全 & 合规性中心中，转到 "**威胁管理**"，然后选择 "**浏览器**" 或 "**实时检测**"。
+如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)（OFFICE 365 ATP），并且您拥有[必要的权限](#required-licenses-and-permissions)，则您可以使用**资源管理器**或**实时检测**（以前的*实时报告*）[查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！ 在安全 & 合规性中心中，转到 "**威胁管理**"，然后选择 "**浏览器**"_或_"**实时检测**"。
 
 |||
 |---|---|
@@ -157,7 +157,7 @@ ms.locfileid: "43198379"
 
     报告将刷新，以在报告下的 "URL" 选项卡上显示两个不同的 URL 表：
 
-   - **上面的 url**是您已筛选出的邮件中包含的 url，并且每个 URL 的电子邮件传递操作都会计数。 在网络钓鱼电子邮件视图中，此列表通常包含合法的 Url。 攻击者在其邮件中加入了好和坏的 Url，以尝试传递它们，但它们会使用户更有趣地单击恶意链接。 Url 表按总电子邮件计数进行排序（注意：此列不显示为简化视图）。
+   - **上面的 url**是您已筛选出的邮件中包含的 url，并且每个 URL 的电子邮件传递操作都会计数。 在网络钓鱼电子邮件视图中，此列表通常包含合法的 Url。 攻击者在其邮件中加入了好和坏的 Url，以尝试传递它们，但它们会使用户更有趣地单击恶意链接。 Url 表按总电子邮件计数进行排序（但请注意，此列处于隐藏状态，以简化视图）。
 
    - 单击 "**上**一条" 可将已单击的安全链接包装的 url 按总点击次数排序（此列也不显示为简化视图）。 "总计计数依据" 列指示安全链接单击每个单击的 URL 的 "已判定计数"。 在网络钓鱼电子邮件视图中，这些 Url 更常见或恶意 Url，但可能包括不是威胁但位于网络钓鱼邮件中的 Url。 URL 单击未打开的链接将不会显示在此处。
 
@@ -165,7 +165,10 @@ ms.locfileid: "43198379"
 
    ![阻止的资源管理器 Url](../../media/ExplorerPhishClickVerdictURLs.png)
 
-   选择一个 URL 以查看更详细的信息。 **注意**：在 "URL 飞出" 对话框中，将删除对电子邮件的筛选，以显示您的环境中 URL 公开的完整视图。 这样，您就可以在资源管理器中筛选出您关注的电子邮件，查找潜在威胁的特定 Url，然后展开您对环境中的 URL 公开的了解（通过 URL 详细信息对话框），而无需向资源管理器视图本身添加 URL 筛选器。
+   选择一个 URL 以查看更详细的信息。
+   
+   > [!NOTE]
+   > 在 "URL 浮出控件" 对话框中，将删除对电子邮件的筛选，以显示您的环境中 URL 公开的完整视图。 这样，您就可以在资源管理器中筛选出您关注的电子邮件，查找潜在威胁的特定 Url，然后展开您对环境中的 URL 公开的了解（通过 URL 详细信息对话框），而无需向资源管理器视图本身添加 URL 筛选器。
 
 ## <a name="review-email-messages-reported-by-users"></a>查看用户报告的电子邮件
 
@@ -175,7 +178,7 @@ ms.locfileid: "43198379"
 
 2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **提交**"。 （以前称为 "**用户报告**"。）
 
-   ![浏览器的视图菜单](../../media/ExplorerViewMenuEmailUserReported.png)
+   ![浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
 
 3. 单击 "**发件人**"，然后选择 "**基本** > **报告类型**"。
 
@@ -237,4 +240,4 @@ ms.locfileid: "43198379"
 - "**所有电子邮件**" 视图在**威胁资源管理器**中可用（而不在**实时检测**报告中）。
 - **威胁资源管理器**中包含更多筛选功能和可用操作。
 
-有关更多详细信息，请参阅[Office 365 ATP 服务说明：跨高级威胁防护（ATP）计划的功能可用性](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+有关更多详细信息，请参阅[Office 365 ATP 服务说明：功能在高级威胁防护（ATP）计划](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)中的可用性。

@@ -19,27 +19,28 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 您可以在安全 & 合规性中心启用审核日志搜索功能。 如果你更改了想法，你可以随时关闭。 当 "审核日志搜索" 关闭时，管理员无法在组织中搜索用户和管理员活动的 Office 365 审核日志。
-ms.openlocfilehash: 4e5a8c3236da9d2cf6e9392b8a9a29d064b0ce0d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 92a781ddb1fd4f5b41198f31ebff6bba9745d21d
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069415"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240211"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>启用或禁用 Office 365 审核日志搜索
 
-您（或另一个管理员）必须先启用审核日志记录，然后才能开始搜索 Office 365 审核日志。 如果启用了安全 & 合规中心中的审核日志搜索，则组织中的用户和管理员活动将记录在审核日志中，并在90天内保留。 但是，您的组织可能不想记录和保留审核日志数据。 或者，您可能使用第三方安全信息和事件管理（SIEM）应用程序访问您的审核数据。 在这些情况下，全局管理员可以在 Office 365 中关闭审核日志搜索。
+您（或另一个管理员）必须先启用审核日志记录，然后才能开始搜索 Office 365 审核日志。 当安全 & 合规中心中的审核日志搜索打开时，组织中的用户和管理员活动将记录在审核日志中，并保留90天，且最多为一年，具体取决于分配给用户的许可证。 但是，您的组织可能出于不需要记录和保留审核日志数据的原因。 在这些情况下，全局管理员可能会决定关闭 Office 365 中的审核。
+
+> [!IMPORTANT]
+> 如果关闭了 Office 365 中的审核日志搜索，则不能使用 Office 365 管理活动 API 或 Azure Sentinel 来访问您的组织的审核数据。 按照本文中的步骤关闭审核日志搜索意味着，在使用 Security & 合规中心或在 Exchange Online PowerShell 中运行**UnifiedAuditLog** cmdlet 时，搜索审核日志时不会返回任何结果。 这也意味着不会通过 Office 365 管理活动 API 或 Azure Sentinel 提供审核日志。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须在 Exchange Online 中向您分配 "审核日志" 角色，才能在 Office 365 组织中打开或关闭审核日志搜索。 默认情况下，此角色在 Exchange 管理中心中的 "**权限**" 页上分配给合规性管理和组织管理角色组。 Office 365 中的全局管理员是 Exchange Online 中的 "组织管理" 角色组的成员。 
     
-    > [!IMPORTANT]
+    > [!NOTE]
     > 必须在 Exchange Online 中向用户分配权限，才能打开或关闭审核日志搜索。 如果您在安全 & 合规中心中向用户分配 "**权限**" 页上的 "审核日志" 角色，则他们将无法打开或关闭审核日志搜索。 这是因为基础 cmdlet 是 Exchange Online cmdlet。 
-  
-- 如果关闭了 Office 365 中的审核日志搜索，则不能使用 Office 365 管理活动 API 访问组织的审核数据。 按照本文中的步骤关闭审核日志搜索意味着，在使用 Security & 合规中心或在 Exchange Online PowerShell 中运行**UnifiedAuditLog** cmdlet 时，搜索审核日志时不会返回任何结果。 这也意味着你的审核日志将无法通过 Office 365 管理活动 API 提供。  
     
-- 有关搜索 Office 365 审核日志的分步说明，请参阅[在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
+- 有关搜索 Office 365 审核日志的分步说明，请参阅[在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。 有关 Office 365 管理活动 API 的详细信息，请参阅[office 365 管理 api 入门](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
     
 ## <a name="turn-on-audit-log-search"></a>启用审核日志搜索
 
@@ -89,7 +90,7 @@ ms.locfileid: "42069415"
     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
     ```
 
-      UnifiedAuditLogIngestionEnabled 属性的`False`值指示__ 已关闭审核日志搜索。 
+      UnifiedAuditLogIngestionEnabled 属性的`False`值指示_UnifiedAuditLogIngestionEnabled_已关闭审核日志搜索。 
     
     - 在 "安全性 & 合规性中心中，转到"**搜索** \> **审核日志搜索**"。
     

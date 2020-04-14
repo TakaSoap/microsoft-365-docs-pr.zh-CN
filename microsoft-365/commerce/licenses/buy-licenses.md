@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: 了解如何添加和删除 Office 365 for business 订阅的许可证。
-ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142171"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240276"
 ---
 # <a name="manage-subscription-licenses"></a>管理订阅许可
 
@@ -38,9 +38,9 @@ ms.locfileid: "43142171"
 
 不能删除订阅中已分配给用户的许可证。 如果要删除当前分配给某人的许可证，则需要先[删除用户的许可证](../../admin/manage/remove-licenses-from-users.md)，然后才能从订阅中删除该许可证。
 
-::: moniker range="o365-worldwide"
+## <a name="add-or-remove-licenses-for-your-business-subscription"></a>为你的业务订阅添加或删除许可证
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>你需要了解的有关为你的业务订阅购买许可证的相关信息
+::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 

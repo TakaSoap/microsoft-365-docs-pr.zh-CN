@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/22/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成，以查看更详细的威胁管理信息。
-ms.openlocfilehash: 8096a950e66ed94d6e056f40b737d89d48cb811e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a2634a70bdbdd21efe2c59721e5532500eb4e4cc
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088745"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284218"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成
 
@@ -30,7 +30,7 @@ ms.locfileid: "42088745"
   
 下图显示了启用 Microsoft Defender ATP 集成时将看到的 "**设备**" 选项卡：
   
-![启用 Microsoft Defender ATP 后，你可以查看包含警报的计算机列表。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![启用 Microsoft Defender ATP 后，你可以看到包含警报的设备列表。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
 在此示例中，您可以看到电子邮件的收件人有四台设备，并且有一个警报。 单击设备的链接将在 Microsoft Defender 安全中心中打开其页面。
   
@@ -44,22 +44,21 @@ ms.locfileid: "42088745"
     
 ## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>将 Office 365 ATP 与 Microsoft Defender ATP 集成
 
-通过使用安全 & 合规性中心和 Microsoft Defender 安全中心，将 Office 365 ATP 与 Microsoft Defender ATP 集成。
+通过使用 Office 365 安全性 & 合规性中心和 Microsoft Defender 安全中心将 Office 365 的 ATP 与 Microsoft Defender ATP 集成。
   
-1. 作为 Office 365 全局管理员或安全管理员，请转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 的工作或学校帐户登录。
+1. 作为 Office 365 全局管理员或安全管理员，请转到[https://protection.office.com](https://protection.office.com)并登录。
     
 2. 选择 "**威胁管理** \> **资源管理器**"。<br>![威胁管理菜单中的资源管理器](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. 在屏幕的右上角，选择 " **WDATP 设置**"。
     
-4. 在 "Windows Defender ATP 连接" 对话框中，启用 "连接到 Windows ATP"。<br>![Microsoft Defender ATP 连接](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. 在 "Microsoft Defender ATP 连接" 对话框中，启用 "**连接到 WINDOWS ATP**"。<br>![Microsoft Defender ATP 连接](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
-5. 在 Microsoft Defender 安全中心启用连接。
+5. 在 Microsoft Defender 安全中心（[https://securitycenter.windows.com](https://securitycenter.windows.com)）中启用连接。
 
-  
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 威胁调查和响应](office-365-ti.md)
+[Office 365 中的威胁调查和响应功能](office-365-ti.md)
   
 [Office 365 高级威胁防护](office-365-atp.md)
   

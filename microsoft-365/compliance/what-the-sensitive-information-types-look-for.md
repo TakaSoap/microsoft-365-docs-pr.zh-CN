@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894295"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240277"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
@@ -213,12 +213,12 @@ Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括许多�
 - 两位数字 
 - 五位数字或字母（不区分大小写）
 
-或
+OR
 
 - 1-2 个可选字母（不区分大小写）  
 - 4-9 位数字
 
-或
+OR
 
 - 九个数字或字母（不区分大小写）
 
@@ -1087,7 +1087,7 @@ Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括许多�
 - Identiteit
 - Registratie
 - Identificatie 
-- Carte d’identité 
+- D'identité 
 - numéro d'immatriculation
 - numéro d'identification
 - identité 
@@ -2104,7 +2104,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - expiration date
 - exp date
 - expiry date
-- date d’expiration
+- 日期 d'expiration
 - date d'exp
 - date expiration
 - bank card
@@ -2306,7 +2306,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 9个数字（旧格式）：
 - 九个数字
 
-或
+OR
 
 - 代表出生日期的六个数字
 - 一个正斜杠 
@@ -2315,7 +2315,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 10个数字（新格式）：
 - 10 个数字
 
-或
+OR
 
 - 代表出生日期的六个数字
 - 一个正斜杠  
@@ -2838,12 +2838,32 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
    
 ## <a name="finland-passport-number"></a>芬兰护照号
 
-设置九个字母和数字的组合的组合九个字母和数字的组合：两个字母（不区分大小写）七个数字校验和无定义 DLP 策略是75% 确信它检测到这种类型的敏感信息，如果在300个字符的邻近性：正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。
-找到 Keyword_finland_passport_number 中的一个关键字。
+### <a name="format"></a>Format
+九个字母和数字的组合
+
+### <a name="pattern"></a>模式
+九个字母和数字的组合：两个字母（不区分大小写）七位数字
+
+### <a name="checksum"></a>校验和
+否
+
+### <a name="definition"></a>定义
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。
+- 找到 Keyword_finland_passport_number 中的一个关键字。
 <!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+```xml
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
 </Entity>
-Keyword_finland_passport_number Passport Passi 的关键字
+```
+### <a name="keywords"></a>关键字
+- Keyword_finland_passport_number
+- 登记卡
+- Passi
    
 ## <a name="france-drivers-license-number"></a>法国驾驶证号码
 
@@ -3344,12 +3364,12 @@ bnationalit
 七个字母和数字（旧格式）：
 - 一个字母（希腊字母表中的任一字母）  
 - 一个短划线  
-- 六位数字
+- 六个数字
 
 八个字母和数字（新格式）：
 - 大写字符同时出现在希腊和拉丁字母表中的两个字母 (ABEZHIKMNOPTYX)  
 - 一个短划线  
-- 六位数字
+- 六个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5671,7 +5691,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - 六位数字
 - "A"、"B"、"C" 或 "d" （与前缀一样，后缀中只允许有某些字符; 不区分大小写）
 
-或
+OR
 
 - 两个字母
 - 一个空格或破折号
