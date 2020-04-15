@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 配置基础结构和安全性，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053103"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504119"
 ---
 # <a name="empower-remote-workers"></a>为远程工作者提供强大功能
 
@@ -99,10 +99,10 @@ ms.locfileid: "43053103"
 
 ![远程工作者的标识元素](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-对于[阶段 3：Windows 10 企业版](windows10-infrastructure.md)，请部署：
+[阶段 3：Windows 10 企业版](windows10-infrastructure.md)：
 
-- 用于使用 Windows 10 企业版部署新设备以及将 Windows 7 或 Windows 8.1 设备升级到 Windows 10 企业版的基础结构
-- 用于实现标识、威胁和信息保护的全面安全功能
+- 部署基础结构，以使用 Windows 10 企业版部署新设备以及将 Windows 7 或 Windows 8.1 设备升级到 Windows 10 企业版
+- 为标识、威胁和信息保护启用全面安全功能
 
 下面是 Windows 10 企业版设备的最终配置。
 
@@ -206,6 +206,12 @@ ms.locfileid: "43053103"
 ### <a name="user-adoption-results"></a>用户采用结果
 
 远程工作者可以使用 Windows 10 企业版或其他设备以及 Office 365 专业增强版在安全环境中访问和使用共享的 Microsoft 365 企业版云服务及资源，并且可以实时举行会议、创建和协作。
+
+## <a name="additional-microsoft-features-to-support-remote-workers"></a>支持远程工作者的其他 Microsoft 功能
+
+可使用 [Azure 点到站 VPN 连接](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about)将远程工作者连接到在 Azure 虚拟网络中运行的服务器。
+
+可以将 [Windows 虚拟桌面](https://docs.microsoft.com/azure/virtual-desktop/overview)用于 Azure 托管的桌面和应用虚拟化。
 
 ## <a name="see-also"></a>另请参阅
 
