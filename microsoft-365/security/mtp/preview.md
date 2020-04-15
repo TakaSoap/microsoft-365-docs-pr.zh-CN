@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f04d2e587a55a680a65425b34a88896466e09be3
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113455"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503979"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -54,8 +54,9 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 
 当您看到 "**打开预览功能**" 复选框处于选中状态时，您将知道已经打开了预览功能。 
 
-
-
 ## <a name="preview-features"></a>预览功能
-此部分将包含预览中的功能的列表，这些功能可供您尝试。 
+目前，预览中提供了以下功能和增强功能：
 
+- **[自定义检测](custom-detections-overview.md)**-使用高级搜索查询创建规则，以定期搜索入侵活动和其他感兴趣的项目。 与查询触发警报和指定响应操作的匹配项。
+
+- **[标识和应用程序表](advanced-hunting-schema-tables.md)**—使用高级搜寻架构中的[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表深入了解身份验证事件、Active Directory 查询和与应用程序相关的活动。
