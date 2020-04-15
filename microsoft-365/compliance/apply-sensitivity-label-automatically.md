@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+ms.openlocfilehash: 4ce9e06bb98fb391bb9eb5ffa01491e0c85eba1f
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216883"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240297"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -95,7 +95,11 @@ ms.locfileid: "43216883"
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>不要将父标签配置为自动应用或推荐使用
 
-请记住，不可向内容应用父标签（即带子标签的标签）。 确保未将父标签配置为自动应用或推荐使用，因为父标签不会应用于使用 Azure 信息保护统一标签客户端的 Office 应用程序中的内容。 有关父标签和子标签的更多信息，请参阅[子标签（对标签进行分组）](sensitivity-labels.md#sublabels-grouping-labels)。
+请记住，不可向内容应用父标签（即带子标签的标签）。 确保未在 Office 应用中将父标签配置为自动应用或推荐，并且不为自动标记策略选择父标签。 如果执行此操作，则不会将父标签应用于内容。
+
+若要将自动标记用于子标签，请确保同时发布父标签和子标签。
+
+有关父标签和子标签的更多信息，请参阅[子标签（对标签进行分组）](sensitivity-labels.md#sublabels-grouping-labels)。
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>如何配置 Office 应用的自动标签
 

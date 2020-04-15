@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 信息保护框架中的灵敏度标签，对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受影响。 这些标签可应用包含加密视觉标记（如页脚和水印）的保护设置。
-ms.openlocfilehash: a67d71c16f93cf8872646c5bbeb072f8b5f07935
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106150"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240307"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -48,8 +48,6 @@ ms.locfileid: "43106150"
 - **强制执行保护设置，如对已标记内容设置加密或水印。** 例如，用户可以向文档或电子邮件应用“机密”标签，然后此标签便能加密相应内容，并应用“机密”水印。
 
 - **跨不同平台和设备保护 Office 应用中的内容。** 有关受支持的应用的列表，请参阅[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)。
-
-- 使用 Microsoft Intune 中的终结点保护功能，**防止运行 Windows 的设备上的敏感内容流出你的组织**。 将敏感度标签应用于 Windows 设备上的内容之后，端点保护可以防止将该内容复制到第三方应用程序，例如 Twitter 或 Gmail。 或复制到可移动存储，如 USB 驱动器。
 
 - 利用 Microsoft 云应用安全性**保护第三方应用和服务中的内容**。 借助 Cloud App Security，可检测、分类、标记和保护第三方服务和应用（如 SalesForce、Box 或 Dropbox）中的内容，即使第三方应用或服务无法读取或不支持敏感度标签也不例外。
 
@@ -98,9 +96,6 @@ ms.locfileid: "43106150"
     
     字符串长度：水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
 
-- **防止数据丢失**：方法是在 Intune 中开启终结点保护。 如果下载了敏感内容，则有助于防止 Windows 设备中的数据丢失。 例如，不能将带有标签的内容复制到 Dropbox、Gmail 或 U 盘中。 在敏感度标签可以使用 Windows 信息保护 (WIP) 之前，先需要在 Azure 门户中创建应用保护策略。 
-    
-    有关创建或编辑敏感度标签时的“**终结点数据丢失防护**”设置的详细信息（包括重要先决条件），请参阅 [Windows 信息保护如何使用敏感度标签保护文件](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。
 
 - 选择加入预览以****[将灵敏度标签用于 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）](sensitivity-labels-teams-groups-sites.md)时，可保护网站和组等容器中的内容。
     
@@ -128,7 +123,7 @@ ms.locfileid: "43106150"
 
 子标签只是向逻辑组中的用户显示标签的一种方式。 子标签不会从其父标签继承任何设置。 为用户发布子标签时，该用户可以将该子标签应用于内容，但不能仅应用父标签。
 
-不要选择父标签作为默认标签或将父标签配置为自动应用或推荐使用，因为父标签不会应用于使用 Azure 信息保护统一标签客户端的 Office 应用程序中的内容。
+不要选择父标签作为默认标签，也不要将父标签配置为自动应用（或推荐）。 如果执行此操作，则不会将父标签应用于内容。
 
 子标签如何向用户显示的示例：
 

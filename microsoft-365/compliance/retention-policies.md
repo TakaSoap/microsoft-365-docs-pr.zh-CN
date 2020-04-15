@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: ffbc8026b8a0b1f85916c7697625bfa0935e275f
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
+ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189053"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237639"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -301,7 +301,7 @@ ms.locfileid: "43189053"
 Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中用户或组邮箱的保留策略的影响。 即使 Teams 聊天和频道消息存储在 Exchange 中，它们也仅受到应用于 Teams 位置的保留策略的影响。
 
 > [!NOTE]
-> 如果用于保留 Teams 数据的活动保留策略中包含用户，则不允许删除该用户的邮箱，因为需要保留数据的存储。 若要删除此类用户的邮箱，管理员需要先从保留策略中排除该用户。
+> 如果用户包含在保留 Teams 数据的活动保留策略中，并且删除了包含在此策略中的用户邮箱，为了保留数据，邮箱会转换为[非活动的邮箱](inactive-mailboxes-in-office-365.md)。 如果不需要为用户保留此数据，在删除用户的邮箱之前，将其从保留策略中排除。
   
 为团队分配保留策略后，聊天和频道消息可以遵循以下两种路径之一：
 
