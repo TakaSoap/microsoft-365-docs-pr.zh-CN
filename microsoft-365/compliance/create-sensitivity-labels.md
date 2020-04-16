@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护。
-ms.openlocfilehash: cbc2b0ef084d20d4e11ebdb03a9707e172f8a971
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 196efe65eda1265d6f2c0578d1f444709dadb26c
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105629"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516817"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -131,7 +131,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 3. 选择“**发布标签**”以启动“**创建策略向导**”。
 
 4. 选择 “**选择要发布的敏感度标签**”。 选择可在应用和服务中可以使用的标签，随后选择“**添加**”。
-
+    
+    如果选择子标签，请确保也选择其父标签。
+    
 5. 查看所选标签，若要进行任何更改，请选择“**编辑 **”。 否则选择“**下一步**”。
 
 6. 按照提示配置策略设置。

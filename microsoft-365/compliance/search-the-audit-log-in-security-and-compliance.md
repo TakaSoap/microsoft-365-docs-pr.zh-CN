@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151437"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521488"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -694,7 +694,7 @@ ms.locfileid: "43151437"
 |已删除审阅集搜索|DeleteWorkingSetSearch|用户已删除审阅集中的搜索查询。|
 |已删除标记|DeleteTag|用户已删除审阅集中的标记或标记组。|
 |已下载文档|DownloadDocument|用户从审阅集下载了文档。|
-|已编辑标记|DownloadDocument|用户已更改审阅集中的标记。|
+|已编辑标记|UpdateTag|用户已更改审阅集中的标记。|
 |已从审阅集导出文档|ExportJob|用户已从审阅集导出文档。|
 |已修改案例设置|UpdateCaseSettings|用户已修改案例设置。 案例设置包括控制搜索和分析行为的案例信息、访问权限和设置。|
 |已修改审阅集搜索|UpdateWorkingSetSearch|用户已编辑审阅集中的搜索查询。|
@@ -891,9 +891,9 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 |:-----|:-----|:-----|
 |已向网站应用敏感度标签|SensitivityLabelApplied|已向 SharePoint 或 Teams 网站应用敏感度标签。|
 |已从网站中删除敏感度标签|SensitivityLabelRemoved|已从 SharePoint 或 Teams 网站中删除敏感度标签。|
-|已向文件应用敏感度标签|FileSensitivityLabelApplied|已使用 Office 网页版向文档应用敏感度标签。|
-|已更改应用于文件的敏感度标签|FileSensitivityLabelChanged|已使用 Office 网页版向文档应用其他敏感度标签。|
-|已从文件除敏感度标签|FileSensitivityLabelRemoved|已使用 Office 网页版从文档中删除敏感度标签。|
+|已向文件应用敏感度标签|FileSensitivityLabelApplied|已使用 Office 网页版或自动标记策略向文档应用敏感度标签。|
+|已更改应用于文件的敏感度标签|FileSensitivityLabelChanged|已使用 Office 网页版或自动标记策略向文档应用其他敏感度标签。|
+|已从文件除敏感度标签|FileSensitivityLabelRemoved|已使用 Office 网页版或自动标记策略从文档删除敏感度标签。|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志
