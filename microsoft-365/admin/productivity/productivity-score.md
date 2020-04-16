@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361313"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516861"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft 工作效率分数（预览）
 
@@ -39,7 +39,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 - **技术经验**（即将推出）：帮助你优化设备体验，例如主动修复常见的帮助台问题，并改善电脑启动时间和网络，以确保你的应用程序能够正常运行。  
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 ### <a name="areas-of-scoring"></a>记分区域 
 
@@ -74,7 +74,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 - Skype for Business 管理员 
 - Teams 管理员 
 - 全局读取者 
-- 报告读者 
+- 报告读取者 
 
 您可以通过在左侧导航栏中选择 "**报告** > **效率分数**" 来访问 Microsoft 365 管理主页中的体验。
 

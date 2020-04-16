@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058901"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516907"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
@@ -48,11 +48,11 @@ Microsoft 365 安全中心包括：
 * **警报**–更好地了解 microsoft 365 环境中的所有警报，包括来自 Microsoft 云应用安全性、OFFICE 365 Atp、azure AD、azure Atp 和 MICROSOFT Defender atp 的警报。 对 E3 和 E5 客户可用。  
 * **操作中心**-减少安全团队必须手动处理的警报量，使安全操作团队能够将重点放在更复杂的威胁和其他高价值计划上。
 * **报告**-获取更好地保护用户、设备、应用程序等所需的详细信息和信息。
-* **安全分数**–通过 Microsoft 安全分数改善总体安全状态。 此页面提供了已启用的不同安全特性和功能的汇总摘要，并提供了针对要改进的区域的建议。
+* **安全功能分数** - 通过 Microsoft 安全功能分数改善整体安全状态。 此页面提供了已启用的不同安全特性和功能的汇总摘要，并提供了针对要改进的区域的建议。
 * **高级搜寻**-主动搜索 Microsoft 365 组织中的恶意软件、可疑文件和活动。
-* **分类**–通过添加标签以对文档、电子邮件、文档、网站等进行分类，帮助保护数据丢失。 当应用标签（自动或用户）时，内容或网站将根据您选择的设置受到保护。 例如，您可以创建用于加密文件、添加内容标记以及控制用户对特定网站的访问权限的标签。
-* **策略**-设置管理设备、防止威胁以及接收有关你的组织中的各种活动的警报的策略。
-* **权限**-管理组织中的哪些用户有权访问 Microsoft 365 安全中心以查看内容和执行任务。 您还可以在 Azure AD 门户中分配 Microsoft 365 权限。
+* **分类** - 通过添加标签来对文档、电子邮件、文档、网站等进行分类，以防止数据丢失。 当应用标签（自动或用户）时，内容或网站将根据您选择的设置受到保护。 例如，可以创建标签，用于加密文件、添加内容标记和控制用户对特定网站的访问权限。
+* **策略** - 设置策略来管理设备、防范威胁，并接收有关组织中各种活动的警报。
+* **权限** - 管理组织中有权访问 Microsoft 365 安全中心以查看内容和执行任务的人员。 还可以在 Azure AD 门户中分配 Microsoft 365 权限。
 
 ## <a name="learn-more"></a>了解详细信息 
 
@@ -60,6 +60,7 @@ Microsoft 365 安全中心包括：
 - 通过[事件](incident-queue.md)连接警报上的点
 - 使用[自动调查和修正](mtp-autoir.md)自动修正威胁
 - 使用 [Microsoft 安全分数](microsoft-secure-score.md)查看和改进安全状态 holistically
+- 查看网络上的[设备](device-profile.md)
 - [报告](monitoring-and-reporting.md)你的标识、数据、设备、应用程序和基础结构的状态
 - 主动查找影响您的电子邮件、数据、设备和帐户的入侵尝试和破坏性活动[的威胁](advanced-hunting-overview.md)
 - 通过威胁分析[了解最新的攻击活动](latest-attack-campaigns.md)和技术

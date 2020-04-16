@@ -2,11 +2,10 @@
 title: 将 Office 365 for business 用户升级到最新的 Office 客户端
 f1.keywords:
 - NOCSH
-ms.author: janellem
-author: janellem
-manager: eliree
+ms.author: kwekuako
+author: kwekuako
+manager: scotv
 audience: Admin
-ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 了解如何将用户升级到最新的 Office 客户端。
-ms.openlocfilehash: 3d9c92a5362889db69926552848ba4c71d7c4c42
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 18200184ed8d7eb15ee4eef3903ac9d8e08b9854
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360403"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521455"
 ---
 # <a name="upgrade-your-office-365-for-business-users-to-the-latest-office-client"></a>将 Office 365 for business 用户升级到最新的 Office 客户端
 
@@ -47,7 +46,7 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
 
  如果你不是管理员，并且拥有[office for 家庭](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans)产品，请参阅[如何升级 office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx)以获取有关升级旧版 office 的信息。
 
-## <a name="getting-ready-to-upgrade"></a>准备升级
+## <a name="get-ready-to-upgrade"></a>准备升级
 
 作为管理员，您可以控制组织中的 Office 用户可以安装的版本。 强烈建议您在组织中运行较早版本的 Office 的用户（如 Office 2010、Office 2013 或 Office 2016 升级到最新版本，以充分利用其安全性和生产率改进。
 
@@ -90,7 +89,7 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
 
  - 购买 Office 的单个一次性购买。 请参阅[Office &amp;家庭商业](https://products.office.com/home-and-business)[版或 office Professional](https://products.office.com/professional)
 
-     或
+     OR
 
  - 通过批量许可证购买 Office 的多个副本。 请参阅[可通过批量许可进行比较的套件](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)。
 

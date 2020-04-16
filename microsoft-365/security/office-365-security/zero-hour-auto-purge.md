@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小时自动清除（ZAP）是 Office 365 中的一种电子邮件保护功能，用于检测已传递到 Exchange Online 的垃圾邮件、恶意软件或网络钓鱼邮件。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: 7cce0c15d861ee43d5704f3fc4da5a6dccb9d5d4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895007"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516769"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>0小时自动清除（ZAP）-针对 Office 365 中的垃圾邮件和恶意软件进行保护
 
@@ -54,7 +54,7 @@ Office 365 每天实时更新垃圾邮件和恶意软件签名。 但是，用�
 
 - **添加 X 标头，将****带有文本的主题行预置**： ZAP 对邮件不执行任何操作。
 
-- **将邮件移动到垃圾邮件**： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则（默认情况下启用）。 有关详细信息，请参阅在[Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **将邮件移动到垃圾邮件**： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则（默认情况下启用）。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **将邮件重定向到电子邮件地址**，**删除邮件**，**隔离邮件**： ZAP 隔离邮件。 只有管理员可以查看和管理网络钓鱼隔离邮件。
 
@@ -68,7 +68,7 @@ Office 365 每天实时更新垃圾邮件和恶意软件签名。 但是，用�
 
 - **添加 X 标头，将****带有文本的主题行预置**： ZAP 对邮件不执行任何操作。
 
-- **将邮件移动到垃圾邮件**： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则（默认情况下启用）。 有关详细信息，请参阅在[Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **将邮件移动到垃圾邮件**： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则（默认情况下启用）。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **将邮件重定向到电子邮件地址**，**删除邮件**，**隔离邮件**： ZAP 隔离邮件。 最终用户可以查看和管理自己的垃圾邮件隔离邮件。
 
@@ -100,7 +100,7 @@ A：邮件流规则或阻止和允许组织设置优先。 将从 ZAP 中排除�
 
 ### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>问：如果邮件被移到另一个文件夹（例如收件箱规则），该怎么办？
 
-A：只要邮件尚未删除或移到 "垃圾邮件" 文件夹，ZAP 仍可正常工作。
+A：如果尚未删除邮件，或只要尚未应用相同或更强的操作，则 ZAP 仍可正常工作。 例如，如果网络钓鱼策略设置为 "隔离"，并且用户或管理员已经 junked 了该电子邮件，则隔离将执行操作以隔离该文件。
 
 ### <a name="q-does-zap-change-the-message-header"></a>问： ZAP 是否会更改邮件头？
 

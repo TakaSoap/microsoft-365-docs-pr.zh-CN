@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全 & 合规性中心在您的组织中创建和管理电子数据展示事例。 您可以向事例分配成员、将内容位置置于保留状态、运行与事例关联的内容搜索以及导出搜索结果。 您还可以为 Office 365 高级电子数据展示中的进一步分析准备事例数据。
-ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f6484fb43b1d117856ba78bb918289b28776b021
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894961"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521518"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全与合规中心管理电子数据展示事例
 
@@ -178,7 +178,7 @@ ms.locfileid: "42894961"
   
 6. Optional在 "**说明**" 框中，添加保留的说明。 
     
-7. 单击“下一步”****。
+7. 单击“**下一步**”。
     
 8. 选择要置于保留状态的内容位置。 您可以将邮箱、网站和公用文件夹置于保留状态。
     
@@ -194,7 +194,7 @@ ms.locfileid: "42894961"
     有关将 Microsoft 团队、Yammer 组和 Office 365 组置于保留状态的提示，请参阅[详细信息](#more-information)部分。 
     
     > [!NOTE]
-    > 在极少数情况下，某人的用户主体名称（UPN）发生更改时，其 OneDrive 帐户的 URL 也将更改以包含新的 UPN。 如果发生这种情况，您必须通过添加用户的新 OneDrive URL 并删除旧 URL 来修改保留项。 
+    > 在极少数情况下，某人的用户主体名称（UPN）发生更改时，其 OneDrive 帐户的 URL 也将更改以包含新的 UPN。 如果发生这种情况，您必须通过添加用户的新 OneDrive URL 并删除旧 URL 来修改保留项。 有关详细信息，请参阅[UPN 更改对 ONEDRIVE URL 的影响](https://docs.microsoft.com/onedrive/upn-changes)。
   
    c. **Exchange 公用文件夹。** 将切换开关![切换控件](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)移到 "**所有**位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 您不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 "**无**"。
     
@@ -270,7 +270,7 @@ ms.locfileid: "42894961"
     
     ![位置、保留位置](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **所有位置**-选择此选项可搜索组织中的所有内容位置。 选择此选项时，可以选择搜索所有 Exchange 邮箱（包括所有 Microsoft 团队的邮箱、Yammer 组和 Office 365 组）、所有 SharePoint 和 OneDrive for Business 网站（包括所有 Microsoft 的网站团队、Yammer 组和 Office 365 组）和所有公用文件夹。
+    - **所有位置**-选择此选项可搜索组织中的所有内容位置。 选择此选项时，可以选择搜索所有 Exchange 邮箱（包括所有 Microsoft 团队的邮箱、Yammer 组和 Office 365 组）、所有 SharePoint 和 OneDrive for Business 网站（包括所有 Microsoft 团队、Yammer 组和 Office 365 组的网站）和所有公用文件夹。
     
     - **所有处于保留状态的位置。** 选择此选项可搜索事例中已置于保留状态的所有内容位置。 如果事例包含多个保留，则选择此选项时，将搜索所有保留中的内容位置。 此外，如果内容位置放置在基于查询的保留中，则在此步骤中运行所创建的内容搜索时，将仅搜索保留项。 例如，如果用户在基于查询的案例保留中进行设置，以保留在特定日期之前已发送或创建的项目，则只会使用内容搜索的搜索条件搜索这些项目。 这是通过使用**and**运算符连接事例保留查询和内容搜索查询来实现的。 有关搜索事例内容的更多详细信息，请参阅本文末尾的 "[详细信息](#more-information)" 部分。 
     
@@ -367,7 +367,7 @@ ms.locfileid: "42894961"
     从与事例相关联的多个内容搜索导出结果的工作流与导出单个搜索的搜索结果相同。 有关分步说明，请参阅[导出内容搜索结果](export-search-results.md)。
     
     > [!NOTE]
-    > 从与事例相关联的多个搜索中导出搜索结果时，还可以选择启用重复数据删除，以便只导出电子邮件的一个副本，即使在中找到同一邮件的多个实例也是如此。在一个或多个搜索中搜索的邮箱。 有关重复数据删除和标识重复项目的详细信息，请参阅[电子数据展示搜索结果中的重复数据](de-duplication-in-ediscovery-search-results.md)消除。 
+    > 从与事例关联的多个搜索中导出搜索结果时，还可以选择启用重复数据删除，以便即使在一个或多个搜索中搜索到的邮箱中存在多个相同邮件的实例，也只导出电子邮件的一个副本。 有关重复数据删除和标识重复项目的详细信息，请参阅[电子数据展示搜索结果中的重复数据](de-duplication-in-ediscovery-search-results.md)消除。 
   
 8. 在开始导出后，单击 "**导出**" 选项卡以显示该事例的导出作业列表。 
     

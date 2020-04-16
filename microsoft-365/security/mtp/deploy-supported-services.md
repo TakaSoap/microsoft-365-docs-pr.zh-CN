@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857471"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521476"
 ---
 # <a name="deploy-supported-services"></a>部署支持的服务
 
@@ -42,8 +42,8 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 | ------ | ------ |
 | Microsoft Defender ATP | 围绕功能强大的行为传感器、云分析和威胁智能构建的 Endpoint protection 套件 |
 | Office 365 ATP | Office 365 中的应用和数据的高级保护，包括电子邮件和其他协作工具 |
-| Azure ATP | 使用关联的 Active Directory 信号防止高级威胁、已泄露身份和恶意预览体验 |
-| Microsoft 云应用安全 | 跨你的 Microsoft 和第三方云服务识别和 combats 威胁 |
+| Azure ATP | 使用关联的 Active Directory 信号防御高级威胁、已泄露身份和恶意预览体验 |
+| Microsoft Cloud App Security | 跨你的 Microsoft 和第三方云服务识别和打击威胁 |
 
 ## <a name="deployed-services-and-functionality"></a>部署的服务和功能
 当您部署更受支持的服务时，Microsoft 威胁防护可提供更好的可见性、关联和修正。
@@ -64,7 +64,7 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 | Microsoft Defender ATP | -终结点状态和原始事件<br />-终结点检测和警报，包括防病毒、EDR、攻击面减少<br />-有关在终结点上观测到的文件和其他实体的信息 | 点 |
 | Office 365 ATP | -邮件和邮箱状态以及原始事件<br />-电子邮件、附件和链接检测 | -邮箱<br />-Office 365 帐户 |
 | Azure ATP | -Active Directory 信号，包括身份验证事件<br />-与标识相关的行为检测 | 标识 |
-| Microsoft 云应用安全 | -Unsanctioned 云应用程序 & 服务的检测（隐藏它）<br />-将数据暴露给云应用<br />-与云应用程序关联的威胁活动 | 云应用 |
+| Microsoft Cloud App Security | -Unsanctioned 云应用和服务的检测（隐藏它）<br />-将数据暴露给云应用<br />-与云应用程序关联的威胁活动 | 云应用 |
 
 ## <a name="deploy-the-services"></a>部署服务
 部署每个服务通常需要预配到租户和一些初始配置。 请参阅下表了解每个服务的部署方式。
@@ -74,7 +74,7 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 | Microsoft Defender ATP | [Microsoft Defender ATP 部署指南](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *请参阅预配说明* |
 | Office 365 ATP | *无，使用 Office 365 预配* | [配置 ATP 策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [快速入门：创建 Azure ATP 实例](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *请参阅预配说明* |
-| Microsoft 云应用安全 | *无* | [快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Cloud App Security | *无* | [快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
 部署受支持的服务后，[打开 Microsoft 威胁防护](mtp-enable.md)。
 

@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43142679"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516805"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
@@ -65,7 +65,7 @@ Microsoft 托管桌面承担管理注册设备及其使用的 Microsoft 软件�
 
 
 ## <a name="need-more-details"></a>需要更多详细信息？
-有关 Microsoft 托管桌面的值（包括客户情景）的详细信息，请参阅[Microsoft 托管桌面](https://aka.ms/mmd)。 了解更多入门的更多方面是[路线图](https://aka.ms/AA6jiam)和可下载的单页[摘要](https://aka.ms/AA6ob3h)。 你可以在 Microsoft 托管桌面[博客](https://aka.ms/AA6l2dd)中找到最新的新闻。
+有关 Microsoft 托管桌面的值（包括客户情景）的详细信息，请参阅[Microsoft 托管桌面](https://aka.ms/mmd)。 若要开始更好地入门，请查看[路线图](https://aka.ms/AA6jiam)、 [Forrester 总经济影响案例研究](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)和可下载的单页[摘要](https://aka.ms/AA6ob3h)。 你可以在 Microsoft 托管桌面[博客](https://aka.ms/AA6l2dd)中找到最新的新闻。
 
 如果 Microsoft 托管桌面似乎适用于你的组织，则可以深入了解其他文档，这些文档详细说明了服务、如何准备您的组织以进行注册、如何开始使用服务以及后续操作，包括您和最终用户如何在需要时轻松获取帮助。 如果你已准备好参加主板，请首先联系你的[当地帐户团队](https://pages.email.office.com/contactmmd/)。
 
