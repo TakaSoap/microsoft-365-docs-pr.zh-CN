@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 365 合规性文档
-summary: 如果您的组织需要遵守法律或法规标准，请从这里开始了解 Microsoft 365 中的合规性。
+summary: 如果你的组织需要遵守法律或法规标准，请从此处开始了解 Microsoft 365 中的合规性。
 metadata:
   title: Microsoft 365 合规性文档
   description: Microsoft 365 合规性功能的文档
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: d6f24a93754c60227e668bb8d0ec42776a519dbc
   ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 02/27/2020
   ms.locfileid: "42322525"
@@ -52,15 +52,15 @@ landingContent:
       url: importing-pst-files-to-office-365.md
     - text: 第三方数据连接器
       url: archiving-third-party-data.md
-    - text: 数据管理报告
+    - text: 数据管理报表
       url: view-the-data-governance-reports.md
-- title: 管理内幕风险
+- title: 管理预览体验计划风险
   linkLists:
   - linkListType: overview
     links:
-    - text: 内幕风险管理
+    - text: 内部风险管理
       url: insider-risk-management.md
-    - text: 沟通合规性
+    - text: 通信合规性
       url: communication-compliance.md
     - text: 信息屏障
       url: information-barriers.md
@@ -78,11 +78,11 @@ landingContent:
       url: ediscovery-cases.md
     - text: 内容搜索
       url: search-for-content.md
-    - text: 数据调查（预览）
+    - text: 数据调查（预览版）
       url: overview-data-investigations.md
     - text: 审核
       url: search-the-audit-log-in-security-and-compliance.md
-- title: 合规性入门
+- title: 法规合规性入门
   linkLists:
   - linkListType: get-started
     links:
@@ -90,9 +90,9 @@ landingContent:
       url: compliance-score.md
     - text: GDPR 合规性行动计划
       url: gdpr-action-plan.md
-    - text: GDPR 的信息保护
+    - text: 针对 GDPR 的信息保护
       url: office-365-info-protection-for-gdpr-overview.md
-    - text: ISO 合规性操作计划
+    - text: ISO 合规性行动计划
       url: iso-action-plan.md
     - text: NIST 合规性行动计划
       url: nist-action-plan.md

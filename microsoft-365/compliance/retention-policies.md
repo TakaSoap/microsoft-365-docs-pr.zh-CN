@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
-ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
+ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43237639"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521508"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -261,13 +261,17 @@ ms.locfileid: "43237639"
 
 还可将保留策略应用于特定用户、Office 365 组或网站。为此，请先将相应位置的“**状态**”切换为“开”，再使用链接来添加或排除特定用户、Office 365 组或网站。 
   
-但请注意，包含或排除超过 1,000 个特定位置的保留策略存在以下限制：
+但请注意，当你配置包含或排除超过 1,000 个特定位置的保留策略时，存在以下限制：
   
-- 此类保留策略最多可包含 1,000 个邮箱和 100 个网站集。
-    
+- 保留策略的最大数量：
+    - 1,000 个邮箱
+    - 1,000 个 Office 365 组
+    - 1000 个用户的 Teams 私人聊天
+    - 100 个网站（OneDrive 或 SharePoint）
+
 - 租户最多可包含 10,000 个保留策略。
     
-尽管有这些限制，但需要明白的是，仍可应用组织范围策略或位置整体策略来克服这些限制。
+尽管存在这些限制，但可通过应用组织范围的策略或应用于整体位置的策略来避免这些限制。
   
 ### <a name="skype-locations"></a>Skype 位置
 

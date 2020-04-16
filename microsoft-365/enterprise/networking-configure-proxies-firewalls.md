@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置 Web 浏览器和边缘设备，以便流量绕过受信任的 Office 365 位置。
-ms.openlocfilehash: 71f62c5e245962f3514c49477e3cdeda17cb6397
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066680"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504075"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>第 4 步：配置流量旁路
 
@@ -54,6 +54,13 @@ Microsoft 建议：
 
 请注意，你只是绕过了针对 Microsoft 365“优化”和“允许”类别终结点的流量的正常代理和网络安全处理。所有其他常规 Internet 流量都将被代理，并受现有网络安全处理的约束。
 
+## <a name="optimizing-traffic-for-remote-workers-that-use-vpn-connections"></a>为使用 VPN 连接的远程工作人员优化流量
+
+远程工作人员通常使用虚拟专用网络 (VPN) 连接来访问组织 Intranet 上的资源。 传统的 VPN 连接会将所有流量（包括 Internet 流量）路由到组织 Intranet。 Internet 流量被路由到组织的边缘网络和数据包处理设备。 此流量会受到旅行和处理延迟的影响，这可能会大大降低性能并影响远程工作人员的工作效率。 
+
+拆分隧道是 VPN 连接在 Internet 上路由指定流量的功能，而不是通过 VPN 连接将其发送到 Intranet 的功能。 为了使远程工作人员能够获得关键 Microsoft 365 服务（例如，Teams、SharePoint Online 和 Exchange Online）的最佳性能，请配置拆分隧道 VPN 连接，以直接通过 Internet 将流量发送到“优化”类别的 Office 365 终结点。 
+
+有关详细信息，请参阅[使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)。
 
 作为临时检查点，可查看这一步的[退出条件](networking-exit-criteria.md#crit-networking-step4)。
 
