@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 4c66e2c398adfc67ec28661ed654ca891a846534
   ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 03/19/2020
   ms.locfileid: "42857317"
@@ -45,7 +45,7 @@ additionalContent:
     summary: 选择一个卡片，了解有关 Microsoft 365 的详细信息。
     items:
     - title: Microsoft 365 管理中心
-      summary: 为你的组织设置和管理 Office 365 和 Microsoft 365 服务。
+      summary: 为组织设置和管理 Office 365 和 Microsoft 365 服务。
       url: ./admin/admin-home.yml
     - title: Microsoft 365 商业版
       summary: 专为中小型企业设计。 使用最新版的 Windows 和 Office（如 Excel 和 Outlook）运营业务。 充分利用可扩展到所有业务设备的数据保护和安全性。
