@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: aac4cb43386577851d74e424d6435d0c15762bab
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612602"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528601"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -45,9 +45,11 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 下表概括了每个计划中包含的内容。
 
-|Office 365 ATP 计划 1 |Office 365 ATP 计划 2|
-|---------|---------|
-|配置、保护和检测功能：<br/>- [安全附件](atp-safe-attachments.md)<br/>- [安全链接](atp-safe-links.md)<br/>- [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>- [高级反钓鱼保护](atp-anti-phishing.md)<br/>- [实时检测](threat-explorer.md)     |Office 365 ATP 计划 1 功能<br/>--- + ---<br/>自动化、调查、补救措施和教育功能：<br/>- [威胁跟踪器](threat-trackers.md)<br/>- [威胁资源管理器](threat-explorer.md)<br/>- [自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [攻击模拟器](attack-simulator.md)|
+|||
+|---|---|
+|**Office 365 ATP 计划 1**|**Office 365 ATP 计划 2**|
+|配置、保护和检测功能：<br/>• [安全附件](atp-safe-attachments.md)<br/>• [安全链接](atp-safe-links.md)<br/>• [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>• [ATP 防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [实时检测](threat-explorer.md)|Office 365 ATP 计划 1 功能<br/>--- + ---<br/>自动化、调查、补救措施和教育功能：<br/>• [威胁跟踪器](threat-trackers.md)<br/>• [威胁资源管理器](threat-explorer.md)<br/>• [自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [攻击模拟器](attack-simulator.md)|
+|
 
 - Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中包含 Office 365 ATP 计划 2。
 
@@ -72,7 +74,7 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 - **[用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)**：当用户协作和共享文件时，可通过识别和阻止工作组网站和文档库中的恶意文件来保护你的组织。 有关详细信息，请参阅[开启适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
 
-- **[ATP 防钓鱼防护](atp-anti-phishing.md)**：检测模拟用户和自定义域的尝试。 它应用机器学习模型和高级模仿检测算法，防止钓鱼攻击。 若要了解详细信息，请参阅[设置 Office 365 ATP 防钓鱼和防钓鱼策略](set-up-anti-phishing-policies.md)。
+- **[ATP 防钓鱼防护](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**：检测模拟用户和内部或自定义域的尝试。 它应用机器学习模型和高级模仿检测算法，防止钓鱼攻击。 若要了解详细信息，请参阅[在 Office 365 中配置 ATP 防钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
 ## <a name="view-office-365-atp-reports"></a>查看 Office 365 ATP 报告
 

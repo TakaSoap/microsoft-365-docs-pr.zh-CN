@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: 29e9c0ea6e7c63ff8b90057b2c88aafd834ec4dc
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: ca6b3a76efcc25ab19b05bf841e506c6a5aab375
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105669"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540829"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -155,12 +155,15 @@ ms.locfileid: "43105669"
 分配权限时，可以选择：
 
 - 组织中的任何人（所有租户成员）。此设置不包括来宾帐户。
-- 所有经过身份验证的用户。 选择前，请确保你了解此设置的相关[要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
-- 任何特定用户或启用了电子邮件的安全组、通讯组、Office 365 组或动态通讯组。 
-- 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com**或 **outlook.com**。
 
-> [!NOTE]
-> 如果从使用 Azure AD 的组织中指定一个域，则无法将访问权限局限于该特定域。 转而对于拥有你指定的域名的租户来说，会自动包含 Azure AD 中已经过验证的所有域。
+- 所有经过身份验证的用户。 选择前，请确保你了解此设置的相关[要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
+
+- Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、Office 365 组或[动态通讯组](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
+
+- 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com**或 **outlook.com**。
+    
+    > [!NOTE]
+    > 如果从使用 Azure AD 的组织中指定一个域，则无法将访问权限局限于该特定域。 转而对于拥有你指定的域名的租户来说，会自动包含 Azure AD 中已经过验证的所有域。
 
 选择所有租户成员或浏览目录时，用户或组必须具有电子邮件地址。
 
