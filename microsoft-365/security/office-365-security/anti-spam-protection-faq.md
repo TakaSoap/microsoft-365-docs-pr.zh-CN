@@ -1,11 +1,10 @@
 ---
-title: Office 365 中的反垃圾邮件保护常见问题解答
+title: 反垃圾邮件保护常见问题解答
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,15 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: 本主题提供了有关反垃圾邮件保护的常见问题和解答。 解答适用于 Microsoft Exchange Online 和 Exchange Online Protection (EOP) 客户。
-ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: 有关 Exchange Online 和独立 Exchange Online Protection （EOP）中的反垃圾邮件保护的管理员常见问题和解答。
+ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033490"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528309"
 ---
-# <a name="anti-spam-protection-in-office-365-faq"></a>Office 365 中的反垃圾邮件保护常见问题解答
+# <a name="anti-spam-protection-faq-in-office-365"></a>Office 365 中的反垃圾邮件保护常见问题解答
 
 本主题提供了有关在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）客户中具有邮箱的 Office 365 客户的反垃圾邮件保护的常见问题和解答。
 
@@ -31,14 +30,16 @@ ms.locfileid: "43033490"
 
 有关反恶意软件保护的问题和解答，请参阅[反恶意软件保护常见问题解答](anti-malware-protection-faq-eop.md)。
 
+有关反欺骗保护的问题和解答，请参阅[反欺骗保护常见问题解答](anti-spoofing-protection-faq.md)。
+
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>增长率. 默认情况下，检测到垃圾邮件会发生什么情况？
 
-A. **对于入站邮件：** 大多数垃圾邮件是通过连接筛选删除的，后者基于源电子邮件服务器的 IP 地址。 反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）将邮件作为垃圾邮件、批量或网络钓鱼检查和分类。 默认情况下，归为垃圾邮件或批量的邮件将被传递到收件人的 "垃圾邮件" 文件夹中，而分类为 "仿冒" 的邮件将被隔离。 您可以修改默认反垃圾邮件策略（适用于所有收件人），也可以为特定用户组创建具有更严格设置的自定义反垃圾邮件策略（例如，您可以隔离发送给行政主管的垃圾邮件）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)和[建议的反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+A. **对于入站邮件**：大多数垃圾邮件是通过连接筛选（基于源电子邮件服务器的 IP 地址）删除的。 反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）将邮件作为垃圾邮件、批量或网络钓鱼检查和分类。 默认情况下，归为垃圾邮件或批量的邮件将被传递到收件人的 "垃圾邮件" 文件夹中，而分类为 "仿冒" 的邮件将被隔离。 您可以修改默认反垃圾邮件策略（适用于所有收件人），也可以为特定用户组创建具有更严格设置的自定义反垃圾邮件策略（例如，您可以隔离发送给行政主管的垃圾邮件）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)和[建议的反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
 > [!IMPORTANT]
-> 在 EOP 保护本地邮箱的混合部署中，需要在内部部署 Exchange 组织中配置两个 Exchange 邮件流规则（也称为传输规则），以检测添加到邮件中的 EOP 垃圾邮件筛选标头。 有关详细信息，请参阅[Configure 独立 EOP 以将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+> 在 EOP 保护本地邮箱的混合部署中，需要在内部部署 Exchange 组织中配置两个 Exchange 邮件流规则（也称为传输规则），以检测添加到邮件中的 EOP 垃圾邮件筛选标头。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
- **对于出站邮件：** 邮件通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)路由，或在未送达报告（也称为 "NDR" 或 "退回邮件"）中返回给发件人。 有关出站垃圾邮件保护的详细信息，请参阅[Office 365 中的出站垃圾邮件控件](outbound-spam-controls.md)。
+ **对于出站邮件**：邮件通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)路由，或在未送达报告（也称为 "NDR" 或 "退回邮件"）中返回给发件人。 有关出站垃圾邮件保护的详细信息，请参阅[Office 365 中的出站垃圾邮件控件](outbound-spam-controls.md)。
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>增长率. 什么是零天垃圾邮件变种以及服务如何处理？
 

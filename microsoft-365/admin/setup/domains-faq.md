@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 通过在 FAQ 中查找问题的答案，了解有关 Office 365 中的域的详细信息。
 ms.custom: okr_smb
-ms.openlocfilehash: 5579cacaa789ca91d68616ffb89e37586f6a062f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212193"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540863"
 ---
 # <a name="domains-faq"></a>关于域的常见问题
 
@@ -106,12 +106,24 @@ ms.locfileid: "43212193"
 请注意， *Whois*查询会将作为通配符的 Office 365 购买的域注册器显示为 "中西部域" LLC。 但是，应仅与 Office 365 购买域联系，以了解有关 office 365 的事宜。
   
 按照以下步骤获取 Office 365 中的代码，然后转到其他域注册机构的网站以设置将您的域名转移到该注册器。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
-    
-    如果使用的是 Office 365 德国，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。 
-    
-    如果您正在使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 "管理中心" 中，转到 "**设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>" 页。
+
+::: moniker-end
     
 2. 在 "**域**" 页上，选择要转移到其他域注册机构的 Office 365 域，然后选择 "**域传输** > **启用域传输**"。
        
@@ -136,12 +148,24 @@ ms.locfileid: "43212193"
 2. 在注册器网站上查找您更新 nameserver 记录的区域，并更新名称服务器以指向您的域的 DNS 主机。 （DNS 主机通常是域注册机构。）
     
 3. 按照链接转到域安装向导：
-    
+
+::: moniker range="o365-worldwide"
+
 4. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
-    
-    如果使用的是 Office 365 德国，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。 
-    
-    如果您正在使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+4. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+4. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+
+::: moniker-end
     
 5. 在 "**域**" 页上，选择要切换的域，然后选择 " **DNS 管理**"。
     
@@ -153,12 +177,24 @@ ms.locfileid: "43212193"
     
 
 ### <a name="change-dns-management-to-office-365"></a>将 DNS 管理更改为 Office 365
-  
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
-    
-    如果使用的是 Office 365 德国，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。 
-    
-    如果您正在使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+
+::: moniker range="o365-worldwide"
+
+1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+
+::: moniker-end
     
 2. 在 "**域**" 页上，选择要切换的域，然后选择 " **DNS 管理**"。
     
@@ -221,12 +257,24 @@ ms.locfileid: "43212193"
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>如何设置或更改 Office 365 中的默认域？
 
 您必须至少有一个添加到 Office 365 的自定义域，然后才能选择默认域。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
-    
-    如果使用的是 Office 365 德国，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。 
-    
-    如果您正在使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+
+::: moniker-end
     
 2. 在 "**域**" 页上，选择要将其设置为新电子邮件地址的默认域的域。 
     

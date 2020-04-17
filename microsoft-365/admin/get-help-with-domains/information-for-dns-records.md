@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: '了解如何查找创建适用于 Office 365 的 DNS 记录所需的值/信息。 '
 ms.custom: okr_smb
-ms.openlocfilehash: 2490532894ef00bab5de3f406b0c104529423382
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210376"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540875"
 ---
 # <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>收集创建 Office 365 DNS 记录所需的信息
 
@@ -35,17 +35,21 @@ ms.locfileid: "43210376"
   
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>步骤1：查找 TXT 记录值并验证
 
+::: moniker range="o365-worldwide"
+
 1. 在 Microsoft 365 管理中心，转到 "**安装** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+
+::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。
+1. 在管理中心中，转到 "**安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>" 页。
+1. 在管理中心中，转到 "**安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>" 页。
 
 ::: moniker-end
     
@@ -63,17 +67,21 @@ ms.locfileid: "43210376"
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>步骤2：查找电子邮件和其他的 MX 记录值
 
+::: moniker range="o365-worldwide"
+
 1. 在 Microsoft 365 管理中心，转到 "**安装** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+
+::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。
+1. 在管理中心中，转到 "**安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>" 页。
+1. 在管理中心中，转到 "**安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>" 页。
 
 ::: moniker-end
     

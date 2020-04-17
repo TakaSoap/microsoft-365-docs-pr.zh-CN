@@ -2,10 +2,10 @@
 title: Office 365 中的防钓鱼保护
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,36 +16,50 @@ ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
 ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
-description: 默认情况下，Office 365 提供各种针对网络钓鱼攻击的防护，也可以通过其他服务（如 ATP 反网络钓鱼）进行保护。 本主题介绍可用于了解和实现 Office 365 中的反钓鱼选项和策略的联机资源。
-ms.openlocfilehash: 254bc3f5b1dc07da9dce3012345477605fb738c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 默认情况下，office 365 提供各种针对网络钓鱼攻击的防护，也可以通过 Office 365 高级威胁防护（ATP）中的其他功能进行防护。 本主题介绍可用于了解和实现 Office 365 中的反钓鱼选项和策略的联机资源。
+ms.openlocfilehash: 321d983f422bf4d231a772ca445bb74a7150a56e
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599899"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537421"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Office 365 中的防钓鱼保护
 
-默认情况下，Office 365 提供各种针对网络钓鱼攻击的防护，也可以通过其他服务（如 ATP 反网络钓鱼）进行保护。 本主题介绍可用于了解和实现 Office 365 中的反钓鱼选项和策略的联机资源。
+*网络钓鱼*一种电子邮件攻击，试图窃取看似来自合法或受信任发件人的邮件中的敏感信息。 存在特定类别的网络钓鱼。 例如：
 
-## <a name="protect-your-organization-against-phishing-attacks-in-office-365"></a>保护组织免受 Office 365 中的网络钓鱼攻击
+- **Spear 网络钓鱼**使用专门为目标收件人量身定制的专门的自定义内容（通常是攻击者在收件人的侦测之后）。
 
-作为 Office 365 管理员，请使用这些资源了解如何使用 Office 365 防御基于模拟的网络钓鱼攻击，并帮助您对最终用户进行培训，使其不会导致 prey 恶意网络钓鱼攻击。
+- **Whaling**在组织内的主管或其他高价值目标中定向，以实现最大效果。
 
-在对 Office 365 配置进行任何更改之前，请确保 Office 365 必须提供的最新版本是最新版本。 [访问 Microsoft 安全&amp;安全中心](https://www.microsoft.com/security/default.aspx)。
+- **商业电子邮件泄露（BEC）** 使用伪造的受信任发件人（金融专员、客户、受信任合作伙伴等），努力哄骗收件人批准付款、转让资金或公开客户数据。
 
-为保护您的环境，您可以执行的最重要的事情是向用户介绍网络钓鱼攻击的危险和警告迹象。 首先，让你的用户熟悉[网络仿冒骗术和其他形式的在线欺诈](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)中的信息。
+- 加密您的数据和要求付款以对其进行解密的**勒索软件**几乎总是会开始在网络钓鱼邮件中。 反网络钓鱼防护无法帮助您解密加密文件，但可以帮助检测与勒索软件活动相关联的初始网络钓鱼邮件。 有关从勒索软件攻击中恢复的详细信息，请参阅[从 Office 365 恢复勒索软件攻击](recover-from-ransomware.md)。
 
-对于使用 Office 企业版 E5 的 Office 365 组织，可以在安全&amp;合规性中心中使用 ATP 反网络钓鱼。 ATP 反网络钓鱼对传入的邮件应用一组计算机学习模式以及模拟检测算法，以提供对商品和 spear 网络钓鱼攻击的保护。 ATP 反网络钓鱼根据 Office 365 全局或安全管理员设置的策略来保护您的组织。 若要了解详细信息，请参阅 " [office 365 中的 ATP 反网络钓鱼功能](atp-anti-phishing.md)" 和["在 Office 365 中设置反网络钓鱼策略](set-up-anti-phishing-policies.md)"。
+随着攻击的复杂程度的增加，训练有素的用户更难识别复杂的网络钓鱼邮件。 幸运的是，Exchange Online Protection （EOP）和 Office 365 高级威胁防护（ATP）中的其他功能可以提供帮助。
 
-有关默认情况下如何配置 Office 365 以保护您免受网络钓鱼攻击的更多详细信息，请参阅[Office 365 如何验证发件人：地址以防止仿冒](how-office-365-validates-the-from-address.md)。
+## <a name="anti-phishing-protection-in-eop"></a>EOP 中的反网络钓鱼保护
 
-## <a name="related-topics"></a>相关主题
+EOP （即，没有 ATP 的 Office 365 组织）包含的功能可以帮助您的组织防御网络钓鱼威胁：
 
-[Office 365 如何通过验证发件人地址来防钓鱼](how-office-365-validates-the-from-address.md)
+- **欺骗情报**：查看来自内部和外部域中的发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
-[保护自己免受网络仿冒骗术和其他形式的在线欺诈](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
+- **默认的反网络钓鱼策略**：启用或禁用欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，并指定阻止的欺骗性发件人的操作（移动到 "垃圾邮件" 文件夹或隔离）。 有关详细信息，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
-[Office 365 高级威胁防护](office-365-atp.md)
+- **隐式电子邮件身份验证**： EOP 增强了入站电子邮件（[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和[DMARC](use-dmarc-to-validate-email.md)）的标准电子邮件身份验证检查，以及发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技术以帮助标识伪造的发件人 有关详细信息，请参阅[Office 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
 
-[Office 365 中的 ATP 防钓鱼功能](atp-anti-phishing.md)
+## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Office 365 ATP 中的其他反网络钓鱼保护
+
+Office 365 ATP 包含更高级和更高级的反网络钓鱼功能：
+
+- **ATP 反网络钓鱼策略**：创建新的自定义策略、配置反模拟设置（保护用户和域的模拟）、邮箱智能设置以及可调整的高级网络钓鱼阈值。 有关详细信息，请参阅[在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。 有关反网络钓鱼策略和 ATP 反网络钓鱼策略之间的差异的详细信息，请参阅[Office 365 中的反网络钓鱼策略](set-up-anti-phishing-policies.md)。
+
+- "**活动" 视图**：机器学习和其他试探法可识别和分析针对整个服务和组织的协调的网络钓鱼攻击所涉及的邮件。 有关详细信息，请参阅[Office 365 ATP 中的市场活动视图](campaigns.md)。
+
+- **攻击模拟器**：管理员可以创建假冒的网络钓鱼邮件，并将其作为教育工具发送给内部用户。 有关详细信息，请参阅[Office 365 ATP 中的攻击模拟器](attack-simulator.md)。
+
+## <a name="other-anti-phishing-resources"></a>其他反网络钓鱼资源
+
+- 对于最终用户：[保护自己免受网络仿冒骗术和其他形式的在线欺诈](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)。
+
+- [Office 365 如何验证发件人地址以防止仿冒](how-office-365-validates-the-from-address.md)。

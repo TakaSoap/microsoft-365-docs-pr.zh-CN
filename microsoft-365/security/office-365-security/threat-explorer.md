@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: c854021eaf6c5d252f36961fde427c5532ba1ef6
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284245"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537505"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -186,7 +186,7 @@ ms.locfileid: "43284245"
 
    ![用户报告的网络钓鱼](../../media/EmailUserReportedReportType.png)
 
-报告将刷新，以显示组织中的人员已报告为网络钓鱼尝试的电子邮件的相关数据。 您可以使用此信息进行进一步分析，如有必要，调整您的[ATP 反网络钓鱼策略](set-up-anti-phishing-policies.md)。
+报告将刷新，以显示组织中的人员已报告为网络钓鱼尝试的电子邮件的相关数据。 您可以使用此信息进行进一步分析，如有必要，调整您的[ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
 ## <a name="start-automated-investigation-and-response"></a>启动自动调查和响应
 

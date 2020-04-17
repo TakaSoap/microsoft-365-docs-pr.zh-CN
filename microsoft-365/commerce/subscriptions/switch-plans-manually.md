@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态，手动切换 Office 365 for business 订阅。
-ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142099"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540839"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>手动切换 Office 365 商业版计划
 
@@ -64,11 +64,23 @@ ms.locfileid: "43142099"
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤3：检查新的订阅和许可证
 
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
 
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
+::: moniker-end
 
-    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>页。
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+
+::: moniker-end
 
 2. **验证这两个订阅是否都已列出并处于活动状态**
 
@@ -102,11 +114,23 @@ ms.locfileid: "43142099"
 
 ### <a name="reassign-a-license-for-one-user"></a>为一个用户重新分配许可证
 
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>页。
+::: moniker-end
 
-    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>页。
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
 
 2. 在 "**活动用户**" 页上，选中要向其分配许可证的用户的名称旁边的框。
 
@@ -125,11 +149,23 @@ ms.locfileid: "43142099"
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次为多个用户重新分配许可证
 
+::: moniker range="o365-worldwide"
+
 1. 在管理中心中，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>" 页面，或选择 **"用户** \> **活动用户**"。
 
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>页。
+::: moniker-end
 
-    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>页。
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到 "**用户** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>" 页。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
 
 2. 选中要为其替换现有许可证的用户的姓名旁边的框。
 

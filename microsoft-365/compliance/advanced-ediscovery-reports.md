@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 387709ebdd84968d2b93992f6b92ef1548117569
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079943"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528355"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>高级电子数据展示报告（预览）
 
@@ -35,7 +35,7 @@ ms.locfileid: "42079943"
 
 - 在我的组织中有多少个活动和已关闭的事例？
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要访问高级电子数据展示报告，您必须是电子数据展示管理员角色组的成员。 作为此角色组的成员，将为你提供查看、筛选和导出报告中的数据所需的权限。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 

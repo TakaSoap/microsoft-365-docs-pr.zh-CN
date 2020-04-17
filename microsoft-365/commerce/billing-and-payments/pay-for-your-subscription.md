@@ -24,12 +24,12 @@ description: 了解可用于支付 Office 365 商业版订阅付费的付款选�
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633710"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540899"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>支付 Office 365 商业版订阅费用
 
@@ -275,9 +275,23 @@ ms.locfileid: "42633710"
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>以电子邮件的方式接收帐单
 
+::: moniker range="o365-worldwide"
+
 1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
 
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">帐单通知</a>页。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">账单通知</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">账单通知</a>”页面。
+
+::: moniker-end
 
 2. 在“**以电子邮件附件形式接收帐单？**”下，将开关切换到“**开**”。
 

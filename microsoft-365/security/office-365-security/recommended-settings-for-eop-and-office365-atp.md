@@ -1,5 +1,5 @@
 ---
-title: Microsoft for EOP and Office 365 的建议和 Office ATP 安全设置、建议、发件人策略框架、基于域的邮件报告和符合性、域密钥识别的邮件、步骤、工作方式、安全基准和 EOP 的基准ATP 的基线，设置 ATP，设置 EOP，配置 ATP，配置 EOP，安全配置
+title: Microsoft for EOP and Office 365 的相关建议和 Office ATP 安全设置、建议、发件人策略框架、基于域的邮件报告和符合性、域密钥识别的邮件、步骤、工作原理、设置 ATP、设置 EOP、配置 ATP、配置 EOP、安全配置
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1f20c8c09f3e690cc65e494ec6a372c95ac7171b
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032848"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537433"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -30,7 +30,7 @@ ms.locfileid: "43032848"
 尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Office 365 ATP 中有两个安全级别：**标准**和**严格**。 每个客户的环境和需求各不相同，但我们认为这些级别的邮件筛选配置将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
 
 > [!IMPORTANT]
-> 需要在邮箱上启用垃圾邮件规则，以便筛选正常工作。 默认情况下已启用，但如果筛选似乎不起作用，则应进行检查。 有关详细信息，请参阅在[Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+> 需要在邮箱上启用垃圾邮件规则，以便筛选正常工作。 默认情况下已启用，但如果筛选似乎不起作用，则应进行检查。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 本主题介绍了这些 Microsoft 推荐的设置，以帮助保护 Office 365 用户。
 
@@ -57,7 +57,7 @@ ms.locfileid: "43032848"
 |隔离保留期 <br/><br/> _QuarantineRetentionPeriod_|30 天|30 天||
 |**安全提示** <br/><br/> _InlineSafetyTipsEnabled_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |允许的发件人 <br/><br/> _AllowedSenders_|无|无||
-|允许的发件人域 <br/><br/> _AllowedSenderDomains_|无|无|不需要将您拥有的域（也称为 "_接受的域_"）添加到允许的发件人列表中。 事实上，它被认为是高风险，因为它会给不良参与者带来机会，以向您发送邮件，否则将被筛选掉。在 "**反垃圾邮件设置**" 页上的安全性 & 合规性中心中使用[欺骗智能](learn-about-spoof-intelligence.md)，以查看所有哄骗的发件人是组织中的域，还是哄骗外部域。|
+|允许的发件人域 <br/><br/> _AllowedSenderDomains_|无|无|不需要将您拥有的域（也称为 "_接受的域_"）添加到允许的发件人列表中。 事实上，它被认为是高风险，因为它会给不良参与者带来机会，以向您发送邮件，否则将被筛选掉。在 "**反垃圾邮件设置**" 页上的安全性 & 合规性中心中使用[欺骗智能](learn-about-spoof-intelligence.md)，以查看在组织的电子邮件域或外部域中的欺骗发件人电子邮件地址中的所有人都是哄骗发件人的电子邮件地址。|
 |阻止的发件人 <br/><br/> _BlockedSenders_|无|无||
 |阻止的发件人域 <br/><br/> _BlockedSenderDomains_|无|无||
 |**启用最终用户垃圾邮件通知**   选中此复选框以启用此策略的最终用户垃圾邮件通知。 <br/><br/> _EnableEndUserSpamNotifications_|已启用 <br/><br/> `$true`|已启用 <br/><br/> `$true`||
@@ -118,13 +118,17 @@ ms.locfileid: "43032848"
 |**通知外部发件人**未送达的邮件 <br/><br/> _EnableExternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
 |
 
-### <a name="eop-anti-phishing-policy-settings"></a>EOP 反网络钓鱼策略设置
+### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 默认的反网络钓鱼策略设置
 
-|安全功能名称|标准|全|评论|
-|---------|---------|---------|---------|
-|启用反欺骗保护|打开|打开||
-|启用未经身份验证的发件人（标记）|打开|打开||
-|如果电子邮件由不允许欺骗您的域的人发送|将邮件移到收件人的 "垃圾邮件" 文件夹|隔离邮件||
+只能在使用 Exchange Online 邮箱的 Office 365 组织中配置这些设置。 若要配置这些设置，请参阅[在 EOP 中配置默认反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
+
+|||||
+|---|---|---|---|
+|**安全功能名称**|**标准**|**全**|**Comment**|
+|**启用反欺骗保护** <br/><br/> _EnableAntispoofEnforcement_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
+|**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|将问号（？）添加到 Outlook 中的发件人的照片中，以查找未识别的欺骗性发件人。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。|
+|**如果电子邮件由不允许欺骗您的域的人发送** <br/><br/> _AuthenticationFailAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**隔离邮件** <br/><br/> `Quarantine`|这适用于[哄骗智能](learn-about-spoof-intelligence.md)中阻止的发件人。|
+|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Office 365 高级威胁防护安全
 
@@ -139,35 +143,47 @@ Office 365 ATP 包括安全附件和安全链接策略，以防止电子邮件�
 
 ### <a name="office-atp-anti-phishing-policy-settings"></a>Office ATP 反网络钓鱼策略设置
 
-EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包含更多的功能和控制，可帮助预防、检测和补救攻击。
+EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包含更多的功能和控制，可帮助预防、检测和补救攻击。 若要创建和配置这些策略，请参阅[在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
-|模拟安全功能名称|标准|全|评论|
-|---------|---------|---------|---------|
-|（编辑模拟策略）添加要保护的用户|打开|打开|取决于您的组织，但我们建议在关键角色中添加用户。 在内部，这些可能是 CEO、CFO 和其他高级领导者。 在外部，这些可以包括理事会成员或董事会。|
-|（编辑模拟策略）自动包括我自己的域|打开|打开||
-|（编辑模拟策略）包含自定义域|打开|打开|取决于您的组织，但我们建议添加与您不拥有的大多数进行交互的域。|
-|如果由指定的模拟用户发送电子邮件|隔离邮件|隔离邮件||
-|如果你指定的模拟域发送了电子邮件|隔离邮件|隔离邮件||
-|为模拟用户显示提示|打开|打开||
-|显示模拟域的提示|打开|打开||
-|显示不正常字符的提示|打开|打开||
-|启用邮箱智能|打开|打开||
-|启用基于邮箱智能的模拟保护|打开|打开||
-|如果由邮箱智能保护的模拟用户发送电子邮件|将邮件移到收件人的 "垃圾邮件" 文件夹|隔离邮件||
-|（编辑模拟策略）添加受信任的发件人和域|无|无|取决于您的组织，但我们建议您添加由于仅模拟而不是其他筛选器而错误地将其标记为网络钓鱼的用户或域。|
+#### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的模拟设置
 
-|欺骗安全功能名称|标准|全|评论|
-|---------|---------|---------|---------|
-|启用反欺骗保护|打开|打开||
-|启用未经身份验证的发件人（标记）|打开|打开||
-|如果电子邮件由不允许欺骗您的域的人发送|将邮件移到收件人的 "垃圾邮件" 文件夹|隔离邮件||
-|EnableSuspiciousSafetyTip|False|True|此设置仅在 PowerShell 中可用|
-|TreatSoftPassAsAuthenticated|True|False|此设置仅在 PowerShell 中可用|
+|||||
+|---|---|---|---|
+|**安全功能名称**|**标准**|**全**|**Comment**|
+|受保护的用户：**添加要保护的用户** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|打开 <br/><br/> `$true` <br/><br/> \<用户列表\>|打开 <br/><br/> `$true` <br/><br/> \<用户列表\>|取决于您的组织，但我们建议在关键角色中添加用户。 在内部，这些可能是 CEO、CFO 和其他高级领导者。 在外部，这些可以包括理事会成员或董事会。|
+|受保护的域：**自动包括我拥有的域** <br/><br/> _EnableOrganizationDomainsProtection_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
+|受保护的域：**包含自定义域** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|打开 <br/><br/> `$true` <br/><br/> \<域列表\>|打开 <br/><br/> `$true` <br/><br/> \<域列表\>|取决于您的组织，但我们建议添加经常与您不拥有的域进行交互的域。|
+|受保护的用户：**如果模拟用户发送电子邮件** <br/><br/> _TargetedUserProtectionAction_|**隔离邮件** <br/><br/> `Quarantine`|**隔离邮件** <br/><br/> `Quarantine`||
+|受保护的域：**如果模拟域发送电子邮件** <br/><br/> _TargetedUserProtectionAction_|**隔离邮件** <br/><br/> `Quarantine`|**隔离邮件** <br/><br/> `Quarantine`||
+|**为模拟用户显示提示** <br/><br/> _EnableSimilarUsersSafetyTips_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
+|**显示模拟域的提示** <br/><br/> _EnableSimilarDomainsSafetyTips_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
+|**显示不正常字符的提示** <br/><br/> _EnableUnusualCharactersSafetyTips_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
+|**是否启用邮箱智能？** <br/><br/> _EnableMailboxIntelligence_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
+|**是否启用基于邮箱智能的模拟保护？** <br/><br/> _EnableMailboxIntelligenceProtection_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
+|**如果由邮箱智能保护的模拟用户发送电子邮件** <br/><br/> _MailboxIntelligenceProtectionAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**隔离邮件** <br/><br/> `Quarantine`||
+|**受信任的发件人** <br/><br/> _ExcludedSenders_|无|无|取决于您的组织，但我们建议添加由于仅模拟而不是其他筛选器而将错误标记为网络钓鱼的用户。|
+|**受信任域** <br/><br/> _ExcludedDomains_|无|无|取决于您的组织，但我们建议添加一些域，这些域因仅模拟而不是其他筛选器而被错误地标记为网络钓鱼。|
+|
 
+#### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的欺骗设置
 
-|高级设置安全功能名称|标准|全|评论|
-|---------|---------|---------|---------|
-|高级网络钓鱼阈值|2-主动|3-更主动||
+请注意，这些设置与[EOP 中的反垃圾邮件策略设置](#eop-anti-spam-policy-settings)中提供的设置相同。
+
+|||||
+|---|---|---|---|
+|**安全功能名称**|**标准**|**全**|**Comment**|
+|**启用反欺骗保护** <br/><br/> _EnableAntispoofEnforcement_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
+|**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|将问号（？）添加到 Outlook 中的发件人的照片中，以查找未识别的欺骗性发件人。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。|
+|**如果电子邮件由不允许欺骗您的域的人发送** <br/><br/> _AuthenticationFailAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**隔离邮件** <br/><br/> `Quarantine`|这适用于[哄骗智能](learn-about-spoof-intelligence.md)中阻止的发件人。|
+|
+
+#### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的高级设置
+
+|||||
+|---|---|---|---|
+|**安全功能名称**|**标准**|**全**|**Comment**|
+|**高级网络钓鱼阈值** <br/><br/> _PhishThresholdLevel_|**2-主动** <br/><br/> `2`|**3-更主动** <br/><br/> `3`||
+|
 
 ### <a name="safe-links-settings"></a>安全链接设置
 

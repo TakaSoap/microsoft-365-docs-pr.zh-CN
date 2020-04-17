@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: 了解如何解决与 Office 365 for business 订阅的许可证冲突。
-ms.openlocfilehash: 9dbd483b01566039cb227cd3d2f086c3f6e34be5
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212289"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540911"
 ---
 # <a name="resolve-license-conflicts-in-office-365-for-business"></a>解决 Office 365 商业版中的许可证冲突
 
@@ -33,11 +33,24 @@ ms.locfileid: "43212289"
   
 ## <a name="how-do-i-view-license-conflicts"></a>如何查看许可证冲突？
 
-1. 在管理中心，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
+::: moniker range="o365-worldwide"
 
-    如果使用的是 Office 365 德国，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>" 页。
+1. 在管理中心，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
 
-    如果你正在使用由世纪互联运营的 Office 365，请转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>" 页面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>" 页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>" 页面。
+
+::: moniker-end
+
 
 2. 检查" **状态**"列以查看冲突信息。 如果存在冲突，您将看到一条警告消息，指出一个或多个用户需要有效的许可证。
 

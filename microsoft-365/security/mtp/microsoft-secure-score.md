@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163894"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541091"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -168,6 +168,8 @@ Microsoft 安全分数将更新改进操作以支持[AZURE AD 中的安全默认
 - 发现有风险和不兼容的卷影 IT 应用程序
 - 查看权限 & 阻止连接到您的环境的有风险的 OAuth 应用程序
 - 在 SharePoint online 文档库中设置版本控制
+- 删除/阻止在过去30天内未使用的帐户
+- 指定少于5个全局管理员
 
 #### <a name="removed-not-scored-improvement-actions"></a>删除了 "未评分" 的改进操作
 

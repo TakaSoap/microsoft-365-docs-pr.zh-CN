@@ -17,12 +17,12 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: 了解如何从仪表板转到与安全&amp;合规中心中推荐的操作有关的见解。
-ms.openlocfilehash: 8f6a75e02f00cbc62e4907ea3a0ff54c72110a21
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52fc933133cee4b060a08516b64a46c1c24a13cb
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083141"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537493"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>演练 - 从仪表板到见解
 
@@ -42,7 +42,7 @@ ms.locfileid: "42083141"
     
 4. 在列表中选择一项将打开一个详细信息窗格，我们可以在其中看到其他信息，包括检测到的类似电子邮件。 （单击列表中的项目，并查看相关信息和建议。）<br>![选择项目时将打开一个详细信息窗格](../../media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-5. 请注意，在窗格顶部，可以选择将发件人添加到组织的允许发件人列表。 （不要选择 **"添加到 ' AllowedtoSpoof ' 发件人允许列表**"，直到您确定要执行此操作。 [了解有关欺骗智能的详细信息](learn-about-spoof-intelligence.md)。）<br>![您可以授权发件人](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. 请注意，在窗格顶部，可以选择将发件人添加到组织的允许发件人列表。 （不要选择 **"添加到 ' AllowedtoSpoof ' 发件人允许列表**"，直到您确定要执行此操作。 [在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。）<br>![您可以授权发件人](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
 通过这种方式，我们可以从仪表板移动到真知灼见和推荐的操作。
   
