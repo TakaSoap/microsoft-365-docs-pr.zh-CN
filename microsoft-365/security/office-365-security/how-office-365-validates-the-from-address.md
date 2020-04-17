@@ -1,11 +1,11 @@
 ---
-title: Office 365 如何验证发件人地址以防止仿冒
+title: Office 365 如何通过验证发件人地址来防止钓鱼
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,217 +16,115 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 为了帮助防止网络钓鱼，Office 365 和 Outlook.com 现在要求来自：地址的 RFC 合规性。
-ms.openlocfilehash: 6459faa22f29017568747b84bbd2935aad6763d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Lear：关于来自 Office 365 中的入站邮件的电子邮件地址的要求。 截至2017年11月，服务现在需要符合 RFC 规范的地址，以帮助防止欺骗。
+ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599179"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528997"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a><span data-ttu-id="4c4b2-103">Office 365 如何验证发件人地址以防止仿冒</span><span class="sxs-lookup"><span data-stu-id="4c4b2-103">How Office 365 validates the From address to prevent phishing</span></span>
+# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a><span data-ttu-id="b4497-104">Office 365 如何通过验证发件人地址来防止钓鱼</span><span class="sxs-lookup"><span data-stu-id="b4497-104">How Office 365 validates the From address to prevent phishing</span></span>
 
-<span data-ttu-id="4c4b2-104">Office 365 和 Outlook.com 电子邮件帐户会收到越来越多的网络钓鱼攻击。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-104">Office 365 and Outlook.com email accounts receive an increasingly large number of phishing attacks.</span></span> <span data-ttu-id="4c4b2-105">一种可仿冒者使用的技术是发送其发件人：地址值不符合[RFC 5322](https://tools.ietf.org/html/rfc5322)的邮件。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-105">One technique phishers use is to send messages that have values for the From: address that are not compliant with [RFC 5322](https://tools.ietf.org/html/rfc5322).</span></span> <span data-ttu-id="4c4b2-106">"发件人：" 地址也称为 "5322.from 地址"。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-106">The From: address is also called the 5322.From address.</span></span> <span data-ttu-id="4c4b2-107">为了帮助阻止此类型的网络钓鱼，Office 365 和 Outlook.com 要求服务收到的邮件包括符合 RFC 的 From： address，如本文中所述。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-107">To help prevent this type of phishing, Office 365 and Outlook.com require messages received by the service to include an RFC-compliant From: address as described in this article.</span></span>
+<span data-ttu-id="b4497-105">Office 365 电子邮件帐户会收到越来越多的网络钓鱼攻击。</span><span class="sxs-lookup"><span data-stu-id="b4497-105">Office 365 email accounts receive an increasingly large number of phishing attacks.</span></span> <span data-ttu-id="b4497-106">除了使用[欺骗（伪造）发件人电子邮件地址](anti-spoofing-protection.md)之外，攻击者通常使用来自冲突 internet 标准的发件人地址中的值。</span><span class="sxs-lookup"><span data-stu-id="b4497-106">In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards.</span></span> <span data-ttu-id="b4497-107">为了帮助阻止这种类型的网络钓鱼，Office 365 和 Outlook.com 现在要求入站邮件包含符合 RFC 标准的发件人地址，如本主题中所述。</span><span class="sxs-lookup"><span data-stu-id="b4497-107">To help prevent this type of phishing, Office 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic.</span></span> <span data-ttu-id="b4497-108">此强制已于2017年11月启用。</span><span class="sxs-lookup"><span data-stu-id="b4497-108">This enforcement was enabled in November 2017.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="4c4b2-108">本文中的信息要求您对电子邮件地址的常规格式有一个基本的了解。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-108">The information in this article requires you to have a basic understanding of the general format of email addresses.</span></span> <span data-ttu-id="4c4b2-109">有关详细信息，请参阅[rfc 5322](https://tools.ietf.org/html/rfc5322) （尤其是3.2.3、3.4 和3.4.1）、 [Rfc 5321](https://tools.ietf.org/html/rfc5321)以及[rfc 3696](https://tools.ietf.org/html/rfc3696)。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-109">For more information, see [RFC 5322](https://tools.ietf.org/html/rfc5322) (particularly sections 3.2.3, 3.4, and 3.4.1), [RFC 5321](https://tools.ietf.org/html/rfc5321), as well as [RFC 3696](https://tools.ietf.org/html/rfc3696).</span></span> <span data-ttu-id="4c4b2-110">本文介绍了5322.from 地址的策略实施。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-110">This article is about policy enforcement for the 5322.From address.</span></span> <span data-ttu-id="4c4b2-111">本文不介绍5321的5321.Mailfrom 地址。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-111">This article is not about the 5321.MailFrom address.</span></span>
+<span data-ttu-id="b4497-109">**注意**：</span><span class="sxs-lookup"><span data-stu-id="b4497-109">**Notes**:</span></span>
 
-<span data-ttu-id="4c4b2-112">遗憾的是，在 Internet 上仍有一些旧的电子邮件服务器会继续发送 "合法" 电子邮件，这些邮件缺少或格式不正确的发件人：地址。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-112">Unfortunately, there are still some legacy email servers on the Internet that continue to send "legitimate" email messages that have a missing or malformed From: address.</span></span> <span data-ttu-id="4c4b2-113">如果您定期收到使用这些旧系统的组织发来的电子邮件，则鼓励这些组织更新其邮件服务器以遵守新式安全标准。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-113">If you regularly receive email from organizations that use these legacy systems, encourage those organizations to update their mail servers to comply with modern security standards.</span></span>
+- <span data-ttu-id="b4497-110">如果您定期收到来自地址格式不正确（如本主题所述）的组织发来的电子邮件，则鼓励这些组织更新其电子邮件服务器以遵守新式安全标准。</span><span class="sxs-lookup"><span data-stu-id="b4497-110">If you regularly receive email from organizations that have malformed From addresses as described in this topic, encourage these organizations to update their email servers to comply with modern security standards.</span></span>
 
-<span data-ttu-id="4c4b2-114">Microsoft 将开始在2017年11月9日开始推出本文所述策略的实施。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-114">Microsoft will start rolling out enforcement of the policies described in this article on November 9, 2017.</span></span>
+- <span data-ttu-id="b4497-111">"相关发件人" 字段（由 "代表发送" 和 "邮寄列表" 使用）不受这些要求的影响。</span><span class="sxs-lookup"><span data-stu-id="b4497-111">The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements.</span></span> <span data-ttu-id="b4497-112">有关详细信息，请参阅以下博客文章：[当我们引用电子邮件的 "发件人" 时，我们意味着什么？](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)。</span><span class="sxs-lookup"><span data-stu-id="b4497-112">For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).</span></span>
 
-## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a><span data-ttu-id="4c4b2-115">Office 365 如何强制使用有效的 From：地址来防止网络钓鱼攻击</span><span class="sxs-lookup"><span data-stu-id="4c4b2-115">How Office 365 enforces the use of a valid From: address to prevent phishing attacks</span></span>
+## <a name="an-overview-of-email-message-standards"></a><span data-ttu-id="b4497-113">电子邮件标准概述</span><span class="sxs-lookup"><span data-stu-id="b4497-113">An overview of email message standards</span></span>
 
-<span data-ttu-id="4c4b2-116">Office 365 正在改变它在收到的邮件中强制使用 From： address 的方式，以便更好地保护您免受网络钓鱼攻击。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-116">Office 365 is making changes to the way it enforces the use of the From: address in messages it receives in order to better protect you from phishing attacks.</span></span> <span data-ttu-id="4c4b2-117">本文内容：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-117">In this article:</span></span>
+<span data-ttu-id="b4497-114">标准 SMTP 电子邮件由*邮件信封*和邮件内容组成。</span><span class="sxs-lookup"><span data-stu-id="b4497-114">A standard SMTP email message consists of a *message envelope* and message content.</span></span> <span data-ttu-id="b4497-115">邮件信封包含在 SMTP 服务器之间传输和传递邮件所需的信息。</span><span class="sxs-lookup"><span data-stu-id="b4497-115">The message envelope contains information that's required for transmitting and delivering the message between SMTP servers.</span></span> <span data-ttu-id="b4497-116">邮件内容包含邮件头字段（统称为*邮件头*）和邮件正文。</span><span class="sxs-lookup"><span data-stu-id="b4497-116">The message content contains message header fields (collectively called the *message header*) and the message body.</span></span> <span data-ttu-id="b4497-117">[Rfc 5321](https://tools.ietf.org/html/rfc5321)中介绍了邮件信封，并且[rfc 5322](https://tools.ietf.org/html/rfc5322)中介绍了邮件头。</span><span class="sxs-lookup"><span data-stu-id="b4497-117">The message envelope is described in [RFC 5321](https://tools.ietf.org/html/rfc5321), and the message header is described in [RFC 5322](https://tools.ietf.org/html/rfc5322).</span></span> <span data-ttu-id="b4497-118">收件人从不会看到实际邮件信封，因为它是由邮件传输进程生成的，并且实际上并不是邮件的一部分。</span><span class="sxs-lookup"><span data-stu-id="b4497-118">Recipients never see the actual message envelope because it's generated by the message transmission process, and it isn't actually part of the message.</span></span>
 
-- [<span data-ttu-id="4c4b2-118">所有邮件都必须包含有效的发件人：地址</span><span class="sxs-lookup"><span data-stu-id="4c4b2-118">All messages must include a valid From: address</span></span>](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
+- <span data-ttu-id="b4497-119">`5321.MailFrom`地址（也称为 "**发**件人地址"、"P1 发件人" 或 "信封发件人"）是在邮件的 SMTP 传输中使用的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="b4497-119">The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message.</span></span> <span data-ttu-id="b4497-120">此电子邮件地址通常记录在邮件标头中的 "**返回路径**标头" 字段中（尽管发件人可以指定不同的**返回路径**电子邮件地址）。</span><span class="sxs-lookup"><span data-stu-id="b4497-120">This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address).</span></span>
 
-- [<span data-ttu-id="4c4b2-119">"发件人：地址" 的格式（如果不包含显示名称）</span><span class="sxs-lookup"><span data-stu-id="4c4b2-119">Format of the From: address if you don't include a display name</span></span>](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
+- <span data-ttu-id="b4497-121">`5322.From` （也称为 "来自地址" 或 "P2 发件人"）是 "**发**件人" 头字段中的电子邮件地址，是电子邮件客户端中显示的发件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="b4497-121">The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.</span></span> <span data-ttu-id="b4497-122">"发件人" 地址是本主题中要求的重点。</span><span class="sxs-lookup"><span data-stu-id="b4497-122">The From address is the focus of the requirements in this topic.</span></span>
 
-- [<span data-ttu-id="4c4b2-120">"发件人：地址" 的格式（如果包含显示名称）</span><span class="sxs-lookup"><span data-stu-id="4c4b2-120">Format of the From: address if you include a display name</span></span>](how-office-365-validates-the-from-address.md#FormatDisplayName)
+<span data-ttu-id="b4497-123">"发件人" 地址在多个 Rfc 中进行了详细定义（例如，RFC 5322 节3.2.3、3.4 和3.4.1，以及[rfc 3696](https://tools.ietf.org/html/rfc3696)）。</span><span class="sxs-lookup"><span data-stu-id="b4497-123">The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)).</span></span> <span data-ttu-id="b4497-124">寻址方面有很多变化，被视为有效或无效。</span><span class="sxs-lookup"><span data-stu-id="b4497-124">There are many variations on addressing and what's considered valid or invalid.</span></span> <span data-ttu-id="b4497-125">为简单起见，我们建议采用以下格式和定义：</span><span class="sxs-lookup"><span data-stu-id="b4497-125">To keep it simple, we recommend the following format and definitions:</span></span>
 
-- [<span data-ttu-id="4c4b2-121">有效和无效发件人的其他示例： addresses</span><span class="sxs-lookup"><span data-stu-id="4c4b2-121">Additional examples of valid and invalid From: addresses</span></span>](how-office-365-validates-the-from-address.md#Examples)
+`From: "Display Name" <EmailAddress>`
 
-- [<span data-ttu-id="4c4b2-122">禁止自动答复您的自定义域，而无需中断 "发件人：" 策略</span><span class="sxs-lookup"><span data-stu-id="4c4b2-122">Suppress auto-replies to your custom domain without breaking the From: policy</span></span>](how-office-365-validates-the-from-address.md#SuppressAutoReply)
+- <span data-ttu-id="b4497-126">**显示名称**：描述电子邮件地址所有者的可选短语。</span><span class="sxs-lookup"><span data-stu-id="b4497-126">**Display Name**: An optional phrase that describes the owner of the email address.</span></span>
 
-- [<span data-ttu-id="4c4b2-123">替代 Office 365 发件人：地址强制策略</span><span class="sxs-lookup"><span data-stu-id="4c4b2-123">Overriding the Office 365 From: address enforcement policy</span></span>](how-office-365-validates-the-from-address.md#Override)
+  - <span data-ttu-id="b4497-127">我们建议您始终将显示名称括在双引号（"）中，如下所示。</span><span class="sxs-lookup"><span data-stu-id="b4497-127">We recommend that you always enclose the display name in double quotation marks (") as shown.</span></span> <span data-ttu-id="b4497-128">如果显示名称包含逗号，则_必须_将字符串括在每个 RFC 5322 的双引号中。</span><span class="sxs-lookup"><span data-stu-id="b4497-128">If the display name contains a comma, you _must_ enclose the string in double quotation marks per RFC 5322.</span></span>
+  - <span data-ttu-id="b4497-129">如果 "发件人" 地址包含显示名称，则 EmailAddress 值必须括在尖括号（< >）中，如图所示。</span><span class="sxs-lookup"><span data-stu-id="b4497-129">If the From address includes a display name, the EmailAddress value must be enclosed in angle brackets (< >) as shown.</span></span>
+  - <span data-ttu-id="b4497-130">Microsoft 强烈建议您在显示名称和电子邮件地址之间插入空格。</span><span class="sxs-lookup"><span data-stu-id="b4497-130">Microsoft strongly recommends that you insert a space between the display name and the email address.</span></span>
 
-- [<span data-ttu-id="4c4b2-124">阻止和防止 cybercrimes 在 Office 365 中的其他方法</span><span class="sxs-lookup"><span data-stu-id="4c4b2-124">Other ways to prevent and protect against cybercrimes in Office 365</span></span>](how-office-365-validates-the-from-address.md#OtherProtection)
+- <span data-ttu-id="b4497-131">**EmailAddress**：电子邮件地址使用以下格式`local-part@domain`：</span><span class="sxs-lookup"><span data-stu-id="b4497-131">**EmailAddress**: An email address uses the format `local-part@domain`:</span></span>
 
-<span data-ttu-id="4c4b2-125">代表其他用户发送邮件不受此更改的影响，有关详细信息，请阅读 Terry Zink 的博客 "[我们是什么？当我们引用电子邮件的 ' 发件人 '？" 时，这是什么意思？](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-125">Sending on behalf of another user is not affected by this change, for more details, read Terry Zink's blog "[What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)".</span></span>
+  - <span data-ttu-id="b4497-132">**本地-部分**：标识与地址关联的邮箱的字符串。</span><span class="sxs-lookup"><span data-stu-id="b4497-132">**local-part**: A string that identifies the mailbox associated with the address.</span></span> <span data-ttu-id="b4497-133">此值在域中是唯一的。</span><span class="sxs-lookup"><span data-stu-id="b4497-133">This value is unique within the domain.</span></span> <span data-ttu-id="b4497-134">通常，使用邮箱所有者的用户名或 GUID。</span><span class="sxs-lookup"><span data-stu-id="b4497-134">Often, the mailbox owner's username or GUID is used.</span></span>
+  - <span data-ttu-id="b4497-135">**domain**：电子邮件服务器的完全限定域名（FQDN），该域名托管由电子邮件地址的本地部分标识的邮箱。</span><span class="sxs-lookup"><span data-stu-id="b4497-135">**domain**: The fully qualified domain name (FQDN) of the email server that hosts the mailbox identified by the local-part of the email address.</span></span>
 
-### <a name="all-messages-must-include-a-valid-from-address"></a><span data-ttu-id="4c4b2-126">所有邮件都必须包含有效的发件人：地址</span><span class="sxs-lookup"><span data-stu-id="4c4b2-126">All messages must include a valid From: address</span></span>
-<span data-ttu-id="4c4b2-127"><a name="MustIncludeFromAddress"> </a></span><span class="sxs-lookup"><span data-stu-id="4c4b2-127"><a name="MustIncludeFromAddress"> </a></span></span>
+  <span data-ttu-id="b4497-136">以下是 EmailAddress 值的一些额外注意事项：</span><span class="sxs-lookup"><span data-stu-id="b4497-136">These are some additional considerations for the EmailAddress value:</span></span>
 
-<span data-ttu-id="4c4b2-128">某些自动消息在发送时不包括发件人：地址。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-128">Some automated messages don't include a From: address when they are sent.</span></span> <span data-ttu-id="4c4b2-129">过去，当 Office 365 或 Outlook.com 收到不含发件人：地址的邮件时，该服务会将以下默认的 "发件人" 地址添加到邮件中，以便其可交付结果如下：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-129">In the past, when Office 365 or Outlook.com received a message without a From: address, the service added the following default From: address to the message in order to make it deliverable:</span></span>
+  - <span data-ttu-id="b4497-137">仅有一个电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="b4497-137">Only one email address.</span></span>
+  - <span data-ttu-id="b4497-138">建议不要用空格分隔尖括号。</span><span class="sxs-lookup"><span data-stu-id="b4497-138">We recommend that you do not separate the angle brackets with spaces.</span></span>
+  - <span data-ttu-id="b4497-139">不要在电子邮件地址后面添加其他文本。</span><span class="sxs-lookup"><span data-stu-id="b4497-139">Don't include additional text after the email address.</span></span>
 
-```
-From: <>
-```
+## <a name="examples-of-valid-and-invalid-from-addresses"></a><span data-ttu-id="b4497-140">有效和无效发件人地址的示例</span><span class="sxs-lookup"><span data-stu-id="b4497-140">Examples of valid and invalid From addresses</span></span>
 
-<span data-ttu-id="4c4b2-130">从2017年11月9日开始，Office 365 将对其数据中心和邮件服务器进行更改，这将强制实施一个新规则，在该规则中，Office 365 或 Outlook.com 不再接受邮件地址（如果邮件没有发件人：地址）。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-130">Starting November 9, 2017, Office 365 will be rolling out changes to its datacenters and mail servers which will enforce a new rule where messages without a From: address will no longer be accepted by Office 365 or Outlook.com.</span></span> <span data-ttu-id="4c4b2-131">相反，Office 365 接收到的所有邮件都必须已经包含有效的 From： address。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-131">Instead, all messages received by Office 365 must already contain a valid From: address.</span></span> <span data-ttu-id="4c4b2-132">否则，邮件将被发送到 Outlook.com 和 Office 365 中的 "垃圾邮件" 或 "已删除邮件" 文件夹。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-132">Otherwise, the message will be sent to either the Junk Email or Deleted Items folders in Outlook.com and Office 365.</span></span>
+<span data-ttu-id="b4497-141">以下发件人的电子邮件地址是有效的：</span><span class="sxs-lookup"><span data-stu-id="b4497-141">The following From email addresses are valid:</span></span>
 
-### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a><span data-ttu-id="4c4b2-133">语法概述： From： address for Office 365 的有效格式</span><span class="sxs-lookup"><span data-stu-id="4c4b2-133">Syntax overview: Valid format for the From: address for Office 365</span></span>
-<span data-ttu-id="4c4b2-134"><a name="SyntaxOverviewFromAddress"> </a></span><span class="sxs-lookup"><span data-stu-id="4c4b2-134"><a name="SyntaxOverviewFromAddress"> </a></span></span>
+- `From: sender@contoso.com`
 
-<span data-ttu-id="4c4b2-135">"发件人：地址" 的值的格式是在几个 Rfc 中详细定义的。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-135">The format for the value of the From: address is defined in detail across several RFCs.</span></span> <span data-ttu-id="4c4b2-136">寻址方面有很多变化，可视为有效或无效。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-136">There are many variations on addressing and what may be considered valid or invalid.</span></span> <span data-ttu-id="4c4b2-137">为了使其简单，Microsoft 建议使用以下格式和定义：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-137">To keep it simple, Microsoft recommends that you use the following format and definitions:</span></span>
+- `From: <sender@contoso.com>`
 
-```
-From: "displayname " <emailaddress >
-```
+- <span data-ttu-id="b4497-142">`From: < sender@contoso.com >`（不建议这样做，因为尖括号和电子邮件地址之间有空格。）</span><span class="sxs-lookup"><span data-stu-id="b4497-142">`From: < sender@contoso.com >` (Not recommended because there are spaces between the angle brackets and the email address.)</span></span>
 
-<span data-ttu-id="4c4b2-138">其中：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-138">Where:</span></span>
+- `From: "Sender, Example" <sender.example@contoso.com>`
 
-- <span data-ttu-id="4c4b2-139">Optional *displayname*是描述电子邮件地址所有者的短语。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-139">(Optional)  *displayname*  is a phrase that describes the owner of the email address.</span></span> <span data-ttu-id="4c4b2-140">例如，这可能是用户友好的名称，用于描述发件人的名称，而不是邮箱的名称。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-140">For example, this might be a more user-friendly name to describe the sender than the name of the mailbox.</span></span> <span data-ttu-id="4c4b2-141">可选择使用显示名称。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-141">Using a display name is optional.</span></span> <span data-ttu-id="4c4b2-142">但是，如果您选择使用显示名称，Microsoft 建议您始终将其括在引号中，如下所示。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-142">However, if you choose to use a display name, Microsoft recommends that you always enclose it within quotation marks as shown.</span></span>
+- `From: "Office 365" <sender@contoso.com>`
 
-- <span data-ttu-id="4c4b2-143">需要 *emailaddress*由以下内容组成：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-143">(Required)  *emailaddress*  is made up of:</span></span>
+- <span data-ttu-id="b4497-143">`From: Office 365 <sender@contoso.com>`（不建议这样做，因为显示名称没有括在双引号内。）</span><span class="sxs-lookup"><span data-stu-id="b4497-143">`From: Office 365 <sender@contoso.com>` (Not recommended because the display name is not enclosed in double quotation marks.)</span></span>
 
-  ```
-  local-part @domain
-  ```
+<span data-ttu-id="b4497-144">以下发件人的电子邮件地址无效：</span><span class="sxs-lookup"><span data-stu-id="b4497-144">The following From email addresses are invalid:</span></span>
 
-    <span data-ttu-id="4c4b2-144">其中：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-144">Where:</span></span>
+- <span data-ttu-id="b4497-145">**发件人地址不**是：某些自动邮件不包含发件人地址。</span><span class="sxs-lookup"><span data-stu-id="b4497-145">**No From address**: Some automated messages don't include a From address.</span></span> <span data-ttu-id="b4497-146">过去，当 Office 365 或 Outlook.com 收到不含发件人地址的邮件时，该服务会添加以下默认发件人： address，以使邮件可交付：</span><span class="sxs-lookup"><span data-stu-id="b4497-146">In the past, when Office 365 or Outlook.com received a message without a From address, the service added the following default From: address to make the message deliverable:</span></span>
 
-  - <span data-ttu-id="4c4b2-145">需要 *local-part*是标识与地址关联的邮箱的字符串。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-145">(Required)  *local-part*  is a string that identifies the mailbox associated with the address.</span></span> <span data-ttu-id="4c4b2-146">这在域中是唯一的。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-146">This is unique within the domain.</span></span> <span data-ttu-id="4c4b2-147">邮箱所有者的用户名或 GUID 通常用作本地部分的值。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-147">Often, the mailbox owner's username or GUID is used as the value for the local-part.</span></span>
+  `From: <>`
 
-  - <span data-ttu-id="4c4b2-148">需要 *domain*是邮件服务器的完全限定域名（FQDN），该域名托管由电子邮件地址的本地部分标识的邮箱。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-148">(Required)  *domain*  is the fully-qualified domain name (FQDN) of the mail server that hosts the mailbox identified by the local-part of the email address.</span></span>
+  <span data-ttu-id="b4497-147">现在，"发件人" 地址为空的邮件将不再被接受。</span><span class="sxs-lookup"><span data-stu-id="b4497-147">Now, messages with a blank From address are no longer accepted.</span></span>
 
-### <a name="format-of-the-from-address-if-you-dont-include-a-display-name"></a><span data-ttu-id="4c4b2-149">"发件人：地址" 的格式（如果不包含显示名称）</span><span class="sxs-lookup"><span data-stu-id="4c4b2-149">Format of the From: address if you don't include a display name</span></span>
-<span data-ttu-id="4c4b2-150"><a name="FormatNoDisplayName"> </a></span><span class="sxs-lookup"><span data-stu-id="4c4b2-150"><a name="FormatNoDisplayName"> </a></span></span>
+- <span data-ttu-id="b4497-148">`From: Office 365 sender@contoso.com`（显示名称存在，但电子邮件地址不是括在尖括号中。）</span><span class="sxs-lookup"><span data-stu-id="b4497-148">`From: Office 365 sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)</span></span>
 
-<span data-ttu-id="4c4b2-151">格式正确的 "发件人：" 地址不包含显示名称仅包含一个电子邮件地址，带有或不带尖括号。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-151">A properly formatted From: address that does not include a display name includes only a single email address with or without angle brackets.</span></span> <span data-ttu-id="4c4b2-152">Microsoft 建议您不要用空格分隔尖括号。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-152">Microsoft recommends that you do not separate the angle brackets with spaces.</span></span> <span data-ttu-id="4c4b2-153">此外，在电子邮件地址后不要包含任何内容。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-153">In addition, don't include anything after the email address.</span></span>
+- <span data-ttu-id="b4497-149">`From: "Office 365" <sender@contoso.com> (Sent by a process)`（电子邮件地址后的文本。）</span><span class="sxs-lookup"><span data-stu-id="b4497-149">`From: "Office 365" <sender@contoso.com> (Sent by a process)` (Text after the email address.)</span></span>
 
-<span data-ttu-id="4c4b2-154">下面的示例是有效的：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-154">The following examples are valid:</span></span>
+- <span data-ttu-id="b4497-150">`From: Sender, Example <sender.example@contoso.com>`（显示名称包含逗号，但未括在双引号内。）</span><span class="sxs-lookup"><span data-stu-id="b4497-150">`From: Sender, Example <sender.example@contoso.com>` (The display name contains a comma, but is not enclosed in double quotation marks.)</span></span>
 
-```
-From: sender@contoso.com
-```
+- <span data-ttu-id="b4497-151">`From: "Office 365 <sender@contoso.com>"`（整数值不正确地括在双引号中。）</span><span class="sxs-lookup"><span data-stu-id="b4497-151">`From: "Office 365 <sender@contoso.com>"` (The whole value is incorrectly enclosed in double quotation marks.)</span></span>
 
-```
-From: <sender@contoso.com>
-```
+- <span data-ttu-id="b4497-152">`From: "Office 365 <sender@contoso.com>" sender@contoso.com`（显示名称存在，但电子邮件地址不是括在尖括号中。）</span><span class="sxs-lookup"><span data-stu-id="b4497-152">`From: "Office 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)</span></span>
 
-<span data-ttu-id="4c4b2-155">下面的示例是有效的，但建议您不要这样做，因为尖括号和电子邮件地址之间包含空格：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-155">The following example is valid but not recommended because it contains spaces between the angle brackets and the email address:</span></span>
+- <span data-ttu-id="b4497-153">`From: Office 365<sender@contoso.com>`（显示名称和左尖括号之间没有空格。）</span><span class="sxs-lookup"><span data-stu-id="b4497-153">`From: Office 365<sender@contoso.com>` (No space between the display name and the left angle bracket.)</span></span>
 
-```
-From: < sender@contoso.com >
-```
+- <span data-ttu-id="b4497-154">`From: "Office 365"<sender@contoso.com>`（右双引号和左尖括号之间没有空格。）</span><span class="sxs-lookup"><span data-stu-id="b4497-154">`From: "Office 365"<sender@contoso.com>` (No space between the closing double quotation mark and the left angle bracket.)</span></span>
 
-<span data-ttu-id="4c4b2-156">下面的示例是无效的，因为它在电子邮件地址后包含文本：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-156">The following example is invalid because it contains text after the email address:</span></span>
+## <a name="suppress-auto-replies-to-your-custom-domain"></a><span data-ttu-id="b4497-155">禁止对自定义域的自动答复</span><span class="sxs-lookup"><span data-stu-id="b4497-155">Suppress auto-replies to your custom domain</span></span>
 
-```
-From: "Office 365" <sender@contoso.com> (Sent by a process)
+<span data-ttu-id="b4497-156">不能使用值`From: <>`来禁止显示自动答复。</span><span class="sxs-lookup"><span data-stu-id="b4497-156">You can't use the value `From: <>` to suppress auto-replies.</span></span> <span data-ttu-id="b4497-157">相反，您需要为您的自定义域设置空的 MX 记录。</span><span class="sxs-lookup"><span data-stu-id="b4497-157">Instead, you need to set up a null MX record for your custom domain.</span></span> <span data-ttu-id="b4497-158">自动答复（和所有答复）将自然被隐含，因为响应服务器不会向其发送邮件的发布地址。</span><span class="sxs-lookup"><span data-stu-id="b4497-158">Auto-replies (and all replies) are naturally suppressed because there is no published address that the responding server can send messages to.</span></span>
+
+- <span data-ttu-id="b4497-159">选择无法接收电子邮件的电子邮件域。</span><span class="sxs-lookup"><span data-stu-id="b4497-159">Choose an email domain that can't receive email.</span></span> <span data-ttu-id="b4497-160">例如，如果您的主域是 contoso.com，则可以选择 noreply.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="b4497-160">For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.</span></span>
+
+- <span data-ttu-id="b4497-161">此域的 null MX 记录由一个句点组成。</span><span class="sxs-lookup"><span data-stu-id="b4497-161">The null MX record for this domain consists of a single period.</span></span>
+
+<span data-ttu-id="b4497-162">例如：</span><span class="sxs-lookup"><span data-stu-id="b4497-162">For example:</span></span>
+
+```text
+noreply.contoso.com IN MX .
 ```
 
-### <a name="format-of-the-from-address-if-you-include-a-display-name"></a><span data-ttu-id="4c4b2-157">"发件人：地址" 的格式（如果包含显示名称）</span><span class="sxs-lookup"><span data-stu-id="4c4b2-157">Format of the From: address if you include a display name</span></span>
-<span data-ttu-id="4c4b2-158"><a name="FormatDisplayName"> </a></span><span class="sxs-lookup"><span data-stu-id="4c4b2-158"><a name="FormatDisplayName"> </a></span></span>
+<span data-ttu-id="b4497-163">有关设置 MX 记录的详细信息，请参阅[在任何 DNS 托管提供商处创建适用于 Office 365 的 dns 记录](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。</span><span class="sxs-lookup"><span data-stu-id="b4497-163">For more information about setting up MX records, see [Create DNS records at any DNS hosting provider for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).</span></span>
 
-<span data-ttu-id="4c4b2-159">对于 "发件人：" 包含显示名称值的地址，下列规则适用：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-159">For From: addresses that include a value for the display name, the following rules apply:</span></span>
+<span data-ttu-id="b4497-164">有关发布空 MX 的详细信息，请参阅[RFC 7505](https://tools.ietf.org/html/rfc7505)。</span><span class="sxs-lookup"><span data-stu-id="b4497-164">For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).</span></span>
 
-- <span data-ttu-id="4c4b2-160">如果发件人地址包含显示名称，并且显示名称中包含逗号，则显示名称必须用引号括起来。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-160">If the sender address includes a display name, and the display name includes a comma, then the display name must be enclosed within quotation marks.</span></span> <span data-ttu-id="4c4b2-161">例如：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-161">For example:</span></span>
+## <a name="override-from-address-enforcement"></a><span data-ttu-id="b4497-165">从地址强制中覆盖</span><span class="sxs-lookup"><span data-stu-id="b4497-165">Override From address enforcement</span></span>
 
-    <span data-ttu-id="4c4b2-162">下面的示例是有效的：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-162">The following example is valid:</span></span>
+<span data-ttu-id="b4497-166">若要绕过入站电子邮件的发件人地址要求，可以使用 IP 允许列表（连接筛选）或邮件流规则（也称为传输规则），如在[Office 365 中创建安全发件人列表中](create-safe-sender-lists-in-office-365.md)所述。</span><span class="sxs-lookup"><span data-stu-id="b4497-166">To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).</span></span>
 
-  ```
-  From: "Sender, Example" <sender.example@contoso.com>
-  ```
+<span data-ttu-id="b4497-167">您不能覆盖从 Office 365 发送出的出站电子邮件的发件人地址要求。</span><span class="sxs-lookup"><span data-stu-id="b4497-167">You can't override the From address requirements for outbound email that you send from Office 365.</span></span> <span data-ttu-id="b4497-168">此外，Outlook.com 不允许覆盖任何种类，即使支持也是如此。</span><span class="sxs-lookup"><span data-stu-id="b4497-168">In addition, Outlook.com will not allow overrides of any kind, even through support.</span></span>
 
-    <span data-ttu-id="4c4b2-163">以下示例无效：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-163">The following example is not valid:</span></span>
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a><span data-ttu-id="b4497-169">阻止和防止 cybercrimes 在 Office 365 中的其他方法</span><span class="sxs-lookup"><span data-stu-id="b4497-169">Other ways to prevent and protect against cybercrimes in Office 365</span></span>
 
-  ```
-  From: Sender, Example <sender.example@contoso.com>
-  ```
-
-    <span data-ttu-id="4c4b2-164">如果显示名称包含逗号因 RFC 5322 而无效，则不将显示名称括在引号中。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-164">Not enclosing the display name in quotation marks if that display name includes a comma is invalid according to RFC 5322.</span></span>
-
-    <span data-ttu-id="4c4b2-165">作为最佳实践，无论显示名称中是否有逗号，都会在显示名称两边加上引号。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-165">As a best practice, put quote marks around the display name regardless of whether or not there is a comma within the display name.</span></span>
-
-- <span data-ttu-id="4c4b2-166">如果发件人地址包含显示名称，则电子邮件地址必须括在尖括号中。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-166">If the sender address includes a display name, then the email address must be enclosed within angle brackets.</span></span>
-
-    <span data-ttu-id="4c4b2-167">作为一种最佳做法，Microsoft 强烈建议您在显示名称和电子邮件地址之间插入空格。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-167">As a best practice, Microsoft strongly recommends that you insert a space between the display name and the email address.</span></span>
-
-### <a name="additional-examples-of-valid-and-invalid-from-addresses"></a><span data-ttu-id="4c4b2-168">有效和无效发件人的其他示例： addresses</span><span class="sxs-lookup"><span data-stu-id="4c4b2-168">Additional examples of valid and invalid From: addresses</span></span>
-<span data-ttu-id="4c4b2-169"><a name="Examples"> </a></span><span class="sxs-lookup"><span data-stu-id="4c4b2-169"><a name="Examples"> </a></span></span>
-
-- <span data-ttu-id="4c4b2-170">有效</span><span class="sxs-lookup"><span data-stu-id="4c4b2-170">Valid:</span></span>
-
-  ```
-  From: "Office 365" <sender@contoso.com>
-  ```
-
-- <span data-ttu-id="4c4b2-171">无效。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-171">Invalid.</span></span> <span data-ttu-id="4c4b2-172">电子邮件地址不带尖括号括起来：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-172">The email address is not enclosed with angle brackets:</span></span>
-
-  ```
-  From: Office 365 sender@contoso.com
-  ```
-
-- <span data-ttu-id="4c4b2-173">有效，但不建议使用。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-173">Valid, but not recommended.</span></span> <span data-ttu-id="4c4b2-174">显示名称不在引号中。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-174">The display name is not in quotes.</span></span> <span data-ttu-id="4c4b2-175">最佳做法是，始终在显示名称两边加上引号：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-175">As a best practice, always put quotation marks around the display name:</span></span>
-
-  ```
-  From: Office 365 <sender@contoso.com>
-  ```
-
-- <span data-ttu-id="4c4b2-176">无效。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-176">Invalid.</span></span> <span data-ttu-id="4c4b2-177">所有内容均括在引号内，而不只是显示名称：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-177">Everything is enclosed within quotation marks, not just the display name:</span></span>
-
-  ```
-  From: "Office 365 <sender@contoso.com>"
-  ```
-
-- <span data-ttu-id="4c4b2-178">无效。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-178">Invalid.</span></span> <span data-ttu-id="4c4b2-179">电子邮件地址周围没有尖括号：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-179">There are no angle brackets around the email address:</span></span>
-
-  ```
-  From: "Office 365 <sender@contoso.com>" sender@contoso.com
-  ```
-
-- <span data-ttu-id="4c4b2-180">无效。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-180">Invalid.</span></span> <span data-ttu-id="4c4b2-181">显示名称和左尖括号之间没有空格：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-181">There is no space between the display name and left angle bracket:</span></span>
-
-  ```
-  From: Office 365<sender@contoso.com>
-  ```
-
-- <span data-ttu-id="4c4b2-182">无效。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-182">Invalid.</span></span> <span data-ttu-id="4c4b2-183">在右引号周围的显示名称和左尖括号之间没有空格。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-183">There is no space between the closing quotation mark around the display name and the left angle bracket.</span></span>
-
-  ```
-  From: "Office 365"<sender@contoso.com>
-  ```
-
-### <a name="suppress-auto-replies-to-your-custom-domain-without-breaking-the-from-policy"></a><span data-ttu-id="4c4b2-184">禁止自动答复您的自定义域，而无需中断 "发件人：" 策略</span><span class="sxs-lookup"><span data-stu-id="4c4b2-184">Suppress auto-replies to your custom domain without breaking the From: policy</span></span>
-<span data-ttu-id="4c4b2-185"><a name="SuppressAutoReply"> </a></span><span class="sxs-lookup"><span data-stu-id="4c4b2-185"><a name="SuppressAutoReply"> </a></span></span>
-
-<span data-ttu-id="4c4b2-186">使用新的 From： policy 强制，您无法再使用： \< \>禁止显示自动答复。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-186">With the new From: policy enforcement, you can no longer use From: \<\> to suppress auto-replies.</span></span> <span data-ttu-id="4c4b2-187">相反，您需要为您的自定义域设置空的 MX 记录。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-187">Instead, you need to set up a null MX record for your custom domain.</span></span>
-
-<span data-ttu-id="4c4b2-188">邮件交换器（MX）记录是 DNS 中的一条资源记录，用于标识为您的域接收邮件的邮件服务器。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-188">The mail exchanger (MX) record is a resource record in DNS that identifies the mail server that receives mail for your domain.</span></span> <span data-ttu-id="4c4b2-189">自动答复（和所有答复）自然会被隐含，因为没有任何已发布的地址发送到响应服务器可以向其发送邮件。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-189">Auto-replies (and all replies) are naturally suppressed because there is no published address to which the responding server can send messages.</span></span>
-
-<span data-ttu-id="4c4b2-190">为自定义域设置空 MX 记录时：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-190">When you set up a null MX record for your custom domain:</span></span>
-
-- <span data-ttu-id="4c4b2-191">选择要向其发送不接受（接收）电子邮件的邮件的域。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-191">Choose a domain from which to send messages that doesn't accept (receive) email.</span></span> <span data-ttu-id="4c4b2-192">例如，如果您的主域是 contoso.com，则可以选择 noreply.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-192">For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.</span></span>
-
-- <span data-ttu-id="4c4b2-193">为您的域设置空的 MX 记录。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-193">Set up the null MX record for your domain.</span></span> <span data-ttu-id="4c4b2-194">空的 MX 记录包含一个点，例如：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-194">A null MX record consists of a single dot, for example:</span></span>
-
-  ```
-  noreply.contoso.com IN MX .
-  ```
-
-<span data-ttu-id="4c4b2-195">有关发布空 MX 的详细信息，请参阅[RFC 7505](https://tools.ietf.org/html/rfc7505)。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-195">For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).</span></span>
-
-### <a name="overriding-the-office-365-from-address-enforcement-policy"></a><span data-ttu-id="4c4b2-196">替代 Office 365 发件人：地址强制策略</span><span class="sxs-lookup"><span data-stu-id="4c4b2-196">Overriding the Office 365 From: address enforcement policy</span></span>
-<span data-ttu-id="4c4b2-197"><a name="Override"> </a></span><span class="sxs-lookup"><span data-stu-id="4c4b2-197"><a name="Override"> </a></span></span>
-
-<span data-ttu-id="4c4b2-198">完成新策略的操作后，您只能通过使用下列方法之一，对从 Office 365 接收的入站邮件绕过此策略：</span><span class="sxs-lookup"><span data-stu-id="4c4b2-198">Once roll out of the new policy is complete, you can only bypass this policy for inbound mail you receive from Office 365 by using one of the following methods:</span></span>
-
-- <span data-ttu-id="4c4b2-199">IP 允许列表</span><span class="sxs-lookup"><span data-stu-id="4c4b2-199">IP allow lists</span></span>
-
-- <span data-ttu-id="4c4b2-200">Exchange Online 邮件流规则</span><span class="sxs-lookup"><span data-stu-id="4c4b2-200">Exchange Online mail flow rules</span></span>
-
-<span data-ttu-id="4c4b2-201">Microsoft 强烈建议您不要覆盖 From： policy 的强制执行。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-201">Microsoft strongly recommends against overriding the enforcement of the From: policy.</span></span> <span data-ttu-id="4c4b2-202">覆盖此策略可能会增加组织暴露给垃圾邮件、网络钓鱼和其他 cybercrimes 的风险。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-202">Overriding this policy can increase your organization's risk of exposure to spam, phishing, and other cybercrimes.</span></span>
-
-<span data-ttu-id="4c4b2-203">您无法覆盖在 Office 365 中发送的出站邮件的此策略。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-203">You cannot override this policy for outbound mail you send in Office 365.</span></span> <span data-ttu-id="4c4b2-204">此外，Outlook.com 不允许覆盖任何种类，即使支持也是如此。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-204">In addition, Outlook.com will not allow overrides of any kind, even through support.</span></span>
-
-### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a><span data-ttu-id="4c4b2-205">阻止和防止 cybercrimes 在 Office 365 中的其他方法</span><span class="sxs-lookup"><span data-stu-id="4c4b2-205">Other ways to prevent and protect against cybercrimes in Office 365</span></span>
-<span data-ttu-id="4c4b2-206"><a name="OtherProtection"> </a></span><span class="sxs-lookup"><span data-stu-id="4c4b2-206"><a name="OtherProtection"> </a></span></span>
-
-<span data-ttu-id="4c4b2-207">若要详细了解如何在 cybercrimes （如网络钓鱼、垃圾邮件、数据泄露和其他威胁）上加强组织，请参阅[Office 365 的安全性最佳实践](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)。</span><span class="sxs-lookup"><span data-stu-id="4c4b2-207">For more information on how you can strengthen your organization against cybercrimes like phishing, spamming, data breaches, and other threats, see [Security best practices for Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).</span></span>
-
-## <a name="related-topics"></a><span data-ttu-id="4c4b2-208">相关主题</span><span class="sxs-lookup"><span data-stu-id="4c4b2-208">Related Topics</span></span>
-
-[<span data-ttu-id="4c4b2-209">退信消息和 EOP</span><span class="sxs-lookup"><span data-stu-id="4c4b2-209">Backscatter messages and EOP</span></span>](backscatter-messages-and-eop.md)
+<span data-ttu-id="b4497-170">有关如何加强组织抵御网络钓鱼、垃圾邮件、数据泄露和其他威胁的详细信息，请参阅[保护 Office 365 和 Microsoft 365 商业版计划](../../admin/security-and-compliance/secure-your-business-data.md)的十大方法。</span><span class="sxs-lookup"><span data-stu-id="b4497-170">For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../../admin/security-and-compliance/secure-your-business-data.md).</span></span>
