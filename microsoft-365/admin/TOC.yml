@@ -15,11 +15,11 @@
           href: admin-overview/what-subscription-do-i-have.md
         - name: 了解 Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
-        - name: 管理员移动应用
+        - name: 管理移动应用
           href: admin-overview/admin-mobile-app.md
     - name: 设置
       items:
-        - name: 规划你的设置
+        - name: 规划设置
           href: setup/plan-your-setup.md
         - name: 设置 Office 365
           href: setup/setup.md
@@ -27,17 +27,17 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: 添加域
           href: setup/add-domain.md
-        - name: 关于域的常见问题
+        - name: 关于域的常见问题解答
           href: setup/domains-faq.md
         - name: 安装应用程序
           href: setup/install-applications.md
         - name: 迁移电子邮件和联系人
           href: setup/migrate-email-and-contacts-admin.md
-        - name: 推广 Teams
+        - name: 部署 Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: 设置文件存储和共享
           href: setup/set-up-file-storage-and-sharing.md
-        - name: 自定义工作组网站
+        - name: 自定义团队网站
           href: setup/customize-team-site.md
         - name: 将用户升级到最新版 Office 客户端
           href: setup/upgrade-users-to-latest-office-client.md
@@ -143,7 +143,7 @@
           href: usage-analytics/get-the-latest-version-of-usage-analytics.md
         - name: 导航和利用报表
           href: usage-analytics/navigate-and-utilize-reports.md
-        - name: 使用情况报表中的活动用户
+        - name: 使用情况报告中的活动用户
           href: usage-analytics/active-user-in-usage-reports.md
         - name: 自定义报表
           href: usage-analytics/customize-reports.md
@@ -169,7 +169,7 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: 使用集中式部署来部署加载项
           href: manage/manage-deployment-of-add-ins.md
-        - name: 集中部署常见问题
+        - name: 集中部署常见问题解答
           href: manage/centralized-deployment-FAQ.md
         - name: 查找合作伙伴或经销商
           href: manage/find-your-partner-or-reseller.md
@@ -185,11 +185,11 @@
           href: manage/share-calendars-with-external-users.md
         - name: 向用户分配许可证
           href: manage/assign-licenses-to-users.md
-        - name: 取消分配给用户的许可证
+        - name: 取消分配用户许可证
           href: manage/remove-licenses-from-users.md
         - name: 解决许可证冲突
           href: manage/resolve-license-conflicts.md
-        - name: 使用新增功能管理显示或隐藏新功能
+        - name: 使用新增管理功能显示或隐藏新功能
           href: manage/show-hide-new-features.md
     - name: 订阅和计费
       items:
@@ -269,7 +269,7 @@
           href: services-in-china/download-office-app-for-Android.md
         - name: 下载由世纪互联运营的 iOS 版 Office 365 的 Office 应用
           href: services-in-china/download-office-app-for-iOS.md
-        - name: 查看帐单或获取发票
+        - name: 查看账单或获取发票
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: 申请发票
           href: services-in-china/apply-for-a-fapiao.md
@@ -285,9 +285,9 @@
           href: manage/stay-on-top-of-updates.md
         - name: Office 365 中的发布选项
           href: manage/release-options-in-office-365.md
-        - name: 消息中心
+        - name: 邮件中心
           href: manage/message-center.md
         - name: 试用或购买 Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
-    - name: 联系支持人员，获得有关商业版产品的帮助
+    - name: 就企业产品问题，联系支持人员
       href: contact-support-for-business-products.md
