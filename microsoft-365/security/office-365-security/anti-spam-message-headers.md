@@ -15,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 详细了解由 Exchange Online Protection 添加到邮件的标头字段和值。
-ms.openlocfilehash: 55ba5435b181506cd39314275a9d8c8c6b459b28
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3873508135d108cec5f07dc8e336bda194c461c0
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894178"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528286"
 ---
 # <a name="anti-spam-message-headers-in-office-365"></a>Office 365 中的反垃圾邮件邮件头
 
@@ -48,7 +48,7 @@ ms.locfileid: "42894178"
 |LANG|邮件的编写语言，由国家/地区代码指定（例如，俄语的代码为 ru_RU）。|
 |PTR:\[ReverseDNS\]|源 IP 地址的 PTR 记录（亦称为“指针记录”或“反向 DNS 地址”）。|
 |SCL|邮件的垃圾邮件可信度 (SCL)。 值越高，邮件是垃圾邮件的可能性就越大。 有关详细信息，请参阅 [Office 365 中的垃圾邮件可信度 (SCL)](spam-confidence-levels.md)。|
-|SFTY|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <ul><li>9.1：默认值。 邮件包含网络钓鱼 URL，可能包含其他网络钓鱼内容，或者可能已被其他邮件筛选器（例如 Exchange Server 的本地版本）在将其中继到 Office 365 之前标记为网络钓鱼。</li><li>9.11：邮件未通过反欺骗检查，其中“发件人:”标头中的发送域与接收域相同、与接收域匹配或者与接收域属于同一组织。 这表示将向邮件中添加组织内欺骗安全提示。</li><li>9.19：邮件未通过域模仿检查，其中发送域正在尝试模仿收件人拥有的域或受到反网络钓鱼策略保护的自定义域。 这表示将向邮件添加模拟安全提示（如果已通过反网络钓鱼策略启用）。</li><li>9.20：邮件未通过用户模拟检查，其中发送邮件的用户正在尝试模拟收件人组织中的用户或者受到反网络钓鱼策略保护的自定义用户。 这表示将向邮件添加模拟安全提示（如果已通过反网络钓鱼策略启用）。</li><li>9.21：邮件未通过反欺骗检查，并且“发件人:”标头中的发送域未进行身份验证且来自外部域。 与 CompAuth 结合使用（请参阅 Authentication-Results）。</li><li>9.22：与 9.21 相同，只是用户具有遭到覆盖的安全发件人。</li><li>9.23：与 9.22 相同，只是组织具有遭到覆盖的允许发件人或域。</li><li>9.24：与 9.23 类似，区别在于用户有已被替代的 Exchange 邮件流规则（亦称为“传输规则”）。</li></ul>|
+|SFTY|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <ul><li>9.1：默认值。 邮件包含网络钓鱼 URL，可能包含其他网络钓鱼内容，或者可能在中继到 Office 365 之前已经被其他邮件筛选器（例如本地 Exchange）标记为网络钓鱼。</li><li>9.11：[组织内欺骗或自我欺骗](anti-spoofing-protection.md#different-types-of-spoofing)。 邮件未通过反欺骗检查，其中“发件人”标头中的发件人电子邮件域与接收域相同、与接收域匹配或者与接收域属于同一组织。 将向邮件添加组织内欺骗安全提示。</li><li>9.19：域模拟。 发送域正在尝试模拟 ATP 反网络钓鱼策略中指定的受保护域（由收件人的组织拥有的域或自定义域）。 将向邮件添加域模拟安全提示（如果已在 ATP 反网络钓鱼策略中启用该安全提示）。</li><li>9.20：用户模拟。 发送用户正在尝试模拟收件人组织中的用户或 ATP 反网络钓鱼策略中指定的受保护用户。 将向邮件添加用户模拟安全提示（如果已在 ATP 反网络钓鱼策略中启用该安全提示）。</li><li>9.21：[跨域欺骗](anti-spoofing-protection.md#different-types-of-spoofing)。 邮件未通过反欺骗检查，其中“发件人”标头中的发送人电子邮件域未进行身份验证，并且是外部域。 与 [CompAuth](#authentication-results-message-header-fields-used-by-office-365-email-authentication)) 结合使用。</li><li>9.22：与 9.21 相同，只是用户具有遭到覆盖的安全发件人。</li><li>9.23：与 9.22 相同，只是组织具有遭到覆盖的允许发件人或域。</li><li>9.24：与 9.23 类似，区别在于用户有已被替代的 Exchange 邮件流规则（亦称为“传输规则”）。</li></ul>|
 |SFV:BLK|邮件跳过了筛选，但被阻止，因为邮件是从用户的“Outlook 阻止的发件人”（即用户的“阻止的发件人”列表）中的地址发送的。<br/></br> 若要详细了解管理员如何管理用户的“阻止的发件人”列表，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
 |SFV:NSPM|邮件被垃圾邮件筛选标记为非垃圾邮件，并发送到目标收件人。|
 |SFV:SFE|邮件跳过了筛选，且被允许通过，因为邮件是从用户的“Outlook 安全发件人”（即用户的“安全发件人”列表）中的地址发送的。<br/></br> 若要详细了解管理员如何管理用户的“安全发件人”列表，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
@@ -136,12 +136,12 @@ dmarc=fail action=oreject header.from=contoso.com
 |---|---|
 |**标头字段**|**说明**|
 |action|指示垃圾邮件筛选器基于 DMARC 检查结果执行的操作。例如： <ul><li>**oreject** 或 **o.reject**：表示替代拒绝。 在这种情况下，Office 365 在从 DMARC TXT 记录的策略为 p=reject 的域中接收未通过 DMARC 检查的邮件时使用此操作。 Office 365 将该邮件标记为垃圾邮件，而不是删除或拒绝该邮件。 有关这样配置 Office 365 的原因的详细信息，请参阅 [Office 365 如何处理未通过 DMARC 的入站电子邮件](use-dmarc-to-validate-email.md#inbounddmarcfail)。</li><li>**pct.quarantine**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为隔离，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**pct.reject**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为拒绝，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**permerror**：DMARC 评估期间发生了永久性错误，例如在 DNS 中遇到格式有误的 DMARC TXT 记录。 尝试重新发送此邮件不太可能产生不同的结果。 你反而可能需要联系域的所有者，以解决该问题。</li><li>**temperror**：DMARC 评估期间出现暂时性错误。 你可能能够请求发件人稍后重新发送邮件，以便正确处理电子邮件。</li></ul>|
-|compauth|复合身份验证结果。 由 Office 365 使用，用于合并多种类型的身份验证，例如 SPF、DKIM、DMARC 或邮件的任何其他部分，以确定是否对邮件进行身份验证。 使用“From: domain”作为评估的基础。|
+|compauth|复合身份验证结果。 由 Office 365 使用，用于合并多种类型的身份验证，例如 SPF、DKIM、DMARC 或邮件的任何其他部分，以确定是否对邮件进行身份验证。 使用“From: domain”作为评估的基础。<br/><br/>可能的值包括：<ul><li>**pass**：邮件已通过显式身份验证（已通过或[最佳猜测通过](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365) DMARC）或已通过隐式身份验证（发送域未发布电子邮件身份验证记录，但 Office 365 有强烈的后端信号指示该消息有可能是具有高置信度的合法邮件）。</li><li>**sofpass**：邮件以中低置信度通过了隐式身份验证。 发送域未发布电子邮件身份验证记录，但 Office 365 具有指示邮件为合法邮件的后端信号，但信号强度较弱。</li><li>**fail**：邮件未通过显式身份验证（发送域具有电子邮件身份验证记录）或未通过隐式身份验证（发送域没有电子邮件身份验证记录，因此 Office 365 就像已发布记录一样插入结果）。</li><li>**none**：邮件未进行身份验证（或者已进行身份验证但不一致），但由于发件人信誉或其他因素而未应用复合身份验证。</li></ul>|
 |dkim|说明邮件的 DKIM 检查结果。可能的值包括： <ul><li>**pass**：表示通过了邮件的 DKIM 检查。</li><li>**fail (reason)**：表示未通过了邮件的 DKIM 检查并给出原因。 例如，如果邮件未签名或签名未经验证。</li><li>**none**：表示邮件未签名。 这可能表示或不表示域存在 DKIM 记录或 DKIM 记录未生成结果，仅表示该邮件未签名。</li></ul>|
 |dmarc|说明邮件的 DMARC 检查结果。可能的值包括： <ul><li>**pass**：表示通过了邮件的 DMARC 检查。</li><li>**fail**：表示未通过邮件的 DMARC 检查。</li><li>**bestguesspass**：表示域没有 DMARC TXT 记录；如果存在该记录，就会通过邮件的 DMARC 检查。 这是因为 `5321.MailFrom` 地址（亦称为“MAIL FROM 地址”、“P1 发件人”或“信封发件人”）中的域与 `5322.From` 地址（亦称为“发件人地址”或“P2 发件人”）中的域一致。</li><li>**none**：表示没有 DKIM TXT 记录用于 DNS 中的发送域。|
 |header.d|DKIM 签名中标识的域（如有）。这指的是 针对公钥查询的域。|
 |header.from|电子邮件头中 `5322.From` 地址（亦称为“发件人地址”或“P2 发件人”）的域。 收件人在电子邮件客户端中看到发件人地址。|
-|reason|复合身份验证通过或失败的原因。 reason 的值由三个数字组成： <ul><li>**000**：邮件身份验证时显式失败。 例如，邮件未通过 DMARC 检查，采用的操作是“隔离”或“拒绝”。</li><li>**001**：邮件身份验证时隐式失败，且发送域未发布身份验证策略。 例如，p=none 的 DMARC 策略。</li><li>**1xx** 或 **7xx**：邮件通过了身份验证。 第二个两位数是 Office 365 使用的内部代码。</li><li>**2xx**：邮件“软”通过了身份验证。 第二个两位数是 Office 365 使用的内部代码。</li><li>**3xx**：未针对复合身份验证检查邮件。</li><li>**4xx** 或 **9xx**：邮件规避了复合身份验证。 第二个两位数是 Office 365 使用的内部代码。</li></ul>|
+|reason|复合身份验证通过或失败的原因。 该值是一个 3 位数的代码。 例如： <ul><li>**000**：邮件未通过显式身份验证 (`compauth=fail`)。 例如，邮件未通过 DMARC 验证，采取的操作是隔离或拒绝。</li><li>**001**：邮件未通过隐式身份验证 (`compauth=fail`)。 这意味着发送域未发布电子邮件身份验证记录，或者如果已发布，则意味着它们具有较弱的失败策略（SPF 软失败或中性，DMARC 策略为 `p=none`）。</li><li>**002**：组织为发件人/域对设置了明确禁止发送欺骗电子邮件的策略。 此设置由管理员手动设置。</li><li>**010**：邮件未通过 DMARC 验证，并采取了拒绝或隔离操作，而且发送域是组织的接受域之一（这是自我欺骗或组织内欺骗的一部分）之一。</li><li>**1xx** 或 **7xx**：邮件通过了身份验证 (`compauth=pass`)。 最后两位数是 Office 365 使用的内部代码。</li><li>**2xx**：邮件“软”通过隐式身份验证 (`compauth=softpass`)。 最后两位数是 Office 365 使用的内部代码。</li><li>**3xx**：未针对复合身份验证检查邮件 (`compauth=none`)。</li><li>**4xx** 或 **9xx**：邮件规避了复合身份验证 (`compauth=none`)。 最后两位数是 Office 365 使用的内部代码。</li><li>**6xx**：邮件未通过隐式电子邮件身份验证，并采取了拒绝或隔离操作，而且发送域是组织的接受域之一（它是自我欺骗或组织内欺骗的一部分）之一。</li></ul>|
 |smtp.mailfrom|`5321.MailFrom` 地址（亦称为“MAIL FROM 地址”、“P1 发件人”或“信封发件人”）的域。 这是用于未送达报告（亦称为“NDR”或“退回邮件”）的电子邮件地址。|
 |spf|说明邮件的 SPF 检查结果。可能的值包括： <ul><li>**pass (IP address)**：表示通过了邮件的 SPF 检查，且包含发件人的 IP 地址。 已授权客户端代表发件人的域发送或中继电子邮件。</li><li>**fail (IP address)**：表示未通过邮件的 SPF 检查，且包含发件人的 IP 地址。 这有时也称为_硬失败_。</li><li>**softfail (reason)**：表示 SPF 记录已将主机指定为不允许发送但正处于转换状态。</li><li>**neutral**：表示 SPF 记录已显式声明其未断言 IP 地址是否已获授权。</li><li>**none**：表示域没有 SPF 记录或者 SPF 记录未计算得到结果。</li><li>**temperror**：表示发生可能是暂时性的错误，例如 DNS 错误。 无需任何管理员操作，稍后再次尝试可能就会成功。</li><li>**permerror**：表示发生永久性错误。 例如，域的 SPF 记录格式非常不规范时会出现此值。</li></ul>|
 |

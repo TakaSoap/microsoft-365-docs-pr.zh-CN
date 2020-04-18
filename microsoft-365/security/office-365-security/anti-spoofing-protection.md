@@ -17,644 +17,149 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: 本文介绍 Office 365 如何缓解使用伪造发件人域（即欺骗性域）的网络钓鱼攻击。 通过分析邮件并阻止无法使用标准电子邮件身份验证方法或其他发件人信誉技术进行身份验证的邮件，它可以实现这一目标。 实施此更改是为了减少 Office 365 中的组织所面临的网络钓鱼攻击的数量。
-ms.openlocfilehash: 5d4b9f0c94a68d457aa59b768444746627dffb9d
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: ''
+ms.openlocfilehash: 53e671e72922eb337cd5af2cfaa11b3ce3f95399
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081360"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537517"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的反欺骗保护
 
-本文介绍 Office 365 如何缓解使用伪造发件人域（即欺骗性域）的网络钓鱼攻击。 通过分析邮件并阻止无法使用标准电子邮件身份验证方法或其他发件人信誉技术进行身份验证的邮件，它可以实现这一目标。 实施此更改是为了减少 Office 365 中的组织所面临的网络钓鱼攻击的数量。
+无论你是拥有 Exchange Online 邮箱的 Office 365 客户，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 都包括帮助保护你的组织免受欺骗（伪造）发件人威胁的功能。
 
-本文还介绍了为何要进行此更改、客户如何为此更改做好准备、如何查看将受影响的邮件、如何报告邮件、如何减少误报以及 Microsoft 的发件人应如何为此更改做好准备。
+在为用户提供保护方面，Microsoft 非常重视网络钓鱼的威胁。 欺骗是黑客使用的一种常见技术。 **欺骗邮件看似来自某人或某处，其实并非其真实来源**。 此技术通常在专门获取用户凭据的网络钓鱼活动中使用。 EOP 中的反欺骗技术专门检查邮件正文中的“发件人”标头（用于显示电子邮件客户端中的邮件发件人）。 如果 EOP 高度确信“发件人”标头是伪造的，该邮件将被识别为欺骗邮件。
 
-Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅或已为其订阅购买了 Office 365 高级威胁防护 (ATP) 加载项的组织。 截至 2018 年 10 月，我们已将保护范围扩展到拥有 Exchange Online Protection (EOP) 的组织。 此外，Outlook.com 用户也可能会受到影响，具体取决于筛选器相互学习的方式。
+EOP 中提供了以下反欺骗技术：
+
+- **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+
+- **反网络钓鱼策略**：在 EOP 中，内置的反网络钓鱼策略使你能够打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定针对被阻止的欺骗发件人执行的操作（移动到“垃圾邮件”文件夹或隔离）。 Office 365 高级威胁防护 (ATP) 中提供的高级反网络钓鱼策略高级威胁防护还包含反模拟设置（受保护的发件人和域）、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 [Office 365 中的反网络钓鱼策略](set-up-anti-phishing-policies.md)。
+
+- **电子邮件身份验证**：DNS 中的 SPF、DKIM 和 DMARC 记录使用的电子邮件身份验证（也称为电子邮件验证）是任何反欺骗工作必不可少的一部分。 可以为你的域配置这些记录，以便目标电子邮件系统能够检查声称来自域中发件人的邮件的有效性。 对于入站邮件，Office 365 需要针对发件人域的电子邮件身份验证。 有关详细信息，请参阅 [Office 365 中的电子邮件认证](email-validation-and-authentication.md)。
+
+Microsoft 的反欺骗技术最初仅部署到具有 Office 365 Office 365 高级威胁防护 (ATP) 的组织。 2018 年 10 月，EOP 新增了反欺骗防护功能。
+
+EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技术组合无法验证的邮件。
+
+![EOP 反欺骗检查](../../media/eop-anti-spoofing-protection.png)
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>如何在网络钓鱼攻击中使用欺骗
 
-在为用户提供保护方面，Microsoft 非常重视网络钓鱼的威胁。 垃圾邮件制作者和网络钓鱼者通常使用的技术之一就是欺骗，即伪造发件人，并且邮件似乎来自实际来源以外的某人或某个位置。 此技术通常在专门获取用户凭据的网络钓鱼活动中使用。 Microsoft 反欺骗技术专用于检查在 Outlook 等电子邮件客户端中显示的伪造的“发件人: 标头”。 当 Microsoft 高度确信“发件人: 标头”存在欺骗时，它会将该邮件标识为欺骗邮件。
+欺骗邮件会对用户造成以下负面影响：
 
-欺骗邮件会对现实生活中的用户造成两个负面影响：
+- **欺骗邮件设备用户**：欺骗邮件可能会欺骗收件人点击链接并放弃使用其凭据、下载恶意软件或向邮件回复敏感内容（称为商务电子邮件入侵或 BEC）。
 
-### <a name="1-spoofed-messages-deceive-users"></a>1. 欺骗性邮件会误导用户
+  以下是一封具有伪造发件人 msoutlook94@service.outlook.com 的网络钓鱼邮件示例：
 
-首先，欺骗性邮件可能会欺骗用户点击链接并放弃使用其凭据、下载恶意软件或回复具有敏感内容的邮件（后者称为商务电子邮件入侵）。 例如，以下是一封具有伪造发件人 msoutlook94@service.outlook.com 的网络钓鱼邮件：
+  ![冒充 service.outlook.com 的网络钓鱼邮件](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
-![冒充 service.outlook.com 的网络钓鱼邮件](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  此邮件并非来自 service.outlook.com，而是攻击者伪造“**发件人**”标头字段，使它看起来像是这样。 这种做法试图欺骗收件人单击“**更改密码**”链接并放弃使用其凭据。
 
-上述邮件实际上并非来自 service.outlook.com，而是被网络钓鱼者伪造成这样。 它试图欺骗用户点击邮件中的链接。
+  以下邮件是使用欺骗电子邮件域 contoso.com 的 BEC 示例：
 
-下一个示例是欺骗性的 contoso.com：
+  ![网络钓鱼邮件 - 商务电子邮件入侵](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
-![网络钓鱼邮件 - 商务电子邮件入侵](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  该邮件看似合法，但发件人其实是伪造的。
 
-该邮件看似合法，但实际上是一封欺骗性邮件。 此网络钓鱼邮件是一种商务电子邮件入侵，它是网络钓鱼的子类别。
+- **用户混淆了真实邮件和虚假邮件**：即使是知道网络钓鱼的用户也可能很难看出真实邮件与欺骗邮件之间的差异。
 
-### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. 用户将真实邮件与虚假邮件弄混淆
+  例如，以下是来自 Microsoft 安全帐户部门的真实密码重置邮件的示例：
 
-其次，欺骗性邮件为了解网络钓鱼邮件的用户带来了不确定性，使其无法区分真实邮件和欺骗性邮件。 例如，以下是从 Microsoft 安全帐户电子邮件地址重置实际密码的示例：
+  ![Microsoft 合法密码重置](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-![Microsoft 合法密码重置](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  该邮件实际上确实来自 Microsoft，但用户已经养成了持怀疑态度的习惯。 由于很难区分真实密码重置邮件和虚假邮件，因此许多用户会忽略这些邮件、将其报告为垃圾邮件，或者不必要地将该邮件作为网络钓鱼邮件报告给 Microsoft。
 
-上述邮件确实来自 Microsoft，但与此同时，用户习惯于获取可能诱使其点击链接并放弃使用其凭据、下载恶意软件或回复包含敏感内容的邮件的网络钓鱼邮件。 由于很难区分真实密码重置和虚假密码重置，因此许多用户会忽略这些邮件，将其报告为垃圾邮件，或者不必要地将该邮件作为遗漏的网络钓鱼欺骗邮件报告给 Microsoft。
-
-为了阻止欺骗，电子邮件筛选行业开发了 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、[DKIM](use-dkim-to-validate-outbound-email.md) 和 [DMARC](use-dmarc-to-validate-email.md) 等电子邮件身份验证协议。 DMARC 可防止通过欺骗手段检查邮件的发件人。 也就是说，用户在其电子邮件客户端（在上面的示例中为 service.outlook.com、outlook.com 和 ccountprotection.microsoft.com）中看到的发件人。 此外，用户还可以看到域已通过 SPF 或 DKIM 检查，这意味着域已通过身份验证，因此未受欺骗。 有关更完整的讨论，请参阅本文后面的“*了解电子邮件身份验证为何并非总能阻止欺骗*”。
-
-但问题在于电子邮件身份验证记录是可选的，而不是必需的。 因此，具有强身份验证策略（如 microsoft.com 和 skype.com）的域可以防止欺骗，而发布较弱身份验证策略或根本没有策略的域则是欺骗活动攻击的目标。 截至 2018 年 3 月，在财富 500 强企业中，只有 9% 的域发布了强电子邮件身份验证策略。 剩余 91％ 的域可能被网络钓鱼者冒充，除非电子邮件筛选器使用其他策略检测到这些欺骗活动，否则可能会将其传递给最终用户并误导他们：
-
-![财富 500 强企业的 DMARC 策略](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
-
-未跻身财富 500 强的已发布强大电子邮件身份验证策略的中小型公司所占比例较小，而对于北美和西欧以外的域，发布强大策略的比例仍较小。
-
-这是一个大问题，因为企业可能不知道电子邮件身份验证的工作方式，但网络钓鱼者确实了解这一点并且会加以利用。
-
-有关设置 SPF、DKIM 和 DMARC 的信息，请参阅本文档后面的“*Office 365 客户*”部分。
-
-## <a name="stopping-spoofing-with-implicit-email-authentication"></a>使用隐式电子邮件身份验证阻止欺骗
-
-由于网络钓鱼和鱼叉式网络钓鱼是一个大问题，并且强大的电子邮件身份验证策略的采用有限，Microsoft 将继续投资打造旨在为客户提供保护的功能。 为此，Microsoft 正在推进*隐式电子邮件身份验证* - 如果域未进行身份验证，Microsoft 会将其视为已发布电子邮件身份验证记录，并在未通过时对其进行相应的处理。
-
-为了实现这一目标，Microsoft 为常规电子邮件身份验证构建了大量扩展，包括发件人信誉、发件人/收件人历史记录、行为分析和其他高级技术。 除非包含其他表明其为合法邮件的信号，否则从未发布电子邮件身份验证的域发送的邮件将被标记为欺骗邮件。
-
-通过这样做，最终用户可以确信发送给他们的电子邮件并非欺骗邮件，发件人可以确信没有人冒充他们的域，并且 Office 365 的客户可以提供更好的保护，例如模拟保护。
-
-若要查看 Microsoft 的一般声明，请参阅[网络钓鱼第 2 部分 - Office 365 中的增强反欺骗功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)。
-
-## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>识别已分类为欺骗的邮件
-
-### <a name="composite-authentication"></a>复合身份验证
-
-虽然 SPF、DKIM 和 DMARC 本身都很有用，但如果邮件没有明确的身份验证记录，它们就无法传递充足的身份验证状态。 为此，Microsoft 开发了一种算法，可将多个信号组合成一个称为复合身份验证（或简称为“compauth”）的单一值。 Office 365 中的客户可以在邮件头的“*Authentication-Results*”标头中标记 compauth 值。
-
-```text
-Authentication-Results:
-  compauth=<fail|pass|softpass|none> reason=<yyy>
-```
-
-|**CompAuth 结果**|**说明**|
-|:-----|:-----|
-|失败|邮件未通过显式身份验证（发送域已在 DNS 中显式发布记录）或隐式身份验证（发送域未在 DNS 中发布记录，而 Office 365 就像已发布记录一样插入结果）。|
-|通过|邮件已通过显式身份验证（邮件通过 DMARC 或[最佳猜测通过 DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)）或具有高可信度的隐式身份验证（发送域未发布电子邮件身份验证记录，但 Office 365 具有强大的后端信号来指示邮件很有可能是合法邮件）。|
-|softpass|消息以低到中等可信度通过隐式身份验证（发送域未发布电子邮件身份验证，但 Office 365 具有后端信号来指示邮件为合法邮件，但信号强度较弱）。|
-|无|邮件未进行身份验证（或者它已进行身份验证但不一致），但由于发件人信誉或其他因素而未应用复合身份验证。|
-
-|||
-|:-----|:-----|
-|**原因**|**说明**|
-|0xx |邮件未通过复合身份验证。<br/>**000** 表示邮件未通过 DMARC 验证，并采取了拒绝或隔离操作。  <br/>**001** 表示邮件未通过隐式电子邮件身份验证。 这意味着发送域未发布电子邮件身份验证记录，或者如果已发布，则它们具有较弱的失败策略（SPF 软失败或中性，DMARC 策略为 p=无）。  <br/>**002** 表示组织为发件人/域对设置了明确禁止发送欺骗性电子邮件的策略，此设置由管理员手动设置。  <br/>**010** 表示邮件未通过 DMARC 验证，并采取了拒绝或隔离操作，而且发送域是组织的接受域之一（这是自我欺骗或组织内欺骗的一部分）之一。|
-|1xx、2xx、3xx、4xx 和 5xx|对应于各种内部代码，指明邮件为何已通过隐式身份验证或者未进行身份验证且未执行任何操作。|
-|6xx|表示邮件未通过隐式电子邮件身份验证，并采取了拒绝或隔离操作，而且发送域是组织的接受域之一（它是自我欺骗或组织内欺骗的一部分）之一。|
-
-通过查看邮件的标头，管理员甚至是最终用户可以确定 Office 365 如何得出发件人可能带欺骗性质的结论。
-
-### <a name="differentiating-between-different-types-of-spoofing"></a>区分不同类型的欺骗
+## <a name="different-types-of-spoofing"></a>不同类型的欺骗
 
 Microsoft 区分两种不同类型的欺骗邮件：
 
-#### <a name="intra-org-spoofing"></a>组织内欺骗
+- **组织内欺骗**：也称为 _自我欺骗_。 例如：
 
-也称为自我欺骗，如果“发件人: 地址”中的域与收件人域相同或相一致（当收件人域是组织的[接受域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)之一时），就会发生这种情况。或者，当“发件人: 地址”中的域是同一组织的一部分时，也会发生这种情况。
+  - 发件人和收件人位于同一域：
+    > 发件人：chris@contoso.com <br/> 收件人：michelle@contoso.com
 
-例如，以下邮件具有来自同一域 (contoso.com) 的发件人和收件人。 在电子邮件地址中插入空格以防止垃圾邮件程序在此页面上收集信息：
+  - 发件人和收件人位于同一域的子域：
+    > 发件人：laura@marketing.fabrikam.com <br/> 收件人：julia@engineering.fabrikam.com
 
-> 发件人：sender @ contoso.com <br/> 收件人：recipient @ contoso.com
+  - 发件人和收件人位于属于同一组织的不同域（即，两个域均配置为同一组织中的[接受域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)）：
+    > 发件人：sender @ microsoft.com <br/> 收件人：recipient @ bing.com
 
-以下邮件具有与组织域 (fabrikam.com) 相一致的发件人和收件人域：
+    电子邮件地址中使用空格，以防垃圾邮件机器人收集邮件。
 
-> 发件人：sender @ foo.fabrikam.com <br/> 收件人：recipient @ bar.fabrikam.com
+  由于组织内欺骗而导致未通过[复合身份验证](email-validation-and-authentication.md#composite-authentication)的邮件包含以下标头值：
 
-以下发件人和收件人域不同（microsoft.com 和bing.com），但它们属于同一组织（即两者都是组织的接受域的一部分）：
+  `Authentication-Results: ... compauth=fail reason=6xx`
 
-> 发件人：sender @ microsoft.com <br/> 收件人：recipient @ bing.com
+  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
 
-未通过组织内欺骗验证的邮件在标头中包含以下值：
+  - `reason=6xx` 表示组织内欺骗。
 
-`X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  - 其中，CAT 表示邮件的类别，通常为 SPM（垃圾邮件），但有时可能是 HSPM（高可信度垃圾邮件）或 PHISH（网络钓鱼），具体取决于邮件中检测到的其他模式类型。
 
-其中 CAT 表示邮件的类别，通常标记为 SPM（垃圾邮件），但有时可能是 HSPM（高可信度垃圾邮件）或 PHISH（网络钓鱼），具体取决于邮件中出现的其他模式类型。
+  - SFTY 是邮件的安全级别。 9 表示网络钓鱼，11 表示组织内欺骗。
 
-SFTY 表示邮件的安全级别，第一个数字 (9) 表示该邮件是网络钓鱼邮件，点 (11) 之后的第二组数字表示它是组织内欺骗。
+- **跨域欺骗**：发件人和收件人域不同，相互之间没有任何关系（也称为外部域）。 例如：
+    > 发件人：chris@contoso.com <br/> 收件人：michelle@tailspintoys.com
 
-组织内欺骗的复合身份验证没有特定的原因代码，将在 2018 年晚些时候进行标记（时间表尚未确定）。
+  由于跨域欺骗而导致未通过[复合身份验证](email-validation-and-authentication.md#composite-authentication)的邮件包含以下标头值：
 
-#### <a name="cross-domain-spoofing"></a>跨域欺骗
+  `Authentication-Results: ... compauth=fail reason=000/001`
 
-当“发件人: 地址”中的发送域是接收组织的外部域时，会发生这种情况。 由于跨域欺骗而导致未通过复合身份验证的邮件在标头中包含以下值：
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-`Authentication-Results: ... compauth=fail reason=000/001`
+  - `reason=000` 值表示邮件未通过显式电子邮件身份验证。 `reason=001` 表示邮件未通过隐式电子邮件身份验证。
 
-`X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
+  - SFTY 是邮件的安全级别。 9 表示网络钓鱼，22 表示跨域欺骗。
 
-在这两种情况下，邮件中都会标记以下红色安全提示，或者根据收件人邮箱的语言提供自定义等效提示：
+有关与欺骗相关的类别和复合身份验证 (compauth) 值的详细信息，请参阅 [Office 365 中的反垃圾邮件标头](anti-spam-message-headers.md)。
 
-![红色安全提示 - 欺诈检测](../../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+有关 DMARC 的详细信息，请参阅[在 Office 365 中使用 DMARC 来验证电子邮件](use-dmarc-to-validate-email.md)。
 
-只有通过查看“发件人: 地址”并了解收件人电子邮件的内容，或者通过检查电子邮件标头，你才能区分组织内欺骗和跨域欺骗。
+## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>关于被标记为欺骗邮件的邮件数的报告
 
-## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>Office 365 的客户如何为新的反欺骗保护做好准备
+EOP 组织可在安全与合规性中心的“报告”仪表板中使用**欺骗检测**报告。 有关详细信息，请参阅[欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
 
-### <a name="information-for-administrators"></a>为管理员提供的信息
+Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理器查看有关钓鱼网站尝试的信息。 有关详细信息，请参阅 [Office 365 威胁调查和响应](office-365-ti.md)。
 
-作为 Office 365 中组织的管理员，你应该了解一些重要信息。
+## <a name="problems-with-anti-spoofing-protection"></a>反欺骗防护方面的问题
 
-### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>了解电子邮件身份验证为何并非总能阻止欺骗
+由于转发和修改邮件的方式，邮件列表（也称为讨论列表）存在反欺骗问题。
 
-新的反欺骗保护依赖电子邮件身份验证（SPF、DKIM 和 DMARC），而不是将邮件标记为欺骗邮件。 一个常见示例是发送域从未发布过 SPF 记录。 如果没有 SPF 记录或者设置不正确，则发送的邮件将被标记为欺骗邮件，除非 Microsoft 通过后端智能指明该邮件是合法邮件。
+例如，Gabriela Laureano (glaureano@contoso.com) 有兴趣赏鸟，他加入了邮件列表 birdwatchers@fabrikam.com，并向列表发送了以下邮件：
 
-例如，在部署反欺骗之前，邮件可能看起来如下：没有 SPF 记录，没有 DKIM 记录，也没有 DMARC 记录：
-
-```text
-Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
-  (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=fabrikam.com;
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
-```
-
-在部署反欺骗之后，如果你拥有 Office 365 企业版 E5、EOP 或 ATP，则会标记 compauth 值：
-
-```text
-Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
-  (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=fabrikam.com; compauth=fail reason=001
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
-```
-
-如果 fabrikam.com 通过设置 SPF 记录而不是 DKIM 记录来修复此问题，则可通过复合身份验证，因为通过 SPF 验证的域与“发件人: 地址”中的域相一致：
-
-```text
-Authentication-Results: spf=pass (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
-  (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
-  action=none header.from=fabrikam.com; compauth=pass reason=109
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
-```
-
-或者，如果已设置 DKIM 记录而不是 SPF 记录，则也可通过复合身份验证，因为 DKIM 签名中的域与“发件人: 地址”中的域相一致：
-
-```text
-Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass
-  (signature was verified) header.d=outbound.fabrikam.com;
-  contoso.com; dmarc=bestguesspass action=none
-  header.from=fabrikam.com; compauth=pass reason=109
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
-```
-
-但是，网络钓鱼者还可以设置 SPF 和 DKIM，并使用自己的域对邮件进行签名，而在“发件人: 地址”中指定其他域。 SPF 和 DKIM 都不要求域与“发件人: 地址”中的域保持一致，因此除非 fabrikam.com 发布了 DMARC 记录，否则不会使用 DMARC 将其标记为欺骗邮件：
-
-```text
-Authentication-Results: spf=pass (sender IP is 5.6.7.8)
-  smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
-  (signature was verified) header.d=maliciousDomain.com;
-  contoso.com; dmarc=none action=none header.from=fabrikam.com;
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
-```
-
-在电子邮件客户端（Outlook、Outlook 网页版或任何其他电子邮件客户端）中，仅显示“发件人:”域，而不显示 SPF 或 DKIM 中的域，这可能误导用户认为该邮件来自 fabrikam.com，但它实际上来自 maliciousDomain.com。
-
-![已对邮件进行身份验证，但“发件人:”域与通过 SPF 或 DKIM 验证的域不一致。](../../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
-
-因此，Office 365 要求“发件人: 地址”中的域与 SPF 或 DKIM 签名中的域保持一致，如果不一致，则需要包含一些其他内部信号，以指明该邮件是合法邮件。 否则，该邮件将为 compauth 失败状态。
-
-```text
-Authentication-Results: spf=none (sender IP is 5.6.7.8)
-  smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
-  (signature was verified) header.d=maliciousDomain.com;
-  contoso.com; dmarc=none action=none header.from=contoso.com;
-  compauth=fail reason=001
-From: sender@contoso.com
-To: someone@fabrikam.com
-```
-
-因此，Office 365 反欺骗可以抵御未经过身份验证的域，以及已设置身份验证但与“发件人: 地址”中的域（用户看到并认为该域是邮件的发件人）不一致的域。 这适用于组织外部的域以及组织内的域。
-
-因此，如果你收到的邮件未通过复合身份验证并且被标记为欺骗邮件，即使该邮件通过了 SPF 和 DKIM 验证，也是因为通过 SPF 和 DKIM 验证的域与“发件人: 地址”中的域不一致。
-
-### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>了解欺骗性电子邮件处理方式的更改
-
-目前，对于 Office 365 中的所有组织 - ATP 和非 ATP - 未通过 DMARC 验证（使用拒绝或隔离策略）的邮件被标记为垃圾邮件并且通常采取高可信度垃圾邮件操作，或者有时采取常规垃圾邮件操作（具体取决于其他垃圾邮件规则是否先将其识别为垃圾邮件）。 组织内欺骗检测采取常规垃圾邮件操作。 不需要启用此行为，也不能禁用此行为。
-
-但是，对于跨域欺骗性邮件，在此更改之前，将对它们进行常规垃圾邮件、网络钓鱼和恶意软件检查，如果筛选器的其他部分将其标识为可疑邮件，则会将它们分别标记为垃圾邮件、网络钓鱼或恶意软件。 通过新的跨域欺骗保护，默认情况下，任何无法通过身份验证的邮件都将采取“反网络钓鱼”\>“反欺骗策略”中定义的操作。 如果未定义任何操作，则系统会将其移到用户垃圾邮件文件夹。 在某些情况下，会在更多可疑邮件中添加红色安全提示。
-
-这可能会导致以前标记为垃圾邮件的某些邮件仍被标记为垃圾邮件，但现在还会有红色安全提示；在其他情况下，之前标记为非垃圾邮件的邮件将开始标记为垃圾邮件 (CAT:SPOOF)，并添加红色安全提示。 在其他情况下，将所有垃圾邮件和网络钓鱼移到隔离区的客户现在会看到它们已转移到垃圾邮件文件夹（可以更改此行为，请参阅[更改反欺骗设置](#changing-your-anti-spoofing-settings)）。
-
-邮件可能具有多种不同的欺骗方式（请参阅[区分不同类型的欺骗](#differentiating-between-different-types-of-spoofing)），但是截至 2018 年 3 月，Office 365 处理这些邮件的方式尚未统一。 下表是快速摘要，其中跨域欺骗保护是一种新行为：
-
-|**欺骗类型**|**类别**|**是否添加安全提示？**|**适用于**|
-|:-----|:-----|:-----|:-----|
-|DMARC 失败（隔离或拒绝）|HSPM（默认），也可能是 SPM 或 PHSH|否（尚未添加）|所有 Office 365 客户、Outlook.com|
-|自我欺骗|SPM|是|所有 Office 365 组织、Outlook.com|
-|跨域|SPOOF|是|Office 365 高级威胁防护和 E5 客户|
-
-### <a name="changing-your-anti-spoofing-settings"></a>更改反欺骗设置
-
-若要创建或更新（跨域）防欺骗设置，请转到安全与合规中心的“威胁管理”\>“策略”选项卡下的“防钓鱼”\>“防欺骗”设置。 如果你从未创建任何反网络钓鱼设置，则需要创建一个：
-
-![反网络钓鱼 - 创建新策略](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
-
-如果你已创建一个，则可以选择它以进行修改：
-
-![反网络钓鱼 - 修改现有策略](../../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
-
-选择你刚刚创建的策略，然后按照[详细了解反欺骗智能保护](learn-about-spoof-intelligence.md)中所述的步骤执行操作。
-
-![启用或禁用反欺骗](../../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
-
-![启用或禁用反欺骗安全提示](../../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
-
-使用 PowerShell 创建新策略：
-
-```powershell
-$org = Get-OrganizationConfig
-$name = "My first anti-phishing policy for " + $org.Name
-# Note: The name should not exclude 64 characters, including spaces.
-# If it does, you will need to pick a smaller name.
-# Next, create a new anti-phishing policy with the default values
-New-AntiphishPolicy -Name $Name
-# Select the domains to scope it to
-# Multiple domains are specified in a comma-separated list
-$domains = "domain1.com, domain2.com, domain3.com"
-# Next, create the anti-phishing rule, scope it to the anti-phishing rule
-New-AntiphishRule -Name $name -AntiphishPolicy $name -RecipientDomainIs $domains
-```
-
-然后，你可以按照文档[设置反网络钓鱼策略](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy)部分中的说明，使用 PowerShell 修改反网络钓鱼策略参数。 你可以将 $name 指定为参数：
-
-```powershell
-Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
-```
-
-在 2018 年晚些时候，你不必创建一个默认策略，系统将为组织内的所有收件人创建一个默认策略，因此你不必手动指定它（在最终实施之前，以下屏幕截图可能会发生变更）。
-
-![反网络钓鱼的默认策略](../../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
-
-与你创建的策略不同，你无法删除默认策略、修改其优先级或选择该策略适用的用户、域或组。
-
-![反网络钓鱼默认策略详细信息](../../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
-
-使用 PowerShell 设置默认保护：
-
-```powershell
-$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
-Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
-```
-
-仅当 Office 365 前面有另一台邮件服务器或服务器时，才应该禁用反欺骗保护（有关详细信息，请参阅“禁用反欺骗的合法情景”）。
-
-```powershell
-$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
-Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-```
-
-> [!IMPORTANT]
-> 如果电子邮件路径中的第一个跃点是 Office 365，并且你收到太多标记为欺骗邮件的合法电子邮件，则应该先设置允许其将欺骗性电子邮件发送到你所在域的发件人（请参阅本主题中的“[管理发送未经身份验证的电子邮件的合法发件人](#managing-legitimate-senders-who-are-sending-unauthenticated-email)”一节）。 如果你仍收到太多误报（即标记为欺骗邮件的合法邮件），我们建议你不要完全禁用反欺骗保护。 相反，我们建议选择“基本”而不是“高级”保护。 解决误报问题比将贵组织暴露在欺骗性电子邮件中更好，后者可能最终导致长期成本显著增加。
-
-### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>管理发送未经身份验证的电子邮件的合法发件人
-
-Office 365 会跟踪向贵组织发送未经身份验证的电子邮件的人员。 如果服务部门认为该发件人不合法，则会将其标记为 *compauth* 失败。 这将归类为“SPOOF”，但具体取决于为邮件应用的反欺骗策略。
-
-但是，作为管理员，你可以指定允许哪些发件人发送欺骗性电子邮件，这会覆盖 Office 365 的决策。
-
-#### <a name="method-1---if-your-organization-owns-the-domain-set-up-email-authentication"></a>方法 1 - 如果你的组织拥有该域，请设置电子邮件身份验证
-
-如果你拥有多个租户或与多个租户进行交互，则此方法可用于解决组织内欺骗和跨域欺骗。 它还有助于解决你发送给 Office 365 中的其他客户以及在其他提供程序中托管的第三方的跨域欺骗。
-
-有关详细信息，请参阅 [Office 365 客户](#customers-of-office-365)。
-
-#### <a name="method-2---use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>方法 2 - 使用反欺骗智能保护配置允许发送未经身份验证的电子邮件的人员
-
-你也可以使用[反欺骗智能保护](learn-about-spoof-intelligence.md)允许发件人将未经身份验证的邮件传送到你的组织。
-
-对于外部域，冒充的用户位于发件人地址中的域，而发送基础结构是发送 IP 地址（分为 /24 CIDR 范围）或 PTR 记录的组织域（在以下屏幕截图中，发送 IP 可能是 131.107.18.4，其 PTR 记录是 outbound.mail.protection.outlook.com，这将显示为发送基础结构的 outlook.com）。
-
-若要允许此发件人发送未经身份验证的电子邮件，请将“**否**”更改为“**是**”。
-
-![设置反欺骗允许的发件人](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
-
-你还可以使用 PowerShell 允许特定发件人将邮件发送到你所在的域：
-
-```powershell
-$file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
-Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
-```
-
-![通过 Powershell 获取冒充的发件人](../../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
-
-在上一张图片中，添加了额外的换行符以使此屏幕截图适合查看。 通常情况下，将在单行上显示所有值。
-
-编辑文件并查找与 outlook.com 和 bing.com 对应的行，并将 AllowedToSpoof 条目从“否”更改为“是”：
-
-![在 Powershell 中将欺骗允许设置为“是”](../../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
-
-保存该文件，然后运行：
-
-```powershell
-$UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
-Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
-```
-
-现在，将允许 bing.com 发送来自 \*.outlook.com 的未经身份验证的电子邮件。
-
-#### <a name="method-3---create-an-allow-entry-for-the-senderrecipient-pair"></a>方法 3 - 为发件人/收件人对创建允许条目
-
-你还可以选择绕过特定发件人的所有垃圾邮件筛选。 有关详细信息，请参阅[如何在 Office 365 中将发件人安全地添加到允许列表](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/)。
-
-如果使用此方法，它将跳过垃圾邮件和一些网络钓鱼筛选，但不会跳过恶意软件筛选。
-
-#### <a name="method-4---contact-the-sender-and-ask-them-to-set-up-email-authentication"></a>方法 4 - 与发件人联系并请求他们设置电子邮件身份验证
-
-由于存在垃圾邮件和网络钓鱼问题，Microsoft 建议所有发件人设置电子邮件身份验证。 如果你知道发送域的管理员，请与他们联系并请求他们设置电子邮件身份验证记录，这样你就不必添加任何替代。 有关详细信息，请参阅本文后面的[非 Office 365 客户的域管理员](#administrators-of-domains-that-are-not-office-365-customers)。
-
-虽然刚开始可能很难让发送域进行身份验证，但随着时间的推移，随着越来越多的电子邮件筛选器开始放弃甚至拒绝他们的电子邮件，这将使他们设置正确的记录以确保更好地交付。
-
-### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>查看有关多少邮件被标记为欺骗邮件的报表
-
-启用反欺骗策略后，你可以使用威胁调查和响应功能来获取标记为网络钓鱼的邮件数量。 为此，请转到安全与合规中心 (SCC) 的“威胁管理”\>“资源管理器”下，将“视图”设置为“钓鱼”，并按“发件人域”或“保护状态”进行分组：
-
-![查看标记为网络钓鱼的邮件数量](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
-
-你可以与各种报表进行交互，以查看有多少邮件标记为网络钓鱼，包括标记为“SPOOF”的邮件。 有关详细信息，请参阅[开始使用 Office 365 威胁调查和响应](office-365-ti.md)。
-
-由于是欺骗而不是其他类型的网络钓鱼（一般网络钓鱼、域或用户模拟等），你无法拆分已标记的邮件。 不过，稍后将能通过安全与合规中心执行此操作。 完成后，你可以将此报表用作起点，以识别由于身份验证失败而被标记为欺骗邮件的可能合法的发送域。
-
-以下屏幕截图是关于数据外观的建议，但在发布时可能会发生改变：
-
-![按检测类型查看网络钓鱼报表](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
-
-对于非 ATP 和 E5 客户，这些报表将在后面的威胁防护状态 (TPS) 报表中提供，但会延迟至少 24 小时。 此页面将在集成到安全与合规中心时进行更新。
-
-### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>预测将标记为欺骗邮件的邮件数量
-
-一旦 Office 365 更新其设置以允许你关闭反欺骗执行，或者启用基本或高级执行，你将能够查看在各种设置下的邮件处置方式的更改。 也就是说，如果反欺骗保护已关闭，那么你将能够看到有多少邮件被检测为欺骗邮件（如果你转向“基本”或者它是基本执行）；如果转向高级执行，那么你将能够看到更多邮件被检测为欺骗邮件。
-
-此功能目前正在开发中。 随着定义更多详细信息，此页面将使用安全与合规性中心的屏幕截图和 PowerShell 示例进行更新。
-
-![用于启用反欺骗的“假设”报表](../../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
-
-![允许冒充发件人的可能 UX](../../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
-
-### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>禁用反欺骗的合法情景
-
-反欺骗可以更好地保护客户免受网络钓鱼攻击，因此强烈建议不要禁用反欺骗保护。 通过禁用它，你可以解决一些短期误报问题，但从长远来看，你将面临更大的风险。 在发件人端设置身份验证或对网络钓鱼策略进行调整的成本通常是一次性的，或者只需最少的定期维护。 但是，从数据泄露或资产受损的网络钓鱼攻击中恢复的成本要高得多。
-
-出于此原因，最好是解决误报问题而不是禁用反欺骗保护。
-
-但是，有一种应禁用反欺骗的合法情景，即在邮件路由中有其他邮件筛选产品，而 Office 365 不是电子邮件路径中的第一个跃点：
-
-![客户 MX 记录未指向 Office 365](../../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
-
-另一台服务器可能是 Exchange 本地邮件服务器、邮件筛选设备（如 Ironport）或其他云托管服务。
-
-如果收件人域的 MX 记录未指向 Office 365，则无需禁用反欺骗，因为 Office 365 会查找你的接收域的 MX 记录，并在其指向其他服务时禁止反欺骗。 如果你不知道域前面是否还有其他服务器，则可以使用 MX Toolbox 等网站查找 MX 记录。 它可能显示如下信息：
-
-![MX 记录指明域未指向 Office 365](../../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
-
-此域具有未指向 Office 365 的 MX 记录，因此 Office 365 不会应用反欺骗执行。
-
-但是，如果收件人域的 MX 记录*指向* Office 365，即使 Office 365 前面有其他服务，也应禁用反欺骗。 最常见的示例是使用收件人重写：
-
-![收件人重写的路由图](../../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
-
-域 contoso.com 的 MX 记录指向本地服务器，而域 @office365.contoso.net 的 MX 记录则指向 Office 365，因为它在 MX 记录中包含 \*.protection.outlook.com 或 \*.eo.outlook.com：
-
-![MX 记录指向 Office 365，因此可能是收件人重写](../../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
-
-确保区分收件人域的 MX 记录何时未指向 Office 365，以及何时进行了收件人重写。 区分这两种情况非常重要。
-
-如果你不确定接收域是否进行了收件人重写，则有时可以通过查看邮件标头来判断。
-
-a) 首先，在 Authentication-Results 标头中查看收件人域的邮件标头：
-
-```text
-Authentication-Results: spf=fail (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; office365.contoso.net; dkim=fail
-  (body hash did not verify) header.d=simple.fabrikam.com;
-  office365.contoso.net; dmarc=none action=none
-  header.from=fabrikam.com; compauth=fail reason=001
-```
-
-收件人域位于上面的粗体红色文本中，在本例中为 office365.contoso.net。 这可能与“收件人:”标头中的收件人不同：
-
-收件人：示例收件人 \<recipient @ contoso.com\>
-
-执行实际收件人域的 MX 记录查找。 如果它包含 \*.protection.outlook.com、mail.messaging.microsoft.com、\*.eo.outlook.com 或 mail.global.frontbridge.com，则表示 MX 指向 Office 365。
-
-如果它不包含这些值，则表示 MX 未指向 Office 365。 你可以使用 MX Toolbox 工具来对此进行验证。
-
-对于此特定示例，以下内容表示 contoso.com 域（看起来像收件人，因为它是“收件人:”标头）具有指向本地服务器的 MX 记录点：
-
-![MX 记录指向本地服务器](../../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
-
-但是，实际的收件人是 office365.contoso.net，其 MX 记录指向 Office 365：
-
-![MX 指向 Office 365，必须是收件人重写](../../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
-
-因此，此邮件可能进行了收件人重写。
-
-b) 其次，务必区分收件人重写的常见用例。 如果要将收件人域重写为 \*.onmicrosoft.com，请改为将其重写为 \*.mail.onmicrosoft.com。
-
-一旦确定了在另一台服务器后面路由的最终收件人域，并且收件人域的 MX 记录实际指向Office 365（在其 DNS 记录中发布），则可以继续禁用反欺骗。
-
-请记住，如果域的路由路径中的第一个跃点是 Office 365，则不希望禁用反欺骗，仅当它位于一个或多个服务之后时才会禁用。
-
-### <a name="how-to-disable-anti-spoofing"></a>如何禁用反欺骗
-
-如果你已创建反网络钓鱼策略，请将 *EnableAntispoofEnforcement* 参数设置为 $false：
-
-```powershell
-$name = "<name of policy>"
-Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
-```
-
-如果你不知道要禁用的策略的名称，则可以显示它们：
-
-```powershell
-Get-AntiphishPolicy | Format-List Name
-```
-
-如果你现在没有任何反网络钓鱼策略，则可以创建一个，然后禁用它（即使没有策略，也会应用反欺骗；在 2018 年晚些时候，将为你创建默认策略，随后你可以禁用它而不是创建一个）。 你必须分多步执行此操作：
-
-```powershell
-$org = Get-OrganizationConfig
-$name = "My first anti-phishing policy for " + $org.Name
-# Note: If the name is more than 64 characters, you will need to choose a smaller one
-```
-
-```powershell
-# Next, create a new anti-phishing policy with the default values
-New-AntiphishPolicy -Name $Name
-# Select the domains to scope it to
-# Multiple domains are specified in a comma-separated list
-$domains = "domain1.com, domain2.com, domain3.com"
-# Next, create the anti-phishing rule, scope it to the anti-phishing rule
-New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
-# Finally, scope the anti-phishing policy to the domains
-Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
-```
-
-只能通过 cmdlet 禁用防欺骗（稍后将能在安全与合规中心内禁用）。 如果你无权访问 PowerShell，请创建支持票证。
-
-请记住，这仅适用于发送到 Office 365 时经历间接路由的域。 抵制由于某些误报而禁用反欺骗的诱惑，从长远来看，启用它们会更好。
-
-### <a name="information-for-individual-users"></a>面向单个用户的信息
-
-个人用户在如何与反欺骗安全提示进行交互方面受到了限制。 但是，你可以通过以下几种方法来解决常见情景问题。
-
-### <a name="common-scenario-discussion-lists"></a>常见情景：讨论列表
-
-由于转发邮件并修改其内容但保留原始“发件人:”地址的方式，已知讨论列表存在反欺骗问题。
-
-例如，假设 Gabriela Laureano （glaureano @ contoso.com）有兴趣观鸟并加入讨论列表 birdwatchers @ fabrikam.com。 如果她发送一封邮件至讨论列表，样式像这样：
-
-> **发件人：** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **收件人：** 赏鸟者讨论列表 \<birdwatchers @ fabrikam.com\> <br/> 
+> **发件人：**"Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件人：** 赏鸟者讨论列表 \<birdwatchers@fabrikam.com\> <br/> 
 **主题：** 本周到瑞尼尔山顶。 观赏蓝鸟 <br/><br/>有人想本周一起去瑞尼尔山 赏鸟吗？
 
-当电子邮件列表收到邮件时，它们将格式化邮件，修改其内容，并向讨论列表上的其余成员重播，他们由来自许多不同电子邮件接收者的参与者组成。
+邮件列表服务器接收邮件，修改其内容并将其重播给列表中的成员。 重播的邮件具有相同的“发件人”地址 (glaureano @ contoso.com)，但向主题行添加了标记并在邮件底部添加了页脚。 这种类型的修改在邮件列表中很常见，并且可能导致欺骗误报。
 
-> **发件人：** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **收件人：** 赏鸟者讨论列表 \<birdwatchers @ fabrikam.com\> <br/> **主题：**[赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <br/><br/> 有人想本周一起去瑞尼尔山 赏鸟吗？ <br/><br/> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
+> **发件人：**"Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件人：** 赏鸟者讨论列表 \<birdwatchers@fabrikam.com\> <br/> **主题：**[赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <br/><br/> 有人想本周一起去瑞尼尔山 赏鸟吗？ <br/><br/> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
 
-在该示例中，重播的邮件具有相同的“发件人:”地址 (glaureano @ contoso.com)，但已通过向主题行添加标记并在邮件底部添加页脚修改了原始邮件。 这种类型的邮件修改在邮件列表中很常见，并且可能导致误报。
+要帮助邮件列表邮件通过反欺骗检查，请根据是否控制邮件列表执行以下操作：
 
-如果你或组织中的某个人是邮件列表的管理员，则可以将其配置为通过反欺骗检查。
+- 组织拥有邮件列表：
 
-- 查看 DMARC.org 上的常见问题解答：[在操作邮件列表时，我想与 DMARC 进行交互，我该怎么办？](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
+  - 查看 DMARC.org 上的常见问题解答：[我在操作邮件列表时想与 DMARC 进行交互，应该怎么办？](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)。
 
-- 阅读此博客文章中的说明：[关于邮件列表操作员与 DMARC 进行交互以避免失败的提示](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
+  - 阅读此博客文章中的说明：[关于邮件列表操作员与 DMARC 进行交互以避免失败的提示](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)。
 
-- 考虑在邮件列表服务器上安装更新以支持 ARC，请参阅 [https://arc-spec.org](https://arc-spec.org/)
+  - 考虑在邮件列表服务器上安装更新以支持 ARC，请参阅 [https://arc-spec.org](https://arc-spec.org/)
 
-如果你不是邮件列表的所有者：
+- 组织不拥有邮件列表：
 
-- 你可以请求邮件列表的维护人员实施上述选项之一（他们还应该为从中重播邮件列表的域设置电子邮件身份验证）。
+  - 请求邮件列表的维护人员为从中中继邮件列表的域配置电子邮件身份验证。
 
-- 你可以在电子邮件客户端中创建邮箱规则，以将邮件移动到收件箱。 你还可以请求组织的管理员设置允许规则或替代，如本主题中的“[管理发送未经身份验证的电子邮件的合法发件人](#managing-legitimate-senders-who-are-sending-unauthenticated-email)”一节中所述。
+    如果有足够多的发件人向域所有者反映他们应该设置电子邮件身份验证记录，这会促使他们采取行动。 虽然 Microsoft 也可与域所有者合作发布所需的记录，但当个人用户提出请求时，它可以提供更多帮助。
 
-- 你可以使用 Office 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。
+  - 在电子邮件客户端中创建邮箱规则，以将邮件移动到收件箱。 你还可以要求管理员配置覆盖，如[使用欺骗智能来配置未经身份验证的电子邮件的允许发件人](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email)中所述。
 
-### <a name="other-scenarios"></a>其他情景
+  - 使用 Office 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。 有关详细信息，请参阅[就商业版产品问题联系支持人员 - 管理员帮助](../../admin/contact-support-for-business-products.md)。
 
-1. 如果上述常见情景都不适用于你的情况，请将该邮件作为误报报告给 Microsoft。 有关详细信息，请参阅本文后面的“[如何向 Microsoft 报告垃圾邮件或非垃圾邮件？](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft)”部分。
+如果其他所有操作均失败，则可以向 Microsoft 报告该邮件为误报。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-2. 你也可以联系电子邮件管理员，他可以将其作为支持票证向 Microsoft 提出。 Microsoft 工程团队将调查邮件被标记为欺骗邮件的原因。
+你也可以联系管理员，他可以将其作为支持票证向 Microsoft 提出。 Microsoft 工程团队将调查邮件被标记为欺骗邮件的原因。
 
-3. 此外，如果你知道发件人是谁并且确信他们没有被恶意冒充，则可以回复发件人，指明他们正在从未经过身份验证的邮件服务器发送邮件。 这有时会导致原始发件人联系其 IT 管理员，他们将设置所需的电子邮件身份验证记录。
+## <a name="considerations-for-anti-spoofing-protection"></a>反欺骗防护注意事项
 
-   如果有足够多的发件人向域所有者反映他们应该设置电子邮件身份验证记录，这会促使他们采取行动。 虽然 Microsoft 也可与域所有者合作发布所需的记录，但当个人用户提出请求时，它可以提供更多帮助。
-
-4. （可选）将发件人添加到“安全发件人”列表中。 但是，请注意，如果网络钓鱼者冒充该帐户，它将递送到你的邮箱。 因此，应谨慎使用此选项。
-
-## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Microsoft 的发件人如何为反欺骗保护做好准备
-
-如果你是当前向 Microsoft（Office 365 或 Outlook.com）发送邮件的管理员，则应确保对你的电子邮件进行正确的身份验证，否则系统可能会将其标记为垃圾邮件或网络钓鱼邮件。
-
-### <a name="customers-of-office-365"></a>Office 365 客户
-
-如果你是 Office 365 客户，并且使用 Office 365 发送出站电子邮件：
-
-- 对于你的域，请[在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-
-- 对于你的主域，请[使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)
-
-- [考虑为你的域设置 DMARC 记录](use-dmarc-to-validate-email.md)，以确定谁是合法发件人
-
-Microsoft 未针对每个 SPF、DKIM 和 DMARC 提供详细的实施指南。 但是，我们在网上发布了大量信息。 此外，还有第三方公司致力于帮助你的组织设置电子邮件身份验证记录。
-
-### <a name="administrators-of-domains-that-are-not-office-365-customers"></a>不是 Office 365 客户的域管理员
-
-如果你是域管理员但不是 Office 365 客户：
-
-- 你应设置 SPF 以发布域的发送 IP 地址，并设置 DKIM（如果可用）以对邮件进行数字签名。 你还可以考虑设置 DMARC 记录。
-
-- 如果有代表你发送电子邮件的批量发件人，则应通过以下方式与他们合作发送电子邮件，即让“发件人:”地址中的发送域（如果它属于你）与通过 SPF 或 DMARC 验证的域保持一致。
-
-- 如果你拥有本地邮件服务器，或从软件即服务提供程序、Microsoft Azure、GoDaddy、Rackspace、Amazon Web Services 等云托管服务发送，则应该确保它们已添加到你的 SPF 记录中。
-
-- 如果你的域是由 ISP 托管的小型域，则应根据 ISP 向你提供的说明来设置 SPF 记录。 大多数 ISP 都提供这些类型的说明，可在公司的支持页面上找到这些说明。
-
-- 即使之前不必发布电子邮件身份验证记录也可以，而现在你必须发布要发送给 Microsoft 的电子邮件身份验证记录。 通过这样做，你可以帮助打击网络钓鱼，并降低你或接收邮件的组织遭受网络钓鱼的可能性。
-
-### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>如果你不知道谁将电子邮件作为你的域发送，该怎么办？
-
-许多域均未发布 SPF 记录，因为它们不知道所有发件人都是谁。 没关系，你不需要知道他们都是谁。 相反，你应该先发布自己知道的 SPF 记录，特别是公司通信所在的位置，然后发布中性 SPF 策略，即 `?all`：
-
-```text
-fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
-```
-
-中性 SPF 策略意味着从公司基础架构发出的任何电子邮件都将通过所有其他电子邮件接收方的电子邮件身份验证。 来自你不知道的发件人的电子邮件将归为中性，这几乎与根本不发布 SPF 记录相同。
-
-发送到 Office 365 时，来自公司通信的电子邮件将标记为已通过身份验证，但来自你不知道的来源的电子邮件仍可能标记为欺骗邮件（具体取决于 Office 365 是否可以对它进行隐式身份验证）。 但是，仍需对所有被 Office 365 标记为欺骗邮件的电子邮件进行改进。
-
-一旦开始使用具有回退策略“?all”的 SPF 记录，你可以逐渐包含越来越多的发送基础结构，然后发布更严格的策略。
-
-### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>如果你是邮件列表的所有者，该怎么办？
-
-请参阅本主题中之前的“[常见方案：讨论列表](#common-scenario-discussion-lists)”部分。
-
-### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>如果你是基础结构提供商（如 Internet 服务提供商 (ISP)、电子邮件服务提供商 (ESP) 或云托管服务），该怎么办？
-
-如果你负责托管域的电子邮件，并发送电子邮件或提供可以发送电子邮件的托管基础结构，则应执行以下操作：
-
-- 确保客户提供相关文档来详细说明要在其 SPF 记录中发布的内容
-
-- 考虑在出站电子邮件上进行 DKIM 签名，即使客户未明确设置它（使用默认域签名）。 你甚至可以使用 DKIM 签名对电子邮件进行双重签名（第一次使用客户的域进行签名（如果已设置该域），第二次使用你公司的 DKIM 签名）
-
-即使你对来自平台的电子邮件进行身份验证，也无法保证向 Microsoft 的邮件传递，但至少可确保 Microsoft 不会因为未经过身份验证而将你的电子邮件标记为垃圾邮件。 有关 Outlook.com 如何筛选电子邮件的详细信息，请参阅 [Outlook.com Postmaster 页面](https://postmaster.live.com/pm/postmaster.aspx)。
-
-有关服务提供商最佳实践的更多详细信息，请参阅[服务提供商的 M3AAWG 移动消息传递最佳实践](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf)。
-
-## <a name="frequently-asked-questions"></a>常见问题解答
-
-### <a name="why-is-microsoft-making-this-change"></a>Microsoft 为什么会进行此更改？
-
-由于网络钓鱼攻击的影响，并且电子邮件身份验证已存在超过 15 年，因此 Microsoft 认为继续允许使用未经身份验证的电子邮件的风险高于丢失合法电子邮件的风险。
-
-### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>此更改会导致合法电子邮件被标记为垃圾邮件吗？
-
-首先，某些邮件会标记为垃圾邮件。 但是，随着时间的推移，发件人将进行调整，对于大多数电子邮件路径，错误标记为欺骗邮件的邮件数量可以忽略不计。
-
-Microsoft 率先部署了此功能，并在几周后将它部署到其他客户。 虽然最初出现了中断，但此现象逐渐减少了。
-
-### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Microsoft 是否会向 Outlook.com 和 Office 365 的非高级威胁防护客户推出此功能？
-
-Microsoft 的反欺骗技术最初部署到拥有 Office 365 企业版 E5 订阅或已为其订阅购买了 Office 365 高级威胁防护 (ATP) 加载项的组织。 截至 2018 年 10 月，我们已将保护范围扩展到拥有 Exchange Online Protection (EOP) 的组织。 将来，我们将为 Outlook.com 发布该功能。 但是，如果我们这样做，可能会有一些未应用的功能，例如报告和自定义替代。
-
-### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 报告垃圾邮件或非垃圾邮件？
-
-参见 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
-
-### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>我是域管理员，不知道我的所有发件人都是谁！
-
-请参阅[不是 Office 365 客户的域管理员](#administrators-of-domains-that-are-not-office-365-customers)。
-
-### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>如果为组织禁用反欺骗保护会发生什么情况，即使 Office 365 是主筛选器？
-
-我们不建议这样做，因为你将接触到更多错过的网络钓鱼和垃圾邮件。 并非所有网络钓鱼都是欺骗性的，并且并非所有欺骗都会错过。 但是，你面临的风险将高于启用反欺骗的客户。
-
-### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>启用反欺骗保护是否意味着我将免受所有网络钓鱼的侵害？
-
-遗憾的是，不是，因为网络钓鱼者会不断采用其他技术，如泄露帐户信息或建立免费服务帐户。 但是，反网络钓鱼防护可以更好地检测这些其他类型的网络钓鱼方法，因为 Office 365 的保护层设计在一起工作并且相互叠加。
-
-### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>其他大型电子邮件接收器会阻止未经身份验证的电子邮件吗？
-
-几乎所有大型电子邮件接收器都实施了传统的 SPF、DKIM 和 DMARC。 某些接收器拥有比这些标准更为严格的其他检查，但很少有接收器会像 Office 365 那样阻止未经身份验证的电子邮件并将其视为欺骗邮件。 但是，对于这种特定类型的电子邮件，大多数行业正变得越来越严格，特别是对于网络钓鱼问题。
-
-### <a name="do-i-still-need-to-enable-the-advanced-spam-filter-asf-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>如果我已启用防欺骗，是否仍需要启用高级垃圾邮件筛选 (ASF) 设置“SPF 记录:硬故障”(_MarkAsSpamSpfRecordHardFail_)？
-
-否，不再需要此选项，因为反欺骗功能不仅考虑 SPF 硬失败，而且会考虑更广泛的标准。 如果已启用防欺骗和“SPF 记录:硬故障”****(_MarkAsSpamSpfRecordHardFail_)，可能会收到更多误报。
-
-建议禁用此功能，因为它几乎不会额外捕获垃圾邮件或钓鱼邮件，而只会生成大部分误报。 有关详细信息，请参阅 [Office 365 中的高级垃圾邮件筛选 (ASF) 设置](advanced-spam-filtering-asf-options.md)。
-
-### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>发件人重写方案 (SRS) 是否有助于修复转发的电子邮件？
-
-SRS 仅部分修复了转发电子邮件的问题。 通过重写 SMTP MAIL FROM，SRS 可以确保转发的邮件在下一个目的地通过 SPF。 但是，由于反欺骗基于“发件人:”地址以及 MAIL FROM 或 DKIM 签名域（或其他信号），因此防止将转发的电子邮件标记为欺骗邮件还不够。
+如果你是当前向 Office 365 发送邮件的管理员，则需要确保你的电子邮件正确经过身份验证。 否则，它可能被标记为垃圾邮件或网络钓鱼。 有关详细信息，请参阅[适用于发送未经身份验证的电子邮件的合法发件人的解决方案](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)。
