@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 高级电子数据展示中的保管人管理工具使您可以管理工作流，以确定、保留和收集与法律案件相关人员相关的数据。
-ms.openlocfilehash: 7d8ac1c67b4ddc3395bccb5ab699ce7df63f331d
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400909"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551235"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>在高级电子数据展示中与保管人合作
 
@@ -38,7 +38,3 @@ ms.locfileid: "42400909"
 - [在某个情况下管理保管人](manage-new-custodians.md)
 
 - [查看保管人活动](view-custodian-activity.md)
-
-## <a name="advanced-ediscovery-permissions"></a>高级电子数据展示权限
-
-在高级电子数据展示中，可以使用内置的电子数据展示管理器角色组向法律调查人员分配必要的权限，以便他们可以在高级电子数据展示中管理端到端工作流。 或者，您可以创建具有在高级电子数据展示中的情况下执行某些操作所需的角色子集的自定义角色组。 有关电子数据展示相关角色的详细信息，请参阅[在安全 & 合规性中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。

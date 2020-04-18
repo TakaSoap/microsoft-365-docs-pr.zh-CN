@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Office 365 组。
-ms.openlocfilehash: f5a0b72737a360a4bfe4cdd8fee4a08b7a7ff236
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c45c78a26d421c5c16e6ca0769e8adc7ba6e79a8
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212529"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547540"
 ---
 # <a name="overview-of-office-365-groups-for-administrators"></a>面向管理员的 Office 365 组概述
 
@@ -33,6 +33,7 @@ Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资
 - 共享日历
 - SharePoint 文档库
 - Planner
+- OneNote 笔记本
 - Power BI
 - Yammer （如果组是从 Yammer 创建的）
 - 团队（如果组是从团队创建的）

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '了解 Exchange 和 SharePoint 中的未编制索引项目，您可以通过 Security & 合规性中心在内容搜索运行中加入未编制索引的项目。 '
-ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597779"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551223"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>处理 Office 365 内容搜索中的部分索引项
 
@@ -57,11 +57,11 @@ ms.locfileid: "41597779"
   
 有关支持和禁用的文件格式列表，请参阅以下主题：
   
-- **** - Exchange[搜索编制索引的 exchange 文件格式](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange** - Exchange[搜索编制索引的 exchange 文件格式](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
 - **Exchange** - [set-searchdocumentformat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **** - Sharepoint[中的 sharepoint 默认已爬网文件扩展名和分析文件类型](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint** - Sharepoint[中的 sharepoint 默认已爬网文件扩展名和分析文件类型](https://go.microsoft.com/fwlink/p/?LinkID=404033)
     
 
   
@@ -106,7 +106,7 @@ ms.locfileid: "41597779"
   
 同样，如果在导出搜索结果时选择包含部分索引的项目，则不会导出从搜索结果中排除的部分索引项目。
   
-此规则的一个例外是创建与电子数据展示事例相关联的基于查询的保留时。 如果创建基于查询的保留，则所有部分索引项都将置于保留状态。 这包括部分索引的项目，这些项目不符合搜索查询条件和可能超出日期范围条件的部分索引项。 有关创建基于查询的保留的详细信息，请参阅[电子数据展示事例](ediscovery-cases.md#step-4-place-content-locations-on-hold)中的步骤4。
+此规则的一个例外是创建与电子数据展示事例相关联的基于查询的保留时。 如果创建了基于查询的电子数据展示保留，则所有部分索引的项目都将置于保留状态。 这包括部分索引的项目，这些项目不符合搜索查询条件和可能超出日期范围条件的部分索引项。 有关创建基于查询的电子数据展示保留的详细信息，请参阅[创建电子数据展示保留](create-ediscovery-holds.md)。
   
 ## <a name="indexing-limits-for-messages-in-content-search"></a>内容搜索中邮件的索引限制
 
@@ -126,24 +126,22 @@ ms.locfileid: "41597779"
 |最大注释标记数  <br/> |2000000  <br/> |在对电子邮件编制索引时，会使用不同的处理指令对每个单词进行批注，以指定如何对该单词编制索引。 每组处理指令称为注释令牌。 若要在 Office 365 中维护服务质量，电子邮件的注释令牌限制为2000000个。  <br/> |
 |索引中的最大正文大小  <br/> |67000000个字符  <br/> |电子邮件正文中的总字符数及其所有附件。 对电子邮件编制索引后，邮件正文和所有附件中的所有文本将串联为单个字符串。 索引的此字符串的最大大小为67000000个字符。  <br/> |
 |正文中的最大唯一令牌  <br/> |100 万  <br/> |如前所述，令牌是从内容中提取文本、删除标点符号和空格，然后将其拆分为索引中存储的词（称为 "标记"）的结果。 例如，短语`"cat, mouse, bird, dog, dog"`包含5个令牌。 但其中只有4个是唯一的令牌。 每封电子邮件的唯一令牌的数量限制为1000000，这有助于防止索引因过大而无法使用随机令牌。  <br/> |
-   
 
-  
 ## <a name="more-information-about-partially-indexed-items"></a>有关部分索引项目的详细信息
 
 - 如前所述，由于邮件和文档属性及其元数据已编制索引，如果该关键字出现在索引元数据中，则关键字搜索可能会返回结果。 不过，如果该关键字仅出现在文件类型不受支持的项目的内容中，则相同的关键字搜索可能不会返回相同的项目。 在这种情况下，将以部分索引项的形式返回项。
-    
+
 - 如果搜索结果中包含部分索引项，因为它满足搜索查询条件（且未排除），则在估计的搜索统计信息中不会将其作为部分索引项包括在内。 此外，当您导出搜索结果时，不会将其包含在部分索引项目中。
-    
+
 - 虽然支持对文件类型编制索引且已编制索引，但可能会有索引或搜索错误导致文件作为部分索引项目返回。 例如，搜索非常大的 Excel 文件可能部分成功（因为索引前 4 MB），但由于超过了文件大小限制而导致失败。 在这种情况下，可以使用搜索结果和部分索引项返回相同的文件。
-    
+
 - 使用 Microsoft 技术加密的文件附件已编制索引并可进行搜索。 使用非 Microsoft 技术加密的文件部分编制了索引。
-    
+
 - 使用 S/MIME 加密的电子邮件部分编制了索引。 这包括带有或不带文件附件的加密邮件。
-    
+
 - 由信息权限管理 (IRM) 保护的邮件已编制索引，因此如果此类邮件匹配查询参数，将会包括在搜索结果中。
 
 ## <a name="see-also"></a>另请参阅
 
-[使用 Office 365 电子数据展示调查部分索引项](investigating-partially-indexed-items-in-ediscovery.md)
+[在电子数据展示中调查部分索引项目](investigating-partially-indexed-items-in-ediscovery.md)
 

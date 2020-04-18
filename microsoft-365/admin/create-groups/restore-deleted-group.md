@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 了解如何还原已删除的 Office 365 组。
-ms.openlocfilehash: 31d6481f87d7da219e042eefa8f004425caee133
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 2efd8c35286d224c6a3ed185043c82ab4b8e954e
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583159"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547528"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>还原已删除的 Office 365 组
 
@@ -61,7 +61,7 @@ ms.locfileid: "42583159"
 
 如果您是全局管理员或组管理员，则可以在 Microsoft 365 管理中心中还原已删除的组：
 
-1. 转到位于 [https://admin.microsoft.com](Go to the admin center at https://admin.microsoft.com) 的管理中心。
+1. 转到[管理中心](https://admin.microsoft.com)。
 2. 展开 "**组**"，然后单击 "**已删除组**"。
 3. 选择要还原的组，然后单击 "**还原组**"。
   

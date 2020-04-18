@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可在 Office 365 邮箱中放置的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Office 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户
-ms.openlocfilehash: 29d212f0ba16c7ae414c3a47707cfcd0f95420c7
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 4063128e368b19b156fbf42173fb2d4725c3e7ab
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978222"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551133"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -30,7 +30,7 @@ Office 365 提供了多种方法，使您的组织可以阻止邮箱内容被永
 
 - **[诉讼保留](create-a-litigation-hold.md)：** 应用于 Exchange Online 中的用户邮箱的保留。
 
-- **[电子数据展示保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)：** 与安全与合规中心中的电子数据展示事例相关联的保留项。 电子数据展示保留可应用于用户邮箱以及 Office 365 组和 Microsoft 团队对应的邮箱。
+- **[电子数据展示保留](create-ediscovery-holds.md)：** 与安全与合规中心中的电子数据展示事例相关联的保留项。 电子数据展示保留可应用于用户邮箱以及 Office 365 组和 Microsoft 团队对应的邮箱。
 
 - **[就地保留](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 使用 exchange Online 中 Exchange 管理中心的就地电子数据展示 & 保留工具对用户邮箱应用的保留。
 

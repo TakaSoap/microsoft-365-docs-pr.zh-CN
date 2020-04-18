@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 利用高级电子数据展示，可以轻松管理法律封存通知工作流，避免在法律调查中通知保管人。
-ms.openlocfilehash: 3e9fb2bc67fc5eac181afab8ba5c78c4236fb980
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280120"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551234"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>在高级电子数据展示中使用通信
 
@@ -49,22 +49,12 @@ ms.locfileid: "42280120"
 
    - **升级：** 在某些情况下，即使在一段时间后，保管人仍无响应，但法律团队可以设置升级工作流，以通知不响应保管人及其经理。
 
-## <a name="role-groups-and-permissions"></a>角色组和权限
+有关管理保管人通信进程的详细信息，请参阅以下内容： 
 
-法律团队可以使用安全 & 合规中心中的电子数据展示相关角色组和权限控制和隔离其事例活动。 
+- [创建合法保留通知](create-hold-notification.md)
 
-若要创建和管理合法保留通知，用户必须是电子数据展示管理器角色组的成员。 此角色组的成员可以创建和管理高级电子数据展示事例。 他们可以添加和删除成员，将保管人和内容位置置于保留状态，管理合法保留通知，创建和编辑与案例关联的搜索，将搜索结果添加到审阅集，分析审阅集中的数据，以及从高级策略中导出和下载电子数据展示事例。 
+- [使用通信编辑器](using-communications-editor.md)
 
-电子数据展示管理器角色组有两个子组。 这些子组之间的差异基于作用域。
+- [管理保留通知](manage-hold-notification.md)
 
-- **电子数据展示管理器：** 可以查看和管理他们创建的或为其成员的高级电子数据展示事例。 如果另一个电子数据展示管理器创建了一个事例，但未将另一个电子数据展示管理器添加为这种情况的成员，则第二个电子数据展示管理器将无法在安全 & 合规性中心的 "高级电子数据展示" 页上查看或打开事例。
-
-- **电子数据展示管理员：** 可以执行电子数据展示管理器可以执行的所有案例管理任务。 此外，电子数据展示管理员可以：
-
-  - 查看高级电子数据展示页面上列出的所有事例。
-  
-  - 在组织中管理任何事例，然后在将自己添加为案例成员。
-
-  - 在高级电子数据展示中访问和导出组织中任何情况的事例数据。
-
-有关详细信息，请参阅[在安全 & 合规性中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- [确认保留通知](acknowledge-hold-notification.md)

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Office 365 组。
-ms.openlocfilehash: 9016b96821dd9d40a0fb65574ce96d7badd0c2bd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212077"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547582"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>管理可创建 Office 365 组的人员
 
@@ -79,6 +79,9 @@ ms.locfileid: "43212077"
 
 - 配置这些组创建设置的管理员
 - 允许创建组的安全组的成员
+
+> [!NOTE]
+> 有关如何分配 Azure 许可证的更多详细信息，请参阅[在 Azure Active Directory 门户中分配或删除许可证](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)。
 
 以下人员不需要为其分配 Azure AD Premium 或 Azure AD 基本 EDU 许可证：
 
