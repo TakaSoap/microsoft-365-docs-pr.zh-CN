@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ca76ca2c117412b2b53bcd5566c32daddbf3212d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: d0fe3092d0ea3004097aba9a86e1916025b87841
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558022"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547562"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>数据保护影响评估：使用 Microsoft Office 365 的数据控制者指南 
 
@@ -57,7 +57,7 @@ GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估�
 |||
 |:-----|:-----|
 |**风险因素**|**Office 365 的相关信息**|
-| 处理目的 | 使用 Office 365 处理数据的目的由实现、配置和使用它的控制者确定。 <br><br> 正如[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)中所规定，作为数据处理者，Microsoft 处理客户数据以根据客户的书面说明为客户提供联机服务。 <br><br> Microsoft 还使用个人数据来支持有限的合法业务运营，包括：(1) 账单和帐户管理；(2) 薪酬（例如，计算员工佣金和合作伙伴奖励）；(3) 内部报告和建模（例如，预测、收入、产能计划、产品策略）；(4) 打击可能影响 Microsoft 或 Microsoft 产品的欺诈、网络犯罪或网络攻击；(5) 改善可访问性、隐私或能效的核心功能；(6) 财务报告和履行法律义务（受联机服务条款中概述的客户数据披露的限制）。 <br><br> Microsoft 是用于支持这些特定合法业务运营的个人数据处理的控制者。 通常，Microsoft 在将个人数据用于我们的合法业务运营之前会对其进行汇总处理，从而消除 Microsoft 识别特定个人身份的能力，并以最不易识别的形式使用个人数据，以支持合法业务运营所需的处理。 <br><br> Microsoft 不会将因此获得的客户数据或信息用于分析、广告或类似商业目的。 |
+| 处理目的 | 使用 Office 365 处理数据的目的由实现、配置和使用它的控制者确定。 <br><br> 正如[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)和[数据保护附录](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67)中所规定，作为数据处理者，Microsoft 处理客户数据以根据客户的书面说明为客户提供联机服务。 <br><br> 正如[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)和[数据保护附录](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67)标准中的详细信息中，Microsoft 还使用个人数据来支持有限的合法业务运营，包括：(1) 账单和帐户管理；(2) 薪酬（例如，计算员工佣金和合作伙伴奖励）；(3) 内部报告和建模（例如，预测、收入、产能计划、产品策略）；(4) 打击可能影响 Microsoft 或 Microsoft 产品的欺诈、网络犯罪或网络攻击；(5) 改善可访问性、隐私或能效的核心功能；(6) 财务报告和履行法律义务（受联机服务条款中概述的客户数据披露的限制）。 <br><br> Microsoft 是用于支持这些特定合法业务运营的个人数据处理的控制者。 通常，Microsoft 在将个人数据用于我们的合法业务运营之前会对其进行汇总处理，从而消除 Microsoft 识别特定个人身份的能力，并以最不易识别的形式使用个人数据，以支持合法业务运营所需的处理。 <br><br> Microsoft 不会将因此获得的客户数据或信息用于分析、广告或类似商业目的。 |
 | 处理的个人数据类别 | **客户数据**：这是客户或代表客户通过使用 Microsoft 联机服务向 Microsoft 提供的所有数据，包括文本、声音、视频或图像文件和软件。 它包括客户上传用于存储或处理的数据以及定制数据。 Office 365 中处理的客户数据示例包括 Exchange Online 中的电子邮件内容，以及存储在 SharePoint Online 或 OneDrive for Business 中的文档或文件。 <br><br> **服务生成的数据**：这是由 Microsoft 通过服务操作生成或派生的数据，例如使用或性能数据。 这些数据大多包含由 Microsoft 生成的假名标识符。 <br><br> **诊断数据：** 此数据由 Microsoft 从客户本地安装的与联机服务相关的软件中收集或获取，也称为遥测。 此数据通常由本地安装的软件或运行该软件的计算机的属性进行标识。 <br><br> **支持数据：** 客户或代表客户通过与 Microsoft 签订协定以获取联机服务技术支持而提供给 Microsoft 的数据（或客户授权 Microsoft 从联机服务获取的数据）。 <br><br> 客户数据、系统生成的数据和支持数据不包括管理员和数据，例如客户管理员联系信息、订阅信息和付款信息，Microsoft 在其作为数据控制者的角色中收集和处理这些数据，这不在本文档的讨论范围内。 |
 | 数据保留 | **客户数据：** 如联机服务条款中的数据保护条款所述，Microsoft 将在客户有权使用服务的期间保留客户数据，直到按照客户的指示或联机服务条款删除或返回所有客户数据为止。 <br><br> 在客户订阅期间，客户可随时访问、提取和删除存储在服务中的客户数据，在某些情况下，还可访问旨在降低无意删除风险的特定产品功能（例如，Exchange 恢复的项目文件夹），产品文档对此进行了详细介绍。 <br><br> 除免费试用版和领英服务外，如果客户订阅到期或终止，帐户功能将受到限制，Microsoft 会将该帐户存储在该联机服务中的客户数据保留 90 天，便于客户提取数据。 90 天保留期结束后，Microsoft 将禁用客户帐户并删除客户数据。 <br><br> **服务生成的数据：** 在收集后，此数据的默认保留期限为长达 180 天，为了确保服务的安全性或履行法律或监管义务，可能会将该数据保留更长时间。 <br><br> 如需进一步了解可让客户随时删除在服务中维护的个人数据的服务功能，请参阅 [Office 365 数据主体请求指南](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests?toc=/microsoft-365/enterprise/toc.json)。|
 | 个人数据的位置和传输 | 如联机服务条款附件 1 所述，如果客户在澳大利亚、加拿大、欧盟、法国、印度、日本、韩国、英国或美国配置 Office 365 实例，Microsoft 将仅在该位置存储以下静态客户数据：(1) Exchange Online 邮箱内容（电子邮件正文、日历条目和电子邮件附件的内容）；(2) SharePoint Online 网站内容和该网站中存储的文件；(3) 上传到 OneDrive for Business 的文件；以及 (4) 上传到 Project Online 的项目内容。 <br><br> 对于来自欧洲经济区和瑞士的其他类型的个人数据，Microsoft 将确保在向第三方国家/地区或国际组织传输的个人数据时实施 GDPR 第 46 条中规定的相应安全措施。除 Microsoft 根据处理者标准合同条款和其他模板合同所做的承诺外，Microsoft 还获得了欧盟-美国和瑞士-美国隐私防护框架认证并践行其承诺。 |

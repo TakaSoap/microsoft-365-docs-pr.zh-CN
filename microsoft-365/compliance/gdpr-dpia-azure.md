@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4f5f688a80d45ccb7e6b399d6fea7a6b2119b6de
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: b7736a3890f293ca6bcfa05fd2f1630748009d9f
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558042"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547552"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>数据保护影响评估：使用 Microsoft Azure 的数据控制者指南
 
@@ -56,7 +56,7 @@ GDPR 第 35 条要求数据控制者来创建数据保护影响评估 (DPIA)，�
 ||||
 |:---|:---|:--|
 |**DPIA 的元素**|**Microsoft Azure 的相关信息**| |
-| 处理目的 | 使用 Microsoft Azure 处理数据的目的由实施、配置和使用它的控制者确定。 <br><br> 正如[联机服务条款 (OST)](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) 中所规定，作为数据处理者，Microsoft 处理客户数据以根据客户的书面说明为客户提供联机服务。 <br><br> Microsoft 还使用个人数据来支持有限的合法业务运营，包括：(1) 账单和帐户管理；(2) 薪酬（例如，计算员工佣金和合作伙伴奖励）；(3) 内部报告和建模（例如，预测、收入、产能计划、产品策略）；(4) 打击可能影响 Microsoft 或 Microsoft 产品的欺诈、网络犯罪或网络攻击；(5) 改善可访问性、隐私或能效的核心功能；(6) 财务报告和履行法律义务（受联机服务条款中概述的客户数据披露的限制）。 <br><br> Microsoft 是用于支持这些特定合法业务运营的个人数据处理的控制者。 通常，Microsoft 在将个人数据用于我们的合法业务运营之前会对其进行汇总处理，从而消除 Microsoft 识别特定个人身份的能力，并以最不易识别的形式使用个人数据，以支持合法业务运营所需的处理。 <br><br> Microsoft 不会将因此获得的客户数据或信息用于任何广告或类似商业目的。 |   |
+| 处理目的 | 使用 Microsoft Azure 处理数据的目的由实施、配置和使用它的控制者确定。 <br><br> 正如[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)和[数据保护附录](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67)中所规定，作为数据处理者，Microsoft 处理客户数据以根据客户的书面说明为客户提供联机服务。 <br><br> 正如[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)和[数据保护附录](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67)标准中的详细信息中，Microsoft 还使用个人数据来支持有限的合法业务运营，包括：(1) 账单和帐户管理；(2) 薪酬（例如，计算员工佣金和合作伙伴奖励）；(3) 内部报告和建模（例如，预测、收入、产能计划、产品策略）；(4) 打击可能影响 Microsoft 或 Microsoft 产品的欺诈、网络犯罪或网络攻击；(5) 改善可访问性、隐私或能效的核心功能；(6) 财务报告和履行法律义务（受联机服务条款中概述的客户数据披露的限制）。 <br><br> Microsoft 是用于支持这些特定合法业务运营的个人数据处理的控制者。 通常，Microsoft 在将个人数据用于我们的合法业务运营之前会对其进行汇总处理，从而消除 Microsoft 识别特定个人身份的能力，并以最不易识别的形式使用个人数据，以支持合法业务运营所需的处理。 <br><br> Microsoft 不会将因此获得的客户数据或信息用于分析、广告或类似商业目的。 |   |
 | 处理的个人数据类别  | *客户数据* — 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文本、声音、视频或图像文件以及软件。  客户数据包括 (1) 最终用户的身份信息（例如，Azure Active Directory 中的用户名和联系人信息）和客户上传到特定服务或者在特定服务中创建的客户内容（例如，Azure 存储帐户中的客户内容，Azure SQL 数据库的客户内容，或 Azure 虚拟机中的客户虚拟机映像）。<br><br> *服务生成的数据* — Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 服务生成的日志主要包括化名数据，它与系统生成的唯一标识符相关联，无法单独识别个人，但可用于向用户提供企业服务。 这些服务生成的日志还可能包含最终用户的身份信息，例如用户名。 <br><br> *支持数据* — 客户或代表客户通过与 Microsoft 签订协定以获取联机服务技术支持而提供给 Microsoft 的数据（或客户授权 Microsoft 从联机服务获取的数据）。 <br><br> 有关 Azure 所处理数据的其他详细信息，请参阅[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)（包括数据处理协议）和 [Microsoft 信任中心](https://www.microsoft.com/trustcenter)。</p> |   |
 | 数据保留 | Microsoft 将在客户有权使用该联机服务期间保留和处理客户数据，直到客户检索所有客户数据或根据 OST 的条款删除所有客户数据。  在客户订阅期内，客户可随时访问和提取每个联机服务中存储的客户数据。 除免费试用版和领英服务外，如果客户订阅到期或终止，帐户功能将受到限制，Microsoft 会将该帐户存储在该联机服务中的客户数据保留 90 天，便于客户提取数据。 90 天保留期结束后，Microsoft 将禁用客户帐户并删除客户数据。 客户可使用 [Azure 数据使用者请求 GDPR 文档](https://servicetrust.microsoft.com/ViewPage/GDPRDSR)中介绍的功能根据数据使用者请求删除个人数据。 |   |
 | 个人数据的位置和传输 | 客户能够在指定的[地理区域](https://azuredatacentermap.azurewebsites.net/)中预配静态的客户数据，但 OST 中规定了一些例外情况。 有关服务部署和数据驻留的其他详细信息，请参阅联机服务条款 (OST) 附件 1 和 [Azure 全球基础结构](https://azure.microsoft.com/global-infrastructure/)网页。<br><br>对于来自欧洲经济区和瑞士的个人数据，Microsoft 将确保在向第三方国家/地区或国际组织传输的个人数据时实施 GDPR 第 46 条中规定的相应安全措施。 除 Microsoft 根据处理者标准合同条款和其他模板合同所做的承诺外，Microsoft 还获得了欧盟-美国和瑞士-美国隐私防护框架认证并践行其承诺。 |   |

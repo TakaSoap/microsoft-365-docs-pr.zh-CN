@@ -345,6 +345,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: 管理电子数据展示
   items:
+    - name: Microsoft 365 中的电子数据展示
+      href: ediscovery.md
     - name: 内容搜索
       items:
         - name: 内容搜索概述
@@ -414,8 +416,16 @@
               href: clone-a-content-search.md
     - name: 核心电子数据展示
       items:
-        - name: 管理电子数据展示事例
-          href: ediscovery-cases.md
+        - name: 核心电子数据展示入门
+          href: get-started-core-ediscovery.md
+        - name: 创建电子数据展示保留
+          href: create-ediscovery-holds.md
+        - name: 在案例中搜索内容
+          href: search-for-content-in-core-ediscovery.md
+        - name: 从案例导出内容
+          href: export-content-in-core-ediscovery.md
+        - name: 关闭、重新打开和删除案例
+          href: close-reopen-delete-core-ediscovery-cases.md
         - name: 核心电子数据展示参考
           items:
             - name: 分配电子数据展示权限
@@ -430,6 +440,12 @@
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
             - name: 创建有关电子数据展示保留的报告
               href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: 导出搜索报告
+              href: export-a-content-search-report.md
+            - name: 查看搜索结果的关键字统计信息
+              href: view-keyword-statistics-for-content-search.md
+            - name: 为高级电子数据展示准备搜索结果（经典）
+              href: prepare-search-results-for-advanced-ediscovery.md
             - name: 搜索和清除溢出的数据
               href: data-spillage-scenariosearch-and-purge.md
             - name: 为搜索保留密件抄送收件人
