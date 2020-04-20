@@ -61,4 +61,4 @@ ms.locfileid: "42857387"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a><span data-ttu-id="45a9c-126">如果以上内容仍未解决问题，怎么办？</span><span class="sxs-lookup"><span data-stu-id="45a9c-126">What if my question still hasn't been answered?</span></span>
 
-<span data-ttu-id="45a9c-127">请访问[管理员帮助](../admin-home.yml)的其余部分，或在下面提供反馈。</span><span class="sxs-lookup"><span data-stu-id="45a9c-127">Visit the rest of our [admin help](../admin-home.yml) or give us your feedback below.</span></span>
+<span data-ttu-id="45a9c-127">请访问[管理员帮助](../admin-home.md)的其余部分，或在下面提供反馈。</span><span class="sxs-lookup"><span data-stu-id="45a9c-127">Visit the rest of our [admin help](../admin-home.md) or give us your feedback below.</span></span>
