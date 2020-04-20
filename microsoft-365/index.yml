@@ -46,7 +46,7 @@ additionalContent:
     items:
     - title: Microsoft 365 管理中心
       summary: 为组织设置和管理 Office 365 和 Microsoft 365 服务。
-      url: ./admin/admin-home.yml
+      url: ./admin/admin-home.md
     - title: Microsoft 365 商业版
       summary: 专为中小型企业设计。 使用最新版的 Windows 和 Office（如 Excel 和 Outlook）运营业务。 充分利用可扩展到所有业务设备的数据保护和安全性。
       url: ./business/index.yml
