@@ -11,16 +11,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规中心中的邮件流仪表板。
-ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081432"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630463"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
-管理员可以使用安全 & 合规中心中的邮件流仪表板来发现趋势、见解并采取措施解决与 Office 365 组织中的邮件流相关的问题。
+管理员可以使用安全 & 合规中心中的邮件流仪表板来发现趋势、见解并采取措施解决与组织中的邮件流相关的问题。
 
 邮件流仪表板中提供的见解、报告和小部件为：
 
@@ -50,9 +50,9 @@ ms.locfileid: "43081432"
 
 邮件流仪表板可用于：
 
-- **Office 365 全局管理员**角色的成员。
+- **全局管理员**角色的成员。
 
-- **Office 365 Exchange 管理员**角色的成员。
+- **Exchange 管理员**角色的成员。
 
 - Security & 合规中心中的**邮件流管理员角色**的成员。 如果此角色被明确分配给不是全局管理员或 Exchange 管理员角色成员的用户：
 
@@ -60,11 +60,11 @@ ms.locfileid: "43081432"
 
   - 用户将只具有对邮件流仪表板的只读权限。
 
-  - 用户将无法访问 Office 365 管理门户。
+  - 用户将无法访问 Microsoft 365 管理中心。
 
-有关 Office 365 全局管理员角色的详细信息，请参阅[关于 office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+有关全局管理员角色的详细信息，请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 
-有关为用户分配安全 & 合规性中心角色的信息，请参阅[授予用户访问 Office 365 安全 & 合规性中心的权限](grant-access-to-the-security-and-compliance-center.md)。
+有关为用户分配安全 & 合规性中心角色的信息，请参阅[为用户提供对安全 & 合规性中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>在何处查找邮件流仪表板
 
@@ -72,4 +72,4 @@ ms.locfileid: "43081432"
 
 2. 展开 "**邮件流**"，然后选择 "**仪表板**"。
 
-   ![Office 365 安全 & 合规中心中的邮件流仪表板](../../media/mail-flow-dashboard-v2.png)
+   ![安全 & 合规性中心中的邮件流仪表板](../../media/mail-flow-dashboard-v2.png)

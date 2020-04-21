@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解你的业务面临的安全威胁以及你和你的员工可以保护你的数据、帐户和设备的简单方法。
-ms.openlocfilehash: 86711cd32878917931a1eb1f67e7c08f7ed8ba57
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 4fafa348977d2eefe11cab865bacc999d625dc47
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627664"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>适用于小型企业的安全信息图形
 
-**摘要：** 了解你的业务面临的威胁的基本术语，以及你可以执行哪些操作来保护你的数据、帐户和设备。 作为 Office 365 for business 或 Microsoft 365 商业版的管理员，采取行动以提高业务的安全性，并帮助每个员工了解如何确保业务数据和设备安全。
+**摘要：** 了解你的业务面临的威胁的基本术语，以及你可以执行哪些操作来保护你的数据、帐户和设备。 作为 Microsoft 365 for business 的管理员，采取行动以提高业务的安全性，并帮助每个员工了解如何确保业务数据和设备安全。
 
 下面的 PowerPoint 和 PDF 链接可以下载和打印为 tabloid 格式（也称为分类帐、11 x 17 或 A3）。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中还原用户
+title: 还原用户
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,27 +21,27 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: 了解如何还原已删除的 Office 365 用户帐户以及所有关联的数据。
-ms.openlocfilehash: 385f7938f5e0ce1f3a580d40830124f77454f64d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 了解如何还原已删除的用户帐户和所有关联的数据。
+ms.openlocfilehash: 78766f1f6708665271361d542372aa945b0a7e29
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238142"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624054"
 ---
-# <a name="restore-a-user-in-office-365"></a>在 Office 365 中还原用户
+# <a name="restore-a-user"></a>还原用户
    
 如果在删除用户帐户后 30 天内还原用户帐户，则该用户帐户及其关联的所有数据都将还原。用户可使用相同的 工作或学校帐户 进行登录。其邮箱将完全还原。如果需要了解某个特定用户帐户还有多长时间便无法再还原，请[联系我们](../contact-support-for-business-products.md)。
   
 下面是一些提示︰
   
-- 确保有可分配到帐户的 Office 365 许可证。
+- 请确保许可证可分配给帐户。
     
 - 如果你的公司使用 Active Directory，请参阅[如何解决 Office 365 中已删除的用户帐户问题](https://support.microsoft.com/kb/2619308)以获取有关还原用户帐户的说明。 
     
 ## <a name="restore-one-or-more-user-accounts"></a>还原一个或多个用户帐户
 
-您必须是 Office 365 中的全局管理员或用户管理管理员才能执行这些步骤。 
+您必须是 Microsoft 365 全局管理员或用户管理管理员才能执行这些步骤。 
   
  
 ::: moniker range="o365-worldwide"
@@ -117,7 +117,7 @@ ms.locfileid: "42238142"
 
 删除包含代理地址的用户帐户后，又将相同的代理地址分配给另一个帐户，那么当你尝试还原已删除的帐户时会出现代理地址冲突。请按照以下步骤操作以修复此问题。
   
-只有 Office 365 的[管理员权限](about-admin-roles.md)才能执行此操作。 
+您必须具有 Microsoft 365 中的[管理员权限](about-admin-roles.md)才能执行此操作。 
   
 
 ::: moniker range="o365-worldwide"
@@ -148,4 +148,3 @@ ms.locfileid: "42238142"
 
 [删除用户](delete-a-user.md)
   
-

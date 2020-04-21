@@ -23,22 +23,22 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户。 决定如何处理用户的电子邮件、OneDrive 内容以及是否保留产品许可证或停止付款。
-ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 1d529627841c648684c8a9fe217a761b29749150
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608115"
+ms.locfileid: "43617244"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
 ||
 |:-----|
-|**想要了解如何删除您*自己*在工作或学校中使用的 Office 365 用户帐户吗？请与你的工作或大学的技术支持部门联系，为你执行这些步骤。**|
+|**想要了解如何删除你在工作或学校中使用的*自己*的 Microsoft 365 用户帐户？请与你的工作或大学的技术支持部门联系，为你执行这些步骤。**|
    
 ## <a name="what-you-need-to-know-about-deleting-users"></a>删除用户需知事项
 
-- 仅拥有企业或学校 [Office 365 全局管理员](about-admin-roles.md)或用户管理权限的人员才可删除用户帐户。 
+- 只有对企业或学校拥有[Microsoft 365 全局管理员](about-admin-roles.md)或用户管理权限的用户才能删除用户帐户。 
     
 - 永久删除用户数据前 30 天内可[还原](restore-user.md)帐户。 
     
@@ -46,7 +46,7 @@ ms.locfileid: "43608115"
     
 - 若要保留用户的电子邮件，请在删除帐户 **之前** ，将电子邮件移动到其他位置。如果已删除该帐户：如果删除时间未超过 30 天，可恢复该帐户，然后移动电子邮件数据，最后删除该帐户。请参阅 [访问并备份以往用户的数据](get-access-to-and-back-up-a-former-user-s-data.md)。
     
-- 如果您有一个企业订阅（如 Office 365 企业版 E3），则可以通过将已删除的 Office 365 用户帐户转换为*非活动邮箱*来保留邮箱数据。 若要了解详细信息，请参阅 [管理 Exchange Online 中的非活动邮箱](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365)。
+- 如果你有一个企业订阅（如 Office 365 企业版 E3），则可以通过将已删除的用户帐户转换为*非活动邮箱*来保留该帐户的邮箱数据。 若要了解详细信息，请参阅 [管理 Exchange Online 中的非活动邮箱](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365)。
 
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>全局管理员：删除用户，停止为其许可证付款，并选择要对其电子邮件和 OneDrive 内容执行的操作
@@ -176,13 +176,13 @@ ms.locfileid: "43608115"
   
 - **将收到一条错误消息，其中 "无法删除用户" 一线。请稍后再试。 "** Doublecheck 帐户是否设置了电子邮件转发功能，或者是否已将其转换为共享邮箱。 这两种情况都将导致该错误。 如果帐户有电子邮件转发或已转换为共享邮箱，请不要删除该帐户。
 
-- **你没有删除用户的相应权限** 。 只有属于[Office 365 全局管理员或用户管理管理员](about-admin-roles.md)的人员才能删除用户。 该管理员通常是学校或企业中的技术支持人员。
+- **你没有删除用户的相应权限** 。 只有属于[Microsoft 365 全局管理员或用户管理管理员](about-admin-roles.md)的用户才能删除用户。 该管理员通常是学校或企业中的技术支持人员。
 
 - **删除用户后，用户姓名继续显示在全局通讯录中** 。企业使用 Active Directory 时会出现这种情况。必须从 Active Directory 中删除用户帐户。有关说明，请参阅 TechNet 文章： [删除用户帐户](https://go.microsoft.com/fwlink/p/?linkid=841808)。
 
 ||
 |:-----|
-|**是否要从计算机中删除 Office 365？请转到[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。**|
+|**是否要从计算机中删除 Microsoft 365？转到 "[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)"。**|
    
 ## <a name="related-articles"></a>相关文章
 

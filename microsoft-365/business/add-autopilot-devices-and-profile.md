@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为你的企业设置新的 Windows 10 设备，以便其可供员工使用。
-ms.openlocfilehash: 3b1cf297914862aaa74fdf9a8bb7290d00f73b1d
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 98a2bfc721ce86c81ebd89e8f41603e619b31546
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561572"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627486"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
@@ -81,7 +81,7 @@ ms.locfileid: "42561572"
     
     - 使用公司品牌创建登录体验。
     
-    - 将设备连接到 Azure Active Directory 帐户，并自动注册以由 Microsoft 365 商业版管理。
+    - 将设备连接到 Azure Active Directory 帐户，并自动注册以由 Microsoft 365 商业高级版管理。
     
     有关详细信息，请参阅[关于 AutoPilot 配置文件设置](autopilot-profile-settings.md)。 
     

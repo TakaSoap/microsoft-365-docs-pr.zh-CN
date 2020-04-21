@@ -1,5 +1,5 @@
 ---
-title: 我拥有哪个 Office 365 商业版订阅？
+title: 我订阅了哪些产品？
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 了解如何通过转到 "订阅" 页来验证您的组织拥有哪些订阅。
 ms.custom: okr_SMB
-ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409497"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621426"
 ---
 # <a name="what-subscription-do-i-have"></a>我订阅了哪些产品？
 
 如果您是管理员，则可以通过转到管理中心来验证您的组织拥有哪些订阅。
   
- **不是管理员？** 查看[我有哪些 Office 365 商业版产品或许可证？](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **不是管理员？** 查看[我有什么 Microsoft 365 的商业产品或许可证？](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
 
@@ -50,7 +50,7 @@ ms.locfileid: "42409497"
 
 1. 在管理中心中，转到 "**记帐** \><a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。  
 
-2. 如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。在以下的屏幕截图中，你可以看到我有 Office 365 商业版 订阅。
+2. 如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。 在下面的屏幕截图中，你可以看到我有 Microsoft 365 Apps for business 订阅。
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
@@ -69,7 +69,7 @@ ms.locfileid: "42409497"
 
 1. 在管理中心中，转到 "**记帐** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。  
 
-2. 如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。在以下的屏幕截图中，你可以看到我有 Office 365 商业版 订阅。
+2. 如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。 在下面的屏幕截图中，你可以看到我有 Microsoft 365 Apps for business 订阅。
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   

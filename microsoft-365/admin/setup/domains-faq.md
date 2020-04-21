@@ -1,5 +1,5 @@
 ---
-title: 关于域的常见问题
+title: 关于域的常见问题解答
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: 通过在 FAQ 中查找问题的答案，了解有关 Office 365 中的域的详细信息。
+description: 通过在 FAQ 中查找问题的答案，了解有关域的详细信息。
 ms.custom: okr_smb
-ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540863"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627590"
 ---
-# <a name="domains-faq"></a>关于域的常见问题
+# <a name="domains-faq"></a>关于域的常见问题解答
 
 本文包含有关 Office 365 中的域的常见问题的解答。
 
@@ -51,7 +51,7 @@ ms.locfileid: "43540863"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>如何验证我的域的 SPF 记录？
 
-必须具有或**仅为 SPF 创建一个 TXT 记录**，这一点非常重要。 如果已有 SPF 记录，则应向其追加新的 Office 365 值，而不是创建一个新的。 在添加或更新了 Office 365 电子邮件的 SPF 记录后，应进行检查以确保使用以下工具之一时的语法正确： 
+必须具有或**仅为 SPF 创建一个 TXT 记录**，这一点非常重要。 如果已有 SPF 记录，则应向其追加新的 Office 365 值，而不是创建一个新的。 在添加或更新了 Microsoft 电子邮件的 SPF 记录后，应进行检查以确保使用以下工具之一时的语法正确： 
   
 - [SPF 记录测试工具](http://www.kitterman.com/spf/validate.html)
     
@@ -63,7 +63,7 @@ ms.locfileid: "43540863"
 
 有两个选项可用于使用 Office 365 的 DNS 管理：
   
-1. 您可以更改您的名称服务器（NS）记录，然后 Office 365 负责处理所有服务特定的记录，如设置电子邮件的 MX 记录。 **适合**
+1. 您可以更改您的名称服务器（NS）记录，然后 Microsoft 会处理所有服务特定的记录，如设置电子邮件的 MX 记录。 **适合**
     
 2. 您可以在 DNS 主机上添加电子邮件和其他 Office 365 服务的 DNS 记录。 **（仅限专家）**
     
@@ -87,7 +87,7 @@ ms.locfileid: "43540863"
  
 #### <a name="disadvantages"></a>缺点
 您必须自己设置适用于 Office 365 服务的 DNS 记录（除非您有 GoDaddy 域）。 
--  如果当前 DNS 主机不支持 Office 365 的所有必需的记录类型，则某些 Office 365 功能将不可用，您可能需要切换到其他 DNS 主机。 
+-  如果当前 DNS 主机不支持 Microsoft 365 的所有必需的记录类型，则某些功能将不可用，您可能需要切换到其他 DNS 主机。 
 - 当 Office 365 更改 DNS 记录的要求或添加新服务时，您必须在 DNS 主机上自己进行更新。 
    
 ## <a name="what-is-a-domain-name"></a>什么是域名？
@@ -333,9 +333,9 @@ ms.locfileid: "43540863"
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>为什么我有 "onmicrosoft.com" 域？
 
-当您注册服务时，Office 365 将为您创建一个域，如_contoso.onmicrosoft.com_。 注册时创建的用户 ID 包括域，如_alan\@contoso.onmicrosoft.com_。 
+当您注册服务时，Office 365 将为您创建一个域，如*contoso.onmicrosoft.com*。 注册时创建的用户 ID 包括域，如*alan@contoso.onmicrosoft.com*。 
   
- __如果您想让您的电子邮件看起来像_alan\@contoso.com_：__ [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Office 365](add-domain.md)中的步骤" 中的步骤，如果您已拥有它。 
+ **如果您想让您的电子邮件看起来像*alan\@contoso.com*：** [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Office 365](add-domain.md)中的步骤" 中的步骤，如果您已拥有它。 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.com"，则不能将其更改为 "fabrikam.onmicrosoft.com"。 若要使用不同的 onmicrosoft.com 域，必须启动一个使用 Office 365 的新订阅。 
     
@@ -348,12 +348,11 @@ ms.locfileid: "43540863"
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>为什么我有 "onmicrosoft.de" 域？
 
-当您注册服务时，Office 365 将为您创建一个域，如*contoso.onmicrosoft.de*。 注册时创建的用户 ID 包括域，如 "alan@contoso.onmicrosoft.de"。 
+当您注册服务时，Office 365 将为您创建一个域，如*contoso.onmicrosoft.de*。 注册时创建的用户 ID 包括域，如*alan@contoso.onmicrosoft.de*。 
   
-如果您想让您的电子邮件看起来像 "alan@contoso.de"：[购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Office 365](add-domain.md)中的步骤" 中的步骤进行操作。如果你已拥有它 
+ **如果您想让您的电子邮件看起来像*alan@contoso.de*：** [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照[将用户和域添加到 Office 365](add-domain.md)中的步骤（如果您已拥有它）。 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.de"，则不能将其更改为 "fabrikam.onmicrosoft.de"。 若要使用不同的 onmicrosoft.de 域，必须启动一个使用 Office 365 的新订阅。 
     
@@ -489,11 +488,11 @@ ms.locfileid: "43540863"
         
     2. 执行以下测试：
         
-    3. 测试本地 Office 365 电子邮件。 例如，向用户 B 发送电子邮件。应立即传递此电子邮件。 在这种情况下，将不会将邮件路由到原始服务器上的用户 B 的邮箱，因为 Office 365 将该邮箱视为本地邮箱。
+    3. 测试本地 Microsoft 电子邮件。 例如，向用户 B 发送电子邮件。应立即传递此电子邮件。 在这种情况下，将不会将邮件路由到原始服务器上的用户 B 的邮箱，因为 Office 365 将该邮箱视为本地邮箱。
         
     4. 将电子邮件测试给其他电子邮件系统上的人。 例如，将电子邮件发送到用户 C。应将此电子邮件传递到原始邮件服务器上的用户 C 邮箱。
         
-    5. 从外部帐户或从其他电子邮件系统上的员工电子邮件帐户中，验证是否在其他电子邮件系统上正确设置了转发。 例如，在用户 C 的原始服务器帐户或 Hotmail 帐户中，向用户发送一封电子邮件，并验证它是否到达用户 A 的 Office 365 邮箱。
+    5. 从外部帐户或从其他电子邮件系统上的员工电子邮件帐户中，验证是否在其他电子邮件系统上正确设置了转发。 例如，在用户 C 的 origninal 服务器帐户或 Hotmail 帐户中，向用户发送一封电子邮件，并验证它是否到达用户 A 的 Office 365 邮箱。
         
 9. 移动邮箱内容
     

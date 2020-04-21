@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: 0adb103ac3bef72e340c1f5daf54a6b8a184d85c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894272"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627426"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
@@ -75,7 +75,7 @@ ms.locfileid: "42894272"
 
 下表提供了可用于保护设备上的工作文件的设置的详细信息，以及控制用户如何从其移动设备访问 Office 文件的设置。
   
- 有关详细信息，请参阅 [Microsoft 365 商业版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)。 
+ 有关详细信息，请参阅[Microsoft 365 商业高级版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)。 
   
 ### <a name="settings-that-protect-work-files"></a>用户保护工作文件的设置
 

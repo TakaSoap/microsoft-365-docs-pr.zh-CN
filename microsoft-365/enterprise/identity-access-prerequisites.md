@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633600"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625202"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>实现标识和设备访问策略的先决条件工作
 
@@ -93,11 +93,11 @@ ms.locfileid: "42633600"
 
 <sup>*</sup>了解有关在[OneDrive 同步客户端](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e)中使用条件访问的详细信息。
 
-### <a name="office-365-client-support"></a>Office 365 客户端支持
-有关 Office 365 客户端支持的详细信息，请参阅以下文章：
-- [Office 365 客户端应用支持-条件访问](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Office 365 客户端应用程序支持-移动应用程序管理](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Office 365 客户端应用程序支持-新式验证](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+### <a name="microsoft-365-client-support"></a>Microsoft 365 客户端支持
+有关客户端支持的详细信息，请参阅以下文章：
+- [Microsoft 365 客户端应用支持-条件访问](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
+- [Microsoft 365 客户端应用程序支持-移动应用程序管理](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Microsoft 365 客户端应用程序支持-新式验证](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## <a name="protecting-administrator-accounts"></a>保护管理员帐户
 Azure AD 为你提供一种简单的方法，以使用预配置的条件访问策略开始保护管理员访问。 在 Azure AD 中，转到 "**条件访问**并查找此策略-**基准策略：要求对管理员进行 MFA （预览）**"。 选择 "此策略"，然后选择 "**立即使用策略**"。 
@@ -114,7 +114,7 @@ Azure AD 为你提供一种简单的方法，以使用预配置的条件访问�
 其他建议包括以下内容：
 - 使用 Azure AD Privileged Identity Management 减少永久管理帐户的数目。 请参阅[开始使用 PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)。 
 - [使用 Office 365 中的特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)来保护您的组织免受可能使用现有特权管理员帐户访问敏感数据或访问关键配置设置的用户泄露的行为。 
-- 仅使用管理员帐户进行管理。 管理员应使用单独的用户帐户进行常规非管理，并且仅在必要时才使用其管理帐户完成与工作职能相关联的任务。 [Office 365 管理员](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)角色具有比 office 365 服务更多的权限。
+- 仅使用管理员帐户进行管理。 管理员应使用单独的用户帐户进行常规非管理，并且仅在必要时才使用其管理帐户完成与工作职能相关联的任务。 [Microsoft 365 管理员](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)角色比 microsoft 365 服务具有更多的特权。
 - 遵循[本文](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)中所述的在 Azure AD 中保护特权帐户的最佳做法。
 
 ## <a name="next-steps"></a>后续步骤

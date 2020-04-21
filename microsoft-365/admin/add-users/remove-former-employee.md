@@ -1,5 +1,5 @@
 ---
-title: 从 Office 365 中删除以前的员工
+title: 删除以前的员工
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,15 +23,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
-description: '按照此检查表操作，从 Office 365 中删除员工并保护数据。 '
-ms.openlocfilehash: f29f24e0f9cf583e768000cff2d6081eb9df6d87
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: '按照此检查表操作，从 Microsoft 365 中删除员工并保护数据。 '
+ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353113"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617118"
 ---
-# <a name="remove-a-former-employee-from-office-365"></a>从 Office 365 中删除以前的员工
+# <a name="remove-a-former-employee"></a>删除以前的员工
   
 ## <a name="sign-out-now"></a>立即注销！
 
@@ -83,7 +83,7 @@ ms.locfileid: "42353113"
 ::: moniker-end
 
     
-在一个小时内，或者在它们离开当前的 Office 365 页面时，系统会提示他们重新登录。 （Access 令牌适用于一个小时，因此时间线取决于该令牌所剩的时间，以及它们是否从当前网页中移出。）
+在一个小时内，或者在它们离开当前的 Microsoft 365 页面时，系统会提示他们重新登录。 （Access 令牌适用于一个小时，因此时间线取决于该令牌所剩的时间，以及它们是否从当前网页中移出。）
   
  **警告** ：如果用户是在 Outlook 网页版中，只需在其邮箱中单击，但可能不会立即退出。 一旦选择了不同的磁贴（如 OneDrive）或刷新其浏览器，就会启动注销。 
   
@@ -94,7 +94,7 @@ ms.locfileid: "42353113"
 ## <a name="overview-of-all-the-steps-to-remove-an-employee-and-secure-data"></a>有关删除员工和安全数据的完整步骤的概述
 <a name="bkmk_now"> </a>
 
-我们经常收到一个问题，即"当员工离开组织时该如何保护数据？"本文介绍如何阻止对 Office 365 的访问以及保护数据应采取的步骤。
+我们经常收到一个问题，即"当员工离开组织时该如何保护数据？ 本文介绍如何阻止对 Microsoft 365 的访问以及应采取的措施保护数据的步骤。
   
 > [!NOTE]
 > 如果你是全局管理员，你可以删除员工，转发其电子邮件，选择使用新的引导式体验对其 OneDrive 内容执行的操作。 有关详细信息，请参阅[全局管理员：删除用户](remove-former-employee.md)。 但是，我们建议您完成此处列出的所有其他步骤，以确保员工无法访问贵公司的数据。 
@@ -107,10 +107,10 @@ ms.locfileid: "42353113"
 |1. [保存以前员工的邮箱的内容](#save-the-contents-of-a-former-employees-mailbox) <br/> |此功能对要接管此员工工作的人员或在发生诉讼时非常有用。  <br/> |
 |2.[将前员工的电子邮件转发给其他员工或转换为共享邮箱](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |这可保证前员工的电子邮件地址处于活动状态。如果客户或合作伙伴仍向以前员工的地址发送电子邮件，此功能可让他们发送给接管该工作的员工。  <br/> |
 |3.[擦除并阻止以前员工的移动设备](#wipe-and-block-a-former-employees-mobile-device) <br/> |从手机或平板电脑删除业务数据。  <br/> |
-|4. [阻止以前的员工访问 Office 365 数据](#block-a-former-employees-access-to-office-365-data)<br/> |它会阻止该人员访问其旧 Office 365 邮箱和数据。  <br/><br/> **提示**：当您阻止用户的访问时，您仍在为其许可证付费。 必须删除订阅中的许可证，才可停止付费（步骤 5）。           |
+|4.[阻止以前的员工对 Microsoft 365 数据的访问权限](#block-a-former-employees-access-to-microsoft-365-data)<br/> |阻止用户访问其旧的 Microsoft 365 邮箱和数据。  <br/><br/> **提示**：当您阻止用户的访问时，您仍在为其许可证付费。 必须删除订阅中的许可证，才可停止付费（步骤 5）。           |
 |5.[移动员工的 OneDrive 内容](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |如果仅删除用户的许可证但不删除其帐户，则甚至 30 天后仍可访问该用户的 OneDrive 中的内容。  <br/><br/> 删除帐户之前，应将其 OneDrive 内容移至另一个易访问的位置。删除员工帐户后，其 OneDrive 中的内容会保留 **30** 天。在此 30 天中可以还原用户帐户并获取访问其 OneDrive 内容的权限。如果还原用户帐户，即使是在 30 天后也可以访问 OneDrive 内容。  <br/> |
 |5a.如果用户使用其个人计算机访问 OneDrive 和 SharePoint，将发生什么情况？  <br/> |如果用户使用个人计算机（而不是公司计算机）从 OneDrive 和 SharePoint 下载文件，则无法擦除其存储的文件。  <br/><br/> 他们将继续有权访问已同步到计算机的任意文件。  <br/> |
-|6. [移除和删除以前员工的 Office 365 许可证 ](#remove-and-delete-the-office-365-license-from-a-former-employee)<br/> |移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <br/><br/> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  <br/> |
+|6.[从以前的员工处删除并删除 Microsoft 365 许可证](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <br/><br/> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  <br/> |
 |7.[删除以前员工的用户帐户](#delete-a-former-employees-user-account)<br/> |这将从您的管理中心删除帐户。 进行清除，保持干净。  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>保存以前员工的邮箱的内容
@@ -217,11 +217,11 @@ ms.locfileid: "42353113"
     
     **提示** ：请确保从本地 BlackBerry 企业服务删除或禁用用户。还应禁用该用户的所有 BlackBerry 设备。有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。 
     
-## <a name="block-a-former-employees-access-to-office-365-data"></a>阻止以前的员工访问 Office 365 数据
+## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>阻止以前的员工对 Microsoft 365 数据的访问权限
 <a name="bkmk_block"> </a>
 
  > [!IMPORTANT] 
- > 阻止帐户可能需要长达24小时才会生效。 如果需要立即阻止用户的登录访问，则应该 [重置其密码](reset-passwords.md)，然后启动一次性事件，以便将其从所有设备上的 Office 365 会话中注销。 请参阅[立即注销！](#sign-out-now)
+ > 阻止帐户可能需要长达24小时才会生效。 如果需要立即阻止用户登录访问，则应[重置其密码](reset-passwords.md)，然后启动一次性事件，以便在所有设备上将其从 Microsoft 365 会话中注销。 请参阅[立即注销！](#sign-out-now)
  
 
 ::: moniker range="o365-worldwide"
@@ -260,7 +260,7 @@ ms.locfileid: "42353113"
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>阻止以前的员工访问电子邮件 (Exchange Online)
 <a name="bkmk_block_email"> </a>
 
-若将 Office 365 电子邮件作为 Office 365 订阅的一部分，则需登录到 Exchange 管理中心遵循用于阻止以前员工访问电子邮件的这些步骤。
+如果您的电子邮件是 Microsoft 365 订阅的一部分，您需要登录到 Exchange 管理中心，以阻止您的前一名员工访问其电子邮件。
   
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
@@ -271,12 +271,12 @@ ms.locfileid: "42353113"
     
 4. 在 "**电子邮件连接**" 下，选择 "**禁用**并在出现提示时回答**是"** 。 
     
-## <a name="remove-and-delete-the-office-365-license-from-a-former-employee"></a>移除和删除以前员工的 Office 365 许可证
+## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>从以前的员工处删除并删除 Microsoft 365 许可证
 <a name="bkmk_remove"> </a>
 
-因此若要在某人离开组织后停止为许可证付费，需要移除其 Office 365 许可证，然后从订阅中将其删除。如果选择不从订阅中删除该许可证，可将其分配给其他用户。
+因此，在有人离开你的组织后，你不会继续支付许可证，你需要删除其 Microsoft 365 许可证，然后将其从订阅中删除。 如果选择不从订阅中删除该许可证，可将其分配给其他用户。
   
-删除许可证后，该用户的所有数据将保留 30 天。可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。30 天后，该用户的所有数据（SharePoint Online 上存储的文档除外）都将从 Office 365 永久删除且无法恢复。 
+删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30天后，用户的所有数据（存储在 SharePoint Online 上的文档除外）将从 Microsoft 365 中永久删除，并且无法恢复。 
 
 ::: moniker range="o365-worldwide"
 
@@ -325,13 +325,13 @@ ms.locfileid: "42353113"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
     
@@ -339,7 +339,7 @@ ms.locfileid: "42353113"
 
 将其他人[添加](add-users.md)到您的企业中时，系统将提示您同时购买许可证，只需一步即可！
     
-有关管理 Office 365 商业版 用户许可证的详细信息，请参阅[在 Office 365 商业版中向用户分配许可证](../manage/assign-licenses-to-users.md)和[在 Office 365 商业版中删除用户许可证](../manage/remove-licenses-from-users.md)。
+有关管理 Microsoft 365 for business 的用户许可证的详细信息，请参阅[在 microsoft 365 for business 中向用户分配许可证](../manage/assign-licenses-to-users.md)和[删除 microsoft 365 for business 中的用户的许可证](../manage/remove-licenses-from-users.md)。
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>已删除的员工帐户如何影响 Skype for Business
 <a name="bkmk_remove"> </a>
@@ -392,7 +392,7 @@ ms.locfileid: "42353113"
   
 ### <a name="does-your-organization-use-active-directory"></a>组织是否使用 Active Directory？
 
-如果你的组织将用户帐户从本地 Office 365 环境同步到 Active Directory，则必须在本地 Active Directory 服务中删除和还原这些用户帐户。你无法在 Office 365 中删除或还原它们。
+如果您的组织将用户帐户从本地 Active Directory 环境同步到 Microsoft 365，则必须在本地 Active Directory 服务中删除和还原这些用户帐户。 你无法在 Office 365 中删除或还原它们。
   
 有关说明，请参阅本文：[删除用户帐户](https://go.microsoft.com/fwlink/?linkid=841808)。
   

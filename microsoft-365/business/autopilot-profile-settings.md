@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot 配置文件可帮助您控制 Windows 在用户设备上的安装方式。 配置文件包含 "跳过 Cortana 安装" 等默认和可选设置。
-ms.openlocfilehash: 1cc8a3171bbc4a1e5cb531b9364c7791586fc339
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c2ec3f4c3e0ebc4ea545d11f819c897f414ad52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593325"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627406"
 ---
 # <a name="about-autopilot-profile-settings"></a>关于"AutoPilot 配置文件"设置
 
@@ -46,9 +46,9 @@ ms.locfileid: "41593325"
   
 |**设置**|**说明**|
 |:-----|:-----|
-|跳过 Cortana、OneDrive 和 OEM 注册  <br/> |跳过安装使用者应用程序，如 Cortana 和个人 OneDrive。 只要用户是设备上的本地管理员，设备用户就可以在以后安装这些设备。 由于设备将由 Microsoft 365 商业版管理，因此将跳过原始制造商注册。  <br/> |
-|使用贵公司品牌登录体验  <br/> |如果您的公司[将公司商标添加到 Office 365 登录页面](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)，则设备用户将在登录时获得该体验。  <br/> |
-|使用已配置的 AAD 帐户的 MDM 自动注册。  <br/> |用户标识将由 Azure Active Directory 管理，并且用户将使用其 Microsoft 365 商业版凭据登录到 Windows 和 Office 365。  <br/> |
+|跳过 Cortana、OneDrive 和 OEM 注册  <br/> |跳过安装使用者应用程序，如 Cortana 和个人 OneDrive。 只要用户是设备上的本地管理员，设备用户就可以在以后安装这些设备。 由于设备将由 Microsoft 365 商业高级版管理，因此将跳过原始制造商注册。  <br/> |
+|使用贵公司品牌登录体验  <br/> |如果你的公司已[将公司品牌添加到 Microsoft 365 登录页面](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)，则设备用户将在登录时获得该体验。  <br/> |
+|使用已配置的 AAD 帐户的 MDM 自动注册。  <br/> |用户标识将由 Azure Active Directory 管理，并且用户将使用其 Microsoft 365 商业高级凭据登录 Windows 和 Microsoft 365。  <br/> |
    
  **可选设置：**
   

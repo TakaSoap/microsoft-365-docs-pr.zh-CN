@@ -16,21 +16,21 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解在混合环境中使用独立 Exchange Online Protection （EOP）时，如何将内部部署 Exchange 环境配置为将垃圾邮件路由到本地用户的垃圾邮件文件夹。
-ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893714"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621278"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>将独立 EOP 配置为将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹
 
 > [!IMPORTANT]
-> 本主题仅适用于混合环境中的独立 EOP 客户。 本主题不适用于使用 Exchange Online 邮箱的 Office 365 客户。
+> 本主题仅适用于混合环境中的独立 EOP 客户。 本主题不适用于使用 Exchange Online 邮箱的 Microsoft 365 客户。
 
-如果您是混合环境中的独立 Exchange Online Protection （EOP）客户，则需要将内部部署 Exchange 组织配置为识别和翻译 EOP 的垃圾邮件筛选 verdicts，以便内部部署邮箱中的垃圾邮件规则可以将邮件移动到 "垃圾邮件" 文件夹。
+如果您是混合环境中的独立 Exchange Online Protection （EOP）客户，您需要将内部部署 Exchange 组织配置为识别和翻译 EOP 的垃圾邮件筛选 verdicts，以便内部部署邮箱中的垃圾邮件规则可以将邮件移动到 "垃圾邮件" 文件夹。
 
-具体来说，您需要在内部部署 Exchange 组织中创建邮件流规则（也称为传输规则），条件是查找具有以下任何 EOP 反垃圾邮件头和值的邮件，以及设置垃圾邮件可信度的操作（SCL）的邮件的6个：
+具体来说，您需要在内部部署 Exchange 组织中创建邮件流规则（也称为传输规则），条件是查找带有以下任一 EOP 反垃圾邮件头和值的邮件，以及将这些邮件的垃圾邮件可信度（SCL）设置为6的操作：
 
 - `X-Forefront-Antispam-Report: SFV:SPM`（通过垃圾邮件筛选功能标记为垃圾邮件）
 
@@ -139,7 +139,7 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- 在**不扫描出站邮件中的垃圾**邮件的外部电子邮件系统中，向受影响的收件人发送未经请求的批量电子邮件（GTUBE）邮件的一般测试，并确认它已传递到其 "垃圾邮件" 文件夹。 GTUBE 邮件类似于用于测试恶意软件设置的欧洲研究院 for 计算机防病毒研究（EICAR.TXT）文本文件。
+- 在**不扫描出站邮件中的垃圾**邮件的外部电子邮件系统中，向受影响的收件人发送未经请求的批量电子邮件（GTUBE）邮件的一般测试，并确认它已传递到其 "垃圾邮件" 文件夹。 GTUBE 邮件类似于用于测试恶意软件设置的欧洲反计算机病毒协会 (EICAR) 文本文件。
 
   若要发送 GTUBE 邮件，请将电子邮件正文中的以下文本包含在一行中，不含空格或换行符：
 

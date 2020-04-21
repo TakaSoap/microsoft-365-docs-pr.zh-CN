@@ -1,5 +1,5 @@
 ---
-title: Office 365 商业版入门
+title: Microsoft 365 商业版入门
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -21,17 +21,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
-description: 了解如何在计算机、手机和平板电脑上设置和使用 Office 365。
-ms.openlocfilehash: 695bf6ef3acd6d9f9c4b1a5252172258b0af5a2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 了解如何在计算机、电话和平板电脑上设置和使用 Microsoft 365。
+ms.openlocfilehash: fd52b12ab008e2c8d7b7a4476ae2212e01e1bb10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238128"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623914"
 ---
 # <a name="get-started"></a>入门
 
-您的组织最近获取了 Office 365，现在您需要使用它，以便您可以开始阅读电子邮件、共享文档等。 了解如何在计算机、手机和平板电脑上设置和使用 Office 365。
+你的组织最近获取了 Microsoft 365，现在你需要使用它，以便你可以开始阅读电子邮件、共享文档等。 了解如何在计算机、电话和平板电脑上设置和使用 Microsoft 365。
   
 ::: moniker range="o365-worldwide"
 
@@ -66,5 +66,5 @@ ms.locfileid: "42238128"
     
 ## <a name="related-articles"></a>相关文章
 
-[设置 Office 365 商业版 - 管理员帮助](../setup/setup.md)
+[设置 Microsoft 365 for business-管理员帮助](../setup/setup.md)
 

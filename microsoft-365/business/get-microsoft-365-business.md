@@ -1,5 +1,5 @@
 ---
-title: 从合作伙伴中心获取 Microsoft 365 商业版
+title: 从合作伙伴中心获取 Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,33 +23,33 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 了解购买 Microsoft 365 商业版的选项，以及从 Microsoft 合作伙伴中心购买的分步说明。
-ms.openlocfilehash: ccbdb928c0f1268fb7019793b6246eef386daa45
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 了解用于购买 Microsoft 365 商业高级版和分步说明的选项，以便从 Microsoft 合作伙伴中心进行购买。
+ms.openlocfilehash: 4247160c87a6a910358d9b740b28dc14747b72a8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633590"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627226"
 ---
-# <a name="get-microsoft-365-business"></a>获取 Microsoft 365 商业版
+# <a name="get-microsoft-365-business-premium"></a>获取 Microsoft 365 商业高级版
 
-## <a name="get-microsoft-365-business-from-microsoft"></a>从 Microsoft 获取 Microsoft 365 商业版
+## <a name="get-microsoft-365-business-premium-from-microsoft"></a>从 Microsoft 获取 Microsoft 365 商业高级版
 
-如果你没有合作伙伴并且想要获取 Microsoft 365 商业版，你可以在[此处购买它](https://www.microsoft.com/en-US/microsoft-365/business)。
+如果你没有合作伙伴并且想要获取 Microsoft 365 商业高级版，你可以在[此处购买](https://www.microsoft.com/en-US/microsoft-365/business)。
 
-有关详细说明，请参阅[注册 Microsoft 365 商业](sign-up.md)版。
+有关详细说明，请参阅[注册 Microsoft 365 商业高级版](sign-up.md)。
 
-你也可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)购买 Microsoft 365 业务并获取设置帮助。
+你也可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)购买 Microsoft 365 商业高级版，获取设置帮助。
   
-## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>从 Microsoft 合作伙伴中心获取 Microsoft 365 商业版
+## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版
 
 1. 通过使用注册参加云服务提供商 (CSP) 计划时创建的凭据，登录 [Microsoft 合作伙伴中心](https://go.microsoft.com/fwlink/p/?linkid=849910)。 
     
-2. 在 "合作伙伴仪表板" 中，选择 "**客户**"，然后选择您的客户或添加新客户，然后再获取 Microsoft 365 商业版。
+2. 在 "合作伙伴仪表板" 中，选择 "**客户**"，然后选择您的客户或添加新客户，然后再获取 Microsoft 365 商业高级版。
     
     ![在 Microsoft 合作伙伴中心中，添加客户。](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. 在 "客户**订阅**" 页上，选择 "**添加订阅**"，选择 "目录" 下的 "小型企业" 选项，然后选择 " **Microsoft 365 business**"。
+3. 在 "客户**订阅**" 页上，选择 "**添加订阅**"，选择 "目录" 下的 "小型企业" 选项，然后选择 " **Microsoft 365 商业高级版**"。
     
     选择所需的许可证数（不超过 300 个）。 如果用户数超过300，请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 。 
     

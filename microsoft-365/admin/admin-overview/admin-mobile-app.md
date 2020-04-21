@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: 获取 Microsoft 365 管理应用程序，并了解如何通过手机或平板电脑管理你的在线组织。
-ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aead9f30f2d75e3eab5099596ff80a575e571306
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353033"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623984"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>关于 Microsoft 365 管理移动应用
 
@@ -66,11 +66,11 @@ ms.locfileid: "42353033"
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>要使用该应用，我需要做什么？
 
-您需要具有有效的 Office 365 for business 或 Microsoft 365 商业版订阅，才能登录并使用应用。 管理员移动应用程序不是电子邮件客户端。 它是一个具有80多个功能的丰富管理应用程序，可帮助你在你的旅途中支持你的组织。
+您需要具有有效的 Microsoft 365 Apps for business 或 Microsoft 365 商业高级订阅，才能登录并使用应用。 管理员移动应用程序不是电子邮件客户端。 它是一个具有80多个功能的丰富管理应用程序，可帮助你在你的旅途中支持你的组织。
   
-### <a name="can-i-use-the-app-with-my-office-365-for-home-subscription"></a>我可以将应用与我的 Office 365 一起使用来进行家庭订阅吗？
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>我可以将应用程序用于我的 Microsoft 365 系列订阅吗？
 
-否，应用仅适用于 Office 365 for business 和 Microsoft 365 商业版订阅。 
+否，应用仅适用于 Microsoft 365 Apps for business 和 Microsoft 365 商业高级版订阅。 
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>如果我的组织启用了目录同步，是否可使用该应用？
 
@@ -104,4 +104,4 @@ ms.locfileid: "42353033"
   
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -1,5 +1,5 @@
 ---
-title: Office 365 管理员概述
+title: 管理中心概述
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,17 +19,17 @@ search.appverid:
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 了解 Microsoft 365 管理中心：如何登录，你的管理员是谁，以及观看有关它的视频介绍。
-ms.openlocfilehash: 5f2727b582fcae2b4e001be1ec355747c96e9084
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633460"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623960"
 ---
-# <a name="office-365-admin-overview"></a>Office 365 管理员概述 
+# <a name="admin-center-overview"></a>管理中心概述 
 
   
-当你购买[Office 365 业务计划](https://go.microsoft.com/fwlink/?linkid=856886)或[Microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business)时，我们会为你提供一个具有管理员权限的特殊帐户。 此帐户称为管理员帐户。
+当你购买[microsoft 365 Apps for business plan](https://go.microsoft.com/fwlink/?linkid=856886)或[microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business)时，我们为你提供具有管理员权限的特殊帐户。 此帐户称为管理员帐户。
   
 使用此帐户，您可以访问 Microsoft 365 管理中心，以管理您的业务：添加用户、管理订阅、重置密码等。 试一试！
   
@@ -66,6 +66,6 @@ ms.locfileid: "42633460"
     
 - **小型企业** ：联系企业所有者/共同所有者。他们通常会向 IT 顾问授予管理员权限，让 IT 顾问处理公司中的所有计算机维护工作。 
     
-默认情况下，注册并购买 Office 365 商业版订阅的用户可获得管理员权限。该用户可向其他人员分配管理员权限，帮助其管理组织的 Office 365。
+默认情况下，注册和购买 Microsoft 365 for business 订阅的人员将获得管理员权限。 此人可将管理员权限分配给其他人，以帮助他们为其组织管理 Microsoft 365。
   
 如果你不知道谁在你的工作或学校联系寻求帮助，请尝试向你授予你的用户帐户和密码的人。

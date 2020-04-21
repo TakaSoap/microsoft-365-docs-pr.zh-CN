@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何向用户或业务中的多个用户分配管理员角色，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 3f22ef22571dd04dd3364a95ed860f53b8ff207b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618784"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -84,7 +84,7 @@ ms.locfileid: "43211915"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要更改其管理员角色的用户。 在浮出控件窗格中，单击 "**角色**" 旁边的 "**编辑**"。 
 
@@ -96,7 +96,7 @@ ms.locfileid: "43211915"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要更改其管理员角色的用户。 在浮出控件窗格中，单击 "**角色**" 旁边的 "**编辑**"。 
 
@@ -126,7 +126,7 @@ ms.locfileid: "43211915"
 
 [使用 PowerShell 向用户帐户分配角色](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
-[授权或删除合作伙伴关系](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)
+[授权或删除合作伙伴关系](../misc/add-partner.md)
 
 [使用 Exchange 管理中心添加备选电子邮件地址](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
 

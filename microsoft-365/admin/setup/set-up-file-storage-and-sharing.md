@@ -1,5 +1,5 @@
 ---
-title: 设置 Office 365 文件存储和共享
+title: 设置文件存储和共享
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -27,24 +27,24 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站进行文件存储和共享。
-ms.openlocfilehash: 6494207518f919a3d984be7e7932740d82e9ea11
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209732"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627554"
 ---
-# <a name="set-up-office-365-file-storage-and-sharing"></a>设置 Office 365 文件存储和共享
+# <a name="set-up-file-storage-and-sharing"></a>设置文件存储和共享
 
 为你的企业设置文件存储和共享的最佳方式之一是使用 OneDrive 和团队网站一起使用。 如果是只有几名员工的小型企业，此方法非常合适。
 
-观看有关在 Office 365 中存储文件的位置的简短视频。<br><br>
+观看有关在 Microsoft 365 中存储文件的位置的简短视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-## <a name="where-you-can-store-documents-in-office-365"></a>文档在 Office 365 中的存储位置
+## <a name="where-you-can-store-documents-in-microsoft-365"></a>在 Microsoft 365 中可将文档存储在何处
 
 - OneDrive 专用于个人用途，并偶尔共享文件。 
 
@@ -52,7 +52,7 @@ ms.locfileid: "43209732"
 
 OneDrive 和团队网站为你和你的员工提供随处访问。
   
-![显示 Office 365 产品如何使用 OneDrive 或工作组网站的图表](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![展示了 Microsoft 365 产品如何使用 OneDrive 或工作组网站的图表](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 下面是在将 OneDrive 和工作组网站一起使用时，在每个位置中存储的内容的建议：
   
@@ -60,7 +60,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 |:-----|:-----|:-----|
 |**存储位置** <br/> |**它有何用途？** <br/> |**在此存储的内容** <br/> |
 |**OneDrive** <br/> |在 OneDrive 中存储内容类似于将文件存储在您的计算机上;其他任何人都无法轻松访问它们。  <br/> 有关详细信息，请参阅[什么是 OneDrive For business？](https://support.office.com/article/187f90af-056f-47c0-9656-cc0ddca7fdc2.aspx) <br/> |其他工作组成员无需定期协作处理或访问的业务文件。  <br/> |
-|**SharePoint 团队网站** <br/> |协作. 当您创建 Office 365 组（例如，在 Microsoft 365 管理中心中，在 Outlook 中，或在 Microsoft 团队中创建团队时），将为该组创建 SharePoint 团队网站。 同样，当您从 SharePoint 主页或新的 SharePoint 管理中心创建新的 SharePoint 团队网站时，它也会创建一个 Office 365 组。 有关详细信息，请参阅[什么是 sharepoint 团队网站？](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)和[在 SharePoint Online 中创建团队网站](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)。  <br/> |具有共享所有权的文件。 我们建议为您组织中的每个工作单元提供单独的工作组网站。 例如，若要将人员和财务文档保留为较小的团队，请创建一个单独的团队网站。  <br/> |
+|**SharePoint 团队网站** <br/> |协作. 创建 Microsoft 365 组（例如，在 Microsoft 365 管理中心、Outlook 中或在 Microsoft 团队中创建团队）时，将为该组创建 SharePoint 团队网站。 同样，当您从 SharePoint 主页或新的 SharePoint 管理中心创建新的 SharePoint 团队网站时，它也会创建一个 Microsoft 365 组。 有关详细信息，请参阅[什么是 sharepoint 团队网站？](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)和[在 SharePoint Online 中创建团队网站](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)。  <br/> |具有共享所有权的文件。 我们建议为您组织中的每个工作单元提供单独的工作组网站。 例如，若要将人员和财务文档保留为较小的团队，请创建一个单独的团队网站。  <br/> |
 
 > [!NOTE]
 > SharePoint 还有其他类型的网站可用于您的企业。 您可以使用 intranet 中的[通信网站](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx)为广泛的访问群体发布信息。 此外，您还可以使用[中心网站](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx)连接 intranet 中的网站。
@@ -69,13 +69,13 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>工作组成员可以在 OneDrive 中存储自己的文件
 
-业务中已分配了 Office 365 许可证（且选择了 SharePoint Online）的每个人获取 OneDrive 云存储空间。 他们可以在这里存储与业务相关的文件以供从任何设备访问，并且这些文件仅适用于该用户。 例如，他们可能会存储草稿提案、其会议笔记或要放映的演示的脚本。
+业务中分配了 Microsoft 365 许可证的每个人（同时选择了 SharePoint Online）获取 OneDrive 云存储空间。 他们可以在这里存储与业务相关的文件以供从任何设备访问，并且这些文件仅适用于该用户。 例如，他们可能会存储草稿提案、其会议笔记或要放映的演示的脚本。
   
 员工还可以共享 OneDrive 文件和文件夹。 如果员工离开或离开公司，则其他人可以访问存储在 OneDrive 中的共享文件。
   
 下面介绍了团队中的每个人如何设置 OneDrive 和共享文件。
 
-1. 转到<a href="https://portal.office.com/ " target="_blank">Office 365 门户</a>，并使用您的用户名和密码登录。
+1. 转到<a href="https://portal.office.com/ " target="_blank">Microsoft 365 门户</a>，并使用你的用户名和密码登录。
 
 2. 在应用启动器中，选择 " **OneDrive**"。
 
@@ -107,7 +107,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
   
 1. 在团队网站的主页上，从左侧导航菜单中选择 "**文档**"。 执行此操作后，会进入" **文档库**"。
   
-2. 当您仍登录到 Office 365 时，请从任务栏或其他位置打开 Windows**文件资源管理器**。 转到你想要向工作组网站上载的文件。
+2. 当您仍登录到 Microsoft 365 时，请从任务栏或其他位置打开 Windows**文件资源管理器**。 转到你想要向工作组网站上载的文件。
 
 3. 选择要上载到团队网站的文件，然后将其拖动到**文档库**。
   
@@ -166,7 +166,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
 将文件存储在 OneDrive 中时，仅可供您访问，除非您与他人共享。 当您共享文件时，可以选择创建可转发的链接，或仅与特定用户共享。 你也可以在 OneDrive 中创建单独的文件夹，分别用于不同用途，如用于公共、个人或单个项目。 每个文件夹可共享给不同人员或组，或其他人。
   
-有关共享的详细信息，请参阅[与 Office 365 共享文件和文件夹](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx)。
+有关共享的详细信息，请参阅[与 Microsoft 365 共享文件和文件夹](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx)。
   
 ### <a name="track-how-much-space-you-have-left"></a>跟踪还剩余多少空间
 
@@ -178,7 +178,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>启用或禁用第三方存储服务
 
-您可以在 Office 365 中为用户启用第三方存储，以便除了 OneDrive 和工作组网站之外，还可以使用 Dropbox 等服务存储和共享文档。 对于提供用户可能已在用于或倾向于用于业务项目的服务，这可能是一种非常好的方法。 如果您不希望组织中的人员使用 Office 打开第三方服务中的文件，请按照以下步骤将其关闭。
+你可以在 Microsoft 365 中为你的用户启用第三方存储，以便除了 OneDrive 和团队网站之外，还可以使用 Dropbox 等服务存储和共享文档。 对于提供用户可能已在用于或倾向于用于业务项目的服务，这可能是一种非常好的方法。 如果您不希望组织中的人员使用 Office 打开第三方服务中的文件，请按照以下步骤将其关闭。
   
 > [!IMPORTANT]
 > 第三方存储在默认情况下处于启用状态，因此，如果您不希望对用户可用，则需要立即执行这些步骤。
@@ -197,8 +197,8 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
 - **在平板电脑和手机上设置 Office 应用**。 您需要执行此操作，以便您可以**编辑**存储在 OneDrive 中的文件以及 tablet 或手机上的工作组网站中存储的文件。 如果您不安装平板电脑或手机的 Office 应用程序，您将能够查看这些文件但不能对其进行编辑。
 
-  - [使用 Office 365 在 Android 上安装和设置 Office](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [使用 Microsoft 365 在 Android 上安装和设置 Office](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
 
-  - [使用 Office 365 在 iPhone 或 iPad 上安装和设置 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [使用 Microsoft 365 在 iPhone 或 iPad 上安装和设置 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [使用 Office 365 在 Windows Phone 上设置 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [使用 Microsoft 365 在 Windows Phone 上设置 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)

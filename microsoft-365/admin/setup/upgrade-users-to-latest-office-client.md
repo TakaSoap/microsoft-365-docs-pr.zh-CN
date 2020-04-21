@@ -1,5 +1,5 @@
 ---
-title: 将 Office 365 for business 用户升级到最新的 Office 客户端
+title: 将 Microsoft 365 for business 用户升级到最新的 Office 客户端
 f1.keywords:
 - NOCSH
 ms.author: kwekuako
@@ -19,14 +19,14 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 了解如何将用户升级到最新的 Office 客户端。
-ms.openlocfilehash: 18200184ed8d7eb15ee4eef3903ac9d8e08b9854
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521455"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627530"
 ---
-# <a name="upgrade-your-office-365-for-business-users-to-the-latest-office-client"></a>将 Office 365 for business 用户升级到最新的 Office 客户端
+# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>将 Microsoft 365 for business 用户升级到最新的 Office 客户端
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 到达支持终止
 
@@ -42,9 +42,9 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
 
  **这是正确的主题吗？**
   
- 如果您是负责组织中的 Office 365 for business 订阅的管理员，则是正确的位置。 管理员通常负责管理用户、重置密码、管理 Office 安装和添加或删除许可证等任务。
+ 如果您是负责组织中的 Microsoft 365 for business 订阅的管理员，那么就是正确的位置。 管理员通常负责管理用户、重置密码、管理 Office 安装和添加或删除许可证等任务。
 
- 如果你不是管理员，并且拥有[office for 家庭](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans)产品，请参阅[如何升级 office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx)以获取有关升级旧版 office 的信息。
+ 如果你不是管理员，并且拥有[Microsoft 365 系列](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans)产品，请参阅[如何升级 office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx)以获取有关升级旧版 office 的信息。
 
 ## <a name="get-ready-to-upgrade"></a>准备升级
 
@@ -71,9 +71,9 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
   
 ## <a name="step-2---check-your-existing-subscription-plan"></a>步骤 2-检查现有订阅计划
 
-一些 Office 365 计划不包括 Office 的完整桌面版本，如果您的计划不包括 Office，升级步骤将有所不同。
+一些 Microsoft 365 计划不包括 Office 的完整桌面版本，如果您的计划不包括 Office，升级步骤将有所不同。
   
-不确定您拥有哪种订阅计划？ 请参阅[我有什么 Office 365 for business 订阅？](../admin-overview/what-subscription-do-i-have.md)
+不确定您拥有哪种订阅计划？ 查看[我拥有什么 Microsoft 365 for business 订阅？](../admin-overview/what-subscription-do-i-have.md)
   
 如果现有计划包含 Office，请转到[步骤 3-卸载 office](#step-3---uninstall-office)。
   
@@ -83,7 +83,7 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
 
  **选项1：切换 Office 订阅**
 
-切换到包含 Office 的订阅。 请参阅[切换到不同的 Office 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md)。
+切换到包含 Office 的订阅。 请参阅[切换到其他 Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md)。
 
 **选项2：购买 Office 的单个、一次性购买或通过批量许可证购买 Office**
 
@@ -111,13 +111,13 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
 
  **Office 预安装在您的计算机上**如果您不再拥有光盘或产品密钥（如果 Office 随附一台），则无法重新安装它。
 
- **不支持的 Office 365 订阅**如果您的 Office 副本是通过停止订阅（如 Office 365 小型企业高级版或 Office 365 中型企业版）获取的，则您将无法安装较旧版本的 Office，除非您拥有订阅附带的产品密钥。
+ **不支持的订阅**如果您的 Office 副本是通过停止订阅（如 Office 365 小型企业高级版或 Office 365 中型企业版）获取的，则您将无法安装较旧版本的 Office，除非您拥有订阅附带的产品密钥。
 
 如果您希望使用最新版本的 Office 并行安装早期版本的 Office，您可以查看在[同一台电脑上安装和使用 office 的不同版本](https://support.office.com/article/6ebb44ce-18a3-43f9-a187-b78c513788bf.aspx)的版本列表。 并行安装对于您来说可能是最合适的选择，例如，您已安装了与较旧版本的 Office 结合使用的第三方加载项，并且您尚不确定它们是否与最新版本兼容。
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>步骤 4-将 Office 许可证分配给用户
 
-如果尚未执行此操作，请将许可证分配给组织中需要安装 Office 的任何用户，请参阅[在 Office 365 for business 中向用户分配许可证](../manage/assign-licenses-to-users.md)。
+如果尚未执行此操作，请将许可证分配给组织中需要安装 Office 的任何用户，请参阅[在 Microsoft 365 for business 中向用户分配许可证](../manage/assign-licenses-to-users.md)。
   
 ## <a name="step-5---install-office"></a>第5步-安装 Office
 

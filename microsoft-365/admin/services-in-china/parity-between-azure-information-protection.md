@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 description: 了解有关由世纪互联运营的 Office 365 的 Azure 信息保护以及如何为中国的客户配置它的详细信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: a4eb8c3370a123b939fdccc53eec3905f79ee806
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3d24b450cc9ba9a6427732d408e35af1394b4a34
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240280"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627650"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>由世纪互联运营的 Office 365 的 Azure 信息保护与商业产品之间的奇偶校验
 
@@ -32,7 +32,7 @@ ms.locfileid: "42240280"
 
 这些是由世纪互联运营的 Office 365 的 Azure 信息保护与年7月2019的商业产品的现有差距：
 
-- 仅 Office 365 专业增强版（内部版本11731.10000 或更高版本）支持信息权限管理（IRM）。 Office 2010、Office 2013 和其他 Office 2016 版本不受支持。
+- 仅适用于企业版（内部版本11731.10000 或更高版本）的 Microsoft 365 应用程序支持信息权限管理（IRM）。 Office 2010、Office 2013 和其他 Office 2016 版本不受支持。
 
 - 从 Active Directory 权限管理服务（AD RMS）到 Azure 信息保护的迁移目前不可用。
   

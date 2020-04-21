@@ -1,5 +1,5 @@
 ---
-title: Office 365 部署的多重身份验证计划
+title: 为 Microsoft 365 部署规划多重身份验证
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: 了解 Office 365 中的多重身份验证，以及对其进行设置时需要遵循的步骤。
-ms.openlocfilehash: 715baeb0355ab203e890f2c87cf0751eff69e7f8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+description: 了解 Microsoft 365 中的多重身份验证，以及对其进行设置时需要遵循的步骤。
+ms.openlocfilehash: c68fdb5c1a144c6bfe1161d95e1d6808461e2456
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503991"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627700"
 ---
-# <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Office 365 部署的多重身份验证计划
+# <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>为 Microsoft 365 部署规划多重身份验证
 
 多重身份验证 (MFA) 是一种身份验证方法，要求使用多个验证方法，并向用户登录和交易添加第二层安全。 它的工作方式是要求包含用户帐户密码之外的信息的附加验证步骤，如：
   
@@ -39,9 +39,9 @@ ms.locfileid: "43503991"
     
 - 生物识别设备 
     
-## <a name="mfa-in-office-365"></a>Office 365 中的 MFA
+## <a name="multi-factor-authentication-in-microsoft-365"></a>Microsoft 365 中的多因素身份验证
 
-Office 365 使用 MFA 实现额外的登录安全性，并可为 Microsoft 365 管理中心内的每个用户帐户进行管理。 Office 365 提供了以下 Azure 多重身份验证功能子集作为订阅的一部分： 
+Microsoft 365 使用多重身份验证来帮助提供额外的安全性，并通过 Microsoft 365 管理中心进行管理。 Microsoft 365 提供了以下 Azure 多重身份验证功能子集作为订阅的一部分： 
   
 - 为最终用户启用和强制进行 MFA 的能力
     
@@ -57,26 +57,23 @@ Office 365 使用 MFA 实现额外的登录安全性，并可为 Microsoft 365 �
     
 有关新增功能的完整列表，请参阅 [Azure 多重身份验证版本比较](https://go.microsoft.com/fwlink/?LinkId=506927)。通过购买 Azure 多重身份验证服务，可始终获得完整功能。 
   
-您将获得不同的功能子集，具体取决于您是否具有适用于 Office 365 的云或混合身份或与 Active Directory 联合身份验证服务（AD FS）的联合身份验证。 
+你可以获取不同的功能子集，具体取决于你是使用单一登录还是使用 Active Directory 联合身份验证服务（AD FS）的仅限云部署的 Microsoft 365 或混合设置。 
   
-|**您在哪里管理 Office 365 租户？**| **MFA 第二因素选项**|
-
-|:-----|:-----| |仅限云  <br/> |Azure 多因素身份验证（文本或电话呼叫）  <br/> | |混合安装，托管本地  <br/> |如果您在本地管理用户标识，则有以下几种选择：  <br/>  物理或虚拟智能卡（使用 AD FS 时）  <br/> [Azure 多因素身份验证](https://go.microsoft.com/fwlink/p/?LinkId=526677)（AD FS 模块）  <br/>  Azure Active Directory （Azure AD）多重身份验证  <br/> |
+|**您在哪里管理 Microsoft 365？**|**MFA 第二因素选项**|
+|:-----|:-----|
+|仅云  <br/> |Azure Active Directory MFA（文本或电话联络）  <br/> |
+|本地托管的混合设置  <br/> | 如果在本地管理用户身份，有以下几种选择：  <br/>  物理或虚拟智能卡 (AD FS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677)（AD FS 的模块）  <br/>  Azure AD MFA  <br/> |
    
   
-下图演示更新的 Office 2013 设备应用（用于 Windows）如何使用户能够使用 MFA 登录。 
-
-![Office 2013 设备应用的现代身份验证。](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
-
-Office 2013 设备应用程序通过使用[Active Directory 身份验证库（ADAL）](https://go.microsoft.com/fwlink/p/?LinkId=526684)支持多因素身份验证。 Azure AD 托管用户可登录的网页。 标识提供程序可以是 Azure AD 或联合身份提供程序，如 AD FS。 联合用户的身份验证执行以下步骤：
+下图演示更新的 Office 2013 设备应用（用于 Windows）如何使用户能够使用 MFA 登录。Office2013 设备应用通过使用 [Active Directory 身份验证库 (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684) 支持多重身份验证。Azure AD 托管用户可登录的网页。标识提供程序可以是 Azure AD 或联合身份提供程序，如 AD FS。联合用户的身份验证执行以下步骤：
   
-1. Azure AD 将用户重定向到由 Office 365 租户的记录的标识提供程序托管的登录网页。标识提供程序由用户登录名中指定的域来确定。
+1. Azure AD 将用户重定向到由组织的标识提供程序托管的登录网页。 标识提供程序由用户登录名中指定的域来确定。
     
 2. 用户在其设备的登录网页上进行登录。 
     
 3. 如果用户成功登录，标识提供程序会将一个令牌返回到 Azure AD。
     
-4. Azure AD 将 JSON Web 令牌 (JWT) 返回到 Office 设备应用，并通过结合使用 JWT 和 Office 365 对设备应用进行身份验证。 
+4. Azure AD 将 JSON Web 令牌（JWT）返回到 Office 设备应用，并通过将 JWT 与 Microsoft 365 结合使用来对设备应用进行身份验证。 
     
   
 ## <a name="requirements-for-office-2013-client-apps"></a>Office 2013 客户端应用程序的要求
@@ -123,28 +120,32 @@ Sor 详细信息，请参阅[有关新式验证 wiki 文章的常见问题解答
    
 ## <a name="enable-mfa"></a>启用 MFA
 
-若要为 Office 365 订阅启用 MFA，请按照以下步骤操作：
+若要为你的订阅启用 MFA，请按照以下步骤操作：
   
 1. 如果需要，[为 Windows 设备上的 Office 2013 启用新式验证](enable-modern-authentication.md)。
     
-2. 对于联合身份验证，请使用第三方目录服务设置 Azure 多重身份验证。
+  - 使用第三方目录服务设置 Azure MFA。
     
     有关可接受此程序的特定标识提供程序的信息，请参阅[使用 Azure 多重身份验证和第三方 VPN 解决方案的高级方案](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。 
     
-3. [为 Office 365 设置多重身份验证](set-up-multi-factor-authentication.md)。
+2. [设置适用于 Microsoft 365 的多重身份验证](set-up-multi-factor-authentication.md)
     
-4. 告诉用户如何为[其 Office 365 用户帐户设置 MFA](https://support.office.com/article/set-up-2-step-verification-for-office-365-ace1d096-61e5-449b-a875-58eb3d74de14)。 在设置了其辅助身份验证方法后，他们的未来登录将需要进行 MFA。
-    
+3. 通知各个用户如何通过 MFA 登录：[使用两步验证登录 Microsoft 365](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)。
+
 > [!IMPORTANT]
-> 如果已为您的用户启用了 Azure 多重身份验证，并且这些设备具有运行 Office 2013 的任何设备，而这些设备未启用新式验证，则需要使用应用密码。 若要详细了解应用密码以及何时/何地使用它们，可以在此处找到：[使用 Azure Multi_Factor 身份验证的应用密码](https://go.microsoft.com/fwlink/p/?LinkId=528178)。 
+> 如果已为用户启用 Azure AD MFA，并且这些用户拥有运行 Office 2013 但未启用新式验证的设备，则他们将需要在这些设备上使用应用密码。有关应用密码以及应在何时、何处和如何使用的详细信息，可访问此处进行了解：[用于 Azure 多重身份验证的应用密码](https://go.microsoft.com/fwlink/p/?LinkId=528178)
+  
+## <a name="faq"></a>常见问题
+
+[新式验证常见问题解答 wiki 文章](https://go.microsoft.com/fwlink/p/?LinkId=530064)
   
 ## <a name="known-issues"></a>已知问题
-  
-[Office 2013 和 Office 365 专业增强版新式验证：在载入前要了解的事项](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+
+[适用于企业的 Office 2013 和 Microsoft 365 应用新式身份验证：在载入前要了解的事项](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Azure 多重身份验证疑难解答：**
   
-请参阅[对 Azure 多重身份验证进行故障排除](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues)。
+请参阅 [Azure MFA 疑难解答](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues)。
   
 [使用 AD FS 时，如何解决 Office 2013 新式验证的登录问题](https://support.microsoft.com/kb/3052203/)
   
@@ -156,7 +157,7 @@ Sor 详细信息，请参阅[有关新式验证 wiki 文章的常见问题解答
   
  **客户端访问筛选：**
   
-[Office 2013 和 Office 365 专业增强版新式验证和客户端访问筛选策略：载入前注意事项](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+[适用于企业新式验证和客户端访问筛选策略的 Office 2013 和 Microsoft 365 应用程序：在加入之前需要了解的事项](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **哪些应用支持 MFA？**
   

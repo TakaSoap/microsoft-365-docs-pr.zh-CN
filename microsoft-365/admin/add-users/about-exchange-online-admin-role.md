@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理员管理组织的电子邮件和邮箱。 例如，他们可以恢复用户邮箱中的已删除邮件。 '
-ms.openlocfilehash: ac11a05dd9ea7a0c569e131e7939a0e4e9293dea
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151356"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618904"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于 Exchange Online 管理员角色
 
-若要帮助您管理 Office 365，可以[向用户分配](assign-admin-roles.md)从[Exchange 管理中心](https://go.microsoft.com/fwlink/p/?LinkID=271807)管理组织的电子邮件和邮箱的权限。 为此，请将其分配给 Exchange 管理员角色。 
+为了帮助你管理 Microsoft 365，你可以[向用户分配](assign-admin-roles.md)从[Exchange 管理中心](https://go.microsoft.com/fwlink/p/?LinkID=271807)管理组织的电子邮件和邮箱的权限。 为此，请将其分配给 Exchange 管理员角色。 
   
  **提示**：当您将某人分配给 Exchange 管理员角色时，还要将其分配给服务管理员角色。 这样一来，他们可以在 Microsoft 365 管理中心中看到重要信息，例如 Exchange Online 服务的运行状况，以及更改和发布通知。 
   
@@ -37,17 +37,17 @@ ms.locfileid: "43151356"
   
 - [恢复用户邮箱中已删除的项目 - 管理员帮助](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [为 Office 365 组织中的邮箱设置存档和删除策略](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes)。
+- [为组织中的邮箱设置存档和删除策略](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes)。
     
 - 设置邮箱功能（如邮箱共享策略）：用户如何与组织外部的其他人共享日历和联系人信息。 
     
-- 为某人的邮箱设置 "代理[发送](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" 和 "[代表发送](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" 代理。 例如，行政人员可能希望他们的助理能够代表他们发送邮件。 
+- 为某人的邮箱设置 "代理[发送](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" 和 "[发送 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" 代理。 例如，行政人员可能希望他们的助理能够代表他们发送邮件。 
     
 - [创建共享邮箱](../email/create-a-shared-mailbox.md)，以便一组用户可以从公用电子邮件地址监视和发送电子邮件。 
     
-- [Office 365 电子邮件反垃圾邮件保护](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection)和组织的恶意软件筛选器。 
+- 组织的[电子邮件反垃圾邮件保护](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection)和恶意软件筛选器。 
     
-- 管理 Office 365 组
+- 管理 Microsoft 365 组
     
 ## <a name="exchange-online-role-groups"></a>Exchange Online 角色组
 

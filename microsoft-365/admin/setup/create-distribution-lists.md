@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: 将电子邮件发送给一组人，而无需通过创建通讯组（列表）来键入每个收件人的姓名。
-ms.openlocfilehash: 668c61637c42a1be4aabe60b36e4e26db9873b7b
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a845055acbc5428e0e261997f946f75dc4701d57
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240256"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627638"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建通讯组
   
-当您想要将电子邮件发送给一组用户而无需键入每个收件人的姓名时使用，通讯组由特定的讨论主题（如 "营销"）或共享需要他们进行通信的常见工作的用户进行组织常用. 通讯组列表还提供一种自动向多个电子邮件地址转发电子邮件的方式。
+当您想要将电子邮件发送给一组用户而无需键入每个收件人的姓名时，通讯组将由特定的讨论主题（如 "营销"）或共享需要他们经常进行通信的常见工作的用户来组织。 通讯组列表还提供一种自动向多个电子邮件地址转发电子邮件的方式。
   
 通讯组有时称为通讯组列表。
   
@@ -56,7 +56,7 @@ ms.locfileid: "42240256"
 
 1. 选择应用启动器图标 ，然后选择" **管理员**"。
     
-    找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。 
+    找不到需要的应用？ 在应用启动器中，选择 "**所有应用**" 以查看可供您使用的应用程序的按字母顺序排列的列表。 可在此处搜索特定应用。 
     
 2. 在左侧导航窗格中选择 "**组** \> **组**"，然后选择 "**添加组**"。 
       
@@ -66,7 +66,7 @@ ms.locfileid: "42240256"
     
 5. 按 "**添加**" 以创建一个组，然后查看您的组并选择 "**关闭**"。 
     
-6. 若要将用户添加到通讯组，请参阅[向 Office 365 通讯组添加用户或联系人](../email/add-user-or-contact-to-distribution-list.md)。
+6. 若要将用户添加到通讯组，请参阅[向通讯组添加用户或联系人](../email/add-user-or-contact-to-distribution-list.md)。
     
 请参阅 Outlook 主题中的[使用联系人组（以前的通讯组列表）](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx)中的 outlook 2016 和 outlook 网页中的 "使用组"。 
   

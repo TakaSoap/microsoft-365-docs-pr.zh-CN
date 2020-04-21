@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 了解如何自定义、组织和管理团队网站。
-ms.openlocfilehash: b35064209f26ad8b312bdf486c1f9b9bcb1b3e58
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212205"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627614"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
-如果你的企业有少数几名员工，则设置和促进文件共享和联机协作的最佳方式之一是同时使用 OneDrive 和 SharePoint 团队网站。 我们建议创建一个连接到 Office 365 组的团队网站。 如果要使用聊天，可以通过在 Microsoft 团队中创建团队来创建此网站。 有关团队的详细信息，请参阅[视频：什么是 Microsoft 团队？](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx)。 如果不想使用团队，可以从 SharePoint 起始页创建团队网站。 
+如果你的企业有少数几名员工，则设置和促进文件共享和联机协作的最佳方式之一是同时使用 OneDrive 和 SharePoint 团队网站。 我们建议创建一个连接到 Microsoft 365 组的团队网站。 如果要使用聊天，可以通过在 Microsoft 团队中创建团队来创建此网站。 有关团队的详细信息，请参阅[视频：什么是 Microsoft 团队？](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx)。 如果不想使用团队，可以从 SharePoint 起始页创建团队网站。 
   
 [什么是 SharePoint 团队网站？](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -76,7 +76,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 如果要将大量数据存储在列表中，请参阅[在 SharePoint 中管理大型列表和库](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx)。
   
-查看有关将日历添加到网站的视频，请参阅[在 Office 365 中创建共享日历](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)。
+查看有关将日历添加到网站的视频，请参阅[创建共享日历](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)。
 
 ## <a name="organize-sites-into-hubs"></a>将网站组织到集线器中
 
@@ -92,7 +92,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
 
 在存储和组织开始时，与团队和外部客户端共享也很重要。 下面是一些主题的链接，这些主题将帮助您管理用户并共享数据。 
   
-若要与你的团队共享文件，请参阅[在 Office 365 中共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)。
+若要与你的团队共享文件，请参阅[在 Microsoft 365 中共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)。
   
 若要了解团队外部的共享，请参阅[外部共享概述](/sharepoint/external-sharing-overview)。
   
@@ -102,7 +102,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 查看带有[了解和管理组](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx)的组的视频。 
   
-若要将用户添加到 Office 365 组，请参阅[分别或批量添加用户到 office 365-管理员帮助](../add-users/add-users.md)。
+若要向 Microsoft 365 组添加用户，请参阅[在 microsoft 365 中单独或批量添加用户-管理员帮助](../add-users/add-users.md)。
   
 了解如何处理[设置和管理访问请求](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx)的访问请求。
   
@@ -110,11 +110,11 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
 
 - **在平板电脑和手机上设置 Office 应用** 。需要执行此操作，以便可以从平板电脑或手机上编辑存储在团队网站中的文件。如果平板电脑或手机未安装 Office 应用，那么只能查看团队网站上的文件，但不能对其进行编辑。 
     
-  - [使用 Office 365 在 Android 上安装和设置 Office](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [使用 Microsoft 365 在 Android 上安装和设置 Office](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
     
-  - [使用 Office 365 在 iPhone 或 iPad 上安装和设置 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [使用 Microsoft 365 在 iPhone 或 iPad 上安装和设置 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [使用 Office 365 在 Windows Phone 上设置 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [使用 Microsoft 365 在 Windows Phone 上设置 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
     
 - [了解有关使用 OneDrive 的详细信息](https://go.microsoft.com/fwlink/?LinkID=511458)。
     

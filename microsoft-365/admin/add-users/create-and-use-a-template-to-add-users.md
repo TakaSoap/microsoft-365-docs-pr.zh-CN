@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以创建和使用模板来节省时间并在添加多个用户时标准化设置。
-ms.openlocfilehash: 340d0ae3329b441c2b9773ba06e4f9e69be88526
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a45107f520ee34437989bcd000096945514384ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353243"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617268"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>创建和使用模板来添加用户
 
@@ -88,7 +88,7 @@ ms.locfileid: "42353243"
 
 ## <a name="related-articles"></a>相关文章
 
-[将用户逐个或批量添加到 Office 365](add-users.md)
+[将用户逐个或批量添加到 Microsoft 365](add-users.md)
 
-[从 Office 365 中删除以前的员工](remove-former-employee.md)
+[从 Microsoft 365 中删除以前的员工](remove-former-employee.md)
   

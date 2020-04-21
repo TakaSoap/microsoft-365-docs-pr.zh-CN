@@ -17,16 +17,16 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
-ms.openlocfilehash: d99186e4f3a2831eb794d31a33fa4d56af2cc7a4
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: b65dd6479262b97f08e34420d9a88ee2a327a73b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529069"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631081"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
-[安全 & 合规性中心](https://protection.office.com)中提供了多种报告，可帮助您了解电子邮件安全功能（如 Office 365 中的反垃圾邮件、反恶意软件和加密功能如何保护组织）。 如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，则可以转到 "**报告** \> "**仪表板**，在安全 & 合规中心中查看这些报告。
+[安全 & 合规性中心](https://protection.office.com)中提供了多种报告，可帮助您了解电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能如何保护您的组织）。 如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，则可以转到 "**报告** \> "**仪表板**，在安全 & 合规中心中查看这些报告。
 
 ![Security & 合规中心中的报告仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -69,7 +69,7 @@ URL 威胁防护报告的详细信息表提供了在租户内发生的所有点�
 
 此报告可供任何具有 Exchange Online Protection 的用户使用，并显示标记为可疑用户或受限制用户的用户帐户数。在帐户中，数据尤其有用的是表明用户帐户可能有问题或甚至已泄露的状态。 通过频繁使用，已损坏的用户报告可以发现处于可疑或受限制状态的帐户中的峰值、甚至是趋势，从而提供证据可能存在安全和租户的 wellness 问题。
 
-![已泄露的用户会在 Office 365 中进行报告。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![已泄露的用户报告显示在 Microsoft 365 中。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="encryption-report"></a>加密报告
 
@@ -91,9 +91,9 @@ URL 威胁防护报告的详细信息表提供了在租户内发生的所有点�
 
 ![加密报告按菜单查看数据](../../media/encryptionreport-viewdataby.png)
 
-通过新的加密报告的灵活性，您可以查看趋势并采取适当的操作。 例如，如果您看到用户加密了大量的电子邮件，您可能希望添加加密策略以对某些用例自动进行加密。 （若要获取有关此的帮助，请参阅[定义邮件流规则以对 Office 365 中的电子邮件进行加密](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。）另一个示例是，如果有许多可用的加密模板，但没有用户正在使用它们，则可以考察用户是否需要针对该功能的培训。
+通过新的加密报告的灵活性，您可以查看趋势并采取适当的操作。 例如，如果您看到用户加密了大量的电子邮件，您可能希望添加加密策略以对某些用例自动进行加密。 （若要获取有关信息，请参阅[定义邮件流规则以在 Microsoft 365 中对电子邮件进行加密](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。）另一个示例是，如果有许多可用的加密模板，但没有用户正在使用它们，则可以考察用户是否需要针对该功能的培训。
 
-使用此报告使组织的安全和合规性团队能够监视邮件加密的使用情况，以及是否需要进一步的操作。 若要了解有关加密的详细信息，请参阅[Office 365 中的电子邮件加密](../../compliance/email-encryption.md)。
+使用此报告使组织的安全和合规性团队能够监视邮件加密的使用情况，以及是否需要进一步的操作。 若要了解有关加密的详细信息，请参阅[Microsoft 365 中的电子邮件加密](../../compliance/email-encryption.md)。
 
 ## <a name="threat-protection-status-report"></a>威胁防护状态
 
@@ -170,7 +170,7 @@ URL 威胁防护报告的详细信息表提供了在租户内发生的所有点�
 
 当您将鼠标指针悬停在图表中的某一天时，您可以看到通过的欺骗邮件的数量。
 
-单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。 若要了解有关反欺骗保护的详细信息，请参阅[Office 365 中的反欺骗保护](anti-spoofing-protection.md)。
+单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。 若要了解有关反欺骗保护的详细信息，请参阅[Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)。
 
 ## <a name="spam-detections-report"></a>垃圾邮件检测报告
 
@@ -208,7 +208,7 @@ URL 威胁防护报告的详细信息表提供了在租户内发生的所有点�
 
 ![此报告告诉你有关反恶意软件、反垃圾邮件和其他邮件检测](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-若要了解有关电子邮件智能的详细信息，请参阅[Office 365 中的邮件流智能](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)。
+若要了解有关电子邮件智能的详细信息，请参阅[Microsoft 365 中的邮件流智能](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)。
 
 ## <a name="user-reported-messages-report"></a>用户报告的邮件报告
 
@@ -227,7 +227,7 @@ URL 威胁防护报告的详细信息表提供了在租户内发生的所有点�
 ![在安全 & 合规性中心中，选择 " \>威胁\>管理" 查看用户报告的消息](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> 为了使用户报告的邮件报告正常工作，必须为您的 Office 365 环境**打开审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[启用或禁用 Office 365 审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。
+> 为了使用户报告的邮件报告正常工作，必须为您的 Office 365 环境**打开审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[打开或关闭 Microsoft 365 审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告所需的权限是什么？
 
@@ -243,19 +243,19 @@ URL 威胁防护报告的详细信息表提供了在租户内发生的所有点�
 
 若要了解详细信息，请参阅以下资源：
 
-- [Office 365 安全与合规中心的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
-
+- [安全与合规中心内的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+ 
 - [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告不显示数据，该怎么办？
 
-如果您未在报告中看到数据，请仔细检查您的策略设置是否正确。 若要了解详细信息，请参阅[在 Office 365 中防御威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
+如果您未在报告中看到数据，请仔细检查您的策略设置是否正确。 若要了解详细信息，请参阅[在 Microsoft 365 中防御威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
 
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 电子邮件反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
+[Microsoft 365 电子邮件反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
-[Office 365 安全 & 合规中心中的报告和见解](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
+[安全 & 合规中心中的报告和见解](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
 
 [在安全 & 合规中心内创建报表的计划](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
 

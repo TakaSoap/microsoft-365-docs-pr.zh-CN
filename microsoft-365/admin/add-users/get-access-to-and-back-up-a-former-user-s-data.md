@@ -2,8 +2,8 @@
 title: 访问并备份以往用户的数据的访问
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 了解当某人离开你的组织时，如何保留员工的文件和电子邮件。
-ms.openlocfilehash: 11c946e5c242b05fea3a15b9427f36029c61082f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 9f665b68f50fd9b7f41ac0a6ef4b9e29ef289d7c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142559"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617220"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>访问并备份以往用户的数据的访问
 
@@ -166,7 +166,7 @@ ms.locfileid: "43142559"
   
     !["导出 Outlook 数据文件" 对话框，其中选中了 top 文件夹并包含选中的子文件夹](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
 8. 选择 "**浏览**" 以选择保存 Outlook 数据文件（.pst）的位置。 键入文件名 *，然后*选择 **"确定"** 以继续。 
     
@@ -211,7 +211,7 @@ ms.locfileid: "43142559"
     
 5. 在 "**选项**" 下，选择要处理重复项的方式
     
-6. 选择“下一步”****。
+6. 选择“**下一步**”。
     
 7. 如果为 Outlook 数据文件（.pst）分配了密码，请输入密码，然后选择 **"确定"**。
     

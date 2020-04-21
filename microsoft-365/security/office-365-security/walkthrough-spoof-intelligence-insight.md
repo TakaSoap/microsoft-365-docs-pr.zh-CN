@@ -17,18 +17,18 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 了解欺骗性智能洞察力在 Office 365 高级威胁防护中的工作原理。
-ms.openlocfilehash: 92e922bf3045e98de16b07a47113effd9dc6ccdd
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537481"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630925"
 ---
-# <a name="walkthrough---atp-spoof-intelligence-insight-in-office-365"></a>演练-在 Office 365 中 ATP 欺骗智能洞察力
+# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>演练-在 Microsoft 365 中 ATP 欺骗智能洞察力
 
-在具有高级威胁防护（ATP）的 Office 365 组织中，您可以使用 "欺骗智能洞察力" 快速确定哪些发件人合法地向您发送未经身份验证的电子邮件。 通过允许他们发送欺骗邮件，可以降低任何误报给用户带来的风险。 您还可以使用欺骗智能洞察力来监视和管理允许的域对，以提供额外的安全措施，并防止不安全的邮件到达您的组织中。
+在具有高级威胁防护（ATP）的 Microsoft 365 组织中，您可以使用欺骗智能洞察力快速确定哪些发件人合法地向您发送未经身份验证的电子邮件。 通过允许他们发送欺骗邮件，可以降低任何误报给用户带来的风险。 您还可以使用欺骗智能洞察力来监视和管理允许的域对，以提供额外的安全措施，并防止不安全的邮件到达您的组织中。
 
-如果你刚开始[使用 Office 365 安全 & 合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)，了解如何轻松地从仪表板导航到真知灼见和推荐的操作，可能会有帮助。
+如果您不熟悉[安全 & 合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)，它可能会帮助您了解如何轻松地从仪表板导航到真知灼见和推荐的操作。
 
 本演练是安全 & 合规中心的几个演练之一。 若要导航报告和见解，请参阅相关主题部分中的演练。
 
@@ -38,11 +38,11 @@ ms.locfileid: "43537481"
 
   您可以从安全 & 合规中心的多个仪表板中查看欺骗性智能洞察力。 无论您正在查看哪个仪表板，真知灼见都会提供相同的详细信息，并允许您快速执行相同的任务。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要使用欺骗性智能洞察力，您必须是 "**组织管理**"、"**安全管理员**" 或 "**安全读者**" 角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅 [Office 365 安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 若要使用欺骗性智能洞察力，您必须是 "**组织管理**"、"**安全管理员**" 或 "**安全读者**" 角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 在 ATP 反网络钓鱼策略中启用和禁用欺骗智能。 有关详细信息，请参阅[在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+- 在 ATP 反网络钓鱼策略中启用和禁用欺骗智能。 有关详细信息，请参阅[在 Microsoft 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
-- 在使用 Exchange Online 邮箱的 Office 365 组织中，在没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）中，可以使用欺骗智能来监视和管理您向其发送未经身份验证的邮件的发件人。 有关详细信息，请参阅[在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- 在使用 Exchange Online 邮箱的 Microsoft 365 组织中，在没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）中，可以使用欺骗智能来监视和管理您向其发送未经身份验证的邮件的发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全 & 合规中心中打开欺骗性智能洞察力
 
@@ -74,11 +74,11 @@ ms.locfileid: "43537481"
 
    **可疑域对**包括：
 
-   - **高可信度欺骗**：根据历史发送模式和域的信誉分数，Office 365 收到了这些域是可疑的强信号。 Office 365 非常确信域是哄骗的，并且从这些域发送的邮件不太可能是合法的。
+   - **高可信度欺骗**： Microsoft 365 收到了基于历史发送模式和域信誉分数的强信号，这些域是可疑的。 Microsoft 365 非常确信域是哄骗的，并且从这些域发送的邮件不太可能是合法的。
 
-   - **中等可信度欺骗**：根据历史发送模式和域的信誉分数，Office 365 接收到这些域是可疑的。 Office 365 适度确信域是欺骗的，并且从这些域发送的邮件是合法的。 此存储桶具有包含误报（FPs）的更多可能性，而不是高可信度欺骗存储桶。
+   - **中等可信度欺骗**： Microsoft 365 收到了中等信号，这些域根据历史发送模式和域的信誉得分而受到怀疑。 Office 365 适度确信域是欺骗的，并且从这些域发送的邮件是合法的。 此存储桶具有包含误报（FPs）的更多可能性，而不是高可信度欺骗存储桶。
 
-   - **非可疑域对**（包括**rescued 欺骗**）： rescued 欺骗是未通过显式身份验证检查[SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)、 [DMARC](use-dmarc-to-validate-email.md)）的域，但通过了隐式电子邮件身份验证检查（[复合身份验证](email-validation-and-authentication.md#composite-authentication)）。 因此，Office 365 将代表您 rescued 邮件，并且不会对邮件执行任何反欺骗操作。
+   - **非可疑域对**（包括**rescued 欺骗**）： rescued 欺骗是未通过显式身份验证检查[SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)、 [DMARC](use-dmarc-to-validate-email.md)）的域，但通过了隐式电子邮件身份验证检查（[复合身份验证](email-validation-and-authentication.md#composite-authentication)）。 因此，Microsoft 365 会代表您 rescued 邮件，并且不会对邮件执行任何反欺骗操作。
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>查看有关欺骗性智能洞察力的可疑域对的详细信息
 
@@ -100,7 +100,7 @@ ms.locfileid: "43537481"
 
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 中的防欺骗保护](anti-spoofing-protection.md)
+[Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)
 
 [演练 - 从仪表板到见解](from-a-dashboard-to-an-insight.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 管理中心内的 Office 365 报告-Yammer 活动报告
+title: 管理员中心内的 Microsoft 365 报告-Yammer 活动报告
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: 获取 Yammer 活动报告，并了解有关使用 Yammer 发布、类似或阅读邮件的用户数的详细信息。
-ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047019"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618952"
 ---
-# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>管理中心内的 Office 365 报告-Yammer 活动报告
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>管理员中心内的 Microsoft 365 报告-Yammer 活动报告
 
 作为 Microsoft 365 管理员，"**报告**" 仪表板显示有关您组织中的产品使用情况的数据。 查看[管理中心中的活动报表](activity-reports.md)。 使用" **Yammer 活动报表** "，可以通过查看使用 Yammer 发布、点赞或阅读消息的唯一用户数以及组织中生成的活动数来了解使用 Yammer 的组织的参与级别。 
   
@@ -82,7 +82,7 @@ ms.locfileid: "43047019"
     
   - " **用户名**"是用户的电子邮件地址。 可以显示实际的电子邮件地址或采用匿名字段。 
     
-    此网格显示使用 Office 365 帐户登录到 Yammer 或使用单一登录登录到网络的用户。
+    此网格显示使用 Microsoft 365 帐户登录到 Yammer 的用户或使用单一登录登录到网络的用户。
     
   - **显示姓名**是用户的全名。可以显示实际的电子邮件地址或采用匿名字段。 
     
@@ -112,6 +112,6 @@ ms.locfileid: "43047019"
     
 - **无外部网络数据** 这些报表中不包括外部网络数据。 
     
-- **已激活的网络** 这些报表将显示 Office 365 订阅所包含的 Yammer 网络数据。图表将聚合所有登录到 Yammer 网络的用户的使用情况，而无论他们是使用 Office 365 还是 Yammer 登录的。 
+- **激活的网络**这些报告显示属于 Microsoft 365 订阅的 Yammer 网络的数据。 图表将汇总登录到 Yammer 网络的所有用户的使用情况，而不管他们是使用 Microsoft 365 还是 Yammer 进行登录。 
     
 

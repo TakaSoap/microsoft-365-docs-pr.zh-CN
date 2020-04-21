@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: 了解如何使用 Microsoft 365 商业版中的 AutoPilot 上传设备。 您可以将配置文件分配给一个或一组设备。
-ms.openlocfilehash: 640e4af7cccde83c87d90a875c1d44dead7255ca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何使用 Microsoft 365 商业高级版中的 AutoPilot 上传设备。 您可以将配置文件分配给一个或一组设备。
+ms.openlocfilehash: f2a7f801ae471352595a36b355a874b2de653326
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065966"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627386"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>创建和编辑 AutoPilot 设备
 
@@ -44,13 +44,13 @@ ms.locfileid: "42065966"
     
 - 尚未通过 Windows 开箱即用体验的新设备
 
-1. 在 Microsoft 365 Business 管理中心中，选择 "**设备** \> " **AutoPilot**。
+1. 在 Microsoft 365 管理中心，选择 "**设备** \> **AutoPilot**"。
   
-2. 在 " **AutoPilot** " 页上， **** 选择 " \>设备" 选项卡 "**添加设备**"。
+2. 在 " **AutoPilot** " 页上， **Devices**选择 " \>设备" 选项卡 "**添加设备**"。
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. 在 "**添加设备**" 面板上，浏览到已准备好\> **保存** \> **** 的[设备列表 CSV 文件](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)。
+3. 在 "**添加设备**" 面板上，浏览到已准备好\> **保存** \> **Close**的[设备列表 CSV 文件](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)。
     
     您可以从您的硬件供应商处获取此信息，也可以使用[G-et-windowsautopilotinfo PowerShell 脚本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)生成 CSV 文件。 
     

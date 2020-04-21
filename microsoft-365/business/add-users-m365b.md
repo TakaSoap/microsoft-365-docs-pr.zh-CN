@@ -1,5 +1,5 @@
 ---
-title: 向 Microsoft 365 Business 添加更多用户
+title: 添加更多用户
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,15 +25,15 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
-description: 了解在 Microsoft 365 商业版中轻松添加新用户、保护其设备和分配角色的步骤。
-ms.openlocfilehash: 8181254aa56345e99e648c59474f4d7f8fa94990
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 了解在 Microsoft 365 商业高级版中轻松添加新用户、保护其设备和分配角色的步骤。
+ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561552"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627466"
 ---
-# <a name="add-more-users-to-microsoft-365-business"></a>向 Microsoft 365 Business 添加更多用户
+# <a name="add-more-users"></a>添加更多用户
 
 ## <a name="add-new-users"></a>添加新用户
 
@@ -54,7 +54,7 @@ ms.locfileid: "42561552"
       
     ![在新用户卡片中输入用户信息](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
-    在 "产品许可证" 部分，将 " **Microsoft 365 商业**版产品许可证设置" 设置为 **"开**"。
+    在 "产品许可证" 部分，将 " **Microsoft 365 商业高级**版产品许可证" 设置设置为 **"开**"。
       
     ![将许可证设置设置为 "开" 位置](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   

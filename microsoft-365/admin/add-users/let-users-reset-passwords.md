@@ -1,5 +1,5 @@
 ---
-title: 允许用户在 Office 365 中重置其密码
+title: 允许用户重置自己的密码
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何使用自助密码重置工具来重置密码。
-ms.openlocfilehash: 666d3843f7917cf9bd5718c0ce29f87f93d6effe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211891"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617142"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -36,7 +36,7 @@ ms.locfileid: "43211891"
   
 以下是需要了解的一些事项：
   
-- 可以通过任意 Office 365 商业版、教育版或非营利组织付费的计划 **免费** 为云用户获取自助密码重置服务。但不适用于 Office 365 试用版。 
+- 通过任何 Microsoft 365 商业版、教育版或非盈利的计划**免费**为云用户获取自助服务密码重置。 它不适用于 Microsoft 365 试用版。 
     
 - 该功能使用 Azure。将在执行下面的步骤时，自动在 Azure 中 **免费** 获得此功能。如果不使用其他 Azure 功能，则不需要支付任何费用即可启用自助密码重置功能。 
     

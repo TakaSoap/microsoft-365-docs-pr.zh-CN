@@ -1,5 +1,5 @@
 ---
-title: 自定义您的组织的 Office 365 主题
+title: 为你的组织自定义主题
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: '了解如何更改 Office 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
-ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: '了解如何更改 Microsoft 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
+ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826322"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627602"
 ---
-# <a name="customize-the-office-365-theme-for-your-organization"></a>自定义您的组织的 Office 365 主题
+# <a name="customize-the-theme-for-your-organization"></a>为你的组织自定义主题
 
-了解如何在 Microsoft 365 管理中心中自定义你的主题。 作为 Office 365 商业版 订阅的管理员，可为组织中的每个用户更改顶部导航栏中显示的默认主题。 您可以添加公司徽标并更改颜色，使其与品牌的其余部分相匹配。 您甚至可以添加目标链接，以便用户在选择您的徽标时导航到该链接。 你可以在此处查看 Office 365 中的默认主题和自定义主题结果。
+了解如何在 Microsoft 365 管理中心中自定义你的主题。 作为 Microsoft 365 for business 订阅的管理员，您可以更改组织中每个人的顶部导航栏中显示的默认主题。 您可以添加公司徽标并更改颜色，使其与品牌的其余部分相匹配。 您甚至可以添加目标链接，以便用户在选择您的徽标时导航到该链接。 你可以在此处看到默认主题和自定义主题在 Microsoft 365 中的结果。
   
-![默认 Office 365 主题和自定义 Office 365 主题](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![默认 Microsoft 365 主题和自定义 Microsoft 365 主题](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>在管理中心中自定义您的主题
 
@@ -64,7 +64,7 @@ ms.locfileid: "42826322"
     
 4. 选择“**保存更改**”。
     
-你将立即在管理中心中看到新主题，在短暂延迟之后，你将在 Office 365 中看到它，包括 Outlook 中的页面、SharePoint、 [sharepoint mobile app For iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)和[适用于 Android 的 sharepoint 移动应用](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 请参阅下图，了解从管理中心自定义主题更改的示例。
+你将立即在管理中心中看到新主题，在短暂延迟之后，你将在 Microsoft 365 中看到它，包括 Outlook 中的页面、SharePoint、 [sharepoint mobile 应用 For iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)和[适用于 Android 的 sharepoint 移动应用](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 请参阅下图，了解从管理中心自定义主题更改的示例。
 
 ![m365-管理员-租户-主题-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "42826322"
   
 文本、图标或按钮颜色与背景色之间的推荐对比度为4.5：1。
 
-下面是一个简单的流程图，可帮助你快速为你的组织设置具有视觉冲击力的自定义 Office 365 主题：
+下面是一个简单的流程图，可帮助你快速为你的组织设置具有视觉冲击力的自定义 Microsoft 365 主题：
   - 我想要使用我们的徽标的彩色版本。
     - 建议采用以下设置：
       - **徽标图像**：你的组织的彩色徽标。

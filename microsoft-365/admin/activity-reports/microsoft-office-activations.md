@@ -18,18 +18,18 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: 了解如何获取 Office 激活报告，以了解哪些用户已激活其 Office 订阅，并确定可能需要其他帮助的用户。
-ms.openlocfilehash: 7a26928b654c222a2eef05371ff9b220cf59cfe4
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046971"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621218"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>管理中心中的 microsoft 365 报表-Microsoft Office 激活
 
 Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
-Office 激活报表将显示在至少一个设备上激活了其 Office 订阅的用户。它提供了 Office 365 专业增强版、Project 和 Visio Pro for Office 365 订阅激活的细目，以及跨台式机和其他设备的激活的细目。此报表对于帮助你识别可能需要更多帮助和支持才能激活其 Office 订阅的用户非常有用。
+Office 激活报表将显示在至少一个设备上激活了其 Office 订阅的用户。 它提供了适用于 Office、Project 和 Visio Pro for Office 365 订阅激活的 Microsoft 365 应用程序的细目，以及跨桌面和设备的激活细目。 此报表对于帮助你识别可能需要更多帮助和支持才能激活其 Office 订阅的用户非常有用。
   
 > [!NOTE]
 > 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。  
