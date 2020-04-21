@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: 业务订阅和帐单文档
-summary: 了解如何通过 Microsoft 购买和管理业务订阅、执行许可证管理任务以及管理企业帐户的记帐和付款。
+title: 商业版订阅和计费文档
+summary: 了解如何购买和管理商业版订阅，执行许可证管理任务以及通过 Microsoft 管理商业帐户的账单和付款。
 metadata:
-  title: 业务订阅和帐单文档
-  description: 了解如何通过 Microsoft 购买和管理业务订阅、执行许可证管理任务以及管理企业帐户的记帐和付款。
+  title: 商业版订阅和计费文档
+  description: 了解如何购买和管理商业版订阅，执行许可证管理任务以及通过 Microsoft 管理商业帐户的账单和付款。
   ms.service: o365-administration
   ms.topic: landing-page
   ms.collection: commerce
@@ -14,7 +14,7 @@ metadata:
   search.appverid: MET150
   ms.openlocfilehash: 76f86bcd65fe1d5894777d8263f8c48f5fc5493b
   ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 02/29/2020
   ms.locfileid: "42341565"
