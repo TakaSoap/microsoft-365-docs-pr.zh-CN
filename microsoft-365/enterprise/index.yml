@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: 适用于企业的 Microsoft 365 文档和资源
-summary: 具有可转换工作方式的智能云服务的最优秀的工作效率应用程序。
+title: Microsoft 365 企业版文档和资源
+summary: 同类最佳的生产力应用，提供可转变工作方式的智能云服务。
 brand: m365
 metadata:
-  title: 适用于企业的 Microsoft 365 文档和资源
-  description: 了解面向 IT 专业人员、信息工作者和合作伙伴的适用于企业的 Microsoft 365 的产品文档和资源。
+  title: Microsoft 365 企业版文档和资源
+  description: 了解有关为 Microsoft 365 企业版 IT 专业人员、信息工作者和合作伙伴提供的产品文档和资源。
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -15,23 +15,23 @@ metadata:
   ms.date: 11/29/2019
   ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
   ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 12/19/2019
   ms.locfileid: "40801667"
 highlightedContent:
   items:
-  - title: 了解适用于企业的 Microsoft 365
+  - title: 了解 Microsoft 365 企业版
     itemType: get-started
     url: microsoft-365-overview.md
-  - title: 使用 FastTrack 加速您的部署
+  - title: 使用 FastTrack 加速部署
     itemType: quickstart
     url: https://www.microsoft.com/fasttrack/microsoft-365
-  - title: 培训你的 IT 专业人员和管理员
+  - title: 培训 IT 专业人员和管理员
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
 conceptualContent:
-  title: 获取有关适用于企业和其他资源的 Microsoft 365 的帮助
+  title: 获取有关 Microsoft 365 企业版和其他资源的帮助
   summary: 探索适用于企业部署指南、功能和服务的 Microsoft 365。
   items:
   - title: 遵循部署路线图
@@ -41,14 +41,14 @@ conceptualContent:
       text: 部署概述
     - url: deploy-foundation-infrastructure.md
       itemType: how-to-guide
-      text: Foundation 基础结构
+      text: 基础架构
     - url: deploy-workloads.md
       itemType: how-to-guide
       text: 工作负载和应用场景
     - url: desktop-deployment-center-home.md
       itemType: get-started
       text: 桌面部署中心
-  - title: 部署关键元素
+  - title: 部署关键路线图
     links:
     - url: identity-infrastructure.md
       itemType: how-to-guide
@@ -62,7 +62,7 @@ conceptualContent:
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
-  - title: 部署关键方案
+  - title: 部署关键应用场景
     links:
     - url: secure-teams-highly-regulated-data-scenario.md
       itemType: how-to-guide
@@ -75,8 +75,8 @@ conceptualContent:
       text: 远程工作人员
     - url: migration-microsoft-365-enterprise-workload.md
       itemType: deploy
-      text: Office 客户端和服务器和 Windows 迁移
-  - title: 管理适用于企业的 Microsoft 365
+      text: Office 客户端和服务器及 Windows 迁移
+  - title: 管理 Microsoft 365 企业版
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
       itemType: how-to-guide
@@ -86,7 +86,7 @@ conceptualContent:
       text: Office 365 专业增强版
     - url: https://docs.microsoft.com/intune/apps/app-management
       itemType: get-started
-      text: 具有 Intune 的应用程序
+      text: 提供 Intune 的应用
     - url: https://docs.microsoft.com/office365/
       itemType: get-started
       text: Office 365 服务
@@ -95,12 +95,12 @@ additionalContent:
   - title: 其他资源
     summary: 了解有关其他 Microsoft 365 功能和资源的详细信息。
     items:
-    - title: Microsoft 365 合规性
-      summary: 帮助您的组织管理信息、防止风险并遵守法律或法规标准。
+    - title: Microsoft 365 合规中心
+      summary: 帮助你的组织管理信息、防止风险并遵守法律或法规标准。
       url: https://docs.microsoft.com/microsoft-365/compliance/index
-    - title: Microsoft 365 安全
-      summary: 使用强健的安全服务和解决方案跨攻击面保护你的组织。
+    - title: Microsoft 365 安全中心
+      summary: 强大的安全服务和解决方案保护你的组织不受攻击。
       url: https://docs.microsoft.com/microsoft-365/security/index
     - title: Microsoft 365 技术社区
-      summary: 在 Microsoft 技术社区中与同行和专家进行连接和协作，并共享 Microsoft 365 最佳实践。
+      summary: 与 Microsoft 技术社区的同行和专家建立联系并进行协作，并共享 Microsoft 365 最佳实践。
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

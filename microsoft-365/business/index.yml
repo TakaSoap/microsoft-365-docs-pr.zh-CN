@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 业务资源
-summary: Microsoft 365 Business 是一款订阅服务，其中包括 Office 365 生产率工具和高级功能，以帮助保护您的业务不受威胁、保护您的数据和管理设备。
+title: Microsoft 365 商业版资源
+summary: Microsoft 365 商业版是一项订阅服务，其中包括 Office 365 生产力工具以及高级功能，有助于保护企业免受网络威胁、保护数据和管理设备。
 brand: m365
 metadata:
-  title: Microsoft 365 业务资源
-  description: description
+  title: Microsoft 365 商业版资源
+  description: 说明
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -13,24 +13,24 @@ metadata:
   ms.date: 10/01/2019
   ms.openlocfilehash: bf50c985029587ec063e2933d137d6a9b115fa6c
   ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 04/15/2020
   ms.locfileid: "43516837"
 productDirectory:
-  title: 使用 Microsoft 365 商业版保护远程工作
+  title: 使用 Microsoft 365 商业版保证远程工作
   items:
-  - title: 新增功能
+  - title: 有哪些新增功能？
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 即将推出 Microsoft 365 商业版！
+    summary: Azure AD Premium P1 即将加入 Microsoft 365 商业版！
     url: https://aka.ms/aadp1smbblog
   - title: 观看合作伙伴网络研讨会
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: 在你的 SMB 客户处理 COVID-19 时对其进行保护。
+    summary: 保护正在应对新型冠状病毒（COVID-19）客户的安全。
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
-  - title: 读取
+  - title: 阅读
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: 使用 Microsoft 365 商业版实现安全远程工作的最佳方式。
+    summary: 实现使用 Microsoft 365 商业版保证远程工作的最佳方式。
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
@@ -41,10 +41,10 @@ conceptualContent:
       text: 概述
     - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Microsoft 365 商业培训
+      text: Microsoft 365 商业版培训
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
-      text: 比较计划
+      text: 比较各计划
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
       itemType: reference
       text: 服务说明
@@ -55,27 +55,27 @@ conceptualContent:
     links:
     - url: set-up.md
       itemType: how-to-guide
-      text: 1. 运行安装向导
+      text: 1. 运行设置向导
     - url: secure-win-10-pcs.md
       itemType: how-to-guide
-      text: 2. 保护你的电脑
+      text: 2. 保护计算机安全
     - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
       itemType: video
-      text: 3. 设置团队
+      text: 3. 设置 Teams
     - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
       itemType: get-started
       text: 4. 安装 Office
-  - title: 合作伙伴的资源（仅限英文版）
+  - title: 合作伙伴资源（仅限英语）
     links:
     - url: https://www.microsoft.com/microsoft-365/partners/business
       itemType: overview
       text: 合作伙伴页面
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
       itemType: download
-      text: 音调卡片（客户聚焦）
+      text: 融资演讲稿（客户聚焦）
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
-      text: 音调组（合作伙伴焦点）
+      text: 融资演讲稿（合作伙伴聚焦）
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
       itemType: download
       text: 技术基础知识
@@ -92,7 +92,7 @@ conceptualContent:
       text: 重置某人的密码
     footerLink:
       url: https://docs.microsoft.com/office365/admin/admin-home
-      text: 查看详细信息
+      text: 查看更多信息
   - title: 管理威胁
     links:
     - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
@@ -103,13 +103,13 @@ conceptualContent:
       text: 设置 MFA
     - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
       itemType: how-to-guide
-      text: 防御勒索软件
+      text: 防范勒索软件
     - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
       itemType: overview
       text: 条件访问
     footerLink:
       url: https://docs.microsoft.com/office365/admin/admin-home
-      text: 查看详细信息
+      text: 查看更多信息
   - title: 管理数据
     links:
     - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
@@ -126,18 +126,18 @@ conceptualContent:
       text: 创建和使用敏感度标签
     footerLink:
       url: https://docs.microsoft.com/microsoft-365/compliance/
-      text: 查看详细信息
+      text: 查看更多信息
   - title: 管理设备
     links:
     - url: view-policies-and-devices.md
       itemType: how-to-guide
-      text: 电脑 & 移动设备
+      text: 计算机和移动设备
     - url: remove-company-data.md
       itemType: how-to-guide
       text: 删除公司数据
     - url: reset-devices-to-factory-settings.md
       itemType: how-to-guide
-      text: 擦除和重置
+      text: 擦除并重置
     - url: https://docs.microsoft.com/intune/index
       itemType: overview
       text: Intune
@@ -152,12 +152,12 @@ conceptualContent:
       itemType: overview
     footerLink:
       url: manage-windows-devices.md
-      text: 查看详细信息
-  - title: 监视安全性
+      text: 查看更多信息
+  - title: 监视安全
     links:
     - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
       itemType: how-to-guide
-      text: 安全分数
+      text: 安全评分
     - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
       itemType: overview
       text: Intune 应用保护策略报告
@@ -166,7 +166,7 @@ conceptualContent:
       text: 运行状况监视警报
     footerLink:
       url: https://docs.microsoft.com/microsoft-365/security/
-      text: 查看详细信息
+      text: 查看更多信息
   - title: 支持和社区
     links:
     - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
@@ -197,4 +197,4 @@ conceptualContent:
       text: 迁移到 Microsoft 365 企业版 E3
     footerLink:
       url: microsoft-365-business-overview.md
-      text: 查看详细信息
+      text: 查看更多信息

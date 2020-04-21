@@ -4,7 +4,7 @@ title: Microsoft 托管桌面文档和资源
 metadata:
   title: Microsoft 托管桌面文档
   description: null
-  keywords: 设备、应用程序和管理
+  keywords: 设备、应用、管理
   author: jaimeo
   ms.author: jaimeo
   ms.topic: landing-page
@@ -13,7 +13,7 @@ metadata:
 sections:
   - items:
       - type: markdown
-        text: Microsoft 托管桌面将 microsoft 365 企业版、基于云的设备管理和安全监控结合在一起，使您能够腾出 IT 团队重点关注核心业务需求。
+        text: Microsoft 托管桌面将 Microsoft 365 企业版、Microsoft 基于云的设备管理和安全监控结合在一起，使你可以腾出 IT 团队以专注于核心业务需求。
   - items:
       - type: list
         style: cards
@@ -21,31 +21,31 @@ sections:
         columns: 2
         items:
           - href: intro/index.md
-            html: <p>Microsoft 托管桌面的决策制定者简介-它是什么、工作原理以及它可以为您做些什么</p>
+            html: <p>面向决策者的Microsoft托管桌面简介：内容、工作方式以及可以为做什么？</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_overview.svg'
               alt: ''
             title: 什么是 Microsoft 托管桌面？
           - href: service-description/index.md
-            html: <p>Microsoft 托管桌面的所有部分的详细说明</p>
+            html: <p>所有 Microsoft 托管桌面部件的详细说明</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
               alt: ''
             title: 服务说明
           - href: get-ready/index.md
-            html: <p>为您的环境和组织准备好使用服务的所有步骤</p>
+            html: <p>所有步骤帮助你的环境和组织准备好使用服务</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_support.svg'
               alt: ''
             title: 准备就绪
           - href: get-started/index.md
-            html: <p>使用 Microsoft 托管桌面（包括设置设备和部署应用程序）在主板上获取组织</p>
+            html: <p>利用 Microsoft 托管桌面使你的组织参与其中，包括设置设备和部署应用程序</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
               alt: ''
             title: 入门
           - href: working-with-managed-desktop/index.md
-            html: <p>有关服务的日常操作的所有信息</p>
+            html: <p>有关使用此服务执行日常操作的全部信息</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_portal.svg'
               alt: ''
@@ -53,32 +53,32 @@ sections:
   - title: 新文章和博客文章
     items:
       - type: paragraph
-        text: 阅读您需要了解的最新信息和最佳信息。
+        text: 阅读需要知道的最新实用信息。
       - type: list
         style: cards
         className: cardsM
         columns: 2
         items:
           - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
-            title: 发展Microsoft 托管桌面的完整路线图
+            title: '[路线图] Microsoft 托管桌面完整指南'
             image:
               src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
           - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
-            title: 白皮书研究：对托管桌面服务的要求日益增加
+            title: '[白皮书] 研究：日益增长的托管桌面服务'
             image:
               src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
           - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
-            title: '[电子书]使用新式工作场所为你的公司欣喜'
+            title: '[电子书] 使用现代化工作场所提升公司满意度'
             image:
               src: 'https://docs.microsoft.com/media/common/i_guide.svg'
               alt: ''
   - title: 视频
     items:
       - type: paragraph
-        text: 从印地安那 Pacers 的技术部副总裁了解 Microsoft 托管桌面的优势。
+        text: 从 Indiana Pacers 技术副总裁了解 Microsoft 托管桌面的优势。
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
       - type: paragraph
-        text: Microsoft 托管桌面的常规管理器共享每年 Ignite 会议的服务的所有亮点。
+        text: Microsoft 托管桌面总经理在年度 Ignite 会议上了共享了服务的所有亮点。
       - type: markdown
         text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
