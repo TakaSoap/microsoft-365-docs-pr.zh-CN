@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 管理员可以了解 Office 365 和 EOP 中的可用选项来阻止入站邮件。
-ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033418"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608110"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>在 Office 365 中创建阻止的发件人列表
 
@@ -52,7 +52,7 @@ ms.locfileid: "43033418"
 
 当多个用户受到影响时，范围将变宽，因此下一个最佳选项是在反垃圾邮件策略中阻止发件人列表或阻止的域列表。 来自列表中发件人的邮件被标记为**垃圾**邮件，而您为**垃圾邮件**筛选器判定配置的操作将在邮件上执行。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-这些列表的最大限制约为1000个条目;尽管只能将30个条目输入到门户中。 您需要使用 PowerShell 来添加30个以上的条目。
+这些列表的最大限制约为1000个条目。
 
 ## <a name="use-mail-flow-rules"></a>使用邮件流规则
 

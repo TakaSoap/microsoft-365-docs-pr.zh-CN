@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户。 决定如何处理用户的电子邮件、OneDrive 内容以及是否保留产品许可证或停止付款。
-ms.openlocfilehash: 2c87f04675ec92e964acb6fc9aef7171b6d7d510
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353133"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608115"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
@@ -99,7 +99,8 @@ ms.locfileid: "42353133"
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>用户管理管理员：从 Office 365 中删除一个或多个用户
 
 
- **重要提示** ：如果已将用户帐户 [转换为共享邮箱](../email/convert-user-mailbox-to-shared-mailbox.md)或在该帐户上设置了电子邮件转发，则不要删除该帐户。保留该帐户才能使用那些功能。如果已将其转换为共享邮箱，可以从其中[停止支付许可证费用](#stop-paying-for-the-license)，以避免支付费用。如果设置电子邮件转发，则不能删除许可证。执行此操作将导致电子邮件无法转发并导致邮箱停用。 
+> [!IMPORTANT]
+> 如果已将用户的帐户[转换为共享邮箱](../email/convert-user-mailbox-to-shared-mailbox.md)，或者如果已在该帐户上设置了电子邮件转发，则不要删除该帐户。 这些函数仍需要帐户。 共享邮箱不需要许可证。 如果已将帐户转换为共享邮箱，您可以[停止支付许可证](#stop-paying-for-the-license)。 如果已在帐户上设置了电子邮件转发，则无法删除该许可证。 执行此操作将停止电子邮件转发并停用邮箱。
   
 ::: moniker range="o365-worldwide"
 
@@ -147,7 +148,7 @@ ms.locfileid: "42353133"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。 如果看不到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。 如果看不到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
 
 2. 选择订阅（如果您有多个订阅），然后选择 "**添加/删除许可证**" 以删除许可证，以便在您雇用其他人之前不支付。  
 
@@ -157,7 +158,7 @@ ms.locfileid: "42353133"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。 如果看不到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。 如果看不到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
 
 2. 选择订阅（如果您有多个订阅），然后选择 "**添加/删除许可证**" 以删除许可证，以便在您雇用其他人之前不支付。  
 
