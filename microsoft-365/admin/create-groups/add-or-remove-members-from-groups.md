@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 组中添加或删除成员
+title: 在 Microsoft 365 组中添加或删除成员
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,272 +20,272 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 了解如何将成员添加到组、从组中删除成员和在 Microsoft 365 管理中心中管理组所有者状态。
-ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894707"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631309"
 ---
-# <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a><span data-ttu-id="1a686-103">使用管理中心添加或删除 Office 365 组中的成员</span><span class="sxs-lookup"><span data-stu-id="1a686-103">Add or remove members from Office 365 groups using the admin center</span></span>
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a><span data-ttu-id="d27cd-103">使用管理中心添加或删除 Microsoft 365 组中的成员</span><span class="sxs-lookup"><span data-stu-id="d27cd-103">Add or remove members from Microsoft 365 groups using the admin center</span></span>
 
-<span data-ttu-id="1a686-104">在 Office 365 中，组成员通常会创建自己的组、将自己添加到要加入的组或由组所有者邀请。</span><span class="sxs-lookup"><span data-stu-id="1a686-104">In Office 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners.</span></span> <span data-ttu-id="1a686-105">如果组所有权发生更改，或者您确定应添加或删除某个成员，则您也可以进行此更改。</span><span class="sxs-lookup"><span data-stu-id="1a686-105">If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change.</span></span> <span data-ttu-id="1a686-106">只有全局管理员、Exchange 管理员、组管理员或用户管理员可以进行这些更改。</span><span class="sxs-lookup"><span data-stu-id="1a686-106">Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes.</span></span> [<span data-ttu-id="1a686-107">什么是 Office 365 组？</span><span class="sxs-lookup"><span data-stu-id="1a686-107">What is an Office 365 group?</span></span>](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+<span data-ttu-id="d27cd-104">在 Microsoft 365 中，组成员通常会创建自己的组、将自己添加到要加入的组或由组所有者邀请。</span><span class="sxs-lookup"><span data-stu-id="d27cd-104">In Microsoft 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners.</span></span> <span data-ttu-id="d27cd-105">如果组所有权发生更改，或者您确定应添加或删除某个成员，则您也可以进行此更改。</span><span class="sxs-lookup"><span data-stu-id="d27cd-105">If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change.</span></span> <span data-ttu-id="d27cd-106">只有全局管理员、Exchange 管理员、组管理员或用户管理员可以进行这些更改。</span><span class="sxs-lookup"><span data-stu-id="d27cd-106">Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes.</span></span> [<span data-ttu-id="d27cd-107">什么是 Microsoft 365 组？</span><span class="sxs-lookup"><span data-stu-id="d27cd-107">What is a Microsoft 365 group?</span></span>](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
-> <span data-ttu-id="1a686-108">如果你不是管理员，则可以[使用 Outlook 添加或删除成员](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)。</span><span class="sxs-lookup"><span data-stu-id="1a686-108">If you're not an admin, you can [add or remove members using Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx).</span></span> 
+> <span data-ttu-id="d27cd-108">如果你不是管理员，则可以[使用 Outlook 添加或删除成员](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)。</span><span class="sxs-lookup"><span data-stu-id="d27cd-108">If you're not an admin, you can [add or remove members using Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx).</span></span> 
   
-## <a name="add-a-member-to-a-group-in-the-admin-center"></a><span data-ttu-id="1a686-109">将成员添加到管理员中心的组中</span><span class="sxs-lookup"><span data-stu-id="1a686-109">Add a member to a group in the admin center</span></span>
+## <a name="add-a-member-to-a-group-in-the-admin-center"></a><span data-ttu-id="d27cd-109">将成员添加到管理员中心的组中</span><span class="sxs-lookup"><span data-stu-id="d27cd-109">Add a member to a group in the admin center</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1a686-110">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-110">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>  
+1. <span data-ttu-id="d27cd-110">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-110">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>  
     
-2. <span data-ttu-id="1a686-111">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-111">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-111">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-111">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-112">在详细信息窗格中的 "**成员**" 选项卡上，选择 "**查看所有和管理成员**"，然后选择 "**添加成员**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-112">In the details pane, on the **Members** tab, select **View all and manage members**, and then select **Add members**.</span></span>
+3. <span data-ttu-id="d27cd-112">在详细信息窗格中的 "**成员**" 选项卡上，选择 "**查看所有和管理成员**"，然后选择 "**添加成员**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-112">In the details pane, on the **Members** tab, select **View all and manage members**, and then select **Add members**.</span></span>
       
-4. <span data-ttu-id="1a686-113">搜索或选择要添加的成员的名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-113">Search for or select the name of the member you want to add.</span></span>
+4. <span data-ttu-id="d27cd-113">搜索或选择要添加的成员的名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-113">Search for or select the name of the member you want to add.</span></span>
     
-5. <span data-ttu-id="1a686-114">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-114">Select **Save**.</span></span>
+5. <span data-ttu-id="d27cd-114">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-114">Select **Save**.</span></span>
     
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1a686-115">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-115">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>  
+1. <span data-ttu-id="d27cd-115">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-115">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>  
     
-2. <span data-ttu-id="1a686-116">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-116">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-116">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-116">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-117">在详细信息窗格中的 "**成员**" 旁边，选择 "**编辑**"，然后选择 "**添加成员**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-117">In the details pane, next to **Members**, select **Edit**, and then select **Add members**.</span></span>
+3. <span data-ttu-id="d27cd-117">在详细信息窗格中的 "**成员**" 旁边，选择 "**编辑**"，然后选择 "**添加成员**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-117">In the details pane, next to **Members**, select **Edit**, and then select **Add members**.</span></span>
       
-4. <span data-ttu-id="1a686-118">搜索或选择要添加的成员的名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-118">Search for or select the name of the member you want to add.</span></span>
+4. <span data-ttu-id="d27cd-118">搜索或选择要添加的成员的名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-118">Search for or select the name of the member you want to add.</span></span>
     
-5. <span data-ttu-id="1a686-119">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-119">Select **Save**.</span></span>
+5. <span data-ttu-id="d27cd-119">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-119">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1a686-120">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-120">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>  
+1. <span data-ttu-id="d27cd-120">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-120">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>  
     
-2. <span data-ttu-id="1a686-121">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-121">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-121">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-121">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-122">在详细信息窗格中的 "**成员**" 旁边，选择 "**编辑**"，然后选择 "**添加成员**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-122">In the details pane, next to **Members**, select **Edit**, and then select **Add members**.</span></span>
+3. <span data-ttu-id="d27cd-122">在详细信息窗格中的 "**成员**" 旁边，选择 "**编辑**"，然后选择 "**添加成员**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-122">In the details pane, next to **Members**, select **Edit**, and then select **Add members**.</span></span>
       
-4. <span data-ttu-id="1a686-123">搜索或选择要添加的成员的名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-123">Search for or select the name of the member you want to add.</span></span>
+4. <span data-ttu-id="d27cd-123">搜索或选择要添加的成员的名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-123">Search for or select the name of the member you want to add.</span></span>
     
-5. <span data-ttu-id="1a686-124">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-124">Select **Save**.</span></span>
+5. <span data-ttu-id="d27cd-124">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-124">Select **Save**.</span></span>
 
 ::: moniker-end
 
-## <a name="add-a-group-to-a-member-in-the-admin-center"></a><span data-ttu-id="1a686-125">将组添加到管理中心中的成员</span><span class="sxs-lookup"><span data-stu-id="1a686-125">Add a group to a member in the admin center</span></span>
+## <a name="add-a-group-to-a-member-in-the-admin-center"></a><span data-ttu-id="d27cd-125">将组添加到管理中心中的成员</span><span class="sxs-lookup"><span data-stu-id="d27cd-125">Add a group to a member in the admin center</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1a686-126">在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-126">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="d27cd-126">在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-126">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
     
-2. <span data-ttu-id="1a686-127">选择一个用户。</span><span class="sxs-lookup"><span data-stu-id="1a686-127">Select a user.</span></span>
+2. <span data-ttu-id="d27cd-127">选择一个用户。</span><span class="sxs-lookup"><span data-stu-id="d27cd-127">Select a user.</span></span>
     
-3. <span data-ttu-id="1a686-128">在详细信息窗格中的 "**帐户**" 选项卡上，选择 "**管理组**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-128">In the details pane, on the **Account** tab, select **Manage groups**.</span></span>
+3. <span data-ttu-id="d27cd-128">在详细信息窗格中的 "**帐户**" 选项卡上，选择 "**管理组**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-128">In the details pane, on the **Account** tab, select **Manage groups**.</span></span>
       
-4. <span data-ttu-id="1a686-129">搜索或选择要添加的组的名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-129">Search for or select the name of the group you want to add.</span></span>
+4. <span data-ttu-id="d27cd-129">搜索或选择要添加的组的名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-129">Search for or select the name of the group you want to add.</span></span>
     
-5. <span data-ttu-id="1a686-130">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-130">Select **Save**.</span></span>
+5. <span data-ttu-id="d27cd-130">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-130">Select **Save**.</span></span>
     
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1a686-131">在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-131">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="d27cd-131">在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-131">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
     
-2. <span data-ttu-id="1a686-132">选择一个用户名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-132">Select a user name.</span></span>
+2. <span data-ttu-id="d27cd-132">选择一个用户名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-132">Select a user name.</span></span>
     
-3. <span data-ttu-id="1a686-133">在 "详细信息" 窗格中的 "**组成员身份**" 旁边，选择 "**编辑**"，然后选择 "**添加成员身份**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-133">In the details pane, next to **Group memberships**, select **Edit**, and then select **Add memberships**.</span></span>
+3. <span data-ttu-id="d27cd-133">在 "详细信息" 窗格中的 "**组成员身份**" 旁边，选择 "**编辑**"，然后选择 "**添加成员身份**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-133">In the details pane, next to **Group memberships**, select **Edit**, and then select **Add memberships**.</span></span>
       
-4. <span data-ttu-id="1a686-134">搜索或选择要添加的组的名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-134">Search for or select the name of the group you want to add.</span></span>
+4. <span data-ttu-id="d27cd-134">搜索或选择要添加的组的名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-134">Search for or select the name of the group you want to add.</span></span>
     
-5. <span data-ttu-id="1a686-135">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-135">Select **Save**.</span></span>
+5. <span data-ttu-id="d27cd-135">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-135">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1a686-136">在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-136">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
+1. <span data-ttu-id="d27cd-136">在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-136">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
     
-2. <span data-ttu-id="1a686-137">选择一个用户名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-137">Select a user name.</span></span>
+2. <span data-ttu-id="d27cd-137">选择一个用户名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-137">Select a user name.</span></span>
     
-3. <span data-ttu-id="1a686-138">在 "详细信息" 窗格中的 "**组成员身份**" 旁边，选择 "**编辑**"，然后选择 "**添加成员身份**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-138">In the details pane, next to **Group memberships**, select **Edit**, and then select **Add memberships**.</span></span>
+3. <span data-ttu-id="d27cd-138">在 "详细信息" 窗格中的 "**组成员身份**" 旁边，选择 "**编辑**"，然后选择 "**添加成员身份**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-138">In the details pane, next to **Group memberships**, select **Edit**, and then select **Add memberships**.</span></span>
       
-4. <span data-ttu-id="1a686-139">搜索或选择要添加的组的名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-139">Search for or select the name of the group you want to add.</span></span>
+4. <span data-ttu-id="d27cd-139">搜索或选择要添加的组的名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-139">Search for or select the name of the group you want to add.</span></span>
     
-5. <span data-ttu-id="1a686-140">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-140">Select **Save**.</span></span>
+5. <span data-ttu-id="d27cd-140">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-140">Select **Save**.</span></span>
 
 ::: moniker-end
 
 
 
-## <a name="remove-a-member-from-a-group-in-the-admin-center"></a><span data-ttu-id="1a686-141">从管理员中心的组中删除成员</span><span class="sxs-lookup"><span data-stu-id="1a686-141">Remove a member from a group in the admin center</span></span>
+## <a name="remove-a-member-from-a-group-in-the-admin-center"></a><span data-ttu-id="d27cd-141">从管理员中心的组中删除成员</span><span class="sxs-lookup"><span data-stu-id="d27cd-141">Remove a member from a group in the admin center</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1a686-142">从专用组中删除成员时，需要 5 分钟的时间才能从组中阻止该成员（成员身份更改在域控制器之间完全复制之后）。</span><span class="sxs-lookup"><span data-stu-id="1a686-142">When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group (after membership changes are fully replicated among domain controllers).</span></span> 
+> <span data-ttu-id="d27cd-142">从专用组中删除成员时，需要 5 分钟的时间才能从组中阻止该成员（成员身份更改在域控制器之间完全复制之后）。</span><span class="sxs-lookup"><span data-stu-id="d27cd-142">When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group (after membership changes are fully replicated among domain controllers).</span></span> 
  
 ::: moniker range="o365-worldwide"
  
-1. <span data-ttu-id="1a686-143">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-143">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-143">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-143">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-144">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-144">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-144">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-144">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-145">在详细信息窗格中的 "**成员**" 选项卡上，选择 "**查看所有和管理成员**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-145">In the details pane, on the **Members** tab, select **View all and manage members**.</span></span>
+3. <span data-ttu-id="d27cd-145">在详细信息窗格中的 "**成员**" 选项卡上，选择 "**查看所有和管理成员**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-145">In the details pane, on the **Members** tab, select **View all and manage members**.</span></span>
     
-4. <span data-ttu-id="1a686-146">在要删除的成员旁边，选择 "X"。</span><span class="sxs-lookup"><span data-stu-id="1a686-146">Next to the member you want to remove, select the X.</span></span>
+4. <span data-ttu-id="d27cd-146">在要删除的成员旁边，选择 "X"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-146">Next to the member you want to remove, select the X.</span></span>
     
-5. <span data-ttu-id="1a686-147">选择 "**保存**" 以删除成员。</span><span class="sxs-lookup"><span data-stu-id="1a686-147">Select **Save** to remove the member.</span></span> 
+5. <span data-ttu-id="d27cd-147">选择 "**保存**" 以删除成员。</span><span class="sxs-lookup"><span data-stu-id="d27cd-147">Select **Save** to remove the member.</span></span> 
     
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1a686-148">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-148">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-148">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-148">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-149">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-149">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-149">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-149">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-150">在 "详细信息" 窗格中，选择 "**成员**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-150">In the details pane, next to **Members**, select **Edit**.</span></span>
+3. <span data-ttu-id="d27cd-150">在 "详细信息" 窗格中，选择 "**成员**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-150">In the details pane, next to **Members**, select **Edit**.</span></span>
     
-4. <span data-ttu-id="1a686-151">在要删除的成员旁边，选择 "X"。</span><span class="sxs-lookup"><span data-stu-id="1a686-151">Next to the member you want to remove, select the X.</span></span>
+4. <span data-ttu-id="d27cd-151">在要删除的成员旁边，选择 "X"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-151">Next to the member you want to remove, select the X.</span></span>
     
-5. <span data-ttu-id="1a686-152">选择 "**保存**" 以删除成员。</span><span class="sxs-lookup"><span data-stu-id="1a686-152">Select **Save** to remove the member.</span></span> 
+5. <span data-ttu-id="d27cd-152">选择 "**保存**" 以删除成员。</span><span class="sxs-lookup"><span data-stu-id="d27cd-152">Select **Save** to remove the member.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1a686-153">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-153">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-153">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-153">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-154">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-154">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-154">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-154">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-155">在 "详细信息" 窗格中，选择 "**成员**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-155">In the details pane, next to **Members**, select **Edit**.</span></span>
+3. <span data-ttu-id="d27cd-155">在 "详细信息" 窗格中，选择 "**成员**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-155">In the details pane, next to **Members**, select **Edit**.</span></span>
     
-4. <span data-ttu-id="1a686-156">在要删除的成员旁边，选择 "X"。</span><span class="sxs-lookup"><span data-stu-id="1a686-156">Next to the member you want to remove, select the X.</span></span>
+4. <span data-ttu-id="d27cd-156">在要删除的成员旁边，选择 "X"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-156">Next to the member you want to remove, select the X.</span></span>
     
-5. <span data-ttu-id="1a686-157">选择 "**保存**" 以删除成员。</span><span class="sxs-lookup"><span data-stu-id="1a686-157">Select **Save** to remove the member.</span></span> 
+5. <span data-ttu-id="d27cd-157">选择 "**保存**" 以删除成员。</span><span class="sxs-lookup"><span data-stu-id="d27cd-157">Select **Save** to remove the member.</span></span> 
 
 ::: moniker-end
 
-## <a name="manage-group-owner-status"></a><span data-ttu-id="1a686-158">管理组所有者状态</span><span class="sxs-lookup"><span data-stu-id="1a686-158">Manage group owner status</span></span>
+## <a name="manage-group-owner-status"></a><span data-ttu-id="d27cd-158">管理组所有者状态</span><span class="sxs-lookup"><span data-stu-id="d27cd-158">Manage group owner status</span></span>
 
-<span data-ttu-id="1a686-p102">组的创建者默认为组所有者。通常，出于备份支持或其他原因，一个组将具有多个所有者。可将成员提升为所有者状态，并可将所有者降级为成员状态。</span><span class="sxs-lookup"><span data-stu-id="1a686-p102">By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.</span></span>
+<span data-ttu-id="d27cd-p102">组的创建者默认为组所有者。通常，出于备份支持或其他原因，一个组将具有多个所有者。可将成员提升为所有者状态，并可将所有者降级为成员状态。</span><span class="sxs-lookup"><span data-stu-id="d27cd-p102">By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.</span></span>
   
-### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a><span data-ttu-id="1a686-162">将成员提升为管理中心中的所有者状态</span><span class="sxs-lookup"><span data-stu-id="1a686-162">Promote a member to owner status in the admin center</span></span>
+### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a><span data-ttu-id="d27cd-162">将成员提升为管理中心中的所有者状态</span><span class="sxs-lookup"><span data-stu-id="d27cd-162">Promote a member to owner status in the admin center</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1a686-163">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-163">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-163">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-163">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-164">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-164">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-164">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-164">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-165">在详细信息窗格中的 "**成员**" 选项卡上，选择 "**查看所有和管理所有者**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-165">In the details pane, on the **Members** tab, select **View all and manage owners**.</span></span>
+3. <span data-ttu-id="d27cd-165">在详细信息窗格中的 "**成员**" 选项卡上，选择 "**查看所有和管理所有者**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-165">In the details pane, on the **Members** tab, select **View all and manage owners**.</span></span>
 
-4. <span data-ttu-id="1a686-166">搜索成员，或选择 "**添加所有者**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-166">Search for a member, or select **Add owners**.</span></span>
+4. <span data-ttu-id="d27cd-166">搜索成员，或选择 "**添加所有者**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-166">Search for a member, or select **Add owners**.</span></span>
     
-5. <span data-ttu-id="1a686-167">选中要添加的成员名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="1a686-167">Select the check box next to the name of the member you want to add.</span></span>
+5. <span data-ttu-id="d27cd-167">选中要添加的成员名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="d27cd-167">Select the check box next to the name of the member you want to add.</span></span>
     
-6. <span data-ttu-id="1a686-168">选择 "**保存**"，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-168">Select **Save**, and then **Close**.</span></span>   
+6. <span data-ttu-id="d27cd-168">选择 "**保存**"，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-168">Select **Save**, and then **Close**.</span></span>   
    
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1a686-169">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-169">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-169">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-169">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-170">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-170">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-170">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-170">Select a group name.</span></span>
 
-3. <span data-ttu-id="1a686-171">在详细信息窗格中，选择 "**所有者**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-171">In the details pane, next to **Owners**, select **Edit**.</span></span>
+3. <span data-ttu-id="d27cd-171">在详细信息窗格中，选择 "**所有者**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-171">In the details pane, next to **Owners**, select **Edit**.</span></span>
 
-4. <span data-ttu-id="1a686-172">搜索成员，或选择 "**添加所有者**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-172">Search for a member, or select **Add owners**.</span></span>
+4. <span data-ttu-id="d27cd-172">搜索成员，或选择 "**添加所有者**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-172">Search for a member, or select **Add owners**.</span></span>
     
-5. <span data-ttu-id="1a686-173">选中要添加的成员名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="1a686-173">Select the check box next to the name of the member you want to add.</span></span>
+5. <span data-ttu-id="d27cd-173">选中要添加的成员名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="d27cd-173">Select the check box next to the name of the member you want to add.</span></span>
     
-6. <span data-ttu-id="1a686-174">选择 "**保存**"，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-174">Select **Save**, and then **Close**.</span></span>   
+6. <span data-ttu-id="d27cd-174">选择 "**保存**"，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-174">Select **Save**, and then **Close**.</span></span>   
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1a686-175">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-175">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-175">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-175">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-176">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-176">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-176">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-176">Select a group name.</span></span>
 
-3. <span data-ttu-id="1a686-177">在详细信息窗格中，选择 "**所有者**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-177">In the details pane, next to **Owners**, select **Edit**.</span></span>
+3. <span data-ttu-id="d27cd-177">在详细信息窗格中，选择 "**所有者**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-177">In the details pane, next to **Owners**, select **Edit**.</span></span>
 
-4. <span data-ttu-id="1a686-178">搜索成员，或选择 "**添加所有者**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-178">Search for a member, or select **Add owners**.</span></span>
+4. <span data-ttu-id="d27cd-178">搜索成员，或选择 "**添加所有者**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-178">Search for a member, or select **Add owners**.</span></span>
     
-5. <span data-ttu-id="1a686-179">选中要添加的成员名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="1a686-179">Select the check box next to the name of the member you want to add.</span></span>
+5. <span data-ttu-id="d27cd-179">选中要添加的成员名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="d27cd-179">Select the check box next to the name of the member you want to add.</span></span>
     
-6. <span data-ttu-id="1a686-180">选择 "**保存**"，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-180">Select **Save**, and then **Close**.</span></span>   
+6. <span data-ttu-id="d27cd-180">选择 "**保存**"，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-180">Select **Save**, and then **Close**.</span></span>   
 
 ::: moniker-end
 
-### <a name="remove-owner-status-in-the-admin-center"></a><span data-ttu-id="1a686-181">在管理中心删除所有者状态</span><span class="sxs-lookup"><span data-stu-id="1a686-181">Remove owner status in the admin center</span></span>
+### <a name="remove-owner-status-in-the-admin-center"></a><span data-ttu-id="d27cd-181">在管理中心删除所有者状态</span><span class="sxs-lookup"><span data-stu-id="d27cd-181">Remove owner status in the admin center</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1a686-182">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-182">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-182">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-182">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-183">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-183">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-183">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-183">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-184">在详细信息窗格中的 "**成员**" 选项卡上，选择 "**查看所有和管理所有者**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-184">In the details pane, on the **Members** tab, select **View all and manage owners**.</span></span>
+3. <span data-ttu-id="d27cd-184">在详细信息窗格中的 "**成员**" 选项卡上，选择 "**查看所有和管理所有者**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-184">In the details pane, on the **Members** tab, select **View all and manage owners**.</span></span>
     
-5. <span data-ttu-id="1a686-185">选择所有者名称旁边的 X。</span><span class="sxs-lookup"><span data-stu-id="1a686-185">Select the X next to the owner's name.</span></span> 
+5. <span data-ttu-id="d27cd-185">选择所有者名称旁边的 X。</span><span class="sxs-lookup"><span data-stu-id="d27cd-185">Select the X next to the owner's name.</span></span> 
     
-6. <span data-ttu-id="1a686-186">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-186">Select **Save**.</span></span>
+6. <span data-ttu-id="d27cd-186">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-186">Select **Save**.</span></span>
     
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1a686-187">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-187">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-187">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-187">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-188">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-188">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-188">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-188">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-189">在详细信息窗格中，选择 "**所有者**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-189">In the details pane, next to **Owners**, select **Edit**.</span></span>
+3. <span data-ttu-id="d27cd-189">在详细信息窗格中，选择 "**所有者**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-189">In the details pane, next to **Owners**, select **Edit**.</span></span>
     
-5. <span data-ttu-id="1a686-190">选择所有者名称旁边的 X。</span><span class="sxs-lookup"><span data-stu-id="1a686-190">Select the X next to the owner's name.</span></span> 
+5. <span data-ttu-id="d27cd-190">选择所有者名称旁边的 X。</span><span class="sxs-lookup"><span data-stu-id="d27cd-190">Select the X next to the owner's name.</span></span> 
     
-6. <span data-ttu-id="1a686-191">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-191">Select **Save**.</span></span>
+6. <span data-ttu-id="d27cd-191">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-191">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1a686-192">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="1a686-192">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="d27cd-192">在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="d27cd-192">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
     
-2. <span data-ttu-id="1a686-193">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="1a686-193">Select a group name.</span></span>
+2. <span data-ttu-id="d27cd-193">选择组名称。</span><span class="sxs-lookup"><span data-stu-id="d27cd-193">Select a group name.</span></span>
     
-3. <span data-ttu-id="1a686-194">在详细信息窗格中，选择 "**所有者**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="1a686-194">In the details pane, next to **Owners**, select **Edit**.</span></span>
+3. <span data-ttu-id="d27cd-194">在详细信息窗格中，选择 "**所有者**" 旁边的 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="d27cd-194">In the details pane, next to **Owners**, select **Edit**.</span></span>
     
-5. <span data-ttu-id="1a686-195">选择所有者名称旁边的 X。</span><span class="sxs-lookup"><span data-stu-id="1a686-195">Select the X next to the owner's name.</span></span> 
+5. <span data-ttu-id="d27cd-195">选择所有者名称旁边的 X。</span><span class="sxs-lookup"><span data-stu-id="d27cd-195">Select the X next to the owner's name.</span></span> 
     
-6. <span data-ttu-id="1a686-196">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="1a686-196">Select **Save**.</span></span>
+6. <span data-ttu-id="d27cd-196">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d27cd-196">Select **Save**.</span></span>
 
 ::: moniker-end
 
 
-## <a name="more-on-managing-membership"></a><span data-ttu-id="1a686-197">有关管理成员身份的详细信息</span><span class="sxs-lookup"><span data-stu-id="1a686-197">More on managing membership</span></span>
+## <a name="more-on-managing-membership"></a><span data-ttu-id="d27cd-197">有关管理成员身份的详细信息</span><span class="sxs-lookup"><span data-stu-id="d27cd-197">More on managing membership</span></span>
 
-- <span data-ttu-id="1a686-198">[在 Azure Active Directory 中动态管理组](https://go.microsoft.com/fwlink/?linkid=847632)：请参阅"如何动态管理组的成员？"部分</span><span class="sxs-lookup"><span data-stu-id="1a686-198">[Manage groups dynamically in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): see the section "How can I manage the membership of a group dynamically?"</span></span>
+- <span data-ttu-id="d27cd-198">[在 Azure Active Directory 中动态管理组](https://go.microsoft.com/fwlink/?linkid=847632)：请参阅"如何动态管理组的成员？"部分</span><span class="sxs-lookup"><span data-stu-id="d27cd-198">[Manage groups dynamically in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): see the section "How can I manage the membership of a group dynamically?"</span></span>
     
-- <span data-ttu-id="1a686-199">若要将成百上千个用户添加到组中，请使用[加载项 UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191)。</span><span class="sxs-lookup"><span data-stu-id="1a686-199">To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).</span></span>
+- <span data-ttu-id="d27cd-199">若要将成百上千个用户添加到组中，请使用[加载项 UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191)。</span><span class="sxs-lookup"><span data-stu-id="d27cd-199">To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).</span></span>
     
-- [<span data-ttu-id="1a686-200">向孤立组分配新的所有者</span><span class="sxs-lookup"><span data-stu-id="1a686-200">Assign a new owner to an orphaned group</span></span>](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
+- [<span data-ttu-id="d27cd-200">向孤立组分配新的所有者</span><span class="sxs-lookup"><span data-stu-id="d27cd-200">Assign a new owner to an orphaned group</span></span>](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
     
-## <a name="articles-about-managing-groups"></a><span data-ttu-id="1a686-201">有关组管理的文章</span><span class="sxs-lookup"><span data-stu-id="1a686-201">Articles about managing groups</span></span>
+## <a name="articles-about-managing-groups"></a><span data-ttu-id="d27cd-201">有关组管理的文章</span><span class="sxs-lookup"><span data-stu-id="d27cd-201">Articles about managing groups</span></span>
     
-- [<span data-ttu-id="1a686-202">将通讯组列表升级到 Outlook 中的 Office 365 组</span><span class="sxs-lookup"><span data-stu-id="1a686-202">Upgrade distribution lists to Office 365 Groups in Outlook</span></span>](../manage/upgrade-distribution-lists.md)
+- [<span data-ttu-id="d27cd-202">将通讯组列表升级到 Outlook 中的 Microsoft 365 组</span><span class="sxs-lookup"><span data-stu-id="d27cd-202">Upgrade distribution lists to Microsoft 365 groups in Outlook</span></span>](../manage/upgrade-distribution-lists.md)
     
-- [<span data-ttu-id="1a686-203">为什么应将通讯组列表升级至 Outlook 中的组</span><span class="sxs-lookup"><span data-stu-id="1a686-203">Why you should upgrade your distribution lists to groups in Outlook</span></span>](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+- [<span data-ttu-id="d27cd-203">为什么应将通讯组列表升级至 Outlook 中的组</span><span class="sxs-lookup"><span data-stu-id="d27cd-203">Why you should upgrade your distribution lists to groups in Outlook</span></span>](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[<span data-ttu-id="1a686-204">在 Office 365 组中管理来宾访问</span><span class="sxs-lookup"><span data-stu-id="1a686-204">Manage guest access in Office 365 Groups</span></span>](manage-guest-access-in-groups.md)    
+- [<span data-ttu-id="d27cd-204">在 Microsoft 365 组中管理来宾访问</span><span class="sxs-lookup"><span data-stu-id="d27cd-204">Manage guest access in Microsoft 365 groups</span></span>](manage-guest-access-in-groups.md)    
     
-- <span data-ttu-id="1a686-205">[使用 PowerShell 管理 Office 365 组](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540) ：本文介绍了关键 cmdlet，并提供了示例</span><span class="sxs-lookup"><span data-stu-id="1a686-205">[Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): this article introduces you to key cmdlets and provides examples</span></span>
+- <span data-ttu-id="d27cd-205">[使用 PowerShell 管理 Microsoft 365 组](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)：本文向您介绍了关键 cmdlet，并提供了示例</span><span class="sxs-lookup"><span data-stu-id="d27cd-205">[Manage Microsoft 365 groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): this article introduces you to key cmdlets and provides examples</span></span>
     
-- [<span data-ttu-id="1a686-206">Office 365 组命名策略</span><span class="sxs-lookup"><span data-stu-id="1a686-206">Office 365 Groups naming policy</span></span>](groups-naming-policy.md)
+- [<span data-ttu-id="d27cd-206">Microsoft 365 组命名策略</span><span class="sxs-lookup"><span data-stu-id="d27cd-206">Microsoft 365 groups naming policy</span></span>](groups-naming-policy.md)

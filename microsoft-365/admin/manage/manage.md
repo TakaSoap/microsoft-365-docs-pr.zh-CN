@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
-description: Office 365 中最常见的管理任务的快速链接。
-ms.openlocfilehash: 3c69d24af04567531ea4228202e5ec16cdd39522
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Microsoft 365 中最常见的管理任务的快速链接。
+ms.openlocfilehash: 876652b932579718cb1d1313bca6b98bad2b92c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125995"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628132"
 ---
 # <a name="manage"></a>管理
 
-Office 365 中最常见的管理任务的快速链接。
+Microsoft 365 中最常见的管理任务的快速链接。
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -152,7 +152,7 @@ Office 365 中最常见的管理任务的快速链接。
                         <h3>电子邮件</h3>
                             <p><a href="../add-users/add-users.md">添加新员工</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">解决电子邮件无法发送的问题</a></p>
-                            <p><b>更多任务：</b> <a href="../email/email.md">在 Office 365 for business 中发送电子邮件</a></p>
+                            <p><b>更多任务：</b> <a href="../email/email.md">Microsoft 365 for business 中的电子邮件</a></p>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ Office 365 中最常见的管理任务的快速链接。
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">在 OneDrive 和 SharePoint 中管理共享</a></p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">设置 OneDrive 用户的默认存储空间</a></p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">修复 OneDrive 同步问题</a></p>
-                            <p><b>更多任务：</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive in Office 365</a></p>
+                            <p><b>更多任务：</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive in Microsoft 365</a></p>
                     </div>
                 </div>
             </div>
@@ -198,9 +198,9 @@ Office 365 中最常见的管理任务的快速链接。
                 <div class="card">
                     <div class="cardText">
                         <h3>Yammer</h3>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">适用于 Yammer 的 Office 365 登录</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">从 Office 365 管理 Yammer 用户</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">强制使用 Yammer 用户的 Office 365 标识</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">适用于 Yammer 的 Microsoft 365 登录</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">从 Microsoft 365 管理 Yammer 用户</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">为 Yammer 用户强制实施 Microsoft 365 标识</a></p>
                             <p><a href="https://docs.microsoft.com/yammer/integrate-yammer-with-other-apps/embed-a-feed-into-a-sharepoint-site">将 Yammer 源嵌入到 SharePoint 网站</a></p>
                             <p><b>更多任务：</b> <a href="https://docs.microsoft.com/yammer/yammer-landing-page">Yammer 管理员帮助</a></p>
                     </div>
