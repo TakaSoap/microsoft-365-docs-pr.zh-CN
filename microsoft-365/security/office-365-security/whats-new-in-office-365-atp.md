@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106180"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630817"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -44,9 +44,9 @@ ms.locfileid: "43106180"
     - 高级不筛选（这些是高级筛选选项，其中包括不包含、不包含等）
     - 粒度时间筛选器（日、小时、半小时） 
 
-- **事件**小组件现在是**操作中心**小组件。 （若要查看安全小部件，请在 "Office 365 安全 & 合规性中心" 中，转到 "**威胁管理** > **评审**"。）
+- **事件**小组件现在是**操作中心**小组件。 （若要查看安全小部件，请在安全 & 合规性中心中，转到 "**威胁管理** > **评审**"。）
 
-- [Office 365 中的安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **（预览）**
+- [Microsoft 365 中的安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **（预览）**
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -60,7 +60,7 @@ ms.locfileid: "43106180"
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [在 office 365 中使用自动调查和响应功能](automated-investigation-response-office.md)（OFFICE 365 ATP 计划2）
+- [使用自动调查和响应功能](automated-investigation-response-office.md)（OFFICE 365 ATP 计划2）
 
 - [使用 office 365 管理活动 API 与 office 365 ATP 自动调查和响应事件集成](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)（OFFICE 365 atp 计划2）
 

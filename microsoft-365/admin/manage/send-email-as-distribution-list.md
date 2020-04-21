@@ -1,5 +1,5 @@
 ---
-title: 以 Office 365 中的通讯组列表形式发送电子邮件
+title: 以通讯组列表的形式发送电子邮件
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: 了解如何在 Office 365 中以通讯组列表的身份发送电子邮件。
-ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 了解如何在 Microsoft 365 中将电子邮件作为通讯组列表发送。
+ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361737"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628060"
 ---
-# <a name="send-email-as-a-distribution-list-in-office-365"></a>以 Office 365 中的通讯组列表形式发送电子邮件
+# <a name="send-email-as-a-distribution-list"></a>以通讯组列表的形式发送电子邮件
 
-在 Office 365 中，可以将电子邮件作为通讯组列表发送。 当通讯组列表的成员答复发送到通讯组列表的邮件时，该电子邮件似乎来自通讯组列表，而不是来自单个用户。 本主题介绍如何执行此操作。
+在 Microsoft 365 中，可以将电子邮件作为通讯组列表发送。 当通讯组列表的成员答复发送到通讯组列表的邮件时，该电子邮件似乎来自通讯组列表，而不是来自单个用户。 本主题介绍如何执行此操作。
   
 ## <a name="send-email-as-a-distribution-list"></a>以通讯组列表的形式发送电子邮件
 
-在执行这些步骤之前，请确保已将其添加到 Office 365 通讯组列表，并且已向您授予 "代理发送" 权限。
+在执行这些步骤之前，请确保已将您添加到 Microsoft 365 通讯组列表，并且已向您授予 "代理发送" 权限。
   
- **管理员**：确保已按照 "[向列表中添加 Office 365 用户或联系人](../email/add-user-or-contact-to-distribution-list.md)" 中的步骤操作，并[允许成员以 Office 365 组主题的形式发送电子邮件](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)，并向通讯组列表添加了正确的人员。
+ **管理员**：确保已按照 "[向列表中添加 Microsoft 365 用户或联系人](../email/add-user-or-contact-to-distribution-list.md)" 中的步骤操作，并[允许成员以 Microsoft 365 组主题的形式发送电子邮件](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)，并向通讯组列表添加了正确的人员。
   
 1. 打开 web 上的 Outlook 并转到 "收件箱"。 
     

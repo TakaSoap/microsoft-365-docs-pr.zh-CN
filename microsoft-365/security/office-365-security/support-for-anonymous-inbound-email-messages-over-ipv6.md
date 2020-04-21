@@ -15,16 +15,16 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 和 Exchange Online Protection 中配置来自 IPv6 源的匿名入站电子邮件支持。
-ms.openlocfilehash: 414c10f3387138ed7e62f2de4e8549e45d128d2e
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131515"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631213"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a>在 Office 365 中添加对通过 IPv6 的匿名入站电子邮件的支持
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在 Microsoft 365 中添加对通过 IPv6 的匿名入站电子邮件的支持
 
-Office 365 具有 Exchange Online 邮箱和独立 Exchange Online Protection （EOP）的组织（不含 Exchange Online 邮箱的组织支持通过 IPv6 的匿名入站电子邮件）。 源 IPv6 电子邮件服务器必须满足以下两项要求：
+具有 Exchange Online 邮箱和独立 Exchange Online Protection （EOP）组织的 Microsoft 365 组织（不含 Exchange Online 邮箱的远程电子邮件支持通过 IPv6 的匿名入站电子邮件）。 源 IPv6 电子邮件服务器必须满足以下两项要求：
 
 - 源 IPv6 地址必须具有有效的反向 DNS 查找（PTR）记录，允许目标从 IPv6 地址中查找域名。
 

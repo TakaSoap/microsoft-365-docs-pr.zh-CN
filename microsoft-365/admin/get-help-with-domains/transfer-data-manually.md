@@ -1,5 +1,5 @@
 ---
-title: 在两个 Office 365 帐户之间手动传输数据
+title: 在两个帐户之间手动传输数据
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: 了解在更改计划或公司名称或将多个订阅组合到一个中时，如何在两个 Office 365 帐户之间手动传输数据。
-ms.openlocfilehash: 91f9d7b17a0296931393a89ff95d70628400c61a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 了解在更改计划或公司名称时如何在两个 Microsoft 365 帐户之间手动转移数据，或将多个订阅组合为一个。
+ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362147"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628371"
 ---
-# <a name="transfer-data-manually-between-two-office-365-accounts"></a>在两个 Office 365 帐户之间手动传输数据
+# <a name="transfer-data-manually-between-two-accounts"></a>在两个帐户之间手动传输数据
 
-准备汇总你的 sleeves，并在日历上阻止一段时间：在两个 Office 365 帐户之间传输数据是一种手动、复杂且耗时的过程。 这不是自动或受支持的过程。 我们将开始着手。
+准备汇总你的 sleeves，并在日历上阻止一段时间：在两个 Microsoft 365 帐户之间传输数据是一个手动、复杂且耗时的过程。 这不是自动或受支持的过程。 我们将开始着手。
   
 > [!CAUTION]
-> 在此过程中，在处理电子邮件、Skype for Business 和托管在 Office 365 上的公共网站时，将无法正常运行。 用户将获取新的用户名和密码，并将需要重置 Outlook。
+> 在流程的过程中，Microsoft 365 上托管的电子邮件、Skype for Business 和公共网站将不起作用。 用户将获取新的用户名和密码，并将需要重置 Outlook。
 
 **如果应用了以下任一情况，则仅使用本主题中的说明手动传输数据：**
   
@@ -45,28 +45,28 @@ ms.locfileid: "42362147"
 
 |**Tasks**|**Steps**|
 |:-----|:-----|
-|购买要移到的计划。  <br/> |当你注册时，请在初始域名中指定要使用的公司名称： *yourcompany* 、 *yourcompany* -public.sharepoint.com 和*yourcompany* 。 您需要使用与为任何现有订阅所做的*yourcompany*不同的名称。  <br/> > [!NOTE]> 在取消订阅以释放从我们的系统中使用*yourcompany*的初始域名时，通常至少需要几个月。 即使您计划保存旧 Office 365 订阅中的所有数据，并取消该订阅，旧的*yourcompany*值也不会立即可用于新订阅。           |
-|从旧的 Office 365 订阅中删除您的自定义域。  <br/> | 在删除域以从用户电子邮件地址中删除域名并删除自定义域的电子邮件和 Lync 的 DNS 记录之前，请执行[所需的步骤](remove-a-domain.md)。 如果您在 Office 365 上托管公共网站，则还需要删除指向它的 CNAME 记录。  <br/> > [!IMPORTANT]> 删除了将电子邮件路由到此自定义域的 MX 记录后，电子邮件将停止工作，直到您向新帐户添加了域、设置新的 MX 记录并设置您的用户。 当您删除 Lync 的 DNS 记录时，Lync 将停止工作。 删除指向公共网站的 CNAME 记录后，该记录将不可用。           [删除域](remove-a-domain.md)。  <br/> |
+|购买要移到的计划。  <br/> |当你注册时，请在初始域名中指定要使用的公司名称： *yourcompany* 、 *yourcompany* -public.sharepoint.com 和*yourcompany* 。 您需要使用与为任何现有订阅所做的*yourcompany*不同的名称。  <br/> > [!NOTE]> 在取消订阅以释放从我们的系统中使用*yourcompany*的初始域名时，通常至少需要几个月。 即使您计划保存旧 Microsoft 365 订阅中的所有数据，并取消该订阅，旧的*yourcompany*值也不会立即可用于新的订阅。           |
+|从旧 Microsoft 365 订阅中删除你的自定义域。  <br/> | 在删除域以从用户电子邮件地址中删除域名并删除自定义域的电子邮件和 Lync 的 DNS 记录之前，请执行[所需的步骤](remove-a-domain.md)。 如果你在 Microsoft 365 上托管你的公共网站，你还需要删除指向它的 CNAME 记录。  <br/> > [!IMPORTANT]> 删除了将电子邮件路由到此自定义域的 MX 记录后，电子邮件将停止工作，直到您向新帐户添加了域、设置新的 MX 记录并设置您的用户。 当您删除 Lync 的 DNS 记录时，Lync 将停止工作。 删除指向公共网站的 CNAME 记录后，该记录将不可用。           [删除域](remove-a-domain.md)。  <br/> |
 |为新订阅设置自定义域，并设置您的用户。  <br/> | 设置新的订阅，包括为自定义域创建所需的 DNS 记录。  <br/>  创建您的用户并在自定义域上使用电子邮件地址。  <br/> |
 |将数据从旧订阅传输到新订阅。  <br/> | 在单独的浏览器窗口中登录两个帐户：  <br/>  右键单击 "Internet Explorer" 图标，然后打开两个 "InPrivate 浏览器" 窗口。 您可以在两个窗口中使用不同的凭据登录这两个帐户。  <br/> [在订阅之间传输管理设置](#email) <br/> [传输团队网站结构和数据](#transfer-team-site-structure-and-data) <br/> [在订阅之间传输公共网站](#transfer-a-public-website-between-subscriptions) <br/> [在订阅之间传输管理设置](#email) <br/> |
-|通过调用 Microsoft 支持 Office 365，取消所做计划的订阅。  <br/> | 验证新订阅是否正常工作以及是否已传输所有数据。  <br/>  [联系客户支持](../contact-support-for-business-products.md)以取消旧订阅。  <br/> |
+|通过调用 microsoft Microsoft Microsoft 支持 for Microsoft 365，取消已完成计划的订阅。  <br/> | 验证新订阅是否正常工作以及是否已传输所有数据。  <br/>  [联系客户支持](../contact-support-for-business-products.md)以取消旧订阅。  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>在订阅之间传输管理设置
 
 转到每个帐户上的以下页面，并根据旧帐户的设置设置新帐户。
   
-如果要将数据从 Office 365 传输到 Office 365 中型企业版或 Office 365 企业版，则管理页面的结构各不相同。 观看[视频：引入 Office 365 企业版](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)，然后转到以下位置查看管理设置。
+如果要将数据从 Microsoft 365 传输到 Microsoft 365 中型企业版或 Microsoft 365 企业版，则管理页面的结构各不相同。 观看[视频：介绍 Microsoft 365 企业版](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)，并转到以下位置以查看管理员设置。
   
-对于 Office 365 企业版和 Office 365 中型企业版：
+对于 Microsoft 365 企业版和 Microsoft 365 中型企业版：
   
 |**位置**|**用途**|
 |:-----|:-----|
-|**管理** \> **Office 365** \> **服务设置** <br/> |选择每个选项卡，以获取邮件、网站、Lync、用户软件、密码、社区、权限管理和移动的设置。  <br/> |
+|**Admin** \> **Microsoft 365** \> **服务设置** <br/> |选择每个选项卡，以获取邮件、网站、Lync、用户软件、密码、社区、权限管理和移动的设置。  <br/> |
 |**管理员** \> **Exchange** <br/> | Exchange Online 设置  <br/> |
 |**管理** \> **SharePoint** <br/> | SharePoint Online 设置  <br/> |
 |**管理员** \> **Skype for business** <br/> |其他 Skype for Business 设置  <br/> |
 
-对于 Office 365 小型企业版
+适用于 Microsoft 365 小型企业版
   
 |**位置**|**用途**|
 |:-----|:-----|
@@ -74,7 +74,7 @@ ms.locfileid: "42362147"
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>在订阅之间传输公共网站
 
-如果在 Office 365 上托管有一个公共网站，则需要将其保存并在新订阅上重新创建它。
+如果在 Microsoft 365 上托管了一个公共网站，则需要将其保存并在新订阅上重新创建它。
   
 > [!NOTE]
 > 如果您的公共网站托管在 DNS 托管提供商处，则不需要进行任何更改。 您的转换不会受到影响。

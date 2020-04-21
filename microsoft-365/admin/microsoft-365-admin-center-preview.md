@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,16 +18,16 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 了解新的 Microsoft 365 管理中心。
-ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361597"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627976"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>关于新的 Microsoft 365 管理中心
 
-新的 Microsoft 365 管理中心是为 IT 团队构建的，这是管理 Microsoft 365 和 Office 365 服务的简单方法。 管理中心根据您的角色或组织的独特需求，提供了量身定制的体验，提高了日常任务的效率，并提供了可操作的见解，可帮助您做出数据驱动的决策，以为用户提供更好的体验。
+新的 Microsoft 365 管理中心是为 IT 团队构建的，这是管理 Microsoft 365 服务的简单方法。 管理中心根据您的角色或组织的独特需求，提供了量身定制的体验，提高了日常任务的效率，并提供了可操作的见解，可帮助您做出数据驱动的决策，以为用户提供更好的体验。
   
 Microsoft 365 管理中心是所有 Microsoft 365 管理员的通用入口点，可在[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)中访问。 专家工作区（如安全或设备管理）允许更精确的控制。 有关管理中心如何协同工作的详细信息，请参阅本文后面[的特定类型的 IT 角色和其他工作区（如安全性、设备管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。 
   
@@ -69,7 +69,7 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的通用入口点，
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>我是否可以在新管理中心中执行我可以在旧管理中心中执行的所有操作？
 
-是。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
+可以。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
   
 ## <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 计划可用于试用版或购买版？
 

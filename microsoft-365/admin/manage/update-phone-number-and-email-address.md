@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中更新管理员电话号码和电子邮件地址
+title: 更新管理员电话号码和电子邮件地址
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 在管理中心更新管理员电话号码和电子邮件地址。 如果要重置自己的管理员密码，将需要此信息。
-ms.openlocfilehash: 255c1d72ae032b0ebaf0606e0731e9bbe8a1b40d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4a60e344f94ede3e455f8940189f5019a52e834b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361667"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628000"
 ---
-# <a name="update-your-admin-phone-number-and-email-address-in-office-365"></a>在 Office 365 中更新管理员电话号码和电子邮件地址
+# <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
-本文介绍管理员如何更改 Office 365 中的业务电话和电子邮件地址。
+本文介绍管理员如何在 Microsoft 365 中更改你的业务电话和电子邮件地址。
   
 如果想了解如何更改公司的资料信息（如公司名称和地址、公司电话号码和技术联系人信息），请参阅[更改公司地址、技术联系人电子邮件及其他信息](change-address-contact-and-more.md)。
   
@@ -40,7 +40,7 @@ ms.locfileid: "42361667"
 
 2. 在页眉中，选择您的配置\>文件图标**My account** \> **个人信息**。
 
-3. 在 "**联系人详细信息**" 部分，选择 "编辑"。 更新你的移动电话、电话和备用电子邮件地址。 请确保所使用的备用电子邮件地址与 Office 365 电子邮件地址不同。
+3. 在 "**联系人详细信息**" 部分，选择 "编辑"。 更新你的移动电话、电话和备用电子邮件地址。 请确保您使用的电子邮件地址与备选电子邮件地址的其他内容不同。
 
     > [!IMPORTANT]
     > 重置管理员密码（不是你的计算机管理员密码）需要备用电子邮件地址和移动电话号码。
@@ -49,6 +49,6 @@ ms.locfileid: "42361667"
   
 有关账单问题的解答，请参阅：
   
-- [更改 Office 365 商业版的帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [更改 Microsoft 365 商业版的帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [在 Office 365 商业版中添加、更新或删除信用卡或银行帐户](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [在 Microsoft 365 商业版中添加、更新或删除信用卡或银行帐户](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

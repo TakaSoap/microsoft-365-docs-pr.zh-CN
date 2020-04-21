@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: 了解有关金融的 Office 365 自助注册和可用自助服务程序，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365。
+description: 了解有关金融的 Microsoft 365 自助注册和可用自助服务程序，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365。
 ms.custom: okr_SMB
-ms.openlocfilehash: fa7e6dcb4c40a7a41599b7c1a81fa596868d8e2d
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106108"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627796"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>在你的组织中使用自助服务注册
 
@@ -38,9 +38,9 @@ ms.locfileid: "43106108"
   
 1. 学生和教职员成员具有学校电子邮件地址，指示它们与你的机构相关联。 例如，电子邮件地址 jakob@uw.edu 可能指示来自华盛顿大学的学生。
 
-2. 学生和教职员转到[我们的网站](https://go.microsoft.com/fwlink/p/?LinkId=536628)，并使用其电子邮件地址注册您的组织提供的服务，例如，Office 365 专业增强版。 他们还可以注册以获取我们提供的其他免费服务。
+2. 学生和教职员转到[我们的网站](https://go.microsoft.com/fwlink/p/?LinkId=536628)，并使用其电子邮件地址注册您的组织提供的服务，例如，Microsoft 365 Apps for enterprise。 他们还可以注册以获取我们提供的其他免费服务。
 
-3. 我们验证其电子邮件地址，然后可以立即开始使用 Office 365、Power BI 或其他服务。
+3. 我们验证其电子邮件地址，然后可以立即开始使用 Microsoft 365、Power BI 或其他服务。
 
 4. 作为业务管理员，你可以通过查看 "管理中心" 中的 "**产品 & 服务**" 页来查看谁注册了订阅。 这样一来，你可以看到租户中的服务存在新的或无法识别的许可证。 若要控制用户是否可以注册自助服务订阅，请将[Set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell Cmdlet 与**AllowAdHocSubscriptions**参数一起使用。 有关详细信息，请参阅[如何控制自助服务设置？](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
@@ -52,8 +52,8 @@ ms.locfileid: "43106108"
 |:-----|:-----|:-----|:-----|
 |**程序** <br/> |**说明** <br/> |**其他信息** <br/> |自助注册的网站 * * * * <br/> |
 |Office 365 A1 * * * * <br/> |任何学生或教师都可以使用学校电子邮件地址注册免费的 Office 365，获取 web Office 相关应用程序、工作组和项目网站的 OneDrive 云存储空间和 SharePoint Online。  <br/> |[Office 365 教育版技术常见问题解答](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Office 365 A1 Plus** <br/> |符合条件的学生和教师可以注册 Office 365 A1 Plus，其中包括上文提到的所有内容以及 Office 365 专业增强版。 Office 365 专业增强版是生产力软件，包括 Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access 和 Skype for Business，它们安装在台式计算机或便携式计算机上。  <br/> |[Office 365 教育版技术常见问题解答](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Power BI** <br/> |Power BI 使用户能够以直观的新方式可视化数据、共享发现和进行协作。 <br/> 如果你的组织已订阅 Office 365，你可能还会看到 "Power BI Pro 个人用户试用版" 的许可证，它为用户提供了对高级功能的有限、免费访问权限。  <br/> |[组织中的 Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
+|**Office 365 A1 Plus** <br/> |符合条件的学生和教师可以注册 Office 365 A1 Plus，其中包括上文提到的所有内容以及适用于企业的 Microsoft 365 应用程序。 适用于企业的 Microsoft 365 应用程序是生产力软件，包括 Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access 和 Skype for Business 等安装在台式计算机或便携式计算机上的软件。  <br/> |[Office 365 教育版技术常见问题解答](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|**Power BI** <br/> |Power BI 使用户能够以直观的新方式可视化数据、共享发现和进行协作。 <br/> 如果你的组织已订阅，你可能还会看到 "Power BI Pro 个人用户试用" 的许可证，它为用户提供了对高级功能的有限、免费访问权限。  <br/> |[组织中的 Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**权限管理服务 (RMS)** <br/> |RMS 适用于组织中已发送了受 Azure 权限管理（Azure RMS）保护的敏感文件的用户的免费自助订阅，但其 IT 部门尚未实现 Azure 权限管理（Azure RMS）或 Active Directory 权限管理服务（AD RMS）。  <br/> |[适用于个人和 Azure 权限管理的 RMS](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft 权限管理门户](https://portal.azure.com/)，以便您可以检查是否可以打开给定的受权限保护的文档。  <br/> |
 |**Microsoft Power Apps** <br/> |在 PowerApps 中，可以通过运行您创建的应用程序或其他人创建并与您共享的应用程序来管理组织数据。 在手机等移动设备上运行的应用程序，也可以通过打开 Dynamics 365 在浏览器中运行这些应用程序。 您可以创建无限多个应用程序-所有这些都不学习 c # 等编程语言。  <br/> |[为 PowerApps 注册自助服务](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**适用于财务的 Dynamics 365** <br/> |为中小型企业获取完整的业务和财务管理解决方案。 Dynamics 365 for 金融使排序、销售、开票和报告变得更加轻松—从第一天开始。  <br/> |[适用于财务的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[适用于财务的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 了解如何在管理中心中创建联系人并管理全局地址列表。
-ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: fe402fd5d90147caa7c6ee2f3632749255c672b3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857387"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627916"
 ---
 # <a name="quick-help-contacts"></a>快速帮助：联系人
 
@@ -45,7 +45,7 @@ ms.locfileid: "42857387"
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>其他人如何查看我在管理中心创建的联系人？
 
- 他们可以转到 Office 365 中的**人员**，展开 "**目录**"，然后选择 "**所有联系人**"。 他们可以从那里查看每个联系人及其信息。
+ 他们可以转到 Microsoft 365 中的 "**人员**"，展开 "**目录**"，然后选择 "**所有联系人**"。 他们可以从那里查看每个联系人及其信息。
   
 ## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a>是否任何人都可以创建和编辑这些组织联系人？
 
@@ -53,7 +53,7 @@ ms.locfileid: "42857387"
   
 ## <a name="can-i-use-this-to-manage-my-business-clients"></a>此功能可否用于管理客户？
 
-您可以使用您喜欢的 Office 365 联系人，但有一些限制。 了解[管理联系人的其他方式](ways-to-manage-contacts.md)
+你可以使用 Microsoft 365 联系人，但你喜欢，但有一些限制。 了解[管理联系人的其他方式](ways-to-manage-contacts.md)
   
 ## <a name="how-do-i-bulk-import-organizational-contacts"></a>如何批量导入组织联系人？
 
@@ -61,4 +61,4 @@ ms.locfileid: "42857387"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>如果以上内容仍未解决问题，怎么办？
 
-请访问[管理员帮助](../admin-home.yml)的其余部分，或在下面提供反馈。
+请访问[管理员帮助](../admin-home.md)的其余部分，或在下面提供反馈。

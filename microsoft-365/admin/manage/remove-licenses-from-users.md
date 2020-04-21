@@ -1,5 +1,5 @@
 ---
-title: 取消分配给用户的许可证
+title: 取消分配用户许可证
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: 了解如何从用户帐户中删除许可证。
-ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400929"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628096"
 ---
-# <a name="unassign-licenses-from-users"></a>取消分配给用户的许可证
+# <a name="unassign-licenses-from-users"></a>取消分配用户许可证
 
 ::: moniker range="o365-worldwide"
 您可以从 "**活动用户**" 页面或 "**许可证**" 页上的用户中删除或取消分配许可证。 使用哪种方法取决于您要从特定用户中取消分配产品许可证，还是从特定产品中取消分配用户许可证。
@@ -142,7 +142,7 @@ ms.locfileid: "42400929"
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>您需要了解的有关为用户取消分配许可证的信息
 
-- 你必须是全局管理员、账单管理员、许可证管理员或用户管理管理员。有关详细信息，请参阅[关于 Office 365 管理员角色](../add-users/about-admin-roles.md)。
+- 您必须是全局管理员、帐单管理员、许可证管理员或用户管理管理员。有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
 
 - 可[使用 Office 365 PowerShell 删除用户帐户的许可证](https://go.microsoft.com/fwlink/p/?linkid=848428)。
 
@@ -152,17 +152,17 @@ ms.locfileid: "42400929"
 
 - 请注意，在 OneDrive for Business 中保存的文件不会被删除，除非用户已从 Microsoft 365 管理中心中删除或通过 Active Directory 同步删除。 有关详细信息，请参阅[OneDrive 保留和删除](https://docs.microsoft.com/onedrive/retention-and-deletion)。
 
-- 此外，在删除许可证时，用户的邮箱将无法再通过使用电子数据展示工具（如内容搜索或高级电子数据展示）来进行搜索。 有关详细信息，请参阅[Office 365 中的内容搜索](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes)中的 "搜索断开连接或已取消授权的邮箱" 部分。
+- 此外，在删除许可证时，用户的邮箱将无法再通过使用电子数据展示工具（如内容搜索或高级电子数据展示）来进行搜索。 有关详细信息，请参阅[Microsoft 365 中的内容搜索](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes)中的 "搜索断开连接或已取消授权的邮箱" 部分。
 
 - 如果您拥有企业订阅（如 Office 365 企业版 E3），Exchange Online 允许您使用[非活动邮箱](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)保留已删除用户帐户的邮箱数据。 有关详细信息，请参阅[在 Exchange Online 中创建和管理非活动邮箱](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes)。
 
-- 若要了解如何在删除许可证后阻止用户访问 Office 365 数据以及如何在以后获取对数据的访问权限，请参阅[删除以前的员工](../add-users/remove-former-employee.md)。
+- 若要了解如何在删除许可证后阻止用户访问 Microsoft 365 数据，以及如何在以后获取对数据的访问权限，请参阅[删除以前的员工](../add-users/remove-former-employee.md)。
 
 - 如果您删除用户的许可证，但他们仍安装了 Office，他们会在使用 Office 时看到未[授权的产品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
 
 ## <a name="related-articles"></a>相关文章
 
-[了解 Office 365 商业版中的订阅和许可证](../../commerce/licenses/subscriptions-and-licenses.md)
+[了解 Microsoft 365 for business 中的订阅和许可证](../../commerce/licenses/subscriptions-and-licenses.md)
 
 [从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)
 

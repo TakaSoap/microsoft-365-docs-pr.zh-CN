@@ -1,5 +1,5 @@
 ---
-title: 收集创建 Office 365 DNS 记录所需的信息
+title: 收集创建 DNS 记录所需的信息
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: '了解如何查找创建适用于 Office 365 的 DNS 记录所需的值/信息。 '
+description: '了解如何查找为 Microsoft 365 创建 DNS 记录所需的值/信息。 '
 ms.custom: okr_smb
-ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540875"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628442"
 ---
-# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>收集创建 Office 365 DNS 记录所需的信息
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
  如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
@@ -61,9 +61,9 @@ ms.locfileid: "43540875"
     
 5. 转到 "[在任何 DNS 托管提供程序中创建 dns 记录](create-dns-records-at-any-dns-hosting-provider.md)"，然后从注册机构列表中选择您的 dns 主机，以查看分步说明。
     
-6. 按照在 DNS 主机上创建 TXT 记录（或 MX 记录）的步骤操作，然后返回 Office 365 中验证域。
+6. 按照在 DNS 主机上创建 TXT 记录（或 MX 记录）的步骤操作，然后验证 Microsoft 365 中的域是否返回。
 
-7. 在 Office 365 中验证域后，从 DNS 主机中删除 TXT 记录（或 MX 记录）。
+7. 在 Microsoft 365 中验证域后，从 DNS 主机中删除 TXT 记录（或 MX 记录）。
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>步骤2：查找电子邮件和其他的 MX 记录值
 

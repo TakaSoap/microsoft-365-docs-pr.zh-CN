@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: 了解如何为 AutoPilo tin Microsoft 365 商业版创建 CSV 文件。
-ms.openlocfilehash: 56d8fb234a1b526192468309c93c638694b92c6e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 了解如何在 Microsoft 365 for business 中为 AutoPilot 创建 CSV 文件。
+ms.openlocfilehash: b1154d639ba23180f637520750d94f00e997cfc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361353"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627856"
 ---
 # <a name="device-list-csv-file"></a>设备列表 CSV-文件
 
@@ -49,9 +49,9 @@ ms.locfileid: "42361353"
   
 ## <a name="related-articles"></a>相关文章
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)（Microsoft 365 Business 文档和资源）
+[适用于业务的 Microsoft 365 文档和资源](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Microsoft 365 Business 入门](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
+[Microsoft 365 商业版入门](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
   
-[管理 Microsoft 365 Business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
+[管理 Microsoft 365 商业版](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
   

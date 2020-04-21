@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
-description: 了解如何验证您的域并为 Office 365 的 Azure DNS 区域中的电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 1c9ac04f74b205fa4a099fca634a41207e8083ba
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解如何验证您的域并为 Microsoft 的 Azure DNS 区域中的电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
+ms.openlocfilehash: 7104fb18a6581b7ebc853f938b85171ae1886cfd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211046"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629139"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>为 Azure DNS 区域创建 DNS 记录
 
@@ -39,15 +39,15 @@ ms.locfileid: "43211046"
     
 - [添加 TXT 记录进行验证](#add-a-txt-record-for-verification)
 
-- [添加一条 MX 记录，确保发往您的域的电子邮件发送到 Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [添加 MX 记录，以便你的域的电子邮件将发送给 Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [添加 Office 365 所需的四个 CNAME 记录](#add-the-four-cname-records-that-are-required-for-office-365)
+- [添加 Microsoft 所需的四个 CNAME 记录](#add-the-four-cname-records-that-are-required-for-microsoft)
     
 - [为 SPF 添加 TXT 记录以帮助防止垃圾邮件](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [添加 Office 365 所需的两条 SRV 记录](#add-the-two-srv-records-that-are-required-for-office-365)
+- [添加 Microsoft 所需的两条 SRV 记录](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-在 Azure 中添加这些记录后，您的域将设置为与 Office 365 服务配合使用。
+在 Azure 中添加这些记录后，您的域将设置为与 Microsoft 服务配合使用。
   
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -60,7 +60,7 @@ ms.locfileid: "43211046"
   
 注册 Azure 时，您在 DNS 区域中创建了一个资源组，然后将您的域名分配给该资源组。 该域名注册到外部域注册机构;Azure 不提供域注册服务。
   
-若要在 Office 365 中验证和创建域的 DNS 记录，首先需要更改域注册机构中的名称服务器，以便它们使用分配给您的资源组的 Azure 名称服务器。
+若要在 Microsoft 中验证和创建域的 DNS 记录，首先需要更改域注册机构中的名称服务器，以便它们使用分配给资源组的 Azure 名称服务器。
   
 若要在域注册机构的网站上更改域的名称服务器，请执行以下步骤。
   
@@ -81,12 +81,12 @@ ms.locfileid: "43211046"
 3. 保存所做的更改。
     
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。然后，你的 Office 365 电子邮件和其他服务将全部设置为使用你的域。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
   
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 <a name="BKMK_verify"> </a>
 
-在将域用于 Office 365 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Office 365 证明你是所有者。
+在将你的域用于 Microsoft 之前，我们必须确保你拥有此域。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 证明你拥有该域的 DNS 记录。
   
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -109,7 +109,7 @@ ms.locfileid: "43211046"
     
     |**名称**|**Type**|**TTL**|**TTL 单位**|**值**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1  <br/> |工作时间  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 此为示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1  <br/> |工作时间  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 此为示例。 从表中使用您的特定**目标或指向 "地址**" 值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Azure-最佳验证-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
@@ -117,9 +117,9 @@ ms.locfileid: "43211046"
   
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
+现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求该记录。
   
-Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
+当 Microsoft 找到正确的 TXT 记录时，您的域将会得到验证。
   
 1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
     
@@ -138,7 +138,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>添加一条 MX 记录，确保发往你的域的电子邮件发送到 Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加 MX 记录，以便你的域的电子邮件将发送给 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. 若要开始，请使用[此链接](https://portal.azure.com )转到 Azure 上的 "域" 页面。 系统将会提示您先登录。
@@ -159,7 +159,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     |**名称**|**Type**|**TTL**|**TTL 单位**|**首选项**|**邮件交换**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> |工作时间  <br/> |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从 Office 365 帐户中获取你* \<的域密钥\> * 。   [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1  <br/> |工作时间  <br/> |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。   [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-配置-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -185,7 +185,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     ![Azure-BP-配置-2-6](../../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
   
-## <a name="add-the-four-cname-records-that-are-required-for-office-365"></a>添加 Office 365 所需的四个 CNAME 记录
+## <a name="add-the-four-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的四个 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
 
 1. 若要开始，请使用[此链接](https://portal.azure.com )转到 Azure 上的 "域" 页面。 系统将会提示您先登录。
@@ -228,7 +228,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
 7.  Optional为 MDM 添加2个 CNAME 记录。
 
 > [!IMPORTANT]
-> 如果您有 Office 365 的 Mobile Device Manager (MDM)，则必须创建另外两个 CNAME 记录。 创建流程与你用于其他四个 CNAME 记录的流程一样，但需提供下表中的值。 （如果没有 MDM，则可以跳过此步骤。） 
+> 如果你具有适用于 Microsoft 的移动设备管理（MDM），则必须创建两个附加的 CNAME 记录。 创建流程与你用于其他四个 CNAME 记录的流程一样，但需提供下表中的值。 （如果没有 MDM，则可以跳过此步骤。） 
   
 |**名称**|**Type**|**TTL**|**TTL 单位**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -239,7 +239,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 If you already have an SPF record for your domain, don't create a new one for Office 365. 可以将所需的 Office 365 添加到当前记录，这样就拥有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你已有域的 SPF 记录，请不要为 Microsoft 创建一个新的。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
   
 1. 若要开始，请使用[此链接](https://portal.azure.com )转到 Azure 上的 "域" 页面。 系统将会提示您先登录。
     
@@ -259,7 +259,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     |**名称**|**Type**|**TTL**|**TTL 单位**|**值**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1  <br/> |工作时间  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           
+    |@  <br/> |TXT  <br/> |1  <br/> |工作时间  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           
 
     ![Azure-BP-配置-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
@@ -267,7 +267,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     ![Azure-BP-配置-4-3](../../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>添加 Office 365 所需的两条 SRV 记录
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
 
 1. 若要开始，请使用[此链接](https://portal.azure.com )转到 Azure 上的 "域" 页面。 系统将会提示您先登录。

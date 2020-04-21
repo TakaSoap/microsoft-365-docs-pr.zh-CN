@@ -1,5 +1,5 @@
 ---
-title: 向 Office 365 帮助窗格添加自定义技术支持信息
+title: 向帮助窗格添加自定义技术支持信息
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -20,21 +20,21 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: 在管理中心中创建自定义帮助台卡片，并将自定义支持联系人信息添加到帮助窗格中。
-ms.openlocfilehash: af1000be1f8b26e79097f8b686aafc37da6e9366
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627892"
 ---
-# <a name="add-customized-help-desk-info-to-the-office-365-help-pane"></a>向 Office 365 帮助窗格添加自定义技术支持信息
+# <a name="add-customized-help-desk-info-to-the-help-pane"></a>向帮助窗格添加自定义技术支持信息
 
 作为管理员，您可以通过将自定义联系人信息添加到 "帮助" 窗格来简化用户支持。 需要帮助的用户将能够使用 "帮助" 图标访问组织的自定义支持联系人信息。
   
-只有拥有 Exchange Online 许可证 Office 365 的全局管理员可创建自定义技术支持卡片。了解如何[在 Office 365 商业版中分配许可证](../manage/assign-licenses-to-users.md)。
+若要创建自定义技术支持卡片，您必须是 Microsoft 365 的全局管理员，并且拥有 Exchange Online 许可证。 了解如何[在 Microsoft 365 for business 中分配许可证](../manage/assign-licenses-to-users.md)。
 
 > [!NOTE]
-> 如果你是要寻求来自 Microsoft 的技术或帐单支持的管理员，请参阅[联系 Office 365 获取商业版支持](../contact-support-for-business-products.md)。 
+> 如果你是要寻求来自 Microsoft 的技术或帐单支持的管理员，请参阅[联系 Microsoft 365 以获取商业支持](../contact-support-for-business-products.md)。 
 
   
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>在管理中心创建自定义技术支持卡片
@@ -56,7 +56,7 @@ ms.locfileid: "42240352"
     
   - **URL**：如果您的支持部门有一个包含有用的工具和资源的内部或公共网站，请输入其名称和关联的 URL。
     
-5. 选择 "**保存更改**"。
+5. 选择“**保存更改**”。
     
     若要查看新的自定义技术支持卡片，请注销，然后再次登录回来。 我们建议你在登录回来之后立即测试卡片上的链接。 你的用户将能够在下次登录时看到该卡片。
     

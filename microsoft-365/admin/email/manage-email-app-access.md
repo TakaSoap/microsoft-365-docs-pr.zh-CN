@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何选择用户可用于访问电子邮件、日历和联系人的移动应用程序。
-ms.openlocfilehash: dcfd356ecdbc7448036507abe8d8f09546b05255
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8627a31f7ec5e3c14b853618bb0383ecc58597cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251173"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628803"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理电子邮件应用程序访问
 
@@ -43,7 +43,7 @@ ms.locfileid: "42251173"
 
 2. 在 "**移动电子邮件访问选项**" 页上，选中 "" 复选框，然后选择组织中的用户如何在其设备上使用电子邮件应用程序：
   
-选择用于设置组织中的用户如何从其移动设备访问 Office 365 工作或学校帐户的选项
+选择用于设置组织中的用户如何从其移动设备访问其工作或学校帐户的选项
   
 - **仅限 outlook** -组织中的用户将需要在其移动设备上使用 Outlook for Android 或 Outlook for iOS 应用。 
     

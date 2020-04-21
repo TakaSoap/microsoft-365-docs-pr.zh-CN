@@ -19,20 +19,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: 了解如何管理您自己的 DNS 记录或让 Office 365 管理您的 DNS 记录。
+description: 了解如何管理自己的 DNS 记录，或让 Microsoft 为你管理 DNS 记录。
 ms.custom: okr_smb
-ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: ea3a62c048706f36cd7b1590851d8b372e0a1677
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628418"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>设置域（主机特定的操作说明）
 
 若要开始在 Office 365 中使用自定义域（contoso.com），您需要验证您的域并配置域的 DNS 记录。 
   
-您可以使用域主机上的管理工具来添加和管理 DNS 记录，或者为您的域记录提供 Office 365 控制，我们将为您进行设置。
+您可以使用域主机上的管理工具来添加和管理 DNS 记录，或向 Microsoft 控制您的域记录，我们将为你进行设置。
   
 按照下面的具体步骤选择您的域主机。 如果你不确定你的主机是谁，请参阅[查找你的域注册机构](find-your-domain-registrar.md)。
   

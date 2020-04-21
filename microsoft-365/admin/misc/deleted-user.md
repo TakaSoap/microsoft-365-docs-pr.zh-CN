@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: 了解如何删除或还原用户的 Office 365 帐户。
-ms.openlocfilehash: 35245a0f9cbe78f6758c7071adea30053f7b8737
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 了解如何删除或还原用户的 Microsoft 365 帐户。
+ms.openlocfilehash: 7c6ab070db2821d914a26277b7f5c19043abe39b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252456"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627880"
 ---
 # <a name="quick-help-deleted-user"></a>快速帮助：已删除的用户
 
@@ -38,7 +38,7 @@ ms.locfileid: "42252456"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择一个用户，然后在用户列表的上方选择 "**更多选项**（**...**）"，然后选择 "**删除用户**"。
   
@@ -48,7 +48,7 @@ ms.locfileid: "42252456"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
 
 2. 选择用户，然后在用户列表上方选择 "**更多** > **删除用户**"。
   
@@ -58,7 +58,7 @@ ms.locfileid: "42252456"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
 2. 选择用户，然后在用户列表上方选择 "**更多** > **删除用户**"。
   
@@ -75,9 +75,9 @@ ms.locfileid: "42252456"
 
 已删除的[用户](../add-users/add-users.md)是要从组织中删除的工作或学校帐户。 
   
-## <a name="does-deleting-a-user-free-up-their-office-365-license"></a>删除用户是否会释放其 Office 365 许可证？
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>删除用户后，用户是否释放了其 Microsoft 365 许可证？
 
-是，删除用户会释放分配给该用户的 Office 365 许可证。然后，可以将该许可证分配给另一个用户。[阅读全文](../../commerce/licenses/remove-licenses-from-subscription.md)。
+是的，删除用户将释放分配给该用户的 Microsoft 365 许可证。 然后，您可以分配该许可证给另一个用户。 [阅读完整文章](../../commerce/licenses/remove-licenses-from-subscription.md)。
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>"已删除的用户"中列有一个已删除的用户，然后它消失了。 发生了什么？
 

@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何配置 Microsoft 365 以与组织外部的人员进行协作。
-ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894949"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630721"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
 
@@ -23,7 +23,7 @@ Microsoft 365 中的外部共享功能为组织中的人员与合作伙伴、供
 
 与组织外部的人员进行协作包含以下两个主要组件：
 
-- **启用共享**-在 Azure Active Directory、团队、Office 365 组和 SharePoint 之间共享共享控件，以允许您的组织所需的共享级别。
+- **启用共享**-在 Azure Active Directory、团队、Microsoft 365 组和 SharePoint 之间共享共享控件，以允许您的组织所需的共享级别。
 - **启用其他安全性**-尽管可以将基本共享功能配置为要求组织外部的人员进行身份验证，但 Microsoft 365 提供了许多额外的安全性和合规性功能，可帮助您在外部共享时保护数据并维护您的管理策略。
 
 ## <a name="enable-sharing"></a>启用共享
@@ -46,7 +46,7 @@ Microsoft 365 中的外部共享功能为组织中的人员与合作伙伴、供
 
 ## <a name="collaborate-with-partner-companies"></a>与合作伙伴公司协作
 
-当您在大型项目中工作时，如果有其他组织的多个来宾，或者如果来宾经常在其中进行更改，则可以使用 Azure Active Directory 中的权限管理简化来宾管理并允许合作伙伴公司在此职责中分享。 有关详细信息，请参阅[Create a B2B extranet with 托管来宾](b2b-extranet.md)。
+当您在大型项目中工作时，如果有来自其他组织的多个来宾，或者如果来宾经常在其中进行更改，则可以使用 Azure Active Directory 中的权限管理简化来宾管理，并允许合作伙伴公司在此职责中进行共享。 有关详细信息，请参阅[Create a B2B extranet with 托管来宾](b2b-extranet.md)。
 
 ## <a name="limit-sharing"></a>限制共享
 

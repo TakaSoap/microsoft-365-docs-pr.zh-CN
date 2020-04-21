@@ -1,5 +1,5 @@
 ---
-title: 选择创建 Office 365 组时要使用的域
+title: 选择创建 Microsoft 365 组时要使用的域
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: '了解如何在使用 PowerShell 配置电子邮件地址策略时选择要在创建 Office 365 组时使用的域。 '
-ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: '了解如何在使用 PowerShell 配置电子邮件地址策略时选择要在创建 Microsoft 365 组时使用的域。 '
+ms.openlocfilehash: 1bc8a160ffc368bc4c66a5ac17ffcb203dc678f5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894641"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630619"
 ---
-# <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>选择创建 Office 365 组时要使用的域
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择创建 Microsoft 365 组时要使用的域
 
- 一些组织使用单独的电子邮件域，以区分不同的业务部分。可以指定用户创建 Office 365 组时应使用的域。
+ 一些组织使用单独的电子邮件域，以区分不同的业务部分。 您可以指定在用户创建 Microsoft 365 组时应使用的域。
   
 如果您的组织需要用户在企业的默认接受域以外的其他域中创建其组，则可以通过使用 PowerShell 配置电子邮件地址策略（EAPs）来允许这样做。
   
-在运行 PowerShell cmdlet 之前，请下载并安装将允许您与 Office 365 组织交谈的模块。 请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785881)。
+在运行 PowerShell cmdlet 之前，请下载并安装可让您与您的组织对话的模块。 请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785881)。
   
 ## <a name="example-scenarios"></a>示例场景
 
@@ -51,7 +51,7 @@ ms.locfileid: "42894641"
   
 ### <a name="scenario-1"></a>方案 1
 
-下面的示例演示如何在 groups.contoso.com 域中预配组织中的所有 Office 365 组。
+下面的示例演示如何在 groups.contoso.com 域中预配组织中的所有 Microsoft 365 组。
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -59,7 +59,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>方案 2
 
-假设您要控制在其中创建了哪些子域 Office 365 组。 你想要：
+假设您想要控制在其中创建的子域 Microsoft 365 组。 你想要：
   
 - 由 students.groups.contoso.com 域中的学生（将**部门**设置为**学生**的用户）创建的组。 请使用此命令：
     
@@ -102,7 +102,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
   
 ## <a name="hybrid-requirements"></a>混合要求
 
-如果您的组织是在混合方案中配置的，请查看[使用本地 Exchange 混合配置 Office 365 组](https://go.microsoft.com/fwlink/p/?LinkId=785430)，以确保您的组织满足创建 Office 365 组的要求。 
+如果您的组织是在混合方案中配置的，请查看[使用本地 Exchange 混合配置 Microsoft 365 组](https://go.microsoft.com/fwlink/p/?LinkId=785430)，以确保您的组织满足创建 Microsoft 365 组的要求。 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>有关使用电子邮件地址策略组的其他信息：
 
@@ -122,4 +122,4 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
     
 ## <a name="related-articles"></a>相关文章
 
-[在管理中心创建 Office 365 组](create-groups.md)
+[在管理中心创建 Microsoft 365 组](create-groups.md)

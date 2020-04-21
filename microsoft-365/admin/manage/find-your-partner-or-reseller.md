@@ -1,5 +1,5 @@
 ---
-title: 查找 Office 365 合作伙伴或经销商
+title: 查找合作伙伴或经销商
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,23 +21,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: '了解如何查找新的 Office 365 合作伙伴，或获取以前使用过的合作伙伴的联系信息。 '
-ms.openlocfilehash: 86c61b6217a1be6106334cb1378a23d8cbd8c2b8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: '了解如何查找新的 Microsoft 365 合作伙伴，或获取你过去使用过的合作伙伴的联系信息。 '
+ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251113"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628180"
 ---
-# <a name="find-your-office-365-partner-or-reseller"></a>查找 Office 365 合作伙伴或经销商
+# <a name="find-your-partner-or-reseller"></a>查找合作伙伴或经销商
 
-作为管理员，您可以与合作伙伴合作，通过 Microsoft 开放式批量许可计划购买、激活和续订 Office 365 订阅。 
+作为管理员，你可以通过 Microsoft 开放式批量许可计划与合作伙伴合作，以购买、激活和续订 Microsoft 365 订阅。 
   
  **不确定开放式批量许可是否适合你？** 请参阅 [Microsoft 开放式计划概述](https://go.microsoft.com/fwlink/p/?LinkId=613298)。
   
 ## <a name="find-a-new-partner-or-reseller"></a>查找新合作伙伴或零售商
 
-如果您已准备好通过开放批量许可购买或续订 Office 365，或者您只是想要详细了解如何使用合作伙伴，请选择下面的选项。 
+如果您已准备好通过开放批量许可购买或续订 Microsoft 365，或者您只是想要详细了解如何使用合作伙伴，请选择下面的选项。 
   
 - [使用 Microsoft 定点搜索合作伙伴](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     

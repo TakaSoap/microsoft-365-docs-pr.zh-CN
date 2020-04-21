@@ -1,5 +1,5 @@
 ---
-title: 优化 Office 365 中的反网络钓鱼保护
+title: 优化防钓鱼保护
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,20 +12,20 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何确定仿冒邮件的原因以及在将来阻止更多的网络钓鱼邮件的原因。
-ms.openlocfilehash: 93fdc17379627a2d595a3861ae3f8f1f9dcefeeb
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: a27d41b01069e763ea2b3baab6576c8046b0f8e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528985"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631129"
 ---
-# <a name="tune-anti-phishing-protection-in-office-365"></a>优化 Office 365 中的反网络钓鱼保护
+# <a name="tune-anti-phishing-protection"></a>优化防钓鱼保护
 
-尽管 Office 365 附带了在默认情况下启用的各种反网络钓鱼功能，但有些网络钓鱼邮件仍可能会到达您的邮箱。 本主题介绍您可以执行哪些操作来发现仿冒邮件的访问原因，以及您可以采取什么措施来调整 Exchange Online 组织中的反网络钓鱼设置，_而不会意外地使事情更糟_。
+尽管 Microsoft 365 提供了在默认情况下启用的各种反网络钓鱼功能，但有些网络钓鱼邮件仍可能会到达您的邮箱。 本主题介绍您可以执行哪些操作来发现仿冒邮件的访问原因，以及您可以采取什么措施来调整 Exchange Online 组织中的反网络钓鱼设置，_而不会意外地使事情更糟_。
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>首先要做的第一件事：处理任何受损帐户，并确保阻止任何更多的网络钓鱼邮件
 
-如果收件人的帐户因仿冒邮件而受损，请按照在[Office 365 中响应受损电子邮件帐户](responding-to-a-compromised-email-account.md)中的步骤操作。
+如果收件人的帐户因仿冒邮件而受到威胁，请按照在[Microsoft 365 中响应已泄露电子邮件帐户中](responding-to-a-compromised-email-account.md)的步骤操作。
 
 如果你的订阅包括高级威胁防护（ATP），则可以使用[Office 365 威胁智能](office-365-ti.md)标识也收到网络钓鱼邮件的其他用户。 您还可以使用其他选项阻止网络钓鱼邮件：
 
@@ -39,7 +39,7 @@ ms.locfileid: "43528985"
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>向 Microsoft 报告网络钓鱼邮件
 
-在调整用于保护 Office 365 中所有客户的筛选器时，报告网络钓鱼邮件非常有帮助。 有关说明，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+在调整用于保护 Microsoft 365 中所有客户的筛选器时，报告网络钓鱼邮件非常有帮助。 有关说明，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="inspect-the-message-headers"></a>检查邮件头
 
@@ -49,15 +49,15 @@ ms.locfileid: "43528985"
 
 ## <a name="best-practices-to-stay-protected"></a>保持受保护状态的最佳做法
 
-- 在每月的基础上，运行[安全得分](../mtp/microsoft-secure-score.md)来评估 Office 365 组织的安全设置。
+- 在每月的基础上，运行[安全分数](../mtp/microsoft-secure-score.md)以评估组织的安全设置。
 
 - 定期查看[欺骗智能报告](learn-about-spoof-intelligence.md)并[将欺骗智能配置](set-up-anti-phishing-policies.md#spoof-settings)为**隔离**可疑邮件，而不是将其传递到用户的 "垃圾邮件" 文件夹。
 
 - 定期查看[威胁防护状态报告](view-reports-for-atp.md#threat-protection-status-report)。
 
-- 某些客户通过将其自己的域放入 "允许的发件人" 或 "在反垃圾邮件策略中允许的域" 列表中，无意允许仿冒邮件。 如果选择执行此操作，则必须小心使用。 虽然此配置将允许某些合法邮件通过，但它还会允许由 Office 365 垃圾邮件和/或网络钓鱼筛选器通常阻止的恶意邮件。
+- 某些客户通过将自己的域放在反垃圾邮件策略中的 "允许发件人" 或 "允许域" 列表中，在无意中允许网络钓鱼邮件。 如果选择执行此操作，则必须小心使用。 虽然此配置允许某些合法邮件通过，但它还会允许垃圾邮件和/或网络钓鱼筛选器通常会阻止的恶意邮件。
 
-  若要处理受 Office 365 （误报）阻止的合法邮件（涉及域中的发件人），最佳方法是在 DNS 中为 Office 365 中的_所有_电子邮件域完全和完全配置 SPF、DKIM 和 DMARC 记录：
+  处理由 Microsoft 365 （误报）阻止的合法邮件（涉及域中的发件人）的最佳方式是在 DNS 中为_所有_电子邮件域完全且完整地配置 SPF、DKIM 和 DMARC 记录：
 
   - 验证您的 SPF 记录是否标识了您的域中的发件人的_所有_电子邮件源（不要忘记第三方服务！）。
 
@@ -65,11 +65,11 @@ ms.locfileid: "43528985"
 
   有关配置说明，请参阅：
   
-  - [在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  - [使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)
+  - [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)
 
-  - [使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)
+  - [使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)
 
 - 如果可能，我们建议您将您的域的电子邮件直接传递到 Office 365。 换言之，将您的 Office 365 域的 MX 记录指向 Office 365。 Exchange Online Protection （EOP）能够在将其邮件直接传递到 Office 365 时为你的云用户提供最佳保护。 如果必须在 EOP 前面使用第三方电子邮件清洁系统，请对连接器使用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 

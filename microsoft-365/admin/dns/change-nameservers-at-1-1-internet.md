@@ -1,5 +1,5 @@
 ---
-title: 更改名称服务器以将 Office 365 设置为 1&1 IONOS
+title: 更改名称服务器以将 Microsoft 设置为 1&1 IONOS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: 了解如何设置由世纪互联运营的 Office 365 以管理 DNS 记录，当 1&1 Internet 是 DNS 托管提供商时。
-ms.openlocfilehash: bda6a19ba7bfca20bc1764187f429e13900d8460
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 53e846b5a9672f3fbf0e003ec48261afc80c0abf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212361"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630003"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>更改名称服务器以将 Office 365 设置为 1&1 IONOS
+# <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>更改名称服务器以使用 1&1 IONOS 设置 Microsoft 365
 
- **如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)** 。 
+ 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
-如果希望 Office 365 管理 Office 365 DNS 记录，请按以下说明操作。 （如果愿意，您可以[在 1&1 IONOS 管理所有的 Office 365 DNS 记录](create-dns-records-at-1-1-internet.md)。 
+如果你希望 Microsoft 365 为你管理 Microsoft 365 DNS 记录，请按照以下说明操作。 （如果你愿意，可以[在 1&1 IONOS 管理所有 Microsoft 365 DNS 记录](create-dns-records-at-1-1-internet.md)。） 
   
 
     
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 
 
-在将域用于 Office 365 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Office 365 证明你是所有者。
+在将你的域用于 Microsoft 365 之前，我们必须确保你拥有它。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 365 证明你拥有该域的 DNS 记录。
   
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -62,7 +62,7 @@ ms.locfileid: "43212361"
 ||||
 |:-----|:-----|:-----|
 |**类型** <br/> |**前缀** <br/> |**名称值** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注意**：这是一个示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注意**：这是一个示例。 从 Microsoft 365 中的表，使用您的特定**目标或指向**此处的地址值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. 选择 "**保存**"，然后重新**保存**。 
@@ -71,9 +71,9 @@ ms.locfileid: "43212361"
     
 9. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
+现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 365 并请求 Microsoft 365 查找该记录。
   
-Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
+当 Microsoft 365 找到正确的 TXT 记录时，您的域将会得到验证。
   
 1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
     
@@ -84,16 +84,16 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
 4. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在将域或 DNS 记录添加到 Office 365 后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[在 Microsoft 365 中添加域或 DNS 记录后，查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 
-要使用 Office 365 完成域的设置，请在域注册机构处将你的域的 NS 记录更改为指向 Office 365 主要名称服务器和次要名称服务器。这将设置 Office 365 以更新域的 DNS 记录。我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
+若要使用 Microsoft 365 完成域的设置，请在域注册机构更改域的 NS 记录以指向 Microsoft 365 主要和辅助名称服务器。 这会将 Microsoft 365 设置为你为你更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
   
 > [!CAUTION]
-> 将你的域的 NS 记录更改为指向 Office 365 名称服务器时，当前与你的域相关联的所有服务都会受影响。例如，在你进行此更改之后，发送到你的域（例如 rob@ *your_domain*  .com）的所有电子邮件都将开始传送到 Office 365。 
+> 当您将您的域的 NS 记录更改为指向 Microsoft 365 的名称服务器时，当前与您的域相关联的所有服务都会受到影响。 例如，在进行此更改后，发送到您的域的所有电子邮件（如 rob@ *your_domain* .com）都将启动到 Microsoft 365。 
   
-准备好更改 NS 记录以便 Office 365 可以设置域了吗？请按下列步骤操作或[观看视频（从 2:47 开始）](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US)。
+准备好更改你的 NS 记录，以便 Microsoft 365 能够设置你的域了吗？ 请按下列步骤操作或[观看视频（从 2:47 开始）](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US)。
   
 > [!IMPORTANT]
 >  下面的过程将向您介绍如何从列表中删除任何其他不需要的名称服务器，以及如何添加正确的名称服务器（如果尚未列出）。 > 完成本节中的步骤后，应列出的唯一名称服务器为以下四个： > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
@@ -149,7 +149,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     ![在 "编辑 DNS 设置" 对话框中选择 "保存"](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。然后，你的 Office 365 电子邮件和其他服务将全部设置为使用你的域。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>如果已列出名称服务器
 
@@ -180,7 +180,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     ![在 "编辑 DNS 设置" 对话框中选择 "保存"](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。然后，你的 Office 365 电子邮件和其他服务将全部设置为使用你的域。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
   
 
 

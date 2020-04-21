@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何在 SharePoint 网站中与来宾进行协作。
-ms.openlocfilehash: 3a7c14cc4cd31961b0d4c1054f88b5ed276b3b1a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604418"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630733"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
-如果需要在文档、数据和列表之间与来宾进行协作，则可以使用 SharePoint 网站。 新式 SharePoint 网站连接到可管理网站成员身份的 Office 365 组，并提供其他协作工具（如共享邮箱和日历）。
+如果需要在文档、数据和列表之间与来宾进行协作，则可以使用 SharePoint 网站。 新式 SharePoint 网站连接到 Microsoft 365 组，并且可以管理网站成员身份并提供其他协作工具（如共享邮箱和日历）。
 
 在本文中，我们将逐步完成为与来宾协作设置 SharePoint 网站所必需的 Microsoft 365 配置步骤。
 
@@ -48,17 +48,17 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 请注意 "**协作限制**" 部分中的设置。 确保不会阻止您要与之进行协作的来宾域。
 
-## <a name="office-365-groups-guest-settings"></a>Office 365 组来宾设置
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 组来宾设置
 
-新式 SharePoint 网站使用 Office 365 组来控制网站访问。 必须打开 Office 365 组来宾设置，才能使 SharePoint 网站中的来宾访问能够正常工作。
+新式 SharePoint 网站使用 Microsoft 365 组来控制网站访问。 必须打开 Microsoft 365 组来宾设置，才能使 SharePoint 网站中的来宾访问能够正常工作。
 
-![Microsoft 365 管理中心中的 Office 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
 
-设置 Office 365 组来宾设置
+设置 Microsoft 365 组来宾设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，展开 "**设置**"。
 2. 单击 "**服务" & 外接程序**。
-3. 在列表中，单击 " **Office 365 组**"。
+3. 在列表中，单击 " **Microsoft 365 组**"。
 4. 确保将**组织外部的成员访问组内容**和**允许组所有者将组织外部的人员添加到组**复选框均选中。
 5. 如果进行了更改，请单击 "**保存更改**"。
 
@@ -77,7 +77,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -87,7 +87,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 创建网站
 1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
-2. 单击“**创建**”。
+2. 单击“创建”****。
 3. 单击 "**团队网站**"。
 4. 键入网站名称并输入组所有者的名称（网站所有者）。
 5. 在 "**高级设置**" 下，选择是否希望它成为公用或专用网站。
@@ -113,7 +113,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 ## <a name="invite-users"></a>邀请用户
 
-现在已配置来宾共享设置，因此您可以开始向网站添加内部用户和来宾。 网站访问通过关联的 Office 365 组进行控制，因此我们将在此处添加用户。
+现在已配置来宾共享设置，因此您可以开始向网站添加内部用户和来宾。 网站访问通过关联的 Microsoft 365 组进行控制，因此我们将在此处添加用户。
 
 向组邀请内部用户
 1. 导航到要在其中添加用户的网站。
@@ -135,7 +135,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
 
-[创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
 
 [创建托管有来宾的 B2B 外联网](b2b-extranet.md)
 

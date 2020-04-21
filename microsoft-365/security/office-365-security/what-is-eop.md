@@ -15,28 +15,28 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: 本简介文档将帮助您了解 Exchange Online Protection （EOP）和一些重要的术语。 这适用于保护 Exchange Online 云托管邮箱的 Office 365 客户和保护本地邮箱（如 Exchange Server 2016）的 EOP 独立客户。
-ms.openlocfilehash: b1a8e9360005b31cf03c5e9921e3285ff7119926
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 本简介文档将帮助您了解 Exchange Online Protection （EOP）和一些重要的术语。 这适用于保护 Exchange Online 云托管邮箱的客户和保护本地邮箱（如 Exchange Server 2016）的 EOP 独立客户。
+ms.openlocfilehash: dc08507a80db8e15d2e08ff5b954dec1905cfada
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597989"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630913"
 ---
 # <a name="what-is-exchange-online-protection-eop"></a>什么是 Exchange Online Protection （EOP）
 
-Exchange Online Protection （EOP）是一种基于云的电子邮件筛选服务，可帮助组织抵御垃圾邮件和恶意软件。 如果您的邮箱在 Office 365 中，它们将自动受 EOP 保护，因为它是服务的一部分。 这包括在 Office 365 和内部部署中具有邮箱的组织，这些邮箱通常称为混合方案。 此外，EOP 还可用于在云中没有邮箱但要保护其内部部署邮箱的客户。
+Exchange Online Protection （EOP）是一种基于云的电子邮件筛选服务，可帮助组织抵御垃圾邮件和恶意软件。 如果您在 Microsoft 365 中有邮箱，它们将自动受 EOP 保护，因为它是服务的一部分。 这包括在 Microsoft 365 和内部部署中具有邮箱的组织，这些邮箱通常称为混合方案。 此外，EOP 还可用于在云中没有邮箱但要保护其内部部署邮箱的客户。
 
 EOP 尝试筛选出垃圾邮件，使您的收件箱不清楚用户不希望看到的内容。 通常情况下，垃圾邮件会传递到 "垃圾邮件" 文件夹。 一些用户希望进行检查以确保筛选正在执行所需的操作，因此 "垃圾邮件" 文件夹是用户自己进行签的简单方法。  
 
 > [!TIP]
-> 如果垃圾邮件自动进入垃圾邮件文件夹，这是一件好事。 该服务将根据默认或自定义管理员设置的状态，执行所需的操作。 换句话说，用户不应担心在 "垃圾邮件" 文件夹中看到大量垃圾邮件。 如果管理员更喜欢移动所有垃圾邮件，则应配置隔离。 有关更多详细信息，请参阅[在 Office 365 文章中隔离电子](quarantine-email-messages.md)邮件。
+> 如果垃圾邮件自动进入垃圾邮件文件夹，这是一件好事。 该服务将根据默认或自定义管理员设置的状态，执行所需的操作。 换句话说，用户不应担心在 "垃圾邮件" 文件夹中看到大量垃圾邮件。 如果管理员更喜欢移动所有垃圾邮件，则应配置隔离。 有关更多详细信息，请参阅[隔离电子邮件](quarantine-email-messages.md)一文。
 
 ## <a name="important-terms"></a>重要术语
 
-**入站**：即将进入 Office 365 的邮件。
+**入站**：即将进入 Microsoft 365 的邮件。
 
-**出站**：即将外出的邮件：365。
+**出站**：来自 Microsoft 365 的邮件。
 
 **Internal**：来自组织内部的某个人的邮件到组织内的某个人。 这包括在混合方案中的客户和一个邮箱可以位于本地，另一个邮箱位于云中。
 

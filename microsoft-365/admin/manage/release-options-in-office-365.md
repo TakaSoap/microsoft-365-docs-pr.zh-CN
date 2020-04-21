@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中设置标准发布或定向发布选项
+title: 设置标准或目标发布选项
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,30 +21,30 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 了解如何为 Microsoft 365 管理中心中的新产品和功能更新设置发布选项。
-ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361797"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628108"
 ---
-# <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>在 Office 365 中设置标准发布或定向发布选项
+# <a name="set-up-the-standard-or-targeted-release-options"></a>设置标准或目标发布选项
 
-选择 Office 365，一旦有新的产品更新和功能推出，你就可以立即收到，不必每隔几年进行一次代价高昂的更新。你可以管理组织接收这些更新的方式。例如，你可以注册抢先体验新发布版本，保证组织能够第一时间接收到更新。你可以指定只有某几个人接收更新。或者，你可以保留默认的发布计划，稍后接收更新。本文介绍不同的发布选项，以及如何为你的组织使用这些选项。
+在 Microsoft 365 中，你将收到新的产品更新和功能，因为它们变为可用，而不是每几年进行一次成本更新。 你可以管理组织接收这些更新的方式。 例如，你可以注册抢先体验新发布版本，保证组织能够第一时间接收到更新。 你可以指定只有某几个人接收更新。 或者，你可以保留默认的发布计划，稍后接收更新。 本文介绍不同的发布选项，以及如何为你的组织使用这些选项。
   
 > [!IMPORTANT]
-> 本文所述的 Office 365 更新适用于 Office 365、SharePoint Online 和 Exchange Online。这些更新不适用于 Skype for Business 及相关服务。这些发布选项均为有针对性、尽力而为的 Office 365 变更发布方法，但不能保证始终如此或对于所有更新皆是如此。 
+> 本文中所述的 Microsoft 365 更新适用于 Microsoft 365、SharePoint Online 和 Exchange Online。 这些更新不适用于 Skype for Business 及相关服务。 这些发布选项的目标是，将更改发布到 Microsoft 365 的最佳方法是，但不能始终保证，也不能保证所有更新。 
   
 ## <a name="how-it-works---release-validation"></a>工作原理 - 发布验证
 
-任何新版本都会先由功能团队进行测试和验证，然后由整个 Office 365 功能团队进行测试，然后再访问所有 Microsoft。 内部测试和验证后，下一步是向选择加入的客户" **定向发布**"（以前称为首次发布）。 在每个发布环节，Microsoft 都会收集反馈，通过监视关键的使用情况指标验证质量。 采取逐步进行的一系列验证，确保全球范围内发布的版本尽可能的稳定。 发布环节如下图所示。 
+任何新版本都会先由功能团队进行测试和验证，然后由整个 Microsoft 365 功能团队进行测试，然后再访问所有 Microsoft。 内部测试和验证后，下一步是向选择加入的客户" **定向发布**"（以前称为首次发布）。 在每个发布环节，Microsoft 都会收集反馈，通过监视关键的使用情况指标验证质量。 采取逐步进行的一系列验证，确保全球范围内发布的版本尽可能的稳定。 发布环节如下图所示。 
   
-![Office 365 的发布验证环](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Microsoft 365 的发布验证环](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-对于重要更新，Office 客户最初由[Microsoft 365 路线图](https://products.office.com/business/office-365-roadmap)通知。 随着更新越接近，将通过[Office 365 消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)进行传递。
+对于重要更新，Office 客户最初由[Microsoft 365 路线图](https://products.office.com/business/office-365-roadmap)通知。 随着更新越接近，将通过[Microsoft 365 消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)进行传递。
 
 > [!NOTE]
-> 你需要 Office 365 或 Azure AD 帐户通过[管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)访问你的消息中心。 Office 365 家庭版计划用户没有管理中心。
+> 你需要 Microsoft 365 或 Azure AD 帐户，才能通过[管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)访问你的消息中心。 Microsoft 365 家庭版计划用户没有管理中心。
 
 
 ## <a name="standard-release"></a>标准发布
@@ -73,7 +73,7 @@ ms.locfileid: "42361797"
   
 ## <a name="benefits-of-targeted-release"></a>定向发布的优势
 
-定向发布可让管理员、更改管理者或负责 Office 365 更新的其他任何人执行以下操作，准备好即将到来的更新：
+目标发布允许管理员、变更管理者或任何其他人负责 Microsoft 365 更新，以准备即将进行的更改，具体方法是让他们：
   
 - 在新的更新面向组织中的所有用户发布之前，测试并验证这些更新。
     
@@ -87,10 +87,10 @@ ms.locfileid: "42361797"
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>在管理中心中设置 "发布" 选项
 
-你可以按照以下步骤操作，更改你的组织接收 Office 365 更新的方式。必须成为 Office 365 中的全局管理员才能选择加入。
+您可以按照以下步骤更改您的组织接收 Microsoft 365 更新的方式。 您必须是 Microsoft 365 中的全局管理员才能自愿加入。
   
 > [!IMPORTANT]
-> 以下更改最长可能要 24 小时才能在 Office 365 中生效。如果你在启用定向发布之后选择退出，你的用户可能无法再次访问那些尚未进入发布计划的功能。 
+> 可能需要长达24小时才能使以下更改在 Microsoft 365 中生效。 如果你在启用定向发布之后选择退出，你的用户可能无法再次访问那些尚未进入发布计划的功能。 
   
 1. 在管理中心中，转到 "**设置** > "**设置**，在 "**组织配置文件**" 选项卡下，选择 "**发布首选项**"。
 
@@ -110,6 +110,6 @@ ms.locfileid: "42361797"
 
 若要安装 Office 的定向发布版本，[请按这些步骤进行操作](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead)。这可以让你率先访问 Windows 桌面版 Office 2016 的新功能。
   
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
-了解如何管理[Office 365 消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)中的[邮件](https://docs.microsoft.com/office365/admin/manage/message-center)，以获取有关即将推出的 Office 365 更新和版本的通知。
+了解如何管理[Microsoft 365 消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)中的[邮件](https://docs.microsoft.com/office365/admin/manage/message-center)，以获取有关即将推出的 Microsoft 365 更新和版本的通知。

@@ -2,8 +2,8 @@
 title: 向应用启动器添加自定义磁贴
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekua
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,20 +20,20 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '通过将自定义磁贴添加到应用启动器中，创建指向您的电子邮件、文档、应用程序、SharePoint 网站、外部网站和其他资源的快速链接。 '
-ms.openlocfilehash: fff65c7263e40bf376f53e5f150daea7a24ff55d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 705d45a2c26d3bd5e2d45d6d8f5a7c998c449f8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131527"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628192"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
-在 Office 365 中，可使用 Office 365 应用启动器快速轻松地访问电子邮件、日历、文档和应用（[了解详细信息](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)）。这些应用包括使用 Office 365 获得的所有应用以及从 [SharePoint 应用商店](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx)或 [Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher) 添加的自定义应用。
+在 Microsoft 365 中，可以使用应用启动器快速轻松地访问您的电子邮件、日历、文档和应用程序（[了解详细信息](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)）。 这些是使用 Microsoft 365 获取的应用以及从[SharePoint 应用商店](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx)或[Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)添加的自定义应用程序。
   
 可将自己的自定义磁贴添加到应用启动器，这些磁贴指向 SharePoint 网站、外部网站、旧版应用等。自定义磁贴显示在应用启动器的" **全部**"应用下，可将其固定到" **主页**"应用，并指示用户执行相同操作。这样做便于查找相关网站、应用和资源来完成工作。 在以下示例中，名为"Contoso 门户"的自定义磁贴用于访问组织的主要 SharePoint 网站。 
   
-![Office 365 应用启动器](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
+![应用启动器](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
@@ -62,7 +62,7 @@ ms.locfileid: "43131527"
 2. 找到您的应用程序的新磁贴，选择省略号，然后选择 "**固定到启动器**"。
   
     > [!NOTE]
-    > 如果看不到先前步骤中创建的自定义磁贴，请确保你已分配有 Exchange Online 邮箱，且至少有一次成功登录到邮箱中。这些步骤是 Office 365 中的自定义磁贴所必需的。 
+    > 如果看不到先前步骤中创建的自定义磁贴，请确保你已分配有 Exchange Online 邮箱，且至少有一次成功登录到邮箱中。 这些步骤是 Microsoft 365 中的自定义磁贴所必需的。 
   
 > [!IMPORTANT]
 > 你和你的用户需要执行这些步骤，才能将"我的应用"页面中的自定义磁贴提升到应用启动器。 
@@ -81,6 +81,6 @@ ms.locfileid: "43131527"
   
 ## <a name="whats-next"></a>未来会有哪些更新？
 
-除了将磁贴添加至应用启动器之外，你可以将应用启动器添加到 Office 365 导航栏（[了解详细信息](https://support.office.com/article/d536512c-b0f7-49fd-b8db-a8a967e23f23.aspx)）。 若要自定义 Office 365 的外观以匹配你所在组织的品牌，请参阅[自定义 Office 365 主题](../setup/customize-your-organization-theme.md)。
+除了将磁贴添加到应用启动器之外，还可以将应用启动器磁贴添加到导航栏中（[了解详细信息](https://support.office.com/article/d536512c-b0f7-49fd-b8db-a8a967e23f23.aspx)）。 若要自定义 Microsoft 365 的外观以与您的组织的品牌相匹配，请参阅[自定义 microsoft 365 主题](../setup/customize-your-organization-theme.md)。
   
 

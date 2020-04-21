@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: 了解如何允许成员以 Office 365 组的形式发送电子邮件，或代表 Office 365 组发送电子邮件。
-ms.openlocfilehash: b85b0318587058f1c3eb4d681086ccfcad7f1d8d
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解如何允许成员以 Microsoft 365 组的形式发送电子邮件，或代表 Microsoft 365 组发送电子邮件。
+ms.openlocfilehash: 4492c929fbd30ad77d9ddb23c37299e8734162df
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212101"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630665"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员作为组发送或代表组发送
 
-已被授予 "**代理发送**" 或 **"代表发送"** 权限的 Office 365 组的成员可以作为组或代表组发送电子邮件。 本主题介绍管理员如何设置这些权限。
+已被授予 "**代理发送**" 或 **"代表发送"** 权限的 Microsoft 365 组的成员可以作为组或代表组发送电子邮件。 本主题介绍管理员如何设置这些权限。
   
-例如，如果 Megan Bowen 是**培训**Office 365 组的一部分，并且对该组具有 "**代理发送**" 权限，则如果她将电子邮件作为组发送，则它看起来就像是发送了该电子邮件的**培训**组。 
+例如，如果 Megan Bowen 是 Microsoft 365 的**培训**组的一部分，并且对该组具有 "**代理发送**" 权限，则如果她将电子邮件作为组发送，则它看起来就像是电子邮件发送的 "**培训**组"。 
   
-"**代表发送**" 权限允许用户代表 Office 365 组发送电子邮件。 例如，如果 Alex Wilber 是 "**营销**Office 365" 组的一部分，并且具有 "**代表发送"** 权限并将电子邮件作为组发送，则电子邮件看起来好像是由**Alex Wilber 代表 "营销**" 发送的。
+"**代表发送**" 权限允许用户代表 Microsoft 365 组发送电子邮件。 例如，如果 Alex Wilber 是**市场营销**Microsoft 365 组的一部分，并且拥有 "**代表发送**" 权限并将电子邮件作为组发送，则电子邮件看起来好像是由**Alex Wilber 代表行销**发送的。
 
 > [!IMPORTANT]
 > 您可以为给定用户配置 "**代理发送**" 或 **"代表发送**"，但不能同时配置两者。 如果同时配置两者，则默认为 "**代理发送**"。
 
 > [!TIP]
-> 若要了解如何使用 Outlook 和 Web 上的 Outlook 从组发送电子邮件，请参阅[通过或代表 Office 365 组发送电子邮件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)。
+> 请参阅[通过或代表 Microsoft 365 组发送电子邮件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)，了解如何使用 Outlook 和 Web 上的 outlook 从组发送电子邮件。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允许成员以组的形式发送电子邮件
 
@@ -52,7 +52,7 @@ ms.locfileid: "43212101"
     
 4. 在 "**代理发送**" 部分中， **+** 选择用于添加要作为组发送的用户的符号。 
     
-    ![选择加号以添加要作为 Office 365 组发送的用户。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![选择加号以添加要作为 Microsoft 365 组发送的用户。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. 键入从列表中搜索或选取用户。 选择 **"确定"** ，然后单击 "**保存**"。
     
@@ -70,7 +70,7 @@ ms.locfileid: "43212101"
     
 4. 在 "代表发送" 部分中，选择**+** 用于添加要作为组发送的用户的符号。 
     
-    ![选择加号以添加要作为 Office 365 组发送的用户。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![选择加号以添加要作为 Microsoft 365 组发送的用户。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. 键入从列表中搜索或选取用户。 选择 **"确定"** ，然后单击 "**保存**"。
     
@@ -78,7 +78,7 @@ ms.locfileid: "43212101"
 
 ## <a name="related-articles"></a>相关文章
 
-[了解有关 Office 365 组的详细信息](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[了解有关 Microsoft 365 组的详细信息](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
 [外接 Add-recipientpermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

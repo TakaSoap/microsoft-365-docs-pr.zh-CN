@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中添加或编辑自定义 DNS 记录
+title: 在 Microsoft 中添加或编辑自定义 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
-description: '了解如何在 Office 365 中编辑或添加自定义 DNS 记录。 '
-ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: '了解如何在 Microsoft 中编辑或添加自定义 DNS 记录。 '
+ms.openlocfilehash: d7084913e2439b126232735fe2e6abe853c03ddf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212517"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630015"
 ---
-# <a name="add-or-edit-custom-dns-records-in-office-365"></a>在 Office 365 中添加或编辑自定义 DNS 记录
+# <a name="add-or-edit-custom-dns-records-in-microsoft"></a>在 Microsoft 中添加或编辑自定义 DNS 记录
 
  如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
 
-1. 登录到的管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>。   
+1. 在上<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>登录到 Microsoft 管理中心。   
 
-2. 转到 "**设置** \> **域**" 页面。
+2. 转到 "**设置**  > **域**" 页面。
 
 3. 在" **域**"页面上选择域。 
     
@@ -46,10 +46,10 @@ ms.locfileid: "43212517"
 
 ## <a name="related-articles"></a>相关文章
 
-[收集创建 Office 365 DNS 记录所需的信息](../get-help-with-domains/information-for-dns-records.md)
+[收集创建 Microsoft DNS 记录所需的信息](../get-help-with-domains/information-for-dns-records.md)
 
 [DNS 基础知识](../get-help-with-domains/dns-basics.md)
 
-[获取 Office 365 域的帮助](../get-help-with-domains/get-help-with-domains.md)
+[获取有关域的帮助](../get-help-with-domains/get-help-with-domains.md)
 
 

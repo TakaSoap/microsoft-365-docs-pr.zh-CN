@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为可由多个用户访问的共享邮箱。 '
-ms.openlocfilehash: 481707b9d60d37b1d80d822467d17f66750f4f13
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251186"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628887"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -48,7 +48,7 @@ ms.locfileid: "42251186"
 
 3. 选择用户邮箱。 在 "**转换为共享邮箱**" 下，选择 "**转换**"。
 
-4. 如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Office 365 中删除以前的员工](../add-users/remove-former-employee.md)。
+4. 如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
     
 5. 有关共享邮箱需要了解的其他信息，请参阅[关于共享](about-shared-mailboxes.md)邮箱和[创建共享邮箱](create-a-shared-mailbox.md)。
 
@@ -56,7 +56,7 @@ ms.locfileid: "42251186"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户的名称。
 
@@ -71,7 +71,7 @@ ms.locfileid: "42251186"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户。
 
@@ -81,7 +81,7 @@ ms.locfileid: "42251186"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户。
 
@@ -90,7 +90,7 @@ ms.locfileid: "42251186"
 ::: moniker-end
 
 
-如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Office 365 中删除以前的员工](../add-users/remove-former-employee.md)。
+如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
     
 有关共享邮箱需要了解的其他信息，请参阅[关于共享](about-shared-mailboxes.md)邮箱和[创建共享邮箱](create-a-shared-mailbox.md)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "42251186"
 
 1. [还原用户的帐户](../add-users/restore-user.md)。
 
-2. 请确保向其分配了 Office 365 许可证。
+2. 请确保向其分配了 Microsoft 365 许可证。
 
 3. 重置用户的密码。
     
@@ -149,6 +149,6 @@ ms.locfileid: "42251186"
 
 [配置共享邮箱](configure-a-shared-mailbox.md)
 
-[从共享邮箱中删除许可证](remove-license-from-shared-mailbox.md)
+[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
 
 [解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)

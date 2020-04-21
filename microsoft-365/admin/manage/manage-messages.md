@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 了解如何管理消息中心消息以帮助进行更改管理。
-ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361927"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628144"
 ---
 # <a name="manage-messages-in-message-center"></a>管理邮件中心中的邮件
 
@@ -87,13 +87,13 @@ ms.locfileid: "42361927"
   
 1. 选择要打开的邮件，然后选择 "**共享**"。
   
-2. 若要共享邮件，请输入两个由冒号分隔的电子邮件地址。 您可以发送给个人和组电子邮件地址。 （可选）您可以选择通过电子邮件接收邮件的副本（邮件将转到 Office 365 中的主电子邮件地址），或添加个人邮件以提供具有更多上下文的收件人。
+2. 若要共享邮件，请输入两个由冒号分隔的电子邮件地址。 您可以发送给个人和组电子邮件地址。 （可选）您可以选择通过电子邮件接收邮件副本（邮件将转到您的主电子邮件地址），也可以添加个人消息以提供更多上下文的收件人。
   
 3. 选择 "**共享**" 以发送电子邮件。
     
 ## <a name="get-a-link"></a>获取链接
 
-需要与另一位管理员进行跟进以确保他们了解更改并采取措施？ 您可以生成在电子邮件或即时消息中共享的链接，例如，它会将用户直接连接到该邮件。 您与之共享链接的用户必须是组织在 Office 365 中的管理员，否则他们将无法访问链接的邮件。
+需要与另一位管理员进行跟进以确保他们了解更改并采取措施？ 您可以生成在电子邮件或即时消息中共享的链接，例如，它会将用户直接连接到该邮件。 您与之共享链接的人必须是 Microsoft 365 中组织的管理员，否则将无法访问链接的邮件。
 
 ::: moniker range="o365-worldwide"
 
@@ -213,5 +213,5 @@ ms.locfileid: "42361927"
 
 ::: moniker-end
 
-有关消息中心的概述，请参阅[在 Office 365 中的消息中心](message-center.md)。 或者，若要了解如何设置语言首选项以启用邮件中心的机器翻译，请参阅[邮件中心发布的语言翻译](language-translation-for-message-center-posts.md)。 如果您想要使用替代方法来获取实时服务运行状况信息和邮件中心通信，请参阅[Office 365 服务通信 API 概述](https://go.microsoft.com/fwlink/p/?linkid=848507)。
+有关消息中心的概述，请参阅[Microsoft 365 中的消息中心](message-center.md)。 或者，若要了解如何设置语言首选项以启用邮件中心的机器翻译，请参阅[邮件中心发布的语言翻译](language-translation-for-message-center-posts.md)。 如果您想要使用替代方法来获取实时服务运行状况信息和邮件中心通信，请参阅[Microsoft 365 服务通信 API 概述](https://go.microsoft.com/fwlink/p/?linkid=848507)。
   

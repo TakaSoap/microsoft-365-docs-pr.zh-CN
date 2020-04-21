@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516861"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627748"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft 工作效率分数（预览）
 
@@ -39,7 +39,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 - **技术经验**（即将推出）：帮助你优化设备体验，例如主动修复常见的帮助台问题，并改善电脑启动时间和网络，以确保你的应用程序能够正常运行。  
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 ### <a name="areas-of-scoring"></a>记分区域 
 
@@ -64,7 +64,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 ## <a name="access-and-required-permissions"></a>访问权限和所需权限 
 
-对于员工体验，您必须订阅 Office 365 for business plan 或包含多个用户的 Microsoft 365 业务计划。 
+对于员工体验，您必须订阅适用于具有多个用户的 Microsoft 365 的商业计划。 
 
 若要拥有访问 Microsoft 工作效率得分的权限，您必须具有以下角色： 
 
@@ -136,7 +136,7 @@ Microsoft 365 提供了生产效率解决方案，使组织能够实现其业务
 
 !["任意位置工作" 页。](../../media/psflexibility.png)
 
-"正在工作的随处" 页对在两个或更多平台（桌面、移动和 web）中使用至少一个工作效率应用的用户进行了量化。 在使用更多的应用和平台时，用户将获得更高的评分。 被视为的应用程序包括 Outlook、团队、Word、Excel、PowerPoint、OneNote、Yammer、Skype。 真知灼见的基础是为 Office 365 专业增强版、Exchange、Yammer、Skype 或工作组启用的用户。
+"正在工作的随处" 页对在两个或更多平台（桌面、移动和 web）中使用至少一个工作效率应用的用户进行了量化。 在使用更多的应用和平台时，用户将获得更高的评分。 被视为的应用程序包括 Outlook、团队、Word、Excel、PowerPoint、OneNote、Yammer、Skype。 真知灼见的基础是为适用于企业、Exchange、Yammer、Skype 或团队的 Microsoft 365 应用启用的用户。
 
 1. **为什么重要**的是，从多个平台的研究链接使用到更高的工作效率的摘要。 **阅读 Forrester 中的信息检索**转到一个研究文章，该文章提供了有关如何在 conducive 中工作以提高生产率的更多相关信息。
 1. 对**电子邮件无处**不在的支持性量化在 outlook 中的用户基础上，使用 outlook 跨平台使用 outlook 的组织中的用户数。

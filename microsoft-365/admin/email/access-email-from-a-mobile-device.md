@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何通过你的移动设备访问电子邮件。
-ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362387"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629091"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>从移动设备访问电子邮件的选项
 
@@ -41,6 +41,6 @@ Outlook for Android 和 Outlook for iOS 移动应用程序是为您的工作或�
   
  **任何电子邮件应用程序**
   
-您的组织建议使用 Outlook for Android 或 iOS 移动应用来访问用于电子邮件、日历和联系人的 Office 365 工作或学校帐户。 如果您在接下来的几个小时内不执行任何操作，您的电子邮件将自动开始同步。 如果您选择使用 Outlook for Android 或 iOS 移动应用程序，则您的数据将仅与 Outlook for Android 或适用于 iOS 的 Outlook for iOS 移动应用同步。 如果您选择继续使用第三方应用程序，则您的数据将立即开始同步。
+您的组织建议使用 Outlook for Android 或 iOS 移动应用来访问电子邮件、日历和联系人的工作或学校帐户。 如果您在接下来的几个小时内不执行任何操作，您的电子邮件将自动开始同步。 如果您选择使用 Outlook for Android 或 iOS 移动应用程序，则您的数据将仅与 Outlook for Android 或适用于 iOS 的 Outlook for iOS 移动应用同步。 如果您选择继续使用第三方应用程序，则您的数据将立即开始同步。
   
 

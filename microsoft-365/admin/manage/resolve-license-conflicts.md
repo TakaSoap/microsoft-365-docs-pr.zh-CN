@@ -1,5 +1,5 @@
 ---
-title: 解决 Office 365 商业版中的许可证冲突
+title: 解决许可证冲突
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: 了解如何解决与 Office 365 for business 订阅的许可证冲突。
-ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: 了解如何解决与 Microsoft 365 for business 订阅的许可证冲突。
+ms.openlocfilehash: 51f87c055402d9e6e3bd732a99abf2c155887290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540911"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628084"
 ---
-# <a name="resolve-license-conflicts-in-office-365-for-business"></a>解决 Office 365 商业版中的许可证冲突
+# <a name="resolve-license-conflicts"></a>解决许可证冲突
 
 我们建议您在创建新用户之前购买订阅所需的许可证。 通过这种方式，可在创建用户帐户时，将许可证分配给新用户。 如果你已将所有许可证分配给了用户，但一些许可证已经过期，或者你尝试删除已分配给某用户的许可证，将出现许可证冲突。 有关详细信息，请参阅[从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
   

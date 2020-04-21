@@ -23,21 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: '将您的初始电子邮件地址更改为友好的电子邮件地址，如 tom@fourthcoffee.com。 若要执行此操作，您需要购买域名，并将其添加到 Office 365。 '
-ms.openlocfilehash: dc0ab64003b48eec50bf34e60d8a6df463b4fe89
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: '将您的初始电子邮件地址更改为友好的电子邮件地址，如 tom@fourthcoffee.com。 若要执行此操作，您需要购买域名，并将其添加到 Microsoft 365。 '
+ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212029"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629055"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
- **如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)** 。 
+ 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
 ::: moniker range="o365-worldwide"
 
-Office 365 中您的初始电子邮件地址包括 .onmicrosoft.com，例如 tom@fourthcoffee.onmicrosoft.com。 您可以将其更改为更易于记忆的地址（如 tom@fourthcoffee.com）。 您首先需要您自己的域名，例如 fourthcoffee.com。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
+Microsoft 365 中的初始电子邮件地址包括 onmicrosoft.com，如 tom@fourthcoffee.onmicrosoft.com。 您可以将其更改为更易于记忆的地址（如 tom@fourthcoffee.com）。 您首先需要您自己的域名，例如 fourthcoffee.com。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ Office 365 德国的初始电子邮件地址包括 onmicrosoft.de，如 tom@four
 
 ::: moniker-end
 
-当你在安装期间通过更新域的 MX 记录将域的电子邮件更改为传送到 Office 365 时，所有发送到该域的电子邮件都将开始传送到 Office 365。在更改 MX 记录前，请确保你已在 Office 365 中添加用户并为每个在你的域中有电子邮件的人创建邮箱。不想将你的域中每个人的电子邮件移到 Office 365？你可以采取步骤，[改为仅使用几个电子邮件地址来试点 Office 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)。
+当您将您的域的电子邮件更改为 Microsoft 365 时，在安装过程中更新您的域的 MX 记录，发送到该域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已在 Microsoft 365 中添加了用户并创建了邮箱，以便在更改 MX 记录之前在您的域中有电子邮件的所有人。 不想将你的域中每个人的电子邮件移至 Microsoft 365 吗？ 您可以采取步骤[仅使用几个电子邮件地址来试用 Microsoft 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心将您的电子邮件地址更改为使用您的自定义域
 
@@ -83,12 +83,12 @@ Office 365 德国的初始电子邮件地址包括 onmicrosoft.de，如 tom@four
     
 4. 按照相应步骤确认您拥有自己的域和更改您的电子邮件地址。
     
-系统将引导您在 Office 365 中正确设置您的域。
+系统将指导你在 Microsoft 365 中使用你的域正确设置所有内容。
 
 > [!NOTE]
-> 如果未使用 Exchange 许可证，则不能使用域从 Office 365 租户发送或接收电子邮件。
+> 如果未使用 Exchange 许可证，则不能使用域从 Microsoft 365 租户发送或接收电子邮件。
   
 ## <a name="related-articles"></a>相关文章
 
-[使用 Office 365 购买自定义域](../get-help-with-domains/buy-a-domain-name.md)
+[使用 Microsoft 365 购买自定义域](../get-help-with-domains/buy-a-domain-name.md)
  

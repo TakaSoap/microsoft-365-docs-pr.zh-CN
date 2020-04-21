@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: 了解如何在 Outlook 中为 Windows 和 Mac 设置电子邮件帐户，以及如何安装 Office 应用和在线访问电子邮件。
-ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361233"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627784"
 ---
 # <a name="set-up-outlook-to-read-email"></a>将 Outlook 设置为阅读电子邮件
 
-您的 Office 365 订阅附带了一个基于 web 的 Outlook，但如果您的订阅包括 Office 客户端应用程序，则还会收到可在您的个人计算机或设备上安装的 Outlook。
+你的 Microsoft 365 订阅附带了一个基于 web 的 Outlook，但如果你的订阅包括 Office 客户端应用程序，则还会收到可在你的个人计算机或设备上安装的 Outlook。
   
 ## <a name="set-up-an-email-account-in-outlook"></a>在 Outlook 中设置电子邮件帐户
 
@@ -62,15 +62,15 @@ ms.locfileid: "42361233"
   
 ## <a name="how-do-i-access-my-mail-online"></a>如何联机访问我的邮件？
 
-登录到 Office 365 后，选择 " **Outlook**"。
+登录到 Microsoft 365 后，选择 " **Outlook**"。
   
-![突出显示 Outlook 应用程序的 Office 365 主页](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![突出显示 Outlook 应用程序的 Microsoft 365 主页](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。 
+找不到需要的应用？ 在应用启动器中，选择 "**所有应用**" 以查看可供您使用的 Microsoft 365 应用程序的按字母顺序排列的列表。 可在此处搜索特定应用。 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>如何知道我的订阅是否包括 Office 应用程序？
 
-Office 365 商业高级版和 Office 365 商业版包括 Office 应用。 有关详细信息，请参阅[office 365 商业版计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)或[Office 365 企业版计划](https://go.microsoft.com/fwlink/p/?LinkId=800029)。
+Microsoft 365 商业标准版和 Microsoft 365 相关业务应用程序包括 Office 应用程序。 有关详细信息，请参阅[Microsoft 365 for business 计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)或[Office 365 企业版计划](https://go.microsoft.com/fwlink/p/?LinkId=800029)。
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>如何确定我拥有的订阅？
 

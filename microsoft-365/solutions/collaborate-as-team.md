@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何与团队中的来宾进行协作。
-ms.openlocfilehash: 54bf52eebc77e1cce8e1c05a708572d7d1e7fdae
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604414"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630745"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -68,17 +68,17 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 > [!NOTE]
 > "团队来宾" 设置可能需要24小时才能在打开后变为活动状态。
 
-## <a name="office-365-groups-guest-settings"></a>Office 365 组来宾设置
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 组来宾设置
 
-团队使用适用于团队成员资格的 Office 365 组。 必须打开 Office 365 组来宾设置，才能使团队中的来宾访问能够正常工作。
+团队使用适用于团队成员身份的 Microsoft 365 组。 必须打开 Microsoft 365 组来宾设置，才能使团队中的来宾访问能够正常工作。
 
-![Microsoft 365 管理中心中的 Office 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
 
-设置 Office 365 组来宾设置
+设置 Microsoft 365 组来宾设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，展开 "**设置**"。
 2. 单击 "**服务" & 外接程序**。
-3. 在列表中，单击 " **Office 365 组**"。
+3. 在列表中，单击 " **Microsoft 365 组**"。
 4. 确保将**组织外部的成员访问组内容**和**允许组所有者将组织外部的人员添加到组**复选框均选中。
 5. 如果进行了更改，请单击 "**保存更改**"。
 
@@ -97,7 +97,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -173,6 +173,6 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
 
-[创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
 
 [创建托管有来宾的 B2B 外联网](b2b-extranet.md)

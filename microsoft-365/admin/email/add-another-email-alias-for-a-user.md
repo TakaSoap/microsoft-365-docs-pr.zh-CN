@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: '了解如何将多个电子邮件地址（称为 "电子邮件别名"）与 Office 365 for business 帐户关联。 '
-ms.openlocfilehash: 10f219f380d30a5ee8e9822e7a35ee533d165c33
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: '了解如何将多个电子邮件地址（称为 "电子邮件别名"）与 Microsoft 365 商业版帐户相关联。 '
+ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251201"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629079"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>添加用户的其他电子邮件别名
   
-本文适用于拥有业务订阅的 Office 365 管理员。 不适用于家庭用户。
+本文适用于具有业务订阅的 Microsoft 365 管理员。 不适用于家庭用户。
   
-Office 365 中的主电子邮件地址通常是创建帐户时分配给用户的电子邮件地址。 当用户向其他人发送电子邮件时，其主要电子邮件地址通常在电子邮件应用的" *发件人*  "字段中显示。 用户可将多个电子邮件地址与 Office 365 商业版帐户关联。 其他地址称为别名。 
+Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户的电子邮件地址。 当用户向其他人发送电子邮件时，其主要电子邮件地址通常在电子邮件应用的" *发件人*  "字段中显示。 他们还可以有多个电子邮件地址与他们的 Microsoft 365 商业版帐户关联。 其他地址称为别名。 
   
 例如，假设 Jenna 具有电子邮件地址 jenna@contosoco.com，但她还希望在 jen@contosoco.com 中接收电子邮件，因为某些人会按该名称引用她。 您可以为她创建别名，以便这两个电子邮件地址都转到 Jenna 的收件箱。
 <br><br>  
@@ -54,7 +54,7 @@ Office 365 中的主电子邮件地址通常是创建帐户时分配给用户的
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择 "用户 >**管理电子邮件别名**。 如果没有为用户分配许可证，则不会看到此选项。 
     
@@ -84,7 +84,7 @@ Office 365 中的主电子邮件地址通常是创建帐户时分配给用户的
 
 ::: moniker range="o365-germany"
     
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。 
     
     
 2. 在" **活动用户**"页面上，选择要编辑的用户名。
@@ -94,7 +94,7 @@ Office 365 中的主电子邮件地址通常是创建帐户时分配给用户的
     > [!Important] 
     > 如果您收到错误消息 "**找不到与参数名匹配的参数" EmailAddresses**"，这意味着完成对租户的设置或自定义域（如果您最近添加了一个）会花一些时间。 设置过程最多需要 4 个小时才能完成。 稍等片刻，待设置过程完成后重试。 如果问题仍然存在，请致电支持人员，他们会为你执行完全同步。
 
-4. 在 "**别名**" 下的文本框中，键入新电子邮件别名的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。 然后选择 "**添加**"。
+4. 在 "**别名**" 下的文本框中，键入新电子邮件别名的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。 然后，选择“**添加**”。
 
     > [!IMPORTANT]
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
@@ -115,7 +115,7 @@ Office 365 中的主电子邮件地址通常是创建帐户时分配给用户的
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
     
 2. 在" **活动用户**"页面上，选择要编辑的用户名。
@@ -125,7 +125,7 @@ Office 365 中的主电子邮件地址通常是创建帐户时分配给用户的
     > [!Important] 
     > 如果您收到错误消息 "**找不到与参数名匹配的参数" EmailAddresses**"，这意味着完成对租户的设置或自定义域（如果您最近添加了一个）会花一些时间。 设置过程最多需要 4 个小时才能完成。 稍等片刻，待设置过程完成后重试。 如果问题仍然存在，请致电支持人员，他们会为你执行完全同步。
 
-4. 在 "**别名**" 下的文本框中，键入新电子邮件别名的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。 然后选择 "**添加**"。
+4. 在 "**别名**" 下的文本框中，键入新电子邮件别名的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。 然后，选择“**添加**”。
 
     > [!IMPORTANT]
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 

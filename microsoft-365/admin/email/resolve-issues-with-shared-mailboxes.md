@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如果您在使用共享邮箱时遇到问题，请尝试这些解决方案。
-ms.openlocfilehash: 138bcee155652e84ab6ee16cf6a9acab310edde9
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210512"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628743"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>解决共享邮箱问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "43210512"
 
 如果您看到错误消息，**则代理地址 "smtp： <共享邮箱名称\>" 已被代理地址或 "\<name>" 的 LegacyExchangeDN 使用。请选择其他代理地址**，这表示你尝试为共享邮箱提供一个已在使用中的名称。 例如，假设希望共享邮箱命名为 info@domain1 和 info@domain2。 可通过 2 种方法执行此操作：
 
-  - 使用 Windows PowerShell。 请参阅以下博客文章了解相关说明：[在 Office 365 的不同域中创建带相同别名的共享邮箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - 使用 Windows PowerShell。 有关说明，请参阅以下博客文章：[在不同的域中创建具有相同别名的共享邮箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
   - 将第二个共享邮箱命名为不同于开头的内容，以避免出现此错误。 然后在管理中心内，将共享邮箱重命名为您想要的。
 
@@ -46,7 +46,7 @@ ms.locfileid: "43210512"
 
 **无法发送此邮件。您没有代表指定用户发送邮件的权限。**
 
-当 Office 365 遇到复制延迟问题时，将显示此消息。 在所有数据中心中复制有关新共享邮箱（或添加的用户）的信息时，它应会在一小时后消失。 请等待一小时，然后再尝试发送一封邮件。
+当 Microsoft 365 遇到复制延迟问题时，将出现此消息。 在所有数据中心中复制有关新共享邮箱（或添加的用户）的信息时，它应会在一小时后消失。 请等待一小时，然后再尝试发送一封邮件。
 
 ## <a name="related-articles"></a>相关文章
 

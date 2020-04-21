@@ -1,5 +1,5 @@
 ---
-title: 更改名称服务器以使用 Namecheap 设置 Office 365
+title: 更改名称服务器以使用 Namecheap 设置 Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
-description: '如果您希望 Office 365 管理您的 DNS 记录，请了解如何使用 Namecheap 设置 Office 365 自定义域。 '
-ms.openlocfilehash: 1130f8aca0f2d014d73f5a1b2e2edb2785a7c6b8
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: '了解如何使用 Namecheap 设置 Microsoft 自定义域（如果你希望 Microsoft 管理 DNS 记录）。 '
+ms.openlocfilehash: 6fdec37e837c74666ada82af81d43faaa0a6d589
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212313"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629775"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-namecheap"></a>更改名称服务器以使用 Namecheap 设置 Office 365
+# <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>更改名称服务器以使用 Namecheap 设置 Microsoft
 
- **如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)** 。
+ 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。
   
-如果希望 Office 365 管理 Office 365 DNS 记录，请按以下说明操作。 （如果你愿意，可以[在 Namecheap 管理所有 Office 365 DNS 记录](create-dns-records-at-namecheap.md)。）
+如果希望 Microsoft 为你管理 DNS 记录，请按照以下说明操作。 （如果愿意，您可以[在 Namecheap 管理所有 MICROSOFT DNS 记录](create-dns-records-at-namecheap.md)。）
   
     
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
@@ -69,7 +69,7 @@ ms.locfileid: "43212313"
     
 |**类型**|**主机**|**值**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注意**：这是一个示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |30分钟  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注意**：这是一个示例。 从表中使用您的特定**目标或指向 "地址**" 值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |30分钟  <br/> |
    
    ![Namecheap-验证-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -79,9 +79,9 @@ ms.locfileid: "43212313"
   
 9. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
+现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求搜索该记录。
   
-Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
+当 Microsoft 找到正确的 TXT 记录时，您的域将会得到验证。
   
 1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
 
@@ -103,10 +103,10 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 
-要使用 Office 365 完成域的设置，请在域注册机构处将你的域的 NS 记录更改为指向 Office 365 主要名称服务器和次要名称服务器。这将设置 Office 365 以更新域的 DNS 记录。我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
+若要使用 Microsoft 完成域的设置，请在域注册机构更改您的域的 NS 记录以指向 Microsoft 主名称服务器和辅助名称服务器。 这将设置 Microsoft 为您更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
   
 > [!CAUTION]
-> 将你的域的 NS 记录更改为指向 Office 365 名称服务器时，当前与你的域相关联的所有服务都会受影响。例如，在你进行此更改之后，发送到你的域（例如 rob@ *your_domain*  .com）的所有电子邮件都将开始传送到 Office 365。 
+> 当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。 例如，在进行此更改后，发送到您的域的所有电子邮件（如 rob@ *your_domain* .com）都将启动到 Microsoft。 
   
 > [!IMPORTANT]
 >  完成本部分中的步骤后，应  *仅*  列出以下四个名称服务器： >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  以下过程将演示如何从列表中删除任何其他不需要的名称服务器，以及如何添加  *正确*  的名称服务器（如果它们尚未显示在列表中）。 
@@ -156,7 +156,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     ![Namecheap-委派-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。然后，你的 Office 365 电子邮件和其他服务将全部设置为使用你的域。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>如果已列出名称服务器
 
@@ -188,4 +188,4 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     ![Namecheap-委派-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。然后，你的 Office 365 电子邮件和其他服务将全部设置为使用你的域。
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。

@@ -1,5 +1,5 @@
 ---
-title: 将通讯组列表升级到 Outlook 中的 Office 365 组
+title: 将通讯组列表升级到 Outlook 中的 Microsoft 365 组
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,31 +18,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: 了解如何将一个或多个通讯组列表升级到 Outlook 中的 Office 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: c3acf1d47a37d79d666b1b951bea704c273ccf09
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解如何将一个或多个通讯组列表升级到 Outlook 中的 Microsoft 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
+ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212277"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627988"
 ---
-# <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>将通讯组列表升级到 Outlook 中的 Office 365 组
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>将通讯组列表升级到 Outlook 中的 Microsoft 365 组
 
-您可以使用 Outlook 将通讯组列表升级到 Office 365 组。 这是为组织的通讯组列出 Office 365 组的所有特性和功能的好方法。 [为什么应将通讯组列表升级至 Outlook 中的组](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+您可以使用 Outlook 将通讯组列表升级到 Microsoft 365 组。 这是为组织的通讯组提供 Microsoft 365 组的所有特性和功能的好方法。 [为什么应将通讯组列表升级至 Outlook 中的组](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
 您可以一次升级一个 DLs，也可以同时升级多个。
 
-## <a name="upgrade-one-or-many-distribution-lists-to-office-365-groups-in-outlook"></a>在 Outlook 中将一个或多个通讯组列表升级到 Office 365 组
+## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>在 Outlook 中将一个或多个通讯组列表升级到 Microsoft 365 组
 
-您必须是 Office 365 全局管理员或 Exchange 管理员才能升级通讯组列表。 若要升级到 Office 365 组，通讯组必须具有邮箱所有者。 
+您必须是全局管理员或 Exchange 管理员才能升级通讯组列表。 若要升级到 Microsoft 365 组，通讯组必须具有邮箱所有者。 
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
 
-2. 在 Exchange 管理中心中，转到 "**收件人** \> **组**"。<br/>你将看到一则通知，指示你有符合升级到 Office 365 组的通讯组列表（也称为**通讯组**）。<br/> ![选择 "开始入门" 按钮](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. 在 Exchange 管理中心中，转到 "**收件人** \> **组**"。<br/>你将看到一则通知，指示你具有可升级到 Microsoft 365 组的通讯组列表（也称为**通讯组**）。<br/> ![选择 "开始入门" 按钮](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. 从 "**组**" 页面中选择一个或多个通讯组列表（也称为**通讯组**）。<br/>![选择通讯组](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. 选择 "升级" 图标。<br/>!["升级到 Office 365 组" 图标](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. 选择 "升级" 图标。<br/>!["升级到 Microsoft 365 组" 图标](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. 在 "信息" 对话框中，选择 **"是"** 以确认升级。 该过程将立即开始。 此过程可能需要几分钟或几小时，具体取决于您要升级的 Dl 的大小和数量。<br/>如果无法升级通讯组列表，则会显示一个对话框。 查看[哪些通讯组列表无法升级？](#which-distribution-lists-cannot-be-upgraded)。
 
@@ -77,7 +77,7 @@ ms.locfileid: "43212277"
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 
 > [!NOTE]
-> 您还可以使用[Remove-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell cmdlet 将单个通讯组列表升级到 Office 365 组
+> 您还可以使用[Remove-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell cmdlet 将单个通讯组列表升级到 Microsoft 365 组
 
 ### <a name="upgrade-multiple-dls-in-a-batch"></a>在批处理中升级多个 Dl
 
@@ -116,7 +116,7 @@ Get-DistributionGroup| Foreach-Object{
 }
 ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-office-365-groups-in-outlook"></a>有关将通讯组列表升级到 Outlook 中的 Office 365 组的常见问题解答
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>有关将通讯组列表升级到 Outlook 中的 Microsoft 365 组的常见问题解答
 
 ### <a name="which-distribution-lists-cannot-be-upgraded"></a>哪些通讯组列表无法升级？
 
@@ -149,17 +149,17 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="who-can-run-the-upgrade-scripts"></a>谁可以运行升级脚本？
 
-具有 Office 365 全局管理员或 Exchange 管理员权限的人员。
+具有全局管理员或 Exchange 管理员权限的人员。
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>为什么联系人卡片仍显示通讯组列表？ 若要阻止已升级的通讯组列表显示在我的自动建议列表中，我该怎么办？
 
-- 对于 Outlook：如果有人尝试在迁移后键入 Office 365 组名称来在 Outlook 中发送电子邮件，则收件人将解析为通讯组列表，而不是组。 收件人的联系人卡片将是通讯组列表联系人卡片。 这是因为 Outlook 中的收件人缓存或 nick 名称缓存。 电子邮件将成功发送到组，但可能会导致发件人混淆。<br/>您可以执行本主题中的步骤，[有关 Outlook 自动完成列表的信息](https://go.microsoft.com/fwlink/?LinkID=798736)，以重置缓存，这将修复此问题。
+- 对于 Outlook：如果有人尝试在迁移后键入 Microsoft 365 组名称来在 Outlook 中发送电子邮件，则收件人将解析为通讯组列表，而不是组。 收件人的联系人卡片将是通讯组列表联系人卡片。 这是因为 Outlook 中的收件人缓存或 nick 名称缓存。 电子邮件将成功发送到组，但可能会导致发件人混淆。<br/>您可以执行本主题中的步骤，[有关 Outlook 自动完成列表的信息](https://go.microsoft.com/fwlink/?LinkID=798736)，以重置缓存，这将修复此问题。
 
 - 对于 web 上的 Outlook：在 Outlook 网页版中，通讯组列表收件人仍将保留在缓存中。 您可以按照 "[删除建议的名称" 或 "自动完成" 列表中的电子邮件地址](https://support.office.com/article/9E1419D9-E88F-445B-B07F-F558B8A37C58.aspx)中的步骤操作，以刷新缓存以查看组联系人卡片。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组成员是否可在其收件箱中获取欢迎电子邮件？
 
-不是。 默认情况下，启用欢迎邮件的设置设置为 false。 此设置会影响在迁移完成后可能加入的现有和新组成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在其收件箱中收到欢迎电子邮件。 来宾成员可以继续使用该组。
+不正确。 默认情况下，启用欢迎邮件的设置设置为 false。 此设置会影响在迁移完成后可能加入的现有和新组成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在其收件箱中收到欢迎电子邮件。 来宾成员可以继续使用该组。
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>如果一个或多个 Dl 未升级，该怎么办？
 

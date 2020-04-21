@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
-description: 更新组织的联系信息，并选择要接收的 Office 365 与产品相关的通信类型。
-ms.openlocfilehash: 435848f1a5d594dc5cf2f1658ac4f6f89dc7af44
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 更新你的组织的联系信息，并选择要接收的与 Microsoft 365 产品相关的通信。
+ms.openlocfilehash: 4a667757990ec30f4514b094fd1592831601e679
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362027"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628204"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>针对来自 Microsoft 的通信更改联系人首选项
 
-使用" **联系人首选项**"页面更新组织的联系人信息，然后选择想要接收的 Office 365 产品相关的通信类型。
+使用 "**联系人首选项**" 页面更新组织的联系人信息，并选择要接收的与 Microsoft 365 产品相关的通信。
   
-请阅读[在 Office 365 中更新管理员电话号码和电子邮件地址](update-phone-number-and-email-address.md)，了解如何更改管理员移动电话号码和电子邮件地址。
+阅读[Update Microsoft 365 中的管理员电话号码和电子邮件地址](update-phone-number-and-email-address.md)，了解如何更改管理移动电话号码和电子邮件地址的信息。
   
 如果想了解如何更改公司的资料信息（如公司名称和地址、公司的主要电话号码和技术联系人信息），请参阅[更改公司地址、技术联系人电子邮件及其他信息](change-address-contact-and-more.md)。
   
@@ -40,16 +40,14 @@ ms.locfileid: "42362027"
 3. 选择想要接收的产品相关的通信类型。
 
 4. 键入您要在其中接收这些通信的业务电话、业务移动电话或业务电子邮件。
-    可使用任何电子邮件地址接收这些通信，包括 Office 365 电子邮件地址。 如果没有添加用作联系人首选项的电子邮件地址，将会使用备选电子邮件地址（位于" **个人信息**"页面）。
+    您可以使用任何电子邮件地址（包括您的 Microsoft 电子邮件地址）来接收这些通信。 如果没有添加用作联系人首选项的电子邮件地址，将会使用备选电子邮件地址（位于" **个人信息**"页面）。
 
 5. 选择“**保存**”。
   
-对于 Office 365 企业版、Office 365 商业高级版和 Office 365 Business Essentials，首次注册为 Office 365 的管理员时，您的用户可能会被自动注册，以接收与产品相关的通信。
-  
-对于 Office 365 小型企业版，根据您所在的国家或地区，您可能已被自动注册以便接收产品相关通信。
+对于 Office 365 企业版、Microsoft 365 商业标准版和 Microsoft 365 商业版，首次注册为 Microsoft 365 的管理员时，您的用户可能会被自动注册，以接收与产品相关的通信。
   
 有关账单问题的解答，请参阅：
   
-- [更改 Office 365 商业版的帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [更改 Microsoft 365 商业版的帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [在 Office 365 商业版中添加、更新或删除信用卡或银行帐户](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [在 Microsoft 365 商业版中添加、更新或删除信用卡或银行帐户](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

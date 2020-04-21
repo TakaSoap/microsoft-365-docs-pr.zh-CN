@@ -1,5 +1,5 @@
 ---
-title: 在管理中心管理 Office 365 外接程序的部署
+title: 在管理中心中管理外接程序的部署
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: d0818a0f318ea260d8e39b6e3d76c1cd4efd7a88
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212005"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628156"
 ---
-# <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心管理 Office 365 加载项的部署
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理外接程序的部署
 
 Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的信息（请参阅[开始使用 Office 加载项](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)）。 作为管理员，您可以为组织中的用户部署 Office 外接程序。 您可以使用 Microsoft 365 管理中心中的集中部署功能来执行此操作。
   
-集中部署是大多数管理员为将外接程序部署到组织内的用户和组的建议功能和功能最丰富的方式。 若要深入了解如何确定组织是否能够支持集中部署，请参阅[确定加载项集中部署是否适用于你的 Office 365 组织](centralized-deployment-of-add-ins.md)。
+集中部署是大多数管理员为将外接程序部署到组织内的用户和组的建议功能和功能最丰富的方式。 若要详细了解如何确定组织是否可以支持集中部署，请参阅[确定加载项的集中部署是否适用于你的组织](centralized-deployment-of-add-ins.md)。
   
 集中部署有以下优点：
   
@@ -41,7 +41,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
 - 如果管理员关闭或删除加载项，或者从 Azure Active Directory 或将外接程序分配到的组中删除了用户，外接程序将不再显示给用户。
     
 > [!NOTE]
->  对于 Word，Excel 和 PowerPoint 使用[Sharepoint 应用程序目录](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)将外接程序部署到本地环境中的用户，而无需连接到 Office 365 和/或支持 SharePoint 外接程序。 >  在 Outlook 中使用 Exchange 控制面板，在没有连接到 Office 365 的本地环境中进行部署。 > 
+>  对于 Word，Excel 和 PowerPoint 使用[Sharepoint 应用程序目录](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)将外接程序部署到本地环境中的用户，而无需连接到 Microsoft 365 和/或支持 SharePoint 外接程序。 > Outlook 使用 Exchange 控制面板在本地环境中部署，而无需连接到 Microsoft 365。 > 
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 外接程序的推荐方法
 
@@ -57,10 +57,10 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>使用管理中心部署 Office 外接程序
 
-开始之前，请参阅[确定加载项集中部署是否适用于你的 Office 365 组织](centralized-deployment-of-add-ins.md)。
+在开始之前，请参阅[确定加载项的集中部署是否适用于你的组织](centralized-deployment-of-add-ins.md)。
 
   
-1. 在 Microsoft 365 管理中心，转到 "**设置** > **外接程序**" 页。
+1. 在管理中心中，转到 "**设置** \> **外接程序**" 页。
     
 2. 在页面顶部选择 "**部署加载项**"。 在 "概述" 页上，选择 "**下一步**"。
     
@@ -75,13 +75,13 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
 7. 部署外接程序后，将显示绿色计时周期。 您可以按照页面上的说明测试外接程序是否已成功部署。
 
 > [!NOTE]
-> 用户可能需要重新启动 Office 以查看应用程序功能区上显示的外接程序图标。 Outlook 外接程序最长可能需要24小时才能显示在用户的功能区上。
+> 用户可能需要重新启动 Office 以查看应用程序功能区上显示的外接程序图标。 Outlook 外接程序最长可能需要12个小时才能显示在用户的功能区上。
     
 8. 完成后，选择 "**下一步**"。 如果只部署到自己的，则可以选择 "**更改谁有权访问外接程序**"，以便将其部署到更多用户。
 
 
 
-如果您已将外接程序部署到您的组织的成员之外，请按照显示的说明进行操作，以便有效地宣布加载项的部署。 <br/>现在，可以看到此加载项与其他应用一起显示在 Office 365 中。
+如果您已将外接程序部署到您的组织的成员之外，请按照显示的说明进行操作，以便有效地宣布加载项的部署。 <br/>现在，你可以在 Microsoft 365 中看到你的外接程序和其他应用程序。
   
 最好通知向其部署了加载项的用户和组，以便他们知道加载项可用。 可以向他们发送电子邮件，说明何时以及如何使用加载项，并说明加载项可以如何帮助他们更好地完成工作。 包含或链接到相关帮助内容或 Faq，如果用户在外接程序中遇到任何问题，则可能会有帮助。
   
@@ -101,19 +101,12 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
   
 ### <a name="add-in-states"></a>加载项状态
 
-管理员可以打开或关闭他们为 Microsoft 365 管理中心内的所有用户部署的外接程序。
-
-1.    在管理中心中，转到 " **设置** > **外接程序**" 页。 
-2.    选择部署的加载项。 
-3.    单击**状态**切换以打开或**关闭****外接端**。 
-4.    保存所做的更改。  
-
-此外，还可以使用三种加载项状态之一。
- 
+外接程序可以处于 "**打开**" 或 "**关闭**" 状态。
+  
 |**状态**|**状态出现的原因**|**影响**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |管理员上载了加载项，并将其分配给用户或组。  <br/> |分配了加载项的用户和组可在相关客户端中看到它。  <br/> |
-|**已禁用**  <br/> |管理员已禁用加载项。  <br/> |分配了外接程序的用户和组无法再访问它。  <br/> 如果加载项状态更改为 "**活动**"，则用户和组将再次对其进行访问。  <br/> |
+|**已禁用**  <br/> |管理员已禁用加载项。  <br/> |分配了外接程序的用户和组无法再访问它。  <br/> 如果外接程序的状态更改为"可用"，则用户和组将再次有权访问它。  <br/> |
 |**已删除**  <br/> |管理员已删除加载项。  <br/> |分配了加载项的用户和组无法再访问它。  <br/> |
    
 如果没有人再使用加载项，请考虑删除外接程序。 如果仅在一年的特定时间段使用加载项，那么可以选择关闭加载项。
@@ -182,9 +175,9 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
     
 - 从**AppSource**中开始的收购
     
-- Office 365 中的外接程序
+- Microsoft 365 中的外接程序
     
-尝试访问应用商店的用户将看到以下消息：**抱歉，Office 365 已配置为阻止单独购买 Office 应用商店外接程序。**
+尝试访问应用商店的用户将看到以下消息：**抱歉，Microsoft 365 已配置为阻止单独获取 Office 应用商店外接程序。**
   
 以下版本提供了对 Office 应用商店关闭的支持：
   
@@ -241,7 +234,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
   
 Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（如果已启用 Active Directory 身份验证库（ADAL））。 有两种合规性选项，如下所述。
   
-- **启用 ADAL**。 本文介绍如何为 Office 2013 启用 ADAL：通过 office[客户端使用 office 365 新式验证](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)。<br/>您还需要将注册表项设置为启用 ADAL，如在[Windows 设备上为 Office 2013 启用新式验证](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，还需要为 Office 2013 安装以下四月份更新：
+- **启用 ADAL**。 本文介绍如何为 Office 2013 启用 ADAL：使用适用[于 office 客户端的 Microsoft 365 新式验证](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)。<br/>您还需要将注册表项设置为启用 ADAL，如在[Windows 设备上为 Office 2013 启用新式验证](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，还需要为 Office 2013 安装以下四月份更新：
     
   - [Office 2013 安全更新说明：4月10日，2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

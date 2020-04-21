@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: d42760f0dbf38b72fe530a5670f3515bf3ba2f94
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225949"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630793"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>用于安全团队的前12个任务以支持在家中工作
 
 如果你喜欢[Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/)并突然发现你支持主要的基于家庭的劳动力，我们希望帮助你确保你的组织尽可能安全地工作。 本文对任务进行了划分，以帮助安全团队尽快实现最重要的安全功能。 
 
 如果您是使用 Microsoft 商业版计划的小型组织或中型组织，请参阅以下资源：
-- [确保 Office 365 和 Microsoft 365 商业版计划安全的十大方法](../admin/security-and-compliance/secure-your-business-data.md) 
+- [保护 Office 365 和 Microsoft 365 的商业计划的十大方法](../admin/security-and-compliance/secure-your-business-data.md) 
 - [适用于市场活动的 Microsoft 365](https://docs.microsoft.com/microsoft-365/campaigns/?view=o365-worldwide) （包括 Microsoft 365 商业版建议的安全配置）
 
   
@@ -36,7 +36,7 @@ ms.locfileid: "43225949"
 ||**任务**| 所有 Office 365 企业版计划|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1      |[启用 Azure 多重身份验证（MFA）](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|双面     | [防御 Office 365 中的威胁](#2-protect-against-threats-in-office-365) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|双面     | [威胁防护](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |第三章      |  [配置 Office 365 高级威胁防护](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [配置 Azure 高级威胁防护（ATP）](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [启用 Microsoft 高级威胁防护](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
@@ -45,7 +45,7 @@ ms.locfileid: "43225949"
 |8       |  [将电脑注册到设备管理并要求符合合规性的电脑](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [为云连接优化你的网络](#9-optimize-your-network-for-cloud-connectivity)  |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [培训用户](#10-train-users) |    ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11x17 |[Microsoft 云应用安全入门](#11-get-started-with-microsoft-cloud-app-security) |   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11x17 |[Microsoft Cloud App Security 入门](#11-get-started-with-microsoft-cloud-app-security) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[监视威胁并采取措施](#12-monitor-for-threats-and-take-action) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -63,18 +63,18 @@ ms.locfileid: "43225949"
 应用这些策略只需要几分钟时间，但在接下来的几天内准备为你的用户提供支持。  
 
 
-|计划  |建议  |
+|规划  |建议  |
 |---------|---------|
-|Office 365 计划（不包含 Azure AD P1 或 P2）     |[在 AZURE AD 中启用安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值包括用户和管理员的 MFA。   |
+|Microsoft 365 计划（不包含 Azure AD P1 或 P2）     |[在 AZURE AD 中启用安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值包括用户和管理员的 MFA。   |
 |Microsoft 365 E3 （使用 Azure AD P1）     | 使用[常见的条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br>- [要求对管理员进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止旧版身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 （使用 Azure AD P2）     | 利用 Azure AD Identity Protection，开始通过创建以下两个策略来实现 Microsoft[建议的条件访问和相关策略集](../enterprise/identity-access-policies.md)：<br> - [当登录风险为 "中" 或 "高" 时，需要进行 MFA](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [阻止不支持新式身份验证的客户端](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高风险用户必须更改密码](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
   
-## <a name="2-protect-against-threats-in-office-365"></a>2：针对 Office 365 中的威胁进行保护
+## <a name="2-protect-against-threats"></a>2：防御威胁
 
-所有 Office 365 计划都包括各种威胁防护功能。 Bumping 对这些功能的保护只需几分钟。
+所有 Microsoft 365 计划都包括各种威胁防护功能。 Bumping 对这些功能的保护只需几分钟。
 - 反恶意软件保护
 - 防止恶意 Url 和文件
 - 防钓鱼保护
@@ -157,7 +157,7 @@ Microsoft Intune 移动应用管理（MAM）允许你管理和保护你的组织
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8：将电脑注册到设备管理中并要求遵守合规性的电脑
 
-有几种方法可用于注册员工的设备。 每种方法都取决于设备的所有权（个人或公司）、设备类型（iOS、Windows、Android）和管理要求（重置、关联、锁定）。 这可能需要一些时间才能进行排序。请参阅：[在 Microsoft Intune 中注册设备](https://docs.microsoft.com/mem/intune/enrollment/)。 
+有几种方法可用于注册员工的设备。 每个方法取决于设备的所有权（个人或公司）、设备类型（iOS、Windows、Android）和管理要求（重置、相关性、锁定）。 这可能需要一些时间才能进行排序。请参阅：[在 Microsoft Intune 中注册设备](https://docs.microsoft.com/mem/intune/enrollment/)。 
 
 要做的最快的方法是[设置 Windows 10 设备的自动注册](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment)。 
 
@@ -181,11 +181,11 @@ Microsoft Intune 移动应用管理（MAM）允许你管理和保护你的组织
 
 
 有关详细信息，请参阅文档中的以下资源：
-- [概述：使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [概述：使用 VPN 拆分隧道为远程用户优化连接](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 - [实现 Office 365 的 VPN 拆分隧道](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 有关本主题的最新博客文章：
-- [如何快速优化针对远程员工的 Office 365 流量 & 减少基础结构的负载](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
+- [如何快速优化远程员工的通信 & 减少基础结构的负载](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [安全专业人员和 IT 在当今独特的远程工作场景中实现新式安全控制的替代方法](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 

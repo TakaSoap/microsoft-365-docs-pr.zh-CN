@@ -18,35 +18,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: 了解集成的应用程序，以及如何将其打开以允许第三方应用访问用户的 Office 365 信息。
-ms.openlocfilehash: 3c7c92e16b375fc374563e87ea2f6166c7384a29
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 了解集成的应用程序，以及如何将其打开以允许第三方应用访问用户的 Microsoft 365 信息。
+ms.openlocfilehash: 7e758facda49bb63e09c9ec667522c2b20fa75bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361383"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627844"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>打开或关闭集成应用
 
-当集成应用处于打开状态时，您的组织中的用户可以允许第三方应用访问其 Office 365 信息。 例如，当某用户使用第三方应用时，该应用可能会请求权限来访问其日历和编辑 OneDrive 文件夹中的文件。
+启用集成应用程序后，你的组织中的用户可以允许第三方应用访问其 Microsoft 365 信息。 例如，当某用户使用第三方应用时，该应用可能会请求权限来访问其日历和编辑 OneDrive 文件夹中的文件。
 
 ## <a name="turning-integrated-apps-on-or-off"></a>打开或关闭集成应用
 <a name="__toc379982114"> </a>
 
 下面介绍了如何打开或关闭集成应用。
 
-1. 在管理中心中，转到 "**设置** \> [ &amp;服务外接程序](https://go.microsoft.com/fwlink/p/?linkid=2053743)" 页，然后选择 "**集成应用**"。
+1. 在 Microsoft 365 管理中心，转到 "**设置** \> [ &amp;服务外接程序](https://go.microsoft.com/fwlink/p/?linkid=2053743)" 页，然后选择 "**集成应用**"。
 
 2. 在 "**集成应用**" 页面上，选择要启用或禁用集成应用的选项。
 
 ## <a name="more-info-on-integrated-apps"></a>有关集成应用的更多信息
 <a name="__toc379982114"> </a>
 
-集成应用可以从您自己的组织中创建，也可以来自另一个 Office 365 组织或第三方。
+集成的应用程序可以从您自己的组织中创建，也可以来自其他组织或第三方。
 
-如果集成应用处于打开状态并且已在使用某个应用，则该应用会请求权限来设置在访问用户的信息时所需的访问权限级别。 用户可以仅向其拥有的、访问其 Office 365 信息的应用授予访问权限。 他们无法向应用授予对任何其他用户的信息的访问权限。
+如果集成应用处于打开状态并且已在使用某个应用，则该应用会请求权限来设置在访问用户的信息时所需的访问权限级别。 用户可以仅向他们拥有的可访问其 Microsoft 365 信息的应用授予访问权限。 他们无法向应用授予对任何其他用户的信息的访问权限。
 
-在 Office 365 中使用集成应用时有两种类型的权限可以使用：用户权限和管理员权限。 例如，当您的组织已启用集成应用并且某个用户使用第三方应用时，该应用可能会请求用户的权限来读取其用户配置文件详细信息、编辑或删除其文件、读取网站集中包含的项目以及以该用户身份发送电子邮件。
+在 Microsoft 365 中使用集成应用程序时，有两种权限可供使用：用户权限和管理员权限。 例如，当您的组织已启用集成应用并且某个用户使用第三方应用时，该应用可能会请求用户的权限来读取其用户配置文件详细信息、编辑或删除其文件、读取网站集中包含的项目以及以该用户身份发送电子邮件。
 
 ![集成应用用户权限](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 

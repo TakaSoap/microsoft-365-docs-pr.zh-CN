@@ -1,5 +1,5 @@
 ---
-title: 向 Office 365 通讯组添加用户或联系人
+title: 向通讯组添加用户或联系人
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: 了解如何将 Office 365 用户或联系人添加到通讯组。 例如，您可以将员工、合作伙伴或供应商添加到您的电子邮件通讯组。
-ms.openlocfilehash: 2a6ee1336f738b57740469d6d74b461a69d7fc8c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 了解如何将 Microsoft 365 用户或联系人添加到通讯组。 例如，您可以将员工、合作伙伴或供应商添加到您的电子邮件通讯组。
+ms.openlocfilehash: 0b1feacbd3e35adcdf96ae8c42aa330921a4b390
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362367"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629067"
 ---
-# <a name="add-a-user-or-contact-to-an-office-365-distribution-group"></a>向 Office 365 通讯组添加用户或联系人
+# <a name="add-a-user-or-contact-to-a-distribution-group"></a>向通讯组添加用户或联系人
 
-作为 Office 365 组织的管理员，您可能需要将您的一个或多个用户添加到通讯组（请参阅[在 Office 365 中创建通讯组](../setup/create-distribution-lists.md)。）例如，您可以将员工或外部合作伙伴或供应商添加到电子邮件通讯组。
+作为组织的管理员，您可能需要将您的一个或多个用户添加到通讯组（请参阅[在 Microsoft 365 中创建通讯组](../setup/create-distribution-lists.md)。）例如，您可以将员工或外部合作伙伴或供应商添加到电子邮件通讯组。
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>向通讯组添加用户或联系人
 
@@ -92,6 +92,6 @@ ms.locfileid: "42362367"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-了解如何[在 Office 365 中将电子邮件作为通讯组发送](../manage/send-email-as-distribution-list.md)。
+了解如何[在 Microsoft 365 中将电子邮件作为通讯组发送](../manage/send-email-as-distribution-list.md)。
   
 

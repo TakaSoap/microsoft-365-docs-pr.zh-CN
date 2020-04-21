@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: 了解如何将订阅顾问合作伙伴添加为在购买 Office 365 时作为记录的合作伙伴，更改合作伙伴或从订阅中删除合作伙伴。
-ms.openlocfilehash: 2afe5adebe1c0a47cae896d19219b97b70e453a4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 了解如何在 Microsoft 365 购买时添加订阅顾问合作伙伴作为记录的合作伙伴，更改合作伙伴或从订阅中删除合作伙伴。
+ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361577"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627964"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -37,13 +37,13 @@ ms.locfileid: "42361577"
 
 ::: moniker range="o365-worldwide"
 
-作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 你可以在购买 Office 365 时或其他时间将订阅顾问合作伙伴添加为在录合作伙伴。 如果您当前未与合作伙伴合作，也可以在[Microsoft 定点](https://pinpoint.microsoft.com)网站上找到一个。 
+作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 在购买 Microsoft 365 或其他时间时，您可以将订阅顾问合作伙伴作为记录的合作伙伴进行添加。 如果您当前未与合作伙伴合作，也可以在[Microsoft 定点](https://pinpoint.microsoft.com)网站上找到一个。 
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-您选择的合作伙伴取决于您使用的 Office 365 服务以及将在哪个国家/地区使用这些服务。如果您要添加合作伙伴或更改您的订阅的合作伙伴，首先需要通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
+你选择的合作伙伴取决于你使用的 Microsoft 服务以及你将使用这些服务的国家或地区。 如果您要添加合作伙伴或更改您的订阅的合作伙伴，首先需要通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ ms.locfileid: "42361577"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
     
 2. 如果您有多个订阅，请选择要编辑的订阅。
   
@@ -173,7 +173,7 @@ ms.locfileid: "42361577"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
   
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -185,7 +185,7 @@ ms.locfileid: "42361577"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
   
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -221,7 +221,7 @@ ms.locfileid: "42361577"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -233,7 +233,7 @@ ms.locfileid: "42361577"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -272,4 +272,4 @@ ms.locfileid: "42361577"
 
 ## <a name="related-articles"></a>相关文章
 
-[查找你的 Office 365 合作伙伴或经销商](../manage/find-your-partner-or-reseller.md)
+[查找你的 Microsoft 365 合作伙伴或经销商](../manage/find-your-partner-or-reseller.md)

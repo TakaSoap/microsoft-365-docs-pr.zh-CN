@@ -1,5 +1,5 @@
 ---
-title: 在 Freenom 上为 Office 365 创建 DNS 记录
+title: 在 Freenom 处为 Microsoft 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,24 +19,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
-description: 了解如何在 Freenom for Office 365 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: d8c33df611a0ef1be95d32026f5d6b99808258f6
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解如何验证您的域，并在 Freenom for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
+ms.openlocfilehash: 828a1728606338017383857e4b59d6a62d087fc7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211747"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629559"
 ---
-# <a name="create-dns-records-at-freenom-for-office-365"></a>在 Freenom 上为 Office 365 创建 DNS 记录
+# <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 处为 Microsoft 创建 DNS 记录
 
 如果找不到您要查找的内容，[请检查域 FAQ](../setup/domains-faq.md) 。 
   
 > [!CAUTION]
-> Freenom 网站不支持 SRV 记录，这意味着多个 Skype for Business Online 和 Outlook Web App 功能将不起作用。 无论使用哪种 Office 365 计划，都有显著的服务限制，您可能想要切换到其他 DNS 承载提供程序。 
+> Freenom 网站不支持 SRV 记录，这意味着多个 Skype for Business Online 和 Outlook Web App 功能将不起作用。 无论使用哪种 Microsoft 计划，都有显著的服务限制，您可能想要切换到其他 DNS 承载提供程序。 
   
-如果考虑到服务限制，您可以选择在 Freenom 管理您自己的 Office 365 DNS 记录，请按照本文中的步骤验证您的域并为电子邮件和其他服务设置 DNS 记录。
+如果考虑到服务限制，您可以选择在 Freenom 管理自己的 Microsoft DNS 记录，请按照本文中的步骤验证您的域并为电子邮件和其他服务设置 DNS 记录。
   
-若要了解如何与 Office 365 结合使用网站的 Web 宿主和 DNS，请参阅[配合使用公共网站与 Office 365](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
+若要了解 Microsoft 相关网站的托管和 DNS，请参阅[将公共网站与 microsoft 结合使用](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
   
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -44,7 +44,7 @@ ms.locfileid: "43211747"
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 <a name="bkmk_txt"> </a>
 
-在将域用于 Office 365 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Office 365 证明你是所有者。
+在将你的域用于 Microsoft 之前，我们必须确保你拥有此域。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 证明你拥有该域的 DNS 记录。
   
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -73,7 +73,7 @@ ms.locfileid: "43211747"
     
     |**名称**|**Type**|**TTL**|**目标**|
     |:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |MS = msXXXXXXXX  <br/> **注意：** 此为示例。 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |MS = msXXXXXXXX  <br/> **注意：** 此为示例。 从表中使用您的特定**目标或指向 "地址**" 值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![用于验证的 Freenom TXT 值](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
@@ -83,11 +83,11 @@ ms.locfileid: "43211747"
   
 8. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
+现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求该记录。
   
-Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
+当 Microsoft 找到正确的 TXT 记录时，您的域将会得到验证。
   
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在 Microsoft 管理中心，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
 
     
 2. 在“**域**”页面上，选择要验证的域。 
@@ -105,7 +105,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>添加一条 MX 记录，确保发往你的域的电子邮件发送到 Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加 MX 记录，以便你的域的电子邮件将发送给 Microsoft
 <a name="bkmk_mx"> </a>
 
 1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
@@ -138,9 +138,9 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
 8. 在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    |**名称**|**Type**|**TTL**|**目标**|**Priority**|
+    |**名称**|**Type**|**TTL**|**目标**|**优先级**|
     |:-----|:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |MX （邮件交换器）  <br/> |3600（秒）  <br/> |\<域密钥\>. mail.protection.outlook.com  <br/> **注意：** 从 Office 365 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
+    |（保留为空白）  <br/> |MX （邮件交换器）  <br/> |3600（秒）  <br/> |\<域密钥\>. mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
    
    ![Freenom MX 记录](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -150,7 +150,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
   
 10. 如果有任何其他 MX 记录，请将它们全部删除。 对于每个记录，选择 "**删除**"。 当**您确实要删除此条目时？** 出现时，选择 **"确定"**。
     
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>添加 Office 365 所需的 CNAME 记录
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="bkmk_cname"> </a>
 
 1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
@@ -197,7 +197,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 If you already have an SPF record for your domain, don't create a new one for Office 365. 可以将所需的 Office 365 添加到当前记录，这样就拥有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你已有域的 SPF 记录，请不要为 Microsoft 创建一个新的。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
 
 1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
@@ -223,7 +223,7 @@ Office 365 找到正确的 TXT 记录时，表明你的域已通过验证。
     
     |**名称**|**记录类型**|**TTL**|**目标**|
     |:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
+    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
    
     ![SPF 的 Freenom TXT 值](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   

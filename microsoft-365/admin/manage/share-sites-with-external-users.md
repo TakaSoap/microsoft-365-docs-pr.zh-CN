@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '了解如何与组织外部的人员共享网站和文件。 '
-ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610569"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628024"
 ---
 # <a name="share-sites-and-files-externally"></a>在外部共享网站和文件
 
@@ -54,7 +54,7 @@ ms.locfileid: "42610569"
 |共享文档，但不要求进行身份验证。  <br/> |与您的组织外部的用户共享非敏感或非机密文档的链接，以便他们可以查看该文档或在其中更新反馈意见。 这些人员不需要访问网站上的内容。  <br/> |
    
 > [!IMPORTANT]
-> 如果禁用外部共享，则当前具有访问权限的组织外部的人员将不再具有访问权限。 如果稍后再次打开外部共享，将为这些人员还原访问权限。 若要阻止用户访问共享内容，请[将其从 Office 365 组中删除](/office365/admin/create-groups/add-or-remove-members-from-groups)，从网站中删除其权限，或[停止与文件或文件夹共享文件或文件夹](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
+> 如果禁用外部共享，则当前具有访问权限的组织外部的人员将不再具有访问权限。 如果稍后再次打开外部共享，将为这些人员还原访问权限。 若要阻止用户访问共享内容，请将[其从 Microsoft 365 组](/office365/admin/create-groups/add-or-remove-members-from-groups)中删除，从网站中删除其权限，或[停止与这些文件或文件夹共享文件或文件夹](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>在组织级别启用外部共享
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，将使用共享邮箱。 了解在创建共享邮箱之前需要了解的内容。
-ms.openlocfilehash: 8e9e4b1ae0235886a9dbb5b39ad4c0f78c27b53f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210536"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629103"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
@@ -39,7 +39,7 @@ ms.locfileid: "43210536"
 
 - **用户权限：** 您需要向用户授予权限（成员身份）才能使用共享邮箱。 只有组织内部人员才能使用共享邮箱。
 
-- **外部用户：** 你无法向你的企业外部的人员（如具有 Gmail 帐户的人员）授予对共享邮箱的访问权限。 如果你希望这么做，请考虑改为创建 Outlook 组。 若要了解详细信息，请参阅[在管理中心创建 Office 365 组](../create-groups/create-groups.md)
+- **外部用户：** 你无法向你的企业外部的人员（如具有 Gmail 帐户的人员）授予对共享邮箱的访问权限。 如果你希望这么做，请考虑改为创建 Outlook 组。 若要了解详细信息，请参阅[admin center 中的创建 Microsoft 365 组](../create-groups/create-groups.md)。
 
 -  **与 Outlook 一起使用：** 除了使用浏览器上的 Outlook 访问共享邮箱之外，您还可以使用 Outlook for iOS 应用或 Outlook for Android 应用。 若要了解详细信息，请参阅<a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">将共享邮箱添加到 Outlook mobile</a>。 另一种方法是为共享邮箱创建组。 若要了解详细信息，请参阅[比较组](../create-groups/compare-groups.md)。  
 
@@ -49,13 +49,13 @@ ms.locfileid: "43210536"
 
 - **管理员角色：** 具有全局管理员或 Exchange 管理员角色的用户可以创建共享邮箱。
 
-- **订阅要求：** 若要创建共享邮箱，您需要订阅 Office 365 for business plan，其中包括电子邮件（Exchange Online 服务）。 Office 365 业务订阅不包括电子邮件;Office 365 商业高级版。
+- **订阅要求：** 若要创建共享邮箱，您需要订阅 Microsoft 365 for business plan，其中包括电子邮件（Exchange Online 服务）。 适用于商业版的 Microsoft 365 应用订阅不包括电子邮件;Microsoft 365 商业标准。
 
 - **登录：** 共享邮箱不用于由其关联的用户帐户进行直接登录。 应始终阻止登录共享邮箱帐户并使其阻止。
 
-- **用户太多：** 当同时访问共享邮箱的指定用户过多时，他们可能会间歇无法连接到此邮箱。 在这种情况下，您可以考虑减少用户数或使用不同的工作负荷，如 Office 365 组或公用文件夹。
+- **用户太多：** 当同时访问共享邮箱的指定用户过多时，他们可能会间歇无法连接到此邮箱。 在这种情况下，您可以考虑减少用户数或使用不同的工作负荷，如 Microsoft 365 组或公用文件夹。
 
-- **邮件删除：** 遗憾的是，您无法阻止他人删除共享邮箱中的邮件。 解决此问题的唯一方法是创建 Office 365 组，而不是共享邮箱。 Outlook 中的组就像共享邮箱。 有关两者的比较，请参阅[比较组](../create-groups/compare-groups.md)。 若要深入了解组，请参阅[了解有关组的更多信息](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **邮件删除：** 遗憾的是，您无法阻止他人删除共享邮箱中的邮件。 解决此情况的唯一方法是创建 Microsoft 365 组，而不是共享邮箱。 Outlook 中的组类似于共享邮箱。 有关两者的比较，请参阅[比较组](../create-groups/compare-groups.md)。 若要了解有关组的详细信息，请参阅[了解有关组的详细信息](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 ## <a name="related-articles"></a>相关文章
 

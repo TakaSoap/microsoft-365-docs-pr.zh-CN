@@ -19,25 +19,25 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: 在删除用户的 Office 365 帐户时，请遵循此检查表。
-ms.openlocfilehash: 039cf832d1af8f93ed46a13f4a549aad3f11ef63
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 在删除用户的 Microsoft 365 帐户时，请遵循此检查表。
+ms.openlocfilehash: 822662e2e7900640663be8b637f6dc04984b79ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361423"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627868"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>快速帮助：删除的用户清单
 
 因此，您已决定从组织中删除用户。 例如，您可以在某人离开您的组织后删除用户。 在删除该用户之前和之后，应执行一些操作。 此快速清单可帮助您执行步骤。
   
-## <a name="remove-the-office-365-license-from-the-user"></a>从用户中删除 Office 365 许可证
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>从用户处删除 Microsoft 365 许可证
 
 您可以通过在主页或 "**活动用户**" 页面中搜索用户，然后选择它们来删除用户的许可证。 在 "**许可证和应用**" 选项卡上，清除要从用户中删除的许可证对应的复选框。 [阅读完整文章](../manage/remove-licenses-from-users.md)。
   
 ## <a name="block-sign-in"></a>阻止登录
 
-您可以阻止用户，使其无法登录 Office 365 组织。 您可以在主页或 "**活动用户**" 页面中搜索用户，然后选择它们。 在窗格顶部的用户名称下，选择 "**阻止此用户**" 图标，然后选中 "**阻止此用户登录**" 复选框。 [阅读完整文章](../add-users/assign-admin-roles.md)。
+您可以阻止用户，使其无法登录您的组织。 您可以在主页或 "**活动用户**" 页面中搜索用户，然后选择它们。 在窗格顶部的用户名称下，选择 "**阻止此用户**" 图标，然后选中 "**阻止此用户登录**" 复选框。 [阅读完整文章](../add-users/assign-admin-roles.md)。
   
 ## <a name="get-their-data"></a>获取其数据
 
@@ -49,7 +49,7 @@ ms.locfileid: "42361423"
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>如何处理未分配许可证
 
-如果你有一个新员工或加入组织的人员，则可以为其分配此许可证，以便他们可以使用 Office 365。 您可以在主页或 "**活动用户**" 页面中搜索用户，然后选择它们。 在 "**许可证和应用**" 选项卡上，选中要添加到新用户的许可证对应的复选框。 [阅读完整文章](../manage/assign-licenses-to-users.md)。
+如果你有一个新员工或加入你的组织的人员，则可以向其分配此许可证，以便他们可以使用 Microsoft 365。 您可以在主页或 "**活动用户**" 页面中搜索用户，然后选择它们。 在 "**许可证和应用**" 选项卡上，选中要添加到新用户的许可证对应的复选框。 [阅读完整文章](../manage/assign-licenses-to-users.md)。
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>删除许可证，因此无需付费
 

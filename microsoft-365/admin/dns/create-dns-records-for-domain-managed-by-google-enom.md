@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: 了解如何通过 Google 域页面访问 eNom 和创建 DNS。
-ms.openlocfilehash: 8fc13ea2ccc7dfee510ef7abb72f88030d048943
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210654"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629127"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>当你的域由 Google （eNom）管理时创建 DNS 记录
 
- **如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)** 。 
+ 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
-要将邮件帐户迁移到 Office 365，需要在域注册机构处创建 DNS 记录。
+若要将邮件帐户迁移到 Microsoft，您需要在域注册机构中创建 DNS 记录。
   
 如果你在注册**Google Apps For Work**帐户时通过 Google 购买了你的域，则 DNS 记录由 Google 管理，但在 eNom 中注册。 
   
@@ -89,7 +89,7 @@ ms.locfileid: "43210654"
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > This is an example. 在这里使用来自 Office 365 中的表的具体**目标地址或指向的地址**值。 
+    > This is an example. 从表中使用您的特定**目标或指向 "地址**" 值。 
   
     [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)
   

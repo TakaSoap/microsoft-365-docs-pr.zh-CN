@@ -1,5 +1,5 @@
 ---
-title: 在 easyDNS 上为 Office 365 创建 DNS 记录
+title: 在 easyDNS 处为 Microsoft 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
-description: 了解如何在 easyDNS for Office 365 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解如何验证您的域，并在 easyDNS for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
+ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210548"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631353"
 ---
-# <a name="create-dns-records-at-easydns-for-office-365"></a>在 easyDNS 上为 Office 365 创建 DNS 记录
+# <a name="create-dns-records-at-easydns-for-microsoft"></a>在 easyDNS 处为 Microsoft 创建 DNS 记录
 
 如果找不到您要查找的内容，[请检查域 FAQ](../setup/domains-faq.md) 。 
   
-您需要在注册机构的网站上添加以下所有 DNS 记录以将邮件路由到 Office 365，并将您的域用于团队和 Skype for Business 等。
+您需要在注册机构的网站上添加以下所有 DNS 记录，将邮件路由到 Microsoft，并将您的域用于团队和 Skype for Business 等。
   
-注意：所有 easyDNS service 程序包中当前都不提供 SRV 记录。 您可能需要使用 easyDNS 升级到较高的服务级别，以添加 Office 365 Skype for Business 所需的 SRV 记录。
+注意：所有 easyDNS service 程序包中当前都不提供 SRV 记录。 您可能需要使用 easyDNS 升级到更高的服务级别，以添加 Skype for business 所需的 SRV 记录。
   
 ## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>验证您是否拥有包含 TXT 记录的域
 
@@ -52,9 +52,9 @@ ms.locfileid: "43210548"
     
 6. 请进行检查以确保记录正确，然后选择 "**确认**"。 
     
-7. 在继续之前，请等待几分钟，以便您刚刚创建的记录可以通过 Internet 传播并在 Office 365 中检测到。
+7. 在继续之前，请等待几分钟，以便您刚刚创建的记录可以通过 Internet 传播并由 Microsoft 检测到。
     
-8. 现在你已在域注册机构网站添加了记录，然后将返回到 Office 365 并请求 Office 365 查找记录。
+8. 现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求该记录。
     
 9. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
     
@@ -64,7 +64,7 @@ ms.locfileid: "43210548"
     
 12. 在“**验证域**”页面上，选择“**验证**”。 
     
-## <a name="add-an-mx-record-to-route-email-to-office-365"></a>添加 MX 记录以将电子邮件路由到 Office 365
+## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>添加 MX 记录以将电子邮件路由到 Microsoft
 
 1. 转到[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)并使用你的凭据登录。 
     
@@ -125,7 +125,7 @@ ms.locfileid: "43210548"
     
 6. 请进行检查以确保记录正确，然后选择 "**确认**"。 
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>添加 Office 365 所需的两条 SRV 记录
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 
 注意： easyDNS ' Domain Plus service 级别下当前不提供 SRV 记录。 您可能需要使用 easyDNS 升级到更高的服务级别，以添加 SRV 记录 
   

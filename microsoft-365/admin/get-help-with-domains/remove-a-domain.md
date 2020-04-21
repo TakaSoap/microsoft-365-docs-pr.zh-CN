@@ -1,5 +1,5 @@
 ---
-title: 从 Office 365 中删除域
+title: 删除域
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: 了解如何从 Office 365 中删除旧域，并将用户和组移动到另一个域。
-ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解如何从 Microsoft 365 中删除旧域，并将用户和组移动到另一个域。
+ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210364"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628430"
 ---
-# <a name="remove-a-domain-from-office-365"></a>从 Office 365 中删除域
+# <a name="remove-a-domain"></a>删除域
 
 撰稿人：[![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)** 。 
   
-是否由于想将域添加到其他 Office 365 订阅计划而要删除该域？或者只是想取消订阅？可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
+您是否正在删除您的域，因为您想要将其添加到其他 Microsoft 365 订阅计划？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
   
 ### <a name="step-1-move-users-to-another-domain"></a>步骤1：将用户移动到另一个域
 
@@ -210,7 +210,7 @@ ms.locfileid: "43210364"
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>删除域需要多长时间？
 
-如果在很多地方（如安全组、通讯组列表、用户和 Office 365 组）中未引用域，则 Office 365 只需5分钟即可删除域。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
+如果在许多地方（如安全组、通讯组列表、用户和 Microsoft 365 组）中未引用域，则 Microsoft 365 可能只需5分钟即可删除域。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
   
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
   
@@ -231,6 +231,6 @@ ms.locfileid: "43210364"
 
 [获取 Office 365 域的帮助](get-help-with-domains.md)
 
-[切换到其他 Office 365 商业版计划](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[切换到其他 Microsoft 365 for business 计划](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)

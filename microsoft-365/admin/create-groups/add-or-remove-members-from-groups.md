@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 组中添加或删除成员
+title: 在 Microsoft 365 组中添加或删除成员
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,16 +20,16 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 了解如何将成员添加到组、从组中删除成员和在 Microsoft 365 管理中心中管理组所有者状态。
-ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894707"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631309"
 ---
-# <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>使用管理中心添加或删除 Office 365 组中的成员
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心添加或删除 Microsoft 365 组中的成员
 
-在 Office 365 中，组成员通常会创建自己的组、将自己添加到要加入的组或由组所有者邀请。 如果组所有权发生更改，或者您确定应添加或删除某个成员，则您也可以进行此更改。 只有全局管理员、Exchange 管理员、组管理员或用户管理员可以进行这些更改。 [什么是 Office 365 组？](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+在 Microsoft 365 中，组成员通常会创建自己的组、将自己添加到要加入的组或由组所有者邀请。 如果组所有权发生更改，或者您确定应添加或删除某个成员，则您也可以进行此更改。 只有全局管理员、Exchange 管理员、组管理员或用户管理员可以进行这些更改。 [什么是 Microsoft 365 组？](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
 > 如果你不是管理员，则可以[使用 Outlook 添加或删除成员](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)。 
@@ -280,12 +280,12 @@ ms.locfileid: "42894707"
     
 ## <a name="articles-about-managing-groups"></a>有关组管理的文章
     
-- [将通讯组列表升级到 Outlook 中的 Office 365 组](../manage/upgrade-distribution-lists.md)
+- [将通讯组列表升级到 Outlook 中的 Microsoft 365 组](../manage/upgrade-distribution-lists.md)
     
 - [为什么应将通讯组列表升级至 Outlook 中的组](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[在 Office 365 组中管理来宾访问](manage-guest-access-in-groups.md)    
+- [在 Microsoft 365 组中管理来宾访问](manage-guest-access-in-groups.md)    
     
-- [使用 PowerShell 管理 Office 365 组](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540) ：本文介绍了关键 cmdlet，并提供了示例
+- [使用 PowerShell 管理 Microsoft 365 组](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)：本文向您介绍了关键 cmdlet，并提供了示例
     
-- [Office 365 组命名策略](groups-naming-policy.md)
+- [Microsoft 365 组命名策略](groups-naming-policy.md)
