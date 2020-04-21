@@ -17,16 +17,16 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 234ae17ab31d56d1bbd65f1aa8ed29475e9cd155
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43541103"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583711"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft 安全分数中的情况如何？
 
-为了使 Microsoft 安全得分更好地代表安全状况并提高可用性，我们在不久的将来进行一些更改。 你的分数和可能的最大分数都将发生变化。 但是，这并不意味着您的安全状况发生了变化。
+为了使[Microsoft 安全得分](microsoft-secure-score.md)更好地代表安全状况并提高可用性，我们在不久的将来进行一些更改。 你的分数和可能的最大分数都将发生变化。 但是，这并不意味着您的安全状况发生了变化。
 
 若要了解最近所做的更改，请参阅[Microsoft 安全分数中的新增功能？](microsoft-secure-score.md#whats-new)
 
@@ -39,11 +39,15 @@ ms.locfileid: "43541103"
 - 将 IRM 保护应用于文档
 - 应用数据丢失防护策略
 
-### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>在预览版本中添加 Azure AD 改进操作
+### <a name="adding-azure-ad-improvement-action-to-preview"></a>将 Azure AD 改进操作添加到预览
+
+将以下 Azure Active Directory 改善操作添加到[Microsoft 安全分数的预览版本](microsoft-secure-score-preview.md)：
 
 - 不允许用户向非托管应用程序授予许可（当前在已发布版本中可用）
 
-### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>在预览版本中添加 Azure ATP 改进操作
+### <a name="adding-azure-atp-improvement-actions-to-preview"></a>添加 Azure ATP 改进操作以供预览
+
+将以下 Azure 高级威胁防护改进操作添加到[Microsoft 安全分数的预览版本](microsoft-secure-score-preview.md)：
 
 - 在域控制器上禁用打印后台处理程序服务
 - 修改不安全的 Kerberos 委派以阻止模拟
@@ -56,6 +60,6 @@ ms.locfileid: "43541103"
 - 停止旧协议通信
 - 停止弱密码使用
 
-### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>在预览版本中，对 Microsoft Defender ATP 威胁 & 漏洞管理（TVM）安全建议的支持
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-preview"></a>在预览中支持 Microsoft Defender ATP 威胁 & 漏洞管理（TVM）安全建议
 
-- TVM 提供的所有已发布的安全建议现在也将在 Microsoft 安全分数中提供。
+TVM 提供的所有已发布的安全建议现在也将提供[Microsoft 安全分数的预览版本](microsoft-secure-score-preview.md)。

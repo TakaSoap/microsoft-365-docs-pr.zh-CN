@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 48da8a0e6629ff64b42c413d4959fb440b77aae3
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633150"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583329"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
@@ -57,7 +57,7 @@ Windows 10 企业版，包括 Windows Update for Business | [管理 Windows 10 �
 传递优化 | [配置 Windows 10 更新的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合标识所需的端口和协议](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)以及[Active Directory 和 Active Directory 域服务端口要求](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Intune 网络配置要求](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Intune | [Intune 网络配置要求](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune 的网络终结点](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender 高级威胁防护（ATP） | [Microsoft Defender ATP 终结点](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---

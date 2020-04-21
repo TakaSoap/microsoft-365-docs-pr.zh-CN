@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43541091"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583377"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -38,7 +38,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。
 
@@ -135,13 +135,11 @@ Microsoft 安全分数不会跟踪标记为 [未评分] 的操作。 你仍可�
 
 Microsoft 安全分数是基于系统配置、用户行为和其他与安全相关的度量的安全状态的数字摘要;它并不是对系统或数据受到破坏的可能性的绝对度量。 相反，它表示您在 Microsoft 环境中已采用安全控制的程度，这有助于抵消受到破坏的风险。 无在线服务完全不受安全破坏，并且安全分数不应以任何方式解释为保证安全。
 
-## <a name="whats-new"></a>新增功能
+## <a name="whats-new"></a>有哪些新增功能？
 
-若要使 Microsoft 安全得分更好地代表安全状态，我们做出了一些更改。
+若要使 Microsoft 安全得分更好地代表安全状态，我们做出了一些更改。 若要了解计划的更改，请参阅[Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
 
-若要了解计划的更改，请参阅[Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
-
-### <a name="march-2020"></a>2020 年 3 月
+### <a name="january---march-2020"></a>1月-2020 年3月
 
 #### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>支持 Azure AD 改进操作的安全默认值
 
