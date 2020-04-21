@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Office 365 组中的内容。
-ms.openlocfilehash: 4daf35af28e0339c66271c69487d3da9c1e4c91e
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 69ab8dcecf95f02965254928110802bfd0308b8b
+ms.sourcegitcommit: b8aa905b7c9c59def56490670b928b0b7daa7d0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547594"
+ms.lasthandoff: 04/19/2020
+ms.locfileid: "43558761"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度标签保护 Microsoft Teams 网站、Office 365 组和 SharePoint 网站中的内容（公共预览版）
 
@@ -256,15 +256,15 @@ ms.locfileid: "43547594"
 
 ## <a name="classic-azure-ad-group-classification"></a>经典 Azure AD 组分类
 
-启用此预览时，Office 365 不再支持新组和 SharePoint 网站的旧分类。 但是，除进行转换以使用敏感度标签外，否则现有组和网站仍会显示旧分类。 旧分类包括可能通过 Azure AD PowerShell 或 PnP 核心库设置的“新式”网站分类，这些分类定义了 `ClassificationList` 设置的值。
+启用此预览时，Office 365 不再支持新 Office 365 组和 SharePoint 网站的旧分类。 但是，除进行转换以使用敏感度标签外，否则现有组和网站仍会显示旧分类值。
 
-例如，在 PowerShell 中：
+有关如何使用 SharePoint 的旧组分类的示例，请参阅 [SharePoint “新式”网站分类](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
+
+这些分类通过使用 Azure AD PowerShell 或 PnP Core 库以及定义 `ClassificationList` 设置值来进行配置。 如果租户定义了分类值，则在 [AzureADPreview PowerShell 模块](https://www.powershellgallery.com/packages/AzureADPreview)中运行以下命令时，将显示这些分类值：
 
 ```powershell
    ($setting["ClassificationList"])
 ```
-
-有关如何使用 SharePoint 的旧组分类的示例，请参阅 [SharePoint “新式”网站分类](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
 
 若要将旧分类转换为敏感度标签，请执行下列操作之一：
 
