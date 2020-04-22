@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: d04070bfcec0649c5c4a1a79c082f5c5b43ad5eb
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081288"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631401"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
@@ -57,9 +57,9 @@ ms.locfileid: "43081288"
 
 1. 在[方案1： Office 365 应用程序需要经批准的应用程序中使用应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)，以防止 exchange ActiveSync 客户端利用基本身份验证连接到 Exchange online，遵循 "步骤2：在 exchange online 中为 Exchange Online 配置 Azure AD 条件访问策略" （EAS）。
 
-## <a name="setup-office-365-message-encryption"></a>设置 Office 365 邮件加密
+## <a name="set-up-message-encryption"></a>设置邮件加密
 
-使用新的 Office 365 邮件加密（OME）功能（它利用 Azure 信息保护中的保护功能），您的组织可以轻松地与任何设备上的任何人共享受保护的电子邮件。 用户可以使用 Outlook.com、Gmail 和其他电子邮件服务，通过其他 Office 365 组织以及非 Office 365 客户发送和接收受保护的邮件。
+使用新的 Office 365 邮件加密（OME）功能（它利用 Azure 信息保护中的保护功能），您的组织可以轻松地与任何设备上的任何人共享受保护的电子邮件。 用户可以使用 Outlook.com、Gmail 和其他电子邮件服务发送和接收与其他 Microsoft 365 组织以及非客户的受保护邮件。
 
 有关详细信息，请参阅[设置新的 Office 365 邮件加密功能](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e)。
 

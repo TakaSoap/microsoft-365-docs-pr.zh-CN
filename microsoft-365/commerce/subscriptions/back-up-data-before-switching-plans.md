@@ -1,5 +1,5 @@
 ---
-title: 在切换 Office 365 for business 计划之前备份数据
+title: 在切换 Microsoft 365 for business 计划之前备份数据
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: 在切换 Office 365 订阅或用户离开组织之前，备份 Outlook、OneDrive、Yammer 和 SharePoint 内容。
-ms.openlocfilehash: 3d8196bcbd0296e1b6e681b1077d165e168d2f2f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: 在切换 Microsoft 365 订阅或用户离开组织之前，请先备份 Outlook、OneDrive、Yammer 和 SharePoint 内容。
+ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105743"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636076"
 ---
-# <a name="back-up-data-before-switching-office-365-for-business-plans"></a>在切换 Office 365 for business 计划之前备份数据
+# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>在切换 Microsoft 365 for business 计划之前备份数据
 
-如果用户将切换到与数据相关的服务或用户离开组织的另一个订阅，则在将其存储在 Office 365 中的数据的副本在切换到新订阅之前可以进行下载。
+如果用户将切换到与数据相关的服务或用户离开组织的另一个订阅，则在将其存储在 Microsoft 365 中的数据的副本在切换到新订阅之前可以进行下载。
   
 ## <a name="save-a-copy-of-outlook-information"></a>保存 Outlook 信息副本
 
@@ -48,7 +48,7 @@ ms.locfileid: "43105743"
   
 ## <a name="how-to-save-sharepoint-information"></a>如何保存 SharePoint 信息
 
-如果用户从具有 SharePoint Online 的订阅切换到不具有该订阅的订阅，则**sharepoint**磁贴将不再显示在其 Office 365 菜单中。
+如果用户从具有 SharePoint Online 的订阅切换到不具有该订阅的订阅，则**sharepoint**磁贴将不再显示在其 Microsoft 365 菜单中。
   
 但是，只要新订阅与从中交换的订阅位于同一组织内，用户仍可以访问 SharePoint 团队网站。 他们可以使用团队网站的直接 URL 查看和更新笔记本、文档、任务和日历。
   

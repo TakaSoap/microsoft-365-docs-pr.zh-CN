@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: 了解如何通过几个简单的步骤将个人工作文件和敏感公司文件移动到 OneDrive for business。
-ms.openlocfilehash: 7c36eb272983f86ee42361478ff63dfca252f0ce
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 4c41928ac51950a5a8c372ef0a170a76ff48ed2e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561672"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633131"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>将文件移动到 OneDrive for Business
 
@@ -43,14 +43,14 @@ ms.locfileid: "42561672"
 
 如果用户计算机上包含多个个人文件，应首先将这些文件移动到 OneDrive for Business：
   
-1. 转到 portal.office.com，并使用用户的 Microsoft 365 商业版 凭据登录。
-    
+1. 转到 portal.office.com，并使用用户的 Microsoft 365 商业版凭据登录。
+
 2. 单击应用启动器 ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) 并转到 OneDrive。 
     
 3. 选择菜单栏上的" **上传**"![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png)，浏览到要保存的文件。 
     
 若要转移用户个人资料和重要的文件，可使用第三方工具（例如 ForensiT）。还需上传 OneDrive for Business 中生成的文件。
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>有关设置和使用 Microsoft 365 业务的详细信息
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>有关设置和使用 Microsoft 365 商业版的详细信息
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

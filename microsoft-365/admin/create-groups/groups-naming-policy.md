@@ -1,5 +1,5 @@
 ---
-title: Office 365 组命名策略
+title: 组命名策略
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: 了解如何创建 Office 365 组的命名策略。
-ms.openlocfilehash: 4325a5e0a1de0c3a83be71220abd256c204ec07d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 了解如何为 Microsoft 365 组创建命名策略。
+ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894619"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630439"
 ---
-# <a name="office-365-groups-naming-policy"></a>Office 365 组命名策略
+# <a name="groups-naming-policy"></a>组命名策略
 
 您可以使用组命名策略为组织中的用户创建的组强制实施一致的命名策略。 命名策略可帮助您和您的用户标识组、成员身份、地理区域或创建组的用户的功能。 命名策略还有助于对通讯簿中的组进行分类。 您可以使用该策略阻止在组名称和别名中使用特定字词。
 
 命名策略适用于跨所有组工作负载（如 Outlook、Microsoft 团队、SharePoint、Planner、Yammer 等）创建的组。 它将应用于组名称和组别名。 当用户创建组时，或者在编辑现有组的组名称或别名时，将应用此方法。
 
 > [!TIP]
-> Office 365 组命名策略仅适用于 Office 365 组。 它不适用于 Exchange Online 中创建的通讯组。 若要创建通讯组的命名策略，请参阅[创建通讯组命名策略](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
+> Microsoft 365 组命名策略仅适用于 Microsoft 365 组。 它不适用于 Exchange Online 中创建的通讯组。 若要创建通讯组的命名策略，请参阅[创建通讯组命名策略](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
 
 组命名策略包含以下功能：
 
@@ -44,7 +44,7 @@ ms.locfileid: "42894619"
 
 ## <a name="licensing-requirements"></a>许可要求
 
-使用适用于 Office 365 组的 Azure AD 命名策略时，需要为每个具有一个或多个 Office 365 组成员的唯一用户（包括来宾）分配 Azure Active Directory Premium P1 许可证或 Azure AD Basic EDU 许可证。
+使用适用于 Microsoft 365 组的 Azure AD 命名策略时，需要拥有（但不一定）为属于一个或多个 Microsoft 365 组成员的每个唯一用户（包括来宾）分配 Azure Active Directory Premium P1 许可证或 Azure AD Basic EDU 许可证。
 
 这对于创建组命名策略的管理员来说也是必需的。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42894619"
 
 - 前缀和后缀可以包含组名和组别名中支持的特殊字符。 当前缀和后缀包含在组别名中不允许的特殊字符时，它们仅应用于组名称。 因此，在这种情况下，应用于组名称的前缀和后缀将不同于应用于组别名的前缀和后缀。
 
-- 如果使用的是 Yammer Office 365 连接的组，请避免在命名策略中使用以下字符： @ \#、 \[、 \] \<、、和\>。 如果这些字符位于命名策略中，则常规 Yammer 用户将无法创建组。
+- 如果\#使用 Yammer Microsoft 365 连接的组，请避免在命名策略中使用以下字符： @、、 \[ \] \<、、和。 \> 如果这些字符位于命名策略中，则常规 Yammer 用户将无法创建组。
 
 ## <a name="custom-blocked-words"></a>自定义阻止的单词
 
@@ -126,10 +126,10 @@ ms.locfileid: "42894619"
 ![Azure Active Directory 中的组命名策略设置的屏幕截图](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> StaffHub 团队不遵循命名策略，但基础 Office 365 组也不遵循。 StaffHub 团队名称不会应用前缀和后缀，也不会检查是否存在自定义阻止的单词。 但 StaffHub 确实应用了前缀和后缀并删除了基础 Office 365 组中阻止的单词。
+> StaffHub 团队不遵循命名策略，但基础 Microsoft 365 组也不遵循命名策略。 StaffHub 团队名称不会应用前缀和后缀，也不会检查是否存在自定义阻止的单词。 但 StaffHub 确实应用了前缀和后缀并删除了基础 Microsoft 365 组中阻止的单词。
 
 ## <a name="more-articles-on-naming-policy"></a>有关命名策略的更多文章
 
-[为 Azure Active Directory 中的 Office 365 组强制实施命名策略](https://go.microsoft.com/fwlink/?linkid=868340)
+[在 Azure Active Directory 中强制实施 Microsoft 365 组的命名策略](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [用于配置组设置的 Azure Active Directory cmdlet](https://go.microsoft.com/fwlink/?linkid=868341)

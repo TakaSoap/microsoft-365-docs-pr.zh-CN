@@ -16,24 +16,24 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: 了解在何处可以查看有关在 SharePoint、OneDrive 或团队中检测到的恶意文件的信息，以及如何对这些文件执行操作。
-ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 95f497c5be16d1ba1d4fa9fc57f0dd9650450414
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955551"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635396"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息
 
 [适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md)可保护您的组织免受文档库和工作组网站中的恶意文件的攻击。 检测到恶意文件时，将阻止该文件，以便在组织的安全团队执行进一步操作之前，任何人都无法打开、复制、移动或共享该文件。 阅读本文，了解如何查看有关检测到的文件以及要执行的操作的信息。 
 
-若要执行本文中所述的任务，您必须具有[针对 Office 365 安全&amp;合规中心](permissions-in-the-security-and-compliance-center.md)的必要权限。 
+若要执行本文中所述的任务，您必须具有[针对安全&amp;合规中心](permissions-in-the-security-and-compliance-center.md)的必要权限。 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>查看包含检测到的文件的相关信息的报告
 
 若要查看 Office 365 ATP 检测到的文件的状态和详细信息，可以使用威胁防护状态报告。
   
-1. 在 " [Office 365 安全&amp;合规中心](https://protection.office.com)" 中，选择 "**报告** \> "**仪表板** \> **威胁防护状态**。
+1. 在 "[安全&amp;合规性中心](https://protection.office.com)" 中，选择 "**报告** \> "**仪表板** \> **威胁防护状态**。
     
 2. 在报表的右上角，选择 "**查看详细信息表**"。
     
@@ -45,7 +45,7 @@ ms.locfileid: "42955551"
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>查看隔离区中的文件并对其执行操作
 
-1. 在 "Office 365 安全&amp;合规中心" 中，选择 "**威胁管理** \> **检查** \> **隔离**"。 （你也可以直接转到[https://protection.office.com/quarantine](https://protection.office.com/quarantine)。）
+1. 在 "安全&amp;合规性中心" 中，选择 "**威胁管理** \> **检查** \> **隔离**"。 （你也可以直接转到[https://protection.office.com/quarantine](https://protection.office.com/quarantine)。）
     
 2. 在左上角，将下拉菜单从**电子邮件**更改为**文件**。 如果结果列表中包含过多项目，请使用**筛选**功能缩小选定范围。
     

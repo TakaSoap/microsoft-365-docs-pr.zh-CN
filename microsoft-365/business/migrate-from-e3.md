@@ -20,55 +20,55 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 了解如何通过 Office 365 E3 将企业移动到 Microsoft 365 商业版。
-ms.openlocfilehash: cff6166529df2e56ba948a9bd3ea4594fb295b08
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+description: 了解如何将企业从 Office 365 E3 移动到 Microsoft 365 商业高级版。
+ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153528"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633183"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>从 Office 365 E3 迁移到 Microsoft 365 业务 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版 
 
-Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最佳的基于云的工作效率应用与简单的设备管理和安全性结合在一起。 如果你当前有一个 Office 365 E3 订阅，但没有超过300个员工，请考虑切换到 Microsoft 365 Business 以添加安全功能。
+Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并通过简单的设备管理和安全性结合了同类最佳的基于云的工作效率应用。 如果你当前有一个 Office 365 E3 订阅，但没有超过300个员工，请考虑切换到 Microsoft 365 商业高级版以添加安全功能。
 
-迁移非常简单：首先切换许可证，并保留当前订阅中的所有数据和用户信息。 迁移完成后，你将需要设置在 Microsoft 365 业务中添加的功能。
+迁移非常简单：首先切换许可证，并保留当前订阅中的所有数据和用户信息。 迁移完成后，你需要设置在 Microsoft 365 商业高级版中添加的功能。
 
-## <a name="differences-between-office-365-e3-and-microsoft-365-business"></a>Office 365 E3 与 Microsoft 365 商业版之间的区别
+## <a name="differences-between-office-365-e3-and-microsoft-365-business-premium"></a>Office 365 E3 与 Microsoft 365 商业高级版之间的区别
 
-此表显示了 Microsoft 365 商业版和 Office 365 E3 之间的差异。
+此表显示了 Microsoft 365 商业高级版和 Office 365 E3 之间的差异。
 
-| 功能    | Microsoft 365 商业版中的支持    | Office 365 E3 中的支持 | 
+| 功能    | Microsoft 365 商业高级版中的支持    | Office 365 E3 中的支持 | 
 |:-------|:-----|:-----|
 | **本地**        | | | 
-| Office 应用程序<sup>1</sup>    | Office 365 商业版    | Office 365 专业增强订阅版 | 
+| Office 应用程序<sup>1</sup>    | 适用于企业的 Microsoft 365 应用程序    | 适用于企业的 Microsoft 365 应用程序 | 
 | **云生产力应用程序**        | | | 
 | Exchange Online 和 Outlook    | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档    | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
-| Teams    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| Teams    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
 | OneDrive for Business    | 每个用户 1 TB 存储限制    | 无限制 | 
-| Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
-| StaffHub    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
-| Outlook 客户管理器，MileIQ    | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | | 
+| Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| StaffHub    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| Outlook 客户管理器，MileIQ    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | | 
 | **威胁防护**        | | | 
-| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
+| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
 | **身份管理**        | | | 
-| 混合 Azure Active Directory （Azure AD）帐户的自助密码重置、Azure 多重身份验证、条件访问、本地标识的密码写回|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  | 
+| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    |  | 
 | **设备和应用程序管理**        | | |
-| Microsoft Intune、Windows AutoPilot|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    |  |
-| 共享计算机激活|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png)| 
-| 从 Win 7/8.1 Pro 许可证升级到 Windows 10 专业版的权限|     ![包含在 Microsoft 365 商业版中](../media/check-mark.png)    || 
+| Microsoft Intune、Windows AutoPilot|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    |  |
+| 共享计算机激活|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png)| 
+| 从 Win 7/8.1 Pro 许可证升级到 Windows 10 专业版的权限|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    || 
 | **信息保护**        | | |
-|Office 365 数据丢失防护|    ![包含在 Microsoft 365 商业版中](../media/check-mark.png)|![包含在 Office 365 E3 中](../media/check-mark.png)|
-|Azure 信息保护计划1，Bitlocker 强制|![包含在 Microsoft 365 商业版中](../media/check-mark.png)||
-|Azure 信息保护计划1，敏感度标签|![包含在 Microsoft 365 商业版中](../media/check-mark.png)||
+|Office 365 数据丢失防护|    ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)|![包含在 Office 365 E3 中](../media/check-mark.png)|
+|Azure 信息保护计划1，Bitlocker 强制|![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)||
+|Azure 信息保护计划1，敏感度标签|![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)||
 |**客户端访问许可证（CAL 权限）**|||
 |企业 CAL 套件（Exchange、SharePoint、Skype）||![包含在 Office 365 E3 中](../media/check-mark.png)|
 
-<sup>1</sup> Microsoft 365 商业版的 Office 应用程序不包括通过组策略、应用遥测、更新控件、电子表格比较和查询或商业智能等批量激活。
+<sup>1</sup> Microsoft 365 Business Premium 版本的 Office 应用程序不包括通过组策略、应用遥测、更新控件、电子表格比较和查询或商业智能等批量激活。
 
 ## <a name="migration"></a>迁移
 
-若要迁移你的订阅，请参阅[手动更改计划](../commerce/subscriptions/change-plans-manually.md)以了解有关如何仅将少数用户移动到 Microsoft 365 业务的说明。 您还可以[自动升级每个人](../commerce/subscriptions/upgrade-to-different-plan.md)，或与合作伙伴合作，将您的 E3 订阅和许可证移到 Microsoft 365 业务订阅。
+若要迁移你的订阅，请参阅[手动更改计划](../commerce/subscriptions/change-plans-manually.md)，以了解有关如何仅将少数用户移动到 Microsoft 365 商业高级版的说明。 您还可以[自动升级每个人](../commerce/subscriptions/upgrade-to-different-plan.md)，或与合作伙伴合作，将您的 E3 订阅和许可证移动到 Microsoft 365 商业高级订阅。
 以下各节介绍了需要进行的更改（如果有），以及迁移后可以执行的操作。
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 订阅配置和数据
@@ -87,9 +87,9 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
 > [!NOTE]
 > 如果设置了 Office 365 MDM 策略和设备，这些设备将在 Microsoft 365 管理中心的 "**设备**" 页上列出。 你设置的任何策略都将显示在[Intune 门户](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)中的经典策略列表中。
 
-为 Microsoft 365 商业版分配许可证之后，可以开始保护用户的设备和文件。
+将许可证分配给 Microsoft 365 商业高级版后，可以开始保护用户的设备和文件。
 
-如果将组织中的每个人升级到 Microsoft 365 企业版，您将在主页上看到 "安装向导"，并且可以按照[安装向导中设置的 Microsoft 365 业务中](set-up.md)的步骤操作，以保护文件和移动设备。
+如果将组织中的每个人升级到 Microsoft 365 商业高级版，您将在主页上看到 "安装向导"，并且可以按照[安装向导中的设置 Microsoft 365 商业高级](set-up.md)步骤来保护文件和移动设备。
 
 您还可以在 "设备" 页上完成以下步骤：
   
@@ -109,13 +109,13 @@ Microsoft 365 业务具有你的小型企业所需的一切，从而将同类最
   
 4. 设置策略后，你和你的员工可以设置设备：
     
-  - 有关 Windows 设备的步骤，请参阅为[Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)。 
+  - 有关 Windows 设备的步骤，请参阅为[Microsoft 365 商业高级版用户设置 Windows 设备](set-up-windows-devices.md)。 
     
-  - 有关 Android 手机和 Iphone 的步骤，请参阅为[Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。 
+  - 有关 Android 手机和 Iphone 的步骤，请参阅为[Microsoft 365 商业高级版用户设置移动设备](set-up-mobile-devices.md)。 
 
 ### <a name="threat-protection"></a>威胁防护
 
-迁移到 Microsoft 365 商业版后，你有 Office 365 ATP。 有关概述，请参阅[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要设置，请参阅[设置 atp 安全链接](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)、[设置 atp 安全附件](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)以及[设置 atp 反网络钓鱼](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)。
+迁移到 Microsoft 365 商业高级版后，你将拥有 Office 365 ATP。 有关概述，请参阅[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要设置，请参阅[设置 atp 安全链接](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)、[设置 atp 安全附件](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)以及[设置 atp 反网络钓鱼](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 

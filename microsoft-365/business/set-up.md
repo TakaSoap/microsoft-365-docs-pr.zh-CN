@@ -1,5 +1,5 @@
 ---
-title: 设置 Microsoft 365 商业版
+title: 设置 Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -28,17 +28,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: 发现 Microsoft 365 业务的设置步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: 99994b6f1e9e817b4858aeafe4ce3ceaaf4c3c37
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 发现 Microsoft 365 商业高级版的设置步骤，包括添加域和用户、设置安全策略等。
+ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633870"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635756"
 ---
-# <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>在安装向导中设置 Microsoft 365 商业版
+# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安装向导中设置 Microsoft 365 商业高级版
 
-观看此视频，了解 Microsoft 365 Business 安装程序的概述。<br><br>
+观看此视频，了解 Microsoft 365 商业高级版安装程序的概述。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -48,7 +48,7 @@ ms.locfileid: "42633870"
 
 [![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-在购买 Microsoft 365 商业版时，您可以选择使用自己的域，也可以在[注册](sign-up.md)过程中购买一个域。
+在购买 Microsoft 365 商业高级版时，您可以选择使用自己的域，也可以在[注册](sign-up.md)过程中购买一个域。
 
 - 如果你在注册时购买了一个新域，你的域将全部设置，并且你可以移动以[添加用户并分配许可证](#add-users-and-assign-licenses)。
 
@@ -82,11 +82,11 @@ ms.locfileid: "42633870"
 
 #### <a name="add-users-in-the-wizard"></a>在向导中添加用户
 
-在向导中添加的任何用户都会自动分配 Microsoft 365 商业版许可证。
+在向导中添加的任何用户都会自动分配 Microsoft 365 商业高级版许可证。
 
 ![向导中的 "添加新用户" 页的屏幕截图](../media/addnewuserspage.png)
 
-1. 如果你的 Microsoft 365 业务订阅具有现有用户（例如，如果你使用的是 Azure AD Connect），你将获得一个选项，用于立即向其分配许可证。 继续操作，并为这些用户添加许可证。
+1. 如果你的 Microsoft 365 商业高级订阅具有现有用户（例如，如果你使用的是 Azure AD Connect），你将获得一个选项，用于立即向其分配许可证。 继续操作，并为这些用户添加许可证。
 
 2. 添加用户后，您还将获得一个选项，用于与添加的新用户共享凭据。 可以选择打印、通过电子邮件发送或下载凭据。
 
@@ -130,10 +130,10 @@ ms.locfileid: "42633870"
 
 如果你选择在安装过程中自动安装 Office 应用，则在用户使用其工作凭据从 Windows 设备登录到 Azure AD 之后，应用将在 Windows 10 设备上安装。
 
-若要在移动 iOS 或 Android 设备上安装 Office，请参阅[为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。
+若要在移动 iOS 或 Android 设备上安装 Office，请参阅[为 Microsoft 365 商业高级版用户设置移动设备](set-up-mobile-devices.md)。
 
 您也可以单独安装 Office。 有关说明，请参阅[在电脑或 Mac 上安装 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) 。
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

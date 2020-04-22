@@ -1,5 +1,5 @@
 ---
-title: 了解 Office 365 商业版发票
+title: 了解 Microsoft 365 for business 的发票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: 了解如何在 Office 365 for business 发票上解释费用、帐单和付款信息，以及如何更改采购订单编号。
-ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 了解如何解释 Microsoft 365 商业发票上的费用、帐单和付款信息，以及如何更改采购订单编号。
+ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142295"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634964"
 ---
-# <a name="understand-your-invoice-for-office-365-for-business"></a>了解 Office 365 商业版发票
+# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>了解 Microsoft 365 for business 的发票
 
 每月你都会收到一封电子邮件，告知你的新帐单声明在管理中心中可用。 [了解如何查找和查看你的帐单或发票](view-your-bill-or-invoice.md)。
   
@@ -138,6 +138,6 @@ ms.locfileid: "43142295"
 
 ## <a name="related-articles"></a>相关文章
 
-[支付 Office 365 商业版订阅费用](pay-for-your-subscription.md)
+[为 Microsoft 365 for business 订阅付费](pay-for-your-subscription.md)
 
 [Minecraft:Education Edition 付款方式](https://go.microsoft.com/fwlink/p/?linkid=838761)

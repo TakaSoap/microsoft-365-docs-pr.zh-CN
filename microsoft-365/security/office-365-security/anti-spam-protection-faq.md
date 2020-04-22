@@ -15,16 +15,16 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 有关 Exchange Online 和独立 Exchange Online Protection （EOP）中的反垃圾邮件保护的管理员常见问题和解答。
-ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528309"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636054"
 ---
-# <a name="anti-spam-protection-faq-in-office-365"></a>Office 365 中的反垃圾邮件保护常见问题解答
+# <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
-本主题提供了有关在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）客户中具有邮箱的 Office 365 客户的反垃圾邮件保护的常见问题和解答。
+本主题针对无 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）客户中的邮箱的 Microsoft 365 客户提供了有关反垃圾邮件保护的常见问题和解答。
 
 有关隔离的问题和解答，请参阅[隔离常见问题解答](quarantine-faq.md)。
 
@@ -34,12 +34,12 @@ ms.locfileid: "43528309"
 
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>增长率. 默认情况下，检测到垃圾邮件会发生什么情况？
 
-A. **对于入站邮件**：大多数垃圾邮件是通过连接筛选（基于源电子邮件服务器的 IP 地址）删除的。 反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）将邮件作为垃圾邮件、批量或网络钓鱼检查和分类。 默认情况下，归为垃圾邮件或批量的邮件将被传递到收件人的 "垃圾邮件" 文件夹中，而分类为 "仿冒" 的邮件将被隔离。 您可以修改默认反垃圾邮件策略（适用于所有收件人），也可以为特定用户组创建具有更严格设置的自定义反垃圾邮件策略（例如，您可以隔离发送给行政主管的垃圾邮件）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)和[建议的反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+A. **对于入站邮件：** 大多数垃圾邮件是通过连接筛选删除的，后者基于源电子邮件服务器的 IP 地址。 反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）将邮件作为垃圾邮件、批量或网络钓鱼检查和分类。 默认情况下，归为垃圾邮件或批量的邮件将被传递到收件人的 "垃圾邮件" 文件夹中，而分类为 "仿冒" 的邮件将被隔离。 您可以修改默认反垃圾邮件策略（适用于所有收件人），也可以为特定用户组创建具有更严格设置的自定义反垃圾邮件策略（例如，您可以隔离发送给行政主管的垃圾邮件）。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)和[建议的反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
 > [!IMPORTANT]
 > 在 EOP 保护本地邮箱的混合部署中，需要在内部部署 Exchange 组织中配置两个 Exchange 邮件流规则（也称为传输规则），以检测添加到邮件中的 EOP 垃圾邮件筛选标头。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
- **对于出站邮件**：邮件通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)路由，或在未送达报告（也称为 "NDR" 或 "退回邮件"）中返回给发件人。 有关出站垃圾邮件保护的详细信息，请参阅[Office 365 中的出站垃圾邮件控件](outbound-spam-controls.md)。
+ **对于出站邮件：** 邮件通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)路由，或在未送达报告（也称为 "NDR" 或 "退回邮件"）中返回给发件人。 有关出站垃圾邮件保护的详细信息，请参阅[出站垃圾邮件控制](outbound-spam-controls.md)。
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>增长率. 什么是零天垃圾邮件变种以及服务如何处理？
 
@@ -67,7 +67,7 @@ A. 可能需要长达1小时才能使更改生效。
 
 ## <a name="q-is-bulk-email-filtering-automatically-enabled"></a>增长率. 批量电子邮件筛选是否自动启用？
 
-A. 是。 有关批量电子邮件的详细信息，请参阅[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+A. 可以。 有关批量电子邮件的详细信息，请参阅[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
 ## <a name="q-does-the-service-provide-url-filtering"></a>增长率. 该服务是否提供 URL 筛选？
 
@@ -75,7 +75,7 @@ A. 是的，该服务有一个 URL 筛选器，用于检查邮件中的 Url。 �
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>增长率. 客户如何使用服务向 Microsoft 发送假否定（垃圾邮件）和误报（非垃圾邮件）邮件？
 
-A. 可以通过几种方式将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析。 有关详细信息，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。
+A. 可以通过几种方式将垃圾邮件和非垃圾邮件提交给 Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="q-can-i-get-spam-reports"></a>增长率. 我是否可以获取垃圾邮件报告？
 
@@ -97,15 +97,15 @@ A.如果通过服务发送自用户的超过一半的邮件是在某段时间范
 
 ## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>增长率. 是否可以将第三方反垃圾邮件和反恶意软件提供程序与 Exchange Online 结合使用？
 
-A. 是。 尽管我们建议您将 MX 记录指向 Office 365，但我们意识到，将您的电子邮件路由到 Office 365 之外的任何地方都有合法的业务理由。
+A. 可以。 尽管我们建议您将 MX 记录指向 Microsoft，但我们意识到有合法的商业原因将电子邮件路由到 Microsoft 之前的某个位置。
 
 - **入站**：更改您的 MX 记录以指向第三方提供程序，然后将邮件重定向到 EOP 以进行其他处理。 有关详细信息，请参阅[针对 Exchange Online 中的连接器增强筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-- **出站**：配置从 Office 365 到目标第三方提供程序的智能主机路由。
+- **出站**：配置从 Microsoft 365 到目标第三方提供程序的智能主机路由。
 
 ## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>增长率. Microsoft 是否拥有任何有关如何保护自己免受网络钓鱼诈骗之害的文档？
 
-A. 是。 有关详细信息，请参阅[在 internet 上保护你的隐私](https://support.microsoft.com/help/4091455)
+A. 可以。 有关详细信息，请参阅[在 internet 上保护你的隐私](https://support.microsoft.com/help/4091455)
 
 ## <a name="q-are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>增长率. 垃圾邮件和恶意软件邮件是由谁发送或转移到执法部门进行调查的？
 
@@ -133,7 +133,7 @@ A. 下面提供的准则是发送出站电子邮件的最佳实践。
 
   SPF 记录是一种机制，用于验证从域发出的邮件是否确实来自域并且不带有欺骗性质。 有关 SPF 记录的详细信息，请参阅下列链接：
 
-  [在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [关于域的常见问题](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

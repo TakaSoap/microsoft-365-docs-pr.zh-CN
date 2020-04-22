@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 针对市场活动的 Microsoft 365 的分步注册。 保护您的活动从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633730"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632775"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>注册 Microsoft 365 以获取市场活动 
 
@@ -46,8 +46,8 @@ ms.locfileid: "42633730"
 
 1. 在您对 Microsoft 365 市场活动电子邮件的邀请中，选择 "**注册您的组织 >**"。 这会将你带到 Microsoft 365 注册。
     > [!NOTE]
-    > 如果已有 Office 365 for business 订阅，并且想要添加 Microsoft 365 以供市场活动提供，请转到现有订阅中的 "[将 microsoft 365 用于市场活动](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)"。
-1. **在 "Microsoft 365 商业版" 页面上**，输入您的业务详细信息。 对于**商业电子邮件地址**，请使用当前电子邮件地址。 在设置过程中，我们仅需要此地址与你保持联系。 选择“下一步”****。
+    > 如果你已有一个 Microsoft 365 for business 订阅，并且想要添加 Microsoft 365 以实现市场活动优惠，请转到[现有订阅的 "将 microsoft 365 用于市场活动](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)"。
+1. **在 "Microsoft 365 商业版" 页面上**，输入您的业务详细信息。 对于**商业电子邮件地址**，请使用当前电子邮件地址。 在设置过程中，我们仅需要此地址与你保持联系。 选择“**下一步**”。
 1. **在 "创建您的用户 ID" 页上**：
     1. 在 "**用户名**" 中，输入您的电子邮件地址所需的名称或别名。 例如，您可能希望将其称为 "小红" 或 "抢版"。 在更大的市场活动中，AliceC 或 AliceChavez 可能更有意义。
     2. 在**您的公司**中，输入您工作的市场活动的名称。 例如，ContosoCampaign。 如果你已拥有域，请在此处使用该名称。 
@@ -60,7 +60,7 @@ ms.locfileid: "42633730"
     1. 准备好你的电话，然后选择 "**文本**" （如果你愿意，也可以**呼叫我**）。 然后输入你的电话号码。 
     2. 选择**文本**时，我们会向你发送验证代码。 如果你选择 "**呼叫我**"，我们将为你提供一个代码。
     3. 从短信（或 "调用"）中输入代码，然后选择 "**下一步**"。 预计会短时间等待。 
-5. **您将在何处使用此页面**：输入市场活动的主要工作地点详细信息和电话号码。 选择“下一步”****。
+5. **您将在何处使用此页面**：输入市场活动的主要工作地点详细信息和电话号码。 选择“**下一步**”。
 6. "**如何查找" 页面**：
     1. 验证 "每个用户的成本为 $5.00"。 
     2. 如果只想将自己设置为 "现在"，请选择 "**下一步**"。 
@@ -72,9 +72,9 @@ ms.locfileid: "42633730"
 
 ## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>将市场活动的 Microsoft 365 添加到现有订阅的步骤
 
-如果已订阅 Office 365 for business （例如 Office 365 商业高级版），则可以使用 Microsoft 365 for 促销活动向其添加许可证。
+如果你已经订阅了 Microsoft 365 for business （例如 Microsoft 365 商业标准版），则可以使用 Microsoft 365 for 促销活动向其添加许可证。
 > [!IMPORTANT]
-> 您无法将市场活动提供的 Microsoft 365 添加到现有的 Microsoft 365 商业租户。
+> 您无法将市场活动提供的 Microsoft 365 添加到现有的 Microsoft 365 帐户。
 
 1. 在您对 Microsoft 365 市场活动电子邮件的邀请中，选择 "**注册您的组织 >**"。 这会将你带到 Microsoft 365 注册。
 2. 在 "**欢迎，让我们了解你**的信息" 页上，单击或点击 "**要将其添加到现有订阅中？"。登录**。

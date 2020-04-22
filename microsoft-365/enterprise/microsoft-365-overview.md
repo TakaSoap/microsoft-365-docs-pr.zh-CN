@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/07/2020
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供对适用于企业的 Microsoft 365 的组件、计划和部署路径的介绍。
-ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504087"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631557"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -32,7 +32,7 @@ ms.locfileid: "43504087"
 
 |||
 |:-------|:-----|
-| 本地和基于云的应用和生产率服务 | 包括 Office 365 专业增强版、适用于 PC 和 Mac 的最新 Office 应用（例如 Word、Excel、PowerPoint、Outlook 和其他应用），以及用于电子邮件、文件存储和协作、会议等的一整套在线服务。 |
+| 本地和基于云的应用和生产率服务 | 包含适用于企业的 Microsoft 365 应用程序、适用于电脑和 Mac 的最新 Office 应用程序（如 Word、Excel、PowerPoint、Outlook 和其他），以及用于电子邮件、文件存储和协作、会议等的整套在线服务。 |
 | Windows 10 企业版 | 满足了大型和中型组织的需求，为用户提供了具有全面部署、设备和应用程序管理的最高效、安全的 Windows 和 IT 专业人员版本。 |
 | 设备管理和高级安全服务 | 包括 Microsoft Intune，这是一种基于云的企业移动管理（EMM）服务，可帮助您的员工在保持公司数据受保护的情况下提高工作效率。 |
 |||
@@ -45,7 +45,7 @@ ms.locfileid: "43504087"
 |:-------|:-----|
 | E3 | 访问 Microsoft 365 中的核心产品和功能，以提高工作效率和促进创新和安全。 |
 | E5 | 访问 Microsoft 365 中的最新产品和功能，包括高级威胁防护、安全和协作工具。。 包括所有 E3's 功能，以及高级安全性、语音和数据分析工具。 |
-| F3 | 通过专门构建的工具和资源与您的 Firstline 工作人员联系，让他们能够完成其最佳工作。 |
+| F1 | 通过专门构建的工具和资源与您的 Firstline 工作人员联系，让他们能够完成其最佳工作。 |
 |||
 
 如果你拥有 Microsoft 365 E3，还可以获取以下[产品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
@@ -55,7 +55,7 @@ ms.locfileid: "43504087"
 
 这些产品包含 Microsoft 365 E5 附带的其他功能。
 
-有关每个计划中包含的内容的详细信息，请参阅[将企业转换为 Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)。
+有关详细信息，请参阅[每个计划的特性和功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
 ## <a name="get-the-big-picture"></a>获取大图
 
@@ -125,7 +125,7 @@ ms.locfileid: "43504087"
 
 ## <a name="additional-microsoft-365-solutions"></a>其他 Microsoft 365 解决方案
 
-- [Microsoft 365 商业版](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 商业高级版](https://docs.microsoft.com/microsoft-365/business/)
  
   将 Office 365 一流的工作效率和协作功能与设备管理和安全解决方案汇集在了一起，可保护中小型企业 (SMB) 业务数据的安全。
 
@@ -145,7 +145,7 @@ ms.locfileid: "43504087"
 |||
 
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 如果你要自己部署，请启动[Microsoft 365 以进行企业部署旅程](deploy-microsoft-365-enterprise.md)。
 

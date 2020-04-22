@@ -15,23 +15,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的特权访问管理。
-ms.openlocfilehash: ce637b94333f088d25e479e61ad2a98176a2f7c6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085371"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632859"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>用于 Microsoft 365 企业版测试环境的 Privileged Access Management
 
-*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 使用本文中的说明，可以配置特权访问管理以提高 Microsoft 365 企业版测试环境中的安全性。
 
-![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 >[!TIP]
->单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+>单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -46,7 +46,7 @@ ms.locfileid: "42085371"
 
 在此阶段中，您将为 Microsoft 365 企业版测试环境配置 "审批者" 组并启用 "特权访问管理"。 有关其他详细信息和权限访问管理的概述，请参阅[Office 365 中的 "特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)"。
 
-按照以下步骤设置和使用 Office 365 组织中的特权访问：
+按照以下步骤设置和使用组织中的特权访问：
 
 - [步骤1：创建审批者的组](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
@@ -54,7 +54,7 @@ ms.locfileid: "42085371"
 
 - [步骤2：启用特权访问](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
-    需要在 Office 365 中显式打开具有默认审批者组的特权访问权限，并包含要从特权访问管理访问控制中排除的一组系统帐户。 在开始本指南的第3阶段之前，请务必在 Office 365 组织中启用特权访问。
+    需要在 Office 365 中显式打开具有默认审批者组的特权访问权限，并包含要从特权访问管理访问控制中排除的一组系统帐户。 在开始本指南的第3阶段之前，请务必在你的组织中启用访问权限。
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>第3阶段：验证提升权限和特权任务是否都需要审批
 

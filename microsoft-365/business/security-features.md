@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 业务安全性和合规性功能
+title: Microsoft 365 商业高级安全性和合规性功能
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,23 +22,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: 了解 Microsoft 365 商业版随附的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
-ms.openlocfilehash: 3f638a3287c06ded7bf4c29c647e62cbf3fca969
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+description: 了解 Microsoft 365 商业高级版附带的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
+ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153790"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635136"
 ---
-# <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 业务安全性和合规性功能
+# <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商业高级安全性和合规性功能
 
-Microsoft 365 商业版提供了简化的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
+Microsoft 365 商业高级版提供了简化的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
     
-## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 商业管理员中心安全功能
+## <a name="microsoft-365-admin-center-security-features"></a>Microsoft 365 管理中心安全功能
 
 [![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-您可以在管理中心管理许多 Microsoft 365 商业安全功能，这为您提供了一种简单的方法来打开或关闭这些功能。 在管理中心，您可以执行以下操作：
+您可以在管理中心中管理许多 Microsoft 365 商业高级安全功能，这使您可以更简单的方式打开或关闭这些功能。 在管理中心，您可以执行以下操作：
   
 - [设置 Android 或 iOS 设备的应用程序管理设置](app-protection-settings-for-android-and-ios.md)。 
     
@@ -62,7 +62,7 @@ Microsoft 365 商业版提供了简化的安全功能，以帮助保护电脑、
     
 ## <a name="additional-security-features"></a>其他安全功能 
 
-Microsoft 365 商业版中的高级功能可帮助您保护业务，抵御网络威胁并保护敏感信息。
+Microsoft 365 商业高级版中的高级功能可帮助您保护业务，抵御网络威胁并保护敏感信息。
   
 - **[Office 365 高级威胁防护](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
@@ -74,7 +74,7 @@ Microsoft 365 商业版中的高级功能可帮助您保护业务，抵御网络
 
 - **[Azure 门户中的 Intune 的完整功能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    通过在 Azure 门户中访问 Intune 管理中心，可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理以及 Windows 的高级设备管理，这些功能无法通过 Microsoft 365 Business 管理中心提供。
+    通过在 Azure 门户中访问 Intune 管理中心，可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 的高级设备管理，这些功能无法通过 Microsoft 365 管理中心提供。
 - **与 Azure AD Premium P1 计划相同的[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
 
@@ -95,7 +95,7 @@ Microsoft 365 商业版中的高级功能可帮助您保护业务，抵御网络
     
 ## <a name="compliance-features"></a>合规性功能
 
-Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的功能。
+Microsoft 365 商业高级版订阅包括可帮助您维护合规性和法规标准的功能。
 
 - **[数据丢失防护策略](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**（DLP）概述。 
     
@@ -107,20 +107,20 @@ Microsoft 365 商业版订阅包括可帮助您维护合规性和法规标准的
     
 - **[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 商业版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，可以创建**敏感度标签**，以允许您控制对电子邮件和文档中敏感信息的访问，其中包含 "请勿转发" 和 "不复制" 等控件。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关详细信息，请参阅[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装**AzInfoProtection_UL .exe**。
+   Microsoft 365 商业高级版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，可以创建**敏感度标签**，以允许您控制对电子邮件和文档中敏感信息的访问，其中包含 "请勿转发" 和 "不复制" 等控件。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关详细信息，请参阅[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装**AzInfoProtection_UL .exe**。
 
-您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将被添加到 Microsoft 365 Business 管理中心。
+您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将添加到 Microsoft 365 管理中心。
   
     
 ## <a name="faq"></a>常见问题
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能在所有市场中是否可用？
   
-是的，在售出 Microsoft 365 业务的所有市场中，这些功能都是可用的。
+是的，在销售 Microsoft 365 商业高级版的所有市场中均提供这些功能。
   
 ### <a name="how-do-i-find-the-security-amp-compliance-center"></a>如何查找安全&amp;合规性中心？
   
-1. 使用管理员凭据[登录 Microsoft 365 商业](https://portal.microsoft.com/)版。 
+1. 使用管理员凭据[登录到 Microsoft 365 商业高级版](https://portal.microsoft.com/)。 
     
 2. 在左侧导航中，找到**管理中心**并展开它。 
     

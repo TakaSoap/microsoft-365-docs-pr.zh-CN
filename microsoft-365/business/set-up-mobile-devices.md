@@ -1,5 +1,5 @@
 ---
-title: 为 Microsoft 365 Business 用户设置移动设备
+title: 为 Microsoft 365 for business 用户设置移动设备
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,25 +23,25 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: 在 iPhone 或 Android 手机上安装 Office，Office 应用中的工作文件将受到 Microsoft 365 商业版的保护。
-ms.openlocfilehash: 36cc3cb9b35cb5746a4147509f17e4f4d7909617
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 在 iPhone 或 Android 手机上安装 Office，Office 应用中的工作文件将受到 Microsoft 365 for business 的保护。
+ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42089255"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632559"
 ---
-# <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 Business 用户设置移动设备
+# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>为 Microsoft 365 for business 用户设置移动设备
 
-按照标签中的说明在 iPhone 或 Android 手机上安装 Office。按照以下步骤操作后，你在 Office 应用中创建的工作文件将受到 Microsoft 365 商业版的保护。
+按照标签中的说明在 iPhone 或 Android 手机上安装 Office。 按照这些步骤操作后，Office 应用中创建的工作文件将受到 Microsoft 365 for business 的保护。
 
 此示例适用于 Outlook，但也适用于要安装的任何其他 Office 应用程序。
   
 ## <a name="set-up-mobile-devices"></a>设置移动设备
 
-## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
+## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
-观看有关如何使用 Microsoft 365 商业版在 iOS 设备上设置 Office 应用程序的简短视频。<br><br>
+观看有关如何使用 Microsoft 365 for business 在 iOS 设备上设置 Office 应用程序的简短视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -59,7 +59,7 @@ ms.locfileid: "42089255"
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 Business credentials \> **Sign in**.
+在 "**添加电子邮件帐户** \> **" 屏幕上**，输入你的工作电子邮件地址，然后输入 Microsoft 365 for \> business 凭据**登录**。
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -71,7 +71,7 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
   
 ![Set a PIN to access your organization's data](../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
-## <a name="androidtabandroid"></a>[Android](#tab/Android)
+## <a name="android"></a>[Android](#tab/Android)
   
 观看有关在 Android 设备上安装 Outlook 和 Office 的视频。<br><br>
 
@@ -87,7 +87,7 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-在 Outlook 应用中，点击 "**入门**"，再添加 Microsoft 365 业务电子邮件\> **帐户，** 然后使用您的组织凭据进行登录。
+在 Outlook 应用中，点击 "**入门**"，再添加 Microsoft 365 for business 电子邮件\> **帐户，** 然后使用您的组织凭据进行登录。
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -105,6 +105,6 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

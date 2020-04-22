@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 365 Business
+title: 管理 Microsoft 365 商业版
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,33 +20,33 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: 了解如何管理 Microsoft 365 业务相关的管理任务、移动设备、Windows 10 电脑和许多此类任务。
-ms.openlocfilehash: 41b627b0bb7cbb009832d3e7c45e44ceb8a8fdcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解如何管理 Microsoft 365 与业务相关的管理员任务、移动设备、Windows 10 电脑和许多此类任务。
+ms.openlocfilehash: 5e6d4633410d4aa38ad1eebcab3405f57f5b2446
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593773"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633255"
 ---
-# <a name="manage-microsoft-365-business"></a>管理 Microsoft 365 Business
+# <a name="manage-microsoft-365-for-business"></a>管理 Microsoft 365 商业版
 
-## <a name="general-microsoft-365-business-admin-tasks"></a>Microsoft 365 商业版常规管理任务
+## <a name="general-microsoft-365-for-business-admin-tasks"></a>用于商业管理员任务的常规 Microsoft 365
 
-Office 365 for business 的大多数[管理内容](https://docs.microsoft.com/office365/admin/admin-home)也适用于 Microsoft 365 商业版。
+Office 365 的大多数[管理内容](https://docs.microsoft.com/office365/admin/admin-home)也适用于 Microsoft 365 商业版。
 
-- [向 Microsoft 365 Business 添加更多用户](add-users-m365b.md)
+- [向 Microsoft 365 for business 中添加更多用户](add-users-m365b.md)
     
 - [查看策略和设备](view-policies-and-devices.md)
     
 - [Microsoft 365 商业安全功能](security-features.md)
     
-- [Microsoft 365 商业版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)
+- [Microsoft 365 for business 中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)
     
-请参阅以下各节，了解如何使用 Microsoft 365 商业版保护您的组织在 Pc 和移动设备上的数据。
+请参阅以下各节，了解如何使用 Microsoft 365 for business 来保护您的组织在 Pc 和移动设备上的数据。
   
 ## <a name="manage-mobile-devices"></a>管理移动设备
 
-- [为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)
+- [为 Microsoft 365 for business 用户设置移动设备](set-up-mobile-devices.md)
     
 - [设置 Android 或 iOS 设备的应用保护设置](app-protection-settings-for-android-and-ios.md)
     
@@ -56,9 +56,9 @@ Office 365 for business 的大多数[管理内容](https://docs.microsoft.com/of
     
 ## <a name="manage-windows-10-pcs"></a>管理 Windows 10 电脑
 
-- [为 Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)
+- [为 Microsoft 365 for business 用户设置 Windows 设备](set-up-windows-devices.md)
 
-    阅读[准备通过 Microsoft 365 商业版部署 Office 客户端](prepare-for-office-client-deployment.md)，然后自动安装 Office。 
+    在你自动安装 Office 之前，请先阅读[Microsoft 365 for business For office 客户端部署的准备工作](prepare-for-office-client-deployment.md)。 
     
 - [设置 Windows 10 设备的设备保护设置](protection-settings-for-windows-10-pcs.md)
     
@@ -74,7 +74,7 @@ Office 365 for business 的大多数[管理内容](https://docs.microsoft.com/of
     
 ### <a name="use-autopilot-to-deploy-windows-10-devices"></a>使用 AutoPilot 部署 Windows 10 设备
 
-以下主题介绍如何使用 Microsoft 365 商业版 中的 Window AutoPilot 预配置 Windows 10 设备。
+以下主题介绍如何在 Microsoft 365 for business 中使用 Windows AutoPilot 预配置 Windows 10 设备。
   
 - [使用分步指南添加 Autopilot 设备和配置文件](add-autopilot-devices-and-profile.md)
     
@@ -90,12 +90,12 @@ Office 365 for business 的大多数[管理内容](https://docs.microsoft.com/of
     
 ## <a name="set-up-and-prerequisite-information"></a>设置和先决条件信息
 
-- [使用 Microsoft 365 Business 保护设备上的数据的先决条件](pre-requisites-for-data-protection.md)
+- [使用 Microsoft 365 for business 保护设备上的数据的先决条件](pre-requisites-for-data-protection.md)
     
-- [使用安装向导安装 Microsoft 365 Business](set-up.md)
+- [使用安装向导设置 Microsoft 365 for business](set-up.md)
     
-- [迁移到 Microsoft 365 商业版](migrate-to-microsoft-365-business.md)
+- [迁移到 Microsoft 365 for business](migrate-to-microsoft-365-business.md)
     
-- [启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备](manage-windows-devices.md)
+- [启用要由 Microsoft 365 for business 管理的加入域的 Windows 10 设备](manage-windows-devices.md)
     
 - [其他安全功能](security-features.md#additional-security-features)

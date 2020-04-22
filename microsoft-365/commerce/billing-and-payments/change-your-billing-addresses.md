@@ -1,5 +1,5 @@
 ---
-title: 更改 Office 365 商业版的帐单邮寄地址
+title: 更改帐单邮寄地址
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: 了解如何更新 Office 365 for business 的帐单邮寄地址。 您还可以更新用于接收帐单通知的电子邮件地址。
+description: 了解如何为 Microsoft 365 for business 更新帐单邮寄地址。 您还可以更新用于接收帐单通知的电子邮件地址。
 ms.custom: okr_SMB
-ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142307"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632715"
 ---
-# <a name="change-your-billing-addresses-for-office-365-for-business"></a>更改 Office 365 商业版的帐单邮寄地址
+# <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
 您的帐单或发票包含三个地址：
   
@@ -60,9 +60,6 @@ ms.locfileid: "43142307"
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>更改售达地址
 
@@ -158,9 +155,9 @@ ms.locfileid: "43142307"
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>更改用于接收帐单通知的备选电子邮件地址
 
-默认情况下，你的组织的帐单通知将被发送到 Office 365 电子邮件地址和组织中每个全局和帐单管理员的备选电子邮件地址。每个管理员可以通过更新其个人资料信息来更改其备选电子邮件地址。
+默认情况下，你的组织的帐单通知将被发送到 Microsoft 电子邮件地址和组织中每个全局和帐单管理员的备用电子邮件地址。 每个管理员可以通过更新其个人资料信息来更改其备选电子邮件地址。
   
-1. 使用你的工作或学校帐户作为全局管理员登录 Office 365。[了解如何登录](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 以全局管理员身份，使用你的工作或学校帐户登录 Microsoft 365。[了解如何登录](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 选择 "**用户" 图标**，然后选择 **"我的帐户**"。
   
@@ -173,9 +170,7 @@ ms.locfileid: "43142307"
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>更改其他管理员的备用电子邮件地址
 
 还可以更改组织中其他全局管理员和帐单管理员的备用电子邮件地址。
-
-::: moniker range="o365-worldwide"
-
+  
 1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
 
 ::: moniker-end
@@ -203,3 +198,5 @@ ms.locfileid: "43142307"
 [了解发票](understand-your-invoice2.md)
 
 [为订阅付款](pay-for-your-subscription.md)
+
+[订阅和帐单-管理员帮助](../index.yml)

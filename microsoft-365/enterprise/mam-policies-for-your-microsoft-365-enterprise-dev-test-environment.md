@@ -14,23 +14,23 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南将 Intune 设备合规性策略添加到 Microsoft 365 企业版测试环境中。
-ms.openlocfilehash: b0b8bd2d76a3959bbcca749545d9a16e50491d20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066909"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631581"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>适用于 Microsoft 365 企业版测试环境的设备合规性策略
 
 *此测试实验室指南仅可用于 Microsoft 365 企业版测试环境。*
 
-使用本文中的说明，可以将 Windows 10 设备和 Office 365 专业增强版的 Intune 设备合规性策略添加到 Microsoft 365 企业版测试环境中。
+使用本文中的说明，可以向 Microsoft 365 企业版测试环境中添加适用于企业的 Windows 10 设备和 Microsoft 365 应用程序的 Intune 设备合规性策略。
 
-![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42066909"
 
 17. 在 "**添加应用程序**" 窗格中，选择 "**应用程序套件信息**"。
  
-18. 在 "**应用程序套件信息**" 窗格中，在 "**套件名称**" 和 "**套件说明**" 中键入**Office 365 专业增强版**。
+18. 在 "**应用程序套件信息**" 窗格中，在 "**套件名称**" 和 "**套件说明**" 中键入**适用于企业的 Microsoft 365 应用**。
 单击"确定"。
 
 19. 在 "**添加应用程序**" 窗格中，选择 "**配置应用程序套件**"，然后单击 **"确定"**。
@@ -105,4 +105,4 @@ ms.locfileid: "42066909"
   
 [部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
 
-[企业移动性 + 安全性（EMS）](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+[企业移动性 + 安全性 (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

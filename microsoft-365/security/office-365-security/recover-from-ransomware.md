@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Office 365 管理员可以了解如何从勒索软件攻击中恢复。
-ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Microsoft 365 管理员可以了解如何从勒索软件攻击中恢复。
+ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032872"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634396"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>在 Office 365 中恢复勒索软件攻击
 
-即使您尽一切预防措施来保护您的 Office 365 组织，仍可以将受害者的攻击作为[勒索软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻击。 勒索软件是大型企业，攻击的验证非常复杂。
+即使您在保护组织时采取了任何预防措施，仍可成为[勒索软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻击的牺牲品。 勒索软件是大型企业，攻击的验证非常复杂。
 
-本主题中的步骤将为您提供恢复由勒索软件加密的数据的最佳机会，并帮助停止在 Office 365 组织中进行感染的传播。 在开始之前，请考虑以下事项：
+本主题中的步骤将为您提供恢复由勒索软件加密的数据的最佳机会，并帮助停止组织中的感染的传播。 在开始之前，请考虑以下事项：
 
 - 不能保证付款勒索将返回对您的文件的访问权限。 实际上，支付勒索可以使您成为更多勒索软件的目标。 如果你已支付，但你可以成功恢复文件，而无需使用攻击者的解决方案，则应致电你的银行以了解它们是否可以阻止事务。 此外，我们还建议您将勒索软件攻击报告给执法部门、诈骗报告网站和 Microsoft，如本主题后面所述。
 
@@ -122,7 +122,7 @@ ms.locfileid: "43032872"
 
 ### <a name="submit-email-messages-to-microsoft"></a>将电子邮件提交给 Microsoft
 
-您可以使用几种方法之一报告包含勒索软件的网络钓鱼邮件。 有关详细信息，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。
+您可以使用几种方法之一报告包含勒索软件的网络钓鱼邮件。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -1,5 +1,5 @@
 ---
-title: 为 Microsoft 365 商业版用户设置 Windows 设备
+title: 为 Microsoft 365 商业高级版用户设置 Windows 设备
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -24,21 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 了解如何设置运行 Windows 10 Pro for Microsoft 365 商业用户的 Windows 设备，从而实现集中管理和安全控制。
-ms.openlocfilehash: 6ecc45f825a783d9d47c4b069a6021143d96597c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 了解如何设置运行 Windows 10 Pro for Microsoft 365 商业高级版用户的 Windows 设备，从而实现集中管理和安全控制。
+ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561152"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635444"
 ---
-# <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 商业版用户设置 Windows 设备
+# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为 Microsoft 365 商业高级版用户设置 Windows 设备
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>为 Microsoft 365 商业用户设置 Windows 设备的先决条件
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>为 Microsoft 365 商业高级用户设置 Windows 设备的先决条件
 
-在为 Microsoft 365 商业版用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版 1703（创意者更新）。Windows 10 专业版是部署 Windows 10 商业版的先决条件，Windows 10 商业版是一组补充 Windows 10 专业版的云服务和设备管理功能，可实现 Microsoft 365 商业版的集中管理和安全控制。
+在为 Microsoft 365 商业高级版用户设置 Windows 设备之前，请确保所有 Windows 设备都运行的是 Windows 10 专业版，即版本1703（创意者更新）。 Windows 10 专业版是部署 Windows 10 商业版的先决条件，它是一组可补充 Windows 10 专业的云服务和设备管理功能，并能够实现 Microsoft 365 商业高级版的集中管理和安全控制。
   
-如果 Windows 设备运行 Windows 7 专业版、Windows 8 专业版或 Windows 8.1 专业版，Microsoft 365 商业版订阅可授权进行 Windows 10 升级。
+如果你有运行 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 Pro 的 Windows 设备，Microsoft 365 商业高级版订阅将享有 Windows 10 升级。
   
 有关如何将 Windows 设备升级到 Windows 10 专业版创意者更新的详细信息，请按照本主题中的步骤操作：[将 Windows 设备升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)。
   
@@ -52,7 +52,7 @@ ms.locfileid: "42561152"
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>将 Windows 10 设备加入到组织的 Azure AD
 
-如果组织中的所有 Windows 设备都已升级到 Windows 10 Pro 创意者更新或已运行 Windows 10 Pro 创意者更新，则可以将这些设备加入到组织的 Azure Active Directory 中。 设备加入后，它们将自动升级到 Windows 10 商业版，这是 Microsoft 365 商业版订阅的一部分。
+如果组织中的所有 Windows 设备都已升级到 Windows 10 Pro 创意者更新或已运行 Windows 10 Pro 创意者更新，则可以将这些设备加入到组织的 Azure Active Directory 中。 设备加入后，它们将自动升级到 Windows 10 商业版，这是 Microsoft 365 商业高级版订阅的一部分。
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>全新或新升级的 Windows 10 专业版设备
 
@@ -62,7 +62,7 @@ ms.locfileid: "42561152"
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. 在这里，选择" **针对组织进行设置**"，然后输入 Microsoft 365 商业版的用户名和密码。 
+2. 在此处选择 "为**组织设置**"，然后输入 Microsoft 365 商业高级版的用户名和密码。 
     
 3. 完成 Windows 10 设备设置。
     
@@ -108,13 +108,13 @@ ms.locfileid: "42561152"
   
 在同步状态页面上，单击"同步"，将最新的移动设备管理策略同步到电脑上。
   
-若要开始使用 Microsoft 365 商业版帐户，请转到 Windows "**开始**" 按钮，右键单击您当前的帐户图片，然后**切换帐户**。 使用组织电子邮件和密码进行登录。
+若要开始使用 Microsoft 365 商业高级版帐户，请转到 Windows "**开始**" 按钮，右键单击您当前的帐户图片，然后**切换帐户**。 使用组织电子邮件和密码进行登录。
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>验证设备是否升级到 Windows 10 商业版
 
-验证加入了 Azure AD 的 Windows 10 设备是否已升级到 Windows 10 商业版（Microsoft 365 商业版订阅的一部分）。
+验证您的 Azure AD 加入 Windows 10 设备是否已升级到 Windows 10 商业版，作为 Microsoft 365 商业高级版订阅的一部分。
   
 1. 转到" **设置**"\>" **系统**"\>" **关于**"。
     
@@ -124,8 +124,8 @@ ms.locfileid: "42561152"
   
 ## <a name="next-steps"></a>后续步骤
 
-若要设置移动设备，请参阅[为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)。若要设置设备保护或应用保护策略，请参阅[管理 Microsoft 365 商业版](manage.md)。
+若要设置移动设备，请参阅[设置适用于 Microsoft 365 商业高级用户的移动设备](set-up-mobile-devices.md)，若要设置设备保护或应用保护策略，请参阅[管理 Microsoft 365 for Business](manage.md)。
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>有关设置和使用 Microsoft 365 业务的详细信息
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>有关设置和使用 Microsoft 365 商业高级版的详细信息
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

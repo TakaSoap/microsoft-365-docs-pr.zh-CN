@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: 本主题的目的是帮助您了解从内部部署电子邮件卫生设备或基于云的保护服务切换到 Exchange Online Protection (EOP) 的过程，然后为您提供开始操作的帮助资源。
-ms.openlocfilehash: e3877f8093f56a0f978ad915769334678afe26e3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e6a25d6477741f5796dd08b5811d97e2d0c76b51
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598209"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631189"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
 
@@ -39,9 +39,9 @@ ms.locfileid: "41598209"
 
 ## <a name="switch-to-exchange-online"></a>切换到 Exchange Online
 
-或许您有本地邮箱受本地设备保护，并且您希望跳转到 Exchange Online 云托管邮箱和 EOP 保护以利用 Office 365 云邮件和保护功能。 若要开始，你可以注册 Office 365 并添加你的域。 此方案不需要设置连接器，因为不存在到本地邮箱的任何路由。 从[获取 Office 365 的最新高级功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)开始注册并熟悉其功能。
+或许您有本地邮箱受本地设备保护，并且您希望跳转到 Exchange Online 云托管邮箱和 EOP 保护以利用 Microsoft 365 云邮件和保护功能。 若要开始，你可以注册 Microsoft 365 并添加你的域。 此方案不需要设置连接器，因为不存在到本地邮箱的任何路由。 请从[使用 Microsoft 365 获取最新的高级功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)开始注册并熟悉其功能。
 
-在 Office 365 设置过程中，将创建基于云的邮箱用户。
+在 Microsoft 365 安装过程中，将创建基于云的邮箱用户。
 
 ## <a name="switch-to-a-hybrid-solution"></a>切换到混合解决方案
 

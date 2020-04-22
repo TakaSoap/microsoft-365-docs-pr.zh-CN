@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: 了解如何添加和删除 Office 365 for business 订阅的许可证。
-ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: 了解如何添加和删除适用于 Microsoft 365 的商业版订阅的许可证。
+ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240276"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632525"
 ---
 # <a name="manage-subscription-licenses"></a>管理订阅许可
 
@@ -84,7 +84,7 @@ ms.locfileid: "43240276"
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>如果看不到"添加/删除"链接，该怎么办？
 
-此表介绍 "**添加/删除许可证**" 链接不可用的原因，以及您可以执行的操作。
+此表介绍 "**添加/删除许可证**" 链接不可用的原因，以及您可以执行的操作。 
 
 |Reason  |说明  |解决方案  |
 |---------|---------|---------|
@@ -92,14 +92,14 @@ ms.locfileid: "43240276"
 |您使用产品密钥激活了订阅。| 如果订阅是使用 25 个字符的产品密钥购买并激活的，你将看到"预付费"字样。  |请参阅[向使用产品密钥支付的订阅添加许可证](add-licenses-using-product-key.md)。 |
 |您通过合作伙伴购买了订阅。 | 如果订阅是通过合作伙伴购买的，你将看到"批量许可服务中心 (VLSC)"链接。 | 请参阅[向通过批量许可服务中心购买的订阅添加许可证](add-licenses-bought-through-vlsc.md)。 |
 |您通过转销商购买了订阅。|| 如果订阅是通过云解决方案提供商 (CSP) 合作伙伴购买的，则必须联系该 CSP 合作伙伴以购买更多许可证。        |
-|你有试用版订阅。 |试用版的 Office 365 将显示"试用版"字样。 | 必须先购买试用订阅，然后才能添加更多许可证。 请参阅[从免费试用版购买 Office 365 for business 订阅](../buy-a-subscription-from-your-free-trial.md)。|
+|你有试用版订阅。 |试用版的 Microsoft 365 将显示 "试用版" 文本。 | 必须先购买试用订阅，然后才能添加更多许可证。 请参阅[从免费试用版购买 Microsoft 365 for business 订阅](../buy-a-subscription-from-your-free-trial.md)。|
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>你需要了解的有关为你的业务订阅购买许可证的相关信息
 
 ### <a name="buying-licenses"></a>购买许可证
 
 - 您必须是全局管理员或帐单管理员才能购买许可证。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-- 若要向订阅添加新用户且同时为其购买许可证，请参阅[向 Office 365 逐一或批量添加用户 - 管理员帮助](../../admin/add-users/add-users.md)。
+- 若要购买许可证并同时向订阅添加新用户，请参阅在[Microsoft 365 中单独添加用户或批量添加 Microsoft-管理员帮助](../../admin/add-users/add-users.md)。
 
 ### <a name="license-availability"></a>许可证可用性
 

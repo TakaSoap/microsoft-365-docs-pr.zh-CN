@@ -10,27 +10,27 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: 管理员可以在 "Office 365 安全 & 合规中心" 的 "邮件流" 仪表板中了解 "自动转发的邮件" 报告。
-ms.openlocfilehash: 43e32dda70da5a8252af7f4f01bbdbb5599454fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的自动转发的邮件报告。
+ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088553"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635300"
 ---
 # <a name="auto-forwarded-messages-report"></a>自动转发的消息报表
 
-邮件流仪表板中的**自动转发的邮件**报告显示有关自动从 Office 365 组织转发给外部域中的收件人的邮件的信息。
+"邮件流" 仪表板中的**自动转发的邮件**报告显示有关自动从组织转发给外部域中的收件人的邮件的信息。
 
-![自动转发的邮件在 Office 365 安全 & 合规中心中的洞察力](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![自动转发的邮件在安全 & 合规中心中的洞察力](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
-!["Office 365 安全 & 合规中心" 的 "邮件流" 仪表板中的自动转发的邮件报告](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![安全 & 合规性中心的邮件流仪表板中的自动转发的邮件报告](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
 ## <a name="auto-forwarded-messages-details"></a>自动转发的邮件详细信息
 
 当您单击小组件中的邮件数量时，将显示一个弹出窗口，显示自动转发的邮件状态。 您可以通过单击 "**转发报告**" 链接来查看详细信息。
 
-!["自动转发的邮件" 报告在 Office 365 安全 & 合规中心 "中的" 详细信息 "浮出控件](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+!["自动转发的邮件" 的 "详细信息" 浮出控件报告在安全 & 合规性中心](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
 
 ## <a name="insights"></a>见解
 

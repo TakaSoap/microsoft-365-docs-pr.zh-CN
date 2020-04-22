@@ -1,5 +1,5 @@
 ---
-title: Office 365 组过期策略
+title: 组过期策略
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解 Office 365 组过期策略。
-ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: 了解 Microsoft 365 组过期策略。
+ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630051"
 ---
-# <a name="office-365-group-expiration-policy"></a>Office 365 组过期策略
+# <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 组过期策略
 
-随着 Office 365 组的使用提高，管理员和用户需要一种方法来清除未使用的组。 过期策略可帮助从系统中删除非活动组并使其更整洁。
+随着 Microsoft 365 组的使用提高，管理员和用户需要一种方法来清除未使用的组。 过期策略可帮助从系统中删除非活动组并使其更整洁。
 
 当组过期时，也将删除其所有关联的服务（邮箱、Planner、SharePoint 网站、团队等）。
 
@@ -46,14 +46,14 @@ ms.locfileid: "43225915"
 请务必了解默认情况下禁用过期功能。 如果管理员想要使用它，则必须为其组织启用它。
 
 > [!NOTE]
-> 配置和使用 Office 365 组的过期策略要求您拥有（但不一定）为应用了过期策略的所有组的成员分配 Azure AD Premium 许可证。 有关详细信息，请参阅[Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)入门。
+> 配置和使用适用于 Microsoft 365 组的过期策略要求您拥有（但不一定）为应用过期策略的所有组的成员分配 Azure AD Premium 许可证。 有关详细信息，请参阅[Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)入门。
 
-## <a name="who-can-configure-and-use-the-office-365-groups-expiration-policy"></a>哪些用户可以配置和使用 Office 365 组过期策略？
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>哪些用户可以配置和使用 Microsoft 365 组过期策略？
 
 |Role|可以执行的操作|
 |---------|---------|
-|Office 365 全局管理员（在 Azure、公司管理员）、用户管理员|创建、读取、更新或删除 Office 365 组过期策略设置。|
-|User|续订或[还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)自己拥有的 Office 365 组|
+|全局管理员（在 Azure 中，公司管理员）、用户管理员|创建、读取、更新或删除 Microsoft 365 组过期策略设置。|
+|User|续订或[还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)自己拥有的 Microsoft 365 组|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何设置过期策略
 
@@ -77,7 +77,7 @@ ms.locfileid: "43225915"
 
 在组过期之前的30天内，组所有者（或为没有所有者的组指定的电子邮件地址）将会收到一封电子邮件，允许他们轻松地续订组。 如果不续订，他们将在到期前15天收到另一封续订电子邮件。 如果他们仍未续订，则会在过期前一天收到一封电子邮件通知。
 
-如果由于某种原因，所有者或管理员在过期之前没有对组进行续订，则管理员仍可以在到期后的30天内还原组。 有关详细信息，请参阅：[还原已删除的 Office 365 组](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)。
+如果由于某种原因，所有者或管理员在过期之前没有对组进行续订，则管理员仍可以在到期后的30天内还原组。 有关详细信息，请参阅：[还原已删除的 Microsoft 365 组](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)。
 
 ## <a name="related-articles"></a>相关文章
 
@@ -85,4 +85,4 @@ ms.locfileid: "43225915"
 
 [向孤立组分配新的所有者](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[配置 Office 365 组过期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'
+[配置 Microsoft 365 组过期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

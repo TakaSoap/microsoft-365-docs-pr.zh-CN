@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的发票。
 keywords: 帐单帐户、组织信息、发票
-ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409707"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634976"
 ---
 # <a name="understand-your-invoice"></a>了解发票
 
 发票提供了您的费用摘要和付款说明。 你可以在 Microsoft 365 管理中心[查看你的联机发票](#view-your-online-invoice)。 您还可以将其下载为可移植文档格式（.pdf）以通过电子邮件发送。
 
-如果你只有 Office 365 订阅，请参阅[查看 office 365 for business 的发票](view-your-bill-or-invoice.md)。
+如果你只有 Microsoft 365 订阅，请参阅查看适用于[microsoft 365 商业](view-your-bill-or-invoice.md)版的发票。
 
 ## <a name="understand-the-invoice-header"></a>了解发票抬头
 

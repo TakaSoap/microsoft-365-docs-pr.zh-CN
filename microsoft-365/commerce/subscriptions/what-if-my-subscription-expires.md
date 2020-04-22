@@ -21,36 +21,36 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
-description: 了解当您的 Office 365 订阅过期、被禁用或取消时，数据会发生什么情况。
-ms.openlocfilehash: f3be5a84cc29b2f7fd4d2bbe3e6ba611c6459ea6
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+description: 了解当 Microsoft 365 for business 订阅过期、被禁用或取消时数据会发生什么情况。
+ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43584005"
+ms.locfileid: "43634870"
 ---
-# <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Office 365 for business 订阅结束时我的数据和访问会发生什么情况？
+# <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business 订阅结束时我的数据和访问会发生什么情况？
 
-如果你的订阅结束—要么是过期，要么是因为你决定取消，在订阅完全关闭之前，你对 Office 365 服务、应用程序和客户数据的访问会经历多个状态，或者是*deprovisioned*。 如果你知道这一进展，你将能够更好地将你的订阅恢复到处于活动状态过晚的状态，或者，如果你离开 Office 365，请先备份你的数据，然后再将其最终删除。
+如果你的订阅结束（因为它已过期或你决定取消），则在订阅完全关闭之前，你对 Microsoft 365 服务、应用程序和客户数据的访问会经历多个状态，或*deprovisioned*。 如果你知道这一进展，你将能够更好地将你的订阅恢复到处于活动状态过晚的状态，或者，如果你离开 Microsoft 365，请先备份你的数据，然后再将其最终删除。
   
-## <a name="office-365-for-business-subscription-lifecycle"></a>Office 365 for business：订阅生命周期
+## <a name="microsoft-365-for-business-subscription-lifecycle"></a>Microsoft 365 for business：订阅生命周期
 - 如果你的订阅已过期，则会经历以下阶段：已过期/已禁用/Deprovisioned。 过期的阶段在订阅到达其结束日期后立即开始。
 - 如果您关闭年度订阅的定期帐单，它会经历与过期订阅相同的阶段。 第一阶段的开始是每年订阅的周年纪念，而不是在关闭订阅的定期记帐设置的日期上启动的。
-- 如果取消每月订阅，则会立即禁用它（在取消日期时）。 这意味着您的用户将立即失去对 Office 365 资产的访问权限，并且只有管理员才能在接下来的90天访问数据。
+- 如果取消每月订阅，则会立即禁用它（在取消日期时）。 这意味着您的用户将立即失去对 Microsoft 365 资产的访问权限，并且只有管理员才能在接下来的90天访问数据。
 
-下表说明了付费的 Office 365 for business 订阅过期时的预期效果。
+下表介绍了付费 Microsoft 365 for business 订阅过期时的预期效果。
 
 | **Active**                                                             | **过期<br/>（30天\*）**                                                | **已<br/>禁用（90\*天）**                                               | **已取消设置**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *所有可访问的数据*                                               | *所有可访问的数据*                                                     | *仅供管理员访问的数据*                                             | **删除了<br/>数据删除的 Azure Active Directory （如果未被其他服务使用）** |
-| 用户具有对 Office 365、数据和 Office 应用程序的正常访问权限  | 用户具有对 Office 365、文件和应用程序的常规访问权限              | 用户不能访问 Office 365、文件或应用程序                        | 用户不能访问 Office 365、文件或应用程序                                     |
-| 管理员拥有对 Office 365、数据和 Office 应用程序的正常访问权限 | 管理员可以访问管理中心   | 管理员可以访问管理中心，但不能向用户分配许可证       | 管理员可以访问管理中心来购买和管理其他订阅             |
+| 用户具有对 Microsoft 365、数据和 Office 应用程序的常规访问权限  | 用户具有对 Microsoft 365、文件和应用程序的常规访问权限              | 用户无法访问 Microsoft 365、文件或应用程序                        | 用户无法访问 Microsoft 365、文件或应用程序                                     |
+| 管理员具有对 Microsoft 365、数据和 Office 应用程序的常规访问权限 | 管理员可以访问管理中心                                           | 管理员可以访问管理中心，但不能向用户分配许可证       | 管理员可以访问管理中心来购买和管理其他订阅             |
 |                                                                        | 全局管理员或帐单管理员可以在管理中心重新激活订阅 | 全局管理员或帐单管理员可以在管理中心重新激活订阅 |                                                                                           |
 
 * 在大多数国家和地区，大多数产品提供。
   
 > [!NOTE]
-> **什么是 "客户数据"？** 客户数据（如[Microsoft Online 服务条款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中所定义）是指所有数据，包括所有的数据，包括由客户通过 Office 365 服务提供给 Microsoft 的所有文本、声音或图像文件。 若要了解有关客户数据保护的详细信息，请参阅[Microsoft 服务信任门户入门](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)。
+> **什么是 "客户数据"？** 客户数据（如[Microsoft Online 服务条款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中所定义）是指所有数据，包括所有的数据，包括由客户通过 microsoft 365 服务提供给 microsoft 的所有文本、声音或图像文件。 若要了解有关客户数据保护的详细信息，请参阅[Microsoft 服务信任门户入门](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)。
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>如果我的订阅即将过期，我的选项是什么？
 
@@ -64,11 +64,11 @@ ms.locfileid: "43584005"
 
   - 如果**定期记帐**已打开，则无需执行任何操作。 你的订阅将自动计费，并且将根据你当前的付款频率，向你收取额外一年或一个月的费用。 如果您已关闭**定期付费**的任何原因，您始终可以[重新启用定期付费](renew-your-subscription.md)。
 
-  - 如果使用预付卡购买了 Office 365 商业版，则可以为订阅[启用定期记帐](renew-your-subscription.md)。
+  - 如果使用预付卡购买了 Microsoft 365 的商业应用程序，则可以为订阅[启用定期帐单](renew-your-subscription.md)。
 
   - 如果你是一位预付一年期免费订阅的批量许可客户，请联系你的合作伙伴购买新的产品密钥。 你将通过电子邮件收到说明，以在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活你的密钥。 若要了解如何查找新合作伙伴或以前使用过的合作伙伴，请参阅[查找合作伙伴或经销商](../../admin/manage/find-your-partner-or-reseller.md)。
 
-  - 如果您有 Office 365 商业版，请参阅[管理订阅的定期帐单](renew-your-subscription.md)。
+  - 如果你有 Microsoft 365 应用程序的商业版，请参阅[管理你的订阅的定期帐单](renew-your-subscription.md)。
 
 - **允许订阅过期。**
 
@@ -88,11 +88,11 @@ ms.locfileid: "43584005"
 
   - 如果**定期记帐**已打开，则无需执行任何操作。 你的订阅将自动计费，并且将根据你当前的付款频率，向你收取额外一年或一个月的费用。 如果您已关闭**定期付费**的任何原因，您始终可以[重新启用定期付费](renew-your-subscription.md)。
 
-  - 如果使用预付卡购买了 Office 365 商业版，则可以为订阅[启用定期记帐](renew-your-subscription.md)。
+  - 如果使用预付卡购买了 Microsoft 365 的商业应用程序，则可以为订阅[启用定期帐单](renew-your-subscription.md)。
 
   - 如果你是一位预付一年期免费订阅的批量许可客户，请联系你的合作伙伴购买新的产品密钥。 你将通过电子邮件收到说明，以在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活你的密钥。 若要了解如何查找新合作伙伴或以前使用过的合作伙伴，请参阅[查找合作伙伴或经销商](../../admin/manage/find-your-partner-or-reseller.md)。
 
-  - 如果您有 Office 365 商业版，请参阅[续订订阅](renew-your-subscription.md)。
+  - 如果你有 Microsoft 365 应用程序的商业版，请参阅[续订订阅](renew-your-subscription.md)。
 
 - **允许订阅过期。**
 
@@ -141,9 +141,9 @@ ms.locfileid: "43584005"
 
 ::: moniker-end
 
-在此状态下，用户具有对 Office 365 门户、Office 应用程序和服务（如电子邮件和 SharePoint Online）的正常访问权限。
+在此状态下，用户可以正常访问 Microsoft 365 门户、Office 应用程序和服务（如电子邮件和 SharePoint Online）。
   
-作为管理员，你仍然可以访问管理中心。 全局管理员或帐单管理员可以[重新激活订阅](reactivate-your-subscription.md)，并继续使用 Office 365。 如果不重新激活，请务必[备份你的数据](back-up-data-before-switching-plans.md)。
+作为管理员，你仍然可以访问管理中心。 别担心，全局或帐单管理员可以[重新激活订阅](reactivate-your-subscription.md)并继续使用 Microsoft 365。 如果不重新激活，请务必[备份你的数据](back-up-data-before-switching-plans.md)。
   
 ### <a name="state-disabled"></a>状态：已禁用
   
@@ -171,7 +171,7 @@ ms.locfileid: "43584005"
 
 ::: moniker-end
 
-作为全局或帐单管理员，你可以[重新激活订阅](reactivate-your-subscription.md)并继续使用所有客户数据的 Office 365。 如果选择不重新激活，请务必[备份你的数据](back-up-data-before-switching-plans.md)。
+作为全局管理员或帐单管理员，你可以[重新激活订阅](reactivate-your-subscription.md)，并继续使用 Microsoft 365，让你的所有客户数据保持不变。 如果选择不重新激活，请务必[备份你的数据](back-up-data-before-switching-plans.md)。
 
 ### <a name="state-deprovisioned"></a>状态： Deprovisioned
   
@@ -186,15 +186,15 @@ ms.locfileid: "43584005"
 
 ### <a name="what-happens-when-my-trial-ends"></a>我的试用版结束时会发生什么？
 
-试用版结束后，将无法继续免费使用 Office 365。 您有几个选项：
+试用版结束后，你将无法继续使用 Microsoft 365 免费版。 您有几个选项：
 
 ::: moniker range="o365-worldwide"
-- **购买 Office 365。** 试用期到期后，它会移动到宽限期，为你提供另外30天（在大多数国家和地区的实验中），以购买 Office 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买试用版的 Office 365 for business](../buy-a-subscription-from-your-free-trial.md)。
+- **购买 Microsoft 365。** 试用期到期后，它会移动到宽限期，为你提供另外30天（在大多数国家和地区的实验中），以购买 Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买试用版的 Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-- **购买 Office 365。** 试用期到期后，它会移动到宽限期，为你提供另外30天（在大多数国家和地区的实验中），以购买 Office 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买试用版的 Office 365 for business](../buy-a-subscription-from-your-free-trial.md)。
+- **购买 Microsoft 365。** 试用期到期后，它会移动到宽限期，为你提供另外30天（在大多数国家和地区的实验中），以购买 Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买试用版的 Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)。
 
 ::: moniker-end
 
@@ -203,9 +203,9 @@ ms.locfileid: "43584005"
 
 ::: moniker-end
 
-- **延长试用版。** 需要更多时间来评估 Office 365？ 在某些情况下，您可以[延长试用版](../extend-your-trial.md)。
+- **延长试用版。** 需要更多时间来评估 Microsoft 365？ 在某些情况下，您可以[延长试用版](../extend-your-trial.md)。
 
-- **取消试用版或让其过期。** 如果你决定不购买 Office 365，你可以让你的试用版过期或[取消](cancel-your-subscription.md)。 请务必备份要保留的所有数据。 30天宽限期后不久，你的试用帐户信息和数据将被永久删除。
+- **取消试用版或让其过期。** 如果你决定不购买 Microsoft 365，你可以让你的试用版过期或[取消](cancel-your-subscription.md)。 请务必备份要保留的所有数据。 30天宽限期后不久，你的试用帐户信息和数据将被永久删除。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>如果我取消订阅会发生什么情况？
 

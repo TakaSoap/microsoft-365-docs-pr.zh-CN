@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 EmailEvents 表
-description: 通过高级搜寻架构的 EmailEvents 表了解与 Office 365 电子邮件关联的事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、EmailEvents、网络邮件 id、发件人、收件人附件 id、附件名称、恶意软件判定、仿冒判定、附件计数、链接计数、url 计数
+description: 了解在高级搜寻架构的 EmailEvents 表中与 Microsoft 电子邮件关联的事件
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、EmailEvents、网络邮件 id、发件人、收件人、附件 id、附件名称、恶意软件结论、仿冒判定、附件计数、链接计数、url 计数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234781"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633527"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -39,7 +39,7 @@ ms.locfileid: "42234781"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `EmailId` | string | 唯一的电子邮件和收件人标识符 |
-| `NetworkMessageId` | string | 由 Office 365 生成的电子邮件的唯一标识符 |
+| `NetworkMessageId` | string | 由 Microsoft 365 生成的电子邮件的唯一标识符 |
 | `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
 | `SenderMailFromAddress` | string | “发件人”标题（又称为“信件发送方”或“返回路径地址”）中的发件人电子邮件地址 |
 | `SenderFromAddress` | string | 发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到） |

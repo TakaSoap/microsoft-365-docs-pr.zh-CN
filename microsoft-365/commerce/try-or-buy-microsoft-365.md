@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 了解如何获取免费试用版或购买适用于 Microsoft 365 的订阅。
-ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141619"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631901"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>试用或购买 Microsoft 365 订阅
 
 Microsoft 365 是一个完整的解决方案，它将 Office 365 和 Windows 10 结合到高级安全性和设备管理中。 如果你已有订阅，并且想要试用或购买 Microsoft 365 订阅，最好的办法是通过管理中心。 以下 Microsoft 365 订阅可在管理中心中使用，以便立即试用或购买：
   
-- Microsoft 365 商业版
+- Microsoft 365 商业高级版
 
 - Microsoft 365 企业版 E3
 
@@ -41,6 +41,7 @@ Microsoft 365 是一个完整的解决方案，它将 Office 365 和 Windows 10 
 ## <a name="try-or-buy-a-microsoft-365-subscription"></a>试用或购买 Microsoft 365 订阅
 
 ::: moniker range="o365-worldwide"
+
 
 1. 登录到 "管理中心[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)"，然后转到 "**付费** \> **购买服务**"。
 
@@ -67,13 +68,13 @@ Microsoft 365 是一个完整的解决方案，它将 Office 365 和 Windows 10 
 
 11. 在 "**订单接收**" 页上，选择 "**继续**"。
 
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. 登录到 "管理中心[https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)"，然后转到 "**付费** \> **购买服务**"。
 
-2. 在 "**购买服务**" 页上，将列出对您的组织可用的订阅。
+2. 在 "**购买服务**" 页上，将列出对您的组织可用的订阅。 
 
 3. 选择要试用或购买的 Microsoft 365 计划下的省略号，然后选择 "**启动免费试用版**"，这将为您提供为期一个月的25个用户许可证，也可以选择 "**立即购买**"。
 
@@ -99,7 +100,6 @@ Microsoft 365 是一个完整的解决方案，它将 Office 365 和 Windows 10 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. 登录到 "管理中心[https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)"，然后转到 "**付费** \> **购买服务**"。
 
 2. 在 "**购买服务**" 页上，将列出对您的组织可用的订阅。 
@@ -127,14 +127,16 @@ Microsoft 365 是一个完整的解决方案，它将 Office 365 和 Windows 10 
 
 ::: moniker-end
 
+
 ## <a name="next-steps"></a>后续步骤
 
 在获取新的订阅后，必须向将使用该订阅的用户分配许可证。 若要了解如何操作，请参阅[向用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
 
 ## <a name="related-articles"></a>相关文章
 
-[购买另一个 Office 365 商业版订阅](buy-another-subscription.md)
+[购买另一个 Microsoft 365 for business 订阅](buy-another-subscription.md)
 
-[购买或编辑 Office 365 商业版的附加项](buy-or-edit-an-add-on.md)
+[为 Microsoft 365 商业版购买或编辑加载项](buy-or-edit-an-add-on.md)
 
 [为你的订阅添加存储空间](add-storage-space.md)
+

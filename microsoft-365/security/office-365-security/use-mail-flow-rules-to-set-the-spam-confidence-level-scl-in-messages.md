@@ -16,16 +16,16 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection 中设置邮件的 SCL。
-ms.openlocfilehash: b7ea9a0f046e5a48f0de8d4ac9ae6d53821f03c0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: cc75130d1e30b4cd64c32b1729c8145ad3088742
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895091"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636424"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)
 
-如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则 EOP 使用反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）进行扫描垃圾邮件的入站邮件。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+如果您是 Exchange Online 邮箱或独立 Exchange Online Protection （EOP）客户（没有 Exchange Online 邮箱）的 Microsoft 365 客户，则 EOP 使用反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）来扫描入站邮件中的垃圾邮件。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 如果要将特定邮件标记为垃圾邮件，然后再通过垃圾邮件筛选进行扫描，或将邮件标记为跳过垃圾邮件筛选，则可以创建邮件流规则（也称为传输规则），以标识邮件并设置垃圾邮件可信度（SCL）。 有关 SCL 的详细信息，请参阅[Office 365 中的垃圾邮件可信度（SCL）](spam-confidence-levels.md)。
 
@@ -64,7 +64,7 @@ ms.locfileid: "42895091"
 
    - **7 至 9**：将邮件标记为**高可信度垃圾邮件**。 您为**高可信度垃圾**邮件筛选 verdicts 配置的操作将应用于该邮件（默认值为 "**将邮件移动到垃圾邮件" 文件夹**）。
 
-4. 为规则指定所需的任何其他属性。 完成后，单击“保存”****。
+4. 为规则指定所需的任何其他属性。 完成后，单击 **“保存”**。
 
 ## <a name="how-do-you-know-this-worked"></a>您如何知道操作成功？
 

@@ -1,5 +1,5 @@
 ---
-title: 支付 Office 365 商业版订阅费用
+title: 支付订阅费用
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: 了解可用于支付 Office 365 商业版订阅付费的付款选项。
+description: 了解哪些付款选项可用于为 Microsoft 365 for business 订阅付款。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540899"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635012"
 ---
-# <a name="pay-for-your-office-365-for-business-subscription"></a>支付 Office 365 商业版订阅费用
+# <a name="pay-for-your-subscription"></a>支付订阅费用
 
 设置订阅时，可以选择使用信用卡或银行帐户付款，或使用支票或电子资金转帐 (EFT) 按发票付款。 选择的任何方式就是继续用于后续计费周期的付款方式，除非[更改付款方式](change-payment-method.md)。
 
@@ -93,7 +93,7 @@ ms.locfileid: "43540899"
 如果按发票支付订阅费用，将收到一封电子邮件，指明帐单可供查看。 此电子邮件不包含帐单的副本。 然而，也可以选择[以电子邮件方式接收帐单副本](#receive-a-copy-of-your-billing-statement-in-email)。 帐单包括用于付款的选项的详细信息。 如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
 > [!NOTE]
-> 默认情况下，组织的帐单通知将被发送到 Office 365 电子邮件地址和组织中每个全局和帐单管理员的备选电子邮件地址。 若要更改备用电子邮件地址，请参阅[更改帐单邮寄地址](change-your-billing-addresses.md)。
+> 默认情况下，你的组织的帐单通知将被发送到 Microsoft 电子邮件地址和组织中每个全局和帐单管理员的备用电子邮件地址。 若要更改备用电子邮件地址，请参阅[更改帐单邮寄地址](change-your-billing-addresses.md)。
 
 ### <a name="can-i-pay-my-bill-online"></a>可否在线支付帐单？
 

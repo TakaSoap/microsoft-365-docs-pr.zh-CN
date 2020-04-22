@@ -1,5 +1,5 @@
 ---
-title: 延长 Office 365 商业版试用期
+title: 延长试用期
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,19 +20,20 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
-description: 了解如何在另一个30day 期间扩展试用订阅。
-ms.openlocfilehash: f3e4241156d312d5dc236689344ad29ce1e8ee4d
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 了解如何在30天内延长试用订阅。
+ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142605"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634892"
 ---
-# <a name="extend-your-trial-for-office-365-for-business"></a>延长 Office 365 商业版试用期
+# <a name="extend-your-trial"></a>延长试用期
 
-在购买之前，是否需要更多时间来试用 Office 365 商业版 的功能？如果试用版订阅将在 15 天内过期，并且之前尚未延长试用期，则试用期可以延长 30 天。该操作仅可执行一次。
+在购买之前，你是否需要更多时间来试用 Microsoft 365 商业版的功能？ 如果试用版订阅将在 15 天内过期，并且之前尚未延长试用期，则试用期可以延长 30 天。 该操作仅可执行一次。
 
 ::: moniker range="o365-worldwide"
+
 
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
@@ -44,7 +45,9 @@ ms.locfileid: "43142605"
 
 ::: moniker range="o365-germany"
 
+
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+
 
 2. 在 "**订阅**" 页上，选择要扩展的试用订阅，然后在过期日期下，选择 "**扩展试用版**"。
 
@@ -62,4 +65,4 @@ ms.locfileid: "43142605"
 
 ::: moniker-end
 
-准备好购买后，请参阅[购买试用版的 Office 365 for business](buy-a-subscription-from-your-free-trial.md)。
+准备好购买后，请参阅[购买试用版](buy-a-subscription-from-your-free-trial.md)。

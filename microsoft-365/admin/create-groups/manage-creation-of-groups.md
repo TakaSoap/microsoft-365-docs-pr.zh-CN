@@ -1,5 +1,5 @@
 ---
-title: 管理可创建 Office 365 组的人员
+title: 管理可以创建组的用户
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: 了解如何控制哪些用户可以创建 Office 365 组。
-ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
+ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547582"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630401"
 ---
-# <a name="manage-who-can-create-office-365-groups"></a>管理可创建 Office 365 组的人员
+# <a name="manage-who-can-create-groups"></a>管理可以创建组的用户
 
   
-由于用户可以很轻松地创建 Office 365 组，因此你不会收到代表其他人创建这些组的请求。 但是，根据您的业务，您可能希望控制谁能够创建组。
+由于用户很容易创建 Microsoft 365 组，因此你不会收到代表其他人创建这些组的请求。 但是，根据您的业务，您可能希望控制谁能够创建组。
   
-本文介绍如何禁用在所有使用组的 Office 365 服务中创建组的功能，其中包括：
+本文介绍如何禁用在所有使用组的 Microsoft 365 服务中创建组的功能，包括：
   
 - Outlook
     
@@ -53,9 +53,9 @@ ms.locfileid: "43547582"
 
 - 路线图
     
-您可以将 Office 365 组创建限制为特定安全组的成员。 若要配置此设置，请使用 Windows PowerShell。 本文将引导您完成所需的步骤。
+您可以将 Microsoft 365 组创建限制为特定安全组的成员。 若要配置此设置，请使用 Windows PowerShell。 本文将引导您完成所需的步骤。
   
-本文中的步骤不会阻止某些角色的成员创建组。 Office 365 全局管理员可以通过任何方式创建组，例如 Microsoft 365 管理中心、Planner、团队、Exchange 和 SharePoint Online。 其他角色可以通过有限的方法创建组，如下所示。
+本文中的步骤不会阻止某些角色的成员创建组。 全局管理员可以通过任何方式创建组，例如 Microsoft 365 管理中心、Planner、团队、Exchange 和 SharePoint Online。 其他角色可以通过有限的方法创建组，如下所示。
         
   - Exchange 管理员： Exchange 管理中心、Azure AD
     
@@ -71,7 +71,7 @@ ms.locfileid: "43547582"
   
   - 用户管理管理员： Microsoft 365 管理中心、Yammer、Azure AD
      
-如果你属于以上其中一种角色的成员，则可以为受限用户创建 Office 365 组，然后将该用户分配为组所有者。 具有此角色的用户可以在 Yammer 中创建连接的组，而不考虑可能阻止创建的任何 PowerShell 设置。
+如果您是上述某个角色的成员，则可以为受限制的用户创建 Microsoft 365 组，然后将该用户分配为该组的所有者。 具有此角色的用户可以在 Yammer 中创建连接的组，而不考虑可能阻止创建的任何 PowerShell 设置。
 
 ## <a name="licensing-requirements"></a>许可要求
 
@@ -85,16 +85,16 @@ ms.locfileid: "43547582"
 
 以下人员不需要为其分配 Azure AD Premium 或 Azure AD 基本 EDU 许可证：
 
-- 属于 Office 365 组成员并不能创建其他组的人员。
+- 属于 Microsoft 365 组成员并不能创建其他组的人员。
 
-## <a name="step-1-create-a-security-group-for-users-who-need-to-create-office-365-groups"></a>步骤 1：为需要创建 Office 365 组 的用户创建一个安全组
+## <a name="step-1-create-a-security-group-for-users-who-need-to-create-microsoft-365-groups"></a>步骤1：为需要创建 Microsoft 365 组的用户创建安全组
 
 您的组织中仅有一个安全组可用于控制能够创建组的用户。 但是，你可以将其他安全组包含在内作为该组的成员。 例如，名为"允许创建组"的组作为指定的安全组，名为"Microsoft Planner 用户"和"Exchange Online 用户"的组作为该安全组的成员。
 
 上面列出的角色中的管理员不需要是该组的成员：它们保留了其创建组的能力。
 
 > [!IMPORTANT]
-> 请务必使用**安全组**来限制可以创建组的用户。 如果您尝试使用 Office 365 组，则成员将无法从 SharePoint 创建组，因为它会检查安全组。 
+> 请务必使用**安全组**来限制可以创建组的用户。 如果尝试使用 Microsoft 365 组，则成员将无法从 SharePoint 创建组，因为它会检查安全组。 
     
 1. 在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
 
@@ -174,7 +174,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
     
 ## <a name="step-4-verify-that-it-works"></a>步骤4：验证它是否正常运行
 
-1. 使用不应具备组创建权限的人员的用户帐户登录 Office 365。 也就是说，它们不是您创建的安全组的成员，也不是管理员的成员。
+1. 使用无法创建组的人员的用户帐户登录。 也就是说，它们不是您创建的安全组的成员，也不是管理员的成员。
     
 2. 选择 " **Planner** " 磁贴。 
     

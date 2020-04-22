@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 组中管理来宾访问
+title: 在 Microsoft 365 组中管理来宾访问
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: 了解如何将来宾添加到 Office 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 了解如何将来宾添加到 Microsoft 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
+ms.openlocfilehash: cca1d3dff4d95f5b15b9f18d5eeebcf054e52fe3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894499"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630063"
 ---
-# <a name="manage-guest-access-in-office-365-groups"></a>在 Office 365 组中管理来宾访问
+# <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 组中管理来宾访问
 
-默认情况下，为您的组织启用对 Office 365 组的来宾访问。 管理员可以控制是否允许来宾访问整个组织或单个组的组。
+默认情况下，为您的组织启用对 Microsoft 365 组的来宾访问。 管理员可以控制是否允许来宾访问整个组织或单个组的组。
 
-当它打开时，组成员可以通过 Web 上的 Outlook 将来宾用户邀请到 Office 365 组。 邀请将发送给组所有者以供审批。
+当它打开时，组成员可以通过 Web 上的 Outlook 将来宾用户邀请到 Microsoft 365 组。 邀请将发送给组所有者以供审批。
 
 > [!Note]
 > 处于本机模式或[欧盟地区](https://go.microsoft.com/fwlink/?linkid=2107357)的 Yammer 企业网络不支持网络来宾。
-> Office 365 连接的 Yammer 组目前不支持来宾访问，但您可以在 Yammer 网络中创建未连接的外部组。 有关说明，请参阅[在 Yammer 中创建和管理外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)。
+> Microsoft 365 连接的 Yammer 组目前不支持来宾访问，但你可以在 Yammer 网络中创建未连接的外部组。 有关说明，请参阅[在 Yammer 中创建和管理外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)。
 
 ### <a name="edit-guest-information"></a>编辑来宾信息
 
@@ -48,11 +48,11 @@ ms.locfileid: "42894499"
 
 如果要启用或禁用组中的来宾访问，可以在 Microsoft 365 管理中心中执行此操作。
 
-1. 在管理中心中，转到 "**设置** \> "**设置**并选择 " **Office 365 组**"。
+1. 在管理中心中，转到 "**设置** \> "**设置**并选择 " **Microsoft 365 组**"。
   
-2. 在 " **Office 365 组**" 页上，选择是否要让组织外部的用户访问组资源，或允许组所有者将组织外部的人员添加到组中。
+2. 在 " **Microsoft 365 组**" 页上，选择是否要让组织外部的用户访问组资源，或允许组所有者将组织外部的人员添加到组中。
 
-## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>从管理中心向 Office 365 组添加来宾
+## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>从管理中心向 Microsoft 365 组添加来宾
 
 如果来宾已经存在于目录中，则可以从 Microsoft 365 管理中心将其添加到你的组。
   

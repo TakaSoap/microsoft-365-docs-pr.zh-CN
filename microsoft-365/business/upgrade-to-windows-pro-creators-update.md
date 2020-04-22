@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 探索将 Windows 设备升级到 Windows 10 专业版以利用更高级安全性和商业网络功能的方法。
-ms.openlocfilehash: 3901754d9ef269ae74dbf1893cb62b1ba810919d
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: f0cedda49dbff2a8c2884bb52e240fabfbeb4537
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560652"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632043"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>将 Windows 设备升级到 Windows 10 专业版
 
@@ -53,12 +53,12 @@ ms.locfileid: "42560652"
     - 阅读有关如何使用此工具和创建安装媒体的说明。 
 
 > [!NOTE]
-> 如果你有运行 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 Pro 的 Windows 设备，Microsoft 365 商业版订阅将向你提供 Windows Pro 10 升级。
+> 如果你有运行 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 Pro 的 Windows 设备，Microsoft 365 for business 订阅将向你提供 Windows Pro 10 升级。
     
-请参阅[为 Microsoft 365 商业版用户设置 windows 设备](set-up-windows-devices.md)，以完成 Windows 10 设备的设置。 
+请参阅为[Microsoft 365 for business 用户设置 windows 设备](set-up-windows-devices.md)，以完成 windows 10 设备设置。 
   
-请参阅[为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)，以完成 Android 和 iOS 设备的设置。 
+请参阅为[Microsoft 365 for business 用户设置移动设备](set-up-mobile-devices.md)，以完成 Android 和 iOS 设备的设置。 
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>有关设置和使用 Microsoft 365 业务的详细信息
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>有关设置和使用 Microsoft 365 商业版的详细信息
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

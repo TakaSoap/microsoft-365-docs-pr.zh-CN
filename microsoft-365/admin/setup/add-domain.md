@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 通过在 DNS 主机上添加 DNS 记录，将您的域添加到 Microsoft 365 管理中心中的 Office 365。 安装向导将引导您完成该过程。
-ms.openlocfilehash: 746163b83190a73326ad589b8e3bc9377ddaa9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209636"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631811"
 ---
 # <a name="add-a-domain-to-office-365"></a>将域添加到 Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "43209636"
     
 5. 选择要验证您是否拥有域的方式。
     
-    1. 如果您的域是在 GoDaddy 或 1&amp;1 注册的，请选择 "**登录** > "。在 "**下一步**"，Office 365[将自动设置您的记录](../get-help-with-domains/domain-connect.md)。
+    1. 如果你的域是在 GoDaddy 或 1&amp;1 注册的，**请选择** > "**下一步**"，Microsoft[将自动设置你的记录](../get-help-with-domains/domain-connect.md)。
     
     2. 可向域注册联系人发送包含验证码的电子邮件。 如果无法识别记录的电子邮件或对其具有访问权限，则可以使用第三个选项。
     
@@ -112,4 +112,4 @@ ms.locfileid: "43209636"
 
 [设置域（主机特定的操作说明）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[获取 Office 365 域的帮助](../get-help-with-domains/get-help-with-domains.md)
+[获取有关域的帮助](../get-help-with-domains/get-help-with-domains.md)

@@ -1,5 +1,5 @@
 ---
-title: 购买另一个 Office 365 商业版订阅
+title: 购买另一个 Microsoft 365 for business 订阅
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,27 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
-description: '了解如何为你的组织购买其他 Office 365 for business 订阅（如果你已拥有订阅）。 '
+description: '了解如何为你的组织购买另一个 Microsoft 365 for business 订阅（如果你已拥有订阅）。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142259"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634928"
 ---
-# <a name="buy-another-office-365-for-business-subscription"></a>购买另一个 Office 365 商业版订阅
+# <a name="buy-another-microsoft-365-for-business-subscription"></a>购买另一个 Microsoft 365 for business 订阅
 
-如果你已有 Office 365 for business 订阅，并且想要为你的组织购买其他订阅，最好的办法是通过管理中心。 如果您尚未为您的组织购买第一个 Office 365 for business 订阅，请转到[此处](https://products.office.com/business/compare-office-365-for-business-plans)选择计划。
+如果你已有 Microsoft 365 for business 订阅，并且想要为你的组织购买其他订阅，最好的办法是通过管理中心。 如果您尚未为您的组织购买第一个 Microsoft 365 for business 订阅，请转到[此处](https://products.office.com/business/compare-office-365-for-business-plans)选择计划。
   
 当您通过管理中心购买其他订阅时，将保证新订阅将与您现有订阅的同一个组织（域名空间）相关联。 这样可以更轻松地在订阅之间移动组织中的用户，或为他们分配所需的其他订阅的用户许可证。
   
-在购买新订阅后，您需要将您要使用该订阅的用户分配给该订阅的用户许可证。 若要了解如何操作，请参阅[在 Office 365 for business 中向用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
+在购买新订阅后，您需要将您要使用该订阅的用户分配给该订阅的用户许可证。 若要了解如何操作，请参阅[在 Microsoft 365 for business 中向用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
   
 ## <a name="buy-another-subscription"></a>购买另一个订阅
 
 ::: moniker range="o365-worldwide"
+
 
 1. 在 "管理中心" 中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>" 页。
 

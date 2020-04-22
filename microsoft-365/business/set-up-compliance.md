@@ -1,5 +1,5 @@
 ---
-title: 为 Microsoft 365 商业版增加威胁防护
+title: 为 Microsoft 365 商业高级版增加威胁防护
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护您的客户和客户的敏感信息。
-ms.openlocfilehash: 6f4520b052c2e7acb8748d3c9d6e26777cb56d4b
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561232"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635116"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
-您的 Microsoft 365 业务提供了保护数据和设备的功能，帮助您保护您的客户和客户的敏感信息。
+你的 Microsoft 365 商业高级版附带了保护数据和设备的功能，可帮助您保持和客户的敏感信息安全。
 
 ## <a name="set-up-dlp-features"></a>设置 DLP 功能
 

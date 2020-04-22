@@ -11,24 +11,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的队列通知和队列。
-ms.openlocfilehash: bc777e3c9764987dc72aa0407f19618bc26f7528
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7bb103bad89ee39991a5c16d7101ab4658842479
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082719"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635180"
 ---
 # <a name="queue-alerts-and-queues"></a>队列警报和队列
 
 ## <a name="queue-alerts"></a>队列通知
 
-当无法使用连接器从 Office 365 组织向本地或合作伙伴电子邮件服务器发送邮件时，邮件将在 Office 365 中排队。 导致出现此情况的常见示例为：
+当无法使用连接器从组织向本地或合作伙伴电子邮件服务器发送邮件时，邮件将在 Office 365 中排队。 导致出现此情况的常见示例为：
 
 - 连接器配置不正确。
 
 - 本地环境中的网络或防火墙发生变化。
 
-Office 365 将继续重试传递24小时。 24小时后，邮件将会过期，并将返回到未送达报告（也称为 "Ndr" 或 "退回邮件"）中的发件人。
+Microsoft 365 将继续重试传递24小时。 24小时后，邮件将会过期，并将返回到未送达报告（也称为 "Ndr" 或 "退回邮件"）中的发件人。
 
 如果排队的电子邮件数量超过了预定义的阈值（默认值为2000邮件），则在**最近通知**的邮件流仪表板中将提供这些通知，并且管理员将收到电子邮件通知（指向其备用电子邮件地址）。 若要配置警报阈值、每日通知限制和/或通知收件人，请参阅下面的 "**自定义队列通知**" 部分。
 

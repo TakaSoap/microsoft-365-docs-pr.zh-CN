@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
-ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
+ms.openlocfilehash: 101a37f48e31f762171b2269055d0e69c889d0dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061721"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633295"
 ---
-# <a name="enable-the-report-message-add-in-in-office-365"></a>在 Office 365 中启用报告邮件加载项
+# <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
 > [!NOTE]
-> 如果您是使用 Exchange Online 邮箱的 Office 365 组织中的管理员，我们建议您在 Office 365 安全性 & 合规性中心中使用提交门户。 有关详细信息，请参阅[使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。
+> 如果您是具有 Exchange Online 邮箱的组织中的管理员，我们建议您在安全 & 合规性中心中使用提交门户。 有关详细信息，请参阅[使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。
 
 Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮件外接程序使用户能够轻松地将误报（电子邮件被标记为 "坏"）或 "漏报（允许错误电子邮件"）报告给 Microsoft 及其子公司进行分析。 Microsoft 使用这些提交改进电子邮件保护技术的有效性。
 
@@ -38,16 +38,16 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
 如果您是单个用户，则可以[为自己启用报告邮件加载项](#get-the-report-message-add-in-for-yourself)。
 
-如果您是 Office 365 全局管理员或 Exchange Online 管理员，并且将 Exchange 配置为使用 OAuth 身份验证，则可以[为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。 现在，可以通过[集中部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)使用报告消息加载项。
+如果您是全局管理员或 Exchange Online 管理员，并且将 Exchange 配置为使用 OAuth 身份验证，则可以[为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。 现在，可以通过[集中部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)使用报告消息加载项。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 报告邮件加载项适用于大多数 Office 365 订阅和以下产品：
+- 报告邮件加载项适用于大多数 Microsoft 365 订阅和以下产品：
 
   - Outlook 网页版
   - Outlook 2013 SP1 或更高版本
   - Outlook 2016 for Mac
-  - Outlook 包含在 Office 365 专业增强版中
+  - Outlook 包含在适用于企业的 Microsoft 365 应用程序中
 
 - 报告邮件外接程序目前不可用于：
 
@@ -58,7 +58,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
 - 对于组织安装，需要将组织配置为使用 OAuth 身份验证。 有关详细信息，请参阅[确定加载项的集中部署是否适用于你的组织](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-- 管理员需要是全局管理员角色组的成员。 有关详细信息，请参阅[Office 365 Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 管理员需要是全局管理员角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>获取自己的报告邮件外接程序
 
@@ -70,7 +70,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
 3. 在显示的对话框中，查看使用条款和隐私策略，然后单击 "**继续**"。
 
-4. 使用你的工作或学校帐户（用于商业用途）或你的 Microsoft 帐户（供个人使用）登录 Office 365。
+4. 使用你的工作或学校帐户（用于商业用途）或你的 Microsoft 帐户（供个人使用）登录。
 
 安装并启用加载项后，您将看到以下图标：
 
@@ -153,6 +153,6 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
 2. 查找并选择**报告邮件**加载项。
 
-3. 在显示的 "**编辑报告消息**" 浮出控件中，查看并编辑组织的相应设置。 完成时，请单击“保存”****。
+3. 在显示的 "**编辑报告消息**" 浮出控件中，查看并编辑组织的相应设置。 完成后，单击 **“保存”**。
 
    ![报告邮件外接程序的设置](../../media/EditReportMessageAddIn.png)

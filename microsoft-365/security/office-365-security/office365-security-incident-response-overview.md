@@ -1,5 +1,5 @@
 ---
-title: Office 365 安全事件响应
+title: 安全事件响应
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 此解决方案告诉您在 Office 365 中最常见的 cybersecurity 攻击可能如下所示，以及如何对其做出响应
-ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 此解决方案告诉您在 Microsoft 365 中最常见的 cybersecurity 攻击可能如下所示，以及如何对其做出响应
+ms.openlocfilehash: 4c5713a0689dae07fe5300c04754d77912f53976
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598719"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634504"
 ---
-# <a name="office-365-security-incident-response"></a>Office 365 安全事件响应
+# <a name="security-incident-response"></a>安全事件响应
 
  **摘要：** 此解决方案告诉您在 Office 365 中最常见的 cybersecurity 攻击的指标，如何正确确认任何给定的攻击以及如何对其做出响应。
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598719"
 
 并非所有 cyberattacks 都可以 thwarted。 攻击者经常在防御策略中寻找新的弱点，或者他们在利用旧弱点。 了解如何识别攻击允许您更快地响应它，从而缩短了安全事件的持续时间。
 
-本系列文章可帮助您了解特定类型的攻击在 Office 365 中的外观，并提供您可以采取的措施来做出响应。 它们是快速入门点以了解：
+本系列文章可帮助您了解特定类型的攻击在 Microsoft 365 中的外观，并提供了您可以采取的措施来做出响应。 它们是快速入门点以了解：
 
 - 什么是攻击以及它的工作原理。
 
@@ -55,9 +55,9 @@ ms.locfileid: "41598719"
 
 - [响应 Office 365 中遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>安全 Microsoft 365，如 cybersecurity pro
 
-你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用“[Office 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
+你的 Microsoft 365 订阅附带了一组功能强大的安全功能，可用于保护你的数据和用户。  使用[microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 microsoft 建议的最佳实践，以确保 microsoft 365 组织的安全。
 
 - 需要在前 30 天完成的任务。  这些任务会对你的用户产生直接影响并且影响很小。
 

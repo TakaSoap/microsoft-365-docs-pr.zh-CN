@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的补救措施自动化调查和响应
+title: Microsoft 365 自动调查和响应中的补救措施
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
 f1.keywords:
 - NOCSH
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: d0f08c3e89882e21263c18246612949ea68ac1ad
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 8dfb203cfdae179d8d88842a2d2b55aeab2e17fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528925"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634648"
 ---
-# <a name="remediation-actions-in-office-365"></a>Office 365 中的修正操作
+# <a name="remediation-actions-in-microsoft-365"></a>Microsoft 365 中的补救措施
 
 ## <a name="remediation-actions"></a>修正操作
 
@@ -60,9 +60,9 @@ Office 365 中的[自动化调查和响应功能](https://docs.microsoft.com/mic
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 Office 365 中查看自动调查的详细信息和结果](air-view-investigation-results.md)
+- [在 Microsoft 365 中查看自动调查的详细信息和结果](air-view-investigation-results.md)
 
-- [查看 Office 365 中的自动调查后的挂起或已完成的修正操作](air-review-approve-pending-completed-actions.md)
+- [在 Microsoft 365 中进行自动调查后查看挂起或已完成的修正操作](air-review-approve-pending-completed-actions.md)
 
 
 ## <a name="related-articles"></a>相关文章

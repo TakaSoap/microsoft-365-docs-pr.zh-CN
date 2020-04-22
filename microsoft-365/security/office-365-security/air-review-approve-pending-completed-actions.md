@@ -1,5 +1,5 @@
 ---
-title: 查看和批准 Office 365 中的挂起的修正操作自动化调查和响应
+title: 在自动调查和响应中查看并批准待解决的补救措施
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: d2b617e29fc36d1f39ab6c9ef6f708d5f608b206
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826433"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634636"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>查看 Office 365 中的自动调查后的挂起或已完成的修正操作
 

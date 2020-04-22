@@ -1,5 +1,5 @@
 ---
-title: Office 365 中电子邮件中的安全提示
+title: 电子邮件中的安全提示
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,19 +16,19 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: 介绍 EOP 和 Office 365 垃圾邮件筛选器筛选出的电子邮件的安全提示。
-ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: 介绍 EOP 和垃圾邮件筛选器筛选出的电子邮件的安全提示。
+ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032812"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634300"
 ---
-# <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 中电子邮件中的安全提示
+# <a name="safety-tips-in-email-messages"></a>电子邮件中的安全提示
 
-Exchange Online Protection （EOP）和 Office 365 针对垃圾邮件、网络钓鱼和恶意软件阻止提供保护。 如今，其中一些攻击非常精心编制，使其看起来是合法的。 将邮件发送到 "垃圾邮件" 文件夹并不总是足够。 现在，当您在 Outlook 或 web 上的 Outlook 中检查您的电子邮件时，EOP 会自动检查发件人，并将安全提示添加到电子邮件的顶部。
+Exchange Online Protection （EOP）和 Microsoft 365 保护你的垃圾邮件、网络钓鱼和恶意软件防护。 如今，其中一些攻击非常精心编制，使其看起来是合法的。 将邮件发送到 "垃圾邮件" 文件夹并不总是足够。 现在，当您在 Outlook 或 web 上的 Outlook 中检查您的电子邮件时，EOP 会自动检查发件人，并将安全提示添加到电子邮件的顶部。
 
-安全提示（一种由颜色编码的邮件）将警告您可能有害的邮件。 您的收件箱中的大多数邮件不会有安全提示。 只有在 EOP 和 Office 365 包含可帮助阻止垃圾邮件、网络钓鱼和恶意软件攻击的信息时，才会看到它们。 如果安全提示确实显示在收件箱中，则可以使用以下示例来了解有关每种安全提示的详细信息。
+安全提示（一种由颜色编码的邮件）将警告您可能有害的邮件。 您的收件箱中的大多数邮件不会有安全提示。 只有在 EOP 和 Microsoft 365 包含可帮助阻止垃圾邮件、网络钓鱼和恶意软件攻击的信息时，才会看到它们。 如果安全提示确实显示在收件箱中，则可以使用以下示例来了解有关每种安全提示的详细信息。
 
 - 可疑邮件（红色安全提示）。
 
@@ -58,6 +58,6 @@ Exchange Online Protection （EOP）和 Office 365 针对垃圾邮件、网络�
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 
-始终为 web 上的 Outlook 启用安全提示，即使每封邮件都将收到一个。 Office 365 管理员可以关闭其他电子邮件客户端（如 Outlook）的安全提示。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+始终为 web 上的 Outlook 启用安全提示，即使每封邮件都将收到一个。 管理员可以关闭其他电子邮件客户端（如 Outlook）的安全提示。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 如果您不同意 EOP 如何对邮件进行分类（也就是说，邮件不是垃圾邮件或应该已被标记为垃圾邮件），您可以将邮件提交给 Microsoft 进行分析以帮助提高您的体验。 有关说明，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。 您还可以单击安全提示中的 "反馈" 链接以将评论直接提交给 Microsoft，以帮助我们改进。

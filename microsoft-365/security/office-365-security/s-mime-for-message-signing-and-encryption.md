@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 294fd22ff81e9ddaabf0664afb34a37c008a6d09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170492"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634324"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 
@@ -68,7 +68,7 @@ S/MIME （安全/多用途 Internet 邮件扩展）是发送经过数字签名�
 
 - **传输层安全性（TLS）** 对电子邮件服务器之间的隧道或路由进行加密，以帮助阻止窥探和窃听。
 
-- **安全套接字层（SSL）** 对电子邮件客户端和 Office 365 服务器之间的连接进行加密。
+- **安全套接字层（SSL）** 对电子邮件客户端和 Microsoft 365 服务器之间的连接进行加密。
 
 - **BitLocker**将对数据中心中的硬盘驱动器上的数据进行加密，以便在有人未经授权访问的情况下对其进行读取。
 

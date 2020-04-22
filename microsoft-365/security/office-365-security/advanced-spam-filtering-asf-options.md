@@ -16,12 +16,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: 反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）中的高级垃圾邮件筛选器（ASF）设置允许管理员识别包含在垃圾邮件中通常使用的特定邮件属性的邮件。 ASF 检测会将邮件标记为垃圾邮件或高可信度垃圾邮件，具体取决于属性。
-ms.openlocfilehash: e35279092e9d77b18eadd2af33909eda90bdd80b
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 58114fa97d46a5a6f6f49c24826ace9edd811e1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894248"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634726"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Office 365 中的高级垃圾邮件筛选器（ASF）设置
 
@@ -33,7 +33,7 @@ ms.locfileid: "42894248"
 > [!NOTE]
 > 启用一个或多个 ASF 设置是一种严格的垃圾邮件筛选方法。 您不能报告由 ASF 筛选为误报的邮件。 您可以通过以下方式识别通过 ASF 筛选的邮件： <ul><li>定期的最终用户垃圾邮件隔离通知。</li><li>隔离中的已筛选邮件的存在情况。</li><li>将添加`X-CustomSpam:`到邮件中的特定 X 标头字段，如本主题中所述。</li></ul>
 
-以下各节介绍了 Office 365 安全 & 合规性中心和 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell （[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy)和[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)）中的反垃圾邮件策略中提供的 ASF 设置和选项。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+以下各节介绍了安全性 & 合规性中心和 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell （[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy)和[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)）中的反垃圾邮件策略中提供的 ASF 设置和选项。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="enable-disable-or-test-asf-settings"></a>启用、禁用或测试 ASF 设置
 
@@ -49,7 +49,7 @@ ms.locfileid: "42894248"
 
   - **添加默认的 X 标头文本（*AddXHeader*）**：将 X 标值`X-CustomSpam: This message was filtered by the custom spam filter option`添加到邮件中。 您可以使用收件箱规则或邮件流规则（也称为传输规则）中的此值来影响邮件的路由和传递。
 
-  - **发送密件抄送邮件（*BccMessage*）**：在邮件的 "密件抄送" 字段中，指定的电子邮件地址（PowerShell 中的*TestModeBccToRecipients*参数值）被添加到邮件的 "密件抄送" 字段中，并将邮件传递给密件抄送收件人。 在 Office 365 安全 & 合规性中心中，可以用分号（;）分隔多个电子邮件地址。 在 PowerShell 中，可以用逗号分隔多个电子邮件地址。
+  - **发送密件抄送邮件（*BccMessage*）**：在邮件的 "密件抄送" 字段中，指定的电子邮件地址（PowerShell 中的*TestModeBccToRecipients*参数值）被添加到邮件的 "密件抄送" 字段中，并将邮件传递给密件抄送收件人。 在安全 & 合规性中心中，使用分号（;）分隔多个电子邮件地址。 在 PowerShell 中，可以用逗号分隔多个电子邮件地址。
 
   **注意**：
 
@@ -93,5 +93,5 @@ ms.locfileid: "42894248"
 |**应用敏感词列表** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft 维护一个动态但不可编辑的、与潜在攻击性邮件关联的单词列表。 <br/><br/> 包含主题或邮件正文中的敏感单词列表中的单词的邮件被标记为高可信度垃圾邮件。|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF 记录：硬失败** <br><br/> *MarkAsSpamSpfRecordHardFail*|从不在源电子邮件域的 DNS 中的 SPF 发件人策略框架（SPF）记录中指定的 IP 地址发送的邮件将被标记为高可信度垃圾邮件。 <br/><br/> 测试模式对此设置不可用。|`X-CustomSpam: SPF Record Fail`|
 |**有条件发件人 ID 筛选：硬失败** <br><br/> *MarkAsSpamFromAddressAuthFail*|硬失败的邮件条件发件人 ID 检查被标记为垃圾邮件。 <br/><br/> 此设置将 SPF 检查与发件人 ID 检查组合在一起，以帮助防止包含伪造发件人的邮件头。 <br/><br/> 测试模式对此设置不可用。|`X-CustomSpam: SPF From Record Fail`|
-|**NDR 退信** <br><br/> *MarkAsSpamNdrBackscatter*|*退信*是非送达报告（也称为 "ndr" 或 "退回邮件"），由电子邮件中的伪造发件人引起。 有关详细信息，请参阅[退信 messages AND EOP](backscatter-messages-and-eop.md)。 <br/><br/> 您无需在以下环境中配置此设置，因为会传递合法 Ndr，并且退信会被标记为垃圾邮件： <ul><li>使用 Exchange Online 邮箱的 Office 365 组织。</li><li>通过 EOP 路由*出站*电子邮件的内部部署电子邮件组织。</li></ul><br/> 在将入站电子邮件保护到本地邮箱的独立 EOP 环境中，打开或关闭此设置的结果如下： <ul><li> **打开**：将传递合法 ndr，并将退信标记为垃圾邮件。</li><li>**Off**：合法的 ndr 和退信通过正常的垃圾邮件筛选。 大多数合法的 Ndr 将传递给原始邮件发件人。 某些（而非全部）退信被标记为高可信度垃圾邮件。 根据定义，退信只能传递给欺骗性发件人，而不能传递给原始发件人。</li></ul><br/> 测试模式对此设置不可用。|`X-CustomSpam: Backscatter NDR`|
+|**NDR 退信** <br><br/> *MarkAsSpamNdrBackscatter*|*退信*是非送达报告（也称为 "ndr" 或 "退回邮件"），由电子邮件中的伪造发件人引起。 有关详细信息，请参阅[退信 messages AND EOP](backscatter-messages-and-eop.md)。 <br/><br/> 您无需在以下环境中配置此设置，因为会传递合法 Ndr，并且退信会被标记为垃圾邮件： <ul><li>使用 Exchange Online 邮箱的 Microsoft 365 组织。</li><li>通过 EOP 路由*出站*电子邮件的内部部署电子邮件组织。</li></ul><br/> 在将入站电子邮件保护到本地邮箱的独立 EOP 环境中，打开或关闭此设置的结果如下： <ul><li> **打开**：将传递合法 ndr，并将退信标记为垃圾邮件。</li><li>**Off**：合法的 ndr 和退信通过正常的垃圾邮件筛选。 大多数合法的 Ndr 将传递给原始邮件发件人。 某些（而非全部）退信被标记为高可信度垃圾邮件。 根据定义，退信只能传递给欺骗性发件人，而不能传递给原始发件人。</li></ul><br/> 测试模式对此设置不可用。|`X-CustomSpam: Backscatter NDR`|
 |

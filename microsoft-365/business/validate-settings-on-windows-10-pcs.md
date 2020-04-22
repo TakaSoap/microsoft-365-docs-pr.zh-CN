@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: 了解如何验证 Microsoft 365 商业应用保护设置是否在用户的 Windows 10 设备上生效。
-ms.openlocfilehash: 47977f8d79eb6dbb2f4d087af8f8ad7da4313c61
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 了解如何验证 Microsoft 365 for business 应用保护设置是否在用户的 Windows 10 设备上生效。
+ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560672"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635696"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的设备保护设置
 
@@ -38,11 +38,11 @@ ms.locfileid: "42560672"
 
 [设置设备策略](protection-settings-for-windows-10-pcs.md)后，可能需要几个小时才能使策略在用户的设备上生效。 您可以通过查看用户设备上的各种 Windows 设置屏幕来确认这些策略是否生效。 由于用户无法修改其 Windows 10 设备上的 Windows Update 和 Windows Defender 防病毒设置，因此许多选项将灰显。
   
-1. 转到 "**设置** \> " " ** &amp;更新安全** **** \> \> Windows 更新**重新启动选项**"，并确认所有设置均显示为灰色。 
+1. 转到 "**设置** \> " " ** &amp;更新安全** **Windows Update** \> \> Windows 更新**重新启动选项**"，并确认所有设置均显示为灰色。 
     
     ![所有重新启动选项都将灰显。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. 转到 "**设置** \> " "**更新&amp;安全** **** \> \> Windows 更新**高级选项**"，并确认所有设置均显示为灰色。 
+2. 转到 "**设置** \> " "**更新&amp;安全** **Windows Update** \> \> Windows 更新**高级选项**"，并确认所有设置均显示为灰色。 
     
     ![Windows 高级更新选项全部显示为灰色。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
@@ -60,11 +60,11 @@ ms.locfileid: "42560672"
   
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)（Microsoft 365 Business 文档和资源）
+[适用于业务的 Microsoft 365 文档和资源](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Microsoft 365 Business 入门](microsoft-365-business-overview.md)
+[Microsoft 365 商业版入门](microsoft-365-business-overview.md)
   
-[管理 Microsoft 365 Business](manage.md)
+[管理 Microsoft 365 商业版](manage.md)
   
 [设置 Windows 10 电脑的设备配置](protection-settings-for-windows-10-pcs.md)
   

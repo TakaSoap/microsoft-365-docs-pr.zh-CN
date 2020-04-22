@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中查看自动调查的结果
+title: 在 Microsoft 365 中查看自动调查的结果
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
 f1.keywords:
 - NOCSH
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 在 Office 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
-ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: 在 Microsoft 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
+ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225971"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634624"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 中的自动调查的详细信息和结果
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中的自动调查的详细信息和结果
 
 在[Office 365 高级威胁防护](office-365-atp.md)中进行[自动调查](office-365-air.md)时，有关该调查的详细信息在自动调查过程的过程中和之后都是可用的。 如果您具有所需的权限，则可以在调查详细信息视图中查看这些详细信息。 调查详细信息视图为您提供了最新状态，并能够批准任何挂起的操作。 
 
@@ -46,7 +46,7 @@ ms.locfileid: "43225971"
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
 
-1. 转到 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
+1. 转到安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
 
 2. 执行下列操作之一：
 
@@ -66,9 +66,9 @@ ms.locfileid: "43225971"
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>查看与调查相关的警报的详细信息
 
-某些类型的警报会触发 Office 365 中的自动调查。 若要了解详细信息，请参阅[警报](automated-investigation-response-office.md#alerts)。 使用以下过程可查看与自动调查相关联的警报的详细信息。
+某些类型的警报会在 Microsoft 365 中触发自动调查。 若要了解详细信息，请参阅[警报](automated-investigation-response-office.md#alerts)。 使用以下过程可查看与自动调查相关联的警报的详细信息。
 
-1. 转到 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。 
+1. 转到安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。 
 
 2. 转到**威胁管理** > **调查**。
 
@@ -215,7 +215,7 @@ ms.locfileid: "43225971"
 
 |工具 | 说明 |
 |-----|-----|
-|DLP 违规调查 |调查[Office 365 数据丢失防护](../../compliance/data-loss-prevention-policies.md)（DLP）检测到的任何冲突 |
+|DLP 违规调查 |调查[数据丢失防护](../../compliance/data-loss-prevention-policies.md)（DLP）检测到的任何冲突 |
 |电子邮件指示器提取 |从要调查的电子邮件的标题、正文和内容中提取指示器 |
 |文件哈希信誉 |根据组织中的用户和计算机的文件哈希值检测异常 |
 |邮件群集标识 |基于标头、正文、内容和 Url 的电子邮件群集分析 |

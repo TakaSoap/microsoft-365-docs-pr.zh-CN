@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: 了解 Microsoft 365 商业版中提供的默认设置和其他设置，以保护 Windows 10 设备。
-ms.openlocfilehash: 1b424fe6a85ad23b2914ea29f47d1dc16b333c94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解 Microsoft 365 for business 中提供的用于保护 Windows 10 设备的默认设置和其他设置。
+ms.openlocfilehash: a3b7f0a8572a215491b32101a30c306b54571b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064948"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633009"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>设置 Windows 10 电脑的设备保护设置
 
 ## <a name="secure-windows-10-devices"></a>保护 Windows 10 设备
 
-查看有关如何使用 Microsoft 365 商业版保护 Windows 10 设备的视频：
+观看有关如何使用 Microsoft 365 for business 保护 Windows 10 设备的视频：
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -59,7 +59,7 @@ ms.locfileid: "42064948"
 
 所有设置均默认为" **开启**"状态。 可使用以下设置：
   
-有关详细信息，请参阅 [Microsoft 365 商业版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)。 
+有关详细信息，请参阅[Microsoft 365 Premium 中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)。 
   
 |||
 |:-----|:-----|

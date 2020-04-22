@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537505"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631165"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -39,7 +39,7 @@ ms.locfileid: "43537505"
 
 使用此报告，可以执行以下操作：
 
-- [查看 Office 365 安全功能检测到的恶意软件](#see-malware-detected-in-email-by-technology)
+- [查看 Microsoft 365 安全功能检测到的恶意软件](#see-malware-detected-in-email-by-technology)
 - [查看有关仿冒 Url 的数据，然后单击 "判定"](#view-data-about-phishing-urls-and-click-verdict)
 - [从浏览器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response)（仅限 ATP 计划2）
 - ...[调查恶意电子邮件，](#more-ways-to-use-explorer-or-real-time-detections)等等！
@@ -56,7 +56,7 @@ ms.locfileid: "43537505"
 
 ### <a name="preview-email-header-and-download-email-body"></a>预览电子邮件标头并下载电子邮件正文
 
-在威胁资源管理器中，预览电子邮件标头和下载电子邮件正文的功能是可用的新功能。 管理员将能够分析下载的邮件头/电子邮件是否有威胁。 由于下载电子邮件可能会影响信息的暴露风险，因此此过程由基于角色的访问控制（RBAC）控制。 必须向另一个 Office 365 角色组（如安全操作或安全管理员）添加新的角色、*预览*，以授予在所有电子邮件视图中下载邮件和预览邮件头的功能。
+在威胁资源管理器中，预览电子邮件标头和下载电子邮件正文的功能是可用的新功能。 管理员将能够分析下载的邮件头/电子邮件是否有威胁。 由于下载电子邮件可能会影响信息的暴露风险，因此此过程由基于角色的访问控制（RBAC）控制。 必须将新角色（*预览版*）添加到另一个角色组（如安全操作或安全管理员），以授予在所有电子邮件视图中下载邮件和预览邮件头的功能。
 
 但资源管理器（和实时检测）还添加了新的新字段，旨在为你提供有关你的电子邮件土地的更完整的图片。 此更改的目标部分是使搜索更易于进行安全操作人员，但最终结果是了解问题电子邮件的位置。
 
@@ -117,7 +117,7 @@ ms.locfileid: "43537505"
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看电子邮件中的技术检测到恶意软件
 
-假设您想要查看 Office 365 技术在电子邮件中检测到的恶意软件。 为此，请使用[电子邮件 >](threat-explorer-views.md#email--malware)浏览器（或实时检测）的恶意软件视图。
+假设您想要查看 Microsoft 365 技术在电子邮件中检测到的恶意软件。 为此，请使用[电子邮件 >](threat-explorer-views.md#email--malware)浏览器（或实时检测）的恶意软件视图。
 
 1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
@@ -176,7 +176,7 @@ ms.locfileid: "43537505"
 
 1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **提交**"。 （以前称为 "**用户报告**"。）
+2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **提交**"。
 
    ![浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
 
@@ -230,7 +230,7 @@ ms.locfileid: "43537505"
 
 若要了解有关角色和权限的详细信息，请参阅以下资源：
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [安全&amp;合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测的区别

@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: 了解新的服务配额功能。
-ms.openlocfilehash: 22f7c35b1a5baf97fb72f541d57da28adeeffbe4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1f926165678b57ec46195d525f2fcdaa6976501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594683"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632409"
 ---
 # <a name="allotment-basics"></a>服务配额基础
 
@@ -33,7 +33,7 @@ ms.locfileid: "41594683"
 
 您必须满足[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的许可要求。
 
-您可以使用可供用户使用的任何 Office 365 产品的服务配额：
+您可以将服务配额用于用户可使用的任何产品：
 
 - Office 套件和独立产品
 - 企业和移动产品
@@ -47,6 +47,6 @@ ms.locfileid: "41594683"
 
 您必须是全局或许可证管理员才能开始使用服务配额。
 
-## <a name="getting-started"></a>开始使用
+## <a name="getting-started"></a>入门
 
 仅在一小部分客户的私人预览版中提供服务配额功能。 如果你有兴趣加入，请填写以下表单： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

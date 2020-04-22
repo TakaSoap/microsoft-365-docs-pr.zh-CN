@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 了解如何向进入或离开组织的所有电子邮件添加电子邮件签名、法律免责声明或泄露声明。
-ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360663"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631973"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围的签名和免责声明
 
@@ -62,9 +62,9 @@ ms.locfileid: "42360663"
 
 ::: moniker-end
 
-1. 选择 Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)中![的应用启动器图标，然后选择 "**管理员**"。
+1. 选择应用启动器图标![](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)，然后选择 "**管理员**"。
    
-    找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。 
+    找不到需要的应用？ 在应用启动器中，选择 "**所有应用**" 以查看可供您使用的应用程序的按字母顺序排列的列表。 可在此处搜索特定应用。 
     
 2. 选择 "**管理中心**"，然后选择 " **Exchange**"。
     
@@ -77,14 +77,14 @@ ms.locfileid: "42360663"
 6. 在 "**应用此规则**" 下，选择 " **[应用于所有邮件]**"。
     
     > [!TIP]
-    > [了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。 （此范围文章适用于 Exchange Server，但也适用于 Office 365。） 
+    > [了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。 （此范围文章适用于 Exchange Server，但也适用于 Microsoft 365。） 
   
 7. 在"执行以下操作"下，保留" **附加免责声明**"处于选中状态。 
     
 8.  选择 "**输入文本**"，然后键入免责声明。 
     
     > [!TIP]
-    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何设置免责声明格式。 （此格式文章适用于 Exchange Server，但也适用于 Office 365。） 
+    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何设置免责声明格式。 （此格式化文章适用于 Exchange Server，但也适用于 Microsoft 365。） 
 
 9. 选择 "**选择一个**"，然后选择 "**包装**为回退" 选项。 然后选择" **确定**"。 这意味着如果由于加密或其他邮件设置而无法添加免责声明，免责声明将封装在邮件信封中。
     
@@ -96,9 +96,9 @@ ms.locfileid: "42360663"
     
 13. 完成后，选择" **保存**"。 
     
-## <a name="limitations-of-office-365-organization-wide-signatures"></a>Office 365 组织的全球签名的限制
+## <a name="limitations-of-organization-wide-signatures"></a>组织范围内的签名限制
 
-您不能对 Office 365 签名执行以下操作：
+您不能对 Microsoft 365 签名执行以下操作：
   
 - 直接在最新电子邮件答复或转发下插入签名
     
@@ -112,6 +112,6 @@ ms.locfileid: "42360663"
   
 ## <a name="more-resources"></a>更多资源
 
-- 有关使用 PowerShell 的信息，请参阅[组织范围内的邮件免责声明、签名、页脚或在 Office 365 中的标题](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)。 
+- 有关使用 PowerShell 的信息，请参阅[组织范围内的邮件免责声明、签名、页脚或标头 Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 。 
     
 

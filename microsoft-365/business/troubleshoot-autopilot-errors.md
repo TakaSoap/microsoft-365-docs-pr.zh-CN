@@ -26,19 +26,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: 了解如何解决在 Microsoft 365 Business 中使用 AutoPilot 设备文件时可能看到的错误。
-ms.openlocfilehash: 8b99e848fa040711785b921d12548f16dadb09af
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解如何解决在 Microsoft 365 商业高级版中使用 AutoPilot 设备文件时可能会看到的错误。
+ms.openlocfilehash: 0c0742e5bf17c85cedfb421cabfd87c0e2184ba5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212125"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635036"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Autopilot 设备错误疑难解答
 
 ## <a name="device-file-error-messages"></a>设备文件错误消息
 
-以下是在使用 Microsoft 365 Business 中的 AutoPilot 设备文件时可能会看到的一些错误的相关信息。 
+以下是在使用 Microsoft 365 商业高级版中的 AutoPilot 设备文件时可能会看到的一些错误的相关信息。 
   
 |**错误代码**|**修复以试用**|
 |:-----|:-----|

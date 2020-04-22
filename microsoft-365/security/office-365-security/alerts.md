@@ -1,5 +1,5 @@
 ---
-title: Alerts in the Office 365 Security &amp; Compliance Center
+title: 安全&amp;合规中心中的警报
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,32 +17,32 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: 了解有关 Office 365 中的安全性可设置为帮助的通知。
-ms.openlocfilehash: 57bb6659b374c1ac029b690e738620c2f2857eb9
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: b8fe746ef18ade5f8e35d5a51ab132377e813915
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030116"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634612"
 ---
-# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
+# <a name="alerts-in-the-security-amp-compliance-center"></a>安全&amp;合规中心中的警报
 
-使用 Office 365 安全&amp;合规中心中的警报功能查看和管理 office 365 组织的警报，包括作为[Microsoft 云应用安全概述](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)的一部分管理高级通知。
+使用安全&amp;合规中心中的警报功能查看和管理组织的通知，包括作为[Microsoft 云应用安全概述](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)的一部分管理高级警报。
   
-## <a name="how-to-get-to-the-office-365-alerts-features"></a>如何访问 Office 365 警报功能
+## <a name="how-to-get-to-the-alerts-features"></a>如何获取警报功能
 
-Office 365 中的警报位于安全&amp;合规中心中。 下面介绍了如何访问页面。
+警报在安全&amp;合规中心中。 下面介绍了如何访问页面。
   
  **若要直接转到安全&amp;合规中心，请执行以下操作：**
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。 
+2. 使用您的工作或学校帐户登录。 
     
 3. 在左窗格中，单击 "**警报**" 以查看警报功能。 
     
- **若要使用 Office 365 &amp;应用启动器转到安全合规中心，请执行以下操作：**
+ **若要使用应用启动器&amp;转到安全合规中心，请执行以下操作：**
   
-1. 使用工作或学校帐户登录到 Office 365。 
+1. 使用您的工作或学校帐户登录。 
     
 2. 单击左上角的应用启动器，然后单击 " ** &amp;安全符合性**"。
     
@@ -56,7 +56,7 @@ Office 365 中的警报位于安全&amp;合规中心中。 下面介绍了如何
   
 |**工具**|**说明**|
 |:-----|:-----|
-|[管理通知](../../compliance/create-activity-alerts.md) <br/> |当用户在 Office 365 中执行特定活动时，可使用活动警报向自己或其他管理员发送电子邮件通知。 活动通知类似于搜索 Office 365 审核日志中的事件，不同之处在于当您创建了通知的事件发生时，会向您发送一封电子邮件。  <br/> |
+|[管理通知](../../compliance/create-activity-alerts.md) <br/> |当用户在 Office 365 中执行特定活动时，可使用活动警报向自己或其他管理员发送电子邮件通知。 活动通知与搜索事件的审核日志类似，不同之处在于，当您创建了通知的事件发生时，将会发送一封电子邮件。  <br/> |
 |[管理高级通知](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |使用 Office 365 云应用安全性的 "**管理高级警报**" 功能设置可在 Office 365 中提醒您可疑和异常活动的策略。 收到警报后，可以调查可能存在问题的情况，如果需要，可以采取措施解决安全问题。  <br/> |
    
 

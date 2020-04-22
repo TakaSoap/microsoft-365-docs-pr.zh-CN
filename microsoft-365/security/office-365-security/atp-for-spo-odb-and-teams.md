@@ -1,5 +1,5 @@
 ---
-title: 适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
+title: 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 将 Office 365 高级威胁防护扩展到 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件，为您的组织启用更安全的协作。
-ms.openlocfilehash: 3105a9443ddab483bc5ac4037e5260b354d64de9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4c64a4934a472fa5c6ac0f1f718d63300560f6c8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086617"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636018"
 ---
-# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP
+# <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP 概述
 
@@ -41,7 +41,7 @@ ms.locfileid: "42086617"
 
 ![从 OneDrive 移动应用程序中删除 OneDrive for business 中的阻止文件](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
-根据配置 Office 365 的方式，用户可能会或可能无法下载被阻止的文件。 下面介绍了如何在用户的移动设备上下载被阻止的文件：
+根据 Microsoft 365 的配置方式，用户可能会或可能无法下载被阻止的文件。 下面介绍了如何在用户的移动设备上下载被阻止的文件：
 
 ![在 OneDrive for Business 中下载阻止的文件](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
@@ -61,11 +61,11 @@ ms.locfileid: "42086617"
 
 ## <a name="quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>SharePoint Online、OneDrive for Business 和 Microsoft 团队的 ATP 中的隔离
 
- 从后期开始可能为 2018 [](quarantine-email-messages.md) ，安全&amp;合规中心中的隔离功能将扩展到 SharePoint Online、OneDrive For business 和 Microsoft 团队的 ATP。
+ 从后期开始可能为 2018 [quarantine](quarantine-email-messages.md) ，安全&amp;合规中心中的隔离功能将扩展到 SharePoint Online、OneDrive For business 和 Microsoft 团队的 ATP。
 
 当 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的文件被标识为恶意文件时，除了 ATP 阻止打开或共享该文件之外，该文件还包含在隔离项目的列表中。 （在安全&amp;合规性中心中，转到 "**威胁管理** \> " "**查看** \> **隔离**" 和 "筛选**内容**"。）
 
-如果你是组织的 Office 365 安全团队的一部分，并且在[Office 365 安全&amp;合规中心中分配](permissions-in-the-security-and-compliance-center.md)了必要的权限，则可以下载、发布、报告和删除从隔离版中的 ATP 检测为恶意的文件。
+如果你是组织的 Microsoft 365 企业安全团队的一部分，并且在[安全&amp;合规中心中分配](permissions-in-the-security-and-compliance-center.md)了必要的权限，则可以下载、发布、报告和删除从隔离区中的 ATP 检测为恶意的文件。
 
 - **释放和报告**文件将在 SharePoint、OneDrive 或 Microsoft 团队的相应团队网站或文档库中删除文件上的 ATP 块。 然后，用户可以打开、共享和下载文件。 当选择 "**向 Microsoft 发送报告**" 选项时，该文件将报告为 "误报到 microsoft"。
 

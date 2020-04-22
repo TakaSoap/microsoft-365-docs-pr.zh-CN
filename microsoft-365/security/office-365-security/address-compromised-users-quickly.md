@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 高级威胁防护中的自动调查和响应解决已损坏的用户帐户
+title: 使用自动调查和响应解决已损坏的用户帐户
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护、已泄露
 ms.author: deniseb
 author: denisebmsft
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: 了解如何通过 Office 365 高级威胁防护计划2中的自动调查和响应功能，来加快检测和解决受攻击的用户帐户的过程。
-ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280210"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635768"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>使用自动调查和响应解决已损坏的用户帐户
 
@@ -60,7 +60,7 @@ ms.locfileid: "42280210"
 
 ### <a name="view-and-investigate-restricted-users"></a>查看和调查受限制的用户
 
-有几个选项可用于导航到受限制的用户列表。 例如，在 "Office 365 安全 & 合规性中心" 中，您可以转到 "**威胁管理** > "**查看** > **受限制的用户**。 下面的过程介绍了如何使用 "**通知**" 仪表板进行导航，这是查看可能已触发的各种警报的一种有效方式。
+有几个选项可用于导航到受限制的用户列表。 例如，在安全 & 合规性中心中，可以转到 "**威胁管理** > "**查看** > **受限制的用户**。 下面的过程介绍了如何使用 "**通知**" 仪表板进行导航，这是查看可能已触发的各种警报的一种有效方式。
 
 1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。
 
@@ -74,7 +74,7 @@ ms.locfileid: "42280210"
 
 ### <a name="view-details-about-automated-investigations"></a>查看有关自动调查的详细信息
 
-自动调查开始后，您可以在 Office 365 安全 & 合规性中心中看到其详细信息和结果。 转到 "**威胁管理** > **调查**"，然后选择调查以查看其详细信息。
+自动调查开始后，您可以在安全 & 合规性中心中看到其详细信息和结果。 转到 "**威胁管理** > **调查**"，然后选择调查以查看其详细信息。
 
 若要了解详细信息，请参阅[查看调查的详细信息](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)。
 

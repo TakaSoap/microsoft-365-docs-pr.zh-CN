@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为高度管控的数据实现 SharePoint 网站，以便在研究团队之间实现协作。
-ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0a4bc2f685cf015611da62ebbed000218f37f31e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068262"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634248"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 的高度机密数字资产的 SharePoint 网站
 
@@ -48,22 +48,22 @@ Contoso 使用这些步骤为自己的研究团队创建并保护 SharePoint 工
 
 ## <a name="step-2-configured-the-site-for-a-restrictive-dlp-policy"></a>步骤2：为受限制的 DLP 策略配置网站
 
-首先，Contoso 管理员将现有的**高机密**Office 365 保留标签应用于**信息检索**网站的 Documents 文件夹。
+首先，Contoso 管理员将现有的**高度机密**保留标签应用于**信息检索**网站的 Documents 文件夹。
 
-接下来，他们创建了一个名为 "**调查**" 的新 OFFICE 365 DLP 策略：
+接下来，他们创建了名为 "**调查**" 的新 DLP 策略：
 
-- 使用 "**高度机密**" Office 365 保留标签。 
+- 使用**高度机密**的保留标签。 
 - 当用户尝试在 Contoso 之外的**搜索**网站上共享数字资产时阻止他们。
 
 有关配置的详细信息，请参阅[使用保留标签和 DLP 保护 SharePoint 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)。
 
-## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>步骤3：为网站创建 Office 365 灵敏度选项
+## <a name="step-3-created-a-sensitivity-sublabel-for-the-site"></a>步骤3：为网站创建灵敏度选项
 
-Contoso admins 创建了一个新的 Office 365 灵敏度选项，其中的 "**高度机密**" 标签的名称为 "**调查团队**"：
+Contoso admins 创建了一个新的敏感度选项，其**高度机密**标签的名称为**信息检索团队**：
 
 - 需要加密。
-- 允许 "**研究**Office 365" 组的 "共同创作" 权限
-- 适用于**研究**Office 365 组
+- 允许用于**研究**Microsoft 365 组的共同创作权限
+- 适用于**研究**Microsoft 365 组
 
 以下是针对高度机密资产的**研究**团队网站的结果配置。
 
@@ -71,7 +71,7 @@ Contoso admins 创建了一个新的 Office 365 灵敏度选项，其中的 "**�
 
 **搜索**网站的文件夹中的文件受以下保护：
 
-- 网站权限，仅允许访问**研究**Office 365 组的成员。
+- 站点权限，仅允许访问 Microsoft 365 的**搜索**组的成员。
 - **研究**DLP 策略，它使用**高度机密**的保留标签和阻止文件与外部用户共享的设置。
 - **研究团队**敏感度选项，其中包含在文件移动或复制到**信息检索**网站时携带的加密和权限。
 
@@ -86,7 +86,7 @@ Contoso admins 将本地 SharePoint Server 2016 网站中的所有本地研究�
 
 ## <a name="step-5-trained-their-researchers"></a>步骤5：训练有素的研究人员
 
-Contoso 安全员工在强制性课程中培训了**研究**Office 365 组的成员，其中包括：
+Contoso 安全员工在强制性课程中培训了**研究**Microsoft 365 组的成员，其中包括：
 
 - 如何访问新的**研究**网站及其现有文件。
 - 如何在网站上创建新文件和上传本地存储的新文件。
@@ -96,7 +96,7 @@ Contoso 安全员工在强制性课程中培训了**研究**Office 365 组的成
 
 最终结果是一个安全的环境，在该环境中，研究人员可以在包含信息检索信息的文件的安全环境中跨 Contoso 进行协作。 
 
-如果与**研究团队**选项的研究文档保留了**信息检索**网站，则只有具有有效用户帐户凭据的**研究**Office 365 组的成员才能对其进行加密和访问。
+如果与**研究团队**选项的研究文档保留了**信息检索**网站，则只有具有有效用户帐户凭据的**研究**Microsoft 365 组的成员才能对其进行加密和访问。
 
 ## <a name="next-step"></a>后续步骤
 

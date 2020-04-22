@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: 了解如何在安全&amp;合规中心中查看、编辑和管理报告的日程安排。
-ms.openlocfilehash: 5ae6a37a04604ca814348ac42d80a57e3e171b6b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b7ccd7ddd766a1e109fb0363b56290020356946e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082863"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635324"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中管理多个报告的计划
 
@@ -28,7 +28,7 @@ ms.locfileid: "42082863"
 ## <a name="manage-schedules-for-reports"></a>管理报告的日程安排
 
 > [!IMPORTANT]
-> 确保您具有[在 Office 365 安全&amp;合规中心中分配](permissions-in-the-security-and-compliance-center.md)的必要权限。 通常情况下，Office 365 全局管理员、安全管理员和安全读者可以访问安全&amp;合规性中心中的报告。 
+> 确保您具有[安全&amp;合规性中心中分配](permissions-in-the-security-and-compliance-center.md)的必要权限。 通常情况下，全局管理员、安全管理员和安全读者可以访问安全&amp;合规性中心中的报告。 
   
 ![在 "安全&amp;合规性中心" 中\> ，选择 "报告管理计划"](../../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
@@ -44,7 +44,7 @@ ms.locfileid: "42082863"
     
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)
+[安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)
   
 [在安全&amp;合规中心中创建报表的日程安排](create-a-schedule-for-a-report.md)
   

@@ -16,23 +16,23 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 0d5d626da8f8bdcdc234f578145db0dfde2c06a5
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 9755fccb482dc294da7a0747310776314c739139
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547604"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634408"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
-**Exchange Online Protection （EOP）** 是 Office 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Office 365 高级威胁防护（ATP）** ATP Plan 1 或 ATP 计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
+**Exchange Online Protection （EOP）** 是 Microsoft 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Office 365 高级威胁防护（ATP）** ATP Plan 1 或 ATP 计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
 
 尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Office 365 ATP 中有两个安全级别：**标准**和**严格**。 每个客户的环境和需求各不相同，但我们认为这些级别的邮件筛选配置将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
 
 > [!IMPORTANT]
 > 需要在邮箱上启用垃圾邮件规则，以便筛选正常工作。 默认情况下已启用，但如果筛选似乎不起作用，则应进行检查。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-本主题介绍了这些 Microsoft 推荐的设置，以帮助保护 Office 365 用户。
+本主题介绍了这些 Microsoft 推荐的设置，以帮助保护您的用户。
 
 > [!TIP]
 > 有一个新的 PowerShell 模块可供下载，称为 "Office 365 高级威胁防护建议配置分析器（ORCA）"，可帮助确定其中一些设置。 在租户中以管理员身份运行时，ORCAReport 将帮助生成反垃圾邮件、反网络钓鱼和其他邮件清洁设置的评估。 您可以在https://www.powershellgallery.com/packages/ORCA/中下载此模块。
@@ -117,7 +117,7 @@ ms.locfileid: "43547604"
 | 安全功能名称 | 标准 | 全 | 评论 |
 |---|---|---|---|
 |**启用反欺骗保护** <br/><br/> _EnableAntispoofEnforcement_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
-|**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|将问号（？）添加到 Outlook 中的发件人的照片中，以查找未识别的欺骗性发件人。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。|
+|**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|将问号（？）添加到 Outlook 中的发件人的照片中，以查找未识别的欺骗性发件人。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
 |**如果电子邮件由不允许欺骗您的域的人发送** <br/><br/> _AuthenticationFailAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**隔离邮件** <br/><br/> `Quarantine`|这适用于[哄骗智能](learn-about-spoof-intelligence.md)中阻止的发件人。|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Office 365 高级威胁防护安全
@@ -181,7 +181,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 | 安全功能名称 | 标准 | 全 | 评论 |
 |---|---|---|---|
 |**启用反欺骗保护** <br/><br/> _EnableAntispoofEnforcement_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
-|**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|将问号（？）添加到 Outlook 中的发件人的照片中，以查找未识别的欺骗性发件人。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。|
+|**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|将问号（？）添加到 Outlook 中的发件人的照片中，以查找未识别的欺骗性发件人。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
 |**如果电子邮件由不允许欺骗您的域的人发送** <br/><br/> _AuthenticationFailAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**隔离邮件** <br/><br/> `Quarantine`|这适用于[哄骗智能](learn-about-spoof-intelligence.md)中阻止的发件人。|
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的高级设置
@@ -215,7 +215,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 
 - 您是否正在寻找与**Exchange 邮件流/Exchange 传输规则**有关的最佳实践？ 有关详细信息，请参阅[本文](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop)。
 
-- 管理员和用户可以将误报（好的电子邮件标记为坏）和漏报（允许的错误电子邮件）提交给 Microsoft 进行分析。 有关详细信息，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。
+- 管理员和用户可以将误报（好的电子邮件标记为坏）和漏报（允许的错误电子邮件）提交给 Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 - 使用这些链接可获取有关如何**设置** [EOP 服务](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的信息，以及**配置** [Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 （请不要忘记在 "防御[Office 365 中的威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)" 中了解有用的说明。）
 

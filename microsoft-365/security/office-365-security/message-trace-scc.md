@@ -11,27 +11,27 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341273"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635312"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
 ## <a name="overview"></a>概述
 
-Office 365 Security 中的邮件跟踪 & 合规性中心在电子邮件通过 Exchange Online 组织时遵循这些电子邮件。 您可以确定服务是否已接收、拒绝、推迟或发送邮件。 它还显示邮件在到达其最终状态之前对邮件执行的操作。
+Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递的电子邮件中遵循这些电子邮件。 您可以确定服务是否已接收、拒绝、推迟或发送邮件。 它还显示邮件在到达其最终状态之前对邮件执行的操作。
 
 Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）中提供的原始邮件跟踪之后改进。 您可以使用邮件跟踪中的信息来有效地回答有关邮件发生的问题、解决邮件流问题以及验证策略更改的用户问题。
 
 > [!NOTE]
-> •若要执行邮件跟踪，您必须是 "组织管理"、"合规性管理" 或 "技术支持" 角色组的成员。 有关详细信息，请参阅[Office 365 Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>•结果中显示的最大邮件数取决于所选的报告类型（有关详细信息，请参阅 "[选择报告类型](#choose-report-type)" 一节）。 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet 将返回结果中的所有邮件。
+> * 若要执行邮件跟踪，您必须是 "组织管理"、"合规性管理" 或 "技术支持" 角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>* 结果中显示的最大邮件数取决于所选的报告类型（有关详细信息，请参阅 "[选择报告类型](#choose-report-type)" 一节）。 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet 将返回结果中的所有邮件。
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 
-1. 在上<https://protection.office.com>打开 "Office 365 安全性 & 合规性中心。
+1. 在上<https://protection.office.com>打开安全 & 合规性中心。
 
 2. 展开 "**邮件流**"，然后选择 "**邮件跟踪**"。
 
@@ -106,7 +106,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 这是在邮件头的**邮件 id：** 头字段中找到的 INTERNET 邮件 id （也称为客户端 ID）。 用户可为您提供此值来调查特定邮件。
 
-该值在邮件生存期内是常量。 对于在 Office 365 或 Exchange 中创建的邮件，值的格式`<GUID@ServerFQDN>`为，包括尖括号（\< \>）。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他邮件系统可能使用不同的语法或值。 此值应是唯一的，但并不是所有的电子邮件系统都严格遵守此要求。 如果**邮件 ID：** 标头字段不存在或对于来自外部源的传入邮件为空，则分配一个任意值。
+该值在邮件生存期内是常量。 对于在 Microsoft 365 或 Exchange 中创建的邮件，值的格式`<GUID@ServerFQDN>`为，包括尖括号（\< \>）。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他邮件系统可能使用不同的语法或值。 此值应是唯一的，但并不是所有的电子邮件系统都严格遵守此要求。 如果**邮件 ID：** 标头字段不存在或对于来自外部源的传入邮件为空，则分配一个任意值。
 
 使用**邮件 ID**筛选结果时，请务必包含完整的字符串，包括任何尖括号。
 
@@ -324,11 +324,11 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 #### <a name="custom_data-values"></a>custom_data 值
 
-各种**** Exchange Online 代理使用`AGENTINFO`事件的 custom_data 字段来记录消息处理详细信息。 以下各节中介绍了一些更有趣的代理。
+各种**custom_data** Exchange Online 代理使用`AGENTINFO`事件的 custom_data 字段来记录消息处理详细信息。 以下各节中介绍了一些更有趣的代理。
 
 #### <a name="spam-filter-agent"></a>垃圾邮件筛选器代理
 
-以**** 来自垃圾邮件筛选器`S:SFA`代理的开头的 custom_data 值。 下表介绍了关键详细信息：
+以**custom_data**来自垃圾邮件筛选器`S:SFA`代理的开头的 custom_data 值。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|
@@ -355,7 +355,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 #### <a name="malware-filter-agent"></a>恶意软件筛选器代理
 
-以**** 其开头`S:AMA`的 custom_data 值来自恶意软件筛选器代理。 下表介绍了关键详细信息：
+以**custom_data**其开头`S:AMA`的 custom_data 值来自恶意软件筛选器代理。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|
@@ -378,14 +378,14 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 #### <a name="transport-rule-agent"></a>传输规则代理
 
-从**** 邮件流规则的传输`S:TRA`规则代理（也称为传输规则）开始的 custom_data 值。 下表介绍了关键详细信息：
+从**custom_data**邮件流规则的传输`S:TRA`规则代理（也称为传输规则）开始的 custom_data 值。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|匹配的规则 ID。|
 |`St=<datetime>`|发生规则匹配时的日期和时间（以 UTC 为单位）。|
 |`Action=<ActionDefinition>`|应用的操作。 有关可用操作的列表，请参阅[Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
-|`Mode=<Mode>`|规则模式。 有效值为： <br/>•**强制实施**：将强制执行对规则的所有操作。 <br/>•**使用策略提示进行测试：**：将发送所有策略提示操作，但不会对其他强制操作执行操作。 <br/>•**测试没有策略提示**：将在日志文件中列出操作，但不会以任何方式通知发件人，并且不会对强制性操作进行处理。|
+|`Mode=<Mode>`|规则模式。 有效值为： <br/>* **强制**：将强制实施对规则的所有操作。 <br/>* **使用策略提示进行测试：**：将发送所有策略提示操作，但不会对其他强制操作执行操作。 <br/>* **不使用策略提示进行测试**：将在日志文件中列出操作，但不会以任何方式通知发件人，并且不会对强制性操作进行处理。|
 
 与邮件流规则的条件相匹配的邮件的示例**custom_data**值如下所示：
 

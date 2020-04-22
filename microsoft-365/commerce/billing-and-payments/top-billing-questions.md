@@ -1,5 +1,5 @@
 ---
-title: 适用于 Office 365 商业版的主要帐单问题
+title: 适用于 Microsoft 365 商业版的主要帐单问题
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,15 +24,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: 查找你的业务订阅的最重要帐单问题的答案。
-ms.openlocfilehash: 661339518f43531f656ee9960d7f005fd1398023
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: '查找适用于 Microsoft 365 商业版订阅的首要付费问题的答案。 '
+ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826297"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634988"
 ---
-# <a name="top-billing-questions-for-business-subscriptions"></a>商业订阅的主要帐单问题
+# <a name="top-billing-questions-for-microsoft-365-for-business"></a>适用于 Microsoft 365 商业版的主要帐单问题
 
 是否有关于帐单声明的问题？ 以下是对最重要的帐单问题的答案。
   
@@ -106,7 +106,7 @@ ms.locfileid: "42826297"
 
 ## <a name="can-i-change-the-method-i-use-to-pay-for-my-subscription"></a>我是否可以更改我用来为我的订阅付费的方法？
 
-是。 请参阅[更改支付方式](change-payment-method.md)。
+可以。 请参阅[更改支付方式](change-payment-method.md)。
   
 ::: moniker range="o365-worldwide"
 ## <a name="can-i-change-how-frequently-i-pay-for-my-subscription"></a>我是否可以更改我对我的订阅付费的频率？
@@ -118,7 +118,7 @@ ms.locfileid: "42826297"
 ::: moniker range="o365-worldwide"
 ## <a name="can-i-get-a-copy-of-my-billing-statement-sent-via-email"></a>我是否可以获取通过电子邮件发送的帐单表的副本？
 
-是。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
+可以。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
   
 1. 在 Microsoft 365 管理中心，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">记帐通知</a>" 页面，或选择 "**帐单** \>帐单**通知**"。
 
@@ -131,7 +131,7 @@ ms.locfileid: "42826297"
 ::: moniker range="o365-germany"
 ## <a name="can-i-get-a-copy-of-my-billing-statement-sent-via-email"></a>我是否可以获取通过电子邮件发送的帐单表的副本？
 
-是。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
+可以。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
   
 1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">账单通知</a>”页面。
 

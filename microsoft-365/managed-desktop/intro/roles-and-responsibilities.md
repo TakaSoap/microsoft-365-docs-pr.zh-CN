@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0288dfd2ee84f406c4bcdf4a604d1370afeefed7
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 02a0b11a1a210367d76e73c75ac5c1fc7a66f94f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202173"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636204"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 托管桌面角色和职责
 
@@ -43,9 +43,9 @@ Microsoft 托管桌面服务支持 | Microsoft 将通过 Microsoft 托管桌面�
 --- | ---
 变更管理 | 当需要对 Microsoft 托管桌面环境进行更改时，Microsoft 将提前通知客户。 有关详细信息，请参阅[服务更改和通信](../service-description/servicechanges.md)<br><br>客户需要拥有自己的更改管理流程，并具有与 Microsoft 托管桌面操作团队建立的联系人。 客户还需要有资源来查看和批准这些更改。 有关详细信息，请参阅[操作和监视](../service-description/operations-and-monitoring.md)。  
 身份管理 | 客户负责创建用户帐户，将用户分配到组，并将元数据保持为最新。 
-Office 365 专业增强版配置和管理 | Microsoft 负责确保将 Office 应用程序部署到最终用户，这些应用程序将保持最新状态。 <br><br> 客户负责管理 Office 365 服务和策略，包括 Exchange Online 管理责任：<br>-电子邮件管理<br>-邮箱和规则配置<br>-Exchange 本地管理<br><br>客户还负责 Office 365 管理门户中设置的协作工具、SharePoint server 管理、域管理、安全性和信息策略。 
+适用于企业配置和管理的 Microsoft 365 应用程序 | Microsoft 负责确保将 Office 应用程序部署到最终用户，这些应用程序将保持最新状态。 <br><br> 客户负责管理 Microsoft 365 服务和策略，包括 Exchange Online 管理责任：<br>-电子邮件管理<br>-邮箱和规则配置<br>-Exchange 本地管理<br><br>客户还负责在 Microsoft 365 管理中心中设置的协作工具、SharePoint server 管理、域管理、安全性和信息策略。 
 最终用户支持 | 客户负责为以下用户提供对的最终用户的支持： <br>-基于网站基础结构：所有网络和 internet 连接、VPN 基础结构和客户端配置、本地会议室设备、打印机、代理服务器和配置以及防火墙。<br><br>-公司范围内的云资源：电子邮件、SharePoint、协作服务和其他与公司范围的技术覆盖相关的云基础结构。<br><br>-业务线和任何其他特定于公司的应用程序。
-应用 | 角色和职责因作为 Microsoft 托管桌面的一部分而提供，与你提供的应用程序稍有不同。 <br><br>对于 Microsoft 提供的应用（Office 365 专业增强版，其中包含 Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、团队和 OneNote）， **microsoft**将为部署、更新和支持人员提供完整的服务。 **您**必须获取并分配这些应用程序的许可证，将用户添加到安全组并管理生命周期的结束时间，并部署任何需要的 Office 365 Addons。<br><br>对于您提供的应用程序（如业务线应用程序），无论您是自己打包还是接洽非 Microsoft 供应商来执行此操作，**您**都要负责执行以下操作： <br><br>-识别目标用户组所需的应用程序<br>-创建和管理用于应用程序部署的 Azure AD 组<br>-打包应用程序以满足 Microsoft Intune 部署标准<br>-将应用程序上载到 Microsoft Intune<br>-在 Microsoft 托管桌面环境中测试应用程序<br>-使用最终用户测试应用程序<br>-管理用户并将其分配给应用程序<br>-通过 Microsoft Intune 识别和部署应用程序更新<br>-卸载并删除已停用的应用程序<br>-采购和分配许可证<br>-为业务线应用程序提供最终用户支持<br>-远程管理应用程序设置<br><br>**Microsoft**将提供 microsoft Intune 部署工具以将应用程序传递到远程客户端。<br><br>有关详细信息，请参阅[应用程序](../get-ready/apps.md)
+应用 | 角色和职责因作为 Microsoft 托管桌面的一部分而提供，与你提供的应用程序稍有不同。 <br><br>对于 Microsoft 提供的应用程序（Microsoft 365 应用程序，用于包含 Word、Excel、PowerPoint、Outlook、Publisher、Access、Access、Skype for Business、团队和 OneNote 的企业版）， **Microsoft**将为部署、更新和支持人员提供完整服务。 **您**必须获取并分配这些应用程序的许可证，将用户添加到安全组，并管理使用寿命的结束并部署所需的任何加载项。<br><br>对于您提供的应用程序（如业务线应用程序），无论您是自己打包还是接洽非 Microsoft 供应商来执行此操作，**您**都要负责执行以下操作： <br><br>-识别目标用户组所需的应用程序<br>-创建和管理用于应用程序部署的 Azure AD 组<br>-打包应用程序以满足 Microsoft Intune 部署标准<br>-将应用程序上载到 Microsoft Intune<br>-在 Microsoft 托管桌面环境中测试应用程序<br>-使用最终用户测试应用程序<br>-管理用户并将其分配给应用程序<br>-通过 Microsoft Intune 识别和部署应用程序更新<br>-卸载并删除已停用的应用程序<br>-采购和分配许可证<br>-为业务线应用程序提供最终用户支持<br>-远程管理应用程序设置<br><br>**Microsoft**将提供 microsoft Intune 部署工具以将应用程序传递到远程客户端。<br><br>有关详细信息，请参阅[应用程序](../get-ready/apps.md)
 安全监视和响应 | 客户负责调查和解决非 Microsoft 托管桌面设备的事件，并确保 Microsoft 托管桌面操作团队收到可能影响服务的任何问题。
 操作支持 | 客户负责提供首选客户联系人和主题专家的列表。 Microsoft 需要这些服务，以防存在非 Microsoft 托管桌面操作事件。 <br><br>客户还负责调查和解决非 Microsoft 托管桌面设备和服务的事件，并确保始终知道 Microsoft 托管桌面操作团队。
 包括 VPN 在内的网络基础结构 | 客户负责安装、配置和管理（包括疑难解答和调试）所有与网络相关的基础结构和服务，包括 internet 连接、网络控制、代理配置和远程连接基础结构。<br><br>如果配置了代理（在硬件或软件中），则存在代理必须允许的 Url 的集合。 客户负责解决因多个代理而导致的任何冲突或不兼容问题。 您可以使用可配置的设置添加特定于您的组织的网络代理。 有关详细信息，请参阅[可配置设置](../working-with-managed-desktop/config-setting-ref.md#proxy)。<br><br>有关详细信息，请参阅[Proxy Configuration](../get-ready/network.md)。

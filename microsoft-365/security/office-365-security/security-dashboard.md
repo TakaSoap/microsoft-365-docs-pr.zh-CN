@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态，查看安全警报并对其采取操作。
-ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537397"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632513"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -33,12 +33,12 @@ ms.locfileid: "43537397"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-根据组织的 Office 365 订阅包括的内容，安全仪表板包含多个小部件，如威胁管理摘要、威胁保护状态、全球每周威胁检测、恶意软件等，如以下各节中所述。
+根据您组织的订阅包括的内容，安全仪表板包含多个小部件，如威胁管理摘要、威胁保护状态、全球每周威胁检测、恶意软件等，如以下各节中所述。
 
-若要查看安全仪表板，请在 " [Office 365 安全 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)" 中，转到 "**威胁管理** \> **仪表板**"。
+若要查看安全仪表板，请在[安全性 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)中，转到 "**威胁管理** \> "**仪表板**。
 
 > [!NOTE]
-> 您必须是 Office 365 全局管理员、安全管理员或安全读者才能查看安全仪表板。 某些小部件需要其他权限才能查看。 若要了解详细信息，请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+> 您必须是全局管理员、安全管理员或安全读者才能查看安全仪表板。 某些小部件需要其他权限才能查看。 若要了解详细信息，请参阅[安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="threat-management-summary"></a>威胁管理摘要
 
@@ -61,7 +61,7 @@ ms.locfileid: "43537397"
 
 ![威胁防护状态小部件](../../media/tpswidget.png)
 
-详细信息取决于 Office 365 订阅是否包含具有或不包含[office 365 高级威胁防护](office-365-atp.md)（ATP）的[Exchange Online Protection](exchange-online-protection-eop.md) （EOP）。
+详细信息取决于您的 Microsoft 365 订阅是否包含具有或不包含[Office 365 高级威胁防护](office-365-atp.md)（ATP）的[Exchange Online Protection](exchange-online-protection-eop.md) （EOP）。
 
 |||
 |---|---|
@@ -101,7 +101,7 @@ ms.locfileid: "43537397"
 
 ![智能见解](../../media/smartinsights.png)
 
-例如，您可能会看到网络钓鱼电子邮件被传递，因为某些用户禁用了其 "垃圾邮件" 选项。 若要了解有关 insights 工作方式的详细信息，请参阅[Office 365 Security & 合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)。
+例如，您可能会看到网络钓鱼电子邮件被传递，因为某些用户禁用了其 "垃圾邮件" 选项。 若要了解有关 insights 工作方式的详细信息，请参阅[Security & 合规性中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)。
 
 ## <a name="threat-investigation-and-response"></a>威胁调查和响应
 
@@ -115,7 +115,7 @@ ms.locfileid: "43537397"
 
 ![趋势部分汇总了组织的电子邮件流趋势](../../media/trends.png)
 
-如果组织的 Office 365 订阅包括[office 365 高级威胁防护计划 2](office-365-ti.md)，您还将在此部分中添加一个**最近的威胁管理警报**报告，使安全团队能够查看高优先级安全警报并对其执行操作。
+此外，如果您的组织的订阅包括[Office 365 高级威胁防护计划 2](office-365-ti.md)，您还将在此部分中添加一个**最近的威胁管理警报**报告，使安全团队能够查看高优先级安全警报并对其执行操作。
 
 若要查看或访问已发送和已接收的电子邮件小组件，您必须具有查看高级威胁防护报告的权限。 若要了解详细信息，请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。
 

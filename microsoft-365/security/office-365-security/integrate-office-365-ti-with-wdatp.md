@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成，以查看更详细的威胁管理信息。
-ms.openlocfilehash: a2634a70bdbdd21efe2c59721e5532500eb4e4cc
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: e416d70baf7498b0163d5bd8aa8e923585a5e5a4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284218"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633805"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>将 Office 365 高级威胁防护与 Microsoft Defender 高级威胁防护集成
 
@@ -38,15 +38,15 @@ ms.locfileid: "43284218"
 
 - 您的组织必须具有 Office 365 ATP 计划2（或 Office 365 E5）和 Microsoft Defender ATP。
     
-- 您必须是 Office 365 全局管理员或在[ &amp;安全合规中心](https://protection.office.com)中分配安全管理员角色（例如安全管理员）。 （请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)）
+- 您必须是全局管理员或具有安全[ &amp;合规性中心](https://protection.office.com)中分配的安全管理员角色（例如安全管理员）。 （请参阅[安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)）
     
 - 您必须有权访问安全 & 合规性中心和 Microsoft Defender 安全中心中的[资源管理器（或实时检测）](threat-explorer.md) 。
     
 ## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>将 Office 365 ATP 与 Microsoft Defender ATP 集成
 
-通过使用 Office 365 安全性 & 合规性中心和 Microsoft Defender 安全中心将 Office 365 的 ATP 与 Microsoft Defender ATP 集成。
+通过使用安全 & 合规性中心和 Microsoft Defender 安全中心，将 Office 365 ATP 与 Microsoft Defender ATP 集成。
   
-1. 作为 Office 365 全局管理员或安全管理员，请转到[https://protection.office.com](https://protection.office.com)并登录。
+1. 作为全局管理员或安全管理员，请转到[https://protection.office.com](https://protection.office.com)并使用工作或学校帐户登录。
     
 2. 选择 "**威胁管理** \> **资源管理器**"。<br>![威胁管理菜单中的资源管理器](../../media/ThreatMgmt-Explorer-nav.png)<br>
     

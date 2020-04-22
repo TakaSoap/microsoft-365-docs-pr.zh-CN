@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928980"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633503"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>跨设备和电子邮件搜寻威胁
 
@@ -31,7 +31,7 @@ ms.locfileid: "42928980"
 
 
 
-Microsoft 威胁防护中的[高级求职](advanced-hunting-overview.md)使你能够主动地在你的 Windows 设备和 Office 365 电子邮件中寻找威胁。 以下是一些搜寻场景和示例查询，可帮助您了解如何构建涵盖设备和电子邮件的查询。
+Microsoft 威胁防护中的[高级求职](advanced-hunting-overview.md)使你能够主动地在你的 Windows 设备和 Microsoft 电子邮件中寻找威胁。 以下是一些搜寻场景和示例查询，可帮助您了解如何构建涵盖设备和电子邮件的查询。
 
 ## <a name="obtain-user-accounts-from-email-addresses"></a>从电子邮件地址获取用户帐户
 在[涵盖设备和电子邮件的表](advanced-hunting-schema-tables.md)之间构建查询时，您可能需要从发件人或收件人电子邮件地址获取用户帐户名称。 为此，请使用来自电子邮件地址的*本地主机*：

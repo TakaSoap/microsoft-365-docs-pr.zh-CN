@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: 摘要：配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。
-ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 摘要：在 Microsoft 365 开发/测试环境中配置与组织的其余部分隔离的 SharePoint Online 团队网站。
+ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082993"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634118"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
- **摘要：** 配置独立于 Office 365 开发/测试环境中的其余组织的 SharePoint Online 团队网站。
+ **摘要：** 在 Microsoft 365 开发/测试环境中配置与组织的其余部分隔离的 SharePoint Online 团队网站。
 
-Office 365 中的 SharePoint Online 团队网站是使用通用文档库、OneNote 笔记本和其他服务进行协作的位置。 在大多数情况下，需要跨部门或组织实现广泛访问和协作。 但是，在某些情况下，您希望在一小部分人员之间严格控制协作的访问权限和权限。
+Microsoft 365 中的 SharePoint Online 团队网站是使用通用文档库、OneNote 笔记本和其他服务进行协作的位置。 在大多数情况下，需要跨部门或组织实现广泛访问和协作。 但是，在某些情况下，您希望在一小部分人员之间严格控制协作的访问权限和权限。
 
 对 SharePoint Online 团队网站的访问权限以及用户可以执行的操作由 SharePoint 组和权限级别控制。 默认情况下，SharePoint Online 网站有三种访问级别：
 
@@ -43,33 +43,33 @@ Office 365 中的 SharePoint Online 团队网站是使用通用文档库、OneNo
 
 - 只有网站创建者和网站管理员组成员才能管理网站，包括可以修改网站级权限。
 
-在 Office 365 开发/测试环境中设置独立的 SharePoint Online 团队网站有三个阶段：
+在 Microsoft 365 开发/测试环境中设置独立的 SharePoint Online 团队网站有三个阶段：
 
-1. 创建 Office 365 开发/测试环境。
+1. 创建 Microsoft 365 开发/测试环境。
 
 2. 创建 ProjectX 用户和组。
 
 3. 创建一个新的 ProjectX SharePoint Online 团队网站并将其隔离。
 
 > [!TIP]
-> 单击[此处](https://aka.ms/catlgstack)可以在 One Microsoft 云测试实验室指南堆栈图中直观转到相应的任何文章。
+> 单击[此处](https://aka.ms/catlgstack)可直观映射到 One Microsoft 云测试实验室指南堆栈中的所有文章。
 
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>第 1 阶段：构建轻型或模拟的企业 Office 365 开发/测试环境
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>第1阶段：构建轻型或模拟的企业 Microsoft 365 开发/测试环境
 
-如果只想使用最低要求以轻型方式创建独立的 SharePoint Online 团队网站，请按照[Office 365 开发/测试环境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的第2阶段和第3阶段中的说明进行操作。
+如果只想使用最低要求以轻型方式创建独立的 SharePoint Online 团队网站，请按照[Microsoft 365 开发/测试环境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的第2阶段和第3阶段中的说明进行操作。
 
-如果要在模拟的企业配置中创建独立的 SharePoint Online 团队网站，请按照[您的 Office 365 开发/测试环境的 DirSync](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment)中的说明进行操作。
+如果要在模拟的企业配置中创建独立的 SharePoint Online 团队网站，请按照[Microsoft 365 开发/测试环境的 DirSync](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment)中的说明进行操作。
 
 > [!NOTE]
 > 创建独立的 SharePoint Online 网站不需要模拟企业开发/测试环境，其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务（AD DS）林的目录同步。 可以根据需要选择此选项，以便能够测试独立 SharePoint Online 网站，并在代表典型组织的环境中对其进行试验。
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>第2阶段：创建用户帐户和访问组
 
-使用[连接到 office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)中的说明，通过以下方式连接到你的全局管理员帐户的 office 365 跟踪订阅：
+使用[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)中的说明，通过全局管理员帐户连接到你的试用订阅：
 
-- 你的计算机（对于轻量级的 Office 365 开发/测试环境）。
+- 您的计算机（适用于轻型 Microsoft 365 开发/测试环境）。
 
-- CLIENT1 虚拟机（对于模拟的企业 Office 365 开发/测试环境）。
+- CLIENT1 虚拟机（针对模拟企业 Microsoft 365 开发/测试环境）。
 
 若要为 ProjectX SharePoint Online 团队网站创建新的访问组，请从 Windows PowerShell 提示符的 Windows Azure Active Directory 模块运行以下命令：
 
@@ -142,13 +142,13 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 **图1**
 
-![适用于独立 SharePoint Online 组网站的 Office 365 组及其成员资格](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![适用于独立 SharePoint Online 组网站的 Microsoft 365 组及其成员资格](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>第3阶段：创建新的 ProjectX SharePoint Online 团队网站并将其隔离
 
 若要为 ProjectX 创建 SharePoint Online 团队网站，请执行以下操作：
 
-1. 使用本地计算机（轻量配置）或 CLIENT1 （模拟企业配置）上的浏览器，使用全局管理员帐户登录到 Office 365 门户[https://admin.microsoft.com](https://admin.microsoft.com)（）。
+1. 使用本地计算机（轻量配置）或 CLIENT1 （模拟企业配置）上的浏览器，使用全局管理员帐户登录 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）。
 
 2. 在磁贴列表中，单击“SharePoint”****。
 
@@ -216,7 +216,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 2. 依次单击全局管理员名称和“注销”****。
 
-3. 使用主导设计器帐户名称及其密码[https://admin.microsoft.com](https://admin.microsoft.com)登录 Office 365 门户（）。
+3. 使用主导设计器帐户名称及其密码登录[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 管理中心（）。
 
 4. 在磁贴列表中，单击“SharePoint”****。
 
@@ -246,7 +246,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 现在，让我们来演示如何使用开发 VP 用户帐户进行访问：
 
-1. 使用开发副总裁帐户名称及其密码[https://admin.microsoft.com](https://admin.microsoft.com)登录 Office 365 门户（）。
+1. 使用开发副总裁帐户名称及其密码登录[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 管理中心（）。
 
 2. 在磁贴列表中，单击“SharePoint”****。
 
@@ -262,7 +262,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 现在，让我们使用没有权限的用户帐户演示访问权限：
 
-1. 使用用户3帐户名称及其密码登录[https://admin.microsoft.com](https://admin.microsoft.com)Office 365 门户（）。
+1. 使用用户3帐户名称及其密码登录 Microsoft[https://admin.microsoft.com](https://admin.microsoft.com)365 管理中心（）。
 
 2. 在磁贴列表中，单击“SharePoint”****。
 
@@ -290,7 +290,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 [基础配置开发/测试环境](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
 
-[Office 365 开发/测试环境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Microsoft 365 开发/测试环境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
 
 [云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

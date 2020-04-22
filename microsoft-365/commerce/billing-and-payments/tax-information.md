@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: '了解不同地区的 Office 365 for business 订阅需要支付多少税。 '
+description: '了解在不同区域中为 Microsoft 365 for business 订阅收取的税款的多少。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826309"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635000"
 ---
 # <a name="tax-information"></a>税务信息
 
-通过 Microsoft 进行的 Microsoft 365 管理中心购买的税款由你的公司地址确定，如果你的发货地址不同，则由你的发货地址确定。 如果你使用的是美国，则必须提供联邦雇主标识号（FEIN）。
+你通过 Microsoft 进行的 Microsoft 365 管理中心购买的税费由你的企业地址决定，如果不同，则由你的送货地址决定。 如果你使用的是美国，则必须提供联邦雇主标识号（FEIN）。
 
 这些国家/地区的企业可以提供其 VAT 号码：
 

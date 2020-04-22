@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: 了解 Microsoft 365 使用情况分析、活动报告和采用指标的活动用户。
-ms.openlocfilehash: 0e2f5f5112593c142b4a7829977221c5542adf49
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2117bae32913ad713318c1df25be66d6ef6859e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238671"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631787"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Microsoft 365 使用情况报告中的活动用户
 
-## <a name="active-user-in-usage-reports"></a>使用情况报表中的活动用户
+## <a name="active-user-in-usage-reports"></a>使用情况报告中的活动用户
 
 Microsoft [365 使用情况分析](usage-analytics.md)的 microsoft 365 产品的活动用户和[管理中心的活动报告](../activity-reports/activity-reports.md)定义如下。 
   

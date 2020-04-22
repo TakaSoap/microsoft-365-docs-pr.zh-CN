@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的电子邮件保护的顺序和优先级
+title: 电子邮件保护的顺序和优先级
 keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
 f1.keywords:
 - NOCSH
@@ -14,16 +14,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 介绍 Office 365 保护的应用程序顺序，以及保护策略中的优先级值如何确定应用的策略。
-ms.openlocfilehash: 6a95c59a5cd629b704753c6c05c9b8069d9240b1
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537409"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633962"
 ---
-# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Office 365 中的电子邮件保护的顺序和优先级
+# <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
-在 Office 365 中，会对入站电子邮件进行评估，因此可以通过多种保护形式（恶意软件、垃圾邮件、网络钓鱼等）对其进行标记。 在所有此活动中，很难确定应用的策略和顺序。
+作为 Microsoft 365 用户，您的入站电子邮件可能会被多种保护形式标记。 例如，可供所有 Microsoft 365 客户使用的内置 EOP 反网络钓鱼策略，以及 Office 365 高级威胁防护客户也可以使用的更强健的 ATP 反网络钓鱼策略。 邮件还会通过多个检测扫描，针对恶意软件、垃圾邮件、网络钓鱼等。在所有此活动中，可能会对应用的策略产生一些混淆。
 
 通常情况下，应用于邮件的策略在**CAT （Category）** 属性的**X-Forefront-反垃圾邮件报告**标头中标识。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
 

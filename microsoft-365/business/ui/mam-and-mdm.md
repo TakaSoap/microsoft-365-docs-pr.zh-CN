@@ -22,21 +22,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解移动设备管理与移动应用管理（MDM 和 MAM）之间的差异。
-ms.openlocfilehash: 590dc9522be7adc9c24c61091928133fb13d9027
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ecb06ffc23823df72f9254d881f6b1dc1b781f59
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42057133"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635024"
 ---
 # <a name="difference-between-mdm-and-mam"></a>MDM 与 MAM 之间的区别
 
-Microsoft 365 商业版提供了多种方法来保护您的业务数据。 有关自动设置的各种保护的详细信息，请参阅[Microsoft 365 商业版概述](../microsoft-365-business-overview.md)，以及你可以自行设置以进一步保护你的业务。 你还可以设置策略来保护你的 Windows 10 设备和移动设备中的数据。
+Microsoft 365 商业高级版提供了多种方法来保护您的业务数据。 有关自动设置的各种保护的详细信息，请参阅[Microsoft 365 商业高级版概述](../microsoft-365-business-overview.md)，以及你可以自行设置以进一步保护你的业务。 你还可以设置策略来保护你的 Windows 10 设备和移动设备中的数据。
 [设置 Windows 10 设备的应用程序保护设置](../protection-settings-for-windows-10-devices.md)。
 
 ## <a name="mobile-device-management-or-mdm"></a>移动设备管理或 MDM
 
-Microsoft 365 Business 允许你设置保护 Windows 10 设备上的数据的策略。 当设备处于移动设备管理下时，您可以控制整个设备，并且可以擦除其中的数据，还可以将其重置为出厂设置。 有关详细信息，请参阅[设置 Windows 10 电脑的设备保护设置](../protection-settings-for-windows-10-pcs.md)。
+Microsoft 365 商业高级版允许您设置策略来保护您的 Windows 10 设备上的数据。 当设备处于移动设备管理下时，您可以控制整个设备，并且可以擦除其中的数据，还可以将其重置为出厂设置。 有关详细信息，请参阅[设置 Windows 10 电脑的设备保护设置](../protection-settings-for-windows-10-pcs.md)。
 
 ## <a name="mobile-application-management-or-mam"></a>移动应用程序管理或 MAM
 

@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 摘要：使用这些过程管理独立的 SharePoint Online 团队网站。
-ms.openlocfilehash: 59c86c869ed38c3e64ff19974660cf96ec4c715e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5fe92f2653774b40eb227c9f8cbb57443fd51e2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598999"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635384"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理独立的 SharePoint Online 团队网站
 
@@ -37,9 +37,9 @@ ms.locfileid: "41598999"
     
 - 查看：将用户帐户添加到网站查看者访问组
     
-如果通过 Active Directory 域服务（AD DS）管理用户帐户和组，请使用常规 AD DS 用户和组管理过程将相应的用户添加到相应的访问组，并等待与 Office 365 同步订购.
+如果通过 Active Directory 域服务（AD DS）管理用户帐户和组，请使用常规 AD DS 用户和组管理过程将相应的用户添加到相应的访问组，并等待与订阅的同步。
   
-如果通过 Office 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 Microsoft PowerShell：
+如果通过 Microsoft 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 Microsoft PowerShell：
   
 - 对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的用户添加到相应的访问组。
     
@@ -69,7 +69,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 - 查看：将组添加到网站查看器访问组
     
-如果通过 AD DS 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程将适当的组添加到适当的组，并等待与 Office 365 订阅同步。
+如果通过 AD DS 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程将适当的组添加到适当的组，并等待与订阅的同步。
   
 如果您通过 Office 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 PowerShell：
   
@@ -94,7 +94,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
     
 - 查看：从网站查看器访问组中删除用户帐户
     
-如果通过 AD DS 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程从适当的访问组中删除相应的用户，并等待与 Office 365 订阅同步。
+如果通过 AD DS 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程从适当的访问组中删除相应的用户，并等待与订阅的同步。
   
 如果您通过 Office 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 PowerShell：
   
@@ -127,7 +127,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
     
 - 查看：从网站查看器访问组中删除组
     
-如果通过 Windows Server Active Directory 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程从适当的访问组中删除相应的组，并等待与 Office 365 同步订购.
+如果通过 Windows Server Active Directory 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程从适当的访问组中删除相应的组，并等待与订阅的同步。
   
 如果您通过 Office 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 PowerShell：
   
@@ -148,7 +148,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
   
 若要创建具有自定义权限的 documents 子文件夹，请执行以下操作：
   
-1. 使用作为网站的管理员访问组成员的帐户登录到 Office 365。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 登录到属于该网站的 "管理员" 访问组成员的帐户。 若要获取帮助，请参阅[登录 Microsoft 365 的位置](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 转到独立的团队网站，然后单击 "**文档**"。
     

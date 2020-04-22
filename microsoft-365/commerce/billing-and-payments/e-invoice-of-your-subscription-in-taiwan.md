@@ -1,5 +1,5 @@
 ---
-title: 了解适用于 Office 365 for business 的电子发票（中国台湾）
+title: 了解 Microsoft 365 for business （中国台湾）的电子发票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
-description: 了解适用于中国台湾的 Office 365 for business 电子发票。
-ms.openlocfilehash: 5b06d8634fef81027cff14170da4e50072a1b48e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 了解适用于中国台湾的 Microsoft 365 for business 电子发票。
+ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354663"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632703"
 ---
-# <a name="understand-your-e-invoice-for-office-365-for-business-taiwan"></a>了解适用于 Office 365 for business 的电子发票（中国台湾）
+# <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>了解 Microsoft 365 for business （中国台湾）的电子发票
 
 电子发票是买方购买后由卖方签发的电子发票（根据台湾税务主管机构的电子发票要求）。 将信息传输到台湾税务机构的电子发票云以进行记录保留。 有关中国台湾电子发票的相关信息，请参阅此处：<a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
@@ -39,7 +39,7 @@ ms.locfileid: "42354663"
 
 对于商业购买，我们除了按照中国台湾税务主管机构规定的费用之外，还会应用税。 有关任何与税相关的问题或规划，请与你的税务顾问一起使用。
   
-## <a name="when-will-e-invoice-start-for-my-office-365-services"></a>何时将为我的 Office 365 服务启动 e 发票？
+## <a name="when-will-e-invoice-start-for-my-microsoft-365-services"></a>何时将为我的 Microsoft 365 服务启动 e 发票？
 
 Microsoft 将在**9 月15日**将当前 computerized 发票替换为电子发票。 对于在9月15日之前的记帐，将直接向客户发送纸面副本税务发票。 在9月15日之后，电子发票将在 Microsoft 365 管理中心提供，以供你查看、下载和打印，并且不再向你直接邮寄。 
   

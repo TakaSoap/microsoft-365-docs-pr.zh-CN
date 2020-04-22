@@ -18,20 +18,20 @@ search.appverid:
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
-description: 即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection （EOP）保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅在由世纪互联运营的 Office 365 中分配管理员角色。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。
-ms.openlocfilehash: 8ff2e28100a748e34b8f079292d937cc9b3857e8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection （EOP）保护邮箱。 若要配置连接器，你的帐户必须是全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅在由世纪互联运营的 Office 365 中分配管理员角色。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。
+ms.openlocfilehash: 5d60e762b46f6f6f9228fb21ea6450e015ed9d93
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895283"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634444"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保护本地邮箱
 
 > [!NOTE]
 > 本文仅适用于由中国世纪互联运营的 Office 365。
 
-即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection （EOP）保护邮箱。 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅[在由世纪互联运营的 office 365 中分配管理员角色](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet)。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。
+即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection （EOP）保护邮箱。 若要配置连接器，你的帐户必须是全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅[在由世纪互联运营的 office 365 中分配管理员角色](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet)。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步骤1：使用 Microsoft 365 管理中心添加并验证你的域
 

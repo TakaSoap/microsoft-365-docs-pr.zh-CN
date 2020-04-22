@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 转换云解决方案提供商订阅
 ms.date: 11/01/2017
-ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: da56ce5bc70dfed5a3e86c739ef3c940b4ac1511
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504099"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635056"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>转换 Microsoft 365 商业版云解决方案提供商订阅
 
@@ -91,7 +91,7 @@ ms.locfileid: "43504099"
 | **登录失败时重置 PIN** | 受限制的应用访问权限 | 没有应用级别访问权限的限制 |
 | **Office 应用处于空闲状态后，要求用户重新登录** | 需要登录 | 无需登录 |
 | **拒绝访问已越狱或获得 root 权限的设备上的工作文件** | 无法在已越狱/取得根的设备上访问工作文件 | 工作文件可以在已越狱/获得 root 权限的设备上访问 |
-| **允许用户将 Office 应用中的内容复制到个人应用** | 复制/粘贴仅限于作为 Microsoft 365 商业版订阅的一部分的应用 | 复制/粘贴适用于所有应用 |
+| **允许用户将 Office 应用中的内容复制到个人应用** | 复制/粘贴限制为可用作 Microsoft 365 订阅的一部分的应用程序 | 复制/粘贴适用于所有应用 |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>订阅到期时 Windows 10 电脑的影响
 

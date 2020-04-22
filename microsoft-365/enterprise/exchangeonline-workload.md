@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 逐步完成在组织内的 Microsoft 365 企业中规划、推出和驱动 Exchange Online 价值的过程。
-ms.openlocfilehash: 30ba71fbf2af684afbbffe0a2e2b1720a8eeec2c
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9214796c37e9cb5ca9fcb07ced5db7efd8e0f7d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453858"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634142"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>部署适用于 Microsoft 365 企业版的 Exchange Online
 
@@ -28,7 +28,7 @@ Exchange Online 还拥有可保护邮箱的高级安全功能（包括反恶意�
 
 如果你是第一次使用 Exchange online，请参阅 [Microsoft Exchange online](https://products.office.com/exchange/exchange-online)。
 
-下面的阶段和步骤将指导您完成在组织中对 Exchange Online 角色进行构想的过程，通过一系列渐进式部署将组织加入 Exchange Online，并推动 Exchange Online 和它的使用对最终用户的价值。
+以下阶段和步骤将指导您完成在组织中对 Exchange Online 角色进行构想的过程，通过一系列渐进式部署将组织加入 Exchange Online，并推动 Exchange Online 及其对最终用户的价值的使用。
 
 >[!Note]
 >仅在完成了第2阶段后，才应遵循以下部署说明[： Microsoft 365 企业版基础结构的标识](identity-infrastructure.md)。
@@ -75,7 +75,7 @@ Exchange Online 可用于不同的用途。 您需要根据您的组织、业务
 
 - [将多个电子邮件帐户迁移到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [将 Exchange Server 公用文件夹迁移到 Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
-- [将 Exchange Server 公用文件夹迁移到 Office 365 组](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
+- [将 Exchange Server 公用文件夹迁移到 Microsoft 365 组](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Exchange Online 中的协作](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Exchange Online 中的收件人](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
 - [iOS 和 Android 版 Outlook](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
@@ -155,8 +155,8 @@ Exchange Online 可用于不同的用途。 您需要根据您的组织、业务
 
 建议的活动如下：
 
-- 请参阅 [Office 365 的成功因素](https://aka.ms/successfactors)，了解与云服务采用有关的常规最佳做法。 
-- 请参阅 [Office 365 活动报告](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)，了解整个组织的 Office 365 服务使用情况。如果不是组织的 Office 365 全局管理员，请让全局管理员向你的用户帐户授予“报告读取者”权限，以便你能够访问活动报告。
+- 请参阅[Microsoft 365 的成功因素](https://aka.ms/successfactors)，了解云服务采用的一般最佳实践。 
+- 若要了解组织中的服务使用情况，请参阅[管理中心中的 Microsoft 365 报表](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)。 如果你不是组织的全局管理员，请让全局管理员的用户向你的用户帐户授予报告读者权限，以便你可以访问活动报告。
 - 监视反馈场所（中心团队团队或 Yammer 中的公共渠道），了解个人是否遇到 Exchange Online 的问题和反馈。 尽快解决他们的疑问和问题，以避免个人受挫，并证明我们是支持发布的。
 - 在每个业务组中找出并培养冠军，并使用 Outlook 突出显示其最佳实践。 将他们的成功事迹反映给组织，以展示项目的成功和采用。 由业务组内的技术领导者签署可对领导者和同行施加强大的影响。
 

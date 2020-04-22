@@ -1,5 +1,5 @@
 ---
-title: 面向管理员的 Office 365 组概述
+title: 适用于管理员的 Microsoft 365 组概述
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解 Office 365 组。
-ms.openlocfilehash: c45c78a26d421c5c16e6ca0769e8adc7ba6e79a8
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: 了解 Microsoft 365 组。
+ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547540"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630039"
 ---
-# <a name="overview-of-office-365-groups-for-administrators"></a>面向管理员的 Office 365 组概述
+# <a name="overview-of-microsoft-365-groups-for-administrators"></a>适用于管理员的 Microsoft 365 组概述
 
-Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资格服务。 使用 Office 365 组，您可以向一组用户授予对要共享的协作资源集的访问权限。 这些资源包括：
+Microsoft 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员身份服务。 使用 Microsoft 365 组，您可以向一组用户授予对要共享的协作资源集的访问权限。 这些资源包括：
 
 - 共享 Outlook 收件箱
 - 共享日历
@@ -39,9 +39,9 @@ Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资
 - 团队（如果组是从团队创建的）
 - 路线图（如果您有适用于 web 的项目）
 
-对于 Office 365 组，您无需手动分配对每个资源的权限，因为向该组添加人员会自动向他们授予对组所提供的工具所需的权限。
+对于 Microsoft 365 组，您无需手动分配对每个资源的权限，因为向该组添加人员会自动向他们授予对组所提供的工具所需的权限。
 
-任何 Office 365 用户都可以创建一个组，除非您将[组创建限制为一组特定的人员](manage-creation-of-groups.md)。 请注意，如果限制组创建，无法创建组的用户将无法创建 SharePoint 网站、规划者或团队。 这些服务要求创建组的人员能够创建组。 用户仍可以参与组活动，例如，在 Planner 中创建任务或使用团队聊天，前提是该组的成员。
+除非您将[组创建限制为一组特定的用户](manage-creation-of-groups.md)，否则任何用户都可以创建组。 请注意，如果限制组创建，无法创建组的用户将无法创建 SharePoint 网站、规划者或团队。 这些服务要求创建组的人员能够创建组。 用户仍可以参与组活动，例如，在 Planner 中创建任务或使用团队聊天，前提是该组的成员。
 
 组具有以下角色：
 
@@ -59,15 +59,15 @@ Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资
 - [管理对组的来宾访问](manage-guest-access-in-groups.md)
 - [恢复已删除的组](restore-deleted-group.md)（在删除后的30天内）
 
-如果您更喜欢管理 Office 365 组生命周期的一种更自动化的方法，则可以使用过期策略在特定时间间隔内使组过期。 组的所有者将在组过期前收到一封电子邮件，以允许他们轻松地续订组（如果仍需要）。 请参阅： [Office 365 组过期策略](office-365-groups-expiration-policy.md)。
+如果您更喜欢管理 Microsoft 365 组生命周期的一种更自动化的方法，则可以使用过期策略在特定时间间隔内使组过期。 组的所有者将在组过期前收到一封电子邮件，以允许他们轻松地续订组（如果仍需要）。 请参阅： [Microsoft 365 组过期策略](office-365-groups-expiration-policy.md)。
 
 你可以从 Microsoft 365 管理中心或[使用 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)管理你的组。
 
-如果您有大量用户（例如在大型公司或企业中），则可能会有许多用户出于各种目的创建组。 强烈建议您查看[Office 365 组中的治理计划](plan-for-groups-governance.md)，以获得最佳实践。
+如果您有大量用户（例如在大型公司或企业中），则可能会有许多用户出于各种目的创建组。 强烈建议您查看[Microsoft 365 组中的治理计划](plan-for-groups-governance.md)，以获得最佳实践。
 
 ## <a name="group-limits"></a>组限制
 
-以下限制适用于 Office 365 组：
+以下限制适用于 Microsoft 365 组：
 
 |最大 .。。|值|
 |:---------|:----|
@@ -79,20 +79,20 @@ Office 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员资
 |文件存储|每个订阅用户 1 tb + 10 GB + 购买的任何附加存储空间。 您可以购买无限量的额外存储空间。|
 |组邮箱大小|50 GB|
 
-Office 365 组织可以拥有的默认最大 Office 365 组数为500000，但可以按请求增加。 有关 Office 365 组限制的详细信息，请参阅[office 365 组-管理员帮助](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)。
+组织可拥有的 Microsoft 365 组的默认最大数量为500000，但可以按请求增加。 有关 Microsoft 365 组限制的详细信息，请参阅[microsoft 365 组-管理员帮助](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)。
 
-当您具有有关组使用情况的可操作信息时，管理 Office 365 组会更有效。 Microsoft 365 管理中心有一个报告工具，可让你查看存储使用情况、拥有的活动组数以及你的用户使用组的数量。 有关详细信息，请参阅： [admin center 中的 Office 365 报告](../activity-reports/office-365-groups.md)。
+在具有有关组使用的可操作信息时，管理 Microsoft 365 组会更有效。 Microsoft 365 管理中心有一个报告工具，可让你查看存储使用情况、拥有的活动组数以及你的用户使用组的数量。 有关详细信息，请参阅： [Microsoft 365 Reports in admin center](../activity-reports/office-365-groups.md) 。
 
-## <a name="which-office-365-plans-include-groups"></a>哪些 Office 365 计划包括组？
+## <a name="which-microsoft-365-plans-include-groups"></a>哪些 Microsoft 365 计划包括组？
 
-任何具有 Exchange Online 和 SharePoint Online 的 Office 365 订阅都将支持组。 其中包括业务重点和业务高级计划，以及企业版 E1、E3 和 E5 计划。 该组将接受创建组的人员（也称为组的 "组织者"）的许可。 只要组织者具有对您希望组拥有的任何功能的正确许可证，该许可证就会传递到组。
+任何具有 Exchange Online 和 SharePoint Online 的 Microsoft 365 订阅都将支持组。 其中包括业务重点和业务高级计划，以及企业版 E1、E3 和 E5 计划。 该组将接受创建组的人员（也称为组的 "组织者"）的许可。 只要组织者具有对您希望组拥有的任何功能的正确许可证，该许可证就会传递到组。
 
 > [!NOTE]
-> 有关 Office 365 服务系列和计划的更多详细信息，请参阅[office 365 计划选项](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> 有关 Microsoft 365 服务系列和计划的更多详细信息，请参阅[microsoft 365 计划选项](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 如果您具有仅 Exchange 计划，您仍可以在 Outlook 中获取组的共享收件箱和共享日历功能，但不会获取文档库、计划程序或任何其他功能。
 
-Office 365 组适用于 Azure Active Directory （AAD）。 你获取的组功能取决于你拥有的 Azure Active Directory 订阅以及分配给组组织者的许可证。
+Microsoft 365 组适用于 Azure Active Directory （AAD）。 你获取的组功能取决于你拥有的 Azure Active Directory 订阅以及分配给组组织者的许可证。
 
 > [!IMPORTANT]
 > 对于所有组功能，如果你有 Azure AD Premium 订阅，则用户可以加入组，无论是否为其分配了 AAD P1 许可证。 不强制实施许可。
@@ -100,10 +100,10 @@ Office 365 组适用于 Azure Active Directory （AAD）。 你获取的组功�
 
 ## <a name="related-articles"></a>相关文章
 
-[了解 Office 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[了解 Microsoft 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[将通讯组列表升级到 Office 365 组](../manage/upgrade-distribution-lists.md)
+[将通讯组列表升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)
 
-[使用 PowerShell 管理 Office 365 组](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 组](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

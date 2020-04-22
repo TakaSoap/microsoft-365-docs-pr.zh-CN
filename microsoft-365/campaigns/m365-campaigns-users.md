@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 的市场活动对用户有何影响。
-ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080500"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632763"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 的市场活动对用户有何影响
 
@@ -70,7 +70,7 @@ Microsoft 365 的市场活动使黑客更难获取对环境的访问权限。 �
 
 若要了解有关这些建议的详细信息，请参阅[保护你的帐户和设备免受黑客和恶意软件的攻击](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)。
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>使用 Microsoft 团队、OneDrive、SharePoint Online 和其他 Office 365 工具进行协作
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>使用 Microsoft 团队、OneDrive、SharePoint Online 和其他工具进行协作
 您的用户可能会试图在 Microsoft 365 之外的位置共享和存储您的组织文件。 Microsoft 365 使其尽可能轻松地进行协作和共享。 您可以直接从 Microsoft 团队、OneDrive、Stream 甚至文件中[共享文件和视频](share-files-and-videos.md)。 通过这些工具中的共享，可以防止数据泄露。 您可以向敏感数据添加其他保护，以防止在您的组织外部进行共享。 
 
 

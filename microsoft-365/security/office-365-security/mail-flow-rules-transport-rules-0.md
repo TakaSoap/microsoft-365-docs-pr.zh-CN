@@ -11,23 +11,23 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: 可以使用邮件流规则（传输规则）识别通过 Office 365 组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: 可以使用邮件流规则（传输规则）识别通过组织传递的邮件并对其执行操作。
+ms.openlocfilehash: 0a182b9d4a63a824a3955e8296160779c826960d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081420"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635408"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则（传输规则）
 
-可以使用邮件流规则（也称为传输规则）识别通过 Office 365 组织进行传递的邮件并对其进行操作。邮件流规则与 Outlook 和 Web 上的 Outlook 中提供的收件箱规则类似。主要区别在于邮件流规则在邮件传输过程中对其进行操作，而不是在邮件传递到邮箱后进行操作。邮件流规则包含更丰富的条件、例外和操作集，让你能灵活实现多种类型的邮件策略。
+您可以使用邮件流规则（也称为传输规则）识别通过组织的邮件并对其执行操作。 邮件流规则与 Outlook 和 Web 上的 Outlook 中提供的收件箱规则类似。 主要区别在于邮件流规则在邮件传输过程中对其进行操作，而不是在邮件传递到邮箱后进行操作。 邮件流规则包含更丰富的条件、例外和操作集，让你能灵活实现多种类型的邮件策略。
 
 本文介绍了邮件流规则的组件及其工作方式。
 
 有关创建、复制和管理邮件流规则的步骤，请参阅[在 Exchange Online 中管理邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 若要了解有关测试选项的详细信息，请参阅[在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)[测试邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)和策略提示。
 
-有关与邮件流规则匹配的邮件的摘要和详细信息报告，请参阅[使用 Office 365 中的邮件保护报告查看关于恶意软件、垃圾邮件和规则检测的数据](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。
+有关与邮件流规则匹配的邮件的摘要和详细报告，请参阅[使用邮件保护报告查看关于恶意软件、垃圾邮件和规则检测的数据](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。
 
 若要通过使用邮件流规则实现特定的邮件策略，请参阅下列主题：
 
@@ -74,7 +74,7 @@ ms.locfileid: "43081420"
 |**组件**|**逻辑**|**Comments**|
 |:-----|:-----|:-----|
 |注释|AND|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果要为带有附件的邮件和包含指定文本的邮件添加相同的免责声明，请为每个条件创建一个规则。在 EAC 中，你可以轻松地复制规则。|
-|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。|或|一些条件允许你指定多个值。邮件必须匹配任一（并非全部）指定值。例如，如果电子邮件的主题为 Stock price information，并且 **主题包含这些词中的任一个**条件被配置为匹配单词 Contoso 或 stock，则符合该条件，因为主题中至少包含指定值中的一个。  |
+|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。|OR|一些条件允许你指定多个值。邮件必须匹配任一（并非全部）指定值。例如，如果电子邮件的主题为 Stock price information，并且 **主题包含这些词中的任一个**条件被配置为匹配单词 Contoso 或 stock，则符合该条件，因为主题中至少包含指定值中的一个。  |
 |一些条件允许您指定多个值。如果一个条件允许输入多个值，则邮件必须与为该条件指定的任何值匹配。例如，如果电子邮件的主题为股价信息，并且主题包含这些词中的任一个条件被配置为匹配词 Contoso 或 stock，则符合该条件，因为主题中至少包含条件值中的一个。|OR|如果邮件匹配任何例外，则操作不会应用到邮件。该邮件不需要匹配所有例外。|
 |如果邮件匹配任何例外，则不会执行操作。邮件不需要匹配所有例外。|AND|匹配规则条件的邮件获取规则中指定的所有操作。例如，如果选择了操作" **在邮件主题前面追加**"和" **将收件人添加到密件抄送框**"，则两种操作都将应用至邮件。  <br/><br/> 匹配规则的条件的邮件会获取规则中指定的所有操作。例如，如果选择了操作“在邮件主题前面追加”和“添加收件人到密件抄送框”，两种操作都将应用至邮件。该邮件将在邮件主题的前面添加指定的字符串作为前缀，并且指定的收件人将添加为密件抄送收件人。<br/><br/> 还可以为规则设置操作，以便在应用该规则时，后续规则不会应用至邮件。|
 

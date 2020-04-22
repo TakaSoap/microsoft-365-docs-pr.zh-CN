@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 了解如何更改业务订阅的付款方式。
-ms.openlocfilehash: 8b9ae2a8396ff984b8468cf364c1112cb2ef6b13
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142593"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632727"
 ---
 # <a name="change-your-payment-method"></a>更改付款方式
 
@@ -64,9 +64,9 @@ ms.locfileid: "43142593"
 > [!NOTE]
 > 在切换支付方式后，你的用户的许可证分配会和以前一样，不会发生改变。
   
- **想要更改付款频率？** 如果要更改为订阅付费的频率（从每年到每月或每月到每年），则需要[致电 Office 365 支持部门](../../admin/contact-support-for-business-products.md)寻求帮助。
+ **想要更改付款频率？** 如果要更改为订阅付费的频率（从每年到每月或每月到每年），则需要[致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)寻求帮助。
   
- **仅想更改信用卡或银行帐户信息？** 请参阅 [在 Office 365 商业版中添加、更新或删除信用卡或银行帐户](add-update-or-remove-credit-card-or-bank-account.md)。
+ **仅想更改信用卡或银行帐户信息？** 请参阅[添加、更新或删除信用卡或银行帐户](add-update-or-remove-credit-card-or-bank-account.md)。
   
  **如果我有未结余额，该怎么办？**
   
@@ -87,6 +87,7 @@ ms.locfileid: "43142593"
   
 当您从发票付款更改为支付信用卡或银行帐户时，我们会自动为您创建一个新的订阅，将用户移动到新订阅，然后禁用旧订阅。 不要担心，你的用户将不会看到服务中断，并且所有信息都将通过新订阅提供。
 
+
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
 2. 如果是在**表格**视图中，请选择 "**卡片**"。
@@ -100,6 +101,7 @@ ms.locfileid: "43142593"
 6. 如果添加付款方法，请输入信用卡或帐户详细信息，然后选择 "**保存**"。
   
 7. 确认所选的支付方式正确，然后选择 "**保存**"。
+
 
 ::: moniker-end
 
@@ -140,6 +142,7 @@ ms.locfileid: "43142593"
 
 如果您的订单数量过高，可能需要进行信用检查。 如果是这样，您会看到 "不符合更改为发票的消息" 消息。 您的订单需要进行信用检查。 在这种情况下，您将改为手动按发票付款。 使用以下步骤完成手动更改。
 
+
 1. 转到<a href="https://Office365.com" target="_blank">Office365.com</a>并购买与您当前拥有的订阅相同的订阅。 在 "签出" 中，选择选项 "按发票付款"。
 
 > [!IMPORTANT]
@@ -147,7 +150,7 @@ ms.locfileid: "43142593"
 
 2. 购买完成后，取消原始订阅。 您的用户将自动移到新订阅。
 
-如果不需要进行信用检查，请使用以下步骤更改为 "按发票付款"。
+如果不需要进行信用检查，请使用以下步骤更改为 "按发票付款"。 
 
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
@@ -164,6 +167,7 @@ ms.locfileid: "43142593"
 7. 完成后，请选择 "**保存**"。
 
 8. 确认所选的支付方式正确，然后选择 "**保存**"。
+
 
 ::: moniker-end
 
@@ -193,9 +197,16 @@ ms.locfileid: "43142593"
 
 可随时使用以下步骤来验证为订阅配置的付款方式。
 
+
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
 2. 查找要验证的订阅。 为订阅配置的付款方式将显示在 "**帐单**" 部分中。
+
+### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>使用旧管理中心确认配置了哪种付款方式
+
+1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
+
+2. 查找要验证的订阅。 为订阅配置的付款方式将显示在 "**付款方式**" 下。
 
 ::: moniker-end
 

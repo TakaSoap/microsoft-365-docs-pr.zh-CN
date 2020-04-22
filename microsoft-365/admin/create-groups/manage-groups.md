@@ -1,5 +1,5 @@
 ---
-title: 管理中心中的 Office 365 组管理
+title: 在管理中心中管理组
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: 了解如何管理 Office 365 组，包括添加删除组成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 34682d3d06babca04a9b2541e3f33ec79d934f50
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解如何管理 Microsoft 365 组，包括添加删除组成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
+ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212065"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630389"
 ---
-# <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理 Office 365 组
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理组
 
-[创建 Office 365 组](create-groups.md)并添加组成员后，可以对组进行配置。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以通过电子邮件发送组以及是否将组对话的副本发送到成员。 
+[创建 Microsoft 365 组](create-groups.md)并添加组成员后，可以对组进行配置。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以通过电子邮件发送组以及是否将组对话的副本发送到成员。 
 
 ## <a name="edit-the-group-name-or-description"></a>编辑组名称或说明
 
@@ -192,14 +192,14 @@ ms.locfileid: "43212065"
 
 ## <a name="related-articles"></a>相关文章
 
-[创建 Office 365 组](create-groups.md)
+[创建 Microsoft 365 组](create-groups.md)
 
-[管理对 Office 365 组的来宾访问](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[管理对 Microsoft 365 组的来宾访问](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
-[选择创建 Office 365 组时要使用的域](choose-domain-to-create-groups.md)
+[选择创建 Microsoft 365 组时要使用的域](choose-domain-to-create-groups.md)
 
-[允许成员作为 Office 365 组进行发送或代表发送](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[允许成员代表 Microsoft 365 组发送或发送](allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[将通讯组列表升级到 Office 365 组](../manage/upgrade-distribution-lists.md)
+[将通讯组列表升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)
 
-[使用 PowerShell 管理 Office 365 组](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[使用 PowerShell 管理 Microsoft 365 组](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)

@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: 在 Windows 10 设备上验证 Microsoft 365 商业应用保护设置，并验证用户不能将公司数据复制到个人文件或非托管应用。
-ms.openlocfilehash: 5b798e0335188543fc308553f71085bcde8b7752
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 在 Windows 10 设备上验证 Microsoft 365 商业高级应用保护设置，并验证用户不能将公司数据复制到个人文件或非托管应用。
+ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560832"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635736"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的应用保护设置
 
@@ -37,7 +37,7 @@ ms.locfileid: "42560832"
   
  **验证连接设置**
   
-1. 按[为 Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)所述，使用 Microsoft 365 商业版凭据登录并连接到 Azure AD 后，请转到" **Windows 设置**"\>" **帐户**"\>" **访问工作或学校帐户**"。选择" **连接到 \<租户名称\> Azure AD**"，然后选择" **信息**"。
+1. 使用 microsoft 365 商业高级凭据登录并连接到 Azure AD，如为[Microsoft 365 商业高级用户设置 windows 设备](set-up-windows-devices.md)中所述，请转到**Windows 设置** \> **帐户** \> **访问工作或学校**。 选择" **连接到 \<租户名称\> Azure AD**"，然后选择" **信息**"。
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -47,7 +47,7 @@ ms.locfileid: "42560832"
   
  **确认无法将公司数据粘贴到非托管应用中**
   
-1. 打开由 Microsoft 365 商业版安装的 Outlook 2016。
+1. 打开由 Microsoft 365 商业高级版安装的 Outlook 2016。
     
 2. 打开一封电子邮件，并复制其中的某些内容。
     
@@ -67,7 +67,7 @@ ms.locfileid: "42560832"
     
 2. 在" **访问工作或学校帐户**"下选择" **连接**"。
     
-3. 在" **设置工作或学校帐户**"对话框\>" **登录**"中，输入 Microsoft 365 商业版凭据。
+3. 在 "**设置工作或学校帐户" 对话框** \> **登录中**输入 Microsoft 365 商业高级凭据。
     
 4. 在" **访问工作或学校帐户**"页面，选择" **工作或学校帐户**"，然后选择" **信息**"。
     
@@ -79,7 +79,7 @@ ms.locfileid: "42560832"
   
  **确认无法将公司数据粘贴到非托管应用中**
   
-1. 打开 Outlook 2016，并添加 Microsoft 365 商业版 帐户（如有必要），然后使用 Microsoft 365 商业版凭据进行登录。
+1. 打开 Outlook 2016 并添加 Microsoft 365 商业高级版帐户（如有必要），并使用 Microsoft 365 商业高级凭据登录。
     
 2. 打开一封电子邮件，并复制其中的某些内容。
     

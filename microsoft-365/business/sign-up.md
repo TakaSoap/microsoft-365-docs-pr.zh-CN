@@ -1,5 +1,5 @@
 ---
-title: 注册 Microsoft 365 商业版
+title: 注册 Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,27 +24,27 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 了解 Microsoft 365 业务包含的内容，并获取注册 Microsoft 365 商业版的分步指南。
-ms.openlocfilehash: 85e9ff3585e1e4bbadc6c34699f75d77486f58ea
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 了解 Microsoft 365 商业高级版中包含的内容，并获取注册 Microsoft 365 商业高级版的分步指南。
+ms.openlocfilehash: 443363fa673a112ae13eb5b63308115724d9bd00
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560734"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635096"
 ---
-# <a name="sign-up-for-microsoft-365-business"></a>注册 Microsoft 365 商业版
+# <a name="sign-up-for-microsoft-365-business-premium"></a>注册 Microsoft 365 商业高级版
 
-若要了解 Microsoft 365 业务包含的内容，请观看[简短视频](https://go.microsoft.com/fwlink/?linkid=2109651)并查看[概述](microsoft-365-business-overview.md)。
+若要了解 Microsoft 365 商业高级版中包含的内容，请观看[简短视频](https://go.microsoft.com/fwlink/?linkid=2109651)并查看[概述](microsoft-365-business-overview.md)。
 
-有三种方法可获取 Microsoft 365 商业版：
-- **购买 microsoft 365 商业版并完成您自己的设置**：若要购买 Microsoft 365 商业版，请[执行以下步骤](#sign-up-steps)。
-- **对于 Microsoft 合作伙伴**：如果你是合作伙伴，请参阅[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)版。
+有三种方法可以获得 Microsoft 365 商业高级版：
+- **购买 microsoft 365 商业高级版并完成你自己的设置**：若要购买 Microsoft 365 商业高级版，请[执行以下步骤](#sign-up-steps)。
+- **对于 microsoft 合作伙伴**：如果你是合作伙伴，请参阅[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版](get-microsoft-365-business.md)。
 - **获取 microsoft**store 的帮助：头到[microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 商店可以帮助您解决计划、帮助您购买适合您的业务需求的计划，并帮助您完成设置。
 
 **需要不同的东西？** 可执行下列操作：
-- [将 Office 365 计划升级到 Microsoft 365 商业](migrate-to-microsoft-365-business.md)版。
-- 在一个月内获取 Microsoft 365 商业[版免费试用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
-- 如果你需要具有较少功能的计划，请[注册 Office 365 商业高级版](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 了解每个业务计划在[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的内容。
+- [将 Office 365 计划升级到 Microsoft 365 商业高级版](migrate-to-microsoft-365-business.md)。
+- 获取为期一个月的 Microsoft 365 商业高级[版免费试用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
+- 如果你需要具有较少功能的计划，请[注册 Microsoft 365 商业标准](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 了解每个业务计划在[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的内容。
 - 如果你不需要购买企业版，[请注册家庭或家庭计划](https://go.microsoft.com/fwlink/?linkid=2109398)。 
 
 ## <a name="sign-up-steps"></a>注册步骤
@@ -58,10 +58,10 @@ ms.locfileid: "42560734"
 若要注册并购买适用于您的企业的 Microsoft 365，请完成以下步骤：
 
 1. 在 " [Microsoft 365 for business" 页](https://go.microsoft.com/fwlink/?linkid=2109654)上，选择 "**查看 & 定价的计划**"。 
-2. 在下一页上，查找每月费用，然后向下滚动页面，以了解有关 Microsoft 365 Business 中所包含内容的详细信息。 在 Microsoft 365 商业版下，选择 "**立即购买**"。
-3. 在**感谢你选择 Microsoft 365 商业**版页面上，输入你的信息即可开始。
+2. 在下一页上，查找每月费用，然后向下滚动页面，以了解有关 Microsoft 365 中包含的内容的详细信息。 在 "Microsoft 365 商业高级版" 下，选择 "**立即购买**"。
+3. 在**感谢你选择 Microsoft 365 商业高级版**页面上，输入你的信息即可开始。
 4. 在**步骤 1**中，输入您已使用的电子邮件地址。 这可以是你当前的工作电子邮件地址或你希望 Microsoft 在安装过程中用于与你进行通信的任何地址。 它还是向你发送有关帐单和续订信息的地址。 然后依次选择 ""、"**设置帐户**"。
-5. 在**步骤 2**中，输入你的姓名、业务电话号码、公司名称和位置。 你的国家或地区决定了你从 Microsoft 收到的确切服务，在完成此步骤后无法更改。 选择“下一步”****。
+5. 在**步骤 2**中，输入你的姓名、业务电话号码、公司名称和位置。 你的国家或地区决定了你从 Microsoft 收到的确切服务，在完成此步骤后无法更改。 选择“**下一步**”。
     > [!NOTE]
     > 我们在管理中心显示你的公司名称;你可以在此处管理 Microsoft 365 用户、许可证等。 此外，我们还将其包含在任何内部（SharePoint）网站 Url 中。
 6. 在**步骤 3**：
@@ -96,4 +96,4 @@ ms.locfileid: "42560734"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

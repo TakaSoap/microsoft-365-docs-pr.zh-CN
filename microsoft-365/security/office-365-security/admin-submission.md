@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的管理员提交，O365 报送，Office 365 垃圾邮件问题，O365 false 负数，提交在 office 365 中的网络钓鱼，提交电子邮件以便进行扫描，在 Office 365 中提交可疑电子邮件，扫描邮件，让 Microsoft 扫描网络钓鱼，使用 microsoft 扫描进行垃圾邮件，提交电子邮件、提交电子邮件、dodgy 电子邮件、不正确的主角邮件、可疑、不受信任的邮件、向 microsoft 报告网络钓鱼电子邮件、将网络邮件报告给 microsoft、向 microsoft 报告欺诈电子邮件、将电子邮件报告给 microsoft、将电子邮件报告给 microsoft、垃圾邮件收件箱 office 365 中的电子邮件，病毒在电子邮件 office 365 中
+title: 管理员提交、提交、垃圾邮件问题、误报、提交网络钓鱼、提交电子邮件进行扫描、在 Office 365 中使用可疑电子邮件、扫描邮件、使用 Microsoft 扫描网络钓鱼、使用 microsoft 扫描垃圾邮件、提交电子邮件、提交电子邮件、dodgy 电子邮件、错误演员邮件、可疑、不受信任的邮件、向 microsoft 报告诈骗电子邮件、向 microsoft 报告诈骗电子邮件，将电子邮件中的恶意软件报告给 Microsoft，收件箱中的垃圾邮件，电子邮件中的病毒
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 了解如何将可疑电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件从 Office 365 租户提交到 Microsoft 进行扫描。
-ms.openlocfilehash: 539d09f03a8a9c5956f2d1e3584f893b0e4ffbb4
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: 了解如何将可疑电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件从公司的公司提交到 Microsoft 进行扫描。
+ms.openlocfilehash: 2d86555854f9babd202764f1bad8b548daf52c70
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033610"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631377"
 ---
-# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用管理员提交将可疑的垃圾邮件、网络钓鱼诈骗、Url 和文件提交给 Microsoft
+# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
-如果您是在 Exchange Online 中拥有邮箱的 Office 365 组织中的管理员，则可以使用 Office 365 安全 & 合规性中心中的提交门户将电子邮件、Url 和附件提交到 Microsoft 进行扫描。
+如果您是使用 Exchange Online 中的邮箱的 Microsoft 365 组织中的管理员，则可以使用安全 & 合规性中心中的提交门户将电子邮件、Url 和附件提交给 Microsoft 进行扫描。
 
 当您提交电子邮件时，您将获得可能允许传入的电子邮件进入租户的任何策略的信息，以及对邮件中的任何 Url 和附件的检查。 可能允许邮件的策略包括单个用户的安全发件人列表和租户级策略，如 Exchange 邮件流规则（也称为传输规则）。
 
@@ -34,13 +34,13 @@ ms.locfileid: "43033610"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到**提交**页面，请<https://protection.office.com/reportsubmission>使用。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除反垃圾邮件策略，您必须是 "**组织管理**"、"**安全管理员**" 或 "**安全读者**" 角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅 [Office 365 安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除反垃圾邮件策略，您必须是 "**组织管理**"、"**安全管理员**" 或 "**安全读者**" 角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 有关用户如何向 Microsoft 提交邮件和文件的详细信息，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>如何将可疑内容定向到 Microsoft for Office 365 扫描
+## <a name="how-to-direct-suspicious-content-to-microsoft-scanning"></a>如何将可疑内容定向到 Microsoft 扫描
 
 若要将内容提交给 Microsoft，请单击 "提交" 页面左上角的 "**新建提交**" 按钮。 将显示页面右侧的浮出控件，其中包含用于提交电子邮件、URL 或文件的选项。
 

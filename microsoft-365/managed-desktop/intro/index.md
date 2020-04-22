@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516805"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636216"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
@@ -28,7 +28,7 @@ Microsoft 托管桌面提供了一种解决方案，用于解决企业及其人�
 - 许多当前的 IT 管理和安全流程已过时、耗时且成本高昂。
 - 企业希望将重点放在什么使其唯一成功，而不是维护数字基础结构。
 
-你的最终用户将享受 curated 的最新版本的 Windows 10 和 Office 365 专业增强版应用（也更多），并使用的设备和软件，并经过严格测试以获得最佳性能和可靠性。 此外，您永远不需要担心将任何此软件保持为最新状态，因为这一过程会自动进行，并遵循每个步骤中所监视的每个步骤。 由于技术和安全问题，已注册的设备将受到24x7 监控，因此如果出现问题，帮助将一直处于工作中。
+你的最终用户将享受适用于企业应用的 Windows 10 和 Microsoft 365 应用的最新版本（也更多），使用 curated 的设备和软件，并经过严格测试以实现最佳性能和可靠性。 此外，您永远不需要担心将任何此软件保持为最新状态，因为这一过程会自动进行，并遵循每个步骤中所监视的每个步骤。 由于技术和安全问题，已注册的设备将受到24x7 监控，因此如果出现问题，帮助将一直处于工作中。
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Microsoft 托管桌面的独特之处
@@ -111,4 +111,3 @@ Microsoft 托管桌面承担管理注册设备及其使用的 Microsoft 软件�
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-

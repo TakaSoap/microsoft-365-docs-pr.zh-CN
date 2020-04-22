@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 促销代码降低价格
+title: 使用促销代码降低价格
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: 了解如何将促销代码应用于 Office 365 订阅以降低价格，以及如何在发生错误时解决促销代码问题。
+description: 了解如何将促销代码应用于 Microsoft 365 订阅以降低价格，以及如何在发生错误时解决促销代码问题。
 ms.custom: okr_SMB
-ms.openlocfilehash: ebb2c06623dc295fdcbc3cac4f51894decc3a7b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 55ce4192a2b76fae841c7b5e2a5733c4d5c2769e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238562"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631853"
 ---
-# <a name="use-your-office-365-promo-code-to-reduce-price"></a>使用 Office 365 促销代码降低价格
+# <a name="use-your-promo-code-to-reduce-price"></a>使用促销代码降低价格
 
 在购买订阅时，可以使用促销代码来降低价格。 阅读本文，了解如何将促销代码应用到订阅、了解[促销代码条款](#promo-code-terms)以及如何[解决促销代码问题](#troubleshooting-promo-codes)。
   
@@ -47,7 +47,7 @@ ms.locfileid: "42238562"
   
 ## <a name="promo-code-terms"></a>促销代码期限
 
-以下准则适用于 Office 365 商业版 订阅的促销代码。
+以下准则适用于适用于 Microsoft 365 商业版订阅的促销代码。
   
 - **每个订阅的促销代码数** 您可以对同一个订单中的多个订阅使用一个促销代码，但是不能对同一订阅使用多个促销代码。 
     

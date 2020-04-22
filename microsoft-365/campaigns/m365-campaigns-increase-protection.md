@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 获取有关在 Microsoft 365 商业版中提高保护级别的帮助
-ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 获取有关在 Microsoft 365 中提高保护级别的帮助
+ms.openlocfilehash: d7ab554ae2f162260e978fe82d4a197cc0d84d02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080629"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633709"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
 本文可帮助你提高 Microsoft 365 订阅中的保护，以防止出现网络钓鱼、恶意软件和其他威胁。 这些建议适用于具有更高安全性需求的组织，如政治市场、法律办事处和卫生保健诊所。 
 
-在开始之前，请检查您的 Office 365 安全分数。 Office 365 安全分数根据您的常规活动和安全设置来分析 Office 365 组织的安全性，并给出分数。 首先记录你的当前分数。 采取本文中建议的操作可提高您的成绩。 目标不能达到最大分数，但请注意保护您的环境不会对用户的工作效率造成负面影响的机会。 
+在开始之前，请检查您的 Office 365 安全分数。 Office 365 安全分数根据您的常规活动和安全设置来分析组织的安全性，并给出分数。 首先记录你的当前分数。 采取本文中建议的操作可提高您的成绩。 目标不能达到最大分数，但请注意保护您的环境不会对用户的工作效率造成负面影响的机会。 
 
 有关详细信息，请参阅[Microsoft 安全分数](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "42080629"
   
 1. 转到[https://protection.office.com](https://protection.office.com)并使用你的管理员帐户凭据登录。 
     
-2. 在 "Office 365 安全&amp;合规中心" 的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略** \> **反恶意软件**"。
+2. &amp;在安全合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略** \> **反恶意软件**"。
     
 3. 双击默认策略以编辑此公司范围的策略。
     
@@ -59,7 +59,7 @@ ms.locfileid: "42080629"
   
 
 
-## <a name="protect-against-ransomware"></a>防御勒索软件
+## <a name="protect-against-ransomware"></a>防范勒索软件
 
 勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它会通过在 exchange 中请求 "勒索" （通常为 "cryptocurrencies" 的形式为 "Bitcoin"），从受害者处 extort 钱，以供 exchange 访问数据。 
   
@@ -134,7 +134,7 @@ ms.locfileid: "42080629"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。 
     
-2. 在 "Office 365 安全&amp;合规中心" 的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
+2. 在安全&amp;合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
     
 3. 在 "**策略**" 页上，选择 " **ATP 反网络钓鱼**"。
     
@@ -148,13 +148,13 @@ ms.locfileid: "42080629"
 |**设置或选项**<br/>|**推荐设置** <br/>|
 |:-----|:-----|
 |名称  <br/> |域和最有价值的市场活动员工  <br/> |
-|描述  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
+|说明  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
 |添加要保护的用户  <br/> |选择 **+ 添加条件，收件人为**。 键入用户名称或输入候选人、活动经理和其他重要教职员工成员的电子邮件地址。 您最大可以添加20个要从模拟中保护的内部和外部地址。  <br/> |
 |添加要保护的域  <br/> |选择 **"+ 添加条件，收件人域为"**。 输入与 Microsoft 365 订阅关联的自定义域（如果已定义一个）。 您可以输入一个以上的域。  <br/> |
-|选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，*刘爱琳<span><span>@contoso .com*。          如果由模拟域发送电子邮件：选择 "**隔离邮件**"。  <br/> |
-|邮箱智能  <br/> |默认情况下，当您创建新的反网络钓鱼策略时，将选择邮箱智能。 将此设置保留为 **"开"** 以获得最佳效果。  <br/> |
+|选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，*刘爱琳<span><span>@contoso .com*。          如果电子邮件是由模拟域发送的：请选择“隔离邮件”****。  <br/> |
+|邮箱智能  <br/> |默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”****。  <br/> |
 |添加受信任的发件人和域  <br/> |你可以在此处添加你自己的域或任何其他受信任域。  <br/> |
-|应用于  <br/> |选择 **"收件人域"**。 在**以下任一情况**下，选择 "**选择**"。 选择 " **+ 添加**"。 选中域名称旁边的复选框，例如 " *contoso"。<span>com <span>*，请在列表中，然后选择 "**添加**"。 选择“**完成**”。  <br/> |
+|应用于  <br/> |选择“收件人域为”****。 在“以下任何项”**** 中，选择“选择”****。 选择“+ 添加”****。 选中域名称旁边的复选框，例如 " *contoso"。<span>com <span>*，请在列表中，然后选择 "**添加**"。 选择“完成”****。  <br/> |
    
 有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
   
@@ -166,7 +166,7 @@ ms.locfileid: "42080629"
 
    ![上的新管理中心预览。](../media/previewon.png)
 
-如果你的租户中未显示 "**设置**" 页面，请参阅如何在 Office 365 安全&amp;合规中心中完成这些步骤。 请参阅[在安全 & 合规性中心中设置 atp 安全附件](#set-up-atp-safe-attachments-in-the-security--compliance-center)，并[在安全 & 合规性中心中设置 atp 安全链接](#set-up-atp-safe-links-in-the-security--compliance-center)。
+如果你的租户中未显示包含卡的**安装程序**页，请参阅如何在安全&amp;合规中心中完成这些步骤。 请参阅[在安全 & 合规性中心中设置 atp 安全附件](#set-up-atp-safe-attachments-in-the-security--compliance-center)，并[在安全 & 合规性中心中设置 atp 安全链接](#set-up-atp-safe-links-in-the-security--compliance-center)。
 
 1.  在左侧导航中，选择 "**设置**"。
 2. 在 "**安装程序**" 页上，选择 "**增强来自高级威胁的保护**" 卡片上的 "**查看**"。</br></br>
@@ -188,7 +188,7 @@ ms.locfileid: "42080629"
   
 1. 转到[https://protection.office.com](https://protection.office.com)并使用管理员帐户登录。 
     
-2. 在 "Office 365 安全&amp;合规中心" 的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
+2. 在安全&amp;合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
     
 3. 在 "策略" 页上，选择 " **ATP 安全附件**"。
     
@@ -204,7 +204,7 @@ ms.locfileid: "42080629"
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|
 |名称  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件。  <br/> |
-|描述  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件和附件。  <br/> |
+|说明  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件和附件。  <br/> |
 |保存附件未知的恶意软件响应  <br/> |Select **block-阻止当前和将来的包含检测到的恶意软件的电子邮件和附件**。  <br/> |
 |在检测时重定向附件  <br/> |启用重定向（选择此框）输入管理员帐户或邮箱设置进行隔离。          如果恶意软件扫描附件超时或发生错误（选中此框），请应用上面的选择。  <br/> |
 |应用于  <br/> |收件人域为。 . . 选择您的域。  <br/> |
@@ -225,7 +225,7 @@ ms.locfileid: "42080629"
   
 1. 转到[https://protection.office.com](https://protection.office.com)并使用管理员帐户登录。 
     
-2. 在 "Office 365 安全&amp;合规中心" 的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
+2. 在安全&amp;合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
     
 3. 在 "策略" 页上，选择 " **ATP 安全链接**"。
     
@@ -233,7 +233,7 @@ ms.locfileid: "42080629"
   
 1. 在 "安全链接" 页面上，在 "**适用于整个组织的策略**" 下，选择 "**默认**策略"。 
     
-2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 " **office 365 专业增强版，office For iOS 和 Android**"。
+2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 "适用于**企业的 Microsoft 365 应用，Office For iOS 和 Android**"。
     
 3. 单击“**保存**”。 
     
@@ -258,12 +258,12 @@ ms.locfileid: "42080629"
 
 在安全&amp;合规中心中打开审核日志搜索后，可以将管理员和其他用户活动保留在日志中并进行搜索。 
 
-您必须在 Exchange Online 中向您分配 "审核日志" 角色，以便在 Microsoft 365 商业版订阅中打开或关闭审核日志搜索。 默认情况下，此角色在 Exchange 管理中心中的 "权限" 页上分配给合规性管理和组织管理角色组。 默认情况下，Microsoft 365 中的全局管理员是此组的成员。
+您必须在 Exchange Online 中向您分配 "审核日志" 角色，以便在 Microsoft 365 订阅中打开或关闭审核日志搜索。 默认情况下，此角色在 Exchange 管理中心中的 "权限" 页上分配给合规性管理和组织管理角色组。 默认情况下，Microsoft 365 中的全局管理员是此组的成员。
 
 1. 若要启用审核日志搜索，请转到管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然后在左侧导航中的 "**管理中心**" 下选择 "**合规性**"。 
 2. 在 " **Microsoft 365 合规性**" 页面上，选择 "**更多资源**"，然后**打开**" **Office 365 安全&amp;中心**卡"。
 
-    ![在 Office 365 安全 & 合规性轿车上选择 "打开"。](../media/gotosecandcomp.png)
+    ![在安全 & 合规性轿车上选择 "打开"。](../media/gotosecandcomp.png)
 3. 在 "安全性和合规性" 页上，依次选择 "**搜索**" 和 "**审核日志搜索**"。
 1. 在 "**审核日志搜索**" 页的顶部，选择 "**启用审核**"。
 
@@ -282,8 +282,8 @@ ms.locfileid: "42080629"
 
 您可以使用活动警报跟踪管理员和用户活动，并检测组织中的恶意软件和数据丢失防护事件。 你的订阅包含一组默认策略，但你也可以创建自定义策略。 有关详细信息，请参阅[警报策略](https://docs.microsoft.com/office365/securitycompliance/alert-policies)。 例如，如果您在 SharePoint 中存储不希望任何人在外部共享的重要文件，则可以创建通知，以便在用户确实共享时通知您。
 
-下图显示了 Microsoft 365 商业版中包含的默认策略。 <br/><br/>
-    ![Microsoft 365 商业版中包含的默认通知策略。](../media/alertpolicies.png)
+下图显示了 Microsoft 365 附带的默认策略。 <br/><br/>
+    ![Microsoft 365 附带的默认通知策略](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>禁用或管理日历共享
 

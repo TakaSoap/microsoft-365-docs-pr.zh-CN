@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置多重身份验证。
-ms.openlocfilehash: b0594551b9efb907dfba374f781f21b8850f85d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35171688f9e224bdcb9ce8a592cc80124d253d2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594837"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633697"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
@@ -36,7 +36,7 @@ ms.locfileid: "41594837"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
 
-有关详细信息，请参阅在[Microsoft 365 商业版中设置多重身份验证](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+有关详细信息，请参阅[Microsoft 365 中的设置多重身份验证](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>在设备中使用 Outlook 应用程序
 

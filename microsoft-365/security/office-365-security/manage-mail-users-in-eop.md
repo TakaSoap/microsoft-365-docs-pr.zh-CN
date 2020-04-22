@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。
-ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633790"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635576"
 ---
 # <a name="manage-mail-users-in-eop"></a>在 EOP 中管理邮件用户
 
@@ -63,7 +63,7 @@ ms.locfileid: "42633790"
 
   - **基于目录的边缘阻止（DBEB）**：有关 DBEB 的详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
 
-  - **最终用户垃圾邮件隔离**：为了访问最终用户的垃圾邮件隔离，最终用户必须具有有效的 Office 365 用户 ID 和密码。 负责保护本地邮箱的 EOP 客户必须是有效的电子邮件用户。
+  - **最终用户垃圾邮件隔离**：为了访问最终用户的垃圾邮件隔离，最终用户必须具有有效的用户 ID 和密码。 负责保护本地邮箱的 EOP 客户必须是有效的电子邮件用户。
 
   - **邮件流规则**：使用目录同步时，会自动将现有的 Active directory 用户和组上载到云，然后可以创建邮件流规则（也称为传输规则），这些规则针对特定用户和/或组，而无需通过 EAC 或 Exchange Online Protection PowerShell 手动添加它们。 请注意， [动态通讯组](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)无法通过目录同步进行同步。
 
@@ -126,7 +126,7 @@ ms.locfileid: "42633790"
 
 - 外部电子邮件地址是 jzeng@tailspintoys.com。
 
-- Office 365 登录名为 jeffreyz@contoso.onmicrosoft.com。
+- Microsoft 365 登录名为 jeffreyz@contoso.onmicrosoft.com。
 
 - 密码为 Pa$$word1。
 

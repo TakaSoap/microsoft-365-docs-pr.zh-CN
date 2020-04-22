@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮助您确定组织的总体状态和运行状况。此外，还提供可帮助您解决特定事件（例如邮件没有到达目标收件人）的工具，以及协助满足合规性要求的审核报告。下表描述了 EOP 管理员可用的报告和故障排除工具。
-ms.openlocfilehash: 282fd032e73ccb8217801a575f6029dbd9fadc9c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e961c76daaad72fbd1ddede5651cb49fd66d48be
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598549"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634348"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection 中的报告和邮件跟踪
 
@@ -25,7 +25,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 ## <a name="usage-reports"></a>使用率报告
 
-**Office 365 组活动**：查看有关创建和使用的 office 365 组数量的信息。
+**Microsoft 365 组活动**：查看有关创建和使用的 microsoft 365 组数量的信息。
 
 **电子邮件活动**：查看有关整个组织中发送、接收和读取的邮件数的信息以及特定用户的信息。
 
@@ -35,13 +35,13 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 有关详细信息，请参阅下列资源：
 
-- [Admin center 中的 office 365 报告-Office 365 组](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Microsoft 365 组-管理中心中的 microsoft 365 报告](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [管理中心内的 Office 365 报告-电子邮件活动](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Microsoft 365 管理中心内的报告-电子邮件活动](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [管理中心中的 Office 365 报表-电子邮件应用程序使用情况](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [管理中心中的 Microsoft 365 报表-电子邮件应用程序使用情况](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [管理中心中的 Office 365 报表-邮箱使用情况](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- ["管理中心" 中的 Microsoft 365 报表-邮箱使用情况](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的安全性 & 合规性报告
 
@@ -61,7 +61,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 以编程方式创建报表。 请参阅[Microsoft Graph 概述](https://docs.microsoft.com/graph/overview)。
 
-## <a name="message-trace"></a>Message trace
+## <a name="message-trace"></a>邮件跟踪
 
 在电子邮件通过 EOP 时，追踪电子邮件信息。 您可以确定电子邮件是否被接收、拒绝、延迟或由服务传递。 它还显示邮件在到达其最终状态之前对邮件执行的操作。
 

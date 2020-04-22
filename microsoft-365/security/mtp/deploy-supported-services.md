@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521476"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633467"
 ---
 # <a name="deploy-supported-services"></a>部署支持的服务
 
@@ -61,8 +61,8 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 
 | 服务 | 数据（信号 & 相关信息） | 修正 & 响应作用域 |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | -终结点状态和原始事件<br />-终结点检测和警报，包括防病毒、EDR、攻击面减少<br />-有关在终结点上观测到的文件和其他实体的信息 | 点 |
-| Office 365 ATP | -邮件和邮箱状态以及原始事件<br />-电子邮件、附件和链接检测 | -邮箱<br />-Office 365 帐户 |
+| Microsoft Defender ATP | -终结点状态和原始事件<br />-终结点检测和警报，包括防病毒、EDR、攻击面减少<br />-有关在终结点上观测到的文件和其他实体的信息 | 终结点 |
+| Office 365 ATP | -邮件和邮箱状态以及原始事件<br />-电子邮件、附件和链接检测 | -邮箱<br />-Microsoft 365 帐户 |
 | Azure ATP | -Active Directory 信号，包括身份验证事件<br />-与标识相关的行为检测 | 标识 |
 | Microsoft Cloud App Security | -Unsanctioned 云应用和服务的检测（隐藏它）<br />-将数据暴露给云应用<br />-与云应用程序关联的威胁活动 | 云应用 |
 

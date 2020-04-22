@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d35313cf481ecd6892725ae385e7db1032565611
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 5cfda9a581e03c91815bdcbd2508fcc6c52d2652
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234791"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633627"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -39,7 +39,7 @@ ms.locfileid: "42234791"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `AttachmentId` | string | 唯一电子邮件附件标识符 |
-| `NetworkMessageId` | string | 由 Office 365 生成的电子邮件的唯一标识符 |
+| `NetworkMessageId` | string | 由 Microsoft 365 生成的电子邮件的唯一标识符 |
 | `SenderFromAddress` | string | 发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到） |
 | `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |

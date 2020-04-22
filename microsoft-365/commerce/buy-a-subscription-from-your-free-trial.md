@@ -1,5 +1,5 @@
 ---
-title: 了解如何购买 Office 365 商业版的试用版
+title: 从免费试用版购买 Microsoft 365 for business 订阅
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: 购买 Office 365 for business 订阅。 您可以购买您尝试的相同类型的订阅，也可以购买不同的计划。
-ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 购买 Microsoft 365 for business 订阅。 您可以购买您尝试的相同类型的订阅，也可以购买不同的计划。
+ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142283"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634940"
 ---
-# <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>了解如何购买 Office 365 商业版的试用版
+# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>从免费试用版购买 Microsoft 365 for business 订阅
 
-你已试用 Office 365，现在已准备好购买。 从试用版购买 Office 365 时，有两种方法可供选择：
+你已试用 Microsoft 365，现在已准备好购买。 从试用版购买 Microsoft 365 时，有两种方法可供选择：
   
 - [购买与试用版相同的计划](#buy-the-same-plan-as-your-trial)
 - [购买与试用版不同的计划](#buy-a-different-plan-than-your-trial)
@@ -98,6 +98,7 @@ ms.locfileid: "43142283"
 
 ::: moniker range="o365-worldwide"
 
+
 1. 在 "管理中心" 中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>" 页。
 
 2. 在 "**购买服务**" 页上，选择要购买的订阅，然后选择 "**购买**"。
@@ -136,6 +137,7 @@ ms.locfileid: "43142283"
 
 ::: moniker range="o365-21vianet"
 
+
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**添加订阅**"。
@@ -156,10 +158,11 @@ ms.locfileid: "43142283"
 
 ::: moniker-end
 
+
 ## <a name="related-articles"></a>相关文章
 
 [延长试用期](extend-your-trial.md)
   
-[注册 Office 365](../admin/admin-overview/sign-up-for-office-365.md)
+[注册 Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[切换到其他 Office 365 计划或订阅](subscriptions/switch-to-a-different-plan.md)
+[切换到其他 Microsoft 365 计划或订阅](subscriptions/switch-to-a-different-plan.md)

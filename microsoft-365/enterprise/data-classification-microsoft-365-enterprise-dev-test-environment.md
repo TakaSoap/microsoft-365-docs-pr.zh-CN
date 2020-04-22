@@ -13,35 +13,35 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: 使用此测试实验室指南可在 Microsoft 365 企业版测试环境中的文档上创建和使用 Office 365 保留标签。
-ms.openlocfilehash: 6534eff67e9c91423eb6f81415cb3ef2e965dcc1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 使用此测试实验室指南可在 Microsoft 365 企业版测试环境中的文档上创建和使用保留标签。
+ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067989"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636088"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的数据分类
 
-*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
-使用本文中的说明，可以在 Microsoft 365 企业版测试环境中使用 Office 365 保留标签配置数据分类。
+使用本文中的说明，可以在 Microsoft 365 企业版测试环境中使用保留标签配置数据分类。
 
-![适用于 Microsoft 云的测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
-如果只想使用最低要求以轻型方式配置 Office 365 保留标签，请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
+如果只想使用最低要求以轻型方式配置保留标签，请按照[轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
   
-如果要在模拟的企业中配置 Office 365 保留标签，请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
+如果要在模拟的企业中配置保留标签，请按照[传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试 Office 365 保留标签不需要模拟企业测试环境，其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务（AD DS）林的目录同步。 此处提供了此选项，以便您可以测试自动授权和组成员身份，并在代表典型组织的环境中进行试验。 
+> 测试保留标签不需要模拟企业测试环境，其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务（AD DS）林的目录同步。 此处提供了此选项，以便您可以测试自动授权和组成员身份，并在代表典型组织的环境中进行试验。 
 
-## <a name="phase-2-create-office-365-retention-labels"></a>第2阶段：创建 Office 365 保留标签
+## <a name="phase-2-create-retention-labels"></a>阶段2：创建保留标签
 
 在此阶段中，您将为 SharePoint Online 文档文件夹的不同保留级别创建保留标签。
 
@@ -85,7 +85,7 @@ ms.locfileid: "42067989"
  
 请注意，发布保留标签可能需要几分钟时间。
 
-## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>第3阶段：将 Office 365 保留标签应用于文档
+## <a name="phase-3-apply-retention-labels-to-documents"></a>第3阶段：将保留标签应用于文档
 
 在此阶段中，您将发现 SharePoint Online 网站的 Documents 文件夹中的文件的默认保留标签行为，并手动更改文档的保留标签。
 
@@ -133,7 +133,7 @@ ms.locfileid: "42067989"
     
 7. 在 "**文档 .docx** " 窗格中，在 "**应用保留标签**" 下，选择 "**高度机密**" 标签，然后单击 "**保存**"。
 
-请参阅**信息保护**阶段中的[配置环境分类](infoprotect-configure-classification.md)步骤的信息和链接，了解如何在生产环境中部署 Office 365 保留标签。
+若要了解如何在生产环境中部署保留标签的信息和链接，请参阅**信息保护**阶段的为[环境配置分类](infoprotect-configure-classification.md)步骤和链接。
 
 ## <a name="next-step"></a>后续步骤
 

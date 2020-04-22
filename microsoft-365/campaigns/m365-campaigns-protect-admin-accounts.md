@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何设置和保护管理员帐户。
-ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633750"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633649"
 ---
 # <a name="protect-your-administrator-accounts"></a>保护您的管理员帐户
 
@@ -35,12 +35,12 @@ ms.locfileid: "42633750"
 - 如何为紧急情况设置其他管理员帐户。
 - 如何保护这些帐户。
  
-当你注册 Microsoft 365 商业版并输入你的信息时，你将自动成为全局管理员。全局管理员拥有对用户帐户和 Microsoft 管理中心中所有其他设置的最终控制权，但有许多不同类型的管理员帐户具有不同级别的访问权限。 有关每种管理员角色的不同访问级别的信息，请参阅[关于管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+当你注册 Microsoft 365 并输入你的信息时，你将自动成为全局管理员。全局管理员拥有对用户帐户和 Microsoft 管理中心中所有其他设置的最终控制权，但有许多不同类型的管理员帐户具有不同级别的访问权限。 有关每种管理员角色的不同访问级别的信息，请参阅[关于管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 
 
 ## <a name="create-additional-admin-accounts"></a>创建其他管理员帐户
 
-仅使用管理员帐户进行管理。 管理员应具有单独的用户帐户，以便定期使用 Office 应用，并且仅在需要管理帐户和设备以及在处理其他管理功能时使用其管理帐户。 最好将 Microsoft 365 商业版许可证从管理员帐户中删除，这样您就不必为他们付费。
+仅使用管理员帐户进行管理。 管理员应具有单独的用户帐户，以便定期使用 Office 应用，并且仅在需要管理帐户和设备以及在处理其他管理功能时使用其管理帐户。 最好将 Microsoft 365 许可证从管理员帐户中删除，这样你就不必为其付费。
 
 你将需要至少设置一个额外的全局管理员帐户，以向其他受信任的员工授予管理员访问权限。 您还可以为用户管理创建单独的管理员帐户（此角色称为 "**用户管理管理员**"）。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 

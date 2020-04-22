@@ -25,17 +25,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: 了解 Microsoft 365 商业版的安装步骤、订阅、添加域和用户、设置安全策略等。
-ms.openlocfilehash: 9bb536b52981966f6c4c487f8400577b896261e0
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 了解 Microsoft 365 商业高级版的安装步骤、订阅、添加域和用户、设置安全策略等。
+ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561174"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633347"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
-观看有关 Microsoft 365 商业版安装程序的简短视频。<br><br>
+观看有关 Microsoft 365 商业高级版安装程序的简短视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
@@ -66,18 +66,18 @@ ms.locfileid: "42561174"
 
 若要开始，请参阅[增加威胁防护](increase-threat-protection.md)和[设置合规性功能](set-up-compliance.md)。
 
-请参阅[保护 Microsoft 365 业务的十大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)，以获得最佳安全实践的路线图。
+请参阅[保护 Microsoft 365 商业高级版](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的十大方法，了解最佳安全实践的路线图。
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>步骤3：设置和管理 Windows 10 设备
 
 运行设置向导后，您需要 proctect 组织中的所有 Windwos 10 台计算机。
   
-- Windows 10 专业版是 Microsoft 365 商业版的[先决条件](pre-requisites-for-data-protection.md)，但如果你有 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 pro，你的订阅让你能够[升级到 Windows 10 专业](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)版。
+- Windows 10 专业版是 Microsoft 365 商业高级版的[先决条件](pre-requisites-for-data-protection.md)，但如果你有 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 pro，你的订阅让你能够[升级到 Windows 10 专业](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)版。
 - 按照[安全 windows 10 电脑](secure-win-10-pcs.md)中的步骤设置 windows 10 设备的策略。
 
-将 Windows 10 设备加入 Azure AD 时，您为 Windows 10 计算机设置的策略将应用于。 有关详细信息，请参阅为[Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)。
+将 Windows 10 设备加入 Azure AD 时，您为 Windows 10 计算机设置的策略将应用于。 有关详细信息，请参阅[设置 Windows 设备 For Microsoft 365 users](set-up-windows-devices.md)。
 
-## <a name="step-4-install-office-365-business"></a>步骤4：安装 Office 365 商业版
+## <a name="step-4-install-microsoft-365-apps-for-business"></a>步骤4：安装 Microsoft 365 的商业应用程序
 - 您可以使用[安装向导](set-up.md#deploy-office-365-client-apps)在 Windows 设备中自动安装 Office。
 - 允许用户安装适用于 Windows 和设备的[Office 应用程序](https://docs.microsoft.com/office365/admin/setup/install-applications)。
      
@@ -88,10 +88,10 @@ ms.locfileid: "42561174"
 
 - **访问本地资源**
 
-     - 如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照 Microsoft 365 商业版中的 "[启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作，以便对此进行设置。 这是首选方法，而此状态的设备称为混合 Azure AD 加入的设备。
+     - 如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 商业高级版设置为保护您的 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照[Microsoft 365 商业高级版中的 "启用加入域的 Windows 10 设备](manage-windows-devices.md)" 中的步骤进行操作，以设置此设置。 这是首选方法，而此状态的设备称为混合 Azure AD 加入的设备。
 
-    - 如果你的企业具有包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以按照以下步骤为 Azure AD 联接的设备授予对这些资源的访问权限：[从 Microsoft 365 商业版中的 AZURE AD 加入设备访问本地资源](access-resources.md)。
+    - 如果你的企业具有包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以按照以下步骤为 Azure AD 联接的设备授予对这些资源的访问权限：[从 Microsoft 365 商业高级版中的 AZURE AD 加入设备访问本地资源](access-resources.md)。
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

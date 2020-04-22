@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 ATP 中的安全文档。
-ms.openlocfilehash: 3980746eb2f48e77c22f5139827bead5640dad61
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: b70c7013ce038a3934b7ea5e62d1d0530f12e4e6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170472"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634312"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 中的安全文档高级威胁防护
 
@@ -36,11 +36,11 @@ ms.locfileid: "42170472"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 在执行本主题中的过程之前，您需要分配权限。 若要启用和配置安全文档，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[Office 365 安全 & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 在执行本主题中的过程之前，您需要分配权限。 若要启用和配置安全文档，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="use-the-office-365-security--compliance-center-to-configure-safe-documents"></a>使用 Office 365 安全 & 合规中心配置安全文档
+## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>使用安全 & 合规中心配置安全文档
 
-1. 在上<https://protection.office.com>打开 "Office 365 安全性 & 合规性中心。
+1. 在上<https://protection.office.com>打开安全 & 合规性中心。
 
 2. 转到 "**威胁管理** \> **策略** \> **ATP 安全附件**"。
 
@@ -50,7 +50,7 @@ ms.locfileid: "42170472"
 
    - **允许用户在受保护的视图中单击，即使安全文档将文件标识为恶意文件**也是如此：我们建议您不要启用此选项。
 
-4. 完成后，单击“保存”****。
+4. 完成后，单击 **“保存”**。
 
 ![ATP 安全附件页面](../../media/safe-docs.png)
 

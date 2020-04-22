@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的 "邮件流" 仪表板中的 "修复发件人域的洞察力"。
-ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082554"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635168"
 ---
 # <a name="fix-sender-domain-insight"></a>修复发件人域见解
 
-Office 365 需要从内部本地电子邮件环境发送到 Office 365 的邮件，以满足特定的安全条件：
+Microsoft 365 需要从内部本地电子邮件环境发送到 Microsoft 365 的邮件，以满足特定的安全条件：
 
-- 您已在 Office 365 中创建了一个入站连接器，以通过使用源 IP 地址或证书验证从您的内部部署电子邮件服务器的 SMTP 连接。
+- 你已在 Microsoft 365 中创建了一个入站连接器，以通过使用源 IP 地址或证书来验证来自你的本地电子邮件服务器的 SMTP 连接。
 
-- 您已将本地电子邮件服务器配置为通过 Office 365 将电子邮件中继到外部世界。
+- 您已将本地电子邮件服务器配置为通过 Microsoft 365 将电子邮件中继到外部世界。
 
 - 在您的配置中，下列陈述中的一条为真：
 
-  - 发件人的电子邮件域在您的 Office 365 组织中注册。 有关详细信息，请参阅在 Office 365 中添加域。
+  - 发件人的电子邮件域已在您的组织中注册。 有关详细信息，请参阅在 Office 365 中添加域。
 
-  - 您的内部部署电子邮件服务器配置为使用证书向 Office 365 发送电子邮件，该证书包含或完全匹配您在 Office 365 中注册的域名，并且已在 Office 365 中创建了一个基于证书的连接器，该连接器具有域. 
+  - 您的内部部署电子邮件服务器配置为使用证书向 Microsoft 365 发送电子邮件，证书包含或与您在 Microsoft 365 中注册的域名完全匹配，并且您已在 Microsoft 365 中使用该域创建了一个基于证书的连接器。 
 
 不符合条件的邮件将不会被组织到组织中，并且可能会被拒绝。
 

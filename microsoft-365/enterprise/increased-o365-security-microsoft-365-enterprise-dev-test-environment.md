@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境中的其他 Microsoft 365 安全设置。
-ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: 53205f0626ce55c5a9627339f3631964e3374a19
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058877"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631665"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>为 Microsoft 365 企业版测试环境增加了 Microsoft 365 安全性
 
@@ -43,7 +43,7 @@ ms.locfileid: "43058877"
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>第2阶段：配置增强的 Microsoft 365 安全性
 
-在这一阶段，您为 Microsoft 365 企业版测试环境启用了增强的 Microsoft 365 安全性。 有关其他详细信息和设置，请参阅[Configure a Office 365 租户以提高安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
+在这一阶段，您为 Microsoft 365 企业版测试环境启用了增强的 Microsoft 365 安全性。 有关其他详细信息和设置，请参阅[Configure a 租户以提高安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>配置 SharePoint Online 以阻止不支持新式身份验证的应用程序
 
@@ -64,7 +64,7 @@ ms.locfileid: "43058877"
 
 适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 高级威胁防护（ATP）可防止您的组织无意中共享恶意文件。
 
-1. 转到 " [Office 365 安全 & 合规中心](https://protection.office.com)"，并使用全局管理员帐户登录。
+1. 转到[安全 & 合规性中心](https://protection.office.com)，并使用全局管理员帐户登录。
 
 2. 在左侧导航窗格中的 "**威胁管理**" 下，单击 "**策略**"，然后单击 " **ATP 安全附件**"。 
 
@@ -94,7 +94,7 @@ Office 365 的威胁管理可帮助您控制和管理对组织数据的移动设
 
 若要查看安全仪表板：
 
-1. 如果需要，请转到[Office 365 Security & 合规性中心](https://protection.office.com)，并使用全局管理员帐户登录。
+1. 如果需要，请转到[安全 & 合规性中心](https://protection.office.com)，并使用全局管理员帐户登录。
 
 2. 在左侧导航窗格中的 "**威胁管理**" 下，单击 "**仪表板**"。
 

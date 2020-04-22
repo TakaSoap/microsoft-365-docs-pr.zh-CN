@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: aca3bb6413aaab7620b1e1277c821a79dba4bb2f
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302899"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636180"
 ---
 # <a name="exceptions-to-the-service-plan"></a>服务计划的例外情况
 
@@ -27,9 +27,9 @@ Microsoft 托管桌面提供 curated 设备列表、[标准设备设置](device-
 |& Vpn 的安全代理     |  用于保护、监视或更改设备或网络的行为的软件       |
 |数字体验监控     |  用于跟踪用户设备上的数据以向其报告的软件       |
 |硬件或软件驱动程序     |   由[应用程序要求](mmd-app-requirements.md)限制的设备驱动程序      |
-|策略     | 托管设备上的 Windows 10 或 Office 365 专业增强版设置        |
+|策略     | Windows 10 或 Microsoft 365 在托管设备上的企业版设置的应用程序        |
 |设备     | 不在 Microsoft 托管桌面[设备列表](device-list.md)中的设备        |
-|Other     |  其他区域未涵盖的任何内容       |
+|其他     |  其他区域未涵盖的任何内容       |
  
 ## <a name="request-an-exception"></a>请求异常
 

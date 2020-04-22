@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 我们在此处回答了有关 Microsoft Exchange Online Protection (EOP) 云托管电子邮件筛选服务的一般常见问题。有关其他常见问题 (FAQ) 的主题，请转到下列链接：
-ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 899109a768399f53674b97fc8df2f71aa822316d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893678"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636248"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常见问题解答
 
@@ -51,19 +51,19 @@ ms.locfileid: "42893678"
 
 答：当您按照[设置 EOP 服务](set-up-your-eop-service.md)中的步骤更改 MX 记录时，您的邮件通过 EOP 传递，筛选会立即开始。MX 记录通过 DNS 传播可能需要花费 24-48 小时。在此过程中，您可以随时在 Exchange 管理中心 (EAC) 中精细调整保护设置。
 
-**问：必须使用 Microsoft Office 365 的所有功能，才能使用 EOP 吗？如果我只想使用 EOP 保护该怎么办，只使用它就足够了吗？**
+**问：我是否必须使用 Microsoft 365 的所有功能才能使用 EOP？如果我只想实现 EOP 保护，这是什么？**
 
-答：你可以使用 EOP 保护内部部署邮箱，无需使用任何其他 Office 365 功能。这称为独立订阅。可以在 [Exchange Online Protection 服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)中找到 EOP 功能列表。
+A. 您可以使用 EOP 来保护您的内部部署邮箱，而无需使用 Microsoft 365 的其他任何功能。 这称为独立订阅。 可以在[Exchange Online Protection 服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)中找到 EOP 功能的列表。
 
-**问：通过 EOP 注册电子邮件筛选时为什么需要 Office 365 租户？**
+**问：通过 EOP 注册电子邮件筛选时，为什么需要 Microsoft 365 租户？**
 
-答：Office 365 是可以通过 Office 365 租户访问的产品和服务集合的名称。将 Office 365 租户视为可以向其添加电子邮件筛选许可证的起始点。
+A. Microsoft 365 是可通过 Microsoft 365 租户访问的产品和服务集合提供的名称。 请将 Microsoft 365 租户视为您可以为电子邮件筛选添加许可证的起始点。
 
 **问：EOP 是否具有可在其中查找已知问题及预期解决方案的通信门户？有哪些新功能？**
 
 A. Microsoft 365 管理中心将包含此信息中的一些信息。 如果您受到服务级别事件的影响，则在登录到 Microsoft 365 管理中心后，您应该会看到一条通信警报（通常伴随响铃图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。
 
-关于新的 EOP 功能，[适用于企业的 Office 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)在找到有关即将推出的新功能的信息方面是不错的资源。 我们还将向[Microsoft 365 博客](https://www.microsoft.com/microsoft-365/blog/)网站发布有关新功能的博客文章。
+关于新的 EOP 功能， [Microsoft 365 for business 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是找出有关即将推出的新功能的信息的一个很有用的资源。 我们还将向[Microsoft 365 博客](https://www.microsoft.com/microsoft-365/blog/)网站发布有关新功能的博客文章。
 
 **问：该服务对旧版 Exchange 版本（比如 Exchange Server 2010）和非 Exchange 环境也有效吗？**
 
@@ -75,7 +75,7 @@ A. Microsoft 365 管理中心将包含此信息中的一些信息。 如果您�
 
 **设置 EOP 需要什么权限？**
 
-要配置 EOP，您必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。
+为了配置 EOP，您必须是全局管理员或 Exchange 公司管理员（组织管理角色组）。
 
 **问：如何知道我的数据和私人信息是安全的？**
 

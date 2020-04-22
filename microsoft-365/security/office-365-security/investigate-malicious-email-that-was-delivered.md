@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
-ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955611"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634130"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>调查并修正在 Office 365 中提供的恶意电子邮件
 
@@ -34,24 +34,24 @@ ms.locfileid: "42955611"
   
 - 您的组织具有[Office 365 高级威胁防护](office-365-atp.md)，并将[许可证分配给用户](../../admin/manage/assign-licenses-to-users.md)。
     
-- 为你的组织启用了[Office 365 审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md)。 
+- 为你的组织启用[审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md)。 
     
 - 您的组织具有为反垃圾邮件、反恶意软件、反网络钓鱼等定义的策略。 请参阅防御[Office 365 中的威胁](protect-against-threats.md)。
     
-- 您是 Office 365 全局管理员，或者您具有安全管理员或在安全&amp;合规中心中分配的搜索和清除角色。 请参阅[Office 365 安全&amp;合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 对于某些操作，还必须分配新的预览角色。 
+- 您是全局管理员，或者您具有安全管理员或在安全&amp;合规中心中分配的搜索和清除角色。 查看[安全&amp;合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。 对于某些操作，还必须分配新的预览角色。 
 
 #### <a name="preview-role-permissions"></a>预览角色权限
 
-若要执行某些操作（如查看邮件头或下载电子邮件内容），您必须具有一个名为*Preview*的新角色，并将其添加到另一个相应的 Office 365 角色组。 下表阐明了所需的角色和权限。
+若要执行某些操作（如查看邮件头或下载电子邮件内容），您必须具有一个名为*Preview*的新角色，并将其添加到另一个相应的角色组。 下表阐明了所需的角色和权限。
 
 |活动  |角色组 |是否需要预览角色？  |
 |---------|---------|---------|
-|使用威胁浏览器（和实时检测）分析威胁     |Office 365 全局管理员 <br> 安全管理员 <br> 安全读取者     | 否   |
-|使用威胁资源管理器（和实时检测）查看电子邮件的邮件头，以及预览和下载隔离的电子邮件    |Office 365 全局管理员 <br> 安全管理员 <br>安全读取者   |       否  |
-|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |Office 365 全局管理员 <br>安全管理员 <br> 安全读取者 <br> 预览   |   是      |
+|使用威胁浏览器（和实时检测）分析威胁     |全局管理员 <br> 安全管理员 <br> 安全读取者     | 否   |
+|使用威胁资源管理器（和实时检测）查看电子邮件的邮件头，以及预览和下载隔离的电子邮件    |全局管理员 <br> 安全管理员 <br>安全读取者   |       否  |
+|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |全局管理员 <br>安全管理员 <br> 安全读取者 <br> 预览   |   是      |
 
 > [!NOTE]
-> *预览*是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 Office 365 全局管理员角色分配有 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)），安全管理员和安全读者角色是在 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）中分配的。 若要了解有关角色和权限的详细信息，请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+> *预览*是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 全局管理员角色分配了 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)），安全管理员和安全读者角色是在安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）中分配的。 若要了解有关角色和权限的详细信息，请参阅[Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>查找并删除已传递的可疑电子邮件
 

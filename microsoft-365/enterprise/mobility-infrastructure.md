@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: c90f16bfbdf41f859e13a23fbdaeb0c3480bd191
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153888"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631521"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>第5阶段： Microsoft 365 企业版的移动设备管理
 
@@ -34,7 +34,7 @@ Microsoft 365 企业版包括帮助管理组织内的设备及其应用程序的
 
 ## <a name="step-1-plan-for-your-scenario"></a>步骤1：规划方案
 
-管理移动设备的主要原因之一是保护组织的资源。 [使用 Microsoft Intune 的常用方法](https://docs.microsoft.com/intune/common-scenarios)列出了一些实际示例，包括保护 Office 365 电子邮件和数据。
+管理移动设备的主要原因之一是保护组织的资源。 [使用 Microsoft Intune 的常用方法](https://docs.microsoft.com/intune/common-scenarios)列出了一些实际示例，包括保护 Microsoft 电子邮件和数据的安全。
 
 Intune 为你提供了使用移动设备管理（MDM）或移动应用管理（MAM）管理对你的组织的访问权限的选项。 MDM 是用户在 Intune 中 "注册" 其设备。 注册后，它们就是受管理的设备，并且可以接收组织使用的任何策略、规则和设置。 例如，您可以安装特定应用程序，创建密码策略，安装 VPN 连接，等等。
 
@@ -47,7 +47,7 @@ Intune 为你提供了使用移动设备管理（MDM）或移动应用管理（M
 接下来，根据你的要求和在上一步中创建的方案，获取你的必备组件。 [实施您的计划](https://docs.microsoft.com/intune/planning-guide-onboarding)将列出所有要求。 以下是 Intune 使用 Microsoft 365 时所需的重要项目：
 
 - **Intune 订阅**： microsoft 365 附带提供了在[Azure 门户](https://portal.azure.com)中对 Microsoft Intune 的访问权限
-- **Office 365 订阅**：包含在 Microsoft 365 中，用于 Office 应用程序，包括电子邮件
+- **Microsoft 365 订阅**：包含在 microsoft 365 中，用于 Office 应用程序，包括电子邮件
 - **Azure Active Directory （AZURE AD） premium**：包含在 Microsoft 365 中，用于创建用户或安全组。 这些组将接收你创建的 Intune 策略，如强制密码长度以解锁设备。 可以使用在[第2阶段： Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)中创建的组。
 
 可能还有一些其他要求，具体取决于您的组织的需求。 例如，如果你要管理 iOS 设备，你将需要 Apple MDM 推送证书。 如果使用的是本地 Exchange，则需要内部部署 Exchange 连接器。 当您执行这些步骤时，将概述这些附加要求。

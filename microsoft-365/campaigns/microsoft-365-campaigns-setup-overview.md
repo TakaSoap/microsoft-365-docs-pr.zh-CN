@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 针对市场活动的 Microsoft 365 的安装程序概述
-ms.openlocfilehash: d2dac24488e5d29b0e888ba09f5359cba6b1f614
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa804c46ac3545a7f2d30ffe80b148262cc23cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080473"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632751"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>为市场活动设置 Microsoft 365
 
-本文介绍了为市场活动设置 Microsoft 365 的过程。 Microsoft 365 商业版的任何人都可以使用本指南来提高安全性。 
+本文介绍了为市场活动设置 Microsoft 365 的过程。 拥有 Microsoft 365 商业高级版的任何人都可以使用本指南来提高安全性。 
 
 ## <a name="admins-set-up-microsoft-365-for-campaigns"></a>管理员：为市场活动设置 Microsoft 365
 下图介绍了管理员如何为市场活动设置 Microsoft 365。
@@ -42,7 +42,7 @@ ms.locfileid: "42080473"
 
 对于符合特殊定价的市场活动，请[从 microsoft 请求邀请](https://m365forcampaigns.microsoft.com/)开始，然后[注册 microsoft 365 以获得市场活动](m365-campaigns-sign-up.md)。 若要完成安装程序，请[运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)配置核心设置。
 
-对于所有其他组织，在[注册 Microsoft 365 商业](../business/sign-up.md)版之后，请[运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)来配置核心设置，以完成安装。
+对于所有其他组织，在[注册 Microsoft 365 商业高级版](../business/sign-up.md)后，请[运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)来配置核心设置，以完成安装。
 
 对于所有组织，通过以下方式扩大安全保护：[保护管理员帐户](m365-campaigns-protect-admin-accounts.md)、[保护对邮件和数据的访问](m365-campaigns-conditional-access.md)以及[增加威胁保护](m365-campaigns-increase-protection.md)。
 
@@ -62,6 +62,6 @@ ms.locfileid: "42080473"
 
  **如需联系支持人员：**
   
-作为 Microsoft 365 商业版管理员，你可以访问我们的客户支持团队， **[请联系支持人员以获取商业产品-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+作为 Microsoft 365 管理员，你可以访问我们的客户支持团队， **[请联系支持人员以获取商业产品-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
 

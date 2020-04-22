@@ -1,5 +1,5 @@
 ---
-title: 使用除名门户来将自己从 Office 365 阻止的发件人名单中删除
+title: 使用除名门户将自己从阻止的发件人列表中删除
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: 当您尝试向其电子邮件地址位于 Office 365 中的收件人发送电子邮件时，是否收到一条错误消息？如果您认为不应该会收到错误消息，则可以使用除名门户将自己从 Office 365 阻止的发件人名单中删除。
-ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 当您尝试向其电子邮件地址在 Microsoft 365 中的收件人发送电子邮件时，收到一条错误消息？ 如果您认为不应收到错误消息，可以使用除名门户将自己从阻止的发件人列表中删除。
+ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895079"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636400"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用除名门户将自己从 Office 365 阻止的发件人名单中删除
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人列表中删除
 
-当您尝试向其电子邮件地址位于 Office 365 中的收件人发送电子邮件时，是否收到一条错误消息？如果您认为不应该会收到错误消息，则可以使用除名门户将自己从 Office 365 阻止的发件人名单中删除。
+当您尝试向其电子邮件地址在 Microsoft 365 中的收件人发送电子邮件时，收到一条错误消息？ 如果您认为不应收到错误消息，可以使用除名门户将自己从阻止的发件人列表中删除。
 
-## <a name="what-is-the-office-365-blocked-senders-list"></a>什么是 Office 365 阻止的发件人名单？
+## <a name="what-is-the-blocked-senders-list"></a>阻止的发件人列表是什么？
 
-Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、欺诈和网络钓鱼网站的攻击。您的邮件服务器的 IP 地址就是邮件服务器用来在 Internet 上标识自己的地址，由于以下各种原因之一，IP 地址被标记为 Office 365 的一个潜在威胁。当 Office 365 将该 IP 地址添加到列表中时，它会阻止该 IP 地址与通过我们数据中心我的所有客户进行任何进一步的通信。
+Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、欺诈和网络钓鱼网站的攻击。 您的邮件服务器的 IP 地址（即邮件服务器用于在 Internet 上标识自己的地址）被标记为对 Microsoft 365 的潜在威胁，原因是有多种原因。 当 Microsoft 365 将 IP 地址添加到列表中时，它会阻止 IP 地址和我们通过我们的数据中心提供的任何客户之间的进一步通信。
 
 在您收到包含类似于以下错误的邮件回复时，您就知道自己已被添加到该列表中：
 
@@ -37,7 +37,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 其中  _IP address_ 是邮件服务器在其上运行的计算机的 IP 地址。
 
-### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>若要使用 Office 365 除名门户来将自己从阻止的发件人名单中删除
+### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人列表中删除
 
 1. 在 Web 浏览器中，请转至 [https://sender.office.com](https://sender.office.com)。
 
@@ -53,7 +53,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 5. In the delist portal, click **Delist IP**.
 
-    从阻止的发件人名单中删除 IP 地址后，来自该 IP 地址的电子邮件将发送给使用 Office 365 的收件人。因此，请确保您确信从该 IP 地址发送的电子邮件不会被滥用或恶意攻击。否则，可能会再次阻止该 IP 地址。
+    从阻止发件人列表中删除 IP 地址后，来自该 IP 地址的电子邮件将传递给使用 Microsoft 365 的收件人。 因此，请务必确信从该 IP 地址发送的电子邮件不会被滥用或恶意;否则，可能会再次阻止该 IP 地址。
 
     > [!NOTE]
     > 在删除限制之前，可能需要长达24小时或结果相差很大。

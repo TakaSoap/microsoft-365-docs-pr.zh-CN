@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何要求进行 MFA 并为 Microsoft 365 商业版设置条件访问策略。
-ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何要求进行 MFA 并为 Microsoft 365 for business 设置条件访问策略。
+ms.openlocfilehash: 3caca685d9a96434a0daa2736c322ac1a68b7feb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056399"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635608"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重身份验证并设置条件访问策略
 
@@ -49,7 +49,7 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
 有关这些策略的详细信息，请参阅[什么是基准策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)？
 
 
-## <a name="require-mfa"></a>需要进行 MFA
+## <a name="require-mfa"></a>需要使用 MFA
 
 若要要求所有用户使用第二种 ID 登录，请执行以下操作：
 

@@ -11,18 +11,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解不接受的域报告。
-ms.openlocfilehash: 4b4573d6a43c811e919f3f5c6f281c8f31e61d6a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 64bf572db90b44512ca72aec5733a99373d8f53f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088457"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635276"
 ---
 # <a name="non-accepted-domain-report"></a>非接受域报告
 
-与**发件人域**洞察力类似，**不接受的域**洞察力可识别来自内部部署电子邮件组织的邮件，但发件人的域不会配置为 Office 365 组织中的接受域。
+与**发件人域**洞察力类似，**不接受的域**洞察力可识别来自内部部署电子邮件组织的邮件，但发件人的域不会配置为组织中的接受域。
 
-如果我们有数据来证明这些邮件的目的是恶意的，则 Office 365 可能会限制这些邮件。 因此，重要的是要了解所发生的情况并解决问题。
+如果我们有数据来证明这些邮件的意图是恶意的，Microsoft 365 可能会对这些邮件进行限制。 因此，重要的是要了解所发生的情况并解决问题。
 
 ![安全 & 合规性中心的邮件流仪表板中的不可接受的域报告](../../media/non-accepted-domain-report-selected.png)
 

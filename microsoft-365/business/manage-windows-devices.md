@@ -1,5 +1,5 @@
 ---
-title: 启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备
+title: 启用要由 Microsoft 365 for business 管理的加入域的 Windows 10 设备
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: 了解如何启用 Microsoft 365 以仅在几个步骤中保护本地的 Active Directory 加入 Windows 10 设备。
-ms.openlocfilehash: 625eb7ac344b060409101d650ff30044d073f5bf
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 431c1be74723e156befb13ffe1ed98b48b9a23cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561452"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633275"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>启用要由 Microsoft 365 商业版管理的加入域的 Windows 10 设备
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-for-business"></a>启用要由 Microsoft 365 for business 管理的加入域的 Windows 10 设备
 
-如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 商业版设置为保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。
+如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 for business 设置为保护您的 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。
 若要设置此保护，可以实现**混合 AZURE AD 加入的设备**。 这些设备将加入本地 Active Directory 和 Azure Active Directory。
 
 本视频介绍了有关如何针对最常见方案对此进行设置的步骤，在下面的步骤中也将对此进行详细介绍。
@@ -56,9 +56,9 @@ ms.locfileid: "42561452"
 若要将本地 Active Directory 中的用户、组和联系人同步到 Azure Active Directory 中，请安装 Azure Active Directory Connect 并设置目录同步。 若要了解详细信息，请参阅[设置 Office 365 的目录同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)。
 
 > [!NOTE]
-> 对于 Microsoft 365 商业版的步骤完全相同。 
+> Microsoft 365 for business 中的步骤完全相同。 
 
-在为 Azure AD Connect 配置选项时，我们建议您启用**密码同步**、**无缝单一登录**和**密码写回**功能，这在 Microsoft 365 商业版中也受支持。
+在为 Azure AD Connect 配置选项时，我们建议您启用**密码同步**、**无缝单一登录**和**密码写回**功能，这在 Microsoft 365 for business 中也受支持。
 
 > [!NOTE]
 > 除了 Azure AD Connect 中的复选框之外，还需要执行一些额外的密码写回步骤。 有关详细信息，请参阅[操作方法：配置密码写回](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)。 

@@ -1,5 +1,5 @@
 ---
-title: 邮件流地图报表
+title: 邮件流图报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,22 +11,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流映射报告。
-ms.openlocfilehash: 11d605047b66751636ffce69ffff5c198f039fc7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088501"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635288"
 ---
-# <a name="mail-flow-map-report"></a>邮件流地图报表
+# <a name="mail-flow-map-report"></a>邮件流图报告
 
-此报告提供有关邮件通过 Office 365 组织的流的见解。 您可以使用此信息来了解模式、确定异常，并在出现问题时解决问题。
+此报告提供有关邮件通过您的组织的流动方式的见解。 您可以使用此信息来了解模式、确定异常，并在出现问题时解决问题。
 
 ![安全 & 合规性中心的邮件流仪表板中的邮件流映射报告](../../media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>邮件流映射小部件
 
-默认情况下，邮件流地图显示前一天的高级别邮件流模式。 您可以在不同的天使用左箭头和右箭头。 将鼠标光标悬停在报告中的每个区域上将显示从 Office 365 组织到和的邮件量，如下图所示：
+默认情况下，邮件流地图显示前一天的高级别邮件流模式。 您可以在不同的天使用左箭头和右箭头。 将鼠标光标悬停在报告中的每个区域上方将显示组织中的邮件数量，如下图所示：
 
 ![邮件流映射小组件中的向左和向右箭头](../../media/mail-flow-map-widget.png)
 
