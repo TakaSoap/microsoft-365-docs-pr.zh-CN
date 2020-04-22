@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中查看批次历史记录和导出过去的结果
+title: 高级电子数据展示中的查看批次历史记录和导出过去的结果
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,56 +15,56 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: '了解如何查看所选导出批处理会话的详细信息，以及如何撤消 Office 365 高级电子数据展示中的上次导出会话。  '
-ms.openlocfilehash: de7366e1eb43c276899ecf35339c0443fad4879d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解如何在高级电子数据展示中查看所选导出批处理会话的详细信息以及如何撤消上次导出会话。  '
+ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557610"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626348"
 ---
-# <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a><span data-ttu-id="59c56-103">高级电子数据展示（经典）中的查看批次历史记录和导出过去的结果</span><span class="sxs-lookup"><span data-stu-id="59c56-103">View batch history and export past results in Advanced eDiscovery (classic)</span></span>
+# <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a><span data-ttu-id="a39b1-103">高级电子数据展示（经典）中的查看批次历史记录和导出过去的结果</span><span class="sxs-lookup"><span data-stu-id="a39b1-103">View batch history and export past results in Advanced eDiscovery (classic)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="59c56-p101">若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="59c56-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="a39b1-p101">若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="a39b1-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-<span data-ttu-id="59c56-106">下一节介绍了用于在高级电子数据展示中批量查看和导出数据的其他选项。</span><span class="sxs-lookup"><span data-stu-id="59c56-106">The following section describes additional options for batch viewing and export of data in Advanced eDiscovery.</span></span> 
+<span data-ttu-id="a39b1-106">下一节介绍了用于在高级电子数据展示中批量查看和导出数据的其他选项。</span><span class="sxs-lookup"><span data-stu-id="a39b1-106">The following section describes additional options for batch viewing and export of data in Advanced eDiscovery.</span></span> 
   
-## <a name="viewing-export-batch-history-and-exporting-previous-batches"></a><span data-ttu-id="59c56-107">查看导出批次历史记录和导出以前的批次</span><span class="sxs-lookup"><span data-stu-id="59c56-107">Viewing Export batch history and exporting previous batches</span></span>
+## <a name="viewing-export-batch-history-and-exporting-previous-batches"></a><span data-ttu-id="a39b1-107">查看导出批次历史记录和导出以前的批次</span><span class="sxs-lookup"><span data-stu-id="a39b1-107">Viewing Export batch history and exporting previous batches</span></span>
 
-<span data-ttu-id="59c56-108">"导出历史记录" 对话框提供了所选导出批处理会话的详细信息，还提供了撤消上一会话的功能。</span><span class="sxs-lookup"><span data-stu-id="59c56-108">The Export history dialog provides detailed information of selected export batch sessions and also provides the ability to undo the last session.</span></span>
+<span data-ttu-id="a39b1-108">"导出历史记录" 对话框提供了所选导出批处理会话的详细信息，还提供了撤消上一会话的功能。</span><span class="sxs-lookup"><span data-stu-id="a39b1-108">The Export history dialog provides detailed information of selected export batch sessions and also provides the ability to undo the last session.</span></span>
   
-1. <span data-ttu-id="59c56-109">在 **" \>导出设置**" 中，从 "**导出批处理**" 下拉列表中选择批次名称。</span><span class="sxs-lookup"><span data-stu-id="59c56-109">In **Export \> Setup**, select the batch name from the **Export batch** drop-down list.</span></span> 
+1. <span data-ttu-id="a39b1-109">在 **" \>导出设置**" 中，从 "**导出批处理**" 下拉列表中选择批次名称。</span><span class="sxs-lookup"><span data-stu-id="a39b1-109">In **Export \> Setup**, select the batch name from the **Export batch** drop-down list.</span></span> 
     
-2. <span data-ttu-id="59c56-110">在 "导出批处理名称" 的右侧，选择 "**批次历史记录**" 图标：</span><span class="sxs-lookup"><span data-stu-id="59c56-110">To the right of the export batch name, select the **Batch history** icon:</span></span> 
+2. <span data-ttu-id="a39b1-110">在 "导出批处理名称" 的右侧，选择 "**批次历史记录**" 图标：</span><span class="sxs-lookup"><span data-stu-id="a39b1-110">To the right of the export batch name, select the **Batch history** icon:</span></span> 
     
     ![导出批量历史记录图标](../media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
   
-    <span data-ttu-id="59c56-112">将显示 "批次历史记录" 对话框。</span><span class="sxs-lookup"><span data-stu-id="59c56-112">The Batch history dialog is displayed.</span></span>
+    <span data-ttu-id="a39b1-112">将显示 "批次历史记录" 对话框。</span><span class="sxs-lookup"><span data-stu-id="a39b1-112">The Batch history dialog is displayed.</span></span>
     
     ![导出批量历史记录](../media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
-3. <span data-ttu-id="59c56-114">如果需要回滚之前的会话，请单击 "**撤消上次会话**"。</span><span class="sxs-lookup"><span data-stu-id="59c56-114">If it is necessary to roll back a previous session, click **Undo last session**.</span></span> <span data-ttu-id="59c56-115">回滚可以执行多次，这将取消最后一个会话。</span><span class="sxs-lookup"><span data-stu-id="59c56-115">Rollback can be performed multiple times, which cancels the last session.</span></span>
+3. <span data-ttu-id="a39b1-114">如果需要回滚之前的会话，请单击 "**撤消上次会话**"。</span><span class="sxs-lookup"><span data-stu-id="a39b1-114">If it is necessary to roll back a previous session, click **Undo last session**.</span></span> <span data-ttu-id="a39b1-115">回滚可以执行多次，这将取消最后一个会话。</span><span class="sxs-lookup"><span data-stu-id="a39b1-115">Rollback can be performed multiple times, which cancels the last session.</span></span>
     
-4. <span data-ttu-id="59c56-116">如果要从以前执行的导出批处理会话随时下载数据，请单击要导出的所\*\*\*\* 需导出![批处理旁边的 "下载](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif)图标导出批次历史记录下载" 图标。</span><span class="sxs-lookup"><span data-stu-id="59c56-116">If you want to download data at any time from a previously executed export batch session, click the **Download** icon ![Export batch history download icon](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) next to the desired export batch to be exported.</span></span> 
+4. <span data-ttu-id="a39b1-116">如果要从以前执行的导出批处理会话随时下载数据，请单击要导出的所**Download**需导出![批处理旁边的 "下载](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif)图标导出批次历史记录下载" 图标。</span><span class="sxs-lookup"><span data-stu-id="a39b1-116">If you want to download data at any time from a previously executed export batch session, click the **Download** icon ![Export batch history download icon](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) next to the desired export batch to be exported.</span></span> 
     
-5. <span data-ttu-id="59c56-117">当显示 "**共享访问签名**" 对话框时，单击 "**复制到剪贴板**" 以将导出会话数据复制到本地计算机，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="59c56-117">When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**.</span></span> <span data-ttu-id="59c56-118">将显示 Office 365 &amp;安全合规中心**电子数据展示导出工具**对话框。</span><span class="sxs-lookup"><span data-stu-id="59c56-118">The Office 365 Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed.</span></span> 
+5. <span data-ttu-id="a39b1-117">当显示 "**共享访问签名**" 对话框时，单击 "**复制到剪贴板**" 以将导出会话数据复制到本地计算机，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="a39b1-117">When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**.</span></span> <span data-ttu-id="a39b1-118">将显示&amp;安全符合性中心**电子数据展示导出工具**对话框。</span><span class="sxs-lookup"><span data-stu-id="a39b1-118">The Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed.</span></span> 
     
     ![“导出电子数据展示”对话框](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
-6. <span data-ttu-id="59c56-120">在 "**电子数据展示导出工具**" 对话框中：</span><span class="sxs-lookup"><span data-stu-id="59c56-120">In the **eDiscovery Export Tool** dialog:</span></span> 
+6. <span data-ttu-id="a39b1-120">在 "**电子数据展示导出工具**" 对话框中：</span><span class="sxs-lookup"><span data-stu-id="a39b1-120">In the **eDiscovery Export Tool** dialog:</span></span> 
     
-1. <span data-ttu-id="59c56-121">在 **"粘贴将用于连接到源的共享访问签名**" 中，粘贴之前复制到剪贴板的**共享访问签名**值。</span><span class="sxs-lookup"><span data-stu-id="59c56-121">In **Paste the Shared Access Signature that will be used to connect to the source**, paste the **Shared access signature** value, which was previously copied to the clipboard.</span></span> 
+1. <span data-ttu-id="a39b1-121">在 **"粘贴将用于连接到源的共享访问签名**" 中，粘贴之前复制到剪贴板的**共享访问签名**值。</span><span class="sxs-lookup"><span data-stu-id="a39b1-121">In **Paste the Shared Access Signature that will be used to connect to the source**, paste the **Shared access signature** value, which was previously copied to the clipboard.</span></span> 
     
-2. <span data-ttu-id="59c56-122">单击 "**浏览**" 以选择用于在本地计算机上存储下载的导出文件的目标位置。</span><span class="sxs-lookup"><span data-stu-id="59c56-122">Click **Browse** to select the target location for storing the downloaded export files on a local machine.</span></span> 
+2. <span data-ttu-id="a39b1-122">单击 "**浏览**" 以选择用于在本地计算机上存储下载的导出文件的目标位置。</span><span class="sxs-lookup"><span data-stu-id="a39b1-122">Click **Browse** to select the target location for storing the downloaded export files on a local machine.</span></span> 
     
-3. <span data-ttu-id="59c56-123">单击“**开始**”。</span><span class="sxs-lookup"><span data-stu-id="59c56-123">Click **Start**.</span></span> <span data-ttu-id="59c56-124">将导出文件下载到本地计算机。</span><span class="sxs-lookup"><span data-stu-id="59c56-124">The export files are downloaded to the local machine.</span></span> 
+3. <span data-ttu-id="a39b1-123">单击“**开始**”。</span><span class="sxs-lookup"><span data-stu-id="a39b1-123">Click **Start**.</span></span> <span data-ttu-id="a39b1-124">将导出文件下载到本地计算机。</span><span class="sxs-lookup"><span data-stu-id="a39b1-124">The export files are downloaded to the local machine.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="59c56-125">另请参阅</span><span class="sxs-lookup"><span data-stu-id="59c56-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a39b1-125">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a39b1-125">See also</span></span>
 
-[<span data-ttu-id="59c56-126">高级电子数据展示（经典）</span><span class="sxs-lookup"><span data-stu-id="59c56-126">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
+[<span data-ttu-id="a39b1-126">高级电子数据展示（经典）</span><span class="sxs-lookup"><span data-stu-id="a39b1-126">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="59c56-127">导出结果</span><span class="sxs-lookup"><span data-stu-id="59c56-127">Exporting results </span></span>](export-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="a39b1-127">导出结果</span><span class="sxs-lookup"><span data-stu-id="a39b1-127">Exporting results </span></span>](export-results-in-advanced-ediscovery.md)
 
-[<span data-ttu-id="59c56-128">导出报告字段</span><span class="sxs-lookup"><span data-stu-id="59c56-128">Export report fields</span></span>](export-report-fields-in-advanced-ediscovery.md)
+[<span data-ttu-id="a39b1-128">导出报告字段</span><span class="sxs-lookup"><span data-stu-id="a39b1-128">Export report fields</span></span>](export-report-fields-in-advanced-ediscovery.md)
 

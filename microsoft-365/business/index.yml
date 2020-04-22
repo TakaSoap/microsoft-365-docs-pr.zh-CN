@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 商业高级资源
-summary: Microsoft 365 商业高级版是一项订阅服务，其中包括 Office 365 生产率工具和高级功能，以帮助保护您的业务不受威胁、保护您的数据并管理设备。
+summary: Microsoft 365 商业高级版（以前称为 Microsoft 365 商业版）是一项全面订阅服务，适用于员工人数低于300的企业。 它将您喜爱的 Office 生产力应用程序和服务以及协作工具（如具有高级安全性和设备管理功能的 Microsoft 团队）集成。
 brand: m365
 metadata:
   title: Microsoft 365 商业高级资源
@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 29504ca22db443c504a5f3265ca2e8fcba0f737e
-  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+  ms.openlocfilehash: 59478fceee0017321c59607f589fe464ac95077d
+  ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2020
-  ms.locfileid: "43627106"
+  ms.lasthandoff: 04/22/2020
+  ms.locfileid: "43665616"
 productDirectory:
   title: 使用 Microsoft 365 商业高级版实现安全远程工作
   items:
