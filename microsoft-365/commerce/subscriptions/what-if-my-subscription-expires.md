@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解当 Microsoft 365 for business 订阅过期、被禁用或取消时数据会发生什么情况。
-ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634870"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707603"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business 订阅结束时我的数据和访问会发生什么情况？
 
@@ -220,7 +220,7 @@ ms.locfileid: "43634870"
 若要了解如何取消，请参阅[取消订阅](cancel-your-subscription.md)。
   
 > [!IMPORTANT]
-> 如果您希望在典型禁用的时段之前删除订阅数据，则可以请求快速取消准备。 如果请求快速解除配置，则订阅数据将在取消后的 3 天内删除。 若要使用加速解除，请[致电支持人员](../../admin/contact-support-for-business-products.md)。
+> 如果您希望在典型禁用的时段之前删除订阅数据，则可以[关闭您的帐户](../close-your-account.md)。
 
 > [!NOTE]
 > 此页面上的信息受[Microsoft 策略免责声明和更改通知](https://go.microsoft.com/fwlink/p/?LinkId=613651)的制约。 定期返回到此网站以查看任何更改。

@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 了解可帮助您阻止 Exchange Online 和 Microsoft 365 中的垃圾邮件的反垃圾邮件设置和筛选器。 在 Microsoft 365 中获取过多垃圾邮件？ 您可以自定义垃圾邮件筛选器和反垃圾邮件设置。
-ms.openlocfilehash: d7c7a0166fbcbf3334325aeef153f2d82f27aac3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636042"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708567"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件保护
 
@@ -83,7 +83,7 @@ EOP 中的反垃圾邮件设置由以下技术组成：
 
 - **验证您的组织设置**：查看允许邮件跳过垃圾邮件筛选的设置（例如，如果您将自己的域添加到反垃圾邮件策略中的允许域列表中）。 有关我们推荐的设置，请参阅[EOP 和 Microsoft 365 ATP security 的推荐设置](recommended-settings-for-eop-and-office365-atp.md)和[创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
-- **验证是否已在用户邮箱中启用垃圾邮件规则**：默认情况下已启用该规则，但如果不是标记为垃圾邮件的邮件不能移动到 "垃圾邮件" 文件夹中。 有关详细信息，请参阅[Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **验证是否已在用户邮箱中启用垃圾邮件规则**：默认情况下已启用，但如果已禁用，则标记为 "垃圾邮件" 的邮件不能移到 "垃圾邮件" 文件夹中。 有关详细信息，请参阅[Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **使用可用的阻止发件人列表**：有关信息，请参阅[创建阻止的发件人列表](create-block-sender-lists-in-office-365.md)。
 

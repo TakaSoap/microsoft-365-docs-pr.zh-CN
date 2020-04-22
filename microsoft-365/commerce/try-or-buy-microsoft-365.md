@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 了解如何获取免费试用版或购买适用于 Microsoft 365 的订阅。
-ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631901"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707531"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>试用或购买 Microsoft 365 订阅
 
@@ -32,9 +32,9 @@ Microsoft 365 是一个完整的解决方案，它将 Office 365 和 Windows 10 
   
 - Microsoft 365 商业高级版
 
-- Microsoft 365 企业版 E3
+- Office 365 企业版 E3
 
-- Microsoft 365 企业版 E5
+- Office 365 企业版 E5
 
 当您通过管理中心添加订阅时，新的订阅将与您的现有订阅关联，与相同的组织（域命名空间）关联。 这样可以更轻松地在订阅之间移动组织中的用户，或为他们分配所需的其他订阅的许可证。
   

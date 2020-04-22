@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: 了解如何升级到新的订阅。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636506"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707519"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划 
 
@@ -63,7 +63,7 @@ ms.locfileid: "43636506"
 
 ## <a name="the-upgrade-tab-is-empty"></a>"升级" 选项卡为空
 
-如果 "**升级**" 选项卡为空，你将看到目前无法升级的原因的说明。 您可以尝试[手动更改计划](change-plans-manually.md)或[致电支持人员](../../admin/contact-support-for-business-products.md)。 有关详细信息，请参阅[为什么无法升级计划？](#why-cant-i-upgrade-plans)）。
+如果 "**升级**" 选项卡为空，你将看到目前无法升级的原因的说明。 您可以尝试[手动更改计划](change-plans-manually.md)或[致电支持人员](../../admin/contact-support-for-business-products.md)。 有关详细信息，请参阅[为什么无法升级计划？](#why-cant-i-upgrade-plans)。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>我看不到所需的计划
 
@@ -153,7 +153,7 @@ ms.locfileid: "43636506"
 
 旧订阅的用户将自动移至新订阅。
   
-如果您的旧订阅包含多个服务，并且您已更改您的用户分配到的这些服务中的哪一项，则您可能需要在升级计划前记下这一点，以便以后可以重新创建这些更改。 所有用户都将被授予新订阅中所有服务的访问权限。 例如，如果您以前为所有100的用户购买了 Office 365 企业版 E3，但未分配了 SharePoint Online 服务的50，则升级计划后不会保留此更改。
+如果您的旧订阅包含多个服务，并且您已更改您的用户分配到的这些服务中的哪一项，则您可能需要在升级计划前记下这一点，以便以后可以重新创建这些更改。 所有用户都将被授予新订阅中所有服务的访问权限。 例如，如果您以前为所有100的用户购买了 Microsoft 365 商业高级版，但未分配了 SharePoint Online 服务的50，则在升级计划后不会保留此更改。
   
 如果在升级计划之前有多个订阅，并且用户将许可证分配给多个订阅，则此工作分配模式将在新订阅中尽可能保持。
   
@@ -164,9 +164,9 @@ ms.locfileid: "43636506"
 计划升级完成后，旧订阅的记帐将关闭，新订阅上的记帐将打开。 你将为旧订阅上任何未使用的服务获得按比例分配的信用。 升级到新订阅后，你将在30天内收到新发票，其中包含你的旧订阅的学分。
   
 > [!NOTE]
-> 你的支付帐户计入贷方实际花费的时间长度取决于订阅所用的支付方式。 
+> 你的支付帐户计入贷方实际花费的时间长度取决于订阅所用的支付方式。
   
- **是否在过期之前从预付订阅升级？** 如果新订阅的总成本高于或等于预付费订阅的剩余价值，则不会丢失任何预付费的时间。 在签出页面上，你将看到未使用的时间的信用。 但是，如果新订阅的总成本低于当前预付费订阅的剩余价值，则你将丢失部分未使用的时间。 你将在结帐前收到通知，并且你可以等待升级，直到更接近预付订阅的到期日期。
+**是否在过期之前从预付订阅升级？** 如果新订阅的总成本高于或等于预付费订阅的剩余价值，则不会丢失任何预付费的时间。 在签出页面上，你将看到未使用的时间的信用。 但是，如果新订阅的总成本低于当前预付费订阅的剩余价值，则你将丢失部分未使用的时间。 你将在结帐前收到通知，并且你可以等待升级，直到更接近预付订阅的到期日期。
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>致电支持部门以帮助你升级计划
 

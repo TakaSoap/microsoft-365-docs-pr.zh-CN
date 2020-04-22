@@ -1,5 +1,5 @@
 ---
-title: Azure 中的 Office 365 加密
+title: Azure 中的加密
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 摘要： Azure 中的加密说明。
-ms.openlocfilehash: 9828da8b2d39a3b80784d57ed71a335857cfaea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602109"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637430"
 ---
-# <a name="office-365-encryption-in-azure"></a>Azure 中的 Office 365 加密
+# <a name="encryption-in-azure"></a>Azure 中的加密
 
 ## <a name="introduction"></a>简介
 
@@ -47,7 +47,7 @@ Azure 磁盘加密使您能够将 Windows 和 Linux 基础结构加密为服务�
 
 通过[Azure 存储服务加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)，Azure 存储会在检索数据之前将数据自动加密，并将其保存到存储区并对数据进行解密。 加密、解密和密钥管理过程对用户完全透明。 Azure 存储服务加密可用于[Azure Blob 存储](https://azure.microsoft.com/services/storage/blobs/)和[azure 文件](https://azure.microsoft.com/services/storage/files/)。 您还可以使用 Microsoft 托管的加密密钥和 Azure 存储服务加密，也可以使用自己的加密密钥。 （有关使用您自己的密钥的信息，请参阅[使用 Azure Key Vault 中的客户托管密钥存储服务加密](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys)。 有关使用 Microsoft 管理的密钥的信息，请参阅[存储服务对静态数据的加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)。此外，还可以自动使用加密。 例如，可以使用[Azure 存储资源提供程序 REST API](https://msdn.microsoft.com/library/azure/mt163683.aspx)、[适用于 .Net 的存储资源提供程序客户端库](https://msdn.microsoft.com/library/azure/mt131037.aspx)、 [azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs)或[azure CLI](https://docs.microsoft.com/azure/storage/storage-azure-cli)以编程方式启用或禁用存储帐户上的存储服务加密。
 
-一些 Office 365 服务使用 Azure 存储数据。 例如，SharePoint Online 和 OneDrive for Business store data in Azure Blob 存储，Microsoft 团队在表、blob 和队列中存储其聊天服务的数据。 此外，Microsoft 365 合规性中心中的合规性得分功能存储了客户输入的数据，这些数据以加密形式存储在[Azure COSMOS DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)中，即作为服务（PaaS）的平台（即，全局分布式的多模型数据库）。 Azure 存储服务加密对存储在 Azure Blob 存储和表中的数据进行加密，Azure 磁盘加密会对队列中的数据以及 Windows 和 IaaS 虚拟机磁盘进行加密，以提供操作系统和数据磁盘的卷加密。 此解决方案可确保虚拟机磁盘上的所有数据在 Azure 存储中的静态位置进行加密。 [Azure COSMOS DB 中的静态加密](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)是通过使用多种安全技术实现的，包括安全密钥存储系统、加密的网络和加密 api。
+一些 Microsoft 365 服务使用 Azure 存储数据。 例如，SharePoint Online 和 OneDrive for Business store data in Azure Blob 存储，Microsoft 团队在表、blob 和队列中存储其聊天服务的数据。 此外，Microsoft 365 合规性中心中的合规性得分功能存储了客户输入的数据，这些数据以加密形式存储在[Azure COSMOS DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)中，即作为服务（PaaS）的平台（即，全局分布式的多模型数据库）。 Azure 存储服务加密对存储在 Azure Blob 存储和表中的数据进行加密，Azure 磁盘加密会对队列中的数据以及 Windows 和 IaaS 虚拟机磁盘进行加密，以提供操作系统和数据磁盘的卷加密。 此解决方案可确保虚拟机磁盘上的所有数据在 Azure 存储中的静态位置进行加密。 [Azure COSMOS DB 中的静态加密](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)是通过使用多种安全技术实现的，包括安全密钥存储系统、加密的网络和加密 api。
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 

@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的新数据调查（预览版）工具。
-ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595409"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637732"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查（预览）发布说明
 
 您可以使用 Microsoft 365 中的新数据调查（预览版）工具对数据相关事件进行会审、调查和补救，如数据外泄事件或内部调查。 数据调查的公共预览为您提供了对即将推出的功能和更新的早期访问权限。 若要尽早访问最新功能，请在安全 & 合规性中心中创建一个新的数据调查（预览版）调查。 若要了解如何操作，请参阅[在 Microsoft 365 中管理数据外泄事件](manage-data-spillage-incidents.md)。
 
-## <a name="whats-new"></a>新增功能 
+## <a name="whats-new"></a>最近更新 
 
 - **调查**-您可以通过创建调查来对搜索和事件进行分组。 通过添加或删除成员来管理可访问调查的人员。  您还可以选择并标记您喜爱的调查。 使用新仪表板跟踪和监控调查中和跨调查的活动。 完成调查后，可以关闭或删除它。
 
-- **感兴趣的人**–当您将用户添加到调查中的人时，您可以查看他们的邮箱、OneDrive for business 帐户和 Microsoft 团队网站。 您可以使用它们来限定调查内容搜索的范围。 若要进一步调查感兴趣的人员，您还可以查看与 Office 365 和其他 Microsoft 服务中的活动相关的审核记录。
+- **感兴趣的人**–当您将用户添加到调查中的人时，您可以查看他们的邮箱、OneDrive for business 帐户和 Microsoft 团队网站。 您可以使用它们来限定调查内容搜索的范围。 若要进一步调查感兴趣的人员，您还可以查看与 Microsoft 365 和其他 Microsoft 服务中的活动相关的审核记录。
 
 - **搜索**–使用各种搜索条件创建组织范围的搜索。 如果您知道要搜索的用户或网站，可以通过将这些用户添加为感兴趣的人员或在 "搜索创建向导" 中指定网站位置来执行此操作。 
 
