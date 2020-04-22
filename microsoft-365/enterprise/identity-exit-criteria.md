@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对基于身份的服务和基础结构的条件。
-ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 3706cd84a722e68a8b75274544630719e510345a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637285"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632537"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>阶段 2：身份基础结构退出条件
 
@@ -33,7 +33,7 @@ ms.locfileid: "42637285"
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>必需：全局管理员帐户受到保护 
 
-你已[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以避免可能导致违反Microsoft 365订阅的攻击者的凭据泄露。
+你已[保护全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以避免可能导致违反Microsoft 365订阅的攻击者的凭据泄露。
 
 如果忽略此要求，全局管理员帐户很容易受到攻击和入侵，攻击者可以获取系统范围内的数据访问权限并加以收集、销毁或勒索。
 
@@ -47,7 +47,7 @@ ms.locfileid: "42637285"
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. 使用步骤 1 中的每个帐户登录到 Office 365。 每个登录必须要求 Azure 多重身份验证和组织中可用的最强形式的辅助身份验证。
+2. 使用步骤 1 中的每个帐户登录。 每个登录必须要求 Azure 多重身份验证和组织中可用的最强形式的辅助身份验证。
 
 > [!Note]
 > 有关在 Office 365 中安装 Azure Active Directory PowerShell Graph 模块和登录的说明，请参阅[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。
@@ -96,11 +96,11 @@ ms.locfileid: "42637285"
 如果需要，请执行[步骤 2](identity-secure-your-passwords.md#identity-sso)，这有助于你满足此条件。
 
 <a name="crit-identity-custom-sign-in"></a>
-## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>可选：个性化组织的 Office 365 登录屏幕
+## <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>可选：个性化组织登录屏幕
 
-你已使用[将公司品牌添加到登录和访问面板页面](https://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。
+你已使用[将公司品牌添加到登录和访问面板页面](https://aka.ms/aadpaddbranding)，将组织的品牌添加到登录页面。
 
-如果忽略此选项，你的用户将看到通用的 Office 365 登录屏幕，可能会让他们疑惑是否登录到了组织的网站。
+如果忽略此选项，你的用户将看到通用的登录屏幕，可能会让他们疑惑是否登录到了组织的网站。
 
 如果需要，请执行[步骤 2](identity-secure-your-passwords.md#identity-custom-sign-in)，这有助于你满足此条件。
 
@@ -116,11 +116,11 @@ ms.locfileid: "42637285"
 
 ### <a name="how-to-test"></a>如何测试
 
-1.  创建一个测试用户帐户并对其分配许可证。 
-2.  通过用于真实用户帐户的其他验证方法为测试用户帐户配置 Azure 多重身份验证，如向手机发送消息。 
-3.  使用测试用户帐户登录到 Office 365 门户。
-4.  确保 MFA 提示你输入其他验证信息且身份验证成功。 
-5.  删除该测试用户帐户。
+1.    创建一个测试用户帐户并对其分配许可证。 
+2.    通过用于真实用户帐户的其他验证方法为测试用户帐户配置 Azure 多重身份验证，如向手机发送消息。 
+3.    使用测试用户帐户登录到 Office 365 门户。
+4.    确保 MFA 提示你输入其他验证信息且身份验证成功。 
+5.    删除该测试用户帐户。
 
 <a name="crit-identity-ident-prot"></a>
 ## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>可选：启用了 Azure AD Identity Protection 以防止凭据泄露（仅限 Microsoft 365 E5）
@@ -129,7 +129,7 @@ ms.locfileid: "42637285"
 
 - 解决潜在标识漏洞。
 - 检测可能的凭据泄露尝试。
-- 调查和处理正在进行的可疑标识活动。
+- 调查和解决正在进行的可疑身份活动。
 
 如果忽略此选项，你将无法检测或自动阻止凭据泄露尝试或调查标识相关的安全事件。这可能会使你的组织很容易受到凭据泄露的攻击，进而对组织的敏感数据造成威胁。
 
@@ -148,7 +148,7 @@ ms.locfileid: "42637285"
 
 如果你有现有的本地 Active Directory 域服务 (AD DS)，则已使用 Azure AD Connect 将用户帐户和组从本地 AD DS 同步到 Azure AD 租户。
 
-通过目录同步，你的用户可以使用与登录到其计算机相同的凭据登录到 Office 365 和其他 Microsoft 云服务，并访问本地资源。
+通过目录同步，你的用户可以使用与登录到其计算机相同的凭据登录到 Microsoft 365 和其他 Microsoft 云服务，并访问本地资源。
 
 必要时请执行[第 4 步](identity-add-user-accounts.md#identity-sync)，这样做有助于满足此要求。
 
@@ -164,9 +164,9 @@ ms.locfileid: "42637285"
 
 要验证目录同步正常运行，请执行以下操作：
 
-1.  在 AD DS 中创建新的测试组。
-2.  等待同步时间。
-3.  检查 Azure AD 租户以验证新测试组的名称是否出现。
+1.    在 AD DS 中创建新的测试组。
+2.    等待同步时间。
+3.    检查 Azure AD 租户以验证新测试组的名称是否出现。
 
 <a name="crit-identity-sync-health"></a>
 ## <a name="optional-directory-synchronization-is-monitored"></a>可选：监控目录同步
@@ -209,11 +209,11 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 
 ### <a name="how-to-test"></a>如何测试
 
-使用用户帐户名称及 Azure 多重身份验证登录到 Office 365 门户。 应在登录页面上看到自定义的品牌元素。
+使用用户帐户名称及 Azure 多重身份验证登录到门户。 应在登录页面上看到自定义的品牌元素。
 
 
 <a name="crit-identity-self-service-groups"></a>
-## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>可选：为特定 Azure AD 安全和 Office 365 组启用了自助服务组管理
+## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>可选：为特定 Azure AD 安全和 Microsoft 365 组启用了自助服务组管理
 
 已确定哪些组适用于自助服务管理，对所有者说明了组管理工作流和职责，并为这些组[在 Azure AD 中设置自助服务管理](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)。
 
@@ -222,13 +222,13 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 如果需要，可在[步骤 5](identity-use-group-management.md#identity-self-service-groups) 中设置此选项。
 
 ### <a name="how-to-test"></a>如何测试
-1.  在具有 Azure 门户的 Azure AD 中创建测试用户帐户。
-2.  使用测试用户帐户登录并创建测试 Azure AD 安全组。
-3.  注销，然后使用 IT 管理员帐户登录。
-4.  针对测试用户帐户，配置测试安全组进行自助服务管理。
-5.  注销，然后使用测试用户帐户登录。
-6.  使用 Azure 门户将成员添加到测试安全组。
-7.  删除测试安全组和测试用户帐户。
+1.    在具有 Azure 门户的 Azure AD 中创建测试用户帐户。
+2.    使用测试用户帐户登录并创建测试 Azure AD 安全组。
+3.    注销，然后使用 IT 管理员帐户登录。
+4.    针对测试用户帐户，配置测试安全组进行自助服务管理。
+5.    注销，然后使用测试用户帐户登录。
+6.    使用 Azure 门户将成员添加到测试安全组。
+7.    删除测试安全组和测试用户帐户。
 
 <a name="crit-identity-dyn-groups"></a>
 ## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a>可选：动态组成员身份设置根据用户帐户属性自动将用户帐户添加到组

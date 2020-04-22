@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用针对你所在地区或区域设置列出的电话号码、联机提交服务请求或访问 Microsoft Store，以获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: 8f108f4348a7cecd62eba869962d9ee5b179b5b0
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212113"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627074"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>联系商业版产品的支持人员 - 管理员帮助
 
@@ -62,7 +62,7 @@ ms.locfileid: "43212113"
 
 - **在英国，请拨打 0800 032 6417。**
 
-如果上方未列出你的 Office 365 或 Microsoft 365 商业版支持电话号码，请使用下面的下拉菜单来选择你所在的国家或地区。
+如果上方未列出你的 Microsoft 365 商业版支持电话号码，请使用下面的下拉菜单来选择你所在的国家或地区。
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
@@ -70,13 +70,15 @@ ms.locfileid: "43212113"
 
 ## <a name="in-store-support"></a>[商店内支持](#tab/instore)
 
-现在，你可以在本地 Microsoft Store 与 Answer Desk 专家进行预约，让他们帮助解决 Office 365 或 Microsoft 365 问题。
+现在，你可以在本地 Microsoft Store 与 Answer Desk 专家进行预约，让他们帮助解决 Microsoft 365 问题。
 
 1. 转到“[Microsoft Store 日程安排](https://go.microsoft.com/fwlink/?LinkID=2041482)”页面，然后选择“**安排约会**”。
 
 2. 输入你的位置并进行搜索，以查找附近的 Microsoft Store。
 
 3. 选择商店，然后选择“**立即安排服务约会**”。
+
+---
 
 ::: moniker-end
 
@@ -86,7 +88,7 @@ ms.locfileid: "43212113"
 
 获得授权的管理员可以使用由世纪互联运营的 Office 365 的门户来在线提交服务请求和获得支持电话号码。有关说明，请参阅[联系支持](#contact-support)。
 
-世纪互联 Office 365 技术支持团队仅负责解决与世纪互联运营的 Office 365 相关的上述问题。源自客户网络的问题不在 Office 365 支持范围内，而且在这些情况下，客户必须与其网络团队共同协作以获得帮助。
+由世纪互联运营的 Office 365 技术支持团队仅负责解决与世纪互联运营的 Office 365 相关的上述问题。源自客户网络的问题不在 Office 365 支持范围内，而且在这些情况下，客户必须与其网络团队共同协作以获得帮助。
 
 ### <a name="community-and-self-service-support-options"></a>社区和自助服务支持选项
 
@@ -120,7 +122,7 @@ ms.locfileid: "43212113"
 
 | 支持类别 | 示例 |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 安装和设置 | Exchange Online  <ul><li>Office 365 邮箱迁移</li><li>收件人配置（邮箱权限、配置邮件转发、配置共享邮箱）</li><li>自动发现配置</li></ul> SharePoint Online <ul><li>权限和用户组</li><li>外部用户的配置</li></ul> Skype for Business Online  <ul><li>安装和创建联系人</li></ul> Office 365 专业增强版  <ul><li>安装和设置</li></ul> |
+| 安装和设置 | Exchange Online  <ul><li>Office 365 邮箱迁移</li><li>收件人配置（邮箱权限、配置邮件转发、配置共享邮箱）</li><li>自动发现配置</li></ul> SharePoint Online <ul><li>权限和用户组</li><li>外部用户的配置</li></ul> Skype for Business Online  <ul><li>安装和创建联系人</li></ul> Microsoft 365 企业应用版  <ul><li>安装和设置</li></ul> |
 | 配置 | 服务配置问题  <ul><li>单一登录 (SSO)</li><li>Active Directory 同步</li></ul> |
 
 > [!NOTE]
@@ -177,7 +179,7 @@ ms.locfileid: "43212113"
 
 在客户组织中，只有具有管理员角色的用户才有权访问由世纪互联运营的 Office 365 的门户的“管理员”部分并就 Office 365 服务请求直接与世纪互联进行沟通。
 
-Office 365 允许委派多个类型的管理员来行使不同的职能。此服务说明使用通用职称管理员来指代所有类别的管理员。有关管理员角色类型的详细信息，请参阅[在 Office 365 商业版中分配管理员角色](add-users/assign-admin-roles.md)。
+Office 365 允许委派多个类型的管理员来行使不同的职能。此服务说明使用通用职称管理员来指代所有类别的管理员。有关管理员角色类型的详细信息，请参阅[在 Microsoft 365 商业版中分配管理员角色](add-users/assign-admin-roles.md)。
 
 管理员具有以下特点：
 
@@ -236,7 +238,7 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 作为 Office 365 Germany 管理员，你可以免费联系我们的资深支持专员，让其协助你解决技术问题，以及获取预售、帐户和帐单支持。你也可以代表你组织中的 Office 365 Germany 用户联系我们。
 
 > [!NOTE]
-> 下面的所有支持选项都是针对 Microsoft 云德国版的。有关 Microsoft 如何使用你在联系 Microsoft Office 365 支持人员时提供的数据的更多信息，请参阅[隐私声明](https://go.microsoft.com/fwlink/p/?LinkId=512132)。
+> 下面的所有支持选项都是针对 Microsoft 云德国版的。有关 Microsoft 如何使用你在联系 Microsoft 支持人员时提供的数据的更多信息，请参阅[隐私声明](https://go.microsoft.com/fwlink/p/?LinkId=512132)。
 
 ### <a name="get-assisted-support"></a>获取辅助支持
 
@@ -253,6 +255,6 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 ### <a name="let-our-community-help"></a>通过社区获取帮助
 
-你也可以[搜索 Office 365 商业版社区论坛](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查找已知问题和新潮主题，或发帖提出新问题。社区论坛由训练有素的 Microsoft 支持专员监管，他们可以帮助你解决问题。
+你也可以[搜索 Microsoft 365 商业版社区论坛](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查找已知问题和新潮主题，或发帖提出新问题。社区论坛由训练有素的 Microsoft 支持专员监管，他们可以帮助你解决问题。
 
 ::: moniker-end

@@ -1,5 +1,5 @@
 ---
-title: 比较 Office 365 中的组
+title: 比较组
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -18,33 +18,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: 了解可在 Office 365 中使用的组类型。
-ms.openlocfilehash: 7d0a18606918884381b0bf7863cfac6cafb29c29
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 了解可以使用的组类型。
+ms.openlocfilehash: 6f44214441c67e14d2cbc7ac12c0e2f3036acb2b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894595"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630709"
 ---
 # <a name="compare-groups"></a>比较组
 
 在 Microsoft 365 管理中心的 **组** 部分中，可创建和管理以下类型的组： 
 
-- **Office 365 组** 用于公司内部和外部用户之间的协作。
+- **Microsoft 365 组**用于公司内部和外部用户之间的协作。
 - **通讯组** 用于向一组人员发送通知。
 - **安全组**用于授予对资源（如 SharePoint 网站）的访问权限。
 - **启用邮件的安全组**用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
 - 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址）时，将使用**共享邮箱**。
 
-## <a name="office-365-groups"></a>Office 365 组
+## <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-Office 365 组用于公司内部和外部用户之间的协作。 对于每个 Office 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Planner。
+Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每个 Microsoft 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Planner。
 
 只要[管理员启用](manage-guest-access-in-groups.md)了此功能，你就可以将组织外部的人员添加到组中。 还可以允许外部发件人向组电子邮件地址发送电子邮件。
 
-可[为 Azure Active Directory中的动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)配置 Office 365 组，以便根据部门、位置、职衔等等用户属性自动添加或删除组成员。
+可[为 Azure Active Directory中的动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)配置 Microsoft 365 组，以便根据部门、位置、职衔等等用户属性自动添加或删除组成员。
 
-可通过移动应用（如 Outlook for iOS 和 Outlook for Android）访问 Office 365 组。
+可通过移动应用（如 Outlook for iOS 和 Outlook for Android）访问 Microsoft 365 组。
 
 如果[管理员启用了](allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，则组成员可以作为组或代表组发送电子邮件地址。
 
@@ -56,7 +56,7 @@ Office 365 组用于公司内部和外部用户之间的协作。 对于每个 O
 
 ## <a name="security-groups"></a>安全组
 
-[安全组](../email/create-edit-or-delete-a-security-group.md) 用于授予对 Office 365 资源（如 SharePoint）的访问权限。 它们可以简化管理，因为只需管理组，而不是单独将用户添加到每个资源。
+[安全组](../email/create-edit-or-delete-a-security-group.md) 用于授予对 Microsoft 365 资源（如 SharePoint）的访问权限。 它们可以简化管理，因为只需管理组，而不是单独将用户添加到每个资源。
 
 安全组可以包含用户或设备。 可将创建设备安全组用于移动设备管理服务（如 Intune）。
 
@@ -76,8 +76,8 @@ Office 365 组用于公司内部和外部用户之间的协作。 对于每个 O
 
 如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
 
-暂无法将共享邮箱迁移到 Office 365 组中。 所需内容是什么？ 请告知我们。 **[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)**。
+暂无法将共享邮箱迁移到 Microsoft 365 组中。 所需内容是什么？ 请告知我们。 **[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)**。
 
 ## <a name="related-articles"></a>相关文章
 
-[了解 Office 365 组](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[了解 Microsoft 365 组](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

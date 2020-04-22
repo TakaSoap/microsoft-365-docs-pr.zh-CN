@@ -14,13 +14,13 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解如何使用通信和培训让最终用户为 Windows 10 和 Office 365 专业增强版做好准备。
-ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何使用通信和培训让最终用户为 Windows 10 和 Microsoft 365 企业应用版做好准备。
+ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085105"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636743"
 ---
 # <a name="step-8-user-communications-and-training"></a>步骤 8：用户通信和培训
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085105"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>步骤 8：用户通信和培训</strong></p>
-<p>在将你的电脑切换至 Windows 10 和 Office 365 专业增强版后，确保你的用户了解新体验和新的工作方式。请了解如何利用用户采用帮助（通过 Microsoft FastTrack）、培训材料和通信模板，以及如何通过新方法来监控用户的接受和使用情况。</p></td>
+<p>在将你的电脑切换至 Windows 10 和 Microsoft 365 企业应用版后，确保你的用户了解新体验和新的工作方式。请了解如何利用用户采用帮助（通过 Microsoft FastTrack）、培训材料和通信模板，以及如何通过新方法来监控用户的接受和使用情况。</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -45,7 +45,7 @@ ms.locfileid: "42085105"
 
 ## <a name="getting-ready-for-new-experiences"></a>准备好迎接新体验
 
-从 Office 开始，如果你第一次部署 Office 365 专业增强版，你可以说明登录到 Office 应用和将文件保存到 OneDrive 或 SharePoint 位置以使共享变得更为简单、减少文件分支并启用实时共同创作的优势。
+从 Office 开始，如果你第一次部署 Microsoft 365 企业应用版，你可以说明登录到 Office 应用和将文件保存到 OneDrive 或 SharePoint 位置以使共享变得更为简单、减少文件分支并启用实时共同创作的优势。
 
 为这些应用和其他本地或基于浏览器的应用（例如 Teams 和 Planner）提供了详细的通信和培训模板。
 
@@ -61,7 +61,7 @@ ms.locfileid: "42085105"
 
 例如，如果你启用了多重身份验证，这会使用 Azure AD，并通过利用手机应用或 PIN 来保护用户登录到资源，以安全地访问服务。Azure 信息保护使用户能够轻松地分类和标记文档。
 
-[为 Office 365 用户设置多重身份验证](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[为用户设置多重身份验证](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 这些只是你的用户将要体验的几个新功能，其中的某些功能可能会另他们感到吃惊（正面的或不那么正面的），尤其是在他们更改了正常工作流时，这可能会为你或你的支持人员带来更多的工作。
 
@@ -129,8 +129,8 @@ Microsoft 的 IT 展示系列是与 Windows 10 部署相关的内容的另一个
 
 除了通过分析工具监控的诊断数据外，你还可以精确监控 Office 365 和 Microsoft 365 服务使用情况，按管理中心的工作负载并通过 Power BI 使用管理仪表板提供详细使用报告。 这些都是很出色的工具，帮助你在推出新的团队协作工具（如 Microsoft 团队）或共享文件的新方法（如 OneDrive）时设置和跟踪目标。
 
-在组织中的每台电脑安装了 Windows 10 和 Office 365 专业增强版后的很长一段时间内，新技术的接受和采用都将持续。如果未投入时间来通知和培训用户有关新功能的使用，他们将不会更改他们的工作方式。最后，新的服务模型为 Windows 的半年日程安排提供新功能，（可选）并为 Office 提供月度日程安排，通信将持续进行。
+在组织中的每台电脑安装了 Windows 10 和 Microsoft 365 企业应用版后的很长一段时间内，新技术的接受和采用都将持续。如果未投入时间来通知和培训用户有关新功能的使用，他们将不会更改他们的工作方式。最后，新的服务模型为 Windows 的半年日程安排提供新功能，（可选）并为 Office 提供月度日程安排，通信将持续进行。
 
 ## <a name="previous-step"></a>上一步 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[步骤 7：Windows 和 Office 服务](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[步骤 7：Windows 和 Office 服务](https://aka.ms/mdd7)

@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 在你的组织中，逐步完成对 SharePoint 的价值规划、推广和推动过程。
-ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "39886319"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636912"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>为 Microsoft 365 企业版部署 SharePoint 和 OneDrive
 
@@ -93,8 +93,8 @@ SharePoint 可用于不同用途。需要确定哪些用途能够满足业务需
 
 若要更好地了解 SharePoint 安全性，请参阅以下资源：
 
--   [SharePoint 和 OneDrive 如何保护云数据](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [OneDrive 和 SharePoint 中的数据加密](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [SharePoint 和 OneDrive 如何保护云数据](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [OneDrive 和 SharePoint 中的数据加密](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>结果
 
@@ -155,8 +155,8 @@ SharePoint 可用于不同用途。需要确定哪些用途能够满足业务需
 
 建议的活动如下：
 
-- 请参阅 [Office 365 的成功因素](https://aka.ms/successfactors)，了解与云服务采用有关的常规最佳做法。 
-- 请参阅 [Office 365 活动报告](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)，了解整个组织的 Office 365 服务使用情况。如果不是组织的 Office 365 全局管理员，请让全局管理员向你的用户帐户授予“报告读取者”权限，以便你能够访问活动报告。
+- 请参阅 [Microsoft 365 的成功因素](https://aka.ms/successfactors)，了解与云服务采用有关的常规最佳做法。 
+- 请参阅[管理中心中的 Microsoft 365 报表](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)，了解整个组织的服务使用情况。如果不是组织的全局管理员，请让全局管理员向你的用户帐户授予“报告读取者”权限，以便你能够访问活动报告。
 - 监视反馈地点（中心 Teams 团队或 Yammer 的公用频道），获取个人在体验 SharePoint 后提出的问题和反馈。 尽快解决他们的疑问和问题，以避免个人受挫，并证明我们是支持发布的。
 - 确定并培养每个业务组中的佼佼者，并强调他们在使用 SharePoint 时的成就和最佳做法。 将他们的成功事迹反映给组织，以展示项目的成功和采用。 通过得到业务组中技术领导的认可，将会在领导和同事间产生强大的影响。
 

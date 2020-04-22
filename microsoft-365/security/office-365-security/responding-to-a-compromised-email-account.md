@@ -1,5 +1,5 @@
 ---
-title: 响应 Office 365 中遭到入侵的电子邮件帐户
+title: 响应遭到入侵的电子邮件帐户
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,26 +15,26 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 了解如何识别并响应 Office 365 中遭到入侵的电子邮件帐户
-ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: 了解如何识别并响应 Microsoft 365 中遭到入侵的电子邮件帐户
+ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634336"
 ---
-# <a name="responding-to-a-compromised-email-account-in-office-365"></a>响应 Office 365 中遭到入侵的电子邮件帐户
+# <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
-**摘要** 了解如何识别并响应 Office 365 中遭到入侵的电子邮件帐户。
+**摘要** 了解如何识别并响应 Microsoft 365 中遭到入侵的电子邮件帐户。
 
-## <a name="what-is-a-compromised-email-account-in-office-365"></a>什么是 Office 365 中遭到入侵的电子邮件帐户？
+## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>什么是 Microsoft 365 中遭到入侵的电子邮件帐户？
 
-通过使用凭据（例如用户名和密码或 PIN）来控制对 Office 365 邮箱、数据和其他服务的访问。 如果除预期用户以外的其他人窃取了这些凭据，则被盗的凭据将视为遭到入侵。 借助这些凭据，攻击者能够以原始用户的身份登录并执行非法操作。
-通过使用窃取的凭据，攻击者可以访问用户的 Office 365 邮箱、SharePoint 文件夹或用户 OneDrive 中的文件。 其中一种常见操作是攻击者以原始用户的身份将电子邮件发送给组织内外的收件人。 当攻击者通过电子邮件将数据发送给外部收件人时，这称为数据泄露。
+通过使用凭据（例如用户名和密码或 PIN）来控制对 Microsoft 365 邮箱、数据和其他服务的访问。 如果除预期用户以外的其他人窃取了这些凭据，则被盗的凭据将视为遭到入侵。 借助这些凭据，攻击者能够以原始用户的身份登录并执行非法操作。
+通过使用窃取的凭据，攻击者可以访问用户的 Microsoft 365 邮箱、SharePoint 文件夹或用户 OneDrive 中的文件。 其中一种常见操作是攻击者以原始用户的身份将电子邮件发送给组织内外的收件人。 当攻击者通过电子邮件将数据发送给外部收件人时，这称为数据泄露。
 
-## <a name="symptoms-of-a-compromised-office-365-email-account"></a>遭到入侵的 Office 365 电子邮件帐户的症状
+## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>遭到入侵的 Microsoft 电子邮件帐户的症状
 
-用户可能会注意到并报告其 Office 365 邮箱中的异常活动。 下面是一些常见症状：
+用户可能会注意到并报告其 Microsoft 365 邮箱中的异常活动。 下面是一些常见症状：
 
 - 可疑活动，例如丢失或删除的电子邮件。
 
@@ -58,9 +58,9 @@ ms.locfileid: "42372480"
 
 如果用户报告了上述任何症状，你应该进一步展开调查。 Microsoft 365 安全与合规中心和 Azure 门户提供了各种工具，可帮助你对疑似遭到入侵的用户帐户的活动展开调查。
 
-- **安全与合规中心内的 Office 365 统一审核日志**：通过筛选从可疑活动发生前到当前日期的日期范围内的结果，审阅可疑帐户的所有活动。 不要在搜索过程中筛选活动。
+- **安全与合规中心内的统一审核日志**：通过筛选从可疑活动发生前到当前日期的日期范围内的结果，审阅可疑帐户的所有活动。 不要在搜索过程中筛选活动。
 
-- **EAC 中的 Office 365 管理员审核日志**：在 Exchange Online 中，可以使用 Exchange 管理中心 (EAC) 搜索和查看管理员审核日志中的条目。 管理员审核日志根据管理员和分配有管理权限的用户执行的 Exchange Online PowerShell cmdlet 来记录特定操作。 管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。
+- **EAC 中的管理员审核日志**：在 Exchange Online 中，可以使用 Exchange 管理中心 (EAC) 搜索和查看管理员审核日志中的条目。 管理员审核日志根据管理员和分配有管理权限的用户执行的 Exchange Online PowerShell cmdlet 来记录特定操作。 管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。
 
 - **Azure AD 门户中的 Azure AD 登录日志和其他风险报告**：检查以下列中的值：
 
@@ -72,7 +72,7 @@ ms.locfileid: "42372480"
 
   - 登录成功或失败
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>如何保护和恢复疑似遭到入侵的 Office 365 帐户和邮箱的电子邮件功能
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>如何保护和恢复疑似遭到入侵的 Microsoft 365 帐户和邮箱的电子邮件功能
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
@@ -85,7 +85,7 @@ ms.locfileid: "42372480"
 > [!WARNING]
 > 不要通过电子邮件将新密码发送给预期用户，因为此时攻击者仍可以访问邮箱。
 
-1. 按照“[重置 Office 365 商业版密码](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)”中的“为其他人重置 Office 365 商业版密码”步骤执行操作。
+1. 按照“[重置 Microsoft 365 企业应用版密码](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)”中的“为其他人重置 Microsoft 365 企业应用版密码”步骤执行操作。
 
 **注意**：
 
@@ -93,7 +93,7 @@ ms.locfileid: "42372480"
 
 - 不要重复使用过去五个密码中的任何一个。 即使密码历史记录要求允许你重复使用最近使用过的密码，你也应该选择攻击者无法猜到的密码。
 
-- 如果你的本地标识已与 Office 365 联合，则必须在本地更改密码，然后通知管理员帐户遭到入侵。
+- 如果你的本地标识已与 Microsoft 365 联合，则必须在本地更改密码，然后通知管理员帐户遭到入侵。
 
 > [!TIP]
 > 强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。  可以单击[此处](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)详细了解 MFA。
@@ -178,13 +178,13 @@ ms.locfileid: "42372480"
 
 1. 确保验证已发送的邮件。 你可能需要通知联系人列表中的人员你的帐户遭到入侵。 例如，攻击者可能会向他们要钱，谎称他们被困在另一个国家/地区并且需要钱，也可能会向他们发送病毒以便劫持其计算机。
 
-2. 将此 Exchange 帐户用作其备用电子邮件帐户的任何其他服务可能已遭到入侵。 首先，为 Office 365 订阅执行这些步骤，然后为其他帐户执行这些步骤。
+2. 将此 Exchange 帐户用作其备用电子邮件帐户的任何其他服务可能已遭到入侵。 首先，为 Microsoft 365 订阅执行这些步骤，然后为其他帐户执行这些步骤。
 
 3. 确保你的联系信息（如电话号码和地址）正确无误。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Microsoft 365
 
-你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用“[Office 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
+你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用“[Microsoft 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Microsoft 365 租户。
 
 - 需要在前 30 天完成的任务。  这些任务会对你的用户产生直接影响并且影响很小。
 
@@ -194,7 +194,7 @@ ms.locfileid: "42372480"
 
 ## <a name="see-also"></a>另请参阅
 
-- [在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
+- [在 Microsoft 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Internet 犯罪投诉中心](https://www.ic3.gov/preventiontips.aspx)
 

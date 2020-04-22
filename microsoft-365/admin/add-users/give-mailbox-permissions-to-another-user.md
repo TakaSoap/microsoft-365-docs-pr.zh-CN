@@ -1,5 +1,5 @@
 ---
-title: 将邮箱权限授予 Office 365 中的另一用户 - 管理员帮助
+title: 向其他用户授予邮箱权限 - 管理员帮助
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: '了解如何授予用户访问其他用户的邮箱的权限。 这将使用户拥有从其他用户的邮箱读取邮件和发送邮件的权限。 '
-ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 5a0677844e8503253561c57f926c9c4fadadd76d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617166"
 ---
-# <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>将邮箱权限授予 Office 365 中的另一用户 - 管理员帮助
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>向其他用户授予邮箱权限 - 管理员帮助
 
 ::: moniker range="o365-worldwide"
 
@@ -49,11 +49,11 @@ ms.locfileid: "43151343"
   
 设置权限的第一步是确定你希望允许其他用户在特定邮箱中可以执行哪些操作。你可以允许用户阅读邮箱中的电子邮件、代表其他用户发送电子邮件和以如同邮件从该邮箱发送的形式发送电子邮件。请参阅以下文章，了解如何设置每类权限：
   
-- [从其他用户的邮箱读取电子邮件](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [从其他用户的邮箱读取电子邮件](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [从其他用户的邮箱发送电子邮件](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
-    
-- [代表用户发送电子邮件](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
+- [从其他用户的邮箱发送电子邮件](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [代表其他用户发送电子邮件](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **更改传播：**
   

@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和展示 Microsoft 365 测试环境的密码哈希同步和登录。
-ms.openlocfilehash: a0a498aea84bacb61de257150801328834724981
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8c0f9b45fc4a57ad5ac50ea2a3340d6e05769b96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066380"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632895"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
 *本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
-许多组织使用 Azure AD Connect 和密码哈希同步来同步他们内部部署的 Active Directory 域服务 (AD DS) 林帐户集与 Microsoft 365 或 Office 365 订阅的 Azure AD 租户帐户集。 本文介绍了如何添加密码哈希同步至 Microsoft 365 测试环境，从而生成以下配置：
+许多组织使用 Azure AD Connect 和密码哈希同步来同步他们内部部署的 Active Directory 域服务 (AD DS) 林帐户集与 Microsoft 365 订阅的 Azure AD 租户帐户集。 本文介绍了如何添加密码哈希同步至 Microsoft 365 测试环境，从而生成以下配置：
   
 ![使用密码哈希同步测试环境的模拟企业配置](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -72,7 +72,7 @@ ms.locfileid: "42066380"
 请注意，现在 testlab.\<你的公共域名>：
 
 - 受公共 DNS 记录支持。
-- 已在 Microsoft 365 或 Office 365 订阅中注册。
+- 已在 Microsoft 365 订阅中注册。
 - 是模拟 Intranet 上的 AD DS 域。
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>第 3 阶段：在 APP1 上安装 Azure AD Connect
@@ -134,7 +134,7 @@ ms.locfileid: "42066380"
 此配置包括： 
   
 - 包含已注册 DNS 域 TESTLAB.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域周期性同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域定期同步到 Microsoft 365 订阅的 Azure AD 租户。
 - TESTLAB  AD DS 域中的 User1 帐户已与 Azure AD 租户同步。
 
 ## <a name="next-step"></a>后续步骤

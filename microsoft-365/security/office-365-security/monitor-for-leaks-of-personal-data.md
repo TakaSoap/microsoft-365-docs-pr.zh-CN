@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9bc56d1de153f1357064d2b3ddada0d0533bc3cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088377"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635156"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -33,13 +33,13 @@ ms.locfileid: "42088377"
 
 在此图中：
 
-- 从 Office 365 数据丢失防护报告入手，它们用于监视 SharePoint Online、OneDrive for Business 和传输中的电子邮件内的个人数据。这些报告为监控个人数据提供了最详细的信息。然而，这些报告并未囊括 Office 365 中的所有服务。
+- 从 Microsoft 365 数据丢失防护报告入手，它们用于监视 SharePoint Online、OneDrive for Business 和传输中的电子邮件内的个人数据。这些报告为监控个人数据提供了最详细的信息。然而，这些报告并未囊括 Office 365 中的所有服务。
 
-- 接下来，使用警报策略和 Office 365 审核日志监视 Office 365 服务中的活动。设置持续监视或搜索审核日志以调查事件。Office 365 审核日志适用于 Office 365 服务：Sway、PowerBI、电子数据展示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理员活动、OneDrive for Business、SharePoint Online、传输中的邮件和静态邮箱。Skype 对话包含在静态邮箱中。
+- 接下来，使用警报策略和审核日志监视服务中的活动。设置持续监视或搜索审核日志以调查事件。审核日志适用于服务：Sway、PowerBI、电子数据展示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理员活动、OneDrive for Business、SharePoint Online、传输中的邮件和静态邮箱。Skype 对话包含在静态邮箱中。
 
-- 最后，使用 Microsoft Cloud App Security 监视其他 SaaS 提供程序中包含敏感数据的文件。即将推出的功能为，通过 Cloud App Security 跨 Azure 信息保护和 Office 使用 Office 365 敏感信息类型和统一标签。可以设置适用于所有 SaaS 应用或特定应用（如 Box）的策略。Cloud App Security 不会发现 Exchange Online 中的文件（包括附加到电子邮件的文件）。
+- 最后，使用 Microsoft Cloud App Security 监视其他 SaaS 提供程序中包含敏感数据的文件。即将推出的功能为，通过 Cloud App Security 跨 Azure 信息保护和 Office 使用敏感信息类型和统一标签。可以设置适用于所有 SaaS 应用或特定应用（如 Box）的策略。Cloud App Security 不会发现 Exchange Online 中的文件（包括附加到电子邮件的文件）。
 
-## <a name="office-365-data-loss-prevention-reports"></a>Office 365 数据丢失防护报告
+## <a name="data-loss-prevention-reports"></a>数据丢失防护报告
 
 创建数据丢失防护 (DLP) 策略后，你需要验证这些策略是否按预期运行，以及是否有助于你保持合规性。借助 Office 365 中的 DLP 报告，可以快速查看 DLP 策略匹配数、替代数或误报数；观察它们随时间推移是呈上升趋势还是下降趋势；以不同的方式筛选报告；以及通过选择图中直线上的点来查看其他详细信息。
 
@@ -65,17 +65,17 @@ DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查�
 
 ![显示 DLP 策略匹配项的报告](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
-## <a name="office-365-audit-log-and-alert-policies"></a>Office 365 审核日志和警报策略
+## <a name="audit-log-and-alert-policies"></a>审核日志和警报策略
 
-Office 365 审核日志包含来自 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Power BI、Sway 和其他 Office 365 服务的事件。
+审核日志包含来自 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Power BI、Sway 和其他服务的事件。
 
-安全中心和合规中心提供两种方法针对 Office 365 审核日志进行监视和报告：
+安全中心和合规中心提供两种方法针对审核日志进行监视和报告：
 
 - 设置警报策略、查看警报和监视趋势：使用安全中心或合规中心中的警报策略和警报仪表板工具。
 
 - 直接搜索审核日志：搜索指定日期范围内的所有事件。也可以根据特定条件（如执行操作的用户、操作或目标对象）筛选结果。
 
-信息安全和合规性团队可以使用这些工具主动审核 Office 365 服务中由最终用户和管理员执行的活动。当特定网站集上发生某些活动时（例如共享已知网站的内容以包含 GDPR 相关信息时），可以配置自动警报以发送电子邮件通知。此操作使这些团队可以跟进用户以确保遵守企业安全策略，或提供其他培训。
+信息安全和合规性团队可以使用这些工具主动审核服务中由最终用户和管理员执行的活动。当特定网站集上发生某些活动时（例如共享已知网站的内容以包含 GDPR 相关信息时），可以配置自动警报以发送电子邮件通知。此操作使这些团队可以跟进用户以确保遵守企业安全策略，或提供其他培训。
 
 信息安全团队还可以搜索审核日志来调查可疑的数据泄露并确定根本原因和泄露的范围。此内置功能有助于遵守 GDPR 条款 33 和 34 的规定，其中要求在特定时间段内向 GDPR 监管机构和数据泄露的数据主体自身提供通知。通常建议在服务内仅将审核日志条目保留 90 天，而许多组织则要求将这些日志保留更长的时间。
 
@@ -87,13 +87,13 @@ Office 365 审核日志包含来自 Exchange Online、SharePoint Online、OneDri
 
 - [在 Office 365 中搜索用户和管理员活动的审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log)（介绍）
 
-- [启用或禁用 Office 365 审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [启用或禁用审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
 - [搜索审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Office 365 审核日志中的属性详细信息](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [审核日志中的详细属性](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -113,9 +113,9 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 
 即将向 Cloud App Security 提供以下属性类型：
 
-- Office 365 敏感信息类型
+- 敏感信息类型
 
-- Office 365 和 Azure 信息保护中的统一标签
+- Microsoft 365 和 Azure 信息保护中的统一标签
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security 仪表板
 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '创建会议室或设备邮箱，使组织中的每个人都能够通过 Outlook 预留供会议或活动使用。 '
-ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 80562901ecc7382ce6e4ff3375b98efd89a991f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361857"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628072"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会议室和设备邮箱
 
-如果你有供所有人使用的会议室、公司车辆或设备，则需要提供一种所有人均可预订这些资源的方法。最佳方法是在 Office 365 中为每个资源创建会议室或设备邮箱。可以为你的一楼会议室、媒体设备或卡车创建一个这样的邮箱。
+如果你有供所有人使用的会议室、公司车辆或设备，则需要提供一种所有人均可预订这些资源的方法。最佳方法是在 Microsoft 365 中为每个资源创建会议室或设备邮箱。可以为你的一楼会议室、媒体设备或卡车创建一个这样的邮箱。
   
 创建会议室或设备邮箱后，公司中的每个人都可以通过 Outlook 进行预订，将其用于会议或活动。了解下面两个选项卡上的“**使用方法**”以及“**设置方法**”。下面是关于会议室和设备邮箱的一些其他常见问题。 
   
@@ -66,7 +66,7 @@ ms.locfileid: "42361857"
   
 2. 选择“**添加**”。
     
-3. 填写会议室或设备字段：<br/>![在 Office 365 中添加会议室邮箱](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. 填写会议室或设备字段：<br/>![在 Microsoft 365 中添加会议室邮箱](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - “**会议室**”或“**设备**”：你要创建的邮箱类型。
     
@@ -105,7 +105,7 @@ ms.locfileid: "42361857"
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>会议室邮箱或设备邮箱是否需要产品许可证？
 
-否。尽管组织中的大多数人需要许可证才能使用 Office 365，但无需为会议室邮箱或设备邮箱分配许可证。
+否。尽管组织中的大多数人需要许可证才能使用 Microsoft 365，但无需为会议室邮箱或设备邮箱分配许可证。
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>是否需要相关人员负责预定会议室或设备？
 

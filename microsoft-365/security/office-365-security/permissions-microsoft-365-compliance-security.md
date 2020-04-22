@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，可以集中管理与安全或合规性相关的所有任务的权限。
-ms.openlocfilehash: 78068a4c6f32dbc53b8fb649c0f27905e0e634ad
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f703a333cf77ebb41f7b72f141cbdc813858ab11
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42230105"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634468"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
 
@@ -52,13 +52,13 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 
 ### <a name="compliance-administrator"></a>合规性管理员
 
-具有此角色的用户有权管理 Microsoft 365 合规中心、Microsoft 365 管理中心、Azure 和 Office 365 安全与合规中心中的合规性相关功能。 这些用户还可以管理 Exchange 管理中心、Teams 和 Skype for Business 管理中心内的所有功能，并可创建适用于 Azure 和 Microsoft 365 的支持票证。
+具有此角色的用户有权管理 Microsoft 365 合规中心、Microsoft 365 管理中心、Azure 和安全与合规中心中的合规性相关功能。 这些用户还可以管理 Exchange 管理中心、Teams 和 Skype for Business 管理中心内的所有功能，并可创建适用于 Azure 和 Microsoft 365 的支持票证。
 
 |**在此服务中...**|**合规性管理员可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合规性中心**](https://compliance.microsoft.com/)|跨 Microsoft 365 服务保护和管理组织数据。 <br/><br/> 管理合规性警报。|
 |[**合规性分数**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|跟踪、分配并验证组织的法规合规性活动。|
-|[**Office 365 安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理数据治理。 <br/><br/> 执行法律和数据调查。 <br/><br/> 管理数据主体请求。|
+|[**安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理数据治理。 <br/><br/> 执行法律和数据调查。 <br/><br/> 管理数据主体请求。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|查看所有 Intune 审核数据。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|拥有只读权限，可以管理警报。 <br/><br/> 可以创建和修改文件策略并允许执行文件管理操作。 <br/><br/> 可以查看数据管理下的所有内置报告。|
 
@@ -70,20 +70,20 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 |:-----|:-----|
 |[**Microsoft 365 合规性中心**](https://compliance.microsoft.com/)|跨 Microsoft 365 服务保护和管理组织数据。 <br/><br/> 管理合规性警报。 <br/><br/> 管理敏感度标签|
 |[**合规性分数**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|跟踪、分配并验证组织的法规合规性活动。|
-|[**Office 365 安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理数据治理。 <br/><br/> 执行法律和数据调查。 <br/><br/> 管理数据主体请求。 <br/><br/> 管理敏感度标签|
+|[**安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理数据治理。 <br/><br/> 执行法律和数据调查。 <br/><br/> 管理数据主体请求。 <br/><br/> 管理敏感度标签|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)（即将推出）|查看所有 Intune 审核数据。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用只读权限查看信息。 <br/>管理警报。 <br/><br/> 创建和修改文件策略并允许执行文件管理操作。 <br/><br/> 查看数据管理下的所有内置报告。|
 
 ### <a name="security-administrator"></a>安全管理员
 
-具有此角色的用户有权管理 Microsoft 365 安全中心、Azure Active Directory Identity Protection、Azure 信息保护和 Office 365 安全与合规中心中与安全相关的功能。
+具有此角色的用户有权管理 Microsoft 365 安全中心、Azure Active Directory 标识保护、Azure 信息保护和安全与合规中心中与安全相关的功能。
 
 |**在此服务中...**|**安全管理员...**|
 |:-----|:-----|
 |[**Microsoft 365 安全中心**](https://security.microsoft.com/)|跨 Microsoft 365 服务监视与安全相关的策略。 <br/><br/>  管理安全威胁和警报。 <br/><br/> 查看报告。 <br/><br/> 管理敏感度标签。|
 |**Identity Protection 中心**|执行“安全读者”角色可以执行的所有操作，此外，还执行所有 Identity Protection 中心操作，但不可重置密码。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|执行“安全读者”角色可执行的所有操作。 <br/><br/> **无法**管理 Azure AD 角色分配或设置。|
-|[**Office 365 安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理安全策略。 <br/><br/> 查看、调查和响应安全威胁 <br/><br/> 查看报告。 <br/><br/> 管理敏感度标签。|
+|[**安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理安全策略。 <br/><br/> 查看、调查和响应安全威胁 <br/><br/> 查看报告。 <br/><br/> 管理敏感度标签。|
 |**Azure 高级威胁防护**|监视和响应可疑安全活动。|
 |**Windows Defender ATP 和 EDR**|分配角色。 <br/><br/> 管理计算机组。 <br/><br/> 配置终结点威胁检测和自动修正。 <br/><br/> 查看、调查并响应警报。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|视图用户、设备、注册、配置和应用程序信息。 <br/><br/> **无法**对 Intune 进行更改。|
@@ -93,29 +93,29 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 
 ### <a name="security-operator"></a>安全操作员
 
-具有此角色的用户可以管理警报，对安全相关的功能具有全局只读访问权限，包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、Privileged Identity Management 中的所有信息，并且能够阅读 Azure Active Directory 登录报告和审核日志，还授予了对 Office 365 安全与合规中心的只读权限。
+具有此角色的用户可以管理警报，对安全相关的功能具有全局只读访问权限，包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、Privileged Identity Management 中的所有信息，并且能够阅读 Azure Active Directory 登录报告和审核日志，还授予了对安全与合规中心的只读权限。
 
 |**在此服务中...**|**安全操作员可以...**|
 |:-----|:-----|
 |[**Microsoft 365 安全中心**](https://security.microsoft.com/)|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查和响应安全警报。|
 |**Identity Protection 中心**（即将支持）|执行“安全读者”角色可执行的所有操作。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|执行“安全读者”角色可执行的所有操作。|
-|[**Office 365 安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查和响应安全威胁|
+|[**安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查和响应安全威胁|
 |**Windows Defender ATP 和 EDR**|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查并响应警报。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|视图用户、设备、注册、配置和应用程序信息。 <br/><br/> **无法**对 Intune 进行更改。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|执行“安全读者”角色可以执行的所有操作，此外，还可以查看和关闭警报。|
 |[**Office 365 服务运行状况**](https://docs.microsoft.com/office365/enterprise/view-service-health)|查看 Office 365 服务的运行状况。|
 
-### <a name="security-reader"></a>安全读者
+### <a name="security-reader"></a>安全读取者
 
-具有此角色的用户对安全相关的功能具有全局只读访问权限，包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、Privileged Identity Management 中的所有信息，并且能够阅读 Azure Active Directory 登录报告和审核日志，还授予了对 Office 365 安全与合规中心的只读权限。
+具有此角色的用户对安全相关的功能具有全局只读访问权限，包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、Privileged Identity Management 中的所有信息，并且能够阅读 Azure Active Directory 登录报告和审核日志，还授予了对安全与合规中心的只读权限。
 
 |**在此服务中...**|**安全读者可以...**|
 |:-----|:-----|
 |[**Microsoft 365 安全中心**](https://security.microsoft.com/)|跨 Microsoft 365 服务查看与安全相关的策略。 <br/><br/> 查看安全威胁和警报。 <br/><br/> 查看报告。|
 |**Identity Protection 中心**|阅读有关安全功能的所有安全报告和设置信息：反垃圾邮件、加密、数据丢失防护 (DLP)、反恶意软件、高级威胁防护 (ATP)、反网络钓鱼和邮件流规则（也称为传输规则）。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|使用只读访问权限查看 Azure AD PIM 中显示的所有信息：Azure AD 角色分配的策略和报告、安全审核以及（以后）Azure AD 角色分配以外的方案的策略数据和报告。 <br/><br/> **无法**注册 Azure AD PIM 或对其进行任何更改。 担任此角色的人员可以在 PIM 门户中或通过 PowerShell 为符合条件的用户激活其他角色（例如，全局管理员或特权角色管理员）。|
-|[**Office 365 安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|查看安全策略。 <br/><br/> 查看和调查安全威胁。 <br/><br/> 查看报告。|
+|[**安全与合规中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|查看安全策略。 <br/><br/> 查看和调查安全威胁。 <br/><br/> 查看报告。|
 |**Windows Defender ATP 和 EDR**|查看和调查警报。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|视图用户、设备、注册、配置和应用程序信息。 <br/><br/> **无法**对 Intune 进行更改。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用只读权限查看信息。 <br/><br/> 管理警报。|
@@ -132,13 +132,13 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 
 ## <a name="managing-roles-in-a-service-instead-of-azure-active-directory"></a>管理服务中的角色，而不是 Azure Active Directory 中的角色
 
-Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色也会显示在他们拥有权限的服务中。 例如，可以在 Office 365 安全与合规中心中看到这些角色。
+Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色也会显示在他们拥有权限的服务中。 例如，可以在安全与合规中心中看到这些角色。
 
-![Office 365 安全与合规中心中的角色](../../media/m365-roles-in-o365-scc.png)
+![安全与合规中心中的角色](../../media/m365-roles-in-o365-scc.png)
 
 ### <a name="breaking-inheritance"></a>中断继承
 
-在 Azure Active Directory 中管理这些角色时，你是在为**所有** Microsoft 365 服务集中管理这些角色，了解这一点非常重要。 然而，在管理特定服务（例如 Office 365 安全与合规中心），所管理的角色**仅**针对特定服务。 服务中角色的分配和权限覆盖授予 Azure Active Directory 角色的任何权限。
+在 Azure Active Directory 中管理这些角色时，你是在为**所有** Microsoft 365 服务集中管理这些角色，了解这一点非常重要。 然而，在管理特定服务（例如安全与合规中心），所管理的角色**仅**针对特定服务。 服务中角色的分配和权限覆盖授予 Azure Active Directory 角色的任何权限。
 
 这可能很有用，例如，如果一个人被分配为安全管理员角色，那么他就无权管理事件。 但是，你可以使用 Windows Defender 高级威胁防护中的权限来为该服务中的事件管理提供特定的权限。
 
@@ -148,7 +148,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色也会
 
 |**Microsoft 365 服务**|**角色信息**|
 |:-----|:-----|
-|Office 365 和 Microsoft 365 业务计划中的管理员角色|[Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)|
+|Office 365 和 Microsoft 365 商业版计划中的管理员角色|[Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)|
 |Azure Active Directory (Azure AD) 和 Azure AD Identity Protection|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure 高级威胁防护|[Azure ATP 角色组](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 信息保护|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
@@ -157,7 +157,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色也会
 |Intune|[Intune 基于角色的访问控制](https://docs.microsoft.com/intune/role-based-access-control)|
 |托管桌面|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Cloud App Security|[基于角色的访问控制](https://docs.microsoft.com/cloud-app-security/manage-admins)|
-|Office 365 安全与合规中心|[Office 365 管理员角色](https://docs.microsoft.com/office365/SecurityCompliance/permissions-in-the-security-and-compliance-center)|
+|安全与合规中心|[Microsoft 365 管理员角色](https://docs.microsoft.com/office365/SecurityCompliance/permissions-in-the-security-and-compliance-center)|
 |Privileged Identity Management|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |安全功能分数|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |SharePoint Online|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <br/><br/> [关于 Office 365 中的 SharePoint 管理员角色](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)|

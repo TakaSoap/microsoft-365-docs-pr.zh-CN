@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 可以使用组来自动管理某些管理任务。
-ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 047d733dbd586f094612c579f2b1685562c58ed1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633490"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637032"
 ---
 # <a name="step-5-use-groups-for-management"></a>步骤 5：使用组进行管理
 
@@ -36,7 +36,7 @@ ms.locfileid: "42633490"
 用户可以请求安全组中的成员身份，该请求将转到组所有者而不是 IT 管理员。这可将组成员身份的日常控制委托给团队、项目或业务所有者，他们了解组的商业用途，可更好地管理其成员身份。
 
 >[!Note]
->自助服务组管理仅适用于 Azure AD 安全和 Office 365 组。 不适用于启用邮件的组、通讯组列表或已从本地 Active Directory 域服务 (AD DS) 同步的任何组。
+>自助服务组管理仅适用于 Azure AD 安全和 Microsoft 365 组。 不适用于启用邮件的组、通讯组列表或已从本地 Active Directory 域服务 (AD DS) 同步的任何组。
 >
 
 有关详细信息，请参阅[配置 Azure AD 组进行自助服务管理的说明](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)。
