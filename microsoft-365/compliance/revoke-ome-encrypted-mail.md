@@ -1,5 +1,5 @@
 ---
-title: 撤销使用 Office 365 高级邮件加密进行加密的电子邮件
+title: 撤销由高级邮件加密加密的电子邮件
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,21 +15,21 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 作为 Office 365 管理员，您可以吊销使用 Office 365 高级邮件加密进行加密的某些电子邮件。
-ms.openlocfilehash: 0e3ef031e61ed8bc7dd450e7ef61b6b7f41152c6
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+description: 作为管理员，您可以吊销使用 Office 365 高级邮件加密进行加密的某些电子邮件。
+ms.openlocfilehash: 271aa1b3644983907c341cf7f9ad6d526597ad59
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333699"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626488"
 ---
-# <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>撤销使用 Office 365 高级邮件加密进行加密的电子邮件
+# <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>撤销由高级邮件加密加密的电子邮件
 
-电子邮件吊销作为 Office 365 高级邮件加密的一部分提供。 Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 e5 （非盈利员工定价）、Office 365 企业版 E5 （非盈利员工定价）和 Office 365 教育版 A5 中。 如果您的组织有一个不包含 Office 365 高级邮件加密的订阅，则可以使用 microsoft 365 E5 兼容性 SKU 附加项购买 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 高级适用于 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 Sku 的合规性 SKU 外接程序。
+电子邮件吊销作为 Office 365 高级邮件加密的一部分提供。 Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 e5 （非盈利员工定价）、Office 365 企业版 E5 （非盈利员工定价）和 Office 365 教育版 A5 中。 如果您的组织有一个不包含 Office 365 高级邮件加密的订阅，则可以使用 microsoft 365 E5 兼容性 SKU 附加 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Microsoft 365 高级合规性 SKU 外接程序（microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 Sku 购买它。
 
 本文是有关[Office 365 邮件加密](ome.md)的更多系列文章的一部分。
 
-如果使用 Office 365 高级邮件加密对邮件进行了加密，并且您是 Office 365 管理员，则可以在特定条件下撤销邮件。 本文介绍了可以进行吊销的情况以及执行操作的方法。
+如果使用 Office 365 高级邮件加密对邮件进行了加密，并且您是 Microsoft 365 管理员，则可以在特定条件下撤销邮件。 本文介绍了可以进行吊销的情况以及执行操作的方法。
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>您可以撤销的加密电子邮件
 
@@ -45,7 +45,7 @@ ms.locfileid: "42333699"
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>如何撤销加密电子邮件
 
-Office 365 管理员按照以下常规步骤撤销符合条件的加密电子邮件：
+Microsoft 365 管理员按照以下常规步骤撤销符合条件的加密电子邮件：
 
 - 获取电子邮件的邮件 ID。
 - 验证您是否可以撤消邮件。
@@ -63,7 +63,7 @@ Office 365 管理员按照以下常规步骤撤销符合条件的加密电子邮
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>使用安全&amp;合规性中心中的邮件跟踪来标识要吊销的电子邮件的邮件 ID
 
-1. [在 Office 365 安全 & 合规中心中使用新邮件跟踪](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)，按发件人或收件人搜索电子邮件。
+1. [在安全 & 合规中心中使用新邮件跟踪](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)，按发件人或收件人搜索电子邮件。
 
 2. 找到电子邮件后，选择它以显示**邮件跟踪详细信息**窗格。 展开**详细信息**以查找邮件 ID。
 
@@ -81,7 +81,7 @@ Office 365 管理员按照以下常规步骤撤销符合条件的加密电子邮
 
 若要验证是否可以使用 Windows PowerShell 撤消特定的电子邮件，请完成以下步骤。
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 运行 OMEMessageStatus cmdlet，如下所示：
 
@@ -94,7 +94,7 @@ Office 365 管理员按照以下常规步骤撤销符合条件的加密电子邮
      ```text
      Subject        IsRevocable
      -------        -----------
-     “Test message” True
+     "Test message" True
      ```
 
 ### <a name="step-3-revoke-the-mail"></a>第 3 步： 撤销邮件
@@ -103,13 +103,13 @@ Office 365 管理员按照以下常规步骤撤销符合条件的加密电子邮
 
 使用安全&amp;合规中心撤销邮件
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，连接到安全 & 合规性中心。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，连接到安全 & 合规性中心。
 
 2. 在**加密报告**中，在邮件的**详细信息**表中，选择 "**撤消邮件**"。
 
 若要使用 Windows PowerShell 吊销电子邮件，请使用 OMEMessageRevocation cmdlet。
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 运行 OMEMessageRevocation cmdlet，如下所示：
 

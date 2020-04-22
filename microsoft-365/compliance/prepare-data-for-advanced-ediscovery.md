@@ -1,5 +1,5 @@
 ---
-title: 准备用于 Office 365 高级电子数据展示的数据
+title: 准备高级电子数据展示的数据
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,29 +15,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: '了解如何使用 Microsoft 365 安全&amp;合规中心来准备 office 365 数据，以便使用 Office 365 高级电子数据展示进行分析。 '
-ms.openlocfilehash: 44ccb6250e28e0fa75f6d1a037236a100fca102c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解如何使用安全&amp;合规中心准备数据以使用高级电子数据展示进行分析。 '
+ms.openlocfilehash: edc92aeac0c76e64d1d2dcfd6ceae08d766b9397
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557862"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626656"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>为高级电子数据展示准备数据（经典）
 
 本主题介绍如何在高级电子数据展示（经典）中将内容搜索的结果加载到案例中。 
   
 > [!IMPORTANT]
-> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布退出 Office 365 高级电子数据展示，也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0 1.0*。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。  
+> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布退休了高级电子数据展示，也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0 1.0*。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。  
   
-## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步骤1：为高级电子数据展示准备 Office 365 数据
+## <a name="step-1-prepare-data-for-advanced-ediscovery"></a>步骤1：为高级电子数据展示准备数据
 
 若要使用高级电子数据展示分析数据，可以使用在 Microsoft 365 &amp;安全合规性中心（在 Microsoft 365 安全&amp;合规中心的**内容搜索**页中列出）中运行的内容搜索结果或与电子数据展示事例关联的搜索（在安全&amp;合规性中心的**电子数据展示**页中列出）。 
   
-有关在高级电子数据展示中准备搜索结果以供分析的详细步骤，请参阅[Prepare search results For Office 365 Advanced ediscovery](prepare-search-results-for-advanced-ediscovery.md)。
+有关在高级电子数据展示中准备分析搜索结果的详细步骤，请参阅[为高级电子数据展示准备搜索结果](prepare-search-results-for-advanced-ediscovery.md)。
   
 > [!NOTE]
-> 如果您的数据在 Office 365 外部，并且想要将其导入到 Office 365 以便在高级电子数据展示中准备和分析它，请参阅在 Office 365 中将[PST 文件导入到 office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)和[存档第三方数据](https://go.microsoft.com/fwlink/p/?linkid=716918)的概述。 
+> 如果你的数据在 Microsoft 365 之外，并且想要将其导入到 Microsoft 365，以便在高级电子数据展示中准备和分析它，请参阅将[PST 文件导入到 Microsoft 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)和[存档第三方数据](https://go.microsoft.com/fwlink/p/?linkid=716918)的概述。 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>步骤2：将搜索结果数据加载到高级电子数据展示中的案例
 
@@ -45,7 +45,7 @@ ms.locfileid: "42557862"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用您的工作或学校帐户登录。
     
 3. 在安全与合规中心内，依次单击“搜索和调查”**** 和“电子数据展示”****，以显示组织中的案件集列表。 
     

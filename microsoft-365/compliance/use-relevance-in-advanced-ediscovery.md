@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 高级电子数据展示中的相关性模块
+title: 在高级电子数据展示中使用相关性模块
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: '了解 Office 365 高级电子数据展示中的相关性模块，包括用于培训和文件审阅的工作流和指南以及步骤。  '
-ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解高级电子数据展示中的相关性模块，包括用于培训和文件审阅的工作流和指南以及步骤。  '
+ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557630"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626388"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>在高级电子数据展示中使用相关性模块（经典）
 
@@ -124,7 +124,7 @@ ms.locfileid: "42557630"
     
   - 暗示：此时不需要相关培训。
     
-虽然高级电子数据展示引导您完成整个过程，但建议在不同阶段执行后续步骤，它还允许您在选项卡和页面之间导航，并做出选择，以解决可能与您的个人案例、问题或其他方面相关的情况。文档审阅过程。 
+虽然高级电子数据展示引导您完成整个过程，但建议在不同的阶段进行后续步骤，它还允许您在选项卡和页面之间导航，并做出选择，以解决可能与您的个人案例、问题或文档审阅过程相关的情况。 
   
 可以接受或替代高级电子数据展示后续步骤处理选项。 如果要执行除建议的下一步之外的步骤，请单击对话框中展开的问题显示中列出的**下一步**，单击下一步旁边的 "**修改**" 按钮，然后选择另一个 "下一步" 选项。 
   

@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: c2fad2726b7e923f871c0307f17f28ea3f99b1bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179143"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637944"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -89,7 +89,7 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 我们一直在努力将新功能添加到 Microsoft 365 合规性中心和解决方案目录中。 如果在导航区域中找不到特定的解决方案，则当解决方案在订阅中可用时，它将可供访问。
 
-如果你正在寻找现有的合规性解决方案，但它在 Microsoft 365 合规性中心中不可用，则可以转到[https://protection.office.com](https://protection.office.com)，随时访问现有 Office 365 安全性和合规性中心中的解决方案。 或者，可以单击 Microsoft 365 合规性中心左侧导航栏中的 "**更多资源**" 选项卡，然后选择 "Office 365 安全性和合规性中心卡"。  
+如果你正在寻找现有的合规性解决方案，但它在 Microsoft 365 合规性中心中不可用，则可以转到&amp; [https://protection.office.com](https://protection.office.com)，随时访问现有安全合规性中心中的解决方案。 或者，可以单击 Microsoft 365 合规性中心左侧导航栏中的 "**更多资源**" 选项卡，然后选择 "Office 365 安全性和合规性中心卡"。  
 
 ## <a name="next-steps"></a>后续步骤
 

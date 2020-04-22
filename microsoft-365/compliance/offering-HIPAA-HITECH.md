@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 52752c31ae52fa75a3a50dbd6a4aa27605f6d921
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228508"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637996"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任（HIPAA） & 高科技行为
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>HIPAA 和高科技法案概述
 
-健康保险便携性和责任法案（HIPAA）是一种美国医疗保健法律，它建立了对单独可识别的健康信息的使用、披露和保护的要求。 它适用于已覆盖的实体（医生的办公室、医院、健康保险公司和其他医疗保健公司），可访问患者的受保护健康状态信息（PHI）以及处理 PHI 的业务伙伴（如云服务和 IT 提供商）代表它们。 （大多数已覆盖实体不会自行执行声明或数据处理等功能; 它们依赖于业务相关的功能来执行此操作。）
+健康保险便携性和责任法案（HIPAA）是一种美国医疗保健法律，它建立了对单独可识别的健康信息的使用、披露和保护的要求。 它适用于已覆盖的实体（医生的办公室、医院、健康保险公司和其他医疗保健公司），并能够访问患者的受保护健康状态信息（PHI），以及用于代表自己处理 PHI 的业务伙伴（如云服务和 IT 提供商）。 （大多数已覆盖实体不会自行执行声明或数据处理等功能; 它们依赖于业务相关的功能来执行此操作。）
 
 法律规定了在四个常规方面使用和分发 PHI：
 
@@ -43,7 +43,7 @@ ms.locfileid: "42228508"
 
 ## <a name="microsoft-and-hipaa-and-the-hitech-act"></a>Microsoft 和 HIPAA 和高科技法案
 
-HIPAA 法规要求涵盖的实体及其业务关联—在这种情况下，Microsoft 何时将服务（包括云服务）提供给涉及的实体—进入合同以确保这些业务关联能够充分保护 PHI。 这些合同或 Baa 可阐明和限制业务助理处理 PHI 的方式，并规定每个团体对 HIPAA 和高科技法案中规定的安全性和隐私设置的遵守情况。在 BAA 之后，Microsoft 客户（即 "已覆盖的实体"）可以使用其服务来处理和存储 PHI。
+HIPAA 管理法规要求涵盖的实体及其业务关联—在这种情况下，Microsoft 在将服务（包括云服务）提供给涉及的实体时，请进入合同以确保这些商业协会能够充分保护 PHI。 这些合同或 Baa 可阐明和限制业务助理处理 PHI 的方式，并规定每个团体对 HIPAA 和高科技法案中规定的安全性和隐私设置的遵守情况。在 BAA 之后，Microsoft 客户（即 "已覆盖的实体"）可以使用其服务来处理和存储 PHI。
 
 目前，HIPAA 或高科技法案不符合官方认证。 但是，BAA 下所涵盖的这些 Microsoft 服务已完成由 Microsoft ISO/IEC 27001 认证的经过资格鉴定的独立审计员的审核。
 
@@ -51,13 +51,13 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 
 若要了解 Microsoft 云如何帮助客户支持 HIPAA 和高科技要求，请访问[Microsoft 客户案例](https://customers.microsoft.com)。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - 云应用安全
 - Microsoft Health Bot 服务
 - Microsoft Stream
-- Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Office 365 中型企业客户的高级和本地支持。
+- Microsoft 专业服务：适用于 Microsoft 365 商业版的 Azure、Dynamics 365、Intune 和中型企业和企业客户的高级和内部部署
 - [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Intune
@@ -84,7 +84,7 @@ Microsoft 为合格的公司或其供应商提供了涵盖在范围内的 Micros
 
 **与 Microsoft 进行 BAA 是否会确保我的组织符合 HIPAA 和高科技法案？**
 
-否。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
+不正确。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
 
 **Microsoft 是否可以修改我的组织的 BAA？**
 
@@ -110,7 +110,7 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 - [HIPAA Omnibus 规则](https://aka.ms/HIPAA-omnibus)（最终管理法规-修改 HIPAA 规则）
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [了解 Azure 的 HIPAA 合规性](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)（5月19日，2016）
 - [Azure HIPAA 实现指南](https://aka.ms/azure-hipaa-guide)

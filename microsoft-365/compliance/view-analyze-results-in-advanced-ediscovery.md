@@ -1,5 +1,5 @@
 ---
-title: 查看 Office 365 高级电子数据展示中的分析结果
+title: 查看高级电子数据展示中的分析结果
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: '了解在 Office 365 高级电子数据展示中查看分析过程结果的位置，包括所显示的任务选项的定义。  '
-ms.openlocfilehash: adee00d2b7826827cc14f4ca945952f4892511a1
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解在高级电子数据展示中查看分析过程结果的位置，包括所显示的任务选项的定义。  '
+ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557620"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626358"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>查看高级电子数据展示中的分析结果（经典）
 

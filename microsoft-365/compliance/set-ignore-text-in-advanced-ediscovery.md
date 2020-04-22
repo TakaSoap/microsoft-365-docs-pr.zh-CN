@@ -1,5 +1,5 @@
 ---
-title: 设置用于在 Office 365 高级电子数据展示中进行分析的 "忽略文本" 选项
+title: 设置用于在高级电子数据展示中进行分析的 "忽略文本" 选项
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: '了解在使用 Office 365 高级电子数据展示中的分析和处理模块时，如何定义要忽略特定文本的规则。  '
-ms.openlocfilehash: 0253ce619901e5fec34da234e005f2c3b6ece090
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解在使用高级电子数据展示中的分析和处理模块时，如何定义要忽略特定文本的规则。  '
+ms.openlocfilehash: cd425c71c06074b5d12851dd126692c914b95489
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557772"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631249"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>设置用于在高级电子数据展示中进行分析的 "忽略文本" 选项（经典）
 

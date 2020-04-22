@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '了解如何使用产品密钥续订 Microsoft 365 for business 订阅，并打开或关闭定期记帐。 '
-ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636555"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707651"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 for business
 
@@ -48,11 +48,10 @@ ms.locfileid: "43636555"
 
 ::: moniker range="o365-worldwide"
 
-
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
 2. 选择想要为其管理定期计费的订阅。
- 
+
 3. 在 "**帐单**" 下的 "**续订打开**" 或 "**到期**日" 旁边，选择 "**编辑**"。
 
 4. 在 "**定期记帐设置**" 窗格中，选择 "**关闭**" 以关闭它。 如果定期付费已关闭，请选择 "**每月**" 或 "**一次**" 以将其打开。
@@ -68,11 +67,7 @@ ms.locfileid: "43636555"
 
 ::: moniker range="o365-germany"
   
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
-
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
-
-    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择想要为其管理定期计费的订阅。
  
@@ -91,14 +86,10 @@ ms.locfileid: "43636555"
 
 ::: moniker range="o365-21vianet"
   
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
-
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
-
-    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>页。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选择想要为其管理定期计费的订阅。
- 
+
 3. 若要启用**定期计费**，请将切换切换到 **"开**"。
 
     ![已启用定期付费的订阅卡的特写。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)

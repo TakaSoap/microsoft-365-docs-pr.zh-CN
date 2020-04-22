@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 734621d9017c21822043ff8c1beb82044ec8c860
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: f04c6bf41e9c09455773c419efec0b7b4e8ca5ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628098"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637986"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康信息信任联盟（HITRUST）常见安全框架（CSF）
 
@@ -39,7 +39,7 @@ HITRUST 提供了三个确定性或评估级别：自我评估、CSF 验证和 C
 
 [下载 Microsoft Azure HITRUST 客户责任矩阵（CRM）蓝图9.0 版 d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - Intune
@@ -49,7 +49,7 @@ HITRUST 提供了三个确定性或评估级别：自我评估、CSF 验证和 C
 
 Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
-- [Azure HITRUST 证书颁发信](https://aka.ms/AzureHiTrustLetterofCertification)
+- [Azure HITRUST 证书颁发信](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 - [Office 365 HITRUST 证书颁发信](https://aka.ms/O365HITRUSTcertification)
 
 ## <a name="accelerate-your-deployment-of-hipaahitrust-solutions-on-azure"></a>在 Azure 上加快对 HIPAA/HITRUST 解决方案的部署
@@ -66,7 +66,7 @@ Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
 ## <a name="collaborate-with-microsoft-in-the-hitrust-shared-responsibility-program"></a>在 HITRUST 共享责任计划中与 Microsoft 协作
 
-通过在 HITRUST MyCSF 工具中使用 Azure 的完全继承或共享责任控件预填充你的评估，加快为 Microsoft Azure 上的解决方案实现 HITRUST 合规性，并在你的计算机上与 Microsoft 协作因素.
+通过在 HITRUST MyCSF 工具中使用 Azure 的完全继承或共享责任控件预填充评估，加快对 Microsoft Azure 中托管解决方案的 HITRUST 合规性，并在评估上与 Microsoft 进行协作，从而加快实现。
 
 [了解更多](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 
@@ -74,18 +74,18 @@ Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
 **我可以使用 Azure HITRUST 合规性来构建组织的认证过程吗？**
 
-能。 如果企业需要对部署在 Microsoft 服务上的实施进行 HITRUST 认证，则可以在进行合规性评估时在 Azure HITRUST 合规性上构建。 不过，您需要负责评估您自己的组织中的 HITRUST 要求和控件。
+可以。 如果企业需要对部署在 Microsoft 服务上的实施进行 HITRUST 认证，则可以在进行合规性评估时在 Azure HITRUST 合规性上构建。 不过，您需要负责评估您自己的组织中的 HITRUST 要求和控件。
 
 **如何获取 HITRUST 证书的副本？**
 
-您可以下载[Azure](https://aka.ms/AzureHiTrustLetterofCertification)和[Office 365](https://aka.ms/O365HITRUSTcertification)证书的一份副本。
+您可以下载[Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)和[Office 365](https://aka.ms/O365HITRUSTcertification)证书的一份副本。
 
 **Office 365 的范围内服务有哪些？**
 
-HITRUST CSF 认证的范围内的服务包括 Exchange Online 存档、Exchange Online Protection、Exchange Online、Skype for Business、管理中心、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、MicrosoftOffice 365 多租户云和 Office 365 GCC 中的团队、Office 专业增强版。
+HITRUST CSF 认证的范围内的服务包括 Exchange Online 存档、Exchange Online Protection、Exchange online、Skype for business、管理中心、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 团队、Office 专业增强版 Office 365 多租户版和 Office 365 GCC。
 
 > [!NOTE]
-> Office 365 专业增强版支持对各种云服务（如漫游设置、许可和 OneDrive 消费者云存储）的访问，并可能在将来能够访问其他云服务。 漫游设置和许可支持 HITRUST 的标准。 OneDrive 消费者云存储不支持，并且其他可通过 Office 365 专业增强版访问的云服务以及 Microsoft 将来可能会提供的云服务也可能不支持这些标准。 *
+> 适用于企业的 Microsoft 365 应用程序支持对各种云服务（如漫游设置、许可和 OneDrive 消费者云存储）的访问，并可能在将来能够访问其他云服务。 漫游设置和许可支持 HITRUST 的标准。 OneDrive 消费者云存储不支持，并且 Microsoft 可通过 Microsoft 365 应用程序访问的其他云服务也可能会在将来提供，并支持这些标准。 *
 
 **为什么某些 Office 365 服务不在此认证的范围内？**
 
@@ -106,7 +106,7 @@ HITRUST CSF 认证的范围内的服务包括 Exchange Online 存档、Exchange 
 ## <a name="resources"></a>资源
 
 - [HITRUST 联盟](https://hitrustalliance.net/)
-- [HITRUST CSF 8。1](https://hitrustalliance.net/csf-license-agreement/)
+- [HITRUST CSF 9。3](https://hitrustalliance.net/csf-license-agreement/)
 - [了解和利用 CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [了解有关 HITRUST 共享责任计划的详细信息](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

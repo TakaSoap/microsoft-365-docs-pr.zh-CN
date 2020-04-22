@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中运行报告
+title: 在高级电子数据展示中运行报告
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
-description: '了解如何运行报告，然后在 Office 365 高级电子数据展示中下载其 .csv 文件。  '
-ms.openlocfilehash: 1ca01fc0ab77ec0a727029c3f8ef680a56f9c5c6
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解如何运行报告，然后在高级电子数据展示中下载其 .csv 文件。  '
+ms.openlocfilehash: 9da35e21de23e4773130f5aa87b16fe18d044140
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557832"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626478"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>在高级电子数据展示中运行报告（经典）
 

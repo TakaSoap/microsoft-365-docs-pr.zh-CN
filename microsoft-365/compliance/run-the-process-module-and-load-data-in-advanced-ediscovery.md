@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中运行 Process module 和 load data
+title: 在高级电子数据展示中运行流程模块并加载数据
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: '了解如何使用 Office 365 安全&amp;合规中心访问 Office 365 高级电子数据展示，并运行 Process module for a case。  '
-ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解如何使用安全&amp;合规中心来访问高级电子数据展示，并运行进程模块的情况。  '
+ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557822"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626468"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>在高级电子数据展示（经典）中运行 Process module 和 load data
 
@@ -41,7 +41,7 @@ ms.locfileid: "42557822"
   
 执行以下步骤以运行进程。
   
-1. [打开 "Office 365 安全&amp;合规中心"](go-to-the-securitycompliance-center.md) 。 
+1. [打开 "安全&amp;合规中心"](go-to-the-securitycompliance-center.md) 。 
     
 2. 转到**搜索&amp;调查** \> **电子数据展示**，然后单击 "**转到高级电子数据展示**"。
     

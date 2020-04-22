@@ -1,5 +1,5 @@
 ---
-title: 审核共享以查找与外部用户共享的资源
+title: 在审核日志中使用共享审核
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,17 +19,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核，以确定与组织外部的用户共享的资源。 '
-ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在审核日志中使用共享审核来确定与组织外部的用户共享的资源。 '
+ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069231"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626378"
 ---
-# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>审核共享以查找与外部用户共享的资源
+# <a name="use-sharing-auditing-in-the-audit-log"></a>在审核日志中使用共享审核
 
-共享是 SharePoint Online 和 OneDrive for business 中的关键活动，并在 Office 365 组织中广泛使用。 管理员可以使用 Office 365 审核日志中的共享审核来确定如何在组织中使用共享。 
+共享是 SharePoint Online 和 OneDrive for business 中的关键活动，并在组织中广泛使用。 管理员可以使用审核日志中的共享审核来确定如何在组织中使用共享。 
   
 ## <a name="the-sharepoint-sharing-schema"></a>SharePoint 共享架构
 
@@ -41,13 +41,13 @@ ms.locfileid: "42069231"
 
 - **TargetUserOrGroupName：** 存储与之共享资源的目标用户或组的 UPN 或名称（上一示例中的用户 B）。 
 
-除了 Office 365 审核日志架构（如用户、操作和日期）以外的其他属性，这两个字段还可以详细说明*哪些*用户共享了*哪些*用户与*谁*共享了哪些*资源。* 
+除了审核日志架构中的其他属性（如用户、操作和日期）之外，这两个字段还可以详细说明*哪些*用户共享了哪些用户与*谁*共享了*哪些**资源。* 
   
 还有另一个架构属性，对共享情景很重要。 当您导出审核日志搜索结果时，导出的 CSV 文件中的 " **AuditData** " 列存储有关共享事件的信息。 例如，当用户与其他用户共享网站时，可以通过将目标用户添加到 SharePoint 组来实现此目的。 **AuditData**列捕获此信息，以便为管理员提供上下文。 有关如何分析**AuditData**列中的信息的说明，请参阅[步骤 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) 。
 
 ## <a name="sharepoint-sharing-events"></a>SharePoint 共享事件
 
-当用户 *（用户）* 要与其他用户共享资源（*目标*用户）时，将定义共享。 与外部用户共享资源的审核记录（组织外部的用户，在组织的 Azure Active Directory 中没有来宾帐户）由以下事件标识，这些事件记录在 Office 365 中。审核日志：
+当用户 *（用户）* 要与其他用户共享资源（*目标*用户）时，将定义共享。 与外部用户共享资源的审核记录（组织外部的用户，在组织的 Azure Active Directory 中没有来宾帐户）由以下事件标识，这些事件记录在审核日志中：
 
 - **SharingInvitationCreated：** 您的组织中的用户尝试与外部用户共享资源（可能是网站）。 这将导致向目标用户发送外部共享邀请。 此时不授予对资源的访问权限。
 
@@ -93,11 +93,11 @@ ms.locfileid: "42069231"
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>步骤1：搜索共享事件并将结果导出到 CSV 文件
 
-第一步是在 Office 365 审核日志中搜索共享事件。 有关搜索审核日志的详细信息（包括所需的权限），请参阅[在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
+第一步是在审核日志中搜索共享事件。 有关搜索审核日志的详细信息（包括所需的权限），请参阅[在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用您的工作或学校帐户登录。
     
 3. 在安全与合规中心的左侧窗格中，单击“**搜索**”  > “**审核日志搜索**”。
     

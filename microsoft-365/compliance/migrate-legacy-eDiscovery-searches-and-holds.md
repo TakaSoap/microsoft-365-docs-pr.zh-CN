@@ -12,31 +12,31 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: f53d9cbf719b0e16749c9ea1dcae2533f8c48e50
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: bb2bccc6689a3739bcb1f3736771cf81b7c467bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091377"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637934"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>将旧式电子数据展示搜索和保留迁移到 Microsoft 365 合规性中心
 
-Microsoft 365 合规性中心提供了改进的电子数据展示使用体验，其中包括：更高的可靠性、更佳的性能以及针对电子数据展示工作流量身定制的多种功能，包括用于按事务组织内容的案例，审阅集可用于查看内容和分析，以帮助精选数据以供查看，如接近重复的分组、电子邮件线程、主题分析和预测编码。
+Microsoft 365 合规性中心提供了改进的电子数据展示使用体验，其中包括：更高可靠性、更好的性能以及针对电子数据展示工作流量身定制的许多功能，包括对内容进行整理的案例，审阅设置以查看内容和分析，以帮助精选数据进行审核，如接近重复的分组、电子邮件线程、主题分析和预测编码。
 
 为帮助客户利用新的和改进的功能，本文提供了有关如何将就地电子数据展示搜索和保留从 Exchange 管理中心迁移到 Microsoft 365 合规中心的基本指南。
 
 > [!NOTE]
 > 由于存在许多不同的方案，本文提供了在 Microsoft 365 合规性中心中将搜索和保留转换为核心电子数据展示事例的一般指导。 不总是需要使用电子数据展示事例，而是通过允许您分配权限来控制对组织中的电子数据展示事例的访问权限，从而添加额外的安全层。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-- 您必须是 Office 365 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本文中所述的 PowerShell 命令。 此外，您还必须是 Exchange 管理中心中 "发现管理" 角色组的成员。
+- 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本文中所述的 PowerShell 命令。 此外，您还必须是 Exchange 管理中心中 "发现管理" 角色组的成员。
 
 - 本文提供了有关如何创建电子数据展示保留的指南。 保留策略将通过异步过程应用于邮箱。 创建电子数据展示保留时，必须同时创建 CaseHoldPolicy 和 New-caseholdrule，否则将不会创建保留，并且不会将内容位置置于保留状态。
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-office-365-security--compliance-center-powershell"></a>步骤1：连接到 Exchange Online PowerShell 和 Office 365 安全 & 合规性中心 PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>步骤1：连接到 Exchange Online PowerShell 和安全性 & 合规性中心 PowerShell
 
-第一步是连接到 Exchange Online PowerShell 和 Office 365 安全 & 合规性中心 PowerShell。 您可以复制以下脚本，将其粘贴到 PowerShell 窗口中，然后运行它。 系统将提示你输入要连接到的组织的凭据。 
+第一步是连接到 Exchange Online PowerShell 和安全 & 合规性中心 PowerShell。 您可以复制以下脚本，将其粘贴到 PowerShell 窗口中，然后运行它。 系统将提示你输入要连接到的组织的凭据。 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -77,7 +77,7 @@ $search | FL
 ![使用 New-mailboxsearch 进行单个搜索的 PowerShell 输出示例](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> 此示例中就地保留的持续时间不定（*ItemHoldPeriod：无限制*）。 这对于电子数据展示和法律调查方案来说是典型的。 如果保留期的值与不定的值不同，原因可能是由于保留正在用于保留方案中的内容。 我们建议您使用[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)和[New-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)的电子数据展示 cmdlet 来保留方案，而不是在 Office 365 安全性 & 合规性中心 PowerShell 中使用它来保留内容。 使用这些 cmdlet 的结果将类似于使用**CaseHoldPolicy**和**new-caseholdrule**，但您可以指定保留期和保留操作，例如，在保留期过期后删除内容。 此外，使用保留 cmdlet 不需要将保留挂起与电子数据展示事例相关联。
+> 此示例中就地保留的持续时间不定（*ItemHoldPeriod：无限制*）。 这对于电子数据展示和法律调查方案来说是典型的。 如果保留期的值与不定的值不同，原因可能是由于保留正在用于保留方案中的内容。 我们建议您使用[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)和[New-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)的安全电子数据展示 cmdlet 来保留方案，而不是在安全 & 合规中心 PowerShell 中使用电子数据展示 cmdlet 来保留内容。 使用这些 cmdlet 的结果将类似于使用**CaseHoldPolicy**和**new-caseholdrule**，但您可以指定保留期和保留操作，例如，在保留期过期后删除内容。 此外，使用保留 cmdlet 不需要将保留挂起与电子数据展示事例相关联。
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>步骤4：在 Microsoft 365 合规性中心中创建事例
 

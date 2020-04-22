@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 DLP 报告，您可以快速查看 DLP 策略匹配、覆盖或误报的数量;查看它们是按时间趋势上升还是下降;以不同的方式筛选报表;并在图表上的某一行上选择一个点，以查看其他详细信息。
-ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6ff8237b1471f10aff3abc40715af7fe538a211c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068743"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626288"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
-创建数据丢失防护（DLP）策略后，您需要验证它们是否按预期工作，并帮助您保持合规性。 在 Office 365 安全&amp;合规中心中使用 DLP 报告，您可以快速查看：
+创建数据丢失防护（DLP）策略后，您需要验证它们是否按预期工作，并帮助您保持合规性。 通过安全&amp;合规性中心中的 DLP 报告，您可以快速查看：
   
 - **DLP 策略匹配**此报告显示一段时间内 DLP 策略匹配项的计数。 您可以按日期、位置、策略或操作筛选报告。 您可以使用此报告执行以下操作： 
     
@@ -87,9 +87,9 @@ ms.locfileid: "42068743"
 
 若要使用安全 &amp; 合规中心的大多数 cmdlet，你需要执行以下操作：
   
-1. [使用远程 PowerShell 连接到 Office 365 安全 &amp; 合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接&amp;到安全合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. 使用这些[Office 365 安全&amp;合规中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一个
+2. 使用这些[安全&amp;合规中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一个
     
 但是，DLP 报告需要从 Office 365（包括 Exchange Online）提取数据。 因此，DLP 报告的 cmdlet 在 Exchange Online Powershell 中可用，而不在安全&amp;合规中心 powershell 中。 因此，若要使用适用于 DLP 报告的 cmdlet，你需要执行以下操作：
   

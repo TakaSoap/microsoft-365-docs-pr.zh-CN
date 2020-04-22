@@ -1,5 +1,5 @@
 ---
-title: 适用于 Office 365 安全电子邮件门户的隐私声明
+title: 安全电子邮件门户的隐私声明
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 上次更新时间：5月2017
-ms.openlocfilehash: 23707d22e52935b372a90a42ec323d8f64262894
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597711"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626626"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>适用于 Office 365 安全电子邮件门户的隐私声明
+# <a name="privacy-statement-for-secure-email-portal"></a>安全电子邮件门户的隐私声明
 
 上次更新时间：5月2017
   
@@ -37,7 +37,7 @@ ms.locfileid: "41597711"
   
 在解密过程中，收到的加密邮件不会被新的 OME 功能门户存储;它不会随时在新的 OME 功能门户之外进行传输。
   
-在某些情况下，新的 OME 功能门户可能会收集有关新 OME 功能的使用和性能的数据点（例如，查看加密邮件的频率、所使用的浏览器或应用以及遇到的任何错误），可能会在中进行分析为提高此和其他 Microsoft 应用、产品或服务的质量、安全性和完整性而进行聚合。 此信息不用于识别、联系或瞄准你的广告。
+在某些情况下，新的 OME 功能门户可能会收集有关新 OME 功能的使用和性能的数据点（例如，查看加密的邮件的频率、所使用的浏览器或应用以及遇到的任何错误），这可能会在聚合中进行分析以提高此和其他 Microsoft 应用、产品的质量、安全性和完整性或服务。 此信息不用于识别、联系或瞄准你的广告。
   
 ## <a name="for-more-information"></a>详细信息
 

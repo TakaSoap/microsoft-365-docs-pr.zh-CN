@@ -20,35 +20,34 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: 了解如何取消 Microsoft 365 for business 或 Microsoft 365 试用版或付费订阅。
-ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何取消 Microsoft 365 for business 试用版或付费订阅。
+ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636591"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708079"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
-*资格：* 如果向用户分配的许可证数少于25个，则可以随时在管理中心中在线取消 Microsoft 365 for business 试用版或付费订阅。 如果为用户分配了25个以上的许可证，请[致电支持部门以取消订阅](../../admin/contact-support-for-business-products.md)。
+*资格：* 如果分配给用户的许可证少于25个，可以随时在 Microsoft 365 管理中心中在线取消 Microsoft 365 for business 试用版或付费订阅。 如果为用户分配了25个以上的许可证，请[致电支持部门以取消订阅](../../admin/contact-support-for-business-products.md)。
 
 *退款：* 任何按比例贷项都将在下一个帐单周期内返回给您。
 
 > [!NOTE]
-> 如果您具有对同一产品的多个订阅（如 Office 365 企业版 E3），则取消其中一个将不会影响其他订阅中已购买的许可证或服务。
+> 如果你具有对同一产品的多个订阅（如 Microsoft 365 商业高级版），则取消其中一个将不会影响其他订阅中购买的许可证或服务。
 
 ## <a name="steps-to-cancel-your-subscription"></a>取消订阅的步骤
 
-如果您添加了自己的域名以与订阅一起使用，则必须在取消订阅之前删除该域。 有关详细信息，请参阅[从 Office 365 中删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
+如果您添加了自己的域名以与订阅一起使用，则必须在取消订阅之前删除该域。 有关详细信息，请参阅[删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ::: moniker range="o365-worldwide"
-
 
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
 2. 找到要取消的订阅，在 "**设置" & "操作**" 下，选择 "**取消订阅**"。
 
-3. 查看重要日期，提供有关您要取消的原因的反馈，然后选择 "**取消订阅**"。
+3. 查看重要日期，提供有关取消原因的反馈，然后选择 "**取消订阅**"。
 
     你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在取消付费 Microsoft 365 for business 订阅时可预期的功能，请参阅[我的 microsoft 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
 
@@ -64,7 +63,7 @@ ms.locfileid: "43636591"
 
     ![关闭 "更多操作" 菜单。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. 查看重要日期，提供有关您要取消的原因的反馈，然后选择 "**取消订阅**"。
+4. 查看重要日期，提供有关取消原因的反馈，然后选择 "**取消订阅**"。
 
     你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在取消付费 Microsoft 365 for business 订阅时可预期的功能，请参阅[我的 microsoft 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
 
@@ -80,7 +79,7 @@ ms.locfileid: "43636591"
 
     ![关闭 "更多操作" 菜单。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. 查看重要日期，提供有关您要取消的原因的反馈，然后选择 "**取消订阅**"。
+4. 查看重要日期，提供有关取消原因的反馈，然后选择 "**取消订阅**"。
 
     你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在取消付费 Microsoft 365 for business 订阅时可预期的功能，请参阅[我的 microsoft 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
 
@@ -109,11 +108,11 @@ ms.locfileid: "43636591"
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>更改您的域名称服务器记录（如果需要）
 
-如果设置自定义域，则添加了 DNS 记录，以便域可与 Office 365 服务配合使用。 在删除您的域之前，请务必在 DNS 主机上更新 DNS 记录，如域 MX 记录。
+如果设置自定义域，则添加了 DNS 记录，以便域可以与 Microsoft 365 服务配合使用。 在删除您的域之前，请务必在 DNS 主机上更新 DNS 记录，如域 MX 记录。
 
 例如，更改 DNS 主机上的 MX 记录。 发送到你的域的电子邮件将阻止进入你的 Microsoft 地址，而是转到你的新电子邮件提供商。 （MX 记录确定为您的域发送电子邮件的位置。）
 
-- 如果您的 nameserver （NS）记录[指向 Office 365 名称服务器](../../admin/setup/add-domain.md)，则在您将 NS 记录更改为指向新的 DNS 主机（请参阅步骤2）之前，对 MX 记录所做的更改不会生效。
+- 如果您的 nameserver （NS）记录[指向 Microsoft 365 名称服务器](../../admin/setup/add-domain.md)，则在您将 NS 记录更改为指向新的 DNS 主机（请参阅步骤2）之前，对 MX 记录所做的更改不会生效。
 
 - 在更新 MX 记录之前，让您的用户知道您计划切换其电子邮件的日期，以及您计划使用的新电子邮件提供商。 此外，如果您的用户要将其现有的 Microsoft 电子邮件移动到新的提供商，他们必须执行额外的步骤。
 
@@ -121,11 +120,11 @@ ms.locfileid: "43636591"
 
 #### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>更新您的域 MX 和其他 DNS 记录（如果使用的是自定义域）
 
-如果您在设置域时将您的 nameserver （NS）记录切换到 Office 365，则必须在您计划使用的 DNS 主机上设置或更新 MX 记录和其他 DNS 记录，然后将您的 NS 记录更改为该 DNS 主机。
+如果您在设置域时将 nameserver （NS）记录切换到 Microsoft 365，则必须在您计划使用的 DNS 主机上设置或更新 MX 记录和其他 DNS 记录，然后将您的 NS 记录更改为该 DNS 主机。
 
 如果您在设置域时没有切换 NS 记录，则当您更改 MX 记录时，您的邮件会立即开始转到新的地址。
 
-有关详细信息，请参阅[Office 365 如何管理我的 DNS 记录？](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records)。 若要更改 NS 记录，请参阅[从 Office 365 删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
+有关详细信息，请参阅[Microsoft 365 管理我的 DNS 记录的方式？](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records)。 若要更改 NS 记录，请参阅[删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ### <a name="save-your-data"></a>保存数据
 
@@ -137,7 +136,7 @@ ms.locfileid: "43636591"
 
 ### <a name="uninstall-office-optional"></a>卸载 Office （可选）
 
-如果取消了你的订阅，但未将用户移动到包含 Office 的其他订阅，Office 365 将在缩减功能模式下运行。 当发生这种情况时，用户只能读取和打印文档，Office 365 应用程序将显示未[授权的产品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 若要避免任何混淆，请要求用户卸载计算机上的 [Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
+如果取消了你的订阅，但未将用户移动到包含 Microsoft 365 的其他订阅，Microsoft 365 将在缩减功能模式下运行。 当发生这种情况时，用户只能读取和打印文档，Microsoft 365 应用程序将显示未[授权的产品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 若要避免任何混淆，请要求用户卸载计算机上的 [Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
 
 ## <a name="related-articles"></a>相关文章
 

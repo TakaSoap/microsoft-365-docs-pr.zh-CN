@@ -17,17 +17,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括可满足常见合规性要求的现成策略模板，例如，帮助您保护受美国健康保险业法案（HIPAA）、美国格雷姆-里奇-比利雷法案（GLBA）或美国爱国法案的敏感信息。本主题列出了所有策略模板，它们查找的敏感信息类型，以及默认条件和操作的具体内容。
-ms.openlocfilehash: 6b87f8c0746611e8ae8cee917e27545ffe5e4373
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 安全&amp;合规中心中的数据丢失防护（DLP）包括可满足常见合规性要求的现成策略模板，例如，帮助您保护受美国健康保险业法案（HIPAA）、美国格雷姆-里奇-比利雷法案（GLBA）或美国爱国法案的敏感信息。本主题列出了所有策略模板，它们查找的敏感信息类型，以及默认条件和操作的具体内容。
+ms.openlocfilehash: 622a613fd0f43a7ad23c25ab52460181a8931e7f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597169"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626268"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP 策略模板包含的内容
 
-Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括可满足常见合规性要求的现成策略模板，例如，帮助您保护受美国健康保险业法案（HIPAA）、美国格雷姆-里奇-比利雷法案（GLBA）或美国爱国法案的敏感信息。本主题列出了所有策略模板，它们查找的敏感信息类型，以及默认条件和操作的具体内容。 本主题不包括每个策略模板的配置方式的各项细节；此主题转为，为您提供了充足的信息来帮助您确定哪个模板是您开始实施方案的最佳模版。 请记住，您可以自定义这些策略模板以满足您的特定要求。
+安全&amp;合规中心中的数据丢失防护（DLP）包括可满足常见合规性要求的现成策略模板，例如，帮助您保护受美国健康保险业法案（HIPAA）、美国格雷姆-里奇-比利雷法案（GLBA）或美国爱国法案的敏感信息。本主题列出了所有策略模板，它们查找的敏感信息类型，以及默认条件和操作的具体内容。 本主题不包括每个策略模板的配置方式的各项细节；此主题转为，为您提供了充足的信息来帮助您确定哪个模板是您开始实施方案的最佳模版。 请记住，您可以自定义这些策略模板以满足您的特定要求。
   
 ## <a name="australia-financial-data"></a>澳大利亚财务数据
 

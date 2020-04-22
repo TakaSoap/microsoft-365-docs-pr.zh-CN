@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态来手动更改订阅。
-ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636579"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707627"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -43,7 +43,7 @@ ms.locfileid: "43636579"
 若要继续进行手动更改，请阅读[第2步：](#step-2-buy-a-new-subscription)在本主题中购买新订阅。
 
 > [!IMPORTANT]
-> 如果要将数据相关服务的计划更改为与当前计划（降级）少的计划，则需要手动备份任何要保留的数据。 有关详细信息，请参阅[在切换 O365 for business 计划之前备份数据](back-up-data-before-switching-plans.md)。
+> 如果要将数据相关服务的计划更改为与当前计划（降级）少的计划，则需要手动备份任何要保留的数据。 有关详细信息，请参阅[在更改计划前备份数据](back-up-data-before-switching-plans.md)。
 
 ## <a name="step-2-buy-a-new-subscription"></a>步骤2：购买新订阅
 
@@ -62,7 +62,7 @@ OR
 
 2. **验证这两个订阅是否都已列出并处于活动状态**您要将用户移出的订阅和要将用户移动到的订阅必须一起列出。 如果在首次检查时新订阅不在此处，请稍后重试。 检查两个订阅是否都处于活动状态。 [新订阅未列出或未处于活动状态](#the-new-subscription-isnt-listed-or-isnt-active)。
 
-3. **检查是否有针对每个用户的足够许可证**每个用户都需要一个与其订阅相匹配的许可证。 因此，如果要将10个用户移动到 Office 365 企业版 E5，则需要确保十个许可证可用。
+3. **检查是否有针对每个用户的足够许可证**每个用户都需要一个与其订阅相匹配的许可证。 因此，如果要将十个用户移动到 Microsoft 365 商业高级版，则需要确保十个许可证可用。
 
 4. **是否需要新订阅的更多许可证？**
    转到 "**产品 & 服务**" 页面并[购买更多许可证](../licenses/buy-licenses.md)。

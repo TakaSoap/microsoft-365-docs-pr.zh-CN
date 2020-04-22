@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
-ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631057"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708495"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -60,9 +60,11 @@ ATP 报告包括以下内容：
 
 ![显示 "分解依据" 的威胁 Protection 状态报告下拉列表。](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-这些视图为您提供了通过按钮单击（在电子邮件 > 网络钓鱼、电子邮件 > 恶意软件和内容 > 恶意软件视图）中导出的选项。 可以在 Excel 中打开导出到您的计算机上的聚合数据。
+这些视图为您提供通过按钮单击（在**电子邮件** \> **网络钓鱼**、**电子邮件** \> **恶意软件**和**内容** \> **恶意软件**视图）中导出的选项。 可以在 Excel 中打开导出到您的计算机上的聚合数据。
 
 ![此图显示了导出为恶意软件视图菜单中的一个选项、"创建计划" 和 "请求报告"。](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**注意**：可以为**网络钓鱼**和**恶意软件**导出的最大条目数就是10000。 如果导出视图，则仅导出最新的10000项。
 
 概述和电子邮件视图将在处理小时数（而不是24小时）内显示信息（请求重新）。 此处的提高速度是一个清晰的信号）！
 

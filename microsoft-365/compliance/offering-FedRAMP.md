@@ -1,5 +1,5 @@
 ---
-title: 联邦风险和授权管理计划（FedRAMP）
+title: 联邦风险和授权管理项目 (FedRAMP)
 description: Microsoft 被授予美国联邦风险和授权管理计划 P-ATOs 和 ATOs。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb667cdf13ed8ed6777f454b8fa3e21342f90272
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: d5a6ee0b5ca5c9ba1fbf83f1076940a10134a9f6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222084"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583589"
 ---
-# <a name="federal-risk-and-authorization-management-program-fedramp"></a>联邦风险和授权管理计划（FedRAMP）
+# <a name="federal-risk-and-authorization-management-program-fedramp"></a>联邦风险和授权管理项目 (FedRAMP)
 
 ## <a name="fedramp-overview"></a>FedRAMP 概述
 
-我们建立了美国联邦风险和授权管理计划（FedRAMP），以提供在联邦信息安全管理法案中评估、监控和授权云计算产品和服务的标准化方法（FISMA），并加速联邦机构采用安全云解决方案。
+我们建立了美国联邦风险和授权管理程序（FedRAMP），以提供一种标准化的方法来评估、监控和授权联邦信息安全管理法案（FISMA）下的云计算产品和服务，并加速联邦机构采用安全云解决方案。
 
 管理办公室和预算现在要求所有执行联邦机构使用 FedRAMP 来验证云服务的安全性。 （其他机构也采用了它，因此它也对公共部门的其他领域有用。）美国国家标准和技术协会（NIST）800-53 设置标准，而 FedRAMP 是证明云服务提供程序（CSP）符合该标准的计划。
 
@@ -35,9 +35,9 @@ ms.locfileid: "42222084"
 
 ## <a name="microsoft-and-fedramp"></a>Microsoft 与 FedRAMP
 
-Microsoft 的政府云服务，包括 Azure 政府、Office 365 美国政府和 Dynamics 365 政府满足美国联邦风险和授权管理计划（FedRAMP）的苛刻要求，从而支持美国联邦机构利用 Microsoft 云的成本节约和严格的安全性。
+Microsoft 的政府云服务（包括 Azure 政府、Office 365 美国政府版和 Dynamics 365 政府）满足美国联邦风险和授权管理计划（FedRAMP）的苛刻要求，使美国联邦机构能够从 Microsoft 云的成本节约和严格的安全性中获益。
 
-Microsoft 政府云服务为公共部门客户提供了一系列符合 FedRAMP 的服务，并提供了强健的指导和实施工具，包括 Azure 安全性和 FedRAMP 的合规性蓝图，这有助于自动化部署以及在 FedRAMP 环境中配置 Azure 资源。
+Microsoft 政府云服务为公共部门客户提供了一系列符合 FedRAMP 的服务，并提供了强健的指导和实现工具，包括 Azure Security and FedRAMP 的合规性蓝图，这有助于在 FedRAMP 环境中自动部署和配置 Azure 资源。
 
 了解 FEDRAMP 在 Microsoft 云上的优势：[下载 FEDRAMP 合规性 backgrounder](https://aka.ms/fedramp-backgrounder)
 
@@ -65,7 +65,7 @@ Azure 在中等影响级别维护 ATO。 （Azure 是第一个具有基础结构
 - Office 365 （企业和企业计划）和 Office 365 美国政府在检查器的运行状况和人体学服务（DHHS）办公室的中等影响级别都有一个 FedRAMP 机构 ATO。 Office 365 美国政府是第一个用于获取此授权的基于云的电子邮件和协作服务。
 - 任何希望使用 O365 美国政府防御的客户都可以利用 DISA P-ATO 来生成代理商 ATO，以记录其对 O365 的接受。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 与 Azure 政府](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -107,7 +107,7 @@ FISMA 是一种联邦法律，要求我们的联邦机构及其合作伙伴仅�
 
 **我可以在代理的授权过程中使用 Microsoft 合规性吗？**
 
-是。 您可以使用 Microsoft 云服务的认证，作为任何需要联邦政府机构 ATO 的计划或计划的基础。 但是，您需要在这些服务之外为自己的组件实现自己的授权。
+可以。 您可以使用 Microsoft 云服务的认证，作为任何需要联邦政府机构 ATO 的计划或计划的基础。 但是，您需要在这些服务之外为自己的组件实现自己的授权。
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
@@ -120,7 +120,3 @@ FISMA 是一种联邦法律，要求我们的联邦机构及其合作伙伴仅�
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [FedRAMP 安全评估框架](https://go.microsoft.com/fwlink/p/?linkid=2099507)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf)。

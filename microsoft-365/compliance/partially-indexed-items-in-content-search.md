@@ -1,5 +1,5 @@
 ---
-title: 处理 Office 365 内容搜索中的部分索引项
+title: 内容搜索中的部分索引项
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '了解 Exchange 和 SharePoint 中的未编制索引项目，您可以通过 Security & 合规性中心在内容搜索运行中加入未编制索引的项目。 '
-ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551223"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626676"
 ---
-# <a name="partially-indexed-items-in-content-search-in-office-365"></a>处理 Office 365 内容搜索中的部分索引项
+# <a name="partially-indexed-items-in-content-search"></a>内容搜索中的部分索引项
 
-从 Office 365 中的安全性 & 合规性中心运行的内容搜索会在运行搜索时自动在估计的搜索结果中包含部分索引项目。 部分索引项目是指 SharePoint 和 OneDrive for business 网站上的 Exchange 邮箱项目和文档，因为某些原因未完全编制搜索索引。 在 Exchange 中，部分索引项目通常包含一个文件类型无法编制索引的文件，该文件将附加到电子邮件中。 以下是无法将项目编入索引以进行搜索的一些其他原因，在运行搜索时，这些项目作为部分索引项目返回： 
+从安全 & 合规中心运行的内容搜索在运行搜索时，会自动在估计的搜索结果中包含部分索引的项目。 部分索引项目是指 SharePoint 和 OneDrive for business 网站上的 Exchange 邮箱项目和文档，因为某些原因未完全编制搜索索引。 在 Exchange 中，部分索引项目通常包含一个文件类型无法编制索引的文件，该文件将附加到电子邮件中。 以下是无法将项目编入索引以进行搜索的一些其他原因，在运行搜索时，这些项目作为部分索引项目返回： 
   
 - 文件类型是索引无法识别或不支持的文件类型。
     
@@ -47,9 +47,9 @@ ms.locfileid: "43551223"
 - 文件具有密码保护。
     
 > [!NOTE]
-> 大多数 Office 365 组织的内容数量少于1%，而按部分索引的大小少于12%。 卷和大小之间区别的原因是，较大的文件包含无法完全编制索引的内容的可能性较高。 
+> 大多数组织的内容数量少于1%，而按部分索引的大小少于12%。 卷和大小之间区别的原因是，较大的文件包含无法完全编制索引的内容的可能性较高。 
   
-若要进行法律调查，你的组织可能需要查看部分索引的项目。 您还可以指定在将搜索结果导出到本地计算机时，或者在使用 Office 365 高级电子数据展示准备分析结果时是否包含部分索引的项目。 有关详细信息，请参阅[在 Office 365 电子数据展示中调查部分索引项](investigating-partially-indexed-items-in-ediscovery.md)。
+若要进行法律调查，你的组织可能需要查看部分索引的项目。 您还可以指定在将搜索结果导出到本地计算机时，或者在使用高级电子数据展示准备分析结果时是否包含部分索引的项目。 有关详细信息，请参阅[在电子数据展示中调查部分索引项目](investigating-partially-indexed-items-in-ediscovery.md)。
   
 ## <a name="file-types-not-indexed-for-search"></a>文件类型未编入索引以供搜索
 

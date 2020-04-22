@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中查看流程模块结果
+title: 在高级电子数据展示中查看进程模块结果
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: '了解如何查找在 Office 365 高级电子数据展示中运行的进程模块的结果，包括任务状态和过程摘要。  '
-ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解如何查找在高级电子数据展示中运行的进程模块的结果，包括任务状态和过程摘要。  '
+ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557600"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626308"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>在高级电子数据展示中查看进程模块结果（经典）
 

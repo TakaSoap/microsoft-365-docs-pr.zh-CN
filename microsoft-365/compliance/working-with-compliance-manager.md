@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是基于工作流的免费风险评估工具。 使用它来跟踪、分配和验证与 Microsoft 产品相关的法规遵从性活动。
-ms.openlocfilehash: aaae5f1123872367ad98466833f9e06210bfb652
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 2a2c0b9311062da1269f7b56c926ced9e038627f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626228"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
 > [!IMPORTANT]
-> Microsoft 合规性管理器是一个仪表板和管理工具，提供了有关数据保护和合规性的摘要 stature 以及改进数据保护和合规性的建议。 合规性管理器中提供的客户操作是建议。 在实现之前，你的组织可以评估这些建议在其各自的法规环境中的有效性。 在合规性管理器中找到的建议不应解释为合规性保证。
+> Microsoft 合规性管理器是一个仪表板和管理工具，提供了有关数据保护和合规性的摘要 stature 以及改进数据保护和合规性的建议。 合规性管理器中提供的客户操作是建议。 在实现之前，你的组织可以评估这些建议在其各自的法规环境中的有效性。 合规性管理器中提供的建议不应解释为合规性保证。
 
 ## <a name="access-compliance-manager"></a>Access 合规性管理器
 
@@ -93,7 +93,7 @@ ms.locfileid: "43142657"
 
 **注意：** 只有全局管理员才能打开或关闭所有操作的自动更新。 合规性管理器管理员可以为单个操作启用自动更新，而不是全局执行所有操作。
 
-## <a name="groups"></a>Groups
+## <a name="groups"></a>组
 
 组是允许您组织评估的容器，并在评估之间共享具有相同或相关的客户托管控件的常见信息和工作流任务。
 
@@ -274,7 +274,7 @@ ms.locfileid: "43142657"
 
 - 实现详细信息
 - 测试计划 & 其他信息
-- Documents
+- 文档
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>将信息从现有评估复制到新评估
   

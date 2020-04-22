@@ -1,5 +1,5 @@
 ---
-title: 内幕风险管理入门
+title: 内部风险管理入门
 description: 在组织中配置内幕风险管理。
 keywords: Microsoft 365，内幕风险管理，风险管理，合规性
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 86aa29d0c271869eb1939b8a6a8dfb004e35d2cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097186"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637480"
 ---
-# <a name="get-started-with-insider-risk-management"></a>内幕风险管理入门
+# <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
 使用内部风险管理策略确定风险的活动和管理工具，以便对组织中的风险警报执行操作。 完成以下步骤以设置系统必备并配置内幕风险管理策略。
 
@@ -39,7 +39,7 @@ ms.locfileid: "43097186"
 
 必须为内幕风险管理策略中包括的用户分配上述许可证之一。
 
-如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅中，或注册 Microsoft 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
+如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有订阅或注册 Microsoft 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 ## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>步骤1（必需）：为内部人员风险管理启用权限
 
@@ -49,7 +49,7 @@ ms.locfileid: "43097186"
 
 | **角色组** | **角色权限** |
 | :---- | :---------------- |
-| **内幕风险管理** | 使用此角色组可在单个组中管理组织的内幕风险管理。 通过添加指定管理员、分析师和调查人员的所有用户帐户，您可以在单个组中配置内幕风险管理权限。 此角色组包含所有内幕风险管理权限角色。 这是快速开始使用 "内幕风险管理" 的最简单方法，非常适合于不需要为单独的用户组定义单独权限的组织。|
+| **内部风险管理** | 使用此角色组可在单个组中管理组织的内幕风险管理。 通过添加指定管理员、分析师和调查人员的所有用户帐户，您可以在单个组中配置内幕风险管理权限。 此角色组包含所有内幕风险管理权限角色。 这是快速开始使用 "内幕风险管理" 的最简单方法，非常适合于不需要为单独的用户组定义单独权限的组织。|
 | **内幕风险管理管理员** | 使用此角色组最初配置内幕风险管理和更高版本，以便将内幕风险管理员与定义的组分离。  此角色组中的用户可以创建、读取、更新和删除内幕风险管理策略、全局设置和角色组分配。 |
 | **内幕风险管理分析师** | 使用此组可将权限分配给将充当内幕风险案例分析人员的用户。 此角色组中的用户可以访问所有内幕风险管理警报、案例和通知模板。 他们无法访问内幕风险内容浏览器。 |
 | **内幕风险管理调查人员** | 使用此组可将权限分配给将充当内部人员风险数据调查人员的用户。 在所有情况下，此角色组中的用户都可以访问所有内幕风险管理警报、案例、通知模板和内容资源管理器。 |
@@ -60,7 +60,7 @@ ms.locfileid: "43097186"
 
 1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 组织中登录使用管理员帐户凭据。 "" "" "" ""
 
-2. 在 Microsoft Office 365 安全与合规中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
+2. 在 "安全&amp;合规性中心" 中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
 3. 选择要向其添加用户的 "内幕风险管理" 角色组，然后选择 "**编辑角色组**"。
 
@@ -72,11 +72,11 @@ ms.locfileid: "43097186"
 
 7. 选择 "**保存**" 将用户添加到角色组。 选择 "**关闭**" 完成这些步骤。
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>步骤2（必需）：启用 Office 365 审核日志
+## <a name="step-2-required-enable-the-audit-log"></a>步骤2（必需）：启用审核日志
 
 内幕风险管理对在策略中配置的用户见解和活动使用审核日志。 审核日志是与内幕风险管理策略关联的所有活动的摘要，也是策略更改的任何时间的摘要。
 
-有关启用审核的分步说明，请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。 启用审核后，会显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 有关使用审核日志的详细信息，请参阅[Search the audit log](search-the-audit-log-in-security-and-compliance.md)。
+有关启用审核的分步说明，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 启用审核后，会显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 有关使用审核日志的详细信息，请参阅[Search the audit log](search-the-audit-log-in-security-and-compliance.md)。
 
 ## <a name="step-3-optional-configure-prerequisites-for-templates"></a>步骤3（可选）：配置模板的先决条件
 

@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Microsoft 365 中的多重身份验证，以及对其进行设置时需要遵循的步骤。
-ms.openlocfilehash: c68fdb5c1a144c6bfe1161d95e1d6808461e2456
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 035a79c9db44990dbce09de540e3e483b3cea8df
+ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627700"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43665664"
 ---
 # <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>为 Microsoft 365 部署规划多重身份验证
 
 多重身份验证 (MFA) 是一种身份验证方法，要求使用多个验证方法，并向用户登录和交易添加第二层安全。 它的工作方式是要求包含用户帐户密码之外的信息的附加验证步骤，如：
   
-- 随机生成的密码
+- 发送到智能手机的随机生成的验证代码
     
 - 电话联络
     
@@ -39,9 +39,9 @@ ms.locfileid: "43627700"
     
 - 生物识别设备 
     
-## <a name="multi-factor-authentication-in-microsoft-365"></a>Microsoft 365 中的多因素身份验证
+## <a name="mfa-in-microsoft-365"></a>Microsoft 365 中的 MFA
 
-Microsoft 365 使用多重身份验证来帮助提供额外的安全性，并通过 Microsoft 365 管理中心进行管理。 Microsoft 365 提供了以下 Azure 多重身份验证功能子集作为订阅的一部分： 
+Microsoft 365 使用 MFA 帮助提供额外的安全性，并通过 Microsoft 365 管理中心进行管理。 Microsoft 365 提供了以下[Azure 多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)功能子集作为订阅的一部分： 
   
 - 为最终用户启用和强制进行 MFA 的能力
     
@@ -49,23 +49,22 @@ Microsoft 365 使用多重身份验证来帮助提供额外的安全性，并通
     
 - 使用电话联络作为第二身份验证因素
     
-- 使用短消息服务 (SMS) 消息作为第二身份验证因素
+- 将短信服务（SMS）短信用作第二身份验证因素
     
 - 非浏览器客户端的应用程序密码（例如，Microsoft Lync 2013 通信软件）
     
 - 身份验证电话联络期间的默认 Microsoft 问候语
     
-有关新增功能的完整列表，请参阅 [Azure 多重身份验证版本比较](https://go.microsoft.com/fwlink/?LinkId=506927)。通过购买 Azure 多重身份验证服务，可始终获得完整功能。 
+有关添加的功能的完整列表，请参阅[Azure 多因素身份验证](https://go.microsoft.com/fwlink/?LinkId=506927)。 你始终可以通过购买[Azure 多重身份验证许可证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-licensing)获取完整功能。 
   
-你可以获取不同的功能子集，具体取决于你是使用单一登录还是使用 Active Directory 联合身份验证服务（AD FS）的仅限云部署的 Microsoft 365 或混合设置。 
+您将获得不同的功能子集，具体取决于您是使用仅限云的标识（其中的用户帐户在 Microsoft 365 中存在），还是使用单一登录和 Active Directory 联合身份验证服务（AD FS）的混合设置。 
   
 |**您在哪里管理 Microsoft 365？**|**MFA 第二因素选项**|
 |:-----|:-----|
-|仅云  <br/> |Azure Active Directory MFA（文本或电话联络）  <br/> |
-|本地托管的混合设置  <br/> | 如果在本地管理用户身份，有以下几种选择：  <br/>  物理或虚拟智能卡 (AD FS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677)（AD FS 的模块）  <br/>  Azure AD MFA  <br/> |
+|仅云  <br/> | Azure 多因素身份验证（文本或电话呼叫）  <br/> |
+|本地托管的混合设置  <br/> | 如果在本地管理用户身份，有以下几种选择：  <br/> -物理或虚拟智能卡（AD FS）  <br/> -Azure 多重身份验证（用于 AD FS 的模块）  <br/>  -Azure 多重身份验证  <br/> |
    
-  
-下图演示更新的 Office 2013 设备应用（用于 Windows）如何使用户能够使用 MFA 登录。Office2013 设备应用通过使用 [Active Directory 身份验证库 (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684) 支持多重身份验证。Azure AD 托管用户可登录的网页。标识提供程序可以是 Azure AD 或联合身份提供程序，如 AD FS。联合用户的身份验证执行以下步骤：
+Office 2013 设备应用通过使用[Active Directory 身份验证库（ADAL）](https://go.microsoft.com/fwlink/p/?LinkId=526684)支持 MFA。 Azure Active Directory （Azure AD）托管用户可在其中登录的网页。 标识提供程序可以是 Azure AD 或联合身份提供程序，如 AD FS。 联合用户的身份验证执行以下步骤：
   
 1. Azure AD 将用户重定向到由组织的标识提供程序托管的登录网页。 标识提供程序由用户登录名中指定的域来确定。
     
@@ -122,18 +121,20 @@ Sor 详细信息，请参阅[有关新式验证 wiki 文章的常见问题解答
 
 若要为你的订阅启用 MFA，请按照以下步骤操作：
   
-1. 如果需要，[为 Windows 设备上的 Office 2013 启用新式验证](enable-modern-authentication.md)。
+1. 如果需要： 
+
+  - [为 Windows 设备上的 Office 2013 启用新式验证](enable-modern-authentication.md)。
     
-  - 使用第三方目录服务设置 Azure MFA。
+  - 使用第三方目录服务设置 Azure 多重身份验证。
     
     有关可接受此程序的特定标识提供程序的信息，请参阅[使用 Azure 多重身份验证和第三方 VPN 解决方案的高级方案](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。 
     
-2. [设置适用于 Microsoft 365 的多重身份验证](set-up-multi-factor-authentication.md)
+2. [为 Microsoft 365 设置 MFA](set-up-multi-factor-authentication.md)。
     
-3. 通知各个用户如何通过 MFA 登录：[使用两步验证登录 Microsoft 365](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)。
+3. 通知各个用户如何通过 MFA 进行登录。 请参阅[使用 MFA 登录 Microsoft 365](https://support.office.com/en-us/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)。
 
 > [!IMPORTANT]
-> 如果已为用户启用 Azure AD MFA，并且这些用户拥有运行 Office 2013 但未启用新式验证的设备，则他们将需要在这些设备上使用应用密码。有关应用密码以及应在何时、何处和如何使用的详细信息，可访问此处进行了解：[用于 Azure 多重身份验证的应用密码](https://go.microsoft.com/fwlink/p/?LinkId=528178)
+> 如果已为您的用户启用了 Azure 多重身份验证，并且这些设备具有运行 Office 2013 的任何设备，而这些设备未启用新式验证，则需要在这些设备上使用 AppPasswords。 若要详细了解 AppPasswords 以及应使用它们的时间/位置/使用方式，可参阅以下内容：[使用 Azure 多重身份验证的应用密码](https://go.microsoft.com/fwlink/p/?LinkId=528178)。
   
 ## <a name="faq"></a>常见问题
 
@@ -145,7 +146,7 @@ Sor 详细信息，请参阅[有关新式验证 wiki 文章的常见问题解答
   
  **Azure 多重身份验证疑难解答：**
   
-请参阅 [Azure MFA 疑难解答](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues)。
+请参阅[对 Azure 多重身份验证进行故障排除](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues)。
   
 [使用 AD FS 时，如何解决 Office 2013 新式验证的登录问题](https://support.microsoft.com/kb/3052203/)
   

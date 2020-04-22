@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 邮件加密为组织创建敏感信息类型策略
+title: 使用邮件加密为您的组织创建敏感的信息类型策略
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 摘要：敏感信息类型的 Office 365 邮件加密策略。
-ms.openlocfilehash: a3767fb0f9fe5e565c49db4f9da94d75a3cee8a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a36ab68eb649c84a46fa96de8ee400632c5c1d26
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601789"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626870"
 ---
-# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>使用 Office 365 邮件加密为组织创建敏感信息类型策略
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用邮件加密为您的组织创建敏感的信息类型策略
 
-您可以使用 Exchange 邮件流规则或 Office 365 数据丢失防护（DLP）来创建包含 Office 365 邮件加密的敏感信息类型策略。 若要创建 Exchange 邮件流规则，可以使用 Exchange 管理中心（EAC）或 PowerShell。
+您可以使用 Exchange 邮件流规则或数据丢失防护（DLP）创建使用 Office 365 邮件加密的敏感信息类型策略。 若要创建 Exchange 邮件流规则，可以使用 Exchange 管理中心（EAC）或 PowerShell。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>使用 EAC 中的邮件流规则创建策略
 
@@ -34,7 +34,7 @@ ms.locfileid: "41601789"
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>使用 PowerShell 中的邮件流规则创建策略
 
-使用在 Office 365 组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。 使用 Get-irmconfiguration 和 New-transportrule cmdlet 创建策略。
+使用组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。 使用 Get-irmconfiguration 和 New-transportrule cmdlet 创建策略。
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>使用 PowerShell 创建的邮件流规则示例
 
@@ -57,21 +57,21 @@ New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -S
 
 ## <a name="how-recipients-access-attachments"></a>收件人如何访问附件
 
-在 Office 365 对邮件进行加密后，收件人在访问并打开其加密电子邮件时可以不受限制地访问附件。
+在 Microsoft 加密邮件后，收件人在访问并打开其加密电子邮件时可以不受限制地访问附件。
 
 ## <a name="to-prepare-for-this-change"></a>准备进行此更改
 
 您可能需要更新任何适用的最终用户文档和培训材料，以便为组织中的人员提供此更改的准备。 根据需要，与您的用户共享这些 Office 365 邮件加密资源：
 
 - [在 Outlook for PC 中发送、查看和回复加密邮件](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Office 365 Essentials 视频： Office 邮件加密](https://youtu.be/CQR0cG_iEUc)
+- [Microsoft 365 Essentials 视频： Office 邮件加密](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>在审核日志中查看这些更改
 
-Office 365 审核此活动并使其可用于 Office 365 管理员。 该操作是 "New-transportrule" 和安全 & 合规性中心的审核日志搜索中的示例审核条目的代码片段如下所示：
+Microsoft 365 审核此活动并使其可供管理员使用。 该操作是 "New-transportrule" 和安全 & 合规性中心的审核日志搜索中的示例审核条目的代码片段如下所示：
 
 ```text
-*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications”…etc.*
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"…etc.*
 ```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>禁用或自定义敏感信息类型策略

@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 电子数据展示调查部分索引项
+title: 在电子数据展示中调查部分索引项目
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: 部分索引项目（也称为未编制索引项）是 SharePoint 和 OneDrive 网站上的 Exchange 邮箱项目和文档，由于某些原因未完全为内容搜索编制索引。 在本文中，您可以了解为什么无法将项目编入搜索，并作为部分索引项目返回，确定部分索引项目的搜索错误，以及使用 PowerShell 脚本确定组织的部分索引电子邮件的公开程度。items.
-ms.openlocfilehash: b67b7d5cfedd37315a9f8bc9027e03b820598846
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 部分索引项目（也称为未编制索引项）是 SharePoint 和 OneDrive 网站上的 Exchange 邮箱项目和文档，由于某些原因未完全为内容搜索编制索引。 在本文中，您可以了解为什么无法将项目编入搜索，并作为部分索引项目返回，确定部分索引项目的搜索错误，以及使用 PowerShell 脚本确定组织的部分索引的电子邮件项的公开程度。
+ms.openlocfilehash: 64b052e5c04019d5937c3763094529ae5c4c9e42
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072335"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637460"
 ---
-# <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>使用 Office 365 电子数据展示调查部分索引项
+# <a name="investigating-partially-indexed-items-in-ediscovery"></a>在电子数据展示中调查部分索引项目
 
 从安全 & 合规中心运行的内容搜索在运行搜索时，会自动在估计的搜索结果中包含部分索引的项目。 部分索引项目是指 SharePoint 和 OneDrive for business 网站上的 Exchange 邮箱项目和文档，因为某些原因未完全编制搜索索引。 大多数电子邮件和网站文档都已成功编制索引，因为它们位于[电子邮件的索引限制](limits-for-content-search.md#indexing-limits-for-email-messages)内。 但是，某些项目可能超出这些索引限制，将对其进行部分索引。 以下是在运行内容搜索时无法将项目编入索引并作为部分索引项目返回的其他原因：
   
@@ -35,7 +35,7 @@ ms.locfileid: "42072335"
     
 - 文件类型支持索引，但特定文件发生索引错误
     
-尽管它不同，但大多数 Office 365 组织客户的内容数量少于1%，而按部分索引的大小少于12% 的内容。 卷与大小之间的差异在于，较大的文件包含无法完全编制索引的内容的可能性较高。
+尽管它不同，但大多数组织的内容的数量少于1%，而按部分索引的大小少于12% 的内容。 卷与大小之间的差异在于，较大的文件包含无法完全编制索引的内容的可能性较高。
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>对于搜索，部分索引项目数的变化是什么？
 
@@ -70,7 +70,7 @@ ms.locfileid: "42072335"
 
 `(316 MB/4830 MB) x 100 = 6.54%`
 
-所以在上一示例中，邮箱项目总大小的6.54% 来自部分索引项目。 如前所述，大多数 Office 365 组织客户的内容少于1%，而按部分索引的大小少于12% 的内容。
+所以在上一示例中，邮箱项目总大小的6.54% 来自部分索引项目。 如前所述，大多数组织的内容数量少于1%，而按部分索引的大小少于12% 的内容。
 
 ## <a name="working-with-partially-indexed-items"></a>使用部分索引项目
 
@@ -103,12 +103,12 @@ ms.locfileid: "42072335"
 | `attachmentsize` <br/> |附加到电子邮件的文件太大，无法处理。  <br/> |
 | `indexingtruncated` <br/> |将已处理的电子邮件写入索引时，其中一个可索引的属性太大，已被截尾取整。 截断的属性在 "错误属性" 字段中列出。  <br/> |
 | `invalidunicode` <br/> |电子邮件包含无法处理为有效 Unicode 的文本。 此项的索引可能不完整。  <br/> |
-| `parserencrypted` <br/> |附件或电子邮件的内容已加密，Office 365 无法对内容进行解码。  <br/> |
+| `parserencrypted` <br/> |附件或电子邮件的内容已加密，Microsoft 365 无法对内容进行解码。  <br/> |
 | `parsererror` <br/> |分析过程中出现未知错误。 这通常是由于软件错误或服务崩溃造成的。  <br/> |
 | `parserinputsize` <br/> |由于附件太大，分析程序无法处理该附件，并且该附件的分析未发生或未完成。  <br/> |
 | `parsermalformed` <br/> |附件格式不正确，无法由分析器进行处理。 此结果来自旧文件格式、由不兼容软件创建的文件，或假装为非声明内容的病毒。  <br/> |
 | `parseroutputsize` <br/> |对附件解析的输出太大，必须将其截断。  <br/> |
-| `parserunknowntype` <br/> |附件的文件类型为 Office 365 无法检测到的文件类型。  <br/> |
+| `parserunknowntype` <br/> |附件的文件类型为 Microsoft 365 无法检测到的文件类型。  <br/> |
 | `parserunsupportedtype` <br/> |附件具有 Office 365could 检测的文件类型，但不支持解析该文件类型。  <br/> |
 | `propertytoobig` <br/> |Exchange 存储中的电子邮件属性的值太大，无法检索，并且无法处理邮件。 这通常只发生在电子邮件的 body 属性中。  <br/> |
 | `retrieverrms` <br/> |内容检索器无法对受 RMS 保护的邮件进行解码。  <br/> |
@@ -118,7 +118,7 @@ ms.locfileid: "42072335"
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>使用 PowerShell 脚本确定组织部分索引的电子邮件项的公开程度
 
-下面的步骤演示了如何运行 PowerShell 脚本，以搜索所有 Exchange 邮箱中的所有项目，然后生成有关组织的部分索引的电子邮件项目（按计数和按大小）的比率的报告，并显示项目数（和它们的文件类型），用于发生的每个索引错误。 使用上一节中的错误标记说明来标识索引错误。
+下面的步骤演示了如何运行在所有 Exchange 邮箱中搜索所有项目的 PowerShell 脚本，然后生成有关组织的部分索引的电子邮件项目（按计数和按大小）的比率的报告，并显示每个出现的索引错误的项目数（及其文件类型）。 使用上一节中的错误标记说明来标识索引错误。
   
 1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `PartiallyIndexedItems.ps1`。
 
@@ -178,7 +178,7 @@ ms.locfileid: "42072335"
   
 ![生成来自组织公开的报告的脚本的输出示例，以部分索引的电子邮件项目](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
-请注意以下事项：
+请注意以下几点：
   
 1. 电子邮件项目的总数和大小，以及组织的部分索引的电子邮件项目的比率（按计数和按大小）
     

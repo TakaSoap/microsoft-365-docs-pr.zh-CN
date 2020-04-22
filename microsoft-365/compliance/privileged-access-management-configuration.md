@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用本主题可了解有关配置特权访问管理的详细信息。
-ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 196685eda6818b399c778363ee458f6f2792a33a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43115988"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626508"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特权访问管理入门
 
-本主题指导您在 Office 365 组织中启用和配置特权访问管理。 您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。
+本主题指导您在组织中启用和配置特权访问管理。 您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -46,11 +46,11 @@ ms.locfileid: "43115988"
 >[!IMPORTANT]
 >Office 365 高级合规性不再作为独立订阅销售。 当当前订阅过期时，客户应转换为上述订阅之一，其中包含相同或更多的合规性功能。
 
-如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试进行特权访问管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅中，或注册 Microsoft 365 企业[版](https://www.microsoft.com/microsoft-365/enterprise)e5。
+如果您没有现成的 Office 365 企业版 E5 计划，并且想要尝试进行特权访问管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 office 365 订阅中，或注册 Microsoft 365 企业[版](https://www.microsoft.com/microsoft-365/enterprise)e5。
 
 ## <a name="enable-and-configure-privileged-access-management"></a>启用和配置特权访问管理
 
-按照以下步骤设置和使用 Office 365 组织中的特权访问：
+按照以下步骤设置和使用组织中的特权访问：
 
 - [步骤1：创建审批者的组](privileged-access-management-configuration.md#step1)
 
@@ -71,7 +71,7 @@ ms.locfileid: "43115988"
 授予批准后，请求用户可以执行预期的任务，而特权访问将代表用户授权和执行任务。 审批在请求的持续时间（默认持续时间为4小时）内保持有效，在此期间，请求者可以多次执行预期任务。 将记录所有此类执行情况，并提供安全和合规性审核。 
 
 >[!NOTE]
->如果要使用 Exchange 管理 PowerShell 启用和配置特权访问，请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 Exchange online Powershell 与 Office 365 凭据连接到 Exchange online powershell 中的步骤操作。 您无需为 Office 365 组织启用多重身份验证，即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。 使用多重身份验证进行连接将创建一个 OAuth 令牌，该令牌由用于对您的请求进行签名的特权访问使用。
+>如果要使用 Exchange 管理 PowerShell 启用和配置特权访问，请按照[使用多重身份验证](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)连接到 Exchange online Powershell 与 Office 365 凭据连接到 Exchange online powershell 中的步骤操作。 您无需为组织启用多重身份验证，即可使用在连接到 Exchange Online PowerShell 时启用特权访问的步骤。 使用多重身份验证进行连接将创建一个 OAuth 令牌，该令牌由用于对您的请求进行签名的特权访问使用。
 
 <a name="step1"> </a>
 
@@ -126,7 +126,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3-create-an-access-policy"></a>步骤3：创建访问策略
 
-您可以为 Office 365 组织创建和配置最高30个权限访问策略。
+您可以为您的组织创建并配置最高30个权限访问策略。
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心
 

@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 了解如何更改业务订阅的付款方式。
-ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632727"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708151"
 ---
 # <a name="change-your-payment-method"></a>更改付款方式
 
@@ -80,13 +80,13 @@ ms.locfileid: "43632727"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>从发票更改为信用卡或银行帐户
 
 > [!TIP]
 > 以下步骤仅适用于单个订阅。如果你的组织中有多个订阅，则为每个你希望进行更改的订阅完成这些步骤。
   
 当您从发票付款更改为支付信用卡或银行帐户时，我们会自动为您创建一个新的订阅，将用户移动到新订阅，然后禁用旧订阅。 不要担心，你的用户将不会看到服务中断，并且所有信息都将通过新订阅提供。
-
 
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
@@ -102,10 +102,10 @@ ms.locfileid: "43632727"
   
 7. 确认所选的支付方式正确，然后选择 "**保存**"。
 
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>从发票更改为信用卡或银行帐户
 
 > [!TIP]
@@ -136,21 +136,21 @@ ms.locfileid: "43632727"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>从信用卡或银行帐户更改为发票
 
 仅当订单高于某一数量时，才能更改为按发票付款。 如果不满足要求，则会看到消息 "您的订单数量不够大，无法满足使用支票线路的发票资格"。
 
 如果您的订单数量过高，可能需要进行信用检查。 如果是这样，您会看到 "不符合更改为发票的消息" 消息。 您的订单需要进行信用检查。 在这种情况下，您将改为手动按发票付款。 使用以下步骤完成手动更改。
 
-
 1. 转到<a href="https://Office365.com" target="_blank">Office365.com</a>并购买与您当前拥有的订阅相同的订阅。 在 "签出" 中，选择选项 "按发票付款"。
 
-> [!IMPORTANT]
-> 您不能使用管理中心中的 "**产品 & 服务**" 页面购买订阅。 必须使用<a href="https://Office365.com" target="_blank">Office365.com</a>。
+    > [!IMPORTANT]
+    > 您不能使用管理中心中的 "**产品 & 服务**" 页面购买订阅。 必须使用<a href="https://Office365.com" target="_blank">Office365.com</a>。
 
 2. 购买完成后，取消原始订阅。 您的用户将自动移到新订阅。
 
-如果不需要进行信用检查，请使用以下步骤更改为 "按发票付款"。 
+如果不需要进行信用检查，请使用以下步骤更改为 "按发票付款"。
 
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
@@ -168,14 +168,14 @@ ms.locfileid: "43632727"
 
 8. 确认所选的支付方式正确，然后选择 "**保存**"。
 
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>从信用卡或银行帐户更改为发票
 
 > [!NOTE]
-> 仅当您的订阅成本超过一定金额（因服务位置而异）时，才可使用 "按发票付款" 选项。 较大数额的发票付款可能要求进行信用检查。 若要了解详细信息，请参阅[支付 Office 365 商业版订阅费用](pay-for-your-subscription.md)。
+> 仅当您的订阅成本超过一定金额（因服务位置而异）时，才可使用 "按发票付款" 选项。 较大数额的发票付款可能要求进行信用检查。 若要了解详细信息，请参阅[订阅的付费](pay-for-your-subscription.md)。
 
 1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
 
@@ -193,10 +193,10 @@ ms.locfileid: "43632727"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="verify-which-payment-method-is-configured"></a>验证所配置的付款方式
 
 可随时使用以下步骤来验证为订阅配置的付款方式。
-
 
 1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
 
@@ -211,6 +211,7 @@ ms.locfileid: "43632727"
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="verify-which-payment-method-is-configured"></a>验证所配置的付款方式
 
 可随时使用以下步骤来验证为订阅配置的付款方式。

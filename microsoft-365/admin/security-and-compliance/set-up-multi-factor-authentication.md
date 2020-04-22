@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性默认值为用户设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 4a829aa597596564b9c2f468e72f3a766b198372
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1000689794b8b5471efa898e731fd75a0e5a8cce
+ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627676"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43665628"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
 > [!IMPORTANT]
-> 如果你在2019年10月21日之后购买了订阅或试用，并且意外提示您进行 MFA，则已为你的订阅自动启用[安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+> 如果你在2019年10月21日之后购买了订阅或试用，并且意外提示了多重身份验证（MFA），则已为你的订阅自动启用[安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
 
-每个新 Microsoft 365 订阅将自动启用安全默认设置。 这意味着每位用户都必须在其移动设备上设置多重身份验证 (MFA) 并安装 Authenticator 应用。 有关详细信息，请参阅[为 Microsoft 365 设置2步验证](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。  
+每个新 Microsoft 365 订阅将自动启用[安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 这意味着，每个用户都必须设置多重身份验证（MFA），并在其移动设备上安装 Microsoft 身份验证器应用程序。 有关详细信息，请参阅为[Microsoft 365 帐户设置 MFA](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。
 
 下面九种管理员角色每次登录时都需要执行额外的身份验证：
 
@@ -48,35 +48,30 @@ ms.locfileid: "43627676"
 - 用户管理员
 - 身份验证管理员
 
-必要时，系统将要求其他所有用户执行额外的身份验证。 有关详细信息，请参阅[什么是安全性默认值？](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+必要时，系统将要求其他所有用户执行额外的身份验证。
 
 > [!NOTE]
-> 您必须是全局管理员才能设置或修改多重身份验证。 <br><br>
+> 您必须是全局管理员才能设置或修改 MFA <br><br>
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-如果之前使用基线策略设置了 MFA，则[必须将其关闭，再打开安全性默认值](#move-from-baseline-policies-to-security-defaults)。 但是，如果你有 Microsoft 365 商业版，或者你的订阅包含 [Azure Active Directory Premium 1 或 Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/)，则你还可设置[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)策略。 若要使用条件访问策略，需要确保已启用[新式身份验证](#enable-modern-authentication-for-your-organization)。
+如果您以前设置了具有基准策略的 MFA，[则必须将其关闭以启用安全默认](#move-from-baseline-policies-to-security-defaults)设置。 但是，如果你拥有 Microsoft 365 业务或你的订阅包括[Azure Active Directory 高级 P1 或 Azure Active Directory 高级 P2](https://azure.microsoft.com/pricing/details/active-directory/)，则还可以设置[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)策略。 若要使用条件访问策略，您需要确保禁用安全默认设置并启用[新式验证](#enable-modern-authentication-for-your-organization)。
 
 > [!TIP]
-> 若要向你的用户说明如何设置 Authenticator 应用，请访问[将 Microsoft Authenticator 用于 Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1)。
+> 若要向您的用户说明如何设置 Microsoft 身份验证器应用程序，请参阅[使用 Microsoft 身份验证器与 Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411)。
 
 ## <a name="manage-security-defaults"></a>管理安全性默认值
 
 1. 使用全局管理员凭据登录[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)。
-2. 转到 [Azure Active Directory 属性](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
+2. 转到 " [Azure Active Directory-属性" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
 3. 在页面底部，选择“**管理安全性默认值**”。
-4. 选择“**是**”启用安全性默认值，或选择“**否**”禁用安全性默认值。
+4. 选择 **"是"** 启用安全默认设置，单击 "**否**" 禁用安全默认设置，然后选择 "**保存**"。
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>从基线策略改为安全性默认值
 
-1. 在[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)中，选择“**设置**”。
-
-2. 在“**登录和安全**”旁边，**使登录更安全**下，选择“**查看**”。
-
-3. 在“**使登录更安全**”下，选择“**管理**”。 
-
-4. 在 "**条件访问-策略**" 页上，选择每个已**启用**的基线策略，并将其设置为 "**关闭**"。
-5. 转到 [Azure Active Directory 属性](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)页面。
-6. 在页面底部，选择 "**管理安全性默认**设置"，然后在 "**启用安全性**默认设置" 窗格中，将 "**启用安全默认**设置" 切换为 **"是**"，然后选择 "**保存**"。 
+1. 转到 "[条件访问策略" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)。
+2. 选择启用的每个基准策略，并将 "**启用策略**" 设置为 "**关闭** **"** 。
+3. 转到 " [Azure Active Directory-属性" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
+4. 在页面底部，选择 "**管理安全性默认**设置"，然后在 "**启用安全性**默认设置" 窗格中，将 "**启用安全默认**设置" 切换为 **"是**"，然后选择 "**保存**"。 
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>为你的组织启用新式验证
 

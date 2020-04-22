@@ -15,17 +15,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括可供您在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: 安全&amp;合规性中心中的数据丢失防护（DLP）包括为您准备好在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
+ms.openlocfilehash: 9b863e231cd4b576999885ae3f0b5b6792c37150
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240277"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626248"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>使用敏感信息类型查找什么
 
-Office 365 安全&amp;合规中心中的数据丢失防护（DLP）包括许多可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
+安全&amp;合规性中心中的数据丢失防护（DLP）包括许多可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
   
 ## <a name="aba-routing-number"></a>ABA 银行代号
 
@@ -4522,7 +4522,7 @@ Keyword_nz_terms
 
 - NHI 
 - New Zealand 
-- 运行状况 
+- 健康 
 - 治疗 
    
 ## <a name="norway-identification-number"></a>挪威身份证号

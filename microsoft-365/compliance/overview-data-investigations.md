@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了 Microsoft 365 中的新数据调查（预览版）工具。
-ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 89bd9e637a74ac1b972b00f794eca408828c076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328074"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626768"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查（预览）概述
 
@@ -29,7 +29,7 @@ ms.locfileid: "42328074"
 
 本文介绍了如何使用新的数据调查（预览）工具中的功能来解决 Data 外泄方案。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 若要访问和进行数据调查，您需要是数据调查员角色组的成员。 有关详细信息，请参阅[为数据调查分配权限](data-investigations-permissions.md)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "42328074"
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>搜索敏感、恶意或误放的数据
 
-使用 "**搜索**" 选项卡可创建搜索以查找要修正的数据的 Office 365。 您可以创建和运行基于查询的搜索，以确定设置的电子邮件消息和文档中可能包含溢出的数据，然后将它们作为证据收集以供审阅和分析。 此外，还可以使用搜索工具预览示例文档，并查看可帮助您优化和改进搜索结果的搜索统计信息。 一旦您认为搜索结果包含与调查相关的所有数据，您就可以将搜索结果添加到证据集，以进一步查看、影响评估，并根据需要采取补救措施。 有关详细信息，请参阅[在调查中搜索数据](search-for-data.md)。
+使用 "**搜索**" 选项卡可创建搜索以查找要修正的数据的 Microsoft 365。 您可以创建和运行基于查询的搜索，以确定设置的电子邮件消息和文档中可能包含溢出的数据，然后将它们作为证据收集以供审阅和分析。 此外，还可以使用搜索工具预览示例文档，并查看可帮助您优化和改进搜索结果的搜索统计信息。 一旦您认为搜索结果包含与调查相关的所有数据，您就可以将搜索结果添加到证据集，以进一步查看、影响评估，并根据需要采取补救措施。 有关详细信息，请参阅[在调查中搜索数据](search-for-data.md)。
 
 ## <a name="review-and-investigate-evidence"></a>查看和调查证据
 

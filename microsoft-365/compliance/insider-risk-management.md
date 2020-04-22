@@ -1,5 +1,5 @@
 ---
-title: 内幕风险管理
+title: 内部风险管理
 description: 了解如何使用 Microsoft 365 中的内幕风险管理帮助最大限度地减少组织中的风险。
 keywords: Microsoft 365，内幕风险，风险管理，合规性
 localization_priority: Normal
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179183"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637470"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的内幕风险管理
 
@@ -41,7 +41,7 @@ ms.locfileid: "42179183"
 
 新式工作区中的员工有权在各种各样的平台和服务中创建、管理和共享数据。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围的风险，同时还能满足员工隐私标准。
 
-Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器来帮助您快速确定、会审并对风险活动采取措施。 通过使用 Office 365 和 Microsoft Graph 中的日志，内幕风险管理允许您定义特定策略以标识风险指示器。 通过这些策略，您可以确定危险活动并采取措施来缓解这些风险。
+Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器来帮助您快速确定、会审并对风险活动采取措施。 通过使用 Microsoft 365 和 Microsoft Graph 中的日志，内幕风险管理允许您定义特定策略以标识风险指示器。 通过这些策略，您可以确定危险活动并采取措施来缓解这些风险。
 
 内幕风险管理的中心围绕以下原则：
 
@@ -114,7 +114,7 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 
 在最严重的情况下，您可能需要与组织中的其他审阅人共享内幕风险管理案例信息。 内幕风险管理与其他 Microsoft 365 合规性功能紧密集成，可帮助您进行端到端风险解决方案。 升级案例以使您能够将案例的数据和管理转移到 Microsoft 365 中的高级电子数据展示。 高级电子数据展示提供了端到端工作流，以保留、收集、查看、分析和导出对组织内部和外部调查做出响应的内容。 它允许法律团队管理整个法律封存通知工作流。 若要了解有关高级电子数据展示事例的详细信息，请参阅[Microsoft 365 中的高级电子数据展示概述](overview-ediscovery-20.md)。
 
-## <a name="scenarios"></a>方案
+## <a name="scenarios"></a>应用场景
 
 内幕风险管理可帮助您在以下几个常见方案中检测、调查和采取措施来缓解组织中的内部风险：
 

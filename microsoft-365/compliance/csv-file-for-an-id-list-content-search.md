@@ -1,5 +1,5 @@
 ---
-title: 为 Office 365 中的 ID 列表内容搜索准备 CSV 文件
+title: 准备用于 ID 列表内容搜索的 CSV 文件
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 使用来自现有内容搜索的结果 .csv 或未编制索引的项目 .csv 文件来创建一个可返回特定电子邮件的 ID 列表搜索。 ID 列表搜索通常用于返回部分索引的邮箱项目。
-ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f37715858e6785e75343f5b11f73332de08b5d3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077005"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630699"
 ---
-# <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>为 Office 365 中的 ID 列表内容搜索准备 CSV 文件
+# <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>准备用于 ID 列表内容搜索的 CSV 文件
 
 您可以使用 Exchange Id 列表搜索特定邮箱电子邮件和其他邮箱项目。 若要创建 ID 列表搜索（正式称为目标搜索），请提交一个逗号分隔值（CSV）文件，该文件标识要搜索的特定邮箱项目。 对于此 CSV 文件，您可以使用导出内容搜索结果或从现有内容搜索中导出内容搜索报告时包含的**结果 .csv**文件或未**编制索引的项目 .csv**文件。 然后，编辑其中一个文件以指示要搜索的特定项目，然后创建一个新的 ID 列表搜索并提交 CSV 文件。
 
@@ -84,7 +84,7 @@ ms.locfileid: "42077005"
 
 3. 在 "**按标识号搜索" 列表**中，命名搜索（并根据需要对其进行描述），然后单击 "**浏览**" 并选择在上一步中准备的 CSV 文件。
 
-    Office 365 尝试验证 CSV 文件。 如果验证失败，将显示一条错误消息，可能会帮助您解决验证错误。 必须成功验证 CSV 文件，才能创建 ID 列表搜索。
+    Microsoft 365 尝试验证 CSV 文件。 如果验证失败，将显示一条错误消息，可能会帮助您解决验证错误。 必须成功验证 CSV 文件，才能创建 ID 列表搜索。
 
 4. 成功验证 CSV 文件后，单击 "**搜索**" 以创建 ID 列表搜索。
 
@@ -97,4 +97,4 @@ ms.locfileid: "42077005"
 5. 预览或导出由 ID 列表搜索返回的项目。
 
 > [!NOTE]
-> 如果您在创建 ID 列表搜索之后移动邮箱，搜索的查询不会返回指定的项目。 这是因为在移动邮箱时，邮箱项目的**DocumentId**属性会发生更改。 在创建 ID 列表搜索之后移动邮箱时，在少数情况下，您应创建新的内容搜索（或更新现有内容搜索的搜索结果），然后导出搜索结果或报表以生成可使用的已更新 CSV 文件 创建新的 ID 列表搜索。
+> 如果您在创建 ID 列表搜索之后移动邮箱，搜索的查询不会返回指定的项目。 这是因为在移动邮箱时，邮箱项目的**DocumentId**属性会发生更改。 在创建 ID 列表搜索之后移动邮箱时，在少数情况下，您应创建新的内容搜索（或更新现有内容搜索的搜索结果），然后导出搜索结果或报表以生成可用于创建新的 ID 列表搜索的已更新 CSV 文件。
