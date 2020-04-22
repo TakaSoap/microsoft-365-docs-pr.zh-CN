@@ -1,5 +1,5 @@
 ---
-title: 查看和批准 Office 365 中的挂起的修正操作自动化调查和响应
+title: 在自动调查和响应中查看并批准待解决的补救措施
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
 f1.keywords:
 - NOCSH
@@ -15,40 +15,40 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 高级威胁防护计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: d2b617e29fc36d1f39ab6c9ef6f708d5f608b206
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826433"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634636"
 ---
-# <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a><span data-ttu-id="63ad5-104">查看 Office 365 中的自动调查后的挂起或已完成的修正操作</span><span class="sxs-lookup"><span data-stu-id="63ad5-104">View pending or completed remediation actions following an automated investigation in Office 365</span></span>
+# <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a><span data-ttu-id="a9c25-104">查看 Office 365 中的自动调查后的挂起或已完成的修正操作</span><span class="sxs-lookup"><span data-stu-id="a9c25-104">View pending or completed remediation actions following an automated investigation in Office 365</span></span>
 
-## <a name="approve-or-reject-pending-actions"></a><span data-ttu-id="63ad5-105">批准（或拒绝）挂起的操作</span><span class="sxs-lookup"><span data-stu-id="63ad5-105">Approve (or reject) pending actions</span></span>
+## <a name="approve-or-reject-pending-actions"></a><span data-ttu-id="a9c25-105">批准（或拒绝）挂起的操作</span><span class="sxs-lookup"><span data-stu-id="a9c25-105">Approve (or reject) pending actions</span></span>
 
 ![航空调查操作页](../../media/air-investigationactionspage.png)
 
-<span data-ttu-id="63ad5-107">在查看[调查的详细信息](air-view-investigation-results.md)时，您可以批准或拒绝任何待定的修正操作。</span><span class="sxs-lookup"><span data-stu-id="63ad5-107">While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions.</span></span> <span data-ttu-id="63ad5-108">我们建议您尽快执行此操作，以便您的自动调查能够完成。</span><span class="sxs-lookup"><span data-stu-id="63ad5-108">We recommend doing this as soon as possible so that your automated investigations complete.</span></span>
+<span data-ttu-id="a9c25-107">在查看[调查的详细信息](air-view-investigation-results.md)时，您可以批准或拒绝任何待定的修正操作。</span><span class="sxs-lookup"><span data-stu-id="a9c25-107">While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions.</span></span> <span data-ttu-id="a9c25-108">我们建议您尽快执行此操作，以便您的自动调查能够完成。</span><span class="sxs-lookup"><span data-stu-id="a9c25-108">We recommend doing this as soon as possible so that your automated investigations complete.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="63ad5-109">批准或拒绝修正操作需要适当的权限。</span><span class="sxs-lookup"><span data-stu-id="63ad5-109">Appropriate permissions are required to approve or reject remediation actions.</span></span> <span data-ttu-id="63ad5-110">查看[使用空中功能所需的权限](office-365-air.md#required-permissions-to-use-air-capabilities)。</span><span class="sxs-lookup"><span data-stu-id="63ad5-110">See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).</span></span>
+> <span data-ttu-id="a9c25-109">批准或拒绝修正操作需要适当的权限。</span><span class="sxs-lookup"><span data-stu-id="a9c25-109">Appropriate permissions are required to approve or reject remediation actions.</span></span> <span data-ttu-id="a9c25-110">查看[使用空中功能所需的权限](office-365-air.md#required-permissions-to-use-air-capabilities)。</span><span class="sxs-lookup"><span data-stu-id="a9c25-110">See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).</span></span>
 
-1. <span data-ttu-id="63ad5-111">转到 [https://protection.office.com](https://protection.office.com) 并登录。</span><span class="sxs-lookup"><span data-stu-id="63ad5-111">Go to [https://protection.office.com](https://protection.office.com) and sign in.</span></span> <span data-ttu-id="63ad5-112">这将转到安全 & 合规性中心。</span><span class="sxs-lookup"><span data-stu-id="63ad5-112">This takes you to the the Security & Compliance Center.</span></span>
+1. <span data-ttu-id="a9c25-111">转到 [https://protection.office.com](https://protection.office.com) 并登录。</span><span class="sxs-lookup"><span data-stu-id="a9c25-111">Go to [https://protection.office.com](https://protection.office.com) and sign in.</span></span> <span data-ttu-id="a9c25-112">这将转到安全 & 合规性中心。</span><span class="sxs-lookup"><span data-stu-id="a9c25-112">This takes you to the the Security & Compliance Center.</span></span>
 
-2. <span data-ttu-id="63ad5-113">转到**威胁管理** > **调查**。</span><span class="sxs-lookup"><span data-stu-id="63ad5-113">Go to **Threat management** > **Investigations**.</span></span>
+2. <span data-ttu-id="a9c25-113">转到**威胁管理** > **调查**。</span><span class="sxs-lookup"><span data-stu-id="a9c25-113">Go to **Threat management** > **Investigations**.</span></span>
 
-3. <span data-ttu-id="63ad5-114">在调查列表中，选择 " **ID** " 列中的项目。</span><span class="sxs-lookup"><span data-stu-id="63ad5-114">In the list of investigations, select an item in the **ID** column.</span></span> 
+3. <span data-ttu-id="a9c25-114">在调查列表中，选择 " **ID** " 列中的项目。</span><span class="sxs-lookup"><span data-stu-id="a9c25-114">In the list of investigations, select an item in the **ID** column.</span></span> 
 
-4. <span data-ttu-id="63ad5-115">选择 "**操作**" 选项卡。</span><span class="sxs-lookup"><span data-stu-id="63ad5-115">Select the **Actions** tab.</span></span>
+4. <span data-ttu-id="a9c25-115">选择 "**操作**" 选项卡。</span><span class="sxs-lookup"><span data-stu-id="a9c25-115">Select the **Actions** tab.</span></span>
 
-5. <span data-ttu-id="63ad5-116">选择列表项。</span><span class="sxs-lookup"><span data-stu-id="63ad5-116">Select an item in the list.</span></span> <span data-ttu-id="63ad5-117">（这将激活 "批准" 和 "拒绝" 按钮。）</span><span class="sxs-lookup"><span data-stu-id="63ad5-117">(This activates the Approve and Reject buttons.)</span></span>
+5. <span data-ttu-id="a9c25-116">选择列表项。</span><span class="sxs-lookup"><span data-stu-id="a9c25-116">Select an item in the list.</span></span> <span data-ttu-id="a9c25-117">（这将激活 "批准" 和 "拒绝" 按钮。）</span><span class="sxs-lookup"><span data-stu-id="a9c25-117">(This activates the Approve and Reject buttons.)</span></span>
 
-6. <span data-ttu-id="63ad5-118">查看您选择的项目的可用信息，然后批准或拒绝该操作。</span><span class="sxs-lookup"><span data-stu-id="63ad5-118">Review available information for the item(s) you selected, and then either approve or reject the action(s).</span></span> 
- - <span data-ttu-id="63ad5-119">**批准**可开始进行修正。</span><span class="sxs-lookup"><span data-stu-id="63ad5-119">**Approve** allows remediation to begin.</span></span>
- - <span data-ttu-id="63ad5-120">**拒绝**无需进一步操作</span><span class="sxs-lookup"><span data-stu-id="63ad5-120">**Reject** takes no further action</span></span>
+6. <span data-ttu-id="a9c25-118">查看您选择的项目的可用信息，然后批准或拒绝该操作。</span><span class="sxs-lookup"><span data-stu-id="a9c25-118">Review available information for the item(s) you selected, and then either approve or reject the action(s).</span></span> 
+ - <span data-ttu-id="a9c25-119">**批准**可开始进行修正。</span><span class="sxs-lookup"><span data-stu-id="a9c25-119">**Approve** allows remediation to begin.</span></span>
+ - <span data-ttu-id="a9c25-120">**拒绝**无需进一步操作</span><span class="sxs-lookup"><span data-stu-id="a9c25-120">**Reject** takes no further action</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="63ad5-121">后续步骤</span><span class="sxs-lookup"><span data-stu-id="63ad5-121">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="a9c25-121">后续步骤</span><span class="sxs-lookup"><span data-stu-id="a9c25-121">Next steps</span></span>
 
-- [<span data-ttu-id="63ad5-122">Office 365 中的自动调查的详细信息和结果</span><span class="sxs-lookup"><span data-stu-id="63ad5-122">Details and results of an automated investigation in Office 365</span></span>](air-view-investigation-results.md)
+- [<span data-ttu-id="a9c25-122">Office 365 中的自动调查的详细信息和结果</span><span class="sxs-lookup"><span data-stu-id="a9c25-122">Details and results of an automated investigation in Office 365</span></span>](air-view-investigation-results.md)
 
-- [<span data-ttu-id="63ad5-123">使用威胁资源管理器</span><span class="sxs-lookup"><span data-stu-id="63ad5-123">Use Threat Explorer</span></span>](threat-explorer.md)
+- [<span data-ttu-id="a9c25-123">使用威胁资源管理器</span><span class="sxs-lookup"><span data-stu-id="a9c25-123">Use Threat Explorer</span></span>](threat-explorer.md)

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 适用于市场活动的 Microsoft 365
-ms.openlocfilehash: 32437ccc0c110c0539cb3d24f036438d6a313921
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42056459"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632031"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns
 ===========================
@@ -40,21 +40,21 @@ ms.locfileid: "42056459"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
 
 
-**Microsoft 365 的市场活动是什么？** 这是建议的包含 Microsoft 365 业务的安全配置，以便您能够：
+**Microsoft 365 的市场活动是什么？** 建议的安全配置包括 Microsoft 365 商业高级版，以便您能够：
 - 依赖于可信的商业工作效率和协作工具，如 Outlook、Word、Excel 和其他 Office 产品 
 - 使用易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件 
 - 对用户帐户和标识应用额外保护 
 
-![Microsoft 365 商业版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和身份](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和身份](../media/M365-WhatIsIt-SecurityFocus.png)
 
-虽然美国的联邦选举活动符合 Microsoft 365 商业版的特殊定价，但具有此计划的任何组织都可以利用本指南来配置更高的安全性，并了解如何安全地进行协作。
+虽然美国的联邦选举活动符合 Microsoft 365 商业高级版的特殊定价，但具有此计划的任何组织都可以利用本指南来配置更高的安全性，并了解如何安全地进行协作。
 
 此库包含以下内容：
 - 添加更高安全性的说明性设置指南。
 - 帮助用户设置设备以实现安全访问。
 - 有关如何安全地进行协作和共享的指南。
 
-有关所包含内容的详细信息，请参阅[Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)。 
+有关所包含内容的详细信息，请参阅[Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business)。 
 
 
 <a name="get-started"></a>入门
