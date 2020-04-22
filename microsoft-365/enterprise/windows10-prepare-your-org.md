@@ -12,18 +12,18 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 9b83082a4dc859c10db03608de2edebdbb633cbe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085521"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636659"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>步骤1：为 Windows 10 企业版准备组织
 
 *本文适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第 3 阶段：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![阶段 3：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 将设备升级到 Windows 10 企业版之前，请考虑以下事项：
 
@@ -34,8 +34,8 @@ ms.locfileid: "42085521"
   如果您具有本地 Active Directory，则可以将[其与 microsoft 365 同步](identity-add-user-accounts.md#identity-sync)，以在 Azure AD 中创建用户帐户（Microsoft 365 使用的云目录）。 使用此方法，您可以为用户和用于管理对资源的权限的安全组（如 SharePoint Online 网站集或文档）创建帐户。 将 Active Directory 与 Microsoft 365 同步将不会向用户分配许可证。
 - **你现在不需要许可用户** <br>
   在用户可以使用 Microsoft 365 服务或从 Microsoft 365 门户安装软件之前，他们需要产品许可证。 作为全局或用户管理管理员，您可以直接在 Microsoft 365 中单独或批量分配产品许可证。 您还可以使用[基于组的许可](identity-use-group-management.md#identity-group-license)，在将用户添加到特定组时自动分配许可证。 
-- **您单独安装 Office 365 专业增强版** <br>
-  获取 Microsoft 365 许可证不会自动在客户端计算机上安装 Office 365 专业增强版。 有关详细信息，请参阅[第4阶段： Office 365 专业增强版](office365proplus-infrastructure.md)。 
+- **您单独安装 Microsoft 365 应用程序以供企业** <br>
+  获取 Microsoft 365 许可证不会自动在客户端计算机上安装适用于企业的 Microsoft 365 应用程序。 有关详细信息，请参阅[第4阶段： Microsoft 365 企业相关应用程序](office365proplus-infrastructure.md)。 
 
 ## <a name="set-windows-diagnostics-data-level"></a>设置 Windows 诊断数据级别
 
@@ -47,12 +47,12 @@ Microsoft 使用诊断数据，通过识别恶意软件趋势和其他威胁，�
 
 配置管理策略时，请使用下表中的相应值。
 
-| 级别 | 收集的数据 | 值 |
+| Level | 收集的数据 | 值 |
 |:--- |:--- |:--- |
 | 安全性 | 仅安全数据。 | 0 |
-| 基本 | 安全数据和基本系统和质量数据。 | 1  |
-| 有所 | 安全数据、基本系统和质量数据以及增强的见解和高级可靠性数据。 | 2  |
-| 完整 | 安全数据、基本系统和质量数据、增强的真知灼见和高级可靠性数据以及完整的诊断数据。 | 3  |
+| 基本 | 安全数据和基本系统和质量数据。 | 1 |
+| 有所 | 安全数据、基本系统和质量数据以及增强的见解和高级可靠性数据。 | 双面 |
+| 完整 | 安全数据、基本系统和质量数据、增强的真知灼见和高级可靠性数据以及完整的诊断数据。 | 第三章 |
 
 您可以通过以下任一方法来启用诊断数据：
 

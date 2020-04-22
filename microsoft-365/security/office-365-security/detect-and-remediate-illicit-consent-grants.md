@@ -1,5 +1,5 @@
 ---
-title: 检测和修正 Office 365 中的非法授权
+title: 检测并修正违法许可授予
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710521"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637600"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>检测和修正 Office 365 中的非法授权
+# <a name="detect-and-remediate-illicit-consent-grants"></a>检测并修正违法许可授予
 
 **摘要** 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
 
@@ -38,11 +38,11 @@ ms.locfileid: "42710521"
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>非法同意在 Office 365 中授予攻击外观？
 
-您需要搜索 Office 365**审核日志**，以查找该攻击的标志（也称为 "泄露" （IOC）标记）。 对于具有许多 Azure 注册应用程序和大型用户群的组织，最佳做法是在每周的基础上查看您的组织同意授予。
+您需要搜索**审核日志**，以查找该攻击的标志（也称为 "泄露" （IOC）标记）。 对于具有许多 Azure 注册应用程序和大型用户群的组织，最佳做法是在每周的基础上查看您的组织同意授予。
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>查找此攻击的迹象的步骤
 
-1. 打开 Office 365 租户中的 "**安全与合规中心**"。
+1. 在租户中打开**安全 & 合规性中心**。
 
 2. 导航到 "**搜索**"，然后选择 "**审核日志搜索**"。
 
@@ -53,7 +53,7 @@ ms.locfileid: "42710521"
 5. 单击结果以查看活动的详细信息。 若要获取活动的详细信息，请单击 "**详细信息**"。 查看 "IsAdminContent" 是否设置为 True。
 
 > [!NOTE]
-> * 在事件发生后，在搜索结果中显示相应的审核日志条目可能需要30分钟到24小时的时间。 <br/><br/> 审核记录在审核日志中保留和搜索的时间长度取决于您的 Office 365 订阅，以及分配给特定用户的许可证类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> * 在事件发生后，在搜索结果中显示相应的审核日志条目可能需要30分钟到24小时的时间。 <br/><br/> 审核记录的保留和可在审核日志中搜索的时间长度取决于您的 Microsoft 365 订阅，以及分配给特定用户的许可证类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 如果此值为 true，则表示具有全局管理员访问权限的人员可能已授予对数据的广泛访问权限。 如果这是意外情况，请执行相应的步骤来[确认攻击](#how-to-confirm-an-attack)。
 
 ## <a name="how-to-confirm-an-attack"></a>如何确认攻击
@@ -121,7 +121,7 @@ ms.locfileid: "42710521"
 
 该脚本将生成一个名为 "权限 .csv" 的文件。 按照以下步骤查找违法应用程序权限授予：
 
-1. 在 ConsentType 列（列 G）中搜索值 "AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中的所有人的内容。 本机 Office 365 应用程序需要此权限才能正常工作。 应仔细查看具有此权限的每个非 Microsoft 应用程序。
+1. 在 ConsentType 列（列 G）中搜索值 "AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中的所有人的内容。 本机 Microsoft 365 应用程序需要此权限才能正常工作。 应仔细查看具有此权限的每个非 Microsoft 应用程序。
 
 2. 在 "权限" 列（列 F）中，查看每个委派的应用程序对内容所拥有的权限。 查找 "读取" 和 "写入" 权限或 "*"。所有 "权限，并仔细审查这些权限，因为它们可能不合适。
 
@@ -131,7 +131,7 @@ ms.locfileid: "42710521"
 
 ## <a name="determine-the-scope-of-the-attack"></a>确定攻击的范围
 
-完成对应用程序访问的清点之后，请查看 Office 365**审核日志**以确定泄露的全部范围。 搜索受影响的用户、违法应用程序有权访问您组织的时间段以及应用程序的权限。 你可以在[Microsoft 365 安全与合规中心](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)中搜索**审核日志**。
+完成对应用程序访问的清查之后，请查看**审核日志**以确定泄露的全部范围。 搜索受影响的用户、违法应用程序有权访问您组织的时间段以及应用程序的权限。 你可以在[Microsoft 365 安全与合规中心](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)中搜索**审核日志**。
 
 > [!IMPORTANT]
 > 必须先启用[管理员和用户](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)的[邮箱审核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)和活动审核，然后才能获取此类信息。
@@ -158,9 +158,9 @@ ms.locfileid: "42710521"
 
 - 您可以为租赁启用集成的应用程序。 这是一项重大步骤，可禁用最终用户对租户范围授予许可的能力。 这样可以防止您的用户无意中授予对恶意应用程序的访问权限。 强烈建议不要这样做，因为这会严重削弱用户在第三方应用程序中的工作效率。 为此，可以按照[启用或禁用集成应用程序](https://docs.microsoft.com/office365/admin/misc/integrated-apps)中的步骤操作。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>安全 Microsoft 365，如 cybersecurity pro
 
-你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Office 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
+你的 Microsoft 365 订阅附带了一组功能强大的安全功能，可用于保护你的数据和用户。 使用[microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 microsoft 建议的 microsoft 365 租户安全最佳实践。
 
 - 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
 

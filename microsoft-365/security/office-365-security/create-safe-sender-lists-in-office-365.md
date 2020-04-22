@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中创建安全发件人列表
+title: 创建安全发件人列表
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: 管理员可以了解 Office 365 和 EOP 中的可用选项，这些选项允许入站邮件跳过垃圾邮件筛选。
-ms.openlocfilehash: 4b50a4b63377c0f3e7b12592c512449f1a3adc12
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: 管理员可以了解 Microsoft 365 和 EOP 中的可用选项，这些选项允许入站邮件跳过垃圾邮件筛选。
+ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528625"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637672"
 ---
-# <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中创建安全发件人列表
+# <a name="create-safe-sender-lists"></a>创建安全发件人列表
 
-如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，EOP 将提供多种方法来确保用户收到来自受信任的发件人的电子邮件。 这些选项包括 Exchange 邮件流规则（也称为传输规则）、Outlook 安全发件人、IP 允许列表（连接筛选）和反垃圾邮件策略中允许的发件人列表或允许的域列表。 可以将这些选项统称为_安全发件人列表_。
+如果您是在 Exchange Online 中有邮箱的 Microsoft 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，EOP 将提供多种方法来确保用户收到来自受信任的发件人的电子邮件。 这些选项包括 Exchange 邮件流规则（也称为传输规则）、Outlook 安全发件人、IP 允许列表（连接筛选）和反垃圾邮件策略中允许的发件人列表或允许的域列表。 可以将这些选项统称为_安全发件人列表_。
 
 以下列表中介绍了可用的安全发件人列表，从最建议的到最小建议的顺序如下：
 

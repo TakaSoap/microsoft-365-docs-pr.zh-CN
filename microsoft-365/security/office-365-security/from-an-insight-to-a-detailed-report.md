@@ -17,16 +17,16 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: 了解如何通过数据丢失防护示例从洞察力移到安全&amp;合规中心中的详细报告。
-ms.openlocfilehash: f5b64cedba72592307d9c806484640f75be02f8e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52c0f944e5319325f2ae478bd7fda34fa08319b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083031"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638066"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>演练 - 从见解到详细报表
 
-如果你刚开始[使用 Office 365 安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)，了解如何轻松导航到详细报告，这可能会有帮助。 
+如果您不熟悉[ &amp;安全合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)，它可能会帮助您了解如何轻松浏览深入了解详细报告。 
   
 这是针对[ &amp;安全合规中心](https://protection.office.com)的几个演练之一。 若要查看其他演练，请参阅 "[相关主题](#related-topics)" 部分。 
   

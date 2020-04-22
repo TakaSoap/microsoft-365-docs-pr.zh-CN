@@ -17,16 +17,16 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: 了解如何从仪表板转到与安全&amp;合规中心中推荐的操作有关的见解。
-ms.openlocfilehash: 52fc933133cee4b060a08516b64a46c1c24a13cb
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 22ca34696bc46e0142818be715d68f0b469c6255
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537493"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638090"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>演练 - 从仪表板到见解
 
-如果你不熟悉[Office 365 安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)，它可能会帮助你了解如何轻松地从仪表板导航到真知灼见和建议的操作。 
+如果您不熟悉[ &amp;安全合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)，它可能会帮助您了解如何轻松地从仪表板导航到真知灼见和推荐的操作。 
   
 这是针对安全&amp;合规中心的几个演练之一。 若要查看其他演练，请参阅 "[相关主题](#related-topics)" 部分。 
   

@@ -14,14 +14,14 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online Protection （EOP）中的基本反网络钓鱼策略和 Office 365 高级威胁防护中的高级 ATP 反网络钓鱼策略。
-ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537469"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638352"
 ---
-# <a name="anti-phishing-policies-in-office-365"></a>Office 365 中的反网络钓鱼策略
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
 在具有 Exchange Online 邮箱、独立 Exchange Online Protection （EOP）组织且无 Exchange Online 邮箱和 Office 365 高级威胁防护（ATP）组织的 Office 365 组织中，可以使用配置反网络钓鱼防护设置的策略。
 
@@ -34,7 +34,7 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
 ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创建其他自定义 ATP 反网络钓鱼策略。
 
-其他 Office 365 组织（具有 Exchange Online 邮箱或独立 Exchange Online Protection （EOP）组织）没有 Exchange Online 邮箱的内置默认反网络钓鱼策略，但不能创建其他策略。 只有具有 Exchange Online 邮箱的组织才能修改其默认的反网络钓鱼策略。
+其他 Microsoft 365 组织（具有 Exchange Online 邮箱或独立 Exchange online Protection （EOP）组织）没有 Exchange Online 邮箱的内置默认反网络钓鱼策略，但无法创建其他策略。 只有具有 Exchange Online 邮箱的组织才能修改其默认的反网络钓鱼策略。
 
 反网络钓鱼策略和 ATP 反网络钓鱼策略之间的高级别差异如下表所述：
 
@@ -55,30 +55,30 @@ ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创�
 
 - [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
 
-- [在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)
+- [在 Microsoft 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)
 
 本主题的其余部分介绍在 EOP 和 ATP 反网络钓鱼策略中可用的设置。
 
 ## <a name="spoof-settings"></a>欺骗设置
 
-哄骗是指电子邮件中的发件人地址（电子邮件客户端中显示的发件人地址）与电子邮件源的域不匹配。 有关哄骗的详细信息，请参阅[Office 365 中的反欺骗保护](anti-spoofing-protection.md)。
+哄骗是指电子邮件中的发件人地址（电子邮件客户端中显示的发件人地址）与电子邮件源的域不匹配。 有关哄骗的详细信息，请参阅[Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)。
 
 以下欺骗设置在反网络钓鱼策略和 ATP 反网络钓鱼策略中可用：
 
-- **反欺骗保护**：启用或禁用反欺骗保护。 建议您将其保留为启用状态。 您可以使用**欺骗智能策略**来允许或阻止特定的欺骗内部和外部发件人。 有关详细信息，请参阅[在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- **反欺骗保护**：启用或禁用反欺骗保护。 建议您将其保留为启用状态。 您可以使用**欺骗智能策略**来允许或阻止特定的欺骗内部和外部发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
   > [!NOTE]
-  > 默认情况下，在 EOP 中默认的反网络钓鱼策略、默认 ATP 反网络钓鱼策略和创建的新自定义 ATP 反网络钓鱼策略中启用欺骗设置。 <br/><br/> 如果您的 MX 记录不指向 Office 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  > 默认情况下，在 EOP 中默认的反网络钓鱼策略、默认 ATP 反网络钓鱼策略和创建的新自定义 ATP 反网络钓鱼策略中启用欺骗设置。 <br/><br/> 如果你的 MX 记录不指向 Microsoft 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
   对于阻止欺骗发件人发送的邮件，您还可以指定对邮件执行的操作：
 
-  - **将邮件移动到 "垃圾邮件" 文件夹**：这是默认值。 邮件传递到邮箱并移动到 "垃圾邮件" 文件夹。 在 Exchange Online 中，如果在邮箱上启用了垃圾邮件规则（默认情况下已启用），邮件将被移动到 "垃圾邮件" 文件夹中。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+  - **将邮件移动到 "垃圾邮件" 文件夹**：这是默认值。 邮件传递到邮箱并移动到 "垃圾邮件" 文件夹。 在 Exchange Online 中，如果在邮箱上启用了垃圾邮件规则（默认情况下已启用），邮件将被移动到 "垃圾邮件" 文件夹中。 有关详细信息，请参阅[Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
   - **隔离邮件**：将邮件发送到隔离，而不是发送给目标收件人。 若要了解隔离，请参阅以下主题：
 
-    - [Office 365 中的隔离](quarantine-email-messages.md)
-    - [在 Office 365 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)
-    - [在 Office 365 中以用户身份查找和释放已隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365 中的隔离](quarantine-email-messages.md)
+    - [在 Microsoft 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
+    - [在 Microsoft 365 中查找并以用户的形式发布隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
 
 - **未经身份验证的发件人**：启用或禁用 Outlook 中未识别的发件人标识 具体来说：
 
@@ -88,7 +88,7 @@ ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创�
 
   若要防止将这些标识符添加到特定发件人的邮件中，可以使用以下选项：
 
-  - 允许发件人在欺骗智能策略中进行欺骗。 有关说明，请参阅[在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+  - 允许发件人在欺骗智能策略中进行欺骗。 有关说明，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
   - 为发件人域[配置电子邮件身份验证](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)。
   
@@ -118,7 +118,7 @@ ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创�
 
   - **收件人为**：组织中的一个或多个邮箱、邮件用户或邮件联系人。
   - **收件人是**组织中的一个或多个组的成员：
-  - **收件人域为**： Office 365 中的一个或多个已配置的接受域。
+  - **收件人域为**： Microsoft 365 中已配置的一个或多个接受的域。
 
   - 例外情况**除外**：规则例外。 设置和行为与条件完全一样：
 
@@ -152,13 +152,13 @@ ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创�
 
   - 将**邮件重定向到其他电子邮件地址**：将邮件发送给指定的收件人，而不是发送给目标收件人。
 
-  - **将邮件移动到 "垃圾邮件" 文件夹**：邮件将传递到邮箱并移动到 "垃圾邮件" 文件夹。 在 Exchange Online 中，如果在邮箱上启用了垃圾邮件规则（默认情况下已启用），邮件将被移动到 "垃圾邮件" 文件夹中。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+  - **将邮件移动到 "垃圾邮件" 文件夹**：邮件将传递到邮箱并移动到 "垃圾邮件" 文件夹。 在 Exchange Online 中，如果在邮箱上启用了垃圾邮件规则（默认情况下已启用），邮件将被移动到 "垃圾邮件" 文件夹中。 有关详细信息，请参阅[Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
     - **隔离邮件**：将邮件发送到隔离，而不是发送给目标收件人。 若要了解隔离，请参阅以下主题：
 
-    - [Office 365 中的隔离](quarantine-email-messages.md)
-    - [在 Office 365 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)
-    - [在 Office 365 中以用户身份查找和释放已隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365 中的隔离](quarantine-email-messages.md)
+    - [在 Microsoft 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
+    - [在 Microsoft 365 中查找并以用户的形式发布隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
 
   - **传递邮件并向 "密件抄送" 行添加其他地址**：将邮件传递给预期收件人，并以无提示方式将邮件传递给指定的收件人。
 
@@ -172,7 +172,7 @@ ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创�
 
 - **邮箱智能**：启用或禁用用于确定用户的电子邮件模式与其常用联系人的人工智能（AI）。 此设置可帮助 AI 区分合法和欺骗的电子邮件与这些联系人。 邮箱智能仅适用于 Exchange Online 邮箱。
 
-- **基于邮箱智能的模拟保护**：基于每个用户的个人发件人地图启用或禁用增强的模拟结果。 此智能允许 Office 365 自定义用户模拟检测，并更好地处理误报。 当检测到用户模拟时，您可以定义对邮件执行的特定操作：
+- **基于邮箱智能的模拟保护**：基于每个用户的个人发件人地图启用或禁用增强的模拟结果。 此智能允许 Microsoft 365 自定义用户模拟检测，并更好地处理误报。 当检测到用户模拟时，您可以定义对邮件执行的特定操作：
 
   - **不应用任何操作**
   - **将邮件重定向到其他电子邮件地址**

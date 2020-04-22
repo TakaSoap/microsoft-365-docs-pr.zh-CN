@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中创建阻止的发件人列表
+title: 创建阻止发件人列表
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: 管理员可以了解 Office 365 和 EOP 中的可用选项来阻止入站邮件。
-ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+description: 管理员可以了解 Microsoft 365 和 EOP 中的可用选项来阻止入站邮件。
+ms.openlocfilehash: 626eff3a1ea28cc16b12acaaa2ba52f7d094a347
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608110"
+ms.locfileid: "43637684"
 ---
-# <a name="create-blocked-sender-lists-in-office-365"></a>在 Office 365 中创建阻止的发件人列表
+# <a name="create-blocked-sender-lists"></a>创建阻止发件人列表
 
-如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则 EOP 提供多种阻止来自不需要的发件人的电子邮件的方法。 这些选项包括 Outlook 阻止的发件人、阻止的发件人列表或反垃圾邮件策略中阻止的域列表、Exchange 邮件流规则（也称为传输规则）和 IP 阻止列表（连接筛选）。 你可以将这些选项统称为阻止的_发件人列表_。
+如果您是在 Exchange Online 中有邮箱的 Microsoft 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则 EOP 提供多种阻止来自不需要的发件人的电子邮件的方法。 这些选项包括 Outlook 阻止的发件人、阻止的发件人列表或反垃圾邮件策略中阻止的域列表、Exchange 邮件流规则（也称为传输规则）和 IP 阻止列表（连接筛选）。 你可以将这些选项统称为阻止的_发件人列表_。
 
 阻止发件人的最佳方法因影响范围而异。 对于单个用户，正确的解决方案可能是 Outlook 阻止的发件人。 对于很多用户而言，其他选项中的一种更合适。 下面的选项按影响范围和广度进行排序。 列表从窄到范围，但阅读完整建议的*细节*。
 
@@ -37,11 +37,11 @@ ms.locfileid: "43608110"
 > [!NOTE]
 > 虽然您可以使用组织范围内的阻止设置来解决漏报（丢失的垃圾邮件），但还应将这些邮件提交给 Microsoft 进行分析。 使用阻止列表管理漏报会显著增加管理开销。 如果使用阻止列表转移丢失的垃圾邮件，则需要将主题[报告邮件和文件](report-junk-email-messages-to-microsoft.md)保留在 Microsoft 准备就绪。
 
-相比之下，您还可以使用多个选项始终允许使用_安全发件人列表_从特定来源发送电子邮件。 有关详细信息，请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
+相比之下，您还可以使用多个选项始终允许使用_安全发件人列表_从特定来源发送电子邮件。 有关详细信息，请参阅[创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
 ## <a name="use-outlook-blocked-senders"></a>使用 Outlook 阻止的发件人
 
-当只有少量用户收到不需要的电子邮件时，用户或管理员可以将发件人电子邮件地址添加到邮箱中阻止的发件人列表中。 有关说明，请参阅在[Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+当只有少量用户收到不需要的电子邮件时，用户或管理员可以将发件人电子邮件地址添加到邮箱中阻止的发件人列表中。 有关说明，请参阅[在 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 当邮件由于用户的阻止发件人列表而成功被阻止时， **X-Forefront-反垃圾邮件报告**的标头字段`SFV:BLK`将包含该值。
 
@@ -50,7 +50,7 @@ ms.locfileid: "43608110"
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>使用阻止的发件人列表或阻止的域列表
 
-当多个用户受到影响时，范围将变宽，因此下一个最佳选项是在反垃圾邮件策略中阻止发件人列表或阻止的域列表。 来自列表中发件人的邮件被标记为**垃圾**邮件，而您为**垃圾邮件**筛选器判定配置的操作将在邮件上执行。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+当多个用户受到影响时，范围将变宽，因此下一个最佳选项是在反垃圾邮件策略中阻止发件人列表或阻止的域列表。 来自列表中发件人的邮件被标记为**垃圾**邮件，而您为**垃圾邮件**筛选器判定配置的操作将在邮件上执行。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 这些列表的最大限制约为1000个条目。
 

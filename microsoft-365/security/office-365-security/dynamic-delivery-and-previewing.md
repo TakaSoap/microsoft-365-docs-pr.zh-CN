@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 ATP 安全附件进行动态传递和预览
+title: 使用 ATP 安全附件进行动态传递和预览
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全附件策略时，请选择 "动态传递" 以避免邮件延迟，并使用户能够预览正在扫描的附件。
-ms.openlocfilehash: 755a5a317710946a3a03004482a6b48c8947c1a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c8e0a60912244a636fbbe6ca62f7c1b9c260e0f6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599419"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637564"
 ---
-# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>使用 Office 365 ATP 安全附件进行动态传递和预览
+# <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>使用 ATP 安全附件进行动态传递和预览
 
 ## <a name="overview"></a>概述
 
@@ -38,16 +38,16 @@ ms.locfileid: "41599419"
 
 - 每个附件被清除后，即可打开或下载。
 
-- 如果某个附件被确定为恶意附件，则会将其发送到隔离区，其中组织的安全团队（如 Office 365 全局管理员或安全管理员）的用户可以[在 Office 365 中管理隔离的邮件](manage-quarantined-messages-and-files.md)。
+- 如果某个附件被确定为恶意附件，则会将其发送到隔离区，其中组织的安全团队（如全局管理员或安全管理员）的用户可以[在 Office 365 中管理隔离的邮件](manage-quarantined-messages-and-files.md)。
 
 大多数 Pdf 和 Office 文档可在 ATP 扫描进行过程中在安全模式下进行预览。 如果附件与动态传递预览器不兼容，则在完成 ATP 安全附件扫描之前，电子邮件收件人会看到一个附件占位符。
 
 > [!TIP]
-> 如果您使用的是移动设备，并且 Pdf 在最初不在动态传递预览器中呈现，请尝试使用移动浏览器登录 Office 365。
+> 如果您使用的是移动设备，并且 Pdf 在最初不在动态传递预览器中呈现，请尝试使用移动浏览器进行登录。
 
 通过动态传递，用户可以立即阅读并回复他们的电子邮件，同时分析他们的附件。
 
-ATP 安全附件扫描发生在 Office 365 数据所在的同一个区域中。 有关数据中心地理位置的详细信息，请参阅[您的数据位于何处？](https://products.office.com/where-is-your-data-located?geo=All)
+ATP 安全附件扫描发生在 Microsoft 365 数据所在的同一个区域中。 有关数据中心地理位置的详细信息，请参阅[您的数据位于何处？](https://products.office.com/where-is-your-data-located?geo=All)
 
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>当有人转发包含附件的电子邮件时，会发生什么情况？
 

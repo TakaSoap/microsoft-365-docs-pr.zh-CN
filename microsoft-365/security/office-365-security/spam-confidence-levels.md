@@ -16,16 +16,16 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解垃圾邮件可信度（SCL）如何确定邮件是垃圾邮件的可能性和可能性，以及垃圾邮件筛选对基于 SCL 的邮件所采取的默认操作。
-ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893690"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638280"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Office 365 中的垃圾邮件可信度（SCL）
 
-当 Office 365 （Exchange Online 或独立 Exchange Online Protection （EOP），而不是 Exchange Online 邮箱）收到入站电子邮件时，邮件将通过垃圾邮件筛选，并为其分配一个垃圾邮件分数。 该分数映射到在 X 标头中添加到邮件的单个垃圾邮件可信度（SCL）。 SCL 较高表示邮件更有可能是垃圾邮件。 该服务将根据 SCL 对邮件采取操作。
+当 Microsoft 365 （Exchange Online 或独立 Exchange Online Protection （EOP），而不是 Exchange Online 邮箱）收到入站电子邮件时，邮件将通过垃圾邮件筛选，并为其分配一个垃圾邮件分数。 该分数映射到在 X 标头中添加到邮件的单个垃圾邮件可信度（SCL）。 SCL 较高表示邮件更有可能是垃圾邮件。 该服务将根据 SCL 对邮件采取操作。
 
 下表描述了 SCL 的含义以及对邮件所执行的默认操作。 有关可以对基于垃圾邮件筛选判定的邮件执行的操作的详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -46,4 +46,4 @@ ms.locfileid: "42893690"
 
 ||
 |:-----|
-|![LinkedIn Learning 短图标](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **刚开始接触 Office 365？**         发现 LinkedIn Learning 向 **Office 365 admins and IT pros**提供的免费视频课程。|
+|![LinkedIn Learning 短图标](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **刚开始接触 Office 365？**         探索通过 LinkedIn 学习获取的适用于**Microsoft 365 管理员和 IT 专业人员**的免费视频课程。|

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583377"
+ms.locfileid: "43637100"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -52,7 +52,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包括的产品
 
-目前，我们提供了 Office 365 的一些建议（包括 SharePoint Online、Exchange Online、OneDrive for Business、Microsoft 信息保护等）、Azure AD 和云应用安全性。 对其他安全产品（如 Azure ATP 和 Microsoft Defender ATP）的建议即将推出。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为第三方覆盖。
+目前有一些建议，其中包括 SharePoint Online、Exchange Online、OneDrive for Business、Microsoft 信息保护等）、Azure AD 和云应用安全性。 对其他安全产品（如 Azure ATP 和 Microsoft Defender ATP）的建议即将推出。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为第三方覆盖。
 
 ## <a name="required-permissions"></a>所需权限
 
@@ -66,7 +66,6 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 * 安全管理员
 * Exchange 管理员
 * SharePoint 管理员
-* 帐户管理员
 
 ### <a name="read-only-roles"></a>只读角色
 

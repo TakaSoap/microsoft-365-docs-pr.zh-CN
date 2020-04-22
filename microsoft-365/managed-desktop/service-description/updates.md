@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: 763a9f3c7c517a5d093b9691310720468053bf24
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284373"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636470"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 托管桌面中处理更新
 
@@ -61,13 +61,13 @@ Microsoft 托管桌面使用四个 Azure AD 组管理更新：
 <tr><td>操作系统的功能更新</td><td>0天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
 <tr><td>驱动程序/固件</td><td colspan="4">遵循质量更新计划</td></tr>
 <tr><td>反病毒定义</td><td colspan="4">更新每个扫描</td></tr>
-<tr><td>Office 365 专业增强版</td><td colspan="4">遵循 Office 的每月频道
+<tr><td>适用于企业的 Microsoft 365 应用程序</td><td colspan="4">遵循 Office 的每月频道
 </table>
 
-有关 Office 365 专业增强版的每月频道的详细信息，请参阅[office 365 专业增强版更新通道概述](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus)。
+有关适用于企业的 Microsoft 365 应用程序的每月频道的详细信息，请参阅[适用于企业的 microsoft 365 应用程序的更新通道概述](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus)。
 
 >[!NOTE]
->这些延期时段特意旨在确保所有用户的高安全性和性能标准。 此外，根据在所有 Microsoft 托管桌面设备上收集的数据以及更新的不同范围和影响，Microsoft 托管桌面保留了灵活性，以便在 ad 上修改任意和所有部署组的上述延期时段的长度hoc。
+>这些延期时段特意旨在确保所有用户的高安全性和性能标准。 此外，根据在所有 Microsoft 托管桌面设备上收集的数据以及更新的不同范围和影响，Microsoft 托管桌面保留了灵活性，以针对任意和所有部署组（临时）修改上述延期时段的长度。
 >
 >Microsoft 托管桌面对每个 Windows 功能版本执行独立评估，以评估其对托管租户的必要性和有用性。 因此，Microsoft 托管桌面可能会或可能不会部署所有 Windows 功能更新。 
 

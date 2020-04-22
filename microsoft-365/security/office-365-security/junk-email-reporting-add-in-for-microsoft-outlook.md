@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 了解如何安装和使用 Microsoft 垃圾电子邮件报告加载项将垃圾邮件、非垃圾邮件和网络钓鱼邮件报告给 Microsoft。
-ms.openlocfilehash: e39fb2f4ecba806c2d26d989fbbe6ddec137adc1
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033878"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638496"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>在 Office 365 中安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
 
@@ -30,14 +30,14 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 本主题说明如何安装和使用垃圾邮件报告加载项。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 若要安装垃圾电子邮件报告加载项，请参阅本主题后面的[安装垃圾电子邮件报告外](#install-the-junk-email-reporting-add-in)接部分。
 
 - 垃圾电子邮件报告加载项适用于以下版本的 Outlook：
 
   - Outlook 2013 或更高版本
-  - Outlook 包含在 Office 365 专业增强版中
+  - Outlook 包含在适用于企业的 Microsoft 365 应用程序中
 
 - 有关将邮件报告给 Microsoft 的详细信息，请参阅[在 Office 365 中向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -156,7 +156,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" MaxMessageSelection=20 BccEmailAddress="junkreports@contoso.com; hollyd@treyresearch.net"
    ```
 
-### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 若要验证是否已成功安装垃圾电子邮件报告外接程序，请在 Outlook 中执行以下任一步骤：
 

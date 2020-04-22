@@ -12,16 +12,16 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c38ba2e915cd439c8d7629bc7f9cd56ebc8647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085532"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636671"
 ---
-# <a name="phase-3-windows-10-enterprise"></a>第 3 阶段：Windows 10 企业版
+# <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
 
-![第 3 阶段：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![阶段 3：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更多和保持安全保护的工具。 Windows 10 企业版：
 
@@ -32,7 +32,7 @@ Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更
 您需要了解部署 Windows 10 操作系统的不同方法，并为您的组织选择正确的方法。 根据你的 Microsoft 365 企业版订阅，还需要配置 Windows 10 服务和安全功能，以充分利用 Windows 10。
 
 >[!Note]
->若要同时部署 Windows 10 企业版和 Office 365 专业增强版，并迁移到[新式桌面](https://www.microsoft.com/microsoft-365/modern-desktop)，请参阅[新式桌面部署中心](https://aka.ms/howtoshift)。
+>若要同时将 Windows 10 企业版和 Microsoft 365 应用程序部署到企业并转到[新式桌面](https://www.microsoft.com/microsoft-365/modern-desktop)，请参阅[新式桌面部署中心](https://aka.ms/howtoshift)。
 >
 
 ## <a name="windows-10-deployment"></a>Windows 10 部署

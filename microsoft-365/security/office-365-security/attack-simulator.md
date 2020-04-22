@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP 中的攻击模拟器
+title: ATP 中的攻击模拟器
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: 使用攻击模拟器在 Office 365 E5 或 ATP Plan 2 组织中运行模拟网络钓鱼和密码攻击，这有助于您在真正的攻击击中业务之前识别易受攻击的用户。
-ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+description: 作为全局管理员，你可以使用攻击模拟器在你的组织中运行实际的攻击方案。 这可帮助你在真正的攻击击中你的业务之前识别和查找易受攻击的用户。
+ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637335"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638568"
 ---
-# <a name="attack-simulator-in-office-365-atp"></a>Office 365 ATP 中的攻击模拟器
+# <a name="attack-simulator-in-atp"></a>ATP 中的攻击模拟器
 
-Office 365 中的攻击模拟器高级威胁防护计划2（ATP 计划2）允许您在组织中运行真实的、模拟的网络钓鱼和密码攻击活动。 您可以使用市场活动的结果来识别和培训易受攻击的用户。
+**摘要**如果您是全局管理员或安全管理员，并且您的组织具有 Office 365 高级威胁防护计划2（其中包括[威胁调查和响应功能](office-365-ti.md)），则可以使用攻击模拟器在组织中运行实际的攻击方案。 这可以帮助你在实际攻击影响你的底线之前识别并找出易受攻击的用户。 阅读本文以了解详细信息。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Office 365 安全 & 合规性中心，请<https://protection.office.com/>转到。 攻击模拟器在**威胁管理** \> **攻击模拟器**中可用。
+- 若要打开安全 & 合规中心，请转<https://protection.office.com/>到。 攻击模拟器在**威胁管理** \> **攻击模拟器**中可用。
 
   ![威胁管理-攻击模拟器](../../media/ThreatMgmt-AttackSimulator.png)
 
-- 若要详细了解不同的 Office 365 订阅中的攻击模拟器的可用性，请参阅[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 有关跨不同 Microsoft 365 订阅的攻击模拟器的可用性的详细信息，请参阅[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
-- 您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[Office 365 安全 & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 您的帐户需要配置用于多重身份验证（MFA），以在攻击模拟器中创建和管理市场活动。 有关说明，请参阅[设置多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
-- 您只能对在 Exchange Online 中具有邮箱的用户运行网络钓鱼或密码攻击活动。
+为成功启动攻击，请确保用于运行模拟攻击的帐户使用多重身份验证。 此外，您必须是全局管理员或安全管理员。 （若要了解有关角色和权限的详细信息，请参阅[安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。）
 
 - 网络钓鱼活动将收集和处理30天的事件。 在你启动市场活动后，历史宣传活动数据将在最长90天内可用。
 
@@ -49,11 +49,11 @@ Office 365 中的攻击模拟器高级威胁防护计划2（ATP 计划2）允许
 
 *仿冒*是电子邮件攻击的一般性术语，试图窃取看似合法或受信任发件人的邮件中的敏感信息。 *Spear 仿冒*是一种目标网络钓鱼攻击，它使用专门为目标收件人（通常是攻击者在收件人上的侦测之后）量身定制的重点和自定义内容。
 
-有关网络钓鱼和 spear 网络钓鱼的详细信息，请参阅[仿冒](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing)。
+- 您是全局管理员或安全管理员
 
 在攻击模拟器中，可以使用两种不同类型的 spear 网络钓鱼活动：
 
-- **Spear 网络钓鱼（凭据获取）**：攻击试图说服收件人单击邮件中的 URL。 如果他们单击该链接，系统将要求用户输入其凭据。 如果是这样，则会将它们转到以下位置之一：
+- [多因素身份验证/条件访问](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)已打开，至少为全局管理员帐户和将使用攻击模拟器的安全管理员。 （理想情况下，为组织中的所有用户启用多重身份验证/条件访问。）
 
   - 一个说明这只是一个测试的默认页面，并提供了有关识别网络钓鱼邮件的提示。
 
@@ -255,7 +255,7 @@ Office 365 中的攻击模拟器高级威胁防护计划2（ATP 计划2）允许
 
    - **强力密码（字典攻击）**：执行以下任一步骤：
 
-     - **手动输入密码**：在**按 enter 以添加密码**框中，键入一个密码，然后按 enter 键。 根据需要多次重复此步骤。
+     - **手动输入密码**：在**按 enter 以添加密码**框中，键入一个密码，然后按 enter 键。 根据需要重复执行此步骤（次数不限）。
 
      - **上载字典文件中的密码**：单击 "**上传**" 以导入每行包含一个密码的现有文本文件和一个空白的最后一行。 文本文件的大小必须为 10 MB 或更小，并且不能包含超过30000个密码。
 

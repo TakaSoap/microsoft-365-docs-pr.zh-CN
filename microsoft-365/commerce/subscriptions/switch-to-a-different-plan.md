@@ -1,5 +1,5 @@
 ---
-title: 切换到其他 Office 365 商业版计划
+title: 切换到其他 Microsoft 365 for business 计划
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,42 +23,47 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
-description: 了解如何切换到新的 Office 365 for business 订阅。
-ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 了解如何切换到新的 Microsoft 365 for business 订阅。
+ms.openlocfilehash: a101ac47aede1413528fd2cb6be1d1df6ab4d961
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142087"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636518"
 ---
-# <a name="switch-to-a-different-office-365-for-business-plan"></a>切换到其他 Office 365 商业版计划
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切换到其他 Microsoft 365 for business 计划
 
 当您的业务发生变化，或者您需要更多功能时，您可以切换计划。  
 
 切换计划最简单的方法是使用管理中心的“**切换计划**”按钮。 但是，在所有情况下都不支持使用 "**切换计划**" 按钮。 在某些情况下，您可能能够手动切换计划。
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 本文适用于旧管理中心。 若要查看有关新管理中心的文章，请参阅[升级到其他计划](upgrade-to-different-plan.md)。 新的管理中心可供所有 Microsoft 365 管理员使用。 有关详细信息，请参阅[关于新的 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
-
-::: moniker-end
 
 **需要其他内容吗？**
-
 - [取消订阅](cancel-your-subscription.md)
-- [将适用于家庭的 Office 365 升级到业务订阅](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [将 Microsoft 365 系列升级到业务订阅](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>使用 "切换计划" 按钮
 
 使用 "**切换计划**" 按钮时，可以通过购买新计划（您可以将当前计划切换到该计划）的过程，在新计划中自动为所有用户分配许可证，并为您取消旧计划。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
 
-    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
+::: moniker-end
 
-    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>页。
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+
+::: moniker-end
 
 2. 选择 "**切换计划**" 以查看可用的新计划的列表。
 
@@ -70,7 +75,7 @@ ms.locfileid: "43142087"
 
 4. 如果需要帮助，请选择 "**签出**" 页面上的 "**立即聊天**"。
 
-    当您完成签出时，Office 365 将需要几分钟的时间来完成切换。 你可以立即开始使用你的新订阅。
+    完成签出后，Microsoft 365 将需要几分钟的时间来完成切换。 你可以立即开始使用你的新订阅。
 
 ## <a name="the-switch-plans-button-isnt-there"></a>未提供 "切换计划" 按钮
 
@@ -78,7 +83,7 @@ ms.locfileid: "43142087"
   
 以下是可能会发生这种情况的原因：
   
-- 您正在使用多个 Office 365 计划。 仅当所有用户订阅同一计划时，才能使用 "**切换计划**" 按钮。
+- 你正在使用多个 Microsoft 365 计划。 仅当所有用户订阅同一计划时，才能使用 "**切换计划**" 按钮。
 
 - 你已在使用 Office 365 企业版 E5，因此你已拥有 Office 365 中提供的所有功能。
 
@@ -86,7 +91,7 @@ ms.locfileid: "43142087"
 
 使用 "**切换计划**" 按钮时，您可以切换到的计划将根据当前计划中的服务显示。 您只能使用 "**切换计划**" 按钮切换到具有相同数据相关服务的计划，或切换到更高版本。 这可确保在切换期间，用户不会丢失与这些服务相关的数据。
   
-若要在切换前比较计划，请参阅[Office 365 for business 产品比较](https://go.microsoft.com/fwlink/p/?linkid=842056)页。 有关技术规范的详细说明，请参阅[Office 365 服务说明](https://go.microsoft.com/fwlink/p/?linkid=842275)。
+若要在切换前比较计划，请参阅[Microsoft 365 for business 产品比较](https://go.microsoft.com/fwlink/p/?linkid=842056)页。 有关技术规范的详细说明，请参阅[Microsoft 365 服务说明](https://go.microsoft.com/fwlink/p/?linkid=842275)。
   
 如果要使用较少的服务切换到计划，则可以[手动切换计划](switch-plans-manually.md)，也可以[致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)寻求帮助。
   
@@ -98,4 +103,4 @@ ms.locfileid: "43142087"
   
 ## <a name="call-support-to-help-you-switch-plans"></a>致电支持部门，获取切换计划的支持
 
-[致电支持人员](../../admin/contact-support-for-business-products.md)
+![电话](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [呼叫支持](../../admin/contact-support-for-business-products.md)

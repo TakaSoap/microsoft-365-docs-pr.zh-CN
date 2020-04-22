@@ -1,5 +1,5 @@
 ---
-title: 配置 EOP 和 Office 365 ATP 的最佳实践
+title: 配置 EOP 和 ATP 的最佳实践
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。
-ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 69d069377a061c440c22b7a00dd43795597c50e9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528613"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638532"
 ---
-# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>配置 EOP 和 Office 365 ATP 的最佳实践
+# <a name="best-practices-for-configuring-eop-and-atp"></a>配置 EOP 和 ATP 的最佳实践
 
 请遵循所建议的这些 Exchange Online Protection (EOP) 最佳做法，以成功达到目的，并避免常见的配置错误。 参阅本主题的前提是，你已经完成安装过程。 如果还没有完成 EOP 安装，请参阅[设置 EOP 服务](set-up-your-eop-service.md)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "43528613"
 
 |安全功能名称|标准|全|评论|
 |---------|---------|---------|---------|
-|[在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
+|[设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
 |[使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)|是|是||
 |[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)|是|是|对 Standard 使用 action = 隔离，对 Strict 执行 action = 拒绝。|
 |部署报告邮件加载项以改进最终用户报告可疑电子邮件的情况|是|是||
@@ -63,7 +63,7 @@ ms.locfileid: "43528613"
 
 ## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>向 Microsoft 报告误报和漏报
 
-若要帮助提高每个人的服务中的垃圾邮件筛选功能，应将误报（正确的电子邮件标记为坏）和漏报（允许的错误电子邮件）报告给 Microsoft 进行分析。 有关详细信息，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。
+若要帮助提高每个人的服务中的垃圾邮件筛选功能，应将误报（正确的电子邮件标记为坏）和漏报（允许的错误电子邮件）报告给 Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="create-mail-flow-rules"></a>创建邮件流规则
 

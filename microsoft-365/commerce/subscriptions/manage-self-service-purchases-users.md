@@ -14,16 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: 用户可以了解如何管理自己的自助购买。
-ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142135"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636635"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
 作为用户，您可以购买对特定产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你将负责支付你所做的任何自助购买。 您可以在 Microsoft 365 管理中心的<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>中管理订阅。
+
 
 您的管理员具有您购买的任何订阅的只读视图。 他们可以查看购买的每个订阅的产品、买方名称、购买订阅、到期日期、购买价格和分配的用户。
 
@@ -94,7 +95,7 @@ ms.locfileid: "43142135"
 
 4. 在右侧窗格中，输入卡详细信息，然后选择 "**保存**"。
 
-### <a name="update-an-existing-payment-method"></a>更新现有付款方法
+### <a name="update-an-existing-payment-method"></a>更新现有的付款方式
 
 1. 在 "管理中心" 中，转到 "**计费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帐单 & 付款</a>" 页。
 
@@ -118,7 +119,7 @@ ms.locfileid: "43142135"
 
 2. 在 "**发票**" 下，选择要查看的发票。
 
-## <a name="need-help-contact-us"></a>需要帮助？ 联系我们。
+## <a name="need-help-contact-us"></a>是否需要帮助？ 联系我们。
 
 有关自助购买的常见问题，请参阅[自助服务购买 FAQ](self-service-purchase-faq.md)。
 

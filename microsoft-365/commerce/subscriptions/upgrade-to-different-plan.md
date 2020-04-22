@@ -24,16 +24,19 @@ search.appverid:
 - GEA150
 description: 了解如何升级到新的订阅。
 monikerRange: o365-worldwide
-ms.openlocfilehash: dbeba16a23490ab756c8ed30ce4856217819e80a
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142075"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636506"
 ---
-# <a name="upgrade-to-a-different-plan"></a>升级到其他计划
+# <a name="upgrade-to-a-different-plan"></a>升级到其他计划 
 
 当您的业务发生变化，或者您需要更多功能时，您可以升级计划。 若要执行此操作，最简单的方法是使用管理中心中的 "**升级**" 选项卡。 但是，并非所有情况下都支持使用 "**升级**" 选项卡。 在某些情况下，您可能能够手动更改计划。
+
+> [!NOTE]
+> 本文适用于新的管理中心。 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。 若要查看有关旧管理中心的文章，请参阅[切换到其他 Microsoft 365 for business plan](switch-to-a-different-plan.md)。
 
 ## <a name="use-the-upgrade-tab"></a>使用 "升级" 选项卡
 
@@ -78,7 +81,7 @@ ms.locfileid: "43142075"
 
 如果在 "**升级**" 选项卡上看不到任何计划，则表示您的计划无法自动升级。 在某些情况下，您可能能够解决问题，以便查看可用于升级的计划，或者可以改为手动升级或更改计划。
 
-### <a name="why-are-there-no-plans-listed-to-upgrade"></a>为什么没有列出要升级的计划？
+ ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>为什么没有列出要升级的计划？
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>你现在无法升级订阅，因为你的用户数超过许可证。
 
@@ -106,7 +109,7 @@ ms.locfileid: "43142075"
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>同一产品有两个或多个计划
 
-仅当所有用户订阅同一计划时，您才可以使用 "**升级**" 选项卡。 例如，如果您有两个 Office 365 商业高级版计划，将无法自动将其中一个升级到另一个计划。
+仅当所有用户订阅同一计划时，您才可以使用 "**升级**" 选项卡。 例如，如果您有两个 Microsoft 365 业务标准计划，则无法将其中一个计划自动升级到另一个计划。
 
 #### <a name="you-have-a-prepaid-plan"></a>你拥有预付费计划
 
@@ -138,13 +141,13 @@ ms.locfileid: "43142075"
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>升级计划对我的服务和帐单有何作用？
 
-在使用管理中心中的 "**升级**" 选项卡自动升级计划时，您的服务和帐单将受到影响。
+使用 "**切换计划**" 按钮（或新管理中心中的 "**升级**" 选项卡）自动升级计划时，您的服务和帐单将受到影响。
 
 ### <a name="access-to-services"></a>对服务的访问
 
-在计划升级时，**管理员**将无法使用管理中心。 这最多需要一小时的时间。
-
-**用户** 不会遇到服务中断情形。 他们将继续拥有现有服务，直到升级完全完成。
+ 在计划升级时，**管理员**将无法使用管理中心。 这最多需要一小时的时间。
+  
+ **用户** 不会遇到服务中断情形。 他们将继续拥有现有服务，直到升级完全完成。
   
 ### <a name="users-and-licenses"></a>用户和许可证
 
@@ -161,9 +164,9 @@ ms.locfileid: "43142075"
 计划升级完成后，旧订阅的记帐将关闭，新订阅上的记帐将打开。 你将为旧订阅上任何未使用的服务获得按比例分配的信用。 升级到新订阅后，你将在30天内收到新发票，其中包含你的旧订阅的学分。
   
 > [!NOTE]
-> 你的支付帐户计入贷方实际花费的时间长度取决于订阅所用的支付方式。
-
-**是否在过期之前从预付订阅升级？** 如果新订阅的总成本高于或等于预付费订阅的剩余价值，则不会丢失任何预付费的时间。 在签出页面上，你将看到未使用的时间的信用。 但是，如果新订阅的总成本低于当前预付费订阅的剩余价值，则你将丢失部分未使用的时间。 你将在结帐前收到通知，并且你可以等待升级，直到更接近预付订阅的到期日期。
+> 你的支付帐户计入贷方实际花费的时间长度取决于订阅所用的支付方式。 
+  
+ **是否在过期之前从预付订阅升级？** 如果新订阅的总成本高于或等于预付费订阅的剩余价值，则不会丢失任何预付费的时间。 在签出页面上，你将看到未使用的时间的信用。 但是，如果新订阅的总成本低于当前预付费订阅的剩余价值，则你将丢失部分未使用的时间。 你将在结帐前收到通知，并且你可以等待升级，直到更接近预付订阅的到期日期。
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>致电支持部门以帮助你升级计划
 
@@ -173,4 +176,4 @@ ms.locfileid: "43142075"
 
 [手动更改计划](change-plans-manually.md)
 
-[在切换 Office 365 for business 计划之前备份数据](back-up-data-before-switching-plans.md)
+[在切换 Microsoft 365 for business 计划之前备份数据](back-up-data-before-switching-plans.md)

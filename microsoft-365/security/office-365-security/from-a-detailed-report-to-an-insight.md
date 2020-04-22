@@ -17,16 +17,16 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: 了解如何从详细报告移动到安全&amp;合规性中心中推荐的操作的洞察力。
-ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8d56886a39e14eddd5ad6505a4fe68e20fc6a543
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086194"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638078"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>演练 - 从详细报表到见解
 
-如果你不熟悉[Office 365 安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)，它可能会帮助你了解如何轻松地从详细报告导航到真知灼见和推荐的操作。 
+如果您不熟悉[ &amp;安全合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)，它可能会帮助您了解如何轻松地从详细报告导航到真知灼见和推荐的操作。 
   
 这是针对安全&amp;合规中心的几个演练之一。 若要查看其他演练，请参阅 "[相关主题](#related-topics)" 部分。 
   

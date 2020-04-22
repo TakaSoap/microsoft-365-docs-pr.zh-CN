@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 本主题介绍了如何设置 Microsoft Exchange Online Protection (EOP)。 如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。 若要详细了解如何配置连接器，请参阅Configure mail flow using connectors in Office 365。
-ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 9a2c876ac7696adfcabf87d4ad13e29374509f1b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081228"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638304"
 ---
 # <a name="set-up-your-eop-service"></a>设置 EOP 服务
 
@@ -30,7 +30,7 @@ ms.locfileid: "43081228"
 
 - 估计完成该任务的时间：1 小时
 
-- 要配置连接器，你的帐户必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关信息，请参阅[EOP 中的功能权限](feature-permissions-in-eop.md)。
+- 若要配置连接器，你的帐户必须是全局管理员或 Exchange 公司管理员（组织管理角色组）。 有关信息，请参阅[EOP 中的功能权限](feature-permissions-in-eop.md)。
 
 - 如果你还未注册 EOP，请访问 [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) 并选择购买或者试用服务。
 
@@ -54,11 +54,11 @@ ms.locfileid: "43081228"
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>步骤 3：使用 EAC 设置邮件流
 
-在能使邮件在 EOP 和你的内部部署邮件服务器间流动的 [Set up connectors to route mail between Office 365 and your own email servers](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail) (EAC) 中创建连接器。有关详细说明，请参阅Exchange 管理中心。
+在能使邮件在 EOP 和你的内部部署邮件服务器间流动的 Set up connectors to route mail between Office 365 and your own email servers (EAC) 中创建连接器。 有关详细说明，请参阅[设置连接器以在 microsoft 365 和您自己的电子邮件服务器之间路由邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。
 
 ### <a name="how-do-you-know-this-task-worked"></a>如何判断此任务生效？
 
-检查服务与您的环境之间的邮件流。 有关详细信息，请参阅[Test mail flow by 验证 Office 365 连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。
+检查服务与您的环境之间的邮件流。 有关详细信息，请参阅[Test mail flow by 验证 Microsoft 365 连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步骤 4：允许入站端口 25 SMTP 访问
 
@@ -75,13 +75,13 @@ ms.locfileid: "43081228"
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步骤6：使用 Microsoft 365 管理中心将 MX 记录指向 EOP
 
-按照 Office 365 域配置步骤更新你的域的 MX 记录，以便于你的入站电子邮件能够通过 EOP。请务必将你的 MX 记录直接指向 EOP 而不是让第三方筛选服务将电子邮件中继到 EOP。有关详细信息，请再次参阅[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+按照域配置步骤更新您的域的 MX 记录，以便入站电子邮件通过 EOP 流。 请务必将你的 MX 记录直接指向 EOP 而不是让第三方筛选服务将电子邮件中继到 EOP。 有关详细信息，请再次参阅[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ### <a name="how-do-you-know-this-task-worked"></a>如何判断此任务生效？
 
 此时，您已验证经过适当配置的出站内部部署连接器的服务传递，而且已验证 MX 记录是否指向 EOP。现在，您可以选择运行以下其他测试来验证该服务是否会将电子邮件成功传递到内部部署环境：
 
-- 检查服务与您的环境之间的邮件流。 有关详细信息，请参阅[Test mail flow by 验证 Office 365 连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。
+- 检查服务与您的环境之间的邮件流。 有关详细信息，请参阅[Test mail flow by 验证 Microsoft 365 连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。
 
 - 将来自基于 Web 的任何电子邮件帐户的电子邮件发送到组织中的邮件收件人，组织的域与您添加到服务上的域相匹配。使用 Microsoft Outlook 或另一个电子邮件客户端确认邮件是否已传递到内部部署邮箱。
 

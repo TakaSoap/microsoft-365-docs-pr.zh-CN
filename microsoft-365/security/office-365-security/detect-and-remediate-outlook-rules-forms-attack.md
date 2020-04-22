@@ -1,5 +1,5 @@
 ---
-title: 检测和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
+title: 检测和修正 Outlook 规则和自定义窗体注入攻击
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
-ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599439"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637588"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>检测和修正 Outlook 规则和自定义窗体注入攻击
 
 **摘要**了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击。
 
@@ -140,7 +140,7 @@ ms.locfileid: "41599439"
 
 #### <a name="interpreting-the-output"></a>解释输出
 
-- **MailboxRulesExport-**** yyyy-mm-dd：检查包含应用程序或可执行文件的操作条件的规则（每行一个）：
+- **MailboxRulesExport-*yyyy-mm-dd*** yyyy-mm-dd：检查包含应用程序或可执行文件的操作条件的规则（每行一个）：
 
   - **ActionType （列 A）**：如果看到值 "ID_ACTION_CUSTOM"，则该规则可能是恶意的。
 
@@ -164,7 +164,7 @@ ms.locfileid: "41599439"
 
 4. 安装最新版本的 Outlook。 请注意，默认情况下，当前版本的 Outlook 阻止这两种攻击类型。
 
-5. 删除邮箱的所有脱机副本后，重置用户的密码（使用高质量的密码），并按照[Setup 多重身份365验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)（如果尚未启用 MFA）中的步骤操作。 这可确保用户的凭据不会通过其他方式（如网络钓鱼或密码重用）公开。
+5. 删除邮箱的所有脱机副本后，重置用户的密码（使用高质量的密码），如果尚未启用 MFA，请按照[为用户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)中的步骤进行操作。 这可确保用户的凭据不会通过其他方式（如网络钓鱼或密码重用）公开。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -192,7 +192,7 @@ ms.locfileid: "41599439"
 
 只有攻击者在窃取或破坏用户的帐户后，才会使用这些规则和表单攻击。 因此，阻止对组织使用这些漏洞的第一步是主动保护您的用户帐户。 帐户受到破坏的一些最常见的方法是通过网络钓鱼或[密码 spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻击。
 
-保护用户帐户（尤其是管理员帐户）的最佳方法是为[Office 365 用户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。 此外，还应执行以下操作：
+保护用户帐户（尤其是管理员帐户）的最佳方法是为[用户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。 此外，还应执行以下操作：
 
 - 监视如何[访问和使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)您的用户帐户。 您可能不会阻止最初的破坏，但您将通过更快地进行检测来缩短危害的持续时间和影响。 您可以使用这些[Office 365 云应用安全策略](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)来监视您在异常活动上的帐户和警报：
 
@@ -234,9 +234,9 @@ ms.locfileid: "41599439"
 
 使用本地 Exchange 安装的客户应考虑阻止未提供修补程序的旧版本的 Outlook。 有关此过程的详细信息，请参阅[配置 Outlook 客户端阻止](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)一文。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Office 365
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>安全 Microsoft 365，如 cybersecurity pro
 
-你的 Office 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Office 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Office 365 租户。
+你的 Microsoft 365 订阅附带了一组功能强大的安全功能，可用于保护你的数据和用户。 使用[microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 microsoft 建议的 microsoft 365 租户安全最佳实践。
 
 - 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
 

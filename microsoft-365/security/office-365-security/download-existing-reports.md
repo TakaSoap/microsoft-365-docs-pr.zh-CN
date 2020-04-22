@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: 了解如何下载安全&amp;合规中心中的一个或多个现有报告。
-ms.openlocfilehash: ea5af9aad268b4a7d540e70cc8a1f64f303159cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62f87c3a11e35bd6dae25c786ac2360e9937c84d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599429"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637576"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>下载安全&amp;合规性中心中的现有报告
 
@@ -29,7 +29,7 @@ ms.locfileid: "41599429"
 ## <a name="download-existing-reports"></a>下载现有报表
 
 > [!IMPORTANT]
-> 确保您具有[在 Office 365 安全&amp;合规中心中分配](permissions-in-the-security-and-compliance-center.md)的必要权限。 通常情况下，Office 365 全局管理员、安全管理员和安全读者可以访问安全&amp;合规性中心中的报告。 
+> 确保您具有[安全&amp;合规性中心中分配](permissions-in-the-security-and-compliance-center.md)的必要权限。 通常情况下，全局管理员、安全管理员和安全读者可以访问安全&amp;合规性中心中的报告。 
   
 1. 在 "[安全&amp;合规性中心](https://protection.office.com)" 中，转到 "**报告** \> "**报告以下载**。
     
@@ -39,7 +39,7 @@ ms.locfileid: "41599429"
     
 ## <a name="related-topics"></a>相关主题
 
-[Office 365 安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)
+[安全&amp;合规中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)
   
 [在安全&amp;合规中心中创建报表的日程安排](create-a-schedule-for-a-report.md)
   

@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP 中的 Campaigns Views
+title: ATP 中的市场活动视图
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的 Campaigns Views。
-ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637325"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637814"
 ---
-# <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP 中的 Campaign Views
+# <a name="campaign-views-in-atp"></a>ATP 中的市场活动视图
 
-Campaign Views 是 Office 365 安全与合规中心的高级威胁防护 (ATP) 中的一项功能，可以对服务中的钓鱼攻击进行识别和分类。 Campaign Views 可以帮助你：
+活动视图是安全 & 合规性中心中的高级威胁防护（ATP）中的一项功能，用于识别和分类服务中的网络钓鱼攻击。 Campaign Views 可以帮助你：
 
 - 高效调查和应对钓鱼攻击。
 
@@ -40,7 +40,7 @@ Campaign Views 是 Office 365 安全与合规中心的高级威胁防护 (ATP) �
 
 活动是针对一个或多个组织的协同式电子邮件攻击。 窃取凭据和公司数据的电子邮件攻击是一个大型且 lucrative 的行业。 随着技术的提高而停止攻击的努力，攻击者将修改其方法以确保持续的成功。
 
-Microsoft 利用整个 Office 365 服务中大量的防网络钓鱼、反垃圾邮件和反恶意软件数据来帮助确定市场活动。 我们根据几个因素对攻击信息进行分析和分类。 例如：
+Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反恶意软件数据来帮助确定市场活动。 我们根据几个因素对攻击信息进行分析和分类。 例如：
 
 - **攻击来源**：源 IP 地址和发件人电子邮件域名。
 
@@ -52,7 +52,7 @@ Microsoft 利用整个 Office 365 服务中大量的防网络钓鱼、反垃圾�
 
 市场活动可能较短，或者可能跨多天、几周或月，且具有有效和非活动时段。 可能会针对你的特定组织发起市场活动，或你的组织可能是跨多个公司的更大市场活动的一部分。
 
-## <a name="campaign-views-the-office-365-security--compliance-center"></a>Campaign Views Office 365 安全与合规中心
+## <a name="campaign-views-the-security--compliance-center"></a>市场活动视图安全 & 合规性中心
 
 "活动" 视图在**威胁管理** \> **市场活动**的[安全性 & 合规性中心](https://protection.office.com)中提供。
 
@@ -131,7 +131,7 @@ Microsoft 利用整个 Office 365 服务中大量的防网络钓鱼、反垃圾�
   |:-----|:-----|:-----|
   | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|垃圾邮件筛选（例如，通过邮件流规则（也称为传输规则）进行评估之前，邮件被标记为非垃圾邮件和/或跳过的筛选器。<br/><br/>邮件因其他原因而跳过垃圾邮件筛选（例如，发件人和收件人似乎位于同一组织中）。|
   |**Blocked**|`SFV:SKS`|垃圾邮件筛选（例如，通过邮件流规则）评估邮件之前，邮件被标记为垃圾邮件。|
-  |**已检测**|`SFV:SPM`|垃圾邮件筛选器将邮件标记为垃圾邮件。|
+  |**已检测**|`SFV:SPM`|邮件被垃圾邮件筛选标记为垃圾邮件。|
   |**未检测到**|`SFV:NSPM`|垃圾邮件筛选器将邮件标记为 "非垃圾邮件"。|
   |**以后**|`SFV:SKQ`|邮件跳过垃圾邮件筛选，因为它已从隔离区中释放。|
   |**租户允许**<sup>\*</sup>|`SFV:SKA`|邮件由于反垃圾邮件策略设置而跳过垃圾邮件筛选（例如，发件人位于 "允许的发件人" 列表或 "允许的域" 列表中）。|

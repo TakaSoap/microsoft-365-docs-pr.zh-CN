@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何为首要项目的高管控数据使用团队开发一套新的产品和服务。
-ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 310ef33d4add7d71616aee8808515ca90536d8c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068020"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636494"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的最高机密项目团队
 
@@ -50,21 +50,21 @@ Contoso IT 员工将团队用于项目2X 和这些步骤的[高管控数据](sec
 
 ## <a name="step-2-configured-a-dlp-policy-and-the-underlying-site-for-a-retention-label"></a>步骤2：为保留标签配置了 DLP 策略和基础网站 
 
-首先，Contoso 管理员将现有的**高度机密**Office 365 保留标签应用于项目2组基础 SharePoint 网站的 "**文档**" 部分。
+首先，Contoso 管理员将现有的**高度机密**的保留标签应用于项目2组基础 SharePoint 网站的 "**文档**" 部分。
 
-接下来，他们创建了一个名为**Project 2x**的新 OFFICE 365 DLP 策略，其中：
+接下来，他们创建了一个名为**Project 2x**的新 DLP 策略，其中：
 
-- 使用 "高度机密" Office 365 保留标签。
+- 使用高度机密的保留标签。
 - 当用户尝试在 Contoso 之外的 Project 2X 工作组中共享文件时，会阻止用户。
 
 有关配置的详细信息，请参阅[使用保留标签和 DLP 保护团队中的文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp)。
 
-## <a name="step-3-created-an-office-365-sensitivity-label-for-the-project-2x-team"></a>步骤3：为项目2团队创建 Office 365 灵敏度标签
+## <a name="step-3-created-a-sensitivity-label-for-the-project-2x-team"></a>步骤3：为项目2团队创建敏感度标签
 
-Contoso admins 创建了一个名为**Project 2x**的新 Office 365 敏感度标签，其类型为：
+Contoso admins 创建了一个名为 " **Project 2** " 的新敏感度标签，其类型为：
 
 - 需要加密。
-- 允许 "Project 2X Office 365" 组的 "共同创作" 权限。
+- 允许为 Project 2 个 Microsoft 365 组创建共同创作权限。
 
 下面是项目2组的结果配置。
 
@@ -72,7 +72,7 @@ Contoso admins 创建了一个名为**Project 2x**的新 Office 365 敏感度标
  
 受以下条件保护的基础 Project 2X SharePoint 网站的 "文档" 部分中的文件：
 
-- 网站权限，仅允许访问 Project 2X Office 365 组的成员。
+- 网站权限，仅允许对项目2个 Microsoft 365 组的成员进行访问。
 - 高度机密的保留标签，将自动分配给新文件。
 - 一种 DLP 策略，它使用阻止文件与外部用户共享的高度机密保留标签和设置。
 - Project 2-2 敏感度标签，带有文件移动或复制到网站时携带的加密和权限。

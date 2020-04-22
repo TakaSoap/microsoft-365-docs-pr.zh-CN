@@ -1,5 +1,5 @@
 ---
-title: 续订 Office 365 for business
+title: 续订 Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,19 +23,19 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: '了解如何使用产品密钥续订 Office 365 for business 订阅，并打开或关闭定期记帐。 '
-ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: '了解如何使用产品密钥续订 Microsoft 365 for business 订阅，并打开或关闭定期记帐。 '
+ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175198"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636555"
 ---
-# <a name="renew-office-365-for-business"></a>续订 Office 365 for business
+# <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 for business
 
-本文适用于最具付费的 Office 365 for business 订阅。
+本文适用于大多数付费的 Microsoft 365 for business 订阅。
   
-若要使用从零售商店或 Office 365 合作伙伴购买的产品密钥进行续订，请参阅[查找和输入产品密钥](../enter-your-product-key.md)。
+若要使用从零售商店或 Microsoft 合作伙伴购买的产品密钥进行续订，请参阅[查找和输入产品密钥](../enter-your-product-key.md)。
 
 > [!NOTE]
 > 在某些国家或地区不提供按银行帐户付款。
@@ -47,6 +47,7 @@ ms.locfileid: "43175198"
 如果你使用产品密钥预付订阅，你的订阅将在订阅期限结束时过期。 您可以打开**定期付费**，并提供信用卡或银行帐户信息，以便您的订阅将在您订阅的一天内每年继续计费。 您还可以选择每月支付一次，也可以提前支付全年费用。 您的信用卡或银行帐户在初始订阅期限到期之前不会得到支付。
 
 ::: moniker range="o365-worldwide"
+
 
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
@@ -67,7 +68,11 @@ ms.locfileid: "43175198"
 
 ::: moniker range="o365-germany"
   
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
+
+    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
+
+    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>页。
 
 2. 选择想要为其管理定期计费的订阅。
  
@@ -86,7 +91,11 @@ ms.locfileid: "43175198"
 
 ::: moniker range="o365-21vianet"
   
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
+
+    如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>页。
+
+    如果使用 由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>页。
 
 2. 选择想要为其管理定期计费的订阅。
  
@@ -106,13 +115,13 @@ ms.locfileid: "43175198"
 ## <a name="related-articles"></a>相关文章
 
 [重新激活订阅](reactivate-your-subscription.md)
-
+  
 [我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
 
-[添加、更新或删除支付方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+[添加、更新或删除付款方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
 [更改付款方式](../billing-and-payments/change-payment-method.md)
   
 [输入你的产品密钥](../enter-your-product-key.md)
   
-[购买 Office 365 试用版的商业版](../buy-a-subscription-from-your-free-trial.md)
+[购买试用版的 Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)

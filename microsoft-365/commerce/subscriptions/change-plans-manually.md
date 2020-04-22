@@ -1,5 +1,5 @@
 ---
-title: 手动更改 Office 365 for business 计划
+title: 手动更改 Microsoft 365 商业版计划
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态来手动更改订阅。
-ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142147"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636579"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -51,9 +51,9 @@ ms.locfileid: "43142147"
 
 OR
 
-**购买新的订阅和许可证：** 按照 "[购买其他 Office 365 for business 订阅](../buy-another-subscription.md)" 中的步骤购买新订阅。
+**购买新的订阅和许可证：** 按照 "[购买其他 Microsoft 365 for business 订阅](../buy-another-subscription.md)" 中的步骤购买新订阅。
 
-请确保您购买了用户当前所在组织的订阅。 例如，检查要移动的 Office 365 用户的电子邮件地址。 如果他们的电子邮件\@地址包含 contoso.com，则必须购买 contoso.com 的新订阅。
+请确保您购买了用户当前所在组织的订阅。 例如，检查您要移动的用户的电子邮件地址。 如果他们的电子邮件\@地址包含 contoso.com，则必须购买 contoso.com 的新订阅。
 为您要移动的每个用户包含一个许可证。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤3：检查新的订阅和许可证
@@ -114,5 +114,4 @@ If you moved all users from one subscription to another, and you no longer need 
 如果仅将一些用户移动到其他订阅，请[删除](../licenses/remove-licenses-from-subscription.md)不再需要的许可证。
 
 ## <a name="call-support-to-help-you-change-plans"></a>致电支持部门以帮助你更改计划
-
 [致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)

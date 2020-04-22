@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
+title: 使用 ATP 安全链接设置自定义不重写 Url 列表
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,14 +17,14 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全链接策略时，可以包括 "不重写" 的 Url 列表，以使组织中的某些人能够访问包含在列表中的网站。
-ms.openlocfilehash: 1983e0ff2ea85092af483d4f7a563681a6441152
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 490fb3279f2c54bc6f2335510aa711866318e01d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082203"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638376"
 ---
-# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义不重写 Url 列表
+# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>使用 ATP 安全链接设置自定义不重写 Url 列表
 
 > [!IMPORTANT]
 > 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -37,16 +37,16 @@ ms.locfileid: "42082203"
 
 ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "不重写" 列表中的例外。 如果您具有必要的权限，则可以设置自定义的 "不重写" 列表。 在添加或编辑适用于组织中特定收件人的安全链接策略时，可以执行此操作。
 
-若要编辑（或定义） ATP 策略，必须为您分配适当的角色。 下表包括一些示例。 若要了解详细信息，请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+若要编辑（或定义） ATP 策略，必须为您分配适当的角色。 下表包括一些示例。 若要了解详细信息，请参阅[安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 |Role  |分配的位置/方式  |
 |---------|---------|
-|Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
+|全局管理员 |默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
 |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
 |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)） |
 
 > [!TIP]
-> 若要了解有关角色和权限的详细信息，请参阅[Office 365 Security & 合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+> 若要了解有关角色和权限的详细信息，请参阅[Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>查看或编辑自定义 "不重写" Url 列表
 

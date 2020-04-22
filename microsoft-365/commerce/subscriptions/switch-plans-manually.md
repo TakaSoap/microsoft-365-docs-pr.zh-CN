@@ -1,5 +1,5 @@
 ---
-title: 手动切换 Office 365 商业版计划
+title: 手动切换 Microsoft 365 for business 计划
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: 通过购买新订阅并确保订阅已列出并处于活动状态，手动切换 Office 365 for business 订阅。
-ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: 通过购买新订阅并确保订阅已列出并处于活动状态，手动切换 Microsoft 365 for business 订阅。
+ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540839"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636530"
 ---
-# <a name="switch-office-365-for-business-plans-manually"></a>手动切换 Office 365 商业版计划
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>手动切换 Microsoft 365 for business 计划
 
 ::: moniker range="o365-worldwide"
-
 > [!NOTE]
-> 本文适用于旧管理中心。 若要查看有关新管理中心的文章，请参阅[手动更改计划](change-plans-manually.md)。 新的管理中心可供所有 Microsoft 365 管理员使用。 有关详细信息，请参阅[关于新 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
-
+> 本文适用于旧管理中心。 若要查看有关新管理中心的文章，请参阅[手动更改计划](change-plans-manually.md)。 新管理中心可供所有 Microsoft 365 管理员使用，您可以选择在主页顶部的 "**尝试新管理中心**" 切换（位于主页顶部）选择 ""。 有关详细信息，请参阅[关于新 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>步骤1：确定如何切换计划
@@ -56,11 +54,11 @@ ms.locfileid: "43540839"
   
 - 和
   
- **购买新的订阅和许可证：** 按照 "[购买其他 Office 365 for business 订阅](../buy-another-subscription.md)" 中的步骤购买新订阅。
+ **购买新的订阅和许可证：** 按照 "[购买其他 Microsoft 365 for business 订阅](../buy-another-subscription.md)" 中的步骤购买新订阅。
   
 请确保您购买了用户当前所在组织的订阅。 例如，检查您要移动的用户的电子邮件地址。 如果他们的电子邮件地址包含 @contoso .com，则必须购买 contoso.com 的新订阅。 为您要移动的每个用户包含一个许可证。
   
- **如果您需要有关选择计划的帮助**，请参阅[Office 365 for business 产品比较](https://go.microsoft.com/fwlink/p/?linkid=842056)页或[致电支持部门](../../admin/contact-support-for-business-products.md)。
+ **如果您需要有关选择计划的帮助**，请参阅[Microsoft 365 for business 产品比较](https://go.microsoft.com/fwlink/p/?linkid=842056)页或[致电支持部门](../../admin/contact-support-for-business-products.md)。
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤3：检查新的订阅和许可证
 
@@ -86,7 +84,7 @@ ms.locfileid: "43540839"
 
     您要将用户移出的订阅和要将用户移动到的订阅必须一起列出。 如果在首次检查时新订阅不在此处，请稍后重试。 检查两个订阅是否都列在 "**活动**" 下。 [新订阅未列出或未处于活动状态](#the-new-subscription-isnt-listed-or-isnt-active)。
 
-   **使用可用许可证的新 Office 365 for business 订阅**
+   **新的 Microsoft 365 for business 订阅（具有可用许可证）**
 
     ![显示新订阅的许可证数量的 "订阅" 页。](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -94,7 +92,7 @@ ms.locfileid: "43540839"
 
     每个用户都需要一个与其订阅相匹配的许可证。 因此，如果要将10个用户移动到 Office 365 企业版 E5，则需要确保十个许可证可用。 在这里的图中，为 Office 365 企业版 E5 购买了10个许可证，并且所有十个许可证均可用于分配。
 
-4. **是否需要新订阅的更多许可证？** 转到 "**订阅**" 页面并购买适用于[Office 365 的许可证以进行商业订阅](../licenses/buy-licenses.md)。
+4. **是否需要新订阅的更多许可证？** 转到 "**订阅**" 页面并[购买适用于 Microsoft 365 for business 订阅的许可证](../licenses/buy-licenses.md)。
   
     [旧的许可证是什么？](#what-about-the-old-licenses)
 

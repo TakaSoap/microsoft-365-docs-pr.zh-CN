@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 ATP 安全链接设置自定义已阻止 Url 列表
+title: 使用 ATP 安全链接设置自定义已阻止 Url 列表
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用 Office 365 高级威胁防护为您的组织设置阻止的 Url 的列表。 阻止的 Url 将根据 ATP 安全链接策略应用于电子邮件和 Office 文档。
-ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ff8709a8bf0f8afc27ace2b3977be975f42c33a5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088083"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638400"
 ---
-# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全链接设置自定义已阻止 Url 列表
+# <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>使用 ATP 安全链接设置自定义已阻止 Url 列表
 
 > [!IMPORTANT]
 > 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -33,7 +33,7 @@ ms.locfileid: "42088083"
   
 ![阻止此网站](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-"阻止的 Url" 列表由组织的 Office 365 安全团队定义，该列表适用于组织中由 Office 365 ATP 安全链接策略涵盖的所有人。 
+"阻止的 Url" 列表由组织的 Microsoft 365 for business security 团队定义，该列表适用于组织中由 Office 365 ATP 安全链接策略涵盖的所有人。 
   
 阅读本文，了解如何为[Office 365 中的 ATP 安全链接](atp-safe-links.md)设置组织的自定义 "阻止 url" 列表。
   
@@ -45,12 +45,12 @@ ms.locfileid: "42088083"
 
 |Role  |分配的位置/方式  |
 |---------|---------|
-|Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
+|全局管理员 |默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
 |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
 |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)） |
 
 > [!TIP]
-> 若要了解有关角色和权限的详细信息，请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+> 若要了解有关角色和权限的详细信息，请参阅[安全&amp;合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>查看或编辑自定义阻止的 Url 列表
   

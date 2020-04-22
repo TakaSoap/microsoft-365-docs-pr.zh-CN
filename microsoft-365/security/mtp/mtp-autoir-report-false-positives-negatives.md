@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 4030469b54d9a3a9c6f2eaceae384d39ea7f3e20
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637076"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>处理自动调查和响应功能中的误报/否定
 
@@ -45,7 +45,7 @@ ms.locfileid: "42955657"
 
 |缺少或错误地检测到项目 |服务  |需执行的操作  |
 |---------|---------|---------|
-|-电子邮件 <br/>-电子邮件附件 <br/>-电子邮件中的 URL<br/>-Office 文件中的 URL      |[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[将可疑的垃圾邮件、网络钓鱼、Url 和文件提交到 Microsoft for Office 365 扫描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|-电子邮件 <br/>-电子邮件附件 <br/>-电子邮件中的 URL<br/>-Office 文件中的 URL      |[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[将可疑的垃圾邮件、网络钓鱼、Url 和文件提交给 Microsoft 进行扫描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |设备上的文件或应用    |[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection)         |[将文件提交给 Microsoft 进行恶意软件分析](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>调整警报以防止定期误报

@@ -14,20 +14,20 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护（ATP）组织中提供的高级反网络钓鱼策略。
-ms.openlocfilehash: b0316133c90837bedc657bde355f31d50ffe76ea
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 358abc2835e8d1fba39d72021f03b75775528bcf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537457"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638450"
 ---
-# <a name="configure-atp-anti-phishing-policies-in-office-365"></a>在 Office 365 中配置 ATP 反网络钓鱼策略
+# <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
 
-ATP 反网络钓鱼策略是[Office 365 高级威胁防护](office-365-atp.md)的一部分。 ATP 反网络钓鱼策略可帮助保护您的组织免受恶意的基于模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。 有关 Exchange Online Protection （EOP）和 ATP 反网络钓鱼策略中的反网络钓鱼策略之间的差异的详细信息，请参阅[Office 365 中的反网络钓鱼保护](anti-phishing-protection.md)。
+ATP 反网络钓鱼策略是[Office 365 高级威胁防护](office-365-atp.md)的一部分。 ATP 反网络钓鱼策略可帮助保护您的组织免受恶意的基于模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。 有关 Exchange Online Protection （EOP）和 ATP 反网络钓鱼策略之间的反网络钓鱼策略之间的差异的详细信息，请参阅[反钓鱼保护](anti-phishing-protection.md)。
 
 管理员可以查看、编辑和配置（但不能删除）默认的 ATP 反网络钓鱼策略。 为了获得更多的粒度，您还可以创建适用于组织中的特定用户、组或域的自定义 ATP 反网络钓鱼策略。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-您可以在 Office 365 安全 & 合规性中心或 Exchange Online PowerShell 中配置 ATP 反网络钓鱼策略。
+您可以在安全 & 合规性中心或 Exchange Online PowerShell 中配置 ATP 反网络钓鱼策略。
 
 若要了解如何配置 Exchange Online Protection 组织中提供的更有限的内置反网络钓鱼策略（即，Office 365 组织无 ATP），请参阅[在 EOP 中配置默认的反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
@@ -73,7 +73,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除反网络钓鱼策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对反网络钓鱼策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅 [Office 365 安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除反网络钓鱼策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对反网络钓鱼策略进行只读访问，您需要是**安全读者**角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 有关 ATP 反网络钓鱼策略的建议设置，请参阅[OFFICE ATP 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。
 

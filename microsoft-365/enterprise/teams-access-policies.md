@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035095"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636719"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保护团队聊天、组和文件的策略建议
 
@@ -33,9 +33,9 @@ ms.locfileid: "43035095"
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>其他相关服务之前的团队入门
 
-您无需启用相关服务即可开始使用 Microsoft 团队。 这些都是正常工作的。 但是，您确实需要准备好管理以下内容：
+您无需启用相关服务即可开始使用 Microsoft 团队。 这些都是 "只是工作"。 但是，您确实需要准备好管理以下内容：
 
-- Office 365 组
+- Microsoft 365 组
 - SharePoint 团队网站
 - OneDrive for Business
 - 邮箱
@@ -84,7 +84,7 @@ ms.locfileid: "43035095"
 
 ### <a name="guest-access-in-teams"></a>团队中的来宾访问
 
-除了企业或组织内部的用户的策略外，管理员还可以允许来宾访问允许在用户的用户的基础上为您的企业或组织外部的人员访问团队资源并与之交互内部人员，如组对话、聊天和会议等。 您可以通过以下链接了解有关来宾访问的详细信息：[团队来宾访问](https://docs.microsoft.com/microsoftteams/guest-access)
+除了企业或组织内部用户的策略之外，管理员还可以启用来宾访问以允许在用户的用户的基础上访问团队资源并与内部人员进行交互（如组对话、聊天和会议），从而获得人员。 您可以通过以下链接了解有关来宾访问的详细信息：[团队来宾访问](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>团队中的外部访问
 

@@ -16,16 +16,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: 2b138830cff7337d7949606cc110ea8f7ae1c0ff
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897010"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638436"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>在 Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置
 
-Exchange Online 中的组织反垃圾邮件设置由 Exchange Online Protection （EOP）控制。 有关详细信息，请参阅[Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。
+Exchange Online 中的组织反垃圾邮件设置由 Exchange Online Protection （EOP）控制。 有关详细信息，请参阅 [Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。
 
 但是，管理员还可以在 Exchange Online 中的各个邮箱上配置特定的反垃圾邮件设置：
 
@@ -47,7 +47,7 @@ Exchange Online 中的组织反垃圾邮件设置由 Exchange Online Protection 
 
 - 您需要先分配权限，然后才能执行这些过程。 具体来说，您需要 "**邮件收件人**" 角色（默认情况下分配给 "**组织管理**"、"**收件人管理**" 和 "**自定义邮件收件人**" 角色组）或 "**用户选项**" 角色（默认情况下分配给 "**组织管理**" 和 "**技术支持**" 角色组）。 若要向 Exchange Online 中的角色组添加用户，请参阅[在 Exchange online 中修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)。 请注意，拥有默认权限的用户可以在其自己的邮箱上执行这些相同的过程，只要他们有[权访问 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)即可。
 
-- 在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，您需要在内部部署 Exchange 中配置邮件流规则（也称为传输规则），以翻译 EOP 垃圾邮件筛选判定，以便垃圾邮件规则可以将邮件移动到"垃圾邮件" 文件夹。 有关详细信息，请参阅[Configure 独立 EOP 以将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+- 在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>使用 Exchange Online PowerShell 启用或禁用邮箱中的垃圾邮件规则
 
@@ -78,7 +78,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 - 如果用户从未打开过其邮箱，则在运行以前的命令时可能会收到错误消息。 若要取消批量操作的此错误， `-ErrorAction SlientlyContinue`请添加到**set-mailboxjunkemailconfiguration**命令。
 
-- 即使禁用垃圾邮件规则，Outlook 垃圾邮件筛选器（取决于其配置方式）也可以确定邮件是否为垃圾邮件，并且可以根据其自身的垃圾邮件结论和安全列表集合，将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹邮箱。 有关详细信息，请参阅本主题中的[有关 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook)部分。
+- 即使禁用垃圾邮件规则，Outlook 垃圾邮件筛选器（取决于其配置方式）也可以确定邮件是否为垃圾邮件，并且可以根据其自身的垃圾邮件结论和邮箱上的安全列表集合，将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 有关详细信息，请参阅本主题中的[有关 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook)部分。
 
 ### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 
@@ -169,7 +169,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 ## <a name="about-junk-email-settings-in-outlook"></a>关于 Outlook 中的配置垃圾邮件设置
 
-若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，请参阅[管理模板文件（ADMX/ADML）和 Office 自定义工具 For office 365 专业增强版、office 2019 和 office 2016](https://www.microsoft.com/download/details.aspx?id=49030)。
+若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，请参阅适用于[Microsoft 365 Apps for enterprise、office 2019 和 office 2016 的管理模板文件（ADMX/ADML）和 Office 自定义工具](https://www.microsoft.com/download/details.aspx?id=49030)。
 
 将 "Outlook 垃圾邮件筛选器" 设置为默认值 "在**家庭** \> **垃圾** \>邮件中**不自动筛选**" "垃圾**邮件选项** \> "**选项**时，Outlook 不会尝试将 massages 归类为垃圾邮件，但仍使用安全发件人列表、安全收件人列表和阻止发件人列表）将邮件移动到 "垃圾邮件" 文件夹。 有关这些设置的详细信息，请参阅[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。
 

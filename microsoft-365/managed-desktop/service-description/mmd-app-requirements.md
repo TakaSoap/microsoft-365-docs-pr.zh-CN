@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 01c580cd671a84ef68c18b114e133f046a3e5b3b
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328064"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637848"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用程序要求
 
@@ -34,7 +34,7 @@ ms.locfileid: "42328064"
 
 Microsoft 托管桌面设备上不允许某些应用程序类型：
 - 第三方反病毒、安全性或审核软件
-- Office 365 专业增强版之前的 Microsoft Office 版本
+- 365 Microsoft Office 的 Microsoft Office 相关应用程序之前的版本
 - 安装或捆绑其他第三方软件的应用程序
 
 ## <a name="restricted-app-behaviors"></a>受限制的应用程序行为

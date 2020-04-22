@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 定义安全附件策略以保护您的组织免受电子邮件中的恶意文件的攻击。
-ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608098"
+ms.locfileid: "43638340"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -43,29 +43,28 @@ ms.locfileid: "43608098"
 
 - 确保您的组织具有[Office 365 高级威胁防护](office-365-atp.md)。
 
-- 请确保您具有必要的权限。 若要定义（或编辑） ATP 策略，您必须分配有 Exchange Online 组织管理角色（默认情况下为 Office 365 全局管理员分配了此角色）或 Exchange Online 卫生管理和安全管理员角色。 有关更多详细信息，请参阅下表：
+- 请确保您具有必要的权限。 若要定义（或编辑） ATP 策略，您必须分配有 Exchange Online 组织管理角色（默认情况下全局管理员分配给此角色）或 Exchange Online 卫生管理和安全管理员角色。 有关更多详细信息，请参阅下表：
 
-  |||
-  |---|---|
-  |**角色**|**分配的位置/方式**|
-  |Office 365 全局管理员 |默认情况下，注册购买 Office 365 的人是全局管理员。 （请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）|
+  |Role|分配的位置/方式|
+  |---------|---------|
+  |全局管理员 |默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）|
   |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
   |Exchange Online 组织管理、Exchange Online 清洁管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）|
   |
 
-  若要了解有关角色和权限的详细信息，请参阅[Office 365 &amp;安全合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+  若要了解有关角色和权限的详细信息，请参阅[安全&amp;合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - [了解 ATP 安全附件策略选项](#step-3-learn-about-atp-safe-attachments-policy-options)（本文中的）。 某些选项（如 "监视器" 或 "替换" 选项）可能会导致在扫描附件时出现电子邮件的轻微延迟。 若要避免邮件延迟，请考虑使用[动态传递和预览](dynamic-delivery-and-previewing.md)。
 
-- 最长允许30分钟，新的或更新的策略将传播到所有的 Office 365 数据中心。
+- 最长允许30分钟，新的或更新的策略将传播到所有 Microsoft 365 数据中心。
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>步骤2：设置（或编辑） ATP 安全附件策略
 
 1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。
 
-2. 在 "Office 365 安全&amp;合规中心" 的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略** \> **安全附件**"。
+2. &amp;在安全合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略** \> **安全附件**"。
 
-3. 如果你发现**启用了 SharePoint、OneDrive 和 Microsoft 团队的 ATP**，我们建议你选择此选项。 这将为 Office 365 环境启用[适用于 SharePoint、OneDrive 和 Microsoft 团队的 office 365 高级威胁防护](atp-for-spo-odb-and-teams.md)。
+3. 如果你发现**启用了 SharePoint、OneDrive 和 Microsoft 团队的 ATP**，我们建议你选择此选项。 这将为 Microsoft 365 环境启用适用[于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 高级威胁防护](atp-for-spo-odb-and-teams.md)。
 
 4. 选择 "**新建**" （"新建" 按钮类似于**+** 加号（）），开始创建策略。
 
@@ -77,7 +76,7 @@ ms.locfileid: "43608098"
 
    - 在 "响应" 部分中，选择 "**动态传递**" 选项。 （[了解有关使用 ATP 安全附件进行动态传递和预览的详细信息](dynamic-delivery-and-previewing.md)。）
 
-   - 在 "**重定向附件**" 部分中，选择 "启用重定向" 和 "键入将调查恶意附件的 Office 365 全局管理员、安全管理员或安全分析员的电子邮件地址" 选项。
+   - 在 "**重定向附件**" 部分中，选择 "启用重定向" 选项，然后键入将调查恶意附件的全局管理员、安全管理员或安全分析员的电子邮件地址。
 
    - 在 "**应用**于" 部分中，选择 **"收件人域**"，然后选择您的域。 选择 "**添加**"，然后选择 **"确定"**。
 

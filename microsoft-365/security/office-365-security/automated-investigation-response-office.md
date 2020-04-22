@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的自动化调查和响应（空气）
+title: 自动化调查和响应（空中）
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,28 +15,28 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
 ms.custom: air
-ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170948"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638544"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自动化调查和响应（空气）
+# <a name="automated-investigation-and-response-air"></a>自动化调查和响应（空中）
 
-随着安全警报的触发，安全操作团队可查看这些警报并采取措施来保护您的组织。 有时，安全操作团队可能会受到触发的警报量的感觉的不知所措。 Office 365 中的自动化调查和响应（空中）功能可以帮助。 通过 AIR，您的安全操作团队可以更高效地运行。 空中功能包括自动调查过程，以响应目前存在的已知威胁。 适当的补救措施等待批准，使安全操作团队能够响应检测到的威胁。 
+随着安全警报的触发，安全操作团队可查看这些警报并采取措施来保护您的组织。 有时，安全操作团队可能会受到触发的警报量的感觉的不知所措。 自动化调查和响应（空中）功能可能有所帮助。 通过 AIR，您的安全操作团队可以更高效地运行。 空中功能包括自动调查过程，以响应目前存在的已知威胁。 适当的补救措施等待批准，使安全操作团队能够响应检测到的威胁。 
 
-本文提供了空中的概述。 当您准备好开始使用 AIR 时，请参阅在[Office 365 中自动调查和响应威胁](office-365-air.md)。
+本文提供了空中的概述。 当您准备好开始使用 AIR 时，请参阅[自动调查和响应威胁](office-365-air.md)。
 
 ## <a name="at-a-high-level"></a>高级别
 
-随着警报的触发，安全行动手册将生效。 根据具体情况，可以开始执行[自动调查过程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在进行自动调查的过程中和之后，建议采取[补救措施](air-remediation-actions.md)。 在 Office 365 高级威胁防护中不会自动执行任何操作。 您的安全操作团队将进行审核，然后[批准或拒绝每个更正操作](air-review-approve-pending-completed-actions.md)，完成后，每个调查完成。 所有这些活动都会在 Office 365 安全 & 合规性中心中进行跟踪和查看（请参阅[查看调查的详细信息](air-view-investigation-results.md#view-details-of-an-investigation)）。
+随着警报的触发，安全行动手册将生效。 根据具体情况，可以开始执行[自动调查过程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在进行自动调查的过程中和之后，建议采取[补救措施](air-remediation-actions.md)。 在 Office 365 高级威胁防护中不会自动执行任何操作。 您的安全操作团队将进行审核，然后[批准或拒绝每个更正操作](air-review-approve-pending-completed-actions.md)，完成后，每个调查完成。 所有这些活动都会在安全 & 合规性中心中进行跟踪和查看（请参阅[查看调查的详细信息](air-view-investigation-results.md#view-details-of-an-investigation)）。
 
 以下各节提供了有关警报、安全行动手册和操作中的示例的更多详细信息。
 
 ## <a name="alerts"></a>警报
 
-[警报](../../compliance/alert-policies.md#viewing-alerts)表示用于事件响应的安全操作团队工作流的触发器。 确定要调查的正确通知集的优先级，同时确保没有威胁是 unaddressed 的挑战。 在手动对通知进行调查时，安全操作团队必须在威胁的风险下对实体（如内容、设备和用户）进行寻找和关联。 此类任务和工作流可能非常耗时，并涉及多个工具和系统。 通过让关键安全和威胁管理警报自动触发安全响应行动手册，Office 365 安全事件的空中、调查和响应是自动化的。 
+[警报](../../compliance/alert-policies.md#viewing-alerts)表示用于事件响应的安全操作团队工作流的触发器。 确定要调查的正确通知集的优先级，同时确保没有威胁是 unaddressed 的挑战。 在手动对通知进行调查时，安全操作团队必须在威胁的风险下对实体（如内容、设备和用户）进行寻找和关联。 此类任务和工作流可能非常耗时，并涉及多个工具和系统。 通过让关键安全和威胁管理警报自动触发安全响应行动手册，可以通过空气、调查和响应安全事件进行自动化。 
 
 目前，对于气流，从下列类型的警报策略生成的警报将自动调查：  
 
@@ -55,7 +55,7 @@ ms.locfileid: "43170948"
 > [!NOTE]
 > 默认情况下，通知视图中隐藏信息警报。 若要查看它们，请更改警报筛选以包含信息警报。
 
-如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理（SIEM）系统管理安全警报，则可以通过电子邮件通知或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)将 Office 365 警报发送到该系统。 通过电子邮件或 API 的调查通知通知包括访问安全 & 合规性中心中的警报的链接，使分配的安全管理员能够快速导航到调查。
+如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理（SIEM）系统管理安全警报，则可以通过电子邮件通知或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)向该系统发送通知。 通过电子邮件或 API 的调查通知通知包括访问安全 & 合规性中心中的警报的链接，使分配的安全管理员能够快速导航到调查。
 
 ![链接到调查的警报](../../media/air-alerts-page-details.png) 
 
@@ -75,7 +75,7 @@ ms.locfileid: "43170948"
 
 第1阶段还包括对管理员触发的电子邮件调查（使用[威胁资源管理器](threat-explorer.md)）的支持。
 
-第2阶段现在正在进行**公共预览版**中的以下行动手册，为操作和 aiding 安全管理员提供有关调查问题的建议：
+第2阶段现在与**公共预览版**中的以下行动手册结合在一起，为操作和 aiding 安全管理员提供调查问题的建议：
 - 用户报告为 "已损坏" （公用预览）
 
 在完成后，将立即发布后续行动手册。 访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)以查看计划和即将推出的其他内容。
@@ -110,7 +110,7 @@ ms.locfileid: "43170948"
 - 类似的电子邮件通过电子邮件群集搜索进行标识。
 - 该信号与其他平台（如[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共享。
 - 确定是否有用户通过可疑电子邮件中的任何恶意链接单击过。
-- 跨 Office 365 Exchange Online Protection （[EOP](exchange-online-protection-eop.md)）和 Office 365 高级威胁防护（[ATP](office-365-atp.md)）执行检查以查看用户是否报告了任何其他类似的消息。
+- 通过 Exchange Online Protection （[EOP](exchange-online-protection-eop.md)）和 Office 365 高级威胁防护（[ATP](office-365-atp.md)）进行检查，以查看用户是否报告了任何其他类似的消息。
 - 将执行检查以查看是否已泄露用户。 此检查跨 Office 365、 [Microsoft 云应用安全性](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)之间的信号，关联任何相关的用户活动异常。 
 
 在搜寻阶段，会为各种搜寻步骤分配风险和威胁。 
@@ -133,7 +133,7 @@ ms.locfileid: "43170948"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [开始使用 Office 365 中的 AIR](office-365-air.md)
+- [开始使用空中](office-365-air.md)
 
 - [访问 Microsoft 365 路线图以了解即将推出和推出的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

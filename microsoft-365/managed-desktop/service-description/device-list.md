@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 354845e3bfebee5e6c67b53ba5ef6f55a9c419f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198357"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637872"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
@@ -75,7 +75,6 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 - 有关戴尔设备的更多问题，请联系<a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>。
 
 - 有关 HP 设备和设备订购说明的更多问题，请联系：美洲（<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>）;欧洲/中东/非洲（<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>）;亚太地区/日本（<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>）;全局（<a href="mailto:mmd@hp.com">mmd@hp.com</a>）
-
 
 
 

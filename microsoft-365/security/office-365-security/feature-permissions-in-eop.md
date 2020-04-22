@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 执行管理 Microsoft Exchange Online Protection (EOP) 的任务所需的权限根据正在管理的功能的不同而不同。
-ms.openlocfilehash: 2129df7faaa977d59f8af8082291520d33bc9cc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 146bf34f157eb30e680ad9e0c3e53501d6e7b425
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599309"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638114"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP 中的功能权限
 
 执行管理 Exchange Online Protection （EOP）的任务所需的权限视所管理的功能而变化。
 
-您必须是 Office 365 全局管理员或 Exchange 公司管理员（组织管理角色组），才能设置 EOP。
+若要设置 EOP，您必须是全局管理员或 Exchange 公司管理员（组织管理角色组）。
 
 ## <a name="exchange-online-protection-permissions"></a>Exchange Online Protection 权限
 
@@ -36,10 +36,10 @@ ms.locfileid: "41599309"
 |邮件流规则|组织管理 <br/><br/> 记录管理|
 |域|组织管理 <br/><br/> 仅查看组织管理|
 |高级威胁防护 (ATP)|组织管理 <br/><br/> 安全管理|
-|Office 365 连接器|组织管理|
-|Message trace|组织管理 <br/><br/> 仅查看组织管理|
+|Microsoft 365 连接器|组织管理|
+|邮件跟踪|组织管理 <br/><br/> 仅查看组织管理|
 |组织配置|组织管理|
-|Quarantine|组织管理 <br/><br/> 仅查看组织管理 <br/><br/> 安全管理|
+|隔离|组织管理 <br/><br/> 仅查看组织管理 <br/><br/> 安全管理|
 |用户、联系人和角色组|组织管理 <br/><br/> 仅查看组织管理 <br/><br/> 安全管理|
 |通讯组和安全组|组织管理 <br/><br/> 仅查看组织管理 <br/><br/> 安全管理|
 |查看报告|组织管理：访问邮件保护报告。 <br/><br/> 仅查看收件人：访问邮件保护报告。  <br/><br/> 合规性管理：访问邮件保护报告和数据丢失防护（DLP）报告（如果你的订阅具有 DLP 功能）。|

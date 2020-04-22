@@ -16,26 +16,26 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。
-ms.openlocfilehash: 699de94a300ac8625e92d2c467edd461d72c7d2f
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 27f79252d2d08c374784064ac6a12bc4cc7725ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608170"
+ms.locfileid: "43637720"
 ---
-# <a name="configure-outbound-spam-filtering-in-office-365"></a>在 Office 365 中配置出站垃圾邮件筛选
+# <a name="configure-outbound-spam-filtering"></a>配置出站垃圾邮件筛选
 
-如果您是在 Exchange Online 中使用邮箱的 Office 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则会自动检查通过 EOP 发送的出站电子邮件是否包含垃圾邮件和异常发送活动。
+如果您是具有 Exchange Online 邮箱的 Microsoft 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则会自动检查通过 EOP 发送的出站电子邮件是否包含垃圾邮件和异常发送活动。
 
-您组织中的用户的出站垃圾邮件通常表示已损坏的帐户。 可疑的出站邮件被标记为垃圾邮件（无论垃圾邮件可信度或 SCL），并通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)进行路由，以帮助保护服务的声誉（即，将 Office 365 源电子邮件服务器从 IP 阻止列表中去除）。 系统会自动通知管理员可疑的出站电子邮件活动，并通过[通知策略](../../compliance/alert-policies.md)阻止用户。
+您组织中的用户的出站垃圾邮件通常表示已损坏的帐户。 可疑的出站邮件被标记为垃圾邮件（无论垃圾邮件可信度或 SCL），并通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)进行路由，以帮助保护服务的声誉（即，将 Microsoft 365 源电子邮件服务器从 IP 阻止列表中注销）。 系统会自动通知管理员可疑的出站电子邮件活动，并通过[通知策略](../../compliance/alert-policies.md)阻止用户。
 
-EOP 使用出站垃圾邮件策略作为组织的整体防御垃圾邮件的一部分。 有关详细信息，请参阅 [Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。
+EOP 使用出站垃圾邮件策略作为组织的整体防御垃圾邮件的一部分。 有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
 
 管理员可以查看、编辑和配置（但不能删除）默认的出站垃圾邮件策略。 为了更细致，您还可以创建适用于组织中的特定用户、组或域的自定义出站垃圾邮件策略。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-您可以在 Office 365 安全 & 合规性中心或 PowerShell （Office 365 客户的 Exchange Online PowerShell 中配置出站垃圾邮件策略;适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
+您可以在 Security & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 客户;）中配置出站垃圾邮件策略。适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
 
-## <a name="outbound-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Office 365 安全 & 合规性中心与 Exchange online PowerShell 或 Exchange Online Protection PowerShell 中的出站垃圾邮件策略
+## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Security & 合规性中心与 Exchange online PowerShell 或 Exchange Online Protection PowerShell 中的出站垃圾邮件策略
 
 EOP 中的出站垃圾邮件策略的基本元素为：
 
@@ -77,7 +77,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅 [Office 365 安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 有关出站垃圾邮件策略的建议设置，请参阅[EOP 出站垃圾邮件筛选器策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。
 
@@ -147,7 +147,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
      
    - **每个用户的最大收件人数**
 
-     有效的值为0到10000。 默认值为0，表示使用服务默认值。 有关详细信息，请参阅[跨 Office 365 选项发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
+     有效的值为0到10000。 默认值为0，表示使用服务默认值。 有关详细信息，请参阅[在 Microsoft 365 选项中发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
 
      - **外部小时限制**：每个小时的最大外部收件人数。
 
@@ -231,7 +231,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 ### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>设置自定义出站垃圾邮件策略的优先级
 
-默认情况下，会为出站垃圾邮件策略指定优先级，这取决于它们的创建顺序（较旧策略的优先级较低）。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以有相同的优先级。
+默认情况下，会为出站垃圾邮件策略指定优先级，这取决于它们的创建顺序（较旧的策略相比，较新的策略优先级较低）。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以有相同的优先级。
 
 自定义出站垃圾邮件策略按其处理顺序显示（第一个策略的**优先级**值为0）。 名为 "**出站垃圾邮件筛选器策略**" 的默认出站垃圾邮件策略的优先级值为**最低**，无法进行更改。
 
@@ -293,7 +293,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 本示例将使用以下设置创建名为 Contoso 行政主管的新出站垃圾邮件筛选器策略：
 
-- 收件人速率限制限制为默认值的较小值。 有关详细信息，请参阅[跨 Office 365 选项发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
+- 收件人速率限制限制为默认值的较小值。 有关详细信息，请参阅[在 Microsoft 365 选项中发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
 
 - 达到其中一个限制后，用户将被阻止发送邮件。
 
@@ -495,7 +495,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 ## <a name="for-more-information"></a>有关详细信息
 
-[在 Office 365 中从“受限的用户”门户中删除被阻止的用户](removing-user-from-restricted-users-portal-after-spam.md)
+[从“受限的用户”门户中删除被阻止的用户](removing-user-from-restricted-users-portal-after-spam.md)
 
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)
 

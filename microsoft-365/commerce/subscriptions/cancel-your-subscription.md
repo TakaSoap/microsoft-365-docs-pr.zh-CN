@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: 了解如何取消 Office 365 for business 或 Microsoft 365 试用版或付费订阅。
-ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 了解如何取消 Microsoft 365 for business 或 Microsoft 365 试用版或付费订阅。
+ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142159"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636591"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
-*资格：* 如果向用户分配的许可证数少于25个，则可以随时在管理中心中在线取消 Office 365 for business 试用版或付费订阅。 如果为用户分配了25个以上的许可证，请[致电支持部门以取消订阅](../../admin/contact-support-for-business-products.md)。
+*资格：* 如果向用户分配的许可证数少于25个，则可以随时在管理中心中在线取消 Microsoft 365 for business 试用版或付费订阅。 如果为用户分配了25个以上的许可证，请[致电支持部门以取消订阅](../../admin/contact-support-for-business-products.md)。
 
 *退款：* 任何按比例贷项都将在下一个帐单周期内返回给您。
 
@@ -43,13 +43,14 @@ ms.locfileid: "43142159"
 
 ::: moniker range="o365-worldwide"
 
+
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
 
 2. 找到要取消的订阅，在 "**设置" & "操作**" 下，选择 "**取消订阅**"。
 
 3. 查看重要日期，提供有关您要取消的原因的反馈，然后选择 "**取消订阅**"。
 
-    你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在已取消付费的 Office 365 for business 订阅时可预期的内容，请参阅[office 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
+    你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在取消付费 Microsoft 365 for business 订阅时可预期的功能，请参阅[我的 microsoft 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -65,7 +66,7 @@ ms.locfileid: "43142159"
 
 4. 查看重要日期，提供有关您要取消的原因的反馈，然后选择 "**取消订阅**"。
 
-    你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在已取消付费的 Office 365 for business 订阅时可预期的内容，请参阅[office 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
+    你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在取消付费 Microsoft 365 for business 订阅时可预期的功能，请参阅[我的 microsoft 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ ms.locfileid: "43142159"
 
 4. 查看重要日期，提供有关您要取消的原因的反馈，然后选择 "**取消订阅**"。
 
-    你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在已取消付费的 Office 365 for business 订阅时可预期的内容，请参阅[office 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
+    你的订阅现在以**禁用**状态显示，并且在删除之前已缩减功能。 若要详细了解在取消付费 Microsoft 365 for business 订阅时可预期的功能，请参阅[我的 microsoft 365 for business 订阅结束时对我的数据和访问有什么影响？](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -110,11 +111,11 @@ ms.locfileid: "43142159"
 
 如果设置自定义域，则添加了 DNS 记录，以便域可与 Office 365 服务配合使用。 在删除您的域之前，请务必在 DNS 主机上更新 DNS 记录，如域 MX 记录。
 
-例如，更改 DNS 主机上的 MX 记录。 发送到您的域的电子邮件将阻止进入您的 Office 365 地址，而是转到新的电子邮件提供商。 （MX 记录确定为您的域发送电子邮件的位置。）
+例如，更改 DNS 主机上的 MX 记录。 发送到你的域的电子邮件将阻止进入你的 Microsoft 地址，而是转到你的新电子邮件提供商。 （MX 记录确定为您的域发送电子邮件的位置。）
 
 - 如果您的 nameserver （NS）记录[指向 Office 365 名称服务器](../../admin/setup/add-domain.md)，则在您将 NS 记录更改为指向新的 DNS 主机（请参阅步骤2）之前，对 MX 记录所做的更改不会生效。
 
-- 在更新 MX 记录之前，让您的用户知道您计划切换其电子邮件的日期，以及您计划使用的新电子邮件提供商。 此外，如果您的用户要将其现有的 Office 365 电子邮件移动到新的提供商，他们必须执行额外的步骤。
+- 在更新 MX 记录之前，让您的用户知道您计划切换其电子邮件的日期，以及您计划使用的新电子邮件提供商。 此外，如果您的用户要将其现有的 Microsoft 电子邮件移动到新的提供商，他们必须执行额外的步骤。
 
 - 在你更改 MX 记录时，请遵照本文中的其余步骤。
 
