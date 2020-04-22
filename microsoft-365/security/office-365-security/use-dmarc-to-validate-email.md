@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从 Office 365 组织发送的邮件。
-ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c71d4edabcacd2cd4d98dad69aa134cbaf75a111
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633430"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608134"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>使用 DMARC 验证 Office 365 中的电子邮件
 
@@ -207,13 +207,17 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ## <a name="how-office-365-handles-inbound-email-that-fails-dmarc"></a>Office 365 如何处理未通过 DMARC 的入站电子邮件
 <a name="inbounddmarcfail"> </a>
 
-如果发送服务器的 DMARC 策略是 p=reject，则 EOP 会将该邮件标记为垃圾邮件，而不是拒绝它。换句话说，对于入站电子邮件，Office 365 将 p=reject 和 p=quarantine 视为相同方式。
+如果发送服务器的 DMARC 策略是 `p=reject`，则 EOP 会将该邮件标记为欺骗，而不是拒绝它。 换句话说，对于入站电子邮件，Office 365 将 `p=reject` 和 `p=quarantine` 视为相同方式。 管理员可以定义对[反网络钓鱼策略](set-up-anti-phishing-policies.md)中分类为欺骗的邮件执行的操作。
   
-之所以像这样配置 office 365，是因为某些合法的电子邮件可能会无法通过 DMARC。例如，如果将邮件发送到一个邮件列表，然后将其中继到所有列表参与者，则该邮件可能无法通过 DMARC。如果 Office 365 拒绝这些邮件，人们可能会丢失合法的电子邮件，而且无法进行检索。 相反，这些邮件仍然无法通过 DMARC，但会将其标记为垃圾邮件而不是拒绝。如果需要，用户仍可以在其收件箱中获得这些邮件，方法如下：
+之所以这样配置 office 365，是因为某些合法的电子邮件可能会无法通过 DMARC。 例如，将邮件发送到一个邮件列表，该邮件列表将该邮件中继到所有列表参与者。 如果 Office 365 拒绝这些邮件，收件人可能会丢失合法的电子邮件，而且无法进行检索。 相反，这些邮件仍然无法通过 DMARC，但会将其标记为欺骗而不是拒绝。 用户仍可以通过以下方法在其收件箱中获得这些邮件：
   
-- 用户使用其电子邮件客户端分别添加安全发件人
+- 用户使用其电子邮件客户端分别添加安全发件人。
 
-- 管理员创建一个适用于所有用户的 Exchange 邮件流规则（也称为传输规则），允许那些特定发件人的邮件。 
+- 管理员可更新[欺骗智能](learn-about-spoof-intelligence.md)报告，以允许欺骗邮件。
+
+- 管理员创建一个适用于所有用户的 Exchange 邮件流规则（也称为传输规则），允许那些特定发件人的邮件。
+
+有关详细信息，请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365)。
 
 ## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>Office 365 如何使用经过身份验证的接收链 (ARC)
 <a name="ARC"> </a>
