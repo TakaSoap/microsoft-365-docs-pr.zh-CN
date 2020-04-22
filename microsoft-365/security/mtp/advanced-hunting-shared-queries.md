@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 38eb3c39c5473d0a729b12771b61e965dbc81931
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3fd497ce1733dd4770b9bbc8f699bbccf3237fbd
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929476"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781513"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -60,7 +60,7 @@ ms.locfileid: "42929476"
 2. 选择“删除”，并确认删除。**** 或者选择“重命名”，并为查询提供新名称。****
 
 ## <a name="access-queries-in-the-github-repository"></a>访问 GitHub 存储库中的查询  
-Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://github.com/microsoft/MTP-AHQ)中共享高级搜寻查询。 此存储库可自行参与。 [免费加入 GitHub](https://github.com/)，即可参与。
+Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://aka.ms/hunting-queries)中共享高级搜寻查询。 此存储库可自行参与。 [免费加入 GitHub](https://github.com/)，即可参与。
 
 >[!tip]
 >此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 将这些查询作为 Microsoft Defender 安全中心[威胁分析](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)报告的一部分提供。
