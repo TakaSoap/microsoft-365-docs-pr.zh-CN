@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 高级电子数据展示实用程序
+title: 使用高级电子数据展示实用工具
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: '了解 Office 365 高级电子数据展示中的实用程序，包括案例日志、清除数据、处理错误、修改相关性和透明度分析。  '
-ms.openlocfilehash: ce8eb00382bd6ff0514dfef99d18a8e4b2679cec
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解高级电子数据展示中的实用程序，包括案例日志、清除数据、处理错误、修改相关性和透明度分析。  '
+ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557652"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633387"
 ---
-# <a name="use-advanced-ediscovery-classic-utilities"></a>使用高级电子数据展示（经典）实用程序
+# <a name="use-advanced-ediscovery-classic-utilities"></a>使用高级电子数据展示（经典）实用工具
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 

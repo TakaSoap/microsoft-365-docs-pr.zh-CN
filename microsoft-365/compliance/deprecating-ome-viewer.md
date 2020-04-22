@@ -1,5 +1,5 @@
 ---
-title: 弃用 Office 365 邮件加密查看器应用
+title: 弃用邮件加密查看器应用程序
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: 在2018年8月15日，我们将从 Android 和 Apple 商店中删除 Office 365 邮件加密（OME）查看器移动应用。 Office 365 邮件加密查看器移动应用程序需要阅读使用 Apple 和 Android 手机上的早期版本的 OME 加密的电子邮件和附件。 除了删除 OME Viewer 应用程序，我们不会对早期版本的 OME 进行任何其他更改。
-ms.openlocfilehash: 791a882650cfa3ffd5caaafbb835c8f272f8665e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37a10942e49ca0e6249b2b6a0737411a0d6de1c5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595267"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636110"
 ---
-# <a name="deprecating-office-365-message-encryption-viewer-app"></a>弃用 Office 365 邮件加密查看器应用
+# <a name="deprecating-message-encryption-viewer-app"></a>弃用邮件加密查看器应用程序
 
 在2018年8月15日，我们从 Android 和 Apple 商店中删除了 Office 365 邮件加密（OME）查看器移动应用。 Office 365 邮件加密查看器移动应用程序需要阅读使用 Apple 和 Android 手机上的早期版本的 OME 加密的电子邮件和附件。 除了删除 OME Viewer 应用程序，我们不会对早期版本的 OME 进行任何其他更改。
   
@@ -39,13 +39,13 @@ ms.locfileid: "41595267"
   
 ## <a name="why-this-change-was-made"></a>为什么要进行此更改
 
-新版本的 OME 不再需要移动应用读取受保护的电子邮件和附件。 使用新 OME 功能的 Office 365 客户可以在 Outlook mobile 和非 Office 365 客户中查看受保护的邮件。可以在浏览器中查看受保护的邮件。
+新版本的 OME 不再需要移动应用读取受保护的电子邮件和附件。 使用新 OME 功能的客户可以在 Outlook mobile 中查看受保护的邮件，而非客户可以在浏览器中查看受保护的邮件。
   
 要求用户下载移动应用是客户查看受保护邮件的另一个障碍。 新的 Office 365 邮件加密功能可提供更好的移动体验。
   
 ## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>我仍然可以使用以前版本的 Office 365 邮件加密
 
-早期版本的 Office 365 邮件加密目前不会被弃用。但是，我们对 Office 365 邮件加密的新版本进行了重大增强，这使得加密和权限保护对敏感数据的保护变得更加简单以及任何设备（包括 Office 365 用户在 Outlook 中直接阅读受保护的邮件的功能）（桌面、移动和 web）。 
+早期版本的 Office 365 邮件加密目前不会被弃用。但是，我们对 Office 365 邮件加密的新版本进行了重要的增强，这使得加密和权限保护对任何设备的敏感数据更加简单，包括用户能够直接在 Outlook 中阅读受保护的邮件（桌面、移动和 web）。 
   
 ## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>需要执行哪些操作才能为此更改做准备
 

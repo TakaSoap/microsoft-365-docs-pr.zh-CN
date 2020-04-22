@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并删除网络回流以获得更佳性能。
-ms.openlocfilehash: f9499fdb8e8c3f7b77e3349d6cc99f6dbf465870
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1d5e10bdd8b79f5c7ccd646ac08f83bb2c48b6ee
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066701"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583421"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>第 3 步：避免网络回流
 
@@ -47,6 +47,8 @@ ms.locfileid: "42066701"
 如有可能，配置边缘路由器以直接发送受信任的 Microsoft 365 流量，而不是通过处理 Internet 流量的第三方云或基于云的网络安全供应商进行代理或隧道传输。 
 
 ![绕过网络发夹的示例](../media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+
+如果要测试与 Microsoft 全球网络入口点的有多近，以及测试与组织网络连接 ISP 的接点有多近，请使用 [Office 365 网络载入工具](https://connectivity.office.com/)。
 
 作为临时检查点，可查看这一步的[退出条件](networking-exit-criteria.md#crit-networking-step3)。
 

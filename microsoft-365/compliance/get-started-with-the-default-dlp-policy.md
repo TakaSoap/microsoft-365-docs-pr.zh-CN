@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: 在创建首个数据丢失防护（DLP）策略之前，DLP 将帮助使用默认策略保护您的敏感信息。 此默认策略及其建议（如下所示）有助于在组织外部的人员共享包含信用卡号的电子邮件或文档时通知你，以确保敏感内容的安全。
-ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073104"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637826"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>开始使用默认 DLP 策略
 
@@ -62,11 +62,11 @@ ms.locfileid: "42073104"
   
 ## <a name="edit-the-default-dlp-policy"></a>编辑默认的 DLP 策略
 
-此策略名为 "**默认 Office 365 DLP 策略**"，显示在安全&amp;合规中心的 "**策略**" 页上的 "**数据丢失防护**" 下。 
+此策略名为 "**默认 DLP 策略**"，显示在安全&amp;合规中心的 "**策略**" 页上的 "**数据丢失防护**" 下。 
   
 此策略可完全自定义，与你从头开始创建的任何 DLP 策略相同。 您还可以关闭或删除策略，以便用户不再接收策略提示或电子邮件通知。
   
-![名为 "默认 Office 365 DLP 策略" 的 DLP 策略](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![名为 "默认 DLP 策略" 的 DLP 策略](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>小组件何时出现且不显示
 

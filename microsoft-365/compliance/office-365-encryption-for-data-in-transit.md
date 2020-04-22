@@ -1,5 +1,5 @@
 ---
-title: Office 365 传输中的数据加密
+title: 传输中的数据的加密
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,24 +16,24 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 摘要：关于 Microsoft 如何在传输中加密数据的简要说明。
-ms.openlocfilehash: cd261621320d4543a99836e8699c537ed10a8dcf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0775d28a96f271a24406fd68c2ccb9fe4954e66d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597869"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637328"
 ---
-# <a name="office-365-encryption-for-data-in-transit"></a>Office 365 传输中的数据加密
+# <a name="encryption-for-data-in-transit"></a>传输中的数据的加密
 
-除了保护静态客户数据之外，Microsoft 还使用加密技术来保护传输中的 Office 365 客户数据。 
+除了保护静态客户数据之外，Microsoft 还使用加密技术来保护传输中的客户数据。 
 
 数据在传输中：
 
-- 当客户端计算机与 Office 365 服务器通信时;
-- 当 Office 365 服务器与其他 Office 365 服务器通信时;并
-- 当 Office 365 服务器与非 Office 365 服务器通信时（例如，Exchange Online 将电子邮件传递到外部电子邮件服务器）。
+- 当客户端计算机与 Microsoft 服务器通信时;
+- 当 Microsoft 服务器与另一台 Microsoft 服务器通信时;并
+- 当 Microsoft 服务器与非 Microsoft 服务器通信时（例如，Exchange Online 将电子邮件传递到外部电子邮件服务器）。
 
-Office 365 服务器之间的数据中心之间的通信是通过 TLS 或 IPsec 进行的，并且所有面向客户的服务器都使用 TLS 与客户端计算机协商安全会话（例如，Exchange Online 使用 TLS 1.2 和256位密码强度）（FIPS140-2 级别 2-已验证）。 （有关 office 365 支持的 TLS 密码套件列表，请参阅[office 365 中有关加密的技术参考详细信息](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221)。）这适用于客户端（如 Outlook、Skype for Business）和 web 上的 Outlook （例如，HTTP、POP3 等）使用的协议。
+Microsoft 服务器之间的数据中心之间的通信通过 TLS 或 IPsec 进行，所有面向客户的服务器都使用 TLS 与客户端计算机协商安全会话（例如，Exchange Online 使用带256位密码强度的 TLS 1.2 （FIPS 140-2 级别2验证）。 （有关 office 365 支持的 TLS 密码套件列表，请参阅[office 365 中有关加密的技术参考详细信息](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221)。）这适用于客户端（如 Outlook、Skype for Business）和 web 上的 Outlook （例如，HTTP、POP3 等）使用的协议。
 
 公共证书由 Microsoft IT SSL 使用 SSLAdmin （一个内部 Microsoft 工具）颁发，以保护传输信息的机密性。 Microsoft 颁发的所有证书的长度都至少为2048位，并且 Webtrust 合规性要求 SSLAdmin 确保仅将证书颁发给 Microsoft 拥有的公用 IP 地址。 任何无法满足此条件的 IP 地址都将通过异常过程进行路由。
 
@@ -47,4 +47,4 @@ Office 365 服务器之间的数据中心之间的通信是通过 TLS 或 IPsec 
 - [Exchange Online Protection](https://ssl-tools.net/mailservers/microsoft-com.mail.protection.outlook.com)
 - [Microsoft Teams](https://www.ssllabs.com/ssltest/analyze.html?d=teams.microsoft.com&latest)
 
-对于 Exchange Online Protection，Url 会因租户名称而异;但是，所有客户都可以使用**microsoft-com.mail.protection.outlook.com**测试 Office 365。
+对于 Exchange Online Protection，Url 会因租户名称而异;但是，所有客户都可以使用**microsoft-com.mail.protection.outlook.com**测试 Microsoft 365。

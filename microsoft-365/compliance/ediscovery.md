@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的电子数据展示
+title: 电子数据展示
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Microsoft 365 提供了许多不同的电子数据展示工具，可用于搜索和保存在不同位置（如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Office 365 组和 Skype for business 会话）中找到的内容。
-ms.openlocfilehash: 19076941d2ff5b908071c779558b2cbe8b15bb54
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+description: Microsoft 365 提供了许多不同的电子数据展示工具，可用于搜索和保存在不同位置（如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Microsoft 365 组和 Skype for business 会话）中找到的内容。
+ms.openlocfilehash: 6735ce5df0978c75117324f702d1c2f758208bd1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551213"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631757"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>Microsoft 365 中的电子数据展示
 
-电子发现（亦称为"电子数据展示"）是用于识别和传递可用作法律案件证据的电子信息的过程。 您可以使用 Microsoft 365 中的电子数据展示工具搜索 Exchange Online 邮箱、Office 365 组、Microsoft 团队、SharePoint Online 和 OneDrive for business 网站以及 Skype for business 会话和 Yammer 团队中的内容。 您可以使用内容搜索工具在相同的电子数据展示搜索中搜索邮箱和网站。 此外，您还可以使用核心电子数据展示事例来标识、保留和导出邮箱和网站中的内容。 如果您的组织具有 Office 365 E5 或 Microsoft 365 E5 订阅（或相关的 E5 附加订阅），您可以使用 Microsoft 365 中的高级电子数据展示解决方案进一步管理保管人和分析内容。
+电子发现（亦称为"电子数据展示"）是用于识别和传递可用作法律案件证据的电子信息的过程。 您可以使用 Microsoft 365 中的电子数据展示工具搜索 Exchange Online 邮箱、Microsoft 365 组、Microsoft 团队、SharePoint Online 和 OneDrive for business 网站以及 Skype for business 会话和 Yammer 团队中的内容。 您可以使用内容搜索工具在相同的电子数据展示搜索中搜索邮箱和网站。 此外，您还可以使用核心电子数据展示事例来标识、保留和导出邮箱和网站中的内容。 如果您的组织具有 Office 365 E5 或 Microsoft 365 E5 订阅（或相关的 E5 附加订阅），您可以使用 Microsoft 365 中的高级电子数据展示解决方案进一步管理保管人和分析内容。
   
 Microsoft 365 提供以下电子数据展示工具：
   
@@ -43,8 +43,8 @@ Microsoft 365 提供以下电子数据展示工具：
   
 |**主题**|**说明**|
 |:-----|:-----|
-|[运行内容搜索](content-search.md) <br/> |了解如何使用内容搜索工具在单个搜索的 Office 365 组织中搜索邮箱、公用文件夹、Office 365 组、Microsoft 团队、SharePoint Online 网站、一个驱动器用于商业位置和 Skype for Business 对话。  <br/> |
-|[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md) <br/> |了解可用于在 Office 365 组织中搜索邮箱和网站中的内容的电子邮件和文件属性和搜索条件。  <br/> |
+|[运行内容搜索](content-search.md) <br/> |了解如何使用内容搜索工具在单个搜索的组织中搜索邮箱、公用文件夹、Microsoft 365 组、Microsoft 团队、SharePoint Online 网站、一个驱动器的商业位置和 Skype for Business 对话。  <br/> |
+|[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md) <br/> |了解可用于搜索组织中的邮箱和网站中的内容的电子邮件和文件属性和搜索条件。  <br/> |
 |[查看内容搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md) <br/> |了解如何使用搜索统计信息显示和比较一个或多个内容搜索的统计信息，以及如何配置新的和现有的搜索以在搜索查询中返回每个关键字的统计信息。  <br/> |
 |[导出搜索结果](export-search-results.md) <br/> |了解如何导出内容搜索的结果。  <br/> |
 |[配置内容搜索的权限筛选](permissions-filtering-for-content-search.md) <br/> |了解如何使用权限筛选使电子数据展示管理器仅搜索组织中的邮箱和网站的子集。  <br/> |

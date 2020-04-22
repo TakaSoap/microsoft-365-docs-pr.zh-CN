@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 387709ebdd84968d2b93992f6b92ef1548117569
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 75e376288a85ca6def5cf3c3037f2faee57de63b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528355"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632267"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>高级电子数据展示报告（预览）
 
@@ -45,7 +45,7 @@ ms.locfileid: "43528355"
 
 1. 转到 https://protection.office.com
   
-2. 使用你的工作或学校帐户登录 Office 365。
+2. 使用您的工作或学校帐户登录。
   
 3. 在安全 & 合规性中心中，单击 "**电子数据展示 > 高级电子数据展示**"。
   

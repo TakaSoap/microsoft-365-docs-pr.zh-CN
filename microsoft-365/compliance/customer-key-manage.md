@@ -1,5 +1,5 @@
 ---
-title: 管理 Office 365 的客户密钥
+title: 管理客户密钥
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 在设置客户密钥之后，请了解如何通过还原 AKV 密钥以及管理权限和数据加密策略来管理它。
-ms.openlocfilehash: 112bdee7658334c251418903761866841625ff17
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804758"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635598"
 ---
-# <a name="manage-customer-key-for-office-365"></a>管理 Office 365 的客户密钥
+# <a name="manage-customer-key"></a>管理客户密钥
 
 在设置了 Office 365 的客户密钥之后，您可以按本文所述管理密钥。 有关详细信息，请参阅相关主题中的客户密钥。
 
@@ -70,7 +70,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 ## <a name="manage-data-encryption-policies-deps-with-customer-key"></a>使用客户密钥管理数据加密策略（DEPs）
 
-客户密钥处理不同的 Office 365 服务之间的 DEPs 不同。 例如，您可以为不同的服务创建不同数量的 DEPs。
+客户密钥处理不同服务之间的 DEPs 不同。 例如，您可以为不同的服务创建不同数量的 DEPs。
 
 **Exchange Online 和 Skype For business：** 最高可创建 50 DEPs。 有关说明，请参阅[创建用于 Exchange Online 和 Skype for business 的数据加密策略（DEP）](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business)。
 
@@ -80,7 +80,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 若要查看您使用 DataEncryptionPolicy PowerShell cmdlet 为 Exchange Online 和 Skype for business 创建的所有 DEPs 的列表，请完成以下步骤。
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 2. 若要返回组织中的所有 DEPs，请运行不带任何参数的 DataEncryptionPolicy cmdlet。
 
@@ -92,11 +92,11 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>在将邮箱迁移到云中之前分配一个 DEP
 
-分配 DEP 时，Office 365 会在迁移过程中使用分配的 DEP 对邮箱的内容进行加密。 此过程比迁移邮箱、分配 DEP 并等待进行加密更高效，这可能需要数小时或数天。
+分配 DEP 时，Microsoft 365 会在迁移过程中使用分配的 DEP 对邮箱的内容进行加密。 此过程比迁移邮箱、分配 DEP 并等待进行加密更高效，这可能需要数小时或数天。
 
 若要在将 DEP 迁移到 Office 365 之前将其分配给邮箱，请在 Exchange Online PowerShell 中运行 MailUser cmdlet：
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 2. 运行 MailUser cmdlet。
 
@@ -110,7 +110,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 若要确定分配给邮箱的 DEP，请使用 Get-mailboxstatistics cmdlet。 Cmdlet 返回唯一标识符（GUID）。
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
@@ -178,13 +178,13 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 您可以控制所有根项（包括可用性密钥）的吊销。 客户密钥为您提供管理法规要求的退出规划方面的控制权。 如果您决定撤销密钥以清除数据并退出服务，则在数据清除过程完成后，服务将删除可用性密钥。
 
-Office 365 审核并验证数据清除路径。 有关详细信息，请参阅[服务信任门户](https://servicetrust.microsoft.com/)上提供的 SSAE 18 SOC 2 报告。 此外，Microsoft 建议采用以下文档：
+Microsoft 365 审核并验证数据清除路径。 有关详细信息，请参阅[服务信任门户](https://servicetrust.microsoft.com/)上提供的 SSAE 18 SOC 2 报告。 此外，Microsoft 建议采用以下文档：
 
 - [Microsoft 云中的金融机构风险评估和合规性指南](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 - [O365 退出规划注意事项](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-不同的 Office 365 服务之间的数据清除路径略有不同。
+不同服务之间的数据清除路径略有不同。
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>吊销客户密钥和 Exchange Online 和 Skype for business 的可用性密钥
 
@@ -199,7 +199,7 @@ Office 365 审核并验证数据清除路径。 有关详细信息，请参阅[�
 
 1. 从 Azure 密钥保管库中删除 "O365 Exchange Online" 的包装和解包权限。
 
-2. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+2. 在您的组织中使用具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 3. 对于包含要删除的邮箱的每个 DEP，请运行[DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) cmdlet，如下所示。
 
@@ -235,14 +235,14 @@ Office 365 审核并验证数据清除路径。 有关详细信息，请参阅[�
 
 ## <a name="related-articles"></a>相关文章
 
-- [使用 Office 365 的客户密钥进行服务加密](customer-key-overview.md)
+- [使用客户密钥进行服务加密](customer-key-overview.md)
 
 - [了解可用性密钥](customer-key-availability-key-understand.md)
 
-- [设置适用于 Office 的客户密钥365](customer-key-set-up.md)
+- [设置客户密钥](customer-key-set-up.md)
 
 - [滚动或旋转客户密钥或可用性密钥](customer-key-availability-key-roll.md)
 
-- [Office 365 中的客户密码箱](customer-lockbox-requests.md)
+- [客户密码箱](customer-lockbox-requests.md)
 
-- [Office 365 服务加密](office-365-service-encryption.md)
+- [服务加密](office-365-service-encryption.md)

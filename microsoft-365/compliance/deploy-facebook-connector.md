@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Facebook 商业页面导入和存档到 Microsoft 365。 将此数据导入 Microsoft 365 后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的 Facebook 数据的管理。
-ms.openlocfilehash: 48747dade98701303c4ca6a8c00192ec7faff34a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 10444d8a2c83fd89eaba927b422c8c89466d05cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635020"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636140"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署连接器以存档 Facebook 商业页面数据
 
-本文包含了部署使用 Microsoft 365 导入服务将数据从 Facebook 商业页面导入到 Microsoft 365 的连接器的分步过程。 有关此过程的简要概述以及部署 Facebook 连接器所需的先决条件列表，请参阅[Set up a connector to Archive facebook data](archive-facebook-data-with-sample-connector.md)。 
+本文包含了部署使用 Office 365 导入服务将数据从 Facebook 商业页面导入到 Microsoft 365 的连接器的分步过程。 有关此过程的简要概述以及部署 Facebook 连接器所需的先决条件列表，请参阅[Set up a connector to Archive facebook data](archive-facebook-data-with-sample-connector.md)。 
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤1：在 Azure Active Directory 中创建应用程序
 
-1. 转到<https://portal.azure.com>并使用 Office 365 全局管理员帐户的凭据登录。
+1. 转到<https://portal.azure.com>并使用全局管理员帐户的凭据登录。
 
     ![在 AAD 中创建应用程序](../media/FBCimage1.png)
 

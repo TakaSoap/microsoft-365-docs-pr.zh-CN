@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 在高级电子数据展示事例中管理保管人。
-ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634700"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635892"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>在高级电子数据展示事例中管理保管人
 
@@ -132,7 +132,7 @@ ms.locfileid: "42634700"
 
 4. 在飞出页面上，单击 "**释放保管人**"。
 
-   将显示一个警告页面，说明如果将保留项放置在与保管人关联的数据源上，保留将被删除，并且与不同的高级电子数据展示事例关联的其他保留仍适用。 其中包括 Office 365 中的其他类型的保留和保留功能（如 Office 365 保留策略）。
+   将显示一个警告页面，说明如果将保留项放置在与保管人关联的数据源上，保留将被删除，并且与不同的高级电子数据展示事例关联的其他保留仍适用。 其中包括其他类型的保留和保留功能（如 Microsoft 365 保留策略）。
 
 5. 单击 **"是"** 确认要释放保管人。 
 

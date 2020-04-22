@@ -231,7 +231,7 @@
                       href: ./office-365-security/anti-spam-protection-faq.md
                     - name: 配置反垃圾邮件策略
                       href: ./office-365-security/configure-your-spam-filter-policies.md
-                    - name: 配置连接筛选器策略
+                    - name: 配置连接筛选
                       href: ./office-365-security/configure-the-connection-filter-policy.md
                     - name: 创建阻止发件人列表
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md

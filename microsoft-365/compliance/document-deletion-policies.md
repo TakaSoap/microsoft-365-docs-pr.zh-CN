@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 由于合规性、法律或其他业务要求，你的组织可能需要将文档保留一段时间。 但是，如果您的组织保留的文档比所需时间长，则会带来不必要的法律风险。 使用文档删除策略，您可以通过在特定时间段后删除网站中的文档来主动降低风险，例如，在创建文档五年后，可以在用户的 OneDrive for Business 网站中删除文档。
-ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 55d4616b4185ebdbbf0f132803d1b7414eaabac8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075189"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633041"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文档删除策略概述
 
 > [!IMPORTANT]
-> 向前移动时，建议使用保留策略或在 Microsoft 365 合规性中心、Microsoft 365 安全中心或 Office 365 安全&amp;合规中心（而不是文档删除策略）中创建的标签。 文档删除策略将继续与保留策略一起工作，但如果您需要保留或删除 Office 365 中任何位置的内容，我们建议使用保留策略。 有关详细信息，请参阅[使用保留策略而不是这些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。
+> 向前移动时，我们建议使用保留策略或在 Microsoft 365 合规性中心、Microsoft 365 安全中心或安全&amp;合规中心（而不是文档删除策略）中创建的标签。 文档删除策略将继续与保留策略一起工作，但如果您需要保留或删除 Office 365 中任何位置的内容，我们建议使用保留策略。 有关详细信息，请参阅[使用保留策略而不是这些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。
   
 由于合规性、法律或其他业务要求，你的组织可能需要将文档保留一段时间。 但是，如果您的组织保留的文档比所需时间长，则会带来不必要的法律风险。 使用文档删除策略，您可以通过在特定时间段后删除网站中的文档来主动降低风险，例如，在创建文档五年后，可以在用户的 OneDrive for Business 网站中删除文档。
   
@@ -44,7 +44,7 @@ ms.locfileid: "42075189"
   
 ## <a name="when-to-use-document-deletion-policies"></a>使用文件删除策略的情况
 
-除了文件删除策略，Office 365 针对网站内容提供以下保留策略：
+除了文档删除策略之外，Microsoft 还为网站内容提供以下保留策略：
   
 - [记录管理](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     
@@ -114,7 +114,7 @@ ms.locfileid: "42075189"
   
 ## <a name="assigning-document-deletion-policies-for-the-first-time"></a>首次分配文件删除策略
 
-请务必了解为文档删除策略指定的时间段是指自创建或修改文档以来的时间，而不是分配该策略以来的时间。 例如，您可能创建一个文件删除策略，该策略将在文件创建两年后将其永久删除，然后将该策略分配给一个网站集模板，该模板在四五年前曾用于创建几个网站集。 在这种情况下，现有网站集可能包含多个已早于删除策略指定的年份的文档，这意味着在为第一个文件分配文档删除策略后，会立即删除大量内容时候.
+请务必了解为文档删除策略指定的时间段是指自创建或修改文档以来的时间，而不是分配该策略以来的时间。 例如，您可能创建一个文件删除策略，该策略将在文件创建两年后将其永久删除，然后将该策略分配给一个网站集模板，该模板在四五年前曾用于创建几个网站集。 在这种情况下，现有网站集可能包含的多个文档已早于删除策略指定的两年时间，这意味着在首次分配文档删除策略后，会立即删除大量内容。
   
 当您首次分配策略时，将对网站中的所有文件进行计算，满足删除条件的文件将被删除。这适用于所有现有文件，而不仅仅针对分配策略后新建的文件。还要记住，时间段是针对每个文件的年龄而言，而不是自首次分配策略后的时间。
   

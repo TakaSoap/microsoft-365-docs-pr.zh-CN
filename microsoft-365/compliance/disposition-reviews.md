@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留 Microsoft 365 中的内容的保留标签时，可以选择在保留期结束时触发处置评审。
-ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 8559c5abc2faf032b1e197cd337779b3171d0c7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633061"
 ---
 # <a name="overview-of-disposition-reviews"></a>处置评审概述
 
->*[适用于安全 & 合规性的 Microsoft 365 许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 当内容到达其保留期结束时，您可能需要查看内容以决定是否可以安全地删除（"已释放"），这有几个原因。 例如，您可能需要执行以下操作：
   
@@ -37,7 +37,7 @@ ms.locfileid: "43105659"
     
 - 将内容返回给客户端或将其转移到其他组织。
     
-当您在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全 & 合规性中心中创建保留标签时，您可以选择在保留期结束时触发处置评审。 在处置评审中：
+当您在 Microsoft 365 合规中心、Microsoft 365 安全中心或安全 & 合规性中心创建保留标签时，您可以选择在保留期结束时触发处置评审。 在处置评审中：
   
 - 您选择的人会收到一封电子邮件通知，告知他们有要审阅的内容。 请注意，每周会发送通知。
     
@@ -53,7 +53,7 @@ ms.locfileid: "43105659"
     
 - 审阅者可以查看挂起或已完成的处置，并将该列表导出为 .csv 文件。
 
-处置评审可以包含 Exchange 邮箱、SharePoint 网站、OneDrive 帐户和 Office 365 组中的内容。 在这些位置中等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。
+处置评审可以包含 Exchange 邮箱、SharePoint 网站、OneDrive 帐户和 Microsoft 365 组中的内容。 在这些位置中等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。
   
 ![安全与合规中心中的处置页](../media/Retention-Dispositions-v2-page.png)
 
@@ -71,7 +71,7 @@ ms.locfileid: "43105659"
 ![标签的保留设置](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> 当您指定选项 "在**有准备好查看的项目时通知这些人**" 时，请指定用户。 此选项不支持 Office 365 组。
+> 当您指定选项 "在**有准备好查看的项目时通知这些人**" 时，请指定用户。 此选项不支持 Microsoft 365 组。
 
 ## <a name="disposing-content"></a>处置内容
 
@@ -95,7 +95,7 @@ ms.locfileid: "43105659"
   
 请注意，电子邮件通知将在每周的基础上自动发送给审阅者。 因此，当内容到达其保留期的末尾时，审阅者可能需要长达七天的时间才能接收到内容正在等待处置的电子邮件通知。
   
-另请注意，审核所有处置操作。 为确保这一点，必须至少在第一次处置操作之前打开审核（至少一天）-有关详细信息，请参阅[在 Office 365 安全&amp;合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。 
+另请注意，审核所有处置操作。 为确保这一点，必须至少在第一次处置操作之前打开审核一天-有关详细信息，请参阅[在&amp;安全合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。 
   
 ## <a name="permissions-for-disposition"></a>处置权限
 
@@ -105,7 +105,7 @@ ms.locfileid: "43105659"
 
 - 由于用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，因此您必须使用 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)（而不是使用 Security & 合规性中心中的 "**权限**" 页）为用户分配此角色。 有关说明，请参阅[在 Exchange Online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
-- 此角色不支持 Office 365 组。 而是分配用户邮箱或邮件用户。
+- 此角色不支持 Microsoft 365 组。 而是分配用户邮箱或邮件用户。
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>在永久删除已释放内容之前的时间
 

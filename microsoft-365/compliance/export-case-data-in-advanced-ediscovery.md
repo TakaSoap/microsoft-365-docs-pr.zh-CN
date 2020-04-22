@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中导出事例数据
+title: 在高级电子数据展示中导出事例数据
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: '了解如何使用 Office 365 高级电子数据展示中的导出过程导出电子数据展示事例数据和要查看的结果的指南。  '
-ms.openlocfilehash: ced09e872ab1cf7f3f5a798a916357cb8016b797
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解导出电子数据展示事例数据的准则和在高级电子数据展示中使用导出过程进行审阅的结果。  '
+ms.openlocfilehash: 8a46a0c3d04cb89d50486d032a7958ccb779b5e1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558213"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615936"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>在高级电子数据展示中导出事例数据（经典）
 

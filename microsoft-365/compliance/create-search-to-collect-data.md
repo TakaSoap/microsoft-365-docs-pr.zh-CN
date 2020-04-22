@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 47d30cb2da91eff1260ffcf07838bd066917b4a1
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: 4b740b07b59b7500b8f57584767796b7f31ae87d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610639"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635972"
 ---
 # <a name="create-a-search"></a>创建搜索
 
@@ -39,7 +39,7 @@ ms.locfileid: "42610639"
 
 ## <a name="choose-non-custodial-locations"></a>选择非 custodial 位置
 
-在某些情况下，您可能希望搜索与保管人不关联的数据源。 在这种情况下，您可以指定要搜索的位置，或选择搜索特定 Office 365 服务的所有内容位置（例如，搜索所有 Exchange 邮箱或所有 SharePoint 网站和 OneDrive 帐户）。
+在某些情况下，您可能希望搜索与保管人不关联的数据源。 在这种情况下，您可以指定要搜索的位置，或选择搜索特定 Microsoft 服务（如搜索所有 Exchange 邮箱或所有 SharePoint 网站和 OneDrive 帐户）的所有内容位置。
 
 ## <a name="define-the-search-query-and-conditions"></a>定义搜索查询和条件
 

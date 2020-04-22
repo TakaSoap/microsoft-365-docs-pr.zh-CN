@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 77a4b3e1826889e996b875c9427013c7b08dfaaf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 278985aa93f8802f78bd632a5fc90dd6be846b21
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600639"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637904"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>调查数据的高级索引
 
-可以对实时系统中的内容进行部分索引，其中包括映像的存在、不受支持的文件类型或在遇到索引文件大小限制时遇到的多种原因。 当处理高风险数据溢出时，您需要确保您的搜索捕获了要调查的所有数据。 当向数据调查中添加了感兴趣的人时，将重新处理 Office 365 中被视为部分索引的任何内容，以使其完全可搜索。 此过程称为 "*高级索引*"。 
+可以对实时系统中的内容进行部分索引，其中包括映像的存在、不受支持的文件类型或在遇到索引文件大小限制时遇到的多种原因。 当处理高风险数据溢出时，您需要确保您的搜索捕获了要调查的所有数据。 当向数据调查中添加了感兴趣的人时，被视为部分索引的任何内容将被重新处理，以使其完全可搜索。 此过程称为 "*高级索引*"。 
 
-若要了解有关 Office 365 中的处理支持和部分索引项目的详细信息，请参阅：
+若要了解有关处理支持和部分索引项目的详细信息，请参阅：
 
 - [数据调查中支持的文件类型](supported-filetypes-datainvestigations.md)
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
-ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634930"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615986"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -50,13 +50,13 @@ ms.locfileid: "42634930"
 
   - Microsoft Edge <sup>2</sup>
   
-    或
+    OR
 
   - Microsoft Internet Explorer 10 及更高版本
     
   > [!NOTE]
   > <sup>1</sup> Microsoft 不会为 ClickOnce 应用程序制造第三方扩展或加载项。 使用不受支持的浏览器导出搜索结果，但不支持第三方分机或加载项。<br/>
-  > <sup>2</sup>由于最近对 Microsoft Edge 进行了更改，因此 ClickOnce 支持在默认情况下不再启用。 有关在 Edge 中启用 ClickOnce 支持的说明，请参阅[使用 Microsoft Edge 中的 Office 365 电子数据展示导出工具](configure-edge-to-export-search-results.md)。
+  > <sup>2</sup>由于最近对 Microsoft Edge 进行了更改，因此 ClickOnce 支持在默认情况下不再启用。 有关在 Edge 中启用 ClickOnce 支持的说明，请参阅[在 Microsoft Edge 中使用电子数据展示导出工具](configure-edge-to-export-search-results.md)。
     
 - 下载搜索结果时（如步骤2中所述），您可以通过在用于导出搜索结果的计算机上配置 Windows 注册表设置来提高下载速度。 有关详细信息，请参阅[在从 Office 365 导出电子数据展示搜索结果时提高下载速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
     
@@ -87,7 +87,7 @@ ms.locfileid: "42634930"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用您的工作或学校帐户登录。
     
 3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索** \> **内容搜索**"。
     
@@ -160,7 +160,7 @@ ms.locfileid: "42634930"
   
 3. 单击“下载结果”****。
     
-4. 如果系统提示您安装**MicrosoftOffice 365 电子数据展示导出工具**，请单击 "**安装**"。
+4. 如果系统提示您安装**电子数据展示导出工具**，请单击 "**安装**"。
     
 5. 在“电子数据展示导出工具”**** 中，将你在步骤 2 中复制的导出密钥粘贴在相应的框中。
     
@@ -212,7 +212,7 @@ ms.locfileid: "42634930"
     
 - 默认情况下，可以导出的 PST 文件的最大大小为 10 GB。 这意味着，如果用户邮箱中的搜索结果大于 10 GB，则邮箱的搜索结果将导出到两个（或更多）单独的 PST 文件中。 如果选择在单个 PST 文件中导出所有搜索结果，则在搜索结果的总大小大于 10 GB 时，PST 文件将 spilt 到其他 PST 文件中。 如果要更改此默认大小，可以在用于导出搜索结果的计算机上编辑 Windows 注册表。 请参阅[在导出电子数据展示搜索结果时更改 PST 文件的大小](change-the-size-of-pst-files-when-exporting-results.md)。
     
-    此外，特定邮箱中的搜索结果不会在多个 PST 文件中划分，除非单个邮箱中的内容大于 10 GB。 如果您选择将搜索结果导出到一个包含单个文件夹中的所有邮件的一个 PST 文件中，并且搜索结果大于 10 GB，则这些项目仍按时间顺序进行组织，因此它们将 spilt 到其他 PST 文件中，具体取决于发送的结束.
+    此外，特定邮箱中的搜索结果不会在多个 PST 文件中划分，除非单个邮箱中的内容大于 10 GB。 如果您选择将搜索结果导出到一个包含单个文件夹中的所有邮件的一个 PST 文件中，并且搜索结果大于 10 GB，则这些项目仍按时间顺序进行组织，因此这些项目将根据发送日期 spilt 到其他 PST 文件中。
      
  ### <a name="export-reports"></a>导出报告
   

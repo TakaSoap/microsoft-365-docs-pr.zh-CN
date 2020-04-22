@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 将 Office 365 审核日志搜索的结果导出并下载到 CSV 文件后，可以使用 Excel 中 Power Query 编辑器中的 JSON 转换功能将 AuditData 列中的 JSON 对象中的每个属性拆分为自己的列。 这可以帮助您快速找到要查找的特定审核数据。
-ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 将审核日志搜索的结果导出并下载到 CSV 文件后，可以在 Excel 的 Power Query 编辑器中使用 JSON 转换功能，将 AuditData 列中的 JSON 对象中的每个属性拆分为自己的列。 这可以帮助您快速找到要查找的特定审核数据。
+ms.openlocfilehash: 64a16ad3e2584f61e6c30da26d6867614c9a9119
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634920"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615956"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>导出、配置和查看审核日志记录
 
-在搜索 Office 365 审核日志并将搜索结果下载到 CSV 文件后，该文件包含一个名为 " **AuditData**" 的列，其中包含有关每个事件的其他信息。 此列中的数据的格式为 JSON 对象，该对象包含多个配置为 "*属性：值*" 对（用逗号分隔）的属性。 您可以使用 Excel 中 Power Query 编辑器中的 JSON 转换功能，将**AuditData**列中的 json 对象中的每个属性拆分为多个列，以便每个属性都有自己的列。 这样，您可以对一个或多个这些属性进行排序和筛选，这有助于您快速找到要查找的特定审核数据。
+在搜索审核日志并将搜索结果下载到 CSV 文件后，该文件包含一个名为 " **AuditData**" 的列，其中包含有关每个事件的其他信息。 此列中的数据的格式为 JSON 对象，该对象包含多个配置为 "*属性：值*" 对（用逗号分隔）的属性。 您可以使用 Excel 中 Power Query 编辑器中的 JSON 转换功能，将**AuditData**列中的 json 对象中的每个属性拆分为多个列，以便每个属性都有自己的列。 这样，您可以对一个或多个这些属性进行排序和筛选，这有助于您快速找到要查找的特定审核数据。
 
 ## <a name="step-1-export-audit-log-search-results"></a>步骤1：导出审核日志搜索结果
 
@@ -92,7 +92,7 @@ CSV 文件将在**查询编辑器**中打开。 共有四列： **CreationDate**
     
    - 将 "**使用原始列名称作为前缀**" 复选框保留为选中状态，以将 AuditData 前缀添加到列名称中;例如，RecordType 或**AuditData**。 **AuditData** 。
 
-9. 单击“**确定**”。
+9. 单击“确定”****。
     
     **AuditData**列拆分为多个列。 每个新列对应于 AuditData JSON 对象中的一个属性。 该列中的每一行都包含属性的值。 如果属性不包含值，则显示*null*值。 在 Excel 中，空值的单元格为空。
   
@@ -102,11 +102,11 @@ CSV 文件将在**查询编辑器**中打开。 共有四列： **CreationDate**
 
 下面是在使用 JSON 转换功能将**AuditData**列拆分为多个列之前和之后导出和查看审核日志的一些提示和示例。
 
-- 筛选**RecordType**列以仅显示特定的 Office 365 服务或功能区域中的记录。 例如，若要显示与 SharePoint 共享相关的事件，请选择**14**个（由 SharePoint 共享活动触发的记录的枚举值）。 有关与**RecordType**列中显示的枚举值相对应的 Office 365 服务的列表，请参阅[Office 365 审核日志中的详细属性](detailed-properties-in-the-office-365-audit-log.md)。
+- 筛选**RecordType**列以仅显示特定服务或功能区域中的记录。 例如，若要显示与 SharePoint 共享相关的事件，请选择**14**个（由 SharePoint 共享活动触发的记录的枚举值）。 有关与**RecordType**列中显示的枚举值相对应的服务列表，请参阅[audit Log 中的详细属性](detailed-properties-in-the-office-365-audit-log.md)。
 
 - 筛选 "**操作**" 列以显示特定活动的记录。 有关与安全 & 合规中心中的审核日志搜索工具中的可搜索活动对应的大多数操作的列表，请参阅在[安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md#audited-activities)中的 "已审核的活动" 部分。
 
-- 您可以使用 Exchange Online Powershell 中的[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) Cmdlet 将 Office 365 审核日志搜索的结果导出到 CSV 文件，而不是使用安全 & 合规中心中的审核日志搜索工具。 然后，您可以按照步骤2中描述的相同过程使用 Power Query 编辑器格式化审核日志。 使用 PowerShell cmdlet 的一个优点是，您可以使用*RecordType*参数从特定的 Office 365 服务中搜索事件。 下面是使用 PowerShell 将审核记录导出到 CSV 文件的几个示例，以便您可以使用 Power Query 编辑器转换**AuditData**列中的 JSON 对象，如步骤2中所述。
+- 您可以使用 Exchange Online Powershell 中的[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) cmdlet 将审核日志搜索结果导出到 CSV 文件，而不是使用安全 & 合规中心中的审核日志搜索工具。 然后，您可以按照步骤2中描述的相同过程使用 Power Query 编辑器格式化审核日志。 使用 PowerShell cmdlet 的一个优点是，您可以使用*RecordType*参数从特定服务中搜索事件。 下面是使用 PowerShell 将审核记录导出到 CSV 文件的几个示例，以便您可以使用 Power Query 编辑器转换**AuditData**列中的 JSON 对象，如步骤2中所述。
 
    在此示例中，运行以下命令以返回与 SharePoint 共享操作相关的所有记录。 
    

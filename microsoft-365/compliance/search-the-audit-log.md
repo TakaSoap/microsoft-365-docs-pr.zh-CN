@@ -1,5 +1,5 @@
 ---
-title: 在 "审核日志中查找 Office 365 中的用户和管理员活动"
+title: 在审核日志中搜索用户和管理员活动
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,17 +13,17 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: Office 365 审核日志是一个统一的审核日志。 为什么是统一的审核日志？ 由于您组织的大多数 Office 365 服务中的事件将记录在可以搜索的单个审核日志中。 这意味着您可以在这些服务中搜索用户和管理员活动：
-ms.openlocfilehash: 82ed3c1afd4f59136b04120982ddb1433f4dd0eb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 审核日志是一个统一的审核日志。 为什么是统一的审核日志？ 由于组织订阅的大多数服务中的事件都记录在可以搜索的单个审核日志中。 这意味着您可以在这些服务中搜索用户和管理员活动：
+ms.openlocfilehash: 95f5025e4831223c93251c7c22d1f43d44086d48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597529"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625092"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>在 "审核日志中查找 Office 365 中的用户和管理员活动"
+# <a name="search-the-audit-log-for-user-and-admin-activity"></a>在审核日志中搜索用户和管理员活动
 
-Office 365 审核日志是一个统一的审核日志。 为什么是统一的审核日志？ 由于您组织的大多数 Office 365 服务中的事件将记录在可以搜索的单个审核日志中。 这意味着您可以在这些服务中搜索用户和管理员活动： 
+审核日志是一个统一的审核日志。 为什么是统一的审核日志？ 由于组织中的大多数服务所订阅的事件将记录在可以搜索的单个审核日志中。 这意味着您可以在这些服务中搜索用户和管理员活动： 
   
 - SharePoint
 - OneDrive
@@ -38,7 +38,7 @@ Office 365 审核日志是一个统一的审核日志。 为什么是统一的�
    
  ## <a name="set-up-auditing"></a>设置审核
   
-在可以搜索 Office 365 审核日志之前，您必须执行的操作很少。
+在搜索审核日志之前，必须执行一些操作。
   
 - [打开审核日志搜索](turn-audit-log-search-on-or-off.md)以开始记录可搜索的事件 
     
@@ -46,7 +46,7 @@ Office 365 审核日志是一个统一的审核日志。 为什么是统一的�
     
  ## <a name="search-the-audit-log"></a>搜索审核日志
   
-启用审核后，可以从多个 Office 365 服务中搜索数百个不同类型的事件。
+启用审核后，可以从多个 Microsoft 365 服务中搜索数百个不同类型的事件。
   
 - [在审核日志中搜索](search-the-audit-log-in-security-and-compliance.md)用户和管理员活动 
     

@@ -3,7 +3,7 @@ title: Microsoft 365 服务运行状况状态
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/8/2020
+ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 服务运行状况状态
-ms.openlocfilehash: c1b938a91b4f0e43e51595ec877e57e7654c5232
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 26a9983528072054606cc399ad871d0f99fd22fb
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540805"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583353"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 网络运行状况状态
 
@@ -37,7 +37,7 @@ _此页面的更新中可能出现延迟。我们将在生成自动化的解决�
 
 | 位置 | 问题类型 | 详情 |
 | --- | --- | --- |
-| 墨西哥 | ISP 基础结构（外部） | 在墨西哥的 Internet 服务提供商基础结构中检测到的可用性问题可能会导致 Microsoft 365 用户体验欠佳。 有关详细信息，请检查服务运行状况仪表板。 |
+| 无当前问题 | | |
 
 ## <a name="recommendations-to-improve-network-experience"></a>有关改善网络体验的建议
 

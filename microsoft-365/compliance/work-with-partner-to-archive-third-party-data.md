@@ -1,5 +1,5 @@
 ---
-title: 与合作伙伴合作，以在 Office 365 中存档第三方数据
+title: 与合作伙伴联系以存档第三方数据
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,23 +11,23 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这使您可以在 Office 365 中存档第三方数据源中的数据，以便您可以使用 Office 365 合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 6104381b842b9a4d76de7278c0b7280ec2f11222
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这允许您存档第三方数据源中的数据，以便您可以使用 Microsoft 365 合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据的管理。
+ms.openlocfilehash: ee321f14f0fc4ac61781892d8fc3b56265b0d223
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085005"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626238"
 ---
-# <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作，以在 Office 365 中存档第三方数据
+# <a name="work-with-a-partner-to-archive-third-party-data"></a>与合作伙伴联系以存档第三方数据
 
-您可以与 Microsoft 合作伙伴合作，将第三方数据源中的数据导入和存档到 Office 365。 合作伙伴可以为您提供一个自定义连接器，该连接器被配置为从第三方数据源提取项目（定期），然后将这些项目导入到 Office 365。 合作伙伴连接器将项目的内容从数据源转换为电子邮件格式，然后将这些项目存储在 Office 365 中的邮箱中。 导入第三方数据后，可以在此数据中应用 Office 365 合规性功能，如诉讼保留、内容搜索、就地存档、审核和 Office 365 保留策略。
+你可以与 Microsoft 合作伙伴合作，将第三方数据源中的数据导入和存档到 Microsoft 365。 合作伙伴可以为您提供一个自定义连接器，该连接器被配置为从第三方数据源提取项目（定期），然后导入这些项目。 合作伙伴连接器将项目的内容从数据源转换为电子邮件格式，然后将这些项目存储在邮箱中。 导入第三方数据后，可以对此数据应用 Microsoft 365 合规性功能，如诉讼保留、内容搜索、就地存档、审核和 Microsoft 365 保留策略。
   
-下面概述了使用 Microsoft 合作伙伴将第三方数据导入 Office 365 时所需的过程和步骤。
+下面概述了使用 Microsoft 合作伙伴导入第三方数据所需的过程和步骤。
 
 [Step 1: Find a third-party data partner](#step-1-find-a-third-party-data-partner)
 
-[Step 2: Create and configure a third-party data mailbox in Office 365](#step-2-create-and-configure-a-third-party-data-mailbox-in-office-365)
+[步骤2：创建和配置第三方数据邮箱](#step-2-create-and-configure-a-third-party-data-mailbox-in-office-365)
 
 [Step 3: Configure user mailboxes for third-party data](#step-3-configure-user-mailboxes-for-third-party-data)
 
@@ -41,21 +41,21 @@ ms.locfileid: "42085005"
   
 ![第三方数据导入过程的工作原理](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
-1. 客户可以通过其选择的合作伙伴来配置将从第三方数据源提取项目的连接器，然后将这些项目导入到 Office 365。
+1. 客户可以通过其选择的合作伙伴来配置将从第三方数据源提取项目的连接器，然后将这些项目导入到 Microsoft 365。
     
 2. 合作伙伴连接器通过第三方 API （根据计划或已配置的原则）连接到第三方数据源，并从数据源中提取项目。 合作伙伴连接器将项目内容转换为电子邮件格式。 有关消息格式架构的说明，请参阅 "[详细信息](#more-information)" 部分。 
     
-3. 合作伙伴连接器通过已知终结点使用 Exchange Web 服务（EWS）连接到 Office 365 中的 Azure 服务。
+3. 合作伙伴连接器通过已知终结点使用 Exchange Web 服务（EWS）连接到 Microsoft 365 中的 Azure 服务。
     
 4. 项目便导入到特定用户的邮箱或“catch-all”第三方数据邮箱。无论项目是导入到特定用户邮箱还是第三方数据邮箱，都要基于以下条件：
     
-    a. **具有与 Office 365 用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器可以将第三方数据源中项目的用户 ID 映射到 Office 365 中的特定用户 ID，则会将该项目复制到用户的 "可恢复的项目" 文件夹中的 "**清除**" 文件夹中。 用户无法访问“清除”文件夹中的项目。 不过，您可以使用 Office 365 电子数据展示工具搜索 "清除" 文件夹中的项目。
+    a. **具有与用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器可以将第三方数据源中项目的用户 ID 映射到 Office 365 中的特定用户 ID，则会将该项目复制到用户的 "可恢复的项目" 文件夹中的 "**清除**" 文件夹中。 用户无法访问“清除”文件夹中的项目。 不过，您可以使用电子数据展示工具搜索 "清除" 文件夹中的项目。
     
-    b. **没有与 Office 365 用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器无法将项目的用户 ID 映射到 Office 365 中的特定用户 ID，则会将该项目复制到第三方数据邮箱的 **"收件箱**" 文件夹中。 将项目导入到收件箱允许您或组织中的其他人登录到第三方邮箱来查看和管理这些项目，并查看是否需要在合作伙伴连接器配置中进行任何调整。
+    b. **没有与用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器无法将某个项目的用户 ID 映射到特定用户 ID，则会将该项目复制到第三方数据邮箱的 **"收件箱**" 文件夹中。 将项目导入到收件箱允许您或组织中的其他人登录到第三方邮箱来查看和管理这些项目，并查看是否需要在合作伙伴连接器配置中进行任何调整。
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>步骤 1：寻找第三方数据合作伙伴
 
-在 Office 365 中存档第三方数据的关键组件是查找和使用 Microsoft 合作伙伴，该合作伙伴专门负责捕获第三方数据源中的数据，并将其导入 Office 365。 导入数据后，可以对其进行存档和保留，以及组织的其他 Microsoft 数据（例如来自 SharePoint 和 OneDrive for business 的 Exchange 和文档的电子邮件）。 合作伙伴创建从组织的第三方数据源（如 BlackBerry、Facebook、Google +、Thomson Reuters、Twitter 和 YouTube）提取数据的连接器，并将该数据传递给将项目导入 Exchange 邮箱的 Office 365 API电子邮件。 
+在 Microsoft 365 中存档第三方数据的关键组件是查找和使用 Microsoft 合作伙伴，该合作伙伴专门负责捕获第三方数据源中的数据，并将其导入 Office 365。 导入数据后，可以对其进行存档和保留，以及组织的其他 Microsoft 数据（例如来自 SharePoint 和 OneDrive for business 的 Exchange 和文档的电子邮件）。 合作伙伴创建从组织的第三方数据源（如 BlackBerry、Facebook、Google +、Thomson Reuters、Twitter 和 YouTube）提取数据的连接器，并将该数据传递给将项目作为电子邮件导入 Exchange 邮箱的 Office 365 API。 
   
 以下各节列出了参与在 Office 365 中存档第三方数据的程序的 Microsoft 合作伙伴（以及他们所支持的第三方数据源）。
 
@@ -125,7 +125,7 @@ ms.locfileid: "42085005"
     
 - Instagram
     
-- LinkedIn
+- 领英
     
 - Pinterest
     
@@ -335,7 +335,7 @@ ms.locfileid: "42085005"
     
 - JXTA
     
-- LinkedIn
+- 领英
     
 - Microsoft Lync（2010、2013）
     
@@ -466,11 +466,11 @@ ms.locfileid: "42085005"
   
 ## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-office-365"></a>步骤 2：在 Office 365 中创建和配置第三方数据邮箱
 
-以下是创建和配置将数据导入到 Office 365 的第三方数据邮箱的步骤。 如前所述，如果合作伙伴连接器无法将项目的用户 ID 映射到 Office 365 用户帐户，则会将项目导入此邮箱。
+以下是创建和配置将数据导入到 Office 365 的第三方数据邮箱的步骤。 如前所述，如果合作伙伴连接器无法将项目的用户 ID 映射到用户帐户，则会将项目导入此邮箱。
   
  **在 Microsoft 365 管理中心完成这些任务**
   
-1. 在 Office 365 中创建用户帐户，并为其分配 Exchange Online 计划2许可证;请参阅[向 Office 365 添加用户](https://go.microsoft.com/fwlink/p/?LinkId=692098)。 需要 Plan 2 许可证将邮箱置于诉讼保留状态，或启用具有无限存储配额的存档邮箱。
+1. 创建用户帐户并为其分配 Exchange Online 计划2许可证;请参阅[向 Office 365 添加用户](https://go.microsoft.com/fwlink/p/?LinkId=692098)。 需要 Plan 2 许可证将邮箱置于诉讼保留状态，或启用具有无限存储配额的存档邮箱。
     
 2. 将第三方数据邮箱的用户帐户添加到 Office 365 中的**Exchange 管理员**管理员角色中;请参阅[在 Office 365 中分配管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532393)。
     
@@ -487,17 +487,17 @@ ms.locfileid: "42085005"
 
 2. 为第三方数据邮箱分配**FullAccess**权限，以便管理员或合规专员可以在 Outlook 桌面客户端中打开第三方数据邮箱;请参阅[管理收件人的权限](https://go.microsoft.com/fwlink/p/?LinkId=692104)。
     
-3. 为第三方数据邮箱启用以下与合规性相关的 Office 365 功能：
+3. 为第三方数据邮箱启用以下与符合性相关的功能：
     
     - 启用存档邮箱;请参阅[启用存档邮箱](enable-archive-mailboxes.md)和[启用无限制存档](enable-unlimited-archiving.md)。 这样，你就可以通过设置将第三方数据项移动到存档邮箱的存档策略来释放主邮箱中的存储空间。 这为您提供了第三方数据的无限制存储。
     
-    - 将第三方数据邮箱置于诉讼保留的位置。 您还可以在安全与合规中心中应用 Office 365 保留策略。 将此邮箱置于保留状态时，将保留第三方数据项（无限期或指定的持续时间），并防止清除邮箱中的项目。 请参阅下列主题之一：
+    - 将第三方数据邮箱置于诉讼保留的位置。 您还可以在 "安全与合规中心" 中应用 Microsoft 365 保留策略。 将此邮箱置于保留状态时，将保留第三方数据项（无限期或指定的持续时间），并防止清除邮箱中的项目。 请参阅下列主题之一：
     
       - [将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [Office 365 中的保留策略概述](retention-policies.md)
+      - [保留策略概述](retention-policies.md)
     
-    - 对访问第三方数据邮箱的所有者、委派用户和管理员启用邮箱审核日志记录；请参阅[Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)。 这使您可以审核任何有权访问第三方数据邮箱的用户执行的所有活动。
+    - 为对第三方数据邮箱的所有者、代理和管理员访问启用邮箱审核日志记录;请参阅[启用邮箱审核](enable-mailbox-auditing.md)。 这使您可以审核任何有权访问第三方数据邮箱的用户执行的所有活动。
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>步骤 3：为第三方数据配置用户邮箱
 
@@ -505,17 +505,17 @@ ms.locfileid: "42085005"
   
 1. 为每个用户启用存档邮箱;请参阅[启用存档邮箱](enable-archive-mailboxes.md)和[启用无限制存档](enable-unlimited-archiving.md)。
     
-2. 将用户邮箱置于诉讼保留或应用 Office 365 保留策略;请参阅下列主题之一： 
+2. 将用户邮箱置于诉讼保留或应用 Microsoft 365 保留策略;请参阅下列主题之一： 
     
     - [将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [Office 365 中的保留策略概述](retention-policies.md)
+    - [保留策略概述](retention-policies.md)
     
     如前所述，在将邮箱置于保留时，您可以设置保留第三方数据源中项目的时长，或者也可以选择无限期保留这些项目。
 
 ## <a name="step-4-provide-your-partner-with-information"></a>步骤 4：为合作伙伴提供信息
 
-最后一步是为您的合作伙伴提供以下信息，这样他们便能够配置连接器以连接到 Office 365 组织，从而将数据导入到用户邮箱和第三方数据邮箱。 
+最后一步是为你的合作伙伴提供以下信息，以便他们可以将连接器配置为连接到你的组织以将数据导入到用户邮箱和第三方数据邮箱。 
   
 - 用于连接到 Office 365 中的 Azure 服务的终结点：
 
@@ -523,17 +523,17 @@ ms.locfileid: "42085005"
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- 您在步骤2中创建的第三方数据邮箱的登录凭据（Office 365 用户 ID 和密码）。 这些凭据是必需的，以便合作伙伴连接器可以访问并将项目导入用户邮箱和第三方数据邮箱。
+- 您在步骤2中创建的第三方数据邮箱的登录凭据（Microsoft 365 用户 ID 和密码）。 这些凭据是必需的，以便合作伙伴连接器可以访问并将项目导入用户邮箱和第三方数据邮箱。
  
 ## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>步骤5：在 Azure Active Directory 中注册第三方数据连接器
 
-从2018年9月30日起，Office 365 中的 Azure 服务将开始使用 Exchange Online 中的新式验证来验证尝试连接到 Office 365 组织的第三方数据连接器以导入数据。 此更改的原因是新式验证提供的安全性高于当前方法，后者基于使用前面所述的终结点连接到 Azure 服务的白名单第三方连接器。
+从2018年9月30日起，Office 365 中的 Azure 服务将开始使用 Exchange Online 中的新式验证来验证尝试连接到您的组织以导入数据的第三方数据连接器。 此更改的原因是新式验证提供的安全性高于当前方法，后者基于使用前面所述的终结点连接到 Azure 服务的白名单第三方连接器。
 
-若要使第三方数据连接器能够使用新式新式身份验证方法连接到 Office 365，Office 365 组织中的管理员必须同意在 Azure Active Directory 中将连接器注册为受信任的服务应用程序。 这是通过接受允许连接器在 Azure Active Directory 中访问组织数据的权限请求来实现的。 接受此请求后，第三方数据连接器将作为企业应用程序添加到 Azure Active Directory，并表示为服务主体。 有关许可过程的详细信息，请参阅[租户管理员同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
+若要使第三方数据连接器能够使用新式新式身份验证方法连接到 Office 365，组织中的管理员必须同意在 Azure Active Directory 中将连接器注册为受信任的服务应用程序。 这是通过接受允许连接器在 Azure Active Directory 中访问组织数据的权限请求来实现的。 接受此请求后，第三方数据连接器将作为企业应用程序添加到 Azure Active Directory，并表示为服务主体。 有关许可过程的详细信息，请参阅[租户管理员同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
 
 以下是访问和接受注册连接器的请求的步骤：
 
-1. 转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，并使用 Office 365 全局管理员的凭据登录。
+1. 转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，并使用全局管理员的凭据登录。
 
    将显示以下对话框。 您可以展开 carets 以查看将分配给连接器的权限。
 
@@ -558,7 +558,7 @@ ms.locfileid: "42085005"
     
     |**邮件属性**|**强制？**|**说明**|**示例值**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器尝试将源项目中的用户 ID （例如 Twitter 句柄）映射到所有参与者（"FROM" 和 "TO" 字段中的用户）的 Office 365 用户帐户。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目中的任何参与者映射到 Office 365 用户帐户，则会将该项目导入 Office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目的发件人的参与者必须在要向其导入项目的 Office 365 组织中具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |是  <br/> |最初创建或发送第三方数据源中的项目的用户。 合作伙伴连接器尝试将源项目中的用户 ID （例如 Twitter 句柄）映射到所有参与者（"发件人" 和 "TO" 字段中的用户）的用户帐户。 邮件的副本将导入到每个参与者的邮箱中。 如果无法将项目中的任何参与者映射到用户帐户，则会将该项目导入 Office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目的发件人的参与者必须在要将项目导入到的组织中具有活动邮箱。 如果发件人没有活动邮箱，则会返回以下错误：<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |是  <br/> |接收项目的用户（如果适用于数据源中的项目）。  <br/> | `bob@contoso.com` <br/> |
     |**主题** <br/> |否  <br/> |源项目中的主题。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**结束** <br/> |是  <br/> |在客户数据源中最初创建或发布项目的日期。 例如，tweeted Twitter 邮件时的日期。  <br/> | `01 NOV 2015` <br/> |
@@ -578,7 +578,7 @@ ms.locfileid: "42085005"
     Date: Tue, 02 Feb 2016 22:55:33 GMT 
     ```
 
-- 您可以使用安全与合规中心中的内容搜索工具来搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 若要专门搜索这些导入项，可以在内容搜索的关键字框中使用以下消息属性-值对。
+- 您可以使用 "安全和合规中心" 中的内容搜索工具搜索从第三方数据源导入邮箱的项目。 若要专门搜索这些导入项，可以在内容搜索的关键字框中使用以下消息属性-值对。
     
   - **`kind:externaldata`**：使用此属性-值对可搜索所有第三方数据类型。 例如，若要搜索从第三方数据源导入，并在导入项目的 Subject 属性中包含 "contoso" 一词的项目，请使用关键字查询`kind:externaldata AND subject:contoso`。
     

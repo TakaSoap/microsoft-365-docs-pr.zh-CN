@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 中的 Office 365 加密
+title: Microsoft Dynamics 365 中的加密
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：了解 Microsoft Dynamics 365 中的加密。
-ms.openlocfilehash: 288f739182f8419cf7fbbfb6dfd7ad0a2c7838a5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597849"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637236"
 ---
-# <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 中的 Office 365 加密
+# <a name="encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 中的加密
 
 Microsoft 使用加密技术保护动态365中的客户数据，而不是 Microsoft 数据库中的静态，同时在用户设备和我们的数据中心之间传输。 在客户和 Microsoft 数据中心之间建立的连接将进行加密，并使用工业标准 TLS 来保护所有公用终结点。 TLS 可有效建立安全性增强的浏览器到服务器连接，以帮助确保桌面和数据中心之间的数据机密性和完整性。 在激活数据加密之后，将无法关闭该功能。 有关详细信息，请参阅[字段级数据加密](https://msdn.microsoft.com/library/dn481562.aspx)。
 

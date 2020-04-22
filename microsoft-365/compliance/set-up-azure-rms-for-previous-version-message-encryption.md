@@ -1,5 +1,5 @@
 ---
-title: 为以前版本的 Office 365 邮件加密设置 Azure 权限管理
+title: 为以前版本的邮件加密设置 Azure 权限管理
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 早期版本的 Office 365 邮件加密取决于 Microsoft Azure 权限管理（以前称为 "Windows Azure Active Directory 权限管理"）。
-ms.openlocfilehash: be0fad248465927ee7cc59b31a36e65ce5c053db
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3d98fff1987548292699972cedb4e3aa34d20b13
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601479"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635474"
 ---
-# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>为以前版本的 Office 365 邮件加密设置 Azure 权限管理
+# <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>为以前版本的邮件加密设置 Azure 权限管理
 
 本主题介绍了为激活前一版本的 Office 365 邮件加密（OME）而激活和设置 Azure 权限管理（RMS）（Azure 信息保护的一部分）时需要遵循的步骤。
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>本文仅适用于早期版本的 OME
-如果您尚未将 Office 365 组织移动到新的 OME 功能，但您已经部署了 OME，则本文中的信息适用于您的组织。 Microsoft 建议您制定一个计划，尽快移动到新的 OME 功能，因为它对您的组织合理。 有关说明，请参阅[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。 如果您想要详细了解新功能的工作方式，请参阅[Office 365 邮件加密](ome.md)。 本文的其余部分是在发布新的 OME 功能之前的 OME 行为。
+如果尚未将组织移动到新的 OME 功能，但已部署了 OME，则本文中的信息适用于您的组织。 Microsoft 建议您制定一个计划，尽快移动到新的 OME 功能，因为它对您的组织合理。 有关说明，请参阅[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。 如果您想要详细了解新功能的工作方式，请参阅[Office 365 邮件加密](ome.md)。 本文的其余部分是在发布新的 OME 功能之前的 OME 行为。
 
 ## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>使用早期版本的 Office 365 邮件加密的先决条件
 <a name="warmprereqs"> </a>
 
-Office 365 邮件加密（OME）（包括 IRM）取决于 Azure 权限管理（Azure RMS）。 Azure RMS 是 Azure 信息保护使用的保护技术。 若要使用 OME，Office 365 组织必须包括 Exchange Online 或 Exchange Online 保护订阅，这些订阅又包括 Azure 权限管理订阅。
+Office 365 邮件加密（OME）（包括 IRM）取决于 Azure 权限管理（Azure RMS）。 Azure RMS 是 Azure 信息保护使用的保护技术。 若要使用 OME，您的组织必须包括 Exchange Online 或 Exchange Online Protection 订阅，这些订阅又包括 Azure 权限管理订阅。
   
 - 如果你不确定订阅包含的内容，请参阅 Exchange Online 服务说明[中的邮件策略、恢复和合规性](https://technet.microsoft.com/library/exchange-online-message-policy-recovery-and-compliance.aspx)。
 
@@ -50,16 +50,16 @@ Office 365 邮件加密（OME）（包括 IRM）取决于 Azure 权限管理（A
   
 ## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>通过导入受信任的发布域（Tpd），将早期版本的 OME 设置为使用 Azure RMS
 
-TPD 是一个 XML 文件，其中包含有关您的组织的权限管理设置的信息。 例如，TPD 包含有关用于对证书和许可证进行签名和加密的服务器许可方证书（SLC）的信息、用于许可和发布的 Url 等。 您可以使用 Windows PowerShell 将 TPD 导入到 Office 365 组织中。
+TPD 是一个 XML 文件，其中包含有关您的组织的权限管理设置的信息。 例如，TPD 包含有关用于对证书和许可证进行签名和加密的服务器许可方证书（SLC）的信息、用于许可和发布的 Url 等。 您可以使用 Windows PowerShell 将 TPD 导入到您的组织中。
   
 > [!IMPORTANT]
-> 以前，可以选择将 Tpd 从 Active Directory 权限管理服务（AD RMS）导入 Office 365 组织中。 但是，这样做会阻止您使用新的 OME 功能，不建议这样做。 如果您的 Office 365 组织当前以这种方式配置，Microsoft 建议您创建从本地 Active Directory RMS 迁移到基于云的 Azure 信息保护的计划。 有关详细信息，请参阅[从 AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。 在完成到 Azure 信息保护的迁移之前，你将无法使用新的 OME 功能。
+> 以前，可以选择将 Tpd 从 Active Directory 权限管理服务（AD RMS）导入到您的组织中。 但是，这样做会阻止您使用新的 OME 功能，不建议这样做。 如果您的组织当前是以这种方式配置的，Microsoft 建议您创建从本地 Active Directory RMS 迁移到基于云的 Azure 信息保护的计划。 有关详细信息，请参阅[从 AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。 在完成到 Azure 信息保护的迁移之前，你将无法使用新的 OME 功能。
   
  **从 Azure RMS 导入 Tpd**
   
 1. [使用远程 PowerShell 连接到 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)。
 
-2. 选择与您的 Office 365 组织的地理位置对应的密钥共享 URL：
+2. 选择与您的组织的地理位置相对应的键共享 URL：
 
 |**位置**|**键共享位置 URL**|
 |:-----|:-----|
@@ -89,7 +89,7 @@ TPD 是一个 XML 文件，其中包含有关您的组织的权限管理设置�
 
     其中， *TPDName*是要用于 TPD 的名称。 例如，"Contoso 北方美洲 TPD"。 
 
-5. 若要验证您是否已成功将 Office 365 组织配置为使用 Azure 权限管理服务，请运行[get-irmconfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) cmdlet 和-RMSOnline 开关，如下所示： 
+5. 若要验证您是否已成功将组织配置为使用 Azure 权限管理服务，请运行[get-irmconfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) cmdlet 和-RMSOnline 开关，如下所示： 
 
   ```powershell
   Test-IRMConfiguration -RMSOnline

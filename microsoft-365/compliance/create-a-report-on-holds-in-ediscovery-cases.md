@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中的电子数据展示事例中创建保留报告
+title: 创建电子数据展示事例中的保留的报告
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,20 +16,20 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 使用本文中的脚本生成一个报告，该报告包含有关与 Office 365 或 Microsoft 365 中的符合性中心中的电子数据展示事例相关联的所有保留的信息。
-ms.openlocfilehash: 8c426ff06bb0b2bafdfa91b9098b321994d558d7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 263ac052f320a989b8843f2954a5df0933cdb2f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077701"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632247"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>在 Office 365 中的电子数据展示事例中创建保留报告
+# <a name="create-a-report-on-holds-in-ediscovery-cases"></a>创建电子数据展示事例中的保留的报告
   
 本文中的脚本允许电子数据展示管理员和电子数据展示管理器生成一个报告，其中包含有关与 Office 365 或 Microsoft 365 中的合规性中心中的电子数据展示事例相关联的所有保留项的信息。 报告包含与保留相关联的事例的名称、放置在保留中的内容位置以及保留是否基于查询的信息。 如果存在不包含任何保留的案例，该脚本将创建另一个报告，其中包含不含 "保留" 的案例列表。
 
 有关报告中包含的信息的详细说明，请参阅[详细信息](#more-information)部分。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要生成组织中所有电子数据展示事例的报告，您必须是组织中的电子数据展示管理员。 如果您是电子数据展示管理器，则报告将仅包含有关您可以访问的事例的信息。 有关电子数据展示权限的详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     

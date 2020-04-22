@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99fa3ff77c957d209123458b15305f4b93ed6562
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 17820674f9c6db417289a232f006c115e7060d01
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602099"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637152"
 ---
 # <a name="nen-7510"></a>NEN 7510
 
@@ -41,10 +41,9 @@ Microsoft 已分析我们当前的认证和保证声明，并且已创建 [NEN 7
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-- [Azure 和 Office 365 NEN 7510:2011 标准覆盖](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf)
-- [Azure 和 Office 365 NEN 7510:2011 标准覆盖用户指南](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage%20User%20Guide/DOCX)
+- [Azure 和 Office 365 NEN 7510:2011 标准覆盖](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=15d5a5fa-fbb6-4ea6-8126-2a2c684ae789&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **使用 Microsoft Online Services 的客户是否符合 NEN 7510？**
 

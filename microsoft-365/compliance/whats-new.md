@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 2f172c8639215285a793f16f4913917be6a58614
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557582"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626258"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -64,10 +64,10 @@ ms.locfileid: "42557582"
 
 ## <a name="january-2020"></a>2020 年 1 月
 
-等待已结束。 我们很高兴宣布 Microsoft 365 合规性中心可供所有客户使用 Microsoft 365、Office 365、企业移动性 + 安全性（EMS）和 Windows 10 企业版计划。 在 Office 365 安全 & 合规中心中管理的任何数据或策略在合规性中心中均可用，因此无需来回跳转。
+等待已结束。 我们很高兴宣布 Microsoft 365 合规性中心可供所有客户使用 Microsoft 365、Office 365、企业移动性 + 安全性（EMS）和 Windows 10 企业版计划。 在安全 & 合规性中心中管理的任何数据或策略在合规性中心中均可用，因此无需来回跳转。
 
 > [!TIP]
-> 再次阅读上个月的更新，以了解最近预览的一些[新解决方案](#new-compliance-solutions)的复习，并提供了一个路线图，该[指南](#updated-compliance-solutions)展示了 Office 365 安全性 & 合规性中心在 Microsoft 365 中的活动。
+> 再次阅读上个月的更新，以了解最近预览的一些[新解决方案](#new-compliance-solutions)的刷新器，以及说明安全 & 合规性中心中的合规性功能现在在 Microsoft 365 中的活动的[路线图](#updated-compliance-solutions)。
 
 书签并将[https://compliance.microsoft.com](https://compliance.microsoft.com)其置于现在，以浏览您的一站式管理合规性，以跨整个组织 .。。或者[阅读本文](microsoft-365-compliance-center.md)以进一步深入研究。
 
@@ -91,7 +91,7 @@ ms.locfileid: "42557582"
 
 ### <a name="just-launched"></a>刚刚启动
 
-**沟通合规性**
+**通信合规性**
 
 毕业从预览阶段到完整可用性，通信合规性是我们新的内幕风险解决方案集的关键组件。 此强健的解决方案可帮助最大限度地减少使用工作流对不符合组织标准的邮件进行检测、调查和采取补救措施的工作流的通信风险。
 
@@ -113,7 +113,7 @@ ms.locfileid: "42557582"
 
 **针对合规性分数的新评估模板（预览）**
 
-始终致力于帮助您提前掌握日益发展的合规性，我们的合规性分数团队提供了一组新的模板，以帮助您评估组织对最新法规的合规性情况，并获取有关如何实施的指导更有效的控件。 你将看到以下内容的新模板：
+始终致力于帮助您提前掌握日益发展的合规性，我们的合规性分数团队提供了一组新的模板，以帮助您评估组织对最新法规的合规性情况，并获取有关如何实施更有效的控制措施的指导。 你将看到以下内容的新模板：
 
 - ISO/IEC 27701:2019
 - 加州消费者隐私法案 (CCPA)
@@ -176,10 +176,10 @@ ms.locfileid: "42557582"
 |标签活动资源管理器|信息治理 > 标签活动资源管理器 <br/> https://protection.office.com/labelexplorer |"数据分类 > 活动资源管理器" 选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[查看关于标记的内容的活动（预览版）](data-classification-activity-explorer.md)|
 |保留标签和标签策略 |分类 > 保留标签 > 标签和标签策略选项卡 <br/> https://protection.office.com/retentionlabels |信息治理 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留标签概述](labels.md)|
 |保留策略|信息治理 > 保留 <br/> https://protection.office.com/retention |信息治理 > 保留选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[保留策略概述](retention-policies.md)|
-|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)|
+|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[使用敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)|
 |敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度标签](sensitivity-labels.md) |
 |服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全 & 合规中心中的服务保证](service-assurance.md)|
-|监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |沟通合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通信合规性（预览）](communication-compliance.md) |
+|监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |通信合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通信合规性（预览）](communication-compliance.md) |
 
 ## <a name="september-2019"></a>2019 年 9 月
 

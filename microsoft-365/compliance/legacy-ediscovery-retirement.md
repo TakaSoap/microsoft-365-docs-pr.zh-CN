@@ -1,5 +1,5 @@
 ---
-title: 旧电子数据展示工具的退休
+title: 旧版电子数据展示工具的停用
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,22 +10,22 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和 Office 365 高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
-ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
+description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和高级电子数据展示 v1.0 也会在同一时间段内被停用。
+ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43158433"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635566"
 ---
-# <a name="retirement-of-legacy-ediscovery-tools"></a>旧电子数据展示工具的退休
+# <a name="retirement-of-legacy-ediscovery-tools"></a>旧版电子数据展示工具的停用
 
 > [!IMPORTANT]
 > Microsoft 已评估公共运行状况，我们了解这对客户造成的影响。 我们希望成为强大的合作伙伴和负责的全球公民。 为了减轻你面临的众多负担之一，我们将在三个月内将本文中介绍的旧电子数据展示工具的计划停用时间延迟。 **更新后的退休日期将反映如下。**
 
-多年以来，Microsoft 提供了电子数据展示工具，可让你搜索、预览和导出来自 Exchange Online 的电子邮件内容。 但是，这些工具不再提供在其他 Office 365 服务（如 SharePoint Online 和 Office 365 组）中搜索非 Exchange 内容的有效方法。 为解决此类情况，Microsoft 提供了其他电子数据展示工具，可帮助您搜索各种各样的 Office 365 内容。 我们在[Microsoft 365 合规性中心](https://compliance.microsoft.com)中努力将最新和强大的电子数据展示功能结合在一起。 这使组织能够对多个 Office 365 服务（包括 Exchange Online）中的内容进行法律、内部和其他文档请求的响应。
+多年以来，Microsoft 提供了电子数据展示工具，可让你搜索、预览和导出来自 Exchange Online 的电子邮件内容。 但是，这些工具不再提供在其他 Microsoft 365 服务（如 SharePoint Online 和 Microsoft 365 组）中搜索非 Exchange 内容的有效方法。 为解决此类情况，Microsoft 提供了其他电子数据展示工具，可帮助您搜索各种 Microsoft 365 内容。 我们在[Microsoft 365 合规性中心](https://compliance.microsoft.com)中努力将最新和强大的电子数据展示功能结合在一起。 这使组织能够对多个 Microsoft 365 服务（包括 Exchange Online）中的内容进行法律、内部和其他文档请求的响应。
 
-由于 Microsoft 365 合规性中心中的这一新的和改进的电子数据展示功能，我们正在淘汰以下与在 Exchange Online 和 Office 365 中搜索电子邮件内容相关的电子数据展示相关功能和功能：
+由于 Microsoft 365 合规性中心中的这一新的和改进的电子数据展示功能，我们正在淘汰以下与在 Exchange Online 和 Microsoft 365 中搜索电子邮件内容相关的电子数据展示相关功能和功能：
 
 - Exchange 管理中心内的[就地电子数据展示](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)和[就地保留](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)。
 
@@ -108,7 +108,7 @@ ms.locfileid: "43158433"
 <p>更高的可靠性用于搜索、导出和放置保留内容</p>
 </li>
 <li>
-<p>在 Exchange Online、SharePoint Online、OneDrive for Business、Skype for Business、Microsoft 团队、Yammer 组、Office 365 组以及存储在 Office 365 应用程序中的其他内容中搜索内容</p></li></ul>
+<p>在 Exchange Online、SharePoint Online、OneDrive for Business、Skype for Business、Microsoft 团队、Yammer 组、Microsoft 365 组以及存储在 Office 365 应用程序中的其他内容中搜索内容</p></li></ul>
 <p>有关详细信息，请参阅<a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations">在 Office 365 中管理法律调查</a>。</td>
 </tr>
 <tr class="even">
@@ -204,7 +204,7 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch"><span class="underline">*-New-compliancesearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction"><span class="underline">*-New-compliancesearchaction</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-Get-compliancecase</span></a></p>
-<p> </p></td>
+<p> </p></td>
 <td><p>New-compliancesearch 和 New-compliancesearchaction cmdlet 一起使用可帮助您搜索和导出内容。 您可以使用<strong>new-</strong>、 <strong>Get</strong>和<strong>new-compliancesearch</strong> cmdlet 来创建新搜索并查看搜索估计。 然后，您可以使用<strong>new-compliancesearchaction</strong> cmdlet 导出搜索结果。 您仍需使用 Microsoft 365 合规性中心中的核心电子数据展示工具将这些搜索结果下载到您的本地计算机上。</p>
 <p>
 <p><strong>注意：</strong>如果您使用这些 cmdlet 来创建不与核心电子数据展示事例关联的搜索，则这些搜索将位于 Microsoft 365 合规性中心的<strong>内容搜索</strong>页中。</p></td>
@@ -214,7 +214,7 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule"><span class="underline">*-New-caseholdrule</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-Get-compliancecase</span></a></p>
-<p> </p></td>
+<p> </p></td>
 <td><p>Microsoft 365 合规性中心中的保留必须与 Get-compliancecase 相关联。 首先，创建合规性事例，然后创建 CaseHoldPolicy 和 New-caseholdrule。</p>
 <p><strong>注意：</strong>创建没有创建 New-caseholdrule 的 CaseHoldPolicy 将使保留不可操作，直到创建 New-caseholdrule 并将其与 CaseHoldPolicy 关联。 有关详细信息，请参阅 cmdlet 文档。</p></td>
 </tr>
@@ -303,7 +303,7 @@ Exchange Online PowerShell 中的**搜索邮箱**cmdlet 将被停用，因为最
 </tr>
 <tr class="even">
 <td>将搜索结果复制到发现邮箱</td>
-<td> </td>
+<td> </td>
 <td>此功能没有直接替代，因为它不提供对所有 Microsoft 365 服务的访问权限。 有关替代解决方案，请参阅 " <strong>*-new-mailboxsearch cmdlet</strong> " 部分中的 faq。 </td>
 </tr>
 </tbody>

@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以存档 Facebook 数据
+title: 使用连接器存档 Facebook 数据
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将连接器设置为从数据源（如 Facebook 商业页面、Twitter、LinkedIn 公司页面和即时 Bloomberg）导入第三方数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 8bd689f7a77497961948d8e94b160aca8bbb43ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c8bb4c1330af0f9c10dd93f9cedd47b3d3b34b0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596309"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637122"
 ---
-# <a name="set-up-a-connector-to-archive-facebook-data"></a>设置连接器以存档 Facebook 数据
+# <a name="set-up-a-connector-to-archive-facebook-data"></a>使用连接器存档 Facebook 数据
 
 使用 Microsoft 365 合规性中心中的连接器将来自 Facebook 商业页面的数据导入并存档到 Microsoft 365。 在设置并配置连接器后，它会连接到 Facebook 商业页面（按计划），将 Facebook 项目的内容转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的邮箱中。
 
@@ -38,9 +38,9 @@ ms.locfileid: "41596309"
     - [注册 "转到即点即用 Azure 订阅"](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Office 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的连接器。
+    > Microsoft 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的连接器。
 
-- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。
+- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用全局管理员的凭据登录，然后接受该请求。
 
 - 在 Microsoft 365 合规性中心（步骤5）中设置自定义连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
 
@@ -106,7 +106,7 @@ ms.locfileid: "41596309"
 
 ## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>第5步：设置 Microsoft 365 合规性中心中的 Facebook 商业页面连接器
 
-最后一步是在 Microsoft 365 合规性中心中设置连接器，以将来自 Facebook 商业页面的数据导入到 Microsoft 365 中的指定邮箱。 完成此步骤后，Microsoft 365 导入服务将开始将你的 Facebook 商业页面中的数据导入到 Microsoft 365。
+最后一步是在 Microsoft 365 合规性中心中设置连接器，以将来自 Facebook 商业页面的数据导入到 Microsoft 365 中的指定邮箱。 完成此步骤后，Office 365 导入服务将开始将你的 Facebook 商业页面中的数据导入到 Microsoft 365。
 
 有关分步说明，请参阅[第5步：在 Microsoft 365 合规性中心中设置 Facebook 连接器](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center)。 
 

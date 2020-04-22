@@ -1,5 +1,5 @@
 ---
-title: Office 365 加密链
+title: 加密链
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 查看 Office 365 中的根证书和证书颁发机构（Ca）的完整列表。
-ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 4fa98f417968229a0ba5382b7b1e8b4067db2e36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131505"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631697"
 ---
-# <a name="office-365-encryption-chains"></a>Office 365 加密链
+# <a name="encryption-chains"></a>加密链
 
 Office 365 利用了许多不同的证书提供程序。 下面介绍了客户在访问 Office 365 时可能遇到的已知 Office 365 根证书的完整列表。 有关您可能需要在自己的基础结构中安装的证书的信息，请参阅[Plan for 第三方 SSL 证书（适用于 Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates)）。 以下证书信息适用于 Office 365 的所有全球云实例和国家/地区。
 

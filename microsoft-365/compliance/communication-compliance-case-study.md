@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165931"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637174"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>案例研究-Contoso 为 Microsoft 团队和 Exchange 通信快速配置冒犯性语言策略
 
@@ -81,7 +81,7 @@ Contoso IT 管理员需要执行以下步骤来验证 Contoso 的许可支持：
 
 默认情况下，全局管理员不具有对通信合规性功能的访问权限。 [必须配置权限](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance)，以便 Contoso IT 管理员和合规性专家可以访问通信合规性。
 
-1. Contoso IT 管理员登录到**office 365 安全与合规中心**权限页面[（https://protection.office.com/permissions) ](https://protection.office.com/permissions)使用全局管理员帐户的凭据，并选择用于查看和管理 Office 365 中的角色的链接。
+1. Contoso IT 管理员登录到**Office 365 安全与合规中心**权限页面[（https://protection.office.com/permissions) ](https://protection.office.com/permissions)使用全局管理员帐户的凭据，并选择在 Microsoft 365 中查看和管理角色的链接。
 2. 选择 "**创建**" 后，将新角色组命名为 "*通信合规性*" 的友好名称，然后选择 "**下一步**"。
 3. 他们选择 "**选择角色**"，然后选择 "**添加**"。 他们通过选中*监管审核管理员*、*案例管理*、*合规性管理员*和*审阅*的复选框来添加所需的角色，然后选择 "**添加**"、 **"完成" 和 "** **下一步**"。
 
@@ -141,7 +141,7 @@ Contoso IT 管理员和合规性专家也可以通过选择 Microsoft 365 解决
 
 若要开始使用通信合规性策略，Contoso IT 管理员需要先配置一些先决条件，然后再设置新策略来监视冒犯性语言。 完成这些先决条件后，Contoso IT 管理员和合规性专家可以配置新策略和合规性专家，以开始调查并修正任何生成的警报。
 
-### <a name="enabling-auditing-in-office-365"></a>在 Office 365 中启用审核
+### <a name="enabling-auditing-in-microsoft-365"></a>在 Microsoft 365 中启用审核
 
 通信合规性需要审核日志来显示通知并跟踪审阅者采取的修正操作。 审核日志汇总了与已定义的组织策略相关联的所有活动，或只要有对通信合规性策略的更改。
 
@@ -154,7 +154,7 @@ Contoso 合规性专家希望将所有员工添加到将监视攻击性语言的
 他们需要创建一个新组来包含所有 Contoso 员工，因此他们需要执行以下步骤：
 
 1. Contoso it 管理员：登录**microsoft 365 管理中心** [（https://admin.microsoft.com) ](https://admin.microsoft.com)并导航到**microsoft 365 管理中心** > **组** > **组**。
-2. 他们选择 "**添加组**" 并完成向导，以创建新的*Office 365 组*或*通讯组*。
+2. 他们选择 "**添加组**" 并完成向导，以创建新的*Microsoft 365 组*或*通讯组*。
 
 ![组](../media/communication-compliance-case-all-employees.png)
 

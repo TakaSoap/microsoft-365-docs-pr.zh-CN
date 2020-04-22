@@ -1,5 +1,5 @@
 ---
-title: 还原 Office 365 中的非活动邮箱
+title: 还原非活动邮箱
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 如果新员工或其他用户需要访问 Office 365 中非活动邮箱的内容，则可以将非活动邮箱的内容还原（或合并）到现有邮箱。
-ms.openlocfilehash: 1fdf86c17d557ef27373001cb63f710168269a19
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3352dfa582fb09a5f0a6c7ecbd807ed80593351f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621314"
 ---
-# <a name="restore-an-inactive-mailbox-in-office-365"></a>还原 Office 365 中的非活动邮箱
+# <a name="restore-an-inactive-mailbox"></a>还原非活动邮箱
 
 非活动邮箱（一种软删除的邮箱类型）用于在离开组织后保留前一个员工的电子邮件。 如果另一名员工接替离职员工的工作职责，或者该员工回到您的组织，有两种方法可以将非活动邮箱的内容提供给用户：
   
@@ -33,7 +33,7 @@ ms.locfileid: "42081592"
 
 有关还原和恢复非活动邮箱之间的差异的更多详细信息，请参阅本文中的**详细信息**一节。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须使用 Exchange Online PowerShell 来还原非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
 
@@ -103,7 +103,7 @@ ms.locfileid: "42081592"
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **使用诉讼保留或 Office 365 保留策略保留非活动邮箱内容。** 如果要在还原非活动邮箱后保留该邮箱的状态，可以在还原非活动邮箱之前将目标邮箱置于[诉讼保留](https://go.microsoft.com/fwlink/?linkid=856286)或应用[Office 365 保留策略](retention-policies.md)。 这样可以防止在将非活动邮箱还原到目标邮箱之后，永久删除非活动邮箱中的任何项目。
+- **使用诉讼保留或 Microsoft 365 保留策略保留非活动邮箱内容。** 如果要在还原非活动邮箱后保留该邮箱的状态，可以在还原非活动邮箱之前将目标邮箱置于[诉讼保留](https://go.microsoft.com/fwlink/?linkid=856286)或应用[Microsoft 365 保留策略](retention-policies.md)。 这样可以防止在将非活动邮箱还原到目标邮箱之后，永久删除非活动邮箱中的任何项目。
 
 - **在还原非活动邮箱之前，在目标邮箱上启用保留挂起功能。** 由于非活动邮箱中的邮箱项目可能已过时，您可能会考虑在还原非活动邮箱之前在目标邮箱上启用保留挂起功能。 将邮箱置于保留挂起状态时，在移除保留挂起或保留挂起期到期之前，将不会处理向其分配的保留策略。 这使目标邮箱的所有者有时间管理非活动邮箱中的邮件。 否则，保留策略可能会删除根据为目标邮箱配置的保留设置已到期的旧项目，或将项目移动到存档邮箱（如果已启用）中。 有关详细信息，请参阅[在 Exchange Online 中将邮箱置于保留挂起](https://go.microsoft.com/fwlink/?linkid=856300)状态。
 

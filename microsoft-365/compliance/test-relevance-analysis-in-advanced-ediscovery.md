@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中测试相关性分析
+title: 测试高级电子数据展示中的相关性分析
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: '了解如何使用 Office 365 高级电子数据展示中的批量计算之后的 "测试" 选项卡来测试、比较和验证总体处理质量。  '
-ms.openlocfilehash: c65c10878bdc057a1c53c4370f6a6750e1fe8e9d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解如何使用高级电子数据展示中的批量计算之后的 "测试" 选项卡来测试、比较和验证总体处理质量。  '
+ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557682"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637196"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>在高级电子数据展示中测试相关性分析（经典）
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029878"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621368"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -37,7 +37,7 @@ ms.locfileid: "43029878"
 
 - 用户帐户属性是在 Azure Active Directory （或 Exchange Online）中定义的。 这些属性可以包括部门、职务、位置、团队名称和其他作业配置文件详细信息。 
 
-- 分段是在 Office 365 安全 & 合规性中心中使用选定的**用户帐户属性**定义的用户集。 （请参阅[支持的属性列表](information-barriers-attributes.md)。） 
+- 分段是在安全 & 合规中心中使用选定的**用户帐户属性**定义的用户集。 （请参阅[支持的属性列表](information-barriers-attributes.md)。） 
 
 - 信息屏障策略决定了通信限制或限制。 在定义信息障碍策略时，可以从以下两种策略中进行选择：
     - "块" 策略防止一个分段与另一个网段通信。
@@ -47,7 +47,7 @@ ms.locfileid: "43029878"
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概览
 
-|阶段    |涉及的内容  |
+|阶段    |所涉及的内容  |
 |---------|---------|
 |[确保满足先决条件](#prerequisites)     |-验证您是否具有[所需的许可证和权限](information-barriers.md#required-licenses-and-permissions)<br/>-验证您的目录是否包含分段用户的数据<br/>-为 Microsoft 团队启用范围目录搜索<br/>-请确保审核日志记录已打开<br/>-确保没有现成的 Exchange 通讯簿策略<br/>-Use PowerShell （提供示例）<br/>-为 Microsoft 团队提供管理员同意（包括步骤）          |
 |[第1部分：组织中的用户区段](#part-1-segment-users)     |-确定所需的策略<br/>-创建要定义的段的列表<br/>-确定要使用的属性<br/>-在策略筛选器方面定义段        |
@@ -67,12 +67,12 @@ ms.locfileid: "43029878"
 
 - 作用域目录搜索-在定义组织的第一个信息屏障策略之前，必须[在 Microsoft 团队中启用范围目录搜索](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)。 在设置或定义信息屏障策略之前，请先等待至少24小时后，再启用范围目录搜索。
 
-- 审核日志记录-为了查找策略应用程序的状态，审核日志记录必须处于打开状态。 我们建议您在开始定义段或策略之前执行此操作。 若要了解详细信息，请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。
+- 审核日志记录-为了查找策略应用程序的状态，审核日志记录必须处于打开状态。 我们建议您在开始定义段或策略之前执行此操作。 若要了解详细信息，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
 - 无通讯簿策略-在定义和应用信息屏障策略之前，请确保没有适当的 Exchange 通讯簿策略。 信息障碍基于通讯簿策略，但这两种类型的策略不兼容。 如果您具有此类策略，请务必先[删除您的通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。 在信息屏障策略启用并启用了分层通讯簿后，***不包含***在信息屏障段中的所有用户都将在 Exchange online 中看到[分层通讯簿](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
 - 目前使用 powershell cmdlet 在 Office 365 安全 & 合规中心中定义和管理信息屏障策略。 虽然本文中提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 您还将需要 AzureRM 模块。
-    - [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [安装 Azure PowerShell 模块](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Microsoft 团队中的信息障碍的管理员同意-当你的策略准备就绪后，信息障碍可以从聊天会话中删除他们不应参与的人员。 这有助于确保您的组织遵守策略和管理法规。 使用以下过程可使信息障碍策略在 Microsoft 团队中按预期方式工作。 
@@ -243,7 +243,7 @@ ms.locfileid: "43029878"
 
     根据需要对每个策略重复此步骤。
 
-3. 完成将信息屏障策略设置为活动状态后，请使用**InformationBarrierPoliciesApplication** Cmdlet 在 Office 365 安全 & 合规性中心。
+3. 完成将信息屏障策略设置为活动状态后，请使用安全 & 合规性中心中的**InformationBarrierPoliciesApplication** cmdlet。
 
     语法`Start-InformationBarrierPoliciesApplication`
 
@@ -316,7 +316,7 @@ Contoso 将使用 Azure Active Directory 中的 "部门" 属性来定义段，�
 
 Contoso 定义了三种策略，如下表所述：
 
-|策略  |策略定义  |
+|Policy  |策略定义  |
 |---------|---------|
 |策略1：防止销售与信息检索通信     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*销售-研究*"。 当此策略处于活动状态且已应用时，它将有助于阻止销售部门中的用户与研究网段中的用户进行通信。 这是单向策略;它不会阻止研究与销售通信。 为此，需要策略2。      |
 |策略2：防止与销售通信的研究     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*研究-销售*"。 当此策略处于活动状态且已应用时，它将有助于防止在研究网段中的用户与销售部门中的用户进行通信。       |

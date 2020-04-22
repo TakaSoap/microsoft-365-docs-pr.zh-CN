@@ -16,20 +16,20 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 使用 office 365 高级邮件加密功能在 Office 365 邮件加密（OME）上，您可以通过自定义品牌化模板来设置电子邮件的过期日期，从而扩展电子邮件的安全性。
-ms.openlocfilehash: 90f406ec72eeab0618184336b8b28de452a5e3c6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c9b639c016e86c3883191b04d4c7480625745e91
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597819"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626900"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>为使用 Office 365 高级邮件加密进行加密的电子邮件设置到期日期
 
-Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 e5 （非盈利员工定价）、Office 365 企业版 E5 （非盈利员工定价）和 Office 365 教育版 A5 中。 如果您的组织有一个不包含 Office 365 高级邮件加密的订阅，则可以使用 microsoft 365 E5 兼容性 SKU 附加项购买 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 高级适用于 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 Sku 的合规性 SKU 外接程序。
+Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 e5 （非盈利员工定价）、Office 365 企业版 E5 （非盈利员工定价）和 Office 365 教育版 A5 中。 如果您的组织有一个不包含 Office 365 高级邮件加密的订阅，则可以使用 microsoft 365 E5 兼容性 SKU 附加 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Microsoft 365 高级合规性 SKU 外接程序（microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 Sku 购买它。
 
 您可以使用您的用户发送给使用 OME 门户访问加密电子邮件的外部收件人的电子邮件的邮件过期。 您可以通过使用在 Windows Powershell 中指定过期日期的自定义品牌模板，强制收件人使用 OME 门户查看并回复您的组织发送的加密电子邮件。
 
-作为 O365 全局管理员，当您应用公司品牌以自定义 Office 365 组织的电子邮件的外观时，您还可以为这些电子邮件指定过期时间。 使用 Office 365 高级邮件加密，可以为来自您的组织的加密电子邮件创建多个模板。 使用模板，可以控制收件人访问您的用户发送的邮件的时间长短。
+作为 O365 全局管理员，当您应用公司品牌以自定义组织的电子邮件的外观时，您还可以为这些电子邮件指定过期时间。 使用 Office 365 高级邮件加密，可以为来自您的组织的加密电子邮件创建多个模板。 使用模板，可以控制收件人访问您的用户发送的邮件的时间长短。
 
 当最终用户收到设置了过期日期的邮件时，用户会看到包装电子邮件中的到期日期。 如果用户尝试打开已过期的邮件，则会在 OME 门户中显示一个错误。
 
@@ -39,7 +39,7 @@ Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.m
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>使用 PowerShell 创建自定义品牌模板以强制邮件过期
 
-1. 使用在 Office 365 组织中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
+1. 使用组织中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
 
 2. 运行 Set-omeconfiguration cmdlet。
 

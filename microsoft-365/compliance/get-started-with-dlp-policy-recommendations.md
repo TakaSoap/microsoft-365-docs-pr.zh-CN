@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
-description: 此深入了解驱动的建议可帮助你的组织在 Office 365 中存储和共享敏感内容时保持安全，方法是在 DLP 策略覆盖范围中存在可能的差距时通知你。 如果您的文档包含任何最常用的五种类型&amp;的敏感信息，但不受 DLP 策略保护，您将在安全合规中心的主页上看到此建议。
-ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 此深入了解驱动的建议可帮助你的组织在 Microsoft 365 中存储和共享敏感内容，并在你的 DLP 策略覆盖范围内存在可能的差距时通知你。 如果您的文档包含任何最常用的五种类型&amp;的敏感信息，但不受 DLP 策略保护，您将在安全合规中心的主页上看到此建议。
+ms.openlocfilehash: 73c45c477942533d5668c225144950a0fde4279b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073195"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632463"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>开始使用 DLP 策略建议
 
-此深入了解驱动的建议可帮助你的组织在 Office 365 中存储和共享敏感内容时保持安全，方法是在 DLP 策略覆盖范围中存在可能的差距时通知你。 如果您的文档包含任何最**** 常见类型的敏感信息&amp; ，但不受数据丢失防护（DLP）策略保护，则您将在安全合规中心的主页上看到此建议。 
+此深入了解驱动的建议可帮助你的组织在 Microsoft 365 中存储和共享敏感内容，并在你的 DLP 策略覆盖范围内存在可能的差距时通知你。 如果您的文档包含任何最**Home**常见类型的敏感信息&amp; ，但不受数据丢失防护（DLP）策略保护，则您将在安全合规中心的主页上看到此建议。 
   
 您可以使用此小组件快速创建自定义的 DLP 策略，只需单击一次或两次，然后在创建此 DLP 策略后，即可完全自定义。 请注意，如果最初看不到建议，请尝试在 "**建议为你**" 部分的底部单击 " **+ 更多**"。 
   

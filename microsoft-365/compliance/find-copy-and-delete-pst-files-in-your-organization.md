@@ -13,21 +13,21 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 收集工具搜索组织的网络，以获取分散在整个组织中的 PST 文件的清单。 查找 PST 文件后，可以使用 PST 集合工具将其复制到一个中心位置，以便可以将其导入 Office 365。
-ms.openlocfilehash: 736e317318f860936450b7412bc465fc7c9d59e1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ee9a657cc0ac44e57e85edc68e80e0a76aa063d4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073913"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633327"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具在您的组织中查找、复制和删除 PST 文件
 
 > [!IMPORTANT]
-> 任何 Microsoft standard 支持计划或服务都不支持本文中介绍的 PST 集合工具。 该工具按原样提供，无任何种类的担保。 Microsoft 也不提供任何默示担保，包括但不仅限于对适销性或针对特定目的的适用性的默示担保。 由于工具的使用或性能的问题和文档将保留的全部风险。 在任何情况下，Microsoft、其作者或任何其他参与此工具的创建、生产或交付的其他人都不承担任何损害（包括但不限于业务利润损失、业务中断、丢失损失）。因使用或无法使用该工具或文档而导致的业务信息或其他 pecuniary 丢失，即使 Microsoft 已被告知可能发生此类损坏的情况也是如此。
+> 任何 Microsoft standard 支持计划或服务都不支持本文中介绍的 PST 集合工具。 该工具按原样提供，无任何种类的担保。 Microsoft 也不提供任何默示担保，包括但不仅限于对适销性或针对特定目的的适用性的默示担保。 由于工具的使用或性能的问题和文档将保留的全部风险。 在任何事件中，Microsoft、其作者除了因使用或无法使用工具或文档而导致的任何损坏（包括但不限于业务利润损失、业务中断、业务信息丢失或其他 pecuniary 丢失）之外，其他任何人（包括但不限于）因使用或无法使用工具或文档而导致的任何其他人都不承担责任，即使 Microsoft 已被告知可能存在此类损害。
 
-您可以使用 Microsoft PST 集合工具在您的组织的网络中搜索 PST 文件。 该工具可帮助你获取分散在整个组织中的 PST 文件的清单。 查找 PST 文件后，可以使用 PST 集合工具将其复制到一个中心位置。 将 Pst 放在一个位置后，可以将其导入到 Exchange Online 邮箱（或单个 Exchange Online 邮箱）中，然后可以在 Office 365 中应用一组丰富的合规性功能。 这包括将 Pst 导入到用户的存档邮箱，使用电子数据展示搜索工具搜索您导入的 PST 文件中的特定邮件，使用电子数据展示保留和 Office 365 保留策略保留邮件，并管理生命周期这些邮件的循环使用 Exchange Online 中的邮件记录管理功能。 确信您收集的 PST 文件已成功导入到 Office 365 后，您可以使用该工具将其从网络上的原始位置删除。 
+您可以使用 Microsoft PST 集合工具在您的组织的网络中搜索 PST 文件。 该工具可帮助你获取分散在整个组织中的 PST 文件的清单。 查找 PST 文件后，可以使用 PST 集合工具将其复制到一个中心位置。 将 Pst 放在一个位置后，可以将其导入到 Exchange Online 邮箱（或单个 Exchange Online 邮箱）中，然后可以在 Office 365 中应用一组丰富的合规性功能。 这包括将 Pst 导入到用户的存档邮箱，使用电子数据展示搜索工具搜索您导入的 PST 文件中的特定邮件，使用电子数据展示保留和保留策略保留邮件，以及使用 Exchange Online 中的邮件记录管理功能管理这些邮件的生命周期。 确信您收集的 PST 文件已成功导入到 Office 365 后，您可以使用该工具将其从网络上的原始位置删除。 
   
-您可以使用 PST 集合工具执行的另一件事是，阻止用户创建新的 PST 文件，并更改您在网络上找到的现有 PST 文件。 这些 "阻止" 功能使您能够查找、收集和导入一组已知的 PST 文件到 Office 365，并防止将来在组织中增加 PST 文件。 
+您可以使用 PST 集合工具执行的另一件事是，阻止用户创建新的 PST 文件，并更改您在网络上找到的现有 PST 文件。 这些 "阻止" 功能可让你查找、收集和导入一组已知的 PST 文件到 Microsoft 365，并防止将来在组织中激增的 PST 文件。 
   
 ## <a name="how-the-pst-collection-tool-works"></a>PST 集合工具的工作原理
 
@@ -45,7 +45,7 @@ ms.locfileid: "42073913"
     
 5. **[步骤5：删除在网络中找到的 pst 文件](#step-5-delete-the-pst-files-found-on-your-network)**-在 Office 365 中已将您找到和收集的 pst 文件导入到 Exchange Online 邮箱后，您可以使用 "pst 集合" 工具从第1步中找到的原始位置删除 pst 文件。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 按照以下步骤将 PST 集合工具下载到本地计算机。 
     
@@ -109,14 +109,14 @@ ms.locfileid: "42073913"
 
 在成功运行 PST 集合工具的 "查找" 模式后，将创建以下文件并将其存储在由`LogLocation`和`ConfigurationLocation`参数指定的文件夹中。 
   
-- **\>__ JobName Find\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
+- **\>_Find_JobName Find\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
     
-- **\>__ JobName 找到\<DateTimeStamp\>-csv 文件中包含每个找到的 PST 文件对应的\<** 行。 每个 PST 的信息包括找到 PST 文件的计算机、PST 文件的完整文件路径位置、PST 文件的所有者以及 PST 文件的大小（以 kb、Kb）。 此文件在由`LogLocation`参数指定的文件夹中创建。 
+- **\>_Find_JobName 找到\<DateTimeStamp\>-csv 文件中包含每个找到的 PST 文件对应的\<** 行。 每个 PST 的信息包括找到 PST 文件的计算机、PST 文件的完整文件路径位置、PST 文件的所有者以及 PST 文件的大小（以 kb、Kb）。 此文件在由`LogLocation`参数指定的文件夹中创建。 
     
     > [!TIP]
     > 使用 Excel 中的 "自动求和" 工具计算 CSV 文件中列出的所有 PST 文件的总大小（以 KB 为单位）。 然后，可以使用转换计算器将总大小转换为兆字节（MB）或千兆字节（GB）。 
   
-- **\>__ JobName Find\<DateTimeStamp\>-xml 文件包含在 "查找" 模式下运行该工具时使用的参数值的相关\<** 信息。 此文件还包含有关找到的每个 PST 文件的信息。 当您运行同一作业的工具以阻止、收集或删除找到的 PST 文件时，将使用此文件中的数据。 此文件在由`ConfigurationLocation`参数指定的文件夹中创建。 
+- **\>_Find_JobName Find\<DateTimeStamp\>-xml 文件包含在 "查找" 模式下运行该工具时使用的参数值的相关\<** 信息。 此文件还包含有关找到的每个 PST 文件的信息。 当您运行同一作业的工具以阻止、收集或删除找到的 PST 文件时，将使用此文件中的数据。 此文件在由`ConfigurationLocation`参数指定的文件夹中创建。 
     
     > [!IMPORTANT]
     > 请勿重命名、更改或移动此文件。 当您在相同作业的阻止、复制或删除模式下重新运行该工具时，它将由 PST 收集工具使用。 
@@ -169,7 +169,7 @@ ms.locfileid: "42073913"
 下一步是复制在 "查找" 模式下运行 PST 集合工具时找到的 PST 文件。 这样，您可以在一个位置收集 PST 文件，以便以后将其导入 Office 365。 将 PST 文件复制到集合位置之前，请考虑确定所需的总存储空间量。 您可以使用在第1步中创建的 CSV 文件来计算所有 PST 文件的总大小。
   
 > [!NOTE]
-> 将 PST 文件导入到 Office 365 并将其从原始位置删除后，您可能希望在此步骤中将其从复制它们的集合位置中删除。 
+> 将 PST 文件导入到 Microsoft 365 并将其从原始位置删除后，您可能希望在此步骤中将其从复制它们的集合位置中删除。 
   
 1. 在您的本地计算机上打开命令提示符（以管理员身份运行）。
     
@@ -206,9 +206,9 @@ ms.locfileid: "42073913"
 
 在收集模式下成功运行 DataCollectorMaster 后，将创建以下文件并将其存储在由`LogLocation`和`ConfigurationLocation`参数指定的文件夹中。 
   
-- **\>__ JobName 收集\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
+- **\>_Collect_JobName 收集\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
     
-- **\>__ JobName 收集\<DateTimeStamp\>-xml 文件仅包含在收集模式下运行工具所使用的参数值的相关\<** 信息。 当您运行 DataCollectorMaster 工具以删除 PST 文件时，将使用此文件中的数据;请参阅[第5步](#step-5-delete-the-pst-files-found-on-your-network)。
+- **\>_Collect_JobName 收集\<DateTimeStamp\>-xml 文件仅包含在收集模式下运行工具所使用的参数值的相关\<** 信息。 当您运行 DataCollectorMaster 工具以删除 PST 文件时，将使用此文件中的数据;请参阅[第5步](#step-5-delete-the-pst-files-found-on-your-network)。
     
 
 ## <a name="step-4-import-the-pst-files-to-office-365"></a>步骤4：将 PST 文件导入到 Office 365
@@ -259,6 +259,6 @@ ms.locfileid: "42073913"
 
 在删除模式下成功运行 DataCollectorMaster 后，将创建以下文件并将其存储在由`LogLocation`和`ConfigurationLocation`参数指定的文件夹中。 
   
-- **\>__ JobName 删除\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
+- **\>_Delete_JobName 删除\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
     
-- JobName-xml 文件仅包含在删除模式下运行工具所使用的参数值的相关信息。 **\>__\< \<\>** 它还列出了每个已删除的 PST 文件的名称和文件路径。 此文件在由`ConfigurationLocation`参数指定的文件夹中创建。 
+- JobName-xml 文件仅包含在删除模式下运行工具所使用的参数值的相关信息。 **\>_Delete_\< \<\>** 它还列出了每个已删除的 PST 文件的名称和文件路径。 此文件在由`ConfigurationLocation`参数指定的文件夹中创建。 

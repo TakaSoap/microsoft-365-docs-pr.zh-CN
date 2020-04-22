@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器以将 Twitter 数据导入和存档到 Microsoft 365。 将此数据导入 Microsoft 365 后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
-ms.openlocfilehash: 80c3ca71204b6050a1944250c20df4ff13bbd71e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 1143239635aed64847c12a3d8c61c430a677e037
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635010"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636120"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署连接器以存档 Twitter 数据
 
@@ -26,7 +26,7 @@ ms.locfileid: "42635010"
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤1：在 Azure Active Directory 中创建应用程序
 
-1. 转到<https://portal.azure.com>并使用 Office 365 全局管理员帐户的凭据登录。
+1. 转到<https://portal.azure.com>并使用全局管理员帐户的凭据登录。
 
    ![登录到 Azure](../media/TCimage01.png)
 

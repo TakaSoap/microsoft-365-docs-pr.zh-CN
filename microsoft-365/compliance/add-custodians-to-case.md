@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 11115db9e9a29f9abe83b3c26322f7586806d4dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634600"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632307"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>向高级电子数据展示案例中添加保管人
 
@@ -68,7 +68,7 @@ ms.locfileid: "42634600"
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>步骤3：将其他数据源与管理员关联
 
-根据要调查的情况，您可能还需要在特定保管人访问的邮箱中搜索（和保留内容）、管理员当前是其成员的 Office 365 组或管理员也访问的网站。 因此，除了在上一步中指定的主保管人数据源之外，还可以将附加的 Office 365 数据源与事例中的管理员相关联。 
+根据要调查的情况，您可能还需要在特定保管人访问的邮箱中搜索（和保留内容）、管理员当前是其成员的 Microsoft 365 组或管理员已访问的网站。 因此，除了在上一步中指定的主保管人数据源之外，还可以将其他 Microsoft 数据源与事例中的管理员相关联。 
 
 若要将邮箱、网站或团队映射到特定保管人，请执行以下操作：
 
@@ -76,14 +76,14 @@ ms.locfileid: "42634600"
   
    ![映射其他数据源](../media/AddCustodianStep3.PNG)
 
-2. 在飞出页面上，您可以指定以下任一 Office 365 服务中的数据源：
+2. 在飞出页面上，您可以指定以下任一服务中的数据源：
   
-   -  **Exchange 电子邮件**-单击 "**选择用户、组或团队**"，然后再次单击 "**选择用户、组或团队"** 。 使用搜索框查找要与保管人相关联的邮箱。 若要指定要分配给选定的保管人的邮箱，请使用搜索框查找用户邮箱和通讯组。 您还可以为 Office 365 组或 Microsoft 团队分配相关联的邮箱。 选中 "用户、组、团队" 复选框，单击 "**选择**"，然后单击 "**完成**"。
+   -  **Exchange 电子邮件**-单击 "**选择用户、组或团队**"，然后再次单击 "**选择用户、组或团队"** 。 使用搜索框查找要与保管人相关联的邮箱。 若要指定要分配给选定的保管人的邮箱，请使用搜索框查找用户邮箱和通讯组。 您还可以为 Microsoft 365 组或 Microsoft 团队分配相关联的邮箱。 选中 "用户、组、团队" 复选框，单击 "**选择**"，然后单击 "**完成**"。
 
         > [!NOTE]
         > 当您单击 "选择用户、组或团队以指定邮箱" 时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要将邮箱添加到此列表，请在搜索框中键入名称或别名（至少为3个字符）。
      
-     - **SharePoint 网站**-单击 "**选择网站**"，然后再次单击 "**选择网站**" 以显示组织中的 SharePoint 网站的列表。 若要将网站与管理员关联，可以在列表中选择一个网站，也可以键入与 Office 365 组、Microsoft 团队或 OneDrive 帐户关联的其他网站或网站的 URL。
+     - **SharePoint 网站**-单击 "**选择网站**"，然后再次单击 "**选择网站**" 以显示组织中的 SharePoint 网站的列表。 若要将网站与管理员关联，可以在列表中选择一个网站，也可以键入与 Microsoft 365 组、Microsoft 团队或 OneDrive 帐户关联的其他网站或网站的 URL。
      
      - **团队**–单击 "**选择团队**"，然后再次单击 "**选择团队**" 以显示保管人当前为其成员的 Microsoft 团队列表。 选择您想要添加到您的管理员的团队。 选择后，系统将自动识别 & 选择与该 Microsoft 团队相关联的关联 SharePoint 网站和组邮箱。 单击 "**选择**"，然后单击 "**完成**"。
 

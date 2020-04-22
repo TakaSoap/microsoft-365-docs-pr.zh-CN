@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: '了解 Office 365 的安全性 & 合规性中心中的内容搜索功能的限制，例如最大同时搜索数。 '
-ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 6c2093bced166901a4442e9ab6593de2b64b785b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634730"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632647"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>安全 & 合规中心中的内容搜索限制
 
 > [!NOTE]
 > 本主题中的限制不同于 Exchange Online 中的就地电子数据展示和 SharePoint Online 中的电子数据展示中心的当前限制。 
   
-将各种限制应用于安全性 & 合规性中心中的内容搜索功能。 这包括**内容搜索**页面上的搜索运行以及与电子数据展示事例相关联的搜索。 这些限制有助于维护提供给 Office 365 组织的服务的运行状况和质量。 此外，还存在与 Exchange Online 中的电子邮件索引编制相关的限制，以供搜索。 您不能修改内容搜索或电子邮件索引限制，但您应了解这些限制，以便在规划、运行和解决内容搜索时，可以考虑这些限制。 
+将各种限制应用于安全性 & 合规性中心中的内容搜索功能。 这包括**内容搜索**页面上的搜索运行以及与电子数据展示事例相关联的搜索。 这些限制有助于维护向组织提供的服务的运行状况和质量。 此外，还存在与 Exchange Online 中的电子邮件索引编制相关的限制，以供搜索。 您不能修改内容搜索或电子邮件索引限制，但您应了解这些限制，以便在规划、运行和解决内容搜索时，可以考虑这些限制。 
   
 ## <a name="content-search-limits"></a>内容搜索限制
 
@@ -51,7 +51,7 @@ ms.locfileid: "42634730"
 |搜索查询的最大字符数（包括运算符和条件），用于内容搜索。  <br/><br/> **注意：** 此限制在查询展开后生效，这意味着将针对每个关键字展开查询。 例如，如果搜索查询有15个关键字和其他参数和条件，则查询将展开15次，每个查询包含查询中的其他参数和条件。 因此，即使搜索查询中的字符数可能低于限制，它也可能导致超出此限制的扩展查询。  <br/> |**邮箱：** 10000  <br/> **网站：** 4000 搜索所有网站或2000时搜索20个网站<sup>1</sup> <br/> |
 |使用前缀通配符在搜索查询中搜索精确短语或使用前缀通配符和**NEAR**或**ONEAR**布尔运算符时返回的最大变体数。  <br/> |10000 <sup>2</sup> <br/> |
 |前缀通配符的最小字母字符数;例如`time*` `one*`、、或`set*`。  <br/> |第三章  <br/> |
-|可通过执行 "搜索并清除" 操作（通过使用**new-compliancesearchaction-"清除**" 命令）在内容搜索中删除项目的最大邮箱数。 如果要对其执行清除操作的内容搜索的源邮箱数超过此限制，清除操作将失败。 有关搜索和清除的详细信息，请参阅[在 Office 365 组织中搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。  <br/> |50,000  <br/> |
+|可通过执行 "搜索并清除" 操作（通过使用**new-compliancesearchaction-"清除**" 命令）在内容搜索中删除项目的最大邮箱数。 如果要对其执行清除操作的内容搜索的源邮箱数超过此限制，清除操作将失败。 有关搜索和清除的详细信息，请参阅[在组织中搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。  <br/> |50,000  <br/> |
    
 > [!NOTE]
 > <sup>1</sup>在搜索 SharePoint 和 OneDrive for business 位置时，要搜索的网站的 url 中的字符将计入此限制。 <br/> <sup>2</sup>对于非短语查询（不使用双引号的关键字值），我们使用特殊的前缀索引。 这告诉我们文档中出现了一个词，而不是它在文档中出现的位置。 若要执行短语查询（带有双引号的关键字值），我们需要将文档中的单词的位置与短语中的单词进行比较。 这意味着我们不能使用短语查询的前缀索引。 在这种情况下，我们将使用前缀扩展的所有可能的单词在内部展开查询;例如， `"time*"`可以扩展到`"time OR timer OR times OR timex OR timeboxed OR …"`。 10000 是指单词可以扩展到的变体最大数量，而不是与查询匹配的文档数量。 非短语搜索词没有上限。 
@@ -78,14 +78,14 @@ ms.locfileid: "42634730"
   
 - [导出内容搜索结果](export-search-results.md#export-limits)
     
-- [处理 Office 365 内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)
+- [内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)
     
-- [使用 Office 365 电子数据展示调查部分索引项](investigating-partially-indexed-items-in-ediscovery.md)
+- [在电子数据展示中调查部分索引项目](investigating-partially-indexed-items-in-ediscovery.md)
     
 - [SharePoint Online 的搜索限制](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
     
 有关内容搜索的信息，请参阅：
   
-- [Office 365 中的内容搜索](content-search.md)
+- [Microsoft 365 中的内容搜索](content-search.md)
     
 - [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)

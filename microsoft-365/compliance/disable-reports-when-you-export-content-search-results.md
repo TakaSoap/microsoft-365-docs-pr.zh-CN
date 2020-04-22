@@ -13,22 +13,22 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: 在您的本地计算机上编辑 Windows 注册表，以便在从 Office 365 中的安全性 & 合规性中心导出内容搜索结果时禁用报告。 禁用这些报告可加快下载时间并节省磁盘空间。
-ms.openlocfilehash: 99f8079bdbb0a3a43d0306dcf6b6ca8ab2c4fbef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bd5fadda750c709c463fbc4d84668b43e0d3a10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595237"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633447"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>导出内容搜索结果时禁用报告
 
-当您使用 Office 365 电子数据展示导出工具导出安全性 & 合规性中心中的内容搜索结果时，该工具会自动创建和导出包含有关导出内容的其他信息的两个报告。 这些报告是结果 .csv 文件和 Manifest .xml 文件（有关这些报告的详细说明，请参阅本主题中[有关禁用导出报告](#frequently-asked-questions-about-disabling-export-reports)部分的常见问题）。 由于这些文件可能非常大，因此可以通过防止导出这些文件，加快下载时间并节省磁盘空间。 您可以通过更改用于导出搜索结果的计算机上的 Windows 注册表来执行此操作。 如果您想要在以后包含这些报告，可以编辑注册表设置。 
+当您使用电子数据展示导出工具导出安全性 & 合规性中心中的内容搜索结果时，该工具会自动创建和导出包含有关导出内容的其他信息的两个报告。 这些报告是结果 .csv 文件和 Manifest .xml 文件（有关这些报告的详细说明，请参阅本主题中[有关禁用导出报告](#frequently-asked-questions-about-disabling-export-reports)部分的常见问题）。 由于这些文件可能非常大，因此可以通过防止导出这些文件，加快下载时间并节省磁盘空间。 您可以通过更改用于导出搜索结果的计算机上的 Windows 注册表来执行此操作。 如果您想要在以后包含这些报告，可以编辑注册表设置。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>创建注册表设置以禁用导出报告
 
 在将用于将结果导出到内容搜索的计算机上执行以下过程。
   
-1. 如果 Office 365 电子数据展示导出工具处于打开状态，则将其关闭。
+1. 如果电子数据展示导出工具处于打开状态，则将其关闭。
     
 2. 执行下列一项或两项操作，具体取决于要禁用的导出报告。
     
@@ -62,7 +62,7 @@ ms.locfileid: "41595237"
 
 如果通过在上一过程中创建 .reg 文件禁用了结果. .csv 和 .Manifest 报告，则可以编辑这些文件以重新启用报告，以便将其导出到搜索结果中。 再次在将用于将结果导出到内容搜索的计算机上执行以下过程。
   
-1. 如果 Office 365 电子数据展示导出工具处于打开状态，则将其关闭。
+1. 如果电子数据展示导出工具处于打开状态，则将其关闭。
     
 2. 编辑您在上一过程中创建的 .reg 编辑文件中的一个或两个。
     
@@ -128,11 +128,11 @@ ms.locfileid: "41595237"
   
  **我必须在哪台计算机上执行此操作？**
   
- 您必须更改在其上运行 Office 365 电子数据展示导出工具的任何本地计算机上的注册表设置。 
+ 您必须更改在其上运行电子数据展示导出工具的任何本地计算机上的注册表设置。 
   
  **更改此设置后，必须重新启动计算机吗？**
   
-否，无需重新启动计算机。 但是，如果 Office 365 电子数据展示导出工具正在运行，则必须将其关闭，然后在更改注册表设置后重新启动它。
+否，无需重新启动计算机。 但是，如果正在运行电子数据展示导出工具，则必须关闭它，然后在更改注册表设置后重新启动它。
   
  **是否已编辑现有注册表项或是否创建新的密钥？**
   

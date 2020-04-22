@@ -1,6 +1,6 @@
 ---
 title: 监督策略
-description: 了解 Office 365 中的监督策略
+description: 了解监督策略
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+titleSuffix: Microsoft 365 Compliance
+ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604079"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626966"
 ---
-# <a name="supervision-policies-in-office-365"></a>Office 365 中的监督策略
+# <a name="supervision-policies"></a>监督策略
 
-Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员工通信。 您可以定义用于捕获组织中的内部和外部电子邮件、Microsoft 团队或第三方通信的特定策略。 然后，审阅者可以检查这些邮件，以确保它们符合组织的邮件标准，并使用分类类型解决这些问题。
+Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的员工通信。 您可以定义用于捕获组织中的内部和外部电子邮件、Microsoft 团队或第三方通信的特定策略。 然后，审阅者可以检查这些邮件，以确保它们符合组织的邮件标准，并使用分类类型解决这些问题。
 
 这些策略还可以帮助您解决诸多新式合规性挑战，包括：
 
@@ -36,7 +36,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 - 邮件数据量的增加
 - 法规实施 & 受到罚款的风险
 
-在某些组织中，IT 支持与合规性管理组之间可能存在的职责分离。 Office 365 支持将监督策略功能配置与策略的配置与捕获的通信相分离。 例如，组织的 IT 组可能负责设置角色权限和组，以支持由组织的合规性团队配置和管理的监督策略。
+在某些组织中，IT 支持与合规性管理组之间可能存在的职责分离。 Microsoft 365 支持将监察策略功能配置与策略的配置与捕获的通信进行隔离。 例如，组织的 IT 组可能负责设置角色权限和组，以支持由组织的合规性团队配置和管理的监督策略。
 
 有关监督策略的快速概述，请参阅[Microsoft 机械通道](https://www.youtube.com/user/OfficeGarageSeries)上的[监督策略视频](https://youtu.be/C3Y8WZ7o_dI)。
 
@@ -44,13 +44,13 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 想要在 Microsoft 365 中尝试新的通信合规性体验吗？ 查看[Microsoft 365 中的通信合规性](communication-compliance.md)提供的新增和改进功能。
 
-## <a name="transitioning-from-supervision-in-office-365"></a>从 Office 365 中的监察转换
+## <a name="transitioning-from-supervision"></a>从监督过渡
 
-在 Office 365 中使用监督策略并计划[在 Microsoft 365 中过渡到通信合规性策略](communication-compliance.md)的组织需要了解这些重要事项：
+在 Microsoft 365 中，使用监督策略和计划转换到[通信合规性策略的](communication-compliance.md)组织需要了解这些重要事项：
 
-- Office 365 中的监督解决方案将被 Microsoft 365 中的通信合规性解决方案完全取代。 对于从监督策略过渡到通信合规性的组织，我们建议在通信合规性中创建新策略，这些策略与现有监督策略具有相同的*条件*，以实现新的调查和补救措施改进。 在 Microsoft 365 中转换到通信合规性时，如果您具有内部合规性保留策略要求，则应计划在 Office 365 中的监察时导出报告数据。
+- Microsoft 365 中的监管解决方案将完全替换为 Microsoft 365 中的通信合规性解决方案。 对于从监督策略过渡到通信合规性的组织，我们建议在通信合规性中创建新策略，这些策略与现有监督策略具有相同的*条件*，以实现新的调查和补救措施改进。 在 Microsoft 365 中转换到通信合规性时，如果您具有内部合规性保留策略要求，则应计划将报告数据导出到监督中。
 - 在这种情况下，组织可以并行使用这两个解决方案，直到完全迁移，但在每个解决方案中使用的策略必须具有*唯一的策略名称*。 在过渡期间，可以在解决方案之间共享组和自定义关键字词典。
-- 在 Office 365 策略匹配中保存的邮件无法在 Microsoft 365 中移动或共享到通信合规性中。
+- 在 Microsoft 365 策略匹配中保存的邮件在 Microsoft 365 中无法移动或共享到通信合规性中。
 
 有关 Office 365 中监察的退休信息，请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)了解详细信息。
 
@@ -78,7 +78,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 ### <a name="supervised-users"></a>受监督用户
 
-在开始使用监督之前，您必须确定哪些用户需要查看其通信。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例包括 Office 365 组、基于 Exchange 的通讯组列表和 Microsoft 团队频道。 您还可以将特定用户或组从监督的组或组列表中排除。
+在开始使用监督之前，您必须确定哪些用户需要查看其通信。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例是 Microsoft 365 组、基于 Exchange 的通讯组列表和 Microsoft 团队频道。 您还可以将特定用户或组从监督的组或组列表中排除。
 
 >[!IMPORTANT]
 >监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或者包含在 Office 365 企业版 E5 订阅中，或者包含在 Microsoft 365 E5 订阅中。如果你没有现有的企业版 E5 计划，并且想要尝试监督，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
@@ -91,24 +91,24 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 若要简化设置，请为需要查看其通信的用户创建组，并为查看这些通信的用户分组。 如果使用的是组，可能需要多个。 例如，如果要监视两个不同的人员组之间的通信，或者要指定未受监督的组。
 
-当您为受监督的用户选择 Office 365 组时，该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
+当您为受监督的用户选择 Microsoft 365 组时，该策略将监视共享邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
 
 ### <a name="supported-communication-types"></a>支持的通信类型
 
 使用监督策略，您可以选择监视以下一个或多个通信平台中的邮件：
 
-- **Exchange 电子邮件：** 作为 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件监督。 与监察策略条件匹配的电子邮件和附件可立即用于监控和监控报告。 受支持的监督附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
+- **Exchange 电子邮件：** 作为 Microsoft 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件监督。 与监察策略条件匹配的电子邮件和附件可立即用于监控和监控报告。 受支持的监督附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
 - **Microsoft 团队：** 可以监督公共和私有 Microsoft 团队频道和个人聊天中的聊天通信和相关附件。 团队聊天匹配监督策略条件每24小时处理一次，然后可在监督报告中进行监视。 使用以下组管理配置监督团队中的个人用户聊天和通道通信：
 
     - **对于团队聊天监督：** 为单个用户分配或向监督策略分配一个[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)。 这适用于1对1或一对多用户/聊天的关系。
-    - **对于团队渠道通信：** 将您想要监视的每个 Microsoft 团队频道或 Office 365 组分配给监督策略，其中包含特定用户。 如果将同一用户添加到其他 Microsoft 团队频道或 Office 365 组，请确保将这些新的频道和组添加到监督策略中。
+    - **对于团队渠道通信：** 将您要监视的每个 Microsoft 团队频道或 Microsoft 365 组分配给监督策略，其中包含特定用户。 如果将同一用户添加到其他 Microsoft 团队频道或 Microsoft 365 组，请确保将这些新的频道和组添加到监督策略中。
 
 - **Skype For Business Online：** 可以监督 Skype for Business Online 中的聊天通信和相关附件。 Skype for Business Online 聊天匹配监督策略条件每24小时处理一次，然后可在监督报告中进行监视。 受监督聊天对话源于[以前在 Skype for Business Online 中保存的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置监督 Skype for Business Online 中的用户聊天通信：
 
     - **对于 Skype For Business Online 研讨监察：** 为单个用户分配或向监督策略分配一个[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)。 这适用于1对1或一对多用户/聊天的关系。
 
-- **第三方来源：** 您可以监督来自第三方源（如 Facebook 或 DropBox）的通信，以了解导入到组织中的 Office 365 邮箱中的数据。 [了解如何将第三方数据导入 Office 365](archiving-third-party-data.md)。
+- **第三方来源：** 您可以监督来自第三方源（如 Facebook 或 DropBox）的通信，以获取导入组织中的邮箱的数据。 [了解如何导入第三方数据](archiving-third-party-data.md)。
 
 默认情况下，跨这些平台捕获的通信每个策略保留7年，即使用户离开组织并删除了其邮箱也是如此。
 
@@ -124,7 +124,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 #### <a name="sensitive-information-types"></a>敏感信息类型
 
-您可以选择将敏感信息类型作为监督策略的一部分包括在内。 敏感信息类型可以是预定义的，也可以是自定义的数据类型，可帮助确定和保护信用卡号码、银行帐号、护照号码等。 作为 Office 365[数据丢失防护（DLP）](data-loss-prevention-policies.md)的一部分，敏感信息配置可以使用模式、字符邻近度、可信度和偶数自定义数据类型，以帮助识别和标记可能敏感的内容。 默认的敏感信息类型为：
+您可以选择将敏感信息类型作为监督策略的一部分包括在内。 敏感信息类型可以是预定义的，也可以是自定义的数据类型，可帮助确定和保护信用卡号码、银行帐号、护照号码等。 作为[数据丢失防护（DLP）](data-loss-prevention-policies.md)的一部分，敏感信息配置可以使用模式、字符邻近度、可信度和偶数自定义数据类型，以帮助识别和标记可能敏感的内容。 默认的敏感信息类型为：
 
 - 金融
 - 医疗和运行状况
@@ -183,7 +183,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
   
 ##### <a name="enter-multiple-conditions"></a>输入多个条件
 
-如果你输入了多个条件，Office 365 将使用所有条件共同确定何时将策略应用于通信项。 在设置多个条件时，必须满足所有条件，才能应用策略，除非您输入了异常。 例如，如果邮件包含 "商贸" 一词，并且大于 2 MB，则需要适用的策略。 但是，如果邮件还包含 "由 Contoso 财务财务批准" 这一词，则该策略不应应用。 因此，在这种情况下，三个条件将如下所示：
+如果你输入多个条件，Microsoft 365 将所有条件一起使用，以确定何时将策略应用于通信项。 在设置多个条件时，必须满足所有条件，才能应用策略，除非您输入了异常。 例如，如果邮件包含 "商贸" 一词，并且大于 2 MB，则需要适用的策略。 但是，如果邮件还包含 "由 Contoso 财务财务批准" 这一词，则该策略不应应用。 因此，在这种情况下，三个条件将如下所示：
   
 - **邮件包含这些词语中的任何词语**，关键字为 "商贸"
 
@@ -263,7 +263,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
   
 |**标记类型**|**含义**|
 |:-----|:-----|
-| **未审阅** | 尚未审阅的电子邮件数。 这些电子邮件在 "Office 365 监督" 仪表板中等待审阅。
+| **未审阅** | 尚未审阅的电子邮件数。 这些电子邮件在 Microsoft 365 监督仪表板中等待审阅。
 | **Compliant** | 已审阅并标记为合规的电子邮件数。 这些邮件仍需要解析。 |
 | **Questionable** | 审阅并标记为可疑的电子邮件数量。 用作其他审阅者的标志，以帮助检查电子邮件是否需要调查合规性。 这些邮件仍需要解析。 |
 | **不符合（活动）** | 审阅者当前正在调查的不合规电子邮件数。 |
@@ -279,7 +279,7 @@ Office 365 中的监督策略使您可以捕获指定审阅者进行检查的员
 
 在某些情况下，您必须向法规或合规性审核人员提供信息，以证明员工活动和通信的监督。 这可能是与定义的策略相关的所有监管活动的摘要，也可能随时受监督策略更改。 监督策略具有内置审核跟踪，可以实现内部或外部审核的完整就绪状态。 监督策略监视的每个操作的详细审核历史记录都提供监督过程证明。
 
-在统一的 Office 365 审核日志中审核并提供以下监察策略活动：
+审核并在统一审核日志中提供以下监察策略活动：
 
 |**活动**|**关联命令**|
 |:-----|:-----|

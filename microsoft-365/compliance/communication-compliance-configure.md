@@ -1,5 +1,5 @@
 ---
-title: 配置通信合规性
+title: 通信合规性入门
 description: 设置通信合规性策略以配置员工通信以供审阅。
 f1.keywords:
 - NOCSH
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193510"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708391"
 ---
-# <a name="configure-communication-compliance-in-microsoft-365"></a>在 Microsoft 365 中配置通信合规性
+# <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
 >[!IMPORTANT]
->本主题适用于在 Microsoft 365 订阅中配置通信合规性。 如果要为 Office 365 订阅配置监督策略，请参阅[configure 监督 For office 365](supervision-policies.md)。
+>本主题适用于在 Microsoft 365 订阅中配置通信合规性。 如果要为 Microsoft 365 订阅配置监督策略，请参阅[配置针对 microsoft 365 的监督](supervision-policies.md)。
 
 使用通信合规性策略，以捕获内部或外部审阅者进行检查的员工通信。 有关通信合规性策略如何帮助您监视组织中的通信的详细信息，请参阅[Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果您想要查看 Contoso 如何快速将通信合规性策略配置为在 Microsoft 团队和 Exchange Online 通信中监视攻击性语言，请查看此[案例研究](communication-compliance-case-study.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "43193510"
 >[!IMPORTANT]
 >Office 365 高级合规性不再作为独立订阅销售。 当当前订阅过期时，客户应转换为上述订阅之一，其中包含相同或更多的合规性功能。
 
-如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅中，或注册 Microsoft 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
+如果您没有现成的 Office 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 Microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有订阅或注册 Office 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤1（必需）：启用通信合规性的权限
 
@@ -66,7 +66,7 @@ ms.locfileid: "43193510"
 
 1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 组织中使用管理员帐户的凭据进行登录。
 
-2. 在 Microsoft Office 365 安全与合规中心中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
+2. 在 "安全&amp;合规性中心" 中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
 3. 选择“创建”****。
 
@@ -82,11 +82,11 @@ ms.locfileid: "43193510"
 
 有关角色组和权限的详细信息，请参阅[合规性中心中的权限](../security/office-365-security/protect-against-threats.md)。
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>步骤2（必需）：启用 Office 365 审核日志
+## <a name="step-2-required-enable-the-audit-log"></a>步骤2（必需）：启用审核日志
 
 通信合规性需要审核日志来显示通知并跟踪审阅者采取的修正操作。 审核日志是与定义的组织策略关联的所有活动的摘要，也是任何与通信合规性策略更改相关的活动。
 
-有关启用审核的分步说明，请参阅[打开或关闭 Office 365 审核日志搜索](turn-audit-log-search-on-or-off.md)。 启用审核后，会显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 有关使用审核日志的详细信息，请参阅[Search the audit log](search-the-audit-log-in-security-and-compliance.md)。
+有关启用审核的分步说明，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 启用审核后，会显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 有关使用审核日志的详细信息，请参阅[Search the audit log](search-the-audit-log-in-security-and-compliance.md)。
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步骤3（可选）：设置组以实现通信合规性
 
@@ -96,15 +96,15 @@ ms.locfileid: "43193510"
 
 | **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
-|受监督用户 <br> 非监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
+|受监督用户 <br> 非监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 |
 | Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
   
-当您为受监督的用户选择 Office 365 组时，该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
+当您为受监督的用户选择 Microsoft 365 组时，该策略将监视共享邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
 
 有关设置组的详细信息，请参阅：
 
 - [创建和管理通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Office 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Microsoft 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-4-required-create-a-communication-compliance-policy"></a>步骤4（必需）：创建通信合规性策略
   
@@ -119,7 +119,7 @@ ms.locfileid: "43193510"
 
 4. 选择 "**创建策略**"，从模板创建和配置新策略，或创建和配置自定义策略。
 
-    如果选择内置策略模板来创建策略，您将：
+    如果选择策略模板来创建策略，您将：
 
     - 确认或更新策略名称。 一旦创建了策略，便无法更改策略名称。
     - 选择要监督的用户或组，包括选择要排除的用户或组。
@@ -139,7 +139,7 @@ ms.locfileid: "43193510"
 
     >[!CAUTION]
     >我们正在弃用采用**冒犯性语言**的内置分类器，因为它生成了大量误报。 请勿使用该功能，如果您当前正在使用它，则应将业务流程移出它。 我们建议改为使用**威胁**、**猥亵**和**骚扰**内置分类符。
-
+    
     - 定义要查看的通信百分比。
     - 查看策略选择并创建策略。
 

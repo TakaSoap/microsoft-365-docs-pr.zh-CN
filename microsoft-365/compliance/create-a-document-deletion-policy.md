@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 为了体现合规性以及遵守法律或其他法规，组织通常必须在一定期限内保留文档。不过，如果文档的保留时间长于要求时间，则会给组织带来法律风险。
-ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5550f65e5b2ecb5dca775e1d851548913b8e8517
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077870"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632257"
 ---
 # <a name="create-a-document-deletion-policy"></a>创建文档删除策略
 
 > [!IMPORTANT]
-> 向前移动时，建议使用保留策略或在 Microsoft 365 合规性中心、Microsoft 365 安全中心或 Office 365 安全&amp;合规中心（而不是文档删除策略）中创建的保留标签。 文档删除策略将继续与保留策略一起工作，但如果您需要保留或删除 Office 365 中任何位置的内容，我们建议使用保留策略。 有关详细信息，请参阅[使用保留策略而不是这些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。 
+> 向前移动时，我们建议使用保留策略或在 Microsoft 365 合规性中心、Microsoft 365 安全中心或安全&amp;合规中心（而不是文档删除策略）中创建的保留标签。 文档删除策略将继续与保留策略一起工作，但如果您需要保留或删除 Office 365 中任何位置的内容，我们建议使用保留策略。 有关详细信息，请参阅[使用保留策略而不是这些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。 
   
 为了体现合规性以及遵守法律或其他法规，组织通常必须在一定期限内保留文档。不过，如果文档的保留时间长于要求时间，则会给组织带来法律风险。
   

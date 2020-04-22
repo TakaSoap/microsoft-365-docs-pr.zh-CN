@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 您可以导出搜索结果报告，而不是在 Office 365 的安全性 & 合规性中心中导出内容搜索的实际结果。 报告包含搜索结果摘要和文档，其中包含有关要导出的每个项目的详细信息。
-ms.openlocfilehash: 6730a1c406e02de26cbef964e445cfad31c948ec
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 63acc8701973519f959ced9822333e893e6fd863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074389"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615926"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 
@@ -34,7 +34,7 @@ ms.locfileid: "42074389"
   
 导出报表时，会将其下载到与内容搜索同名的文件夹中，但附加 *_ReportsOnly*。 例如，如果内容搜索名为*ContosoCase0815*，则会将该报告下载到名为*ContosoCase0815_ReportsOnly*的文件夹中。 有关报告中包含的文档的列表，请参阅[报告中包含的内容](#whats-included-in-the-report)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要导出内容搜索报告，您必须在安全 & 合规性中心中分配合规性搜索管理角色。 此角色分配给内置电子数据展示管理器和组织管理角色组。 它没有默认分配至组织管理角色组。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -50,13 +50,13 @@ ms.locfileid: "42074389"
 
   - Microsoft Edge <sup>2</sup>
 
-    或
+    OR
 
   - Microsoft Internet Explorer 10 及更高版本
 
   > [!NOTE]
   > <sup>1</sup> Microsoft 不会为 ClickOnce 应用程序制造第三方扩展或加载项。 使用不受支持的浏览器导出搜索结果，但不支持第三方分机或加载项。<br/>
-  > <sup>2</sup>由于最近对 Microsoft Edge 进行了更改，因此 ClickOnce 支持在默认情况下不再启用。 有关在 Edge 中启用 ClickOnce 支持的说明，请参阅[使用 Microsoft Edge 中的 Office 365 电子数据展示导出工具](configure-edge-to-export-search-results.md)。
+  > <sup>2</sup>由于最近对 Microsoft Edge 进行了更改，因此 ClickOnce 支持在默认情况下不再启用。 有关在 Edge 中启用 ClickOnce 支持的说明，请参阅[在 Microsoft Edge 中使用电子数据展示导出工具](configure-edge-to-export-search-results.md)。
 
 - 如果内容搜索返回的结果的估计总大小超过了 2 TB，则将报告导出失败。 若要成功导出报告，请尝试缩小范围并重新运行搜索，以使结果的估计大小小于 2 TB。
 
@@ -72,7 +72,7 @@ ms.locfileid: "42074389"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用您的工作或学校帐户登录。
     
 3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索** \> **内容搜索**"。
     
@@ -127,7 +127,7 @@ ms.locfileid: "42074389"
   
 3. 单击 "**下载报告**"。
     
-4. 如果系统提示您安装**MicrosoftOffice 365 电子数据展示导出工具**，请单击 "**安装**"。
+4. 如果系统提示您安装**电子数据展示导出工具**，请单击 "**安装**"。
     
 5. 在“电子数据展示导出工具”**** 中，将你在步骤 2 中复制的导出密钥粘贴在相应的框中。
     
@@ -144,10 +144,10 @@ ms.locfileid: "42074389"
 
 生成和导出有关内容搜索结果的报告时，将下载以下文档：
   
-- **导出摘要：** 包含导出摘要的 Excel 文档。 其中包括以下信息：已搜索的内容源的数量、每个内容位置的搜索结果数、估计的项目数、要导出的实际项目数，以及项目的估计和实际大小将导出的。 
+- **导出摘要：** 包含导出摘要的 Excel 文档。 其中包括以下信息：已搜索的内容源的数量、每个内容位置的搜索结果数、估计的项目数、要导出的实际项目数以及要导出的项目的估计大小和实际大小。 
     
     > [!NOTE]
-    > 如果在导出报表时包含未编制索引的项目，未编制索引的项目数将包含在估计的搜索结果总数和已下载的搜索结果总数（如果您要导出搜索结果）中列出的导出摘要报告。 换言之，要下载的项目总数等于估计结果的总数和未编制索引项目总数的总数。 
+    > 如果在导出报告时包含未编制索引的项目，则已编制索引的项目的数量将包含在估计的搜索结果总数和在 "导出摘要报告" 中列出的已下载搜索结果的总数（如果您要导出搜索结果）。 换言之，要下载的项目总数等于估计结果的总数和未编制索引项目总数的总数。 
   
 - **清单：** 包含搜索结果中包含的每个项目的相关信息的清单文件（XML 格式）。 
     

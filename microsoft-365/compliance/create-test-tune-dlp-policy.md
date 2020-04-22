@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 819320b8170c652a6cdb32e191ebca5174eb0329
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604179"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635962"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
-数据丢失防护是 Office 365 的一项合规性功能，旨在帮助您的组织防止对不需要的敏感信息进行有意或无意的暴露。 DLP 的根在 Exchange Server 和 Exchange Online 中，也适用于 SharePoint Online 和 OneDrive for Business。
+数据丢失防护（DLP）是一种合规性功能，旨在帮助您的组织防止将敏感信息有意或无意地暴露给不需要的团体。 DLP 的根在 Exchange Server 和 Exchange Online 中，也适用于 SharePoint Online 和 OneDrive for Business。
 
 DLP 使用内容分析引擎检查电子邮件和文件的内容，查找敏感信息，如信用卡号和个人身份信息（PII）。 敏感信息通常不应通过电子邮件发送，也不应包含在文档中，而无需执行其他步骤，如加密电子邮件或文件。 使用 DLP 可以检测敏感信息，并采取如下操作：
 
@@ -57,7 +57,7 @@ DLP 使用内容分析引擎检查电子邮件和文件的内容，查找敏感�
 
 可以通过 Exchange 管理中心管理 Exchange Online 的 DLP 策略。 但您可以通过安全 & 合规性中心为所有工作负载配置 DLP 策略，因此这正是我将在本文中用到的演示。 在安全 & 合规性中心中，你将在**数据丢失防护** > **策略**下找到 DLP 策略。 单击 "**创建要启动的策略**"。
 
-Office 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](what-the-dlp-policy-templates-include.md)。 假设你是澳大利亚的商业版。 您可以筛选策略模板以仅显示与澳大利亚相关的人员，这些模板属于财务、医疗和运行状况的一般类别和隐私。
+Microsoft 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](what-the-dlp-policy-templates-include.md)。 假设你是澳大利亚的商业版。 您可以筛选策略模板以仅显示与澳大利亚相关的人员，这些模板属于财务、医疗和运行状况的一般类别和隐私。
 
 ![选择国家或地区的选项](../media/DLP-create-test-tune-choose-country.png)
 
@@ -214,4 +214,4 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ## <a name="summary"></a>总结
 
-数据丢失防护策略对于所有类型的组织都很有用。 由于您对策略提示、最终用户覆盖和事件报告等的控制，测试某些 DLP 策略是一个低风险的实践。 您可以安静地测试一些 DLP 策略，以查看组织中已发生的冲突类型，然后使用较低的误报率手工创建策略，向用户介绍允许和不允许的情况，然后将 DLP 策略回滚到组织.
+数据丢失防护策略对于所有类型的组织都很有用。 由于您对策略提示、最终用户覆盖和事件报告等的控制，测试某些 DLP 策略是一个低风险的实践。 您可以安静地测试一些 DLP 策略，以查看组织中已发生的冲突类型，然后使用较低的误报率手工创建策略，向用户介绍允许和不允许的内容，然后将您的 DLP 策略部署到组织中。

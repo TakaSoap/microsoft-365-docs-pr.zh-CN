@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c36a9865757a76708ac9e7385a2a9ef3e977050e
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521460"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632957"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留
 
-您可以使用高级电子数据展示事例来创建保留，以保留可能与您的案例相关的内容。 使用高级电子数据展示保留功能，可以将保留在保管人及其数据源上。 此外，还可以将非 custodial 保留置于邮箱和 OneDrive for business 网站上。 您还可以在 "Office 365" 组的 "组邮箱"、"SharePoint 网站" 和 "OneDrive for business" 网站上放置保留项。 同样，您可以在与 Microsoft 团队关联的邮箱和网站上放置保留。 将内容位置置于保留状态时，将保留内容，直到您释放保管人、删除特定的数据位置或完全删除保留策略。
+您可以使用高级电子数据展示事例来创建保留，以保留可能与您的案例相关的内容。 使用高级电子数据展示保留功能，可以将保留在保管人及其数据源上。 此外，还可以将非 custodial 保留置于邮箱和 OneDrive for business 网站上。 您还可以在组邮箱、SharePoint 网站和 OneDrive for business 网站上放置 Microsoft 365 组的保留项。 同样，您可以在与 Microsoft 团队关联的邮箱和网站上放置保留。 将内容位置置于保留状态时，将保留内容，直到您释放保管人、删除特定的数据位置或完全删除保留策略。
 
 ## <a name="manage-custodian-based-holds"></a>管理基于保管人的保留
 
@@ -69,17 +69,17 @@ ms.locfileid: "43521460"
   
 8. 选择要置于保留状态的内容位置。 您可以将邮箱、网站和公用文件夹置于保留状态。
 
-   a. **Exchange 电子邮件**-单击 "**选择用户、组或团队**"，然后再次单击 "**选择用户、组或团队**" 以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组（在组成员的邮箱上放置保留）以使其处于保留状态。 您还可以在 Office 365 组或 Microsoft 团队的关联邮箱上放置保留。 选中 "用户、组、团队" 复选框，单击 "**选择**"，然后单击 "**完成**"。
+   a. **Exchange 电子邮件**-单击 "**选择用户、组或团队**"，然后再次单击 "**选择用户、组或团队**" 以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组（在组成员的邮箱上放置保留）以使其处于保留状态。 您还可以在 Microsoft 365 组或 Microsoft 团队的关联邮箱上放置保留。 选中 "用户、组、团队" 复选框，单击 "**选择**"，然后单击 "**完成**"。
  
     > [!NOTE]
     > 当您单击 "**选择用户、组或团队**以指定要置于保留状态的邮箱" 时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要将人员添加到此列表，请在搜索框中键入一个名称（至少3个字符）。
 
-    b. **SharePoint 网站**-单击 "**选择网站**"，然后单击 "再次**选择网站**" 以指定 SharePoint 和 OneDrive for business 网站置于保留状态。 键入要置于保留状态的每个网站的 URL。 您还可以为 Microsoft 团队或 Office 365 组添加 SharePoint 网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
+    b. **SharePoint 网站**-单击 "**选择网站**"，然后单击 "再次**选择网站**" 以指定 SharePoint 和 OneDrive for business 网站置于保留状态。 键入要置于保留状态的每个网站的 URL。 您还可以为 Microsoft 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
     
-     有关放置 Microsoft 团队和 Office 365 组和保持的提示，请参阅在[Microsoft 团队和 office 365 组中放置保留](#place-a-hold-on-microsoft-teams-and-office-365-groups)一节。
+     有关将 Microsoft 365 组和 Microsoft 团队置于保留状态的提示，请参阅**FAQ**部分。
 
     > [!NOTE]
-    > 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是非 custodial 保留的一部分，并且其 UPN 已更改，则需要更新保留，并指向新的 OneDrive URL。 有关详细信息，请参阅[UPN 更改对 ONEDRIVE URL 的影响](https://docs.microsoft.com/onedrive/upn-changes)。
+    > 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是非 custodial 保留的一部分，并且其 UPN 已更改，则需要更新保留，并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
 
      c. **Exchange 公用文件夹**-将切换开关移动到 "所有位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 请注意，不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 "**无**"。
 
@@ -119,11 +119,10 @@ ms.locfileid: "43521460"
 
 Microsoft 团队基于 Office 365 组构建。 因此，在高级电子数据展示中将其置于保留状态非常相似。 
 
-将 Office 365 组和 Microsoft 团队置于保留状态时，请记住以下事项。
-
-- 若要将位于 Office 365 组和 Microsoft 团队中的内容置于保留状态，您必须指定与组或团队关联的邮箱和 SharePoint 网站。
+- **如何将其他 Microsoft 365 组或 Microsoft 团队网站映射到保管人？在 Microsoft 365 组和 Microsoft 团队中放置非 Custodial 保留会怎么样？** Microsoft 团队构建在 Microsoft 365 组之上。 因此，在电子数据展示事例中将其置于保留状态非常相似。 将 Microsoft 365 组和 Microsoft 团队置于保留状态时，请记住以下事项。
+  - 若要将位于 Microsoft 365 组和 Microsoft 团队中的内容置于保留状态，您必须指定与组或团队关联的邮箱和 SharePoint 网站。
   
-- 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Office 365 组或 Microsoft 团队的属性。 如果要获取与 Office 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性：
+  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Microsoft 365 组或 microsoft 团队的属性。 若要获取与 Microsoft 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令将显示名为 "高级领导" 团队的 Microsoft 365 组的选定属性：
 
 
     ```text
@@ -137,9 +136,9 @@ Microsoft 团队基于 Office 365 组构建。 因此，在高级电子数据展
     > [!NOTE]
     > 若要运行 Get-UnifiedGroup cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。
 
-- 在搜索用户的邮箱时，不会搜索用户是其成员的任何 Office 365 组或 Microsoft 团队。 同样，当您放置 Office 365 组或 Microsoft 团队保留时，只有组邮箱和组网站处于保留状态。除非将组成员的邮箱和 OneDrive for Business 网站明确添加为保管人或将其数据源放置，否则它们不会置于保留状态。 因此，如果需要将 Office 365 组或 Microsoft 团队置于保留状态以供特定保管人使用，请考虑将组网站和组邮箱映射到保管人（请参阅在高级电子数据展示中管理保管人）。 如果 Office 365 组或 Microsoft 团队不属于单个管理员，请考虑将该源添加到非 custodial 保留中。 
-
-- 若要获取 Office 365 组或 Microsoft 团队成员的列表，您可以在 Microsoft 365 管理中心的 "**家庭 > 组**" 页上查看属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令：
+ - 在搜索用户的邮箱时，不会搜索用户是其成员的任何 Microsoft 365 组或 Microsoft 团队。 同样，在置入 Microsoft 365 组或 Microsoft 团队时，只有组邮箱和组网站处于保留状态。除非将组成员的邮箱和 OneDrive for Business 网站明确添加为保管人或将其数据源放置，否则它们不会置于保留状态。 因此，如果需要将 Microsoft 365 组或 Microsoft 团队置于保留状态以供特定保管人使用，请考虑将组网站和组邮箱映射到保管人（请参阅在高级电子数据展示中管理保管人）。 如果 Microsoft 365 组或 Microsoft 团队不属于单个管理员，请考虑将该源添加到非 custodial 保留中。 
+ 
+ - 若要获取 Microsoft 365 组或 Microsoft 团队成员的列表，您可以在 Microsoft 365 管理中心的 "家庭 > 组" 页上查看属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令：
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

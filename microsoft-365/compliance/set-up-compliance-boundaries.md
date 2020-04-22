@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中为电子数据展示调查设置合规性边界
+title: 为电子数据展示调查设置合规性边界
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,25 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: 使用合规性边界在 Office 365 组织中创建用于控制电子数据展示管理器可搜索的用户内容位置的逻辑边界。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 使用合规性边界在组织内创建逻辑边界，以控制电子数据展示管理器可以搜索的用户内容位置。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
+ms.openlocfilehash: 80b64a32ea7bbd45aec726a1e8f41ad48ef77714
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634140"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636160"
 ---
-# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>在 Office 365 中为电子数据展示调查设置合规性边界
+# <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>为电子数据展示调查设置合规性边界
 
 在使用核心电子数据展示或高级电子数据展示管理调查时，可以应用本文中的指南。
 
-合规性边界在 Office 365 组织中创建逻辑边界，以控制电子数据展示管理者可以搜索的用户内容位置（如邮箱、SharePoint 网站和 OneDrive 帐户）。 此外，合规性边界控制谁可以访问电子数据展示用例，以管理组织中的法律、人力资源或其他调查。 对于必须遵守地理位置 boarders 和管理法规以及政府的政府（通常分为不同的机构）的多国公司来说，需求是合规性边界所必需的。 在 Office 365 中，合规性边界可帮助您在执行内容搜索和使用电子数据展示案例管理调查时满足这些要求。
+合规性边界在组织内创建逻辑边界，以控制电子数据展示管理者可以搜索的用户内容位置（如邮箱、SharePoint 网站和 OneDrive 帐户）。 此外，合规性边界控制谁可以访问电子数据展示用例，以管理组织中的法律、人力资源或其他调查。 对于必须遵守地理位置 boarders 和管理法规以及政府的政府（通常分为不同的机构）的多国公司来说，需求是合规性边界所必需的。 在 Office 365 中，合规性边界可帮助您在执行内容搜索和使用电子数据展示案例管理调查时满足这些要求。
   
 我们使用下图中的示例来说明合规性边界的工作原理。
   
 ![合规性边界包含搜索权限筛选器，这些筛选器控制对对电子数据展示案例的访问进行控制的代理和管理员角色组的访问](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
-在此示例中，Contoso 有限公司是由两个子公司、第四个咖啡和 Coho Winery 组成的 Office 365 组织。 业务要求电子数据展示 mangers 和调查人员只能在其代理中搜索 Exchange 邮箱、OneDrive 帐户和 SharePoint 网站。 此外，电子数据展示管理者和调查人员只能查看其代理中的电子数据展示案例，并且只能访问他们所属的案例。 下面介绍了合规性边界如何满足这些要求。
+在此示例中，Contoso 有限公司是由两个子公司、第四个咖啡和 Coho Winery 组成的组织。 业务要求电子数据展示 mangers 和调查人员只能在其代理中搜索 Exchange 邮箱、OneDrive 帐户和 SharePoint 网站。 此外，电子数据展示管理者和调查人员只能查看其代理中的电子数据展示案例，并且只能访问他们所属的案例。 下面介绍了合规性边界如何满足这些要求。
   
 - 内容搜索中的搜索权限筛选功能控制电子数据展示管理者和调查人员可以搜索的内容位置。 这意味着第四个咖啡店中的电子数据展示管理者和调查人员只能在第四个咖啡子公司中搜索内容位置。 此限制适用于 Coho Winery 子公司。
     
@@ -61,7 +61,7 @@ ms.locfileid: "42634140"
   
 以下是可用于合规性边界的 Azure Active Directory 用户属性的列表：
   
-- 公司
+- Company
     
 - CustomAttribute1 — CustomAttribute15
     
@@ -79,11 +79,11 @@ ms.locfileid: "42634140"
   
 向 Microsoft 支持部门提交请求时，请包含以下信息：
   
-- Office 365 组织的默认域名
+- 您的组织的默认域名称
     
 - Azure Active Directory 属性的名称（从步骤1）
     
-- 支持请求的用途的以下标题或说明： "对合规性安全筛选器启用 OneDrive for Business 同步和 Azure Active Directory"。 这有助于将请求路由到实现请求的 Office 365 电子数据展示工程团队。
+- 支持请求的用途的以下标题或说明： "对合规性安全筛选器启用 OneDrive for Business 同步和 Azure Active Directory"。 这有助于将请求路由到实现请求的电子数据展示工程团队。
     
 在进行工程更改并将属性同步到 OneDrive 后，Microsoft 支持将向您发送所做更改的内部版本号以及估计的部署日期。 在提交支持请求后，部署过程通常需要4–6周。
   
@@ -237,11 +237,11 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 - **Region** 参数不控制 Exchange 邮箱的搜索。 搜索邮箱时将搜索所有数据中心。 若要限制搜索的 Exchange 邮箱的作用域，请在创建或更改搜索权限筛选器时使用**Filters**参数。 
     
-- 如果电子数据展示管理器需要在多个 SharePoint 区域中进行搜索，则需要为该电子数据展示管理器创建一个不同的用户帐户，以便在搜索权限筛选器中使用，以指定 SharePoint 网站或 OneDrive 的区域帐户位于。 有关对此进行设置的详细信息，请参阅在[Office 365 中的内容搜索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的 "在 SharePoint 多地理位置环境中搜索内容" 部分。
+- 如果电子数据展示管理器需要在多个 SharePoint 区域中进行搜索，则需要为该电子数据展示管理器创建一个不同的用户帐户，以便在搜索权限筛选器中使用，以指定 SharePoint 网站或 OneDrive 帐户所在的区域。 有关对此进行设置的详细信息，请参阅在[Office 365 中的内容搜索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的 "在 SharePoint 多地理位置环境中搜索内容" 部分。
     
 - 在 SharePoint 和 OneDrive 中搜索内容时，**区域**参数会将搜索定向到电子数据展示管理器将在其中执行电子数据展示调查的主或卫星位置。 如果电子数据展示管理器在搜索权限筛选器中指定的区域之外搜索 SharePoint 和 OneDrive 网站，则不会返回任何搜索结果。 
     
-- 导出搜索结果时，会将来自所有内容位置（包括 Exchange、Skype for Business、SharePoint、OneDrive 和其他可以使用内容搜索工具搜索的 Office 365 服务）的内容上载到由**Region**参数指定的数据中心中的 Azure 存储位置。 这可帮助组织在合规性范围内不允许跨受控制的边框导出内容。 如果未在搜索权限筛选器中指定任何区域，则会将内容上传到组织的默认区域。 
+- 导出搜索结果时，会将来自所有内容位置（包括 Exchange、Skype for Business、SharePoint、OneDrive 和其他可以使用内容搜索工具搜索的服务）的内容上载到由**Region**参数指定的数据中心中的 Azure 存储位置。 这可帮助组织在合规性范围内不允许跨受控制的边框导出内容。 如果未在搜索权限筛选器中指定任何区域，则会将内容上传到组织的默认区域。 
     
 - 您可以通过运行以下命令来编辑现有搜索权限筛选器，以添加或更改区域：
 
@@ -249,7 +249,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
  **谁可以创建和管理搜索权限筛选器（使用 New-compliancesecurityfilter 和 New-compliancesecurityfilter cmdlet）？**
   
@@ -265,9 +265,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **电子数据展示管理器能否从两个单独的合规性边界中查看内容？**
   
-是。 为此，可以将用户添加到对这两个机构都可见的角色组。
+可以。 为此，可以将用户添加到对这两个机构都可见的角色组。
   
- **搜索权限筛选器是否适用于电子数据展示事例保留、Office 365 保留策略或 DLP？**
+ **搜索权限筛选器是否适用于电子数据展示事例保留、Microsoft 365 保留策略或 DLP？**
   
 否，目前没有。
   

@@ -16,22 +16,22 @@ search.appverid:
 - MOE150
 - MET150
 description: 标识敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）或不当/露骨语言时。虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小受限，且必须修改 XML 才能创建或编辑它们。借助关键字词典，可以更大规模地轻松管理关键字（每个词典最多支持 100,000 个关键字）。
-ms.openlocfilehash: 2ae63a9bf10ee43b3f761d8c60652c7c2a5e8b5f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 67263c854f764be42d97061632567ec1b25214b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141507"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636460"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字词典
 
-Office 365 中的数据丢失防护（DLP）可以识别、监视和保护您的敏感信息。识别敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）时，或者不恰当或明确的语言。虽然您可以在敏感信息类型中创建关键字列表，但关键字列表的大小受到限制，并需要修改 XML 以创建或编辑它们。关键字字典提供了更简单的关键字管理和更大的规模，支持每个字典最多100KB 的术语。
+数据丢失防护（DLP）可以识别、监视和保护您的敏感信息。识别敏感信息有时需要查找关键字，尤其是在标识通用内容（如与医疗保健相关的通信）时，或者不恰当或明确的语言。虽然您可以在敏感信息类型中创建关键字列表，但关键字列表的大小受到限制，并需要修改 XML 以创建或编辑它们。关键字字典提供了更简单的关键字管理和更大的规模，支持每个字典最多为100000个术语。
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>创建关键字词典的基本步骤
 
 词典可能有多个关键字来源，最常见的来源是服务或 PowerShell cmdlet 中导入的文件（如 .csv 或 .txt 列表）、你直接在 PowerShell cmdlet 中输入的列表或现有词典。创建关键字词典时，请遵循下面的相同核心步骤：
   
-1. 使用**安全 & 合规性中心**（[https://protection.office.com](https://protection.office.com)）或连接到**Office 365 安全&amp;合规中心 PowerShell**。
+1. 使用**安全 & 合规性中心**（[https://protection.office.com](https://protection.office.com)）或连接到**安全&amp;合规中心 PowerShell**。
     
 2. **定义或加载所需源中的关键字**。 向导和 cmdlet 都接受以逗号分隔的关键字列表来创建自定义关键字词典，因此此步骤将略有不同，具体取决于您的关键字来自何处。 加载后的关键字会在导入前编码并转换为字节数组。
     
@@ -67,7 +67,7 @@ Office 365 中的数据丢失防护（DLP）可以识别、监视和保护您的
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 通过文件创建关键字词典
 
-通常，当您需要创建大型词典时，将使用来自文件或从其他源导出的列表中的关键字。 在这种情况下，将在外部电子邮件中创建包含不恰当语言的列表的关键字词典。 您必须首先[连接到 Office 365 安全&amp;合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+通常，当您需要创建大型词典时，将使用来自文件或从其他源导出的列表中的关键字。 在这种情况下，将在外部电子邮件中创建包含不恰当语言的列表的关键字词典。 您必须先[连接到安全&amp;合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
 1. 将关键字复制到文本文件中，并确保每个关键字都单独占一行。
     

@@ -1,5 +1,5 @@
 ---
-title: 定义用于加密 Office 365 中的电子邮件的邮件流规则
+title: 定义用于加密电子邮件的邮件流规则
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则（传输规则），以使用 Office 365 邮件加密对邮件进行加密和解密。
-ms.openlocfilehash: 80bdd479ec09f0ecefd2758e2b8012a1a7351d6c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075869"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632977"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定义用于加密 Office 365 中的电子邮件的邮件流规则
+# <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定义用于加密电子邮件的邮件流规则
 
-作为 Office 365 全局管理员，您可以创建邮件流规则（也称为传输规则），以帮助保护您发送和接收的电子邮件。 您可以设置规则来加密任何传出的电子邮件，并删除来自组织内部或从组织发送的加密邮件的答复的加密邮件的加密。 您可以使用 Exchange 管理中心（EAC）或 Exchange Online PowerShell 创建这些规则。 除了整体的加密规则，你还可以针对最终用户选择启用或禁用单个邮件加密选项。
+作为全局管理员，您可以创建邮件流规则（也称为传输规则），以帮助保护您发送和接收的电子邮件。 您可以设置规则来加密任何传出的电子邮件，并删除来自组织内部或从组织发送的加密邮件的答复的加密邮件的加密。 您可以使用 Exchange 管理中心（EAC）或 Exchange Online PowerShell 创建这些规则。 除了整体的加密规则，你还可以针对最终用户选择启用或禁用单个邮件加密选项。
 
 无法对组织外部的发件人的入站邮件进行加密。
 
@@ -96,7 +96,7 @@ ms.locfileid: "42075869"
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>创建不带新功能的 Office 365 邮件加密的邮件流规则
 
-如果您尚未将 Office 365 组织移动到新的 OME 功能，请使用这些任务定义邮件流规则，以对组织的邮件进行加密。 Microsoft 建议您制定一个计划，尽快移动到新的 OME 功能，因为它对您的组织合理。 有关说明，请参阅[设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。
+如果尚未将组织移动到新的 OME 功能，请使用这些任务定义邮件流规则，以对组织的邮件进行加密。 Microsoft 建议您制定一个计划，尽快移动到新的 OME 功能，因为它对您的组织合理。 有关说明，请参阅[设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。
 
 ### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>使用 EAC 创建邮件流规则，以在不使用新的 OME 功能的情况下加密电子邮件
 
@@ -148,7 +148,7 @@ ms.locfileid: "42075869"
 
    - _SentTo_参数指定邮件收件人（由姓名、电子邮件地址、可分辨名称等）。 在此示例中，收件人由电子邮件地址 "DrToniRamos@hotmail.com" 标识。
 
-   - _SentToScope_参数指定邮件收件人的位置。 在此示例中，收件人的邮箱在 hotmail 中，而不是 Office 365 组织的一部分，因此使用此`NotInOrganization`值。
+   - _SentToScope_参数指定邮件收件人的位置。 在此示例中，收件人的邮箱在 hotmail 中，而不是组织的一部分，因此使用了`NotInOrganization`该值。
 
    有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
 
@@ -180,7 +180,7 @@ ms.locfileid: "42075869"
 
 2. 使用**new-transportrule** cmdlet 创建一个规则，并将_RemoveOME_参数设置为`$true`。
 
-   本示例将从所有发送到 Office 365 组织中的收件人的邮件中删除加密。
+   本示例将从发送给组织中的收件人的所有邮件中删除加密。
 
    ```powershell
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true

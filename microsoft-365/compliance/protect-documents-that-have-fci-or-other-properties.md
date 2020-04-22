@@ -16,25 +16,25 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 许多组织已拥有一个使用 Windows Server 文件分类基础结构 (FCI)、SharePoint 中的文档属性或由第三方系统应用的文档属性识别和分类敏感信息的流程。 如果您的组织就是这样，则可以在 Office 365 中创建一个 DLP 策略，来识别已由 Windows Server FCI 或其他系统应用到文档的属性，从而在带有特定 FCI 或其他属性值的 Office 文档上强制应用该 DLP 策略。
-ms.openlocfilehash: 32d40c110ca67e15c1be3443999c75c0e36d323e
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+description: 许多组织已拥有一个使用 Windows Server 文件分类基础结构 (FCI)、SharePoint 中的文档属性或由第三方系统应用的文档属性识别和分类敏感信息的流程。 如果您对您的组织进行了描述，则可以创建一个 DLP 策略来识别 Windows Server FCI 或其他系统已应用于文档的属性，以便可以在具有特定 FCI 或其他属性值的 Office 文档上强制执行 DLP 策略。
+ms.openlocfilehash: e2b64412a6f35dc3f29fe538a849f84e764af156
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193490"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632197"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>创建 DLP 策略来保护具有 FCI 或其他属性的文档
 
-在 Office 365 中，您可以使用数据丢失防护 (DLP) 策略来识别、监视和保护敏感信息。许多组织已拥有一个使用 Windows Server 文件分类基础结构 (FCI)、SharePoint 中的文档属性或由第三方系统应用的文档属性识别和分类敏感信息的流程。如果您的组织就是这样，则可以在 Office 365 中创建一个 DLP 策略，来识别已由 Windows Server FCI 或其他系统应用到文档的属性，从而在带有特定 FCI 或其他属性值的 Office 文档上强制应用该 DLP 策略。
+在 Microsoft 365 中，可以使用数据丢失防护（DLP）策略来识别、监视和保护敏感信息。 许多组织已拥有一个使用 Windows Server 文件分类基础结构 (FCI)、SharePoint 中的文档属性或由第三方系统应用的文档属性识别和分类敏感信息的流程。 如果您对您的组织进行了描述，则可以创建一个 DLP 策略来识别 Windows Server FCI 或其他系统已应用于文档的属性，以便可以在具有特定 FCI 或其他属性值的 Office 文档上强制执行 DLP 策略。
   
 ![显示 Office 365 和外部分类系统的图表](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
-例如，您的组织可能会使用 Windows Server FCI 来识别包含个人身份信息 (PII) 的文档（如社会保险号），然后通过基于文档中找到的 PII 的类型和出现次数将“个人身份信息”**** 属性设置为“高”****、“中等”****、“低”****、“公开”**** 或“非 PII”**** 来对文档进行分类。 在 Office 365 中，您可以创建 DLP 策略，来标识将该属性设置为特定值（如“高”**** 和“中等”****）的文档，然后对这些文件执行操作，如阻止访问。 如果将属性设置为“低”****，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 通过这种方式，Office 365 中的 DLP 与 Windows Server FCI 集成，并可帮助保护从基于 Windows Server 的文件服务器上传或共享到 Office 365 的 Office 文档。
+例如，您的组织可能会使用 Windows Server FCI 来识别包含个人身份信息 (PII) 的文档（如社会保险号），然后通过基于文档中找到的 PII 的类型和出现次数将“个人身份信息”**** 属性设置为“高”****、“中等”****、“低”****、“公开”**** 或“非 PII”**** 来对文档进行分类。 在 Microsoft 365 中，可以创建一个 DLP 策略，用于标识将该属性设置为特定值（如 "**高**" 和 "**中**"）的文档，然后执行诸如阻止对这些文件的访问等操作。 如果将属性设置为“低”****，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 通过这种方式，DLP 与 Windows Server FCI 集成，并可帮助保护从基于 Windows Server 的文件服务器上载或共享到 Microsoft 365 的 Office 文档。
   
 DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属性，只要该属性具有 SharePoint 搜索的相应托管属性。例如，SharePoint 网站集可能使用名为“行程报告”**** 的内容类型，包含名为“客户”**** 的必填字段。只要有人创建行程报告，就必须输入客户名称。此属性名称/值对还可在 DLP 策略中使用 — 例如，当“客户”**** 字段包含“Contoso”**** 时，您希望有一个规则可以阻止外部用户访问此文档。
   
-请注意，如果您想要将 DLP 策略应用于具有特定 Office 365 标签的内容，则不应遵循此处的步骤。 而是了解如何[使用保留标签作为 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
+请注意，如果要将 DLP 策略应用于具有特定 Microsoft 365 标签的内容，则不应遵循此处的步骤。 而是了解如何[使用保留标签作为 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
   
 ## <a name="before-you-create-the-dlp-policy"></a>在创建 DLP 策略之前
 
@@ -42,13 +42,13 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
   
 示例
   
-这很重要，因为 Office 365 中的 DLP 使用搜索爬网程序来识别网站上的敏感信息，并对其进行分类，然后将该敏感信息存储在搜索索引的一个安全部分。当您将文档上载到 Office 365 时，SharePoint 会自动创建基于文档属性的已爬网属性。但是，要在 DLP 策略中使用 FCI 或其他属性，该已爬网属性需要映射到托管属性，以便将包含该属性的内容保留在索引中。
+这一点很重要，因为 DLP 使用搜索爬网程序来标识和分类网站上的敏感信息，然后将这些敏感信息存储在搜索索引的安全部分中。 当您将文档上载到 Office 365 时，SharePoint 会自动创建基于文档属性的已爬网属性。 但是，要在 DLP 策略中使用 FCI 或其他属性，该已爬网属性需要映射到托管属性，以便将包含该属性的内容保留在索引中。
   
 有关搜索和托管属性的详细信息，请参阅[在 SharePoint Online 中管理搜索架构](https://go.microsoft.com/fwlink/p/?LinkID=627454)。
   
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>步骤 1：将包含所需属性的文档上载到 Office 365
 
-首先需要上载包含要在您的 DLP 策略中引用的属性的文档。 Office 365 将检测此属性，并从该属性自动创建已爬网属性。 在下一步中，您将创建托管属性，然后将托管属性映射到此已爬网属性。
+首先需要上载包含要在您的 DLP 策略中引用的属性的文档。 Microsoft 365 将检测属性并自动从其创建已爬网属性。 在下一步中，您将创建托管属性，然后将托管属性映射到此已爬网属性。
   
 ### <a name="step-2-create-a-managed-property"></a>步骤 2：创建托管属性
 
@@ -94,9 +94,9 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
 
 请注意，条件**文档属性包含这些值中的任何一个**暂时在安全&amp;合规性中心的 UI 中不可用，但你仍可以使用 PowerShell 使用此条件。 您`New\Set\Get-DlpCompliancePolicy`可以使用 cmdlet 来使用 DLP 策略，并`New\Set\Get-DlpComplianceRule`将 cmdlet 与`ContentPropertyContainsWords`参数一起使用，以添加条件**文档属性包含这些值中的任何一个**。
   
-有关这些 cmdlet 的详细信息，请参阅[Office 365 &amp;安全合规中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)。
+有关这些 cmdlet 的详细信息，请[参阅&amp;安全合规性中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)。
   
-1. [使用远程 PowerShell 连接到 Office 365 安全 &amp; 合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 PowerShell 连接&amp;到安全合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 使用`New-DlpCompliancePolicy`创建策略。
 

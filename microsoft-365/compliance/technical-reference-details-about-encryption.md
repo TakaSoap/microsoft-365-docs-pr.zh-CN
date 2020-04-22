@@ -1,5 +1,5 @@
 ---
-title: 有关 Office 365 加密的技术参考详情
+title: 有关加密的技术参考详细信息
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 查看有关 Office 365 中的加密技术的详细信息。
-ms.openlocfilehash: afd02ba6480e692bf16bf6dd94f192a5889590ee
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: cdfd3765fb7bf15835d200a539241d928225d22e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610579"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637206"
 ---
-# <a name="technical-reference-details-about-encryption-in-office-365"></a>有关 Office 365 加密的技术参考详情
+# <a name="technical-reference-details-about-encryption"></a>有关加密的技术参考详细信息
 
 请参阅本文，了解用于[Office 365 中用于加密](encryption.md)的证书、技术和 TLS 密码套件。 此外，本文还提供有关计划的 deprecations 的详细信息。
   

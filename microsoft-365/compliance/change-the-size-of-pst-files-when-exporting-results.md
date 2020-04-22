@@ -13,25 +13,25 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 您可以在导出电子数据展示搜索结果时更改下载到您的计算机上的 PST 文件的默认大小。
-ms.openlocfilehash: 9deb90e688617981499bee286b95a0442fa1a1b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5fde9bbb37f6e22c49049c892a1b69b07d15bef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595929"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636320"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>导出电子数据展示搜索结果时更改 PST 文件的大小
 
-使用 Office 365 电子数据展示导出工具从不同的 Microsoft 电子数据展示工具导出电子数据展示搜索的电子邮件结果时，可以导出的 PST 文件的默认大小为 10 GB。 如果要更改此默认大小，可以在用于导出搜索结果的计算机上编辑 Windows 注册表。 执行此操作的一个原因是，PST 文件可以放置在可移动媒体（如 DVD、光盘或 USB 驱动器）上。 
+使用电子数据展示导出工具导出来自不同 Microsoft 电子数据展示工具的电子数据展示搜索的电子数据结果时，可以导出的 PST 文件的默认大小为 10 GB。 如果要更改此默认大小，可以在用于导出搜索结果的计算机上编辑 Windows 注册表。 执行此操作的一个原因是，PST 文件可以放置在可移动媒体（如 DVD、光盘或 USB 驱动器）上。 
   
 > [!NOTE]
-> Office 365 电子数据展示导出工具用于在安全与合规中心中使用内容搜索工具、Exchange Online 中的就地电子数据展示和 SharePoint Online 中的电子数据展示中心来导出搜索结果。
+> 使用电子数据展示导出工具在安全 & 合规性中心、Exchange Online 中的就地电子数据展示和 SharePoint Online 中的电子数据展示中心使用内容搜索工具时导出搜索结果。
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>创建注册表设置以在导出电子数据展示搜索结果时更改 PST 文件的大小
 
 在用于导出电子数据展示搜索结果的计算机上执行以下过程。
   
-1. 如果 Office 365 电子数据展示导出工具处于打开状态，则将其关闭。 
+1. 如果电子数据展示导出工具处于打开状态，则将其关闭。 
     
 2. 使用文件名后缀 .reg 将以下文本保存到窗口注册表文件;例如，PstExportSize。 
     
@@ -74,11 +74,11 @@ ms.locfileid: "41595929"
   
  **我必须在哪台计算机上执行此操作？**
   
-您需要更改在其上运行 Office 365 电子数据展示导出工具的任何本地计算机上的注册表设置。
+您需要更改在其上运行电子数据展示导出工具的任何本地计算机上的注册表设置。
   
  **更改此设置后，必须重新启动计算机吗？**
   
-否，无需重新启动计算机。 但是，如果 Office 365 电子数据展示导出工具正在运行，则必须将其关闭，并在更改此设置后重新启动它。
+否，无需重新启动计算机。 但是，如果电子数据展示导出工具正在运行，则必须将其关闭，并在更改此设置后重新启动它。
   
  **是否已编辑现有注册表项或是否创建新的密钥？**
   

@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 使用 Microsoft 365 合规性中心中的电子数据展示案例来管理您的组织的法律调查。 如果你拥有 E5 订阅，则可以使用高级电子数据展示的文本分析、机器学习和预测编码功能进一步分析事例数据。
-ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097188"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635902"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>在 Microsoft 365 中管理法律调查
 
 组织有许多理由来响应与组织中的特定执行官或其他员工有关的法律案件。 这可能包括快速查找和保留电子邮件、文档、即时消息对话以及人员在日常工作任务中使用的其他内容位置中特定于调查的信息。 您可以使用安全与合规中心中的电子数据展示案例工具执行这些和许多其他类似活动。
   
-**想要了解 Microsoft 如何管理其电子数据展示调查？** 下面是可下载的[技术白皮书](https://go.microsoft.com/fwlink/?linkid=852161)，可说明我们如何使用相同的 Office 365 搜索和调查工具来管理我们的内部电子数据展示工作流。
+**想要了解 Microsoft 如何管理其电子数据展示调查？** 下面是可下载的[技术白皮书](https://go.microsoft.com/fwlink/?linkid=852161)，可说明我们如何使用相同的搜索和调查工具来管理我们的内部电子数据展示工作流。
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>使用电子数据展示事例管理法律调查
 

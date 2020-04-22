@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对信息障碍进行故障排除的指导。
-ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: c57f9a14e3089f52ad0eab0a0634d7d58f74e6cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621346"
 ---
 # <a name="troubleshooting-information-barriers"></a>信息屏障疑难解答
 
@@ -27,7 +27,7 @@ ms.locfileid: "42692659"
 如果用户在发生信息障碍后遇到意外问题，则可以采取一些步骤来解决这些问题。 将本文用作指南。
 
 > [!IMPORTANT]
-> 若要执行本文中所述的任务，必须为您分配适当的角色，如以下某项：<br/>-Microsoft 365 企业全局管理员<br/>-Office 365 全局管理员<br/>-合规性管理员<br/>-IB 合规性管理（这是一个新角色！）<p>若要了解有关信息障碍的先决条件方面的详细信息，请参阅[先决条件（适用于信息屏障策略）](information-barriers-policies.md#prerequisites)。<p>请确保[连接到 Office 365 安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+> 若要执行本文中所述的任务，必须为您分配适当的角色，如以下某项：<br/>-Microsoft 365 企业全局管理员<br/>-全局管理员<br/>-合规性管理员<br/>-IB 合规性管理（这是一个新角色！）<p>若要了解有关信息障碍的先决条件方面的详细信息，请参阅[先决条件（适用于信息屏障策略）](information-barriers-policies.md#prerequisites)。<p>请确保[连接到安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>问题：意外阻止用户与 Microsoft 团队中的其他人通信 
 
@@ -65,7 +65,7 @@ ms.locfileid: "42692659"
     ```
     在这种情况下，我们可以看到信息障碍策略会影响销售和研究领域中的人员。 在这种情况下，将阻止 Sales 中的人员与 "调查" 中的人员进行通信。 
     
-    如果看上去正确，则信息障碍按预期工作。 如果不是，请继续执行下一步。
+    如果看上去正确，则信息障碍按预期工作。 如果没有，继续执行下一步。
 
 4. 请确保正确定义了段。 为此，请使用`Get-OrganizationSegment` cmdlet，并查看结果列表。 
 

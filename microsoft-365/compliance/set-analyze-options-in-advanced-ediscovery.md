@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中设置分析选项
+title: 在高级电子数据展示中设置分析选项
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
-description: '查看为 Office 365 高级电子数据展示中的分析过程设置选项的步骤，包括临近重复项、电子邮件线索和主题。  '
-ms.openlocfilehash: 8897099d7531b48f7c6618c106eeb6f051dac546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '查看在高级电子数据展示中设置分析过程的选项的步骤，包括临近的重复、电子邮件线索和主题。  '
+ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557782"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631259"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>在高级电子数据展示中设置分析选项（经典）
 

@@ -13,16 +13,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 在运行搜索之前，请检查关键字查询的内容搜索是否存在错误和拼写错误（如不受支持的字符和小写布尔运算符）。 如果发现错误，我们将建议已修改的查询。
-ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17d9c7a2480b80fa45fd4bb296308a4d4be79377
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078902"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636310"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>检查内容搜索查询中是否有错误
 
-当您创建或编辑内容搜索时，可以使用 Office 365 检查您对不受支持的字符和小写 Boolean 运算符的查询。 如何操作？ 只需在内容搜索的 "查询" 页上单击 "**检查查询以查找打字错误**"。 
+当您创建或编辑内容搜索时，可以使用 Microsoft 365 检查您对不受支持的字符和小写 Boolean 运算符的查询。 如何操作？ 只需在内容搜索的 "查询" 页上单击 "**检查查询以查找打字错误**"。 
   
 ![单击 "检查查询是否输入拼写" 以检查不受支持的字符的搜索查询](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   

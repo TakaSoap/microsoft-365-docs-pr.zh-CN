@@ -19,25 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: e2880679c8520480aeffd640a26730defc298490
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604189"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632367"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中配置监督策略
 
 >[!IMPORTANT]
->本主题适用于在 Office 365 订阅中配置监督策略。 如果要为 Microsoft 365 订阅配置通信合规性，请参阅[在 microsoft 365 中配置通信合规性](communication-compliance-configure.md)。
+>本主题适用于在 Microsoft 365 订阅中配置监督策略。 如果要为 Microsoft 365 订阅配置通信合规性，请参阅[在 microsoft 365 中配置通信合规性](communication-compliance-configure.md)。
 
 使用监督策略来捕获由内部或外部审阅者进行检查的员工通信。 有关监察策略如何帮助您监视组织中的通信的详细信息，请参阅[Office 365 中的监察策略](supervision-policies.md)。
 
 >[!NOTE]
->监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中，或包含在 Microsoft 365 E5 中订购.
+>监督策略监视的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或者包含在 Office 365 企业版 E5 订阅中，或者包含在 Microsoft 365 E5 订阅中。
 >如果你没有现有的企业版 E5 计划，并且想要尝试监督，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
   
-按照以下步骤在 Office 365 组织中设置和使用监督：
+按照以下步骤在组织中设置和使用监督：
   
 - **步骤1（可选）**：[为监督设置组](#step-1-set-up-groups-for-supervision-optional)
 
@@ -45,7 +45,7 @@ ms.locfileid: "42604189"
 
 - **步骤2（必需）**：[让监督在你的组织中可用](#step-2-make-supervision-available-in-your-organization-required)
 
-    将自己添加到监管审核角色组，以便您可以设置策略。 分配此角色的任何人都可以访问 Office 365 安全与合规中心中的**监督**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
+    将自己添加到监管审核角色组，以便您可以设置策略。 分配此角色的任何人都可以访问安全 & 合规性中心内的**监督**页面。 如果 reviewable 电子邮件托管在 Exchange Online 中，则每个审阅者都必须具有[对 Exchange online 的远程 PowerShell 访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
 - **步骤3（可选）**：[创建自定义敏感信息类型和自定义关键字词典](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -53,7 +53,7 @@ ms.locfileid: "42604189"
 
 - **步骤4（必需）**：[设置监督策略](#step-4-set-up-a-supervision-policy-required)
 
-    您可以在 Office 365 安全与合规中心中创建监督策略。 这些策略定义哪些通信将在组织中进行审核，并指定执行审阅的用户。 通信包括电子邮件和 Microsoft 团队通信，以及第三方平台通信（如 Facebook、Twitter 等）。 在 Microsoft 365 订阅的通信监督中不支持在 Office 365 组织中创建的监督策略。
+    在安全 & 合规性中心创建监督策略。 这些策略定义哪些通信将在组织中进行审核，并指定执行审阅的用户。 通信包括电子邮件和 Microsoft 团队通信，以及第三方平台通信（如 Facebook、Twitter 等）。 在 Microsoft 365 订阅的通信监督中不支持在组织中创建的监督策略。
 
 - **步骤5（可选）**：[测试通信监督策略](#step-5-test-your-supervision-policy-optional)
 
@@ -67,10 +67,10 @@ ms.locfileid: "42604189"
 
 | **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
-|受监督用户 <br> 非监督用户 | 通讯组 <br> Office 365 组 | 动态通讯组 |
+|受监督用户 <br> 非监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 |
 | Reviewers | 启用邮件的安全组  | 通讯组 <br> 动态通讯组 |
   
-当您为受监督的用户选择 Office 365 组时，该策略将监视共享 Office 365 邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
+当您为受监督的用户选择 Microsoft 365 组时，该策略将监视共享邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
 
 若要在大型企业组织中管理受监督的用户，您可能需要监视跨大型组的所有用户。 您可以使用 PowerShell 为分配的组配置全局监督策略的通讯组。 这使您可以使用单个策略监视数千个用户，并在新员工加入您的组织时保持监督策略的更新。
 
@@ -105,19 +105,19 @@ ms.locfileid: "42604189"
 
 - [创建和管理通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [管理启用邮件的安全组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
-- [Office 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Microsoft 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-2-make-supervision-available-in-your-organization-required"></a>步骤2：让监督在你的组织中可用（必需）
 
-若要在 Office 365 安全与合规中心中将**监察**功能作为菜单选项提供，您必须分配有监管审核管理员角色。
+若要在安全 & 合规性中心中将**监察**功能作为菜单选项提供，您必须分配有监管审核管理员角色。
   
 若要执行此操作，您可以将自己添加为监管审核角色组的成员，也可以创建角色组。
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>将成员添加到监管审核角色组
 
-1. 在 Office [https://protection.office.com](https://protection.office.com) 365 组织中使用管理员帐户的凭据进行登录。
+1. 在组织[https://protection.office.com](https://protection.office.com)中使用管理员帐户的凭据进行登录。
 
-2. 在 "Office 365 安全与合规中心" 中，转到 "**权限**"。
+2. 在安全 & 合规性中心中，转到 "**权限**"。
 
 3. 选择 "**监管审核**" 角色组，然后单击 "编辑" 图标。
 
@@ -125,9 +125,9 @@ ms.locfileid: "42604189"
 
 ### <a name="create-a-new-role-group"></a>创建新的角色组
 
-1. 在 Office [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 组织中使用管理员帐户的凭据进行登录。
+1. 在组织[https://protection.office.com/permissions](https://protection.office.com/permissions)中使用管理员帐户的凭据进行登录。
 
-2. 在 "Office 365 安全与合规中心" 中，转到 "**权限**"，**+** 然后单击 "添加" （）。
+2. 在安全 & 合规性中心中，转到 "**权限**"，然后**+** 单击 "添加" （）。
 
 3. 在 "**角色**" 部分中，单击**+**"添加" （），然后向下滚动到 "**监察审核管理员**"。 将此角色添加到角色组。
 
@@ -149,7 +149,7 @@ ms.locfileid: "42604189"
 
 ### <a name="create-custom-sensitive-information-types"></a>创建自定义敏感信息类型
 
-1. 创建新的敏感信息类型，并将您的自定义词典添加到 Office 365 安全 & 合规性中心中。 导航到 "**分类** \> " "**敏感信息**类型"，然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作：
+1. 创建新的敏感信息类型，并将您的自定义词典添加到安全 & 合规性中心。 导航到 "**分类** \> " "**敏感信息**类型"，然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作：
 
     - 定义敏感信息类型的名称和说明
     - 定义邻近度、置信度和主要模式元素
@@ -162,9 +162,9 @@ ms.locfileid: "42604189"
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>步骤4：设置监督策略（必需）
   
-1. 在 Office [https://protection.office.com](https://protection.office.com) 365 组织中使用管理员帐户的凭据进行登录。
+1. 在组织[https://protection.office.com](https://protection.office.com)中使用管理员帐户的凭据进行登录。
 
-2. 在 "Office 365 安全与合规中心" 中，选择 "**监督**"。
+2. 在安全 & 合规性中心中，选择 "**监督**"。
   
 3. 选择 "**创建**"，然后按照向导设置策略配置。 使用该向导，您将：
 
@@ -187,5 +187,5 @@ ms.locfileid: "42604189"
     >[!NOTE]
     >已定义策略的电子邮件将在接近实时的情况中进行处理，并且可以在配置策略后立即进行测试。 Microsoft 团队中的聊天可能需要长达24小时才能在策略中完全处理。 
 
-3. 以通信监督策略中指定的审阅者的形式登录到 Office 365 租户。 导航到 "**监控** > "*您的自定义策略* > **打开**以查看该策略的报告。
+3. 以通信监督策略中指定的审阅者的形式登录 Microsoft 365。 导航到 "**监控** > "*您的自定义策略* > **打开**以查看该策略的报告。
 

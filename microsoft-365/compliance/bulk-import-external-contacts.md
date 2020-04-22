@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解管理员如何使用 Exchange Online PowerShell 和 CSV 文件将外部联系人批量导入到全局地址列表。
-ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4d0b1a826583a032fd27c216367e99a6b7f8b371
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078949"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636340"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>将外部联系人批量导入到 Exchange Online
 
@@ -71,7 +71,7 @@ ms.locfileid: "42078949"
 
 下一步是使用您在步骤1和 PowerShell 中创建的 CSV 文件以批量将 CSV 文件中列出的外部联系人导入到 Exchange Online。 
   
-1.  将 PowerShell 连接到您的 Exchange Online 组织。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。 在连接到 Exchange Online PowerShell 时，请务必使用 Office 365 全局管理员帐户的用户名和密码。 
+1.  将 PowerShell 连接到您的 Exchange Online 组织。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554)。 在连接到 Exchange Online PowerShell 时，请务必使用全局管理员帐户的用户名和密码。 
     
 2. 将 PowerShell 连接到 Exchange Online 后，请转到在步骤1中保存 CSV 文件的桌面文件夹;例如`C:\Users\Administrator\desktop`。
     

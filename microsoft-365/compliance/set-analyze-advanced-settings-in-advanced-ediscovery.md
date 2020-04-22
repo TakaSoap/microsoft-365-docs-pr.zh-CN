@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 高级电子数据展示中设置分析高级设置
+title: 在高级电子数据展示中设置分析高级设置
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: '了解如何为 Office 365 高级电子数据展示中的分析过程配置高级设置，包括接近重复的电子邮件线程和主题。 '
-ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解如何为高级电子数据展示中的分析过程配置高级设置，包括临近的重复、电子邮件线索和主题。 '
+ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557792"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631269"
 ---
-# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 高级电子数据展示中设置分析高级设置
+# <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>在高级电子数据展示中设置分析高级设置
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 

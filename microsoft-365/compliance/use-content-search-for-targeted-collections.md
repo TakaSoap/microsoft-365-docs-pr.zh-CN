@@ -1,5 +1,5 @@
 ---
-title: 将 Office 365 中的内容搜索用于目标集合
+title: 使用内容搜索进行目标收集
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,21 +16,21 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在安全 & 合规中心中使用内容搜索来执行目标集合。 目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。 使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
-ms.openlocfilehash: b8afe9e65aa65c697d9c5cefbeaf89638c1782d4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e6de817e7ec324e6aa80ef596340906c2f86d126
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080793"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633377"
 ---
-# <a name="use-content-search-in-office-365-for-targeted-collections"></a>将 Office 365 中的内容搜索用于目标集合
+# <a name="use-content-search-for-targeted-collections"></a>使用内容搜索进行目标收集
 
-Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接提供用于搜索 Exchange 邮箱或 SharePoint 和 OneDrive for business 网站中特定文件夹的直接方法。 但是，通过为实际搜索查询语法中的网站的电子邮件或路径（DocumentLink）属性指定文件夹 ID 属性，可以搜索特定文件夹（称为*目标集合*）。 当您确信项目响应的情况或特权项目位于特定邮箱或站点文件夹中时，使用内容搜索来执行目标集合非常有用。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID 或 SharePoint 和 OneDrive for Business 网站上的文件夹的路径（DocumentLink）。 然后，您可以在搜索查询中使用文件夹 ID 或路径返回文件夹中的项目。
+安全&amp;合规中心中的内容搜索功能不能直接在 UI 中搜索特定文件夹在 Exchange 邮箱或 SharePoint 和 OneDrive for business 网站中的直接方法。 但是，通过为实际搜索查询语法中的网站的电子邮件或路径（DocumentLink）属性指定文件夹 ID 属性，可以搜索特定文件夹（称为*目标集合*）。 当您确信项目响应的情况或特权项目位于特定邮箱或站点文件夹中时，使用内容搜索来执行目标集合非常有用。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID 或 SharePoint 和 OneDrive for Business 网站上的文件夹的路径（DocumentLink）。 然后，您可以在搜索查询中使用文件夹 ID 或路径返回文件夹中的项目。
 
 > [!NOTE]
 > 若要返回位于 SharePoint 或 OneDrive for business 网站中的文件夹中的内容，本主题中的脚本使用 DocumentLink 托管属性而不是 Path 属性。 DocumentLink 属性比 Path 属性更可靠，因为它将返回文件夹中的所有内容，而 Path 属性将不会返回某些媒体文件。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是安全&amp;合规中心中的电子数据展示管理器角色组的成员，才能在第1步中运行该脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -68,22 +68,22 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
     
   ```powershell
   #########################################################################################################
-  # This PowerShell script will prompt you for:                             #
+  # This PowerShell script will prompt you for:                                #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.           #
-  # The script will then:                                           #
-  #    * If an email address is supplied: list the folders for the target mailbox.          #
+  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+  # The script will then:                                            #
+  #    * If an email address is supplied: list the folders for the target mailbox.            #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
-  #    * for the site.                                                                                  #
-  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
-  #      appended to the folder ID or documentlink to use in a Content Search.              #
-  # Notes:                                              #
-  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
-  #      the current folder and all sub-folders are searched.                       #
-  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder #
+  #    * for the site.                                                                                    #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
+  #      appended to the folder ID or documentlink to use in a Content Search.                #
+  # Notes:                                                #
+  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
+  #      the current folder and all sub-folders are searched.                        #
+  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
   #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
-  #      each sub-folder that you want to search.                               #
-  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.       #
+  #      each sub-folder that you want to search.                                #
+  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
@@ -219,7 +219,7 @@ Office 365 安全&amp;合规中心中的内容搜索功能不会在 UI 中直接
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用在步骤1中运行脚本时使用的帐户和凭据登录 Office 365。
+2. 使用您在步骤1中用于运行脚本的帐户和凭据登录。
     
 3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索** \> **内容搜索**"，然后单击 "**新建** ![添加图标](../media/O365-MDM-CreatePolicy-AddIcon.gif)"。
     

@@ -18,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 向欧盟公民（称为 "数据主体"）授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 DSR 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: 35ea4230680f567a702f8f2368f80986c473039f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7fc786f1e330b03884ef279e210c8f8ef22e9793
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072055"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635922"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
 
@@ -33,11 +33,11 @@ EU 常规数据保护条例（GDPR）是关于保护和启用欧盟（EU）内�
   
 - 组织中的任何用户邮箱。 这包括 Microsoft 团队中的 Skype for Business 对话和一对一聊天
     
-- 与 Microsoft 团队中的 Office 365 组和所有团队邮箱关联的所有邮箱
+- Microsoft 团队中与 Microsoft 365 组和所有团队邮箱相关联的所有邮箱
     
 - 组织中的所有 SharePoint Online 网站和 OneDrive for Business 帐户
     
-- 组织中的所有团队网站和 Office 365 组网站
+- 组织中的所有团队网站和 Microsoft 365 组网站
     
 - Exchange Online 中的所有公用文件夹
     
@@ -76,18 +76,18 @@ EU 常规数据保护条例（GDPR）是关于保护和启用欧盟（EU）内�
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步骤 1：向潜在事例成员分配电子数据展示权限
 
-默认情况下，Office 365 全局管理员可以在安全 & 合规性中心中访问 DSR 机箱工具。 按照设计，其他用户（如数据隐私官、人力资源经理或其他参与 DSR 调查的人员）无法访问 DSR 机箱工具，必须为其分配适当的权限才能访问该工具。 执行此操作最简单的方法是转到 Security & 合规性中心中的**权限**页面，并将用户添加到电子数据展示管理器角色组。 您还必须分配这些权限，以便将其添加为您在步骤2中创建的 DSR 事例的成员。 
+默认情况下，全局管理员可以访问安全 & 合规性中心中的 DSR 机箱工具。 按照设计，其他用户（如数据隐私官、人力资源经理或其他参与 DSR 调查的人员）无法访问 DSR 机箱工具，必须为其分配适当的权限才能访问该工具。 执行此操作最简单的方法是转到 Security & 合规性中心中的**权限**页面，并将用户添加到电子数据展示管理器角色组。 您还必须分配这些权限，以便将其添加为您在步骤2中创建的 DSR 事例的成员。 
   
 有关分步说明，请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
 > [!NOTE]
-> 默认情况下，Office 365 全局管理员（或安全 & 合规中心中的组织管理角色组的其他成员不具有导出内容搜索结果所需的权限（请参阅本文中的步骤4）。 若要解决此情况，管理员可以将自己添加为电子数据展示管理器角色组的成员。 
+> 默认情况下，全局管理员（或安全 & 合规中心中的组织管理角色组的其他成员不具有导出内容搜索结果所需的权限（请参阅本文中的步骤4）。 若要解决此情况，管理员可以将自己添加为电子数据展示管理器角色组的成员。 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>步骤2：创建 DSR 事例并添加成员
 
 下一步是创建 DSR 事例。 创建事例时，可以选择启动内置搜索，也可以在不启动搜索的情况下创建事例。 下面的过程指示创建用例而不启动搜索，然后向您演示如何向事例中添加成员。
   
-1. 请转[https://protection.office.com](https://protection.office.com)到使用你的工作或学校帐户登录 Office 365。 
+1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。 
     
 2. 在安全 & 合规性中心中，单击 "**数据隐私** \> **数据主体请求**"， ![然后单击](../media/ITPro-EAC-AddIcon.gif) "添加图标" "**新建 DSR 事例**"。
     
@@ -170,7 +170,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 当您导出搜索结果时，可以在 PST 文件中或单个邮件中下载邮箱项目。 当您导出 SharePoint 和 OneDrive 帐户中的内容时，将导出本机 Office 文档和其他文档的副本。 包含有关每个导出的项目的信息的结果文件包含在搜索结果中。 有关导出的更多详细信息，请参阅[导出内容搜索结果](export-search-results.md)。
   
 > [!NOTE]
-> 默认情况下，Office 365 全局管理员（或安全 & 合规中心中的组织管理角色组的其他成员）没有导出内容搜索结果所需的权限。 若要解决此情况，管理员可以将自己添加为电子数据展示管理器角色组的成员。 
+> 默认情况下，全局管理员（或安全 & 合规中心中的组织管理角色组的其他成员）没有导出内容搜索结果所需的权限。 若要解决此情况，管理员可以将自己添加为电子数据展示管理器角色组的成员。 
   
 用于导出数据的计算机必须满足以下系统要求：
   
@@ -203,7 +203,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
     a. 在 "**输出选项**" 下，选择第一个选项（**所有项目（不包括具有不可识别格式的项目），加密或未根据其他原因对其编制索引，** 以仅导出已编制索引的项目。 您不希望从内置搜索中导出部分索引项目的原因是，其他用户的部分索引项目也将被导出。 若要仅导出数据主体的部分已编制索引的项目，我们建议您创建单独的搜索。 有关详细信息，请参阅 "使用 DSR case 工具的详细信息" 部分中的 "[导出部分索引的项目](#exporting-partially-indexed-items)" 部分。
     
-    b. 在 "将**Exchange 内容导出为**" 下，选择第三个选项（**包含单个文件夹中的所有邮件的一个 PST 文件**）。 由于某些结果可能针对的是其他用户的邮箱中的项目，因此此选项仅在单个文件夹中列出项目，而不指示实际邮箱，并且是在按下一项目中的建议对结果进行重复复制时使用的最佳选项. 此选项还允许数据主体按时间顺序查看项目（按发送日期对项目进行排序），而无需导航到每个项目的原始邮箱文件夹结构。
+    b. 在 "将**Exchange 内容导出为**" 下，选择第三个选项（**包含单个文件夹中的所有邮件的一个 PST 文件**）。 由于某些结果可能针对的是其他用户的邮箱中的项目，因此此选项仅在单个文件夹中列出项目，而不指示实际邮箱，并且是在下一项目中按推荐方式对结果进行重复复制时使用的最佳选项。 此选项还允许数据主体按时间顺序查看项目（按发送日期对项目进行排序），而无需导航到每个项目的原始邮箱文件夹结构。
     
     c. 选择 "**启用重复数据**删除选项" 以排除重复的电子邮件。 我们建议您选择此选项，因为内置搜索将搜索组织中的所有邮箱。 因此，如果在搜索的邮箱中找到同一邮件的多个副本，则此选项意味着将只导出邮件的一个副本。 此选项一起将一个 PST 文件中的邮件导出到一个文件夹中，从而导致用户体验到 DSR 导出请求的最佳用户体验。 "结果 .csv 导出报告" 会列出找到重复邮件的所有位置。
     
@@ -221,7 +221,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 9. 单击!["导出弹出页面](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 顶部的 "导出搜索结果图标**下载结果**"。 
     
-10. 在页面底部的弹出窗口中，单击 "**打开**" 以打开**Microsoft Office 365 电子数据展示导出工具**。 首次下载搜索结果时，将会安装**电子数据展示导出工具**。 
+10. 在页面底部的弹出窗口中，单击 "**打开**" 以打开 "**电子数据展示导出工具**"。 首次下载搜索结果时，将会安装**电子数据展示导出工具**。 
     
 11. 在 "**电子数据展示导出工具**" 中，将您在步骤8中复制的导出密钥粘贴在相应的框中。
     
@@ -285,7 +285,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
 [导出部分索引的项目](#exporting-partially-indexed-items)
 
-[从 Microsoft 团队和 Office 365 组中搜索和导出数据](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+[从 Microsoft 团队和 Microsoft 365 组中搜索和导出数据](#searching-and-exporting-data-from-microsoft-teams-and-microsoft-365-groups)
 
 [搜索 Exchange 公用文件夹](#searching-exchange-public-folders)
   
@@ -352,7 +352,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 8. 单击!["导出弹出页面](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 顶部的 "导出搜索结果图标**下载结果**"。 
     
-9. 在页面底部的弹出窗口中，单击 "**打开**" 以打开**Microsoft Office 365 电子数据展示导出工具**。 首次下载搜索结果时，将会安装**电子数据展示导出工具**。 
+9. 在页面底部的弹出窗口中，单击 "**打开**" 以打开 "**电子数据展示导出工具**"。 首次下载搜索结果时，将会安装**电子数据展示导出工具**。 
     
 10. 在“**电子数据展示导出工具**”中，将在步骤 7 中复制的导出密钥粘贴在相应的框中。
     
@@ -395,15 +395,15 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
 - [导出部分索引的项目](export-search-results.md#exporting-partially-indexed-items)
     
-### <a name="searching-and-exporting-data-from-microsoft-teams-and-office-365-groups"></a>从 Microsoft 团队和 Office 365 组中搜索和导出数据
+### <a name="searching-and-exporting-data-from-microsoft-teams-and-microsoft-365-groups"></a>从 Microsoft 团队和 Microsoft 365 组中搜索和导出数据
 
 Microsoft 团队（称为团队聊天或一对一聊天）中的聊天列表的一部分的对话存储在参与聊天的用户的 Exchange Online 邮箱中。 此外，在一对一聊天中共享的文件存储在共享该文件的人员的 OneDrive 帐户中。 由于内置搜索可搜索组织中的所有邮箱和 OneDrive 帐户，因此在聊天会话中共享的团队聊天室和文档（创建或上载的数据主题）在 DSR 案例中的内置搜索返回。
   
 或者，作为团队频道一部分的对话（也称为频道消息）存储在与团队相关联的邮箱中。 由于搜索与团队关联的所有邮箱，因此内置搜索也会返回这些数据主题所参与的这些类型的对话。 此外，工作组频道中的数据主题共享的文件存储在团队的 SharePoint 网站上。 数据主体创建或上载的文件由内置搜索在 DSR 事例中返回，因为与团队关联的网站包含在搜索中。
   
-同样，与 Office 365 组对应的邮箱和 SharePoint 网站也包含在内置搜索中。 这意味着将返回由数据主题以及由数据主体创建或上载的文件发送或接收的电子邮件。 
+同样，与 Microsoft 365 组对应的邮箱和 SharePoint 网站也包含在内置搜索中。 这意味着将返回由数据主题以及由数据主体创建或上载的文件发送或接收的电子邮件。 
   
-有关使用内容搜索在 Microsoft 团队和 Office 365 组中搜索项目的详细信息，或者若要了解如何获取成员列表，请参阅[Office 365 中的内容搜索](content-search.md#searching-microsoft-teams-and-office-365-groups)中的 "搜索 Microsoft 团队和 Office 365 组" 一节。 
+有关使用内容搜索在 Microsoft 团队和 Microsoft 365 组中搜索项目的详细信息，或者若要了解如何获取成员列表，请参阅[microsoft 365 中的内容搜索](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)中的 "搜索 Microsoft 团队和 Microsoft 365 组" 一节。 
   
 ### <a name="searching-exchange-public-folders"></a>搜索 Exchange 公用文件夹
 

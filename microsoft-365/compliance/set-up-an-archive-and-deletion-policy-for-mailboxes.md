@@ -1,5 +1,5 @@
 ---
-title: 为 Office 365 组织中的邮箱设置存档和删除策略
+title: 为组织中的邮箱设置存档和删除策略
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: 在 Office 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
-ms.openlocfilehash: 53da9c027895421edaa99ebc18d17eafc0dbc679
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 创建自动将项目移动到用户存档邮箱的存档和删除策略。
+ms.openlocfilehash: d5c55227d601476b7c06d530a13a5768a4a108c4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081183"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635556"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>为 Office 365 组织中的邮箱设置存档和删除策略
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 
- 在 Office 365 中，管理员可以创建存档和删除策略，以自动将项目移动到用户的存档邮箱，并自动删除邮箱中的项目。 管理员通过创建分配给邮箱的保留策略，并在一段时间后将项目移动到用户的存档邮箱来实现此功能，并在达到一定期限后从邮箱中删除邮件。 确定要移动或删除的项目以及发生此问题的实际规则称为保留标记。 保留标记链接到保留策略，后者又分配给用户的邮箱。 保留标记将保留设置应用于用户邮箱中的单个邮件和文件夹。 它定义邮件在邮箱中保留的时间，以及当邮件达到指定的保留期限时采取的操作。 当邮件达到其保留期限时，会将其移动到用户的存档邮箱或将其删除。 
+ 在 Microsoft 365 中，管理员可以创建存档和删除策略，以自动将项目移动到用户的存档邮箱，并自动删除邮箱中的项目。 管理员通过创建分配给邮箱的保留策略，并在一段时间后将项目移动到用户的存档邮箱来实现此功能，并在达到一定期限后从邮箱中删除邮件。 确定要移动或删除的项目以及发生此问题的实际规则称为保留标记。 保留标记链接到保留策略，后者又分配给用户的邮箱。 保留标记将保留设置应用于用户邮箱中的单个邮件和文件夹。 它定义邮件在邮箱中保留的时间，以及当邮件达到指定的保留期限时采取的操作。 当邮件达到其保留期限时，会将其移动到用户的存档邮箱或将其删除。 
   
 本文中的步骤将设置名为 Alpine 房子的虚拟组织的存档和保留策略。 设置此策略包含以下任务：
   
@@ -46,11 +46,11 @@ ms.locfileid: "42081183"
     
 您可以按照本文中的部分或全部步骤操作，为自己组织中的邮箱设置存档和删除策略。 我们建议您先对几个邮箱测试此过程，然后再在组织中的所有邮箱上实施此过程。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-- 您必须是 Office 365 组织中的全局管理员才能执行本主题中的步骤。 
+- 您必须是组织中的全局管理员才能执行本主题中的步骤。 
     
--  当您在 Office 365 中创建新用户帐户并为用户分配 Exchange Online 许可证时，系统会自动为该用户创建一个邮箱。 创建邮箱后，会自动为其分配一个名为 "默认 MRM 策略" 的默认保留策略。 在本文中，您将创建一个新的保留策略，然后将其分配给用户邮箱，替换默认的 MRM 策略。 每次只能向一个邮箱分配一个保留策略。
+-  当您创建新用户帐户并为用户分配 Exchange Online 许可证时，系统会自动为该用户创建一个邮箱。 创建邮箱后，会自动为其分配一个名为 "默认 MRM 策略" 的默认保留策略。 在本文中，您将创建一个新的保留策略，然后将其分配给用户邮箱，替换默认的 MRM 策略。 每次只能向一个邮箱分配一个保留策略。
     
 - 若要了解有关 Exchange Online 中的保留标记和保留策略的详细信息，请参阅[保留标记和保留策略](https://go.microsoft.com/fwlink/p/?LinkId=404424)。
     
@@ -63,7 +63,7 @@ ms.locfileid: "42081183"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. Sign in to Office 365 using your global administrator account.
+2. 使用全局管理员帐户登录。
     
     
 3. 在安全 & 合规性中心中，转到 "**信息管理** \> **存档**"。
@@ -185,7 +185,7 @@ ms.locfileid: "42081183"
   
 1. 在 EAC 中，转到 "**合规性管理** \> "**保留策略**。
     
-2. 在 "**保留策略**" 页上**** ![，单击 "](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)新建新图标"。
+2. 在 "**保留策略**" 页上**New** ![，单击 "](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)新建新图标"。
     
 3. 在 "**名称**" 框中，为新的保留策略键入一个名称;例如， **Alpine 房屋存档和删除策略**。 
     
@@ -248,7 +248,7 @@ ms.locfileid: "42081183"
     $UserCredential = Get-Credential
     ```
 
-    在 " **Windows PowerShell 凭据请求**" 对话框中，键入 Office 365 全局管理员帐户的用户名和密码，然后单击 **"确定"**。
+    在 " **Windows PowerShell 凭据请求**" 对话框中，键入全局管理员帐户的用户名和密码，然后单击 **"确定"**。
     
 2. 运行以下命令。
     

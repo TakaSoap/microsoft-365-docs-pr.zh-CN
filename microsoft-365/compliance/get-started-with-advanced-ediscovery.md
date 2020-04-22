@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何开始在 Microsoft 365 中使用高级电子数据展示。 完成几个快速的步骤之后，高级电子数据展示工具即可供使用。 第一步是创建一个事例，然后开始使用高级电子数据展示功能和功能。
-ms.openlocfilehash: 4aae93e250365fc7225fe2f21fe25cd01e5f8cc0
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 669ca954401242f7ac8da9a752a99b1b32c1041c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551123"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632473"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>高级电子数据展示入门
 
@@ -33,7 +33,7 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
 高级电子数据展示的许可要求相应的组织订阅和每用户许可。
 
-- **组织订阅：** 若要在 Microsoft 365 合规性中心或 Office 365 安全性 & 合规性中心访问高级电子数据展示，您的组织必须具有以下各项之一：
+- **组织订阅：** 若要访问 Microsoft 365 合规性中心或安全 & 合规性中心中的高级电子数据展示，您的组织必须具备以下各项之一：
 
   - Microsoft 365 E5 或 Office 365 E5 订阅
   
@@ -41,7 +41,7 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
   - 使用 E5 电子数据展示和审核附加版的 Microsoft 365 E3 订阅
 
-  如果你没有现有的 Microsoft 365 E5 计划，并且想要尝试高级电子数据展示，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有的 Office 365 订阅，或者注册 Microsoft 365 E5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
+  如果你没有现有的 Microsoft 365 E5 计划，并且想要尝试高级电子数据展示，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有订阅或注册 Microsoft 365 E5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 - **每用户许可：** 若要在提前电子数据展示事例中将用户添加为保管人，则必须为该用户分配以下许可证之一，具体取决于您的组织订阅：
 
@@ -56,7 +56,7 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步骤2：分配电子数据展示权限
 
-若要访问高级电子数据展示或添加为高级电子数据展示事例的成员，必须为用户分配适当的权限。 具体来说，用户必须作为 "Office 365 安全 & 合规中心" 中的 "电子数据展示管理器" 角色组的成员进行添加。 此角色组的成员可以创建和管理高级电子数据展示事例。 他们可以添加和删除成员，将保管人和内容位置置于保留状态，管理法律封存通知，创建和编辑与案例关联的搜索，将搜索结果添加到审阅集，分析审阅集中的数据，以及从高级电子数据展示事例中导出和下载。
+若要访问高级电子数据展示或添加为高级电子数据展示事例的成员，则必须为用户分配适当的权限。 具体来说，用户必须作为安全 & 合规中心中的电子数据展示管理器角色组的成员进行添加。 此角色组的成员可以创建和管理高级电子数据展示事例。 他们可以添加和删除成员，将保管人和内容位置置于保留状态，管理法律封存通知，创建和编辑与案例关联的搜索，将搜索结果添加到审阅集，分析审阅集中的数据，以及从高级电子数据展示事例中导出和下载。
 
 完成以下步骤以将用户添加到电子数据展示管理器角色组：
 
@@ -145,7 +145,7 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
   
    - 您可以对保管人数据设置保留。 这将保留在调查过程中可能与事例相关的数据。
   
-   - 您可以将其他数据源与管理员关联（例如，可以将 SharePoint 网站或 Office 365 组与管理员关联），以便可以对这些数据进行重新编制索引、设置保留和搜索，就像使用保管人邮箱或 OneDrive 帐户中的数据一样。
+   - 您可以将其他数据源与管理员关联（例如，可以将 SharePoint 网站或 Microsoft 365 组与管理员关联），以便可以对这些数据进行重新编制索引、设置保留和搜索，就像使用保管人邮箱或 OneDrive 帐户中的数据一样。
 
    - 您可以使用高级电子数据展示中的[通信工作流](managing-custodian-communications.md)向保管人发送合法保留通知。
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141609"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632987"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -43,7 +43,7 @@ ms.locfileid: "43141609"
 - 生成详尽的 Microsoft Excel 报告，这些报告记录由 Microsoft 和您的组织为审计员、管理机构和其他合规性审阅者执行的合规性活动。
 
 > [!NOTE]
-> 合规性管理器中提供的客户操作是建议;在实现之前，你的组织可以评估这些建议在其各自的法规环境中的有效性。 在合规性管理器中找到的建议不应解释为合规性保证。
+> 合规性管理器中提供的客户操作是建议;在实现之前，你的组织可以评估这些建议在其各自的法规环境中的有效性。 合规性管理器中提供的建议不应解释为合规性保证。
 
 ## <a name="relationship-to-compliance-score"></a>与合规性分数的关系
 
@@ -52,7 +52,7 @@ ms.locfileid: "43141609"
 合规性管理器与合规性分数共享相同的后端。 在这两种工具的公共预览阶段，合规性管理器是管理评估和自定义控制实施的地方。 了解有关[合规性分数和合规性管理器之间关系](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)的详细信息。
   
 > [!IMPORTANT]
-> 合规性分数不表示对任何特定标准或法规的组织合规性的绝对衡量。 它表示您已采用的控制程度，可降低个人数据和个人隐私的风险。 任何服务都不能保证您符合标准或法规，并且不应以任何方式将合规性分数解释为保证。
+> 合规性分数并不是衡量组织是否遵守任何特定标准或法规的绝对指标。 它表示控制措施的采用力度，这些控制措施可降低个人数据和个人隐私风险。 任何服务都不能保证您符合标准或法规，并且不应以任何方式将合规性分数解释为保证。
 
 ## <a name="compliance-manager-components"></a>合规性管理器组件
 
@@ -62,7 +62,7 @@ ms.locfileid: "43141609"
 
 ![合规性管理器版本3中的关系](../media/compliance-manager-relationships.png)
 
-## <a name="groups"></a>Groups
+## <a name="groups"></a>组
 
 [组](working-with-compliance-manager.md#groups)是允许您组织评估的容器，并在评估之间共享具有相同或相关的客户托管控件的常见信息和工作流任务。 当同一个组中的两个不同评估共享客户托管控件时，该控件的实现详细信息、测试和状态的完成将自动同步到组中任何其他评估中的相同控件。 这将统一分配给组中每个控件的已分配操作项并减少重复工作。 您还可以选择使用组进行组织。 按年、区域、合规性标准或其他分组进行评估，以帮助组织合规性工作。
 

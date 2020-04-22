@@ -13,17 +13,17 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: 了解如何在 Office 365 审核日志中搜索符合性管理员在安全 & 合规中心中执行内容搜索和电子数据展示事例任务时记录的事件。
-ms.openlocfilehash: 21a7304abae594557c5ae8fcdc33ca8c88bc2dea
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+description: 了解在合规性管理员在安全 & 合规中心中执行内容搜索和电子数据展示案例任务时，如何在审核日志中搜索所记录的事件。
+ms.openlocfilehash: 96f6b121064e7540778a418baa96bae448e4eed3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151447"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631823"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在审核日志中搜索电子数据展示活动
 
-在安全 & 合规性中心中或通过运行相应的 PowerShell cmdlet 在 Office 365 审核日志中执行的内容搜索和电子数据展示相关的活动将被记录下来。 当管理员或电子数据展示管理者（或任何用户分配的电子数据展示权限）在安全 & 合规性中心中执行以下内容搜索和核心电子数据展示任务时，将记录事件：
+在安全 & 合规性中心或通过运行相应的 PowerShell cmdlet 在审核日志中执行的内容搜索和电子数据展示相关的活动将会记录在审核日志中。 当管理员或电子数据展示管理者（或任何用户分配的电子数据展示权限）在安全 & 合规性中心中执行以下内容搜索和核心电子数据展示任务时，将记录事件：
   
 - 创建和管理电子数据展示事例
 
@@ -38,15 +38,15 @@ ms.locfileid: "43151447"
 > [!IMPORTANT]
 > 本文中所述的活动只是使用安全 & 合规中心执行的电子数据展示任务的结果。 不包括使用 Exchange Online 中的就地电子数据展示工具或 SharePoint Online 中的电子数据展示中心执行的电子数据展示任务。 
   
-有关搜索 Office 365 审核日志、所需权限以及导出搜索结果的详细信息，请参阅[在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
+有关搜索审核日志、所需权限以及导出搜索结果的详细信息，请参阅[在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
   
 ## <a name="how-to-search-for-and-view-ediscovery-activities"></a>如何搜索和查看电子数据展示活动
 
-目前，您必须执行几个特定的操作才能在 Office 365 审核日志中查看电子数据展示活动。 方法如下：
+目前，您必须执行几个特定的操作才能在审核日志中查看电子数据展示活动。 方法如下：
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用您的工作或学校帐户登录。
     
 3. 在左窗格中，单击 "**搜索**"，然后单击 "**审核日志搜索**"。
     
@@ -69,7 +69,7 @@ ms.locfileid: "43151447"
 
 ## <a name="ediscovery-activities"></a>电子数据展示活动
 
-下表介绍了在管理员或电子数据展示管理器使用安全 & 合规中心或在 Office 365 安全 & 合规中心 PowerShell 中运行相应的 cmdlet 时记录的内容搜索和核心电子数据展示活动。 
+下表介绍了在管理员或电子数据展示管理器使用安全 & 合规中心或在安全 & 合规中心 PowerShell 中运行相应的 cmdlet 时记录的内容搜索和核心电子数据展示活动。 
   
 > [!NOTE]
 > 本节中介绍的电子数据展示活动提供了与下一节中所述的电子数据展示 cmdlet 活动类似的信息。 我们建议您使用本节中介绍的电子数据展示活动，因为这些活动将在30分钟内显示在审核日志搜索结果中。 在审核日志搜索结果中显示电子数据展示 cmdlet 活动需要长达24小时。 
@@ -99,7 +99,7 @@ ms.locfileid: "43151447"
 |已下载内容搜索的导出  <br/> |SearchExportDownloaded  <br/> |不适用  <br/> |用户将内容搜索的结果下载到本地计算机。 必须先启动 "**内容搜索**" 活动的 "导出"，然后才能下载搜索结果。  <br/> |
 |预览内容搜索的结果  <br/> |SearchPreviewed  <br/> |不适用  <br/> |用户预览内容搜索的结果。  <br/> |
 |内容搜索的已清除结果  <br/> |SearchResultsPurged  <br/> |新 New-compliancesearchaction  <br/> |用户通过运行 New-compliancesearchaction 清除的 "**清除**" 命令清除了内容搜索的结果。  <br/> |
-|删除了内容搜索的分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |New-compliancesearchaction  <br/> |已删除内容搜索准备操作（为 Office 365 高级电子数据展示准备搜索结果）。 如果准备操作的时间不是两周，则为高级电子数据展示准备的搜索结果将从 Microsoft Azure 存储区域中删除。 如果准备操作的时间已超过2周，则此事件指示仅删除了相应的准备操作。  <br/> |
+|删除了内容搜索的分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |New-compliancesearchaction  <br/> |已删除内容搜索准备操作（为高级电子数据展示准备搜索结果）。 如果准备操作的时间不是两周，则为高级电子数据展示准备的搜索结果将从 Microsoft Azure 存储区域中删除。 如果准备操作的时间已超过2周，则此事件指示仅删除了相应的准备操作。  <br/> |
 |删除了内容搜索的导出  <br/> |RemovedSearchExported  <br/> |New-compliancesearchaction  <br/> |删除了内容搜索导出操作。 如果导出操作的时间不是两周，则已删除上载到 Microsoft Azure 存储区域的搜索结果。 如果导出操作的时间已超过2周，则此事件指示仅删除了相应的导出操作。  <br/> |
 |从电子数据展示案例中删除了成员  <br/> |CaseMemberRemoved  <br/> |ComplianceCaseMember  <br/> |以电子数据展示事例的成员身份删除了用户。  <br/> |
 |删除了内容搜索的预览结果  <br/> |RemovedSearchPreviewed  <br/> |New-compliancesearchaction  <br/> |已删除内容搜索预览操作。  <br/> |
@@ -144,7 +144,7 @@ ms.locfileid: "43151447"
 |更改内容搜索  <br/> |[Set-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517937) <br/> |已更改现有内容搜索。 更改可以包括添加或删除搜索查询和编辑搜索查询中的内容位置。  <br/> |
 |已开始内容搜索  <br/> |[Start-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517938) <br/> |已启动内容搜索。 使用安全性 & 合规性中心 GUI 创建或更改内容搜索时，将自动启动搜索。 如果使用**new-compliancesearch** Cmdlet 或**new-compliancesearch** cmdlet 创建或更改搜索，则必须运行**new-compliancesearch** cmdlet 以启动搜索的。  <br/> |
 |已停止内容搜索  <br/> |[Stop-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517939) <br/> |正在运行的内容搜索已停止。  <br/> |
-|已创建内容搜索操作  <br/> |[新 New-compliancesearchaction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |已创建内容搜索操作。 内容搜索操作包括预览搜索结果、导出搜索结果、为 Office 365 高级电子数据展示中的分析准备搜索结果，以及永久删除与内容搜索的搜索条件相匹配的项目。  <br/> |
+|已创建内容搜索操作  <br/> |[新 New-compliancesearchaction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |已创建内容搜索操作。 内容搜索操作包括预览搜索结果、导出搜索结果、为高级电子数据展示中的分析准备搜索结果，以及永久删除与内容搜索的搜索条件匹配的项目。  <br/> |
 |已删除内容搜索操作  <br/> |[New-compliancesearchaction](https://go.microsoft.com/fwlink/p/?LinkId=824027) <br/> |删除了内容搜索操作。  <br/> |
 |已创建搜索权限筛选器  <br/> |[新 New-compliancesecurityfilter](https://go.microsoft.com/fwlink/p/?LinkId=617542) <br/> |已创建搜索权限筛选器。  <br/> |
 |已删除搜索权限筛选器  <br/> |[New-compliancesecurityfilter](https://go.microsoft.com/fwlink/p/?LinkId=617543) <br/> |已删除搜索权限筛选器。  <br/> |
@@ -168,7 +168,7 @@ ms.locfileid: "43151447"
 |ClientRequestId  <br/> | 对于电子数据展示活动，此属性通常为空。  <br/> |
 |CmdletVersion  <br/> |在您的组织中运行的安全 & 合规中心版本的内部版本号。  <br/> |
 |CreationTime  <br/> |在电子数据展示活动完成时的日期和时间（采用协调通用时间（UTC））。  <br/> |
-|EffectiveOrganization  <br/> |Office 365 组织的名称。  <br/> |
+|EffectiveOrganization  <br/> |Microsoft 365 组织的名称。  <br/> |
 |ExchangeLocations  <br/> |在内容搜索中包括的 Exchange Online 邮箱或在电子数据展示事例中置于保留状态的 Exchange Online 邮箱。  <br/> |
 |项  <br/> |从内容搜索中排除的邮箱或网站位置或电子数据展示事例中的保留。  <br/> |
 |ExtendedProperties  <br/> |来自内容搜索、内容搜索操作或保存在电子数据展示事例中的其他属性，如对象 GUID 以及在执行活动时使用的相应 cmdlet 和 cmdlet 参数。  <br/> |
@@ -176,9 +176,9 @@ ms.locfileid: "43151447"
 |NonPIIParameters  <br/> |与 Operation 属性中标识的 cmdlet 一起使用的参数（不含任何值）的列表。 此属性中列出的参数与 Parameters 属性中列出的参数相同。  <br/> |
 |ObjectId  <br/> |由 Operation 属性中列出的活动创建、更改或删除的对象的 GUID 或名称（例如，内容搜索或电子数据展示事例）。 此外，还会在审核日志搜索结果的项列中标识此对象。  <br/> |
 |ObjectType  <br/> |用户创建、删除或修改的电子数据展示对象的类型;例如，内容搜索操作（预览、导出或清除）、电子数据展示事例或内容搜索。  <br/> |
-|操作  <br/> |与所执行的电子数据展示活动相对应的操作的名称。  <br/> |
-|OrganizationId  <br/> |Office 365 组织的 GUID。  <br/> |
-|Parameters  <br/> |与对应的 cmdlet 一起使用的参数的名称和值。  <br/> |
+|Operation  <br/> |与所执行的电子数据展示活动相对应的操作的名称。  <br/> |
+|OrganizationId  <br/> |Microsoft 365 组织的 GUID。  <br/> |
+|参数  <br/> |与对应的 cmdlet 一起使用的参数的名称和值。  <br/> |
 |PublicFolderLocations  <br/> |Exchange Online 中包含在内容搜索中的公用文件夹位置，或在电子数据展示事例中置于保留状态。  <br/> |
 |查询  <br/> |与活动相关联的搜索查询，例如内容搜索或基于查询的保留。  <br/> |
 |RecordType  <br/> |记录指示的操作类型。 值**18**表示与[电子数据展示 cmdlet 活动](#ediscovery-cmdlet-activities)部分中列出的活动相关的事件。 值为**24**表示与 "[如何搜索并查看电子数据展示活动](#how-to-search-for-and-view-ediscovery-activities)" 一节中列出的活动相关的事件。  <br/> |
@@ -188,7 +188,7 @@ ms.locfileid: "43151447"
 |StartTime  <br/> |启动电子数据展示活动时的日期和时间（采用协调通用时间（UTC））。  <br/> |
 |UserID  <br/> |执行了导致记录记录的活动（在操作属性中指定）的用户。 由系统帐户（如 NT AUTHORITY\SYSTEM）执行的电子数据展示活动的记录也包含在审核日志中。  <br/> |
 |UserKey  <br/> |UserID 属性中标识的用户的备选 ID。 对于电子数据展示活动，此属性的值通常与 UserId 属性相同。  <br/> |
-|UserServicePlan  <br/> |您的组织使用的 Office 365 订阅。 对于电子数据展示活动，此属性通常为空。  <br/> |
-|UserType  <br/> |执行操作的用户类型。 以下值指示用户类型。  <br/> 0一个常规用户。 2 Office 365 组织中的管理员。 3 A Microsoft 数据中心管理员或数据中心系统帐户。 4系统帐户。 5应用程序。 6 A 服务主体。 |
+|UserServicePlan  <br/> |您的组织使用的订阅。 对于电子数据展示活动，此属性通常为空。  <br/> |
+|UserType  <br/> |执行操作的用户类型。 以下值指示用户类型。  <br/> 0一个常规用户。 2组织中的管理员。 3 A Microsoft 数据中心管理员或数据中心系统帐户。 4系统帐户。 5应用程序。 6 A 服务主体。 |
 |版本  <br/> |指示已记录的活动的版本号（由操作属性标识）。  <br/> |
-|Workload  <br/> |其中发生活动的 Office 365 服务。 对于电子数据展示活动，值为**SecurityComplianceCenter**。  <br/> |
+|Workload  <br/> |发生活动的 Theservice。 对于电子数据展示活动，值为**SecurityComplianceCenter**。  <br/> |

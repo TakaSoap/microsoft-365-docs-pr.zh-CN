@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 将管理员添加到高级电子数据展示事例时，将会重新处理 Office 365 中被视为部分索引的任何内容，以使其完全可搜索。
-ms.openlocfilehash: 3c1bead5f853a39410a6a018f170ee637dfcf84e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 将管理员添加到高级电子数据展示事例中时，被视为部分索引的所有内容都将被重新处理，以使其完全可搜索。
+ms.openlocfilehash: 0618af5bcc18622ee8091782f55648f455230b6b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072889"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637894"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>保管人数据的高级索引
 
-将管理员添加到高级电子数据展示事例时，将会重新处理 Office 365 中被视为部分索引的任何内容，以使其完全可搜索。  此过程称为 "*高级索引*"。 可以对内容进行部分索引，其中包括图像存在、不受支持的文件类型或在遇到索引文件大小限制时的原因。
+将管理员添加到高级电子数据展示事例中时，被视为部分索引的所有内容都将被重新处理，以使其完全可搜索。  此过程称为 "*高级索引*"。 可以对内容进行部分索引，其中包括图像存在、不受支持的文件类型或在遇到索引文件大小限制时的原因。
 
-若要了解有关 Office 365 中的处理支持和部分索引项目的详细信息，请参阅：
+若要了解有关处理支持和部分索引项目的详细信息，请参阅：
 
 - [高级电子数据展示中支持的文件类型](supported-filetypes-ediscovery20.md)
 

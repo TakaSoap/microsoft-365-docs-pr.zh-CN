@@ -17,17 +17,17 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 作为 Office 365 全局管理员，你可以将组织的品牌化应用于组织的加密电子邮件和加密门户的内容。
-ms.openlocfilehash: 5a3f5426fecd6ce5df6ace5b0080de33fb50e21f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: 作为全局管理员，您可以将组织的品牌化应用于组织的加密电子邮件和加密门户的内容。
+ms.openlocfilehash: 231d0bd1e49d0529b4dc15ec758ba63fe5f60092
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106014"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632287"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>在加密的邮件中添加组织的品牌
 
-作为 Exchange Online 或 Exchange Online Protection 管理员，您可以应用公司品牌，以自定义组织的 Office 365 邮件加密电子邮件的外观以及加密门户的内容。 通过使用 Set-omeconfiguration 和 Set-omeconfiguration Windows PowerShell cmdlet，您可以自定义加密电子邮件的收件人的查看体验的以下方面：
+作为 Exchange Online 或 Exchange Online Protection 管理员，您可以应用公司品牌，以自定义组织的 Microsoft 365 商业邮件加密电子邮件的外观以及加密门户的内容。 通过使用 Set-omeconfiguration 和 Set-omeconfiguration Windows PowerShell cmdlet，您可以自定义加密电子邮件的收件人的查看体验的以下方面：
   
 - 包含加密邮件的电子邮件介绍性文本
 
@@ -59,7 +59,7 @@ ms.locfileid: "43106014"
 
 ## <a name="work-with-ome-branding-templates"></a>使用 OME 品牌打造模板
 
-您可以修改品牌模板中的多个功能。 您可以修改但不能删除默认模板。 如果您具有高级邮件加密，则还可以创建、修改和删除自定义模板。 使用 Windows PowerShell 一次处理一个品牌模板。 您需要具有 Office 365 组织中具有全局管理员权限的工作或学校帐户，才能使用这些 cmdlet。
+您可以修改品牌模板中的多个功能。 您可以修改但不能删除默认模板。 如果您具有高级邮件加密，则还可以创建、修改和删除自定义模板。 使用 Windows PowerShell 一次处理一个品牌模板。 您需要在组织中具有全局管理员权限的工作或学校帐户使用这些 cmdlet。
 
 - [Set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) -修改默认品牌模板或您创建的自定义品牌模板。
 - [Set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) -创建新的品牌打造模板（仅限高级邮件加密）。
@@ -69,7 +69,7 @@ ms.locfileid: "43106014"
 
 使用 Windows PowerShell 一次修改一个品牌模板。 如果您具有高级邮件加密，则还可以创建、修改和删除自定义模板。
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用 Set-omeconfiguration cmdlet 修改模板，如[set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)中所述，或使用下图中所述的图形和表进行指南。
 
@@ -94,7 +94,7 @@ ms.locfileid: "43106014"
 
 若要创建新的自定义品牌模板：
 
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用[set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) cmdlet 可以创建新的模板。
 
@@ -112,7 +112,7 @@ ms.locfileid: "43106014"
 
 若要从默认模板中删除所有修改，包括品牌自定义项等，请完成以下步骤：
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用**set-omeconfiguration** cmdlet，如[set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)中所述。 若要从 DisclaimerText、EmailText 和 PortalText 值中删除您的组织的标记自定义项，请将该值设置为`""`一个空字符串。 对于所有图像值（如 "徽标"），请将`"$null"`值设置为。
 
@@ -133,7 +133,7 @@ ms.locfileid: "43106014"
 
 若要删除自定义品牌模板，请执行以下操作：
   
-1. 在 Office 365 组织中使用具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户，启动 Windows PowerShell 会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
 2. 使用**set-omeconfiguration** cmdlet，如下所示：
 
@@ -155,7 +155,7 @@ ms.locfileid: "43106014"
 
 - 如果最终用户从 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）客户端手动加密电子邮件
 
-- 如果电子邮件是由 Exchange 邮件流规则或 Office 365 数据丢失防护策略自动加密的
+- 如果电子邮件是由 Exchange 邮件流规则或数据丢失防护策略自动加密的
 
 有关如何创建适用于加密的 Exchange 邮件流规则的信息，请参阅[定义邮件流规则以在 Office 365 中加密电子邮件](define-mail-flow-rules-to-encrypt-email.md)。
 

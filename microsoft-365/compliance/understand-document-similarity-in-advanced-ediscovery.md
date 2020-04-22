@@ -1,5 +1,5 @@
 ---
-title: 了解 Office 365 高级电子数据展示中的文档相似性
+title: 了解高级电子数据展示中的文档相似性
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: '查看 "文档相似性" 值（两个文件的最小 resemblance 级别，将其视为邻近的重复项）在 Office 365 高级电子数据展示中起作用。 '
-ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '查看 "文档相似性" 值，将两个文件视为临近重复的最小 resemblance 级别，可在高级电子数据展示中工作。 '
+ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557662"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633407"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>了解高级电子数据展示中的文档相似性（经典）
 

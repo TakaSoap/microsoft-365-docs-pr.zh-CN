@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 了解有关安全&amp;合规中心中的资源管理器和实时检测。
-ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2d75a5e05bb3fce85d52856afabc6aba13594f26
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631165"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708555"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -240,4 +240,4 @@ ms.locfileid: "43631165"
 - "**所有电子邮件**" 视图在**威胁资源管理器**中可用（而不在**实时检测**报告中）。
 - **威胁资源管理器**中包含更多筛选功能和可用操作。
 
-有关更多详细信息，请参阅[Office 365 ATP 服务说明：功能在高级威胁防护（ATP）计划](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)中的可用性。
+有关更多详细信息，请参阅[Office 365 ATP 服务说明：功能在高级威胁防护（ATP）计划](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)中的可用性。

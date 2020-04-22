@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍了如何使用安全 & 合规中心中的新数据调查（预览版）工具管理数据外泄事件。
-ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634290"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635932"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>在 Microsoft 365 中管理数据外泄事件
 
@@ -29,14 +29,14 @@ ms.locfileid: "42634290"
 
 ## <a name="scope-of-this-article"></a>本文的范围
 
-本文提供了有关如何从 Office 365 邮箱中永久删除项目的说明列表，以便用户或管理员无法再访问或恢复这些项目。 
+本文提供了有关如何从 Microsoft 365 邮箱中永久删除项目的说明，以便用户或管理员无法再访问或恢复这些项目。 
 
 > [!NOTE]
 > 删除位于 SharePoint 或 OneDrive for business 网站中的项目时，它们将在从其原始位置删除它们的时间内保留93天。
 
 ## <a name="scenario"></a>应用场景
 
-您会收到一条数据外泄事件，其中员工在不知情的情况下通过电子邮件与多个人共享高度机密文档。 您希望快速评估在您的组织内部和外部收到此文档的用户。 在调查事件之后，您计划与其他调查人员共享您的发现以进行查看，然后从 Office 365 组织中永久删除溢出的数据。 调查完成后，您想要删除所有证据。 
+您会收到一条数据外泄事件，其中员工在不知情的情况下通过电子邮件与多个人共享高度机密文档。 您希望快速评估在您的组织内部和外部收到此文档的用户。 在调查事件之后，您计划与其他调查人员共享您的发现以进行查看，然后从您的组织中永久删除溢出的数据。 调查完成后，您想要删除所有证据。 
 
 > [!IMPORTANT]
 > 虽然您能够在自己的组织中永久删除溢出的数据，但不能使用这些功能删除任何溢出组织外部的数据。
@@ -68,7 +68,7 @@ ms.locfileid: "42634290"
 
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用属于数据调查员角色组成员的帐户登录到 Office 365。
+2. 使用属于 "数据调查员" 角色组成员的帐户登录。
     
 3. 在 "安全与合规中心" 中，单击 "**数据调查**"。
  

@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: 用于保护对 O365 数据和服务的访问权限的登录页
-ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 用于保护对 Microsoft 365 数据和服务的访问权限的登录页
+ms.openlocfilehash: 4d09ee0aa0ef36222ae0d238b0e7a44ee23994d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601699"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632207"
 ---
 # <a name="protect-user-and-device-access"></a>保护用户和设备的访问权限
 
-保护对 Office 365 数据和服务的访问对于防御 cyberattacks 和防止数据丢失至关重要。 可以将相同的保护应用于环境中的其他 SaaS 应用程序，甚至应用于使用 Azure Active Directory 应用程序代理发布的本地应用程序。
+保护对 Microsoft 365 数据和服务的访问对于防御 cyberattacks 和防止数据丢失至关重要。 可以将相同的保护应用于环境中的其他 SaaS 应用程序，甚至应用于使用 Azure Active Directory 应用程序代理发布的本地应用程序。
   
 ## <a name="step-1-review-recommendations"></a>步骤1：查看建议
 
@@ -33,7 +33,7 @@ ms.locfileid: "41601699"
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>步骤2：保护管理员帐户和访问权限
-用于管理 Office 365 环境的管理帐户包括提升的权限。 这些是黑客和 cyberattackers 的有用目标。 
+用于管理 Microsoft 365 环境的管理帐户包括提升的权限。 这些是黑客和 cyberattackers 的有用目标。 
 
 首先使用管理员帐户进行管理。 管理员应使用单独的用户帐户进行常规的非管理，并且仅在必要时才使用其管理帐户完成与工作职能相关联的任务。
 
@@ -56,7 +56,7 @@ ms.locfileid: "41601699"
 - 条件访问
 - Intune 应用保护（设备的应用程序和数据保护）
 - Intune 设备合规性
-- Azure AD Identity Protection
+- Azure AD 标识保护
 
 实施 Intune 设备合规性需要设备注册。 管理设备使您能够在允许用户访问您的环境中的资源之前确保它们的健康和合规性。 请参阅[在 Intune 中注册设备以进行管理](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 

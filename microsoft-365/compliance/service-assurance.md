@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核，了解 Microsoft 如何使客户数据安全，并了解在使用 Office 365 时如何遵守 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e5d33f063d9e375c12346d245067be2b2b41de77
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081286"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631279"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全 & 合规中心中的服务保证
 
@@ -38,18 +38,18 @@ ms.locfileid: "42081286"
     
 - 1996 年的健康保险便利和义务法案 (HIPAA)
     
-- 联邦风险和授权管理计划（FedRAMP）
+- 联邦风险和授权管理项目 (FedRAMP)
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>谁可以访问 Office 365 服务保证？
 
  **新客户和评估 Microsoft online services 的客户**可以访问 Office 365 企业版 E3 和 E5 计划（试用和付费订阅）中包含的服务保证。 如果你没有这些计划中的任何一个，并且想要尝试服务保证，可以[注册 Office 365 企业版 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
- **Office 365 for business 的现有客户**可以访问服务保证。 如果你是组织的 Office 365 全局管理员（有时称为 "公司管理员"），你将有权访问服务保证，并且你可以为其他人提供服务。 如果您不是组织的 Office 365 全局管理员，并且需要对服务保证的访问权限，请让管理员将您添加到服务保证用户角色组。 
+ **Microsoft 365 for business 的现有客户**可以访问服务保证。 如果你的组织是全局管理员（有时称为公司管理员），你将有权访问服务保证，你可以为其他人提供服务。 如果您不是组织的全局管理员，并且需要对服务保证的访问权限，请让管理员将您添加到服务保证用户角色组。 
   
  如果尚未在订阅中实现基于服务保证角色的访问权限，则**O365 订阅成员**在默认情况下可以访问 Office365 Protection Center 中的服务保证部分。 服务保证提供了报告和文档，这些报告和文档描述了 Microsoft 在 Office 365 中存储的客户数据的安全实践。 此外，它还提供了有关 Office 365 的独立第三方审核报告。 
   
 > [!NOTE]
-> 注意：如果贵公司在 Office 365 订阅中实施了基于服务保证角色的访问（可能是因为您的组织已提供对自定义报告的访问权限），而您需要访问服务保证，但它不包含在安全 & 合规性中心的左侧窗格中，请咨询您的 Office 365 管理员将您添加到 "**权限**" 页上的 "服务保证" 用户 有关详细信息，请参阅板载其他服务保证用户或组。 
+> 如果您的公司在 Microsoft 365 订阅中实施了基于服务保证角色的访问（可能是因为您的组织已提供对自定义报告的访问权限），而您需要访问服务保证，但它不包含在安全 & 合规性中心的左侧窗格中，请咨询您的 Office 365 管理员将您添加到 "**权限**" 页上的 "服务保证" 用户角色 有关详细信息，请参阅板载其他服务保证用户或组。 
   
  **基于服务保证角色的访问预配的用户**如果贵公司实施了基于服务保证角色的访问，则可以提供对所有安全和合规性人员的服务保证，包括信息安全性、风险管理、合规性，以及组织内的审核团队和人员。 有关详细信息，请参阅[板载其他服务确定性用户或组](service-assurance.md#addother)。
   
@@ -57,7 +57,7 @@ ms.locfileid: "42081286"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。 
+2. 使用您的工作或学校帐户登录。 
     
 3. 在左窗格中，选择 "**服务保证**"。 接下来，[选择你的行业和区域设置](service-assurance.md#Chooseyourindustryregional)以及[板载其他服务保证用户或组](service-assurance.md#addother)。
     

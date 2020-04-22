@@ -1,5 +1,5 @@
 ---
-title: 将 PST 文件导入到 Office 365 的常见问题解答
+title: 有关导入 PST 文件的常见问题解答
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,19 +15,19 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: '有关使用 Office 365 导入服务将组织的 PST 文件导入到 Office 365 邮箱的管理员的常见问题。 '
-ms.openlocfilehash: 439a321c3890d85f7ca0f7da0074af80f6b7fed5
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+description: '有关使用 Office 365 导入服务将组织的 PST 文件导入到 Microsoft 365 邮箱的管理员的常见问题。 '
+ms.openlocfilehash: c2eb673ea8be2b628496df0e7b0412cbf3312ba9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058913"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615946"
 ---
-# <a name="faq-about-importing-pst-files-to-office-365"></a>将 PST 文件导入到 Office 365 的常见问题解答
+# <a name="faq-about-importing-pst-files"></a>有关导入 PST 文件的常见问题解答
 
 **本文适用于管理员。是否要将 PST 文件导入到自己的邮箱？请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)**|
    
-下面是一些有关使用 Office 365 导入服务批量导入 PST 文件到 Office 365 邮箱的常见问题。 有关如何导入 PST 文件的详细信息，请参阅[将 pst 文件导入到 Office 365 概述](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)。
+下面是一些有关使用 Office 365 导入服务将 PST 文件批量导入 Microsoft 365 邮箱的常见问题。 有关如何导入 PST 文件的详细信息，请参阅[将 pst 文件导入到 Office 365 概述](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)。
   
 ## <a name="using-network-upload-to-import-pst-files"></a>使用网络上传导入 PST 文件
 
@@ -35,7 +35,7 @@ ms.locfileid: "43058913"
   
  **在 Office 365 导入服务中创建导入作业需要哪些权限？**
   
-必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Office 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的“向角色组添加角色”或“创建角色组”部分。
+您必须在 Exchange Online 中分配 "邮箱导入导出" 角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的“向角色组添加角色”或“创建角色组”部分。
   
 此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
   
@@ -43,10 +43,10 @@ ms.locfileid: "43058913"
     
     或
     
-- 必须是你的 Office365 组织中的全局管理员。
+- 您必须是组织中的全局管理员。
     
 > [!TIP]
-> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮箱导入导出”和“邮件收件人”角色分配给新角色组，然后添加成员。 
+> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
   
  **网络上传在哪些地区提供？**
   
@@ -75,19 +75,19 @@ Using network upload to import PST files is free.
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
-这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 PST 文件复制到 Azure 存储区域后，PST 文件将以每天至少 24 GB 的速度导入到 Office 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据迁移到 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)。
+这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 将 PST 文件复制到 Azure 存储区域后，PST 文件将以每日至少 24 GB 的速度导入 Microsoft 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据迁移到 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)。
   
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
   
- **PST 导入过程如何处理重复的电子邮件项目？**
+ **PST 导入进程如何处理重复的电子邮件项？**
 
-PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标文件夹中存在匹配项，则不会将项目从 PST 文件复制到邮箱或存档。 如果您重新导入同一个 PST 文件并指定不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），则 PST 文件中的所有项目都将为 reimported。
+如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
 
  **导入 PST 文件时是否有邮件大小限制？**
   
 是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
   
- **PST 文件导入到 Office365 邮箱时，是否会保留邮件发送时间或接收时间、收件人和其他属性等邮件属性？**
+ **是邮件属性（例如，何时发送或接收邮件）、收件人列表和其他属性（在将 PST 文件导入到 Microsoft 365 邮箱时会保留这些属性）？**
   
 是。 导入过程中不会更改任何原始邮件元数据。
   
@@ -113,7 +113,7 @@ PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标�
   
  **在 Office 365 导入服务中创建导入作业需要哪些权限？**
   
-必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Office 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的“向角色组添加角色”或“创建角色组”部分。
+您必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的“向角色组添加角色”或“创建角色组”部分。
   
 此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
   
@@ -121,7 +121,7 @@ PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标�
     
     或
     
-- 必须是你的 Office365 组织中的全局管理员。
+- 您必须是组织中的全局管理员。
     
 > [!TIP]
 > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
@@ -135,11 +135,11 @@ PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标�
   
  **哪些商业许可协议支持驱动器发运？**
   
-驱动器寄送可通过 Microsoft 企业协议 (EA) 将 PST 文件导入到 Office 365。 驱动器寄送不可通过 Microsoft 产品和服务协议 (MPSA) 实现。
+将 PST 文件导入到 Microsoft 365 的驱动器发货通过 Microsoft 企业协议（EA）提供。 驱动器寄送不可通过 Microsoft 产品和服务协议 (MPSA) 实现。
   
- **使用驱动器发运将 PST 文件导入到 Office_365 的定价如何？**
+ **使用驱动器发货将 PST 文件导入到 Microsoft 365 的定价是什么？**
   
-使用驱动器发运将 PST 文件导入到 Office 365 邮箱的费用为每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Office 365 合作伙伴或经销商](https://go.microsoft.com/fwlink/p/?LinkId=785197)。
+使用驱动器传送将 PST 文件导入到 Microsoft 365 邮箱的成本为每 GB 数据的 $2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](https://go.microsoft.com/fwlink/p/?LinkId=785197)。
   
  **哪类硬盘支持驱动器发运？**
   
@@ -162,7 +162,7 @@ PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标�
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
-将 PST 文件上传到 Azure 存储区域后，Office 365 采用安全的方式分析 PST 文件中的数据，确定 PST 文件中所含项目的存在时长以及各种邮件类型。 分析完成后，可以选择将所有数据导入 PST 文件，或设置筛选器控制导入的数据。 开始导入作业后，PST 文件将以每天至少 24 GB 的速度导入到 Office 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)。
+将 PST 文件上传到 Azure 存储区域后，Microsoft 365 将分析 PST 文件中的数据（以安全和安全的方式），以确定这些项目的年龄以及 PST 文件中包含的不同邮件类型。 分析完成后，可以选择将所有数据导入 PST 文件，或设置筛选器控制导入的数据。 在您开始导入作业后，PST 文件将以每日至少 24 GB 的速度导入 Microsoft 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)。
   
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
   
@@ -172,29 +172,29 @@ PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标�
   
 这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
   
- **哪个版本的 PST 文件格式支持导入到 Office 365？**
+ **导入 Microsoft 365 支持哪种版本的 PST 文件格式？**
   
-可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅 "[使用驱动器传送将 PST 文件导入到 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)" 中的步骤3。
+可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，使用 ANSI PST 文件格式的文件（例如，使用双字节字符集（DBCS）的语言的文件）也可以导入到 Microsoft 365。 有关导入 ANSI PST 文件的详细信息，请参阅 "[使用驱动器传送将 PST 文件导入到 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)" 中的步骤3。
   
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
   
  **导入 PST 文件时是否有邮件大小限制？**
   
-是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+可以。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
   
-  **PST 导入过程如何处理重复的电子邮件项目？**
+  **PST 导入进程如何处理重复的电子邮件项？**
 
-PST 导入过程检查重复项，如果目标邮箱或目标存档中的目标文件夹中存在匹配项，则不会将项目从 PST 文件复制到邮箱或存档。 如果您重新导入同一个 PST 文件并指定不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），则 PST 文件中的所有项目都将为 reimported。
+如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
  
- **PST 文件导入到 Office365 邮箱时，是否会保留邮件发送时间或接收时间、收件人和其他属性等邮件属性？**
+ **是邮件属性（例如，何时发送或接收邮件）、收件人列表和其他属性（在将 PST 文件导入到 Microsoft 365 邮箱时会保留这些属性）？**
   
-是。 导入过程中不会更改原始邮件的元数据
+可以。 导入过程中不会更改原始邮件的元数据
   
  **我想要导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？**
   
 是的。不能导入包含 300 个或更多级别的嵌套文件夹的 PST 文件。
   
- **是否可以使用驱动器发运将 PST 文件导入到 Office 365 中的非活动邮箱？**
+ **我可以使用驱动器发货将 PST 文件导入到 Microsoft 365 中的非活动邮箱吗？**
   
 Yes, this capability is now available.
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 44ee6715c8bbe1254cead6b11930ca41be8864a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f5028e82e8c54972dd188215eac0518775ec275c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634710"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635836"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>管理数据调查中感兴趣的人员（预览）
 
@@ -50,18 +50,18 @@ ms.locfileid: "42634710"
 
 8. Optional在浮出控件中：
    
-    -  **Exchange 邮箱**-单击 "**选择用户、组或团队**"，然后再次单击 "**选择用户、组或团队**"。 若要添加更多邮箱，请使用搜索框查找用户邮箱和通讯组。 您还可以添加用于存储 Office 365 组或 Microsoft 团队信息的邮箱。 选中 "用户、组、团队" 复选框，单击 "**选择**"，然后单击 "**完成**"。
+    -  **Exchange 邮箱**-单击 "**选择用户、组或团队**"，然后再次单击 "**选择用户、组或团队**"。 若要添加更多邮箱，请使用搜索框查找用户邮箱和通讯组。 您还可以添加用于存储 Microsoft 365 组或 Microsoft 团队信息的邮箱。 选中 "用户、组、团队" 复选框，单击 "**选择**"，然后单击 "**完成**"。
 
         > [!NOTE]
         > 当您单击 "选择用户、组或团队以指定邮箱" 时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要将人员添加到此列表，请在搜索框中键入一个名称（至少3个字符）。
      
-     - **SharePoint 网站**-单击 "**选择网站**"，然后再次单击 "**选择网站**"，以指定要添加到人员的其他 SharePoint 和 OneDrive for business 网站 wwant。 您还可以为 Office 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 键入要分配的每个网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
+     - **SharePoint 网站**-单击 "**选择网站**"，然后再次单击 "**选择网站**"，以指定要添加到人员的其他 SharePoint 和 OneDrive for business 网站 wwant。 您还可以为 Microsoft 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 键入要分配的每个网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
      - **Microsoft 团队**–单击 "**选择团队**"，然后再次单击 "**选择团队**" 以查看此人是今天的成员的 Microsoft 团队组列表。 选择要添加到人员的团队。 选择后，系统将自动识别 & 选择与该 Microsoft 团队相关联的关联 SharePoint 网站和组邮箱。 单击 "**选择**"，然后单击 "**完成**"。
         
       > [!NOTE]
       > 若要添加其他 Microsoft 团队，您需要单独添加邮箱和 SharePoint 网站，如上所示。
 
-完成将数据源映射到感兴趣的人员之后，可以看到您刚刚添加的邮箱、网站和团队总数的摘要。 如果你将任何其他数据源映射到感兴趣的人，并将你的搜索范围限定为关注的人员，则在整个调查过程中将文档映射到关注的人员，从而更轻松地组织证据或按感兴趣的人员生成报告。. 
+完成将数据源映射到感兴趣的人员之后，可以看到您刚刚添加的邮箱、网站和团队总数的摘要。 如果你将任何其他数据源映射到感兴趣的人，并将你的搜索范围限定为关注的人员，则在整个调查过程中将文档映射到所关注的人，从而更轻松地组织证据或按感兴趣的人生成报告。 
 
 ## <a name="view-additional-people-of-interest-information"></a>查看其他感兴趣的人员信息
 

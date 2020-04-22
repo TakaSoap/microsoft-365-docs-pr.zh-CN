@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在，你可以将 DLP 策略应用于 Microsoft 团队聊天和频道。 阅读本文，了解详细了解它的工作原理。
-ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170552"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633051"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft 团队
 
@@ -67,7 +67,7 @@ ms.locfileid: "42170552"
 
 若要执行此任务，必须为您分配具有编辑 DLP 策略的权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
+1. 转到安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
 
 2. 选择 "**数据丢失防护** > **策略**"。
 
@@ -87,7 +87,7 @@ ms.locfileid: "42170552"
 
 若要执行此任务，必须为您分配具有编辑 DLP 策略的权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
+1. 转到安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
 
 2. 选择 "**数据丢失防护** > **策略**"。
 
@@ -105,7 +105,7 @@ ms.locfileid: "42170552"
 
 若要执行此任务，必须为您分配具有编辑 DLP 策略的权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到 Office 365 安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
+1. 转到安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
 
 2. 选择 "**数据丢失防护** > **策略** > **+ 创建策略**"。
 

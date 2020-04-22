@@ -1,5 +1,5 @@
 ---
-title: 搜索 Office 365 审核日志以解决常见方案
+title: 搜索审核日志以解决常见方案
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 您可以使用 Office 365 审核日志搜索工具来帮助您解决常见问题，例如调查已损坏的帐户、找出设置邮箱的电子邮件转发的用户或确定外部用户成功登录组织的原因。
-ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 您可以使用审核日志搜索工具来帮助您解决常见问题，例如调查已损坏的帐户、找出设置邮箱的电子邮件转发的用户，或者确定外部用户成功登录组织的原因。
+ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636380"
 ---
-# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>搜索 Office 365 审核日志，以调查常见的支持问题
+# <a name="search-the-audit-log-to-investigate-common-support-issues"></a>搜索审核日志以调查常见支持问题
 
-本文介绍如何使用 Office 365 审核日志搜索工具来帮助您调查常见的支持问题。 这包括使用审核日志执行以下操作：
+本文介绍如何使用审核日志搜索工具来帮助您调查常见的支持问题。 这包括使用审核日志执行以下操作：
 
 - 查找用于访问已泄露帐户的计算机的 IP 地址
 - 确定为邮箱设置电子邮件转发的发件商
@@ -33,13 +33,13 @@ ms.locfileid: "42634480"
 - 确定用户是否已创建收件箱规则
 - 调查您的组织外的用户成功登录的原因
 
-## <a name="using-the-office-365-audit-log-search-tool"></a>使用 Office 365 审核日志搜索工具
+## <a name="using-the-audit-log-search-tool"></a>使用审核日志搜索工具
 
-本文中介绍的每个故障排除方案都基于 Office 365 安全与合规中心中的审核日志搜索工具。 本节列出了搜索审核日志所需的权限，并介绍了访问和运行审核日志搜索的步骤。 每个方案部分介绍了如何配置审核日志搜索查询，以及在与搜索条件匹配的审核记录中的详细信息中要查找的内容。
+本文中介绍的每个故障排除方案都基于安全 & 合规中心中的审核日志搜索工具。 本节列出了搜索审核日志所需的权限，并介绍了访问和运行审核日志搜索的步骤。 每个方案部分介绍了如何配置审核日志搜索查询，以及在与搜索条件匹配的审核记录中的详细信息中要查找的内容。
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>使用审核日志搜索工具所需的权限
 
-您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色，才能搜索 Office 365 审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 中的 "组织管理" 角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色，才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 中的 "组织管理" 角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
 ### <a name="running-audit-log-searches"></a>运行审核日志搜索
 
@@ -80,7 +80,7 @@ ms.locfileid: "42634480"
 **活动：** 如果与你的案例相关，请选择要搜索的特定活动。 若要对受损帐户进行故障排除，请考虑选择 " **Exchange 邮箱活动**" 下的 "**登录到邮箱的用户**" 活动。 这将返回审核记录，显示登录邮箱时使用的 IP 地址。 否则，将此字段保留为空，以返回所有活动的审核记录。 
 
 > [!TIP]
-> 将此字段留空将返回**UserLoggedIn**活动，这是一种 Azure Active Directory 活动，该活动表明有人登录到 Office 365 用户帐户。 使用搜索结果中的筛选功能显示**UserLoggedIn**审核记录。
+> 将此字段留空将返回**UserLoggedIn**活动，这是一个指示有人已登录用户帐户的 Azure Active Directory 活动。 使用搜索结果中的筛选功能显示**UserLoggedIn**审核记录。
 
 "**开始日期**" 和 "**结束日期"：** 选择适用于调查的日期范围。
 
@@ -198,9 +198,9 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>调查您的组织外的用户成功登录的原因
 
-在查看 Office 365 审核日志中的审核记录时，您可能会看到指示外部用户通过 Azure Active Directory 进行身份验证并成功登录到组织的记录。 例如，contoso.onmicrosoft.com 中的管理员可能会看到一条审核记录，表明来自不同的 Office 365 组织（例如，fabrikam.onmicrosoft.com）的用户已成功登录 contoso.onmicrosoft.com。 同样，您可能会看到审核记录，这些记录表明用户使用 Microsoft 帐户（MSA）（如 Outlook.com 或 Live.com）成功登录到您的组织。 在这些情况下，审核的活动是**用户登录**的。 
+在审核日志中查看审核记录时，您可能会看到指示外部用户通过 Azure Active Directory 进行身份验证并成功登录到组织的记录。 例如，contoso.onmicrosoft.com 中的管理员可能会看到一条审核记录，表明来自不同组织的用户（例如，fabrikam.onmicrosoft.com）已成功登录 contoso.onmicrosoft.com。 同样，您可能会看到审核记录，这些记录表明用户使用 Microsoft 帐户（MSA）（如 Outlook.com 或 Live.com）成功登录到您的组织。 在这些情况下，审核的活动是**用户登录**的。 
 
-此行为是设计造成的。 如果外部用户尝试访问您组织中的 SharePoint 网站或 OneDrive 位置，则 azure Active Directory （Azure AD）（Office 365 中的目录服务）将允许出现一种称为 "*传递身份验证" 的*情况。 当外部用户尝试执行此操作时，系统会提示他们输入 Office 365 凭据。 Azure AD 使用凭据对用户进行身份验证，即仅 Azure AD 验证用户是否为他们所声称的用户。 审核记录中成功登录的指示是对用户进行身份验证的 Azure AD 的结果。 成功的登录并不意味着用户能够访问任何资源或在您的组织中执行任何其他操作。 它仅指示用户由 Azure AD 进行身份验证。 为了使传递用户能够访问 SharePoint 或 OneDrive 资源，组织中的用户必须通过向外部用户发送共享邀请或匿名共享链接来明确地与外部用户共享资源。 
+此行为是设计造成的。 当外部用户尝试访问您组织中的 SharePoint 网站或 OneDrive 位置时，azure Active Directory （Azure AD）、目录服务将允许出现 "*传递身份验证" 的*内容。 当外部用户尝试执行此操作时，系统会提示他们输入自己的凭据。 Azure AD 使用凭据对用户进行身份验证，即仅 Azure AD 验证用户是否为他们所声称的用户。 审核记录中成功登录的指示是对用户进行身份验证的 Azure AD 的结果。 成功的登录并不意味着用户能够访问任何资源或在您的组织中执行任何其他操作。 它仅指示用户由 Azure AD 进行身份验证。 为了使传递用户能够访问 SharePoint 或 OneDrive 资源，组织中的用户必须通过向外部用户发送共享邀请或匿名共享链接来明确地与外部用户共享资源。 
 
 > [!NOTE]
 > Azure AD 仅允许对*第一方应用程序*（如 SharePoint Online 和 OneDrive for business）进行传递身份验证。 不允许其他第三方应用程序。
@@ -225,7 +225,7 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
   - 拥有 Microsoft 帐户的用户（如 SaraD@outlook.com）尝试访问 fourthcoffee.onmicrosoft.com 中的 OneDrive for Business 帐户中的文档，并且在 fourthcoffee.onmicrosoft.com 中没有与 SaraD@outlook.com 相对应的来宾用户帐户。
 
-  - 在 Office 365 组织中拥有工作或学校帐户的用户（如 pilarp@fabrikam.onmicrosoft.com）尝试访问 contoso.onmicrosoft.com 中的 SharePoint 网站，并且在 contoso.onmicrosoft.com 中没有与 pilarp@fabrikam.com 相对应的来宾用户帐户。
+  - 组织中具有工作或学校帐户的用户（如 pilarp@fabrikam.onmicrosoft.com）尝试访问 contoso.onmicrosoft.com 中的 SharePoint 网站，并且在 contoso.onmicrosoft.com 中没有与 pilarp@fabrikam.com 相对应的来宾用户帐户。
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>有关调查由传递身份验证产生的成功登录的提示
@@ -236,6 +236,6 @@ d. **UserId**字段指示创建了 " **ObjectId** " 字段中指定的收件箱�
 
     除了**用户登录**的活动之外，还可以返回其他审核记录，如表明组织中的用户与外部用户共享的资源，以及外部用户是否访问、修改或下载了与它们共享的文档。
 
-- 搜索将指示文件与由**用户登录**的审核记录所标识的外部用户共享的 SharePoint 共享活动。 有关详细信息，请参阅[在 Office 365 审核日志中使用共享审核](use-sharing-auditing.md)。
+- 搜索将指示文件与由**用户登录**的审核记录所标识的外部用户共享的 SharePoint 共享活动。 有关详细信息，请参阅[在审核日志中使用共享审核](use-sharing-auditing.md)。
 
 - 导出包含与您的调查相关的记录的审核日志搜索结果，以便您可以使用 Excel 搜索与外部用户相关的其他活动。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。

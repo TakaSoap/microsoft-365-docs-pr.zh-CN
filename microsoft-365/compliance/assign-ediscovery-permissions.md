@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: dc7eb61a006b41e519c76e70c768b551ff5126b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097205"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631843"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -55,7 +55,7 @@ ms.locfileid: "43097205"
 
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用您的工作或学校帐户登录。
     
 3. 在 "安全性和合规性中心" 的左侧窗格中，选择 "**权限**"，然后选择 "**电子数据展示管理器**" 旁边的复选框。
     
@@ -81,7 +81,7 @@ ms.locfileid: "43097205"
 |导出 <br/> | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |预览 <br/>  | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|审阅 <br/>  | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |RMS 解密 <br/>  ||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |搜索和清除 <br/> | <br/> | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -94,7 +94,7 @@ ms.locfileid: "43097205"
 
 ### <a name="compliance-search"></a>合规性搜索
 
-此角色允许用户在安全 & 合规性中心中运行内容搜索工具，以搜索邮箱和公用文件夹、SharePoint Online 网站、OneDrive for Business 网站、Skype for Business 对话、Office 365 组和 Microsoft 团队以及 Yammer 组。 此角色允许用户获取搜索结果的估计并创建导出报告，但需要其他角色才能启动内容搜索操作，如预览、导出或删除搜索结果。
+此角色允许用户在安全 & 合规性中心中运行内容搜索工具，以搜索邮箱和公用文件夹、SharePoint Online 网站、OneDrive for Business 网站、Skype for Business 对话、Microsoft 365 组和 Microsoft 团队以及 Yammer 组。 此角色允许用户获取搜索结果的估计并创建导出报告，但需要其他角色才能启动内容搜索操作，如预览、导出或删除搜索结果。
 
 分配了合规性搜索角色但没有预览角色的用户可以预览已被分配了预览角色的用户在其中启动了预览操作的搜索结果。 没有预览角色的用户可以在创建初始预览操作后的两周内预览结果。
 
@@ -110,7 +110,7 @@ ms.locfileid: "43097205"
 
 ### <a name="hold"></a>Hold
 
-此角色允许用户将内容置于邮箱、公用文件夹、站点、Skype for business 对话和 Office 365 组中的保留状态。 当内容处于保留状态时，内容所有者仍可以修改或删除原始内容，但在删除保留或保留持续时间过期之前，将保留内容。 
+此角色允许用户将内容置于邮箱、公用文件夹、站点、Skype for business 对话和 Microsoft 365 组中的保留状态。 当内容处于保留状态时，内容所有者仍可以修改或删除原始内容，但在删除保留或保留持续时间过期之前，将保留内容。 
 
 有关保留的详细信息，请参阅：
 
@@ -122,7 +122,7 @@ ms.locfileid: "43097205"
 
 此角色允许用户查看从内容搜索返回的项目列表。 他们还可以打开并查看列表中的每个项目以查看其内容。
 
-### <a name="review"></a>Review
+### <a name="review"></a>审阅
 
 此角色使用户能够在[高级电子数据展示（经典）](office-365-advanced-ediscovery.md) （也称为*高级电子数据展示 v1*）中访问事例数据。 此角色的主要用途是为用户提供对高级电子数据展示（经典）的访问权限。 分配了此角色的用户可以在其成员的安全 & 合规中心中查看和打开**电子数据展示**页面上的案例列表。 在用户访问安全 & 合规性中心中的案例后，他们可以选择**切换到高级电子数据展示**，以在高级电子数据展示（经典）中访问和分析事例数据。 此角色不允许用户预览与案例相关联的内容搜索的结果，或执行其他内容搜索或案例管理任务。
 
@@ -135,7 +135,7 @@ ms.locfileid: "43097205"
 
 ### <a name="search-and-purge"></a>搜索和清除
 
-此角色允许用户批量删除与内容搜索条件匹配的数据。 有关详细信息，请参阅[在 Office 365 组织中搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。 
+此角色允许用户批量删除与内容搜索条件匹配的数据。 有关详细信息，请参阅[在组织中搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。 
 
 ## <a name="more-information"></a>详细信息
 
@@ -151,7 +151,7 @@ ms.locfileid: "43097205"
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    不支持 Exchange 通讯组和 Office 365 组。 必须使用已启用邮件的安全组，该安全组可以使用`New-DistributionGroup -Type Security`命令在 Exchange Online PowerShell 中创建。 您还可以在 Exchange 管理中心或 Microsoft 365 管理中心中创建已启用邮件的安全组（和添加成员）。 在创建新的已启用邮件的安全性以将其添加到电子数据展示管理器角色组后，可能需要长达60分钟的时间。 
+    不支持 Exchange 通讯组和 Microsoft 365 组。 必须使用已启用邮件的安全组，该安全组可以使用`New-DistributionGroup -Type Security`命令在 Exchange Online PowerShell 中创建。 您还可以在 Exchange 管理中心或 Microsoft 365 管理中心中创建已启用邮件的安全组（和添加成员）。 在创建新的已启用邮件的安全性以将其添加到电子数据展示管理器角色组后，可能需要长达60分钟的时间。 
     
     同样，在前面所述的情况下，不能使用 Security & 合规性中心 PowerShell 中的**eDiscoveryCaseAdmin** cmdlet 将启用邮件的安全组设置为电子数据展示管理员。 仅可将单个用户添加为电子数据展示管理员。 
     

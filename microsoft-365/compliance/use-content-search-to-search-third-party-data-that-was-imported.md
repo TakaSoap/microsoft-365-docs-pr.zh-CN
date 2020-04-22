@@ -1,5 +1,5 @@
 ---
-title: 使用内容搜索来搜索第三方数据导入到 Office 365
+title: 使用内容搜索来搜索第三方导入的数据
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,19 +13,19 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: 使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Office 365 中的邮箱的项目。 您可以创建查询以搜索所有导入的项，或创建查询以搜索特定的第三方数据类型。 本文列出了可在关键字查询中用于搜索可导入到 Office 365 的第三方数据类型的值。
-ms.openlocfilehash: 005290dc2dae203c4fddc1c78d3007306c613483
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 使用内容搜索电子数据展示工具在 Microsoft 365 中搜索从第三方数据源导入到邮箱的项目。 您可以创建查询以搜索所有导入的项，或创建查询以搜索特定的第三方数据类型。 本文列出了可以在关键字查询中使用的值，以搜索可导入到 Microsoft 365 的第三方数据类型。
+ms.openlocfilehash: 07a489d7c18cc305b7ffc745f7fc7870d8f72a2f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601319"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633367"
 ---
-# <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>使用内容搜索来搜索第三方数据导入到 Office 365
+# <a name="use-content-search-to-search-third-party-imported-data"></a>使用内容搜索来搜索第三方导入的数据
 
-您可以使用安全性 & 合规性中心中的[内容搜索电子数据展示工具](content-search.md)，从第三方数据源搜索导入到 Office 365 中邮箱的项目。 您可以创建查询以搜索所有导入的第三方数据项，也可以创建查询以搜索特定的第三方数据项。 此外，还可以创建基于查询的 Office 365 保留策略或基于查询的电子数据展示保留，以在 Office 365 中保留第三方数据。 
+您可以使用安全 & 合规中心中的[内容搜索电子数据展示工具](content-search.md)，在第三方数据源中搜索从 Microsoft 365 导入邮箱的项目。 您可以创建查询以搜索所有导入的第三方数据项，也可以创建查询以搜索特定的第三方数据项。 此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留以保留第三方数据。 
   
-有关导入第三方数据和可以导入到 Office 365 的第三方数据类型列表的详细信息，请参阅[在 office 365 中使用合作伙伴存档第三方数据](work-with-partner-to-archive-third-party-data.md)。 
+有关导入第三方数据和可以导入到 Microsoft 365 的第三方数据类型列表的详细信息，请参阅[在 Office 365 中使用合作伙伴存档第三方数据](work-with-partner-to-archive-third-party-data.md)。 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>创建查询以搜索所有第三方数据
 
@@ -105,7 +105,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
-|LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
+|领英  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |构思对齐  <br/> | `ipm.externaldata.MindAlign*` <br/> |
