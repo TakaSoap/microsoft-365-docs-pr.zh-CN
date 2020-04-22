@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署中心概述。
-ms.openlocfilehash: 540f0d50ef8adc292fc1fbd4ef13bb12556d596c
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 36506864d932665a2da8fd2dfc94ab276e4fa2ec
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113525"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638136"
 ---
 # <a name="desktop-deployment-center"></a>桌面部署中心
 
@@ -94,7 +94,7 @@ ms.locfileid: "43113525"
 <img align="middle" src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
 
-请按照以下步骤来规划和执行大规模的 Windows 10 和 Office 365 专业增强版部署。 下列每个步骤都是总体规划和部署过程的一部分，而且这些步骤通常都是在阶段性部署中同时进行。 下载免费的[桌面部署和管理实验室工具包](https://aka.ms/howtoshiftlabs)，以获取有关部署过程中突出显示的工具的实操培训。 你也可以[寻求帮助](https://aka.ms/mddhelp)，以通过 Microsoft 合作伙伴和 FastTrack 服务进行桌面部署。
+请按照以下步骤来规划和执行大规模的 Windows 10 和 Microsoft 365 企业应用版部署。 下列每个步骤都是总体规划和部署过程的一部分，而且这些步骤通常都是在阶段性部署中同时进行。 下载免费的[桌面部署和管理实验室工具包](https://aka.ms/howtoshiftlabs)，以获取有关部署过程中突出显示的工具的实操培训。 你也可以[寻求帮助](https://aka.ms/mddhelp)，以通过 Microsoft 合作伙伴和 FastTrack 服务进行桌面部署。
 
 <br>
 
@@ -102,7 +102,7 @@ ms.locfileid: "43113525"
 <tr class="even">
 <td><a href="https://aka.ms/mdd0"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd0">入门：人员、流程和技术指导</a></strong></p>
-<p>了解 Windows 10 和 Office 365 专业增强版的好处、相比之前的部署的主要变化和注意事项以及最佳做法，以确保顺利过渡到 Windows 10 和 Office 365 专业增强版。</p></td>
+<p>了解 Windows 10 和 Microsoft 365 企业应用版的好处、相比之前的部署的主要变化和注意事项以及最佳做法，以确保顺利过渡到 Windows 10 和 Office 365 专业增强版。</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
 <tbody>
@@ -115,13 +115,13 @@ ms.locfileid: "43113525"
 <tr class="even">
 <td><a href="https://aka.ms/mdd2"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd2">步骤 2：目录和网络就绪情况</a></strong></p>
-<p>Office 365 专业增强版中的云连接服务和 Windows Autopilot 等新部署选项都需要安装 Azure Active Directory。在将 Windows 映像、应用、驱动程序和相关文件移动到电脑时，还需要规划网络和连接。请了解新工具和部署选项如何减少和简化网络流量。</p></td>
+<p>Microsoft 365 企业应用版中的云连接服务和 Windows Autopilot 等新部署选项都需要安装 Azure Active Directory。在将 Windows 映像、应用、驱动程序和相关文件移动到电脑时，还需要规划网络和连接。请了解新工具和部署选项如何减少和简化网络流量。</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://aka.ms/mdd3"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd3">步骤 3：Office 和 LOB 应用交付</a></strong></p>
-<p>确保应用已打包，且可进行自动安装。 了解如何使用 Office 365 专业增强版的即点即用打包，通过新方法来配置、交付和持续更新 Office 应用。</p></td>
+<p>确保应用已打包，且可进行自动安装。 了解 Microsoft 365 企业应用版随附的即点即用打包技术提供的配置、交付和持续更新 Office 应用的新方法。</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -133,7 +133,7 @@ ms.locfileid: "43113525"
 <tr class="odd">
 <td><a href="https://aka.ms/mdd5"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd5">步骤 5：安全性和合规性注意事项</a></strong></p>
-<p>使用 Windows 10 和 Office 365 专业增强版，可通过新方法来保护数据、设备和用户，并快速检测和响应威胁。 此外，还请了解在迁移到 Windows 10 时，如何处理与磁盘加密、防恶意软件应用和策略相关的常见问题。</p></td>
+<p>使用 Windows 10 和 Microsoft 365 企业应用版，可通过新方法来保护数据、设备和用户，并快速检测和响应威胁。 此外，还请了解在迁移到 Windows 10 时，如何处理与磁盘加密、防恶意软件应用和策略相关的常见问题。</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -145,13 +145,13 @@ ms.locfileid: "43113525"
 <tr class="odd">
 <td><a href="https://aka.ms/mdd7"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd7">步骤 7：Windows 和 Office 服务</a></strong></p>
-<p>Windows 10 和 Office 365 专业增强版都会不断添加新功能，以利用最新的创新来不断提升用户体验和安全性。 请了解如何及时获得最新的半年和每月更新、新服务模式的工作原理以及你所拥有的工具和选项。</p></td>
+<p>Windows 10 和 Microsoft 365 企业应用版都会不断添加新功能，以利用最新的创新来不断提升用户体验和安全性。 请了解如何及时获得最新的半年和每月更新、新服务模式的工作原理以及你所拥有的工具和选项。</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
 <td><a href="https://aka.ms/mdd8"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd8">步骤 8：用户通信和培训</a></strong></p>
-<p>在将你的电脑切换至 Windows 10 和 Office 365 专业增强版后，确保你的用户了解新体验和新的工作方式。请了解如何利用用户采用帮助（通过 Microsoft FastTrack）、培训材料和通信模板，以及如何通过新方法来监控用户的接受和使用情况。</p></td>
+<p>在将你的电脑切换至 Windows 10 和 Microsoft 365 企业应用版后，确保你的用户了解新体验和新的工作方式。请了解如何利用用户采用帮助（通过 Microsoft FastTrack）、培训材料和通信模板，以及如何通过新方法来监控用户的接受和使用情况。</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </tr>
 </tbody>

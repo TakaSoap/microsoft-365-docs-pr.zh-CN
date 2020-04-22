@@ -19,7 +19,7 @@
               href: networking-avoid-network-hairpins.md
             - name: 第 4 步 - 配置流量旁路
               href: networking-configure-proxies-firewalls.md
-            - name: 步骤 5 - 优化客户端和 Office 365 服务性能
+            - name: 步骤 5 - 优化客户端和服务性能
               href: networking-optimize-tcp-performance.md
             - name: 网络阶段退出条件
               href: networking-exit-criteria.md
@@ -55,10 +55,10 @@
               href: windows10-enable-security-features.md
             - name: Windows 10 企业版阶段退出条件
               href: windows10-exit-criteria.md
-        - name: 阶段 4 - Office 365 专业增强版
+        - name: 阶段 4 - Microsoft 365 企业应用版
           href: office365proplus-infrastructure.md
           items:
-            - name: Office 365 专业增强版阶段退出条件
+            - name: Microsoft 365 企业应用版退出条件
               href: office365proplus-exit-criteria.md
         - name: 阶段 5 - 移动设备管理
           href: mobility-infrastructure.md
@@ -76,7 +76,7 @@
               href: infoprotect-configure-increased-security-office-365.md
             - name: 步骤 4 - 配置 Windows 信息保护
               href: infoprotect-deploy-windows-information-protection.md
-            - name: 步骤 5 - 配置 Office 365 数据丢失防护
+            - name: 步骤 5 - 配置数据丢失防护
               href: infoprotect-data-loss-prevention.md
             - name: 步骤 6 - 配置电子邮件加密
               href: infoprotect-email-encryption.md
@@ -174,7 +174,7 @@
           href: contoso-identity.md
         - name: Windows 10 企业版
           href: contoso-win10.md
-        - name: Office 365 专业增强版
+        - name: Microsoft 365 企业应用版
           href: contoso-o365pp.md
         - name: 移动设备管理
           href: contoso-mdm.md
