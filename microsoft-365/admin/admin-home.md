@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: 了解可供 Microsoft 365 管理员使用的资源。
 ms.custom: okr_smb
-ms.openlocfilehash: b087007d99c16f06cfdacaf8021e32a9566da5d5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 631c6640efeb6bebd8e091712b030ed61047042e
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105689"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781489"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 管理帮助中心
 
@@ -38,8 +38,8 @@ ms.locfileid: "43105689"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 将变为 Microsoft 365</h3>
-                        <p>我们正在更改一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 Microsoft 365 管理中心中自动更新，且帐单会在 2020 年 4 月 21 日当天或之后更新。</p>
+                        <h3>Office 365 就是现在的 Microsoft 365</h3>
+                        <p>我们更改了一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 Microsoft 365 管理中心中自动更新，且帐单会在 2020 年 4 月 21 日当天或之后更新。</p>
                         <ul>
                             <li><p><b>Office 365 商业协作版</b>现为 <b>Microsoft 365 商业基础版</b>。</p></li>
                             <li><p><b>Office 365 商业高级版</b>现为 <b>Microsoft 365 商业标准版</b>。</p></li>
@@ -182,7 +182,7 @@ ms.locfileid: "43105689"
                     </div>
                     <div class="cardText">
                         <h3>面向小型企业</h3>
-                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">使用 Office 365 构建你的小型企业。</a></p>
+                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">使用 Microsoft 365 构建你的小型企业。</a></p>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@ ms.locfileid: "43105689"
                     </div>
                     <div class="cardText">
                         <h3>面向企业</h3>
-                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">面向在企业组织中部署、配置和管理 Office 365 的 IT 专业人员的指南。</a></p>
+                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">面向在企业组织中部署、配置和管理 Microsoft 365 的 IT 专业人员的指南。</a></p>
                     </div>
                 </div>
             </div>
@@ -249,7 +249,7 @@ ms.locfileid: "43105689"
                     <div class="cardText">
                         <h3>疑难解答</h3>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=522692">修复 Office 安装问题</a></p>
-                        <p><a href="https://diagnostics.outlook.com/">使用 Microsoft 支持和恢复助手修复 Outlook 和 Office 365 问题</a></p>
+                        <p><a href="https://diagnostics.outlook.com/">使用 Microsoft 支持和恢复助手修复 Outlook 和 Microsoft 365 问题</a></p>
                         <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">修复电子邮件问题</a></p>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=866431">修复 OneDrive for Business 同步问题</a></p>
                     </div>
