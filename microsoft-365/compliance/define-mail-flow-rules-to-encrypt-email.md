@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则（传输规则），以使用 Office 365 邮件加密对邮件进行加密和解密。
-ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632977"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790701"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定义用于加密电子邮件的邮件流规则
 
@@ -91,6 +91,28 @@ ms.locfileid: "43632977"
    如果要指定另一个操作，可以选择 "**添加操作**"。
 
 7. 从 "**执行以下**操作" 列表中，删除为**修改邮件安全性** \>而分配的所有操作**应用早期版本的 OME**。
+
+8. 选择“**保存**”。
+
+## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>创建邮件流规则，以使用新的 OME 功能删除传出电子邮件的加密
+
+您可以使用 EAC 定义邮件流规则，以使用新的 OME 功能触发删除邮件加密。
+
+### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>使用 EAC 创建一个规则，以使用新的 OME 功能从电子邮件中删除加密
+
+1. 在 web 浏览器中，使用已被授予全局管理员权限的工作或学校帐户，[登录到 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
+
+2. 选择 "**管理**" 磁贴。
+
+3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
+
+4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+
+5. 在 "**名称**" 中，键入规则的名称，例如 "从传出邮件中删除加密"。
+
+6. 在 "**应用此规则**" 中，如果选择应从邮件中删除加密的条件，请添加**发件人位于** \> **组织内部**。 现在，添加其他条件以面向特定的收件人，例如**收件人位于** \> **组织外部**。
+
+7. 在 **"执行以下操作**" 中，选择 "**修改邮件安全** \> **删除 Office 365 邮件加密和权限保护**"。
 
 8. 选择“**保存**”。
 

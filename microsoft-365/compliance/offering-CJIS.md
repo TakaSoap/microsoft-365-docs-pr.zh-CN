@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ef19b106d5b00bb8b436b56b6da8bb653873f3a
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
+ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583319"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772513"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事审判信息服务（CJIS）安全策略
 
@@ -82,7 +82,6 @@ Microsoft 使用州 CJIS Systems 机关（CSA）签署信息协议;你可以从�
 
 - [刑事审判信息服务](https://aka.ms/cjis)
 - [CJIS 安全策略](https://aka.ms/cjis-security-policy)
-- [CJIS 安全策略版本 5.3 backgrounder](https://aka.ms/cjis-backgrounder)
 - [适用于 Azure 政府的 CJIS 实施指南](https://aka.ms/cjisimplementationguidelines)
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/?linkid=2087246)

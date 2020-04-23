@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是基于工作流的免费风险评估工具。 使用它来跟踪、分配和验证与 Microsoft 产品相关的法规遵从性活动。
-ms.openlocfilehash: 2a2c0b9311062da1269f7b56c926ced9e038627f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626228"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790659"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -35,7 +35,7 @@ ms.locfileid: "43626228"
 2. 使用 Microsoft 服务帐户（即 Office 365、Microsoft 365 或 Azure Active Directory （Azure AD）用户帐户）登录。
 
 > [!NOTE]
-> 在服务信任门户中，选择 "**合规性管理器**"，它是具有最新功能的预览版本。 请勿选择**合规性管理器（经典）**，其中包含本文档未涵盖的旧版功能。
+> 在服务信任门户中，选择 "**合规性管理器**"，它是具有最新功能的预览版本。 请勿选择**合规性管理器（经典）**，其中包含本文档未涵盖的早期版本功能。
 
 ## <a name="administration"></a>管理
 

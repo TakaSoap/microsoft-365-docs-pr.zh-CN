@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数的发行说明和已知问题（预览版）（M365 合规性中心中的一项功能，可帮助简化和自动化风险评估）。
-ms.openlocfilehash: dd7c99d2f0a86826be7803dc36e390250a4fc37b
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141547"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790587"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft 合规性分数（预览）发行说明
 
@@ -62,7 +62,7 @@ Microsoft 合规性分数的公开预览为你提供了对即将推出的功能�
    - 用户必须转到合规性管理器以创建新模板并修改现有[模板](working-with-compliance-manager.md#templates)。 
    - 创建模板时，您必须包括**产品**和**证书**的维度，以确保您的模板在合规性分数中显示。
  - **设置权限**：合规性分数尚未在合规性管理器中拥有权限的用户需要在 Microsoft 365 合规性中心中设置其权限（[了解详细信息](compliance-score-setup.md#set-user-permissions-and-assign-roles)）。
-- **数据传输**：具有合规性管理器中的数据的组织将看到符合性分数中的数据，而另一种方法也是如此。
+- **数据传输**：具有合规性管理器中的数据的组织将看到符合性分数中的数据，而与此不同的方法也是如此。
 - **根据合规性分数登录合规性管理器**：如果用户已登录合规性分数并选择链接以转到合规性管理器，则用户不必再次登录。 单击该链接后，将在浏览器中打开一个新的选项卡，其中带有一个对话框。 在标题为 "已成为 Microsoft 云服务客户" 的顶部部分？ 登录您的帐户，选择 "**登录**" 按钮以自动登录合规性管理器。
 
 ## <a name="known-issues-in-compliance-score-preview"></a>合规性分数中的已知问题（预览）
