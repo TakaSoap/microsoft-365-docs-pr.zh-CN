@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步了解相关信息，然后在整个组织中内推广 Microsoft Teams。
-ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d34673a412539dfc73296f0139fa2eb555c17099
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801237"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636695"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企业版的 Microsoft Teams
 
@@ -34,7 +34,7 @@ Microsoft Teams 集聊天、会议、文档共享和按线索组织对话等多�
 
 - 请确保你配置了右侧的[基础结构](deploy-foundation-infrastructure.md)阶段，以便团队具有所需的用户帐户和安全功能。 对于登录并使用带有保留和敏感度标签的安全电子邮件及文件，“标识”和“信息保护”阶段最为重要。
 - 通过[本文](https://docs.microsoft.com/microsoftteams/security-compliance-overview)详细了解 Teams 中的安全性和合规性。
-- 通过[本文](https://docs.microsoft.com/microsoftteams/office-365-licensing)详细了解适用于 Teams 的 Office 365 许可。
+- 通过[本文](https://docs.microsoft.com/microsoftteams/office-365-licensing)详细了解适用于 Teams 的许可。
 
 若要在组织内推广 Teams，请阅读[如何推广 Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams)。
 

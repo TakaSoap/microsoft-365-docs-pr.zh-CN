@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你需要确保你的密码在整个组织中都强大并易于管理。
-ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633090"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637044"
 ---
 # <a name="step-2-secure-your-passwords"></a>第 2 步：保护密码安全
 
@@ -82,7 +82,7 @@ ms.locfileid: "42633090"
 
 
 <a name="identity-custom-sign-in"></a>
-## <a name="customize-the-office-365-sign-in-page"></a>自定义 Office 365 登录页
+## <a name="customize-the-sign-in-page"></a>自定义登录页
 
 *这是可选的，适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
@@ -90,7 +90,7 @@ ms.locfileid: "42633090"
 
 使用 Microsoft 365 企业版，可以自定义登录页和访问面板页的外观，使其包含公司徽标、配色方案和自定义用户信息。 
 
-有关详细信息，请参阅[向 Office 365 登录页添加公司品牌](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)。
+有关详细信息，请参阅[向 Microsoft 365 登录页添加公司品牌](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)。
 
 有关配置说明，请参阅[向登录页和访问面板页添加公司品牌](https://aka.ms/aadpaddbranding)。
 

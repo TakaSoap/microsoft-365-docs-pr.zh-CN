@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 创建安全的 SharePoint 团队网站来存储最有价值和敏感的文件。
-ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 97a01275d1d45cb02e66e88f82c95311bcb6fe70
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951978"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636707"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>用于高度管控数据的 SharePoint 网站
 
@@ -40,10 +40,10 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 - 在 SharePoint 团队网站中存储文件（文档、幻灯片和电子表格等）。
 - 锁定网站以防止：
-  - 对不是网站 Office 365 组成员的用户进行访问。
+  - 对不是网站 Microsoft 365 组成员的用户进行访问。
   - 网站成员向其他用户授予访问权限。
   - 非网站成员请求访问网站。
-- 为 SharePoint 网站配置 Office 365 保留标签，作为阻止用户将文件发送到组织外部的默认方法。
+- 为 SharePoint 网站配置保留标签，作为阻止用户将文件发送到组织外部的默认方法。
 - 使用随文件一起传输的加密信息对网站中最敏感的文件进行加密。
 - 添加对最敏感的文件的权限，这样，即使它们在网站外共享，打开文件仍需要具有权限的用户帐户提供有效凭据。
 
@@ -53,11 +53,11 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 |:-------|:-----|
 | **要求** | **Microsoft 365 企业版 功能** |
 | 存储文件 | SharePoint 团队网站 |
-| 锁定网站 | Office 365 组和 SharePoint 团队网站权限 |
-| 标记网站中的文件 | Office 365 保留标签 |
-| 阻止向组织外发送文件的用户 | Office 365 中的数据丢失防护 (DLP) 策略 |
-| 加密网站中的所有文件 | Office 365 敏感度标签或子标签 |
-| 添加网站文件的权限 | Office 365 敏感度标签或子标签 |
+| 锁定网站 | Microsoft 365 组和 SharePoint 团队网站权限 |
+| 标记网站中的文件 | Microsoft 365 保留标签 |
+| 阻止向组织外发送文件的用户 | 数据丢失保护 (DLP) 策略 |
+| 加密网站中的所有文件 | Microsoft 365 敏感度标签或子标签 |
+| 添加网站文件的权限 | Microsoft 365 敏感度标签或子标签 |
 |||
 
 以下是安全的 SharePoint 网站的示例配置。
@@ -88,26 +88,26 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 该目的将推动基本配置项的确定，例如：
 
-- 要分配给网站“文档”部分的 Office 365 保留标签以及该标签的 DLP 策略
-- 由用户应用于网站中存储的高度敏感文件的 Office 365 敏感度子标签的设置
+- 要分配给网站“文档”部分的保留标签以及该标签的 DLP 策略
+- 由用户应用于网站中存储的高度敏感文件的敏感度子标签的设置
 
 确定后，使用这些设置在第 2 阶段中配置网站。 
 
-### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>步骤 1：Office 365 保留标签和 DLP 策略
+### <a name="step-1-microsoft-365-retention-labels-and-dlp-policies"></a>步骤 1：Microsoft 365 保留标签和 DLP 策略
 
-应用于 SharePoint 团队网站的“文档”部分时，Office 365 保留标签提供对存储在网站上的所有文件进行分类的默认方法。
+应用于 SharePoint 团队网站的“文档”部分时，保留标签提供对存储在网站上的所有文件进行分类的默认方法。
  
-对于用于高度管控数据的 SharePoint 网站，需要确定要使用的 Office 365 保留标签。
+对于用于高度管控数据的 SharePoint 网站，需要确定要使用的 保留标签。
 
-有关 Office 365 标签的设计注意事项，请参阅 [Office 365 分类和标签](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)。
+有关 Microsoft 365 标签的设计注意事项，请参阅 [Microsoft 365 分类和标签](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)。
 
 为保护敏感信息并防止意外或故意泄露，可以使用 DLP 策略。有关详细信息，请参阅此[概述](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)。
 
-对于 SharePoint 网站，必须为分配给网站的 Office 365 保留标签配置 DLP 策略，在用户尝试与外部用户共享文件时进行阻止。 
+对于 SharePoint 网站，必须为分配给网站的保留标签配置 DLP 策略，在用户尝试与外部用户共享文件时进行阻止。 
 
-### <a name="step-2-your-office-365-sensitivity-sublabel"></a>步骤 2：Office 365 灵敏度子标签
+### <a name="step-2-your-microsoft-365-sensitivity-sublabel"></a>步骤 2：您的 Microsoft 365 敏感度子标签
 
-若要对最敏感的文件提供加密和一组权限，用户必须应用 Office 365 敏感度标签或子标签。 子标签存在于现有标签下。 
+若要对最敏感的文件提供加密和一组权限，用户必须应用敏感度标签或子标签。 子标签存在于现有标签下。 
 
 如果需要将少量标签应用于全局和各个私人团队，请使用敏感度标签。 如果你拥有大量标签，或者希望在高度管控标签下整理安全网站的标签，请使用敏感度子标签。 
 
@@ -117,14 +117,14 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 已确定以下内容：
 
-- 适当的 Office 365 保留标签以及与标签关联的 DLP 策略
-- 包含加密和权限的 Office 365 敏感度子标签设置
+- 适当的保留标签以及与标签关联的 DLP 策略
+- 包含加密和权限的敏感度子标签设置
 
 ## <a name="phase-2-configure"></a>第 2 阶段：配置
 
 此阶段将使用并实施第 1 阶段中确定的设置，为高度管控的数据创建 SharePoint 网站。
 
-### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>步骤 1：创建专用 SharePoint 团队网站，使其包含相应 Office 365 组的所有者和成员
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-microsoft-365-group"></a>步骤 1：创建专用 SharePoint 团队网站，使其包含相应 Microsoft 365 组的所有者和成员
 
 请遵循[这些说明]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8)创建专用的 SharePoint 团队网站。
 
@@ -139,15 +139,15 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 
 使用这些设置可以禁止网站用户组成员与其他成员共享网站以及非成员访问网站。
 
-### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>步骤 3：为网站配置 Office 365 保留标签
+### <a name="step-3-configure-the-site-for-a-retention-label"></a>步骤 3：为网站配置保留标签
 
-按照[使用 Office 365 标签和 DLP 保护 SharePoint 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的说明执行以下操作：
+按照[使用标签和 DLP 保护 SharePoint 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的说明执行以下操作：
 
 1. 创建并发布高度管控数据的保留标签（如果需要）。
 2. 为网站配置步骤 1 中创建的保留标签。
 3. 为高度管控数据创建 DLP 策略以使用步骤 2 中创建的保留标签并阻止用户将文件发送到组织外部
 
-#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>步骤 4：为网站创建 Office 365 敏感度子标签
+#### <a name="step-4-create-a-sensitivity-sublabel-for-the-site"></a>步骤 4：为网站创建敏感度子标签
 
 与可由任何人应用于任何文件的高度管控数据敏感度标签不同，安全网站需要其自己的子标签，使分配了子标签的文件：
 
@@ -167,9 +167,9 @@ Microsoft 365 企业版包含一整套基于云的服务，使用户可以创建
 已配置了以下内容：
 
 - SharePoint 网站上具有更严格的权限设置
-- 将 Office 365 保留标签分配给 SharePoint 网站的“文档”部分
-- Office 365 保留标签的 DLP 策略
-- 可由用户应用于网站中存储的最敏感文件的 Office 365 敏感度标签或子标签，用于对文件加密并仅允许团队网站用户组中的成员进行“共同创作”访问 
+- 将保留标签分配给 SharePoint 网站的“文档”部分
+- 保留标签的 DLP 策略
+- 可由用户应用于网站中存储的最敏感文件的敏感度标签或子标签，用于对文件加密并仅允许团队网站用户组中的成员进行“共同创作”访问 
 
 下面是使用高管控标签的子标签生成的配置。
 

@@ -12,12 +12,12 @@ ms.collection:
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助金融服务迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
-ms.openlocfilehash: 4dc2c25001bb817dcf31927d2c15b1246cc52901
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: f312c1a44f81dda2cd89937354423f686eb7346b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978274"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632603"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -55,7 +55,7 @@ ms.locfileid: "42978274"
 
 Teams 为组织提供了一个协作中心。 这有助于让员工在常见的计划和项目上高效地工作。 Teams 允许团队成员进行 1:1 和多方聊天对话、协作和共同创作文档，以及存储和共享文件。 Teams 还通过集成的企业语音和视频来促进在线会议。 还可以使用 Microsoft Planner、Microsoft Dynamics 365、PowerApps、PowerBI 之类的 Microsoft 应用和第三方业务线应用程序来自定义 Teams。 Teams 旨在供内部团队成员使用，并允许可加入团队频道、参与聊天对话、访问存储文件和利用其他应用程序的外部用户使用
 
-每个 Microsoft Team 由 Office 365 组提供支持。 该组被视为众多 Office 365 服务（包括 Teams）的成员身份服务。 Office 365 组用于安全区分“所有者”和“成员”，并控制对 Teams 中各种功能的访问。 在与适当的监管控制和定期管理的访问审查相结合时，Teams 仅允许成员和所有者利用授权频道和功能。
+每个 Microsoft Team 由 Microsoft 365 组提供支持。 该组被视为众多 Office 365 服务（包括 Teams）的成员身份服务。 Microsoft 365 组用于安全区分“所有者”和“成员”，并控制对 Teams 中各种功能的访问。 在与适当的监管控制和定期管理的访问审查相结合时，Teams 仅允许成员和所有者利用授权频道和功能。
 
 Teams 从金融服务中获益的一个常见场景是在运行内部项目或计划时。 例如，许多金融机构（包括银行、理财管理公司、信用合作社和保险公司）都需要有反洗钱和其他合规计划。 由 IT、零售和理财管理等业务线以及金融犯罪部门组成的跨职能团队可能需要相互共享数据，并就计划或具体调查进行沟通。 传统上，这些计划使用共享网络驱动器，但这种方法可能会带来许多挑战，包括：
 * 一次只能有一个用户可以编辑文档。
@@ -70,18 +70,18 @@ Teams 可提供一个协作空间来安全地存储敏感的客户端数据，�
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams：改进协作并降低合规性风险
 
-通过将 Office 365 组用作基础成员资格服务，Microsoft 365 为 Teams 提供了其他常见的策略功能。 这些策略可帮助改进协作并满足合规性需求。
+通过将 Microsoft 365 组用作基础成员资格服务，Microsoft 365 为 Teams 提供了其他常见的策略功能。 这些策略可帮助改进协作并满足合规性需求。
 
-**Office 365 组命名策略**有助于确保 Office 365 组和团队根据公司策略进行命名。 如果不适合，名称可能会有问题。 例如，如果名称未正确应用，员工可能不知道与哪些团队合作或共享信息。 组命名策略（包括支持基于前缀/后缀的策略和自定义屏蔽词）可强制使用良好的“安全机制”，并防止使用特定字词，例如保留词或不恰当的术语。
+**Microsoft 365 组命名策略**有助于确保 Microsoft 365 组和团队根据公司策略进行命名。 如果不适合，名称可能会有问题。 例如，如果名称未正确应用，员工可能不知道与哪些团队合作或共享信息。 组命名策略（包括支持基于前缀/后缀的策略和自定义屏蔽词）可强制使用良好的“安全机制”，并防止使用特定字词，例如保留词或不恰当的术语。
   
-**Office 365 组过期策略**有助于确保 Office 365 组和团队的保留时间不会超过组织所需的时间。 此功能可帮助避免两个关键信息管理问题：
+**Microsoft 365 组过期策略**有助于确保 Microsoft 365 组和团队的保留时间不会超过组织所需的时间。 此功能可帮助避免两个关键信息管理问题：
 
 * 不需要或不使用的团队数量剧增。
 * 数据保留期超出了组织需要或使用的期限（依法保留/保存情况除外）。
 
-管理员可为 Office 365 组指定有效期，如 90 天、180 天或 365 天。 如果 Office 365 组支持的服务在过期后处于非活动状态，则会通知组所有者。 如果未采取任何操作，将删除 Office 365 组及其所有相关服务（包括 Teams）。
+管理员可为 Microsoft 365 组指定有效期，如 90 天、180 天或 365 天。 如果 Microsoft 365 组支持的服务在过期后处于非活动状态，则会通知组所有者。 如果未采取任何操作，将删除 Microsoft 365 组及其所有相关服务（包括 Teams）。
   
-Teams 和其他基于组的服务中存储的超过保留期的数据会导致金融服务组织面临风险。 建议采用 Office 365 组过期策略来帮助防止保留不再需要的数据。 Microsoft 365 结合了内置的保留标签和策略，帮助确保组织仅保留满足公司策略和法规遵从义务所需的数据。
+Teams 和其他基于组的服务中存储的超过保留期的数据会导致金融服务组织面临风险。 建议采用 Microsoft 365 组过期策略来帮助防止保留不再需要的数据。 Microsoft 365 结合了内置的保留标签和策略，帮助确保组织仅保留满足公司策略和法规遵从义务所需的数据。
 
 #### <a name="teams-integrate-custom-requirements-with-ease"></a>Teams：轻松集成自定义要求
 
@@ -215,7 +215,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
 - 保留期到期时发生的情况（删除文档、启动处置评审或不执行任何操作）
 -  什么触发了保留期开始（创建日期、上次修改日期、标记日期或事件），并将文档或电子邮件标记为记录（这意味着不能编辑或删除）
 
-然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Office 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
+然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Microsoft 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
  
 **证券交易委员会 (SEC)** 要求经纪人代理商和其他受监管的金融机构保留所有业务相关的通信。 这些要求适用于多种类型的通信和数据，包括电子邮件、文档、即时消息、传真等。 **SEC 条例 17a-4** 定义这些组织必须满足的条件，以便将记录存储在电子数据存储系统中。 2003 年，SEC 发布了一篇阐明这些要求的文稿。 其中包含以下条件：
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对 Windows 10 企业版的条件。
-ms.openlocfilehash: 42d8ec912a70aecef49672682c25f5e42c4bbe21
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: cf4a813a6cf89029eebde8e5947caf7b3c2ea553
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632990"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636683"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>阶段 3：Windows 10 企业版基础结构退出条件
 
@@ -127,4 +127,4 @@ Windows Autopilot 配置设备并将其连接到 Azure AD。
 
 |||
 |:-------|:-----|
-|![阶段 4：Office 365 专业增强版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是 [Office 365 专业增强版](office365proplus-infrastructure.md)。 |
+|![阶段 4：Microsoft 365 企业应用版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果你正在执行 Microsoft 365 企业版端到端部署的各个阶段，下一个阶段是 [Microsoft 365 企业应用版](office365proplus-infrastructure.md)。 |
