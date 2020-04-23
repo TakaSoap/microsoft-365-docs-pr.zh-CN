@@ -149,10 +149,6 @@
           href: document-fingerprinting.md
         - name: 敏感信息的 DLP 函数
           href: what-the-dlp-functions-look-for.md
-    - name: M365 中的加密
-      href: encryption.md
-    - name: Office 365 服务加密
-      href: office-365-service-encryption.md
     - name: 客户密钥
       items:
         - name: 使用 Office 365 中的客户密钥执行服务加密
@@ -163,7 +159,7 @@
           href: customer-key-manage.md
         - name: 滚动或旋转客户密钥或可用性密钥
           href: customer-key-availability-key-roll.md
-        - name: 了解 Office 365 客户密钥的可用性密钥
+        - name: 了解客户密钥的可用性密钥
           href: customer-key-availability-key-understand.md
     - name: 电子邮件加密
       href: email-encryption.md
@@ -204,8 +200,6 @@
               href: legacy-information-for-message-encryption.md
             - name: 为以前版本的 Office 365 邮件加密设置 Azure 权限管理
               href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: 在 SharePoint 管理中心中设置 IRM
-      href: set-up-irm-in-sp-admin-center.md
     - name: 了解数据分类（预览）
       href: data-classification-overview.md
       items:
@@ -800,7 +794,7 @@
         - name: 合规性管理器（预览版）
           href: compliance-manager-overview.md
           items:
-            - name: 合规性管理器（预览版）发行说明
+            - name: 合规性管理器（预览版）新增功能
               href: compliance-manager-release-notes.md
             - name: 使用合规性管理器（预览版）
               href: working-with-compliance-manager.md
@@ -1218,7 +1212,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 企业版
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: Office 365 商业版
+- name: Microsoft 365 商业应用版
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
 - name: Microsoft 365 安全中心
   href: 'https://docs.microsoft.com/microsoft-365/security/'

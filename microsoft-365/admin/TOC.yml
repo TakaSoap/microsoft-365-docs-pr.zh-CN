@@ -87,7 +87,7 @@
       items:
         - name: Office 365 中的电子邮件
           href: email/email.md
-        - name: Office 365 用户电子邮件设置
+        - name: 用户电子邮件设置
           href: email/office-365-user-email-settings.md
         - name: 添加用户的其他电子邮件别名
           href: email/add-another-email-alias-for-a-user.md
@@ -189,6 +189,8 @@
           href: manage/remove-licenses-from-users.md
         - name: 解决许可证冲突
           href: manage/resolve-license-conflicts.md
+        - name: 管理邮件中心中的邮件
+          href: manage/manage-messages.md
         - name: 使用新增管理功能显示或隐藏新功能
           href: manage/show-hide-new-features.md
     - name: 订阅和计费
@@ -235,11 +237,11 @@
           href: create-groups/office-365-groups.md
         - name: 比较组
           href: create-groups/compare-groups.md
-        - name: 创建 Office 365 组
+        - name: 创建 Microsoft 365 组
           href: create-groups/create-groups.md
-        - name: 管理 Office 365 组
+        - name: 管理 Microsoft 365 组
           href: create-groups/manage-groups.md
-        - name: 计划 Office 365 组中的内容管理
+        - name: Microsoft 365 组中的监管计划
           href: create-groups/plan-for-groups-governance.md
         - name: 管理创建组
           href: create-groups/manage-creation-of-groups.md
@@ -251,7 +253,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: 添加或删除组成员
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Office 365 组过期策略
+        - name: Microsoft 365 组过期策略
           href: create-groups/office-365-groups-expiration-policy.md
         - name: 恢复已删除的组
           href: create-groups/restore-deleted-group.md

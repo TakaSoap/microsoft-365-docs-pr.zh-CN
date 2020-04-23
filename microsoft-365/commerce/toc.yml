@@ -4,7 +4,7 @@
   href: ../admin/admin-home.md
 - name: 试用或购买
   items:
-    - name: 注册 Office 365 试用版
+    - name: 注册 Microsoft 365 试用版
       href: sign-up-for-office-365-trial.md
     - name: 试用或购买 Microsoft 365
       href: try-or-buy-microsoft-365.md
@@ -64,8 +64,6 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: 付款服务指令 2 和强客户身份验证
       href: billing-and-payments/psd2.md
-    - name: 税务信息
-      href: billing-and-payments/tax-information.md
 - name: 计费帐户
   items:
     - name: 管理计费帐户

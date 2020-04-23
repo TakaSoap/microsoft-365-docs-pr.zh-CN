@@ -191,20 +191,18 @@
               href: mtp/feedback.md
             - name: 通过 ServiceNow 管理票证
               href: ./mtp/tickets.md
-    - name: Office 365 安全中心
+    - name: Microsoft 365 安全中心
       items:
         - name: 入门
           items:
-            - name: Office 365 安全路线图
+            - name: 安全性路线图
               href: ./office-365-security/security-roadmap.md
-            - name: 配置 Office 365 租户以提高安全性
+            - name: 配置租户以提高安全性
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: 新版 Microsoft 365 安全中心
               href: ./mtp/overview-security-center.md
-            - name: Office 365 安全与合规中心的权限
+            - name: 安全与合规中心内的权限
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-            - name: Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
-              href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: 向用户授予对安全中心的访问权限
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: 保护免遭威胁侵害
@@ -281,7 +279,7 @@
                   href: ./office-365-security/zero-hour-auto-purge.md
                 - name: 电子邮件中的安全提示
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: 使用除名门户将自己从 Office 365 阻止的发件人名单中删除
+                - name: 使用除名门户将自己从阻止的发件人名单中删除
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
             - name: 防钓鱼保护
               href: ./office-365-security/anti-phishing-protection.md
@@ -320,9 +318,9 @@
             - name: 电子邮件身份验证
               href: ./office-365-security/email-validation-and-authentication.md
               items:
-                - name: Office 365 如何使用 SPF 来防止欺骗
+                - name: Microsoft 365 如何使用 SPF 来防止欺骗
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
-                - name: 在 Office 365 中设置 SPF 以防止欺骗
+                - name: 设置 SPF 以帮助防止欺骗
                   href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
                 - name: 使用 DKIM 验证出站电子邮件
                   href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -600,7 +598,7 @@
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Office 365 企业版
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
-        - name: Office 365 商业版
+        - name: Microsoft 365 商业版
           href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
     - name: Microsoft 365 合规中心
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'
