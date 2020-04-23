@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073320"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632493"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft 支持和专业服务与 GDPR 和 CCPA 数据主体请求
 
@@ -228,7 +228,7 @@ Microsoft 是与 FastTrack 团队合作的客户联系人的数据控制者。�
   
 如果需要在用户数据正通过 FastTrack 迁移系统进行处理时处理任何访问、纠正或导出 DSR 请求，客户需自行通过存储用户数据的现有源系统来完成此 DSR。 用户迁移完成且数据已迁移到目标 Microsoft 云服务后，即可应用由 Microsoft 提供的有关客户如何使用 Microsoft 产品、服务和管理工具来查找个人数据并对其执行操作以响应数据主体请求的指南。 若要查看此指南，请参阅[针对 GDPR 的数据主体请求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)。 
 
-如果需要在组织参与正在进行的 FastTrack 迁移项目时响应 DSR 删除请求删除 Office 365 用户帐户，则应注意，迁移系统可能会在用户迁移完成后的一段时间内保留用户迁移数据的副本，且删除 Office 365 用户帐户的操作将不会自动删除存储在 FastTrack 迁移系统中的此类用户迁移数据。如果希望 Microsoft FastTrack 团队删除用户迁移数据，可以[提交请求](https://go.microsoft.com/fwlink/?linkid=874544)。在正常的业务过程中，Microsoft FastTrack 在组织迁移完成后即会删除所有数据副本。
+如果需要在组织参与正在进行的 FastTrack 迁移项目时响应 DSR 删除请求删除用户帐户，则应注意，迁移系统可能会在用户迁移完成后的一段时间内保留用户迁移数据的副本，且删除用户帐户的操作将不会自动删除存储在 FastTrack 迁移系统中的此类用户迁移数据。如果希望 Microsoft FastTrack 团队删除用户迁移数据，可以[提交请求](https://go.microsoft.com/fwlink/?linkid=874544)。在正常的业务过程中，Microsoft FastTrack 在组织迁移完成后即会删除所有数据副本。
 
 ## <a name="other-consulting-services"></a>其他咨询服务
 

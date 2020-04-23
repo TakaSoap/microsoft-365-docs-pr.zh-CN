@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Windows 和 Office 重要的安全性和合规性注意事项。
-ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 003064f521f1a68c01da9d6a2c9fb19eae7d3eaf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085254"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636768"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步骤 5：安全性和合规性注意事项
 
@@ -30,20 +30,20 @@ ms.locfileid: "42085254"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>步骤 5：安全性和合规性注意事项</strong></p>
-<p>使用 Windows 10 和 Office 365 专业增强版，可通过新方法来保护数据、设备和用户，并快速检测和响应威胁。此外，还请了解在迁移到 Windows 10 时，如何处理与磁盘加密、防恶意软件应用和策略相关的常见问题。</p></td>
+<p>借助 Windows 10 和 Microsoft 365 企业应用版，可通过新方法来保护数据、设备和用户，并快速检测和应对威胁。此外，请了解在迁移到 Windows 10 时，如何处理与磁盘加密、防恶意软件应用和策略相关的常见问题。</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->安全性和合规性是我们涉及 Windows 10 和 Office 365 专业增强版安全性和合规性注意事项的建议部署过程的第五个步骤。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
+>安全性和合规性是我们涉及 Windows 10 和 Microsoft 365 企业应用版安全性和合规性注意事项的建议部署过程的第五个步骤。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-在从以前版本的 Windows 和 Office 迁移时，是时候查看作为 Windows 10 和 Office 365 专业增强版部署的一部分的面向新的安全性和合规性功能的选项，并查看注意事项和常见障碍。 仅 Windows 10 中的许多安全相关功能就在推动向更新平台迁移。 另外，与 Office 365 云服务和 Azure Active Directory 标识选项集成，可以为数据、设备和用户提供持续更新的新保护。
+是时候查看在 Windows 10 和 Microsoft 365 企业应用版部署期间针对新的安全性和合规性功能的选项，并了解在从之前版本的 Windows 和 Office 迁移时的注意事项和常见障碍。 仅 Windows 10 中的许多安全相关功能就在推动向更新平台迁移。 另外，通过使用 Azure Active Directory 与云服务和标识选项集成，可为数据、设备和用户提供持续更新的新保护。
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>克服潜在的安全性相关的部署障碍
 
-在介绍迁移到 Windows 10 和 Office 365 专业增强版并将这些体验连接到云时可以添加的新功能之前，先来看看可能会经常中断部署过程的一些趋势。
+在介绍迁移到 Windows 10 和 Microsoft 365 企业应用版并将这些体验连接到云时可添加的新功能之前，先来看看可能会经常中断部署过程的一些趋势。
 
 ### <a name="disk-encryption"></a>磁盘加密
 
@@ -63,7 +63,7 @@ ms.locfileid: "42085254"
 
 ### <a name="security-policies"></a>安全策略
 
-用于旧版 Windows 和 Office 的 Active Directory 组策略设置可能无法直接转换为 Windows 10 和 Office 365 专业增强版，并且对更新的安全性和合规性功能有不同的注意事项。最好使用 Microsoft Security Compliance Toolkit 获取当前版本的 Windows 和 Office 的安全策略基准。另外，作为 Microsoft Intune 的一部分，值得研究移动设备管理策略。
+用于旧版 Windows 和 Office 的 Active Directory 组策略设置可能无法直接转换为 Windows 10 和 Microsoft 365 企业应用版，并且更新的安全性和合规性功能可能存在不同的注意事项。最好使用 Microsoft Security Compliance Toolkit 获取当前版本的 Windows 和 Office 的安全策略基准。另外，作为 Microsoft Intune 的一部分，值得研究移动设备管理策略。
 
 ![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
@@ -71,11 +71,11 @@ ms.locfileid: "42085254"
 
 ## <a name="new-security-and-compliance-capabilities-in-microsoft-365"></a>Microsoft 365 新安全性和合规性
 
-下面介绍在推进当前保护时的注意事项以及在迁移之前要注意的事项。现在我们来看看在从 EMS 及更高版本迁移到 Windows 10、Office 365 专业增强版和基于云的选项时可以利用的新功能。
+下面介绍在推进当前保护时的注意事项以及在迁移之前要注意的事项。现在我们来看看在从 EMS 及更高版本迁移到 Windows 10、Microsoft 365 企业应用版和基于云的选项时可以利用的新功能。
 
 ### <a name="identity-and-access-management"></a>身份和访问管理
 
-首先是身份和访问管理。Azure Active Directory 是适用于应用、设备和云服务的身份控制平台，也是连接 Office 365 和其他云服务的新式方式。使用条件访问可以根据登录的位置、正在使用的设备以及异常行为等内容定义不同的身份验证要求。
+首先是标识和访问管理。Azure Active Directory 是适用于应用、设备和云服务的标识控制平台，也是连接 Microsoft 365 和其他云服务的新式方式。使用条件访问可根据登录的位置、正在使用的设备以及异常行为等内容定义不同的身份验证要求。
 
 生物识别技术可以在设备级别提供唯一标识符，帮助你在朝着消除密码的目标迈进时实现更简单、更安全地访问设备和应用。Windows Hello 提供基于设备的多重身份验证。它依赖于设备本身、你的 PIN 或唯一生物识别标识符（例如，你的面部或指纹），可以通过策略强制执行。
 
@@ -99,7 +99,7 @@ ms.locfileid: "42085254"
 
 借助 Microsoft Intelligent Security Graph，可以更快速地访问来自新出现的威胁的信息和保护。可以借助下面的一些示例开始使用 Office。
 
-**[数据丢失防护](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** 内置于 Office 365 专业增强版中，可帮助在检测到信用卡或标识号等高风险内容时通知用户相关的安全策略。通知用户后，策略可以通知或阻止发送和共享。
+**[数据丢失防护](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** 内置在 Microsoft 365 企业应用版中，可帮助在检测到信用卡或标识号等高风险内容时通知用户相关的安全策略。通知用户后，策略可通知或阻止发送和共享。
 
 **[Azure 信息保护](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)** 是一项可与 Office 一起使用的补充服务，使用户能够轻松地对 Office 文件进行分类和标记。它可以触发对标记文件的自动操作，例如加密或锁定共享。
 
@@ -119,12 +119,12 @@ Windows 10 中的 **[Windows Defender 应用程序控制](https://docs.microsoft
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) 作为基于云的管理服务，用于包括 IOS、Android 和 Windows 设备在内的移动应用场景，现在可以配置为共同管理，以补充和扩展由 Configuration Manager 管理的特定工作负载的控件。这里涉及到一个优势：访问受保护资源的设备可能必须注册到设备管理（甚至是非托管、非加入域或非加入 Azure AD 的设备）。用户还可以在操作系统和应用程序级别利用粒度配置和符合性策略实施。可以使用 Microsoft Intune 集中配置应用程序策略和设置，并对 Windows 10 中的 Office 365 专业增强版和应用商店应用强制执行应用程序策略和设置。
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) 作为基于云的管理服务，适合包括 iOS、Android 和 Windows 设备在内的移动应用场景，它现可配置为共同管理，以补充和扩展由 Configuration Manager 管理的特定工作负载的控件。这里涉及到一个优势：访问受保护资源的设备可能必须注册到设备管理（甚至是非托管、未加入域或未加入 Azure AD 的设备）。你还可在操作系统和应用程序级别使用粒度配置和合规性策略实施。可使用 Microsoft Intune 集中配置应用程序策略和设置，并对 Windows 10 中的 Microsoft 365 企业应用版和应用商店应用强制执行应用程序策略和设置。
 
 ## <a name="next-step"></a>后续步骤
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[步骤 6：OS 部署和功能更新](https://aka.ms/mdd6)
+## <a name="step-6-os-deployment-and-feature-updates"></a>[步骤 6：OS 部署和功能更新](https://aka.ms/mdd6)
 
 ## <a name="previous-step"></a>上一步 
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[步骤 4：用户文件和设置](https://aka.ms/mdd4)
+## <a name="step-4-user-files-and-settings"></a>[步骤 4：用户文件和设置](https://aka.ms/mdd4)

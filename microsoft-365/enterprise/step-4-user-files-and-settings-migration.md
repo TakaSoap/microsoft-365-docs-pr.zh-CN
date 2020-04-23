@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何迁移用户文件和设置。
-ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 7904c9035ac87424f361e9ff4d6fb20596e335de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113537"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636780"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步骤 4：用户文件和设置迁移
 
@@ -38,7 +38,7 @@ ms.locfileid: "43113537"
 </table>
 
 >[!NOTE]
->虽然在移至 Office 365 专业增强版后可以继续使用过去使用的迁移过程，但我们建议使用 OneDrive 的“已知文件夹移动”（见下方）。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
+>虽然在移至 Microsoft 365 企业应用版后可继续使用过去使用的迁移过程，但我们建议使用 OneDrive 的“已知文件夹移动”（见下方）。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
 大规模部署最棘手且通常大多数手动执行的任务之一是，转移用户文件和设置。本文将介绍把用户迁移到新电脑、已刷新电脑和重置映像电脑时可用的选项。

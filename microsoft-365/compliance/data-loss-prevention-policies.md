@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 通过安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
-ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189078"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630599"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -79,7 +79,7 @@ DLP 策略包含以下基本内容：
   
 ### <a name="locations"></a>位置
 
-无论信息位于 Exchange Online、SharePoint Online、OneDrive for Business 还是 Microsoft Teams 中，DLP 策略均可查找和保护 Office 365 中的敏感信息。 你可以选择保护 Exchange 电子邮件、Microsoft Teams 聊天和频道消息以及所有 SharePoint 或 OneDrive 库中的内容，或为策略选择特定位置。
+无论信息位于 Exchange Online、SharePoint Online、OneDrive for Business 还是 Microsoft Teams 中，DLP 策略均可查找和保护 Microsoft 365 中的敏感信息。 你可以选择保护 Exchange 电子邮件、Microsoft Teams 聊天和频道消息以及所有 SharePoint 或 OneDrive 库中的内容，或为策略选择特定位置。
   
 ![DLP 策略可以在其中应用的位置选项](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
@@ -121,7 +121,7 @@ DLP 策略包含以下基本内容：
     
 #### <a name="types-of-sensitive-information"></a>敏感信息类型
 
-DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Office 365 包含对多个不同地区供您使用的众多常见敏感信息类型的定义，例如信用卡号、银行账号、国民身份证号及护照号等。 
+DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Microsoft 365 包含对多个不同地区供你使用的众多常见敏感信息类型的定义，例如信用卡号、银行账号、国民身份证号及护照号等。 
   
 ![可用敏感信息类型列表](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
@@ -397,7 +397,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 创建 DLP 策略的第一步是选择要保护的内容。 从 DLP 模板开始创建，无需从头构建一组新规则，无需指出默认应包含哪些信息类型。 然后即可添加或修改这些要求，微调规则以满足组织的特定要求。
   
-预配置的 DLP 策略模板可帮助你检测特定类型的敏感信息，如 HIPAA 数据、PCI-DSS 数据、格雷姆-里奇-比利雷法案数据，甚至是特定区域设置的个人身份信息 (P.I.)。 要使您能够轻松地查找和保护常见类型的敏感信息，包含在 Office 365 中的策略模板已包含您要开始构建策略所需的最常见的敏感信息类型。
+预配置的 DLP 策略模板可帮助你检测特定类型的敏感信息，如 HIPAA 数据、PCI-DSS 数据、格雷姆-里奇-比利雷法案数据，甚至是特定区域设置的个人身份信息 (P.I.)。 要使你能够轻松地查找和保护常见类型的敏感信息，包含在 Microsoft 365 中的策略模板已包含你要开始构建策略所需的最常见的敏感信息类型。
   
 ![数据丢失防护策略模板列表，重点放在美国爱国者法案模板上](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -501,11 +501,11 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 
 创建 DLP 策略的合规性团队成员需要具有对安全 &amp; 合规中心的访问权限。 默认情况下，租户管理员将有权访问此位置，并可授予合规部主管和其他人访问安全 &amp; 合规中心的权限，而不为其提供租户管理员的所有权限。为此，我们建议你：
   
-1. 在 Office 365 中创建组并向其添加合规部主管。
+1. 在 Microsoft 365 中创建组并向其添加合规部主管。
     
 2. 在安全 &amp; 合规中心的“**权限**”页面上创建一个角色组。 
     
-3. 将 Office 365 组添加到角色组。
+3. 将 Microsoft 365 组添加到角色组。
     
 有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
@@ -519,7 +519,7 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
     
 2. 使用任何[策略和合规性 dlp cmdlet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-但是，DLP 报告需要从 Office 365（包括 Exchange Online）提取数据。 因此，**可以在 Exchange Online Powershell 中使用 DLP 报告的 cmdlet，而不能在安全 &amp; 合规中心 Powershell 中使用**。 因此，若要使用适用于 DLP 报告的 cmdlet，你需要执行以下操作：
+但是，DLP 报告需要从 Microsoft 365（包括 Exchange Online）提取数据。 因此，**可以在 Exchange Online Powershell 中使用 DLP 报告的 cmdlet，而不能在安全 &amp; 合规中心 Powershell 中使用**。 因此，若要使用适用于 DLP 报告的 cmdlet，你需要执行以下操作：
   
 1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
@@ -544,4 +544,3 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 - [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)
     
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
-    

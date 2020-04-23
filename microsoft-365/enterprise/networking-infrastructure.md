@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 部署 Microsoft 365 企业版的网络基础结构的步骤。
-ms.openlocfilehash: 9a805ffbdbdc19ef5943a0c0ba0ff8f010d3e19b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 341e5530b159d4ba78b94001d92427e36224ab04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066564"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631473"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>第 1 阶段：Microsoft 365 企业版的网络基础结构
 
@@ -28,7 +28,7 @@ ms.locfileid: "42066564"
 
 Microsoft 365 企业版包括 Office 365、Microsoft Intune 以及 Microsoft Azure 的许多标识和安全服务。 所有这些基于云的服务都依赖于来自客户端设备通过 Internet 或专用电路的连接的安全性、性能和可靠性。 为了托管这些服务并将其提供给世界各地的客户，Microsoft 设计了一个强调性能和集成的网络基础架构。 
 
-在这个阶段，将遍历创建与 Microsoft 365 企业版云服务的高性能连接的关键注意事项。有关概述，请参阅 [Office 365 网络原则](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)。
+在这个阶段，将逐一查看创建与 Microsoft 365 企业版云服务的高性能连接的关键注意事项。有关概述，请参阅 [Microsoft 365 网络原则](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)。
 
 >[!Note]
 >如果已部署网络基础结构，请查看这一阶段的[退出条件](networking-exit-criteria.md)，以确保其满足 Microsoft 365 企业版的必备条件和可选条件。
@@ -43,7 +43,7 @@ Microsoft 365 企业版包括 Office 365、Microsoft Intune 以及 Microsoft Azu
 |![第 2 步](../media/stepnumbers/Step2.png)|[配置每个办公室的本地 Internet 连接](networking-dns-resolution-same-location.md)|
 |![第 3 步](../media/stepnumbers/Step3.png)|[避免网络回流](networking-avoid-network-hairpins.md)|
 |![第 4 步](../media/stepnumbers/Step4.png)|[配置流量旁路](networking-configure-proxies-firewalls.md)|
-|![第 5 步](../media/stepnumbers/Step5.png)|[优化客户端和 Office 365 服务性能](networking-optimize-tcp-performance.md)|
+|![第 5 步](../media/stepnumbers/Step5.png)|[优化客户端和服务性能](networking-optimize-tcp-performance.md)|
 
 
 在完成这些步骤后，请转到这一阶段的[退出条件](networking-exit-criteria.md)，以确保满足 Microsoft 365 企业版的必备条件和可选条件。

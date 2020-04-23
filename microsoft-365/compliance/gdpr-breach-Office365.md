@@ -1,5 +1,5 @@
 ---
-title: 符合 GDPR 的 Office 365 泄露通知
+title: GDPR 泄露通知
 description: Microsoft 如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时响应和通知客户。
 keywords: Office 365, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 25888f0981cc4fe2b25e70282f5f6b49283cdcf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ae69a8330f5daec275247e718f7eb66a5f0f8bf9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073849"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633437"
 ---
-# <a name="office-365-breach-notification-under-the-gdpr"></a>符合 GDPR 的 Office 365 泄露通知
+# <a name="breach-notification-under-the-gdpr"></a>GDPR 泄露通知
 
 作为数据处理者，Office 365 可确保我们的客户作为数据控制者能够符合 GDPR 的泄露通知要求。为此，我们致力于下列方面：
 

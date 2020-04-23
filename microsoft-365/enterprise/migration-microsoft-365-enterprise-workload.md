@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成将 Microsoft Office、Office 服务器和 Windows 的版本迁移到组织中的 Microsoft 365 企业版的过程。
-ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113490"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631533"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>迁移到 Microsoft 365 企业版
 
@@ -25,8 +25,8 @@ ms.locfileid: "43113490"
 
 要最大限度提高集成了产品套件的 Microsoft 365 企业版的业务价值，请开始规划并实施迁移以下版本的策略：
 
-- 安装在计算机上的 Office 客户端迁移到 Office 365 专业增强版
-- 安装在服务器上的 Office 服务器迁移到 Office 365 中的等效服务中
+- 计算机上安装的 Office 客户端迁移到 Microsoft 365 企业应用版
+- 服务器上安装的 Office 服务器迁移到 Office 365 中的等效服务中
 - 设备上 Windows 7 和 Windows 8.1 迁移到 Windows 10 企业版
 
 >[!Note]
@@ -49,7 +49,7 @@ ms.locfileid: "43113490"
 - 未能最佳利用 Microsoft 云技术并帮助你数字化转换业务。
 - 不包含新功能。
  
-Microsoft 365 企业版包含 Office 365 专业增强版，这是 Office 客户端产品的一个版本，可与 Microsoft 365 企业版许可证一起使用，并从 Microsoft 云安装和更新。 Office 365 专业增强版包括安全更新和最新功能。 有关详细信息，请参阅[关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企业版包含 Microsoft 365 企业应用版，这是 Office 客户端产品的一个版本，可与 Microsoft 365 企业版许可证一起使用，并从 Microsoft 云j进行安装和更新。 Microsoft 365 企业应用版包括安全更新和最新功能。 有关详细信息，请参阅[关于企业中的 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -59,9 +59,9 @@ Microsoft 365 企业版包含 Office 365 专业增强版，这是 Office 客户�
 
 1. 为用户获取并分配 Microsoft 365 许可证。
 2. 卸载其计算机中的 Office 2007。
-3. 单独安装 Office 365 专业增强版或在 IT 部署时安装 Office 365 专业增强版。有关详细信息，请参阅[阶段4：Office 365 专业增强版](office365proplus-infrastructure.md)。
+3. 单独安装或联合 IT 推出的内容一起安装 Microsoft 365 企业应用版。 有关详细信息，请参阅[阶段 4：Microsoft 365 企业应用版](office365proplus-infrastructure.md)。
 
-Office 365 专业增强版会自动安装更新，并可利用 Office 365 中基于云的服务来提高安全性和生产效率。
+Microsoft 365 企业应用版会自动安装更新，并可利用基于云的服务来提高安全性和生产效率。
 
 ### <a name="office-2010"></a>Office 2010
 
@@ -71,9 +71,9 @@ Office 365 专业增强版会自动安装更新，并可利用 Office 365 中基
 
 1. 为用户获取并分配 Microsoft 365 许可证。
 2. 卸载其计算机中的 Office 2010。
-3. 单独安装 Office 365 专业增强版或在 IT 部署时安装 Office 365 专业增强版。有关详细信息，请参阅[阶段4：Office 365 专业增强版](office365proplus-infrastructure.md)。
+3. 单独安装或联合 IT 推出的内容一起安装 Microsoft 365 企业应用版。 有关详细信息，请参阅[阶段 4：Microsoft 365 企业应用版](office365proplus-infrastructure.md)。
 
-Office 365 专业增强版会自动安装安全更新和新功能更新，并可利用 Microsoft 365 中基于云的服务来提高安全性和生产效率。
+Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并可利用 Microsoft 365 中基于云的服务来提高安全性和生产效率。
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 和 Office 2016
 
@@ -83,9 +83,9 @@ Office 365 专业增强版会自动安装安全更新和新功能更新，并可
 
 1. 为用户获取并分配 Microsoft 365 许可证。
 2. 卸载其计算机中的 Office 2013 或 Office 2016。
-3. 单独安装 Office 365 专业增强版或在 IT 部署时安装 Office 365 专业增强版。有关详细信息，请参阅[阶段4：Office 365 专业增强版](office365proplus-infrastructure.md)。
+3. 单独安装或联合 IT 推出的内容一起安装 Microsoft 365 企业应用版。 有关详细信息，请参阅[阶段 4：Microsoft 365 企业应用版](office365proplus-infrastructure.md)。
 
-Office 365 专业增强版会自动安装安全更新和新功能更新，并可利用 Microsoft 365 中基于云的服务来提高安全性和生产效率。
+Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并可利用 Microsoft 365 中基于云的服务来提高安全性和生产效率。
 
 ## <a name="migration-for-microsoft-office-server-products"></a>Microsoft Office 服务器产品迁移
 
@@ -116,10 +116,9 @@ Microsoft 365 企业版包含 Office 365，后者包含 Office 服务基于云�
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-对于 Office 2010 版本中的服务器产品，将于 **2020 年 10 月 13 日**终止对下述内容的支持：
+对 [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) 的支持将于 **2020 年 10 月 13 日**结束。
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+对 [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) 的支持将于 **2021 年 4 月 13 日**结束。
 
 与其通过 Office 2013 或 Office 2016 版本中的服务器产品升级 Office 2010 版本中的服务器产品，不如考虑：
 
@@ -163,7 +162,7 @@ Microsoft 365 企业版包含 Office 365，后者包含 Office 服务基于云�
 
 了解 Microsoft 的 IT 专家如何使用以下这些资源将公司迁移到 Microsoft 365 企业版： 
 
-- [部署和更新 Microsoft Office 365 专业增强版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [部署和更新 Microsoft 的 Microsoft 365 企业应用版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft 将 150,000 个邮箱迁移到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [将 SharePoint 迁移到云：了解 Microsoft 如何运行自己的迁移](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [在 Microsoft 中将 Windows 10 部署为就地升级](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)

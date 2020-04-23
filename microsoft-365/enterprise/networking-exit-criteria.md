@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 确保你的配置符合 Microsoft 365 企业版针对网络基础结构的条件。
-ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 6d9133fa6f3c993efe88ea53b412b9a272c1b98b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633200"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631485"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第 1 阶段：网络基础结构退出条件
 
@@ -32,7 +32,7 @@ ms.locfileid: "42633200"
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必需：网络已准备就绪可供 Microsoft 365 企业版使用
 
 - 你的办公室有足够的 Internet 带宽来处理 Microsoft 365 流量，包括 Office 365、Microsoft Intune 以及 Windows 10 企业版安装和更新。
-- 你的整个网络都映射到 [Office 365 参考体系结构](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)。
+- 你的整个网络都会映射到 [Microsoft 365 参考体系结构](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)。
 - 你的网络更改已经过试用和测试，符合流量延迟要求。
 
 如果需要，可在[步骤 1](networking-provide-bandwidth-cloud-services.md) 中进行设置以满足此要求。
@@ -73,7 +73,7 @@ ms.locfileid: "42633200"
 
 
 <a name="crit-networking-step5"></a>
-## <a name="optional-your-clients-and-office-365-applications-are-configured-for-optimal-performance"></a>可选：配置客户端和 Office 365 应用程序以优化性能
+## <a name="optional-your-clients-and-microsoft-365-applications-are-configured-for-optimal-performance"></a>可选：配置客户端和 Microsoft 365 应用程序以优化性能
 
 已优化客户端设备上的传输控制协议 (TCP) 设置，以及 Exchange Online、Skype for Business Online、SharePoint Online 和 Project Online 服务。
 

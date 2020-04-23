@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在环境中为实现 Windows 和 Office 服务做好准备。
-ms.openlocfilehash: d47abca74f7fea4c49f9aa28a93cd4afe40a0981
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085155"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636731"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>步骤 7：Windows 和 Office 服务
 
@@ -30,18 +30,18 @@ ms.locfileid: "42085155"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>步骤 7：Windows 和 Office 服务</strong></p>
-<p>Windows 10 和 Office 365 专业增强版都会不断添加新功能，以利用最新的创新来不断提升用户体验和安全性。请了解如何及时获得最新的半年和每月更新、新服务模式的工作原理以及你所拥有的工具和选项。</p></td>
+<p>Windows 10 和 Microsoft 365 企业应用版都会不断添加新功能，以利用最新的创新来不断提升用户体验和安全性。请了解如何及时获得最新的半年和每月更新、新服务模式的工作原理以及你所拥有的工具和选项。</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->Windows 和 Office 服务是我们建议部署过程轮的第七步，其中涉及正在计划的准备半年功能更新的各个方面。。 若要查看完整的桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
+>Windows 和 Office 服务是我们建议部署过程轮的第七步，其中涉及正在计划的准备半年功能更新的各个方面。。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持模型和更新时间线。 这些更改简化了保持最新功能的过程。 除了这些更新之外，还提供了新的配置选项，以支持满足你需求的服务计划。 了解如何准备半年频道更新，在 Windows 10 和 Office 365 专业增强版中提供新特性和功能，并利用 Microsoft Endpoint Configuration Manager（当前分支版本）中的新功能。
+Windows 10 和 Microsoft 365 企业应用版都引入了新的服务选项、支持模型和更新时间线。 这些更改简化了保持最新功能的过程。 除了这些更新之外，还提供了新的配置选项，以支持满足你需求的服务计划。 了解如何准备半年频道更新，它们在 Windows 10 和 Microsoft 365 企业应用版中提供新特性和功能，并利用 Microsoft Endpoint Configuration Manager（当前分支）中的新功能。
 
-[帮助客户转向 Windows 10 和 Office 365 专业增强版](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[帮助客户过渡到 Windows 10 和 Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>更新类型
 
@@ -75,7 +75,7 @@ Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持
 
 另一个优点是，在我们推出更新以实现广泛部署之前，我们会首先通过 [Office](https://products.office.com/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/) 的预览体验计划发布内部版本，这让我们可以在广泛发布更新之前收集诊断数据和反馈。 目前，预览体验计划对所有人开放，这样可以预先了解更新。 当发布更新时，我们将从上百万个配置中接收诊断数据，因此当我们推出更新时，质量更易于预测
 
-还有一点，由于 Office 365 专业增强版预览体验版本反映了每月频道更新，因此如果针对 Office 使用半年频道来提供每年两次的功能更新（Windows 同样如此），则可以提前验证这些版本，并使用半年频道定向发布。
+还有一点，由于 Microsoft 365 企业应用版预览体验版本反映了每月频道更新，因此如果针对 Office 使用半年频道来提供每年两次的功能更新（Windows 同样如此），则可提前验证这些版本，并使用半年频道定向发布。
 
 ### <a name="supporting-management-tools"></a>支持管理工具
 
@@ -83,7 +83,7 @@ Windows 10 和 Office 365 专业增强版都引入了新的服务选项、支持
 
 [使用 Configuration Manager 部署 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 来管理 Microsoft 365 企业应用版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Windows 和 Office 频道概述
 
@@ -93,7 +93,7 @@ Windows 10 提供三个服务频道：
 - **半年度频道**每年提供两次的功能更新发布提供新功能
 - **长期服务频道**专用于需要更长服务选项的特殊设备
 
-Office 365 提供四个服务频道：
+Microsoft 365 提供 4 个服务频道：
 
 - [**Office 预览体验计划**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)适合于组织用于对仍在开发中的最新 Office 特性和功能进行测试并提供反馈
 - **每月频道**用于为在最新 Office 功能推出后将其立即提供给用户
@@ -103,11 +103,11 @@ Office 365 提供四个服务频道：
 有关 Windows 和 Office 服务频道的详细信息，请查阅以下文档：
 
 - [Windows 即服务概述](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Microsoft 365 企业应用版更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>分阶段部署更新
 
-现在我们换个话题，讨论如何推出这些更新。对于任何版本，我们的建议是至少三个 IT 部署阶段 – 验证、试验和广泛生产部署。一旦在 Windows 10 和 Office 365 专业增强版上启动并运行，你便会使用每月服务来保持最新的关键安全和质量更新，然后切换到半年服务以提供新功能。
+现在我们换个话题，讨论如何推出这些更新。对于任何版本，我们的建议是至少有 3 个 IT 部署阶段 - 验证、试验和广泛生产部署。一旦在 Windows 10 和 Microsoft 365 企业应用版上启动并运行，你便会使用每月服务来保持最新的关键安全和质量更新，然后切换到半年服务来获取新功能。
 
 ### <a name="monthly-updating"></a>每月更新
 
@@ -125,7 +125,7 @@ Office 365 提供四个服务频道：
 
 #### <a name="binary-delta-compression"></a>二进制增量压缩
 
-只有在从 Office 365 专业增强版的最新版本进行更新时，才能在 Office 中使用二进制增量压缩，因此，要使用这种方法，需要从之前的版本进行更新，而且不能跳过更新。
+只有在从 Microsoft 365 企业应用版的最新版本进行更新时，才能在 Office 中使用二进制增量压缩。因此，要使用这种方法，需要从之前的版本进行更新，而且不能跳过更新。
 
 Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准审批和目标流程来管理。此外，还可以在 Office 和 Windows 中使用策略设置来强制使用更新通道，以及相关设置。
 
@@ -141,7 +141,7 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 [Windows 半年频道](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Office 365 专业增强版的半年频道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Microsoft 365 企业应用版的半年频道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>升级任务序列
 
@@ -165,7 +165,7 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
   - 从 1903 开始，所有目标定在 3 月的未来功能更新将自发布之日起继续提供 18 个月的支持。
 
-  - Office 365 专业增强版的半年更新将继续支持 18 个月
+  - Microsoft 365 企业应用版的半年更新可持续 18 个月
 
 #### <a name="additional-setup-automation-options-outside-of-task-sequences"></a>任务序列之外的其他安装自动化选项
 
@@ -175,8 +175,8 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 ## <a name="next-step"></a>后续步骤 
 
-## <a name="step-8-user-communications-and-traininghttpsakamsmdd8"></a>[步骤 8：用户通信和培训](https://aka.ms/mdd8)
+## <a name="step-8-user-communications-and-training"></a>[步骤 8：用户通信和培训](https://aka.ms/mdd8)
 
 ## <a name="previous-step"></a>上一步 
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[步骤 6：OS 部署和功能更新](https://aka.ms/mdd6)
+## <a name="step-6-os-deployment-and-feature-updates"></a>[步骤 6：OS 部署和功能更新](https://aka.ms/mdd6)

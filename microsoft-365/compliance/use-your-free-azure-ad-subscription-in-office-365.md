@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 中的免费 Azure Active Directory 订阅
+title: 使用免费的 Azure Active Directory 订阅
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
-description: 了解如何访问组织已购买 Office 365 付费订阅中包含的 Azure Active Directory。
-ms.openlocfilehash: fb1e2586c0b21c72084d7120b8735fccccd1a004
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+description: 了解如何访问组织已购买付费订阅中包含的 Azure Active Directory。
+ms.openlocfilehash: be8edecd348d0019916f4f1b974a2bd0f8cabbc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710491"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626368"
 ---
-# <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>使用 Office 365 中的免费 Azure Active Directory 订阅
+# <a name="use-your-free-azure-active-directory-subscription"></a>使用免费的 Azure Active Directory 订阅
 
-如果组织已购买 Office 365、Microsoft Dynamics CRM Online、企业移动性套件或其他 Microsoft 服务的付费订阅，表明你已免费订阅 Microsoft Azure Active Directory。你和其他管理员可使用 Azure AD 创建并管理用户和组帐户。若要使用 Azure AD，只需转到 Azure 门户，并使用 Office 365 帐户登录即可。
+如果组织已购买 Microsoft 365、Microsoft Dynamics CRM Online、企业移动性套件或其他 Microsoft 服务的付费订阅，表明你已免费订阅 Microsoft Azure Active Directory。你和其他管理员可使用 Azure AD 创建并管理用户和组帐户。要使用 Azure AD，只需转到 Azure 门户，并登录到你的帐户即可。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -37,7 +37,7 @@ ms.locfileid: "42710491"
 
 ## <a name="access-azure-active-directory"></a>访问 Azure Active Directory
 
-1. 转到 [portal.azure.com](https://portal.azure.com)，再使用 Office 365 工作或学生帐户登录。
+1. 转到 [portal.azure.com](https://portal.azure.com) 并使用工作或学生帐户登录。
 
 2. 在 Azure 门户内的左侧导航窗格中，单击“Azure Active Directory”****。
 

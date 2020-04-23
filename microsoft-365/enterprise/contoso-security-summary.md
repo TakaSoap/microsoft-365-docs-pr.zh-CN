@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用 Microsoft 365 企业版的安全功能。
-ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597089"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636482"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 企业版安全性摘要
 
@@ -62,7 +62,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
   对于适合该 IT 人员的作业功能和职责的帐户，Contoso 的安全管理员向其分配了更低的管理员角色。
 
-  有关详细信息，请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+  有关详细信息，请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 
 - 用于所有用户帐户的 MFA
 
@@ -73,7 +73,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 - 使用条件访问策略更安全地访问设备和应用程序
 
-  Contoso 将[条件访问策略](microsoft-365-policies-configurations.md)用于标识、设备、Exchange Online 和 SharePoint。标识条件访问策略包括对高风险用户要求进行密码更改以及阻止客户端使用不支持新式身份验证的应用。设备条件策略包括定义批准的应用和要求使用合规的电脑和移动设备。Exchange Online 条件访问策略包括阻止 ActiveSync 客户端和设置 Office 365 邮件加密。SharePoint 条件访问策略包括对敏感和高度管控的网站提供额外的保护。
+  Contoso 将[条件访问策略](microsoft-365-policies-configurations.md)用于标识、设备、Exchange Online 和 SharePoint。标识条件访问策略包括要求针对高风险用户进行密码更改，以及阻止客户端使用不支持新式验证的应用。设备条件策略包括定义批准的应用和要求使用合规的电脑和移动设备。Exchange Online 条件访问策略包括阻止 ActiveSync 客户端和设置 Office 365 邮件加密。SharePoint 条件访问策略包括对敏感和高度管控的网站提供额外的保护。
 
 - Windows Hello 企业版
 
@@ -97,7 +97,7 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 - 使用 Office 365 威胁调查和响应进行威胁监控和防护
 
-  Contoso 使用 [Office 365 威胁调查和响应](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)保护其 Office 365 用户，使其能够轻松地标识和解决攻击，并防止进一步攻击。
+  Contoso 使用 [Office 365 威胁调查和响应](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)来保护用户，使其能够轻松地标识和解决攻击，并防止进一步攻击。
 
 - 使用 Advanced Threat Analytics 防止复杂攻击
 
@@ -107,9 +107,9 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 - 使用 Azure 信息保护标签来保护敏感和高度管控的数字资产
 
-  Contoso 确定数据保护的三个级别并部署用户应用于数字资产的 [Office 365 敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。对于其商业秘密和其他知识产权，Contoso 对加密内容的高度管控数据使用敏感度子标签，并限制对特定用户帐户和组组的访问。
+  Contoso 确定数据保护的三个级别并部署用户应用于数字资产的 [Microsoft 365 敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。对于其商业秘密和其他知识产权，Contoso 对加密内容的高度管控数据使用敏感度子标签，并限制对特定用户帐户和组的访问。
 
-- 使用 Office 365 数据丢失防护阻止 intranet 数据泄露
+- 使用数据丢失防护功能阻止 Intranet 数据泄露
 
   Contoso 为 Exchange Online、SharePoint 和 OneDrive for Business 配置了[数据丢失防护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)，以阻止用户无意或有意共享敏感数据。
 

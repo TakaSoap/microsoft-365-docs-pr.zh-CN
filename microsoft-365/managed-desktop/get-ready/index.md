@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 61bf3b54b5499321288793acea9552b48d7bd492
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "37595588"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790607"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>做好注册 Microsoft 托管桌面的准备
 
@@ -21,5 +21,6 @@ ms.locfileid: "37595588"
 - [为 Microsoft 托管桌面准备本地资源访问权限](network.md)
 - [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
 - [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
+- [准备打印 Microsoft 托管桌面的资源](printing.md)
 - [Microsoft 托管桌面中的应用程序](apps.md)
 

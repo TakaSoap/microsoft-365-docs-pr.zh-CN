@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中搜索本地用户基于云的邮箱
+title: 搜索本地用户基于云的邮箱
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 MicrosoftTeams 聊天数据（称为 1xN 聊天）。
-ms.openlocfilehash: ba3504289306543916667066738a25cf168d13e5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604149"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626448"
 ---
-# <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜索本地用户基于云的邮箱
+# <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>搜索本地用户基于云的邮箱
 
 如果你的组织具有 Exchange 混合部署（或者贵组织已将本地 Exchange 组织与 Office 365 同步），并且已启用 Microsoft Teams，则用户可以使用 Teams 聊天应用程序进行即时消息传递。 对于基于云的用户，Teams 聊天数据（也称为 *1xN 聊天*）将保存到其基于云的主邮箱中。 当本地用户使用 Teams 聊天应用程序时，其主邮箱位于本地。 为了绕开此限制，Microsoft 发布了一项新功能，其中创建了基于云的存储区域（称为本地用户基于云的邮箱），用于存储本地用户的 Teams 聊天数据。 这让你能够使用安全与合规中心中的内容搜索工具来搜索并导出本地用户的 Teams 聊天数据。 
   
 以下是设置本地用户基于云的邮箱的要求和限制：
   
-- 本地目录服务（如 Active Directory）中的用户帐户必须与 Azure Active Directory（Office 365 中的目录服务）同步。 这意味着将在 Office 365 中创建一个邮件用户帐户，并将该帐户与其主邮箱位于本地组织中的用户相关联。
+- 本地目录服务（如 Active Directory）中的用户帐户必须与 Azure Active Directory（Microsoft 365 中的目录服务）同步。 这意味着将在 Microsoft 365 中创建一个邮件用户帐户，并将该帐户与其主邮箱位于本地组织中的用户相关联。
 
 - 必须为其主邮箱位于本地组织中的用户分配 Microsoft Teams 许可证和 Exchange Online 计划 1 许可证（最低要求）。
 
@@ -39,7 +39,7 @@ ms.locfileid: "42604149"
 - 你必须向 Microsoft 支持人员提交请求，以使贵组织能够在本地用户基于云的邮箱中搜索 Teams 聊天数据。 请参阅本文中的[向 Microsoft 支持人员提交启用此功能的请求](#filing-a-request-with-microsoft-support-to-enable-this-feature)部分。 
 
 > [!NOTE]
-> Teams 频道对话始终存储在与 Teams 关联的基于云的邮箱中。 这意味着您可以使用内容搜索来搜索频道对话，而无需提交支持请求。 有关搜索 Teams 频道对话的详细信息，请参阅[搜索 Microsoft Teams 和 Office 365 组](content-search.md#searching-microsoft-teams-and-office-365-groups)。
+> Teams 频道对话始终存储在与 Teams 关联的基于云的邮箱中。 这意味着您可以使用内容搜索来搜索频道对话，而无需提交支持请求。 有关搜索 Teams 频道对话的详细信息，请参阅[搜索 Microsoft Teams 和 Microsoft 365 组](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)。
   
 ## <a name="how-it-works"></a>工作原理
 
@@ -57,17 +57,17 @@ ms.locfileid: "42604149"
   
 向 Microsoft 支持人员提交请求时，请包含以下信息：
   
-- Office 365 组织的默认域名。
+- 组织的默认域名。
 
-- Office 365 组织的租户名称和租户 ID。 可在 Azure Active Directory 门户中找到这些信息（位于“**管理**”\>“**属性**下）。 请参阅[查找 Office 365 租户 ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b)。
+- 组织的租户名称和租户 ID。 可在 Azure Active Directory 门户中找到这些信息（位于“**管理**”\>“**属性**下）。 请参阅[查找 Microsoft 365 租户 ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b)。
 
-- 可在支持请求中使用以下标题或说明：“为本地用户启用应用程序内容搜索”。 这有助于将请求传送到将实现请求的 Office 365 电子数据展示工程团队。
+- 可在支持请求中使用以下标题或说明：“为本地用户启用应用程序内容搜索”。 这有助于将请求传送到将实现请求的电子数据展示工程团队。
 
 执行工程更改后，Microsoft 支持人员将向你发送预计的部署日期。 在提交支持请求后，部署过程通常需要 2 到 3 周的时间。
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>启用此功能后会发生什么情况？
 
-在 Office 365 组织中部署此功能后，将在安全与合规中心中的内容搜索以及与电子数据展示事例关联的搜索中进行以下更改：
+在组织中部署此功能后，将在安全与合规中心中的内容搜索以及与电子数据展示事例关联的搜索中进行以下更改：
   
 - 在内容搜索的“**位置**”下方添加“**为本地用户添加 Office 应用内容**”复选框。
 
@@ -143,7 +143,7 @@ ms.locfileid: "42604149"
 
  **本地用户基于云的邮箱位于何处？**
   
-基于云的邮箱是在与 Office 365 组织相同的数据中心中创建并存储的。
+基于云的邮箱是在与组织相同的数据中心中创建并存储的。
   
  **除了提交支持请求以外，还有其他要求吗？**
   
@@ -153,9 +153,9 @@ ms.locfileid: "42604149"
   
 否。 将本地用户的主邮箱迁移到云后，该用户的 Teams 聊天数据将迁移到其基于云的新主邮箱中。
   
- **是否可以为本地用户应用电子数据展示保留或 Office 365 保留策略？**
+ **是否可以为本地用户应用电子数据展示保留或保留策略？**
   
-是。 你可以将 Team 聊天和频道消息的电子数据展示保留或保留策略应用于本地用户基于云的邮箱。
+可以。 你可以将 Team 聊天和频道消息的电子数据展示保留或保留策略应用于本地用户基于云的邮箱。
   
  **在组织提交启用此功能的请求之前，内容搜索是否可以找到本地用户较早的 Teams 聊天？**
   

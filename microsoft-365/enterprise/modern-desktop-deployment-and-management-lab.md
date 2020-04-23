@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225927"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631509"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
-这些实验室旨在帮助您规划、 测试和验证运行 Windows 10 企业版和 Office 365 专业增强版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
+这些实验室旨在帮助你规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 企业应用版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
-强烈建议准备停用 Windows 7 的组织使用此培训，同时也适用于使用 Windows 10 和 Office 365 Plus 或 Office 2019 的用户。 此外，作为独立环境，该实验室是探索部署工具更新和测试与部署相关的自动化的理想选择。
+强烈建议准备停用 Windows 7 的组织使用此培训，它同时也适用于使用 Windows 10 和 Office 365 专业增强版或 Office 2019 的用户。 此外，作为独立环境，该实验室是探索部署工具更新和测试与部署相关的自动化的理想选择。
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "43225927"
 
 ### <a name="office-and-lob-app-delivery"></a>Office 和 LOB 应用交付
 
-  - Office 365 专业增强版部署 
+  - Microsoft 365 企业应用版
   - 使用配置管理器和 Microsoft Intune 进行企业托管部署
   - 使用 Microsoft Intune 进行应用部署和管理
   - 使用适用于企业的 Microsoft Store 进行应用部署和自助式安装
@@ -113,7 +113,7 @@ ms.locfileid: "43225927"
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-*请使用高宽带下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 7 月 5 日过期。新版本将于旧版本到期前发布。*
+*请使用高带宽下载此内容，以增强下载体验并留出 30-45 分钟进行自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 4 月 18 日过期。新版本将于旧版本到期前发布。*
 
 ## <a name="additional-guidance"></a>其他指南
 
@@ -125,7 +125,7 @@ ms.locfileid: "43225927"
 
   - [<span class="underline">Windows 10 部署计划</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Office 365 专业增强版部署指南</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Microsoft 365 企业应用版的部署指南</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Intune 入门</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

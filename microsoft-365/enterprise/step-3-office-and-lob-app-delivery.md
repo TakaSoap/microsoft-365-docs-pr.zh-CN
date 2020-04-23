@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何交付 Office 和 LOB 应用。
-ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085310"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636792"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>步骤 3：Office 和 LOB 应用交付
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085310"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>步骤 3：Office 和 LOB 应用交付</strong></p>
-<p>确保应用已打包，且可进行自动安装。了解如何使用 Office 365 专业增强版的即点即用打包，通过新方法来配置、交付和持续更新 Office 应用。</p></td>
+<p>确保应用已打包且可进行自动安装。了解 Microsoft 365 企业应用版的即点即用打包如何向你提供新方法来配置、交付和持续更新 Office 应用。</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,7 +39,7 @@ ms.locfileid: "42085310"
 >Office 和 LOB 应用交付是我们推荐的部署过程轮中的第三步，其中包括安装和管理 Office 和 LOB 的选项。 为了成功部署，请不要跳过前两个步骤。  若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-现在可以准备好交付 Office 和业务线应用了，可以通过很多方法执行此操作，包括一些令人欣喜不已的新选项。 尽管某些应用程序仅提供 32 位或 64 位编译版本，但其他应用程序（如 Office 365 专业增强版）提供 32 位和 64 位本机编译代码，你要做出的最大决策就是选择要部署的版本。 若要在新设备上利用额外的计算能力和 RAM，Microsoft 建议在没有 32 位依赖项时使用 64 位版本。 若要确定任何与加载项或文件相关的兼容性挑战，建议在继续前重新访问步骤 1 设备和应用程序就绪情况。
+现在可以准备好交付 Office 和业务线应用了，可以通过很多方法执行此操作，包括一些令人欣喜不已的新选项。 尽管某些应用程序仅提供 32 位或 64 位编译版本，但其他应用程序（如 Microsoft 365 企业应用版）提供 32 位和 64 位本机编译代码，你要做出的最大决策之一就是选择要部署的版本。 若要在新设备上利用额外的计算能力和 RAM，Microsoft 建议在没有 32 位依赖项时使用 64 位版本。 若要确定任何与加载项或文件相关的兼容性挑战，建议在继续前重新访问步骤 1 设备和应用程序就绪情况。
 
 如果没有任何障碍，我们建议部署 64 位版本的所有应用，包括 Microsoft Office。64 位本机编译应用提供最佳性能，并且是最经得起未来考验的选择。
 
@@ -57,19 +57,19 @@ ms.locfileid: "42085310"
 
 ## <a name="pc-imaging"></a>电脑成像
 
-应用交付另一个热门方法是电脑成像。 在这种情况下，应用程序可以通过任务序列安装或在样本 PC 上手动安装，然后在预先安装必选应用程序的情况下捕获系统映像。 构建和捕获的成像方法可以在配置新 PC 时节省时间，但请记住图像中的操作系统和应用程序可能会很快变得陈旧。 Windows 10 和 Office 365 专业增强版中的累积更新模型可帮助解决此问题，但并未完全消除此问题。 这就是为什么我们建议使用精简映像方法，这样可以在部署时间从映像外部安装应用程序。
+应用交付另一个热门方法是电脑成像。 在这种情况下，应用程序可以通过任务序列安装或在样本 PC 上手动安装，然后在预先安装必选应用程序的情况下捕获系统映像。 构建和捕获的成像方法可以在配置新 PC 时节省时间，但请记住图像中的操作系统和应用程序可能会很快变得陈旧。 Windows 10 和 Microsoft 365 企业应用版中的累积更新模型可帮助解决此问题，但并未完全消除它。 这就是为什么我们建议使用精简映像方法，这样可以在部署时间从映像外部安装应用程序。
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
-如果你想在映像中包含 Office 365 专业增强版，请记住，此操作使用基于用户的激活；系统管理员不能预先将其激活。使用 Office 部署工具在正在成像的设备上预安装 Office，并跳过用户登录。 部署映像后，最终用户可以使用其 Office 365 凭据登录并激活 Office 365 专业增强版。
+如果你的确想在映像中包含 Microsoft 365 企业应用版，请记住，此操作使用基于用户的激活；系统管理员不能预先将其激活。使用 Office 部署工具在正在成像的设备上预安装 Office，并跳过用户登录。 在映像部署后，最终用户可使用自己的凭据登录，并激活 Microsoft 365 企业应用版。
 
 [创建安装操作系统的任务序列](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[将 Office 365 专业增强版部署为操作系统映像的一部分](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[随附操作系统映像一起部署 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office 即点即用 
 
-使用即点即用安装 Office 365 专业增强版，在即将推出的 Office 2019 for Windows 发行版的每个版本中，即点即用会替换基于 MSI 的打包。 它带来了许多优点，包括更快的安装、更快且更有效的更新以及更清晰的卸载。 
+使用即点即用安装 Microsoft 365 企业应用版；在即将推出的 Office 2019 for Windows 发行版的每个版本中，即点即用会替换基于 MSI 的打包。 它带来了许多优点，包括更快的安装、更快且更有效的更新以及更清晰的卸载。 
 
 通过即点即用提供的程序在计算机上的虚拟应用程序环境中执行，因此可以与其他应用程序共存而不会发生冲突；它们作为基于 MSI 的软件包也占用了大约一半的磁盘空间。 Office 应用程序通过 [Office 部署工具](https://www.microsoft.com/download/details.aspx?id=49117)进行交付和管理，该工具是下载、配置和自定义 Office 应用程序所需的 Office 安装引擎。 Office 部署工具读取配置 XML 文件，该文件提供有关如何配置和自定义 Office 安装的元数据说明。
 
@@ -77,15 +77,15 @@ Microsoft 建议使用 [Office 自定义工具](https://config.office.com/)自�
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-如果使用 Configuration Manager，仍然可以使用它来广泛部署 Office 365 专业增强版。Configuration Manager（当前分支版本）为更新的 Office 自定义工具、安装时的即点即用包自定义，以及软件更新管理后安装提供本机支持。
+如果使用 Configuration Manager，则仍可用它来广泛部署 Microsoft 365 企业应用版。Configuration Manager（当前分支）为更新后的 Office 自定义工具提供本机支持、在安装时为即点即用提供包自定义，并在安装后为软件更新管理提供本机支持。
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Office 365 专业增强版部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 企业应用版的部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[在升级到 Office 365 专业增强版时删除 Office 的现有 MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[在升级到 Microsoft 365 企业应用版时删除 Office 的现有 MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 来管理 Microsoft 365 企业应用版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备](https://docs.microsoft.com/intune/apps-add-office365)
 
@@ -115,8 +115,8 @@ Microsoft Store for Business 提供了一种灵活的方式，可以大规模地
 
 ## <a name="next-step"></a>后续步骤
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[步骤 4：用户文件和设置](https://aka.ms/mdd4)
+## <a name="step-4-user-files-and-settings"></a>[步骤 4：用户文件和设置](https://aka.ms/mdd4)
 
 ## <a name="previous-step"></a>上一步
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[步骤 2：目录和网络就绪情况](https://aka.ms/mdd2) 
+## <a name="step-2-directory-and-network-readiness"></a>[步骤 2：目录和网络就绪情况](https://aka.ms/mdd2) 
