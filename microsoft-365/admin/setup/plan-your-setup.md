@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 了解设置 Microsoft 365 for business 所需的操作。
-ms.openlocfilehash: 97463e624968c5b3edf563e916cbf4929ac581b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627566"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794027"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>规划 Microsoft 365 商业版的设置
 
@@ -93,7 +93,7 @@ ms.locfileid: "43627566"
   
 如果要将 Microsoft 365 用于您的电子邮件，请执行以下操作：
   
-- 若要将业务电子邮件地址（如*rob@contoso.com*）从其他电子邮件服务移动到 Microsoft 365，您需要将邮件传递到新的 microsoft 365 邮箱。 若要执行此操作，请选择 "**设置**" 页上的 **"迁移用户的数据"** ，我们将指导您完成需要在域主机上进行的更新（分步步骤）。
+- 若要将业务电子邮件地址（如*\@contoso.com*）从其他电子邮件服务移动到 Microsoft 365，您需要将邮件传递到新的 microsoft 365 邮箱。 若要执行此操作，请选择 "**设置**" 页上的 **"迁移用户的数据"** ，我们将指导您完成需要在域主机上进行的更新（分步步骤）。
 
 - 更新域主机后，所做更改通常在一小时或两小时后生效。 但请注意，有时可能需要长达72小时才能在 internet 上更新更改。
 
