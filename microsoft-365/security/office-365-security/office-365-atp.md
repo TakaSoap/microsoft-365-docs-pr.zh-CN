@@ -17,17 +17,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 993939027962bd51ad4fdc3381c1e7d8ea4eddd4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528601"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634528"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Office 365 高级威胁防护](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企业客户。 如果你使用的是 Outlook.com、Office 365 家庭版或 Office 365 个人版，并且正在查找有关 Outlook 中安全链接或安全附件的信息，请参阅[适用于 Office 365 订阅者的高级 Outlook.com 安全](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版或 Microsoft 365 个人版，并且正在查找有关 Outlook 中安全链接或安全附件的信息，请参阅[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="overview"></a>概述
 
@@ -53,7 +53,7 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 - Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中包含 Office 365 ATP 计划 2。
 
-- Microsoft 365 商业版中包含 Office 365 ATP 计划 1。
+- Office 365 ATP 计划 1 包含在 Microsoft 365 商业高级版中。
 
 - Office 365 ATP 计划 1 和 Office 365 ATP 计划 2 可各自用作特定订阅的加载项。 要了解详细信息，请参阅[跨高级威胁防护 (ATP) 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
@@ -61,7 +61,7 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 ## <a name="configure-atp-policies"></a>配置 ATP 策略
 
-借助 Office 365 ATP，组织的安全团队可以通过在 Office 365 安全与合规中心中定义策略来进行保护配置（转到[https://protection.office.com](https://protection.office.com) > **威胁管理** > **策略**。）
+借助 Office 365 ATP，你组织的安全团队可以在安全与合规中心内定义策略（依次转到[https://protection.office.com](https://protection.office.com) > “威胁管理”**** > “策略”****），从而配置保护。
 
 > [!TIP]
 > 有关可定义的策略的快速列表，请参阅[威胁防护](protect-against-threats.md)。
@@ -112,16 +112,16 @@ Office 365 ATP 计划 2 包括同类最佳的[威胁调查和响应工具](offic
 
 |角色或角色组|了解详细信息的资源|
 |---------|---------|
-|Office 365 全局管理员（可在 Azure Active Directory 或 Office 365 安全与合规中心分配此权限） |[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|安全管理员（可在 Azure Active Directory 或 Office 365 安全与合规中心分配此权限） |[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
+|全局管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限） |[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|安全管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限） |[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online 组织管理（在 Exchange Online 中分配此权限）|[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
-|搜索和清除（仅在 Office 365 安全与合规中心分配此权限） |[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md|
+|搜索和清除（仅在安全与合规中心内分配此权限） |[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md|
 
 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="get-office-365-atp"></a>获取 Office 365 ATP
 
-Office 365 ATP 包含在某些订阅中，如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商业版。 如果你的订阅未包括 Office 365 ATP，则可以将 ATP 计划 1 或 ATP 计划 2 作为加载项附加到特定订阅进行购买。 若要了解详细信息，请参阅以下资源：
+Office 365 ATP 包含在特定订阅中，如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商业高级版。 如果你的订阅未包括 Office 365 ATP，则可以将 ATP 计划 1 或 ATP 计划 2 作为加载项附加到特定订阅进行购买。 若要了解详细信息，请参阅以下资源：
 
 - 有关包含 ATP 计划的订阅的列表，请参阅 [Office 365 高级威胁防护可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)。
 

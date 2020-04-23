@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: 了解如何向用户分配许可证或如何将用户移动到新订阅。
-ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2019aeef0d802e92489b09bbddb564c4ecded8c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362057"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628240"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -49,7 +49,7 @@ ms.locfileid: "42362057"
 3. 选择“**分配许可证**”。
 4. 在“**向用户分配许可证**”窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。 一次最多可添加 20 名用户。
 5. 选择“**打开或关闭应用和服务**”，向特定项目分配访问权限或删除其访问权限。
-6. 完成后，选择“**分配**”，然后选择“**关闭**”。
+6. 完成后，选择“分配”****，然后选择“关闭”****。
 
 如果出现冲突，则将显示一则消息，指出问题是什么以及如何修复它。 例如，如果选择包含冲突服务的许可证，错误消息将指示审阅随每个许可证包含的服务并重试。
 
@@ -224,7 +224,7 @@ ms.locfileid: "42362057"
 
 ## <a name="what-you-need-to-know-about-assigning-licenses-to-users"></a>有关向用户分配许可证的须知事项
 
-- 你必须是全局管理员、账单管理员、许可证管理员或用户管理管理员。有关详细信息，请参阅[关于 Office 365 管理员角色](../add-users/about-admin-roles.md)。
+- 你必须是全局管理员、账单管理员、许可证管理员或用户管理管理员。有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
 
 - 可[使用 Office 365 PowerShell 向用户帐户分配许可证](https://go.microsoft.com/fwlink/p/?linkid=850410)。
 
@@ -236,7 +236,7 @@ ms.locfileid: "42362057"
 
 [了解订阅和许可证](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[解决 Office 365 商业版中的许可证冲突](resolve-license-conflicts.md)
+[解决 Microsoft 365 商业版中的许可证冲突](resolve-license-conflicts.md)
 
 [删除用户许可证](remove-licenses-from-users.md)
 

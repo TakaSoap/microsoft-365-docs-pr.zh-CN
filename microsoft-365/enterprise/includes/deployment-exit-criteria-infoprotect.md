@@ -14,7 +14,7 @@
 <a name="crit-infoprotect-step3"></a>
 ### <a name="required-increased-security-for-microsoft-365-is-configured"></a>必需：已配置增强的 Microsoft 365 安全性
 
-你已配置 [Office 365 增强安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)的以下设置：
+你已配置以下用于[增强 Microsoft 365 安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)的设置：
 
 - Microsoft 365 安全中心中的威胁管理策略
 - 其他 Exchange Online 租户范围内设置
@@ -28,7 +28,7 @@
 <a name="crit-infoprotect-step2"></a>
 ### <a name="optional-classification-is-configured-across-your-environment"></a>可选：已在整个环境中配置分类
 
-你已与法律和合规性团队合作，为组织数据管理和安全策略制定了适当的分类和标签方案。 
+你已与法律和合规性团队合作，共同为组织的数据治理和安全策略制定了适当的分类和标签方案。 
 
 这些策略对应于以下项的配置和部署：
 
@@ -52,11 +52,11 @@
 必要时请执行[第 4 步](../infoprotect-deploy-windows-information-protection.md)，这样做有助于满足此要求。 
 
 <a name="crit-infoprotect-step5"></a>
-### <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>可选：部署 Office 365 数据丢失防护 (DLP)
+### <a name="optional-data-loss-prevention-dlp-is-deployed"></a>可选：部署数据丢失防护 (DLP)
 
 你分析、测试并随后推广了 DLP 策略集；该集中注明了位置和条件及操作规则，而且你的组织需要它来保护客户和其他类型的专用数据，并借此满足行业和区域性的法规和要求。
 
-数据合规性和安全性员工正在使用 Office 365 安全与合规仪表板来监视 DLP 事件。
+你的数据合规与安全员工正在使用安全与合规仪表板来监视 DLP 事件。
 
 必要时请执行[步骤 5](../infoprotect-data-loss-prevention.md)，这样做有助于满足此要求。 
 

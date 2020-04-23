@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：用于保护 Microsoft Teams 中文件的配置建议。
-ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e177f290dff22943e282080652326dfb65cd07cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088122"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638472"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>保护 Microsoft Teams 中的文件
 
@@ -61,7 +61,7 @@ ms.locfileid: "42088122"
 
 - 为敏感和高度机密保留标签配置[数据丢失防护](../../compliance/data-loss-prevention-policies.md) (DLP) 策略，在其试图向组织外部发送这些类型的文件时警告或阻止用户。
 
-- 如果方案需要，可以使用[敏感度标签](../../compliance/sensitivity-labels.md)来通过加密和权限来保护高度机密文件。 对于 Azure 信息保护客户，你可以在 Microsoft 365 合规中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 Azure 信息保护标签和 Office 365 敏感度标签彼此完全相互兼容。 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。 并非所有客户都需要这一级别的保护。
+- 如果方案需要，可以使用[敏感度标签](../../compliance/sensitivity-labels.md)来通过加密和权限来保护高度机密文件。 对于 Azure 信息保护客户，你可以在 Microsoft 365 合规中心内使用 Azure 信息保护标签。如果你选择执行其他配置或高级配置，这些标签便会与 Azure 门户同步。 Azure 信息保护标签和敏感度标签是完全相互兼容的。 也就是说，例如，如果内容已有 Azure 信息保护标签，无需重新对此内容进行分类或标记。 并非所有客户都需要这一级别的保护。
 
 ## <a name="organization-wide-settings-for-sharepoint-and-onedrive"></a>SharePoint 和 OneDrive 的全组织设置
 
@@ -125,7 +125,7 @@ SharePoint 和 OneDrive 的设备访问设置可确定是否已将访问权限�
 
 有关在此解决方案中部署四种不同团队的步骤，请参阅[部署团队以实现文件的三层保护](deploy-teams-three-tiers.md)。
 
-## <a name="office-365-retention-labels"></a>Office 365 保留标签
+## <a name="retention-labels"></a>保留标签
 
 对于具有敏感数据的环境，建议使用保留标签。 在配置和发布保留标签后：
 
@@ -135,7 +135,7 @@ SharePoint 和 OneDrive 的设备访问设置可确定是否已将访问权限�
 
 - 你可以应用基于保留标签的 DLP 策略。
 
-- 组织中的人员可以将标签手动应用于 Outlook 网页版、Outlook 2010 及更高版本、OneDrive、SharePoint 和 Office 365 组中的内容。 用户通常知道他们正在使用的内容类型，以便对其进行分类并应用适当的 DLP 策略。
+- 你组织中的人员可以将标签手动应用于 Outlook 网页版、Outlook 2010 及更高版本、OneDrive、SharePoint 和 Microsoft 365 组中的内容。 用户通常知道他们正在使用的内容类型，以便对其进行分类并应用适当的 DLP 策略。
 
 如图所示，此解决方案包括创建以下保留标签：
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
-ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f07ccbb648ef20c6b7c6ef005afef59fd89d56aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083481"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638449"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
@@ -36,9 +36,9 @@ ms.locfileid: "42083481"
 
 首先，按照 [Office 365 开发/测试环境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的**阶段 2** 中的说明进行操作。
 
-下一步，注册 EMS E5 试用订阅，并将其作为 Office 365 试用订阅添加到同一组织。
+接下来，注册 EMS E5 试用订阅，并将它添加到你的试用订阅所在的同一组织中。
 
-1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[在哪里登录](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 单击“管理员”磁贴****。
 
@@ -191,7 +191,7 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
   例如，对于 contoso.onmicrosoft.com 的试用订阅域名，组织名称是“contoso”。
 
-- Office 365 全局管理员名称：  ![下划线](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- 全局管理员名称： ![下划线](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   在安全位置记录此帐户的密码和其他用户帐户的常用初始密码。
 

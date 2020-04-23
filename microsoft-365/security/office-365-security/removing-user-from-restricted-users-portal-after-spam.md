@@ -18,18 +18,18 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Office 365 中从“受限的用户”门户中删除用户。 用户之所以被添加到“受限的用户”门户是因为发送出站垃圾邮件，这通常是由于帐户遭入侵所致。
-ms.openlocfilehash: f1f869a81ef5b01733bf9060117cf3706094b961
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1625046cefbe6a62beacacefdac0318b6c16f49b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895199"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634372"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>在 Office 365 中从“受限的用户”门户中删除被阻止的用户
 
 如果某用户超过[服务限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)或[出站垃圾邮件策略](configure-the-outbound-spam-policy.md)中指定的出站发送限制之一，此用户就会被限制发送电子邮件，但仍可以接收电子邮件。
 
-此用户会被添加到 Office 365 安全与合规中心内的“受限的用户”门户。 如果此用户试图发送电子邮件，邮件就会以未送达报告（亦称为“NDR”或“退回邮件”）形式返回，并显示错误代码 [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和以下文本：
+此用户会被添加到安全与合规中心内的“受限用户”门户。 如果此用户试图发送电子邮件，邮件就会以未送达报告（亦称为“NDR”或“退回邮件”）形式返回，并显示错误代码 [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和以下文本：
 
 > “你的邮件无法送达，因为系统认为你不是有效的发件人。 这种情形最常见的原因是怀疑你的电子邮件地址正在发送垃圾邮件，且不再允许它发送电子邮件。  请联系电子邮件管理员获取帮助。 远程服务器返回“550 5.1.8 拒绝访问，错误出站发件人”。
 
@@ -41,7 +41,7 @@ ms.locfileid: "42895199"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 必须是“组织管理”**** 或“安全管理员”**** 角色组的成员，才能从“受限的用户”门户中删除用户。 必须是“安全信息读取者”**** 角色组的成员，才能获得对“受限的用户”门户的只读访问权限。 若要详细了解安全与合规中心内的角色组，请参阅 [Office 365 安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 必须是“组织管理”**** 或“安全管理员”**** 角色组的成员，才能从“受限的用户”门户中删除用户。 必须是“安全信息读取者”**** 角色组的成员，才能获得对“受限的用户”门户的只读访问权限。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 发件人超过出站电子邮件限制是帐户遭入侵的标志。 请务必先按照必需步骤操作来重新获得对帐户的控制，再从“受限的用户”门户中删除用户。 有关详细信息，请参阅[在 Office 365 中响应遭入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
@@ -65,7 +65,7 @@ ms.locfileid: "42895199"
 默认警报策略“被限制发送电子邮件的用户”**** 会在用户被阻止发送出站邮件时自动通知管理员。 可以验证这些设置，并添加其他要通知的用户。 若要详细了解警报策略，请参阅[安全与合规中心内的警报策略](../../compliance/alert-policies.md)。
 
 > [!IMPORTANT]
-> 必须启用审核日志搜索，这样警报才能正常运行。 有关详细信息，请参阅[启用或禁用 Office 365 审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
+> 必须启用审核日志搜索，这样警报才能正常运行。 有关详细信息，请参阅[启用或禁用审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 1. 在安全与合规中心内，依次转到“警报”****\>“警报策略”****。
 

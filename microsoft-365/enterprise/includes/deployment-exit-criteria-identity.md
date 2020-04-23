@@ -3,7 +3,7 @@
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必需：全局管理员帐户受到保护 
 
-你已[保护 Office 365 全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以避免可能导致违反Microsoft 365订阅的攻击者的凭据泄露。
+你已[保护全局管理员帐户](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以阻止攻击者盗用凭据，否则可能会导致 Microsoft 365 订阅泄露。
 
 如果忽略此要求，全局管理员帐户很容易受到攻击和入侵，攻击者可以获取系统范围内的数据访问权限并加以收集、销毁或勒索。
 
@@ -17,7 +17,7 @@
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. 使用步骤 1 中的每个帐户登录到 Office 365。 每个登录必须要求 Azure 多重身份验证和组织中可用的最强形式的辅助身份验证。
+2. 使用第 1 步中的每个帐户进行登录。 每个登录必须要求 Azure 多重身份验证和组织中可用的最强形式的辅助身份验证。
 
 > [!Note]
 > 有关在 Office 365 中安装 Azure Active Directory PowerShell Graph 模块和登录的说明，请参阅[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)。
@@ -66,11 +66,11 @@
 如果需要，请执行[步骤 2](../identity-secure-your-passwords.md#identity-sso)，这有助于你满足此条件。
 
 <a name="crit-identity-custom-sign-in"></a>
-### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>可选：个性化组织的 Office 365 登录屏幕
+### <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>可选：为你的组织个性化设置登录屏幕
 
-你已使用[将公司品牌添加到登录和访问面板页面](https://aka.ms/aadpaddbranding)，将组织的品牌添加到 Office 365 登录页面。
+你已使用[将公司品牌添加到登录页面和访问面板页面](https://aka.ms/aadpaddbranding)，将组织的品牌添加到登录页面。
 
-如果忽略此选项，你的用户将看到通用的 Office 365 登录屏幕，可能会让他们疑惑是否登录到了组织的网站。
+如果你跳过此选项，用户看到的是通用登录屏幕，可能就会不确定自己是否在登录你组织的网站。
 
 如果需要，请执行[步骤 2](../identity-secure-your-passwords.md#identity-custom-sign-in)，这有助于你满足此条件。
 
@@ -183,7 +183,7 @@ Azure AD Connect Health 门户显示本地域控制器和持续同步的当前�
 
 
 <a name="crit-identity-self-service-groups"></a>
-### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>可选：为特定 Azure AD 安全和 Office 365 组启用了自助服务组管理
+### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>可选：为特定 Azure AD 安全和 Microsoft 365 组启用自助服务组管理
 
 已确定哪些组适用于自助服务管理，对所有者说明了组管理工作流和职责，并为这些组[在 Azure AD 中设置自助服务管理](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)。
 

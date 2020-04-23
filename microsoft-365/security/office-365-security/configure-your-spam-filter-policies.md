@@ -15,23 +15,23 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Exchange Online 和独立 Exchange Online Protection（EOP）中创建、修改和删除反垃圾邮件策略。
-ms.openlocfilehash: e3d49fecf456fe7f615cc2877c7522632b8db7d7
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+description: 基本垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。
+ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608182"
+ms.locfileid: "43637708"
 ---
-# <a name="configure-anti-spam-policies-in-office-365"></a>在 Office 365 中配置反垃圾邮件策略
+# <a name="configure-anti-spam-policies"></a>配置反垃圾邮件策略
 
-无论你是拥有 Exchange Online 邮箱的 Office 365 客户，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 都会自动保护入站电子邮件免受垃圾邮件威胁。 EOP 使用反垃圾邮件策略（亦称为“垃圾邮件筛选策略”或“内容筛选策略”），作为组织全面抵御垃圾邮件的措施的一部分。 有关详细信息，请参阅 [Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。
+无论你是拥有 Exchange Online 邮箱的 Microsoft 365 客户，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 都会自动保护入站电子邮件免受垃圾邮件威胁。 EOP 使用反垃圾邮件策略（亦称为“垃圾邮件筛选策略”或“内容筛选策略”），作为组织全面抵御垃圾邮件的措施的一部分。 有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
 
 管理员可以查看、编辑和配置（但不能删除）默认反垃圾邮件策略。 还可以创建应用于组织中特定用户、组或域的自定义反垃圾邮件策略，以实现更细致的控制。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-若要配置反垃圾邮件策略，可以使用 Office 365 安全与合规中心，也可以使用 PowerShell（Office 365 客户使用 Exchange Online PowerShell；独立 EOP 客户使用 Exchange Online Protection PowerShell）。
+若要配置反垃圾邮件策略，可以使用安全与合规中心，也可以使用 PowerShell（Microsoft 365 客户使用 Exchange Online PowerShell；独立 EOP 客户使用 Exchange Online Protection PowerShell）。
 
-## <a name="anti-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Office 365 安全与合规中心与 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的反垃圾邮件策略
+## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>安全与合规中心与 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的反垃圾邮件策略
 
 EOP 中反垃圾邮件策略的基本要素如下：
 
@@ -73,9 +73,9 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 必须是 **“组织管理”** 或 **“安全管理员”** 角色组的成员，才能添加、修改和删除反垃圾邮件策略。 必须是 **“安全信息读取者”** 角色组的成员，才能获得对反垃圾邮件策略的只读访问权限。 若要详细了解安全与合规中心内的角色组，请参阅 [Office 365 安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 必须是 **“组织管理”** 或 **“安全管理员”** 角色组的成员，才能添加、修改和删除反垃圾邮件策略。 必须是 **“安全信息读取者”** 角色组的成员，才能获得对反垃圾邮件策略的只读访问权限。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 有关建议的反垃圾软件策略设置，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+- 有关建议的反恶意软件策略设置，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>使用安全与合规中心创建反垃圾邮件策略
 
@@ -280,7 +280,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
 3. 单击 **“编辑策略”**。
 
-浮出控件中的设置与[使用安全与合规中心创建反垃圾邮件策略](#use-the-security--compliance-center-to-create-anti-spam-policies)部分中提供的设置完全相同。
+对于自定义反垃圾邮件策略，随即显示的浮出控件中的可配置设置与[使用安全与合规中心创建反垃圾邮件策略](#use-the-security--compliance-center-to-create-anti-spam-policies)部分中介绍的设置完全相同。
 
 对于名为 **“默认垃圾邮件筛选策略”** 的默认反垃圾邮件策略，没有 **“应用于”** 部分（此策略应用于所有人），且无法重命名此策略。
 
@@ -342,10 +342,10 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
    - **发送最终用户垃圾邮件通知的间隔天数**：选择通知发送频率。 默认值为 3 天。 可输入介于 1 和 15 天之间的值。
    
-     在 24 小时内，有 3 个周期的最终用户垃圾邮件通知从以下时间开始：01:00 UTC、08：00 UTC 和 16:00 UTC。 
+     在 24 小时内，有 3 个从以下时间开始计时的最终用户垃圾邮件通知周期：01:00 UTC、08:00 UTC 和 16:00 UTC。 
     
      > [!NOTE]
-     > 如果我们在上一个周期中错过了通知，则下一个周期将推送通知。 这可能会在同一天内显示多个通知。
+     > 如果我们在上一个周期中错过了通知，则后续周期会推送通知。 这可能会在同一天内显示多个通知。
 
    - **通知语言**：单击下拉列表，并从列表中选择可用语言。 默认值是 **“默认”**，表示最终用户隔离通知使用 EOP 组织的默认语言。
 
@@ -465,7 +465,7 @@ Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 若要查看现有垃圾邮件筛选规则，请使用以下语法：
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
 ```
 
 若要返回所有垃圾邮件筛选规则的摘要列表，请运行以下命令：
@@ -500,7 +500,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>使用 PowerShell 修改垃圾邮件筛选策略
 
-除了以下几项之外，在 PowerShell 中修改垃圾邮件筛选策略时可用的设置，与本主题前面的[第 1 步：使用 PowerShell 创建垃圾邮件筛选策略](#step-1-use-powershell-to-create-a-spam-filter-policy)部分中介绍的可用于创建策略的设置相同。
+除了以下几项之外，在 PowerShell 中修改恶意软件筛选策略时可用的设置，与本主题前面的[第 1 步：使用 PowerShell 创建垃圾邮件筛选策略](#step-1-use-powershell-to-create-a-spam-filter-policy)部分中介绍的可用于创建策略的设置相同。
 
 - 只有在 PowerShell 中修改垃圾邮件筛选策略时，才能使用 _MakeDefault_ 开关，它可将指定策略转换为默认策略（应用于所有人，优先级值始终为 **“最低”**，且无法删除）。
 

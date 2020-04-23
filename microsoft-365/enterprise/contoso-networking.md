@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 网络基础结构以及如何使用其 SD-WAN 技术为 Microsoft 365 企业版云服务提供最佳网络性能。
-ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068331"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625274"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 
@@ -50,14 +50,14 @@ ms.locfileid: "42068331"
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>使用 SD-WAN 与 Microsoft 建立最佳网络连接
 
-Contoso 遵循了 [Office 365 网络连接原则](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)：
+Contoso 遵循了 [Microsoft 365 网络连接原则](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)：
 
-1. 标识并区分 Office 365 网络流量
+1. 标识并区分 Microsoft 365 网络流量
 2. 实现本地连接出口
 3. 避免网络发卡
 4. 绕过重复的网络安全设备
 
-Office 365 的网络流量分为三个类别：优化、允许和默认。 “优化”流量和“允许”流量是受信任的网络流量，其在终结点上加密并得到保护，并发送到 Microsoft 365 网络。
+Microsoft 365 的网络流量分为三个类别：优化、允许和默认。 “优化”流量和“允许”流量是受信任的网络流量，其在终结点上加密并得到保护，并发送到 Microsoft 365 网络。
 
 Contoso 决定：
 
@@ -93,7 +93,7 @@ Contoso 用户能否成功采用 Microsoft 365 企业版服务，取决于与 In
 
 2. 制定了 Microsoft 365 企业版网络连接计划
 
-   Contoso 根据 [Office 365 网络连接原则](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)，提供了参考网络体系结构，将 SD-WAN 确定为 Office 365 连接的首选拓扑。
+   Contoso 根据 [Microsoft 365 网络连接原则](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)，提供了参考网络体系结构，将 SD-WAN 确定为 Microsoft 365 连接的首选拓扑。
 
 3. 分析了每个办事处的 Internet 连接利用率和 MPLS WAN 带宽，并根据需要增加了带宽
 
@@ -105,7 +105,7 @@ Contoso 用户能否成功采用 Microsoft 365 企业版服务，取决于与 In
 
 5. 配置了内部 DNS
 
-   DNS 必须能正常运行，才能查找本地 Office 365 流量。
+   DNS 必须能正常运行，才能查找本地 Microsoft 365 流量。
 
 6. 验证了网络终结点和端口连接
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的电子邮件身份验证
+title: Microsoft 365 中的电子邮件身份验证
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: 了解 Office 365 中的 Exchange Online 和 Exchange Online Protection (EOP) 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
-ms.openlocfilehash: 609f1a9bf80acc266bdfc5b0089eb6006be4bd7c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: 了解 Microsoft 365 中的 Exchange Online 和 Exchange Online Protection (EOP) 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
+ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529835"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637552"
 ---
-# <a name="email-authentication-in-office-365"></a>Office 365 中的电子邮件身份验证
+# <a name="email-authentication-in-microsoft-365"></a>Microsoft 365 中的电子邮件身份验证
 
-电子邮件身份验证（也称为电子邮件验证）是一组尝试阻止欺骗（来自伪造发件人的电子邮件）的标准。 无论是在有 Exchange Online 邮箱的 Office 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，EOP 都按照该标准验证入站电子邮件：
+电子邮件身份验证（也称为电子邮件验证）是一组尝试阻止欺骗（来自伪造发件人的电子邮件）的标准。 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，EOP 都按照标准来验证入站电子邮件：
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -55,7 +55,7 @@ DMARC 通过检查邮件中的**发件人**地址（用户在电子邮件客户�
 
 隐式电子邮件身份验证建立在对常规电子邮件身份验证策略的各种扩展之上。 这些扩展包括发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技巧。 除非包含其他表明其为合法邮件的信号，否则从未使用电子邮件身份验证策略的域发送的邮件将被标记为欺骗邮件。
 
-若要查看 Microsoft 的一般声明，请参阅[网络钓鱼第 2 部分 - Office 365 中的增强反欺骗功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)。
+若要查看 Microsoft 的一般声明，请参阅[网络钓鱼第 2 部分 - Microsoft 365 中的增强反欺骗功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)。
 
 ## <a name="composite-authentication"></a>复合身份验证
 
@@ -63,9 +63,9 @@ DMARC 通过检查邮件中的**发件人**地址（用户在电子邮件客户�
 
 > Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
-[Office 365 电子邮件身份验证使用的“Authentication-results”邮件标头字段](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication)对这些值进行了说明。
+[Authentication-results 邮件头](anti-spam-message-headers.md#authentication-results-message-header)对这些值进行了说明。
 
-通过检查邮件标头，管理员甚至是最终用户可以确定 Office 365 如何确定发件人是否是冒充的。
+通过检查邮件头，管理员（或甚至是最终用户）可以确定 Microsoft 365 如何确定发件人是否是冒充的。
 
 ## <a name="why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>电子邮件身份验证为何并非总能阻止欺骗
 
@@ -128,11 +128,11 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>适用于发送未经身份验证的电子邮件的合法发件人的解决方案
 
-Office 365 会跟踪向贵组织发送未经身份验证的电子邮件的人员。 如果服务部门认为该发件人不合法，则会将其标记为复合身份验证失败。 要避免这种情况，可使用本小节中的建议。
+Microsoft 365 跟踪谁在向你的组织发送未经身份验证的电子邮件。 如果服务部门认为该发件人不合法，则会将其标记为复合身份验证失败。 要避免这种情况，可使用本小节中的建议。
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>为你自己的域配置电子邮件身份验证
 
-如果你拥有多个租户或与多个租户进行交互，则可使用此方法解决组织内欺骗和跨域欺骗。 它还有助于解决你发送给 Office 365 中的其他客户或者通过其他提供程序托管的第三方的跨域欺骗。
+如果你拥有多个租户或与多个租户进行交互，则可使用此方法解决组织内欺骗和跨域欺骗。 它还有助于解决跨域欺骗，即你发送给 Microsoft 365 中的其他客户或由其他提供程序托管的第三方。
 
 - [配置域的 SPF 记录](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
 
@@ -152,7 +152,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 此示例意味着，来自公司基础结构的电子邮件将通过电子邮件身份验证，但来自未知来源的电子邮件将回退为中性。
 
-Office 365 会将来自公司基础结构的入站电子邮件视为已通过身份验证，但来自未识别来源的电子邮件可能仍被标记为欺骗（具体取决于 Office 365 能否对其进行隐式身份验证）。 但是，仍需对所有被 Office 365 标记为欺骗邮件的电子邮件进行改进。
+Microsoft 365 会将来自你的企业基础结构的入站电子邮件视为已通过身份验证，但来自未识别来源的电子邮件可能仍被标记为欺骗（具体取决于 Microsoft 365 能否对它进行隐式身份验证）。 不过，这对于所有电子邮件都被 Microsoft 365 标记为欺骗邮件来说，仍是一项改进。
 
 开始使用 `?all` 的 SPF 回退策略后，你可以逐步你的邮件发现和包含更多电子邮件来源，然后使用更严格的策略更新 SPF 记录。
 
@@ -170,7 +170,7 @@ Office 365 会将来自公司基础结构的入站电子邮件视为已通过身
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>为发件人/收件人对创建允许条目
 
-要绕过垃圾邮件筛选、网络钓鱼筛选的某些部分，但不绕过针对特定发件人的恶意软件筛选，请参阅 [在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
+若要绕过垃圾邮件筛选、网络钓鱼筛选的某些部分，但不绕过针对特定发件人的恶意软件筛选，请参阅 [在 Microsoft 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
 ### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>要求发件人为不归你所有的域配置电子邮件身份验证
 

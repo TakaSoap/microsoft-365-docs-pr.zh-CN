@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 了解如何在与组织外人员共享文件时限制意外公开信息。
-ms.openlocfilehash: a84c5183ba3a816cf4d65f854f0143a48374f669
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604371"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632579"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在与组织外人员共享文件时限制意外公开信息
 
@@ -77,9 +77,9 @@ ms.locfileid: "42604371"
 1. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 2. 在 **“其他设置”** 下， 按照 **“将外部共享的范围限制到特定安全组”** 链接操作。
 3. 在 **“可进行组织外共享的人员”** 下，选中复选框之一或全部选中：a. **“仅让所选安全组中的用户与已验证的外部用户共享”** 以指定可与已经过身份验证的用户共享的安全组。 **“仅让所选安全组中的用户使用匿名链接与已验证的外部用户共享”** 以指定可使用“任何人”链接与已经过身份验证的用户共享的安全组。
-4. 单击 **“确定”**。
+4. 单击“确定”****。
 
-请注意，这会影响文件、文件夹和站点，但不会影响 Office 365 组或团队。 当成员将来宾邀请到 Microsoft Teams 中的私有 Office 365 组或私人团队中时，该邀请会发送给组或团队所有者进行审批。
+请注意，这会影响文件、文件夹和网站，但不会影响 Microsoft 365 组或 Teams。 如果成员邀请来宾加入 Microsoft 365 专用组或 Microsoft Teams 专用团队，邀请会发送给组或团队所有者以供审批。
 
 ## <a name="see-also"></a>另请参阅
 

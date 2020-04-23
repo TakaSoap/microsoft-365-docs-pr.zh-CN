@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：应用敏感度标签，保护高度机密团队中的文件。
-ms.openlocfilehash: b263aeae335b83cadb45b16d70a2a45d56f1cbd3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c36daef7f28ad8bd3306fd7f3f7f1558a3594e68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083362"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637612"
 ---
 # <a name="protect-files-in-teams-with-sensitivity-labels"></a>使用敏感度标签保护团队中的文件
 
@@ -44,7 +44,7 @@ ms.locfileid: "42083362"
 
 - 标签或子标签名称包含团队名称
 - 启用加密
-- 团队的 Office 365 组有共同创作权限
+- 团队的 Microsoft 365 组有共同创作权限
 
 创建后，为用户发布新的标签或子标签，用户可在将文件上传到团队之前或文件存储在团队中之后，将其应用到文件。
 

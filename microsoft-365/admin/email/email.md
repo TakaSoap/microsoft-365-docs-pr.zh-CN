@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
-description: 了解如何管理 Office 365 邮箱的电子邮件。
-ms.openlocfilehash: ca1fba8c89f7c647a0bb6d4f846ebb12f82a7abd
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: 了解如何管理 Microsoft 365 邮箱的电子邮件。
+ms.openlocfilehash: 25d34ed4f86a918daea5e04c89b9b79c91bebc08
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126007"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628851"
 ---
 # <a name="email"></a>电子邮件
 
-了解如何管理 Office 365 邮箱的电子邮件。
+了解如何管理 Microsoft 365 邮箱的电子邮件。
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -146,7 +146,7 @@ ms.locfileid: "43126007"
                 <div class="card">
                     <div class="cardText">
                         <h3>解决电子邮件连接和送达问题</a></h3>
-                        <p><a href="https://diagnostics.outlook.com/#/">修复 Office 365 和 Exchange Online 中的 Outlook 连接问题</a></p>
+                        <p><a href="https://diagnostics.outlook.com/#/">修复 Microsoft 365 和 Exchange Online 中的 Outlook 连接问题</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox">恢复用户邮箱中的已删除项目</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues">查找并修复电子邮件传递问题</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">查找并修复添加域或 DNS 记录之后出现的问题（包括电子邮件问题）</a></p>
@@ -162,8 +162,8 @@ ms.locfileid: "43126007"
             <div class="card">
                 <div class="cardText">
                         <h3>适用于企业的资源</h3>
-                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Exchange Online 和 Office 365 邮件流最佳做法</a></p>
-                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">将多个电子邮件帐户迁移到 Office 365 的方法</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Exchange Online 和 Microsoft 365 邮件流最佳做法</a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">将多个电子邮件帐户迁移到 Microsoft 365 的方法</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Exchange 混合部署内容</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</a></p>

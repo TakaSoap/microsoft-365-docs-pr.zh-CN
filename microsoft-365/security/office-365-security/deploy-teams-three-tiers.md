@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 通过 Microsoft Teams 创建和配置团队，以实现对文件的多级别信息保护。
-ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d8912900a02149d198222a4402e101b0dce53310
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083319"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637636"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>部署适用于三层文件保护的团队
 
@@ -32,7 +32,7 @@ ms.locfileid: "42083319"
 
 ## <a name="baseline-teams"></a>基准团队
 
-基线保护同时包括公共和专用团队。 组织中的任何人均可发现和访问公共团队。 只有与团队关联的 Office 365 组的成员才可以发现并访问专用网站。 两种类型的团队均允许成员与他人共享网站。
+基线保护同时包括公共和专用团队。 组织中的任何人均可发现和访问公共团队。 只有与团队关联的 Microsoft 365 组的成员，才能发现并访问专用网站。 两种类型的团队均允许成员与他人共享网站。
 
 ### <a name="public"></a>公开
 

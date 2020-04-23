@@ -11,22 +11,22 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 中提供的来宾共享设置。
-ms.openlocfilehash: 74bf2fd431b604b7f38043bfc029232137b24cf1
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 396f55063461bb4a87813cc1e3943c5a4afd7156
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604396"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625154"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
-本文提供了可能影响 Microsoft 365 工作负载的组织外人员共享的各种设置参考：Teams、Office 365 组、SharePoint 和 OneDrive。 这些设置位于 Azure Active Directory、Microsoft 365、Teams 和 SharePoint 管理中心。
+本文提供了可能影响 Microsoft 365 工作负载的组织外人员共享的各种设置参考：Teams、Microsoft 365 组、SharePoint 和 OneDrive。 这些设置位于 Azure Active Directory、Microsoft 365、Teams 和 SharePoint 管理中心。
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
 **管理员角色：** 全局管理员
 
-Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active Directory 组织关系设置直接影响 Teams、Office 365 组、SharePoint 和 OneDrive 中的共享。
+Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active Directory 组织关系设置直接影响 Teams、Microsoft 365 组、SharePoint 和 OneDrive 中的共享。
 
 > [!NOTE]
 > 仅当已配置 [Azure AD B2B 的 SharePoint 和 OneDrive 集成（预览）](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)时，这些设置才会影响 SharePoint。 下表假定已对此进行了配置。
@@ -41,7 +41,7 @@ Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active D
 |:-----|:-----|:-----|
 |来宾用户权限处于限制状态|是|此设置会影响来宾可以执行的目录任务。|
 |管理员和具有“来宾邀请者”角色的用户可以邀请|是|设置为“**是**”时，管理员可以通过 Azure AD 和 Microsoft 365 共享体验（如 Teams 和 SharePoint）邀请来宾；设置为“**否**”时，则不能邀请。|
-|成员可以邀请|是|设置为“**是**”时，Azure AD 成员可以通过 Azure AD 来邀请来宾；设置为“**否**”时，则不能邀请。 设置为“**是**”时，Office 365 组成员可以在所有者批准的情况下邀请来宾；设置为“**否**”时，Office 365 组成员也可以在所有者批准的情况下邀请来宾，但这些所有者必须是全局管理员才能批准。 <br><br>请注意，“**成员可以邀请**”是指 Azure AD 中的成员（与来宾相对），而不是 Microsoft 365 中的网站或组成员。 <br><br>这与 Microsoft 365 安全和隐私中的“**允许用户将新的来宾添加到组织**”设置相同。|
+|成员可以邀请|是|设置为“**是**”时，Azure AD 成员可以通过 Azure AD 来邀请来宾；设置为“**否**”时，则不能邀请。 设置为“是”**** 时，Microsoft 365 组成员可以在所有者批准的情况下邀请来宾；设置为“否”**** 时，Microsoft 365 组成员也可以在所有者批准的情况下邀请来宾，但这些所有者必须是全局管理员才能批准。 <br><br>请注意，“**成员可以邀请**”是指 Azure AD 中的成员（与来宾相对），而不是 Microsoft 365 中的网站或组成员。 <br><br>这与 Microsoft 365 安全和隐私中的“**允许用户将新的来宾添加到组织**”设置相同。|
 |来宾可以邀请|是|设置为“**是**”时，目录中的来宾可以邀请其他来宾协作处理 Azure AD 资源以及 SharePoint 和 OneDrive 中的文件和文件夹；设置为“**否**”时，则不能邀请。 <br><br>请注意，必须在 SharePoint 管理中心启用“**允许外部用户通过键入精确的电子邮件地址匹配项在目录中查找用户帐户**”，以便来宾与其他来宾共享文件和文件夹。|
 |为来宾启用电子邮件一次性密码(预览)|否|设置为“**是**”时，没有 MSA 或工作或学校帐户的来宾可以[使用一次性密码对 Azure AD 进行身份验证](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode)；设置为“**否**”时，用户需要创建 Microsoft 帐户才能进行身份验证。 必须将此设置设为“**是**”，这样“[Azure AD B2B 的 SharePoint 和 OneDrive 集成（预览）](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)”才能工作。|
 |协作限制|允许向任何域发送邀请|此设置允许你为共享指定允许或阻止的域列表。 如果指定了允许的域，则只能将共享邀请发送到这些域。 如果指定了拒绝的域，则不能将共享邀请发送到这些域。<br><br> 此设置会影响 Microsoft 365 共享体验，例如 Teams 和 SharePoint。 你可以通过使用 SharePoint 或 Teams 中的域筛选功能来更精确地允许或阻止域。|
@@ -52,7 +52,7 @@ Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active D
 
 **管理员角色：** 全局管理员
 
-Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设置。
+Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别设置。
 
 ### <a name="sharing"></a>共享
 
@@ -62,18 +62,18 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 
 |**设置**|**默认**|**说明**|
 |:-----|:-----|:-----|
-|允许用户将新的来宾添加到组织|打开|设置为“**是**”时，Azure AD 成员可以通过 Azure AD 来邀请来宾；设置为“**否**”时，则不能邀请。 设置为“**是**”时，Office 365 组成员可以在所有者批准的情况下邀请来宾；设置为“**否**”时，Office 365 组成员也可以在所有者批准的情况下邀请来宾，但这些所有者必须是全局管理员才能批准。 <br><br>请注意，“**成员可以邀请**”是指 Azure AD 中的成员（与来宾相对），而不是 Microsoft 365 中的网站或组成员。 <br><br>这与 Azure Active Directory 组织关系设置中的“**成员可以邀请**”设置相同。|
+|允许用户将新的来宾添加到组织|打开|设置为“**是**”时，Azure AD 成员可以通过 Azure AD 来邀请来宾；设置为“**否**”时，则不能邀请。 设置为“是”**** 时，Microsoft 365 组成员可以在所有者批准的情况下邀请来宾；设置为“否”**** 时，Microsoft 365 组成员也可以在所有者批准的情况下邀请来宾，但这些所有者必须是全局管理员才能批准。 <br><br>请注意，“**成员可以邀请**”是指 Azure AD 中的成员（与来宾相对），而不是 Microsoft 365 中的网站或组成员。 <br><br>这与 Azure Active Directory 组织关系设置中的“**成员可以邀请**”设置相同。|
 
-### <a name="office-365-groups"></a>Office 365 组
+### <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 设置 > Office 365 组
+**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 设置 > Microsoft 365 组
 
-![Microsoft 365 管理中心中的 Office 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
 
 |**设置**|**默认**|**说明**|
 |:-----|:-----|:-----|
-|允许组织外部的组成员访问组内容|打开|设置为“**打开**”时，来宾可以访问组内容；设置为“**关闭**”时，则不能访问。 对于来宾用户与 Office 365 组或 Teams 进行交互的任何情况，此设置应为“**打开**”。|
-|允许组所有者将组织外部的人员添加到组|打开|设置为“**打开**”时，Office 365 组或 Teams 的所有者可邀请新来宾加入组。 设置为“**关闭**”时，所有者只能邀请目录中已有的来宾。|
+|允许组织外部的组成员访问组内容|打开|设置为“**打开**”时，来宾可以访问组内容；设置为“**关闭**”时，则不能访问。 对于来宾用户与 Microsoft 365 组或 Teams 进行交互的任何情况，此设置应为“打开”****。|
+|允许组所有者将组织外部的人员添加到组|打开|设置为“打开”**** 时，Microsoft 365 组或 Teams 的所有者可邀请新来宾加入组。 设置为“**关闭**”时，所有者只能邀请目录中已有的来宾。|
 
 这些设置均为组织级别的设置。 有关如何使用 PowerShell 在组级别更改这些设置的信息，请参阅[创建针对特定组的设置](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)。
 
@@ -136,7 +136,7 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 
 **管理员角色：** SharePoint 管理员
 
-这些设置会影响组织中的所有网站。 它们不会直接影响 Office 365 组或 Teams，但建议使这些设置与 Office 365 组和 Teams 的设置保持一致，以避免用户体验问题。 （例如，如果在 Teams 而非 SharePoint 中允许来宾共享，则 Teams 中的来宾将无法访问“文件”选项卡，因为 Teams 文件存储在 SharePoint 中。）
+这些设置会影响组织中的所有网站。 它们不会直接影响 Microsoft 365 组或 Teams，但建议使这些设置与 Microsoft 365 组和 Teams 的设置保持一致，以避免用户体验问题。 （例如，如果在 Teams 而非 SharePoint 中允许来宾共享，则 Teams 中的来宾将无法访问“文件”选项卡，因为 Teams 文件存储在 SharePoint 中。）
 
 ### <a name="sharepoint-and-onedrive-sharing-settings"></a>SharePoint 和 OneDrive 共享设置
 
@@ -180,7 +180,7 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 
 ### <a name="sharepoint-and-onedrive-security-group-settings"></a>SharePoint 和 OneDrive 安全组设置
 
-如果想要在 SharePoint 和 OneDrive 中限制可与来宾进行共享的人员，则可以通过将共享限制为指定安全组中的人员来实现这一点。 这些设置不会影响通过 Office 365 组或 Teams 进行共享。 尽管只能由指定安全组中的人员来共享文档和文件夹，但通过组或团队邀请的来宾还有权访问关联的网站。
+如果想要在 SharePoint 和 OneDrive 中限制可与来宾进行共享的人员，则可以通过将共享限制为指定安全组中的人员来实现这一点。 这些设置不会影响通过 Microsoft 365 组或 Teams 进行共享。 尽管只能由指定安全组中的人员来共享文档和文件夹，但通过组或团队邀请的来宾还有权访问关联的网站。
 
 **导航：** SharePoint 管理中心 > 共享 > 将外部共享的范围限制到特定安全组
 
@@ -234,7 +234,7 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 |:-----|:-----|
 |经典|**仅组织内部人员**|
 |OneDrive|**任何人**|
-|与组连接的网站（包括 Teams）|**新来宾和现有来宾** — 如果 Office 365 组设置“**允许组所有者将组织外部的人员添加到组**”设置为“**打开**”；否则为“**仅现有来宾**”|
+|与组连接的网站（包括 Teams）|**新来宾和现有来宾** — 如果 Microsoft 365 组设置“允许组所有者将组织外部的人员添加到组”**** 设置为“打开”****；否则为“仅现有来宾”****|
 |通信|**仅组织内部人员**|
 |不含组的新式网站 (#STS3 TeamSite)|**仅组织内部人员**|
 
@@ -247,4 +247,4 @@ Microsoft 365 管理中心具有用于共享和 Office 365 组的组织级别设
 
 [Microsoft Teams 中的来宾访问](https://docs.microsoft.com/MicrosoftTeams/guest-access)
 
-[将来宾添加到 Office 365 组](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[将来宾添加到 Microsoft 365 组](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)

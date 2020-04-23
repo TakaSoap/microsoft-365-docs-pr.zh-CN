@@ -15,18 +15,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 一个虚构但具有代表性的全球组织如何采用 Microsoft 365 企业版。
-ms.openlocfilehash: 8a9727f806783c72a77a941274e4a1b042c430ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601139"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625346"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 企业版
 
 Microsoft 365 企业版是 Microsoft 首屈一指的云产品，它将 本地和基于云的生产力应用和服务与 Windows 10 企业版和高级安全功能整合成一个完整的智能解决方案，使每个人都能发挥自己的创造性并安全地协同工作。 
 
-Contoso Corporation 是一家虚构但具代表性的全球大型制造集团，总部设在法国巴黎。Contoso 已部署了 Microsoft 365 企业版，并且制定了以下方面的主要设计决策和实现详情：网络、标识、Windows 10 企业版、Office 365 专业增强版、移动设备管理、信息保护和安全性。 
+Contoso Corporation 是一家虚构但具代表性的全球大型制造集团，总部设在法国巴黎。Contoso 已部署了 Microsoft 365 企业版，并且制定了以下方面的主要设计决策和实现详情：网络、标识、Windows 10 企业版、Microsoft 365 企业应用版、移动设备管理、信息保护和安全性。 
 
 Contoso 针对 Microsoft 365 企业版的总体目标是通过使用云服务将员工、合作伙伴、数据和流程汇集在一起来加快他们的数字转型，从而创造客户价值并在数字优先的世界中保持竞争优势。
 
@@ -52,9 +52,9 @@ Contoso 针对 Microsoft 365 企业版的总体目标是通过使用云服务将
 
   Contoso 的 Windows 10 企业版基础结构会为运行主要 PC 和设备操作系统的设备部署并自动安装更新。
 
-- [Office 365 专业增强版](contoso-o365pp.md)
+- [Microsoft 365 企业应用版](contoso-o365pp.md)
 
-  Contoso 的 Office 365 专业增强版基础结构会部署并自动安装 Microsoft Office 生产力软件套件的更新。
+  Contoso 的 Microsoft 365 企业应用版基础结构会部署并自动安装 Microsoft Office 生产力软件套件的更新。
 
 - [移动设备管理](contoso-mdm.md)
 

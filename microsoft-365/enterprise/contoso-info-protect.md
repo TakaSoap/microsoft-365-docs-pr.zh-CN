@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的信息保护功能来保护其在云中的数字资产。
-ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068403"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625298"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -107,10 +107,10 @@ Contoso 使用以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
 |||||
 |:-------|:-----|:-----|:-----|
-| | **Office 365** | **Windows 10 和 Office 365 专业增强版** | **EMS** |
+| | **Office 365** | **Windows 10 和 Microsoft 365 企业应用版** | **EMS** |
 | 1 级：基准  | SharePoint 和 Exchange Online 条件访问策略 <BR> SharePoint 网站上的权限 | 敏感度标签 <BR> BitLocker <BR> Windows 信息保护 | 设备条件访问策略和移动应用管理策略 |
-| 2 级：敏感 | 1 级再加上： <BR> <BR> 敏感度标签 <BR> SharePoint 网站上的 Office 365 保留标签 <BR> 用于 SharePoint 和 Exchange Online 的 Office 365 数据丢失防护 <BR> 独立 SharePoint 网站  | 1 级再加上： <BR> <BR> 数字资产上的敏感度标签  | 1 级 |
-| 3 级：高度管控 | 2 级再加上： <BR><BR> 针对商业机密信息的自带密钥 (BYOK) 加密和保护 <BR> 将 Azure Key Vault 用于与 Office 365 服务交互的业务线应用程序 | 2 级 | 1 级 |
+| 2 级：敏感 | 1 级再加上： <BR> <BR> 敏感度标签 <BR> SharePoint 网站上的 Microsoft 365 保留标签 <BR> 用于 SharePoint 和 Exchange Online 的数据丢失防护 <BR> 独立 SharePoint 网站  | 1 级再加上： <BR> <BR> 数字资产上的敏感度标签  | 1 级 |
+| 3 级：高度管控 | 2 级再加上： <BR><BR> 针对商业机密信息的自带密钥 (BYOK) 加密和保护 <BR> 将 Azure Key Vault 用于与 Microsoft 365 服务交互的业务线应用程序 | 2 级 | 1 级 |
 |||||
 
 此处是 Contoso 最终得到的信息保护配置。

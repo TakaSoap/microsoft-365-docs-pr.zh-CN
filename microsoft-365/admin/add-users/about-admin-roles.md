@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
 ms.custom: okr_smb
-ms.openlocfilehash: ec601e5860460ab77760a5e18c834b987c6b3d07
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151391"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618916"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -73,10 +73,10 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 
 |管理员角色     |应该为谁分配此角色？  |
 |---------|---------|
-|Exchange 管理员     |   将 Exchange 管理员角色分配给需要查看和管理用户电子邮件邮箱、Office 365 组和 Exchange Online 的用户。 <br><br> Exchange 管理员还可以：<br> - 恢复用户邮箱中的已删除项目 <br> - 设置“代理发送”和“代表发送”代理 <br>  |
+|Exchange 管理员     |   将 Exchange 管理员角色分配给需要查看和管理用户电子邮件邮箱、Microsoft 365 组和 Exchange Online 的用户。 <br><br> Exchange 管理员还可以：<br> - 恢复用户邮箱中的已删除项目 <br> - 设置“代理发送”和“代表发送”代理 <br>  |
 |全局管理员     |   向需要全局访问 Microsoft Online Services 中的大多数管理功能和数据的用户分配全局管理员角色。 <br><br> 为太多的用户提供全局访问权限会带来安全风险，我们建议你设置 2 至 4 名全局管理员。 <br><br> 只有全局管理员才能执行以下操作：<br> - 为所有用户重置密码 <br> - 添加和管理域 <br> <br> **注意：** 已注册 Microsoft Online Services 的人员将自动成为全局管理员。 |
 |全局读取者    |   向需要在可供全局管理员查看的管理中心中查看管理员功能和设置的用户分配全局读取者角色。 全局读取者管理员不能编辑任何设置。   |
-|组管理员     |   向需要跨管理中心（包括 Microsoft 365 管理中心和 Azure Active Directory 门户）管理所有组设置的用户分配组管理员角色。 <br><br> 组管理员可以：<br> - 创建、编辑、删除和还原 Office 365 组 <br> - 创建和更新组的创建、过期和命名策略 <br> - 创建、编辑、删除和还原 Azure Active Directory 安全组| 
+|组管理员     |   向需要跨管理中心（包括 Microsoft 365 管理中心和 Azure Active Directory 门户）管理所有组设置的用户分配组管理员角色。 <br><br> 组管理员可以：<br> - 创建、编辑、删除和还原 Microsoft 365 组 <br> - 创建和更新组的创建、过期和命名策略 <br> - 创建、编辑、删除和还原 Azure Active Directory 安全组| 
 |支持管理员     |   为需要执行以下操作的用户分配支持管理员角色：<br> - 重置密码 <br> - 强制用户注销 <br> - 管理服务请求 <br> - 监视服务运行状况 <br> <br> **注意**：支持管理员只能帮助非管理员用户和分配有以下角色的用户：目录读取者、来宾邀请者、支持管理员、消息中心读取者和报表阅读人员。      |
 |Office 应用管理员    |   为需要执行以下操作的用户分配 Office 应用管理员角色： <br> - 使用 Office 云策略服务为 Office 创建和管理基于云的策略 <br> - 创建和管理服务请求 <br> - 管理用户在 Office 应用中看到的新增内容   <br> - 监视服务运行状况  |
 |服务管理员    |   将服务管理员角色作为附加角色分配给其角色不包括以下内容，但仍需要执行以下操作的管理员或用户： <br> - 打开和管理服务请求 <br> - 查看和共享消息中心帖子   |
@@ -127,9 +127,9 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 |安全操作员     |    调查和响应安全警报、在 Identity Protection 中心管理各种功能、监视服务运行状况。     |
 |安全读取者     |    对安全功能、登录报告和审核日志具有只读访问权限。     |
 |服务支持管理员     |    为 Azure、Microsoft 365 和 Office 365 服务创建服务请求，并监视服务运行状况。     |
-|SharePoint 管理员     |    可完全访问 SharePoint Online、管理 Office 365 组、管理服务请求和监视服务运行状况。     |
+|SharePoint 管理员     |    可完全访问 SharePoint Online、管理 Microsoft 365 组、管理服务请求和监视服务运行状况。     |
 |Skype for Business 管理员     | 可完全访问所有 Teams 和 Skype 功能以及 Skype 用户属性，管理服务请求和监视服务运行状况。      |
-|Teams 管理员     |    可完全访问 Teams 和 Skype 管理中心，管理 Office 365 组和服务请求以及监视服务运行状况。     |
+|Teams 管理员     |    可完全访问 Teams 和 Skype 管理中心，管理 Microsoft 365 组和服务请求以及监视服务运行状况。     |
 |Teams 通信管理员     |    分配电话号码，创建和管理语音和会议策略，以及读取呼叫分析。     |
 |Teams 通信支持工程师     |    读取所有呼叫参与者的呼叫记录详细信息以排查通信问题。     |
 |Teams 通信支持专员     |    仅读取特定用户的用户呼叫详细信息以排查通信问题。|

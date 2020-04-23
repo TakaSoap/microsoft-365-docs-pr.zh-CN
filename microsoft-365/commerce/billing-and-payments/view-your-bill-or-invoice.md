@@ -25,16 +25,16 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
-ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 7d9ee9166de2a3807a8d10d061d3329c71180931
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540851"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634952"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
-本文适用于已订阅 Office 365 商业版计划的用户。只有全局管理员或帐单管理员才能执行本文所述步骤。
+本文适用于已订阅 Microsoft 365 商业版的用户。只有全局管理员或帐单管理员才能执行本文所述步骤。
   
 如果需要帮助解读你在帐单上看到的费用，请参阅[了解帐单](understand-your-invoice2.md)获取详细演练。
   

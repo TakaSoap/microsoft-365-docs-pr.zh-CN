@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 4469197628feb96980ec2d8b560048acba704c54
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212301"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628899"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
 > [!NOTE]
 > 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> 如果不确定是应为 Outlook 创建共享邮箱还是 Office 365 组，可参阅[比较组](../create-groups/compare-groups.md)获取一些指导。 请注意，目前不能将共享邮箱迁移到 Office 365 组。 如果这不是你想要的结果，请通过[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)告诉我们。
+> 如果不确定是应为 Outlook 创建共享邮箱还是 Microsoft 365 组，可参阅[比较组](../create-groups/compare-groups.md)获取一些指导。 请注意，暂无法将共享邮箱迁移到 Microsoft 365 组中。 如果这不是你想要的结果，请通过[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)告诉我们。
 
 创建共享邮箱很容易，通过共享邮箱，多位人员可以从一个公用电子邮件地址（如 info@contoso.com）监控和发送电子邮件。当群组中的某个人员答复发送到共享邮箱的邮件时，系统显示电子邮件来自共享邮箱，而不是单个用户。
 
@@ -42,7 +42,7 @@ ms.locfileid: "43212301"
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>创建共享邮箱并添加成员
   
-1. 使用 Office 365 全局管理员帐户或 Exchange 管理员帐户登录。 如果收到消息“**你没有访问此页面或执行此操作的权限**”，则表明你不是管理员。 
+1. 使用全局管理员帐户或 Exchange 管理员帐户登录。 如果收到消息“**你没有访问此页面或执行此操作的权限**”，则表明你不是管理员。 
 
 ::: moniker range="o365-worldwide"
 
@@ -158,7 +158,7 @@ ms.locfileid: "43212301"
     
     有关说明，请参阅<a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">在 Outlook Mobile 中添加共享邮箱</a>。
 
-- 打开浏览器、登录 Office 365，然后转到 Outlook 网页版。 可从 Outlook 网页版访问共享邮箱。
+- 打开浏览器、登录，然后转到 Outlook 网页版。 可从 Outlook 网页版访问共享邮箱。
 
     有关说明，请参阅<a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">在 Outlook 网页版中添加共享邮箱</a>。
 

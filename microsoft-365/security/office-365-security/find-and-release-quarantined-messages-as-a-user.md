@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中以用户的身份查找并释放隔离的邮件。
+title: 以用户身份查找并释放隔离的邮件
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,23 +16,23 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 作为 Office 365 用户，你可以查看、释放和删除已隔离邮件，即你是收件人但被垃圾邮件筛选功能隔离为垃圾邮件或大量电子邮件的邮件。 在安全与合规中心内，查看和管理已隔离邮件。
-ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: 作为 Microsoft 365 用户，你可以查看、释放和删除隔离的邮件，即你是收件人、但被垃圾邮件筛选功能隔离为垃圾邮件或群发电子邮件的邮件。 在安全与合规中心内，查看和管理已隔离邮件。
+ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216900"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638102"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>在 Office 365 中以用户身份查找和释放已隔离邮件
+# <a name="find-and-release-quarantined-messages-as-a-user"></a>以用户身份查找并释放隔离的邮件
 
-无论是在有 Exchange Online 邮箱的 Office 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [Office 365 中的隔离功能](quarantine-email-messages.md)。
+无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [Office 365 中的隔离功能](quarantine-email-messages.md)。
 
 作为用户，你可以查看、释放和删除已隔离邮件，即你是收件人但被隔离为垃圾邮件、大量电子邮件或（自 2020 年 4 月起）钓鱼电子邮件的邮件。 你可以在“安全与合规中心”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Office 365 安全与合规中心，请转到 <https://protection.office.com>。 若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。
+- 若要打开安全与合规中心，请转到 <https://protection.office.com>。 若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。
 
 - 管理员可以配置邮件在永久删除前的隔离期限（反垃圾邮件策略）。 隔离到期的邮件不可恢复。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "43216900"
 
    - **邮件 ID**
 
-   - **策略名称**：此属性显示导致邮件被隔离的策略。 可向管理员提供此信息。
+   - **策略名称**
 
    - **大小**
 
@@ -108,7 +108,7 @@ ms.locfileid: "43216900"
 
    - **主题**：使用邮件的整个主题。 搜索不区分大小写。
 
-   输入搜索条件后，单击“刷新”**** ![“刷新”按钮](../media/scc-quarantine-refresh.png) 来筛选结果。
+   输入搜索条件后，单击“刷新”**** ![“刷新”按钮](../../media/scc-quarantine-refresh.png) 来筛选结果。
 
 找到特定的已隔离邮件后，选择此邮件即可查看它的详细信息，并对它执行操作（例如，查看、释放、下载或删除邮件）。
 
@@ -150,7 +150,7 @@ ms.locfileid: "43216900"
 
   完成后，单击“释放邮件”****。
 
-- **查看邮件头**：选择此链接可查看邮件头文本。 若要深入分析邮件头字段和值，请将邮件头文本复制到剪贴板，然后选择“Microsoft 邮件头分析器****”，即可转到远程连接分析器（如果希望在不离开 Office 365 的情况下完成这项任务，请右键单击并选择“在新标签页中打开”****）。 将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”****：
+- **查看邮件头**：选择此链接可查看邮件头文本。 若要深入分析邮件头字段和值，请将邮件头文本复制到剪贴板，然后选择“Microsoft 邮件头分析器”****，即可转到远程连接分析器（如果希望在不离开 Microsoft 365 的情况下完成这项任务，请右键单击并选择“在新标签页中打开”****）。 将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”****：
 
 - **预览邮件**：在显示的浮出控件窗格中，选择以下选项之一：
 
