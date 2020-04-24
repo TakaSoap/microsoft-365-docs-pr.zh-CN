@@ -513,8 +513,6 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: 将数据添加到另一审阅集
               href: add-data-to-review-set-from-another-review-set.md
-            - name: 管理负载集
-              href: manage-load-sets-in-advanced-ediscovery.md
         - name: 审阅事例数据
           items:
             - name: 使用审阅集仪表板（预览版）
