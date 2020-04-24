@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: 了解如何升级到新的订阅。
 monikerRange: o365-worldwide
-ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
+ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707519"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43796508"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划 
 
@@ -63,7 +63,7 @@ ms.locfileid: "43707519"
 
 ## <a name="the-upgrade-tab-is-empty"></a>"升级" 选项卡为空
 
-如果 "**升级**" 选项卡为空，你将看到目前无法升级的原因的说明。 您可以尝试[手动更改计划](change-plans-manually.md)或[致电支持人员](../../admin/contact-support-for-business-products.md)。 有关详细信息，请参阅[为什么无法升级计划？](#why-cant-i-upgrade-plans)。
+如果 "**升级**" 选项卡为空，你将看到目前无法升级的原因的说明。 您可以尝试[手动更改计划](change-plans-manually.md)。 有关详细信息，请参阅[为什么无法升级计划？](#why-cant-i-upgrade-plans)。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>我看不到所需的计划
 
