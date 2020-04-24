@@ -219,8 +219,6 @@
           href: get-help-with-domains/information-for-dns-records.md
         - name: 查找并修复问题
           href: get-help-with-domains/find-and-fix-issues.md
-        - name: 域连接
-          href: get-help-with-domains/domain-connect.md
         - name: 设置域（主机特定的操作说明）
           href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
         - name: 在任意域注册机构更改名称服务器
