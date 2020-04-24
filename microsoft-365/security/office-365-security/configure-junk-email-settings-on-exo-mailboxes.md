@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置
+title: 配置 Exchange Online 邮箱上的垃圾邮件设置
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638436"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800063"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>在 Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
 Exchange Online 中的组织反垃圾邮件设置由 Exchange Online Protection （EOP）控制。 有关详细信息，请参阅 [Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。
 
@@ -48,6 +48,8 @@ Exchange Online 中的组织反垃圾邮件设置由 Exchange Online Protection 
 - 您需要先分配权限，然后才能执行这些过程。 具体来说，您需要 "**邮件收件人**" 角色（默认情况下分配给 "**组织管理**"、"**收件人管理**" 和 "**自定义邮件收件人**" 角色组）或 "**用户选项**" 角色（默认情况下分配给 "**组织管理**" 和 "**技术支持**" 角色组）。 若要向 Exchange Online 中的角色组添加用户，请参阅[在 Exchange online 中修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)。 请注意，拥有默认权限的用户可以在其自己的邮箱上执行这些相同的过程，只要他们有[权访问 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)即可。
 
 - 在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+
+- 共享邮箱的安全发件人在设计时不会同步到 Azure AD 和 EOP。
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>使用 Exchange Online PowerShell 启用或禁用邮箱中的垃圾邮件规则
 
@@ -181,3 +183,38 @@ When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Ju
 因此，Outlook 垃圾邮件筛选器能够使用邮箱的安全列表集合及其自己的垃圾邮件分类将邮件移动到 "垃圾邮件" 文件夹，即使邮箱中禁用了垃圾邮件规则也是如此。
 
 Outlook 和 Web 上的 Outlook 同等支持安全列表集合。 安全列表集合保存在 Exchange Online 邮箱中，因此对 Outlook 中的安全列表集合的更改会显示在 web 上的 Outlook 中，反之亦然。
+
+## <a name="limits-for-junk-email-settings"></a>垃圾邮件设置的限制
+
+存储在用户邮箱中的安全列表集合（安全发件人列表、安全收件人列表和阻止发件人列表）也会同步到 EOP。 通过目录同步，安全列表集合将同步到 Azure AD。
+
+- 用户邮箱中的安全列表集合的限制为 510 KB，其中包含所有列表以及其他垃圾邮件筛选器设置。 如果用户超过此限制，将收到如下所示的 Outlook 错误：
+
+  > 无法/无法将添加到 "垃圾邮件" 的服务器列表。 您已超出服务器允许的大小。 服务器上的垃圾邮件筛选器将被禁用，直到垃圾邮件列表缩小到服务器允许的大小。
+
+  有关此限制以及如何更改此限制的详细信息，请参阅[KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit)。
+
+- EOP 中的同步安全列表集合具有以下同步限制：
+
+  - 1024如果启用了 **"来自我的联系人的信任电子邮件**"，则安全发件人列表、安全收件人列表和外部联系人中的条目总数。
+  - 500阻止的发件人列表和阻止的域列表中的条目总数。
+
+  达到1024项限制时，将发生以下情况：
+  
+  - 该列表将停止接受 PowerShell 中的条目和 web 上的 Outlook，但不会显示任何错误。
+
+    Outlook 用户可以继续添加1024个以上的条目，直到达到 Outlook 限制值 510 KB。 Outlook 可以使用这些额外的条目，只要 EOP 筛选器在传递到邮箱之前不会阻止邮件（邮件流规则、反欺骗等）。
+
+- 通过目录同步，这些项将按以下顺序同步到 Azure AD：
+
+  1. 如果启用了 **"来自我的联系人的信任电子邮件"** ，则为邮件联系人。
+  2. 只要对前1024个条目进行了更改，就会对安全发件人列表和安全收件人列表进行组合、消除重复并按字母顺序对其进行排序。
+
+  使用前1024个条目，并在邮件头中标记相关信息。
+  
+  1024以上未同步到 Azure AD 的条目由 Outlook （而非 web 上的 Outlook）处理，邮件头中不会标记任何信息。
+
+您可以看到，启用 "**来自我的联系人的信任电子邮件**" 设置可以减少可同步的安全发件人和安全收件人的数量。 如果这是个问题，我们建议使用组策略关闭此功能：
+
+- 文件名： outlk16。 opax
+- 策略设置：**信任来自联系人的电子邮件**

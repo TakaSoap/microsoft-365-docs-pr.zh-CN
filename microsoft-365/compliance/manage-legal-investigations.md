@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 使用 Microsoft 365 合规性中心中的电子数据展示案例来管理您的组织的法律调查。 如果你拥有 E5 订阅，则可以使用高级电子数据展示的文本分析、机器学习和预测编码功能进一步分析事例数据。
-ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635902"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799903"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>在 Microsoft 365 中管理法律调查
 
@@ -64,7 +64,7 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 - [索引保管人数据](processing-data-for-case.md)并修复索引错误，以便您可以为调查有效收集数据
 
-- [收集事例数据](collecting-data-for-ediscovery.md)并将其添加[到评审集](collecting-data-for-ediscovery.md#adding-search-results-to-a-review-set)以进行进一步调查
+- [收集事例数据](collecting-data-for-ediscovery.md)并将其添加[到评审集](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set)以进行进一步调查
 
 - [查看](view-documents-in-review-set.md)审阅集中的文档、[查询](review-set-search.md)数据和[标记](tagging-documents.md)项
 

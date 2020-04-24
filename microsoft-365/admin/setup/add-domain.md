@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 通过在 DNS 主机上添加 DNS 记录，将您的域添加到 Microsoft 365 管理中心中的 Office 365。 安装向导将引导您完成该过程。
-ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631811"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800019"
 ---
 # <a name="add-a-domain-to-office-365"></a>将域添加到 Office 365
 
@@ -101,6 +101,49 @@ ms.locfileid: "43631811"
     如果要稍后等待，请滚动到底部，然后选择 "**跳过此步骤**"。
     
 8. 选择 "**完成**"-完成！ 
+
+## <a name="add-or-edit-custom-dns-records"></a>添加或编辑自定义 DNS 记录
+
+按照以下步骤为网站或第三方服务添加自定义记录。
+
+1. 在上<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>登录到 Microsoft 管理中心。
+
+2. 转到 "**设置**  > **域**" 页面。
+
+3. 在" **域**"页面上选择域。 
+    
+4. 在 " **DNS 设置**" 下，选择 "**自定义记录**";然后选择 "**新建自定义记录**"。
+
+5. 选择要添加的 DNS 记录的类型，然后键入新记录的信息。
+    
+6. 选择“**保存**”。
+
+## <a name="registrars-with-domain-connect"></a>具有域连接的注册机构
+
+启用[域连接](https://www.domainconnect.org/)的注册机构允许您将您的域添加到 Microsoft 365，这是一个需要几分钟时间的三步骤过程。 
+  
+在向导中，我们将只是确认你拥有域，然后自动设置你的域的记录，因此电子邮件将发送到 Microsoft 365 和其他 Microsoft 365 服务（如团队）使用你的域。
+  
+> [!NOTE]
+> 在开始此设置向导前，请确保你已禁用浏览器中的任何弹出窗口阻止程序。
+  
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>与 Microsoft 365 集成的域连接注册机构
+
+- [1&amp;1 IONOS](https://www.1and1.com/)
+- [123Reg](https://www.123-reg.co.uk/)
+- [GoDaddy](https://www.godaddy.com/)
+- [WordPress](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [MediaTemple](https://mediatemple.net/)
+- SecureServer 或 WildWestDomains （使用 SecureServer DNS 托管的 GoDaddy 经销商）
+    - [MadDog 域](https://www.maddogdomains.com/)
+    - [CheapNames](https://www.cheapnames.com)
+
+### <a name="what-happens-to-my-email-and-website"></a>我的电子邮件和网站会发生什么情况？
+
+完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，并且你的域的所有电子邮件都将开始进入 Microsoft 365。 请确保你已在 Office 365 中添加用户并为每个在你的域中收到电子邮件的人设置邮箱！
+  
+如果你有一个用于你的企业的网站，它将在其所在的位置保持工作。 域连接设置步骤不会影响您的网站。
 
 ## <a name="related-articles"></a>相关文章
 

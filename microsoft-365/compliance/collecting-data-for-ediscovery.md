@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6b86d9f86edc427e10c02a99e3cda3e5e79db66
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595849"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799935"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>在高级电子数据展示中收集事例数据
 
-确定了您的保管人和数据源对您的情况有意义之后，就可以确定要深入研究的文档集。 您可以使用高级电子数据展示中的搜索工具，在 Office 365 中从 custodial 和非 custodial 位置进行识别。
+确定了您的保管人和数据源对您的情况有意义之后，就可以确定要深入研究的文档集。 您可以使用高级电子数据展示中的搜索工具，在 Microsoft 365 中识别 custodial 和非 custodial 位置的相关文档。
 
 运行搜索后，可以查看检索的项目的统计信息，例如与搜索查询匹配项目数最多的位置。 您还可以预览结果的子集。 在确定要进一步检查的文档集后，可以将搜索结果添加到审阅集以供收集和处理。
 
@@ -41,7 +41,7 @@ ms.locfileid: "41595849"
 
 完成搜索估计后，选择搜索以显示弹出页面，这将显示有关搜索结果的一些高级统计信息。 在这种情况下，"**统计**" 按钮将处于活动状态。 您可以选择它以查看搜索统计信息，例如：
 
-- 摘要
+- 总结
 - 顶部位置
 - Queries
 
@@ -49,6 +49,10 @@ ms.locfileid: "41595849"
 
 完成预览后，**预览**按钮将处于活动状态。 选择它可预览结果的样本子集。
 
-## <a name="adding-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
+## <a name="add-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
 
 当您准备收集和处理整个搜索结果时，您可以通过将其添加到审阅集来执行此操作。 有关详细信息，请参阅[将数据添加到审阅集](add-data-to-review-set.md)。
+
+## <a name="add-non-microsoft-365-data-to-a-review-set"></a>将非 Microsoft 365 数据添加到评审集
+
+作为案例的集合过程的一部分，您还可以将非 Office 365 数据添加到审阅集，并与使用搜索工具收集的 Office 365 数据一起进行查看和分析。 添加非 Office 365 时，必须将其与案例中的特定保管人相关联。 有关详细信息，请参阅[将非 Microsoft 365 数据加载到评审集](load-non-Office-365-data-into-a-review-set.md)。
