@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621266"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794013"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -58,7 +58,7 @@ ms.locfileid: "43621266"
 ::: moniker-end
 
    
-2. 在仪表板上方选择“**选择报表**”，从所有可用报表列表中进行选择。 或者，选择服务（电子邮件、OneDrive 等）的一览活动小部件，查看详细信息。 <br/>![使用情况仪表板](../../media/usage-report-dashboard.png)
+2. 在仪表板上方选择“**选择报表**”，从所有可用报表列表中进行选择。 或者，选择服务（如电子邮件或 OneDrive）的一览活动小部件，查看详细信息。 <br/>![使用情况仪表板](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>谁可查看报表
 
@@ -104,7 +104,7 @@ ms.locfileid: "43621266"
   
 - [OneDrive for Business 使用情况](onedrive-for-business-usage.md)
 
-- [专业增强版使用情况](microsoft365-apps-usage.md)
+- [Microsoft 365 应用使用情况](microsoft365-apps-usage.md)
   
 - [SharePoint 网站使用情况](sharepoint-site-usage.md)
   

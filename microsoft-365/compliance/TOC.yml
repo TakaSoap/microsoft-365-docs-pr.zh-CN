@@ -149,6 +149,10 @@
           href: document-fingerprinting.md
         - name: 敏感信息的 DLP 函数
           href: what-the-dlp-functions-look-for.md
+    - name: Microsoft 365 中的加密
+      href: encryption.md
+    - name: Office 365 服务加密
+      href: office-365-service-encryption.md
     - name: 客户密钥
       items:
         - name: 使用 Office 365 中的客户密钥执行服务加密
@@ -200,6 +204,8 @@
               href: legacy-information-for-message-encryption.md
             - name: 为以前版本的 Office 365 邮件加密设置 Azure 权限管理
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: 在 SharePoint 管理中心中设置 IRM
+      href: set-up-irm-in-sp-admin-center.md
     - name: 了解数据分类（预览）
       href: data-classification-overview.md
       items:
