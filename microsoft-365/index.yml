@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4c66e2c398adfc67ec28661ed654ca891a846534
-  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.openlocfilehash: 0b5b128a0d4ea756a6cc6f926d1496de16520377
+  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/19/2020
-  ms.locfileid: "42857317"
+  ms.lasthandoff: 04/21/2020
+  ms.locfileid: "43636647"
 highlightedContent:
   items:
   - title: 管理员和 IT 专业人员培训
@@ -45,9 +45,9 @@ additionalContent:
     summary: 选择一个卡片，了解有关 Microsoft 365 的详细信息。
     items:
     - title: Microsoft 365 管理中心
-      summary: 为组织设置和管理 Office 365 和 Microsoft 365 服务。
+      summary: 为组织设置和管理 Microsoft 365 服务。
       url: ./admin/admin-home.md
-    - title: Microsoft 365 商业版
+    - title: Microsoft 365 商业高级版
       summary: 专为中小型企业设计。 使用最新版的 Windows 和 Office（如 Excel 和 Outlook）运营业务。 充分利用可扩展到所有业务设备的数据保护和安全性。
       url: ./business/index.yml
     - title: Microsoft 365 企业版
@@ -63,7 +63,7 @@ additionalContent:
       summary: 了解 Microsoft 365 安全性中强大的安全解决方案和服务，以便你可以更好地跨攻击面保护组织。
       url: ./security/index.yml
     - title: Microsoft 365 for Campaigns
-      summary: 使用 Microsoft 365 商业版推荐的配置，让你的活动或业务数据和通信保持安全。
+      summary: 使用适用于 Microsoft 365 商业版的此建议配置，保护你的市场活动或业务数据和通信。
       url: ./campaigns/index.md
     - title: Microsoft 托管桌面
       summary: Microsoft 托管桌面将 Microsoft 365 企业版、Microsoft 基于云的设备管理和安全监控结合在一起，使你可以腾出 IT 团队以专注于核心业务需求。
