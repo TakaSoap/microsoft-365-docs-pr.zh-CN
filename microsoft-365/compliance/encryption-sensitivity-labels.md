@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
-ms.openlocfilehash: ca6b3a76efcc25ab19b05bf841e506c6a5aab375
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: fef9e7b41b66c353b93c6196908c6dec4990995f
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540829"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790639"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -44,7 +44,7 @@ ms.locfileid: "43540829"
 - **立即分配权限**，以便准确确定哪些用户获得了带有该标签的内容的哪些权限。
 - 在用户将此标签应用到内容时**允许用户分配权限**。 这样，即可让组织内部人员在协作处理和完成任务时具有可能需要的一定程度的灵活性。
 
-在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心[创建敏感度标签](create-sensitivity-labels.md)时，可使用加密设置。
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心[创建敏感度标签](create-sensitivity-labels.md)时，可使用加密设置。
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的工作方式
 
@@ -157,8 +157,10 @@ ms.locfileid: "43540829"
 - 组织中的任何人（所有租户成员）。此设置不包括来宾帐户。
 
 - 所有经过身份验证的用户。 选择前，请确保你了解此设置的相关[要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
+- 任何特定用户或启用了电子邮件的安全组、通讯组、Microsoft 365 组或动态通讯组。 
+- 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com**或 **outlook.com**。
 
-- Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、Office 365 组或[动态通讯组](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
+- 任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)）。 请注意，不能使用[来自 Exchange 的动态通讯组](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
 
 - 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com**或 **outlook.com**。
     

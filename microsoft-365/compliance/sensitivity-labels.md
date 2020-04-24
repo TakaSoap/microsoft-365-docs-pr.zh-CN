@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 信息保护框架中的灵敏度标签，对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受影响。 这些标签可应用包含加密视觉标记（如页脚和水印）的保护设置。
-ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240307"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790649"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -80,7 +80,7 @@ ms.locfileid: "43240307"
 > 除了在 Office 应用中将标签应用于电子邮件和文档之外，在以下公共预览版中现在也可以使用敏感度标签：
 > 
 > - [启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [将敏感度标签与 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）配合使用](sensitivity-labels-teams-groups-sites.md)
+> - [将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站（公共预览版）配合使用](sensitivity-labels-teams-groups-sites.md)
 
 当电子邮件或文档应用敏感度标签后，系统便会对内容强制执行相应标签的任何已配置保护设置。 敏感度标签可用于：
 
@@ -92,14 +92,14 @@ ms.locfileid: "43240307"
     
     ![应用于文档的水印和页眉](../media/Sensitivity-label-watermark-header.png)
     
-    需要检查何时应用内容标记？ 请参阅 [Office 365 何时将内容标记和加密应用于内容](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)。
+    需要检查何时应用内容标记？ 请参阅 [Microsoft 365 何时应用内容标记和加密](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)。
     
     字符串长度：水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
 
 
-- 选择加入预览以****[将灵敏度标签用于 Microsoft Teams、Office 365 组和 SharePoint 网站（公共预览版）](sensitivity-labels-teams-groups-sites.md)时，可保护网站和组等容器中的内容。
+- 选择加入预览以****[将灵敏度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站（公共预览版）](sensitivity-labels-teams-groups-sites.md)时，可保护网站和组等容器中的内容。
     
-    在你选择预览之前，不会显示“网站和组设置”的配置选项。**** 请注意，此标签配置不会导致自动标记文档，而是通过控制对存储文档的容器的访问来保护内容。 这些设置包括隐私级别、Office 365 组所有者可否向组中添加来宾，以及授予非托管设备的访问权限级别。
+    在你选择预览之前，不会显示“网站和组设置”的配置选项。**** 请注意，此标签配置不会导致自动标记文档，而是通过控制对存储文档的容器的访问来保护内容。 这些设置包括隐私级别、Microsoft 365 组所有者可否向组中添加来宾，以及授予非托管设备的访问权限级别。
 
 - 在 Office 应用中自动应用标签，或推荐标签。**** 你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
     
@@ -141,9 +141,9 @@ ms.locfileid: "43240307"
 
 借助标签策略，你可以：
 
-- **选择可查看标签的用户和组。** 可以将标签发布到任意启用电子邮件的安全组、Office 365 组或动态通讯组。
+- **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
-- **将默认标签**应用于标签策略中包含的用户和组创建的所有新文档和电子邮件。 如果已[为 Microsoft Teams、Office 365 组和 SharePoint 网站启用了灵敏度标签](sensitivity-labels-teams-groups-sites.md)，则此选项也适用于容器。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 
+- **将默认标签**应用于标签策略中包含的用户和组创建的所有新文档和电子邮件。 如果已[为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用了灵敏度标签](sensitivity-labels-teams-groups-sites.md)，则此选项也适用于容器。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 
 
 - **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 目前，未将理由原因发送到[标签分析](label-analytics.md)供管理员查看。 但是，[Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)将此信息发送到 [Azure 信息保护分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
@@ -197,7 +197,7 @@ ms.locfileid: "43240307"
 
 ### <a name="azure-information-protection-clients"></a>Azure 信息保护客户端
 
-在 Windows 计算机上使用 Office 365 专业增强版应用中的灵敏度标签时，可选择使用 Azure 信息保护客户端，或使用 Office 内置的标记。
+在 Windows 计算机上使用 Microsoft 365 企业应用版应用中的灵敏度标签时，可选择使用 Azure 信息保护客户端，或使用 Office 内置的标记。
 
 默认情况下，安装 Azure 信息保护客户端时，将关闭这些应用中的内置标记功能。 有关详细信息（包括如何更改此默认行为），请参阅 [Office 内置标签客户端和 Azure 信息保护客户端](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)。
 
