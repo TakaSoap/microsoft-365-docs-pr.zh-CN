@@ -17,16 +17,18 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: 介绍 EOP 和垃圾邮件筛选器筛选出的电子邮件的安全提示。
-ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7d7e6819e1374fd941d6eeb992ecf63726d4127
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634300"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809024"
 ---
 # <a name="safety-tips-in-email-messages"></a>电子邮件中的安全提示
 
-Exchange Online Protection （EOP）和 Microsoft 365 保护你的垃圾邮件、网络钓鱼和恶意软件防护。 如今，其中一些攻击非常精心编制，使其看起来是合法的。 将邮件发送到 "垃圾邮件" 文件夹并不总是足够。 现在，当您在 Outlook 或 web 上的 Outlook 中检查您的电子邮件时，EOP 会自动检查发件人，并将安全提示添加到电子邮件的顶部。
+Exchange Online Protection （EOP）和 Microsoft 365 保护你的垃圾邮件、网络钓鱼和恶意软件防护。 如今，其中一些攻击非常精心编制，使其看起来是合法的。 将邮件发送到 "垃圾邮件" 文件夹并不总是足够。 现在，当您在 Outlook 或 web 上的 Outlook 或任何电子邮件客户端中检查您的电子邮件时，EOP 会自动检查发件人，并将安全提示添加到电子邮件的顶部。
+
+Outlook 中的安全提示不依赖于所使用的 Outlook 版本，因为安全提示被破译开放并直接插入到邮件正文中。 这意味着安全提示将显示在所使用的任何电子邮件客户端中。 它是在电子邮件筛选器级别完成的，不是在邮件客户端级别呈现的，因此，它不仅显示在任何版本的 Outlook 中，还会显示在任何电子邮件客户端中。
 
 安全提示（一种由颜色编码的邮件）将警告您可能有害的邮件。 您的收件箱中的大多数邮件不会有安全提示。 只有在 EOP 和 Microsoft 365 包含可帮助阻止垃圾邮件、网络钓鱼和恶意软件攻击的信息时，才会看到它们。 如果安全提示确实显示在收件箱中，则可以使用以下示例来了解有关每种安全提示的详细信息。
 
@@ -55,6 +57,7 @@ Exchange Online Protection （EOP）和 Microsoft 365 保护你的垃圾邮件�
     我们还将告诉你当我们跳过对某个邮件的检查时，因为它来自安全发件人列表中信任的发件人，或者如果有邮件流规则，可以绕过筛选。
 
     当外部图像被阻止（即邮件在收件箱中而不是垃圾邮件）时，还会显示灰色安全提示，其中包含尚未选择下载的外部图像。
+    
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 

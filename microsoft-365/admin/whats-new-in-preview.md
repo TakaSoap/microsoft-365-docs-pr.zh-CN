@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 管理中心-了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627518"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805175"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -36,10 +36,59 @@ ms.locfileid: "43627518"
 > **"经典" 管理员中心在三月份开始退休**<br><br>
 登录到 admin.microsoft.com 后，你现在将每次都转到新的管理中心。 在三月份，我们将开始禁用切换回经典管理中心的功能。 现在，你仍可以切换回来，但由于新的管理中心有奇偶校验（并超过它），我们将关闭所有组织的切换。 <br><br> *上次更新时间：2020年3月2日*
 
-如果你对其他管理中心的新增内容感兴趣：
+如果你对其他 Microsoft 云服务中的新增功能感兴趣，请尝试以下操作：
 
+- [Exchange Online 中的新增功能](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Microsoft Intune 中的新增功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Microsoft 365 合规性中心的新增功能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>2020 年 3 月
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>特色反馈修复：提高 "添加用户" 的许可可靠性
+
+我们收到了关于管理员在添加用户时分配许可证的困难程度的大量反馈。 我们已对此修补程序进行了第一次更新，我们已迁移到幕后的更可靠服务以处理这些请求。 如果出现问题，您现在将收到一条错误消息，允许您重试。
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="添加包含错误的用户确认页。":::
+
+### <a name="microsoft-teams-home-page-card"></a>Microsoft 团队主页卡片
+
+使用 uptick 在团队使用中，一些 emc 将会获取一个固定的仪表板卡片，使团队更易于发现。 该卡片还提供了指向培训和文档的链接，可帮助您的组织过渡到远程工作。 只需转到 "**主页**" 即可查看新卡片。
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft 团队主页卡片":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>自定义组织的 SharePoint 移动应用主题
+
+通过使用 Microsoft 365 管理中心，您可以在适用于 Android 的 SharePoint 移动应用中自定义组织的主题和适用于 Android 的 SharePoint 移动应用。 此功能可方便地提供移动 intranet 应用体验，使员工可以在旅途中与您的 SharePoint Online 相匹配。 主题自定义项包括您的徽标图像、导航栏颜色、文本和图标颜色以及强调文字颜色，从而便于识别。
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="将管理中心设置映射到移动应用的关系图。":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>对 "添加组" 向导的改进
+
+当管理员创建一个新的组并将其作为同一时间的团队时，他们可以分配没有包含团队的许可证的所有者。 这就产生了一些麻烦。 我们已更新向导流，以验证所有者是否具有团队许可证，以及他们是否不选择将组转换为团队已禁用。
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>适用于中小型企业的 Microsoft 365 产品
+
+我们知道，这是下个月的一次通知，但我们想要确保你做好准备。
+
+从4月21日起，我们将对中小型企业的 Office 365 订阅（和 Office 365 专业增强版进行更改）。 这些产品现在将使用 Microsoft 365 品牌。
+
+新产品名称将在2020年4月21日生效。 这只是产品名称的更改，目前没有任何定价或功能更改。
+
+|当前名称 |新的名称  |
+|---------|---------|
+|Office 365 商业协作版     |   Microsoft 365 商业基本版      |
+|Office 365 商业高级版     |    Microsoft 365 商业标准版     |
+|Microsoft 365 商业版     |    Microsoft 365 商业高级版     |
+|Office 365 商业版     |    Microsoft 365 商业应用版       | 
+|Office 365 专业增强版    |   适用于企业的 Microsoft 365 应用程序      |
+
+### <a name="videos-training-and-docs"></a>视频、培训和文档
+
+[Microsoft 365 web 系列中的新增功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)：在本月的几个部分中，我们突出显示了 microsoft 团队的3年周年纪念日，并涵盖了新功能，包括在线会议中改进的音频质量、有关 firstline 管理器的目标通信、团队和 Skype 消费者互操作性等。
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -337,7 +386,7 @@ Howdy，合作伙伴！ （无法帮助我自己。）我们也为你提供了�
 - **Intune 设备保护**-如果你的许可证包括 intune，并且我们检测到你尚未完成设置 intune 或注册设备，我们建议你创建 Intune 策略，以便在用户从其移动设备访问组织的文件时对其进行保护。
 - **获取每月 office 功能更新**-我们从非常小的客户那里获得了反馈，当他们获得每月 office 功能更新时，他们的用户会感到更开心。 因此，如果你是一位非常小的企业，并且你目前每六个月都可以获得 Office 功能更新，你将看到此建议。
 
-**Settings** <br>
+**设置** <br>
 对于设置，已进行了很多更改。 大多数情况下，只需将现有设置更新为新的管理中心样式即可。 当我们继续发展并添加以前从未见过的新设置时，我们将在此处开始提及它们。 同时，我们还准备了一个完整的设置来宣布：**新式验证**。 是的，有新的设置可启用**新式验证**！ 若要将其签出，请转到**Settings** > **Services & 外接程序** > **新式身份验证**。
 
 ## <a name="april-2019"></a>2019 年 4 月

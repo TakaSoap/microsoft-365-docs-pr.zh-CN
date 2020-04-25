@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 '
-ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
+ms.openlocfilehash: 8798dccb02b35158bce34b710362c5b020a9bb15
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521488"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800043"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
 ## <a name="introduction"></a>简介
 
-需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用 Office 365 安全与合规中心搜索统一的审核日志，以查看 Office 365 组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Office 365 中搜索以下类型的用户和管理员活动：
+需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Office 365 中搜索以下类型的用户和管理员活动：
 
 - SharePoint Online 和 OneDrive for Business 中的用户活动
 
@@ -67,31 +67,31 @@ ms.locfileid: "43521488"
 
 ## <a name="before-you-begin"></a>准备工作
 
-在开始搜索 Office 365 审核日志之前，请务必阅读以下各项。
+在开始搜索审核日志之前，请务必阅读以下各项。
 
-- 你（或其他管理员）必须首先开启审核日志记录，然后才能开始搜索 Office 365 审核日志。 若要将其打开，请单击安全与合规中心中**审核日志搜索**页面上的**打开审核**。 （如果未看到此链接，则已为你的组织开启审核。）打开后，将显示一条消息，称正在准备审核日志，你可以在准备完成后数小时内运行搜索。 只需执行一次此操作。 有关详细信息，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
+- 你（或其他管理员）必须首先开启审核日志记录，然后才能开始搜索审核日志。 若要将其打开，请单击安全与合规中心中**审核日志搜索**页面上的**打开审核**。 （如果未看到此链接，则已为你的组织开启审核。）打开后，将显示一条消息，称正在准备审核日志，你可以在准备完成后数小时内运行搜索。 只需执行一次此操作。 有关详细信息，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
   > [!NOTE]
   > 默认正在启用审核。 在这之前，可以按上文所述启用审核。
 
-- 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索 Office 365 审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 请注意，Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索 Office 365 审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+- 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 请注意，Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
   > [!IMPORTANT]
-  > 如果在安全与合规中心中的“**权限**”页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索 Office 365 审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
+  > 如果在安全与合规中心中的“**权限**”页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
 
-- 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的 Office 365 审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 或 Microsoft 365 企业版订阅，具体而言是分配给特定用户的许可证类型。
+- 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 或 Microsoft 365 企业版订阅，具体而言是分配给特定用户的许可证类型。
 
-  - **Office 365 E3 或 Microsoft 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
-
-    > [!NOTE]
-    > 即使启用了默认启用的邮箱审核，也可能会发现无法在安全与合规中心的审核日志搜索中找到某些用户的邮箱审核事件，也无法通过 Office 365 管理活动 API 找到这些事件。 有关详细信息，请参阅[有关邮箱审核日志记录的详细信息](enable-mailbox-auditing.md#more-information)。
-
-  - **Office 365 E5 或 Microsoft 365 E5 或拥有 Microsoft 365 E5 合规版附加许可证的用户：** Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
+  - 对于分配了 Office 365 E5 或 Microsoft 365 E5 许可证的用户（或拥有 Microsoft 365 E5 合规版或 Microsoft 365 E5 电子数据展示和审核附加许可证的用户），Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
     > [!NOTE]
     > 如果组织参与了审计记录保留一年的个人预览版计划，则在正式发布日期之前产生的审核记录的保留期限不会被重置。
 
-- 如果希望为组织关闭 Office 365 中的审核日志搜索，可以在连接到 Exchange Online 组织的远程 PowerShell 中运行以下命令：
+  - 对于分配有任何其他（非E5）Office 365 或 Microsoft 365 许可证的用户，审核记录将保留90天。 有关支持统一审核日志记录的 Office 365 和 Microsoft 365 订阅的列表，请参阅[安全与合规中心服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
+
+    > [!NOTE]
+    > 即使启用了默认启用的邮箱审核，也可能会发现无法在安全与合规中心的审核日志搜索中找到某些用户的邮箱审核事件，也无法通过 Office 365 管理活动 API 找到这些事件。 有关详细信息，请参阅[有关邮箱审核日志记录的详细信息](enable-mailbox-auditing.md#more-information)。
+
+- 如果希望为组织关闭审核日志搜索，可以在连接到 Exchange Online 组织的远程 PowerShell 中运行以下命令：
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -103,17 +103,17 @@ ms.locfileid: "43521488"
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
-  有关详细信息，请参阅[关闭 Office 365 中的审核日志搜索](turn-audit-log-search-on-or-off.md)。
+  有关详细信息，请参阅[关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog**。 这意味着可使用此 cmdlet 搜索 Office 365 审核日志，而不是使用安全与合规中心中的“**审核日志搜索**”页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
+- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog**。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用安全与合规中心中的“**审核日志搜索**”页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
 
   有关将 **Search-UnifiedAuditLog** cmdlet 所返回的搜索结果导出到 CSV 文件的信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的“有关导出和查看审核日志的提示”部分。
 
-- 若想以编程方式从 Office 365 审核日志下载数据，建议使用 Office 365 管理活动 API，而不是使用 PowerShell 脚本。 Office 365 管理活动 API 是一项 REST Web 服务，可用于为组织制定操作、安全和合规性监视解决方案。 有关详细信息，请参阅 [Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
+- 若想以编程方式从审核日志下载数据，建议使用 Office 365 管理活动 API，而不是使用 PowerShell 脚本。 Office 365 管理活动 API 是一项 REST Web 服务，可用于为组织制定操作、安全和合规性监视解决方案。 有关详细信息，请参阅 [Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
 
 - 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Office 365 中不同服务所花费的时间。
 
-  |**Office 365 服务**|**30 分钟**|**24 小时**|
+  |**Microsoft 365 服务**|**30 分钟**|**24 小时**|
   |:-----|:-----:|:-----:|
   |高级威胁防护和威胁智能|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory（用户登录事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -138,7 +138,7 @@ ms.locfileid: "43521488"
 
 - Azure Active Directory (Azure AD) 是 Office 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 Microsoft 365 管理中心或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
 
-- 默认情况下，Power BI 的审核日志记录未启用。 若要在 Office 365 审核日志中搜索 Power BI 活动，必须在 Power BI 管理门户中启用审核。 有关说明，请参阅 [Power BI 管理门户](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的“审核日志”部分。
+- 默认情况下，Power BI 的审核日志记录未启用。 若要在审核日志中搜索 Power BI 活动，则必须在 Power BI 管理门户中启用审核。 有关说明，请参阅 [Power BI 管理门户](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的“审核日志”部分。
 
 ## <a name="search-the-audit-log"></a>搜索审核日志
 
@@ -159,7 +159,7 @@ ms.locfileid: "43521488"
     > [!TIP]
     > 使用专用浏览会话（而不是常规会话）来访问安全与合规中心，因为它会阻止你使用当前登录时使用的凭据。 若要在 Internet Explorer 或 Microsoft Edge 中打开 InPrivate 浏览会话，只需按 CTRL+SHIFT+P。 若要在 Google Chrome（称为隐身窗口）中打开专用浏览会话，请按 CTRL+SHIFT+N。
 
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用工作或学校帐户进行登录。
 
 3. 在安全与合规中心的左侧窗格中，单击“**搜索**”，然后单击“**审核日志搜索**”。
 
@@ -174,7 +174,7 @@ ms.locfileid: "43521488"
 
     a. “**活动**”：单击下拉列表以显示你可以搜索的活动。 已将用户和管理员活动整理到相关活动组中。 你可以选择特定活动，或单击活动组名称以选择该组中的所有活动。 你也可以单击已选活动以取消选择。 运行搜索后，仅将显示所选活动的审核日志项目。 选择“**显示所有活动的结果**”将显示由所选用户或用户组执行的所有活动的结果。
 
-    Office 365 审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“**已审核的活动**”选项卡可查看每个不同 Office 365 服务中每个活动的描述。
+    审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“**已审核的活动**”选项卡可查看每个不同服务中每个活动的描述。
 
     b. “**开始日期**”和“**结束日期**”：默认选择了过去七天。 选择日期和时间范围，以显示在这段时间内发生的事件。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。 如果所选日期范围超过 90 天，将显示错误。
 
@@ -239,7 +239,7 @@ ms.locfileid: "43521488"
 
 #### <a name="view-the-details-for-a-specific-event"></a>查看特定事件的详细信息
 
-可以通过单击搜索结果列表中的事件记录查看有关事件的更多详细信息。 此时将显示包含事件记录的详细属性的“**详细信息**”页。 显示的属性取决于事件发生于的 Office 365 服务。 若要显示这些详细信息，请单击“**更多信息**”。 有关说明，请参阅 [Office 365 审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
+可以通过单击搜索结果列表中的事件记录查看有关事件的更多详细信息。 此时将显示包含事件记录的详细属性的“**详细信息**”页。 显示的属性取决于其中发生事件的服务。 若要显示这些详细信息，请单击“**更多信息**”。 有关说明，请参阅[审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
 
 ![单击“详细信息”，查看审核日志事件记录的详细属性](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
@@ -274,7 +274,7 @@ ms.locfileid: "43521488"
 
    - “**保存加载的结果**”：选择此选项可仅导出“**审核日志搜索**”页上“**结果**”之下显示的条目。 下载的 CSV 文件包含（“日期”、“用户”、“活动”、“项目”和“详细信息”）页面上显示的相同列（和数据）。 包含审核日志项目中更多信息的 CSV 文件包括一额外列（名为“**更多**”）。 由于你将导出“**审核日志搜索**”页上已加载（且可查看）的相同结果，因此最多可导出 5,000 个条目。
 
-   - “**下载所有结果**”：选择此选项以导出符合搜索条件的 Office 365 审核日志中的所有条目。 对于较大的搜索结果集，选择此选项可下载审核日志的所有条目以及可在“**审核日志搜索**”页上显示的 5,000 条审核记录。 此选项会将原始数据从审核日志下载到 CSV 文件，并在名为“**AuditData**”的列中包含审核日志项目中的其他信息。 如果选择此导出选项，下载该文件可能需要更长时间，因为文件可能比选择其他选项下载的文件大得多。
+   - “**下载所有结果**”：选择此选项以导出符合搜索条件的审核日志中所有条目。 对于较大的搜索结果集，选择此选项可下载审核日志的所有条目以及可在“**审核日志搜索**”页上显示的 5,000 条审核记录。 此选项会将原始数据从审核日志下载到 CSV 文件，并在名为“**AuditData**”的列中包含审核日志项目中的其他信息。 如果选择此导出选项，下载该文件可能需要更长时间，因为文件可能比选择其他选项下载的文件大得多。
 
      > [!IMPORTANT]
      > 你可以将最多 50,000 个条目从单个审核日志搜索中下载到 CSV 文件。 如果下载了 50,000 个条目到 CSV 文件，则可以假定可能存在超过 50,000 个符合搜索条件的事件。 若要导出的条目超出此限制，请尝试使用日期范围以减少审核日志项目。 你可能需要使用更小日期范围运行多个搜索来导出超过 50,000 个条目。
@@ -287,17 +287,17 @@ ms.locfileid: "43521488"
 
   拆分“**AuditData**”列后，你可以对“**操作**”列进行筛选以显示特定类型活动的详细属性。
 
-- “**下载所有结果**”选项可将原始数据从 Office 365 审核日志下载到 CSV 文件。 此文件包含的列名（“CreationDate”、“UserIds”、“操作”、“AuditData”）与选择“**保存已加载结果**”选项时下载的文件列名不同。 对于同一活动，两个不同 CSV 文件中的值可能也有所不同。 例如，CSV 文件的“**操作**”列中的活动值可能与显示在“**审核日志搜索**”页上的“**活动**”列中的“用户友好”名称不同。 例如，分别为“MailboxLogin”与“用户已登录到邮箱”。
+- “**下载所有结果**”：选项可将原始数据从审核日志下载到 CSV 文件。 此文件包含的列名（“CreationDate”、“UserIds”、“操作”、“AuditData”）与选择“**保存已加载结果**”选项时下载的文件列名不同。 对于同一活动，两个不同 CSV 文件中的值可能也有所不同。 例如，CSV 文件的“**操作**”列中的活动值可能与显示在“**审核日志搜索**”页上的“**活动**”列中的“用户友好”名称不同。 例如，分别为“MailboxLogin”与“用户已登录到邮箱”。
 
-- 下载（包含来自不同 Office 365 服务的事件的）搜索查询的所有结果时，CSV 文件中的“**AuditData**”列将含有不同属性，具体取决于在哪种服务中执行操作。 例如，来自 Exchange 和 Azure AD 审核日志的条目包含一个名为 **ResultStatus** 的属性，它指示操作是否成功。 来自 SharePoint 的事件不包含此属性。 类似地，SharePoint 事件具有用于标识文件和文件夹相关活动的网站 URL 的属性。 若要缓和此行为，建议使用多个搜索导出单个服务中活动的结果。
+- 下载（包含来自不同服务的事件的）搜索查询的所有结果时，CSV 文件中的“**AuditData**”列将含有不同属性，具体取决于在哪种服务中执行操作。 例如，来自 Exchange 和 Azure AD 审核日志的条目包含一个名为 **ResultStatus** 的属性，它指示操作是否成功。 来自 SharePoint 的事件不包含此属性。 类似地，SharePoint 事件具有用于标识文件和文件夹相关活动的网站 URL 的属性。 若要缓和此行为，建议使用多个搜索导出单个服务中活动的结果。
 
-  有关下载所有结果时 CSV 文件的“**AuditData**”列中所列各个属性的说明以及每个属性适用的服务，请参阅 [Office 365 审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
+  有关下载所有结果时 CSV 文件的“**AuditData**”列中所列各个属性的说明以及每个属性适用的服务，请参阅[审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
 
 ## <a name="audited-activities"></a>已审核的活动
 
 本节中的表介绍了 Office 365 中经审核的活动。 你可以通过在安全与合规中心中搜索审核日志来搜索这些事件。
 
-这些表对相关活动或特定 Office 365 服务中的活动进行分组。 表中包含显示在“**活动**”下拉列表中的友好名称以及导出搜索结果时显示在审核记录详细信息和 CSV 文件中的相应操作的名称。 有关详细信息的说明，请参阅 [Office 365 审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
+这些表对相关活动或特定服务中的活动进行分组。 表中包含显示在“**活动**”下拉列表中的友好名称以及导出搜索结果时显示在审核记录详细信息和 CSV 文件中的相应操作的名称。 有关详细信息的说明，请参阅[审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
 
 单击以下任一链接转到特定表格。
 
@@ -362,9 +362,9 @@ ms.locfileid: "43521488"
 
 以下是一些其他情形，其中审核记录中的 app@sharepoint 可能被标识为执行活动的用户：
 
-- Office 365 组。 用户或管理员创建新组时，会生成审核记录，用于创建网站集、更新列表以及将成员添加到 SharePoint 组。 应用程序将代表创建组的用户执行这些任务。
+- Microsoft 365 组。 用户或管理员创建新组时，会生成审核记录，用于创建网站集、更新列表以及将成员添加到 SharePoint 组。 应用程序将代表创建组的用户执行这些任务。
 
-- Microsoft Teams。 与 Office 365 组类似，也会生成审核记录，用于创建网站集、更新列表以及在创建团队时将成员添加到 SharePoint 组。
+- Microsoft Teams。 与 Microsoft 365 组类似，也会生成审核记录，用于创建网站集、更新列表以及在创建团队时将成员添加到 SharePoint 组。
 
 - 合规性功能。 管理员实现合规性功能（如保留策略、电子数据展示保留和自动应用敏感度标签）时。
 
@@ -418,7 +418,7 @@ ms.locfileid: "43521488"
 
 ### <a name="sharing-and-access-request-activities"></a>共享和访问请求活动
 
-下表介绍了 SharePoint Online 和 OneDrive for Business 中的用户共享和访问请求活动。 对于共享事件，“**结果**”下的“**详细信息**”列标识了与之共享项目的用户名或组名以及该用户或组是否为组织中的成员或来宾。 有关详细信息，请参阅[在 Office 365 审核日志中使用共享审核](use-sharing-auditing.md)。
+下表介绍了 SharePoint Online 和 OneDrive for Business 中的用户共享和访问请求活动。 对于共享事件，“**结果**”下的“**详细信息**”列标识了与之共享项目的用户名或组名以及该用户或组是否为组织中的成员或来宾。 有关详细信息，请参阅[在审核日志中使用共享审核](use-sharing-auditing.md)。
 
 > [!NOTE]
 > 根据用户对象的 UserType 属性，用户可以是*成员*或*来宾*。 通常，成员为员工，来宾则为组织外部的合作者。 用户接受共享邀请（而尚未成为你组织的一员）时，将在组织的目录中为其创建来宾帐户。 来宾用户在你的目录中拥有帐户后，即可与其直接共享资源（无需邀请）。
@@ -499,12 +499,12 @@ ms.locfileid: "43521488"
 |已添加豁免用户代理|ExemptUserAgentSet|SharePoint 或全局管理员向 SharePoint 管理中心的豁免用户代理列表添加了用户代理。|
 |已添加地理位置管理员|GeoAdminAdded|SharePoint 或全局管理员已将用户添加为地理位置管理员。|
 |已允许用户创建组|AllowGroupCreationSet|网站管理员或所有者向网站添加权限级别，允许分配了该权限的用户为网站创建组。 |
-|已取消网站地域移动|SiteGeoMoveCancelled|SharePoint 或全局管理员成功取消 SharePoint 或 OneDrive 网站地域移动。 多地理位置功能可让一个 Office 365 组织跨越多个 Office 365 数据中心地理位置（称之为地理位置）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
-|已更改共享策略|SharingPolicyChanged|SharePoint 或全局管理员使用 Office 365 管理门户、SharePoint 管理门户或 SharePoint Online 命令行管理程序更改了 SharePoint 共享策略。 将记录对组织中的共享策略设置所做的任何更改。 已更改的策略在事件记录详细属性的 **ModifiedProperties** 字段中标识。|
-|已更改设备访问策略|DeviceAccessPolicyChanged|SharePoint 或全局管理员已更改组织的非托管设备策略。 此策略控制未加入组织的设备对 SharePoint、OneDrive 和 Office 365 的访问权限。 配置此策略需要企业移动性 + 安全性订阅。 有关详细信息，请参阅[控制非托管设备的访问](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。|
+|已取消网站地域移动|SiteGeoMoveCancelled|SharePoint 或全局管理员成功取消 SharePoint 或 OneDrive 网站地域移动。 多地理位置功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已更改共享策略|SharingPolicyChanged|SharePoint 或全局管理员使用 Microsoft 365 管理门户、SharePoint 管理门户或 SharePoint Online 命令行管理程序更改了 SharePoint 共享策略。 将记录对组织中的共享策略设置所做的任何更改。 已更改的策略在事件记录详细属性的 **ModifiedProperties** 字段中标识。|
+|已更改设备访问策略|DeviceAccessPolicyChanged|SharePoint 或全局管理员已更改组织的非托管设备策略。 此策略控制未加入组织的设备对 SharePoint、OneDrive 和 Microsoft 365 的访问权限。 配置此策略需要企业移动性 + 安全性订阅。 有关详细信息，请参阅[控制非托管设备的访问](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。|
 |已更改豁免用户代理|CustomizeExemptUsers|SharePoint 或全局管理员自定义 SharePoint 管理中心的豁免用户代理列表。 你可以指定免于接收要索引的整个网页的用户代理。 这意味着，当指定为豁免的用户代理遇到 InfoPath 表单时，表单将作为 XML 文件而不是整个网页返回。 这可以加速对 InfoPath 表单编制索引。|
 |已更改网络访问策略|NetworkAccessPolicyChanged|SharePoint 或全局管理员已通过 SharePoint 管理中心或 SharePoint Online PowerShell 更改基于位置的访问策略（也称为“受信任的网络边界”）。 这类策略基于指定的授权 IP 地址范围控制组织中的用户对 SharePoint 和 OneDrive 资源的访问权限。 有关详细信息，请参阅[基于网络位置控制对 SharePoint Online 和 OneDrive 数据的访问权限](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f)。|
-|已完成网站地域移动|SiteGeoMoveCompleted|组织中的全局管理员计划的网站地域移动已成功完成。 多地理位置功能可让一个 Office 365 组织跨越多个 Office 365 数据中心地理位置（称之为地理位置）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已完成网站地域移动|SiteGeoMoveCompleted|组织中的全局管理员计划的网站地域移动已成功完成。 多地理位置功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已创建“收件人​​”连接|SendToConnectionAdded|SharePoint 或全局管理员在 SharePoint 管理中心中的“记录管理”页上创建新“发送至”连接。 “发送至”连接指定文档存储库或记录中心设置。 创建“收件人”连接时，内容管理器可以将文档提交到指定位置。|
 |已创建网站集|SiteCollectionCreated|SharePoint 或全局管理员在 SharePoint Online 组织中创建网站集，或者用户设置其 OneDrive for Business 网站。|
 |已删除孤立中心网站|HubSiteOrphanHubDeleted|SharePoint 或全局管理员已删除孤立中心网站，它是没有任何关联网站的中心网站。 孤立中心可能是由删除原始中心网站引起的。|
@@ -512,7 +512,7 @@ ms.locfileid: "43521488"
 |已删除网站|SiteDeleted|网站管理员删除网站。|
 |已启用文档预览|PreviewModeEnabledSet|网站管理员为网站启用文档预览。|
 |已启用传统工作流|LegacyWorkflowEnabledSet|网站管理员或所有者向网站添加 SharePoint 2013 Workflow Task 内容类型。 全局管理员还可以在 SharePoint 管理中心中对整个组织启用工作流。|
-|已启用 Office on Demand|OfficeOnDemandSet|网站管理员启用 Office on Demand，允许用户访问最新版本的 Office 桌面应用程序。 SharePoint 管理中心启用了 Office on Demand，并需要包括全套已安装的 Office 应用程序的 Office 365 订阅。|
+|已启用 Office on Demand|OfficeOnDemandSet|网站管理员启用 Office on Demand，允许用户访问最新版本的 Office 桌面应用程序。 SharePoint 管理中心启用了 Office on Demand，并需要包括全套已安装的 Office 应用程序的 Microsoft 365 订阅。|
 |已启用人员搜索的结果来源|PeopleResultsScopeSet|网站管理员为网站创建人员搜索的结果来源。|
 |已启用 RSS 源|NewsFeedEnabledSet|网站管理员或所有者为网站启用 RSS 源。 全局管理员可以在 SharePoint 管理中心中对整个组织启用 RSS 源。|
 |已将网站加入到中心网站|HubSiteJoined|网站所有者将其网站与中心网站相关联。|
@@ -520,7 +520,7 @@ ms.locfileid: "43521488"
 |已删除允许的数据位置|AllowedDataLocationDeleted|SharePoint 或全局管理员在多地理环境中删除了允许的数据位置。|
 |已删除地理位置管理员|GeoAdminDeleted|SharePoint 或全局管理员已删除作为地理位置管理员的用户。|
 |已重命名网站|SiteRenamed|网站管理员或所有者重命名网站|
-|已计划网站地域移动|SiteGeoMoveScheduled|SharePoint 或全局管理员成功计划 SharePoint 或 OneDrive 网站地域移动。 多地理位置功能可让一个 Office 365 组织跨越多个 Office 365 数据中心地理位置（称之为地理位置）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已计划网站地域移动|SiteGeoMoveScheduled|SharePoint 或全局管理员成功计划 SharePoint 或 OneDrive 网站地域移动。 多地理位置功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已设置主机网站|HostSiteSet|SharePoint 或全局管理员更改了用于托管个人或 OneDrive for Business 网站的指定网站。|
 |已为地理位置设置存储配额|GeoQuotaAllocated|SharePoint 或全局管理员为多地理环境中的地理位置配置了存储配额。|
 |已从中心网站脱离网站|HubSiteUnjoined|网站所有者解除其网站与中心网站的关联。|
@@ -529,7 +529,7 @@ ms.locfileid: "43521488"
 
 ### <a name="exchange-mailbox-activities"></a>Exchange 邮箱活动
 
-下表列出了可以由邮箱审核日志记录的活动。 在 Office 365 审核日志中自动将由邮箱所有者、委派用户或管理员执行的邮箱活动记录长达 90 天。 管理员可以为组织中的所有用户关闭邮箱审核日志记录。 在这种情况下, ，不会记录任何用户的邮箱操作。 有关详细信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md)。
+下表列出了可以由邮箱审核日志记录的活动。 在审核日志中自动将由邮箱所有者、委派用户或管理员执行的邮箱活动记录长达 90 天。 管理员可以为组织中的所有用户关闭邮箱审核日志记录。 在这种情况下, ，不会记录任何用户的邮箱操作。 有关详细信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md)。
 
  你还可以使用 Exchange Online PowerShell 中的 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) cmdlet 来搜索邮箱活动。
 
@@ -560,7 +560,7 @@ ms.locfileid: "43521488"
 
 ### <a name="sway-activities"></a>Sway 活动
 
-下表列出了 Sway 中的用户和管理员活动。 Sway 是一款 Office 365 应用，可帮助用户在基于 Web 的交互式画布上收集、格式化和共享意见、故事和演示文稿。 有关详细信息，请参阅 [Sway 常见问题 - 管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
+下表列出了 Sway 中的用户和管理员活动。 Sway 是一款 Microsoft 365 应用，可帮助用户在基于 Web 的交互式画布上收集、格式化和共享意见、故事和演示文稿。 有关详细信息，请参阅 [Sway 常见问题 - 管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -586,10 +586,10 @@ ms.locfileid: "43521488"
 
 |**活动**|**操作**|**说明**|
 |:-----|:-----|:-----|
-|已添加用户|添加用户|已创建 Office 365 用户帐户。|
+|已添加用户|添加用户|已创建用户帐户。|
 |已更改用户许可证|更改用户许可证|分配给用户的许可证有所更改。 若要查看已更改的许可证，请参阅相应的“**已更新用户**”活动。|
 |已更改用户密码|更改用户密码|用户更改了自己的密码。 必须为组织中的所有用户或选定的用户启用自助密码重置，以允许用户重置其密码。 还可以在 Azure Active Directory 中跟踪自助服务密码重置活动。 有关详细信息，请参阅 [Azure AD 密码管理报告选项](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting)。
-|已删除用户|删除用户|已删除 Office 365 用户帐户。|
+|已删除用户|删除用户|已删除用户帐户。|
 |重置用户密码|重置用户密码|管理员重置了用户的密码。|
 |已设置强制用户更改密码的属性|设置强制更改用户密码|管理员设置了强制用户在下次登录到 Office 365 时更改密码的属性。|
 |设置许可证属性|设置许可证属性|管理员修改分配给用户的许可证属性。|
@@ -598,7 +598,7 @@ ms.locfileid: "43521488"
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 组管理活动
 
-下表列出了管理员或用户创建或更改 Office 365 组或管理员使用 Microsoft 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中组的详细信息，请参阅[在 Office 365 管理中心查看、创建和删除组](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
+下表列出了管理员或用户创建或更改 Microsoft 365 组或管理员使用 Microsoft 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中组的详细信息，请参阅[在 Office 365 管理中心查看、创建和删除组](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -630,27 +630,27 @@ ms.locfileid: "43521488"
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
-|向角色添加成员|向角色添加角色成员|已向 Office 365 中的管理员角色添加用户。|
-|已从目录角色删除用户|删除角色中的角色成员|已从 Office 365 中的管理员角色删除用户。|
-|设置公司联系人信息|设置公司联系人信息|已为你的 Office 365 组织更新公司级别联系人首选项。 这包括由 Office 365 发送的订阅相关电子邮件的电子邮件地址，以及有关 Office 365 服务的技术通知。|
+|向角色添加成员|向角色添加角色成员|已向 Microsoft 365 中的管理员角色添加用户。|
+|已从目录角色删除用户|删除角色中的角色成员|已从 Microsoft 365 中的管理员角色删除用户。|
+|设置公司联系人信息|设置公司联系人信息|已为你的组织更新公司级别联系人首选项。 这包括由 Microsoft 365 发送的订阅相关电子邮件的电子邮件地址，以及有关服务的技术通知。|
 ||||
 
 ### <a name="directory-administration-activities"></a>目录管理活动
 
-下表列出了管理员在 Microsoft 365 管理中心或 Azure 管理门户中管理其 Office 365 组织时记录的与 Azure AD 目录和域相关的活动。
+下表列出了管理员在 Microsoft 365 管理中心或 Azure 管理门户中管理其组织时记录的与 Azure AD 目录和域相关的活动。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
-|已向公司添加域|向公司添加域|已将域添加到 Office 365 组织。|
-|已向目录添加合作伙伴|向公司添加合作伙伴|已向你的 Office 365 组织添加合作伙伴（委派管理员）。|
-|已从公司删除域|从公司删除域|已从你的 Office 365 组织删除域。|
-|已从目录删除合作伙伴|从公司删除合作伙伴|已从你的 Office 365 组织删除合作伙伴（委派管理员）。|
-|设置公司信息|设置公司信息|已更新 Office 365 组织的公司信息。 这包括由 Office 365 发送的订阅相关电子邮件的电子邮件地址，以及有关 Office 365 服务的技术通知。|
-|设置域身份验证|设置域身份验证|已更改 Office 365 组织的域身份验证设置。|
-|已更新域的联盟设置|设置域的联盟设置|已更改 Office 365 组织的联盟（外部共享）设置。|
-|设置密码策略|设置密码策略|已更改 Office 365 组织中用户密码的长度和字符约束。|
+|已向公司添加域|向公司添加域|已向你的组织添加域。|
+|已向目录添加合作伙伴|向公司添加合作伙伴|已向你的组织添加合作伙伴（委派管理员）。|
+|已从公司删除域|从公司删除域|已从你的组织删除域。|
+|已从目录删除合作伙伴|从公司删除合作伙伴|已从你的组织删除合作伙伴（委派管理员）。|
+|设置公司信息|设置公司信息|已更新你的组织的公司信息。 这包括由 Microsoft 365 发送的订阅相关电子邮件的电子邮件地址，以及有关 Microsoft 365 服务的技术通知。|
+|设置域身份验证|设置域身份验证|已更改你的组织的域身份验证设置。|
+|已更新域的联盟设置|设置域的联盟设置|已更改你的组织的联盟（外部共享）设置。|
+|设置密码策略|设置密码策略|已更改你的组织中用户密码的长度和字符约束。|
 |已打开 Azure AD 同步|已对公司设置 DirSyncEnabled 标志|设置启用 Azure AD Sync 同步的目录的属性。|
-|已更新域|更新域|已更新 Office 365 组织中的域设置。|
+|已更新域|更新域|已更新你组织中的域设置。|
 |已验证域|验证域|已验证你的组织是否为域所有者。|
 |已验证通过电子邮件验证的域|验证通过电子邮件验证的域|已使用电子邮件验证来验证你的组织是否为域所有者。|
 ||||
@@ -669,7 +669,7 @@ ms.locfileid: "43521488"
 
 - 管理电子数据展示管理员角色
 
-有关记录的电子数据展示活动的列表和详细说明，请参阅[搜索 Office 365 审核日志中的电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)。
+有关记录的电子数据展示活动的列表和详细说明，请参阅[搜索审核日志中的电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)。
 
 > [!NOTE]
 > “**活动**”下拉列表中“**电子数据展示活动**”下列出的活动结果需要最多 30 分钟即可显示在搜索结果中。 相反，电子数据展示 cmdlet 活动的相应事件需要长达 24 小时才可显示在搜索结果中。
@@ -682,7 +682,7 @@ ms.locfileid: "43521488"
 |:-----|:-----|:-----|
 |已将数据添加到另一审阅集|AddWorkingSetQueryToWorkingSet|用户已将文档从一个审阅集添加到另一审阅集。|
 |已将数据添加到审阅集|AddQueryToWorkingSet|用户已将与高级电子数据展示案例相关联的内容搜索的搜索结果添加到审阅集。|
-|已将非 Office 365 数据添加到审阅集|AddNonOffice365DataToWorkingSet|用户已将非 Office 365 数据添加到审阅集。|
+|已将非 Microsoft 365 数据添加到审阅集|AddNonOffice365DataToWorkingSet|用户已将非 Microsoft 365 数据添加到审阅集。|
 |已将修正的文档添加到审阅集|AddRemediatedData|用户上传了文档，这些文档具有已在审阅集中修复的索引错误。|
 |已分析审阅集中的数据|RunAlgo|用户已对审阅集中的文档运行分析。|
 |已批注审阅集中的文档|AnnotateDocument|用户已批注审阅集中的文档。 批注包含文档中的编修内容。|
@@ -709,11 +709,11 @@ ms.locfileid: "43521488"
 
 可以在审核日志中搜索 Power BI 内的活动。 有关 Power BI 活动的信息，请参阅[在组织内部使用审核](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi)中的“Power BI 审核的活动”部分。
 
-默认情况下，Power BI 的审核日志记录未启用。 若要在 Office 365 审核日志中搜索 Power BI 活动，必须在 Power BI 管理门户中启用审核。 有关说明，请参阅 [Power BI 管理门户](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的“审核日志”部分。
+默认情况下，Power BI 的审核日志记录未启用。 若要在审核日志中搜索 Power BI 活动，则必须在 Power BI 管理门户中启用审核。 有关说明，请参阅 [Power BI 管理门户](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的“审核日志”部分。
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft 工作区分析活动
 
-工作区分析可让你深入了解整个 Office 365 组织内的组协作方式。 下表列出了由在工作区分析中分配有管理员角色或分析员角色的用户执行的活动。 分配有分析员角色的用户拥有对所有服务功能的完全访问权限，并且可使用产品进行分析。 分配有管理员角色的用户可以配置隐私设置和系统默认设置，并且可以在工作区分析中准备、上传和验证组织数据。 有关详细信息，请参阅[工作区分析](https://docs.microsoft.com/workplace-analytics/index-orig)。
+工作区分析可让你深入了解整个组织内的组协作方式。 下表列出了由在工作区分析中分配有管理员角色或分析员角色的用户执行的活动。 分配有分析员角色的用户拥有对所有服务功能的完全访问权限，并且可使用产品进行分析。 分配有管理员角色的用户可以配置隐私设置和系统默认设置，并且可以在工作区分析中准备、上传和验证组织数据。 有关详细信息，请参阅[工作区分析](https://docs.microsoft.com/workplace-analytics/index-orig)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -731,7 +731,7 @@ ms.locfileid: "43521488"
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams 活动
 
-下表列出了 Microsoft Teams 中记录在 Office 365 审核日志中的用户和管理员活动。 Microsoft Teams 是 Office 365 中以聊天为中心的工作区。 它将团队的对话、会议、文件和笔记集中到一个位置。 有关帮助主题的详细信息和链接，请参阅：
+下表列出了 Microsoft Teams 中记录在审核日志中的用户和管理员活动。 Microsoft Teams 是 Office 365 中以聊天为中心的工作区。 它将团队的对话、会议、文件和笔记集中到一个位置。 有关帮助主题的详细信息和链接，请参阅：
 
 - [有关 Microsoft Teams 的常见问题 - 管理员帮助](https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc)
 
@@ -770,7 +770,7 @@ ms.locfileid: "43521488"
 
 ### <a name="yammer-activities"></a>Yammer 活动
 
-下表列出了 Yammer 中记录在 Office 365 审核日志中的用户和管理员活动。 若要从 Office 365 审核日志返回到与 Yammer 相关的活动，必须选择“**活动**”列表中的“**显示所有活动的结果**”。 使用日期范围框和“**用户**”列表，缩小搜索结果的范围。
+下表列出了 Yammer 中记录在审核日志中的用户和管理员活动。 若要从审核日志返回到与 Yammer 相关的活动，必须选择“**活动**”列表中的“**显示所有活动的结果**”。 使用日期范围框和“**用户**”列表，缩小搜索结果的范围。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -807,7 +807,7 @@ ms.locfileid: "43521488"
 
 ### <a name="content-explorer-activities"></a>内容浏览器活动
 
-下表列出了 Office 365 审核日志中记录的内容浏览器活动。 内容浏览器，可以在 Microsoft 365 合规中心的数据分类工具上访问。 有关详细信息，请参阅[使用数据分类内容浏览器](data-classification-content-explorer.md)。
+下表列出了审核日志中记录的内容浏览器活动。 内容浏览器，可以在 Microsoft 365 合规中心的数据分类工具上访问。 有关详细信息，请参阅[使用数据分类内容浏览器](data-classification-content-explorer.md)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -829,7 +829,7 @@ ms.locfileid: "43521488"
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Forms 活动
 
-下表列出了 Microsoft Forms 中记录在 Office 365 审核日志中的用户和管理员活动。 Microsoft Forms 是用于收集分析数据的表单/测验/调查工具。 
+下表列出了 Microsoft Forms 中记录在审核日志中的用户和管理员活动。 Microsoft Forms 是用于收集分析数据的表单/测验/调查工具。 
 
 在下面的说明中可以看到，一些操作包含其他活动参数。
 
@@ -898,12 +898,12 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志
 
-管理员（或已分配到管理权限的用户）在 Exchange Online 组织中做出更改时，Exchange 管理员审核日志记录（Office 365 中默认启用此功能）将在 Office 365 审核日志中记录事件。 通过使用 Exchange 管理中心所做的更改或通过运行 Exchange Online PowerShell 中的某个 cmdlet 所做的更改会记录在 Exchange 管理员审核日志中。 以动词 **Get-**、**Search-** 或 **Test-** 开头的 Cmdlet 未记录在 Office 365 审核日志中。 有关 Exchange 中管理员审核日志记录的更多详细信息，请参阅[管理员审核日志记录](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
+管理员（或已分配到管理权限的用户）在 Exchange Online 组织中做出更改时，Exchange 管理员审核日志记录（Office 365 中默认启用此功能）将在审核日志中记录事件。 通过使用 Exchange 管理中心所做的更改或通过运行 Exchange Online PowerShell 中的某个 cmdlet 所做的更改会记录在 Exchange 管理员审核日志中。 以动词 **Get-**、**Search-** 或 **Test-** 开头的 Cmdlet 未记录在审核日志中。 有关 Exchange 中管理员审核日志记录的更多详细信息，请参阅[管理员审核日志记录](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
 
 > [!IMPORTANT]
-> 某些 Exchange Online cmdlet 未记录在 Exchange 管理员审核日志中（或 Office 365 审核日志中）。 其中许多 cmdlet 都与维护 Exchange Online 服务有关，并由 Microsoft 数据中心人员或服务帐户运行。 未记录这些 cmdlet，因为它们会导致大量“嘈杂”的审核事件。 如果存在未经审核的 Exchange Online cmdlet，请向 [Office 365 安全与合规用户之声论坛](https://office365.uservoice.com/forums/289138-office-365-security-compliance)提交建议，并请求进行审核。 你还可以向 Microsoft 支持部门提交设计更改请求 (DCR)。
+> 某些 Exchange Online cmdlet 未记录在 Exchange 管理员审核日志中（或审核日志中）。 其中许多 cmdlet 都与维护 Exchange Online 服务有关，并由 Microsoft 数据中心人员或服务帐户运行。 未记录这些 cmdlet，因为它们会导致大量“嘈杂”的审核事件。 如果存在未经审核的 Exchange Online cmdlet，请向[安全与合规用户之声论坛](https://office365.uservoice.com/forums/289138-office-365-security-compliance)提交建议，并请求进行审核。 你还可以向 Microsoft 支持部门提交设计更改请求 (DCR)。
 
-以下是在搜索 Office 365 审核日志时搜索 Exchange 管理员活动的一些提示：
+以下是在搜索审核日志时搜索 Exchange 管理员活动的一些提示：
 
 - 若要返回 Exchange 管理员审核日志中的条目，必须选择“**活动**”列表中的“**显示所有活动的结果**”。 使用日期范围框和“**用户**”列表缩小由特定 Exchange 管理员在特定日期范围内运行的 cmdlet 的搜索结果范围。
 
@@ -921,32 +921,26 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
-   请记住，Exchange 管理员审核日志和 Office 365 审核日志中记录了相同的 Exchange 管理员活动。
+   请记住，Exchange 管理员审核日志以及审核日志中记录了相同的 Exchange 管理员活动。
 
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**目前审核的各种 Office 365 服务有哪些？**
+**目前审核的各种 Microsoft 365 服务有哪些？**
 
-已审核最常用的 Office 365 服务，例如 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Dynamics 365、高级威胁防护和 Power BI。 有关已审核的服务列表，请参阅[本文开头部分](search-the-audit-log-in-security-and-compliance.md)。
+已审核最常用的服务，例如 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Dynamics 365、高级威胁防护和 Power BI。 有关已审核的服务列表，请参阅[本文开头部分](search-the-audit-log-in-security-and-compliance.md)。
 
 **哪些活动由 Office 365 中的审核服务进行审核？**
 
-有关在 Office 365 中审核的活动列表和说明，请参阅本文[已审核的活动](#audited-activities)部分。
+有关审核的活动列表和说明，请参阅本文[已审核的活动](#audited-activities)部分。
 
 **审核记录在事件发生后的多长时间内可用？**
 
-发生事件后，大部分审核数据在 30 分钟内可用，但最长可能需要 24 小时才能在搜索结果中显示相应的审核日志条目。 请参阅本文[开始之前](#before-you-begin)部分中的表格，其中显示了各种 Office 365 服务提供事件审核记录所需的时间。
+发生事件后，大部分审核数据在 30 分钟内可用，但最长可能需要 24 小时才能在搜索结果中显示相应的审核日志条目。 请参阅本文[开始之前](#before-you-begin)部分中的表格，其中显示了各种服务提供事件审核记录所需的时间。
 
 **审核记录将保留多长时间？**
 
-如前文所述，审核记录的保留期取决于组织的 Office 365 或 Microsoft 365 企业版订阅。
-
-  - **Office 365 E3 和 icrosoft 365 E3：** 审核记录可保留 90 天。 这意味着可以在审核日志中搜索过去 90 天内执行的活动。
-
-  - **Office 365 E5 和 icrosoft 365 E5 或拥有 Microsoft 365 E5 合规版附加许可证的用户：** Azure Active Directory、Exchange 和 SharePoint 活动的审核记录默认保留一年。 此外，组织还可以创建审核日志保留策略，以便将其他服务中的活动的审核记录保留最长一年时间。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
-
-另请注意，审核记录的保留期限基于每位用户许可。 例如，如果为组织内的用户分配了 Office 365 E3 许可证，则该用户执行的活动的审核记录将保留 90 天。
+正如前面所述，分配了 Office 365 E5 或 Microsoft E5 许可证的用户（或者拥有 Microsoft 365 E5 附加许可证的用户）所执行活动的审核记录将保留一年。 对于支持统一审核日志记录的所有其他订阅，审核记录将保留 90 天。
 
 **我是否可以通过编程方式访问审核数据？**
 
@@ -954,19 +948,19 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **除了使用安全与合规中心或 Office 365 管理活动 API 之外，是否还有其他方法可以获取审核日志？**
 
-否。 以下是从 Office 365 审核服务获取数据的两种方法。
+不正确。 以下是从审核服务获取数据的两种方法。
 
 **是否需要在每个要捕获审核日志的服务中单独启用审核？**
 
-在大多数 Office 365 服务中，在首次为 Office 365 组织启用审核后将默认启用审核功能（如本文[开始之前](#before-you-begin)部分所述）。
+在大多数服务中，在首次为组织启用审核后将默认启用审核功能（如本文[开始之前](#before-you-begin)部分所述）。
 
-**Office 365 审核服务是否支持记录的重复数据删除？**
+**审核服务是否支持记录的重复数据删除？**
 
-否。 审核服务管道几乎是实时的，因此不能支持重复数据删除。
+不正确。 审核服务管道几乎是实时的，因此不能支持重复数据删除。
 
-**Office 365 审核数据是否跨地域流动？**
+**审核数据是否跨地域流动？**
 
-否。 我们目前在 NA（北美）、EMEA（欧洲、中东和非洲）和 APAC（亚太地区）进行了审核管道部署。 但是，我们可能会使数据跨这些区域流动以实现负载平衡，并且仅在现场出现问题时才会这样做。 当我们执行这些活动时，传输中的数据会被加密。
+不正确。 我们目前在 NA（北美）、EMEA（欧洲、中东和非洲）和 APAC（亚太地区）进行了审核管道部署。 但是，我们可能会使数据跨这些区域流动以实现负载平衡，并且仅在现场出现问题时才会这样做。 当我们执行这些活动时，传输中的数据会被加密。
 
 **审核数据是否已加密？**
 

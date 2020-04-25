@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179173"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804842"
 ---
 # <a name="insider-risk-management-cases"></a>内幕风险管理案例
 
@@ -103,7 +103,7 @@ ms.locfileid: "42179173"
 
 ### <a name="content-explorer"></a>内容资源管理器
 
-"**内容资源管理器**" 选项卡允许风险分析师和调查人员查看与风险警报关联的所有单个文件和电子邮件的副本。 例如，如果在员工将数以百计的文件从 SharePoint Online 下载到 USB 设备，并且该活动触发策略警报时创建了警报，则会捕获警报的所有下载文件，并将其从内部风险管理案例中复制到原始存储源。
+"**内容资源管理器**" 选项卡允许风险分析师和调查人员查看与风险警报关联的所有单个文件和电子邮件的副本。 例如，如果在员工将数百个文件从 SharePoint Online 下载到一个 USB 设备，并且该活动触发策略警报时创建了一个警报，则会捕获警报的所有下载文件，并将其从原始存储源复制到内幕风险管理事例中。
 
 内容资源管理器是一个功能强大的工具，具有基本和高级的搜索和筛选功能。 若要了解有关使用内容资源管理器的详细信息，请参阅[内幕风险管理内容浏览器](insider-risk-management-content-explorer.md)。
 
@@ -163,7 +163,7 @@ ms.locfileid: "42179173"
 
 ### <a name="escalate-for-investigation"></a>升级以进行调查
 
-在员工风险活动需要进行其他法律审查的情况下，升级员工调查的案例。 此升级在 Microsoft 365 组织中打开一个新的高级电子数据展示事例。 高级电子数据展示提供了端到端工作流，以保留、收集、查看、分析和导出对组织内部和外部法律调查做出响应的内容。 它还允许您的法律团队管理整个法律封存通知工作流，以便与案例中所涉及的保管人进行通信。 在从内幕风险管理案例创建的高级电子数据展示事例中，将审阅者指定为管理员，可帮助您的法律团队采取适当的措施并管理内容保留。 若要了解有关高级电子数据展示事例的详细信息，请参阅[Microsoft 365 中的高级 EDsicovery 概述](overview-ediscovery-20.md)。
+在员工风险活动需要进行其他法律审查的情况下，升级员工调查的案例。 此升级在 Microsoft 365 组织中打开一个新的高级电子数据展示事例。 高级电子数据展示提供了端到端工作流，以保留、收集、查看、分析和导出对组织内部和外部法律调查做出响应的内容。 它还允许您的法律团队管理整个法律封存通知工作流，以便与案例中所涉及的保管人进行通信。 在从内幕风险管理案例创建的高级电子数据展示事例中，将审阅者指定为管理员，可帮助您的法律团队采取适当的措施并管理内容保留。 若要了解有关高级电子数据展示事例的详细信息，请参阅[Microsoft 365 中的高级电子数据展示概述](overview-ediscovery-20.md)。
 
 若要将案例升级到员工调查，请执行以下操作：
 

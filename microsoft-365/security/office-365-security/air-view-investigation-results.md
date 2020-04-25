@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Microsoft 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
-ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b109c3e8a8dc92f2aaf91e40e620da8f1574af6f
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634624"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804865"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中的自动调查的详细信息和结果
 
@@ -40,7 +40,7 @@ ms.locfileid: "43634624"
 |挂起的操作 | 调查发现威胁，如恶意电子邮件、恶意 URL 或有风险的邮箱设置，以及用于补救威胁正在等待[批准](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)的操作。<br/><br/>如果发现任何具有相应操作的威胁，则会触发挂起操作状态。 但是，在调查运行时，挂起操作的列表可能会增加。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)以查看其他项目是否仍处于待完成状态。 |
 |已修正 | 调查已完成，并批准了所有操作（完全修正）。<br/><br/>**注意**：批准的修正操作可能会出现错误，从而导致无法执行操作。 无论纠正措施是否成功完成，调查状态不会更改。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)中的详细结果。 |
 |部分修正 | 调查导致了补救措施，有些已批准并已完成。 其他操作仍[处于挂起状态](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)。 |
-|Failed | 至少一个调查分析器遇到无法正确完成的问题。 <br/><br/>**注意**：如果在批准了修正操作后调查失败，则修正操作可能仍为 "成功"。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)中的详细结果。 |
+|失败 | 至少一个调查分析器遇到无法正确完成的问题。 <br/><br/>**注意**：如果在批准了修正操作后调查失败，则修正操作可能仍为 "成功"。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)中的详细结果。 |
 |按限制排队 | 在队列中保留调查。 当其他调查完成时，将开始排队调查。 限制有助于避免较差的服务性能。 <br/><br/>**提示**：挂起的操作可能会限制可运行的新调查数。 请务必[批准（或拒绝）挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)。 |
 |已通过限制终止 | 如果队列中保留的调查过长，它将停止。 <br/><br/>**提示**：您可以[从威胁资源管理器开始调查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。 |
 
@@ -250,6 +250,6 @@ ms.locfileid: "43634624"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [查看和批准挂起的操作](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)
+- [查看和批准挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
 
 - [了解 Microsoft 威胁防护中的自动化调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

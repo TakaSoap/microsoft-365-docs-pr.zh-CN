@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f8adb04e968f19c6b0577127e4f9c0ceb7d9e315
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087757"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804879"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的设备监控和报告
 
@@ -148,19 +148,19 @@ Intune 注册的设备数据包括：
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>监视和管理 ASR 规则部署和检测
 
-[攻击面减少（ASR）规则](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)可帮助阻止使用者查找恶意软件时通常使用的操作和应用程序感染设备。 这些规则控制何时以及如何运行可执行文件。 例如，可以阻止 JavaScript 或 VBScript 启动下载的可执行文件、阻止来自 Office 宏的 Win32 API 调用或阻止从 USB 驱动器运行的进程。
+[攻击面减少（ASR）规则](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)可帮助阻止使用者查找恶意软件时通常使用的操作和应用程序感染设备。 这些规则控制何时以及如何运行可执行文件。 例如，可阻止 JavaScript 或 VBScript 启动下载的可执行文件，阻止来自 Office 宏的 Win32 API 调用，或者阻止通过 USB 驱动器运行的进程。
 
 ![攻击面缩减卡片](../../media/attack-surface-reduction-rules.png)
 
-**攻击面减少规则**卡提供了跨设备部署规则的概述。
+**攻击面减少规则**卡提供了有关跨设备部署规则的概述。
 
-卡片上的顶栏显示了以下部署模式中的设备总数：
+卡上的顶栏显示了处于以下部署模式的总设备数：
 
 * **阻止模式**：至少有一个配置为阻止检测到的活动的一个规则的设备
 * **审核模式**：没有设置为阻止检测到的活动的设备，但至少有一个规则集来审核检测到的活动  
 * **Off**：关闭所有 ASR 规则的设备
 
-此卡片的下半部分按规则显示设备上的设置。 每条栏指示设置为阻止或审核检测或完全关闭规则的设备的数量。
+此卡的下半部分按规则显示各设备的设置。 每个栏表示设置为阻止或审核检测项，或完全关闭规则的设备数量。
 
 ### <a name="view-asr-detections"></a>查看 ASR 检测
 
@@ -168,7 +168,7 @@ Intune 注册的设备数据包括：
 
 ![检测项选项卡](../../media/detections-tab.png)
 
-页面顶部的图表显示了已被阻止或审核的时间堆栈检测中的检测项。 底部的表列出了最近检测到的内容。 使用表中的以下信息来了解检测项的性质：
+页面顶部的图表显示了已被阻止或审核的时间堆栈检测中的检测项。 底部的表中列出了最近的检测项。 使用表中的以下信息了解检测的性质：
 
 * **检测到的文件**：文件（通常为脚本或文档），其内容触发了可疑的攻击活动
 * **规则**：描述规则旨在捕获的攻击活动的名称。 阅读有关现有 ASR 规则的信息
@@ -206,8 +206,8 @@ Microsoft 365 security center 根据攻击面减少规则收集[您可能要](ht
 若要查找源应用程序，请对此特定规则运行以下[高级搜寻查询](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)（由规则 ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2）：
 
 ```kusto
-MiscEvents
-| where EventTime > ago(7d)
+DeviceEvents
+| where Timestamp > ago(7d)
 | where ActionType startswith "Asr"
 | where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
 | project InitiatingProcessFolderPath, InitiatingProcessFileName

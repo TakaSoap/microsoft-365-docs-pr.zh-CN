@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - GEA150
 description: 了解如何使用 microsoft 365 管理中心中的 Microsoft 365 报告仪表板获取 Microsoft Forms Pro 活动报告。
-ms.openlocfilehash: 69938124b1aeb996afd52c119ac61e2e607f871e
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781606"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804820"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>"管理中心" 中的 Microsoft 365 报表-表单活动
+# <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>管理中心中的 Microsoft 365 报表-Forms Pro 活动
 
 Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   

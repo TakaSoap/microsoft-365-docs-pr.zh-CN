@@ -17,19 +17,21 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8767174fa17aceab7d83adb96f938efad5074356
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615914"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804773"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全评分（预览）
 
 >[!IMPORTANT]
 >一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 按照安全得分建议，可以保护您的组织免受威胁。 从 Microsoft 365 安全中心的中央仪表板中，组织可以监视和使用其 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。
+Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 可在 Microsoft 365 安全https://security.microsoft.com/securescore中心中找到。
+
+按照安全得分建议，可以保护您的组织免受威胁。 从 Microsoft 365 安全中心的中央仪表板中，组织可以监视和使用其 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。
 
 安全分数可帮助组织：  
 
@@ -41,7 +43,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 为您提供配置推荐安全功能、执行与安全相关的任务或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。 如果不能或不希望执行其中一个改进操作，则可以选择接受风险或剩余风险。
 
@@ -154,9 +156,34 @@ Microsoft 安全分数是基于系统配置、用户行为和其他安全相关�
 
 ## <a name="whats-new"></a>有哪些新增功能？ 
 
-若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。 若要了解计划的更改，请参阅[Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
+若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。 若要了解计划的更改，请参阅[Microsoft Secure 评分中的内容？](microsoft-secure-score-whats-coming.md)。
 
-### <a name="updated-interface-and-functionality"></a>更新的界面和功能
+### <a name="april-21st-2020"></a>2020年4月21日
+
+#### <a name="added-azure-active-directory-improvement-action"></a>添加了 Azure Active Directory 提高操作
+
+- 不允许用户向非托管应用程序授予许可（当前在已发布版本中可用）
+
+#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>添加了 Azure 高级威胁防护改进操作
+
+- 在域控制器上禁用打印后台处理程序服务
+- 修改不安全的 Kerberos 委派以阻止模拟
+- 使用 Microsoft LAPS 保护和管理本地管理员密码
+- 降低横向移动路径对敏感实体的风险
+- 删除敏感组中的非活动帐户
+- 从实体中删除不安全的 SID 历史记录属性
+- 解决不安全帐户属性
+- 停止明文凭据公开
+- 停止旧协议通信
+- 停止弱密码使用
+
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>对 Microsoft Defender ATP 威胁的支持 & 漏洞管理（TVM）安全建议
+
+现已提供 TVM 提供的所有已发布的安全建议。
+
+### <a name="january---march-2020"></a>1月-2020 年3月
+
+#### <a name="updated-interface-and-functionality"></a>更新的界面和功能
 
 * CISO 和潜在客户级别讨论的所有新指标和趋势视图
 * 跟踪和基准成绩的新方法
@@ -165,13 +192,13 @@ Microsoft 安全分数是基于系统配置、用户行为和其他安全相关�
 * 使用分数预测和计划操作来管理未来目标
 * 更多！
 
-### <a name="removed-not-scored-and-review-improvement-actions"></a>删除 "未评分" 和 "审阅" 改进操作
+#### <a name="removed-not-scored-and-review-improvement-actions"></a>删除 "未评分" 和 "审阅" 改进操作
 
 安全得分的原则之一是，分数应标准化且易于关联。 具有不可衡量或可操作的改进操作已导致混淆。 仅当每个建议都可以清楚地影响分数时，一条 Microsoft 安全分数才有意义。 不计分的提高操作不可度量，并且与其他改进操作相比，不会将 "改进" 操作评估为与相同标准。
 
 出于这些原因，所有未评分或要求的改进操作都暂时删除了审阅节奏。 您的部件不需要执行任何操作。
 
-### <a name="simplification-of-the-point-system"></a>简化了点系统
+#### <a name="simplification-of-the-point-system"></a>简化了点系统
 
 若要在多个体验中标准化点，每个安全分数改进操作点总数已更新为10磅或更少。 在我们目前所拥有的安全控制的广泛 breather 和将来将添加的安全控制中，必须更加一致。 虽然这是一项重大更改，并且你将在点汇总中看到一个拖放，但你的安全状态不会有任何变化。
 

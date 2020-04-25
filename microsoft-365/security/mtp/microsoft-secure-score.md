@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637100"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804758"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -38,7 +38,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。
 
@@ -120,9 +120,7 @@ Microsoft 安全分数不会跟踪标记为 [未评分] 的操作。 你仍可�
 
 3. 选择 "**忽略**"，因为您已决定接受风险而不执行改进操作。 忽略 "改进" 操作后，您可以实现的安全分数点总数将减少。 您可以在历史记录中查看此操作，也可以随时撤消。
 
-4. 选择 "**审阅**"，因为改进操作要求您定期查看环境的一部分以获取和保留点。 例如，应每周查看邮箱转发规则，以确保不会从您的网络中泄露数据。 您无需进行任何更改，但需要执行操作。 如果您定期查看规则，您将收到要点。 如果不是，则减少分数。
-
-![安全分数提高操作示例](../../media/secure-score/secure-score1x450.png) ![安全分数评审改进操作示例](../../media/secure-score/secure-score2x450.png)
+![安全分数提高操作示例](../../media/secure-score/secure-score1x450.png)
 
 *图 2 & 3：改进操作 flyouts*
 
@@ -137,6 +135,15 @@ Microsoft 安全分数是基于系统配置、用户行为和其他与安全相�
 ## <a name="whats-new"></a>有哪些新增功能？
 
 若要使 Microsoft 安全得分更好地代表安全状态，我们做出了一些更改。 若要了解计划的更改，请参阅[Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
+
+### <a name="april-21st-2020"></a>2020年4月21日
+
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>删除不符合可靠测量预期的改进操作或不提供安全状态的有用表示形式
+
+为了确保 Microsoft 安全分数是有意义的，并且每个改进操作都是可衡量和可靠的，我们将删除以下改进操作。
+
+- 将 IRM 保护应用于文档
+- 应用数据丢失防护策略
 
 ### <a name="january---march-2020"></a>1月-2020 年3月
 

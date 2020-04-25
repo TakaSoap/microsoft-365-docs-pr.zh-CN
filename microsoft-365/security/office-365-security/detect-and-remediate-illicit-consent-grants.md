@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正在 Office 365 中的非法许可授予攻击。
-ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637600"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808986"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>检测并修正违法许可授予
 
@@ -48,17 +48,18 @@ ms.locfileid: "43637600"
 
 3. 搜索（所有活动和所有用户）并输入开始日期和结束日期（如果需要），然后单击 "**搜索**"。 
 
-4. 筛选结果以同意应用程序，并添加 OAuth2PermissionGrant。
+4. 单击 "**筛选结果**" 并在 "**活动**" 字段中输入应用同意。
 
 5. 单击结果以查看活动的详细信息。 若要获取活动的详细信息，请单击 "**详细信息**"。 查看 "IsAdminContent" 是否设置为 True。
 
 > [!NOTE]
-> * 在事件发生后，在搜索结果中显示相应的审核日志条目可能需要30分钟到24小时的时间。 <br/><br/> 审核记录的保留和可在审核日志中搜索的时间长度取决于您的 Microsoft 365 订阅，以及分配给特定用户的许可证类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
-如果此值为 true，则表示具有全局管理员访问权限的人员可能已授予对数据的广泛访问权限。 如果这是意外情况，请执行相应的步骤来[确认攻击](#how-to-confirm-an-attack)。
+> 在事件发生后，在搜索结果中显示相应的审核日志条目可能需要30分钟到24小时的时间。 <br/><br/> 审核记录的保留和可在审核日志中搜索的时间长度取决于您的 Microsoft 365 订阅，以及分配给特定用户的许可证类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> 
+> 如果此值为 true，则表示具有全局管理员访问权限的人员可能已授予对数据的广泛访问权限。 如果这是意外情况，请执行相应的步骤来[确认攻击](#how-to-confirm-an-attack)。
 
 ## <a name="how-to-confirm-an-attack"></a>如何确认攻击
 
-如果您有上面列出的 IOCs 的一个或多个实例，则需要进行进一步调查以确认攻击是否发生。 您可以使用这三种方法中的任何一种来确认攻击。
+如果您有上面列出的 IOCs 的一个或多个实例，则需要进行进一步调查以确认攻击是否发生。 您可以使用以下三种方法中的任何一种来确认攻击：
 
 - 使用 Azure Active Directory 门户列出应用程序及其权限。 这种方法是彻底的，但是，如果您有多个用户要检查，则一次只能检查一个用户，这可能会非常耗时。
 
@@ -158,9 +159,9 @@ ms.locfileid: "43637600"
 
 - 您可以为租赁启用集成的应用程序。 这是一项重大步骤，可禁用最终用户对租户范围授予许可的能力。 这样可以防止您的用户无意中授予对恶意应用程序的访问权限。 强烈建议不要这样做，因为这会严重削弱用户在第三方应用程序中的工作效率。 为此，可以按照[启用或禁用集成应用程序](https://docs.microsoft.com/office365/admin/misc/integrated-apps)中的步骤操作。
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>安全 Microsoft 365，如 cybersecurity pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Microsoft 365
 
-你的 Microsoft 365 订阅附带了一组功能强大的安全功能，可用于保护你的数据和用户。 使用[microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 microsoft 建议的 microsoft 365 租户安全最佳实践。
+你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Microsoft 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Microsoft 365 租户。
 
 - 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
 

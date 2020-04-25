@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，将使用共享邮箱。 了解在创建共享邮箱之前需要了解的内容。
-ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6d1d7c8e0ae99047b854e91c1a97327a839f630
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629103"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808743"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址、接待台或其他可能由多个用户共享的其他功能）时，将使用共享邮箱。
 
-如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对于帮助和支持邮箱尤其有用，因为用户可以发送来自 "Contoso 支持" 或 "构建接待台" 的电子邮件。
+如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
 
-[创建共享邮箱](create-a-shared-mailbox.md)之前，应注意以下事项。
+[创建共享邮箱](create-a-shared-mailbox.md)之前，应注意以下事项：
 
 - **许可证：** 共享邮箱可以存储最大为50GB 的数据，而无需向其分配许可证。 在此之后，需要向邮箱分配许可证才能存储更多的数据。 有关共享邮箱许可的更多详细信息，请参阅[Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits)。 共享邮箱达到存储空间时，短时间内还可以收到电子邮件，但不能发送新的电子邮件。 然后，它会停止接收电子邮件。 邮箱的发件人将收到未送达回执。
 
@@ -55,7 +55,7 @@ ms.locfileid: "43629103"
 
 - **用户太多：** 当同时访问共享邮箱的指定用户过多时，他们可能会间歇无法连接到此邮箱。 在这种情况下，您可以考虑减少用户数或使用不同的工作负荷，如 Microsoft 365 组或公用文件夹。
 
-- **邮件删除：** 遗憾的是，您无法阻止他人删除共享邮箱中的邮件。 解决此情况的唯一方法是创建 Microsoft 365 组，而不是共享邮箱。 Outlook 中的组类似于共享邮箱。 有关两者的比较，请参阅[比较组](../create-groups/compare-groups.md)。 若要了解有关组的详细信息，请参阅[了解有关组的详细信息](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **邮件删除：** 遗憾的是，您无法阻止他人删除共享邮箱中的邮件。 解决此情况的唯一方法是创建 Microsoft 365 组，而不是共享邮箱。 Outlook 中的组类似于共享邮箱。 有关两者的比较，请参阅[比较组](../create-groups/compare-groups.md)。 若要了解有关组的详细信息，请参阅[了解有关组的详细信息](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)。
 
 ## <a name="related-articles"></a>相关文章
 
