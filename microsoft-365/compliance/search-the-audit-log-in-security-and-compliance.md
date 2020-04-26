@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
-ms.openlocfilehash: 8798dccb02b35158bce34b710362c5b020a9bb15
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800043"
+ms.locfileid: "43805190"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -113,7 +113,7 @@ ms.locfileid: "43800043"
 
 - 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Office 365 中不同服务所花费的时间。
 
-  |**Microsoft 365 服务**|**30 分钟**|**24 小时**|
+  |**Microsoft 365 服务或功能**|**30 分钟**|**24 小时**|
   |:-----|:-----:|:-----:|
   |高级威胁防护和威胁智能|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory（用户登录事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -129,6 +129,7 @@ ms.locfileid: "43800043"
   |Power Apps||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |安全与合规中心|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |敏感度标签||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online 和 OneDrive for Business|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |工作区分析|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
