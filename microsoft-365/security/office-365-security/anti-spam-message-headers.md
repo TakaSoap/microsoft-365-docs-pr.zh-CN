@@ -15,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 详细了解由 Exchange Online Protection 添加到邮件的标头字段和值。
-ms.openlocfilehash: 958850bccafcbcb0d4fa27a0daddc3c70353deb3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634564"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805219"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -46,7 +46,7 @@ ms.locfileid: "43634564"
 |IPV:CAL|邮件跳过了垃圾邮件筛选，因为源 IP 地址在 IP 允许列表中。 有关详细信息，请参阅[配置连接筛选](configure-the-connection-filter-policy.md)。|
 |IPV:NLI|IP 地址没有在任何 IP 信誉列表中列出。|
 |LANG|邮件的编写语言，由国家/地区代码指定（例如，俄语的代码为 ru_RU）。|
-|PTR:\[ReverseDNS\]|源 IP 地址的 PTR 记录（亦称为“指针记录”或“反向 DNS 地址”）。|
+|PTR:\[ReverseDNS\]|源 IP 地址的 PTR 记录（亦称为反向 DNS 查找）。|
 |SCL|邮件的垃圾邮件可信度 (SCL)。 值越高，邮件是垃圾邮件的可能性就越大。 有关详细信息，请参阅[垃圾邮件可信度 (SCL)](spam-confidence-levels.md)。|
 |SFTY|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <ul><li>9.1：默认值。 邮件包含网络钓鱼 URL，可能包含其他网络钓鱼内容，或者可能在中继到 Microsoft 365 之前已经被其他邮件筛选器（例如本地 Exchange）标记为网络钓鱼。</li><li>9.11：[组织内欺骗或自我欺骗](anti-spoofing-protection.md#different-types-of-spoofing)。 邮件未通过反欺骗检查，其中“发件人”标头中的发件人电子邮件域与接收域相同、与接收域匹配或者与接收域属于同一组织。 将向邮件添加组织内欺骗安全提示。</li><li>9.19：域模拟。 发送域正在尝试模拟 ATP 反网络钓鱼策略中指定的受保护域（由收件人的组织拥有的域或自定义域）。 将向邮件添加域模拟安全提示（如果已在 ATP 反网络钓鱼策略中启用该安全提示）。</li><li>9.20：用户模拟。 发送用户正在尝试模拟收件人组织中的用户或 ATP 反网络钓鱼策略中指定的受保护用户。 将向邮件添加用户模拟安全提示（如果已在 ATP 反网络钓鱼策略中启用该安全提示）。</li><li>9.21：[跨域欺骗](anti-spoofing-protection.md#different-types-of-spoofing)。 邮件未通过反欺骗检查，其中“发件人”标头中的发送人电子邮件域未进行身份验证，并且是外部域。 与 [CompAuth](#authentication-results-message-header-fields-used-by-microsoft-email-authentication)) 结合使用。</li><li>9.22：与 9.21 相同，只是用户具有遭到覆盖的安全发件人。</li><li>9.23：与 9.22 相同，只是组织具有遭到覆盖的允许发件人或域。</li><li>9.24：与 9.23 类似，区别在于用户有已被替代的 Exchange 邮件流规则（亦称为“传输规则”）。</li></ul>|
 |SFV:BLK|邮件跳过了筛选，但被阻止，因为邮件是从用户的“Outlook 阻止的发件人”（即用户的“阻止的发件人”列表）中的地址发送的。<br/></br> 若要详细了解管理员如何管理用户的“阻止的发件人”列表，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
@@ -135,7 +135,7 @@ dmarc=fail action=oreject header.from=contoso.com
 |||
 |---|---|
 |**标头字段**|**说明**|
-|action|指示垃圾邮件筛选器基于 DMARC 检查结果执行的操作。例如： <ul><li>**oreject** 或 **o.reject**：表示替代拒绝。 在这种情况下，Microsoft 365 在从 DMARC TXT 记录的策略为 p=reject 的域中接收未通过 DMARC 检查的邮件时使用此操作。 Microsoft 365 将该邮件标记为垃圾邮件，而不是删除或拒绝该邮件。 有关这样配置 Microsoft 365 的原因的详细信息，请参阅 [Microsoft 365 如何处理未通过 DMARC 的入站电子邮件](use-dmarc-to-validate-email.md#inbounddmarcfail)。</li><li>**pct.quarantine**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为隔离，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**pct.reject**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为拒绝，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**permerror**：DMARC 评估期间发生了永久性错误，例如在 DNS 中遇到格式有误的 DMARC TXT 记录。 尝试重新发送此邮件不太可能产生不同的结果。 你反而可能需要联系域的所有者，以解决该问题。</li><li>**temperror**：DMARC 评估期间出现暂时性错误。 你可能能够请求发件人稍后重新发送邮件，以便正确处理电子邮件。</li></ul>|
+|action|指示垃圾邮件筛选器基于 DMARC 检查结果执行的操作。例如： <ul><li>**oreject** 或 **o.reject**：表示替代拒绝。 在这种情况下，Microsoft 365 在从 DMARC TXT 记录的策略为 p=reject 的域中接收未通过 DMARC 检查的邮件时使用此操作。 Microsoft 365 将该邮件标记为垃圾邮件，而不是删除或拒绝该邮件。 有关这样配置 Microsoft 365 的原因的详细信息，请参阅 [Microsoft 365 如何处理未通过 DMARC 的入站电子邮件](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。</li><li>**pct.quarantine**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为隔离，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**pct.reject**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为拒绝，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**permerror**：DMARC 评估期间发生了永久性错误，例如在 DNS 中遇到格式有误的 DMARC TXT 记录。 尝试重新发送此邮件不太可能产生不同的结果。 你反而可能需要联系域的所有者，以解决该问题。</li><li>**temperror**：DMARC 评估期间出现暂时性错误。 你可能能够请求发件人稍后重新发送邮件，以便正确处理电子邮件。</li></ul>|
 |compauth|复合身份验证结果。 由 Microsoft 365 使用，用于合并多种类型的身份验证，例如 SPF、DKIM、DMARC 或邮件的任何其他部分，以确定是否对邮件进行身份验证。 使用“From: domain”作为评估的基础。|
 |dkim|说明邮件的 DKIM 检查结果。可能的值包括： <ul><li>**pass**：表示通过了邮件的 DKIM 检查。</li><li>**fail (reason)**：表示未通过了邮件的 DKIM 检查并给出原因。 例如，如果邮件未签名或签名未经验证。</li><li>**none**：表示邮件未签名。 这可能表示或不表示域存在 DKIM 记录或 DKIM 记录未生成结果，仅表示该邮件未签名。</li></ul>|
 |dmarc|说明邮件的 DMARC 检查结果。可能的值包括： <ul><li>**pass**：表示通过了邮件的 DMARC 检查。</li><li>**fail**：表示未通过邮件的 DMARC 检查。</li><li>**bestguesspass**：表示域没有 DMARC TXT 记录；如果存在该记录，就会通过邮件的 DMARC 检查。 这是因为 `5321.MailFrom` 地址（亦称为“MAIL FROM 地址”、“P1 发件人”或“信封发件人”）中的域与 `5322.From` 地址（亦称为“发件人地址”或“P2 发件人”）中的域一致。</li><li>**none**：表示没有 DKIM TXT 记录用于 DNS 中的发送域。|

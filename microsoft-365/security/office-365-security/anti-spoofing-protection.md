@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的反欺骗保护
+title: 防欺骗保护
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,26 +18,26 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 53e671e72922eb337cd5af2cfaa11b3ce3f95399
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: e66a0b7965212ef65663208efd73378d8c14a726
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537517"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805224"
 ---
-# <a name="anti-spoofing-protection-in-office-365"></a>Office 365 中的反欺骗保护
+# <a name="anti-spoofing-protection"></a>防欺骗保护
 
-无论你是拥有 Exchange Online 邮箱的 Office 365 客户，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 都包括帮助保护你的组织免受欺骗（伪造）发件人威胁的功能。
+无论你是拥有 Exchange Online 邮箱的 Microsoft 365 客户，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 都包括帮助保护你的组织免受欺骗（伪造）发件人威胁的功能。
 
 在为用户提供保护方面，Microsoft 非常重视网络钓鱼的威胁。 欺骗是黑客使用的一种常见技术。 **欺骗邮件看似来自某人或某处，其实并非其真实来源**。 此技术通常在专门获取用户凭据的网络钓鱼活动中使用。 EOP 中的反欺骗技术专门检查邮件正文中的“发件人”标头（用于显示电子邮件客户端中的邮件发件人）。 如果 EOP 高度确信“发件人”标头是伪造的，该邮件将被识别为欺骗邮件。
 
 EOP 中提供了以下反欺骗技术：
 
-- **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
-- **反网络钓鱼策略**：在 EOP 中，内置的反网络钓鱼策略使你能够打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定针对被阻止的欺骗发件人执行的操作（移动到“垃圾邮件”文件夹或隔离）。 Office 365 高级威胁防护 (ATP) 中提供的高级反网络钓鱼策略高级威胁防护还包含反模拟设置（受保护的发件人和域）、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 [Office 365 中的反网络钓鱼策略](set-up-anti-phishing-policies.md)。
+- **反网络钓鱼策略**：在 EOP 中，内置的反网络钓鱼策略使你能够打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定针对被阻止的欺骗发件人执行的操作（移动到“垃圾邮件”文件夹或隔离）。 Office 365 高级威胁防护 (ATP) 中提供的高级反网络钓鱼策略高级威胁防护还包含反模拟设置（受保护的发件人和域）、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 [Microsoft 365 中的防钓鱼策略](set-up-anti-phishing-policies.md)。
 
-- **电子邮件身份验证**：DNS 中的 SPF、DKIM 和 DMARC 记录使用的电子邮件身份验证（也称为电子邮件验证）是任何反欺骗工作必不可少的一部分。 可以为你的域配置这些记录，以便目标电子邮件系统能够检查声称来自域中发件人的邮件的有效性。 对于入站邮件，Office 365 需要针对发件人域的电子邮件身份验证。 有关详细信息，请参阅 [Office 365 中的电子邮件认证](email-validation-and-authentication.md)。
+- **电子邮件身份验证**：DNS 中的 SPF、DKIM 和 DMARC 记录使用的电子邮件身份验证（也称为电子邮件验证）是任何反欺骗工作必不可少的一部分。 可以为你的域配置这些记录，以便目标电子邮件系统能够检查声称来自域中发件人的邮件的有效性。 对于入站邮件，Microsoft 365 需要针对发件人域的电子邮件身份验证。 有关详细信息，请参阅 [Microsoft 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
 
 Microsoft 的反欺骗技术最初仅部署到具有 Office 365 Office 365 高级威胁防护 (ATP) 的组织。 2018 年 10 月，EOP 新增了反欺骗防护功能。
 
@@ -92,11 +92,9 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
   `Authentication-Results: ... compauth=fail reason=6xx`
 
-  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.11`
 
   - `reason=6xx` 表示组织内欺骗。
-
-  - 其中，CAT 表示邮件的类别，通常为 SPM（垃圾邮件），但有时可能是 HSPM（高可信度垃圾邮件）或 PHISH（网络钓鱼），具体取决于邮件中检测到的其他模式类型。
 
   - SFTY 是邮件的安全级别。 9 表示网络钓鱼，11 表示组织内欺骗。
 
@@ -109,19 +107,19 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
   `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-  - `reason=000` 值表示邮件未通过显式电子邮件身份验证。 `reason=001` 表示邮件未通过隐式电子邮件身份验证。
+  - `reason=000` 表示邮件未通过显式电子邮件身份验证。 `reason=001` 表示邮件未通过隐式电子邮件身份验证。
 
   - SFTY 是邮件的安全级别。 9 表示网络钓鱼，22 表示跨域欺骗。
 
-有关与欺骗相关的类别和复合身份验证 (compauth) 值的详细信息，请参阅 [Office 365 中的反垃圾邮件标头](anti-spam-message-headers.md)。
+有关与欺骗相关的类别和复合身份验证 (compauth) 值的详细信息，请参阅 [Microsoft 365 中的反垃圾邮件标头](anti-spam-message-headers.md)。
 
-有关 DMARC 的详细信息，请参阅[在 Office 365 中使用 DMARC 来验证电子邮件](use-dmarc-to-validate-email.md)。
+有关 DMARC 的详细信息，请参阅[在 Microsoft 365 中使用 DMARC 来验证电子邮件](use-dmarc-to-validate-email.md)。
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>关于被标记为欺骗邮件的邮件数的报告
 
 EOP 组织可在安全与合规性中心的“报告”仪表板中使用**欺骗检测**报告。 有关详细信息，请参阅[欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
 
-Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理器查看有关钓鱼网站尝试的信息。 有关详细信息，请参阅 [Office 365 威胁调查和响应](office-365-ti.md)。
+Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理器查看有关钓鱼网站尝试的信息。 有关详细信息，请参阅 [Microsoft 365 威胁调查和响应](office-365-ti.md)。
 
 ## <a name="problems-with-anti-spoofing-protection"></a>反欺骗防护方面的问题
 
@@ -154,7 +152,7 @@ Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理�
 
   - 在电子邮件客户端中创建邮箱规则，以将邮件移动到收件箱。 你还可以要求管理员配置覆盖，如[使用欺骗智能来配置未经身份验证的电子邮件的允许发件人](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email)中所述。
 
-  - 使用 Office 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。 有关详细信息，请参阅[就商业版产品问题联系支持人员 - 管理员帮助](../../admin/contact-support-for-business-products.md)。
+  - 使用 Microsoft 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。 有关详细信息，请参阅[就商业版产品问题联系支持人员 - 管理员帮助](../../admin/contact-support-for-business-products.md)。
 
 如果其他所有操作均失败，则可以向 Microsoft 报告该邮件为误报。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -162,4 +160,4 @@ Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理�
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>反欺骗防护注意事项
 
-如果你是当前向 Office 365 发送邮件的管理员，则需要确保你的电子邮件正确经过身份验证。 否则，它可能被标记为垃圾邮件或网络钓鱼。 有关详细信息，请参阅[适用于发送未经身份验证的电子邮件的合法发件人的解决方案](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)。
+如果你是当前向 Microsoft 365 发送邮件的管理员，则需要确保你的电子邮件经过了正确的身份验证。 否则，它可能被标记为垃圾邮件或网络钓鱼。 有关详细信息，请参阅[适用于发送未经身份验证的电子邮件的合法发件人的解决方案](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)。

@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中设置 SPF 以防止欺骗
+title: 设置 SPF 以帮助防止欺骗
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 和自定义域。 SPF 有助于验证从自定义域发送的出站电子邮件。
-ms.openlocfilehash: 0480e23d00671f0fdfc4795f3844047e02a69122
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9d84fb60886dd1518beb8a94438d5168c869a8c8
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598329"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808970"
 ---
-# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>在 Office 365 中设置 SPF 以防止欺骗
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以帮助防止欺骗
 
  **摘要：** 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 和自定义域。SPF 有助于验证从自定义域发送的出站电子邮件。
 
@@ -49,7 +49,7 @@ ms.locfileid: "41598329"
 
 - 自定义域的当前 SPF TXT 记录。有关说明，请参阅[收集创建 Office 365 DNS 记录所需的信息](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records)。
 
-- 所有本地邮件服务器的 IP 地址。例如，**192.168.0.1**。
+- 所有本地邮件服务器的外部 IP 地址。例如，**131.107.2.200**。
 
 - 用于需要包含在 SPF TXT 记录中的所有第三方域的域名。一些批量邮件提供商已设置供其客户使用的子域。例如，MailChimp 公司已经设置了 **servers.mcsv.net**。
 
@@ -59,7 +59,7 @@ ms.locfileid: "41598329"
 
 1. 请务必熟悉下表中的 SFP 语法。
 
-   ||**如果您使用的是...**|**对于 Office 365 客户很常见？**|**添加以下内容...**|
+   ||**如果您使用的是...**|**对于客户而言很常见？**|**添加以下内容...**|
    |:-----|:-----|:-----|:-----|
    |1|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值开头|v=spf1|
    |2|Exchange Online|常见|include:spf.protection.outlook.com|
@@ -75,7 +75,7 @@ ms.locfileid: "41598329"
 
    `v=spf1 include:spf.protection.outlook.com -all`
 
-   这是最常见的 Office 365 SPF TXT 记录。 此记录几乎适用于每个人，无论你的 Office 365 数据中心是位于美国还是欧洲（包括德国），亦或是位于其他地理位置。
+   这是最常见的 SPF TXT 记录。 此记录几乎适用于每个人，无论你的 Microsoft 数据中心是位于美国还是欧洲（包括德国），亦或是位于其他地理位置。
 
    不过，如果已购买 Office 365 Germany（属于 Microsoft Cloud Germany），则应使用第 4 行（而不是第 2 行）的 include 语句。例如，如果完全托管在 Office 365 Germany中（即没有本地邮件服务器），则 SPF TXT 记录包括行 1、4 和 7，如下所示：
 

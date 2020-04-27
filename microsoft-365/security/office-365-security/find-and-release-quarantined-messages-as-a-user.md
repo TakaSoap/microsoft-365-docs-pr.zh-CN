@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 作为 Microsoft 365 用户，你可以查看、释放和删除隔离的邮件，即你是收件人、但被垃圾邮件筛选功能隔离为垃圾邮件或群发电子邮件的邮件。 在安全与合规中心内，查看和管理已隔离邮件。
-ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8ab5835a29ccf0c58d27f56fe84d29745419b1a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638102"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809010"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user"></a>以用户身份查找并释放隔离的邮件
 
@@ -38,7 +38,7 @@ ms.locfileid: "43638102"
 
 - 此外，管理员还可以在反垃圾邮件策略中[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 用户可以直接从这些通知中释放垃圾邮件隔离邮件，但不能释放隔离的网络钓鱼邮件。 有关详细信息，请参阅 [Office 365 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-- 只有管理员才能访问因为是高可信度钓鱼电子邮件、恶意软件或根据邮件流规则（亦称为“传输规则”）被隔离的邮件。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
+- 只有管理员才能访问因为是高可信度钓鱼电子邮件、恶意软件或根据邮件流规则（亦称为“传输规则”）被隔离的邮件。 钓鱼邮件可以由用户查看，但只能由管理员发布。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
 
 - 可以释放邮件，并将它报告为误报（非垃圾邮件），但只能执行一次。
 
