@@ -1,5 +1,5 @@
 ---
-title: 查找有关 Windows 10 和 Office 365 专业增强版部署的帮助
+title: 寻求 Windows 10 和 Microsoft 365 企业应用版部署方面的帮助
 f1.keywords:
 - NOCSH
 ms.author: jogruszc
@@ -14,19 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 在何处查找有关 Windows 10 和 Office 365 专业增强版部署的帮助和支持。
-ms.openlocfilehash: c581cbfc7fdb537fddf10b20d697a42a8e564bcf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 在何处寻求 Windows 10 和 Microsoft 365 企业应用版部署方面的帮助和支持。
+ms.openlocfilehash: 7c5376228c3c0b7506fd9b9fe7fb565c0bb76446
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067535"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634082"
 ---
-# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>查找有关 Windows 10 和 Office 365 专业增强版部署的帮助 
+# <a name="find-help-for-your-windows-10-and-microsoft-365-apps-for-enterprise-deployment"></a>寻求 Windows 10 和 Microsoft 365 企业应用版部署方面的帮助 
 
-如果你正在规划采用 Office 365 专业增强版的 Windows 10 部署，可以通过多种方式从经过认证的 Microsoft 合作伙伴处和 [Microsoft FastTrack](https://www.microsoft.com/fasttrack) 中获得额外帮助。
+若要计划部署 Windows 10 和 Microsoft 365 企业应用版，可以通过多种方式从 Microsoft 认证合作伙伴和 [Microsoft FastTrack](https://www.microsoft.com/fasttrack) 处获取额外帮助。
 
-下图展示了与 Windows 10、Office 365 专业增强版和企业移动性 + 安全性的[桌面部署](https://www.aka.ms/howtoshift)流程相契合的可用服务（包括现有合作伙伴和 FastTrack 产品/服务）。 在很多情况下，符合资格的 Microsoft 365、Office 365 或 Windows 10 企业版订阅中随附有这些服务。 对于 Windows 10 和 Office 365 专业增强版桌面评估等合作伙伴主导的服务，Microsoft 身为一家合格的组织，为合作伙伴执行的服务提供凭证。 以下链接中提供了每项产品/服务的详细信息。
+下图展示了与 Windows 10、Microsoft 365 企业应用版和企业移动性 + 安全性的[桌面部署](https://www.aka.ms/howtoshift)流程相契合的可用服务，这些服务由现有合作伙伴和 FastTrack 产品/服务提供。 在很多情况下，符合资格的 Microsoft 365、Office 365 或 Windows 10 企业版订阅中随附有这些服务。 对于 Windows 10 和 Microsoft 365 企业应用版桌面评估等由合作伙伴主导的服务，作为一家合格的组织，Microsoft 针对合作伙伴执行的服务提供凭证。 以下链接中提供了每项产品/服务的详细信息。
 
 <br>
 
@@ -36,7 +36,7 @@ ms.locfileid: "42067535"
 <td><p><strong>设备和应用就绪情况</strong></p>
 <ul>
 <li><p><a href="https://aka.ms/MDAcustomerform">新式桌面评估</a>：你所在地区的合格合作伙伴将使用最新的 Microsoft 工具和过程为你的组织提供深入的应用程序和设备兼容性并进行升级就绪情况评估。</p>
-<li><p><a href="https://www.aka.ms/desktopappassure">桌面应用保证</a>：如果你在部署 Windows 10 和 Office 365 专业增强版或后续更新时遇到应用兼容性问题，Microsoft FastTrack 工程师会为你提供咨询服务和修复指导。</p>
+<li><p><a href="https://www.aka.ms/desktopappassure">桌面应用保证</a>：如果你在部署 Windows 10 和 Microsoft 365 企业应用版或后续更新时遇到应用兼容性问题，Microsoft FastTrack 工程师会为你提供咨询服务和修正指导。</p>
 </ul></td>
 </tr>
 <tbody>
@@ -44,14 +44,14 @@ ms.locfileid: "42067535"
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="step 2" height="144" width="144" /></td>
 <td><p><strong>目录和网络就绪情况</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">核心载入</a>：Microsoft FastTrack 专家可在你的当前目录服务和 Azure Active Directory 之间提供标识集成。这对于 Office 365 专业增强版、Microsoft Intune、OneDrive 以及其他 Office 365 和 EMS 云服务来说是必需的，这是桌面部署的一部分。</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">核心加入</a>：Microsoft FastTrack 专家在你的当前目录服务与 Azure Active Directory 之间提供标识集成。对于 Microsoft 365 企业应用版、Microsoft Intune、OneDrive 以及其他 Office 365 和 EMS 云服务，这是桌面部署中所必需的。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Office 和 LOB 应用交付</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 专业增强版</a>配置和部署：Microsoft FastTrack 专家可帮助预配用户许可证，帮助配置安装和更新设置以便实现即点即用，以及帮助创建软件包（如果你的组织使用 Microsoft Endpoint Configuration Manager）。</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365 企业应用版</a>配置和部署：Microsoft FastTrack 专家在以下方面提供协助：预配用户许可证、配置即点即用所需的安装和更新设置，以及创建包（如果组织使用 Microsoft Endpoint Configuration Manager 的话）。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -79,7 +79,7 @@ ms.locfileid: "42067535"
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="step 7" height="144" width="144" /></td>
 <td><p><strong>Office 和 Windows 作为服务</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>：Microsoft FastTrack 专家可帮助配置 Windows 10 和 Office 365 专业增强版的更新策略。<a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 专业增强版</a>，Microsoft FastTrack 还可以提供有关如何设置部署环以便及时进行更新的指导。</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>：Microsoft FastTrack 专家协助配置 Windows 10 和 Microsoft 365 企业应用版的更新策略。<a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365 企业应用版</a>：Microsoft FastTrack 还可以提供有关如何设置部署圈来不断更新的指导。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -87,7 +87,7 @@ ms.locfileid: "42067535"
 <td><p><strong>用户通信和培训</strong></p>
 <ul>
 <li><p><a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/quickly-and-easily-transform-new-devices?rtc=2">工作效率库</a>：一组来自 Microsoft 的在线资源，用于 Microsoft 365 最终用户通信和培训。</p></li>
-<li><p><a href="https://www.office.com/training">Office 培训</a>：一组来自 Microsoft 的在线资源，用于 Office 365 和 Office 365 专业增强版的最终用户培训。</p></li>
+<li><p><a href="https://www.office.com/training">Office 培训</a>：一组关于 Office 365 和 Microsoft 365 企业应用版的 Microsoft 最终用户培训联机资源。</p></li>
 <li><p><a href="https://info.microsoft.com/Windows10AdoptionPlanningKit.html">Windows 10 采用规划工具包</a>：一组来自 Microsoft 的在线资源，包括用户准备情况资产。</p></li>
 </ul></td>
 </tr>

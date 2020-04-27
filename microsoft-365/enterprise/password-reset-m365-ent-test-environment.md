@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: c8d5ed0c7feac98afd3230a305f4ab1f850ca7f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 96a8b03ca978ac2b2174742c0208444d853ba7c9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633170"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632883"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -33,9 +33,9 @@ ms.locfileid: "42633170"
 
 本文介绍如何分三个阶段在 Microsoft 365 测试环境中配置和测试密码重置：
 
-1.  创建 Microsoft 365 企业版测试环境。
+1.    创建 Microsoft 365 企业版测试环境。
 2.  启用密码写回。
-3.  为用户 3 帐户配置和测试密码重置。
+3.    为用户 3 帐户配置和测试密码重置。
     
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ ms.locfileid: "42633170"
   
 - Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
-- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
+- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 域同步到 Microsoft 365 订阅的 Azure AD 租户。
 
 ## <a name="phase-2-enable-password-writeback"></a>阶段 2：启用密码写回
 
@@ -81,7 +81,7 @@ ms.locfileid: "42633170"
 1. 打开新的专用浏览器实例并浏览到 [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup)。
 2. 使用用户 3 帐户凭据登录。
 3. 在“**需要详细信息**”中，单击“**下一步**”。 
-5. 在“不丢失对帐户的访问权限”**** 中，将身份验证电话设置为你的手机号码，并将身份验证电子邮件设置为你的工作或个人电子邮件帐户。
+5. 在“不丢失对帐户的访问权限”**** 中，将身份验证电话设置为你的移动电话号码，并将身份验证电子邮件地址设置为你的工作或个人电子邮件帐户。
 7. 对这两项进行验证后，单击“良好”****，然后关闭浏览器的专用实例。
 8. 打开新的专用浏览器实例并转到 [https://aka.ms/sspr](https://aka.ms/sspr)
 9. 键入用户 3 帐户的名称，键入来自 CAPTCHA 的字符，然后单击“**下一步**”。

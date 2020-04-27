@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录。
-ms.openlocfilehash: d2b17acb2b57e379fe204e3ea4402b3f00ef7d6c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: ba3f943a53f05c452a8e01e40bb6924dc42a866e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633160"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636864"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录
 
@@ -35,8 +35,8 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
 
 此设置包含两个阶段：
 
-1.  创建采用密码哈希同步的 Microsoft 365 模拟企业测试环境。
-2.  为 APP1 上的 Azure AD Connect 配置 Azure AD 无缝 SSO。
+1.    创建采用密码哈希同步的 Microsoft 365 模拟企业测试环境。
+2.    为 APP1 上的 Azure AD Connect 配置 Azure AD 无缝 SSO。
     
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -53,7 +53,7 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
   
 - Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
-- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 定期同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
+- 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 域定期同步到 Microsoft 365 订阅的 Azure AD 租户。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>阶段 2：为 APP1 上的 Azure AD Connect 配置 Azure AD 无缝 SSO
 
@@ -110,7 +110,7 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
 
 - 包含已注册 DNS 域 testlab.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
-- 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Microsoft 365 或 Office 365 订阅同步到 TESTLAB AD DS 域。 
+- 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Microsoft 365 订阅同步到 TESTLAB AD DS 域。 
 - 已启用的 Azure AD 无缝 SSO，这样模拟 Intranet 上的计算机无需指定用户帐户密码，即可登录 Microsoft 365 云资源。
 
 若要了解如何在生产中配置 Azure AD 无缝 SSO 和相关链接，请参阅“标识”阶段中的[简化用户登录](identity-secure-your-passwords.md#identity-sso)步骤。

@@ -1,5 +1,5 @@
 ---
-title: 阶段 4：Office 365 专业增强版
+title: 第 4 阶段：Microsoft 365 企业应用版
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,37 +14,37 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 这些步骤用于部署 Microsoft 365 企业版 Office 365 专业增强版基础结构。
-ms.openlocfilehash: 2b3ac311863249720a2dc1fba00ead9ebf6ac8e5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 这些步骤用于为 Microsoft 365 企业版部署 Microsoft 365 企业应用版基础结构。
+ms.openlocfilehash: fe29b8025a8ccf5babf2c52cd62ebc72860a8a5c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066436"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631425"
 ---
-# <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
+# <a name="phase-4-microsoft-365-apps-for-enterprise"></a>第 4 阶段：Microsoft 365 企业应用版
 
-![阶段 4：Office 365 专业增强版](../media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![第 4 阶段：Microsoft 365 企业应用版](../media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 ** 这适用于 Microsoft 365 企业版和 Microsoft 365 教育版的 E3 和 E5 版本
 
-Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅版本。 与 Office 2019 一样，Office 365 专业增强版包含所有 Office 应用程序，这些应用程序直接安装在客户端设备上。 与 Office 2019 不同的是，Office 365 专业增强版会定期更新新功能，并拥有基于用户的许可模型，允许用户在多个设备上安装 Office。 有关详细信息，请参阅[关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企业版包括 Microsoft 365 企业应用版（即订阅版 Office）。 与 Office 2019 一样，Microsoft 365 企业应用版包含所有 Office 应用程序，这些应用程序直接安装在客户端设备上。 与 Office 2019 不同的是，Microsoft 365 企业应用版定期接收包含新功能的更新，并有基于用户的许可模型，可便于用户在多个设备上安装 Office。 如需了解更多详情，请参阅[关于企业中的 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
-在这个阶段，会将 Office 365 专业增强版作为 Microsoft 365 企业版的一部分部署到客户端设备。除了此项指导，建议使用 [Microsoft Fastrack](https://fasttrack.microsoft.com/office)，以帮助进行部署。 
+在此阶段，你将 Microsoft 365 企业应用版部署到客户端设备，作为 Microsoft 365 企业版的一部分。除了本指南之外，还建议使用 [Microsoft Fastrack](https://fasttrack.microsoft.com/office) 来帮助进行部署。 
 
-如果已部署 Office 365 专业增强版，请查看这一阶段的[退出条件](office365proplus-exit-criteria.md)，以确保其满足 Microsoft 365 企业版的必备条件。
+如果已部署 Microsoft 365 企业应用版，请参阅此阶段的[退出条件](office365proplus-exit-criteria.md)，以确保它满足 Microsoft 365 企业版的必需条件。
 
 >[!Note]
->要同时部署 Windows 10 企业版和 Office 365 专业增强版，请参阅[桌面部署中心](desktop-deployment-center-home.md)。
+>若要同时部署 Windows 10 企业版和 Microsoft 365 企业应用版，请参阅[桌面部署中心](desktop-deployment-center-home.md)。
 >
 
 ## <a name="step-1-assess-your-environment"></a>第 1 步：评估环境
 
-在部署 Office 365 专业增强版之前，请遵循[评估部署 Office 365 专业增强版的环境和要求](https://docs.microsoft.com/DeployOffice/assess-office-365-proplus)中的指导。此评估包括系统要求、客户端设备的详细信息（如体系结构和所需语言）、许可要求、网络能力和应用程序兼容性。完成该评估将有助于你在规划部署中做出关键决策。
+部署 Microsoft 365 企业应用版前，请遵循[评估部署 Microsoft 365 企业应用版的环境和要求](https://docs.microsoft.com/DeployOffice/assess-office-365-proplus)中的指南。此评估包括系统要求、客户端设备的详细信息（如体系结构和所需语言）、许可要求、网络能力和应用程序兼容性。完成此评估将有助于你在计划部署过程中做出关键决策。
 
 ## <a name="step-2-plan-your-deployment"></a>步骤 2：规划部署
 
-评估环境后，按照[规划 Office 365 专业增强版部署](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus)中的指导来创建部署计划。此计划可包括以下决策： 
+评估环境后，请遵循[计划部署 Microsoft 365 企业应用版](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus)中的指南来创建部署计划。此计划包括做出以下决策： 
 
 - 如何部署 Office，包括要使用哪种工具（如 Microsoft Endpoint Configuration Manager 或 Office 部署工具），以及从何处安装 Office
 - 如何管理 Office 更新
@@ -57,11 +57,11 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅�
 
 基于部署计划，选择所需的部署方式：
 
-- **[使用 Configuration Manager 部署 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager)：** 使用 Configuration Manager 管理部署，并从网络上的分发点下载并部署 Office
+- **[使用 Configuration Manager 部署 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager)：** 使用 Configuration Manager 来管理部署，并从网络上的分发点下载和部署 Office
 
-- **[从云中使用 ODT 部署 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud)：** 使用 ODT 管理部署，并在客户端设备上直接从 Office CDN 安装 Office
+- **[使用云中的 ODT 部署 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud)：** 使用 ODT 来管理部署，并在客户端设备上直接从 Office CDN 安装 Office
  
-- **[从 Office 门户自助安装 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/manage-software-download-settings-office-365)：** 从 Office 门户管理部署，并让用户在其客户端设备上直接从门户安装 Office
+- **[在 Office 门户中自助安装 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/manage-software-download-settings-office-365)：** 在 Office 门户中管理部署，并让用户在其客户端设备上直接从门户安装 Office
 
 许多组织将针对不同用户使用这些选项组合。例如，组织可能使用配置管理器对大部分用户部署 Office，但对不经常连接到内部网络的一小组工作人员启用自助安装。 
 
@@ -69,14 +69,14 @@ Microsoft 365 企业版包括 Office 365 专业增强版，即 Office 的订阅�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何对 Microsoft 365 企业版执行操作
 
-了解 Microsoft 的专家如何[部署和管理 Office 365 专业增强版更新](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR7)。
+了解 Microsoft 专家如何[部署和管理 Microsoft 365 企业应用版更新](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR7)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 是如何使用 Microsoft 365 企业版的
 
-了解 Contoso Corporation（虚构但具代表性的跨国企业）是如何[部署 Office 365 专业增强版](contoso-o365pp.md)的。
+看看 Contoso Corporation（有代表性的虚构跨国企业）是如何[部署 Microsoft 365 企业应用版](contoso-o365pp.md)的。
 
 ![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 
-[Office 365 专业增强版基础结构退出条件](office365proplus-exit-criteria.md)
+[Microsoft 365 企业应用版基础结构退出条件](office365proplus-exit-criteria.md)

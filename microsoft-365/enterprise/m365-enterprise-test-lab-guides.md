@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 582068e84d82bfa681d1e1e64234698544ce3b9d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153912"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631593"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -116,16 +116,16 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 若要演示与信息保护相关的特性和功能，请参阅：
 
-- [增强的 Office 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [增强的 Microsoft 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   配置可提高 Office 365 安全性的设置并调查内置安全工具。
+   配置可提高 Microsoft 365 安全性的设置，并调查内置安全工具。
   
 - [数据分类](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   配置 Office 365 标签，并将标签应用于 SharePoint Online 团队网站中的文档。
+   配置标签，并将标签应用于 SharePoint Online 团队网站中的文档。
     
 - [Privileged Access Management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   配置 Privileged Access Management，以便实时访问 Office 365 组织中的提升和特权任务。
+   配置 Privileged Access Management，以便实时访问组织中提升的特权任务。
 
 

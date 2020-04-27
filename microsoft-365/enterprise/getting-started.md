@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署过程简介。
-ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067473"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634214"
 ---
 # <a name="getting-started---desktop-deployment"></a>入门 - 桌面部署
 
@@ -30,36 +30,36 @@ ms.locfileid: "42067473"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>入门：人员、流程和技术指导</strong></p>
-<p>了解 Windows 10 和 Office 365 专业增强版的好处、相比之前的部署的主要变化和注意事项以及最佳做法，以确保顺利过渡到 Windows 10 和 Office 365 专业增强版。</p></td>
+<p>了解 Windows 10 和 Microsoft 365 企业应用版的优势、与旧部署相比的主要变化和注意事项，以及确保顺畅转换到 Windows 10 和 Microsoft 365 企业应用版的最佳做法。</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->在本系列中，我们将阐释使用现有工具的最佳方式，并向你介绍由云支持的新技术、服务和方法。  若要查看完整的桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
+>在本系列中，我们将阐释使用现有工具的最佳方式，并向你介绍由云支持的新技术、服务和方法。  若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-欢迎来到桌面部署中心，这是我们学习如何帮助你计划向 Windows 10 和 Office 365 专业增强版转移的中心位置。 这将允许你利用由最新生产力、团队合作和协作经验提供支持的安全工作区。
+欢迎使用桌面部署中心，这是学习如何计划和执行转换到 Windows 10 和 Microsoft 365 企业应用版的中心位置。 这将允许你利用由最新生产力、团队合作和协作经验提供支持的安全工作区。
 
 如果已经有一段时间没有部署新桌面环境，那么好消息是部署过程已经得到了改进。 在过去，我们会遇到诸如应用程序兼容性之类的难题，但现在已经不再是问题。 新工具以及云提供的见解，使你能够信心十足地以更快、更高效的方式向前迈进。
 
-在此简介中，我们将概述更改的内容，并开始体验桌面部署轮。这将指导你完成向 Windows 10 和 Office 365 专业增强版转移的建议步骤，其中详细介绍了在采用新式管理技术和方法的同时，如何利用现有工具和流程。
+此简介将概述具体变化，并导览桌面部署轮。这将分步介绍转换到 Windows 10 和 Microsoft 365 企业应用版的建议步骤，不仅详细介绍了如何利用现有工具和流程，同时还介绍了如何在此过程中采用新式管理技术和方法。
 
 ## <a name="why-upgrade"></a>为什么要升级？
 
 Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和安全工作区的能力，同时使你能够简化支持基础结构。
 
-新式管理实践的关键租户之一是始终保持最新的设备。 通过这一系列，将看到正在交付的新功能，它们可以帮助你迁移到 Windows 10 和 Office 365 专业增强版，并了解如何在两者的半年度发布中保持最新状态。
+新式管理实践的关键租户之一是始终保持最新的设备。 通过本系列教程，你将了解即将提供的有助于迁移到 Windows 10 和 Microsoft 365 企业应用版的新功能，同时了解如何将这两个产品不断更新为最新的半年发行版。
 
 [面向 IT 专业人员的 Windows 10](https://www.microsoft.com/itpro/windows-10)
 
-[关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[关于企业中的 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
 
 ## <a name="what-has-changed"></a>更改的内容
 
 我们首先看看自上次桌面部署以来发生的变更和改进。如果你还没有转变桌面环境，则很可能会使用 Windows 7 和 Office 2010 或 Office 2013。如果已转变，则会注意到自上次主要升级以来，有一些事项已随之演变。下面是一些核心变更：
 
-**标识和访问：** Windows 10 和 Office 365 专业增强版与云生产力、安全和管理服务相连接，其核心是一项新标识和访问管理服务：Azure Active Directory (Azure AD)。 这允许跨云服务进行单一登录和安全连接。意味着你将需要配备有 Azure AD，以便充分利用 Microsoft 365 服务的优势，例如 Office 365、Intune 或 Windows Autopilot。
+**标识和访问：** Windows 10 和 Microsoft 365 企业应用版与云生产力、安全性和管理服务相连接，这两个产品的核心是新的标识和访问管理服务，即Azure Active Directory (Azure AD)。 这允许跨云服务进行单一登录和安全连接。意味着你将需要配备有 Azure AD，以便充分利用 Microsoft 365 服务的优势，例如 Office 365、Intune 或 Windows Autopilot。
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 
@@ -73,13 +73,13 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 [Windows Autopilot](https://www.microsoft.com/windowsforbusiness/windows-autopilot)
 
-**即点即用部署：** 在预配 Office 桌面应用时，Office 365 专业增强版是首选项。 这使你能够在开发过程中访问 Office 中的最新创新，因此你不需要等待数年就能获得新功能。 你还可以使用名为“即点即用”的新安装。
+**即点即用部署：** 在预配 Office 桌面应用时，Microsoft 365 企业应用版是首选方法。 这使你能够在开发过程中访问 Office 中的最新创新，因此你不需要等待数年就能获得新功能。 你还可以使用名为“即点即用”的新安装。
 
 即点即用与过去基于 MSI 的包有很大的区别。 即点即用速度更快、更轻，并支持后台更新，可确保用户的正常启动和运行。 它仍然是 Office 的本地副本，你可以继续使用现有部署工具（如 Microsoft Endpoint Configuration Manager）来预配和配置应用。
 
-[Office 365 专业增强版部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 企业应用版部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
-**半年度更新：** 一旦移至 Windows 10 和 Office 365 专业增强版，将每半年更新一次，并提供新功能。 但是，由于 Microsoft 能够从云提供见解来帮助你，你可以迅速而自信地将这些更新发布到成百上千台设备。 与就地升级一样，该功能更新保留了前一个版本的应用、数据和配置。
+**半年更新：** 迁移到 Windows 10 和 Microsoft 365 企业应用版后，包含新功能的更新半年分发一次。 但是，由于 Microsoft 能够从云提供见解来帮助你，你可以迅速而自信地将这些更新发布到成百上千台设备。 与就地升级一样，该功能更新保留了前一个版本的应用、数据和配置。
 
 ## <a name="the-deployment-process-wheel"></a>部署过程轮
 
@@ -93,7 +93,7 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 [BranchCache 与对等缓存](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**[步骤 3：Office 和业务线应用交付](https://aka.ms/mdd3)** 虽然 Windows 继续支持基于 MSI 的安装，但它现在也支持更新的安装机制，该机制针对自动化部署和持续更新进行了优化。 Office 365 专业增强版和 Windows 2019 客户端使用即点即用安装技术。 你可能想要提供一系列 UWP 应用，并且可能会逐渐发现你自己部署第三方应用和内部开发业务线应用，这些应用使用的是基于 MSIX 的新打包应用。 这一步骤确保应用已准备好进行自动部署，并且你已为成功操作做好准备，而无论是使用即点即用、MSIX、基于 MSI 的传统方式部署的应用，还是从你建立业务的 Microsoft Store 部署的 UWP 应用。
+**[步骤 3：Office 和业务线应用交付](https://aka.ms/mdd3)** 虽然 Windows 继续支持基于 MSI 的安装，但它现在也支持更新的安装机制，该机制针对自动化部署和持续更新进行了优化。 Microsoft 365 企业应用版和 Office 2019 客户端使用即点即用安装技术。 你可能想要提供一系列 UWP 应用，并且可能会逐渐发现你自己部署第三方应用和内部开发业务线应用，这些应用使用的是基于 MSIX 的新打包应用。 这一步骤确保应用已准备好进行自动部署，并且你已为成功操作做好准备，而无论是使用即点即用、MSIX、基于 MSI 的传统方式部署的应用，还是从你建立业务的 Microsoft Store 部署的 UWP 应用。
 
 [MSIX 简介](https://blogs.msdn.microsoft.com/sgern/2018/06/15/msix-intro/)
 
@@ -103,7 +103,7 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 [将 Windows 已知文件夹重定向和移动到 OneDrive](https://docs.microsoft.com/onedrive/redirect-known-folders)
 
-**[步骤 5：安全性和合规性](https://aka.ms/mdd5)** 在移动到 Windows 10 和 Office 365 专业增强版时，安全性和合规性是一个具备诸多优势的领域。重要的是，你要熟悉新的内置功能，并将其与已有功能进行比较。例如，Windows 10 中使用基于虚拟化的安全性的新功能可以通过将核心流程和机密从操作系统中分离出来，来防止凭证被盗，防御基于浏览器的漏洞和恶意代码执行。此外，像高级威胁防护这样的云服务提供了一个统一平台，用于安全强化、后期漏洞检测、调查和响应。高级威胁防护还可以保护你免受恶意电子邮件附件、不安全超链接等内容的侵害。
+**[第 5 步：安全与合规](https://aka.ms/mdd5)** - 迁移到 Windows 10 和 Microsoft 365 企业应用版后，安全与合规是大有潜力可挖掘的领域。请务必自行熟悉新的内置功能，并将它们与现有功能进行比较。例如，Windows 10 中使用基于虚拟化的安全性的新功能可以将核心流程和机密从操作系统中分离出来，从而防止凭证盗窃、防御基于浏览器的漏洞和恶意代码执行。此外，高级威胁防护等云服务提供了统一平台，用于强化安全性、泄露后检测、调查和响应。高级威胁防护还可以保护你免受恶意电子邮件附件、不安全超链接等威胁。
 
 [Microsoft 安全](https://www.microsoft.com/security/default.aspx)
 
@@ -111,18 +111,18 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 [Configuration Manager 中的操作系统部署简介](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-**[步骤 7：Windows 和 Office 即服务](https://aka.ms/mdd7)** 这标志着维护用户桌面资产的方式发生了重大转变。 通过迁移到 Windows 10 和 Office 365 专业增强版，可以将 Windows 和 Office 作为服务来管理。 每隔几年，技术就会发生巨大的变化，你将不断为用户带来新功能、体验和保护。 半年度功能更新在每年的秋季和春季提供新功能，而每月累积质量更新将包含安全性、可靠性和 bug 修复。 虽然可以选择部署 Office 2019 客户端，但我们强烈建议你移至 Office 365 专业增强版。 此做法遵循类似于 Windows 的服务计划，因此用户也会定期收到 Office 应用更新。
+**[步骤 7：Windows 和 Office 即服务](https://aka.ms/mdd7)** 这标志着维护用户桌面资产的方式发生了重大转变。 通过迁移到 Windows 10 和 Microsoft 365 企业应用版，可以将 Windows 和 Office 作为服务来管理。 每隔几年，技术就会发生巨大的变化，你将不断为用户带来新功能、体验和保护。 半年度功能更新在每年的秋季和春季提供新功能，而每月累积质量更新将包含安全性、可靠性和 bug 修复。 虽然你可以选择部署 Office 2019 客户端，但强烈建议迁移到 Microsoft 365 企业应用版。 此做法遵循类似于 Windows 的服务计划，因此用户也会定期收到 Office 应用更新。
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Windows 即服务概述](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [Office 即服务概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
 
-**[步骤 8：用户通信和培训](https://aka.ms/mdd8)** 最后一步对于推动使用新功能来增强团队合作、通信、安全等至关重要。 在针对早期采用者圈之外的用户进行广泛部署之前，建议推出用户通信和培训。 这将有助于推动人们对 Office、Windows 或其他业务线应用和服务的新功能的使用方式的所需更改。 为提供帮助，我们通过 Microsoft FastTrack 提供免费在线培训。 此外，我们还发布了免费示例通信计划和日程表，以及电子邮件、社交和 Intranet 模板来帮助推出 Windows 10。 作为 Microsoft 365 或 Office 365 组织，你的组织也可能符合资格并可直接支持。
+**[步骤 8：用户通信和培训](https://aka.ms/mdd8)** 最后一步对于推动使用新功能来增强团队合作、通信、安全等至关重要。 在针对早期采用者圈之外的用户进行广泛部署之前，建议推出用户通信和培训。 这将有助于推动人们对 Office、Windows 或其他业务线应用和服务的新功能的使用方式的所需更改。 为提供帮助，我们通过 Microsoft FastTrack 提供免费在线培训。 此外，我们还发布了免费示例通信计划和日程表，以及电子邮件、社交和 Intranet 模板来帮助推出 Windows 10。 作为 Microsoft 365 或 Office 365 组织，你的组织可能也有资格获得直接支持。
 
 ## <a name="next-step"></a>后续步骤
 
-现在你已了解 Windows 10 和 Office 365 专业增强版的新增功能和不同之处，而且我们已经演示了建议的部署过程轮。 既然已初步了解有关切换到 Windows 10 和 Office 365 专业增强版的端到端指导和可用工具，那就开始行动吧。
+至此，你已了解 Windows 10 和 Microsoft 365 企业应用版的新变化，我们也已分步介绍了建议的部署流程轮。 对转换到 Windows 10 和 Microsoft 365 企业应用版的端到端指导和工具有了这样的初步了解后，那就开始迁移吧。
 
-## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[步骤 1：设备和应用就绪情况](https://aka.ms/mdd1)
+## <a name="step-1-device-and-app-readiness"></a>[步骤 1：设备和应用就绪情况](https://aka.ms/mdd1)
 

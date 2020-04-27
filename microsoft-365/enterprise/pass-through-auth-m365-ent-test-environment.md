@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的传递身份验证。
-ms.openlocfilehash: 4f9941b017f00b40a6ae7e893211131cae51c611
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8a9a8847d79e1d114f0ddfb4843cbb7b9f9f0d4c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066416"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631413"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的传递身份验证
 
@@ -35,8 +35,8 @@ ms.locfileid: "42066416"
   
 此测试环境的设置分为以下两个阶段：
 
-1.  通过密码哈希同步创建 Microsoft 365 模拟企业测试环境。
-2.  在 APP1 上对 Azure AD Connect 进行传递身份验证配置。
+1.    通过密码哈希同步创建 Microsoft 365 模拟企业测试环境。
+2.    在 APP1 上对 Azure AD Connect 进行传递身份验证配置。
     
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ ms.locfileid: "42066416"
 此配置包括： 
   
 - Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域周期性同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域定期同步到 Microsoft 365 订阅的 Azure AD 租户。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>阶段 2：在 APP1 上对 Azure AD Connect 进行传递身份验证配置
 
@@ -60,25 +60,25 @@ ms.locfileid: "42066416"
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>在 APP1 上配置 Azure AD Connect
 
-1.  在 [Azure 门户](https://portal.azure.com)中，使用全局管理员帐户进行登录，然后使用 TESTLAB\User1 帐户连接到 APP1。
+1.    在 [Azure 门户](https://portal.azure.com)中，使用全局管理员帐户进行登录，然后使用 TESTLAB\User1 帐户连接到 APP1。
 
-2.  在 APP1 的桌面上，运行 Azure AD Connect。
+2.    在 APP1 的桌面上，运行 Azure AD Connect。
 
-3.  在“**欢迎页**”上，单击“**配置**”。
+3.    在“**欢迎页**”上，单击“**配置**”。
 
-4.  在“其他任务”页面上，依次单击“**更改用户登录**”和“**下一步**”。
+4.    在“其他任务”页面上，依次单击“**更改用户登录**”和“**下一步**”。
 
-5.  在“**连接到 Azure AD**”页面上，键入全局管理员帐户凭据，然后单击“**下一步**”。
+5.    在“**连接到 Azure AD**”页面上，键入全局管理员帐户凭据，然后单击“**下一步**”。
 
-6.  在“**用户登录**”页面上，单击“**传递身份验证**”，然后单击“**下一步**”。
+6.    在“**用户登录**”页面上，单击“**传递身份验证**”，然后单击“**下一步**”。
 
-7.  在“**准备配置**”页面上，单击“**配置**”。
+7.    在“**准备配置**”页面上，单击“**配置**”。
 
-8.  在“**配置完成**”页面上，单击“**退出**”。
+8.    在“**配置完成**”页面上，单击“**退出**”。
 
-9.  在 Azure 门户的左窗格中，单击“**Azure Active Directory > Azure AD Connect**”。请验证**传递身份验证**功能的状态为“**已启用**”。
+9.    在 Azure 门户的左窗格中，单击“**Azure Active Directory > Azure AD Connect**”。请验证**传递身份验证**功能的状态为“**已启用**”。
 
-10. 单击“**传递身份验证**”。“**传递身份验证**”窗格中会列出身份验证代理所安装到的服务器。APP1 应该会出现在该列表中。关闭“**传递身份验证**”窗格。
+10.    单击“**传递身份验证**”。“**传递身份验证**”窗格中会列出身份验证代理所安装到的服务器。APP1 应该会出现在该列表中。关闭“**传递身份验证**”窗格。
 
 接下来，测试能否使用 User1 帐户的用户名 <strong>user1@testlab.</strong>\<公共域名> 登录你的订阅。
 
@@ -95,7 +95,7 @@ ms.locfileid: "42066416"
 此配置包括：
 
 - 包含已注册 DNS 域 testlab.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以便处理你的 Microsoft 365 或 Office 365 订阅的 Azure AD 租户所发起的传递身份验证请求。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以处理 Microsoft 365 订阅的 Azure AD 租户发出的直通身份验证请求。
 
 ## <a name="next-step"></a>后续步骤
 

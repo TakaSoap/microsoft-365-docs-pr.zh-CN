@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成适用于非企业组织的 Microsoft 365 企业版基础结构的简化部署阶段。
-ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638256"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>适用于非企业组织的 Microsoft 365 企业版基础结构
 
@@ -31,14 +31,14 @@ ms.locfileid: "42612642"
 
 Microsoft 为小型非企业组织提供了 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。 但是，你可能出于某些原因需要使用 Microsoft 365 企业版，例如：
 
-- 你的组织需要超过 300 个 Microsoft 365 许可证，而 Microsoft 365 商业版的最大许可证数量为 300 个。
-- 你的组织需要高级生产力、语音、安全性和分析功能，这些功能是 Microsoft 365 商业版所不具备的。
+- 组织需要或将需要超过 300 个 Microsoft 365 许可证，300 个是 Microsoft 365 商业版的上限。
+- 组织需要 Microsoft 365 商业版没有的高级生产力、语音、安全性和分析功能。
 
 本文将指导你完成适用于非企业组织的 Microsoft 365 企业版基础结构的简化部署。
 
 ## <a name="first-set-up-your-subscription"></a>首先，设置你的订阅
 
-你必须为订阅设置域名系统 (DNS) 域。 如果你已经拥有 Office 365 订阅，则应该已完成此步骤。 如果没有，请按照[将域添加到 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide) 中的说明执行操作。
+你必须为订阅设置域名系统 (DNS) 域。 如果已有 Microsoft 365 订阅，应该已完成此步骤。 如果没有，请按照[将域添加到 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide) 中的说明执行操作。
 
 接下来，你需要为 Microsoft 365 配置其他安全性。 请按照[配置增强的安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)中的说明执行操作。
 
@@ -213,28 +213,28 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 | ![批量许可服务中心](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 批量许可服务中心（它为新安装的 Windows 10 企业版提供映像）和 Windows Update for Business 服务（它提供最新的更新）。 |
 |||
 
-## <a name="phase-4-office-365-proplus"></a>阶段 4：Office 365 专业增强版
+## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>第 4 阶段：Microsoft 365 企业应用版
 
-Microsoft 365 企业版包括 Office 365 专业增强版，即 Microsoft Office 的订阅版本。 与 Office 2016 或 Office 2019 一样，Office 365 专业增强版也直接安装在客户端设备上。 但是，Office 365 专业增强版会定期接收包含新功能的更新。 有关详细信息，请参阅[关于企业中的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企业版包括 Microsoft 365 企业应用版（即订阅版 Microsoft Office）。 与 Office 2016 或 Office 2019 一样，Microsoft 365 企业应用版直接安装在客户端设备上。 不同之处在于，Microsoft 365 企业应用版定期接收包含新功能的更新。 有关详细信息，请参阅[关于企业中的 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
-对于非企业组织，请在设备（包括 Windows、iOS 和 Android 设备）上手动安装 Office 365 专业增强版。 这可以作为准备使用新设备的一部分来完成，也可以由用户在载入过程中完成。
+对于非企业组织，请在设备（包括 Windows、iOS 和 Android 设备）上手动安装 Microsoft 365 企业应用版。 这可以作为准备使用新设备的一部分来完成，也可以由用户在载入过程中完成。
 
 在任何一种情况下，管理员或用户都需要登录 Office 365 门户：https://portal.office.com。 在“**Microsoft Office 家庭版**”选项卡上，单击“**安装 Office**”并逐步完成安装过程。
 
-安装它的每台计算机每月都会下载 Office 365 专业增强版的功能更新。 在非企业组织中，通常无需设置基础结构即可分发 Office 365 专业增强版更新。 
+安装它的每台计算机每月都会下载 Microsoft 365 企业应用版的功能更新。 在非企业组织中，通常无需设置用于分发 Microsoft 365 企业应用版更新的基础结构。 
 
 ### <a name="your-configuration-so-far"></a>你的当前配置
 
-以下是 Office 365 专业增强版阶段的可视化摘要，其中突出显示了新元素。
+以下是 Microsoft 365 企业应用版阶段的可视化摘要，其中突出显示了新元素。
 
-![“Office 365 专业增强版”阶段之后的组织](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![Microsoft 365 企业应用版阶段后的组织](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-新的和突出显示的 Office 365 专业增强版元素包括：
+新的和突出显示的 Microsoft 365 企业应用版元素包括：
  
 |||
 |:------:|:-----|
-| ![设备上安装的 Office 365 专业增强版](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | 设备上安装的 Office 365 专业增强版，以本地笔记本电脑为例。 |
-| ![Office 365 专业增强版的 Office 内容交付网络 (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 专业增强版的 Office 内容交付网络 (CDN)，设备可以通过它访问 Office 365 专业增强版更新。 |
+| ![设备上安装的 Microsoft 365 企业应用版](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | 设备上安装的 Microsoft 365 企业应用版（以本地笔记本电脑为例）。 |
+| ![Microsoft 365 企业应用版的 Office 内容分发网络 (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Microsoft 365 企业应用版的 Office 内容分发网络 (CDN)，设备访问它以获取 Microsoft 365 企业应用版更新。 |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>阶段 5：移动设备管理
@@ -312,14 +312,14 @@ Microsoft 365 企业版具有许多信息保护功能，让你能够通过应用
 
 有关详细信息，请参阅 [Microsoft 365 分类类型](infoprotect-configure-classification.md#microsoft-365-classification-types)。
 
-如果你使用具有权限的敏感度标签，则可能必须创建其他 Office 365 安全组，以定义允许谁对已应用敏感度标签的电子邮件和文档执行哪些操作。 
+如果使用有权限的敏感度标签，可能需要创建其他安全组，以定义允许谁对已应用敏感度标签的电子邮件和文档执行哪些操作。 
 
 例如，你需要创建一个“研发”敏感度标签来保护研发团队的电子邮件和文档。 你确定：
 
 - 研发人员必须具有更改带“研发”敏感度标签文档的权限。
 - 非研发员工只需具有查看带“研发”敏感度标签文档的权限。 
 
-这意味着你需要创建和管理两个附加 Office 365 组：
+也就是说，需要创建和管理两个附加 Microsoft 365 组：
 
 - 研发-全部
 - 研发-查看
@@ -388,7 +388,7 @@ Microsoft 365 企业版具有许多信息保护功能，让你能够通过应用
 
 1. 使用其用户帐户凭据登录其设备。
 2. 使用浏览器登录 Office 365 门户：https://portal.office.com。
-3. 在“**Office 365 家庭版**”选项卡中，单击“**安装 Office**”以在设备上安装 Office 365 专业增强版。
+3. 在“Office 365 主页”**** 选项卡中，单击“安装 Office”****，以在设备上安装 Microsoft 365 企业应用版。
 
 ## <a name="end-results"></a>结果
 
@@ -405,7 +405,7 @@ Microsoft 365 企业版具有许多信息保护功能，让你能够通过应用
   - 条件-访问-排除
   - 相应的 AD DS 或 Azure AD 安全组，它们也是“基线”、“敏感”和“高度管控”Azure AD 组的成员 
   - 工作组、部门和区域组
-  - 敏感度标签 Office 365 组（根据需要）
+  - 敏感度标签 Microsoft 365 组（根据需要）
 - Azure AD 登录条件访问策略，它们使用“基线”、“敏感”、“高度管控”和“条件-访问-排除”Azure AD 组。
 - Intune 应用程序和设备合规性策略。
 - 自定义敏感信息类型（根据需要）。
@@ -429,11 +429,11 @@ Microsoft 365 企业版具有许多信息保护功能，让你能够通过应用
    - 已许可
    - 相应的 AD DS 或 Azure AD 安全组，它们也是“基线”、“敏感”和“高度管控”Azure AD 条件访问策略组的成员 
    - 相应的工作组、部门和区域组
-   - 敏感度标签 Office 365 组（根据需要）
+   - 敏感度标签 Microsoft 365 组（根据需要）
 - Windows 10 企业版设备：
    - 已加入 Azure AD 租户（仅限云）或已同时加入 Azure AD 租户和 AD DS 域（混合）。
    - 使用最新的 Windows 10 企业版产品改进和安全增强功能进行自动更新。
-   - 已安装 Office 365 专业增强版，它使用最新的 Office 产品改进和安全增强功能进行自动更新。
+   - 已安装 Microsoft 365 企业应用版，它自动接收包含最新 Office 产品改进和安全增强功能的更新。
    - 已在 Intune 中注册并受 Intune 设备合规性策略和应用保护策略的制约。
 
 ## <a name="next-step"></a>后续步骤

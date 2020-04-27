@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 的自定义域中使用 DKIM 发送电子邮件，2048 位，1024 位，步骤，工作原理，SPF，DMARC
+title: 在 Microsoft 365 中对自定义域内的电子邮件使用 DKIM, 2048 位, 1024 位, 步骤, 工作原理, SPF, DMARC
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,27 +15,27 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
-description: 摘要： 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 4df887fc7db0ef968cc06d0b1b680b9bd91686ec
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+description: 摘要：本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
+ms.openlocfilehash: 17cfbcbe4f7279e8142e5102fc2d1f61c53d8ddc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608146"
+ms.locfileid: "43631105"
 ---
-# <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件
+# <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
- **摘要：** 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Office 365，从而确保目标电子邮件系统信任从自定义域向出站方向发送的邮件。
+ **摘要：** 本文介绍了如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的出站邮件。
 
 除了使用 SPF 和 DMARC 之外，还应使用 DKIM 来帮助防止欺骗程序发送看上去发送自您的域的邮件。 可以使用 DKIM 将数字签名添加到出站电子邮件的邮件头中。 这听起来这很复杂，其实不然。 配置 DKIM 时，您将使用加密身份验证授权您的域关联到电子邮件或对电子邮件进行签名。 接收来自域的电子邮件的电子邮件系统可以使用此数字签名来帮助确定他们收到的传入电子邮件是否合法。
 
 基本上，您可以使用私钥来加密域的传出电子邮件中的邮件头。 向域 DNS 记录发布公钥，然后接收服务器可用来解码签名。 它们使用公钥来确认邮件确实是你发送的，而不是其他人*假冒*你的域发送的。
 
-Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味着无需执行任何操作，即可为任意初始域名（例如 litware.onmicrosoft.com）。 有关域的详细信息，请参阅[关于域的常见问题](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
+Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意味着无需执行任何操作，即可为任意初始域名（例如 litware.onmicrosoft.com）。 有关域的详细信息，请参阅[关于域的常见问题](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
 
-你也可以选择对自己的自定义域不执行任何有关 DKIM 的操作。 如果你没有为自定义域设置 DKIM，Office 365 会创建私钥和公钥对，启用 DKIM 签名，然后为自定义域配置 Office 365 默认策略。 虽然这足以覆盖大多数 Office 365 客户，但在以下情况下，仍应为自定义域手动配置 DKIM：
+你也可以选择对自己的自定义域不执行任何有关 DKIM 的操作。 如果你没有为自定义域设置 DKIM，Microsoft 365 会创建私钥和公钥对，启用 DKIM 签名，然后为自定义域配置 Microsoft 365 默认策略。 虽然这对于大多数客户来说已经足够了，但仍应在以下情况下为自定义域手动配置 DKIM：
 
-- 在 Office 365 中拥有多个自定义域
+- 在 Microsoft 365 中有多个自定义域
 
 - 您同时要设置 DMARC（推荐）
 
@@ -47,23 +47,23 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 
 本文内容：
 
-- [DKIM 如何能够比 SPF 更有效地在 Office 365 中防止恶意欺骗发生](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
+- [DKIM 如何能够比单独使用 SPF 更有效地防止恶意欺骗](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
 - [手动将 1024 位密钥升级到 2048 位 DKIM 加密密钥](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
-- [在 Office 365 中手动设置 DKIM 需要执行的步骤](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
+- [手动设置 DKIM 需要执行的步骤](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
-- [在 Office 365 中为多个自定义域配置 DKIM 的具体步骤](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
+- [为多个自定义域配置 DKIM 的具体步骤](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
-- [在 Office 365 中为自定义域禁用 DKIM 签名策略](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
+- [为自定义域禁用 DKIM 签名策略](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
 
-- [DKIM 和 Office 365 的默认行为](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)
+- [DKIM 和 Microsoft 365 的默认行为](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)
 
 - [设置 DKIM 以便第三方服务可以代表自定义域发送或假冒电子邮件](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
 
-- [后续步骤：为 Office 365 设置 DKIM 之后](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
+- [后续步骤：为 Microsoft 365 设置 DKIM 后](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
-## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>DKIM 如何能够比 SPF 更有效地防止 Office 365 中的恶意欺骗现象
+## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>DKIM 如何能够比单独使用 SPF 更有效地防止恶意欺骗
 <a name="HowDKIMWorks"> </a>
 
 虽然 SPF 将信息添加到邮件信封中，但实际上是 DKIM 在邮件头中加密签名。当你转发邮件时，转发服务器可能会截除邮件信封部分。由于数字签名作为电子邮件头的一部分与电子邮件同时存在，因此即使当邮件进行了转发，DKIM 也仍在运行，如以下示例所示。
@@ -97,7 +97,7 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
       New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True
       ```
 
-   请保持与 Office 365 的连接，以*验证*该配置。
+与 Microsoft 365 保持连接，以*验证*配置。
 
 1. 运行以下命令：
 
@@ -108,16 +108,16 @@ Office 365 会自动为其初始“onmicrosoft.com”域设置 DKIM。 这意味
 > [!TIP]
 > 这一新的 2048 位密钥将在 RotateOnDate 生效，在过渡期间则使用 1024 位密钥发送电子邮件。 四天后，可以使用 2048 位秘钥再次进行测试（即一旦轮换对第二个选择器生效）。
 
-如果你想要轮换到第二个选择器，可以 a) 让 Office 365 服务轮换选择器，并在未来 6 个月内升级到 2048 位，或 b) 4 天后升级到 2048 位，然后确认已经使用该位数，使用上面列出的相应 cmdlet 手动轮换第二个选择器秘钥。
+若要轮换到第二个选择器，可以采用下列方法：a) 让 Microsoft 365 服务轮换选择器，并在未来 6 个月内升级到 2048 位，或 b) 在确认使用 2048 位 4 天后，使用上面列出的相应 cmdlet 手动轮换第二个选择器密钥。
 
-## <a name="steps-you-need-to-do-to-manually-set-up-dkim-in-office-365"></a>在 Office 365 中手动设置 DKIM 需要执行的步骤
+## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>手动设置 DKIM 需要执行的步骤
 <a name="SetUpDKIMO365"> </a>
 
 要配置 DKIM，您需要完成以下步骤：
 
 - [在 DNS 中发布自定义域的两条 CNAME 记录](use-dkim-to-validate-outbound-email.md#Publish2CNAME)
 
-- [在 Office 365 中为自定义域启用 DKIM 签名](use-dkim-to-validate-outbound-email.md#EnableDKIMinO365)
+- [为自定义域启用 DKIM 签名](use-dkim-to-validate-outbound-email.md#EnableDKIMinO365)
 
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>在 DNS 中发布自定义域的两条 CNAME 记录
 <a name="Publish2CNAME"> </a>
@@ -131,7 +131,7 @@ New-DkimSigningConfig -DomainName <domain> -Enabled $false
 Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
-Office 365 使用你创建的两条记录执行自动密钥轮替。如果在 Office 365 中除了初始域外你还预配了自定义域，必须为额外配置的每个域发布两条 CNAME 记录。因此，如果有两个域，就必须发布两条额外的 CNAME 记录，依此类推。
+Microsoft 365 使用你创建的两条记录来执行自动密钥轮换。 如果在 Microsoft 365 中除了初始域外你还预配了自定义域，必须为每个附加域发布两条 CNAME 记录。 因此，如果你有两个域，就必须发布两条额外的 CNAME 记录，依此类推。
 
 CNAME 记录使用以下格式。
 
@@ -139,56 +139,56 @@ CNAME 记录使用以下格式。
 > 如果你是我们的 GCC High 客户，我们会以不同方式计算 _domainGuid_！ 不是查找你的 _initialDomain_ 来计算 _domainGuid_，而是直接从自定义域计算。 例如，如果自定义域名为“contoso.com”，则 domainGuid 将变为“contoso-com”，任何句点都将替换为短划线。 因此，无论 initialDomain 指向什么 MX 记录，你都将始终使用上述方法来计算要在 CNAME 记录中使用的 domainGuid。
 
 ```text
-Host name:          selector1._domainkey
-Points to address or value: selector1-<domainGUID>._domainkey.<initialDomain>
+Host name:            selector1._domainkey
+Points to address or value:    selector1-<domainGUID>._domainkey.<initialDomain>
 TTL:                3600
 
-Host name:          selector2._domainkey
-Points to address or value: selector2-<domainGUID>._domainkey.<initialDomain>
+Host name:            selector2._domainkey
+Points to address or value:    selector2-<domainGUID>._domainkey.<initialDomain>
 TTL:                3600
 ```
 
 其中：
 
-- 对于 Office 365，选择器将始终为“selector1”或“selector2”。
+- 对于 Microsoft 365，选择器始终为“selector1”或“selector2”。
 
 - _domainGUID_ 与显示在 mail.protection.outlook.com 前面的自定义域的自定义 MX 记录中的 _domainGUID_ 相同。 例如，在域 contoso.com 的以下 MX 记录中，_domainGUID_ 为 contoso com：
 
-  > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
+  > contoso.com。  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
-- _initialDomain_ 是你注册 Office 365 时所使用的域。 初始域始终以 onmicrosoft.com 结尾。 有关确定初始域的信息，请参阅[关于域的常见问题](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
+- _initialDomain_ 是你在注册 Microsoft 365 时所使用的域。 初始域始终以 onmicrosoft.com 结尾。 有关确定初始域的信息，请参阅[关于域的常见问题](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
 
 例如，如果你有一个初始域 cohovineyardandwinery.onmicrosoft.com，以及两个自定义域 cohovineyard.com 和 cohowinery.com，那么你需要为额外配置的每个域设置两条 CNAME 记录，总共四条 CNAME 记录。
 
 ```text
-Host name:          selector1._domainkey
-Points to address or value: selector1-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+Host name:            selector1._domainkey
+Points to address or value:    selector1-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 
-Host name:          selector2._domainkey
-Points to address or value: selector2-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+Host name:            selector2._domainkey
+Points to address or value:    selector2-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 
-Host name:          selector1._domainkey
-Points to address or value: selector1-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+Host name:            selector1._domainkey
+Points to address or value:    selector1-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 
-Host name:          selector2._domainkey
-Points to address or value: selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+Host name:            selector2._domainkey
+Points to address or value:    selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 ```
 
 > [!NOTE]
 > 创建第二条记录非常重要，但创建时仅可使用其中一个选择器。 实际上，第二个选择器可能指向尚未创建的地址。 我们仍然建议创建第二条 CNAME 记录，因为你的密钥轮替是无缝的，无需亲自执行任何手动步骤。
 
-### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>在 Office 365 中为自定义域启用 DKIM 签名
+### <a name="enable-dkim-signing-for-your-custom-domain"></a>为自定义域启用 DKIM 签名
 <a name="EnableDKIMinO365"> </a>
 
-在 DNS 中发布了 CNAME 记录后，您就可以通过 Office 365 启用 DKIM 签名。 为此，可以使用 Microsoft 365 管理中心或 PowerShell。
+在 DNS 中发布 CNAME 记录后，就可以通过 Microsoft 365 启用 DKIM 签名了。 为此，可以使用 Microsoft 365 管理中心或 PowerShell。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>使用管理中心为自定义域启用 DKIM 签名的具体步骤
 
-1. 使用您的工作或学校帐户[登录 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用工作或学校帐户[登录 Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 选择左上角的应用启动器图标，然后选择“**管理员**”。
 
@@ -216,11 +216,11 @@ TTL:                3600
    Set-DkimSigningConfig -Identity contoso.com -Enabled $true
    ```
 
-#### <a name="to-confirm-dkim-signing-is-configured-properly-for-office-365"></a>确认已为 Office 365 正确配置 DKIM 签名
+#### <a name="to-confirm-dkim-signing-is-configured-properly-for-microsoft-365"></a>确认是否已为 Microsoft 365 正确配置 DKIM 签名的具体步骤
 
 请等待几分钟，然后按以下步骤操作，确认是否已正确配置 DKIM。这样就有时间将域的 DKIM 信息分布到整个网络了。
 
-- 从 Office 365 中启用了 DKIM 的域帐户发送一封邮件到其他电子邮件帐户（如 outlook.com 或 Hotmail.com）。
+- 从 Microsoft 365 中已启用 DKIM 的域内的帐户向其他电子邮件帐户（如 outlook.com 或 Hotmail.com）发送邮件。
 
 - 不要将 aol.com 帐户用于测试目的。如果 SPF 检查通过，AOL 可能会跳过 DKIM 检查。这会使测试无效。
 
@@ -239,15 +239,15 @@ TTL:                3600
 
 - 查找身份验证结果标头。尽管每个接收服务用于标记传入邮件的格式稍有不同，但结果应都包括以下类似内容：**DKIM=pass** 或 **DKIM=OK**
 
-## <a name="to-configure-dkim-for-more-than-one-custom-domain-in-office-365"></a>在 Office 365 中为多个自定义域配置 DKIM 的具体步骤
+## <a name="to-configure-dkim-for-more-than-one-custom-domain"></a>为多个自定义域配置 DKIM 的具体步骤
 <a name="DKIMMultiDomain"> </a>
 
-如果你在将来决定添加其他自定义域，并且想要为新域启用 DKIM，必须为每个域完成本文中介绍的步骤。尤其需要完成[在 Office 365 中手动设置 DKIM 需要执行的操作](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)中的所有步骤。
+如果你在将来决定添加其他自定义域，并且想要为新域启用 DKIM，必须为每个域完成本文中介绍的步骤。 具体而言，完成[手动设置 DKIM 需要执行的操作](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)中的所有步骤。
 
-## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain-in-office-365"></a>在 Office 365 中为自定义域禁用 DKIM 签名策略
+## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>为自定义域禁用 DKIM 签名策略 
 <a name="DisableDKIMSigningPolicy"> </a>
 
-禁用签名策略不会完全禁用 DKIM。一段时间后，Office 365 将自动为您的域应用默认的 Office 365 策略。有关详细信息，请参阅 [DKIM 和 Office 365 的默认行为](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)。
+禁用签名策略不会完全禁用 DKIM。 一段时间后，Microsoft 365 会自动为你的域应用默认策略。 有关详细信息，请参阅 [DKIM 和 Microsoft 365 的默认行为](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)。
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>使用 Windows PowerShell 禁用 DKIM 签名策略
 
@@ -279,14 +279,14 @@ TTL:                3600
    Set-DkimSigningConfig -Identity $p[0].Identity -Enabled $false
    ```
 
-## <a name="default-behavior-for-dkim-and-office-365"></a>DKIM 和 Office 365 的默认行为
+## <a name="default-behavior-for-dkim-and-microsoft-365"></a>DKIM 和 Microsoft 365 的默认行为
 <a name="DefaultDKIMbehavior"> </a>
 
-如果不启用 DKIM，Office 365 将自动为您的默认域创建 1024 位 DKIM 公钥，以及我们在数据中心内部存储的关联私钥。 默认情况下，Office 365 为没有合适策略的域使用默认签名配置。 这意味着，如果您未自行设置 DKIM，Office 365 将使用其默认策略，以及其为域启用 DKIM 所创建的密钥。
+如果你不启用 DKIM，Microsoft 365 会自动为你的默认域创建 1024 位 DKIM 公钥，以及我们存储在数据中心内部的关联私钥。 默认情况下，Microsoft 365 对没有适当策略的域使用默认签名配置。 也就是说，如果你自己没有设置 DKIM，Microsoft 365 会使用它的默认策略和它创建的密钥来为你的域启用 DKIM。
 
-此外，如果在启用 DKIM 签名之后禁用它，一段时间后，Office 365 将自动为域应用 Office 365 默认策略。
+此外，如果你在启用 DKIM 签名后禁用它，一段时间后，Microsoft 365 会自动为你的域应用默认策略。
 
-在以下示例中，假定 fabrikam.com 的 DKIM 已由 Office 365（而不是域管理员）启用。这表明 DNS 中没有所需的 CNAME。来自此域的电子邮件的 DKIM 签名如下所示：
+在以下示例中，假设 fabrikam.com 的 DKIM 是由 Microsoft 365（而不是域管理员）启用。 这表明所需的 CNAME 在 DNS 中不存在。 来自此域的电子邮件的 DKIM 签名如下所示：
 
 ```text
 From: Second Example <second.example@fabrikam.com>
@@ -297,7 +297,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-在此示例中，主机名和域包含在 fabrikam.com 的 DKIM 签名由域管理员启用情况下 CNAME 将指向的值。 发送自 Office 365 的每封邮件将最终进行 DKIM 签名。 如果您自行启用 DKIM，该域将与发件人地址（此例中为 fabrikam.com）中的域相同。 如果不自行启用，该域将不同于发件人地址中的域，而是会使用组织的初始域。 有关确定初始域的信息，请参阅[关于域的常见问题](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
+在此示例中，主机名和域包含在 fabrikam.com 的 DKIM 签名由域管理员启用情况下 CNAME 将指向的值。 最终，每封发送自 Microsoft 365 的邮件都会进行 DKIM 签名。 如果您自行启用 DKIM，该域将与发件人地址（此例中为 fabrikam.com）中的域相同。 如果不自行启用，该域将不同于发件人地址中的域，而是会使用组织的初始域。 有关确定初始域的信息，请参阅[关于域的常见问题](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>设置 DKIM 以便第三方服务可以代表自定义域发送或假冒电子邮件
 <a name="SetUp3rdPartyspoof"> </a>
@@ -327,7 +327,7 @@ Return-Path: <communication@bulkemailprovider.com>
 
    > d=**contoso.com**
 
-## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>后续步骤：为 Office 365 设置 DKIM 之后
+## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>后续步骤：为 Microsoft 365 设置 DKIM 后
 <a name="DKIMNextSteps"> </a>
 
-尽管 DKIM 旨在帮助防止欺骗，但 DKIM 与 SPF 和 DMARC 协同工作效果更佳。 设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。 有关 SPF 的简要介绍以及如何快速配置的信息，请参阅[在 Office 365 中设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 有关 Office 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请开始阅读[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)。 然后，请参阅[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)。 [反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Office 365 进行 DKIM 检查使用的语法和标头字段。
+尽管 DKIM 旨在帮助防止欺骗，但 DKIM 与 SPF 和 DMARC 协同工作效果更佳。 设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。 若要了解 SPF 的快速简介及其快速配置方法，请参阅[在 Microsoft 365 中设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 若要更深入地了解 Microsoft 365 如何使用 SPF，或要了解故障排除或非标准部署（如混合部署），请从 [Microsoft 365 如何使用发件人策略框架 (SPF) 以防欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)入手。 接下来，请参阅[使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)。 [反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Microsoft 365 用来执行 DKIM 检查的语法和头字段。

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解组织中部署 Microsoft 365 企业版底层基础结构（也称为核心部署）的主要阶段。
-ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 287afd5e5f75bb6547e1898877f3d1c65ebfb9a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153840"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638244"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 企业版底层基础结构
 
@@ -33,9 +33,9 @@ ms.locfileid: "43153840"
 |![阶段 1：网络](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[阶段 1：网络](networking-infrastructure.md)| 网络已经过优化，以便访问 Microsoft 365 基于云的服务。 |
 |![阶段 2：标识](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[阶段 2：标识](identity-infrastructure.md)| 管理员帐户受到保护，用户和组经过同步，并且采用强用户身份验证。 |
 |![阶段 3：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[阶段 3：Windows 10 企业版](windows10-infrastructure.md)| 现有基于 Windows 的计算机可以升级至 Windows 10 企业版，并且新设备已安装了 Windows 10 企业版。 |
-|![阶段 4：Office 365 专业增强版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[阶段 4：Office 365 专业增强版](office365proplus-infrastructure.md)| 现有 Microsoft Office 用户可以升级到 Office 365 专业增强版。 |
+|![第 4 阶段：Microsoft 365 企业应用版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[第 4 阶段：Microsoft 365 企业应用版](office365proplus-infrastructure.md)| 现有 Microsoft Office 用户可以升级到 Microsoft 365 企业应用版。 |
 |![阶段 5：移动设备管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[阶段 5：移动设备管理](mobility-infrastructure.md)| 可以注册和管理你的设备。 |
-|![阶段 6：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[阶段 6：信息保护](infoprotect-infrastructure.md)| Office 365 安全功能已启用，你的标签和策略已准备好保护文档和电子邮件。 |
+|![阶段 6：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[阶段 6：信息保护](infoprotect-infrastructure.md)| Microsoft 365 安全功能已启用，且标签和策略可用于保护文档和电子邮件。 |
 
 将从最基本的阶段（网络和标识）开始，然后创建基础结构设置和组层，以：
 
@@ -90,9 +90,9 @@ ms.locfileid: "43153840"
 |:-------|:-----|
 | 标识 | 帐户同步和适用于基于条件访问策略的组。 |
 | Windows 10 企业版 | 将运行 Windows 7 或 Windows 8.1 的计算机自动升级到相应的 Windows 10 企业版的组。 |
-| Office 365 专业增强版 | 为使用 Office 2010、Office 2013 或 Office 2016 的用户自动部署 Office 365 的组。 |
+| Microsoft 365 企业应用版 | 用于为使用 Office 2010、Office 2013 或 Office 2016 的用户自动部署 Microsoft 365 企业应用版的组。 |
 | 移动设备管理 | 适合于设备注册和基于设备的条件访问策略的组。 |
-| 信息保护 | Office 365 敏感度标签组。 |
+| 信息保护 | 敏感度标签组。 |
 
 准备好为用户部署此基础结构的元素时，你可以：
 
@@ -100,11 +100,11 @@ ms.locfileid: "43153840"
 |:-------|:-----|
 | 标识 | 将用户帐户添加到基于标识的条件访问策略组。 |
 | Windows 10 企业版 | 将帐户添加到组，以便为使用 Windows 7 或 Windows 8.1 的用户自动部署 Windows 10 企业版。 |
-| Office 365 专业增强版 | 将用户帐户添加到组，以便为使用 Office 2010、Office 2013 或 Office 2016 的用户自动部署 Office 365 的组。 |
+| Microsoft 365 企业应用版 | 向组添加用户帐户，以便为使用 Office 2010、Office 2013 或 Office 2016 的用户自动部署 Microsoft 365 企业应用版。 |
 | 移动设备管理 | 将帐户添加到适合于设备注册和基于设备的条件访问策略的组。 |
 | 信息保护 | 将用户帐户添加到敏感度标签组中。 |
 
-底层基础结构的阶段或元素完成、测试和试用之后，你可以为用户部署已安装的软件（例如 Windows 10 企业版和 Office 365 专业增强版）以及基于云的服务和保护（如设备注册和条件访问策略），以最适合你的业务目标和 IT 资源。
+在底层基础结构的阶段或元素经过完成、测试和试用后，你可以最适合你的业务目标和 IT 资源的方式，向用户推出已安装的软件（如 Windows 10 企业版和 Microsoft 365 企业应用版），以及基于云的服务和保护（如设备注册和条件访问策略）。
 
 ## <a name="deployment-and-project-management-strategies"></a>部署和项目管理策略
 
@@ -112,7 +112,7 @@ ms.locfileid: "43153840"
 
 ## <a name="deployment-for-non-enterprises"></a>针对非企业的部署
 
-如果你的组织规模较小，而 Microsoft 365 商业版不适合你，请参阅[针对非企业的部署](deploy-foundation-infrastructure-non-enterprises.md)以了解简化的部署方法。
+如果组织规模较小，但 Microsoft 365 商业版不适合你，请参阅[适用于非企业的部署](deploy-foundation-infrastructure-non-enterprises.md)，以了解简化的部署方法。
 
 
 ## <a name="next-step"></a>后续步骤

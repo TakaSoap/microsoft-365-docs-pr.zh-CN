@@ -20,18 +20,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Microsoft 365 测试环境配置联合身份验证。
-ms.openlocfilehash: 4796f8f2a7dc6757ccbcb3d608d72ad789d34e40
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b0aa967570c3d12554cdb273a8b39b8931af1fbd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067612"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634094"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>用于 Microsoft 365 测试环境的联合身份
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
-Office 365 支持联合身份验证。也就是说，Office 365 将连接的用户转到 Office 365 信任的联合身份验证服务器，而不是自己执行凭据验证。如果用户的凭据正确，联合身份验证服务器会颁发安全令牌，然后客户端将此令牌作为通过身份验证的证明发送给 Office 365。借助联合身份，可以为 Office 365 订阅以及高级身份验证和安全方案卸载和扩展身份验证。
+Microsoft 365 支持联合标识。也就是说，Microsoft 365 将连接用户转到 Microsoft 365 信任的联合身份验证服务器，而不是自己执行凭据验证。如果用户的凭据正确，联合身份验证服务器会颁发安全令牌，然后客户端将此令牌作为通过身份验证的证明发送给 Microsofte 365。借助联合标识，可以为 Microsoft 365 订阅以及高级身份验证和安全方案卸载和扩展身份验证。
   
 本文介绍了如何为 Microsoft 365 或 Office 365 测试环境配置联合身份验证，从而实现以下配置：
 
@@ -53,7 +53,7 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
     
 4. 创建自签名证书并配置 ADFS1 和 PROXY1。
     
-5. 为 Office 365 配置联合身份。
+5. 为 Microsoft 365 配置联合标识。
     
 > [!NOTE]
 > 无法使用 Azure 试用订阅配置此测试环境。 
@@ -67,11 +67,11 @@ Office 365 支持联合身份验证。也就是说，Office 365 将连接的用�
 此配置包括： 
   
 - Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
-- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域定期同步到 Microsoft 365 或 Office 365 订阅的 Azure AD 租户。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域定期同步到 Microsoft 365 订阅的 Azure AD 租户。
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>阶段 2：创建 AD FS 服务器
 
-AD FS 服务器在 Office 365 和 DC1 上托管的 corp.contoso.com 域中的帐户之间提供联合身份验证。
+AD FS 服务器在 Microsoft 365 和 DC1 上托管的 corp.contoso.com 域中的帐户之间提供联合身份验证。
   
 若要为 ADFS1 创建 Azure 虚拟机，请填写基础配置的订阅和资源组名称及 Azure 位置，然后在本地计算机上的 Azure PowerShell 命令提示符处运行下面这些命令。
   
@@ -349,11 +349,11 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 8. 在“结果”页上，单击“关闭”。********
 
     
-## <a name="phase-5-configure-office-365-for-federated-identity"></a>阶段 5：为 Office 365 配置联合身份
+## <a name="phase-5-configure-microsoft-365-for-federated-identity"></a>第 5 阶段：为 Microsoft 365 配置联合标识。
 
 通过 [Azure 门户](https://portal.azure.com)，使用 CORP\\User1 帐户凭据连接 APP1 虚拟机。
   
-按下面这些步骤操作，为 Azure AD Connect 和 Office 365 订阅配置联合身份验证：
+若要为 Azure AD Connect 和 Microsoft 365 订阅配置联合身份验证，请按照下面这些步骤操作：
   
 1. 在桌面上，双击“Azure AD Connect”****。
     
@@ -361,7 +361,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 3. 在“其他任务”页上，依次单击“更改用户登录”和“下一步”。************
     
-4. 在“连接到 Azure AD”页上，键入 Office 365 全局管理员帐户名称和密码，然后单击“下一步”。********
+4. 在“连接到 Azure AD”**** 页上，键入全局管理员帐户名和密码，然后单击“下一步”****。
     
 5. 在“用户登录”页上，依次单击“使用 AD FS 进行联合身份验证”和“下一步”。************
     
@@ -373,9 +373,9 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 9. 在“AD FS 服务帐户”页上，在“域用户名”中键入“CORP\\ADFS-Service”，在“域用户密码”中键入帐户密码，然后单击“下一步”。********************
     
-10. 在“Azure AD 域”页上的“域”中，选择之前在阶段 1 创建并添加到 Office 365订阅的域名，然后单击“下一步”。************
+10. 在“Azure AD 域”**** 页上的“域”**** 中，选择之前在第 1 阶段中创建并添加到订阅的域名，然后单击“下一步”****。
     
-11. 在“准备配置”页上，单击“配置”。********
+11. 在“**准备配置**”页面上，单击“**配置**”。
     
 12. 在“安装完成”页上，单击“验证”。********
     
@@ -389,7 +389,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 2. 对于登录凭据，请键入 **user1@**\<在阶段 1 创建的域>。 
     
-    例如，如果你的测试域是 **testlab.contoso.com**，请键入“user1@testlab.contoso.com”。按 TAB 或允许 Office 365 自动重定向。
+    例如，如果测试域是 **testlab.contoso.com**，你会键入“user1@testlab.contoso.com”。按 TAB 或允许 Microsoft 365 自动重定向你。
     
     现在应该可以看到“**你所用连接不是专用连接**”页。之所以会看到此页是因为你在 ADFS1 上安装了台式计算机无法验证的自签名证书。在联合身份验证的生产部署中，将使用受信任的证书颁发机构颁发的证书，你的用户将不会看到此页。
     
@@ -403,9 +403,9 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
     应该会看到“Microsoft Office 主页”页面。****
     
-此过程证明了 Office 365 试用订阅与 DC1 上托管的 AD DS corp.contoso.com 域进行了联合。下面介绍基本的身份验证过程：
+此过程证明了试用订阅与 DC1 上托管的 AD DS corp.contoso.com 域进行了联合。下面是身份验证流程的基本信息：
   
-1. 在登录帐户名称中使用在阶段 1 创建的联盟域后，Office 365 将浏览器重定向到联合身份验证服务 FQDN 和 PROXY1。
+1. 如果你在登录帐户名中使用在第 1 阶段中创建的联盟域，Microsoft 365 将浏览器重定向到联合身份验证服务 FQDN 和 PROXY1。
     
 2. PROXY1 向本地计算机发送虚构的公司登录页。
     
@@ -413,13 +413,13 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 4. ADFS1 使用 DC1 验证 CORP\\User1 和密码，然后向本地计算机发送安全令牌。
     
-5. 本地计算机向 Office 365 发送安全令牌。
+5. 本地计算机向 Microsoft 365 发送安全令牌。
     
-6. Office 365 验证安全令牌是否由 ADFS1 创建，通过验证后允许访问。
+6. Microsoft 365 验证安全令牌是否由 ADFS1 创建，并在验证通过后允许访问。
     
-现在，Office 365 试用订阅已配置了联合身份验证。可以将此开发/测试环境用于高级身份验证方案。
+现在，试用订阅已配置了联合身份验证。可以将此开发/测试环境用于高级身份验证方案。
   
 ## <a name="next-step"></a>后续步骤
 
-在 Azure 中准备好部署 Microsoft 365 或 Office 365 的生产就绪、高可用性联合身份验证时，请参阅[在 Azure 中为 Office 365 部署高可用性联合身份验证](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure)。
+如果准备好在 Azure 中为 Microsoft 365 或 Office 365 部署生产就绪、高可用性联合身份验证，请参阅[在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure)。
   

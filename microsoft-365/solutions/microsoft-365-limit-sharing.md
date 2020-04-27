@@ -14,12 +14,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: e6cce1102af793d38606b929951d20221eba4b12
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: ebeeefa61d9f4fc9fd77b417ccadfaa4308acb38
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604394"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632591"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -29,7 +29,7 @@ ms.locfileid: "42604394"
 
 |共享方法|说明|限制选项|
 |:-------------|:----------|:-------------|
-|[Office 365 组或团队](#office-365-group-or-team)|被授予加入 Microsoft Teams 团队或 Office 365 组的权限的用户可以编辑关联的 SharePoint 网站中的文件。|如果组或团队是专用的，则用于加入团队的共享邀请将会转到所有者那里以供其审批。 管理员可通过禁用来宾访问来阻止组织外部人员的访问。|
+|[Microsoft 365 组或团队](#microsoft-365-group-or-team)|如果被授予对 Microsoft Teams 团队或 Microsoft 365 组的访问权限，可以有权编辑关联的 SharePoint 网站中的文件。|如果组或团队是专用的，则用于加入团队的共享邀请将会转到所有者那里以供其审批。 管理员可通过禁用来宾访问来阻止组织外部人员的访问。|
 |[SharePoint 网站](#sharepoint-site)|可向用户授予对 SharePoint 网站的“所有者”、“成员”或“访问者”访问权限，他们将拥有对网站中文件的相应访问权限级别。|可限制网站权限，以便只有网站所有者可以共享网站。|
 |[与特定人员共享](#sharing-with-specific-people)|网站成员和拥有编辑权限的人员可以提供对文件和文件夹的直接权限，或通过使用*特定人员*链接进行共享。|可限制网站权限，以便只有网站所有者可以共享文件和文件夹。 在这种情况下，网站成员提供的直接访问和*特定人员*链接共享将会转到网站所有者那里以供其审批。|
 |[SharePoint 来宾共享](#sharepoint-guest-sharing)|SharePoint 网站所有者和成员可与组织外部的人员共享文件和文件夹。|可针对整个组织或单个网站禁用来宾共享。|
@@ -41,9 +41,9 @@ ms.locfileid: "42604394"
 
 若要了解组织中如何使用共享，请[运行文件和文件夹共享报告](https://docs.microsoft.com/sharepoint/sharing-reports)。
 
-## <a name="office-365-group-or-team"></a>Office 365 组或团队
+## <a name="microsoft-365-group-or-team"></a>Microsoft 365 组或团队
 
-如果想要限制 Office 365 组或 Microsoft Teams 团队中的共享，请务必将组或团队设为专用。 组织内部人员可以随时加入公共组或团队。 除非组或团队是专用的，否则无法在组织内限制团队或其文件的共享。
+若要限制 Microsoft 365 组或 Microsoft Teams 团队中的共享，请务必将组或团队设为私人。 组织内部人员可以随时加入公共组或团队。 除非组或团队是专用的，否则无法在组织内限制团队或其文件的共享。
 
 ### <a name="guest-sharing"></a>来宾共享
 
@@ -54,15 +54,15 @@ ms.locfileid: "42604394"
 2. 关闭“**在 Teams 中允许访客访问**”。
 3. 单击“**保存**”。
 
-如果想要阻止 Office 365 组中的来宾访问，可在 Microsoft 365 管理中心内关闭组来宾访问设置。
+若要阻止 Microsoft 365 组中的来宾访问，可以在 Microsoft 365 管理中心内禁用组来宾访问设置。
 
-关闭 Office 365 组中的来宾共享
+禁用 Microsoft 365 组中的来宾共享的具体步骤
 1. 在 Microsoft 365 管理中心中，单击“**设置**”，然后单击“**设置**”。
-2. 在“**服务**”选项卡上，单击“**Office 365 组**”。
+2. 在“服务”**** 选项卡上，单击“Microsoft 365 组”****。
 3. 取消选中“**允许组织外部的组成员访问组内容**”和“**允许组所有者将组织外部的人员添加到组**”复选框。
 4. 单击“**保存更改**”。
 
-    ![Microsoft 365 管理中心中的 Office 365 组共享设置的屏幕截图](../media/office-365-groups-guest-settings-off.png)
+    ![Microsoft 365 管理中心中内的 Microsoft 365 组共享设置的屏幕截图](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > 如果想要阻止特定组或团队的来宾共享，可使用 Microsoft PowerShell 来执行此操作。 有关详细信息，请参阅[阻止特定组中的来宾用户](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group)。
@@ -79,7 +79,7 @@ ms.locfileid: "42604394"
 
 ## <a name="sharepoint-site"></a>SharePoint 网站
 
-你可以将 SharePoint 网站共享的执行者限制为仅限网站所有者。 这将防止网站成员共享网站。 请记住，如果网站连接到了一个 Office 365 组，组成员可以邀请其他人加入该组，并且这些用户将拥有网站的访问权限。
+你可以将 SharePoint 网站共享的执行者限制为仅限网站所有者。 这将防止网站成员共享网站。 请注意，如果网站连接到了 Microsoft 365 组，组成员可以邀请其他人加入此组，这些用户将拥有网站访问权限。
 
 将网站共享的执行者限制为所有者
 1. 在网站中，单击齿轮图标，然后单击“**网站权限**”。

@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 了解当云服务成为你的 IT 产品的一部分时，规划和实施业务连续性的外观会如何不同。
-ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030102"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633029"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>企业业务连续性管理 (EBCM) 和云服务
 
@@ -40,7 +40,7 @@ ms.locfileid: "43030102"
 - [Microsoft 365 服务恢复能力](ebcm-m365-service-resiliency.md)
 - [发展连续性计划](ebcm-developing-your-ebcm-plan.md)
 - [Microsoft 365 服务事件缓解方案](ebcm-microsoft-365-mitigations.md)
-- [Microsoft 365 业务连续性计划培训和演练](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Microsoft 365 商业版连续性计划培训和演练](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
 ## <a name="see-also"></a>另请参阅
 

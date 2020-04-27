@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 将组织用户载入到 Microsoft 365 企业版的工作效率工作负载。
-ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2bb86ec474f93ea9d5f41fb104c6d533b7ec9561
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633140"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638160"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
 
@@ -60,7 +60,7 @@ ms.locfileid: "42633140"
 | 网络 | 你的网络已更新，可以为 Microsoft 365 云服务提供最佳性能。 |
 | 标识 | 通过对用户帐户进行强身份验证和保护管理员帐户来同步和保护身份。 |
 | Windows 10 企业版 | 运行 Windows 7 或 Windows 8.1 的计算机可以升级至 Windows 10 企业版，并且新设备已安装了 Windows 10 企业版。 |
-| Office 365 专业增强版 | 现有 Microsoft Office 用户可以升级到 Office 365 专业增强版。 |
+| Microsoft 365 企业应用版 | 现有 Microsoft Office 用户可以升级到 Microsoft 365 企业应用版。 |
 | 移动设备管理 | 可以注册和管理你的设备。 |
 | 信息保护 | 已配置 Office 365 信息保护功能，并且你的敏感度标签或 Azure 信息保护标签已准备好保护文档和电子邮件。 |
 
@@ -69,7 +69,7 @@ ms.locfileid: "42633140"
 以下是一些可立即部署的常见工作负载： 
 
 - 向用户推出基础架构的**标识**阶段后，许多组织都会部署：
-  - 与 [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise) 结合使用的 [Office 365 专业增强版](office365proplus-infrastructure.md)。 Office 365 专业增强版提供了新式身份验证的安全性和最新 Microsoft Office 客户端的用户体验。 将用户的个人文件迁移到 OneDrive 可以减少对基础架构以及为主文件夹和驱动器提供支持的需要。
+  - [Microsoft 365 企业应用版](office365proplus-infrastructure.md)加上 [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise)。 Microsoft 365 企业应用版提供了新式身份验证的安全性，以及最新 Microsoft Office 客户端的用户体验。 将用户的个人文件迁移到 OneDrive 可以减少对基础架构以及为主文件夹和驱动器提供支持的需要。
   - [Exchange Online](exchangeonline-workload.md)，以便用户可以开始使用基于云的电子邮件。
 - 如果你不需要在云中存储高度管控的数字资产，请在进行**信息保护**阶段之前为用户部署 [Microsoft Teams](teams-workload.md) 和 [SharePoint](sharepoint-online-onedrive-workload.md)。
 

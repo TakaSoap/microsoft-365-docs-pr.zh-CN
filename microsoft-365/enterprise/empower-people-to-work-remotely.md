@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 配置基础结构和安全性，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 3c4d34e21993f3b0c9327b27dd0a5a14f430b1b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504119"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637500"
 ---
 # <a name="empower-remote-workers"></a>为远程工作者提供强大功能
 
@@ -58,14 +58,14 @@ ms.locfileid: "43504119"
 - 对资源的安全访问
   - Teams、SharePoint 网站和 OneDrive 的组和权限，只有经过身份验证和允许的用户才能访问
 - 保护泄露的文件
-  - Office 365 DLP 策略
+  - DLP 策略
   - 随文件传输的加密和权限的敏感度标签
 - 使用 Microsoft Intune 的设备管理和安全性
   - 托管设备的注册
   - 个人设备的应用设置
   - 设备和应用策略
 - 设备的高效应用
-  - Office 365 专业增强版应用，可通过 Teams、SharePoint 和 OneDrive 带来协作体验 
+  - 通过 Teams、SharePoint 和 OneDrive 提供协作体验的 Microsoft 365 企业应用版应用 
 - Windows 10 企业版
   - 全面的安全功能，可抵御网络攻击并防止数据泄露
 - 对本地应用的访问权限
@@ -108,11 +108,11 @@ ms.locfileid: "43504119"
 
 ![远程工作者的 Windows 10 企业版元素](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
-对于[阶段 4：Office 365 专业增强版](office365proplus-infrastructure.md)，请部署基础结构以安装 Office 365 专业增强版，或者在组织设备上将当前安装的 Office 套件（如 Office 2010 或 Office 2013）升级到 Office 365 专业增强版。 这将为用户提供最佳的安全性和协作体验。
+对于[第 4 阶段：Microsoft 365 企业应用版](office365proplus-infrastructure.md)，部署基础结构，以在组织设备上安装 Microsoft 365 企业应用版，或将当前安装的 Office 套件（如 Office 2010 或 Office 2013）升级到 Microsoft 365 企业应用版。 这将为用户提供最佳的安全性和协作体验。
 
-下面是设备上安装的 Office 365 专业增强版的最终配置。
+下面是在设备上安装 Microsoft 365 企业应用版而生成的配置。
 
-![远程工作者的 Office 365 专业增强版元素](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![适用于远程工作者的 Microsoft 365 企业应用版元素](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 对于[阶段 5：移动设备管理](mobility-infrastructure.md)，请部署 Intune 设备和应用管理以：
 
@@ -126,8 +126,8 @@ ms.locfileid: "43504119"
  
 对于[阶段 6：信息保护](infoprotect-infrastructure.md)，通过以下方法为你的数字资产设计和配置保护：
 
-- Office 365 DLP 策略。
-- 随文件传输的加密和权限的 Office 365 敏感度标签。
+- DLP 策略。
+- 随文件传输的用于加密和权限用途的 Microsoft 365 敏感度标签。
 
 以下是包含 DLP 策略并突出显示了敏感度标签的最终配置。
 
@@ -153,7 +153,7 @@ ms.locfileid: "43504119"
  
 ### <a name="deployment-results"></a>部署结果
 
-部署底层基础结构和工作负载并推广 Windows 10 企业版和 Office 365 专业增强版后，远程工作者将：
+在部署底层基础结构和工作负载，并推出 Windows 10 企业版和 Microsoft 365 企业应用版后，远程工作者：
 
 - 受强身份验证和身份保护的约束。
 - 在其 Windows 设备上拥有最新、最安全的 Windows 版本。
@@ -205,7 +205,7 @@ ms.locfileid: "43504119"
 
 ### <a name="user-adoption-results"></a>用户采用结果
 
-远程工作者可以使用 Windows 10 企业版或其他设备以及 Office 365 专业增强版在安全环境中访问和使用共享的 Microsoft 365 企业版云服务及资源，并且可以实时举行会议、创建和协作。
+远程工作者可以使用 Windows 10 企业版或其他设备以及 Microsoft 365 企业应用版，在实时举行会议、创建内容和开展协作的安全环境中访问和使用共享的 Microsoft 365 企业版云服务和资源。
 
 ## <a name="additional-microsoft-features-to-support-remote-workers"></a>支持远程工作者的其他 Microsoft 功能
 

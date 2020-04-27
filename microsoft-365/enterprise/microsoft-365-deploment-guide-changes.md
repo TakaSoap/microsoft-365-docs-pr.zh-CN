@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 查看 Microsoft 365 部署指南中的新增内容和对内容的更改。
-ms.openlocfilehash: fb9768be38ef215b22c81bcf10b19b58e37fb124
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3374ee742982b1c7f451448674feed5f7d803031
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951806"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631569"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Microsoft 365 企业版部署内容的更改
 
@@ -38,7 +38,7 @@ ms.locfileid: "42951806"
 
 ### <a name="new-content"></a>新内容 
 
-- [从 Microsoft 365 商业版迁移到 Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [从 Microsoft 365 商业高级版迁移到 Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Contoso Corporation 的最高机密项目团队](contoso-team-for-top-secret-project.md)
 
@@ -86,7 +86,7 @@ ms.locfileid: "42951806"
 
 ### <a name="updates-and-enhancements"></a>更新和增强功能
 
-- [阶段 4 的刷新：Office 365 专业增强版](office365proplus-infrastructure.md)
+- 更新[第 4 阶段：Microsoft 365 企业应用版](office365proplus-infrastructure.md)
 - 更新[Contoso 案例研究](contoso-case-study.md)
 - 更新 [Microsoft Teams](teams-workload.md)、[Exchange Online](exchangeonline-workload.md) 和 [SharePoint Online](sharepoint-online-onedrive-workload.md) 工作负载
 - 更新[用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)场景
@@ -170,7 +170,7 @@ ms.locfileid: "42951806"
 ### <a name="new-content"></a>新内容 
 
 - [标识和设备访问](identity-device-access-m365-test-environment.md)先决条件测试实验室指南
-- [第 6 阶段：信息保护](infoprotect-infrastructure.md)的 [Windows 信息保护](infoprotect-deploy-windows-information-protection.md)和 [Office 365 数据丢失防护](infoprotect-data-loss-prevention.md)步骤
+- [第 6 阶段：信息保护](infoprotect-infrastructure.md)的[“Windows 信息保护”](infoprotect-deploy-windows-information-protection.md)和[“数据丢失防护”](infoprotect-data-loss-prevention.md)步骤
 
 
 ## <a name="see-also"></a>另请参阅

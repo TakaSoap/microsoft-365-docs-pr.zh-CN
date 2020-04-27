@@ -1,5 +1,5 @@
 ---
-title: 步骤 5：优化客户端和 Office 365 服务性能
+title: 第 5 步：优化客户端和 Microsoft 365 服务性能
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 配置 TCP 设置和 Office 365 服务以提高性能。
-ms.openlocfilehash: e3aefb417330ab791a3dd217e2e34591eba3e1d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 配置 TCP 设置和 Microsoft 365 服务，以提升性能。
+ms.openlocfilehash: 2db35f67ff19998b8a70742ec8fa24cb8d517c5d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066538"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631461"
 ---
-# <a name="step-5-optimize-client-and-office-365-service-performance"></a>步骤 5：优化客户端和 Office 365 服务性能
+# <a name="step-5-optimize-client-and-microsoft-365-service-performance"></a>第 5 步：优化客户端和 Microsoft 365 服务性能
 
 *此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![阶段 1：网络](../media/deploy-foundation-infrastructure/networking_icon-small.png)
+![第 1 阶段 - 网络](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-你可以微调传输控制协议 (TCP) 在客户端设备和 Office 365 服务之间的工作方式，以提高性能。
+可以微调传输控制协议 (TCP) 在客户端设备和 Microsoft 365 服务之间的工作方式，以提升性能。
 
 对于客户端设备，可以在客户端设备上更改以下 TCP 设置以优化 TCP 性能：
 
@@ -37,7 +37,7 @@ ms.locfileid: "42066538"
 - [TCP 最大段大小](https://blogs.technet.microsoft.com/onthewire/2014/06/27/checking-your-tcp-packets-are-pulling-their-weight-tcp-max-segment-size-or-mss/)，以使客户端设备在数据包中发送数据的最大块
 - [TCP 选择性确认](https://blogs.technet.microsoft.com/onthewire/2014/06/27/ensuring-your-tcp-stack-isnt-throwing-data-away/)，以使客户端设备更高效地确认接收的数据
 
-有关 Office 365 服务，请参阅其他资源以优化性能：
+有关 Microsoft 365 服务，请参阅其他资源来优化性能：
 
 - [Exchange Online](https://docs.microsoft.com/office365/enterprise/tune-exchange-online-performance)
 - [Skype for Business Online](https://docs.microsoft.com/office365/enterprise/tune-skype-for-business-online-performance)

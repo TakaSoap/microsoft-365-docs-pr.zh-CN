@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在开发/测试环境中创建敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: 6294daa943c3815b86a9e12154901ed0b58d5e8d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 016fd99423305e0d11272f3d25115dcffe29ecae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088103"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631985"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在开发/测试环境中保护 SharePoint Online 网站
 
@@ -66,7 +66,7 @@ ms.locfileid: "42088103"
 
 6. 对名为“市场营销人员”的新组重复步骤 3-5****。
 
-然后配置自动授权，以便组的成员可自动分配 Office 365 和 EMS 订阅的许可证。
+接下来，配置自动授权，这样组成员可以自动分配有 Microsoft 365 和 EMS 订阅的许可证。
 
 1. 在 Azure 门户中，单击“**Azure Active Directory”>“许可证”>“所有产品**”。
 
@@ -125,7 +125,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 4. 在列出“CEO”用户帐户属性的窗格中，验证已向其分配“Microsoft 365 企业版 E5”许可证（位于“产品许可证”中）************。
 
-## <a name="phase-3-create-office-365-retention-labels"></a>阶段 3：创建 Office 365 保留标签
+## <a name="phase-3-create-retention-labels"></a>第 3 阶段：创建保留标签
 
 在此阶段中，可为 SharePoint 团队网站中的文档创建保留标签。
 

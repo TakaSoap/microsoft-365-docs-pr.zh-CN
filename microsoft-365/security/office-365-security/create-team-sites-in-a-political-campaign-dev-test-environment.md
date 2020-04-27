@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: d36b2c74cc7accadf5bbbde1b52f94c5e998ea8a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 14ba5b00754a9e55c797edd0835658ac81b7e647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599489"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637660"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -35,11 +35,11 @@ ms.locfileid: "41599489"
 
 首先，按照[为政治宣传运动开发/测试环境配置组和用户](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)中的说明，创建订阅、用户和组。
   
-## <a name="phase-2-create-office-365-labels"></a>第 2 阶段：创建 Office 365 标签
+## <a name="phase-2-create-labels"></a>第 2 阶段：创建标签
 
 此阶段将针对 SharePoint Online 团队网站文档文件夹的不同安全级别创建标签。
   
-1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[在哪里登录 Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在“Microsoft Office 主页”标签页中，单击“管理员”磁贴********。
     

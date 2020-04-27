@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 OS 部署和功能更新的选项。
-ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085205"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636755"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步骤 6：OS 部署和功能更新
 
@@ -41,7 +41,7 @@ ms.locfileid: "42085205"
 
 如果一直按照部署流程轮执行至此，那么至少已部分完成了设备和应用准备步骤、准备了基础结构、配置和收集了应用包、制定了迁移用户文件和配置默认设置的计划，以及制定了保留现有安全控件和部署可能的新控件的计划。
 
-现在我们到了要将所有这些部分集合到一起以尽可能自动化安装 Windows 10 和 Office 365 专业增强版（以及必要的驱动程序、应用和所需的其他任何部件）的阶段。
+现在，已经到了这样一个阶段：要将所有这些散碎内容整合到一起，以尽可能自动安装 Windows 10 和 Microsoft 365 企业应用版，以及必要的驱动程序、应用和所需的其他任何部件。
 
 最后，衡量 OS 部署是否成功的最佳标准是满足用户期望并避免中断其工作。在此步骤中，你将开始测试并部署到试点用户，作为分阶段部署的一部分。此处需注意，在扩大部署范围前，需要跳至我们的部署过程上的步骤 8 – [用户通信和培训](https://aka.ms/mdd8)，以确保用户已了解即将发生的更改并为此做好准备，且可以使用分阶段部署，通过连续验证来衡量你的推出节奏。
 
@@ -131,8 +131,8 @@ Windows 10 中提供的一个新选项是使用 Windows Autopilot 将新电脑�
 
 ## <a name="next-step"></a>后续步骤 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[步骤 7：Windows 和 Office 服务](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[步骤 7：Windows 和 Office 服务](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>上一步
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[步骤 5：安全性和合规性注意事项](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[步骤 5：安全性和合规性注意事项](https://aka.ms/mdd5)

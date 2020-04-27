@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 理解并部署 Microsoft 365 中的 Windows 信息保护。
-ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 66c9e10772edb0782096ba120858e895684255b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067159"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631641"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步骤 4：配置 Windows 信息保护
 
@@ -51,6 +51,6 @@ Windows 信息保护 (WIP) 有助于防止 Windows 10 设备上的这些类型�
 
 |||
 |:-------|:-----|
-|![第 5 步](../media/stepnumbers/Step5.png)|[配置 Office 365 数据丢失防护](infoprotect-data-loss-prevention.md)|
+|![第 5 步](../media/stepnumbers/Step5.png)|[配置数据丢失防护](infoprotect-data-loss-prevention.md)|
 
 

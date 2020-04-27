@@ -1,5 +1,5 @@
 ---
-title: 步骤 5：配置 Office 365 数据丢失防护
+title: 第 5 步：配置数据丢失防护
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解并部署 Microsoft 365 中的 Office 365 数据丢失防护。
-ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解数据丢失防护并在 Microsoft 365 中部署。
+ms.openlocfilehash: e3d18bf54ecdfe11f8233163e7f200a70606d81d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067219"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636972"
 ---
-# <a name="step-5-configure-office-365-data-loss-prevention"></a>步骤 5：配置 Office 365 数据丢失防护
+# <a name="step-5-configure-data-loss-prevention"></a>第 5 步：配置数据丢失防护
 
 *此步骤可选，它适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
 ![第 6 阶段：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-通过 Office 365 安全与合规中心的数据丢失防护 (DLP) 策略，可在 Microsoft 365 内识别、监视和自动保护敏感数据。 DLP 策略可助你实现以下操作：
+通过安全与合规中心内的数据丢失防护 (DLP) 策略，可以在 Microsoft 365 内识别、监视和自动保护敏感数据。 DLP 策略可助你实现以下操作：
 
 - 跨 Exchange Online、SharePoint Online、OneDrive for Business 和 Microsoft Teams 等多个位置标识敏感信息。
 - 阻止访问某文档或阻止包含该文档的电子邮件，从而防止额外共享敏感信息。

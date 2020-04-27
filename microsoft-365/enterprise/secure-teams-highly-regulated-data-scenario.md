@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建安全团队来存储最有价值的敏感文件。
-ms.openlocfilehash: aeb3662d6c8a21cbd56d983515913750fd5259f1
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 95c0fc4177f2a16fc79dd0833809f4405e8cdda9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951966"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631389"
 ---
 # <a name="teams-for-highly-regulated-data"></a>用于高度管控数据的 Teams
 
-本文为你提供在 Microsoft Teams 中配置私人团队的建议和步骤，它只允许 Office 365 团队组的成员和所有者访问 Teams 功能 — 例如聊天、会议和文件。 
+本文提供了建议和步骤，以帮助你在 Microsoft Teams 中配置私人团队，它只允许团队的 Microsoft 365 组的成员和所有者访问 Teams 功能（如聊天、会议和文件）的。 
 
-除了基于 Office 365 组的专用访问之外，本文还介绍了如何配置基础专用 SharePoint 团队网站，你可以从团队频道的“**文件**”部分进行访问，以获得存储高度管控数据所需的其他安全性。 在此 SharePoint 团队网站上，可存储和协作处理文件、页面、共享日历、任务、笔记本和列表。
+除了基于 Microsoft 365 组的专用访问之外，本文还介绍了如何配置基础专用 SharePoint 团队网站，可以从团队频道的“文件”**** 部分访问此网站，以获得存储高度受管制数据所需的额外安全性。 在此 SharePoint 团队网站上，可存储和协作处理文件、页面、共享日历、任务、笔记本和列表。
 
 >[!Note]
 > [此处](teams-sharepoint-online-sites-highly-regulated-data.md)是使用 SharePoint 的类似方案。
@@ -34,13 +34,13 @@ ms.locfileid: "42951966"
 
 针对高度管控数据的团队的配置元素如下：
 
-- 具有相应的 Office 365 组的私人团队，该组具有所有者和成员用户帐户。
+- 具有相应 Microsoft 365 组且包含所有者和成员用户帐户的私人团队。
 - 基础 SharePoint 团队网站上的其他安全性：
   - 阻止网站成员向其他人授予访问权限。
   - 阻止非网站成员请求访问该网站。
-- 基础 SharePoint 网站的 Office 365 保留标签，作为定义保留策略的默认方法，该标签将自动应用于该网站上的新文件。
+- 基础 SharePoint 网站的保留标签，自动应用于网站上的新文件，作为定义保留策略的默认方式。
 - 数据丢失防护 (DLP) 策略，该策略使用保留标签并阻止用户在组织外部共享或发送文件。
-- Office 365 敏感度标签或高度管控标签的子标签，它已启用加密并且为 Office 365 团队组提供了共同创作权限。 通过 Word、Excel 和 PowerPoint 中的“**敏感度**”菜单栏选项，用户可以为团队的“**文件**”部分中存储的文件应用标签或子标签。
+- 敏感度标签或高度受管制标签的子标签，它已启用加密，且对团队的 Microsoft 365 组拥有共同创作权限。 通过 Word、Excel 和 PowerPoint 中的“**敏感度**”菜单栏选项，用户可以为团队的“**文件**”部分中存储的文件应用标签或子标签。
 
 下面是使用敏感度标签生成的配置。
 
@@ -76,7 +76,7 @@ ms.locfileid: "42951966"
 
 创建私人团队时，以下是默认权限：
 
-- Office 365 团队组（团队组）具有组所有者和组成员
+- 团队的 Microsoft 365 组（即“团队组”）包含组所有者和组成员
 - 对于基础 SharePoint 团队网站（团队网站）：
   - 已为团队组所有者配置网站集管理员
   - 对于团队网站： 

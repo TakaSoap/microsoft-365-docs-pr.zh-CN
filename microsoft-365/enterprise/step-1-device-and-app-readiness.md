@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的设备和应用就绪情况。
-ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085457"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636852"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步骤 1：设备和应用就绪情况
 
@@ -36,10 +36,10 @@ ms.locfileid: "42085457"
 </table>
 
 >[!NOTE]
->设备和应用就绪情况是我们建议的部署过程周期的第一步，它涵盖了应用程序和硬件兼容性的各个方面。 若要查看完整的桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
+>设备和应用就绪情况是我们建议的部署过程周期的第一步，它涵盖了应用程序和硬件兼容性的各个方面。 若要查看的完整桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-在过去，升级用户桌面的主要障碍是应用程序和硬件兼容性。好消息是，当你计划转用 Windows 10 和 Office 365 专业增强版时，在最近 10 年内编写的几乎所有应用程序都将在 Windows 10 上运行，而组织在自 Office 2010 以来的 Office 版本上使用的任何 COM 加载项和 VBA 宏都将继续在最新版本的 Office 上运行，无需进行任何修改。
+在过去，升级用户桌面的主要障碍是应用程序和硬件兼容性。好消息是，当你计划转换到 Windows 10 和 Microsoft 365 企业应用版时，在过去 10 年内编写的几乎所有应用程序都将在 Windows 10 上运行，且组织在自 Office 2010 以来的 Office 版本上使用的任何 COM 加载项和 VBA 宏都将继续在最新版 Office 上运行，无需进行任何修改。
 
 也就是说，根据组织的规模和年龄，验证应用程序和硬件兼容性很有可能仍是我们建议的 8 阶段部署过程中一个必不可少的初始步骤。
 
@@ -89,7 +89,7 @@ ms.locfileid: "42085457"
 
 还可以使用桌面分析来评估基于浏览器的兼容性问题，识别仍在使用 ActiveX 控件、浏览器帮助程序对象、VBScript 或 Microsoft Edge 浏览器不支持的其他旧技术的用户访问的网站和 Web 应用程序。 用户仍需要为这些站点使用 Internet Explorer 11，你可以使用 Enterprise Mode Site List Manager 将它们添加到 [Enterprise Mode Site List](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)。
 
-此外，为了帮助你迁移到 Office 365 专业增强版，你可能希望使用 [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) 来测试加载项和 Microsoft Visual Basic for Applications (VBA) 宏的兼容性。
+此外，为了帮助你迁移到 Microsoft 365 企业应用版，我们提供了 [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，你不妨使用它来测试加载项和 Microsoft Visual Basic for Applications (VBA) 宏的兼容性。
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -110,12 +110,12 @@ Configuration Manager 软件清单是为设备和应用就绪情况使用基于�
 
 ## <a name="app-assure"></a>应用保证
 
-另一个帮助实现 Windows 10 和 Office 365 专业增强版应用兼容性的工具是[App Assure](https://aka.ms/appassure)程序，可通过 FastTrack 中心获取它。 如果发生有效应用程序问题，Microsoft 工程师将与你协作，通过App Assure ，帮助修正应用程序不兼容问题，并且无需额外费用。
+另一个有助于测试 Windows 10 和 Microsoft 365 企业应用版应用兼容性的工具是[应用保证](https://aka.ms/appassure)程序，可通过 FastTrack 中心获取。 如果发生有效应用程序问题，Microsoft 工程师将与你协作，通过App Assure ，帮助修正应用程序不兼容问题，并且无需额外费用。
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>继续使用诊断数据工具
 
-桌面分析不只是帮助你转移到 Windows 10 和 Office 365 专业增强版的工具。 一旦在 Windows 10 和 Office 365 上运行桌面，就可以使用它来维护部署，并管理半年度功能更新，以便掌握最新动态。
+桌面分析不仅仅是帮助你转换到 Windows 10 和 Microsoft 365 企业应用版的工具。 一旦在 Windows 10 和 Office 365 上运行桌面，就可以使用它来维护部署，并管理半年度功能更新，以便掌握最新动态。
 
 ## <a name="next-step"></a>后续步骤 
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[步骤 2：目录和网络就绪情况](https://aka.ms/mdd2)
+## <a name="step-2-directory-and-network-readiness"></a>[步骤 2：目录和网络就绪情况](https://aka.ms/mdd2)

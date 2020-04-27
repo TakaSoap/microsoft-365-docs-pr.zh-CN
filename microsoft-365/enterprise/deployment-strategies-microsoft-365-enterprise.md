@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解部署 Microsoft 365 企业版底层基础结构阶段的一些方法。
-ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5eb4851a4c967baae268e04113b4e44023164db4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067784"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638148"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企业版底层基础结构部署策略
 
@@ -89,8 +89,8 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 下面的例子展示了简单的试点用户体验：
 
 - 12 月，需要使用智能手机进行 MFA。（身份识别）
-- 3 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
-- 6 月，我安装了 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
+- 3 月，我在 Windows 8.1 台式机上安装了 Windows 10 企业版。（Windows 10 企业版）
+- 我在 6 月安装了 Microsoft 365 企业应用版，取代了 Office 2013。 （Microsoft 365 企业应用版）
 - 9 月，我进行设备注册并实施应用和设备策略。 （移动设备管理）
 - 12 月，我安装了 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
 
@@ -100,7 +100,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 - 1 月，需要使用智能手机进行 MFA。（身份识别）
 - 4 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
-- 7 月，我安装了 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
+- 我在 7 月安装了 Microsoft 365 企业应用版，取代了 Office 2013。 （Microsoft 365 企业应用版）
 - 10 月，我进行设备注册并实施应用和设备策略。 （移动设备管理）
 - 明年 1 月，我安装了 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
 
@@ -120,7 +120,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 - 12 月，我需要使用智能手机进行 MFA。（身份识别）
 - 2 月，我在 Windows 8.1 台式机上安装了 Windows 10 企业版。（Windows 10 企业版）
-- 4 月，我安装了 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
+- 我在 4 月安装了 Microsoft 365 企业应用版，取代了 Office 2013。 （Microsoft 365 企业应用版）
 - 6 月，我进行设备注册并实施应用和设备策略。 （移动设备管理）
 - 8 月，我安装了 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
 
@@ -130,7 +130,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 - 1 月，我需要使用智能手机进行 MFA。（身份识别）
 - 3 月，我在 Windows 8.1 台式机上安装了 Windows 10 企业版。（Windows 10 企业版）
-- 5 月，我安装了 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
+- 我在 5 月安装了 Microsoft 365 企业应用版，取代了 Office 2013。 （Microsoft 365 企业应用版）
 - 7 月，我进行设备注册并实施应用和设备策略。 （移动设备管理）
 - 9 月，安装 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
 
@@ -158,7 +158,7 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 
 - 12 月，我需要使用智能手机进行 MFA。（身份识别）
 - 1 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
-- 2 月，安装 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
+- 我在 2 月安装了 Microsoft 365 企业应用版，取代了 Office 2013。 （Microsoft 365 企业应用版）
 - 3 月，执行设备注册并实施应用和设备策略。 （移动设备管理）
 - 4 月，安装 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
 
@@ -167,8 +167,8 @@ IT基础结构包括后端服务以及向最终用户推出新功能或改进功
 下面的例子展示了简单的最终用户体验：
 
 - 1 月，需要使用智能手机进行 MFA。（身份识别）
-- 2 月，在 Windows 8.1 台式机上安装 Windows 10 企业版。（Windows 10 企业版）
-- 3 月，安装 Office 365 专业增强版，取代 Office 2013。（Office 365 专业增强版）
+- 2 月，我在 Windows 8.1 台式机上安装了 Windows 10 企业版。（Windows 10 企业版）
+- 我在 3 月安装了 Microsoft 365 企业应用版，取代了 Office 2013。 （Microsoft 365 企业应用版）
 - 4 月，执行设备注册并实施应用和设备策略。 （移动设备管理）
 - 5 月，安装 Azure 信息保护客户端，并接受关于如何将标签应用于文档的培训。（信息保护）
 
@@ -186,7 +186,7 @@ IT 部门针对第 2-6 阶段配置基础结构，然后推出给试点用户以
 
 - MFA 和其他身份识别功能（身份识别）
 - Windows 设备上的 Windows 10 企业版（Windows 10 企业版）
-- Office 套件的 Office 365 专业增强版（Office 365 专业增强版）
+- Office 套件的 Microsoft 365 企业应用版（Microsoft 365 企业应用版）
 - 应用和设备策略（移动设备管理）
 - 安装 Azure 信息保护客户端并接受关于如何将标签应用于文档的培训（信息保护）
 

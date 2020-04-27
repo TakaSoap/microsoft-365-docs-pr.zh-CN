@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 如果你具有现有基础结构，请逐步完成 Microsoft 365 企业版部署的退出条件。
-ms.openlocfilehash: ce9c9343ff6983968f3ed96b1e1558788d04ffc1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ace84e53da9b62b39a557b670c54c1be31d0b61a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597059"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638176"
 ---
 # <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>使用现有基础结构部署 Microsoft 365 企业版
 
@@ -49,11 +49,11 @@ ms.locfileid: "41597059"
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Office 365 专业增强版退出条件（阶段 4）
+## <a name="exit-criteria-for-microsoft-365-apps-for-enterprise-phase-4"></a>Microsoft 365 企业应用版（第 4 阶段）退出条件
 
-满足评估、计划部署和部署 Office 365 专业增强版基础结构的要求。
+满足评估、计划部署和部署 Microsoft 365 企业应用版基础结构的要求。
 
-[!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
+[!INCLUDE [Deployment exit criteria for Microsoft 365 Apps for enterprise](./includes/deployment-exit-criteria-office365proplus.md)]
 
 ## <a name="exit-criteria-for-mobile-device-management-phase-5"></a>移动设备管理的退出条件（阶段 5）
 
