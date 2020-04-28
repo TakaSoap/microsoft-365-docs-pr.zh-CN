@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何更改 Microsoft 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
-ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 06b247da1a8ac1f330f2ad36c8b29897963819f3
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627602"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900770"
 ---
-# <a name="customize-the-theme-for-your-organization"></a>为你的组织自定义主题
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>为你的组织自定义 Microsoft 365 主题
 
 了解如何在 Microsoft 365 管理中心中自定义你的主题。 作为 Microsoft 365 for business 订阅的管理员，您可以更改组织中每个人的顶部导航栏中显示的默认主题。 您可以添加公司徽标并更改颜色，使其与品牌的其余部分相匹配。 您甚至可以添加目标链接，以便用户在选择您的徽标时导航到该链接。 你可以在此处看到默认主题和自定义主题在 Microsoft 365 中的结果。
   
@@ -64,7 +64,7 @@ ms.locfileid: "43627602"
     
 4. 选择“**保存更改**”。
     
-你将立即在管理中心中看到新主题，在短暂延迟之后，你将在 Microsoft 365 中看到它，包括 Outlook 中的页面、SharePoint、 [sharepoint mobile 应用 For iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)和[适用于 Android 的 sharepoint 移动应用](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 请参阅下图，了解从管理中心自定义主题更改的示例。
+你将立即在管理中心中看到新主题，在短暂延迟之后，你将在 Microsoft 365 中看到它，包括 Outlook 中的页面、SharePoint、 [sharepoint mobile 应用 For iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)和[适用于 Android 的 sharepoint 移动应用](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 有关可从管理中心自定义主题更改的示例，请参阅下图。
 
 ![m365-管理员-租户-主题-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "43627602"
   
 ## <a name="best-practices"></a>最佳做法
 
-选择**徽标图像**时，建议尽可能使用 SVG 文件类型，以便您的徽标在所有屏幕和所有缩放级别上都具有高分辨率外观。
+选择**徽标图像**时，建议使用 SVG 文件类型，以便您的徽标在所有屏幕和所有缩放级别上都具有高分辨率外观。
 
 选择 "自定义颜色" 时，请选择与您选取的**徽标图像**具有高对比度的**导航栏背景色**。 此外，选择与**导航栏背景颜色**具有高对比度比率的**文本和图标**颜色，以确保所有文本和图标都能轻松可见。
 
@@ -99,4 +99,3 @@ ms.locfileid: "43627602"
 [向"我的应用"页面和应用启动器添加自定义磁贴](../manage/customize-the-app-launcher.md)
   
   
-

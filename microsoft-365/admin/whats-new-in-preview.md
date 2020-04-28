@@ -21,14 +21,21 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 管理中心-了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805175"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907233"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 本文中的某些信息可能不适用于由世纪互联运营的 Office 365。
+
+::: moniker-end
 
 我们不断将新功能添加到[Microsoft 365 管理中心](microsoft-365-admin-center-preview.md)，修复了我们了解的问题，并根据你的反馈进行了更改。 请查看下面的内容，查看今天可为你提供的内容。 有些功能以不同的速度向客户推出。 如果尚未看到功能，[请尝试将自己添加到目标版本](manage/release-options-in-office-365.md)。
 
@@ -80,7 +87,7 @@ ms.locfileid: "43805175"
 
 |当前名称 |新的名称  |
 |---------|---------|
-|Office 365 商业协作版     |   Microsoft 365 商业基本版      |
+|Office 365 商业协作版     |   Microsoft 365 商业基础版      |
 |Office 365 商业高级版     |    Microsoft 365 商业标准版     |
 |Microsoft 365 商业版     |    Microsoft 365 商业高级版     |
 |Office 365 商业版     |    Microsoft 365 商业应用版       | 
