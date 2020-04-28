@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服务信任门户中的合规性管理器提供用于跟踪、实现和管理控制措施的工具，以确保在衡量依据为 Microsoft 云服务（如 Office 365 和 Microsoft Azure）时，组织符合安全和数据保护行业标准（如 GDPR、ISO 27001、27018 和 HIPAA）。使用合规性管理器，负责监督组织数据保护和隐私策略的人员可管理合规性和风险评估流程。
-ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3019378c82e263ce438b385a998dcf2475f3b62d
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071689"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790619"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合规性管理器（经典）
 
 > [!NOTE]
-> 本文档介绍的是旧版产品。 强烈建议用户不要使用此版本的合规性管理器，而应鼓励用户使用新的 [Microsoft 合规性分数](compliance-score.md)。
+> 此文档介绍此产品的先前版本。 强烈建议用户不要使用此版本的合规性管理器，而应鼓励用户使用新的 [Microsoft 合规性分数](compliance-score.md)。
 
- *由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。* 
+ *由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。*
   
 合规性管理器是 Microsoft [服务信任门户](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)中基于工作流的风险评估工具，可跟踪、分配和验证组织的合规性活动，这些活动与 Microsoft 专业服务和 Microsoft 云服务（如 Microsoft Office 365、Microsoft Dynamics 365 和 Microsoft Azure）相关。 
 
@@ -700,7 +700,7 @@ ms.locfileid: "42071689"
     
 - **次要**更改是指客户行动的不重要更改，如更正拼写错误或格式化问题，或更新或纠正超链接。次要更改通常不要求重新评估控制措施；但建议查看更新后的客户行动。
   
-### <a name="office-365-customer-managed-controls---change-log-for-july-2018"></a>Office 365 客户管理的控制措施 - 2018 年 7 月更改日志
+### <a name="customer-managed-controls---change-log-for-july-2018"></a>客户管理的控制措施 - 2018 年 7 月更改日志
 
 |**控制措施 ID**|**评估**|**更改类型**|**更改说明**|**建议客户采取的行动**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -710,7 +710,7 @@ ms.locfileid: "42071689"
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365：HIPAA|主要|向“Office 365 - HIPAA”评估添加了 HITECH 控制措施|查看添加的控制措施和建议的客户行动<br/>|
 |
 
-### <a name="office-365-customer-managed-controls---change-log-for-april-2018"></a>Office 365 客户管理的控制措施 - 2018 年 4 月更改日志
+### <a name="customer-managed-controls---change-log-for-april-2018"></a>客户管理的控制措施 - 2018 年 4 月更改日志
 
 |**GDPR**|**HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**更改类型**|**更改说明**|**建议客户采取的行动**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
