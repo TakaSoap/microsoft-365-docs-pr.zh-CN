@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 确定组织是否使用标签作为 GDPR 计划的一部分。
-ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db61c5c26ed8484e99aa8f06310bdd3385cf2dce
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596039"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637132"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>为个人数据构建分类架构
 
@@ -32,11 +32,11 @@ ms.locfileid: "41596039"
 
 ## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>决定是否使用除敏感数据类型外的标签
 
-可以在 Office 365 中为个人信息采用两种分类方法中的一种。这两种方法都可用于 GDPR 保护。如果决定仅使用敏感信息类型进行分类，可跳过本主题的剩余部分。
+可以在 Microsoft 365 中为个人信息采用两种分类方法中的一种。这两种方法都可用于 GDPR 保护。如果决定仅使用敏感信息类型进行分类，可跳过本主题的剩余部分。
 
 选择下列选项之一。
 
-### <a name="option-1-use-only-office-365-sensitive-information-types"></a>选项 1：仅使用 Office 365 敏感信息类型
+### <a name="option-1-use-only-microsoft-365-sensitive-information-types"></a>选项 1：仅使用 Microsoft 365 敏感信息类型
 
 - 敏感信息类型可以有效地识别和保护符合 GDPR 和其他类型规定的个人数据。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151457"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708437"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
@@ -35,11 +35,11 @@ ms.locfileid: "43151457"
 
 ## <a name="accessing-file-plan-manager"></a>访问文件计划管理器
 
-要访问文件计划管理器，您必须具有以下管理员角色之一：
+若要访问文件计划管理器，必须具有以下管理员角色之一：
     
-- 保留管理者
-
-- 仅拥有查看权限的保留管理者
+    - 保留管理者
+    
+    - 仅拥有查看权限的保留管理者
 
 ## <a name="default-retention-labels-and-label-policy"></a>默认保留标签和标签策略
 
@@ -131,7 +131,7 @@ ms.locfileid: "43151457"
 
    ![在 Excel 中打开的空白文件计划模板](../media/file-plan-blank-template.png)
 
-3. 填写模板。 下文介绍了文件计划模板中每个属性的属性和有效值。<br/>
+3. 填写模板。 下文介绍了文件计划模板中每个属性的属性和有效值。 对于导入，每个值最多可以有 64 个字符。 <br/>
 
    |**Property**|**类型**|**有效值**|
    |:-----|:-----|:-----|
@@ -152,7 +152,7 @@ ms.locfileid: "43151457"
    |CitationUrl|字符串|该属性指定在**预配/引文**文件计划描述符中显示的 URL。|
    |CitationJurisdiction|字符串|该属性指定在**预配/引文**文件计划描述符中显示的管辖权地或机构；例如“美国证券交易委员会 (SEC)”。|
    |Regulatory|字符串|保留为空白。 此属性目前不可用。|
-   |EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>**名称**</br>**可分辨名称 (DN)**</br>**GUID** </br>可使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet 来查看可用的保留规则。 请注意，如果从某个 Office 365 组织导出标签，则将该标签导入其他 Office 365 组织时，不能使用该组织中的 EventType 属性值。 这是因为 EventType 值对于组织是唯一的。 |
+   |EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>**名称**</br>**可分辨名称 (DN)**</br>**GUID** </br>可使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet 来查看可用的保留规则。 请注意，如果从某个组织导出标签，则将该标签导入其他组织时，不能使用该组织中的 EventType 属性值。 这是因为 EventType 值对于组织是唯一的。 |
    |||
 
    下面是包含有关保留标签的信息的模板示例。

@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: 了解如何修改或新建针对 GDPR 的 Office 365 敏感信息类型。
-ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解如何修改或新建针对 GDPR 的敏感信息类型。
+ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595479"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637774"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自定义或新建敏感信息类型
 
-本文提供了三个示例，说明如何修改或新建针对 GDPR 的 Office 365 敏感信息类型。
+本文提供了三个示例，说明如何修改或新建针对 GDPR 的敏感信息类型。
 
 - 修改现有的敏感信息类型 — 欧盟借记卡号
 
@@ -77,9 +77,9 @@ ms.locfileid: "41595479"
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>示例：修改“欧盟借记卡号”敏感信息类型
 
-提高 DLP 规则在任意系统中的准确性需要在示例数据集上进行测试，并且可能需要通过反复修改和测试来进行微调。此示例演示了为提高准确性而对“欧盟借记卡号”敏感信息类型进行的修改。
+提高 DLP 规则在任意系统中的准确性需要针对示例数据集进行测试，并且可能需要通过反复修改和测试来进行微调。此示例展示了为提高准确性而对“欧盟借记卡号”敏感信息类型进行的修改。
 
-在本示例中，搜索欧盟借记卡号时，该卡号的定义已严格定义为使用复杂模式且经过校验和验证的 16 位数字。由于此敏感信息类型的字符串定义，我们无法改变此模式。但我们可以做出以下调整，从而提高 Office 365 DLP 在 Office 365 内查找此敏感信息类型所使用的方式的准确性。
+在本示例中，搜索欧盟借记卡号时，该卡号的定义已严格定义为使用复杂模式且经过校验和验证的 16 位数字。鉴于此敏感信息类型的字符串定义，我们无法改变此模式。但我们可以做出以下调整，从而提高 DLP 在 Office 365 内查找此敏感信息类型所使用的方式的准确性。
 
 ### <a name="proximity-modification"></a>邻近度修改
 
@@ -157,7 +157,7 @@ ms.locfileid: "41595479"
 
 电子邮件地址被视为与数据主体相关的敏感信息。该简单示例演示了内容搜索如何发挥作用。
 
-不能同时使用 KQL 和关键字。单独使用这些工具来筛选出查询，并确定可能会对敏感信息类型有帮助的关键字。
+不能同时使用 KQL 和关键字。单独使用这些工具来优化查询，并确定可能会对敏感信息类型有帮助的关键字。
 
 ### <a name="kql-query"></a>KQL 查询
 
@@ -294,7 +294,7 @@ CCN 示例：
 >
 > 17040O1118
 
-在内部通信、外部通信、文档等内容中，Contoso 通常使用 CCN 指代客户。他们想要创建一种自定义敏感信息类型来检测 Office 365 中使用的 CCN，以便对这种个人数据形式的使用应用保护。
+在内部通信、外部通信、文档等内容中，Contoso 通常使用 CCN 指代客户。他们想要创建一种自定义敏感信息类型来检测使用的 CCN，以便对这种个人数据形式的使用应用保护。
 
 ### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>为 Contoso 客户编号创建新的敏感信息类型
 
@@ -312,7 +312,7 @@ CCN 示例：
 <td align="left">Contoso 使用 PowerShell 和内容搜索来查找与 CCN 示例集匹配的文档。</td>
 <td align="left">
 
-<p>#连接到 Office 365 安全与合规中心</p>
+<p>#连接到安全与合规中心</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#创建并开始搜索示例数据</p>
@@ -363,7 +363,7 @@ CCN 示例：
 <tr class="even">
 <td align="left">8</td>
 <td align="left">Contoso 使用以下 PowerShell 创建自定义敏感信息类型。</td>
-<td align="left"><p>#连接到 Office 365 安全与合规中心</p>
+<td align="left"><p>#连接到安全与合规中心</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#创建新的敏感信息类型</p>

@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何在 Office 365 中搜索和查找个人数据。
-ms.openlocfilehash: 31ff182c673b9a8d8f468b81c6cf5d30cf00733a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597559"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638126"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜索和查找个人数据
 
@@ -31,9 +31,9 @@ ms.locfileid: "41597559"
 
 第 4 条 – 定义
 
-> “个人数据”表示已确定身份的或可识别的自然人（“数据主体”）的任何相关信息；可识别的自然人是指可被直接或间接识别出的自然人，尤其是通过参考姓名、证件号码、位置数据、网络标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别；
+> “个人数据”表示已确定身份或可识别的自然人（“数据主体”）的任何相关信息；可识别的自然人是指可被直接或间接识别出的自然人，尤其是通过参考姓名、证件号码、位置数据、网络标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别；
 
-本文演示了如何查找存储在 SharePoint Online 和 OneDrive for Business（其中包含所有 Office 365 组和 Microsoft Teams 的网站）中的个人数据。
+本文演示了如何查找存储在 SharePoint Online 和 OneDrive for Business（其中包含所有 Microsoft 365 组和 Microsoft Teams 的网站）中的个人数据。
 
 查找受 GDPR 约束的个人数据需要使用 Office 365 中的敏感信息类型。 这些信息类型定义了自动化过程如何识别健康服务号码和信用卡号等特定信息类型。 你可以使用数据丢失防护策略在传送过程中查找邮件中的个人数据。 可以使用为 GDPR 策展的敏感信息类型来查找和保护通过电子邮件发送的个人信息。 另请参阅[在安全与合规中心内使用 DSR 案例工具管理 GDPR 数据主体请求](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)。
 
@@ -97,13 +97,13 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 <tbody>
 <tr class="odd"><td align="left"><p>转到安全与合规中心的“内容搜索”</p></td>
 <td align="left"><p>在安全与合规中心的左侧窗格中，单击“搜索和调查”****&gt;****“内容搜索”。</p>
-<p>请参阅<a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全与合规中心运行内容搜索</a>。</p></td>
+<p>请参阅<a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在安全与合规中心运行内容搜索</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>为每种敏感信息类型创建新的搜索项</p></td>
 <td align="left"><p>使用以下语法：</p>
 <blockquote>
-<p>SensitiveType:”&lt;类型&gt;”</p>
+<p>SensitiveType:"&lt;type&gt;"</p>
 </blockquote>
 <p>例如：</p>
 <blockquote>
@@ -117,8 +117,8 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 <td align="left"><p>查看是否存在以下类型的问题，确定查询准确性是否符合目标：</p>
 <p><li>许多误报</li></p>
 <p><li>缺少已知的数据实例</li></p>
-<p>请参阅<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">从 Office 365 安全与合规中心导出内容搜索结果</a>。</p>
-<p>注意：如果使用的是 Mozilla Firefox 或 Chrome，可能需要先使用 Internet Explorer 或 Edge 下载报告，才能安装所需的加载项。</p></td>
+<p>请参阅<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">从安全与合规中心导出内容搜索结果</a>。</p>
+<p>注意：如果使用的是 Mozilla Firefox 或 Chrome，可能需要先使用 Internet Explorer 或 Microsoft Edge 下载报告，才能安装所需的加载项。</p></td>
 </tr>
 </tbody>
 </table>
@@ -207,13 +207,13 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 
 语法：
 
--   SensitiveType:”\<类型\>|\<计数范围\>|\<置信区间\>”
+-   SensitiveType:"\<type\>|\<count range\>|\<confidence range\>"
 
 示例：
 
--   SensitiveType:“Credit Card Number|5”（只返回正好包含五个信用卡号码的文档）
+-   SensitiveType:"Credit Card Number|5"（只返回正好包含五个信用卡号码的文档）
 
--   SensitiveType:“Credit Card Number|\*|85..”（置信区间为 85 % 或更高）
+-   SensitiveType:"Credit Card Number|\*|85.."（置信区间为 85 % 或更高）
 
 注意：“SensitiveType”区分大小写，但查询的其余部分不区分大小写。
 

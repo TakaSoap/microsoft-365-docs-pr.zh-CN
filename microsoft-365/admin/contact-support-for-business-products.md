@@ -22,19 +22,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: 使用针对你所在地区或区域设置列出的电话号码、联机提交服务请求或访问 Microsoft Store，以获取技术和帐单支持。
+description: 使用针对你所在国家或地区列出的电话号码、联机提交服务请求或访问 Microsoft Store，以获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627074"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707543"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>联系商业版产品的支持人员 - 管理员帮助
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="online-support"></a>[联机支持](#tab/online)
 
@@ -52,7 +51,9 @@ ms.locfileid: "43627074"
 
 ## <a name="phone-support"></a>[电话支持 ](#tab/phone)
 
-账单支持所用语言为英语，时间为星期一到星期五的上午 9 点到下午 5 点（澳大利亚为上午 9 点到下午 6 点）。  <br/>技术支持所用语言为英语，且全天候提供（每周 7 天，每天 24 小时）。 <br/> 管理员应在致电时准备好提供帐户详细信息。<br/>
+帐单支持所用语言为英语，时间为星期一到星期五的上午 9 点到下午 5 点（澳大利亚为上午 9 点到下午 6 点）。\
+技术支持所用语言为英语，且全天候提供（每周 7 天，每天 24 小时）。\
+管理员应在致电时准备好提供帐户详细信息。\
 
 - **在美国，请拨打 1 800 865 9408。**
 

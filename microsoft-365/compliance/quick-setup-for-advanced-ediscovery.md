@@ -1,5 +1,5 @@
 ---
-title: Office 365 高级电子数据展示快速设置
+title: 快速设置高级电子数据展示
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
-description: '了解如何从 Office 365 安全与合规中心访问 Office 365 高级电子数据展示，并查看使用高级电子数据展示的典型工作流。  '
-ms.openlocfilehash: 1f434fe87fd93ebee03c4300c67214011f646134
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '了解如何从安全与合规中心访问高级电子数据展示，并查看使用高级电子数据展示的典型工作流。  '
+ms.openlocfilehash: 62c2ef316daafebeba6f91483277ea344039a271
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557842"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632167"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>快速设置高级电子数据展示（经典）
 
 > [!IMPORTANT]
-> 当我们继续对较新版本的高级电子数据展示进行投资时，我们将宣布停用 Office 365 高级电子数据展示（也称为*高级电子数据展示（经典*）或*高级电子数据展示 v1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
+> 当我们继续对较新版本的高级电子数据展示进行投资时，我们将宣布停用高级电子数据展示（也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
 
 阅读本设置部分，Microsoft 365 安全与合规中心电子数据展示管理员可了解如何开始使用高级电子数据展示。 若要更好地理解本部分，需要对这两种工具都有一定的了解。
   
@@ -37,7 +37,7 @@ ms.locfileid: "42557842"
   
 若要转到高级电子数据展示中的案件集，请执行以下操作： 
   
-1. [转到 Office 365 安全与合规中心](go-to-the-securitycompliance-center.md)。 
+1. [转到安全与合规中心](go-to-the-securitycompliance-center.md)。 
     
 2. 在安全与合规中心内，依次单击“搜索和调查”**** 和“电子数据展示”****，以显示组织中的案件集列表。 
     
@@ -51,7 +51,7 @@ ms.locfileid: "42557842"
 
 下图展示了在安全与合规中心和高级电子数据展示中管理和使用电子数据展示案件集的常用工作流。 
   
-![图中显示了包含四个设置阶段的 Office 365 高级电子数据展示工作流，包括设置用户和案件集、标识案件集数据、导出和处理，然后是分析和导出到本地计算机这两个阶段。](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
+![图中显示了包含四个设置阶段的高级电子数据展示工作流，包括设置用户和案件集、标识案件集数据、导出和处理，然后是分析和导出到本地计算机这两个阶段。](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
 本设置部分展示了工作流中的前四步。若要了解工作流中的其他步骤，请参阅以下内容。
   

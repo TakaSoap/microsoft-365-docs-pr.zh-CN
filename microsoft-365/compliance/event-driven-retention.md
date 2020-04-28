@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签，能让保留期以特定类型事件发生的时间为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: 4389f3639de3e9e036491026455ce62a9e258432
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105619"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43616016"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -84,7 +84,7 @@ ms.locfileid: "43105619"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>第 1 步：创建保留期以事件为依据的标签
 
-在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，从左侧导航栏中选择“分类”**** > “保留标签”**** > “标签”**** 选项卡 >“创建标签”****。
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心，从左侧导航栏中选择“分类”**** > “保留标签”**** > “标签”**** 选项卡 >“创建标签”****。
   
 创建标签后，启用“保留”，再按如下所示选择选项，以根据事件保留或删除内容。也就是说，在第 5 步中在“事件”**** 页上创建事件前，保留设置不会生效。 
   
@@ -168,7 +168,7 @@ ms.locfileid: "43105619"
 
 评审者必须是包含 **“处置管理”** 角色和 **“仅供查看审核日志”** 角色的角色组的成员，才能获取对“事件”**** 页的访问权限。建议新建“处置评审者”角色组，向此角色组添加这两个角色，再将成员添加到角色组中。 
   
-有关详细信息，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关详细信息，请参阅[授予用户访问安全与合规中心的权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 ## <a name="automate-events-by-using-powershell"></a>使用 PowerShell 自动触发事件
 

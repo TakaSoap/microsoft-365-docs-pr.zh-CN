@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634540"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632277"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -65,7 +65,7 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>搜索 MailItemsAccessed 审核记录
 
-若要搜索 MailItemsAccessed 审核记录，可以在 Office 365 安全与合规中心内的[审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的“**Exchange 邮箱活动**”下拉列表中搜索“**访问的邮箱项目**”活动。
+若要搜索 MailItemsAccessed 审核记录，可以在安全与合规中心，在[审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的“Exchange 邮箱活动”**** 下拉列表中，搜索“访问的邮箱项目”**** 活动。
 
 ![在审核日志搜索工具中搜索 MailItemsAccessed 操作](../media/MailItemsAccessedSCC1.png)
 
@@ -85,7 +85,7 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 **可在何处访问高级审核？**
 
-向你的组织推出高级审核后，你将能够使用 [Office 365 安全与合规中心](https://protection.office.com)中的审核日志搜索工具创建审核日志保留策略并搜索 MailItemsAccessed 审核记录。 我们正致力于在未来几周内将高级审核推出到 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
+向你的组织推出高级审核后，你将能够使用[安全与合规中心](https://protection.office.com)中的审核日志搜索工具创建审核日志保留策略，并搜索 MailItemsAccessed 审核记录。 我们正致力于在未来几周内将高级审核推出到 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
 
 **是否每位用户都需要 E5 许可证才能从高级审核中受益？**
 

@@ -1,5 +1,5 @@
 ---
-title: 向 Office 365 中的个人数据应用标签
+title: 向个人数据应用标签
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,37 +17,37 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为 GDPR 保护计划的一部分。
-ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079785"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636280"
 ---
-# <a name="apply-labels-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用标签
+# <a name="apply-labels-to-personal-data"></a>向个人数据应用标签
 
  如果你使用分类标签作为 GDPR 保护计划的一部分，请使用此主题。 
 
-如果要在 Office 365 中使用标签保护个人数据，Microsoft 建议你开始使用[保留标签](labels.md)。 借助保留标签，你可以：
+如果要在 Microsoft 365 中使用标签保护个人数据，Microsoft 建议你首先使用[保留标签](labels.md)。 借助保留标签，你可以：
 - 使用“高级数据治理”根据敏感信息类型或其他条件自动应用标签。
 - 使用具有数据丢失防护的保留标签来应用保护。 
 - 在电子数据展示和内容搜索中使用标签。 
 
-Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Security 使用 Office 365 敏感信息，以监控驻留在其他 SaaS 应用上的个人数据。
+Cloud App Security 目前不支持保留标签，但你可以通过 Cloud App Security 使用 Microsoft 365 敏感信息类型，以监视驻留在其他 SaaS 应用上的个人数据。
 
-目前建议使用[敏感度标签](sensitivity-labels.md)为本地和其他云服务及提供程序中的文件应用标签。 同时建议将这些标签用于 Office 365 中需要 Azure 信息保护加密来保护数据的文件，例如贸易机密文件。
+目前建议使用[敏感度标签](sensitivity-labels.md)为本地和其他云服务及提供程序中的文件应用标签。 同时建议将这些标签用于 Microsoft 365 中需要 Azure 信息保护加密来保护数据的文件，例如贸易机密文件。
 
-目前，对于 Office 365 中包含受 GDPR 约束的数据的文件，建议不要使用 Azure 信息保护来应用加密。 Office 365 服务目前无法读入 AIP 加密的文件。 因此，该服务无法在这些文件中找到敏感数据。
+目前，对于 Microsoft 365 中包含受 GDPR 约束的数据的文件，建议不要使用 Azure 信息保护来应用加密。 Microsoft 365 服务目前无法读入 AIP 加密的文件。 因此，该服务无法在这些文件中找到敏感数据。
 
-保留标签可以应用于 Exchange Online 中的邮件，并且这些标签可与 Office 365 数据丢失防护功能一起使用。 
+保留标签可以应用于 Exchange Online 中的邮件，并且这些标签可与 Microsoft 365 数据丢失防护功能一起使用。 
 
-![Office 365 标签和 Azure 信息保护标签](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Microsoft 365 标签和 Azure 信息保护标签](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 在此图中：
 
 -   在 SharePoint Online 和 OneDrive for Business 中为个人数据、严格监管的文件和商业机密文件使用保留标签。
--   可以通过 Cloud App Security 在 Office 365 中使用 Office 365 敏感信息类型，以监控驻留在其他 SaaS 应用中的个人数据。
+-   可以通过 Cloud App Security 在 Microsoft 365 中使用 Microsoft 365 敏感信息类型，以监视驻留在其他 SaaS 应用中的个人数据。
 -   为严格监管的文件和商业机密文件、Exchange Online 电子邮件、其他 SaaS 服务中的文件、本地数据中心内的文件以及其他云提供程序中的文件使用敏感度标签。
 
 
@@ -80,7 +80,7 @@ Cloud App Security 当前不支持保留标签，但你可以通过 Cloud App Se
 <p>. . . 应用于带此标签的文档 . . .</p>
 <p>客户数据</p></td>
 <td align="left"><p>在以下情况下发出警报：当批准的 SaaS 应用中的带这些属性的文件 . . .</p>
-<p>选择一个或多个属性：预定义的 PII 属性、Office 365 敏感信息类型、敏感度标签 (AIP)、自定义表达式</p>
+<p>选择一个或多个属性：预定义的 PII 属性、Microsoft 365 敏感信息类型、敏感度标签 (AIP)、自定义表达式</p>
 <p>。 。 。 （组织外部共享的任何批准 SaaS 应用中）</p><p>注释：保留标签当前在 Cloud App Security 中不受支持。</td>
 </tr>
 <tr class="even">

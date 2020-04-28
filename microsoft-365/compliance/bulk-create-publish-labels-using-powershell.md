@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在 Office 365 中，可使用保留标签为组织实施保留计划。 使用提供的脚本和 .csv 文件，可通过 PowerShell 批量创建并发布保留标签和保留标签策略。
-ms.openlocfilehash: e7b992b8464e5c505d048b5b945d154a770fd59c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 055bc785c492e2fa37bc60ce4e383f79111c551a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105974"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636350"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 批量创建和发布保留标签
 
@@ -716,7 +716,7 @@ if ($ResultCSV)
 
 请按照下列步骤操作：
   
-- [连接到 Office 365 安全与合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+- [连接到安全与合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 ## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>第 5 步：运行 PowerShell 脚本以创建并发布保留标签
 

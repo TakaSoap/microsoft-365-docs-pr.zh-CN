@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates 已验证，当 Exchange Online 和安全与合规中心按建议配置时，它们满足 CFTC 规则 1.31(c)-(d)、FINRA 规则 4511 和 SEC 规则 17a-4 的相关存储要求。可以下载评估报告。
-ms.openlocfilehash: bf54bf5798d4bbb5b655cc367330bbb50de7f7b2
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106120"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626418"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-如果组织需要遵守保留数据的相关法规标准，Office 365 安全与合规中心将提供一些功能来管理 Exchange Online 中数据的生命周期。包括保留、审核、搜索和导出数据的功能。这些功能足以满足大多数组织的需求。
+如果组织需要遵守保留数据的相关法规标准，安全与合规中心将提供一些功能来管理 Exchange Online 中数据的生命周期。包括保留、审核、搜索和导出数据的功能。这些功能足以满足大多数组织的需求。
 
 然而，高度监管行业中的某些组织会受到更严格的法规要求。例如，银行或经纪交易商等金融机构必须遵守美国证券交易委员会 (SEC) 颁布的规则 17a-4。这条规则对电子数据存储有特定要求，包括记录管理的许多方面，如记录保留的持续时间、格式、质量、可用性和责任。
 
@@ -42,7 +42,7 @@ Cohasset 验证了当 Exchange Online 和安全与合规中心按照建议进行
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>此评估专门针对 Exchange Online
 
-请注意，此评估专门针对 Exchange Online。该评估不包括其他 Office 365 服务，如 SharePoint Online 或 OneDrive for Business（尽管我们计划在未来就 SEC 17a-4 对这些服务提供支持）。
+请注意，此评估专门针对 Exchange Online。该评估不包括其他 Microsoft 365 服务，如 SharePoint Online 或 OneDrive for Business（尽管我们计划在未来就 SEC 17a-4 对这些服务提供支持）。
 
 请务必知晓 Skype for Business 和 Teams 也会在 Exchange Online 中存储数据。因此，评估涵盖了 Skype for Business 和频道的消息，以及 Teams 的聊天消息。
 
@@ -75,4 +75,4 @@ Cohasset 验证了当 Exchange Online 和安全与合规中心按照建议进行
 - 不会为 Teams 聊天和频道消息保留赞。
 
 > [!NOTE]
-> 项目级审核现已在 Office 365 组邮箱中可用。 有关详细信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md)。
+> 项目级审核现已在 Microsoft 365 组邮箱中可用。 有关详细信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md)。

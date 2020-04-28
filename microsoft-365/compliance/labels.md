@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189064"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637440"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -38,11 +38,11 @@ ms.locfileid: "43189064"
     
 - 必须**标记为记录**以免被编辑或删除的工作签证。 
     
-无论是上述哪种用途，Office 365 中的保留标签都可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。
+无论是上述哪种用途，保留标签都可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。
   
 借助保留标签，你可以：
   
-- **方便组织内人员手动将保留标签应用于** Outlook 网页版、Outlook 2010 及更高版本、OneDrive、SharePoint 和 Office 365 组中的内容。用户通常最了解自己处理的内容类型，因此可对数据进行分类，并应用适当策略。 
+- **使组织中的人员手动将保留标签应用于** Outlook 网页版、Outlook 2010 及更高版本、OneDrive、SharePoint 和 Microsoft 365 组中的内容。用户通常最了解自己处理的内容类型，因此可对数据进行分类，并应用适当的策略。 
     
 - **将保留标签自动应用于**符合特定条件的内容，如内容包含： 
     
@@ -64,7 +64,7 @@ ms.locfileid: "43189064"
 
 - **将默认保留标签应用于 SharePoint 中的文档库、文件夹或文档集**，以让到达该位置的所有文档都继承默认保留标签。  
     
-在 Microsoft 365 合规中心、Microsoft 365 安全中心或 Office 365 安全与合规中心，创建保留标签。
+在 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心创建保留标签。
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>如何结合使用保留标签和保留标签策略
 
@@ -151,9 +151,9 @@ ms.locfileid: "43189064"
   
 |**如果保留标签…**|**可将标签策略应用于…**|
 |:-----|:-----|
-|发布给最终用户  <br/> |Exchange、SharePoint、OneDrive 和 Office 365 组  <br/> |
+|发布给最终用户  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
 |根据敏感信息类型自动应用  <br/> |Exchange（仅全部邮箱）、SharePoint 和 OneDrive  <br/> |
-|根据查询自动应用  <br/> |Exchange、SharePoint、OneDrive 和 Office 365 组  <br/> |
+|根据查询自动应用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
    
 在 Exchange 中，自动应用（同时针对查询和敏感信息类型）的保留标签只会应用于新发送的邮件（传输中的数据），而非当前邮箱中的所有项目（静态数据）。 此外，用于敏感信息类型的自动应用的保留标签只能应用于全部邮箱；不能选择特定邮箱。
   
@@ -183,7 +183,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 - SharePoint
     
-- Office 365 组（Outlook 网页版中的组网站和组邮箱）
+- Microsoft 365 组（Outlook 网页版中的组网站和组邮箱）
     
 接下来的各部分介绍了标签是如何在不同应用程序中向组织用户显示的。
   
@@ -235,17 +235,17 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 ![库自定义视图中显示的“标签”列](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
-### <a name="office-365-groups"></a>Office 365 组
+### <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-发布到 Office 365 组的保留标签同时显示在，Outlook 网页版的组网站和组邮箱中。将保留标签应用于内容的过程，与上述将保留标签应用于电子邮件和文档的过程完全相同。
+发布到 Microsoft 365 组的保留标签同时显示在 Outlook 网页版的组网站和组邮箱中。将保留标签应用于内容的过程，与上述将保留标签应用于电子邮件和文档的过程完全相同。
 
-保留 Office 365 组内容需要使用 Office 365 组位置。即使 Office 365 组有 Exchange 邮箱，包含整个 Exchange 位置的保留策略也不会包含 Office 365 组邮箱中的内容。
+保留 Microsoft 365 组内容需要使用 Microsoft 365 组位置。即使 Microsoft 365 组有 Exchange 邮箱，包含整个 Exchange 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。
 
 此外，不可能通过使用 Exchange 位置来包含或排除某个组邮箱。 尽管 Exchange 位置最初允许选择组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>根据条件自动应用保留标签
 
-保留标签最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Office 365 会代为操作。
+保留标签最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Microsoft 365 会代为操作。
   
 ![自动应用标签的角色和任务关系图](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -373,7 +373,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 保留标签可对内容强制执行保留操作。此外，还可以将保留标签用作数据丢失防护 (DLP) 策略中的条件。也就是说，DLP 策略可对包含特定标签的内容强制执行其他操作（如限制访问）。 
   
-有关详细信息，请参阅[将标签用作 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
+有关详细信息，请参阅[将保留标签用作 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
   
 ## <a name="monitor-retention-labels"></a>监视保留标签
 
@@ -433,7 +433,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 ## <a name="use-retention-labels-instead-of-these-features"></a>使用保留标签代替类似功能
 
-可将保留标签轻松应用于整个组织，及其在 Office 365（包括 Exchange、SharePoint、OneDrive 和 Office 365 组）中的内容。建议使用保留标签在 Office 365 中的任意位置上对内容进行分类或管理记录。
+可将保留标签轻松应用于整个组织，及其在 Office 365（包括 Exchange、SharePoint、OneDrive 和 Microsoft 365 组）中的内容。建议使用保留标签在 Microsoft 365 中的任意位置对内容进行分类或管理记录。
   
 还有其他几项先前用于在 Office 365 中进行内容分类或记录管理的功能。 其如下所示。 这些功能将继续与保留标签配合使用。 尽管存在保留标签的执行不同于先前功能的情况，但是保留标签的发展会驱动未来跨 Office 365 进行记录管理。 因此往前看来，对于数据管理，建议使用保留标签，而不是这些功能。
   
@@ -453,16 +453,16 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 负责创建保留标签的合规性团队成员必须有权访问安全&amp;合规中心。 默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对安全&amp;合规中心的访问权限，而不授予租户管理员的所有权限。为此，建议转到安全&amp;合规中心内的“**权限**”页，编辑“**合规性管理员**”角色组，再向此角色组添加成员。 
   
-有关详细信息，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关详细信息，请参阅[授予用户访问安全与合规中心的权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 只有在创建和应用保留标签和标签策略时，才必须拥有这些权限。强制执行策略并不需要访问内容。  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>查找标签适用的 PowerShell cmdlet
 
 若要使用标签 cmdlet，你需要：
   
-1. [连接到 Office 365 安全与合规中心 Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. 使用这些 Office 365 安全与合规中心 cmdlet：
+2. 使用这些安全与合规中心 cmdlet：
 
   - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
 

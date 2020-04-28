@@ -16,23 +16,23 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Office 365 安全与合规中心根据你组织的当前设置提供数据治理建议，并允许你通过几次单击进行设置。其中一些建议会检测组织中的特定内容，然后提供管理该内容的建议步骤。例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后让你自动为这些项目应用保留标签，以确保根据需要对它们进行分类和保留。本主题列出了你可能会看到的数据治理建议，并介绍了为触发每条建议而检测的内容。
-ms.openlocfilehash: af3c08f568bb0b44e8454ee345a84308b53cf01f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Microsoft 365 安全中心与 Microsoft 365 合规中心根据你组织的当前设置提供数据管理建议，并让你可以通过几次单击进行设置。其中一些建议会检测组织中的特定内容，然后提供管理该内容的建议步骤。例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后让你自动为这些项目应用保留标签，以确保根据需要对它们进行分类和保留。本主题列出了你可能会看到的数据管理建议，并介绍了为触发每条建议而检测的内容。
+ms.openlocfilehash: 805919aa4cfceca5f3409b0f218a3b6018fc38cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595429"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637764"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>如何确定数据治理建议的内容
 
-Office 365 安全与合规中心根据你组织的当前设置提供数据治理建议，并允许你通过几次单击进行设置。其中一些建议会检测组织中的特定内容，然后提供管理该内容的建议步骤。例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后让你自动为这些项目应用保留标签，以确保根据需要对它们进行分类和保留。
+Microsoft 365 安全中心与 Microsoft 365 合规中心根据你组织的当前设置提供数据管理建议，并让你可以通过几次单击进行设置。其中一些建议会检测组织中的特定内容，然后提供管理该内容的建议步骤。例如，建议可能会检测包含业务关键内容的项目（如律师-客户特权或 NDA 信息），然后让你自动为这些项目应用保留标签，以确保根据需要对它们进行分类和保留。
 
 本主题列出了你可能会看到的数据治理建议，并介绍了为触发每条建议而检测的内容。
 
 ## <a name="clean-up-voicemail"></a>清理语音邮件
 
-在用户邮箱中检测到标识为“语音邮件”的邮件类型的电子邮件时，将显示此建议。详细了解 [Exchange 中的邮件属性](https://docs.microsoft.com/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange)。
+在用户邮箱中检测到标识为“语音邮件”邮件类型的电子邮件时，将显示此建议。详细了解 [Exchange 中的邮件属性](https://docs.microsoft.com/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange)。
 
 ## <a name="label-attorney-client-privilege-content"></a>标记律师-客户特权内容 
 
@@ -132,7 +132,7 @@ Office 365 安全与合规中心根据你组织的当前设置提供数据治理
 
 - 在电子邮件正文中检测到以下关键字的任何组合：
     - NDA
-    - “保密性协议”
+    - “保密协议”
     - “保密协议”
 
 - 在 SharePoint 或 OneDrive 中的 .PDF 或 .DOC 文件中检测到以下关键字的任意组合：

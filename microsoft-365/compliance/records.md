@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 要在 Office 365 或 Microsoft 组织中实现记录管理策略，请使用将内容声明为记录的保留标签。 然后发布或自动应用保留记录标签。
-ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153830"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632111"
 ---
 # <a name="overview-of-records"></a>记录概述
 
@@ -108,6 +108,9 @@ ms.locfileid: "43153830"
 
 ![标记为记录的文档上的记录状态属性](../media/recordversioning8.png)
 
+> [!NOTE]
+> 记录版本控制需要 Office 365 Enterprise E5 许可证，以便有权限的用户可以编辑无法在 SharePoint 网站或 OneDrive 帐户中声明为记录的内容。 具有只读权限的用户不需要此许可证。
+
 ### <a name="locking-and-unlocking-a-record"></a>锁定和解锁记录
 
 记录标签分配到文档后，任何有参与权限或更窄权限水平的用户可解锁记录或锁定未解锁的记录。
@@ -153,7 +156,7 @@ ms.locfileid: "43153830"
 
 ### <a name="searching-the-audit-log-for-record-versioning-events"></a>搜索记录版本控制事件的审核日志
 
-锁定和解锁记录的操作会记录在 Office 365 审核日志中。 你可以搜索特定活动“将记录状态更改为已锁定”**** 和“将记录状态更改为已解锁”****，这些活动位于安全与合规性中心“审核日志搜索”**** 页面“活动”**** 下拉列表中的“文件和页面活动”**** 部分。
+锁定和解锁记录的操作会记录在审核日志中。 你可以搜索特定活动“将记录状态更改为已锁定”**** 和“将记录状态更改为已解锁”****，这些活动位于安全与合规性中心“审核日志搜索”**** 页面“活动”**** 下拉列表中的“文件和页面活动”**** 部分。
 <br/><br/>
 
 ![在审核日志中搜索记录版本控制事件](../media/recordversioning13.png)

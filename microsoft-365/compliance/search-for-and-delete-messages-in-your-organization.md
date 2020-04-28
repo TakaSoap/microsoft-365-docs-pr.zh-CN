@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 组织中搜索并删除电子邮件
+title: 在组织中搜索并删除电子邮件
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: 使用 Office 365 的安全与合规中心内的搜索和清除功能在组织中的所有邮箱中搜索并删除电子邮件。
-ms.openlocfilehash: c05b6addf2fe50a5e6130e3c53fa1df02e50de30
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+description: 使用安全与合规中心内的搜索和清除功能，在组织中的所有邮箱中搜索并删除电子邮件。
+ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516827"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626438"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜索和删除电子邮件
 
 **本文适用于管理员。你是否尝试在邮箱中查找要删除的项目？请参阅[使用“即时搜索”查找邮件或项目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**。
    
-你可以使用 Office365 中的内容搜索功能在组织中的所有邮箱中搜索并删除电子邮件。 这可以帮助你查找并删除可能有害或高风险的电子邮件，例如：
+你可以使用内容搜索功能，在组织中的所有邮箱中搜索并删除电子邮件。 这可以帮助你查找并删除可能有害或高风险的电子邮件，例如：
   
 - 包含危险附件或病毒的邮件
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 下一步是连接到组织的安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
-如果你的 Office 365 帐户使用多重身份验证 (MFA) 或联合身份验证，则无法使用上一主题中有关连接到安全与合规中心 PowerShell 的说明。 请改为参阅主题[使用多重身份验证连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell) 中的说明。
+如果你的 Microsoft 365 帐户使用多重身份验证 (MFA) 或联合身份验证，则无法使用上一主题中有关连接到安全与合规中心 PowerShell 的说明。 请改为参阅主题[使用多重身份验证连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell) 中的说明。
 
 连接到安全与合规中心 PowerShell 后，运行在上一步中准备的 **New-ComplianceSearch** 和 **Start-ComplianceSearch** cmdlet。
   
@@ -137,9 +137,9 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **删除邮件后会发生什么情况？**
 
-   使用 `New-ComplianceSearchAction -Purge -PurgeType HardDelete` 命令删除的邮件将移至“清除”文件夹，用户无法访问这些邮件。 将邮件移至“清除”文件夹后，如果为邮箱启用了单个项目恢复，则会在已删除的邮件保留期内保留邮件。 （在 Office 365 中，创建新邮箱时将默认启用单个项目恢复。）已删除项目的保留期到期后，邮件将标记为永久删除，并在托管文件夹助手下次处理邮箱时从 Office 365 中清除。 
+   使用 `New-ComplianceSearchAction -Purge -PurgeType HardDelete` 命令删除的邮件将移至“清除”文件夹，用户无法访问这些邮件。 将邮件移至“清除”文件夹后，如果为邮箱启用了单个项目恢复，则会在已删除的邮件保留期内保留邮件。 （在 Microsoft 365 中，创建新邮箱时将默认启用单个项目恢复。）已删除项目的保留期到期后，邮件将标记为永久删除，并在托管文件夹助手下次处理邮箱时从 Microsoft 365 中清除。 
 
-   如果使用 `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` 命令，邮件将移至用户的“可恢复的项目”文件夹内的“删除”文件夹中。 它不会立即从 Office 365 中清除。 在基于为邮箱配置的已删除邮件保留期的持续时间内，用户可以恢复“已删除邮件”文件夹中的邮件。 此保留期过期（或如果用户在过期之前清除邮件）后，邮件将移动到“清除”文件夹，用户将无法再访问。 进入“清除”文件夹后，如果启用了邮箱的单个邮件恢复，则邮件将保留一段时间，该时间取决于为邮箱配置的已删除邮件保留期。 （在 Office 365 中，创建新邮箱时将默认启用单个项目恢复。）已删除项目的保留期到期后，邮件将标记为永久删除，并在托管文件夹助手下次处理邮箱时从 Office 365 中清除。 
+   如果使用 `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` 命令，邮件将移至用户的“可恢复的项目”文件夹内的“删除”文件夹中。 它不会立即从 Microsoft 365 中清除。 在基于为邮箱配置的已删除邮件保留期的持续时间内，用户可以恢复“已删除邮件”文件夹中的邮件。 此保留期过期（或如果用户在过期之前清除邮件）后，邮件将移动到“清除”文件夹，用户将无法再访问。 进入“清除”文件夹后，如果启用了邮箱的单个邮件恢复，则邮件将保留一段时间，该时间取决于为邮箱配置的已删除邮件保留期。 （在 Microsoft 365 中，创建新邮箱时将默认启用单个项目恢复。）已删除项目的保留期到期后，邮件将标记为永久删除，并在托管文件夹助手下次处理邮箱时从 Microsoft 365 中清除。 
     
 - **如果必须删除超过 50,000 个邮箱中的邮件，该怎么办？**
 
@@ -149,7 +149,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
     不会，New-ComplianceSearchAction -Purge 命令不会删除未编制索引的项目。 
     
-- **如果从处于就地保留或诉讼保留状态的邮箱中删除邮件或为邮件分配 Office 365 保留策略，会发生什么情况？**
+- **如果从处于就地保留或诉讼保留状态的邮箱中删除邮件或为邮件分配 Microsoft 365 保留策略，会发生什么情况？**
 
     清除邮件并将其移至“清除”文件夹后，将保留邮件，直到保留期到期为止。 如果为无限期的保留期，则这些项目会一直保留到你删除保留设置或更改保留期。
     

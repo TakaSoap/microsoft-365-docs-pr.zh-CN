@@ -1,6 +1,6 @@
 ---
-title: Office 365 开发/测试环境中的 GDPR 发现、保护和报告
-description: 演示 Office 365 中的 GDPR 功能。
+title: 开发/测试环境中的 GDPR 发现、保护和报告
+description: 演示 Microsoft 365 中的 GDPR 功能。
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7bf98da5d358f9b76f38372353a1c2a9d0d45d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594086"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632337"
 ---
-# <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 开发/测试环境中的 GDPR 发现、保护和报告
+# <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>开发/测试环境中的 GDPR 发现、保护和报告
 
- **摘要**：演示 Office 365 中的 GDPR 功能。 
+ **摘要**：演示 Microsoft 365 中的 GDPR 功能。 
   
-本文介绍如何在 Office 365 开发/测试环境中配置和演示一般数据保护条例 (GDPR) 的个人身份信息 (PII) 发现、保护和报告。
+本文介绍如何在 Microsoft 365 开发/测试环境中配置和演示一般数据保护条例 (GDPR) 的个人身份信息 (PII) 发现、保护和报告。
   
-## <a name="phase-1-create-and-configure-your-trial-office-365-subscription"></a>第 1 阶段：创建和配置试用版 Office 365 订阅
+## <a name="phase-1-create-and-configure-your-trial-microsoft-365-subscription"></a>第 1 阶段：创建和配置试用版 Microsoft 365 订阅
 
-首先，按照 [Office 365 开发/测试环境的第 2 阶段](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription)一文中的步骤操作。
+首先，按照 [Microsoft 365 开发/测试环境的第 2 阶段](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription)一文中的步骤操作。
 
 接下来，使用这些步骤来配置电子数据展示管理器：
 
-1. 使用全局管理员帐户登录到 Office 365 试用版租户。
-2. 在 Office 365 主页上，单击“安全与合规性”****。
+1. 使用全局管理员帐户登录到 Microsoft 365 试用版租户。
+2. 在 Microsoft 365 主页上，单击“安全与合规性”****。
 3. 在新的“安全与合规性”选项卡中，单击“权限”**** > “电子数据展示管理器”****。
 4. 单击电子数据展示管理器的“编辑”****，然后单击“选择电子数据展示管理器”****。
 5. 单击“+ 添加”****，搜索全局管理员帐户名称，并添加全局管理员帐户作为电子数据展示管理器。
@@ -46,12 +46,12 @@ ms.locfileid: "41594086"
   
 ## <a name="phase-2-add-personally-identifiable-information-to-your-tenant"></a>第 2 阶段：将个人身份信息添加到租户
 
-在此阶段，将使用 PII 为一组示例国际银行帐号 (IBAN) 创建一个文档，并将其存储在 Office 365 开发/测试环境中的 SharePoint Online 网站上。
+在此阶段，将使用 PII 为一组示例国际银行帐号 (IBAN) 创建一个文档，并将其存储在 Microsoft 365 开发/测试环境中的 SharePoint Online 网站上。
 
 1. 在本地计算机上打开 Microsoft Word。
 2. 将下表粘贴到 Word 文件中，并在本地计算机上将其另存为“IBANs.docx”。
     
-    帐号  |国家/地区  |代码 |IBAN  |
+    Number  |国家/地区  |代码 |IBAN  |
     |---------|---------|---------|---------|
     |1     |  奥地利 SEPA      | AT            |AT611904300234573201       |
     |2     |  保加利亚 SEPA       |BG    |BG80BNBG96611020345678      |
@@ -99,7 +99,7 @@ ms.locfileid: "41594086"
 - 四位数的序列号。 
     - 可能的序列号值的范围是 0000 到 9999。   
 
-在内部通信、外部通信、文档和其他表单中，Contoso 通常使用 CCN 指代客户。Contoso 需要自定义敏感项类型来检测 Office 365 内容中使用的 CCN，以便对这种个人身份信息形式的使用应用保护。
+在内部通信、外部通信、文档和其他表单中，Contoso 通常使用 CCN 指代客户。Contoso 需要自定义敏感项类型来检测 Microsoft 365 内容中使用的 CCN，以便对这种个人身份信息形式的使用应用保护。
 
 1. 借助[使用多重身份验证连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) 中的说明，使用全局管理员帐户的 UPN 连接到安全与合规中心。
 2. 运行以下 PowerShell 命令。
@@ -178,7 +178,7 @@ ms.locfileid: "41594086"
 
 ## <a name="phase-5-demonstrate-data-protection"></a>第 5 阶段：演示数据保护
 
-保护 Office 365 中的个人信息，包括使用数据丢失防护 (DLP) 功能。  利用 DLP 策略，你可以自动保护 Office 365 中的敏感信息。
+保护 Microsoft 365 中的个人信息，包括使用数据丢失防护 (DLP) 功能。  利用 DLP 策略，可以自动保护 Microsoft 365 中的敏感信息。
 
 有多种方式可以应用保护。引导和提高在你的环境中存储欧盟常驻数据的位置的意识以及允许员工处理该数据的方式，这表示使用 Office 365 DLP 进行信息保护的一个级别。
 
@@ -189,7 +189,7 @@ ms.locfileid: "41594086"
 3. 单击“+ 创建策略”****。
 4. 在“从模板开始或创建自定义策略”**** 中，单击“自定义”**** > “自定义策略”**** > “下一步”****。
 5. 在“为策略命名”**** 中，提供以下详细信息，然后单击“下一步”****：a. 名称：“欧盟公民 PII 策略”**** b.说明：“保护欧洲公民的个人身份信息”****
-6. 在“选择位置”**** 中，选择“Office 365 中的所有位置”****。这将包含 Exchange 电子邮件中的内容以及 OneDrive 和 SharePoint 文档。然后单击“下一步”****。
+6. 在“选择位置”**** 中，选择“Microsoft 365 中的所有位置”****。这将包含 Exchange 电子邮件中的内容以及 OneDrive 和 SharePoint 文档。然后单击“下一步”****。
 7. 在“自定义想要保护的内容类型”**** 中，单击“查找包含以下内容的信息:”****，然后单击“编辑”****。
 8. 在“选择要保护的内容类型”**** 中，单击“添加”**** > “敏感信息类型”****。
 9. 在“敏感信息类型”**** 中，单击“+ 添加”****。
@@ -233,7 +233,7 @@ ms.locfileid: "41594086"
 
 ## <a name="phase-6-demonstrate-reporting"></a>第 6 阶段：演示报告
  
-在此阶段，将基于在第 5 阶段配置的 DLP 策略来演示 Office 365 报告。
+在此阶段，将基于在第 5 阶段配置的 DLP 策略来演示 Microsoft 365 报告。
 
    1. 在浏览器的“安全与合规性”选项卡中，单击“主页”****。
    2. 单击“报告”**** > “仪表板”**** > “DLP 策略匹配项”****。

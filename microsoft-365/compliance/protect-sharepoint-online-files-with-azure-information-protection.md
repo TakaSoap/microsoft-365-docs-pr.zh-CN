@@ -20,17 +20,17 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：应用 Azure 信息保护来保护高度机密的 SharePoint Online 团队网站中的文件。
-ms.openlocfilehash: a0a2a1e790711bf15db82068c00da5d614b498c4
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 1c704689518da14bcabb56e81830b8456ebd2951
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855447"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632187"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>使用 Azure 信息保护来保护 SharePoint Online 文件
 
 >[!Note]
->对于高度机密的 SharePoint Online 团队网站中的文件，当前解决方案使用 Office 365 敏感度标签。 请参阅[本文](protect-sharepoint-online-files-with-sensitivity-label.md)了解详细信息。
+>对于高度机密的 SharePoint Online 团队网站中的文件，当前解决方案使用 Microsoft 365 敏感度标签。 请参阅[本文](protect-sharepoint-online-files-with-sensitivity-label.md)了解详细信息。
 >
 
 本文逐步介绍了如何将 Azure 信息保护配置为，加密文件和授予对文件的权限。可以将这些文件添加到配置了高度机密保护的 SharePoint 库。也可以直接从网站中打开文件，并使用 Azure 信息保护客户端添加加密。加密和权限保护与文件如影随形，即使从网站下载文件，也不例外。 
@@ -40,12 +40,12 @@ ms.locfileid: "41855447"
 对 SharePoint Online 中的文件使用 Azure 信息保护不建议用于所有客户，但适用于部分文件需要这种保护级别的客户。
 
 关于此解决方案，请务必注意以下几点：
-- 将 Azure 信息保护加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。 共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。 数据丢失防护 (DLP) 策略只适用于元数据（包括 Office 365 标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
+- 将 Azure 信息保护加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。数据丢失防护 (DLP) 策略只适用于元数据（包括 Microsoft 365 标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
 
 - 此解决方案要求，用户必须选择通过 Azure 信息保护应用保护的标签。如果需要自动加密并便于 SharePoint 能够将文件编入索引和检查文件，建议在 SharePoint Online 中使用信息权限管理 (IRM)。为 SharePoint 库配置 IRM 后，文件会在下载以供编辑时自动加密。SharePoint IRM 有可能会影响你决定的限制。有关详细信息，请参阅[在 SharePoint 管理中心内设置信息权限管理 (IRM)](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C)。
 
 ## <a name="admin-setup"></a>管理员设置
-首先，对 Office 365 订阅按照[使用 Microsoft 365 管理中心激活 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的说明操作。
+首先，对 Microsoft 365 订阅按照[使用 Microsoft 365 管理中心激活 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的说明操作。
   
 接下来，使用新作用域内的策略以及高度机密的 SharePoint Online 团队网站用于保护和权限的子标签来配置 Azure 信息保护。
   
@@ -100,7 +100,7 @@ ms.locfileid: "41855447"
     
 - [手动安装的下载页](https://www.microsoft.com/download/details.aspx?id=53018)
     
-安装后，用户就可以运行 Office 应用程序（如 Microsoft Word），然后使用其 Office 365 帐户登录。新的“信息保护”**** 栏允许用户选择新标签。请确保你的用户知道 SharePoint Online 团队网站，以及要使用哪个标签来保护其高度机密的文件。
+安装后，用户就可以运行 Office 应用程序（如 Microsoft Word），然后使用其 Microsoft 365 帐户登录。新的“信息保护”**** 栏允许用户选择新标签。请确保你的用户知道 SharePoint Online 团队网站，以及要使用哪个标签来保护其高度机密文件。
   
 > [!NOTE]
 > 如果有多个高度敏感的 SharePoint Online 团队网站，应创建多个 Azure 信息保护作用域内策略以及多个包含上述设置的子标签，另外每个子标签的权限设置为特定 SharePoint Online 团队网站的网站成员访问组。 

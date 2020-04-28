@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 概览针对 GDPR 的 Office 365 信息保护。了解如何发现、分类、保护和监视个人数据。
-ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071154"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637216"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>针对 GDPR 的 Office 365 信息保护概述
 
@@ -103,4 +103,4 @@ GDPR 对个人数据的收集、存储、处理和共享进行了规范化。个
 
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>步骤 5 — 监视个人数据泄露
 
-Office 365 数据丢失防护报告提供了监视敏感数据的最详细的信息。可以使用 Office 365 审核日志设置自动警报并调查违规行为。Cloud App Security 将查找和监视敏感数据的功能扩展到了其他 SaaS 提供程序。有关这些工具的详细信息，请参阅[监视个人数据违规行为](/security/office-365-security/monitor-for-leaks-of-personal-data.md)。
+Office 365 数据丢失防护报告提供了监视敏感数据的最详细的信息。可以使用审核日志设置自动警报并调查违规行为。Cloud App Security 将查找和监视敏感数据的功能扩展到了其他 SaaS 提供程序。有关这些工具的详细信息，请参阅[监视个人数据违规行为](/security/office-365-security/monitor-for-leaks-of-personal-data.md)。

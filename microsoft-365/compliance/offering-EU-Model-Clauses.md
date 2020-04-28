@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d35c6ee17c326f98179e882bb8752cd38f14ec6a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602479"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637976"
 ---
 # <a name="european-union-model-clauses"></a>欧盟模式条款
 
@@ -46,8 +46,8 @@ Microsoft 向欧盟的数据保护工作组 (Article 29 Working Party) 提供了
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
-- 云应用安全
-- Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Office 365 中型企业客户的高级和本地支持。
+- Cloud App Security
+- Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Microsoft 365 商业版中型企业客户的高级和本地支持。
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune：Office 365 的 Intune 附加产品和移动设备管理的云服务部分
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
@@ -77,7 +77,7 @@ Microsoft 会持续评估欧盟标准，并根据需要更新其服务。
 
 **什么是“下层数据处理者”？**
 
-下层数据处理者会按照数据控制者的指示以及欧盟模式条款和分包合同的相应条款来处理个人数据。 Microsoft 客户（尤其是独立软件供应商 (ISV)）有时自己也是数据处理者。 在这些实例中，Microsoft 是下层数据处理者。
+“下层数据处理者”会按照数据控制者的指示以及欧盟模式条款和分包合同的相应条款来处理个人数据。 Microsoft 客户（尤其是独立软件供应商 (ISV)）有时自己也是数据处理者。 在这些实例中，Microsoft 是下层数据处理者。
 
 **从何处着手开展我自己组织的合规工作？**
 

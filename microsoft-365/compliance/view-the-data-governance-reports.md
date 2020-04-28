@@ -14,17 +14,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: 使用 Office 365 安全与合规中心内的数据管理报告，可快速查看标签是否按预期应用于内容。
-ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 使用安全与合规中心内的数据管理报告，可快速查看标签是否按预期应用于内容。
+ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068783"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626298"
 ---
 # <a name="view-the-data-governance-reports"></a>查看数据管理报告
 
-建议在创建标签后，验证它们是否按预期应用于内容。借助 Office 365 安全与合规中心内的数据管理报告，可快速查看：
+建议在创建标签后，验证它们是否按预期应用于内容。借助安全与合规中心内的数据管理报告，可快速查看：
   
 - **前 5 大标签**：此报告显示已应用于内容的前 5 大标签的应用次数。单击此报告，可查看最近应用于内容的所有标签列表，其中包括每个标签的应用次数、位置、应用方式、保留操作、是否是记录及其处置类型。 
     

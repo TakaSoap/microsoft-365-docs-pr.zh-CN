@@ -1,5 +1,5 @@
 ---
-title: 管理 Office 365 高级电子数据展示中的相关性设置
+title: 管理高级电子数据展示中的相关性设置
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
-description: 获取有关在 Office 365 高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
-ms.openlocfilehash: 49c7614eb1fec4e61fb374fb637093fd6e860619
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 获取有关在高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
+ms.openlocfilehash: fa7a8a4bd87f91d3417183a5713f5c3c06f01ebe
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557882"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632967"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>管理高级电子数据展示（经典）中的相关性设置
 

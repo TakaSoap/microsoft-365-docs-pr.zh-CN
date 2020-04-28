@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：为各种级别的信息保护创建和配置 SharePoint Online 团队网站。
-ms.openlocfilehash: 1827c4a19cfd31a236dfbd58e454c610cae14477
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 44aa7c126e3ac4b077868c055f35c0b99d678b58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075506"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636130"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署具有三层保护的 SharePoint Online 网站
 
@@ -33,9 +33,9 @@ ms.locfileid: "42075506"
   
 ## <a name="baseline-sharepoint-online-team-sites"></a>基线 SharePoint Online 团队网站
 
-基线保护同时包括公共和专用团队网站。 组织中的任何人均可发现并访问公共团队网站。 只有与团队网站关联的 Office 365 组的成员才可以发现并访问专用网站。 两种类型的团队网站均允许成员与他人共享网站。
+基线保护同时包括公共和专用团队网站。组织中的任何人均可发现并访问公共团队网站。只有与团队网站关联的 Microsoft 365 组的成员才可以发现并访问专用网站。两种类型的团队网站均允许成员与他人共享网站。
   
-### <a name="public"></a>公开
+### <a name="public"></a>公用
 
 要创建具有公共访问和权限的基线 SharePoint Online 团队网站，请按照[这些说明](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)操作。
 
@@ -100,7 +100,7 @@ ms.locfileid: "42075506"
   
 ## <a name="next-step"></a>后续步骤
 
-[使用 Office 365 标签和 DLP 保护 SharePoint Online 文件](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+[使用标签和 DLP 保护 SharePoint Online 文件](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## <a name="see-also"></a>另请参阅
 

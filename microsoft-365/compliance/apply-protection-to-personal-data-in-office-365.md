@@ -1,5 +1,5 @@
 ---
-title: 向 Office 365 中的个人数据应用保护
+title: 向个人数据应用保护
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,21 +18,21 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 了解如何使用数据丢失防护 (DLP) 策略保护 Office 365 中的个人数据。
-ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何使用数据丢失防护 (DLP) 策略保护 Microsoft 365 中的个人数据。
+ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079736"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634270"
 ---
-# <a name="apply-protection-to-personal-data-in-office-365"></a>向 Office 365 中的个人数据应用保护
+# <a name="apply-protection-to-personal-data"></a>向个人数据应用保护
 
-保护 Office 365 中的个人信息，包括使用数据丢失防护功能。 通过合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感信息。
+保护 Microsoft 365 中的个人信息，包括使用数据丢失防护功能。 通过合规中心的数据丢失防护 (DLP) 策略，可在 Microsoft 365 内识别、监视和自动保护敏感信息。
 
 本主题介绍了如何使用 DLP 保护个人数据。本主题还列出了可用于实现 GDPR 符合性的其他保护功能，其中包括在 SharePoint 库中设置权限及使用设备访问策略。
 
-## <a name="apply-protection-using-data-loss-prevention-in-office-365"></a>在 Office 365 中使用数据丢失防护应用保护
+## <a name="apply-protection-using-data-loss-prevention-in-microsoft-365"></a>在 Microsoft 365 中使用数据丢失防护应用保护
 
 借助 DLP，可以：
 
@@ -42,7 +42,7 @@ ms.locfileid: "42079736"
 
 -   帮助用户了解如何保持符合性，同时不会中断工作流。
 
--   查看显示符合组织 DLP 策略的内容的 DLP 报告。
+-   查看 DLP 报告，了解符合组织的 DLP 策略的内容。
 
 有关详细信息，请参阅[数据丢失防护策略概述](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
@@ -62,9 +62,9 @@ ms.locfileid: "42079736"
 
 ### <a name="using-dlp-for-gdpr-compliance"></a>使用 DLP 实现 GDPR 符合性
 
-Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟数据主体相关的个人数据。Office 365 DLP 可以告知合规性团队 SharePoint Online 和 OneDrive for Business 中存储的个人信息位于何处，或者用户何时发送了包含个人信息的电子邮件。当员工使用与欧盟居民有关的个人信息时，DLP 还可以为他们提供策略提示。
+Microsoft 365 DLP 的主要用途之一是识别出 Microsoft 365 环境中与欧盟数据主体相关的个人数据。Microsoft 365 DLP 可以告知合规性团队 SharePoint Online 和 OneDrive for Business 中存储的个人信息位于何处，或者用户何时发送了包含个人信息的电子邮件。当员工使用与欧盟居民有关的个人信息时，DLP 还可以为他们提供策略提示。
 
-环境中存储的欧盟居民数据位于何处，以及允许员工对其进行哪些处理，对这些感知度的培养和提高代表使用 Office 365 DLP 进行的信息保护级别。通常，已具有此信息类型访问权限的员工需要该访问权限来执行其日常工作。强制执行 DLP 策略有助于遵循 GDPR，此方式可以不限制访问权限。
+环境中存储的欧盟居民数据位于何处，以及允许员工对其进行哪些处理，对这些感知度的培养和提高代表使用 Microsoft 365 DLP 进行的信息保护级别。通常，已具有此信息类型访问权限的员工需要该访问权限来执行其日常工作。强制执行 DLP 策略有助于遵循 GDPR，此方式可以不限制访问权限。
 
 但是，若要遵循 GDPR，通常会涉及到从法律和信息安全角度对组织进行风险评估、对所存储的个人信息的类型及所在位置进行识别，以及是否有存储和处理该信息的正当理由。基于该评估实现策略来保护组织并遵循 GDPR 的过程可能需要删除员工对包含欧盟数据主体个人信息的文档的访问权限。如需进一步的保护，可配置其他 DLP 保护。
 
@@ -132,7 +132,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 </tr>
 <tr class="even">
 <td align="left">位置</td>
-<td align="left">Office 365 中的所有位置</td>
+<td align="left">Microsoft 365 中的所有位置</td>
 </tr>
 <tr class="odd">
 <td align="left">查找所包含的内容</td>
@@ -166,7 +166,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 由于内容搜索当前不允许通过电子邮件检测敏感信息类型，因此请考虑使用各个策略中的敏感信息类型的子集为 Exchange 创建单独的策略，并监视这些策略的执行情况。
 
-## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-office-365"></a>可以应用于保护 Office 365 中的个人数据的其他保护
+## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-microsoft-365"></a>可以应用于保护 Microsoft 365 中的个人数据的其他保护
 
 敏感信息类型、标签和数据丢失防护策略有助于识别包含特定数据的文档，并应用保护。但是，这些保护以针对数据访问权限设置了适当的权限、用户拥有的帐户未被攻击及设备正常运行为基础。
 
@@ -189,7 +189,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 <td align="left"><p>敏感信息类型</p>
 <p>Office 标签</p>
 <p>数据丢失防护策略</p>
-<p>适用于电子邮件的 Office 365 邮件加密</p></td>
+<p>适用于电子邮件的 Microsoft 365 邮件加密</p></td>
 </tr>
 <tr class="even">
 <td align="left">网站和库级别的保护（包括 SharePoint Online 和 OneDrive for Business 网站）</td>
@@ -198,7 +198,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 <p>网站级别的设备访问策略</p></td>
 </tr>
 <tr class="odd">
-<td align="left">服务访问保护（包括对 Office 365 中的所有服务的访问）</td>
+<td align="left">服务访问保护（包括对 Microsoft 365 中的所有服务的访问）</td>
 <td align="left"><p>企业移动性 + 安全性 (EMS) 套件中的标识和设备访问保护</p>
 <p>特权访问管理</p>
 <p>Windows 10 安全功能</p></td>
@@ -212,7 +212,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 可以在针对 GDPR 符合性配置的环境中使用下列功能。这些功能不是 GDPR 符合性所必需的，但是可以使用它们，并且不会对发现、保护、监视和报告与 GDPR 符合性有关数据的功能产生不良影响。
 
-客户密钥 — 允许客户始终控制用于加密 Office 365 内的静态数据的加密密钥。建议仅为具有管理自身加密密钥管理需求的客户启用此功能。
+客户密钥 — 允许客户始终控制用于加密 Microsoft 365 内的静态数据的加密密钥。建议仅为具有管理自身加密密钥管理需求的客户启用此功能。
 
 客户密码箱 — 使用客户密码箱可以控制 Microsoft 支持工程师访问你的数据的方式，在必要时根据具体情况解决技术问题。可以控制是否向支持工程师提供数据访问权限。为每个请求提供了到期时间。
 
@@ -259,7 +259,7 @@ Office 365 DLP 的主要用途之一是识别出 Office 365 环境中与欧盟�
 
 许多组织允许进行外部共享，以便支持协作。查看租户范围的设置是如何配置的。然后查看对包含个人数据的网站的外部共享设置。
 
-外部用户是指已邀请其访问你的 SharePoint Online 网站和文档，但不具备你的 SharePoint Online 或 Microsoft Office 365 订阅的许可证的组织外部人员。
+外部用户是指已邀请其访问你的 SharePoint Online 网站和文档，但不具备你的 SharePoint Online 或 Microsoft 365 订阅的许可证的组织外部人员。
 
 外部共享策略适用于 SharePoint Online 和 OneDrive for Business。
 
@@ -358,7 +358,7 @@ SharePoint 和 OneDrive for Business 的设备访问策略需要支持 Azure Act
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>对标识和设备的服务访问保护
 
-Microsoft 建议为访问服务的标识和设备配置保护。用于保护 Office 365 服务访问的功能也可用于保护对其他 SaaS 服务、PaaS 服务甚至是其他云提供程序中的应用的访问。
+Microsoft 建议为访问服务的标识和设备配置保护。用于保护 Microsoft 365 服务访问的功能也可用于保护对其他 SaaS 服务、PaaS 服务甚至是其他云提供程序中的应用的访问。
 
 对标识和设备的访问保护提供了基准保护，确保标识不被攻击、设备安全且在设备上访问的组织数据已隔离并受到保护。
 
@@ -374,11 +374,11 @@ Microsoft 建议为访问服务的标识和设备配置保护。用于保护 Off
 
 ### <a name="cloud-services"></a>云服务
 
-Azure Active Directory 提供对任意云服务的标识访问权限，包括非 Microsoft 提供程序（如 Amazon Web Services）。此图显示了 Office 365、“其他 SaaS 应用”和“PaaS 应用”。箭头从 Azure Active Directory 指向上述各个服务，表示 Azure Active Directory 可用于对上述所有应用类型的身份验证。
+Azure Active Directory 提供对任意云服务的标识访问权限，包括非 Microsoft 提供程序（如 Amazon Web Services）。此图显示了 Microsoft 365、“其他 SaaS 应用”和“PaaS 应用”。箭头从 Azure Active Directory 指向上述各个服务，表示 Azure Active Directory 可用于对上述所有应用类型的身份验证。
 
 ### <a name="types-of-accounts"></a>帐户类型
 
-租户域帐户是指添加到租户并直接管理的帐户。B2B 帐户是指你邀请与之进行协作的组织外部的用户的帐户。它们可以是其他 Office 365 帐户、其他组织帐户或使用者帐户（例如 Gmail）。此图显示了 Azure Active Directory 内的这两种帐户类型。
+租户域帐户是指添加到租户并直接管理的帐户。B2B 帐户是指你邀请与之进行协作的组织外部的用户的帐户。它们可以是其他 Microsoft 365 帐户、其他组织帐户或使用者帐户（例如 Gmail）。此图显示了 Azure Active Directory 内的这两种帐户类型。
 
 ### <a name="capabilities"></a>功能
 

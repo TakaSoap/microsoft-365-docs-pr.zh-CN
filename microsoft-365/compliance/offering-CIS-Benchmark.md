@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfb71a88f836fc68967398e3f27bebd11854c1de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a83c744bc9f1335e0ce2993801475fdf16164766
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602629"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627064"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Internet 安全中心 (CIS) 基准
 
@@ -46,9 +46,9 @@ CIS 基准是国际公认的保护 IT 系统和数据免受网络攻击的安全
   
 与所有 CIS 基准一样，Microsoft 基准使用一致的审查流程所创建，汇集了具有多样背景知识（包括软件开发、审核和合规性、安全研究、运营、政府和法律）的主题专家的建议。 Microsoft 在这些 CIS 工作中是不可或缺的合作伙伴。 例如，已针对上架服务对 Office 365 进行了测试，生成的 Microsoft 365 Foundation 基准涵盖了一系列关于设置适当安全策略的建议，包括帐户和身份验证、数据管理、应用程序权限、存储和其他安全策略领域。  
   
-除了 Microsoft 产品和服务的基准之外，CIS 还发布了 [CIS 强化映像](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/)，用于配置满足 CIS 基准 Azure 虚拟机。 其中包括经过认证可在 Azure 上运行的适用于 Microsoft Windows Server 2016 的 CIS 强化映像。 CIS 说明：“所有在 [Azure 市场](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security)提供的 CIS 强化映像均经过认证可在 Azure 上运行， 已针对与 Azure 公共云、由服务提供商通过云 OS 网络托管的 Microsoft 云平台和由客户管理的本地私有云 Windows Server Hyper-V 部署的就绪性和兼容性进行了预测试。”
+除了 Microsoft 产品和服务的基准之外，CIS 还发布了 [CIS 强化映像](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/)，用于配置满足 CIS 基准 Azure 虚拟机。 其中包括经过认证可在 Azure 上运行的适用于 Microsoft Windows Server 2016 的 CIS 强化映像。 CIS 说明：“所有在 [Azure 市场](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security)提供的 CIS 强化映像均经过认证可在 Azure 上运行。 已针对与 Azure 公共云、由服务提供商通过云 OS 网络托管的 Microsoft 云平台和由客户管理的本地私有云 Windows Server Hyper-V 部署的就绪性和兼容性进行了预测试。”
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - [Office 和 Microsoft 365](https://aka.ms/o365-compliance-framework)
@@ -68,7 +68,7 @@ CIS 基准是国际公认的保护 IT 系统和数据免受网络攻击的安全
 ## <a name="how-to-implement"></a>如何实现
 
 - [适用于 Azure 的 CIS 基准](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf)：获取为 Azure 建立安全基线配置的说明性指导。  
-- [Office 365 安全路线图](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)：遵循此路线图，可将数据泄露或泄露帐户的可能性降至最低。
+- [Microsoft 365 安全路线图](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)：遵循此路线图，可将数据泄露或泄露帐户的可能性降至最低。
 - [Windows 安全基线](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)：遵循以下准则，可在组织中有效使用安全基线。
 - [CIS 控制措施云配套指南](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/)：获取有关将 CIS 控制措施版本 7 中的安全最佳做法应用到云环境的指南。
 
@@ -84,7 +84,7 @@ CIS 基准修订版的发布将因开发它的 IT 专业人员的社区以及该
 
 **谁参与 Microsoft CIS 基准的开发？**
 
-CIS 指出，“基准是通过主题专家、技术供应商、公共和专用 CIS 基准社区成员以及 CIS 基准开发团队的大量志愿工作制定的。" 例如，在[当前提供的 CIS Microsoft Azure Foundations 基准 v1.0.0](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/) 中可找到 Azure 参与者名单。
+CIS 指出，“基准是通过主题专家、技术供应商、公共和专用 CIS 基准社区成员以及 CIS 基准开发团队的大量志愿工作制定的。” 例如，在[当前提供的 CIS Microsoft Azure Foundations 基准 v1.0.0](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/) 中可找到 Azure 参与者名单。
 
 ## <a name="resources"></a>资源
 

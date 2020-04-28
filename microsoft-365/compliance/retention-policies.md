@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521508"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632433"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -95,8 +95,6 @@ ms.locfileid: "43521508"
     > [!NOTE]
     > 为了防止意外的数据丢失，内容绝不会从保留库中自动删除，而是移到第二阶段回收站中。 其中的 93 天宽限期可便于管理员在必要时恢复此内容。
     
-2. **内容未被修改或删除**：如果在保留期限内未修改或删除内容，则会在保留期限结束后将内容移到第一阶段回收站。 如果用户在第一阶段回收站中删除了该内容或清空了此回收站（也称为清除），则文档会被移到第二阶段回收站。 93 天保留期包含了在第一阶段和第二阶段回收站中的停留时间。93 天后，无论文档位于第一阶段还是第二阶段回收站中，都将被永久删除。 回收站未被编入索引，因此无法进行搜索。 因此，电子数据展示搜索无法找到任何要在其上保留的回收站内容。
-
 2. **如果内容在保持期内未遭修改或删除**：在保持期结束时，文档会移到第一阶段回收站中。 如果用户从此回收站中删除文档或清空此回收站（亦称为“清除”），文档就会移到第二阶段回收站中。 在第一阶段和第二阶段回收站中的停留时间都计入 93 天保持期。93 天后，无论文档是位于第一阶段回收站中，还是位于第二阶段回收站中，都会从驻留位置永久删除。 回收站未被编入索引，因此无法进行搜索。 因此，电子数据展示搜索无法找到任何要在其上保留的回收站内容。 
 
 如果保留策略为“仅保留”或“仅删除”，内容路径在“保留后删除”策略的基础上有所变化：
@@ -333,7 +331,7 @@ Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中�
    > [!NOTE]
    > 过去的情况是，保留策略无法删除短于 30 天的 Teams 内容，但是我们已经删除了此限制。 现在，Teams 内容的保留期可以是你选择的任意天数，它可以短至 1 天。 如果保留期为一天，则在保留期到期后的最多三天内将永久删除消息。
     
-在 Teams 中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 上传到通道的文件存储在团队的 SharePoint 站点中。 因此，若要在 Teams 中保留或删除文件，必须创建适用于 OneDrive 和 Office 365 组位置的保留策略。 若要将策略应用于仅由特定用户或团队在 Teams 中共享的文件，可以选择 OneDrive 或 Office 365 组位置，并添加特定用户或团队。
+在 Teams 中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 上传到通道的文件存储在团队的 SharePoint 站点中。 因此，若要在 Teams 中保留或删除文件，必须创建适用于 OneDrive 和 Microsoft 365 组位置的保留策略。 若要将策略应用于仅由特定用户或团队在 Teams 中共享的文件，可以选择 OneDrive 或 Microsoft 365 组位置，并添加特定用户或团队。
   
 应用于 Teams 的保留策略可使用[保留锁定](#locking-a-retention-policy)。
   
@@ -342,9 +340,9 @@ Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中�
 > [!NOTE]
 > 如果为组织中的 Skype 或 Teams 位置创建保留策略，则当用户在 Outlook 桌面客户端中查看邮箱文件夹的属性时，这些策略中的某个策略将显示为默认文件夹策略。 这是 Outlook 中的错误显示问题，也是一个[已知问题](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 应作为默认文件夹策略显示的是应用于该文件夹的邮箱保留策略。 Skype 或 Teams 保留策略不适用于用户的邮箱。  
 
-### <a name="office-365-groups-locations"></a>Office 365 组位置
+### <a name="microsoft-365-groups-locations"></a>Microsoft 365 组位置
 
-要保留 Office 365 组的内容，需要使用 Office 365 组位置。 即使 Office 365 组有 Exchange 邮箱，涵盖整个 Exchange 位置的保留策略也不会包含 Office 365 组邮箱中的内容。 应用于 Office 365 组的保留策略涵盖组的邮箱和网站。 应用于 Office 365 组的保留策略将保护由 Office 365 组（包括 Microsoft Teams）创建的资源。
+若要保留 Microsoft 365 组的内容，需要使用 Microsoft 365 组位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 Exchange 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 应用于 Microsoft 365 组的保留策略涵盖组的邮箱和网站。 应用于 Microsoft 365 组的保留策略将保护由 Microsoft 365 组（包括 Microsoft Teams）创建的资源。
 
 此外，不可能通过使用 Exchange 位置来包含或排除某个组邮箱。 尽管 Exchange 位置最初允许选择组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。 
 
@@ -406,7 +404,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
     
 3. **显式包含优先于隐式包含。** 这意味着： 
     
-    1. 如果具有保留设置的标签由用户手动分配给某项目（例如 Exchange 电子邮件或 OneDrive 文档），该标签优先于在站点或邮箱级别分配的策略以及由文档库分配的默认标签。 例如，如果显式标签要保留 10 年，但分配给此站点的策略仅要保留 5 年，则优选标签的保留期。 自动应用标签被视为隐式标签，而不是显式标签，因为它们由 Office 365 自动应用。
+    1. 如果具有保留设置的标签由用户手动分配给某项目（例如 Exchange 电子邮件或 OneDrive 文档），该标签优先于在站点或邮箱级别分配的策略以及由文档库分配的默认标签。 例如，如果显式标签要保留 10 年，但分配给此站点的策略仅要保留 5 年，则优选标签的保留期。 自动应用标签被视为隐式标签，而不是显式标签，因为它们由 Microsoft 365 自动应用。
     
     2. 如果保留策略包含特定位置（如特定用户的邮箱或 OneDrive for Business 帐户），此策略优先于应用于所有用户邮箱或 OneDrive for Business 帐户（而不是包含具体用户邮箱）的其他保留策略。
     
@@ -418,13 +416,13 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
   
 ## <a name="use-a-retention-policy-instead-of-these-features"></a>使用保留策略代替类似功能
 
-可轻松将单个保留策略应用到整个组织和 Office 365 中的位置，包括 Exchange Online、SharePoint Online、OneDrive for Business 和 Office 365 组。 如果需要保留或删除 Office 365 中任何位置处的内容，建议使用保留策略。 （也可以将标签用于保留设置。 有关详细信息，请参阅[标签概述](labels.md)。）
+可轻松将单个保留策略应用到整个组织和 Microsoft 365 中的位置，包括 Exchange Online、SharePoint Online、OneDrive for Business 和 Microsoft 365 组。 如果需要保留或删除 Microsoft 365 中任何位置处的内容，建议使用保留策略。 （也可以将标签用于保留设置。 有关详细信息，请参阅[标签概述](labels.md)。）
   
-还有其他几项先前用于在 Office 365 中保留或删除内容的功能。 其如下所示。 这些功能将继续与保留策略和保留标签配合使用。 但在以后的工作中，对于信息管理，建议使用保留策略或标签，而不使用任何这些功能。 保留策略是能够在 Office 365 中同时保留和删除内容的唯一功能。
+还有其他几项先前用于在 Microsoft 365 中保留或删除内容的功能。 其如下所示。 这些功能将继续与保留策略和保留标签配合使用。 但在以后的工作中，对于信息管理，建议使用保留策略或标签，而不使用任何这些功能。 保留策略是能够在 Microsoft 365 中同时保留和删除内容的唯一功能。
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [在 Office 365 安全与合规中心内管理电子数据展示案件集](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)（电子数据展示保留） 
+- [在安全与合规中心内管理电子数据展示事例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)（电子数据展示保留） 
     
 - [就地保留和诉讼保留](https://go.microsoft.com/fwlink/?linkid=846124)（电子数据展示保留） 
 
@@ -434,7 +432,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和 OneDrive for Business
 
-- [在 Office 365 安全与合规中心内管理电子数据展示案件集](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)（电子数据展示保留） 
+- [在安全与合规中心内管理电子数据展示事例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)（电子数据展示保留） 
     
 - [在电子数据展示中心内将内容添加到案件集并保留源](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479)（电子数据展示保留） 
     
@@ -460,9 +458,9 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 
 使用“保留策略” cmdlet：
   
-1. [连接到 Office 365 安全与合规中心 Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. 使用这些 Office 365 安全与合规中心 cmdlet：
+2. 使用这些安全与合规中心 cmdlet：
     
     - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
     
@@ -484,7 +482,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 
 负责创建保留策略的合规性团队成员必须有权访问[安全&amp;合规中心](https://protection.office.com/)。 默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对[安全&amp;合规中心](https://protection.office.com/)的访问权限，而不授予租户管理员的所有权限。为此，建议转到[安全&amp;合规中心](https://protection.office.com/)内的“**权限**”页，编辑“**合规性管理员**”角色组，再向此角色组添加成员。 
   
-有关详细信息，请参阅[授予用户访问 Office 365 安全与合规中心的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 
+有关详细信息，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 
 
 只有在创建和应用保留策略时才需要这些权限。策略执行不需要访问此内容。
 

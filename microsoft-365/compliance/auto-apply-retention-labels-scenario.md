@@ -15,25 +15,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 此解决方案说明了如何使用 Office 365 保留标签管理存储在 SharePoint Online 中的产品相关文档的生命周期。 可通过使用文档元数据对内容进行分类来完成此操作，具体方法是自动应用 Office 365 保留标签并配置基于事件的保留。
-ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: 此解决方案说明了如何使用保留标签管理存储在 SharePoint Online 中的产品相关文档的生命周期。 可通过使用文档元数据对内容进行分类来完成此操作，具体方法是自动应用保留标签并配置基于事件的保留。
+ms.openlocfilehash: 214384fcdf5099f71c36425102bb62866859f910
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106034"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636390"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留标签管理 SharePoint 文档的生命周期
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-本文介绍如何通过使用 Office 365 保留标签管理存储在 SharePoint Online 中的产品相关文档的生命周期，具体方法是自动应用标签并配置基于事件的保留。 自动应用功能通过使用 SharePoint 元数据来利用文档分类。 本文中的方案基于与产品相关的文档，但是相同的概念也可以用于其他方案。 例如，在石油和天然气行业，可以管理与石油平台、钻井日志或生产许可证等实物资产相关的文档的生命周期。 在金融服务行业，你可以管理与银行账户、抵押或保险合同相关的文档。 在公共部门，你可以管理与施工许可证或纳税表相关的文档。
+本文介绍如何通过使用保留标签管理存储在 SharePoint Online 中的产品相关文档的生命周期，具体方法是自动应用标签并配置基于事件的保留。 自动应用功能通过使用 SharePoint 元数据来利用文档分类。 本文中的方案基于与产品相关的文档，但是相同的概念也可以用于其他方案。 例如，在石油和天然气行业，可以管理与石油平台、钻井日志或生产许可证等实物资产相关的文档的生命周期。 在金融服务行业，你可以管理与银行账户、抵押或保险合同相关的文档。 在公共部门，你可以管理与施工许可证或纳税表相关的文档。
 
 让我们看一下本文中的方案。 我们将探讨信息体系结构和保留标签的定义。 然后，我们将通过自动应用标签对文档进行分类，最后生成用于触发保留期的事件。
 
 ## <a name="information-architecture"></a>信息体系结构
 
-本文中的方案基于一家制造公司，它使用 Office 365 SharePoint Online 来存储与公司开发的产品相关的所有文档。 这些文档包括产品规范、与供应商签订的协议以及用户手册。 将这些文档作为企业内容管理策略的一部分存储在 SharePoint 中时，需要定义文档元数据并将其用于分类。 每个文档都具有以下元数据属性：
+本文中的方案基于一家制造公司，它使用 SharePoint Online 来存储与公司开发的产品相关的所有文档。 这些文档包括产品规范、与供应商签订的协议以及用户手册。 将这些文档作为企业内容管理策略的一部分存储在 SharePoint 中时，需要定义文档元数据并将其用于分类。 每个文档都具有以下元数据属性：
 
 - **文档类型**（例如产品规范、协议和用户手册）
 
@@ -146,7 +146,7 @@ ms.locfileid: "43106034"
 
 我们将使用关键字查询语言 (KQL) [自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)为此方案创建的保留标签。 KQL 是用于构建搜索查询的语言。 在 KQL 中，可使用关键字或托管属性进行搜索。 有关 KQL 的详细信息，请参阅 <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
-在较高级别中，我们希望告诉 Office 365 将**产品规范**保留标签应用于所有**状态**为“**终稿**”且**文档类型**为“**产品规范**”的文档。 请记住，**状态**和**文档类型**是我们先前在“[信息体系结构](#information-architecture)”部分中为产品文档内容类型定义的网站栏。 为了完成此操作，我们需要配置搜索架构。
+在较高级别中，我们希望告诉 Microsoft 365 将“产品规范”**** 保留标签应用于所有“状态”**** 为“终稿”**** 且“文档类型”**** 为“产品规范”**** 的文档。 请记住，**状态**和**文档类型**是我们先前在“[信息体系结构](#information-architecture)”部分中为产品文档内容类型定义的网站栏。 为了完成此操作，我们需要配置搜索架构。
 
 当 SharePoint 为内容创建索引时，它将自动为每个网站栏生成已爬网属性。 对于此方案，我们对**文档类型**和**状态**属性感兴趣。 对于库中的文档，需要使用正确的内容类型，并填写网站栏，以便搜索并创建已爬网属性。
 
@@ -237,7 +237,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 6. 输入标签策略的名称（例如，“**自动应用产品规范标签**”）和可选说明，然后选择“**下一步**”。 
 
-7. 在**选择位置**向导页面上，选择要应用策略的内容位置。 对于此方案，我们将策略仅应用于 SharePoint 位置，因为所有生产文档仅存储在 SharePoint 文档库中。 选择“**让我选择特定位置**”，将 Exchange 电子邮件、OneDrive 帐户和 Office 365 组的状态切换为关闭，并确保将 SharePoint 网站的状态切换为打开。 
+7. 在**选择位置**向导页面上，选择要应用策略的内容位置。 对于此方案，我们将策略仅应用于 SharePoint 位置，因为所有生产文档仅存储在 SharePoint 文档库中。 选择“让我选择特定位置”****，将 Exchange 电子邮件、OneDrive 帐户和 Microsoft 365 组的状态切换为关闭，并确保将 SharePoint 网站的状态切换为打开。 
 
     ![选择自动应用标签的指定网站](../media/SPRetentionSPlocations.png)
 
@@ -270,7 +270,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 可在安全与合规中心内手动创建事件（方法是转到**记录管理** > **事件**），选择事件类型，设置正确的资产 ID，然后输入事件的日期。 有关详细信息，请参阅[事件驱动保留概述](event-driven-retention.md)。
 
-对于此方案，我们将通过从外部生产系统生成事件来自动创建事件。 在这种情况下，生成事件的系统是一个简单的 SharePoint 列表，它指示产品是否在生产中，[Microsoft 流程](https://docs.microsoft.com/flow/getting-started)是否与列表相关并触发事件。 在现实方案中，它可以是生成事件的任何系统，例如 HR 或 CRM 系统。 Flow 包含许多可供 Office 365 工作负载（例如 Exchange、SharePoint、Teams 和 Dynamics 365）及第三方应用（例如 Twitter、Box、Salesforce 和 Workdays）使用的交互和构建块。 这使你可以轻松地将 Flow 与这些系统进行集成。 有关详细信息，请参阅[自动执行事件驱动的保留](automate-event-driven-retention.md)。
+对于此方案，我们将通过从外部生产系统生成事件来自动创建事件。 在这种情况下，生成事件的系统是一个简单的 SharePoint 列表，它指示产品是否在生产中，[Microsoft 流程](https://docs.microsoft.com/flow/getting-started)是否与列表相关并触发事件。 在现实方案中，它可以是生成事件的任何系统，例如 HR 或 CRM 系统。 Flow 包含许多可供 Microsoft 365 工作负载（例如 Exchange、SharePoint、Teams 和 Dynamics 365）及第三方应用（例如 Twitter、Box、Salesforce 和 Workdays）使用的交互和构建块。 这使你可以轻松地将 Flow 与这些系统进行集成。 有关详细信息，请参阅[自动执行事件驱动的保留](automate-event-driven-retention.md)。
 
 以下屏幕截图显示将用于触发事件的 SharePoint 列表： 
 

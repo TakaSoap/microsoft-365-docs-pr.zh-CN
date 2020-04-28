@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的安全 & 合规性中心来启用存档邮箱, 以便支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: 36a5f2003232d55fd82965773b38a26c4fa29b33
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6ff4e0eda616e9bdd5fe10832ae334c9337272f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074720"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631737"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全与合规中心中启用存档邮箱
   
@@ -41,7 +41,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用工作或学校帐户进行登录。
     
 3. 在安全与合规中心的左窗格中，单击**信息管理** \> **存档**。
     
@@ -72,7 +72,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用工作或学校帐户登录到 Office 365。
+2. 使用工作或学校帐户进行登录。
     
 3. 在安全与合规中心的左窗格中，单击**信息管理** \> **存档**。
     
@@ -133,7 +133,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
 
    有关支持就地存档的 Outlook 许可证列表, 请参阅 [Exchange 功能的 Outlook 许可证要求](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
 
-- 存档邮箱可帮助你和你的用户满足贵公司保留率、eDiscovery 和保存的要求。 例如，可以使用贵公司的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。 使用安全性 & 合规中心中的 "内容搜索" 工具搜索用户邮箱中的特定内容时, 也将搜索用户的存档邮箱。 并且, 将 "诉讼保留" 或 "Office 365 保留策略" 应用于用户的邮箱时, 也会保留存档邮箱中的邮件。
+- 存档邮箱可帮助你和你的用户满足贵公司保留率、eDiscovery 和保存的要求。 例如，可以使用贵公司的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。 使用安全性 & 合规中心中的 "内容搜索" 工具搜索用户邮箱中的特定内容时, 也将搜索用户的存档邮箱。 并且，将诉讼保留或保留策略应用于用户邮箱时，也会保留存档邮箱中的邮件。
   
 - 启用存档邮箱后, 贵公司可利用自动分配给每个邮箱的默认 Exchange 保留策略 (也称为 "邮件记录管理" 或 MRM 策略)。 启用存档邮箱时，默认 Exchange 保留策略自动执行以下操作： 
   
@@ -147,4 +147,4 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
   - [Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/?linkid=839418)
     
-  - [为 Office 365 组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+  - [为组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

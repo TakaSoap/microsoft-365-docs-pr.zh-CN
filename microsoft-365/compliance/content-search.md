@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的内容搜索
+title: 内容搜索
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: 使用 Office 365 或 Microsoft 365 合规中心内的内容搜索工具来搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Office 365 组、Yammer 组和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: 0f37daee28afabb6a63be316bd830f9b3992a044
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: 使用 Office 365 或 Microsoft 365 合规中心内的内容搜索工具来搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Microsoft 365 组、Yammer 组和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
+ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521498"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632357"
 ---
-# <a name="content-search-in-office-365"></a>Office 365 中的内容搜索
+# <a name="content-search"></a>内容搜索
 
-可以使用 Office 365 或 Microsoft 365 合规中心中的内容搜索电子数据展示工具来搜索相应的项，例如电子邮件、文档和 Office 365 组织中的即时消息对话。 使用此工具搜索以下 Office 365 服务中的项：
+可以使用 Office 365 或 Microsoft 365 合规中心中的内容搜索电子数据展示工具来搜索相应的项，例如电子邮件、文档和组织中的即时消息对话。 使用此工具搜索以下服务中的项：
   
 - Exchange Online 邮箱和公共文件夹
     
@@ -38,7 +38,7 @@ ms.locfileid: "43521498"
     
 - Microsoft Teams 
 
-- Office 365 组
+- Microsoft 365 组
 
 - Yammer 组 
     
@@ -48,7 +48,7 @@ ms.locfileid: "43521498"
 
 若要访问**内容搜索**页面以运行搜索和预览并导出搜索结果，管理员、合规专员或电子数据展示管理者必须是安全与合规中心的电子数据展示管理者角色组中的成员。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
-1. 转至 [https://protection.office.com](https://protection.office.com) 并使用 Office 365 电子邮件地址和密码登录。
+1. 转到 [https://protection.office.com](https://protection.office.com) 并使用 Microsoft 电子邮件地址和密码登录。
     
 2. 单击“**搜索**”\>“**内容搜索**”。
     
@@ -85,7 +85,7 @@ ms.locfileid: "43521498"
     
        - **位置：** 选择要搜索的内容位置。
     
-      - **所有位置：** 使用此选项搜索组织中的所有内容位置。 这包括所有 Exchange 邮箱中的电子邮件（包括所有非活动邮箱，以及所有 Microsoft Teams、Yammer 组和 Office 365 组的邮箱）、所有 Skype for Business 对话、所有 SharePoint 和 OneDrive for Business 网站（包括所有 Microsoft Teams、Yammer 组和 Office 365 组的网站），以及所有 Exchange 公用文件夹中的项。
+      - **所有位置：** 使用此选项搜索组织中的所有内容位置。 这包括所有 Exchange 邮箱中的电子邮件（包括所有非活动邮箱，以及所有 Microsoft Teams、Yammer 组和 Microsoft 365 组的邮箱）、所有 Skype for Business 对话、所有 SharePoint 和 OneDrive for Business 网站（包括所有 Microsoft Teams、Yammer 组和 Microsoft 365 组的网站），以及所有 Exchange 公用文件夹中的项。
     
       - **特定位置：** 使用此选项搜索特定内容位置。 可以搜索特定 Office 365 服务的所有内容位置（如搜索所有 Exchange 邮箱或搜索所有 SharePoint 网站），也可以搜索任何已显示 Office 365 服务的特定位置中的内容。 
     
@@ -178,7 +178,7 @@ ms.locfileid: "43521498"
   
 [搜索 OneDrive 帐户](#searching-onedrive-accounts)
   
-[搜索 Microsoft Teams 和 Office 365 组](#searching-microsoft-teams-and-office-365-groups)
+[搜索 Microsoft Teams 和 Microsoft 365 组](#searching-microsoft-teams-and-microsoft-365-groups)
 
 [搜索 Yammer 组](#searching-yammer-groups)
   
@@ -196,7 +196,7 @@ ms.locfileid: "43521498"
 
 - 有关适用于内容搜索功能的限制的说明，请参阅[内容搜索限制](limits-for-content-search.md)。
     
-- Microsoft 将会收集所有 Office 365 组织运行的内容搜索性能信息。 尽管搜索查询的复杂性可能会影响搜索项，但是影响搜索所需时长的最大因素仍然是搜索的邮箱数。 尽管 Microsoft 未为搜索时间提供服务级别协议，但是下表根据搜索中所含的邮箱数列出了内容搜索的平均搜索时间。
+- Microsoft 将会收集所有组织运行的内容搜索性能信息。 尽管搜索查询的复杂性可能会影响搜索项，但是影响搜索所需时长的最大因素仍然是搜索的邮箱数。 尽管 Microsoft 未为搜索时间提供服务级别协议，但是下表根据搜索中所含的邮箱数列出了内容搜索的平均搜索时间。
     
 |**邮箱数**|**平均搜索时间**|
 |:-----|:-----|
@@ -229,7 +229,7 @@ ms.locfileid: "43521498"
     
     ![使用关键字列表和条件时创建的查询示例](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- 运行内容搜索时，Office 365 将会自动检查搜索查询中是否存在不受支持的字符以及未大写的布尔运算符。 不受支持的字符往往会被隐藏，并且通常会引发搜索错误或者返回意外结果。 有关检查到的不受支持字符的详细信息，请参阅[检查内容搜索查询中是否存在错误](check-your-content-search-query-for-errors.md)。
+- 运行内容搜索时，Microsoft 365 将会自动检查搜索查询中是否存在不受支持的字符以及未大写的布尔运算符。 不受支持的字符往往会被隐藏，并且通常会引发搜索错误或者返回意外结果。 有关检查到的不受支持字符的详细信息，请参阅[检查内容搜索查询中是否存在错误](check-your-content-search-query-for-errors.md)。
     
 - 如果搜索查询中包含非英语字符（例如中文字符）关键字，则可以单击“**查询语言-国家/地区**”“![内容搜索中的查询语言-国家/地区](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)”并为该搜索选择语言-国家/地区文化代码值。 默认语言/区域是中性的。 如何判断是否需要更改内容搜索的语言设置？ 如果确定内容位置中包含所搜索的非英语字符，但搜索没有返回结果，则可能是语言设置的原因。 
   
@@ -239,15 +239,15 @@ ms.locfileid: "43521498"
     
     在某用户的用户主体名称 (UPN) 发生更改的情况下（这种情况很罕见），其 OneDrive 位置的 URL 将发生更改，以包含新的 UPN。 如果发生这种情况，则必须通过添加该用户的新 OneDrive URL 并删除旧 URL 来修改内容搜索。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
   
-### <a name="searching-microsoft-teams-and-office-365-groups"></a>搜索 Microsoft Teams 和 Office 365 组
+### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>搜索 Microsoft Teams 和 Microsoft 365 组
 
-可以搜索与 Office 365 组或 Microsoft Teams 关联的邮箱。 Microsoft Teams 构建于 Office 365 组之上，因此，搜索方法类似。 在这两种情况下，只会搜索组或团队邮箱。 不会搜索组或团队成员的邮箱。 若要搜索它们，必须将它们专门添加到搜索中。
+可以搜索与 Microsoft 365 组或 Microsoft Teams 关联的邮箱。 Microsoft Teams 基于 Microsoft 365 构建，因此，搜索方法类似。 在这两种情况下，只会搜索组或团队邮箱。 不会搜索组或团队成员的邮箱。 若要搜索它们，必须将它们专门添加到搜索中。
   
-搜索 Microsoft Teams 和 Office 365 组中的内容时，请注意以下内容。
+搜索 Microsoft Teams 和 Microsoft 365 组中的内容时，请注意以下内容。
   
-- 若要搜索 Teams 和 Office 365 组中的内容，必须指定与团队或组关联的邮箱和 SharePoint 网站。
+- 若要搜索 Teams 和 Microsoft 365 组中的内容，必须指定与团队或组关联的邮箱和 SharePoint 网站。
     
-- 在 Exchange Online 中运行 **Get-UnifiedGroup** cmdlet，以查看团队或 Office 365 组的属性。 这是一种获取与团队或组关联的网站 URL 的好方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性： 
+- 在 Exchange Online 中运行 **Get-UnifiedGroup** cmdlet，查看团队或 Microsoft 365 组的属性。 这是一种获取与团队或组关联的网站 URL 的好方法。 例如，以下命令显示名为“高层领导团队”的 Microsoft 365 组的选定属性： 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -260,9 +260,9 @@ ms.locfileid: "43521498"
     > [!NOTE]
     > 若要运行 **Get-UnifiedGroup** cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。 
   
-- 搜索用户邮箱时，不会搜索用户是其成员的任何团队或 Office 365 组。 类似地，在搜索团队或 Office 365 组时，只会搜索指定的组邮箱和组网站。 不会搜索组成员的邮箱和 OneDrive for Business 帐户，除非你将其显式添加到搜索中。
+- 搜索用户邮箱时，不会搜索该用户作为成员的任何团队或 Microsoft 365 组。 类似地，在搜索团队或 Microsoft 365 组时，只会搜索指定的组邮箱和组网站。 不会搜索组成员的邮箱和 OneDrive for Business 帐户，除非你将其显式添加到搜索中。
     
-- 若要获取团队或 Office 365 组的成员列表，则可以查看 Microsoft 365 管理中心 **“主页”“\>组**”页面上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令： 
+- 若要获取团队或 Microsoft 365 组的成员列表，可以查看 Microsoft 365 管理中心“主页”**\>“组”** 页上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令： 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -358,7 +358,7 @@ ms.locfileid: "43521498"
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>搜索已断开连接或已取消许可的邮箱
 
-如果从 Office 365 或 Azure Active Directory 中的一个用户帐户中删除了 Exchange Online 许可证（或整个 Office 365 许可证），那么用户的邮箱将成为*已断开连接的*邮箱。 这意味着邮箱不再与用户帐户相关联。 下面是搜索已断开连接的邮箱时将发生的情况：
+如果从用户帐户或 Azure Active Directory 中删除了 Exchange Online 许可证（或整个 Microsoft 365 许可证），那么用户的邮箱将成为*已断开连接的*邮箱。 这意味着邮箱不再与用户帐户相关联。 下面是搜索已断开连接的邮箱时将发生的情况：
 
 - 如果已从邮箱中删除许可证，则邮箱将不再可搜索。 
 
