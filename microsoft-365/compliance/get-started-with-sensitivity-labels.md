@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 1ab56f6d4fadf87de49069e93de429b7eecba577
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 8889d2706b4467be33eef473845c79a0caac606f
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707473"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907199"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -60,12 +60,12 @@ ms.locfileid: "43707473"
 
 默认情况下，你的租户的全局管理员有权访问这些管理中心，可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。要获得这一委派的受限管理员访问权限，请转到其中一个管理中心的**权限**页面，然后将成员添加到**合规性数据管理员**、**合规性管理员**或**安全管理员**角色组。
 
-如果不使用角色，可以创建新的角色组，然后将“**敏感度标签管理员**”或“**组织配置**”角色添加到此组。 有关说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+如果不使用角色，可以创建新的角色组，然后将“**敏感度标签管理员**”或“**组织配置**”角色添加到此组。 对于只读角色，请使用**敏感度标签阅读器**。 有关说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
 只有在创建和配置灵敏度标签及其标签策略时才需要这些权限。 在应用或服务中应用标这些签时不需要这些权限。
 
 > [!NOTE]
-> **敏感度标签阅读器**是目前正在向租户推出一个新角色，初始支持用于 PowerShell 标记 cmdlet，之后会支持用于管理员标记中心。
+> **敏感度标签阅读器**是一个新角色，最初仅支持 PowerShell 标签 cmdlet。 现在，将向租户推出管理员标签中心支持。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度标签的常见场景
 
