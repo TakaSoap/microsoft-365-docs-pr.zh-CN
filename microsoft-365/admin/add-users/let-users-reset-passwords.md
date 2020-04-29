@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何使用自助密码重置工具来重置密码。
-ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617142"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919431"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -46,7 +46,7 @@ ms.locfileid: "43617142"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="let-people-reset-their-own-passwords"></a>允许用户重置自己的密码 
 
@@ -65,12 +65,12 @@ ms.locfileid: "43617142"
 
 ::: moniker range="o365-21vianet"
 
-1. 在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>" 中，转到 "**设置** \> **安全&amp;隐私**" 页。
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到 "**设置** \>**设置** \> **安全&amp;隐私**" 页。
 
 ::: moniker-end
 
    
-2. 在 "**允许你的用户重置其密码**" 下，选择 " **Azure AD 管理中心**" 的链接。 将免费获得 Azure！
+2. 选择 "**自助密码重置**"，选择 "**转到 Azure 门户以启用自助密码重置**" 链接。 将免费获得 Azure！
   
 3. 在左侧导航栏中选择 "**用户**"，然后选择 "**密码重置**"。
   

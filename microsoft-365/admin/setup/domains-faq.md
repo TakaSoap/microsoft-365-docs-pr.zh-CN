@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 通过在 FAQ 中查找问题的答案，了解有关域的详细信息。
 ms.custom: okr_smb
-ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627590"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919477"
 ---
 # <a name="domains-faq"></a>关于域的常见问题解答
 
@@ -109,13 +109,13 @@ ms.locfileid: "43627590"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
@@ -151,19 +151,19 @@ ms.locfileid: "43627590"
 
 ::: moniker range="o365-worldwide"
 
-4. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+4. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-4. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>页面。
+4. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-4. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+4. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>”页面。
 
 ::: moniker-end
     
@@ -186,13 +186,13 @@ ms.locfileid: "43627590"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>”页面。
 
 ::: moniker-end
     
@@ -260,19 +260,19 @@ ms.locfileid: "43627590"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**设置**”> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>”页面。
 
 ::: moniker-end
     
@@ -492,7 +492,7 @@ ms.locfileid: "43627590"
         
     4. 将电子邮件测试给其他电子邮件系统上的人。 例如，将电子邮件发送到用户 C。应将此电子邮件传递到原始邮件服务器上的用户 C 邮箱。
         
-    5. 从外部帐户或从其他电子邮件系统上的员工电子邮件帐户中，验证是否在其他电子邮件系统上正确设置了转发。 例如，在用户 C 的 origninal 服务器帐户或 Hotmail 帐户中，向用户发送一封电子邮件，并验证它是否到达用户 A 的 Office 365 邮箱。
+    5. 从外部帐户或从其他电子邮件系统上的员工电子邮件帐户中，验证是否在其他电子邮件系统上正确设置了转发。 例如，在用户 C 的原始服务器帐户或 Hotmail 帐户中，向用户发送一封电子邮件，并验证它是否到达用户 A 的 Office 365 邮箱。
         
 9. 移动邮箱内容
     

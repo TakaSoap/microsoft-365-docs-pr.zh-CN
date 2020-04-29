@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合规中心内的内容搜索工具来搜索邮箱、SharePoint Online 网站、OneDrive 帐户、Microsoft Teams、Microsoft 365 组、Yammer 组和 Skype for Business 对话中的内容。 可以使用关键字搜索查询和搜索条件来缩小搜索结果。 然后预览并导出搜索结果。 内容搜索也是一款有效的工具，可用于搜索与 GDPR 数据主题请求相关的内容。
-ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632357"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900736"
 ---
 # <a name="content-search"></a>内容搜索
 
@@ -138,13 +138,13 @@ ms.locfileid: "43632357"
     
 3. 在“**单独的结果**”下拉列表中，单击“**搜索统计信息**”。
     
-4. 在“**类型**”下拉列表中，根据想要查看的搜索统计信息单击以下选项之一。 
+4. 在“**类型**”下拉列表中，根据想要查看的搜索统计信息单击以下选项之一：
     
-  - **摘要：** 显示所搜索的每种内容位置类型的统计信息。 这包括包含与搜索查询匹配的项的内容位置数，以及搜索结果项的总数和大小。 这是默认设置。
-    
-  - **查询：** 显示与搜索查询相关的统计信息。 这包括查询统计信息所适用的内容位置类型、统计信息所适用的搜索查询部分（请注意，“**主要**”表示整个搜索查询）、包含与搜索查询匹配的项的内容位置数量以及与搜索查询匹配（在指定内容位置）的项总数和大小。 还会显示与未编入索引的项的统计信息（也称为“*部分索引项*）。 但是，只有邮箱中的部分索引项将会包括在统计信息中。 SharePoint 和 OneDrive 中的部分索引项不会包括在统计信息中。
-    
-  - **热门位置：** 显示有关每个内容位置中与搜索查询匹配的项数量的统计信息。 将会显示前 1,000 个位置。
+    - **摘要：** 显示所搜索的每种内容位置类型的统计信息。 这包括包含与搜索查询匹配的项的内容位置数，以及搜索结果项的总数和大小。 这是默认设置。
+
+    - **查询：** 显示与搜索查询相关的统计信息。 这包括查询统计信息所适用的内容位置类型、统计信息所适用的搜索查询部分（请注意，“**主要**”表示整个搜索查询）、包含与搜索查询匹配的项的内容位置数量以及与搜索查询匹配（在指定内容位置）的项总数和大小。 还会显示与未编入索引的项的统计信息（也称为“*部分索引项*）。 但是，只有邮箱中的部分索引项将会包括在统计信息中。 SharePoint 和 OneDrive 中的部分索引项不会包括在统计信息中。
+
+    - **热门位置：** 显示有关每个内容位置中与搜索查询匹配的项数量的统计信息。 将会显示前 1,000 个位置。
     
 有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md)。
   
@@ -246,6 +246,8 @@ ms.locfileid: "43632357"
 搜索 Microsoft Teams 和 Microsoft 365 组中的内容时，请注意以下内容。
   
 - 若要搜索 Teams 和 Microsoft 365 组中的内容，必须指定与团队或组关联的邮箱和 SharePoint 网站。
+
+- 私人频道的内容将存储在每个用户的邮箱中，而不是团队邮箱中。 若要搜索私人频道中的内容，请参阅[私人频道的电子数据展示](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)。
     
 - 在 Exchange Online 中运行 **Get-UnifiedGroup** cmdlet，查看团队或 Microsoft 365 组的属性。 这是一种获取与团队或组关联的网站 URL 的好方法。 例如，以下命令显示名为“高层领导团队”的 Microsoft 365 组的选定属性： 
     
@@ -262,7 +264,7 @@ ms.locfileid: "43632357"
   
 - 搜索用户邮箱时，不会搜索该用户作为成员的任何团队或 Microsoft 365 组。 类似地，在搜索团队或 Microsoft 365 组时，只会搜索指定的组邮箱和组网站。 不会搜索组成员的邮箱和 OneDrive for Business 帐户，除非你将其显式添加到搜索中。
     
-- 若要获取团队或 Microsoft 365 组的成员列表，可以查看 Microsoft 365 管理中心“主页”**\>“组”** 页上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令： 
+- 若要获取团队或 Microsoft 365 组的成员列表，可以查看 Microsoft 365 管理中心“**主页\>”“组**”页上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令： 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -358,7 +360,7 @@ ms.locfileid: "43632357"
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>搜索已断开连接或已取消许可的邮箱
 
-如果从用户帐户或 Azure Active Directory 中删除了 Exchange Online 许可证（或整个 Microsoft 365 许可证），那么用户的邮箱将成为*已断开连接的*邮箱。 这意味着邮箱不再与用户帐户相关联。 下面是搜索已断开连接的邮箱时将发生的情况：
+如果从用户帐户或 Azure Active Directory 中删除了 Exchange Online 许可证（或整个 Microsoft 365 许可证），那么用户的邮箱将成为*断开连接的*邮箱。 这意味着邮箱不再与用户帐户相关联。 下面是搜索已断开连接的邮箱时将发生的情况：
 
 - 如果已从邮箱中删除许可证，则邮箱将不再可搜索。 
 

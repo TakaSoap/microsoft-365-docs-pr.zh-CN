@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634174"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919689"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
-通信合规性是 Microsoft 365 中新的内幕风险解决方案集的一部分，可帮助您对组织中不适当的邮件进行检测、捕获和采取补救措施，从而帮助最大限度地减少通信风险。 通过预定义和自定义策略，可以扫描策略匹配的内部和外部通信，以便指定的审阅者可以对其进行检查。 审阅者可以调查组织中扫描的电子邮件、Microsoft 团队或第三方通信，并采取适当的补救措施以确保它们符合组织的邮件标准。
+通信合规性是 Microsoft 365 中新的内幕风险解决方案集的一部分，可帮助您对组织中不适当的邮件进行检测、捕获和采取补救措施，从而帮助最大限度地减少通信风险。 通过预定义和自定义策略，可以扫描策略匹配的内部和外部通信，以便指定的审阅者可以对其进行检查。 审阅者可以在组织中调查扫描的电子邮件、Microsoft 团队、Yammer 或第三方通信，并采取适当的补救措施以确保它们符合组织的邮件标准。
 
 Microsoft 365 中的通信合规性策略可帮助您解决与合规性、内部和外部通信相关的许多新式难题，包括：
 
@@ -99,6 +99,7 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 - **Microsoft 团队**：针对公共和私有[microsoft 团队](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)频道和个人聊天的聊天通信在通信合规性中支持作为独立频道源或其他 Microsoft 365 服务。 现在，策略将自动扫描策略中定义的特定用户的所有 Microsoft 团队频道和团队，从而无需为 Microsoft 工作组工作分配保留单独的映射列表。
 - **Exchange online**：在 Microsoft 365 组织中的[exchange online](https://docs.microsoft.com/Exchange/exchange-online)上托管的所有邮箱都符合扫描条件。 与通信合规性策略条件匹配的电子邮件和附件可立即用于监视和监控报告。 Exchange Online 现在是一个可选的源通道，并且在通信合规性策略中不再需要。
+- **Yammer**：通信合规性策略支持[yammer](https://docs.microsoft.com/yammer/yammer-landing-page)中的专用邮件和公共社区对话。 Yammer 是一个可选的频道，并且必须处于[本机模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)以支持邮件和附件的扫描。
 - **Skype For Business online**：通信合规性策略支持在[Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中扫描聊天通信和关联的附件。
 - **第三方来源**：您可以从[第三方来源](archiving-third-party-data.md)扫描邮件，以获取在 Microsoft 365 组织中导入到邮箱中的数据。 通信合规性支持与几个流行平台（包括即时 Bloomberg、Facebook、Twitter 和其他平台）的连接。
 
@@ -155,4 +156,4 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 For microsoft 365](communication-compliance-configure.md)或查看[Contoso 的个案研究](communication-compliance-case-study.md)，以及如何快速配置通信合规性策略以监视 Microsoft 团队和 Exchange Online 通信中的攻击性语言。
+若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 For microsoft 365](communication-compliance-configure.md)或查看[Contoso 的个案研究](communication-compliance-case-study.md)，以及如何快速将通信合规性策略配置为在 Microsoft 团队、Exchange Online 和 Yammer 通信中监视是否有攻击性的语言。

@@ -19,14 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: df24ee91482785c725acd5b531c6b138e5e165a7
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626966"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930169"
 ---
 # <a name="supervision-policies"></a>监督策略
+
+>[!IMPORTANT]
+>在 Microsoft 365 年 2 2020 月的兼容性符合通信合规性的情况下，将停用 Office 365 中的监督。 监督策略将不再可用于创建，并且最终会在一段较长的只读访问期后删除策略。
+>
+>如果您使用监督，请注意：
+>
+>- 从2020年6月15日起，租户将不能创建新的监察策略。
+>- 2020年8月31日开始，现有策略将停止捕获新邮件。
+>- 在10月26日开始，2020，将删除现有策略。
+>
+>我们积极鼓励当前正在探索或使用 Office 365 中的监督的客户使用新的[通信合规性](communication-compliance.md)解决方案，以通过一组更丰富的智能功能来满足您的通信监视或管理法规要求。
 
 Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的员工通信。 您可以定义用于捕获组织中的内部和外部电子邮件、Microsoft 团队或第三方通信的特定策略。 然后，审阅者可以检查这些邮件，以确保它们符合组织的邮件标准，并使用分类类型解决这些问题。
 
@@ -40,16 +51,12 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 
 有关监督策略的快速概述，请参阅[Microsoft 机械通道](https://www.youtube.com/user/OfficeGarageSeries)上的[监督策略视频](https://youtu.be/C3Y8WZ7o_dI)。
 
-若要了解有关即将推出的监察功能改进和可用性的详细信息，请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
-
-想要在 Microsoft 365 中尝试新的通信合规性体验吗？ 查看[Microsoft 365 中的通信合规性](communication-compliance.md)提供的新增和改进功能。
-
 ## <a name="transitioning-from-supervision"></a>从监督过渡
 
 在 Microsoft 365 中，使用监督策略和计划转换到[通信合规性策略的](communication-compliance.md)组织需要了解这些重要事项：
 
 - Microsoft 365 中的监管解决方案将完全替换为 Microsoft 365 中的通信合规性解决方案。 对于从监督策略过渡到通信合规性的组织，我们建议在通信合规性中创建新策略，这些策略与现有监督策略具有相同的*条件*，以实现新的调查和补救措施改进。 在 Microsoft 365 中转换到通信合规性时，如果您具有内部合规性保留策略要求，则应计划将报告数据导出到监督中。
-- 在这种情况下，组织可以并行使用这两个解决方案，直到完全迁移，但在每个解决方案中使用的策略必须具有*唯一的策略名称*。 在过渡期间，可以在解决方案之间共享组和自定义关键字词典。
+- 在这种情况下，组织可以并排使用这两个解决方案，直到完全迁移，但在每个解决方案中使用的策略必须具有*唯一的策略名称*。 在过渡期间，可以在解决方案之间共享组和自定义关键字词典。
 - 在 Microsoft 365 策略匹配中保存的邮件在 Microsoft 365 中无法移动或共享到通信合规性中。
 
 有关 Office 365 中监察的退休信息，请参阅[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)了解详细信息。
@@ -60,7 +67,7 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 
 - **公司策略**
 
-    员工必须遵守其所有与业务相关的通信中的可接受使用、道德标准和其他公司政策。 监督策略可以检测到策略违规，并帮助您采取纠正措施来帮助缓解这些类型的事件。 例如，您可以监视组织中的潜在人资源违规（如骚扰或在员工通信中使用不适当或攻击性的语言）。
+    员工必须遵守其所有与业务相关的通信中的可接受使用、道德标准和其他公司政策。 监督策略可以检测到策略违规，并帮助您采取纠正措施来帮助缓解这些类型的事件。 例如，您可以监视潜在的人力资源违规（如骚扰）或在员工通信中使用不适当或攻击性的语言。
 
 - **风险管理**
 
@@ -101,12 +108,12 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 
 - **Microsoft 团队：** 可以监督公共和私有 Microsoft 团队频道和个人聊天中的聊天通信和相关附件。 团队聊天匹配监督策略条件每24小时处理一次，然后可在监督报告中进行监视。 使用以下组管理配置监督团队中的个人用户聊天和通道通信：
 
-    - **对于团队聊天监督：** 为单个用户分配或向监督策略分配一个[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)。 这适用于1对1或一对多用户/聊天的关系。
+    - **对于团队聊天监督：** 为单个用户分配或向监督策略分配一个[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)。 此配置适用于1对1或一对多用户/聊天的关系。
     - **对于团队渠道通信：** 将您要监视的每个 Microsoft 团队频道或 Microsoft 365 组分配给监督策略，其中包含特定用户。 如果将同一用户添加到其他 Microsoft 团队频道或 Microsoft 365 组，请确保将这些新的频道和组添加到监督策略中。
 
 - **Skype For Business Online：** 可以监督 Skype for Business Online 中的聊天通信和相关附件。 Skype for Business Online 聊天匹配监督策略条件每24小时处理一次，然后可在监督报告中进行监视。 受监督聊天对话源于[以前在 Skype for Business Online 中保存的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置监督 Skype for Business Online 中的用户聊天通信：
 
-    - **对于 Skype For Business Online 研讨监察：** 为单个用户分配或向监督策略分配一个[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)。 这适用于1对1或一对多用户/聊天的关系。
+    - **对于 Skype For Business Online 研讨监察：** 为单个用户分配或向监督策略分配一个[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)。 此配置适用于1对1或一对多用户/聊天的关系。
 
 - **第三方来源：** 您可以监督来自第三方源（如 Facebook 或 DropBox）的通信，以获取导入组织中的邮箱的数据。 [了解如何导入第三方数据](archiving-third-party-data.md)。
 
@@ -147,7 +154,7 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 >- 监视组织中适用于攻击性语言的 Microsoft 团队通信
 >- 阻止或阻止组织中的通信中的冒犯性语言
 
-请注意，该模型不提供冒犯性语言的详尽列表。 此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留以其自己的意愿更新模型的权利。 虽然模型可以帮助组织监视攻击性语言，但该模型并不旨在提供组织的唯一方法来监视或解决此类语言。 您的组织（而不是 Microsoft）仍负责与监控和阻止冒犯性语言相关的所有决策。
+该模型不提供冒犯性语言的详尽列表。 此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留以其自己的意愿更新模型的权利。 虽然模型可以帮助组织监视攻击性语言，但该模型并不旨在提供组织的唯一方法来监视或解决此类语言。 您的组织（而不是 Microsoft）仍负责与监控和阻止冒犯性语言相关的所有决策。
 
 冒犯性语言模型监视与以下语言类型相关的看法电子邮件：
 
@@ -277,7 +284,7 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 
 ## <a name="audit"></a>跟踪
 
-在某些情况下，您必须向法规或合规性审核人员提供信息，以证明员工活动和通信的监督。 这可能是与定义的策略相关的所有监管活动的摘要，也可能随时受监督策略更改。 监督策略具有内置审核跟踪，可以实现内部或外部审核的完整就绪状态。 监督策略监视的每个操作的详细审核历史记录都提供监督过程证明。
+在某些情况下，您必须向法规或合规性审核人员提供信息，以证明员工活动和通信的监督。 此信息可能是与定义的策略相关的所有监管活动的摘要，或任何监督策略更改的摘要。 监督策略具有内置审核跟踪，可以实现内部或外部审核的完整就绪状态。 监督策略监视的每个操作的详细审核历史记录都提供监督过程证明。
 
 审核并在统一审核日志中提供以下监察策略活动：
 

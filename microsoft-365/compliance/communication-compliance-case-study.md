@@ -1,6 +1,6 @@
 ---
-title: 案例研究-Contoso 为 Microsoft 团队和 Exchange 通信快速配置冒犯性语言策略
-description: Contoso 的个案研究以及如何快速将通信合规性策略配置为在 Microsoft 团队和 Exchange Online 通信中监视攻击性语言
+title: 案例研究-Contoso 为 Microsoft 团队、Exchange 和 Yammer 通信快速配置冒犯性语言策略
+description: Contoso 的个案研究以及如何快速配置通信合规性策略以监视 Microsoft 团队、Exchange Online 和 Yammer 通信中的攻击性语言。
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39815140d223d95275e03b0e85b931699bd69f7e
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637174"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919709"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>案例研究-Contoso 为 Microsoft 团队和 Exchange 通信快速配置冒犯性语言策略
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究-Contoso 为 Microsoft 团队、Exchange 和 Yammer 通信快速配置冒犯性语言策略
 
-Microsoft 365 中的通信合规性通过帮助您检测、捕获和采取补救措施对组织中不适当的邮件进行补救，来帮助最大限度地减少通信风险。 通过预定义和自定义策略，可以扫描策略匹配的内部和外部通信，以便指定的审阅者可以对其进行检查。 审阅者可以调查组织中扫描的电子邮件、Microsoft 团队或第三方通信，并采取适当的补救措施以确保它们符合组织的邮件标准。
+Microsoft 365 中的通信合规性通过帮助您检测、捕获和采取补救措施对组织中不适当的邮件进行补救，来帮助最大限度地减少通信风险。 通过预定义和自定义策略，可以扫描策略匹配的内部和外部通信，以便指定的审阅者可以对其进行检查。 审阅者可以在组织中调查扫描的电子邮件、Microsoft 团队、Yammer 或第三方通信，并采取适当的补救措施以确保它们符合组织的邮件标准。
 
-Contoso Corporation 是一个虚构的组织，需要快速配置一个策略来监视冒犯性语言。 他们一直使用 Microsoft 365，主要是为他们的员工提供电子邮件和 Microsoft 团队支持，但在工作场所骚扰方面有新的要求强制实施公司政策。 Contoso IT 管理员和合规性专家对使用 Microsoft 365 的基础有一个基本的了解，并且正在寻找有关如何快速开始实现通信合规性的端到端指南。
+Contoso Corporation 是一个虚构的组织，需要快速配置一个策略来监视冒犯性语言。 他们一直使用 Microsoft 365，主要是为其员工提供电子邮件、Microsoft 团队和 Yammer 支持，但需要在工作区骚扰方面强制实施公司策略的新要求。 Contoso IT 管理员和合规性专家对使用 Microsoft 365 的基础有一个基本的了解，并且正在寻找有关如何快速开始实现通信合规性的端到端指南。
 
 此案例研究将介绍快速配置通信合规性策略以监视攻击性语言通信的基础知识。 本指南包括：
 
@@ -41,7 +41,7 @@ Contoso Corporation 是一个虚构的组织，需要快速配置一个策略来
 
 ## <a name="step-1---planning-for-communication-compliance"></a>第1步-规划通信合规性
 
-Contoso IT 管理员和合规性专家在 Microsoft 365 中参加了有关合规性解决方案的在线网络研讨会，并确定通信合规性策略将帮助他们满足针对减少工作区骚扰的更新的公司策略要求。 它们共同开发了一个计划，用于创建和启用通信合规性策略，该策略将监视在 Exchange Online 中发送的电子邮件的 Microsoft 团队中发送的用于聊天的攻击性语言。 其计划包括标识：
+Contoso IT 管理员和合规性专家在 Microsoft 365 中参加了有关合规性解决方案的在线网络研讨会，并确定通信合规性策略将帮助他们满足针对减少工作区骚扰的更新的公司策略要求。 它们共同开发了一个计划，用于创建和启用通信合规性策略，该策略将监视在 Microsoft 团队中发送的攻击性语言、Yammer 中的私人邮件和社区对话以及在 Exchange Online 中发送的电子邮件中的聊天。 其计划包括标识：
 
 - 需要访问通信合规性功能的 IT 管理员。
 - 需要创建和管理通信策略的合规性专家。
@@ -146,6 +146,12 @@ Contoso IT 管理员和合规性专家也可以通过选择 Microsoft 365 解决
 通信合规性需要审核日志来显示通知并跟踪审阅者采取的修正操作。 审核日志汇总了与已定义的组织策略相关联的所有活动，或只要有对通信合规性策略的更改。
 
 Contoso IT 管理员查看并完成有关启用审核的[分步说明](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。 在他们启用审核后，会显示一条消息，指出正在准备审核日志，并且在准备完成后，可以在几个小时内运行搜索。 Contoso IT 管理员只需执行一次此操作。
+
+### <a name="configuring-yammer-tenant-for-native-mode"></a>为本机模式配置 Yammer 租户
+
+通信合规性要求组织的 Yammer 租户处于本机模式，以监视私人邮件和公共社区对话中的冒犯性语言。
+
+Contoso IT 管理员确保他们在[microsoft 365 主题中查看 Yammer 本机模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)中的信息，并按照在[为 Microsoft 365 的本机模式配置 Yammer 网络](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)主题中运行迁移工具的步骤进行操作。
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>为范围内用户设置组
 

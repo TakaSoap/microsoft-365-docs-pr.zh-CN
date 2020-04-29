@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09b955a3cf5b987d2ca7dac37c4c604fb45a2e56
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635780"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930140"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签
 
@@ -58,7 +58,7 @@ ms.locfileid: "43635780"
 
 你随时都可以选择退出此预览。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 这些功能仅适用于[敏感度标签](sensitivity-labels.md)。 如果你当前有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便可以为上传的新文件启用这些功能。 有关说明，请参阅[如何将 Azure 信息保护标签迁移到统一敏感度标签](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
@@ -104,7 +104,7 @@ ms.locfileid: "43635780"
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>为预览准备 SharePoint Online 命令行管理程序
 
-在启用预览之前，请确保您运行的是 SharePoint Online 命令行管理程序版本16.0.19418.12000 或更高版本。 如果已有最新版本，可以继续并启用预览。
+若要使用 PowerShell 启用预览，请确保您运行的是 SharePoint Online 命令行管理程序版本16.0.19418.12000 或更高版本。 如果已有最新版本，可以继续并启用预览。
 
 1. 如果已从 PowerShell 库安装早期版本的 SharePoint Online 命令行管理程序，可通过运行以下 cmdlet 来更新模块。
 
@@ -119,7 +119,6 @@ ms.locfileid: "43635780"
 4. 选择语言，然后单击“**下载**”。
 
 5. 在 x64 和 x86.msi 文件之间进行选择。 如果运行的是64位版本的 Windows 或 x86 文件（如果运行32位版本），请下载 x64 文件。 如果您不知道，请参阅[我运行的是哪个版本的 Windows 操作系统？](https://support.microsoft.com/help/13443/windows-which-operating-system)
-
 
 6. 下载文件后，运行文件并按照安装向导中的步骤操作。
 
@@ -137,6 +136,25 @@ ms.locfileid: "43635780"
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. 对于 Office 365 多地理位置：对剩下的每个地理位置重复步骤1和2。
+
+## <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>使用合规性中心启用敏感度标签支持
+
+此选项当前正在将租户作为启用预览的替代方法来推出。
+
+组织的全局管理员具有创建和管理敏感度标签各方面的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理敏感度标签所需的权限](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)。
+
+1. 登录[Microsoft 365 合规性中心](https://compliance.microsoft.com/)，并导航到 "**解决方案** > **信息保护**"
+    
+    如果看不到此选项，请先选择“**全部显示**”。 
+
+2. 在 "**标签**" 选项卡上，如果您看到一条消息，以打开在 Office online 文件中处理内容的功能，请选择 "**立即打开"**：
+    
+    ![启用 "立即打开" 按钮以启用 Office Online 的敏感度标签](../media/sensitivity-labels-turn-on-banner.png)
+    
+    该命令将立即运行，当页面下次刷新时，您将不会再看到该消息或按钮。 
+
+> [!NOTE]
+> 如果你有 Office 365 多地理位置，则必须使用 PowerShell 为你的所有地理位置启用这些功能。 有关说明，请参阅上一节。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>创建或更改敏感度标签后计划回滚
 

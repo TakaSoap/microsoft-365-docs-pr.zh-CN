@@ -19,17 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c13e481cfc55e56d8cc1c0a772f2f661992f5353
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632367"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921454"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中配置监督策略
 
 >[!IMPORTANT]
->本主题适用于在 Microsoft 365 订阅中配置监督策略。 如果要为 Microsoft 365 订阅配置通信合规性，请参阅[在 microsoft 365 中配置通信合规性](communication-compliance-configure.md)。
+>在 Microsoft 365 年 2 2020 月的兼容性符合通信合规性的情况下，将停用 Office 365 中的监督。 监督策略将不再可用于创建，并且最终会在一段较长的只读访问期后删除策略。
+>
+>如果您使用监督，请注意：
+>
+>- 从2020年6月15日起，租户将不能创建新的监察策略。
+>- 2020年8月31日开始，现有策略将停止捕获新邮件。
+>- 在10月26日开始，2020，将删除现有策略。
+>
+>我们积极鼓励当前正在探索或使用 Office 365 中的监督的客户使用新的[通信合规性](communication-compliance.md)解决方案，以通过一组更丰富的智能功能来满足您的通信监视或管理法规要求。
 
 使用监督策略来捕获由内部或外部审阅者进行检查的员工通信。 有关监察策略如何帮助您监视组织中的通信的详细信息，请参阅[Office 365 中的监察策略](supervision-policies.md)。
 

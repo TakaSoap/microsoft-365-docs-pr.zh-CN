@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 了解如何验证您的域，并在 Cloudflare for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: f04e4b4a29085a3ddd9b388c7178c1cd638445ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ccd629dfdec24e509144c205b748a883cb65d554
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629703"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919623"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 处为 Microsoft 创建 DNS 记录
 
@@ -35,7 +35,7 @@ ms.locfileid: "43629703"
   
 在 Cloudflare 中添加这些记录后，您的域将设置为与 Microsoft 365 服务一起使用。
   
-若要了解 Microsoft 相关网站的托管和 DNS，请参阅[将公共网站与 microsoft 结合使用](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
+若要了解如何与 Microsoft 结合使用网站的 Web 宿主和 DNS，请参阅[配合使用公共网站与 Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -48,7 +48,7 @@ ms.locfileid: "43629703"
   
 注册 Cloudflare 时，使用 Cloudflare**安装**过程添加了一个域。 
   
-您添加的域是从单独的域注册机构购买的;Cloudflare 不提供域注册服务。 若要在 Microsoft 365 中验证和创建域的 DNS 记录，首先需要在域注册机构中更改名称服务器，以便它们使用 Cloudflare 的名称服务器。
+您添加的域是从 Cloudflare 或单独的域注册机构购买的。 若要在 Microsoft 365 中验证和创建域的 DNS 记录，首先需要在域注册机构中更改名称服务器，以便它们使用 Cloudflare 的名称服务器。
   
 若要在域注册机构的网站上更改域的名称服务器，请执行以下步骤。
   
@@ -72,7 +72,7 @@ ms.locfileid: "43629703"
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 <a name="BKMK_verify"> </a>
 
-在将你的域用于 Microsoft 之前，我们必须确保你拥有此域。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 证明你拥有该域的 DNS 记录。
+在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。
   
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -88,7 +88,7 @@ ms.locfileid: "43629703"
     
     |**类型**|**名称**|**自动 TTL**|**内容**|
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 分钟  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 此为示例。 从表中使用您的特定**目标或指向 "地址**" 值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 分钟  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)    |
   
     
 5. 选择“**保存**”。
@@ -98,9 +98,9 @@ ms.locfileid: "43629703"
     
 现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并搜索该记录。
   
-当 Microsoft 找到正确的 TXT 记录时，您的域将会得到验证。
+Microsof 找到正确的 TXT 记录表明域已通过验证。
   
-1. 在 Microsoft 管理中心，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在 Microsoft 管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
     
 2. 在“**域**”页面上，选择要验证的域。 
@@ -118,7 +118,7 @@ ms.locfileid: "43629703"
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加 MX 记录，以便你的域的电子邮件将发送给 Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. 若要开始，请使用[此链接](https://www.cloudflare.com/a/login)转到 Cloudflare 上的 "域" 页面。 系统将会提示您先登录。
@@ -180,7 +180,7 @@ ms.locfileid: "43629703"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你已有域的 SPF 记录，请不要为 Microsoft 365 创建一个新的。 改为将所需的 Microsoft 365 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 365 创建新记录。 可以将所需的 Microsoft 365 值添加到当前记录，这样就拥有包含两组值的*单个* SPF 记录。 
   
 1. 若要开始，请使用[此链接](https://www.cloudflare.com/a/login)转到 Cloudflare 上的 "域" 页面。 系统将会提示您先登录。
     

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25f69491156d7862d9dc145123ec158a3ff40556
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634184"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919669"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -43,13 +43,13 @@ ms.locfileid: "43634184"
 
 |**区域**|**策略模板**|**Details**|
 |:-----|:-----|:-----|
-| **冒犯性语言和反骚扰** | 监视攻击性语言的通信 | -位置： Exchange、团队、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：100% <br> -条件：冒犯性语言分类符 |
-| **敏感信息** | 监视敏感信息的通信 | -位置： Exchange、团队、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：10% <br> -条件：敏感信息、现成的内容模式和类型、自定义词典选项、大于 1 MB 的附件 |
-| **合规性** | 监视与金融合规性相关的信息的通信 | -位置： Exchange、团队、Skype for Business <br> -方向：入站、出站 <br> -审阅百分比：10% <br> -条件：自定义词典选项，附件大于 1 MB |
+| **冒犯性语言和反骚扰** | 监视攻击性语言的通信 | -位置： Exchange Online、Microsoft 团队、Yammer、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：100% <br> -条件：冒犯性语言分类符 |
+| **敏感信息** | 监视敏感信息的通信 | -位置： Exchange Online、Microsoft 团队、Yammer、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：10% <br> -条件：敏感信息、现成的内容模式和类型、自定义词典选项、大于 1 MB 的附件 |
+| **合规性** | 监视与金融合规性相关的信息的通信 | -位置： Exchange Online、Microsoft 团队、Yammer、Skype for Business <br> -方向：入站、出站 <br> -审阅百分比：10% <br> -条件：自定义词典选项，附件大于 1 MB |
 
 ## <a name="supervised-users"></a>受监督用户
 
-在开始使用通信合规性之前，必须确定哪些用户需要查看其通信。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例是 Microsoft 365 组、基于 Exchange 的通讯组列表和 Microsoft 团队频道。 此外，还可以将特定用户或组排除在扫描时使用特定的排除组或组列表。
+在开始使用通信合规性之前，必须确定哪些用户需要查看其通信。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例是 Microsoft 365 组、基于 Exchange 的通讯组列表、Yammer 社区和 Microsoft 团队频道。 此外，还可以将特定用户或组排除在扫描时使用特定的排除组或组列表。
 
 >[!IMPORTANT]
 >通信合规性策略涵盖的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。如果你没有现有的企业版 E5 计划，并且想要尝试进行通信合规性，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
@@ -75,6 +75,8 @@ ms.locfileid: "43634184"
 
 - **Exchange 电子邮件**：作为 Microsoft 365 或 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件扫描。 Exchange 电子邮件和与通信合规性策略条件匹配的附件可能需要长达24小时才能完成处理。 通信合规性支持的附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
+- **Yammer**：可以扫描 yammer 社区中的私人邮件和公共对话以及关联的附件。 将用户添加到包含 Yammer 作为定义的频道的通信合规性策略时，扫描过程中将包含该用户所属的所有 Yammer 社区之间的通信。 Yammer 聊天和与通信合规性策略条件匹配的附件可能需要长达24小时才能完成处理。 Yammer 必须处于[本机模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以使通信合规性策略监视 Yammer 通信和附件。 在本机模式中，所有 Yammer 用户都在 Azure Active Directory （AAD）中，所有组都是 Office 365 组，并且所有文件都存储在 SharePoint Online 中。
+
 - **Skype For Business online**：可以监督 skype For business online 中的聊天通信和相关附件。 符合通信合规性策略条件的 Skype for Business Online 聊天可能需要长达24小时才能完成处理。 受监督聊天对话源于[以前在 Skype for Business Online 中保存的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置监督 Skype for Business Online 中的用户聊天通信：
 
     - **对于 Skype For Business Online 聊天通信**：分配个人用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 此设置适用于一对一或一对多的用户/聊天关系。
@@ -84,7 +86,6 @@ ms.locfileid: "43634184"
     - [即时 Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
     - [领英](archive-linkedin-data.md)
-    - SAP SuccessFactors
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [自定义数据连接器](archiving-third-party-data.md)
 
@@ -236,7 +237,7 @@ ms.locfileid: "43634184"
 | **收件人** | 向其发送邮件的用户。 |
 | **Sender** | 发送邮件的人员。 |
 | **发件人域** | 发送邮件的域。 |
-| **Size** | 邮件的大小，以 KB 为单位。 |
+| **大小** | 邮件的大小，以 KB 为单位。 |
 | **主题/职务** | 邮件主题或聊天标题。 |
 | **Tags** | 分配给邮件的标记，无论是*可疑*的*还是**不兼容*的。 |
 | **升级到** | 作为邮件升级操作的一部分包含的人员的用户名。 |

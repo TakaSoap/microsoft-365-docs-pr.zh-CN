@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 管理中心-了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: e0f7242ff144b5e4b42a6cb1713b2ad5df41f2f3
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907233"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919756"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -49,6 +49,7 @@ ms.locfileid: "43907233"
 - [Microsoft Intune 中的新增功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Microsoft 365 合规性中心的新增功能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Exchange 管理中心中的新增功能](https://docs.microsoft.com/Exchange/whats-new)
 - [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
 
 ## <a name="march-2020"></a>2020 年 3 月
@@ -96,6 +97,7 @@ ms.locfileid: "43907233"
 ### <a name="videos-training-and-docs"></a>视频、培训和文档
 
 [Microsoft 365 web 系列中的新增功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)：在本月的几个部分中，我们突出显示了 microsoft 团队的3年周年纪念日，并涵盖了新功能，包括在线会议中改进的音频质量、有关 firstline 管理器的目标通信、团队和 Skype 消费者互操作性等。
+
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -259,7 +261,7 @@ Howdy，合作伙伴！ （无法帮助我自己。）我们也为你提供了�
 > [!IMPORTANT]
 > 现在，你可以使用常规 URL 访问你的 SharePoint 管理中心：[https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
-有关详细信息，请参阅[SharePoint 管理中心中的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+有关详细信息，请参阅[SharePoint 管理中心中的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)。
 
 ## <a name="september-2019"></a>2019 年 9 月
 
@@ -393,7 +395,7 @@ Howdy，合作伙伴！ （无法帮助我自己。）我们也为你提供了�
 - **Intune 设备保护**-如果你的许可证包括 intune，并且我们检测到你尚未完成设置 intune 或注册设备，我们建议你创建 Intune 策略，以便在用户从其移动设备访问组织的文件时对其进行保护。
 - **获取每月 office 功能更新**-我们从非常小的客户那里获得了反馈，当他们获得每月 office 功能更新时，他们的用户会感到更开心。 因此，如果你是一位非常小的企业，并且你目前每六个月都可以获得 Office 功能更新，你将看到此建议。
 
-**设置** <br>
+**Settings** <br>
 对于设置，已进行了很多更改。 大多数情况下，只需将现有设置更新为新的管理中心样式即可。 当我们继续发展并添加以前从未见过的新设置时，我们将在此处开始提及它们。 同时，我们还准备了一个完整的设置来宣布：**新式验证**。 是的，有新的设置可启用**新式验证**！ 若要将其签出，请转到**Settings** > **Services & 外接程序** > **新式身份验证**。
 
 ## <a name="april-2019"></a>2019 年 4 月
