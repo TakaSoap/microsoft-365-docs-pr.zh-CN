@@ -16,22 +16,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
+ROBOTS: NOINDEX, NOFOLLOW
 description: 在安全 & 合规性中心中添加和管理活动警报，以便 Microsoft 365 会在用户执行特定活动时向您发送电子邮件通知。
-ms.openlocfilehash: c649424ac1c20ea92e9b4cc637bab3ee89ac9a64
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634226"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943161"
 ---
 # <a name="create-activity-alerts"></a>创建活动通知
 
 您可以创建一个活动通知，当用户在 Office 365 中执行特定活动时，将向您发送电子邮件通知。 活动通知类似于在审核日志中搜索事件，不同之处在于，当您创建了通知的活动事件发生时，将会发送一封电子邮件。 
   
- **为什么要使用活动通知而不是在审核日志中搜索？** 特定用户可能会执行某些类型的活动或活动，您真正希望了解这些活动或活动。 您可以使用活动通知让 Microsoft 365 在用户执行这些活动时向您发送电子邮件，而无需记住在审核日志中搜索这些活动。 例如，您可以创建一个活动通知，以在用户删除 SharePoint 中的文件时通知您，也可以创建一个通知，以在用户从其邮箱中永久删除邮件时通知您。 发送给您的电子邮件通知包括有关执行了哪个活动以及执行该活动的用户的信息。 
+ **为什么要使用活动通知而不是在审核日志中搜索？** 特定用户可能会执行某些类型的活动或活动，您真正希望了解这些活动或活动。 您可以使用活动通知让 Microsoft 365 在用户执行这些活动时向您发送电子邮件，而无需记住在审核日志中搜索这些活动。 例如，您可以创建一个活动通知，以在用户删除 SharePoint 中的文件时通知您，也可以创建一个通知，以在用户从其邮箱中永久删除邮件时通知您。 发送给您的电子邮件通知包括有关执行了哪个活动以及执行该活动的用户的信息。
 
 > [!NOTE]
-> 我们建议您开始使用安全与合规中心中的通知策略，而不是创建新的活动通知。 警报策略提供了一些附加功能，如创建在任何用户执行指定活动时触发警报的通知策略，以及在安全与合规中心的 "**查看通知**" 页上显示警报的功能。 有关详细信息，请参阅[警报策略](alert-policies.md)。
+> 活动通知将被弃用。 我们建议您开始使用安全与合规中心中的通知策略，而不是创建新的活动通知。 警报策略提供了一些附加功能，如创建在任何用户执行指定活动时触发警报的通知策略，以及在安全与合规中心的 "**查看通知**" 页上显示警报的功能。 有关详细信息，请参阅[警报策略](alert-policies.md)。
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -47,7 +48,7 @@ ms.locfileid: "43634226"
 
 1. 转到 [https://protection.office.com/managealerts](https://protection.office.com/managealerts)。
     
-2. 使用您的工作或学校帐户登录。
+2. 使用工作或学校帐户进行登录。
     
 3. 在 "**活动通知**" 页面上![，单击](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) "**新建**图标"。
 
@@ -86,7 +87,7 @@ ms.locfileid: "43634226"
   
 1. 转到 "转[https://protection.office.com/managealerts](https://protection.office.com/managealerts)到"。
     
-2. 使用您的工作或学校帐户登录。
+2. 使用工作或学校帐户进行登录。
     
 3. 在组织的活动通知列表中，单击要禁用的通知。
     

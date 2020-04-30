@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: 了解如何验证您的域，并在 Hostgator for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 9ac14d516dff6e84dd0fb06a6632376d475689fb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d2d8d535d137ca3de2fc6dfc04abe8cf61dda07d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629523"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939187"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>在 Hostgator 处为 Microsoft 创建 DNS 记录
 
@@ -38,10 +38,10 @@ ms.locfileid: "43629523"
 
 在 Hostgator 中进行所有这些更改后，您的域将设置为使用 Microsoft 服务。
   
-若要了解 Microsoft 相关网站的托管和 DNS，请参阅[将公共网站与 microsoft 结合使用](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅在[添加域或 DNS 记录后查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="point-your-domain-to-your-hosting-account"></a>将你的域指向你的托管帐户
 <a name="BKMK_PointDomain"> </a>
@@ -70,7 +70,7 @@ ms.locfileid: "43629523"
 > [!IMPORTANT]
 > 执行此过程之前，必须首先执行本文第一部分[将域指向托管帐户](#point-your-domain-to-your-hosting-account)中的过程。 
   
-在将你的域用于 Microsoft 之前，我们必须确保你拥有此域。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 证明你拥有该域的 DNS 记录。
+在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。
   
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -91,17 +91,17 @@ ms.locfileid: "43629523"
     |||||
     |:-----|:-----|:-----|:-----|
     |**名称** <br/> |**TTL** <br/> |**类型** <br/> |**TXT 数据** <br/> |
-    |使用您的*domain_name*。 （例如，fourthcoffee.com.)。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 此为示例。 从表中使用您的特定**目标或指向 "地址**" 值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |使用您的*domain_name*。 （例如，fourthcoffee.com.)。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. 选择 "**添加记录**"。
     
 5. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求该记录。
+在在域注册机构网站添加了记录后，你将返回到 Microsoft 并请求记录。
   
-当 Microsoft 找到正确的 TXT 记录时，您的域将会得到验证。
+Microsof 找到正确的 TXT 记录表明域已通过验证。
   
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
     
 2. 在“**域**”页面上，选择要验证的域。 
     
@@ -110,9 +110,9 @@ ms.locfileid: "43629523"
 4. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅在[添加域或 DNS 记录后查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加 MX 记录，以便你的域的电子邮件将发送给 Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 > [!IMPORTANT]
@@ -170,8 +170,8 @@ ms.locfileid: "43629523"
     |autodiscover. *domain_name*。 （例如，autodiscover.fourthcoffee.com。）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip. *domain_name*。 （例如，sip.fourthcoffee.com。）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
     |lyncdiscover. *domain_name*。 （例如，lyncdiscover.fourthcoffee.com。）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
-    |enterpriseregistration. *domain_name*。 （例如，enterpriseregistration.fourthcoffee.com。）  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |CNAME  <br/> |EnterpriseRegistration.windows.net  <br/> |
-    |enterpriseenrollment. *domain_name*。 （例如，enterpriseregistration.fourthcoffee.com。）  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |enterpriseregistration. *domain_name*。 （例如，enterpriseregistration.fourthcoffee.com。）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |CNAME  <br/> |EnterpriseRegistration.windows.net  <br/> |
+    |enterpriseenrollment. *domain_name*。 （例如，enterpriseregistration.fourthcoffee.com。）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
 
   
 4. 选择 "**添加记录**"。
@@ -186,7 +186,7 @@ ms.locfileid: "43629523"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你已有域的 SPF 记录，请不要为 Microsoft 创建一个新的。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的单个 SPF 记录。 需要示例吗？ 查看[Microsoft 的这些外部域名系统记录](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.md)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 可以将所需的 Microsoft 值添加到当前记录，这样就拥有包含两组值的单个 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.md)。 
   
 > [!IMPORTANT]
 > 执行此过程之前，必须首先执行本文第一部分[将域指向托管帐户](#point-your-domain-to-your-hosting-account)中的过程。 
@@ -246,4 +246,4 @@ ms.locfileid: "43629523"
     在 "**添加记录**" 部分，使用表中下一行的值创建记录，然后再次选择 "**添加记录**" 以完成该记录。 
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅在[添加域或 DNS 记录后查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 

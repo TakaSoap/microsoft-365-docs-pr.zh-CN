@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 9755fccb482dc294da7a0747310776314c739139
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a88d58db68816cd6aeb9173c36b964f3f97653db
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634408"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949221"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -45,7 +45,7 @@ ms.locfileid: "43634408"
 
 若要创建和配置反垃圾邮件策略，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-| 安全功能名称 | 标准 | 全 | 评论 |
+|安全功能名称|标准|全|评论|
 |---|---|---|---|
 |**垃圾邮件**检测操作 <br/><br/> _SpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
 |**高可信度垃圾邮件**检测操作 <br/><br/> _HighConfidenceSpamAction_|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
@@ -69,7 +69,7 @@ ms.locfileid: "43634408"
 
 我们建议您为**标准**和**严格**级别**关闭这些**ASF 设置。 有关 ASF 设置的详细信息，请参阅[Office 365 中的高级垃圾邮件筛选器（ASF）设置](advanced-spam-filtering-asf-options.md)。
 
-| 安全功能名称 | 备注 |
+|安全功能名称|Comments|
 |----|---|
 |**指向远程网站**（_IncreaseScoreWithImageLinks_）的图像链接||
 |**URL 中的数字 IP 地址**（_IncreaseScoreWithNumericIps_）||
@@ -91,7 +91,7 @@ ms.locfileid: "43634408"
 
 若要创建和配置出站垃圾邮件策略，请参阅[在 Office 365 中配置出站垃圾邮件筛选](configure-the-outbound-spam-policy.md)。
 
-| 安全功能名称 | 标准 | 全 | 评论 |
+|安全功能名称|标准|全|评论|
 |---|---|---|---|
 |**每个用户的最大收件人数：外部每小时限制** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**每个用户的最大收件人数：每小时的内部限制** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
@@ -102,7 +102,7 @@ ms.locfileid: "43634408"
 
 若要创建和配置反恶意软件策略，请参阅[在 Office 365 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 
-| 安全功能名称 | 标准 | 全 | 评论 |
+|安全功能名称|标准|全|评论|
 |---|---|---|---|
 |**是否要在邮件被隔离时通知收件人？** <br/><br/> _操作_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，则会隔离邮件，并且只能由管理员进行发布。|
 |**常见附件类型筛选器** <br/><br/> _EnableFileFilter_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|此设置隔离基于文件类型的包含可执行附件的邮件，而不考虑附件内容。|
@@ -112,9 +112,9 @@ ms.locfileid: "43634408"
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 默认的反网络钓鱼策略设置
 
-只能在使用 Exchange Online 邮箱的 Office 365 组织中配置这些设置。 若要配置这些设置，请参阅[在 EOP 中配置默认反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
+若要配置这些设置，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
-| 安全功能名称 | 标准 | 全 | 评论 |
+|安全功能名称|标准|全|评论|
 |---|---|---|---|
 |**启用反欺骗保护** <br/><br/> _EnableAntispoofEnforcement_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|将问号（？）添加到 Outlook 中的发件人的照片中，以查找未识别的欺骗性发件人。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
@@ -158,7 +158,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 
 #### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的模拟设置
 
-| 安全功能名称 | 标准 | 全 | 评论 |
+|安全功能名称|标准|全|评论|
 |---|---|---|---|
 |受保护的用户：**添加要保护的用户** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|打开 <br/><br/> `$true` <br/><br/> \<用户列表\>|打开 <br/><br/> `$true` <br/><br/> \<用户列表\>|取决于您的组织，但我们建议在关键角色中添加用户。 在内部，这些可能是 CEO、CFO 和其他高级领导者。 在外部，这些可以包括理事会成员或董事会。|
 |受保护的域：**自动包括我拥有的域** <br/><br/> _EnableOrganizationDomainsProtection_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
@@ -178,7 +178,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 
 请注意，这些设置与[EOP 中的反垃圾邮件策略设置](#eop-anti-spam-policy-settings)中提供的设置相同。
 
-| 安全功能名称 | 标准 | 全 | 评论 |
+|安全功能名称|标准|全|评论|
 |---|---|---|---|
 |**启用反欺骗保护** <br/><br/> _EnableAntispoofEnforcement_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|将问号（？）添加到 Outlook 中的发件人的照片中，以查找未识别的欺骗性发件人。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
@@ -186,7 +186,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的高级设置
 
-| 安全功能名称 | 标准 | 全 | 评论 |
+|安全功能名称|标准|全|评论|
 |---|---|---|---|
 |**高级网络钓鱼阈值** <br/><br/> _PhishThresholdLevel_|**2-主动** <br/><br/> `2`|**3-更主动** <br/><br/> `3`||
 

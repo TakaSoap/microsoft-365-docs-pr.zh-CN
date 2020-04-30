@@ -13,14 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
+- MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核，了解 Microsoft 如何使客户数据安全，并了解在使用 Office 365 时如何遵守 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: e5d33f063d9e375c12346d245067be2b2b41de77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9a9198d8206b2693f0634355c926856c1327d9d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631279"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943585"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全 & 合规中心中的服务保证
 
@@ -57,7 +58,7 @@ ms.locfileid: "43631279"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的工作或学校帐户登录。 
+2. 使用工作或学校帐户进行登录。 
     
 3. 在左窗格中，选择 "**服务保证**"。 接下来，[选择你的行业和区域设置](service-assurance.md#Chooseyourindustryregional)以及[板载其他服务保证用户或组](service-assurance.md#addother)。
     

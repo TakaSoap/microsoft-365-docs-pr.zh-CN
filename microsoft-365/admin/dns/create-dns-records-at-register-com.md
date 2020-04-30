@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: 了解如何验证您的域，并在 Register.com for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 8badcff89b2a8d8cc9901ef4f10c0a6b31de13d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d1293368a9a7ab94a5556ca266c716280ae85f5
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629271"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939115"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Register.com 处为 Microsoft 创建 DNS 记录
 
@@ -37,7 +37,7 @@ ms.locfileid: "43629271"
   
 - [在 Register.com 添加 TXT 记录以验证您是否拥有该域](#add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain)
     
-- [添加 MX 记录，以便你的域的电子邮件将发送给 Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
 - [添加 Microsoft 所需的 CNAME 记录](#add-the-cname-records-that-are-required-for-microsoft)
     
@@ -47,15 +47,15 @@ ms.locfileid: "43629271"
     
 在 Register.com 中添加这些记录后，您的域将设置为与 Microsoft 服务一起使用。
   
-若要了解 Microsoft 相关网站的托管和 DNS，请参阅[将公共网站与 microsoft 结合使用](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅在[添加域或 DNS 记录后查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain"></a>在 Register.com 添加 TXT 记录以验证您是否拥有该域
 <a name="BKMK_verify"> </a>
 
-在将你的域用于 Microsoft 之前，我们必须确保你拥有此域。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 证明你拥有该域的 DNS 记录。
+在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。
   
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -77,7 +77,7 @@ ms.locfileid: "43629271"
     |||
     |:-----|:-----|
     |**Host Name** <br/> |**TXT Record** <br/> |
-    |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 此为示例。 从表中使用您的特定**目标或指向 "地址**" 值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. 选择 "**继续**"。
     
@@ -85,11 +85,11 @@ ms.locfileid: "43629271"
     
 9. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求该记录。
+在在域注册机构网站添加了记录后，你将返回到 Microsoft 并请求记录。
   
-当 Microsoft 找到正确的 TXT 记录时，您的域将会得到验证。
+Microsof 找到正确的 TXT 记录表明域已通过验证。
   
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
     
 2. 在“**域**”页面上，选择要验证的域。 
     
@@ -98,9 +98,9 @@ ms.locfileid: "43629271"
 4. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅在[添加域或 DNS 记录后查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加 MX 记录，以便你的域的电子邮件将发送给 Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 请执行以下步骤或[观看视频（从3:32 开始）](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
@@ -123,7 +123,7 @@ ms.locfileid: "43629271"
     
     |****主机名****|优先级 * * * *|邮件服务器 * * * *|
     |:-----|:-----|:-----|
-    |@  <br/> |高  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 从你\<的 Microsoft 帐户中获取你的*域密钥*\> 。 <br> [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |高  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 从 Microsoft 帐户获取\<*域密钥*\>。 <br> [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![复制并粘贴表中的值](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -186,7 +186,7 @@ ms.locfileid: "43629271"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你已有域的 SPF 记录，请不要为 Microsoft 创建一个新的。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的单个 SPF 记录。  
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 可以将所需的 Microsoft 值添加到当前记录，这样就拥有包含两组值的单个 SPF 记录。  
   
 请执行以下步骤或[观看视频（从5:12 开始）](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
   
@@ -265,5 +265,5 @@ ms.locfileid: "43629271"
     ![选择 "继续"](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅在[添加域或 DNS 记录后查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
   

@@ -10,15 +10,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: 使用 Office 365 或 Microsoft 365 中的安全与合规中心中的批量搜索编辑器快速更改一个或多个内容搜索的查询和内容位置。
-ms.openlocfilehash: 5d1fd8a877ffb6c2012567583e46e561fb09836f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ec1996ade0b2452c00b5b4d912e9d441255bfe1e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078967"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942945"
 ---
 # <a name="bulk-edit-content-searches"></a>批量编辑内容搜索
 

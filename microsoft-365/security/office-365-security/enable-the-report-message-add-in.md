@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921572"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939471"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
@@ -133,7 +133,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
    ![通知加载项页面](../../media/announce-add-in-page.png)
 
-### <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用报告邮件加载项
+## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用报告邮件加载项
 
 为其分配了加载项的人员将看到以下图标：
 
@@ -147,7 +147,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
 当您通知用户有关报告邮件加载项时，请包含[使用报告邮件加载项](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的链接。
 
-### <a name="review-or-edit-settings-for-the-report-message-add-in"></a>查看或编辑报告邮件外接程序的设置
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>查看或编辑报告邮件外接程序的设置
 
 1. 在 Microsoft 365 管理中心，转到上<https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>的 "**服务" & "外接程序**" 页。
 
@@ -158,3 +158,11 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 3. 在显示的 "**编辑报告消息**" 浮出控件中，查看并编辑组织的相应设置。 完成后，单击 **“保存”**。
 
    ![报告邮件外接程序的设置](../../media/EditReportMessageAddIn.png)
+
+## <a name="view-and-review-reported-messages"></a>查看和查看报告的邮件
+
+若要查看用户向 Microsoft 报告的邮件，您可以选择以下选项：
+
+- 使用管理提交门户。 有关详细信息，请参阅[View user 报送 To Microsoft](admin-submission.md#view-user-submissions-to-microsoft)。
+
+- 创建邮件流规则（也称为传输规则），以发送报告的邮件的副本。 有关说明，请参阅[使用邮件流规则查看用户报告给 Microsoft 的内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。

@@ -10,14 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这允许您存档第三方数据源中的数据，以便您可以使用 Microsoft 365 合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: ee321f14f0fc4ac61781892d8fc3b56265b0d223
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0892e0c02e72516b6abc4502eb9777bd824f9073
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626238"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943151"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>与合作伙伴联系以存档第三方数据
 

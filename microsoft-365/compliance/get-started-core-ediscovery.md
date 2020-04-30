@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何在 Microsoft 365 中开始使用核心电子数据展示。 分配电子数据展示权限并创建案例后，可以添加成员，创建电子数据展示保留，然后搜索和导出与调查相关的数据。
-ms.openlocfilehash: 838870f60c55c82225c3809aa8f281beadd0dba1
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551369"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943381"
 ---
 # <a name="get-started-with-core-ediscovery"></a>核心电子数据展示入门
 
@@ -36,15 +36,25 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
 - **组织订阅：** 若要访问 Microsoft 365 合规性中心中的核心电子数据展示或 Office 365 安全性 & 合规性中心并使用保留和导出功能，您的组织必须具有 Microsoft 365 E3 或 Office 365 E3 订阅或更高版本。
 
-- **每用户许可：** 若要在用户邮箱上放置电子数据展示保留，则必须为该用户分配以下许可证之一，具体取决于您的组织订阅：
+- **每用户许可：** 若要在邮箱和网站上放置电子数据展示保留，必须为用户分配以下许可证之一，具体取决于您的组织订阅：
 
   - Microsoft 365 E3 或 Office 365 E3 许可证或更高版本
 
+   OR
+
   - 一种 Microsoft 365 E1 或 Office 365 E1 许可证，具有 Exchange Online 计划2或 Exchange Online 存档外接程序许可证
 
+  AND
+
+  - 使用 SharePoint Online 计划2或 OneDrive for business 计划2附加许可证的 Microsoft 365 E1 或 Office 365 E1 许可证
+  
   有关如何分配许可证的信息，请参阅向[用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
 
-有关 Microsoft 365 和 Office 365 许可的信息，请下载并查看[microsoft 365 合规性许可比较](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.pdf)中的 "发现 & 响应" 解决方案。
+有关许可的信息：
+
+- 下载并查看[Microsoft 365 合规性许可比较](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)中的 "发现 & 响应" 解决方案。
+
+- 请参阅[Security & 合规性中心服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步骤2：分配电子数据展示权限
 

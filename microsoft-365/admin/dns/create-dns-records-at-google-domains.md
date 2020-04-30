@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: 了解如何验证您的域并为 Microsoft 的 Google 域上的电子邮件、Lync 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 399482374f87d864edbc01feb4896b168d157f7f
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: baa406f61346dc052ab90a1b1c1271ab585d92c7
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919744"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939199"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>在 Google 域 for Microsoft 中创建 DNS 记录
 
@@ -35,7 +35,7 @@ ms.locfileid: "43919744"
   
 在 Google 域中添加这些记录后，您的域将设置为与 Microsoft 服务配合使用。
   
-若要了解如何与 Microsoft 结合使用网站的 Web 宿主和 DNS，请参阅[配合使用公共网站与 Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流或其他问题时遇到问题，请参阅[在 Microsoft 中添加域或 DNS 记录后，查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 

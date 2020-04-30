@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 引导您完成对影响 Microsoft 365 环境的安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
-ms.openlocfilehash: bd296d5cc822fd2257a7abad651335ad1d0717f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0d16011a7abfcaa20d2a053ee9c00b3719a2b3c6
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631177"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949389"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -39,7 +39,7 @@ Microsoft 365 安全中心包含可保护您的环境的功能。 它还包括�
 ||||
 |---|---|---|
 |**区域**|**包含默认策略**|**建议**|
-|**反网络钓鱼**|是|如果您有自定义域，请配置默认反网络钓鱼策略以保护您最有价值的用户（如 CEO）的电子邮件帐户，并保护您的域。 查看[office 365 中的反网络钓鱼策略](set-up-anti-phishing-policies.md)并参阅[在 EOP 中配置默认反网络钓鱼策略](configure-anti-phishing-policies-eop.md)或[在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。|
+|**反网络钓鱼**|是|如果您有自定义域，请配置默认反网络钓鱼策略以保护您最有价值的用户（如 CEO）的电子邮件帐户，并保护您的域。 查看[office 365 中的反网络钓鱼策略](set-up-anti-phishing-policies.md)，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)或在[Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。|
 |**反恶意软件引擎**|是| 编辑默认策略： <br/> &ensp;&ensp;* 常见附件类型筛选器—选择 "开" <br/><br/> 您还可以创建自定义恶意软件筛选器策略，并将其应用到组织中的指定用户、组或域。 <br/><br/> 详细信息： <br/> &ensp;&ensp;* [反恶意软件保护](anti-malware-protection.md) <br/> &ensp;&ensp;* [配置反恶意软件策略](configure-anti-malware-policies.md)|
 |**ATP 安全附件**|否| 在安全附件的主页上，通过选中此框来保护 SharePoint、OneDrive 和 Microsoft 团队中的文件： <br/> &ensp;&ensp;* 打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP <br/><br/> 使用以下设置添加新的安全附件策略： <br/> &ensp;&ensp;* 阻止—使用检测到的恶意软件阻止当前和将来的电子邮件和附件（选择此选项） <br/> &ensp;&ensp;* 启用重定向—（选中此框并输入电子邮件地址，如管理员或隔离帐户） <br/> &ensp;&ensp;* 如果恶意软件扫描附件超时或发生错误，则应用上述选择（选中此框） <br/> &ensp;&ensp;* 应用于—收件人域为（选择您的域） <br/><br/>详细信息：[设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)|
 |**ATP 安全链接**|是| 将此设置添加到整个组织的默认策略： <br/> &ensp;&ensp;* 使用中的安全链接： Microsoft 365 Apps for enterprise、Office for iOS 和 Android （选择此选项）。 <br/><br/>针对特定收件人的推荐策略： <br/> &ensp;&ensp;* 当用户单击链接时，将会重写 Url 并对已知恶意链接列表进行检查（选择此选项）。 <br/> &ensp;&ensp;* 使用安全附件扫描可下载的内容（选中此框）。 <br/> &ensp;&ensp;* 应用于—收件人域为（选择您的域）。 <br/><br/> 有关详细信息，请： [Office 365 ATP 安全链接](atp-safe-links.md)。|

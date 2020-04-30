@@ -16,14 +16,15 @@ ms.collection:
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。 '
-ms.openlocfilehash: 927042cd7c5f3966e7598f16fdbbcd4e7ddb7923
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3363b773e162d25a893319bcf2e38c7dd23f05cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632549"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943015"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>估计的和实际的电子数据展示搜索结果之间的差异
 

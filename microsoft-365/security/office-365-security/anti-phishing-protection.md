@@ -17,12 +17,12 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: 默认情况下，Microsoft 365 提供各种针对网络钓鱼攻击的防护，也可以通过 Office 365 高级威胁防护（ATP）中的其他功能进行防护。 本主题介绍可用于在 Microsoft 365 中了解并实施反钓鱼选项和策略的联机资源。
-ms.openlocfilehash: fd1aaee221254c3899c15d22850e95378436a392
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bdab6c05fb9be85c2ffb4914390ecc893fdd162b
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634576"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949365"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼保护
 
@@ -44,9 +44,9 @@ EOP （即，没有 ATP 的 Microsoft 365 组织）包含的功能可以帮助�
 
 - **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
-- **默认的反网络钓鱼策略**：启用或禁用欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，并指定阻止的欺骗性发件人的操作（移动到 "垃圾邮件" 文件夹或隔离）。 有关详细信息，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
+- **EOP 中的反网络钓鱼策略**：启用或禁用欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定阻止的欺骗性发件人的操作（移动到 "垃圾邮件" 文件夹或隔离）。 有关详细信息，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
-- **隐式电子邮件身份验证**： EOP 增强了入站电子邮件（[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和[DMARC](use-dmarc-to-validate-email.md)）的标准电子邮件身份验证检查，以及发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技术以帮助标识伪造的发件人 有关详细信息，请参阅[Microsoft 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
+- **隐式电子邮件身份验证**： EOP 增强了入站电子邮件（[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和[DMARC](use-dmarc-to-validate-email.md)）的标准电子邮件身份验证检查，以及发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技术以帮助标识伪造的发件人 有关详细信息，请参阅 [Microsoft 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
 
 ## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Office 365 ATP 中的其他反网络钓鱼保护
 

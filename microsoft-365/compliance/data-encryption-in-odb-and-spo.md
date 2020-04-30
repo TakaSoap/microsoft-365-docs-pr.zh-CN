@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 了解 OneDrive for Business 和 SharePoint Online 中数据安全加密的基本元素。
-ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e1cd8a8bad74a02e22357aa2da3c8c3de036b6d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633337"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943483"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business 和 SharePoint Online 中的数据加密
 
@@ -32,8 +32,6 @@ ms.locfileid: "43633337"
 ## <a name="overview"></a>概述
 
 Microsoft 365 是一个高度安全的环境，可在多个层中提供广泛保护：物理数据中心安全性、网络安全性、访问安全性、应用程序安全性和数据安全性。 本文特别侧重于 OneDrive for Business 和 SharePoint Online 数据安全的中转和静态加密端。
-  
-有关 Microsoft 365 安全整体的说明，请参阅[安全性白皮书](https://go.microsoft.com/fwlink/p/?LinkId=270895)。
   
 观看以下视频，了解数据加密的工作方式。
   

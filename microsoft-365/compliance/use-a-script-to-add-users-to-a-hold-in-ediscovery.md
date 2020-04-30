@@ -16,20 +16,21 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 运行脚本以将邮箱和 OneDrive for business 网站快速添加到与安全 & 合规中心中的电子数据展示事例关联的新保留中。
-ms.openlocfilehash: f61c56beb17e31cf839d102a681b685a1e7fb046
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 499a4ce3eb0f7be59f71565c0c841f323a364305
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597289"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942985"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>使用脚本将用户添加到安全 & 合规性中心的电子数据展示事例中的保留项
 
 Security & 合规性中心提供了大量 Windows PowerShell cmdlet，可让您自动执行与创建和管理电子数据展示事例相关的耗时任务。 目前，使用安全 & 合规中心中的电子数据展示案例工具将大量的保管人内容位置置于保留状态需要花费时间和准备。 例如，在创建保留之前，您必须收集要置于保留状态的每个 OneDrive for business 网站的 URL。 然后，对于要置于保留状态的每个用户，都必须将其邮箱及其 OneDrive for Business 网站添加到保留中。 在未来版本的安全 & 合规性中心中，这将变得更加容易。 在此之前，可以使用本文中的脚本自动执行此过程。
   
-该脚本会提示您组织的 "我的用户" 域的名称（例如**** ，URL https://contoso-my.sharepoint.com)中的 Contoso、现有电子数据展示事例的名称、与该事例关联的新保留的名称、要置于保留状态的用户的电子邮件地址列表以及要在创建基于查询的保留时使用的搜索查询。 然后，该脚本获取列表中每个用户的 OneDrive for business 网站的 URL，创建新保留，然后将列表中每个用户的邮箱和 OneDrive for Business 网站添加到保留。 该脚本还会生成包含有关新保留的信息的日志文件。 
+该脚本会提示您组织的 "我的用户" 域的名称（例如**contoso** ，URL https://contoso-my.sharepoint.com)中的 Contoso、现有电子数据展示事例的名称、与该事例关联的新保留的名称、要置于保留状态的用户的电子邮件地址列表以及要在创建基于查询的保留时使用的搜索查询。 然后，该脚本获取列表中每个用户的 OneDrive for business 网站的 URL，创建新保留，然后将列表中每个用户的邮箱和 OneDrive for Business 网站添加到保留。 该脚本还会生成包含有关新保留的信息的日志文件。 
   
 下面介绍了实现这一点的步骤：
   
@@ -39,7 +40,7 @@ Security & 合规性中心提供了大量 Windows PowerShell cmdlet，可让您�
   
 [步骤3：运行脚本以创建保留项并添加用户](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是 Security & 合规中心中的电子数据展示管理器角色组的成员，SharePoint Online 全局管理员才能在步骤3中运行该脚本。 有关详细信息，请参阅[在 Office 365 安全 & 合规中心中分配电子数据展示权限](assign-ediscovery-permissions.md)。
     

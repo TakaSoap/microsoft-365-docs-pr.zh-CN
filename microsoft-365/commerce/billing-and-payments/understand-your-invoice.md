@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的发票。
 keywords: 帐单帐户、组织信息、发票
-ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b16af7c6ef39743aa8d0a4e927786f64f47c4cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634976"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942873"
 ---
 # <a name="understand-your-invoice"></a>了解发票
 
 发票提供了您的费用摘要和付款说明。 你可以在 Microsoft 365 管理中心[查看你的联机发票](#view-your-online-invoice)。 您还可以将其下载为可移植文档格式（.pdf）以通过电子邮件发送。
 
-如果你只有 Microsoft 365 订阅，请参阅查看适用于[microsoft 365 商业](view-your-bill-or-invoice.md)版的发票。
+如果你只有 Microsoft 365 订阅，请参阅[了解适用于 microsoft 365 商业](understand-your-invoice2.md)版的发票。
 
 ## <a name="understand-the-invoice-header"></a>了解发票抬头
 
@@ -78,7 +78,7 @@ ms.locfileid: "43634976"
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-如果你希望更详细了解你的发票上的 Azure 费用，请参阅[了解 Microsoft 客户协议发票上的费用](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill)。
+如果你希望更详细了解你的发票上的 Azure 费用，请参阅[查看你的 Microsoft 客户协议发票](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)。
 
 ## <a name="understand-the-last-invoice-page"></a>了解 "最后一张发票" 页
 
@@ -108,7 +108,7 @@ ms.locfileid: "43634976"
 
 3. 若要查看你的联机发票，请从列表中选择一个发票。 您还可以从 "发票详细信息" 页下载 .pdf 文件。
 
-## <a name="need-help-contact-support"></a>是否需要帮助？ 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助？ 请联系支持人员。
 
 如果你在使用 Azure 信用时遇到疑问或需要帮助，请<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">创建支持 azure 支持的支持请求</a>。
 

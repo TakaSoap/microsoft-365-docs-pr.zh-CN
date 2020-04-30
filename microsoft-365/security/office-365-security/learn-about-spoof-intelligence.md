@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 和 Exchange Online Protection （EOP）中将欺骗性发件人配置为允许或不允许，以及其他欺骗智能设置。
-ms.openlocfilehash: 958f27d190748ee12976a6b47794a23e025172cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e2aeefbd90a7ed66699778fab54a76a33293e4bb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630487"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949233"
 ---
 # <a name="configure-spoof-intelligence-in-microsoft-365"></a>在 Microsoft 365 中配置欺骗智能
 
@@ -166,13 +166,11 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 欺骗性智能的配置选项在[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)中进行了说明。
 
-可用的选项取决于您的订阅：
+您可以在默认的反网络钓鱼策略中以及自定义策略中配置欺骗智能设置。 有关基于你的订阅的说明，请参阅以下主题之一：
 
-- 没有 Exchange Online 邮箱的独立 EOP 组织无法配置欺骗智能设置。
+- [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
-- 使用 Exchange Online 邮箱的 Microsoft 365 组织可以在默认（且仅适用于）反网络钓鱼策略中配置欺骗智能设置。 有关说明，请参阅[在 EOP 中配置默认反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
-
-- 使用 ATP 的 Microsoft 365 组织可以在默认的 ATP 反网络钓鱼策略中配置欺骗智能设置，也可以在自定义 ATP 反网络钓鱼策略中配置欺骗智能设置。 有关说明，请参阅[在 Microsoft 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+- [在 Microsoft 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
@@ -224,7 +222,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 - 检查**欺骗邮件报告**。 您可以经常使用此报告查看和帮助管理欺骗性发件人。 有关信息，请参阅[欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
 
-- 查看您的发件人策略框架（SPF）配置。 若要快速了解 SPF 并使其快速配置，请参阅[在 Microsoft 365 中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 有关 Office 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请开始阅读[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)。
+- 查看您的发件人策略框架（SPF）配置。 若要了解 SPF 的快速简介及其快速配置方法，请参阅[在 Microsoft 365 中设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 有关 Office 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请开始阅读[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
 - 查看您的域密钥识别邮件（DKIM）配置。 除了 SPF 和 DMARC，还应使用 DKIM，以帮助防止攻击者发送看上去来自您的域的邮件。 你可以使用 DKIM 将数字签名添加到电子邮件的邮件头中。 有关信息，请参阅[使用 DKIM 验证从您的自定义域在 Office 365 中发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。
 

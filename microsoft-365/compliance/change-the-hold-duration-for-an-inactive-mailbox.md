@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: 在 Microsoft 365 邮箱变为非活动状态后，您可以更改已分配给非活动邮箱的保留或 Microsoft 365 保留策略的持续时间。 保留期定义了"可恢复的项目"文件夹中的项目的保留持续时间。
-ms.openlocfilehash: 3d1368bedcbeda467cbc77a356635440066c11c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 15f140959a63b4c1a6da573c8a31ab23dbe55ca1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636330"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942925"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>更改非活动邮箱的保留期
 

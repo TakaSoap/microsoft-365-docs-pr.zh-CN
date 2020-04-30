@@ -11,15 +11,17 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 审核日志是一个统一的审核日志。 为什么是统一的审核日志？ 由于组织订阅的大多数服务中的事件都记录在可以搜索的单个审核日志中。 这意味着您可以在这些服务中搜索用户和管理员活动：
-ms.openlocfilehash: 95f5025e4831223c93251c7c22d1f43d44086d48
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3cc76b272516c0e0508c7d76f0b93da44effa487
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625092"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943641"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity"></a>在审核日志中搜索用户和管理员活动
 

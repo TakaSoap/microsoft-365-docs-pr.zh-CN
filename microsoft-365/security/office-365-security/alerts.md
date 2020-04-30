@@ -12,17 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
+- MET150
 - BCS160
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: 了解有关 Office 365 中的安全性可设置为帮助的通知。
-ms.openlocfilehash: b8fe746ef18ade5f8e35d5a51ab132377e813915
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24e36b6867600985a9ca0f9cb3cbafc5a8c6029e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634612"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943551"
 ---
 # <a name="alerts-in-the-security-amp-compliance-center"></a>安全&amp;合规中心中的警报
 
@@ -36,13 +37,13 @@ ms.locfileid: "43634612"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的工作或学校帐户登录。 
+2. 使用工作或学校帐户进行登录。 
     
 3. 在左窗格中，单击 "**警报**" 以查看警报功能。 
     
  **若要使用应用启动器&amp;转到安全合规中心，请执行以下操作：**
   
-1. 使用您的工作或学校帐户登录。 
+1. 使用工作或学校帐户进行登录。 
     
 2. 单击左上角的应用启动器，然后单击 " ** &amp;安全符合性**"。
     

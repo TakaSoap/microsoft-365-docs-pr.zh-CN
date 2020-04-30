@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理员可以将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到 Microsoft 365 组织中的邮箱。 这样，你就可以在 Microsoft 365 中存档 Facebook、Twitter 和其他第三方数据源中的数据。 然后，您可以使用并应用 Microsoft 365 合规性功能（如法律封存、电子数据展示、就地存档和保留策略），以获取第三方数据。
-ms.openlocfilehash: 72afb48f74a30bac2904e857a33487a83eba48cd
-ms.sourcegitcommit: f9b5eca20e025acc36635cbd1786ff3407295857
+ms.openlocfilehash: e9276a845a29f5c047e303e9e04051ec9f77da1e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43027652"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943181"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 

@@ -15,13 +15,13 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 摘要：关于 Microsoft 如何在传输中加密数据的简要说明。
-ms.openlocfilehash: 0775d28a96f271a24406fd68c2ccb9fe4954e66d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 关于 Microsoft 如何在数据中心的传输中对数据进行加密的简要说明。
+ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637328"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943301"
 ---
 # <a name="encryption-for-data-in-transit"></a>传输中的数据的加密
 
@@ -31,9 +31,9 @@ ms.locfileid: "43637328"
 
 - 当客户端计算机与 Microsoft 服务器通信时;
 - 当 Microsoft 服务器与另一台 Microsoft 服务器通信时;并
-- 当 Microsoft 服务器与非 Microsoft 服务器通信时（例如，Exchange Online 将电子邮件传递到外部电子邮件服务器）。
+- 当 Microsoft 服务器与非 Microsoft 服务器通信时（例如，Exchange Online 将电子邮件传递到第三方电子邮件服务器）。
 
-Microsoft 服务器之间的数据中心之间的通信通过 TLS 或 IPsec 进行，所有面向客户的服务器都使用 TLS 与客户端计算机协商安全会话（例如，Exchange Online 使用带256位密码强度的 TLS 1.2 （FIPS 140-2 级别2验证）。 （有关 office 365 支持的 TLS 密码套件列表，请参阅[office 365 中有关加密的技术参考详细信息](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221)。）这适用于客户端（如 Outlook、Skype for Business）和 web 上的 Outlook （例如，HTTP、POP3 等）使用的协议。
+Microsoft 服务器之间的数据中心之间的通信通过 TLS 或 IPsec 进行，所有面向客户的服务器都使用 TLS 与客户端计算机协商安全会话（例如，Exchange Online 使用带256位密码强度的 TLS 1.2 （FIPS 140-2 级别2验证）。 （有关 Office 365 支持的 TLS 密码套件列表的[加密的技术参考详细信息](technical-reference-details-about-encryption.md)，请参阅。）这适用于客户端（如 Outlook、Skype for Business、Microsoft 团队和 web 上的 Outlook）使用的协议（例如，HTTP、POP3 等）。
 
 公共证书由 Microsoft IT SSL 使用 SSLAdmin （一个内部 Microsoft 工具）颁发，以保护传输信息的机密性。 Microsoft 颁发的所有证书的长度都至少为2048位，并且 Webtrust 合规性要求 SSLAdmin 确保仅将证书颁发给 Microsoft 拥有的公用 IP 地址。 任何无法满足此条件的 IP 地址都将通过异常过程进行路由。
 

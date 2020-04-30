@@ -9,6 +9,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +27,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
-ms.openlocfilehash: 7d9ee9166de2a3807a8d10d061d3329c71180931
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a7f6f7c28d429135959fa2612dd24721e35366b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634952"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942861"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 

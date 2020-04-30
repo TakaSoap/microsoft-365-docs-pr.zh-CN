@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: 了解如何设置由世纪互联运营的 Office 365 以管理 DNS 记录，当 1&1 Internet 是 DNS 托管提供商时。
-ms.openlocfilehash: 53e846b5a9672f3fbf0e003ec48261afc80c0abf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ac40472d0afa0cb734b0e86a0f10d7904133e1
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630003"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939401"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>更改名称服务器以使用 1&1 IONOS 设置 Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "43630003"
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 
 
-在将你的域用于 Microsoft 365 之前，我们必须确保你拥有它。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 365 证明你拥有该域的 DNS 记录。
+在将域用于 Microsoft 365 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 365 证明你是域所有者。
   
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -62,7 +62,7 @@ ms.locfileid: "43630003"
 ||||
 |:-----|:-----|:-----|
 |**类型** <br/> |**前缀** <br/> |**名称值** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注意**：这是一个示例。 从 Microsoft 365 中的表，使用您的特定**目标或指向**此处的地址值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **注意**：这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. 选择 "**保存**"，然后重新**保存**。 
@@ -71,11 +71,11 @@ ms.locfileid: "43630003"
     
 9. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 365 并请求 Microsoft 365 查找该记录。
+在域注册机构网站添加了记录后，你将返回到 Microsoft 365 并请求 Microsoft 365 查找记录。
   
-当 Microsoft 365 找到正确的 TXT 记录时，您的域将会得到验证。
+Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
   
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
     
 2. 在“**域**”页面上，选择要验证的域。 
     
@@ -138,7 +138,7 @@ ms.locfileid: "43630003"
 |**名称服务器 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**名称服务器 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+![输入名称服务器值](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. 选择“**保存**”。
     

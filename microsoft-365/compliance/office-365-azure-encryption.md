@@ -15,19 +15,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 摘要： Azure 中的加密说明。
-ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Azure 中的加密说明。
+ms.openlocfilehash: cac3a27a209b4c2da66dbf583d2be88cf06aca34
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637430"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943311"
 ---
 # <a name="encryption-in-azure"></a>Azure 中的加密
 
-## <a name="introduction"></a>简介
+Azure 中的技术保护措施（如加密通信和操作进程）有助于确保数据的安全。 您还可以灵活地实施其他加密功能并管理自己的加密密钥。 无论客户配置如何，Microsoft 都应用加密以保护 Azure 中的客户数据。 Microsoft 还使您能够通过一系列高级技术来控制托管在 Azure 中的数据，以加密、控制和管理加密密钥，并控制和审核对数据的访问。 此外，Azure 存储提供一组全面的安全功能，使开发人员能够构建安全的应用程序。
 
-Azure 中的技术保护措施（如加密通信和操作进程）有助于确保数据的安全。 您还可以灵活地实施其他加密功能并管理自己的加密密钥。 无论客户配置如何，Microsoft 都应用加密以保护 Azure 中的客户数据。 Microsoft 还使您能够通过一系列高级技术控制托管的数据，以加密、控制和管理加密密钥、控制和审核对数据的访问。 此外，Azure 存储提供一组全面的安全功能，使开发人员能够构建安全的应用程序。
+## <a name="introduction"></a>简介
 
 Azure 提供了多种机制，可在数据从一个位置移动到另一个位置时对其进行保护。 当在云服务和客户之间进行传输时，Microsoft 使用 TLS 来保护数据。 Microsoft 的数据中心与连接到 Azure 服务的客户端系统协商 TLS 连接。 "完全向前保密（PFS）" 通过唯一密钥保护客户的客户端系统和 Microsoft 云服务之间的连接。 连接还使用基于 RSA 的2048位加密密钥长度。 这种组合使得某人难以截获和访问正在传输中的数据。
 
@@ -41,7 +41,7 @@ Azure 提供了多种机制，可在数据从一个位置移动到另一个位�
 
 Azure 磁盘加密使您能够将 Windows 和 Linux 基础结构加密为服务（IaaS） VM 磁盘。 Azure 磁盘加密利用 Windows 的 BitLocker 功能和 Linux 的 DM Crypt 功能为操作系统和数据磁盘提供卷级加密。 此外，它还可确保 VM 磁盘上的所有数据在 Azure 存储中的静态加密。 Azure 磁盘加密与 Azure 密钥存储库集成，可帮助您控制、管理和审核加密密钥和密码的使用。
 
-有关详细信息，请参阅[Azure 中 Windows 虚拟机的安全建议](https://docs.microsoft.com/azure/security/azure-security-disk-encryption)。
+有关详细信息，请参阅[Azure 中 Windows 虚拟机的安全建议](https://docs.microsoft.com/azure/virtual-machines/windows/security-recommendations)。
 
 ## <a name="azure-storage-service-encryption"></a>Azure 存储服务加密
 

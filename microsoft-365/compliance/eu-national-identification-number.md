@@ -2,8 +2,8 @@
 title: 欧盟国家身份证号
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟国家身份证的敏感信息类型时，会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: f001d23ec3d6d8a2b3aa9575d4a9d602c4315e13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4dac77f129b45f457a82e709cb5a3b846a95cdf4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592233"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938758"
 ---
 # <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
@@ -77,7 +77,7 @@ personalausweis republik österreich
 
 有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)中的 "比利时国家数" 一节。
   
-## <a name="bulgaria"></a>保加利亚语
+## <a name="bulgaria"></a>保加利亚
 
 ### <a name="format"></a>Format
 

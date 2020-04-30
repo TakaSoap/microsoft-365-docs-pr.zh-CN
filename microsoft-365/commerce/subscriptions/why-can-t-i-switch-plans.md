@@ -23,18 +23,18 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 了解有时必须手动完成切换计划或通过呼叫支持的原因。
-ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631925"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943139"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>为什么我无法切换 Microsoft 365 for business 计划？
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> 本文适用于旧管理中心。 若要查看有关管理中心（预览）的文章，请参阅[为什么无法升级计划？](why-cant-i-change-plans.md)。 预览适用于所有 Microsoft 365 管理员，你可以选择在主页顶部的 **"尝试预览"** 切换来选择加入。 有关详细信息，请参阅[关于新 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
+> 本文适用于旧管理中心。 若要查看有关管理中心（预览）的文章，请参阅[为什么无法升级计划？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)。 预览适用于所有 Microsoft 365 管理员，你可以选择在主页顶部的 **"尝试预览"** 切换来选择加入。 有关详细信息，请参阅[关于新 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
 ::: moniker-end
 
 如果看不到 "**切换计划**" 按钮，则无法自动切换您的计划。 在某些情况下，有可能解决此问题以便使用" **切换计划**"按钮，也可能改为[手动切换计划](switch-plans-manually.md)。 将鼠标悬停在信息图标上方可以看到一条消息，其中说明了" **切换计划**"按钮不可用的原因。 请根据本文中的信息解决此问题。

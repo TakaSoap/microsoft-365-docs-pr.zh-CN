@@ -15,16 +15,16 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 关闭你的帐户。
-ms.openlocfilehash: 3a193aea92ff384d53ce320a98cd9043d990b678
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080379"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942849"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
-当你使用 Microsoft 关闭你的帐户时，将删除与你的帐户相关的所有信息。 此信息包括订阅、许可证、付款方式、用户和用户数据。 在开始此过程之前，请确保备份要保留的任何数据。
+当关闭你的 Microsoft 帐户时，与你的帐户相关的所有信息都将被删除。 此信息包括订阅、许可证、付款方式、用户和用户数据。 在开始此过程之前，请确保备份要保留的任何数据。
 
 ## <a name="step-1-delete-users"></a>步骤1：删除用户
 
@@ -72,7 +72,7 @@ ms.locfileid: "42080379"
 
 3. 在 "多重身份验证" 页上，禁用除当前正在使用的全局管理员帐户之外的所有帐户。
 
-您还可以<a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#use-powershell">使用 PowerShell 为多个用户禁用多重身份验证</a>。
+您还可以<a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">使用 PowerShell 为多个用户禁用多重身份验证</a>。
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤5：删除 Azure Active Directory 中的目录
 

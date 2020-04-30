@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 管理中心-了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: e0f7242ff144b5e4b42a6cb1713b2ad5df41f2f3
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 03fae5d2a9b8adc9859eb16bfd9d98740e7d8bf2
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919756"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939447"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -181,7 +181,7 @@ Howdy，合作伙伴！ （无法帮助我自己。）我们也为你提供了�
 
 ![屏幕捕获：订阅卡的记帐部分，信用卡以信用卡作为支付方式。](../media/MAC-BillingEditCreditCard.png)
 
-想要了解更多相关信息？ [从信用卡或银行帐户更改为发票](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+想要了解更多相关信息？ [从信用卡或银行帐户更改为发票](../commerce/billing-and-payments/change-payment-method.md)
 
 ### <a name="global-reader"></a>全局读取者
 

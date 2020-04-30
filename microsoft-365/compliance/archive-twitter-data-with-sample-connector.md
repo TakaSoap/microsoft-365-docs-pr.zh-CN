@@ -10,14 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: 管理员可以设置本机连接器以将 Twitter 数据导入 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 91cf62bd7ab9de2b368689e7d44f88d1868f42ae
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5d4c1817fe9b3c47dc3cbabd0147f23057c7bc65
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596009"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943191"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data"></a>设置连接器以存档 Twitter 数据
 
@@ -25,7 +27,7 @@ ms.locfileid: "41596009"
 
 导入 Twitter 数据后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核和 Microsoft 365 保留策略）应用到 Twitter 数据。 例如，如果将邮箱置于诉讼保留状态或分配到保留策略，则会保留 Twitter 数据。 您可以使用内容搜索来搜索第三方数据，或关联在高级电子数据展示事例中与保管人存储 Twitter 数据的邮箱。 使用连接器在 Microsoft 365 中导入和存档 Twitter 数据可帮助您的组织遵守政府和法规策略。
 
-在导入 Twitter 数据之后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和 Office 365 保留策略）应用到邮箱中存储的数据。 例如，您可以使用内容搜索来搜索 Twitter 数据，或将与数据存储在一起的邮箱与高级电子数据展示事例中的保管人相关联。 使用连接器在 Office 365 中导入和存档 Twitter 数据可帮助您的组织遵守政府和法规策略。
+在导入 Twitter 数据之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和 Microsoft 365 保留策略）应用到存储在邮箱中的数据。 例如，您可以使用内容搜索来搜索 Twitter 数据，或将与数据存储在一起的邮箱与高级电子数据展示事例中的保管人相关联。 使用连接器在 Microsoft 365 中导入和存档 Twitter 数据可帮助您的组织遵守政府和法规策略。
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>为 Twitter 设置连接器的先决条件
 
@@ -40,9 +42,9 @@ ms.locfileid: "41596009"
     - [注册 "转到即点即用 Azure 订阅"](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Office 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的连接器。
+    > Microsoft 365 订阅附带的[免费 Azure Active Directory 订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全 & 合规中心中的连接器。
 
-- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。
+- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用全局管理员的凭据登录，然后接受该请求。
 
 - 在 Microsoft 365 合规性中心（步骤5）中设置 Twitter 连接器的用户必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 "[创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)" 或 "[修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)" 部分。
 

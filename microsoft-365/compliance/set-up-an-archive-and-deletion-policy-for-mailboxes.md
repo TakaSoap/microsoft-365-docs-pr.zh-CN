@@ -17,14 +17,15 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+- MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 创建自动将项目移动到用户存档邮箱的存档和删除策略。
-ms.openlocfilehash: d5c55227d601476b7c06d530a13a5768a4a108c4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8d156ec9340e644e8f0bf213f04135e756421eb
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635556"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943575"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 

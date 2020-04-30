@@ -21,18 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从 Microsoft 365 中删除旧域，并将用户和组移动到另一个域。
-ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b072a8f30d6b6a655441dec49ff9af9b4d0fdbe4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628430"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938632"
 ---
 # <a name="remove-a-domain"></a>删除域
-
-撰稿人：[![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
- **如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)** 。 
+ 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
 您是否正在删除您的域，因为您想要将其添加到其他 Microsoft 365 订阅计划？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
   
@@ -186,7 +184,7 @@ ms.locfileid: "43628430"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
@@ -231,6 +229,6 @@ ms.locfileid: "43628430"
 
 [获取 Office 365 域的帮助](get-help-with-domains.md)
 
-[切换到其他 Microsoft 365 for business 计划](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[切换到其他 Microsoft 365 商业版计划](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)

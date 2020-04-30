@@ -2,22 +2,22 @@
 title: EU 税标识号
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟税务识别号敏感信息类型时，应查找什么。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 5467db921bd518eeeab18a36ee2de473f9017358
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f779974266045d7099b599700c7168162d9d81e
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41591013"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938668"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税标识号
 
@@ -150,7 +150,7 @@ numéro de registre 国
   
 numéro d'identification fiscale
   
-## <a name="bulgaria"></a>保加利亚语
+## <a name="bulgaria"></a>保加利亚
 
 ### <a name="format"></a>Format
 

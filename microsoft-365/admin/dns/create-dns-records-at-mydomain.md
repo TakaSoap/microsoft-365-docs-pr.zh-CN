@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
 description: 了解如何在 MyDomain 处验证你的域并设置电子邮件、Skype for Business Online 和其他 Microsoft 服务的 DNS 记录。
-ms.openlocfilehash: 4f26da1e1e148307cd2b5cdf9aeed97c610ec8dd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ea89fd64c7f3f87f59b7e71e1366372c442e254d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629427"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939175"
 ---
 # <a name="create-dns-records-at-mydomain-for-microsoft"></a>在 MyDomain 处为 Microsoft 创建 DNS 记录
 
@@ -40,7 +40,7 @@ ms.locfileid: "43629427"
     
 在 MyDomain 添加这些记录后，你的域将设置为使用 Microsoft 服务。
   
-若要了解如何与 Microsoft 结合使用网站的 Web 宿主和 DNS，请参阅[配合使用公共网站与 Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 

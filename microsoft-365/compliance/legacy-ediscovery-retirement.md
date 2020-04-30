@@ -9,14 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48dbbd86071f8b07fa3dbf3a699f0d7e085fd50b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635566"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943341"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧版电子数据展示工具的停用
 

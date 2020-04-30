@@ -11,15 +11,17 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具在 Microsoft 365 中搜索从第三方数据源导入到邮箱的项目。 您可以创建查询以搜索所有导入的项，或创建查询以搜索特定的第三方数据类型。 本文列出了可以在关键字查询中使用的值，以搜索可导入到 Microsoft 365 的第三方数据类型。
-ms.openlocfilehash: 07a489d7c18cc305b7ffc745f7fc7870d8f72a2f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633367"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942965"
 ---
 # <a name="use-content-search-to-search-third-party-imported-data"></a>使用内容搜索来搜索第三方导入的数据
 

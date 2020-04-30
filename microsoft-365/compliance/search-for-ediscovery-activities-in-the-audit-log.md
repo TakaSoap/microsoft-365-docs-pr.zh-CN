@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解在合规性管理员在安全 & 合规中心中执行内容搜索和电子数据展示案例任务时，如何在审核日志中搜索所记录的事件。
-ms.openlocfilehash: 96f6b121064e7540778a418baa96bae448e4eed3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f575953fb2d48ac996e443589ff312743d93d424
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631823"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943651"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在审核日志中搜索电子数据展示活动
 
@@ -46,7 +48,7 @@ ms.locfileid: "43631823"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的工作或学校帐户登录。
+2. 使用工作或学校帐户进行登录。
     
 3. 在左窗格中，单击 "**搜索**"，然后单击 "**审核日志搜索**"。
     

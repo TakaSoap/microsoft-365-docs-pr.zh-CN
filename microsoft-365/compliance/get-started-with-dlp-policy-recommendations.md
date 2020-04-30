@@ -12,13 +12,15 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
+search.appverid:
+- MET150
 description: 此深入了解驱动的建议可帮助你的组织在 Microsoft 365 中存储和共享敏感内容，并在你的 DLP 策略覆盖范围内存在可能的差距时通知你。 如果您的文档包含任何最常用的五种类型&amp;的敏感信息，但不受 DLP 策略保护，您将在安全合规中心的主页上看到此建议。
-ms.openlocfilehash: 73c45c477942533d5668c225144950a0fde4279b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632463"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943371"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>开始使用 DLP 策略建议
 

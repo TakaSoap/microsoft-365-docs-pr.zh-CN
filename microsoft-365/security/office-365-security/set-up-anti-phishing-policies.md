@@ -14,27 +14,25 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online Protection （EOP）中的基本反网络钓鱼策略和 Office 365 高级威胁防护中的高级 ATP 反网络钓鱼策略。
-ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638352"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949377"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
-在具有 Exchange Online 邮箱、独立 Exchange Online Protection （EOP）组织且无 Exchange Online 邮箱和 Office 365 高级威胁防护（ATP）组织的 Office 365 组织中，可以使用配置反网络钓鱼防护设置的策略。
+使用 Exchange Online 邮箱、独立 Exchange Online Protection （EOP）组织且无 Exchange Online 邮箱和 Office 365 高级威胁防护（ATP）组织的 Microsoft 365 组织中提供了配置反网络钓鱼防护设置的策略。
 
 ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例如：
 
-- Office 365 企业版 E5、Office 365 教育版 A5 等。
+- Microsoft 365 企业版 E5、Microsoft 365 教育版 A5 等。
 - [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)
 - [作为附加项的 Office 365 ATP](https://products.office.com/exchange/advance-threat-protection)
 
-ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创建其他自定义 ATP 反网络钓鱼策略。
-
-其他 Microsoft 365 组织（具有 Exchange Online 邮箱或独立 Exchange online Protection （EOP）组织）没有 Exchange Online 邮箱的内置默认反网络钓鱼策略，但无法创建其他策略。 只有具有 Exchange Online 邮箱的组织才能修改其默认的反网络钓鱼策略。
+所有其他组织都具有反网络钓鱼策略。
 
 反网络钓鱼策略和 ATP 反网络钓鱼策略之间的高级别差异如下表所述：
 
@@ -42,8 +40,8 @@ ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创�
 |---|:---:|:---:|
 |**功能**|**防钓鱼策略**|**ATP 反网络钓鱼策略**|
 |自动创建的默认策略|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|创建自定义策略||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|策略设置<sup>\*</sup>||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|创建自定义策略|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|策略设置<sup>\*</sup>|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |模拟设置||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |欺骗设置|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |高级网络钓鱼阈值||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -57,7 +55,7 @@ ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创�
 
 - [在 Microsoft 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)
 
-本主题的其余部分介绍在 EOP 和 ATP 反网络钓鱼策略中可用的设置。
+本主题的其余部分介绍了反网络钓鱼策略和 ATP 反网络钓鱼策略中提供的设置。
 
 ## <a name="spoof-settings"></a>欺骗设置
 
@@ -68,7 +66,7 @@ ATP 反网络钓鱼策略包括内置默认反网络钓鱼策略，您可以创�
 - **反欺骗保护**：启用或禁用反欺骗保护。 建议您将其保留为启用状态。 您可以使用**欺骗智能策略**来允许或阻止特定的欺骗内部和外部发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
   > [!NOTE]
-  > 默认情况下，在 EOP 中默认的反网络钓鱼策略、默认 ATP 反网络钓鱼策略和创建的新自定义 ATP 反网络钓鱼策略中启用欺骗设置。 <br/><br/> 如果你的 MX 记录不指向 Microsoft 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  > 默认情况下，在 EOP 的默认反网络钓鱼策略中启用了欺骗设置、默认的 ATP 反网络钓鱼策略，以及您创建的新的自定义反网络钓鱼策略或 ATP 反网络钓鱼策略。 <br/><br/> 如果你的 MX 记录不指向 Microsoft 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
   对于阻止欺骗发件人发送的邮件，您还可以指定对邮件执行的操作：
 

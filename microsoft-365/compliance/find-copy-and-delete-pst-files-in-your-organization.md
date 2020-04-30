@@ -10,15 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 收集工具搜索组织的网络，以获取分散在整个组织中的 PST 文件的清单。 查找 PST 文件后，可以使用 PST 集合工具将其复制到一个中心位置，以便可以将其导入 Office 365。
-ms.openlocfilehash: ee9a657cc0ac44e57e85edc68e80e0a76aa063d4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d28db482bc3c17570b4cf4a952939c3c221d94b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633327"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942195"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具在您的组织中查找、复制和删除 PST 文件
 

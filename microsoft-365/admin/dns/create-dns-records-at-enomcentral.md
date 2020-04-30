@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: 了解如何验证您的域，并在 eNomCentral for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 2a1d32f0152b0c8a38b1a9e1c3fc46237708480d
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: b43261c601b953eef7f98170f04b51d8dcf97d8d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919489"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939267"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>在 eNomCentral 处为 Microsoft 创建 DNS 记录
 
@@ -34,8 +34,7 @@ ms.locfileid: "43919489"
 如果 eNomCentral 是您的 DNS 托管提供商，请按照本文中的步骤验证您的域并为电子邮件、Skype for Business Online 等设置 DNS 记录。
   
 在 eNomCentral 中添加这些记录后，您的域将设置为与 Microsoft 服务一起使用。
-  
-若要了解如何与 Microsoft 结合使用网站的 Web 宿主和 DNS，请参阅[配合使用公共网站与 Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -64,7 +63,7 @@ ms.locfileid: "43919489"
   
 4. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    \(从下拉列表中选择 "**记录类型**" 值。\) 
+    从下拉列表中选择 "**记录类型**" 值。
     
     ||||
     |:-----|:-----|:-----|
@@ -165,7 +164,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 5. 在六个新记录的框中，键入或复制并粘贴以下值。
     
-        (Choose the **Record Type** value from the drop-down list.) 
+从下拉列表中选择 "**记录类型**" 值。
         
     |**Host Name**|**Record Type**|**地址**|
     |:-----|:-----|:-----|
@@ -175,7 +174,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     |enterpriseregistration  <br/> |CNAME（别名）  <br/> |enterpriseregistration.windows.net。  <br/> **此值必须以句点 (.) 结尾。** <br/> |
     |enterpriseenrollment  <br/> |CNAME（别名）  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |
    
-    ![eNom-配置-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
   
 6. 选择 "**保存**"。
     
@@ -203,7 +202,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 4. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    (Choose the **Record Type** value from the drop-down list.) 
+从下拉列表中选择 "**记录类型**" 值。
     
     |**Host Name**|**Record Type**|**地址**|
     |:-----|:-----|:-----|

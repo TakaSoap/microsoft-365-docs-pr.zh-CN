@@ -2,8 +2,8 @@
 title: 欧盟驾驶执照号码
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟驱动程序的敏感信息类型时，应查找什么内容。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: c54fcefcda08d0bc2ec500d25c74bb5789e27398
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e75a8724dc91ef2d895c977fdd5fcc21e7a1da4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592653"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938826"
 ---
 # <a name="eu-drivers-license-number"></a>欧盟驾驶执照号码
 
@@ -103,7 +103,7 @@ ms.locfileid: "41592653"
 |:-----|
 |通讯#  <br/> driver license  <br/> 驱动程序许可证编号  <br/> 驱动程序许可证  <br/> 驱动程序许可证。  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 驾驶执照号码  <br/> 驾驶许可证编号  <br/> dlno#  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> führerschein-nr-nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-nr  <br/> |
    
-## <a name="bulgaria"></a>保加利亚语
+## <a name="bulgaria"></a>保加利亚
 
 ### <a name="format"></a>Format
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42e130bfb9f988f0b771c45cbe08663f17e7b595
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632433"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949401"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -58,7 +58,7 @@ ms.locfileid: "43632433"
 
 也可以使用“**解决方案**” > “**信息治理**” > “**保留**”选项卡转到 Microsoft 365 合规中心内的相同位置。 
 
-**如果你希望能够在永久删除内容之前审阅它，** 不妨使用[保留标签](labels.md)，而不是保留策略。 创建保留标签时，可设置“[处置审阅](disposition-reviews.md)”，以便在保留期结束时查看内容。
+**如果希望能够在永久删除内容之前对其进行审阅，** 考虑使用”[保留标签](labels.md)”，而不是保留策略。 创建保留标签时，可设置“[处置审阅](disposition.md#disposition-reviews)”，以便在保留期结束时查看内容。
 
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>保留策略如何处理留在原处的内容
 

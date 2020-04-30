@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在安全 & 合规中心中使用内容搜索来执行目标集合。 目标集合意味着您确信项目响应的是事例或特权项目位于特定的邮箱或站点文件夹中。 使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。
-ms.openlocfilehash: e6de817e7ec324e6aa80ef596340906c2f86d126
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4808dad8faed99ac15c4f9828ad1759e2f1179fc
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633377"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942975"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>使用内容搜索进行目标收集
 
@@ -233,7 +235,7 @@ ms.locfileid: "43633377"
     
     - 单击 "**选择要搜索的特定网站**" 搜索，然后添加在步骤1中运行脚本时指定的相同网站 URL。 
     
-6. 单击“**下一步**”。
+6. 单击“下一步”****。
     
 7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框`folderid:<folderid>`中`documentlink:<path>` ，粘贴步骤1中的脚本返回的 or 值。 
     

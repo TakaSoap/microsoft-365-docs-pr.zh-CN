@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则（传输规则），以使用 Office 365 邮件加密对邮件进行加密和解密。
-ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: ec36e8ff57b45b0f6a3408d6e6bc1e07ce789ffd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790701"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943119"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定义用于加密电子邮件的邮件流规则
 
-作为全局管理员，您可以创建邮件流规则（也称为传输规则），以帮助保护您发送和接收的电子邮件。 您可以设置规则来加密任何传出的电子邮件，并删除来自组织内部或从组织发送的加密邮件的答复的加密邮件的加密。 您可以使用 Exchange 管理中心（EAC）或 Exchange Online PowerShell 创建这些规则。 除了整体的加密规则，你还可以针对最终用户选择启用或禁用单个邮件加密选项。
+作为全局管理员，您可以创建邮件流规则（也称为传输规则），以帮助保护您发送和接收的电子邮件。 您可以设置规则来加密任何传出的电子邮件，并删除来自组织内部或从组织发送的加密邮件的答复的加密邮件的加密。 您可以使用 Exchange 管理中心（EAC）或 Exchange Online PowerShell 创建这些规则。 除了整体的加密规则，您还可以针对最终用户选择启用或禁用个人邮件加密选项。
 
 无法对组织外部的发件人的入站邮件进行加密。
 
@@ -34,7 +34,7 @@ ms.locfileid: "43790701"
 有关组成邮件流规则的组件和邮件流规则的工作方式的信息，请参阅[Exchange Online 中的邮件流规则（传输规则）](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。 有关邮件流规则如何使用 Azure 信息保护的其他信息，请参阅[为 Azure 信息保护标签配置 Exchange Online 邮件流规则](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)。
 
 > [!IMPORTANT]
-> 对于混合 Exchange 环境，只有在通过 Exchange Online 路由电子邮件的情况下，本地用户才能使用 OME 发送加密邮件。 若要在混合 Exchange 环境中配置 OME，需要先[使用 "混合配置" 向导配置混合](https://docs.microsoft.com/Exchange/exchange-hybrid)，然后[将邮件配置为从您的电子邮件服务器传递到 Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。 将邮件配置为通过 Office 365 传输之后，可以使用本指南配置 OME 的邮件流规则。
+> 对于混合 Exchange 环境，只有在通过 Exchange Online 路由电子邮件的情况下，本地用户才能使用 OME 发送和接收加密邮件。 若要在混合 Exchange 环境中配置 OME，需要先[使用 "混合配置" 向导配置混合](https://docs.microsoft.com/Exchange/exchange-hybrid)，然后[将邮件配置为从 Office 365 传输到您的电子邮件服务器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server)，并[将邮件配置为从您的电子邮件服务器传递到 Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。 将邮件配置为通过 Office 365 传输之后，可以使用本指南配置 OME 的邮件流规则。
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>创建邮件流规则，以使用新的 OME 功能对电子邮件进行加密
 
@@ -52,7 +52,7 @@ ms.locfileid: "43790701"
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "为 DrToniRamos@hotmail.com 加密邮件"。
 
-6. 在“在以下情况应用此规则”**** 中，选择一个条件，并根据需要输入值。例如，若要加密发送到 DrToniRamos@hotmail.com 的邮件：
+6. 在 "在**以下情况应用此规则**" 中，选择一个条件，并根据需要输入一个值。 例如，若要加密发送到 DrToniRamos@hotmail.com 的邮件：
 
    1. 在“在以下情况应用此规则”**** 中，选择“收件人为”****。
 
@@ -110,7 +110,7 @@ ms.locfileid: "43790701"
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "从传出邮件中删除加密"。
 
-6. 在 "**应用此规则**" 中，如果选择应从邮件中删除加密的条件，请添加**发件人位于** \> **组织内部**。 现在，添加其他条件以面向特定的收件人，例如**收件人位于** \> **组织外部**。
+6. 在 "在**以下情况应用此规则**" 中，选择应从邮件中删除加密的条件。 添加**发件人位于** \> **组织内部**。 现在，添加其他条件以面向特定的收件人，例如**收件人位于** \> **组织外部**。
 
 7. 在 **"执行以下操作**" 中，选择 "**修改邮件安全** \> **删除 Office 365 邮件加密和权限保护**"。
 
@@ -164,14 +164,14 @@ ms.locfileid: "43790701"
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **注意**：
-
-   - 新规则的唯一名称是 "加密 Dr Toni Ramos" 的规则。
-
-   - _SentTo_参数指定邮件收件人（由姓名、电子邮件地址、可分辨名称等）。 在此示例中，收件人由电子邮件地址 "DrToniRamos@hotmail.com" 标识。
-
-   - _SentToScope_参数指定邮件收件人的位置。 在此示例中，收件人的邮箱在 hotmail 中，而不是组织的一部分，因此使用了`NotInOrganization`该值。
-
+   > [!NOTE]
+   > 
+   > - 新规则的唯一名称是 "加密 Dr Toni Ramos" 的规则。
+   > 
+   > - _SentTo_参数指定邮件收件人（由姓名、电子邮件地址、可分辨名称等）。 在此示例中，收件人由电子邮件地址 "DrToniRamos@hotmail.com" 标识。
+   > 
+   > - _SentToScope_参数指定邮件收件人的位置。 在此示例中，收件人的邮箱在 hotmail 中，而不是组织的一部分，因此使用了`NotInOrganization`该值。
+   
    有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>从加密的电子邮件答复中删除加密，而不具有新的 OME 功能
@@ -208,17 +208,17 @@ ms.locfileid: "43790701"
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **注意**：
-
-   - 新规则的唯一名称是 "从传入邮件中删除加密"。
-
-   - _SentToScope_参数指定邮件收件人的位置。 在此示例中，使用`InOrganization`了值值，该值指示：
-
-     - 收件人是组织中的邮箱、邮件用户、组或已启用邮件的公用文件夹。
-
-       或
-
-     - 收件人的电子邮件地址位于您的组织中配置为权威域或内部中继域的接受域中，_并且_邮件是通过经过身份验证的连接发送或接收的。
+   > [!NOTE]
+   > 
+   > - 新规则的唯一名称是 "从传入邮件中删除加密"。
+   > 
+   > - _SentToScope_参数指定邮件收件人的位置。 在此示例中，使用`InOrganization`了值值，该值指示：
+   > 
+   >   - 收件人是组织中的邮箱、邮件用户、组或已启用邮件的公用文件夹。
+   > 
+   >     或
+   > 
+   >   - 收件人的电子邮件地址位于您的组织中配置为权威域或内部中继域的接受域中，_并且_邮件是通过经过身份验证的连接发送或接收的。
 
 有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
 

@@ -14,20 +14,22 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何准备安全 & 合规性中心中的内容搜索结果，以使用高级电子数据展示工具进行进一步分析。
-ms.openlocfilehash: e4cf580a045f9911e6c92fb2031a5d7bed79754e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d1b406503ff758fb9287cc40d8a323ae23bc3f1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626636"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943291"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>为高级电子数据展示准备搜索结果（经典）
 
 > [!IMPORTANT]
-> 随着我们继续在较新版本的高级电子数据展示中进行投资，我们宣布退休了高级电子数据展示，也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0 1.0*。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
+> 当我们继续对较新版本的高级电子数据展示进行投资时，我们将宣布停用高级电子数据展示（也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
 
 成功运行与安全 & 合规中心中的电子数据展示事例关联的搜索后，您可以使用高级电子数据展示准备搜索结果，以进行进一步分析，这样可以分析大型的非结构化数据集，并减少与法律案件相关的数据量。 高级电子数据展示功能包括：
   
