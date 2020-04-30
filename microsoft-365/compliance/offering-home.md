@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 59e2c36e87232efcda29f9d5abe41b4c37a17a62
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 57faa73d6c3cb5bbe92c1cea4fab7dd810abbeec
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071237"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943321"
 ---
 # <a name="microsoft-compliance-offerings"></a>Microsoft 合规性产品/服务
 
@@ -182,6 +182,7 @@ Microsoft 提供了一套全面的合规性产品，帮助您的组织遵守管�
                         <p><a href="offering-nz-cc-framework-nz.md">NZ CC Framework（新西兰）</a></p>
                         <p><a href="offering-pasf-uk.md">PASF（英国）</a></p>
                         <p><a href="offering-pdpa-argentina.md">PDPA（阿根廷）</a></p>
+                        <p><a href="offering-russia-data-localization.md">个人数据本地化（俄罗斯）</a></p>
                         <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS（中国）</a></p>
                     </div>
                 </div>
