@@ -16,14 +16,13 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 了解新的 Microsoft 365 管理中心。
-ms.openlocfilehash: c4e6df3824e3f4ca33e947c438bb0be2f841e416
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907221"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952635"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>关于新的 Microsoft 365 管理中心
 
@@ -99,7 +98,7 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>我是否可以在新管理中心中执行我可以在旧管理中心中执行的所有操作？
 
-是。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
+可以。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
   
 ## <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 计划可用于试用版或购买版？
 

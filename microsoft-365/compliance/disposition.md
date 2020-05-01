@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: cb48d2eb6d2d06093ddea74f13269faeb4798b97
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/30/2020
-ms.locfileid: "43950061"
+ms.locfileid: "43952615"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -120,7 +120,7 @@ ms.locfileid: "43950061"
 > [!NOTE]
 > 若要查看在没有处置评审的情况下自动删除的记录，可以在四月份和5月2020之间逐步向租户推出租户，因此您可能无法立即看到此体验。
 
-使用 "**记录管理**" 页上的 "**处置**" 选项卡来标识自动删除的记录。 这些项目在 "**类型**" 列中显示已**处置的记录**。 相比之下，经批准可通过处置评审显示待删除的已处置记录显示为**待处置状态**。 例如：
+使用 "**记录管理**" 页上的 "**处置**" 选项卡来标识自动删除的记录。 这些项目在 "**类型**" 列中显示已**处置的记录**。 例如：
 
 ![在没有处置评审的情况下处置的项目](../media/records-disposed2.png)
 

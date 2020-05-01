@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主题介绍当数据丢失防护（DLP）策略检测到欧盟国家身份证的敏感信息类型时，会对其进行查找。 此敏感信息类型为每个国家/地区定义不同的模式、关键字和其他证据。
-ms.openlocfilehash: 4dac77f129b45f457a82e709cb5a3b846a95cdf4
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: c83644fc8870975634651e44e114f2a8e0cf7692
+ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938758"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43955299"
 ---
 # <a name="eu-national-identification-number"></a>欧盟国家身份证号
 
@@ -103,18 +103,18 @@ personalausweis republik österreich
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 函数`Func_bulgaria_national_number`找到与该模式匹配的内容。 
+- 函数`Func_bulgaria_eu_national_id_card`找到与该模式匹配的内容。 
     
 - 找到了中`Keywords_bulgaria_national_number`的关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 函数`Func_bulgaria_national_number`找到与该模式匹配的内容。 
+- 函数`Func_bulgaria_eu_national_id_card`找到与该模式匹配的内容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_bulgaria_national_number" />
+          <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
           <Match idRef="Keywords_bulgaria_national_number" />
         </Pattern>
 <Pattern confidenceLevel="75">
