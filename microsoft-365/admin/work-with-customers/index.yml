@@ -1,0 +1,39 @@
+### YamlMime:Landing
+title: 与客户合作
+summary: 请查看这些资源以帮助管理员执行常见任务，或查看左侧的导航窗格查看完整列表。
+metadata:
+  title: 与客户合作
+  description: 共享文档并使用团队协作和开会
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 299b7fa4cb98f05a1f5a3248fad59d3e8ea414ed
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952664"
+landingContent:
+- title: 与客户合作
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 在外部共享网站和文件
+      url: ../manage/share-sites-with-external-users.md
+    - text: 与来宾用户共享日历
+      url: ../manage/share-calendars-with-external-users.md
+  - linkListType: video
+    links:
+    - text: 创建具有来宾的团队
+      url: https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7
+    - text: 将团队加入为来宾
+      url: https://support.office.com/article/928d1eef-61e2-49ec-b754-c2fe86b34824
+    - text: 与员工和客户聊天
+      url: https://support.office.com/article/65748808-a403-462c-a6e1-b169e5bc6c92
+    - text: 安排与来宾的团队会议
+      url: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
+    - text: 加入与来宾的团队会议
+      url: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8

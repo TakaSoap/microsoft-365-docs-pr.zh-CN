@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: 管理数据和服务
+summary: 请查看这些资源以帮助管理员执行常见任务，或查看左侧的导航窗格查看完整列表。
+metadata:
+  title: 管理数据和服务
+  description: 监视服务的状态、备份数据、安装外接程序并升级到最新的应用程序
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 7289f6a0b971db0f9b785f35c6bbae839ecae226
+  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43955321"
+landingContent:
+- title: 监视我们的服务的状态
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 使用报表监视用户活动
+      url: ../activity-reports/activity-reports.md
+    - text: 监视使用情况分析
+      url: ../usage-analytics/usage-analytics.md
+    - text: 启用使用情况分析
+      url: ../usage-analytics/enable-usage-analytics.md
+    - text: 更改你的组织联系人信息
+      url: change-address-contact-and-more.md
+    - text: 更新管理员联系信息
+      url: update-phone-number-and-email-address.md
+    - text: 设置发布选项
+      url: release-options-in-office-365.md
+- title: 阻止用户访问和备份数据
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 访问和备份前一个用户的数据
+      url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
+    - text: 设置电子邮件保留期（Microsoft 365 商业高级版）
+      url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
+    - text: 从设备中删除公司数据（Microsoft 365 商业高级版）
+      url: ../../business/remove-company-data.md
+- title: 管理外接程序和应用程序
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 将组织升级到最新的应用程序
+      url: ../setup/upgrade-users-to-latest-office-client.md
+    - text: 自定义应用启动器
+      url: customize-the-app-launcher.md
+    - text: 对加载项的集中部署的要求
+      url: centralized-deployment-of-add-ins.md
+    - text: 使用集中部署安装和管理外接程序
+      url: manage-deployment-of-add-ins.md
+- title: Microsoft Teams
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft 团队管理文档
+      url: https://docs.microsoft.com/en-us/microsoftteams/
+    - text: 同时使用 Outlook 和团队
+      url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+  - linkListType: learn
+    links:
+    - text: Microsoft Teams 培训
+      url: https://support.office.com/article/4f108e54-240b-4351-8084-b1089f0d21d7
+- title: OneDrive 和 SharePoint
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 面向 IT 专业人员和管理员的 SharePoint 文档
+      url: https://docs.microsoft.com/sharepoint/
+    - text: 适用于 IT 专业人员和管理员的 OneDrive 文档
+      url: https://docs.microsoft.com/onedrive/
+  - linkListType: how-to-guide
+    links:
+    - text: 管理 OneDrive 和 SharePoint 中的共享
+      url: https://docs.microsoft.com/onedrive/manage-sharing
+    - text: 创建和管理网站。
+      url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center
