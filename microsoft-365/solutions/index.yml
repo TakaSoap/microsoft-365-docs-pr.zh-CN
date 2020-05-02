@@ -1,0 +1,78 @@
+### YamlMime:Hub
+title: Microsoft 365 解决方案和体系结构中心
+summary: 了解如何设计适合您的组织的解决方案和体系结构。
+brand: m365
+metadata:
+  title: Microsoft 365 解决方案和体系结构中心
+  description: 了解如何设计适合贵组织的解决方案和体系结构
+  ms.service: o365-solutions
+  ms.topic: hub-page
+  ms.collection: m365-security-compliance
+  author: samanro
+  ms.author: samanro
+  manager: bcarter
+  audience: ITPro
+  ms.date: 11/08/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 9302dc56dba602a0ea00927dd24176b776b17ae8
+  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "44002602"
+highlightedContent:
+  items:
+  - title: 通过 Microsoft 365 为远程工作人员提供动力
+    itemType: whats-new
+    url: empower-people-to-work-remotely.md
+  - title: 设置与 Microsoft 365 的安全协作
+    itemType: get-started
+    url: setup-secure-collaboration-with-teams.md
+  - title: 在 Microsoft 365 中部署威胁防护
+    itemType: get-started
+    url: deploy-threat-protection.md
+productDirectory:
+  items:
+  - title: Microsoft 365 基础解决方案
+    imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
+    summary: 查找针对特定业务问题或需求（从规划到实施到采用）的完整指南。
+    url: foundation-solutions-overview.md
+  - title: 工作负载解决方案和方案指南
+    imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
+    summary: 将这些方案添加到基础解决方案以向您的环境添加功能。
+    url: workload-solutions-scenarios-overview.md
+  - title: 解决方案和体系结构插图
+    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+    summary: 查看或下载这些插图，以了解 Microsoft 365 服务的功能和体系结构。
+    url: productivity-illustrations.md
+  - title: 特定于行业的指南
+    imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
+    summary: 查找专为你的行业设计的指南。
+    url: industry-specific-guidance-overview.md
+  - title: 企业设计原则
+    imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
+    summary: 了解了解网络、标识、安全性和多国体系结构所需的关键原则。
+    url: design-principles.md
+  - title: 部署路线图和资源
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    summary: 用于设置协作的资源以及安全和信息保护。
+    url: https://docs.microsoft.com/microsoft-365/?view=o365-worldwide
+additionalContent:
+  sections:
+  - title: Microsoft 365 的更多资源
+    items:
+    - title: 适用于管理员和 IT 专业人员的 Microsoft 365 帮助中心
+      summary: 在 Microsoft 365 页面上查找面向 IT 专业人员的更多资源
+      url: https://docs.microsoft.com/microsoft-365
+    - title: 管理员和 IT 专业人员培训
+      summary: 查找用于管理 Microsoft 365 的培训资源
+      url: https://docs.microsoft.com/learn/m365/
+    - title: 面向最终用户的培训
+      summary: 帮助最终用户了解如何使用 Microsoft 365
+      url: https://support.office.com/modernworkplace
+    - title: Microsoft 365 技术社区
+      summary: 与技术社区接洽
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+    - title: 面向开发人员的资源
+      summary: 了解如何开发 Microsoft 365
+      url: https://developer.microsoft.com/microsoft-365
