@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何通过 SharePoint 和 OneDrive 中的文档与来宾进行协作。
-ms.openlocfilehash: 139533b2d7bf65ddd9584007a5ac03800c731d0b
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 33d9300343b23702d5024ac0b489930ac815be7e
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604425"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002261"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文档中与来宾协作
 
@@ -62,7 +66,7 @@ SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 3. 确保将 SharePoint 或 OneDrive 的外部共享设置为 "**任何人**" 或**新的和现有的来宾**。 （请注意，OneDrive 设置不能比 SharePoint 设置更具许可。）
 4. 如果进行了任何更改，请单击 **“保存”**。
 

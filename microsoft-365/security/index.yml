@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 202a01b439755211cbf3d8b06ea1ef874a58c3c1
-  ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+  ms.openlocfilehash: f97f9b3eed2ec9eed95b1f4ec57a3b055d8c4925
+  ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/22/2020
-  ms.locfileid: "43708663"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "43997522"
 landingContent:
 - title: Microsoft 威胁防护
   linkLists:
@@ -28,28 +28,18 @@ landingContent:
       url: mtp/microsoft-threat-protection.md
     - text: Microsoft 365 安全中心
       url: mtp/overview-security-center.md
-- title: Microsoft Defender ATP
+- title: 从免费试用版开始
   linkLists:
   - linkListType: overview
     links:
-    - text: 什么是 Microsoft Defender ATP？
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-    - text: 功能概述
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+    - text: 评估 Microsoft 威胁防护
+      url: mtp/mtp-evaluation.md
 - title: 保护您的远程员工
   linkLists:
   - linkListType: get-started
     links:
     - text: 保护您的远程员工
       url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
-- title: Office 365 ATP
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Office 365 ATP 是什么？
-      url: office-365-security/office-365-atp.md
-    - text: Office 365 ATP 服务说明
-      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: Azure ATP
   linkLists:
   - linkListType: overview
@@ -58,6 +48,22 @@ landingContent:
       url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
     - text: Azure ATP 体系结构
       url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
+- title: Office 365 ATP
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Office 365 ATP 是什么？
+      url: office-365-security/office-365-atp.md
+    - text: Office 365 ATP 服务说明
+      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+- title: Microsoft Defender ATP
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是 Microsoft Defender ATP？
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+    - text: 功能概述
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
 - title: Azure 安全中心
   linkLists:
   - linkListType: overview
@@ -74,15 +80,15 @@ landingContent:
       url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
     - text: Microsoft Cloud App Security 入门
       url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
-- title: Azure Sentinel
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 什么是 Azure Sentinel？
-      url: https://docs.microsoft.com/azure/sentinel/overview
 - title: 安全管理
   linkLists:
   - linkListType: overview
     links:
     - text: 安全评分
       url: mtp/microsoft-secure-score.md
+- title: Azure Sentinel
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是 Azure Sentinel？
+      url: https://docs.microsoft.com/azure/sentinel/overview

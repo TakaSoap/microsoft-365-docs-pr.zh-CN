@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 43793a1780542b1825c693030dd9d4dbff4ee3d7
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636659"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002339"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>步骤1：为 Windows 10 企业版准备组织
 
@@ -56,7 +56,7 @@ Microsoft 使用诊断数据，通过识别恶意软件趋势和其他威胁，�
 
 您可以通过以下任一方法来启用诊断数据：
 
-* **Microsoft Intune** -如果您计划使用 Intune 管理设备，则可以通过配置<a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a>系统策略来创建配置策略来启用诊断数据。 有关设置配置策略的详细信息，请参阅[使用 Microsoft Intune 策略管理设备上的设置和功能](https://aka.ms/intuneconfigpolicies)。
+* **Microsoft Intune** -如果您计划使用 Intune 管理设备，则可以通过配置<a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a>系统策略来创建配置策略来启用诊断数据。
 * **注册表编辑器**-您可以使用注册表编辑器在组织中的每台设备上手动启用诊断数据。 或者，也可以编写脚本来编辑注册表。 如果管理策略已存在（如组策略或 MDM），它将覆盖此注册表设置。
 * **组策略**-如果您不打算在 Intune 中注册设备，则可以使用组策略对象来设置您的组织的诊断数据级别。
 * **命令提示符**-您可以将 Windows 10 诊断数据和服务设置为自动以命令提示符启动。 如果只在几个设备上测试服务，则此方法最适用。 使用此命令使服务自动启动时，将不会配置诊断数据级别。 如果您未使用管理工具配置诊断数据级别，则该服务将使用默认的 "增强" 级别运行。

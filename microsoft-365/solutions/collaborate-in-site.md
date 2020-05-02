@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何在 SharePoint 网站中与来宾进行协作。
-ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b5a50b4d0f7486b3c86546a672b01db3a5b000
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630733"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002273"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 

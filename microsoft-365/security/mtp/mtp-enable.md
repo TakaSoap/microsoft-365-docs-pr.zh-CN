@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fa970b28939ad43bf6a2717e603013277bc9130f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
+ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633900"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997510"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
@@ -36,7 +36,7 @@ Microsoft 威胁防护通过集成 Microsoft Defender 高级威胁防护 (ATP)�
 若要获得最佳保护并优化 Microsoft 威胁防护，建议在网络上部署所有适用的受支持的服务。 有关详细信息，请[参阅部署支持的服务](deploy-supported-services.md)。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>检查许可证资格和必需权限
-Microsoft 365 E5、E5 Security 或 A5 许可证或有效的许可证组合提供了对受支持的服务的访问权限，并允许您在 Microsoft 365 安全中心中使用 Microsoft 威胁防护。
+Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证组合提供了对受支持的服务的访问权限，并允许您在 Microsoft 365 安全中心中使用 Microsoft 威胁防护。
 
 有关许可的详细信息，请[阅读许可要求](prerequisites.md#licensing-requirements)。
 
@@ -51,7 +51,7 @@ Microsoft 威胁防护从各种集成服务中聚合数据。 它将集中处理
 ![Microsoft](../../media/mtp-welcome.png)
 *365 安全中心中*未打开 microsoft 威胁防护欢迎页面时显示的 microsoft 威胁防护欢迎页面的图像
 
-若要打开 Microsoft 威胁防护，只需从欢迎页面完成此过程即可。 您还可以通过在导航窗格中访问**设置**（[security.microsoft.com/settings](https://security.microsoft.com/settings)）并选择 " **microsoft 威胁防护**" 来打开 microsoft 威胁防护。
+若要打开 Microsoft 威胁防护，只需从欢迎页面完成此过程即可。 您还可以通过在导航窗格中访问**设置**（[security.microsoft.com/settings](https://security.microsoft.com/settings)）并选择 " **microsoft 威胁防护**" 来打开 microsoft 威胁防护。 单击“保存”****。
 
 >[!NOTE]
 >如果在导航窗格中看不到**设置**或无法访问页面，请检查您的权限和许可证。

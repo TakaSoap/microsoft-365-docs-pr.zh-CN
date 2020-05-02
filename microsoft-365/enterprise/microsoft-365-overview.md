@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供对适用于企业的 Microsoft 365 的组件、计划和部署路径的介绍。
-ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9148acadf5ec05562ac1a5cbbca9cbf7d0a1b65
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631557"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002286"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -45,7 +45,7 @@ ms.locfileid: "43631557"
 |:-------|:-----|
 | E3 | 访问 Microsoft 365 中的核心产品和功能，以提高工作效率和促进创新和安全。 |
 | E5 | 访问 Microsoft 365 中的最新产品和功能，包括高级威胁防护、安全和协作工具。。 包括所有 E3's 功能，以及高级安全性、语音和数据分析工具。 |
-| F1 | 通过专门构建的工具和资源与您的 Firstline 工作人员联系，让他们能够完成其最佳工作。 |
+| F3 | 通过专门构建的工具和资源与您的 Firstline 工作人员联系，让他们能够完成其最佳工作。 |
 |||
 
 如果你拥有 Microsoft 365 E3，还可以获取以下[产品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：

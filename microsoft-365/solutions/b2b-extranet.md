@@ -5,23 +5,27 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何使用合作伙伴组织中的受管理的来宾用户创建 B2B extranet 网站或团队。
-ms.openlocfilehash: 24a2652d4d025f194d0754b90b6a21a054f4159a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604422"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44001694"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>创建托管有来宾的 B2B 外联网
 
 您可以使用[Azure Active Directory 权限管理](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)创建 B2B extranet，以与使用 Azure Active Directory 的合作伙伴组织进行协作。 这样，用户可以在 extranet 网站或团队中自行注册，并通过审批工作流接收访问权限。
 
-通过这种共享资源进行协作的方法，合作伙伴组织可以帮助他们在他们的终端上维护和批准来宾用户，减少 IT 部门的负担，并允许最熟悉协作协议的人管理用户访问.
+通过这种共享资源进行协作的方法，合作伙伴组织可以帮助他们在他们的终端上维护和批准来宾用户，减少 IT 部门的负担，并允许最熟悉协作协议的人管理用户访问。
 
 本文逐步介绍了如何创建可通过自助服务访问注册模型与合作伙伴组织共享的资源包（在此示例中为网站或团队）。 
 
@@ -54,7 +58,7 @@ ms.locfileid: "42604422"
 2. 单击 "**目录**"。
 3. 单击 "**新建目录**"。
 4. 键入目录的名称和说明，并确保**为外部用户****启用**和启用两者都设置为 **"是"**。
-5. 单击“**创建**”。
+5. 单击“创建”****。
 
    ![Azure Active Directory 标识管理中的目录页面的屏幕截图](../media/identity-governance-catalogs.png)
 
