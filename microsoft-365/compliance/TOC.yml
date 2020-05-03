@@ -165,6 +165,8 @@
           href: customer-key-availability-key-roll.md
         - name: 了解客户密钥的可用性密钥
           href: customer-key-availability-key-understand.md
+    - name: 加密传输中的数据
+      href: office-365-encryption-for-data-in-transit.md
     - name: 电子邮件加密
       href: email-encryption.md
       items:
@@ -1204,6 +1206,8 @@
               href: offering-lopd-spain.md
             - name: PASF（英国）
               href: offering-pasf-uk.md
+            - name: 个人数据本地化（俄罗斯）
+              href: offering-russia-data-localization.md
         - name: 北美
           items:
             - name: 加州消费者隐私法案 (CCPA)
