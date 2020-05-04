@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 概述贵组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: 783b2c599a5f3a31446855450029859e6dfd9f65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626930"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011755"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 ---
@@ -71,7 +71,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 激活和许可页面提供有关 Microsoft 365 激活的报告;也就是说，有多少用户已经下载并激活了 Office 应用程序，并且已为组织分配了多少个许可证。 指向顶部的月值是指当前月，而指标反映从月初到当前日期的汇总值。
 
-- **激活** &ndash;跟踪组织中的服务计划（例如，Microsoft 365 专业增强版、Project 和 Visio）激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用本节中的报告来查看用户安装了 Office 应用程序的设备。 请注意，若要激活计划，用户必须安装该应用并使用其帐户登录。
+- **激活** &ndash;跟踪服务计划（例如，适用于企业版、Project 和 Visio 的 Microsoft 365 应用程序）在您的组织中激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用本节中的报告来查看用户安装了 Office 应用程序的设备。 请注意，若要激活计划，用户必须安装该应用并使用其帐户登录。
 
 - **许可** &ndash;此报告包含许可证类型、为每个许可证类型分配的用户数以及每个月的许可证分配分配的概述。 指向顶部的月值是指当前月，而指标反映从月初到当前日期的汇总值。
 
@@ -117,7 +117,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可以与一组人员一起使用和自定义同一个模板应用？
 
-可以。 若要使一组管理员能够在同一个模板应用程序中协同工作，可以利用 Power BI 的应用程序工作区功能，有关详细信息，请参阅[应如何协作和共享仪表板和报表？](https://go.microsoft.com/fwlink/p/?linkid=851070) 
+是。 若要使一组管理员能够在同一个模板应用程序中协同工作，可以利用 Power BI 的应用程序工作区功能，有关详细信息，请参阅[应如何协作和共享仪表板和报表？](https://go.microsoft.com/fwlink/p/?linkid=851070) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可以使用哪些时间范围的数据？
 

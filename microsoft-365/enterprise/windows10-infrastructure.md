@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 53c38ba2e915cd439c8d7629bc7f9cd56ebc8647
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636671"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011919"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
 
@@ -41,7 +41,7 @@ Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更
 
 | 部署方案 | 何时使用 |
 |:--- |:--- |
-| [使用 Microsoft 终结点配置管理器作为就地升级](windows10-deploy-inplaceupgrade.md) | 如果需要将 Windows 7 或 Windows 8.1 计算机升级到<a href="https://aka.ms/windows-10-release-information" target="_blank">当前版本</a>的 Windows 10 企业版，并且您的计算机当前是使用<a href="https://docs.microsoft.com/configmgr/core/understand/introduction" target="_blank">配置管理器（当前分支）</a>管理的，请选择此选项。 |
+| [使用 Microsoft 终结点配置管理器作为就地升级](windows10-deploy-inplaceupgrade.md) | 如果需要将 Windows 7 或 Windows 8.1 计算机升级到<a href="https://aka.ms/windows-10-release-information" target="_blank">当前版本</a>的 Windows 10 企业版，并且您的计算机当前是使用<a href="https://docs.microsoft.com/mem/configmgr/core/understand/introduction" target="_blank">配置管理器（当前分支）</a>管理的，请选择此选项。 |
 | [使用 Windows Autopilot](windows10-deploy-autopilot.md) | 如果要设置 Windows 10 企业版、版本1703或更高版本预安装的新 Windows 计算机，请选择此选项。 最终用户将使用所需的配置来启动安装程序，方法是输入其工作或学校帐户凭据。 |
 
 如果这些部署方案不能满足您组织的需求，您可以了解其他方案并了解每个方案在[Windows 10 部署方案](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的功能和限制。 也可以自行<a href="https://aka.ms/planforwin10deployment" target="_blank">计划 Windows 10 部署</a>。

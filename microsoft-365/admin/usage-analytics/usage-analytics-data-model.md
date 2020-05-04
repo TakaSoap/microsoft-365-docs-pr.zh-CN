@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '了解使用情况分析如何连接到 API，并提供各种 Microsoft 365 服务的每月使用趋势。  '
-ms.openlocfilehash: 56ef0ffcedee71a4529ff31aecefed0d2645b89a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c39edd66bda19233a67c4623044ffc9e0e8046d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634236"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011767"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情况分析数据模型
 
@@ -50,7 +50,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 这�
 |租户 SharePoint Online 使用情况  <br/> |包含有关 SharePoint 网站（包括团队网站或组网站）的数据，如网站总数、网站上的文档数、各活动类型的文件数和已用存储。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
 |租户 OneDrive for Business 使用情况  <br/> |包含有关 OneDrive 帐户的数据，如帐户数、跨 OneDrive 的文档数、已用存储、各活动类型的文件数。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
 |租户 Microsoft 365 组使用情况  <br/> |包含有关 Microsoft 365 组用途（包括邮箱、SharePoint 和 Yammer）的数据。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
-|租户 Office 激活  <br/> |包含有关 Office 订阅激活数、每个设备 (Android/iOS/Mac/PC) 激活次数、各服务计划（如 Office Proplus、Visio、Project）激活次数的数据。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
+|租户 Office 激活  <br/> |包含有关 Office 订阅激活次数、每个设备的激活计数（Android/iOS/Mac/电脑）、按服务计划激活的数据（例如，Microsoft 365 Apps for enterprise、Visio、Project）的数据。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
 |用户状态  <br/> |包含有关用户的元数据，包括用户显示名称、分配的产品、位置、部门、职务、公司。此数据有关在刚刚结束的一个月内分配到许可证的用户。每个用户都以唯一的用户 ID 表示。  <br/> |此数据有关在刚刚结束的一个月内分配到许可证的用户。  <br/> |
 |用户活动  <br/> |包含有关授权用户执行的活动的每用户级别的信息。  <br/> 有关在此数据表中返回的产品中的活动的信息，请参阅[活动用户定义](active-user-in-usage-reports.md)。  <br/> |此数据有关刚刚结束的一个月内在任何服务中执行活动的用户。  <br/> |
    
@@ -152,7 +152,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 这�
 |ActiveUsers  <br/> |在时间范围值内在产品中执行有意活动的用户数。  <br/> 如果某一用户在某一特定月份内在产品中执行了某一关键活动，则将该用户计为该月该产品的活动用户。 **租户产品活动** 表中列出了各项关键活动。  <br/> |
 |CumulativeActiveUsers  <br/> |允许使用产品，且自在新使用情况系统中启用数据收集起在截至时间范围月份前至少使用了一次产品的用户数。  <br/> |
 |MoMReturningUsers  <br/> |在时间范围月份内处于活动状态，且在上个月中也处于活动状态的用户数。  <br/> |
-|FirstTimeUsers  <br/> |自在新使用情况系统中启用数据收集起在时间范围内首次处于活动状态的用户数。  <br/> 如果自在此新报告系统中启用数据收集起，首次检测到某一用户的活动，该用户将被视为某一特定月份中首次使用的用户。计为首次使用的用户后，即使此用户的活动中存在巨大的空白，也不会再次将其计为首次使用的用户  <br/> |
+|FirstTimeUsers  <br/> |自在新使用情况系统中启用数据收集起在时间范围内首次处于活动状态的用户数。  <br/> 如果自在此新报告系统中启用数据收集起，首次检测到某一用户的活动，该用户将被视为某一特定月份中首次使用的用户。 作为首次用户计数，即使此用户的活动中有很大的缺口，也不会再作为首次用户计数  <br/> |
 |Content Date  <br/> |如果时间范围显示当前月，则此值表示数据可供使用的当前月的最后一天。  <br/> 如果时间范围显示上个月，则此值表示上个月的最后一天。  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>数据表 - 租户产品活动
@@ -277,7 +277,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 这�
    
 ### <a name="data-table---tenant-office-activation"></a>数据表 - 租户 Office 激活
 
-此表提供了有关跨服务计划（如 Office Proplus、Visio、Project）激活 Office 订阅的次数的数据。此外，它还提供了有关每个设备 (Android/iOS/Mac/PC) 的激活次数的数据。
+该表提供了有关跨服务计划的 Office 订阅激活次数的数据，例如，Microsoft 365 Apps for 企业、Visio、Project。 此外，它还提供了有关每个设备 (Android/iOS/Mac/PC) 的激活次数的数据。
   
 |**列名称**|**列说明**|
 |:-----|:-----|

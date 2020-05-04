@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c482e46cf51cbf11960c02663221df0c136b067c
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: dfc2136f04ed128fc655386c6eef7b91c5e5ef3a
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857175"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011265"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 
@@ -34,7 +34,11 @@ ms.locfileid: "42857175"
 了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。
 
 ## <a name="licensing-requirements"></a>许可要求
-若要使用 Microsoft 威胁防护，您需要一个许可证或许可证组合。
+
+>[!IMPORTANT]
+>从2020年5月3日开始，Microsoft 将逐步推出有关许可要求的新的优化体验，并[启用 Microsoft 威胁防护](mtp-enable.md)。 在此期间的几周内，一些客户将开始查看对其门户体验所做的更改。 有关新体验的信息已在本文中标记为 "**新体验**"。
+
+若要使用 Microsoft 威胁防护，您需要一个许可证或许可证组合。 这些许可证或许可证组合使您可以访问 Microsoft 威胁防护功能，而无需额外付费。
 
 ### <a name="single-license"></a>单一许可证
 您可以使用以下许可证*之一*：
@@ -47,11 +51,24 @@ ms.locfileid: "42857175"
 
 - Office 365 E5 或 A5
 - *企业移动性 + 安全性（EMS）* E5 或 A5
-- Windows E5 或 A5
+- Windows 10 企业版 E5 或 A5
 
 有关详细信息，请[查看 Microsoft 365 企业版服务计划](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 
 > 还没有许可证？ [试用或购买 Microsoft 365 订阅](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+
+
+**全新体验：** 从2020年5月3日开始，客户将逐渐收到此体验的更改。 对于具有全新体验的用户，启用 Microsoft 威胁防护的选项将适用于具有以下任意许可证的*所有*客户：
+
+- Microsoft 365 E5 或 A5
+- Microsoft 365 E5 Security or A5 Security
+- Windows 10 企业版 E5 或 A5
+- 企业移动性 + 安全性（EMS） E5 或 A5 
+- Office 365 E5 或 A5
+- Microsoft Defender 高级威胁防护 
+- Azure 高级威胁防护 
+- Microsoft Cloud App Security 
+- Office 365 高级威胁防护（计划 2） 
 
 ### <a name="check-your-existing--licenses"></a>检查现有许可证
 转到 Microsoft 365 管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看现有许可证。 在管理中心，转到“计费”**** > “许可证”****。

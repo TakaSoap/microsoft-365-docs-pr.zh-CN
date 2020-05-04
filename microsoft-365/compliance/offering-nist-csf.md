@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b380604e908d91feacefe6b54ed3d3f08dcea0fa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49eb9ae31ab913be30b2b96735f15ae57e85a10f
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637794"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011229"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
@@ -64,7 +64,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 - [开始使用合规性分数](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **是否有独立的评估员验证了 Azure 政府、Dynamics 365 和 Office 365 是否支持 NIST CSF 要求？**
 
@@ -80,7 +80,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 **我是否可以使用 Microsoft 对我的组织的合规性？**
 
-可以。 对 FedRAMP 标准的独立第三方合规性报告证明 Microsoft 实施的控件的有效性，以维护 Microsoft 云服务的安全和隐私。 Microsoft 客户可以使用这些相关报告中所述的审核控件作为其自己的 FedRAMP 和 NIST FICIC 的风险分析和资格努力的一部分。
+是。 对 FedRAMP 标准的独立第三方合规性报告证明 Microsoft 实施的控件的有效性，以维护 Microsoft 云服务的安全和隐私。 Microsoft 客户可以使用这些相关报告中所述的审核控件作为其自己的 FedRAMP 和 NIST FICIC 的风险分析和资格努力的一部分。
 
 **美国政府认为哪些组织是关键基础结构？**
 
@@ -88,7 +88,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 **Office 365 的范围内服务有哪些？**
 
-NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online Protection、Exchange Online、Skype for business、管理中心、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 团队、Office 专业增强版 in Office 365 多租户和 Office 365 GCC。
+NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online Protection、Exchange online、Exchange Online、Skype for business、管理中心、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 团队、Microsoft 365 Apps for enterprise in Office 365 多租户云和 Office 365 GCC。
 
 > [!NOTE]
 > 适用于企业的 Microsoft 365 应用程序支持对各种云服务（如漫游设置、许可和 OneDrive 消费者云存储）的访问，并可能在将来能够访问其他云服务。 漫游设置和许可支持 HITRUST 的标准。 OneDrive 消费者云存储不支持，并且 Microsoft 可通过 Microsoft 365 应用程序访问的其他云服务也可能会在将来提供，并支持这些标准。 *
@@ -108,7 +108,7 @@ NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online
 - [改进关键基础结构的框架 Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [总统执行官在加强 Cybersecurity 的联邦网络和关键基础结构方面的顺序](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [在线服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息

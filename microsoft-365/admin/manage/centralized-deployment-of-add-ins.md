@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: 10dd97adf67cf3aeb91337fb251e7cebffdce56c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0fcdb9901c708842470f72106ab4eea20ff8b17e
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628228"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011719"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -32,7 +32,7 @@ ms.locfileid: "43628228"
 集中部署支持 Windows、Mac、iOS、Android 和 Online Office 应用。
 加载项最长可能需要12个小时才能为所有用户显示客户端。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 集中部署加载项需要用户使用适用于企业的 Microsoft 365 应用程序（并使用组织 ID 登录 Office），并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用[集中部署兼容性检查器](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)。
@@ -73,7 +73,7 @@ ms.locfileid: "43628228"
 
 若要将 Microsoft 365 应用程序用于企业版，用户必须拥有 Microsoft 365 帐户，并且必须已分配许可证。 有关详细信息，请参阅[适用于企业的 Microsoft 365 应用概述](https://go.microsoft.com/fwlink/p/?linkid=846328)。
 
-检测用户是否已安装 Microsoft 365 专业增强版并最近使用过的最简单方法是使用 Microsoft Office 激活报告，该报告在 Microsoft 365 管理中心中提供。 该报告提供了一个列表，其中列出了在过去7天、30天、90天或180天内为企业激活 Microsoft 365 应用程序的所有用户。 出于集中部署目的，Windows 或 Mac 的桌面激活是报表中的重要列。 可将报表导出至 Excel。 有关报告的详细信息，请参阅[管理中心内的 microsoft 365 报表-Microsoft Office 激活](../activity-reports/microsoft-office-activations.md)。
+检测用户是否已安装 Microsoft 365 应用程序并最近是否使用它的最简单方法是使用 Microsoft Office 激活报告，该报告在 Microsoft 365 管理中心中提供。 该报告提供了一个列表，其中列出了在过去7天、30天、90天或180天内为企业激活 Microsoft 365 应用程序的所有用户。 出于集中部署目的，Windows 或 Mac 的桌面激活是报表中的重要列。 可将报表导出至 Excel。 有关报告的详细信息，请参阅[管理中心内的 microsoft 365 报表-Microsoft Office 激活](../activity-reports/microsoft-office-activations.md)。
   
 如果不想使用激活报告，可以让用户在其计算机上打开 Office 应用程序（如 Word），然后选择 "**文件** \> **帐户**"。 在 "**产品信息**" 下，您应看到 "**适用于企业的****订阅产品**和 microsoft microsoft 365 应用"，如下图中所示。
 

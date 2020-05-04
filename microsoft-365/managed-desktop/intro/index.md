@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636216"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011907"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
@@ -53,7 +53,7 @@ Microsoft 托管桌面提供了一种解决方案，用于解决企业及其人�
 Microsoft 托管桌面承担管理注册设备及其使用的 Microsoft 软件的负担。
 
 - **硬件：** 您的 IT 部门无需研究和测试设备（及其驱动程序），而是由 Microsoft 托管桌面仔细测试特定设备，从而导致 curated 满足企业级性能要求的[设备列表](../service-description/device-list.md)，并保证能够与该服务配合使用。 你可以自己获取设备（或与合作伙伴合作），也可以重新使用已有的设备，前提是这些设备已在 "已批准" 列表中。 注册设备简单明了，在部署之前，您还可以为最终用户[自定义](../working-with-managed-desktop/config-setting-overview.md)设备体验的某些方面。
-- **更新：** Microsoft 托管桌面为 Windows 10 质量和功能更新、驱动程序、固件、反病毒定义和 Office 专业增强版更新设置并管理[部署组](../service-description/updates.md)的所有方面。 这包括对所有更新的广泛测试和验证，确保已注册的设备始终保持最新，并最大限度地减少中断，从而使 IT 部门不会发生这种日常任务。
+- **更新：** Microsoft 托管桌面为 Windows 10 质量和功能更新、驱动程序、固件、反病毒定义和 Microsoft 365 应用进行企业更新，设置并管理[部署组](../service-description/updates.md)的所有方面。 这包括对所有更新的广泛测试和验证，确保已注册的设备始终保持最新，并最大限度地减少中断，从而使 IT 部门不会发生这种日常任务。
 - **应用：** 作为 Microsoft 365 企业的一部分，Microsoft 为你提供（和管理）多个关键 Microsoft 应用。 但您可能还具有您的业务需要的其他应用程序。 无需测试、打包和部署这些应用程序的 IT 部门，Microsoft 可帮助您部署这些应用程序，并可在需要时帮助您进行[桌面应用程序的确保](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)。 有关详细信息，请参阅[Microsoft 托管桌面中的应用程序](../get-ready/apps.md)。
 
 

@@ -19,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 了解如何将用户升级到最新的 Office 客户端。
-ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627530"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011264"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>将 Microsoft 365 for business 用户升级到最新的 Office 客户端
 
@@ -124,4 +124,4 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
 确认要升级的用户都拥有许可证后，最后一步是让他们安装 Office，请参阅[在电脑或 Mac 上下载并安装或重新安装 office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。
   
 > [!TIP]
-> 如果您不希望用户安装 Office 本身，请参阅[在 Office 365 中管理软件下载设置](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)。 您可以使用[Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)将 office 软件下载到本地网络，然后使用您通常使用的软件部署方法部署 office。
+> 如果您不希望用户安装 Office 本身，请参阅[在 Office 365 中管理软件下载设置](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)。 您可以使用[Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool)将 office 软件下载到本地网络，然后使用您通常使用的软件部署方法部署 office。

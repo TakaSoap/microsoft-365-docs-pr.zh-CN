@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628156"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011707"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理外接程序的部署
 
@@ -211,12 +211,12 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 |||
 |:-----|:-----|
 |**平台** <br/> |**内部版本号** <br/> |
-|Office 2016 专业增强版每月 for Windows  <br/> |9001.2138   <br/> |
-|Office 2016 专业增强版半年  <br/> |8431.2159  <br/> |
+|适用于企业的 Microsoft 365 应用（月度频道）  <br/> |9001.2138   <br/> |
+|适用于企业的 Microsoft 365 应用（半年频道）  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|Office 网页版  <br/> |不适用  <br/> |
+|Office 网页版  <br/> |无  <br/> |
    
  **对于 Outlook**： 
   
@@ -228,7 +228,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 |Office 2016 for Mac  <br/> |16.0.9318.1000  <br/> |
 |适用于 iOS 的 Outlook mobile  <br/> |2.75.0  <br/> |
 |Outlook mobile for Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |不适用  <br/> |
+|Outlook.com  <br/> |无  <br/> |
    
  **Office 2013 要求**
   
@@ -277,7 +277,7 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
 3. 单击 "**删除加载项**"。 移除右下角的外接端按钮。
 4. 验证您的选择，然后选择 "**删除外接程序**"。
   
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 深入了解如何创建和构建 [Office 加载项](https://go.microsoft.com/fwlink/p/?linkid=846362)。
   

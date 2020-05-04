@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: '了解如何使用 Cortana 与 Office 365 集成。 你可以在管理中心关闭 Cortana 以限制其对你组织的数据的访问。 '
-ms.openlocfilehash: 768abeed4bf40255e9dd7c6e09e20122523a943d
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 5f1d225e8cf7378bf4548fbbc705cf4ca6c2c63b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907209"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011683"
 ---
 # <a name="cortana-in-office-365"></a>Office 365 中的 Cortana
 
@@ -54,7 +54,7 @@ Office 365 中的 Cortana 处理来自用户的查询、满足用户请求所需
 
 下表介绍了 Office 365 中 Cortana 的数据处理。
 
-|**名称**|**说明**|
+|**Name**|**说明**|
 |:-----|:-----|
 |**存储**  <br/> |客户数据存储在 Office 365 云内部的 Microsoft 服务器上。 你的数据是租户的一部分。 <br/> 不保留语音音频。  <br/> |
 |**留在 Geo 中**  <br/> |客户数据存储在 Geo 中的 Office 365 云内部的 Microsoft 服务器上。 你的数据是租户的一部分。  <br/> |
@@ -106,7 +106,7 @@ Cortana 发送个性化的简报电子邮件，其中包含任务和承诺，您
 
 3. 例如，"播放我的电子邮件" 是一项 Cortana 服务，您的用户可以通过 Outlook for iOS 连接到 Office 365 中的 Cortana 并利用 Cortana。
 
-4. 管理员始终具有用于 Cortana 的可选连接体验的控件，类似于使用 Office 专业增强版应用程序时的可选连接体验。
+4. 管理员始终具有用于 Cortana 的可选连接体验的控件，类似于在使用 Microsoft 365 应用程序的企业应用程序时的可选连接体验。
 
 **适用于消费者的现有服务**： Cortana 可选连接的服务主要用于用户体验，并且当前在 IOS 和 Android 上的 Windows 10 （版本1909及更低版本）和 Cortana 应用程序中提供。
 

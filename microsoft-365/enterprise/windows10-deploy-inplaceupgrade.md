@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1c90640fa49aa102d2a4c8420feedf659b5682f2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085581"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011813"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步骤2：将现有设备的 Windows 10 企业版部署为就地升级
 
 *本文适用于 Microsoft 365 企业版的 E3 和 E5 版本*
 
-![第 3 阶段：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![阶段 3：Windows 10 企业版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 将当前运行 Windows 7 或 Windows 8.1 的电脑升级到 Windows 10 的最简单途径是通过就地升级。 您可以使用配置管理器（配置管理器）任务序列来完全自动执行该过程。 
 
@@ -47,7 +47,7 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
 
 接下来，按照指南使用 Configuration Manager （当前分支）将 Windows 7 或更高版本的操作系统升级到 Windows 10。 与任何高风险部署一样，我们建议您先备份用户数据，然后再继续。 OneDrive 云存储准备就绪，可用于许可的 Microsoft 365 用户，并可用于安全地存储文件。 有关详细信息，请参阅[OneDrive 快速入门指南](https://aka.ms/ODfBquickstartguide)。 若要访问此页面，必须在 Office 365 或 Microsoft 365 租户中以租户管理员或全局管理员身份登录。
 
-有关配置管理器版本和受支持的相应 Windows 10 客户端版本的列表，请参阅[支持 windows 10 For Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10)。
+有关配置管理器版本和受支持的相应 Windows 10 客户端版本的列表，请参阅[支持 windows 10 For Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/support-for-windows-10)。
 
 **验证是否已准备好升级 Windows**
 
@@ -96,7 +96,7 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
 创建升级任务序列后，需要创建包含要升级的设备的集合。
 
 > [!NOTE]
-> 使用以下设置测试单个设备上的部署。 准备就绪后，可以使用不同的成员身份规则来包含设备组。 有关详细信息，请参阅[如何在 Configuration Manager 中创建集合](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections)。
+> 使用以下设置测试单个设备上的部署。 准备就绪后，可以使用不同的成员身份规则来包含设备组。 有关详细信息，请参阅[如何在 Configuration Manager 中创建集合](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections)。
 
 1. 在 Configuration Manager 控制台中的 "**资产和合规性**" 工作区中，右键单击 "**设备集合**"，然后选择 "**创建设备集合**"。 
 2. 在 "创建设备集合" 向导中的 "**常规**" 页面上，输入以下设置，然后选择 "**下一步**"：
@@ -136,7 +136,7 @@ Configuration Manager 海报是横向模式（17x11）中的一页。 单击下�
  
 1. 登录到 Windows 计算机并启动**软件中心**。
 2. 选择您在上一步中创建的任务序列，然后选择 "**安装**"。
-3. 任务序列开始时，它会自动启动就地升级过程，方法是通过调用 Windows 安装程序（setup.exe）并使用必要的命令行参数来执行自动升级，这将保留所有数据、设置、应用程序和设备.
+3. 任务序列开始时，它会通过调用 Windows 安装程序（setup.exe）来自动启动就地升级过程，并使用所需的命令行参数来执行自动升级，这将保留所有数据、设置、应用和驱动程序。
 4. 任务序列成功完成后，计算机将完全升级到 Windows 10。
 
 如果在企业环境中使用 Windows 10 时遇到问题，可以参阅[主要 Microsoft 支持解决方案，了解最常见的问题](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。 这些资源包括知识库文章、更新和库文章。

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 解决方案和体系结构中心
-description: 说明。
+description: 若要了解、规划和实施集成 Microsoft 365 解决方案以实现安全和合规性的新式协作，请获取技术指导。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 3442e51a3487be859ba546f5be2cab6e8e574de4
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: d621586e5ff50bce7be68117a940fc54607362c2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002447"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011743"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解决方案和体系结构中心
 
@@ -34,7 +34,7 @@ ms.locfileid: "44002447"
 
 ![云和标尺符号](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) "**[解决方案" 和 "体系结构图](productivity-illustrations.md)**" 介绍了如何查看或下载这些说明，以了解 microsoft 365 的云服务的功能和体系结构。
 
-![最佳实践功能](https://docs.microsoft.com/office/media/icons/best-practices-blue.png)区**[行业特定的指导](industry-specific-guidance-overview.md)** 为您的行业、医疗保健和教育寻找最佳实践。
+![最佳实践功能](https://docs.microsoft.com/office/media/icons/best-practices-blue.png)区**[行业特定的指导](industry-specific-guidance-overview.md)** 为您的行业（财务、医疗保健和教育方面）找到最佳实践。
 
 ![布局/导航符号](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **[设计原则](design-principles.md)** 了解了解网络、标识、安全性和多国体系结构所需的关键原则。
 

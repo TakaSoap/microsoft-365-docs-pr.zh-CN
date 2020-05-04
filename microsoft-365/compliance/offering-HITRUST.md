@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f04c6bf41e9c09455773c419efec0b7b4e8ca5ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fa35e71d2748e02da12a239f67134c1b25b5a369
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637986"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011825"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康信息信任联盟（HITRUST）常见安全框架（CSF）
 
@@ -74,7 +74,7 @@ Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
 **我可以使用 Azure HITRUST 合规性来构建组织的认证过程吗？**
 
-可以。 如果企业需要对部署在 Microsoft 服务上的实施进行 HITRUST 认证，则可以在进行合规性评估时在 Azure HITRUST 合规性上构建。 不过，您需要负责评估您自己的组织中的 HITRUST 要求和控件。
+是。 如果企业需要对部署在 Microsoft 服务上的实施进行 HITRUST 认证，则可以在进行合规性评估时在 Azure HITRUST 合规性上构建。 不过，您需要负责评估您自己的组织中的 HITRUST 要求和控件。
 
 **如何获取 HITRUST 证书的副本？**
 
@@ -82,7 +82,7 @@ Azure 和 Office 365 的 HITRUST CSF 认证的有效期为两年。
 
 **Office 365 的范围内服务有哪些？**
 
-HITRUST CSF 认证的范围内的服务包括 Exchange Online 存档、Exchange Online Protection、Exchange online、Skype for business、管理中心、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 团队、Office 专业增强版 Office 365 多租户版和 Office 365 GCC。
+HITRUST CSF 认证的范围内的服务为 Exchange Online 存档、Exchange Online Protection、Exchange online、Skype for business、管理中心、SharePoint Online、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 团队、Microsoft 365 Apps for enterprise in Office 365 多租户云和 Office 365 GCC。
 
 > [!NOTE]
 > 适用于企业的 Microsoft 365 应用程序支持对各种云服务（如漫游设置、许可和 OneDrive 消费者云存储）的访问，并可能在将来能够访问其他云服务。 漫游设置和许可支持 HITRUST 的标准。 OneDrive 消费者云存储不支持，并且 Microsoft 可通过 Microsoft 365 应用程序访问的其他云服务也可能会在将来提供，并支持这些标准。 *
