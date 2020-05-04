@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成适用于非企业组织的 Microsoft 365 企业版基础结构的简化部署阶段。
-ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638256"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011895"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>适用于非企业组织的 Microsoft 365 企业版基础结构
 
@@ -215,7 +215,7 @@ Azure AD 将会评估用户登录的条件，并且可以使用条件访问策�
 
 ## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>第 4 阶段：Microsoft 365 企业应用版
 
-Microsoft 365 企业版包括 Microsoft 365 企业应用版（即订阅版 Microsoft Office）。 与 Office 2016 或 Office 2019 一样，Microsoft 365 企业应用版直接安装在客户端设备上。 不同之处在于，Microsoft 365 企业应用版定期接收包含新功能的更新。 有关详细信息，请参阅[关于企业中的 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企业版包括 Microsoft 365 企业应用版（即订阅版 Microsoft Office）。 与 Office 2016 或 Office 2019 一样，Microsoft 365 企业应用版直接安装在客户端设备上。 不同之处在于，Microsoft 365 企业应用版定期接收包含新功能的更新。 有关详细信息，请参阅[关于 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
 
 对于非企业组织，请在设备（包括 Windows、iOS 和 Android 设备）上手动安装 Microsoft 365 企业应用版。 这可以作为准备使用新设备的一部分来完成，也可以由用户在载入过程中完成。
 

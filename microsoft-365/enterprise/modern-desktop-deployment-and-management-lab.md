@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631509"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011955"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -104,7 +104,7 @@ ms.locfileid: "43631509"
 ### <a name="windows-and-office-as-a-service"></a>Windows 和 Office 即服务
   - 使用组策略管理 Windows 更新
   - 使用配置管理器和 Intune 服务 Windows 10
-  - 使用配置管理器服务 Office 365 专业增强版
+  - 使用 Configuration Manager 服务 Microsoft 365 企业应用版
 
 ### <a name="new-windows-virtual-desktop"></a>新增内容！ Windows 虚拟桌面
   - Windows 虚拟桌面：准备、部署、优化 
@@ -121,11 +121,11 @@ ms.locfileid: "43631509"
 
   - [Microsoft Mechanics 的桌面部署系列视频](https://www.aka.ms/watchhowtoshift)
 
-  - [Microsoft Endpoint Configuration Manager 操作系统部署](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager 操作系统部署](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 部署计划</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Microsoft 365 企业应用版的部署指南</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Microsoft 365 应用部署指南</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Intune 入门</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

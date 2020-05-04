@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署过程简介。
-ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05ec900acbcfed9d148ef4f567aab099dd9b7c7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634214"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011871"
 ---
 # <a name="getting-started---desktop-deployment"></a>入门 - 桌面部署
 
@@ -53,7 +53,7 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 [面向 IT 专业人员的 Windows 10](https://www.microsoft.com/itpro/windows-10)
 
-[关于企业中的 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[关于 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## <a name="what-has-changed"></a>更改的内容
 
@@ -67,7 +67,7 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 **基于云的设备管理：** 借助诸如 Microsoft Intune 之类的服务，你可以像管理其他移动设备一样，从一个位置管理 Windows 10 设备。 Microsoft Intune 的独特之处是能够与 Microsoft Endpoint Configuration Manager 共同管理 Windows 10 设备。 可以使用 Configuration Manager 来帮助切换到 Windows 10，然后添加 Microsoft Intune。 通过协同工作，Microsoft Endpoint Configuration Manager 将成为组织中的智能边缘，与 Microsoft 智能云相连。 这使你能够安全管理用户设备，无论它们在何处，也不管是连接到组织的基础结构还是公有云。
 
-[Windows 10 设备的共同管理](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Windows 10 设备的共同管理](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **基于云的部署服务：** 当你购买新电脑时，我们已经引入了新的云服务来帮助你部署 Microsoft 365 设备。它被称为 Windows Autopilot 部署服务。 AutoPilot 与你的硬件提供程序集成，且新电脑会在 Auto Pilot 中自动注册。这使得新电脑可以直接发送给最终用户。 当电脑首次启动时，它会快速配置为组织所需的配置，并根据用户的特定需求进行自定义。
 
@@ -77,7 +77,7 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 即点即用与过去基于 MSI 的包有很大的区别。 即点即用速度更快、更轻，并支持后台更新，可确保用户的正常启动和运行。 它仍然是 Office 的本地副本，你可以继续使用现有部署工具（如 Microsoft Endpoint Configuration Manager）来预配和配置应用。
 
-[Microsoft 365 企业应用版部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 应用部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **半年更新：** 迁移到 Windows 10 和 Microsoft 365 企业应用版后，包含新功能的更新半年分发一次。 但是，由于 Microsoft 能够从云提供见解来帮助你，你可以迅速而自信地将这些更新发布到成百上千台设备。 与就地升级一样，该功能更新保留了前一个版本的应用、数据和配置。
 
@@ -109,14 +109,14 @@ Windows 10 和 Microsoft 智能云组合增强了你为用户提供最强大和�
 
 **[步骤 6：OS 部署和功能更新](https://aka.ms/mdd6)** 在一切准备就绪后，下一步是部署 OS 映像。可以使用 System Center Configuration Manage 任务序列和基础结构来完成大量的繁重工作。建议的方法是在组织中实施分阶段部署，使用一组具有代表性的硬件和应用，首先锁定目标并部署到“早期采用者组”。然后，你可以使用来自这些设备和用户的数据来逐步瞄准更多电脑。
 
-[Configuration Manager 中的操作系统部署简介](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Configuration Manager 中的操作系统部署简介](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[步骤 7：Windows 和 Office 即服务](https://aka.ms/mdd7)** 这标志着维护用户桌面资产的方式发生了重大转变。 通过迁移到 Windows 10 和 Microsoft 365 企业应用版，可以将 Windows 和 Office 作为服务来管理。 每隔几年，技术就会发生巨大的变化，你将不断为用户带来新功能、体验和保护。 半年度功能更新在每年的秋季和春季提供新功能，而每月累积质量更新将包含安全性、可靠性和 bug 修复。 虽然你可以选择部署 Office 2019 客户端，但强烈建议迁移到 Microsoft 365 企业应用版。 此做法遵循类似于 Windows 的服务计划，因此用户也会定期收到 Office 应用更新。
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Windows 即服务概述](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[Office 即服务概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Office 即服务概述](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[步骤 8：用户通信和培训](https://aka.ms/mdd8)** 最后一步对于推动使用新功能来增强团队合作、通信、安全等至关重要。 在针对早期采用者圈之外的用户进行广泛部署之前，建议推出用户通信和培训。 这将有助于推动人们对 Office、Windows 或其他业务线应用和服务的新功能的使用方式的所需更改。 为提供帮助，我们通过 Microsoft FastTrack 提供免费在线培训。 此外，我们还发布了免费示例通信计划和日程表，以及电子邮件、社交和 Intranet 模板来帮助推出 Windows 10。 作为 Microsoft 365 或 Office 365 组织，你的组织可能也有资格获得直接支持。
 

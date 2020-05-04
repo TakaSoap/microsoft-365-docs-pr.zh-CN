@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在环境中为实现 Windows 和 Office 服务做好准备。
-ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636731"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011611"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>步骤 7：Windows 和 Office 服务
 
@@ -83,7 +83,7 @@ Windows 10 和 Microsoft 365 企业应用版都引入了新的服务选项、支
 
 [使用 Configuration Manager 部署 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[使用 Configuration Manager 来管理 Microsoft 365 企业应用版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 来管理 Microsoft 365 企业应用版](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Windows 和 Office 频道概述
 
@@ -103,7 +103,7 @@ Microsoft 365 提供 4 个服务频道：
 有关 Windows 和 Office 服务频道的详细信息，请查阅以下文档：
 
 - [Windows 即服务概述](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Microsoft 365 企业应用版更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Microsoft 365 应用版更新通道概述](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>分阶段部署更新
 
@@ -141,7 +141,7 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 [Windows 半年频道](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Microsoft 365 企业应用版的半年频道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Microsoft 365 应用版的半年频道](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>升级任务序列
 
@@ -153,7 +153,7 @@ Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准�
 
 如果已经在使用任务序列将 Windows 7 计算机迁移到 Windows 10，并且非常精通这些工具，那么这是启动和提供最终控制的理想位置。虽然可以为整个升级使用单个任务序列，但是组织使用两个任务序列是很常见的。一个任务序列用于确保计算机已经准备好进行升级，它在目标计算机上以静默方式预先暂存所有所需的安装文件，另一个任务序列则用于实际升级。这种方法可确保用户生产力受到较小影响。
 
-[在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>对功能更新的半年频道支持
 

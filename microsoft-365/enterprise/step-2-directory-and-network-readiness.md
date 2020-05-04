@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的目录和网络就绪情况。
-ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636804"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011647"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步骤 2：目录和网络就绪情况
 
@@ -51,7 +51,7 @@ ms.locfileid: "43636804"
 
 如果你的组织已使用 Office 365、Exchange Online、Microsoft Intune 或其他 Microsoft Online 服务，表明你已在使用 Azure Active Directory。 如果是这样的话，只需确保你的桌面部署目标用户位于 Azure Active Directory 中，并且已分配许可证。
 
-如果当前未使用 Azure Active Directory，则有[大量资源](https://docs.microsoft.com/azure/active-directory/)可帮助你进行设置。 你也可以通过 Microsoft FastTrack 获得个性化帮助，这是许可证的权益。 可以在[此处](https://fasttrack.microsoft.com)查看有关 Microsoft Fastrack 的更多信息。
+如果当前未使用 Azure Active Directory，则有[大量资源](https://docs.microsoft.com/azure/active-directory/)可帮助你进行设置。 你也可以通过 Microsoft FastTrack 获得个性化帮助，这是许可证的权益。 可以在[此处](https://fasttrack.microsoft.com)查看有关 Microsoft FastTrack 的更多信息。
 
 在 Azure Active Directory 准备就绪后，你的用户就可以登录并激活 Microsoft 365 企业应用版应用，你也可以使用 Microsoft Intune 或 Windows Autopilot 部署来自动部署应用和策略。
 
@@ -121,7 +121,7 @@ Windows Server 2019 和 Microsoft Endpoint Configuration Manager（当前分支�
 
 **二进制增量压缩**：Microsoft 365 企业应用版使用二进制增量压缩，以减少从最新发行版 Microsoft 365 企业应用版更新到下一发行版时软件更新所消耗的带宽。通过只从旧发行版中拉取二进制级别更改，可以最大限度地减少累积更新的逐月增长所造成的影响。这样一来，每台电脑每月可能节省数百 MB 的数据空间。不过，为了使用此功能，就不能跳过发行版。如果这样做，必须下载完整的累积更新。
 
-[下载适用于 Office 365 的更新](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[下载 Microsoft 365 应用版更新](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
 **Outlook 数据文件** Outlook 通常配置为在本地缓存用户的整个邮箱以供脱机使用。 在任何 Windows 部署中，只有就地升级需要用户的 Outlook 数据文件在升级后自行重建。 这是一个自动执行过程，但 Outlook 邮箱限制通常设置为最多 100 GB，所有用户在本地重新缓存整个邮箱意味着需要进行大量数据传输。 要减少网络负载，可能需要考虑使用组策略来减少“邮件保持脱机”设置。 在 Microsoft 365 企业应用版或 Office 2016 中，Outlook 的默认值设置为 12 个月。 考虑将脱机缓存设置为持续 1 到 6 个月。 更改此设置不会影响联机邮箱的大小，并且在联机时仍可以通过 Outlook 搜索整个邮箱。
 
