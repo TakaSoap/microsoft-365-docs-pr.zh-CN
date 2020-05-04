@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的设备和应用就绪情况。
-ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636852"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011659"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步骤 1：设备和应用就绪情况
 
@@ -89,7 +89,7 @@ ms.locfileid: "43636852"
 
 还可以使用桌面分析来评估基于浏览器的兼容性问题，识别仍在使用 ActiveX 控件、浏览器帮助程序对象、VBScript 或 Microsoft Edge 浏览器不支持的其他旧技术的用户访问的网站和 Web 应用程序。 用户仍需要为这些站点使用 Internet Explorer 11，你可以使用 Enterprise Mode Site List Manager 将它们添加到 [Enterprise Mode Site List](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)。
 
-此外，为了帮助你迁移到 Microsoft 365 企业应用版，我们提供了 [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，你不妨使用它来测试加载项和 Microsoft Visual Basic for Applications (VBA) 宏的兼容性。
+此外，为了帮助你迁移到 Microsoft 365 企业应用版，我们提供了 [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)，你不妨使用它来测试加载项和 Microsoft Visual Basic for Applications (VBA) 宏的兼容性。
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "43636852"
 
 Configuration Manager 软件清单是为设备和应用就绪情况使用基于云的分析解决方案的替代方法。 可以使用安装计数并钻取到特定计算机，帮助确定兼容性测试和验证的优先顺序，并通过包设置将应用程序包设置为与 Windows 10 兼容。 虽然此选项无法比较与 Microsoft 的分析服务的已知兼容性信息，但它可以作为一个有效解决方案来定位一组较小的按优先级排列的应用，用于进行手动测试。 
 
-有关更多信息，请参阅 [Configuration Manager 中的软件清单简介](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)和 [Configuration Manager 中的包和程序](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs)中的应用程序包的设置平台要求。
+有关更多信息，请参阅 [Configuration Manager 中的软件清单简介](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)和 [Configuration Manager 中的包和程序](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs)中的应用程序包的设置平台要求。
 
 
 ## <a name="app-assure"></a>应用保证

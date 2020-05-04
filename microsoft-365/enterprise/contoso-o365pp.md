@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Microsoft 365 企业应用版。
-ms.openlocfilehash: eca3978103ca1e590d747b3549a3c9e393f871ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625250"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011883"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 的 Microsoft 365 企业应用版部署
 
@@ -40,7 +40,7 @@ Contoso 将其电脑升级到 Windows 10 企业版和Microsoft 365 企业应用�
 - 智能语言包部署，包括将同一语言自动作为操作系统部署。
 - 在部署期间，将 Office 的现有版本从客户端删除的完全支持和易于使用的方法。
 
-除 Configuration Manager 以外，Contoso 还使用 [Readiness Toolkit](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)（Microsoft 提供的一个免费工具）来评估有关其 Office 宏和加载项的兼容性问题。
+除 Configuration Manager 以外，Contoso 还使用 [Readiness Toolkit](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)（Microsoft 提供的一个免费工具）来评估有关其 Office 宏和加载项的兼容性问题。
 
 ## <a name="managing-the-deployment-and-updates"></a>管理部署和更新
 
@@ -51,7 +51,7 @@ Microsoft 365 企业应用版推出了新的版本模式：Office 即服务。�
 
 Contoso 从云中启用自动更新，而非使用 Configuration Manager 来管理 Office 的更新。基于云的更新可在减少其管理开销的同时确保设备安装最新更新。 
 
-Contoso 使用了与部署 Office 时相同的两阶段功能更新方法：试点组中的设备收到功能更新的时间比组织中的剩余组（广泛组）中的设备早 4 个月。为了为 Office 启用此功能，Contoso 使用了两个推荐的[更新频道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)： 
+Contoso 使用了与部署 Office 时相同的两阶段功能更新方法：试点组中的设备收到功能更新的时间比组织中的剩余组（广泛组）中的设备早 4 个月。为了为 Office 启用此功能，Contoso 使用了两个推荐的[更新频道](https://docs.microsoft.com/DeployOffice/overview-update-channels)： 
 
 - 试点组更新的半年频道（定向） 
 - 广泛组更新的半年频道。 
