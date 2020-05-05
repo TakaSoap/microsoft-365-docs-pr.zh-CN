@@ -13,13 +13,13 @@ search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: 对于 Office 365、Azure 和 Dynamics 365 Online 规章合规性报告，若要查看第三方审核，请了解 Microsoft 如何使客户数据安全，以及如何在使用这些在线服务时兼容 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP。
-ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 对于 Microsoft 365、Azure 和 Dynamics 365 Online 规章合规性报告，若要查看第三方审核，请了解 Microsoft 如何使客户数据安全，以及如何在使用这些在线服务时遵守 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP 的合规性。
+ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073143"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632443"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -27,11 +27,11 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
   
 ## <a name="accessing-the-service-trust-portal"></a>访问服务信任门户
 
-服务信任门户包含有关 Microsoft 实施的控制和过程的详细信息，可保护我们的云服务和其中的客户数据。 若要访问服务信任门户上的一些资源，必须使用 Microsoft 云服务帐户（Azure Active Directory 组织帐户或 Microsoft 帐户）以已通过身份验证的用户身份登录，并查看并接受 Microsoft合规性材料的非公开协议。
+服务信任门户包含有关 Microsoft 实施的控制和过程的详细信息，可保护我们的云服务和其中的客户数据。 若要访问服务信任门户上的一些资源，您必须使用 Microsoft 云服务帐户（Azure Active Directory 组织帐户或 Microsoft 帐户）以已通过身份验证的用户身份登录，并查看并接受 Microsoft 保密协议（针对合规性材料）。
   
 **现有客户可以** [https://aka.ms/STP](https://aka.ms/STP)使用以下联机订阅之一（试用版或付费版）访问服务信任门户： 
   
-- Office 365
+- Microsoft 365
 
 - Dynamics 365
 
@@ -44,7 +44,7 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
   
 若要创建新帐户或创建试用帐户，请使用以下注册表单之一（也可用于试用帐户）以获取对 STP 的访问权限。
   
-- 注册新的[office 365 商业版试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=507653)或新的[office 365 企业版试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- 注册新的[Microsoft 365 Apps for business 试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=507653)或新的[Office 365 企业版试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - 注册新的[Dynamics 365 试用帐户](https://go.microsoft.com/fwlink/?LinkId=252780)
 
@@ -66,7 +66,7 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 ### <a name="compliance-manager"></a>合规性管理器
 
-合规性管理器是一项基于工作流的风险评估工具，可帮助您跟踪、分配和验证与 Microsoft 云服务（如 Office 365、Dynamics 365 和 Azure）相关的组织的法规遵从性活动。 使用合规性管理器在云的共享职责模型中管理法规遵从性。 根据要使用的合规性管理器的版本，请参阅以下文章以了解详细信息：
+合规性管理器是一项基于工作流的风险评估工具，可帮助您跟踪、分配和验证与 Microsoft 云服务（如 Microsoft 365、Dynamics 365 和 Azure）相关的组织的法规遵从性活动。 使用合规性管理器在云的共享职责模型中管理法规遵从性。 根据要使用的合规性管理器的版本，请参阅以下文章以了解详细信息：
 
 - [Microsoft 合规性管理器（经典）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
@@ -82,9 +82,9 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
     - Service Organization Controls (SOC)
 
-    - 美国国家标准和技术协会（NIST）
+    - 美国国家标准与技术研究院 (NIST)
 
-    - 联邦风险和授权管理计划（FedRAMP）
+    - 联邦风险和授权管理项目 (FedRAMP)
 
     - 一般数据保护条例 (GDPR)
 
@@ -102,7 +102,7 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
   
 ### <a name="trust-center"></a>信任中心
 
-指向[Microsoft 信任中心](https://www.microsoft.com/trust-center)的链接，该链接提供有关 microsoft 云中的安全性、合规性和隐私的详细信息。 这包括有关 Microsoft 云服务中的功能的信息，可用于满足 GDPR 的特定要求、文档对您的 GDPR 责任有帮助以及您对技术和组织措施的理解Microsoft 已采用支持 GDPR。
+指向[Microsoft 信任中心](https://www.microsoft.com/trust-center)的链接，该链接提供有关 microsoft 云中的安全性、合规性和隐私的详细信息。 这包括有关 Microsoft 云服务中的功能的信息，您可以使用这些功能来满足 GDPR 的特定要求，文档对您的 GDPR 责任有帮助，并了解 Microsoft 为支持 GDPR 所采用的技术和组织措施。
   
 ### <a name="my-library"></a>我的库
 

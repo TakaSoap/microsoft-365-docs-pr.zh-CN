@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中更改用户名和电子邮件地址
+title: 更改用户名和电子邮件地址
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: '了解全局管理员可以如何更改用户的 Office 365 电子邮件地址和显示名称。 '
-ms.openlocfilehash: 16dab0f0ac65bccea0e2273e396315a32dd33439
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: '了解全局管理员可以如何更改用户的电子邮件地址和显示名称。 '
+ms.openlocfilehash: 726d1f01203bbaefc529039d3816fb09c892cd90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238170"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618736"
 ---
-# <a name="change-a-user-name-and-email-address-in-office-365"></a>在 Office 365 中更改用户名和电子邮件地址
+# <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
-例如，若用户结婚和更改姓氏，则可能需要更改该用户的 Office 365 电子邮件地址和显示名称。
+例如，若用户结婚和更改姓氏，则可能需要更改该用户的电子邮件地址和显示名称。
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ ms.locfileid: "42238170"
 
 ## <a name="change-a-users-email-address"></a>更改用户的电子邮件地址
 
-必须是 [Office 365 全局管理员](about-admin-roles.md)才能执行这些步骤。 
+必须是[全局管理员](about-admin-roles.md)才能执行这些步骤。 
 
 ::: moniker range="o365-worldwide"
  
@@ -101,7 +101,7 @@ ms.locfileid: "42238170"
     
     **重要提示**：如果从 GoDaddy 或提供管理控制台的另一合作伙伴服务购买 Office 365，则不会看到“设置为主要”选项。请改为登录到 GoDaddy/合作伙伴的管理控制台，设置主要别名。 
     
-    此外，只有 Office 365 全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
+    此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
 4. 你会看到一个大的黄色警告，提示你将更改用户的登录信息。 依次选择“**保存**”和“**关闭**”。
     
@@ -129,7 +129,7 @@ ms.locfileid: "42238170"
     
     **重要提示**：如果从 GoDaddy 或提供管理控制台的另一合作伙伴服务购买 Office 365，则不会看到“设置为主要”选项。请改为登录到 GoDaddy/合作伙伴的管理控制台，设置主要别名。 
     
-    此外，只有 Office 365 全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
+    此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
 4. 你会看到一个大的黄色警告，提示你将更改用户的登录信息。 依次选择“**保存**”和“**关闭**”。
     
@@ -157,7 +157,7 @@ ms.locfileid: "42238170"
     
     **重要提示**：如果从 GoDaddy 或提供管理控制台的另一合作伙伴服务购买 Office 365，则不会看到“设置为主要”选项。请改为登录到 GoDaddy/合作伙伴的管理控制台，设置主要别名。 
     
-    此外，只有 Office 365 全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
+    此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
 4. 你会看到一个大的黄色警告，提示你将更改用户的登录信息。 依次选择“**保存**”和“**关闭**”。
     
@@ -223,22 +223,22 @@ ms.locfileid: "42238170"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>“找不到与参数名称‘EmailAddresses’匹配的参数”
 
-如果收到错误消息：" **找不到与参数名称 "EmailAddresses" 匹配的参数**"，则表明 Office 365 完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电支持人员，他们会为你执行完全同步。
+如果收到错误消息：“**找不到与参数名称 "EmailAddresses" 匹配的参数**”，则表明完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电支持人员，他们会为你执行完全同步。
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>“很抱歉，无法编辑该用户。 请查看用户信息，请查看用户信息并重试”
 
-如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”， 这意味着你不是 Office 365 全局管理员，不具有更改用户名的权限。 找到企业中的全局管理员，请他们进行更改。
+如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”， 这意味着你不是全局管理员，不具有更改用户名的权限。 找到企业中的全局管理员，请他们进行更改。
 
 
 ## <a name="what-to-do-with-old-email-addresses"></a>对旧电子邮件地址的处理
 
 用户先前的主要电子邮件地址将作为其他电子邮件地址保留。**强烈建议不要删除旧电子邮件地址。**
   
-某些联系人可能会继续向旧的电子邮件地址发送电子邮件，删除此地址可能导致 NDR 故障。Office 365 会自动将邮件路由到新地址。此外，不要重复使用旧的 SMTP 电子邮件地址和将其应用到新帐户。这也会导致 NDR 故障或传递到计划外的邮箱。
+某些联系人可能会继续向旧的电子邮件地址发送电子邮件，删除此地址可能导致 NDR 故障。Microsoft 会自动将邮件路由到新地址。此外，不要重复使用旧的 SMTP 电子邮件地址和将其应用到新帐户。这也会导致 NDR 故障或传递到计划外的邮箱。
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>用户的脱机通讯簿未与全局地址列表同步怎么办？
 
-如果用户使用 Exchange Online，或其 Office 365 帐户与组织的本地 Exchange 环境链接，则在你尝试更改用户名和电子邮件地址时可能会看到以下错误："此用户已与你的本地 Active Directory 同步。某些详细信息仅可通过本地 Active Directory 进行编辑。"
+如果用户使用 Exchange Online，或其帐户与组织的本地 Exchange 环境链接，则在你尝试更改用户名和电子邮件地址时可能会看到以下错误："此用户已与你的本地 Active Directory 同步。某些详细信息仅可通过本地 Active Directory 进行编辑。"
   
 这是由 Microsoft 联机电子邮件路由地址 (MOERA) 引起的。MOERA 通过 Active Directory 中的用户  _userPrincipalName_ 属性进行构造，其在初始同步期间自动分配到云帐户，且创建后不可在 Office 365 中修改或删除。随后，可在 Active Directory 中更改用户名，但这不会更改 MOERA，并且可能在全局地址列表中显示新更改的名称方面遇到问题。 
   

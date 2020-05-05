@@ -1,5 +1,5 @@
 ---
-title: Office 365 密码策略建议
+title: 密码策略建议
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加强组织对密码攻击的防护，学习应如何禁用常见密码并实现基于风险的多重身份验证。
-ms.openlocfilehash: 74f78b6abcc3e3aa7eb3c18c858afcd8e916d432
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: eff22b5591893ea10f8e04e8e7f470e8a0bf9079
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516919"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627820"
 ---
-# <a name="password-policy-recommendations-for-office-365"></a>Office 365 密码策略建议
+# <a name="password-policy-recommendations"></a>密码策略建议
  
-作为 Office 365 组织的管理员，你负责为组织内部用户设置密码策略。 设置密码策略可能很复杂且令人困惑，因而本文提供了加强组织对密码攻击的防护的建议。
+作为组织的管理员，你负责为组织内部用户设置密码策略。 设置密码策略可能很复杂且令人困惑，因而本文提供了加强组织对密码攻击的防护的建议。
   
-要决定 Office 365 密码在你组织中过期的频率，请参阅[设置 Office 365 的密码过期策略](../manage/set-password-expiration-policy.md)。
+要决定 Microsoft 365 密码在你组织中过期的频率，请参阅[设置 Microsoft 365 的密码过期策略](../manage/set-password-expiration-policy.md)。
   
 ## <a name="understanding-password-recommendations"></a>了解密码建议
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Edge 中使用 Office 365 电子数据展示导出工具
+title: 在 Microsoft Edge 中使用电子数据展示导出工具
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 您必须启用 ClickOnce 支持，才能使用 Microsoft Edge 的最新版本从 "安全与合规中心" 中的内容搜索和电子数据展示下载搜索结果。
-ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710341"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632377"
 ---
-# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>在 Microsoft Edge 中使用 Office 365 电子数据展示导出工具
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>在 Microsoft Edge 中使用电子数据展示导出工具
 
-由于最近对 Microsoft Edge 版本所做的更改，ClickOnce 支持在默认情况下不再启用。 若要继续使用 Microsoft Office 365 电子数据展示导出工具下载内容搜索或电子数据展示搜索结果，您需要使用[Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)或在最新版本的 microsoft Edge 中启用 ClickOnce 支持。
+由于最近对 Microsoft Edge 版本所做的更改，ClickOnce 支持在默认情况下不再启用。 若要继续使用电子数据展示导出工具下载内容搜索或电子数据展示搜索结果，您需要使用[Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)或在最新版本的 microsoft Edge 中启用 ClickOnce 支持。
 
 ## <a name="enable-clickonce-support-in-microsoft-edge"></a>在 Microsoft Edge 中启用 ClickOnce 支持
 
@@ -49,7 +49,7 @@ ms.locfileid: "42710341"
 
    ![单击 "打开" 以启动电子数据展示导出工具](../media/ClickOnceimage4.png)
 
-   如果未安装 Microsoft Office 365 电子数据展示导出工具，则系统会提示您提供安全警告， 
+   如果未安装电子数据展示导出工具，则系统会提示您提供安全警告， 
 
    ![单击 "安装" 以安装电子数据展示导出工具](../media/ClickOnceimage5.png)
 

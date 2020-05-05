@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并为组织配置安全和信息保护级别。
-ms.openlocfilehash: d3ba5f490b7aa80c9149a0451059914c78b8f2f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa3e9fa11070ea505752d781ecdd21b344c8222
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067209"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636960"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>步骤 1：定义安全和信息保护级别
 
@@ -33,7 +33,7 @@ ms.locfileid: "42067209"
 虽然可以定义自己的安全级别而且内部可能已设置了一些，但 Microsoft 建议制定至少使用三个不同级别的、可加以应用的安全和保护计划。 下面是一个可帮助你开始的列表： 
 
 - **** 基线：这是用于保护数据以及访问数据的标识和设备的最低标准。你可以按照基线安全和保护建议提供强的默认保护，以满足许多组织或其部门的需要。
-- **** 敏感：这是对数据子集的额外保护，必须高于基线级别。你可以在 Office 365 环境中将此提升的保护应用于特定数据集。此外，Microsoft 还建议将敏感安全级别应用到访问敏感数据的标识和设备。
+- **敏感：** 这是对数据子集的额外保护，必须高于基线级别。你可以在 Microsoft 365 环境中将此提升的保护应用于特定数据集。此外，Microsoft 还建议将敏感安全级别应用到访问敏感数据的标识和设备。
 - **** 高度管控：这是组织的最高保护级别，通常是高度机密的、视为知识产权或商业机密的小量数据，或必须遵循严格安全规定的数据。Microsoft 365 企业版具有相关功能，可帮助组织满足这些高安全要求，包括对标识和设备的同等保护。
 
 有关详细信息，请参阅[三层保护](microsoft-365-policies-configurations.md#three-tiers-of-protection)。
