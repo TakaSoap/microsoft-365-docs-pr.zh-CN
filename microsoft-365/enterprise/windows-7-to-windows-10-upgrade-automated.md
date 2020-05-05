@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 适用于大型组织的 windows 7 到 Windows 10 自动升级
-ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113477"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011547"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>适用于大型组织的 windows 7 到 Windows 10 自动就地升级
 
@@ -42,7 +42,7 @@ ms.locfileid: "43113477"
 
 默认情况下, 升级过程会备份以前的 Windows 安装, 以便在升级失败时或者设备或应用程序升级后不能正常运行时, 计算机可以回滚到 Windows 7。 默认情况下, 已升级的电脑有10天的时间可在必要时手动回滚到 Windows 7。
 
-可使用操作系统部署工具（[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) 或 [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit)）自动化就地升级。 本文重点介绍了自动化和优化的方法, 并提供了指向相关资源的链接以给予更多帮助。
+可使用操作系统部署工具（[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) 或 [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit)）自动化就地升级。 本文重点介绍了自动化和优化的方法, 并提供了指向相关资源的链接以给予更多帮助。
 
 ## <a name="upgrading-a-small-number-of-computers"></a>升级少量计算机
 
@@ -80,13 +80,13 @@ ms.locfileid: "43113477"
 
   - 低水平代码解决方案, 如反恶意软件、VPN 或虚拟化
 
-[升级任务序列](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)模板内置于 Microsoft Endpoint Configuration Manager（当前分支版本）中，可用于多个版本。 在最新版本中，Configuration Manager 的技术得到显著的增强，使以下过程更高效：确定设备和 Office 兼容性准备情况，减少网络拥堵及配置 OneDrive 备份之类的新选项。 观看此[Microsoft 技术展](https://youtu.be/CYRnAmCD7ls)，进一步了解 Configuration Manager 操作系统部署的最新更新。
+[升级任务序列](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)模板内置于 Microsoft Endpoint Configuration Manager（当前分支版本）中，可用于多个版本。 在最新版本中，Configuration Manager 的技术得到显著的增强，使以下过程更高效：确定设备和 Office 兼容性准备情况，减少网络拥堵及配置 OneDrive 备份之类的新选项。 观看此[Microsoft 技术展](https://youtu.be/CYRnAmCD7ls)，进一步了解 Configuration Manager 操作系统部署的最新更新。
 
 如果未使用 Microsoft Endpoint Configuration Manager，则可以使用 Microsoft Deployment Toolkit 来构建和执行升级部署任务序列。
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>预缓存任务序列升级
 
-配置管理器部署任务序列的[预缓存选项](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)允许客户端在任务序列对操作系统进行升级之前下载相关的操作系统 升级程序包。 以前, 启动任务序列将启动程序包下载。 通过预缓存内容, 客户端可选择仅在收到部署后立即下载适用的 操作系统 升级包和所有其他参考内容。
+配置管理器部署任务序列的[预缓存选项](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)允许客户端在任务序列对操作系统进行升级之前下载相关的操作系统 升级程序包。 以前, 启动任务序列将启动程序包下载。 通过预缓存内容, 客户端可选择仅在收到部署后立即下载适用的 操作系统 升级包和所有其他参考内容。
 
 结合兼容性扫描的预缓存任务序列
 
