@@ -6,18 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
+ms.custom:
+- M365solutions
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助金融服务迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
-ms.openlocfilehash: f312c1a44f81dda2cd89937354423f686eb7346b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+f1.keywords: NOCSH
+ms.openlocfilehash: e3ed7d40cf7b4452dd2bc47e870e0a7afe10d629
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632603"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002363"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -259,7 +260,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
 
 最后，这些条例要求组织建立策略，并在银行服务、销售或贸易中涉及的角色之间实施信息屏障，以避免与分析人员交换信息和通信。
 
-[信息屏障](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide)提供了在 Office 365 环境中建立信息隔离墙的能力，允许合规性管理员或其他授权的管理员定义允许或阻止 Teams 中的用户组之间通信的策略。 信息屏障对特定操作执行检查以防止未经授权的通信。 在内部团队从事合并/收购或机密交易，或处理必须严格限制的敏感内部信息的情况下，信息屏障也会限制通信。
+[信息屏障](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide)提供了在 Office 365 环境中建立信息隔离墙的能力，允许合规性管理员或其他授权的管理员定义允许或阻止 Teams 中的用户组之间通信的策略。 信息屏障对特定操作执行检查以防止未经授权的通信。 在内部团队从事合并/收购或敏感交易，或处理必须严格限制的敏感内部信息的情况下，信息屏障也会限制通信。
 
 Microsoft 365 中的信息屏障支持 Teams 中的对话和文件。 他们可以阻止以下类型的通信相关操作，以帮助遵守 FINRA 法规：
 

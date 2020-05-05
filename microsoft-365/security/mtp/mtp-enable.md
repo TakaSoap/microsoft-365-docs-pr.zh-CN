@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 394fceffb96350b7702c5eef4a8138b3eb53f714
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011859"
+ms.locfileid: "44016070"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
@@ -45,9 +45,6 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 
 ## <a name="start-using-the-service"></a>开始使用服务
 
->[!IMPORTANT]
->从2020年5月3日开始，Microsoft 将逐步推出有关[许可要求](prerequisites.md#licensing-requirements)的新的优化体验，并启用 Microsoft 威胁防护。 在此期间的几周内，一些客户将开始查看对其门户体验所做的更改。 有关新体验的信息已在本文中标记为 "**新体验**"。
-
 Microsoft 威胁防护从各种集成服务中聚合数据。 它将集中处理和存储数据，以确定新的见解并使集中响应工作流成为可能。 这样做不会影响与集成服务关联的现有部署、设置或数据。
 
 在你打开服务之前，Microsoft 365 安全中心（[security.microsoft.com](https://security.microsoft.com)）会在你选择 "**事件**"、"**操作中心**" 或 "导航窗格" 中的 "**搜寻**" 时显示 microsoft 威胁防护欢迎页面。 如果你不符合使用 Microsoft 威胁防护的条件，则不会显示这些导航选项。
@@ -64,8 +61,6 @@ Microsoft 威胁防护从各种集成服务中聚合数据。 它将集中处理
 如果已为组织设置了 Microsoft Defender ATP，则数据将在为 [Microsoft Defender ATP 数据](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)选择的同一数据中心位置进行存储和处理。 如果你没有 Microsoft Defender ATP，系统将要求你选择一个专门用于 Microsoft 威胁防护的新数据中心位置。 
  
 您需要先提供许可，然后才能在服务和聚合之间共享数据。
-
-**全新体验：** 从2020年5月3日开始，客户将逐渐收到此体验的更改。 对于具有全新体验的用户，服务将根据您现有的 Microsoft 365 安全服务自动为聚合数据选择最佳数据中心位置。 屏幕上显示了所选的数据中心位置。
 
 ### <a name="confirm-that-the-service-is-on"></a>确认服务已开启
 设置服务后，它将添加：

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 了解集成的应用程序，以及如何将其打开以允许第三方应用访问用户的 Microsoft 365 信息。
-ms.openlocfilehash: 7e758facda49bb63e09c9ec667522c2b20fa75bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627844"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022104"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>打开或关闭集成应用
 
@@ -35,7 +35,7 @@ ms.locfileid: "43627844"
 
 下面介绍了如何打开或关闭集成应用。
 
-1. 在 Microsoft 365 管理中心，转到 "**设置** \> [ &amp;服务外接程序](https://go.microsoft.com/fwlink/p/?linkid=2053743)" 页，然后选择 "**集成应用**"。
+1. 在 Microsoft 365 管理中心，转到 "**设置** \> **设置**" 页\> "**服务**" 选项卡，然后选择 "**集成应用**"。
 
 2. 在 "**集成应用**" 页面上，选择要启用或禁用集成应用的选项。
 

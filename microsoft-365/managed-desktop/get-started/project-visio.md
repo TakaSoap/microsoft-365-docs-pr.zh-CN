@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 30374e603350ecf9d5e5542263f004a22ccb0a67
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 450dbcb08cd0636dae575ecd2d5e9abadc5ceb25
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981703"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022092"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>在 Microsoft 托管桌面设备上安装 Microsoft Project 或 Microsoft Visio
 
@@ -39,9 +39,8 @@ Microsoft Project 和 Microsoft Visio 要求在 Microsoft 托管桌面设备上�
 
 Azure AD 组名称 | 要分配哪些用户？   
  --- | ---
-新式办公-Project_Install | 仅需要项目的用户
-新式办公-Visio_Install | 仅需要 Visio 的用户
-新式办公-Visio_Project_Install | 需要 Project 和 Visio 的用户
+新式工作区-办公室-Project_Install | 需要项目的用户
+新式工作区-办公室-Visio_Install | 需要 Visio 的用户
 
 一旦分配给这些组，应用程序将在公司门户中可用。 同步可能需要几分钟时间，但随后你的用户可以从公司门户安装应用程序。 
 

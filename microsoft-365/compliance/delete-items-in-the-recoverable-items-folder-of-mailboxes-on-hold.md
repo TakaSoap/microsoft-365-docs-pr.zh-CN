@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: "对于管理员：删除中的项目 \n\nExchange Online 邮箱的 er 的 \"可恢复的项目\" 文件夹，即使该邮箱位于 \"合法保留\" 中也是如此。 这是一种删除意外溅入 Microsoft 365 的数据的有效方法。"
-ms.openlocfilehash: 0e6782c96efa997773b06535d5a0364100bd5433
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 对于管理员：删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Microsoft 365 的数据的有效方法。
+ms.openlocfilehash: 4cf568c06fc3b6ee886ff1823d8771a64c0286d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630509"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022082"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -48,21 +48,21 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
 ## <a name="before-you-begin"></a>开始之前
 
 - 若要创建并运行内容搜索，您必须是电子数据展示管理员角色组的成员，或者分配有“合规性搜索”管理角色。 若要删除邮件，您必须是组织管理角色组的成员或分配有“搜索并清除”管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
-    
+
 - 非活动邮箱不支持本文中介绍的过程。 这是因为删除后不能对非活动邮箱重新应用保留（或保留策略）。 从非活动邮箱删除保留时，它会更改为标准软删除邮箱，并且在托管文件夹助理处理后，将从组织中永久删除。
-    
+
 - 您不能对已分配给已使用保留锁锁定的保留策略的邮箱执行此过程。 这是因为保留锁可防止您从保留策略中删除邮箱，也无法在邮箱上禁用托管文件夹助理。 有关锁定保留策略的详细信息，请参阅[锁定保留策略](retention-policies.md#locking-a-retention-policy)。
-    
+
 - 如果未将邮箱置于保留状态（或未启用单个项目恢复），则可以从 "可恢复的项目" 文件夹中删除这些项目。 有关如何执行此操作的详细信息，请参阅[在组织中搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>步骤1：收集有关邮箱的信息
 
 第一步是收集将影响此过程的目标邮箱中的所选属性。 请务必记下这些设置或将其保存到一个文本文件中，因为在从 "可恢复的项目" 文件夹中删除项目后，您将更改其中一些属性，然后再还原为第6步中的原始值。 下面列出了需要收集的邮箱属性。
   
--  *SingleItemRecoveryEnabled*和*RetainDeletedItemsFor* ;如有必要，您将禁用单个恢复并在步骤3中增加已删除项目的保留期。 
-    
--  *LitigationHoldEnabled*和*InPlaceHolds* ;您需要确定邮箱上放置的所有保留，以便可以在步骤3中临时删除它们。 请参阅[详细信息](#more-information)部分，了解有关如何识别邮箱上可能放置的类型保留的提示。 
-    
+- *SingleItemRecoveryEnabled*和*RetainDeletedItemsFor*。 如有必要，您将禁用单个恢复并在步骤3中增加已删除项目的保留期。 
+
+- *LitigationHoldEnabled*和*InPlaceHolds*。 您需要确定邮箱上放置的所有保留，以便可以在步骤3中临时删除它们。 请参阅[详细信息](#more-information)部分，了解有关如何识别邮箱上可能放置的类型保留的提示。 
+
 此外，您还需要获取邮箱客户端访问设置，以便您可以暂时禁用它们，以便所有者（或其他用户）在此过程中无法访问邮箱。 最后，您可以获取 "可恢复的项目" 文件夹中的当前大小和项目数。 在第5步中删除 "可恢复的项目" 文件夹中的项目后，您将使用此信息验证项目是否已删除。
   
 1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。 请务必对已在 Exchange Online 中为其分配了适当管理角色的管理员帐户使用用户名和密码。 
@@ -225,9 +225,9 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 若要详细了解标签，请参阅[标签概述](labels.md)。
 
- ### <a name="ediscovery-case-holds"></a>电子数据展示事例保留
+ ### <a name="ediscovery-holds"></a>电子数据展示保留
   
-在[Security & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令，以确定与应用于邮箱的电子数据展示事例关联的保留。 使用您在步骤1中确定`UniH`的电子数据展示保留的 GUID （不包括前缀）。 第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。 
+在[Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)中运行以下命令，以确定与应用于邮箱的电子数据展示事例（称为*电子数据展示保留*）关联的保留项。 使用您在步骤1中确定`UniH`的电子数据展示保留的 GUID （不包括前缀）。 第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。 
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -241,7 +241,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-确定电子数据展示事例的名称和保留后，请转到合规中心中的**电子数据** \>展示**电子数据**展示页面，打开事例，并将邮箱从保留中删除。 有关详细信息，请参阅[电子数据展示事例](ediscovery-cases.md)。
+确定电子数据展示事例的名称和保留后，请转到合规中心中的**电子数据** \>展示**电子数据**展示页面，打开事例，并将邮箱从保留中删除。 有关识别电子数据展示保留的详细信息，请参阅[如何识别 Exchange Online 邮箱上的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)一节中的 "电子数据展示保留" 一节。
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>步骤4：从邮箱中删除延迟保留
 
@@ -293,7 +293,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>步骤6：将邮箱还原到其以前的状态
 
-最后一步是将邮箱还原回其以前的配置。 这意味着重置您在步骤2中更改的属性，并重新应用您在步骤3中删除的保留。 这包括：
+最后一步是将邮箱还原回其以前的配置。 这意味着重置您在步骤2中更改的属性，并重新应用您在步骤3中删除的保留。 具体包括：
   
 - 将已删除项目的保留期更改回其以前的值。 或者，您可以仅将此设置保留为30天，即 Exchange Online 中的最大值。
     
@@ -370,7 +370,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 下面的表格介绍了在运行 Set-organizationconfig **cmdlet 或** **Get-OrganizationConfig** cmdlet 时，如何根据*InPlaceHolds*属性中的值标识不同类型的保留。 有关更多详细信息，请参阅[如何识别 Exchange Online 邮箱上放置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)。
 
