@@ -11,164 +11,166 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: 您可以使用 Exchange Online Protection (EOP) 为 Exchange 组织创建启用邮件的组。 您还可以使用 EOP 定义或更新可指定成员资格、电子邮件地址和组其他方面的组属性。
-ms.openlocfilehash: ad07066906f78703c568850afbfa5dfa8d8cc3c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您将了解如何在 Exchange Online Protection （EOP）中为 Exchange 组织创建和管理已启用邮件的组。
+ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082883"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034398"
 ---
-# <a name="manage-groups-in-eop"></a><span data-ttu-id="8b43e-104">在 EOP 中管理组</span><span class="sxs-lookup"><span data-stu-id="8b43e-104">Manage groups in EOP</span></span>
+# <a name="manage-groups-in-eop"></a><span data-ttu-id="3a53b-103">在 EOP 中管理组</span><span class="sxs-lookup"><span data-stu-id="3a53b-103">Manage groups in EOP</span></span>
 
- <span data-ttu-id="8b43e-p102">您可以使用 Exchange Online Protection (EOP) 为 Exchange 组织创建启用邮件的组。您还可以使用 EOP 定义或更新可指定成员资格、电子邮件地址和组其他方面的组属性。您可以根据需要创建通讯组和安全组。可以使用 Exchange 管理中心 (EAC) 或通过远程 Windows PowerShell 创建这些组。</span><span class="sxs-lookup"><span data-stu-id="8b43e-p102">You can use Exchange Online Protection (EOP) to create mail-enabled groups for an Exchange organization. You can also use EOP to define or update group properties that specify membership, email addresses, and other aspects of groups. You can create distribution groups and security groups, depending on your needs. These groups can be created by using the Exchange admin center (EAC) or via remote Windows PowerShell.</span></span>
+ <span data-ttu-id="3a53b-p101">您可以使用 Exchange Online Protection (EOP) 为 Exchange 组织创建启用邮件的组。您还可以使用 EOP 定义或更新可指定成员资格、电子邮件地址和组其他方面的组属性。您可以根据需要创建通讯组和安全组。可以使用 Exchange 管理中心 (EAC) 或通过远程 Windows PowerShell 创建这些组。</span><span class="sxs-lookup"><span data-stu-id="3a53b-p101">You can use Exchange Online Protection (EOP) to create mail-enabled groups for an Exchange organization. You can also use EOP to define or update group properties that specify membership, email addresses, and other aspects of groups. You can create distribution groups and security groups, depending on your needs. These groups can be created by using the Exchange admin center (EAC) or via remote Windows PowerShell.</span></span>
 
-## <a name="types-of-mail-enabled-groups"></a><span data-ttu-id="8b43e-109">启用邮件的组的类型</span><span class="sxs-lookup"><span data-stu-id="8b43e-109">Types of mail-enabled groups</span></span>
+## <a name="types-of-mail-enabled-groups"></a><span data-ttu-id="3a53b-108">启用邮件的组的类型</span><span class="sxs-lookup"><span data-stu-id="3a53b-108">Types of mail-enabled groups</span></span>
 
-<span data-ttu-id="8b43e-110">您可以为 Exchange 组织创建两种类型的组：</span><span class="sxs-lookup"><span data-stu-id="8b43e-110">You can create two types of groups for your Exchange organization:</span></span>
+<span data-ttu-id="3a53b-109">您可以为 Exchange 组织创建两种类型的组：</span><span class="sxs-lookup"><span data-stu-id="3a53b-109">You can create two types of groups for your Exchange organization:</span></span>
 
-- <span data-ttu-id="8b43e-111">通讯组是电子邮件用户（如团队或其他临时组）的集合，这些用户需要接收或发送有关感兴趣的常见领域的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="8b43e-111">Distribution groups are collections of email users, such as a team or other ad hoc group, who need to receive or send email regarding a common area of interest.</span></span> <span data-ttu-id="8b43e-112">通讯组专用于分发电子邮件。</span><span class="sxs-lookup"><span data-stu-id="8b43e-112">Distribution groups are exclusively for distributing email messages.</span></span> <span data-ttu-id="8b43e-113">在 EOP 中，通讯组是指任何启用邮件的组，无论其是否有安全性上下文。</span><span class="sxs-lookup"><span data-stu-id="8b43e-113">In EOP, a distribution group refers to any mail-enabled group, whether or not it has a security context.</span></span>
+- <span data-ttu-id="3a53b-110">通讯组是电子邮件用户（如团队或其他临时组）的集合，这些用户需要接收或发送有关感兴趣的常见领域的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="3a53b-110">Distribution groups are collections of email users, such as a team or other ad hoc group, who need to receive or send email regarding a common area of interest.</span></span> <span data-ttu-id="3a53b-111">通讯组专用于分发电子邮件。</span><span class="sxs-lookup"><span data-stu-id="3a53b-111">Distribution groups are exclusively for distributing email messages.</span></span> <span data-ttu-id="3a53b-112">在 EOP 中，通讯组是指任何启用邮件的组，无论其是否有安全性上下文。</span><span class="sxs-lookup"><span data-stu-id="3a53b-112">In EOP, a distribution group refers to any mail-enabled group, whether or not it has a security context.</span></span>
 
-- <span data-ttu-id="8b43e-114">安全组是需要管理员角色访问权限的电子邮件用户的集合。</span><span class="sxs-lookup"><span data-stu-id="8b43e-114">Security groups are collections of email users who need access permissions for Admin roles.</span></span> <span data-ttu-id="8b43e-115">例如，您可能想向特定组的用户授予管理员角色权限，使他们能够配置反垃圾邮件和反恶意邮件设置。</span><span class="sxs-lookup"><span data-stu-id="8b43e-115">For example, you might want to give specific group of users admin role permissions so they can configure anti-spam and anti-malware settings.</span></span>
+- <span data-ttu-id="3a53b-113">安全组是需要管理员角色访问权限的电子邮件用户的集合。</span><span class="sxs-lookup"><span data-stu-id="3a53b-113">Security groups are collections of email users who need access permissions for Admin roles.</span></span> <span data-ttu-id="3a53b-114">例如，您可能想向特定组的用户授予管理员角色权限，使他们能够配置反垃圾邮件和反恶意邮件设置。</span><span class="sxs-lookup"><span data-stu-id="3a53b-114">For example, you might want to give specific group of users admin role permissions so they can configure anti-spam and anti-malware settings.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="8b43e-p105">默认情况下，所有启用邮件的新安全组都要求对所有发件人进行身份验证。这样可防止外部发件人将邮件发送到启用邮件的安全组。</span><span class="sxs-lookup"><span data-stu-id="8b43e-p105">By default, all new mail-enabled security groups require that all senders be authenticated. This prevents external senders from sending messages to mail-enabled security groups.</span></span>
+    > <span data-ttu-id="3a53b-p104">默认情况下，所有启用邮件的新安全组都要求对所有发件人进行身份验证。这样可防止外部发件人将邮件发送到启用邮件的安全组。</span><span class="sxs-lookup"><span data-stu-id="3a53b-p104">By default, all new mail-enabled security groups require that all senders be authenticated. This prevents external senders from sending messages to mail-enabled security groups.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="8b43e-118">准备工作</span><span class="sxs-lookup"><span data-stu-id="8b43e-118">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="3a53b-117">准备工作</span><span class="sxs-lookup"><span data-stu-id="3a53b-117">Before you begin</span></span>
 
-- <span data-ttu-id="8b43e-p106">您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [EOP 中的功能权限](feature-permissions-in-eop.md)主题中的"通讯组和安全组"条目。</span><span class="sxs-lookup"><span data-stu-id="8b43e-p106">You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups and Security Groups" entry in the [Feature permissions in EOP](feature-permissions-in-eop.md) topic.</span></span>
+- <span data-ttu-id="3a53b-p105">您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [EOP 中的功能权限](feature-permissions-in-eop.md)主题中的"通讯组和安全组"条目。</span><span class="sxs-lookup"><span data-stu-id="3a53b-p105">You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups and Security Groups" entry in the [Feature permissions in EOP](feature-permissions-in-eop.md) topic.</span></span>
 
-- <span data-ttu-id="8b43e-121">若要打开 Exchange 管理中心，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="8b43e-121">To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
+- <span data-ttu-id="3a53b-120">若要打开 Exchange 管理中心，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="3a53b-120">To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
 
-- <span data-ttu-id="8b43e-122">请注意，在使用 Exchange Online Protection PowerShell cmdlet 创建和管理组时，可能会遇到限制。</span><span class="sxs-lookup"><span data-stu-id="8b43e-122">Be aware that when creating and managing groups by using Exchange Online Protection PowerShell cmdlets, you may encounter throttling.</span></span>
+- <span data-ttu-id="3a53b-121">请注意，在使用 Exchange Online Protection PowerShell cmdlet 创建和管理组时，可能会遇到限制。</span><span class="sxs-lookup"><span data-stu-id="3a53b-121">Be aware that when creating and managing groups by using Exchange Online Protection PowerShell cmdlets, you may encounter throttling.</span></span>
 
-- <span data-ttu-id="8b43e-123">本主题中的 PowerShell 过程使用一种批处理方法，该方法会导致在几分钟内发生传播延迟，然后才能看到命令的结果。</span><span class="sxs-lookup"><span data-stu-id="8b43e-123">The PowerShell procedures in this topic use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.</span></span>
+- <span data-ttu-id="3a53b-122">本主题中的 PowerShell 过程使用一种批处理方法，该方法会导致在几分钟内发生传播延迟，然后才能看到命令的结果。</span><span class="sxs-lookup"><span data-stu-id="3a53b-122">The PowerShell procedures in this topic use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.</span></span>
 
-- <span data-ttu-id="8b43e-124">若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="8b43e-124">To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
+- <span data-ttu-id="3a53b-123">若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="3a53b-123">To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
 
-- <span data-ttu-id="8b43e-125">有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="8b43e-125">For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
+- <span data-ttu-id="3a53b-124">有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="3a53b-124">For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="8b43e-126">是否有任何疑问？</span><span class="sxs-lookup"><span data-stu-id="8b43e-126">Having problems?</span></span> <span data-ttu-id="8b43e-127">在[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)论坛中寻求帮助。</span><span class="sxs-lookup"><span data-stu-id="8b43e-127">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
+> <span data-ttu-id="3a53b-125">是否有任何疑问？</span><span class="sxs-lookup"><span data-stu-id="3a53b-125">Having problems?</span></span> <span data-ttu-id="3a53b-126">在[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)论坛中寻求帮助。</span><span class="sxs-lookup"><span data-stu-id="3a53b-126">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
 
-## <a name="create-a-group-in-the-eac"></a><span data-ttu-id="8b43e-128">在 EAC 中创建组</span><span class="sxs-lookup"><span data-stu-id="8b43e-128">Create a group in the EAC</span></span>
+## <a name="create-a-group-in-the-eac"></a><span data-ttu-id="3a53b-127">在 EAC 中创建组</span><span class="sxs-lookup"><span data-stu-id="3a53b-127">Create a group in the EAC</span></span>
 
-1. <span data-ttu-id="8b43e-129">在 EAC 中，转到 "**收件人** \> **组**"。</span><span class="sxs-lookup"><span data-stu-id="8b43e-129">In the EAC, go to **Recipients** \> **Groups**.</span></span>
+1. <span data-ttu-id="3a53b-128">在 EAC 中，转到 "**收件人** \> **组**"。</span><span class="sxs-lookup"><span data-stu-id="3a53b-128">In the EAC, go to **Recipients** \> **Groups**.</span></span>
 
-2. <span data-ttu-id="8b43e-130">单击 "**新建** ![添加](../../media/ITPro-EAC-AddIcon.gif)图标"，然后单击 "**通讯组**" 或 "**安全组**"，具体取决于您的需要。</span><span class="sxs-lookup"><span data-stu-id="8b43e-130">Click **New** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then click **Distribution group** or **Security group**, depending on your needs.</span></span>
+2. <span data-ttu-id="3a53b-129">单击 "**新建** ![添加](../../media/ITPro-EAC-AddIcon.gif)图标"，然后单击 "**通讯组**" 或 "**安全组**"，具体取决于您的需要。</span><span class="sxs-lookup"><span data-stu-id="3a53b-129">Click **New** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then click **Distribution group** or **Security group**, depending on your needs.</span></span>
 
-3. <span data-ttu-id="8b43e-131">在 "**新建通讯组**" 或 "**新建安全组**" 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="8b43e-131">On the **New distribution group** or **New security group** page, configure the following settings:</span></span>
+3. <span data-ttu-id="3a53b-130">在 "**新建通讯组**" 或 "**新建安全组**" 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="3a53b-130">On the **New distribution group** or **New security group** page, configure the following settings:</span></span>
 
-   - <span data-ttu-id="8b43e-132">**显示名称**：键入您的组织独有的显示名称，并对 EOP 用户有意义。</span><span class="sxs-lookup"><span data-stu-id="8b43e-132">**Display name**: Type a display name that's unique to your organization and meaningful to EOP users.</span></span> <span data-ttu-id="8b43e-133">显示名称是必填项。</span><span class="sxs-lookup"><span data-stu-id="8b43e-133">The display name is required.</span></span>
+   - <span data-ttu-id="3a53b-131">**显示名称**：键入您的组织独有的显示名称，并对 EOP 用户有意义。</span><span class="sxs-lookup"><span data-stu-id="3a53b-131">**Display name**: Type a display name that's unique to your organization and meaningful to EOP users.</span></span> <span data-ttu-id="3a53b-132">显示名称是必填项。</span><span class="sxs-lookup"><span data-stu-id="3a53b-132">The display name is required.</span></span>
 
-   - <span data-ttu-id="8b43e-134">**别名**：键入一个最高为64个字符的组别名，这些字符对您的组织是唯一的。</span><span class="sxs-lookup"><span data-stu-id="8b43e-134">**Alias**: Type a group alias of up to 64 characters that's unique to your organization.</span></span> <span data-ttu-id="8b43e-135">EOP 用户在"收件人"电子邮件行中键入别名，别名会解析成组的显示名称。</span><span class="sxs-lookup"><span data-stu-id="8b43e-135">EOP users type the alias in the To: line of email messages and the alias resolves to the group's display name.</span></span> <span data-ttu-id="8b43e-136">如果您更改别名，组的主 SMTP 地址也会更改，并会包含新别名。</span><span class="sxs-lookup"><span data-stu-id="8b43e-136">If you change the alias, the primary SMTP address for the group also changes and will contain the new alias.</span></span> <span data-ttu-id="8b43e-137">别名为必填项。</span><span class="sxs-lookup"><span data-stu-id="8b43e-137">The alias is required.</span></span>
+   - <span data-ttu-id="3a53b-133">**别名**：键入一个最高为64个字符的组别名，这些字符对您的组织是唯一的。</span><span class="sxs-lookup"><span data-stu-id="3a53b-133">**Alias**: Type a group alias of up to 64 characters that's unique to your organization.</span></span> <span data-ttu-id="3a53b-134">EOP 用户在"收件人"电子邮件行中键入别名，别名会解析成组的显示名称。</span><span class="sxs-lookup"><span data-stu-id="3a53b-134">EOP users type the alias in the To: line of email messages and the alias resolves to the group's display name.</span></span> <span data-ttu-id="3a53b-135">如果您更改别名，组的主 SMTP 地址也会更改，并会包含新别名。</span><span class="sxs-lookup"><span data-stu-id="3a53b-135">If you change the alias, the primary SMTP address for the group also changes and will contain the new alias.</span></span> <span data-ttu-id="3a53b-136">别名为必填项。</span><span class="sxs-lookup"><span data-stu-id="3a53b-136">The alias is required.</span></span>
 
-   - <span data-ttu-id="8b43e-138">**说明**：键入组的说明，以便用户了解组的用途。</span><span class="sxs-lookup"><span data-stu-id="8b43e-138">**Description**: Type a description of the group so that people will know the purpose of the group.</span></span>
+   - <span data-ttu-id="3a53b-137">**说明**：键入组的说明，以便用户了解组的用途。</span><span class="sxs-lookup"><span data-stu-id="3a53b-137">**Description**: Type a description of the group so that people will know the purpose of the group.</span></span>
 
-   - <span data-ttu-id="8b43e-139">**所有者**：默认情况下，创建组的人员是所有者。</span><span class="sxs-lookup"><span data-stu-id="8b43e-139">**Owners**: By default, the person who creates the group is the owner.</span></span> <span data-ttu-id="8b43e-140">您可以通过选择 "**添加** ![添加" 图标](../../media/ITPro-EAC-AddIcon.gif)来添加所有者。</span><span class="sxs-lookup"><span data-stu-id="8b43e-140">You can add an owner by choosing **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif).</span></span> <span data-ttu-id="8b43e-141">所有组都必须至少有一个所有者。</span><span class="sxs-lookup"><span data-stu-id="8b43e-141">All groups must have at least one owner.</span></span>
+   - <span data-ttu-id="3a53b-138">**所有者**：默认情况下，创建组的人员是所有者。</span><span class="sxs-lookup"><span data-stu-id="3a53b-138">**Owners**: By default, the person who creates the group is the owner.</span></span> <span data-ttu-id="3a53b-139">您可以通过选择 "**添加** ![添加" 图标](../../media/ITPro-EAC-AddIcon.gif)来添加所有者。</span><span class="sxs-lookup"><span data-stu-id="3a53b-139">You can add an owner by choosing **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif).</span></span> <span data-ttu-id="3a53b-140">所有组都必须至少有一个所有者。</span><span class="sxs-lookup"><span data-stu-id="3a53b-140">All groups must have at least one owner.</span></span>
 
      > [!NOTE]
-     > <span data-ttu-id="8b43e-142">所有者不必是组的成员。</span><span class="sxs-lookup"><span data-stu-id="8b43e-142">Owners don't have to be members of the group.</span></span>
+     > <span data-ttu-id="3a53b-141">所有者不必是组的成员。</span><span class="sxs-lookup"><span data-stu-id="3a53b-141">Owners don't have to be members of the group.</span></span>
 
-   - <span data-ttu-id="8b43e-143">**Members**：使用此部分可添加组成员并指定是否需要审批人员加入或离开组。</span><span class="sxs-lookup"><span data-stu-id="8b43e-143">**Members**: Use this section to add group members and to specify whether approval is required for people to join or leave the group.</span></span> <span data-ttu-id="8b43e-144">若要向组中添加成员， \*\*\*\* ![请单击 "](../../media/ITPro-EAC-AddIcon.gif)添加添加图标"。</span><span class="sxs-lookup"><span data-stu-id="8b43e-144">To add members to the group, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif).</span></span>
+   - <span data-ttu-id="3a53b-142">**Members**：使用此部分可添加组成员并指定是否需要审批人员加入或离开组。</span><span class="sxs-lookup"><span data-stu-id="3a53b-142">**Members**: Use this section to add group members and to specify whether approval is required for people to join or leave the group.</span></span> <span data-ttu-id="3a53b-143">若要向组中添加成员， **Add** ![请单击 "](../../media/ITPro-EAC-AddIcon.gif)添加添加图标"。</span><span class="sxs-lookup"><span data-stu-id="3a53b-143">To add members to the group, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif).</span></span>
 
-4. <span data-ttu-id="8b43e-145">单击“确定”\*\*\*\* 返回原始页面。</span><span class="sxs-lookup"><span data-stu-id="8b43e-145">Click **OK** to return to the original page.</span></span>
+4. <span data-ttu-id="3a53b-144">单击“确定”\*\*\*\* 返回原始页面。</span><span class="sxs-lookup"><span data-stu-id="3a53b-144">Click **OK** to return to the original page.</span></span>
 
-5. <span data-ttu-id="8b43e-146">完成后，请单击 "**保存**" 以创建组。</span><span class="sxs-lookup"><span data-stu-id="8b43e-146">When you've finished, click **Save** to create the group.</span></span> <span data-ttu-id="8b43e-147">此时，新组应该会出现在组列表中。</span><span class="sxs-lookup"><span data-stu-id="8b43e-147">The new group should appear in the list of groups.</span></span>
+5. <span data-ttu-id="3a53b-145">完成后，请单击 "**保存**" 以创建组。</span><span class="sxs-lookup"><span data-stu-id="3a53b-145">When you've finished, click **Save** to create the group.</span></span> <span data-ttu-id="3a53b-146">此时，新组应该会出现在组列表中。</span><span class="sxs-lookup"><span data-stu-id="3a53b-146">The new group should appear in the list of groups.</span></span>
 
-## <a name="edit-or-remove-a-group-in-the-eac"></a><span data-ttu-id="8b43e-148">在 EAC 中编辑或删除组</span><span class="sxs-lookup"><span data-stu-id="8b43e-148">Edit or remove a group in the EAC</span></span>
+## <a name="edit-or-remove-a-group-in-the-eac"></a><span data-ttu-id="3a53b-147">在 EAC 中编辑或删除组</span><span class="sxs-lookup"><span data-stu-id="3a53b-147">Edit or remove a group in the EAC</span></span>
 
-1. <span data-ttu-id="8b43e-149">In the EAC, navigate to **Recipients** \> **Groups**.</span><span class="sxs-lookup"><span data-stu-id="8b43e-149">In the EAC, navigate to **Recipients** \> **Groups**.</span></span>
+1. <span data-ttu-id="3a53b-148">In the EAC, navigate to **Recipients** \> **Groups**.</span><span class="sxs-lookup"><span data-stu-id="3a53b-148">In the EAC, navigate to **Recipients** \> **Groups**.</span></span>
 
-2. <span data-ttu-id="8b43e-150">采取以下步骤之一：</span><span class="sxs-lookup"><span data-stu-id="8b43e-150">Do one of the following steps:</span></span>
+2. <span data-ttu-id="3a53b-149">采取以下步骤之一：</span><span class="sxs-lookup"><span data-stu-id="3a53b-149">Do one of the following steps:</span></span>
 
-   - <span data-ttu-id="8b43e-151">若要编辑组，请执行以下操作：在组列表中，单击要查看或更改的组，然后单击 "**编辑** ![编辑](../../media/ITPro-EAC-EditIcon.gif)图标"。</span><span class="sxs-lookup"><span data-stu-id="8b43e-151">To edit a group: In the list of groups, click the group that you want to view or change, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.gif).</span></span> <span data-ttu-id="8b43e-152">您可以根据需要更新常规设置、添加或删除组所有者，以及添加或删除组成员。</span><span class="sxs-lookup"><span data-stu-id="8b43e-152">You can update general settings, add or remove group owners, and add or remove group members as needed.</span></span>
+   - <span data-ttu-id="3a53b-150">若要编辑组，请执行以下操作：在组列表中，单击要查看或更改的组，然后单击 "**编辑** ![编辑](../../media/ITPro-EAC-EditIcon.gif)图标"。</span><span class="sxs-lookup"><span data-stu-id="3a53b-150">To edit a group: In the list of groups, click the group that you want to view or change, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.gif).</span></span> <span data-ttu-id="3a53b-151">您可以根据需要更新常规设置、添加或删除组所有者，以及添加或删除组成员。</span><span class="sxs-lookup"><span data-stu-id="3a53b-151">You can update general settings, add or remove group owners, and add or remove group members as needed.</span></span>
 
-   - <span data-ttu-id="8b43e-153">若要删除组，请选择组，然后\*\*\*\* ![单击 "删除](../../media/ITPro-EAC-RemoveIcon.gif)删除图标"。</span><span class="sxs-lookup"><span data-stu-id="8b43e-153">To remove a group: Select the group and click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
+   - <span data-ttu-id="3a53b-152">若要删除组，请选择组，然后**Remove** ![单击 "删除](../../media/ITPro-EAC-RemoveIcon.gif)删除图标"。</span><span class="sxs-lookup"><span data-stu-id="3a53b-152">To remove a group: Select the group and click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
 
-3. <span data-ttu-id="8b43e-154">完成更改后，请单击 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="8b43e-154">When you're finished making your changes, click **Save**.</span></span>
+3. <span data-ttu-id="3a53b-153">完成更改后，请单击 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="3a53b-153">When you're finished making your changes, click **Save**.</span></span>
 
-## <a name="create-edit-or-remove-a-group-using-remote-windows-powershell"></a><span data-ttu-id="8b43e-155">使用远程 Windows PowerShell 创建、编辑或删除组</span><span class="sxs-lookup"><span data-stu-id="8b43e-155">Create, edit, or remove a group using remote Windows PowerShell</span></span>
+## <a name="create-edit-or-remove-a-group-using-remote-windows-powershell"></a><span data-ttu-id="3a53b-154">使用远程 Windows PowerShell 创建、编辑或删除组</span><span class="sxs-lookup"><span data-stu-id="3a53b-154">Create, edit, or remove a group using remote Windows PowerShell</span></span>
 
-<span data-ttu-id="8b43e-156">本节提供有关在 Exchange Online Protection PowerShell 中创建组和更改其属性的信息。</span><span class="sxs-lookup"><span data-stu-id="8b43e-156">This section provides information about creating groups and changing their properties in Exchange Online Protection PowerShell.</span></span> <span data-ttu-id="8b43e-157">它还演示了如何删除现有的组。</span><span class="sxs-lookup"><span data-stu-id="8b43e-157">It also shows how to remove an existing group.</span></span>
+<span data-ttu-id="3a53b-155">本节提供有关在 Exchange Online Protection PowerShell 中创建组和更改其属性的信息。</span><span class="sxs-lookup"><span data-stu-id="3a53b-155">This section provides information about creating groups and changing their properties in Exchange Online Protection PowerShell.</span></span> <span data-ttu-id="3a53b-156">它还演示了如何删除现有的组。</span><span class="sxs-lookup"><span data-stu-id="3a53b-156">It also shows how to remove an existing group.</span></span>
 
-### <a name="create-a-group-using-remote-windows-powershell"></a><span data-ttu-id="8b43e-158">使用远程 Windows PowerShell 创建组</span><span class="sxs-lookup"><span data-stu-id="8b43e-158">Create a group using remote Windows PowerShell</span></span>
+### <a name="create-a-group-using-remote-windows-powershell"></a><span data-ttu-id="3a53b-157">使用远程 Windows PowerShell 创建组</span><span class="sxs-lookup"><span data-stu-id="3a53b-157">Create a group using remote Windows PowerShell</span></span>
 
-<span data-ttu-id="8b43e-p115">该示例使用 [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup) cmdlet 创建别名为"itadmin"且名称为"IT 管理员"的通信组。还会将用户添加为该组的成员。</span><span class="sxs-lookup"><span data-stu-id="8b43e-p115">This example uses the [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup) cmdlet to create a distribution group with an alias of itadmin and the name IT Administrators. It also adds users as members of the group.</span></span>
+<span data-ttu-id="3a53b-p114">该示例使用 [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup) cmdlet 创建别名为"itadmin"且名称为"IT 管理员"的通信组。还会将用户添加为该组的成员。</span><span class="sxs-lookup"><span data-stu-id="3a53b-p114">This example uses the [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup) cmdlet to create a distribution group with an alias of itadmin and the name IT Administrators. It also adds users as members of the group.</span></span>
 
 ```PowerShell
 New-EOPDistributionGroup -Type Distribution -Name "IT Administrators" -Alias itadmin -Members @("Member1","Member2","Member3") -ManagedBy Member1
 ```
 
-<span data-ttu-id="8b43e-161">**注意**：若要创建安全组，而不是通讯组，请使用`Security` *Type*参数的值。</span><span class="sxs-lookup"><span data-stu-id="8b43e-161">**Note**: To create a security group instead of a distribution group, use the value `Security` for the *Type* parameter.</span></span>
+<span data-ttu-id="3a53b-160">**注意**：若要创建安全组，而不是通讯组，请使用`Security` *Type*参数的值。</span><span class="sxs-lookup"><span data-stu-id="3a53b-160">**Note**: To create a security group instead of a distribution group, use the value `Security` for the *Type* parameter.</span></span>
 
-<span data-ttu-id="8b43e-162">若要验证是否成功创建了 IT 管理员组，请运行以下命令以显示有关新组的信息：</span><span class="sxs-lookup"><span data-stu-id="8b43e-162">To verify that you've successfully created the IT Administrators group, run the following command to display information about the new group:</span></span>
+<span data-ttu-id="3a53b-161">若要验证是否成功创建了 IT 管理员组，请运行以下命令以显示有关新组的信息：</span><span class="sxs-lookup"><span data-stu-id="3a53b-161">To verify that you've successfully created the IT Administrators group, run the following command to display information about the new group:</span></span>
 
 ```PowerShell
 Get-Recipient "IT Administrators" | Format-List
 ```
 
-<span data-ttu-id="8b43e-163">有关语法和参数的详细信息，请参阅 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient)"。</span><span class="sxs-lookup"><span data-stu-id="8b43e-163">For detailed syntax and parameter information, see [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient).</span></span>
+<span data-ttu-id="3a53b-162">有关语法和参数的详细信息，请参阅 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient)"。</span><span class="sxs-lookup"><span data-stu-id="3a53b-162">For detailed syntax and parameter information, see [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient).</span></span>
 
-<span data-ttu-id="8b43e-164">若要获取组中成员的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="8b43e-164">To get a list of members in the group, run the following command:</span></span>
+<span data-ttu-id="3a53b-163">若要获取组中成员的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="3a53b-163">To get a list of members in the group, run the following command:</span></span>
 
 ```PowerShell
 Get-DistributionGroupMember "IT Administrators"
 ```
 
-<span data-ttu-id="8b43e-165">有关语法和参数的详细信息，请参阅[get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember)。</span><span class="sxs-lookup"><span data-stu-id="8b43e-165">For detailed syntax and parameter information, see [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).</span></span>
+<span data-ttu-id="3a53b-164">有关语法和参数的详细信息，请参阅[get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember)。</span><span class="sxs-lookup"><span data-stu-id="3a53b-164">For detailed syntax and parameter information, see [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).</span></span>
 
-<span data-ttu-id="8b43e-166">若要获取所有组的完整列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="8b43e-166">To get a full list of all your groups, run the following command:</span></span>
+<span data-ttu-id="3a53b-165">若要获取所有组的完整列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="3a53b-165">To get a full list of all your groups, run the following command:</span></span>
 
 ```PowerShell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup" | Format-Table | more
 ```
 
-### <a name="change-the-properties-of-a-group-using-remote-windows-powershell"></a><span data-ttu-id="8b43e-167">使用远程 Windows PowerShell 更改组的属性</span><span class="sxs-lookup"><span data-stu-id="8b43e-167">Change the properties of a group using remote Windows PowerShell</span></span>
+### <a name="change-the-properties-of-a-group-using-remote-windows-powershell"></a><span data-ttu-id="3a53b-166">使用远程 Windows PowerShell 更改组的属性</span><span class="sxs-lookup"><span data-stu-id="3a53b-166">Change the properties of a group using remote Windows PowerShell</span></span>
 
-<span data-ttu-id="8b43e-168">使用 PowerShell （而不是 EAC）的优势在于能够更改多个组的属性。</span><span class="sxs-lookup"><span data-stu-id="8b43e-168">An advantage of using PowerShell instead of the EAC is the ability to change properties for multiple groups.</span></span>
+<span data-ttu-id="3a53b-167">使用 PowerShell （而不是 EAC）的优势在于能够更改多个组的属性。</span><span class="sxs-lookup"><span data-stu-id="3a53b-167">An advantage of using PowerShell instead of the EAC is the ability to change properties for multiple groups.</span></span>
 
-<span data-ttu-id="8b43e-169">下面是使用 Exchange Online Protection PowerShell 更改组属性的一些示例。</span><span class="sxs-lookup"><span data-stu-id="8b43e-169">Here are some examples of using Exchange Online Protection PowerShell to change group properties.</span></span>
+<span data-ttu-id="3a53b-168">下面是使用 Exchange Online Protection PowerShell 更改组属性的一些示例。</span><span class="sxs-lookup"><span data-stu-id="3a53b-168">Here are some examples of using Exchange Online Protection PowerShell to change group properties.</span></span>
 
-<span data-ttu-id="8b43e-170">本示例使用将 "西雅图员工" 组的主 SMTP 地址（也称为 "回复地址"）更改为 sea.employees@contoso.com。</span><span class="sxs-lookup"><span data-stu-id="8b43e-170">This example uses changes the primary SMTP address (also called the reply address) for the Seattle Employees group to sea.employees@contoso.com.</span></span>
+<span data-ttu-id="3a53b-169">本示例使用将 "西雅图员工" 组的主 SMTP 地址（也称为 "回复地址"）更改为 sea.employees@contoso.com。</span><span class="sxs-lookup"><span data-stu-id="3a53b-169">This example uses changes the primary SMTP address (also called the reply address) for the Seattle Employees group to sea.employees@contoso.com.</span></span>
 
 ```PowerShell
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
 ```
 
-<span data-ttu-id="8b43e-171">有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup)。</span><span class="sxs-lookup"><span data-stu-id="8b43e-171">For detailed syntax and parameter information, see [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup).</span></span>
+<span data-ttu-id="3a53b-170">有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup)。</span><span class="sxs-lookup"><span data-stu-id="3a53b-170">For detailed syntax and parameter information, see [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup).</span></span>
 
-<span data-ttu-id="8b43e-172">若要验证是否已成功更改了组的属性，请运行以下命令来验证新值：</span><span class="sxs-lookup"><span data-stu-id="8b43e-172">To verify that you've successfully changed the properties for the group, run the following command to verify the new value:</span></span>
+<span data-ttu-id="3a53b-171">若要验证是否已成功更改了组的属性，请运行以下命令来验证新值：</span><span class="sxs-lookup"><span data-stu-id="3a53b-171">To verify that you've successfully changed the properties for the group, run the following command to verify the new value:</span></span>
 
 ```PowerShell
 Get-Recipient "Seattle Employees" | Format-List "PrimarySmtpAddress"
 ```
 
-<span data-ttu-id="8b43e-173">本示例更新 "西雅图员工" 组的所有成员。</span><span class="sxs-lookup"><span data-stu-id="8b43e-173">This example updates all the members of the Seattle Employees group.</span></span> <span data-ttu-id="8b43e-174">使用逗号分隔所有成员。</span><span class="sxs-lookup"><span data-stu-id="8b43e-174">Use a comma to separate all members.</span></span>
+<span data-ttu-id="3a53b-172">本示例更新 "西雅图员工" 组的所有成员。</span><span class="sxs-lookup"><span data-stu-id="3a53b-172">This example updates all the members of the Seattle Employees group.</span></span> <span data-ttu-id="3a53b-173">使用逗号分隔所有成员。</span><span class="sxs-lookup"><span data-stu-id="3a53b-173">Use a comma to separate all members.</span></span>
 
 ```PowerShell
 Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
 ```
 
-<span data-ttu-id="8b43e-175">有关语法和参数的详细信息，请参阅[EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)。</span><span class="sxs-lookup"><span data-stu-id="8b43e-175">For detailed syntax and parameter information, see [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember).</span></span>
+<span data-ttu-id="3a53b-174">有关语法和参数的详细信息，请参阅[EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)。</span><span class="sxs-lookup"><span data-stu-id="3a53b-174">For detailed syntax and parameter information, see [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember).</span></span>
 
-<span data-ttu-id="8b43e-176">若要获取组 "西雅图员工" 中所有成员的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="8b43e-176">To get the list of all the members in the group Seattle Employees, run the following command:</span></span>
+<span data-ttu-id="3a53b-175">若要获取组 "西雅图员工" 中所有成员的列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="3a53b-175">To get the list of all the members in the group Seattle Employees, run the following command:</span></span>
 
 ```PowerShell
 Get-DistributionGroupMember "Seattle Employees"
 ```
 
-### <a name="remove-a-group-using-remote-windows-powershell"></a><span data-ttu-id="8b43e-177">使用远程 Windows PowerShell 删除组</span><span class="sxs-lookup"><span data-stu-id="8b43e-177">Remove a group using remote Windows PowerShell</span></span>
+### <a name="remove-a-group-using-remote-windows-powershell"></a><span data-ttu-id="3a53b-176">使用远程 Windows PowerShell 删除组</span><span class="sxs-lookup"><span data-stu-id="3a53b-176">Remove a group using remote Windows PowerShell</span></span>
 
-<span data-ttu-id="8b43e-178">本示例使用删除名为 "IT 管理员" 的通讯组。</span><span class="sxs-lookup"><span data-stu-id="8b43e-178">This example uses removes the distribution group named IT Administrators.</span></span>
+<span data-ttu-id="3a53b-177">本示例使用删除名为 "IT 管理员" 的通讯组。</span><span class="sxs-lookup"><span data-stu-id="3a53b-177">This example uses removes the distribution group named IT Administrators.</span></span>
 
 ```PowerShell
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-<span data-ttu-id="8b43e-179">有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup)。</span><span class="sxs-lookup"><span data-stu-id="8b43e-179">For detailed syntax and parameter information, see [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup).</span></span>
+<span data-ttu-id="3a53b-178">有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup)。</span><span class="sxs-lookup"><span data-stu-id="3a53b-178">For detailed syntax and parameter information, see [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup).</span></span>
 
-<span data-ttu-id="8b43e-180">若要验证是否已删除该组，请运行以下命令，并确认该组（在此示例中为 "It 管理员"）已删除。</span><span class="sxs-lookup"><span data-stu-id="8b43e-180">To verify that the group was removed, run the following command, and confirm that the group (in this case "It Administrators") was deleted.</span></span>
+<span data-ttu-id="3a53b-179">若要验证是否已删除该组，请运行以下命令，并确认该组（在此示例中为 "It 管理员"）已删除。</span><span class="sxs-lookup"><span data-stu-id="3a53b-179">To verify that the group was removed, run the following command, and confirm that the group (in this case "It Administrators") was deleted.</span></span>
 
 ```PowerShell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup"
