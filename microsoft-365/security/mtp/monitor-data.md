@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 安全中心中的数据监控和报告
-description: 介绍如何跟踪可能导致未经授权的数据泄露的用户活动。
+title: 数据监控 & 报告-安全中心
+description: 了解如何跟踪可能导致 Microsoft 365 安全中心中未经授权的数据泄露的用户活动。
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、data
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 271cd4d3379239073a6f16c5253fc26da87d8605
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f9bb0a7d0ce7def52089ec64a35edc5a2475b342
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637088"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034006"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的数据监控和报告
 

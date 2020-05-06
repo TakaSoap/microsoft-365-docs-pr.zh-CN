@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: 了解如何添加和删除适用于 Microsoft 365 的商业版订阅的许可证。
-ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57768a7e93b19c14c5428508268c2c1e37d700f6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632525"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045220"
 ---
 # <a name="manage-subscription-licenses"></a>管理订阅许可
 
@@ -42,9 +42,9 @@ ms.locfileid: "43632525"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
-2. 在 "**产品 & 服务**" 页上，找到要向其添加或删除许可证的订阅，然后选择 "**添加/删除许可证**"。
+2. 在 "**产品**" 页上，找到要向其添加或删除许可证的订阅，然后选择 "**添加/删除许可证**"。
 
     [如果看不到"添加/删除"链接，该怎么办？](#what-if-i-dont-see-the-addremove-licenses-link)
 
@@ -86,7 +86,7 @@ ms.locfileid: "43632525"
 
 此表介绍 "**添加/删除许可证**" 链接不可用的原因，以及您可以执行的操作。 
 
-|Reason  |说明  |解决方案  |
+|原因  |说明  |解决方案  |
 |---------|---------|---------|
 |正在等待信用检查。 |如果正在等待信用检查，你将看到"正在等待信用检查"消息，并在完成信用检查之后才能购买许可证。  | 稍后再次查看以查看是否已完成信用检查。 信用检查通常需要两个工作日才能完成。<br>完成信用检查后，应可在" **用户**"部分看到" **添加/删除许可证**"链接。 如果是这样，请转到[管理订阅许可证](#manage-subscription-licenses)。 |
 |您使用产品密钥激活了订阅。| 如果订阅是使用 25 个字符的产品密钥购买并激活的，你将看到"预付费"字样。  |请参阅[向使用产品密钥支付的订阅添加许可证](add-licenses-using-product-key.md)。 |

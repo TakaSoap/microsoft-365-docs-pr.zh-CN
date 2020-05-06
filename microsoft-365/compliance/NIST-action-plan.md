@@ -14,12 +14,13 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 874077089cb12292db316d99869fcdfd7b449f91
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fc43420b18483bc93814b2eb0e8605af86beef1c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632327"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034778"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -36,9 +37,9 @@ Microsoft 被认为是云安全领域的行业领袖。通过多年构建企业�
 |||
 |:-----|:-----|
 |**阶段**|**结果**|
-|30 天|•   了解 NIST 800-53 要求，并考虑与 Microsoft 咨询合作伙伴合作。<br>•   学习并了解 Microsoft 365 内置深层防护策略。  <br>•   保护用户和管理员对 Office 365 的访问。 <br>•   确保所有对系统的访问都可以根据组织的审核和责任制策略进行审核。|
-|90 天|•   增强反恶意软件、修补程序和配置管理程序。<br>•   使用 Microsoft 365 安全功能来控制对环境的访问，并保护组织信息和资产。<br>•   利用内置审核功能，监视 Office 365 中的敏感或风险活动。<br>•   为电子邮件和 Office 文档中的链接和附件部署高级威胁防护。|
-|90 天后|•   使用 Microsoft 365 高级工具和信息保护，对设备实施持续控制并实现对企业数据的保护。<br>•   监视 Microsoft 365 和其他云应用程序的持续合规性。  <br>•   使用增强的威胁检测和防护功能以及高级威胁分析，为组织提供可靠的分层安全策略。制定事件响应计划以减轻组织中遭破坏的系统的影响。|
+|30 天|*   了解 NIST 800-53 要求，并考虑与 Microsoft 咨询合作伙伴合作。<br>*   学习并了解 Microsoft 365 内置深层防护策略。  <br>*   保护用户和管理员对 Office 365 的访问。 <br>*   确保所有对系统的访问都可以根据组织的审核和责任制策略进行审核。|
+|90 天|*   增强反恶意软件、修补程序和配置管理程序。<br>*   使用 Microsoft 365 安全功能来控制对环境的访问，并保护组织信息和资产。<br>*   利用内置审核功能，监视 Office 365 中的敏感或风险活动。<br>*   为电子邮件和 Office 文档中的链接和附件部署高级威胁防护。|
+|90 天后|*   使用 Microsoft 365 高级工具和信息保护，对设备实施持续控制并实现对企业数据的保护。<br>*   监视 Microsoft 365 和其他云应用程序的持续合规性。  <br>*   使用增强的威胁检测和防护功能以及高级威胁分析，为组织提供可靠的分层安全策略。制定事件响应计划以减轻组织中遭破坏的系统的影响。|
 
 ## <a name="30-days--powerful-quick-wins"></a>30 天 - 强势速赢
 
@@ -72,9 +73,9 @@ Microsoft 被认为是云安全领域的行业领袖。通过多年构建企业�
 |||
 |:-----|:-----|
 |**区域**|**任务**|
-|使用 Microsoft 365 高级工具和信息保护，对设备实施持续控制并实现对企业数据的保护。|• 使用 [Microsoft Intune](https://docs.microsoft.com/intune/) 保护移动设备上存储和访问的敏感数据，并确保使用合规的公司设备访问云服务。|
-|监视 Microsoft 365 和其他云应用程序的持续合规性。|•    若要根据组织定义的策略和过程评估性能，请持续使用[合规性分数](compliance-score.md)，以定期对组织强制实现的信息安全策略进行评估。<br>• 使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) 控制拥有高级权限的所有用户和组（即特权用户或管理用户），并对其执行定期评审。<br>•    部署和配置[特权访问管理](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365)，以细化对 Office 365 中特权管理任务的访问控制。  启用后，用户需要通过范围和时间高度受限的审核工作流，请求获取实时访问权限来完成特权提升任务。<br>•   审核[非所有者邮箱访问权限](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports)，以标识潜在信息泄漏，并主动检查所有 Exchange Online 邮箱上的非所有者访问权限。<br>•   使用 [Office 365 警报策略、数据丢失防护报告和 Microsoft Cloud App Security](https://docs.microsoft.com/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data)，监视组织的云应用程序使用情况，并实现基于启发和用户活动的高级警报策略。<br>• 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 自动跟踪有风险的活动，以标识潜在恶意管理员、调查数据泄露或验证是否符合合规性要求。|
-|利用增强的威胁检测和防护功能以及高级威胁分析，为组织提供可靠的分层安全策略。制定事件响应计划以减轻组织中遭破坏的系统的影响。|• 部署和配置 [Windows 高级威胁分析](https://docs.microsoft.com/advanced-threat-analytics/)以利用丰富分析和报告，从而获得关键见解，了解组织中遭攻击的用户，以及被利用的网络攻击方法。<br>•    利用 [Office 365 高级威胁防护报表和分析](/security/office-365-security/view-reports-for-atp.md)，透过对组织中自动检测到的恶意内容和恶意电子邮件的见解来分析威胁。利用内置报表和邮件跟踪功能，可调查因未知病毒或恶意软件而被阻止的电子邮件。<br>•   使用 [Office 365 威胁智能](/security/office-365-security/office-365-ti.md)从各类源中聚合见解和信息，以获取云安全环境的整体视图。<br>•   [将 Office 365 威胁智能和 Windows Defender 高级威胁防护集成](/security/office-365-security/integrate-office-365-ti-with-wdatp.md)，以便在调查 Office 365 中的威胁时快速了解用户设备是否处于危险中。<br>•  使用 [Office 365 攻击模拟器](/security/office-365-security/attack-simulator.md)模拟 Office 365 环境中常见的攻击手段。  查看攻击模拟器中的结果以识别用户的培训机会并验证组织的事件响应过程。<br>•   配置[安全或合规中心的权限](/security/office-365-security/permissions-in-the-security-and-compliance-center.md)以确保对监视和审核数据的访问仅限批准的用户，并与组织的事件响应措施相集成。|
+|使用 Microsoft 365 高级工具和信息保护，对设备实施持续控制并实现对企业数据的保护。|*    使用 [Microsoft Intune](https://docs.microsoft.com/intune/) 保护移动设备上存储和访问的敏感数据，并确保使用合规的公司设备访问云服务。|
+|监视 Microsoft 365 和其他云应用程序的持续合规性。|*    若要根据组织定义的策略和过程评估性能，请持续使用[合规性分数](compliance-score.md)，以定期对组织强制实现的信息安全策略进行评估。<br>*    使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) 控制拥有高级权限的所有用户和组（即特权用户或管理用户），并对其执行定期评审。<br>*    部署和配置[特权访问管理](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365)，以细化对 Office 365 中特权管理任务的访问控制。  启用后，用户需要通过范围和时间高度受限的审核工作流，请求获取实时访问权限来完成特权提升任务。<br>*    审核[非所有者邮箱访问权限](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports)，以标识潜在信息泄漏，并主动检查所有 Exchange Online 邮箱上的非所有者访问权限。<br>*    使用 [Office 365 警报策略、数据丢失防护报告和 Microsoft Cloud App Security](https://docs.microsoft.com/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data)，监视组织的云应用程序使用情况，并实现基于启发和用户活动的高级警报策略。<br>*    使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 自动跟踪有风险的活动，以标识潜在恶意管理员、调查数据泄露或验证是否符合合规性要求。|
+|利用增强的威胁检测和防护功能以及高级威胁分析，为组织提供可靠的分层安全策略。制定事件响应计划以减轻组织中遭破坏的系统的影响。|*    部署和配置 [Windows 高级威胁分析](https://docs.microsoft.com/advanced-threat-analytics/)以利用丰富的分析和报告，从而获得关键见解，了解组织中遭攻击的用户，以及被利用的网络攻击方法。<br>*    利用 [Office 365 高级威胁防护报告和分析](/security/office-365-security/view-reports-for-atp.md)，透过对组织中自动检测到的恶意内容和恶意电子邮件的见解来分析威胁。利用内置报告和邮件跟踪功能，可调查因未知病毒或恶意软件而被阻止的电子邮件。<br>*    使用 [Office 365 威胁智能](/security/office-365-security/office-365-ti.md)从各类源中聚合见解和信息，以获取云安全环境的整体视图。<br>*    [将 Office 365 威胁智能和 Windows Defender 高级威胁防护集成](/security/office-365-security/integrate-office-365-ti-with-wdatp.md)，以便在调查 Office 365 中的威胁时快速了解用户设备是否处于危险中。<br>*    使用 [Office 365 攻击模拟器](/security/office-365-security/attack-simulator.md)模拟 Office 365 环境中常见的攻击手段。  查看攻击模拟器中的结果以识别用户的培训机会并验证组织的事件响应过程。<br>*    配置[安全或合规中心的权限](/security/office-365-security/permissions-in-the-security-and-compliance-center.md)以确保对监视和审核数据的访问仅限批准的用户，并与组织的事件响应措施相集成。|
 |||
 
 ## <a name="learn-more"></a>了解更多

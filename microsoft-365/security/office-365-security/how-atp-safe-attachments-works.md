@@ -14,17 +14,19 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "\"安全附件\" 功能可提供电子邮件附件的单击时间验证。 使用安全附件保护组织免受用户在电子邮件中发送或接收的恶意文件的攻击。"
-ms.openlocfilehash: 14a1b37ce08e0ab63c23515fcf0fb03d99e59cc8
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何使用适用于 Office 365 的 ATP 安全附件，让您的组织免受恶意文件的安全。
+ms.openlocfilehash: a0d5923ccac525b23aa2ef6b45936524f0a7b483
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943755"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036652"
 ---
 # <a name="how-atp-safe-attachments-works"></a>ATP 安全附件的工作原理
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 ATP 安全附件功能检查组织中人员的电子邮件附件。 如果 ATP 安全附件策略已就绪，并且该策略涵盖的人在 Office 365 中查看其电子邮件，则会检查其电子邮件附件，并根据 ATP 安全附件策略采取相应的操作。 根据您的策略定义方式，用户可以继续工作，而无需知道他们是否发送了恶意文件。
   

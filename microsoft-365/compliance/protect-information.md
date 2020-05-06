@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: 保护信息的登录页
-ms.openlocfilehash: f5153373d73ec542f2a21561ce32c37368ff02e4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 此登录页提供有关保护 Microsoft 365 和 Office 365 中的信息的链接和信息。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: bf230c8ca679b36046048b0b349326778a489369
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601669"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031476"
 ---
 # <a name="protect-information"></a>保护信息
 

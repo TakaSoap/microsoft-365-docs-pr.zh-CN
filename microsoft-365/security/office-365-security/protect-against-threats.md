@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: 现在，请使用本文作为指南来配置您的威胁防护功能。
-ms.openlocfilehash: 0adf7bbb2637cc8a8d2918d951c1ccef51060b31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解 Office 365 威胁防护并配置如何将其用于组织。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7bdc7d619f3c48318572116fbc52647a0858ec5e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634456"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033886"
 ---
 # <a name="protect-against-threats"></a>保护免遭威胁侵害
 
@@ -31,7 +32,7 @@ Microsoft 365 包括各种威胁防护功能。 以下是可用作检查表的�
 > [!IMPORTANT]
 > **为每种策略提供了初始推荐设置; 但是，有许多可用选项，您可以调整设置以满足特定组织的需求**。 为你的策略或更改允许大约30分钟，以在你的数据中心中工作。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 ### <a name="subscriptions"></a>订阅
 

@@ -1,5 +1,5 @@
 ---
-title: 删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
+title: 删除处于保留状态的云邮箱中的项目 "可恢复的项目" 文件夹-管理员帮助
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 对于管理员：删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Microsoft 365 的数据的有效方法。
-ms.openlocfilehash: 4cf568c06fc3b6ee886ff1823d8771a64c0286d8
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0e42249fb2ba7143c4c833193b31c72f0fb73137
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022082"
+ms.locfileid: "44035886"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -370,7 +371,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 下面的表格介绍了在运行 Set-organizationconfig **cmdlet 或** **Get-OrganizationConfig** cmdlet 时，如何根据*InPlaceHolds*属性中的值标识不同类型的保留。 有关更多详细信息，请参阅[如何识别 Exchange Online 邮箱上放置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)。
 

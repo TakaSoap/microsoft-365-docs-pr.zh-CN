@@ -22,6 +22,8 @@
       items:
         - name: 了解内部风险管理
           href: insider-risk-management.md
+        - name: 内部风险管理计划
+          href: insider-risk-management-plan.md
         - name: 内部风险管理入门
           href: insider-risk-management-configure.md
         - name: 创建和管理内部风险策略
@@ -285,8 +287,8 @@
           href: automate-event-driven-retention.md
         - name: 管理 SharePoint 文档的生命周期
           href: auto-apply-retention-labels-scenario.md
-    - name: 处置数据
-      href: disposition-reviews.md
+    - name: 处理数据
+      href: disposition.md
     - name: 管理非活动邮箱
       items:
         - name: 非活动邮箱概述
@@ -340,7 +342,7 @@
             - name: 自动执行基于事件的保留
               href: automate-event-driven-retention.md
         - name: 处置
-          href: disposition-reviews.md
+          href: disposition.md
         - name: 有关记录管理的详细信息
           items:
             - name: 观看有关记录管理的视频

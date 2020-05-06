@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: 了解可帮助您阻止 Exchange Online 和 Microsoft 365 中的垃圾邮件的反垃圾邮件设置和筛选器。 在 Microsoft 365 中获取过多垃圾邮件？ 您可以自定义垃圾邮件筛选器和反垃圾邮件设置。
-ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: 了解可帮助您阻止 Exchange Online 和 Microsoft 365 中的垃圾邮件的反垃圾邮件设置和筛选器。
+ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708567"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034054"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件保护
 
@@ -71,7 +73,7 @@ EOP 中的反垃圾邮件设置由以下技术组成：
 
 - **使用电子邮件身份验证**：如果你拥有电子邮件域，则可以使用 DNS 帮助确保来自该域中的发件人的邮件是合法邮件。 若要帮助防止垃圾邮件和 EOP 中不需要的欺骗，请使用以下所有电子邮件身份验证方法：
 
-  - **SPF**：发件人策略框架验证邮件的源 IP 地址是否针对发送域的所有者。 若要快速了解 SPF 并使其快速配置，请参阅[设置 spf 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 若要更深入地了解 Microsoft 365 如何使用 SPF，或者用于故障排除或非标准部署（如混合部署），请先[了解 microsoft 365 如何使用发件人策略框架（SPF）来防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。
+  - **SPF**：发件人策略框架验证邮件的源 IP 地址是否针对发送域的所有者。 若要快速了解 SPF 并使其快速配置，请参阅[设置 spf 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 若要更深入地了解 Microsoft 365 如何使用 SPF，或要了解故障排除或非标准部署（如混合部署），请从 [Microsoft 365 如何使用发件人策略框架 (SPF) 以防欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)入手。
 
   - **DKIM**：域密钥已识别邮件将数字签名添加到从您的域发送的邮件的邮件头。 有关信息，请参阅[使用 DKIM 在 Microsoft 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。
 

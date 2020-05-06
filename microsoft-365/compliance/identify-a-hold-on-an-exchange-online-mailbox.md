@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可放在 Microsoft 365 邮箱上的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Microsoft 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户
-ms.openlocfilehash: 0f16b027f5c97871b490ce028a4c0b9e2d5e7f80
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 232173b82033f7372ef54411a04f3ee891a42bbb
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634164"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44047993"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -235,7 +235,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 在确定了应用于邮箱的保留后，可以执行一些任务，如更改保留的持续时间、临时或永久删除保留或从 Microsoft 365 保留策略中排除非活动邮箱。 有关执行与保留相关的任务的详细信息，请参阅下列主题之一：
 
-- 在 Security & 合规中心 PowerShell 中运行[new-retentioncompliancepolicy-AddExchangeLocationException \<user 邮箱>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps)命令，以从组织范围内的 Microsoft 365 保留策略中排除邮箱。 此命令仅可用于*ExchangeLocation*属性值等于`All`的保留策略。
+- 在 Security & 合规中心 PowerShell 中运行[new-retentioncompliancepolicy-AddExchangeLocationException \<user 邮箱>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps)命令，以从组织范围内的 Microsoft 365 保留策略中排除邮箱。 此命令仅可用于*ExchangeLocation*属性值等于`All`的保留策略。
 
 - 在 Exchange Online PowerShell 中运行[ExcludeFromOrgHolds \<不带前缀或后缀>命令中的设置邮箱-保留 GUID](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) ，以从组织范围内的 Microsoft 365 保留策略中排除非活动邮箱。
 

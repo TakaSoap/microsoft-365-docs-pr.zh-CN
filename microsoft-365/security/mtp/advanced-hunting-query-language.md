@@ -1,7 +1,7 @@
 ---
 title: 了解 Microsoft 威胁防护中的高级搜寻查询语言
 description: 创建你的第一个威胁搜寻查询，并了解高级搜寻查询语言的常见运算符和其他方面
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、语言、学习、第一个查询、遥测、事件、遥测、自定义检测、架构、kusto、运算符、数据类型、powershell下载，查询示例
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、语言、学习、第一个查询、遥测、事件、遥测、自定义检测、架构、kusto、运算符、数据类型、powershell 下载、查询示例
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5715baaccd95d975f7d15196906a6326177bbc2e
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 14de9d84ef19be3dcf1e630b2814a6060bfe7f27
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982002"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036495"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -147,6 +147,11 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | `bool` | True 或 False |
 | `int` | 32 位数值  |
 | `long` | 64 位数值 |
+
+## <a name="get-help-as-you-write-queries"></a>编写查询时获取帮助
+利用以下功能更快地编写查询：
+- **Autosuggest** —在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
+- **架构参考** — 工作区域旁边提供了包含表及其列的列表的架构参考。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
 
 ## <a name="use-sample-queries"></a>使用示例查询
 

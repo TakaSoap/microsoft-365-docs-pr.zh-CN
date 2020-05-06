@@ -15,13 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文介绍了 Microsoft 365 中的新数据调查（预览版）工具。
-ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+description: 在本文中，您将找到发行说明，其中包含 Microsoft 365 中的数据调查（预览）工具的更改和新功能。
+ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637732"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035724"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查（预览）发布说明
 

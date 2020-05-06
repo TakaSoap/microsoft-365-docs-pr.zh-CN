@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Outlook 中的 Microsoft 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3f364de1e863cef542fb8342e61f537bcd113535
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627988"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048169"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>将通讯组列表升级到 Outlook 中的 Microsoft 365 组
 
-您可以使用 Outlook 将通讯组列表升级到 Microsoft 365 组。 这是为组织的通讯组提供 Microsoft 365 组的所有特性和功能的好方法。 [为什么应将通讯组列表升级至 Outlook 中的组](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+您可以使用 Outlook 将通讯组列表升级到 Microsoft 365 组。 这是为组织的通讯组提供 Microsoft 365 组的所有特性和功能的好方法。 [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 您可以一次升级一个 DLs，也可以同时升级多个。
 
@@ -122,7 +122,7 @@ Get-DistributionGroup| Foreach-Object{
 
 您只能升级云管理、简单、非嵌套的通讯组列表。 下表列出了**无法**升级的通讯组列表。
 
-|**Property**|**退税?**|
+|**属性**|**退税?**|
 |:-----|:-----|
 |内部部署管理通讯组列表。  <br/> |否  <br/> |
 |嵌套的通讯组列表。 通讯组列表具有子组或是另一个组的成员。  <br/> |否  <br/> |
@@ -159,7 +159,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组成员是否可在其收件箱中获取欢迎电子邮件？
 
-不正确。 默认情况下，启用欢迎邮件的设置设置为 false。 此设置会影响在迁移完成后可能加入的现有和新组成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在其收件箱中收到欢迎电子邮件。 来宾成员可以继续使用该组。
+否。 默认情况下，启用欢迎邮件的设置设置为 false。 此设置会影响在迁移完成后可能加入的现有和新组成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在其收件箱中收到欢迎电子邮件。 来宾成员可以继续使用该组。
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>如果一个或多个 Dl 未升级，该怎么办？
 

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: 了解如何在30天内延长试用订阅。
-ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634892"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045760"
 ---
 # <a name="extend-your-trial"></a>延长试用期
 
@@ -34,10 +34,9 @@ ms.locfileid: "43634892"
 
 ::: moniker range="o365-worldwide"
 
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
-
-2. 在 "**产品 & 服务**" 页上，找到要扩展的试用订阅。 在 "**设置 & 操作**" 部分，选择 "**扩展试用版**"。
+2. 在 "**产品**" 页上，找到要扩展的试用订阅。 在 "**设置 & 操作**" 部分，选择 "**扩展试用版**"。
 
 3. 查看扩展信息，如有必要，请更改您的付款方式。 完成后，请选择 "**扩展试用版**"。
 
@@ -45,9 +44,7 @@ ms.locfileid: "43634892"
 
 ::: moniker range="o365-germany"
 
-
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-
 
 2. 在 "**订阅**" 页上，选择要扩展的试用订阅，然后在过期日期下，选择 "**扩展试用版**"。
 

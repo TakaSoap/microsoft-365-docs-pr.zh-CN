@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
-description: 如果您使用出站垃圾邮件筛选来发送出站电子邮件，那么将始终启用该服务，从而保护使用此服务的组织及其目标收件人。
-ms.openlocfilehash: 27f79252d2d08c374784064ac6a12bc4cc7725ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您将了解如何配置应用于组织中的特定用户、组或域的出站垃圾邮件策略。
+ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637720"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036784"
 ---
 # <a name="configure-outbound-spam-filtering"></a>配置出站垃圾邮件筛选
 
@@ -77,7 +79,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 有关出站垃圾邮件策略的建议设置，请参阅[EOP 出站垃圾邮件筛选器策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。
 
@@ -493,7 +495,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 有关语法和参数的详细信息，请参阅[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule)。
 
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [从“受限的用户”门户中删除被阻止的用户](removing-user-from-restricted-users-portal-after-spam.md)
 

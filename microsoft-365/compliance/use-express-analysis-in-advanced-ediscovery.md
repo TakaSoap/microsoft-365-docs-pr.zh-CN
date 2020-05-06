@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: 了解如何运行高级电子数据展示的快速分析模式
-ms.openlocfilehash: 32e1087d33b9e9a6c0e4935bd3488a6b464d06a2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何运行高级电子数据展示的快速分析模式，然后导出结果。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ccc81ccf4446af3d6e5584924883a1c8049ed962
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626408"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034304"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>在高级电子数据展示中使用快速分析（经典） 
 
@@ -104,7 +105,7 @@ ms.locfileid: "43626408"
     
   - 若要导出添加到现有事例中的新文件的结果，请继续使用当前批处理。 若要在批处理中创建会话，请选择同一批次号码并单击 "**创建导出会话**" 可以使用此选项以增量方式导出与上一批次相同的参数。 
     
-  - 若要导出到新批次， **Add** ![请单击 "](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击“确定”****。
+  - 若要导出到新批次， **Add** ![请单击 "](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)添加添加图标"，并在 "批**次名称**" 中输入新名称（或接受默认值）和 "**批处理说明**" 中的说明。 单击“**确定**”。
     
   - 若要编辑批次名称或说明，请在 "**导出批次**" **Edit** ![中选择名称](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)，单击 "编辑编辑图标"，然后修改字段。
     

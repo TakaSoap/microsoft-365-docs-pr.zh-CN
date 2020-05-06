@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 了解如何为 Microsoft 365 for business 更新帐单邮寄地址。 您还可以更新用于接收帐单通知的电子邮件地址。
 ms.custom: okr_SMB
-ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632715"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048021"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -121,7 +121,7 @@ ms.locfileid: "43632715"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 查找要更改的订阅。 在 "**设置" & "操作**" 部分，选择 "**编辑服务使用地址**"。
 
@@ -170,6 +170,8 @@ ms.locfileid: "43632715"
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>更改其他管理员的备用电子邮件地址
 
 还可以更改组织中其他全局管理员和帐单管理员的备用电子邮件地址。
+
+::: moniker range="o365-worldwide"
   
 1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
 

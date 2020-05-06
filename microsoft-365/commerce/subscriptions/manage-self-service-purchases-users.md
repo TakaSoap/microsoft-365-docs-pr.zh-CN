@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 用户可以了解如何管理自己的自助购买。
-ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636635"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046164"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
@@ -30,11 +30,11 @@ ms.locfileid: "43636635"
 
 ## <a name="view-your-subscriptions"></a>查看你的订阅
 
-您可以查看已购买的所有自助服务购买订阅的列表。 在 "管理中心" 中，转到 "**帐单** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+您可以查看已购买的所有自助服务购买订阅的列表。 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何购买更多或减少许可证
 
-1. 在 "管理中心" 中，转到 "**帐单** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 查找要为其购买更多或减少许可证的订阅。
 
@@ -74,7 +74,7 @@ ms.locfileid: "43636635"
 
 ## <a name="cancel-a-subscription"></a>取消订阅
 
-1. 在 "管理中心" 中，转到 "**帐单** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 查找要取消的订阅。
 
@@ -119,7 +119,7 @@ ms.locfileid: "43636635"
 
 2. 在 "**发票**" 下，选择要查看的发票。
 
-## <a name="need-help-contact-us"></a>是否需要帮助？ 联系我们。
+## <a name="need-help-contact-us"></a>需要帮助？ 联系我们。
 
 有关自助购买的常见问题，请参阅[自助服务购买 FAQ](self-service-purchase-faq.md)。
 

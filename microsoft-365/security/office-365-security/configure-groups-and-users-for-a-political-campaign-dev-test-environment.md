@@ -1,5 +1,5 @@
 ---
-title: 为政治宣传活动开发/测试环境配置组和用户
+title: 配置组和用户 - 政治宣传活动开发/测试环境
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
-ms.openlocfilehash: f07ccbb648ef20c6b7c6ef005afef59fd89d56aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 14722ab96230ecb8acaf4476d6ca70c47de2ffdd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638449"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035102"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 

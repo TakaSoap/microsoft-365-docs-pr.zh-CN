@@ -1,5 +1,5 @@
 ---
-title: 管理员提交、提交、垃圾邮件问题、误报、提交网络钓鱼、提交电子邮件进行扫描、在 Office 365 中使用可疑电子邮件、扫描邮件、使用 Microsoft 扫描网络钓鱼、使用 microsoft 扫描垃圾邮件、提交电子邮件、提交电子邮件、dodgy 电子邮件、错误演员邮件、可疑、不受信任的邮件、向 microsoft 报告诈骗电子邮件、向 microsoft 报告诈骗电子邮件，将电子邮件中的恶意软件报告给 Microsoft，收件箱中的垃圾邮件，电子邮件中的病毒
+title: Office 365 中的管理员提交
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,13 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: 了解如何将可疑电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件从公司的公司提交到 Microsoft 进行扫描。
-ms.openlocfilehash: 73c33ba1218a710c33f8b2675bc65c0a7486efda
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921493"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034196"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -114,7 +116,7 @@ ms.locfileid: "43921493"
 - **主题/URL/文件名**
 - **提交者**
 - **提交类型**
-- **状态**
+- "状态"
 
 ![用于管理提交的筛选器选项](../../media/admin-submission-email-filter-options.png)
 
@@ -128,7 +130,7 @@ ms.locfileid: "43921493"
 
 您可以单击页面底部附近的 "**列选项**" 按钮，在视图中添加或删除列：
 
-- **Date**
+- "日期"
 - **提交 ID**
 - **提交者**<sup>\*</sup>
 - **主题**<sup>\*</sup>
@@ -148,7 +150,7 @@ ms.locfileid: "43921493"
 
 您可以单击页面底部附近的 "**列选项**" 按钮，在视图中添加或删除列：
 
-- **Date**
+- "日期"
 - **提交 ID**
 - **提交者**<sup>\*</sup>
 - **URL**<sup>\*</sup>
@@ -163,7 +165,7 @@ ms.locfileid: "43921493"
 
 您可以单击页面底部附近的 "**列选项**" 按钮，在视图中添加或删除列：
 
-- **Date**
+- "日期"
 - **提交 ID**
 - **提交者**<sup>\*</sup>
 - **文件名**<sup>\*</sup>

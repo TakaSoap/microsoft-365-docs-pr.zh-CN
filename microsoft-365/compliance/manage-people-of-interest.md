@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: f5028e82e8c54972dd188215eac0518775ec275c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何管理感兴趣的人员，以限定搜索范围或查看信息（如联系人、位置和活动日志）。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 7cab1904731f325f1ec45685ddf122e5ee375a2b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635836"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036065"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>管理数据调查中感兴趣的人员（预览）
 

@@ -11,13 +11,15 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
-description: 我们在此处回答了有关 Microsoft Exchange Online Protection (EOP) 云托管电子邮件筛选服务的一般常见问题。有关其他常见问题 (FAQ) 的主题，请转到下列链接：
-ms.openlocfilehash: 899109a768399f53674b97fc8df2f71aa822316d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 在本主题中，您将找到有关 Microsoft Exchange Online Protection （EOP）云托管的电子邮件筛选服务的最常见的一般问题。
+ms.openlocfilehash: 48841e5e68dd560329eadc0a654e6d8fe1b2d09e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636248"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036556"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常见问题解答
 

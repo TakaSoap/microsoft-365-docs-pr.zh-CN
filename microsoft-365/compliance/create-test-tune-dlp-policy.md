@@ -15,14 +15,16 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
+ms.custom:
+- seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: '开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 '
-ms.openlocfilehash: 819320b8170c652a6cdb32e191ebca5174eb0329
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 在本文中，您将了解如何根据您的组织需求来创建、测试和调整 DLP 策略。
+ms.openlocfilehash: 2a7ef029d00aff8450d9e8cf41253c2a86606807
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635962"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035754"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -212,6 +214,6 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![内容受限制的策略提示](../media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>总结
+## <a name="summary"></a>Summary
 
 数据丢失防护策略对于所有类型的组织都很有用。 由于您对策略提示、最终用户覆盖和事件报告等的控制，测试某些 DLP 策略是一个低风险的实践。 您可以安静地测试一些 DLP 策略，以查看组织中已发生的冲突类型，然后使用较低的误报率手工创建策略，向用户介绍允许和不允许的内容，然后将您的 DLP 策略部署到组织中。

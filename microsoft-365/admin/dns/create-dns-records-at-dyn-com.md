@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: 了解如何验证您的域，并在 Dyn.com for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: afce9c21b0f717a038f378d4bf7114724748c2ac
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 9d419cc26688cdbda792c0aaaa116ee01534247a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939279"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049115"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>在 Dyn.com 处为 Microsoft 创建 DNS 记录
 
@@ -108,7 +108,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**主机**|**TTL**|**类型**|**数据**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> **10** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)      <br>    有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> **10** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)      <br>    有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
     ![Dyn-配置-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   

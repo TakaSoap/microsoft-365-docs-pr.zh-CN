@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 安全中心中监视和查看报告
+title: 监视和查看报告-安全中心
 description: 介绍 Microsoft 365 安全中心如何一目了然地概述保护和安全状态。
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、status
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5acc122b827a9d715782923d03cef7fd0e0417e4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 987f3a60b514874bd970b93bdcc2c08832345b4b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086981"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033982"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中监视和查看报告
 

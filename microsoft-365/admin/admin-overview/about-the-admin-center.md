@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理中心在云中设置组织，还可用它来管理用户和订阅。 首先使用管理员权限登录帐户。
-ms.openlocfilehash: b54fd3219354b0a5ee38480f8e3a591500c0524b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4b5db6afd7ef8428fea9fc0b57a090b22d027216
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623972"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049431"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -70,20 +70,20 @@ ms.locfileid: "43623972"
 
 ## <a name="admin-center-features-and-settings"></a>管理中心功能和设置
 
-可在管理中心的左侧导航中找到以下功能和设置。 在[管理员帮助](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx)中详细了解管理员任务。
+可在管理中心的左侧导航中找到以下功能和设置。 在[管理员帮助](https://docs.microsoft.com/microsoft-365/admin/admin-home)中详细了解管理员任务。
   
 |**菜单**|**它有何用途？**|
 |-----|-----|
 |**主页** <br/> |这是新的管理中心内的登陆页面。 你将看到在何处管理用户、帐单、服务运行状况和报表。  <br/> |
 |**用户** <br/> |创建和管理你组织中的用户，如员工或学生。 你还可设置其权限级别或重置其密码。  <br/> |
 |**组** <br/> |创建和管理组织中的组，例如 Microsoft 365 组、通讯组、安全组或共享邮箱。 了解如何[创建](../create-groups/create-groups.md)和[管理](../create-groups/manage-groups.md)组。  <br/> |
-|**资源** <br/> |创建和管理资源，如 SharePoint 网站集。 了解如何[创建网站集](https://support.office.com/article/3a3d7ab9-5d21-41f1-b4bd-5200071dd539.aspx)。  <br/> |
+|**资源** <br/> |创建和管理资源，如 SharePoint 网站集。 了解如何[创建网站集](https://docs.microsoft.com/sharepoint/create-site-collection)。  <br/> |
 |**帐单** <br/> |查看、购买或取消组织的订阅。 查看过去的帐单声明，或查看分配给单个用户的许可证数量。 了解如何[管理帐单](../../commerce/index.yml)。  <br/> |
 |**支持** <br/> | 查看现有服务请求或创建新请求。 在[联系商业版产品的支持人员 - 管理员帮助](../contact-support-for-business-products.md)中了解详细信息。 |
 |**Settings** <br/> |管理应用（如电子邮件、网站和 Office 套件）的全局设置。 更改你的密码策略和到期日期。 添加和更新域名，如 contoso.com。 更改组织配置文件和发布首选项。 选择合作伙伴能否访问你的管理中心。  <br/> |
 |**设置** <br/> |管理现有域、启用和管理多重身份验证、管理管理员访问权限、将用户邮箱迁移到 Office 365、管理功能更新，并帮助用户安装其 Office 应用。 |
 |**报表** <br/> |快速浏览有关电子邮件使用、Office 激活等的详细报告，了解您的组织如何使用 Microsoft 365。了解如何使用新的[活动报表](../activity-reports/activity-reports.md)。<br/> |
-|**运行状况** <br/> |一目了然地查看服务运行状况。 还可查看更多详细信息和服务运行状况历史记录。 请参阅[如何查看服务运行状况](https://support.office.com/article/932AD3AD-533C-418A-B938-6E44E8BC33B0)。  <br/> 使用消息中心跟踪即将推出的功能和服务更改。 我们会在该中心发布公告，其中含有帮助你规划更改和了解更改可能对用户产生的影响的信息。 请在 [Office 365 中的消息中心](../manage/message-center.md)获取更多详细信息。  <br/> |
+|**运行状况** <br/> |一目了然地查看服务运行状况。 还可查看更多详细信息和服务运行状况历史记录。 请参阅[如何查看服务运行状况](https://docs.microsoft.com/office365/enterprise/view-service-health)。  <br/> 使用消息中心跟踪即将推出的功能和服务更改。 我们会在该中心发布公告，其中含有帮助你规划更改和了解更改可能对用户产生的影响的信息。 请在 [Office 365 中的消息中心](../manage/message-center.md)获取更多详细信息。  <br/> |
 |**管理中心** <br/> |为 Exchange、Skype for Business、SharePoint、Yammer 和 Azure AD 打开单独的管理中心。 每个管理中心均包含可用于此服务的所有设置。  <br/> 例如,在 Exchange 管理中心中，设置和管理电子邮件、日历、通讯组等。在 SharePoint 管理中心中，创建和管理网站集、网站设置和 OneDrive for Business。在 Skype for Business 管理中心中，设置即时消息通知、电话拨入式会议和联机状态。  <br/> 深入了解 [Exchange 管理中心](https://go.microsoft.com/fwlink/p/?LinkID=271807)和 [SharePoint 管理中心](https://docs.microsoft.com/sharepoint/sharepoint-online)。<br/> **注意：** 可使用哪些管理中心取决于你的计划和区域。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理中心内的常见任务
@@ -100,4 +100,4 @@ ms.locfileid: "43623972"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

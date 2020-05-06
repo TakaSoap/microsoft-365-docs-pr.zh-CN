@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: 引导您完成对影响 Microsoft 365 环境的安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
-ms.openlocfilehash: 0d16011a7abfcaa20d2a053ee9c00b3719a2b3c6
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: 本主题将引导您完成对影响 Microsoft 365 环境的安全性的租户范围设置的建议配置。
+ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949389"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043353"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -109,7 +111,7 @@ SharePoint 管理中心和 OneDrive for Business 管理中心包括相同的设�
 
 同时，请使用下列方法之一为 SharePoint Online 和 OneDrive for business 实现此目的：
 
-- 使用 PowerShell，请参阅[阻止不使用新式身份验证的应用](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)程序。
+- 使用 PowerShell，请参阅[阻止不使用新式验证（ADAL）的应用程序](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block)。
 
 - 在 SharePoint 管理中心的 "设备访问" 页上配置此设置： "控制不使用新式身份验证的应用程序的访问"。 选择 "阻止"。
 

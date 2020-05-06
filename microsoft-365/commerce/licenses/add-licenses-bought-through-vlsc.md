@@ -22,20 +22,20 @@ search.appverid:
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
 description: 了解如何通过 Microsoft 认可将许可证添加到通过第三方合作伙伴购买的 Microsoft 365 订阅。
-ms.openlocfilehash: 3e8a6ce968727cea6aec6140e7d3f354ed68bc94
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 9e463e53d51e7fc0a3828cc6163296084995f9c9
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708139"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045748"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>向通过批量许可服务中心购买的订阅添加许可证
 
 如果你通过第三方合作伙伴购买了 Microsoft 365 for business 或 Office 365 企业版计划，则必须通过该合作伙伴购买额外的许可证。 如果从 Microsoft 已知的合作伙伴那里购买订阅，您可以通过以下步骤找到该合作伙伴的联系方式。
 
 ::: moniker range="o365-worldwide"
-
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+  
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 选择要向其添加许可证的订阅，然后选择 "**批量许可服务中心（VLSC）** " 链接。
 

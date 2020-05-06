@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: 了解欺骗性智能洞察力在 Office 365 高级威胁防护中的工作原理。
-ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解新的欺骗智能洞察力的工作方式，包括如何快速确定哪些发件人合法地向您发送未经身份验证的电子邮件。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630925"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033640"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>演练-在 Microsoft 365 中 ATP 欺骗智能洞察力
 
@@ -38,7 +39,7 @@ ms.locfileid: "43630925"
 
   您可以从安全 & 合规中心的多个仪表板中查看欺骗性智能洞察力。 无论您正在查看哪个仪表板，真知灼见都会提供相同的详细信息，并允许您快速执行相同的任务。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要使用欺骗性智能洞察力，您必须是 "**组织管理**"、"**安全管理员**" 或 "**安全读者**" 角色组的成员。 有关安全 & 合规中心中的角色组的详细信息，请参阅[security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 若要使用欺骗性智能洞察力，您必须是 "**组织管理**"、"**安全管理员**" 或 "**安全读者**" 角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 在 ATP 反网络钓鱼策略中启用和禁用欺骗智能。 有关详细信息，请参阅[在 Microsoft 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 

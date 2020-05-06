@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1edf55298981fe8c20a38c863229a7349d6b0862
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 查看在数据调查（预览）中列出了证据集中文档的元数据字段的表。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595177"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035694"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>数据调查中的文档元数据字段（预览）
 
-下表列出了数据调查（预览）调查中的证据集内的文档的元数据字段。 该表指示元数据字段的名称，该字段是否可以在证据集中运行查询时进行搜索，无论在证据集内查看所选文档的文件元数据时是否存在该字段，以及何时是否包含该字段导出文档。 
+下表列出了数据调查（预览）调查中的证据集内的文档的元数据字段。 该表指示元数据字段的名称，该字段是否可以在证据集中运行查询时进行搜索，无论在证据集内查看所选文档的文件元数据时字段是否存在，以及导出文档时是否包含该字段。 
 
 > [!NOTE]
 > 在 "**证据集**" 列中可搜索的括号中的值是您可以搜索的属性的名称。 "**文件元数据**" 列中的可查看括号中的值是您在查看文件元数据时显示的属性的名称。

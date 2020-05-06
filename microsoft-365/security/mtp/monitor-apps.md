@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 安全中心中的应用程序监控和报告
-description: 介绍如何能够深入了解组织中的云应用程序使用情况
+title: 应用程序监控 & 报告-安全中心
+description: 了解如何能够深入了解组织中的云应用程序使用情况，包括哪些类型的应用程序、风险级别和警报。
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、apps
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,18 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f7b3f2fcaac71eefa2579a0c3fd66666fe00f605
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cd7a86751ac58f60051891544c9fd68c51b439e1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087653"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034018"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的应用程序监控和报告
 
 这些报告可更深入地了解如何在组织中使用云应用程序，包括哪些类型的应用、风险级别和警报。
 
-## <a name="monitor-email-accounts-at-risk"></a>监视电子邮件帐户的风险
+## <a name="monitor-email-accounts-at-risk"></a>监视有风险的电子邮件帐户
 
 **电子邮件保护**显示有风险的电子邮件帐户。 您可以单击某个帐户以在 Microsoft Defender 安全中心中进行进一步调查。
 

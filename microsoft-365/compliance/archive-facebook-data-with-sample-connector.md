@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理员可以将连接器设置为从数据源（如 Facebook 商业页面、Twitter、LinkedIn 公司页面和即时 Bloomberg）导入第三方数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 21023e380e4065f40edd4c3dea3f4c461d743f04
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 设置连接器以将 Facebook 数据导入 Microsoft 365，以便您可以使用合规性功能，如合法保留、内容搜索和保留策略。
+ms.openlocfilehash: a1a45b3558e8c5fb77fb1d04a1a38402000bbd1b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943231"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035154"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data"></a>使用连接器存档 Facebook 数据
 

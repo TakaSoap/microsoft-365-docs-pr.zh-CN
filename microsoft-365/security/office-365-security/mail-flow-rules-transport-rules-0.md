@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection 中的邮件流规则（传输规则）
+title: 邮件流规则（传输规则）-Exchange Online Protection
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则（传输规则）识别通过组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 0a182b9d4a63a824a3955e8296160779c826960d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8cb28a1f198d0717d2373de8f2b9cb048b6ff7df
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635408"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036181"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则（传输规则）
 
@@ -122,7 +122,7 @@ All messages that flow through your organization are evaluated against the enabl
 
 - 在创建或修改邮件流规则后，最长可能需要30分钟才能将新的或更新的规则应用于邮件。
 
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
 [使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 

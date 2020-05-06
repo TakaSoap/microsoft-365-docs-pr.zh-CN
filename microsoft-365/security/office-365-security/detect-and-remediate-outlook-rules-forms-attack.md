@@ -1,5 +1,5 @@
 ---
-title: 检测和修正 Outlook 规则和自定义窗体注入攻击
+title: 检测和修正 Outlook 规则和自定义窗体注入攻击。
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,12 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
-ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637588"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034812"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>检测和修正 Outlook 规则和自定义窗体注入攻击
 
@@ -234,9 +235,9 @@ ms.locfileid: "43637588"
 
 使用本地 Exchange 安装的客户应考虑阻止未提供修补程序的旧版本的 Outlook。 有关此过程的详细信息，请参阅[配置 Outlook 客户端阻止](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)一文。
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>安全 Microsoft 365，如 cybersecurity pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Microsoft 365
 
-你的 Microsoft 365 订阅附带了一组功能强大的安全功能，可用于保护你的数据和用户。 使用[microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 microsoft 建议的 microsoft 365 租户安全最佳实践。
+你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Microsoft 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Microsoft 365 租户。
 
 - 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
 

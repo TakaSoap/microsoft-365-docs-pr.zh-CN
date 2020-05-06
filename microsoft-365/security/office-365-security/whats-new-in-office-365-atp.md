@@ -1,6 +1,6 @@
 ---
 title: Office 365 高级威胁防护中的新增功能
-description: 列出 Office 365 ATP 中的新特性和功能
+description: 了解最新版本的 Microsoft Office 365 ATP 中提供的新特性和功能。
 keywords: Office 365 中的新增功能 atp、ga、正式提供、功能、可用、新
 search.appverid: met150
 ms.service: O365-seccomp
@@ -15,12 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.date: 02/21/2020
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630817"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036580"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 

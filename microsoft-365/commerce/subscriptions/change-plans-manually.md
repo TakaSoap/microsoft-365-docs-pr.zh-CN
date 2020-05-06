@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态来手动更改订阅。
-ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707627"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046188"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -58,14 +58,14 @@ OR
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤3：检查新的订阅和许可证
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. **验证这两个订阅是否都已列出并处于活动状态**您要将用户移出的订阅和要将用户移动到的订阅必须一起列出。 如果在首次检查时新订阅不在此处，请稍后重试。 检查两个订阅是否都处于活动状态。 [新订阅未列出或未处于活动状态](#the-new-subscription-isnt-listed-or-isnt-active)。
 
 3. **检查是否有针对每个用户的足够许可证**每个用户都需要一个与其订阅相匹配的许可证。 因此，如果要将十个用户移动到 Microsoft 365 商业高级版，则需要确保十个许可证可用。
 
 4. **是否需要新订阅的更多许可证？**
-   转到 "**产品 & 服务**" 页面并[购买更多许可证](../licenses/buy-licenses.md)。
+   转到 "**产品**" 页面并[购买更多许可证](../licenses/buy-licenses.md)。
 
 > [旧的许可证是什么？](#what-about-the-old-licenses)
 
