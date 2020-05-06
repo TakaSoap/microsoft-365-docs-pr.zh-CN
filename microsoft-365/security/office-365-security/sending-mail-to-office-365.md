@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
-description: 这些文章有助于外部发件人改善其信誉，并提高他们向 Office 365 的用户传送电子邮件的能力。 它们还提供了有关如何报告垃圾邮件和网络钓鱼尝试的一些信息，即使你不是 Microsoft 365 用户自己的也是如此。
-ms.openlocfilehash: c5c84d154b25f29b94635e6506ed54158efc672f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 作为外部发件人学习，如何提高在 Microsoft 365 中向用户传递电子邮件的能力。 此外，还了解如何将垃圾邮件 & 网络钓鱼尝试作为外部用户进行报告。
+ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638412"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035380"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>将邮件发送到 Microsoft 365
 

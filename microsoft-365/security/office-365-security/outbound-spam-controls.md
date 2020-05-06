@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解 Microsoft 365 和 Exchange Online Protection （EOP）如何保护客户不受出站垃圾邮件的保护，以及在需要发送大量邮件时应采取的操作。
-ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 以管理员身份了解 Office 365 和 Exchange Online Protection （EOP）如何保护客户免受出站垃圾邮件的攻击，以及在需要发送大量邮件时应采取的操作。
+ms.openlocfilehash: ffedcf68489914865c00eb68aecfa6c74e519ee2
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634492"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033922"
 ---
 # <a name="outbound-spam-protection"></a>配置垃圾邮件保护
 

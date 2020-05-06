@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何在 Microsoft 365 合规性中心中创建、配置和保存数据调查（预览版）中的新调查。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077461"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035774"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>在数据调查中创建新调查（预览）
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
     
-2. 使用您的工作或学校帐户登录。
+2. 使用工作或学校帐户进行登录。
     
 3. 在 "合规性中心" 中，单击 "**数据调查**"。
  

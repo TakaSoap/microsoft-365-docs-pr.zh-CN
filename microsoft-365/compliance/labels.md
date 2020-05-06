@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6496c5f82ee21e2085568f5e623fc6ee75145b8a
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637440"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949309"
 ---
 # <a name="overview-of-retention-labels"></a>保留标签概述
 
@@ -38,8 +38,9 @@ ms.locfileid: "43637440"
     
 - 必须**标记为记录**以免被编辑或删除的工作签证。 
     
-无论是上述哪种用途，保留标签都可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。
-  
+
+无论是上述哪种用途，Microsoft 365 中的保留标签都有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。
+
 借助保留标签，你可以：
   
 - **使组织中的人员手动将保留标签应用于** Outlook 网页版、Outlook 2010 及更高版本、OneDrive、SharePoint 和 Microsoft 365 组中的内容。用户通常最了解自己处理的内容类型，因此可对数据进行分类，并应用适当的策略。 
@@ -165,7 +166,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 此外，保留标签有两个保留选项，这两个选项只能用于保留标签，而不能用于保留策略。借助保留标签，你可以：
   
-- 在保留期到期时触发处置评审。这样一来，必须先评审 SharePoint 和 OneDrive 文档，然后才能删除它们。有关详细信息，请参阅[处置评审概述](disposition-reviews.md)。
+- 在保留期到期时触发处置评审。这样一来，必须先评审 SharePoint 和 OneDrive 文档，然后才能删除它们。有关详细信息，请参阅[处置内容](disposition.md)。
     
 - 保留期从内容分配有标签时开始计算，而不是根据内容年限或上次修改时间计算。 此选项仅适用于 SharePoint 网站和 OneDrive 帐户中的内容。 对于 Exchange 电子邮件，保留期限始终基于发送或接收邮件的日期，无论此处选择哪个选项，都是如此。
     
@@ -263,7 +264,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 - [与你创建的查询匹配的特定关键字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![自动应用标签的“选择条件”页](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
@@ -313,7 +314,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
 ![查询编辑器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>使用可训练分类器向内容自动应用标签
 
 选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含**冒犯性语言**、**简历**、**源代码**、**有针对性的骚扰**、**侮辱**和**威胁**：
 
@@ -324,6 +325,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
 有关可训练分类器的详细信息，请参阅[可训练分类器（预览版）入门](classifier-getting-started-with.md)。
 
 有关示例配置，请参阅[如何做好准备并使用内置分类器](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier)。
+
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容
 

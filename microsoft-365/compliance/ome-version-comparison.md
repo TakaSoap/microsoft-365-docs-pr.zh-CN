@@ -15,13 +15,14 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 帮助解释邮件加密版本之间的差异。
-ms.openlocfilehash: 89d145f19591ba59df6983bb8863a8e0cc28fcf3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 本文帮助说明不同版本的 Office 365 邮件加密之间的区别。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626788"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034872"
 ---
 # <a name="compare-versions-of-ome"></a>比较 OME 的版本
 
@@ -38,10 +39,10 @@ ms.locfileid: "43626788"
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**功能**                     | **旧 OME**    | **IRM**           | **新的 OME 功能** |
 |*发送加密邮件*        |通过 Exchange 邮件流规则|最终用户是从 Outlook 桌面或 Web 上的 Outlook 启动的;或通过 Exchange 邮件流规则|最终用户从 Outlook 桌面、Outlook for Mac 或 Web 上的 Outlook 启动;通过 Exchange 邮件流规则（也称为传输规则）和数据丢失防护（DLP）|
-|*权限管理模板*       |   不适用      |"不要转发" 选项和自定义模板|不转发选项、仅加密选项和自定义模板|
+|*权限管理模板*       |   无      |"不要转发" 选项和自定义模板|不转发选项、仅加密选项和自定义模板|
 |*收件人类型*                   |内部和外部收件人|仅限内部收件人         |内部和外部收件人|
 |*内部收件人的体验*|收件人收到 HTML 邮件，并在 web 浏览器或移动应用程序中将其下载和打开|Outlook 客户端中的本机内嵌体验|使用 Outlook 客户端的相同组织中的收件人的本机内嵌体验。  收件人可以使用除 Outlook 之外的客户端（无需下载或应用程序）从 OME 门户读取邮件。|
-|*外部收件人的体验*|收件人收到 HTML 邮件，并在 web 浏览器或移动应用程序中将其下载和打开|不适用|Microsoft 365 收件人的本机内嵌体验。 所有其他收件人都可以从 OME 门户读取邮件（无需下载或应用程序）。|
+|*外部收件人的体验*|收件人收到 HTML 邮件，并在 web 浏览器或移动应用程序中将其下载和打开|无|Microsoft 365 收件人的本机内嵌体验。 所有其他收件人都可以从 OME 门户读取邮件（无需下载或应用程序）。|
 |*附件权限*           |对附件没有限制|附件受到保护|附件受到保护，可用于 "不转发" 选项和自定义模板。 管理员可以选择仅加密选项的附件是否受保护。|
 |*引入你自己的密钥（BYOK）支持*|无                |无               |支持的 BYOK          |
 ||

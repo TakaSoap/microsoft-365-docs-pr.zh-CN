@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 for business，如何对其进行设置，以及如何准备用户的设备和电脑以确保 Microsoft 365 的商业版受到保护。
-ms.openlocfilehash: 17b142fb704d1b0be088a649490e751effb19517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633195"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048077"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 商业版入门
 
@@ -44,7 +44,7 @@ Microsoft 365 for business 是一套全面的业务效率和协作工具，如 O
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 for business 适用于最高300个许可证。 如果你需要更多许可证，请参阅[Microsoft 365 企业版](https://go.microsoft.com/fwlink/p/?linkid=860986)文档以了解详细信息。 
+Microsoft 365 for business 适用于最高300个许可证。 如果需要更多许可证，请参阅 [Microsoft 365 企业版](https://go.microsoft.com/fwlink/p/?linkid=860986)文档，以了解详细信息。 
   
 ## <a name="get-microsoft-365-for-business"></a>获取 Microsoft 365 for business
 
@@ -52,7 +52,7 @@ Microsoft 365 for business 适用于最高300个许可证。 如果你需要更�
     
 - 如果你没有合作伙伴并且想要获取 Microsoft 365 for business，可以在[此处购买](https://www.microsoft.com/microsoft-365/business)。
     
-## <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 for business
+## <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 
  **Microsoft 365 for business Suite 设置概述**
   
@@ -83,7 +83,7 @@ Microsoft 365 for business 适用于最高300个许可证。 如果你需要更�
     
     - 使用目录同步向导将用户同步到云。 按照[为 Microsoft 365 设置目录同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)中的步骤完成此过程。 将用户同步到云后，必须[关闭 Office 365 的目录同步](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)。
     
-    此外，还必须为以这种方式添加的每个用户提供 Microsoft 365 for business 的许可证。 可以在 "[安装向导](set-up.md)" 中执行此操作，也可以在[Microsoft 365 for business 中向用户分配许可证](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)。
+    此外，还必须为以这种方式添加的每个用户提供 Microsoft 365 for business 的许可证。 可以在 "[安装向导](set-up.md)" 中执行此操作，也可以在[Microsoft 365 for business 中向用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。
     
 ### <a name="2-prepare-mobile-devices"></a>2：准备移动设备
 
@@ -112,4 +112,4 @@ Microsoft 365 for business 适用于最高300个许可证。 如果你需要更�
   
 [管理 microsoft 365 for](manage.md)business[迁移到 microsoft 365 商业](migrate-to-microsoft-365-business.md)版
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

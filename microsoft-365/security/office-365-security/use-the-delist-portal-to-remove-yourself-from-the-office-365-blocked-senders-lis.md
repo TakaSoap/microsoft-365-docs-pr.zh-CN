@@ -1,5 +1,5 @@
 ---
-title: 使用除名门户将自己从阻止的发件人列表中删除
+title: 将自己从阻止的发件人列表中删除
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: 当您尝试向其电子邮件地址在 Microsoft 365 中的收件人发送电子邮件时，收到一条错误消息？ 如果您认为不应收到错误消息，可以使用除名门户将自己从阻止的发件人列表中删除。
-ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您将了解如何使用除名门户将自己从 Microsoft 365 阻止的发件人列表中删除。
+ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636400"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034982"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人列表中删除
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人名单中删除
 
 当您尝试向其电子邮件地址在 Microsoft 365 中的收件人发送电子邮件时，收到一条错误消息？ 如果您认为不应收到错误消息，可以使用除名门户将自己从阻止的发件人列表中删除。
 

@@ -16,13 +16,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 摘要：敏感信息类型的 Office 365 邮件加密策略。
-ms.openlocfilehash: a36ab68eb649c84a46fa96de8ee400632c5c1d26
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何使用 Office 365 邮件加密为您的组织创建敏感的信息类型策略。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1a6baf20d755ed30ce962d7cc6b03f6c9734e4a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626870"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031402"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用邮件加密为您的组织创建敏感的信息类型策略
 

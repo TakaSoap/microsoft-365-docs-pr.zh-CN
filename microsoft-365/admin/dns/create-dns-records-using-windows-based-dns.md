@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 了解如何在 Microsoft 的基于 Windows 的 DNS 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631365"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048839"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用基于 Windows 的 DNS 为 Microsoft 创建 DNS 记录
 
@@ -110,7 +110,7 @@ ms.locfileid: "43631365"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你已有域的 SPF 记录，请不要为 Microsoft 创建一个新的。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
   
 为您的域添加 SPF TXT 记录以帮助防止垃圾邮件。
   
@@ -166,7 +166,7 @@ ms.locfileid: "43631365"
   
 
 1. 从 Microsoft 收集信息。  <br/> 
-2. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。 
+2. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。 
 3. 在 "**域**" 页上，在要验证的域的 "**操作**" 列中，选择 "**启动安装程序**"。 
 4. 在 "**将域添加到 Microsoft** " 页上，选择 "**开始步骤 1**"。 
 5. 在 "**确认您是否拥有**您的域" 页上的 "**请参阅有关使用此步骤执行此步骤的说明**" 下拉列表中，选择 "**常规说明**"。 
@@ -200,7 +200,7 @@ ms.locfileid: "43631365"
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>在本地 Active Directory 中用作 UPN 的不可路由电子邮件地址
 <a name="BKMK_ADNote"> </a>
 
-如果计划将本地 Active Directory 与 Microsoft 同步，则需要确保 Active Directory 用户主体名称（UPN）后缀是有效的域后缀，而不是不受支持的域后缀（如 @contoso）。 如果需要更改 UPN 后缀，请参阅 how [to prepare a 不可路由的域以进行目录同步](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7)。
+如果计划将本地 Active Directory 与 Microsoft 同步，则需要确保 Active Directory 用户主体名称（UPN）后缀是有效的域后缀，而不是不受支持的域后缀（如 @contoso）。 如果需要更改 UPN 后缀，请参阅 how [to prepare a 不可路由的域以进行目录同步](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)。
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 

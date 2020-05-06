@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 806e27f85df0c51ffe019f5fd3c702c165afdd89
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: 了解如何管理审核集，以便您可以在高级电子数据展示事例中分析、查询、查看、标记和导出数据。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: c489fa77c8e2d40d4f50275848465d5e8334c7a1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800053"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034164"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>在高级电子数据展示中管理审阅集
 

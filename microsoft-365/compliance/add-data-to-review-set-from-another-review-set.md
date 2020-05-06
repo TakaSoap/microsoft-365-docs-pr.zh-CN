@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: a6bd4672c75e2e633ede2ad54effb4c6562b822c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何从一个评审集选择文档，并在高级电子数据展示事例中单独处理它们，并在另一组中使用它们。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080172"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034676"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>从另一个评审集向评审集添加数据
 

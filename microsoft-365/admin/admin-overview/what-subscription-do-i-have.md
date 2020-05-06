@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 了解如何通过转到 "订阅" 页来验证您的组织拥有哪些订阅。
 ms.custom: okr_SMB
-ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621426"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045208"
 ---
 # <a name="what-subscription-do-i-have"></a>我订阅了哪些产品？
 
@@ -40,9 +40,9 @@ ms.locfileid: "43621426"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
-2. 您的订阅将显示在 "**产品 & 服务**" 页上，以及订阅名称、有关订阅的信息及其状态。 若要查看简洁视图，请选择 "**表格视图**"。
+2. 您的订阅将显示在 "**产品**" 页上，以及订阅名称、有关订阅的信息及其状态。 若要查看简洁视图，请选择 "**表格视图**"。
 
 ::: moniker-end
   

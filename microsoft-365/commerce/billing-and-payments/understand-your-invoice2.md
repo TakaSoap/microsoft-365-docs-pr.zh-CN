@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何解释 Microsoft 365 商业发票上的费用、帐单和付款信息，以及如何更改采购订单编号。
-ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634964"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045808"
 ---
 # <a name="understand-your-invoice-for-microsoft-365-for-business"></a>了解 Microsoft 365 for business 的发票
 
@@ -104,7 +104,7 @@ ms.locfileid: "43634964"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果处于**表格**视图中，请选择 "**卡片**" 切换视图。
 

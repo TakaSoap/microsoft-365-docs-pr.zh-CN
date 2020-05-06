@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签，能让保留期以特定类型事件发生的时间为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ad6d734da77b6e0a706c4ff0d71b82caf0166c8
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43616016"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949299"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -43,7 +43,7 @@ ms.locfileid: "43616016"
     
 - 如果文档已声明为记录，但其触发事件尚未发生，那么文档会无限期保留（因为无法永久删除记录），直到触发文档保留期的事件发生。
     
-- 基于事件的标签通常会在保留期到期时触发处置评审，这样记录管理者便能手动评审和处置内容。有关详细信息，请参阅[处置评审概述](disposition-reviews.md)。
+- 基于事件的保留标签通常会在保留期到期时触发处置评审，这样记录管理者便能手动评审和处置内容。有关详细信息，请参阅[处置内容](disposition.md)。
     
 基于事件的标签的功能与 Office 365 中的任何标签都相同。若要了解详情，请参阅[标签概述](labels.md)。
 

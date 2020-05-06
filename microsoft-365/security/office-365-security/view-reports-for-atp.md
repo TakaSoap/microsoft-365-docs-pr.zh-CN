@@ -1,5 +1,5 @@
 ---
-title: 查看 Office 365 的报告高级威胁防护、恶意软件报告、网络钓鱼报告、受损帐户、URL 保护状态、威胁报告、报告威胁
+title: 查看高级威胁防护报告
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
-ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708495"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034958"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -132,7 +133,7 @@ ATP 报告包括以下内容：
 
 |||
 |---|---|
-|**报告**|**Details**|
+|**报告**|**详细信息**|
 |**浏览器**或**实时检测**：（Office 365 ATP 计划2客户具有资源管理器;Office 365 ATP 计划1客户具有实时检测。|[威胁资源管理器（和实时检测）](threat-explorer.md)|
 |**电子邮件安全报告**，如主要发件人和收件人报告、欺骗邮件报告和垃圾邮件检测报告。|[查看安全&amp;合规性中心中的电子邮件安全报告](view-email-security-reports.md)|
 |**ATP 安全链接 URL 跟踪**：（这是使用 PowerShell 生成的报告。）此报告显示过去七（7）天的 ATP 安全链接操作的结果。|[UrlTrace cmdlet 参考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace)|

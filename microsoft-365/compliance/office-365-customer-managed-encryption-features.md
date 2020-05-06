@@ -12,13 +12,15 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 摘要：了解 Microsoft 365 中的数据恢复能力。
-ms.openlocfilehash: 365cde7137247e20bb4fd2b57039057398deafd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: 在本文中，您将了解可以在 Microsoft 365 中管理和配置的加密技术。
+ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637338"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033610"
 ---
 # <a name="customer-managed-encryption-features"></a>客户管理的加密功能
 

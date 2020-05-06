@@ -1,6 +1,6 @@
 ---
 title: 泄露通知
-description: 介绍了 Microsoft 服务如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时响应和通知用户。
+description: 了解 Microsoft 服务如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时答复和通知用户。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -14,13 +14,15 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4cf6bb62034708b6ba21fb060949de6f1ac19066
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 988e5e26f3aa983dec481677fe8d9a3f8d331181
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558082"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036100"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 泄露通知
 

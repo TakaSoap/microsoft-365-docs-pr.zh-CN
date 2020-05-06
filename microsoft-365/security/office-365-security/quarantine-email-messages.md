@@ -17,13 +17,15 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 中的隔离会保留可能有害或不需要的邮件。 管理员和最终用户可以访问隔离。
-ms.openlocfilehash: 2e2a83bc2ff2d57cf3310e2cb17a656683dbed47
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 本文介绍了 Microsoft 365 中的隔离。 隔离会保留可能有害或不需要的邮件。
+ms.openlocfilehash: 396be17e07a347ab4d28a3e0b67dd137bda999db
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634432"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033862"
 ---
 # <a name="quarantine-email-messages"></a>隔离电子邮件
 

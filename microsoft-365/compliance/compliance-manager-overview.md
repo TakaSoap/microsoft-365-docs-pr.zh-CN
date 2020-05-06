@@ -10,16 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动。
-ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解 microsoft 服务信任门户中的 Microsoft 合规性管理器，这是一种基于工作流的免费风险评估工具。
+ms.openlocfilehash: cc62e989a3ef0a40a05c5f2e34e6e15dc6e7f399
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632987"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046280"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -42,17 +45,15 @@ ms.locfileid: "43632987"
 - 为您提供一个安全存储库，以便上载和管理与合规性活动相关的证据和其他项目。
 - 生成详尽的 Microsoft Excel 报告，这些报告记录由 Microsoft 和您的组织为审计员、管理机构和其他合规性审阅者执行的合规性活动。
 
-> [!NOTE]
-> 合规性管理器中提供的客户操作是建议;在实现之前，你的组织可以评估这些建议在其各自的法规环境中的有效性。 合规性管理器中提供的建议不应解释为合规性保证。
+  
+> [!IMPORTANT]
+> 合规性分数和合规性管理器中提供的建议不应解释为合规性保证。 根据您的法规环境评估和验证客户控制措施的有效性。 这些服务当前处于预览阶段，并遵循[在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件。 另请参阅[适用于安全性和合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="relationship-to-compliance-score"></a>与合规性分数的关系
 
 [Microsoft 合规性分数（预览版）](compliance-score.md)是 microsoft 365 合规性中心中的一项功能，可提供组织的合规性状况的顶级视图。 它将计算基于风险的分数，以衡量您在帮助降低数据保护和法规标准方面的风险的完成操作的进度。 了解您的总体合规性分数可帮助您的组织了解和管理合规性。 了解[如何计算合规性分数](compliance-score-methodology.md)。
 
 合规性管理器与合规性分数共享相同的后端。 在这两种工具的公共预览阶段，合规性管理器是管理评估和自定义控制实施的地方。 了解有关[合规性分数和合规性管理器之间关系](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)的详细信息。
-  
-> [!IMPORTANT]
-> 合规性分数并不是衡量组织是否遵守任何特定标准或法规的绝对指标。 它表示控制措施的采用力度，这些控制措施可降低个人数据和个人隐私风险。 任何服务都不能保证您符合标准或法规，并且不应以任何方式将合规性分数解释为保证。
 
 ## <a name="compliance-manager-components"></a>合规性管理器组件
 

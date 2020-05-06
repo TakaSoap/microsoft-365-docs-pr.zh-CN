@@ -9,15 +9,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
-ms.openlocfilehash: 536c895a52024845d8e37c5a7c0b63ba1b2c2752
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- M365solutions
+ms.openlocfilehash: b0a791177f201e07d00ecbc4621509c1029c4734
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637184"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002236"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
 :::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="使用云的各种行业的全局视图的图示比拟":::
@@ -197,7 +199,7 @@ Microsoft 365 提供可基于策略和审阅者来审核监督策略审查活动
 
 通信合规性解决方案可监控多个通信渠道，并使用计算机学习模型识别潜在的策略冲突，包括 Office 365 电子邮件、Microsoft Teams、Skype for Business Online、Facebook、Twitter 和 Bloomberg 即时消息。 通信合规性解决方案有助于合规性团队高效地审查消息是否潜在违反了：
 - 公司政策，例如可接受的使用、道德标准和公司特定政策 
-- 机密性或机密业务披露，例如有关机密项目的未经授权通信，如即将进行的收购、合并、收益披露、重组或领导团队变更
+- 敏感或高度敏感的业务披露，例如有关敏感项目的未经授权通信，如即将进行的收购、合并、收益披露、重组或领导团队变更
 - 法规遵从性要求，例如与组织按照 FERC 能源市场法规开展的业务或交易类型有关的员工通信
 
 通信合规性解决方案提供内置威胁、骚扰和猥亵语言分类器，可帮助在审查通信时减少误报。 这将在调查和修正过程中节省审阅者的时间。 它可以帮助审阅者专注于策略警报突出显示的长线程中的特定消息。 这有助于合规性团队更快地识别并补救风险。 它使合规性团队能够轻松地配置和微调策略，根据组织的特定需求调整解决方案，并减少误报。 通信合规性解决方案还可以跟踪一段时间内的用户行为，突出显示危险行为或违反政策的潜在模式。 最后，它提供灵活的内置补救工作流，使审阅者能够根据已定义的公司流程快速采取行动并上报给法律或人力资源团队。

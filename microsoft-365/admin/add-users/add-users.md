@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: 了解如何将用户添加到 Microsoft 365，一次向一个或多个用户添加一个 CSV 文件。
-ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618856"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049467"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>单独或批量添加用户
 
@@ -118,7 +118,7 @@ ms.locfileid: "43618856"
 添加用户后，将收到一封来自 Microsoft Online Services 团队的电子邮件通知。 电子邮件将包含用户的用户 ID 和密码，以便他们可以登录到 Microsoft 365。 您需要告诉新用户其 Microsoft 365 登录信息。 使用正常的过程传递新密码。
 
 > [!NOTE]
->如果通过迁移邮箱创建用户，将需要通过分配许可证来激活用户帐户。 如果不向用户分配许可证，则在30天宽限期后将禁用其邮箱。 请参阅如何使用 Microsoft 365 管理中心[将许可证分配给用户](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。
+>如果通过迁移邮箱创建用户，将需要通过分配许可证来激活用户帐户。 如果不向用户分配许可证，则在30天宽限期后将禁用其邮箱。 请参阅如何使用 Microsoft 365 管理中心[将许可证分配给用户](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>视频：添加和管理管理中心中的用户
 
@@ -128,7 +128,7 @@ ms.locfileid: "43618856"
 
 与新用户共享[员工快速入门指南](https://support.office.com/article/b9700090-ce64-4046-ab92-ce8488a7bc0f.aspx)，实现快速使用，如[电脑或 Mac 上的 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)、[Office 移动应用](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)。
   
-## <a name="need-help"></a>是否需要帮助？
+## <a name="need-help"></a>需要帮助？
 
 [请联系 Microsoft 365 以寻求商业支持](../contact-support-for-business-products.md)。  
 

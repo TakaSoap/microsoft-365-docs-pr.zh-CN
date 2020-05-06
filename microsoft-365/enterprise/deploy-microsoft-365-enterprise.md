@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用于在组织中部署 Microsoft 365 企业版的资源。
-ms.openlocfilehash: 3f6ddb1caf270f2ba261bd7b9c8f8cd938187705
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638232"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002351"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -117,7 +117,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 同时，智能安全功能和产品集成有助于简化管理需求，并最大限度地降低整个 IT 生命周期的总体拥有成本。 
 
-了解核心服务工程和运营（以前称为 Microsoft IT）如何[规划和部署基础](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365)，以支持在安全环境中释放创造力和促进团队合作的应用程序和服务。
+了解核心服务工程和运营（以前称为 Microsoft IT）如何[使用 Microsoft 365 构建现代化工作场所](https://www.microsoft.com/en-us/itshowcase/microsoft-365)。
 
 > [!Note]
 > 此网页仅提供英文版本。

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组过期策略。
-ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 82938caf083cd5b5fa330fd047686ae6a8b5300d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630051"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049175"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 组过期策略
 
@@ -50,10 +50,10 @@ ms.locfileid: "43630051"
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>哪些用户可以配置和使用 Microsoft 365 组过期策略？
 
-|Role|可以执行的操作|
+|角色|可以执行的操作|
 |---------|---------|
 |全局管理员（在 Azure 中，公司管理员）、用户管理员|创建、读取、更新或删除 Microsoft 365 组过期策略设置。|
-|User|续订或[还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)自己拥有的 Microsoft 365 组|
+|用户|续订或[还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)自己拥有的 Microsoft 365 组|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何设置过期策略
 
@@ -77,12 +77,12 @@ ms.locfileid: "43630051"
 
 在组过期之前的30天内，组所有者（或为没有所有者的组指定的电子邮件地址）将会收到一封电子邮件，允许他们轻松地续订组。 如果不续订，他们将在到期前15天收到另一封续订电子邮件。 如果他们仍未续订，则会在过期前一天收到一封电子邮件通知。
 
-如果由于某种原因，所有者或管理员在过期之前没有对组进行续订，则管理员仍可以在到期后的30天内还原组。 有关详细信息，请参阅：[还原已删除的 Microsoft 365 组](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)。
+如果由于某种原因，所有者或管理员在过期之前没有对组进行续订，则管理员仍可以在到期后的30天内还原组。 有关详细信息，请参阅：[还原已删除的 Microsoft 365 组](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group)。
 
 ## <a name="related-articles"></a>相关文章
 
-[保留策略概述](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
+[保留策略概述](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-[向孤立组分配新的所有者](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
+[向孤立组分配新的所有者](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 [配置 Microsoft 365 组过期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

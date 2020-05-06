@@ -1,0 +1,39 @@
+---
+title: 使用 Microsoft 365 为远程工作者提供强大帮助
+author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
+ms.author: josephd
+manager: laurawi
+ms.date: 05/01/2020
+audience: ITPro
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+localization_priority: Priority
+ms.collection:
+- M365-security-compliance
+- Strat_O365_Enterprise
+- remotework
+ms.custom:
+- M365solutions
+description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
+ms.openlocfilehash: da83dc788f31edb56a155f29dd6f14529840f8d5
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44003791"
+---
+# <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
+
+为应对新型冠状病毒（COVID-19）危机，企业可能需要让员工能够从家中安全地访问组织的本地和基于云的信息、工具和资源。 
+
+使用以下步骤来保护和优化对组织的服务器、数据和云服务的访问，并实现最大的工作效率。
+
+1. [借助 MFA 提升登录安全性](empower-people-to-work-remotely-secure-sign-in.md)
+2. [提供对本地应用和服务的远程访问权限](empower-people-to-work-remotely-remote-access.md)
+3. [部署设备、电脑和其他终结点的终结点管理](empower-people-to-work-remotely-manage-endpoints.md)
+4. [部署远程工作者生产力应用和服务](empower-people-to-work-remotely-teams-productivity-apps.md)
+5. [创建 COVID-19 危机交流平台](empower-people-to-work-remotely-communication-venues.md)
+6. [培训远程工作者和处理使用情况反馈](empower-people-to-work-remotely-train-monitor-usage.md)
+

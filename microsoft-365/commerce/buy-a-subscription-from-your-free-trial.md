@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: 购买 Microsoft 365 for business 订阅。 您可以购买您尝试的相同类型的订阅，也可以购买不同的计划。
-ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634940"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045796"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>从免费试用版购买 Microsoft 365 for business 订阅
 
@@ -50,9 +50,9 @@ ms.locfileid: "43634940"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
-2. 在 "**产品 & 服务**" 页上，找到要购买的订阅。 在 "**许可证**" 部分，选择 "**购买订阅**"。
+2. 在 "**产品**" 页上，找到要购买的订阅。 在 "**许可证**" 部分，选择 "**购买订阅**"。
 
 3. 选择订阅的每月或每年承诺，然后选择 "**签出**"。
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: 如果你已将 Microsoft 设置为管理自定义域的 DNS 记录，则了解如何将流量路由到 Microsoft 外部的现有公共网站。
-ms.openlocfilehash: 08a4e505f4e2a50b3e92cae00b62415e6d02551f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 58b58479a2c880cc0193058abc328cc5feea4af1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629115"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048827"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 记录以便利用当前的托管提供商继续托管网站
 
@@ -34,7 +34,7 @@ ms.locfileid: "43629115"
  **如果 microsoft 管理您的 DNS 记录**，若要将流量路由到 microsoft 外部的现有公共网站，在将您的域添加到 microsoft 之后，请执行以下操作： 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新 Microsoft 365 管理中心中的 DNS 记录
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 2. 在" **域** "页面上的域列表中，选择要用于你的网站的域，然后在管理窗格中选择" **DNS 设置** "。 
     
@@ -64,7 +64,7 @@ ms.locfileid: "43629115"
     
 最后，请执行下列操作：
   
-将[您的域的 NS 记录更新](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx)为指向 Microsoft。 
+将[您的域的 NS 记录更新](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)为指向 Microsoft。 
   
 当已将 NS 记录更新为指向 Microsoft 时，您的域将全部设置。 电子邮件将路由到 Microsoft，并且指向你的网站地址的流量将继续转到你的当前网站主机。
  
