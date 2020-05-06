@@ -1,5 +1,5 @@
 ---
-title: 生成搜索查询
+title: 生成搜索查询-电子数据展示
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: 在 Microsoft 365 中使用高级电子数据展示搜索数据时，请使用关键字和条件缩小搜索范围。
-ms.openlocfilehash: c704b338600c715193829e442e1bd6ba7c780455
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 86e763577c24473f8f55c5c8dc26d1853509d50a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079039"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035510"
 ---
 # <a name="build-search-queries"></a>生成搜索查询
 

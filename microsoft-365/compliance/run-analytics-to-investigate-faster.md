@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: c71f3a31c49c92a24d449fae151b858645ad2df6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何使用类似重复检测、电子邮件线程和主题等分析工具来加快调查速度。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: e7c5103adabadf88028351f0314bcdfaa2cd4d0f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081539"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035844"
 ---
 # <a name="run-analytics-to-investigate-faster"></a>运行分析功能以加快调查
 

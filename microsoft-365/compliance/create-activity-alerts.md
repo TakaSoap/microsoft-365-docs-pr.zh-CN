@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: 在安全 & 合规性中心中添加和管理活动警报，以便 Microsoft 365 会在用户执行特定活动时向您发送电子邮件通知。
-ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: 在安全 & 合规性中心中添加和管理活动警报，以便 Microsoft 365 将在用户执行特定活动时向你发送电子邮件通知
+ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943161"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035804"
 ---
 # <a name="create-activity-alerts"></a>创建活动通知
 
@@ -34,7 +34,7 @@ ms.locfileid: "43943161"
 > [!NOTE]
 > 活动通知将被弃用。 我们建议您开始使用安全与合规中心中的通知策略，而不是创建新的活动通知。 警报策略提供了一些附加功能，如创建在任何用户执行指定活动时触发警报的通知策略，以及在安全与合规中心的 "**查看通知**" 页上显示警报的功能。 有关详细信息，请参阅[警报策略](alert-policies.md)。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须在安全 & 合规中心中向您分配 "组织配置" 角色，以管理活动通知。 默认情况下，此角色分配给合规性管理员和组织管理角色组。 有关向角色组添加成员的详细信息，请参阅[为用户提供对安全 & 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
     

@@ -13,12 +13,13 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
-ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1c81fedddf5e3553ec4b24353fac43079305c5b2
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621368"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035038"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -316,7 +317,7 @@ Contoso 将使用 Azure Active Directory 中的 "部门" 属性来定义段，�
 
 Contoso 定义了三种策略，如下表所述：
 
-|Policy  |策略定义  |
+|策略  |策略定义  |
 |---------|---------|
 |策略1：防止销售与信息检索通信     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*销售-研究*"。 当此策略处于活动状态且已应用时，它将有助于阻止销售部门中的用户与研究网段中的用户进行通信。 这是单向策略;它不会阻止研究与销售通信。 为此，需要策略2。      |
 |策略2：防止与销售通信的研究     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*研究-销售*"。 当此策略处于活动状态且已应用时，它将有助于防止在研究网段中的用户与销售部门中的用户进行通信。       |

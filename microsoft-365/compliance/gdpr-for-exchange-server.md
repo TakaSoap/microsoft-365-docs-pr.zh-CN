@@ -1,6 +1,6 @@
 ---
 title: 用于 Exchange Server 的 GDPR
-description: 了解如何解决本地 Exchange Server 中的 GDPR 要求。
+description: 了解如何满足本地 Exchange Server 的 GDPR 要求，如已删除项目保留和自动数据收集。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -10,13 +10,16 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7d7837716cd453ee3331dced52fc82872a09fc8f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c6cf5aa14c9b38f2d6a4323bd2d424d5abd72140
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596439"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036277"
 ---
 # <a name="gdpr-for-exchange-server"></a>用于 Exchange Server 的 GDPR
 

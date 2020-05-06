@@ -15,13 +15,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: 使用本文中的 Windows PowerShell 脚本，可以在 Office 365 或 Microsoft 365 中的合规性中心快速克隆现有的内容搜索。 在克隆搜索时，将创建一个新的搜索（具有新的名称），其中包含与原始搜索相同的属性。 然后，可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行该搜索。
-ms.openlocfilehash: bba683e7ffbad6177a6214ebb36e3aaece7aada7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 使用本文中的 Windows PowerShell 脚本，可以在 Office 365 或 Microsoft 365 中的合规性中心快速克隆现有的内容搜索。
+ms.openlocfilehash: 013a3cd04b665e1da800638a2335adb034878a4a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942935"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035644"
 ---
 # <a name="clone-a-content-search"></a>克隆内容搜索
 
@@ -35,7 +37,7 @@ ms.locfileid: "43942935"
     
 - 减小搜索结果的大小。 例如，如果您的搜索返回过多要导出的结果，则可以克隆搜索，然后根据日期范围添加搜索条件，以减少搜索结果的数量。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本主题中所述的脚本。
     
