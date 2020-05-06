@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文包含适用于高级电子数据展示的发行说明。
-ms.openlocfilehash: e51647e56e7fb29d8f67d36941a2847278c1e1c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 本文包含适用于高级电子数据展示的发行说明，其中包括已知问题、修复问题和新功能。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 45a4647856fef0186840ec5465bb9250e5d78de4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601639"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034616"
 ---
 # <a name="release-notes-for-advanced-ediscovery"></a>适用于高级电子数据展示的发行说明
 
@@ -45,7 +46,7 @@ ms.locfileid: "41601639"
 - DCR：保留通知
 - DCR：电子数据展示中的保管人
 
-## <a name="whats-new"></a>新增功能
+## <a name="whats-new"></a>最近更新
 
 - **在安全 & 合规性中心中重新设计导航**–高级电子数据展示具有新的外观和感觉。 使用高级电子数据展示来管理更多的事例工作流。
 

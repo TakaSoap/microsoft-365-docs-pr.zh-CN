@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户。 决定如何处理用户的电子邮件、OneDrive 内容以及是否保留产品许可证或停止付款。
-ms.openlocfilehash: 1d529627841c648684c8a9fe217a761b29749150
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a179915ae92def2a967dc86378346bb905c923e4
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617244"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049455"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
@@ -61,7 +61,7 @@ ms.locfileid: "43617244"
 |||
 |:-----|:-----|
 |产品许可证  <br/> |您可以从用户中删除该许可证并将其从订阅中删除，以停止对该许可证付款。 如果选择此选项，将从你的订阅中自动删除许可证。  <br/><br/> 如果许可证是通过合作伙伴或批量许可购买**的，则无法删除许可证**。 如果你正在支付年度计划，或者你正在付费周期中间，你将无法从订阅中删除许可证，直到你的承诺完成。  <br/> |
-|OneDrive 内容  <br/> |如果用户将文件保存到 OneDrive，则可以向其他用户授予对这些文件的访问权限。  <br/><br/> 您需要将您想要保留的文件移到为 OneDrive 文件设置的保留期内。 **默认情况下，保留期为30天。** 如果您在删除用户后不在保留期内移动文件，则 OneDrive 内容将被永久删除。 若要增加您为已删除帐户保留的 OneDrive 文件的天数，请参阅[设置已删除用户的 onedrive 保留](https://support.office.com/article/fa1641ea-9f03-4f34-a826-dbd8697e76fe.aspx)值。  <br/><br/> **重要说明！** 如果已删除的用户使用个人计算机从 SharePoint 和 OneDrive 下载文件，则无法擦除它们存储在计算机上的文件。 他们将继续拥有从 OneDrive 中同步的任何文件的访问权限。           |
+|OneDrive 内容  <br/> |如果用户将文件保存到 OneDrive，则可以向其他用户授予对这些文件的访问权限。  <br/><br/> 您需要将您想要保留的文件移到为 OneDrive 文件设置的保留期内。 **默认情况下，保留期为30天。** 如果您在删除用户后不在保留期内移动文件，则 OneDrive 内容将被永久删除。 若要增加您为已删除帐户保留的 OneDrive 文件的天数，请参阅[设置已删除用户的 onedrive 保留](https://docs.microsoft.com/onedrive/set-retention)值。  <br/><br/> **重要说明！** 如果已删除的用户使用个人计算机从 SharePoint 和 OneDrive 下载文件，则无法擦除它们存储在计算机上的文件。 他们将继续拥有从 OneDrive 中同步的任何文件的访问权限。           |
 |电子邮件  <br/> | 授予另一个用户对已删除用户的电子邮件的访问权限会将已删除用户的邮箱转换为共享邮箱。 然后，新邮箱所有者可以访问邮箱并监视新电子邮件。 此外，还将提供以下选项：  <br/>  <br/>更改显示名称-建议您更改显示名称，以便在活动用户列表中识别共享邮箱。  <br/>  打开自动答复-我们已经为你编写了礼貌的自动答复。 您可以向组织中的人员和组织外部的人员发送不同的自动答复。  <br/> <br/> 清除别名-别名是用户的其他电子邮件地址。 有些组织不使用它们，因此，如果你没有任何人，则无需在此处执行任何其他操作。 如果用户确实拥有别名，我们建议将其删除，以便您可以重新使用这些电子邮件地址。 否则，将无法重新使用这些电子邮件地址，直到已删除邮箱的保留期通过。 默认情况下，已删除的邮箱可恢复30天。 有关详细信息，请参阅[Delete or restore user 邮箱 In Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)。 <br/> |
 |Active Directory  <br/> |如果你的公司使用与 Azure AD 同步的 **Active Directory** ，则需要从 Active Directory 中删除用户帐户。 无法通过 Office 365 删除帐户。 有关说明，请参阅[删除用户帐户](https://go.microsoft.com/fwlink/p/?linkid=841808)。  <br/> |
    
@@ -138,7 +138,7 @@ ms.locfileid: "43617244"
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。 如果看不到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。 如果看不到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
 
 2. 选择订阅（如果您有多个订阅），然后选择 "**添加/删除许可证**" 以删除许可证，以便在您雇用其他人之前不支付。  
 

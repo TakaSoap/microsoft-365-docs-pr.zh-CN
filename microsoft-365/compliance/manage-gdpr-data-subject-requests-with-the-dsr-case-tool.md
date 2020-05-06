@@ -1,5 +1,5 @@
 ---
-title: 在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
+title: 在安全 & 合规中心中，使用 DSR case 工具管理 GDPR 数据主体请求
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,12 +18,13 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 向欧盟公民（称为 "数据主体"）授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 DSR 案例来管理您的组织的 DSR 调查。
-ms.openlocfilehash: 7fc786f1e330b03884ef279e210c8f8ef22e9793
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635922"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035866"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
 

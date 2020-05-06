@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '按照此检查表操作，从 Microsoft 365 中删除员工并保护数据。 '
-ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 74da58878259275d9b39849bd917f7ef35dce82b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617118"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045292"
 ---
 # <a name="remove-a-former-employee"></a>删除以前的员工
   
@@ -159,7 +159,7 @@ ms.locfileid: "43617118"
 
 4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
-5. 选择“**保存**”。 
+5. 选择“保存”****。 
     
 6. 注意，切勿删除以前员工的帐户。
  
@@ -175,7 +175,7 @@ ms.locfileid: "43617118"
 
 4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
-5. 选择“**保存**”。 
+5. 选择“保存”****。 
     
 6. 注意，切勿删除以前员工的帐户。
 
@@ -191,7 +191,7 @@ ms.locfileid: "43617118"
 
 4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
-5. 选择“**保存**”。 
+5. 选择“保存”****。 
     
 6. 注意，切勿删除以前员工的帐户。
 
@@ -213,7 +213,7 @@ ms.locfileid: "43617118"
     
 5. 在 "**移动设备详细信息**" 页的 "**移动设备**" 下，选择移动设备，选择 "](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)**擦除数据**![擦除设备"，然后选择 "**阻止**"。 
     
-6. 选择“**保存**”。 
+6. 选择“保存”****。 
     
     **提示** ：请确保从本地 BlackBerry 企业服务删除或禁用用户。还应禁用该用户的所有 BlackBerry 设备。有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。 
     
@@ -318,7 +318,7 @@ ms.locfileid: "43617118"
 
 
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 
 ::: moniker-end

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: '了解在不同区域中为 Microsoft 365 for business 订阅收取的税款的多少。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708127"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045820"
 ---
 # <a name="tax-information"></a>税务信息
 
@@ -114,7 +114,7 @@ ms.locfileid: "43708127"
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>添加 VAT ID（仅限欧盟国家/地区）
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 查找要更新的订阅的订阅卡。
 

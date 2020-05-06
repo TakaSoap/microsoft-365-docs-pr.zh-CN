@@ -1,6 +1,6 @@
 ---
 title: 一般数据保护条例
-description: 有关一般数据保护条例 (GDPR) 的 Microsoft 技术指南
+description: 了解有关一般数据保护条例 (GDPR) 的 Microsoft 技术指南并查找有用的信息
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322551"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036205"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -249,7 +250,7 @@ GDPR 通过一组“数据主体权利”为欧盟居民提供了对其个人数
 
 **公司可能因不合规被罚多少？**
 
-如果公司未能满足特定 GDPR 要求，可能被处以最高 2000 万欧元或全球年营业额的 4％（以较高者为准）的罚款。 如果你不遵守 GDPR 的要求，其他个人补救措施可能会增加你的风险。
+如果公司未能满足特定 GDPR 要求，可能被处以最高 &euro;2,000 万欧元或全球年营业额的 4%（以较高者为准）的罚款。 如果你不遵守 GDPR 的要求，其他个人补救措施可能会增加你的风险。
 
 **我的企业是否需要任命一名数据保护管理人员 (DPO)？**
 

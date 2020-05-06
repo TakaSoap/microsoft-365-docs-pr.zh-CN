@@ -11,13 +11,14 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: 在开始使用 EOP 之前，应注意以下几点。
-ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: 了解 Microsoft Exchange Online Protection （EOP）托管电子邮件筛选服务，包括如何设置 EOP 服务。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ee39e051d3be0e3b27013929bdc3d3a948457c9b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032860"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036532"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,7 +64,7 @@ ms.locfileid: "43032860"
 
 协助 EOP 最终用户管理垃圾邮件的帮助内容包含下列主题：
 
-- [将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)
+- [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)
 
 - 最终用户可以在 Outlook 或 web 上的 Outlook 中向自己的安全发件人列表或阻止发件人列表中添加发件人。 管理员还可以修改用户邮箱中的这些列表。 有关详细信息，请参阅[关于 Outlook 中的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)。
 

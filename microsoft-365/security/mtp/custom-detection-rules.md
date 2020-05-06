@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 威胁防护中创建和管理自定义检测规则
 description: 了解如何创建和管理基于高级搜寻查询的自定义检测规则
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、规则、架构、kusto、microsoft 365、Microsoft 威胁防护、RBAC、权限、MicrosoftDefender ATP
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、规则、架构、kusto、microsoft 365、Microsoft 威胁防护、RBAC、权限、Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: adb8c7dfa0050ef2eb0d59e1e55d07da7aaa3f39
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931728"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034860"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -114,7 +114,7 @@ DeviceEvents
 
 您只能为每个实体类型（邮箱、用户或设备）选择一列。 无法选择查询未返回的列。
 
-### <a name="3-specify-actions-on-files-or-machines"></a>3. 指定对文件或计算机的操作。
+### <a name="4-specify-actions-on-files-or-machines"></a>4. 指定对文件或计算机的操作。
 您的自定义检测规则可以对查询返回的文件或计算机自动执行操作。
 
 #### <a name="actions-on-machines"></a>对计算机执行的操作
@@ -130,7 +130,7 @@ DeviceEvents
 > [!NOTE]
 > Microsoft 威胁防护目前不支持自定义检测规则的允许或阻止操作。
 
-### <a name="4-set-the-rule-scope"></a>4. 设置规则作用域。
+### <a name="5-set-the-rule-scope"></a>5. 设置规则作用域。
 设置作用域以指定规则所涵盖的设备。 作用域会影响检查设备的规则，而不会影响仅检查邮箱和用户帐户或标识的规则。
 
 设置作用域时，可以选择：
@@ -140,7 +140,7 @@ DeviceEvents
 
 仅会查询范围内设备中的数据。 此外，操作只会在这些设备上执行。
 
-### <a name="5-review-and-turn-on-the-rule"></a>5. 查看并打开规则。
+### <a name="6-review-and-turn-on-the-rule"></a>6. 查看并启用规则。
 检查规则后，单击 "**创建**" 以保存该规则。 自定义检测规则将立即运行。 它将根据配置的频率再次运行，以检查匹配项、生成警报并采取响应操作。
 
 ## <a name="manage-existing-custom-detection-rules"></a>管理现有的自定义检测规则

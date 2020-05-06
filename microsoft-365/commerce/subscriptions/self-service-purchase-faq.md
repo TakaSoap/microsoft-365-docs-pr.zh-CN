@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 查找有关自助式购买的常见问题的解答。
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 26b6e11a6c992f85b136d05269cefb80f233b11f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7f91b8067aac5baa3c792dac10c1fdadae55fa2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636543"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046152"
 ---
 # <a name="self-service-purchase-faq"></a>自助服务购买常见问题解答
 
@@ -119,7 +119,7 @@ Microsoft 已为美国的客户启动了针对 Power Platform （Power BI、Powe
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>管理员在哪里查看自我服务购买？
 
-全局和计费管理员可以通过在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中的**计费** > **产品 & 服务**以及通过中央采购购买的所有其他订阅，查看通过自助购买服务购买的订阅。 他们可以将列表筛选为仅通过中央采购购买的订阅，或者包括通过自助购买购买的订阅。
+全局和计费管理员可以通过在 " <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>" 中**付费** > **产品**以及通过中央采购购买的所有其他订阅，查看通过自助购买购买的订阅。 他们可以将列表筛选为仅通过中央采购购买的订阅，或者包括通过自助购买购买的订阅。
 
 管理员可以查看产品、买方名称、购买订阅、到期日期、订单历史记录、采购价和分配的用户。
 

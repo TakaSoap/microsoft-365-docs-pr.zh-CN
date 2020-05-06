@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943539"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046348"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>用于安全团队的前12个任务以支持在家中工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "43943539"
 - Microsoft 365 E3 包括企业移动性 + 安全性（EMS） E3 和 Azure AD P1
 - Microsoft 365 E5 包括 EMS E5 和 Azure AD P2
   
-||**Task**| 所有 Office 365 企业版计划|**Microsoft 365 E3** |**Microsoft 365 E5**|
+||**任务**| 所有 Office 365 企业版计划|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1      |[启用 Azure 多重身份验证（MFA）](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |双面     | [威胁防护](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
@@ -65,11 +65,11 @@ ms.locfileid: "43943539"
 应用这些策略只需要几分钟时间，但在接下来的几天内准备为你的用户提供支持。  
 
 
-|计划  |建议  |
+|套餐  |建议  |
 |---------|---------|
-|Microsoft 365 计划（不包含 Azure AD P1 或 P2）     |[在 AZURE AD 中启用安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值包括用户和管理员的 MFA。   |
-|Microsoft 365 E3 （使用 Azure AD P1）     | 使用[常见的条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br>- [要求对管理员进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止旧版身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 （使用 Azure AD P2）     | 利用 Azure AD Identity Protection，开始通过创建以下两个策略来实现 Microsoft[建议的条件访问和相关策略集](../enterprise/identity-access-policies.md)：<br> - [当登录风险为 "中" 或 "高" 时，需要进行 MFA](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [阻止不支持新式身份验证的客户端](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高风险用户必须更改密码](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 计划（不包含 Azure AD P1 或 P2）     |[在 Azure AD 中启用安全性默认值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。   |
+|Microsoft 365 E3 （使用 Azure AD P1）     | 使用[常用条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br>- [要求对管理员执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 （使用 Azure AD P2）     | 利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](../enterprise/identity-access-policies.md)：<br> - [要求在登录风险为“中等”或“高”时执行 MFA](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [阻止不支持新式身份验证的客户端](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高风险用户必须更改密码](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
@@ -100,7 +100,7 @@ Office 365 ATP：
 - [设置 ATP 安全链接](office-365-security/set-up-atp-safe-links-policies.md)
 - [设置 ATP 安全附件策略](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [设置自定义“不重写”URL 列表](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [设置自定义已阻止 URL 列表](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [设置自定义已阻止 URL 列表](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 你需要与 Exchange Online 管理员和 SharePoint Online 管理员合作，为这些工作负载配置 ATP：
 - [启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -131,7 +131,7 @@ Office 365 ATP：
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6：为电话和平板电脑配置 Intune 移动应用保护
 
 Microsoft Intune 移动应用管理（MAM）允许你管理和保护你的组织在手机和平板电脑上的数据，而无需管理这些设备。 以下是相应的工作方式：
-- 您创建了一个应用程序保护策略（应用），用于确定设备上的哪些应用程序被管理以及允许哪些行为（例如，阻止将来自托管应用程序的数据复制到非托管应用程序）。 为每个 platorm （iOS、Android）创建一个策略。
+- 您创建了一个应用程序保护策略（应用），用于确定设备上的哪些应用程序被管理以及允许哪些行为（例如，阻止将来自托管应用程序的数据复制到非托管应用程序）。 为每个平台（iOS、Android）创建一个策略。
 - 创建应用保护策略后，通过在 Azure AD 中创建条件访问规则来强制实施这些策略，以要求获得批准的应用和应用数据保护。
 
 应用保护策略包括许多设置。 幸运的是，您无需了解每个设置并权衡选项。 通过推荐起始点，Microsoft 可以轻松地应用设置的配置。 [使用应用保护策略的数据保护框架](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)包括三个可供选择的级别。 
@@ -154,7 +154,8 @@ Microsoft Intune 移动应用管理（MAM）允许你管理和保护你的组织
 
 你创建的 Intune 移动应用保护策略与条件访问规则一起使用，以要求获得批准的应用和应用保护，应用于来宾帐户并将帮助保护组织数据。 
 
-**注意**：如果已将电脑注册到设备管理中，以要求符合条件的电脑，则还需要从强制实施设备合规性的条件访问规则中排除来宾帐户。 
+> [!NOTE]
+> 如果你已将电脑注册到设备管理，以要求符合合规性的电脑，你还需要从强制实施设备合规性的条件访问规则中排除来宾帐户。 
 
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8：将电脑注册到设备管理中并要求遵守合规性的电脑

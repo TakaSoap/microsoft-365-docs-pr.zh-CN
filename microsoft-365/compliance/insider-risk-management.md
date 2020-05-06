@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637470"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043303"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的内幕风险管理
 
@@ -79,7 +79,7 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 - 状态
 - Severity
 - 检测时间
-- 情况
+- Case
 - 案例状态
 
 有关详细信息，请参阅[内幕风险管理警报](insider-risk-management-alerts.md)。
@@ -132,4 +132,5 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-准备好为你的组织配置内幕风险管理吗？ 请参阅 "[内幕风险管理入门](insider-risk-management-configure.md)"，配置先决条件、创建策略并开始接收通知。
+- 有关如何准备在组织中启用内幕风险管理策略的说明，请参阅[Plan for 内幕风险管理](insider-risk-management-plan.md)。
+- 请参阅 "[内幕风险管理入门](insider-risk-management-configure.md)"，配置先决条件、创建策略并开始接收通知。

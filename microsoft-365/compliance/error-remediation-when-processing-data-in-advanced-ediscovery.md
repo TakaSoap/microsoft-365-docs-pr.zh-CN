@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5421ba811e401bdd191aee0ddbff21a1286dc9fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何使用错误修正来更正高级电子数据展示中可能阻止内容正确处理的数据问题。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8ada53dd6339541fc39b37903a0f58fd4ad84c8c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074569"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035906"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 
@@ -104,7 +105,7 @@ ms.locfileid: "42074569"
 
 ## <a name="remediating-errors-by-uploading-the-extracted-text"></a>通过上传提取的文本修正错误
 
-有时，不能将文件修正为高级电子数据展示可以解释的本机格式。 但您可以将原始文件替换为包含原文件（在称为*文本覆盖*的过程中）的原始文本的文本文件。 为此，请按照本文中介绍的步骤操作，但不是使用本机格式修正原始文件，而是创建一个包含原始文件中提取的文本的文本文件，然后使用原始文件名上传文本文件。附加了 .txt 后缀。 例如，在错误修正过程中使用文件名335850cc-6602-4af0-acfa-1d14d9128ca2 下载文件。 在本机应用程序中打开文件，复制文本，然后将其粘贴到名为335850cc-6602-4af0-acfa-1d14d9128ca2 的新文件中。 执行此操作时，请务必在将修正的文本文件上载到高级电子数据展示之前，从本地计算机上的修正文件位置中删除原始文件（以本机格式）。
+有时，不能将文件修正为高级电子数据展示可以解释的本机格式。 但您可以将原始文件替换为包含原文件（在称为*文本覆盖*的过程中）的原始文本的文本文件。 为此，请按照本文中介绍的步骤操作，但不是使用本机格式修正原始文件，而是创建一个包含原始文件中提取的文本的文本文件，然后使用附加了 .txt 后缀的原始文件名上传文本文件。 例如，在错误修正过程中使用文件名335850cc-6602-4af0-acfa-1d14d9128ca2 下载文件。 在本机应用程序中打开文件，复制文本，然后将其粘贴到名为335850cc-6602-4af0-acfa-1d14d9128ca2 的新文件中。 执行此操作时，请务必在将修正的文本文件上载到高级电子数据展示之前，从本地计算机上的修正文件位置中删除原始文件（以本机格式）。
 
 ## <a name="what-happens-when-files-are-remediated"></a>修正文件时会发生什么情况
 

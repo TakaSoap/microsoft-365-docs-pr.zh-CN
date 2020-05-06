@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 关闭你的帐户。
-ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942849"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045772"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
@@ -40,7 +40,7 @@ ms.locfileid: "43942849"
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步骤2：取消所有活动订阅
 
-1. 在 "管理中心" 中，转到 "**帐单** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果 "订阅" 列表位于**表格**视图中，则在右侧，选择 "**卡片**"。
 
@@ -52,7 +52,7 @@ ms.locfileid: "43942849"
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>步骤3：删除所有禁用的订阅
 
-1. 在 "管理中心" 中，转到 "**帐单** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果 "订阅" 列表位于**表格**视图中，则在右侧，选择 "**卡片**"。
 

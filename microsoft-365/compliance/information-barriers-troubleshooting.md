@@ -13,12 +13,13 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文作为对信息障碍进行故障排除的指导。
-ms.openlocfilehash: c57f9a14e3089f52ad0eab0a0634d7d58f74e6cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621346"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035028"
 ---
 # <a name="troubleshooting-information-barriers"></a>信息屏障疑难解答
 

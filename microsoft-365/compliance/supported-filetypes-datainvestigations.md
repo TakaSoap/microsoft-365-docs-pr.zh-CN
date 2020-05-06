@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 055104a5b7f60fe54b421e7236143aa9af08b57f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 列出了受支持的文件类型以及可在其中查看哪些查看器以进行数据调查（预览）的表。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: b4aef30c3f2bc15c306a7561bab261bdb0bdcace
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601429"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034536"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>数据调查中支持的文件类型（预览）
 
@@ -29,45 +30,45 @@ ms.locfileid: "41601429"
 
 | Mime 类型 | File 类 | 本机查看器 | 文本查看器 | 批注查看器 | 容器提取 | 扩展 |
 | :- | :- | :- | :- | :- | :- | :- |
-| application/msword | 文档 | 是 | 是 | 是 | 否 | .doc; .dat |
-| application/pdf | 文档 | 是 | 是 | 是 | 否 | .pdf |
-| 应用程序/rtf | 文档 | 是 | 是 | 是 | 否 | .rtf;。首 |
-| application/vnd.ms-excel ms-excel | 文档 | 是 | 是 | 是 | 否 | .xls; .dat |
+| application/msword | Document | 是 | 是 | 是 | 否 | .doc; .dat |
+| application/pdf | Document | 是 | 是 | 是 | 否 | .pdf |
+| 应用程序/rtf | Document | 是 | 是 | 是 | 否 | .rtf;。首 |
+| application/vnd.ms-excel ms-excel | Document | 是 | 是 | 是 | 否 | .xls; .dat |
 | ms-excel 的应用程序/vnd.ms-excel | 生产率/开放式文档格式 | 是 | 是 | 否 | 否 | 。 xlsb |
-| ms-excel 的应用程序/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | 。 xlsm |
+| ms-excel 的应用程序/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | 。 xlsm |
 | ms-excel 的应用程序/vnd.ms-excel | 生产率/开放式文档格式 | 否 | 必需 | 否 | 否 | 。 .xltm |
 | application/vnd.ms-excel ms-outlook | 工作效率 | 否 | 否 | 否 | 否 | .msg |
 | application/vnd.ms-excel ms-outlook-pst | 工作效率/协作 | 否 | 否 | 否 | 可访问 | .pst |
-| application/vnd.ms-excel ms-powerpoint | 文档 | 是 | 是 | 是 | 否 | .ppt; .pps;。尽头 |
-| ms-word 的应用程序/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | .docm |
-| ms-word 的应用程序/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | normal.dotm |
-| oasis 的应用程序/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | odt  |
-| application/vnd.openxmlformats-officedocument.presentationml.presentation | 文档 | 是 | 是 | 是 | 否 | .pptx |
+| application/vnd.ms-excel ms-powerpoint | Document | 是 | 是 | 是 | 否 | .ppt; .pps;。尽头 |
+| ms-word 的应用程序/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | .docm |
+| ms-word 的应用程序/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | normal.dotm |
+| oasis 的应用程序/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | odt  |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | Document | 是 | 是 | 是 | 否 | .pptx |
 | openxmlformats-officedocument 的应用程序/vnd.ms-excel | 生产率/开放式文档格式 | 是 | 是 | 是 | 否 | 。 ppsx |
-| openxmlformats-officedocument 的应用程序/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | 。 .potx |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 文档 | 是 | 是 | 是 | 否 | .xlsx |
-| openxmlformats-officedocument 的应用程序/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | 。 .xltx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.document | 文档 | 是 | 是 | 是 | 否 | .docx |
-| openxmlformats-officedocument 的应用程序/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | 。 .dotx |
-| application/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | .vsd |
+| openxmlformats-officedocument 的应用程序/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | 。 .potx |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Document | 是 | 是 | 是 | 否 | .xlsx |
+| openxmlformats-officedocument 的应用程序/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | 。 .xltx |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Document | 是 | 是 | 是 | 否 | .docx |
+| openxmlformats-officedocument 的应用程序/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | 。 .dotx |
+| application/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | .vsd |
 | application/x-.7z-压缩 | 存档/容器 | 否 | 否 | 否 | 可访问 | 。 .7z |
-| application/xhtml + xml | 文档 | 是 | 是 | 是 | 否 | 的 xhtml |
-| application/xml | 文档 | 是 | 是 | 是 | 否 | .xml |
-| application/x-msaccess | 文档 | 是 | 是 | 是 | 否 | .mdb |
-| application/x-mspublisher | 文档 | 是 | 是 | 是 | 否 | .pub |
+| application/xhtml + xml | Document | 是 | 是 | 是 | 否 | 的 xhtml |
+| application/xml | Document | 是 | 是 | 是 | 否 | .xml |
+| application/x-msaccess | Document | 是 | 是 | 是 | 否 | .mdb |
+| application/x-mspublisher | Document | 是 | 是 | 是 | 否 | .pub |
 | application/x-已压缩的 rar | 存档/容器 | 否 | 否 | 否 | 可访问 | rar |
 | application/zip | 存档/容器 | 否 | 否 | 否 | 可访问 | .zip |
 | image/bmp | 图像 | 是 | 是 | 是 | 否 | .bmp |
 | image/emf | 图像 | 是 | 是 | 是 | 否 | .emf |
-| image/gif | 文档 | 是 | 是 | 是 | 否 | .gif |
+| image/gif | Document | 是 | 是 | 是 | 否 | .gif |
 | image/jpeg | 图像 | 是 | 是 | 是 | 否 | .jpg;. jpeg; .dat;。jpgt |
 | image/png | 图像 | 是 | 是 | 是 | 否 | .png |
 | image/tiff | 图像 | 是 | 是 | 是 | 否 | .tif |
-| image/vnd.ms-excel | 文档 | 是 | 是 | 是 | 否 | dwg;。.dxf |
-| image/wmf | 文档 | 是 | 是 | 是 | 否 | .wmf |
+| image/vnd.ms-excel | Document | 是 | 是 | 是 | 否 | dwg;。.dxf |
+| image/wmf | Document | 是 | 是 | 是 | 否 | .wmf |
 | message//rfc822 | 工作效率/协作 | 否 | 否 | 否 | 否 | .eml |
-| text/csv | 文档 | 是 | 是 | 是 | 否 | .csv |
-| 文本/html | 文档 | 是 | 是 | 是 | 否 | .html;。shtml |
-| text/plain | 文档 | 是 | 是 | 是 | 否 | .txt; .css;。con;. pl; .csv; .dat |
-| 文本/电子名片-联系人 | 文档 | 是 | 是 | 是 | 否 | .vcf |
+| text/csv | Document | 是 | 是 | 是 | 否 | .csv |
+| 文本/html | Document | 是 | 是 | 是 | 否 | .html;。shtml |
+| text/plain | Document | 是 | 是 | 是 | 否 | .txt; .css;。con;. pl; .csv; .dat |
+| 文本/电子名片-联系人 | Document | 是 | 是 | 是 | 否 | .vcf |
 ||||||||

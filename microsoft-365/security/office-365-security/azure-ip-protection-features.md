@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
-description: 为了帮助保护你的信息的初始步骤，从2018年7月起，所有 Azure 信息保护符合条件的租户在默认情况下将启用 Azure 信息保护中的保护功能。 Azure 信息保护中的保护功能以前在 Office 365 中称为 "权限管理" 或 "Azure RMS"。 如果你的组织具有 Office E3 服务计划或更高的服务计划，你现在将通过 Azure 信息保护在我们推出这些功能时获取一个头开始保护信息。
-ms.openlocfilehash: 3efdeefd2008a5ff9f730b879190d1edc015803a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 本文介绍了在 Azure 信息保护中向保护功能推出的更改
+ms.openlocfilehash: 0f08163602ae34689c8e68bbc0c02e072ce89696
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638268"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035600"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure 信息保护中的保护功能向现有租户推出
 
@@ -55,7 +57,7 @@ Office 365 邮件加密利用了 Azure 信息保护中的保护功能。 在对 
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>是否可以将 Azure 信息保护用于 Active Directory 权限管理服务（AD RMS）？
 
-不正确。 这不是一种受支持的部署方案。 在不考虑其他自愿退出步骤的情况下，某些计算机可能会自动开始使用 Azure 权限管理服务，同时还会连接到 AD RMS 群集。 此方案不受支持且具有不可靠的结果，因此，在接下来的30天内，在我们推出这些新功能之前，请务必选择退出此更改。 有关如何选择退出的信息，请参阅 "我使用 AD RMS，如何选择退出？" ”中所述的过程安装本地化文件。 如果你更喜欢迁移，请参阅[从 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+否。 这不是一种受支持的部署方案。 在不考虑其他自愿退出步骤的情况下，某些计算机可能会自动开始使用 Azure 权限管理服务，同时还会连接到 AD RMS 群集。 此方案不受支持且具有不可靠的结果，因此，在接下来的30天内，在我们推出这些新功能之前，请务必选择退出此更改。 有关如何选择退出的信息，请参阅 "我使用 AD RMS，如何选择退出？" ”中所述的过程安装本地化文件。 如果你更喜欢迁移，请参阅[从 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>如何知道我是否在使用 AD RMS？
 

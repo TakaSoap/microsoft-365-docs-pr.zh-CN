@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799975"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952625"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -113,7 +113,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 ![Office 应用中的自动标签的标签条件](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> 目前，“**分类器**”选项处于有限预览状态，要求你向 Microsoft 提交表单，以便为你的租户启用此功能。 有关详细信息，请参阅博客文章[宣布在 Office 应用中推出使用内置分类器的自动标签 - 有限预览](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)。
+> 目前，“分类器”**** 选项处于有限预览状态，要求你向 Microsoft 提交表单，以便为你的租户启用此功能。 有关详细信息，请参阅博客文章[宣布在 Office 应用中推出使用内置分类器的自动标签 - 有限预览](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)。
 
 当自动应用此敏感度标签时，用户会在其 Office 应用中看到通知。 例如：
 
@@ -131,9 +131,9 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ![实例计数和匹配准确度的选项](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifers-for-a-label"></a>为标签配置分类器
+### <a name="configuring-classifiers-for-a-label"></a>为标签配置分类器
 
-当你选择“**分类器**”选项时，请选择一个或多个内置分类器：
+当你选择“分类器”**** 选项时，请选择一个或多个内置分类器：
 
 ![分类器和敏感度标签选项](../media/sensitivity-labels-classifers.png)
 
@@ -141,7 +141,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 在预览期间，以下应用支持敏感度标签的分类器：
 
-- 适用于 Windows 的 Microsoft 365 企业应用版桌面应用，来自 [Office 预览体验成员](https://office.com/insider)：
+- 适用于 Windows 的 Microsoft 365 企业应用版桌面应用程序，来自 [Office 预览体验成员](https://office.com/insider)：
     - Word
     - Excel
     - PowerPoint
@@ -188,7 +188,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略
 > [!NOTE]
-> 自动标记策略将在公共预览版中逐步向租户推出，并且可能会发生更改。
+> 自动标记策略处于公共预览版状态，可能会发生更改。
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自动标记策略的先决条件
 
@@ -205,7 +205,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 - 你可以为自动标记策略选择一个或多个[已创建和发布](create-sensitivity-labels.md)（至少向一个用户发布）的敏感度标签。 对于这些标签：
     - 启用或禁用 Office 应用标签设置中的自动标记无关紧要，因为该标签设置会补充自动标记策略，如简介中所述。 
     - 如果要用于自动标记的标签被配置为使用视觉标记（页眉、页脚、水印），请注意它们不会应用于文档。
-    - 如果标签应用了加密，则必须将其配置为**立即应用权限**设置。
+    - 如果标签应用了加密，则必须将其配置为“立即分配权限”**** 设置。
 
 ### <a name="learn-about-simulation-mode"></a>了解模拟模式
 
@@ -241,7 +241,6 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     
     ![“自动标记(预览)”选项卡](../media/auto-labeling-tab.png)
     
-    此新选项卡仍在向租户推出。 如果看不到它，请几天后再试。
 
 3. 选择“**+ 创建策略**”。
 
@@ -278,7 +277,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 12. 对于**决定立即或稍后运行策略模拟**页面：如果现在准备好运行自动标记策略，在模拟模式中选择“**在模拟模式中运行策略**”。 否则，请选择“**保持禁用策略**”。 选择“**下一步**”。 
 
-13. 对于“**摘要**”页面：查看自动标记策略的配置并进行所需的任何更改，然后完成向导。
+13. 对于“摘要”**** 页面：查看自动标记策略的配置并进行所需的任何更改，然后完成向导。
     
     与 Office 应用的自动标记不同，无单独的发布选项。 但是，与发布标签一样，自动标记策略最多需要 24 小时才能在整个组织中复制。
 

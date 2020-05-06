@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft 365 中部署威胁防护功能
-description: 了解如何在 Microsoft 365 E5 中部署威胁防护功能。
+description: 了解如何在 Microsoft 365 E5 中部署威胁保护服务和功能。
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: ff6854636c13e6c1ea40cf4cc6fa39d7b2b340b4
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 81b069bb5c316bea211bee98c293f2d1fcdd2422
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016092"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046258"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中部署威胁防护功能
 
@@ -48,7 +48,16 @@ Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和
 
 ![M365 威胁防护信号](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-具有多个安全团队的组织可以并行实施这些功能。
+|解决方案/功能  |说明  |
+|---------|---------|
+|多重身份验证和条件访问     |针对泄露的标识和设备进行防护。 从这种保护开始，因为它是基础。 本指南中建议的配置包括作为先决条件的 Azure AD 标识保护。     |
+|Azure 高级威胁防护     |  一种基于云的安全解决方案，利用本地 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕行为。 将重点放在接下来，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。       | 
+|Office 365 高级威胁防护     | 保护您的组织免受电子邮件、链接（Url）和协作工具带来的恶意威胁的侵扰。 针对恶意软件、网络钓鱼、欺骗和其他攻击类型的保护。 这是建议的下一步，因为更改控制、从委任系统迁移设置以及其他注意事项可能需要更长时间才能部署。 <br><br>注意：请确保同时配置所有 Office 365 订阅（Exchange Online Protection）中包含的威胁防护功能。       |
+|Microsoft Defender 高级威胁防护    | 一种 endpoint protection 平台，可帮助防止、检测、调查和响应高级威胁。 此过程的部署时间较长，但如果其他管理员负责，则可以与其他功能并行执行。   |
+|Microsoft 云应用安全     |   用于发现、调查和治理的云访问安全代理。 你可以在早期启用此，以开始收集数据和见解。 在您的 SaaS 应用程序中实施信息和其他目标保护涉及规划，并可能需要更多时间。       | 
+
+> [!TIP]
+> 具有多个安全团队的组织可以并行实施这些功能。
 
 ## <a name="deploy-your-threat-protection-solution"></a>部署威胁防护解决方案
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 12b3f0c94a3d391d5116af0c6eba366550a83040
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85fa3c8a8e8ac2dda725227235512385bf991c12
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602079"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036351"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>支付卡行业 (PCI) 数据安全标准 (DSS)
 
@@ -44,7 +44,8 @@ Microsoft 由经认可的合格安全性评估师 (QSA) 完成 PCI DSS 年度评
 - Flow 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Graph
 - Intune
-- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
 - OneDrive for Business 和 SharePoint Online（仅限美国）
 
@@ -55,7 +56,7 @@ Microsoft 由经认可的合格安全性评估师 (QSA) 完成 PCI DSS 年度评
 
 ## <a name="get-your-pci-dss-solution-running-on-azure"></a>获取 Azure 上运行的 PCI DSS 解决方案
 
-借助 Azure 安全性和合规性 PCI DSS 蓝图，在云中更快地构建和部署 PCI DSS 解决方案。 获取参考体系结构、部署指南、控制实现映射、自动化脚本等。 [开始使用 Azure PCI DSS 蓝图](https://aka.ms/pciblueprint)
+借助 Azure 安全性和合规性 PCI DSS 蓝图，在云中更快地构建和部署 PCI DSS 解决方案。 获取参考体系结构、部署指南、控制实现映射、自动化脚本等。 [开始使用 Azure PCI DSS 蓝图](https://aka.ms/pciblueprint)。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 

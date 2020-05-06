@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护您的客户和客户的敏感信息。
-ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 523d020587bcf16e46263b88ee7654b9c786e7a2
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635116"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048057"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
@@ -54,7 +54,7 @@ DLP 提供了许多不同区域设置的多种可供使用的策略模板。 例
     
 4. 在 "**诉讼保留**" 对话框中，可以在 "**诉讼保留持续时间**" 字段中指定诉讼保留期限。 如果要放置无限保留，请将该字段留空。 您还可以添加注释，并将邮箱所有者定向到网站，您可能需要详细了解诉讼保留。 \>**保存**。
     
-**保留：** 您可以启用自定义保留策略，例如，在保留期结束时保留特定时间或永久删除内容。 若要了解详细信息，请参阅[保留策略概述](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)。
+**保留：** 您可以启用自定义保留策略，例如，在保留期结束时保留特定时间或永久删除内容。 若要了解详细信息，请参阅[保留策略概述](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。
 
 ## <a name="set-up-sensitivity-labels"></a>设置敏感度标签
 

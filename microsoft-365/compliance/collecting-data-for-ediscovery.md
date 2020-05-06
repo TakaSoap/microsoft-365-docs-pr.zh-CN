@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: 了解如何使用高级电子数据展示中的搜索工具在调查中标识要查看的文档集。
+ms.custom: seo-marvel-2020
+ms.openlocfilehash: 9d8a88ddfc6bcb30f8678f39ad2bc4fbaf717ecc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799935"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034346"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>在高级电子数据展示中收集事例数据
 
@@ -41,7 +42,7 @@ ms.locfileid: "43799935"
 
 完成搜索估计后，选择搜索以显示弹出页面，这将显示有关搜索结果的一些高级统计信息。 在这种情况下，"**统计**" 按钮将处于活动状态。 您可以选择它以查看搜索统计信息，例如：
 
-- 总结
+- Summary
 - 顶部位置
 - Queries
 

@@ -12,13 +12,14 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: 使用本文作为对可在信息屏障策略中使用的各种属性的参考。
-ms.openlocfilehash: ff7b6e22370c086f6b685fce4de8b61396017bf9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 这是有关用于定义信息屏障段的 Azure Active Directory 用户帐户属性的参考文章。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600619"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035048"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>信息屏障策略的属性
 
@@ -88,10 +89,10 @@ Azure Active Directory 中的某些属性可用于分段用户。 在定义段�
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
-|UserPrincipalName  |UserPrincipalName  |
-|邮件   |WindowsEmailAddress    |
+|UserPrincipalName    |UserPrincipalName    |
+|邮件    |WindowsEmailAddress    |
 |说明    |说明    |
-|MemberOf   |MemberOfGroup  |
+|MemberOf    |MemberOfGroup    |
 
 ## <a name="related-topics"></a>相关主题
 

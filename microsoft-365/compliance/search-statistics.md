@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 搜索统计信息是验证搜索结果并在 "搜索详细信息" 弹出页面上的 "状态" 下显示的有效方式。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dc6aea96e86388ae7ecfa0fa545bc5571eeff0cd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081362"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035834"
 ---
 # <a name="search-statistics"></a>搜索统计信息
 
@@ -39,7 +40,7 @@ ms.locfileid: "42081362"
 
 ![搜索统计信息下拉列表](../media/SearchStatisticsDropDownList.png)
 
-## <a name="summary"></a>总结
+## <a name="summary"></a>Summary
 
 在**摘要**视图中，你可以看到按位置类型划分的搜索结果（例如，位置包括 Exchange 邮箱和 SharePoint 网站）。 将为每个位置类型显示以下信息：
 

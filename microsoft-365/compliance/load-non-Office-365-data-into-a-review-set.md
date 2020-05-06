@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 将非 Microsoft 365 数据导入到高级电子数据展示事例中的审阅集。
-ms.openlocfilehash: 823ecbdbd50adbb1925bcda154db2c1b8ba24cca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何将非 Microsoft 365 数据导入到评审集，以便在高级电子数据展示事例中进行分析。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632637"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034420"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>将非 Microsoft 365 数据加载到评审集中
 
 并非所有需要在高级电子数据展示中进行分析的文档都位于 Microsoft 365 中。 使用高级电子数据展示中的非 Microsoft 365 数据导入功能，可以将不在 Microsoft 365 中的文档上传到审阅集。 本文介绍如何将非 Microsoft 365 文档转换为高级电子数据展示以进行分析。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 使用本文中介绍的 "上传非 Microsoft 365" 功能，您需要具备以下条件：
 
