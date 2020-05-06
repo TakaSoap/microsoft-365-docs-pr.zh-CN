@@ -19,13 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: 创建自动将项目移动到用户存档邮箱的存档和删除策略。
-ms.openlocfilehash: b8d156ec9340e644e8f0bf213f04135e756421eb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: 在 Microsoft 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0d2dd6d95018742247655f085553ad6583f8843d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943575"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034314"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 
@@ -47,7 +48,7 @@ ms.locfileid: "43943575"
     
 您可以按照本文中的部分或全部步骤操作，为自己组织中的邮箱设置存档和删除策略。 我们建议您先对几个邮箱测试此过程，然后再在组织中的所有邮箱上实施此过程。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 您必须是组织中的全局管理员才能执行本主题中的步骤。 
     

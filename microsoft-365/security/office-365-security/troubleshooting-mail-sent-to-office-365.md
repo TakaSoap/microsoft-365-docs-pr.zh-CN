@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: 本文提供了在尝试向 Microsoft 365 中的收件箱发送电子邮件时遇到问题的发件人故障排除信息，以及向客户批量发送电子邮件的最佳实践。
-ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 本文提供有关将电子邮件发送到 Microsoft 365 中的收件箱的问题的疑难解答信息 & 批量邮寄到 Microsoft 365 客户的最佳实践。
+ms.openlocfilehash: 849707ee8b703f13ac12ecb414a8ed9ea6421704
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631141"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036736"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>向 Office 365 发送故障排除邮件
 

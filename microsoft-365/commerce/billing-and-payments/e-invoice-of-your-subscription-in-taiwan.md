@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: 了解适用于中国台湾的 Microsoft 365 for business 电子发票。
-ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632703"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045876"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>了解 Microsoft 365 for business （中国台湾）的电子发票
 
@@ -55,7 +55,7 @@ Microsoft 将在**9 月15日**将当前 computerized 发票替换为电子发票
   
 创建帐户后，您可以通过执行以下步骤，通过管理中心更新 VAT ID：
   
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
     
 2. 选择一个订阅，然后选择 "**更多操作**"。
     

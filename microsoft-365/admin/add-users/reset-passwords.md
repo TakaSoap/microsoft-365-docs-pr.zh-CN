@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '了解如何在 Microsoft 365 for business 订阅中重置用户的密码。 '
-ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626942"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049443"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -93,7 +93,7 @@ ms.locfileid: "43626942"
     
 - 请求企业中的其他全局管理员为您重置密码。
     
-- 或者，请[致电 Microsoft 支持部门](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_)。 
+- 或者，请[致电 Microsoft 支持部门](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products)。 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同时为组织中的所有人重置所有业务密码
 <a name="bkmk_forgot"> </a>
@@ -117,9 +117,9 @@ ms.locfileid: "43626942"
 
 使用 PowerShell! 请查看这篇由 Eyal Doron 发表的文章：[使用 PowerShell 管理密码](https://go.microsoft.com/fwlink/?linkid=853696)。
   
-相关文章：[为多个用户帐户设置密码](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password)。
+相关文章：[为多个用户帐户设置密码](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
   
-有关概述信息，请参阅[PowerShell For Microsoft 365 administrators](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx)。
+有关概述信息，请参阅[PowerShell For Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>为企业中的所有用户强制更改密码
 <a name="bkmk_forgot"> </a>
@@ -144,4 +144,4 @@ ms.locfileid: "43626942"
 
 [删除以前的员工](remove-former-employee.md)
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 通过 Microsoft 365 中的记录管理，你可以将组织的特定保留计划应用到文件计划中，以管理保留、记录声明和处置，从而支持完整的内容生命周期。
-ms.openlocfilehash: e74c7d9e5f01b49805fccdfac2c719835354b97a
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106078"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949245"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的记录管理
 
@@ -30,17 +30,17 @@ ms.locfileid: "43106078"
 
 记录管理解决方案支持以下元素：
 
-- **将内容标记为记录**。 发布[记录标签](records.md)以供最终用户应用，或[将记录标签自动应用于](labels.md#applying-a-retention-label-automatically-based-on-conditions)包含特定敏感信息、关键字或内容类型的项目。
+- **将内容标记为记录**。 创建并发布将内容声明为[记录](records.md)的保留标签，可由最终用户应用，或通过标识敏感信息、关键字或内容类型[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)。
 
 - **使用文件计划迁移和管理保留计划**，并使用[文件计划管理器](file-plan-manager.md)引入现有保留计划，或使用文件描述符和扩展层次结构构建新保留计划。
 
-- **在记录标签中建立保留和删除策略**。 根据各种因素（包括上次修改日期或创建日期）定义[保留](retention-policies.md#retaining-content-for-a-specific-period-of-time)和[处置](retention-policies.md#deleting-content-thats-older-than-a-specific-age)期间。
+- **建立保留和删除策略**。 根据各种因素（包括上次修改日期或创建日期）定义[保留](retention-policies.md#retaining-content-for-a-specific-period-of-time)和[处置](retention-policies.md#deleting-content-thats-older-than-a-specific-age)期间。
 
 - 使用[基于事件的保留](event-driven-retention.md)**触发基于事件的保留**。
 
-- 使用[处置评审](disposition-reviews.md)**审核并验证处置**。
+- 使用[处置评审](disposition.md#disposition-reviews)和[记录删除](disposition.md#disposition-of-records)证明**审核并验证处置**。
 
-- **使用处置评审审核已处置的项目**，并[导出处置报告](disposition-reviews.md#export-the-disposition-items)以供进一步验证和报告。
+- 使用[导出选项](disposition.md#filter-and-export-the-views)**导出有关所有已处置项的信息**。
 
 - 为组织中的记录管理器功能**设置特定权限**，以便[具有正确的访问权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 

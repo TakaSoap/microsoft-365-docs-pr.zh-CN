@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 通过在 FAQ 中查找问题的答案，了解有关域的详细信息。
 ms.custom: okr_smb
-ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 0b9b79c3cab74f4f809f0bd96ed5a51c17282ccd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919477"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048157"
 ---
 # <a name="domains-faq"></a>关于域的常见问题解答
 
@@ -366,7 +366,7 @@ ms.locfileid: "43919477"
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>如何验证我的非盈利或教育状态？
 
-1. 在[管理中心](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx)中选择 "**设置**" 以启动向导。 （请务必先登录到 Office 365。） 
+1. 在[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)中选择 "**设置**" 以启动向导。 （请务必先登录到 Office 365。） 
     
 2. 若要成为你的学校的管理员，请选择 "在 Office 365 中**成为管理员**" 选项。 
     
@@ -424,7 +424,7 @@ ms.locfileid: "43919477"
         
     4. 在打开的窗口中，选择 "**内部中继**"。 
         
-    5. 选择“**保存**”。 此设置可能需要几分钟时间才能生效。 
+    5. 选择“保存”****。 此设置可能需要几分钟时间才能生效。 
     
 4. （可选）取消阻止现有的电子邮件服务器
     

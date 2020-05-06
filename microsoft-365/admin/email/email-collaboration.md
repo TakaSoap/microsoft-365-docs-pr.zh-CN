@@ -25,12 +25,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: 了解各种类型的组以及如何将它们与 Microsoft 365 的各种协作功能一起使用。
-ms.openlocfilehash: 09dce9a26d22989fecf828bf91c0e8ce9583a589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b5b8030b1f16562007ac2786dca776db6482eecb
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628863"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048791"
 ---
 # <a name="email-collaboration"></a>电子邮件协作
 
@@ -47,7 +47,7 @@ Microsoft 365 鼓励通过 Outlook 中的组、通讯组列表（也称为通讯
 |:-----|:-----|
 |Outlook 中的组  <br/> |在 Microsoft 365 中的所有应用程序中工作的共享工作区。 包括共享收件箱、日历和用于存储文件的 OneDrive for Business 网站。 用户可以从其电子邮件或日历中创建、查找和加入 Outlook 中的组。 使用 Exchange Online 或 Microsoft 365 订阅的新用户和现有用户可以使用 Outlook 中的组。  <br/> |
 |共享邮箱  <br/> |供选定用户阅读和发送电子邮件以及共享公用日历的邮箱。共享邮箱还可以充当客户可用于咨询贵公司相关信息的常规电子邮件地址（如 info@contoso.com 或 sales@contoso.com）。在共享邮箱上启用"发送方式"权限时，从邮箱中发送的电子邮件将使用这个常规地址（例如 sales@contoso.com )。  <br/> |
-|通讯列表（也称为通讯组）  <br/> |用于同时将电子邮件分发给两个或更多个用户。通讯组也称为启用邮件的通讯组。通讯组的一种变体（称为动态通讯组）是指启用邮件的 Active Directory 组对象，用于向一组数量众多且动态多变的收件人发送电子邮件。确切收件人由您指定的筛选器和条件确定，例如特定区域设置的所有成员或所有全职员工。<br/><br/> Outlook 中的 Microsoft 365 组提供了比通讯组更强大的协作解决方案。 若要了解详细信息，请参阅[为什么应将通讯组列表升级到 Outlook 中的组](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)，并将[通讯组列表迁移到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)。  <br/> |
+|通讯列表（也称为通讯组）  <br/> |用于同时将电子邮件分发给两个或更多个用户。通讯组也称为启用邮件的通讯组。通讯组的一种变体（称为动态通讯组）是指启用邮件的 Active Directory 组对象，用于向一组数量众多且动态多变的收件人发送电子邮件。确切收件人由您指定的筛选器和条件确定，例如特定区域设置的所有成员或所有全职员工。<br/><br/> Outlook 中的 Microsoft 365 组提供了比通讯组更强大的协作解决方案。 若要了解详细信息，请参阅[为什么应将通讯组列表升级到 Outlook 中的组](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)，并将[通讯组列表迁移到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)。  <br/> |
 |公用文件夹  <br/> |为共享访问而设计，公用文件夹提供了一种简单有效的方式来收集、整理和与组织中的其他人共享信息。 公用文件夹按易于浏览并且在 Outlook 文件夹视图中始终可见的深入层次结构组织内容。 公用文件夹可以启用邮件并添加为通讯组的成员。 发送到通讯组的电子邮件将自动添加到公用文件夹以便存档或以后参考。 当您没有 SharePoint Online 订阅时，公用文件夹还提供简单的文档共享。  <br/> |
    
 ## <a name="which-collaboration-tool-to-use"></a>应该使用哪种协作工具？

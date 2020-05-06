@@ -14,13 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-description: 在运行搜索之前，请检查关键字查询的内容搜索是否存在错误和拼写错误（如不受支持的字符和小写布尔运算符）。 如果发现错误，我们将建议已修改的查询。
-ms.openlocfilehash: bd87faa774f8449833287ff0c583f9e15a4298ff
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何检查关键字查询的内容搜索是否有错误和拼写错误，例如不受支持的字符和小写的布尔运算符。
+ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942905"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035624"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>检查内容搜索查询中是否有错误
 

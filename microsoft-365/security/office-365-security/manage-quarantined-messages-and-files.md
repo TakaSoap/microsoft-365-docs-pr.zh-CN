@@ -15,17 +15,19 @@ search.appverid:
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
-description: 管理员可以查看、释放和删除所有用户的所有类型的隔离邮件。 只有管理员可以管理被隔离为恶意软件的邮件、高可信度的网络钓鱼或邮件流规则（传输规则）的结果。
-ms.openlocfilehash: 1ae64b71d29f9e2d973f5a73cc19790fe0736913
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您将了解管理员如何管理 Office 365 中用户的隔离邮件和文件。
+ms.openlocfilehash: e69887b54b3e892775c16fa3e306da3b17ab7db3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635349"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036169"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator"></a>以管理员身份管理隔离的邮件和文件
 
-在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）组织中，隔离会在 Microsoft 365 组织中保留可能有害或不需要的邮件。 有关详细信息，请参阅 [Office 365 中的隔离功能](quarantine-email-messages.md)。
+无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [Office 365 中的隔离功能](quarantine-email-messages.md)。
 
 管理员可以查看、释放和删除所有用户的所有类型的隔离邮件。 只有管理员可以管理被隔离为恶意软件的邮件、高可信度的网络钓鱼或邮件流规则（也称为传输规则）的结果。 管理员还可以向 Microsoft 报告误报。
 
@@ -35,7 +37,7 @@ ms.locfileid: "43635349"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开安全 & 合规中心，请转<https://protection.office.com>到。 若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。
+- 若要打开安全与合规中心，请转到 <https://protection.office.com>。 若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
@@ -105,7 +107,7 @@ ms.locfileid: "43635349"
 
      - **Policy**：邮件符合邮件流规则的条件（也称为传输规则）。
 
-     - **群发**
+     - **大量邮件**
 
      - **诈骗**
 
@@ -189,7 +191,7 @@ ms.locfileid: "43635349"
 
   - 只有未收到邮件的收件人才会显示在潜在收件人列表中。
 
-- **查看邮件头**：选择此链接可查看邮件头文本。 若要深入分析标头字段和值，请将邮件头文本复制到剪贴板，然后选择 " **Microsoft 邮件头分析器**" 以转到远程连接分析器（右键单击并选择 "**在新选项卡中打开**"，如果您不想让 Microsoft 365 完成此任务）。 将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”****：
+- **查看邮件头**：选择此链接可查看邮件头文本。 若要深入分析邮件头字段和值，请将邮件头文本复制到剪贴板，然后选择“Microsoft 邮件头分析器”****，即可转到远程连接分析器（如果希望在不离开 Microsoft 365 的情况下完成这项任务，请右键单击并选择“在新标签页中打开”****）。 将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”****：
 
 - **预览邮件**：在显示的浮出控件窗格中，选择以下选项之一：
 

@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: 了解如何验证您的域并为电子邮件、Skype for Business Online 和其他服务（1&1 IONOS for Microsoft）设置 DNS 记录。
-ms.openlocfilehash: 2b029856617c853047a0c1da9aeb0f07a158a88e
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 1c32e15be8bfdf9ea29647af511d0f8ff0ac0b57
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939375"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049139"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>在 1&1 IONOS 为 Microsoft 创建 DNS 记录
 
  如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
 > [!CAUTION]
-> 请注意，1&1 IONOS 不允许域同时具有 MX 记录和顶级自动发现 CNAME 记录。 这将限制为 Microsoft 配置 Exchange Online 的方式。 有一种解决方法，但我们建议您在创建子域的过程 1&1 **IONOS 时使用它。** >[如果您选择在 1](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx)&1 IONOS 管理您自己的 Microsoft DNS 记录，请按照本文中的步骤验证您的域，并为电子邮件、Skype For business Online 等设置 DNS 记录。 
+> 请注意，1&1 IONOS 不允许域同时具有 MX 记录和顶级自动发现 CNAME 记录。 这将限制为 Microsoft 配置 Exchange Online 的方式。 有一种解决方法，但我们建议您在创建子域的过程 1&1 **IONOS 时使用它。** >[如果您选择在 1](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)&1 IONOS 管理您自己的 Microsoft DNS 记录，请按照本文中的步骤验证您的域，并为电子邮件、Skype For business Online 等设置 DNS 记录。 
   
 在 1&1 IONOS 中添加这些记录后，您的域将设置为与 Microsoft 服务一起使用。
   
@@ -47,7 +47,7 @@ ms.locfileid: "43939375"
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
   
-请按下列步骤操作或[观看视频（从 0:42 开始）](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请按下列步骤操作或[观看视频（从 0:42 开始）](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
   
 1. 若要开始，请使用[此链接](https://my.1and1.com/)转到域页面 1&1 IONOS。 You'll be prompted to log in.
     
@@ -68,7 +68,7 @@ ms.locfileid: "43939375"
     |**类型** <br/> |**前缀** <br/> |**名称值** <br/> |
     |TXT  <br/> |（将此字段留空）  <br/> |MS=ms *XXXXXXXX*  <br/> 注意：这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. 选择“**保存**”。
+7. 选择“保存”****。
     
 8. 再次选择 "**保存**"。 
     
@@ -95,7 +95,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-请执行以下步骤或[观看视频（从3:22 开始）](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从3:22 开始）](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
   
 > [!NOTE]
 > 如果你已向1und1.de 注册，请[在此处登录](https://go.microsoft.com/fwlink/?linkid=859152)。 
@@ -116,11 +116,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**MX 1**|**优先级**|
     |:-----|:-----|
-    | *\<域密钥\>*  .mail.protection.outlook.com  <br/>  注意：从你\<的 Microsoft 帐户\>获取你的域密钥。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | 
+    | *\<域密钥\>*  .mail.protection.outlook.com  <br/>  注意：从你\<的 Microsoft 帐户\>获取你的域密钥。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 
     
     ![1和 1-配置2和3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. 选择“**保存**”。<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-配置-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. 选择“保存”****。<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-配置-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
 9. 在 "**编辑 DNS 设置**" 对话框中，选择 **"是"**。<br/>![在 "编辑 DNS 设置" 对话框中选择 "是"](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -134,7 +134,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 ### <a name="basic-cname-records"></a>基本 CNAME 记录
 
-请执行以下步骤或[观看视频（从3:57 开始）](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从3:57 开始）](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
   
 > [!NOTE]
 > 如果你已向1und1.de 注册，请[在此处登录](https://go.microsoft.com/fwlink/?linkid=859152)。 
@@ -175,7 +175,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 11. 选中 "**我知道的已知**免责声明" 对应的复选框。<br/>![1&amp;1-BP-配置-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. 选择“**保存**”。<br/>![1&amp;1-BP-配置-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. 选择“保存”****。<br/>![1&amp;1-BP-配置-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### <a name="additional-cname-records"></a>其他 CNAME 记录
@@ -247,9 +247,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。 若要验证您的 SPF 记录，您可以使用其中一种[SPF 验证工具](../setup/domains-faq.md)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)。 若要验证您的 SPF 记录，您可以使用其中一种[SPF 验证工具](../setup/domains-faq.md)。 
   
-请执行以下步骤或[观看视频（从5:09 开始）](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从5:09 开始）](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
   
 > [!NOTE]
 > 如果你已向1und1.de 注册，请[在此处登录](https://go.microsoft.com/fwlink/?linkid=859152)。 
@@ -272,15 +272,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![TXT 记录](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
   
-7. 选择“**保存**”。<br/>![添加记录](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+7. 选择“保存”****。<br/>![添加记录](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
   
-8. 选择“**保存**”。<br/>![保存记录](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+8. 选择“保存”****。<br/>![保存记录](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
 9. 在 "**编辑 DNS 设置**" 对话框中，选择 **"是"**。<br/>![在 "编辑 DNS 设置" 对话框中选择 "是"](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 
-请执行以下步骤或[观看视频（从5:51 开始）](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从5:51 开始）](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
   
 > [!NOTE]
 > 如果你已向1und1.de 注册，请[在此处登录](https://go.microsoft.com/fwlink/?linkid=859152)。 
@@ -304,9 +304,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![1&amp;1-BP-配置-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. 选择“**保存**”。 <br/>![1&amp;1-BP-配置-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. 选择“保存”****。 <br/>![1&amp;1-BP-配置-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. 选择“**保存**”。 <br/>![1&amp;1-BP-配置-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. 选择“保存”****。 <br/>![1&amp;1-BP-配置-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
 9. 在 "**编辑 DNS 设置**" 对话框中，选择 **"是"**。 <br/>![在 "编辑 DNS 设置" 对话框中选择 "是"](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   

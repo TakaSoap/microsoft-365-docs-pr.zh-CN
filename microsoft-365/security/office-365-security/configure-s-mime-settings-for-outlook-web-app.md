@@ -1,5 +1,5 @@
 ---
-title: 在 Exchange Online 中为 web 上的 Outlook 配置 S/MIME 设置
+title: 为 web 上的 Outlook 配置 S/MIME 设置-Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,12 +15,13 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Exchange online 管理员在 Exchange Online 中查看和配置 Outlook 网页中的 S/MIME 设置时需要执行的操作的简短说明。
-ms.openlocfilehash: 354b247c2b0e0e610e6cb0626f4a404b582db717
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2ed3f3c6289c4663c6bebecdf9ab03eacd94e373
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960318"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035090"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>在 Exchange Online 中为 web 上的 Outlook 配置 S/MIME 设置
 
@@ -44,6 +45,6 @@ ms.locfileid: "41960318"
 
 此步骤是使用 Chrome 的先决条件;它不会替换用户安装的 S/MIME 控件。 在首次使用 S/MIME 时，系统会提示用户在 web 上的 Outlook 中下载并安装 S/MIME 控件。 或者，用户可以在其 Outlook 的 web 设置中主动转到**S/MIME** ，以获取该控件的下载链接。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>详细信息
 
 [邮件签名和加密的 S/MIME](s-mime-for-message-signing-and-encryption.md)

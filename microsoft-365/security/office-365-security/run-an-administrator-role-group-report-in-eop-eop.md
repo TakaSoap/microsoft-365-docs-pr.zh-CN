@@ -1,5 +1,5 @@
 ---
-title: '在 EOP 中运行管理员角色组报告 '
+title: 在 EOP 中运行管理员角色组报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-description: 管理员可以了解如何在 Exchange Online Protection （EOP）中运行管理员角色组报告。 当管理员向管理员角色组添加成员或从中删除成员时，此报告将记录，Microsoft Exchange Online Protection （EOP）会记录每次出现的情况。
-ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您将了解如何在 Exchange Online Protection （EOP）中运行管理员角色组报告。
+ms.openlocfilehash: d3c4db8079a71ba054f323617d3ade65083a3a04
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598539"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034452"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>在 EOP 中运行管理员角色组报告
 

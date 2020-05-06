@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: 了解如何与团队中的来宾进行协作。
-ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: 了解在团队中设置与来宾协作的团队所需的 Microsoft 365 配置步骤。
+ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002188"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036003"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -101,7 +102,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -177,6 +178,6 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
 
-[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
+[创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
 
 [创建托管有来宾的 B2B 外联网](b2b-extranet.md)

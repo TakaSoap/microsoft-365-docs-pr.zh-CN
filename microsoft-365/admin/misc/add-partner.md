@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 了解如何在 Microsoft 365 购买时添加订阅顾问合作伙伴作为记录的合作伙伴，更改合作伙伴或从订阅中删除合作伙伴。
-ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627964"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045280"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -114,13 +114,13 @@ ms.locfileid: "43627964"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
     
 2. 如果您有多个订阅，请选择要编辑的订阅。
   
 3. 在 "订阅" 页上，选择 "**合作伙伴**" 选项卡，然后为你添加的合作伙伴键入合作伙伴网络 ID。你可以通过向合作伙伴索要合作伙伴 ID 来获取合作伙伴的 Microsoft 合作伙伴 id。
     
-4. 选择“**添加**”。
+4. 选择“添加”****。
 
 ::: moniker-end
 
@@ -161,7 +161,7 @@ ms.locfileid: "43627964"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
     
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -209,7 +209,7 @@ ms.locfileid: "43627964"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1.  在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1.  在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
     
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -248,7 +248,7 @@ ms.locfileid: "43627964"
 
 ::: moniker range="o365-worldwide"
 
-您不能亲自删除转销商关系。
+你无法自行删除经销商关系。
   
 如果要删除转销商关系，"**删除**" 选项灰显，您将需要向转销商合作伙伴执行以下说明：[删除与合作伙伴的转销商关系](https://docs.microsoft.com/partner-center/remove-a-relationship)。
 
@@ -256,7 +256,7 @@ ms.locfileid: "43627964"
 
 ::: moniker range="o365-germany"
 
-您不能亲自删除转销商关系。
+你无法自行删除经销商关系。
   
 如果要删除转销商关系，"**删除**" 选项灰显，您将需要向转销商合作伙伴执行以下说明：[删除与合作伙伴的转销商关系](https://docs.microsoft.com/partner-center/remove-a-relationship)。
   
@@ -264,7 +264,7 @@ ms.locfileid: "43627964"
 
 ::: moniker range="o365-21vianet"
 
-您不能亲自删除转销商关系。
+你无法自行删除经销商关系。
   
 如果要删除转销商关系，"**删除**" 选项灰显，您将需要向转销商合作伙伴执行以下说明：[删除与合作伙伴的转销商关系](https://docs.microsoft.com/partner-center/remove-a-relationship)。
   

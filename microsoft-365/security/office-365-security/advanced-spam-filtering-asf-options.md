@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: 反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）中的高级垃圾邮件筛选器（ASF）设置允许管理员识别包含在垃圾邮件中通常使用的特定邮件属性的邮件。 ASF 检测会将邮件标记为垃圾邮件或高可信度垃圾邮件，具体取决于属性。
-ms.openlocfilehash: 58114fa97d46a5a6f6f49c24826ace9edd811e1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 了解反垃圾邮件策略中的高级垃圾邮件筛选器（ASF）设置，允许管理员识别包含垃圾邮件中常用的特定邮件属性的邮件。
+ms.openlocfilehash: 31793f5996cc27cf7e5de75d9c190657e6592c57
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634726"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034127"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Office 365 中的高级垃圾邮件筛选器（ASF）设置
 

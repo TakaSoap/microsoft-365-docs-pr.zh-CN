@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '了解如何将多个电子邮件地址（称为 "电子邮件别名"）与 Microsoft 365 商业版帐户相关联。 '
-ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: efd0dbf5ae072c803b52d94dd41f16db9bb0413a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629079"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048803"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>添加用户的其他电子邮件别名
   
@@ -68,7 +68,7 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)。 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
   
      
 5. 完成后，请选择 "**保存更改**"。
@@ -100,7 +100,7 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)。 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
 
 5. 完成后，请选择 "**保存**"。
 
@@ -131,7 +131,7 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)。 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
 
 5. 完成后，请选择 "**保存**"。
 

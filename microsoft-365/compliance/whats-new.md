@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 合规性中心的新增功能
+title: 合规中心的新增功能
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -17,12 +17,13 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
-ms.openlocfilehash: 2f172c8639215285a793f16f4913917be6a58614
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626258"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034264"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -172,11 +173,11 @@ ms.locfileid: "43626258"
 |电子数据展示|电子数据展示 > 电子数据展示 <br/> https://protection.office.com/ediscoveryv1 |电子数据展示 > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理电子数据展示事例](ediscovery-cases.md) |
 |活动|记录管理 > 事件 <br/> https://protection.office.com/events |记录管理 > 事件选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件驱动保留概述](event-driven-retention.md)|
 |文件计划|记录管理 > 文件计划 <br/> https://protection.office.com/fileplan |记录管理 > 文件计划选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[文件计划管理器概述](file-plan-manager.md)|
-|导入 PST 文件|信息治理 > 导入 PST 文件 <br/> https://protection.office.com/importV2 |信息管理 > 导入选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[导入组织的 PST 文件概述](importing-pst-files-to-office-365.md)|
+|导入 PST 文件|信息治理 > 导入 PST 文件 <br/> https://protection.office.com/importV2 |信息管理 > 导入选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[有关导入组织的 PST 文件的概述](importing-pst-files-to-office-365.md)|
 |标签活动资源管理器|信息治理 > 标签活动资源管理器 <br/> https://protection.office.com/labelexplorer |"数据分类 > 活动资源管理器" 选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[查看关于标记的内容的活动（预览版）](data-classification-activity-explorer.md)|
 |保留标签和标签策略 |分类 > 保留标签 > 标签和标签策略选项卡 <br/> https://protection.office.com/retentionlabels |信息治理 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留标签概述](labels.md)|
 |保留策略|信息治理 > 保留 <br/> https://protection.office.com/retention |信息治理 > 保留选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[保留策略概述](retention-policies.md)|
-|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[使用敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)|
+|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)|
 |敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度标签](sensitivity-labels.md) |
 |服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全 & 合规中心中的服务保证](service-assurance.md)|
 |监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |通信合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通信合规性（预览）](communication-compliance.md) |
