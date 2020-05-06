@@ -1,264 +1,49 @@
-- name: 管理员主页
-  href: admin-home.md
+- name: Microsoft 365 管理中心帮助
+  href: index.yml
   items:
-    - name: 概述
+    - name: 入门
+      href: setup/index.yml
       items:
-        - name: 管理员概述
-          href: admin-overview/admin-overview.md
-        - name: 注册 Office 365
+        - name: 注册
           href: admin-overview/sign-up-for-office-365.md
-        - name: 视频培训
-          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
-        - name: 关于管理中心
-          href: admin-overview/about-the-admin-center.md
-        - name: 我订阅了哪些产品？
-          href: admin-overview/what-subscription-do-i-have.md
-        - name: 了解 Office 365 Germany
-          href: admin-overview/learn-about-office-365-germany.md
-        - name: 管理移动应用
-          href: admin-overview/admin-mobile-app.md
-    - name: 设置
-      items:
-        - name: 规划设置
+        - name: 试用或购买 Microsoft 365
+          href: ../commerce/try-or-buy-microsoft-365.md
+        - name: 计划安装
           href: setup/plan-your-setup.md
-        - name: 设置 Office 365
+        - name: 使用引导式安装为组织安装
           href: setup/setup.md
-        - name: 设置向导和设置页面之间的区别
+        - name: 浏览“安装”页和向导
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: 添加域
-          href: setup/add-domain.md
-        - name: 关于域的常见问题解答
-          href: setup/domains-faq.md
-        - name: 安装应用程序
-          href: setup/install-applications.md
-        - name: 迁移电子邮件和联系人
+        - name: 迁移数据
           href: setup/migrate-email-and-contacts-admin.md
-        - name: 部署 Teams
+        - name: 安装 Office 应用
+          href: setup/install-applications.md
+        - name: 推出 Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
-        - name: 设置文件存储和共享
-          href: setup/set-up-file-storage-and-sharing.md
-        - name: 自定义团队网站
-          href: setup/customize-team-site.md
-        - name: 将用户升级到最新版 Office 客户端
-          href: setup/upgrade-users-to-latest-office-client.md
+        - name: 面向所有人的应用培训
+          href: 'https://support.office.com/en-us/office-training-center'
+        - name: 我有什么订阅？
+          href: admin-overview/what-subscription-do-i-have.md
         - name: 自定义登录页
           href: setup/customize-sign-in-page.md
-        - name: 创建通讯组
-          href: setup/create-distribution-lists.md
         - name: 自定义组织主题
           href: setup/customize-your-organization-theme.md
-    - name: 用户和角色
+        - name: 了解 Office 365 Germany
+          href: admin-overview/learn-about-office-365-germany.md
+    - name: Microsoft 365 管理中心概述
       items:
-        - name: 添加用户
-          href: add-users/add-users.md
-        - name: 创建和使用模板来添加用户
-          href: add-users/create-and-use-a-template-to-add-users.md
-        - name: 删除用户
-          href: add-users/delete-a-user.md
-        - name: 还原用户
-          href: add-users/restore-user.md
-        - name: 重置密码
-          href: add-users/reset-passwords.md
-        - name: 设置密码为永不过期
-          href: add-users/set-password-to-never-expire.md
-        - name: 让用户重置密码
-          href: add-users/let-users-reset-passwords.md
-        - name: 重新发送用户密码
-          href: add-users/resend-user-password.md
-        - name: 向其他用户授予邮箱权限
-          href: add-users/give-mailbox-permissions-to-another-user.md
-        - name: 更改用户名和电子邮件地址
-          href: add-users/change-a-user-name-and-email-address.md
-        - name: 创建、编辑或删除自定义用户视图
-          href: add-users/create-edit-or-delete-a-custom-user-view.md
-        - name: 添加新员工
-          href: add-users/add-new-employee.md
-        - name: 删除以前的员工
-          href: add-users/remove-former-employee.md
-        - name: 访问并备份以往用户的数据的访问
-          href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+        - name: 管理中心概述
+          href: admin-overview/about-the-admin-center.md
+        - name: 关于新管理中心
+          href: microsoft-365-admin-center-preview.md
         - name: 关于管理员角色
           href: add-users/about-admin-roles.md
-        - name: 分配管理员角色
-          href: add-users/assign-admin-roles.md
-        - name: 关于 Exchange Online 管理员角色
-          href: add-users/about-exchange-online-admin-role.md
-    - name: 电子邮件
-      items:
-        - name: Office 365 中的电子邮件
-          href: email/email.md
-        - name: 用户电子邮件设置
-          href: email/office-365-user-email-settings.md
-        - name: 添加用户的其他电子邮件别名
-          href: email/add-another-email-alias-for-a-user.md
-        - name: 共享邮箱
-          items:
-            - name: 关于共享邮箱
-              href: email/about-shared-mailboxes.md
-            - name: 创建共享邮箱
-              href: email/create-a-shared-mailbox.md
-            - name: 配置共享邮箱
-              href: email/configure-a-shared-mailbox.md
-            - name: 将用户邮箱转换为共享邮箱
-              href: email/convert-user-mailbox-to-shared-mailbox.md
-            - name: 从共享邮箱删除许可证
-              href: email/remove-license-from-shared-mailbox.md
-            - name: 解决共享邮箱问题
-              href: email/resolve-issues-with-shared-mailboxes.md
-        - name: 更改电子邮件地址
-          href: email/change-email-address.md
-        - name: 配置重点收件箱
-          href: setup/configure-focused-inbox.md
-        - name: 创建签名和免责声明
-          href: setup/create-signatures-and-disclaimers.md
-        - name: 创建、编辑或删除安全组
-          href: email/create-edit-or-delete-a-security-group.md
-        - name: 配置电子邮件转发
-          href: email/configure-email-forwarding.md
-        - name: 电子邮件协作
-          href: email/email-collaboration.md
-        - name: 向通讯组添加用户或联系人
-          href: email/add-user-or-contact-to-distribution-list.md
-        - name: 配置待筛选邮件
-          href: email/configure-clutter.md
-    - name: 保护业务数据的安全
-      items:
-        - name: 保护数据安全的十大方法
-          href: security-and-compliance/secure-your-business-data.md
-        - name: 设置多重身份验证
-          href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: （为 Office 2013）设置多重身份验证
-          href: security-and-compliance/enable-modern-authentication.md
-        - name: GDPR 合规性
-          href: security-and-compliance/gdpr-compliance.md
-    - name: 管理中心中的活动报表
-      href: activity-reports/activity-reports.md
-    - name: Power BI 使用情况分析
-      items:
-        - name: 使用率分析
-          href: usage-analytics/usage-analytics.md
-        - name: 启用使用情况分析
-          href: usage-analytics/enable-usage-analytics.md
-        - name: 获取最新版本的使用情况分析
-          href: usage-analytics/get-the-latest-version-of-usage-analytics.md
-        - name: 导航和利用报表
-          href: usage-analytics/navigate-and-utilize-reports.md
-        - name: 使用情况报告中的活动用户
-          href: usage-analytics/active-user-in-usage-reports.md
-        - name: 自定义报表
-          href: usage-analytics/customize-reports.md
-        - name: 使用情况分析数据模型
-          href: usage-analytics/usage-analytics-data-model.md
-        - name: 使用情况分析错误
-          href: usage-analytics/usage-analytics-errors.md
-    - name: 管理
-      items:
-        - name: 管理 Office 365
-          href: manage/manage.md
-        - name: 更改联系人首选项
-          href: manage/change-contact-preferences.md
-        - name: 更改地址、联系人及其他信息
-          href: manage/change-address-contact-and-more.md
-        - name: 更新电话号码和电子邮件地址
-          href: manage/update-phone-number-and-email-address.md
-        - name: 设置密码过期策略
-          href: manage/set-password-expiration-policy.md
-        - name: 自定义应用启动器
-          href: manage/customize-the-app-launcher.md
-        - name: 集中式部署的要求
-          href: manage/centralized-deployment-of-add-ins.md
-        - name: 使用集中式部署来部署加载项
-          href: manage/manage-deployment-of-add-ins.md
-        - name: 集中部署常见问题解答
-          href: manage/centralized-deployment-FAQ.md
-        - name: 查找合作伙伴或经销商
-          href: manage/find-your-partner-or-reseller.md
-        - name: 会议室和设备邮箱
-          href: manage/room-and-equipment-mailboxes.md
-        - name: 以通讯组列表形式发送电子邮件
-          href: manage/send-email-as-distribution-list.md
-        - name: 升级通讯组列表
-          href: manage/upgrade-distribution-lists.md
-        - name: 在外部共享网站和文件
-          href: manage/share-sites-with-external-users.md
-        - name: 与外部用户共享日历
-          href: manage/share-calendars-with-external-users.md
-        - name: 向用户分配许可证
-          href: manage/assign-licenses-to-users.md
-        - name: 取消分配用户许可证
-          href: manage/remove-licenses-from-users.md
-        - name: 解决许可证冲突
-          href: manage/resolve-license-conflicts.md
-        - name: 管理邮件中心中的邮件
-          href: manage/manage-messages.md
-        - name: 使用新增管理功能显示或隐藏新功能
-          href: manage/show-hide-new-features.md
-    - name: 订阅和计费
-      items:
-        - name: 管理订阅
-          href: ../commerce/index.yml
-        - name: 查看发票
-          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-        - name: 管理支付方式
-          href: ../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
-        - name: 取消订阅
-          href: ../commerce/subscriptions/cancel-your-subscription.md
-    - name: 域
-      items:
-        - name: Office 365 中的域
-          href: get-help-with-domains/get-help-with-domains.md
-        - name: 什么是域？
-          href: get-help-with-domains/what-is-a-domain.md
-        - name: 购买域名
-          href: get-help-with-domains/buy-a-domain-name.md
-        - name: 查找域注册机构
-          href: get-help-with-domains/find-your-domain-registrar.md
-        - name: DNS 基础
-          href: get-help-with-domains/dns-basics.md
-        - name: DNS 记录的信息
-          href: get-help-with-domains/information-for-dns-records.md
-        - name: 查找并修复问题
-          href: get-help-with-domains/find-and-fix-issues.md
-        - name: 设置域（主机特定的操作说明）
-          href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
-        - name: 在任意域注册机构更改名称服务器
-          href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
-        - name: 在任意 DNS 托管提供者处创建 DNS 记录
-          href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
-        - name: 删除域
-          href: get-help-with-domains/remove-a-domain.md
-        - name: 手动转移数据
-          href: get-help-with-domains/transfer-data-manually.md
-    - name: 组
-      items:
-        - name: 组概述
-          href: create-groups/office-365-groups.md
-        - name: 比较组
-          href: create-groups/compare-groups.md
-        - name: 创建 Microsoft 365 组
-          href: create-groups/create-groups.md
-        - name: 管理 Microsoft 365 组
-          href: create-groups/manage-groups.md
-        - name: Microsoft 365 组中的监管计划
-          href: create-groups/plan-for-groups-governance.md
-        - name: 管理创建组
-          href: create-groups/manage-creation-of-groups.md
-        - name: 选择域以创建组
-          href: create-groups/choose-domain-to-create-groups.md
-        - name: 组命名策略
-          href: create-groups/groups-naming-policy.md
-        - name: 允许成员作为组或代表组发送
-          href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
-        - name: 添加或删除组成员
-          href: create-groups/add-or-remove-members-from-groups.md
-        - name: Microsoft 365 组过期策略
-          href: create-groups/office-365-groups-expiration-policy.md
-        - name: 恢复已删除的组
-          href: create-groups/restore-deleted-group.md
-        - name: 在组中管理来宾访问权限
-          href: create-groups/manage-guest-access-in-groups.md
-        - name: 将敏感度标签与组配合使用
-          href: 'https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?toc=/office365/admin/toc.json'
+        - name: 管理移动应用
+          href: admin-overview/admin-mobile-app.md
+        - name: 管理中心的新变化
+          href: whats-new-in-preview.md
+        - name: 随时掌握更改
+          href: manage/stay-on-top-of-updates.md
     - name: 由世纪互联运营的 Office 365
       items:
         - name: 关于由世纪互联运营的 Office 365
@@ -275,19 +60,194 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure 信息保护奇偶校验
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: 获取新功能
+    - name: 管理用户和组
+      href: add-users/index.yml
       items:
-        - name: 关于新管理中心
-          href: microsoft-365-admin-center-preview.md
-        - name: 新管理中心中的新增功能
-          href: whats-new-in-preview.md
-        - name: 随时了解更改
-          href: manage/stay-on-top-of-updates.md
-        - name: Office 365 中的发布选项
-          href: manage/release-options-in-office-365.md
-        - name: 邮件中心
+        - name: 用户
+          items:
+            - name: 添加用户
+              href: add-users/add-users.md
+            - name: 添加新员工
+              href: add-users/add-new-employee.md
+            - name: 分配管理员角色
+              href: add-users/assign-admin-roles.md
+            - name: 删除用户的许可证
+              href: manage/remove-licenses-from-users.md
+            - name: 解决许可证冲突
+              href: manage/resolve-license-conflicts.md
+            - name: 更改用户名和电子邮件地址
+              href: add-users/change-a-user-name-and-email-address.md
+            - name: 删除前员工
+              href: add-users/remove-former-employee.md
+            - name: 访问并备份前用户的数据
+              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+            - name: 还原用户
+              href: add-users/restore-user.md
+            - name: 重置密码
+              href: add-users/reset-passwords.md
+            - name: 将密码设置为永不过期
+              href: add-users/set-password-to-never-expire.md
+            - name: 允许用户重置密码
+              href: add-users/let-users-reset-passwords.md
+            - name: 重新发送用户密码
+              href: add-users/resend-user-password.md
+            - name: 创建用于添加用户的模板
+              href: add-users/create-and-use-a-template-to-add-users.md
+        - name: 组
+          items:
+            - name: 组概述
+              href: create-groups/office-365-groups.md
+            - name: 比较组
+              href: create-groups/compare-groups.md
+            - name: 创建组
+              href: create-groups/create-groups.md
+            - name: 管理组
+              href: create-groups/manage-groups.md
+            - name: 添加或删除组成员
+              href: create-groups/add-or-remove-members-from-groups.md
+            - name: 还原已删除的组
+              href: create-groups/restore-deleted-group.md
+            - name: 计划对组进行管理
+              href: create-groups/plan-for-groups-governance.md
+            - name: 管理组创建
+              href: create-groups/manage-creation-of-groups.md
+            - name: 为组选择域
+              href: create-groups/choose-domain-to-create-groups.md
+            - name: 组命名策略概述
+              href: create-groups/groups-naming-policy.md
+            - name: 允许成员与组有邮件往来
+              href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
+            - name: 管理对组的来宾访问
+              href: create-groups/manage-guest-access-in-groups.md
+            - name: 对组使用敏感度标签
+              href: ../compliance/sensitivity-labels-teams-groups-sites.md
+    - name: 管理电子邮件和日历
+      href: email/index.yml
+      items:
+        - name: 关于用户电子邮件设置
+          href: email/office-365-user-email-settings.md
+        - name: 为用户添加另一个电子邮件别名
+          href: email/add-another-email-alias-for-a-user.md
+        - name: 使用自定义域
+          href: email/change-email-address.md
+        - name: 创建签名和免责声明
+          href: setup/create-signatures-and-disclaimers.md
+        - name: 创建、编辑或删除安全组
+          href: email/create-edit-or-delete-a-security-group.md
+        - name: 设置电子邮件转发
+          href: email/configure-email-forwarding.md
+        - name: 共享邮箱
+          items:
+            - name: 关于共享邮箱
+              href: email/about-shared-mailboxes.md
+            - name: 创建共享邮箱
+              href: email/create-a-shared-mailbox.md
+            - name: 设置共享邮箱
+              href: email/configure-a-shared-mailbox.md
+            - name: 将用户邮箱转换为共享邮箱
+              href: email/convert-user-mailbox-to-shared-mailbox.md
+            - name: 从共享邮箱中删除许可证
+              href: email/remove-license-from-shared-mailbox.md
+            - name: 解决共享邮箱问题
+              href: email/resolve-issues-with-shared-mailboxes.md
+        - name: 设置重点收件箱
+          href: setup/configure-focused-inbox.md
+        - name: 关于电子邮件协作
+          href: email/email-collaboration.md
+        - name: 向通讯组添加用户或联系人
+          href: email/add-user-or-contact-to-distribution-list.md
+        - name: 管理组织的待筛选邮件
+          href: email/configure-clutter.md
+    - name: 管理域
+      href: get-help-with-domains/what-is-a-domain.md
+      items:
+        - name: 添加域
+          href: setup/add-domain.md
+        - name: 购买域
+          href: get-help-with-domains/buy-a-domain-name.md
+        - name: 删除域
+          href: get-help-with-domains/remove-a-domain.md
+        - name: 关于域的常见问题解答
+          href: setup/domains-faq.md
+        - name: 特定于主机的说明
+          items:
+            - name: 在任意 DNS 主机处更改名称服务器
+              href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
+            - name: 在任意 DNS 主机处创建 DNS 记录
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+        - name: 排查域问题
+          href: get-help-with-domains/find-and-fix-issues.md
+    - name: 管理数据和服务
+      href: manage/index.yml
+      items:
+        - name: 将组织升级为使用最新应用
+          href: setup/upgrade-users-to-latest-office-client.md
+        - name: 使用报告监视用户活动
+          href: activity-reports/activity-reports.md
+        - name: 更改组织联系人信息
+          href: manage/change-address-contact-and-more.md
+        - name: 更新管理员联系人信息
+          href: manage/update-phone-number-and-email-address.md
+        - name: 设置密码过期策略
+          href: manage/set-password-expiration-policy.md
+        - name: 自定义应用启动器
+          href: manage/customize-the-app-launcher.md
+        - name: 加载项集中部署要求
+          href: manage/centralized-deployment-of-add-ins.md
+        - name: 使用集中部署对加载项进行安装和管理
+          href: manage/manage-deployment-of-add-ins.md
+        - name: 寻找合作伙伴或经销商
+          href: manage/find-your-partner-or-reseller.md
+        - name: 关于消息中心
           href: manage/message-center.md
-        - name: 试用或购买 Microsoft 365
-          href: ../commerce/try-or-buy-microsoft-365.md
-    - name: 就企业产品问题，联系支持人员
+        - name: 管理消息中心消息
+          href: manage/manage-messages.md
+        - name: 设置发布选项
+          href: manage/release-options-in-office-365.md
+        - name: Power BI 使用情况分析
+          items:
+            - name: 关于使用情况分析
+              href: usage-analytics/usage-analytics.md
+            - name: 启用使用情况分析
+              href: usage-analytics/enable-usage-analytics.md
+            - name: 获取最新版本的使用情况分析
+              href: usage-analytics/get-the-latest-version-of-usage-analytics.md
+            - name: 导航和使用报告
+              href: usage-analytics/navigate-and-utilize-reports.md
+            - name: 关于使用情况报告中的活动用户
+              href: usage-analytics/active-user-in-usage-reports.md
+            - name: 自定义报告
+              href: usage-analytics/customize-reports.md
+            - name: 关于使用情况分析数据模型
+              href: usage-analytics/usage-analytics-data-model.md
+            - name: 排查使用情况分析错误
+              href: usage-analytics/usage-analytics-errors.md
+    - name: 管理订阅和计费
+      href: ../commerce/index.yml
+    - name: 保护你的组织
+      items:
+        - name: 保护数据安全的十大方法
+          href: security-and-compliance/secure-your-business-data.md
+        - name: 设置多重身份验证
+          href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: （为 Office 2013）设置多重身份验证
+          href: security-and-compliance/enable-modern-authentication.md
+        - name: GDPR 合规性指南
+          href: security-and-compliance/gdpr-compliance.md
+    - name: 与客户合作
+      href: work-with-customers/index.yml
+      items:
+        - name: 在外部共享网站和文件
+          href: manage/share-sites-with-external-users.md
+        - name: 与来宾用户共享日历
+          href: manage/share-calendars-with-external-users.md
+        - name: 以来宾身份创建团队
+          href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
+        - name: 以来宾身份安排 Teams 会议
+          href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
+        - name: 以来宾身份加入 Teams 会议
+          href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
+    - name: 疑难解答
+      href: 'https://docs.microsoft.com/office/troubleshoot/'
+    - name: 联系支持人员
       href: contact-support-for-business-products.md
