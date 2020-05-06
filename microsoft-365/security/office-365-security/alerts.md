@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
-description: 了解有关 Office 365 中的安全性可设置为帮助的通知。
-ms.openlocfilehash: 24e36b6867600985a9ca0f9cb3cbafc5a8c6029e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: 了解如何使用 Office 365 安全 & 合规中心中的警报功能查看和管理警报，包括管理高级通知。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8b0c2d89f7f91e1dfcae644663c43bc6e8640f37
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943551"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033770"
 ---
 # <a name="alerts-in-the-security-amp-compliance-center"></a>安全&amp;合规中心中的警报
 

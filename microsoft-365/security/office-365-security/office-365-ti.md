@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的威胁调查和响应功能高级威胁防护计划2
+title: 威胁调查 & 响应功能-Office 365 ATP 计划2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: 了解 Office 365 中的威胁智能功能高级威胁防护如何帮助您研究组织的威胁，响应 Microsoft 365 已代表您检测到的恶意软件、网络钓鱼和其他攻击，并搜索威胁指示器。
-ms.openlocfilehash: 9d89e84cc50b82b8cc5f2fe4e0e5ad6f4f85b091
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 了解 Office 365 高级威胁防护计划中的威胁调查和响应功能。
+ms.openlocfilehash: 61b08dc2b77c874e255547b2bcaef596ee017bf4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634516"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033934"
 ---
 # <a name="threat-investigation-and-response"></a>威胁调查和响应
 

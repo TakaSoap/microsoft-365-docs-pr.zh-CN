@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 您可以使用审核日志搜索工具来帮助您解决常见问题，例如调查已损坏的帐户、找出设置邮箱的电子邮件转发的用户，或者确定外部用户成功登录组织的原因。
-ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何使用 Office 365 审核日志搜索工具来帮助解决电子邮件帐户的常见支持问题。
+ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636380"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034208"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>搜索审核日志以调查常见支持问题
 

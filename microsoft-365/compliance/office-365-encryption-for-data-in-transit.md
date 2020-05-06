@@ -1,5 +1,5 @@
 ---
-title: 传输中的数据的加密
+title: 加密传输中的数据
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,15 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 关于 Microsoft 如何在数据中心的传输中对数据进行加密的简要说明。
-ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: 在本文中，我们将简单说明 Microsoft 如何在传输过程中加密 Microsoft 365 客户数据。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7ee869308549398a9df00ed42975b4aeedb666a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943301"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033600"
 ---
-# <a name="encryption-for-data-in-transit"></a>传输中的数据的加密
+# <a name="encryption-for-data-in-transit"></a>加密传输中的数据
 
 除了保护静态客户数据之外，Microsoft 还使用加密技术来保护传输中的客户数据。 
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 在高级电子数据展示事例中管理保管人。
-ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何在高级电子数据展示事例中查看详细信息、编辑和批量编辑保管人的列表。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635892"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034174"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>在高级电子数据展示事例中管理保管人
 
@@ -126,9 +127,9 @@ ms.locfileid: "43635892"
 
 1. 转到**电子数据展示 > 高级电子数据展示**并打开机箱。
 
-2.  转到 "**保管人**" 选项卡。
+2.    转到 "**保管人**" 选项卡。
 
-3.  单击 "至**保管人" 选项卡**，然后选择从该事例发布的管理员。
+3.    单击 "至**保管人" 选项卡**，然后选择从该事例发布的管理员。
 
 4. 在飞出页面上，单击 "**释放保管人**"。
 

@@ -15,21 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 7b7109f2a14e2d215573cfe461fc64676d4247c8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-mar2020
+description: 通过访问和搜索感兴趣的人员的活动，可在调查中使用数据调查（预览）兴趣管理工具的人员。
+ms.openlocfilehash: 552d7727761052a28c2a58b51bf9b937bf953ad5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626318"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034274"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>查看相关人员的审核活动
 
 需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 现在，数据调查（预览版）与安全 & 合规性中心中的现有审核日志搜索工具集成在一起。 使用这种嵌入的体验，您可以使用 "数据调查" （预览）相关人员管理工具来帮助您进行调查，从而轻松访问和搜索调查中感兴趣的人员的活动。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色，才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 若要使用户能够使用最低级别的权限搜索数据调查（预览）审核日志，您可以在 Exchange Online 中创建自定义角色组，添加仅查看审核日志或审核日志角色，然后将该用户添加为新角色组的成员。 有关详细信息，请参阅在 Exchange Online 中管理角色组。
+必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 若要使用户能够使用最低级别的权限搜索数据调查（预览）审核日志，您可以在 Exchange Online 中创建自定义角色组，添加仅查看审核日志或审核日志角色，然后将该用户添加为新角色组的成员。 有关详细信息，请参阅在 Exchange Online 中管理角色组。
 
 > [!IMPORTANT]
 > 如果您在安全 & 合规中心中向用户分配 "权限" 页上的 "仅查看审核日志" 或 "审核日志" 角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。

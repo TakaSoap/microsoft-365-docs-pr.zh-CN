@@ -15,21 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: bf4274106ce1724785c3ac38204f753cd7788a63
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 使用高级电子数据展示保管人管理工具，可以在你的事例中轻松访问和搜索保管人的活动。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 84da57c8f2115c18543d4f38fd84f2c4eccb46d5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626338"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034294"
 ---
 # <a name="view-custodian-audit-activity"></a>查看保管人审核活动
 
 需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 高级电子数据展示现在与安全 & 合规中心中现有的审核日志搜索工具集成在一起。 使用此嵌入的体验，您可以使用高级电子数据展示保管人管理工具来促进您的调查，并在您的案例中轻松访问和搜索保管人的活动。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-您必须在 Exchange Online 中向您分配 "仅查看审核日志" 或 "审核日志" 角色，才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 若要使用户能够使用最低级别的权限搜索高级电子数据展示审核日志，您可以在 Exchange Online 中创建自定义角色组，添加仅查看审核日志或审核日志角色，然后将该用户添加为新角色组的成员。 有关详细信息，请参阅在 Exchange Online 中管理角色组。
+必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 若要使用户能够使用最低级别的权限搜索高级电子数据展示审核日志，您可以在 Exchange Online 中创建自定义角色组，添加仅查看审核日志或审核日志角色，然后将该用户添加为新角色组的成员。 有关详细信息，请参阅在 Exchange Online 中管理角色组。
 
 > [!IMPORTANT]
 > 如果您在安全 & 合规中心中向用户分配 "权限" 页上的 "仅查看审核日志" 或 "审核日志" 角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。

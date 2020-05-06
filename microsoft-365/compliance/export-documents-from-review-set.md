@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 9a732258e787de3407731f0fdfc98ed07653df71
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何从审阅集中选择和导出或下载内容以进行演示文稿或外部审阅。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 29c2224a1ce0a92bca3b2057352f6f82fdc7afde
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074350"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034090"
 ---
 # <a name="export-documents-from-a-review-set"></a>从审阅集中导出文档
 

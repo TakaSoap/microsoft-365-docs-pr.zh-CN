@@ -1,6 +1,6 @@
 ---
 title: 通过 ServiceNow 创建和跟踪票证
-description: Microsoft 365 安全中心已得到增强，能够在 ServiceNow 中以本机方式创建和跟踪票证。 安全管理员可以将安全得分建议直接发送到 ServiceNow 并创建票证。
+description: 了解如何从 Microsoft 365 安全中心创建和跟踪 ServiceNow 中的票证。
 keywords: security、Microsoft 365、M365、安全分数、安全中心、ServiceNow、票证、任务
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,12 +17,14 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: 6070878d6cf0efd8a85d05ff6ef89ee49baf4144
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901018"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034184"
 ---
 # <a name="manage-tickets-through-servicenow"></a>通过 ServiceNow 管理票证
 
@@ -92,7 +94,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 借助 Microsoft 365 security center 中显示的 ServiceNow 票证，你的任务可以在某个位置进行跟踪，并在你的其他安全仪表板项目旁边进行操作。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>问题排查
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>您在安装清单（OAuth 创建）的第一步中收到错误
 

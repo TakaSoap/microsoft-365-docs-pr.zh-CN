@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 9eef3b38ceef7efc42e1f66c45069f51a0a95d45
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何使用非 Office 365 内容导入功能将非 Office 365 文档上载到数据调查中的证据中。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632627"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034410"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>将非 Microsoft 365 数据加载到证据中
 
 并非所有可能需要在数据调查中进行分析的文档都将位于 Microsoft 365 中。 使用非 Microsoft 365 内容导入功能，可以将不在 Microsoft 365 中的文档上传到证据，以便可以在数据调查中分析这些文档。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 使用此过程中所述的上传非 Microsoft 365 功能时，需要具备以下条件：
 
