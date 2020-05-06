@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: 了解如何验证您的域，并在 Names.co.uk for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 91c328877d583f415ffd2b8312ff1dc899a05bcc
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 2df1a18f00fd7cd48b0d24860ddcf651c2fdac4e
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939163"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048935"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>在 Names.co.uk 处为 Microsoft 创建 DNS 记录
 
@@ -72,7 +72,7 @@ ms.locfileid: "43939163"
        
     ![NamesUK-验证-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     （您可能需要向下滚动。）
     
@@ -120,11 +120,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**主机名**|**优先级**|**结果**|
     |:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |（将此字段留空。）  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-配置-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     (You may have to scroll down.)
     
@@ -134,7 +134,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![NamesUK-配置-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. 选择“**保存**”。
+6. 选择“保存”****。
     
     (You may have to scroll down.)
     
@@ -171,7 +171,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
        
     ![NamesUK-配置-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     ![NamesUK-配置-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
@@ -209,7 +209,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
        
     ![NamesUK-配置-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. 选择“**保存**”。
+5. 选择“保存”****。
     
     (You may have to scroll down.)
     
@@ -239,7 +239,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
        
     ![NamesUK-配置-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     (You may have to scroll down.)
     

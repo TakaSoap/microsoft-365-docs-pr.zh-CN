@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
-description: 组织通常受法规、法律或其他规定的制约，要求其将文件保留特定时间段。但是，将文件保留超过所要求的时间可能使组织面临法律风险。因此，您的组织可能已为您的网站创建文件删除策略。例如，一般的商务文件可能需要在其创建 5 年后删除。
-ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何在 Office 365 网站集中创建、删除和管理文档删除策略。
+ms.openlocfilehash: 7a9cbec25349de02da35f0aaf0cc206774a9b59a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079824"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034336"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>应用或删除网站的文件删除策略
 

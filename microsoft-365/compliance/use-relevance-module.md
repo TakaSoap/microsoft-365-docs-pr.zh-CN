@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解相关性模块如何使用相关性工作流的说明以及数据调查（预览）中的培训步骤来分析证据中的数据。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080609"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034484"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>使用相关性模块分析证据中的数据
 
@@ -121,7 +122,7 @@ ms.locfileid: "42080609"
     
   - 暗示：此时不需要相关培训。
     
-[！注意] 尽管数据调查引导您完成整个过程，但在不同的阶段使用建议的后续步骤，它还允许您在选项卡和页面之间导航，并做出选择以解决与您的个人案例、问题或可能相关的情况。文档审阅过程。 
+[！重要说明] 尽管数据调查引导您完成整个过程，但在不同的阶段使用建议的后续步骤，它还允许您在选项卡和页面之间导航，并做出选择，以解决与您的个人案例、问题或文档审阅过程相关的情况。 
   
 可以接受或覆盖 "数据调查" 下一步处理选择。 如果要执行除建议的下一步之外的步骤，请单击对话框中展开的问题显示中列出的**下一步**，单击下一步旁边的 "**修改**" 按钮，然后选择另一个 "下一步" 选项。 
   

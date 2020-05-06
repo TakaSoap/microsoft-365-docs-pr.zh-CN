@@ -1,5 +1,5 @@
 ---
-title: 安全与合规中心内的权限
+title: 权限-Microsoft 365 安全 & 合规性中心
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,13 +16,14 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
-description: 管理员可以了解安全 & 合规中心中提供的权限。
-ms.openlocfilehash: 8fd288aa9a0a409a005c43a1ff685bf29bfef6b3
-ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
+description: 管理员可以了解 Microsoft 365 安全 & 合规性中心中提供的权限。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dda0fe4263c6c62e9ac7829c87caf6332e56f809
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930179"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033910"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全与合规中心内的权限
 

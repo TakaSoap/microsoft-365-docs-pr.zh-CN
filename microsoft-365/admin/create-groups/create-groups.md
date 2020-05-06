@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何创建和删除 Microsoft 365 组、添加和删除组成员以及自定义组的工作方式。
-ms.openlocfilehash: d37058fa3ef3803f3a8f6099d46e1262f314e501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a691f2363547c5bffb4c674d61cddde0cdb0266a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630451"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049211"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建一个组
   
 虽然用户可以从 Outlook 或其他应用程序创建 Microsoft 365 组，作为管理员，您可能需要创建或删除组、添加或移除成员，并自定义它们的工作方式。 Microsoft 365 管理中心是执行此操作的地方。 
 
 > [!TIP]
-> 必须在 Yammer 中创建与 microsoft 365 相连的 Yammer 组，但可以在 Microsoft 365 管理中心（如其他 Microsoft 365 组）中进行管理。 若要了解详细信息，请参阅[Yammer 和 Microsoft 365 组](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)。 
+> 必须在 Yammer 中创建与 microsoft 365 相连的 Yammer 组，但可以在 Microsoft 365 管理中心（如其他 Microsoft 365 组）中进行管理。 若要了解详细信息，请参阅[Yammer 和 Microsoft 365 组](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups)。 
 
 ## <a name="create-a-microsoft-365-group"></a>创建 Microsoft 365 组
 
@@ -49,7 +49,7 @@ ms.locfileid: "43630451"
     
 7. 检查设置并进行任何更改后，选择 "**创建组**"。
 
-8. 选择“**关闭**”。
+8. 选择“关闭”****。
     
 ## <a name="add-members-to-the-group"></a>将成员添加到组
 
@@ -57,7 +57,7 @@ ms.locfileid: "43630451"
 
 ::: moniker range="o365-worldwide"
 
-用户可以[添加自己或请求审批](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即添加。
+用户可以[添加自己或请求审批](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即添加。
 
 1. 在管理中心内刷新页面，使新组显示，然后选择要向其添加成员的组的名称。
     
@@ -67,7 +67,7 @@ ms.locfileid: "43630451"
     
 4. 选择要添加的用户，然后选择 "**保存**"。
     
-5. 选择 "**关闭**三次"。 
+5. 单击“关闭”**** 三次。 
     
 该组将显示在 Outlook 中，并向其分配成员。
 
@@ -75,7 +75,7 @@ ms.locfileid: "43630451"
 
 ::: moniker range="o365-germany"
 
-用户可以[添加自己或请求审批](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即添加。
+用户可以[添加自己或请求审批](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即添加。
 1. 在管理中心内刷新页面，以便显示新组，选择 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">" 组，然后</a>选择要向其添加成员的组。
     
 2. 在 "**成员**" 旁边，选择 "**编辑**"。
@@ -83,7 +83,7 @@ ms.locfileid: "43630451"
     
 4. 选择要添加的用户，然后选择 "**保存**"。
     
-5. 选择 "**关闭**三次"。 
+5. 单击“关闭”**** 三次。 
     
 该组将显示在 Outlook 中，并向其分配成员。
   
@@ -91,7 +91,7 @@ ms.locfileid: "43630451"
 
 ::: moniker range="o365-21vianet"
 
-用户可以[添加自己或请求审批](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即添加。
+用户可以[添加自己或请求审批](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即添加。
 1. 在管理中心内刷新页面，以便显示新组，选择 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">" 组，然后</a>选择要向其添加成员的组。
     
 2. 在 "**成员**" 旁边，选择 "**编辑**"。
@@ -99,7 +99,7 @@ ms.locfileid: "43630451"
     
 4. 选择要添加的用户，然后选择 "**保存**"。
     
-5. 选择 "**关闭**三次"。 
+5. 单击“关闭”**** 三次。 
     
 该组将显示在 Outlook 中，并向其分配成员。
   
@@ -119,7 +119,7 @@ ms.locfileid: "43630451"
 
 ## <a name="related-articles"></a>相关文章
 
-[管理对 Microsoft 365 组的来宾访问](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[管理对 Microsoft 365 组的来宾访问](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [选择创建 Microsoft 365 组时要使用的域](choose-domain-to-create-groups.md)
 

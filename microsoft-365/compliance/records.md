@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 要在 Office 365 或 Microsoft 组织中实现记录管理策略，请使用将内容声明为记录的保留标签。 然后发布或自动应用保留记录标签。
-ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632111"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949279"
 ---
 # <a name="overview-of-records"></a>记录概述
 
@@ -38,7 +38,7 @@ ms.locfileid: "43632111"
 
 - 记录在声明的保留期结束后被处置
 
-你可以使用[保留标签](labels.md)将内容分类为记录。 创建声明记录的保留标签后，可以将这些标签[发布](labels.md#how-retention-labels-work-with-retention-label-policies)（以便用户可以使用这些标签将内容分类为记录）或[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)到你想分类为记录的内容。 通过使用保留标签声明记录，你可在 Office 365 中实施一致且单一的记录管理策略，而其他记录管理功能（如记录中心）仅适用于 SharePoint Online 内容。
+使用[保留标签](labels.md)将内容分类为记录。 创建声明记录的保留标签后，可以将这些标签[发布](labels.md#how-retention-labels-work-with-retention-label-policies)（以便用户可以使用这些标签将内容分类为记录）或[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)到你想分类为记录的内容。 通过使用保留标签声明记录，你可在 Office 365 中实施一致且单一的记录管理策略，而其他记录管理功能（如记录中心）仅适用于 SharePoint Online 内容。
 
 请记住下列有关记录的事项：
 
@@ -74,10 +74,10 @@ ms.locfileid: "43632111"
 
 创建保留标签时，可视需要使用保留标签将内容分类为记录。 若要将内容声明为记录，请按照下列步骤操作：
 
-1. 创建保留标签。 在 Microsoft 365 合规性中心，转到“记录管理”****\>“文件计划”****。 在“文件计划”**** 页面上，单击“创建标签”****。
+1. 创建保留标签。 在 Microsoft 365 合规性中心，转到“记录管理”****\>“文件计划”****。 在“文件计划”**** 页面上，选择“创建标签”****。
 
-2. 在向导的“标签设置”**** 页面上，选择将保留标签设置为“将内容声明为记录”的选项。<br/>
-
+2. 在向导的“标签设置”**** 页面上，选择将保留标签设置为“将内容声明为记录”的选项。
+    
    ![选中“使用标签将内容分类为‘记录’”复选框](../media/recordversioning6.png)
 
 3. 将保留标签[发布](labels.md#how-retention-labels-work-with-retention-label-policies)或[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)到 SharePoint 网站和/或 OneDrive 帐户。

@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: 有关 Exchange Online 和独立 Exchange Online Protection （EOP）中的反垃圾邮件保护的管理员常见问题和解答。
-ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 本主题提供有关反垃圾邮件保护的常见问题解答 & 解答。 适用于 Microsoft Exchange online & Exchange Online Protection （EOP）客户的答案。
+ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636054"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033734"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
@@ -67,7 +69,7 @@ A. 可能需要长达1小时才能使更改生效。
 
 ## <a name="q-is-bulk-email-filtering-automatically-enabled"></a>增长率. 批量电子邮件筛选是否自动启用？
 
-A. 可以。 有关批量电子邮件的详细信息，请参阅[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+A. 是。 有关批量电子邮件的详细信息，请参阅[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
 ## <a name="q-does-the-service-provide-url-filtering"></a>增长率. 该服务是否提供 URL 筛选？
 
@@ -97,7 +99,7 @@ A.如果通过服务发送自用户的超过一半的邮件是在某段时间范
 
 ## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>增长率. 是否可以将第三方反垃圾邮件和反恶意软件提供程序与 Exchange Online 结合使用？
 
-A. 可以。 尽管我们建议您将 MX 记录指向 Microsoft，但我们意识到有合法的商业原因将电子邮件路由到 Microsoft 之前的某个位置。
+A. 是。 尽管我们建议您将 MX 记录指向 Microsoft，但我们意识到有合法的商业原因将电子邮件路由到 Microsoft 之前的某个位置。
 
 - **入站**：更改您的 MX 记录以指向第三方提供程序，然后将邮件重定向到 EOP 以进行其他处理。 有关详细信息，请参阅[针对 Exchange Online 中的连接器增强筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
@@ -105,7 +107,7 @@ A. 可以。 尽管我们建议您将 MX 记录指向 Microsoft，但我们意�
 
 ## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>增长率. Microsoft 是否拥有任何有关如何保护自己免受网络钓鱼诈骗之害的文档？
 
-A. 可以。 有关详细信息，请参阅[在 internet 上保护你的隐私](https://support.microsoft.com/help/4091455)
+A. 是。 有关详细信息，请参阅[在 internet 上保护你的隐私](https://support.microsoft.com/help/4091455)
 
 ## <a name="q-are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>增长率. 垃圾邮件和恶意软件邮件是由谁发送或转移到执法部门进行调查的？
 

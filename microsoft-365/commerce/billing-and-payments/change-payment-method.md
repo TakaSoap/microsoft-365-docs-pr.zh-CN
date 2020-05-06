@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 了解如何更改业务订阅的付款方式。
-ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708151"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045900"
 ---
 # <a name="change-your-payment-method"></a>更改付款方式
 
@@ -53,7 +53,7 @@ ms.locfileid: "43708151"
 如果您从信用卡或银行帐户更改为发票，则任何未完成的余额将转移到下一张发票。
   
 > [!NOTE]
-> 如果通过信用卡支付，且信用卡被拒绝，您会收到一封电子邮件，让您知道我们无法处理付款。 您可以更新信用卡信息，并通过使用 "**产品" & "服务**" 页上的 "**结算余额**" 链接立即提交付款。 有关详细信息，请参阅[如果我的信用卡被拒绝且付款过期，该怎么办？](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
+> 如果通过信用卡支付，且信用卡被拒绝，您会收到一封电子邮件，让您知道我们无法处理付款。 您可以更新信用卡信息，并通过使用 "**产品**" 页面上的 "**结算余额**" 链接立即提交付款。 有关详细信息，请参阅[如果我的信用卡被拒绝且付款过期，该怎么办？](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
   
 ::: moniker-end
 
@@ -86,9 +86,9 @@ ms.locfileid: "43708151"
 > [!TIP]
 > 以下步骤仅适用于单个订阅。如果你的组织中有多个订阅，则为每个你希望进行更改的订阅完成这些步骤。
   
-当您从发票付款更改为支付信用卡或银行帐户时，我们会自动为您创建一个新的订阅，将用户移动到新订阅，然后禁用旧订阅。 不要担心，你的用户将不会看到服务中断，并且所有信息都将通过新订阅提供。
+当你将通过发票支付更改为通过信用卡或银行账户支付时，我们会自动为你创建新的订阅，并将你的用户移至新订阅，然后禁用你的旧订阅。 请不要担心，为你的用户提供的服务不会中断，他们的所有信息都可以通过新的订阅获得。
 
-1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果是在**表格**视图中，请选择 "**卡片**"。
 
@@ -139,20 +139,20 @@ ms.locfileid: "43708151"
 
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>从信用卡或银行帐户更改为发票
 
-仅当订单高于某一数量时，才能更改为按发票付款。 如果不满足要求，则会看到消息 "您的订单数量不够大，无法满足使用支票线路的发票资格"。
+只有订单高于特定数量时，才能更改为使用发票付款。 如果未满足要求，你将看到消息“你的订单数量不够大，无法享受支票或电汇式发票付款。"
 
-如果您的订单数量过高，可能需要进行信用检查。 如果是这样，您会看到 "不符合更改为发票的消息" 消息。 您的订单需要进行信用检查。 在这种情况下，您将改为手动按发票付款。 使用以下步骤完成手动更改。
+如果你的订单数量过高，可能需要进行信用检查。 如果是这样，你将看到消息“无法更改为发票。 你的订单需进行信用检查。” 在这种情况下，你可以手动更改为通过发票付款。 使用以下步骤完成手动更改。
 
-1. 转到<a href="https://Office365.com" target="_blank">Office365.com</a>并购买与您当前拥有的订阅相同的订阅。 在 "签出" 中，选择选项 "按发票付款"。
+1. 转到<a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>并购买与您当前拥有的订阅相同的订阅。 在 "签出" 中，选择选项 "按发票付款"。
 
     > [!IMPORTANT]
-    > 您不能使用管理中心中的 "**产品 & 服务**" 页面购买订阅。 必须使用<a href="https://Office365.com" target="_blank">Office365.com</a>。
+    > 您不能使用管理中心的 "**产品**" 页面购买订阅。 必须使用<a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>。
 
 2. 购买完成后，取消原始订阅。 您的用户将自动移到新订阅。
 
 如果不需要进行信用检查，请使用以下步骤更改为 "按发票付款"。
 
-1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果是在**表格**视图中，请选择 "**卡片**"。
 
@@ -198,7 +198,7 @@ ms.locfileid: "43708151"
 
 可随时使用以下步骤来验证为订阅配置的付款方式。
 
-1. 在 "管理中心" 中，转到 "**帐单**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 查找要验证的订阅。 为订阅配置的付款方式将显示在 "**帐单**" 部分中。
 

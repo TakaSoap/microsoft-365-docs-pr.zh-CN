@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: 了解有关金融的 Microsoft 365 自助注册和可用自助服务程序，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365。
 ms.custom: okr_SMB
-ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627796"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045268"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>在你的组织中使用自助服务注册
 
@@ -42,7 +42,7 @@ ms.locfileid: "43627796"
 
 3. 我们验证其电子邮件地址，然后可以立即开始使用 Microsoft 365、Power BI 或其他服务。
 
-4. 作为业务管理员，你可以通过查看 "管理中心" 中的 "**产品 & 服务**" 页来查看谁注册了订阅。 这样一来，你可以看到租户中的服务存在新的或无法识别的许可证。 若要控制用户是否可以注册自助服务订阅，请将[Set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell Cmdlet 与**AllowAdHocSubscriptions**参数一起使用。 有关详细信息，请参阅[如何控制自助服务设置？](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. 作为业务管理员，你可以通过查看管理中心中的 "**产品**" 页面查看已注册订阅的用户。 这样一来，你可以看到租户中的服务存在新的或无法识别的许可证。 若要控制用户是否可以注册自助服务订阅，请将[Set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell Cmdlet 与**AllowAdHocSubscriptions**参数一起使用。 有关详细信息，请参阅[如何控制自助服务设置？](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## <a name="available-self-service-programs"></a>可用的自助服务程序
 
@@ -64,5 +64,5 @@ ms.locfileid: "43627796"
 |**Microsoft 批量许可证服务中心** <br/> |Microsoft 批量许可证服务中心显示了在企业、选择、教育（校园或学校）、开放价值、开放许可证和 ISV 版税协议下购买的许可证。  <br/> |[VLSC 培训和资源](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft 教育版** <br/> |通过使用 Minecraft 作为学习的平台，教师可以鼓励和鼓舞每个学生以实现更多，并 ignite 为学习提供热情。 加入一社区教师学习，了解如何使用 Minecraft 解锁学生潜力。  <br/> |[Minecraft 教育版](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft 教育版](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |在组织中上载并共享视频，以改进通信、参与和学习。  <br/> |[注册&amp;第0天的体验](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
-|**电源自动化** <br/> |电力自动化是一种产品，可帮助您在收藏的应用程序和服务之间设置自动工作流，以同步文件、获取通知、收集数据等。  <br/> |[注册并登录以实现自动完成功能](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[电源自动化](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
+|**Power Automate** <br/> |电力自动化是一种产品，可帮助您在收藏的应用程序和服务之间设置自动工作流，以同步文件、获取通知、收集数据等。  <br/> |[注册并登录以实现自动完成功能](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**电源虚拟代理** <br/> |使用高级虚拟代理，团队可以使用无需数据科学家或开发人员，轻松创建功能强大的 bot，而无需使用引导式无代码图形界面。 电源虚拟代理解决了当今行业中的 bot 组装中的许多主要问题。 它消除了行业专家和构建 bot 的开发团队之间的缺口，以及识别问题和更新机器人以解决问题的团队之间的持续时间延迟。  <br/> |[许可和访问详细信息](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[注册 Power Virtual 代理](https://aka.ms/TryPVA) <br/> |
