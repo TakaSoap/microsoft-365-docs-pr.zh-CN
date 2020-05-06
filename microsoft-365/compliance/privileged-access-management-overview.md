@@ -14,15 +14,17 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 使用本主题可了解有关权限访问管理的详细信息
-ms.openlocfilehash: 932e4d5574ac14c7dd76f8df70b61ed274acebbf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 本文提供了有关 Microsoft 365 中的特权访问管理的概述，其中包括对常见问题（Faq）的解答。
+ms.openlocfilehash: eb5fe5320c061d40f0882f93b66afa3cad4fa0fa
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626498"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036035"
 ---
 # <a name="privileged-access-management"></a>特权访问管理
 
@@ -70,7 +72,7 @@ ms.locfileid: "43626498"
 
 ![步骤4：访问处理](../media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>哪些 Sku 可以使用 Office 365 中的特权访问？
 
@@ -96,6 +98,6 @@ ms.locfileid: "43626498"
 
 开始[为您的组织配置特权访问管理](privileged-access-management-configuration.md)。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 [交互式指南：使用特权访问管理监视和控制管理员任务](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

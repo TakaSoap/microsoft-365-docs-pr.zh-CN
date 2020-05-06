@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: 定义安全附件策略以保护您的组织免受电子邮件中的恶意文件的攻击。
-ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何定义安全附件策略以保护组织免受电子邮件中的恶意文件的攻击。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638340"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035316"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -45,7 +46,7 @@ ms.locfileid: "43638340"
 
 - 请确保您具有必要的权限。 若要定义（或编辑） ATP 策略，您必须分配有 Exchange Online 组织管理角色（默认情况下全局管理员分配给此角色）或 Exchange Online 卫生管理和安全管理员角色。 有关更多详细信息，请参阅下表：
 
-  |Role|分配的位置/方式|
+  |角色|分配的位置/方式|
   |---------|---------|
   |全局管理员 |默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）|
   |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
@@ -80,7 +81,7 @@ ms.locfileid: "43638340"
 
    - 在 "**应用**于" 部分中，选择 **"收件人域**"，然后选择您的域。 选择 "**添加**"，然后选择 **"确定"**。
 
-6. 选择“**保存**”。
+6. 选择**保存**。
 
 考虑为您的组织设置多个 ATP 安全附件策略。 这些策略将按其在**ATP 安全附件**页面上列出的顺序应用。 在定义或编辑策略之后，至少需要30分钟才能使策略在整个 Microsoft 数据中心中生效。
 

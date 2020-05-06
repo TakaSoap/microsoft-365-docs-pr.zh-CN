@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 使用高级电子数据展示事例中的 "通信" 选项卡来管理保管人通知工作流。
-ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+description: 使用高级电子数据展示事例中的通信工具发送、收集和跟踪合法保留通知。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280230"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035784"
 ---
 # <a name="create-a-legal-hold-notice"></a>创建合法保留通知
 

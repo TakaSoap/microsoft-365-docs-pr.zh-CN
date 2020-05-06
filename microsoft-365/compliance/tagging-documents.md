@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1c0eaed5d5971a55e4e9851bac3133bcd961eb36
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 在审阅集中标记文档有助于删除不必要的内容，并在高级电子数据展示事例中标识相关内容。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 445bf9a0ee5959c4972920a74e7bd1596d9edca1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557692"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034546"
 ---
 # <a name="tag-documents-in-a-review-set"></a>标记审阅集中的文档
 
-在查看集中组织内容对于在电子数据展示过程中完成各种工作流非常重要。 这包括：
+在查看集中组织内容对于在电子数据展示过程中完成各种工作流非常重要。 具体包括：
 
 - 剔除不必要的内容
 

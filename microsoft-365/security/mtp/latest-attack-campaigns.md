@@ -1,6 +1,6 @@
 ---
-title: 通过 Microsoft 365 安全中心中的威胁分析了解最新的攻击宣传活动和技术
-description: 介绍 Microsoft 365 安全中心中的威胁分析交互报告
+title: 通过威胁分析了解最新的攻击活动和技术
+description: 使用 Microsoft 365 中的威胁分析交互式报告评估您的组织的安全状况和恢复能力，以抵御新出现的威胁。
 keywords: security、恶意软件、Microsoft 365、M365、security center、威胁分析、Microsoft Defender ATP、网络、安全状态、新威胁
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: fcb58c2c002878fe42c723e0c2c75aa269ebc368
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1c058754ff65510ffd005a4017195bf0afa85eb0
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087551"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034042"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>通过威胁分析了解最新的攻击活动和技术 
 

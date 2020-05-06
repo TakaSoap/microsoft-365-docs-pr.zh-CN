@@ -14,21 +14,23 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 使用本主题可了解有关配置特权访问管理的详细信息。
-ms.openlocfilehash: 196685eda6818b399c778363ee458f6f2792a33a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 使用此文章了解有关在 Office 365 中启用和配置特权访问管理的详细信息。
+ms.openlocfilehash: cbb38c2edff0c85e24855e3f6a1613ad8a92043e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626508"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036417"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特权访问管理入门
 
 本主题指导您在组织中启用和配置特权访问管理。 您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在开始使用特权访问管理之前，应确认你的[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用特权访问管理，您的组织必须具有以下订阅或加载项之一：
 
@@ -296,7 +298,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 5. 选择要删除的策略，然后选择 "**删除策略**"。
 
-6. 选择“**关闭**”。
+6. 选择“关闭”****。
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell 中
 

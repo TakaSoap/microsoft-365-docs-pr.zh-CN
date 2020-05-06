@@ -1,5 +1,5 @@
 ---
-title: Microsoft 威胁防护中的高级搜寻概述
+title: 概述-高级搜寻
 description: 了解 Microsoft 365 中的高级搜寻查询以及如何使用它们来主动查找网络中的威胁和弱点
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、microsoft 365、Microsoft 威胁防护
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: dc91b97f48d6a5ca76c405e4c1006dceb9dc0b34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c4b5d58a006591da23d37aaeccf72cfccc6d1c43
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929024"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033970"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>通过 Microsoft 威胁防护中的高级搜寻主动搜寻威胁
 
@@ -35,7 +36,7 @@ ms.locfileid: "42929024"
 
 您可以使用相同的威胁搜寻查询来生成自定义检测规则。 这些规则会自动运行以检查和响应各种事件和系统状态，包括可疑的入侵活动和误配置的计算机。
 
-在 Microsoft 365 安全中心中，高级搜索支持从各种工作区查看数据的查询，包括有关设备、电子邮件、应用程序和 Microsoft Defender ATP、Office 365 ATP、Microsoft 云应用安全性和 Azure 中的标识的数据ATP. 若要使用高级搜寻，请[打开 Microsoft 威胁防护](mtp-enable.md)。
+在 Microsoft 365 安全中心中，高级搜索支持从各种工作区查看数据的查询，其中包括有关设备、电子邮件、应用程序和 Microsoft Defender ATP、Office 365 ATP、Microsoft 云应用安全性和 Azure ATP 等标识的数据。 若要使用高级搜寻，请[打开 Microsoft 威胁防护](mtp-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 
@@ -49,12 +50,6 @@ ms.locfileid: "42929024"
 | **利用预定义查询** | 浏览涵盖不同威胁搜寻方案的预定义查询集合。 | [使用共享查询](advanced-hunting-shared-queries.md) |
 | **优化查询** | 了解如何创建高效查询以及组合电子邮件和设备中的数据的查询。 | - [查询最佳实践](advanced-hunting-shared-queries.md) <br>- [跨设备和电子邮件的智能寻线](advanced-hunting-best-practices.md) |
 | **创建自定义检测规则** | 了解如何使用高级搜寻查询来触发通知并自动应用响应操作。 | - [自定义检测概述](custom-detections-overview.md)<br>- [自定义检测规则](custom-detection-rules.md) |
-
-## <a name="get-help-as-you-write-queries"></a>编写查询时获取帮助
-利用以下功能更快地编写查询：
-- **Autosuggest** —在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
-- **架构参考** — 工作区域旁边提供了包含表及其列的列表的架构参考。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
-
 
 ## <a name="related-topics"></a>相关主题
 - [了解查询语言](advanced-hunting-query-language.md)

@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: 用户需要在安全 & 合规性中心中分配权限，然后才能管理其任何安全性或合规性功能。
-ms.openlocfilehash: 5110bcecb6731cbf51023c6df19bed30bcba72c1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 用户需要在 Microsoft 365 安全 & 合规性中心中分配权限，才能管理其任何安全性或合规性功能。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d6071bb6260e0c0f524eb6e5d4e78c78fa8ff750
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638054"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036664"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>向用户授予对安全与合规中心的访问权限
 

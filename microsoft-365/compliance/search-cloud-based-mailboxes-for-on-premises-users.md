@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 MicrosoftTeams 聊天数据（称为 1xN 聊天）。
-ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626448"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034567"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>搜索本地用户基于云的邮箱
 
@@ -47,7 +47,7 @@ ms.locfileid: "43626448"
   
 下图显示了搜索、预览和导出本地用户的 Teams 聊天数据的工作流。
   
-![Microsoft Teams 中的本地用户基于云的存储空间](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Microsoft Teams 中的本地用户基于云的存储空间](../media/EHAMShard1.png)
   
 除了此新功能之外，你仍可以使用内容搜索在基于云的 SharePoint 网站和与每个 Microsoft Team 关联的 Exchange 邮箱中搜索、预览和导出 Teams 内容，以及在基于云的用户的 Exchange Online 邮箱中搜索、预览和导出 1xN Teams 聊天数据。
 

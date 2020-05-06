@@ -1,5 +1,5 @@
 ---
-title: 零小时自动清除（ZAP）-针对垃圾邮件、恶意软件和网络钓鱼的 retroactive 保护。
+title: 零小时自动清除（ZAP）-电子邮件保护功能
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,15 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: 零小时自动清除（ZAP）是 Microsoft 365 中的一种电子邮件保护功能，用于检测已传递到 Exchange Online 的垃圾邮件、恶意软件或网络钓鱼邮件。 ZAP 的工作方式取决于检测到的恶意内容的类型。
-ms.openlocfilehash: f1b36f1152882f446c8f611ceafb44a085cc0a5d
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: 了解 Microsoft 365 中的零小时自动清除（ZAP），这是一种检测已传递到 Exchange Online 的垃圾邮件、恶意软件或网络钓鱼邮件的电子邮件保护功能。
+ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708447"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034922"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>在 Microsoft 365 中针对垃圾邮件和恶意软件的零小时自动清除（ZAP）保护
 

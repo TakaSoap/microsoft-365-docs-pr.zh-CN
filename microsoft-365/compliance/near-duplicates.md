@@ -1,5 +1,5 @@
 ---
-title: 近似重复检测
+title: 接近重复检测-数据调查
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: e1a9ffe264925911f475732ffd98a43fa533e458
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 在管理数据调查时，请使用接近重复检测在分析事例数据时将类似的文档分组在一起。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: aa451051c008f7a1614661d3bd66129cac6bb4ad
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071299"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036427"
 ---
 # <a name="near-duplicate-detection"></a>近似重复检测
 

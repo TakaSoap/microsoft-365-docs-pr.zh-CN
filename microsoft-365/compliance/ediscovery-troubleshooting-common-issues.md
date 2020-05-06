@@ -16,14 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 调查、解决电子数据展示中的常见问题和解决问题。
+description: 了解在 Office 365 电子数据展示中解决常见问题时可以采取的基本疑难解答步骤。
 siblings_only: true
-ms.openlocfilehash: 5bcbe498cb650268dc8ff6f2b41a6201e75a8192
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f8b73e886e9aa639ff5575f10822417411a0784e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631767"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035664"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、解决和解决常见的电子数据展示问题
 
@@ -51,7 +52,7 @@ ms.locfileid: "43631767"
    > |名称  |RecipientType  |
    > |---------|---------|
    > |别名、用户     |MailUser         |
-   > |别名、用户     |User         |
+   > |别名、用户     |用户         |
 
 3. 如果返回多个用户，请找到并修复冲突的对象。
 

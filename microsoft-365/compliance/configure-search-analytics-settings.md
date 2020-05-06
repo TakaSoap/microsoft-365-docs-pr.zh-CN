@@ -1,5 +1,5 @@
 ---
-title: 配置搜索和分析设置
+title: 配置搜索和分析设置-数据调查
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: bfd7c89531c2c1592f5e48f0c7656560831b392d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何在管理数据调查时配置搜索和分析设置，如临近重复项、电子邮件线程和主题。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 06f39a3dd52ecb872c671035460bab9a34956e49
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078299"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033662"
 ---
 # <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
 

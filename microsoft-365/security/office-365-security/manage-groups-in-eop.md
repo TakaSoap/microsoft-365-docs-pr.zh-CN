@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: 您可以使用 Exchange Online Protection (EOP) 为 Exchange 组织创建启用邮件的组。 您还可以使用 EOP 定义或更新可指定成员资格、电子邮件地址和组其他方面的组属性。
-ms.openlocfilehash: ad07066906f78703c568850afbfa5dfa8d8cc3c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您将了解如何在 Exchange Online Protection （EOP）中为 Exchange 组织创建和管理已启用邮件的组。
+ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082883"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034398"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
@@ -70,7 +72,7 @@ ms.locfileid: "42082883"
      > [!NOTE]
      > 所有者不必是组的成员。
 
-   - **Members**：使用此部分可添加组成员并指定是否需要审批人员加入或离开组。 若要向组中添加成员， **** ![请单击 "](../../media/ITPro-EAC-AddIcon.gif)添加添加图标"。
+   - **Members**：使用此部分可添加组成员并指定是否需要审批人员加入或离开组。 若要向组中添加成员， **Add** ![请单击 "](../../media/ITPro-EAC-AddIcon.gif)添加添加图标"。
 
 4. 单击“确定”**** 返回原始页面。
 
@@ -84,7 +86,7 @@ ms.locfileid: "42082883"
 
    - 若要编辑组，请执行以下操作：在组列表中，单击要查看或更改的组，然后单击 "**编辑** ![编辑](../../media/ITPro-EAC-EditIcon.gif)图标"。 您可以根据需要更新常规设置、添加或删除组所有者，以及添加或删除组成员。
 
-   - 若要删除组，请选择组，然后**** ![单击 "删除](../../media/ITPro-EAC-RemoveIcon.gif)删除图标"。
+   - 若要删除组，请选择组，然后**Remove** ![单击 "删除](../../media/ITPro-EAC-RemoveIcon.gif)删除图标"。
 
 3. 完成更改后，请单击 "**保存**"。
 
