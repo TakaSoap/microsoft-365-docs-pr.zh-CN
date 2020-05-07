@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 作为 Microsoft 365 用户，你可以查看、释放和删除隔离的邮件，即你是收件人、但被垃圾邮件筛选功能隔离为垃圾邮件或群发电子邮件的邮件。 在安全与合规中心内，查看和管理已隔离邮件。
-ms.openlocfilehash: b8ab5835a29ccf0c58d27f56fe84d29745419b1a
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，你将了解如何在 Microsoft 365 的安全与合规中心中查看和管理隔离邮件。
+ms.openlocfilehash: 177f60f1fccc764d74ec0374249a62c602cb84aa
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43809010"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036508"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user"></a>以用户身份查找并释放隔离的邮件
 

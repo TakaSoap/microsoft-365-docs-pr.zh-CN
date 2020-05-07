@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 17820674f9c6db417289a232f006c115e7060d01
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 85c629c12ec1a9fccd8c8a3bd6b1e9e8b63ded39
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637152"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066049"
 ---
 # <a name="nen-7510"></a>NEN 7510
 
@@ -79,7 +79,3 @@ Microsoft 已在其全球保证与 NEN 7510 标准中的控制措施之间创建
 - [关于 NEN](https://www.nen.nl/About-NEN.htm)
 - [NEN 7510:2011 标准](https://www.nen.nl/NEN-Shop-2/Standard/NEN-75102011-nl.htm)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/D/E/3DE55FFB-0B45-49BC-851E-3696C8BD5FB7/NEN7510-Compliance.pdf)。

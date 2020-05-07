@@ -1,5 +1,5 @@
 ---
-title: 合规性管理器有助于在使用 Microsoft 云服务时符合数据保护和法规要求
+title: Microsoft 云服务的合规性管理器符合数据保护和法规要求
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服务信任门户中的合规性管理器提供用于跟踪、实现和管理控制措施的工具，以确保在衡量依据为 Microsoft 云服务（如 Office 365 和 Microsoft Azure）时，组织符合安全和数据保护行业标准（如 GDPR、ISO 27001、27018 和 HIPAA）。使用合规性管理器，负责监督组织数据保护和隐私策略的人员可管理合规性和风险评估流程。
-ms.openlocfilehash: 3019378c82e263ce438b385a998dcf2475f3b62d
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9cfa034de5d8116485a7d371c40ef55b0466103
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790619"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034218"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合规性管理器（经典）
 

@@ -17,16 +17,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: 要求远程工作者通过多重身份验证 (MFA) 登录。
-ms.openlocfilehash: f8154f35baaf693bb51c523cfe4c44374437de02
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: dfb4262c05399e1c5add9b151c42c143ac723a7d
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003575"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066123"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步骤 1. 通过 MFA 提高远程工作者的登录安全性
 
 要提高远程工作者的登录安全性，请使用多重身份验证 (MFA)。 MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使恶意用户确定了用户帐户密码，还必须能够响应其他验证（如发送到智能手机的短信）才能获得访问权限。
+
+![正确的密码和其他验证会导致登录成功](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 对于所有用户（包括远程工作者，特别是管理员），Microsoft 强烈建议实施 MFA。
 

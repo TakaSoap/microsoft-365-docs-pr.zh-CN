@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '将您的初始电子邮件地址更改为友好的电子邮件地址，如 tom@fourthcoffee.com。 若要执行此操作，您需要购买域名，并将其添加到 Microsoft 365。 '
-ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: baa2e49d98ed1d7b3de9af78b84403d028b4c91d
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629055"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053820"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
@@ -53,7 +53,7 @@ Office 365 德国的初始电子邮件地址包括 onmicrosoft.de，如 tom@four
 
 ::: moniker-end
 
-当您将您的域的电子邮件更改为 Microsoft 365 时，在安装过程中更新您的域的 MX 记录，发送到该域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已在 Microsoft 365 中添加了用户并创建了邮箱，以便在更改 MX 记录之前在您的域中有电子邮件的所有人。 不想将你的域中每个人的电子邮件移至 Microsoft 365 吗？ 您可以采取步骤[仅使用几个电子邮件地址来试用 Microsoft 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)。
+当您将您的域的电子邮件更改为 Microsoft 365 时，在安装过程中更新您的域的 MX 记录，发送到该域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已在 Microsoft 365 中添加了用户并创建了邮箱，以便在更改 MX 记录之前在您的域中有电子邮件的所有人。 不想将你的域中每个人的电子邮件移至 Microsoft 365 吗？ 您可以采取步骤[仅使用几个电子邮件地址来试用 Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心将您的电子邮件地址更改为使用您的自定义域
 

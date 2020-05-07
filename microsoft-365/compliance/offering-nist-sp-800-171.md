@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e1bd69e7038ce3bf6372a3f53cd985ce54f350a8
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781447"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065807"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
@@ -57,11 +57,11 @@ NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准�
 
 - [Azure 蓝图示例](https://docs.microsoft.com/azure/governance/blueprints/samples/)：获取对实施符合 NIST 的控件的工作负荷的支持。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **对于我的组织，我可以使用 Microsoft 合规性的 NIST SP 800 –171吗？**
 
-正确。 Microsoft 客户可以使用来自 FedRAMP 标准的独立第三方评估组织（3PAO）的报告中所述的审核控件，作为其自己的 FedRAMP 和 NIST 风险分析和资格验证工作的一部分。 这些报告证明 Microsoft 已在其范围内的云服务中实现的控制措施的有效性。 客户负责确保其 CUI 工作负载符合 NIST SP 800 –171准则。
+是。 Microsoft 客户可以使用来自 FedRAMP 标准的独立第三方评估组织（3PAO）的报告中所述的审核控件，作为其自己的 FedRAMP 和 NIST 风险分析和资格验证工作的一部分。 这些报告证明 Microsoft 已在其范围内的云服务中实现的控制措施的有效性。 客户负责确保其 CUI 工作负载符合 NIST SP 800 –171准则。
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 
@@ -76,7 +76,3 @@ NIST SP 800 –171要求是 NIST SP 800-53 的子集，FedRAMP 使用的标准�
 - [Microsoft 和 NIST Cybersecurity 框架](offering-nist-csf.md)
 - [Microsoft 政府云](https://www.microsoft.com/enterprise/government)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf )。
