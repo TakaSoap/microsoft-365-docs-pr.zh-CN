@@ -42,6 +42,8 @@
       items:
         - name: 了解通信合规性
           href: communication-compliance.md
+        - name: 通信合规性规划
+          href: communication-compliance-plan.md
         - name: 通信合规性入门
           href: communication-compliance-configure.md
         - name: 调查和修正通信合规性警报

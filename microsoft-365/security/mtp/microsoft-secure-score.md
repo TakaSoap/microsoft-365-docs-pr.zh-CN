@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804758"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141503"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -38,7 +38,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。
 
@@ -52,7 +52,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包括的产品
 
-目前有一些建议，其中包括 SharePoint Online、Exchange Online、OneDrive for Business、Microsoft 信息保护等）、Azure AD 和云应用安全性。 对其他安全产品（如 Azure ATP 和 Microsoft Defender ATP）的建议即将推出。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为第三方覆盖。
+目前有关于 Microsoft 365 （包括 Exchange Online）、Azure AD、Microsoft Defender ATP、Azure ATP 和云应用安全性的建议。 即将推出针对其他安全产品的建议。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为第三方覆盖。
 
 ## <a name="required-permissions"></a>所需权限
 
@@ -110,8 +110,6 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 ### <a name="actions"></a>操作
 
-Microsoft 安全分数不会跟踪标记为 [未评分] 的操作。 你仍可以采取措施，但完成这些操作不会影响你的分数。 如果某个操作在将来被 Microsoft 安全得分跟踪，并且您已完成该操作，则安全得分将自动反映所做的更改。
-
 当您选择特定的 "改进" 操作时，将显示 "飞出"。 若要完成此操作，您有几个选项：
 
 1. 选择 "**查看设置**" 以转到配置屏幕并进行更改。 然后，您可以在飞出的顶部看到该操作值得的要点。点可能需要长达24小时才能更新。
@@ -122,7 +120,7 @@ Microsoft 安全分数不会跟踪标记为 [未评分] 的操作。 你仍可�
 
 ![安全分数提高操作示例](../../media/secure-score/secure-score1x450.png)
 
-*图 2 & 3：改进操作 flyouts*
+*图2：改进操作浮出控件*
 
 ## <a name="monitor-improvements-over-time"></a>随着时间的推移监视改进
 
@@ -132,7 +130,7 @@ Microsoft 安全分数不会跟踪标记为 [未评分] 的操作。 你仍可�
 
 Microsoft 安全分数是基于系统配置、用户行为和其他与安全相关的度量的安全状态的数字摘要;它并不是对系统或数据受到破坏的可能性的绝对度量。 相反，它表示您在 Microsoft 环境中已采用安全控制的程度，这有助于抵消受到破坏的风险。 无在线服务完全不受安全破坏，并且安全分数不应以任何方式解释为保证安全。
 
-## <a name="whats-new"></a>有哪些新增功能？
+## <a name="whats-new"></a>新变化？
 
 若要使 Microsoft 安全得分更好地代表安全状态，我们做出了一些更改。 若要了解计划的更改，请参阅[Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
 
@@ -215,7 +213,7 @@ Microsoft 安全分数将更新改进操作以支持[AZURE AD 中的安全默认
 删除了改进操作：
 
 - 为多因素身份验证注册所有用户
-- 要求对所有用户进行 MFA
+- 要求对所有用户执行 MFA
 - 需要对 Azure AD 特权角色进行 MFA
 
 添加了改进操作：

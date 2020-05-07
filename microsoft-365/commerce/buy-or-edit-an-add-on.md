@@ -22,17 +22,16 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: 了解如何购买外接程序，以将其他功能添加到 Microsoft 365 for business 订阅中。 您还可以更新和删除加载项。
 ms.custom: okr_SMB
-ms.openlocfilehash: 011ed188f741f2f026b452a2ecfd8b8c1b01c66e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 801da522c9fea9efcc4d3d4a0285a6ffcb5adc0b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634916"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045784"
 ---
 # <a name="buy-or-edit-an-add-on"></a>购买或编辑附加设备
 
 Microsoft 365 for business 计划中有几个是可以为订阅购买的加载项。 为订阅购买了加载项后，加载项可为其提供其他功能。
-
 
 ## <a name="buy-an-add-on"></a>购买加载项
 
@@ -98,22 +97,21 @@ Microsoft 365 for business 计划中有几个是可以为订阅购买的加载�
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>更新加载项
 
-用于更新加载项的步骤取决于该加载项是传统加载项还是独立加载项，或者是独立加载项。 
+用于更新加载项的步骤取决于该加载项是传统加载项还是独立加载项，或者是独立加载项。
 
 将*传统加载项*链接到特定订阅。 如果取消订阅，则关联的加载项也会被取消。
   
-*独立加载项*未链接到特定订阅。 独立加载项在 "**订阅**" 页上显示为单独的订阅（或在新管理中心中的 "**产品 & 服务**" 页上），并拥有自己的到期日期。 管理独立加载项的方式与管理任何其他订阅的方式相同。
+*独立加载项*未链接到特定订阅。 独立加载项在 "**产品**" 页面上显示为单独的订阅，并拥有自己的到期日期。 管理独立加载项的方式与管理任何其他订阅的方式相同。
   
 ### <a name="update-a-traditional-add-on"></a>更新传统加载项
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
-2. 在 "**产品 & 服务**" 页上，选择要为其更新加载项的订阅。
+2. 在 "**产品**" 页上，选择要为其更新加载项的订阅。
 
 3. 选择 "**加载项**"。 将显示已购买的加载项。
 
@@ -122,7 +120,6 @@ Microsoft 365 for business 计划中有几个是可以为订阅购买的加载�
 5. 输入订阅所需的数量更改，然后选择 "**提交更改**"。
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
 
@@ -134,7 +131,7 @@ Microsoft 365 for business 计划中有几个是可以为订阅购买的加载�
 
     将显示已购买的加载项，并且每个加载项下方都有一个" **更改数量**"链接。
 
-4. 选择要更新的加载项的 "**更改数量**" 链接。 
+4. 选择要更新的加载项的 "**更改数量**" 链接。
 
     !['外接程序'链接和'更改数量'链接。](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
@@ -157,7 +154,7 @@ Microsoft 365 for business 计划中有几个是可以为订阅购买的加载�
 
     将显示已购买的加载项，并且每个加载项下方都有一个" **更改数量**"链接。
 
-4. 选择要更新的加载项的 "**更改数量**" 链接。 
+4. 选择要更新的加载项的 "**更改数量**" 链接。
 
     !['外接程序'链接和'更改数量'链接。](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
@@ -175,9 +172,9 @@ Microsoft 365 for business 计划中有几个是可以为订阅购买的加载�
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
-2. 在 "**产品 & 服务**" 页上，选择要更新的附加订阅，然后选择 "**添加/删除许可证**"。
+2. 在 "**产品**" 页上，选择要更新的附加订阅，然后选择 "**添加/删除许可证**"。
 
 3. 在框中输入所需的许可证数量，然后选择 "**提交更改**"。
 
@@ -213,7 +210,6 @@ Microsoft 365 for business 计划中有几个是可以为订阅购买的加载�
 
 ::: moniker-end
 
-
 ## <a name="remove-an-add-on"></a>删除加载项
 
 您可以取消独立的加载项，就像[取消订阅](subscriptions/cancel-your-subscription.md)一样。 或者，您可以使用上面的步骤将独立加载项的**定期记帐**设置为 "关闭"。 但是，不能在购买传统加载项后将其删除。 如果需要删除传统加载项，请[联系支持人员寻求帮助](../admin/contact-support-for-business-products.md)。
@@ -230,12 +226,12 @@ Microsoft 365 for business 计划中有几个是可以为订阅购买的加载�
 |:-----|:-----|
 |客户密码箱  <br/> | Office 365 企业版 E1  <br/>  Office 365 企业版 E3  <br/>  Office 365 企业版 E4  <br/> |
 |[Office 365 Online 高级威胁防护](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 企业版 E1  <br/>  Office 365 企业版 E3  <br/>  Office 365 企业版 E4  <br/> |
-|[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 商业基本版  <br/>  Microsoft 365 商业标准  <br/>  Office 365 企业版 E1  <br/>  Office 365 企业版 F1  <br/> |
+|[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 商业基础版  <br/>  Microsoft 365 商业标准版  <br/>  Office 365 企业版 E1  <br/>  Office 365 企业版 F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 企业版 E1  <br/>  Office 365 企业版 E3  <br/>  Office 365 企业版 E4  <br/> |
 |Office 365 高级合规版  <br/> | Office 365 企业版 E1  <br/>  Office 365 企业版 E3  <br/>  Office 365 企业版 E4  <br/> |
-|Office 365 额外文件存储  <br/> | 适用于企业的 Microsoft 365 应用程序  <br/>  Microsoft 365 商业基本版  <br/>  Microsoft 365 商业标准  <br/>  Office 365 企业版 E1  <br/>  Office 365 企业版 E2  <br/>  Office 365 企业版 E3  <br/>  Office 365 企业版 E4  <br/>  Office 365 企业版 E5  <br/>  Office for web 与 SharePoint 计划1  <br/>  使用 SharePoint 计划2的网站的 Office  <br/>  SharePoint Online 计划 1  <br/>  SharePoint Online 计划 2  <br/> |
+|Office 365 额外文件存储  <br/> | Microsoft 365 商业应用版  <br/>  Microsoft 365 商业基础版  <br/>  Microsoft 365 商业标准版  <br/>  Office 365 企业版 E1  <br/>  Office 365 企业版 E2  <br/>  Office 365 企业版 E3  <br/>  Office 365 企业版 E4  <br/>  Office 365 企业版 E5  <br/>  Office for web 与 SharePoint 计划1  <br/>  使用 SharePoint 计划2的网站的 Office  <br/>  SharePoint Online 计划 1  <br/>  SharePoint Online 计划 2  <br/> |
 |电话系统  <br/> | Office 365 企业版 E1  <br/>  Office 365 企业版 E3  <br/>  Office 365 企业版 E4  <br/>  Office 365 企业版 E5  <br/> |
-|音频会议  <br/> |  Microsoft 365 商业基本版 <br/> Microsoft 365 商业标准 <br/> Office 365 企业版 E1 <br/> Office 365 企业版 E3 <br/> Office 365 企业版 E4 <br/> Office 365 Enterprise E5（不含音频会议） <br/> Microsoft 365 商业高级版 <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|音频会议  <br/> |  Microsoft 365 商业基础版 <br/> Microsoft 365 商业标准版 <br/> Office 365 企业版 E1 <br/> Office 365 企业版 E3 <br/> Office 365 企业版 E4 <br/> Office 365 Enterprise E5（不含音频会议） <br/> Microsoft 365 商业高级版 <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
 |通信点数  <br/> | Office 365 企业版 E5  <br/> |
 |国内通话套餐 <br/> | Office 365 企业版 E5  <br/> |
 |国际通话套餐  <br/> | Office 365 企业版 E5  <br/> |

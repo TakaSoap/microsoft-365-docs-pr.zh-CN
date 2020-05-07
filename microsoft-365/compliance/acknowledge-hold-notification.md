@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 您可能需要通知保管人在法律调查过程中保留以电子方式存储的信息的义务。 利用高级电子数据展示，可以轻松管理保留通知过程。
-ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何使用高级电子数据展示通过电子邮件发送和跟进合法保留通知，以及监控合同状态。
+ms.openlocfilehash: 393d8884a4d4d39056267666fdce6a2754cb582b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080270"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034882"
 ---
 # <a name="acknowledge-a-hold-notification"></a>确认保留通知
 

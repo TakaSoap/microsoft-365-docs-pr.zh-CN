@@ -1,5 +1,5 @@
 ---
-title: 电子邮件会话
+title: 电子邮件线索-数据调查
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 423b3a4ebb00473a45122cf89d2810e6d7c1fc2d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 在管理数据调查时，电子邮件线程分析电子邮件对话，并将每个邮件分隔为不同的类别。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 6cc466bf89187f292acd454fd8ca6efb05958d2b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074699"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035654"
 ---
 # <a name="email-threading"></a>电子邮件会话
 

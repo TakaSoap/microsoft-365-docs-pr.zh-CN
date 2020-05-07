@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: 了解如何从用户帐户中删除许可证。
-ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628096"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139633"
 ---
 # <a name="unassign-licenses-from-users"></a>取消分配用户许可证
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 您可以从 "**活动用户**" 页面或 "**许可证**" 页上的用户中删除或取消分配许可证。 使用哪种方法取决于您要从特定用户中取消分配产品许可证，还是从特定产品中取消分配用户许可证。
@@ -142,7 +149,7 @@ ms.locfileid: "43628096"
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>您需要了解的有关为用户取消分配许可证的信息
 
-- 您必须是全局管理员、帐单管理员、许可证管理员或用户管理管理员。有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
+- 你必须是全局管理员、账单管理员、许可证管理员或用户管理管理员。有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
 
 - 可[使用 Office 365 PowerShell 删除用户帐户的许可证](https://go.microsoft.com/fwlink/p/?linkid=848428)。
 

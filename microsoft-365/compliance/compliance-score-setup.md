@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何设置和开始使用 Microsoft 合规性分数，这有助于简化和自动化风险评估。
-ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7a0030ed417e21484717b6edf12406d2f5e760e5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632387"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140857"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合规性分数（预览）设置
 
@@ -40,16 +40,14 @@ ms.locfileid: "43632387"
 
 ### <a name="where-to-set-permissions"></a>设置权限的位置
 
-您的组织的全局管理员可以在 Microsoft 365 合规性中心或 Azure Active Directory （Azure AD）中设置用户权限。 一旦在这两个位置中设置了角色，用户就可以访问合规性分数以及合规性管理器。
-
-请注意，现有合规性管理器角色**不会**转移到合规性分数。 如果您在合规性管理器中有角色且对合规性分数是新的，则合规性管理器角色不会授予您对合规分数的访问权限。 全局管理员需要在 Microsoft 365 合规性中心或 Azure AD 中为你设置权限和角色，以便你可以访问合规性分数。
+您的组织的全局管理员可以在[Azure Active Directory （AZURE AD）](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)或[合规性管理器](compliance-manager-overview.md#permissions)中设置用户权限。 一旦在这两个位置中设置了角色，用户就可以访问合规性分数以及合规性管理器。
 
 ### <a name="role-types"></a>角色类型
 
-下表显示了每个 Microsoft 365 合规性中心角色如何映射到现有合规性管理器角色，以及每个角色所允许的功能。
+下表显示了每个[AZURE AD 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)如何映射到现有合规性管理器角色，以及每个角色允许的功能。 用户将至少需要 Azure AD 全局读取器角色才能访问合规性分数。
 
 
-| 用户可以： | Microsoft 365 合规性中心角色 | 合规性管理器角色 | 
+| 用户可以： | Azure AD 角色 | 合规性管理器角色 | 
 | :------------- | :-------------: | :------------: |
 | **读取但不编辑数据**| Azure AD 全局读取器  | Azure AD 全局读取器 | 
 | **读取但不编辑数据**| 安全读取者 | 合规性管理器阅读器  | 
@@ -60,13 +58,6 @@ ms.locfileid: "43632387"
 
 > [!NOTE]
 > 当您从符合性分数转到合规性管理器以完成任务（例如，管理评估）时，浏览器将打开一个新选项卡，并显示一个对话框。 在标题为 "已成为 Microsoft 云服务客户" 的顶部部分？ 登录您的帐户，选择 "**登录**以访问合规性管理器";您无需重新输入凭据。
-
-### <a name="how-to-set-permissions-and-roles-in-the-microsoft-365-compliance-center"></a>如何在 Microsoft 365 合规性中心中设置权限和角色
-
-要在 Microsoft 365 合规性中心中设置权限，请执行以下操作：
-
-1. 请转到[Microsoft 365 合规性中心](https://compliance.microsoft.com)并使用全局管理员帐户登录。
-2. 在左侧导航窗格中选择 "**权限**"。 在此处，您可以查看角色和分配权限。
 
 ## <a name="configure-automatic-secure-score-updates"></a>配置自动安全得分更新
 

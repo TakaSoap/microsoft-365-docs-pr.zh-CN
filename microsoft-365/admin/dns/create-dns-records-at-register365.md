@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: 了解如何验证您的域，并在 Register365 for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 29aaa225a291880f0fb6b5cd039903d74e3f32a2
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 056d4dbf923c49b0586ed556f1844cd3b29abe75
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938848"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048887"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>在 Register365 处为 Microsoft 创建 DNS 记录
 
@@ -82,7 +82,7 @@ ms.locfileid: "43938848"
    
     ![在 "添加/修改 DNS 区域" 页上输入值](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     (You may have to scroll down.)
     
@@ -130,11 +130,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**主机名**|**优先级**|**结果**|
     |:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)     |
+    |（将此字段留空。）  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![在 "添加/修改 DNS 区域" 页上输入值](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     (You may have to scroll down.)
     
@@ -144,7 +144,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![删除 "邮件交换记录" 部分中的记录](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. 选择“**保存**”。
+6. 选择“保存”****。
     
     (You may have to scroll down.)
     
@@ -181,7 +181,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![在 "添加/修改 DNS 区域" 页上输入值](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     ![选择 "保存"](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
@@ -215,7 +215,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![在 "添加/修改 DNS 区域" 页上输入值](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     (You may have to scroll down.)
     
@@ -245,7 +245,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![在 "服务记录" 部分中输入值](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     (You may have to scroll down.)
     

@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何配置 Microsoft 365 以与组织外部的人员进行协作。
-ms.openlocfilehash: 338b486725f727506d654a4507d8ea47c6fa2bab
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: ad4a03c73bea7c633a77a37d4133766f9d702b0f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002248"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036676"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
 

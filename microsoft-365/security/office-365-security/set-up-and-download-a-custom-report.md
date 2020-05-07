@@ -1,5 +1,5 @@
 ---
-title: 在安全&amp;合规中心中设置和下载自定义报告
+title: 设置 & 下载自定义报告安全性 & 合规性中心
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,12 +16,13 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: 了解如何在安全&amp;合规中心中设置和下载具有自定义日期范围和筛选器的报表。
-ms.openlocfilehash: 8807928141704339913e3a30c7804aad5e018d4a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f2539136a44cef5a17ce7c7cdc85ad9961877a2d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638364"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035340"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>在安全&amp;合规中心中设置和下载自定义报告
 

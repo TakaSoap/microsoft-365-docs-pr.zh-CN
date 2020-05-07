@@ -1,5 +1,5 @@
 ---
-title: 自动化调查和响应（空中）
+title: 自动化调查和响应（空中）-入门
 keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
 f1.keywords:
 - NOCSH
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
-ms.custom: air
-ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634540"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033946"
 ---
-# <a name="automated-investigation-and-response-air"></a>自动化调查和响应（空中）
+# <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>开始在 Office 365 中使用自动调查和响应（AIR）
 
 [Office 365 高级威胁防护](office-365-atp.md)（OFFICE 365 ATP）计划2包括功能强大的自动化调查和响应（空气）功能，可节省安全运营团队的时间和精力。 随着警报的触发，安全操作团队可以对这些警报进行检查、设置优先级和响应。 跟上传入警报的数量的持续很大。 自动执行其中一些可能会有所帮助。 借助 AIR，安全操作团队可以将精力集中在优先级较高的任务上，而不会失去触发警报的可见性。
 
@@ -52,7 +52,7 @@ ms.locfileid: "43634540"
     在批准（或拒绝）挂起的补救措施时，自动调查完成。
 
 > [!NOTE]
-> 在 Office 365 ATP 中，不会自动执行任何修正操作。 仅在组织的安全团队进行审批时才采取更正措施。 
+> 在 Office 365 ATP 中，不会自动执行任何修正操作。 只有在组织的安全团队批准后，才会执行修正操作。 
 
 在自动调查过程期间和之后，安全团队可以执行以下操作：
 

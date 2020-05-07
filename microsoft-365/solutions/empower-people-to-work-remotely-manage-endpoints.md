@@ -16,19 +16,21 @@ ms.collection:
 - remotework
 ms.custom:
 - M365solutions
-description: 使用 Microsoft Endpoint Manager 管理设备、电脑和其他终结点。
-ms.openlocfilehash: 76e18d65865f4ec2bbc8a8d1554bb4cad6fee553
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+description: 使用 Microsoft Endpoint Manager 管理管理设备、电脑和其他终结点。
+ms.openlocfilehash: 2a5b047aabb95d0b60c46fe3bec339e723adee0e
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011599"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049576"
 ---
 # <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. 部署设备、电脑和其他终结点的终结点管理
 
 使用远程工作者，需要支持越来越多的个人设备。 终结点管理是一种基于策略的安全方法，要求设备在获得对资源的访问权限之前满足特定条件。 Microsoft Endpoint Manager 提供新式工作区和新式管理功能，使你的数据在云中和本地保持安全。 
 
 Endpoint Manager 通过结合以下可能已知和正在使用的服务，提供用于管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器的服务和工具。
+
+![用于终结点管理的组件](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -54,11 +56,11 @@ Configuration Manager 是一种本地管理解决方案，可用于管理网络�
 
 桌面分析是一种基于云的服务，可与 Configuration Manager 集成并为你提供洞察和情报，以便就 Windows 客户端作出明智决策。 它将组织中的数据与连接到 Microsoft 云服务的数百万台设备的数据合并。 借助桌面分析，可以创建在组织中运行的应用程序清单、评估与最新 Windows 10 功能更新的应用兼容性、识别兼容性问题、接收基于已启用云的数据见解的缓解建议、在最小的设备组中创建代表整个应用程序和驱动程序的试验组，并将 Windows 10 部署到试点和生产管理的设备。
 
-有关详细信息，请参阅此 [Desktop Analytics 概述](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)。
+有关详细信息，请参阅此[桌面分析概述](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows Autopilot 是零接触、自助式 Windows 部署平台。 它包含一组用于设置和预配置新设备以让它们可供高效使用的技术。 还可以使用 Windows Autopilot 来重置、恢复设备并重新调整其用途。 此解决方案可以让 IT 部门通过轻松简单的流程，在几乎不需要管理基础结构的情况下实现上述目标。 从用户的角度来看，只需几个简单操作便可以使其设备准备就绪，以供使用。 从 IT 专业人员的角度来看，最终用户所需的交互将只有连接到网络并验证其凭据。
+Windows Autopilot 是一个零接触、自助式的 Windows 部署平台。 它包括一组用于设置和预配置新设备，以使它们可供高效使用的技术。 还可以使用 Windows Autopilot 来重置、恢复设备并重新调整其用途。 此解决方案可以让 IT 部门通过轻松简单的流程，在几乎不需要管理基础结构的情况下实现上述目标。 从用户的角度来看，只需几个简单操作便可以使其设备准备就绪，以供使用。 从 IT 专业人员的角度来看，最终用户所需的交互将只有连接到网络并验证其凭据。
 
 有关详细信息，请参阅此 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)。
 
@@ -70,8 +72,8 @@ Windows Autopilot 是零接触、自助式 Windows 部署平台。 它包含一�
  
 ## <a name="results-of-step-3"></a>步骤 3 的结果
 
-你正在使用 Endpoint Manager 功能套件来管理移动设备，台式计算机，虚拟机、嵌入式设备和服务器。
+你正在使用 Endpoint Manager 功能套件来管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器。
 
 ## <a name="next-step"></a>后续步骤
 
-继续执行[步骤 4](empower-people-to-work-remotely-teams-productivity-apps.md)，实现对本地应用和服务的远程访问。
+继续执行[步骤 4](empower-people-to-work-remotely-teams-productivity-apps.md)，提供对本地应用和服务的远程访问权限。

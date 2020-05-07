@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: 了解如何升级到新的订阅。
 monikerRange: o365-worldwide
-ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
-ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
+ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43796508"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046212"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划 
 
@@ -42,7 +42,7 @@ ms.locfileid: "43796508"
 
 使用 "**升级**" 选项卡时，将会引导您完成新计划的过程。 将在新计划中自动为所有用户分配许可证，并为您取消旧计划。
 
-1. 在 "管理中心" 中，转到 "**帐单** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 选择要升级的订阅。
 
@@ -59,7 +59,7 @@ ms.locfileid: "43796508"
 
 7. 完成后，选择 "**下订单**"。
 
-完成签出后，可能需要几分钟的时间来完成升级。 你可以立即开始使用你的新订阅。 选择 "**检查升级状态**" 以检查升级进度。 升级完成后，你将收到通知。 通知显示在 "**产品 & 服务**" 页上的新订阅旁边。
+完成签出后，可能需要几分钟的时间来完成升级。 你可以立即开始使用你的新订阅。 选择 "**检查升级状态**" 以检查升级进度。 升级完成后，你将收到通知。 通知显示在您的 "**产品**" 页面上的新订阅旁边。
 
 ## <a name="the-upgrade-tab-is-empty"></a>"升级" 选项卡为空
 
@@ -137,7 +137,7 @@ ms.locfileid: "43796508"
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>你的订阅具有未付款余额
 
-若要解决此问题，请在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页上查找订阅，然后选择 "**帐单**" 部分中的 "**立即支付**" 链接。 付款完成后，再次检查**升级**选项卡。
+若要解决此问题，请在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页上查找订阅，然后选择 "**帐单**" 部分中的 "**立即支付**" 链接。 付款完成后，再次检查**升级**选项卡。
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>升级计划对我的服务和帐单有何作用？
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: 了解如何验证您的域，并在 GoDaddy for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
 ms.custom: okr_smb
-ms.openlocfilehash: 0f71eb512b83451db8fee41b535ecc0c60d8d6bc
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: b1c5539af6683bbf8f94fd15880fb870caf31342
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939211"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049019"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 GoDaddy 处为 Microsoft 创建 DNS 记录
 
@@ -57,7 +57,7 @@ ms.locfileid: "43939211"
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“**添加**”。
+3. 选择“添加”****。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "43939211"
 
       ![GoDaddy-验证-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
-5. 选择“**保存**”。
+5. 选择“保存”****。
 
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
 
@@ -108,7 +108,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“**添加**”。
+3. 选择“添加”****。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -122,9 +122,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     |**记录类型**|**主机**|**指向**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX （邮件交换器）  <br/> |@  <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |1 小时  <br/> |
+    |MX （邮件交换器）  <br/> |@  <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小时  <br/> |
 
-6. 选择“**保存**”。
+6. 选择“保存”****。
 
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
@@ -139,7 +139,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“**添加**”。
+3. 选择“添加”****。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -182,7 +182,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“**添加**”。
+3. 选择“添加”****。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -200,7 +200,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-4-1](../../media/7c724f02-c9b3-42ab-b9c0-78959fa6ffad.png)
 
-6. 选择“**保存**”。
+6. 选择“保存”****。
 
 
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
@@ -216,7 +216,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“**添加**”。
+3. 选择“添加”****。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -240,7 +240,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 6. 重复**步骤 5**以创建另一条 SRV 记录。
 
-7. 选择“**保存**”。
+7. 选择“保存”****。
 
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。

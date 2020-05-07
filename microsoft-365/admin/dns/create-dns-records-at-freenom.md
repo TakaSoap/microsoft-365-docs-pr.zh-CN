@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 了解如何验证您的域，并在 Freenom for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: a7ad45d3d785478966df5120567836200de316da
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939223"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049031"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 处为 Microsoft 创建 DNS 记录
 
@@ -139,7 +139,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**Type**|**TTL**|**目标**|**优先级**|
     |:-----|:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |MX （邮件交换器）  <br/> |3600（秒）  <br/> |\<域密钥\>. mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
+    |（保留为空白）  <br/> |MX （邮件交换器）  <br/> |3600（秒）  <br/> |\<域密钥\>. mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Freenom MX 记录](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   

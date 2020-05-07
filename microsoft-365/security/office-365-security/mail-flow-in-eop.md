@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
-description: 作为 Exchange Online Protection (EOP) 客户，发送到您的组织的所有邮件都将先通过 EOP，然后工作人员才能看到这些邮件。不论您是在云中托管所有 Exchange Online 邮箱，还是在本地托管邮箱（称为独立方案），为了继续利用现有基础结构，您可以选择如何路由邮件，这些邮件将首先通过 EOP 处理，然后才能路由到工作人员收件箱。
-ms.openlocfilehash: cbe369e5bf522cb966fd448970f07a34a141d610
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，Exchange Online Protection （EOP）客户可以了解如何配置可能符合其业务要求的自定义邮件路由。
+ms.openlocfilehash: cdc919c628f2254ffc971678f7887c37786d2528
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630475"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034228"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的邮件流
 

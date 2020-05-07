@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何在保管人及其数据源中放置保留，以保留适用于高级电子数据展示事例的相关内容。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632957"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034120"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留
 
@@ -122,7 +123,7 @@ Microsoft 团队基于 Office 365 组构建。 因此，在高级电子数据展
 - **如何将其他 Microsoft 365 组或 Microsoft 团队网站映射到保管人？在 Microsoft 365 组和 Microsoft 团队中放置非 Custodial 保留会怎么样？** Microsoft 团队构建在 Microsoft 365 组之上。 因此，在电子数据展示事例中将其置于保留状态非常相似。 将 Microsoft 365 组和 Microsoft 团队置于保留状态时，请记住以下事项。
   - 若要将位于 Microsoft 365 组和 Microsoft 团队中的内容置于保留状态，您必须指定与组或团队关联的邮箱和 SharePoint 网站。
   
-  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Microsoft 365 组或 microsoft 团队的属性。 若要获取与 Microsoft 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令将显示名为 "高级领导" 团队的 Microsoft 365 组的选定属性：
+  - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Microsoft 365 组或 microsoft 团队的属性。 若要获取与 Microsoft 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为“高层领导团队”的 Microsoft 365 组的选定属性：
 
 
     ```text

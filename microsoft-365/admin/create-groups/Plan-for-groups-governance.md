@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: 了解如何规划 Microsoft 365 组治理。
-ms.openlocfilehash: 95cd549fea6646639386d33e5a026f60b3ccbbba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617130"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049407"
 ---
 # <a name="plan-for-governance-in-groups"></a>在组中规划管理
 
@@ -50,10 +50,10 @@ Microsoft 365 组支持三种主要的通信方法。 可以在这些体验中�
 > 通过其他团队应用程序（如 SharePoint、Planner 或 Stream）创建新组-将使用 Outlook 收件箱创建一个组，并能够连接到 Microsoft 团队。
 
 根据创建组的位置，将自动预配某些资源，如：
-- [收件箱](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)-组成员之间的电子邮件对话。 此收件箱有一个电子邮件地址，可以将其设置为接受来自组外部的人的邮件，甚至来自您的组织外部的邮件，这与传统的通讯组列表非常相似。
+- [收件箱](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)-组成员之间的电子邮件对话。 此收件箱有一个电子邮件地址，可以将其设置为接受来自组外部的人的邮件，甚至来自您的组织外部的邮件，这与传统的通讯组列表非常相似。
  - [日历](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)–用于计划与组相关的事件
 - [SharePoint 团队网站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)–中心存储库，其中提供了与您的组相关的信息、链接和内容
-- [SharePoint 文档库](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403)–用于存储和共享文件的组的中心位置
+- [SharePoint 文档库](https://support.microsoft.com/en-us/office/share-group-files-in-outlook-749bc73b-90c9-4760-9b6f-9aa1cf01b403)–用于存储和共享文件的组的中心位置
 - [OneNote 笔记本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)–用于收集想法、研究和信息
 - [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) –用于分配和管理组成员中的项目任务
 - [Yammer 组](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)–一个用于提供对话和共享信息的常见位置
@@ -81,7 +81,7 @@ Microsoft 365 组支持三种主要的通信方法。 可以在这些体验中�
 
 - Outlook 组：新式 DL （基于电子邮件的协作）
   - 目标通信的普遍情况
-  - 将 Dl 升级到 Microsoft 365 组–[为什么要升级？](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+  - 将 Dl 升级到 Microsoft 365 组–[为什么要升级？](https://support.microsoft.com/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - SharePoint –所有 Microsoft 365 组的核心内容协作体验
   - 每个组都将获取一个连接的 SharePoint 团队网站
@@ -119,7 +119,7 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织可能需要
 | -------------- | ------------------------------------------------------------ |
 | 打开（默认） | 用户可以根据需要创建自己的组，而无需等待或困扰它。 |
 | IT-led         | 用户从其请求组。 在选择最佳协作工具以满足其需求时，可以对其进行指导。 |
-| 控制     | 组创建仅限于特定人员、团队或服务。 若要了解详细信息，请参阅[管理可创建 Microsoft 365 组的用户](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618)。 |
+| 控制     | 组创建仅限于特定人员、团队或服务。 若要了解详细信息，请参阅[管理可创建 Microsoft 365 组的用户](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups)。 |
 
 您的组织可能具有对可以创建组的用户实施严格控制的特定要求。 使用下表可帮助制定有关适合贵组织的设置模型的决策。
 
@@ -154,7 +154,7 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织可能需要
 >在"软删除"过程中，如果用户尝试访问该网站，将显示 403 禁止访问消息。 该过程结束后，如果用户尝试访问该网站，将显示 404 未找到消息。
 
 #### <a name="resources"></a>*资源*
-- [还原已删除的 Microsoft 365 组](https://support.office.com/article/Restore-a-deleted-Office-365-Group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54?ui=en-US&rs=en-001&ad=US)
+- [还原已删除的 Microsoft 365 组](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [在 Azure Active Directory 中还原已删除的 Microsoft 365 组](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [使用 Remove-UnifiedGroup cmdlet 删除组](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 
@@ -273,7 +273,7 @@ Microsoft 365 组基于 Microsoft 365 的高级安全性和合规性功能，并
 
 #### <a name="resources"></a>*资源*
 - [将通讯组列表（DL）升级到 Outlook 中的组](https://aka.ms/whyupgradedls)
-- 通过 Exchange 管理中心或通过[PowerShell 脚本](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)只单击一次即可进行升级
+- 通过 Exchange 管理中心或通过[PowerShell 脚本](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)只单击一次即可进行升级
 - [将通讯组列表迁移到 Microsoft 365 组-管理员帮助](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 - [将现有 SharePoint 网站连接到 Microsoft 365 组：](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group)
 - [分析和使用扫描程序数据](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group-scanner)
@@ -296,8 +296,8 @@ Microsoft 365 "报告" 仪表板显示组织中的所有 Microsoft 产品的活�
 
 
 #### <a name="resources"></a>*资源*
-- [管理员中心的 Microsoft 365 报告](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
-- [Office 365 采用内容包](https://support.office.com/article/Office-365-Adoption-Content-Pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
+- [管理中心中的 Microsoft 365 报表](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Office 365 采用内容包](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics)
 - [Azure AD 内容包](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-power-bi-content-pack-how-to)
 - [Microsoft Graph 组活动 API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/office_365_groups_activity_reports)
 - [Microsoft 365 组报告（统一组）](https://gallery.technet.microsoft.com/office/Office-365-Groups-Report-7e3e161b)
@@ -318,8 +318,8 @@ Microsoft 365 组提供了您的组织可能需要的一组丰富的管理功能
 
 | 阶段 | 说明 |
 | --------------- | ------------------------------------------------------------ |
-| 指南 |<ul><li>考虑自助服务设置模型。</li><li> [默认情况下](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395)，Outlook & SharePoint 网站中的组是私有的。</li><li> 可以通过将现有通讯组列表（Dl）或通过 PowerShell 批量升级来创建组。 请参阅[将通讯组列表升级到 Microsoft 365 组](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F)。</li><li> 启用来宾访问，但使用允许/阻止来宾域管理。</li><li> 使用组报告获取有关用户使用组的方式的见解。</li><li> 考虑创建一个组织范围的团队 Microsoft 团队团队，使每个人都成为单个团队协作的一部分。 </li></ul>|
-| 后续步骤      |<ul><li>请考虑使用[网站设计和网站脚本](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview)，将默认设计定义为使用[JSON 架构引用](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)中定义的操作的控件。</li><li>查看[组报告](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。</li><li>跟踪总组和非活动/活动组。</li><li>同时跟踪使用的 Exchange 和 SharePoint 存储。</li><li>跨组邮箱对话查看组活动、分组网站/文件活动等。</li></ul> |
+| 指南 |<ul><li>考虑自助服务设置模型。</li><li> [默认情况下](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395)，Outlook & SharePoint 网站中的组是私有的。</li><li> 可以通过将现有通讯组列表（Dl）或通过 PowerShell 批量升级来创建组。 请参阅[将通讯组列表升级到 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)。</li><li> 启用来宾访问，但使用允许/阻止来宾域管理。</li><li> 使用组报告获取有关用户使用组的方式的见解。</li><li> 考虑创建一个组织范围的团队 Microsoft 团队团队，使每个人都成为单个团队协作的一部分。 </li></ul>|
+| 后续步骤      |<ul><li>请考虑使用[网站设计和网站脚本](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview)，将默认设计定义为使用[JSON 架构引用](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)中定义的操作的控件。</li><li>查看[组报告](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)。</li><li>跟踪总组和非活动/活动组。</li><li>同时跟踪使用的 Exchange 和 SharePoint 存储。</li><li>跨组邮箱对话查看组活动、分组网站/文件活动等。</li></ul> |
 
 ### <a name="medium-sized-business"></a>中小型企业
 除了上述建议之外，还请考虑使用至少部署了带有 Azure Active Directory 高级 P1 许可证的企业版 E3/E5 的 Microsoft 365 的中型企业的以下各项。
@@ -343,7 +343,7 @@ Microsoft 365 组提供了您的组织可能需要的一组丰富的管理功能
 
 使用下表确定部署组织要求所需的功能。 它将帮助您确定所需的许可证，以便您可以提前规划。
 
-| **功能**      | **Details**                                    | **需要 Azure AD Premium 许可证** | **决策** |
+| **功能**      | **详细信息**                                    | **需要 Azure AD Premium 许可证** | **决策** |
 | ------------------- | ---------------------------------------------- | ------------------------------------- | ------------ |
 | 组命名策略 | 使用基于前缀后缀的自定义阻止的单词。 | P1                                    |      待定     |
 | 组分类 | 向团队分配分类。 | P1                                    |   待定        |

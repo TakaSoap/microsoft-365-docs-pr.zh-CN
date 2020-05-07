@@ -10,18 +10,20 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.custom: TopSMBIssues
+ms.custom:
+- TopSMBIssues
+- seo-marvel-apr2020
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 了解如何识别并响应 Microsoft 365 中遭到入侵的电子邮件帐户
-ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
+ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634336"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033826"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 

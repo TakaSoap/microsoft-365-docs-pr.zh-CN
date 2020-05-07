@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 82bea95f1bc32dd6fd90c7ecda4a046788a9f154
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解如何在管理数据调查时添加或删除可访问调查的成员。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dd57b0bd30e032f16160953e2849d908ecdfc3c5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594623"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034912"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>在数据调查中添加或删除成员
 

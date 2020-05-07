@@ -1,6 +1,6 @@
 ---
 title: Microsoft 支持和专业服务与 GDPR 和 CCPA 数据主体请求
-description: Microsoft 支持和专业服务如何处理 GDPR 和 CCPA 数据主体请求。
+description: 了解 Microsoft 支持和专业服务如何处理 GDPR 和 CCPA 数据主体请求。
 keywords: 专业服务，Microsoft 365，Microsoft 365 教育版，Microsoft 365 文档，GDPR，CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e8bbdcc6140ffac298942f81899a4c872cc05584
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632493"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036307"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft 支持和专业服务与 GDPR 和 CCPA 数据主体请求
 
@@ -28,7 +29,7 @@ ms.locfileid: "43632493"
 
 Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支持专业人员组成的多元化团队，专门负责履行 Microsoft 让客户实现更多收获更多的使命。我们的专业服务团队总共包括 21000 多名顾问、数字顾问、顶级支持、工程师和销售专业人员，他们在 191 个国家/地区工作，支持 46 种不同语言，每个月管理数百万个服务活动，并通过本地、电话、网络、社区和自动化工具与客户和合作伙伴交互。此组织利用将我们与企业客户连接在一起的由合作伙伴、技术社区、工具、诊断以及渠道所构成的广泛网络，汇聚了整个 Microsoft 产品组合的广泛专业知识。
 
-有关 Microsoft 专业服务的详细信息，请访问 [Microsoft 专业服务安全文档网页](https://www.microsoft.com/en-us/professionalservices/overview)。 Microsoft 专业服务非常重视《一般数据保护条例》(GDPR) 规定的义务。 本文档中的信息旨在回答客户有关 Microsoft 的支持和咨询服务如何响应和协助客户响应 GDPR 规定的数据主体请求 (DSR) 义务的问题。
+有关 Microsoft 专业服务的详细信息，请访问 [Microsoft 专业服务安全文档网页](https://www.microsoft.com/zh-CN/professionalservices/overview)。 Microsoft 专业服务非常重视《一般数据保护条例》(GDPR) 规定的义务。 本文档中的信息旨在回答客户有关 Microsoft 的支持和咨询服务如何响应和协助客户响应 GDPR 规定的数据主体请求 (DSR) 义务的问题。
 
 ### <a name="introduction-to-dsrs"></a>DSR 简介 
 
@@ -45,7 +46,7 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 #### <a name="overview-of-the-processes-outlined-in-this-guide"></a>本指南中所述流程的概览
 
 - **发现：** 使用搜索和发现工具更轻松地查找可能是 DSR 主体的客户的数据。 收集了潜在的响应性文档后，你便可以执行下列步骤中所述的一项或多项 DSR 操作来响应请求。 或者，你也可以确定请求是否不符合组织的 DSR 响应指南。
-- **访问：** 检索驻留在 Microsoft 云中的个人数据，并根据请求复制个人数据以供数据主体使用。
+- **访问：** 检索驻留在 Microsoft 云中的个人数据，如果提出请求，还制作可供数据主体使用的个人数据副本。
 - **纠正：** 进行更改或者对个人数据实施其他请求的操作（如果适用）。
 - **限制：** 通过移除各种 Azure 服务的许可证，或者在可能的情况下关闭所需的服务，限制对个人数据的处理。 此外还可以从 Microsoft 云中删除数据，并将其保留在本地或其他位置。
 - **删除：** 永久删除保存在 Microsoft 云中的个人数据。
@@ -56,7 +57,7 @@ Microsoft 专业服务包括一个由技术架构师、工程师、顾问和支�
 下面是本指南中 GDPR 术语的相关定义：
 
 - **控制者：** 单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或具体提名条件。
-- **个人数据和数据主体：** 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
+- **个人数据和数据主体：** 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识符等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
 - **处理者：** 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
 
 #### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>可能有助于了解本指南的其他术语和定义
@@ -132,7 +133,7 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 若要识别特定服务活动，客户需在其所有服务活动中进行搜索。对于顶级客户，客户的合同服务经理（简称“CSM”）能够查看在合同日程安排下创建的所有支持请求 (SR)。对于非顶级客户，也有同等的支持服务活动门户，如通过 Online Services 支持区域。
 
-![Search in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)CSM 可以转到在 Support.Microsoft.Com（[https://support.microsoft.com/\<local语言代码\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)）（简称“SMC”）上的门户，选择并查看“支持请求”。 （请注意：在 URL 中，请替换为你的本地语言代码）。
+![在 SMC 中搜索](../media/Prof-Serv-DSR-Doc-Final_image3.png)CSM 可以转到在 Support.Microsoft.Com（[https://support.microsoft.com/\<local语言代码\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)）（简称“SMC”）上的门户，选择并查看“支持请求”。 （请注意：在 URL 中，请替换为你的本地语言代码）。
 
 >[!IMPORTANT]
 >除了 SMC 中的案例历史记录之外，客户还在 Microsoft 在支持服务活动期间收集的文件中包含最终用户的个人数据（或者，在客户的许可下从 Online Service 中移除）。 相关示例包括，客户的 Exchange 邮箱、Azure 虚拟机或数据库的副本。 此个人数据可能有也可能没有在特定服务活动（即票证）的案例历史记录中提及。 若要查看该数据，客户联系人必须是特定的经过身份验证（通过 AAD 或 MSA）的支持请求联系人，并且已收到 Microsoft 支持数据传输和管理工具 (DTM) 中工作区的 URL。 客户联系人将有权访问这些文件，但不能进行全局查看，且 SMC 不会指出文件是否存在。
@@ -173,7 +174,7 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 *选项 A - 跨 Microsoft 支持的客户 DSR*。 对于跨系统的 DSR，客户必须提供 Microsoft 识别所需数据需要的个人数据（例如电子邮件地址、电话号码）。 Microsoft 不会关联或研究记录，而是仅根据客户提供的标识符直接进行搜索。 找到数据后，Microsoft 将删除所有服务活动和所有关联数据。
 
-> 重要注意事项：这可能会导致对客户组织非常重要的历史记录发生丢失。
+> 重要说明：这可能会导致对客户组织非常重要的历史记录发生丢失。
 
 *选项 B — 特定客户服务活动*。 对于客户已识别并且想要删除的特定服务活动，不要从 SMC 删除票证。 这会导致个人数据遗留在日志和下游系统中，从而可能无法在所需时间范围内删除。 转为识别票证或必须删除的票证中的个人资料，并联系 Microsoft 支持协助你删除该数据。
 
@@ -194,7 +195,7 @@ Jane 是企业客户 Contoso 的一名员工，公司为其提供了 Dynamics 36
 
 ***仅用于说明目的的示例***
 
-John 是企业客户 Contoso 的一名 顶级 CSM，该客户为其员工电子邮件使用 O365，并使用 Azure 托管 Contoso SQL 数据库。Contoso 有多个打开和已关闭的票证。最近，Microsoft 支持在 Contoso 的许可下将 SQL 数据库的副本移到了 DTM 中，以进行支持和疑难解答。
+John 是企业客户 Contoso 的一名顶级 CSM，该客户为其员工电子邮件使用 O365，并使用 Azure 托管 Contoso SQL 数据库。Contoso 有多个打开和已关闭的票证。最近，Microsoft 支持在 Contoso 的许可下将 SQL 数据库的副本移到了 DTM 中，以进行支持和疑难解答。
 
 John 从 Jane 那里收到了一个 DSR，要求删除她的所有数据。John 进入 SMC，并在所有服务活动中进行搜索以识别 Jane 有电子邮件帐户问题，因此在两个票证中按姓名和电子邮件地址进行了引用。他联系了 TAM，向 TAM 提供了 Jane 的姓名和电子邮件地址作为标识符，并请求删除这两个票证，以及从这两个票证生成的所有下游数据。
 

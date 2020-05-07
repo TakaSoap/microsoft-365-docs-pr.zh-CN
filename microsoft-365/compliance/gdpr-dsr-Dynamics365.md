@@ -1,6 +1,6 @@
 ---
 title: 符合 GDPR 和 CCPA 的 Dynamics 365 数据主体请求
-description: 指南介绍了如何使用 Microsoft 的产品、服务和管理工具来帮助我们的控制者客户查找和处理个人数据以响应 DSR 和 CCPA 请求。
+description: 本指南将帮助你了解如何查找个人数据并对其进行操作，并对 Dynamics 365 客户提出的 DSR 和 CCPA 请求作出响应。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,13 +15,15 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 38c50703fbc58e85a646720b5bbe8b400477b9d4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558002"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043323"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Dynamics 365 数据主体请求
 
@@ -223,7 +225,7 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 
 在创建新的请求后，它将列在“数据日志导出”**** 页面上，在这里你可以跟踪其状态。完成请求后，可以单击链接以访问系统生成日志，这些日志将在请求创建 30 内导出到你组织的 Azure 存储位置。数据将保存为常用的机器可读文件格式，如 JSON 和 XML。如果你还没有 Azure 帐户和 Azure 存储位置，将需要为你的组织创建 Azure 帐户和/或 Azure 存储位置，以便数据日志导出工具可以导出系统生成日志。
 
-Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此操作。[Microsoft Azure 存储 — Blob 存储简介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)文章。
+Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此操作。[Microsoft Azure 存储 — Blob 存储简介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)文章。 检索到的数据不包括可能会危及服务安全性和稳定性的数据。
 
 > [!IMPORTANT]
 > 你必须是租户管理员才能从租户中导出用户数据。
@@ -245,9 +247,7 @@ Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储�
 
 ### <a name="deleting-system-generated-logs"></a>删除系统生成日志
 
-若要删除通过访问请求检索到的系统生成日志，必须从服务移除用户并永久删除其 Azure Active Directory 帐户。有关永久删除用户的说明，请参阅本指南的[“删除用户”](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user)部分。请务必注意，永久删除用户帐户操作一旦启动便无法恢复。
-
-如果永久删除用户帐户，则会在 30 天内将用户数据从几乎所有 Dynamics 365 服务的系统生成日志中移除。
+要删除通过访问请求检索的系统生成日志，必须从服务中删除该用户，然后永久删除其 Azure Active Directory 帐户。 请务必注意，永久删除用户帐户的操作一旦启动便不可逆。 如果永久删除用户帐户，则会在 30 天内将用户数据从几乎所有 Dynamics 365 服务的系统生成日志中移除。
 
 ## <a name="learn-more"></a>了解更多
 

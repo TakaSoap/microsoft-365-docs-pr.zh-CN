@@ -1,5 +1,5 @@
 ---
-title: 适用于管理员的 Microsoft 365 组概述
+title: 面向管理员的 Microsoft 365 组概述
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组。
-ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: aca6dfee26e05f162b8cc3efb69005d773a9a9dc
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630039"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049163"
 ---
-# <a name="overview-of-microsoft-365-groups-for-administrators"></a>适用于管理员的 Microsoft 365 组概述
+# <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
 Microsoft 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员身份服务。 使用 Microsoft 365 组，您可以向一组用户授予对要共享的协作资源集的访问权限。 这些资源包括：
 
@@ -79,7 +79,7 @@ Microsoft 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员
 |文件存储|每个订阅用户 1 tb + 10 GB + 购买的任何附加存储空间。 您可以购买无限量的额外存储空间。|
 |组邮箱大小|50 GB|
 
-组织可拥有的 Microsoft 365 组的默认最大数量为500000，但可以按请求增加。 有关 Microsoft 365 组限制的详细信息，请参阅[microsoft 365 组-管理员帮助](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)。
+组织可拥有的 Microsoft 365 组的默认最大数量为500000，但可以按请求增加。 有关 Microsoft 365 组限制的详细信息，请参阅[microsoft 365 组-管理员帮助](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
 在具有有关组使用的可操作信息时，管理 Microsoft 365 组会更有效。 Microsoft 365 管理中心有一个报告工具，可让你查看存储使用情况、拥有的活动组数以及你的用户使用组的数量。 有关详细信息，请参阅： [Microsoft 365 Reports in admin center](../activity-reports/office-365-groups.md) 。
 

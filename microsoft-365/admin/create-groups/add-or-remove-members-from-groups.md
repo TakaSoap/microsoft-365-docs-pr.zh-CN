@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 了解如何将成员添加到组、从组中删除成员和在 Microsoft 365 管理中心中管理组所有者状态。
-ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631309"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049395"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心添加或删除 Microsoft 365 组中的成员
 
@@ -46,7 +46,7 @@ ms.locfileid: "43631309"
       
 4. 搜索或选择要添加的成员的名称。
     
-5. 选择“**保存**”。
+5. 选择“保存”****。
     
 ::: moniker-end
 
@@ -60,7 +60,7 @@ ms.locfileid: "43631309"
       
 4. 搜索或选择要添加的成员的名称。
     
-5. 选择“**保存**”。
+5. 选择“保存”****。
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "43631309"
       
 4. 搜索或选择要添加的成员的名称。
     
-5. 选择“**保存**”。
+5. 选择“保存”****。
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ ms.locfileid: "43631309"
       
 4. 搜索或选择要添加的组的名称。
     
-5. 选择“**保存**”。
+5. 选择“保存”****。
 
 ::: moniker-end
 
@@ -237,7 +237,7 @@ ms.locfileid: "43631309"
     
 5. 选择所有者名称旁边的 X。 
     
-6. 选择“**保存**”。
+6. 选择“保存”****。
     
 ::: moniker-end
 
@@ -251,7 +251,7 @@ ms.locfileid: "43631309"
     
 5. 选择所有者名称旁边的 X。 
     
-6. 选择“**保存**”。
+6. 选择“保存”****。
 
 ::: moniker-end
 
@@ -265,7 +265,7 @@ ms.locfileid: "43631309"
     
 5. 选择所有者名称旁边的 X。 
     
-6. 选择“**保存**”。
+6. 选择“保存”****。
 
 ::: moniker-end
 
@@ -276,16 +276,16 @@ ms.locfileid: "43631309"
     
 - 若要将成百上千个用户添加到组中，请使用[加载项 UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191)。
     
-- [向孤立组分配新的所有者](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
+- [向孤立组分配新的所有者](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
     
 ## <a name="articles-about-managing-groups"></a>有关组管理的文章
     
 - [将通讯组列表升级到 Outlook 中的 Microsoft 365 组](../manage/upgrade-distribution-lists.md)
     
-- [为什么应将通讯组列表升级至 Outlook 中的组](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+- [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [在 Microsoft 365 组中管理来宾访问](manage-guest-access-in-groups.md)    
     
-- [使用 PowerShell 管理 Microsoft 365 组](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)：本文向您介绍了关键 cmdlet，并提供了示例
+- [使用 PowerShell 管理 Microsoft 365 组](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)：本文向您介绍了关键 cmdlet，并提供了示例
     
 - [Microsoft 365 组命名策略](groups-naming-policy.md)

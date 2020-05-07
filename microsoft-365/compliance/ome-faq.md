@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关新邮件保护功能的工作原理，有什么问题？ 在此处查找答案。
-ms.openlocfilehash: 93b57e2b973fadd8b4ac2388e42f460114228c3c
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781457"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049517"
 ---
 # <a name="message-encryption-faq"></a>邮件加密常见问题
 
@@ -109,11 +109,11 @@ Microsoft 365 用户可以从 Outlook for Windows 和 Mac （2013和2016）、Ou
   
 ## <a name="are-pdf-file-attachments-supported"></a>PDF 文件附件是否受支持？
 
-简短的答案是肯定的！ PDF 加密使您能够通过安全通信或安全协作来保护敏感 PDF 文档。 当您发送电子邮件时，Office 365 服务将加密 PDF 文件附件，而不是 Outlook 客户端。 
+简短的答案是肯定的！ PDF 加密使您能够通过安全通信或安全协作来保护敏感 PDF 文档。 当您发送电子邮件时，Office 365 服务将加密 PDF 文件附件，而不是 Outlook 客户端。
 
-启用 PDF 文件附件加密后，您可以在 web 上的 Outlook、Outlook for iOS 和 Outlook for Android 中对您发送的 Pdf 进行加密，而无需执行任何其他步骤。
+对于 web 上的 Outlook、适用于 iOS 的 outlook 和 Outlook for Android，你可以对你发送的 Pdf 进行加密，而无需执行任何其他步骤。 这些客户端以本机方式支持 PDF 加密。
 
-Outlook 桌面本身不支持对 PDF 文件附件的加密。 若要解决此情况，您仍可以在组织中启用 PDF 文件附件加密。 当您使用 PDF 附件从 Outlook 桌面发送邮件时，客户端先将包含附件的邮件发送到服务。 当服务收到文件时，服务会在 Exchange Online 中应用数据丢失防护（DLP）策略或邮件流规则的 OME 保护。 接下来，Exchange Online 将发送带有受保护的 PDF 文件附件的邮件。
+Outlook 桌面本身不支持对 PDF 文件附件的加密。 相反，您需要设置 Exchange 邮件流规则或 DLP，以便先将加密应用于 PDF 附件。 当您使用 PDF 附件从 Outlook 桌面发送邮件时，客户端先将包含附件的邮件发送到服务。 当服务收到文件时，服务会在 Exchange Online 中应用数据丢失防护（DLP）策略或邮件流规则的 OME 保护。 接下来，Exchange Online 将发送带有受保护的 PDF 文件附件的邮件。
 
 若要对 PDF 附件启用加密，请在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中运行以下命令：
 
@@ -131,7 +131,7 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>是否可以通过设置策略自动加密邮件？
 
-正确。 使用 Exchange Online 中的邮件流规则，根据特定条件自动加密邮件。 例如，您可以创建基于收件人 ID、收件人域或邮件正文或主题中的内容的策略。 请参阅[定义邮件流规则以对 Office 365 中的电子邮件进行加密](define-mail-flow-rules-to-encrypt-email.md)。
+是。 使用 Exchange Online 中的邮件流规则，根据特定条件自动加密邮件。 例如，您可以创建基于收件人 ID、收件人域或邮件正文或主题中的内容的策略。 请参阅[定义邮件流规则以对 Office 365 中的电子邮件进行加密](define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>是否可以自动删除传入和传出邮件的加密？
 
@@ -151,7 +151,7 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>是否可以对合规性功能（如电子数据展示）使用邮件加密？
 
-正确。 所有加密的电子邮件都可通过 Microsoft 365 合规性功能发现。
+是。 所有加密的电子邮件都可通过 Microsoft 365 合规性功能发现。
 
 ## <a name="can-i-remove-encryption-from-email"></a>是否可以从电子邮件中删除加密？
 

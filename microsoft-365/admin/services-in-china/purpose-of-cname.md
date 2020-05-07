@@ -19,12 +19,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 了解有关 Office 365 中的 "MSOID" CNAME 记录的详细信息，该记录将您定向到最佳服务器以进行身份验证过程，以便获取更快的响应。
 monikerRange: o365-21vianet
-ms.openlocfilehash: f5369b8a723c60691da0e73f2bd8cc32233abbcd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: a7c59829419ac8e7db400b079681ccf5bff199d6
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212217"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053844"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID 的 Office 365 CNAME 记录有何用途？
 
@@ -40,7 +40,7 @@ ms.locfileid: "43212217"
   
  **如果 Office 365 管理您的域的 DNS 记录，** Office 365 为你设置此 CNAME 记录。 
   
- **如果要在 dns 主机上管理域的 dns 记录，请**按照[DNS 主机的说明](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)自己创建此记录。
+ **如果要在 dns 主机上管理域的 dns 记录，请**按照[DNS 主机的说明](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)自己创建此记录。
   
 如果您正在规划 Office 365 部署，并希望了解有关您可能需要添加或更新的所有 DNS 记录的详细信息，请阅读相关[内容： Office 365 的外部域名系统记录](https://go.microsoft.com/fwlink/?LinkId=579013)。
   

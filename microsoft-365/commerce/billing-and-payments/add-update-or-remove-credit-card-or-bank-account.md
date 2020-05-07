@@ -1,5 +1,5 @@
 ---
-title: 添加、更新或删除支付方式
+title: 添加、更新或删除付款方式
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,17 +24,17 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: 了解如何在 Microsoft 365 管理中心中管理你的支付方式。
-ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b15381ee4eba7c1a91e108743fc326c890ab1820
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106044"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045924"
 ---
-# <a name="add-update-or-remove-your-payment-methods"></a>添加、更新或删除支付方式
+# <a name="add-update-or-remove-your-payment-methods"></a>添加、更新或删除付款方式
 
 ::: moniker range="o365-worldwide"
-您可以使用信用卡或借记卡或银行帐户购买来自 Microsoft 的产品和服务。 您可以在 "**付款方法**" 页上输入付款信息，也可以在进行购买时输入付款信息。
+您可以使用信用卡或借记卡或银行帐户购买来自 Microsoft 的产品和服务。 可在**付款方式**页面或进行购买时输入付款信息。
 
 您只能管理已添加的付款方式。
 
@@ -45,14 +45,14 @@ ms.locfileid: "43106044"
 
 **您看到的界面与本文中所述的界面不匹配吗？** 如果是这样，请参阅[管理支付方式](manage-payment-methods.md)。
 
-## <a name="add-a-payment-method"></a>添加付款方法
+## <a name="add-a-payment-method"></a>添加付款方式
 
 1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
 2. 选择“**添加付款方式**”。
 3. 在“**付款方式**”页面上，从下拉菜单中选择一种付款方式。
 4. 输入新卡或银行帐户的信息，然后选择 "**添加**"。
 
-## <a name="update-an-existing-payment-method"></a>更新现有付款方法
+## <a name="update-an-existing-payment-method"></a>更新现有的付款方式
 
 您不能更改现有的卡片或银行帐户上的号码。 如果卡或银行帐号已更改，则将其添加为新的付款方式。 接下来，将其作为订阅的付款选项进行选择，然后删除现有的卡片或银行帐户。 您必须使用从与您的租户相同的国家/地区颁发的卡片。
 
@@ -66,7 +66,7 @@ ms.locfileid: "43106044"
 
 ### <a name="change-the-payment-method-used-for-a-single-subscription"></a>更改用于单个订阅的付款方式
 
-1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 2. 选择要使用新卡或银行帐户支付的订阅。 在 "**帐单**" 下，选择 "付款方法" 旁边的 "**编辑**"。
 3. 在现有付款方法旁边，选择 "**更改**"。
 4. 从下拉菜单中，选择另一种付款方式，或选择添加支付方式。
@@ -83,16 +83,16 @@ ms.locfileid: "43106044"
 > [!NOTE]
 > 只能在 "**更改付款方法**" 窗格中的现有付款方式之间进行更改。 如果要更改为按发票支付，请参阅[从信用卡或银行帐户更改为发票](change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)。
 
-## <a name="remove-a-payment-method"></a>删除付款方法
+## <a name="remove-a-payment-method"></a>删除付款方式
 
 仅当信用卡或借记卡或银行帐户未附加到订阅时，才能将其从付款方法列表中删除。 这适用于所有订阅（无论其状态如何）。 为订阅添加一种付款方式，然后从该订阅中删除旧的付款方式。 如果付款方法与记帐配置文件相关联，请更改用于记帐配置文件的付款方式，然后删除该支付方式。
 
 ### <a name="delete-a-payment-method"></a>删除付款方法
 
-如果您的付款方式未与任何订阅关联，则可以立即将其删除。
+如果您的付款方式未与任何订阅相关联，可以立即将其删除。
 
 1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
-2. 将鼠标悬停在卡片或银行帐户上，然后选择 "删除" 图标。
+2. 将鼠标悬停在卡或银行帐户上，然后选择删除图标。
 3. 在 "**删除付款方法**" 窗格的底部，选择 "**删除**"。
 
 ### <a name="add-an-alternate-payment-method-used-to-pay-for-subscriptions"></a>添加用于付款订阅的备用付款方式
@@ -100,7 +100,7 @@ ms.locfileid: "43106044"
 如果你的付款方式与任何订阅相关联，并且你没有文件的备用付款方式，请先添加付款方法。 接下来，更改用于支付订阅费用的付款方式。 然后，您可以删除付款方式。
 
 1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
-2. 将鼠标悬停在卡片或银行帐户上，然后选择 "删除" 图标。
+2. 将鼠标悬停在卡或银行帐户上，然后选择删除图标。
 3. "**删除付款方法**" 窗格列出了使用该支付方法的现有订阅。
 4. 选择“**添加付款方式**”。
 5. 选择要添加的付款方式类型，输入帐户信息，然后选择 "**添加**"。
@@ -114,7 +114,7 @@ ms.locfileid: "43106044"
 如果您的付款方式与任何订阅相关联，并且您在文件中至少有一个备用付款方式，请先更改用于支付订阅费用的付款方式。 然后，您可以删除付款方式。
 
 1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
-2. 将鼠标悬停在卡片或银行帐户上，然后选择 "删除" 图标。
+2. 将鼠标悬停在卡或银行帐户上，然后选择删除图标。
 3. "**删除付款方法**" 窗格列出了使用该支付方法的现有订阅。
 4. 选择 "**更改付款方式**"。
 5. 从下拉列表中选择另一种付款方式，然后选择 "**更改**"。
@@ -141,7 +141,7 @@ ms.locfileid: "43106044"
 2. 如果您没有其他付款方式，请按照[添加用于付款订阅的备用付款方式](#add-an-alternate-payment-method-used-to-pay-for-subscriptions)中的步骤操作。
 3. 如果已有其他可用的付款方式，请按照[更改付款方式](#change-a-payment-method)中的步骤操作。
 
-## <a name="troubleshoot-payment-methods"></a>支付方法故障排除
+## <a name="troubleshoot-payment-methods"></a>付款方式疑难解答
 
 |**问题**|**疑难解答步骤**|
 |:-----|:-----|

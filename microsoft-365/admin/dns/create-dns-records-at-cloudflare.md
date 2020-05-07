@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 了解如何验证您的域，并在 Cloudflare for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 116132d096db61e7004315dcf159fc78dd790d43
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 36578d8eed2c5630a9ce5abfb355983a26028888
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939315"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049067"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 处为 Microsoft 创建 DNS 记录
 
@@ -90,7 +90,7 @@ ms.locfileid: "43939315"
     |TXT  <br/> |@  <br/> |30 分钟  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. 选择“**保存**”。
+5. 选择“保存”****。
   
   
 9. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
@@ -131,11 +131,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**名称**|**邮件服务器**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从 Microsoft 365 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/>|30 分钟  <br/> |
+    |MX  <br/> |@  <br/> |*\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从 Microsoft 365 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 分钟  <br/> |
    
 
   
-5. 选择“**保存**”。
+5. 选择“保存”****。
   
 9. 如果 " **Mx 记录**" 一节中列出了任何其他 MX 记录，请通过选择 "**删除（X）** " 图标将其删除。 
   
@@ -170,7 +170,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 5. 选择 " **DNS 流量**" 图标（橙色云）以绕过 Cloudflare 服务器。
   
-6. 选择“**保存**”。
+6. 选择“保存”****。
   
 7. 逐一添加其他 5 条 CNAME 记录。
 
@@ -196,7 +196,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     |TXT  <br/> |@  <br/> |30 分钟  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。   |
 
  
-5. 选择“**保存**”。
+5. 选择“保存”****。
     
 
   
@@ -222,7 +222,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     |SRV|_sipfederationtls | TCP|使用*domain_name*;例如，contoso.com   |30 分钟 |100 |1 |5061 | sipfed.online.lync.com |
 
   
-5. 选择“**保存**”。
+5. 选择“保存”****。
 
   
 6. 通过从表的第二行中选择值来添加其他 SRV 记录。 

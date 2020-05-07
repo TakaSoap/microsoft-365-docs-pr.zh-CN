@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: 详细了解由 Exchange Online Protection 添加到邮件的标头字段和值。
-ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+description: 了解 Exchange Online Protection 向邮件添加标题字段来提供有关此关邮件的信息，以及其处理方式的相关内容。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 035b081980e52d1e68d21e6227636ed78697b4cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805219"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033746"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
 
@@ -75,7 +76,7 @@ ms.locfileid: "43805219"
 
 ## <a name="authentication-results-message-header"></a>“Authentication-results”邮件头
 
-邮件服务器收到电子邮件后，Microsoft 365 将基于 SPF、DKIM 或 DMARC 将检查结果记录或标记在“**Authentication-results**”邮件头中。
+邮件服务器收到电子邮件后，Microsoft 365 将基于 SPF、DKIM 和 DMARC 将检查结果记录或标记在“**Authentication-results**”邮件头中。
 
 ### <a name="check-stamp-syntax-and-examples"></a>检查标记语法和示例
 

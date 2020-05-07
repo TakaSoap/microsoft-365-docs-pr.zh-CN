@@ -18,13 +18,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 了解如何使用数据丢失防护 (DLP) 策略保护 Microsoft 365 中的个人数据。
-ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何在合规中心使用数据丢失防护 (DLP) 策略来保护 Office 365 中的个人数据。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f5c82a1f841cca1eea9a79d8f9dbcc1f81a3ad74
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634270"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035174"
 ---
 # <a name="apply-protection-to-personal-data"></a>向个人数据应用保护
 
@@ -251,9 +252,9 @@ Microsoft 365 DLP 的主要用途之一是识别出 Microsoft 365 环境中与�
 
 详细信息：
 
--   [了解 SharePoint 中的权限级别](https://support.office.com/en-US/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [了解 SharePoint 中的权限级别](https://support.office.com/zh-CN/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   [了解 SharePoint 组](https://support.office.com/en-US/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [了解 SharePoint 组](https://support.office.com/zh-CN/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>适用于 SharePoint 和 OneDrive for Business 库的外部共享策略
 
@@ -305,7 +306,7 @@ Microsoft 365 DLP 的主要用途之一是识别出 Microsoft 365 环境中与�
 
 -   [管理 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   [与组织外部的用户共享站点或文档](https://support.office.com/en-US/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [与组织外部的用户共享站点或文档](https://support.office.com/zh-CN/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>网站级别的设备访问策略
 

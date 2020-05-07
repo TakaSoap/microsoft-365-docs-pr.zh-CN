@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 发现 Microsoft 365 商业高级版的设置步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635756"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048033"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安装向导中设置 Microsoft 365 商业高级版
 
@@ -124,7 +124,7 @@ ms.locfileid: "43635756"
 
 ## <a name="secure-windows-10-pcs"></a>保护 Windows 10 电脑
 
-在左侧导航中，选择 "**设置**"，然后在 "有**安全" 和 "安全性**" 下，选择 "**保护 Windows 10 计算机**"。 选择 "**查看**" 即可开始。 有关完整说明，请参阅[保护 Windows 10 计算机安全](secure-win-10-pcs.md)。
+在左侧导航中，选择 "**设置**"，然后在 "**登录和安全**" 下，选择 "**保护 Windows 10 计算机**"。 选择 "**查看**" 即可开始。 有关完整说明，请参阅[保护 Windows 10 计算机安全](secure-win-10-pcs.md)。
 
 ## <a name="deploy-office-365-client-apps"></a>部署 Office 365 客户端应用程序
 
@@ -136,4 +136,4 @@ ms.locfileid: "43635756"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

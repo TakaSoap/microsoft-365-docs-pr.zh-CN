@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 689adb46bdec4d4f669482af6b5467fdcf63482c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6138a36890ec4b0408339fbb1510fa7677a7040
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628875"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053808"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建、编辑或删除安全组
 
@@ -145,7 +145,7 @@ ms.locfileid: "43628875"
     
 在 Exchange 管理中心中创建通讯组和已启用邮件的安全组之后，其名称和用户列表将显示在 "**安全组**" 页面上。 您可以在这两个位置删除这些组，但是只能在 Exchange 管理中心编辑它们。 "**安全组**" 页上未显示动态通讯组。 
   
- SharePoint 组是在您创建网站集时自动创建的。 默认组使用 SharePoint 中的默认权限级别（有时称为 SharePoint 角色）向用户授予权限和访问权限。 有关详细信息，请参阅[Sharepoint Online 中的默认 SharePoint 组](https://support.office.com/article/13bb2b6b-dd8c-447e-b71b-0e4bb9efe1d3.aspx)。
+ SharePoint 组是在您创建网站集时自动创建的。 默认组使用 SharePoint 中的默认权限级别（有时称为 SharePoint 角色）向用户授予权限和访问权限。 有关详细信息，请参阅[Sharepoint Online 中的默认 SharePoint 组](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)。
   
 ## <a name="how-is-a-security-group-different-from-security-groups-i-create-in-sharepoint"></a>在 SharePoint 中，安全组与我在 SharePoint 中创建的安全组有何不同？
 
@@ -153,9 +153,9 @@ ms.locfileid: "43628875"
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>我是否需要使用安全组来保护组织的安全？
 
-不正确。 这只是管理组织安全性的一种更好的方法。 您可以始终授予用户权限并单独访问网站。 但使用安全组，您可以轻松地管理更多的用户组。
+否。 这只是管理组织安全性的一种更好的方法。 您可以始终授予用户权限并单独访问网站。 但使用安全组，您可以轻松地管理更多的用户组。
   
 ## <a name="can-i-send-email-to-a-security-group"></a>我是否可以向安全组发送电子邮件？
 
-可以。 但是，如果您想要使用组进行电子邮件和协作，我们建议您改为[创建 Microsoft 365 组](../create-groups/create-groups.md)。 
+是。 但是，如果您想要使用组进行电子邮件和协作，我们建议您改为[创建 Microsoft 365 组](../create-groups/create-groups.md)。 
   

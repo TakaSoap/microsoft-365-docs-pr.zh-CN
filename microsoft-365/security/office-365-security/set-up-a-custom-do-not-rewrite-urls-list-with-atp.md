@@ -16,20 +16,22 @@ search.appverid:
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
-description: 设置 ATP 安全链接策略时，可以包括 "不重写" 的 Url 列表，以使组织中的某些人能够访问包含在列表中的网站。
-ms.openlocfilehash: 490fb3279f2c54bc6f2335510aa711866318e01d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何为 Office 365 ATP 安全链接策略中的用户组设置用户的自定义已阻止 Url 和不重写的 Url 列表。
+ms.openlocfilehash: d7bd6c7d4c3dccfb4a16b2b2f172f8f75123692e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638376"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046300"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>使用 ATP 安全链接设置自定义不重写 Url 列表
 
 > [!IMPORTANT]
 > 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-使用[Office 365 高级威胁防护](office-365-atp.md)（ATP），您的组织可以有一个[自定义的阻止 url](set-up-a-custom-blocked-urls-list-wtih-atp.md)，这样，当用户单击电子邮件中的 web 地址（Url）或某些 Office 文档时，将阻止这些 Url 转到这些 url。 您的组织还可以为组织中的特定组提供自定义的 "不重写" 列表。 "不重写" 列表使某些用户能够访问由[Office 365 中的 ATP 安全链接](atp-safe-links.md)阻止的 url。
+使用[Office 365 高级威胁防护](office-365-atp.md)（ATP），您的组织可以有一个[自定义的阻止 url](set-up-a-custom-blocked-urls-list-atp.md)，这样，当用户单击电子邮件中的 web 地址（Url）或某些 Office 文档时，将阻止这些 Url 转到这些 url。 您的组织还可以为组织中的特定组提供自定义的 "不重写" 列表。 "不重写" 列表使某些用户能够访问由[Office 365 中的 ATP 安全链接](atp-safe-links.md)阻止的 url。
 
 本文介绍如何指定从 ATP 安全链接扫描中排除的 Url 的列表，以及需要牢记的几个重要事项。
 
@@ -39,7 +41,7 @@ ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "
 
 若要编辑（或定义） ATP 策略，必须为您分配适当的角色。 下表包括一些示例。 若要了解详细信息，请参阅[安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-|Role  |分配的位置/方式  |
+|角色  |分配的位置/方式  |
 |---------|---------|
 |全局管理员 |默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
 |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
@@ -65,7 +67,7 @@ ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "
 7. 添加完 Url 后，在屏幕的右下角，选择 "**保存**"。
 
 > [!NOTE]
-> 请务必查看您的组织的已阻止 Url 的自定义列表。 请参阅[使用 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-wtih-atp.md)。
+> 请务必查看您的组织的已阻止 Url 的自定义列表。 请参阅[使用 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-atp.md)。
 
 ## <a name="important-points-to-keep-in-mind"></a>需要牢记的要点
 

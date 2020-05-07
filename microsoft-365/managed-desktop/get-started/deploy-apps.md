@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302909"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046324"
 ---
 # <a name="deploy-apps-to-devices"></a>将应用程序部署到设备
 Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并将其部署到用户设备。 在使用 Microsoft 托管桌面门户后，可以添加和部署应用。 
@@ -38,10 +38,10 @@ Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并�
 
 你可以登录到 Microsoft 托管桌面门户，或登录到 Intune，然后搜索 Microsoft 托管桌面。 我们将显示登录到 Microsoft 托管桌面门户。 
 
-1.  登录到[Microsoft 托管桌面管理门户](https://aka.ms/mmdportal)。 
-2.  在 "**清单**" 下，选择 "**应用**"。
-3.  在 "应用工作负荷" 中，选择 "**添加**"。
-4.  在 "**添加应用程序**" 中，选择 "**业务线应用程序**" 或 " **Windows 应用程序（Win32）**"。
+1.    登录到[Microsoft 托管桌面管理门户](https://aka.ms/mmdportal)。 
+2.    在 "**清单**" 下，选择 "**应用**"。
+3.    在 "应用工作负荷" 中，选择 "**添加**"。
+4.    在 "**添加应用程序**" 中，选择 "**业务线应用程序**" 或 " **Windows 应用程序（Win32）**"。
     - 如果选择了 "**业务线应用程序**"，请参阅[向 Microsoft Intune 添加 Windows 业务线应用程序](https://docs.microsoft.com/intune/lob-apps-windows)，以了解有关添加和配置业务线应用程序的说明。
     - 如果选择了 " **windows 应用程序（Win32）**"，请参阅[Win32 应用程序管理](https://docs.microsoft.com/intune/apps-win32-app-management)以了解有关添加和配置 Windows 应用的说明。
 
@@ -55,7 +55,7 @@ Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并�
 1. 使用 Microsoft Store for Business Administration account 登录[Microsoft store For business](https://businessstore.microsoft.com) 。
 2. 选择 **"为我的组购买"**。
 3. 使用 "搜索" 查找所需的应用程序，并选择该应用程序。
-4. 在 "产品详细信息" 中，选择 **"获取应用程序**"。 Microsoft Store 将应用程序添加到组织的**产品 & 服务**。
+4. 在 "产品详细信息" 中，选择 **"获取应用程序**"。 Microsoft Store 将应用添加到**你**的组织中的产品。
 
 **在 Intune 和 Microsoft Store for Business 之间强制进行同步**
 1. 以 Intune 管理员身份登录到[Azure 门户](https://portal.azure.com/)或为你的租户登录全局管理员
@@ -79,7 +79,7 @@ Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并�
 
 为每个应用程序创建三个 Azure AD 组。 此表概述了您需要的组（可用、必需和卸载）。 
 
-应用程序分配类型 |   组使用   | 示例 Azure AD 名称
+应用程序分配类型 |    组使用    | 示例 Azure AD 名称
 --- | --- | ---
 可用 |  该应用程序将从公司门户应用程序或网站提供。 | MMD –*应用程序名称*–可用
 必需 |  应用程序安装在所选组中的设备上。 | MMD –*应用程序名称*–必需

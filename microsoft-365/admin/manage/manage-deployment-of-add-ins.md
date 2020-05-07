@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011707"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139705"
 ---
-# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理外接程序的部署
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心管理加载项的部署
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的信息（请参阅[开始使用 Office 加载项](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)）。 作为管理员，您可以为组织中的用户部署 Office 外接程序。 您可以使用 Microsoft 365 管理中心中的集中部署功能来执行此操作。
   
@@ -234,7 +241,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
   
 Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（如果已启用 Active Directory 身份验证库（ADAL））。 有两种合规性选项，如下所述。
   
-- **启用 ADAL**。 本文介绍如何为 Office 2013 启用 ADAL：使用适用[于 office 客户端的 Microsoft 365 新式验证](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)。<br/>您还需要将注册表项设置为启用 ADAL，如在[Windows 设备上为 Office 2013 启用新式验证](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，还需要为 Office 2013 安装以下四月份更新：
+- **启用 ADAL**。 本文介绍如何为 Office 2013 启用 ADAL：使用适用[于 office 客户端的 Microsoft 365 新式验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。<br/>您还需要将注册表项设置为启用 ADAL，如在[Windows 设备上为 Office 2013 启用新式验证](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，还需要为 Office 2013 安装以下四月份更新：
     
   - [Office 2013 安全更新说明：4月10日，2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
@@ -277,10 +284,10 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
 3. 单击 "**删除加载项**"。 移除右下角的外接端按钮。
 4. 验证您的选择，然后选择 "**删除外接程序**"。
   
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 深入了解如何创建和构建 [Office 加载项](https://go.microsoft.com/fwlink/p/?linkid=846362)。
   
-[使用集中部署 PowerShell cmdlet 管理外接程序](https://support.office.com/article/94f4e86d-b8e5-42dd-b558-e6092f830ec9)。
+[使用集中部署 PowerShell cmdlet 管理外接程序](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)。
   
 [疑难解答：用户看不到外接程序](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

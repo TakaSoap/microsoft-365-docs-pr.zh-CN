@@ -19,14 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以创建和使用模板来节省时间并在添加多个用户时标准化设置。
-ms.openlocfilehash: a45107f520ee34437989bcd000096945514384ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617268"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140648"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>创建和使用模板来添加用户
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 您可以创建和使用模板来节省时间，并在添加多个用户时标准化设置。 如果有用户共享许多常用属性，如具有相同角色且在同一位置工作的用户以及需要同一软件的用户，则模板尤其有用。 例如，您可能拥有在同一 office 中工作的支持工程师团队。  
 
@@ -42,7 +49,7 @@ ms.locfileid: "43617268"
 - 许可证位置
 - 许可证选择
 - 应用程序选择
-- Role
+- 角色
 - 大多数配置文件信息，例如**作业配置文件**、**部门**、**办公室**、**办公室电话**和**街道地址** 
 
 以下信息是特定于用户的，不会保存在模板中：

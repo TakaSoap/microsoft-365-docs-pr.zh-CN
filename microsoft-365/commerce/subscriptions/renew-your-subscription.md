@@ -23,13 +23,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: '了解如何使用产品密钥续订 Microsoft 365 for business 订阅，并打开或关闭定期记帐。 '
-ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+description: '了解如何使用产品密钥续订 Microsoft 365 for business 订阅并打开或关闭定期付费。 '
+ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707651"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046224"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 for business
 
@@ -48,7 +48,7 @@ ms.locfileid: "43707651"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品和服务</a>”页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 选择想要为其管理定期计费的订阅。
 
@@ -60,7 +60,7 @@ ms.locfileid: "43707651"
 
     > [!NOTE]
     > - 您只能更改活动订阅的**定期记帐**设置。 如果你的订阅已过期或已禁用，你将需要[重新激活它](reactivate-your-subscription.md)，然后才能打开或关闭**定期记帐**。
-    > - 当**定期记帐**关闭时，将不会立即取消订阅。 它在过期之前仍处于活动状态。 您可以在 "**产品 & 服务**" 页上的订阅详细信息的 "**记帐**" 部分中查看到期日期。
+    > - 当**定期记帐**关闭时，将不会立即取消订阅。 它在过期之前仍处于活动状态。 您可以在 "**产品**" 页上的订阅详细信息的 "**记帐**" 部分中查看到期日期。
     > - 若要了解如何立即取消订阅，请参阅[取消我的订阅](cancel-your-subscription.md)。
 
 ::: moniker-end
@@ -70,7 +70,7 @@ ms.locfileid: "43707651"
 1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择想要为其管理定期计费的订阅。
- 
+
 3. 若要启用**定期计费**，请将切换切换到 **"开**"。
 
     ![已启用定期付费的订阅卡的特写。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
@@ -109,10 +109,6 @@ ms.locfileid: "43707651"
   
 [我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
 
-[添加、更新或删除付款方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-
-[更改付款方式](../billing-and-payments/change-payment-method.md)
-  
 [输入你的产品密钥](../enter-your-product-key.md)
   
 [购买试用版的 Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)

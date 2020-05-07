@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理员可以设置本机连接器以将数据从 LinkedIn 公司页面导入到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据的合规性。
-ms.openlocfilehash: 6b74e6ba8dca810a8a185ae6011207a419c3e79d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 设置连接器以将 LinkedIn 数据导入 Microsoft 365，以便您可以使用合规性工具，如合法保留、内容搜索和保留策略。
+ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943211"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043343"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>设置连接器以存档 LinkedIn 数据
 
@@ -45,7 +47,7 @@ ms.locfileid: "43943211"
 
 4. 在 "**使用 Linkedin 登录**" 页面上，单击 "**使用 linkedin 登录**"。
 
-   将显示 "LinkedIn 登录" 页面。
+   显示 LinkedIn 登录页。
 
    ![LinkedIn 登录页](../media/LinkedInSigninPage.png)
 
@@ -57,17 +59,15 @@ ms.locfileid: "43943211"
 
 6. 选择要存档其项目的公司页面，然后单击 "**下一步**"。
 
-7. 在 "**设置筛选器**" 页上，您可以将筛选器应用于最初导入特定年龄的项目。 选择年龄，然后单击 "**下一步**"。
+7. 在 "**选择存储位置**" 页上，单击 "" 框中，选择 LinkedIn 项目将导入到其中的 Microsoft 365 邮箱的电子邮件地址，然后单击 "**下一步**"。 项目将导入到此邮箱的 "收件箱" 文件夹中。
 
-8. 在 "**选择存储位置**" 页上，单击 "" 框中，选择 LinkedIn 项目将导入到其中的 Microsoft 365 邮箱的电子邮件地址，然后单击 "**下一步**"。 项目将导入到此邮箱的 "收件箱" 文件夹中。
+8. 在 "**提供管理员同意**" 中，单击 "**提供许可**"，然后按照步骤操作。 您必须是全局管理员，才能同意 Office 365 导入服务以访问组织中的数据。
 
-9. 在 "**提供管理员同意**" 中，单击 "**提供许可**"，然后按照步骤操作。 您必须是全局管理员，才能同意 Office 365 导入服务以访问组织中的数据。
-
-10. 单击 "**下一步**" 查看连接器设置，然后单击 "**完成**" 以完成连接器设置。
+9. 单击 "**下一步**" 查看连接器设置，然后单击 "**完成**" 以完成连接器设置。
 
 创建连接器后，可以返回到 "**数据连接器**" 页，以查看新连接器的导入过程的进度（如有必要，请选择 "**刷新**" 以更新连接器列表）。 "**状态**" 列中的值为 "**正在等待启动**"。 启动初始导入过程需要长达24小时。 在第一次运行连接器并导入 LinkedIn 项目后，连接器将每24小时运行一次，并导入 "LinkedIn 公司" 页上的 "在前24小时内创建的任何新项目"。
 
-若要查看更多详细信息，请选择 "**数据连接器**" 页上的列表中的连接器以显示弹出页面。 在 "**状态**" 下，显示的日期范围表示创建连接器时选择的年龄筛选器。 
+若要查看更多详细信息，请选择 "**数据连接器**" 页上的列表中的连接器以显示弹出页面。 在 "**状态**" 下，显示的日期范围表示创建连接器时选择的年龄筛选器。
 
 ## <a name="more-information"></a>更多信息
 

@@ -1,6 +1,6 @@
 ---
 title: 适用于 SharePoint Server 的 GDPR
-description: 了解如何解决本地 SharePoint Server 中的 GDPR 要求。
+description: 了解如何解决本地 SharePoint Server 中的一般数据保护条例 (GDPR) 要求。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6cbcb7f0918d472d953cb0f837adcb23b642a3a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 58ddbe98ec5ca6b08e6d6be58c4258265c13e3de
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596389"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036225"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>适用于 SharePoint Server 的 GDPR
 
@@ -300,7 +301,7 @@ SharePoint Server 自动在 3 年后删除使用情况记录。可使用以下�
 
 User Profile Service 支持从各种外部源导入配置文件数据。应在掌握此类用户配置文件数据的系统中处理数据的查询和更新。如果对外部系统进行更新，请务必在 SharePoint Server 中再次同步用户配置文件。
 
-按照以下基本步骤操作，从用户的 SharePoint Server 用户配置文件中删除其个人信息。
+按照以下基本步骤操作，从用户的 SharePoint Server 用户配置文件中删除其个人信息：
 
 1.  从馈送到 SharePoint Server 用户配置文件的任何外部系统中删除用户信息。如果要使用目录同步，必须从本地 Active Directory 环境中删除用户。
 

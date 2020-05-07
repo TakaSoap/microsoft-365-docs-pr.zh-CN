@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 了解如何允许成员以 Microsoft 365 组的形式发送电子邮件，或代表 Microsoft 365 组发送电子邮件。
-ms.openlocfilehash: 4492c929fbd30ad77d9ddb23c37299e8734162df
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce4527321468ee01864177fc1a607fab6a474481
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630665"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049383"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员作为组发送或代表组发送
 
@@ -78,7 +78,7 @@ ms.locfileid: "43630665"
 
 ## <a name="related-articles"></a>相关文章
 
-[了解有关 Microsoft 365 组的详细信息](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[了解有关 Microsoft 365 组的详细信息](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [外接 Add-recipientpermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

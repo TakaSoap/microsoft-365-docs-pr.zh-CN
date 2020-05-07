@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过对邮箱应用保留策略或保留策略，然后删除相应的用户帐户，可以在 Microsoft 365 中创建非活动邮箱。 非活动邮箱中的项目会在保留或应用到其非活动状态的保留策略的持续时间内保留。 若要永久删除非活动邮箱，只需删除保留策略或保留策略即可。
-ms.openlocfilehash: 9c34acb22e1be7f88d87d254c0fac34ca9ff8105
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6265504f12adeadbc51c36c1e97c999e30a0d141
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634204"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048011"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>创建和管理非活动邮箱
 
@@ -32,11 +32,11 @@ Microsoft 365 使您可以保留已删除邮箱的内容。 此功能称为“�
 > [!IMPORTANT]
 > 随着我们继续投资保留邮箱内容的不同方式，我们宣布在 Exchange 管理中心中停用就地保留。 这意味着，应使用诉讼保留和保留策略来创建非活动邮箱。 从2020年6月1日开始，你将无法在 Exchange Online 中创建新的就地保留。 但您仍可以更改非活动邮箱上设置的就地保留的保留持续时间。 但是，从2020年10月1日开始，你将无法更改保留期。 你将只能通过删除就地保留来删除非活动邮箱。 在删除保留之前，就地保留中的现有非活动邮箱仍将保留。 有关停用就地保留的详细信息，请参阅[旧版电子数据展示工具的退休](legacy-ediscovery-retirement.md)。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要使邮箱处于非活动状态，则必须为其分配 Exchange Online 计划2许可证，以便在删除邮箱之前可以将诉讼保留或保留策略应用于该邮箱。 Exchange Online 计划2许可证是 Office 365 企业版 E3 和 E5 订阅的一部分。 如果为邮箱分配了 Exchange Online 计划1或 Exchange Online 展台许可证（分别是 Office 365 E1 和 F1 订阅的一部分），则必须将其分配给单独的 Exchange Online 存档许可证，以便在删除邮箱之前可以对其应用保留。 有关详细信息，请参阅 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)。
 
-- 删除了相应的用户帐户后，与已删除的 Exchange Online 邮箱相关联的许可证将可用。 然后，您可以[将这些许可证分配给其他用户](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。 
+- 删除了相应的用户帐户后，与已删除的 Exchange Online 邮箱相关联的许可证将可用。 然后，您可以[将这些许可证分配给其他用户](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。 
 
 - 如果诉讼保留或保留策略（配置为保留或保留，然后删除内容）未在删除邮箱之前应用于该邮箱，则不会保留或发现邮箱的内容。 但是，删除的邮箱可以在删除后的30天内恢复，但是如果未恢复，则30天后将永久删除该邮箱及其内容。
 
@@ -73,7 +73,7 @@ Microsoft 365 使您可以保留已删除邮箱的内容。 此功能称为“�
 
 若要查看组织中非活动邮箱的列表，请执行以下操作：
   
-1. 转到[https://protection.office.com](https://protection.office.com)并使用组织中的管理员帐户的凭据登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com)，然后使用你组织中的管理员帐户的凭据进行登录。 
     
 2. 单击 "**信息治理** > **保留**"。
     

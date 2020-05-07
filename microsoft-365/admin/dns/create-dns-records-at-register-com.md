@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: 了解如何验证您的域，并在 Register.com for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 7d1293368a9a7ab94a5556ca266c716280ae85f5
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 125baf224cc9f3f21746a2f802b17f2572b65316
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939115"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048899"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Register.com 处为 Microsoft 创建 DNS 记录
 
@@ -123,7 +123,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |****主机名****|优先级 * * * *|邮件服务器 * * * *|
     |:-----|:-----|:-----|
-    |@  <br/> |高  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 从 Microsoft 帐户获取\<*域密钥*\>。 <br> [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |高  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 从 Microsoft 帐户获取\<*域密钥*\>。 <br> [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![复制并粘贴表中的值](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   

@@ -16,14 +16,21 @@ search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 认证的解决方案提供商（合作伙伴）为您的组织或学校购买和管理产品和服务。
 keywords: 合作伙伴、解决方案提供商
-ms.openlocfilehash: ad51ee23b780de33aaaca6ad651816dba89c7bc9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080359"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141203"
 ---
 # <a name="manage-partner-relationships"></a>管理合作伙伴关系
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 您可以与 Microsoft 认证的解决方案提供商（合作伙伴）合作，为您的组织或学校购买和管理产品和服务。 在设置过程中涉及几个步骤。
 
@@ -35,7 +42,7 @@ ms.locfileid: "42080359"
 
 合作伙伴可以通过多种方式与你合作。 根据您规定的业务需求，他们在发送请求以与您合作时选择这些类型中的一种。
 
-| 合作伙伴类型 | 描述 |
+| 合作伙伴类型 | 说明 |
 | ------ | ------------------- |
 | 增值 | 向你的组织或学校销售 Microsoft 产品的合作伙伴。 |
 | 委派管理员 | 为组织或学校管理产品和服务的合作伙伴。 在 Azure Active Directory （AD）中，合作伙伴是租户的全局管理员。 此角色使他们能够管理服务，如创建用户帐户、分配和管理许可证以及重置密码。 |

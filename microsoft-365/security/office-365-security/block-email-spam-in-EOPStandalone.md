@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
-description: 用于帮助阻止垃圾邮件误报的独立 EOP 管理员文档
-ms.openlocfilehash: 326c51f7f6730d510f411b5318b29e97b128c078
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何配置 Office 365 反垃圾邮件筛选器，以阻止垃圾邮件并防止出现假的错误消息。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 16bb5530384dba360483eba3a8e05fbfdf3fe895
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630643"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035576"
 ---
 # <a name="customize-the-anti-spam-filter-with-these-settings"></a>为反垃圾邮件筛选器自定义这些设置
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: cca1d3dff4d95f5b15b9f18d5eeebcf054e52fe3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1b315ac89936aaa69072959031733fef4e0a5c1a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630063"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049187"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 组中管理来宾访问
 
@@ -33,7 +33,7 @@ ms.locfileid: "43630063"
 
 > [!Note]
 > 处于本机模式或[欧盟地区](https://go.microsoft.com/fwlink/?linkid=2107357)的 Yammer 企业网络不支持网络来宾。
-> Microsoft 365 连接的 Yammer 组目前不支持来宾访问，但你可以在 Yammer 网络中创建未连接的外部组。 有关说明，请参阅[在 Yammer 中创建和管理外部组](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)。
+> Microsoft 365 连接的 Yammer 组目前不支持来宾访问，但你可以在 Yammer 网络中创建未连接的外部组。 有关说明，请参阅[在 Yammer 中创建和管理外部组](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups)。
 
 ### <a name="edit-guest-information"></a>编辑来宾信息
 
@@ -62,7 +62,7 @@ ms.locfileid: "43630063"
   
 4. 选择 "**添加成员**"，然后选择要添加的来宾的名称。
     
-5. 选择“**保存**”。
+5. 选择“保存”****。
 
 如果要直接将来宾添加到目录中，可以[在 azure 门户中添加 Azure Active DIRECTORY B2B 协作用户](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)。
 

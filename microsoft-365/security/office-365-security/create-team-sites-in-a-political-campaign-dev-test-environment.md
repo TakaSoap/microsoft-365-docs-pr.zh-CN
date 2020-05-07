@@ -1,5 +1,5 @@
 ---
-title: 在政治宣传活动开发/测试环境中创建团队网站
+title: 创建团队网站 - 政治宣传活动开发/测试环境
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,15 +15,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
-ms.openlocfilehash: 14ba5b00754a9e55c797edd0835658ac81b7e647
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e3223b059273f0955d7fc11f8ca98d529d946210
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637660"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036471"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 

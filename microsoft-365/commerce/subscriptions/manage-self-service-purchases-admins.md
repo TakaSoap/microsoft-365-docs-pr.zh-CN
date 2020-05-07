@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理员可以了解如何管理组织中的用户所做的自我服务购买。
-ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409627"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046176"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
@@ -29,7 +29,7 @@ ms.locfileid: "42409627"
 
 ## <a name="view-self-service-subscriptions"></a>查看自助服务订阅
 
-1. 在 "管理中心" 中，转到 "**帐单** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品 & 服务</a>" 页。
+1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 在 "**优化结果**" 下，从 "**帐户类型**" 下拉选择 "**自助服务**"。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42409627"
 
 7. 请与购买自助服务购买订阅的人员联系，让他们取消该订阅。
 
-## <a name="need-help-contact-us"></a>是否需要帮助？ 联系我们。
+## <a name="need-help-contact-us"></a>需要帮助？ 联系我们。
 
 有关自助购买的常见问题，请参阅[自助服务购买 FAQ](self-service-purchase-faq.md)。
 

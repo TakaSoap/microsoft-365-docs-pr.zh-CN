@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 71226634f17e8e801c409e513494dfdcc19d0719
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919689"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046290"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
@@ -156,4 +156,6 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 For microsoft 365](communication-compliance-configure.md)或查看[Contoso 的个案研究](communication-compliance-case-study.md)，以及如何快速将通信合规性策略配置为在 Microsoft 团队、Exchange Online 和 Yammer 通信中监视是否有攻击性的语言。
+- 有关规划信息，请参阅[Plan for communication 合规性](communication-compliance-plan.md)。
+- 查看 Contoso 的[案例研究](communication-compliance-case-study.md)，并查看如何快速配置通信合规性策略，以监视 Microsoft 团队、Exchange Online 和 Yammer 通信中的攻击性语言。
+- 若要为 Microsoft 365 组织配置通信合规性，请参阅[configure communication 合规性 For microsoft 365](communication-compliance-configure.md)。

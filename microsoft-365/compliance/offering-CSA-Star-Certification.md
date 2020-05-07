@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a13274aea83bf26eca8ecde524eafa14d27b4fca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37c460732704da4c5904005cf8ebaabf36b92c49
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602559"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066103"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>云安全联盟 (CSA) STAR 认证
 
@@ -36,8 +36,6 @@ ms.locfileid: "41602559"
 Microsoft Azure、Microsoft Intune 和 Microsoft Power BI 已获得 STAR 认证，该认证涉及对云提供商的安全状况进行严格的独立第三方评估。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的标准，则授予此 STAR 认证。 它证明云服务提供商符合 ISO/IEC 27001 的适用要求，已解决了 CCM 中概述的对云安全至关重要的问题，并根据 STAR 能力成熟度模型对 CCM 控制区域的活动管理进行了评估。  
   
 在评估过程中，由一位经资格认定的 CSA 认证审核员对 16 个 CCM 控制区域的每个区域给出成熟度能力分数。 然后，使用平均分数指定总体成熟度，以及相应的铜牌、银牌或金牌。 Azure、Intune、Power BI 和 Microsoft Cloud App Security 已获得云安全联盟 (CSA) STAR 金牌认证。  
-  
-了解 Microsoft 云上的 CSA STAR 认证的优势：[下载 CSA STAR 认证背景信息](https://aka.ms/csastar-certification-backgrounder)
 
 了解如何在我们的 Azure 安全性和合规性蓝图的帮助下加快 CSA STAR 认证部署：[下载 Microsoft Azure 对 CSA 共识评估计划问卷的响应](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
@@ -92,7 +90,3 @@ Azure、Cloud App Security、Intune 和 Power BI 在成熟度能力评估中均�
 - [ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf)。

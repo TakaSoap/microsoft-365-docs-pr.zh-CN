@@ -1,5 +1,5 @@
 ---
-title: DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
+title: DLP 在 Exchange 管理中心 & 的安全性 & 合规中心的工作方式
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解安全 & 合规中心中的 DLP 如何与 Exchange 管理中心中的 DLP 和邮件流规则（传输规则）结合使用。
-ms.openlocfilehash: 82b3d371303b647488c08416c5392d006c81e479
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 05e3c6342ab6d57c1f22de96e64a01df5fd15131
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073060"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036193"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
 

@@ -1,5 +1,7 @@
 ---
-title: 管理计费配置文件
+title: 管理计费对象信息
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -16,14 +18,22 @@ search.appverid:
 - MET150
 description: 了解计费配置文件如何支持发票。
 keywords: 计费配置文件、发票、费用、管理费用
-ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837386"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140886"
 ---
-# <a name="manage-billing-profiles"></a>管理计费配置文件
+# <a name="manage-billing-profiles"></a>管理计费对象信息
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
+
 对于从 Microsoft 购买产品和服务的商业客户，计费配置文件允许您自定义发票中包含的项目以及支付发票的方式。
 
 计费配置文件包括以下信息：
@@ -42,7 +52,7 @@ ms.locfileid: "39837386"
 
 计费配置文件上的角色具有控制采购的权限，并查看和管理发票。 将这些角色分配给跟踪、组织和支付发票的用户，如组织中的采购团队的成员。
 
-| 角色                          | 说明                                                                       |
+| Role                          | 说明                                                                       |
 |-----------------------------  |---------------------------------------------------------------------------------  |
 | 计费配置文件所有者         | 管理计费配置文件的所有内容                                           |
 | 帐单档案文件参与者   | 管理帐单配置文件中除权限之外的所有内容                         |
@@ -51,7 +61,7 @@ ms.locfileid: "39837386"
 
 ## <a name="view-billing-profiles"></a>查看帐单配置文件
 
-1. 在 "管理中心" 中，转到 "**计费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帐单 & 付款</a>" 页。
+1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">账单和付款</a>”页。
 
 2. 选择 "**帐单配置文件**"，然后从列表中选择帐单配置文件。
 
@@ -66,7 +76,7 @@ ms.locfileid: "39837386"
     > [!NOTE]
     > 如果你没有任何 Azure 信用，你将看不到**azure 信用余额**或**azure 积分**选项卡。
 
-## <a name="need-help-contact-support"></a>需要帮助? 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助？ 请联系支持人员。
 
 如果你在 Azure 费用方面遇到疑问或需要帮助，请<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">使用 azure 支持创建支持请求</a>。
 

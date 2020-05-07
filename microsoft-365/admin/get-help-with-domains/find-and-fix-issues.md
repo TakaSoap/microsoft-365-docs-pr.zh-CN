@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 了解在设置自定义域时，通过确保正确设置了 DNS 记录来跟踪你遇到的任何问题。
-ms.openlocfilehash: 13d867559684d80ee5c0e1f7005d1dcaf3b4d611
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628466"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053713"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>查找并修复添加域或 DNS 记录之后出现的问题
 
@@ -65,21 +65,21 @@ ms.locfileid: "43628466"
 ## <a name="outlook-isnt-working"></a>Outlook 无法正常工作？
 <a name="BKMK_OutlookBroken"> </a>
 
-如果你已为域正确设置了你的 MX 记录和其他 DNS 记录，但邮件不起作用，让我们帮助你 [解决 Outlook 问题](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx)。
+如果你已为域正确设置了你的 MX 记录和其他 DNS 记录，但邮件不起作用，让我们帮助你 [解决 Outlook 问题](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。
   
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>每个人的电子邮件已切换到 Microsoft 365，并且您仅希望您的电子邮件切换？
 <a name="BKMK_EmailSwitched"> </a>
 
 将域添加到 Microsoft 365 时，通常您的域的 MX 记录将更新（您或 Microsoft 365）以指向 Microsoft 365，发送到该域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已在 Microsoft 365 中为每个在您的域中有电子邮件的用户创建了邮箱，然后再更改 MX 记录。
   
-如果您不想将域中每个人的电子邮件移至 Microsoft 365，该怎么办？ 您可以采取步骤[仅使用几个电子邮件地址来试用 Microsoft 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)。
+如果您不想将域中每个人的电子邮件移至 Microsoft 365，该怎么办？ 您可以采取步骤[仅使用几个电子邮件地址来试用 Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>无法确认非盈利或学校帐户状态？
 <a name="BKMK_validateAcct"> </a>
 
 在以下几种情况下，只需验证组织的域，而不会设置任何服务。 例如，若要证明你的组织符合学校订阅的 Microsoft 365。
   
-请查看[验证 Microsoft 365 域中的指南，以证明所有权、非盈利或教育状态，或激活 Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590)以确保您已完成所有必需的步骤。 这在每种情况下稍有不同。 
+请查看[验证 Microsoft 365 域中的指南，以证明所有权、非盈利或教育状态，或激活 Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)以确保您已完成所有必需的步骤。 这在每种情况下稍有不同。 
   
 ## <a name="services-not-working-with-your-domain"></a>这些服务对你的域不起作用？
 <a name="BKMK_Test"> </a>
@@ -87,14 +87,14 @@ ms.locfileid: "43628466"
 我们可帮助你跟踪域的 DNS 设置问题。 Microsoft 365 中的 "域" 疑难解答程序将向您显示需要修复的任何记录，以及记录需要设置到的确切内容。 
 
 > [!TIP]
-> 已正确设置你的 DNS，但桌面版 Outlook 的邮件仍然无法工作？ 请查看[您可以使用 Microsoft 365 的不同邮件流方案](https://go.microsoft.com/fwlink/?LinkId=787530)，以确保您已为您的企业正确设置了项目。 或发送电子邮件到下面的地址以获取更多疑难解答帮助：[修复 Outlook 问题](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx)。 
+> 已正确设置你的 DNS，但桌面版 Outlook 的邮件仍然无法工作？ 请查看[您可以使用 Microsoft 365 的不同邮件流方案](https://www.microsoft.com/?ref=go)，以确保您已为您的企业正确设置了项目。 或发送电子邮件到下面的地址以获取更多疑难解答帮助：[修复 Outlook 问题](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
   
 ## <a name="accessing-your-website-isnt-working"></a>无法正常访问你的网站？
 <a name="BKMK_Website"> </a>
 
 如果您已修复任何 DNS 问题，但仍遇到问题，请尝试执行下列操作之一。
   
-- 用户无法在 www.mydomain.com 上访问您的网站：[跟踪网站问题](https://support.office.com/article/61f34ca1-ca7f-4a65-9348-def20db09ddf.aspx)
+- 用户无法在 www.mydomain.com 上访问您的网站：[跟踪网站问题](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
 - 您不能更新 A 记录或 CNAME 记录以指向您的网站：[在 Microsoft 365 中更新自定义 DNS 记录](../dns/add-or-edit-custom-dns-records.md)
     
