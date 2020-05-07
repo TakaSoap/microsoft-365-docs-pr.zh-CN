@@ -15,14 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: ''
-ms.openlocfilehash: 1a8a766f4bd0d7acdd497df85d31cb258a8f7929
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9b180fa30e65ff72be76297ef856dce71c3807ff
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079879"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035068"
 ---
-# <a name="view-documents-in-a-review-set"></a><span data-ttu-id="6d933-102">查看审阅集中的文档</span><span class="sxs-lookup"><span data-stu-id="6d933-102">View documents in a review set</span></span>
+# <a name="view-documents-in-a-review-set"></a><span data-ttu-id="c2904-102">查看审阅集中的文档</span><span class="sxs-lookup"><span data-stu-id="c2904-102">View documents in a review set</span></span>
 
-<span data-ttu-id="6d933-103">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="6d933-103">Content coming soon.</span></span>
+<span data-ttu-id="c2904-103">内容即将推出。</span><span class="sxs-lookup"><span data-stu-id="c2904-103">Content coming soon.</span></span>
