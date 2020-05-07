@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何设置 Microsoft 365 商业标准版、Microsoft 365 商业基础版、Microsoft 365 商业版应用或 Office 365 教育版订阅。
-ms.openlocfilehash: 448dc7ae990a4c9803ea751e4ad855f375195734
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 812d1a65986f53e53a02d4c1b70c823dffa98786
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627542"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053856"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 
@@ -309,9 +309,9 @@ Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储�
 
 ### <a name="get-ready-for-office-365"></a>为 Office 365 做好准备
 
-- **首先，确认你有资格使用教育版订阅** 按照步骤[验证你的域，证明所有权、非营利或教育状态，或者激活 Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590)，以便 Microsoft 为你提供使用教育版计划的许可。然后，你可以按照本文中的指导为学校设置 Office 365。
+- **首先，确认你有资格使用教育版订阅** 按照步骤[验证你的域，证明所有权、非营利或教育状态，或者激活 Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，以便 Microsoft 为你提供使用教育版计划的许可。然后，你可以按照本文中的指导为学校设置 Office 365。
 
-- **获取帮助？** 如果需要更高级部署方面的帮助， **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** 是一个很好的起点。你还可以 [查找合作伙伴](https://go.microsoft.com/fwlink/p/?linkid=391089)来帮助你。
+- **获取帮助？** 如果需要更高级部署方面的帮助， **[FastTrack](https://www.microsoft.com/zh-CN/fasttrack/microsoft-365/office-365)** 是一个很好的起点。你还可以 [查找合作伙伴](https://go.microsoft.com/fwlink/p/?linkid=391089)来帮助你。
 
 - **规划**这些工具和资源将帮助你为 Office 365 准备好网络、目录和用户。[让你的组织准备好使用 Office 365 企业版](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc)。
 

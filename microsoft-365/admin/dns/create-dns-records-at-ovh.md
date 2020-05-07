@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: 了解如何验证您的域，并在 OVH for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: a1f29b6f6464e781768997be0969914771ec5703
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939127"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048911"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>在 OVH 处为 Microsoft 创建 DNS 记录
 
@@ -142,11 +142,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
     |**记录类型**|**子域**|**TTL**|**优先级**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |（保留为空白）  <br/> |3600（秒）  <br/> |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<\>mail.protection.outlook.com。  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |（保留为空白）  <br/> |3600（秒）  <br/> |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<\>mail.protection.outlook.com。  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![邮件的 OVH MX 记录](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
     ![OVH MX 记录选择 "下一步"](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
   
@@ -197,7 +197,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![OVH CNAME 记录](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
     ![OVH 添加 CNAME 值并选择 "下一步"](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
@@ -239,7 +239,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![OVH 为 SPF 添加 TXT 记录](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
     ![OVH 为 SPF 添加 TXT 记录，然后选择 "下一步"](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
@@ -281,7 +281,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
        
     ![OVH SRV 记录](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
-7. 选择“下一步”****。
+7. 选择“**下一步**”。
     
     ![OVH SRV 记录选择 "下一步"](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
   

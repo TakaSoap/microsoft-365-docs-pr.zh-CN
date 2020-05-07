@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141567"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046270"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合规性分数（预览）
 
@@ -49,8 +49,8 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 - **建议的操作**：提供有关如何实现控制以最大化分数的建议和分步指南
 -  **内置的控件映射**：通过提供内置的通用控制框架，帮助您及时了解日益发展的合规性环境
 
-> [!IMPORTANT] 
-> 合规性分数不表示对任何特定标准或法规的组织合规性的绝对衡量。 它表示您已采用的控制程度，可降低个人数据和个人隐私的风险。 不应将合规性分数和合规性管理器中的建议解释为合规性保证。 此服务目前处于预览阶段，并受[在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件的制约。
+> [!IMPORTANT]
+> 合规性分数和合规性管理器中提供的建议不应解释为合规性保证。 根据您的法规环境评估和验证客户控制措施的有效性。 这些服务当前处于预览阶段，并遵循[在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件。 另请参阅[适用于安全性和合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="relationship-to-compliance-manager"></a>与合规性管理器的关系
 
@@ -64,7 +64,7 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 ## <a name="understanding-your-score"></a>了解你的成绩
 
-合规性分数为你提供了基于 Microsoft 365 数据保护基准的初始分数。 此基准是一组包含常见行业法规和标准的控件。 虽然这一分数是评估合规性状况的一个很好的起点，但一旦添加了与贵组织更相关的评估，合规性分数就会变得更加强大。
+合规性分数为你提供了基于 Microsoft 365 数据保护基准的初始分数。 此基准是一组包含常见行业法规和标准的控制措施。 虽然这一分数是评估合规性状况的一个很好的起点，但一旦添加了与贵组织更相关的评估，合规性分数就会变得更加强大。
 
 例如，如果您的组织属于金融服务行业，您可能需要添加 FFIEC 评估。 如果您的组织属于医疗保健行业，则可以添加 HIPAA/高科技评估。 了解如何[在合规性管理器中添加评估](working-with-compliance-manager.md#assessments)。
 
@@ -128,7 +128,7 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 查看[有关创建模板的详细说明](working-with-compliance-manager.md#templates)（出现在合规性管理器中）。
 
-### <a name="groups"></a>Groups
+### <a name="groups"></a>组
 
 组允许您按符合您的逻辑方式组织评估。 例如，您可以选择按年、合规性标准、服务、组织内的团队或其他方式对评估进行分组。
 

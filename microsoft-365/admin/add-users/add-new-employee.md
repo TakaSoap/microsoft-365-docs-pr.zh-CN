@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 将新员工添加到 Microsoft 365 电子邮件、Skype 和 Office 相关应用程序的商业版。
-ms.openlocfilehash: 43685a786da7ec43c982f91b4fca554424cad624
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618892"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049493"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>将新员工添加到 Microsoft 365
 
@@ -82,7 +82,7 @@ ms.locfileid: "43618892"
 |设置 Skype for Business，以便您可以与公司或世界各地的同事或业务合作伙伴进行连接。 您可以开始与即时消息、语音或视频呼叫进行对话。  <br/> |[在计算机上安装 Skype For business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx)。  <br/> <br/>若要了解如何使用 Skype for Business，请[观看视频。](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>是否设置了 Skype for business，以便你的员工可以与你的企业外部的人员联系以使用免费的 Skype 应用？ 如果不是，请告诉你的新员工，让他们知道使用 Skype for Business 时预期的情况。  <br/> |
 |如果你想要在你的手机上获取电子邮件或使用 Skype for Business，请在移动设备上安装应用。  <br/> |如果你想要设置 Outlook 移动应用，以便你可以通过电话获取电子邮件。 有关说明，请参阅[iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234.aspx)、 [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872.aspx)、 [Windows Phone](https://support.microsoft.com/en-us/office/set-up-email-on-windows-phone-181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>如果要在移动设备上使用 Skype for Business，请下载并安装移动应用。 有关说明，请参阅[iOS](https://support.microsoft.com/en-us/office/install-skype-for-business-on-a-mobile-device-3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS)、 [Android](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android)、 [Windows Phone](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |完成 OneDrive for Business 培训，以帮助您了解如何在云中存储和组织文档、演示文稿和电子表格。  <br/> |使用 OneDrive for Business 将与业务相关的文档保留在云中。 你始终可以访问你的内容，即使你已登录到另一台计算机上的 Microsoft 365 也是如此。 [观看视频以了解如何使用 OneDrive for Business](https://support.office.com/article/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde.aspx) <br/><br/> **培训：** [onedrive for business 培训](https://support.office.com/article/1f608184-b7e6-43ca-8753-2ff679203132.aspx)（选择 "onedrive for business"）。  <br/> |
-|完成 SharePoint Online 培训可帮助您与同事协作并共享内容。  <br/> |在 SharePoint Online 中，将您的同事也可以访问的文档的最佳位置。  <br/> <br/>**培训**：[视频：使用 SharePoint Online 与团队内容协作](https://support.office.com/article/2dd9aeff-7749-4b78-9696-eb0f6267f1f5.aspx) <br/><br/> **查找：** 您的组织如何使用 SharePoint Online 以及存储在这里的文档类型。 此外，哪些文档存储在 OneDrive for Business 中。  <br/> |
+|完成 SharePoint Online 培训可帮助您与同事协作并共享内容。  <br/> |在 SharePoint Online 中，将您的同事也可以访问的文档的最佳位置。  <br/> <br/>**培训**：[视频：使用 SharePoint Online 与团队内容协作](https://support.office.com/article/what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **查找：** 您的组织如何使用 SharePoint Online 以及存储在这里的文档类型。 此外，哪些文档存储在 OneDrive for Business 中。  <br/> |
 
    
 ## <a name="related-articles"></a>相关文章
