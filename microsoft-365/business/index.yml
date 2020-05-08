@@ -4,34 +4,34 @@ summary: Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”�
 brand: m365
 metadata:
   title: Microsoft 365 商业高级资源
-  description: description
+  description: 说明
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
-  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+  ms.openlocfilehash: 05b835c8c7ceb6a472710a9878f356de63c89e5f
+  ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "44002176"
+  ms.lasthandoff: 05/08/2020
+  ms.locfileid: "44165821"
 productDirectory:
   title: 使用 Microsoft 365 商业高级版实现安全远程工作
   items:
-  - title: 新变化？
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 即将推出 Microsoft 365 商业高级版！
-    url: https://aka.ms/aadp1smbblog
-  - title: 观看合作伙伴网络研讨会
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: 保护正在应对新型冠状病毒（COVID-19）客户的安全。
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: 阅读
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: 使用 Microsoft 365 商业高级版实现安全远程工作的最佳方式。
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+  - title: 获取免费的合作伙伴工具包
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: 适用于合作伙伴的实践指导和转到市场资源，用于保护远程工作。
+    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+  - title: 新变化？
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 即将推出 Microsoft 365 商业高级版！
+    url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:
   - title: 什么是 Microsoft 365 商业高级版？
@@ -76,7 +76,7 @@ conceptualContent:
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
       text: 融资演讲稿（合作伙伴聚焦）
-    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
       itemType: download
       text: 技术基础知识
     - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
@@ -118,7 +118,7 @@ conceptualContent:
     - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
       itemType: overview
       text: 数据丢失防护
-    - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+    - url: https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
       itemType: how-to-guide
       text: 发送加密电子邮件
     - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
