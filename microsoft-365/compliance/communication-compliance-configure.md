@@ -18,17 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 990e39484b7f3f5b26b39e52f9344da0a3ffa290
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 35eb63fd5b472f4b58c5f2fb5285ffff012277dd
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919679"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065897"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
-
->[!IMPORTANT]
->本主题适用于在 Microsoft 365 订阅中配置通信合规性。 如果要为 Microsoft 365 订阅配置监督策略，请参阅[配置针对 microsoft 365 的监督](supervision-policies.md)。
 
 使用通信合规性策略，以捕获内部或外部审阅者进行检查的员工通信。 有关通信合规性策略如何帮助您监视组织中的通信的详细信息，请参阅[Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果您想要查看 Contoso 如何快速将通信合规性策略配置为在 Microsoft 团队、Exchange Online 和 Yammer 通信中监视攻击性语言，请查看此[案例研究](communication-compliance-case-study.md)。
 
@@ -70,13 +67,13 @@ ms.locfileid: "43919679"
 
 3. 选择“创建”****。
 
-4. 在 "**名称**" 字段中，为新角色组指定一个友好名称。 选择“下一步”****。
+4. 在 "**名称**" 字段中，为新角色组指定一个友好名称。 选择“**下一步**”。
 
-5. 选择 "**选择角色**"，然后选择 "**添加**"。 选中 "**监察审核管理员**、**案例管理**、**合规性管理员**和**审阅**" 复选框，然后选择 "**添加**并**完成**"。 选择“下一步”****。
+5. 选择 "**选择角色**"，然后选择 "**添加**"。 选中 "**监察审核管理员**、**案例管理**、**合规性管理员**和**审阅**" 复选框，然后选择 "**添加**并**完成**"。 选择“**下一步**”。
 
     ![满足通信合规性角色组](../media/communication-compliance-role-groups-1.png)
 
-6. 选择 "**选择成员**"，然后选择 "**添加**"。 选中您想要创建策略的所有用户和组的复选框，并使用策略匹配来管理邮件，然后选择 "**添加**并**完成**"。 选择“下一步”****。
+6. 选择 "**选择成员**"，然后选择 "**添加**"。 选中您想要创建策略的所有用户和组的复选框，并使用策略匹配来管理邮件，然后选择 "**添加**并**完成**"。 选择“**下一步**”。
 
 7. 选择 "**创建角色组**" 以完成。
 

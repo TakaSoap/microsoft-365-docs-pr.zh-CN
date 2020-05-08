@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 34e0b0197754a85576c86fc4d447af7a25c0dc62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b349c41f2f423f7c0fca1b66c20c571a3512fa54
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602649"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065857"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>内容交付和安全协会 (CDSA) 内容保护和安全性 (CPS) 标准
 
@@ -76,7 +76,3 @@ Microsoft 已成功完成六个月的 CDSA CPS 认证续订，并且 Azure 现�
 - [Azure 媒体服务如何获得 CDSA 安全认证](https://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - 了解 CDSA 与 Azure 合规性
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf)。

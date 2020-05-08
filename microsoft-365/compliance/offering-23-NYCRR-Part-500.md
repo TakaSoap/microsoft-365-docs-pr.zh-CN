@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e5d9c847173af4155d6c9eb0f8c59a07053435c2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9b72f7206ff83b790cf41c00e3f7042eadf3664
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602889"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066659"
 ---
 # <a name="title-23-nycrr-part-500"></a>Title 23 NYCRR 500 部分
 
@@ -76,7 +76,3 @@ Microsoft 为受到 Title 23 NYCRR 500 部分监管的金融服务提供了综�
 - [Microsoft 云金融服务合规性计划](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Azure 中的金融服务合规性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [关于云计算的责任共担](https://aka.ms/sharedresponsibility)- 
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf)。

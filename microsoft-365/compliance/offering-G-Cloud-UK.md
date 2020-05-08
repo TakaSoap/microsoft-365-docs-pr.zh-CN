@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42236882"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066557"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云（G-云）
 
@@ -82,7 +82,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 [开始使用 Azure UK G-云蓝图](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **谁有资格使用数字市场？**
 
@@ -115,7 +115,3 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 - [数字市场](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf)。

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 546e4b29f26ffdee8c876032fe83254fb5643fff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6dc80bbacaf8d4bbadb345910b29b8410c13768
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602379"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066567"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>金融行业信息系统中心 (FISC)
 
@@ -84,7 +84,3 @@ FISC 发布了其专家委员会出具的两份报告：
 ## <a name="resources-in-japanese"></a>日语资源
 
 - [FISC](https://www.fisc.or.jp/)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf)。

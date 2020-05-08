@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da137e3333164970729d0c737f7077c3c96ee634
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8a95d2037c95f62b955e830b23e1d1ea46f31bf4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602539"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066425"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>英国网络重点加上
 
@@ -51,7 +51,3 @@ Microsoft Azure 已获得网络 Essentials 加上徽章，符合[网络重点方
 
 - [网络重点方案：确定性框架](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf)。
