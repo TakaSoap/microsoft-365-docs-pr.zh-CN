@@ -513,15 +513,8 @@
                 - name: 在政治宣传活动开发/测试环境中创建团队网站
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
             - name: 保护 Microsoft Teams 中的文件
-              href: ./office-365-security/secure-files-in-teams.md
               items:
-                - name: 为团队部署三层文件保护
-                  href: ./office-365-security/deploy-teams-three-tiers.md
-                - name: 使用保留标签和 DLP 保护团队中的文件
-                  href: ./office-365-security/deploy-teams-retention-DLP.md
-                - name: 使用敏感度标签保护团队中的文件
-                  href: ./office-365-security/deploy-teams-sensitivity-labels.md
-                - name: 在开发/测试环境中保护团队的文件
+                - name: 为开发/测试环境中的文件提供安全的团队
                   href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
             - name: 在开发/测试环境中保护 SharePoint Online 网站
               href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
