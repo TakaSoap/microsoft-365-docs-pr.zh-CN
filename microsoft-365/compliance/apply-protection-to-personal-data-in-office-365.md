@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 了解如何在合规中心使用数据丢失防护 (DLP) 策略来保护 Office 365 中的个人数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5c82a1f841cca1eea9a79d8f9dbcc1f81a3ad74
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: eb6ae528e54f93fea26a20be35a6f5bfb33337d2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035174"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165225"
 ---
 # <a name="apply-protection-to-personal-data"></a>向个人数据应用保护
 
@@ -45,7 +45,7 @@ ms.locfileid: "44035174"
 
 -   查看 DLP 报告，了解符合组织的 DLP 策略的内容。
 
-有关详细信息，请参阅[数据丢失防护策略概述](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
+有关详细信息，请参阅[数据丢失防护策略概述](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。
 
 ![用于创建数据丢失防护策略的选项](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -146,7 +146,7 @@ Microsoft 365 DLP 的主要用途之一是识别出 Microsoft 365 环境中与�
 <tr class="odd">
 <td align="left">当内容符合策略设置时通知用户</td>
 <td align="left"><p>选中此框（“向用户显示策略提示并向他们发送电子邮件通知。”）</p>
-<p>单击“自定义提示和电子邮件”，然后针对所在的环境进行更新。请参阅下文中的默认通知：<a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">发送电子邮件通知并显示 DLP 策略的策略提示</a>。</p></td>
+<p>单击“自定义提示和电子邮件”，然后针对所在的环境进行更新。请参阅下文中的默认通知：<a href="https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips">发送电子邮件通知并显示 DLP 策略的策略提示</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left">共享特定数量的敏感信息时进行检测</td>
@@ -252,9 +252,9 @@ Microsoft 365 DLP 的主要用途之一是识别出 Microsoft 365 环境中与�
 
 详细信息：
 
--   [了解 SharePoint 中的权限级别](https://support.office.com/zh-CN/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [了解 SharePoint 中的权限级别](https://docs.microsoft.com/sharepoint/understanding-permission-levels)
 
--   [了解 SharePoint 组](https://support.office.com/zh-CN/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [了解 SharePoint 组](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>适用于 SharePoint 和 OneDrive for Business 库的外部共享策略
 
@@ -304,9 +304,9 @@ Microsoft 365 DLP 的主要用途之一是识别出 Microsoft 365 环境中与�
 
 详细信息：
 
--   [管理 SharePoint Online 环境的外部共享](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [管理 SharePoint Online 环境的外部共享](https://docs.microsoft.com/sharepoint/external-sharing-overview)
 
--   [与组织外部的用户共享站点或文档](https://support.office.com/zh-CN/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [与组织外部的用户共享站点或文档](https://support.office.com/article/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c)
 
 ### <a name="site-level-device-access-policies"></a>网站级别的设备访问策略
 
@@ -355,7 +355,7 @@ SharePoint 和 OneDrive for Business 的设备访问策略需要支持 Azure Act
 </tbody>
 </table>
 
-详细信息：[SharePoint Online 管理中心：控制来自非托管设备的访问](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
+详细信息：[SharePoint Online 管理中心：控制来自非托管设备的访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>对标识和设备的服务访问保护
 

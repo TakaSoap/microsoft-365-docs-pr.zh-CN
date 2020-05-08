@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
+- M365solutions
 ms.custom: ''
 description: 使用 Microsoft 365 创建不同的方法来交流有关 COVID-19 内部和公共新闻的信息。
-ms.openlocfilehash: 4f9144f743998a511b76d26f69ae6cc734193232
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 686cfa12d76bf4122ebe4ae22a49da938322fee9
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141473"
+ms.locfileid: "44160806"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>步骤5：创建 COVID-19 危机交流平台
 

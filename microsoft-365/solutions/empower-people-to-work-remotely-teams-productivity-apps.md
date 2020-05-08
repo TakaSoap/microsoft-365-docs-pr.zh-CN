@@ -1,5 +1,5 @@
 ---
-title: 4. 部署远程工作者生产力应用和服务
+title: 第 4 步。 部署远程工作者生产力应用和服务
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: dddc3cac8a6cb955e8a337eed07279ba75c029aa
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002588"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160734"
 ---
-# <a name="4-deploy-remote-worker-productivity-apps-and-services"></a>4. 部署远程工作者生产力应用和服务
+# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>第 4 步。 部署远程工作者生产力应用和服务
 
 为了提高工作效率，人们需要相互沟通和协作。 他们需要举行会议、通过语音和文本聊天、创建新内容、共享信息和文件、进行电子邮件往来以及管理日历和任务。 Microsoft 365 提供基于云的服务来实现所有这些关键功能：
 
@@ -32,6 +32,8 @@ ms.locfileid: "44002588"
 - 要进行电子邮件往来和管理日历、联系人和任务，请使用 Exchange Online 和 Outlook 客户端。
 - 要存储和协作处理文件，请使用 SharePoint 和 OneDrive。 可通过 Web 浏览器或在 Teams 内部使用它们。
 - 要创建新内容或协作处理现有内容，请使用 Microsoft 365 应用，它是安装在本地计算机上的 Word、PowerPoint、Excel 和 Outlook 的版本，并能持续接收功能和安全更新。
+
+![使用 Teams、Outlook、SharePoint、OneDrive 和 Microsoft 365 应用保持高效工作](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>通过 Microsoft Teams 让人们保持联系
 

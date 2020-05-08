@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: 了解如何激活、续订或将许可证添加到 Microsoft 365 for business 订阅。
-ms.openlocfilehash: da4e42ae2dadec8d376b9ef8d12c6d4cb4fe7af5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0f8233613f7929dad37167e7237be335d4e8f567
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636448"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165122"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>输入从 Microsoft Open 购买的产品密钥
 
@@ -55,7 +55,7 @@ ms.locfileid: "43636448"
 > [!NOTE]
 > 批量许可客户还可以选择在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活订阅。 若要了解如何操作，请下载 PDF 指南[在批量许可服务中心中激活联机服务](https://go.microsoft.com/fwlink/p/?LinkId=618096)。 
   
-## <a name="whats-next"></a>未来会有哪些更新？
+## <a name="whats-next"></a>下一步做什么？
 
 如果你不熟悉 Microsoft 365 的商业版，请了解如何为[你的组织设置 Microsoft 365](../admin/setup/setup.md)。
   
@@ -63,7 +63,7 @@ ms.locfileid: "43636448"
 
 查看以下常见错误和解决方案列表：你的[产品密钥有问题？](product-key-errors-and-solutions.md)
   
-合作伙伴，请参阅[合作伙伴：使用产品密钥设置客户订阅](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx)。
+合作伙伴，请参阅[合作伙伴：使用产品密钥设置客户订阅](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40)。
   
 批量许可客户可以通过访问 [Microsoft 批量许可服务中心的培训和资源](https://go.microsoft.com/fwlink/p/?LinkId=618103)。
   

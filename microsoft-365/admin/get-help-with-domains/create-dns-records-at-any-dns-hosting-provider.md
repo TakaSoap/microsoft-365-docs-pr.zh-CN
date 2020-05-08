@@ -23,25 +23,25 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: 了解如何验证域和在任何 DNS 托管提供商处为 Microsoft 365 创建 DNS 记录。
 ms.custom: okr_smb
-ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2cf28cdd3cc2f85e448d512e72f5b022177e8f1e
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048779"
+ms.locfileid: "44053714"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>在任意 DNS 托管提供商处创建 DNS 记录
 
  如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
-查看[主机特定说明](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580)列表，以找到你的主机并按照步骤添加所需的全部记录。 
+查看[主机特定说明](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)列表，以找到你的主机并按照步骤添加所需的全部记录。 
   
 如果不知道你的域的 DNS 托管提供商或域注册机构，请参阅[查找域注册机构或 DNS 托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。
   
 若要自行设置记录，需要添加这些记录。 注意，验证记录和 MX 记录是域所特有的。 若要进行设置，需要为域获取和使用特定的“令牌”值。 下面的步骤介绍如何执行此操作。
   
 > [!IMPORTANT]
-> 为创建各种类型的 DNS 记录，将信息要输入或粘贴到的框或*字段*，根据 DNS 记录有所差异。 DNS 主机可能在网站上提供“帮助”，有助于你映射这里显示的说明至网站的准确字段。 检查以了解在“[为 Microsoft 365 创建 DNS 记录](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)”中是否存在 DNS 主机分步说明。 > 部分 DNS 主机无法让你创建在 Microsoft 365 中[引起服务限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)的所有需要的记录类型。 例如，如果域主机不支持 SRV、TXT 或 CNAME 记录，建议[转移域](../get-help-with-domains/buy-a-domain-name.md)至不支持所有必须记录的 DNS 主机。 为实现使用 Microsoft 365 设置的快速自动化过程，建议将域转移到 GoDaddy。 
+> 为创建各种类型的 DNS 记录，将信息要输入或粘贴到的框或*字段*，根据 DNS 记录有所差异。 DNS 主机可能在网站上提供“帮助”，有助于你映射这里显示的说明至网站的准确字段。 检查以了解在“[为 Microsoft 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)”中是否存在 DNS 主机分步说明。 > 部分 DNS 主机无法让你创建在 Microsoft 365 中[引起服务限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)的所有需要的记录类型。 例如，如果域主机不支持 SRV、TXT 或 CNAME 记录，建议[转移域](../get-help-with-domains/buy-a-domain-name.md)至不支持所有必须记录的 DNS 主机。 为实现使用 Microsoft 365 设置的快速自动化过程，建议将域转移到 GoDaddy。 
   
 > [!NOTE]
 > DNS 更改通常只需要几分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅“[查找并修复更改域名或 DNS 记录后出现的问题](../get-help-with-domains/find-and-fix-issues.md)”。 
@@ -432,6 +432,6 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
   
  **如果需要一些帮助来了解如何添加所需 DNS 记录的信息**，参阅[设置域（特定于主机的说明）](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide)，请首先[收集创建 Microsoft 365 DNS 记录所需的信息](../get-help-with-domains/information-for-dns-records.md)。 然后使用本主题中的常规步骤设置你的域的 DNS 记录，以便可以将域用于 Microsoft 365 服务，如电子邮件。
   
- **如果没有要使用自定义域的网站**，可以让 Microsoft 365 设置和管理你的域的 DNS 记录，而不是自己执行所有设置。 了解 Microsoft 365 中[用于为自定义域设置和管理 DNS 记录的两个选项](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx)。 
+ **如果没有要使用自定义域的网站**，可以让 Microsoft 365 设置和管理你的域的 DNS 记录，而不是自己执行所有设置。 了解 Microsoft 365 中[用于为自定义域设置和管理 DNS 记录的两个选项](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 
   
 

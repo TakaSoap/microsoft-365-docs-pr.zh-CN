@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业高级版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: e456719d393dc911a6f28455e530c90e8ab9ff5a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 68e085313b0344f9e48ddfa9124c1d2d7297ae45
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635076"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065827"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 商业高级版常见问题
 
@@ -48,7 +48,7 @@ Microsoft 365 是一个集成式解决方案，可为中小型企业集中提供
 * 使用 Windows AutoPilot 简化部署电脑。
 
 **其他权利** 
-- Microsoft 365 商业高级版客户还可以访问 Windows 虚拟桌面和 Office 共享计算机激活功能。 有关详细信息，请阅读 [Microsoft 365 商业高级版博客](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另请参阅 [Microsoft 365 商业版服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+- Microsoft 365 商业高级版客户还可以访问 Windows 虚拟桌面和 Office 共享计算机激活功能。 有关详细信息，请阅读 [Microsoft 365 商业高级版博客](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另请参阅[Microsoft 365 for business 服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
 
 ### <a name="who-should-consider-adopting-microsoft-365-business-premium"></a>谁应该考虑采用 Microsoft 365 商业高级版？ 
 Microsoft 365 商业高级版是一个基于云的综合安全解决方案，让你能够：  
@@ -85,7 +85,7 @@ Microsoft 365 商业高级版专为具有低到中等 IT 复杂性要求的中�
 ### <a name="what-is-windows-10-business"></a>什么是 Windows 10 商业版？ 
 Windows 10 商业版是一组云服务和设备管理功能，能够对 Windows 10 专业版加以补充并实现 Microsoft 365 商业高级版集中管理和安全控制。
 
-Windows 10 商业版还附带某些高级 Microsoft Defender 功能，例如受控文件夹访问权限和基于 Web 的线程的网络保护。 它包括 Windows AutoPilot，这是一项简化新 Windows 10 电脑部署的服务。
+Windows 10 商业版还附带了某些高级 Microsoft Defender 功能，如受控文件夹访问和基于 web 的威胁的网络保护。 它包括 Windows AutoPilot，这是一项简化新 Windows 10 电脑部署的服务。
 
 如果你的设备具有 Windows 7、8 和 8.1 专业版的许可证，则 Microsoft 365 商业高级版会将操作系统升级到 Windows 10 专业版，此专业版是部署 Windows 10 商业版的先决条件。
 > [!IMPORTANT]
@@ -130,7 +130,7 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 ## <a name="deployment"></a>部署
 
 ### <a name="what-should-customers-consider-when-planning-a-microsoft-365-business-premium-deployment"></a>客户在规划 Microsoft 365 商业高级版部署时应该考虑什么？ 
-成功部署 Microsoft 365 商业高级版的最直接途径是与 Microsoft 合作伙伴交流。 他们参加过与各种客户方案相关的大量培训并有丰富的相关经验，最能够了解你的环境和需求。 具有经验丰富的 IT 在职人员的客户可以使用 <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 商业高级版入门</a>，以帮助他们部署 Microsoft 365 商业高级版。 
+成功部署 Microsoft 365 商业高级版的最直接途径是与 Microsoft 合作伙伴交流。 他们参加过与各种客户方案相关的大量培训并有丰富的相关经验，最能够了解你的环境和需求。 具有经验丰富的 IT 在职人员的客户可以使用 <a href="https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview" target="_blank">Microsoft 365 商业高级版入门</a>，以帮助他们部署 Microsoft 365 商业高级版。 
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 商业高级版是否包括 Microsoft Intune 的全部功能？ 
 是的，Microsoft 365 商业高级版订阅者已获得许可，可使用 iOS、Android、MacOS 和其他跨平台设备管理相关的完整 Intune 功能。 Microsoft 365 商业高级版的简化管理控制台中不可用的功能（如第三方应用管理和 WiFi 配置文件配置、VPN 证书）可以在完整的 Intune 控制台中进行管理。 

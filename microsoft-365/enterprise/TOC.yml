@@ -103,8 +103,6 @@
           href: migration-microsoft-365-enterprise-workload.md
         - name: 为远程工作者提供强大功能
           href: empower-people-to-work-remotely.md
-        - name: 用于高度管控数据的 Teams
-          href: secure-teams-highly-regulated-data-scenario.md
         - name: 用于高度管控数据的 SharePoint 网站
           href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: 测试实验室指南

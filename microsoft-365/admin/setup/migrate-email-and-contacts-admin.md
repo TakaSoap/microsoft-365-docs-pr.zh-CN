@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: '了解如何将联系人、日历、来自 Gmail 的电子邮件或其他电子邮件提供程序导入 Microsoft 365。 '
-ms.openlocfilehash: ff81eed73a4bf5d7e58316e61212fd799de6d11c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3200ee91e4ca01fb946cbb045805a213958be000
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627578"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165151"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>将电子邮件和联系人迁移到 Microsoft 365
 
@@ -87,6 +87,6 @@ ms.locfileid: "43627578"
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>多个邮箱：管理员可将电子邮件、联系人和日历批量导入 Microsoft 365
 
-根据您的源电子邮件系统，您可以从多个批量迁移方法中进行选择。 阅读将[多个电子邮件帐户迁移到 Microsoft 365 的方法](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)，以决定哪种方法适合您。 
+根据您的源电子邮件系统，您可以从多个批量迁移方法中进行选择。 阅读将[多个电子邮件帐户迁移到 Microsoft 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)，以决定哪种方法适合您。 
   
 

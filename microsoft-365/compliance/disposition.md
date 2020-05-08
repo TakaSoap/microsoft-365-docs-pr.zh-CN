@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
+ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952615"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44156887"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -63,11 +63,14 @@ ms.locfileid: "43952615"
 
 在保留期结束时触发处置评审时：
   
-- 您选择的人会收到一封电子邮件通知，告知他们有要审阅的内容。 这些审阅者可以是单独的用户、通讯组或安全组，也可以是 Office 365 组。 请注意，每周会发送通知。
+- 您选择的人会收到一封电子邮件通知，告知他们有要审阅的内容。 这些审阅者可以是单独的用户、分发或安全组，也可以是 Microsoft 365 组（[以前称为 Office 365 组](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 请注意，每周会发送通知。
     
 - 审阅者转到 Microsoft 365 合规性中心中的 "**处置**" 选项卡，以查看内容并决定是永久删除它、延长保留期还是应用不同的保留标签。
 
 处置评审可以包含 Exchange 邮箱、SharePoint 网站、OneDrive 帐户和 Microsoft 365 组中的内容。 在这些位置中等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。
+
+> [!NOTE]
+> 邮箱必须至少有 10 MB 数据才能支持处置评审。
 
 您可以在 "**概述**" 选项卡中看到所有待处理的处置的概述。例如：
 
@@ -106,10 +109,10 @@ ms.locfileid: "43952615"
 - 应用不同的保留标签
 
 为您提供对位置和内容的权限，您可以使用**位置**列中的链接查看其原始位置中的文档。 在处置评审过程中，内容永远不会从其原始位置移动，并且在审阅者选择执行此操作之前永远不会删除。
-  
+
 电子邮件通知将在每周的基础上自动发送给审阅者。 此计划的过程意味着，当内容到达其保留期的末尾时，审阅者可能需要长达七天的时间，审阅者收到内容正在等待处置的电子邮件通知。
   
-可以审核所有处置操作。
+可以审核所有处置操作，并将审阅者输入的调整文本保存并显示在 "已**释放项目**" 页上的 "**注释**" 列中。
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>在永久删除已释放内容之前的时间
 

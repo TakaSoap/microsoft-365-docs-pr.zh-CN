@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: f7ae1a285e22ad18d292d37aab0bba0b4a441461
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 6ac6d74b027cc533f689c1d67c7fce246c73984f
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857447"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166157"
 ---
 # <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的自动化调查和响应（空气）功能
 
@@ -54,7 +54,7 @@ AIR 使你的安全运营团队能够极大地提高组织处理安全警报和�
 |设备（也称为终结点）     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |电子邮件内容（邮箱中的文件和邮件）     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-每次调查都会针对调查的每条证据生成裁定（*恶意*、*可疑*或*干净*）。 根据威胁的类型和得到的结论，将自动执行更正操作，或在组织的安全操作团队批准时执行。 "[操作中心](mtp-action-center.md)中列出了待处理和已完成的操作。
+每次调查都会为调查的每个证据生成 verdicts （发现*恶意*、*可疑*或*没有威胁*）。 根据威胁的类型和得到的结论，将自动执行更正操作，或在组织的安全操作团队批准时执行。 "[操作中心](mtp-action-center.md)中列出了待处理和已完成的操作。
 
 > [!TIP]
 > 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅[如何在 Microsoft 威胁防护中报告误报/负面的自动调查和响应（空中）功能](mtp-autoir-report-false-positives-negatives.md)。

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为您的市场活动创建一个通信网站。
-ms.openlocfilehash: 5c6590ae8e8fbe0dd1cc024c53f3a2a109aa918c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3435ede554c16bb787b87a6ea76e0c41f62b8fe5
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056365"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165717"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>为市场活动创建通信网站
 
@@ -60,7 +60,7 @@ ms.locfileid: "42056365"
 2. 在页面的左上角，选择应用启动器图标，然后选择 " **SharePoint** " 磁贴。 如果看不到**sharepoint**磁贴，请单击 "**网站**图块" 或 "**全部**如果 sharepoint 不可见"。
 3. 在 SharePoint 主页的顶部，单击 " **+ 创建网站**"，然后选择 "**通信网站**" 选项。
 
-了解[有关通信网站](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)以及如何[在 SharePoint Online 中创建通信网站](https://support.office.com/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB)的所有信息。
+了解[有关通信网站](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)以及如何[在 SharePoint Online 中创建通信网站](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)的所有信息。
 
 
 ## <a name="admin-settings"></a>管理设置

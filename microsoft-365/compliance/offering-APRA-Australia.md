@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 568a078c18ead86ddbf3e92cfec3bfc7367595e2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b344f9c4d750c6e6571c0e76be0c9db0c421271b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662038"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065887"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>澳大利亚 Prudential 法规颁发机构（APRA）
 
@@ -45,7 +45,7 @@ ms.locfileid: "41662038"
 
 Microsoft 响应将重点放在两个最高的风险类别上。 尽管云服务不受任何风险类别的禁止，但 APRA 希望您执行 commensurately 更高程度的努力，并且在您上移到风险类别时，您应会期望越来越多的 APRA 审查级别。 APRA 列出了通常表示云外包的高或极端固有风险的一系列因素。 Microsoft 会深入讨论这些因素中的每一个，并提供了帮助您评估和管理将数据和工作负载移动到 Azure 的风险的信息和工具。
 
-Microsoft 还解决了每个 APRA 风险管理的考虑事项：战略、治理、解决方案选择过程、APRA 访问权限以及操作、转换方法、风险评估和安全性、持续监督、业务中断和审核的功能以及确定性. 通过点，我们提供的建议和工具可帮助您在部署 Azure 时响应每个问题。
+Microsoft 还解决了每个 APRA 风险管理的考虑事项：战略、治理、解决方案选择过程、APRA 访问以及操作、转换方法、风险评估和安全性、持续监督、业务中断以及审核和保证。 通过点，我们提供的建议和工具可帮助您在部署 Azure 时响应每个问题。
 
 根据 APRA 管理法规，获取将数据和工作负荷移动到 Azure 的实践支持：将[Microsoft 响应下载到云上的 APRA Information Paper](https://aka.ms/navigatecloudaustralia)。
 
@@ -66,23 +66,23 @@ CPS 234 密切反映了核心 Microsoft 安全框架：保护、检测和响应�
 
 此 Microsoft 清单介绍了金融公司在迁移到云时必须满足的 APRA 法规要求。 它不仅针对[Prudential 标准 CPS 231 外包](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf)提供了 Azure，还映射了其他相关的 APRA 标准，如业务连续性和风险管理。 完成此检查表可帮助您的金融服务机构采用 Azure，并确保其满足相关的 APRA 要求。
 
-通过依靠我们在云中实现的全面的风险保证方法，我们确信澳大利亚金融服务组织可以使用与 APRA 指南不一致的方式移动到 Microsoft 云服务，但可以向客户提供比本地或其他托管解决方案更高级的安全风险管理配置文件。
+通过依靠我们在云中实现的全面的风险保证方法，我们确信澳大利亚金融服务组织可以采用一种不仅符合 APRA 指南的方式来移动到 Microsoft 云服务，但可以为客户提供比本地或其他托管解决方案更高级的安全风险管理配置文件。
 
 在符合 APRA 法规的情况中，获得将数据和工作负载移动到 Azure 的实践支持：[下载 Microsoft 云服务：适用于澳大利亚金融机构的合规性检查表](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Dynamics 365
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **金融机构在外包商业活动前是否需要 APRA 批准？**
 
 否。 但是，大多数管控的金融组织必须在 APRA 中输入用于外包商业活动的协议后通知或咨询 APRA，然后再将这些活动外包到澳大利亚之外。
 
-此外，如果云服务被认为具有 "提高或极端固有的风险" （如 APRA 中的 "[有关云的信息纸张](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf)" 中所述），则鼓励金融机构（但不是必需）咨询 APRA，而不考虑是否在澳大利亚的内部或外部提供此服务。
+此外，如果云服务被认为具有 "提升或极端的固有风险" （如[云上的 APRA 信息文档](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf)中所述），则鼓励金融机构（但不是必需）咨询 APRA，而不考虑是否在澳大利亚的内部或外部提供了该服务。
 
 **是否允许在澳大利亚之外传输数据？**
 

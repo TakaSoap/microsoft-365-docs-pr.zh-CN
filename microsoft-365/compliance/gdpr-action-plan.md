@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4b135f189aa43e4e7015550739c9e79a74c2310
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1531b94300f29df17127879056ceed809502bd18
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036075"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165993"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -55,7 +55,7 @@ GDPR 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或
 |**区域**|**Tasks**|
 |:-----|:-----|
 | **使用 Microsoft 365 数据管理和合规性功能开始推行合规性要求。** |* 使用 [Microsoft 服务信任门户](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 中的 [Microsoft 合规性分数](compliance-score.md)来管理 GDPR 合规性。<br>* 通过适用于 Exchange 电子邮件、SharePoint 网站、OneDrive for Business 网站和 Microsoft 365 组的分类架构和相关 Office 365 标签，帮助用户根据 GDPR 规定来标识和分类个人数据。 请参阅[符合 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)。|
-| **使用 Microsoft 365 安全功能来防范数据泄露并保护个人数据。** |* 通过为所有用户帐户启用[多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)，以及为所有应用启用[新式验证](https://support.office.com/article/using-office-365-modern-authentication-with-office-clients-776c0036-66fd-41cb-8928-5495c0f9168a#bk_getstarted)，改进 Microsoft 云中管理员和最终用户的身份验证。 有关建议的策略配置，请参阅[标识和设备访问配置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。<br>* 将 [Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署到所有桌面，以防范恶意代码、防止数据泄露并作出响应。<br>* 为所有 Exchange 邮箱启用[审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)和[邮箱审核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)，以监视潜在恶意活动，并启用数据泄露取证分析。<br>* 配置、测试和部署 [Office 365 数据丢失防护 (DLP) 策略](https://support.office.com/article/overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)，以标识、监视和[自动保护](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>* 实施 [Office 365 高级威胁防护 (ATP)](https://support.office.com/article/office-365-advanced-threat-protection-e100fe7c-f2a1-4b7d-9e08-622330b83653)，以帮助防范最常见的攻击媒介，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
+| **使用 Microsoft 365 安全功能来防范数据泄露并保护个人数据。** |* 通过为所有用户帐户启用[多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)，以及为所有应用启用[新式验证](https://support.office.com/article/using-office-365-modern-authentication-with-office-clients-776c0036-66fd-41cb-8928-5495c0f9168a#bk_getstarted)，改进 Microsoft 云中管理员和最终用户的身份验证。 有关建议的策略配置，请参阅[标识和设备访问配置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。<br>* 将 [Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署到所有桌面，以防范恶意代码、防止数据泄露并作出响应。<br>* 为所有 Exchange 邮箱启用[审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)和[邮箱审核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)，以监视潜在恶意活动，并启用数据泄露取证分析。<br>* 配置、测试和部署 [Office 365 数据丢失防护 (DLP) 策略](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)，以标识、监视和[自动保护](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>* 实施 [Office 365 高级威胁防护 (ATP)](https://support.office.com/article/office-365-advanced-threat-protection-e100fe7c-f2a1-4b7d-9e08-622330b83653)，以帮助防范最常见的攻击媒介，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 天后 — 持续安全、数据管理和报告
 

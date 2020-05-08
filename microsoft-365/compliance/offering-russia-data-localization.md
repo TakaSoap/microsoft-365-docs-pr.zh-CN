@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 989d30a53b767bc8ec757c92e72198e3900bcfeb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943661"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065767"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>俄语个人数据本地化要求
 
@@ -71,5 +71,5 @@ Microsoft 邀请客户考虑通过 Microsoft 云解决方案提供商（CSP）�
 - **在线支持**：通过[电源平台支持](https://docs.microsoft.com/power-platform/admin/get-help-support)提交查询
 
 > [!NOTE]
-> <sup>1</sup>联邦法律号 242-FZ （edition of edition 12.31.2014） "在将修正案输入到特定法律行为中时，有关阐明在信息和电信网络中的个人数据处理过程" 07.21.2014。 <br>
+> <sup>1</sup>联邦法律号 242-FZ （edition of edition 12.31.2014） ' On the 在将修正案输入到特定法律行为中。关于阐明了在信息和电信网络中的个人数据处理过程07.21.2014 <br>
 > <sup>2</sup>联邦法律号 152-FZ 的个人数据，从07.27 到。 2006<br>

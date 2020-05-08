@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理员可以了解如何管理组织中的用户所做的自我服务购买。
-ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046176"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141146"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 作为管理员，你可以查看组织中的人员进行的自助购买。 您可以查看产品、购买者名称、购买订阅、到期日期、购买价格和分配给每种自助服务购买的用户。 如果你的组织需要，你可以通过 PowerShell 基于每个产品禁用自助购买。 你的数据管理和访问策略与通过自助服务购买或集中购买的产品相同。
 

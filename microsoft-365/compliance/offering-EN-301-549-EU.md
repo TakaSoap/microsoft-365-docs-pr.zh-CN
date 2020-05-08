@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9cf5d3eed1854dbf715a9574b4efaa666c934a52
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: ac8829d681e27609a505e7539e835c5c58c8474e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42313767"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064721"
 ---
 # <a name="european-standards-en-301-549"></a>欧洲标准 EN 301 549
 
@@ -53,7 +53,3 @@ Microsoft 在产品和服务开发中对 EN 301 549 的考虑表明了其致力�
 - [Office 365 辅助功能中心](https://go.microsoft.com/fwlink/p/?linkid=2051801)：适用于残疾人士的 Office 365 资源。
 - [企业级辅助功能咨询台](https://go.microsoft.com/fwlink/p/?linkid=2050890)：针对就我们的产品和服务或合规性抱有可访问性方面的问题的企业客户提供专属支持。
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf)。

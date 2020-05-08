@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a2957ed5782c9449a1715669a7e220940572a66
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 68dfc85b2f7ba4025393c82fa7ca5c67575ca0d2
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602569"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066245"
 ---
 # <a name="canadian-privacy-laws"></a>加拿大隐私法
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602569"
 
 加拿大制定了隐私法来保护个人隐私，并赋予他们访问所收集的有关其个人信息的权利。 [加拿大隐私署](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (OPCC) 负责监督对这些法律的遵守。
 
-《[隐私法](https://privacy.microsoft.com/en-US/#heading-0-0-2-1)》规定了联邦政府机构如何收集、使用和披露包括联邦雇员在内的个人身份信息。 《[个人信息保护和电子文档法](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)》(PIPEDA) 对商业营利性企业的商业活动，以及银行、航空公司和电信公司等受联邦监管企业的员工适用同样的规定。
+《[隐私法](https://privacy.microsoft.com/zh-CN/#heading-0-0-2-1)》规定了联邦政府机构如何收集、使用和披露包括联邦雇员在内的个人身份信息。 《[个人信息保护和电子文档法](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)》(PIPEDA) 对商业营利性企业的商业活动，以及银行、航空公司和电信公司等受联邦监管企业的员工适用同样的规定。
 
 PIPEDA 建立在 10 项[公平信息原则](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/)之上，如果员工遵守，则企业必须遵守。 例如，同意的基本原则导致 PIPEDA 要求组织必须获得个人的许可才能收集或使用其个人信息。 个人既有权访问该个人信息，也有权质疑其准确性（基于“个人访问”原则）。 “确定目的”原则导致一项规则，即个人信息只能用于商定的目的。
 
@@ -79,7 +79,3 @@ PIPEDA 不要求加拿大企业将个人信息保存在加拿大。 但是，根
 - [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)
 - [云端隐私保护的注意事项](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf)。

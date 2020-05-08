@@ -13,14 +13,21 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心中激活和管理第三方应用程序。
-ms.openlocfilehash: 521a535115cd3a082348485f4d03dade27c71d92
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045960"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141184"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>为你的组织管理第三方应用订阅
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 您可以在启用了预览模式的 Microsoft 365 管理中心中管理第三方应用程序的许可证和帐单。 更新的功能包括增强的订阅管理、改进的对帐单信息的访问权限，并提高了管理帐单的灵活性。 订阅管理基于 Microsoft 的更新的商业平台。 这适用于客户直接购买或从第三方提供商购买的软件即服务应用程序。
 

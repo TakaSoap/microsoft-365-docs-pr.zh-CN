@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ee198d5813c910f6d9d8add74d5faf32e094d7e3
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: be79402c7aaf540ba3174e0844b1fe5bdc87a7ec
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002603"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160035"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>适用于企业架构师的 Microsoft 云插图
 
@@ -30,7 +30,7 @@ ms.locfileid: "44002603"
 
 关于 Microsoft 云服务和平台的网络，IT 架构师需要了解的信息。
   
-|**项**|**说明**|
+|**项目**|**说明**|
 |:-----|:-----|
 |[![Microsoft 云网络连接模型的缩略图](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/>2019年11月更新| 此模型包含： <ul><li> 发展你的云连接网络 </li><li> Microsoft 云连接的常见元素 </li><li> 面向 Microsoft 云连接的 ExpressRoute </li><li> 为 Microsoft SaaS、Azure PaaS 和 Azure IaaS 设计网络 </li></ul><br/>  <br/>|
 
@@ -39,7 +39,7 @@ ms.locfileid: "44002603"
 
 关于 Microsoft 服务和平台的混合云，IT 架构师需要了解的信息。
   
-|**项**|**说明**|
+|**项目**|**说明**|
 |:-----|:-----|
 |[![Microsoft 混合云模型的缩略图](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx) <br>2019年11月更新 | 此模型包含： <ul><li> Microsoft 的云产品（SaaS、Azure PaaS 和 Azure IaaS）及它们的常用元素 </li><li> Microsoft 云产品的混合云体系结构 </li><li> Microsoft SaaS (Office 365)、Azure PaaS 和 Azure IaaS 的混合云方案 </li></ul><br/>|
    
@@ -56,7 +56,7 @@ ms.locfileid: "44002603"
 
 关于 Microsoft 云服务和平台的安全性，IT 架构师需要了解的信息。
   
-|**项**|**说明**|
+|**项目**|**说明**|
 |:-----|:-----|
 |[![Microsoft 云安全模型的缩略图](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=48121) <br/>2018年12月更新 | 此模型包含： <ul><li>Microsoft 在提供安全服务和平台方面的作用</li><li>客户在降低安全风险上肩负的责任</li><li>顶级安全认证 </li><li>Microsoft 咨询服务提供的安全产品/服务 </ul><br/>|
 
@@ -75,7 +75,7 @@ ms.locfileid: "44002603"
 
 关于使用 Microsoft 云服务和平台为组织设计标识，IT 架构师需要了解的信息。
   
-|**项**|**说明**|
+|**项目**|**说明**|
 |:-----|:-----|
 |[![Microsoft 云标识模型的缩略图](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| [更多语言](https://www.microsoft.com/download/details.aspx?id=54431) <br/>2016年8月更新 | 此模型包含： <ul><li>Microsoft 云标识简介 </li><li>Azure AD IDaaS 功能 </li><li>将本地 Active Directory 域服务帐户与 Microsoft Azure Active Directory 集成 </li><li>将目录组件放入 Azure </li><li>Azure IaaS 中适用于工作负载的域服务选项 </li></ul><br/>|
    

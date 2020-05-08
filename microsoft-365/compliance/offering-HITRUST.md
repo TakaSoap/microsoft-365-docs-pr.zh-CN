@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa35e71d2748e02da12a239f67134c1b25b5a369
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: e94cc9164938189e1b6fb07d897cf4bbf1e73c5d
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011825"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066669"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康信息信任联盟（HITRUST）常见安全框架（CSF）
 
@@ -110,7 +110,3 @@ HITRUST CSF 认证的范围内的服务为 Exchange Online 存档、Exchange Onl
 - [了解和利用 CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [了解有关 HITRUST 共享责任计划的详细信息](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf)。

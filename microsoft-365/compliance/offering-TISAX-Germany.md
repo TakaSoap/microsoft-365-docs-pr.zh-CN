@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3c7d3c6a710141972c1e54a7c67bfccd59c378d6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e2324cdbb4c47cff3b5e315b4c6b294258b11e24
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602009"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066285"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>德国可信信息安全评估交换机制 (TISAX)
 
@@ -29,7 +29,7 @@ ms.locfileid: "41602009"
 
 VDA 成员公司将此工具用于内部安全评估，以及对代表他们处理敏感信息的供应商、服务提供商和其他合作伙伴的评估。 但是，由于这些评估是由每个公司单独进行的，因此，它给合作伙伴带来了负担，并且 VDA 成员也造成了重复劳动。
 
-为了帮助简化评估，VDA 制定了一个常见评估和交换机制：[可信信息安全评估交换机制](https://www.enx.com/tisax/) (TISAX)。 基本 TISAX 要求的目录，用于检查信息安全评估和信息安全管理的调查表，版本 4（[德语](https://www.vda.de/de/services/Publikationen.html)和[英语](https://www.vda.de/en/services/Publications.html)），提供了适用于 IT 安全措施的常见标准，并使在 TISAX 中注册的公司能够共享评估结果。 VDA 委托中立第三方 [ENX 协会](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/)实施 TISAX。 以这种身份，该协会对审核提供者（审核员）进行资格鉴定，维护资格鉴定标准和评估要求，并监控实施和评估结果的质量。
+为了帮助简化评估，VDA 制定了一个常见评估和交换机制：[可信信息安全评估交换机制](https://www.enx.com/tisax/) (TISAX)。 基本 TISAX 要求的目录，用于检查信息安全评估和信息安全管理的调查表，版本 4（[德语](https://www.vda.de/de/services/Publikationen.html)和[英语](https://www.vda.de/en/services/Publications.html)），提供了适用于 IT 安全措施的常见标准，并使在 TISAX 中注册的公司能够共享评估结果。 VDA 委托中立第三方 [ENX 协会](https://portal.enx.com/zh-CN/en-en/TISAX/tisaxassessmentresults/)实施 TISAX。 以这种身份，该协会对审核提供者（审核员）进行资格鉴定，维护资格鉴定标准和评估要求，并监控实施和评估结果的质量。
 
 ## <a name="microsoft-and-tisax"></a>Microsoft 和 TISAX
 
@@ -53,7 +53,7 @@ TISAX 评估重点关注以下 Microsoft 服务：
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-在 ENX 注册的业内代表可在 [ENX 门户](https://portal.enx.com/en-US/)上找到有关范围内 Microsoft 云服务的 TISAX 评估详细信息。 如需搜索 Microsoft 评估结果，请登录到现有 TISAX 帐户，然后搜索 Microsoft。 或者，可用下面的信息缩小搜索范围：
+在 ENX 注册的业内代表可在 [ENX 门户](https://portal.enx.com/zh-CN/)上找到有关范围内 Microsoft 云服务的 TISAX 评估详细信息。 如需搜索 Microsoft 评估结果，请登录到现有 TISAX 帐户，然后搜索 Microsoft。 或者，可用下面的信息缩小搜索范围：
 
 - Microsoft 参与者 ID：PGKYK0
 - Microsoft Corp. 欧盟评估级别 (AL) 3 范围 ID：SY869K
@@ -75,14 +75,10 @@ ENX 仅向已通过 ENX 门户注册的行业代表提供认证确认。 有关�
 
 ## <a name="resources"></a>资源
 
-- [TISAX 常见问题解答](https://portal.enx.com/en-US/TISAX/faqs/)
+- [TISAX 常见问题解答](https://portal.enx.com/zh-CN/TISAX/faqs/)
 - [Volkswagen 和 Microsoft 宣布战略合作伙伴关系](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
 - [车内办公室：BMW 提供 Skype for Business](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/)（德语）
 - [长途接驳车：Daimler](https://customers.microsoft.com/story/daimlertrucks)
 - [Continental 采用 Microsoft Office 365 提高工作效率](https://www.avanade.com/en/clients/continental)
 - [Microsoft 和 ISO/IEC 27001:2013](offering-iso-27001.md)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/5/C/3/5C32AD74-703F-4B61-A290-B00B96E8DD8D/TISAX-Compliance.pdf)。

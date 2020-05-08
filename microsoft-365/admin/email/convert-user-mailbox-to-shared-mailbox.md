@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为可由多个用户访问的共享邮箱。 '
-ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51817001b02c1dd5dd0e82f5795ef1a3f66bf7c7
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628887"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162694"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -48,7 +48,7 @@ ms.locfileid: "43628887"
 
 3. 选择用户邮箱。 在 "**转换为共享邮箱**" 下，选择 "**转换**"。
 
-4. 如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
+4. 如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户帐户。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
     
 5. 有关共享邮箱需要了解的其他信息，请参阅[关于共享](about-shared-mailboxes.md)邮箱和[创建共享邮箱](create-a-shared-mailbox.md)。
 

@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: 配置安全性和基础结构，使你的员工能够随时随地远程工作。
-ms.openlocfilehash: 5f22930a4c8d207e32c5379733ec77c637f3f581
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 5c2de3fbb174bdf1dccc8ef8371dca1ae1bfddf0
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002557"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159391"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>在开发/测试环境中配置具有安全隔离的团队
 
@@ -121,7 +121,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 接下来，创建团队：
 
 1. 在 Teams 中，单击应用程序左侧的“**团队**”，然后在团队列表底部单击“**加入或创建团队**”。
-2. 单击“**创建团队**”（第一张卡片，左上角）。
+2. 点击“**创建团队**”（第一张卡片，左上角）。
 3. 选择“**从头开始构建团队**”。
 4. 在“**敏感度**”列表中，保留默认值。
 5. 在“**隐私**”下，单击“**专用**”。

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 在本文中，您将了解如何自定义、组织和管理团队网站以实现文件存储和共享。
-ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155277"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165103"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
@@ -77,7 +77,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 如果要将大量数据存储在列表中，请参阅[在 SharePoint 中管理大型列表和库](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx)。
   
-查看有关将日历添加到网站的视频，请参阅[创建共享日历](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)。
+查看有关将日历添加到网站的视频，请参阅[创建共享日历](https://support.microsoft.com/en-us/office/video-create-a-shared-calendar-in-office-365-61b96006-70e2-4535-a34f-ee4fc772f798)。
 
 ## <a name="organize-sites-into-hubs"></a>将网站组织到集线器中
 
@@ -87,7 +87,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 准备好构建中心网站，请参阅[在 SharePoint Online 中创建中心网站](/sharepoint/create-hub-site)。
   
-若要了解如何将网站添加到中心网站，请参阅[将 SharePoint 网站与中心网站关联](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx)。
+若要了解如何将网站添加到中心网站，请参阅[将 SharePoint 网站与中心网站关联](https://support.microsoft.com/en-us/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05)。
   
 ## <a name="sharing-files-with-the-team"></a>与团队共享文件
 
@@ -115,7 +115,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
     
   - [使用 Microsoft 365 在 iPhone 或 iPad 上安装和设置 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [使用 Microsoft 365 在 Windows Phone 上设置 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [使用 Microsoft 365 在 Windows Phone 上设置 Office](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [了解有关使用 OneDrive 的详细信息](https://go.microsoft.com/fwlink/?LinkID=511458)。
     

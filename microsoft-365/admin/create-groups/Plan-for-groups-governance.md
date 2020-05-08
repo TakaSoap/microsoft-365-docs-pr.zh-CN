@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: 了解如何规划 Microsoft 365 组治理。
-ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049407"
+ms.locfileid: "44064783"
 ---
 # <a name="plan-for-governance-in-groups"></a>在组中规划管理
 
@@ -154,7 +154,7 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织可能需要
 >在"软删除"过程中，如果用户尝试访问该网站，将显示 403 禁止访问消息。 该过程结束后，如果用户尝试访问该网站，将显示 404 未找到消息。
 
 #### <a name="resources"></a>*资源*
-- [还原已删除的 Microsoft 365 组](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
+- [还原已删除的 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [在 Azure Active Directory 中还原已删除的 Microsoft 365 组](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [使用 Remove-UnifiedGroup cmdlet 删除组](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 

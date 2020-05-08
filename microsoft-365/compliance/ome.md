@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 使用 Office 365 邮件加密，组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
-ms.openlocfilehash: 4d308a81300c13e61f0ecd2d1117c5be87d2bf04
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3194381726e2798b9bcdb901ca61957e42863a96
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626778"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165933"
 ---
 # <a name="message-encryption"></a>邮件加密
 
@@ -90,8 +90,8 @@ Microsoft 365 中的高级邮件加密帮助您满足合规性义务，这些要
 |阅读本文 .。。|如果您是 .。。|
 |[了解 Office 365 中的受保护邮件](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|想要详细了解加密邮件的工作方式以及可供您使用的选项的最终用户。|
 |[如何打开受保护的邮件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|要读取已发送给您的受保护邮件的最终用户。 本文包含有关在 Outlook 的多个版本和不同的电子邮件帐户（包括除 gmail 和 Yahoo！等其他电子邮件帐户之外）中读取邮件365的信息。 账号.|
-|[在 Outlook 中发送、查看和回复加密邮件](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)|要从 Outlook 发送、查看或回复加密邮件的最终用户。 即使您不是组织的成员，仍会收到在 Outlook 中发送给您的加密邮件的通知。 使用此文章可获取有关如何查看和回复从 Office 365 发送的加密邮件的说明。|
+|[在 Outlook 中发送、查看和回复加密邮件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|要从 Outlook 发送、查看或回复加密邮件的最终用户。 即使您不是组织的成员，仍会收到在 Outlook 中发送给您的加密邮件的通知。 使用此文章可获取有关如何查看和回复从 Office 365 发送的加密邮件的说明。|
 |[发送经过数字签名或加密的邮件](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547)|希望使用 Outlook for Mac 发送、查看或回复加密邮件的最终用户。 本文还介绍了如何使用 OME 以外的加密方法，如 S/MIME。|
 |[在 Android 设备上查看加密邮件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)|已收到使用 Office 365 邮件加密在 Android 设备上加密的邮件的最终用户，可以使用免费的 OME 查看器应用程序查看邮件并发送加密答复。 本文介绍如何操作。|
-|[查看 iPhone 或 iPad 上的加密邮件](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf)|已收到使用 Office 365 邮件加密在 iPhone 或 iPad 上加密的邮件的最终用户，您可以使用免费的 OME 查看器应用来查看邮件并发送加密答复。 本文介绍如何操作。|
+|[查看 iPhone 或 iPad 上的加密邮件](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|已收到使用 Office 365 邮件加密在 iPhone 或 iPad 上加密的邮件的最终用户，您可以使用免费的 OME 查看器应用来查看邮件并发送加密答复。 本文介绍如何操作。|
 ||

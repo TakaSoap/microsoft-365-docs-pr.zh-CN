@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解在团队中设置与来宾协作的团队所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036003"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160023"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -61,17 +61,17 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 ![Teams 来宾访问切换的屏幕截图](../media/teams-guest-access-toggle-on.png)
 
-设置团队来宾访问设置
+设定 Teams 来宾访问设置
 
-1. 登录到 Microsoft 365 管理中心[https://admin.microsoft.com](https://admin.microsoft.com)。
-2. 在左侧导航中，单击 "**全部显示**"。
-3. 在 "**管理中心**" 下，单击 "**团队**"。
-4. 在团队管理中心的左侧导航栏中，展开 "**组织范围的设置**"，然后单击 "**来宾访问**"。
-5. 确保将 "**允许在团队中进行来宾访问**" 设置为 **"开"**。
-6. 对其他来宾设置进行所需的更改，然后单击 "**保存**"。
+1. 访问 [https://admin.microsoft.com](https://admin.microsoft.com) 登录到 Microsoft 365 管理中心。
+2. 在左侧导航中，单击“**显示全部**”。
+3. 在“**管理中心 **”下，单击“**团队**”。
+4. 在 Teams 管理中心左侧导航中，展开“**组织范围的设置**”，然后单击“**来宾访问**”。
+5. 确保**在 Teams 中允许来宾访问**设置为“**开**”。
+6. 对其他来宾设置进行任何所需的更改，然后单击“**保存**”。
 
 > [!NOTE]
-> "团队来宾" 设置可能需要24小时才能在打开后变为活动状态。
+> 启用后，Teams 来宾设置最多可能需要二十四个小时才能生效。
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 组来宾设置
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1ed1703ac30a9c7c8392ad61ec0d126d1e17c17e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f58baecce1d1972c7aee1fdb7121375d5ddd111c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602469"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066405"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>欧盟-美国及瑞士-美国隐私保护框架
 
@@ -82,7 +82,7 @@ Azure 中的数据保护 — Azure 可为客户提供强大的数据安全性（
 
 **Microsoft 如何处理欧盟-美国及瑞士-美国隐私保护下的投诉？**
 
-如果你有与隐私保护有关的投诉，请使用 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)中[如何联系我们](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule)部分的联系方式告知我们。 对于你无法直接通过 Microsoft 解决的任何投诉，我们将与欧盟 DPA 合作并遵守其提供的建议。 联系我们后，会将你引导至相关的 DPA 联系人。 正如[隐私保护原则](https://www.privacyshield.gov/article?id=Requirements-of-Participation)中进一步解释的那样，你可以利用有约束力的仲裁选项，通过其他方式解决无法决的投诉。
+如果你有与隐私保护有关的投诉，请使用 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)中[如何联系我们](https://privacy.microsoft.com/privacystatement#mainhowtocontactusmodule)部分的联系方式告知我们。 对于你无法直接通过 Microsoft 解决的任何投诉，我们将与欧盟 DPA 合作并遵守其提供的建议。 联系我们后，会将你引导至相关的 DPA 联系人。 正如[隐私保护原则](https://www.privacyshield.gov/article?id=Requirements-of-Participation)中进一步解释的那样，你可以利用有约束力的仲裁选项，通过其他方式解决无法决的投诉。
 
 ## <a name="resources"></a>资源
 
@@ -92,7 +92,3 @@ Azure 中的数据保护 — Azure 可为客户提供强大的数据安全性（
 - [Microsoft 隐私](https://privacy.microsoft.com)
 - [云中隐私保护注意事项](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf)。

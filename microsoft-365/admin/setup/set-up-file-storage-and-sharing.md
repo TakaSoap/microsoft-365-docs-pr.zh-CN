@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站进行文件存储和共享。
-ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627554"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165213"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>设置文件存储和共享
 
@@ -63,7 +63,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 |**SharePoint 团队网站** <br/> |协作. 创建 Microsoft 365 组（例如，在 Microsoft 365 管理中心、Outlook 中或在 Microsoft 团队中创建团队）时，将为该组创建 SharePoint 团队网站。 同样，当您从 SharePoint 主页或新的 SharePoint 管理中心创建新的 SharePoint 团队网站时，它也会创建一个 Microsoft 365 组。 有关详细信息，请参阅[什么是 sharepoint 团队网站？](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)和[在 SharePoint Online 中创建团队网站](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)。  <br/> |具有共享所有权的文件。 我们建议为您组织中的每个工作单元提供单独的工作组网站。 例如，若要将人员和财务文档保留为较小的团队，请创建一个单独的团队网站。  <br/> |
 
 > [!NOTE]
-> SharePoint 还有其他类型的网站可用于您的企业。 您可以使用 intranet 中的[通信网站](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx)为广泛的访问群体发布信息。 此外，您还可以使用[中心网站](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx)连接 intranet 中的网站。
+> SharePoint 还有其他类型的网站可用于您的企业。 您可以使用 intranet 中的[通信网站](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)为广泛的访问群体发布信息。 此外，您还可以使用[中心网站](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx)连接 intranet 中的网站。
   
 ## <a name="start-using-onedrive-and-your-team-site"></a>开始使用 OneDrive 和团队网站
 
@@ -201,4 +201,4 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
   - [使用 Microsoft 365 在 iPhone 或 iPad 上安装和设置 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [使用 Microsoft 365 在 Windows Phone 上设置 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [使用 Microsoft 365 在 Windows Phone 上设置 Office](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)

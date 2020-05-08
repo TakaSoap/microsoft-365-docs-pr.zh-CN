@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护您的客户和客户的敏感信息。
-ms.openlocfilehash: 523d020587bcf16e46263b88ee7654b9c786e7a2
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a3405207cd7d2d6565807ef0f3a51acbcb80409a
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048057"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165729"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
@@ -34,9 +34,9 @@ ms.locfileid: "44048057"
 
 ## <a name="set-up-dlp-features"></a>设置 DLP 功能
 
-有关如何设置策略以防止个人身份信息（PII）的示例，请参阅[从模板创建 DLP 策略](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369)。 
+有关如何设置策略以防止个人身份信息（PII）的示例，请参阅[从模板创建 DLP 策略](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template)。 
   
-DLP 提供了许多不同区域设置的多种可供使用的策略模板。 例如，澳大利亚财务数据、加拿大个人信息法案、美国财务数据等。 有关完整列表，请参阅[DLP 策略模板包含的内容](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a)。 所有这些模板都可以像 PII 模板示例一样启用。 
+DLP 提供了许多不同区域设置的多种可供使用的策略模板。 例如，澳大利亚财务数据、加拿大个人信息法案、美国财务数据等。 有关完整列表，请参阅[DLP 策略模板包含的内容](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include)。 所有这些模板都可以像 PII 模板示例一样启用。 
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>使用 Exchange Online 存档设置电子邮件保留
 

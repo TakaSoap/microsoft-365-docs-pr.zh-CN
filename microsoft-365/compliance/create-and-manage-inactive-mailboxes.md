@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过对邮箱应用保留策略或保留策略，然后删除相应的用户帐户，可以在 Microsoft 365 中创建非活动邮箱。 非活动邮箱中的项目会在保留或应用到其非活动状态的保留策略的持续时间内保留。 若要永久删除非活动邮箱，只需删除保留策略或保留策略即可。
-ms.openlocfilehash: 6265504f12adeadbc51c36c1e97c999e30a0d141
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048011"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166083"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>创建和管理非活动邮箱
 
@@ -32,7 +32,7 @@ Microsoft 365 使您可以保留已删除邮箱的内容。 此功能称为“�
 > [!IMPORTANT]
 > 随着我们继续投资保留邮箱内容的不同方式，我们宣布在 Exchange 管理中心中停用就地保留。 这意味着，应使用诉讼保留和保留策略来创建非活动邮箱。 从2020年6月1日开始，你将无法在 Exchange Online 中创建新的就地保留。 但您仍可以更改非活动邮箱上设置的就地保留的保留持续时间。 但是，从2020年10月1日开始，你将无法更改保留期。 你将只能通过删除就地保留来删除非活动邮箱。 在删除保留之前，就地保留中的现有非活动邮箱仍将保留。 有关停用就地保留的详细信息，请参阅[旧版电子数据展示工具的退休](legacy-ediscovery-retirement.md)。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要使邮箱处于非活动状态，则必须为其分配 Exchange Online 计划2许可证，以便在删除邮箱之前可以将诉讼保留或保留策略应用于该邮箱。 Exchange Online 计划2许可证是 Office 365 企业版 E3 和 E5 订阅的一部分。 如果为邮箱分配了 Exchange Online 计划1或 Exchange Online 展台许可证（分别是 Office 365 E1 和 F1 订阅的一部分），则必须将其分配给单独的 Exchange Online 存档许可证，以便在删除邮箱之前可以对其应用保留。 有关详细信息，请参阅 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)。
 
@@ -63,7 +63,7 @@ Microsoft 365 使您可以保留已删除邮箱的内容。 此功能称为“�
   
 ### <a name="step-2-delete-the-mailbox"></a>步骤 2：删除邮箱
 
-将邮箱置于保留状态或对其应用保留策略后，下一步是删除邮箱。 删除邮箱的最佳方式是在 Microsoft 365 管理中心删除相应的用户帐户。 有关删除用户帐户的信息，请参阅[从组织中删除用户](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e)。
+将邮箱置于保留状态或对其应用保留策略后，下一步是删除邮箱。 删除邮箱的最佳方式是在 Microsoft 365 管理中心删除相应的用户帐户。 有关删除用户帐户的信息，请参阅[从组织中删除用户](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。
   
 > [!NOTE]
 > 您还可以使用 Exchange Online PowerShell 中的 "**删除-邮箱**" cmdlet 删除邮箱。 有关详细信息，请参阅[Delete or restore user 邮箱 In Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287)。 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核，了解 Microsoft 如何使客户数据安全，并了解在使用 Office 365 时如何遵守 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: b9a9198d8206b2693f0634355c926856c1327d9d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: d2805ae3532ee01a2515693cac6eb52da209022d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943585"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165923"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全 & 合规中心中的服务保证
 
@@ -134,9 +134,9 @@ ms.locfileid: "43943585"
 ## <a name="get-help-with-service-assurance"></a>获取服务保证方面的帮助
 <a name="addother"> </a>
 
-[联系商业版产品支持人员-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。
+[联系商业版产品支持人员-管理员帮助](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
   
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 <a name="addother"> </a>
 
  **为什么我收到一条错误消息，指出服务保证中的文档已损坏？**

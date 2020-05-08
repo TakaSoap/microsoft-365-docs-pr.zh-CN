@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业高级版附带的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
-ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635136"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165749"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商业高级安全性和合规性功能
 
@@ -64,7 +64,7 @@ Microsoft 365 商业高级版提供了简化的安全功能，以帮助保护电
 
 Microsoft 365 商业高级版中的高级功能可帮助您保护业务，抵御网络威胁并保护敏感信息。
   
-- **[Office 365 高级威胁防护](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
     高级威胁防护（ATP）可帮助保护您的业务免受复杂的网络钓鱼和勒索软件攻击，旨在危害员工或客户信息。 这些功能包括： 
     
@@ -97,7 +97,7 @@ Microsoft 365 商业高级版中的高级功能可帮助您保护业务，抵御
 
 Microsoft 365 商业高级版订阅包括可帮助您维护合规性和法规标准的功能。
 
-- **[数据丢失防护策略](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**（DLP）概述。 
+- **[数据丢失防护策略](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)**（DLP）概述。 
     
     您可以设置 DLP 以自动检测敏感信息，如信用卡号、社会保险号码等，以防止无意中与公司外部共享。
     

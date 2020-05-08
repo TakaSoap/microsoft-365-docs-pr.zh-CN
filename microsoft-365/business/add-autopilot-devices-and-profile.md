@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为你的企业设置新的 Windows 10 设备，以便其可供员工使用。
-ms.openlocfilehash: 98a2bfc721ce86c81ebd89e8f41603e619b31546
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: de14012ebf9e7cdd22e41505f316ab665773c670
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627486"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165873"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
@@ -69,7 +69,7 @@ ms.locfileid: "43627486"
     
     您可以从您的硬件供应商处获取此信息，也可以使用[G-et-windowsautopilotinfo PowerShell 脚本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)生成 CSV 文件。 
     
-    有关详细信息，请参阅[设备列表 CSV 文件](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)。还可在" **上传设备列表 .csv 文件**"页面下载示例文件。 
+    有关详细信息，请参阅[设备列表 CSV 文件](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)。还可在" **上传设备列表 .csv 文件**"页面下载示例文件。 
     
 4. 在 "**分配配置文件**" 页上，可以选择现有配置文件，也可以创建新的配置文件。 如果尚未安装，系统会提示您创建一个。 
     

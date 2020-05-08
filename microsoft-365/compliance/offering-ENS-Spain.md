@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 31c67d9beb0a99019ceb204293de50c194a3d2a6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80167a45379a143d7a96e568aedbc27484090a4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602489"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064711"
 ---
 # <a name="spain-esquema-nacional-de-seguridad-ens-high-level-security-measures"></a>西班牙 Esquema Nacional de Seguridad (ENS) 高级别安全措施
 
@@ -38,8 +38,6 @@ ms.locfileid: "41602489"
 ## <a name="microsoft-and-spain-ens-high-level-security-measures"></a>Microsoft 和西班牙 ENS 高级别安全措施
 
 Microsoft Azure 和 Microsoft Office 365 已通过独立审计机构 BDO 的严格评估，并出具了有关其合规性的正式声明。 BDO 报告这两种服务的安全措施及其信息系统和数据处理设施高度符合 RD 3/2010 的要求，无需采取任何纠正措施。 Microsoft 是在西班牙首个获得此认证的超大型云服务提供商。
-
-了解有关 Microsoft 云的西班牙 ENS 高级别安全措施的优势：[下载西班牙 ENS 背景信息](https://aka.ms/spainens-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -79,7 +77,3 @@ Microsoft Azure 和 Microsoft Office 365 已通过独立审计机构 BDO 的严�
 - Esquema Nacional de Seguridad of Spain（[西班牙语](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8)和[英语](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9)）
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf)。
