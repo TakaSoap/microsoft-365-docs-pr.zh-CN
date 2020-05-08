@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7741d23d83b7f21b61801fd51ed6332f2fb02718
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea4c13f6561bdfd3b08e81b99d772172f3e90961
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602579"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066113"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>云安全联盟 (CSA) STAR 证明
 
@@ -80,7 +80,3 @@ CCM 与行业接受的安全标准、法规和控制措施框架相对应，例�
 - [云控制矩阵 (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/0/0/F/00F2766F-00E5-4235-8CE8-90FE657D768F/CSA-STAR-Attestation-Compliance.pdf)。

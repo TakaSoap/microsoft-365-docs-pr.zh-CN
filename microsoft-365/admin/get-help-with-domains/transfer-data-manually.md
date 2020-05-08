@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 了解在更改计划或公司名称时如何在两个 Microsoft 365 帐户之间手动转移数据，或将多个订阅组合为一个。
-ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628371"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053736"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在两个帐户之间手动传输数据
 
@@ -55,11 +55,11 @@ ms.locfileid: "43628371"
 
 转到每个帐户上的以下页面，并根据旧帐户的设置设置新帐户。
   
-如果要将数据从 Microsoft 365 传输到 Microsoft 365 中型企业版或 Microsoft 365 企业版，则管理页面的结构各不相同。 观看[视频：介绍 Microsoft 365 企业版](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)，并转到以下位置以查看管理员设置。
+如果要将数据从 Microsoft 365 传输到 Microsoft 365 中型企业版或 Microsoft 365 企业版，则管理页面的结构各不相同。 观看[视频：介绍 Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365/admin/)，并转到以下位置以查看管理员设置。
   
 对于 Microsoft 365 企业版和 Microsoft 365 中型企业版：
   
-|**位置**|**用途**|
+|**Location**|**用途**|
 |:-----|:-----|
 |**Admin** \> **Microsoft 365** \> **服务设置** <br/> |选择每个选项卡，以获取邮件、网站、Lync、用户软件、密码、社区、权限管理和移动的设置。  <br/> |
 |**管理员** \> **Exchange** <br/> | Exchange Online 设置  <br/> |
@@ -68,7 +68,7 @@ ms.locfileid: "43628371"
 
 适用于 Microsoft 365 小型企业版
   
-|**位置**|**用途**|
+|**Location**|**用途**|
 |:-----|:-----|
 |**管理员** \> **管理组织范围的设置** <br/> |管理设置  <br/> |
 
@@ -90,9 +90,9 @@ ms.locfileid: "43628371"
   
 - 您可以将旧网站另存为模板，并将该模板导入到新网站。
 
-- 若要传输文档，请首先手动在新网站上重新创建层次结构。 然后，您可以同时打开这两个 SharePoint 团队网站，同时使用 Windows 资源管理器打开文档库，并复制并粘贴文档。 请参阅[视频：使用 "使用资源管理器打开" 复制或移动库文件](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx)。
+- 若要传输文档，请首先手动在新网站上重新创建层次结构。 然后，您可以同时打开这两个 SharePoint 团队网站，同时使用 Windows 资源管理器打开文档库，并复制并粘贴文档。 请参阅[视频：使用 "使用资源管理器打开" 复制或移动库文件](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790)。
 
-- 若要转移列表数据，请保存[列表模板](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx)，并使用保存的模板在新网站上重新创建列表。
+- 若要转移列表数据，请保存[列表模板](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，并使用保存的模板在新网站上重新创建列表。
 
 - 若要将文档库或列表内容从 SharePoint Online 环境（OneDrive for Business 或工作组网站）保存到文件共享或本地计算机，请参阅[有关手动迁移 Sharepoint online 内容的信息](https://support.microsoft.com/kb/2783484)。
 

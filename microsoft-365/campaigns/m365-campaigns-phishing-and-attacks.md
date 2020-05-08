@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 针对针对市场活动的 Microsoft 365 防御网络钓鱼和其他攻击。
-ms.openlocfilehash: 2b0acd42b1c272bba7078bf6bc09944540ca9e42
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6f53cc069de2d9162d81a5049128dd35064003c1
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080599"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165705"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>防御网络钓鱼和其他攻击
 
@@ -43,7 +43,7 @@ Microsoft 365 提供了很多保护来防御攻击，但您可以采取一些措
 
 **减少垃圾邮件**
 
-[有关如何帮助减少垃圾邮件的信息，](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6)请访问以下10条提示。
+[有关如何帮助减少垃圾邮件的信息，](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6)请访问以下10条提示。
 
 **报告！**
 
@@ -74,6 +74,6 @@ Microsoft 365 提供了很多保护来防御攻击，但您可以采取一些措
 ## <a name="set-it-up"></a>设置
 
 了解有关如何执行以下操作的详细信息：
-- [使用 Office 保持文件和通信的安全](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)。
+- [使用 Office 保持文件和通信的安全](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)。
 - [在工作中保持安全和保密](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)。
   

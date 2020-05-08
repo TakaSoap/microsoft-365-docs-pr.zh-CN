@@ -28,14 +28,21 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: 了解如何在 Microsoft 365 订阅中添加和减少文件存储。 使用额外的文件存储，可以在 SharePoint Online 和 OneDrive 中存储更多内容。
-ms.openlocfilehash: a944c272f456fd6f284e1df28c52420e4deb40d4
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045936"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140962"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为你的订阅添加存储空间
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 如果你的 SharePoint Online 网站集存储空间即将用完，并且你的计划符合条件，则可以为你的订阅增加存储空间。 如果在可用加载项列表中看不到**Office 365 额外文件存储空间**，说明您的计划不符合条件。 有关详细信息，请参阅["我的计划是否符合条件？"](#is-my-plan-eligible-for-office-365-extra-file-storage)
 

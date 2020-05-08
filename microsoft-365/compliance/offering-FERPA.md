@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 11fa59476737fd3326fb49427945f183f8b990bc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602429"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066365"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育权利和隐私法案（FERPA）
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602429"
 
 "家庭教育版" 和 "隐私法案" （FERPA）是美国联邦法律，可保护学生的教育记录的隐私性，包括个人身份和目录信息。 FERPA 是为了确保家长和学生年龄18岁及更早的家长能够访问这些记录，请求对它们进行更改，并控制信息的泄露，但在特定和有限的情况下，FERPA 允许泄露而无需征得。
 
-法律适用于从美国教育部门获得资金的学校、学校地区和任何其他机构—即几乎所有公开的公共 K-12 学校和学校地区，以及大多数后辅助机构（公用和私人）.
+法律适用于学校、学校地区和任何其他接受美国教育部门的资金的机构—即几乎所有公共的 K –12学校和学校地区，以及公用和专用的大多数后辅助机构。
 
 安全性是与 FERPA 合规性的核心，它需要保护学生信息，防止未经授权的披露。 使用云计算的教育机构需要签订合同 reassurances，即技术供应商对敏感学生数据进行了适当的管理。
 
@@ -39,18 +39,16 @@ FERPA 不需要或识别审核或其他证书，因此受 FERPA 制约的任何�
 - 此外，Microsoft 承诺仅将客户数据用于为组织提供其云服务和兼容的目的（如改进恶意软件检测），并且不会将客户数据用于广告。
 - Microsoft 还 contractually 提交不公开客户数据，除非教育机构指导，如合同中所述或法律要求。 因此，通过使用 Microsoft 云服务向 Microsoft 提供教育记录的学校可确保这些记录受到严格的合同限制（关于其使用和泄露）。
 
-作为这些合同承诺的结果，受 FERPA （教育机构和第三方可访问敏感学生数据）的客户可以放心地使用范围内 Microsoft 商业云服务处理、存储，然后传输该数据。
+作为这些合同承诺的结果，受 FERPA （教育机构和第三方可访问敏感学生数据）的客户可以自信地使用范围 Microsoft 商业云服务处理、存储和传输该数据。
 
-了解 FERPA 在 Microsoft 云上的优势：[下载 FERPA backgrounder](https://aka.ms/ferpa-compliance)
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
-
-在客户数据中，Microsoft 同意将其指定为 "学校官方" 的服务，其中包含 "合法教育兴趣"：
+Microsoft 同意为其指定为 "学校官方" 的服务，客户数据中包含 "合法教育兴趣" 包括：
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI、PowerApps 和 Microsoft 流，作为独立服务或包含在 Office 365 标记计划或套件中的
 - Azure DevOps Services
 - Windows Defender ATP
@@ -59,7 +57,7 @@ FERPA 不需要或识别审核或其他证书，因此受 FERPA 制约的任何�
 
 FERPA 不需要或识别审核或证书。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **为什么 FERPA 很重要？**
 
@@ -79,7 +77,3 @@ FERPA 不需要或识别审核或证书。
 - [Azure FERPA 合规性框架映射](https://aka.ms/AzureFERPAMapping)
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf)。

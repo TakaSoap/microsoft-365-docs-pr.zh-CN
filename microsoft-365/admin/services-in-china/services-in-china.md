@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 详细了解由世纪互联运营的 Office 365，旨在满足中国安全、可靠和可伸缩云服务的需要。
 monikerRange: o365-21vianet
-ms.openlocfilehash: c473dacee7fe6f2e779960711a87368e261c3448
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360793"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155405"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -54,12 +54,12 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |||
 |:-----|:-----|
-|自定义域  <br/> |管理员可以创建和/或使用通过特定于中文的域提供程序注册的自定义域。 如果没有自定义域，则可以从域名注册机构[购买域名](https://support.office.com/article/a6689b24-eeca-41f1-afe6-19917936b73c.aspx)。 如果您已经有一个，请[查找您的域注册机构或 DNS 托管提供商](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3)。  <br/> 此外，如果使用 Office 365 SharePoint Online 服务创建公共网站，则中国 Internet 合规性策略要求你获取 Internet 内容提供商（ICP）号码。  **注意：** 自定义域名称中不允许的单词的自动验证不可用。           |
+|自定义域  <br/> |管理员可以创建和/或使用通过特定于中文的域提供程序注册的自定义域。 如果没有自定义域，则可以从域名注册机构[购买域名](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)。 如果您已经有一个，请[查找您的域注册机构或 DNS 托管提供商](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> 此外，如果使用 Office 365 SharePoint Online 服务创建公共网站，则中国 Internet 合规性策略要求你获取 Internet 内容提供商（ICP）号码。  **注意：** 自定义域名称中不允许的单词的自动验证不可用。           |
 |订阅、帐单和技术支持  <br/> |由世纪互联提供。 有关如何联系支持人员的信息，请参阅[联系 Office 365 获取商业版支持](../contact-support-for-business-products.md)。  <br/> |
-|自助服务密码重置  <br/> |仅适用于管理员。 有关详细信息，请参阅[在由世纪互联运营的 Office 365 中更改或重置密码](https://support.office.com/article/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
+|自助式密码重置  <br/> |仅适用于管理员。 有关详细信息，请参阅[在由世纪互联运营的 Office 365 中更改或重置密码](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
 |安全、隐私、合规性以及有关支持级别的详细信息  <br/> |由世纪互联提供。  <br/> |
 |Office 桌面安装程序  <br/> |Office 桌面安装程序不适用于 Office 2010 和 Office 2007。 但是，管理员可以[将当前的 office 桌面应用程序配置为与 Office 365 配合](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)使用。  <br/> |
-|移动和设备支持\*  <br/> | 即将推出以下移动功能：  <br/>  移动设备管理（MDM）  <br/>  Blackberry Business 云服务（BBCS）不可用，但您可以使用 Exchange ActiveSync 设备或来自移动（边缘、BlackBerry 无线电子邮件解决方案）的信息，以运行 Blackberry Enterprise Server （BE）。  <br/>  有关移动支持的详细信息，请参阅[设置和管理用户的移动访问](https://support.office.com/article/01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |
+|移动和设备支持\*  <br/> | 即将推出以下移动功能：  <br/>  移动设备管理（MDM）  <br/>  Blackberry Business 云服务（BBCS）不可用，但您可以使用 Exchange ActiveSync 设备或来自移动（边缘、BlackBerry 无线电子邮件解决方案）的信息，以运行 Blackberry Enterprise Server （BE）。  <br/>  有关移动支持的详细信息，请参阅[设置和管理用户的移动访问](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |
 |Office Lens  <br/> |不可用。  <br/> |
 |Microsoft Planner  <br/> |即将推出。  <br/> |
 |Microsoft Teams  <br/> |不可用。  <br/> |
@@ -122,10 +122,10 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |**内部部署 Exchange 版本**|**Exchange 混合服务器版本**|**支持 "混合配置" 向导？**|**支持的混合功能**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | 不适用  <br/> | 是  <br/> | 所有  <br/> |
-| 2013 CU5  <br/> | 不适用  <br/> | 是  <br/> | 所有  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | 是  <br/> | 所有  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | 是  <br/> | 所有  <br/> |
+| 2016  <br/> | 不适用  <br/> | 是  <br/> | 全部  <br/> |
+| 2013 CU5  <br/> | 不适用  <br/> | 是  <br/> | 全部  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | 是  <br/> | 全部  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | 是  <br/> | 全部  <br/> |
 | 混合 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | 是  <br/> | 所有，除了就地电子数据展示/存档之外，OWA 访问（请参阅下表）  <br/> |
 | 混合 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | 是  <br/> | 仅手动配置的忙/闲  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | 否  <br/> | 无  <br/> |
@@ -210,7 +210,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |||
 |:-----|:-----|
-|支持 Skype for business 的域提供程序  <br/> |你将需要使用支持 SRV 记录的中文特定域提供程序注册你的域。 有关如何注册域的详细信息，请参阅[查找您的域注册机构或 DNS 托管提供商](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3)。  <br/> |
+|支持 Skype for business 的域提供程序  <br/> |你将需要使用支持 SRV 记录的中文特定域提供程序注册你的域。 有关如何注册域的详细信息，请参阅[查找您的域注册机构或 DNS 托管提供商](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> |
 |电话拨入式会议（为无法进入计算机的用户向会议添加电话访问的能力）  <br/> |您可能会看到 Skype for Business 中和 Skype for Business 管理中心中的电话拨入式会议和提供商的选项，但这些功能尚不可用。 即将推出。  <br/> |
 |Skype for Business 桌面帮助  <br/> |你可以[在此处](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx)查找有关 Skype for business 桌面的帮助。 但是，除非您使用的是 Office 即点即用，否则无法从产品中获取桌面帮助。  <br/> |
 |Lync 2010  <br/> |不可用。  <br/> |
@@ -225,7 +225,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
    
 ## <a name="data-subject-requests-for-gdpr"></a>GDPR 的数据主体请求
 
-GDPR 授予个人（或数据主体）与处理个人数据的处理相关的特定权限，包括更正不准确数据的权限、擦除数据或限制其处理、接收数据并完成请求以传输其数据到另一个控制器。 由世纪互联运营的 Office 365 租户管理员角色可以通过以下方式代表数据主体请求数据：
+GDPR 授予个人（或数据主体）与处理个人数据的处理相关的特定权限，包括更正不准确的数据、擦除数据或限制其处理、接收数据并完成将其数据传输到另一个控制器的请求。 由世纪互联运营的 Office 365 租户管理员角色可以通过以下方式代表数据主体请求数据：
   
 - 通过使用 Azure Active Directory 管理中心，租户管理员可以从 Azure Active Directory 和相关服务中永久删除数据主体。
     

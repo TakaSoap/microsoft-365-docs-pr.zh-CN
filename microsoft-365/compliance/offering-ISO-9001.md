@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa996e73b4042e5f4585445e2db654385803409a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 279ecf60b0d9c023449031a3c5f086f15b18049f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602219"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065747"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 质量管理体系标准
 
@@ -74,7 +74,3 @@ ISO 9001:2015 是建立质量管理体系标准的国际标准。 它是 ISO 900
 - [ISO 9000: 2015](https://www.iso.org/standard/45481.html)（购买基础和词汇表）
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/E/6/3/E63F54DC-766E-477C-98D8-ADDB6A94F5C5/ISO-9001-Compliance.pdf )。

@@ -1,5 +1,5 @@
 ---
-title: '# 步骤5：创建 COVID-19 危机交流平台'
+title: 步骤5：创建 COVID-19 危机交流平台
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 使用 Microsoft 365 创建不同的方法来交流有关 COVID-19 内部和公共新闻的信息。
-ms.openlocfilehash: 189e0bde959ee8ad245b03cb5aca42ab6b19a0b3
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 4f9144f743998a511b76d26f69ae6cc734193232
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002540"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141473"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>步骤5：创建 COVID-19 危机交流平台
 
@@ -31,6 +31,8 @@ ms.locfileid: "44002540"
 - 整合到单个门户中的公共卫生和新闻
 - SharePoint Online 中的通信网站
 - Yammer 社区
+
+![COVID-19 危机交流平台](../media/empower-people-to-work-remotely/comm-venues-grid.png)
 
 ## <a name="employee-surveys"></a>员工调查
 

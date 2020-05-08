@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 17bfa8ee50fbdb7dce988324f478d88d00600121
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: a7e13ae8a3ccffa644a123f57b05c4364d4333d2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804744"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141343"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft 安全分数中的情况如何？
 
@@ -32,6 +32,6 @@ ms.locfileid: "43804744"
 
 ## <a name="may-2020"></a>5月2020
 
-### <a name="adding-azure-advanced-threat-protection-improvement-actions-to-preview"></a>添加 Azure 高级威胁防护改进操作以供预览
+### <a name="adding-additional-azure-advanced-threat-protection-improvement-actions-to-preview"></a>添加其他 Azure 高级威胁防护改进操作以供预览
 
 - 在 Active Directory 信任上启用安全功能

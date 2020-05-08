@@ -9,17 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
+- seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: 了解有关与身份未经验证用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: 31df8820346d14fc945c68f0d295fc1dcaa585d9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
+ms.openlocfilehash: 127f50a6a94e35a9f3c8acf655bd260080aa8420
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44001699"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160675"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -39,7 +40,7 @@ ms.locfileid: "44001699"
 设置“任何人”链接的到期日期
 1. 打开 SharePoint Online 管理中心。
 2. 在左侧导航中，单击“**共享**”。
-3. 在“**‘任何人’链接的高级设置**”下，选中“**这些链接必须在这些天数内过期**”复选框。</br>
+3. 在 **“任何人链接的选择到期和权限”** 下，选中 **“这些链接必须在这些天数内过期”** 复选框。</br>
    ![SharePoint 组织级别的“任何人”链接到期设置的屏幕截图](../media/sharepoint-organization-anyone-link-expiration.png)
 4. 在输入框中键入天数，然后单击“**保存**”。
 

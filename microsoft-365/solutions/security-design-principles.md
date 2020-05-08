@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: bb9a9d046ed51690f5f7cab5b94e65c3c2e62f11
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: eb8019efb13a13b27a67d541ae69ca6f30b35ed0
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002533"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160047"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>您可以 sail 的安全障碍—一个架构师的视点
 
@@ -78,7 +78,7 @@ Sail 通过这些障碍的客户在运营和治理以及安全与风险管理团
 为了帮助您清除这些障碍，Microsoft 已 curated 多个资源，旨在帮助您对安全策略和实现采取一种系统方式。 
 
 
-|Resource   |详细信息  |
+|资源   |详细信息  |
 |---------|---------|
 |[用于安全团队的主要任务，以支持在家工作](../security/top-security-tasks-for-remote-work.md)      | 如果你发现自己突然支持大多数家庭工作劳动力，本文将帮助你快速提升安全性。 其中包括基于你的许可计划的最佳推荐任务。    |
 |[Microsoft 365 商业决策人的安全性](../security/Microsoft-365-security-for-bdm.md)    | 如果你有时间进行更全面的计划，本文将包含跨越 Microsoft 365 的建议，这些建议按受攻击面设定优先级。 它甚至附带有一个电子表格，可用于对许可和区域进行排序（如标识、威胁防护和监控）。  |

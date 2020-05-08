@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033946"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159403"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>开始在 Office 365 中使用自动调查和响应（AIR）
 
@@ -93,6 +93,13 @@ Microsoft 365 提供了许多内置的警报策略，可帮助确定 Exchange �
 |--|--|
 |设置空中功能 |以下角色之一： <br/>-全局管理员<br/>-安全管理员 <br/>可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Security & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配这些角色。 |
 |批准或拒绝建议的操作|在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Security & 合规中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配的以下角色之一：<br/>-全局管理员 <br/>-安全管理员<br/>-安全读者 <br/>--- 和 ---<br/>-搜索和清除（仅在[安全 & 合规中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配此角色。 您可能需要在其中创建新的角色组，并将搜索和清除角色添加到该新角色组。
+
+应将[Office 365 ATP 计划 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)许可证分配给：
+- 安全管理员（包括全局管理员）
+- 组织的安全操作团队（包括安全读者和具有搜索和清除角色的用户）
+- 最终用户
+
+此外，还必须定义和应用[Office 365 ATP 策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)，以便就地保护。
 
 ## <a name="next-steps"></a>后续步骤
 

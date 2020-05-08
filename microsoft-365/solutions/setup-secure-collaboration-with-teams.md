@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
 description: 了解如何设置团队以根据其敏感度保护你的数据
-ms.openlocfilehash: 77493398b11109a51c4e60599561fd8cd4f6c3ac
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002450"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159463"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>设置与 Microsoft 365 的安全协作
 
@@ -86,8 +86,8 @@ ms.locfileid: "44002450"
 从基线层开始，然后根据需要添加使用*敏感*和*高度敏感*的团队，以帮助保护组织中的信息。 若要开始，请参阅以下资源：
 
 - [配置具有基线保护的团队](configure-teams-baseline-protection.md)
-- [配置对敏感数据进行保护的团队](configure-teams-sensitive-protection.md)
-- [为具有高度敏感数据保护的团队配置](configure-teams-highly-sensitive-protection.md)
+- [配置具有敏感数据保护的团队](configure-teams-sensitive-protection.md)
+- [配置具有高度敏感数据保护的团队](configure-teams-highly-sensitive-protection.md)
 
 如果您有一个高度敏感的项目，该项目需要在组织内进行额外的共享保护，则可以将使用其自己的敏感度标签的团队配置为加密文件，以便只有工作组成员可以读取这些文件。 有关详细信息，请参阅[Configure a team with security 隔离](secure-teams-security-isolation.md)。
 
@@ -105,7 +105,7 @@ ms.locfileid: "44002450"
 
 - [有关与未经认证用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 - [在与组织外人员共享文件时限制意外公开信息](share-limit-accidental-exposure.md)
-- [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
+- [创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
 
 如果您有一个包含合作伙伴组织的主要项目，您可以使用 Azure 权利管理在您为项目设置的团队中管理来自该组织的来宾。 有关详细信息，请参阅[Create a B2B extranet with 托管来宾](b2b-extranet.md)。
 

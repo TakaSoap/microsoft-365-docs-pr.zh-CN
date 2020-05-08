@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222065"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066355"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>联邦金融机构检查委员会（FFIEC）
 
@@ -37,23 +37,23 @@ Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是为满足为金
 
 为了帮助金融机构客户端符合 Azure 的 FFIEC 合规性要求，Microsoft 已开发：
 
-- [云安全诊断工具 * *](https://aka.ms/FFIEC-CSDT)可帮助您更高效地对 Azure 服务进行风险评估。 该工具（Excel 电子表格）的功能是19个信息安全域（如网络和系统安全与信息和风险管理），它们跟踪金融服务法规的要求以及其他相关标准，以及 FFIEC IT检查手册。 该工具说明 Azure 如何符合适用于技术服务提供商（TSPs）的每个要求。
+- [云安全诊断工具 * *](https://aka.ms/FFIEC-CSDT)可帮助您更高效地对 Azure 服务进行风险评估。 该工具（Excel 电子表格）提供了19个信息安全域（如网络和系统安全和信息和风险管理），它们跟踪金融服务法规的要求以及其他相关标准，以及 FFIEC IT 检查手册。 该工具说明 Azure 如何符合适用于技术服务提供商（TSPs）的每个要求。
 - [适用于 FFIEC 管控服务工作负载的 Azure 安全性和合规性蓝图](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)，与诊断工具配套。 它提供了有关使用 Azure 云服务的指南，以及与 FFIEC 要求和风险评估准则相关的客户合规性注意事项。
 
 为了进一步帮助您遵守 FFIEC 要求，Microsoft 云服务提供独立 CPA 事务所生成的[SOC 认证报告](offering-SOC.md)。 例如，SOC 1 类型2证明基于 AICPA SSAE 18 standard （请参阅 C：105节），它取代了 SAS 70，并且适用于报告特定的财务报告控制措施。 SOC 报告包括审计员对 Microsoft 控件的有效性的意见，以实现指定监控期内的相关控制目标。 金融机构可以在满足在 Azure、Power BI 和 Office 365 上部署的资产的 FFIEC 合规性义务时使用此正式审核。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
+- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
 Azure 和 Office 365 SOC 认证报告。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **我能否使用有关 SOC 标准的 Microsoft 合规性来满足针对我的机构的 FFIEC 合规性义务？**
 
@@ -79,7 +79,3 @@ Azure 和 Office 365 SOC 认证报告。
 - [Microsoft 商业云服务和金融服务](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)（关于云计算的共同责任）
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf)。

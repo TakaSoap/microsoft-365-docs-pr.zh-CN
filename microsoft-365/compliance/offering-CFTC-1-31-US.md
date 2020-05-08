@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 448dbcf250a34d7c7d7acb2d3f3acc4c8de4d14b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602639"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065847"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品先期备货贸易委员会（CFTC）规则1.31 （c-d）美国
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602639"
 
 [商品先期备货交易委员会](https://www.cftc.gov/)（CFTC）（一种独立美国联邦代理商）调节了商品先期备货和选项市场，以及最近的交换市场。  
   
-长期 CFTC 规则1.31 定义了由 SEC Rule 17a-4 （f）建立的记录保留要求。 此外，它还指定必须维护电子记录5年，并且原始内容在前两年内保持 "可随时访问"，并且在整个过程中可由佣金或美国司法部门进行检查。保留期。  
+长期 CFTC 规则1.31 定义了由 SEC Rule 17a-4 （f）建立的记录保留要求。 此外，它还指定必须保留五年的电子记录，并且原件在前两年内保持 "可随时访问"，并在整个保留期内供佣金或美国司法部门进行检查。  
   
 在2017中， [CFTC 修订了其规则](https://www.cftc.gov/sites/default/files/idc/groups/public/@lrfederalregister/documents/file/2017-11014a.pdf)，修改并新式化其保留项法规，以采用更少的规范性标准，从而在维护记录的方式上提供了更大的灵活性。 这使得规则更具特定技术，从而使受管制实体能够选择最适合其业务的技术，同时维护确保保留过程的可靠性的安全措施。 修订后的规则消除了组织在两年中维护原始记录的要求，但保留了五年期维护期，这是由 CFTC 和 SEC 管控的公司的 harmonizes 做法。
 
@@ -45,7 +45,7 @@ ms.locfileid: "41602639"
 
 Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以便将数据存储在定义的时间段内，而不是以不可改写、不可擦除的格式存储。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
@@ -71,7 +71,3 @@ Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语
 - [Microsoft Office 365 保留策略](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融服务博客](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf)。

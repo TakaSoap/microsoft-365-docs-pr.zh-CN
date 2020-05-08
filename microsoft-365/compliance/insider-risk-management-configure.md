@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e903467a35427e4d1c6fae0b29f41d970d0fbc8
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043313"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065817"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -28,14 +28,16 @@ ms.locfileid: "44043313"
 
 有关内幕风险策略如何帮助您管理组织中的风险的详细信息，请参阅[Microsoft 365 中的内幕风险管理](insider-risk-management.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始使用 "内幕风险管理" 之前，应确认你的[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用内幕风险管理，您的组织必须具有以下订阅或加载项之一：
 
 - Microsoft 365 E5 订阅（付费或试用版）
 - Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 内幕人士风险管理加载项
 - Microsoft 365 A5 订阅（付费或试用版）
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 内幕成员风险管理加载项
 
 必须为内幕风险管理策略中包括的用户分配上述许可证之一。
 

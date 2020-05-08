@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 了解如何使用 Office 标签作为一般数据保护条例 (GDPR) 保护计划的一部分。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad80a63470d0afa4cfb946def18f3408f8a27f4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034356"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165255"
 ---
 # <a name="apply-labels-to-personal-data"></a>向个人数据应用标签
 
@@ -182,7 +182,7 @@ Cloud App Security 目前不支持保留标签，但你可以通过 Cloud App Se
 <tr class="odd">
 <td align="left"><p>向合规性团队成员提供权限。</p></td>
 <td align="left"><p>将创建标签的合规性团队成员需要使用安全中心和/或合规中心的权限。请转到安全中心或合规中心中的“权限”，然后修改合规性管理员组的成员。</p>
-<p>请参阅<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">为用户授予访问安全中心和/或合规中心的权限</a>。</p></td>
+<p>请参阅<a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">为用户授予访问安全中心和/或合规中心的权限</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>创建保留标签。</p></td>

@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何设置 Microsoft 365 商业标准版、Microsoft 365 商业基础版、Microsoft 365 商业版应用或 Office 365 教育版订阅。
-ms.openlocfilehash: 812d1a65986f53e53a02d4c1b70c823dffa98786
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 9415d81e88234ac537bb531d531b891f0a4feb80
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053856"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165079"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 
@@ -285,7 +285,7 @@ Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储�
 
 在移动设备上安装 Office，并将 Outlook 设置为适用于新 Microsoft 邮箱。 团队中的每个人都需要执行此步骤。 每个人可在最多 5 部手机和 5 台平板电脑上安装 Office 移动应用。
   
-获取适用于你的设备的步骤：[Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
+获取适用于你的设备的步骤：[Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/zh-CN/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ### <a name="4-store-files-online"></a>4. 联机存储文件
 
@@ -313,7 +313,7 @@ Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储�
 
 - **获取帮助？** 如果需要更高级部署方面的帮助， **[FastTrack](https://www.microsoft.com/zh-CN/fasttrack/microsoft-365/office-365)** 是一个很好的起点。你还可以 [查找合作伙伴](https://go.microsoft.com/fwlink/p/?linkid=391089)来帮助你。
 
-- **规划**这些工具和资源将帮助你为 Office 365 准备好网络、目录和用户。[让你的组织准备好使用 Office 365 企业版](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc)。
+- **规划**这些工具和资源将帮助你为 Office 365 准备好网络、目录和用户。[让你的组织准备好使用 Office 365 企业版](https://docs.microsoft.com/office365/enterprise/get-your-organization-ready-for-office-365)。
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1.添加学校域或连接你的目录
 
@@ -339,25 +339,25 @@ Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储�
 
 若要启动向导，请选择“**转到设置**”。
 
-有关运行向导时会发生哪些情况的演练，请参阅[使用设置向导](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx)。
+有关运行向导时会发生哪些情况的演练，请参阅[使用设置向导](https://docs.microsoft.com/microsoft-365/admin/setup/plan-your-setup)。
   
-如果希望同步你的本地目录中的用户或利用单一登录， **请勿使用设置向导来添加用户** 。请改为阅读本指南，了解你的选择： [将你的目录连接到 Office 365](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9)或者进行以下设置：
+如果希望同步你的本地目录中的用户或利用单一登录， **请勿使用设置向导来添加用户** 。请改为阅读本指南，了解你的选择： [将你的目录连接到 Office 365](https://docs.microsoft.com/office365/enterprise/about-office-365-identity)或者进行以下设置：
   
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Sync)。与本地目录同步。在本地管理你的用户。也可以同步密码，以便用户在本地和在云中具有相同的密码，但用户将必须重新登录才能使用 Office 365。
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Sync)。与本地目录同步。在本地管理你的用户。也可以同步密码，以便用户在本地和在云中具有相同的密码，但用户将必须重新登录才能使用 Office 365。
 
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Federated)。与本地目录同步。在本地管理你的用户。用户在本地和在云中具有相同的密码，他们无需重新登录即可使用 Office 365。这通常称为单一登录。
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Federated)。与本地目录同步。在本地管理你的用户。用户在本地和在云中具有相同的密码，他们无需重新登录即可使用 Office 365。这通常称为单一登录。
 
 ### <a name="2-set-up-services"></a>2. 设置服务
 
-设置电子邮件、文件共享、即时消息传递以及其他 Office 365 服务和应用程序：[配置 Office 365 企业版服务和应用程序](https://support.office.com/article/7cec08a5-97fd-4761-b23b-ef3d66519e30)
+设置电子邮件、文件共享、即时消息传递以及其他 Office 365 服务和应用程序：[配置 Office 365 企业版服务和应用程序](https://docs.microsoft.com/office365/enterprise/configure-services-and-applications)
   
 在此步骤中，每人最多可在 5 台电脑和 5 台笔记本电脑上安装 Office 365。
   
 ### <a name="3-migrate-data"></a>3. 迁移数据
 
-配置服务后，就可以开始迁移数据，如电子邮件和文件：[将组织数据迁移到 Office 365 企业版](https://support.office.com/article/e2fdfc8d-547e-4419-8628-2738ed4e0f46)。
+配置服务后，就可以开始迁移数据，如电子邮件和文件：[将组织数据迁移到 Office 365 企业版](https://docs.microsoft.com/office365/enterprise/migrate-data-to-office-365)。
   
-如果对学生和教职员工使用学生信息系统 (SIS)，请参阅[设置 SIS 集成](https://support.office.com/article/f3d1147b-4ade-4905-8518-508e729f2e91.aspx)。
+如果对学生和教职员工使用学生信息系统 (SIS)，请参阅[设置 SIS 集成](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync)。
   
 ### <a name="train-your-users"></a>培训用户
 

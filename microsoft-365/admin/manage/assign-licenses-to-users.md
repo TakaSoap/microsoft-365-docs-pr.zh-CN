@@ -24,14 +24,21 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: 了解如何向用户分配许可证或如何将用户移动到新订阅。
-ms.openlocfilehash: 2019aeef0d802e92489b09bbddb564c4ecded8c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 971141514f9117db69a2fbc8f91c2e42b329c33a
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628240"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139693"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 

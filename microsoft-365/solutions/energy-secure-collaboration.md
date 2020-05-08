@@ -9,17 +9,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
+- M365solutions
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
-ms.custom:
-- M365solutions
-ms.openlocfilehash: b0a791177f201e07d00ecbc4621509c1029c4734
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: ''
+ms.openlocfilehash: 9c934c73ed42c369eadf9c0fa7cad1f0c0606ef1
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002236"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160663"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
 :::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="使用云的各种行业的全局视图的图示比拟":::

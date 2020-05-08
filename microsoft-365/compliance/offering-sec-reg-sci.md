@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e2b314934a51c16ab4e907b7d9f6208e7de21641
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071219"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065707"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>有价证券和 Exchange 佣金：法规系统合规性和完整性（SCI）
 
@@ -43,7 +43,7 @@ SCI 规则适用于 SCI 实体，其中包括此类自助式组织（SROs）作�
 
 本文档提供了关键法规 SCI 焦点领域的完整清单。 此检查表可帮助金融组织了解如何采用 Azure 来帮助确保其机构、客户和领导能够遵守适用的法规要求。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -54,7 +54,7 @@ SCI 规则适用于 SCI 实体，其中包括此类自助式组织（SROs）作�
 - [设计高度可用的应用程序](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs)：开发人员如何帮助确保其 Azure 存储应用程序具有高可用性。
 - [风险评估和合规性指南](https://aka.ms/RiskGovernanceGuide)：针对 Microsoft 云服务风险评估和监管机构通知创建一个管理模型。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **使用云技术时，共享责任意味着什么？**
 
@@ -62,7 +62,7 @@ SCI 规则适用于 SCI 实体，其中包括此类自助式组织（SROs）作�
 
 **哪些金融机构可以利用 Azure 来帮助满足法规 SCI 要求？**
 
-受此法规制约的金融组织或 SCI 实体可以部署 Azure。 SEC 声称其法规适用于自助组织（SROs），其中包括股票和选项交换、注册的清算代理商、FINRA 和 MSRB、备选贸易系统（ATSs）（超出指定的贸易 NMS 和非 NMS 股票）批量阈值、disseminators 的合并市场数据（计划处理器）和某些免税清算机构。
+受此法规制约的金融组织或 SCI 实体可以部署 Azure。 SEC 声称其法规适用于自助式组织（SROs），其中包括股票和选项交换、注册的清算代理商、FINRA 和 MSRB、替代贸易系统（ATSs）、商业 NMS 和非 NMS 股票超过指定的卷阈值、合并的市场数据的 disseminators （计划处理器）以及特定的免税清算机构。
 
 ## <a name="resources"></a>资源
 
@@ -74,7 +74,3 @@ SCI 规则适用于 SCI 实体，其中包括此类自助式组织（SROs）作�
 - [Microsoft 金融服务](https://aka.ms/FinServ-Compliance)
 - [Microsoft 和 SEC Rule 17a-4](offering-SEC-17a-4.md)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf)。

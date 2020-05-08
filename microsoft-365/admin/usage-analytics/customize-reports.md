@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 了解如何在浏览器和 Power BI Desktop 中自定义报告。
-ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355153"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140705"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用情况分析中自定义报告
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可深入了解用户采用和使用 Microsoft 365 的方式。 这个仪表板只是与使用情况数据进行交互的起点。 可以自定义报表，从而获得更加个性化的见解。
   
@@ -88,7 +95,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
     ![选择 Yammer 复选框](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 在可视化效果列表的正下方，单击**** Power BI ![Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)中的 "格式" 图标格式图标。
+12. 在可视化效果列表的正下方，单击**Format** Power BI ![Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)中的 "格式" 图标格式图标。
 
 13. 展开标题并将" **标题文本**"值更改为" **每月首次使用 Yammer 的用户**"。
     

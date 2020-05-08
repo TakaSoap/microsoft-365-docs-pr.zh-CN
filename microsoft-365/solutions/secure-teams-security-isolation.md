@@ -10,16 +10,16 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
-- M365solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: cfb05bdfe791289cef7af480397802a3e11271a1
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 3af0826e925f2592aaae930200c0f7b8b9865be1
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002536"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160059"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -169,7 +169,7 @@ ms.locfileid: "44002536"
 2. 在“**网站**”下，单击“**活动的网站**”。
 3. 单击与团队关联的网站。
 4. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
-5. 如果在创建敏感标签时允许来宾共享，请确保选择“**新来宾和现有来宾**”。 如果创建标签时不允许共享，选择“**仅限组织中的人员**”。
+5. 如果在创建敏感标签时允许来宾共享，请确保选定“**新来宾和现有来宾**”。 如果创建标签时不允许共享，选择“**仅限组织中的人员**”。
 6. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**具有现有访问权限的人员**”。
 7. 单击“**保存**”。
 

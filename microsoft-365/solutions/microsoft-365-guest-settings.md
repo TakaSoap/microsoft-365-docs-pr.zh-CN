@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
+- M365solutions
 f1.keywords: NOCSH
 ms.custom:
-- M365solutions
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 39b768a8ec512d45e3de5d57e07dbbfdf9d148b3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a1c734adfe72d5eff5f18e67116544fd63eb854a
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036772"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160131"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 

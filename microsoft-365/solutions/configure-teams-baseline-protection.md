@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: 2ab91e28135f05fb7f315ca8869f937f3433099a
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 4be93ce98f0066dcc65d7f532bd1d9d50acae406
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003755"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159963"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 

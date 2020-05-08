@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bea6775580c4e4a7c9ab4cbf9b9368c312331038
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069267af4e695ebdf811f92cdab653c5f20e4af4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602279"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065927"
 ---
 # <a name="korea-information-security-management-system-k-isms"></a>韩国信息安全管理系统 (K-ISMS)
 
@@ -86,7 +86,3 @@ Azure 认证从认证日期（2018 年 11 月 19 日）起生效，有效期为�
 - [K-ISMS 文档和指南](https://isms.kisa.or.kr/main/isms/notice/)（韩语）
 - [Azure 区域](https://azure.microsoft.com/global-infrastructure/regions/)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/2/C/6/2C6FFA1C-1BA8-48E8-887A-4EA52E256AF3/K-ISMS-Compliance.pdf)。

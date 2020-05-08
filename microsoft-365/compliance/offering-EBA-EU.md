@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9b3655c5b9a4fec2055993ace185ed899f8e0dbc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: efcdbf5700de94f268c1fbc62ca47b60c171fd45
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602509"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064795"
 ---
 # <a name="european-banking-authority-eba"></a>欧洲银行管理局 (EBA)
 
@@ -70,8 +70,3 @@ Microsoft 发布的[面向采用 Microsoft 云的金融机构的风险评估和�
 - [Azure 金融服务云风险评估工具](https://aka.ms/FFIEC-CSDT)
 - [Microsoft 金融服务博客](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/A/9/3/A93DEE11-4758-4E03-8035-D8C5843B70C2/EBA-Compliance.pdf)。
-

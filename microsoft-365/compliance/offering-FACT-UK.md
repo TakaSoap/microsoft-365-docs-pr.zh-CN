@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2aa68d75f795e670390c913c999c154a0164c18c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602459"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066395"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>针对版权窃取的联盟（事实）
 
@@ -29,13 +29,11 @@ ms.locfileid: "41602459"
 
 ## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>针对版权窃取的 Microsoft 和联合身份验证（事实）
 
-若要在 Microsoft 将此类资产 entrust 到公共云时对其进行保护的 Microsoft 承诺，microsoft Azure 已在英国受到联合身份验证（事实）的认证。 事实证明基于 ISO 27001，重点关注物理和数字安全、员工屏蔽和培训以及访问控制。 事实内容保护和安全计划在法律实施、技术合作伙伴和行业协会之间提供专业技能，以抵御版权侵权和内容盗窃，如对等共享、非法光盘复制和信号风险.
+若要在 Microsoft 将此类资产 entrust 到公共云时对其进行保护的 Microsoft 承诺，microsoft Azure 已在英国受到联合身份验证（事实）的认证。 事实证明基于 ISO 27001，重点关注物理和数字安全、员工屏蔽和培训以及访问控制。 事实内容保护和安全计划在法律实施、技术合作伙伴和行业协会之间提供专业技能，以抵御版权侵权和内容盗窃，如对等共享、非法光盘复制和信号失窃。
 
 根据 Microsoft 对事实审核的自愿提交，事实审核了已认证的 Azure。 Azure 是第一个实现事实证明的多租户公共云服务，它将添加到 Azure 的与媒体相关的认证组合中，包括 CDSA 认证和 MPAA 的正式评估。
 
-了解 Microsoft 云上的事实的好处：[下载事实 backgrounder](https://aka.ms/fact-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 
@@ -43,7 +41,7 @@ ms.locfileid: "41602459"
 
 每年续订 Azure 认证： [AZURE 事实证书](https://aka.ms/azurefactcert)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **为什么这一点很重要？**
 
@@ -62,7 +60,3 @@ ms.locfileid: "41602459"
 - [MPAA 评估](offering-mpaa.md)
 - [Azure 对 CSA CAIQ 的响应 3.0.1 版](https://aka.ms/csacaiqresponses)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf)。

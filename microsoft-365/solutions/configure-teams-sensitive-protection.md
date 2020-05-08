@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: 6c3d79e212a1a0333a7262b72ae0f1db8597096f
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 6ad5de355055ac193979db9154d54ab9974fcde0
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002454"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159917"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 
@@ -60,15 +61,15 @@ ms.locfileid: "44002454"
 5. 添加工具提示，然后单击“**下一步**”。
 6. 在“**加密**”页上，单击“**下一步**”。
 7. 如果希望自动向使用此标签分类的文件添加页眉、页脚或水印，请在“**内容标记**”页面上启用内容标记。
-8. 在“**网站和组设置**”页面上，将“**网站和组设置**”设置为“**开**”。
-9. 在“**连接了 Office 365 组的团队网站的隐私**”下拉菜单中，选择“**专用 - 仅成员可访问站点**”。
+8. 在“**网站和组设置**”页面上，将“**网站和组设置**”设置为“**开启**”。
+9. 在“**Office 365 与组连接的团队网站的隐私**”下拉菜单中，选择“**专用 - 只有成员才能访问网站**”。
 10. 如果想要允许来宾访问，请选择“**允许 Office 365 组所有者向组中添加组织外部人员**”复选框。 
 11. 在“**非托管的设备**”下，选择“**允许仅限于 Web 的访问**”。
 12. 单击“**下一步**”。
 13. 在“**Office 应用程序自动标记**”页面上，单击“**下一步**”。
 14. 单击“**提交**”，然后单击“**完成**”。
 
-创建标签后，需要将其发布到将使用它的用户。 对于敏感保护，我们将对所有用户提供该标签。 在 Microsoft 365 合规中心的“**信息保护**”页面的“**标签策略**”选项卡上发布标签。 如果你拥有适用于所有用户的现有策略，请将此标签添加到该策略。 如果需要创建新策略，请参阅[通过创建标签策略来发布灵敏度标签](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)。
+创建标签后，需要将其发布到使用它的用户。 对于敏感保护，我们将对所有用户提供该标签。 在 Microsoft 365 合规中心的“**信息保护**”页面的“**标签策略**”选项卡上发布标签。 如果你拥有适用于所有用户的现有策略，请将此标签添加到该策略。 如果需要创建新策略，请参阅[通过创建标签策略来发布灵敏度标签](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)。
 
 ## <a name="create-a-team"></a>创建团队
 
@@ -76,7 +77,7 @@ ms.locfileid: "44002454"
 
 针对敏感信息创建团队
 1. 在 Teams 中，单击应用程序左侧的“**团队**”，然后在团队列表底部单击“**加入或创建团队**”。
-2. 单击“**创建团队**”（第一张卡片，左上角）。
+2. 点击“**创建团队**”（第一张卡片，左上角）。
 3. 选择“**从头开始构建团队**”。
 4. 在“**灵敏度**”列表中，选择刚才创建的“**敏感**”标签。
 5. 在“**隐私**”下，单击“**专用**”。
@@ -103,16 +104,16 @@ ms.locfileid: "44002454"
 
 ### <a name="site-guest-sharing-settings"></a>网站来宾共享设置
 
-创建标签时选择的来宾共享设置（仅影响团队成员身份）应与关联的 SharePoint 网站的来宾共享设置匹配，如下所示：
+创建标签时选择的来宾共享设置（仅影响团队成员身份）应与关联的SharePoint 网站的来宾共享设置匹配，如下所示：
 
 |标签设置|SharePoint 网站设置|
 |:------------|:----------------------|
-|**允许 Office 365 组所有者向组中添加组织外部人员**已选中|**新来宾和现有来宾**（新团队默认值）|
-|**允许 Office 365 组所有者向组中添加组织外部人员**未选中|**仅限组织中的人员**|
+|**允许 Office 365 组所有者将组织外部的人员添加到组**已选中|**新来宾和现有来宾**（新团队默认值）|
+|**允许 Office 365 组所有者将组织外部的人员添加到组**未选中|**仅组织内部人员**|
 
 更新网站设置
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“**站点**”下，单击“**活动站点**”。
+2. 在“**网站**”下，单击“**活动的网站**”。
 3. 单击与团队关联的网站。
 4. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
 5. 如果在创建敏感标签时允许来宾共享，请确保选定“**新来宾和现有来宾**”。 如果创建标签时不允许共享，请选择“**仅限组织中的人员**”。
@@ -121,19 +122,19 @@ ms.locfileid: "44002454"
 
 如果要将在团队创建过程中编制脚本，可使用含有以下参数的 [Set-sposite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite)：
 
-- `-SharingCapability Disabled` 用于关闭来宾共享（默认处于打开状态）
-- `-DefaultSharingLinkType Internal` 用于更改“*特定人员*”的默认共享链接
+- `-SharingCapability Disabled` 用于禁用来宾共享（默认启用）
+- `-DefaultSharingLinkType Internal` 用于更改“*指定人员*”的默认共享链接
 
 #### <a name="private-channels"></a>专用频道
 
-如果向团队添加专用频道，则每个专用频道都会使用默认共享设置创建新的 SharePoint 网站。 这些网站在 SharePoint 管理中心中不可见，因此必须使用 Set-SPOSite PowerShell cmdlet 来更新来宾共享设置。
+如果向团队添加私人频道，则每个私人频道都会使用默认共享设置创建新的 SharePoint 网站。 这些网站在 SharePoint 管理中心中不可见，因此必须使用 Set-SPOSite PowerShell cmdlet 来更新来宾共享设置。
 
 ### <a name="site-sharing-settings"></a>网站共享设置
 
 为了帮助确保不与非团队成员共享 SharePoint 网站，我们限制为仅允许所有者进行此类共享。
 
 配置仅限所有者的网站共享
-1. 在 Teams 中，导航至要更新团队的“**常规**”选项卡。
+1. 在 Teams 中，导航至要更新团队的“**常规**”标签。
 2. 在团队的工具栏中，单击“文件”****。
 3. 单击省略号，然后单击“在 SharePoint 中打开”****。
 4. 在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”****。

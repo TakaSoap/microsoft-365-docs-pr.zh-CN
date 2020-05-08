@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Microsoft 365 for business 试用版或付费订阅。
-ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046200"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141165"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 *资格：* 如果分配给用户的许可证少于25个，可以随时在 Microsoft 365 管理中心中在线取消 Microsoft 365 for business 试用版或付费订阅。 如果为用户分配了25个以上的许可证，请[致电支持部门以取消订阅](../../admin/contact-support-for-business-products.md)。
 

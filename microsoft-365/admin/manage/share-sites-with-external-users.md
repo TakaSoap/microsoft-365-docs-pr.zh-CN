@@ -20,14 +20,21 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '了解如何与组织外部的人员共享网站和文件。 '
-ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e49cc84314b55f1aacfa47ab28916bae12132a3e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628024"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139609"
 ---
 # <a name="share-sites-and-files-externally"></a>在外部共享网站和文件
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 若要与组织外部的人员进行协作，可以在外部共享整个网站或特定文件。 如果你想要直接设置共享，请选择要启用的方案：
 
@@ -67,7 +74,7 @@ ms.locfileid: "43628024"
   
 2. 在打开的页面上，选择用户是否可以仅与现有来宾共享、新的和现有的来宾或任何人。 
     
-3. 选择“**保存**”。
+3. 选择“保存”****。
     
 在组织级别启用外部共享之后，可以微调共享设置以禁用特定网站的外部共享。 有关信息，请参阅[打开或关闭网站的外部共享](/sharepoint/change-external-sharing-site)。
   

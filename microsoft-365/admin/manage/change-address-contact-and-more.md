@@ -20,14 +20,21 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 了解如何对组织配置文件进行更改，例如组织名称、地址、电话、技术联系人和电子邮件。
-ms.openlocfilehash: 94f2c875a9373675fd044db7b73251cefe859647
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: a1b792dd74c38e93489bccc49e3a034e1da889e4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016010"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139669"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>更改组织的地址、技术联系人和其他信息
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
   
 您可以对您的组织配置文件进行更改，例如组织名称、地址、电话和技术联系人。 **必须是全局管理员才能更新此信息。**
   

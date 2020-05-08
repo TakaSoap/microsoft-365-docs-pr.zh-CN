@@ -13,12 +13,13 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5b4ce9f5e77d31fce02f2c23c3a22cbd83095117
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 03d4e48a8392b49e75f6778d7a1be6f44de08fe7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637450"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035018"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 

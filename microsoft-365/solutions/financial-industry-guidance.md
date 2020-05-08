@@ -7,18 +7,18 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
-ms.custom:
 - M365solutions
+ms.prod: microsoft-365-enterprise
+ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助金融服务迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
 f1.keywords: NOCSH
-ms.openlocfilehash: 3d61e9585fcfa5b4b235e797db64b8da633b15e1
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 30e9888a50f4a6ce28597e29760f3a7e7ba4c847
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002453"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160490"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从加入 Windows 10 设备的 Azure Active Directory 中获取本地资源（如业务线应用、文件共享和打印机）的访问权限。
-ms.openlocfilehash: c1e04e5ca0d36c32a55a9819140356db5093e3a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 980efbf09349cc0203ac50ae5e028c008d5694ca
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627446"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165893"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>从 Microsoft 365 商业高级版中的 Azure AD 加入设备访问本地资源
 
@@ -41,7 +41,7 @@ ms.locfileid: "43627446"
 
 完成以下步骤，使组织的 Azure AD 加入设备能够访问本地资源。
   
-1. 若要将您的用户、组和联系人从本地 Active Directory 同步到 Azure Active Directory，请运行目录同步向导和 Azure AD Connect，如[设置 Office 365 的目录同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)中所述。
+1. 若要将您的用户、组和联系人从本地 Active Directory 同步到 Azure Active Directory，请运行目录同步向导和 Azure AD Connect，如[设置 Office 365 的目录同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)中所述。
     
 2. 目录同步完成后，请确保你的组织的 Windows 10 设备已加入 Azure AD。 此步骤是在每个 Windows 10 设备上单独执行的。 有关详细信息，请参阅为[Microsoft 365 商业高级版用户设置 Windows 设备](set-up-windows-devices.md)。 
     

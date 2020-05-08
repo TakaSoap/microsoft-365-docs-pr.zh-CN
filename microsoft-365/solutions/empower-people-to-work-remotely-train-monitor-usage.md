@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: 培训用户，并确保快速处理问题。
-ms.openlocfilehash: 93ef4325ef042b33690662767f2484a9cf881475
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: bb8c6614ed383136ef5724d45637891ee978c9cd
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003803"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160722"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>步骤 6：培训远程工作者和处理使用情况反馈
 

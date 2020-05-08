@@ -1,6 +1,6 @@
 ---
-title: 开发/测试环境中的 GDPR 发现、保护和报告
-description: 演示 Microsoft 365 中的 GDPR 功能。
+title: Microsoft 365 开发/测试环境中的 GDPR 发现、保护和报告
+description: 了解如何在 Microsoft 365 开发/测试环境中配置和展示 GDPR 的个人身份信息 (PII)。
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b35db1a7be133e61cbde03f02af83baf9341d32e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632337"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034646"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>开发/测试环境中的 GDPR 发现、保护和报告
 

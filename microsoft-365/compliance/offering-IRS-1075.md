@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb7a805fa927756753e3ba09c3dd5eb2998467e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b64b69d52028a09ddd54863d4e2cbf5f0642bd67
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602289"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066325"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>美国内部收入服务出版物1075
 
@@ -33,7 +33,7 @@ Internal 收益服务出版物1075（IRS 1075）为美国政府机构及其代�
 
 Microsoft Azure 政府和[Microsoft Office 365 美国政府](https://products.office.com/government/office-365-web-services-for-government)云服务为他们提供适当的控制措施以及 microsoft 代理商客户满足 1075 IRS 的实体要求时所需的安全功能，从而为他们提供合同承诺。  
   
-这些适用于政府的 Microsoft 云服务提供了一个平台，客户可以在其中构建和操作他们的解决方案，但客户必须自行确定是否根据 IRS 1075 运营这些特定解决方案，因此受 IRS 审核。  
+这些适用于政府的 Microsoft 云服务提供了一个平台，客户可以在其中构建和操作他们的解决方案，但客户必须自行确定是否根据 IRS 1075 运营这些特定解决方案，并因此而受到 IRS 审核。  
   
 为了帮助政府机构遵守合规性，Microsoft：
 
@@ -43,9 +43,7 @@ Microsoft Azure 政府和[Microsoft Office 365 美国政府](https://products.of
 - 提供 IRS Azure 政府合规性注意事项和 Office 365 的美国政府合规性注意事项，这些注意事项概述了代理商如何以符合 IRS 1075 的方式使用 Microsoft 云的政府服务。 保密协议下的政府客户可以请求这些文档。
 - 为客户提供与 Microsoft 主题专家或外部审计员（如果需要）进行通信的机会（按其费用付费）。
 
-了解 IRS 1075 在 Microsoft 云上的优势：[下载 irs 1075 backgrounder](https://aka.ms/irs1075-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 基于 NIST 指南（低、中和高）的三个影响级别授予 FedRAMP 授权。 这些等级对组织中可能存在的机密性、完整性或可用性的影响（低（有限影响）、中型（严重不利影响）和高（严重或灾难性影响）造成的影响。
 
@@ -62,7 +60,7 @@ Microsoft Azure 政府和[Microsoft Office 365 美国政府](https://products.of
 - [FedRAMP 授权](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
 - [Azure IRS 1075 保护安全报告](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **Microsoft 如何满足 IRS 1075 的要求？**
 
@@ -76,7 +74,7 @@ Microsoft 会定期监视其安全、隐私和操作控件，以及 NIST 800-53 
 
 **我是否可以使用 Azure 或 Office 365 公共云环境，是否仍符合 IRS 1075？**
 
-不是。 可以存储和处理 FTI 的唯一环境是 Azure 政府或 Office 365 美国政府版。 政府客户必须满足使用这些环境的资格要求。
+否。 可以存储和处理 FTI 的唯一环境是 Azure 政府或 Office 365 美国政府版。 政府客户必须满足使用这些环境的资格要求。
 
 ## <a name="resources"></a>资源
 
@@ -85,7 +83,3 @@ Microsoft 会定期监视其安全、隐私和操作控件，以及 NIST 800-53 
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft 政府云](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf)。

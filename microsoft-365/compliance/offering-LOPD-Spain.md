@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dd12d261c52f79bf6b9e8de747bb8fcaec775686
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2582dcc9c865ad96390163ffef819811906cf0de
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602199"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066619"
 ---
 # <a name="spanish-royal-decree-17202007-spanish-organic-law-151999"></a>西班牙皇家法令 1720/2007，西班牙有机法 15/1999
 
@@ -73,7 +73,3 @@ Microsoft 是第一个为客户利益而获得西班牙数据保护局（Agencia
 - 用于保护个人数据的 12 月 13 日《有机法 15/1999》- [西班牙语](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750)
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/A/2/8/A280F049-3C15-4638-A2FA-EFD2793A956E/LOPD-Compliance.pdf)。

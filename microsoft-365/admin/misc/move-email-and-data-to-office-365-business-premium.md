@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 了解如何将数据移动到新的业务标识。
-ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627832"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155355"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>将电子邮件和数据移动到 Microsoft 365 商业标准
 
@@ -61,14 +61,14 @@ ms.locfileid: "43627832"
 ## <a name="outlookemail"></a>[Outlook/电子邮件](#tab/Outlook)
   
  **将 Outlook 2013 信息导出到 Outlook 数据文件**
-1. 创建 Outlook 数据文件 (.pst) 之前，必须已经将从其导出 Outlook 信息的帐户添加到了 Outlook 桌面版本。有关如何将帐户添加到 Outlook 2013 或更高版本的详细信息，请参阅[在 Outlook (for Windows) 中设置电子邮件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Outlook for Mac 2011 中设置电子邮件](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx)。
+1. 创建 Outlook 数据文件 (.pst) 之前，必须已经将从其导出 Outlook 信息的帐户添加到了 Outlook 桌面版本。有关如何将帐户添加到 Outlook 2013 或更高版本的详细信息，请参阅[在 Outlook (for Windows) 中设置电子邮件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Outlook for Mac 2011 中设置电子邮件](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54)。
     
 2. 每位用户需要完成[将电子邮件、联系人和日历导出或备份到 Outlook .pst 文件](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)中所述的步骤。
     
  **在 Outlook 中设置新的电子邮件帐户**
 1. 每个用户都需要设置其在 Microsoft 365 for business 订阅附带的新电子邮件帐户。 因此，他们需要新电子邮件帐户的地址。 每个用户的电子邮件帐户与他们用于登录 Microsoft 365 for business 的用户名相同。 比如 sue@contoso.onmicrosoft.com 或 david@contoso.com。
     
-2. 让每位用户将其电子邮件帐户添加到 Outlook。若要了解如何操作，请参阅[在 Outlook (for Windows) 中设置电子邮件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Outlook for Mac 2011 中设置电子邮件](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx)。
+2. 让每位用户将其电子邮件帐户添加到 Outlook。若要了解如何操作，请参阅[在 Outlook (for Windows) 中设置电子邮件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Outlook for Mac 2011 中设置电子邮件](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54)。
     
  **从 Outlook 数据文件导入信息**
 1. 这会将存储在 PST 文件中的电子邮件、日历、任务和联系人合并到 Microsoft 365 商业版电子邮件帐户中。

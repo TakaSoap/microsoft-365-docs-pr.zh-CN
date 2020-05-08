@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d6f817ed755237a49d792ca66f78977729c5d13f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 47aabfdff1973b3edff21c858d25c158ce39c6a7
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602159"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065633"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>美国电影协会 (MPAA)
 
@@ -34,8 +34,6 @@ ms.locfileid: "41602159"
 MPAA 评估包括共同准则中的 48 个安全主题，以及应用准则和云安全性准则中的另外 6 个主题。 这些内容都建立在 ISO/IEC 27001 和 NIST 800-53 等行业公认的安全标准之上，符合云安全联盟 (CSA) 云控制矩阵等的最佳做法。
 
 Azure 合规性的正式评估意味着，与主流电影公司有业务往来的公司可使用 Azure 来帮助降低通常与安全创作、管理、存储和内容分发相关的 IT 成本，并同时帮助遵守 MPAA 要求。 Azure 媒体服务、存储、虚拟网络以及 30 多个其他服务可在云中提供内容工作流引擎，这比传统本地部署的生产流程更加安全且更具伸缩性，而且能够更加有效地保护下游媒体资产。
-
-了解有关 Microsoft 云的 MPAA 的优势：[下载 ISO/IEC MPAA 背景信息](https://aka.ms/mpaa-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -70,7 +68,3 @@ MPAA 准则为主流电影公司供应商和合作伙伴提供了一套关于创
 - [CSA STAR Azure 自我评估](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [Azure 对 CSA CAIQ 的响应 3.0.1 版](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf)。

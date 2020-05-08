@@ -20,12 +20,12 @@ ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: '了解如何在管理 DNS 记录时，为由世纪互联运营的 Office 365 创建 DNS 记录。 '
 monikerRange: o365-21vianet
-ms.openlocfilehash: b81ab3442e7087c4b7ee9bb3b5e5c2160d724986
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: f6ba0f891bbc207bf7d56c4527760a5c8caf90b0
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211993"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155393"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>管理 DNS 记录时为 Office 365 创建 DNS 记录
 
@@ -36,8 +36,8 @@ ms.locfileid: "43211993"
       
 -  如果不知道你的域的 DNS 托管提供商或域注册机构，请参阅[查找域注册机构或 DNS 托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。 有关 DNS 记录所执行的操作的说明，请参阅[DNS 基础知识](../get-help-with-domains/dns-basics.md)。
     
--  某些 DNS 托管提供程序不允许您创建所有必需的记录类型，这会导致[托管提供程序不支持 SRV、CNAME、TXT 或重定向时的服务限制](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 如果您的提供商不支持 SRV、TXT 或 CNAME 记录，我们建议您将您的[域转移](https://support.office.com/article/a6689b24-eeca-41f1-afe6-19917936b73c.aspx)到[支持所有必需的记录类型的提供商](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
+-  某些 DNS 托管提供程序不允许您创建所有必需的记录类型，这会导致[托管提供程序不支持 SRV、CNAME、TXT 或重定向时的服务限制](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 如果您的提供商不支持 SRV、TXT 或 CNAME 记录，我们建议您将您的[域转移](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)到[支持所有必需的记录类型的提供商](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
     
-- 若要查看哪些 DNS 记录是必需的，并找到要用于每个记录的值（包括电子邮件的 MX 记录），请参阅[收集创建 Office 365 DNS 记录所需的信息](https://support.office.com/article/ffcc06d2-b50d-4072-95bb-f59013770e0e)。 有关 DNS 记录所执行的操作的说明，请参阅[DNS 基础知识](../get-help-with-domains/dns-basics.md)。
+- 若要查看哪些 DNS 记录是必需的，并找到要用于每个记录的值（包括电子邮件的 MX 记录），请参阅[收集创建 Office 365 DNS 记录所需的信息](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)。 有关 DNS 记录所执行的操作的说明，请参阅[DNS 基础知识](../get-help-with-domains/dns-basics.md)。
     
 

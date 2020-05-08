@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解当 Microsoft 365 for business 订阅过期、被禁用或取消时数据会发生什么情况。
-ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707603"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165115"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business 订阅结束时我的数据和访问会发生什么情况？
 
@@ -50,7 +50,7 @@ ms.locfileid: "43707603"
 * 在大多数国家和地区，大多数产品提供。
   
 > [!NOTE]
-> **什么是 "客户数据"？** 客户数据（如[Microsoft Online 服务条款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中所定义）是指所有数据，包括所有的数据，包括由客户通过 microsoft 365 服务提供给 microsoft 的所有文本、声音或图像文件。 若要了解有关客户数据保护的详细信息，请参阅[Microsoft 服务信任门户入门](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)。
+> **什么是 "客户数据"？** 客户数据（如[Microsoft Online 服务条款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中所定义）是指所有数据，包括所有的数据，包括由客户通过 microsoft 365 服务提供给 microsoft 的所有文本、声音或图像文件。 若要了解有关客户数据保护的详细信息，请参阅[Microsoft 服务信任门户入门](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)。
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>如果我的订阅即将过期，我的选项是什么？
 

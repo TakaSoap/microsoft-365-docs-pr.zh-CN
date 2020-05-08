@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 778338220cf7897f8a557fb1e335062d3effeac5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637976"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066415"
 ---
 # <a name="european-union-model-clauses"></a>欧盟模式条款
 
@@ -38,10 +38,6 @@ Microsoft 对相关操作流程进行了投资，以确保符合模式条款中�
 Microsoft 向欧盟的数据保护工作组 (Article 29 Working Party) 提供了其标准合同条款以供审批。 该数据保护工作组成员包括欧洲数据保护监督员、欧盟委员会，以及欧盟所有 28 个数据保护机构 (DPA)。
 
 该工作组确定 Microsoft 协议中条款的实施符合其严格要求。 （Microsoft 是首个从该工作组获得认可和批准函的云服务提供商。）“批准”涵盖了模式条款 2010/87/EU 中反映的约定，但不包括附录中描述的数据导入方实施的数据传输及安全措施。 附录可能由 DPA 单独分析。
-
-了解有关 Microsoft 云的欧盟模式条款的优点
-
-[下载欧盟模式条款背景信息](https://aka.ms/eu-model-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -75,9 +71,9 @@ Microsoft 会持续评估欧盟标准，并根据需要更新其服务。
 
 合规性是一项合同承诺。 Microsoft 标准合同条款适用于签订了[在线服务条款](https://aka.ms/Online-Services-Terms)的所有云客户；有关其他服务，请参阅与 Microsoft 的现有协议。
 
-**什么是“下层数据处理者”？**
+**什么是 “下层数据处理者”？**
 
-“下层数据处理者”会按照数据控制者的指示以及欧盟模式条款和分包合同的相应条款来处理个人数据。 Microsoft 客户（尤其是独立软件供应商 (ISV)）有时自己也是数据处理者。 在这些实例中，Microsoft 是下层数据处理者。
+下层数据处理者会按照数据控制者的指示以及欧盟模式条款和分包合同的相应条款来处理个人数据。 Microsoft 客户（尤其是独立软件供应商 (ISV)）有时自己也是数据处理者。 在这些实例中，Microsoft 是下层数据处理者。
 
 **从何处着手开展我自己组织的合规工作？**
 
@@ -94,7 +90,3 @@ Microsoft 会持续评估欧盟标准，并根据需要更新其服务。
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf)。

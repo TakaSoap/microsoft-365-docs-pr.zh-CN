@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601969"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066435"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>美国 DoE 10 CFR Part 810
 
@@ -34,7 +34,7 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 
 此外，Azure 政府是一种物理上独立于 Azure 云的美国政府社区云。 它提供了有关美国政府特定的后台筛选要求的其他保证，包括限制对信息和系统的访问，以在 Azure 操作人员中对美国公民进行筛选的特定控件。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - Intune
@@ -45,13 +45,13 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 
 ## <a name="about-doe-10-cfr-part-810"></a>关于 DoE 10 CFR Part 810
 
-美国能源（DoE）出口控制规章[10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)管理未经分类的核技术和协助的出口。 它有助于确保从美国出口的核技术将仅用于 peaceful 目的。 修订后的部件810（最终规则）在3月2015生效，并由[国家核安全管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)进行管理。 第810.6 节指出，对于 "通常授权" 的敏感核技术以及那些需要特定授权（如寻求协助）的支持和传输，都需要特定的 DoE 授权。涉及敏感的核技术，如扩充和重型生产）。
+美国能源（DoE）出口控制规章[10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)管理未经分类的核技术和协助的出口。 它有助于确保从美国出口的核技术将仅用于 peaceful 目的。 修订后的部件810（最终规则）在3月2015生效，并由[国家核安全管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)进行管理。 第810.6 节指出，对于 "通常授权" 的敏感核技术的支持和传输，以及那些需要特定授权（如扩充和重型生产等敏感的核技术）的情况，都需要特定的 DoE 授权。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **美国核法规委员会的 10 CFR Part 110 规章是否适用于 Azure 政府？**
 
-不是。 [美国核法规委员会](https://www.nrc.gov/)（NRC）规定了核设施的[出口和进口](https://www.nrc.gov/about-nrc/ip/export-import.html)以及[10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)下的相关设备和材料。 NRC 不会控制与属于 DoE 司法辖区的这些项目相关的核技术和协助。 因此，NRC 10 CFR Part 110 规章不适用于 Azure 政府。
+否。 [美国核法规委员会](https://www.nrc.gov/)（NRC）规定了核设施的[出口和进口](https://www.nrc.gov/about-nrc/ip/export-import.html)以及[10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)下的相关设备和材料。 NRC 不会控制与属于 DoE 司法辖区的这些项目相关的核技术和协助。 因此，NRC 10 CFR Part 110 规章不适用于 Azure 政府。
 
 **如何提供我遵守 DoE 10 CFR Part 810 的证据？**
 
@@ -68,7 +68,3 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 - [Microsoft 和 DoD](offering-dod-disa-l2-l4-l5.md)
 - [Microsoft 政府云](https://www.microsoft.com/enterprise/government)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf)。

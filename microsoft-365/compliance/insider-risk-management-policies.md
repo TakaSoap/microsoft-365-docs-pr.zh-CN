@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043293"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162684"
 ---
 # <a name="insider-risk-management-policies"></a>内幕风险管理策略
 
@@ -52,7 +52,9 @@ ms.locfileid: "44043293"
 对于大多数组织来说，保护数据和防止数据泄露是一项艰巨的挑战，尤其是员工、设备和服务所创建的新数据的快速增长。 员工能够在服务和设备之间创建、存储和共享信息，从而使管理数据泄露变得越来越复杂和困难。 数据泄露可能包括意外 oversharing 组织外部的信息或恶意的数据窃取。 此模板对实时检测可疑的 SharePoint Online 数据下载、文件和文件夹共享、将文件复制到便携式设备（如 USB 驱动器、打印文件以及将数据复制到个人云邮件和存储服务）进行了划分。
 
 >[!IMPORTANT]
->使用此模板时，必须配置至少一个数据丢失防护（DLP）策略以定义组织中的敏感信息。 有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。
+>使用此模板时，必须配置至少一个数据丢失防护（DLP）策略以定义组织中的敏感信息。 请确保为用于此模板的内部人员风险管理的 DLP 策略中的 "**事件报告**" 设置配置了*高*严重性级别警报。 内幕风险管理警报不会从具有 "**事件报告**" 字段设置为 "*低*" 或 "*中*" 的 DLP 策略生成。
+>
+>有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。
 
 ### <a name="offensive-language-in-email"></a>电子邮件中的冒犯性语言
 

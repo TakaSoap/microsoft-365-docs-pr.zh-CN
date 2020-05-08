@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d621017a125a43fc0fc9523e6ce8700b66077f2e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4f97b0c0d5af681ed55a119f7ebbaf6c89fb1393
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602529"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066629"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>数字生产合作关系（DPP）（英国）
 
@@ -35,7 +35,7 @@ Microsoft Azure 已获授予 DPP 在完成数字生产合作关系（DPP）自�
   
 这意味着，使用 Azure 的广播公司和其他媒体客户可以确信其强大的安全性和弹性服务能够帮助满足广播行业的独特需求，从程序开发到传输。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -56,7 +56,3 @@ Azure 广播标志的有效期为一年，每年更新一次。
 - [DPP 提交到安全计划广播清单用户指南](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [NABA 和 DPP 广播公司联合以促进供应商的网络安全要求](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf)。

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695edb08c8316cf3f95af37321d5ab3a7d53399d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 765e9b3ed18e15cd458913e7f943d52f791dbafd
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602679"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065877"
 ---
 # <a name="baseline-informatiebeveiliging-rijksdienst-standard-bir-2012"></a>基线 Informatiebeveiliging Rijksdienst 标准 (BIR 2012)
 
@@ -75,7 +75,3 @@ Microsoft Online Services 提供很多控件，可帮助荷兰内的组织满足
 - [2007 年国家安全惯例信息 (VIR)](https://wetten.overheid.nl/BWBR0022141/2007-07-01)
 - [基线信息安全 (BIR)](https://www.earonline.nl/index.php/BIR_2012)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/F/0/0/F00F62B6-254B-41AC-AC79-7A43CD6E376C/BIR2012-Compliance.pdf)。

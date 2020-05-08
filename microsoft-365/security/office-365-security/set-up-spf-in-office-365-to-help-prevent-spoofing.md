@@ -1,5 +1,5 @@
 ---
-title: 设置 SPF 以帮助防止欺骗
+title: 设置 SPF 以防欺骗
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
-description: 摘要： 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 和自定义域。 SPF 有助于验证从自定义域发送的出站电子邮件。
-ms.openlocfilehash: 9d84fb60886dd1518beb8a94438d5168c869a8c8
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中使用发件人策略框架 (SPF) 和自定义域。
+ms.openlocfilehash: 9d5d300b7397d719d9ab85139cd27d912627a3ff
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808970"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035304"
 ---
-# <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以帮助防止欺骗
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以防欺骗
 
  **摘要：** 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 和自定义域。SPF 有助于验证从自定义域发送的出站电子邮件。
 

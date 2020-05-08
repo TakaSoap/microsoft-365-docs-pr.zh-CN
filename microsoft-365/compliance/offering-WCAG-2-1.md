@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f1abc4d885a1d9a1d915bdf5492e3492dc4318a6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 35f565eb9adb2283238a753fe5e46c208387afb0
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363018"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066275"
 ---
 # <a name="web-content-accessibility-guidelines"></a>Web 内容辅助功能准则
 
@@ -59,7 +59,3 @@ Microsoft 发布的 WCAG 报告反映了完整的产品或服务。 该公司通
 - [Office 365 辅助功能中心](https://go.microsoft.com/fwlink/p/?linkid=2051801)：适用于残疾人士的 Office 365 资源。
 - [企业级辅助功能咨询台](https://go.microsoft.com/fwlink/p/?linkid=2050890)：针对就我们的产品和服务或合规性抱有可访问性方面的问题的企业客户提供专属支持。
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)。

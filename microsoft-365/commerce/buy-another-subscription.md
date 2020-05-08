@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: '了解如何为你的组织购买另一个 Microsoft 365 for business 订阅（如果你已拥有订阅）。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634928"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141298"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>购买另一个 Microsoft 365 for business 订阅
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 如果你已有 Microsoft 365 for business 订阅，并且想要为你的组织购买其他订阅，最好的办法是通过管理中心。 如果您尚未为您的组织购买第一个 Microsoft 365 for business 订阅，请转到[此处](https://products.office.com/business/compare-office-365-for-business-plans)选择计划。
   

@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 完成设置 Office 365 邮件加密（OME）后，您可以通过多种方式自定义部署的配置。 例如，您可以配置是否启用一次性传递代码，在 Outlook 网页版中显示 "保护" 按钮，等等。 本文中的任务介绍了如何。
-ms.openlocfilehash: dd69266cccb1d04bc9ed3938b16bac45ca68b4a9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 25cb5cebda48432afdc670a6dab0a5229167df15
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635882"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165973"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
@@ -112,7 +112,7 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
   
 如果选择不允许向 iOS 邮件应用程序用户发送解密邮件，则用户会收到一条消息，指出他们没有查看邮件的权限。 默认情况下，不会启用电子邮件的服务端解密。
   
-有关详细信息以及客户端体验的视图，请参阅[在 iPhone 或 iPad 上查看加密的邮件](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf)。
+有关详细信息以及客户端体验的视图，请参阅[在 iPhone 或 iPad 上查看加密的邮件](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)。
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>管理 iOS 邮件应用程序用户是否可以查看受 Office 365 邮件加密保护的邮件
   

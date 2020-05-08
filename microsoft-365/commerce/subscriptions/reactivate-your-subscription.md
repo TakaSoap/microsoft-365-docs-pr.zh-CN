@@ -25,14 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: 了解如何在你的订阅过期后重新激活它，或者如果 Microsoft 禁用它，或者在中间将其取消。
-ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046236"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141094"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 如果你的订阅过期，或已被 Microsoft 禁用，或者你在订阅期限中间取消了订阅，你可以在管理中心重新激活它。
   

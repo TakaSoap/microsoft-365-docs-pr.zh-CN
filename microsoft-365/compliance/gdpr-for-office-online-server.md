@@ -1,6 +1,6 @@
 ---
 title: 用于 Office Online Server 和 Office Web Apps Server 的 GDPR
-description: 了解如何解决本地 Exchange Server 中的 GDPR 要求。
+description: 在本文中，你将了解如何处理 针对 Office Online Server 和 Office Web Apps Server 的 GDPR 要求。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e16f206c858d35dd2894b44d398e375c0a59fde5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0391fccfd7316b5c3268dd479c16fc2acf37080d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073251"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036267"
 ---
-# <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>用于 Office Web Apps Server 和 Office Online Server 的 GDPR
+# <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>适用于 Office Web Apps Server 和 Office Online Server 的 GDPR
 
 Office Online Server 和 Office Web Apps Server 遥测数据以 ULS 日志的形式存储。可以使用 [ULS 查看器](https://www.microsoft.com/download/details.aspx?id=44020)查看本地租户的 ULS 日志。
 

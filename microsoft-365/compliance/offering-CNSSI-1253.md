@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f65baf936e83e4f5128f207a82bce50100cd58b2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 59bb5fd9e692cc5c69a4baf1cdc14cc200dba7a6
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602589"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066265"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>国内安全系统的委员会说明否。 1253（CNSSI 1253）
 
@@ -35,11 +35,11 @@ CNSSI 1253 在 NIST SP 800-53 上构建，该 SP 提供 FedRAMP 高授权的控�
 
 经 FedRAMP 批准的第三方评估组织（3PAO）、Kratos SecureInfo 已独立验证 Microsoft Azure 政府系统的合规性（采用 CNSSI 1253 高-高基准）。 Kratos SecureInfo 证明了 Azure 政府的 CNSSI 1253 安全评估报告（SAR）在安全评估计划（SAP）中提供了适用的安全控制 stipulated 的完整评估。 SAR 文档针对要求高保密性、高完整性和高可用性的系统对 Azure 政府进行的测试，以验证 Azure 政府对 CNSSI 1253 安全控件的选择。  
   
-Azure 政府目前拥有 FedRAMP 高临时授权，以供联合授权委员会（JAB）颁发（ATO），并在云计算安全的影响级别5中进行防护临时授权（PA）要求指南（SRG）。 通过这些授权，Kratos SecureInfo 分析了以前评估中测试的安全控制，以确定要测试的其他 CNSSI 1253 安全控制，以确保符合 CNSSI 1253 高-高基准。 Kratos SecureInfo 检查了证据并进行了访谈以验证是否成功实现了43适用的安全控制，并在 CNSSI 1253 SAR 中发布了完整测试的结果。  
+Azure 政府目前拥有 FedRAMP 高临时授权，以供联合授权委员会（JAB）颁发（ATO），并在云计算安全要求指南（SRG）的影响级别5中运行的一项防御临时授权（PA）。 通过这些授权，Kratos SecureInfo 分析了以前评估中测试的安全控制，以确定要测试的其他 CNSSI 1253 安全控制，以确保符合 CNSSI 1253 高-高基准。 Kratos SecureInfo 检查了证据并进行了访谈以验证是否成功实现了43适用的安全控制，并在 CNSSI 1253 SAR 中发布了完整测试的结果。  
   
-Azure 政府与苛刻的 CNSSI 1253 要求的合规性意味着，Azure 可以为美国的公共事业部门客户提供各种符合 CNSSI 1253 的服务，使他们能够从成本节约和严格的成本方面获益Microsoft 云的安全性。
+Azure 政府与苛刻的 CNSSI 1253 要求的合规性意味着，Azure 可以为美国的公共事业部门客户提供各种符合 CNSSI 1253 的服务，从而使他们能够受益于 Microsoft 云的成本节约和严格的安全性。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 
@@ -51,7 +51,7 @@ Azure 政府 CNSSI 1253 认证合规性与 CNSSI 1253 高-高-高基线
 
 - [Azure 政府文档](https://docs.microsoft.com/azure/azure-government/)：教程和操作方法指南帮助开发人员使用 Azure 政府部署和管理服务。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **CNSSI 1253 适用于哪些人？**
 
@@ -69,7 +69,3 @@ Azure 政府（FedRAMP 程序包 ID F1603087869）已再次测试这些控件。
 - [Microsoft 和 DoD 临时授权](offering-DoD-DISA-L2-L4-L5.md)
 - [Microsoft 政府云](https://www.microsoft.com/enterprise/government)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf)。

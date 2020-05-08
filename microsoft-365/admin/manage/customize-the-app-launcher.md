@@ -20,14 +20,21 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '通过将自定义磁贴添加到应用启动器中，创建指向您的电子邮件、文档、应用程序、SharePoint 网站、外部网站和其他资源的快速链接。 '
-ms.openlocfilehash: 705d45a2c26d3bd5e2d45d6d8f5a7c998c449f8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c0a1cbd2f7c605bc03a55787266c7a627f8e329
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628192"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139717"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 在 Microsoft 365 中，可以使用应用启动器快速轻松地访问您的电子邮件、日历、文档和应用程序（[了解详细信息](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)）。 这些是使用 Microsoft 365 获取的应用以及从[SharePoint 应用商店](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx)或[Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)添加的自定义应用程序。
   
@@ -79,8 +86,8 @@ ms.locfileid: "43628192"
     
 若要删除自定义磁贴，请从 "**自定义磁贴**" 窗口中选择该图块，选择 "**删除磁贴** > **删除**"。 
   
-## <a name="whats-next"></a>未来会有哪些更新？
+## <a name="whats-next"></a>下一步做什么？
 
-除了将磁贴添加到应用启动器之外，还可以将应用启动器磁贴添加到导航栏中（[了解详细信息](https://support.office.com/article/d536512c-b0f7-49fd-b8db-a8a967e23f23.aspx)）。 若要自定义 Microsoft 365 的外观以与您的组织的品牌相匹配，请参阅[自定义 microsoft 365 主题](../setup/customize-your-organization-theme.md)。
+除了将磁贴添加到应用启动器之外，还可以将应用启动器磁贴添加到导航栏中（[了解详细信息](https://support.office.com/article/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985)）。 若要自定义 Microsoft 365 的外观以与您的组织的品牌相匹配，请参阅[自定义 microsoft 365 主题](../setup/customize-your-organization-theme.md)。
   
 

@@ -21,12 +21,12 @@ ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: '了解管理员中心的用户类型。 '
 ms.custom: okr_smb
-ms.openlocfilehash: b9a705d651aff3cde9fdd32d0122e8947e574715
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 152be955ffdb5526c974d3b0f4d19693cb29e948
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627760"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155347"
 ---
 # <a name="quick-help-types-of-users"></a>快速帮助：用户类型
 
@@ -45,7 +45,7 @@ ms.locfileid: "43627760"
 |密码管理员  <br/> |这些用户可以代表你重置密码、管理服务请求和监视服务运行状况。  <br/> |
 |服务管理员  <br/> |这些用户可以代表你管理服务请求和监视服务运行状况。  <br/> |
 |用户管理管理员  <br/> |这些用户可以重置密码，监视服务运行状况以及管理用户帐户、用户组和服务请求。他们无法删除全局管理员，无法创建其他管理员角色或者为帐单、全局和服务管理员重置密码。  <br/> |
-|添加自定义筛选器  <br/> |使用此选项，可以创建自定义筛选器以仅查看特定类型的首选项，例如，哪些用户位于 Microsoft 365 Apps for business plan 中。 [快速帮助：筛选用户](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c)。  <br/> |
+|添加自定义筛选器  <br/> |使用此选项，可以创建自定义筛选器以仅查看特定类型的首选项，例如，哪些用户位于 Microsoft 365 Apps for business plan 中。 [快速帮助：筛选用户](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view)。  <br/> |
    
 ## <a name="related-articles"></a>相关文章
 

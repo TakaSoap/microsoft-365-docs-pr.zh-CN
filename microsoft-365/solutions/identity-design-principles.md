@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0b0d79906093df544dc501dd5fff7638833ea54c
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: c830e7f7b0366623520d7ba4e5a47a51e73f09ad
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002616"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160374"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>To identity and 超越-一个架构师的视点
 
@@ -312,7 +312,7 @@ Office 365 具有[统一的审核日志](https://docs.microsoft.com/microsoft-36
 
 正如您可以从上图中看到的，许多其他服务应视为设计的一部分（例如： [Azure 策略](https://docs.microsoft.com/azure/governance/policy/overview)、 [Asure 蓝图](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理组](https://docs.microsoft.com/azure/governance/management-groups/)等）
 
-## <a name="conclusion"></a>结束语
+## <a name="conclusion"></a>总结
 作为简短摘要启动，结束时间超过了预期时间。  我希望你现在可以深入了解如何为你的组织创建委派模型。  此对话对客户非常常见。 没有一个适用于每个人的模型。 在记录我们跨客户看到的常见模式之前，请先等待 Microsoft 工程部门的几个计划改进。 同时，你可以与 Microsoft 帐户团队合作，安排对最接近[Microsoft 技术中心](https://www.microsoft.com/mtc)的访问。  向你显示！
 
 

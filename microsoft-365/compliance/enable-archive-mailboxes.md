@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的安全 & 合规性中心来启用存档邮箱, 以便支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: 6ff4e0eda616e9bdd5fe10832ae334c9337272f0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f544e739bc28b2383492baec5465be1502a08d0d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631737"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166013"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全与合规中心中启用存档邮箱
   
@@ -131,7 +131,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
   
 - 启用存档邮箱后，用户可以将邮件存储在其存档邮箱中。 用户可以通过使用 Microsoft Outlook 和 Outlook 网页版访问存档邮箱。 通过使用其中任意一个客户端应用程序，用户可以查看存档邮箱中的邮件，并在其主邮箱和存档邮箱之间移动或复制邮件。 用户还可以使用“恢复已删除邮件”工具恢复存档邮箱中“可恢复的项目”文件夹下的已删除邮件。
 
-   有关支持就地存档的 Outlook 许可证列表, 请参阅 [Exchange 功能的 Outlook 许可证要求](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
+   有关支持就地存档的 Outlook 许可证列表, 请参阅 [Exchange 功能的 Outlook 许可证要求](https://support.microsoft.com/zh-CN/office/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
 
 - 存档邮箱可帮助你和你的用户满足贵公司保留率、eDiscovery 和保存的要求。 例如，可以使用贵公司的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。 使用安全性 & 合规中心中的 "内容搜索" 工具搜索用户邮箱中的特定内容时, 也将搜索用户的存档邮箱。 并且，将诉讼保留或保留策略应用于用户邮箱时，也会保留存档邮箱中的邮件。
   

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 548b331a8ee26434f53b9960fd355feacd45dfde
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633427"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066315"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -43,9 +43,7 @@ SOC 2 审核基于 AICPA Trust Service Principles and Criteria 来衡量 CSP 系
 
 Microsoft 已获得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 报告。 通常，SOC 1 和 SOC 2 报告仅供与 Microsoft 签署了保密协议的客户使用；SOC 3 报告是公开提供的。
 
-在 Microsoft 云上了解 SOC 1、2、3 的优势：[下载 SOC 1 和 SOC 2 Type 2 报告背景信息](https://aka.ms/soc_backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>SOC 1 和 SOC 2 覆盖的服务
 

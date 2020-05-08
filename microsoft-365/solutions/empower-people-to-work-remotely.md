@@ -17,16 +17,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: da83dc788f31edb56a155f29dd6f14529840f8d5
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: af5246971de87866c41eb90ec8524e567cfd48f1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003791"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049528"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
-为应对新型冠状病毒（COVID-19）危机，企业可能需要让员工能够从家中安全地访问组织的本地和基于云的信息、工具和资源。 
+为应对新型冠状病毒 (COVID-19) 危机，企业可能需要让员工能够从家中安全地访问组织的本地和基于云的信息、工具和资源。 
+
+![使用 Microsoft 365 为远程工作者提供帮助的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
 
 使用以下步骤来保护和优化对组织的服务器、数据和云服务的访问，并实现最大的工作效率。
 

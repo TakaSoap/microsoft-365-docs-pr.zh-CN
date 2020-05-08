@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: d16167f33be1858733173026b09f268d9cf67d62
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 15beb3c0716aeb780fb3bfed3b3a8fa74557574d
+ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929414"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43957272"
 ---
 # <a name="know-your-data---data-classification-overview-preview"></a>了解你的数据 - 数据分类概述（预览）
 
@@ -62,7 +62,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 有关敏感度标签的详细信息，请参阅[了解敏感度标签](sensitivity-labels.md)。
 
-必须为 SharePoint 和 OneDrive 中的文件启用灵敏度标签，以使相应的数据出现在数据分类页面中。 有关详细信息，请参阅[启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
+必须为 SharePoint 和 OneDrive 中的文件启用灵敏度标签，以使相应的数据出现在数据分类页面中。 有关详细信息，请参阅[启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
 
 敏感度标签卡片按敏感度级别显示项目（电子邮件或文档）的数量。
 

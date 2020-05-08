@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71226634f17e8e801c409e513494dfdcc19d0719
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046290"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066235"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
@@ -49,7 +49,7 @@ Microsoft 365 中的通信合规性策略可帮助您解决与合规性、内部
 
 - **风险管理**
 
-    组织负责在其基础结构和公司网络系统中分布的所有通信。 使用通信监督策略来帮助确定和管理潜在的法律暴露和风险，可帮助最大限度地减少风险，然后才会损坏公司运营。 例如，您可以扫描组织中的邮件，以获取有关机密项目的未经授权的通信，例如即将进行的收购、合并、收益披露、reorganizations 或领导团队更改。
+    组织负责在其基础结构和公司网络系统中分布的所有通信。 使用通信合规性策略来帮助确定和管理潜在的法律暴露风险和风险有助于在风险损坏公司运营之前将风险降至最低。 例如，您可以扫描组织中的邮件，以获取有关机密项目的未经授权的通信，例如即将进行的收购、合并、收益披露、reorganizations 或领导团队更改。
 
 - **合规性**
 
@@ -98,7 +98,7 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 通信合规性策略跨多个通信通道扫描和捕获邮件，以帮助您快速查看和修正合规性问题：
 
 - **Microsoft 团队**：针对公共和私有[microsoft 团队](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)频道和个人聊天的聊天通信在通信合规性中支持作为独立频道源或其他 Microsoft 365 服务。 现在，策略将自动扫描策略中定义的特定用户的所有 Microsoft 团队频道和团队，从而无需为 Microsoft 工作组工作分配保留单独的映射列表。
-- **Exchange online**：在 Microsoft 365 组织中的[exchange online](https://docs.microsoft.com/Exchange/exchange-online)上托管的所有邮箱都符合扫描条件。 与通信合规性策略条件匹配的电子邮件和附件可立即用于监视和监控报告。 Exchange Online 现在是一个可选的源通道，并且在通信合规性策略中不再需要。
+- **Exchange online**：在 Microsoft 365 组织中的[exchange online](https://docs.microsoft.com/Exchange/exchange-online)上托管的所有邮箱都符合扫描条件。 与通信合规性策略条件匹配的电子邮件和附件可立即用于监视和合规性报告。 Exchange Online 现在是一个可选的源通道，并且在通信合规性策略中不再需要。
 - **Yammer**：通信合规性策略支持[yammer](https://docs.microsoft.com/yammer/yammer-landing-page)中的专用邮件和公共社区对话。 Yammer 是一个可选的频道，并且必须处于[本机模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)以支持邮件和附件的扫描。
 - **Skype For Business online**：通信合规性策略支持在[Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中扫描聊天通信和关联的附件。
 - **第三方来源**：您可以从[第三方来源](archiving-third-party-data.md)扫描邮件，以获取在 Microsoft 365 组织中导入到邮箱中的数据。 通信合规性支持与几个流行平台（包括即时 Bloomberg、Facebook、Twitter 和其他平台）的连接。
@@ -125,13 +125,13 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 - **冒犯性语言和反骚扰**：使用此模板可以快速创建使用内置分类器的策略，以自动检测可能被视为滥用或攻击性的内容。
 - **敏感信息**：使用此模板创建用于扫描包含定义的敏感信息类型或关键字的通信的策略，以帮助确保重要数据不与不应访问的用户共享。
 - **法规遵从性**：使用此模板创建策略以扫描通信，以查找与法规标准相关联的标准财务术语的参考。
-- **自定义策略**：使用此模板可配置特定通信通道、各个检测条件以及在组织中要查看的内容量。
+- **自定义策略**：使用此模板可配置组织中的特定通信通道、各个检测条件以及要监视和审阅的内容量。
 
 ### <a name="investigate"></a>调查
 
 在此步骤中，您将更深入地了解检测到与通信合规性策略相匹配的问题。 此步骤包括 Microsoft 365 合规性中心中提供的以下操作：
 
-- **警报**：当邮件符合监督策略时，将自动生成警报。 对于每个警报，您都可以看到状态、严重性、检测到的时间，以及是否分配了事例以及其状态。 新警报显示在通信合规性主页和 "**警报**" 页面上，并按严重性顺序列出。
+- **警报**：当邮件符合策略条件时，将自动生成警报。 对于每个警报，您都可以看到状态、严重性、检测到的时间，以及是否分配了事例以及其状态。 新警报显示在通信合规性主页和 "**警报**" 页面上，并按严重性顺序列出。
 - **问题管理**：对于每个通知，您都可以采取调查操作来帮助修正邮件中检测到的问题
 - **文档审阅**：在调查问题期间，您可以使用邮件的多个视图来帮助正确评估检测到的问题。 这些视图包括对话摘要、仅文本、已批注和通信对话的详细信息视图。
 - 查看**用户活动历史记录**：查看策略匹配的用户邮件活动和更正操作（如过去的通知和升级）的历史记录。

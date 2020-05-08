@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6bd989a5600252ee60ada4eb4e3d1414ef3853d5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1f44c46046fc107e8059cebda3388fcd775bd31e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602239"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065687"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 信息安全控制措施行为守则
 
@@ -40,8 +40,6 @@ ISO/IEC 27017:2015 行为守则专为组织设计，用作在根据 ISO/IEC 2700
 ## <a name="microsoft-and-isoiec-27017"></a>Microsoft 和 ISO/IEC 27017
 
 ISO/IEC 27017 在为云服务提供商和云服务客户提供指南方面是独一无二的。 此外，它还为云服务客户提供有关预期从云服务提供商获得内容的实用信息。 通过确保客户了解云中的共同职责，他们可以直接从 ISO/IEC 27017 中受益。
-
-了解有关 Microsoft 云的 ISO/IEC 27017 优势：[下载 ISO/IEC 27017: 信息安全控制措施行为守则](https://aka.ms/iso27017-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -64,7 +62,7 @@ ISO/IEC 27017 在为云服务提供商和云服务客户提供指南方面是独
 
 - [Azure ISO 27017 证书](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Azure ISO 27017 评估报告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017 适用性声明](https://aka.ms/AzureISO27017StatementofApplicability)
+- [Azure ISO 27017 适用性声明](https://aka.ms/azureiso27017StatementofApplicability)
 - [Office 365 ISO 27001、27018 和 27017 审核评估报告](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
@@ -90,7 +88,3 @@ ISO/IEC 27017 在为云服务提供商和云服务客户提供指南方面是独
 - [ISO/IEC 27017:2015 行为守则](https://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf)。

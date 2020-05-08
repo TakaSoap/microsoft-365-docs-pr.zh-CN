@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 5fced1a9452f2345a678bfef670e1a19b9811e81
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046270"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140847"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合规性分数（预览）
 
@@ -104,7 +104,7 @@ Microsoft 合规性分数是 Microsoft 365 合规性中心中的一项预览功�
 
 ### <a name="templates"></a>模板
 
-合规性分数提供了预配置的评估模板。 您还可以通过添加自己的控件和操作来自定义预先配置的模板。 例如，您可以为业务流程控制创建一个模板，或为不包含在某个预先配置的模板中的区域数据保护或合规性标准的模板。 通过将自己的模板引入符合性分数，不仅可以跟踪 Microsoft 云评估，还可以跟踪组织范围内的任何其他风险评估。
+合规性分数提供了预配置的评估模板。 您还可以通过将自己的控件和操作添加到预先配置的模板来创建自定义评估。 例如，您可以为业务流程控制创建一个模板，或为不包含在某个预先配置的模板中的区域数据保护或合规性标准的模板。 通过将自己的模板引入符合性分数，不仅可以跟踪 Microsoft 云评估，还可以跟踪组织范围内的任何其他风险评估。
 
 预配置的合规性分数模板包括：
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 576404aadb2328682f10f69f30e58df2cafebe54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601989"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066445"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>云安全联盟 (CSA) STAR 自我评估
 
@@ -41,8 +41,6 @@ STAR 提供三种级别的保障；CSA-STAR 自我评估是第 1 级别的入门
 ## <a name="microsoft-and-csa-star-self-assessment"></a>Microsoft 与 CSA STAR 自我评估
 
 作为 STAR 自我评估的一部分，CSP 可提交两种不同类型的文档来指出其遵守 CSA 最佳做法，它们分别是填好的 CAIQ 以及一份记录是否符合 CCM 的报告。 在 CSA STAR 自我评估方面，Microsoft 对 Microsoft Azure 发布了 CAIQ 调查表和基于 CCM 的报告，对 Microsoft Dynamics 365 和 Microsoft Office 365 发布了基于 CCM 的报告。  
-  
-了解 Microsoft 云上的 CSA STAR 自我评估的优势：[下载 CSA STAR 自我评估背景信息](https://aka.ms/csastar-selfassessment-backgrounder)
 
 了解如何在我们的 Azure 安全性和合规性蓝图的帮助下加快 CSA STAR 自我评估部署：[下载关于 CSA 共识评估的 Azure 答复](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
@@ -85,8 +83,3 @@ CCM 与行业接受的安全标准、法规和控制措施框架相对应，例�
 
 - [Azure](https://aka.ms/Azure_STAR)
 - [Dynamics 365](https://aka.ms/DynamicsCRM_Online_STAR)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf)。
-
