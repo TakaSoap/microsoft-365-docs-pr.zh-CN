@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065817"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162674"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -91,17 +91,19 @@ ms.locfileid: "44065817"
 有关为您的组织配置 Microsoft 365 HR 连接器的分步指南，请参阅[设置连接器以导入 HR 数据](import-hr-data.md)主题。 配置 HR 连接器后，请返回到这些配置步骤。
 
 >[!IMPORTANT]
->如果使用 "*传出 emplo'ee 数据失窃*" 模板配置 p'licy，则需要将 HR 连接器配置为使用策略模板的 "完全信号检测" 功能。 如果您为您的组织配置了多个 HR 连接器，内幕风险管理将自动从所有 HR 连接器中提取指示器。
+>如果使用 "*传出员工数据失窃*" 模板配置策略，则需要将 HR 连接器配置为使用策略模板的 "完全信号检测" 功能。 如果您为您的组织配置了多个 HR 连接器，内幕风险管理将自动从所有 HR 连接器中提取指示器。
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>配置数据丢失防护（DLP）策略
 
-内幕风险管理支持使用 DLP 策略来帮助将敏感信息有意或无意暴露给不需要的团体。 使用*数据泄露*模板配置内幕风险管理策略时，必须向策略分配特定的 DLP 策略。 此策略可帮助将敏感信息的警报指示器驱动为在组织中配置完全风险管理覆盖范围的重要部分。
+内幕风险管理支持使用 DLP 策略来帮助将敏感信息有意或无意暴露给不需要的团体。 使用*数据泄露*模板配置内幕风险管理策略时，必须向策略分配特定的 DLP 策略。
 
-有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。 配置 DLP 策略后，返回到这些配置 "ration 步骤"。 "" "" "" "" "" "" "
+此策略可帮助推动针对敏感信息的高严重性 DLP 警报的内幕风险管理指标，这是在组织中配置完全风险管理覆盖范围的重要部分。 如果您为您的组织配置了多个 DLP 策略，则需要为每个 DLP 策略分配一个内幕风险管理策略。
+
+有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。 配置 DLP 策略后，请返回到这些配置步骤。
 
 >[!IMPORTANT]
->如果使用*数据泄露*模板配置策略，则需要至少将一个 DLP 策略配置为使用策略模板的完全信号检测功能。 如果您为您的组织配置了多个 DLP 策略，则需要为每个 DLP 策略分配一个内幕风险管理策略。
-""""""""
+>请确保为用于此模板的内部人员风险管理的 DLP 策略中的 "**事件报告**" 设置配置了*高*严重性级别警报。 内幕风险管理警报不会从具有 "**事件报告**" 字段设置为 "*低*" 或 "*中*" 的 DLP 策略生成。
+
 ## <a name="step-4-required-configure-insider-risk-settings"></a>步骤4（必需）：配置内幕风险设置
 
 [内幕风险设置](insider-risk-management-policies.md#policy-settings)适用于所有内幕风险管理策略，而不管您在创建策略时选择的模板如何。 设置是使用位于所有内幕风险管理选项卡顶部的 "**内幕风险设置**" 控件配置的。 这些设置控制隐私、指示器、监视窗口和智能检测。

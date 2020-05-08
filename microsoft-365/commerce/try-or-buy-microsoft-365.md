@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 了解如何获取免费试用版或购买适用于 Microsoft 365 的订阅。
-ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707531"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141050"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>试用或购买 Microsoft 365 订阅
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 Microsoft 365 是一个完整的解决方案，它将 Office 365 和 Windows 10 结合到高级安全性和设备管理中。 如果你已有订阅，并且想要试用或购买 Microsoft 365 订阅，最好的办法是通过管理中心。 以下 Microsoft 365 订阅可在管理中心中使用，以便立即试用或购买：
   

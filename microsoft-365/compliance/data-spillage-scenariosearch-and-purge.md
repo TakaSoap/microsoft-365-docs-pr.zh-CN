@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具来管理和响应组织中的数据外泄事件。
-ms.openlocfilehash: fd230d3e54ca61046a28f60d81d497a413bfa4f7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630589"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166053"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： Data 外泄方案-搜索和清除
 
@@ -120,7 +120,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
   
 您可以使用 "安全与合规中心" 中的 "邮件跟踪" 或在 Exchange Online PowerShell 中使用相应的 cmdlet。 需要注意的重要一点是，邮件跟踪没有提供对返回数据完整性的完全保证。 有关使用邮件跟踪的详细信息，请参阅： 
   
-- [安全与合规中心内的消息跟踪](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [安全与合规中心内的消息跟踪](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
     
 - [安全 & 合规中心中的新邮件跟踪](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
@@ -194,7 +194,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据外泄调查过程
 
-您可以在审核日志中搜索在调查过程中执行的电子数据展示活动。 您还可以搜索审核日志，以返回您在步骤7中运行的**new-compliancesearchaction-清除**命令的审核记录，以删除溢出的数据。 有关详细信息，请参阅：
+您可以在审核日志中搜索在调查过程中执行的电子数据展示活动。 您还可以搜索审核日志，以返回您在步骤7中运行的**new-compliancesearchaction-清除**命令的审核记录，以删除溢出的数据。 有关更多信息，请参阅：
 
 - [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 

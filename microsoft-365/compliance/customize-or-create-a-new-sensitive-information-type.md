@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: 了解如何修改或新建针对一般数据保护条例 (GDPR) 的 Office 365 敏感信息类型。
-ms.openlocfilehash: ffe9792eabc8607506f2ebabd75ae24b70214449
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035734"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166063"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自定义或新建敏感信息类型
 
@@ -73,7 +73,7 @@ ms.locfileid: "44035734"
 
 7.  上传新的敏感信息类型。
 
-8.  重新对内容进行爬网，找出敏感信息。请参阅[手动请求对网站进行爬网和重新编制其索引](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)。
+8.  重新对内容进行爬网，找出敏感信息。请参阅[手动请求对网站进行爬网和重新编制其索引](https://docs.microsoft.com/sharepoint/crawl-site-content)。
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>示例：修改“欧盟借记卡号”敏感信息类型
 
@@ -147,11 +147,11 @@ ms.locfileid: "44035734"
 
 - [运行内容搜索](content-search.md)
 
-内容搜索提供了可帮助开发 KQL 查询和敏感信息类型的其他资源 — 关键字。为什么要使用关键字列表？因为这样可以获取显示与各个关键字相匹配的项目数的统计信息。该信息有助于快速找到最有效（及最无效）的关键字。有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计信息](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
+内容搜索提供了可帮助开发 KQL 查询和敏感信息类型的其他资源 — 关键字。为什么要使用关键字列表？因为这样可以获取显示与各个关键字相匹配的项目数的统计信息。该信息有助于快速找到最有效（及最无效）的关键字。有关搜索统计信息的详细信息，请参阅[查看内容搜索结果的关键字统计信息](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search)。
 
 所创建的搜索查询中各行上的关键字通过 OR 运算符连接。也可以在行中使用关键字短语（用括号括起来）。
 
-有关详细信息，请参阅[内容搜索的关键字查询和搜索条件](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)。
+有关详细信息，请参阅[内容搜索的关键字查询和搜索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)。
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>示例 — 使用内容搜索找出电子邮件地址
 

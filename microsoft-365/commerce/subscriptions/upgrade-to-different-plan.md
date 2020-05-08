@@ -23,15 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 description: 了解如何升级到新的订阅。
-monikerRange: o365-worldwide
-ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046212"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141062"
 ---
-# <a name="upgrade-to-a-different-plan"></a>升级到其他计划 
+# <a name="upgrade-to-a-different-plan"></a>升级到其他计划
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 当您的业务发生变化，或者您需要更多功能时，您可以升级计划。 若要执行此操作，最简单的方法是使用管理中心中的 "**升级**" 选项卡。 但是，并非所有情况下都支持使用 "**升级**" 选项卡。 在某些情况下，您可能能够手动更改计划。
 

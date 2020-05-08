@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 早期版本的 Office 365 邮件加密取决于 Microsoft Azure 权限管理（以前称为 "Windows Azure Active Directory 权限管理"）。
-ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 879f4ec1db8a8cfe1fe3c8d3b1dd9e1fc68dd687
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943261"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165913"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>为以前版本的邮件加密设置 Azure 权限管理
 
@@ -58,7 +58,7 @@ TPD 是一个 XML 文件，其中包含有关您的组织的权限管理设置�
 
 2. 选择与您的组织的地理位置相对应的键共享 URL：
 
-|**位置**|**键共享位置 URL**|
+|**Location**|**键共享位置 URL**|
 |:-----|:-----|
 |北美  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |欧盟  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
@@ -116,7 +116,7 @@ TPD 是一个 XML 文件，其中包含有关您的组织的权限管理设置�
 ## <a name="next-steps"></a>后续步骤
 <a name="importTPDs"> </a>
 
-完成 Azure 权限管理安装程序后，如果要启用新的 OME 功能，请参阅[设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能。](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)
+完成 Azure 权限管理安装程序后，如果要启用新的 OME 功能，请参阅[设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能。](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
   
 将组织设置为使用新的 OME 功能之后，您就可以[定义邮件流规则，以使用新的 OME 功能保护电子](define-mail-flow-rules-to-encrypt-email.md)邮件。
   

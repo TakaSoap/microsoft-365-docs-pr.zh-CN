@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3142ce35cdc55e32cf5f40042967ba60de789dcc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cbf118d918dd5c3bc922fbea157fb56a709fad66
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601879"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065797"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>新西兰政府云计算安全性和隐私注意事项
 
@@ -33,13 +33,11 @@ ms.locfileid: "41601879"
 
 Microsoft 和新西兰政府云计算安全性和隐私注意事项
 
-为了帮助代理执行对 Microsoft 企业云服务的分析和评估，Microsoft 新西兰生成了一系列文档，显示其企业云服务如何解决 "云计算 ISPC" 中设置的问题的方法将它们链接到 Microsoft 云服务认证所针对的标准。 这些认证是 Microsoft 如何确保公共和私有部门客户在设计、构建和运行云服务以有效缓解隐私和安全风险和解决数据主权问题方面的核心。
-
-了解 Microsoft 云上的 NZ CC Framework 的优势：[下载 NZ cc framework backgrounder](https://aka.ms/nzcc-framework-backgrounder)
+为了帮助代理对 Microsoft 企业云服务的分析和评估进行评估，Microsoft 新西兰生成了一系列文档，说明其企业云服务如何解决 "云计算 ISPC" 中设置的问题，具体方法是将这些问题链接到 Microsoft 云服务已通过认证的标准。 这些认证是 Microsoft 如何确保公共和私有部门客户在设计、构建和运行云服务以有效缓解隐私和安全风险和解决数据主权问题方面的核心。
 
 了解如何通过我们的 Azure 安全性和合规性蓝图加快你的新西兰 CC 框架部署：[将 Azure 响应下载到 NZ CC framework](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -48,7 +46,7 @@ Microsoft 和新西兰政府云计算安全性和隐私注意事项
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online、SharePoint Online 和 Skype for Business Online。 Microsoft NZ 已与 GCIO 团队合作开发用于集成 Exchange Online 和 SEEMail 的参考体系结构。白皮书[Office 365： SEEMail 集成和参考体系结构](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)中所述
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **框架适用于哪些人？**
 
@@ -76,7 +74,3 @@ GCIO 要求（公共和非公共服务部门、20地区健康委员会和七个 
 - [Intune](https://aka.ms/Intune-NZ-response)
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf)。

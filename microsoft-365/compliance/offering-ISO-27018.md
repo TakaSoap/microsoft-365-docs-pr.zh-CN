@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4376d2ca5ac27ec8e12f266bb7d3bb54289c1dbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637522"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065757"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保护云中个人数据的 ISO/IEC 27018 行为守则
 
@@ -40,9 +40,7 @@ Microsoft 和 ISO/IEC 27018
 - **Microsoft 客户了解其 PII 的使用情况。** ISO/IEC 27018 要求制定相应策略，以允许在合理期限内返回、传输和安全处置个人信息。 如果 Microsoft 与需要访问客户数据的其他公司合作，Microsoft 将主动公开这些附属处理者的身份。
 - **在客户数据披露方面，Microsoft 仅遵守具有法律约束力的请求。** 如果 Microsoft 必须遵守如刑事侦察这样的请求，Microsoft 将始终通知客户，除非法律禁止这样做。
 
-在 Microsoft 云上了解 ISO-Iec-27018 的优势：[下载 ISO/IEC 27017 背景信息](https://aka.ms/iso27017-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -133,7 +131,3 @@ Microsoft 和 ISO/IEC 27018
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf)。

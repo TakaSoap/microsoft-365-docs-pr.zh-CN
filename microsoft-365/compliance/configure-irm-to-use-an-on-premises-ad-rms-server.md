@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online 中配置信息权限管理（IRM），以使用 Active Directory 权限管理服务（AD RMS）服务器。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 510dc7ea628a46bc5bedfc04ba3b197407d5d67d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 92bf92427ed9a0ba55a0f059859d59c11023ea33
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033692"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166113"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>将 IRM 配置为使用本地 AD RMS 服务器
   
 对于本地部署，Exchange Online 中的信息权限管理（IRM）使用 Active Directory 权限管理服务（AD RMS），这是 Windows Server 2008 及更高版本中的一种信息保护技术。 通过将 AD RMS 权限策略模板应用于电子邮件，可将 IRM 保护应用于电子邮件。 权限附加到邮件本身，以便在联机和脱机以及组织的防火墙内部和外部进行保护。
   
-本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关在 Azure Active Directory 和 Azure 权限管理中使用 Office 365 邮件加密的新功能的信息，请参阅[Office 365 邮件加密 FAQ](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e)。
+本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关在 Azure Active Directory 和 Azure 权限管理中使用 Office 365 邮件加密的新功能的信息，请参阅[Office 365 邮件加密 FAQ](https://docs.microsoft.com/microsoft-365/compliance/ome-faq)。
   
 有关 Exchange Online 中 IRM 的详细信息，请参阅[Exchange Online 中的信息权限管理](information-rights-management-in-exchange-online.md)。
   

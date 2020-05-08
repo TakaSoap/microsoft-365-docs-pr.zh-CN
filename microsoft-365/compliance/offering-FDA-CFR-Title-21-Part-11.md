@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071279"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066375"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和药品管理 CFR Title 21 第11部分
 
@@ -39,13 +39,13 @@ CFR Title 21 Part 11 部分设置要求，以确保电子记录和签名在纸�
 
 Microsoft 企业云服务经历了常规独立的第三方 SOC 1 类型2和 SOC 2 类型2审核，并根据 ISO/IEC 27001 和 ISO/IEC 27018 标准进行了认证。
 
-尽管这些定期审核和认证并不专门侧重于 FDA 规章合规性，但其用途和目标与 CFR 标题21第11部分的性质相似，并且有助于确保机密性、完整性和可用性存储在 Microsoft 云服务中的数据。 我们的资格认证方法也基于业界最佳实践，包括国际社会工程设计（ISPE） GAMP 系列的优秀做法指南和针对受管制 GxP 环境中的 Computerized 系统的药物检查合作方案（PIC/S）的优秀实践。
+尽管这些定期审核和认证并不专门侧重于 FDA 规章合规性，但其用途和目标与 CFR 标题21第11部分中的内容非常相似，并且有助于确保 Microsoft 云服务中存储的数据的机密性、完整性和可用性。 我们的资格认证方法也基于业界最佳实践，包括国际社会工程设计（ISPE） GAMP 系列的优秀做法指南和针对受管制 GxP 环境中的 Computerized 系统的药物检查合作方案（PIC/S）的优秀实践。
 
-客户可以请求对合规性报告的访问权限，并受保密协议条款和条件的信任，通过其 Microsoft 帐户代表或通过[服务信任门户](https://aka.ms/stphelp)。 此外，Microsoft Azure 和 Microsoft Office 365 的限定准则提供了有关 Microsoft 审核控制措施如何对应于 CFR Title 21 第11部分的要求的详细说明、实施 FDA 资格策略的指南以及共享职责区域的说明。
+客户可以请求对合规性报告的访问权限，并受保密协议条款和条件的信任，通过其 Microsoft 帐户代表或通过[服务信任门户](https://aka.ms/stphelp)。 此外，Microsoft Azure 和 Microsoft Office 365 的限定准则提供了有关 Microsoft 审核控制措施如何与 CFR Title 21 第11部分、实施 FDA 资格策略指南以及共享职责领域的相关要求的详细说明。
 
 了解如何加速 FDA CFR Title 21 部署：[下载 AZURE FDA 21 资格指南](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 尽管没有用于遵守 CFR 标题21第11部分的认证，但以下 Microsoft 企业云服务已完成独立的第三方审核，这可能有助于客户实现法规遵从性工作。 这些服务包括：
 
@@ -94,7 +94,3 @@ Microsoft 确保其企业云服务符合控制[联机服务条款](https://www.m
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府云](https://aka.ms/govt-cloud)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf)。

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何使用 Outlook 发送加密电子邮件。
-ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080451"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165681"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或标记敏感电子邮件
 
@@ -48,7 +48,7 @@ ms.locfileid: "42080451"
 
 ## <a name="set-it-up"></a>设置
 
-如果要对不符合预定义规则的邮件进行加密，或管理员未设置任何规则，则可以在发送邮件之前应用各种不同的加密规则。 若要从 Outlook 2013 或2016或 Outlook 2016 for Mac 发送加密邮件，请选择 "选项" " **> 权限**"，然后选择所需的保护选项。 您还可以通过在 Outlook 网页网站中选择 "**保护**" 按钮发送加密邮件。 有关详细信息，请参阅[Outlook FOR PC 中的发送、查看和回复加密邮件](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US)。
+如果要对不符合预定义规则的邮件进行加密，或管理员未设置任何规则，则可以在发送邮件之前应用各种不同的加密规则。 若要从 Outlook 2013 或2016或 Outlook 2016 for Mac 发送加密邮件，请选择 "选项" " **> 权限**"，然后选择所需的保护选项。 您还可以通过在 Outlook 网页网站中选择 "**保护**" 按钮发送加密邮件。 有关详细信息，请参阅[Outlook FOR PC 中的发送、查看和回复加密邮件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
 
 ## <a name="admin-settings"></a>管理设置
 

@@ -14,24 +14,24 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 045f6c177acd3f5feb0645fb56d25426632638e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602189"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065727"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Arm 规章中的国际流量（ITAR）
 
 ## <a name="itar-overview"></a>ITAR 概述
 
-美国州的州负责管理防护文章的出口和临时导入（即，由 Arm 导出控制法案（如 Title 22 CFR 121.1 中所述）的美国 Munitions 列表中指定的任何项目或技术数据（标题 22 USC 2778）和 Arm 规章（ITAR）中的国际流量（标题 22 CFR 120 –130）。 适用于国防贸易控制（DDTC）的 Directorate 负责管理这些程序所管辖的实体。
+美国州的国家/地区负责管理防护文章的出口和临时导入（即，由 Arm 导出控制法案（Title 22 USC 2778）和国际流量（标题 22 CFR 120 –130）控制的美国 Munitions 列表中指定的任何项目或技术数据（如标题 22 CFR 121.1 中所述）。 适用于国防贸易控制（DDTC）的 Directorate 负责管理这些程序所管辖的实体。
 
 ## <a name="microsoft-and-itar"></a>Microsoft 和 ITAR
 
 Microsoft 提供一些云服务或服务功能，这些功能可以支持具有 ITAR 义务的客户。 虽然没有适用于 ITAR 的合规性认证，但 Microsoft 对此进行了操作，并设计了在范围内的服务，能够支持客户的 ITAR 义务和合规性计划。  
   
-Microsoft Azure 政府和 Microsoft Office 365 美国政府版国防部通过其他合约承诺向客户提供有关存储数据位置的 ITAR 的客户支持，并对能够将此类数据访问到美国人员。 Microsoft 为这些政府云服务的基础结构和操作组件提供了这些保证，但客户最终负责其环境中的应用程序的保护和体系结构。  
+Microsoft Azure 政府和 Microsoft Office 365 美国政府版防御通过其他合约承诺向客户提供有关存储数据位置的 ITAR 的客户支持，以及将此类数据访问到美国人员的能力的限制。 Microsoft 为这些政府云服务的基础结构和操作组件提供了这些保证，但客户最终负责其环境中的应用程序的保护和体系结构。  
   
 客户必须对其他协议进行签名，以正式通知 Microsoft 存储 ITAR 控制的数据，这样 Microsoft 可能会遵守对我们客户和美国政府的责任。  
   
@@ -39,12 +39,12 @@ ITAR 有特定的义务来举报违规，从而可以提供特定风险缓解优
   
 寻求承载 ITAR 管控数据的客户应与他们的 Microsoft 帐户和许可团队合作，以了解详细信息，获取正确的协议，并访问相关的系统体系结构信息。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [Office 365 美国政府防御版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **在哪里可以请求符合性信息？**
 
@@ -58,7 +58,3 @@ ITAR 有特定的义务来举报违规，从而可以提供特定风险缓解优
 - [Azure 政府](https://azure.microsoft.com/features/gov/)
 - [Office 365 美国政府版](https://products.office.com/government/office-365-web-services-for-government)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下载产品/服务背景信息
-
-需要此产品/服务的背景信息文档？ 请下载 [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf)。

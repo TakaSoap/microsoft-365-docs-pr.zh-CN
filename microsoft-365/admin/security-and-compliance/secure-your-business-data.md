@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 119329289a9c19c2256cf112e82289b55cf9ce07
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140821"
+ms.locfileid: "44155429"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护 Microsoft 365 商业版计划的十大方法
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Harvard 肯尼迪 School [Cybersecurity 活动手册](https://go.microsoft.com/f
     
 Microsoft 还建议用户采取以下文章中建议的操作来保护其个人电子邮件帐户：
   
-- [帮助保护你的 Outlook.com 电子邮件帐户](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [帮助保护你的 Outlook.com 电子邮件帐户](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [通过2步验证保护你的 Gmail 帐户](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -229,7 +229,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
   
 如果收件人使用的是另一个电子邮件客户端或电子邮件帐户（如 Gmail 或 Yahoo），他们将看到一个链接，让他们可以登录以阅读电子邮件，也可以请求一次性密码以在 web 浏览器中查看邮件。 如果用户没有收到电子邮件，请让他们检查其垃圾邮件或垃圾邮件文件夹。 
   
-有关详细信息，请参阅[Outlook FOR PC 中的发送、查看和回复加密邮件](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)。
+有关详细信息，请参阅[Outlook FOR PC 中的发送、查看和回复加密邮件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. 保护你的电子邮件免受网络钓鱼攻击
 <a name="phishing"> </a>

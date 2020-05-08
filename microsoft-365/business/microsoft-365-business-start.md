@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 for business，如何对其进行设置，以及如何准备用户的设备和电脑以确保 Microsoft 365 的商业版受到保护。
-ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a470f015857117d3cbbc15255e8d815438222509
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048077"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165781"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 商业版入门
 
@@ -79,9 +79,9 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
     
     如果要将**本地 Active Directory 永久移动到云**，可以转到 Microsoft 365 管理中心并使用安装向导手动添加用户，也可以执行与 Azure AD Connect 的一次性同步。 可通过 2 种方法执行此操作： 
     
-    - 如果你还具有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器，则可以[使用最少混合将 Exchange 邮箱快速迁移到 Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef)。 最小混合步骤包括将用户一次性同步到 Azure AD，并将电子邮件从本地迁移到云。 电子邮件迁移完成后，使用此方法时，目录同步将自动关闭。
+    - 如果你还具有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器，则可以[使用最少混合将 Exchange 邮箱快速迁移到 Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最小混合步骤包括将用户一次性同步到 Azure AD，并将电子邮件从本地迁移到云。 电子邮件迁移完成后，使用此方法时，目录同步将自动关闭。
     
-    - 使用目录同步向导将用户同步到云。 按照[为 Microsoft 365 设置目录同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)中的步骤完成此过程。 将用户同步到云后，必须[关闭 Office 365 的目录同步](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)。
+    - 使用目录同步向导将用户同步到云。 按照[为 Microsoft 365 设置目录同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)中的步骤完成此过程。 将用户同步到云后，必须[关闭 Office 365 的目录同步](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)。
     
     此外，还必须为以这种方式添加的每个用户提供 Microsoft 365 for business 的许可证。 可以在 "[安装向导](set-up.md)" 中执行此操作，也可以在[Microsoft 365 for business 中向用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。
     
@@ -104,7 +104,7 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
   
 - 请与合作伙伴联系。
     
-- 作为 Microsoft 365 for business 管理员，你可以访问我们的客户支持团队： **[联系商业版产品支持人员-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- 作为 Microsoft 365 for business 管理员，你可以访问我们的客户支持团队： **[联系商业版产品支持人员-管理员帮助](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 ## <a name="see-also"></a>另请参阅
 

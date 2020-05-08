@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 使用情况分析中导航和利用报告
+title: 导航和利用 Microsoft 365 使用情况分析中的报表
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 了解如何使用导航选项卡和筛选器查看报告。
-ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: dedcaf52a2b5e69d53f8c41494b5fd68ac1f248b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355103"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140667"
 ---
-# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用情况分析中导航和利用报告
+# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>导航和利用 Microsoft 365 使用情况分析中的报表
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 仪表板提供有关主要用途和采用指标的快速概述。 通过选择顶级指标，您可以访问提供更多详细信息和见解的报告。 每个报告选项卡包含特定于组织的使用和采用情况的数据可视化。 收集的数据在每个报告的标题中进行说明，并显示一个图块，其中包含有关您正在查看的 "报告" 选项卡上的可视化效果的详细信息。
 
