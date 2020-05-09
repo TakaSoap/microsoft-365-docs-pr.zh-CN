@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将员工数据从组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943361"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173482"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
@@ -68,7 +68,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 |**LastWorkingDate**|指定终止的员工的最后一天的工作。 必须使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`，即[ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 |||
 
-创建具有所需 HR 数据的 CSV 文件后，将其存储在您在步骤4中运行脚本的本地计算机上。 您还应实现更新策略，以确保 CSV 文件始终包含最新信息，以便您运行脚本的任何操作都将上传到 Microsoft 云中的最新员工终止数据。
+创建具有所需 HR 数据的 CSV 文件后，将其存储在与步骤4中运行的脚本相同的系统上。 您还应实现更新策略，以确保 CSV 文件始终包含最新信息，以便您运行脚本的任何操作都将上传到 Microsoft 云中的最新员工终止数据。
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤3：创建 HR 连接器
 
@@ -94,7 +94,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    将显示 "状态" 页，确认已创建连接器。 此页面还包含作业 ID。 在下一步中，你将需要此作业 ID 来运行脚本。 您可以从此页面或连接线的飞出页面复制它。
 
-7. 单击“完成”****。
+7. 单击“**完成**”。
    
    新的连接器将显示在 "**连接器**" 选项卡上的列表中。 
 
@@ -136,7 +136,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
    |`appId` |这是您在第1步中的 Azure AD 中创建的应用程序的 AAD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 | 
    |`appSecret`|这是您在第1步中的 Azure AD 中创建的应用程序的 AAD 应用程序密码。 这也用于身份验证。|
    |`jobId`|这是您在步骤3中创建的 HR 连接器的作业 Id。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器相关联。|
-   |`csvFilePath`|这是您在步骤2中创建的 CSV 文件的本地计算机（用于运行脚本的文件）的文件路径。 请尝试避免在文件路径中包含空格;否则，请使用单引号。|
+   |`csvFilePath`|这是您在步骤2中创建的 CSV 文件（与脚本存储在同一系统上）的文件路径。 请尝试避免在文件路径中包含空格;否则，请使用单引号。|
    |||
    
    下面的示例展示了使用每个参数的实际值的 HR 连接器脚本的语法：
@@ -177,7 +177,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 3. 在 "**操作**" 部分，单击 "**创建任务**"。
 
-4. 在 "**常规**" 选项卡上，为计划的任务键入一个描述性名称;例如， **HR 连接器脚本**。 您还可以添加可选的说明。 
+4. 在 "**常规**" 选项卡上，为计划的任务键入一个描述性名称;例如， **HR 连接器脚本**。 您还可以添加可选的说明。
 
 5. 在 "**安全选项**" 下，执行下列操作：
 

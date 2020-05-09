@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如果其中一个内置的类元无法满足您的需求，则使用 trainable 分类程序。 Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本主题介绍如何创建自定义分类器。
-ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266891"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173504"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>创建 trainable 分类器（预览）
 
@@ -118,7 +118,7 @@ ms.locfileid: "42266891"
 
 21. 发布分类器。
 
-22. 一旦发布分类器，便可作为基于条件和[通信合规性](communication-compliance.md)的[自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)中的条件。
+22. 一旦发布分类器，便可用作[符合灵敏度标签的 Office autolabeling](apply-sensitivity-label-automatically.md)中的条件，并根据条件和[通信合规性](communication-compliance.md)[自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)。
 
 > [!CAUTION]
 > 分类器发布后，将无法通过任何其他培训，因此请务必确保您已经测试和检查了尽可能多的项目，以确保准确性尽可能高。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: bdf66e4160e324fa3b83cc58214b16fbacf5c233
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957282"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44170911"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -56,7 +56,7 @@ ms.locfileid: "43957282"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-你随时都可以选择在 SharePoint 和 OneDrive 中禁用 Office 文件的敏感度标签。
+您始终可以选择在 SharePoint 和 OneDrive 中禁用 Office 文件的敏感度[标签（随时退出。](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)
 
 ## <a name="requirements"></a>要求
 
@@ -66,21 +66,13 @@ ms.locfileid: "43957282"
 
 ## <a name="limitations"></a>限制
 
-- 当您在 SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签时，在 OneDrive 同步文件夹中的文件上更改标签的用户可能无法保存对该文件所做的其他更改。 此方案适用于使用加密标记的文件，以及当标签更改来自未对其应用加密的标签的标签时。 用户看到一个[带有白色交叉图标错误的红色圆圈](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，并要求他们将新的更改另存为一个单独副本。  
-    
-    除了用户启动的标签更改之外，如果管理员更改已应用于下载到用户同步客户端的文件的已发布标签的设置，也会发生相同的行为。
-    
-    若要避免在这些情况下丢失工作，请执行以下操作之一：
-    - 若要应用标签，请使用 Office 应用的 web 版本。
-    - 在应用标签后关闭文件，然后重新打开该文件以进行其他更改。
-
 - SharePoint 不会自动将灵敏度标签应用于已使用 Azure 信息保护标签加密的现有文件。 相反，若要在为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签后运行这些功能，请完成以下任务：
     
-    1. 确保已将 Azure 信息保护标签迁移到了敏感度标签，并已将其从 Microsoft 365 合规性中心或等效的标签管理中心进行了发布。
+    1. 确保已[将 Azure 信息保护标签迁移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)到了敏感度标签，并[已将其](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)从 Microsoft 365 合规性中心或等效的标签管理中心进行了发布。
     
     2. 下载这些文件，然后将其上传到 SharePoint。
 
-- 当应用了加密的标签具有以下加密配置之一时，SharePoint 将无法处理加密文件：
+- 当应用了加密的标签具有以下[加密配置](encryption-sensitivity-labels.md#configure-encryption-settings)之一时，SharePoint 将无法处理加密文件：
     - **允许用户在应用标签时分配权限**，并在**Word、PowerPoint 和 Excel 中对复选框进行提示，并在 Word、PowerPoint 和 Excel 中选中 "提示用户指定权限**"。 此设置有时称为 "用户定义的权限"。
     - **用户对内容的访问权限**设置为**永不**过期的值。
     
@@ -91,6 +83,8 @@ ms.locfileid: "43957282"
 - 不支持 Azure 信息保护文档跟踪网站。
 
 - 对于标记为加密的文件，Office 桌面应用程序和移动应用程序不支持共同创作。 这些应用将继续以独占编辑模式打开带标签和加密的文件。
+
+- 如果管理员更改已应用于下载到用户同步客户端的文件的已发布标签的设置，则用户可能无法在其 OneDrive 同步文件夹中保存对文件所做的更改。 此方案适用于使用加密标记的文件，以及当标签更改来自未对其应用加密的标签的标签时。 用户看到一个[带有白色交叉图标错误的红色圆圈](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，并要求他们将新的更改另存为一个单独副本。 而是可以关闭和重新打开文件，或使用 web 上的 Office。
 
 - 如果将带标签的文档上载到 SharePoint，并使用服务主体名称中的帐户来应用加密，则无法在 web 上的 Office 中打开该文档。 示例方案包括 Microsoft 云应用安全和通过电子邮件发送给团队的文件。
 
