@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全&amp;合规中心中查找和使用适用于 Office 365 高级威胁防护的报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034958"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173318"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -101,7 +101,7 @@ ATP 报告包括以下内容：
 在详细信息表中，您将能够看到有关单击时间和用户信息的详细信息。 最后，请记住 URL 保护状态报告显示来自 ATP 安全链接功能的保护，因此只有启用了 ATP 安全链接的客户才会看到此报告上反映的数据。
 
 > [!NOTE]
-> 这是一个 "*保护趋势" 报告*，即数据表示较大数据集中的趋势。 此处报告不提供实时报告。 对于实时 URL，请单击 "数据"，请继续使用 URL 跟踪。
+> 这是一个 "*保护趋势" 报告*，即数据表示较大数据集中的趋势。 因此，在这里，聚合视图中的数据不是实时提供的，但详细信息表视图中的数据是，因此在这两种视图之间可能会出现细微差异。
 
 ## <a name="atp-file-types-report"></a>ATP 文件类型报告
 

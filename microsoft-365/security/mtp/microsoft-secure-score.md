@@ -1,6 +1,6 @@
 ---
-title: Microsoft 安全功能分数
-description: 介绍 microsoft 365 安全中心中的 Microsoft 安全分数、如何计算详细信息以及安全管理员可预期的内容。
+title: Microsoft 安全得分（以前的迭代）
+description: 介绍 microsoft 365 安全中心中的 Microsoft 安全分数、如何提高安全状态以及安全管理员可预期的功能。
 keywords: 安全性、恶意软件、Microsoft 365、M365、安全分数、安全中心、改进操作
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,14 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141503"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173388"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
+# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft 安全得分（以前的迭代）
+
+>[!IMPORTANT]
+>在接下来的几个月中，这一小部分 Microsoft 安全分数将被替换为新的设计元素和功能。 如果您还没有看到最新小版本，很快就会完成。
+>
+>如果您看到 "历史记录" 旁边的 "**指标 & 趋势**" 选项卡，则是在新的迭代中。 [转到 Microsoft Secure 评分（新）](microsoft-secure-score-new.md)
 
 Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 按照安全得分建议，可以保护您的组织免受威胁。 从 Microsoft 365 安全中心的中央仪表板中，组织可以监视和使用其 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。
 

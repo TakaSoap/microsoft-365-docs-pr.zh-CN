@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解如何配置应用于组织中的特定用户、组或域的出站垃圾邮件策略。
-ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036784"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173436"
 ---
 # <a name="configure-outbound-spam-filtering"></a>配置出站垃圾邮件筛选
 
@@ -53,7 +53,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 从安全 & 合规中心删除出站垃圾邮件策略时，将删除出站垃圾邮件筛选器规则和关联的出站垃圾邮件筛选器策略。
 
-在 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中，出站垃圾邮件筛选器策略和出站垃圾邮件筛选器规则之间的差异很明显。 您可以使用** \*-set-hostedcontentfilterpolicy** cmdlet 管理出站垃圾邮件筛选器策略，还可以使用** \*-disable-hostedcontentfilterrule** cmdlet 管理出站垃圾邮件筛选器规则。
+在 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中，出站垃圾邮件筛选器策略和出站垃圾邮件筛选器规则之间的差异很明显。 您可以使用** \*-HostedOutboundSpamFilterPolicy** cmdlet 管理出站垃圾邮件筛选器策略，还可以使用** \*-HostedOutboundSpamFilterRule** cmdlet 管理出站垃圾邮件筛选器规则。
 
 - 在 PowerShell 中，先创建出站垃圾邮件筛选器策略，然后创建出站垃圾邮件筛选器规则，以标识应用该规则的策略。
 
@@ -115,7 +115,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请![单击 "](../../media/scc-remove-icon.png)删除" 按钮。
 
-     e. 完成后，单击 **“保存”**。
+     e. 完成时，请单击“保存”****。
 
      若要禁用此设置，请清除该复选框。
 
@@ -138,7 +138,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请![单击 "](../../media/scc-remove-icon.png)删除" 按钮。
 
-     e. 完成后，单击 **“保存”**。
+     e. 完成时，请单击“保存”****。
 
      若要禁用此设置，请清除该复选框。
 

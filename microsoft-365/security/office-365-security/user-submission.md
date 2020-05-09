@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: a3a175c3815c6750086526ec92d097fb7cbcefa3
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 6de4c076af5b0c669625cd8edaa367f072c27598
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43922659"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173340"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-office-365"></a>为 Office 365 中的垃圾邮件和网络钓鱼邮件的用户提交指定邮箱
 
@@ -60,15 +60,15 @@ ms.locfileid: "43922659"
 
        - **提交后**：单击!["展开](../../media/scc-expand-icon.png)图标"。 在 "**标题**" 和 "**确认消息**" 框中，输入用户在使用报告邮件外接程序报告邮件后看到的描述性文本。 您可以使用变量% type% 来包括提交类型。
 
-      完成后，单击 **“保存”**。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原**回"。
+      完成时，请单击“保存”****。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原**回"。
 
    - **将报告的邮件发送到**：执行下列任一选择：
 
      - **Microsoft （推荐）**：不使用用户提交邮箱（所有报告的邮件都转到 Microsoft）。
 
-     - **Microsoft 和自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。
+     - **Microsoft 和自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。
 
-     - **自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。
+     - **自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。
 
      完成后，请单击 "**确认**"。
 

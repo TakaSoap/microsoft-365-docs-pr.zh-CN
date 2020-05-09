@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Microsoft 365 中的零小时自动清除（ZAP），这是一种检测已传递到 Exchange Online 的垃圾邮件、恶意软件或网络钓鱼邮件的电子邮件保护功能。
-ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba7aa74dd9152990ce327d1b1564c3246d15cbb8
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034922"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173294"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>在 Microsoft 365 中针对垃圾邮件和恶意软件的零小时自动清除（ZAP）保护
 
@@ -42,7 +42,7 @@ Microsoft 365 每天实时更新垃圾邮件和恶意软件签名。 但是，�
 
 对于用户而言，ZAP 操作是无缝的;如果检测到并移动了邮件，则不会收到通知。
 
-[安全发件人列表](create-safe-sender-lists-in-office-365.md)、邮件流规则（也称为传输规则）、收件箱规则或其他筛选器优先于 ZAP。
+[安全发件人列表](create-safe-sender-lists-in-office-365.md)、邮件流规则（也称为传输规则）、收件箱规则或其他筛选器优先于 ZAP。 与邮件流中的操作类似，这意味着即使服务确定所传递的邮件需要 ZAP，也不会由于安全发件人配置而导致邮件不起作用。 这是在将邮件配置为绕过筛选时要注意的另一个原因。
 
 ### <a name="malware-zap"></a>恶意软件 ZAP
 
@@ -88,28 +88,28 @@ ZAP 不会隔离[动态传递](dynamic-delivery-and-previewing.md)扫描过程�
 
 ## <a name="zap-faq"></a>ZAP FAQ
 
-### <a name="q-what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>问：如果将合法邮件移动到 "垃圾邮件" 文件夹中，会发生什么情况？
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>如果将合法邮件移动到 "垃圾邮件" 文件夹中，会发生什么情况？
 
-A：您应遵循正常的报告过程[误报](report-junk-email-messages-to-microsoft.md)。 将邮件从 "收件箱" 移动到 "垃圾邮件" 文件夹的唯一原因是，该服务已确定邮件是垃圾邮件还是恶意邮件。
+您应遵循正常的报告过程[误报](report-junk-email-messages-to-microsoft.md)。 将邮件从 "收件箱" 移动到 "垃圾邮件" 文件夹的唯一原因是，该服务已确定邮件是垃圾邮件还是恶意邮件。
 
-### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>问：如果我使用隔离文件夹而不是垃圾邮件文件夹，该怎么办？
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>如果我使用隔离文件夹而不是垃圾邮件文件夹，该怎么办？
 
-A： ZAP 将根据本主题前面所述的配置反垃圾邮件策略对邮件执行操作。
+根据本主题前面所述的配置反垃圾邮件策略，ZAP 将对邮件执行操作。
 
-### <a name="q-what-if-im-using-mail-flow-rules-or-allowedblocked-sender-lists"></a>问：如果我使用邮件流规则或允许/阻止的发件人列表，该怎么办？
+### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>如果我使用安全发件人、邮件流规则或允许/阻止的发件人列表，该怎么办？
 
-A：邮件流规则或阻止和允许组织设置优先。 将从 ZAP 中排除这些邮件。
+安全发件人、邮件流规则或阻止和允许组织设置优先。 由于服务正在执行您配置的操作，这些邮件将从 ZAP 中排除。 这是在将邮件配置为绕过筛选时要注意的另一个原因。
 
-### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>问：如果邮件被移到另一个文件夹（例如收件箱规则），该怎么办？
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>如果邮件被移至另一个文件夹（例如收件箱规则），该怎么办？
 
-A：如果尚未删除邮件，或只要尚未应用相同或更强的操作，则 ZAP 仍可正常工作。 例如，如果网络钓鱼策略设置为 "隔离"，并且用户或管理员已经 junked 了该电子邮件，则隔离将执行操作以隔离该文件。
+只要邮件尚未删除，或者只要相同或更强的操作尚未应用，ZAP 仍可正常工作。 例如，如果网络钓鱼策略设置为 "隔离"，并且用户或管理员已经 junked 了该电子邮件，则隔离将执行操作以隔离该文件。
 
-### <a name="q-does-zap-change-the-message-header"></a>问： ZAP 是否会更改邮件头？
+### <a name="does-zap-change-the-message-header"></a>ZAP 是否会更改邮件头？
 
-A： ZAP 操作不会对邮件头进行任何更改。
+ZAP 操作不会对邮件头进行任何更改。
 
-### <a name="q-how-does-zap-affect-mailboxes-on-hold"></a>问： ZAP 如何影响邮箱处于保留状态？
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP 对邮箱的保留有何影响？
 
-A： ZAP 不会在保留邮箱时隔离邮箱中的邮件。 ZAP 可以根据为反垃圾邮件策略中的垃圾邮件或网络钓鱼判定所配置的操作将邮件移动到 "垃圾邮件" 文件夹。
+ZAP 不会在保留邮箱时隔离邮箱中的邮件。 ZAP 可以根据为反垃圾邮件策略中的垃圾邮件或网络钓鱼判定所配置的操作将邮件移动到 "垃圾邮件" 文件夹。
 
 有关 Exchange Online 中的保留的详细信息，请参阅[Exchange online 中的就地保留和诉讼保留](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds)。

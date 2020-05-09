@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 了解管理员如何在 Microsoft 365 和 EOP 中创建安全发件人列表，以允许入站邮件跳过垃圾邮件筛选。
-ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036339"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173412"
 ---
 # <a name="create-safe-sender-lists"></a>创建安全发件人列表
 
@@ -85,7 +85,7 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
 ## <a name="use-outlook-safe-senders"></a>使用 Outlook 安全发件人
 
-用户或管理员可以将发件人电子邮件地址添加到邮箱中的安全发件人列表中，而不是组织设置。 有关说明，请参阅在[Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+用户或管理员可以将发件人电子邮件地址添加到邮箱中的安全发件人列表中，而不是组织设置。 有关说明，请参阅在[Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多数情况下，这不是必需的，因为发件人将绕过部分筛选堆栈。 尽管您信任发件人，但发件人可能会受到威胁，并会终止发送恶意内容。 最好让我们的筛选器执行检查每个邮件所需的操作，然后将[误报/负数报告给 Microsoft （](report-junk-email-messages-to-microsoft.md)如果筛选器出现错误）。 这也会妨碍[Zap](zero-hour-auto-purge.md)对邮件执行的操作。
 
 当邮件由于用户的安全发件人列表而跳过垃圾邮件筛选时， **X-Forefront-反垃圾邮件报告**标头`SFV:SFE`字段将包含值，这表明已绕过垃圾邮件、欺骗和网络钓鱼筛选。
 

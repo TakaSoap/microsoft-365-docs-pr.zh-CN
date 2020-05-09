@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '了解如何在 Microsoft 365 for business 订阅中重置用户的密码。 '
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064805"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173514"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -52,19 +52,19 @@ ms.locfileid: "44064805"
  
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -79,11 +79,11 @@ ms.locfileid: "44064805"
 
 如果您忘记了密码但可以登录到 Microsoft 365，请使用这些步骤，因为例如，您的密码保存在浏览器中： 
     
-1. 在 Microsoft 365 中，选择 "**设置** \> **Office 365** \> **个人信息**"。 
+1. 在 **"我的帐户** > **个人信息**" 的右上角 >，选择您的姓名（图标）。 
           
-2. 请仔细检查您的**联系人详细信息**和**备用电子邮件**是否准确。 如果不是，请立即更改。 
+2. 在 "**联系人详细信息**" 下，仔细检查你的**备用电子邮件**是否准确，以及你是否提供了移动电话号码。 如果不是，请立即更改。 
         
-3. 注销 Office 365：在右上角选择您的姓名（上面的图像中显示为 " **Diane**"） \> **"注销"。** 
+3. 注销：在右上角选择您的姓名（上面的图像中显示为 " **Diane**"） \> **"注销"。** 
         
 4. 现在再次登录：在\> **下一步** \>键入您的用户名，然后选择 "**忘记了密码**"。 
     
@@ -92,6 +92,8 @@ ms.locfileid: "44064805"
 如果你忘记了密码，但无法登录： 
     
 - 请求企业中的其他全局管理员为您重置密码。
+
+- 请确保您已提供备用联系人信息，包括移动电话号码。 
     
 - 或者，请[致电 Microsoft 支持部门](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。 
     
@@ -100,7 +102,7 @@ ms.locfileid: "44064805"
 
 这些步骤适用于拥有数十位用户的企业。如果你的用户成百上千，请参阅下一节：批量重置密码。
   
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
 2. 选择 "**显示名称**" 旁边的选项以选择您的企业中的所有人。 然后取消选中你自己。 重置其他所有用户的密码时无法重置自己的密码。
     
