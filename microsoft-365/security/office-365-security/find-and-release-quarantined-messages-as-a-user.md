@@ -19,18 +19,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，你将了解如何在 Microsoft 365 的安全与合规中心中查看和管理隔离邮件。
-ms.openlocfilehash: 177f60f1fccc764d74ec0374249a62c602cb84aa
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ff6cb3dbf9a0a2010bf792115c53265689873090
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036508"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173376"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user"></a>以用户身份查找并释放隔离的邮件
 
 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [Office 365 中的隔离功能](quarantine-email-messages.md)。
 
-作为用户，你可以查看、释放和删除已隔离邮件，即你是收件人但被隔离为垃圾邮件、大量电子邮件或（自 2020 年 4 月起）钓鱼电子邮件的邮件。 你可以在“安全与合规中心”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。
+作为用户，你可以在收件人所在的位置查看、释放和删除被隔离为垃圾邮件的隔离邮件。 从 2020 年 4 月起，你可以在收件人所在的位置查看或删除隔离的仿冒（不是可信度很高的仿冒）邮件。 你可以在“安全与合规中心”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
