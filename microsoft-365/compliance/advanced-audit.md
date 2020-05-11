@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6fb42e9df35fe025c5c5f292238217aebb4098c7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632277"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141040"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -93,7 +93,7 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 **为什么即使我们有 E5 订阅并为用户分配了 E5 许可证，我仍然在我的组织中看不到高级审核？**
 
-很有可能在你的组织中无法使用高级审核功能（例如创建审核日志保留策略和记录 MailItemsAccessed 审核记录的功能），即使有正确的许可也是如此。 如果发生这种情况，是因为高级审核包尚未推出到你的组织。 这是暂时的许可回填问题，应该会在未来几周内针对受影响的组织予以解决。 若要缓解此问题，请对每个 E5 用户执行以下步骤：
+很有可能在你的组织中无法使用高级审核功能（例如创建审核日志保留策略和记录 MailItemsAccessed 审核记录的功能），即使有正确的许可也是如此。 如果发生这种情况，是因为高级审核包尚未推出到你的组织。 这是暂时的许可回填问题，应该很快就会为受影响的组织解决。 若要缓解此问题，请对每个 E5 用户执行以下步骤：
 
 1. 在 Microsoft 365 管理中心，转到 **“用户”>“活动用户”**，然后选择一个用户。
 
@@ -106,6 +106,8 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
    b. 如果已选中“**Microsoft 365 高级审核**”复选框，请将其清除，然后单击“**保存更改**”。 请参阅步骤 4。
 
 4. 如果已在步骤 3 中清除复选框，请等待 60 分钟，然后重复步骤 3a 以启用 Microsoft 365 高级审核应用。
+
+对于使用基于组的许可将许可证分配给用户组的组织，必须为组禁用 Microsoft 365 高级审核的许可分配。 保存所做的更改后，请验证是否已为组禁用 Microsoft 365 高级审核。 然后，重新为组启用许可分配。 有关基于组的许可的说明，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
 **如果我的组织采用了将审核记录保留一年的私有预览计划，会发生什么情况？**
 
