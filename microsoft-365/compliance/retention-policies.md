@@ -342,7 +342,7 @@ Teams 聊天和频道消息不受应用于 Exchange 或 Office 365 组位置中�
 
 ### <a name="microsoft-365-groups-locations"></a>Microsoft 365 组位置
 
-若要保留 Microsoft 365 组的内容，需要使用 Microsoft 365 组位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 Exchange 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 应用于 Microsoft 365 组的保留策略涵盖组的邮箱和网站。 应用于 Microsoft 365 组的保留策略将保护由 Microsoft 365 组（包括 Microsoft Teams）创建的资源。
+若要保留 Microsoft 365 组的内容，需要使用 Microsoft 365 组位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 Exchange 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 应用于 Microsoft 365 组的保留策略包含组的邮箱和网站。 应用于 Microsoft 365 组的保留策略将保护由 Microsoft 365 组（包括 Microsoft Teams）创建的资源。
 
 此外，不可能通过使用 Exchange 位置来包含或排除某个组邮箱。 尽管 Exchange 位置最初允许选择组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。 
 

@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: dbb24e3c7347faf09e5f14d3d28d17b8163ccc2c
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e4620938a5f7f63d7da09d60d701e81c3bbae0fa
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166023"
+ms.locfileid: "44171001"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的数据主体请求
 
@@ -586,7 +586,7 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 - 用户无法再登录 Office 365 或访问组织的任何 Microsoft 资源，例如其 OneDrive for Business 帐户、SharePoint Online 网站或其 Exchange Online 邮箱。
 - 将删除与该用户帐户关联的个人数据，例如电子邮件地址，别名、电话号码和通讯地址
 - 某些 Office 365 应用将删除有关该用户的信息。 例如，在 Microsoft Flow 中，将从共享流的所有者列表中移除已删除的用户。
-- 删除用户帐户 30 天后，将删除有关数据主体的系统生成日志。有关详细信息，请参阅[删除系统生成日志](#deleting-system-generated-logs)部分。
+- 删除用户帐户 30 天后，将删除有关数据主体的系统生成日志（不包括可能会危及服务安全性和稳定性的数据）。 有关详细信息，请参阅[删除系统生成日志](#deleting-system-generated-logs)部分。
 
 >[!IMPORTANT]
 >删除用户帐户后，该用户无法再登录 Office 365，也无法登录其以前依赖的工作或学校帐户下的任何产品或服务。该用户还将无法直接在 Microsoft 作为数据控制者的实例中通过 Microsoft 发起任何 DSR 请求。有关详细信息，请参阅本指南第 4 部分[通过组织 ID 进行身份验证且由 Microsoft 作为数据控制者的产品和服务](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller)。
@@ -597,7 +597,7 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 与前文所述有关删除个人数据的软删除和硬删除数据相似，删除用户帐户时，也有软删除和硬删除状态。
 
 - 最初删除用户帐户（通过在管理中心或 Azure 门户中删除用户）时，用户帐户被软删除，并在最多 30 天后移动到 Azure 中的回收站。 此时，可以还原该用户帐户。
-- 永久删除用户帐户后，用户帐户被硬删除，并从 Azure 中的回收站删除。此时，无法还原用户帐户，并且与用户帐户关联的任何数据都将从 Microsoft 云中永久删除。硬删除用户后，还会删除有关数据主体的系统生成日志。
+- 永久删除用户帐户后，用户帐户被硬删除，并从 Azure 中的回收站删除。此时，无法还原用户帐户，并且与用户帐户关联的任何数据都将从 Microsoft 云中永久删除。硬删除帐户还会删除有关数据主体的系统生成日志（不包括可能会危及服务安全性和稳定性的数据）。
 
 下面是从组织删除用户的高级流程。
 
@@ -1598,7 +1598,7 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 要删除通过访问请求检索到的系统生成日志，必须从服务中移除用户并永久删除其 Azure Active Directory 帐户。有关永久删除用户的说明，请参阅本指南的[删除用户](#deleting-a-user)部分。请务必注意，永久删除用户帐户操作一旦启动便无法恢复。
 
-永久删除用户帐户将在 30 天内从几乎所有 Office 365 服务的系统生成日志中删除用户数据。 一个例外情况是在 Exchange Online 中永久删除用户帐户所用的时间超过 30 天。 鉴于 Exchange Online 内容的关键性质，并且为了防止数据意外丢失， 此系统设计为有意地在永久删除用户帐户后将数据置于保留状态最多 60 天。 要在 30 天的时间范围内永久删除用户 Exchange Online 数据，请在永久删除 Azure Active Directory 中的用户帐户后联系 [Microsoft 支持人员](https://support.microsoft.com/)，请求在计划删除流程之外手动删除用户的 Exchange Online 数据。 有关详细信息，请参阅本指南前文所述的[删除 Exchange Online 数据](#removing-exchange-online-data)
+永久删除用户帐户将在 30 天内从几乎所有 Office 365 服务的系统生成日志中删除用户数据（不包括可能会危及服务安全性和稳定性的数据）。 一个例外情况是在 Exchange Online 中永久删除用户帐户所用的时间超过 30 天。 鉴于 Exchange Online 内容的关键性质，并且为了防止数据意外丢失， 此系统设计为有意地在永久删除用户帐户后将数据置于保留状态最多 60 天。 要在 30 天的时间范围内永久删除用户 Exchange Online 数据，请在永久删除 Azure Active Directory 中的用户帐户后联系 [Microsoft 支持人员](https://support.microsoft.com/)，请求在计划删除流程之外手动删除用户的 Exchange Online 数据。 有关详细信息，请参阅本指南前文所述的[删除 Exchange Online 数据](#removing-exchange-online-data)
 
 删除用户帐户将删除 Yammer 和 Kaizala 的系统生成日志。若要从这些应用程序中删除数据，请参阅以下文章之一：
 

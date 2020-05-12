@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 效率说明图
-description: 使用这些插图了解实施 Microsoft 365 生产率解决方案的基础架构。
+title: Microsoft 365 生产力插图
+description: 使用这些插图来了解实施 Microsoft 365 生产力解决方案的基础结构。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -11,17 +11,17 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - M365-security-compliance
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8482c6591958e36f2c764d61f3fa7116f348f8d8
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
-ms.translationtype: MT
+ms.openlocfilehash: 2ad424741ecbfe6f4bb8693df13a92bc71f012ce
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022128"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160083"
 ---
-# <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 效率说明图
+# <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
 Microsoft 365 企业版解决方案系列介绍了如何实现 Microsoft 365 功能，尤其是其中一些跨技术的功能。
 
@@ -30,7 +30,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![Teams 逻辑体系结构海报缩略图](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2019年4月更新   |Microsoft 提供了一系列生产力服务，这些服务协同工作，提供数据治理、安全性和符合性相关功能的协作体验。 <br/> <br/>此系列图示展示了企业架构师生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。|
+|[![Teams 逻辑体系结构海报缩略图](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2019 年 4 月更新   |Microsoft 提供了一系列生产力服务，这些服务协同工作，提供数据治理、安全性和符合性相关功能的协作体验。 <br/> <br/>此系列图示展示了企业架构师生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。|
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的组
@@ -38,23 +38,23 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![组信息图的缩略图](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2019年6月更新|这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。|
+|[![组信息图的缩略图](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2019 年 6 月更新|这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。|
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>多区域组织安全和信息保护
 拥有单一 microsoft 365 租户的多区域组织安全和信息保护
 
 |**项目**|**说明**|
 |:-----|:-----|
-|[![多区域信息图缩略图](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>2020年3月更新 |出于多种原因，使用单一 Microsoft 365 租户，为全球组织提供最佳选择和体验。 但是，许多架构师都在为如何满足不同地区的安全性和信息保护目标而苦恼。 这组主题提供了建议。 |
+|[![多区域信息图缩略图](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>2020 年 3 月更新 |出于多种原因，使用单一 Microsoft 365 租户，为全球组织提供最佳选择和体验。 但是，许多架构师都在为如何满足不同地区的安全性和信息保护目标而苦恼。 这组主题提供了建议。 |
 
 ### <a name="microsoft-defender-atp-deployment-strategy"></a>Microsoft Defender ATP 部署策略
 
-根据您的环境，某些工具更适合特定体系结构。
+根据你的环境，某些工具更适合某些体系结构。
 
 
-|**项**|**说明**|
+|**项目**|**说明**|
 |:-----|:-----|
-|[![用于 Microsoft Defender ATP 部署策略的缩略图](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>2020年2月更新| 体系结构资料可帮助您规划部署以实现以下体系结构： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 内部部署</li><li>评估和本地加入</li>
+|[![Microsoft Defender ATP 部署策略缩略图](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>2020 年 2 月更新| 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
 
 
 <a name="m365foundationinfra"></a>
@@ -64,7 +64,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
   
 |**Item**|**说明**|
 |:-----|:-----|
-|[![Microsoft 365 企业版底层基础结构海报缩略图图像](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [联机查看](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> 2019年12月更新| 此海报概述了底层基础结构的各个阶段，包括目标、功能和工具、设计决策、配置结果、载入及持续监视和更新。 <br/>| 
+|[![Microsoft 365 企业版底层基础结构海报缩略图图像](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [联机查看](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> 2019 年 12 月更新| 此海报概述了底层基础结构的各个阶段，包括目标、功能和工具、设计决策、配置结果、载入及持续监视和更新。 <br/>| 
 
    
 <a name="BKMK_O365IDP"></a>
@@ -74,7 +74,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![模型海报：Office 365 和其他 SaaS 应用的标识和设备保护](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 2018年11月更新|请务必在数据、标识和设备中使用一致的保护级别。本文档介绍可与保护标识和设备功能相媲美的功能的详细信息。  <br/> |
+|[![模型海报：Office 365 和其他 SaaS 应用的标识和设备保护](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 2018 年 11 月更新|请务必在数据、标识和设备中使用一致的保护级别。本文档介绍可与保护标识和设备功能相媲美的功能的详细信息。  <br/> |
    
 <!--
 
@@ -115,9 +115,9 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 当你开始在 Microsoft 云中使用 Teams 时，Microsoft 支持多种选项。此海报可帮助你确定哪种 Microsoft 电话解决方案（云端的电话系统或本地企业语音）适合你组织中的用户，以及你的组织如何连接到公用电话交换网 (PSTN)。
 
 
-[![Microsoft 电话解决方案海报的缩略图](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
+[![Microsoft 电话服务解决方案海报缩略图](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) <br>
-2019年1月更新
+2019 年 1 月更新
 
 有关详细信息，请参阅此海报文章：[Microsoft 电话解决方案](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)。
   
