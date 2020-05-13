@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 5a5b793358364efdd725de5478318a8237d78ca8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39ab61a13af311339174c0e37a10f4637f51ba84
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208066"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213302"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -169,9 +169,9 @@ Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感�
 
 若要对 OneDrive for Business 或 SharePoint Online 中的文档使用 Office 内置标签客户端与 web 上的文档，请确保已选择预览以在[SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-## <a name="when-office-365-applies-content-marking-and-encryption"></a>当 Office 365 应用内容标记和加密时
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office 应用程序何时应用内容标记和加密
 
-Office 365 根据您使用的应用程序以不同的敏感度标签应用内容标记和加密。
+Office 应用程序使用敏感度标签以不同方式应用内容标记和加密，具体取决于您使用的应用程序。
 
 | 应用 | 内容标记 | 加密 |
 | --- | --- | --- |
@@ -179,6 +179,22 @@ Office 365 根据您使用的应用程序以不同的敏感度标签应用内容
 | Outlook for PC 和 Outlook for Mac | Exchange Online 发送电子邮件后 | 立即 |
 | 网页版、iOS 版和 Android 版 Outlook | Exchange Online 发送电子邮件后 | Exchange Online 发送电子邮件后 |
 |
+
+将敏感度标签应用于 Office 应用程序之外的文件的解决方案通过将标记元数据应用于文件来实现。 在这种情况下，从标签的配置中标记的内容不会插入到文件中，但会应用加密。 
+
+在 Office 桌面应用程序中打开这些文件时，Azure 信息保护统一标记客户端将自动应用内容标记。 将内置标签用于桌面、移动或 web 应用时，不会自动应用内容标记。
+
+包括在 Office 应用程序外部应用敏感度标签的方案包括：
+
+- 来自 Azure 信息保护统一标签客户端的扫描程序、文件资源管理器和 PowerShell 
+
+- SharePoint 和 OneDrive 的自动标记策略
+
+- 从 Power BI 导出的标记和加密的数据
+
+- Microsoft Cloud App Security
+
+对于这些方案，使用内置标签的用户可以通过临时删除或替换当前标签，然后重新应用原始标签来应用标签的内容标记。
 
 ## <a name="end-user-documentation"></a>最终用户文档
 
